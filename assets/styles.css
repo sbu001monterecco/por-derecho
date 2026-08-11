@@ -184,6 +184,26 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .image-note { margin: 2rem 0 0; padding: 1rem 1.2rem; color: var(--muted); background: var(--paper); border-left: .22rem solid var(--gold); font-size: .8rem; }
 .image-note a { color: var(--teal); font-weight: 750; }
 
+.thesis-block { display: grid; grid-template-columns: 1.35fr .65fr; gap: 2rem; margin: 2.8rem 0; padding: 2rem; color: var(--white); background: #34251f; border-radius: var(--radius); box-shadow: var(--shadow); scroll-margin-top: 6rem; }
+.thesis-block h3 { max-width: 26ch; margin: 1rem 0; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 500; }
+.thesis-block p { margin: .8rem 0 0; color: #eee2dc; }
+.allegation-badge { color: #fff2e8; background: rgba(197,138,57,.16); border-color: rgba(240,223,196,.42); }
+.actor-intro, .timeline-head { margin: 3.2rem 0 1.2rem; }
+.actor-intro h3, .timeline-head h3 { max-width: 28ch; margin: 0 0 .75rem; font-size: clamp(1.8rem, 3vw, 2.65rem); font-weight: 500; }
+.actor-intro > p:last-child { max-width: 52rem; color: var(--muted); }
+.actor-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: .7rem; }
+.actor-grid article { padding: 1.1rem; border-top: .22rem solid var(--gold); background: var(--white); }
+.actor-grid strong, .actor-grid span { display: block; }
+.actor-grid strong { margin-bottom: .55rem; font-family: Georgia, serif; line-height: 1.2; }
+.actor-grid span { color: var(--muted); font-size: .78rem; }
+.recovery-timeline { position: relative; display: grid; gap: .1rem; }
+.recovery-timeline::before { content: ""; position: absolute; left: 6.65rem; top: 1rem; bottom: 1rem; width: 1px; background: var(--line); }
+.recovery-timeline article { position: relative; display: grid; grid-template-columns: 5.8rem 1fr; gap: 1.7rem; padding: 1.15rem 0; }
+.recovery-timeline article::before { content: ""; position: absolute; left: 6.42rem; top: 1.62rem; width: .48rem; aspect-ratio: 1; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 .32rem var(--paper); }
+.recovery-timeline time { color: var(--teal); font-size: .75rem; font-weight: 850; letter-spacing: .04em; }
+.recovery-timeline strong { display: block; font-family: Georgia, serif; font-size: 1.15rem; }
+.recovery-timeline p { max-width: 58rem; margin: .35rem 0 0; color: var(--muted); font-size: .88rem; }
+
 .evidence-section { background: #edf3f1; }
 .evidence-lead { display: grid; grid-template-columns: 1.35fr .65fr; gap: 2rem; padding: 2rem; color: var(--white); background: var(--basalt); border-radius: var(--radius); box-shadow: var(--shadow); }
 .evidence-lead h3 { max-width: 24ch; margin: 1rem 0; font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 500; }
@@ -240,6 +260,18 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .process article::before { content: "0" counter(stage); display: block; margin-bottom: 1.4rem; color: var(--gold); font-size: .78rem; font-weight: 800; }
 .process h3 { margin: 0 0 .65rem; font-size: 1.25rem; }
 .process p { margin: 0; color: var(--muted); font-size: .9rem; }
+.platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.2rem; }
+.platform-grid article { min-height: 15rem; padding: 1.4rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+.platform-grid .platform-lead { grid-column: span 2; color: var(--white); background: var(--basalt); border-color: var(--basalt); }
+.platform-grid span { color: var(--gold); font-size: .68rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.platform-grid h3 { margin: 1.2rem 0 .7rem; font-size: 1.55rem; }
+.platform-grid p { margin: 0; color: var(--muted); font-size: .88rem; }
+.platform-grid .platform-lead p { max-width: 44rem; color: #ccd7d8; }
+.private-conversation { display: grid; grid-template-columns: 1.25fr .75fr; gap: 2rem; align-items: center; margin-top: 1rem; padding: 1.7rem; color: var(--white); background: var(--teal); border-radius: var(--radius); }
+.private-conversation h3 { margin: 0 0 .55rem; font-size: 1.65rem; }
+.private-conversation p { margin: 0; color: #e2efef; }
+.private-conversation .kicker { color: var(--gold-light); }
+.private-conversation .actions { justify-content: flex-end; margin: 0; }
 
 .entity-note { margin-top: 2rem; padding: 1.2rem 1.4rem; border-left: .22rem solid var(--gold); background: var(--gold-light); }
 .entity-note p { margin: 0; }
@@ -272,13 +304,15 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .main-nav .language-link { margin-left: 0; margin-top: .35rem; }
   .hero-grid, .section-head, .method-grid { grid-template-columns: 1fr; }
   .hero-grid { gap: 1rem; padding-block: 4.8rem 3rem; }
-  .evidence-lead { grid-template-columns: 1fr; }
+  .evidence-lead, .thesis-block, .private-conversation { grid-template-columns: 1fr; }
   .evidence-documents { grid-template-columns: 1fr; }
   .institution-grid { grid-template-columns: 1fr 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .path-card { min-height: auto; }
   .five-layers { grid-template-columns: 1fr 1fr; }
   .process { grid-template-columns: 1fr 1fr; }
+  .actor-grid { grid-template-columns: 1fr 1fr; }
+  .platform-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
@@ -290,7 +324,11 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .priority-inner a { grid-column: 2; }
   .section { padding-block: 4.5rem; }
   .section-head { gap: 1.2rem; }
-  .grid-2, .contact-grid, .ask-list, .process, .five-layers { grid-template-columns: 1fr; }
+  .grid-2, .contact-grid, .ask-list, .process, .five-layers, .actor-grid, .platform-grid { grid-template-columns: 1fr; }
+  .platform-grid .platform-lead { grid-column: auto; }
+  .recovery-timeline::before { left: .25rem; }
+  .recovery-timeline article { grid-template-columns: 1fr; gap: .35rem; padding-left: 1.4rem; }
+  .recovery-timeline article::before { left: .02rem; }
   .document-card { grid-template-columns: 8.5rem 1fr; }
   .institution-grid { grid-template-columns: 1fr; }
   .update-card { grid-template-columns: 1fr; gap: .6rem; }
