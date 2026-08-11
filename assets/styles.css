@@ -243,6 +243,12 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .press-fact { padding: 1.45rem 2rem; border-bottom: 1px solid #ded2c4; background: #f1e5d4; }
 .press-fact p { max-width: 68rem; margin: 0; }
 .press-record a { color: var(--teal); font-weight: 750; text-decoration-thickness: .08em; text-underline-offset: .2em; }
+.press-preview { display: grid; grid-template-columns: minmax(18rem, 32rem) minmax(16rem, 1fr); gap: 2rem; align-items: center; margin: 0; padding: 2rem; border-bottom: 1px solid #ded2c4; background: #fffdf9; }
+.press-preview-image { display: block; overflow: hidden; border: 1px solid #cfc3b5; border-radius: .35rem; background: var(--white); box-shadow: 0 1rem 2.5rem rgba(37, 31, 27, .16); }
+.press-preview-image img { display: block; width: 100%; height: auto; }
+.press-preview figcaption { max-width: 34rem; }
+.press-preview figcaption > strong { display: block; margin: .9rem 0 .7rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 500; line-height: 1.12; }
+.press-preview figcaption p { margin: 0 0 1rem; color: var(--muted); }
 .press-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 .press-grid section { padding: 1.6rem; border-right: 1px solid #ded2c4; }
 .press-grid section:last-child { border-right: 0; }
@@ -334,6 +340,7 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .five-layers { grid-template-columns: 1fr 1fr; }
   .process { grid-template-columns: 1fr 1fr; }
   .actor-grid { grid-template-columns: 1fr 1fr; }
+  .press-preview { grid-template-columns: minmax(16rem, 27rem) 1fr; }
   .press-grid { grid-template-columns: 1fr; }
   .press-grid section { border-right: 0; border-bottom: 1px solid #ded2c4; }
   .press-grid section:last-child { border-bottom: 0; }
@@ -362,6 +369,8 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .press-record-head { grid-template-columns: 1fr; gap: 1rem; padding: 1.45rem; }
   .press-status { justify-self: start; }
   .press-fact, .press-boundary { padding-inline: 1.45rem; }
+  .press-preview { grid-template-columns: 1fr; padding: 1.45rem; }
+  .press-preview-image { max-width: 31rem; }
   .optics-note { margin-inline: 1rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-links { justify-content: flex-start; }
