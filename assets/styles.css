@@ -227,6 +227,7 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .design-photo { margin: 0; background: #07090a; border-right: 1px solid rgba(255,255,255,.14); }
 .design-photo img { display: block; width: 100%; height: auto; object-fit: contain; }
 .design-photo figcaption { padding: 1rem 1.15rem 1.1rem; color: #c9bdb9; background: #0b0d0e; font-size: .7rem; line-height: 1.55; }
+.design-photo figcaption a { color: #f2c698; font-weight: 750; text-underline-offset: .16em; }
 .design-copy { padding: clamp(1.5rem, 4vw, 2.6rem); background: radial-gradient(circle at 100% 0, rgba(165,45,40,.22), transparent 20rem); }
 .design-copy .kicker { color: #efad9e; }
 .design-copy h3 { max-width: 19ch; margin: .7rem 0 1rem; color: #fff; font-size: clamp(2rem, 4vw, 3.65rem); font-weight: 500; letter-spacing: -.035em; }
