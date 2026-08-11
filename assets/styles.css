@@ -294,10 +294,6 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .accountability-asks { display: grid; grid-template-columns: .4fr 1.6fr; gap: 1rem; padding: 1.25rem 1.8rem; color: var(--white); background: #34251f; }
 .accountability-asks strong { color: var(--gold-light); font-family: Georgia, serif; font-size: 1.05rem; }
 .accountability-asks span { color: #e8ded8; font-size: .8rem; }
-.correction-update { border-color: #d8aaa0; background: #fff6f1; }
-.correction-update::before { content: "CORRECTION"; position: absolute; right: 1rem; top: .8rem; color: rgba(165,45,40,.08); font-size: clamp(2.8rem, 8vw, 6rem); font-weight: 950; letter-spacing: -.05em; pointer-events: none; }
-.correction-update > * { position: relative; z-index: 1; }
-
 .ric-record > header { background: var(--teal); }
 .ric-summary { display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid var(--line); background: #f7faf9; }
 .ric-summary p { margin: 0; padding: 1.55rem 1.8rem; color: #405255; }
