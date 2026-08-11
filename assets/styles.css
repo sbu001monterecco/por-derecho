@@ -387,7 +387,7 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .private-lane { background: linear-gradient(150deg,#3d1112,#7b201c); }
 .fiduciary-lane { background: linear-gradient(150deg,#24333a,#283f46); }
 .judicial-lane { background: linear-gradient(150deg,#2a2621,#4d3927); }
-.inflection-strip { display: grid; grid-template-columns: repeat(6,1fr); border-bottom: 1px solid #d9c4bd; background: #f3e6df; }
+.inflection-strip { display: grid; grid-template-columns: repeat(7,1fr); border-bottom: 1px solid #d9c4bd; background: #f3e6df; }
 .inflection-strip > div { position: relative; min-height: 9.2rem; padding: 1rem .9rem; border-right: 1px solid #d9c4bd; }
 .inflection-strip > div:last-child { border-right: 0; }
 .inflection-strip > div:not(:last-child)::after { content: "→"; position: absolute; z-index: 2; right: -.55rem; top: 1.12rem; width: 1.05rem; height: 1.05rem; display: grid; place-items: center; color: #8b4e3d; background: #f3e6df; font-weight: 900; }
@@ -405,11 +405,31 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .rescue-proof dl div { padding: .85rem; border: 1px solid rgba(255,255,255,.17); background: rgba(255,255,255,.045); }
 .rescue-proof dt { color: #f0d7aa; font-family: Georgia,serif; font-size: 1.45rem; line-height: 1; }
 .rescue-proof dd { margin: .35rem 0 0; color: #dce8e8; font-size: .68rem; }
+.primary-records { display: grid; grid-template-columns: .82fr 1.18fr; gap: 1px; background: #4a2622; border-bottom: 1px solid #d9bdb2; }
+.primary-record { margin: 0; min-width: 0; background: #fffaf6; }
+.primary-record img { display: block; width: 100%; height: auto; background: #e9e1da; }
+.statement-record img { aspect-ratio: 1 / .93; object-fit: cover; object-position: center 35%; }
+.condition-record img { aspect-ratio: 2.3 / 1; object-fit: cover; }
+.primary-record figcaption { padding: 1.15rem 1.25rem 1.3rem; }
+.primary-record figcaption span { display: block; color: #85251f; font-size: .62rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+.primary-record figcaption strong { display: block; margin-top: .45rem; color: #3d2925; font-family: Georgia,serif; font-size: 1.25rem; line-height: 1.12; }
+.primary-record figcaption p { margin: .65rem 0 0; color: #665552; font-size: .76rem; }
 .justice-proof-line { display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid #dfc9c1; background: #fffaf6; }
 .justice-proof-line section { padding: 1rem; border-right: 1px solid #dfc9c1; }
 .justice-proof-line section:last-child { border-right: 0; }
 .justice-proof-line span { display: block; color: #8a2922; font-size: .62rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
 .justice-proof-line strong { display: block; margin-top: .45rem; color: #514845; font-size: .72rem; line-height: 1.45; }
+.redsara-unitary { color: #f7efea; background: #311617; border-bottom: 1px solid #9c655b; }
+.redsara-unitary > header { display: grid; grid-template-columns: .95fr 1.2fr 1.35fr; gap: 1.4rem; align-items: end; padding: 1.55rem 1.8rem; background: linear-gradient(110deg,#311617,#641c1a); }
+.redsara-unitary > header .kicker { margin: 0; color: #e7bc9a; align-self: start; }
+.redsara-unitary > header h4 { margin: 0; color: #fff8f4; font-family: Georgia,serif; font-size: clamp(1.5rem,2.5vw,2.25rem); line-height: 1.08; }
+.redsara-unitary > header p:last-child { margin: 0; color: #e4d2cc; font-size: .76rem; }
+.redsara-unitary > div { display: grid; grid-template-columns: repeat(4,1fr); }
+.redsara-unitary > div section { padding: 1.25rem; border-right: 1px solid rgba(255,255,255,.14); }
+.redsara-unitary > div section:last-child { border-right: 0; }
+.redsara-unitary section span { color: #eebd93; font-size: .62rem; font-weight: 900; letter-spacing: .09em; }
+.redsara-unitary section strong { display: block; margin: .4rem 0 .55rem; font-family: Georgia,serif; font-size: 1.1rem; }
+.redsara-unitary section p { margin: 0; color: #dacac5; font-size: .7rem; }
 .justice-tests { display: grid; grid-template-columns: repeat(3, 1fr); background: #fff8f5; }
 .justice-tests section { padding: 1.25rem 1.3rem; border-right: 1px solid #dec6bf; border-bottom: 1px solid #dec6bf; }
 .justice-tests section:nth-child(3n) { border-right: 0; }
@@ -707,7 +727,7 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .accountability-head, .ric-record > header { grid-template-columns: 1fr; gap: 1rem; padding: 1.45rem; }
   .record-status { justify-self: start; }
   .accountability-lead { padding-inline: 1.45rem; }
-  .accountability-grid, .ric-summary, .ric-questions, .accountability-asks, .ric-visual-record, .representation-grid, .contemporaneous-alert, .justice-tests, .cnmv-exhibit, .rescue-proof, .justice-proof-line, .procedure-strip { grid-template-columns: 1fr; }
+  .accountability-grid, .ric-summary, .ric-questions, .accountability-asks, .ric-visual-record, .representation-grid, .contemporaneous-alert, .justice-tests, .cnmv-exhibit, .rescue-proof, .primary-records, .justice-proof-line, .redsara-unitary > header, .redsara-unitary > div, .procedure-strip { grid-template-columns: 1fr; }
   .evidence-stills { grid-template-columns: 1fr; }
   .chain-head, .interview-evidence { padding: 1.45rem; }
   .chain-track li { min-height: auto; border-right: 0 !important; border-bottom: 1px solid #4d2928 !important; }
@@ -727,6 +747,9 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .justice-proof-line section, .procedure-strip section { border-right: 0; border-bottom: 1px solid #dfc9c1 !important; }
   .justice-proof-line section:last-child, .procedure-strip section:last-child { border-bottom: 0 !important; }
   .rescue-proof dl { grid-template-columns: 1fr 1fr; }
+  .statement-record img, .condition-record img { aspect-ratio: auto; object-fit: contain; }
+  .redsara-unitary > div section { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.14); }
+  .redsara-unitary > div section:last-child { border-bottom: 0; }
   .ric-sequence { grid-template-columns: repeat(2, 1fr); }
   .ric-sequence li:nth-child(2) { border-right: 0; }
   .ric-sequence li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
