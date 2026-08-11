@@ -234,6 +234,26 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .recovery-timeline strong { display: block; font-family: Georgia, serif; font-size: 1.15rem; }
 .recovery-timeline p { max-width: 58rem; margin: .35rem 0 0; color: var(--muted); font-size: .88rem; }
 
+.trajectory-visual { margin: 2.6rem 0 3rem; overflow: hidden; border: 1px solid #6e5049; border-radius: var(--radius); color: #fff7f3; background: #101719; box-shadow: 0 1.5rem 4rem rgba(28,23,21,.24); }
+.trajectory-visual > img { display: block; width: 100%; height: auto; aspect-ratio: 1672 / 941; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,.14); }
+.trajectory-visual figcaption { padding: 1.5rem 1.8rem 1.35rem; background: linear-gradient(115deg,#231819,#172629); }
+.trajectory-visual figcaption h3 { max-width: 31ch; margin: .7rem 0 .5rem; color: #fff; font-size: clamp(1.55rem,3vw,2.55rem); font-weight: 500; }
+.trajectory-visual figcaption p { max-width: 74rem; margin: 0; color: #d7dfe0; }
+.trajectory-key { display: grid; grid-template-columns: repeat(2,1fr); }
+.trajectory-key section { min-width: 0; padding: 1.35rem 1.8rem; border-top: 1px solid rgba(255,255,255,.12); border-right: 1px solid rgba(255,255,255,.12); }
+.trajectory-key section:nth-child(even) { border-right: 0; }
+.trajectory-key span { display: block; margin-bottom: .45rem; color: var(--gold-light); font-size: .66rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+.trajectory-key strong { display: block; color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: 1.18rem; line-height: 1.22; }
+.trajectory-key p { margin: .55rem 0 0; color: #cbd4d5; font-size: .8rem; }
+.trajectory-key a { color: #bfe4df; font-weight: 800; text-underline-offset: .18em; }
+.trajectory-key .trajectory-rule { color: #fff7f4; background: #4c1819; }
+.trajectory-key .trajectory-rule span { color: #ffc3b1; }
+.trajectory-key .trajectory-response { color: #fff7f4; background: #4c1819; }
+.trajectory-key .trajectory-response span { color: #ffc3b1; }
+.trajectory-key .trajectory-question { background: #173033; }
+.trajectory-boundary { margin: 0; padding: 1rem 1.8rem 1.25rem; color: #d9d2cb; border-top: 1px solid rgba(255,255,255,.16); background: #0c1112; font-size: .74rem; }
+.trajectory-boundary strong { color: #fff; }
+
 .evidence-section { background: #edf3f1; }
 .evidence-lead { display: grid; grid-template-columns: 1.35fr .65fr; gap: 2rem; padding: 2rem; color: var(--white); background: var(--basalt); border-radius: var(--radius); box-shadow: var(--shadow); }
 .evidence-lead h3 { max-width: 24ch; margin: 1rem 0; font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 500; }
@@ -330,6 +350,11 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .representation-grid span { color: var(--charge); font-size: .66rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .representation-grid strong { margin: .55rem 0; font-family: Georgia, serif; font-size: 1rem; line-height: 1.25; }
 .representation-grid p { margin: 0; color: var(--muted); font-size: .76rem; }
+.ric-title-challenge { padding: 1.5rem 1.8rem 1.6rem; color: #321416; border-top: 1px solid #d7a797; border-bottom: 1px solid #d7a797; background: linear-gradient(125deg,#fff3ed,#f3ddd4); }
+.ric-title-challenge .evidence-badge { color: #6b1c19; border-color: #d7a797; background: #fffaf6; }
+.ric-title-challenge h4 { max-width: 40ch; margin: .75rem 0 .65rem; color: #531815; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem,2.7vw,2.35rem); line-height: 1.08; }
+.ric-title-challenge p { max-width: 76rem; margin: 0 0 .65rem; color: #5a413a; font-size: .84rem; }
+.ric-title-challenge p:last-child { margin-bottom: 0; }
 .contemporaneous-alert { display: grid; grid-template-columns: .42fr 1.58fr; gap: 1.4rem; align-items: start; padding: 1.35rem 1.8rem; border-top: 1px solid #d2c4b4; background: #efe4d3; }
 .contemporaneous-alert time { display: block; color: var(--charge); font-family: Georgia, serif; font-size: clamp(1.5rem, 2.8vw, 2.25rem); line-height: 1; }
 .contemporaneous-alert strong { display: block; margin-bottom: .45rem; font-family: Georgia, serif; font-size: 1.12rem; }
@@ -610,6 +635,8 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .recovery-timeline::before { left: .25rem; }
   .recovery-timeline article { grid-template-columns: 1fr; gap: .35rem; padding-left: 1.4rem; }
   .recovery-timeline article::before { left: .02rem; }
+  .trajectory-key { grid-template-columns: 1fr; }
+  .trajectory-key section, .trajectory-key section:nth-child(even) { border-right: 0; }
   .document-card { grid-template-columns: 8.5rem 1fr; }
   .institution-grid { grid-template-columns: 1fr; }
   .update-card { grid-template-columns: 1fr; gap: .6rem; }
