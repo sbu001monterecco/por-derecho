@@ -4,8 +4,16 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-12T16:56:00Z</updated>
+  <updated>2026-08-12T17:30:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Aviso previo, título Matkator subsistente y exposición pública actual</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#prior-notice-surviving-title</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#prior-notice-surviving-title"/>
+    <published>2026-08-12T17:30:00Z</published>
+    <updated>2026-08-12T17:30:00Z</updated>
+    <summary>CNMV y AEAT fueron avisadas en enero de 2021; el juzgado concursal recibió en febrero la objeción sobre título y comercialización. CAM/RICPE reconocieron después una estructura dominical fragmentada, mientras el título registral Matkator subsiste y la operación y exposición pública continúan.</summary>
+  </entry>
   <entry>
     <title>Corregido: la materialización y los préstamos Sun Park/MYND están documentados</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ric-materialisation-correction</id>
