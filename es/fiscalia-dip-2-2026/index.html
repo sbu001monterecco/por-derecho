@@ -3,113 +3,187 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DIP 2/2026 — error factual, corrección formal y trazabilidad institucional</title>
-  <meta name="description" content="Registro documental sobre el Decreto de archivo de DIP 2/2026, la premisa factual relativa a la apelación y la corrección formal presentada cinco días después ante la Fiscalía Superior de Canarias.">
+  <title>DIP 2/2026 — error documentado sobre el estado de la apelación</title>
+  <meta name="description" content="El Decreto de DIP 2/2026 dijo que no constaba recurso el 2 de marzo. Resoluciones judiciales de 28 de enero y 18 de febrero ya documentaban el recurso RPL 3319/2025. Comunicación completa de 11 de marzo y explicación contextual.">
   <meta name="theme-color" content="#13252d">
   <link rel="canonical" href="https://sbu001monterecco.github.io/por-derecho/es/fiscalia-dip-2-2026/">
+  <link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/fiscalia-dip-2-2026/">
+  <link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/fiscalia-dip-2-2026/">
+  <link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/fiscalia-dip-2-2026/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="DIP 2/2026 — una premisa factual del archivo era incorrecta">
-  <meta property="og:description" content="6 marzo: archivo sobre una premisa de no apelación. 11 marzo: Fiscalía Superior recibe comunicación formal indicando que las resoluciones sí estaban apeladas y pendientes.">
+  <meta property="og:title" content="DIP 2/2026 — error documentado sobre la apelación">
+  <meta property="og:description" content="El recurso ya constaba en resoluciones judiciales antes de la consulta de ATLANTE del 2 de marzo.">
   <link rel="stylesheet" href="../../assets/styles.css">
   <script src="../../assets/site.js" defer></script>
   <style>
-    .evidence-callout{border:2px solid currentColor;padding:1.25rem;margin:1.5rem 0;border-radius:14px}.error-box{background:#fff4f2}.correction-box{background:#f3faf6}.trace-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}.trace-card{border:1px solid rgba(0,0,0,.18);border-radius:12px;padding:1rem;background:#fff}.quote-line{font-size:1.1rem;font-weight:700}.question-box{border-left:5px solid currentColor;padding:1rem 1.2rem;margin:1.5rem 0}.legal-guard{font-size:.96rem;opacity:.9}.timeline-strong{font-size:1.15rem}.document-tag{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:.2rem .6rem;font-size:.82rem;margin-bottom:.5rem}
-  </style>
+    .record-page{--record-ink:#13252d;--record-red:#8f2d27;--record-green:#245c49;--record-gold:#c89432}
+    .record-page .record-hero{background:linear-gradient(135deg,#10252e 0%,#193944 58%,#234e59 100%);color:#fff;padding:clamp(3.5rem,8vw,7rem) 0 3.5rem}
+    .record-page .record-hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);gap:clamp(2rem,5vw,5rem);align-items:end}
+    .record-page .record-hero h1{max-width:16ch;font-size:clamp(2.55rem,6vw,5.25rem);line-height:.97;letter-spacing:-.035em;margin:.4rem 0 1.25rem}
+    .record-page .record-hero .lead{font-size:clamp(1.08rem,2vw,1.35rem);line-height:1.55;max-width:61rem}
+    .record-page .status-stack{display:grid;gap:.75rem}
+    .record-page .status-item{border-top:1px solid rgba(255,255,255,.35);padding-top:.8rem}
+    .record-page .status-item span{display:block;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;opacity:.72}
+    .record-page .status-item strong{display:block;margin-top:.2rem;font-size:1rem}
+    .record-page .language-switch{display:flex;justify-content:flex-end;gap:.7rem;padding:.75rem 0}
+    .record-page .language-switch a{font-weight:700}
+    .record-page .record-section{padding:clamp(3rem,7vw,6rem) 0}
+    .record-page .record-section.alt{background:#f3f0e9}
+    .record-page .section-intro{max-width:58rem;margin-bottom:2rem}
+    .record-page .section-intro h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;margin:.35rem 0 1rem}
+    .record-page .evidence-grid,.record-page .document-context-grid,.record-page .limits-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+    .record-page .evidence-card,.record-page .document-card,.record-page .context-card,.record-page .limit-card{background:#fff;border:1px solid rgba(19,37,45,.16);border-radius:18px;padding:clamp(1.3rem,3vw,2rem);box-shadow:0 12px 30px rgba(19,37,45,.06)}
+    .record-page .evidence-card.error{border-top:6px solid var(--record-red)}
+    .record-page .evidence-card.record{border-top:6px solid var(--record-green)}
+    .record-page .document-tag{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:.25rem .65rem;font-size:.76rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+    .record-page blockquote{margin:1.1rem 0;padding:0 0 0 1rem;border-left:4px solid currentColor;font-size:1.08rem;line-height:1.55}
+    .record-page mark.error-highlight{background:#ffe08a;color:#321d00;padding:.08em .16em;box-decoration-break:clone;-webkit-box-decoration-break:clone;font-weight:800}
+    .record-page .original-note{font-size:.9rem;opacity:.78}
+    .record-page .chronology{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem;margin-top:1.5rem}
+    .record-page .chronology article{background:#fff;border-top:3px solid var(--record-gold);padding:1rem;border-radius:0 0 12px 12px}
+    .record-page .chronology time{display:block;font-weight:900;color:var(--record-red)}
+    .record-page .chronology p{margin:.4rem 0 0;font-size:.93rem}
+    .record-page .document-card{background:#13252d;color:#fff}
+    .record-page .document-card h3,.record-page .context-card h3{font-size:1.55rem;margin:.75rem 0}
+    .record-page .doc-meta{margin:1.25rem 0;padding:1rem 0;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+    .record-page .doc-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+    .record-page .doc-button{display:inline-flex;align-items:center;justify-content:center;padding:.72rem 1rem;border-radius:999px;background:#fff;color:#13252d!important;font-weight:800;text-decoration:none}
+    .record-page .doc-button.secondary{background:transparent;color:#fff!important;border:1px solid rgba(255,255,255,.6)}
+    .record-page .context-list{margin:1rem 0 0;padding-left:1.25rem}
+    .record-page .context-list li{margin:.72rem 0;line-height:1.5}
+    .record-page .audit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    .record-page .audit-grid article{border-left:4px solid var(--record-gold);padding:1rem;background:#fff}
+    .record-page .audit-grid strong{display:block;margin-bottom:.35rem}
+    .record-page .limit-card.proves{border-top:5px solid var(--record-green)}
+    .record-page .limit-card.not-proves{border-top:5px solid var(--record-red)}
+    .record-page .guardrail{margin-top:1.25rem;border-left:5px solid var(--record-gold);padding:1rem 1.2rem;background:#fff}
+    @media(max-width:820px){.record-page .record-hero-grid,.record-page .evidence-grid,.record-page .document-context-grid,.record-page .limits-grid{grid-template-columns:1fr}.record-page .chronology{grid-template-columns:repeat(2,1fr)}.record-page .audit-grid{grid-template-columns:1fr}}
+    @media(max-width:520px){.record-page .chronology{grid-template-columns:1fr}.record-page .doc-actions{display:grid}.record-page .language-switch{justify-content:flex-start}}
+</style>
 </head>
-<body class="dossier-page">
+<body class="dossier-page record-page">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="../" aria-label="Volver a Project Sun Rock"><span class="brand-mark" aria-hidden="true">SR</span><span class="brand-copy"><strong>Project Sun Rock</strong><small>Registro de recuperación</small></span></a>
-      <nav class="main-nav" aria-label="Navegación"><a href="../">Inicio</a><a href="../ric-private-equity-sun-park/">Dossier RIC / Sun Park</a><a href="#preguntas">Preguntas</a><a href="#limites">Límites</a></nav>
+      <nav class="main-nav" aria-label="Navegación"><a href="../">Inicio</a><a href="#documento">Comunicación</a><a href="#contexto">Explicación</a><a href="#limites">Límites</a></nav>
     </div>
   </header>
 
+  <div class="shell language-switch" aria-label="Idioma"><strong>ES</strong><a href="../../en/fiscalia-dip-2-2026/" lang="en">English</a></div>
+
   <main id="contenido">
-    <section class="dossier-hero">
-      <div class="shell dossier-hero-grid">
+    <section class="record-hero">
+      <div class="shell record-hero-grid">
         <div>
-          <p class="eyebrow">Fiscalía Superior de Canarias · DIP 2/2026 · trazabilidad documental</p>
-          <h1>Una premisa factual del archivo era incorrecta.</h1>
-          <p class="lead">El 6 de marzo de 2026 el Decreto de archivo utilizó como parte de su razonamiento que la resolución cuestionada habría devenido firme por no haberse utilizado oportunamente el recurso de apelación. El recurso existía. Cinco días después, Fiscalía Superior recibió una comunicación formal indicando expresamente que las resoluciones estaban apeladas y pendientes ante la Audiencia Provincial de Las Palmas.</p>
+          <p class="eyebrow">Fiscalía de la Comunidad Autónoma de Canarias · DIP 2/2026</p>
+          <h1>El recurso ya constaba antes de que Fiscalía dijera que no aparecía.</h1>
+          <p class="lead">El Decreto archivó las diligencias apoyándose, entre otros elementos, en que no constaba recurso y en una supuesta firmeza por falta de apelación. Pero el expediente judicial ya contenía actuaciones oficiales de 28 de enero y 18 de febrero de 2026 que documentaban la interposición, registro y tramitación del recurso RPL 3319/2025.</p>
         </div>
-        <aside class="dossier-status" aria-label="Estado probatorio">
-          <div><span>6 MAR 2026</span><strong>Decreto de archivo DIP 2/2026</strong></div>
-          <div><span>11 MAR 2026</span><strong>Corrección formal recibida</strong></div>
-          <div><span>Cuestión abierta</span><strong>Qué tratamiento institucional recibió la corrección</strong></div>
+        <aside class="status-stack" aria-label="Resumen">
+          <div class="status-item"><span>28 ENE 2026</span><strong>La Audiencia Provincial forma y registra el rollo de apelación</strong></div>
+          <div class="status-item"><span>18 FEB 2026</span><strong>El Juzgado recibe comunicación de la apelación y remite actuaciones</strong></div>
+          <div class="status-item"><span>2 MAR 2026</span><strong>La consulta de Fiscalía dice que no consta recurso</strong></div>
+          <div class="status-item"><span>11 MAR 2026</span><strong>La contradicción se comunica formalmente a Fiscalía</strong></div>
         </aside>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="hecho">
+    <section class="record-section" aria-labelledby="error">
       <div class="shell">
-        <p class="kicker">Documento contra documento</p>
-        <h2 id="hecho">El punto no requiere interpretar miles de páginas del concurso.</h2>
-        <div class="evidence-callout error-box">
-          <span class="document-tag">DECRETO · 6 MAR 2026</span>
-          <p class="quote-line">Fiscalía razonó que la resolución «habrá devenido firme al no haber hecho uso oportunamente del recurso de apelación».</p>
-          <p>La afirmación no aparece como una nota marginal: forma parte del razonamiento inmediatamente anterior a la conclusión de que no quedaba acreditado delito alguno y al archivo de las diligencias.</p>
+        <div class="section-intro">
+          <p class="kicker">La contradicción documental</p>
+          <h2 id="error">Lo que afirmó el Decreto y lo que ya decía el registro judicial.</h2>
+          <p>Las frases marcadas son el núcleo exacto del error. La comparación distingue cuidadosamente entre la existencia e interposición del recurso, su admisión y su resolución definitiva.</p>
         </div>
-        <div class="evidence-callout correction-box">
-          <span class="document-tag">REGAGE26e00026303869 · 11 MAR 2026 · RECIBIDO</span>
-          <p class="quote-line">La comunicación presentada a Fiscalía Superior indicó que los Autos de 12 de septiembre y 11 de noviembre de 2025 «han sido recurridos en apelación ante la Audiencia Provincial de Las Palmas, encontrándose actualmente pendientes de resolución».</p>
-          <p>El escrito identificó expresamente DIP 2/2026 y solicitó que fuese incorporado a ese expediente para dejar constancia del estado procesal actualizado.</p>
+        <div class="evidence-grid">
+          <article class="evidence-card error">
+            <span class="document-tag">Decreto DIP 2/2026 · consulta 2 MAR</span>
+            <h3>Texto utilizado por Fiscalía</h3>
+            <blockquote lang="es">«También se ha comprobado que contra el auto resolutorio de ambas reposiciones <mark class="error-highlight">no consta interpuesto recurso alguno —al menos, hasta la fecha de la consulta (02/03/2026)—</mark>.»</blockquote>
+            <blockquote lang="es">«La discrepancia del denunciante con dicha resolución, que, insistimos, <mark class="error-highlight">habrá devenido firme al no haber hecho uso oportunamente del recurso de apelación</mark>, no puede servir de base para considerar que estemos ante una prevaricación judicial.»</blockquote>
+            <p>La segunda frase aparece inmediatamente antes de la conclusión de inexistencia de delito y del archivo. Por ello, la premisa no fue una observación puramente incidental.</p>
+          </article>
+          <article class="evidence-card record">
+            <span class="document-tag">Registro judicial anterior al 2 MAR</span>
+            <h3>Lo que ya constaba oficialmente</h3>
+            <p><strong>28 de enero de 2026 · Audiencia Provincial de Las Palmas, Sección Cuarta · RPL 3319/2025.</strong> La resolución ordenó: «Con el anterior escrito de interposición de recurso de apelación, fórmese el rollo de apelación y regístrese…», identificando a Aweswell Limited como apelante.</p>
+            <p><strong>18 de febrero de 2026 · Juzgado de lo Mercantil.</strong> La resolución hizo constar la recepción de la «comunicación de interposición de recurso de apelación contra el auto de fecha 11/11/2025» y acordó la remisión electrónica de las actuaciones a la Sección Cuarta.</p>
+            <p><strong>Conclusión limitada:</strong> antes del 2 de marzo existía un recurso interpuesto, registrado y en tramitación. Esto no anticipa su admisión final, resultado o fondo; sí contradice la afirmación de que no constaba interpuesto recurso alguno.</p>
+          </article>
         </div>
-        <p class="timeline-strong"><strong>Secuencia verificable:</strong> 6 marzo — archivo con premisa de no apelación/firmeza. 9 marzo — notificación. 11 marzo — Fiscalía Superior recibe por RedSARA la información procesal correcta.</p>
-      </div>
-    </section>
-
-    <section class="section alt" id="preguntas" aria-labelledby="titulo-preguntas">
-      <div class="shell">
-        <p class="kicker">Presión institucional legítima</p>
-        <h2 id="titulo-preguntas">Un error puede ser involuntario. Lo decisivo es qué ocurre cuando el expediente recibe la corrección.</h2>
-        <div class="trace-grid">
-          <article class="trace-card"><strong>1 · Incorporación</strong><p>¿Fue REGAGE26e00026303869 incorporado efectivamente a DIP 2/2026 como se solicitó?</p></article>
-          <article class="trace-card"><strong>2 · Lectura</strong><p>¿Qué fiscal, unidad o superior recibió y examinó la actualización procesal?</p></article>
-          <article class="trace-card"><strong>3 · Rectificación</strong><p>¿Se dejó constancia formal de que la premisa de no apelación/firmeza era incorrecta?</p></article>
-          <article class="trace-card"><strong>4 · Reconsideración</strong><p>¿Se valoró si el error afectaba, o no, al razonamiento del archivo? Si se consideró irrelevante, ¿dónde consta la motivación?</p></article>
-          <article class="trace-card"><strong>5 · Trazabilidad</strong><p>¿Qué actuaciones constan después del 11 de marzo y quién asumió responsabilidad por su tratamiento?</p></article>
-          <article class="trace-card"><strong>6 · Control jerárquico</strong><p>¿Qué revisión independiente existe cuando una premisa factual de una decisión fiscal es contradicha por el propio estado procesal comunicado al expediente?</p></article>
-        </div>
-        <div class="question-box">
-          <p><strong>La pregunta pública es finita:</strong> una vez recibida la corrección, ¿se rectificó, se reconsideró, se consideró irrelevante con motivación o simplemente quedó sin una respuesta sustantiva localizada?</p>
+        <div class="chronology" aria-label="Cronología">
+          <article><time datetime="2026-01-28">28 ENE</time><p>Se forma y registra RPL 3319/2025.</p></article>
+          <article><time datetime="2026-02-18">18 FEB</time><p>El Juzgado documenta la apelación y remite actuaciones.</p></article>
+          <article><time datetime="2026-03-02">2 MAR</time><p>ATLANTE se consulta; el Decreto afirma que no consta recurso.</p></article>
+          <article><time datetime="2026-03-11">11 MAR</time><p>RedSARA registra la actualización dirigida a DIP 2/2026.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="neutralidad">
+    <section class="record-section alt" id="documento" aria-labelledby="documento-titulo">
       <div class="shell">
-        <p class="kicker">Confianza, neutralidad y control externo</p>
-        <h2 id="neutralidad">La pérdida de confianza se formula como una alegación que exige verificación, no como un hecho probado.</h2>
-        <p>Gil Marer manifiesta que, a la vista de la trayectoria acumulada de sus denuncias, archivos, fragmentación de expedientes, errores objetivos y efectos patrimoniales continuados, <strong>ha perdido la confianza en la neutralidad práctica de la actuación de las Fiscalías de Las Palmas y de Canarias en este asunto</strong>.</p>
-        <p>Asimismo, manifiesta su <strong>sospecha de que podrían existir influencias externas, directas o indirectas, favorables al perímetro Acosta Matos</strong>. Esa sospecha no se publica como hecho acreditado, no se atribuye a una persona concreta sin prueba y no permite afirmar corrupción, connivencia, instrucciones externas ni intencionalidad del fiscal firmante.</p>
-        <p>Precisamente por ello, la respuesta adecuada no es una acusación genérica, sino una <strong>auditoría independiente de trazabilidad</strong>: registro de entrada, asignación, consultas realizadas, documentación examinada, decisiones de acumulación o archivo, comunicaciones jerárquicas, eventuales conflictos, rectificaciones y fundamento de cada actuación.</p>
-        <div class="question-box"><p><strong>Si no existió influencia externa alguna, una trazabilidad completa, independiente y documentada es la forma más sencilla de despejar la sospecha.</strong> Si existió cualquier contacto, interés, conflicto o intervención relevante, debe identificarse por los cauces legalmente competentes.</p></div>
+        <div class="section-intro">
+          <p class="kicker">Documento primario y explicación contigua</p>
+          <h2 id="documento-titulo">Comunicación de 11 de marzo de 2026 a Fiscalía.</h2>
+          <p>Se publica el escrito completo de cuatro páginas junto a su contexto probatorio, no como una pieza aislada.</p>
+        </div>
+        <div class="document-context-grid">
+          <article class="document-card">
+            <span class="document-tag">PDF completo · 4 páginas</span>
+            <h3>Comunicación de actualización — DIP 2/2026</h3>
+            <p>Presentada a la Fiscalía de la Comunidad Autónoma de Canarias para su incorporación a las diligencias y para dejar constancia de que las resoluciones estaban recurridas y pendientes.</p>
+            <div class="doc-meta"><strong>Fecha:</strong> 11 marzo 2026<br><strong>Registro:</strong> REGAGE26e00026303869<br><strong>Estado del registro:</strong> recibido<br><strong>Naturaleza:</strong> comunicación de parte registrada; no resolución de Fiscalía</div>
+            <div class="doc-actions">
+              <a class="doc-button" href="../../assets/docs/fiscalia-dip2-comunicacion-11mar2026.pdf" target="_blank" rel="noopener">Abrir comunicación completa</a>
+              <a class="doc-button secondary" href="../../assets/docs/fiscalia-dip2-comunicacion-11mar2026.pdf" download>Descargar PDF</a>
+            </div>
+          </article>
+          <article class="context-card" id="contexto">
+            <span class="document-tag">Explicación contextualizada</span>
+            <h3>Qué demuestra y por qué importa</h3>
+            <ol class="context-list">
+              <li><strong>El recurso es anterior al archivo.</strong> No nació con el escrito de 11 de marzo: ya estaba documentado por el órgano judicial el 28 de enero y el 18 de febrero.</li>
+              <li><strong>Interposición no equivale a resultado.</strong> La documentación acredita que el recurso fue interpuesto, registrado y tramitado; no determina su admisión definitiva ni cómo debía resolverse.</li>
+              <li><strong>El texto del Decreto era materialmente incorrecto.</strong> No dijo que existiese una duda sobre admisión: dijo que no constaba interpuesto recurso alguno y dedujo firmeza por falta de apelación.</li>
+              <li><strong>La premisa formó parte del razonamiento de archivo.</strong> Su corrección exigía valorar expresamente si alteraba o no la conclusión, aunque el resto del razonamiento pudiera sostenerse por otros motivos.</li>
+              <li><strong>El registro de 11 de marzo prueba notificación institucional.</strong> Acredita que Fiscalía recibió formalmente la actualización; por sí solo no demuestra qué persona la leyó, ni si fue incorporada, rectificada o reconsiderada.</li>
+              <li><strong>El error no prueba intención.</strong> La contradicción objetiva justifica control de calidad y trazabilidad; no demuestra por sí sola parcialidad, prevaricación fiscal, connivencia o influencia externa.</li>
+            </ol>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section alt" aria-labelledby="contexto">
+    <section class="record-section" aria-labelledby="auditoria">
       <div class="shell">
-        <p class="kicker">Por qué importa</p>
-        <h2 id="contexto">DIP 2/2026 no agota la cuestión Sun Park ni la tutela judicial efectiva.</h2>
-        <p>El Decreto de 6 de marzo delimitó su análisis esencialmente a determinadas resoluciones de 2025 sobre la separación de la Administración Concursal. El expediente no equivale a una revisión integral de la cadena 2012–2022 sobre preservación de la masa, explotación hotelera, CESP, propiedad extraconcursal, Matkator, Comunidad de Propietarios, acceso, obras, financiación de salida, OB REM, competencia, adjudicación y efectos posteriores.</p>
-        <p>La comunicación de 11 de marzo añadió precisamente que los efectos patrimoniales no se limitaban al perímetro estrictamente concursal, alcanzaban estructuras situadas fuera del procedimiento y continuaban produciéndose. También informó del contexto económico de Sun Park / MYND Yaiza, Aweswell y Matkator, así como de actuaciones económicas y administrativas desarrolladas dentro y fuera del concurso.</p>
-        <p>Por ello, el error de la apelación importa por dos razones: porque es objetivamente comprobable y porque ofrece una prueba sencilla de la necesidad de <strong>control de calidad, corrección y trazabilidad</strong> cuando el Ministerio Fiscal adopta decisiones sobre un expediente de gran complejidad y efectos continuados.</p>
+        <div class="section-intro">
+          <p class="kicker">Cuestiones verificables</p>
+          <h2 id="auditoria">La respuesta institucional puede auditarse con preguntas concretas.</h2>
+        </div>
+        <div class="audit-grid">
+          <article><strong>Incorporación</strong>¿Se incorporó REGAGE26e00026303869 a DIP 2/2026?</article>
+          <article><strong>Revisión</strong>¿Quién examinó la actualización y contrastó las resoluciones judiciales?</article>
+          <article><strong>Rectificación</strong>¿Se dejó constancia de la inexactitud sobre la apelación?</article>
+          <article><strong>Materialidad</strong>¿Se valoró motivadamente si el error afectaba a la decisión de archivo?</article>
+          <article><strong>Comunicación</strong>¿Se notificó al aportante alguna respuesta sustantiva?</article>
+          <article><strong>Control</strong>¿Qué revisión jerárquica o independiente se aplicó?</article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="limites" aria-labelledby="titulo-limites">
+    <section class="record-section alt" id="limites" aria-labelledby="limites-titulo">
       <div class="shell">
-        <p class="kicker">Límites probatorios y derecho de respuesta</p>
-        <h2 id="titulo-limites">Lo que este registro afirma — y lo que no afirma.</h2>
-        <p><strong>Se afirma:</strong> el Decreto utilizó una premisa de no apelación/firmeza; la apelación existía; cinco días después del Decreto se presentó una comunicación formal a Fiscalía Superior indicando que los Autos estaban apelados y pendientes; el registro figura como recibido.</p>
-        <p><strong>No se afirma:</strong> que el error original fuese deliberado; que el fiscal firmante leyera personalmente la comunicación del 11 de marzo; que exista corrupción, prevaricación fiscal, connivencia o influencia externa probada; ni que el error determine por sí solo la invalidez de todo el Decreto.</p>
-        <p class="legal-guard">La sospecha de falta de neutralidad o de influencia externa se atribuye expresamente a Gil Marer como valoración y petición de verificación. Cualquier persona o institución afectada puede aportar documentación auténtica que corrija, complete o explique la secuencia. La documentación será incorporada al registro con fecha, procedencia y contexto.</p>
-        <div class="question-box"><p><strong>Regla del registro:</strong> documento contemporáneo antes que inferencia; inferencia identificada antes que acusación; y rectificación visible cuando una fuente fiable demuestra un error.</p></div>
+        <div class="section-intro"><p class="kicker">Límites probatorios</p><h2 id="limites-titulo">Una corrección firme sin sobrepasar la evidencia.</h2></div>
+        <div class="limits-grid">
+          <article class="limit-card proves"><h3>El registro sí permite afirmar</h3><p>Que el 2 de marzo el recurso ya estaba documentado en actuaciones judiciales oficiales; que el Decreto afirmó lo contrario; que esa premisa contribuyó al razonamiento de archivo; y que la contradicción fue comunicada formalmente el 11 de marzo.</p></article>
+          <article class="limit-card not-proves"><h3>El registro no permite afirmar por sí solo</h3><p>Que el error fuese deliberado; que el fiscal firmante conociera antes todos los documentos judiciales; que una persona concreta leyera la comunicación; que el recurso tuviese que prosperar; ni que exista corrupción o influencia externa probada.</p></article>
+        </div>
+        <div class="guardrail"><strong>Regla editorial:</strong> documento contemporáneo antes que inferencia; distinción explícita entre interposición, admisión y resultado; y derecho de respuesta para cualquier persona o institución que aporte documentación auténtica capaz de completar o corregir esta secuencia.</div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell"><p>Project Sun Rock · registro documental, recuperación y rendición de cuentas.</p><p><a href="../">Inicio</a> · <a href="../ric-private-equity-sun-park/">RIC / Sun Park</a></p></div></footer>
+  <footer class="site-footer"><div class="shell"><p>Project Sun Rock · registro documental, recuperación y rendición de cuentas.</p><p><a href="../">Inicio</a> · <a href="../../en/fiscalia-dip-2-2026/" lang="en">English</a></p></div></footer>
 </body>
 </html>
