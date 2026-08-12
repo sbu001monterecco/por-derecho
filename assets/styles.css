@@ -920,3 +920,19 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .institutional-accountability-static .section-head { padding:1.35rem;border-left:.35rem solid #6f2423;background:#f6efe9; }
 .language-counterpart { margin:1rem 0 0;text-align:right;font-weight:800; }
 @media (max-width:760px){.accountability-journey{grid-template-columns:1fr}.main-nav .nav-accountability{width:max-content}.language-counterpart{text-align:left}}
+
+
+/* Keep the accountability route visible and the expanded header uncrowded */
+.priority-links { display:flex;align-items:center;gap:.75rem;white-space:nowrap; }
+.priority-links a:first-child { display:inline-flex;padding:.42rem .7rem;border-radius:999px;background:#fff;color:#173943;text-decoration:none;font-weight:850; }
+@media (max-width:1120px) {
+  .nav-toggle { display:inline-flex;padding:.55rem .7rem;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:.45rem; }
+  .main-nav { display:none;position:absolute;left:1rem;right:1rem;top:4.4rem;padding:.75rem;flex-direction:column;align-items:stretch;background:var(--basalt);border:1px solid rgba(255,255,255,.15);border-radius:.65rem;box-shadow:var(--shadow); }
+  .main-nav.open { display:flex; }
+  .main-nav a { padding:.7rem; }
+  .main-nav .language-link { margin-left:0;margin-top:.35rem; }
+}
+@media (max-width:640px) {
+  .priority-inner { grid-template-columns:auto 1fr; }
+  .priority-links { grid-column:2;flex-wrap:wrap; }
+}
