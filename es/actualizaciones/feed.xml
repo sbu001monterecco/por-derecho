@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <title>Actualizaciones materiales — Project Sun Rock</title>
+  <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
+  <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
+  <updated>2026-08-12T14:00:00Z</updated>
+  <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>DIP 2/2026: error documentado sobre el estado de la apelación</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#dip2-appeal-status</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#dip2-appeal-status"/>
+    <published>2026-08-12T13:53:46Z</published><updated>2026-08-12T13:53:46Z</updated>
+    <summary type="text">Resoluciones judiciales anteriores a la consulta de Fiscalía ya documentaban el recurso RPL 3319/2025. Se publica la comunicación completa de 11 de marzo y su explicación contextual.</summary>
+  </entry>
+  <entry>
+    <title>Ley 2/2023: traslado formal al sistema interno del Gobierno de Canarias</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ley2-routing</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ley2-routing"/>
+    <published>2026-08-12T10:21:17Z</published><updated>2026-08-12T10:21:17Z</updated>
+    <summary type="text">REGAGE26e00065752755 fue trasladada para su tratamiento conforme a la Ley 2/2023 y al Decreto 91/2024. Es un hito de encaminamiento, no una decisión sobre el fondo.</summary>
+  </entry>
+  <entry>
+    <title>Reordenada la secuencia de responsabilidad</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#accountability-order</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#accountability-order"/>
+    <published>2026-08-12T09:13:47Z</published><updated>2026-08-12T10:41:43Z</updated>
+    <summary type="text">Los cinco actores privados pasan antes del administrador concursal y del juez para mejorar la lectura causal, sin establecer culpabilidad ni neutralidad automática.</summary>
+  </entry>
+</feed>
