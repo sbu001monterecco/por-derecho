@@ -13,3 +13,5 @@ The site is intentionally static and does not collect submissions, set analytics
 ## Editorial safeguards
 
 Public content distinguishes documents, facts, allegations, inferences, open questions and official outcomes. Personal data, privileged material, legal strategy and unaudited capital or claim figures must remain outside this repository.
+
+Public primary documents are stored under `assets/docs/` only after provenance, scope and redaction review; publication of a receipt or procedural record does not convert it into a merits finding.
