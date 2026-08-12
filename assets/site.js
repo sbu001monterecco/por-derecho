@@ -135,6 +135,24 @@
       p.innerHTML = `<strong>Indicio no es condena. Pero la acumulación de indicios exige una investigación que no fragmente la cadena.</strong><span>Control antes del título, alteración física, autoridad comunitaria controvertida, intervención o no-protección fiduciaria, conocimiento judicial, narrativa inversora previa a la adjudicación y beneficio económico posterior deben examinarse como una secuencia. La misma exigencia de trazabilidad se dirige a todos los órganos de Fiscalía que han intervenido: qué recibieron, qué investigaron, qué remitieron, qué corrigieron y qué dejaron fuera.</span>`;
       document.getElementById('continuity-harm-12aug').insertAdjacentElement('afterend', p);
     }
+
+    // 7) 12 Aug 2026: formal routing into the Canary Islands internal whistleblower system under Ley 2/2023.
+    if (!document.getElementById('ley2-routing-12aug')) {
+      const whistle = document.createElement('article');
+      whistle.id = 'ley2-routing-12aug';
+      whistle.className = 'thesis-block';
+      whistle.style.marginTop = '1.5rem';
+      whistle.innerHTML = `
+        <div>
+          <span class="evidence-badge">12 AGO 2026 · HITO INSTITUCIONAL</span>
+          <h3>Ley 2/2023: traslado formal al Sistema interno de información del Gobierno de Canarias.</h3>
+          <p>La Secretaría General Técnica de la Consejería de Hacienda y Relaciones con la Unión Europea comunica que la documentación presentada el 15 de julio de 2026 ante la Dirección General del Tesoro y Política Financiera —REGAGE26e00065752755— ha sido trasladada a la <b>Dirección General de Modernización y Calidad de los Servicios</b>, de la Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad, <b>a los efectos previstos en la Ley 2/2023</b> y conforme al Decreto 91/2024 que regula el Sistema interno de información de infracciones normativas de la Administración Pública de la Comunidad Autónoma de Canarias.</p>
+          <p>El traslado responde expresamente a la solicitud de determinar el tratamiento de la comunicación bajo la Ley 2/2023, incluyendo <b>canal, responsable, confidencialidad, acceso restringido y protección del informante</b>. La comunicación fue firmada electrónicamente por la Secretaria General Técnica, María Belén Díaz Elías, el 12 de agosto de 2026.</p>
+          <p><b>Qué significa:</b> no es una resolución sobre el fondo ni una declaración de infracción. Sí es un hito procedimental objetivo: la documentación deja de estar únicamente en el perímetro sectorial de Tesoro/Hacienda y queda formalmente encaminada hacia el sistema autonómico previsto para comunicaciones de infracciones y protección del informante.</p>
+        </div>
+        <div class="proof-split"><div><strong>Lo ya trazable</strong><span>Origen: DG Tesoro y Política Financiera. Registro de la comunicación: 15/07/2026. Traslado Ley 2/2023: 12/08/2026. Destino: Dirección General de Modernización y Calidad de los Servicios.</span></div><div><strong>Lo que ahora debe ser verificable</strong><span>Quién asume la gestión; qué acceso se restringe; qué preservación se ordena; cómo se protege al informante; qué órgano analiza el fondo; qué coordinaciones o remisiones se practican; y qué respuesta motivada queda registrada.</span></div></div>`;
+      document.getElementById('criminal-indicia-12aug').insertAdjacentElement('afterend', whistle);
+    }
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render, { once: true });
