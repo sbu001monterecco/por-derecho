@@ -4,8 +4,15 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-12T14:20:00Z</updated>
+  <updated>2026-08-12T16:56:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Corregido: la materialización y los préstamos Sun Park/MYND están documentados</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ric-materialisation-correction</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ric-materialisation-correction"/>
+    <published>2026-08-12T16:56:00Z</published><updated>2026-08-12T16:56:00Z</updated>
+    <summary type="text">Las cuentas auditadas registran Series F y G, 6.573.703,10 euros materializados y prestados a HNT; el BOE documenta una concesión regional de 3.440.914,20 euros. La cuestión pendiente es la veracidad y suficiencia del expediente de elegibilidad.</summary>
+  </entry>
   <entry>
     <title>El recorrido AC y juez queda estático y directamente navegable</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#english-ac-judge-parity</id>
