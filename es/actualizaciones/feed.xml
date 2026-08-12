@@ -4,8 +4,15 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-12T14:00:00Z</updated>
+  <updated>2026-08-12T14:10:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Corregida la paridad inglesa del administrador concursal y el juez</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#english-ac-judge-parity</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#english-ac-judge-parity"/>
+    <published>2026-08-12T14:10:00Z</published><updated>2026-08-12T14:10:00Z</updated>
+    <summary type="text">La versión inglesa muestra ahora el bloque visual del administrador concursal y del juez después de los cinco actores privados, sin presumir neutralidad ni culpabilidad.</summary>
+  </entry>
   <entry>
     <title>DIP 2/2026: error documentado sobre el estado de la apelación</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#dip2-appeal-status</id>

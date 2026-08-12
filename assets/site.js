@@ -103,8 +103,10 @@
           </article>
         </div>
         <div class="pressure-maxim" style="margin-top:1.25rem"><strong>Acción y omisión pueden ser jurídicamente distintas y causalmente convergentes.</strong><span>La cuestión es si una actuación positiva o la negativa a ejercer una medida protectora disponible permitió que el mismo estado de cosas se consolidara, afectara a la masa y se proyectara sobre derechos situados fuera del concurso.</span></div>`;
+      const actorPolicy = recovery.querySelector('.actor-policy');
+      const actorGrid = recovery.querySelector('.actor-grid');
       const market = document.getElementById('cesp-direct-market-12aug');
-      (market || recovery.lastElementChild).insertAdjacentElement('afterend', section);
+      (actorPolicy || actorGrid || market || recovery.lastElementChild).insertAdjacentElement('afterend', section);
     }
 
     // 5) Make the 2018 -> RIC -> 2022 -> MYND continuity and the harm easy to read.
