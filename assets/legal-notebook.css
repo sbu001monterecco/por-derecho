@@ -194,6 +194,130 @@
 .case-nav { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.5rem; }
 .case-nav a { padding: .45rem .75rem; border: 1px solid currentColor; border-radius: 999px; font-size: .8rem; font-weight: 850; text-decoration: none; }
 
+.writer-download {
+  color: #fff;
+  background: #8c2f2c;
+}
+
+.writer-download .shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.writer-download span { display: block; margin-bottom: .25rem; font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.writer-download strong { display: block; font-size: 1.08rem; line-height: 1.4; }
+.writer-download .button { color: #13252d; background: #fff; white-space: nowrap; }
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(19,37,45,.18);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(19,37,45,.05);
+}
+
+.evidence-matrix,
+.comparison-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  color: var(--notebook-ink);
+  font-size: .89rem;
+  line-height: 1.48;
+}
+
+.evidence-matrix th,
+.comparison-table th {
+  padding: .9rem 1rem;
+  color: #fff;
+  background: var(--notebook-ink);
+  text-align: left;
+  vertical-align: bottom;
+  font-size: .71rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.evidence-matrix td,
+.comparison-table td { padding: 1rem; border-top: 1px solid rgba(19,37,45,.14); vertical-align: top; }
+.evidence-matrix tbody tr:nth-child(even),
+.comparison-table tbody tr:nth-child(even) { background: #f7f4ee; }
+.evidence-matrix td:first-child { width: 9rem; color: var(--notebook-red); }
+.comparison-table td:first-child { width: 10rem; font-weight: 900; }
+
+.table-note {
+  margin: 1rem 0 0;
+  padding: 1.05rem 1.2rem;
+  border-left: 5px solid var(--notebook-teal);
+  background: #edf5f3;
+  line-height: 1.58;
+}
+
+.threshold-grid,
+.story-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.threshold-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.story-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+.threshold-grid article,
+.story-grid article {
+  padding: 1.3rem;
+  border: 1px solid rgba(19,37,45,.15);
+  background: #fff;
+}
+
+.threshold-grid article { border-top: 5px solid var(--notebook-red); border-radius: 16px; }
+.threshold-grid article > span,
+.story-grid article > span { display: block; color: var(--notebook-red); font-size: .72rem; font-weight: 950; letter-spacing: .08em; }
+.threshold-grid h3,
+.story-grid h3 { margin: .45rem 0 .75rem; line-height: 1.18; }
+.threshold-grid p,
+.story-grid p { margin: .45rem 0; line-height: 1.53; }
+
+.story-grid article { border-top: 5px solid var(--notebook-gold); border-radius: 14px; }
+.story-grid h3 { font-size: 1.1rem; }
+.story-grid p { font-size: .9rem; }
+
+.author-fit {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(240px, .55fr);
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  border: 1px solid rgba(19,37,45,.16);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.author-fit h3 { margin: .55rem 0 .8rem; font-size: 1.7rem; }
+.author-fit p { line-height: 1.6; }
+.author-fit aside { padding: 1.1rem; border-left: 5px solid var(--notebook-gold); background: #f7f4ee; }
+.author-fit aside strong { display: block; margin-bottom: .4rem; color: var(--notebook-red); }
+
+.writer-contents {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  color: #fff;
+  background: var(--notebook-ink);
+}
+
+.writer-contents > strong { color: #f2c46d; }
+.writer-contents > span { line-height: 1.5; }
+.writer-contents .button { white-space: nowrap; }
+
 @media (max-width: 840px) {
   .notebook-hero-grid,
   .notebook-grid-2,
@@ -201,11 +325,19 @@
   .case-grid,
   .question-grid,
   .comparison-grid,
-  .comment-panel { grid-template-columns: 1fr; }
+  .comment-panel,
+  .threshold-grid,
+  .author-fit,
+  .writer-download .shell,
+  .writer-contents { grid-template-columns: 1fr; }
+  .story-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .notebook-page .language-switch { justify-content: flex-start; }
+  .writer-download .button,
+  .writer-contents .button { justify-self: start; }
 }
 
 @media (max-width: 560px) {
   .notebook-timeline li,
   .fact-allegation { grid-template-columns: 1fr; gap: .5rem; }
+  .story-grid { grid-template-columns: 1fr; }
 }
