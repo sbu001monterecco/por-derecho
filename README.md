@@ -8,6 +8,8 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/en/` — English
 - `/es/toma-control-sun-park-7-junio-2018/` — canonical Spanish record of the 7 June 2018 takeover and aftermath
 - `/en/sun-park-takeover-7-june-2018/` — canonical English record of the 7 June 2018 takeover and aftermath
+- `/es/toma-control-sun-park-7-junio-2018/camel-travel-lanzarote-information/` — subsidiary Spanish record of the Cliffe-Jones dual Sun Park/MYND publication
+- `/en/sun-park-takeover-7-june-2018/camel-travel-lanzarote-information/` — subsidiary English record of the Cliffe-Jones dual Sun Park/MYND publication
 - `/es/comunidad-instrumentalizacion/actas-2011-2022/` — canonical Spanish chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/en/community-instrumentalisation/minutes-2011-2022/` — canonical English chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/` — language-aware entry point
@@ -20,6 +22,8 @@ Public content distinguishes documents, facts, allegations, inferences, open que
 
 Public primary documents are stored under `assets/docs/` only after provenance, scope and redaction review; publication of a receipt or procedural record does not convert it into a merits finding.
 
-The 7 June dossier owns the full event, pre-event operating record, ONA alternative, aftermath, pilot evidence and insolvency-perimeter analysis. The Community dossier owns the authority/debt/voting record. Its nested minutes dossier owns the Owners’ Community/CEXP source-status chronology and a separately labelled non-minutes lane: a summons, later recital, working meeting, email, pleading, order or judgment must never be relabelled as Community minutes. The RIC dossier owns downstream investor, financing and HNT/MYND analysis; the homepage and updates pages provide gateways rather than competing event narratives.
+The named-person Camel Travel/Lanzarote Information side record was released on the publisher's instruction on 13 August 2026 as a tightly bounded subsidiary case. Public-page exhibits are reproduced only to the extent needed to show the documented contrast; connected 2013–2017 records remain private and are described with their evidential limits. The page carries a prominent right of reply and correction, and any substantive response or primary-evidence correction must be logged with equivalent prominence.
+
+The 7 June dossier owns the full event, pre-event operating record, ONA alternative, aftermath, pilot evidence and insolvency-perimeter analysis. Its nested Camel Travel/Lanzarote Information side record owns only the documented dual-publication and potential travel-sales example; it is intentionally absent from the homepage, main navigation and updates feed. The Community dossier owns the authority/debt/voting record. Its nested minutes dossier owns the Owners’ Community/CEXP source-status chronology and a separately labelled non-minutes lane: a summons, later recital, working meeting, email, pleading, order or judgment must never be relabelled as Community minutes. The RIC dossier owns downstream investor, financing and HNT/MYND analysis; the homepage and updates pages provide gateways rather than competing event narratives.
 
 Open documentary follow-up is maintained in [INSTITUTIONAL_ACTIONS.md](INSTITUTIONAL_ACTIONS.md), including the Cabildo/Tourism Register/Yaiza request for a certified Sun Park operator history.
