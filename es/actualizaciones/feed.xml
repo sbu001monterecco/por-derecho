@@ -4,8 +4,16 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-13T04:30:00Z</updated>
+  <updated>2026-08-13T12:25:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Corrección: operador CEXP y separación del paquete Bankia</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#operador-cexp-y-paquete-bankia</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#operador-cexp-y-paquete-bankia"/>
+    <published>2026-08-13T12:25:00Z</published>
+    <updated>2026-08-13T12:25:00Z</updated>
+    <summary>Se retira la descripción demasiado categórica de la explotación de 2008 como simplemente voluntaria. CEXP queda identificada como la única entidad con mandato colectivo localizado para el conjunto; Monterecco/Pink, como vehículo de operación material limitado a 159 unidades. El paquete Bankia se separa entre los créditos privilegiados cedidos a Construcciones Acosta Matos y el producto financiero frente a CaixaBank en Valencia, dejando la ilicitud y el perjuicio como alegación pendiente.</summary>
+  </entry>
   <entry>
     <title>Historia unitaria inversa: de MYND Yaiza al origen</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#historia-unitaria-inversa</id>
@@ -60,7 +68,7 @@
     <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#actas-punto-cero-fmmm"/>
     <published>2026-08-12T21:30:00Z</published>
     <updated>2026-08-12T21:30:00Z</updated>
-    <summary>La reconstrucción separa la prehistoria voluntaria de 2008 de la etapa FMMM; identifica el acta de 22 de junio de 2011 como el documento que une deuda, exclusión de voto, Pamanil, custodia y litigios; sigue la secuencia hasta 2022; publica la corrección de perspectiva de Gil Marer y Patricia Domínguez; y distingue la transmisión de activos de 2008 de la compra de participaciones de LPB a Multimatrix en 2011.</summary>
+    <summary>La reconstrucción separa la estructura colectiva de explotación de 2008 de la etapa FMMM; identifica el acta de 22 de junio de 2011 como el documento que une deuda, exclusión de voto, Pamanil, custodia y litigios; sigue la cadena hasta 2022; publica la corrección de perspectiva de Gil Marer y Patricia Domínguez; y distingue la transmisión de activos de 2008 de la compra de participaciones de LPB a Multimatrix en 2011.</summary>
   </entry>
   <entry>
     <title>«La Comunidad» deja de funcionar como atajo de autoridad</title>
