@@ -4,8 +4,16 @@
   <id>https://sbu001monterecco.github.io/por-derecho/en/updates/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
-  <updated>2026-08-13T14:30:00Z</updated>
+  <updated>2026-08-13T16:20:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Legal Notebook: Inparsa/Hoteles Beatriz and Santana Cazorla/Anfi/Lopesan</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/en/legal-notebook/</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/en/legal-notebook/"/>
+    <published>2026-08-13T16:20:00Z</published>
+    <updated>2026-08-13T16:20:00Z</updated>
+    <summary>A bilingual, source-led legal desk opens with two separate Canary Islands matters involving hotel assets, valuation, competition and changes of control. Each case distinguishes decisions, allegations, procedural reports and inference, identifies missing primary records and provides a page-scoped moderated contribution thread.</summary>
+  </entry>
   <entry>
     <title>Superseding correction: CEXP, Monterecco/Pink cession and Order 804/2018</title>
     <id>https://sbu001monterecco.github.io/por-derecho/en/updates/#cexp-operator-bankia-package</id>
