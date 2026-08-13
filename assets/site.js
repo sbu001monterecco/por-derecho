@@ -60,15 +60,15 @@
       section.id = 'institutional-accountability-12aug';
       section.style.marginTop = '2.25rem';
       section.innerHTML = `
-        <div class="section-head"><div><p class="kicker">Dos niveles institucionales · una cadena causal</p><h2>Administrador Concursal y tutela judicial efectiva</h2></div><p>La alegación distingue las funciones. El Administrador Concursal era gatekeeper de LPB; el Juzgado ejercía la tutela y supervisión del concurso. Ninguna de esas funciones convertía por sí sola en masa concursal CESP, Matkator o el negocio hotelero.</p></div>
+        <div class="section-head"><div><p class="kicker">Dos niveles institucionales · una cadena causal</p><h2>Administrador Concursal y tutela judicial efectiva</h2></div><p>La alegación distingue las funciones. El Administrador Concursal era gatekeeper de LPB; el Juzgado ejercía la tutela y supervisión del concurso. Ninguna de esas funciones convertía por sí sola en masa concursal los derechos propios o residuales de CEXP, Matkator o terceros.</p></div>
         <div class="grid-2">
           <article class="path-card primary">
             ${portrait(asset('actors/francisco-de-borja-rodriguez-batllori.jpg'),'Retrato profesional del Administrador Concursal Francisco de Borja Rodríguez-Batllori Laffitte')}
             <span class="number">Administrador Concursal · gatekeeper</span>
             <h3>Francisco de Borja Rodríguez-Batllori Laffitte</h3>
             <p>Su relevancia no depende de haber ejecutado personalmente cada acto privado. Depende de qué verificó, autorizó, transmitió, toleró, informó, preservó o intentó revertir mientras administraba la masa de LPB.</p>
-            <p>En 2018 consta una secuencia documental sobre claves, acceso, mantenimiento y vigilancia. Gil Marer le respondió contemporáneamente que esas funciones y la explotación correspondían a CESP y le pidió verificar estatutos, libros, cuentas, contratos y deuda. La declaración judicial de 31 de julio de 2018 añade cuestiones sobre autorizaciones de acceso, puerta forzada y cerraduras.</p>
-            <p><b>Pregunta de rendición de cuentas:</b> una vez advertida la separación entre LPB, CESP, Comunidad y terceros, ¿qué medida concreta protegió cada perímetro y qué restitución, inspección, reclamación de frutos o cuantificación de daños se produjo?</p>
+            <p>En 2018 consta una secuencia documental sobre claves, acceso, mantenimiento y vigilancia. Gil Marer sostuvo contemporáneamente que esas funciones y la explotación correspondían a CEXP y pidió verificar estatutos, libros, cuentas, contratos y deuda. Esa era su posición de parte: el Auto 804/2018 no reconoció a CEXP el derecho posesorio actual invocado. La declaración judicial de 31 de julio de 2018 añade cuestiones sobre autorizaciones de acceso, puerta forzada y cerraduras.</p>
+            <p><b>Pregunta de rendición de cuentas:</b> una vez advertida la separación entre LPB, CEXP, Comunidad de Propietarios y terceros, ¿qué medida concreta protegió cada perímetro y qué restitución, inspección, reclamación de frutos o cuantificación de daños se produjo?</p>
             <p class="source-policy">Gil Marer ha formulado alegaciones civiles, concursales y penales sobre esta conducta. No existe condena ni declaración firme de responsabilidad criminal.</p>
           </article>
           <article class="path-card">
@@ -77,7 +77,7 @@
             <h3>Alberto López Villarrubia</h3>
             <p>Gil Marer sostiene que el problema no se reduce a resoluciones desfavorables: consiste en si la tutela concursal protegió realmente el activo, la unidad productiva y los límites del procedimiento cuando hechos externos estaban alterando control, posesión, acceso, obras, valor y competencia.</p>
             <p>El test público es: <b>conocimiento → competencia → remedio disponible → decisión u omisión → efecto</b>. Deben reconciliarse el funded exit de 2018, la pérdida de control material, OB REM y su no convalidación, las demoliciones y restricciones de acceso denunciadas, la inspección/pericial solicitada, la competencia por el activo y la adjudicación de 2022.</p>
-            <p><b>Sobre el alcance:</b> una resolución sobre LPB no podía por mera irradiación práctica crear título sobre Matkator, sustituir la autoridad de CESP ni convertir posesión de facto en propiedad. Si produjo efectos sobre esos planos, debe identificarse el puente jurídico individualizado.</p>
+            <p><b>Sobre el alcance:</b> una resolución sobre LPB no podía por mera irradiación práctica crear título sobre Matkator, decidir por sí sola qué autoridad residual conservaba CEXP ni convertir posesión de facto en propiedad. Si produjo efectos sobre esos planos, debe identificarse el puente jurídico individualizado.</p>
             <p class="source-policy">Gil Marer sostiene que determinados hechos y resoluciones superan el umbral de indicios que justifica investigación penal. Es una alegación formalmente planteada, no una declaración de culpabilidad.</p>
           </article>
         </div>
@@ -102,7 +102,7 @@
           <li><span>2022</span><strong>Formalización</strong><small>Adjudicación, proyecto comunitario, licencias, transmisión estructural CAM → HNT y posterior explotación.</small></li>
           <li><span>MYND</span><strong>Monetización</strong><small>El activo transformado entra en explotación hotelera y continúa generando valor, ingresos y relaciones comerciales.</small></li>
         </ol>
-        <div class="proof-split"><div><strong>Inferencia publicada</strong><span>Se presenta como inferencia causal documentada, no como sentencia firme sobre cada partida de obra. Quien sostenga que las demoliciones pertenecían a otra secuencia puede identificar proyecto, orden, licencia, contratista, certificación, factura o restitución que rompa la continuidad.</span></div><div><strong>Daño continuado</strong><span>LPB: masa, unidad productiva, salida financiada y valor. CESP: explotación, clientela, goodwill e ingresos. Matkator: posesión, transformación física y frutos. Aweswell/Sun Rock: inversión, plataforma comercial y costes de recuperación, evitando doble cómputo.</span></div></div>`;
+        <div class="proof-split"><div><strong>Inferencia publicada</strong><span>Se presenta como inferencia causal documentada, no como sentencia firme sobre cada partida de obra. Quien sostenga que las demoliciones pertenecían a otra secuencia puede identificar proyecto, orden, licencia, contratista, certificación, factura o restitución que rompa la continuidad.</span></div><div><strong>Daño continuado alegado</strong><span>LPB: masa, unidad productiva, salida financiada y valor. CEXP: derechos operativos y económicos residuales que deben concretarse por periodo. Matkator: posesión, transformación física y frutos. Aweswell/Sun Rock: inversión, plataforma comercial y costes de recuperación, evitando doble cómputo.</span></div></div>`;
       document.getElementById('institutional-accountability-12aug').insertAdjacentElement('afterend', block);
     }
 
