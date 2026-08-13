@@ -707,6 +707,8 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .justice-tests section, .justice-tests section:nth-child(3n), .justice-tests section:nth-last-child(-n+3) { border-right: 1px solid #dec6bf; border-bottom: 1px solid #dec6bf; }
   .justice-tests section:nth-child(2n) { border-right: 0; }
   .justice-tests section:nth-last-child(-n+2) { border-bottom: 0; }
+  .ac-record .justice-tests section:nth-last-child(2) { border-bottom: 1px solid #dec6bf; }
+  .ac-record .justice-tests section:last-child { grid-column: 1 / -1; border-right: 0; }
   .convergence-grid { grid-template-columns: 1fr; }
   .convergence-lane { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
   .convergence-lane:last-child { border-bottom: 0; }
