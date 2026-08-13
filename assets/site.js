@@ -54,28 +54,7 @@
       (thesis || recovery.firstElementChild).insertAdjacentElement('afterend', origin);
     }
 
-    // 3) CESP and Matkator: the extraconcursal boundary, plus the direct-to-market business.
-    if (!document.getElementById('cesp-direct-market-12aug')) {
-      const market = document.createElement('article');
-      market.id = 'cesp-direct-market-12aug';
-      market.className = 'forensic-chain';
-      market.style.marginTop = '2rem';
-      market.innerHTML = `
-        <header class="chain-head"><div><p class="kicker">Fuera del concurso por arrastre</p><h3>Matkator no era LPB. CESP tampoco. Y el negocio hotelero no era una colección de fincas.</h3></div><p>El Concurso 36/2012 era de Luchy Playa Blanca, S.L.U. La Comunidad de Explotación del Complejo Sun Park —CESP / Explotadora— y Matkator exigían un título jurídico propio para cualquier afectación de sus bienes, explotación, ingresos o negocio.</p></header>
-        <ol class="chain-track">
-          <li><span>2008</span><strong>Explotación unitaria</strong><small>CESP aparece como estructura operativa separada para mantenimiento, vigilancia, personal, suministros, relaciones comerciales y explotación turística.</small></li>
-          <li><span>2008–2011</span><strong>Minoría disidente</strong><small>Gil Marer alega que el perímetro Monte Lanza/Molina se apartó de la explotación unitaria y contribuyó a fragmentar operación, costes y autoridad.</small></li>
-          <li><span>2012</span><strong>Choque comercial</strong><small>La conflictividad interna dificultó la relación normal con turoperadores y obligó a reconstruir la salida comercial.</small></li>
-          <li><span>2012–2014</span><strong>Directo al mercado</strong><small>Gil Marer y Patricia Domínguez desarrollaron distribución directa al consumidor, reservas, atención telefónica y captación propia para no depender de turoperadores reacios a operar con un hotel internamente desestabilizado.</small></li>
-          <li><span>2014</span><strong>Plataforma real</strong><small>Correos contemporáneos muestran reservas, scripts, publicidad, clientes, medios digitales, financiación y desarrollo de Sun Park Living / Summers Villages.</small></li>
-          <li><span>2018 → hoy</span><strong>Desplazamiento y daño continuado</strong><small>La alegación es que control físico, Comunidad, Administración Concursal y tutela judicial terminaron afectando también esa empresa y esos derechos sin convertirlos por ello en masa concursal.</small></li>
-        </ol>
-        <div class="chain-conclusion"><strong>La prueba crítica es el puente jurídico.</strong><span>¿Qué título permitió que facultades concursales sobre LPB produjeran efectos materiales sobre CESP, Matkator, terceros, clientela, explotación e ingresos?</span></div>`;
-      const chain = recovery.querySelector('.forensic-chain');
-      (chain || document.getElementById('preconcurso-origin-12aug') || recovery.lastElementChild).insertAdjacentElement('afterend', market);
-    }
-
-    // 4) Make the AC and judge visually unavoidable and legally differentiated.
+    // 3) Make the AC and judge visually unavoidable and legally differentiated.
     if (!document.getElementById('institutional-accountability-12aug')) {
       const section = document.createElement('section');
       section.id = 'institutional-accountability-12aug';
@@ -105,11 +84,10 @@
         <div class="pressure-maxim" style="margin-top:1.25rem"><strong>Acción y omisión pueden ser jurídicamente distintas y causalmente convergentes.</strong><span>La cuestión es si una actuación positiva o la negativa a ejercer una medida protectora disponible permitió que el mismo estado de cosas se consolidara, afectara a la masa y se proyectara sobre derechos situados fuera del concurso.</span></div>`;
       const actorPolicy = recovery.querySelector('.actor-policy');
       const actorGrid = recovery.querySelector('.actor-grid');
-      const market = document.getElementById('cesp-direct-market-12aug');
-      (actorPolicy || actorGrid || market || recovery.lastElementChild).insertAdjacentElement('afterend', section);
+      (actorPolicy || actorGrid || recovery.lastElementChild).insertAdjacentElement('afterend', section);
     }
 
-    // 5) Make the 2018 -> RIC -> 2022 -> MYND continuity and the harm easy to read.
+    // 4) Make the 2018 -> RIC -> 2022 -> MYND continuity and the harm easy to read.
     if (!document.getElementById('continuity-harm-12aug')) {
       const block = document.createElement('article');
       block.id = 'continuity-harm-12aug';
@@ -128,7 +106,7 @@
       document.getElementById('institutional-accountability-12aug').insertAdjacentElement('afterend', block);
     }
 
-    // 6) A visible final line on criminal indicia and institutional accountability.
+    // 5) A visible final line on criminal indicia and institutional accountability.
     if (!document.getElementById('criminal-indicia-12aug')) {
       const p = document.createElement('div');
       p.id = 'criminal-indicia-12aug';
@@ -138,7 +116,7 @@
       document.getElementById('continuity-harm-12aug').insertAdjacentElement('afterend', p);
     }
 
-    // 7) 12 Aug 2026: formal routing into the Canary Islands internal whistleblower system under Ley 2/2023.
+    // 6) 12 Aug 2026: formal routing into the Canary Islands internal whistleblower system under Ley 2/2023.
     if (!document.getElementById('ley2-routing-12aug')) {
       const whistle = document.createElement('article');
       whistle.id = 'ley2-routing-12aug';
