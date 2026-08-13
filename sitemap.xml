@@ -35,6 +35,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/camel-travel-lanzarote-information/"/>
   </url>
   <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/sobre-nosotros/</loc><lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/sobre-nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/about/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/about/</loc><lastmod>2026-08-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/sobre-nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/about/"/>
+  </url>
+  <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</loc><lastmod>2026-08-13</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
