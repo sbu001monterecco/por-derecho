@@ -2441,6 +2441,13 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .double-game-allegation h3 { margin: .55rem 0 .7rem; color: #fff; font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 500; }
 .double-game-allegation p { margin: 0; color: #ebdcda; font-size: .84rem; }
 .responsibility-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Sale/lender convergence dossier */
+.convergence-page .dossier-hero::after { content: "PERIMETERS"; }
+.convergence-page .dossier-hero h1 { max-width: 15ch; font-size: clamp(3rem, 6.5vw, 6.4rem); }
+.convergence-page .convergence-grid { overflow: hidden; border: 1px solid #cdaaa0; border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0; }
+.convergence-page .allegation-badge { color: #6b1c19; background: #f3d6c8; border-color: #d7a797; }
+.convergence-page .chain-conclusion a { color: var(--gold-light); }
 .new-horizons-finding { margin-top: 1rem; padding: 1.35rem; border: 1px solid #b8cecc; border-left: .35rem solid var(--teal); border-radius: .75rem; background: #edf5f3; }
 .new-horizons-finding span { color: var(--teal); font-size: .65rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
 .new-horizons-finding h3 { margin: .55rem 0 .65rem; font-size: clamp(1.45rem, 2.6vw, 2rem); font-weight: 500; }
