@@ -752,6 +752,14 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .control-table th { color: var(--white); background: var(--basalt); font-size: .67rem; letter-spacing: .08em; text-transform: uppercase; }
 .control-table td { color: #425356; font-size: .76rem; }
 .control-table td:first-child { color: var(--ink); font-weight: 800; }
+.evidence-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+.evidence-table { width: 100%; min-width: 48rem; border-collapse: collapse; }
+.evidence-table th, .evidence-table td { padding: 1rem; text-align: left; vertical-align: top; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.evidence-table th:last-child, .evidence-table td:last-child { border-right: 0; }
+.evidence-table tbody tr:last-child td { border-bottom: 0; }
+.evidence-table th { color: var(--white); background: var(--basalt); font-size: .67rem; letter-spacing: .08em; text-transform: uppercase; }
+.evidence-table td { color: #425356; font-size: .76rem; }
+.evidence-table td:first-child { color: var(--ink); font-weight: 800; }
 .evidence-pair { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; margin-top: 2.4rem; }
 .evidence-pair figure { margin: 0; overflow: hidden; color: #dce7e8; background: var(--basalt); border-radius: var(--radius); }
 .evidence-pair img { width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover; }

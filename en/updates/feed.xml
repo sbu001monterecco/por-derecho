@@ -4,8 +4,17 @@
   <id>https://sbu001monterecco.github.io/por-derecho/en/updates/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
-  <updated>2026-08-14T12:42:00Z</updated>
+  <updated>2026-08-14T23:15:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>LPB Insolvency*: corrected perimeter, signed swap terms and live Valencia status</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/en/lpb-insolvency/</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/en/lpb-insolvency/"/>
+    <link rel="related" href="https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/"/>
+    <published>2026-08-14T23:15:00Z</published>
+    <updated>2026-08-14T23:15:00Z</updated>
+    <summary>Only LPB, a majority but not sole Sun Park owner, entered Concurso 36/2012. The new page treats Bankia enforcement as the immediate filing trigger, finds the protective filing defensible on the current record and does not call the declaration legally wrong merely because LPB had an asset surplus. It corrects the remembered swap-rate description and the supposed three-month 2012 threshold, while leaving Bankia's case-specific compliance open pending the full deed and execution file. It identifies Valencia PO 1859/2023 with trial set for 28 January 2027 at 10:00 and records that Arrecife EH 90/2012 ended on 18 August 2023 after dación, cancellation and satisfaction.</summary>
+  </entry>
   <entry>
     <title>RICPE: 2021 alert, Sony Ganwani, residual advice and alleged-harm perimeter</title>
     <id>https://sbu001monterecco.github.io/por-derecho/en/updates/#ricpe-harm-perimeter-14aug</id>
@@ -15,12 +24,12 @@
     <summary>A controlled public chronology covers the 2019 functional connection with Sony; Cuatrecasas’ formal 26 May 2020 venia/handover after more than two years of unpaid fees; the 8 March 2021 alert; metadata for the 17 March voice note; and Enrique Guerra’s RICPE certificate filed in Concurso 36/2012 on 21 July. The 2021 message did not cause the earlier formal withdrawal. Gil makes the narrower allegation that Íñigo referred to “our friend Sony” and presented himself as a messenger, and that this impaired continuity of any residual advice. No RICPE mandate, leak or caused outcome is asserted. There is no retrospective Law 2/2023 label; any later act requires separate proof under Articles 36.2 and 63.</summary>
   </entry>
   <entry>
-    <title>Lender of Record: credit chain, financial package and LPB concurso perimeter</title>
+    <title>Lender of Record: chain through 2023 satisfaction and separate Valencia claim</title>
     <id>https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/</id>
     <link href="https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/"/>
     <published>2026-08-14T08:00:00Z</published>
-    <updated>2026-08-14T08:00:00Z</updated>
-    <summary>New page separating the mortgage-credit chain from the disputed Bankia/CaixaBank financial package and adding a site-wide qualification against treating the limited LPB concurso as authority over the whole hotel or later operation.</summary>
+    <updated>2026-08-14T23:15:00Z</updated>
+    <summary>Updated page tracing Caja Insular de Ahorros de Canarias and Bankia through SAREB, Promontoria Holding 122 B.V. and Construcciones Acosta Matos, S.A.; recording the 2022 dación and 2023 satisfaction-based termination; and keeping the disputed CaixaBank product-liability claim separate.</summary>
   </entry>
   <entry>
     <title>New series: Inparsa, Meeting Point and Canary Islands hotel valuation</title>

@@ -4,8 +4,17 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-14T12:42:00Z</updated>
+  <updated>2026-08-14T23:15:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Insolvencia LPB*: perímetro corregido, contrato swap y estado vivo de Valencia</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/insolvencia-lpb/</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/insolvencia-lpb/"/>
+    <link rel="related" href="https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/"/>
+    <published>2026-08-14T23:15:00Z</published>
+    <updated>2026-08-14T23:15:00Z</updated>
+    <summary>Solo LPB, propietaria mayoritaria pero no única de Sun Park, entró en el Concurso 36/2012. La nueva página trata la ejecución de Bankia como detonante inmediato, considera defendible la solicitud protectora y no califica el auto como jurídicamente erróneo solo por existir excedente patrimonial. Corrige el recuerdo de tipos y el supuesto umbral de tres meses en 2012, dejando abierta la conformidad concreta de Bankia hasta obtener la escritura y el expediente ejecutivo completos. Identifica el PO 1859/2023 de Valencia con juicio señalado para el 28 de enero de 2027 a las 10:00 y registra que EH 90/2012 terminó el 18 de agosto de 2023 tras dación, cancelación y satisfacción.</summary>
+  </entry>
   <entry>
     <title>RICPE: alerta de 2021, Sony Ganwani, asesoramiento residual y perímetro del daño alegado</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#perimetro-dano-ricpe-14ago</id>
@@ -15,12 +24,12 @@
     <summary>Cronología pública controlada: conexión funcional con Sony en 2019; venia formal de Cuatrecasas de 26 de mayo de 2020 por más de dos años de honorarios impagados; alerta de 8 de marzo de 2021; metadatos de la nota de voz de 17 de marzo; y certificación RICPE de Enrique Guerra presentada en Concurso 36/2012 el 21 de julio. El mensaje de 2021 no causó la retirada formal anterior. Gil alega, de forma más limitada, que Íñigo aludió a «nuestro amigo Sony» y se presentó como mensajero, y que ello perjudicó la continuidad de cualquier asesoramiento residual. No se afirma mandato RICPE, filtración o resultado causado. No hay calificación retroactiva bajo la Ley 2/2023; todo acto posterior exige prueba separada bajo los artículos 36.2 y 63.</summary>
   </entry>
   <entry>
-    <title>Acreedor de Registro: cadena del crédito, paquete financiero y perímetro del concurso LPB</title>
+    <title>Acreedor de Registro: cadena hasta la satisfacción de 2023 y reclamación separada en Valencia</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/</id>
     <link href="https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/"/>
     <published>2026-08-14T08:00:00Z</published>
-    <updated>2026-08-14T08:00:00Z</updated>
-    <summary>Nueva página que separa la cadena del crédito hipotecario del paquete financiero discutido Bankia/CaixaBank y añade una calificación transversal contra tratar el concurso limitado LPB como autoridad sobre todo el hotel u operación posterior.</summary>
+    <updated>2026-08-14T23:15:00Z</updated>
+    <summary>Página actualizada que sigue a Caja Insular de Ahorros de Canarias y Bankia hacia SAREB, Promontoria Holding 122 B.V. y Construcciones Acosta Matos, S.A.; registra la dación de 2022 y la terminación por satisfacción en 2023; y mantiene separada la reclamación discutida de responsabilidad de producto frente a CaixaBank.</summary>
   </entry>
   <entry>
     <title>Nueva serie: Inparsa, Meeting Point y valoración de hoteles canarios</title>
