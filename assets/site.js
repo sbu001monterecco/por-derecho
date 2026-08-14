@@ -17,7 +17,34 @@
   }
 
   function render() {
-    if (document.documentElement.lang !== 'es') return;
+    const isSpanish = document.documentElement.lang === 'es';
+    const pageText = (document.body && document.body.textContent) || '';
+    const relevantPage = /LPB|Luchy Playa Blanca|Sun Park|MYND|HNT|CEXP|concurso|concursal|insolvenc|insolvency|administrator|administrador/i.test(pageText);
+    const commonShell = document.querySelector(isSpanish ? '#recuperacion .shell' : '#recovery .shell') || document.querySelector('main .section .shell');
+
+    if (relevantPage && !document.getElementById('limited-concurso') && commonShell && !document.getElementById('lpb-concurso-overreach-note')) {
+      const note = document.createElement('article');
+      note.id = 'lpb-concurso-overreach-note';
+      note.className = 'thesis-block';
+      note.style.marginTop = '2rem';
+      note.innerHTML = isSpanish ? `
+        <h2>Concurso LPB*: procedimiento limitado, desbordamiento alegado</h2>
+        <p>Un concurso limitado de LPB fue utilizado repetidamente, o se permitió que fuera utilizado, como si diera autoridad sobre todo el hotel, todo el perímetro de propiedad, la capa CEXP/explotación, las unidades de Matkator y terceros, las obras, la financiación y la explotación hotelera posterior.</p>
+        <p>En este sitio, "concurso LPB" significa Luchy Playa Blanca, S.L.U. y la masa del Concurso 36/2012. La causa bancaria alegada explica por qué se presentó la solicitud defensiva; no absuelve a actores posteriores que usaron, ampliaron, financiaron, certificaron, explotaron o se beneficiaron de una lectura desbordada de ese procedimiento.</p>
+        <p><a class="text-link" href="/por-derecho/es/acreedor-de-registro/">Ver la página Acreedor de Registro</a></p>
+      ` : `
+        <h2>LPB concurso*: limited proceeding, alleged overreach</h2>
+        <p>A limited LPB concurso was repeatedly used, or allowed to be used, as if it were authority over the whole hotel, the whole ownership perimeter, the CEXP/exploitation layer, Matkator/third-party units, works, finance and later hotel operation.</p>
+        <p>On this site, "LPB concurso" means Luchy Playa Blanca, S.L.U. and the estate in Concurso 36/2012. The alleged banking trigger explains why the defensive filing was made; it does not absolve later actors who used, expanded, financed, certified, operated or benefited from an overextended reading of that proceeding.</p>
+        <p><a class="text-link" href="/por-derecho/en/lender-of-record/">Open the Lender of Record page</a></p>
+      `;
+
+      const anchor = commonShell.querySelector(isSpanish ? '#tesis' : '#thesis') || commonShell.querySelector('.section-head') || commonShell.firstElementChild;
+      if (anchor && anchor.insertAdjacentElement) anchor.insertAdjacentElement('afterend', note);
+      else commonShell.insertBefore(note, commonShell.firstChild);
+    }
+
+    if (!isSpanish) return;
     const recovery = document.querySelector('#recuperacion .shell');
     if (!recovery) return;
 
