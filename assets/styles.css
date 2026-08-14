@@ -700,6 +700,7 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .evidence-key { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 2rem; }
 .evidence-key .evidence-badge { border-color: var(--line); }
 .representation-badge { color: #5c421b; background: #f3e4c5; border-color: #d9bf89 !important; }
+.inference-badge { color: #314c59; background: #dce8ed; border-color: #a9c0ca !important; }
 .question-badge { color: #76211e; background: #f3d6ce; border-color: #d8a79b !important; }
 
 .genealogy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .85rem; }
@@ -765,6 +766,15 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .register-fields span:nth-last-child(-n+2), .register-fields strong:nth-last-child(-n+2) { border-bottom: 0; }
 .register-fields span { color: var(--teal); background: #e5eeec; font-size: .67rem; font-weight: 900; letter-spacing: .07em; text-transform: uppercase; }
 .register-fields strong { font-size: .8rem; font-weight: 650; }
+
+.harm-perimeter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.harm-perimeter-grid article { padding: 1.3rem; background: var(--white); border: 1px solid var(--line); border-top: .24rem solid var(--teal); border-radius: var(--radius); box-shadow: var(--shadow); }
+.harm-perimeter-grid article:nth-child(2) { border-top-color: var(--charge); }
+.harm-perimeter-grid article:nth-child(3) { border-top-color: var(--gold); }
+.harm-perimeter-grid article:nth-child(4) { border-top-color: var(--charge-dark); }
+.harm-perimeter-grid p { margin: 1rem 0 0; color: var(--muted); font-size: .79rem; }
+.harm-perimeter-grid a { color: var(--teal); font-weight: 750; }
+.alert-accountability-grid { margin-top: 1rem; }
 
 .boundary-grid { display: grid; grid-template-columns: repeat(3, 1fr); overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: var(--radius); }
 .boundary-grid article { padding: 1.3rem; border-right: 1px solid rgba(255,255,255,.16); }
@@ -907,7 +917,7 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .footer-grid { grid-template-columns: 1fr; }
   .footer-links { justify-content: flex-start; }
   .dossier-hero-grid { gap: 2rem; padding-block: 4.5rem 3.5rem; }
-  .genealogy-grid, .responsibility-grid, .board-questions ol, .evidence-pair, .boundary-grid, .privacy-callout { grid-template-columns: 1fr; }
+  .genealogy-grid, .responsibility-grid, .board-questions ol, .evidence-pair, .harm-perimeter-grid, .boundary-grid, .privacy-callout { grid-template-columns: 1fr; }
   .responsibility-grid article { border-right: 0; border-bottom: 1px solid var(--line); }
   .responsibility-grid article:last-child { border-bottom: 0; }
   .boundary-grid article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
