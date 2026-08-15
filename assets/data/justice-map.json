@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Project Sun Rock — Justice & Institutional Record",
+    "updated": "2026-08-15",
+    "publication_rule": "Public facts are limited to source-controlled institutional acts, procedural status and explicitly labelled analytical questions. Presence in the graph does not imply wrongdoing, endorsement or coordination.",
+    "statuses": ["DOCUMENTED", "CORROBORATED", "DISPUTED", "ANALYTICAL_QUESTION", "OPEN_EVIDENTIAL_GAP", "SUPERSEDED"]
+  },
+  "institutions": [
+    {"id":"mf","type":"institution","name_es":"Ministerio Fiscal","name_en":"Public Prosecution Service"},
+    {"id":"fiscalia-lp","type":"fiscalia","parent":"mf","name_es":"Fiscalía Provincial de Las Palmas","name_en":"Las Palmas Provincial Prosecutor's Office"},
+    {"id":"fiscalia-canarias","type":"fiscalia","parent":"mf","name_es":"Fiscalía de la Comunidad Autónoma de Canarias","name_en":"Canary Islands Prosecutor's Office"},
+    {"id":"fiscalia-an","type":"fiscalia","parent":"mf","name_es":"Fiscalía de la Audiencia Nacional","name_en":"National Court Prosecutor's Office"},
+    {"id":"fiscalia-arrecife","type":"fiscalia","parent":"mf","name_es":"Fiscalía de Área de Arrecife-Lanzarote-Puerto del Rosario","name_en":"Arrecife-Lanzarote-Puerto del Rosario Area Prosecutor's Office"}
+  ],
+  "proceedings": [
+    {
+      "id":"di-273-2013",
+      "reference":"DI 273/2013",
+      "institution":"fiscalia-lp",
+      "period":"2013",
+      "status":"DOCUMENTED",
+      "summary_es":"Primer expediente fiscal localizado en el eje Sun Park/LPB; desembocó en querella y posteriormente en DP 332/2014.",
+      "summary_en":"Earliest located prosecution file in the Sun Park/LPB track; it led to a criminal complaint and subsequently DP 332/2014.",
+      "establishes_es":"Existencia del expediente y su conexión procesal con la querella posterior, sujeta a verificación documental individual de cada acto.",
+      "establishes_en":"Existence of the file and its procedural connection with the later criminal complaint, subject to act-by-act source verification.",
+      "does_not_establish_es":"No acredita por sí solo falsedad, parcialidad, afinidad o actuación indebida de ningún fiscal.",
+      "does_not_establish_en":"It does not by itself establish falsity, bias, affinity or wrongdoing by any prosecutor."
+    },
+    {
+      "id":"dp-332-2014",
+      "reference":"DP 332/2014",
+      "institution":"fiscalia-arrecife",
+      "period":"2014–2021",
+      "status":"OPEN_EVIDENTIAL_GAP",
+      "summary_es":"Procedimiento judicial derivado de la querella fiscal; el archivo/sobreseimiento de 29 marzo 2021 consta en referencias posteriores, pero su auto primario y razonamiento deben mantenerse como prioridad documental hasta su incorporación.",
+      "summary_en":"Court proceeding arising from the prosecution complaint; later records refer to a 29 March 2021 dismissal/closure, but the primary order and reasoning remain a priority evidential gap until incorporated.",
+      "establishes_es":"La continuidad procesal de la vía iniciada en 2013 y la necesidad de preservar su resolución final primaria.",
+      "establishes_en":"Procedural continuity of the route begun in 2013 and the need to preserve the primary final disposition.",
+      "does_not_establish_es":"No permite afirmar qué fundamento concreto tuvo el sobreseimiento hasta leer el auto primario.",
+      "does_not_establish_en":"It does not establish the precise ground of dismissal until the primary order is reviewed."
+    },
+    {
+      "id":"di-248-2018",
+      "reference":"DI 248/2018",
+      "institution":"fiscalia-lp",
+      "period":"2018–2019",
+      "status":"DOCUMENTED",
+      "summary_es":"Denuncia de Gil Marer/Aweswell contra el administrador concursal y Construcciones Acosta Matos; constan aportaciones de nuevas pruebas y solicitudes de diligencias.",
+      "summary_en":"Complaint by Gil Marer/Aweswell against the insolvency administrator and Construcciones Acosta Matos; subsequent evidence submissions and requested investigative steps are documented.",
+      "establishes_es":"La existencia, objeto y evolución documental de DI 248/2018, incluido que en febrero de 2019 se solicitaron diligencias respecto del AC, José Daniel Acosta Matos y Laura Acosta Matos.",
+      "establishes_en":"The existence, scope and documentary development of DI 248/2018, including February 2019 requests for investigative steps concerning the insolvency administrator, José Daniel Acosta Matos and Laura Acosta Matos.",
+      "does_not_establish_es":"La solicitud de diligencias no acredita que Fiscalía las practicara ni la culpabilidad de las personas mencionadas.",
+      "does_not_establish_en":"A request for investigative steps does not establish that they were carried out or that the named persons were guilty."
+    },
+    {
+      "id":"di-22-2026",
+      "reference":"DI 22/2026",
+      "institution":"fiscalia-lp",
+      "period":"2026",
+      "status":"DOCUMENTED",
+      "summary_es":"Expediente provincial archivado; escritos posteriores fueron unidos/incorporados al marco del expediente según el registro consolidado.",
+      "summary_en":"Provincial file archived; later submissions were joined/incorporated into the file framework according to the consolidated record.",
+      "establishes_es":"Archivo y tratamiento procesal posterior documentado.",
+      "establishes_en":"Documented archive and subsequent procedural treatment.",
+      "does_not_establish_es":"No determina por sí solo que hechos posteriores o materialmente distintos sean jurídicamente idénticos a los ya examinados.",
+      "does_not_establish_en":"It does not by itself determine that later or materially distinct events are legally identical to those already examined."
+    },
+    {
+      "id":"dip-2-2026",
+      "reference":"DIP 2/2026",
+      "institution":"fiscalia-canarias",
+      "period":"2026",
+      "status":"DISPUTED",
+      "summary_es":"Expediente de Fiscalía de Canarias archivado el 6 marzo 2026. El 11 marzo se comunicó formalmente que existía un recurso de apelación ya documentado, contradiciendo una premisa utilizada en el decreto.",
+      "summary_en":"Canary Islands prosecution file archived on 6 March 2026. On 11 March a formal communication stated that an appeal was already documented, contradicting a premise used in the decree.",
+      "establishes_es":"Una contradicción documental sobre el estado del recurso fue puesta formalmente en conocimiento de la institución.",
+      "establishes_en":"A documentary contradiction concerning appeal status was formally notified to the institution.",
+      "does_not_establish_es":"No acredita por sí sola mentira deliberada, mala fe ni que la corrección hubiera debido cambiar necesariamente el resultado jurídico.",
+      "does_not_establish_en":"It does not by itself establish a deliberate falsehood, bad faith, or that the correction necessarily required a different legal outcome.",
+      "page_es":"../fiscalia-dip-2-2026/"
+    },
+    {
+      "id":"gub-86-2026",
+      "reference":"GUB 86/2026",
+      "institution":"fiscalia-an",
+      "period":"2026",
+      "status":"DOCUMENTED",
+      "summary_es":"Comunicación a Fiscalía de la Audiencia Nacional remitida territorialmente a la Fiscalía de Área de Arrecife-Lanzarote-Puerto del Rosario.",
+      "summary_en":"Communication to the National Court Prosecutor's Office territorially referred to the Arrecife-Lanzarote-Puerto del Rosario Area Prosecutor's Office.",
+      "establishes_es":"La remisión territorial.",
+      "establishes_en":"The territorial referral.",
+      "does_not_establish_es":"No constituye una resolución de fondo ni acredita por sí sola una falta de coordinación.",
+      "does_not_establish_en":"It is not a merits decision and does not by itself establish a coordination failure."
+    }
+  ],
+  "edges": [
+    {"from":"di-273-2013","to":"dp-332-2014","type":"procedural_continuity","status":"DOCUMENTED"},
+    {"from":"di-248-2018","to":"di-273-2013","type":"historical_context_only","status":"ANALYTICAL_QUESTION","public_label_es":"Contexto institucional previo; no identidad de hechos","public_label_en":"Earlier institutional context; not identity of facts"},
+    {"from":"di-22-2026","to":"dip-2-2026","type":"institutional_routing","status":"DOCUMENTED"},
+    {"from":"gub-86-2026","to":"fiscalia-arrecife","type":"territorial_referral","status":"DOCUMENTED"}
+  ],
+  "open_questions": [
+    {"id":"q1","es":"¿Cuál fue el razonamiento exacto del auto primario de 29 marzo 2021 en DP 332/2014?","en":"What was the exact reasoning of the primary 29 March 2021 order in DP 332/2014?"},
+    {"id":"q2","es":"¿Qué fiscal firmó y qué razonamiento contiene el informe del Ministerio Fiscal solicitado en DP 1901/2026?","en":"Which prosecutor signed, and what reasoning is contained in, the prosecution report requested in DP 1901/2026?"},
+    {"id":"q3","es":"¿Qué número y resultado territorial recibió GUB 86/2026 tras su remisión a Arrecife?","en":"What territorial reference and outcome followed GUB 86/2026 after referral to Arrecife?"},
+    {"id":"q4","es":"¿Qué decisiones posteriores demuestran, en su caso, reconsideración independiente de hechos y pruebas materialmente nuevos?","en":"Which later decisions, if any, demonstrate independent reconsideration of materially new facts and evidence?"}
+  ]
+}
