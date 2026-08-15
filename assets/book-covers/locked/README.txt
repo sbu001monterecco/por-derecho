@@ -1,0 +1,1 @@
+Locked canonical public cover derivatives. These files correspond to the six-cover family approved by Gil Marer on 2026-08-15. Do not regenerate, restyle, or substitute without explicit approval. Private full-resolution masters remain outside the public repository.
