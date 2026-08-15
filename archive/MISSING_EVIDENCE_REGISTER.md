@@ -24,6 +24,10 @@ Single canonical queue. A missing item is not evidence of non-existence or wrong
 | ME-018 | SNCA Exp. 141-2026-IRR02 verification/index records | determine what was checked against what source | filing/REGAGE preserved | SNCA/IGAE/Infofraude | OPEN |
 | ME-019 | AEAT Pink Canary sole-explotadora files | extraconcursal exploitation/tax convergence | track identified but incomplete | AEAT file production | OPEN |
 | ME-020 | Historical art. 176 LC conclusion filings: filing proof or proof of absence | prevents attributing ignored filing to court office without proof | drafts/strategy identified | LexNET/asiento/court index | OPEN |
+| ME-021 | Complete administrative record/index of CGPJ DI 169/2026 | distinguish material received from material substantively examined and identify competence reasoning | final/archiving material and later traceability request identified | CGPJ administrative record / Registro y Archivo / Promotor record | OPEN |
+| ME-022 | Current/final decision and complete administrative record of Recurso de alzada 286/2026 | determines present CGPJ route and response to later evidential submissions | CGPJ confirmed formal processing on 16 Jul 2026; July evidential packages preserved | CGPJ Recursos / administrative record | OPEN |
+| ME-023 | Any Promotor / Servicio de Inspección / Comisión Permanente report, referral or decision relating to the court-functioning or conduct questions raised | allocates what the CGPJ actually examined by competent internal function | no complete report set located in current controlled repository | CGPJ administrative record / official response | OPEN |
+| ME-024 | Official records identified in July 2026 CGPJ submissions as capable of testing disputed appearance-of-impartiality assertions | enables confirmation, rejection or narrowing without relying on party recollection | submissions/declarations identified; underlying assertions are not treated as established | competent court/CGPJ records, attendance/recording/metadata where lawfully available | OPEN |
 
 ## Status values
 `OPEN` · `PARTIAL` · `LOCATED_PENDING_REVIEW` · `RESOLVED` · `SUPERSEDED`.
