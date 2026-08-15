@@ -1,94 +1,61 @@
-# RICPE → Orion Rental SOCIMI — platform continuity without presumed money flow
+# RICPE → AGM → Orion Rental SOCIMI — Sun Park perimeter continuity, governance and financing
 
 Updated: 15 August 2026
 
-## Purpose
+## Controlling proposition
 
-Canonical control record for the later Orion Rental SOCIMI branch. This file exists to prevent two opposite errors:
+Orion is not merely a remote later vehicle sharing generic platform ancestry with RICPE. The controlled record establishes **documented continuity of persons, entities, governance, management and financing architecture**:
 
-1. treating Orion as institutionally unrelated to RIC Private Equity Investment Partners, SCR, S.A. (RICPE) when the controlled 2023 audited material records that RICPE itself constituted Orion; and
-2. treating that institutional/platform relationship as proof that Sun Park / MYND Yaiza revenue, RIC financing, regional-incentive money, EU-cofinanced expenditure or disputed asset value flowed into Orion.
+**Sun Park / Comunidad / Pamalexsha / CAM → RICPE → AGM → Orion → Portfolio Stock Exchange.**
 
-## Verified / controlled propositions
+This is narrower than a criminal-conspiracy conclusion and stronger than a generic “platform continuity” description. The network itself is documentable; criminal, civil, regulatory and restitution consequences remain proposition-specific.
 
-- RICPE's controlled audited 2023 material records that on **16 June 2023** RICPE constituted **Orion Rental SOCIMI, S.A.** with **€60,000** capital.
-- The same audited material records RICPE as Orion's initial sole shareholder and states that after a later 2023 capital increase RICPE's holding fell below 1%.
-- The 2023 management report describes Orion as born with the same philosophy / institutional DNA as its RICPE founder.
-- RICPE's September 2023 project material simultaneously identifies MYND Yaiza as an existing portfolio project and Orion as then "en estudio".
-- The internal forensic corpus contains later AGM Canary Asset Management / Orion governance-management material requiring primary-source completion. Relationship evidence may locate authority, communications and economic interest; it does not by itself prove concerted wrongdoing at Sun Park or an earlier common plan.
+## RICPE → Orion
+- Orion incorporated **16/06/2023**.
+- RICPE held **100% of the 60,000 initial shares / €60,000 capital** and was sole shareholder.
+- Orion’s issue document says it was born with the same philosophy as founder RICPE.
+- RICPE September-2023 material places **MYND Yaiza** and **Orion Rental SOCIMI (€10m, “en estudio”)** in the same project architecture.
 
-## Public-safe analytical proposition
+## Direct financing architecture
+The 7 November 2024 Orion issue document describes a model of:
+- equity **42%**;
+- European funds **19%**;
+- **RICPE convertible participating finance 17%**;
+- bank finance **22%**.
 
-Orion is best understood as a **separate later branch of RICPE platform reuse/evolution**. The evidential question is what capital relationships, investor base, governance, professional gatekeepers, RIC architecture, management infrastructure, track record and institutional credibility were carried from RICPE into Orion.
+A valuation attachment contains a 42/21/17/20 variant. Exact split therefore requires reconciliation, but the **RICPE→Orion finance channel is expressly documented**. The issue material also describes the participating finance as obtained indirectly with **RIC funds of RIC investors through RICPE**. Native contracts, drawdowns, bank accounts, dates and actual amounts remain to be produced.
 
-That is different from asking whether MYND Yaiza financed Orion.
+## AGM is a central management bridge
+The issue document identifies **AGM Canary Asset Management** as Orion’s exclusive strategic/asset manager under a 16/02/2024 contract; relevant strategic/management/asset decisions are attributed to AGM subject to Orion-board approval.
 
-## No-money-flow rule
+## Sun Park actors reappearing in the Orion-related perimeter
+### JDAM
+Official CNMV record places José Acosta Matos on RICPE’s board from **04/11/2019**, before Sun Park 2020. Orion-related disclosure links him to CAM/Promociones, **18.77% AGM** and chairmanship roles.
 
-Do not publish or infer that any of the following funded Orion unless bank/accounting/security evidence establishes the bridge:
+### FMMM
+The Sun Park corpus places FMMM in Community administration by 2016 and in the 2018 Community/security/voting chronology. Orion later identifies him as **33% Pamalexsha shareholder**, indirectly AGM-linked and **AGM board member**.
 
-- hotel income from Sun Park / MYND Yaiza;
-- RICPE Series F/G financing to HNT/MYND Yaiza;
-- the published €3,440,914.20 regional-incentive amount under GC/836/P06;
-- EU-cofinanced expenditure associated with Sun Park→MYND Yaiza;
-- property, rights, value or proceeds belonging to LPB, Matkator, Aweswell or another third party.
+### Shaila Cogolludo
+Pamalexsha/Community records show Sun Park administration activity signed in Shaila’s name; FMMM’s 2018 statement places her in the vice-presidency/voting/security-enforcement node. Orion related-person disclosure identifies **34% Pamalexsha** and **49% Explotaciones Noalpa**.
 
-Temporal proximity, common participants or common investment-platform origin are not money-flow proof.
+### Antonio Cogolludo
+The controlled Sun Park record places Antonio in the Community presidency/access-security perimeter and 2018 Arrecife procedural record. Orion disclosure identifies **33% Pamalexsha** and **51% Explotaciones Noalpa**.
 
-## Governance-continuity questions
+## Why this matters
+The later Orion structure reconnects, through RICPE and AGM, **JDAM with FMMM, Shaila and Antonio and entities already active in Sun Park**. This is material to related-party governance, information flow, platform value, capital origin/destination, fees/guarantees/refinancing capacity, track-record use and later gatekeeper diligence.
 
-1. What board/shareholder resolution authorised RICPE to constitute Orion?
-2. Which RICPE investors, directors, committees, advisers or service providers participated in Orion's creation?
-3. What conflict/related-party disclosures and abstentions were recorded?
-4. What capital did RICPE contribute and from which account/source?
-5. What later capital increases diluted RICPE below 1%, and who subscribed them?
-6. What RIC or other tax-treatment architecture applied to Orion investors or investments?
-7. What role did AGM Canary Asset Management have in Orion strategy/asset management, under what mandate and from what date?
-8. What governance or economic relationships linked AGM shareholders/directors to actors already present in the Sun Park / Community / Acosta Matos chronology?
-9. Which banks, auditors, lawyers, tax advisers and investment advisers overlapped between RICPE and Orion?
-10. Is there any primary evidence of an actual Sun Park/MYND→Orion payment, loan, guarantee, security, asset contribution, dividend recycle or other value transfer? If not, record the absence as an open evidential gap rather than a negative fact.
+## Portfolio and CNMV
+Portfolio later confirmed an **internal investigation**, approximately three months of analysis, collection of data, examination of different sources and a completed assessment. It initially said it would engage CNMV/other authorities; proof of actual engagement remains open.
 
-## Three alternative explanations to preserve
+CNMV received filing **2024136159** on 22/11/2024. On 25/11 it said the filing did not satisfy the formal consumer-complaint route but would be **processed as a consulta**. A later notification references **2024174266**. This sits alongside CNMV’s separately confirmed RICPE supervision arising from the January-2021 Sun Park alert.
 
-### A. Independent later project
-Orion may be economically independent of Sun Park/MYND despite sharing an institutional founder.
+## FEDER correction
+The permanent MYND Yaiza project plaque expressly identifies **FEDER / Fondo Europeo de Desarrollo Regional**. What remains open is exact percentage, certified/paid expenditure, eligible-cost map, checks, audits and corrections/recovery.
 
-### B. Platform reuse without Sun Park value flow
-Orion may reuse RICPE governance, investor/professional infrastructure, RIC expertise and track record without receiving Sun Park/MYND money or security.
+## Proved vs open
+**Documented:** Sun Park activity of FMMM/Pamalexsha/Shaila/Antonio; JDAM pre-2020 RICPE governance; RICPE 100% founder of Orion; express RICPE finance architecture; AGM management; related-person links; Portfolio investigation; CNMV consulta route; FEDER identification.
 
-### C. Identifiable value bridge
-A financial, security, guarantee, asset, dividend, fee, refinancing-capacity or other value bridge may exist. This is an investigative hypothesis only until primary evidence establishes it.
-
-Do not prefer C merely because it would support a broader patrimonial theory.
-
-## Required source completion
-
-- Orion incorporation deed / Mercantile Registry package;
-- RICPE board/shareholder approval for constitution;
-- Orion shareholder register from incorporation through current date;
-- all 2023 capital-increase documentation;
-- bank statements for RICPE's €60,000 contribution and subsequent related transactions;
-- any RICPE→Orion loans, participating loans, guarantees or security;
-- Orion financing / bank / bond / shareholder-loan records;
-- AGM Canary Asset Management management/advisory agreement and fee records;
-- AGM shareholder register, governance minutes, conflict records and beneficial-interest documentation;
-- investor/source-of-funds records sufficient to distinguish RICPE-origin investors from independent later capital;
-- current Orion accounts and audited reports;
-- any document proving or excluding a Sun Park/MYND asset, income, subsidy, EU-funds or security connection.
+**Open:** executed finance contracts/drawdowns; 19/22 vs 21/20 split; any specific Sun Park/MYND/LPB/Matkator income, fee, dividend, guarantee, security, refinancing capacity, asset/right or proceeds entering RICPE→Orion; Portfolio workpapers/authority contacts; CNMV consultation outcome; exact FEDER payment/control trail.
 
 ## Publication rule
-
-Use:
-
-- **RICPE founded Orion** where supported by the controlled audited record;
-- **platform continuity / reuse to be traced**;
-- **later governance-management relationships to be verified from primary corporate records**;
-- **no Sun Park/MYND→Orion money flow established**.
-
-Do not use:
-
-- "Orion is unrelated to RICPE";
-- "MYND funded Orion";
-- "EU funds went to Orion";
-- "the Acosta Matos perimeter controlled Orion" unless a specific corporate/control proposition is sourced for the relevant date and entity;
-- common-person or common-adviser evidence as proof of criminal agreement.
+Do not reduce the message to “no conspiracy” or “no money flow”. Publish the documented network and finance architecture, then separately identify the narrower legal-characterisation and asset-specific value-tracing questions.
