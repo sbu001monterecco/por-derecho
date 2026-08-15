@@ -1,0 +1,18 @@
+# CORRECTION REGISTER
+
+Permanent control against reintroducing superseded facts. Record material corrections even when the public page has already been fixed.
+
+| ID | Prior / unsafe proposition | Corrected proposition | Basis / context | Public propagation |
+|---|---|---|---|---|
+| CR-001 | AP Sección 4ª deliberation marker stated as 7 Jul 2026 | Primary providencia sets deliberation/vote/judgment for **9 Jul 2026** | corrected during DO NOW activation | DONE |
+| CR-002 | AP accumulation order stated as 20 Jul 2026 | Auto 223/2026 accumulating RPL 3319/2025 into 3304/2025 is dated **15 Jul 2026** | primary AP record | DONE |
+| CR-003 | 25 Oct 2021 testimony DIOR attributed to María Teresa Oliver Guerra | Reviewed record attributes the 25 Oct 2021 DIOR to **Águeda Reyes Almeida** | corrected during LAJ evidence-completion pass | DONE |
+| CR-004 | Current conclusion/exit route described as art. 456 TRLC | Historical route was art. 176 LC; current payment/consignation/full-satisfaction conclusion route is **art. 477 TRLC**. Art. 456 TRLC concerns deficit coverage in culpable classification | legal correction; use current official text when filing | PROPAGATE WHEN REFERENCED |
+| CR-005 | Draft historical art. 176 conclusion/debt-certification materials described as filed | Treat as **draft unless LexNET/asiento filing proof is located** | source-status audit | CONTROLLED |
+| CR-006 | “Fiscalía silence” used generically | Several tracks contain affirmative institutional acts; use **documented response / scope mismatch / response gap** episode by episode | MF open-message redesign | DONE |
+| CR-007 | “Clandestine testimonios” as a public conclusion | Issuance/delivery episodes are documented; concealment is not established. Use notification/traceability questions unless intentional concealment is proved | LAJ audit | DONE |
+| CR-008 | CNMV merely “was alerted” with no stronger primary-source status | CNMV confirms supervisory actions arose from Jan-2021 filing and confirms two Jul-2021 documents were absent from the located/obtained supervisory corpus; other detail subject to supervisory secrecy | CNMV salida 2026008544, 22 Jan 2026 | DONE |
+| CR-009 | Group labels imply common legal identity/knowledge | CAM, HNT, Canarian Hospitality/MYND, RICPE and individuals must remain legally and evidentially distinct unless a specific relationship/proposition is sourced | Acosta Matos/RICPE discipline | ONGOING CONTROL |
+
+## Rule
+When a correction changes a public proposition, update: (1) public page(s), (2) canonical evidence/maintenance ledger, (3) any manuscript/book intelligence using it, and (4) this register. Never delete the correction history merely because the current page is correct.

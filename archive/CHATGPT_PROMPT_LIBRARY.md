@@ -1,0 +1,48 @@
+# CHATGPT PROMPT LIBRARY
+
+Use these as reusable launch prompts. They supplement, not replace, specialist protocols.
+
+## P01 — Full evidence refresh
+Read `CHATGPT_START_HERE.md`. Search connected Gmail, Google Drive, Library/Files and current `main` for new evidence affecting every live track in `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`. Search both supporting and contradicting material. For each material item: classify evidential status; update the canonical ledger; update `MISSING_EVIDENCE_REGISTER.md`; propagate corrections; update public pages only when justified; use branch→PR→merge→Pages verification.
+
+## P02 — Institutional accountability refresh
+Re-run all live accountability hubs. For each actor/body identify: competence/power, verified knowledge, documented act/response, strongest reasonable defence, what remains unresolved after accepting that defence, what happened next, and what can realistically be done now. Do not infer motive from outcome.
+
+## P03 — Courts / Ministerio Fiscal refresh
+Update Ministerio Fiscal, Justice Map, DP 1901/2026, Concurso 36/2012, LAJ, Mercantil nº1/judge, AC and AP Sección 4ª from primary sources. Preserve `decided` vs `not decided`, evidence-before-court, receipt vs examination, routing vs merits, and chronology vs causation.
+
+## P04 — RICPE / CNMV / public funding refresh
+Update RIC Private Equity Investment Partners, SCR, S.A. (RICPE), CNMV, RIC/public-incentive authorities, Intervención, SNCA/IGAE/Fondos UE, AEAT and ATC. Build a date/entity/asset/representation matrix and distinguish what each institution independently verified from what it merely received.
+
+## P05 — Local government / tourism refresh
+Update Ayuntamiento de Yaiza, Cabildo de Lanzarote, Cabildo Turismo and Gobierno de Canarias Turismo. Reconcile ownership, representation, promoter, operator, unit lists, works, tourism operating perimeter and Matkator/third-party units without equating operating unity with ownership unity.
+
+## P06 — Professional regulators refresh
+Update ICALPA, ICAM, CCACM, COA Lanzarote, COAGC and RSM/professional perimeter where source depth warrants. Separate professional-conduct scope, territorial/appellate routing, dates of acts and limitation/prescription issues act by act.
+
+## P07 — Audience / credibility red-team
+Simulate first reads by: ordinary Spanish reader, investigative journalist, prosecutor, judge, insolvency lawyer, appellate lawyer, rule-of-law academic, hostile sceptic, and business/investor reader. Score comprehension, documentary credibility, fairness, rebuttal resistance, legal discipline, public-interest value, shareability and campaign/defamation risk. Propose the smallest changes with the highest credibility gain.
+
+## P08 — Navigation / link audit
+Audit homepage, institutional marks, Justice Map, `Who should answer what?`, language switches and every live accountability page. Find dead links, orphan pages, stale routes, incorrect mark destinations, pages more than two meaningful clicks from their audience, and ES/EN parity defects. Fix safe defects through PR and verify Pages.
+
+## P09 — Contradiction / correction audit
+Search specifically for material that proves the website wrong, narrows allegations, changes dates/names/attribution, proves a response existed, shows a document was not filed, or identifies a stronger defence. Update `archive/CORRECTION_REGISTER.md` first, then propagate corrections everywhere.
+
+## P10 — GitHub security / resilience audit
+Review repository metadata, branch protections when available, open/stale PRs, Pages source/builds, collaborators/keys/secrets exposure where accessible, backup/mirror posture and portability. Do not alter high-impact account permissions without explicit approval. Update `archive/SECURITY_RESILIENCE_AUDIT.md`.
+
+## P11 — Deployment verification
+For the latest public-site PR: identify exact merge commit; verify intended files on `main`; inspect latest GitHub Pages build; require `built` with no error; test critical URLs if accessible; update `archive/DEPLOYMENT_LOG.md`. Never say “live” solely because a merge succeeded.
+
+## P12 — Thread deletion / continuity gate
+Assume the current ChatGPT conversation will be deleted. Identify every material new source, proposition, correction, proceeding, strategic decision, missing-document request and public-site change created in the thread. Verify each is preserved on `main` in a canonical record. If not, create a safe continuity PR. Finish with a list of any information intentionally excluded from public GitHub because it is private/privileged/restricted.
+
+## P13 — Claim-to-source audit
+Select every high-risk claim on the public website involving ownership, creditor standing, asset transfer, control/possession, testimony, non-convalidation, adjudication, dación, Matkator, investor representations, public funding, regulatory notice, prosecutorial/court knowledge, omission or causation. For each build `claim → primary source → corroboration → contradiction → current status → pages using claim`. Flag unsupported claims for qualification/removal.
+
+## P14 — Bilingual parity audit
+Compare ES/EN pairs fact by fact: names, dates, legal status, evidential caveats, routes, links, page structure and strength of wording. No language may state a stronger accusation than the other unless the difference is explicitly intentional and sourced.
+
+## Universal close-out
+Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.

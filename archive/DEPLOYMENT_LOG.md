@@ -1,0 +1,19 @@
+# DEPLOYMENT LOG
+
+Use after every merged public-site change. A merge to `main` is not itself proof that GitHub Pages has published the revision.
+
+| Date (UTC) | PR | Merge commit | Pages build/status | Critical verification | Notes |
+|---|---:|---|---|---|---|
+| 2026-08-15 | #51 | `6ee7d2fe3400f26f721062eefcb76e5a9732d771` | GitHub Pages build 1153119307 — **built**, no error | fresh publish forced after CNMV primary-source update | deployment-marker only; no substantive public content change |
+| 2026-08-15 | #50 | `b1fafe442e0f2795ad0ebe3ea21db28e5aef8e4d` | superseded by #51 forced refresh | CNMV source on `main` verified | primary-source chronology upgrade |
+
+## Required deployment procedure
+1. identify merged PR and exact merge commit;
+2. verify the intended files on `main`;
+3. inspect GitHub Pages latest-build endpoint/status;
+4. require `built` and no error before calling deployment confirmed;
+5. test high-value public URLs where external retrieval is available;
+6. record any cache/deployment-marker action;
+7. append this log.
+
+If Pages status cannot be checked, say **source merged / public deployment not independently verified** rather than assuming success.
