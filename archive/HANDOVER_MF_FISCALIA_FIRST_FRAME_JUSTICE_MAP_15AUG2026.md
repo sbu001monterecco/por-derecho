@@ -4,7 +4,9 @@
 
 ## Purpose
 
-This is the repository-side continuity handover for future maintenance of the Ministerio Fiscal, court and institutional-record layers of the Project Sun Rock Depository and public website. It supplements the fuller Google Drive handover of the same title and supersedes earlier repository assumptions only where later evidence or later analytical corrections are recorded here. Earlier material must remain available as audit history.
+This is the repository-side continuity handover for future maintenance of the Ministerio Fiscal, court and institutional-record layers of the Project Sun Rock Depository and public website. It supplements the fuller Google Drive handover of the same title and supersedes earlier repository assumptions only where later evidence or analytical corrections are recorded here. Earlier material remains audit history.
+
+**Mandatory companion protocol:** `archive/CHATGPT_CONTINUOUS_INTELLIGENCE_PROTOCOL_15AUG2026.md`. Future ChatGPT research/maintenance threads must read both files before substantive work.
 
 ## Core operating rule
 
@@ -12,7 +14,7 @@ This is the repository-side continuity handover for future maintenance of the Mi
 
 ## Critical chronology correction
 
-Earlier July 2026 Fiscalía handovers began the controlling institutional chronology in 2018. That is incomplete and is now **superseded on that point**.
+Earlier July 2026 Fiscalía handovers began the controlling institutional chronology in 2018. That is incomplete and is **superseded on that point**.
 
 - **2011–2012** — pre-concurso Community/minority-owner conflict and litigation: factual prehistory.
 - **18 September 2013** — later records identify an insolvency-administrator complaint/communication to Fiscalía as origin of the criminal route.
@@ -68,13 +70,11 @@ The BORME CAM→HNT segregation describes a Sun Park economic unit transferred f
 
 ## Scope mismatch
 
-Track recurring mismatches between the legal object and the description used around it:
+Track recurring mismatches between the legal object and the description used around it: broad complaint reduced to a narrower object; narrow legal perimeter described too broadly; or “same facts” used without exact identity of date, actor, asset, conduct and evidence. Public wording should describe objective differences in scope, not intentional distortion unless independently proved.
 
-- broad complaint reduced to a narrower object (for example DIP 2/2026);
-- narrow legal perimeter described too broadly (for example “the insolvent hotel” instead of LPB; “Sun Park economic unit” versus proven asset perimeter);
-- “same facts” used without exact identity of date, actor, asset, conduct and evidence.
+## Knowledge → response → consequence
 
-Public wording should describe objective differences in scope, not intentional distortion unless independently proved.
+The public model `assets/data/fiscalia-response-correspondence.json` must remain separate from causal conclusions. For every episode distinguish what was known, what was requested, the documented response, unresolved questions, later events and causal status. “Not located” is not “did not happen”; “followed by” is not “caused”.
 
 ## DIP 2/2026
 
@@ -86,7 +86,10 @@ Preserve the Fiscalía AN → Fiscalía de Área de Arrecife-Lanzarote-Puerto de
 
 ## Justice Map architecture
 
-The shared public-safe model is `assets/data/justice-map.json`.
+Shared public-safe models:
+
+- `assets/data/justice-map.json`
+- `assets/data/fiscalia-response-correspondence.json`
 
 Public views:
 
@@ -110,10 +113,10 @@ Every public node should identify what it establishes and what it does not estab
 11. Missing-Document Register
 12. Superseded-Analysis Register
 
-## Priority missing documents / bridges
+## Priority missing documents / bridges — updated 15 Aug 2026
 
 1. Primary final Auto of 29 March 2021 in DP 332/2014 and exact reasoning.
-2. Complete Fiscalía rent expert report dated 25 April 2019 and substantive conclusion.
+2. **Located in Google Drive:** `3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf` (primary scanned PDF, approx. 5.7 MB). Its existence is verified; the substantive conclusion remains **UNRESOLVED pending complete visual page review** because the file has no usable text layer. Do not publish a conclusion from filename or secondary recollection.
 3. Complete certified DP 332/2014 file and named-fiscal history.
 4. Complete certified DI 248/2018 file and actual diligences performed.
 5. Certified DP 1132/2018 including Borja testimony/audiovisual and production orders.
@@ -126,9 +129,10 @@ Every public node should identify what it establishes and what it does not estab
 
 ## Future-thread startup
 
-1. Read this file and the Google Drive document `HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026`.
-2. Search Drive/Gmail for the primary documents relevant to the immediate task.
+1. Read this file, `archive/CHATGPT_CONTINUOUS_INTELLIGENCE_PROTOCOL_15AUG2026.md`, and the Google Drive document `HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026`.
+2. Search Drive/Gmail for primary documents relevant to the immediate task.
 3. Inspect current `main` and open PRs before modifying the site.
 4. Never restart the Fiscalía chronology at 2018: distinguish 2011–12 factual prehistory, 2013 first prosecutorial frame and 2018 role reversal.
 5. Preserve superseded earlier analyses as audit history.
 6. Update the evidence model/Depository first, then the public-safe website layer.
+7. End each research cycle with structured intelligence updates, not a prose report alone.
