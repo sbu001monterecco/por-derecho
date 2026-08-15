@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "title": "Project Sun Rock — Justice & Institutional Record",
+    "updated": "2026-08-15",
+    "publication_rule": "Public facts are limited to source-controlled institutional acts, procedural status and explicitly labelled analytical questions. Presence in the graph does not imply wrongdoing, endorsement or coordination.",
+    "statuses": ["DOCUMENTED", "CORROBORATED", "DISPUTED", "ANALYTICAL_QUESTION", "OPEN_EVIDENTIAL_GAP", "SUPERSEDED"]
+  },
+  "institutions": [
+    {"id":"mf","type":"institution","name_es":"Ministerio Fiscal","name_en":"Public Prosecution Service"},
+    {"id":"fiscalia-lp","type":"fiscalia","parent":"mf","name_es":"Fiscalía Provincial de Las Palmas","name_en":"Las Palmas Provincial Prosecutor's Office"},
+    {"id":"fiscalia-canarias","type":"fiscalia","parent":"mf","name_es":"Fiscalía de la Comunidad Autónoma de Canarias","name_en":"Canary Islands Prosecutor's Office"},
+    {"id":"fiscalia-an","type":"fiscalia","parent":"mf","name_es":"Fiscalía de la Audiencia Nacional","name_en":"National Court Prosecutor's Office"},
+    {"id":"fiscalia-arrecife","type":"fiscalia","parent":"mf","name_es":"Fiscalía de Área de Arrecife-Lanzarote-Puerto del Rosario","name_en":"Arrecife-Lanzarote-Puerto del Rosario Area Prosecutor's Office"},
+    {"id":"juzgado-inst-2-arrecife","type":"court","name_es":"Juzgado de Instrucción nº 2 de Arrecife","name_en":"Arrecife Investigating Court No. 2"},
+    {"id":"juzgado-inst-3-arrecife","type":"court","name_es":"Juzgado de Instrucción nº 3 de Arrecife","name_en":"Arrecife Investigating Court No. 3"}
+  ],
+  "people": [
+    {"id":"elena-herrera-rodriguez","name":"Elena Herrera Rodríguez","role_es":"Fiscal — signataria identificada del decreto de archivo de DI 248/2018 de 7 mayo 2019","role_en":"Prosecutor — identified signatory of the 7 May 2019 DI 248/2018 archive decree","status":"DOCUMENTED"},
+    {"id":"beatriz-sanchez-carreras","name":"Beatriz Sánchez Carreras","role_es":"Fiscal — signataria electrónica identificada de la notificación de 16 mayo 2019; posteriormente Fiscal Jefa Provincial","role_en":"Prosecutor — identified electronic signatory of the 16 May 2019 notification; later Provincial Chief Prosecutor","status":"DOCUMENTED"},
+    {"id":"emilio-sanchez-ulled","name":"Emilio Jesús Sánchez Ulled","role_es":"Fiscal — signatario identificado de EG 49/2026, 3 junio 2026","role_en":"Prosecutor — identified signatory of EG 49/2026, 3 June 2026","status":"DOCUMENTED"}
+  ],
+  "proceedings": [
+    {
+      "id":"prehistory-2011-2012",
+      "reference":"2011–2012 · prehistoria factual",
+      "institution":null,
+      "period":"2011–2012",
+      "status":"CORROBORATED",
+      "summary_es":"Conflicto preconcursal documentado sobre Comunidad, gobierno, acceso, explotación y propietarios minoritarios. Es contexto factual del primer encuadre fiscal posterior, no un procedimiento del Ministerio Fiscal.",
+      "summary_en":"Documented pre-insolvency conflict concerning Community governance, access, operation and minority owners. It is factual context for the later first prosecution frame, not a prosecution proceeding.",
+      "establishes_es":"Que el conflicto institucional/económico relevante precede al concurso y a la primera intervención fiscal localizada.",
+      "establishes_en":"That the relevant institutional/economic conflict predates both the insolvency proceeding and the earliest located prosecution involvement.",
+      "does_not_establish_es":"No acredita por sí solo conducta penal, coordinación indebida ni parcialidad de Fiscalía.",
+      "does_not_establish_en":"It does not by itself establish criminal conduct, improper coordination or prosecutorial bias."
+    },
+    {
+      "id":"di-273-2013",
+      "reference":"DI 273/2013",
+      "institution":"fiscalia-lp",
+      "period":"2013",
+      "status":"DOCUMENTED",
+      "summary_es":"Primer expediente fiscal localizado en el eje Sun Park/LPB; desembocó en querella y posteriormente en DP 332/2014. El registro posterior atribuye el origen a una comunicación/denuncia del administrador concursal.",
+      "summary_en":"Earliest located prosecution file in the Sun Park/LPB track; it led to a criminal complaint and subsequently DP 332/2014. Later records attribute its origin to an insolvency-administrator complaint/communication.",
+      "establishes_es":"Existencia del expediente, continuidad hacia la querella y relevancia del administrador concursal como fuente material del primer encuadre localizado.",
+      "establishes_en":"Existence of the file, continuity into the later complaint, and the insolvency administrator's material-source role in the earliest located frame.",
+      "does_not_establish_es":"No acredita por sí solo falsedad, parcialidad, afinidad, collusión o actuación indebida de ningún fiscal.",
+      "does_not_establish_en":"It does not by itself establish falsity, bias, affinity, collusion or wrongdoing by any prosecutor."
+    },
+    {
+      "id":"dp-332-2014",
+      "reference":"DP 332/2014",
+      "institution":"juzgado-inst-3-arrecife",
+      "period":"2014–2021",
+      "status":"OPEN_EVIDENTIAL_GAP",
+      "summary_es":"Procedimiento judicial derivado de la querella fiscal. Consta participación posterior de entidades del perímetro minoritario y ampliación del AC en febrero de 2018. Registros posteriores refieren sobreseimiento/archivo el 29 marzo 2021, pero falta el auto primario y su razonamiento exacto.",
+      "summary_en":"Court proceeding arising from the prosecution complaint. Later participation by minority-perimeter entities and an insolvency-administrator expansion in February 2018 are recorded. Later records refer to dismissal/closure on 29 March 2021, but the primary order and precise reasoning remain missing.",
+      "establishes_es":"Continuidad procesal del primer encuadre y convergencia procedimental posterior entre AC, procedimiento penal y actores del perímetro minoritario.",
+      "establishes_en":"Procedural continuity of the first frame and later procedural convergence between the insolvency administrator, criminal proceeding and minority-perimeter actors.",
+      "does_not_establish_es":"No acredita collusión ni permite afirmar el fundamento del sobreseimiento hasta incorporar el auto primario.",
+      "does_not_establish_en":"It does not establish collusion or the ground of dismissal until the primary final order is incorporated."
+    },
+    {
+      "id":"dp-1132-2018",
+      "reference":"DP 1132/2018",
+      "institution":"juzgado-inst-2-arrecife",
+      "period":"2018",
+      "status":"OPEN_EVIDENTIAL_GAP",
+      "summary_es":"Procedimiento de Arrecife relevante para accesos, Comunidad y actores privados. Una providencia de julio 2018 muestra que representación, composición, contratos y título turístico de la Comunidad requerían verificación judicial. La declaración del AC constituye un puente potencial que exige certificación completa antes de uso público detallado.",
+      "summary_en":"Arrecife proceeding relevant to access, the Community and private actors. A July 2018 order shows that the Community's representation, composition, contracts and tourism title required judicial verification. The insolvency administrator's testimony is a potentially important bridge requiring full certification before detailed public use.",
+      "establishes_es":"Que la autoridad de la Comunidad no era una premisa autoevidente y que existía un expediente judicial contemporáneo sobre acceso y control.",
+      "establishes_en":"That Community authority was not treated as self-evident and that a contemporaneous court file addressed access and control issues.",
+      "does_not_establish_es":"No acredita por sí solo exceso de autorización, intención penal, conocimiento judicial de cada acto ni identidad definitiva de todas las personas citadas.",
+      "does_not_establish_en":"It does not by itself establish excess beyond authority, criminal intent, judicial knowledge of every act, or final identity resolution for every named person."
+    },
+    {
+      "id":"di-248-2018",
+      "reference":"DI 248/2018",
+      "institution":"fiscalia-lp",
+      "period":"2018–2019",
+      "status":"DOCUMENTED",
+      "summary_es":"Denuncia de Gil Marer/Aweswell contra el administrador concursal y Construcciones Acosta Matos; constan aportaciones de nuevas pruebas y solicitudes de diligencias. Se mantiene abierta la verificación de cuáles de esas diligencias fueron efectivamente practicadas antes del archivo.",
+      "summary_en":"Complaint by Gil Marer/Aweswell against the insolvency administrator and Construcciones Acosta Matos; subsequent evidence submissions and requested investigative steps are documented. Which of those steps were actually carried out before archive remains under verification.",
+      "establishes_es":"La existencia, objeto y evolución documental de DI 248/2018, incluido que en febrero de 2019 se solicitaron diligencias respecto del AC, José Daniel Acosta Matos y Laura Acosta Matos.",
+      "establishes_en":"The existence, scope and documentary development of DI 248/2018, including February 2019 requests for investigative steps concerning the insolvency administrator, José Daniel Acosta Matos and Laura Acosta Matos.",
+      "does_not_establish_es":"La solicitud de diligencias no acredita que Fiscalía las practicara, que no las practicara, ni la culpabilidad de las personas mencionadas.",
+      "does_not_establish_en":"A request for investigative steps does not establish that they were carried out, that they were not carried out, or that the named persons were guilty.",
+      "people":["elena-herrera-rodriguez","beatriz-sanchez-carreras"]
+    },
+    {
+      "id":"di-22-2026",
+      "reference":"DI 22/2026",
+      "institution":"fiscalia-lp",
+      "period":"2026",
+      "status":"DOCUMENTED",
+      "summary_es":"Expediente provincial archivado; escritos posteriores fueron unidos/incorporados al marco del expediente según el registro consolidado.",
+      "summary_en":"Provincial file archived; later submissions were joined/incorporated into the file framework according to the consolidated record.",
+      "establishes_es":"Archivo y tratamiento procesal posterior documentado.",
+      "establishes_en":"Documented archive and subsequent procedural treatment.",
+      "does_not_establish_es":"No determina por sí solo que hechos posteriores o materialmente distintos sean jurídicamente idénticos a los ya examinados.",
+      "does_not_establish_en":"It does not by itself determine that later or materially distinct events are legally identical to those already examined."
+    },
+    {
+      "id":"dip-2-2026",
+      "reference":"DIP 2/2026",
+      "institution":"fiscalia-canarias",
+      "period":"2026",
+      "status":"DISPUTED",
+      "summary_es":"Expediente de Fiscalía de Canarias archivado el 6 marzo 2026. El 11 marzo se comunicó formalmente que existía un recurso de apelación ya documentado, contradiciendo una premisa utilizada en el decreto.",
+      "summary_en":"Canary Islands prosecution file archived on 6 March 2026. On 11 March a formal communication stated that an appeal was already documented, contradicting a premise used in the decree.",
+      "establishes_es":"Una contradicción documental sobre el estado del recurso fue puesta formalmente en conocimiento de la institución.",
+      "establishes_en":"A documentary contradiction concerning appeal status was formally notified to the institution.",
+      "does_not_establish_es":"No acredita por sí sola mentira deliberada, mala fe ni que la corrección hubiera debido cambiar necesariamente el resultado jurídico.",
+      "does_not_establish_en":"It does not by itself establish a deliberate falsehood, bad faith, or that the correction necessarily required a different legal outcome.",
+      "page_es":"../fiscalia-dip-2-2026/"
+    },
+    {
+      "id":"eg-49-2026",
+      "reference":"EG 49/2026",
+      "institution":"mf",
+      "period":"2026",
+      "status":"DOCUMENTED",
+      "summary_es":"Decisión central identificada de 3 junio 2026; la participación personal documentada se atribuye en el registro a Emilio Jesús Sánchez Ulled.",
+      "summary_en":"Identified central decision dated 3 June 2026; the documentary record attributes the identified personal act to Emilio Jesús Sánchez Ulled.",
+      "establishes_es":"Existencia de la decisión y su signatario identificado en el registro disponible.",
+      "establishes_en":"Existence of the decision and its identified signatory in the available record.",
+      "does_not_establish_es":"No acredita revisión sustantiva de todo el perímetro Sun Park ni responsabilidad personal por decisiones de otras Fiscalías.",
+      "does_not_establish_en":"It does not establish substantive review of the entire Sun Park perimeter or personal responsibility for decisions by other prosecution offices.",
+      "people":["emilio-sanchez-ulled"]
+    },
+    {
+      "id":"gub-86-2026",
+      "reference":"GUB 86/2026",
+      "institution":"fiscalia-an",
+      "period":"2026",
+      "status":"DOCUMENTED",
+      "summary_es":"Comunicación a Fiscalía de la Audiencia Nacional remitida territorialmente a la Fiscalía de Área de Arrecife-Lanzarote-Puerto del Rosario.",
+      "summary_en":"Communication to the National Court Prosecutor's Office territorially referred to the Arrecife-Lanzarote-Puerto del Rosario Area Prosecutor's Office.",
+      "establishes_es":"La remisión territorial.",
+      "establishes_en":"The territorial referral.",
+      "does_not_establish_es":"No constituye una resolución de fondo ni acredita por sí sola una falta de coordinación.",
+      "does_not_establish_en":"It is not a merits decision and does not by itself establish a coordination failure."
+    }
+  ],
+  "analysis_tracks": [
+    {
+      "id":"first-frame",
+      "status":"ANALYTICAL_QUESTION",
+      "title_es":"Primer encuadre y cambio de roles",
+      "title_en":"First Frame and role reversal",
+      "summary_es":"Examinar si las alegaciones posteriores, con roles procesales invertidos, fueron reconsideradas independientemente del encuadre institucional formado en 2013.",
+      "summary_en":"Test whether later allegations, with procedural roles reversed, were reconsidered independently from the institutional frame formed in 2013.",
+      "limit_es":"No equivale a afirmar parcialidad personal, afinidad, collusión o protección deliberada.",
+      "limit_en":"It is not an assertion of personal bias, affinity, collusion or deliberate protection."
+    },
+    {
+      "id":"scope-perimeter",
+      "status":"ANALYTICAL_QUESTION",
+      "title_es":"Alcance y perímetro",
+      "title_en":"Scope and perimeter",
+      "summary_es":"Separar LPB, Comunidad, Pink/Monterecco, Matkator y CAM/HNT/MYND, y verificar qué activo, entidad o mandato estaba realmente dentro de cada procedimiento o transferencia.",
+      "summary_en":"Separate LPB, the Community, Pink/Monterecco, Matkator and CAM/HNT/MYND, and verify which asset, entity or authority was actually within each proceeding or transfer.",
+      "limit_es":"La proximidad física o económica dentro del hotel no fusiona automáticamente propiedad, insolvencia, explotación o competencia jurídica.",
+      "limit_en":"Physical or economic proximity within the hotel does not automatically merge ownership, insolvency, operation or legal competence."
+    },
+    {
+      "id":"control-before-title",
+      "status":"ANALYTICAL_QUESTION",
+      "title_es":"Control antes del título",
+      "title_en":"Control before title",
+      "summary_es":"Distinguir acceso, posesión/control, seguridad, planificación, crédito, adjudicación, título registral, segregación y explotación. El título posterior no resuelve retrospectivamente la autoridad para actos anteriores.",
+      "summary_en":"Distinguish access, possession/control, security, planning, credit, adjudication, registered title, segregation and operation. Later title does not retrospectively resolve authority for earlier acts.",
+      "limit_es":"No presume ilicitud de los actos anteriores; exige identificar su base jurídica concreta.",
+      "limit_en":"It does not presume earlier acts were unlawful; it requires their specific legal basis to be identified."
+    },
+    {
+      "id":"scope-mismatch",
+      "status":"ANALYTICAL_QUESTION",
+      "title_es":"Desajuste de alcance",
+      "title_en":"Scope mismatch",
+      "summary_es":"Comparar el objeto jurídico realmente examinado con descripciones más amplias o más estrechas: “mismos hechos”, “hotel insolvente”, DIP 2/2026 y el perímetro de la unidad económica Sun Park.",
+      "summary_en":"Compare the legal object actually examined with broader or narrower descriptions: “same facts”, “insolvent hotel”, DIP 2/2026 and the perimeter of the Sun Park economic unit.",
+      "limit_es":"Una diferencia de alcance no demuestra por sí sola distorsión deliberada.",
+      "limit_en":"A scope difference does not by itself establish deliberate distortion."
+    },
+    {
+      "id":"investigative-intensity",
+      "status":"ANALYTICAL_QUESTION",
+      "title_es":"Intensidad investigadora",
+      "title_en":"Investigative intensity",
+      "summary_es":"Comparar diligencias solicitadas y realmente practicadas entre expedientes, controlando las diferencias de delito, prueba, competencia y fase procesal.",
+      "summary_en":"Compare requested and actually performed investigative steps across files while controlling for differences in offence, evidence, competence and procedural stage.",
+      "limit_es":"Resultados o duraciones diferentes no prueban trato desigual impropio sin comparación materialmente equivalente.",
+      "limit_en":"Different outcomes or durations do not prove improper unequal treatment without materially comparable circumstances."
+    }
+  ],
+  "edges": [
+    {"from":"prehistory-2011-2012","to":"di-273-2013","type":"factual_prehistory","status":"CORROBORATED"},
+    {"from":"di-273-2013","to":"dp-332-2014","type":"procedural_continuity","status":"DOCUMENTED"},
+    {"from":"dp-332-2014","to":"di-248-2018","type":"role_reversal_overlap","status":"ANALYTICAL_QUESTION","public_label_es":"Solapamiento temporal y cambio de roles; no identidad de hechos","public_label_en":"Temporal overlap and role reversal; not identity of facts"},
+    {"from":"dp-1132-2018","to":"di-248-2018","type":"contemporaneous_evidence_context","status":"DOCUMENTED"},
+    {"from":"di-22-2026","to":"dip-2-2026","type":"institutional_routing","status":"DOCUMENTED"},
+    {"from":"gub-86-2026","to":"fiscalia-arrecife","type":"territorial_referral","status":"DOCUMENTED"}
+  ],
+  "open_questions": [
+    {"id":"q1","es":"¿Cuál fue el razonamiento exacto del auto primario de 29 marzo 2021 en DP 332/2014?","en":"What was the exact reasoning of the primary 29 March 2021 order in DP 332/2014?"},
+    {"id":"q2","es":"¿Qué fiscal firmó y qué razonamiento contiene el informe del Ministerio Fiscal solicitado en DP 1901/2026?","en":"Which prosecutor signed, and what reasoning is contained in, the prosecution report requested in DP 1901/2026?"},
+    {"id":"q3","es":"¿Qué número y resultado territorial recibió GUB 86/2026 tras su remisión a Arrecife?","en":"What territorial reference and outcome followed GUB 86/2026 after referral to Arrecife?"},
+    {"id":"q4","es":"¿Qué decisiones posteriores demuestran, en su caso, reconsideración independiente de hechos y pruebas materialmente nuevos?","en":"Which later decisions, if any, demonstrate independent reconsideration of materially new facts and evidence?"},
+    {"id":"q5","es":"¿Qué diligencias concretas solicitadas en DI 248/2018 fueron efectivamente practicadas antes del archivo?","en":"Which specific investigative steps requested in DI 248/2018 were actually carried out before archive?"},
+    {"id":"q6","es":"¿Qué establece exactamente la pericial de renta de Fiscalía de 25 abril 2019 respecto de las premisas económicas del expediente anterior?","en":"What exactly does the 25 April 2019 prosecution rent expert report establish regarding the economic premises of the earlier file?"},
+    {"id":"q7","es":"¿Qué perímetro finca-por-finca pasó realmente de LPB a CAM y posteriormente a HNT, y qué activos de Matkator o terceros quedaron fuera?","en":"What finca-by-finca perimeter actually passed from LPB to CAM and then HNT, and which Matkator or third-party assets remained outside?"}
+  ]
+}
