@@ -3,6 +3,7 @@
 **N.º:** [NNN]  
 **Declarante:** [NOMBRE COMPLETO]  
 **Fecha:** [AAAA-MM-DD]  
+**Fecha de archivo:** [AAAA-MM-DD, si distinta]  
 **Lugar:** [LUGAR]  
 **Tema:** [TEMA CONCRETO]  
 **Estado:** BORRADOR / REGISTRADA / REVISADA / FIRMADA / PRESENTADA / SUPLEMENTADA
@@ -21,6 +22,7 @@ Distingo expresamente entre:
 
 - hechos que conozco por percepción o participación personal directa;
 - hechos que recuerdo pero cuya fecha o detalle puede requerir comprobación;
+- manifestaciones que recuerdo haber oído de terceros;
 - hechos que conozco únicamente por documentos que he revisado;
 - inferencias o entendimientos personales;
 - extremos que deben verificarse mediante documentos, testimonios, registros, expedientes o declaraciones de terceros.
@@ -31,9 +33,9 @@ Esta declaración no sustituye a los documentos primarios ni pretende convertir 
 
 [RELATO EN PRIMERA PERSONA. INDICAR FECHAS, PERSONAS PRESENTES, LUGAR Y CÓMO SE CONOCIÓ EL HECHO.]
 
-## 3. Recuerdo sujeto a precisión
+## 3. Recuerdo sujeto a precisión / manifestaciones de terceros
 
-[INDICAR QUÉ SE RECUERDA Y QUÉ DETALLE PODRÍA NECESITAR SER CORREGIDO CON DOCUMENTACIÓN.]
+[INDICAR QUÉ SE RECUERDA, QUÉ PERSONA PRONUNCIÓ QUÉ PALABRAS SEGÚN EL RECUERDO Y QUÉ DETALLE PODRÍA NECESITAR COMPROBACIÓN. NO PRESENTAR LA VERACIDAD MATERIAL DE LO DICHO POR UN TERCERO COMO HECHO PROPIO.]
 
 ## 4. Conocimiento derivado de documentos
 
@@ -62,6 +64,12 @@ Considero que deben verificarse mediante:
 
 - [FUENTE / TESTIMONIO / REGISTRO / METADATOS]
 
+Si un pasaje material no puede afirmarse responsablemente en el nivel en que está escrito, marcarlo expresamente:
+
+> **REQUIERE ACLARACIÓN:** [QUÉ DEBE CONFIRMARSE Y MEDIANTE QUÉ FUENTE]
+
+No inventar certeza. No detener por ello toda la declaración: registrar responsablemente lo que sí puede formularse y mantener el punto abierto.
+
 ## 7. Documentos de corroboración identificados
 
 | Documento | Fecha | Custodio/fuente | Qué puede acreditar | Estado |
@@ -74,14 +82,25 @@ Esta versión puede utilizarse como [RELATO FECHADO / GUÍA DE INVESTIGACIÓN / 
 
 ## 9. Declaración de veracidad
 
-Declaro que lo expuesto refleja fielmente, según mi leal saber y entender, mi conocimiento y mi recuerdo, y que he indicado cuando una afirmación depende de documentos, inferencia o verificación pendiente. Si posteriormente se me exhibe documentación auténtica que precise o contradiga algún extremo, estoy dispuesto/a a aclarar, corregir o suplementar esta declaración expresamente, sin alterar silenciosamente la versión anterior.
+Declaro que lo expuesto refleja fielmente, según mi leal saber y entender, mi conocimiento y mi recuerdo, y que he indicado cuando una afirmación depende de documentos, manifestaciones de terceros, inferencia o verificación pendiente. Si posteriormente se me exhibe documentación auténtica que precise o contradiga algún extremo, la corrección deberá realizarse expresamente mediante nueva versión o declaración suplementaria, sin alterar silenciosamente la versión anterior.
 
 **[NOMBRE COMPLETO]**  
 **En [LUGAR], a [FECHA].**
 
 Firma, si se realiza: ______________________________
 
-## Control de integridad
+## 10. Apéndice operativo — acciones derivadas
+
+*Esta sección no añade hechos. Convierte las cuestiones de la declaración en tareas verificables.*
+
+- **Documento a preservar/obtener:** [ARCHIVO / EXPEDIENTE / CONTRATO / ACTA / CORREO]
+- **Custodio y periodo:** [PERSONA / ENTIDAD / SISTEMA / FECHAS]
+- **Entrevista o declaración separada:** [PERSONA]
+- **Dato a conciliar:** [CONTABILIDAD / BANCO / REGISTRO / METADATOS / CRONOLOGÍA]
+- **Explicación alternativa o exculpatoria a comprobar:** [HIPÓTESIS]
+- **Criterio de cierre:** [QUÉ EVIDENCIA CONFIRMARÍA O DESCARTARÍA LA CUESTIÓN]
+
+## 11. Control de integridad
 
 - Fuente personal/documental: [IDENTIFICAR]
 - Archivo(s) fuente y hash(es): [PENDIENTE / REFERENCIA PRIVADA]
