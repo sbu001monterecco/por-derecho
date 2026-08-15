@@ -1,25 +1,25 @@
 # CORRECTION REGISTER
 
-Permanent control against reintroducing superseded facts.
+Permanent control against reintroducing superseded facts. Record material corrections even when the public page has already been fixed.
 
 | ID | Prior / unsafe proposition | Corrected proposition | Basis / context | Public propagation |
 |---|---|---|---|---|
-| CR-001 | AP4 deliberation stated 7 Jul 2026 | Primary providencia sets 9 Jul 2026 | primary AP | DONE |
-| CR-002 | AP accumulation stated 20 Jul 2026 | Auto 223/2026 dated 15 Jul 2026 | primary AP | DONE |
-| CR-003 | 25 Oct 2021 DIOR attributed to María Teresa Oliver | Reviewed record attributes it to Águeda Reyes Almeida | LAJ audit | DONE |
-| CR-004 | Current conclusion route art. 456 TRLC | Current full-satisfaction conclusion route art. 477 TRLC; 456 concerns culpable-classification deficit | legal correction | CONTROL |
-| CR-005 | Historical conclusion drafts described as filed | Treat as draft absent LexNET/asiento proof | source audit | CONTROL |
-| CR-006 | “Fiscalía silence” generic | Use documented response/scope mismatch/response gap episode by episode | MF audit | DONE |
-| CR-007 | “Clandestine testimonios” public conclusion | Issuance/delivery documented; concealment not established | LAJ audit | DONE |
-| CR-008 | CNMV merely alerted | CNMV confirms supervision from Jan-2021 filing and absence of two Jul-2021 docs from located corpus | CNMV 2026008544 | DONE |
-| CR-009 | Group labels imply legal identity/knowledge | Keep entities/persons distinct while preserving sourced relationships | perimeter discipline | CONTROL |
-| CR-010 | Exact HNT/MYND Series F/G split finally reconciled | €6,573,703.10 total attributed to controlled 2023 accounts; exact split remains open | RICPE audit | CONTROL |
-| CR-011 | CAM as unrelated external developer to RICPE | CNMV register places José Acosta Matos on RICPE board from 04/11/2019 | CNMV register | DONE |
-| CR-012 | Orion mainly “platform continuity / no financing bridge” | RICPE was **100% founder/sole initial shareholder** and Orion describes **17% RICPE convertible participating finance** linked to investor RIC funds. Open question is execution and asset-specific Sun Park/MYND value trace | Orion issue document | PROPAGATE NOW |
-| CR-013 | “No FEDER label / no specific EU fund identified” | MYND permanent plaque expressly identifies **FEDER**; percentage/payment/control remains open | permanent project plaque | PROPAGATE NOW |
-| CR-014 | Portfolio treated as passive admission/receipt gate | Portfolio confirms **internal investigation**, data collection, multiple sources and completed assessment | Portfolio emails 2024–25 | PROPAGATE NOW |
-| CR-015 | Blanket “no conspiracy finding” used as dominant Orion qualifier | Publish the **documented network facts** Sun Park→RICPE/AGM→Orion and keep criminal characterization proposition-specific | source refresh | PROPAGATE NOW |
-| CR-016 | Issue-document disclaimer treated as if CNMV/Portfolio had no wider knowledge/responsibility | Disclaimer is narrow; CNMV had RICPE supervision and processed 2024 Orion filing as **consulta**; Portfolio later investigated | Orion/CNMV/Portfolio sources | PROPAGATE NOW |
+| CR-001 | AP Sección 4ª deliberation marker stated as 7 Jul 2026 | Primary providencia sets deliberation/vote/judgment for **9 Jul 2026** | corrected during DO NOW activation | DONE |
+| CR-002 | AP accumulation order stated as 20 Jul 2026 | Auto 223/2026 accumulating RPL 3319/2025 into 3304/2025 is dated **15 Jul 2026** | primary AP record | DONE |
+| CR-003 | 25 Oct 2021 testimony DIOR attributed to María Teresa Oliver Guerra | Reviewed record attributes the 25 Oct 2021 DIOR to **Águeda Reyes Almeida** | corrected during LAJ evidence-completion pass | DONE |
+| CR-004 | Current conclusion/exit route described as art. 456 TRLC | Historical route was art. 176 LC; current payment/consignation/full-satisfaction conclusion route is **art. 477 TRLC**. Art. 456 TRLC concerns deficit coverage in culpable classification | legal correction; use current official text when filing | PROPAGATE WHEN REFERENCED |
+| CR-005 | Draft historical art. 176 conclusion/debt-certification materials described as filed | Treat as **draft unless LexNET/asiento filing proof is located** | source-status audit | CONTROLLED |
+| CR-006 | “Fiscalía silence” used generically | Several tracks contain affirmative institutional acts; use **documented response / scope mismatch / response gap** episode by episode | MF open-message redesign | DONE |
+| CR-007 | “Clandestine testimonios” as a public conclusion | Issuance/delivery episodes are documented; concealment is not established. Use notification/traceability questions unless intentional concealment is proved | LAJ audit | DONE |
+| CR-008 | CNMV merely “was alerted” with no stronger primary-source status | CNMV confirms supervisory actions arose from Jan-2021 filing and confirms two Jul-2021 documents were absent from the located/obtained supervisory corpus; other detail subject to supervisory secrecy | CNMV salida 2026008544, 22 Jan 2026 | DONE |
+| CR-009 | Group labels imply common legal identity/knowledge | CAM, HNT, Canarian Hospitality/MYND, RICPE and individuals must remain legally and evidentially distinct unless a specific relationship/proposition is sourced | Acosta Matos/RICPE discipline | ONGOING CONTROL |
+| CR-010 | One exact Series F/G tranche split for HNT/MYND Yaiza treated as finally reconciled | The controlled RICPE dossier attributes a **€6,573,703.10 total** to audited 2023 accounts, while other preserved project/prospectus materials contain a different component split. Cite the total with attribution, but keep the exact tranche split open until native accounts, prospectuses, approvals, loan agreements, drawdowns and payments are reconciled | RICPE source-completion pass, 15 Aug 2026 | DONE ON RICPE / RIC-EU CHAIN PAGES; ONGOING CONTROL ELSEWHERE |
+| CR-011 | Sun Park presented as if CAM were merely an external developer proposing a project to an unrelated RICPE platform | Official CNMV register records **José Acosta Matos as RICPE director from 04/11/2019**, before the June/November 2020 Sun Park investor communications. This creates a governance/conflict/information-flow verification question, not proof of shared knowledge, improper approval or collusion | CNMV official register + controlled RICPE 2020 materials | PROPAGATE TO RICPE / ACOSTA MATOS / CNMV / CHAIN PAGES |
+| CR-012 | Orion treated mainly as “platform continuity / no money-flow inference” | RICPE was **100% founder/sole initial shareholder (€60,000)** and Orion's Issue Document describes **17% RICPE convertible participating finance**, linked to RIC-investor funds through RICPE. The open question is execution and any asset-specific Sun Park/MYND/LPB/Matkator value trace, not whether a RICPE→Orion channel exists | Orion Issue Document + controlled 2023 RICPE material | PROPAGATE NOW |
+| CR-013 | “No FEDER label / no specific EU fund identified” | MYND's permanent project plaque expressly identifies **FEDER**. Exact percentage, certified/paid expenditure, eligible-cost map, checks, audits and recovery remain open | MYND permanent plaque / institutional files | PROPAGATE NOW |
+| CR-014 | Portfolio treated as a passive admission/receipt gate | Portfolio confirms a post-alert **internal investigation**, collection of data, examination of different sources and completed assessment | Portfolio emails Dec 2024–Mar 2025 | PROPAGATE NOW |
+| CR-015 | Blanket “no conspiracy finding” used as dominant Orion qualifier | Publish the **documented network facts** Sun Park→Pamalexsha/CAM→RICPE/AGM→Orion and keep criminal/civil/regulatory characterization proposition-specific | source refresh | PROPAGATE NOW |
+| CR-016 | Orion Issue Document disclaimer treated as if CNMV/Portfolio had no wider knowledge or later responsibility | The disclaimer is narrow. CNMV had earlier RICPE supervision and said 2024136159 would be processed as a **consulta**; Portfolio later conducted an internal investigation. Actual Portfolio↔CNMV engagement remains open | Orion Issue Document + CNMV/Portfolio sources | PROPAGATE NOW |
 
 ## Rule
-Update public pages, canonical ledgers and downstream manuscript intelligence whenever a correction changes a proposition.
+When a correction changes a public proposition, update: (1) public page(s), (2) canonical evidence/maintenance ledger, (3) any manuscript/book intelligence using it, and (4) this register. Never delete the correction history merely because the current page is correct.
