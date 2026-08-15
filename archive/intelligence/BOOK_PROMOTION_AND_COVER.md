@@ -18,31 +18,54 @@ Spanish: **UN ACTIVO. UNA HISTORIA.**
 
 **GIL MARER**
 
-## Core proposition
+## Human-first proposition
 
-One physical asset can pass through many companies, credits, courts, proceedings, institutions and competing accounts without acquiring multiple histories. The book reconstructs the continuous human, economic and institutional story while the evidence repository allows readers to inspect the underlying record.
+Before Sun Park became a case file, it was a place in Playa Blanca where people came to stay longer, return, make friends and participate in a community. The historical archive contains a substantial Sun Park Living / SunRockers record, including community documents, 2012–2018 spreadsheets, brochures, archived forum material and later presentations preserving the concept.
 
-The book is being developed before the outcome is known. Its proposition is therefore not that the system has already corrected itself, but that documented persistence, effective rights, institutional scrutiny and new tools may still make correction possible.
+The present-day hotel known as MYND Yaiza occupies the physical place at the centre of that history. This visible continuity should be the narrative and visual bridge into the legal/economic reconstruction — without treating similarities in hospitality programming as proof of intellectual-property transfer, copying or unlawful appropriation.
+
+The book should therefore begin with **people + place + belonging**, then move into property, credit, insolvency, institutions and the documentary fight to reconstruct what happened.
 
 ## Promotion positioning
 
-**The repository documents. The book explains what it was like to live through it.**
+Primary emotional promise:
 
-The book should not be sold as a conventional legal complaint or conspiracy narrative. Position it as premium investigative nonfiction / institutional memoir / access-to-justice narrative with a live documentary counterpart.
+> **Before it was a legal battle, it was a place people belonged.**
 
-Primary promotional hooks:
+Primary explanatory line:
+
+> **Sun Park. Playa Blanca. The SunRockers. The same place now known as MYND Yaiza. One history still being reconstructed.**
+
+Core bridge:
+
+> **The evidence explains what happened. The book remembers what mattered.**
+
+The book should not be sold as a conventional legal complaint or conspiracy narrative. Position it as premium investigative nonfiction / institutional memoir / hospitality-and-community story / access-to-justice narrative with a live documentary counterpart.
+
+Additional promotional hooks:
 
 1. **One Asset. One History.** — fragmentation does not erase continuity.
 2. **Written before the ending is known.** — readers enter while the test of effective justice is still unfolding.
-3. **Don't believe us. Test us.** — material factual propositions should remain connected to an inspectable evidential record.
-4. **Can AI help justice remember?** — AI is used to reconstruct context, not to decide guilt or replace courts.
-5. **From one case to Por Derecho.** — the experience helps explain the founding logic of Fundación Por Derecho.
-6. **Las Palmas / Canary Islands as the founding geography, with comparative relevance beyond Spain.**
+3. **The SunRockers.** — community, longer stays, friendship, participation and a fuller later chapter in life.
+4. **The hotel changed. The place did not move.** — Sun Park → MYND Yaiza as the visible geographic spine.
+5. **Don't believe us. Test us.** — material factual propositions should remain connected to an inspectable evidential record.
+6. **Can AI help justice remember?** — AI is used to reconstruct context, not to decide guilt or replace courts.
+7. **From one case to Por Derecho.** — the experience helps explain the founding logic of Fundación Por Derecho.
+
+## The Ethos — philosophical reference
+
+A January 2023 project-ethos email explicitly paired the Sun Park Living video/channel with Adam J. Jackson's published book **`The Ethos: Because life is better together`**. Public bibliographic material describes Jackson's work as exploring friendship, community, purpose, new dreams and later-life renewal.
+
+This makes the book a relevant philosophical reference for explaining the SunRocker idea: later life need not shrink; community and participation can open another chapter.
+
+**Attribution boundary:** this is an influence/reference, not evidence that Adam J. Jackson created Sun Park Living, endorsed `Reason to Believe`, endorsed any legal allegations, or is involved in Fundación Por Derecho/Havidia. Do not imply endorsement and do not reproduce substantial text from his work.
 
 ## Target audiences
 
+- former Sun Park guests, SunRockers, staff and collaborators;
+- Playa Blanca / Lanzarote / Canary Islands readers;
+- readers interested in community, later life, hospitality, reinvention and belonging;
 - general readers of investigative nonfiction, institutions, business and justice;
-- Spanish and Canary Islands readers;
 - lawyers, judges, prosecutors, insolvency and NPL specialists;
 - law/public-administration students and universities;
 - journalists, documentary producers and podcasters;
@@ -54,7 +77,15 @@ Primary promotional hooks:
 
 Use **one master visual identity** for English and Spanish editions. Change typography/language, not the underlying visual concept.
 
-The preferred visual discovered in the originating work is a cinematic coastal-resort/documentary composition: a white resort/hotel in an Atlantic volcanic/coastal landscape at dawn or dusk; subtle registry, court, notarial, architectural and financial-document textures; and one continuous luminous line moving through the documents/asset toward the horizon. The line is the core symbol: **do not lose the thread**.
+The recovered concept already has the right geography and symbolic device: a coastal resort/hotel in an Atlantic volcanic landscape at dawn/dusk and one continuous luminous line moving toward the horizon. But the next clean master should make the **Sun Park / Playa Blanca human memory** more emotionally present and make documentary textures secondary.
+
+Visual hierarchy:
+
+1. the place — Playa Blanca / Atlantic / volcanic coast / hotel;
+2. the continuous illuminated line — memory and uninterrupted history;
+3. subtle human warmth / community cues, without fabricating identifiable people;
+4. documentary textures only as a restrained background layer;
+5. title, subtitle, author dominant at Amazon-thumbnail size.
 
 English foreground hierarchy:
 
@@ -68,64 +99,82 @@ Spanish foreground hierarchy:
 **UN ACTIVO. UNA HISTORIA.**  
 **GIL MARER**
 
-Keep authentic Spanish evidential/documentary texture in both editions where it is decorative rather than relied upon as evidence. Avoid overcrowding the thumbnail with long top straps.
-
-### Preferred existing cover asset
-
-The originating ChatGPT work generated an English cover image file named:
+### Preferred recovered cover concept
 
 `a_photorealistic_cinematic_book_cover_documenta.png`
 
-Its recovered visual description includes the large title **REASON TO BELIEVE**, subtitle **ONE ASSET. ONE HISTORY.**, author **GIL MARER**, a coastal resort, archival/registry/court/credit textures and the continuous illuminated line toward the horizon.
+Recovered description: large **REASON TO BELIEVE**, subtitle **ONE ASSET. ONE HISTORY.**, **GIL MARER**, a coastal resort, archival textures and the continuous illuminated line toward the horizon.
 
-A Spanish concept file was also recovered:
+Spanish reference concept:
 
 `a_book_cover_style_image_cinematic_photo_real_des.png`
 
-It contains **RAZÓN PARA CREER**, **UN ACTIVO. UNA HISTORIA.**, **GIL MARER**, Canary Islands/Las Palmas imagery and documentary textures. It is useful as a concept/reference, but the final Spanish edition should preferably use the same underlying master artwork as the English edition rather than a materially different cityscape.
+It is useful for typography/geographic mood, but the final Spanish edition should preferably derive from the same master artwork as English.
 
-**Important:** generated decorative document text/dates/numbers may be fictional or inaccurate. Do not present those visual fragments as primary evidence. Before commercial publication, recreate/retouch the final cover so decorative microtext cannot be mistaken for a factual documentary claim.
+**Important:** generated decorative document text/dates/numbers may be fictional or inaccurate. Before commercial/public use, recreate or retouch the master so decorative microtext cannot be mistaken for authentic evidence.
 
 ## Amazon / retail optimisation
 
-At thumbnail size, the title must dominate. Prefer no more than title + short subtitle + author on the front cover. Move explanatory copy to the product page/back cover.
+At thumbnail size, the title must dominate. Prefer only title + short subtitle + author on the front cover. Put explanatory copy on the product page/back cover.
 
-Suggested Amazon short description:
+Revised Amazon-style short description:
 
-> **One asset. One history. Many proceedings, institutions and competing versions.** *Reason to Believe* follows an entrepreneur's attempt to reconstruct what happened to a Canary Islands hotel, its credit, control and economic value — and asks a larger question: can effective rights survive when one continuous history is fragmented across years of legal and institutional process? Written while the outcome is still unfolding, the book combines personal experience, documentary reconstruction and a new experiment in using AI to help preserve legal memory without replacing human judgment.
+> **Before it was a legal battle, Sun Park was a place people belonged.** In Playa Blanca, Lanzarote, a community known as the SunRockers grew around longer stays, friendship, participation and the belief that later life could become larger rather than smaller. Years later, the same physical place is known as MYND Yaiza. *Reason to Believe* follows the people, the business, the rupture and the documentary effort to reconstruct what happened when one continuous history became fragmented across creditors, companies, courts and institutions. Written while the outcome is still unfolding, it asks whether evidence, persistence and new tools can help justice remember the whole story.
 
-Suggested promotional line:
+Secondary lines:
 
-> **The evidence is online. The book tells what it was like to live through it.**
+> **The hotel changed. The place did not move.**
 
-Suggested secondary line:
+> **The evidence explains what happened. The book remembers what mattered.**
 
 > **Many versions were created. There was only one history.**
 
 ## Book page structure
 
-A dedicated public book page should eventually contain:
+A dedicated public book page should contain:
 
-1. cover hero / 3D book mock-up;
-2. title, subtitle, author and `COMING / PRÓXIMAMENTE` status;
-3. 100–150 word pitch;
-4. why this book / why now;
-5. One Asset. One History visual explanation;
-6. relationship to the evidence repository;
-7. relationship to Fundación Por Derecho;
-8. author section;
-9. intended audiences;
-10. sample chapter/excerpt when cleared;
-11. email/interest or launch-notification CTA when an appropriate compliant mechanism exists;
+1. cover hero / later 3D book mock-up;
+2. title, subtitle, author and `COMING / PRÓXIMAMENTE`;
+3. Sun Park / Playa Blanca / SunRockers emotional opening;
+4. Sun Park → MYND Yaiza physical-continuity section;
+5. The Ethos philosophical reference with non-endorsement boundary;
+6. One Asset. One History explanation;
+7. relationship to the evidence repository;
+8. relationship to Fundación Por Derecho;
+9. audience / why it matters beyond the case;
+10. former guest/SunRocker memory invitation;
+11. sample chapter/excerpt when cleared;
 12. media / podcast / academic contact CTA;
 13. rights statement for publishing, translation, audio, documentary/film and speaking enquiries;
-14. explicit statement that book purchase and Foundation donation are distinct.
+14. explicit distinction between book purchase and Foundation donation.
+
+## Memory and community marketing
+
+A future launch should deliberately reconnect with former Sun Park guests and SunRockers, not treat them merely as witnesses or customers.
+
+Create a consent-based **Sun Park Memory Project** asking for:
+
+- photographs;
+- memories and anecdotes;
+- activity programmes/newsletters;
+- stories of friendships/returns/long stays;
+- staff recollections;
+- corrections and negative/contrary experiences too.
+
+Every contribution needs provenance/attribution and publication-permission status. Participation must not require agreement with Gil's legal interpretation.
+
+Potential launch features:
+
+- “I was a SunRocker” / “I remember Sun Park” story route;
+- archival photo timeline;
+- short memory extracts with consent;
+- map of Playa Blanca memories;
+- community reunion / online launch discussion;
+- student oral-history project if properly governed.
 
 ## Publishing / rights architecture
 
-Do not imply that Fundación Por Derecho owns copyright, royalties, translation, audio, documentary or film rights unless formally assigned/licensed. The book can be described as a publishing and educational project associated with Fundación Por Derecho while commercial rights remain separately governed.
-
-Potential formats/rights to plan:
+Potential formats/rights:
 
 - paperback;
 - premium hardcover / Founding Edition;
@@ -138,13 +187,17 @@ Potential formats/rights to plan:
 - foreign publishing rights;
 - speaking / university use.
 
-A possible future Founding Reader concept can mark readers who joined while the outcome was still unknown. Avoid speculative tokens/NFT mechanics.
+A future Founding Reader concept can mark readers who joined while the outcome was still unknown. Avoid speculative tokens/NFT mechanics.
 
 ## Promotion funnel
 
-Public evidence → curiosity → understanding → trust → book interest → reader/community identity → Por Derecho/public-interest participation or separately governed commercial/media engagement.
+Sun Park memory / Playa Blanca / SunRockers → human curiosity → book → evidential reconstruction → trust → Por Derecho/public-interest participation or separately governed media/commercial engagement.
 
-Do not interrupt evidence pages with aggressive sales tactics. Trust must precede conversion.
+The reverse path also works:
+
+Evidence / legal article → “what was actually lost?” → SunRockers human story → book.
+
+Do not interrupt primary-evidence pages with aggressive book selling. Trust must precede conversion.
 
 ## Promotional content system
 
@@ -153,10 +206,12 @@ Create reusable assets from the same identity:
 - Amazon cover thumbnail;
 - hardcover mock-up;
 - website hero;
+- historical Sun Park / present-day place comparison;
+- SunRockers memory cards;
 - LinkedIn announcement card;
 - podcast guest card;
 - press/media one-sheet;
-- quote cards;
+- quote/memory cards;
 - chapter-release cards;
 - bilingual launch graphics;
 - author profile image treatment;
@@ -167,6 +222,8 @@ The continuous line should connect all of them.
 ## Promotion boundaries
 
 - Never market allegations as adjudicated facts.
+- Do not imply that experiential similarities at MYND prove IP copying/transfer.
+- Do not imply endorsement by Adam J. Jackson without explicit permission.
 - Do not use a court, prosecutor, public authority or named individual as sensational cover bait.
 - Do not promise a particular legal outcome.
 - Clearly label the book as in development / forthcoming until publication is scheduled.
@@ -175,13 +232,11 @@ The continuous line should connect all of them.
 
 ## Next publishing decisions
 
-1. Confirm final author display name: current working public form is **Gil Marer**.
-2. Run title/trademark/retail collision check before final ISBN/metadata.
-3. Select/recreate the final master cover from the recovered English concept.
-4. Produce clean English and Spanish covers from the same artwork.
-5. Decide final subtitle and back-cover copy.
-6. Decide publishing route and ISBN ownership.
-7. Decide whether/how royalties support Fundación Por Derecho and document it before advertising such a commitment.
-8. Build dedicated bilingual book pages and media kit.
-9. Add launch-notification/preorder mechanics only when operationally ready.
-10. Preserve factual/source traceability from manuscript to canonical propositions/sources.
+1. Review the historical brochures/community files and select publication-cleared Sun Park/SunRockers images.
+2. Recreate the clean master cover with people/place emotionally foregrounded and pseudo-evidence removed.
+3. Produce clean EN/ES covers from the same artwork.
+4. Decide final back-cover copy and publishing route/ISBN ownership.
+5. Create a consent-based memory intake route before soliciting stories at scale.
+6. Decide whether/how royalties support Fundación Por Derecho and document it before advertising such a commitment.
+7. Build media kit and launch-notification mechanics when operationally ready.
+8. Preserve factual/source traceability from manuscript to canonical propositions/sources.

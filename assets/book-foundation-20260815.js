@@ -12,20 +12,20 @@
 
       if (isEs) {
         card.innerHTML = `
-          <p class="kicker">Próximo libro · proyecto editorial</p>
+          <p class="kicker">Próximo libro · Playa Blanca · SunRockers</p>
           <h3 id="por-derecho-book-title-es">Razón para creer <span lang="en">· Reason to Believe</span></h3>
-          <p><strong>UN ACTIVO. UNA HISTORIA.</strong> Se crearon muchas versiones; solo hubo una historia. El repositorio reconstruye el expediente. El libro cuenta cómo fue vivirlo — mientras el desenlace todavía se está escribiendo.</p>
-          <p><strong>La evidencia está en línea. El libro cuenta la historia humana e institucional.</strong></p>
+          <p><strong>UN ACTIVO. UNA HISTORIA.</strong> Antes de convertirse en un expediente, Sun Park fue un lugar al que la gente venía a quedarse, volver, hacer amigos y formar parte de una comunidad. El libro une esa experiencia SunRockers con la historia del mismo lugar hoy conocido como MYND Yaiza y con la reconstrucción documental de lo ocurrido entre ambas etapas.</p>
+          <p><strong>La evidencia explica qué ocurrió. El libro recuerda qué importaba.</strong></p>
           <p class="qualification">Proyecto editorial y educativo asociado a Fundación Por Derecho. La asociación no implica por sí misma cesión de derechos de autor, regalías u otros derechos comerciales; una compra y una eventual donación son operaciones distintas.</p>
-          <div class="actions"><a class="button" href="libro/">Descubrir el libro</a><a class="button secondary" href="proyecto-conocimiento/">Examinar la evidencia y el método</a></div>`;
+          <div class="actions"><a class="button" href="libro/">Descubrir Sun Park y los SunRockers</a><a class="button secondary" href="proyecto-conocimiento/">Examinar la evidencia y el método</a></div>`;
       } else {
         card.innerHTML = `
-          <p class="kicker">Upcoming book · publishing project</p>
+          <p class="kicker">Upcoming book · Playa Blanca · SunRockers</p>
           <h3 id="por-derecho-book-title-en">Reason to Believe <span lang="es">· Razón para creer</span></h3>
-          <p><strong>ONE ASSET. ONE HISTORY.</strong> Many versions were created; there was only one history. The repository reconstructs the record. The book tells what it was like to live through it — while the ending is still being written.</p>
-          <p><strong>The evidence is online. The book tells the human and institutional story.</strong></p>
+          <p><strong>ONE ASSET. ONE HISTORY.</strong> Before it became a case file, Sun Park was a place people came to stay, return, make friends and belong. The book connects that SunRockers experience with the story of the same place now known as MYND Yaiza and the documentary reconstruction of what happened in between.</p>
+          <p><strong>The evidence explains what happened. The book remembers what mattered.</strong></p>
           <p class="qualification">A publishing and educational project associated with Fundación Por Derecho. Association does not by itself assign copyright, royalties or other commercial rights; a purchase and any future donation are distinct transactions.</p>
-          <div class="actions"><a class="button" href="book/">Discover the book</a><a class="button secondary" href="knowledge-project/">Examine the evidence and method</a></div>`;
+          <div class="actions"><a class="button" href="book/">Discover Sun Park and the SunRockers</a><a class="button secondary" href="knowledge-project/">Examine the evidence and method</a></div>`;
       }
       shell.appendChild(card);
     }
