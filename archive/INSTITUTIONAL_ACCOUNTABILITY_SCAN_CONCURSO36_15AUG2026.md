@@ -16,7 +16,9 @@ This report records the source-led execution of `INSTITUTIONAL_MESSAGE_DISCOVERY
 - AP Section 4 order of 9 June 2026 in RPL 3304/2025;
 - AP Section 4 Auto 223/2026 of 20 July 2026 accumulating RPL 3319/2025 with RPL 3304/2025;
 - LexNET / RPL 2523/2025 material confirming Section 4 appellate activity and the September 2025 information request concerning the culpability section;
-- Gmail evidence families concerning DI 248/2018, testimonies, AC separation, accounting/rendición and later criminal/institutional complaints (the latter treated as allegations, not proof).
+- Gmail evidence families concerning DI 248/2018, testimonies, AC separation, accounting/rendición and later criminal/institutional complaints (the latter treated as allegations, not proof);
+- LAJ testimony ledger identifying concrete 2018, 2021 and 2022 court-office acts;
+- three coordinated REGAGE filings of 15 August 2026 to the territorial, provincial and national LAJ supervisory/coordination levels.
 
 ## Publication scores
 
@@ -24,8 +26,23 @@ This report records the source-led execution of `INSTITUTIONAL_MESSAGE_DISCOVERY
 |---|---:|---|---|
 | Administrador Concursal | 48 | DO NOW | Deep documentary corpus, centrality, knowledge/acts traceable, concrete open duty/response questions. |
 | Juzgado Mercantil nº 1 / court institution | 48 | DO NOW | Primary judicial orders, knowledge matrix, irreversible/value-consolidating steps, strong public-interest need to distinguish scope of each ruling. |
+| LAJ / court-office layer | 46 | DO NOW — EVIDENCE HUB + PUBLIC MESSAGE | Dated primary office acts now concentrate a finite issue: testimony issuance, finality, service, delivery, external use and later response. Three competent LAJ levels received the same evidential corpus on 15/08/2026. This is a publication-readiness score, not a culpability score. |
 | Audiencia Provincial Las Palmas · Sección 4ª | 45 | DO NOW — HUB | Three material appeal tracks are identifiable; strong need to explain appellate corrective capacity and record completeness. Not a basis for personal pressure on judges. |
-| LAJ / court-office layer | 30 | VERIFY FIRST | Procedural traces exist, but no sufficiently concentrated autonomous accountability issue is yet proved. Keep as process-integrity layer inside the hub. |
+
+## Why the LAJ score changed
+
+The earlier 30/50 `VERIFY FIRST` assessment was appropriate before the court-office record was concentrated. The position changed materially on 15 August 2026 because the corpus now identifies:
+
+- the 17/10/2018 Administrador Concursal request for testimony of the 16/04/2018 and 26/06/2018 orders;
+- the 22/10/2018 court-office act associated with delivery of requested testimonies;
+- the 25/10/2021 testimony order following CAM filing 7336/2021;
+- the 14/02/2022 testimony order following CAM filing 820/2022, including expression of finality;
+- located notification notations that narrow but do not close the service question;
+- a finite ledger of missing actual testimonies, ATLANTE/LexNET service logs, request writings and downstream notarial/Registry use;
+- a mature concursal / extraconcursal / cross-border continuing-effect framework;
+- a formal three-level supervisory chain recorded in `archive/LAJ_SUPERVISORY_CHAIN_15AUG2026.md`.
+
+This justifies a dedicated evidence-first LAJ page and formal public message. It does **not** justify personal allegations of corruption, collusion, falsification, favouritism or criminal intent.
 
 ## High-value verified primary propositions
 
@@ -41,6 +58,24 @@ The scanned primary order records notification of an `ob rem` unlinking/sale car
 
 This is a strong institutional-control fact. It does **not**, by itself, prove criminal conduct, universal nullity of all later acts, or the legal consequence for every downstream asset. Those consequences require separate proceeding/title analysis.
 
+### LAJ / court-office chain
+
+The current ledger identifies concrete office acts in 2018, 2021 and 2022, including testimony handling and an act of 14 February 2022 ordering testimony of specified orders with expression of finality. The evidential gap is no longer whether a LAJ issue exists at all; it is the exact content and life-cycle of the testimonies actually issued.
+
+Publication-safe question:
+
+> For each material testimony, DIOR or certification in Concurso 36/2012, can the Administration of Justice produce the complete chain request → decision → certified content → finality → service → delivery → external use → current effect?
+
+### Three-level supervisory activation — 15 August 2026
+
+The same filing corpus was separately registered with:
+
+- Secretaría de Gobierno · TSJ Canarias — `J00023418` — `REGAGE26e00073341191`;
+- Secretaría de Coordinación Provincial de Las Palmas — `J00022837` — `REGAGE26e00073341382`;
+- Secretaría General para la Innovación y Calidad del Servicio Público de Justicia — `E05077001` — `REGAGE26e00073341477`.
+
+The later filings expressly identify the earlier recipient(s). This supports the public proposition that the three relevant levels have formal notice of the same corpus and can coordinate preservation and verification. It does not establish that an inquiry has already been opened.
+
 ### AP Section 4 — RPL 3304/2025
 
 A 9 June 2026 Section 4 providencia scheduled study/vote/judgment for 7 July 2026. It identifies the panel for that procedural act. Do not infer a judgment/outcome from the scheduling document.
@@ -55,23 +90,14 @@ LexNET material confirms RPL 2523/2025 before Section 4 and a 16 September 2025 
 
 ## Public architecture decision
 
-Create a consolidated bilingual hub rather than multiple personal accusation pages:
+Maintain a consolidated bilingual institutional-accountability hub, while allowing strong dedicated evidence subhubs for actors/offices with sufficient primary depth.
 
-- ES: `es/concurso-36-2012-responsabilidad-institucional/`
-- EN: `en/insolvency-36-2012-institutional-accountability/`
+- ES institutional hub: `es/concurso-36-2012-responsabilidad-institucional/`
+- EN institutional hub: `en/insolvency-36-2012-institutional-accountability/`
+- ES LAJ hub/public message: `es/concurso-36-2012-laj/`
+- EN LAJ hub/public message: `en/insolvency-36-2012-laj/`
 
-Sections:
-
-1. 60-second chronology.
-2. Agentic publication-readiness scores.
-3. AC: knowledge → duty → act → unresolved.
-4. Mercantil 1: judicial knowledge matrix.
-5. AP Section 4: appeal inventory and corrective capacity.
-6. LAJ/court office: procedural-integrity track marked VERIFY FIRST.
-7. Answerable documentary questions.
-8. Strongest reasonable defence for each institutional layer.
-9. Explicit `does not establish` box.
-10. Correction/right-of-reply invitation.
+For the three LAJ supervisory offices, do **not** create three standalone public pages at this stage. Treat them as three named accountable nodes inside one supervisory chain. This preserves the deliberately coordinated architecture and prevents fragmentation of responsibility.
 
 ## Public-message discipline
 
@@ -81,7 +107,11 @@ For the AC, the current evidence supports a dedicated evidence-first subhub. A l
 
 For AP Section 4, the evidence supports a dedicated hub now. It does **not** support a personal open message to the chamber members. The useful public question is completeness and corrective capacity: what is actually on appeal, what record is before the chamber, and what later evidence can procedurally be considered.
 
-For the LAJ, do not publish personal allegations. First complete a matrix of `presented → incorporated → notified → certified/testimoniado → transmitted → received` and identify any concrete discrepancy from primary procedural records.
+For the LAJ, the correct pressure architecture is now:
+
+**neutral office identification → primary act ledger → 2018 and 2021/22 worked chains → concursal/extraconcursal/transnational consequences → three-level supervisory registration → strongest institutional defence → formal public message → correction/right of reply.**
+
+Keep the public link to **DP 1901/2026**. The criminal route and LAJ supervisory route do not replace one another; a certified result from one may confirm, reject or qualify factual premises relevant to the other.
 
 ## Strongest reasonable institutional defences
 
@@ -93,20 +123,27 @@ The AC had statutory functions, operated within a court-supervised procedure and
 
 The court decides questions within the insolvency proceeding and is not required to resolve every collateral criminal, civil, corporate or third-party issue in each order. Public analysis must therefore distinguish `known` from `decided` and `outside scope` from `ignored`.
 
+### LAJ / court office
+
+It may be that every testimony was correctly issued, relevant parties properly served, finality correctly expressed, later external use was solely the recipient's responsibility and no LAJ knew of any improper downstream use. That explanation must remain visible and should be tested against the official file rather than rejected in advance.
+
 ### AP Section 4
 
 An appellate chamber is not a de novo investigation. Review is bounded by the appealed orders, grounds, transmitted record and procedural rules for later evidence. The site should ask whether the record is complete for the issue actually under appeal, not demand that the chamber investigate the entire Sun Park history.
 
-## Priority searches that remain live
+## Priority searches / monitoring that remain live
 
 1. Exact AC proposal referenced by the 26 June 2018 suspension order.
 2. Complete consequences/challenges following the non-convalidation order of 24 October 2019.
 3. Full court knowledge matrix for 2020–22 RIC/title/Matkator evidence before adjudication/dación.
 4. Exact current status/outcome after the 7 July 2026 RPL 3304/2025 scheduled study.
 5. Complete transmitted records and current status in RPL 2523/2025, 3304/2025 and 3319/2025.
-6. Complete court-office integrity matrix before any LAJ-specific publication.
-7. AC act-by-act matrix covering access, security, Community authority, sales, dación, title/perimeter representations, Matkator and accounting/rendición.
+6. Actual LAJ testimony PDFs/certified copies and complete service/transmission logs.
+7. Any acknowledgement, referral, report request, preliminary-inquiry decision, preservation measure or express outcome from J00023418, J00022837 or E05077001.
+8. AC act-by-act matrix covering access, security, Community authority, sales, dación, title/perimeter representations, Matkator and accounting/rendición.
 
 ## Controlling conclusion
 
-The evidence supports publication now of a **neutral, evidence-first Concurso 36/2012 institutional-accountability hub** for AC + Mercantil 1 + AP Section 4. The evidence does not presently justify converting that hub into personal accusations of judicial wrongdoing, corruption, collusion or intentional concealment.
+The evidence now supports publication of a **neutral but firm, evidence-first Concurso 36/2012 accountability architecture** for AC + Mercantil 1 + LAJ/court office + AP Section 4. For the LAJ track, the evidence also now supports a formal public message to the three supervisory levels because the documentary issue is finite and those levels have been formally placed on notice.
+
+The evidence still does not justify converting any of these pages into personal assertions of corruption, collusion, intentional concealment or criminal wrongdoing without independent proof.
