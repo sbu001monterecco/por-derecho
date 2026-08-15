@@ -39,4 +39,7 @@
       });
     });
   });
+
+  // Independent media-mark loader: do not make this depend on any other helper chain.
+  load('media-publication-marks-20260815.js?v=20260815a');
 })();
