@@ -4,7 +4,7 @@ Registro maestro de declaraciones conservadas en `archive/declarations/`.
 
 | Nº | Fecha | Declarante | Tema | Estado | Archivo |
 |---|---|---|---|---|---|
-| 001 | 2026-08-15 | Patricia Domínguez | Testimonio 2018: suspensión, solicitud/entrega de testimonios, venta parcial de €400.000 y no convalidación posterior | REVISADA — pendiente de firma controlante | [`PATRICIA_DOMINGUEZ_STATEMENT_2018_TESTIMONIO_15AUG2026.md`](./PATRICIA_DOMINGUEZ_STATEMENT_2018_TESTIMONIO_15AUG2026.md) |
+| 001 | 2026-08-15 | Patricia Domínguez | Testimonio 2018: suspensión, solicitud/entrega de testimonios, venta parcial de €400.000 y no convalidación posterior | REVISADA — pendiente de firma controlante | [`001_DOMINGUEZ_PATRICIA_TESTIMONIO_2018_20260815.md`](./001_DOMINGUEZ_PATRICIA_TESTIMONIO_2018_20260815.md) |
 
 ## Campos que se añadirán cuando proceda
 
