@@ -11,13 +11,15 @@
   };
 
   load('justice-map-navigation-20260815.js?v=20260815d', () => {
-    load('site-accountability-20260814.js?v=20260815a', () => {
-      load('ricpe-identity-correction-20260815.js?v=20260815a', () => {
-        load('police-evidence-preservation-20260815.js?v=20260815a', () => {
-          load('police-regage-drilldown-20260815.js?v=20260815a', () => {
-            load('police-context-explainer-20260815.js?v=20260815a', () => {
-              load('book-foundation-20260815.js?v=20260815b', () => {
-                load('books-portfolio-20260815.js?v=20260815a');
+    load('concursal-accountability-navigation-20260815.js?v=20260815a', () => {
+      load('site-accountability-20260814.js?v=20260815a', () => {
+        load('ricpe-identity-correction-20260815.js?v=20260815a', () => {
+          load('police-evidence-preservation-20260815.js?v=20260815a', () => {
+            load('police-regage-drilldown-20260815.js?v=20260815a', () => {
+              load('police-context-explainer-20260815.js?v=20260815a', () => {
+                load('book-foundation-20260815.js?v=20260815b', () => {
+                  load('books-portfolio-20260815.js?v=20260815a');
+                });
               });
             });
           });
