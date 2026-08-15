@@ -30,7 +30,8 @@
               load('police-context-explainer-20260815.js?v=20260815a', () => {
                 load('book-foundation-20260815.js?v=20260815b', () => {
                   load('books-portfolio-20260815.js?v=20260815c');
-                  load('book-cover-router-20260815.js?v=20260815a');
+                  // Book pages now carry the authoritative locked JPG cover in their HTML.
+                  // Do not load the legacy SVG router here: it overwrites the correct cover after first paint.
                 });
               });
             });
