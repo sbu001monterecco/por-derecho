@@ -15,8 +15,10 @@ The project deliberately does not rely on a single ChatGPT conversation as its i
 3. `CORPUS_TOKEN_AUDIT.md` — preliminary corpus scale, token ranges and processing economics.
 4. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan, milestones, decision gates and KPIs.
 5. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — Reason to Believe, Fundación Por Derecho, Havidia and American AI Justice boundaries.
-6. `DELETION_AND_CONTINUITY_GATE.md` — what must be true before any source ChatGPT thread is treated as disposable.
-7. Public Knowledge Project pages: `/en/knowledge-project/` and `/es/proyecto-conocimiento/`.
+6. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — Canary Islands/Las Palmas comparative research, expert/literature map, NPL/servicing themes, audiences and other open directions that must not be lost.
+7. `REUSABLE_PROMPTS.md` — master corpus/token audit, One Asset / One History, publication red-team, book-cover and fresh-thread recovery prompts.
+8. `DELETION_AND_CONTINUITY_GATE.md` — what must be true before any source ChatGPT thread is treated as disposable.
+9. Public Knowledge Project pages: `/en/knowledge-project/` and `/es/proyecto-conocimiento/`.
 
 ## Core reading rule
 
@@ -71,8 +73,8 @@ Those materials can inform internal work where lawful, but their existence shoul
 
 ## For a new ChatGPT thread
 
-Start by reading the six files above and the live Knowledge Project page. Then inspect the repository's relevant source pages before answering substantive case questions. Where a question depends on Gmail, Drive, OneDrive or another connected private source, search that source rather than assuming this public handover contains the underlying evidence.
+Start by reading the eight files above and the live Knowledge Project page. Then inspect the repository's relevant source pages before answering substantive case questions. Where a question depends on Gmail, Drive, OneDrive or another connected private source, search that source rather than assuming this public handover contains the underlying evidence.
 
 ## Continuity objective
 
-A new thread should be able to recover the project's **method, goals, architecture, principal working theses, resource strategy, publication boundaries and next actions** without relying on an earlier conversation. It should still return to the primary sources for factual verification.
+A new thread should be able to recover the project's **method, goals, architecture, principal working theses, resource strategy, publication boundaries, open research directions and next actions** without relying on an earlier conversation. It should still return to the primary sources for factual verification.
