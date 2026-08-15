@@ -1,12 +1,13 @@
 # Declaración de Patricia Domínguez — secuencia del testimonio de 2018
 
 **N.º:** 001  
+**Declarante:** Patricia Domínguez  
 **Fecha:** 15 de agosto de 2026  
 **Lugar:** San Cristóbal de La Laguna  
 **Materia:** Concurso Ordinario 36/2012 — testimonio judicial, operación de 2018 y posterior no convalidación  
-**Estado:** REVISADA — pendiente de firma controlante
+**Estado:** REVISADA Y REGISTRADA — no firmada; utilizable con sus límites
 
-> **Estado documental:** versión de repositorio preparada para preservar y apoyar la trazabilidad pública del asunto. La versión firmada, cuando se formalice, debe conservarse como documento de control. Esta transcripción no sustituye los documentos judiciales, notariales o registrales originales.
+> **Estado documental y uso:** versión de repositorio preparada para preservar y apoyar la trazabilidad pública e institucional del asunto. Puede conservarse, citarse, comunicarse y utilizarse aunque no esté firmada, siempre que no se describa como firmada o ratificada. Si posteriormente existe una versión firmada, ésta controlará la autenticación y el tenor exacto en caso de diferencia, sin borrar ni inutilizar esta versión. Esta declaración no sustituye los documentos judiciales, notariales o registrales originales.
 
 ## Declaración
 

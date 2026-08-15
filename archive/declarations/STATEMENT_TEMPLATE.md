@@ -5,11 +5,17 @@
 **Fecha:** [AAAA-MM-DD]  
 **Lugar:** [LUGAR]  
 **Tema:** [TEMA CONCRETO]  
-**Estado:** BORRADOR / REVISADA / FIRMADA / PRESENTADA / SUPLEMENTADA
+**Estado:** BORRADOR / REGISTRADA / REVISADA / FIRMADA / PRESENTADA / SUPLEMENTADA
 
-## 1. Identificación y finalidad
+> **Uso y autenticación:** la firma no es requisito para conservar, citar, comunicar o utilizar una declaración registrada. Una versión no firmada no debe describirse como firmada, jurada o ratificada. Si existe posteriormente una versión firmada o ratificada, ésta controla la autenticación y el tenor exacto en caso de diferencia, sin borrar la versión anterior.
+
+## 1. Identificación, fuente y finalidad
 
 Yo, **[NOMBRE]**, formulo esta declaración para dejar constancia ordenada y fiel de mi conocimiento, recuerdo y entendimiento de hechos relacionados con **[ASUNTO]**.
+
+**Fuente personal o documental principal:** [CONVERSACIÓN / AUDIO / CORREO / DOCUMENTOS / EXPERIENCIA DIRECTA].
+
+**Estado de adopción:** [REVISADA PERSONALMENTE / DERIVADA DE FUENTE Y NO RATIFICADA SEPARADAMENTE / OTRO].
 
 Distingo expresamente entre:
 
@@ -41,7 +47,11 @@ A partir de ellos, mi entendimiento es el siguiente:
 
 [EXPLICACIÓN. EVITAR PRESENTAR LA INTERPRETACIÓN COMO HECHO DOCUMENTAL LITERAL.]
 
-## 5. Extremos que no afirmo como conocimiento personal
+## 5. Inferencias u opiniones razonadas
+
+[IDENTIFICAR COMO INFERENCIA, SOSPECHA, OPINIÓN O PREGUNTA. EXPONER LOS HECHOS O DOCUMENTOS EN QUE SE APOYA Y LAS EXPLICACIONES ALTERNATIVAS QUE PERMANECEN ABIERTAS.]
+
+## 6. Extremos que no afirmo como conocimiento personal
 
 No afirmo por conocimiento personal directo:
 
@@ -52,27 +62,33 @@ Considero que deben verificarse mediante:
 
 - [FUENTE / TESTIMONIO / REGISTRO / METADATOS]
 
-## 6. Documentos de corroboración identificados
+## 7. Documentos de corroboración identificados
 
 | Documento | Fecha | Custodio/fuente | Qué puede acreditar | Estado |
 |---|---|---|---|---|
 | [Documento] | [fecha] | [fuente] | [alcance] | encontrado / pendiente / parcial |
 
-## 7. Declaración de veracidad
+## 8. Uso de esta versión
+
+Esta versión puede utilizarse como [RELATO FECHADO / GUÍA DE INVESTIGACIÓN / COMUNICACIÓN INSTITUCIONAL / ÍNDICE DOCUMENTAL / OTRO]. Su estado debe describirse como **[ESTADO]**. No se afirmará que está firmada o ratificada salvo que exista prueba de ello.
+
+## 9. Declaración de veracidad
 
 Declaro que lo expuesto refleja fielmente, según mi leal saber y entender, mi conocimiento y mi recuerdo, y que he indicado cuando una afirmación depende de documentos, inferencia o verificación pendiente. Si posteriormente se me exhibe documentación auténtica que precise o contradiga algún extremo, estoy dispuesto/a a aclarar, corregir o suplementar esta declaración expresamente, sin alterar silenciosamente la versión anterior.
 
+**[NOMBRE COMPLETO]**  
 **En [LUGAR], a [FECHA].**
 
-**Fdo.: [NOMBRE COMPLETO]**
-
-Firma: ______________________________
+Firma, si se realiza: ______________________________
 
 ## Control de integridad
 
-- Nombre del archivo firmado: [PENDIENTE]
-- SHA-256: [PENDIENTE]
-- Fecha/hora de firma: [PENDIENTE]
+- Fuente personal/documental: [IDENTIFICAR]
+- Archivo(s) fuente y hash(es): [PENDIENTE / REFERENCIA PRIVADA]
+- Estado de revisión/adopción: [PENDIENTE]
+- Nombre del archivo firmado, si existe: [NO EXISTE / PENDIENTE]
+- SHA-256 de la versión firmada: [NO APLICA / PENDIENTE]
+- Fecha/hora de firma o ratificación: [NO APLICA / PENDIENTE]
 - REGAGE/RedSARA: [PENDIENTE / NO APLICA]
 - Destinatario institucional: [PENDIENTE / NO APLICA]
 - Declaración que suplementa/corrige: [NO APLICA / REFERENCIA]
