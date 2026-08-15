@@ -1,8 +1,10 @@
 # START HERE — ChatGPT continuity guide
 
+> **Controlling entry point:** `/CHATGPT_START_HERE.md` at repository root. This file is a specialist continuity guide for the Knowledge Project / publishing programme and must not override the root stewardship protocol.
+
 **Status:** public-safe continuity layer · 15 August 2026
 
-This file is the first entry point for a new ChatGPT thread, researcher or collaborator working on Project Sun Rock / Fundación Por Derecho / the publishing programme / the Knowledge Project / Havidia.
+This file is the specialist entry point for a new ChatGPT thread, researcher or collaborator working on Project Sun Rock / Fundación Por Derecho / the publishing programme / the Knowledge Project / Havidia after reading the root `CHATGPT_START_HERE.md`.
 
 ## Mandatory publishing-continuity rule
 
@@ -26,21 +28,22 @@ Do not create competing full manuscripts by default. Update canonical files.
 
 ## Read in this order
 
-1. `THREAD_HANDOVER_2026-08-15.md` — integrated state of work.
-2. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
-3. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
-4. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
-5. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
-6. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
-7. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
-8. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
-9. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
-10. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
-11. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
-12. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
-13. `REUSABLE_PROMPTS.md` — reusable prompts.
-14. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
-15. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
+1. `/CHATGPT_START_HERE.md` — controlling repository stewardship protocol.
+2. `THREAD_HANDOVER_2026-08-15.md` — integrated state of work.
+3. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
+4. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
+5. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
+6. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
+7. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
+8. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
+9. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
+10. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
+11. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
+12. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
+13. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
+14. `REUSABLE_PROMPTS.md` — reusable prompts.
+15. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
+16. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
 
 ## Core rules
 
