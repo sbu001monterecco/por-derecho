@@ -85,10 +85,60 @@ San Cristóbal de La Laguna
 
 ---
 
+## Apéndice operativo — acciones derivadas
+
+*Este apéndice traduce las cuestiones de la declaración en verificaciones concretas. No añade hechos ni convierte hipótesis en conclusiones.*
+
+### A. Perímetro, identidades y conflictos
+
+- certificar nombres legales completos, NIF, cargos, poderes, periodos y sociedades exactas de cada persona relevante;
+- reconstruir la composición histórica del Consejo, comités y Unidad de Control de RICPE en cada fecha decisiva;
+- identificar quién originó, presentó, revisó, aprobó, votó, se abstuvo, corrigió o recibió cada decisión Sun Park;
+- separar de la dirección exclusiva de una investigación interna a cualquier persona cuyo propio acto, firma, conflicto o decisión sea materialmente examinado.
+
+### B. Comunidad y control material
+
+- identificar por periodos presidente, administrador, secretario, tesorero, propietarios representados y poderes de la Comunidad;
+- obtener actas, certificados de deuda, votaciones, bancos, contratos de seguridad, llaves/cerraduras, accesos, proyectos, obras y comunicaciones;
+- determinar documentalmente cuándo y cómo la estructura comunitaria preexistente se relacionó, si se relacionó, con CAM, el Administrador Concursal y el proyecto posteriormente presentado a RICPE;
+- tratar cualquier hipótesis de administración material paralela como cuestión funcional a probar, no como etiqueta jurídica ya establecida.
+
+### C. Proyecto RICPE y titularidad
+
+- comparar todas las versiones del folleto y webinar de 2020–2022;
+- identificar el documento de título, expectativa de título, valoración, presupuesto, licencia e idoneidad recibido por RICPE en cada versión;
+- reconstruir qué cambió entre la presentación inicial, el certificado de julio de 2021 y la decisión de diciembre de 2021;
+- identificar cualquier disclaimer, condición precedente o advertencia comunicada a inversores.
+
+### D. Certificado de 20 de julio de 2021
+
+- localizar solicitud, borradores, aprobación, firma, destinatarios y lista de circulación;
+- identificar quién decidió o conocía que sería aportado al Concurso 36/2012;
+- preservar correos, actas, instrucciones y documentos de soporte;
+- obtener explicaciones separadas del firmante, solicitante, aprobadores y receptores.
+
+### E. CAM–HNT, financiación y empleo
+
+- obtener proyecto/escritura de segregación, balances, contabilidad 2022 y conciliación CAM–HNT;
+- conciliar cada euro de Series F/G con contrato, desembolso, asiento, factura, nómina o uso final;
+- documentar el estado físico real de la reforma en cada fecha de aprobación y desembolso;
+- conciliar financiación de empleo, incentivo regional, empleo real, entidad empleadora y reglas de compatibilidad;
+- identificar el documento exacto que soporte cualquier valoración de 23,8 M€.
+
+### F. Contradicción y cierre
+
+- preservar evidencia exculpatoria y explicaciones alternativas con el mismo rigor que la adversa;
+- entrevistar por separado antes de cerrar una hipótesis;
+- registrar qué documento o declaración confirma, contradice o deja sin resolver cada punto;
+- mantener una matriz `afirmación → fuente → custodio → prueba confirmatoria → prueba exculpatoria → estado`.
+
 ## Control de integridad y procedencia
 
 - Fuente principal: dieciséis mensajes de voz de WhatsApp de 14 de agosto de 2026.
 - Transcripción: versión de trabajo con marcas temporales; no certificada.
+- SHA-256 de la transcripción de trabajo utilizada para esta actualización: `19e654ae03c2afeadc1a507549854a15129c20e10da29bb941fe86fb3c92ba88`.
+- PDF de trabajo previo de declaración: `Patricia_Borrador_Declaracion_Veracidad_14AGO2026.pdf`.
+- SHA-256 de ese PDF de trabajo: `9b217f74e24ff4c96f06cafeaafbb6b82fb5d42da68b99a050f30717d15cbc32`.
 - Audios publicados en el repositorio: no.
 - Hash de audios/exportación nativa: pendiente en registro privado de evidencia.
 - Firma: no requerida para utilizar esta versión; no consta firma separada.
