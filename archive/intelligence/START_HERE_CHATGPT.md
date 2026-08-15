@@ -2,111 +2,72 @@
 
 **Status:** public-safe continuity layer · 15 August 2026
 
-This file is the first entry point for a new ChatGPT thread, researcher or collaborator working on Project Sun Rock / Fundación Por Derecho / Reason to Believe / the Knowledge Project / Havidia.
+This file is the first entry point for a new ChatGPT thread, researcher or collaborator working on Project Sun Rock / Fundación Por Derecho / the publishing programme / the Knowledge Project / Havidia.
 
-## Purpose
+## Mandatory publishing-continuity rule
 
-The project deliberately does not rely on a single ChatGPT conversation as its institutional memory. This repository is intended to carry the durable, public-safe working architecture: what the project is trying to establish, how evidence is classified, how AI is used, what remains uncertain, and how the resulting knowledge can support public-interest, publishing and commercial work.
+The project now maintains a **five-book working portfolio**. Do not force all new intelligence into `Reason to Believe`.
 
-## Mandatory book-continuity rule
+Read `../book/BOOK_PORTFOLIO_LIVE.md` to decide which book a discovery belongs to:
 
-`Reason to Believe / Razón para creer` is now maintained as a **living book system** inside the depository.
+1. `Reason to Believe / Razón para creer` — human/institutional flagship.
+2. `Law-mower Man` — AI, legal memory and information asymmetry; working title pending clearance.
+3. `The SunRockers` — illustrated/oral/community history.
+4. `Justice in Pieces / Justicia en fragmentos` — institutional fragmentation and comparative justice-system research.
+5. `Special Situations / Situaciones Especiales` — NPLs, claims trading, defaults, servicing, distressed credit and special-situations investing.
 
-Every future material research pass should preserve three distinct layers:
+`Reason to Believe` itself remains a living book system with three distinct layers:
 
 1. **Evidence** — what the sources actually support.
 2. **Book intelligence** — what new evidence/research means for structure, themes, questions, risk, audience and publishing strategy.
 3. **Live manuscript** — reader-facing narrative prose.
 
-Do not create competing full manuscripts by default. Update the canonical files below.
+Do not create competing full manuscripts by default. Update canonical files.
 
 ## Read in this order
 
-1. `THREAD_HANDOVER_2026-08-15.md` — integrated state of the work and major decisions.
-2. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — canonical source/proposition/event model and publication discipline.
-3. `../book/BOOK_INTELLIGENCE_LIVE.md` — **canonical continuously updated book intelligence**: thesis, structure, themes, research queue, risk register, audience, narrative decisions and update protocol.
-4. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — **canonical continuously updated manuscript**: the living draft of the book.
-5. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — separate Book 2 candidate: transformative Law-mower Man concept, Gil-as-protagonist architecture, structural adversarial archetypes, film/reality parallels, IP/title caution and proposed chapter system.
-6. `CORPUS_TOKEN_AUDIT.md` — preliminary corpus scale, token ranges and processing economics.
-7. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan, milestones, decision gates and KPIs.
-8. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — Reason to Believe, Fundación Por Derecho, Havidia and American AI Justice boundaries.
-9. `BOOK_PROMOTION_AND_COVER.md` — title/subtitle, cover, retail positioning, promotional copy, audience, formats/rights and launch architecture.
-10. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — Sun Park Living / SunRockers human history, Playa Blanca narrative, Adam J. Jackson / The Ethos reference and memory/publication boundaries.
-11. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — Canary Islands/Las Palmas comparative research, expert/literature map, NPL/servicing themes and other open directions.
-12. `REUSABLE_PROMPTS.md` — reusable research and continuity prompts.
-13. `DELETION_AND_CONTINUITY_GATE.md` — what must be true before any source ChatGPT thread is treated as disposable.
-14. Public Knowledge Project and book pages: `/en/knowledge-project/`, `/es/proyecto-conocimiento/`, `/en/book/`, `/es/libro/`.
+1. `THREAD_HANDOVER_2026-08-15.md` — integrated state of work.
+2. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
+3. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
+4. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
+5. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
+6. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
+7. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
+8. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
+9. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
+10. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
+11. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
+12. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
+13. `REUSABLE_PROMPTS.md` — reusable prompts.
+14. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
+15. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
 
-## Core reading rule
+## Core rules
 
-**The website is not itself the evidence.** Public pages are outputs from the evidential record. A material factual proposition should ultimately be traceable to a primary or otherwise identified source, with status and uncertainty made visible.
+**The website is not itself the evidence.** Public pages are outputs. Material factual propositions should trace to identified sources with status and uncertainty visible.
 
-## AI rule
+The project has **not developed its own foundation AI model**. It relies predominantly on ChatGPT and other available tools. AI-generated text is not evidence.
 
-The project has **not developed its own foundation AI model**. It relies predominantly on ChatGPT and other available tools for search, comparison, classification, extraction and analysis. AI-generated text is not evidence. The underlying source is the evidence.
+**One Asset. One History.** Fragmentation across proceedings, institutions, companies, creditors, titles and time does not create multiple histories of the same asset; legal distinctions must nevertheless be preserved.
 
-## Central reconstruction principle
-
-**One Asset. One History.** Fragmentation across proceedings, institutions, companies, creditors, titles and time does not create multiple histories of the same asset. The repository should reconstruct the continuous history while preserving procedural boundaries and competing explanations.
-
-## Mandatory evidential categories
-
-For every material proposition, distinguish at minimum:
-
-- documented / verified fact;
-- procedural fact;
-- party position or allegation;
-- evidence-based inference;
-- disputed or contradicted matter;
-- matter under verification;
-- missing-document / unresolved question;
-- corrected or superseded proposition.
-
-Do not allow repetition across drafts, emails, AI reports or webpages to convert an allegation into a fact.
-
-## Major workstreams
-
-- One Asset / One History evidential reconstruction.
-- Sun Park / LPB / Matkator / credit / title / control / money / decisions / institutional knowledge.
-- Sun Park Living / SunRockers — lived hospitality/community history and memory collection.
-- Reason to Believe / Razón para creer — **living manuscript + living book intelligence + publishing project**.
-- Law-mower Man — **separate working Book 2 concept** about AI, information asymmetry, legal complexity and institutional memory; title not yet cleared.
-- Fundación Por Derecho — planned public-interest pathway.
-- The Knowledge Project — methodology, corpus, AI transparency and knowledge mapping.
-- Havidia LLC — intended US commercial and future technology pathway, subject to documented rights and governance.
-- American AI Justice — international research/outreach proposition, not a claim of proprietary AI.
+For every material proposition distinguish documented/verified fact, procedural fact, party position/allegation, evidence-based inference, disputed/contradicted matter, under-verification matter, document gap, and corrected/superseded proposition.
 
 ## Public/private boundary
 
-This public repository must not be used to dump:
+Do not publish privileged legal advice, private personal data, unredacted private correspondence merely because relevant, confidential source material, reserved tax material, private audio not cleared, unsupported allegations or automated culpability scores.
 
-- privileged legal advice or litigation strategy;
-- private personal data;
-- unredacted private correspondence merely because it is relevant;
-- confidential witness or source material;
-- reserved tax material;
-- private audio or transcripts not cleared for publication;
-- unsupported allegations or automated culpability scores.
-
-Those materials can inform internal work where lawful, but their existence should be represented publicly only to the extent necessary and legally appropriate.
-
-## Continuous-update workflow for future ChatGPT threads
+## Continuous-update workflow
 
 After a material Gmail/Drive/file/web/court-record scan:
 
-- update the **evidence layer** if source-supported facts/status changed;
-- update `BOOK_INTELLIGENCE_LIVE.md` if the meaning, structure, risk, audience or research priorities for *Reason to Believe* changed;
-- update `REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` if reader-facing prose should change;
-- update `LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` when AI/legal-memory discoveries materially change the Book 2 proposition;
-- update `BOOK_PROMOTION_AND_COVER.md` if marketing/title/cover/rights strategy changed;
-- append meaningful changes to the relevant change logs.
-
-A finding may update all relevant layers. Sensitive source material must remain outside the public-safe repository even when its lawful/public-safe consequence is recorded.
-
-## For a new ChatGPT thread
-
-Start by reading the files above, especially the evidence architecture, live book intelligence and live manuscript. Then inspect the repository's relevant source pages before answering substantive case questions. Where a question depends on Gmail, Drive, OneDrive or another connected private source, search that source rather than assuming this public handover contains the underlying evidence.
+- update the evidence layer if source-supported facts/status changed;
+- determine which of the five books the intelligence belongs to;
+- update `BOOK_PORTFOLIO_LIVE.md` when portfolio scope/separation/readiness changes;
+- update the relevant book-intelligence file;
+- update manuscript prose only when appropriate;
+- update promotion/cover/rights intelligence when affected;
+- preserve sensitive source material outside the public-safe repository.
 
 ## Continuity objective
 
-A new thread should be able to recover the project's **method, goals, architecture, principal working theses, current manuscript, current book intelligence, separate Law-mower Man Book 2 concept, resource strategy, publication boundaries, book identity/promotion architecture, SunRockers human story, open research directions and next actions** without relying on an earlier conversation. It should still return to the primary sources for factual verification.
+A new thread should recover the project's method, evidence discipline, five-book publishing portfolio, current flagship manuscript/intelligence, Law-mower Man concept, SunRockers history, Special Situations/NPL direction, resource strategy, publication boundaries and next actions without relying on an earlier conversation. It must still return to primary sources for factual verification.
