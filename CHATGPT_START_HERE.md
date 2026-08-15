@@ -12,7 +12,8 @@ Treat the repository as institutional memory, the Depository/archive as the evid
 4. Read `archive/CHATGPT_PROMPT_LIBRARY.md` and the specialist protocol relevant to the task.
 5. For Ministerio Fiscal / justice work, also read `archive/HANDOVER_MF_FISCALIA_FIRST_FRAME_JUSTICE_MAP_15AUG2026.md` and `archive/INSTITUTIONAL_MESSAGE_DISCOVERY_PROTOCOL_15AUG2026.md`.
 6. For CGPJ, judicial-governance, judge-conduct, inspection or disciplinary work, also read `archive/CGPJ_JUDICIAL_GOVERNANCE_PROTOCOL_15AUG2026.md` and `archive/CGPJ_ISSUES_AND_VERIFICATION_REGISTER_15AUG2026.md`, then the judge/LAJ/AC/AP ledgers relevant to the issue.
-7. For continuous Gmail/Drive/Library research, follow the repository continuous-intelligence protocol added in PR #31; preserve NEW→OLD and OLD→NEW propagation rather than producing isolated prose.
+7. For media-accountability, publication/unpublishing, journalist-contact or press-release work, read the relevant media ledgers before editing public pages. At minimum for the current tracks: `archive/CANARIAS7_FAJARDO_MEDIA_TRACEABILITY_15AUG2026.md` and `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`. Treat press releases as party-authored pitches, later querellas as pleadings unless independently corroborated, and newsroom decisions as editorial facts only to the extent supported by native communications.
+8. For continuous Gmail/Drive/Library research, follow the repository continuous-intelligence protocol added in PR #31; preserve NEW→OLD and OLD→NEW propagation rather than producing isolated prose.
 
 ## Source hierarchy
 Prefer, in order: signed primary documents; court/institutional originals; registered submissions and receipts; direct correspondence; registry/corporate records; contemporaneous third-party material; internal reconstructions; ChatGPT-generated analysis. ChatGPT prose never silently outranks primary evidence.
@@ -29,6 +30,8 @@ Do not edit `main` directly for substantive changes. Use a branch and PR. Before
 Never convert receipt into examination, referral into resolution, chronology into causation, institutional knowledge into personal knowledge, adverse decisions into bias, procedural error into prevaricación, or company-group labels into proof of shared intent/knowledge. Do not describe testimony as clandestine unless concealment is evidenced. Name people only in relation to sourced acts/roles.
 
 For CGPJ work, always separate legal-merits/appeal issues from judicial discipline, court-functioning/inspection, LAJ/office functions, criminal allegations and matters outside CGPJ competence. An archive proves a procedural outcome, not automatically the falsity of every underlying factual allegation.
+
+For media work, never convert a press pitch into proof, a journalist's decision not to publish into censorship, a third-party contact into improper influence, or an article's disappearance into proof of pressure. Preserve the exact pitch, verification exchange, document transmission, editorial outcome and later pleading as separate evidential layers.
 
 ## Continuity gate
 Before ending a major session, ask: **If this conversation disappeared now, could a fresh ChatGPT recover the material intelligence from `main`?** If not, update the relevant canonical repository record before finishing.
