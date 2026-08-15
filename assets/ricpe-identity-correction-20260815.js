@@ -15,7 +15,7 @@
     if (heroEyebrow) {
       heroEyebrow.textContent = isSpanish
         ? 'Registro unitario · actualizado 15 agosto 2026'
-        : 'Unified record · updated 15 August 2026';
+        : 'Unitary record · updated 15 August 2026';
     }
 
     const nav = document.querySelector('.main-nav');
@@ -23,7 +23,7 @@
       const link = document.createElement('a');
       link.href = `#${sectionId}`;
       link.textContent = isSpanish ? 'Identidades' : 'Identities';
-      const responsibilityLink = nav.querySelector(isSpanish ? 'a[href="#responsabilidad"]' : 'a[href="#responsibility"]');
+      const responsibilityLink = nav.querySelector(isSpanish ? 'a[href="#responsabilidad"]' : 'a[href="#accountability"]');
       nav.insertBefore(link, responsibilityLink || nav.querySelector('.nav-update'));
     }
 
@@ -54,7 +54,7 @@
 
     if (document.getElementById(sectionId)) return;
 
-    const responsibility = document.getElementById(isSpanish ? 'responsabilidad' : 'responsibility');
+    const responsibility = document.getElementById(isSpanish ? 'responsabilidad' : 'accountability');
     const genealogy = document.getElementById(isSpanish ? 'genealogia' : 'genealogy');
     if (!responsibility && !genealogy) return;
 
@@ -100,7 +100,7 @@
 
         <aside class="pressure-maxim" role="note" aria-label="Corrección de identidad Gerardo Acosta">
           <strong>Corrección controlada:</strong>
-          <span>Las informaciones publicadas el 10–11 de marzo de 2024 se refieren al fundador y antiguo presidente <b>Gerardo Nicanor Acosta Armas</b>. Un titular utilizó la forma «Gerardo Acosta Matos», pero la historia societaria oficial distingue a Gerardo Nicanor de su hijo <b>Gerardo Zacarías Acosta Matos</b>. No se ha localizado en este rastreo un obituario fiable a nombre exacto de Gerardo Zacarías; esa ausencia no prueba por sí sola que viva, conserve capacidad o siga en el cargo.</span>
+          <span>Las informaciones publicadas el 10–11 de marzo de 2024 se refieren al fundador y antiguo presidente <b>Gerardo Nicanor Acosta Armas</b>. Un titular utilizó la forma «Gerardo Acosta Matos», pero la historia societaria oficial distingue a Gerardo Nicanor de otra persona, <b>Gerardo Zacarías Acosta Matos</b>. No se ha localizado en este rastreo un obituario fiable a nombre exacto de Gerardo Zacarías; esa ausencia no prueba por sí sola que viva, conserve capacidad o siga en el cargo.</span>
         </aside>
 
         <div class="control-table-wrap" role="region" aria-label="Matriz de identidad, estado vital y custodia" tabindex="0">
@@ -148,7 +148,7 @@
 
         <aside class="pressure-maxim" role="note" aria-label="Gerardo Acosta identity correction">
           <strong>Controlled correction:</strong>
-          <span>Reports published on 10–11 March 2024 concerned founder and former president <b>Gerardo Nicanor Acosta Armas</b>. One headline used “Gerardo Acosta Matos”, but the official corporate history distinguishes Gerardo Nicanor from his son <b>Gerardo Zacarías Acosta Matos</b>. This scan found no reliable exact-name obituary for Gerardo Zacarías; that absence does not itself prove that he is alive, capable or still in office.</span>
+          <span>Reports published on 10–11 March 2024 concerned founder and former president <b>Gerardo Nicanor Acosta Armas</b>. One headline used “Gerardo Acosta Matos”, but the official corporate history distinguishes Gerardo Nicanor from a different person, <b>Gerardo Zacarías Acosta Matos</b>. This scan found no reliable exact-name obituary for Gerardo Zacarías; that absence does not itself prove that he is alive, capable or still in office.</span>
         </aside>
 
         <div class="control-table-wrap" role="region" aria-label="Identity, vital status and custody matrix" tabindex="0">
