@@ -1,0 +1,21 @@
+# JUDICIAL KNOWLEDGE MATRIX — Concurso 36/2012
+
+Evidence cut-off: 15 Aug 2026. Scope: decisions attributed by primary record to Magistrado-Juez Alberto López Villarrubia and the institutional record of Mercantil nº1. This is not a finding of prevaricación.
+
+| Date | Material issue | Documented judicial act / knowledge point | What it does NOT by itself establish | Next source required |
+|---|---|---|---|---|
+| 26 Jun 2018 | appeal affected conditions of proposed dación to CAM | court suspended realization of specified fincas because appeal could materially change conditions | does not decide every physical-control/access act | AC proposal, full appeal package, service/compliance record |
+| 22 Oct 2018 onward | testimonies / criminal-court interface | office ordered testimony of 26/06/2018 to Arrecife and delivered requested testimonies to AC | does not establish downstream use or concealment | issued testimonies + service logs |
+| 24 Oct 2019 | ob rem unlinking / sale | primary record says operation had occurred without prior judicial authorization and later authorization/convalidation was refused | does not automatically determine nullity or every later consequence | full order + post-order registry/accounting/corrective chain |
+| 12 May 2020 | credit/interest and scope | later complaint material identifies tension between res judicata treatment and a future adversarial determination | party characterization must be tested against complete primary order | full order, immediate filings, any later quantification decision |
+| Jun/Dec 2020 | warnings by LPB/Aweswell | working corpus says court was expressly asked to address definitive calculation/classification and impact on offer threshold | does not establish legal correctness of those submissions | LexNET filed versions, annexes, service and judicial disposition |
+| 18 Jan 2021 | requested clarification | working corpus says clarification was refused as revisiting earlier decisions | does not prove deliberate closure | full order + source decision allegedly making calculation final |
+| May-Oct 2021 | bidding / improvement process | court records show competitive process and later confirmation/finalization | does not prove inequality or invalidity | complete bidding file, Ottawa/CAM offers, deposits, hearing/video, data-room/access record |
+| 26 Jan 2022 | implementation/complement | order forms part of testimony package later requested by CAM | does not itself prove every deed recital or accounting figure | full order + CAM request + AC calculation + deed comparison |
+| 21 Feb 2022 | deed implementation | downstream deed signed by AC implemented judicially-authorized structure | do not attribute deed figures to judge unless fixed by court | deed, notarial annexes, judicial calculation, registry entries |
+
+## Strongest question
+For each material patrimonial step from 2018 to 2022, can the court identify (1) the exact filing/evidence before it, (2) the issue legally submitted, (3) the factual/quantitative premise expressly adopted, (4) what was left undecided, and (5) the later judicial act that authorized or explained the next irreversible step?
+
+## Control rule
+Silence in an order is not proof the court lacked knowledge. Presence of a document in the docket is not proof the judge personally adopted every proposition in it. The certified electronic index and complete orders prevail over party summaries.
