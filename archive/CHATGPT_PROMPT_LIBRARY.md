@@ -44,5 +44,8 @@ Select every high-risk claim on the public website involving ownership, creditor
 ## P14 — Bilingual parity audit
 Compare ES/EN pairs fact by fact: names, dates, legal status, evidential caveats, routes, links, page structure and strength of wording. No language may state a stronger accusation than the other unless the difference is explicitly intentional and sourced.
 
+## P15 — CGPJ / judicial-governance accountability refresh
+Read `archive/CGPJ_JUDICIAL_GOVERNANCE_PROTOCOL_15AUG2026.md` and `archive/CGPJ_ISSUES_AND_VERIFICATION_REGISTER_15AUG2026.md`. Search connected Gmail/Drive/Files and current `main` for new material concerning DI 169/2026, Alzada 286/2026, the Promotor de la Acción Disciplinaria, Comisión Permanente, Servicio de Inspección, Comisión Disciplinaria, the judge, LAJ/office boundary, and any new CGPJ response. Do not restrict the scan to judicial decisions: include documented appearance-of-impartiality concerns, witness material, third-party access/contact assertions, court-functioning/delay, supervision of the AC and cumulative notice. Classify every item by evidential status and competence: discipline, inspection, legal merits/appeal, LAJ/office, criminal, or outside CGPJ remit. Search for exculpatory/contradictory material. Update the CGPJ chronology/issues register, maintenance/missing/correction registers and bilingual open-message pages only where evidence warrants. Preserve the five-question finite-verification format and correction/right-of-reply.
+
 ## Universal close-out
 Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.
