@@ -18,7 +18,8 @@
             load('police-regage-drilldown-20260815.js?v=20260815a', () => {
               load('police-context-explainer-20260815.js?v=20260815a', () => {
                 load('book-foundation-20260815.js?v=20260815b', () => {
-                  load('books-portfolio-20260815.js?v=20260815a');
+                  load('books-portfolio-20260815.js?v=20260815c');
+                  load('book-cover-router-20260815.js?v=20260815a');
                 });
               });
             });
