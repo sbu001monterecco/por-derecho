@@ -4,9 +4,10 @@
 **Fecha:** 15 de agosto de 2026  
 **Lugar:** San Cristóbal de La Laguna  
 **Materia:** Concurso Ordinario 36/2012 — testimonio judicial, operación de 2018 y posterior no convalidación  
-**Estado:** REVISADA — pendiente de firma controlante
+**Estado:** REGISTRADA Y UTILIZABLE — no firmada  
+**Fuente primaria:** cuenta de Patricia Domínguez y documentos identificados en la propia declaración
 
-> **Estado documental:** versión de repositorio preparada para preservar y apoyar la trazabilidad pública del asunto. La versión firmada, cuando se formalice, debe conservarse como documento de control. Esta transcripción no sustituye los documentos judiciales, notariales o registrales originales.
+> **Estado documental y regla de uso:** versión de repositorio preparada para preservar y apoyar la trazabilidad pública del asunto. Puede utilizarse como registro fechado, fuente de memoria, indicio, base de preservación y mapa de verificación aunque no esté firmada. No debe describirse como firmada, jurada o ratificada. Una versión firmada posterior, si existe, será la copia formal controlante y se conservará sin borrar ésta.
 
 ## Declaración
 
@@ -64,7 +65,19 @@ Para mí, la importancia de estos hechos no reside solamente en la conducta del 
 
 Considero necesario conocer exactamente qué pidió el Administrador Concursal, qué testimonio se expidió, qué contenía, a quién se entregó, qué finalidad constaba, qué documentos llegaron al notario y al Registro, y cuándo y cómo tuvo conocimiento posterior la Oficina Judicial del uso que se había dado al testimonio.
 
-**No afirmo que la expedición del testimonio fuera por sí misma irregular.** Afirmo que la secuencia **solicitud → expedición → entrega → utilización notarial → no convalidación posterior** constituye, a mi juicio, un hecho objetivo que merece ser reconstruido íntegramente y no fragmentado.
+**No afirmo que la expedición del testimonio fuera por sí misma irregular.** Afirmo que la secuencia **solicitud → expedición → entrega → utilización notarial → no convalidación posterior** constituye, a mi juicio, un hecho que merece ser reconstruido íntegramente y no fragmentado.
+
+## Acciones derivadas
+
+| ID | Acción | Custodio o fuente | Resultado esperado | Prioridad | Estado |
+|---|---|---|---|---|---|
+| D001-A1 | Obtener el testimonio exacto expedido y su constancia de entrega | Oficina Judicial | Copia certificada, CSV y metadatos | Alta | ABIERTA |
+| D001-A2 | Obtener el protocolo y todos los anexos de la escritura de 28 noviembre 2018 | Notaría / otorgantes | Copia autorizada e inventario documental | Alta | ABIERTA |
+| D001-A3 | Reconstruir la presentación y calificación registral | Registro de la Propiedad | Certificación histórica y títulos presentados | Alta | ABIERTA |
+| D001-A4 | Trazar bancaria y contablemente los €400.000 | CAM, AC, bancos y contabilidad concursal | Conciliación origen–destino–contabilización | Alta | ABIERTA |
+| D001-A5 | Obtener expediente íntegro de convalidación y Auto de 24 octubre 2019 | Oficina Judicial | Copias certificadas y cronología | Alta | ABIERTA |
+
+El seguimiento central figura en [`ACTION_REGISTER.md`](./ACTION_REGISTER.md).
 
 ## Documentos que deben preservarse y verificarse
 
@@ -87,6 +100,8 @@ Declaro que lo expuesto refleja fielmente, según mi leal saber y entender, mi c
 **Patricia Domínguez**  
 San Cristóbal de La Laguna  
 15 de agosto de 2026
+
+> La firma no es requisito para el uso de esta versión en el repositorio. Si posteriormente se incorpora una copia firmada, se identificará como versión formal controlante.
 
 ---
 
