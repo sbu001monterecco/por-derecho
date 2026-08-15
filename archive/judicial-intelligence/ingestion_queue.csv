@@ -1,0 +1,23 @@
+priority,item,proceeding,date_needed,source_needed,reason,status
+P0,Full certified court file,Concurso 36/2012,2012-present,"All signed autos/sentencias/decretos/diligencias, indexed chronologically","Core judicial provenance and evidence-before-court reconstruction",OPEN
+P0,Signed Auto,Diligencias Preliminares 1041/2017,2017-12-19,"Primary admission/disclosure order","Fix historical judge, precise disclosure ordered and annexes",OPEN
+P0,Signed Decreto,Diligencias Preliminares 1041/2017,2018-03-05,"Primary discontinuance/archive decree","Determine signatory, party request and exact legal effect",OPEN
+P0,Signed Auto,Concurso 36/2012,2018-02-08,"Promontoria→CAM substitution / credit-litigiousness treatment","Fix exact holding and evidence before court",OPEN
+P0,Signed protective/suspension resolution,Concurso 36/2012,2018-06-26,"Primary order plus parties' preceding submissions","Define legal effect after 7 June 2018 control event",OPEN
+P0,Signed Auto,Concurso 36/2012,2019-10-24,"Primary non-convalidation decision","Define exact treatment of 28 Nov 2018 transaction",OPEN
+P0,Signed Auto,Concurso 36/2012,2021-02-24,"Primary liquidation/preservation decision","Separate procedural ruling from unresolved factual merits",OPEN
+P0,Full 2021 improvement-process court file,Concurso 36/2012,2021,"Notices, data room/access, bids, deposits, hearing, proof of funds, orders","Reconstruct equality/access/deliverability and what judge actually saw",OPEN
+P0,Signed adjudication resolution,Concurso 36/2012,2022-01-26,"Primary adjudication Auto and calculations","Fix conditions, asset perimeter, credit bridge and sobrante",OPEN
+P0,Deed + court linkage,Concurso/Arrecife,2022-02-21,"Dación deed, testimonios, registry/court references","Bridge judicial adjudication to transfer instrument",OPEN
+P0,Termination resolution,Arrecife mortgage execution,2023-08-18,"Signed court/LAJ resolution + satisfaction account","Determine art. 570/other basis, creditor satisfied and scope",OPEN
+P0,Complete appeal file,Calificación appeal 36/2012,2023-present,"Rollo, section, panel, grounds, opposition, current status","First-instance judgment is not final; identify appellate decision-makers",OPEN
+P0,Complete appeal files,AC separation/removal,all dates,"Orders, appeal rolls, AP panels and outcomes","Separate AC-accountability appellate track from calificación",OPEN
+P0,Signed Auto,ETJ 163/2020,2026-06-19,"Primary suspension-denial order","Fix judge/signature, evidence before court and exact reasoning",OPEN
+P0,Signed Providencia,ETJ 163/2020,2026-06-22,"Primary post-order providencia","Fix signatory and exact procedural effect",OPEN
+P0,Complete criminal docket,DP 748/2026,2026,"Initial complaint, provisional archive, reform appeal, Fiscalía report, orders, appeal route","Reconstruct what criminal court saw and why",OPEN
+P0,Complete criminal docket,DP 1901/2026,2026,"Complaint, pre-procedural DIP 2/26 material, 12 Jul providencia, Fiscalía report, subsequent orders","Current core private-actor track",OPEN
+P0,Signed provisional-dismissal Auto,DP 1956/2026,2026-07,"Primary order and notification metadata","Fix exact date, judge, premise and limited scope",OPEN
+P0,Complete reform/appeal docket,DP 1956/2026,2026,"Recurso, Fiscalía/court responses, AP route if any","Track whether documentary phase reopens",OPEN
+P1,TSJ Canarias complete docket,2026 judicial complaint,2026,"Registration, panel, ponente, orders/decrees, referrals","Distinguish allegations from actual TSJ merits/competence treatment",OPEN
+P1,CGPJ 169/2026 full governance file,Judicial-governance track,2026,"Complaint, decisions, appeal under LOPJ and operative reasoning","Not a court merits file but relevant to institutional traceability",OPEN
+P1,Historical judge/LAJ appointment chain,all long-running proceedings,2012-present,"CGPJ/BOE appointments + signed resolutions","Avoid attributing historical acts to current office-holders",OPEN
