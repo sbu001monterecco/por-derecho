@@ -11,6 +11,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | Mercantil nº1 / judge | ES/EN court and judge pages | judicial knowledge matrix | LIVE | complete 2020–22 evidence-before-court matrix; primary orders |
 | Administrador Concursal | ES/EN AC page | AC accounting bridge | LIVE | reproducible credit→interest→€400k→dación→cash→sobrante accounting bridge |
 | AP Las Palmas Sección 4ª | ES/EN appellate page | appellate track | LIVE | full RPL 2523/2025, 3304/2025, 3319/2025 transmitted records/current status |
+| CGPJ / judicial governance | `/es/mensaje-abierto-cgpj/` + `/en/open-message-cgpj/` | CGPJ governance protocol + issues/verification register | LIVE / evidence-first | complete DI 169/2026 administrative record; Alzada 286/2026 current/final decision; identify what was actually examined; any Promotor/Inspection/Comisión Permanente reports |
 | Acosta Matos perimeter | ES perimeter page | dated control chain | LIVE | title/authority/control/benefit evidence by entity/date; preserve legal-person separation |
 | RIC Private Equity Investment Partners, SCR, S.A. (RICPE) | ES/EN accountability page | RICPE evidence chain | LIVE | governance/due-diligence originals, investor versions, responses to Aug 2026 requirement |
 | CNMV | ES/EN CNMV-RICPE verification page | institutional outward-wave ledger | LIVE / strengthened with CNMV primary source | supervisory corpus index; whether July 2021 docs later incorporated/reassessed; corrective/referral record |
@@ -25,7 +26,6 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | ICAM | institutional records | professional track | BUILD NEXT | Preliminary File 434/26, later-act treatment |
 | CCACM | appellate professional track | professional track | BUILD NEXT | Exp. 193/2026 full appeal/status |
 | COA Lanzarote / COAGC | professional records | architecture-professional track | BUILD NEXT | complete visado/mandate/authority/archive chain |
-| CGPJ | remedy track | complaint 169/2026 | BUILD NEXT | current decision/status and scope of review |
 | Books / publishing | `/en/books/`, `/es/libros/` | `archive/book/` living files | LIVE / separate editorial system | keep evidence→book intelligence→manuscript layers separate |
 
 ## Maintenance rules
