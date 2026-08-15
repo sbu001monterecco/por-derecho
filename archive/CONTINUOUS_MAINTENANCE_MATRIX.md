@@ -4,6 +4,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 
 | Track | Canonical public surface / hub | Canonical internal control | Current state | Highest-value next evidence/action |
 |---|---|---|---|---|
+| Group recovery / restitution / damages | `/es/objetivos-recuperacion-restitucion/` + `/en/recovery-restitution-objectives/` | `archive/GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` + `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md` | LIVE / controlling strategic parent | populate event-by-event causation/remedy/quantum cells from primary evidence; propagate recovery framing to all affected actor pages without strengthening allegations |
 | Ministerio Fiscal | ES/EN open-message + Justice Map | MF handover + publication basis | LIVE / evidence-first | complete DI 248; DP 332 final order; 2019 rent expert; cumulative-review evidence |
 | DP 1901/2026 | `/es/dp-1901-2026/` | DP1901 status record | LIVE / current criminal verification node | signed Fiscalía report; subsequent judicial resolution; exact transmitted package |
 | Concurso 36/2012 hub | ES/EN institutional accountability hub | judicial intelligence archive | LIVE | certified whole-file index and missing primary orders |
@@ -40,6 +41,10 @@ Do not describe the Sun Park / MYND Yaiza patrimonial problem as merely historic
 Where a documentary bridge exists, also trace the separate public-finance layer: RIC/private capital → regional incentives → EU co-financing representation → controls/current operation. Do not confuse the foreign-investor plane with EU-financial interests and do not infer double funding, subsidy fraud or EU-budget loss without source-specific proof.
 
 Temporal control: **historical originating act ≠ extinguished consequence**. Audit through present title, Registry, possession/access, works, exploitation, revenue, value, financing/support conditions and remedies.
+
+## Recovery-control rule — 15 Aug 2026
+
+Across AC, court/judge, LAJ, private-actor and institutional tracks, use `GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` as the strategic parent. The public and internal question is not punishment as an autonomous objective; it is what must be proved, corrected, restored, accounted for or compensated to recover the lawful patrimonial position. Accountability remains actor-specific and evidence-dependent.
 
 ## Maintenance rules
 - `LIVE` means a public route exists; it does not mean evidentially complete.
