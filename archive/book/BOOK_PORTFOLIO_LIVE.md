@@ -66,6 +66,16 @@ These are separate books only insofar as each continues to earn a distinct reade
 
 **Publication boundary:** do not describe legitimate NPL/special-situations activity itself as an “underworld” in a criminal sense. `Underworld` is a narrative metaphor for a market largely invisible to ordinary borrowers/readers. Distinguish lawful investment, hard bargaining, disputed conduct and proven illegality.
 
+## Provisional Book 6 — 4 Green Houses, One Red Hotel [working title]
+
+**Role:** focused professional-accountability / adviser-to-creditor investigation centred on Cuatrecasas.  
+**Core question:** what happens when a law firm that knew the rescue, ownership, financing and vulnerability of an asset later becomes a creditor executing against an entity inside that same perimeter?  
+**Narrative hinge:** Matkator as both strategic property-holder in the Sun Park perimeter and later enforcement debtor.  
+**Canonical file:** `FOUR_GREEN_HOUSES_ONE_RED_HOTEL_LIVE_MANUSCRIPT.md`.  
+**Publication boundary:** the title is provocative, but the manuscript must not state collusion, intentional procedural fraud, misuse of confidential information, professional misconduct or an Acosta Matos-linked remate beneficiary as fact without proof. Cuatrecasas's strongest foreseeable defence must remain inside the book.
+
+**Portfolio status:** provisional standalone book. It should not be added to the public five-book shelf until the author decides whether it earns a separate commercial reader promise or should remain a major strand/derived work within `Reason to Believe` or `Justice in Pieces`.
+
 ## Portfolio separation
 
 - `Reason to Believe` = what happened and what it meant to live through it.
@@ -73,7 +83,14 @@ These are separate books only insofar as each continues to earn a distinct reade
 - `The SunRockers` = what the place/community was and what people remember.
 - `Justice in Pieces` = what the case may reveal about institutions and fragmentation.
 - `Special Situations` = the financial market that turns defaulted obligations and distressed claims into investment opportunities and sometimes routes to control/value.
+- `4 Green Houses, One Red Hotel` = the focused question of professional continuity, mandate protection, withdrawal/handover and later adverse enforcement by a former adviser.
+
+## Visual-integrity rule added 15 August 2026
+
+The five current public book images are **not approved covers**. They were implemented from existing website/evidence assets and must be treated as provisional placeholders until five explicit cover briefs are approved. See `FIVE_BOOK_IMAGE_FAILURE_AUDIT_20260815.md`.
+
+No future book image should be selected merely because it is relevant to the underlying case. Cover art must express the book's reader promise, work at thumbnail scale, remain distinct from the other books, and be reviewed as part of the complete portfolio before publication.
 
 ## Continuous-update rule
 
-Every future material scan should ask whether it changes one or more of these five books. Do not force all findings into `Reason to Believe`. Update the relevant portfolio/book intelligence and only create manuscript prose when the source base and narrative need justify it.
+Every future material scan should ask whether it changes one or more books in this portfolio. Do not force all findings into `Reason to Believe`. Update the relevant portfolio/book intelligence and only create manuscript prose when the source base and narrative need justify it.
