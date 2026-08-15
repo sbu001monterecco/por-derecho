@@ -16,10 +16,11 @@ The project deliberately does not rely on a single ChatGPT conversation as its i
 4. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan, milestones, decision gates and KPIs.
 5. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — Reason to Believe, Fundación Por Derecho, Havidia and American AI Justice boundaries.
 6. `BOOK_PROMOTION_AND_COVER.md` — book title/subtitle, recovered cover concepts, Amazon/retail positioning, promotional copy, audience, formats/rights and launch-page architecture.
-7. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — Canary Islands/Las Palmas comparative research, expert/literature map, NPL/servicing themes, audiences and other open directions that must not be lost.
-8. `REUSABLE_PROMPTS.md` — master corpus/token audit, One Asset / One History, publication red-team, book-cover and fresh-thread recovery prompts.
-9. `DELETION_AND_CONTINUITY_GATE.md` — what must be true before any source ChatGPT thread is treated as disposable.
-10. Public Knowledge Project and book pages: `/en/knowledge-project/`, `/es/proyecto-conocimiento/`, `/en/book/`, `/es/libro/`.
+7. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — Sun Park Living / SunRockers human history, Playa Blanca narrative, Adam J. Jackson / The Ethos reference and memory-collection/publication boundaries.
+8. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — Canary Islands/Las Palmas comparative research, expert/literature map, NPL/servicing themes, audiences and other open directions that must not be lost.
+9. `REUSABLE_PROMPTS.md` — master corpus/token audit, One Asset / One History, publication red-team, book-cover and fresh-thread recovery prompts.
+10. `DELETION_AND_CONTINUITY_GATE.md` — what must be true before any source ChatGPT thread is treated as disposable.
+11. Public Knowledge Project and book pages: `/en/knowledge-project/`, `/es/proyecto-conocimiento/`, `/en/book/`, `/es/libro/`.
 
 ## Core reading rule
 
@@ -52,6 +53,7 @@ Do not allow repetition across drafts, emails, AI reports or webpages to convert
 
 - One Asset / One History evidential reconstruction.
 - Sun Park / LPB / Matkator / credit / title / control / money / decisions / institutional knowledge.
+- Sun Park Living / SunRockers — lived hospitality/community history and memory collection.
 - Reason to Believe / Razón para creer — narrative and publishing project.
 - Fundación Por Derecho — planned public-interest pathway.
 - The Knowledge Project — methodology, corpus, AI transparency and knowledge mapping.
@@ -74,8 +76,8 @@ Those materials can inform internal work where lawful, but their existence shoul
 
 ## For a new ChatGPT thread
 
-Start by reading the nine files above and the live Knowledge Project/book pages. Then inspect the repository's relevant source pages before answering substantive case questions. Where a question depends on Gmail, Drive, OneDrive or another connected private source, search that source rather than assuming this public handover contains the underlying evidence.
+Start by reading the ten files above and the live Knowledge Project/book pages. Then inspect the repository's relevant source pages before answering substantive case questions. Where a question depends on Gmail, Drive, OneDrive or another connected private source, search that source rather than assuming this public handover contains the underlying evidence.
 
 ## Continuity objective
 
-A new thread should be able to recover the project's **method, goals, architecture, principal working theses, resource strategy, publication boundaries, book identity/promotion architecture, open research directions and next actions** without relying on an earlier conversation. It should still return to the primary sources for factual verification.
+A new thread should be able to recover the project's **method, goals, architecture, principal working theses, resource strategy, publication boundaries, book identity/promotion architecture, SunRockers human story, open research directions and next actions** without relying on an earlier conversation. It should still return to the primary sources for factual verification.
