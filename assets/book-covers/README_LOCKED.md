@@ -1,0 +1,1 @@
+LOCKED: use only the exact approved six-cover family dated 2026-08-15. No regeneration or substitution without explicit user approval.
