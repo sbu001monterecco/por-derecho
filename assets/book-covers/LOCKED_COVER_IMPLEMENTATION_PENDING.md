@@ -1,0 +1,1 @@
+Implementation branch for the approved locked six-cover image set. Binary web assets are being replaced with the approved masters; no redesign is authorised.
