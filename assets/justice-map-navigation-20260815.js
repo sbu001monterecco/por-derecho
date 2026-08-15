@@ -4,22 +4,37 @@
   const isJustice = path.includes('/justicia-registro-institucional/') || path.includes('/justice-institutional-record/');
   const target = isEs ? '/por-derecho/es/justicia-registro-institucional/' : '/por-derecho/en/justice-institutional-record/';
   const openMessage = isEs ? '/por-derecho/es/carta-abierta-ministerio-fiscal/' : '/por-derecho/en/open-letter-public-prosecution-service/';
+  const cgpjHub = isEs ? '/por-derecho/es/mensaje-abierto-cgpj/' : '/por-derecho/en/open-message-cgpj/';
   const label = isEs ? 'Mapa de Justicia' : 'Justice Map';
 
-  // Institutional mark routing: the Ministerio Fiscal mark is an identifier, not an endorsement.
-  // One click opens the neutral Justice/MF hub; the open message is featured there as a separate editorial layer.
+  // Institutional mark routing: official marks identify the institution; editorial analysis remains clearly labelled on the destination page.
   document.querySelectorAll('a.identity-logo-card').forEach(card => {
-    const img = card.querySelector('img[src*="ministerio-fiscal.png"]');
-    if (!img) return;
-    card.href = target;
-    card.setAttribute('aria-label', isEs
-      ? 'Abrir el centro de Justicia y Ministerio Fiscal'
-      : 'Open the Justice and Public Prosecution Service hub');
-    card.dataset.mfHubLink = 'true';
-    const copy = card.querySelector('.identity-logo-copy small');
-    if (copy) copy.textContent = isEs
-      ? 'Mapa, expedientes, respuestas documentadas y mensaje abierto'
-      : 'Map, proceedings, documented responses and open message';
+    const mfImg = card.querySelector('img[src*="ministerio-fiscal.png"]');
+    if (mfImg) {
+      card.href = target;
+      card.setAttribute('aria-label', isEs
+        ? 'Abrir el centro de Justicia y Ministerio Fiscal'
+        : 'Open the Justice and Public Prosecution Service hub');
+      card.dataset.mfHubLink = 'true';
+      const copy = card.querySelector('.identity-logo-copy small');
+      if (copy) copy.textContent = isEs
+        ? 'Mapa, expedientes, respuestas documentadas y mensaje abierto'
+        : 'Map, proceedings, documented responses and open message';
+      return;
+    }
+
+    const cgpjImg = card.querySelector('img[src*="cgpj.png"]');
+    if (cgpjImg) {
+      card.href = cgpjHub;
+      card.setAttribute('aria-label', isEs
+        ? 'Abrir el centro de gobierno judicial y mensaje abierto al CGPJ'
+        : 'Open the judicial-governance hub and open message to the CGPJ');
+      card.dataset.cgpjHubLink = 'true';
+      const copy = card.querySelector('.identity-logo-copy small');
+      if (copy) copy.textContent = isEs
+        ? 'Qué es el CGPJ · Promotor · Inspección · DI 169/2026 · Alzada 286/2026'
+        : 'What the CGPJ does · Promoter · Inspection · DI 169/2026 · Appeal 286/2026';
+    }
   });
 
   if (!isJustice) {
@@ -59,7 +74,7 @@
     const text = isEs
       ? '<strong>Centro Justicia + Ministerio Fiscal:</strong> vea la secuencia completa de conocimiento, respuesta, remisiones y preguntas abiertas; el mensaje abierto está destacado al entrar.'
       : '<strong>Justice + Public Prosecution hub:</strong> see the full sequence of knowledge, response, referrals and open questions; the open message is featured on entry.';
-    box.innerHTML = `<div class="shell"><p style="margin:0">${text} <a href="${target}" style="font-weight:800">${isEs ? 'Abrir centro →' : 'Open hub →'}</a> · <a href="${openMessage}" style="font-weight:800">${isEs ? 'Mensaje abierto →' : 'Open message →'}</a></p></div>`;
+    box.innerHTML = `<div class="shell"><p style="margin:0">${text} <a href="${target}" style="font-weight:800">${isEs ? 'Abrir centro →' : 'Open hub →'}</a> · <a href="${openMessage}" style="font-weight:800">${isEs ? 'Mensaje abierto MF →' : 'MF open message →'}</a> · <a href="${cgpjHub}" style="font-weight:800">${isEs ? 'CGPJ: gobierno judicial →' : 'CGPJ: judicial governance →'}</a></p></div>`;
     main.insertBefore(box, main.firstChild);
   }
 })();
