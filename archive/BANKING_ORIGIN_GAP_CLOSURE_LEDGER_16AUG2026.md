@@ -19,9 +19,9 @@ Evidence labels used here:
 
 ## 2. Material findings
 
-### BO-001 — acquisition from Multimatrix
+### BO-001 — acquisition from Multimatrix and UK-company continuity
 
-**Classification:** VERIFIED FACT — PRIMARY DOCUMENT.
+**Classification:** VERIFIED FACT — PRIMARY DOCUMENT / VERIFIED FACT — PUBLIC OFFICIAL SOURCE.
 
 The Spanish deed titled *Escritura de publicidad del cambio de socio único* is dated **3 January 2012**, protocol 18. It records that **Monterecco Sun Park Limited** had acquired the whole of LPB's share capital from **Multimatrix Limited** under a Tel Aviv notarial deed dated **1 December 2011**, duly apostilled.
 
@@ -29,15 +29,20 @@ The same instrument records Gil Marer's appointment as incoming sole director pu
 
 The deed was presented to the Lanzarote Mercantile Registry on **11 January 2012**. The official BORME entry identifies Monterecco Sun Park Limited as LPB's sole shareholder and gives the registry date as **14 February 2012**.
 
-**Correction:** do not describe 3 January as the BORME or registration date. Distinguish:
+Companies House confirms that Monterecco Sun Park Limited was the former registered name of **Aweswell Limited**, company number **07716847**. The members passed the name-change resolution on **2 June 2014** and Companies House registered and certified the name Aweswell Limited on **3 June 2014**. This was a registered change of name of the existing UK company—not a transfer of LPB shares, novation, new investor or successor company.
 
-1. purchase deed — 1 December 2011;
-2. management decision — 2 January 2012;
-3. Spanish publicity deed — 3 January 2012;
-4. registry presentation — 11 January 2012;
-5. registry/BORME data date — 14 February 2012.
+**Correction:** distinguish:
 
-**Open:** the complete Aweswell–Monterecco economic, financing and control chain, consideration, valuation, capitalisation and handover file.
+1. UK company incorporated as Monterecco Sun Park Limited — 25 July 2011;
+2. LPB share-purchase deed — 1 December 2011;
+3. management decision — 2 January 2012;
+4. Spanish publicity deed — 3 January 2012;
+5. registry presentation — 11 January 2012;
+6. Spanish registry/BORME data date — 14 February 2012;
+7. UK special resolution changing the company name — 2 June 2014; and
+8. Companies House registration/certificate of Aweswell Limited — 3 June 2014.
+
+**Open:** acquisition consideration and payment, financing, valuation, capitalisation, beneficial/economic arrangements, wider group relationships, handover material and the exact route by which the UK name change was communicated to Spanish institutions. The legal identity of Monterecco Sun Park Limited and Aweswell Limited is not open: both names refer to company no. 07716847.
 
 ### BO-002 — February 2012 viability and refinancing plan
 
@@ -137,6 +142,14 @@ Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, rem
 
 A controlled expert/administrator comparison identifies a **€517,750.04** difference between one expert principal figure and the amount recognised by the insolvency administrator. This may matter to Concurso 36/2012 but does not automatically determine the separate Valencia claim.
 
+### BO-010 — reason for the 2014 name change
+
+**Classification:** UNRESOLVED QUESTION / EVIDENCE-BASED INFERENCE.
+
+Companies House establishes the legal mechanism and effective dates but does not state why the members selected the name Aweswell Limited. The former name was expressly project-specific—Monterecco Sun Park Limited—and later use of Aweswell as a wider holding, funding and recovery identity is consistent with a broader, less asset-specific corporate name. That is a reasonable commercial interpretation, not an official registry fact.
+
+A definitive motive requires the 2-June-2014 resolution package, board or shareholder papers, instructions to the company agent/accountant, branding documents or contemporaneous correspondence.
+
 ## 3. Corrections locked by this refresh
 
 | ID | Superseded proposition | Controlled proposition |
@@ -147,6 +160,7 @@ A controlled expert/administrator comparison identifies a **€517,750.04** diff
 | BOC-04 | Assets above liabilities disprove insolvency | The historical test concerned regular ability to meet due obligations; asset surplus and liquidity must be analysed separately. |
 | BOC-05 | The record already proves negligent advice to enter concurso | The non-privileged record proves urgency and restructuring efforts; negligence, breach and causation remain open and require a separate privilege review. |
 | BOC-06 | The direct-market strategy emerged only after the concurso | A primary plan dated 28 February 2012 already records direct/resident/long-stay and tour-operator lanes. |
+| BOC-07 | Monterecco Sun Park Limited and Aweswell Limited formed an unresolved UK-company succession chain | They are the same UK company, number 07716847. The name changed by special resolution dated 2 June 2014 and Companies House certificate dated 3 June 2014; rights, obligations and proceedings continued under the new name. |
 
 ## 4. Source-completion queue
 
@@ -154,19 +168,20 @@ A controlled expert/administrator comparison identifies a **€517,750.04** diff
 2. Native 2011 arrears/default notice and complete account ledgers.
 3. Complete Mortgage Execution 90/2012: application, title, debt certificate, liquidation, order, service, opposition, suspension and final procedural record.
 4. Property-by-property reconciliation of 158 / 159 / 166 counts.
-5. Complete Multimatrix–Monterecco–Aweswell acquisition, financing, control, valuation, consideration and handover file.
+5. Complete Multimatrix acquisition consideration, payment, financing, valuation, capitalisation, beneficial arrangements, handover file and evidence of how Aweswell Limited's 2014 name change was notified in Spain. Do not treat Monterecco and Aweswell as separate UK legal persons.
 6. Separately controlled privilege review of advice, instructions and the filing-decision chronology.
 7. Complete dated record of every attempt to conclude, reverse or narrow Concurso 36/2012 and each administrator, LAJ and judicial response.
 8. Operator-by-operator contracting, inventory, booking, payment and decline/cancellation evidence.
 9. Full banking-to-concursal-to-assignment-to-dación accounting bridge.
 10. Public-safe certified Valencia pleadings, expert reports, orders and current procedural-status proof.
 11. Duty–knowledge–capacity–causation matrix for each alleged institutional act or omission affecting non-debtors.
+12. Full Companies House name-change package and any contemporaneous internal explanation for selecting the name Aweswell.
 
 ## 5. Weighted closure assessment
 
 | Track | Weight | Closure | Reason |
 |---|---:|---:|---|
-| Acquisition/publicity chronology | 8 | 85% | purchase, publicity deed, presentation and official registry date verified; wider control/finance chain open |
+| Acquisition/publicity chronology | 8 | 92% | purchase, Spanish publicity, BORME and UK name continuity verified; consideration, finance, beneficial arrangements and notification trail remain open |
 | Banking account record | 15 | 35% | 5-Mar figures and viability plan located; native ledgers, default notice, pledged funds and complete instruments absent |
 | Morosidad/acceleration determination | 12 | 25% | cure/global distinction resolved; legal and contractual validity not resolved |
 | Execution file | 12 | 55% | primary auction diligence and schedule recovered; initiating application, certificate, liquidation and full docket open |
@@ -176,7 +191,7 @@ A controlled expert/administrator comparison identifies a **€517,750.04** diff
 | Concursal/value reconciliation | 10 | 30% | key figures and discrepancy identified; reproducible full bridge absent |
 | Extraconcursal perimeter | 8 | 65% | legal separation clear; asset/right/income mapping incomplete |
 | Institutional duty and causation | 7 | 25% | correct methodology fixed; act-by-act source matrix incomplete |
-| **Overall weighted readiness** | **100** | **43%** | sufficient for the corrected public narrative; insufficient for final liability or quantum conclusions |
+| **Overall weighted readiness** | **100** | **43%** | the company-name identity gap is closed; the principal liability and quantum gaps remain unchanged |
 
 ## 6. Public-impact decision
 
@@ -185,6 +200,8 @@ Safe public strengthening:
 - 158-property primary auction schedule;
 - exact court/proceeding/date/time;
 - 1-Dec/3-Jan/11-Jan/14-Feb acquisition-publicity sequence;
+- Companies House continuity: Monterecco Sun Park Limited was renamed Aweswell Limited, same company no. 07716847, effective 3 June 2014;
+- the name change did not transfer the LPB shareholding or create a successor company;
 - 5-Mar distinction between global and cure figures;
 - February 2012 viability/direct-market architecture;
 - assets/liabilities alongside the correct liquidity-law caveat;
@@ -193,6 +210,7 @@ Safe public strengthening:
 
 Must remain qualified or unpublished:
 
+- a definitive commercial motive for selecting the name Aweswell without contemporaneous internal evidence;
 - definitive assertion that the lender wrongfully created morosidad;
 - definitive assertion that advisers were negligent or reckless;
 - substance of privileged advice or instructions;
