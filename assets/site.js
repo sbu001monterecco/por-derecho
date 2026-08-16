@@ -120,8 +120,8 @@
   // Calificacion/recovery: force the contemporaneous rescue/finance/operation/protection counter-record into the public reading order.
   load('calificacion-documentary-counter-record-20260816.js?v=20260816a');
 
-  // Calificacion: surface the verified 2017 court-record rescue filing and the 2018 reported direct judicial notice on the ES/EN landing pages.
-  load('calificacion-prior-judicial-knowledge-20260816.js?v=20260816a');
+  // Calificacion: surface the verified 2017 court-record rescue filing and the 2018 reported direct judicial notice on the ES/EN landing pages and detail routes.
+  load('calificacion-prior-judicial-knowledge-20260816.js?v=20260816b');
 
   // Calificacion: supersede stale static wording that still described the now-complete 47-page AC report as outstanding.
   load('calificacion-source-status-correction-20260816.js?v=20260816a');
