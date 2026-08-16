@@ -91,9 +91,13 @@
         load('calificacion-allegation02-thirdparty-credits-audit-20260816.js?v=20260816a', () => {
           load('calificacion-allegation03-pink-rent-operating-audit-20260816.js?v=20260816a', () => {
             load('calificacion-allegation03-unitary-community-ac-causation-20260816.js?v=20260816a', () => {
-              load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
-                load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
-                  load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+              load('calificacion-allegation04-accounting-audit-20260816.js?v=20260816a', () => {
+                load('calificacion-allegation04-cls-bdo-correction-20260816.js?v=20260816a', () => {
+                  load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
+                    load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
+                      load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+                    });
+                  });
                 });
               });
             });
