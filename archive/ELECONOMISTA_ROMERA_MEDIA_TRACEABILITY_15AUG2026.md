@@ -10,7 +10,7 @@ The January 2025 episode is now materially better evidenced.
 
 The strongest supportable sequence is:
 
-`03 JAN LARS / MEETING POINT PRESERVATION REQUEST → 16 JAN PRESS PITCH → 17 JAN REPORTED MEETING POINT/CAM CONTRADICTION + ROMERA VERIFICATION STANDARD → 19 JAN 357/2024 MATERIAL → 20 JAN JUDGMENT RECEIVED / NON-PUBLICATION COMMUNICATED`
+`2020 DIRECT CLUB SEI COMMERCIAL EVIDENCE → 03 JAN LARS / MEETING POINT PRESERVATION REQUEST → 16 JAN PRESS PITCH → 17 JAN REPORTED MEETING POINT/CAM CONTRADICTION + ROMERA VERIFICATION STANDARD → 19 JAN 357/2024 MATERIAL → 20 JAN JUDGMENT RECEIVED / NON-PUBLICATION COMMUNICATED`
 
 The document that Javier Romera referred to on 20 January 2025 as an **“auto”** declaring the **“concurso de Sun Park”** culpable was actually **Sentencia 163/2023, 28 September 2023**, in the calificación section of **Luchy Playa Blanca, S.L.U. Concurso 36/2012**.
 
@@ -22,7 +22,9 @@ That judgment is materially adverse and must not be minimised. However:
 4. preserved records show **appeals had been filed in October/November 2023**, with appellate personation activity before January 2025; and
 5. the judgment does **not** decide the principal commercialisation, Meeting Point/FTI, RIC/RICPE, public/EU-incentive, mixed-ownership or extraconcursal-property propositions raised in the press pitch.
 
-This does not prove that elEconomista or Romera acted improperly. It creates a finite editorial-verification question: whether the same “bien atado” standard applied to the proposed story was applied to the adverse document that caused publication to stop.
+The Meeting Point commercialisation question has also strengthened materially. The controlled Drive corpus contains a February-2020 **Meeting Point Hotels corporate brochure** describing Club Sei as a Meeting Point Hotels brand and **Club Sei Lanzarote as a 315-room hotel in Playa Blanca**. A preserved **sonnenklar.TV capture dated 27 January 2020** offers Club Sei Lanzarote at **Calle Janubio 3**. A preserved historical **Sun Park website** capture identifies **Sun Park, Calle Janubio 3, Playa Blanca**. This independently supports public presentation/distribution of the same location within the FTI/Meeting Point ecosystem. It does not, by itself, establish the contracting entity, property authority, exact room/unit inventory, consummated bookings, revenue receipt or legal validity of the activity.
+
+This does not prove that elEconomista or Romera acted improperly. It creates a finite editorial-verification question: whether the same “bien atado” standard applied to the proposed story was applied to the adverse document that caused publication to stop and to the categorical claim attributed to Meeting Point that it had never commercialised the hotel.
 
 ---
 
@@ -107,7 +109,7 @@ The formal request asked Meeting Point/Lars to confirm, preserve and disclose wh
 
 It expressly requested preservation of agreements, booking/distribution records, invoices, emails and instructions.
 
-A targeted Gmail search on 16 Aug 2026 for inbound Lars/Creutzmann messages during January 2025 returned no result. **This does not prove no reply existed through another account/channel.**
+A targeted Gmail search on 16 Aug 2026 for inbound Lars/Creutzmann messages during January 2025 returned no result. The 16-Aug-2026 File Library scan located multiple preserved copies of the notice, and the Drive scan located the native Google Doc plus earlier FTI/Meeting Point compliance materials, but no Lars reply was identified in those searches. **This does not prove no reply existed through another account/channel.**
 
 #### A6. Reported Meeting Point / Laura-CAM contradiction — 17 January 2025
 
@@ -119,7 +121,7 @@ A contemporaneous record sent to Romera states, in substance:
 
 **Evidence class:** contemporaneous party record of incompatible positions attributed to third parties. It is not yet an authenticated written admission by Meeting Point or Laura Patricia Acosta Matos.
 
-**Required resolution:** native interlocutor messages/voice notes plus contracts, room inventory, bookings, distribution/channel data, invoices, commissions, payments and instructions.
+The direct commercial sources described at A9 materially corroborate the second proposition in the limited sense of **public hotel presentation/distribution**, while leaving the precise legal entity, authority, inventory, bookings and revenue chain unresolved.
 
 #### A7. Romera verification standard — 17 January 2025
 
@@ -140,7 +142,28 @@ It identifies:
 - extension of effects of a September 2024 communication concerning creditor negotiations.
 
 **Relevance:** potential preservation/disclosure/custody node for Meeting Point records and liabilities.  
-**Not proved by this source:** that Meeting Point commercialised Sun Park or concealed records.
+**Not proved by this source:** that Meeting Point concealed records or that the restructuring court had knowledge of the Sun Park commercialisation issue.
+
+#### A9. Direct Club Sei / Meeting Point commercialisation sources — 2020
+
+Drive sources located during the 16-Aug-2026 refresh include:
+
+- `MP Hotels - FTI - Club Sei Brochure January 2020.pdf` / preserved Meeting Point Hotels corporate brochure. The brochure states that Meeting Point Hotels was founded by FTI Group, lists **Club Sei** among its brands, and describes **Club Sei Lanzarote** as a **315-room** hotel in Playa Blanca.
+- `17. Comercializacion y Distribucion Hotel Sun Park Reformado SONNENKLARTV (FTI-MeetingPoint) 27ENE2020.pdf`. The captured sonnenklar.TV page offers **Club Sei Lanzarote** at **Calle Janubio 3**, Playa Blanca, with 315 rooms/units and hotel-product detail.
+- `1. Hotel Sun Park website.pdf`. The historical Sun Park website identifies the address as **Sun Park, Calle Janubio 3, Playa Blanca, Lanzarote, Spain**.
+
+**Controlled evidential effect:**
+
+The address match and the Meeting Point corporate portfolio material move the proposition beyond a mere later allegation: **Club Sei Lanzarote was publicly presented/distributed in 2020 at the same address as Sun Park within the FTI/Meeting Point commercial ecosystem.**
+
+This is direct evidence of public marketing/distribution. It is **not yet complete evidence** of:
+- the exact Spanish contracting entity;
+- the source of authority over each unit;
+- the precise room/property inventory;
+- the underlying CAM/Meeting Point/FTI agreement;
+- completed reservations or guest stays;
+- commissions/revenue/payments;
+- or the lawfulness of the commercialisation.
 
 ---
 
@@ -177,7 +200,7 @@ Gmail `19489325e0f88b84` is a contemporaneous internal subject line referring to
 - that “Sun Park” as a hotel/real-estate whole was itself the insolvency debtor;
 - title to every private unit in the mixed-ownership complex;
 - Matkator’s separate/extraconcursal property rights;
-- whether Meeting Point/FTI/Club Sei marketed or distributed hotel inventory;
+- the lawfulness, authority or scope of the documented 2020 Club Sei Lanzarote public marketing/distribution;
 - whether CAM had authority to commercialise non-LPB assets;
 - the RIC/RICPE governance or investment chain;
 - eligibility/use/control of public or EU/FEDER-linked incentives;
@@ -204,7 +227,7 @@ The correction email states that two records appeared rather than proving a simp
 
 Preferred public formulation:
 
-> elEconomista was entitled to pause or reject a story. The evidence does not show bad faith by Javier Romera. It does show that the adverse document was described in materially broader terms than its operative legal scope: “auto”, “concurso de Sun Park”, with no reference in the rejection email to the already-filed appeals or to the judgment’s express finality language. Because Romera had stated that the proposed story needed to be “bien atado”, the finite accountability question is whether the newsroom applied the same verification standard to the document that caused it not to publish and whether it checked that the judgment actually answered the commercialisation, ownership, RIC/RICPE and public-funding questions in the pitch.
+> elEconomista was entitled to pause or reject a story. The evidence does not show bad faith by Javier Romera. It does show that the adverse document was described in materially broader terms than its operative legal scope: “auto”, “concurso de Sun Park”, with no reference in the rejection email to the already-filed appeals or to the judgment’s express finality language. The controlled archive now also contains independent 2020 Meeting Point/FTI commercial material linking Club Sei Lanzarote to the exact Sun Park address. Because Romera had stated that the proposed story needed to be “bien atado”, the finite accountability question is whether the newsroom applied the same verification standard to the document that caused it not to publish and to the categorical “never commercialised” account attributed to Meeting Point.
 
 Do not publish “Romera was complicit”, “elEconomista censored the story”, or “Laura deceived Romera” as established fact. A safe stronger formulation is that **the record raises the possibility that elEconomista was supplied an incomplete or misleading legal picture through the CAM/Acosta Matos response side and that the newsroom should disclose what it independently verified.**
 
@@ -218,7 +241,7 @@ Do not publish “Romera was complicit”, “elEconomista censored the story”
 4. Obtain native Meeting Point/Laura/CAM messages or authenticate the identified voice notes so the 17-Jan contradiction no longer depends on a party summary.
 5. Obtain certified court evidence of the precise appellate/finality status on **20 Jan 2025**, even though the filed appeals are already documented.
 6. Obtain the complete native 16–17 Jan press package, including every attachment/version/hash, not only the preserved press-note PDF.
-7. Obtain Meeting Point/FTI/Club Sei contracting, inventory, booking, distribution, commission, invoice/payment and instruction records responsive to the 3-Jan Lars notice.
+7. Obtain the underlying CAM/Meeting Point/FTI/Club Sei contracting, title/authority, unit-inventory, PMS/channel, reservation, commission, invoice/payment and instruction records behind the now-documented public 2020 commercialisation.
 8. Determine whether Lars/Meeting Point replied through another address, WhatsApp, counsel, FTI compliance, Auren or another channel.
 9. Preserve the complete 357/2024 Registry/court provenance and any Auren record relevant to document preservation/disclosure, without inferring wrongdoing from judicial-name chronology.
 10. Invite Romera/elEconomista, CAM/LPAM and Meeting Point to authenticate/correct the finite chronology and publish any documentary correction with equivalent prominence.
@@ -235,11 +258,15 @@ Public pages may now state as verified that:
 - the judgment did not adjudicate the main Meeting Point/commercialisation/RIC/public-funds propositions in the press pitch;
 - the 3-Jan Lars preservation request predated the media episode;
 - a contemporaneous record sent to Romera captured incompatible attributed Meeting Point versus Laura/CAM positions;
+- a preserved Meeting Point Hotels corporate brochure described Club Sei Lanzarote as a 315-room Playa Blanca hotel;
+- a 27-Jan-2020 sonnenklar.TV capture offered Club Sei Lanzarote at Calle Janubio 3;
+- the historic Sun Park website also identified Sun Park at Calle Janubio 3, providing a direct same-address bridge;
 - and 357/2024 was already an identifiable Meeting Point creditor-negotiation proceeding.
 
 Public pages must continue to state as unresolved:
 - the exact physical sender of the judgment;
 - the exact sender’s instructions/capacity;
 - authentication of the third-party contradiction against the original interlocutor records;
-- the complete Meeting Point contracting/commercialisation record;
+- the exact Meeting Point/FTI contracting entity and authority;
+- unit inventory, completed bookings, commissions, revenues and payments;
 - and any allegation of editorial, corporate or judicial impropriety.
