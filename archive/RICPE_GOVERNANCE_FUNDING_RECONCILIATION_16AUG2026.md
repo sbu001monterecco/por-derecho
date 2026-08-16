@@ -1,6 +1,6 @@
 # RICPE — governance, valuation, funding-layer and Sun Park control questions
 
-Updated: 16 August 2026
+Updated: 17 August 2026
 
 ## Purpose
 
@@ -11,6 +11,22 @@ Canonical control note for the 16-Aug-2026 RICPE instruction set. It preserves t
 The present governance communication is directed to **RIC Private Equity Investment Partners, S.C.R., S.A. (RICPE)**. The purpose is not to open a bilateral negotiation with CAM, HNT, AGM, Orion or individual private actors. The finite institutional question is what RICPE itself knew, verified, valued, approved, financed, controlled, corrected and should now preserve/re-examine for the protection of RICPE and its investors.
 
 This framing does not erase the legal separation or evidential relevance of CAM, HNT, AGM, Orion or related persons. It makes RICPE's own governance duties the centre of the request.
+
+## Formal communication state — 17 August 2026
+
+Gil Marer has prepared at San Cristóbal de La Laguna a final 21-page communication for his own digital signature and filing with RICPE through the Ethical Channel and corporate email.
+
+Controlling status:
+
+`FINAL FOR SIGNATURE → NOT YET RECORDED AS FILED`
+
+The exact pre-signature PDF, editable source, hashes, filing vocabulary, privacy boundary and post-filing capture requirements are controlled in:
+
+`archive/RICPE_FORMAL_COMMUNICATION_PREFILING_CONTROL_17AUG2026.md`
+
+Do not state that the communication was filed, received, admitted, examined or referred until the corresponding primary receipt or institutional record is preserved. After filing, use `archive/RICPE_POST_FILING_PROPAGATION_PROMPT_17AUG2026.md` and update the existing control record rather than creating a competing chronology.
+
+Any later sharing with CNMV or another authority is a separate transmission event. It must preserve exact recipient, purpose, attachment/hash, filing reference and subsequent handling; transmission does not itself establish referral, competence acceptance, investigation or merits.
 
 ## Controlled starting facts
 
@@ -118,4 +134,4 @@ The page should add visible modules for:
 
 ## Continuity status
 
-This memo canonicalises the material new instruction set from the 16-Aug-2026 RICPE document-revision thread. Public strengthening remains conditional on the source-status controls above.
+This memo canonicalises the material new instruction set from the 16-Aug-2026 RICPE document-revision thread and the controlled pre-filing state of the 17-Aug-2026 formal communication. Public strengthening remains conditional on the source-status controls above. Filing status remains controlled by `archive/RICPE_FORMAL_COMMUNICATION_PREFILING_CONTROL_17AUG2026.md`.
