@@ -106,6 +106,10 @@
   // Loaded after the AC crosswalk so its insertion after that module becomes the causal baseline before serial allegation audits.
   load('calificacion-2018-creditor-material-control-20260816.js?v=20260816a');
 
+  // Cross-cutting first-person allegation: alleged forcible/clandestine extraconcursal control, AC authority overreach,
+  // Fiscal circularity and later judicial legitimisation. Appears only on relevant Calificación/takeover/AC/Judge/Fiscal/DP1901/accountability routes.
+  load('extraconcursal-force-authority-laundering-20260816.js?v=20260816a');
+
   // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
   load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
 
