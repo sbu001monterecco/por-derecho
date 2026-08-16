@@ -1,144 +1,277 @@
 # SUN PARK DIGITAL IDENTITY / LOURDES / GOOGLE — CONTROL LEDGER
 
 **Cut-off:** 16 August 2026  
-**Status:** controlled publication basis  
-**Scope:** two separate-but-connected source families: (A) `sunpark264@gmail.com` customer-facing communications and Google recovery evidence (2019); and (B) Google Business Profile ownership/access requests associated with Lourdes Castillejo / MYND (2021–2022).
+**Status:** controlled publication basis; ME-060 provider-source completion incorporated  
+**Scope:** two separate-but-connected source families: (A) `sunpark264@gmail.com` customer-facing communications and Google recovery evidence (2019); and (B) Google Business Profile ownership/management requests associated by Google with Lourdes Castillejo / MYND and `mynd.hotels@gmail.com` (2021–2022), including the later Google profile-state sequence.
 
 ## Controlling proposition
 
-The source families may properly be connected as a **digital commercial identity and control** track because they concern the ability to speak publicly or operationally as Sun Park, reach its historical customers, recover/control a Sun Park-branded Gmail account, or control a Sun Park-branded Google platform asset.
+The source families may properly be connected as a **digital commercial identity and control** track because they concern the ability to speak publicly or operationally as Sun Park, reach its historical customers, recover/control a Sun Park-branded Gmail account, or affect/control a Sun Park-branded Google platform asset.
 
-The current controlled sequence is:
+The controlled sequence is now:
 
-`2019 sunpark264 customer email → Google recovery clue compatible with @acostamatos.com → 2021–2022 Lourdes/MYND + mynd.hotels@gmail.com Google Business requests`
+`2019 sunpark264 customer email → Google recovery clue compatible with @acostamatos.com → 2021–2022 Lourdes/MYND Google Business requests (all three rejected) → Google profile marked/permanently closed → Google support later reports profile appearing on Maps`
 
-This is a **functional and technical verification chain**, not a finding of common authorship, conspiracy, collusion, concealment or criminal impersonation. Provider records, native headers, account-control evidence, instructions and documentary authority remain necessary.
+This is a **functional and technical verification chain**, not a finding of common authorship, conspiracy, collusion, concealment, fraud or criminal impersonation. The source-completion pass materially closes provider provenance, request outcomes and profile-state chronology, but actor/controller/causation questions remain open.
 
-## Publication architecture — split on 16 August 2026
+Source-completion control:
 
-The two incidents must no longer be published as if they were one combined incident page.
+- `archive/SUN_PARK_DIGITAL_IDENTITY_ME060_SOURCE_COMPLETION_16AUG2026.md`
+- `archive/evidence-vault/SUN_PARK_DIGITAL_IDENTITY_PROVIDER_NATIVE_EVIDENCE_MANIFEST_16AUG2026.md`
+- `archive/CORRECTION_REGISTER.md` — CR-031
+- `archive/MISSING_EVIDENCE_REGISTER.md` — ME-060
+
+## Publication architecture
+
+The two incidents remain separate in publication:
 
 - **Incident A — 2019 Sun Park customer-email / recovery clue:** standalone ES/EN dossier.
 - **Incident B — Lourdes / MYND Google Business requests 2021–2022:** standalone ES/EN dossier.
-- The pre-existing digital-identity route remains only as a **hub/index** linking to both incidents.
-- Each standalone incident page must link visibly to the other as a **related but separate** episode.
-- The Lourdes open letter may refer to the 2019 incident only by short cross-link; it should not reproduce the 2019 evidential narrative inside the Lourdes letter.
+- The digital-identity route remains a **hub/index** linking to both incidents.
+- Each standalone incident page links visibly to the other as a **related but separate** episode.
+- The Lourdes open letter may cross-link to 2019 but should not collapse the 2019 source family into the Lourdes narrative.
 
-This architecture is an editorial/evidential control: connection is preserved without collapsing source families, dates, actors or burdens of proof.
+The connection is evidential/function-based, not proof of common actor or intent.
 
-## Evidence classification
+# INCIDENT A — 2019 `sunpark264@gmail.com`
 
-### A. 6 June 2019 — `SUN PARK <sunpark264@gmail.com>` to a hotel customer
+## A1. 6 June 2019 customer communication
 
-**Source-supported / preserved copy:** a preserved customer-email source records `SUN PARK <sunpark264@gmail.com>` contacting a historical Sun Park customer and asking that belongings be removed because the complex would shortly be reformed.
+**SOURCE-SUPPORTED PRESERVED COPY:** connected Gmail/Drive contains multiple preserved copies of a historical customer exchange in which `SUN PARK <sunpark264@gmail.com>` asked a Sun Park customer to remove belongings because the complex would shortly be reformed.
 
-The preserved response from the historical Sun Park operation challenges the legitimacy of the Gmail address and asks that the information be retained. The customer response records that he and others had written email addresses on luggage following instructions received.
+The historical Sun Park side challenged the legitimacy of the account and asked that the information be retained; the customer reply records that email addresses had been written on luggage following instructions received.
 
-**What it establishes:** the preserved exchange shows a Gmail account presenting itself as SUN PARK and communicating directly with a Sun Park customer about belongings and impending refurbishment.
+**What this establishes:** an account presenting as SUN PARK communicated directly with a historical Sun Park customer about belongings/refurbishment.
 
-**What it does not establish:** who created or controlled the Gmail account, who physically sent the message, what underlying customer-data source was used, or what legal/corporate authority the sender had.
+**What it does not establish:** who created or controlled the Gmail account; the physical sender; the original transport path/headers; the customer-data source; or legal/corporate authority.
 
-### B. 6 June 2019 — Google account-recovery clue for `sunpark264@gmail.com`
+**ME-060 result:** connected Gmail/Drive refresh did not locate a native direct original from `sunpark264@gmail.com` with full RFC822 headers. Preserved/forwarded PDF copies remain the current source.
 
-**Direct provider-interface evidence preserved:** a Google account-recovery capture for `sunpark264@gmail.com` states that a verification code requires confirmation of the recovery email address previously added to the account and displays the masked provider-generated clue:
+## A2. Google recovery clue
+
+**DIRECT PROVIDER-INTERFACE EVIDENCE PRESERVED:** Google account recovery for `sunpark264@gmail.com` displays the provider-generated masked clue:
 
 `ros••••••@aco••••••••.com`
 
-**Documented fact:** the masked string is shown by Google in the preserved recovery interface.
+**VERIFIED FACT:** that masked string is displayed by Google in the preserved recovery interface.
 
-**Evidence-based inference:** the masked pattern is compatible with the corporate domain `acostamatos.com`.
+**EVIDENCE-BASED INFERENCE:** the pattern is compatible with the corporate domain `acostamatos.com`.
 
-**Party input / not provider-confirmed:** during the contemporaneous check, the person performing the recovery test entered a complete address under the `acostamatos.com` domain. That typed value is not itself proof that it was the recovery address configured on Google's account.
+**PARTY INPUT / NOT PROVIDER-CONFIRMED:** a complete `@acostamatos.com` address typed during contemporaneous testing is not itself proof of the configured recovery mailbox.
 
-**Controlling limitation:** the capture does not identify the complete recovery address or technically attribute creation, ownership, control or transmission of `sunpark264@gmail.com` to CAM, Acosta Matos, a named individual or any later MYND actor. Obtain Google account/recovery records before making attribution.
+**CR-031 controls:** the full recovery mailbox, human identity, account creator/controller and recovery/change history remain unresolved. Do not infer exact hidden-character count from the masking bullets without evidence of Google's masking rule.
 
-### C. Unresolved 2019 second-message family
+## A3. Unresolved second 2019 message family
 
-A second alleged family of messages stating in substance that the Sun Park business had ceased has not been located in native form. Do not publish the exact phrase as authenticated fact until the original message is recovered.
+A separate alleged message family stating in substance that the Sun Park business had ceased has not been located in native form. Do not quote/authenticate it as fact unless a native source is recovered.
 
-### D. 28 October 2021 — Google Business Profile
+# INCIDENT B — 2021–2022 GOOGLE BUSINESS REQUESTS
 
-**Direct provider notification located in Gmail:** Google notified the existing account that an ownership request had been made for Sun Park, Playa Blanca, Lanzarote, identifying:
+## B1. 28 October 2021 — native Google request notice
+
+**VERIFIED FACT — native authenticated provider message.**
+
+Google notified the existing manager mailbox of a request for Sun Park identifying:
 
 - `Lourdes Castillejo`
-- role shown by Google: `Business owner`
-- account shown by Google: `mynd.hotels@gmail.com`
+- role: `Business owner`
+- requester account: `mynd.hotels@gmail.com`
 
 Native Gmail message ID: `17cc5ff49854a87e`.
 
-**What it proves:** Google generated a notification associating that identity/role/account with an ownership request.
+Raw MIME reviewed: DKIM, SPF, DMARC and ARC pass.
 
-**What it does not prove:** who physically submitted/authenticated the request, who controlled the Gmail account, whose device/IP was used, what instructions were given, what documentary title was invoked, or whether Lourdes personally authorised the use of her name.
+Provider metadata includes:
 
-### E. 24 February 2022 — Google Business Profile
+- `Arci=19740425`
+- `Rfc=12598848531223042920`
+- event class `MYBUSINESS_PAGE_ROLE_CHANGE_REQUEST`
 
-**Provider notification preserved in the Gmail thread:** the request is shown as:
+A native `.eml` copy is preserved privately; its hash is recorded in the evidence manifest.
+
+### Outcome — rejected
+
+**VERIFIED FACT — Google management UI.** The preserved management record contains Google's post-action confirmation that Lourdes Castillejo would be notified that the request to manage Sun Park had been rejected.
+
+Google's own warning indicated that a rejected requester might later be able to pursue verification after a waiting period. Therefore rejection does not prove permanent technical exclusion through every possible later route.
+
+## B2. 24 February 2022 — native Google request notice
+
+**VERIFIED FACT — native authenticated provider message.**
+
+Google again identifies:
 
 - `Lourdes Castillejo`
 - role: `Employee`
-- account: `mynd.hotels@gmail.com`
+- requester account: `mynd.hotels@gmail.com`
 
-The contemporaneous 25 February 2022 correspondence expressly considered the alternative possibility that a third party might have used Lourdes Castillejo's name without her consent. That weakening/exculpatory possibility must remain in every public account until technical evidence resolves it.
+Native Gmail message ID: `17f2d35f47943807`.
 
-### F. 20 June 2022 — Google Business Profile
+Raw MIME reviewed: DKIM, SPF, DMARC and ARC pass.
 
-**Google ownership-request material preserved in the controlled evidence set:** the request is shown as `MYND Hotels, Employee`, using the same `mynd.hotels@gmail.com` account.
+Provider metadata includes:
 
-The controlled judicial material records this request together with the October-2021 and February-2022 requests and seeks provider-side identifiers, account/IP/device data, permissions, changes and instruction evidence.
+- `Arci=24008448`
+- `Rfc=12598848531223042920`
 
-## Why the 2019 recovery clue materially changes the digital-identity track
+This upgrades the source from merely preserved/forwarded material to a direct provider original in connected Gmail.
 
-The preserved Google recovery screen permits a narrow proposition:
+### Outcome — rejected
 
-- Google itself displayed the masked recovery clue `ros••••••@aco••••••••.com` for `sunpark264@gmail.com`;
-- that pattern is compatible with `acostamatos.com`;
-- the full recovery address is not revealed by the screen;
-- a full address typed into the recovery form is party input and must not be promoted to provider-confirmed fact;
-- therefore the evidence creates a **finite technical Acosta Matos-perimeter verification question**, not a concluded account-ownership attribution.
+**VERIFIED FACT — Google management UI.** The complete preserved request record contains Google's post-action confirmation in Spanish that Lourdes Castillejo had been notified that the request to manage Sun Park was rejected.
 
-## Functional connection between 2019 and 2021–2022
+### Mandatory weakening evidence
 
-`2019 customer-facing Sun Park Gmail → Google recovery clue compatible with @acostamatos.com → 2021–2022 attempts to obtain/control a Sun Park Google Business asset using mynd.hotels@gmail.com`
+Contemporaneous February-2022 correspondence expressly considered the alternative possibility that a third party may have used Lourdes Castillejo's name without her consent. That weakening/exculpatory possibility remains mandatory until account/controller evidence resolves it.
 
-The connection is evidential and functional:
+## B3. 20 June 2022 — native Google request notice
 
-1. the 2019 email concerns direct communication with Sun Park customers under the SUN PARK identity;
-2. the 2019 recovery capture provides a provider-generated technical clue compatible with the Acosta Matos corporate domain;
-3. the 2021–2022 requests concern control of Sun Park's public Google Business identity;
-4. both may affect historical customer relationships, discoverability, reputation, calls, enquiries, reservations and goodwill;
-5. both require Google/provider records to resolve actual account controllers and actions;
-6. both arise before or during the transition from Sun Park/Lava Verde/Club Sei into later HNT/MYND exploitation.
+**VERIFIED FACT — native authenticated provider message.**
 
-The record does **not** presently establish that the same person controlled both Gmail accounts, that CAM controlled `sunpark264@gmail.com`, that Lourdes knew of the 2019 episode, or that CAM/HNT/Canarian Hospitality/MYND shared instructions or intent.
+Google identifies:
 
-## Why the Gmail addresses matter — and why they are not proof
+- `MYND Hotels`
+- role: `Employee`
+- requester account: `mynd.hotels@gmail.com`
 
-Use of `sunpark264@gmail.com` and repeated use of `mynd.hotels@gmail.com`, rather than corporate-domain mailboxes, are legitimate **traceability and governance questions** because account ownership, recovery, custody, audit trail and identification of the instructing entity may differ.
+Native Gmail message ID: `1817ffc2d406461e`.
 
-They are **not**, by themselves, evidence of collusion, cover-up, concealment, fraud or unlawful conduct. Those characterisations require additional evidence of purpose, instruction, knowledge, control and effect.
+Raw MIME reviewed: DKIM, SPF, DMARC and ARC pass.
 
-## Wider financing / public-interest link
+Provider metadata includes:
 
-The digital-identity track should be read alongside the separately documented project chronology involving RICPE/private RIC investment, regional incentives and the FEDER-linked MYND project layer. The relevance is due diligence and provenance: what asset, title, customer platform, operational continuity and commercial identity were represented at each stage, by whom, on what documents, and after what prior control events.
+- `Arci=26176867`
+- `Rfc=12598848531223042920`
 
-No Google-profile request, Gmail use or recovery clue, standing alone, proves that any later investment, regional incentive or FEDER expenditure was improper.
+This upgrades the source from preserved material to a direct provider original.
 
-## Finite verification questions
+### Outcome — rejected
 
-1. Who created and controlled `sunpark264@gmail.com` in 2019?
-2. What exact recovery email address was configured on 6 June 2019, and what was its creation/change history?
-3. Does Google's native account record confirm or exclude an `@acostamatos.com` recovery route?
-4. Obtain native RFC822/EML, full headers, recipients, account creation/recovery history, IP/device/session data and lawful preservation records.
-5. Who created/controlled `mynd.hotels@gmail.com` during October 2021–June 2022?
-6. Who submitted/authenticated each Google Business ownership/access request?
-7. Was Lourdes Castillejo personally the actor, an authorised representative, or was her identity used by another person?
-8. Which legal entity employed/instructed the actor for each request: MYND, Canarian Hospitality, HNT, CAM or another entity?
-9. What title, authorisation or documentary basis was supplied to Google?
-10. What permissions were granted or refused, and what profile fields were changed?
-11. What customer data, luggage-contact data, historical mailing lists, PMS/reservation information or other Sun Park data were used, if any?
-12. Preserve any lawful internal instruction, compliance review, account-administration record and escalation concerning the transition.
+**VERIFIED FACT — Google management UI.** The preserved Google record states that this request was rejected on Monday, 20 June 2022.
 
-## Public routes
+## B4. Aggregate request outcome and provider reference
+
+**VERIFIED FACT:** all three documented 2021–2022 ownership/management requests in this source family were rejected.
+
+The same provider-side profile reference appears in all three request notices:
+
+`Rfc=12598848531223042920`
+
+Google's later support-dashboard URL uses the same number. It is therefore controlled here as the **provider-side Sun Park Business Profile reference `12598848531223042920`**.
+
+The three distinct `Arci` values are preserved as **provider-side request/action tokens**. Do not claim a narrower technical/API meaning without Google documentation.
+
+# PROFILE-STATE SEQUENCE AFTER THE REQUESTS
+
+## C1. 22 June 2022 — Google says Sun Park is marked closed
+
+**VERIFIED FACT — native authenticated provider email.**
+
+Gmail message ID: `1818f3de654f86a0`.
+
+Google notified the existing manager mailbox that `Sun Park, Playa Blanca, Lanzarote is marked as closed on Google` and invited the manager to state if the business was still open. Raw provider authentication reviewed: DKIM/SPF/DMARC/ARC pass.
+
+This establishes the platform state reported by Google. It does not identify who or what caused it.
+
+## C2. 30 June 2022 — management view shows “Permanently closed”
+
+**VERIFIED PLATFORM STATE — contemporaneous preserved Google interface.**
+
+A 30-Jun-2022 Google management/search capture shows:
+
+- `You manage this Business Profile`;
+- Sun Park, Calle Janubio 3;
+- status `Permanently closed`;
+- Google's indication that a suggestion that the place was open was under review.
+
+This is significant because it shows an actual platform-state consequence after the rejected requests. It does **not** prove that any rejected requester caused the state or obtained ownership.
+
+## C3. 15 July 2022 — repeated marked-closed notification
+
+**VERIFIED FACT — native authenticated provider email.**
+
+Gmail message ID: `182036eda66944f2`.
+
+Google again told the existing manager mailbox that Sun Park was marked closed. A preserved 16-Jul management capture likewise shows a permanently-closed state.
+
+## C4. 26 August 2022 — Google support says profile appears on Maps
+
+**VERIFIED FACT — native Google support response.**
+
+Gmail message ID: `182d9e260e14aa21`.
+
+Google support case: `[5-5076000032482]`.
+
+Google said it had checked the information on the profile and that the business then appeared on Google Maps. The support-dashboard URL carries the same profile reference `12598848531223042920`.
+
+This establishes the support outcome/visibility state. It is **not** a Google finding that any party allegation of fraud, impersonation or unlawful interference was true.
+
+## C5. Controlled state sequence
+
+The provider evidence supports:
+
+`28-Oct-2021 request → rejected`  
+`24-Feb-2022 request → rejected`  
+`20-Jun-2022 request → rejected`  
+`22-Jun-2022 Google says profile marked closed`  
+`30-Jun-2022 manager view shows Permanently closed / open suggestion under review`  
+`15-Jul-2022 Google again says marked closed`  
+`26-Aug-2022 Google support says profile appears on Maps`
+
+**Causation remains unresolved.** A rejected ownership request is not proof that the same requester caused a later edit/state change. Possible Google mechanisms must be identified through native audit/change-source records before attribution.
+
+# FUNCTIONAL CONNECTION BETWEEN 2019 AND 2021–2022
+
+The connection remains evidential and functional:
+
+1. the 2019 account communicated under the SUN PARK identity with historical customers;
+2. the 2019 Google recovery interface supplies a provider-generated clue compatible with an Acosta Matos corporate domain;
+3. 2021–2022 Google notices concern attempts to obtain management/ownership of Sun Park's public Business Profile using `mynd.hotels@gmail.com`;
+4. all three reviewed ownership/management requests were rejected;
+5. Google nevertheless later recorded the Sun Park profile as marked/permanently closed before support reported it visible on Maps again;
+6. both source families concern customer reach, discoverability, reputation, calls, enquiries, reservations, goodwill and control of Sun Park's commercial identity;
+7. provider records remain necessary to identify actual account controllers and the source of the profile-state change.
+
+The evidence does **not** presently establish that:
+
+- the same person controlled both Gmail accounts;
+- CAM controlled `sunpark264@gmail.com`;
+- Lourdes knew about the 2019 episode;
+- Lourdes physically submitted the 2021/2022 requests;
+- MYND, Canarian Hospitality, HNT or CAM caused the Google profile to be marked closed;
+- the rejected requests caused the later closed state;
+- CAM/HNT/Canarian Hospitality/MYND shared instructions or intent.
+
+# WHY THE GMAIL ADDRESSES MATTER — AND WHY THEY ARE NOT PROOF
+
+Use of `sunpark264@gmail.com` and repeated use of `mynd.hotels@gmail.com`, rather than corporate-domain mailboxes, creates legitimate **traceability and governance questions** concerning account ownership, recovery, custody, audit trail and instructing entity.
+
+Gmail use alone is not evidence of collusion, cover-up, concealment, fraud or unlawful conduct.
+
+# WIDER FINANCING / PUBLIC-INTEREST LINK
+
+The digital-identity track may be read alongside the separately documented RICPE/private RIC, regional-incentive and FEDER-linked MYND project chronology for due-diligence/provenance questions: what asset, title, customer platform, operating continuity and commercial identity were represented at each stage, by whom and on what documents.
+
+No Google request, Gmail use, recovery clue or profile-state change, standing alone, proves impropriety in later investment, RIC, regional-incentive or FEDER layers.
+
+# REMAINING ME-060 QUESTIONS
+
+The connected-source pass has **closed provider provenance, the three request outcomes, stable profile reference/action tokens, and the marked-closed→Maps-visible state sequence**. The following remain open:
+
+1. native RFC822/EML and full transport headers for the original 2019 `sunpark264@gmail.com` customer message;
+2. exact complete recovery address and change history for `sunpark264@gmail.com`;
+3. creation/recovery/controller/session history for `mynd.hotels@gmail.com`;
+4. who physically submitted/authenticated each Google request, including IP/device/session evidence;
+5. which entity instructed the actor and what title/authority/employment/ownership documents were supplied to Google;
+6. Google Business audit/change-source history identifying who/what caused the marked/permanently-closed state;
+7. whether any requester later completed a separate verification route after rejection;
+8. lawful internal account-administration/instruction/compliance records;
+9. native source for the separate alleged 2019 “business ceased” message family;
+10. proof or exclusion of a common controller/mechanism between 2019 and 2021–2022.
+
+**ME-060 status:** `PARTIAL — provider-side request provenance/outcomes and profile-state chronology closed; controller/authorship/closure-causation evidence remains open.`
+
+# PUBLIC ROUTES
 
 ### Hub / index only
 - ES: `/es/identidad-digital-sun-park-google-mynd/`
@@ -156,18 +289,20 @@ No Google-profile request, Gmail use or recovery clue, standing alone, proves th
 - ES: `/es/carta-abierta-lourdes-castillejo/`
 - EN: `/en/open-letter-lourdes-castillejo/`
 
-Each incident page must link to the other. The hub links to both. The Lourdes letter links to both but carries only the Lourdes incident narrative.
+# PUBLICATION CONTROLS
 
-## Publication controls
-
-- Do not publish private customer identity or personal telephone numbers unnecessarily.
-- Do not state that Lourdes personally submitted all requests unless native evidence establishes it.
+- Do not publish unnecessary customer identity, telephone numbers, account identifiers or other private data.
+- Do not state that Lourdes personally submitted the requests unless native actor evidence establishes it.
+- State accurately that all three reviewed requests were rejected.
+- Do not infer from rejection that no later separate verification/edit mechanism was possible.
+- Do not state or imply that the rejected requests caused the later closed status.
+- Do not state that Google found fraud or impersonation.
+- Preserve the contemporaneous possibility that Lourdes's name may have been used by a third party without consent.
 - Do not state that Gmail use proves concealment/collusion.
 - It is safe to quote the provider-generated masked recovery clue exactly as preserved.
-- Describe `acostamatos.com` as a compatible domain inference pending native confirmation; do not state that the masked screen proves the complete recovery address.
-- Do not treat the address typed into the recovery form as Google-confirmed account data.
-- Do not attribute `sunpark264@gmail.com` to CAM or a named individual without native provider/account evidence.
-- Do not authenticate the separate “business is no more / ceased trading” message until native evidence is recovered.
-- Separate CAM, HNT, Canarian Hospitality, MYND and individual actors.
-- Invite correction, explanation and right of reply.
-- Invite lawful whistleblowing only; no unauthorised access, taking of data or destruction/alteration of evidence.
+- Describe `acostamatos.com` only as a compatible-domain inference pending native provider confirmation.
+- Do not treat a manually typed recovery address as Google-confirmed account data.
+- Do not attribute `sunpark264@gmail.com` to CAM or a named individual without provider/account evidence.
+- Do not authenticate the separate “business ceased” message until a native source is recovered.
+- Keep CAM, HNT, Canarian Hospitality, MYND and individual actors legally/evidentially separate.
+- Invite correction, explanation, counter-evidence and lawful whistleblowing; no unauthorised access, data taking or evidence alteration.
