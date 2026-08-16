@@ -67,4 +67,7 @@
 
   // LinkedIn professional-profile capture for Lourdes Castillejo on her ES/EN open-letter pages.
   load('lourdes-linkedin-profile-20260816.js?v=20260816a');
+
+  // Calificacion: current appellate status, first-person accountability opening, damages and media cross-link.
+  load('calificacion-opening-accountability-20260816.js?v=20260816b');
 })();
