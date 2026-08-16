@@ -52,4 +52,7 @@
 
   // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
   load('origin-direct-market-context-20260816.js?v=20260816a');
+
+  // Companies House continuity: Monterecco Sun Park Limited renamed Aweswell Limited, same company no. 07716847.
+  load('aweswell-monterecco-name-continuity-20260816.js?v=20260816a');
 })();
