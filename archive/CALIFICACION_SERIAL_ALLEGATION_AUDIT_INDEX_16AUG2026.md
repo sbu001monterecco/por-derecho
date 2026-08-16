@@ -13,6 +13,31 @@ Every allegation is tested in the same order:
 
 The purpose is not to prove a predetermined global thesis that every allegation was fabricated. Where the evidence preserves a valid adverse point, it must remain visible. This makes any proposition-specific allegation of knowing overstatement materially stronger.
 
+## Mandatory 2018 control/capacity baseline
+
+Before reusing or continuing **any allegation whose causal period reaches 7 June 2018 or later**, read:
+
+`archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
+
+Controlled proposition:
+
+- Construcciones Acosta Matos, S.A. was already a recognised holder of the relevant mortgage-credit amounts before the 7-Jun-2018 control event;
+- current repository control treats **7 June 2018 as a de facto material/access/operational-control threshold, not a title date**;
+- no reviewed whole-hotel judicial delivery/order authorising whole-hotel legal possession on that date has been located;
+- `lender in possession` may be used only as a **functional comparison** (`secured creditor + de facto material control`), never as a claimed Spanish statutory office/status or synonym for ownership;
+- CR-018 remains controlling: full practical possession of the hotel as a whole is Gil Marer's allegation/inference and exact finca-by-finca reach remains open.
+
+For every post-threshold allegation add the finite capacity test:
+
+`FORMAL DUTY / POWER → ACTUAL ACCESS / CONTROL / CAPACITY → ACT / OMISSION → CONSEQUENCE → CAUSATION`.
+
+Do not attribute a post-7-Jun omission, lost revenue, deterioration, failed rescue step or operating result to Gil/LPB without first identifying what remained within Gil/LPB's practical control and what depended on the AC, CAM, security, an operator, the Community or another separately proved actor. Conversely, do not use the control event to erase adverse conduct that remained genuinely within Gil/LPB's power.
+
+**Master-storyline effect:** this does **not** change the controlled chronology or CR-018. It upgrades the legal/causal reading of an existing storyline node: `creditor status before control → de facto control threshold → later suspension → later adjudication/title`, and requires the same pre/post-control split across the calificación, preservation, rescue, valuation, bidding/accounting and extra-concursal ownership tracks.
+
+Public module:
+`assets/calificacion-2018-creditor-material-control-20260816.js`
+
 ## Completed
 
 ### Allegation 01 — lack of collaboration / inability to know insolvency causes

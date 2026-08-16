@@ -93,6 +93,11 @@
     });
   });
 
+  // Calificacion: 2018 recognised secured-credit holder plus de facto material-control threshold;
+  // separates creditor status, physical control, later adjudication and pre/post-control causation.
+  // Loaded after the AC crosswalk so its insertion after that module becomes the causal baseline before serial allegation audits.
+  load('calificacion-2018-creditor-material-control-20260816.js?v=20260816a');
+
   // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
   load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
 
