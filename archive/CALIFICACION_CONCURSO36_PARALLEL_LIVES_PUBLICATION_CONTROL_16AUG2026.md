@@ -1,221 +1,376 @@
 # CALIFICACIÓN CONCURSO 36/2012 — PARALLEL-LIVES PUBLICATION CONTROL
 
 **Date:** 16 August 2026  
-**Status:** PUBLIC V2 / DI 248 + FISCAL OPINION + JUDGMENT + APPEAL PRIMARY SET REVIEWED / SOURCE COMPLETION CONTINUES  
+**Status:** PUBLIC V3 / SOURCE-COMPLETE AC CROSSWALK / ALLEGATION 01 DEEP AUDIT LIVE / SOURCE COMPLETION CONTINUES  
 **Routes:**
 - ES: `/es/calificacion-concurso-36-2012-vidas-paralelas/`
 - EN: `/en/insolvency-classification-parallel-lives/`
 
-**New controlling ledger:** `archive/CALIFICACION_DI248_CONTRADICTION_LEDGER_16AUG2026.md`
+## Controlling internal sources
 
-## 1. Purpose
+Read together:
 
-Maintain a dedicated, evidence-controlled public space for the qualification/classification track of **Concurso 36/2012 — Luchy Playa Blanca, S.L.U.**, while preventing the adverse first-instance judgment from being silently expanded into a universal adjudication of the entire mixed-ownership Sun Park complex, third-party property, material control, hotel operation, commercialisation, RIC/RICPE financing, regional incentives or FEDER.
+1. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md` — complete 47-page AC/Fiscal accusation crosswalk;
+2. `archive/CALIFICACION_DI248_CONTRADICTION_LEDGER_16AUG2026.md` — DI 248 / Fiscalía / judgment / appeal bridge;
+3. `archive/CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md` — controlling deep audit of the AC's broad non-collaboration proposition;
+4. `archive/CALIFICACION_3032010_FABRICATION_PERSONAL_GAIN_ALLEGATION_16AUG2026.md` — separate €3.032m damages/fabrication track;
+5. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md` — corrections and source-completion controls.
 
-The page has now moved beyond first architecture. Primary sources have been re-queried for the January-2019 DI 248 expansion, 12 March 2019 Ministerio Fiscal classification opinion, 7 May 2019 DI 248 archive decree, Sentencia 163/2023 and Gil Marer's appeal. The complete AC report/annexes, complete DI 248 expediente, hearing record and certified appellate record remain source-completion priorities.
+This file controls what may be propagated publicly. It does not substitute for the primary sources.
 
-## 2. Mandatory opening frame
+---
 
-The first prominent panel names three institutionally distinct roles:
+## 1. Purpose and perimeter
 
-1. **Francisco Borja Rodríguez-Batllori** — Administrador Concursal, Concurso 36/2012.
-2. **Ricardo de Mosteyrín Sampalo** — Fiscal, signatory of the 12 March 2019 classification opinion.
-3. **Alberto López Villarrubia** — Magistrado, Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria; Judgment 163/2023 of 28 September 2023.
+Maintain a dedicated, evidence-controlled public space for the classification track of **Concurso 36/2012 — Luchy Playa Blanca, S.L.U.** while preventing a materially adverse first-instance judgment from being silently expanded into a universal adjudication of the entire mixed-ownership Sun Park complex, third-party property, material control, hotel operation, commercialisation, RIC/RICPE financing, regional incentives or FEDER.
 
-A fourth actor must be named wherever DI 248 is explained:
+The page must show the adverse material as well as the contrary material. The publication architecture is:
 
-4. **Elena Herrera Rodríguez** — Fiscal, signatory of the DI 248/2018 archive decree of 7 May 2019.
+`AC ACCUSATION → SAME-SOURCE CONTRADICTION/QUALIFICATION → OPPOSITION → JUDICIAL TEST → APPEAL → ACTOR KNOWLEDGE → CURRENT STATUS`
+
+Evidence labels remain:
+
+- `DOCUMENTED`;
+- `JUDGMENT FINDING`;
+- `APPEAL ALLEGATION`;
+- `EVIDENCE-BASED ALLEGATION`;
+- `EVIDENCE-BASED INFERENCE`;
+- `OPEN`.
+
+---
+
+## 2. Actors remain institutionally distinct
+
+The page names and separates:
+
+1. **Francisco de Borja Rodríguez-Batllori Laffitte** — Administrador Concursal, Concurso 36/2012;
+2. **Ricardo de Mosteyrín Sampalo** — Fiscal who signed the 12-Mar-2019 classification opinion;
+3. **Alberto López Villarrubia** — Magistrado-Juez who signed Sentencia 163/2023 on 28-Sep-2023;
+4. **Elena Herrera Rodríguez** — Fiscal who signed the DI 248/2018 archive decree on 7-May-2019.
 
 Controlling line:
 
 > **Tres funciones distintas. Tres responsabilidades institucionales distintas.**
 
-Do not imply from placement or naming alone that any participant committed misconduct. Do not attribute Elena Herrera's DI 248 decision personally to Ricardo de Mosteyrín.
+Do not imply from proximity that any two actors coordinated personally. Institutional sequence is not proof of personal agreement.
+
+---
 
 ## 3. Normal-process explanation
 
-The page must explain before criticism that a `calificación del concurso como culpable` is an insolvency/mercantile classification mechanism, not by itself a criminal conviction.
+A `calificación del concurso como culpable` is an insolvency/mercantile classification mechanism. It is not, by itself, a criminal conviction.
 
-For this case, preserve the temporal-law point: Judgment 163/2023 itself states that former **Ley Concursal art. 164.1** applies because of the date the sixth/classification section was opened.
+For this case, preserve the temporal-law point stated in Sentencia 163/2023: former **Ley Concursal art. 164.1** applies because of the date on which the classification section was opened.
 
-Normal purpose to explain:
+Normal purpose:
 
-> Determine whether the debtor company's insolvency was fortuitous or whether legally relevant intentional/grossly negligent conduct generated or aggravated it, and determine the insolvency consequences for affected persons/accomplices where legally established.
+> determine whether the debtor company's insolvency was fortuitous or whether legally relevant intentional/grossly negligent conduct generated or aggravated it, and determine insolvency consequences for affected persons/accomplices where legally established.
 
 It does not automatically decide:
+
 - title to third-party property;
-- whole-hotel possession or de facto control;
+- whole-hotel legal possession or de facto control;
 - authority to market a mixed-ownership hotel;
 - authority represented to operators/investors;
 - RIC/RICPE diligence or governance;
 - regional-incentive/FEDER eligibility and controls;
 - every later MYND operating act.
 
+---
+
 ## 4. Judgment posture
 
 Mandatory controls:
-- **Sentencia 163/2023**, not an `auto`.
-- Debtor: **Luchy Playa Blanca, S.L.U.**, not `Sun Park` as a whole.
-- First-instance outcome is **materially adverse** and must not be minimised.
-- The application was **partially granted**.
-- Appeals were filed before January 2025; first instance and finality must remain distinct.
-- Do not state the eventual appellate outcome unless current primary evidence establishes it.
 
-The judgment itself rejects or narrows material parts of the accusation package. Public treatment must show this rather than describing the AC/Fiscal case as wholly validated. Current controlled examples include:
+- **Sentencia 163/2023**, not an `auto`;
+- debtor: **Luchy Playa Blanca, S.L.U.**, not `Sun Park` as a whole;
+- outcome: materially adverse and partially granting the accusation package;
+- first instance and finality are distinct;
+- appeals were filed before January 2025;
+- do not state an appellate outcome without current primary evidence.
 
-- general CEXP/third-party-credit causal culpability rejected;
-- the AC's €737,338.85 self-debt construction corrected by the Court through the contrary expert explanation;
-- material alzamiento/connivance constructions rejected;
-- late filing expressly held not imputable to Gil;
-- accounting-document non-collaboration narrowed because the Court records that LPB delivered the accounting documentation it had;
-- deficit liability requested by AC/MF rejected for lack of justification;
-- rent/non-collaboration findings remain adverse but are specifically challenged on appeal.
+The judgment itself rejects or narrows substantial parts of the AC/Fiscal package, including:
 
-## 5. DI 248/2018 — mandatory direct bridge
+- general CEXP/third-party-credit causal culpability;
+- the AC's €737,338.85 self-debt construction;
+- material alzamiento/connivance constructions;
+- late filing as against Gil;
+- the broad accounting-document non-collaboration proposition;
+- deficit liability requested by AC/Fiscal for lack of sufficient justification;
+- Patricia Domínguez's alleged complicity.
 
-The public page must now explain the DI 248 connection prominently rather than bury it in chronology.
+Material adverse findings remain on rent, accounting and a narrower collaboration branch and remain subject to appeal.
 
-### Controlled sequence
+---
 
-1. **17 October 2018:** Gil/Aweswell complain against the AC/CAM perimeter in DI 248/2018.
-2. **January 2019 expansion:** asks Fiscalía to investigate the AC and obtain statements from José Daniel Acosta Matos and Laura Acosta Matos; also states that steps were being taken to conclude the insolvency under former Article 176 LC and that the necessary financing had been obtained.
-3. **12 March 2019:** Ricardo de Mosteyrín signs the Ministerio Fiscal classification opinion against Gil/others.
-4. **7 May 2019:** Elena Herrera archives DI 248 and expressly invokes the fact that **“este Ministerio”** had already treated the insolvency as culpable and Gil as responsible, including for alleged failure to collaborate with the AC.
+## 5. DI 248/2018 — direct documentary bridge
 
-### Controlled conclusion
+Public sequence:
 
-It is now `DOCUMENTED` that the Ministerio Fiscal used its own adverse classification position about Gil within the reasoning of the decision on Gil/Aweswell's complaint against the AC/CAM perimeter.
+1. **17-Oct-2018:** Gil/Aweswell complain against the AC/CAM perimeter in DI 248/2018.
+2. **Jan-2019 expansion:** asks Fiscalía to investigate the AC, take statements from José Daniel Acosta Matos and Laura Acosta Matos, and records the assertion that an Article-176 conclusion route was being pursued with financing obtained.
+3. **12-Mar-2019:** Ricardo de Mosteyrín signs the adverse classification opinion.
+4. **7-May-2019:** Elena Herrera archives DI 248 and expressly invokes that **“este Ministerio”** had already treated the insolvency as culpable and Gil as responsible, including for alleged failure to collaborate with the AC.
 
-It is permissible to characterize this as raising a serious **institutional circularity / anchoring / asymmetric-credibility** concern, provided this remains an evidence-based allegation/inference rather than proof of personal coordination, corrupt motive or deliberate shielding.
+Controlled conclusion:
 
-### Facial Fiscal-text defect
+> It is `DOCUMENTED` that the Ministerio Fiscal used its own adverse classification position about Gil within the reasoning of the decision on Gil/Aweswell's complaint against the AC/CAM perimeter.
 
-The 12 March opinion literally lists as a ground a `situación de insolvencia agravada por dolo o culpa del administrador concursal` while naming Gil Marer and Uri Omid — social administrators — as responsible. Preserve the wording. It may be a drafting error; do not silently repair or overinterpret it.
+This supports a serious **institutional circularity / anchoring / asymmetric-credibility** concern. It does not prove personal coordination, corrupt motive or deliberate shielding.
 
-## 6. 7 June 2018 control
+The 12-Mar-2019 Fiscal text also literally refers to a `situación de insolvencia agravada por dolo o culpa del administrador concursal` while then identifying the social administrators as responsible. Preserve the facial contradiction; it may be a drafting error and must not be overinterpreted.
 
-Public controlled formulation:
+---
 
-> The controlled archive supports a material/access and operational-control shift on 7 June 2018 involving CAM-linked/Community actors. Gil Marer alleges that the cumulative effect amounted to practical possession of the hotel as an operating whole. It is not presented as a judicial transfer of whole-hotel title or legal possession, and the exact finca-by-finca perimeter and authority remain subject to verification.
+# 6. ALLEGATION 01 — AC “FAILURE TO COLLABORATE” / KNOWING-OVERSTATEMENT AUDIT
 
-Maintain 26 June 2018 suspension order as a later date; do not apply it retrospectively to 7 June by inference.
+This is now a dedicated public and internal track, controlled by:
+
+`archive/CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md`.
+
+## 6.1 Exact issue
+
+The AC's 11-Feb-2019 classification report advanced a broad proposition that the debtor's lack/absence of collaboration prevented the AC from properly knowing the economic causes of insolvency and required resort to statutory presumptions.
+
+The project must not answer this with the equally simplistic claim that LPB complied perfectly with every request. The controlled record shows delays and missing material. The test is whether those specific shortcomings justified the **global portrayal** used in a maximum-severity culpability package.
+
+## 6.2 New primary-source reinforcement — 15-Jan-2013 AC Article-75 report
+
+The original AC Article-75 report was re-queried on 16-Aug-2026 from connected Google Drive:
+
+- `0. INFORME AC (ART. 75 LC) 15ENE2013.pdf`;
+- Drive ID `15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc`.
+
+It is adverse but specific. It says the level of collaboration was `no aceptable` because of considerable delay and some missing documentation. At the same time it expressly records that the representative of LPB **attended every meeting to which the AC summoned him**.
+
+The same report demonstrates that the AC was able to analyse the debtor's legal/economic history, activity, establishments, causes, viability, financial ratios, accounting, annual accounts, financial statements, group structure, active inventory, passive inventory and patrimonial position using judicial records, company accounting, Registry certification and other material available to him.
+
+### Public consequence
+
+Do not collapse:
+
+`late / incomplete document delivery`
+
+into
+
+`no meaningful collaboration / inability to understand the insolvency`.
+
+Those are different propositions.
+
+## 6.3 Contrary material inside the 2019 adverse report itself
+
+The 47-page report reproduces or acknowledges:
+
+- Gil's 30-Jan-2018 express statement that he was seeking the best way to cooperate and had no intention of obstructing the AC;
+- item-by-item answers distinguishing supplied, pending and third-party-dependent material;
+- PDF journals and trial balances for 2008, 2009, 2010, 2011 and part of 2012;
+- operating/maintenance information;
+- Haya / secured-credit discussions;
+- contemplated parent recapitalisation;
+- convenio / viability work;
+- a bank letter of intent;
+- possible operators;
+- customer demand and customers waiting to reserve;
+- contacts from agents/tour operators.
+
+The adverse source therefore contains the evidence that defeats a binary narrative of informational vacuum.
+
+## 6.4 Judicial narrowing
+
+Sentencia 163/2023 records that LPB delivered the accounting documentation it possessed and does not find non-collaboration as to that accounting material. It preserves only a narrower issue concerning supporting documents for specified CEXP/third-party credits.
+
+The surviving branch remains adverse and appealed. Do not state that every collaboration issue was judicially rejected.
+
+## 6.5 Current evidential grading
+
+- **Specific documentary delay/gaps:** `PARTLY DOCUMENTED`.
+- **Global absence-of-collaboration portrayal:** `MATERIALLY CONTRADICTED / JUDICIALLY NARROWED`.
+- **Knowing overstatement:** `STRONGLY EVIDENCE-BASED USER ALLEGATION`, because the AC himself possessed and reproduced contrary facts.
+- **Self-serving effect:** `STRONGLY SUPPORTABLE AS EFFECT` — the frame redirected scrutiny toward Gil and away from the administration, recovery and real hotel-economy questions.
+- **Deliberate distraction motive:** `EVIDENCE-BASED HYPOTHESIS`, not an established subjective fact.
+- **Criminal falsehood:** `USER ALLEGATION / NOT ADJUDICATED`.
+
+## 6.6 Displacement map
+
+The public module may ask what the broad collaboration narrative pushed out of focus. It may identify, with evidence-status controls:
+
+- Comunidad/CEXP governance, services, costs and receivables;
+- real hotel operation, income/costs and unity-of-exploitation questions;
+- Haya, recapitalisation, convenio, bank and operator/customer rescue routes;
+- actions actually pursued or not pursued by the AC to recover value;
+- later control/liquidation/disposition questions;
+- DI 248 role reversal in which Gil/Aweswell were seeking investigation of the AC/CAM perimeter.
+
+Controlled line:
+
+> The **effect** of the broad frame can be documented. An **intention** to distract must be proved separately.
+
+## 6.7 “cordiales y fluidas” control
+
+Gil's appeal attributes the phrase `cordiales y fluidas` to an earlier AC source. This pass did not locate that exact wording in its original AC source. **Do not publish it as a verified quotation yet.** The 15-Jan-2013 primary report already supplies the safer verified proposition: attendance at every AC-convened meeting despite the AC's criticism of delayed/missing documents.
+
+Open target: recover the exact original source containing the phrase, if it exists, and reconcile it with the 2013 report.
+
+---
 
 ## 7. Rescue / preservation counter-record
 
-The public page must place any accusation of obstruction/non-collaboration beside the dated rescue/preservation record. Current controlled milestones include:
+Any accusation of obstruction/non-collaboration must sit beside the dated rescue/preservation record, including:
 
-- February 2012 viability/direct-marketing planning;
-- Article 5 bis and voluntary insolvency sequence, with the judgment itself saying late filing was not imputable to Gil;
-- 2012–2016 operation/maintenance and accounting-document production;
-- 2017–2018 protection/challenges concerning control, value and liquidation perimeter;
-- January 2019 DI 248 statement that an Article 176 conclusion route was being pursued with financing obtained;
-- formal 2019 opposition to culpable classification;
+- Feb-2012 viability/direct-market planning;
+- Article 5 bis and voluntary insolvency sequence;
+- 2012 onward accounting/document production subject to formal-completeness disputes;
+- 2017–2018 challenges concerning control, value and liquidation perimeter;
+- Jan-2019 DI 248 statement of an Article-176 exit route with financing said to have been obtained;
+- 2019 opposition to culpable classification;
 - 2020–2022 debt/value/title/bidding/realisation challenges, subject to complete evidence-before-court reconstruction;
-- October–November 2023 appeals;
+- Oct–Nov-2023 appeals;
 - 2025–2026 preservation/recovery/institutional-accountability activity.
 
-Do not claim from this chronology that every action was legally correct, economically successful or accepted by the Court. Its function is to test categorical allegations of abandonment, simple obstruction or refusal to save LPB.
+This chronology does not prove that every act was legally correct or economically successful. Its function is to test categorical narratives of abandonment, simple obstruction or refusal to preserve LPB.
+
+---
 
 ## 8. Public treatment of “lied” / “knowingly false”
 
-The user's allegation must not be euphemised away, but it must be evidence-controlled.
+Preferred general formulation:
 
-Preferred public formulation:
-
-> **Gil Marer alleges that material accusations made about his conduct were false and, where the relevant actor demonstrably held the contrary documents or had themselves participated in the contrary event, knowingly false. The page tests that allegation accusation by accusation through the contemporaneous document, judicial rejection/narrowing, appeal ground and actor-specific knowledge record.**
+> **Gil Marer alleges that material accusations made about his conduct were false and, where the relevant actor demonstrably held the contrary documents or participated in the contrary event, knowingly false. The page tests that allegation accusation by accusation through the contemporaneous document, judicial rejection/narrowing, appeal ground and actor-specific knowledge record.**
 
 Control rule:
 
-`FALSE PROPOSITION + PROVED ACTOR KNOWLEDGE OF CONTRARY FACT = BASIS FOR KNOWING-FALSEHOOD ALLEGATION`
+`FALSE/MISLEADING PROPOSITION + PROVED ACTOR KNOWLEDGE OF CONTRARY FACT = BASIS FOR KNOWING-FALSEHOOD ALLEGATION`
 
-Do not globalise “all three knowingly lied about everything” where the source record does not establish knowledge for each proposition. In particular, judicial-file presence is not automatically personal judicial knowledge.
+Do not globalise `the AC knowingly lied about everything`. Allegation 01 is stronger on knowledge precisely because the contrary material appears inside the AC's own authored record.
+
+---
 
 ## 9. Motive controls
 
-Motive may be investigated and presented as an evidence-based hypothesis, not as an established subjective fact, unless direct evidence upgrades it.
+Motive remains proposition-specific.
 
 Current permissible hypotheses:
 
-- **AC:** defence of his own administration and the liquidation/disposition path already being challenged;
+- **AC:** defence of his own administration and the liquidation/disposition trajectory already being challenged;
 - **Fiscalía:** institutional anchoring / consistency with an inherited AC-and-court frame;
 - **Court:** institutional path dependence / preservation of coherence with the existing insolvency-liquidation trajectory.
 
-Do not present corruption, retaliation, prevaricación, personal hostility or agreement with CAM as established absent actor-specific evidence.
+For Allegation 01 specifically, public language may state that the non-collaboration narrative had an **objectively self-protective or self-serving effect** by redirecting scrutiny. Do not convert effect into proven purpose.
 
-## 10. Meeting Point / RIC / public-money controls
+No corruption, retaliation, prevaricación, personal hostility or agreement with CAM may be presented as established absent actor-specific evidence.
+
+---
+
+## 10. 7 June 2018 material-control boundary
+
+Public controlled formulation remains:
+
+> The controlled archive supports a material/access and operational-control shift on 7 June 2018 involving CAM-linked/Community actors. Gil Marer alleges that the cumulative effect amounted to practical possession of the hotel as an operating whole. It is not presented as a judicial transfer of whole-hotel title or legal possession, and the exact finca-by-finca perimeter and authority remain subject to verification.
+
+Maintain the 26-Jun-2018 suspension order as a later date. Do not retrospectively treat it as having existed on 7-Jun.
+
+---
+
+## 11. Meeting Point / RIC / public-money controls
 
 - Direct 2020 public material supports Club Sei Lanzarote presentation/distribution within the Meeting Point/FTI ecosystem at the historic Sun Park address.
-- It does not yet prove exact contracting entity, room inventory, authority, bookings, commissions, revenues or legality.
+- It does not yet prove exact contracting entity, authority, inventory, bookings, commissions, revenues or legality.
 - RICPE/RIC is a separate capital/governance layer.
 - Regional incentives and FEDER are separate public-support layers.
 - The MYND permanent plaque expressly identifies FEDER; exact percentage, eligible expenditure, payment/certification and control trail remain open.
 - Presence of RIC, incentives or FEDER is not itself proof of fraud.
 
-## 11. January 2025 elEconomista instrumentalisation allegation — UPGRADED, LIMITED
+These tracks may be identified as matters outside the legal perimeter of Sentencia 163/2023; they must not be imported into Allegation 01 as proof of motive without an evidential bridge.
 
-The generic proposition that “the classification was misused” remains too broad to publish as an established historical fact across all contexts.
+---
 
-However, the **January-2025 elEconomista episode** now supports a more specific evidence-based allegation:
+## 12. January-2025 elEconomista instrumentalisation allegation
+
+The controlled position remains specific:
 
 - the newsroom was examining questions wider than LPB's classification;
-- the 16–20 January chronology strongly supports that Sentencia 163/2023 was supplied/procured through the CAM/Acosta Matos response channel initiated by Laura Patricia Acosta Matos;
-- the exact physical sender remains unresolved;
+- the 16–20 Jan chronology strongly supports that Sentencia 163/2023 was supplied/procured through the CAM/Acosta Matos response channel initiated by Laura Patricia Acosta Matos;
+- exact physical sender remains unresolved;
 - the file was labelled `AUTO CONCURSO CULPOSO` although it was a Sentencia;
 - appeals had already been filed;
 - the judgment did not adjudicate whole-hotel title, Meeting Point authority, RIC/RICPE, incentives or FEDER;
-- the document nevertheless functioned in the newsroom exchange as the decisive adverse judicial material after which the broader story did not proceed.
+- the document nevertheless functioned as decisive adverse judicial material after which the wider story did not proceed.
 
-Controlled wording:
+This supports an allegation of **extra-procedural instrumentalisation / scope mismatch** in that specific episode. Do not state as established that LPAM personally transmitted it, misrepresented finality, unlawfully suppressed publication or instructed an intermediary without native transmission evidence.
 
-> This supports an allegation of **extra-procedural instrumentalisation / scope mismatch** in the January-2025 episode: a materially adverse but non-final LPB classification judgment was supplied through the CAM/Acosta Matos response channel and operated as a reason the broader investigation did not proceed, although many of that investigation's central issues fell outside the judgment's legal perimeter.
+Cross-links:
 
-Do not state as established that LPAM personally sent the file, personally misrepresented finality, instructed a specific intermediary, unlawfully suppressed publication or compelled elEconomista not to publish without the native transmission/instruction evidence.
-
-Cross-link the separate evidence page:
 - ES: `/es/eleconomista-javier-romera-enero2025/`
 - EN: `/en/eleconomista-javier-romera-january2025/`
 
-## 12. Evidence-completion targets
+---
 
-Re-query / obtain:
+## 13. Evidence-completion targets
 
-### AC / classification formation
-- complete native AC classification report and every annex;
-- service/transmission records and source documents;
-- evidence the AC personally/institutionally held concerning accounting delivery, Article 176 exit efforts, CAM/Community control and extra-insolvency property when each material proposition was made.
+### Allegation 01
 
-### Ministerio Fiscal
-- certified/full DI 248 expediente and actual diligences;
-- complete 25 April 2019 rent expert report;
-- documents demonstrably reviewed for the 12 March opinion;
-- preserve Ricardo/Elena actor separation.
+1. exact original AC source, if any, containing `cordiales y fluidas`;
+2. dated AC request→response→delivery matrix 2012–2019;
+3. accountant transmissions, PDF journals, balances, accounts, bank/supporting-document chain;
+4. materiality of each missing document to each alleged cause of insolvency;
+5. Community/CEXP receivable action/limitation/collectability map;
+6. what the AC did after receiving Haya, recapitalisation, convenio, bank-letter and operator material;
+7. what the AC knew about Community/CAM control and asset-disposition disputes before 11-Feb-2019.
 
-### Court / hearing / judgment
-- complete sixth-section certified docket;
-- 25 July 2023 hearing record/audio/minutes;
+### Wider classification
+
+- complete DI 248 expediente;
+- 25-Apr-2019 Fiscalía rent expert report;
+- sixth-section certified docket;
+- 25-Jul-2023 hearing record/audio/minutes;
 - counsel-withdrawal notice, suspension request and disposition;
 - admitted/excluded evidence;
 - precise evidence-before-court source for each adverse finding;
-- appeal admission, briefs, oppositions, personation and current AP status.
+- complete appeal record and current AP status;
+- native elEconomista 20-Jan-2025 inbound transmission/provenance.
 
-### elEconomista provenance
-- native 20 January inbound headers/message identifying the physical transmitter;
-- any accompanying wording about finality, legal effect or scope.
+---
 
-## 13. Publication document
+## 14. Publication derivative control
 
-A public derivative of Judgment 163/2023 may be published after privacy review. Preserve the electronically signed original privately. If a derivative is published, label it as a publication copy and do not imply that the edited binary retains the original cryptographic signature.
+A public derivative of Judgment 163/2023 may be published only after privacy review. Preserve the electronically signed original privately. If a derivative is published, label it as a publication copy and do not imply that an edited binary retains the original cryptographic signature.
 
-## 14. Current public matrix
+Private primary sources are not made public merely because their source-controlled propositions are summarised on the site.
 
-The public page now implements:
+---
 
-`ACCUSATION → JUDICIAL TEST → REJECTED / NARROWED / ADVERSE → APPEAL → CONTRARY CONTEMPORANEOUS RECORD → ACTOR KNOWLEDGE → CURRENT STATUS`
+## 15. Runtime/public implementation state
 
-For every proposition use:
+The ES/EN public routes implement a layered runtime architecture through `assets/site.js`.
 
-`DOCUMENTED | JUDGMENT FINDING | APPEAL ALLEGATION | EVIDENCE-BASED ALLEGATION | EVIDENCE-BASED INFERENCE | OPEN`
+As of this V3 control:
 
-## 15. Deletion continuity
+- source-complete 47-page AC radical-transparency crosswalk: LIVE;
+- **Allegation 01 collaboration/knowing-overstatement deep audit:** LIVE through `assets/calificacion-allegation01-collaboration-audit-20260816.js` after merge/deployment;
+- €3.032m damages/fabrication module: LIVE;
+- judicial-adoption/private-actor bridge: LIVE;
+- June-2026 Fiscalía EG49 response module: LIVE;
+- recovery-through-adversity chronology: LIVE;
+- stale-source-status correction: LIVE.
 
-This file and `archive/CALIFICACION_DI248_CONTRADICTION_LEDGER_16AUG2026.md` are the controlling handover for the page and the next research phase. A future thread should not reconstruct the strategy from conversational memory. It should start from these controls plus `CHATGPT_START_HERE.md`, the continuous-maintenance/missing-evidence/correction registers, the judge/LAJ knowledge controls and current primary sources.
+The Allegation 01 module is bilingual and must appear on both canonical routes. It expressly preserves the adverse 2013 cooperation criticism while distinguishing it from the later global proposition.
+
+---
+
+## 16. Deletion continuity
+
+This file, the three controlling calificación ledgers listed at the top, and the current branch/PR/deployment record must make the thread recoverable without chat history.
+
+A future thread continuing with **Allegation 02** should begin from:
+
+1. `CHATGPT_START_HERE.md`;
+2. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md` — RT-01;
+3. `archive/CALIFICACION_ALLEGATION_01_COLLABORATION_FALSEHOOD_LEDGER_16AUG2026.md` — completed Allegation 01 method and evidential grading;
+4. the primary 11-Feb-2019 AC report and the 2019 opposition/judgment/appeal;
+5. current Community/CEXP credit, recovery and causation records.
+
+The method to carry forward allegation by allegation is:
+
+`EXACT AC PROPOSITION → WHAT AC KNEW → SAME-SOURCE CONTRADICTIONS → ACTUAL ECONOMIC/JUDICIAL REALITY → WHAT THE COURT DID → WHAT THE ALLEGATION DISPLACED → KNOWLEDGE GRADE → MOTIVE GRADE → PUBLIC WORDING → OPEN EVIDENCE`.
+
+Do not regress from controlled distinctions merely because later rhetoric is stronger.
