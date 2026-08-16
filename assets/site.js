@@ -134,5 +134,9 @@
 
   // Cross-cutting documentary bridge: pre-concurso minority litigation, 2019 DI248/unitary-liquidation record,
   // and the Jan-Feb-2026 Fiscalía complaint family. Complaints remain allegations; reproduced Plan language is source-qualified.
-  load('calificacion-fiscal-2012-2019-2026-bridge-20260816.js?v=20260816b');
+  load('calificacion-fiscal-2012-2019-2026-bridge-20260816.js?v=20260816b', () => {
+    // Primary-source closure layer: original AC Plan, signed 24-Oct-2019 non-convalidation Auto,
+    // signed Tenerife Diligencias 20/2026 decree and signed Valencia EG 19/2026 inhibition.
+    load('calificacion-primary-source-closures-20260816.js?v=20260816a');
+  });
 })();
