@@ -27,6 +27,18 @@ The press release framed a broad alleged systemic-fraud story. Its core journali
 
 Publication rule: these were propositions put to journalists for investigation in January 2025. Do not reproduce the original press release's categorical verbs as established fact without independent source support. The press release is valuable to explain **what story elEconomista was considering**, not to prove that story.
 
+## 16 August 2026 scope correction and publication update
+
+1. **Scope correction — VERIFIED FACT about the pitch, not about its allegations.** The public shorthand “elEconomista was preparing a Sun Park publication” is materially too narrow. The native 16 January 2025 press release shows that the proposed story was a broader public-interest investigation into hotel commercialisation, Meeting Point/FTI, RIC-related investment, public finance/support, European funds/regional incentives and risks to investors/institutions. Sun Park was the evidential asset node; it was not the whole subject.
+2. This correction does **not** elevate the press release's categorical allegations. The press release proves editorial scope and propositions put forward for investigation only.
+3. **VERIFIED FACT.** Romera's direct 17 January 2025 email expressly rejected the contemporaneous characterisation of “censorship”, said the newsroom needed everything “bien atado” and all relevant documents, and stated that he had been asked to wait until Monday for judicial orders.
+4. **VERIFIED FACT.** Romera's direct 20 January 2025 email proves receipt of `AUTO CONCURSO CULPOSO.pdf` and communicates non-publication in the words “con esto no podemos publicarlo”. The message still does not identify the original sender.
+5. **PARTY RECORD / VERIFICATION LEAD.** A contemporaneous 19 January 2025 email from the user side records its understanding of what Romera had relayed from verification calls. It attributes to the Laura/CAM side an acknowledgement that Meeting Point had commercialised the hotel “como otro cualquier tour operador” while no longer doing so; it also records Meeting Point-side denials/minimisations of the relationship and an explanation that Club Sei Lanzarote commercialisation had been contemplated but not ultimately carried out or had passed to another operator. Do not publish these as authenticated admissions until the voice notes/native communications or another sufficient source authenticate the exact statements and speaker/context.
+6. **CURRENT-EVIDENCE CONTEXT, NOT RETROACTIVE PROOF.** Later controlled material concerning FEDER, RICPE governance, RICPE→AGM→Orion architecture, title/control chronology and related institutional tracks can demonstrate that some questions raised in January 2025 became substantially more documentable. It cannot be used to claim that every 2025 press-release allegation was already established or that elEconomista possessed later-obtained evidence.
+7. **EVIDENCE-BASED HYPOTHESIS / UNRESOLVED QUESTION.** elEconomista may itself have been professionally or editorially prejudiced if its legitimate verification process was induced to abandon a potentially valuable public-interest exclusive by a materially incomplete, decontextualised or misleading characterisation of the judicial material. This is not established fact.
+8. **UNRESOLVED LEGAL/EVIDENTIAL QUESTION.** A proposition that the story was suppressed by unlawful means requires proof of the sender, the transmission wording, the order's status and scope at the time, the relevant purpose/knowledge and the legal significance of the means used. The present controlled record does not yet establish those elements.
+9. The public ES/EN elEconomista pages were therefore reframed on 16 August 2026 around the finite 17→20 January transition and the wider public-interest scope, while preserving source-protection, right-of-reply and correction safeguards.
+
 ## March 2025 Madrid querella — storyline use only unless independently corroborated
 
 A querella dated 14 March 2025, prepared for filing/reparto in Madrid against Laura Patricia Acosta Matos, records the user's side's account of the January media episode. It alleges that:
@@ -51,14 +63,17 @@ The querella itself is a party pleading, not a judicial finding. Its principal e
 - That elEconomista had a legal or ethical obligation to publish.
 - That the March 2025 querella establishes the underlying allegations; it is a pleading unless and until a judicial decision establishes otherwise.
 - That the political/public-funds propositions contained in the 16 January press release were established facts merely because they were included in a press note.
+- That later FEDER/RICPE/Orion evidence was already known to elEconomista in January 2025 or retroactively validates the full 2025 pitch.
+- That the statements about Meeting Point recorded in the 19 January party email are authenticated admissions by Laura/CAM or Meeting Point before source authentication is completed.
+- That elEconomista was in fact deceived, wronged or deprived of an exclusive by unlawful means. Those are testable consequences/hypotheses, not yet verified conclusions.
 
 ## Core question
 
-Who sent elEconomista which judicial decision, from what account and in what capacity; what was said about its finality, scope and effect; what did the newsroom verify; and what verifiable fact explains the ultimate decision not to publish?
+Who sent elEconomista which judicial decision, from what account and in what capacity; what was said about its finality, scope and effect; what did the newsroom verify; and what verifiable fact explains the ultimate decision not to publish a broader public-interest story concerning commercialisation, RIC/public finance, European/regional funds and related institutional risk?
 
 ## Controlled timeline
 
-`16 JAN PRESS PITCH → 17 JAN VERIFICATION / REQUEST FOR JUDICIAL MATERIAL → INTERVENING EXTERNAL CONTACTS TO BE AUTHENTICATED → 20 JAN ORDER RECEIVED / NON-PUBLICATION COMMUNICATED → 14 MAR QUERELLA RECORDS ONE PARTY'S ACCOUNT AND IDENTIFIES DOCUMENTARY EXHIBITS`
+`16 JAN PUBLIC-INTEREST PRESS PITCH → 17 JAN VERIFICATION / REQUEST FOR JUDICIAL MATERIAL → INTERVENING EXTERNAL CONTACTS TO BE AUTHENTICATED → 19 JAN PARTY RECORD OF REPORTED CAM/MEETING POINT RESPONSES → 20 JAN ORDER RECEIVED / NON-PUBLICATION COMMUNICATED → 14 MAR QUERELLA RECORDS ONE PARTY'S ACCOUNT AND IDENTIFIES DOCUMENTARY EXHIBITS`
 
 ## Source-completion queue
 
@@ -75,7 +90,8 @@ Who sent elEconomista which judicial decision, from what account and in what cap
 11. Maintain an evidence matrix with tiers: primary judicial record; native direct communication; preserved publication; party pleading; contemporaneous note; inference/open question.
 12. Send a formal documentary right-of-reply request to Javier Romera, director Amador G. Ayora and Editorial Ecoprensa, with a finite response window and a promise to publish corrections prominently.
 13. Conduct pre-publication legal/editorial review focused on defamation, privacy, procedural secrecy and journalistic-source protection, ensuring every paragraph distinguishes verified fact, attributed allegation, inference and unanswered question.
+14. Authenticate the exact CAM/Meeting Point statements reflected in the 19 January party email against the three voice notes and any newsroom notes/native records before upgrading the evidential classification.
 
 ## Public-page propagation rule
 
-The public page may summarise the 16 January press release only to explain the story pitched to elEconomista. It should not republish unnecessary categorical allegations from that press release. The March querella should remain primarily a chronology/source-completion reference unless its exhibits or later judicial records materially authenticate the sequence.
+The public page may summarise the 16 January press release only to explain the story pitched to elEconomista. It should not republish unnecessary categorical allegations from that press release. The March querella should remain primarily a chronology/source-completion reference unless its exhibits or later judicial records materially authenticate the sequence. Later evidence may be used to show that a January 2025 question subsequently became more documentable, but must not be described as if it had been before the newsroom at the time.
