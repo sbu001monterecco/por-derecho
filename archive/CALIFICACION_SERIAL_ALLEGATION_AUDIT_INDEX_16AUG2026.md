@@ -3,40 +3,15 @@
 **Date:** 16 August 2026  
 **Purpose:** continuity index for the allegation-by-allegation audit of the AC's 11-Feb-2019 calificación report in Concurso 36/2012.
 
-**Serial-audit control:** this index is the controlling record for which allegation has been completed and which comes next. It supersedes older maintenance/publication-control wording naming a superseded `next` allegation. Those dashboards must be consolidated on maintenance passes and must not regress the serial audit.
+**Serial-audit control:** this index is the controlling record for which allegation is current and which comes next. It supersedes older maintenance/publication-control wording naming a superseded `next` allegation.
 
 ## Method
 
-Every allegation is tested in the same order:
+Every allegation is tested in this order:
 
-`EXACT AC PROPOSITION → WHAT AC KNEW → SAME-SOURCE CONTRADICTIONS → ACTUAL ECONOMIC/JUDICIAL REALITY → WHAT THE COURT DID → WHAT THE ALLEGATION DISPLACED → KNOWLEDGE GRADE → MOTIVE GRADE → PUBLIC WORDING → OPEN EVIDENCE`.
+`EXACT AC PROPOSITION → WHAT AC KNEW → SAME-SOURCE CONTRADICTIONS → WHOLE ECONOMIC/OPERATIONAL SYSTEM → ACTOR-SPECIFIC DUTY/POWER → ACTUAL JUDICIAL REALITY → WHAT THE COURT DID → WHAT THE ALLEGATION DISPLACED → KNOWLEDGE GRADE → MOTIVE GRADE → PUBLIC WORDING → OPEN EVIDENCE`.
 
-The purpose is not to prove a predetermined global thesis that every allegation was fabricated. Where the evidence preserves a valid adverse point, it must remain visible. This makes any proposition-specific allegation of knowing overstatement materially stronger.
-
-## Mandatory 2018 control/capacity baseline
-
-Before reusing or continuing **any allegation whose causal period reaches 7 June 2018 or later**, read:
-
-`archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
-
-Controlled proposition:
-
-- Construcciones Acosta Matos, S.A. was already a recognised holder of the relevant mortgage-credit amounts before the 7-Jun-2018 control event;
-- current repository control treats **7 June 2018 as a de facto material/access/operational-control threshold, not a title date**;
-- no reviewed whole-hotel judicial delivery/order authorising whole-hotel legal possession on that date has been located;
-- `lender in possession` may be used only as a **functional comparison** (`secured creditor + de facto material control`), never as a claimed Spanish statutory office/status or synonym for ownership;
-- CR-018 remains controlling: full practical possession of the hotel as a whole is Gil Marer's allegation/inference and exact finca-by-finca reach remains open.
-
-For every post-threshold allegation add the finite capacity test:
-
-`FORMAL DUTY / POWER → ACTUAL ACCESS / CONTROL / CAPACITY → ACT / OMISSION → CONSEQUENCE → CAUSATION`.
-
-Do not attribute a post-7-Jun omission, lost revenue, deterioration, failed rescue step or operating result to Gil/LPB without first identifying what remained within Gil/LPB's practical control and what depended on the AC, CAM, security, an operator, the Community or another separately proved actor. Conversely, do not use the control event to erase adverse conduct that remained genuinely within Gil/LPB's power.
-
-**Master-storyline effect:** this does **not** change the controlled chronology or CR-018. It upgrades the legal/causal reading of an existing storyline node: `creditor status before control → de facto control threshold → later suspension → later adjudication/title`, and requires the same pre/post-control split across the calificación, preservation, rescue, valuation, bidding/accounting and extra-concursal ownership tracks.
-
-Public module:
-`assets/calificacion-2018-creditor-material-control-20260816.js`
+The purpose is not to prove a predetermined global thesis. Valid adverse points stay visible. Fragmentation is prohibited: where an allegation depends on an operating system, causation must be reconstructed across that system while responsibility remains actor-specific.
 
 ## Completed
 
@@ -70,54 +45,107 @@ Controlled result:
 Public module:
 `assets/calificacion-allegation02-thirdparty-credits-audit-20260816.js`
 
-### Allegation 03 — 6-Feb-2012 Monterecco Sun Park / Pink Canary operating agreement and unpaid rent
+## CURRENT — Allegation 03
 
-Canonical ledger:
+### 6-Feb-2012 Monterecco Sun Park / Pink Canary operating agreement, rent, Community/private-actor system and AC causation
+
+Base ledger:
 `archive/CALIFICACION_ALLEGATION_03_PINK_OPERATING_RENT_CAUSATION_LEDGER_16AUG2026.md`
 
-Controlled result:
-- Spanish Monterecco Sun Park → Pink Canary is one Spanish legal person, NIF B76564517, separate from UK Monterecco/Aweswell;
-- the original contract, recovered inside the AC's own resolution proceeding, shows €24,575/month rent + €33,915.29/month LPB Community charges assumed by the operator + a broad operator-side cost burden;
-- **Sentencia 163/2023 expressly rejects the AC's proposition that entering the agreement was itself culpably aggravating merely because rent was below the mortgage instalment**;
-- the missing Fiscalía rent expert has been recovered: Tomás Ramírez Gómez-Ojero, report dated 5-Apr-2019 / filed 25-Apr-2019 in DP 332/2014; it supports market reasonableness of the contractual pricing through modelling but does **not** reconstruct Pink's actual 2012–2015 profit/cash;
-- this corrects both sides: the AC's rent-alone economic framing was incomplete, while the defence cannot use that expert as proof that Pink made no actual profit or spent all real income on maintenance;
-- the AC did in fact bring a contract-resolution/rent proceeding; Sentencia 163/2023 records a 24-Nov-2015 judgment and a 6-Sep-2016 execution with no attachable assets;
-- the later non-payment/collection branch is materially adverse at first instance: the court finds gross fault, causation and Pink complicity; all remain appealed;
-- the judgment's actual ability-to-pay/profitability premise is partly inferential rather than an audited reconstruction of Pink accounts, and the recovered Fiscalía expert does not close that gap;
-- the judgment says no rent was ever paid while Pink's appeal alleges initial/partial payments; that factual conflict requires bank/ledger proof;
-- monetary figures €1.130m / €1.376m / €1.671m / €2.734m / €3.032m are not interchangeable and require a euro-by-euro judgment→execution bridge.
+Unitary causation ledger:
+`archive/CALIFICACION_ALLEGATION_03_UNITARY_COMMUNITY_PRIVATE_ACTORS_AC_CAUSATION_16AUG2026.md`
 
-Public module:
-`assets/calificacion-allegation03-pink-rent-operating-audit-20260816.js`
+Primary-source completion:
+`archive/CALIFICACION_ALLEGATION_03_DP1132_PRIVATE_ACTOR_SOURCE_COMPLETION_16AUG2026.md`
 
-## Next
+Public modules:
+- `assets/calificacion-allegation03-pink-rent-operating-audit-20260816.js`
+- `assets/calificacion-allegation03-unitary-community-ac-causation-20260816.js`
+- `assets/calificacion-a03-community-bridge-20260816.js`
+
+### Controlled result so far
+
+- Spanish Monterecco Sun Park → Pink Canary is one Spanish legal person, separate from UK Monterecco/Aweswell;
+- contract economics were broader than €24,575/month rent: €33,915.29/month Community burden plus operating/conservation obligations also sat with the operator;
+- Sentencia 163/2023 expressly rejects contract-entry culpability merely because rent was below the mortgage instalment;
+- the recovered Fiscalía rent expert supports market reasonableness by modelling but does not reconstruct Pink's actual 2012–2015 profit/cash;
+- Sentencia 163/2023 records Pink's defence that minority owners resisted unity of exploitation, occupancy was low and maintenance costs were high; those are party allegations reproduced by the judgment, not a sole-cause finding;
+- a contemporaneous 25-Nov-2013 accountant memorandum proposed offsetting rent against LPB obligations said to be borne by Monterecco; it is professional evidence based on supplied data, not bank proof that each offset was valid;
+- the AC's own 2019 report proves that he had notice of Gil's allegation that disputed Community debt impaired LPB's majority voting/governance and of a request that the AC require supporting Community accounts/minutes;
+- the preserved **31-Jul-2018 DP 1132/2018 AC court declaration** now directly verifies that the AC drove the security route after liquidation, authorised Community access to LPB premises, and authorised Laura Acosta Matos to enter LPB-owned locals for supervision/maintenance while expressly denying authorisation to use/occupy them;
+- that AC declaration also records that he did not know whether unity of exploitation existed and did not know the cost of maintaining the complex, materially relevant limits when later hotel income/rent was used as a causation theory;
+- the preserved **20-Jul-2018 DP 1132/2018 declaration packet** verifies the operating chain through Community office-holders: F. Mario Matos said LPB was excluded from voting for asserted Community debt, that the debt had fallen from roughly €3m to about €1m after retroactive charge reductions and that he did not know its origin; he also linked the 18-May security measure to the AC and CAM liquidity/payments to urgent Community costs including security/insurance;
+- Shaila's declaration says Community decisions were communicated to and had AC approval, lock changes were by Community agreement/approval, she transmitted an AC access rule to guards, and CAM/JDAM were permitted entry as owners;
+- Laura's declaration says she attended May/June Community meetings, knew security would be installed and went on 7-Jun-2018 to access; the AC's separate declaration supplies direct cross-corroboration that he had authorised Laura to enter LPB locals for supervision/maintenance;
+- José Daniel's July declaration is mandatory counterevidence: he acknowledged inspection/project visits but denied forced/clandestine access and denied claiming ownership of the whole complex;
+- a separate 26-Feb-2018 Logalty/Burovoz transcript used in filed NEXUS 36 materials contains party-attributed statements about future entry, security, an agreement with the Community and works; the speakers are formally numbered and native audio/identity authentication remains required, so this is a high-value planning lead rather than a confession or verified admission;
+- the adverse AP Las Palmas treatment of the 2018 access episode remains visible: provisional criminal archive was upheld and Community maintenance/access authority plus the AC's account formed part of a lawful/civil alternative explanation; this was not a whole-hotel possession order for CAM;
+- predecessor Community conduct is not automatically CAM conduct: knowledge/adoption/instruction/use/escalation/benefit must be proved actor by actor;
+- the AC did litigate rent; do not say he did nothing;
+- the later rent non-collection branch remains materially adverse at first instance: gross fault, causation and Pink complicity, all appealed;
+- the court rejected/narrowed other AC theories: contract-entry reproach, the €737k self-debt construction, the specific `connivencia`/alzamiento use and the personal complicity extension to Patricia;
+- actual rent payments, Pink cash/profit, legally valid set-offs, Community debt validity, voting legality, pre-26-Feb communication bridge and the €2.733m→€3.032m quantum bridge remain unresolved.
+
+### Controlling unitary question
+
+> **Did the calificación convert a downstream cash-flow symptom of a hotel-wide governance and operating conflict into personal culpability against Gil/Pink without first reconstructing the whole causal system that the AC himself knew about and later acted through?**
+
+Classification: **EVIDENCE-BASED ACCOUNTABILITY QUESTION — NOT AN ADJUDICATED CONSPIRACY/FRAUD FINDING.**
+
+The phrase `Community hijacking` remains a party characterisation. Public-safe wording is `alleged functional capture / instrumentalisation / governance displacement of the Community` unless and until the debt, voting, mandate, communication and private-actor instruction chain is proved.
+
+### Required actor-specific model
+
+`Community debt/vote/governance → exploitable inventory → occupancy/revenue → costs and set-offs → LPB/Pink cash → AC knowledge and action → security/access authority → Community implementation → private-owner use/benefit → operational effect → realistically recoverable rent → specific insolvency aggravation`.
+
+Do not substitute later title for earlier authority, and do not treat a protective Community/security explanation as disproved merely because the same mechanism may also have produced practical control effects.
+
+## Allegation 03 closure gate — do not advance yet
+
+Before moving to Allegation 04, preserve and, where obtainable, complete:
+
+1. complete LPB/Pink bank/rent/Community/set-off ledger from 2012 onward;
+2. proof whether the 25-Nov-2013 accountant compensation memorandum reached the AC;
+3. court-certified DP 1132/2018 declarations/audiovisual and underlying AC/Community/Laura/security authorisations;
+4. Community accounts, original debt certificates, invoices, charge-reduction calculations, minutes and voting records sufficient to test the alleged governance displacement;
+5. SEGURCAN contract, funding/payment trail, instructions, guard logs and locksmith/key/code record;
+6. native 26-Feb-2018 audio/Logalty/Burovoz certificate and identity/integrity verification plus the pre-26-Feb communication bridge;
+7. exact CAM Community payments/liquidity dates, amounts and use of funds;
+8. PMS/occupancy/ADR/receipts and operating-cost evidence sufficient to allocate causation rather than assert a sole cause;
+9. complete 24-Nov-2015 judgment / 6-Sep-2016 execution quantum bridge;
+10. exact AC investigation/reconciliation record concerning the Community allegations he had received; and
+11. deployment verification of the unitary public module and Community cross-link.
+
+## QUEUED AFTER A03 CLOSURE
 
 ### Allegation 04 — substantial accounting breach / double accounting / relevant accounting irregularity — Art. 164.2.1 LC
 
-Required decomposition:
+Required decomposition remains preserved for the next serial step:
 
-1. **Exact statutory accusation** — what the AC alleged under Art. 164.2.1 LC and whether he pleaded absence of books, double accounting, relevant irregularity, or several alternatives.
-2. **Books legally required** — Diario, Inventarios/Cuentas Anuales and any other applicable records; do not treat every requested working paper as a statutory book.
-3. **What existed** — distinguish statutory books, annual accounts, trial balances, accountant files, tax material, bank ledgers and management records.
-4. **What reached the AC** — date-by-date request → response → delivery → missing item → later receipt/use.
-5. **Reconstructability** — whether LPB's patrimonial/financial position could in fact be reconstructed from material available to the AC, even if formal books were incomplete.
-6. **Materiality** — what specific missing/irregular accounting matter prevented understanding of insolvency and by what causal/evidential mechanism.
-7. **AC's own use of the accounting** — inventory valuations, receivables, ratios, historic figures and later pleadings must be reconciled with any broad claim that accounts were unintelligible/unavailable.
-8. **Accountant/expert testimony** — identify Jonathan Simó Morales and any other accountant/expert evidence and the exact documents they said existed/did not exist.
-9. **Judicial result** — what Sentencia 163/2023 actually found under Art. 164.2.1, separately from collaboration and other grounds.
-10. **Appeal** — exact grounds, including any contradiction between acknowledged balances/accounts and the conclusion of substantial accounting breach.
-11. **Knowledge / intent** — distinguish deficient bookkeeping from knowing concealment or false accounting; do not infer the latter without actor-specific proof.
-12. **Public wording** — preserve any valid adverse accounting finding while testing whether the original accusation was broader than the evidence ultimately supported.
+1. exact statutory accusation;
+2. books legally required;
+3. what existed;
+4. what reached the AC;
+5. reconstructability;
+6. materiality;
+7. AC's own use of accounting;
+8. accountant/expert testimony;
+9. judicial result;
+10. appeal;
+11. knowledge/intent distinction;
+12. public wording preserving valid adverse findings without broadening them.
 
 ## Public integrity rule
 
-Never let the serial audit become a reverse advocacy exercise. For each allegation show:
+For each allegation show:
 
 - strongest adverse fact;
 - strongest same-source contradiction;
+- whole-system causation where necessary;
 - first-instance judicial result;
 - appeal status;
 - actor knowledge actually proved;
-- what remains an allegation/hypothesis.
+- lawful alternative explanation;
+- what remains allegation/hypothesis.
 
 This index is the deletion-safe handover for continuing the serial audit even if the originating ChatGPT thread disappears.
