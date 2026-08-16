@@ -13,7 +13,7 @@ This file records only propositions recoverable from the current evidence refres
 
 The Valencia defendant is now identified fully from the controlled court record: **CAIXABANK, S.A.**
 
-Read together with `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AUG2026.md` whenever the Valencia banking claim is used in Calificación, recovery, causation, patrimonial-prejudice or actor-accountability analysis.
+Read together with `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AUG2026.md` and `archive/CAIXABANK_AC_WITNESS_ORIGIN_ADHESION_CONTROL_16AUG2026.md` whenever the Valencia banking claim is used in Calificación, recovery, causation, patrimonial-prejudice, AC-witness or actor-accountability analysis.
 
 ## Current procedural node — corrected 16-Aug-2026
 
@@ -48,7 +48,7 @@ This is therefore a **live, material and potentially substantial recovery claim*
 
 The same bank expert report characterises **€573,591.53** as within the Administrador Concursal authorisation and **€550,854.31** as beyond it. Until the native AC authorisation is independently controlled, that split must remain expressly attributed to CaixaBank's expert report.
 
-## Administrador Concursal / witness bridge
+## Administrador Concursal / witness bridge — origin/adhesion correction
 
 The court citations identify **Francisco de Borja Rodríguez-Batllori Laffitte**, Administrador Concursal in Concurso 36/2012, as:
 
@@ -56,14 +56,38 @@ The court citations identify **Francisco de Borja Rodríguez-Batllori Laffitte**
 
 This appears in the 23-Apr-2024 citation and again in the later citation issued 29-Oct-2024 for 6-Nov-2025.
 
+That formal court wording must now be read together with the more precise contemporaneous counsel report. On **30-Oct-2024**, immediately after the Audiencia Previa, Javier Sixto reported:
+
+> “Se admitió la testifical de Borja, a petición de Caixabank, a la cual nos adherimos.”
+
+Source: Gmail message ID `192de7e1c6b3837f`, Javier Sixto, subject `RE: Valencia y próxima videollamada`, 30-Oct-2024.
+
 The verified proposition is therefore:
 
-- **CaixaBank itself requested/proposed Borja as a witness** in ORD 1859/2023-9;
-- Aweswell also proposed him;
+- **CaixaBank itself initiated/requested/proposed Borja's witness evidence** in ORD 1859/2023-9;
+- **Aweswell's lawyers adhered to CaixaBank's request**;
+- later court shorthand records Borja as proposed by claimant and defendant because that was the resulting procedural posture after adhesion;
+- it is **not fair or evidentially precise to say simply that “both parties asked for the AC”** or to imply equal, simultaneous or independent sponsorship by Aweswell and CaixaBank;
 - Borja remains part of the documented witness/evidential history of the Valencia action;
 - no later controlled source found through 16-Aug-2026 revokes that status, although no fresh 2026 witness citation has been located.
 
-The witness citations do not by themselves prove that Borja's evidence is substantively favourable to CaixaBank. Public wording must not convert “requested/proposed by CaixaBank” into proof of bias, collusion, conflict or testimony direction.
+### Why Aweswell adhered — source-status control
+
+Gil Marer's present account is that Aweswell's lawyers considered that they had no sensible procedural choice, did not want to create procedural risk/prejudice by refusing to adhere, and felt effectively compelled to accept the witness position once CaixaBank had requested Borja.
+
+The current refresh has **not located a contemporaneous lawyer communication using the literal formulations “no choice”, “coerced”, or an equivalent express statement that procedural risk compelled the adhesion**. Accordingly, preserve this as **CLIENT-REPORTED PROCEDURAL CONTEXT**, not as a separately verified documentary fact, until such a source is recovered.
+
+The controlled short form is:
+
+> **Borja's testimony was requested by CaixaBank; Aweswell adhered.**
+
+The witness citations and adhesion sequence do not by themselves prove that Borja's evidence is substantively favourable to CaixaBank. Public wording must not convert “requested/proposed by CaixaBank” into proof of bias, collusion, conflict or testimony direction.
+
+### Separation/removal sequencing
+
+The request to separate/remove the Administrador Concursal remains a live appellate track, including **Rollo 3304/2025 (LPB)** and **Rollo 3319/2025 (Aweswell)**, accumulated by **Auto 223/2026 of 15-Jul-2026** in the current controlled appellate record.
+
+The project/client's present strategic objective is to obtain a favourable separation/removal decision **before Borja's Valencia witness evidence proceeds**. Record this only as a **strategic objective / hoped-for sequencing outcome**. Do not state that separation will be granted, that it will necessarily precede the Valencia hearing, or that any separation would automatically exclude or determine his Valencia evidence.
 
 ## Calificación counter-evidence bridge
 
@@ -153,6 +177,9 @@ Do not infer that:
 - termination or satisfaction of a later execution extinguished all independent banking, damages, restitution or extraconcursal rights;
 - the €1,124,445.84 pleaded figure is already adjudicated or certain to be recovered;
 - CaixaBank's proposal of Borja as a witness proves the substantive direction of his testimony, bias, collusion or conflict;
+- Aweswell's adhesion proves that it independently selected or affirmatively wanted Borja as its own witness;
+- the client-reported procedural-risk rationale is a verified lawyer statement unless an express contemporaneous source is recovered;
+- a favourable AC-separation ruling will occur or will automatically control the Valencia witness issue;
 - the 2023 Valencia lawsuit proves 2019 Fiscal knowledge or pre-28-Sep-2023 judicial knowledge.
 
 ## Next retrieval priorities
@@ -160,14 +187,16 @@ Do not infer that:
 1. Certified/public-safe claim, defence, orders and complete expert reports in ORD 1859/2023-9.
 2. Native AC authorisation underlying CaixaBank's expert-report characterisation of €573,591.53.
 3. Any fresh 2026 witness citations / admitted-evidence order for the 9-Oct-2026 trial.
-4. Native mortgage and linked-product instruments.
-5. Complete account statements and recovery ledgers through June 2012.
-6. Complete Execution 90/2012 file.
-7. Insolvency administrator's native credit-recognition workbook and supporting calculations.
-8. Assignment deeds, asset schedules, prices, servicing instructions and procedural substitutions.
-9. Dación, cancellation, satisfaction and estate-cash records.
-10. Earlier pre-2019 / pre-28-Sep-2023 sources proving which bank-dispute/recovery facts were actually known to the AC, Fiscal and Judge.
+4. Any contemporaneous lawyer communication, hearing note or pleading expressly explaining the procedural-risk rationale for Aweswell's adhesion to CaixaBank's Borja witness request.
+5. Any new order in Rollo 3304/2025 / 3319/2025 bearing on separation/removal before the Valencia testimony.
+6. Native mortgage and linked-product instruments.
+7. Complete account statements and recovery ledgers through June 2012.
+8. Complete Execution 90/2012 file.
+9. Insolvency administrator's native credit-recognition workbook and supporting calculations.
+10. Assignment deeds, asset schedules, prices, servicing instructions and procedural substitutions.
+11. Dación, cancellation, satisfaction and estate-cash records.
+12. Earlier pre-2019 / pre-28-Sep-2023 sources proving which bank-dispute/recovery facts were actually known to the AC, Fiscal and Judge.
 
 ## Control sentence
 
-**ORD 1859/2023-9 against CAIXABANK, S.A. is a live and material recovery route which must be reconciled with Calificación causation and patrimonial-loss analysis; the claim is contested and not adjudicated, and Borja's verified witness status is that CaixaBank requested/proposed him while Aweswell also proposed him.**
+**ORD 1859/2023-9 against CAIXABANK, S.A. is a live and material recovery route which must be reconciled with Calificación causation and patrimonial-loss analysis; the claim is contested and not adjudicated. Borja's testimony was requested by CaixaBank and Aweswell adhered. Later “both parties” court wording reflects that resulting procedural posture and must not be flattened into equal or independent sponsorship. The client's procedural-risk/coercion explanation remains client-reported pending an express counsel source, and the live AC-separation track is strategically hoped to be resolved favourably before the Valencia testimony without assuming that outcome.**
