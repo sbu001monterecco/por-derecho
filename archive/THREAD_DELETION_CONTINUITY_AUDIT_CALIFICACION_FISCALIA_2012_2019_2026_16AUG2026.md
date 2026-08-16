@@ -1,7 +1,9 @@
 # THREAD-DELETION CONTINUITY AUDIT — CALIFICACIÓN / FISCALÍA / 2012–2019–2026 SOURCE BUNDLE
 
 **Date:** 16 August 2026  
-**Thread status:** intended for eventual deletion  
+**Thread status:** **DELETION-SAFE AT REPOSITORY-KNOWLEDGE LEVEL**  
+**Primary merge:** PR #217 — merge `d000f0158af9c2c9324e8e90f9c233f66a75d05f`  
+**Pages verification:** build `1155524163` / workflow run `31967682462` — **built/success, no error**, exact merge SHA  
 **Continuity target:** fresh ChatGPT must reconstruct the material source intelligence without conversational memory.
 
 ## 1. Material intelligence created in the originating thread
@@ -29,7 +31,7 @@ A fresh thread must read:
 5. `archive/FMMM_COMMUNITY_AC_LIQUIDATION_JANFEB2026_SOURCE_BUNDLE_INGEST_AND_RETRIEVAL_GATE_16AUG2026.md`;
 6. current `archive/CORRECTION_REGISTER.md`, `archive/MISSING_EVIDENCE_REGISTER.md` and proceedings controls relevant to the question.
 
-The new retrieval gate contains exact filenames, SHA-256 identifiers, source-status classifications, chronology, public-language limits and missing-primary-source targets.
+The root startup protocol now contains a direct mandatory Rule 20 pointing future threads to this source gate. The gate contains exact filenames, SHA-256 identifiers, source-status classifications, chronology, public-language limits, search aliases and missing-primary-source targets. This direct-path startup rule is controlling even if GitHub code-search indexing lags.
 
 ## 3. Assertions a fresh thread must recover correctly
 
@@ -51,15 +53,28 @@ The Jan–Feb-2026 filings prove that judicial-supervision, unit/Community, inso
 
 The 8-Feb pleading reports a 27-Jan-2026 Tenerife decree in Diligencias 20/2026; the signed decree was not part of this source bundle and the report must remain unverified until independently recovered.
 
-## 4. Public-site state intended by this thread
+## 4. Public-site state actually deployed
 
-The public implementation must expose a bilingual, source-qualified documentary bridge on the calificación page and connected Community/takeover/sale-lender/Valencia/institutional-accountability/legal-notebook/update routes.
+PR #217 merged the public runtime module `assets/calificacion-fiscal-2012-2019-2026-bridge-20260816.js` and added its loader to `assets/site.js`.
 
-Mandatory reader-facing distinction:
+The module is source-routed to:
+
+- the ES/EN Calificación landing pages, with the full 2012 → 2019 → 2026 documentary bridge;
+- the ES/EN Community instrumentalisation pages;
+- the ES/EN 7-Jun-2018 takeover pages;
+- the ES/EN sale/lender-convergence pages;
+- the ES/EN CaixaBank Valencia claim pages;
+- the ES/EN institutional-accountability pages;
+- the ES/EN judicial-control/prevaricación legal-notebook pages;
+- the ES/EN updates pages.
+
+Mandatory reader-facing distinction remains:
 
 > **These documents show allegations, prior notice, contemporaneous objections and the questions formally put to institutions. They do not establish criminal liability.**
 
-No raw private complaint PDF, personal identifier, signature, private address or unnecessary personal data is to be published.
+No raw private complaint PDF, personal identifier, signature, private address or unnecessary personal data was published by this module.
+
+GitHub Pages built the exact merge commit `d000f0158af9c2c9324e8e90f9c233f66a75d05f` successfully in build `1155524163` / workflow run `31967682462`; the Pages status endpoint reported `built` with no error. External rendered-route retrieval remained unavailable through the current web search/URL-safety path, so deployment verification rests on exact-SHA Pages build plus merged-source/loader verification rather than a browser-rendered DOM capture.
 
 ## 5. Evidence custody
 
@@ -79,14 +94,16 @@ If native custody is later activated, preserve the originals under stable IDs wi
 - signed Valencia→Arrecife inhibition and complete EG 19/2026 record;
 - source-complete Community accounting/maintenance and 2017–18 valuation record.
 
-## 7. Deletion decision
+## 7. Final deletion decision
 
-This thread becomes **DELETION-SAFE AT REPOSITORY-KNOWLEDGE LEVEL** only when:
+All repository-knowledge continuity gates requested for this thread are now satisfied:
 
-- the canonical source gate is merged to `main`;
-- `CHATGPT_START_HERE.md` points to it by direct path;
-- the bilingual public module is merged and loaded through the site bootstrap;
-- the live Spanish and English calificación pages are verified after GitHub Pages deployment;
-- the merge/deployment state is recorded.
+- **canonical source gate merged to `main`: YES**;
+- **root `CHATGPT_START_HERE.md` direct-path rule: YES — Rule 20**;
+- **bilingual Calificación/public cross-route module merged and loaded: YES**;
+- **exact merge SHA deployed by GitHub Pages without error: YES**;
+- **deployment state recorded in this canonical thread audit and dedicated deployment evidence: YES**.
 
-Native evidence-custody resilience is a separate status and must not be inferred from this audit.
+Therefore, deletion of the originating ChatGPT conversation will **not** remove the canonical project knowledge created from this source bundle. A fresh Project Sun Rock / Por Derecho thread following `CHATGPT_START_HERE.md` will be routed to the source gate and recover the material source inventory, evidential classifications, corrections, chronology, public implementation, unresolved questions and retrieval targets.
+
+**Remaining boundary:** native evidence-custody resilience for CF-01–CF-10 is separate and must not be inferred from this deletion-safe status.
