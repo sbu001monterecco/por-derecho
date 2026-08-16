@@ -35,7 +35,7 @@
     accusation: '<strong>I allege that judicialising this materially false narrative operated criminally in favour of private actors and, in particular, the Acosta Matos perimeter.</strong> The asymmetry I allege is blame, liabilities and prejudice concentrated on Pink/Gil while control, title, operation, finance and benefit questions on the other side followed a materially different track. I do not claim DP 1901/2026 has already proved that thesis or that a criminal court has already convicted the private actors. I demand an actor-by-actor reconstruction of who knew what, who used which document, who obtained or expected which advantage and through what act or flow.',
     chainTitle: 'The chain that must be audited',
     chain: 'AC ALLEGES → FISCAL ENDORSES → JUDGE ADOPTS FACTS → JUDGMENT IMPOSES CONSEQUENCES → DOCUMENT GAINS PORTABLE AUTHORITY → PRIVATE USE / BENEFIT IS INVESTIGATED',
-    dp: 'Open DP 1901/2026 →',
+    dp: 'Open the Spanish DP 1901/2026 evidence page →',
     note: 'Evidential control: judicial adoption of the Ground Four premises is documented. Criminal favouring, intent, procurement of the outcome and private benefit are Gil Marer’s allegations and require independent proof.'
   };
 
@@ -50,7 +50,8 @@
   const section = document.createElement('section');
   section.className = 'section cja';
   section.dataset.calJudicialAdoption20260816 = '1';
-  section.innerHTML = `<div class="shell cja-wrap"><div class="cja-box"><div class="cja-kicker">${d.kicker}</div><h2>${d.title}</h2><p>${d.lead}</p><div class="cja-grid">${cards}</div><div class="cja-acc"><h3>${d.accusationTitle}</h3><p>${d.accusation}</p></div><div class="cja-chain"><div class="cja-kicker" style="color:#d6b16b">${d.chainTitle}</div>${d.chain}</div><div class="cja-actions"><a class="button secondary" href="${es ? '../dp-1901-2026/' : '../dp-1901-2026/'}">${d.dp}</a></div><p class="cja-note">${d.note}</p></div></div>`;
+  const dpHref = es ? '../dp-1901-2026/' : '../../es/dp-1901-2026/';
+  section.innerHTML = `<div class="shell cja-wrap"><div class="cja-box"><div class="cja-kicker">${d.kicker}</div><h2>${d.title}</h2><p>${d.lead}</p><div class="cja-grid">${cards}</div><div class="cja-acc"><h3>${d.accusationTitle}</h3><p>${d.accusation}</p></div><div class="cja-chain"><div class="cja-kicker" style="color:#d6b16b">${d.chainTitle}</div>${d.chain}</div><div class="cja-actions"><a class="button secondary" href="${dpHref}">${d.dp}</a></div><p class="cja-note">${d.note}</p></div></div>`;
 
   const amount = document.querySelector('[data-calificacion-3032010-20260816]');
   const opening = document.querySelector('[data-calificacion-opening-20260816]');
