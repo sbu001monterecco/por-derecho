@@ -79,15 +79,17 @@
 
   // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk,
   // Allegation 01 collaboration audit, Allegation 02 third-party-credit audit, Allegation 03 Pink/rent operating audit,
-  // €3.032m allegation, judicial-adoption/private-actor-effect bridge, then the June-2026 Fiscalía EG49 response decrees.
+  // then its non-fragmented Community/private-actor/AC causation layer before the €3.032m and institutional modules.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
       load('calificacion-allegation01-collaboration-audit-20260816.js?v=20260816a', () => {
         load('calificacion-allegation02-thirdparty-credits-audit-20260816.js?v=20260816a', () => {
           load('calificacion-allegation03-pink-rent-operating-audit-20260816.js?v=20260816a', () => {
-            load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
-              load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
-                load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+            load('calificacion-allegation03-unitary-community-ac-causation-20260816.js?v=20260816a', () => {
+              load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
+                load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
+                  load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+                });
               });
             });
           });
@@ -95,6 +97,9 @@
       });
     });
   });
+
+  // Community dossier cross-link into the non-fragmented Allegation-03 causation analysis.
+  load('calificacion-a03-community-bridge-20260816.js?v=20260816a');
 
   // Calificacion: 2018 recognised secured-credit holder plus de facto material-control threshold;
   // separates creditor status, physical control, later adjudication and pre/post-control causation.
