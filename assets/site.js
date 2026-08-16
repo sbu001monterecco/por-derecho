@@ -72,16 +72,18 @@
   load('cgpj-alzada-regage-20260816.js?v=20260816a');
 
   // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk,
-  // Allegation 01 collaboration audit, Allegation 02 third-party-credit audit, Allegation 03 Pink/rent operating audit,
-  // €3.032m allegation, judicial-adoption/private-actor-effect bridge, then the June-2026 Fiscalía EG49 response decrees.
+  // Allegation 01 collaboration audit, Allegation 02 third-party-credit audit, Allegation 03 Pink/rent audit,
+  // its non-fragmented Community/private-actor/AC causation layer, then €3.032m and institutional follow-ups.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
       load('calificacion-allegation01-collaboration-audit-20260816.js?v=20260816a', () => {
         load('calificacion-allegation02-thirdparty-credits-audit-20260816.js?v=20260816a', () => {
           load('calificacion-allegation03-pink-rent-operating-audit-20260816.js?v=20260816a', () => {
-            load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
-              load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
-                load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+            load('calificacion-allegation03-unitary-community-ac-causation-20260816.js?v=20260816a', () => {
+              load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
+                load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
+                  load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+                });
               });
             });
           });
@@ -89,6 +91,10 @@
       });
     });
   });
+
+  // The unitary Allegation-03 module also inserts a controlled cross-link on the Community ES/EN dossiers.
+  // Load independently so those routes receive the bridge even though the Calificacion-specific chain does not render there.
+  load('calificacion-allegation03-unitary-community-ac-causation-20260816.js?v=20260816a');
 
   // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
   load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
