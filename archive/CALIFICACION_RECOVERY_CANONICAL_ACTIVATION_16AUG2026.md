@@ -11,23 +11,47 @@ This file makes the 16-Aug-2026 Calificación source refresh impossible to miss 
 
 Any future search, scan, draft, website update or institutional analysis touching one or more of the following terms must read the controlling source refresh before relying on older summaries:
 
-`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
+`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `truth inversion` · `inversión de la verdad` · `inversion of agency` · `inversión de agencia` · `diversion of scrutiny` · `desvío del foco` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
 
 Read first:
 
-1. `archive/CALIFICACION_RECOVERY_AGENCY_SOURCE_REFRESH_16AUG2026.md`;
-2. `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` whenever June-2018 ONA/operator, finance, valuation, due-diligence, conclusion/exit, `rescue package`, Stoneweg/VSO or Judge/AC knowledge is in scope;
-3. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` — legacy filename retained, but its controlling vocabulary is commercial normalisation / conclusion;
-4. `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AUG2026.md` whenever CaixaBank, bank-side causation/recovery, Valencia ORD 1859/2023-9, Borja's witness role, patrimonial prejudice or net-loss analysis is in scope;
-5. `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md` for the banking/concursal accounting bridge;
-6. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`;
-7. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`;
-8. `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md` and the current allegation ledgers;
-9. `archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md`;
-10. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
-11. where Judge Alberto López Villarrubia is in scope, the current unitary Judge allegation ledger and `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`;
-12. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
-13. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
+1. `archive/CALIFICACION_UNITARY_TRUTH_INVERSION_DIVERSION_THESIS_16AUG2026.md` — controlling unitary public-thesis layer; it prevents fragmentation but does not replace proposition-level proof;
+2. `archive/CALIFICACION_RECOVERY_AGENCY_SOURCE_REFRESH_16AUG2026.md`;
+3. `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` whenever June-2018 ONA/operator, finance, valuation, due-diligence, conclusion/exit, `rescue package`, Stoneweg/VSO or Judge/AC knowledge is in scope;
+4. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` — legacy filename retained, but its controlling vocabulary is commercial normalisation / conclusion;
+5. `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AUG2026.md` whenever CaixaBank, bank-side causation/recovery, Valencia ORD 1859/2023-9, Borja's witness role, patrimonial prejudice or net-loss analysis is in scope;
+6. `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md` for the banking/concursal accounting bridge;
+7. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`;
+8. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`;
+9. `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md` and the current allegation ledgers;
+10. `archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md`;
+11. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
+12. where Judge Alberto López Villarrubia is in scope, the current unitary Judge allegation ledger and `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`;
+13. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
+14. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
+
+## Controlling unitary truth-inversion / diversion thesis
+
+`PARTY ALLEGATION / EVIDENCE-LED THESIS — NOT AN ADJUDICATED FINDING`
+
+The current strongest Calificación page does **not** use `false` to mean that every underlying datum was fabricated. It challenges the AC/Fiscal/judgment package as a **false culpability narrative** where a real, incomplete or disputed fragment is detached from the system that produced it, real power/capacity is not reconstructed, agency or causation is reassigned to Gil/LPB/Pink/Patricia, and scrutiny is displaced from debts, third parties, Community governance, AC recovery/protection choices, control/access, banking acts or documented continuity/exit work.
+
+The controlling shorthand is:
+
+> **truth inversion + diversion of scrutiny**
+
+The finite analytical grammar is:
+
+`RAW FACT → OMITTED CONTEXT → REAL POWER / CAPACITY → INVERTED AGENCY → ATTRIBUTED CAUSATION → CULPABILITY → INSTITUTIONAL REUSE → WHAT DISAPPEARED FROM SCRUTINY`.
+
+`Diversion` is first a description of function/effect. A claim that diversion was deliberately designed to protect a person, conceal wrongdoing or obtain a private benefit requires actor-specific evidence of knowledge, purpose and causal use. Rejected or narrowed AC allegations do not automatically prove knowing falsehood, prevaricación, collusion or criminal intent.
+
+The unitary thesis and serial audit are reciprocal controls:
+
+- the unitary thesis prevents atomisation of one hotel/economic/Community/concursal system;
+- the serial allegation ledgers prevent the unitary thesis becoming a slogan or pre-decided conclusion.
+
+Every allegation must therefore preserve its strongest adverse fact, actual judicial treatment and appeal status while asking what agency/causation proposition was added and what scrutiny the framing displaced.
 
 ## Superseded source-status proposition
 
@@ -123,6 +147,10 @@ and
 
 `POWER / DUTY → VERIFIED KNOWLEDGE → ACT / OMISSION → IMPLEMENTATION → CONSEQUENCE → CAUSATION → REMEDY / QUANTUM`.
 
+Before those actor-specific tracks are fragmented into individual allegations, apply the unitary inversion/diversion grammar:
+
+`RAW FACT → OMITTED CONTEXT → REAL POWER / CAPACITY → INVERTED AGENCY → ATTRIBUTED CAUSATION → CULPABILITY → INSTITUTIONAL REUSE → WHAT DISAPPEARED FROM SCRUTINY`.
+
 Where June-2018 commercial normalisation is material, add:
 
 `OPERATING CONTRACT / AUTHORITY → FINANCE / CONDITIONS → AC DEBT OUTPUT → JUDICIAL OUTPUT → COMMUNITY / CONTROL CAPACITY → CLOSING / FAILURE → OPERATING CONDITION → LATER CALIFICACIÓN USE`.
@@ -131,7 +159,7 @@ Where CaixaBank/banking causation is material, add:
 
 `BANKING ACT / PRODUCT / LOSS → CONTEMPORANEOUS KNOWLEDGE → AC TREATMENT / AUTHORISATION → PRESENT CAIXABANK CLAIM → WITNESS / EXPERT RECORD → CONTESTED QUANTUM → POSSIBLE NET-LOSS EFFECT`.
 
-A future thread that discusses obstruction, non-collaboration, accounting failure, Pink/rent, late filing, third-party/CEXP credits, failure to normalise/exit or culpable management without checking the positive-agency and June-2018 commercial architecture is incomplete. A future thread that discusses patrimonial loss or causation without checking the live CaixaBank recovery track is likewise incomplete where the banking relationship materially overlaps the asserted loss.
+A future thread that discusses obstruction, non-collaboration, accounting failure, Pink/rent, late filing, third-party/CEXP credits, failure to normalise/exit or culpable management without checking the unitary thesis, the positive-agency record and June-2018 commercial architecture is incomplete. A future thread that discusses patrimonial loss or causation without checking the live CaixaBank recovery track is likewise incomplete where the banking relationship materially overlaps the asserted loss.
 
 ## Public-site propagation required
 
@@ -141,6 +169,7 @@ The ES/EN Calificación pages must visibly carry:
 - the allegations the judgment rejected or narrowed;
 - the live appeal/status boundary;
 - the source-complete AC contradiction/qualification audit;
+- the **unitary truth-inversion/diversion thesis**, clearly identified as Gil Marer's party allegation/evidence-led thesis rather than a judicial finding;
 - the serial allegation audits;
 - the June-2026 Fiscalía EG49 response and unanswered textual question;
 - the positive-agency / recovery-through-adversity chronology;
@@ -154,20 +183,20 @@ The recovery/restitution pages must link back to the Calificación evidence audi
 
 ## Professional-reader optimisation control
 
-Before the next major Calificación redesign, use the legal/judicial reader simulation plan as a publication control. Its core conclusion is that the page should become **more difficult to dismiss before becoming more accusatory**.
+Before any further major Calificación redesign, use both the unitary truth-inversion ledger and the legal/judicial reader simulation plan as publication controls. Their combined principle is that the page should become **more difficult to dismiss before becoming more accusatory**.
 
-Priority design changes:
+The current strongest opening has implemented the central reading-order correction: verified appeal status and the unitary evidential thesis now precede any attempt to derive subjective criminal intent from the disputed propositions. Future modules should continue toward:
 
-1. lead with case status, what the judgment retained/rejected/narrowed, and the documentary audit before the strongest mens-rea/criminal characterisations;
-2. add a `90-SECOND PROFESSIONAL READ` with five verified propositions, five finite questions and three open evidence gaps;
-3. make the `EVIDENCE BEFORE ACTOR` matrix the central accountability device;
-4. add `STRONGEST DEFENCE → WHAT REMAINS AFTER ACCEPTING THAT DEFENCE` for AC, Fiscal and Judge;
-5. separate concursal/appellate merits, institutional accountability, knowledge proof and criminal allegation into distinct lanes;
-6. add a clear RPL 2523/2025 non-interference boundary: the website is public traceability, not a substitute for or request to influence the appellate record;
-7. reduce detailed elEconomista intent/procurement material on the main Calificación route and keep it in the dedicated media dossier while preserving downstream-effect linkage;
-8. add `WHAT WOULD CHANGE OUR VIEW?` and public correction/rebuttal architecture;
-9. apply explicit legal-status chips to every high-risk proposition;
-10. keep the serial allegation audit visually dominant over rhetorical modules.
+1. case status and exact retained/rejected/narrowed findings before mens rea;
+2. a `90-SECOND PROFESSIONAL READ` with five verified propositions, five finite questions and three open evidence gaps;
+3. an `EVIDENCE BEFORE ACTOR` matrix as the central accountability device;
+4. `STRONGEST DEFENCE → WHAT REMAINS AFTER ACCEPTING THAT DEFENCE` for AC, Fiscal and Judge;
+5. separate concursal/appellate merits, institutional accountability, knowledge proof and criminal allegation lanes;
+6. a clear RPL 2523/2025 non-interference boundary: the website is public traceability, not a substitute for or request to influence the appellate record;
+7. detailed elEconomista intent/procurement material kept in the dedicated media dossier rather than dominating the main Calificación opening;
+8. `WHAT WOULD CHANGE OUR VIEW?` and public correction/rebuttal architecture;
+9. explicit legal-status chips on high-risk propositions;
+10. serial allegation proof visually dominant beneath the unitary thesis.
 
 The target institutional reading position is: **a sceptical professional reader should be able to conclude that proposition-specific documentary issues require checking even without accepting Gil Marer's criminal allegations.**
 
@@ -210,6 +239,8 @@ and
 
 `OLD CLAIM → re-test against new source → correct/supersede → remove stale public/search wording`.
 
+For any new Calificación allegation or counter-source, first update the proposition-level ledger and then re-test whether it changes the unitary truth-inversion/diversion thesis. Do not allow a new adverse fact to be suppressed by the thesis, and do not allow a narrow adverse fact to silently recreate a global culpability narrative.
+
 For the June-2018 commercial-normalisation track specifically:
 
 `NEW OPERATOR / FINANCE / COURT / AC SOURCE → A03 commercial-normalisation source completion → A03 serial/unitary ledger → Judge knowledge matrix if relevant → correction/missing evidence → public counter-record → master storyline/search entry`.
@@ -220,4 +251,4 @@ For the CaixaBank track specifically:
 
 ## Control sentence
 
-**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; they must treat the June-2018 node as a commercial normalisation/refinancing/hotel-operation/insolvency-exit architecture whose existence and institutional dependencies are documented while its causal necessity, formal filing, closing and failure remain actor-specific questions; where banking loss or causation is material, they must also reconcile the live CAIXABANK, S.A. ORD 1859/2023-9 recovery claim and Borja's documented cross-proceeding witness role without converting a pending contested claim or witness proposal into an adjudicated outcome, proven bias or retrospective actor knowledge; and they must use the legal-ecosystem reader optimisation plan before the next material public redesign.**
+**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; they must first apply the controlling unitary allegation that the culpability package operates through truth inversion / diversion of scrutiny while preserving every adverse fact and the distinction between effect and unproved motive; they must treat the June-2018 node as a commercial normalisation/refinancing/hotel-operation/insolvency-exit architecture whose existence and institutional dependencies are documented while its causal necessity, formal filing, closing and failure remain actor-specific questions; where banking loss or causation is material, they must also reconcile the live CAIXABANK, S.A. ORD 1859/2023-9 recovery claim and Borja's documented cross-proceeding witness role without converting a pending contested claim or witness proposal into an adjudicated outcome, proven bias or retrospective actor knowledge; and they must use the legal-ecosystem reader optimisation plan before the next material public redesign.**
