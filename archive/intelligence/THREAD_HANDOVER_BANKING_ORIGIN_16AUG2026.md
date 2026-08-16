@@ -29,7 +29,7 @@ This handover records the primary-document gap-closure pass requested on 16 Augu
   - 14-Feb-2012 official registry/BORME data.
 - The lender's 5-Mar-2012 **€940,737.53 global position** and **€54,653.80 second-facility cure figure** are different measures, not a direct contradiction.
 - The declaration's stated asset surplus must be analysed separately from regular capacity to meet due obligations.
-- The filing had a time-critical defensive rationale and multiple routes were considered. Advice negligence is not established and remains privilege-sensitive.
+- The non-privileged chronology supports a time-critical defensive rationale. The content of professional advice is not reproduced, and any professional-responsibility conclusion requires a separately controlled privilege review.
 - A primary 28-Feb-2012 viability plan already documents Summers Villages, Sun Park Living and a proposed tour-operator lane.
 
 ## Public surfaces changed
@@ -65,7 +65,7 @@ This is sufficient for the corrected, qualified public narrative. It is not suff
 1. ME-051 — native 2011 default notice and complete ledgers.
 2. ME-052 — complete Execution 90/2012 and 158/159/166 crosswalk.
 3. ME-053 — complete Multimatrix–Monterecco–Aweswell acquisition/control/finance file.
-4. ME-054 — privilege-reviewed advice and decision chronology.
+4. ME-054 — separately controlled privilege review of advice and the filing decision.
 5. ME-055 — complete concurso exit/reversal/narrowing application-response matrix.
 6. ME-056 — native direct-market/operator dataset.
 7. ME-057 — certified/public-safe Valencia bundle.
@@ -74,7 +74,7 @@ This is sufficient for the corrected, qualified public narrative. It is not suff
 ## Non-negotiable controls
 
 - Do not publish the current Valencia defendant's full corporate name without later express authority.
-- Do not publish privileged advice or private source locators.
+- Do not publish privileged advice, instructions or private source locators.
 - Do not describe advice as negligent, lender default treatment as unlawful, or institutional enabling as established without the missing primary record.
 - Do not blur LPB, Matkator, the Community of Exploitation, the community of owners or individual proprietors.
 - Do not reintroduce 166 as the primary court-auction count.
