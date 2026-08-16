@@ -139,3 +139,62 @@ Use consistently:
 - SOURCE-COMPLETION REQUIREMENT.
 
 Do not convert a party allegation into a finding. Do not call a formal banking or judicial act neutral without testing its substantive effect. Do not imply that Concurso 36/2012 placed the whole hotel under concursal control. Do not reproduce privileged advice or instructions in the public repository.
+
+## 9. Cross-system confirmation pass — 16 August 2026
+
+### 9.1 2011–2012 default premise
+
+A renewed Gmail and Drive scan for the native 2011 arrears/default notice, account-ledger treatment, cure demand and the complete execution calculation did **not** recover a source sufficient to close the correctness question. The March-2012 communication remains the strongest controlled banking-origin document presently mastered. Therefore:
+
+- **UNRESOLVED QUESTION:** whether the lender was correct to classify LPB's banking relationship as in default/morosidad;
+- **UNRESOLVED QUESTION:** whether acceleration, liquidation and the amount carried into Mortgage Enforcement 90/2012 were correct; and
+- **SOURCE-COMPLETION REQUIREMENT:** native 2011 notice + complete ledgers + original instruments + complete EH90/2012.
+
+The current Valencia litigation may produce evidence relevant to these questions, but its existence is not a liability finding.
+
+### 9.2 Filing advice and later attempts to reduce or leave the insolvency regime
+
+The cross-system record confirms a long later history of steps seeking to protect LPB's estate, challenge particular acts, suspend or limit realisation, separate the insolvency administrator and pursue routes described in later work product as conclusion, reversal or narrowing of the insolvency regime. However, the repository still lacks a source-complete event table for every asserted exit attempt.
+
+Accordingly:
+
+- **VERIFIED FACT / CHRONOLOGY:** the 2012 filing preceded the scheduled auction and had an immediate defensive function;
+- **PRIVILEGE-SENSITIVE / UNRESOLVED:** whether the advice to file was professionally wrong, incomplete, negligent or reckless;
+- **EVIDENCE-SUPPORTED INFERENCE:** later actors were repeatedly asked to reconsider, limit, suspend or correct aspects of the concursal path;
+- **NOT YET PUBLISHABLE AS FACT:** that a unified institutional “machinery” deliberately blocked a lawful exit; and
+- **SOURCE-COMPLETION REQUIREMENT:** reconstruct each application/request → opposition → decision → appeal → available power/remedy before assigning obstruction or responsibility.
+
+### 9.3 Minority-owner conflict and direct-to-market adaptation
+
+The renewed source pass remains consistent with the controlled distinction already adopted:
+
+- contemporaneous proceedings demonstrate a real minority-owner/unitary-exploitation conflict predating the concurso;
+- later material records disputes concerning possession, access and operating control;
+- the February-2012 viability plan independently proves that direct/resident/repeat/long-stay and operator channels formed part of the recovery architecture before the concurso; and
+- the direct-market platform can therefore be described as a real commercial adaptation to a difficult operating environment and a means of reducing dependence on conventional intermediaries.
+
+What remains open is the operator-by-operator causal allocation. The website must not say that every tour operator refused Sun Park solely because of Monte Lanza/Molina or quantify all lost trade to that cause without the underlying correspondence and booking evidence.
+
+### 9.4 Concursal reach versus extraconcursal effect
+
+The legal-perimeter correction is now locked for publication:
+
+> LPB's entry into Concurso 36/2012 did not automatically place Matkator, the Comunidad de Explotación, minority-owned units, customer relationships, distribution systems or other non-LPB rights inside LPB's insolvency estate.
+
+That does **not** answer the separate factual question whether particular concursal acts or omissions had practical effects beyond LPB. The proper investigation is:
+
+1. identify the private act or claimed exercise of control;
+2. identify the concursal or judicial act, authorisation, omission or procedural response said to have enabled, prolonged or failed to correct it;
+3. prove notice and the actor's actual legal capacity at the relevant time;
+4. prove the extraconcursal right or asset affected; and
+5. prove causation and the corrective measure that was realistically available.
+
+This is the controlled replacement for global formulations such as “active/passive enabling.” Both affirmative acts and legally material inaction may be examined, but neither is misconduct merely by label.
+
+### 9.5 Public-name control
+
+The full corporate name of the present Valencia defendant remains intentionally withheld from the public website. Public pages must continue to use only:
+
+**“the successor institution to the 2011–2012 lender” / “la entidad sucesora de la entidad bancaria de 2011–2012”.**
+
+Internal privileged or controlled records may preserve the exact party identity where required for legal work.
