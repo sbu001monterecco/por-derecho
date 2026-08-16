@@ -13,7 +13,7 @@ Any future Project Sun Rock / Por Derecho thread, search pass, legal analysis or
 6. `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md`
 7. `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`
 8. `archive/CORRECTION_REGISTER.md`, especially CR-018 and CR-042.
-9. `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-044, ME-045, ME-046, ME-048, ME-050, ME-058 and ME-064.
+9. `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-044, ME-045, ME-046, ME-048, ME-050 and ME-058. The dedicated source-upgrade file above carries the additional finite production list for the native Borja security email and its authority/transmission chain.
 
 ## Canonical retrieval capsule
 
