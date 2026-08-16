@@ -82,4 +82,7 @@
       });
     });
   });
+
+  // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
+  load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
 })();
