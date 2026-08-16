@@ -24,7 +24,12 @@
     testTitle: 'La prueba que decide el punto',
     test: 'Año → archivo/libro Diario exacto → profesional custodio → fecha → formato → legalización si procedía → envío a la AC → destinatario → acuse/recepción → uso posterior por la AC → incorporación a la pieza de calificación. Si esa cadena confirma entrega, la premisa fáctica de primera instancia quedaría contradicha por documentación primaria.',
     quote: '“No es una discusión abstracta sobre si había contabilidad. Hay archivos, profesionales, correos y revisiones concretas. La pregunta es si el tribunal afirmó una no-entrega que el expediente documental puede demostrar que sí ocurrió.”',
-    source: 'Control interno: CALIFICACION_ALLEGATION_04_JONATHAN_CLS_BDO_SOURCE_CORRECTION_16AUG2026.md. Fuentes reabiertas: Jonathan Simó/CLS, correspondencia BDO y expediente de cuentas LPB 2012–2014.'
+    nextEyebrow: 'ESTADO DEL AUDIT SERIAL · 17 AGO 2026',
+    nextTitle: 'Alegaciones 01–04 auditadas en profundidad. La Alegación 05 es ahora la rama sustantiva en curso.',
+    nextText: 'La siguiente auditoría separa la teoría de alzamiento/ocultación sobre Pink, supuestos cobros en Inglaterra o cuentas vinculadas al Reino Unido y la alegada “connivencia”. Sentencia 163/2023 rechazó esa rama por falta de corroboración suficiente. El rechazo es un hecho judicial central; no se presenta por sí solo como prueba de falsedad consciente o concertación.',
+    nextTest: 'Pregunta de arranque: ¿qué dinero concreto se dijo que pertenecía a LPB, quién era titular legal de la cuenta receptora, quién controlaba los fondos, qué acto de transferencia u ocultación se identificó y qué corroboración existía más allá de la geografía, la vinculación societaria o la falta de bienes embargables de Pink en España?',
+    nextBoundary: 'Control: no confundir Monterecco Sun Park, S.L. → Pink Canary Services, S.L. (España) con Monterecco Sun Park Limited → Aweswell Limited (Reino Unido), ni fusionar esta Alegación 05 con la distinta teoría del depósito de €19.140,25.',
+    source: 'Control interno: CALIFICACION_ALLEGATION_04_JONATHAN_CLS_BDO_SOURCE_CORRECTION_16AUG2026.md + CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md + CALIFICACION_ALLEGATION_05_PINK_OVERSEAS_CONNIVENCIA_KICKOFF_17AUG2026.md.'
   } : {
     eyebrow: 'DEEP AUDIT · ALLEGATION 04 · CLS / BDO CORRECTION',
     title: 'The judgment says the Daily Journal was not supplied; the contemporaneous record contains concrete evidence pointing the other way',
@@ -41,14 +46,19 @@
     testTitle: 'The evidence that decides the point',
     test: 'Year → exact Daily Journal file/book → professional custodian → date → format → legalisation if applicable → transmission to AC → recipient → acknowledgement/receipt → later AC use → incorporation into the classification record. If that chain confirms delivery, the first-instance factual premise would be contradicted by primary documentary evidence.',
     quote: '“This is not an abstract debate about whether accounting existed. There are concrete files, professionals, emails and reviews. The question is whether the court found non-delivery where the documentary record can prove delivery actually occurred.”',
-    source: 'Internal control: CALIFICACION_ALLEGATION_04_JONATHAN_CLS_BDO_SOURCE_CORRECTION_16AUG2026.md. Re-opened sources: Jonathan Simó/CLS, BDO correspondence and LPB 2012–2014 accounts file.'
+    nextEyebrow: 'SERIAL AUDIT STATUS · 17 AUG 2026',
+    nextTitle: 'Allegations 01–04 are now deep-audited. Allegation 05 is the current substantive branch.',
+    nextText: 'The next audit separates the Pink concealment/alzamiento theory concerning alleged English or UK-connected receipts and alleged “connivencia”. Judgment 163/2023 rejected that branch for insufficient corroboration. That rejection is a central judicial fact; it is not presented by itself as proof of knowing falsehood or coordination.',
+    nextTest: 'Starting question: what exact money was said to belong to LPB, who legally owned the receiving account, who controlled the funds, what transfer or concealment act was identified, and what corroboration existed beyond geography, corporate connection or Pink’s lack of attachable Spanish assets?',
+    nextBoundary: 'Control: do not conflate Monterecco Sun Park, S.L. → Pink Canary Services, S.L. (Spain) with Monterecco Sun Park Limited → Aweswell Limited (UK), and do not merge Allegation 05 with the separate €19,140.25 deposit theory.',
+    source: 'Internal control: CALIFICACION_ALLEGATION_04_JONATHAN_CLS_BDO_SOURCE_CORRECTION_16AUG2026.md + CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md + CALIFICACION_ALLEGATION_05_PINK_OVERSEAS_CONNIVENCIA_KICKOFF_17AUG2026.md.'
   };
 
   const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const section = document.createElement('section');
   section.setAttribute('data-cal-allegation04-corrected-20260816','');
   section.className = 'section';
-  section.innerHTML = `<div class="shell"><div class="section-head"><div><p class="kicker">${esc(d.eyebrow)}</p><h2>${esc(d.title)}</h2></div><p>${esc(d.lead)}</p></div><div class="grid-2">${d.points.map(x=>`<article class="path-card"><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></article>`).join('')}</div><article class="chain-conclusion"><h2>${esc(d.courtTitle)}</h2><p>${esc(d.court)}</p></article><aside class="pressure-maxim"><strong>${esc(d.testTitle)}</strong><span>${esc(d.test)}</span></aside><blockquote>${esc(d.quote)}</blockquote><p class="source-policy">${esc(d.source)}</p></div>`;
+  section.innerHTML = `<div class="shell"><div class="section-head"><div><p class="kicker">${esc(d.eyebrow)}</p><h2>${esc(d.title)}</h2></div><p>${esc(d.lead)}</p></div><div class="grid-2">${d.points.map(x=>`<article class="path-card"><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></article>`).join('')}</div><article class="chain-conclusion"><h2>${esc(d.courtTitle)}</h2><p>${esc(d.court)}</p></article><aside class="pressure-maxim"><strong>${esc(d.testTitle)}</strong><span>${esc(d.test)}</span></aside><blockquote>${esc(d.quote)}</blockquote><article class="chain-conclusion" data-cal-a05-transition-20260817><p class="kicker">${esc(d.nextEyebrow)}</p><h2>${esc(d.nextTitle)}</h2><p>${esc(d.nextText)}</p><p><strong>${esc(d.nextTest)}</strong></p><p>${esc(d.nextBoundary)}</p></article><p class="source-policy">${esc(d.source)}</p></div>`;
   const anchor = document.querySelector('[data-cal-allegation03-unitary-community-ac-causation-20260816]') || document.querySelector('[data-cal-allegation03-20260816]') || document.querySelector('[data-cal-allegation02-20260816]');
   if (anchor) anchor.insertAdjacentElement('afterend', section);
   else (document.querySelector('main .hero') || document.querySelector('main'))?.insertAdjacentElement('afterend', section);
