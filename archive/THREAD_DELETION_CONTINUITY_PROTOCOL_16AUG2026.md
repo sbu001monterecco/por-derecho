@@ -5,9 +5,11 @@
 
 ## Purpose
 
-No substantive Project Sun Rock / Por Derecho ChatGPT conversation should become a single point of institutional memory.
+No Project Sun Rock / Por Derecho ChatGPT conversation should become a single point of institutional memory.
 
-This protocol applies to **every substantive chat or thread**, regardless of topic, including but not limited to:
+This protocol applies to **every Project Sun Rock / Por Derecho chat or thread**, regardless of topic or length. A thread that creates no material project intelligence may receive a brief `DELETION-SAFE — no material project intelligence created` close-out, but it must still be assessed rather than silently exempted.
+
+The rule therefore covers, without limitation:
 
 - Ministerio Fiscal / Fiscalía;
 - courts, judges, LAJs, Administrador Concursal and appellate proceedings;
@@ -26,15 +28,17 @@ Topic-specific deletion audits or handovers may supplement this protocol, but th
 
 ## Universal continuity gate
 
-Before a substantive thread is treated as deletion-safe, ask:
+Before any project thread is treated as deletion-safe, ask:
 
 > **If this entire conversation disappeared now, could a fresh ChatGPT recover every material new fact, source-status decision, correction, strategic choice, open question, retrieval target and implementation state from current `main` plus the connected primary-source systems?**
 
 If the answer is not clearly yes, the thread is **NOT deletion-safe**.
 
+For a thread that created no material project intelligence, the answer may be recorded briefly, but the gate still applies.
+
 ## What must be captured
 
-For every substantive thread, identify whether it created or materially changed any of the following:
+For every thread that created or changed project intelligence, identify whether it created or materially changed any of the following:
 
 1. verified facts or primary-source findings;
 2. party allegations or evidence-based inferences;
@@ -107,9 +111,9 @@ A stale or unmerged PR must be recorded as such. Do not imply that an open branc
 
 ## End-of-thread checklist
 
-Before declaring a substantive thread deletion-safe, verify:
+Before declaring a project thread deletion-safe, verify as applicable:
 
-1. current `main` was checked;
+1. current `main` was checked where the thread touched project state;
 2. new material was classified;
 3. canonical ledgers were updated or confirmed already sufficient;
 4. corrections and contradictions were propagated;
@@ -120,11 +124,14 @@ Before declaring a substantive thread deletion-safe, verify:
 9. unfinished work is recoverable without chat history;
 10. a fresh ChatGPT can resume by reading `CHATGPT_START_HERE.md` and the named canonical files, then re-querying primary sources where required.
 
+If the thread genuinely created no material project intelligence and changed no project state, record that conclusion and no repository write is required solely to manufacture an audit artifact.
+
 ## Required close-out statement
 
-For every substantive Project Sun Rock / Por Derecho conversation, the final continuity assessment should be one of:
+For **every Project Sun Rock / Por Derecho conversation**, the continuity assessment should be one of:
 
 - **DELETION-SAFE** — all material intelligence and implementation state are recoverable from controlled repository records and connected primary-source systems;
+- **DELETION-SAFE — NO MATERIAL PROJECT INTELLIGENCE CREATED** — the thread produced nothing requiring canonical preservation;
 - **DELETION-SAFE WITH OPEN EVIDENCE** — continuity is preserved, but identified primary evidence remains to be obtained; or
 - **NOT DELETION-SAFE** — specified material remains conversation-dependent and must be canonicalised before deletion.
 
@@ -137,7 +144,7 @@ Existing files such as:
 - `archive/THREAD_DELETION_HANDOVER_15AUG2026_MF_ACCOUNTABILITY_STEWARDSHIP.md`; and
 - `archive/THREAD_DELETION_CONTINUITY_AUDIT_LOURDES_SUNPARK264_16AUG2026.md`
 
-are examples of track-specific continuity records. They remain valid for their subject matter, but this universal protocol is the controlling rule for **all** substantive threads, including threads that never receive a bespoke audit filename.
+are examples of track-specific continuity records. They remain valid for their subject matter, but this universal protocol is the controlling rule for **all project threads**, including threads that never receive a bespoke audit filename.
 
 ## Fresh-thread bootstrap
 
