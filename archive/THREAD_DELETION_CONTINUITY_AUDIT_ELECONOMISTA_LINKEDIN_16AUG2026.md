@@ -2,19 +2,20 @@
 
 Date: 16 August 2026
 Status: deletion-safety continuity record
-Scope: the ChatGPT thread that (i) reframed the January-2025 elEconomista episode, (ii) produced a long Spanish LinkedIn draft, (iii) pushed the corrected public-interest framing to the ES/EN website and repository, and (iv) generated a proposed LinkedIn visual.
+Scope: the ChatGPT thread that (i) reframed the January-2025 elEconomista episode, (ii) produced and refined Spanish LinkedIn copy, (iii) pushed the corrected public-interest framing to the ES/EN website and repository, and (iv) generated a proposed LinkedIn visual.
 
 ## Deletion conclusion
 
 The thread's **material reusable intelligence is recoverable from `main`**, provided this memo is read together with the canonical media ledger and correction register.
 
-The long LinkedIn draft and the generated image are **not canonical publication assets**. Both were overtaken by a later 16-August primary-source refresh. Do not recover them from conversational memory and republish them verbatim.
+The long LinkedIn draft and the generated image are **not canonical publication assets**. Both were overtaken by later 16-August source and editorial refinements. Do not recover them from conversational memory and republish them verbatim.
 
 ## Canonical current sources
 
 Read first:
 
 - `CHATGPT_START_HERE.md`
+- `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`
 - `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`
 - `archive/CORRECTION_REGISTER.md`, especially CR-020, CR-021 and CR-023
 - `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-028–032 and ME-049
@@ -39,13 +40,13 @@ The later controlled source refresh changed several propositions materially. The
 
 The attachment called `AUTO CONCURSO CULPOSO.pdf` contains **Sentencia 163/2023, dated 28 September 2023**, from Juzgado de lo Mercantil nº 1 de Las Palmas in the calificación of **Luchy Playa Blanca, S.L.U., Concurso 36/2012**.
 
-Romera's 20-Jan email described it as an “auto” declaring the “concurso de Sun Park” culpable. Future copy may quote that direct wording as Romera's wording, but must immediately correct it: legally/documentarily it is a **sentencia concerning LPB**, not an order declaring the whole Sun Park complex culpable.
+Romera's 20-Jan email described it as an “auto” declaring the “concurso de Sun Park” culpable. Future evidential or website copy may quote that direct wording as Romera's wording, but must immediately correct it: legally/documentarily it is a **sentencia concerning LPB**, not an order declaring the whole Sun Park complex culpable.
 
 ### 2. Appeal status became more documentable
 
 Preserved records show appeals were filed in October/November 2023 and appellate personation activity existed before January 2025. The judgment itself provides an appeal route and calculates Gil Marer's disqualification from the finality of the ruling.
 
-Safe current wording: the first-instance judgment was materially adverse and **had already been appealed before the January-2025 media exchange**. Do not state a later/final appellate outcome without a current primary AP record.
+Safe current evidential wording: the first-instance judgment was materially adverse and **had already been appealed before the January-2025 media exchange**. Do not state a later/final appellate outcome without a current primary AP record.
 
 ### 3. Meeting Point commercialisation is no longer only a party-versus-party contradiction
 
@@ -71,24 +72,44 @@ It is legitimate to ask whether the paper's verification process was induced to 
 
 Do not state unlawful suppression as established. The legal significance depends on the physical transmitter, accompanying wording, knowledge/purpose, actual procedural status, scope of the judgment and any other communications.
 
-## Status of the long LinkedIn draft from this thread
+## Status of the LinkedIn copy from this thread
 
 Working headline:
 
-> **LA HISTORIA QUE elECONOMISTA ESTABA INVESTIGANDO EN ENERO DE 2025 NO ERA “UNA DISPUTA SOBRE UN HOTEL”**
+> **EL ECONOMISTA EXIGÍA QUE NUESTRA HISTORIA ESTUVIERA “BIEN ATADA”. LA PREGUNTA ES SI APLICÓ EL MISMO ESTÁNDAR A LO QUE RECIBIÓ DE LA CONTRAPARTE.**
 
-The draft's durable editorial architecture remains useful:
+The latest durable editorial architecture is:
 
-- start with the public-interest scope of the 16-Jan press pitch;
-- explain how later RIC/RICPE/FEDER/title/commercialisation evidence made several 2025 questions more documentable;
-- contrast 17-Jan verification with 20-Jan receipt/non-publication;
-- make the Meeting Point/CAM contradiction central;
-- explain why an adverse insolvency-classification judgment did not answer the broader public-interest financing/commercialisation story;
-- frame possible prejudice to elEconomista as a hypothesis;
-- invite documentary correction/right of reply;
-- end with the Por Derecho traceability principle.
+- start with the broader public-interest scope: commercialisation, Meeting Point/FTI, ownership/authority, RIC/RICPE, investment/finance, regional incentives, public finance and European funds;
+- contrast Romera's 17-Jan “bien atado” verification standard and expected judicial material with the 20-Jan “nos han enviado este auto” / “con esto no podemos publicarlo” outcome;
+- make the accountability question **the asymmetry of verification**: the source/pitch was required to be fully tied down, so what independent verification was applied to the adverse material that stopped the investigation?;
+- make Meeting Point commercialisation central and use the direct 2020 Club Sei / Meeting Point / FTI commercial evidence as the later corroborative layer;
+- connect the later public-interest expansion to RIC/RICPE, regional incentives and the expressly identified FEDER component, while keeping those layers legally distinct and not calling their existence fraud;
+- apply maximum documentary pressure to the CAM/Acosta Matos response perimeter by asking what was supplied, by whom physically, with what characterisation and accompanying representations, while preserving that the physical transmitter remains unresolved;
+- criticise Romera/elEconomista through their own stated editorial standard rather than alleging complicity or censorship as fact;
+- invite documentary correction/right of reply and state that Por Derecho will correct its reconstruction if primary evidence disproves it;
+- link the public dossier: `https://sbu001monterecco.github.io/por-derecho/es/eleconomista-javier-romera-enero2025/`.
 
-**Publication control:** the exact long draft pasted in the source thread is now **SUPERSEDED AS COPY** because it repeatedly calls the document an “auto”, treats the appeal/finality point as more hypothetical than the refreshed record permits, treats Meeting Point commercialisation primarily as a reported contradiction rather than adding the direct 2020 commercial layer, and treats response provenance as more neutral than CR-021 now supports. A future social post should be freshly drafted from the current canonical public page/media ledger.
+### Controlling LinkedIn simplification — latest user instruction
+
+For the **LinkedIn post itself**, do **not** turn the post into an explanation of the calificación proceedings and do not make the procedural merits of Sentencia 163/2023 the story.
+
+The judicial document should appear only in its newsroom role:
+
+1. Romera said judicial material was awaited;
+2. an adverse judicial document arrived;
+3. Romera linked it to the decision not to publish; and
+4. that document did not answer the wider commercialisation, Meeting Point/FTI, RIC/RICPE, regional-incentive, public-finance and European-funds questions under investigation.
+
+The detailed identity, procedural status and safeguards concerning Sentencia 163/2023 remain essential **internal evidential controls** in the canonical ledger and website dossier, but they should not consume LinkedIn characters or pull the social post into a side debate about the calificación.
+
+This latest simplification supersedes the earlier memo wording that a future LinkedIn post should “explain why an adverse insolvency-classification judgment did not answer” the wider story. The post should instead say, succinctly, that **the document did not resolve the central issues being investigated**, and keep the detailed legal explanation in the linked dossier.
+
+### Length control
+
+The user deliberately shortened the final working social copy to fit LinkedIn's post constraint. Future rewrites should prioritise the core verification asymmetry, Meeting Point commercialisation, RIC/regional-incentive/FEDER public-interest dimension and the dossier link over procedural detail, repeated caveats or a long list of rhetorical questions.
+
+**Publication control:** no exact chat draft is canonical copy. A future social post should be freshly drafted from this latest editorial architecture plus the current canonical media ledger/public page. Do not revert to the earlier long-form version merely because it is recoverable in chat history.
 
 ## Status of the generated LinkedIn visual
 
@@ -117,7 +138,7 @@ If a future thread generates a replacement:
 - use **no invented court seal, court name, case number, email sender, email time or metadata**;
 - either use a generic redacted judicial-document silhouette or an exact verified/redacted extract from Sentencia 163/2023;
 - if `AUTO CONCURSO CULPOSO.pdf` appears, label it explicitly as the **attachment filename**, not the legal nature of the resolution;
-- identify the actual document as **SENTENCIA 163/2023 · LPB · CONCURSO 36/2012**;
+- identify the actual document as **SENTENCIA 163/2023 · LPB · CONCURSO 36/2012** only where legal identity is needed; for a social-first visual, a neutral `DOCUMENTO JUDICIAL RECIBIDO` label may better preserve the latest no-calificación editorial rule;
 - preserve Romera's exact short direct phrases only where source-controlled;
 - show `TRANSMISOR FÍSICO: POR VERIFICAR` rather than naming Laura or another person;
 - if the response channel is referenced, use wording such as `CANAL DE RESPUESTA CAM/ACOSTA MATOS: INFERENCIA DOCUMENTAL`, not a person-specific sender attribution;
@@ -126,7 +147,7 @@ If a future thread generates a replacement:
 
 ## Website/repository work completed from this thread
 
-The initial scope correction was published through PR #99 and deployment logged through PR #100. Subsequent repository work further refreshed the media ledger, correction register and public ES/EN page with Sentencia 163/2023, appeals, direct Meeting Point commercial evidence and the response-provenance distinction. The current `main` state supersedes the initial #99 wording where later sources are stronger or more precise.
+The initial scope correction was published through PR #99 and deployment logged through PR #100. Subsequent repository work further refreshed the media ledger, correction register and public ES/EN page with Sentencia 163/2023, appeals, direct Meeting Point commercial evidence and the response-provenance distinction. PR #132 strengthened the CAM/Acosta Matos response-provenance distinction; PR #137 added the dedicated provenance continuity audit and elEconomista sitemap; PR #138 made thread-deletion continuity universal. Current `main` supersedes earlier wording wherever later sources or publication controls are stronger or more precise.
 
 Direct Spanish route:
 
@@ -144,25 +165,28 @@ The three Romera OGG files remain source-completion items requiring native expor
 
 ## Fresh-thread recovery test
 
-A fresh ChatGPT that reads `CHATGPT_START_HERE.md`, the elEconomista media ledger, CR-020/021/023, ME-028–032/049, and the current ES/EN public page should be able to recover:
+A fresh ChatGPT that reads `CHATGPT_START_HERE.md`, the universal deletion-continuity protocol, the elEconomista media ledger, CR-020/021/023, ME-028–032/049, this memo and the current ES/EN public page should be able to recover:
 
 - what elEconomista was actually being asked to investigate;
 - the 17→20-Jan documentary sequence;
-- the correct identity/status/scope of Sentencia 163/2023;
+- the correct internal evidential identity/status/scope of Sentencia 163/2023;
+- the latest **LinkedIn rule not to explain the calificación proceedings**;
+- the core LinkedIn thesis of verification asymmetry under Romera's own “bien atado” standard;
 - the Meeting Point evidence ladder;
+- the RIC/RICPE → regional incentives → FEDER public-interest expansion without collapsing those layers into a fraud allegation;
 - the distinction between CAM/Acosta Matos response provenance and physical sender;
 - the fairness/right-of-reply position toward elEconomista;
 - the unresolved evidence queue;
-- the status of the old LinkedIn draft as superseded;
+- the status of earlier long LinkedIn drafts as superseded;
 - and the generated image as discarded/not publication-safe.
 
 ## Deletion-gate result
 
-- Gate A — reusable intelligence preserved: **PASS after this memo is merged**.
+- Gate A — reusable intelligence preserved: **PASS after this refinement is merged**.
 - Gate B — source dependency preserved: **PASS**; primary private sources remain recoverable by connector and are referenced in canonical ledgers.
 - Gate C — public/private separation: **PASS**; no private email body, private audio or privileged advice is copied here beyond already controlled short excerpts/propositions.
-- Gate D — fresh-thread test: **PASS subject to this memo on `main`**.
-- Gate E — durable repository state: **PASS subject to merge**.
-- Gate F — relevant public elEconomista ES/EN pages: **already live/current; verify latest Pages build after merge as final technical check**.
+- Gate D — fresh-thread test: **PASS after this refinement is merged**.
+- Gate E — durable repository state: **PASS after merge**.
+- Gate F — no public-site content was changed by this final LinkedIn-only refinement, so no new Pages deployment is required solely for this archive update.
 
-Deletion recommendation: **SAFE TO DELETE only after this continuity memo is merged to `main` and the resulting GitHub Pages build reports built/no error.**
+Deletion recommendation: **SAFE TO DELETE after this refined continuity memo is merged to `main`.**
