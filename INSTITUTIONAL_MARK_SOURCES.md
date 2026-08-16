@@ -1,6 +1,6 @@
 # Institutional mark provenance
 
-Last verified: 13 August 2026
+Last verified: 16 August 2026
 
 This file records the provenance of the locally hosted institutional identifiers used in the bilingual accountability map. They are displayed without visual alteration, subordinately and solely to identify the public authority or public-law professional corporation linked to the adjacent Project Sun Rock record. Their inclusion is not a claim of affiliation, cooperation, sponsorship, endorsement, awareness, approval, authorisation or licence. All third-party rights remain with their respective holders.
 
@@ -18,6 +18,6 @@ The cards link to Project Sun Rock's source-controlled records. Each record carr
 | `assets/institutions/coagc.svg` | Colegio Oficial de Arquitectos de Gran Canaria | `https://arquitectosgrancanaria.es/wp-content/themes/coagc/images/titlelogo_n.svg`; XML/DTD declarations removed without visual change | `b61067a13a77d4e1ae8e2469f739e8a21e5a9a57824a1c6ec45987a67f561414` |
 | `assets/institutions/coalz.png` | Colegio Oficial de Arquitectos de Lanzarote | `https://coa-lz.com/wp-content/themes/coalz/images/logo.png` | `4ee5769c549f22811e21c8f6ff356fd0e2514c3628f31787862c7c84f172bbb3` |
 
-AEAT and SNCA use locally rendered typographic identifiers rather than copied logo files. AEAT's official legal notice expressly reserves rights in its graphic design and marks; no distinct publication-ready SNCA mark with sufficiently clear provenance and reuse basis was located.
+AEAT, SNCA and the Consejo Canario de Colegios de Abogados (CCCA) use locally rendered typographic identifiers rather than copied logo files. For the CCCA, the institution's official website and current institutional materials verify the formal name and use the acronym `CCCA`; the site status record states only that no communication from the Council has been received to date. AEAT's official legal notice expressly reserves rights in its graphic design and marks; no distinct publication-ready SNCA mark with sufficiently clear provenance and reuse basis was located.
 
 Official-domain availability establishes provenance, not a general reproduction licence. Any substantiated rights, accuracy or attribution issue should be sent to `sbu001@monterecco.com` with the affected URL, asset and requested outcome. Formal issues relevant to proceedings must also use the competent procedural channel.
