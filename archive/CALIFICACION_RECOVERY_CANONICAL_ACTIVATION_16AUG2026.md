@@ -22,7 +22,8 @@ Read first:
 5. `archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md`;
 6. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
 7. where Judge Alberto López Villarrubia is in scope, the current unitary Judge allegation ledger;
-8. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`.
+8. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
+9. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
 
 ## Superseded source-status proposition
 
@@ -78,6 +79,25 @@ The ES/EN Calificación pages must visibly carry:
 
 The recovery/restitution pages must link back to the Calificación evidence audit.
 
+## Professional-reader optimisation control
+
+Before the next major Calificación redesign, use the legal/judicial reader simulation plan as a publication control. Its core conclusion is that the page should become **more difficult to dismiss before becoming more accusatory**.
+
+Priority design changes:
+
+1. lead with case status, what the judgment retained/rejected/narrowed, and the documentary audit before the strongest mens-rea/criminal characterisations;
+2. add a `90-SECOND PROFESSIONAL READ` with five verified propositions, five finite questions and three open evidence gaps;
+3. make the `EVIDENCE BEFORE ACTOR` matrix the central accountability device;
+4. add `STRONGEST DEFENCE → WHAT REMAINS AFTER ACCEPTING THAT DEFENCE` for AC, Fiscal and Judge;
+5. separate concursal/appellate merits, institutional accountability, knowledge proof and criminal allegation into distinct lanes;
+6. add a clear RPL 2523/2025 non-interference boundary: the website is public traceability, not a substitute for or request to influence the appellate record;
+7. reduce detailed elEconomista intent/procurement material on the main Calificación route and keep it in the dedicated media dossier while preserving downstream-effect linkage;
+8. add `WHAT WOULD CHANGE OUR VIEW?` and public correction/rebuttal architecture;
+9. apply explicit legal-status chips to every high-risk proposition;
+10. keep the serial allegation audit visually dominant over rhetorical modules.
+
+The target institutional reading position is: **a sceptical professional reader should be able to conclude that proposition-specific documentary issues require checking even without accepting Gil Marer's criminal allegations.**
+
 ## Three recovery planes
 
 Never collapse:
@@ -113,4 +133,4 @@ and
 
 ## Control sentence
 
-**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; they must search the contemporaneous rescue/finance/operation/protection record as aggressively as the accusation record.**
+**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; they must search the contemporaneous rescue/finance/operation/protection record as aggressively as the accusation record, and they must use the legal-ecosystem reader optimisation plan before the next material public redesign.**
