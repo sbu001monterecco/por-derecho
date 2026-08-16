@@ -80,7 +80,7 @@ Its numbered schedule runs from **1 to 158**. Each listed property carries an au
 
 **Correction:** the primary 15-May auction count is **158**, not 166.
 
-**Reconciliation:** a later insolvency-administrator account refers to **159 apartments after prior sales**; a contemporaneous advice/summary layer referred to **166**. These are different documentary measurements. The 158-property court schedule controls the public description of the auction unless a property-by-property reconciliation proves otherwise.
+**Reconciliation:** a later insolvency-administrator account refers to **159 apartments after prior sales**; an earlier summary layer referred to **166**. These are different documentary measurements. The 158-property court schedule controls the public description of the auction unless a property-by-property reconciliation proves otherwise.
 
 ### BO-005 — defensive filing sequence and insolvency test
 
@@ -97,13 +97,13 @@ The declaration recorded assets of **€21,603,513.82** and liabilities of **€
 
 The historical statutory insolvency test concerned whether the debtor could regularly meet due obligations. A stated asset surplus therefore does not by itself disprove actual or imminent insolvency; equally, a liquidity crisis does not validate every lender calculation or make a concurso the only reasonable protective route.
 
-### BO-006 — advice and decision boundary
+### BO-006 — professional-advice and decision boundary
 
-**Classification:** PRIVILEGED SOURCE — PUBLIC-SAFE CONCLUSION ONLY.
+**Classification:** PRIVILEGE-SENSITIVE — CONTENT NOT REPRODUCED.
 
-Contemporaneous advice identified more than one route: refinancing, voluntary suspension by the lender and a timely insolvency declaration before the auction. The record supports treating the filing as a **time-critical defensive measure**.
+The non-privileged chronology establishes documented restructuring efforts, a scheduled auction and a filing before that auction. It supports describing the filing as a **time-critical defensive measure**.
 
-**Correction:** the available evidence does not establish that advisers simply or recklessly directed LPB into an obviously unnecessary concurso. Any negligence or causation proposition requires the complete privilege-reviewed instructions, information set, alternatives, decision records and counterfactual analysis.
+**Correction:** the available non-privileged evidence does not establish that advisers simply or recklessly directed LPB into an obviously unnecessary concurso. The content of legal advice is not reproduced. Any negligence, breach or causation proposition requires a separately controlled privilege review of instructions, information, decisions and the counterfactual position.
 
 ### BO-007 — LPB-only perimeter
 
@@ -145,7 +145,7 @@ A controlled expert/administrator comparison identifies a **€517,750.04** diff
 | BOC-02 | Corporate publication records the sole-shareholder change on 3 January 2012 | 1 Dec purchase deed; 3 Jan Spanish publicity deed; 11 Jan registry presentation; official registry/BORME date 14 Feb 2012. |
 | BOC-03 | €940,737.53 and €54,653.80 are contradictory statements of the same debt | The lender used the first as a global position and the second as the amount to bring the second facility up to date. |
 | BOC-04 | Assets above liabilities disprove insolvency | The historical test concerned regular ability to meet due obligations; asset surplus and liquidity must be analysed separately. |
-| BOC-05 | The record already proves negligent advice to enter concurso | The record proves urgency and multiple routes; negligence, breach and causation remain open and privilege-sensitive. |
+| BOC-05 | The record already proves negligent advice to enter concurso | The non-privileged record proves urgency and restructuring efforts; negligence, breach and causation remain open and require a separate privilege review. |
 | BOC-06 | The direct-market strategy emerged only after the concurso | A primary plan dated 28 February 2012 already records direct/resident/long-stay and tour-operator lanes. |
 
 ## 4. Source-completion queue
@@ -155,7 +155,7 @@ A controlled expert/administrator comparison identifies a **€517,750.04** diff
 3. Complete Mortgage Execution 90/2012: application, title, debt certificate, liquidation, order, service, opposition, suspension and final procedural record.
 4. Property-by-property reconciliation of 158 / 159 / 166 counts.
 5. Complete Multimatrix–Monterecco–Aweswell acquisition, financing, control, valuation, consideration and handover file.
-6. Privilege-reviewed advice/instructions/decision chronology and alternatives matrix.
+6. Separately controlled privilege review of advice, instructions and the filing-decision chronology.
 7. Complete dated record of every attempt to conclude, reverse or narrow Concurso 36/2012 and each administrator, LAJ and judicial response.
 8. Operator-by-operator contracting, inventory, booking, payment and decline/cancellation evidence.
 9. Full banking-to-concursal-to-assignment-to-dación accounting bridge.
@@ -170,7 +170,7 @@ A controlled expert/administrator comparison identifies a **€517,750.04** diff
 | Banking account record | 15 | 35% | 5-Mar figures and viability plan located; native ledgers, default notice, pledged funds and complete instruments absent |
 | Morosidad/acceleration determination | 12 | 25% | cure/global distinction resolved; legal and contractual validity not resolved |
 | Execution file | 12 | 55% | primary auction diligence and schedule recovered; initiating application, certificate, liquidation and full docket open |
-| Filing/advice chronology | 10 | 60% | filing sequence and multiple-route advice established; full privilege-reviewed decision file open |
+| Filing/decision chronology | 10 | 60% | filing sequence and restructuring efforts established; separately controlled privilege review and complete decision file remain open |
 | Direct-market platform | 10 | 70% | February plan plus later business evidence; full native commercial dataset and valuation open |
 | Operator-specific causation | 8 | 25% | negotiations and platform exist; operator-by-operator reasons and loss bridge incomplete |
 | Concursal/value reconciliation | 10 | 30% | key figures and discrepancy identified; reproducible full bridge absent |
@@ -188,13 +188,14 @@ Safe public strengthening:
 - 5-Mar distinction between global and cure figures;
 - February 2012 viability/direct-market architecture;
 - assets/liabilities alongside the correct liquidity-law caveat;
-- filing as time-critical defensive measure with multiple routes considered;
+- filing as a time-critical defensive measure following documented restructuring efforts;
 - LPB-only debtor perimeter and act-specific institutional-responsibility test.
 
 Must remain qualified or unpublished:
 
 - definitive assertion that the lender wrongfully created morosidad;
 - definitive assertion that advisers were negligent or reckless;
+- substance of privileged advice or instructions;
 - definitive assertion that the judge or insolvency administrator controlled the whole hotel;
 - operator-specific causation and damages without native records;
 - privileged communications and present Valencia defendant's full identity on the public site.
