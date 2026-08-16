@@ -77,6 +77,10 @@
   // Verified 28-Jul-2026 AGE/RedSARA presentation in CGPJ Alzada 286/2026; presentation is not examination or merits.
   load('cgpj-alzada-regage-20260816.js?v=20260816a');
 
+  // Source-complete LPAM–Magistrado appearance-of-impartiality control: contemporaneous 2018/2020 sources,
+  // 18-May-2021 court-record limits and timing anomaly, 28-Jul filing, and verified 30-Jul CGPJ General Registry routing.
+  load('lpam-magistrado-source-control-20260816.js?v=20260816a');
+
   // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk,
   // Allegation 01 collaboration audit, Allegation 02 third-party-credit audit, Allegation 03 Pink/rent operating audit,
   // then its non-fragmented Community/private-actor/AC causation layer before the €3.032m and institutional modules.
