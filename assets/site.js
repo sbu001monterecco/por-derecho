@@ -68,10 +68,12 @@
   // LinkedIn professional-profile capture for Lourdes Castillejo on her ES/EN open-letter pages.
   load('lourdes-linkedin-profile-20260816.js?v=20260816a');
 
-  // Calificacion: current appellate status and first-person accountability opening, then the source-complete 47-page AC report crosswalk and the dedicated €3.032m fabrication/personal-gain allegation.
+  // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk, €3.032m allegation, then the June-2026 Fiscalía EG49 response decrees and unanswered textual question.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
-      load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a');
+      load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
+        load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+      });
     });
   });
 })();
