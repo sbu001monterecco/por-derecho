@@ -59,6 +59,9 @@
   // Dedicated Valencia banking-recovery page links across lender-of-record, possession/convergence and PH122→CAM chain pages.
   load('caixabank-valencia-claim-navigation-20260816.js?v=20260816a');
 
+  // Source-controlled CaixaBank→Aweswell adhesion sequence for Borja, propagated to Valencia, lender, AC, Calificación and AP pages.
+  load('caixabank-borja-witness-context-20260816.js?v=20260816a');
+
   // Companies House continuity: UK Monterecco Sun Park Limited renamed Aweswell Limited, same company no. 07716847.
   load('aweswell-monterecco-name-continuity-20260816.js?v=20260816a', () => {
     // Separate Spanish-company continuity: Monterecco Sun Park, S.L. renamed Pink Canary Services, S.L., same NIF B76564517.
