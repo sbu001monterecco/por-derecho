@@ -81,10 +81,10 @@
   // 18-May-2021 court-record limits and timing anomaly, 28-Jul filing, and verified 30-Jul CGPJ General Registry routing.
   load('lpam-magistrado-source-control-20260816.js?v=20260816a');
 
-  // Calificacion: current appellate status and first-person accountability opening, followed by the user-approved
-  // strong-form Judge Alberto accusation. The approved accusation is a drafting floor, not a ceiling; strengthening
-  // must come from additional evidence and specificity, without converting allegations into adjudicated facts.
+  // Calificacion: current appellate status and first-person accountability opening, followed by a 90-second
+  // professional evidence gateway and the user-approved strong-form Judge Alberto accusation.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
+    load('calificacion-professional-read-20260816.js?v=20260816a');
     load('judge-alberto-approved-accusation-20260816.js?v=20260816a');
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
       load('calificacion-allegation01-collaboration-audit-20260816.js?v=20260816a', () => {
@@ -139,6 +139,9 @@
     // signed Tenerife Diligencias 20/2026 decree and signed Valencia EG 19/2026 inhibition.
     load('calificacion-primary-source-closures-20260816.js?v=20260816a');
   });
+
+  // Calificación × elEconomista: collateral use, scope mismatch, provenance alternatives and finite sender/header evidence requests.
+  load('calificacion-eleconomista-collateral-use-20260816.js?v=20260816a');
 
   // Cross-site unitary allegation: the same Sun Park/MYND hotel, assets, works, value and employment
   // across Concurso, Comunidad, RICPE/RIC, HNT, GC/836/P06, FEDER and current operation.
