@@ -46,4 +46,7 @@
 
   // Canonical RICPE routing, 15-Aug chronology, legacy-dossier banner and SNCA FEDER boundary.
   load('canonical-routing-chronology-20260815.js?v=20260815a');
+
+  // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
+  load('origin-direct-market-context-20260816.js?v=20260816a');
 })();
