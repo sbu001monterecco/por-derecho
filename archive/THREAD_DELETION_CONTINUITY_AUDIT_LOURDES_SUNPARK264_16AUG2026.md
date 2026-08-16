@@ -5,9 +5,11 @@
 
 ## Deletion-safety conclusion
 
-After the repository and public-source audit, the substantive record is recoverable from `main` once the accompanying sitemap/robots continuity PR is merged and deployed. No material proposition necessary to continue this track should depend on the deleted chat.
+**DELETION-SAFE WITH OPEN EVIDENCE.**
 
-This audit does **not** assert that all underlying evidence has been obtained. Provider-side records and other items expressly listed as open remain evidence-completion tasks, not chat-continuity gaps.
+The substantive record, publication architecture, source-status decisions, correction controls, LinkedIn-context evidence, retrieval targets and implementation/deployment state are recoverable from current `main` plus the connected primary-source systems. The digital-identity sitemap/robots discovery correction was merged and deployment-verified through PRs #134/#135.
+
+The underlying provider-side evidence is not complete. Those gaps are now also registered in the single canonical source-completion queue as **ME-060**. They are evidence-completion tasks, not chat-continuity gaps.
 
 ## Canonical internal record
 
@@ -18,6 +20,14 @@ Primary controlled ledger:
 Controlling correction:
 
 - `archive/CORRECTION_REGISTER.md` — **CR-031**.
+
+Canonical missing-evidence item:
+
+- `archive/MISSING_EVIDENCE_REGISTER.md` — **ME-060**.
+
+Professional-context source record:
+
+- `archive/LOURDES_CASTILLEJO_LINKEDIN_CAPTURE_16AUG2026.md`.
 
 CR-031 controls the recovery-address proposition: Google displayed only the masked clue `ros••••••@aco••••••••.com`; a complete address typed during contemporaneous recovery testing is party input and is not Google-confirmed. The complete recovery mailbox and human identity remain unresolved.
 
@@ -52,6 +62,16 @@ Standalone public routes:
 - ES: `/es/incidente-lourdes-google-mynd/`
 - EN: `/en/lourdes-google-mynd-incident/`
 
+## Lourdes LinkedIn evidence
+
+The controlled LinkedIn source locator is:
+
+- `https://es.linkedin.com/in/lourdescastillejotrenas/en`
+
+The connected LinkedIn search using exact name plus Canarian Hospitality returned that matching professional profile; the controlled memo records the indexed name/company context and the publication limits. The public Lourdes pages include the direct profile link and a Por Derecho visual capture prepared from indexed profile information.
+
+**Evidential boundary:** the LinkedIn material corroborates professional identity/context only. It does not prove that Lourdes submitted the Google Business requests, controlled `mynd.hotels@gmail.com`, knew about the 2019 `sunpark264` episode, knew or controlled an Acosta Matos recovery route, or committed wrongdoing. The Google notices remain the primary sources for the use of her name in the 2021–2022 requests.
+
 ## Editorial architecture
 
 The two source families are **separate but connected**.
@@ -79,43 +99,49 @@ A privacy-redacted combined visual sequence is preserved in the repository:
 
 The public visual removes unnecessary customer/telephone data and does not itself prove account control or common authorship.
 
+The LinkedIn visual capture is separately controlled as an editorial capture from indexed profile content rather than a native forensic LinkedIn screenshot; no LinkedIn personal photograph is republished.
+
 ## Related current repository controls
 
 The Acosta Matos perimeter pages cross-link the digital-identity track while preserving legal-person separation.
 
-Later current-main work also preserves:
+Current-main work also preserves:
 
 - the controlled Rosa María Dorta Perdomo historical-identification/informant invitation, expressly subject to CR-031 and without treating Google as having disclosed her name or a full recovery mailbox;
-- the Lourdes Castillejo Trenas / Canarian Hospitality LinkedIn professional-profile locator and Por Derecho visual capture, expressly treated as professional identity/context corroboration only and not proof of Google-request authorship, account control or wrongdoing;
+- the Lourdes Castillejo Trenas / Canarian Hospitality LinkedIn professional-profile locator and Por Derecho visual capture, as professional context only;
 - the expanded MYND/Canarian Hospitality worker/informant public-interest invitation connecting the separate RICPE / RIC / regional incentives / FEDER layers without inferring fraud or collective knowledge.
 
-These later records mean future work should read current `main`, not reconstruct the track from this deleted chat.
+Future work must read current `main`, not reconstruct this track from conversational memory.
 
 ## Deployment history relevant to this thread
 
-Material deployments already recorded in `archive/DEPLOYMENT_LOG.md` include:
+Material deployments recorded in `archive/DEPLOYMENT_LOG.md` include:
 
 - PR #116 — initial bilingual Lourdes open letter and digital-identity dossier;
 - PR #119 — recovery-clue / Acosta Matos connection and controlled visual sequence;
+- PR #120 — CR-031 correction of the masked Google recovery evidence;
+- PRs #125/#126/#127 — controlled Lourdes LinkedIn locator, visual capture and deployment logging;
 - PR #128 — split into autonomous 2019 and Lourdes/MYND incident routes;
 - PR #129 — deployment log for PR #128;
-- later PRs #123/#125/#126 and their deployment logs add the controlled Rosa and LinkedIn context without superseding the split architecture.
+- PR #130/#131 — expanded MYND/Canarian Hospitality worker invitation and public-interest RIC/FEDER chain;
+- PR #134/#135 — thread-deletion audit, digital-identity sitemap/robots discovery correction and verified deployment.
 
 PR #128 merge commit: `30ff0360befcb3a8f3424579fe16365d915b5471`.  
 Verified Pages build recorded for that merge: `1154811591`, **built**, no error.
 
-## Website-discovery audit and correction
+PR #134 merge commit: `f7efb295e93a6210b9d6fb0dc737d81fd1f7eec1`.  
+Verified Pages build recorded for that merge: `1154876516`, **built**, no error.
 
-Deletion-safety review found that the main historical `sitemap.xml` did not yet enumerate the newly created digital-identity routes. That was a website-discovery omission, not a loss of substantive evidence.
+## Website-discovery correction — closed
 
-The accompanying continuity change adds:
+The deletion-safety review found that the main historical `sitemap.xml` did not enumerate the newly created digital-identity routes. PR #134 closed that discovery omission by adding:
 
 - `sitemap-digital-identity.xml` containing the bilingual hub, both standalone incident pairs and Lourdes open-letter pair;
-- a second `Sitemap:` directive in `robots.txt` pointing to that sitemap.
+- a `Sitemap:` directive in `robots.txt` pointing to that sitemap.
 
-This prevents the thread from being the only practical record of the new route architecture and improves crawler discovery without rewriting the large legacy sitemap.
+This is now source-verified on current `main` and deployment-verified. It was a website-discovery omission, not a loss of substantive evidence.
 
-## Open evidence — not continuity gaps
+## Open evidence — canonical ME-060
 
 A future ChatGPT must continue to seek, where lawfully obtainable:
 
@@ -126,18 +152,30 @@ A future ChatGPT must continue to seek, where lawfully obtainable:
 5. internal lawful instruction/account-administration records capable of identifying actual actors;
 6. the unresolved second 2019 message family only if a native source is recovered.
 
-Absence of those records means attribution remains open; it does not make deletion of this chat unsafe.
+These items are registered under **ME-060**. Absence of those records means attribution remains open; it is not evidence of wrongdoing and it does not make deletion of this chat unsafe.
 
-## Continuity gate
+## Private / restricted material intentionally not copied into the repository
 
-A fresh ChatGPT should be able to recover this track by reading:
+Deletion-safety does not require republishing private primary evidence. Native Gmail content, full headers, customer identifiers, telephone data, provider account records, IP/device/session data and any restricted internal records remain in their lawful source systems or are still to be obtained. A future thread must re-query connected Gmail, Google Drive, File Library/Files and any lawful provider/institutional source rather than reconstructing those records from this conversation.
+
+## Fresh-thread recovery order
+
+A fresh ChatGPT should recover this track by reading:
 
 1. `CHATGPT_START_HERE.md`;
-2. `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`;
-3. `archive/CORRECTION_REGISTER.md`, especially CR-031;
-4. `archive/SUN_PARK_DIGITAL_IDENTITY_LOURDES_GOOGLE_LEDGER_16AUG2026.md`;
-5. this deletion-continuity audit;
-6. the standalone public incident pages and Lourdes open letter;
-7. `archive/DEPLOYMENT_LOG.md`.
+2. `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
+3. `archive/CONTINUOUS_MAINTENANCE_MATRIX.md` — Sun Park digital identity / Google row;
+4. `archive/CORRECTION_REGISTER.md` — CR-031;
+5. `archive/MISSING_EVIDENCE_REGISTER.md` — ME-060;
+6. `archive/SUN_PARK_DIGITAL_IDENTITY_LOURDES_GOOGLE_LEDGER_16AUG2026.md`;
+7. `archive/LOURDES_CASTILLEJO_LINKEDIN_CAPTURE_16AUG2026.md`;
+8. this deletion-continuity audit;
+9. the standalone public incident pages, hub and Lourdes open letter;
+10. `archive/DEPLOYMENT_LOG.md`;
+11. connected primary-source systems for any proposition requiring native evidence.
 
-If those repository records remain available, the chat is not required as institutional memory for this track.
+## Final continuity gate
+
+If this conversation disappears, no material new fact, source-status decision, correction, publication safeguard, route architecture, LinkedIn-context decision, retrieval target or deployment state from the Lourdes / Sun Park digital-identity work depends on chat memory.
+
+**Final status: DELETION-SAFE WITH OPEN EVIDENCE.**
