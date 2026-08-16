@@ -4,7 +4,7 @@ Control date: 16 August 2026
 Status: **CANONICAL PROCEDURAL CHRONOLOGY / EVIDENCE-CLASSIFIED**
 
 ## Purpose
-This control reconciles the June–July 2026 CGPJ record using the underlying appeal, official AGE/RedSARA receipts and the direct communication from the CGPJ Appeals Section. It supersedes shorthand that treated **18 June 2026 as the date on which the appeal was signed or formally presented by the recurrent**.
+This control reconciles the June–July 2026 CGPJ record using the underlying appeal, official AGE/RedSARA receipts, direct communications from the CGPJ Appeals Section and the later REC routing notice. It supersedes shorthand that treated **18 June 2026 as the date on which the appeal was signed or formally presented by the recurrent**.
 
 The controlling distinction is:
 
@@ -28,7 +28,8 @@ Those are different procedural facts. Neither should be silently substituted for
 | **15 July 2026** | Traceability/status request concerning DI 169/2026 and the art. 608 appeal, asking the CGPJ to locate and incorporate the prior REGAGE filings and certify the state/integrity of the record. | **VERIFIED PARTY FILING / REQUEST.** The request itself does not prove the earlier filings were incorporated. |
 | **16 July 2026** | Direct email from `recursos@cgpj.es` transmitted a communication stating that the appeal had entered the CGPJ on 18 June, had generated **Alzada 286/2026**, and that the filing presented on 15 July **“queda unido al expediente”** being processed by the Appeals Section. The reference block identifies the appealed agreement date as **14/05/2026** and the object as archive of DI 169/26. | **VERIFIED DIRECT CGPJ COMMUNICATION.** This is positive proof of joinder of the 15 July filing; it does not prove joinder of every other supplement. |
 | **28 July 2026, 23:42:54–23:42:57** | Five-file supplementary package formally presented under `REGAGE26e00069061338`, expressly identifying Alzada 286/2026, DI 169/2026 and Comisión Permanente / Sección de Recursos. | **VERIFIED AGE/RedSARA PRESENTATION.** Presentation is not proof of incorporation, examination, acceptance, merits or truth. |
-| **Through 16 August 2026** | No later substantive CGPJ appellate decision was located in the connected Gmail searches performed for this control. | **SEARCH RESULT, NOT NON-EXISTENCE PROOF.** The decision may exist elsewhere or arrive later. |
+| **30 July 2026, 08:36:02** | A REC notification states that `REGAGE26e00069061338` **“ha pasado a ser tramitada por” the CGPJ General Registry**. | **VERIFIED DOWNSTREAM REGISTRY ROUTING.** This proves movement beyond initial electronic presentation to the CGPJ General Registry; it does not prove joinder to Alzada 286/2026, routing to the Appeals Section/Commission/Inspection, or substantive examination. |
+| **Through 16 August 2026** | No later substantive CGPJ appellate decision and no later direct `recursos@cgpj.es` communication confirming substantive treatment of the 28 July package were located in the connected Gmail searches performed for this control. | **SEARCH RESULT, NOT NON-EXISTENCE PROOF.** A decision or internal treatment may exist elsewhere or arrive later. |
 
 ## Original 15 June package — exact attachment control
 The official receipt for `REGAGE26e00056359487` records four files:
@@ -44,6 +45,8 @@ The **specific LPAM–Magistrado module is not among those four files**. The fir
 Related Daniel Irigoyen material was already part of the original 15 June appeal package. That is evidentially distinct from the later LPAM–Magistrado module and the two must not be conflated.
 
 Any source sentence saying that the module was absent from the “signed 18 June filing” must now be read as a substantive correction about the **original appeal package**, but with its calendar wording corrected: the appeal was signed/formally presented on **15 June**; **18 June** is the later CGPJ-reported entry date.
+
+The fuller source-completion pass is controlled in `archive/LPAM_MAGISTRADO_SOURCE_COMPLETION_16AUG2026.md`. It additionally requires separation between: contemporaneous witness-account sources; primary court records; later signed witness declarations; repeated filing copies; and official verification still outstanding.
 
 ## 14 May vs 10 July — appealed-act control
 The original appealed act is the **14 May 2026 archive agreement**. This is established by:
@@ -66,6 +69,14 @@ Therefore:
 - preserve the **24 June header / 15 July content** mismatch as an internal documentary dating anomaly;
 - do not infer alteration, backdating or misconduct from that mismatch without further primary evidence.
 
+## 28 July vs 30 July — presentation and routing control
+The 28 July receipt and the 30 July REC notice establish two separate procedural events:
+
+- **28 July:** formal AGE/RedSARA presentation of `REGAGE26e00069061338` to the CGPJ Registry and Archive Unit; and
+- **30 July:** positive REC evidence that the filing had passed to be processed by the **CGPJ General Registry**.
+
+The 30 July notice narrows the earlier evidence gap: downstream registry routing is now proved. It does **not** close the distinct questions of joinder to the appellate record, body-specific routing or substantive examination.
+
 ## What is now proved
 - DI 169/2026 was archived by agreement dated 14 May 2026.
 - An appeal was formally presented by AGE/RedSARA on 15 June 2026 under `REGAGE26e00056359487`.
@@ -73,12 +84,14 @@ Therefore:
 - The Appeals Section positively confirmed that the **15 July filing was joined** to the appellate file.
 - The 21 June and 28 July supplements were formally presented under their identified REGAGE receipts.
 - The 10 July Promotor agreement maintained the 14 May archive.
+- `REGAGE26e00069061338` was subsequently routed to be processed by the **CGPJ General Registry** on 30 July at 08:36:02.
 
 ## What is not proved
 - That every June or July supplement was materially incorporated into the Alzada record.
-- That the Promotor, Servicio de Inspección, Comisión Permanente or any other CGPJ body substantively examined the 28 July five-file package.
+- That `REGAGE26e00069061338` was formally joined to Alzada 286/2026 merely because it reached the CGPJ General Registry.
+- That the Promotor, Servicio de Inspección, Comisión Permanente, Appeals Section or any other CGPJ body substantively examined the 28 July five-file package.
 - That any allegation concerning improper access, influence, friendship, partiality or disciplinary misconduct is true.
-- That the original archive was legally or factually wrong merely because later material was presented.
+- That the original archive was legally or factually wrong merely because later material was presented and routed.
 - That the appellate decision has been issued merely because a maximum-period communication exists.
 
 ## Contrary / exculpatory control
@@ -95,10 +108,12 @@ These locators are for internal evidence recovery; do not publish personal addre
 - Appeals Section communication: Gmail `19f6b19c9cef102c`; subject `286-26 Comunicación al recurrente tramitación R. Alzada`.
 - 28 July receipt: Gmail `19faaaf73be37125`; attachment `REGAGE26e00069061338.pdf`.
 - 28 July five-file backup package: Gmail `19faa3662ff7b3dd`.
+- 30 July REC routing notice: Gmail `19fb25c5f85c3fb5`.
 
 ## Cross-links
 - `archive/CGPJ_ISSUES_AND_VERIFICATION_REGISTER_15AUG2026.md`
 - `archive/CGPJ_ALZADA_286_2026_REGAGE_28JUL2026_TRACEABILITY.md`
+- `archive/LPAM_MAGISTRADO_SOURCE_COMPLETION_16AUG2026.md`
 - `archive/CGPJ_JUDICIAL_GOVERNANCE_PROTOCOL_15AUG2026.md`
 - `archive/CORRECTION_REGISTER.md`
 
@@ -109,5 +124,5 @@ Obtain the complete current administrative index/file for Alzada 286/2026 and de
 2. internal recipient/body;
 3. whether examined or merely received;
 4. any report or referral generated;
-5. treatment of `REGAGE26e00069061338` and its five files; and
+5. treatment of `REGAGE26e00069061338` and its five files after its now-proved routing to the CGPJ General Registry; and
 6. current/final reasoned appellate decision.
