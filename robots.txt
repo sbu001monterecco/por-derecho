@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-digital-identity.xml
