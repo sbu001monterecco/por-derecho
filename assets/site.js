@@ -53,6 +53,9 @@
   // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
   load('origin-direct-market-context-20260816.js?v=20260816a');
 
+  // Current banking-recovery publication routes, beginning with the PH122→CAM assignment / Article 1535 dossier.
+  load('banking-recovery-publication-20260816.js?v=20260816a');
+
   // Companies House continuity: UK Monterecco Sun Park Limited renamed Aweswell Limited, same company no. 07716847.
   load('aweswell-monterecco-name-continuity-20260816.js?v=20260816a', () => {
     // Separate Spanish-company continuity: Monterecco Sun Park, S.L. renamed Pink Canary Services, S.L., same NIF B76564517.
