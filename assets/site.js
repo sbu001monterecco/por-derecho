@@ -58,4 +58,7 @@
     // Separate Spanish-company continuity: Monterecco Sun Park, S.L. renamed Pink Canary Services, S.L., same NIF B76564517.
     load('pink-canary-monterecco-spanish-continuity-20260816.js?v=20260816a');
   });
+
+  // Controlled direct invitation naming Rosa María Dorta Perdomo as a historical identification lead only.
+  load('rosa-dorta-direct-open-letter-20260816.js?v=20260816a');
 })();

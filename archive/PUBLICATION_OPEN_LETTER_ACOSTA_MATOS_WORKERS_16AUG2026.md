@@ -42,9 +42,34 @@ The primary recovery evidence does **not** prove:
 - who sent the customer email;
 - that any named person committed any offence.
 
-A prior public version incorrectly converted a manually entered candidate (`rosa@acostamatos.com`) into the Google-disclosed recovery address and directly addressed “Rosa”. That proposition is superseded and has been removed.
+A prior public version incorrectly converted a manually entered candidate (`rosa@acostamatos.com`) into the Google-disclosed recovery address and directly addressed “Rosa”. That proposition remains superseded under CR-031.
 
-The filename containing `Rosa Maria Dorta Perdomo` is a later/secondary descriptive filename in the preserved corpus. It is **not independent primary proof** that this person was the recovery-mailbox holder and must not be used as such unless separately corroborated.
+The filename containing `Rosa Maria Dorta Perdomo` is a later/secondary descriptive filename in the preserved corpus. It is **not independent primary proof** that this person was the recovery-mailbox holder.
+
+## Public naming decision — 16 August 2026
+
+Gil Marer has subsequently instructed that **Rosa María Dorta Perdomo be named publicly and directly invited to come forward through lawful reporting channels**. This changes the publication posture, not the underlying evidential classification.
+
+Accordingly:
+- the name may be published as a **historical identification lead / secondary label** derived from the preserved filename;
+- the public page must say explicitly that Google did not reveal the name;
+- the page must not state that she owned the recovery mailbox, sent the customer email, created `sunpark264@gmail.com`, controlled its credentials or committed an offence;
+- the direct invitation must expressly invite an innocent explanation, technical reassignment, mistaken identification or corrective evidence;
+- CR-031 remains controlling and is not reversed by the decision to name the historical lead.
+
+Detailed controls are preserved in `archive/ROSA_MARIA_DORTA_PERDOMO_PUBLICATION_CONTROL_16AUG2026.md`.
+
+## Contemporaneous Hunter.io capture
+
+A Gmail draft dated 8-Jun-2019, subject `rosl.g@acostamatos.com`, preserves inline screenshots from the contemporaneous investigation. A Hunter.io domain-search capture for `acostamatos.com` displays a partially masked corporate email and references public sources said to have been located by that service.
+
+The capture may be published only as **secondary historical context**. Hunter.io is not Google and not LinkedIn. It does not prove recovery-mailbox ownership, employment, Google recovery configuration, account control or authorship.
+
+## LinkedIn control
+
+Current exact-name and Acosta Matos LinkedIn searches did **not** produce a profile that can be attributed unequivocally to Rosa María Dorta Perdomo. Do not publish another person called Rosa Dorta, or that person's photograph, as if it were her.
+
+If an exact LinkedIn URL or capture is independently tied to the same person, it may be added with capture date, provenance and the same attribution boundaries.
 
 ## Legal-source control
 
