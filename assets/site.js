@@ -139,4 +139,7 @@
     // signed Tenerife Diligencias 20/2026 decree and signed Valencia EG 19/2026 inhibition.
     load('calificacion-primary-source-closures-20260816.js?v=20260816a');
   });
+
+  // Calificación × elEconomista: collateral use, scope mismatch, provenance alternatives and finite sender/header evidence requests.
+  load('calificacion-eleconomista-collateral-use-20260816.js?v=20260816a');
 })();
