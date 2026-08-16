@@ -25,9 +25,9 @@
           });
         });
         load('ricpe-identity-correction-20260815.js?v=20260815a', () => {
-          load('police-evidence-preservation-20260815.js?v=20260815a', () => {
-            load('police-regage-drilldown-20260815.js?v=20260815a', () => {
-              load('police-context-explainer-20260815.js?v=20260815a', () => {
+          load('police-evidence-preservation-20260815.js?v=20260816a', () => {
+            load('police-regage-drilldown-20260815.js?v=20260816a', () => {
+              load('police-context-explainer-20260815.js?v=20260816a', () => {
                 load('book-foundation-20260815.js?v=20260815b', () => {
                   load('books-portfolio-20260815.js?v=20260815c');
                   // Book pages now carry the authoritative locked JPG cover in their HTML.
@@ -51,10 +51,10 @@
   load('canonical-routing-chronology-20260815.js?v=20260815a');
 
   // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
-  load('origin-direct-market-context-20260816.js?v=20260816a');
+  load('origin-direct-market-context-20260816.js?v=20260816b');
 
-  // Current banking-recovery publication routes, beginning with the PH122→CAM assignment / Article 1535 dossier.
-  load('banking-recovery-publication-20260816.js?v=20260816a');
+  // Current banking-recovery publication routes plus the 2011-2012 default/enforcement evidence boundary.
+  load('banking-recovery-publication-20260816.js?v=20260816b');
 
   // Companies House continuity: UK Monterecco Sun Park Limited renamed Aweswell Limited, same company no. 07716847.
   load('aweswell-monterecco-name-continuity-20260816.js?v=20260816a', () => {
