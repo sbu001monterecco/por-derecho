@@ -3,7 +3,7 @@
 **Date:** 16 August 2026  
 **Purpose:** continuity index for the allegation-by-allegation audit of the AC's 11-Feb-2019 calificación report in Concurso 36/2012.
 
-**Serial-audit control:** this index is now the controlling record for which allegation has been completed and which comes next. It supersedes any older maintenance/publication-control wording that still says “next: Allegation 02”. Those older dashboards should be consolidated on their next maintenance pass; they must not be used to regress the serial audit.
+**Serial-audit control:** this index is the controlling record for which allegation has been completed and which comes next. It supersedes older maintenance/publication-control wording naming a superseded `next` allegation. Those dashboards must be consolidated on maintenance passes and must not regress the serial audit.
 
 ## Method
 
@@ -45,22 +45,44 @@ Controlled result:
 Public module:
 `assets/calificacion-allegation02-thirdparty-credits-audit-20260816.js`
 
+### Allegation 03 — 6-Feb-2012 Monterecco Sun Park / Pink Canary operating agreement and unpaid rent
+
+Canonical ledger:
+`archive/CALIFICACION_ALLEGATION_03_PINK_OPERATING_RENT_CAUSATION_LEDGER_16AUG2026.md`
+
+Controlled result:
+- Spanish Monterecco Sun Park → Pink Canary is one Spanish legal person, NIF B76564517, separate from UK Monterecco/Aweswell;
+- the original contract, recovered inside the AC's own resolution proceeding, shows €24,575/month rent + €33,915.29/month LPB Community charges assumed by the operator + a broad operator-side cost burden;
+- **Sentencia 163/2023 expressly rejects the AC's proposition that entering the agreement was itself culpably aggravating merely because rent was below the mortgage instalment**;
+- the missing Fiscalía rent expert has been recovered: Tomás Ramírez Gómez-Ojero, report dated 5-Apr-2019 / filed 25-Apr-2019 in DP 332/2014; it supports market reasonableness of the contractual pricing through modelling but does **not** reconstruct Pink's actual 2012–2015 profit/cash;
+- this corrects both sides: the AC's rent-alone economic framing was incomplete, while the defence cannot use that expert as proof that Pink made no actual profit or spent all real income on maintenance;
+- the AC did in fact bring a contract-resolution/rent proceeding; Sentencia 163/2023 records a 24-Nov-2015 judgment and a 6-Sep-2016 execution with no attachable assets;
+- the later non-payment/collection branch is materially adverse at first instance: the court finds gross fault, causation and Pink complicity; all remain appealed;
+- the judgment's actual ability-to-pay/profitability premise is partly inferential rather than an audited reconstruction of Pink accounts, and the recovered Fiscalía expert does not close that gap;
+- the judgment says no rent was ever paid while Pink's appeal alleges initial/partial payments; that factual conflict requires bank/ledger proof;
+- monetary figures €1.130m / €1.376m / €1.671m / €2.734m / €3.032m are not interchangeable and require a euro-by-euro judgment→execution bridge.
+
+Public module:
+`assets/calificacion-allegation03-pink-rent-operating-audit-20260816.js`
+
 ## Next
 
-### Allegation 03 — 6-Feb-2012 Monterecco Sun Park / Pink Canary operating agreement and unpaid rent
+### Allegation 04 — substantial accounting breach / double accounting / relevant accounting irregularity — Art. 164.2.1 LC
 
 Required decomposition:
 
-1. **Entry into agreement** — whether the 6-Feb-2012 arrangement itself was economically irrational or culpable.
-2. **Identity continuity** — Spanish Monterecco Sun Park, S.L. → Pink Canary Services, S.L., same NIF B76564517; separate from UK Monterecco/Aweswell.
-3. **Actual economic function** — hotel preservation, operation, occupancy, costs, utilities, maintenance, customers and commercial value.
-4. **Rent structure** — contractual rent, Community charges, mortgage comparison and whether comparing rent only to mortgage instalments was economically meaningful.
-5. **Collection conduct** — what Gil/LPB did, what AC required, what AC itself litigated, exact 24-Nov-2015 judgment and enforcement chronology.
-6. **Ability to pay** — actual Pink revenues, expenses, assets, bank/payment channels and the judgment's profitability inference.
-7. **Causation** — whether non-collection caused/aggravated insolvency and by what amount/date.
-8. **€3,032,010.34 damages** — reconcile with `CALIFICACION_3032010_FABRICATION_PERSONAL_GAIN_ALLEGATION_16AUG2026.md`; distinguish rent debt, estate loss, personal gain and damages.
-9. **AEAT operator track** — Pink as operator/explotadora where primary AEAT evidence supports it, without converting tax treatment into proof of profitability or available cash.
-10. **What the allegation displaced** — actual economic operation of Sun Park, costs of preserving the mixed-ownership hotel, minority-owner/Community conflict and AC's own post-concurso powers/actions.
+1. **Exact statutory accusation** — what the AC alleged under Art. 164.2.1 LC and whether he pleaded absence of books, double accounting, relevant irregularity, or several alternatives.
+2. **Books legally required** — Diario, Inventarios/Cuentas Anuales and any other applicable records; do not treat every requested working paper as a statutory book.
+3. **What existed** — distinguish statutory books, annual accounts, trial balances, accountant files, tax material, bank ledgers and management records.
+4. **What reached the AC** — date-by-date request → response → delivery → missing item → later receipt/use.
+5. **Reconstructability** — whether LPB's patrimonial/financial position could in fact be reconstructed from material available to the AC, even if formal books were incomplete.
+6. **Materiality** — what specific missing/irregular accounting matter prevented understanding of insolvency and by what causal/evidential mechanism.
+7. **AC's own use of the accounting** — inventory valuations, receivables, ratios, historic figures and later pleadings must be reconciled with any broad claim that accounts were unintelligible/unavailable.
+8. **Accountant/expert testimony** — identify Jonathan Simó Morales and any other accountant/expert evidence and the exact documents they said existed/did not exist.
+9. **Judicial result** — what Sentencia 163/2023 actually found under Art. 164.2.1, separately from collaboration and other grounds.
+10. **Appeal** — exact grounds, including any contradiction between acknowledged balances/accounts and the conclusion of substantial accounting breach.
+11. **Knowledge / intent** — distinguish deficient bookkeeping from knowing concealment or false accounting; do not infer the latter without actor-specific proof.
+12. **Public wording** — preserve any valid adverse accounting finding while testing whether the original accusation was broader than the evidence ultimately supported.
 
 ## Public integrity rule
 
