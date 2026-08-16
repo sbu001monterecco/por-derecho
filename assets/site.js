@@ -41,39 +41,21 @@
     });
   });
 
-  // Independent media-mark loader: do not make this depend on any other helper chain.
   load('media-publication-marks-20260815.js?v=20260815a');
-
-  // Canary Council of Bar Associations institutional mark and source-controlled status record.
   load('ccca-institutional-mark-20260816.js?v=20260816a');
-
-  // Canonical RICPE routing, 15-Aug chronology, legacy-dossier banner and SNCA FEDER boundary.
   load('canonical-routing-chronology-20260815.js?v=20260815a');
-
-  // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
   load('origin-direct-market-context-20260816.js?v=20260816b');
-
-  // Current banking-recovery publication routes plus the 2011-2012 default/enforcement evidence boundary.
   load('banking-recovery-publication-20260816.js?v=20260816b');
 
-  // Companies House continuity: UK Monterecco Sun Park Limited renamed Aweswell Limited, same company no. 07716847.
   load('aweswell-monterecco-name-continuity-20260816.js?v=20260816a', () => {
-    // Separate Spanish-company continuity: Monterecco Sun Park, S.L. renamed Pink Canary Services, S.L., same NIF B76564517.
     load('pink-canary-monterecco-spanish-continuity-20260816.js?v=20260816a');
   });
 
-  // Controlled direct invitation naming Rosa María Dorta Perdomo as a historical identification lead only.
   load('rosa-dorta-direct-open-letter-20260816.js?v=20260816a');
-
-  // LinkedIn professional-profile capture for Lourdes Castillejo on her ES/EN open-letter pages.
   load('lourdes-linkedin-profile-20260816.js?v=20260816a');
-
-  // Verified 28-Jul-2026 AGE/RedSARA presentation in CGPJ Alzada 286/2026; presentation is not examination or merits.
   load('cgpj-alzada-regage-20260816.js?v=20260816a');
 
-  // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk,
-  // Allegation 01 collaboration audit, Allegation 02 third-party-credit audit, Allegation 03 Pink/rent audit,
-  // its non-fragmented Community/private-actor/AC causation layer, then €3.032m and institutional follow-ups.
+  // Calificacion: source-complete accusation crosswalk, serial allegation audits and the non-fragmented A03 causation layer.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
       load('calificacion-allegation01-collaboration-audit-20260816.js?v=20260816a', () => {
@@ -92,19 +74,11 @@
     });
   });
 
-  // The unitary Allegation-03 module also inserts a controlled cross-link on the Community ES/EN dossiers.
-  // Load independently so those routes receive the bridge even though the Calificacion-specific chain does not render there.
-  load('calificacion-allegation03-unitary-community-ac-causation-20260816.js?v=20260816a');
+  // Separate Community-page bridge to the unitary Allegation-03 analysis; does not duplicate the full module.
+  load('calificacion-a03-community-bridge-20260816.js?v=20260816a');
 
-  // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
   load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
-
-  // Calificacion/recovery: force the contemporaneous rescue/finance/operation/protection counter-record into the public reading order.
   load('calificacion-documentary-counter-record-20260816.js?v=20260816a');
-
-  // Calificacion: surface the verified 2017 court-record rescue filing and the 2018 reported direct judicial notice on the ES/EN landing pages.
   load('calificacion-prior-judicial-knowledge-20260816.js?v=20260816a');
-
-  // Calificacion: supersede stale static wording that still described the now-complete 47-page AC report as outstanding.
   load('calificacion-source-status-correction-20260816.js?v=20260816a');
 })();
