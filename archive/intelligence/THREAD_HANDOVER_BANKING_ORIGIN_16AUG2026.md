@@ -1,9 +1,9 @@
 # THREAD HANDOVER — BANKING ORIGIN / EXECUTION 90/2012 / VALENCIA
 ## 16 August 2026
 
-## Controlling branch
+## Controlling repository state
 
-`chatgpt/banking-origin-gap-closure-20260816`
+Use current `main`. The primary banking-origin gap closure was merged through PR #109; the Companies House identity correction was prepared through PR #114.
 
 This handover records the primary-document gap-closure pass requested on 16 August 2026 and the later Companies House identity correction. It does not replace the canonical ledgers or registers.
 
