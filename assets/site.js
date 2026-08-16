@@ -61,4 +61,7 @@
 
   // Controlled direct invitation naming Rosa María Dorta Perdomo as a historical identification lead only.
   load('rosa-dorta-direct-open-letter-20260816.js?v=20260816a');
+
+  // LinkedIn professional-profile capture for Lourdes Castillejo on her ES/EN open-letter pages.
+  load('lourdes-linkedin-profile-20260816.js?v=20260816a');
 })();
