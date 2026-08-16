@@ -136,3 +136,22 @@ Every public node should identify what it establishes and what it does not estab
 5. Preserve superseded earlier analyses as audit history.
 6. Update the evidence model/Depository first, then the public-safe website layer.
 7. End each research cycle with structured intelligence updates, not a prose report alone.
+
+## 16 Aug 2026 — RedSARA Anexo 4 canonical ingest
+
+The 154-page Ministerio Fiscal / RedSARA receipt bundle supplied on 16 August 2026 has been canonically ingested at:
+
+`archive/evidence/mf-redsara-anexo4/MF_REDSARA_ANEXO4_CANONICAL_INGEST_16AUG2026.md`
+
+Supporting repository derivatives:
+
+- `MF_REDSARA_REGISTRATION_INDEX_SHORT.csv` — all 75 registered communications with source-page range, timestamp, REGAGE number, recipient, subject and annex count.
+- `MF_REDSARA_UNIQUE_ATTACHMENT_INDEX.csv` — 100 unique annex filename + receipt-listed SHA-512 pairs.
+- `ANEXO4_REDSARA_TRANSCRIPT_README.md` — source hashes, privacy boundary and reconstruction method.
+- `ANEXO4_REDSARA_TRANSCRIPT.bz2.b64.part-01-of-05.txt` through `part-05-of-05.txt` — complete reconstructable public-safe transcript of all 154 source pages.
+
+**Continuity rule:** do not ask the user to re-upload this bundle merely to recover its text. Search the canonical ledger/index first; reconstruct the transcript when exact wording is needed. The native PDF remains controlling for layout, signatures and certification. The public derivative redacts only the submitter's repeated direct contact identifiers (NIE, street address, direct email and direct phone number); substantive/legal/registration text and receipt-listed annex metadata are retained.
+
+**Evidence boundary:** these receipts establish registration/transmission metadata and the text/annex metadata recorded on the receipts. They do not, by themselves, establish the truth of party-authored allegations, substantive review of every annex, or the opening/granting of requested investigations.
+
+**Priority source-completion targets sharpened by the bundle:** primary DIP 20/2026 file/decree and routing; EG 19/2026 Valencia decree plus Arrecife destination/outcome; EG 33/2025 file and 28 February 2025 archive resolution; DI 113/2022 complete file/archive order; and primary DP 91/2023 / Rollo 120/2024 / OC/2024/0532 records.
