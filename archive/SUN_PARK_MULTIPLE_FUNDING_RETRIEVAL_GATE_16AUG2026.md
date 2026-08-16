@@ -23,13 +23,18 @@ Read and apply this gate before any repository search, public drafting, filing, 
 
 1. `CHATGPT_START_HERE.md`
 2. `archive/CORRECTION_REGISTER.md`
-3. `archive/MISSING_EVIDENCE_REGISTER.md`
-4. `archive/SUN_PARK_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_CONTROL_CHAIN_16AUG2026.md`
-5. `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`
-6. `archive/INSTITUTIONALISATION_CHAIN_RIC_EU_REGIONAL_15AUG2026.md`
-7. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`
-8. `archive/RICPE_ORION_PLATFORM_CONTINUITY_15AUG2026.md`
-9. the primary-source or specialist ledgers for the particular amount, valuation, property, employment promise or institutional gate.
+3. `archive/CORRECTION_REGISTER_MULTIPLE_FUNDING_APPEND_16AUG2026.md`
+4. `archive/MISSING_EVIDENCE_REGISTER.md`
+5. `archive/MISSING_EVIDENCE_REGISTER_MULTIPLE_FUNDING_APPEND_16AUG2026.md`
+6. `archive/SUN_PARK_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_CONTROL_CHAIN_16AUG2026.md`
+7. `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`
+8. `archive/SUN_PARK_MASTER_STORYLINE_MULTIPLE_FINANCIAL_LIVES_ADDENDUM_16AUG2026.md`
+9. `archive/INSTITUTIONALISATION_CHAIN_RIC_EU_REGIONAL_15AUG2026.md`
+10. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`
+11. `archive/CALIFICACION_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_ADDENDUM_16AUG2026.md`
+12. `archive/RICPE_ORION_PLATFORM_CONTINUITY_15AUG2026.md`
+13. `archive/CONTINUOUS_MAINTENANCE_MATRIX_MULTIPLE_FUNDING_UPDATE_16AUG2026.md`
+14. the primary-source or specialist ledgers for the particular amount, valuation, property, employment promise or institutional gate.
 
 If allegations, criminal characterisation, DP 1901/2026, DP 1956/2026, Control 21/22/24 or actor responsibility are in scope, also apply:
 
@@ -153,4 +158,14 @@ Approved short form:
 
 ## Mandatory propagation and close-out
 
-Any material result must be propagated NEW→OLD and OLD→NEW to the canonical control, relevant registers/ledgers and bilingual public surfaces. Before ending, apply `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md` and record whether the thread is deletion-safe.
+Any material result must be propagated NEW→OLD and OLD→NEW to:
+
+- the same-asset canonical control;
+- the base and continuation correction/missing-evidence registers;
+- the master storyline and its addendum;
+- Calificación base controls and the same-asset addendum;
+- RICPE, public-funds, CNMV/SNCA, recovery, concurso, Community and relevant actor ledgers;
+- the bilingual dedicated hub and cross-site module;
+- the maintenance update and thread-deletion audit.
+
+Before ending, apply `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md` and record whether the thread is deletion-safe.
