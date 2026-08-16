@@ -7,9 +7,9 @@
 
 **DELETION-SAFE WITH OPEN EVIDENCE.**
 
-The substantive record, publication architecture, source-status decisions, correction controls, LinkedIn-context evidence, retrieval targets and implementation/deployment state are recoverable from current `main` plus the connected primary-source systems. The digital-identity sitemap/robots discovery correction was merged and deployment-verified through PRs #134/#135.
+The substantive record, publication architecture, source-status decisions, correction controls, LinkedIn-context evidence, retrieval targets and implementation/deployment state are recoverable from current `main` plus the connected primary-source systems. The digital-identity sitemap/robots discovery correction was merged and deployment-verified through PRs #134/#135. The previously identified visual-publication remainder was closed by PR #143: the existing privacy-redacted evidence sequence is now visibly embedded in both standalone Lourdes/MYND incident pages, and exact-SHA Pages build 1154915204 completed **built** with no error for merge commit `2eef2fd265d85e4654942ac641c3302e30930a76`.
 
-The underlying provider-side evidence is not complete. Those gaps are now also registered in the single canonical source-completion queue as **ME-060**. They are evidence-completion tasks, not chat-continuity gaps.
+The underlying provider-side evidence is not complete. Those gaps are registered in the single canonical source-completion queue as **ME-060**. They are evidence-completion tasks, not chat-continuity gaps.
 
 ## Canonical internal record
 
@@ -80,7 +80,7 @@ The controlling publication rule is:
 
 1. Incident A and Incident B each have autonomous ES/EN dossiers.
 2. Each incident page visibly links to the other as a related but separate episode.
-3. The former combined digital-identity route is now an index/hub only:
+3. The former combined digital-identity route is now an **index/hub only**:
    - ES `/es/identidad-digital-sun-park-google-mynd/`
    - EN `/en/sun-park-digital-identity-google-mynd/`
 4. The Lourdes open letter carries only the Lourdes/MYND incident narrative and links to the 2019 incident instead of reproducing it.
@@ -97,7 +97,12 @@ A privacy-redacted combined visual sequence is preserved in the repository:
 
 - `assets/sunpark-digital-identity-evidence-sequence-redacted.jpg`
 
-The public visual removes unnecessary customer/telephone data and does not itself prove account control or common authorship.
+**Visual-publication remainder closed:** PR #143 embedded that existing redacted sequence directly into both standalone Lourdes/MYND incident pages:
+
+- ES `/es/incidente-lourdes-google-mynd/`
+- EN `/en/lourdes-google-mynd-incident/`
+
+The bilingual captions expressly state that, for the Lourdes/MYND dossier, only the 2021–2022 Google Business-request frames are relied upon; the 2019 `sunpark264@gmail.com` episode remains in its separate dossier. The captions also preserve that the visual does not establish who physically operated a device, who controlled the account, who gave instructions or personal authorship. The public visual removes unnecessary personal/customer/telephone data and does not itself prove account control or common authorship.
 
 The LinkedIn visual capture is separately controlled as an editorial capture from indexed profile content rather than a native forensic LinkedIn screenshot; no LinkedIn personal photograph is republished.
 
@@ -124,13 +129,17 @@ Material deployments recorded in `archive/DEPLOYMENT_LOG.md` include:
 - PR #128 — split into autonomous 2019 and Lourdes/MYND incident routes;
 - PR #129 — deployment log for PR #128;
 - PR #130/#131 — expanded MYND/Canarian Hospitality worker invitation and public-interest RIC/FEDER chain;
-- PR #134/#135 — thread-deletion audit, digital-identity sitemap/robots discovery correction and verified deployment.
+- PR #134/#135 — thread-deletion audit, digital-identity sitemap/robots discovery correction and verified deployment;
+- PR #143 — embeds the privacy-redacted evidence sequence in both standalone Lourdes/MYND incident pages and closes the visual-publication remainder.
 
 PR #128 merge commit: `30ff0360befcb3a8f3424579fe16365d915b5471`.  
 Verified Pages build recorded for that merge: `1154811591`, **built**, no error.
 
 PR #134 merge commit: `f7efb295e93a6210b9d6fb0dc737d81fd1f7eec1`.  
 Verified Pages build recorded for that merge: `1154876516`, **built**, no error.
+
+PR #143 merge commit: `2eef2fd265d85e4654942ac641c3302e30930a76`.  
+Verified exact-SHA Pages build: `1154915204`, **built**, no error; created 12:48:08Z, completed 12:48:28Z.
 
 ## Website-discovery correction — closed
 
@@ -139,7 +148,7 @@ The deletion-safety review found that the main historical `sitemap.xml` did not 
 - `sitemap-digital-identity.xml` containing the bilingual hub, both standalone incident pairs and Lourdes open-letter pair;
 - a `Sitemap:` directive in `robots.txt` pointing to that sitemap.
 
-This is now source-verified on current `main` and deployment-verified. It was a website-discovery omission, not a loss of substantive evidence.
+This is source-verified on current `main` and deployment-verified. It was a website-discovery omission, not a loss of substantive evidence.
 
 ## Open evidence — canonical ME-060
 
@@ -176,6 +185,6 @@ A fresh ChatGPT should recover this track by reading:
 
 ## Final continuity gate
 
-If this conversation disappears, no material new fact, source-status decision, correction, publication safeguard, route architecture, LinkedIn-context decision, retrieval target or deployment state from the Lourdes / Sun Park digital-identity work depends on chat memory.
+If this conversation disappears, no material new fact, source-status decision, correction, publication safeguard, route architecture, LinkedIn-context decision, visual-publication state, retrieval target or deployment state from the Lourdes / Sun Park digital-identity work depends on chat memory.
 
 **Final status: DELETION-SAFE WITH OPEN EVIDENCE.**
