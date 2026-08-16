@@ -31,7 +31,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | Consejería de Presidencia / integrity | institutional candidate | candidate/secondary track | BUILD NEXT | Law 2/2023 handling, transfers, responsible unit and responses |
 | ICALPA | institutional records | candidate/professional track | BUILD NEXT | files 79/2026 and 80/2026 full treatment/status |
 | ICAM | institutional records | professional track | BUILD NEXT | Preliminary File 434/26, later-act treatment |
-| CCACM | appellate professional track | professional track | BUILD NEXT | Exp. 193/2026 full appeal/status |
+| CCCA / Consejo Canario de Colegios de Abogados | institutional records / appellate professional track | professional track | BUILD NEXT / user-reported status: no Council communication received as at 16 Aug 2026 | Exp. 193/2026 full appeal/status; incorporate any Council communication only when source-verified |
 | COA Lanzarote / COAGC | professional records | architecture-professional track | BUILD NEXT | complete visado/mandate/authority/archive chain |
 | Books / publishing | `/en/books/`, `/es/libros/` | `archive/book/` living files | LIVE / separate editorial system | keep evidence→book intelligence→manuscript layers separate |
 
