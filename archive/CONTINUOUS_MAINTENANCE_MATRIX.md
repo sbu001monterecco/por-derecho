@@ -8,7 +8,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | Ministerio Fiscal | ES/EN open-message + Justice Map | MF handover + publication basis | LIVE / evidence-first | complete DI 248; DP 332 final order; 2019 rent expert; cumulative-review evidence |
 | DP 1901/2026 | `/es/dp-1901-2026/` | DP1901 status record | LIVE / current criminal verification node | signed Fiscalía report; subsequent judicial resolution; exact transmitted package |
 | Concurso 36/2012 hub | ES/EN institutional accountability hub | judicial intelligence archive | LIVE | certified whole-file index and missing primary orders |
-| Banking origin / Execution 90/2012 / Valencia | `/es/acreedor-de-registro/` + `/en/lender-of-record/` | `archive/BANKING_ORIGIN_GAP_CLOSURE_LEDGER_16AUG2026.md` + `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md` + refreshed banking-origin synthesis | LIVE / **primary auction count corrected to 158; 1-Dec/2-Jan/3-Jan/11-Jan/14-Feb acquisition-publicity chronology verified; 5-Mar global-versus-cure debt measures separated; overall weighted readiness 43%** | ME-051–058: native 2011 default notice and ledgers; full Execution 90/2012; 158/159/166 finca crosswalk; complete acquisition/control file and separately controlled privilege review; exit-response matrix; operator dataset; Valencia public-safe bundle; reproducible accounting and institutional-causation bridges |
+| Banking origin / Execution 90/2012 / Valencia | `/es/acreedor-de-registro/` + `/en/lender-of-record/` | `archive/BANKING_ORIGIN_GAP_CLOSURE_LEDGER_16AUG2026.md` + `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md` + `archive/AWESWELL_MONTERECCO_COMPANIES_HOUSE_CONTINUITY_16AUG2026.md` + `archive/PINK_CANARY_MONTERECCO_SPANISH_COMPANY_CONTINUITY_16AUG2026.md` | LIVE / **primary auction count corrected to 158; UK Monterecco→Aweswell identity closed; Spanish Monterecco S.L.→Pink Canary identity closed; global-versus-cure debt measures separated; overall weighted readiness 43%** | ME-051–058 plus certified H TF 49739 name-change package: native 2011 default notice and ledgers; full Execution 90/2012; 158/159/166 finca crosswalk; acquisition/control and privilege review; exit-response matrix; operator dataset; Valencia public-safe bundle; reproducible accounting/institutional-causation bridges; original Spanish 2013 resolution/deed/inscription/BORME publication |
 | LAJ / oficina judicial | `/es/concurso-36-2012-laj/` + `/en/insolvency-36-2012-laj/` | LAJ testimony + comparative-access ledgers + `LAJ_SUPERVISORY_CHAIN_15AUG2026.md` | LIVE / evidence-first / three-level supervisory chain registered 15 Aug 2026 | actual 2018/2021/2022 testimonios; service/delivery logs; exact notarial/Registry/downstream use; response from J00023418/J00022837/E05077001 |
 | Mercantil nº1 / judge | ES/EN court and judge pages | judicial knowledge matrix | LIVE | complete 2020–22 evidence-before-court matrix; primary orders |
 | Administrador Concursal | ES/EN AC page | AC accounting bridge | LIVE | reproducible credit→interest→€400k→dación→cash→sobrante accounting bridge |
@@ -49,6 +49,15 @@ Also trace the separate public-finance layers: RICPE/private RIC capital → RIC
 ### Banking-origin correction
 
 The primary 15-May-2012 Arrecife diligence in Mortgage Execution 90/2012 schedules **158 properties**, not 166. Preserve 159 and 166 only as different later/secondary measurements pending a finca-by-finca reconciliation. Distinguish the acquisition/publicity sequence—1-Dec purchase, 2-Jan director decision, 3-Jan Spanish publicity deed, 11-Jan Registry presentation and 14-Feb official registry/BORME data—and do not merge the lender's global €940,737.53 figure with the separate €54,653.80 cure figure. The non-privileged chronology supports a time-critical defensive rationale, but lender error, professional negligence and institutional causation remain open and source-dependent; advice content is not published.
+
+### Entity-identity correction
+
+Maintain two legally separate name-continuity chains:
+
+1. **United Kingdom:** Monterecco Sun Park Limited → Aweswell Limited, one continuous company, no. 07716847, name change effective 3-Jun-2014.
+2. **Spain:** Monterecco Sun Park, S.L./S.R.L. → Pink Canary Services, S.L./S.L.U., one continuous Spanish company, NIF B76564517. The signed company book records the name change on 30-Sep-2013; the original notarial deed, exact Registry inscription and BORME name-change publication remain open.
+
+Do not infer a transfer, novation, successor company or successor operator from either name change. Do not merge the UK and Spanish legal persons. `S.L.U.` denotes single-member status, not a separate company.
 
 ### Material-control correction
 
