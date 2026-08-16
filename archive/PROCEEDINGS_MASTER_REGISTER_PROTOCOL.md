@@ -12,6 +12,12 @@ It is deliberately **not a public-facing “all cases” page**. The underlying 
 
 The objective is operational: a fresh working thread should be able to identify the organ, reference, current custodian, relationship to other files, source status, latest known procedural state and unresolved reference gaps without reconstructing the inventory from conversational memory.
 
+For Matkator/DP 552/2025/ETJ 163/2020/fincas 8584–8588–8497–8498 and the linked 2018/2020/2021 access/conservation record, the specialist source-and-version control is:
+
+`archive/MATKATOR_DP552_ETJ163_CONCURSO36_SOURCE_DIGEST_16AUG2026.md`.
+
+That digest must be read before changing the relevant master rows. It controls the two amplification-PDF versions, the decided/not-decided boundary of the signed Autos, the three-plane LPB/Matkator/Aweswell separation and the current primary-source gaps.
+
 ## Scope
 
 The master register may contain:
@@ -57,9 +63,13 @@ Never convert:
 - a notification/output number into the underlying expediente unless the source says so;
 - an internal “Control 21/22/24” label into an official proceeding;
 - a filename or party-created heading into an official court reference without verification;
+- a complaint, amplification, party legal characterisation or damages calculation into a judicial finding;
+- a draft/pre-file version into a separate filed pleading without a receipt;
 - a referral into admission or a merits decision;
 - an appeal into a separate merits universe where it is simply a child of the original file;
 - common actors, the same hotel, or common documents into proof that legally distinct proceedings are one case.
+
+A signed order proves its operative act and stated reasoning. It does not prove every allegation it summarises. A procedural/timing/utility ruling is not automatically a merits determination of the underlying property, damage, access or responsibility issue.
 
 ## Deduplication and relationship rules
 
@@ -73,6 +83,8 @@ Never convert:
 8. If one secondary filename conflicts with a primary or repeated native reference, preserve the conflict in `Notes`/`Open_Reference_Gap`.
 9. Current custodian is distinct from origin organ. Transfers, inhibitions and referrals should update both fields.
 10. A current status is only as current as its primary source. `Last_Scan_Date` records the inventory scan, not necessarily a merits-event date.
+11. Different versions of substantially the same pleading remain one procedural sequence unless filing evidence proves separate presentations. Preserve version history in the specialist digest and source anchor.
+12. A transmission-family row records document movement; it does not merge the originating and receiving proceedings.
 
 ## Public-treatment rule
 
@@ -97,6 +109,8 @@ Private compliance files may use:
 
 The 16 August 2026 master refresh reconciles the existing Canary Islands cross-island register with additional repository/site, Gmail, Google Drive and File Library findings. It preserves the existing Lanzarote, Gran Canaria and Tenerife IDs while adding national, Madrid, Valencia, regulatory, tax, professional, public-funds and newly recovered historical references.
 
+The Matkator source refresh adds **TF-CRI-006 / DP 552/2025**, updates **TF-CIV-002 / ETJ 163/2020**, updates the Tenerife cross-proceeding transmission family, and narrows **LZ-JUD-003 / DP 1132/2018** using the signed 2 May 2018 opening Auto. It does not state a current DP 552 merits result because no certified current/final act was located in the reviewed bundle.
+
 Known gaps remain gaps. In particular, candidate references such as historical accumulated proceedings, incomplete appellate rolls, destination Fiscalía references and some output/registration numbers are not upgraded to verified proceedings merely to make the table look complete.
 
 ## Maintenance workflow
@@ -104,7 +118,7 @@ Known gaps remain gaps. In particular, candidate references such as historical a
 For a normal refresh:
 
 1. Read `CHATGPT_START_HERE.md`, this protocol, the master CSV, `CORRECTION_REGISTER.md` and `MISSING_EVIDENCE_REGISTER.md`.
-2. Read the specialist register/ledger for the affected track.
+2. Read the specialist register/ledger for the affected track. For Matkator/DP552/ETJ163, read the canonical Matkator source digest before relying on the CSV summary.
 3. Inspect current `main` and current website source/data for new or changed references.
 4. Search Gmail for exact proceeding numbers, NIGs, organ names, notification subjects and attached native filenames.
 5. Search Google Drive for the same references and for primary institutional originals.
@@ -123,7 +137,7 @@ For a normal refresh:
 
 ## Reusable maintenance prompt
 
-> **Run the Por Derecho proceedings-maintenance scan.** Start from current `main`, `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md` and `archive/PROCEEDINGS_MASTER_REGISTER.csv`. Then scan the current public-site source/data, Gmail, Google Drive and File Library for any court, Fiscalía, government, regulator, professional-body, ombudsman, police, tax, transparency, public-funds or compliance proceeding/file/reference that is new or has changed. Verify against primary institutional originals where possible. Treat REGAGE receipts, notifications, output numbers, internal “Control” labels and technical references as supporting references unless evidence shows an assigned proceeding. Deduplicate by organ + legal file + reference, preserve parent/child appeal and incident relationships, and never merge distinct proceedings merely because they concern Sun Park or the same actors. Update the master register’s reference, NIG, source status, latest known state, current custodian, linked proceedings and reference gaps. Propagate material corrections to `CORRECTION_REGISTER.md` and primary-source gaps to `MISSING_EVIDENCE_REGISTER.md`. Do not create, link or promote a public aggregate proceedings page unless explicitly requested. Use a branch and PR for repository changes and finish by confirming deletion-safety.
+> **Run the Por Derecho proceedings-maintenance scan.** Start from current `main`, `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md` and `archive/PROCEEDINGS_MASTER_REGISTER.csv`. Then scan the current public-site source/data, Gmail, Google Drive and File Library for any court, Fiscalía, government, regulator, professional-body, ombudsman, police, tax, transparency, public-funds or compliance proceeding/file/reference that is new or has changed. Verify against primary institutional originals where possible. Treat REGAGE receipts, notifications, output numbers, internal “Control” labels and technical references as supporting references unless evidence shows an assigned proceeding. Deduplicate by organ + legal file + reference, preserve parent/child appeal and incident relationships, and never merge distinct proceedings merely because they concern Sun Park or the same actors. Update the master register’s reference, NIG, source status, latest known state, current custodian, linked proceedings and reference gaps. Where Matkator/DP552/ETJ163 is involved, first apply `archive/MATKATOR_DP552_ETJ163_CONCURSO36_SOURCE_DIGEST_16AUG2026.md`, including its version controls and decided/not-decided limits. Propagate material corrections to `CORRECTION_REGISTER.md` and primary-source gaps to `MISSING_EVIDENCE_REGISTER.md`. Do not create, link or promote a public aggregate proceedings page unless explicitly requested. Use a branch and PR for repository changes and finish by confirming deletion-safety.
 
 ## Suggested recurring review
 
