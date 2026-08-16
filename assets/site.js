@@ -44,6 +44,9 @@
   // Independent media-mark loader: do not make this depend on any other helper chain.
   load('media-publication-marks-20260815.js?v=20260815a');
 
+  // Canary Council of Bar Associations institutional mark and source-controlled status record.
+  load('ccca-institutional-mark-20260816.js?v=20260816a');
+
   // Canonical RICPE routing, 15-Aug chronology, legacy-dossier banner and SNCA FEDER boundary.
   load('canonical-routing-chronology-20260815.js?v=20260815a');
 
