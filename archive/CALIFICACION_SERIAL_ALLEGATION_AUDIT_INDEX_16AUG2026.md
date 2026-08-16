@@ -3,7 +3,7 @@
 **Date:** 16 August 2026  
 **Purpose:** continuity index for the allegation-by-allegation audit of the AC's 11-Feb-2019 calificación report in Concurso 36/2012.
 
-**Serial-audit control:** this index is the controlling record for which allegation is current and which comes next. It supersedes older maintenance/publication-control wording naming a superseded `next` allegation.
+**Serial-audit control:** this index is the controlling record for which allegation is current and which comes next. It supersedes older maintenance/publication-control wording naming a superseded `next` allegation. Those dashboards must not regress the serial audit.
 
 ## Method
 
@@ -12,6 +12,31 @@ Every allegation is tested in this order:
 `EXACT AC PROPOSITION → WHAT AC KNEW → SAME-SOURCE CONTRADICTIONS → WHOLE ECONOMIC/OPERATIONAL SYSTEM → ACTOR-SPECIFIC DUTY/POWER → ACTUAL JUDICIAL REALITY → WHAT THE COURT DID → WHAT THE ALLEGATION DISPLACED → KNOWLEDGE GRADE → MOTIVE GRADE → PUBLIC WORDING → OPEN EVIDENCE`.
 
 The purpose is not to prove a predetermined global thesis. Valid adverse points stay visible. Fragmentation is prohibited: where an allegation depends on an operating system, causation must be reconstructed across that system while responsibility remains actor-specific.
+
+## Mandatory 2018 control/capacity baseline
+
+Before reusing or continuing **any allegation whose causal period reaches 7 June 2018 or later**, read:
+
+`archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
+
+Controlled proposition:
+
+- Construcciones Acosta Matos, S.A. was already a recognised holder of the relevant mortgage-credit amounts before the 7-Jun-2018 control event;
+- current repository control treats **7 June 2018 as a de facto material/access/operational-control threshold, not a title date**;
+- no reviewed whole-hotel judicial delivery/order authorising whole-hotel legal possession on that date has been located;
+- `lender in possession` may be used only as a **functional comparison** (`secured creditor + de facto material control`), never as a claimed Spanish statutory office/status or synonym for ownership;
+- CR-018 remains controlling: full practical possession of the hotel as a whole is Gil Marer's allegation/inference and exact finca-by-finca reach remains open.
+
+For every post-threshold allegation add the finite capacity test:
+
+`FORMAL DUTY / POWER → ACTUAL ACCESS / CONTROL / CAPACITY → ACT / OMISSION → CONSEQUENCE → CAUSATION`.
+
+Do not attribute a post-7-Jun omission, lost revenue, deterioration, failed rescue step or operating result to Gil/LPB without first identifying what remained within Gil/LPB's practical control and what depended on the AC, CAM, security, an operator, the Community or another separately proved actor. Conversely, do not use the control event to erase adverse conduct that remained genuinely within Gil/LPB's power.
+
+**Master-storyline effect:** this does **not** change the controlled chronology or CR-018. It upgrades the legal/causal reading of an existing storyline node: `creditor status before control → de facto control threshold → later suspension → later adjudication/title`, and requires the same pre/post-control split across the calificación, preservation, rescue, valuation, bidding/accounting and extra-concursal ownership tracks.
+
+Public module:
+`assets/calificacion-2018-creditor-material-control-20260816.js`
 
 ## Completed
 
@@ -72,15 +97,16 @@ Public modules:
 - Sentencia 163/2023 records Pink's defence that minority owners resisted unity of exploitation, occupancy was low and maintenance costs were high; those are party allegations reproduced by the judgment, not a sole-cause finding;
 - a contemporaneous 25-Nov-2013 accountant memorandum proposed offsetting rent against LPB obligations said to be borne by Monterecco; it is professional evidence based on supplied data, not bank proof that each offset was valid;
 - the AC's own 2019 report proves that he had notice of Gil's allegation that disputed Community debt impaired LPB's majority voting/governance and of a request that the AC require supporting Community accounts/minutes;
-- the preserved **31-Jul-2018 DP 1132/2018 AC court declaration** now directly verifies that the AC drove the security route after liquidation, authorised Community access to LPB premises, and authorised Laura Acosta Matos to enter LPB-owned locals for supervision/maintenance while expressly denying authorisation to use/occupy them;
+- the preserved **31-Jul-2018 DP 1132/2018 AC court declaration** verifies that the AC drove the security route after liquidation, authorised Community access to LPB premises, and authorised Laura Acosta Matos to enter LPB-owned locals for supervision/maintenance while expressly denying authorisation to use/occupy them;
 - that AC declaration also records that he did not know whether unity of exploitation existed and did not know the cost of maintaining the complex, materially relevant limits when later hotel income/rent was used as a causation theory;
 - the preserved **20-Jul-2018 DP 1132/2018 declaration packet** verifies the operating chain through Community office-holders: F. Mario Matos said LPB was excluded from voting for asserted Community debt, that the debt had fallen from roughly €3m to about €1m after retroactive charge reductions and that he did not know its origin; he also linked the 18-May security measure to the AC and CAM liquidity/payments to urgent Community costs including security/insurance;
 - Shaila's declaration says Community decisions were communicated to and had AC approval, lock changes were by Community agreement/approval, she transmitted an AC access rule to guards, and CAM/JDAM were permitted entry as owners;
-- Laura's declaration says she attended May/June Community meetings, knew security would be installed and went on 7-Jun-2018 to access; the AC's separate declaration supplies direct cross-corroboration that he had authorised Laura to enter LPB locals for supervision/maintenance;
+- Laura's declaration says she attended May/June Community meetings, knew security would be installed and went on 7-Jun-2018 to access; the AC's separate declaration cross-corroborates that he had authorised Laura to enter LPB locals for supervision/maintenance;
 - José Daniel's July declaration is mandatory counterevidence: he acknowledged inspection/project visits but denied forced/clandestine access and denied claiming ownership of the whole complex;
 - a separate 26-Feb-2018 Logalty/Burovoz transcript used in filed NEXUS 36 materials contains party-attributed statements about future entry, security, an agreement with the Community and works; the speakers are formally numbered and native audio/identity authentication remains required, so this is a high-value planning lead rather than a confession or verified admission;
 - the adverse AP Las Palmas treatment of the 2018 access episode remains visible: provisional criminal archive was upheld and Community maintenance/access authority plus the AC's account formed part of a lawful/civil alternative explanation; this was not a whole-hotel possession order for CAM;
 - predecessor Community conduct is not automatically CAM conduct: knowledge/adoption/instruction/use/escalation/benefit must be proved actor by actor;
+- the **2012–2015 rent period, the pre-existing Community/minority conflict, and the later 2017–2018 CAM/security/access period must remain temporally distinct**; later conduct is not backdated as the cause of earlier rent non-payment;
 - the AC did litigate rent; do not say he did nothing;
 - the later rent non-collection branch remains materially adverse at first instance: gross fault, causation and Pink complicity, all appealed;
 - the court rejected/narrowed other AC theories: contract-entry reproach, the €737k self-debt construction, the specific `connivencia`/alzamiento use and the personal complicity extension to Patricia;
@@ -98,7 +124,7 @@ The phrase `Community hijacking` remains a party characterisation. Public-safe w
 
 `Community debt/vote/governance → exploitable inventory → occupancy/revenue → costs and set-offs → LPB/Pink cash → AC knowledge and action → security/access authority → Community implementation → private-owner use/benefit → operational effect → realistically recoverable rent → specific insolvency aggravation`.
 
-Do not substitute later title for earlier authority, and do not treat a protective Community/security explanation as disproved merely because the same mechanism may also have produced practical control effects.
+For any consequence at or after 7-Jun-2018, apply the mandatory control/capacity baseline above. Do not substitute later title for earlier authority, and do not treat a protective Community/security explanation as disproved merely because the same mechanism may also have produced practical control effects.
 
 ## Allegation 03 closure gate — do not advance yet
 
