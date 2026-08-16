@@ -1,6 +1,72 @@
 (() => {
   const path = window.location.pathname;
   const id = 'same-asset-multiple-financial-lives-16aug2026';
+  const outreachId = 'same-asset-witness-outreach-16aug2026';
+  const isEs = path.includes('/es/');
+  const outreachTarget = /cadena-instrumentalizacion-ric-fondos-incentivos|institutionalisation-chain-ric-eu-incentives|acosta-matos-perimetro|acosta-matos-perimeter/.test(path);
+
+  const insertOutreach = () => {
+    if (!outreachTarget || document.getElementById(outreachId)) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+
+    const style = document.createElement('style');
+    style.textContent = `
+      #${outreachId}{background:#f4f1ea}
+      #${outreachId} .witness-box{max-width:1080px;margin:0 auto}
+      #${outreachId} .witness-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+      #${outreachId} .witness-card{background:#fff;border:1px solid rgba(19,37,45,.16);border-radius:16px;padding:1rem}
+      #${outreachId} .witness-card h3{margin-top:0}
+      #${outreachId} .witness-card a{display:inline-block;border-radius:999px;padding:.65rem 1rem;font-weight:750;text-decoration:none;background:#13252d;color:#fff}
+      #${outreachId} .witness-rule{border-left:5px solid #8c6b2f;background:#f3efe4;border-radius:12px;padding:1rem 1.15rem}
+      @media(max-width:850px){#${outreachId} .witness-grid{grid-template-columns:1fr}}
+    `;
+    document.head.appendChild(style);
+
+    const section = document.createElement('section');
+    section.id = outreachId;
+    section.className = 'section alt';
+    section.innerHTML = isEs ? `
+      <div class="shell witness-box">
+        <h2>Trabajadores, testigos e informantes: responsabilidad individual</h2>
+        <p>Investigar empresas, financiación, propiedad, control o decisiones no convierte a sus trabajadores en responsables. Quien conoció hechos por su trabajo puede ayudar a confirmar, corregir o refutar esta cadena, siempre mediante conservación y comunicación lícitas.</p>
+        <div class="witness-grid">
+          <article class="witness-card">
+            <h3>MYND / Canarian Hospitality</h3>
+            <p>Invitación a quienes trabajan o trabajaron en MYND Yaiza, MYND Hotels, Canarian Hospitality, Hotel New Trend y empresas relacionadas, con separación expresa entre empleo, conocimiento y responsabilidad individual.</p>
+            <a href="/por-derecho/es/carta-abierta-trabajadores-mynd-yaiza/">Carta a trabajadores MYND →</a>
+          </article>
+          <article class="witness-card">
+            <h3>Construcciones Acosta Matos / Grupo Acosta Matos</h3>
+            <p>Invitación a preservar información y utilizar canales lícitos de comunicación, sin atribuir responsabilidad por el mero hecho de trabajar o haber trabajado en una entidad investigada.</p>
+            <a href="/por-derecho/es/carta-abierta-trabajadores-acosta-matos/">Carta a trabajadores Acosta Matos →</a>
+          </article>
+        </div>
+        <p class="witness-rule"><strong>Regla:</strong> conocer no equivale a participar. Informar no autoriza extraer documentos, acceder ilícitamente a sistemas ni alterar pruebas. La responsabilidad debe probarse mediante actos propios.</p>
+      </div>` : `
+      <div class="shell witness-box">
+        <h2>Workers, witnesses and informants: individual responsibility</h2>
+        <p>Investigating companies, finance, ownership, control or decisions does not make their workers responsible. A person who learned relevant facts through work may help confirm, correct or refute this chain, using lawful preservation and reporting only.</p>
+        <div class="witness-grid">
+          <article class="witness-card">
+            <h3>MYND / Canarian Hospitality</h3>
+            <p>An invitation to current and former personnel of MYND Yaiza, MYND Hotels, Canarian Hospitality, Hotel New Trend and related businesses, expressly separating employment, knowledge and individual responsibility.</p>
+            <a href="/por-derecho/en/open-letter-workers-mynd-yaiza/">Letter to MYND workers →</a>
+          </article>
+          <article class="witness-card">
+            <h3>Construcciones Acosta Matos / Acosta Matos Group</h3>
+            <p>An invitation to preserve information and use lawful reporting channels, without attributing responsibility merely because someone works or worked for an entity under investigation.</p>
+            <a href="/por-derecho/en/open-letter-workers-acosta-matos/">Letter to Acosta Matos workers →</a>
+          </article>
+        </div>
+        <p class="witness-rule"><strong>Rule:</strong> knowing something is not the same as participating in it. Reporting does not authorise taking documents, unlawfully accessing systems or altering evidence. Responsibility must be established through each person's own acts.</p>
+      </div>`;
+
+    main.insertAdjacentElement('beforeend', section);
+  };
+
+  insertOutreach();
+
   if (document.getElementById(id)) return;
 
   const excluded = [
@@ -34,7 +100,6 @@
   ];
   if (!targets.some((pattern) => pattern.test(path))) return;
 
-  const isEs = path.includes('/es/');
   const isCalificacion = /calificacion-concurso-36-2012-vidas-paralelas|insolvency-classification-parallel-lives/.test(path);
 
   const style = document.createElement('style');
