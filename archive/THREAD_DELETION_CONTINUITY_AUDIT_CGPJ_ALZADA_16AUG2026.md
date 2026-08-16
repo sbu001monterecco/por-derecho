@@ -53,16 +53,16 @@ The governing June–July chronology is now:
 - `archive/CGPJ_ISSUES_AND_VERIFICATION_REGISTER_15AUG2026.md`
 - `archive/CGPJ_ALZADA_286_2026_REGAGE_28JUL2026_TRACEABILITY.md`
 - `archive/CGPJ_JUDICIAL_GOVERNANCE_PROTOCOL_15AUG2026.md`
-- `archive/CORRECTION_REGISTER.md` — CR-033 to CR-035 remain controlling for the previously recorded calendar/dating corrections; this audit additionally locks the registry-routing, Inspection-referral and 23-Jul non-accreditation controls until separately propagated to the correction register.
+- `archive/CORRECTION_REGISTER.md` — CR-033 to CR-035 remain controlling for the prior calendar/dating corrections; **CR-043 to CR-045** lock the registry-routing, Inspection-referral and 23-Jul non-accreditation controls added by this pass.
 
 ## Public propagation
-The existing public CGPJ pages already carry the essential safe chronology and evidential boundary:
+The CGPJ pages carry the essential safe chronology and evidential boundary:
 
 - `es/mensaje-abierto-cgpj/index.html`
 - `en/open-message-cgpj/index.html`
 - `assets/cgpj-alzada-regage-20260816.js`
 
-This gap-closure pass adds only a narrow public clarification if propagated: official 060 notices verify onward routing to CGPJ registry destinations but do not convert routing into file incorporation or examination. Private Gmail IDs must remain internal.
+The current gap-closure pass adds the narrow public clarification that official 060 notices verify onward routing to CGPJ registry destinations but do not convert routing into file incorporation or examination. Private Gmail IDs remain internal.
 
 ## Contrary / exculpatory material preserved
 - 14-May archive and its reasoning remain operative evidence.
@@ -98,6 +98,8 @@ These remaining gaps require a fuller CGPJ administrative record or other primar
 PR **#174** was reviewed and merged as `e55d7367c3527e30f744760e66944836d22fec83`. GitHub Pages build **1155375641** built that exact merge SHA successfully with no error. PR **#176** recorded that deployment and was merged as `899025ff09f2e93884d634bd6b42109fda31fa8e`; its exact merge SHA was published by Pages build **1155383332**, built with no error.
 
 ## Current gap-closure implementation
-Fresh branch created from then-current `main`: `cgpj-registry-routing-gap-closure-16aug2026`, base `19182b267b31da8a050dbee22510b2a634263ebc`.
+A first working branch based on `19182b267b31da8a050dbee22510b2a634263ebc` was superseded without merge after `main` advanced concurrently; PR **#205** must not be merged.
 
-This current audit is not finally closed until the routing/source-control changes are reviewed, merged through a PR, the final intended files are verified on current `main`, and the relevant GitHub Pages build succeeds. Once that is done, the thread may be marked **SAFE TO DELETE FROM A CONTINUITY PERSPECTIVE**, while remaining explicitly **NOT EVIDENTIALLY COMPLETE** as to the administrative-file gaps listed above.
+The safe implementation was rebuilt on `cgpj-registry-routing-gap-closure-16aug2026-v2`, based on then-current `main` `3d5824b664129e978e94e9f9146e53e454335ff3`, so intervening Calificación and other repository work is preserved.
+
+This current audit is not finally closed until the v2 changes are reviewed, merged through a PR, the final intended files are verified on current `main`, and the relevant GitHub Pages build succeeds. Once that is done, the thread may be marked **SAFE TO DELETE FROM A CONTINUITY PERSPECTIVE**, while remaining explicitly **NOT EVIDENTIALLY COMPLETE** as to the administrative-file gaps listed above.
