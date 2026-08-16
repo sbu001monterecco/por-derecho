@@ -11,29 +11,53 @@ This file makes the 16-Aug-2026 Calificación source refresh impossible to miss 
 
 Any future search, scan, draft, website update or institutional analysis touching one or more of the following terms must read the controlling source refresh before relying on older summaries:
 
-`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
+`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
 
 Read first:
 
 1. `archive/CALIFICACION_RECOVERY_AGENCY_SOURCE_REFRESH_16AUG2026.md`;
-2. `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AUG2026.md` whenever CaixaBank, bank-side causation/recovery, Valencia ORD 1859/2023-9, Borja's witness role, patrimonial prejudice or net-loss analysis is in scope;
-3. `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md` for the banking/concursal accounting bridge;
-4. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`;
-5. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`;
-6. `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md` and the current allegation ledgers;
-7. `archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md`;
-8. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
-9. where Judge Alberto López Villarrubia is in scope, the current unitary Judge allegation ledger;
-10. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
-11. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
+2. `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` whenever June-2018 ONA/operator, finance, valuation, due-diligence, conclusion/exit, `rescue package`, Stoneweg/VSO or Judge/AC knowledge is in scope;
+3. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` — legacy filename retained, but its controlling vocabulary is commercial normalisation / conclusion;
+4. `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AUG2026.md` whenever CaixaBank, bank-side causation/recovery, Valencia ORD 1859/2023-9, Borja's witness role, patrimonial prejudice or net-loss analysis is in scope;
+5. `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md` for the banking/concursal accounting bridge;
+6. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`;
+7. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`;
+8. `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md` and the current allegation ledgers;
+9. `archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md`;
+10. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
+11. where Judge Alberto López Villarrubia is in scope, the current unitary Judge allegation ledger and `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`;
+12. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
+13. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
 
 ## Superseded source-status proposition
 
 **SUPERSEDED:** `the complete 11-Feb-2019 AC classification report still needs to be obtained/read before the Calificación accusation can be analysed source-completely.`
 
-**CURRENT:** the 47-page AC report has been read in full and cross-walked against the Fiscal opinion, DI 248 material, opposition, Sentencia 163/2023 and controlled appeals. What remains open is the complete annex universe, certified evidence-before-each-actor chain, hearing/service record, current complete appellate record, rescue-instrument execution/performance, present conclusion route and remedy/quantum evidence.
+**CURRENT:** the 47-page AC report has been read in full and cross-walked against the Fiscal opinion, DI 248 material, opposition, Sentencia 163/2023 and controlled appeals. What remains open is the complete annex universe, certified evidence-before-each-actor chain, hearing/service record, current complete appellate record, execution/performance of particular commercial-normalisation/exit instruments, present conclusion route and remedy/quantum evidence.
 
-Future ChatGPT threads must not reintroduce the superseded proposition.
+## Controlling commercial-normalisation correction
+
+`CONTROLLED / UNITARY`
+
+The June-2018 transaction stack must **not** be reduced to a generic `rescue package` unless quoting an older source. The controlling description is:
+
+> **commercial normalisation, refinancing, hotel-operation and insolvency-exit architecture**.
+
+Why that extraordinary architecture became necessary is a separate causation proposition. Gil Marer alleges that private-actor interference, Community/governance dysfunction, AC administration/protection choices and judicial handling impaired ordinary operation, refinancing and exit. The repository treats that as a **PARTY ALLEGATION / EVIDENCE-BASED CAUSATION HYPOTHESIS** requiring actor-specific proof, not as an adjudicated fact.
+
+The new source-complete June record establishes:
+
+- a signed **6-Jun-2018 hotel-industry lease** whose facial legal parties are the Sun Park Owners' Community and **Clubotel La Dorada, S.L.**; contemporaneous transaction correspondence described ONA as the intended hotel operator context and the contract refers to `OnaSystem`; do not collapse ONA and Clubotel without a separate source bridge;
+- a signed **6-Jun-2018 suspensive addendum** making operation conditional on sufficient funds being paid into Mercantil nº1 to permit LPB to leave Concurso 36/2012 and on a favourable owners' resolution;
+- **8-Jun-2018** transaction correspondence assembling operator/business plan, Cuatrecasas DD, an ECO valuation presented in the transaction at about **€25.6m**, bridge-finance work, security and a separate **€26m Elaia** acquisition route;
+- a **12-Jun-2018** Stoneweg email describing an `Oferta Vinculante`, while the primary VSO instrument itself is titled **`Oferta Vinculante Condicionada`**, contemplated up to **€15.5m** including **€13.84m** for concursal/estate liabilities and depended materially on judicial mortgage authority, an AC debt certificate, valuation/DD and lender approval;
+- **13-Jun-2018** contemporaneous professional evidence that Daniel Irigoyen took the fund + shareholder/company + operator conclusion route to the Judge and then to the AC; according to the report the Judge permitted exploration, making that favourable response mandatory counterevidence to any simplistic `continuous obstruction` theory;
+- no June LexNET/asiento/proveído chain has yet been located proving formal filing/disposition of the conclusion application;
+- a signed **12-Feb-2019** Clubotel addendum records continued operator work, a then deteriorated/non-operating hotel condition and willingness to invest at least **€1m** before possession; it does not establish who caused the deterioration.
+
+The causal unit of analysis is therefore:
+
+`WHOLE HOTEL ECONOMY → COMMUNITY/PRIVATE/BANKING/CONCURSAL CONSTRAINTS → ACTOR-SPECIFIC POWER/CAPACITY → 7-JUN MATERIAL CONTROL THRESHOLD → COMMERCIAL NORMALISATION ARCHITECTURE → CONDITIONS DEPENDENT ON COURT/AC/COMMUNITY/FINANCIER/OPERATOR → ACT/OMISSION → OPERATING/PATRIMONIAL EFFECT → CALIFICACIÓN CAUSATION → JUDICIAL RESULT / APPEAL`.
 
 ## Controlling recovery proposition
 
@@ -45,14 +69,17 @@ The documentary counter-record now requires future threads to test adverse accus
 - **2012–2016:** operation, maintenance and accounting/document production remained part of the economic record;
 - **29-Mar / 17-Apr-2017:** convenio/viability material expressly aims to conserve business activity and satisfy creditors and records Aweswell guarantee/recapitalisation, refinancing and operator work;
 - **2017 Gmail:** business-plan, valuation, operating-growth, finance/term-sheet, operator/distribution and investor work is independently documented;
+- **6–13 Jun 2018:** signed operator/exit interlock, professional DD/valuation/finance/sale stack, conditional VSO finance and reported direct Judge/AC discussion create a source-controlled commercial-normalisation node;
+- **26-Jun-2018:** the court's suspension of specified realisation remains protective counterevidence and must not be hidden;
 - **Dec-2018 Gmail:** Registry, title/perimeter, servitude/ob-rem and asset-protection action is documented;
+- **12-Feb-2019:** operator continuity and a proposed minimum €1m works/investment layer are documented alongside the then-described deteriorated/non-operating condition;
 - **Jan-2019 DI 248 expansion:** the primary file records the party position that former-Art-176 conclusion work was underway and necessary financing had been obtained;
 - **2019:** formal Calificación opposition already accused the AC of materially departing from the truth;
 - **2020–2023:** debt, value, title and realisation objections continued and Sentencia 163/2023 was appealed;
-- **2023–2026 CaixaBank track:** a live Valencia banking action now supplies a separate, potentially substantial third-party recovery route requiring reconciliation with Calificación loss and causation;
+- **2023–2026 CaixaBank track:** a live Valencia banking action supplies a separate, potentially substantial third-party recovery route requiring reconciliation with Calificación loss and causation;
 - **2025–2026:** evidence preservation, institutional, regulatory, administrative, professional, public-funds and recovery routes continued.
 
-Plans, term sheets, negotiations, forecasts and filed allegations prove only what their source supports. They are not automatically executed funding, successful restructuring, merits acceptance or adjudicated damages.
+Plans, term sheets, conditional offers, negotiations, forecasts and filed allegations prove only what their source supports. They are not automatically executed funding, successful restructuring, merits acceptance or adjudicated damages.
 
 ## CaixaBank / Valencia counter-evidence activation
 
@@ -64,7 +91,7 @@ The latest controlled court order fixes trial for **9 October 2026 at 12:00**.
 
 CaixaBank's own 18-Jun-2024 expert report records Aweswell's pleaded prejudice at **€1,124,445.84**. Liability and quantum are contested and no merits judgment has been located. Treat this as a **live, material and potentially substantial recovery claim**, not an adjudicated recovery or guaranteed outcome.
 
-The Valencia witness citations identify **Francisco de Borja Rodríguez-Batllori Laffitte**, Administrador Concursal in Concurso 36/2012, as `testigo propuesto por la parte actora y demandada`. Therefore **CaixaBank itself requested/proposed Borja as a witness**, while Aweswell also proposed him. Do not convert that verified proposal/request into an unsupported assertion that his testimony is substantively favourable to CaixaBank or proof of bias/collusion/conflict.
+The Valencia witness-origin sequence is controlled by CR-041: **CaixaBank requested/proposed Francisco de Borja Rodríguez-Batllori Laffitte and Aweswell adhered**. Later court wording that he is a `testigo propuesto por la parte actora y demandada` records the resulting posture and must not erase who initiated the request. The citations do not establish the substantive direction of his testimony or prove bias/collusion/conflict.
 
 The bank expert report further characterises **€573,591.53** as within Administrador Concursal authorisation and **€550,854.31** as beyond it. Preserve that as a CaixaBank-expert characterisation until the native AC authorisation is independently controlled.
 
@@ -90,17 +117,21 @@ The pending proceeding can, however, be used as **subsequent counter-evidence** 
 
 For every material Calificación proposition use both tracks:
 
-`ADVERSE ALLEGATION / FINDING → CONTEMPORANEOUS RESPONSE / RECOVERY ACTION → PRIMARY SOURCE → ACTOR KNOWLEDGE → JUDICIAL TREATMENT → APPEAL STATUS → RECOVERY CONSEQUENCE`
+`ADVERSE ALLEGATION / FINDING → CONTEMPORANEOUS RESPONSE / POSITIVE AGENCY / NORMALISATION ACTION → PRIMARY SOURCE → ACTOR KNOWLEDGE → JUDICIAL TREATMENT → APPEAL STATUS → RECOVERY CONSEQUENCE`
 
 and
 
 `POWER / DUTY → VERIFIED KNOWLEDGE → ACT / OMISSION → IMPLEMENTATION → CONSEQUENCE → CAUSATION → REMEDY / QUANTUM`.
 
+Where June-2018 commercial normalisation is material, add:
+
+`OPERATING CONTRACT / AUTHORITY → FINANCE / CONDITIONS → AC DEBT OUTPUT → JUDICIAL OUTPUT → COMMUNITY / CONTROL CAPACITY → CLOSING / FAILURE → OPERATING CONDITION → LATER CALIFICACIÓN USE`.
+
 Where CaixaBank/banking causation is material, add:
 
 `BANKING ACT / PRODUCT / LOSS → CONTEMPORANEOUS KNOWLEDGE → AC TREATMENT / AUTHORISATION → PRESENT CAIXABANK CLAIM → WITNESS / EXPERT RECORD → CONTESTED QUANTUM → POSSIBLE NET-LOSS EFFECT`.
 
-A future thread that discusses obstruction, non-collaboration, accounting failure, Pink/rent, late filing, third-party/CEXP credits, rescue failure or culpable management without checking the positive-agency chronology is incomplete. A future thread that discusses patrimonial loss or causation without checking the live CaixaBank recovery track is likewise incomplete where the banking relationship materially overlaps the asserted loss.
+A future thread that discusses obstruction, non-collaboration, accounting failure, Pink/rent, late filing, third-party/CEXP credits, failure to normalise/exit or culpable management without checking the positive-agency and June-2018 commercial architecture is incomplete. A future thread that discusses patrimonial loss or causation without checking the live CaixaBank recovery track is likewise incomplete where the banking relationship materially overlaps the asserted loss.
 
 ## Public-site propagation required
 
@@ -113,9 +144,10 @@ The ES/EN Calificación pages must visibly carry:
 - the serial allegation audits;
 - the June-2026 Fiscalía EG49 response and unanswered textual question;
 - the positive-agency / recovery-through-adversity chronology;
-- a documentary counter-record showing that rescue, finance, operation, asset protection and recovery work existed contemporaneously;
+- a documentary counter-record showing the **commercial normalisation / refinancing / hotel-operation / insolvency-exit architecture**, including its conditionality and entity boundaries, rather than generic `rescue package` language;
+- the allegation — expressly identified as allegation/inference — that private interference, Community/governance dysfunction, AC choices and judicial handling contributed to the need for that extraordinary structure, with the Judge's reported willingness to explore the route kept visible as counterevidence;
 - where bank-side loss/causation is discussed, a controlled reference to the live **CAIXABANK, S.A. / ORD 1859/2023-9** recovery route, clearly marked pending/contested and not adjudicated;
-- the verified fact that CaixaBank itself requested/proposed Borja as a witness, with the equally important qualification that Aweswell also proposed him and the citations alone do not establish testimony direction;
+- the CR-041 witness-origin sequence: CaixaBank requested/proposed Borja and Aweswell adhered; and
 - reciprocal links to the recovery/restitution objectives.
 
 The recovery/restitution pages must link back to the Calificación evidence audit.
@@ -157,7 +189,10 @@ The CaixaBank action must also be allocated correctly between the claimant's leg
 - Do not attribute the EG49 decrees to Alejandro Luzón.
 - Institutional availability of evidence is not proof of personal knowledge by a particular Fiscal/Judge.
 - A judicial error, adverse judgment or uncorrected contradiction is not automatically criminal prevaricación; criminal allegations remain Gil Marer's allegations unless independently adjudicated/proved.
-- Borja's proposal/request as a witness by CaixaBank is verified from the court citations, but it is not proof of the direction/content of his evidence or of unlawful alignment.
+- Community contractual assertions do not prove authority over every private unit.
+- ONA and Clubotel La Dorada must remain distinct unless their exact legal/operational relationship is sourced.
+- A conditional VSO offer is not proof of unconditional or drawn funding.
+- Borja's witness role in Valencia is governed by CR-041 and is not proof of the direction/content of his evidence or unlawful alignment.
 
 ## Appellate/status controls
 
@@ -175,10 +210,14 @@ and
 
 `OLD CLAIM → re-test against new source → correct/supersede → remove stale public/search wording`.
 
+For the June-2018 commercial-normalisation track specifically:
+
+`NEW OPERATOR / FINANCE / COURT / AC SOURCE → A03 commercial-normalisation source completion → A03 serial/unitary ledger → Judge knowledge matrix if relevant → correction/missing evidence → public counter-record → master storyline/search entry`.
+
 For the CaixaBank track specifically:
 
 `NEW VALENCIA ORDER / EVIDENCE → CAIXABANK counter-evidence control → Valencia reconciliation ledger → Calificación allegation/actor ledger as relevant → correction/missing evidence → public page if justified`.
 
 ## Control sentence
 
-**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; where banking loss or causation is material, they must also reconcile the live CAIXABANK, S.A. ORD 1859/2023-9 recovery claim and Borja's documented cross-proceeding witness role without converting a pending contested claim or witness proposal into an adjudicated outcome, proven bias or retrospective actor knowledge; and they must use the legal-ecosystem reader optimisation plan before the next material public redesign.**
+**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; they must treat the June-2018 node as a commercial normalisation/refinancing/hotel-operation/insolvency-exit architecture whose existence and institutional dependencies are documented while its causal necessity, formal filing, closing and failure remain actor-specific questions; where banking loss or causation is material, they must also reconcile the live CAIXABANK, S.A. ORD 1859/2023-9 recovery claim and Borja's documented cross-proceeding witness role without converting a pending contested claim or witness proposal into an adjudicated outcome, proven bias or retrospective actor knowledge; and they must use the legal-ecosystem reader optimisation plan before the next material public redesign.**
