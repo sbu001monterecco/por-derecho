@@ -62,7 +62,7 @@ The CGPJ pages carry the essential safe chronology and evidential boundary:
 - `en/open-message-cgpj/index.html`
 - `assets/cgpj-alzada-regage-20260816.js`
 
-The current gap-closure pass adds the narrow public clarification that official 060 notices verify onward routing to CGPJ registry destinations but do not convert routing into file incorporation or examination. Private Gmail IDs remain internal.
+The gap-closure pass adds the narrow public clarification that official 060 notices verify onward routing to CGPJ registry destinations but do not convert routing into file incorporation or examination. Private Gmail IDs remain internal.
 
 ## Contrary / exculpatory material preserved
 - 14-May archive and its reasoning remain operative evidence.
@@ -94,12 +94,14 @@ Obtain the complete administrative index/current file for Alzada 286/2026 and id
 
 These remaining gaps require a fuller CGPJ administrative record or other primary institutional records not located in the currently connected Gmail/Drive/Files corpus. Their non-location is not evidence of non-existence or wrongdoing.
 
-## Prior implementation and deployment completion
+## Implementation and deployment history
 PR **#174** was reviewed and merged as `e55d7367c3527e30f744760e66944836d22fec83`. GitHub Pages build **1155375641** built that exact merge SHA successfully with no error. PR **#176** recorded that deployment and was merged as `899025ff09f2e93884d634bd6b42109fda31fa8e`; its exact merge SHA was published by Pages build **1155383332**, built with no error.
 
-## Current gap-closure implementation
-A first working branch based on `19182b267b31da8a050dbee22510b2a634263ebc` was superseded without merge after `main` advanced concurrently; PR **#205** must not be merged.
+A later first routing-gap working branch based on `19182b267b31da8a050dbee22510b2a634263ebc` was superseded after `main` advanced concurrently. PR **#205** was deliberately closed **without merge** and replaced by a safe rebuild.
 
-The safe implementation was rebuilt on `cgpj-registry-routing-gap-closure-16aug2026-v2`, based on then-current `main` `3d5824b664129e978e94e9f9146e53e454335ff3`, so intervening Calificación and other repository work is preserved.
+The safe routing/source-status implementation was reviewed in PR **#213** and merged as `3c056854b7e5cde9afb16d49220f42b02c262ca6`. Its exact merge SHA was verified on `main`. GitHub Pages build **1155520407** built that exact SHA successfully with **no error**, created 19:25:51Z and completed 19:26:17Z on 16 August 2026. The canonical routing layer, chronology, issues register, correction register, maintenance matrix, 28-Jul traceability control, ES/EN public CGPJ pages and runtime fallback are all preserved in merged source. The canonical deployment log records this exact-SHA publication.
 
-This current audit is not finally closed until the v2 changes are reviewed, merged through a PR, the final intended files are verified on current `main`, and the relevant GitHub Pages build succeeds. Once that is done, the thread may be marked **SAFE TO DELETE FROM A CONTINUITY PERSPECTIVE**, while remaining explicitly **NOT EVIDENTIALLY COMPLETE** as to the administrative-file gaps listed above.
+## Final thread-deletion verdict
+**SAFE TO DELETE FROM A CONTINUITY PERSPECTIVE.** The material intelligence, primary-source locators, corrections, source-status boundaries, contrary/exculpatory controls, public propagation and deployment evidence from this thread are recoverable from the repository without relying on conversational memory.
+
+**NOT EVIDENTIALLY COMPLETE.** The remaining gaps are the seven primary institutional-record questions listed above. They require the fuller CGPJ administrative record or other primary records not located in the currently connected corpus; they are explicitly preserved as open rather than silently treated as disproved, proved or closed.
