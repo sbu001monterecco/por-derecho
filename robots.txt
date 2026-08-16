@@ -6,3 +6,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-digital-identity
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-eleconomista.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-banking-recovery.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-calificacion.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-multiple-financial-lives.xml
