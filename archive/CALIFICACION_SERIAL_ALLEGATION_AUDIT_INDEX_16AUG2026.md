@@ -3,6 +3,8 @@
 **Date:** 16 August 2026  
 **Purpose:** continuity index for the allegation-by-allegation audit of the AC's 11-Feb-2019 calificación report in Concurso 36/2012.
 
+**Serial-audit control:** this index is now the controlling record for which allegation has been completed and which comes next. It supersedes any older maintenance/publication-control wording that still says “next: Allegation 02”. Those older dashboards should be consolidated on their next maintenance pass; they must not be used to regress the serial audit.
+
 ## Method
 
 Every allegation is tested in the same order:
