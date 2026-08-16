@@ -2,7 +2,7 @@
 
 **Cut-off:** 16 August 2026  
 **Status:** controlled publication basis  
-**Scope:** `sunpark264@gmail.com` customer-facing communications and Google recovery evidence (2019) + Google Business Profile ownership/access requests associated with Lourdes Castillejo / MYND (2021–2022).
+**Scope:** two separate-but-connected source families: (A) `sunpark264@gmail.com` customer-facing communications and Google recovery evidence (2019); and (B) Google Business Profile ownership/access requests associated with Lourdes Castillejo / MYND (2021–2022).
 
 ## Controlling proposition
 
@@ -13,6 +13,18 @@ The current controlled sequence is:
 `2019 sunpark264 customer email → Google recovery clue compatible with @acostamatos.com → 2021–2022 Lourdes/MYND + mynd.hotels@gmail.com Google Business requests`
 
 This is a **functional and technical verification chain**, not a finding of common authorship, conspiracy, collusion, concealment or criminal impersonation. Provider records, native headers, account-control evidence, instructions and documentary authority remain necessary.
+
+## Publication architecture — split on 16 August 2026
+
+The two incidents must no longer be published as if they were one combined incident page.
+
+- **Incident A — 2019 Sun Park customer-email / recovery clue:** standalone ES/EN dossier.
+- **Incident B — Lourdes / MYND Google Business requests 2021–2022:** standalone ES/EN dossier.
+- The pre-existing digital-identity route remains only as a **hub/index** linking to both incidents.
+- Each standalone incident page must link visibly to the other as a **related but separate** episode.
+- The Lourdes open letter may refer to the 2019 incident only by short cross-link; it should not reproduce the 2019 evidential narrative inside the Lourdes letter.
+
+This architecture is an editorial/evidential control: connection is preserved without collapsing source families, dates, actors or burdens of proof.
 
 ## Evidence classification
 
@@ -76,7 +88,7 @@ The controlled judicial material records this request together with the October-
 
 ## Why the 2019 recovery clue materially changes the digital-identity track
 
-Previously the `@acostamatos.com` point was described too generically as a later party observation. The preserved Google recovery screen permits a narrower and stronger proposition:
+The preserved Google recovery screen permits a narrow proposition:
 
 - Google itself displayed the masked recovery clue `ros••••••@aco••••••••.com` for `sunpark264@gmail.com`;
 - that pattern is compatible with `acostamatos.com`;
@@ -128,12 +140,23 @@ No Google-profile request, Gmail use or recovery clue, standing alone, proves th
 
 ## Public routes
 
-- ES: `/es/carta-abierta-lourdes-castillejo/`
-- EN: `/en/open-letter-lourdes-castillejo/`
+### Hub / index only
 - ES: `/es/identidad-digital-sun-park-google-mynd/`
 - EN: `/en/sun-park-digital-identity-google-mynd/`
 
-The page families must cross-link and link back into the Sun Park control, Acosta Matos perimeter, worker/whistleblower and RIC/incentives/FEDER tracks.
+### Incident A — 2019 Sun Park / `sunpark264`
+- ES: `/es/incidente-sunpark264-acostamatos-2019/`
+- EN: `/en/sunpark264-acostamatos-incident-2019/`
+
+### Incident B — Lourdes / MYND Google Business
+- ES: `/es/incidente-lourdes-google-mynd/`
+- EN: `/en/lourdes-google-mynd-incident/`
+
+### Open letter
+- ES: `/es/carta-abierta-lourdes-castillejo/`
+- EN: `/en/open-letter-lourdes-castillejo/`
+
+Each incident page must link to the other. The hub links to both. The Lourdes letter links to both but carries only the Lourdes incident narrative.
 
 ## Publication controls
 
