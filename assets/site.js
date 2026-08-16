@@ -132,5 +132,5 @@
 
   // Cross-cutting documentary bridge: pre-concurso minority litigation, 2019 DI248/unitary-liquidation record,
   // and the Jan-Feb-2026 Fiscalía complaint family. Complaints remain allegations; reproduced Plan language is source-qualified.
-  load('calificacion-fiscal-2012-2019-2026-bridge-20260816.js?v=20260816a');
+  load('calificacion-fiscal-2012-2019-2026-bridge-20260816.js?v=20260816b');
 })();
