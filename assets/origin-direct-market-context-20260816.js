@@ -1,100 +1,8 @@
 (() => {
   const path = window.location.pathname.replace(/\/+$/, '/');
-  const isCommunityEnglish = path.endsWith('/en/community-instrumentalisation/');
-  const isCommunitySpanish = path.endsWith('/es/comunidad-instrumentalizacion/');
-  const isLenderEnglish = path.endsWith('/en/lender-of-record/');
-  const isLenderSpanish = path.endsWith('/es/acreedor-de-registro/');
-
-  const addLenderChainDetail = (isEnglish) => {
-    if (document.getElementById('lender-chain-evidence-table')) return;
-    const section = document.getElementById(isEnglish ? 'credit-chain' : 'cadena-credito');
-    const timeline = section?.querySelector('.timeline');
-    if (!section || !timeline) return;
-
-    const promontoria = [...timeline.querySelectorAll('.timeline-item')].find((item) =>
-      item.querySelector('h3')?.textContent.includes('Promontoria Holding 122')
-    );
-    if (promontoria && !promontoria.querySelector('.project-meridian-source')) {
-      const source = document.createElement('p');
-      source.className = 'source-policy project-meridian-source';
-      source.innerHTML = isEnglish
-        ? 'Public background source: <a href="https://costarfinance.wordpress.com/2014/12/30/sareb-confirms-winners-of-projects-meridian-agatha-olivia-corona-and-nears-sale-of-kaplan-in-e850m-sale-flurry/" rel="external noopener">CoStar Finance report on Project Meridian</a>.'
-        : 'Fuente pública de contexto: <a href="https://costarfinance.wordpress.com/2014/12/30/sareb-confirms-winners-of-projects-meridian-agatha-olivia-corona-and-nears-sale-of-kaplan-in-e850m-sale-flurry/" rel="external noopener">informe de CoStar Finance sobre Project Meridian</a>.';
-      promontoria.appendChild(source);
-    }
-
-    const table = document.createElement('table');
-    table.className = 'evidence-table';
-    table.id = 'lender-chain-evidence-table';
-    table.innerHTML = isEnglish
-      ? `
-        <thead>
-          <tr>
-            <th>Actor / perimeter</th>
-            <th>Question preserved</th>
-            <th>Primary material still required</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Original Canary lender / historical Bankia perimeter</td>
-            <td>Origination, linked financial package, account administration, alleged default creation, acceleration and execution.</td>
-            <td>Original deeds, succession documents, native ledgers, notices, financial-product and recovery files.</td>
-          </tr>
-          <tr>
-            <td>SAREB</td>
-            <td>Exact credit acquired and onward-transferred; treatment of unresolved defences and separate liabilities.</td>
-            <td>Assignment deed, asset schedule, price allocation, debtor notices and servicing instructions.</td>
-          </tr>
-          <tr>
-            <td>Promontoria Holding 122 B.V. / servicing perimeter</td>
-            <td>Acquisition, amount asserted, substitutions and continued enforcement or auction posture.</td>
-            <td>Project Meridian schedule, acquisition deed, servicing file, court substitutions and calculations.</td>
-          </tr>
-          <tr>
-            <td>Construcciones Acosta Matos, S.A. / Hotel New Trend, S.L.</td>
-            <td>Alleged conversion of creditor leverage into practical control, title, works, finance, investor and operating narratives.</td>
-            <td>Credit-sale deed, price, substitutions, dación, title entries, operating contracts, income and source/use-of-funds records.</td>
-          </tr>
-        </tbody>`
-      : `
-        <thead>
-          <tr>
-            <th>Actor / perímetro</th>
-            <th>Cuestión preservada</th>
-            <th>Material primario todavía necesario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Entidad canaria originaria / perímetro histórico Bankia</td>
-            <td>Originación, paquete financiero vinculado, administración de cuentas, creación alegada de la morosidad, vencimiento y ejecución.</td>
-            <td>Escrituras originarias, sucesión, libros contables nativos, comunicaciones, expediente del producto financiero y recuperación.</td>
-          </tr>
-          <tr>
-            <td>SAREB</td>
-            <td>Crédito exacto adquirido y transmitido; tratamiento de defensas no resueltas y responsabilidades separadas.</td>
-            <td>Escritura de cesión, listado de activos, asignación de precio, notificaciones e instrucciones de servicing.</td>
-          </tr>
-          <tr>
-            <td>Promontoria Holding 122 B.V. / perímetro de servicing</td>
-            <td>Adquisición, importe afirmado, sustituciones y continuación de la postura ejecutiva o de subasta.</td>
-            <td>Listado Project Meridian, escritura de adquisición, servicing, sustituciones judiciales y cálculos.</td>
-          </tr>
-          <tr>
-            <td>Construcciones Acosta Matos, S.A. / Hotel New Trend, S.L.</td>
-            <td>Conversión alegada de palanca acreedora en relatos de control práctico, título, obras, financiación, inversión y explotación.</td>
-            <td>Cesión del crédito, precio, sustituciones, dación, inscripciones, contratos operativos, ingresos y fuentes/usos de fondos.</td>
-          </tr>
-        </tbody>`;
-    timeline.insertAdjacentElement('afterend', table);
-  };
-
-  if (isLenderEnglish || isLenderSpanish) {
-    addLenderChainDetail(isLenderEnglish);
-  }
-
-  if (!isCommunityEnglish && !isCommunitySpanish) return;
+  const isEnglish = path.endsWith('/en/community-instrumentalisation/');
+  const isSpanish = path.endsWith('/es/comunidad-instrumentalizacion/');
+  if (!isEnglish && !isSpanish) return;
   if (document.getElementById('banking-origin-direct-market-context')) return;
 
   const hero = document.querySelector('main .hero');
@@ -104,7 +12,7 @@
   section.className = 'section alt';
   section.id = 'banking-origin-direct-market-context';
 
-  section.innerHTML = isCommunityEnglish
+  section.innerHTML = isEnglish
     ? `
       <div class="shell">
         <div class="section-head">
