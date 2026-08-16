@@ -9,6 +9,10 @@ This record supplements and, on source-completion status, supersedes any 16-Aug-
 
 `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`
 
+The stronger first-person allegation concerning the exact **€3,032,010.34** damages figure is now separately controlled by:
+
+`archive/CALIFICACION_3032010_FABRICATION_PERSONAL_GAIN_ALLEGATION_16AUG2026.md`
+
 The earlier `CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md` remains valid for its DI248, parallel-lives, elEconomista, actor-separation and publication architecture except where this later source-complete record expressly updates it.
 
 ---
@@ -62,6 +66,32 @@ The existing public opening remains controlling:
 The radical-transparency module strengthens this accusation by refusing to hide the Judge's favourable/rejecting findings. The page expressly shows that he rejected major AC/Fiscal branches while retaining serious adverse findings. Gil's accusation focuses on the retained propositions he says are factually/causally false and on the actor-specific knowledge record still being completed.
 
 Do not state that a particular criminal complaint against the Judge was formally filed unless the receipt for that complaint is located.
+
+---
+
+## €3,032,010.34 — fabrication / falsification / clandestine personal-gain allegation
+
+Gil Marer now expressly instructs Por Derecho to publish the following accusation in his own name:
+
+> **I accuse insolvency administrator Francisco de Borja Rodríguez-Batllori and Judge Alberto López Villarrubia of knowingly fabricating and/or falsifying the €3,032,010.34 figure that ultimately became a personal damages award against me, plus legal interest increased by two points. I do not allege a mere arithmetic mistake or an innocent legal disagreement. I allege that the figure was deliberately constructed and maintained, and that the purpose was to obtain or facilitate direct or indirect personal gain kept clandestine.**
+
+The public allegation must be placed beside the documentary calculation problem, not presented nakedly:
+
+- contractual rent recorded in Sentencia 163/2023: **€24,575/month**;
+- Pink/Patricia appeal: **46 months × €24,575 = €1,130,450**, before rents it says were actually paid;
+- same appeal challenges a different AC amount of **€2,733,923.64**;
+- AC sought and Judgment 163/2023 imposed **€3,032,010.34** against Gil;
+- the judgment's damages section uses the **principal dispatched in the Pink enforcement** as the measure of damage after no attachable assets were found, rather than setting out there a full month-by-month reconciliation from contractual rent to €3,032,010.34.
+
+### Evidential boundary
+
+`DOCUMENTED`: the figures above, the AC request, the rent stated in the judgment, the execution-principal reasoning and the award.
+
+`GIL MARER'S ALLEGATION`: knowing fabrication/falsification by the AC and Judge; purpose of direct or indirect personal gain; clandestine character of that gain.
+
+`OPEN`: the precise calculation bridge and the actual benefit route — recipient, vehicle, flow, consideration, related party, patrimonial consequence, fee, reciprocal advantage or other direct/indirect gain.
+
+The site must invite production of the complete calculation and any primary evidence that corrects or disproves this allegation. Do not state that a criminal court has already found fabrication, corruption, bribery or personal enrichment.
 
 ---
 
@@ -148,6 +178,8 @@ Gil's criminal accusations concerning the AC and Judge:
 
 The module crosswalks only the calificación-related evidential basis.
 
+The €3,032,010.34 allegation is deliberately stronger on motive than the earlier generic wording. Its motive element — direct/indirect clandestine personal gain — is published as **Gil's allegation**, while the exact financial/benefit route remains an open evidential programme.
+
 ---
 
 ## Media consequence
@@ -172,15 +204,16 @@ Do not reproduce historical private addresses, DNI/NIE/passport numbers, signatu
 
 ## Deployment implementation
 
-Public runtime module:
+Public runtime modules:
 
-`assets/calificacion-report-radical-transparency-20260816.js`
+- `assets/calificacion-report-radical-transparency-20260816.js`
+- `assets/calificacion-3032010-fabrication-allegation-20260816.js`
 
 Loaded after the existing accountability opening from:
 
 `assets/site.js`
 
-The module is bilingual and restricted to the dedicated ES/EN calificación pages.
+The modules are bilingual and restricted to the dedicated ES/EN calificación pages.
 
 ---
 
@@ -195,4 +228,6 @@ The major remaining evidence programme is no longer “get the AC report.” It 
 - complete DI248 expediente;
 - 2019 rent/economic expert provenance;
 - Article-176 filing receipts for any document claimed as filed;
-- proposition-specific personal-knowledge proof for deliberate-falsehood allegations.
+- proposition-specific personal-knowledge proof for deliberate-falsehood allegations;
+- complete judgment/execution calculation underlying **€3,032,010.34**, including month-by-month accruals, payments, credits, set-offs, interest, costs and every source used to reach the execution principal;
+- actor-by-actor financial/benefit-flow audit testing Gil's allegation of direct or indirect clandestine personal gain, including evidence that could disprove it.
