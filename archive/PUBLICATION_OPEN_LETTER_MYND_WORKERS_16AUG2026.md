@@ -80,6 +80,75 @@ The letter links directly to:
 
 Existing Acosta Matos perimeter and Lourdes pages already link back to the MYND worker letter, creating reciprocal navigation.
 
+## LinkedIn communication — final Spanish reduced version
+
+The conversation produced a Spanish LinkedIn post pointing readers to the Spanish open letter. The final user-requested shortened version is preserved below so it is not lost if the chat is deleted:
+
+> **ESTO NO ES SOLAMENTE UNA DISPUTA PRIVADA SOBRE UN HOTEL.**
+>
+> Me dirijo a quienes trabajan hoy —o trabajaron antes— en **MYND Yaiza, MYND Hotels, Canarian Hospitality, Hotel New Trend** y en otros hoteles o empresas relacionadas.
+>
+> No os pido que aceptéis nuestra interpretación.
+>
+> Os pido algo más sencillo:
+>
+> **si conocéis una pieza de esta historia, aunque parezca indirecta, puede importar.**
+>
+> Esto ya no termina en Sun Park
+>
+> La cadena a examinar es:
+>
+> **SUN PARK / LPB / MATKATOR  
+> → CAM / HNT  
+> → RICPE  
+> → RIC — Reserva para Inversiones en Canarias  
+> → incentivos regionales  
+> → FEDER  
+> → MYND  
+> → estructuras posteriores de gestión, financiación y mercado.**
+>
+> Nuestra alegación es grave: que determinadas actuaciones y representaciones iniciales sobre propiedad, disponibilidad, control, explotación y capacidad para disponer del activo pudieron proyectarse después sobre inversión, financiación, materialización de RIC y apoyo público.
+>
+> Queremos **prueba**, no simplificaciones.
+>
+> No afirmamos que una irregularidad inicial invalide todo lo posterior, ni que todos los actores conocieran lo mismo, ni damos por probado un fraude RIC, de subvenciones o a fondos europeos sin evidencia específica de cada capa.
+>
+> Pregunta:
+>
+> **¿qué se representó en cada etapa, quién lo hizo, quién lo recibió, qué comprobó cada gatekeeper y qué decisiones posteriores se apoyaron en esas premisas?**
+>
+> Por eso puede ser relevante información de personas que nunca tuvieron relación con el conflicto original de Sun Park.
+>
+> Puede importar una due diligence, una factura, un presupuesto de obra, un listado de habitaciones, una instrucción sobre quién podía representar el hotel, un correo sobre RIC, un expediente de incentivos, una certificación FEDER, una comunicación con RICPE, CNMV, bancos, asesores, auditores o autoridades, un PMS, una migración de clientes o una autorización válida que contradiga nuestra tesis.
+>
+> O cualquier documento que permita saber **quién sabía qué, cuándo y con qué autoridad**.
+>
+> Quiero dejar algo absolutamente claro:
+>
+> **trabajar para una empresa no convierte a nadie en responsable de las decisiones de sus propietarios o directivos.**
+>
+> Responsabilidad no se transmite por una nómina. Presencia no es participación. Conocimiento parcial no es culpabilidad.
+>
+> Esta invitación incluye información que **corrobore, limite, corrija o refute** lo que investigamos.
+>
+> Si sabéis algo relevante, preservad sólo aquello que poseáis lícitamente. No accedáis a sistemas sin autorización, no sustraigáis documentos, no alteréis metadatos ni coordinéis versiones.
+>
+> La **Ley 2/2023** establece protección para determinadas personas que informan sobre infracciones conocidas en un contexto laboral o profesional.
+>
+> Carta completa y vías legales para informar:
+>
+> https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-trabajadores-mynd-yaiza/
+>
+> **No necesitáis conocer toda la historia para que una pieza que conocéis sea importante.**
+>
+> #MYND #CanarianHospitality #SunPark #RICPE #RIC #FEDER #Canarias #Turismo #Ley22023 #FondosEuropeos #CNMV #PorDerecho
+
+This is communications copy, not an independent evidential source. If later edited or published, preserve the published version separately if exact-publication provenance becomes material.
+
 ## Publication status
 
 The prior `BORRADOR PÚBLICO / PUBLIC DRAFT` label is superseded. The page is now a published open letter, subject to documentary correction and right of reply.
+
+## Thread-deletion continuity
+
+As of the 16-Aug-2026 continuity audit, the substantive worker-invitation architecture, its evidential boundaries, its reciprocal links and the final reduced Spanish LinkedIn copy are all preserved in the repository. The related Rosa María Dorta Perdomo and Lourdes Castillejo identity/publication controls remain in their own dedicated canonical memos and CR-031 remains controlling for the `sunpark264@gmail.com` recovery-address evidence.
