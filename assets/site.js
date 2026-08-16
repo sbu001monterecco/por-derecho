@@ -72,12 +72,14 @@
   load('cgpj-alzada-regage-20260816.js?v=20260816a');
 
   // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk,
-  // €3.032m allegation, judicial-adoption/private-actor-effect bridge, then the June-2026 Fiscalía EG49 response decrees.
+  // Allegation 01 deep audit, €3.032m allegation, judicial-adoption/private-actor-effect bridge, then the June-2026 Fiscalía EG49 response decrees.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
-      load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
-        load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
-          load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+      load('calificacion-allegation01-collaboration-audit-20260816.js?v=20260816a', () => {
+        load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
+          load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
+            load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+          });
         });
       });
     });
