@@ -1,18 +1,19 @@
 # THREAD DELETION CONTINUITY AUDIT — ELECONOMISTA / JAVIER ROMERA / CAM RESPONSE PROVENANCE
 
 **Date:** 16 August 2026  
+**Evidence-gap refresh:** 16 August 2026, late-session close-out  
 **Purpose:** confirm that the substantive intelligence, corrections, evidential classifications, forensic retrieval keys, publication changes and deployment state developed in the ChatGPT thread concerning the January-2025 elEconomista / Javier Romera episode are recoverable from the repository without relying on chat history.
 
 ## Deletion-safety conclusion
 
-The substantive position developed in this thread is already propagated to `main` through the canonical media ledger, correction register, missing-evidence register, maintenance matrix and bilingual public pages.
+The substantive position developed in this thread is propagated to `main` through the canonical media ledger, correction register, missing-evidence register, maintenance matrix and bilingual public pages.
 
-The deletion audit nevertheless identified two continuity gaps that should not remain chat-only:
+The deletion audit identified and preserved two continuity items that must not remain chat-only:
 
 1. the **exact native RFC822 / Outlook thread identifiers** visible in Javier Romera's 20-Jan-2025 email, which are high-value forensic keys for identifying the unseen upstream message chain; and
 2. the **exact filenames and byte sizes of the three preserved Romera WhatsApp OGG files**, together with the Gmail message that preserves them.
 
-A separate website-discovery gap was also identified: the current legacy `sitemap.xml` does not enumerate the bilingual elEconomista routes. The accompanying continuity change therefore adds a narrow supplemental sitemap and advertises it in `robots.txt`.
+The website-discovery gap was also closed by adding `sitemap-eleconomista.xml` and advertising it in `robots.txt`.
 
 This audit does **not** strengthen the allegation beyond the controlled position. It does not identify the physical transmitter, does not state that Laura Patricia Acosta Matos personally sent the judgment, does not attribute the transmission to the insolvency administrator, Lars Creutzmann, Axel Bierbach or another intermediary, and does not convert the editorial outcome into censorship, collusion or bad faith.
 
@@ -23,10 +24,12 @@ This audit does **not** strengthen the allegation beyond the controlled position
 A fresh ChatGPT should treat the following as controlling before reconstructing anything from older working documents:
 
 - `CHATGPT_START_HERE.md`;
+- `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
 - `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`;
 - `archive/CORRECTION_REGISTER.md`, especially **CR-020** and **CR-021**;
 - `archive/MISSING_EVIDENCE_REGISTER.md`, especially **ME-028–ME-032**;
 - `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`;
+- this audit;
 - ES public route: `/es/eleconomista-javier-romera-enero2025/`;
 - EN public route: `/en/eleconomista-javier-romera-january2025/`;
 - `archive/DEPLOYMENT_LOG.md`.
@@ -119,7 +122,7 @@ Exact filenames and sizes:
 
 Gmail reports `read_attachment_supported: false` for each OGG in the current connector. Their existence, filenames and attachment metadata are therefore direct; their spoken contents are **not** yet source-controlled.
 
-A fresh exact-filename search of connected Google Drive on 16 August 2026 returned no OGG result. A File Library search also did not locate the native OGG files; older NEXUS working documents instead repeat that the three audios require authentication/transcription. Do not infer non-existence from those search results.
+Exact-filename searches of connected Google Drive did not locate native OGG copies. The current File Library search state likewise did not surface the native audio. This narrows the next retrieval route to native Gmail export / original device or archive / another preserved mailbox. Absence from those searches is not proof of non-existence.
 
 ### 17 January 2025 — contradiction memorialised to Romera
 
@@ -127,7 +130,7 @@ Gmail message ID: `194747a2c629ed8c`.
 
 A contemporaneous party-authored record states, in substance, that Meeting Point was saying it had never commercialised the hotel while Laura/CAM was saying Meeting Point had commercialised it at some stage.
 
-This remains an attributed contradiction requiring authentication against the original interlocutor records. Independent 2020 Meeting Point/Club Sei commercial evidence now corroborates public presentation/distribution in the limited sense described in the canonical media ledger.
+This remains an attributed contradiction requiring authentication against the original interlocutor records. Independent 2020 Meeting Point/Club Sei commercial evidence corroborates public presentation/distribution in the limited sense described in the canonical media ledger.
 
 ### 19 January 2025 — pre-delivery memorialisation
 
@@ -157,7 +160,7 @@ This is a contemporaneous **party-authored attribution**, not native sender meta
 
 ---
 
-## High-value RFC822 / Outlook provenance keys recovered in the deletion audit
+## High-value RFC822 / Outlook provenance keys
 
 The raw MIME of Gmail message `19484f01841fdc36` contains the following native Outlook fields:
 
@@ -175,17 +178,15 @@ The raw MIME of Gmail message `19484f01841fdc36` contains the following native O
 
 The second `References` value is also the email's `In-Reply-To` value.
 
-These identifiers are **forensic retrieval keys, not sender identification**. They establish that Romera's message belongs to an Outlook thread containing at least unseen upstream message identifiers. The parent/root messages are not present in the connected Gmail account used for this project.
+These identifiers are **forensic retrieval keys, not sender identification**. They establish that Romera's message belongs to an Outlook thread containing at least unseen upstream message identifiers.
 
-Targeted Gmail searches on 16 August 2026 using both unseen Outlook identifiers returned no matching message. That result does not show that the messages do not exist: the most obvious location is Romera/elEconomista's Outlook-side mailbox or archive, which is outside the connected Gmail corpus.
+Targeted searches of the connected Gmail corpus using both unseen Outlook identifiers returned no matching message. That search result is now itself part of the evidence-completion record: the next rational retrieval target is the elEconomista Outlook-side mailbox/archive or another native production source, not another generic Gmail keyword search.
 
 ### Highest-value production request
 
-The single highest-value provenance item is now:
-
 > **Produce the Outlook message identified by `<GVXPR08MB77046ED5084809BBEE058CD6EAE72@GVXPR08MB7704.eurprd08.prod.outlook.com>`, together with the earlier referenced message `<AM9P193MB0904EDA2CCF3F91255FE9BDDDFE72@AM9P193MB0904.EURP193.PROD.OUTLOOK.COM>`, complete RFC822 headers, body, attachments and native export.**
 
-The immediate parent may identify the upstream source or at least the final internal forwarding step. That is an evidential hypothesis to be tested, not a conclusion about who sent the judgment.
+The immediate parent may identify the upstream source or at least the final internal forwarding step. That is a testable evidential hypothesis, not a conclusion about who sent the judgment.
 
 ---
 
@@ -204,7 +205,7 @@ Do not turn plausibility or document access into attribution.
 
 ## Meeting Point commercialisation control
 
-The current media ledger also preserves direct 2020 commercial material independent of the January-2025 contradiction:
+The current media ledger preserves direct 2020 commercial material independent of the January-2025 contradiction:
 
 - Meeting Point Hotels corporate brochure identifying Club Sei Lanzarote as a Playa Blanca hotel within its portfolio/brand material;
 - 27-Jan-2020 sonnenklar.TV capture offering Club Sei Lanzarote at **Calle Janubio 3**;
@@ -226,6 +227,36 @@ Do not publish the pleading attribution as an established sender fact.
 
 ---
 
+## Evidence-gap closure refresh — what changed in this pass
+
+The instruction was to close evidential gaps where possible rather than merely restate them. The result is mixed and must be recorded precisely.
+
+### ME-028 — upstream transmission / physical sender
+
+**Status remains OPEN, but materially narrowed.** The exact native parent and earlier Outlook thread identifiers are now preserved. Exact searches of the connected Gmail corpus did not recover those messages. The next retrieval route is specifically the elEconomista Outlook-side mailbox/archive, a lawful native production, the complete Madrid-querella exhibits, or actor-side transmission records. Repeating generic Gmail searches is low value unless a new sender/account clue appears.
+
+### ME-029 — native Romera message / OGG audios
+
+**Status remains PARTIAL, but substantially strengthened.** The 20-Jan message is available with raw RFC822 MIME through the Gmail connector; the exact attachment filename/size and native Outlook message/thread fields are preserved. The three OGG files are identified by exact filename, size and parent Gmail message. What remains open is export/playback of the OGG binaries, hashing, speaker/date/context authentication and controlled transcription. The connector's inability to read `audio/ogg` is a tooling limitation, not evidential absence.
+
+### ME-030 — Madrid querella annexes
+
+**Status remains OPEN.** No complete filed Documents 2/3 package has yet been recovered in the sources searched in this pass. The seven-page pleading remains allegation-level for sender identity.
+
+### ME-031 — finality / appeal status
+
+**Status remains PARTIAL.** The first-instance judgment, its appeal route/finality language, filed Oct/Nov-2023 appeals and Dec-2023 appellate personation are already documented. What is still missing is a certified AP docket/status/finality record fixing the precise state on 20-Jan-2025 and thereafter.
+
+### ME-032 — press-package universe
+
+**Status remains PARTIAL.** The native sent-email trail and `Nota de Prensa 16ENE2025.pdf` are located. The complete attachment/version/hash universe has not yet been reconciled into a single manifest.
+
+### Net result
+
+No open item was falsely marked resolved. The principal evidential gain is **forensic narrowing**: the upstream email chain now has exact identifiers and a specific production target; the audio evidence now has exact native attachment coordinates; and low-value repeated searches have been separated from the next high-value retrieval routes.
+
+---
+
 ## Editorial-accountability control
 
 The current public position remains deliberately finite:
@@ -241,41 +272,24 @@ Do not state as established fact that Romera was complicit, elEconomista censore
 
 ---
 
-## Deployment history from this thread
+## Deployment and repository history
 
-PR **#132** — `Clarify elEconomista CAM response provenance`.
+PR **#132** (`Clarify elEconomista CAM response provenance`) merged as `58fe081517be352577d649e5c8296ff69002946d`; Pages build **1154834118** was built with no error.
 
-Merge commit: `58fe081517be352577d649e5c8296ff69002946d`.
+PR **#137** added this dedicated thread-deletion audit plus `sitemap-eleconomista.xml` and the `robots.txt` directive. Its exact-SHA Pages attempt errored during rapid subsequent `main` changes, but the immediately subsequent descendant build contained the changes and succeeded; this exceptional deployment sequence is recorded in `archive/DEPLOYMENT_LOG.md` rather than hidden.
 
-Verified GitHub Pages build: **1154834118**, status **built**, no error; created 11:51:13Z and completed 11:51:35Z on 16 August 2026.
-
-PR #132 propagated:
-
-- ES public page;
-- EN public page;
-- canonical media ledger;
-- CR-021;
-- ME-028/ME-029;
-- continuous maintenance matrix.
-
-PR **#133** then recorded that deployment in `archive/DEPLOYMENT_LOG.md`.
-
-Later current-main deployments do not supersede the elEconomista evidential state; always inspect current `main` before editing.
+PR **#139** recorded that deployment state. Later repository-wide continuity changes do not supersede the evidential classifications here.
 
 ---
 
-## Website-discovery audit
+## Website-discovery status
 
-The deletion audit checked the legacy `sitemap.xml`. It ends without enumerating the new bilingual elEconomista dossier routes.
+The prior discovery defect is closed:
 
-That omission does not remove the pages or evidence, because the maintenance matrix and repository paths already identify them. It is nevertheless a discoverability/continuity defect.
+- `sitemap-eleconomista.xml` contains the ES/EN dossier pair with reciprocal hreflang links;
+- `robots.txt` advertises that supplemental sitemap.
 
-The accompanying continuity change therefore adds:
-
-- `sitemap-eleconomista.xml` with the ES/EN dossier pair and reciprocal hreflang links;
-- an additional `Sitemap:` directive in `robots.txt`.
-
-This is a navigation/discovery correction only. It makes no substantive evidential change.
+This is a navigation/discovery correction only and makes no substantive evidential change.
 
 ---
 
@@ -285,16 +299,17 @@ A future ChatGPT should continue to seek, where lawfully obtainable:
 
 1. the unseen Outlook parent/root messages identified above, with native headers/body/attachments;
 2. the original inbound transmission by which `AUTO CONCURSO CULPOSO.pdf` reached Romera/elEconomista;
-3. native `.eml` export of the 20-Jan Romera message and cryptographic hash of the attached judgment;
+3. cryptographic hash comparison of the attached judgment across recovered copies;
 4. native export, hashes, speaker/date/context authentication and controlled transcription of the three OGG files;
 5. complete 14-Mar-2025 Madrid querella annexes, especially Documents 2 and 3;
 6. certified finality/appeal-status evidence for Sentencia 163/2023 as at 20-Jan-2025 and thereafter;
 7. native Meeting Point / Laura / CAM communications and newsroom notes/call logs capable of authenticating the reported contradiction;
 8. underlying CAM/Meeting Point/FTI/Club Sei contracts, authority, inventory, PMS/channel, bookings, commissions, invoices and payment trail;
 9. 357/2024 / Auren preservation and disclosure records relevant to Meeting Point documents;
-10. actor-specific records testing any lawyer/adviser/AC/other intermediary transmission hypothesis.
+10. actor-specific records testing any lawyer/adviser/AC/other intermediary transmission hypothesis;
+11. a reconciled manifest of every 16–17-Jan-2025 press-package version and attachment with hashes.
 
-These remain evidence-completion tasks. Their absence does not make deletion of the chat unsafe once this audit is on `main`.
+These remain evidence-completion tasks. Their absence does not make deletion of the chat unsafe because the missing items, exact retrieval keys and source boundaries are durable in the repository.
 
 ---
 
@@ -318,12 +333,13 @@ The audit preserves forensic identifiers needed for retrieval without turning th
 A fresh ChatGPT should be able to recover this track by reading, in order:
 
 1. `CHATGPT_START_HERE.md`;
-2. `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`;
-3. `archive/CORRECTION_REGISTER.md` — CR-020 / CR-021;
-4. `archive/MISSING_EVIDENCE_REGISTER.md` — ME-028–ME-032;
-5. `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`;
-6. this deletion-continuity audit;
-7. the ES/EN elEconomista public pages;
-8. `archive/DEPLOYMENT_LOG.md`.
+2. `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
+3. `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`;
+4. `archive/CORRECTION_REGISTER.md` — CR-020 / CR-021;
+5. `archive/MISSING_EVIDENCE_REGISTER.md` — ME-028–ME-032;
+6. `archive/ELECONOMISTA_ROMERA_MEDIA_TRACEABILITY_15AUG2026.md`;
+7. this deletion-continuity audit;
+8. the ES/EN elEconomista public pages;
+9. `archive/DEPLOYMENT_LOG.md`.
 
-If those records remain available, this ChatGPT thread is not required as institutional memory for the elEconomista / Javier Romera / CAM response-provenance track.
+**Current close-out classification: DELETION-SAFE WITH OPEN EVIDENCE.** The material unresolved matters are source-acquisition gaps, not conversation-memory gaps.
