@@ -142,13 +142,34 @@ Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, rem
 
 A controlled expert/administrator comparison identifies a **€517,750.04** difference between one expert principal figure and the amount recognised by the insolvency administrator. This may matter to Concurso 36/2012 but does not automatically determine the separate Valencia claim.
 
-### BO-010 — reason for the 2014 name change
+### BO-010 — reason for the 2014 UK name change
 
 **Classification:** UNRESOLVED QUESTION / EVIDENCE-BASED INFERENCE.
 
 Companies House establishes the legal mechanism and effective dates but does not state why the members selected the name Aweswell Limited. The former name was expressly project-specific—Monterecco Sun Park Limited—and later use of Aweswell as a wider holding, funding and recovery identity is consistent with a broader, less asset-specific corporate name. That is a reasonable commercial interpretation, not an official registry fact.
 
 A definitive motive requires the 2-June-2014 resolution package, board or shareholder papers, instructions to the company agent/accountant, branding documents or contemporaneous correspondence.
+
+### BO-011 — Spanish Monterecco Sun Park, S.L. renamed Pink Canary Services, S.L.
+
+**Classification:** VERIFIED FACT — PRIMARY DOCUMENT / VERIFIED FACT — PRIMARY JUDICIAL DOCUMENT / PUBLIC OFFICIAL CORROBORATION.
+
+The Spanish company is a different legal person from UK company no. 07716847.
+
+The digitally signed company book records:
+
+- **MONTERECCO SUN PARK SL**, CIF/NIF **B76564517**, for 2012;
+- **PINK CANARY SERVICES SL**, the same CIF/NIF **B76564517**, for 2013;
+- the same sole shareholder and 100 participations; and
+- **“Cambio de denominación social” — 30/09/2013**.
+
+Sentencia 163/2023 independently describes the 6-February-2012 operator as **“MONTERECCO SUN PARK, S.L. (actualmente denominada Pink Canary Services, S.L.)”**.
+
+The official BORME records Monterecco Sun Park SRL under registry sheet **H TF 49739** in 2012. A later official BOE/AEAT publication identifies Pink Canary Services SLU with NIF **B76564517** in the Tenerife Mercantile Registry.
+
+**Controlled conclusion:** Monterecco Sun Park, S.L. and Pink Canary Services, S.L. are successive names of the same Spanish company. The change did not itself transfer the operating contract, create a successor operator or produce a new Spanish legal person. `SLU` identifies single-member status, not a different entity.
+
+**Date boundary:** 30 September 2013 is presently verified as the date recorded in the signed company book. The original shareholder resolution, notarial deed, Registry presentation, inscription certificate and BORME name-change publication have not yet been located; do not present 30 September as the independently verified registry-publication date.
 
 ## 3. Corrections locked by this refresh
 
@@ -161,6 +182,7 @@ A definitive motive requires the 2-June-2014 resolution package, board or shareh
 | BOC-05 | The record already proves negligent advice to enter concurso | The non-privileged record proves urgency and restructuring efforts; negligence, breach and causation remain open and require a separate privilege review. |
 | BOC-06 | The direct-market strategy emerged only after the concurso | A primary plan dated 28 February 2012 already records direct/resident/long-stay and tour-operator lanes. |
 | BOC-07 | Monterecco Sun Park Limited and Aweswell Limited formed an unresolved UK-company succession chain | They are the same UK company, number 07716847. The name changed by special resolution dated 2 June 2014 and Companies House certificate dated 3 June 2014; rights, obligations and proceedings continued under the new name. |
+| BOC-08 | Spanish Monterecco Sun Park, S.L. and Pink Canary Services, S.L. treated as separate operators or an unresolved corporate succession | They are the same Spanish company, NIF B76564517. The signed company book records the name change on 30 September 2013; Sentencia 163/2023 independently confirms “actualmente denominada”. The exact notarial/registry inscription date remains open. |
 
 ## 4. Source-completion queue
 
@@ -176,12 +198,13 @@ A definitive motive requires the 2-June-2014 resolution package, board or shareh
 10. Public-safe certified Valencia pleadings, expert reports, orders and current procedural-status proof.
 11. Duty–knowledge–capacity–causation matrix for each alleged institutional act or omission affecting non-debtors.
 12. Full Companies House name-change package and any contemporaneous internal explanation for selecting the name Aweswell.
+13. Certified historical note for Spanish Registry sheet H TF 49739; original 2013 resolution and notarial deed; Registry presentation and inscription; BORME name-change publication; tax and counterparty notification package. Reconcile each date with the 30-September-2013 company-book entry.
 
 ## 5. Weighted closure assessment
 
 | Track | Weight | Closure | Reason |
 |---|---:|---:|---|
-| Acquisition/publicity chronology | 8 | 92% | purchase, Spanish publicity, BORME and UK name continuity verified; consideration, finance, beneficial arrangements and notification trail remain open |
+| Acquisition/publicity chronology | 8 | 94% | purchase, Spanish publicity, BORME, UK name continuity and Spanish operator-name continuity verified; consideration, finance, beneficial arrangements and exact Spanish name-change inscription remain open |
 | Banking account record | 15 | 35% | 5-Mar figures and viability plan located; native ledgers, default notice, pledged funds and complete instruments absent |
 | Morosidad/acceleration determination | 12 | 25% | cure/global distinction resolved; legal and contractual validity not resolved |
 | Execution file | 12 | 55% | primary auction diligence and schedule recovered; initiating application, certificate, liquidation and full docket open |
@@ -191,7 +214,7 @@ A definitive motive requires the 2-June-2014 resolution package, board or shareh
 | Concursal/value reconciliation | 10 | 30% | key figures and discrepancy identified; reproducible full bridge absent |
 | Extraconcursal perimeter | 8 | 65% | legal separation clear; asset/right/income mapping incomplete |
 | Institutional duty and causation | 7 | 25% | correct methodology fixed; act-by-act source matrix incomplete |
-| **Overall weighted readiness** | **100** | **43%** | the company-name identity gap is closed; the principal liability and quantum gaps remain unchanged |
+| **Overall weighted readiness** | **100** | **43%** | both corporate-name identity gaps are closed; the principal liability and quantum gaps remain unchanged |
 
 ## 6. Public-impact decision
 
@@ -201,7 +224,10 @@ Safe public strengthening:
 - exact court/proceeding/date/time;
 - 1-Dec/3-Jan/11-Jan/14-Feb acquisition-publicity sequence;
 - Companies House continuity: Monterecco Sun Park Limited was renamed Aweswell Limited, same company no. 07716847, effective 3 June 2014;
-- the name change did not transfer the LPB shareholding or create a successor company;
+- the UK name change did not transfer the LPB shareholding or create a successor company;
+- Spanish continuity: Monterecco Sun Park, S.L. was renamed Pink Canary Services, S.L., same NIF B76564517;
+- 30 September 2013 may be attributed to the signed company-book entry, while the exact registry date remains open;
+- the Spanish name change did not itself transfer the operating contract or create a successor operator;
 - 5-Mar distinction between global and cure figures;
 - February 2012 viability/direct-market architecture;
 - assets/liabilities alongside the correct liquidity-law caveat;
@@ -211,6 +237,7 @@ Safe public strengthening:
 Must remain qualified or unpublished:
 
 - a definitive commercial motive for selecting the name Aweswell without contemporaneous internal evidence;
+- the exact notarial, registry-inscription or BORME-publication date of the Spanish name change until the original documents are recovered;
 - definitive assertion that the lender wrongfully created morosidad;
 - definitive assertion that advisers were negligent or reckless;
 - substance of privileged advice or instructions;
