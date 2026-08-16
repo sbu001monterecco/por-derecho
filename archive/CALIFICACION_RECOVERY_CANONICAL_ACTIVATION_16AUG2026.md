@@ -11,7 +11,7 @@ This file makes the 16-Aug-2026 Calificación source refresh impossible to miss 
 
 Any future search, scan, draft, website update or institutional analysis touching one or more of the following terms must read the controlling source refresh before relying on older summaries:
 
-`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
+`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Laura Patricia Acosta Matos` · `LPAM` · `LPAM–Magistrado` · `apariencia de imparcialidad` · `Alzada 286/2026` · `DI 169/2026` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
 
 Read first:
 
@@ -24,8 +24,9 @@ Read first:
 7. `archive/CALIFICACION_EG49_FISCAL_RESPONSE_DECREE_PUBLICATION_CONTROL_16AUG2026.md`;
 8. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
 9. where Judge Alberto López Villarrubia is in scope, the current unitary Judge allegation ledger;
-10. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
-11. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
+10. whenever LPAM, alleged Judge access/contact, the 18-May-2021 court event, DI 169/2026 / Alzada 286/2026 or appearance of impartiality is in scope, **`archive/LPAM_MAGISTRADO_SOURCE_COMPLETION_16AUG2026.md`** plus the canonical CGPJ chronology;
+11. `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`;
+12. before redesigning or strengthening the public page, `archive/CALIFICACION_LEGAL_ECOSYSTEM_READER_SIMULATION_AND_IMPROVEMENT_PLAN_16AUG2026.md`.
 
 ## Superseded source-status proposition
 
@@ -34,6 +35,30 @@ Read first:
 **CURRENT:** the 47-page AC report has been read in full and cross-walked against the Fiscal opinion, DI 248 material, opposition, Sentencia 163/2023 and controlled appeals. What remains open is the complete annex universe, certified evidence-before-each-actor chain, hearing/service record, current complete appellate record, rescue-instrument execution/performance, present conclusion route and remedy/quantum evidence.
 
 Future ChatGPT threads must not reintroduce the superseded proposition.
+
+## LPAM–Magistrado source-completion activation
+
+The LPAM–Magistrado module is now **source-complete to the current connected corpus, but not proved on the underlying relationship/contact proposition**. Future Calificación work must use the following separation:
+
+`CONTEMPORANEOUS ACCOUNT / DOCUMENT → PRIMARY COURT RECORD → SIGNED WITNESS SCOPE → CONTRARY/LIMITING EVIDENCE → OFFICIAL VERIFICATION TARGET → ONLY THEN ANY RELATIONSHIP / RECUSAL / BIAS / CAUSAL THEORY`.
+
+Current controlled points:
+
+- a 24-Jan-2018 contemporaneous email records `Intermediación/Comisiones (3%) - 350.000,00`; it does **not** prove actual payment, recipient, unlawfulness or any link to the Judge;
+- a 5-Jun-2020 email contemporaneously memorialises Patricia Domínguez's account of statements she attributes to LPAM about friendship/access/contact with the Judge; it proves the account existed by then, not that the asserted relationship was true;
+- primary 12-May and 18-May-2021 court records prove CAM's procedural role and CAM's `representación` at the 18-May event, but do **not** personally identify LPAM as that representative;
+- Auto 164/2021 records that Aweswell made the higher offer and obtained the immediate favorable result at that event — mandatory counterevidence against any simplistic predetermined-CAM-result theory;
+- signed 28-Jul-2026 declarations narrow the observed post-event episode: no witness claims to have heard the content of a private conversation, seen LPAM alone with the Judge or seen her enter chambers; Gil's earlier `private conversation` wording is controlled as inference rather than direct hearing;
+- the preserved Auto copy displays an 11:50:54 download marker and a 12:47:38 judicial signature marker on 18-May-2021; this is a technical/documentary anomaly requiring official explanation, **not itself proof of backdating, predetermination or misconduct**;
+- the 28-Jul five-file CGPJ supplement `REGAGE26e00069061338` was formally presented and a 30-Jul REC notice confirms that it passed to be processed by the **CGPJ General Registry** at 08:36:02; joinder to Alzada 286/2026 and substantive examination remain unproved.
+
+### Calificación boundary
+
+The LPAM–Magistrado module is relevant to the Calificación as a **separate appearance-of-impartiality / finite-verification question** concerning a Judge who later adopted selected propositions as judicial findings in Sentencia 163/2023. It cannot be used as a shortcut:
+
+`historical LPAM account / 2021 observation ≠ proven relationship ≠ proven bias ≠ privately procured Sentencia 163/2023`.
+
+Any legally relevant temporal and causal bridge into the 2023 adjudication must be independently proved.
 
 ## Controlling recovery proposition
 
@@ -64,7 +89,7 @@ The latest controlled court order fixes trial for **9 October 2026 at 12:00**.
 
 CaixaBank's own 18-Jun-2024 expert report records Aweswell's pleaded prejudice at **€1,124,445.84**. Liability and quantum are contested and no merits judgment has been located. Treat this as a **live, material and potentially substantial recovery claim**, not an adjudicated recovery or guaranteed outcome.
 
-The Valencia witness citations identify **Francisco de Borja Rodríguez-Batllori Laffitte**, Administrador Concursal in Concurso 36/2012, as `testigo propuesto por la parte actora y demandada`. Therefore **CaixaBank itself requested/proposed Borja as a witness**, while Aweswell also proposed him. Do not convert that verified proposal/request into an unsupported assertion that his testimony is substantively favourable to CaixaBank or proof of bias/collusion/conflict.
+The controlled witness-origin sequence is now correction-locked: contemporaneous counsel reporting states that **CaixaBank requested/proposed Francisco de Borja Rodríguez-Batllori Laffitte as a witness and Aweswell adhered to that request**. Later court wording `testigo propuesto por la parte actora y demandada` records the resulting procedural posture after adhesion and must not be used to imply equal, simultaneous or independent sponsorship. The client's account that counsel felt effectively compelled by procedural-risk concerns remains client-reported context pending an express contemporaneous counsel source. None of this proves the substantive direction of Borja's testimony, bias, collusion or conflict.
 
 The bank expert report further characterises **€573,591.53** as within Administrador Concursal authorisation and **€550,854.31** as beyond it. Preserve that as a CaixaBank-expert characterisation until the native AC authorisation is independently controlled.
 
@@ -100,7 +125,11 @@ Where CaixaBank/banking causation is material, add:
 
 `BANKING ACT / PRODUCT / LOSS → CONTEMPORANEOUS KNOWLEDGE → AC TREATMENT / AUTHORISATION → PRESENT CAIXABANK CLAIM → WITNESS / EXPERT RECORD → CONTESTED QUANTUM → POSSIBLE NET-LOSS EFFECT`.
 
-A future thread that discusses obstruction, non-collaboration, accounting failure, Pink/rent, late filing, third-party/CEXP credits, rescue failure or culpable management without checking the positive-agency chronology is incomplete. A future thread that discusses patrimonial loss or causation without checking the live CaixaBank recovery track is likewise incomplete where the banking relationship materially overlaps the asserted loss.
+Where LPAM/Judge contact or appearance of impartiality is material, add:
+
+`CONTEMPORANEOUS ACCOUNT → INDEPENDENT PRIMARY RECORD → WITNESS SCOPE/LIMIT → CONTRARY EVIDENCE → OFFICIAL VERIFICATION → TEMPORAL BRIDGE → ONLY THEN LEGAL SIGNIFICANCE`.
+
+A future thread that discusses obstruction, non-collaboration, accounting failure, Pink/rent, late filing, third-party/CEXP credits, rescue failure or culpable management without checking the positive-agency chronology is incomplete. A future thread that discusses patrimonial loss or causation without checking the live CaixaBank recovery track is likewise incomplete where the banking relationship materially overlaps the asserted loss. A future thread that invokes LPAM/Judge material without the source-completion control and CR-042–CR-044 is also incomplete.
 
 ## Public-site propagation required
 
@@ -115,10 +144,12 @@ The ES/EN Calificación pages must visibly carry:
 - the positive-agency / recovery-through-adversity chronology;
 - a documentary counter-record showing that rescue, finance, operation, asset protection and recovery work existed contemporaneously;
 - where bank-side loss/causation is discussed, a controlled reference to the live **CAIXABANK, S.A. / ORD 1859/2023-9** recovery route, clearly marked pending/contested and not adjudicated;
-- the verified fact that CaixaBank itself requested/proposed Borja as a witness, with the equally important qualification that Aweswell also proposed him and the citations alone do not establish testimony direction;
+- the correction-locked CaixaBank→Aweswell-adhesion sequence for Borja's witness request, without converting the resulting both-sides court label into equal independent sponsorship or implying testimony direction;
+- a source-controlled **LPAM–Magistrado** module showing the 2018/2020 source layers, the 2021 primary court-record limits, the signed witness narrowing, Aweswell's favorable 18-May outcome as counterevidence, the timestamp anomaly with technical caveat, and the 28-Jul presentation / 30-Jul CGPJ General-Registry routing distinction;
+- an explicit statement that the LPAM module does not prove bias, influence, improper contact or procurement of Sentencia 163/2023 and that any temporal/causal bridge must be established separately;
 - reciprocal links to the recovery/restitution objectives.
 
-The recovery/restitution pages must link back to the Calificación evidence audit.
+The Judge/Court, CGPJ and institutional-accountability routes must carry the same LPAM evidential hierarchy rather than stronger shorthand. The recovery/restitution pages must link back to the Calificación evidence audit.
 
 ## Professional-reader optimisation control
 
@@ -157,13 +188,17 @@ The CaixaBank action must also be allocated correctly between the claimant's leg
 - Do not attribute the EG49 decrees to Alejandro Luzón.
 - Institutional availability of evidence is not proof of personal knowledge by a particular Fiscal/Judge.
 - A judicial error, adverse judgment or uncorrected contradiction is not automatically criminal prevaricación; criminal allegations remain Gil Marer's allegations unless independently adjudicated/proved.
-- Borja's proposal/request as a witness by CaixaBank is verified from the court citations, but it is not proof of the direction/content of his evidence or of unlawful alignment.
+- Borja's witness-origin record is: **CaixaBank requested/proposed him; Aweswell adhered**. The later both-sides label records the post-adhesion posture and does not prove testimony direction or unlawful alignment.
+- CAM's official 18-May-2021 procedural representation is verified; LPAM's personal identity/capacity at the event is not independently established by the primary court record currently controlled.
+- A recorded €350,000 commission line is not a Judge-linked payment without separate payment, recipient and bridge evidence.
 
 ## Appellate/status controls
 
 Do not state that no AP judgment exists anywhere. The controlled formulation remains that no appellate judgment/terminating resolution had been located/notified in the controlled Gmail source through 16-Aug-2026; the last verified status included RPL 2523/2025 and a deliberation/fallo date fixed for 4-Jun-2026. Re-query current Gmail/court records before stating present status.
 
 Pink/Patricia service/non-notification remains unresolved because controlled appeal variants conflict. Do not choose a version without the filed copy/service record/AP-transmitted record.
+
+For Alzada 286/2026, do not say the 28-Jul package is merely stranded at the initial electronic registry: 30-Jul downstream routing to the CGPJ General Registry is now proved. Conversely, do not upgrade that routing into joinder, examination or merits without the administrative index/current decision.
 
 ## Search propagation rule
 
@@ -179,6 +214,10 @@ For the CaixaBank track specifically:
 
 `NEW VALENCIA ORDER / EVIDENCE → CAIXABANK counter-evidence control → Valencia reconciliation ledger → Calificación allegation/actor ledger as relevant → correction/missing evidence → public page if justified`.
 
+For the LPAM–Magistrado track specifically:
+
+`NEW CONTACT / ATTENDANCE / TECHNICAL / CGPJ EVIDENCE → LPAM source-completion control → Judge + CGPJ controls → Calificación relevance test → correction/missing evidence → public routes only at the evidential grade justified`.
+
 ## Control sentence
 
-**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; where banking loss or causation is material, they must also reconcile the live CAIXABANK, S.A. ORD 1859/2023-9 recovery claim and Borja's documented cross-proceeding witness role without converting a pending contested claim or witness proposal into an adjudicated outcome, proven bias or retrospective actor knowledge; and they must use the legal-ecosystem reader optimisation plan before the next material public redesign.**
+**Future ChatGPT searches must treat the Calificación as a source-complete adverse-judgment/accountability track embedded inside a documented, continuing recovery programme; where banking loss or causation is material, they must reconcile the live CAIXABANK, S.A. ORD 1859/2023-9 recovery claim and the correction-locked CaixaBank-request→Aweswell-adhesion origin of Borja's witness role without converting a pending contested claim or witness request into an adjudicated outcome, proven bias or retrospective actor knowledge; and where LPAM–Magistrado material is invoked, they must apply the source-completion hierarchy, CR-042–CR-044 and the explicit no-shortcut boundary between historical witness material and any alleged effect on Sentencia 163/2023.**
