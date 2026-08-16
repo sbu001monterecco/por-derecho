@@ -41,7 +41,7 @@ No item in this bundle proves, merely by being pleaded or recorded, that any per
 
 ## 2. Source inventory and workspace fingerprints
 
-The SHA-256 values below are fingerprints calculated from the binaries uploaded in the current workspace. They help future version comparison, but **no private-vault export, immutable custody event or complete cryptographic manifest is claimed** merely because a hash is recorded here.
+The SHA-256 values below are fingerprints calculated from the binaries uploaded in the current workspace. They help future version comparison, but **no private-vault export, immutable custody event or complete cryptographic manifest is claimed** merely because a hash is recorded here. A future custody pass should independently recalculate each hash while recording source-native ID, byte size, acquisition time and storage location.
 
 | Source ID | Exact uploaded filename | Pages | Workspace SHA-256 | Source class | Direct repository use |
 |---|---|---:|---|---|---|
@@ -51,14 +51,10 @@ The SHA-256 values below are fingerprints calculated from the binaries uploaded 
 | `C36-2021-01` | `Recurso CAM vs Escrito Aweswell destruccion masa activa 15FEB2021.pdf` | 4 | `de45a090b2ffeccb7a7308cd08e1f75c8418fde3617949b2b3774697bde9742b` | CAM opposition/party position dated 16 Feb 2021 | contrary account of ownership, works, security and Community/AC role |
 | `C36-2021-02` | `Auto Destruccion Masa Activa 24FEB2021.pdf` | 4 | `3b02a944ae5becb154bdc2109935d060de80bb9e862f10ab055582696e5ee40f` | signed Mercantil nº1 order | detailed procedural treatment of inspection, expert valuation and estate conservation |
 | `C36-2021-03` | `Email GM a AC ref Autorizacion Peritos Informe Masa Activa 8MAR2021.pdf` | 3 | `e542e8fddcc7f0a78782012c5f07221b9c735cb81b479d6dcac7d77819d02201` | private direct-correspondence printout | notice/request to the AC; native email and response remain to recover |
-| `MATK-2025-01` | `DENUNCIA PRESENTADA MATKATOR 20FEB2025.pdf` | 87 | `2a31f0726e8cc7a7308cd08e1f75c8418fde3617949b2b3774697bde9742b` | stamped/signed complaint bundle plus annexes | initial Matkator complaint and party-authored visual/title reconstruction |
+| `MATK-2025-01` | `DENUNCIA PRESENTADA MATKATOR 20FEB2025.pdf` | 87 | `2a31f0726e8cc89e35ef33ae6308704ec9e4cd855e8e73e7763bae13de1e34c5` | stamped/signed complaint bundle plus annexes | initial Matkator complaint and party-authored visual/title reconstruction |
 | `MATK-2025-02` | `20250223 Ampliacion denuncia.pdf` | 7 | `0680bbeeddb2073d8d1ceb9afad0265575123da25128dd2252c15cdcba860755` | earlier party-submission version | controlled as pre-file/draft candidate absent receipt |
 | `MATK-2025-03` | `20250223 Ampliacion denuncia (1).pdf` | 7 | `360ab767475898d2d98bce5b52804194c173cbcbb6b91edf5f07370c1f30e73e` | later DP-headed party-submission version | operative/filed candidate, subject to receipt and full docket |
 | `MATK-2025-04` | `250313 escrito adjuntando ampliación de la denuncia fda.pdf` | 5 | `e83d4794c9d9c9cd02660926119db80fb2a9fefffe4c4d8566ae567efe74af98` | ETJ 163/2020 party filing dated 13 Mar 2025 | cross-proceeding transmission/new-fact and requested civil-execution consequences |
-
-### Fingerprint correction
-
-The hash shown above for `MATK-2025-01` must be verified again before use in any custody manifest. The current workspace computation associated with the complaint filename was `2a31f0726e8cc7a78782012c5f07221b9c735cb81b479d6dcac7d77819d02201`; this digest therefore treats the inventory as a **working fingerprint schedule**, not a forensic certificate. A future custody pass must export each native binary, calculate the hash again and record acquisition time, byte size, source-native ID and storage location.
 
 ---
 
