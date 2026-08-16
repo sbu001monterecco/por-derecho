@@ -94,7 +94,15 @@ If native custody is later activated, preserve the originals under stable IDs wi
 - signed Valencia→Arrecife inhibition and complete EG 19/2026 record;
 - source-complete Community accounting/maintenance and 2017–18 valuation record.
 
-## 7. Final deletion decision
+## 7. Independent fresh-thread verification prompt
+
+A reusable, adversarial verification prompt is preserved at:
+
+`archive/prompts/VERIFY_CALIFICACION_FISCALIA_2012_2019_2026_REPOSITORY_CAPTURE_PROMPT_16AUG2026.md`
+
+It instructs a fresh ChatGPT to ignore conversational memory, open current `main`, verify Rule 20, reconstruct CF-01→CF-10 with hashes and source-status limits, test the 2012→2019→2026 chronology, verify the public runtime/route set and deployment record, and return a PASS / PARTIAL / FAIL matrix with exact repository support. Its purpose is to demonstrate independently that the repository—not this conversation—is carrying the knowledge.
+
+## 8. Final deletion decision
 
 All repository-knowledge continuity gates requested for this thread are now satisfied:
 
@@ -102,7 +110,8 @@ All repository-knowledge continuity gates requested for this thread are now sati
 - **root `CHATGPT_START_HERE.md` direct-path rule: YES — Rule 20**;
 - **bilingual Calificación/public cross-route module merged and loaded: YES**;
 - **exact merge SHA deployed by GitHub Pages without error: YES**;
-- **deployment state recorded in this canonical thread audit and dedicated deployment evidence: YES**.
+- **deployment state recorded in this canonical thread audit and dedicated deployment evidence: YES**;
+- **independent fresh-thread verification prompt preserved in repository: YES**.
 
 Therefore, deletion of the originating ChatGPT conversation will **not** remove the canonical project knowledge created from this source bundle. A fresh Project Sun Rock / Por Derecho thread following `CHATGPT_START_HERE.md` will be routed to the source gate and recover the material source inventory, evidential classifications, corrections, chronology, public implementation, unresolved questions and retrieval targets.
 
