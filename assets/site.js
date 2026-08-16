@@ -110,6 +110,10 @@
   // Fiscal circularity and later judicial legitimisation. Appears only on relevant Calificación/takeover/AC/Judge/Fiscal/DP1901/accountability routes.
   load('extraconcursal-force-authority-laundering-20260816.js?v=20260816a');
 
+  // Source-completion addendum: 25-Jun-2018 counsel report that the opposing side relied on Borja's security email;
+  // preserves the contrary AC account and the unproved literal key-handover boundary.
+  load('extraconcursal-borja-security-source-upgrade-20260816.js?v=20260816a');
+
   // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
   load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
 
