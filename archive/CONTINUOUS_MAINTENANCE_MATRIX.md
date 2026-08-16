@@ -77,3 +77,13 @@ Temporal control: **historical originating act ≠ extinguished consequence**. A
 ## Serial-reliance control — 15 Aug 2026
 
 Where multiple institutions or professional gatekeepers act in sequence, ask what each independently checked against the underlying asset/right source. Do not treat later formalisation, registration, tax idoneity, supervisory status, grant/FEDER decision, market admission or operational contract as automatic validation of every upstream factual premise.
+
+## Recovery-control rule — 15 Aug 2026
+
+Across AC, court/judge, LAJ, private-actor and institutional tracks, use `GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` as the strategic parent. The public and internal question is not punishment as an autonomous objective; it is what must be proved, corrected, restored, accounted for or compensated to recover the lawful patrimonial position. Accountability remains actor-specific and evidence-dependent.
+
+## Maintenance rules
+- `LIVE` means a public route exists; it does not mean evidentially complete.
+- Update the row after substantive new evidence, correction, major filing, public-page change or current-status change.
+- Missing evidence belongs in `archive/MISSING_EVIDENCE_REGISTER.md`; corrections belong in `archive/CORRECTION_REGISTER.md`.
+- Do not infer that a missing item does not exist merely because it is absent from the reviewed corpus.

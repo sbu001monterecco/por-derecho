@@ -42,7 +42,7 @@ The governing June chronology is now:
 - `archive/CORRECTION_REGISTER.md` — CR-033 to CR-035.
 
 ## Public propagation
-Updated in this implementation branch:
+Updated in the canonical implementation branch:
 
 - `es/mensaje-abierto-cgpj/index.html`
 - `en/open-message-cgpj/index.html`
@@ -67,8 +67,10 @@ Obtain the complete administrative index/current file for Alzada 286/2026 and id
 5. the actual treatment of the 28-Jul five-file package; and
 6. the current/final reasoned appellate decision.
 
-## Implementation state at creation
-Branch: `cgpj-alzada-chronology-clarification-16aug2026`  
-Base main SHA at branch creation: `d2e0a440ea206b2a0a10c8288e5d8b1bef437b8b`.
+## Implementation state at canonical branch creation
+Safe branch: `cgpj-alzada-chronology-clarification-16aug2026-v2`  
+Base main SHA: `2218fe87569bc194c85f75edb56e568d4a434f3f`.
 
-This audit is not complete until the branch is reviewed, merged through a PR and GitHub Pages deployment of the merge revision is verified.
+An earlier working branch based on `d2e0a440ea206b2a0a10c8288e5d8b1bef437b8b` was deliberately superseded without merge after `main` advanced concurrently. The `v2` branch was rebuilt from the then-current `main` so intervening repository changes would not be overwritten.
+
+This audit is not complete until the safe branch is reviewed, merged through a PR and GitHub Pages deployment of the merge revision is verified.
