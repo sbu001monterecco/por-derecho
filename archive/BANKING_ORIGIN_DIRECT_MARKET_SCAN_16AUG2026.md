@@ -51,7 +51,7 @@ The primary **15 May 2012** diligence from Juzgado de Primera Instancia nº 1 de
 
 The numbered schedule contains **158 properties**, each with an auction type of **€94,900.67**, an aggregate scheduled type value of **€14,994,305.86**.
 
-This supersedes the public use of 166 as the court-auction count. A later insolvency-administrator account refers to 159 apartments after prior sales; 166 appears in an earlier advice/summary layer. The three numbers must be reconciled by document and property, not blended.
+This supersedes the public use of 166 as the court-auction count. A later insolvency-administrator account refers to 159 apartments after prior sales; 166 appears in an earlier summary layer. The three numbers must be reconciled by document and property, not blended.
 
 ### 2.5 Filing and declaration
 
@@ -64,7 +64,7 @@ The controlled sequence is:
 
 The declaration recorded assets of **€21,603,513.82** and liabilities of **€10,186,394.72**. The historical insolvency test concerned regular ability to meet due obligations. A stated asset surplus does not by itself disprove a liquidity insolvency; equally, liquidity pressure does not establish that every bank calculation was correct or that filing was the only rational route.
 
-Contemporaneous privileged advice identified refinancing, voluntary suspension by the lender and a timely insolvency declaration. Publicly state only that the filing had a time-critical defensive rationale and that more than one route was considered. Negligence and causation remain privilege-sensitive and unresolved.
+The non-privileged chronology establishes documented restructuring efforts, the scheduled auction and a filing before that auction. Publicly state only that the filing had a time-critical defensive rationale. The content of professional advice is not reproduced; negligence, breach and causation require a separately controlled privilege review.
 
 ## 3. Separate legal and accounting lanes
 
@@ -107,7 +107,7 @@ The source set does not yet support:
 2. Acquisition/publicity chronology is 1 Dec / 2 Jan / 3 Jan / 11 Jan / 14 Feb.
 3. €940,737.53 and €54,653.80 are different bank measures.
 4. Asset surplus and liquidity insolvency are not interchangeable.
-5. Filing was a time-critical defensive route; negligence is not established.
+5. Filing was a time-critical defensive route; negligence is not established and advice content is not published.
 6. The direct-market structure is documented by February 2012.
 7. LPB, Matkator, the Community of Exploitation and the community of owners are not interchangeable.
 8. Valencia banking liability and concursal credit reconciliation remain separate.
@@ -119,7 +119,7 @@ The source set does not yet support:
 - complete Mortgage Execution 90/2012 file;
 - property-by-property 158/159/166 reconciliation;
 - complete Aweswell–Monterecco–Multimatrix acquisition/control/finance file;
-- privilege-reviewed advice and decision chronology;
+- separately controlled privilege review of professional advice and the filing decision;
 - every later conclusion/reversal/narrowing application and response;
 - operator-by-operator contracts, bookings, payments and decline reasons;
 - complete Valencia public-safe pleadings/expert reports/status proof;
@@ -138,4 +138,4 @@ Use consistently:
 - UNRESOLVED QUESTION;
 - SOURCE-COMPLETION REQUIREMENT.
 
-Do not convert a party allegation into a finding. Do not call a formal banking or judicial act neutral without testing its substantive effect. Do not imply that Concurso 36/2012 placed the whole hotel under concursal control.
+Do not convert a party allegation into a finding. Do not call a formal banking or judicial act neutral without testing its substantive effect. Do not imply that Concurso 36/2012 placed the whole hotel under concursal control. Do not reproduce privileged advice or instructions in the public repository.
