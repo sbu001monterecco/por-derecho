@@ -1,162 +1,141 @@
 # BANKING ORIGIN, DIRECT-MARKET AND EXTRACONCURSAL-PERIMETER SCAN
-## Controlled synthesis — 16 August 2026
+## Controlled synthesis — refreshed 16 August 2026
 
-## 1. Purpose
+## 1. Controlling status
 
-This note records the evidence-led update made to the bilingual Project Sun Rock website concerning:
+This synthesis is superseded in factual detail by, and must be read together with:
 
-1. the 2011–2012 banking premise and the immediate origin of Luchy Playa Blanca, S.L.U.'s voluntary insolvency filing;
-2. the distinction between the pending Valencia banking claim and the separate reconciliation of the concursal credit;
-3. Aweswell's entry into the LPB structure from the prior Multimatrix position;
-4. minority-owner interference and the development of a direct-to-market Sun Park trading platform;
-5. the separate legal positions of LPB, Matkator, the Comunidad de Explotación del Complejo Sun Park and the community-of-owners layer; and
-6. the need to assess any responsibility of the insolvency administrator or court act by act, rather than assuming authority over the whole hotel.
+- `archive/BANKING_ORIGIN_GAP_CLOSURE_LEDGER_16AUG2026.md`; and
+- `archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md`.
 
-This is a controlled synthesis. It is not a pleading, expert report, judicial finding or waiver of privilege.
+It remains the controlling cross-track summary for the relationship between the 2011–2012 banking origin, Mortgage Execution 90/2012, Concurso 36/2012, the direct-market platform and extraconcursal rights.
 
-## 2. Public-disclosure rule
+The present defendant in the Valencia proceeding is not identified by its full corporate name on the public website. Use **the successor institution to the 2011–2012 lender**.
 
-The present defendant in the Valencia proceeding is not to be identified by its full corporate name on the public website at this stage.
+## 2. Corrected origin chronology
 
-Approved public descriptions include:
+### 2.1 Acquisition and control
 
-- "the successor institution to the 2011–2012 lender";
-- "the present Valencia defendant"; and
-- in Spanish, "la entidad sucesora de la entidad bancaria de 2011–2012".
+Primary documents now establish:
 
-Historical references to the original lender or banking perimeter may be used where needed to explain the 2011–2012 chronology. Privileged lawyer correspondence, native private emails, message identifiers and private source locations are not to be published.
+1. **1 December 2011** — Monterecco Sun Park Limited acquired all LPB shares from Multimatrix Limited under a Tel Aviv notarial deed, duly apostilled.
+2. **2 January 2012** — sole-shareholder decision appointing Gil Marer incoming sole director.
+3. **3 January 2012** — Spanish deed of publicity of the sole-shareholder change, protocol 18.
+4. **11 January 2012** — presentation to the Lanzarote Mercantile Registry.
+5. **14 February 2012** — official registry/BORME data date identifying Monterecco Sun Park Limited as sole shareholder.
 
-## 3. Evidence classification
+Do not collapse these into one “3 January acquisition/publication” event. The complete Aweswell–Monterecco economic, financing and control chain remains open.
 
-| Proposition | Classification | Controlled conclusion |
-|---|---|---|
-| Aweswell entered the LPB ownership/control structure during late 2011 and early 2012 | PARTIALLY VERIFIED FACT | The chronology is staged. Corporate publication material records a sole-shareholder change dated 3 January 2012. Do not compress the entire economic, corporate and management transition into one undated acquisition statement. |
-| LPB faced mortgage enforcement and an auction track in 2012 | VERIFIED FACT | A preserved enforcement notification and auction diligence are dated 15 May 2012. |
-| An auction over 166 LPB apartments was fixed for 22 June 2012 | VERIFIED FACT IN THE CONTROLLED SOURCE REGISTER | Preserve the distinction between LPB assets and the whole Sun Park complex. |
-| LPB sought voluntary insolvency protection on 4 June 2012 | VERIFIED FACT | The immediate timing supports treatment of the filing as a defensive response to the scheduled enforcement/auction track, without proving that it was the only reasonable option. |
-| The 2011–2012 banking relationship was wrongly or incompletely treated as in default | PARTY ALLEGATION / UNRESOLVED QUESTION | Requires the complete native account, notice, grace-period, amortisation, pledged-funds, acceleration and enforcement record. |
-| The advice to enter voluntary insolvency was wrong, negligent, reckless or materially incomplete | PARTY ALLEGATION | Not a judicial or professional-liability finding. Reasonableness must be tested against the information, instructions, alternatives and urgency actually present in 2012. |
-| Later attempts to conclude, reverse or narrow the procedure were not effectively supported | PARTY ALLEGATION / SOURCE-COMPLETION REQUIREMENT | Build a dated application-report-order-appeal matrix before attributing responsibility to any individual or institution. |
-| Only LPB was the debtor in Concurso 36/2012 | VERIFIED LEGAL-PERIMETER FACT | "LPB insolvency" is not synonymous with insolvency of the hotel, the operating structure, every owner or Sun Park as a whole. |
-| Matkator was not a debtor in Concurso 36/2012 | VERIFIED LEGAL-PERIMETER FACT | Matkator's units and rights require an extraconcursal analysis. |
-| The Comunidad de Explotación del Complejo Sun Park was legally distinct from LPB | VERIFIED LEGAL-PERIMETER FACT | It was not automatically absorbed into LPB's estate or placed under a general concursal mandate. |
-| Aweswell developed a direct-to-market sales and distribution platform | EVIDENCE-SUPPORTED FACT | Connected business records support direct reservations, repeat-customer marketing, call handling and conversion, booking/payment records, sales reporting, presentations and external-operator negotiations. |
-| Minority conflict materially weakened normal hotel trading and tour-operator confidence | PARTY ALLEGATION WITH EVIDENTIAL SUPPORT | The operating disruption is documented as a serious factor. The exact causal effect on each operator and each period remains to be proved and quantified. |
-| The insolvency administrator and judge enabled extraconcursal harm | PARTY ALLEGATION REQUIRING ACT-BY-ACT PROOF | Test express decisions, approvals, accounting treatment, notice, silence, non-protection, available powers, causation and corrective capacity separately. Do not infer whole-hotel jurisdiction. |
+### 2.2 Restructuring and direct-market strategy
 
-## 4. Correct causal model
+A primary viability/refinancing plan dated **28 February 2012** sought a five-year principal grace period, debt reduction and operating restructure. It described:
 
-The website must not present a single-cause story.
+- Summers Villages;
+- Sun Park Living; and
+- a proposed tour-operator distribution lane.
 
-The controlled model is:
+This proves that direct, resident, repeat-customer and longer-stay commercialisation formed part of the recovery plan before the concurso. It does not prove that every later operator decision resulted from minority conflict.
 
-**disputed banking premise and financial package**
-→ **acceleration / enforcement / scheduled auction**
-→ **defensive LPB voluntary insolvency filing**
+### 2.3 Bank figures
 
-operating in parallel with:
+The lender's **5 March 2012** correspondence distinguished:
 
-**pre-existing owner and Community conflict**
-→ **fragmented or obstructed hotel operation**
-→ **reduced confidence in conventional distribution**
-→ **Aweswell direct-to-market response**
-→ **customers, repeat business, booking systems, sales processes, goodwill and distribution value**
+- **€940,737.53** as the global outstanding position across two facilities plus estimated costs; and
+- **€54,653.80** as the amount separately said to be required to bring the second facility up to date.
 
-followed by:
+These figures are not competing statements of the same measure. The account treatment, cure rights, grace period, pledged funds, acceleration, costs and execution calculation remain open.
 
-**a concursal procedure formally limited to LPB**
-+ **specific later private and institutional acts or omissions**
-→ **alleged effects on title, control, operation, income and extraconcursal interests**.
+### 2.4 Auction schedule
 
-Neither chain proves the other automatically. Both must be reconciled event by event.
+The primary **15 May 2012** diligence from Juzgado de Primera Instancia nº 1 de Arrecife, Mortgage Execution **90/2012**, fixes the auction for **22 June 2012 at 10:00**.
 
-## 5. Separate legal and accounting lanes
+The numbered schedule contains **158 properties**, each with an auction type of **€94,900.67**, an aggregate scheduled type value of **€14,994,305.86**.
 
-### 5.1 Pending Valencia banking lane
+This supersedes the public use of 166 as the court-auction count. A later insolvency-administrator account refers to 159 apartments after prior sales; 166 appears in an earlier advice/summary layer. The three numbers must be reconciled by document and property, not blended.
 
-The pending proceeding concerns the responsibility of the successor institution within the original banking and financial-product relationship. The controlled public record may identify the court and proceeding number and may state the reported January 2027 trial listing, while withholding the defendant's full corporate name.
+### 2.5 Filing and declaration
 
-### 5.2 Concursal credit and accounting lane
+The controlled sequence is:
 
-A separate reconciliation must test:
+- filing cover — 1 June 2012;
+- court entry — 4 June 2012;
+- declaration — 6 June 2012;
+- scheduled auction — 22 June 2012.
 
-- original principal;
-- ordinary and default interest;
-- floor-clause and swap/cobertura effects;
-- pledged funds and payments;
-- amounts recognised in Concurso 36/2012;
-- every later assignment;
-- enforcement figures;
-- the EUR 400,000 transaction;
-- dación value;
-- mortgage cancellation and satisfaction;
-- costs, cash movements and any surplus.
+The declaration recorded assets of **€21,603,513.82** and liabilities of **€10,186,394.72**. The historical insolvency test concerned regular ability to meet due obligations. A stated asset surplus does not by itself disprove a liquidity insolvency; equally, liquidity pressure does not establish that every bank calculation was correct or that filing was the only rational route.
 
-A difference between a later expert figure and the concursal recognition may matter to the insolvency accounting without deciding the separate Valencia claim.
+Contemporaneous privileged advice identified refinancing, voluntary suspension by the lender and a timely insolvency declaration. Publicly state only that the filing had a time-critical defensive rationale and that more than one route was considered. Negligence and causation remain privilege-sensitive and unresolved.
 
-## 6. Extraconcursal perimeter
+## 3. Separate legal and accounting lanes
 
-The following propositions must remain distinct:
+### 3.1 Valencia banking and financial-product lane
 
-- LPB was the debtor and held its own property and rights.
-- Matkator was a separate owner and was not in Concurso 36/2012.
+Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, remains pending, with trial presently recorded for January 2027. It tests the original banking/financial-product relationship and successor responsibility.
+
+### 3.2 Concursal credit and accounting lane
+
+A controlled comparison identifies a **€517,750.04** difference between one expert principal figure and the amount recognised by the insolvency administrator. This requires reconciliation but does not automatically decide the separate Valencia claim.
+
+The full bridge must connect principal, interest, linked products, pledged funds, cure and acceleration amounts, recognised credit, assignments, execution, the €400,000 transaction, dación, cancellation, satisfaction and any residual or surplus.
+
+## 4. Extraconcursal perimeter
+
+The following propositions remain distinct:
+
+- LPB alone was the debtor in Concurso 36/2012.
+- Matkator was not a debtor.
 - The Comunidad de Explotación del Complejo Sun Park was a separate operating structure.
-- The community of owners was a separate collective-governance layer.
-- Individual owners and third parties held their own units and rights.
-- Bookings, customer relationships, distribution systems, goodwill and operating know-how were economic objects distinct from the registered real estate.
+- The community of owners and individual proprietors held separate rights.
+- Customer records, bookings, direct-distribution systems, brand, goodwill and operating know-how were economically distinct from the registered apartments.
 
-Any alleged effect of the insolvency administrator's or court's conduct on non-debtors must therefore be traced through a specific legal act, omission, approval, notice, order, accounting decision or failure to protect. Formal concursal capacity is not interchangeable with whole-hotel authority.
+Any alleged responsibility of the insolvency administrator, judge, LAJ or other institutional actor for non-debtor harm must be proved through a specific duty, notice, legal capacity, act or omission, causal effect and available corrective measure.
 
-## 7. Direct-to-market platform
+## 5. Direct-market platform
 
-The connected email and file review supports publication of the following restrained proposition:
+The source set supports publication that a direct-market platform existed and had economic substance. It supports direct bookings, residents, repeat customers, medium/long stays, call handling, sales reporting, booking/payment systems, customer reactivation and external-operator negotiation.
 
-> Faced with serious internal ownership and operating conflict, Gil Marer and the Aweswell management team developed a direct-to-market route that reduced dependence on conventional tour operators. The preserved business record supports direct reservations, repeat-customer and resident marketing, call-handling and conversion processes, sales reporting, booking and payment records, presentations and negotiations with external operators.
+The source set does not yet support:
 
-The following stronger proposition is not yet established:
+- that every tour operator rejected Sun Park solely because of Monte Lanza/Molina interference;
+- a complete operator-by-operator loss model;
+- a final valuation of customer data, goodwill, forward bookings or channel architecture; or
+- attribution of all resulting loss to a single lender, minority actor, adviser, insolvency actor, judicial act or later private actor.
 
-> Every tour operator refused or withdrew solely because of the Monte Lanza/Molina dispute.
+## 6. Locked public corrections
 
-That causal question requires native operator correspondence, dates, inventory decisions, commercial terms, cancellation/decline reasons and a period-by-period revenue bridge.
+1. **158**, not 166, is the primary 15-May-2012 auction-schedule count.
+2. Acquisition/publicity chronology is 1 Dec / 2 Jan / 3 Jan / 11 Jan / 14 Feb.
+3. €940,737.53 and €54,653.80 are different bank measures.
+4. Asset surplus and liquidity insolvency are not interchangeable.
+5. Filing was a time-critical defensive route; negligence is not established.
+6. The direct-market structure is documented by February 2012.
+7. LPB, Matkator, the Community of Exploitation and the community of owners are not interchangeable.
+8. Valencia banking liability and concursal credit reconciliation remain separate.
 
-## 8. Website changes authorised by this scan
+## 7. Remaining source-completion priorities
 
-1. Replace the English and Spanish lender-of-record pages with a broader banking-origin chapter.
-2. Remove the current Valencia defendant's full corporate name from those public pages.
-3. State the 2012 enforcement, auction and filing chronology with evidence-status labels.
-4. Treat alleged error in the default premise and alleged defects in the professional advice as allegations and unresolved questions.
-5. Separate the banking claim from the concursal-credit/accounting reconciliation.
-6. Add the staged Aweswell/Multimatrix chronology and the 3 January 2012 corporate-publication date.
-7. Add the minority-interference/direct-market trading platform and its causation caveat.
-8. Reaffirm that LPB, Matkator, the Community of Exploitation and the community of owners were not interchangeable.
-9. Add a bilingual bridge into the existing Community-instrumentalisation pages.
-10. Preserve rights of reply, correction and contradiction.
+- native 2011 default notice and complete bank ledgers;
+- original loan, novation, linked-product and pledged-funds instruments;
+- complete Mortgage Execution 90/2012 file;
+- property-by-property 158/159/166 reconciliation;
+- complete Aweswell–Monterecco–Multimatrix acquisition/control/finance file;
+- privilege-reviewed advice and decision chronology;
+- every later conclusion/reversal/narrowing application and response;
+- operator-by-operator contracts, bookings, payments and decline reasons;
+- complete Valencia public-safe pleadings/expert reports/status proof;
+- reproducible credit/value bridge; and
+- act-by-act institutional duty–knowledge–capacity–causation matrix.
 
-## 9. Source-completion queue
+## 8. Publication standard
 
-The following items remain necessary:
+Use consistently:
 
-- native 2011 arrears/default notice and complete account statements;
-- grace-period, account-closure, amortisation and pledged-funds records;
-- complete mortgage-enforcement file, including the initiating pleading, title, calculations, service and auction record;
-- complete 2011–2013 Multimatrix/Aweswell/LPB ownership, control, power and management chain;
-- privileged professional-advice file, reviewed before any public use;
-- complete record of later efforts to conclude, reverse or narrow the insolvency and every institutional response;
-- public-safe current Valencia pleadings, orders and procedural-status proof;
-- full accounting bridge from original principal through recognition, assignments, execution, dación, cancellation and surplus;
-- native tour-operator, booking, PMS, channel, call-handling, sales and customer records sufficient to quantify the direct-market platform;
-- evidence linking specific minority acts to specific operational and distribution losses;
-- act-by-act duty, knowledge, capacity, causation and corrective-power matrix for the insolvency administrator and court;
-- title, income and control mapping for Matkator, the Community of Exploitation and other non-debtor interests.
-
-## 10. Publication standard
-
-Use the following labels consistently:
-
-- VERIFIED FACT;
+- VERIFIED FACT — PRIMARY DOCUMENT;
+- VERIFIED FACT — PUBLIC OFFICIAL SOURCE;
+- EVIDENCE-SUPPORTED INFERENCE;
 - PARTY ALLEGATION;
-- EVIDENCE-BASED INFERENCE;
+- CONTRADICTED OR DISPUTED PROPOSITION;
 - UNRESOLVED QUESTION;
 - SOURCE-COMPLETION REQUIREMENT.
 
-Do not convert a party allegation into a finding. Do not call a contested institutional act neutral merely because it was procedurally formal. Do not imply that the existence of Concurso 36/2012 placed the whole hotel under concursal control.
+Do not convert a party allegation into a finding. Do not call a formal banking or judicial act neutral without testing its substantive effect. Do not imply that Concurso 36/2012 placed the whole hotel under concursal control.
