@@ -71,11 +71,14 @@
   // Verified 28-Jul-2026 AGE/RedSARA presentation in CGPJ Alzada 286/2026; presentation is not examination or merits.
   load('cgpj-alzada-regage-20260816.js?v=20260816a');
 
-  // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk, €3.032m allegation, then the June-2026 Fiscalía EG49 response decrees and unanswered textual question.
+  // Calificacion: current appellate status and first-person accountability opening, source-complete AC crosswalk,
+  // €3.032m allegation, judicial-adoption/private-actor-effect bridge, then the June-2026 Fiscalía EG49 response decrees.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-report-radical-transparency-20260816.js?v=20260816a', () => {
       load('calificacion-3032010-fabrication-allegation-20260816.js?v=20260816a', () => {
-        load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+        load('calificacion-judicial-adoption-private-actor-bridge-20260816.js?v=20260816a', () => {
+          load('calificacion-fiscal-eg49-response-20260816.js?v=20260816a');
+        });
       });
     });
   });
