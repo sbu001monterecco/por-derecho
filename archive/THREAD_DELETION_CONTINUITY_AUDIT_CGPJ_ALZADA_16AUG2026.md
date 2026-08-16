@@ -42,7 +42,7 @@ The governing June chronology is now:
 - `archive/CORRECTION_REGISTER.md` — CR-033 to CR-035.
 
 ## Public propagation
-Updated in the canonical implementation branch:
+Updated and merged:
 
 - `es/mensaje-abierto-cgpj/index.html`
 - `en/open-message-cgpj/index.html`
@@ -67,10 +67,12 @@ Obtain the complete administrative index/current file for Alzada 286/2026 and id
 5. the actual treatment of the 28-Jul five-file package; and
 6. the current/final reasoned appellate decision.
 
-## Implementation state at canonical branch creation
-Safe branch: `cgpj-alzada-chronology-clarification-16aug2026-v2`  
-Base main SHA: `2218fe87569bc194c85f75edb56e568d4a434f3f`.
+## Implementation and deployment completion
+Safe implementation branch: `cgpj-alzada-chronology-clarification-16aug2026-v2`.  
+Safe branch base at creation: `2218fe87569bc194c85f75edb56e568d4a434f3f`.
 
-An earlier working branch based on `d2e0a440ea206b2a0a10c8288e5d8b1bef437b8b` was deliberately superseded without merge after `main` advanced concurrently. The `v2` branch was rebuilt from the then-current `main` so intervening repository changes would not be overwritten.
+An earlier working branch based on `d2e0a440ea206b2a0a10c8288e5d8b1bef437b8b` was deliberately superseded without merge after `main` advanced concurrently. The `v2` branch was rebuilt from then-current `main` so intervening repository changes would not be overwritten.
 
-This audit is not complete until the safe branch is reviewed, merged through a PR and GitHub Pages deployment of the merge revision is verified.
+PR **#174** was reviewed and merged as `e55d7367c3527e30f744760e66944836d22fec83`. GitHub Pages build **1155375641** built that exact merge SHA successfully with no error, created 17:48:07Z and completed 17:48:33Z on 16 August 2026. The Spanish clarification page was then re-read from `main` and contained the corrected 14-May / 15-Jun / 18-Jun / 15-Jul / 28-Jul chronology and evidential limits.
+
+Thread-deletion continuity for this CGPJ chronology update is therefore **complete as to repository preservation, public-source propagation and exact-SHA deployment verification**. It is not evidentially complete as to the still-missing Alzada administrative index, treatment of the 28-Jul package or final/current appellate decision.
