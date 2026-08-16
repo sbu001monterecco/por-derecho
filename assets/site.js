@@ -122,8 +122,9 @@
   // Calificacion/recovery: documented positive-agency chronology and reciprocal recovery-through-adversity bridge.
   load('calificacion-recovery-through-adversity-20260816.js?v=20260816a');
 
-  // Calificacion/recovery: force the contemporaneous rescue/finance/operation/protection counter-record into the public reading order.
-  load('calificacion-documentary-counter-record-20260816.js?v=20260816a');
+  // Calificacion/recovery: unitary commercial normalisation / refinancing / hotel-operation / exit counter-record.
+  // Preserves ONA↔Clubotel entity separation, VSO conditionality and the actor-specific causation boundary.
+  load('calificacion-documentary-counter-record-20260816.js?v=20260816c');
 
   // Calificacion: surface the verified 2017 court-record rescue filing and the 2018 reported direct judicial notice on the ES/EN landing pages and detail routes.
   load('calificacion-prior-judicial-knowledge-20260816.js?v=20260816b');
