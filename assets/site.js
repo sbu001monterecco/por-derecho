@@ -139,4 +139,9 @@
     // signed Tenerife Diligencias 20/2026 decree and signed Valencia EG 19/2026 inhibition.
     load('calificacion-primary-source-closures-20260816.js?v=20260816a');
   });
+
+  // Cross-site unitary allegation: the same Sun Park/MYND hotel, assets, works, value and employment
+  // across Concurso, Comunidad, RICPE/RIC, HNT, GC/836/P06, FEDER and current operation.
+  // States the allegation strongly while preserving its status as a substantiated allegation rather than an adjudicated finding.
+  load('same-asset-multiple-financial-lives-20260816.js?v=20260816a');
 })();
