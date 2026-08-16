@@ -16,8 +16,9 @@ A future Project Sun Rock / Por Derecho thread must read this gate whenever the 
 4. `archive/CALIFICACION_RECOVERY_CANONICAL_ACTIVATION_16AUG2026.md`
 5. `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md`
 6. **`archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md`** — later source-completion layer controlling where it adds the August executed binding term sheet, staged-security proof, multi-route financing clarification and 2008→2011→2014 ownership wording.
-7. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` where Judge/AC notice is material.
-8. Relevant primary Gmail/Drive/File Library sources; repository summaries do not replace them.
+7. **`archive/ONA_FINANCE_CONDITIONS_STAGED_SECURITY_POSITION_16AUG2026.md`** — controls the distinction between Gil/Aweswell's position that the conditions were capable of being met / security could be delivered in stages, what the recovered transaction documents independently verify, and the still-open route-by-route condition-performance ledger.
+8. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` where Judge/AC notice is material.
+9. Relevant primary Gmail/Drive/File Library sources; repository summaries do not replace them.
 
 ## Controlling vocabulary
 
@@ -48,6 +49,16 @@ The controlled evidence supports:
 For ordinary public communication, **do not identify the lenders merely to prove that finance routes existed**. Lender identity and confidential pricing/covenants should remain in the private evidence corpus unless materially necessary to a later legal or public proposition.
 
 Do not upgrade `parallel and successive finance routes` into `multiple unconditional committed standby facilities` unless the exact native instruments prove that stronger status.
+
+## Conditions / staged-security source-status rule
+
+The project must preserve three distinct layers:
+
+1. **VERIFIED TRANSACTION STRUCTURE:** provisional/interim security before exit; executed later term sheet separating closing security from post-exit LPB mortgage/security; continued financing/security-document work.
+2. **GIL MARER / AWESWELL PARTY POSITION:** the conditions were capable of being met and the required security could be delivered progressively as the transaction advanced; staged collateral is ordinary commercial structuring and should not be misdescribed as absence of finance.
+3. **OPEN PERFORMANCE LEDGER:** the exact date and status of every condition precedent, security delivery/execution, waiver, lender approval, court/AC output, final facility, drawdown, expiry or non-completion reason for each route.
+
+Do not silently upgrade layer 2 into layer 1. Equally, do not erase the documented staged-security architecture merely because the route-by-route completion ledger remains open.
 
 ## Staged-security rule
 
@@ -107,4 +118,4 @@ Do not create duplicate missing-evidence entries merely because this gate exists
 
 ## Continuity rule
 
-A fresh thread that discusses the June-2018 exit attempt, ONA, lender readiness, staged security, minority-unit normalisation or the 2008 sale without reading this gate and the later ONA canonical ledger is incomplete.
+A fresh thread that discusses the June-2018 exit attempt, ONA, lender readiness, staged security, minority-unit normalisation or the 2008 sale without reading this gate, the later ONA canonical ledger and the finance-conditions/staged-security position control is incomplete.
