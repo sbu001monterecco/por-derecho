@@ -19,13 +19,19 @@ Before reusing or continuing **any allegation whose causal period reaches 7 June
 
 `archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
 
+and, for criminal/extraconcursal/instrumentalisation framing, also read:
+
+`archive/CALIFICACION_EXTRACONCURSAL_FORCE_AUTHORITY_LAUNDERING_ALLEGATION_16AUG2026.md`
+
 Controlled proposition:
 
 - Construcciones Acosta Matos, S.A. was already a recognised holder of the relevant mortgage-credit amounts before the 7-Jun-2018 control event;
 - current repository control treats **7 June 2018 as a de facto material/access/operational-control threshold, not a title date**;
 - no reviewed whole-hotel judicial delivery/order authorising whole-hotel legal possession on that date has been located;
 - `lender in possession` may be used only as a **functional comparison** (`secured creditor + de facto material control`), never as a claimed Spanish statutory office/status or synonym for ownership;
-- CR-018 remains controlling: full practical possession of the hotel as a whole is Gil Marer's allegation/inference and exact finca-by-finca reach remains open.
+- CR-018 remains controlling: full practical possession of the hotel as a whole is Gil Marer's allegation/inference and exact finca-by-finca reach remains open;
+- **LPB was the insolvency debtor; the whole mixed-ownership Sun Park hotel/business was not thereby the debtor or automatically part of LPB's estate**;
+- Gil Marer now expressly alleges that the 2018 control event was illegal, fraudulent, unauthorised, forcible and functionally clandestine, and that limited LPB concursal authority was instrumentalised as a bridge to extra-concursal private control. Those criminal/legal characterisations remain `PARTY ALLEGATION / LEGAL HYPOTHESIS`, not adjudicated fact.
 
 For every post-threshold allegation add the finite capacity test:
 
@@ -33,10 +39,27 @@ For every post-threshold allegation add the finite capacity test:
 
 Do not attribute a post-7-Jun omission, lost revenue, deterioration, failed rescue step or operating result to Gil/LPB without first identifying what remained within Gil/LPB's practical control and what depended on the AC, CAM, security, an operator, the Community or another separately proved actor. Conversely, do not use the control event to erase adverse conduct that remained genuinely within Gil/LPB's power.
 
+### Mandatory authority-perimeter test
+
+Where an AC/Fiscal/Judge proposition uses an event that crossed the physical hotel or business perimeter, add:
+
+`LPB ESTATE POWER → EXACT AUTHORITY DOCUMENT → EXACT FINCA/RIGHT → PRIVATE IMPLEMENTATION → EXTRA-CONCURSAL EFFECT → LATER INSTITUTIONAL USE`.
+
+The audit must ask whether an LPB-derived power was expressly limited to LPB or was represented/used as though it authorised control over Matkator, other owners, CEXP/business rights, common areas or the hotel as an operating whole.
+
+### Mandatory circularity test
+
+For any calificación proposition later reused against Gil/Aweswell while they sought investigation of the AC/CAM perimeter, apply:
+
+`SOURCE-SIDE AC FRAME → FISCAL ENDORSEMENT → LATER FISCAL/JUDICIAL RELIANCE → EFFECT ON COMPLAINANT CREDIBILITY → PRIVATE/INSTITUTIONAL BENEFIT TO BE PROVED`.
+
+The controlled example is the documented sequence in which the 12-Mar-2019 adverse Fiscal calificación position preceded the 7-May-2019 DI 248 archive, whose reasoning expressly invoked that `este Ministerio` had already treated the insolvency as culpable and Gil as responsible. This supports an institutional circularity/anchoring question; it does not by itself prove personal collusion or criminal intent.
+
 **Master-storyline effect:** this does **not** change the controlled chronology or CR-018. It upgrades the legal/causal reading of an existing storyline node: `creditor status before control → de facto control threshold → later suspension → later adjudication/title`, and requires the same pre/post-control split across the calificación, preservation, rescue, valuation, bidding/accounting and extra-concursal ownership tracks.
 
-Public module:
-`assets/calificacion-2018-creditor-material-control-20260816.js`
+Public modules:
+- `assets/calificacion-2018-creditor-material-control-20260816.js`
+- `assets/extraconcursal-force-authority-laundering-20260816.js`
 
 ## Completed
 
@@ -124,7 +147,19 @@ The phrase `Community hijacking` remains a party characterisation. Public-safe w
 
 `Community debt/vote/governance → exploitable inventory → occupancy/revenue → costs and set-offs → LPB/Pink cash → AC knowledge and action → security/access authority → Community implementation → private-owner use/benefit → operational effect → realistically recoverable rent → specific insolvency aggravation`.
 
-For any consequence at or after 7-Jun-2018, apply the mandatory control/capacity baseline above. Do not substitute later title for earlier authority, and do not treat a protective Community/security explanation as disproved merely because the same mechanism may also have produced practical control effects.
+For any consequence at or after 7-Jun-2018, apply the mandatory control/capacity and authority-perimeter baselines above. Do not substitute later title for earlier authority, and do not treat a protective Community/security explanation as disproved merely because the same mechanism may also have produced practical control effects.
+
+### Current first-person extraconcursal / criminal overlay
+
+Gil Marer alleges that the same 2018 security/access mechanism amounted in its real-world effect to illegal, fraudulent, unauthorised, forcible and functionally clandestine private control of a mixed-ownership hotel outside the LPB estate perimeter, and that limited AC authority was then used or later relied upon as part of a circular institutional legitimation of that result.
+
+That allegation **does not replace** the adverse/counterevidence above. In particular:
+
+- the AP/DP1132 civil/lawful alternative explanation remains visible;
+- José Daniel's denial of forced/clandestine access remains visible;
+- literal physical handover of every hotel key by the AC is not yet verified;
+- private/institutional criminal intent must be established actor by actor;
+- the allegation must be tested against the exact 18-May authority, 7-Jun implementation, finca map, security/locksmith evidence and later institutional use.
 
 ## Allegation 03 closure gate — do not advance yet
 
@@ -139,8 +174,10 @@ Before moving to Allegation 04, preserve and, where obtainable, complete:
 7. exact CAM Community payments/liquidity dates, amounts and use of funds;
 8. PMS/occupancy/ADR/receipts and operating-cost evidence sufficient to allocate causation rather than assert a sole cause;
 9. complete 24-Nov-2015 judgment / 6-Sep-2016 execution quantum bridge;
-10. exact AC investigation/reconciliation record concerning the Community allegations he had received; and
-11. deployment verification of the unitary public module and Community cross-link.
+10. exact AC investigation/reconciliation record concerning the Community allegations he had received;
+11. exact order/title/consent asserted to authorise each material access/possession step on 7-Jun-2018, especially any claimed whole-hotel authority;
+12. evidence-before-Fiscal / evidence-before-Judge transmission map for the later circularity/legitimisation allegations; and
+13. deployment verification of the unitary public module, Community cross-link and extraconcursal-force allegation module.
 
 ## QUEUED AFTER A03 CLOSURE
 
