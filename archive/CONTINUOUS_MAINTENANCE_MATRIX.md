@@ -14,7 +14,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | Mercantil nº1 / judge | ES/EN court and judge pages | judicial knowledge matrix | LIVE | complete 2020–22 evidence-before-court matrix; primary orders |
 | Administrador Concursal | ES/EN AC page | AC accounting bridge | LIVE | reproducible credit→interest→€400k→dación→cash→sobrante accounting bridge |
 | AP Las Palmas Sección 4ª | ES/EN appellate page | appellate track | LIVE | full RPL 2523/2025, 3304/2025, 3319/2025 transmitted records/current status |
-| CGPJ / judicial governance | `/es/mensaje-abierto-cgpj/` + `/en/open-message-cgpj/` | CGPJ governance protocol + issues/verification register | LIVE / evidence-first | complete DI 169/2026 administrative record; Alzada 286/2026 current/final decision; identify what was actually examined; any Promotor/Inspection/Comisión Permanente reports |
+| CGPJ / judicial governance | `/es/mensaje-abierto-cgpj/` + `/en/open-message-cgpj/` | `archive/CGPJ_DI169_ALZADA286_VERIFIED_CHRONOLOGY_16AUG2026.md` + CGPJ governance protocol + issues/verification register + 28-Jul traceability control | LIVE / **14-May archive verified; 15-Jun formal appeal presentation distinguished from 18-Jun CGPJ entry; Alzada 286/2026 processing confirmed; 15-Jul filing joinder positively confirmed; 10-Jul Promotor act correctly treated as maintaining 14-May archive; 28-Jul five-file supplement presentation verified; substantive 28-Jul treatment/final decision not located** | obtain complete Alzada 286/2026 administrative index/current-final decision; filing-by-filing incorporation and examination; any Promotor/Inspection/Comisión Permanente reports; treatment of `REGAGE26e00069061338` |
 | Sun Park material control / practical possession / predecessor continuity | `/es/toma-control-sun-park-7-junio-2018/` + `/en/sun-park-takeover-7-june-2018/` and Community/Acosta Matos pages | `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md` + `archive/SUN_PARK_CONTROL_CONTINUITY_REPOSITORY_SITE_PLAN_15AUG2026.md` | LIVE / **Q4-2017 correction locked; 7-Jun de facto control separated from legal title; full practical possession attributed as allegation** | ME-041–050; create control/predecessor/access ledgers; complete DP 1132/Auto 804 and security/locksmith records; first public PR strengthens takeover page with static ES/EN three-threshold chronology |
 | Sun Park digital identity / Google | hub `/es/identidad-digital-sun-park-google-mynd/` + `/en/sun-park-digital-identity-google-mynd/`; standalone incident routes for 2019 `sunpark264` and 2021–22 Lourdes/MYND | `archive/SUN_PARK_DIGITAL_IDENTITY_LOURDES_GOOGLE_LEDGER_16AUG2026.md` + CR-031 | LIVE / **two separate-but-connected incident dossiers; combined route reduced to index** | native Google account/recovery records for `sunpark264@gmail.com` and `mynd.hotels@gmail.com`; RFC822/headers; request IDs; IP/device/session history; documentary authority and instruction chain |
 | Sun Park → Lava Verde → Club Sei / Meeting Point | `/es/lava-verde-club-sei-meeting-point/` + `/en/lava-verde-club-sei-meeting-point/` | `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md` + `archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md` | LIVE / **pre-title project + public brand/commercial linkage documented; contract/entity/flows open** | ME-049: exact Meeting Point entity and contract; 279-room title/authority map; pilot contracts/access; inventory/bookings/payments; 357/2024 debtor schedules and Auren preservation/disclosure file |
@@ -37,53 +37,3 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | CCCA / Consejo Canario de Colegios de Abogados | institutional records / appellate professional track | professional track | BUILD NEXT / user-reported status: no Council communication received as at 16 Aug 2026 | Exp. 193/2026 full appeal/status; incorporate any Council communication only when source-verified |
 | COA Lanzarote / COAGC | professional records | architecture-professional track | BUILD NEXT | complete visado/mandate/authority/archive chain |
 | Books / publishing | `/en/books/`, `/es/libros/` | `archive/book/` living files | LIVE / separate editorial system | keep evidence→book intelligence→manuscript layers separate |
-
-## Controlling cross-track rule — updated 16 Aug 2026
-
-Do not describe the Sun Park / MYND Yaiza patrimonial problem as merely historical or merely concursal where the evidence requires a wider frame. Maintain three separate-but-connected planes:
-
-1. **concursal** — LPB estate/value/income/payment/remedy;
-2. **extraconcursal** — Matkator and third-party property/possession/access/use/works/fruits/value/remedy outside LPB's estate;
-3. **cross-border/transnational** — Aweswell/foreign-investor value, capital, financing, recovery, costs and remedies crossing Spain's border.
-
-Also trace the separate public-finance layers: RICPE/private RIC capital → RIC fiscal/idoneity → regional incentives → **FEDER** → controls/current operation. Do not collapse these layers or infer double funding, subsidy fraud or EU-budget loss without source-specific proof.
-
-### Banking-origin correction
-
-The primary 15-May-2012 Arrecife diligence in Mortgage Execution 90/2012 schedules **158 properties**, not 166. Preserve 159 and 166 only as different later/secondary measurements pending a finca-by-finca reconciliation. Distinguish the acquisition/publicity sequence—1-Dec purchase, 2-Jan director decision, 3-Jan Spanish publicity deed, 11-Jan Registry presentation and 14-Feb official registry/BORME data—and do not merge the lender's global €940,737.53 figure with the separate €54,653.80 cure figure. The non-privileged chronology supports a time-critical defensive rationale, but lender error, professional negligence and institutional causation remain open and source-dependent; advice content is not published.
-
-### Entity-identity correction
-
-Maintain two legally separate name-continuity chains:
-
-1. **United Kingdom:** Monterecco Sun Park Limited → Aweswell Limited, one continuous company, no. 07716847, name change effective 3-Jun-2014.
-2. **Spain:** Monterecco Sun Park, S.L./S.R.L. → Pink Canary Services, S.L./S.L.U., one continuous Spanish company, NIF B76564517. The signed company book records the name change on 30-Sep-2013; the original notarial deed, exact Registry inscription and BORME name-change publication remain open.
-
-Do not infer a transfer, novation, successor company or successor operator from either name change. Do not merge the UK and Spanish legal persons. `S.L.U.` denotes single-member status, not a separate company.
-
-### Material-control correction
-
-Formal title is one date; practical control has its own chronology. The first currently located specifically dated physical-incursion lead is 2 October 2017/Q4. From 7 June 2018, distinguish source-supported de facto access/operational control from Gil Marer’s allegation of full practical possession and from unproved whole-hotel legal possession. Predecessor continuity must be tested as knowledge/adoption/use/escalation/benefit, not assumed personal succession.
-
-### Orion correction
-Do **not** reduce Orion to “platform continuity / no money flow”. The controlled record establishes RICPE as Orion's 100% founder/sole initial shareholder, an express RICPE convertible participating-finance architecture, AGM strategic/asset management, and a related-person perimeter reconnecting JDAM with FMMM, Pamalexsha, Shaila and Antonio—persons/entities already active in Sun Park.
-
-The remaining financial question is narrower and asset-specific: whether identifiable Sun Park/MYND/LPB/Matkator proceeds, fees, dividends, guarantees, security, refinancing capacity, assets/rights or other value entered the RICPE→Orion channel. Prove or exclude that with primary financial records.
-
-Do not use “no conspiracy finding” as a headline that obscures documented network facts. Criminal, civil and regulatory characterisation must remain offence/cause-of-action specific.
-
-Temporal control: **historical originating act ≠ extinguished consequence**. Audit through present title, Registry, possession/access, works, exploitation, revenue, value, financing/support conditions and remedies.
-
-## Serial-reliance control — 15 Aug 2026
-
-Where multiple institutions or professional gatekeepers act in sequence, ask what each independently checked against the underlying asset/right source. Do not treat later formalisation, registration, tax idoneity, supervisory status, grant/FEDER decision, market admission or operational contract as automatic validation of every upstream factual premise.
-
-## Recovery-control rule — 15 Aug 2026
-
-Across AC, court/judge, LAJ, private-actor and institutional tracks, use `GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` as the strategic parent. The public and internal question is not punishment as an autonomous objective; it is what must be proved, corrected, restored, accounted for or compensated to recover the lawful patrimonial position. Accountability remains actor-specific and evidence-dependent.
-
-## Maintenance rules
-- `LIVE` means a public route exists; it does not mean evidentially complete.
-- Update the row after substantive new evidence, correction, major filing, public-page change or current-status change.
-- Missing evidence belongs in `archive/MISSING_EVIDENCE_REGISTER.md`; corrections belong in `archive/CORRECTION_REGISTER.md`.
-- Do not infer that a missing item does not exist merely because it is absent from the reviewed corpus.
