@@ -5,15 +5,15 @@
 
 ## 1. Universal continuity conclusion
 
-**DELETION-SAFE WITH OPEN EVIDENCE — once the accompanying branch is merged to `main`.**
+**DELETION-SAFE WITH OPEN EVIDENCE — conditional only on PR #285 being merged to `main`.**
 
-The thread created material project intelligence and therefore required canonical preservation. The material content has been captured in:
+The thread created material project intelligence and therefore required canonical preservation. The material content is captured in:
 
 - `archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md`;
 - this audit;
-- a `CHATGPT_START_HERE.md` retrieval-gate update on the same branch.
+- the new mandatory retrieval gate in `CHATGPT_START_HERE.md`.
 
-Until the branch/PR is merged, the implementation state remains **PROPOSED / NOT YET CONTROLLING MAIN**.
+PR **#285**, `Add Sun Park acta authority-lineage visual control`, is the publication vehicle for those repository changes. Until merge, the branch content is not controlling `main`.
 
 ## 2. Material intelligence created in this thread
 
@@ -92,24 +92,27 @@ No private primary evidence was copied into GitHub in this thread.
 
 The repository stores the analytical/retrieval architecture and source-status rules. Future threads requiring the actual native documents must re-query lawful primary-source systems (Drive, Gmail, File Library, certified court/Community/Registry files or other connected sources) rather than reconstruct them from conversational memory.
 
-## 6. Implementation state
+## 6. Implementation state and diff audit
 
-Branch created:
+Branch:
 
 `agent/acta-authority-legitimacy-visual`
 
-Files created on branch:
+PR:
+
+`#285 — Add Sun Park acta authority-lineage visual control`
+
+Files in scope:
 
 - `archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md`;
-- `archive/THREAD_DELETION_CONTINUITY_AUDIT_ACTA_AUTHORITY_CAPTURE_17AUG2026.md`.
+- `archive/THREAD_DELETION_CONTINUITY_AUDIT_ACTA_AUTHORITY_CAPTURE_17AUG2026.md`;
+- `CHATGPT_START_HERE.md`.
 
-Planned on same branch:
+The PR diff was inspected before merge. The first replacement of `CHATGPT_START_HERE.md` accidentally removed the existing Deployment gate, Security boundary and one-line bootstrap prompt. The diff review caught that regression before merge. Those controls were restored, and the ACTA authority retrieval rule was added to both the numbered startup gate and the one-line bootstrap.
 
-- update `CHATGPT_START_HERE.md` with a direct mandatory retrieval gate for ACTA/Community authority work;
-- open PR to `main`;
-- inspect diff before merge.
+Current intended diff therefore preserves all pre-existing startup, deployment, security and continuity controls while adding this new ACTA authority gate.
 
-No website page is claimed to have been changed by this thread unless separately implemented and deployment-verified.
+No public website page is changed in PR #285. No Pages deployment is claimed or required for this repository-only control change.
 
 ## 7. Fresh-thread recovery path
 
@@ -126,7 +129,7 @@ A fresh ChatGPT can recover this thread's material intelligence by reading, in o
 
 ## 8. Deletion-safe test
 
-If this conversation disappeared after merge, a fresh thread would retain:
+If this conversation disappeared after PR #285 merges, a fresh thread would retain:
 
 - the visual strategy;
 - the 2008→2011→2022 authority-lineage framing;
@@ -136,6 +139,6 @@ If this conversation disappeared after merge, a fresh thread would retain:
 - the ACTA X-RAY fields;
 - the existing canonical source/gap references;
 - the open evidence priorities;
-- the implementation state.
+- the implementation and diff-audit state.
 
-Therefore the thread is not dependent on conversational memory once merged.
+Therefore the thread is not dependent on conversational memory once PR #285 is merged.
