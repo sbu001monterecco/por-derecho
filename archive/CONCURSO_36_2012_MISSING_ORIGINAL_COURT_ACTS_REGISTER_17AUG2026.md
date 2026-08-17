@@ -3,15 +3,28 @@
 **Control date:** 17 August 2026  
 **Purpose:** convert every unresolved court/LAJ source into an explicit retrieval target rather than inferring content from later summaries.
 
-## Priority 1 — closure blockers
+## Batch A pass 2 — P1 items closed from Gmail-controlled court copies
+
+The following items were P1 gaps in closure pass 1 and are **no longer missing-original targets**:
+
+| Act / date | Recovered source | Signatory | Notification | Status |
+|---|---|---|---|---|
+| 06-Jun-2012 opening Auto | `AUTO Declaración Concurso LPB - DocExp 1997-14150 08junio2012.pdf`, Gmail message `163d0e6f6da5d4ed`, 9 pages | **Alberto López Villarrubia** | contemporaneous copy/stamps show receipt 08-Jun-2012 and notification 11-Jun-2012 | `COMPLETE — OFFICIAL / COURT COPY` |
+| 20-Jan-2017 Auto modifying definitive texts re Comunidad de Propietarios | `AUTO Modificación Textos Definitivos CDAD PROP 26JAN2017.pdf`, Gmail message `163d0e6f6da5d4ed`, 2 pages | **Juan Avello Formoso** | `NOTIFICADO 26/01/2017 ABOGADO JUAN TOMAS PARRILLA SUAREZ` | `COMPLETE — OFFICIAL / ELECTRONIC COURT COPY` |
+| 22-Mar-2017 Auto ending common phase / opening convenio / calling creditors' meeting | `Adjunto1(6)(22Marzo2017).pdf`, Gmail message `163d0e6f6da5d4ed`, 2 pages | **Alberto López Villarrubia** | `NOTIFICADO 27/03/2017 ABOGADO JUAN TOMAS PARRILLA SUAREZ` | `COMPLETE — OFFICIAL / ELECTRONIC COURT COPY` |
+| 05-May-2017 Auto fixing definitive AC remuneration | `AUTO honorarios AC definitivos fase común 05MAY2017.pdf`, Gmail message `180a478bb45959fe`, 2 pages | **Alberto López Villarrubia** | `NOTIFICADO 10/05/2017 ABOGADO JUAN TOMAS PARRILLA SUAREZ` | `COMPLETE — OFFICIAL / ELECTRONIC COURT COPY` |
+| 19-Dec-2017 Auto opening liquidation | `DOCUMENTO Nº1 Notificacion Auto Apertura Liquidacion 26DIC2017.pdf`, Gmail message `19e7ee756d18c96f`, 3 pages | **Juan Avello Formoso**; electronically signed copy also identifies LAJ Eduardo José Rebollo Sanz | `NOTIFICADO 26/12/2017 ABOGADO JUAN TOMAS PARRILLA SUAREZ` | `COMPLETE — AUTHENTIC ELECTRONIC COURT COPY` |
+
+### Date/filename correction preserved
+
+The attachment labelled `...26JAN2017.pdf` is **not** a 26-Jan judicial act. The Auto itself is dated **20-Jan-2017**; 26-Jan is the notification date. This is now a resolved filename/service-date alias, not a second act.
+
+Likewise `...26DIC2017.pdf` is the notification-labelled copy of the **19-Dec-2017** liquidation Auto; 26-Dec is the notification date, not a second judicial act.
+
+## Priority 1 — closure blockers still open
 
 | Act / date | Type | How existence/content is presently known | What is still missing | Why it matters | Retrieval status |
 |---|---|---|---|---|---|
-| 06-Jun-2012 | Auto opening concurso | historic docket workbook T.1P 77–85 + repeated later procedural references | signed/certified complete original; exact Magistrado signatory; notification | opening perimeter, AC appointment, first sections, early judicial knowledge | exact-title/date Drive search run; standalone primary not yet isolated |
-| 20-Jan-2017 | Auto | workbook T.1P 396–397 | signed original + signatory + notification | Community contingent-credit architecture | open |
-| 22-Mar-2017 | Auto | workbook T.1P 398–399 | signed original + signatory + notification | closes common phase, opens convenio, section 5 | open |
-| 05-May-2017 | Auto | workbook T.1P 957–958 | signed original + signatory | AC remuneration baseline | open |
-| 19-Dec-2017 | Auto | workbook T.1P 988–990 and Jan-2018 AC filing expressly referring to it | signed/certified original + signatory + notification | formal opening of liquidation / dissolution | exact-title/date Drive search run; standalone primary not yet isolated |
 | 16-Apr-2018 act family | at least 2 Autos | workbook identifies liquidation-plan/disposal Auto and separate clarification of 8-Feb-2018 credit-interest Auto | full signed binaries for each act; exact separate IDs/signatories | central sale/liquidation architecture; same-date conflation risk | P1 |
 | 04-Jun-2018 | Auto | workbook and 26-Jun Auto expressly reference it | complete signed binary + notification | clarifies conditions for competing offers | P1 |
 | 15-Jun-2018 | LAJ Diligencia | workbook reproduces operative content | signed LAJ source + signatory + service | publication route that later generated reposición | P1 |
@@ -30,7 +43,7 @@
 
 ## Retrieval protocol
 
-For every P1 item run at least:
+For every remaining P1 item run at least:
 
 1. Drive exact date + act type + `36/2012`;
 2. Drive distinctive operative wording;

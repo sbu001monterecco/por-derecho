@@ -1,13 +1,13 @@
 # CONCURSO 36/2012 — 100% RECOVERABLE DOCKET COMPLETION DASHBOARD
 
 **Control date:** 17 August 2026  
-**Current status:** `NOT 100% — CLOSURE PASS 1 ACTIVE`
+**Current status:** `NOT 100% — CLOSURE PASS 2 / BATCH A MATERIAL P1 FAMILY RECOVERED`
 
 ## Denominator
 
 The denominator is **not yet stable**. The discovery spine contains 600+ historical rows, but those include party filings, evidence, duplicates, external proceedings, malformed dates and multiple rows for the same act. Therefore an exact percentage would be false precision.
 
-The next denominator step is to classify and deduplicate every candidate judicial / LAJ / court-office / AP row into stable act IDs.
+The next denominator step remains classification and deduplication of every candidate judicial / LAJ / court-office / AP row into stable act IDs.
 
 ## Current closure assessment
 
@@ -15,21 +15,27 @@ The next denominator step is to classify and deduplicate every candidate judicia
 |---|---|---|
 | Historical discovery coverage 2012–2023 | **HIGH** | workbook read end-to-end; key act families identified |
 | Distinct-act denominator | **OPEN** | full row-to-act deduplication not finished |
-| Primary / official-copy digitisation | **MEDIUM, UNEVEN** | material acts located; many P1 originals still missing |
-| Exact judicial signatory verification | **MEDIUM** | Alberto is verified on several 2018/2021/2023 acts; early years remain incomplete |
-| LAJ signatory verification | **LOW–MEDIUM** | Águeda Reyes Almeida identified on some acts; full tenure/act map open |
-| Notification / service | **LOW–MEDIUM** | some notification metadata now captured; global chain incomplete |
-| Appeal / finality | **MEDIUM–HIGH on spikes** | 2018–22 major chains mapped, but not global |
+| **Batch A material P1 family 2012–2017** | **RECOVERED / PROMOTED** | 06-Jun-2012, 20-Jan, 22-Mar, 05-May and 19-Dec-2017 complete court copies recovered and source-controlled |
+| Primary / official-copy digitisation | **MEDIUM, IMPROVED** | five major early P1 blockers closed; later P1 families remain |
+| Exact judicial signatory verification | **MEDIUM–HIGH ON MATERIAL SPIKES** | early attribution now materially corrected: Alberto on 06-Jun-2012, 22-Mar and 05-May-2017; Juan Avello on 20-Jan and 19-Dec-2017 |
+| LAJ signatory verification | **LOW–MEDIUM** | 19-Dec-2017 electronic copy identifies Eduardo José Rebollo Sanz; Águeda Reyes Almeida identified on later acts; full tenure/act map open |
+| Notification / service | **MEDIUM, IMPROVED** | court-copy notification dates now captured for all five Batch A acts; underlying service receipts remain desirable |
+| Appeal / finality | **MEDIUM–HIGH on spikes** | global chain still incomplete |
 | 2023 Vista record completeness | **OPEN / MATERIAL** | certified minute, official media index, service and evidential rulings missing |
 | Official court-index reconciliation | **NOT STARTED / ASK REQUIRED** | required for strongest 100% claim |
-| Dedicated Alberto public page | **GATED** | architecture justified; completion/balance threshold not yet met |
+| Dedicated Alberto public page | **GATED** | early actor-specific attribution is stronger and fairer, but completion/balance threshold not met |
 
-## Closure-pass-1 promotions
+## Closure-pass-2 Batch A promotions
 
-1. `C36-JUD-2018-06-26-001` — complete two-page court copy verified; Alberto signatory verified; notification notation 28-Jun-2018 captured.
-2. `C36-JUD-2021-02-24-001` — **new act identity**; complete four-page court copy verified; Alberto signatory; notification 1-Mar-2021; partial Aweswell success on motivation, substantive refusal maintained.
-3. `C36-JUD-2021-05-12-001` — complete two-page Providencia verified; Alberto signatory; tender perimeter and bond captured.
-4. `C36-JUD-2019-10-24-002` — substantive extract verified and standalone Drive binary already located; full standalone digitisation still required.
+1. `C36-JUD-2012-06-06-001` — nine-page opening Auto court copy; Alberto signatory; 11-Jun-2012 notification shown.
+2. `C36-JUD-2017-01-20-001` — complete two-page texts-modification Auto; **Juan Avello Formoso**, not Alberto; 26-Jan notification.
+3. `C36-JUD-2017-03-22-001` — complete two-page convenio-opening Auto; Alberto; 27-Mar notification.
+4. `C36-JUD-2017-05-05-001` — complete two-page AC-remuneration Auto; Alberto; 10-May notification.
+5. `C36-JUD-2017-12-19-001` — complete authentic three-page electronically-signed liquidation-opening Auto; **Juan Avello Formoso**, not Alberto; 26-Dec notification.
+
+### Important chronology correction
+
+Filename dates are not automatically act dates. `...26JAN2017.pdf` is the notification-labelled copy of the **20-Jan-2017** Auto. `...26DIC2017.pdf` is the notification-labelled copy of the **19-Dec-2017** Auto.
 
 ## Same-date act families that must never be collapsed
 
@@ -57,7 +63,7 @@ A dashboard status of `100% OF PRESENTLY RECOVERABLE DOCKET ACCOUNTED FOR` requi
 
 ## Immediate next closure batches
 
-**Batch A — 2012–2017 foundation:** opening, creditor texts, convenio/liquidation transition.  
+**Batch A control:** material P1 acts previously enumerated for 2012–2017 are recovered; denominator reconciliation for the period remains open.  
 **Batch B — 2018 full act family:** credit succession, plan, clarifications, publication, suspension, insufficiency, LAJ publication acts.  
 **Batch C — 2019–2020 non-convalidation / standing / appeal family.**  
 **Batch D — 2021 tender / asset-preservation / adjudication / appeal family.**  
