@@ -25,11 +25,11 @@
           });
         });
         load('ricpe-identity-correction-20260815.js?v=20260815a', () => {
-          load('police-evidence-preservation-20260815.js?v=20260815a', () => {
-            load('police-regage-drilldown-20260815.js?v=20260815a', () => {
-              load('police-context-explainer-20260815.js?v=20260815a', () => {
-                load('book-foundation-20260815.js?v=20260815b', () => {
-                  load('books-portfolio-20260815.js?v=20260815c');
+          load('police-evidence-preservation-20260815.js?v=20260816a', () => {
+            load('police-regage-drilldown-20260815.js?v=20260816a', () => {
+              load('police-context-explainer-20260815.js?v=20260816a', () => {
+                load('book-foundation-20260815.js?v=20260816b', () => {
+                  load('books-portfolio-20260815.js?v=20260816c');
                   // Book pages now carry the authoritative locked JPG cover in their HTML.
                   // Do not load the legacy SVG router here: it overwrites the correct cover after first paint.
                 });
@@ -132,7 +132,7 @@
 
   // Calificacion/recovery: unitary commercial normalisation / refinancing / hotel-operation / exit counter-record.
   // Preserves ONA↔Clubotel entity separation, VSO conditionality and the actor-specific causation boundary.
-  load('calificacion-documentary-counter-record-20260816.js?v=20260816c');
+  load('calificacion-documentary-counter-record-20260816.js?v=20260817a');
 
   // Calificacion: surface the verified 2017 court-record rescue filing and the 2018 reported direct judicial notice on the ES/EN landing pages and detail routes.
   load('calificacion-prior-judicial-knowledge-20260816.js?v=20260816b');
@@ -158,4 +158,8 @@
   // across Concurso, Comunidad, RICPE/RIC, HNT, GC/836/P06, FEDER and current operation.
   // States the allegation strongly while preserving its status as a substantiated allegation rather than an adjudicated finding.
   load('same-asset-multiple-financial-lives-20260816.js?v=20260816a');
+
+  // ONA exit pages: unitary actor/property/exploitation map. Preserves LPB as principal property owner rather than whole hotel,
+  // Clubotel/ONA Hotels as operating anchor, Daniel Irigoyen's legal-coordinator role and Cuatrecasas' broader transaction work.
+  load('ona-unitary-actor-map-20260817.js?v=20260817a');
 })();
