@@ -79,6 +79,22 @@
       );
       if (evidence && method) evidence.parentNode.insertBefore(method, evidence);
 
+      // The corrected CLS/BDO module deliberately removes the older A04 section.
+      // Re-wrap that corrected module under the stable A04 audit anchor used by the new serial index.
+      const correctedA04 = block('[data-cal-allegation04-corrected-20260816]');
+      const a04Fold = fold(
+        correctedA04,
+        'audit-a04',
+        correctedA04?.querySelector('h2')?.textContent?.trim() || (isEs ? 'A04 · Contabilidad' : 'A04 · Accounting')
+      );
+      if (a04Fold) {
+        const summary = a04Fold.querySelector(':scope > summary');
+        if (summary) summary.innerHTML = `<span class="cal-ux-code">A04</span><strong>${correctedA04?.querySelector('h2')?.textContent?.trim() || (isEs ? 'Contabilidad' : 'Accounting')}</strong><span class="cal-ux-pill">${isEs ? 'ADVERSA / RECURRIDA' : 'ADVERSE / APPEALED'}</span>`;
+        const a03Fold = block('#audit-a03');
+        if (a03Fold) moveAfter(a03Fold, a04Fold);
+        else if (evidence) evidence.parentNode.insertBefore(a04Fold, evidence);
+      }
+
       const counter = block('[data-cal-counter-record-20260816]') || block('[data-cal-recovery-adversity-20260816]');
       const staticRescue = block('#rescue');
       const rescueFold = fold(
@@ -122,7 +138,7 @@
       if (finalRule && context) moveAfter(finalRule, context);
 
       revealHash();
-      document.body.dataset.calificacionReaderExperienceFinish = '20260817a';
+      document.body.dataset.calificacionReaderExperienceFinish = '20260817b';
     } finally {
       running = false;
     }
