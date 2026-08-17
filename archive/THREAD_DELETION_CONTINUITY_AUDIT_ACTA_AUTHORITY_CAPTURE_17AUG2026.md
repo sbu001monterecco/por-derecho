@@ -1,153 +1,189 @@
-# THREAD DELETION CONTINUITY AUDIT — ACTA AUTHORITY / LEGITIMACY / CAPTURE VISUAL
+# THREAD DELETION CONTINUITY AUDIT — ACTA AUTHORITY / LEGITIMACY / CAPTURE / DIGITISATION
 
 **Date:** 17 August 2026  
-**Thread subject:** visualising the 2008→2011→2016/2018/2019→2022→current contrast between the participating/compliant majority governance baseline and the Project's allegation of minority/non-participating capture, falsified/self-created authority and downstream reliance.
+**Thread subject:** visualising and evidentially preserving the 2008→2011→2015/2016→2018/2019→2022→current contrast between the participating/compliant majority governance baseline and the Project's allegation of minority/non-participating capture, self-created/falsified authority and downstream reliance.
 
 ## 1. Universal continuity conclusion
 
-**DELETION-SAFE WITH OPEN EVIDENCE.**
+**DELETION-SAFE WITH OPEN EVIDENCE — conditional on the present digitisation/source-register PR being merged to `main`.**
 
-The substantive continuity package was merged to `main` through PR **#285**, `Add Sun Park acta authority-lineage visual control`, on **17 August 2026**, squash commit:
+The earlier authority-lineage package was merged through PR #285 and finalised through PR #286. This rerun was required because the 17-Aug-2026 Gmail/Drive pass surfaced materially new source intelligence that was not contained in the earlier deletion audit: exact Gmail source IDs, attachment filenames, the 22-Jun-2011 ACTA attachment, the 19-Nov-2015 ACTA variants, the April-2016 convocation/meeting-notice chain, post-April debt-analysis files, the June-2016 AC escalation/burofax-planning thread, and the June-2016 transmission of the Community-credit corpus to concursal counsel.
 
-`9469736a95d63828b503a7358cb0a27a9bc72427`
+That new intelligence is now canonicalised on the current branch in:
 
-The thread created material project intelligence and it is now recoverable from current `main` through:
+- `archive/SUN_PARK_ACTA_2011_2016_DIGITISATION_SOURCE_REGISTER_17AUG2026.md`;
+- this updated audit.
 
-- `archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md`;
-- this audit;
-- the mandatory retrieval gate in `CHATGPT_START_HERE.md`.
+Until merge, current `main` is **not fully deletion-safe for the newly surfaced 2011–2016 source corpus**. After merge, the thread is deletion-safe as institutional memory, while native-evidence custody remains incomplete as stated below.
 
-A fresh thread therefore does not need this conversation to recover the framework. Primary-source gaps listed below remain open and must be re-queried from their lawful source systems.
+## 2. Earlier continuity controls preserved
 
-## 2. Material intelligence created in this thread
+The following remain controlling and are not superseded:
 
-### A. Visual architecture
+- `archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md` — authority-lineage visual model;
+- `archive/SUN_PARK_COMMUNITY_2012_GOOD_FAITH_FEES_AND_EVICTION_CORRECTION_GATE_17AUG2026.md` — mandatory correction concerning the early-2012 good-faith invoicing practice;
+- `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`;
+- `archive/CORRECTION_REGISTER.md`, especially CR-018/019 and any later Community corrections;
+- `archive/MISSING_EVIDENCE_REGISTER.md`, ME-044–050, especially ME-047;
+- `archive/EVIDENCE_CUSTODY_AND_PRESERVATION_PROTOCOL_16AUG2026.md`;
+- `archive/CALIFICACION_ALLEGATION_03_UNITARY_COMMUNITY_PRIVATE_ACTORS_AC_CAUSATION_16AUG2026.md`.
 
-The reader-facing issue is controlled as an **authority-lineage problem**, not merely a chronology of competing minutes.
+No duplicate missing-evidence queue has been created.
 
-The canonical visual model is:
+## 3. Material new evidence intelligence created by this pass
 
-- Rail A: participating/compliant majority / authority-compliant governance chain;
-- Rail B: disputed minority/non-participating authority chain beginning with the alleged 2011 authority break;
-- Lane C: independent legal thresholds in 2012, 2018 and 2022 that must not be used retrospectively to validate earlier authority.
+### A. 22-Jun-2011 ACTA located as a native Gmail attachment
 
-### B. 2022 treatment
+Gmail thread `1540ce64bb1cb313`, April-2016, contains attachment metadata for:
 
-A central continuity rule is preserved:
+- `7. ACTA 22 JUN 2011.pdf` — 4,549,723 bytes;
+- `SENTENCIA ASUNCION y CIA MAR2011.pdf` — 4,069,760 bytes.
 
-> **Formal LPB-perimeter title/adjudication in 2022 must be shown as a later, separate legal threshold. It does not by itself retrospectively validate disputed Community authority, debt/voting exclusions, security/access decisions, or acts over LPB/Matkator/third-party property occurring before title.**
+The readable email body shows that the June-2011 ACTA was already being treated in 2016 as a central debt/authority source and was being sent to PwC with the March-2011 judgment for comparison. The party's 2016 description of what the ACTA proves remains a contemporaneous party analysis until the attachment is fully transcribed and independently source-controlled.
 
-### C. Terminology correction
+### B. November-2015 ACTA variants + April-2016 convocation chain located
 
-`Full ownership of Sun Park` must not be used as shorthand for the LPB-led majority or the unitary operating model because legal title was fragmented by units.
+Gmail message `155270de97a23680` identifies two distinct 19-Nov-2015 ACTA PDFs, including a `Bandama` variant, plus 18-Nov-2015 burofax delivery copies and litigation materials.
 
-Preferred controlled terms are:
+The 15–20-Apr-2016 Gmail sequence `1541a132422e7102` / `154291cb9c1dab86` records receipt at Sun Park of Pamanil notifications concerning the November-2015 ACTA and a convocation for a **26-Apr-2016 meeting at Princesa Yaiza**. The same sequence includes a debt/legal analysis document and multiple contemporaneous JPGs that require image-by-image identification.
 
-- participating/compliant majority ownership;
-- majority ownership participating in the unitary hotel operation;
-- LPB-led majority perimeter;
-- owners participating in the common exploitation model.
+This creates a recoverable invitation→meeting→ACTA/source chain that was not explicit in the previous audit.
 
-`Full ownership` may be used only for specifically identified units where title proves it.
+### C. 2016 source-production demand was contemporaneous, not retrospective
 
-### D. Criminal-theory preservation without evidential upgrade
+The April-2016 email chain expressly identifies the underlying material the project/advisers wanted obtained/tested: ACTAS 2008–2015, Community accounting/books, IGIC material, contracts, invoices, debt certificates, statutes and planning/use records.
 
-The Project's position that the alleged governance displacement involved falsification, usurpation or instrumentalisation and should not be reduced automatically to a merely civil disagreement is expressly preserved.
+This is important institutional-memory evidence because it shows that the source-verification issue was being articulated in 2016. It does not prove that requested documents did not exist or that any person withheld them.
 
-The same control preserves that criminal characterisation remains allegation/investigative theory unless established actor-by-actor by competent evidence or decision.
+### D. June-2016 AC escalation and burofax-planning thread located
 
-### E. `ACTA X-RAY` schema
+Gmail thread `15544ecc55644ae9`, subject `Reunión con el AC`, documents a contemporaneous plan to place the disputed Community debt/authority issue before the Administrador Concursal, seek a meeting with the AC and advisers, request documentary/audit verification and prepare a written burofax/warning.
 
-Every important minute should be analysed under a repeated field set: date/document, body, convenor, ownership represented, participation status, attendance/proxies, excluded votes, denominator, decision, power claimed, implementation, parent authority, later institutional/private use, source status and primary source.
+The thread includes legal advice from Cristo Suárez Pimentel and is **PRIVATE / PRIVILEGED OR POTENTIALLY PRIVILEGED**. The public repository stores only source metadata and narrow evidential consequences. Full bodies/quotations must not be published without deliberate privilege review.
 
-This lets a fresh thread test whether later acts have an independently valid authority chain or inherit a disputed parent.
+**Critical limit:** the planning thread does not by itself prove that the final burofax was sent to or received by the AC. The final sent document and delivery proof remain OPEN / PRIORITY.
 
-## 3. Existing repository controls confirmed rather than duplicated
+### E. June-2016 transmission of the Community-credit litigation corpus to concursal counsel located
 
-The thread confirmed and preserved these existing controls:
+Gmail messages `155270b982a28996`, `155270de97a23680`, `155270eec5a104b1` show extensive source packages being transmitted to Juan Tomás Parrilla in relation to litigation affecting the Community credit in the concurso.
 
-- `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md` identifies the 2008–2012 governance/exploitation conflict, a 2011 rupture, continuing operation after concurso and the later 2018/2022 thresholds;
-- `archive/CALIFICACION_ALLEGATION_03_UNITARY_COMMUNITY_PRIVATE_ACTORS_AC_CAUSATION_16AUG2026.md` controls the Community/minority conflict, debt/voting allegation, AC notice and later Community/security/access use;
-- `archive/CORRECTION_REGISTER.md` CR-018 separates 7-Jun-2018 de facto control from legal title and CR-019 prevents automatic predecessor→CAM agency;
-- `archive/MISSING_EVIDENCE_REGISTER.md` ME-047 remains the canonical 2008/2011–2017 predecessor-apparatus source package and should be updated rather than duplicated;
-- ME-044–050 already cover the 2018 Community/security/access and continuity evidence families.
+This supports a verified transmission into the concursal-lawyer workstream. It does **not** prove the AC personally received/read each attachment; AC receipt/knowledge must be bridged separately.
 
-No duplicate missing-evidence register was created.
+### F. Post-26-Apr-2016 debt-analysis files located
 
-## 4. Open evidence preserved
+Messages `1553c7d8436c9a0d` / `1553f05644a46549` identify:
 
-The status remains **WITH OPEN EVIDENCE** because the decisive primary package still includes unresolved items, especially:
+- `Análisis Gastos de la Cdad Explotación v3.docx`;
+- `Propuesta de Deuda Comunidad - Junta Abril 2016 (2).xlsx`.
 
-1. native/certified 2008 transfer/statutes/exploitation-accession/minutes package;
-2. complete 2011 notice/agenda/attendance/proxies/coefficient/debt/vote/signed-minute package;
-3. administrator/office-holder mandate and books/bank/document-custody chain;
-4. JV 1260/2011 and later decisions/use;
-5. 2016/2017 minute dependency chain;
-6. complete 18-May-2018 Community/security and SEGURCAN implementation package;
-7. 2019 Community records used in litigation/calificación/other institutions;
-8. 2022 pre/post-title minutes and coefficient schedule separated from title deeds;
-9. latest/current claimed Community authority chain.
+These establish a contemporaneous analytical workstream after the 26-Apr-2016 meeting. Numerical conclusions remain unverified until the attachments are extracted and reconciled.
 
-These are retrieval targets, not negative factual findings.
+### G. AC meeting-scheduling bridge located
 
-## 5. Public/private boundary
+The June-2016 thread `15571b5b4be8e72b`, including message `155770bc9a786fba`, records Juan Tomás reporting a response from Borja concerning proposed meeting dates. Exact date/attendance/content require full thread review before substantive reliance.
 
-No private primary evidence was copied into GitHub in this thread.
+## 4. Full-digitisation status
 
-The repository stores the analytical/retrieval architecture and source-status rules. Future threads requiring the actual native documents must re-query lawful primary-source systems — Drive, Gmail, File Library, certified court/Community/Registry files or other connected sources — rather than reconstruct them from conversational memory.
+The user's requested end-state is **full digitisation of ACTAS and related communications**, meaning each important governance event is reconstructed as:
 
-## 6. Implementation state and diff audit
+`NOTICE / INVITATION / AGENDA`
+→ `OWNERSHIP / ATTENDANCE / PROXIES`
+→ `SIGNED ACTA / VOTES / RESOLUTIONS`
+→ `POST-MEETING COMMUNICATION / IMPLEMENTATION / LITIGATION / AC NOTICE`
 
-Substantive branch:
+Current status:
 
-`agent/acta-authority-legitimacy-visual`
+- source discovery/indexing: **SUBSTANTIALLY ADVANCED for 2011–2016**;
+- readable email-body recovery: **STRONG for identified threads**;
+- attachment filename/native-ID identification: **STRONG for identified messages**;
+- full attachment transcription/digitisation: **INCOMPLETE**;
+- ACTA X-RAY completion: **INCOMPLETE**;
+- 2016 final AC burofax + proof of delivery: **OPEN / PRIORITY**;
+- private native-vault export: **NOT CLAIMED COMPLETE**;
+- SHA-256 manifest: **NOT CLAIMED COMPLETE**.
 
-Substantive PR:
+Therefore **full digitisation is not yet complete**, even though the repository now knows exactly what must be extracted and where to re-query it.
 
-`#285 — Add Sun Park acta authority-lineage visual control`
+## 5. Evidence-storage / custody conclusion
 
-Merged substantive commit:
+This audit distinguishes repository memory from evidence custody.
 
-`9469736a95d63828b503a7358cb0a27a9bc72427`
+### Repository layer
 
-Files placed on `main`:
+After this branch is merged, the public-safe repository will preserve:
 
-- `archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md`;
-- `archive/THREAD_DELETION_CONTINUITY_AUDIT_ACTA_AUTHORITY_CAPTURE_17AUG2026.md`;
-- updated `CHATGPT_START_HERE.md`.
+- source-native Gmail and Drive identifiers;
+- filenames and relevant dates;
+- evidential classifications and limitations;
+- privilege/publication boundaries;
+- digitisation requirements;
+- exact unresolved source targets;
+- recovery path for future threads.
 
-The PR diff was inspected before merge. The first replacement of `CHATGPT_START_HERE.md` accidentally removed the existing Deployment gate, Security boundary and one-line bootstrap prompt. The diff review caught that regression before merge. Those controls were restored, and the ACTA authority retrieval rule was added to both the numbered startup gate and the one-line bootstrap.
+### Native evidence layer
 
-The merged substantive diff therefore preserved the pre-existing startup, deployment, security and continuity controls while adding the ACTA authority gate.
+The Gmail/Drive originals remain the controlling connected-source copies unless/until separately exported. **They are not to be described as independently vault-preserved merely because the connector can still access them.**
 
-No public website page was changed in PR #285. No Pages deployment is claimed for this repository-only control change.
+For custody resilience the next pass must, where lawful and appropriate:
 
-## 7. Fresh-thread recovery path
+1. export the native ACTA/notice/burofax/communication binaries;
+2. preserve originals without transformation in a private evidence vault;
+3. calculate SHA-256;
+4. record source ID, size, MIME, acquisition date and storage reference;
+5. create transcription/OCR/text derivatives separately;
+6. cross-reference derivatives to the original evidence ID.
 
-A fresh ChatGPT can recover this thread's material intelligence by reading, in order:
+## 6. Priority source-completion queue
+
+1. Fully extract/transcribe `7. ACTA 22 JUN 2011.pdf` and create its ACTA X-RAY.
+2. Locate the alleged Feb-2011 presidency-threshold meeting/ACTA and its notice/proxy/ownership chain.
+3. Locate the original notice/agenda and ownership/coefficient snapshot for 22-Jun-2011.
+4. Fully extract both 19-Nov-2015 ACTA variants and explain the variant relationship.
+5. Recover every attachment/image from the 15-Apr-2016 notification sequence and identify the exact 26-Apr notice/agenda documents.
+6. Locate and transcribe the signed 26-Apr-2016 ACTA and any resulting debt certificate/schedule.
+7. Extract/reconcile the June-2016 debt-analysis DOCX/XLSX files.
+8. Locate the final 2016 burofax to the AC, exact sender/signatory, final text, proof of dispatch and proof of delivery.
+9. Recover direct AC response(s), meeting confirmation, attendance/notes and post-meeting follow-up.
+10. Extend the same event-chain digitisation through 2017, the 18-May-2018 Community/security package, 2019 downstream use and 2022/current authority.
+
+## 7. Privilege/publication audit
+
+**PASS, with restrictions.**
+
+No privileged legal-advice body has been copied into the public repository by this audit. The source register records the existence, participants, source IDs and narrow factual/evidential consequences of privileged/potentially privileged communications.
+
+Future public use must not quote or reproduce privileged communications without a deliberate legal/privilege decision. The fact that an adviser proposed a legal characterisation is not evidence that the alleged offence occurred.
+
+## 8. Fresh-thread recovery path
+
+After merge, a fresh ACTA/Community-authority thread should recover this work by reading:
 
 1. `CHATGPT_START_HERE.md`;
 2. `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
 3. `archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md`;
-4. `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`;
-5. `archive/CORRECTION_REGISTER.md` CR-018/019;
-6. `archive/MISSING_EVIDENCE_REGISTER.md` ME-044–050 / especially ME-047;
-7. `archive/CALIFICACION_ALLEGATION_03_UNITARY_COMMUNITY_PRIVATE_ACTORS_AC_CAUSATION_16AUG2026.md`;
-8. relevant native primary sources re-queried from connected systems.
+4. `archive/SUN_PARK_COMMUNITY_2012_GOOD_FAITH_FEES_AND_EVICTION_CORRECTION_GATE_17AUG2026.md`;
+5. `archive/SUN_PARK_ACTA_2011_2016_DIGITISATION_SOURCE_REGISTER_17AUG2026.md`;
+6. this audit;
+7. `archive/MISSING_EVIDENCE_REGISTER.md` ME-044–050 / especially ME-047;
+8. `archive/EVIDENCE_CUSTODY_AND_PRESERVATION_PROTOCOL_16AUG2026.md`;
+9. relevant Gmail/Drive sources identified in the source register.
 
-## 8. Deletion-safe test
+## 9. Deletion-safe test
 
-If this conversation disappeared now, a fresh thread would retain:
+Before this rerun, the answer was **NO** for the newly surfaced source corpus: a fresh thread could recover the visual theory but not the exact 2011–2016 Gmail/attachment retrieval map discovered in this conversation.
 
-- the visual strategy;
-- the 2008→2011→2022 authority-lineage framing;
-- the terminology correction;
-- the 2022 non-retroactivity rule;
-- the criminal-allegation/evidence discipline;
-- the ACTA X-RAY fields;
-- the existing canonical source/gap references;
-- the open evidence priorities;
-- the implementation and diff-audit state;
-- the substantive merge commit.
+Once the present source register and updated audit are merged, the answer becomes **YES for institutional-memory continuity**, because a fresh thread can recover:
 
-**Conclusion: DELETION-SAFE WITH OPEN EVIDENCE.**
+- the authority-lineage architecture;
+- the good-faith 2012 correction;
+- the exact identified 2011/2015/2016 source families;
+- the April-2016 invitation/notification chain;
+- the June-2016 adviser/AC escalation chronology;
+- the privilege boundary;
+- the exact full-digitisation and custody gaps;
+- the native-source retrieval keys.
+
+It remains **WITH OPEN EVIDENCE / OPEN CUSTODY** because full ACTA transcription, final AC-burofax proof, native-vault export and cryptographic manifest are not complete.
+
+**Current conclusion before merge: NOT DELETION-SAFE for the newly surfaced 2011–2016 corpus.**  
+**Required conclusion after merge: DELETION-SAFE WITH OPEN EVIDENCE AND OPEN CUSTODY.**
