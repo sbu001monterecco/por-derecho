@@ -2,17 +2,19 @@
 
 **Date:** 17 August 2026  
 **Repository:** `sbu001monterecco/por-derecho`  
-**Base inspected:** `main` at `333416d524ba21ace4ccbc9db3171ef1b23310ec`  
-**Continuity PR:** `#260`  
+**Original base inspected:** `main` at `333416d524ba21ace4ccbc9db3171ef1b23310ec`  
+**Continuity PR:** `#260` — merged 17 August 2026 at 02:14:16 UTC  
+**Verified merge commit:** `ed5fa60777463f151aa2cd6b6f59614059a90edf`  
+**Current verdict:** **DELETION-SAFE**  
 **Thread scope:** creation, clarification and preservation of a launch prompt for a unitary repository/live-site/Calificación-page audit.
 
 ## Universal continuity question
 
 > If this conversation disappeared now, could a fresh ChatGPT recover every material new fact, source-status decision, correction, strategic choice, open question, retrieval target and implementation state from current `main` plus connected primary-source systems?
 
-### Pre-canonicalisation answer
+### Historical pre-canonicalisation answer
 
-**No.** Before PR #260, the thread’s complete operating instruction was conversation-dependent. `archive/CHATGPT_PROMPT_LIBRARY.md` already contained P12 and P17, and the Calificación canonical activation/serial ledgers already controlled the substantive evidence work, but the following combined instruction was not preserved as a single recoverable launch artifact:
+**No — before PR #260 was merged.** At that earlier point, the thread’s complete operating instruction was conversation-dependent. `archive/CHATGPT_PROMPT_LIBRARY.md` already contained P12 and P17, and the Calificación canonical activation/serial ledgers already controlled the substantive evidence work, but the following combined instruction was not yet preserved as a single recoverable launch artifact:
 
 1. scan the connected GitHub repository first;
 2. read `CHATGPT_START_HERE.md` and activated protocols before analysis;
@@ -24,11 +26,13 @@
 8. implement and verify justified ES/EN improvements rather than stopping at recommendations;
 9. produce the specified allegation matrix, person-by-person outcome, contradiction register, publication-ready copy and deployment record.
 
+That historical blocker was removed by merged PR #260.
+
 ## Material created by the thread
 
 ### 1. Reusable operating instruction
 
-Canonicalised at:
+Canonicalised and confirmed on `main` at:
 
 `archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`
 
@@ -36,7 +40,7 @@ This file preserves the prompt’s mandatory order, evidential safeguards, stren
 
 ### 2. Prompt-library activation
 
-Registered as **P18 — Unitary Calificación repository + live-site audit** in:
+Registered and confirmed on `main` as **P18 — Unitary Calificación repository + live-site audit** in:
 
 `archive/CHATGPT_PROMPT_LIBRARY.md`
 
@@ -60,7 +64,7 @@ Accordingly:
 - `archive/MISSING_EVIDENCE_REGISTER.md` does not require a new source request solely because of this thread;
 - no Calificación allegation ledger is substantively changed;
 - no ES/EN website page was edited;
-- no GitHub Pages deployment is required for this archive-only continuity change;
+- no GitHub Pages deployment was required for PR #260 because it changed archive continuity records only;
 - and no private, privileged or restricted source material was copied into GitHub.
 
 ## Relationship to existing controls
@@ -69,7 +73,7 @@ The new prompt **synthesises and supplements**, but does not replace:
 
 - `CHATGPT_START_HERE.md`;
 - `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
-- `archive/CHATGPT_PROMPT_LIBRARY.md`, especially P12, P17 and new P18;
+- `archive/CHATGPT_PROMPT_LIBRARY.md`, especially P12, P17 and P18;
 - `archive/CALIFICACION_RECOVERY_CANONICAL_ACTIVATION_16AUG2026.md`;
 - current Calificación serial allegation, AC-report, Fiscalía, appeal, recovery and reader-simulation ledgers;
 - `archive/CORRECTION_REGISTER.md`;
@@ -77,15 +81,18 @@ The new prompt **synthesises and supplements**, but does not replace:
 
 Current primary sources and later controlled corrections continue to govern over prompt wording.
 
-## Implementation state
+## Verified implementation state
 
-- Branch: `agent/calificacion-unitary-prompt-deletion-audit-17aug2026`
+- Original branch: `agent/calificacion-unitary-prompt-deletion-audit-17aug2026`
 - Prompt-preservation commit: `21d22ef46fb4e8249061a46530f58aa2a628bb5e`
 - Prompt-library registration commit: `0aeb50d233fbc5f9f2b77845e0d72ecb1a260003`
-- Pull request: `#260`
-- Intended base: `main`
-- Public-site files changed: none
-- Pages verification required: no, because this PR changes archive continuity records only
+- Pull request: `#260` — **merged**
+- Merge commit on `main`: `ed5fa60777463f151aa2cd6b6f59614059a90edf`
+- Canonical master prompt on `main`: **confirmed**
+- P18 prompt-library entry on `main`: **confirmed**
+- Thread-specific continuity audit on `main`: **confirmed**
+- Public-site files changed by PR #260: none
+- Pages verification required for PR #260: no, because it was archive-only
 
 ## Fresh-thread recovery route
 
@@ -103,9 +110,17 @@ A fresh ChatGPT asked to run or improve the unitary Calificación audit should:
 
 ## Final deletion verdict
 
-**DELETION-SAFE once PR #260 is merged and all three changed files are confirmed on `main`.**
+**DELETION-SAFE.** PR #260 has been merged and the three continuity files are confirmed on `main`.
 
-The presence of this audit file on `main` means the continuity content itself has merged. A final operator should still verify the exact merge commit. Until merge, the correct status is **NOT DELETION-SAFE**, because the material prompt remains only on the branch and in the conversation.
+The reusable **scan-first, stronger-not-weaker Calificación master prompt is recoverable from `main`** at:
+
+`archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`
+
+It is also discoverable through P18 in:
+
+`archive/CHATGPT_PROMPT_LIBRARY.md`
+
+The statement **“deletion blocker remains: the reusable scan-first, stronger-not-weaker Calificación master prompt is not recoverable from `main`” is superseded and incorrect.** No such deletion blocker remains.
 
 ## Intentionally excluded material
 
