@@ -162,4 +162,9 @@
   // ONA exit pages: unitary actor/property/exploitation map. Preserves LPB as principal property owner rather than whole hotel,
   // Clubotel/ONA Hotels as operating anchor, Daniel Irigoyen's legal-coordinator role and Cuatrecasas' broader transaction work.
   load('ona-unitary-actor-map-20260817.js?v=20260817a');
+
+  // Calificación landing pages: stable guided reader journey, serial navigation, evidence-before-actor matrix,
+  // progressive disclosure of connected dossiers, correction/right-of-reply controls and deterministic final ordering.
+  // The module waits for the earlier dynamic sections to settle before applying the bilingual composition.
+  load('calificacion-reader-experience-20260817.js?v=20260817a');
 })();
