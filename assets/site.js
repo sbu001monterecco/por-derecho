@@ -47,8 +47,8 @@
   // Canary Council of Bar Associations institutional mark and source-controlled status record.
   load('ccca-institutional-mark-20260816.js?v=20260816a');
 
-  // Canonical RICPE routing, chronology, legacy-dossier banner, SNCA boundary and 17-Aug formal-communication status.
-  load('canonical-routing-chronology-20260815.js?v=20260817a');
+  // Canonical RICPE routing, chronology, legacy-dossier banner, SNCA boundary and reviewed 17-Aug V6 status.
+  load('canonical-routing-chronology-20260815.js?v=20260817b');
 
   // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
   load('origin-direct-market-context-20260816.js?v=20260816b');
@@ -175,6 +175,6 @@
   load('sun-park-7june-convergence-20260817.js?v=20260817a');
 
   // 2008→2022 Community/CEXP ACTA authority provenance: Alimarket baseline, entity corrections,
-  // disputed 22-Jun-2011 provenance node, primary 2016/2018 source links and downstream context bridges.
-  load('community-actas-authority-provenance-20260817.js?v=20260817a');
+  // disputed 22-Jun-2011 provenance node, source-safe 2016/2018 primary findings and downstream context bridges.
+  load('community-actas-authority-provenance-20260817.js?v=20260817b');
 })();
