@@ -1,7 +1,7 @@
 # CALIFICACIÓN — LPAM / CGPJ 169 / 2021 JUDGE-KNOWLEDGE OVERRIDE
 
 Control date: **17 August 2026**  
-Status: **CONTROLLING ADDENDUM / OVERRIDE FOR THE 2020–2021 KNOWLEDGE CHAIN**
+Status: **CONTROLLING ADDENDUM / OVERRIDE FOR THE 2020–2021 KNOWLEDGE CHAIN / PUBLIC IDENTITY CONTROL APPLIED**
 
 This file must be read with and, where more specific, controls the 2020–2021 portion of:
 
@@ -13,11 +13,17 @@ Full integrated control:
 
 - `archive/LPAM_CGPJ169_CALIFICACION_UNITARY_KNOWLEDGE_CHAIN_17AUG2026.md`
 
+## Publication identity rule
+
+The public repository does not identify the person from Gil Marer's personal and business perimeter who memorialised the LPAM account. That person is referred to as **the witness / declarant from Gil Marer's perimeter**. A second person formerly identified by first name is described as **one of Gil Marer's legal advisers at the relevant time**.
+
+These people must not be confused with **Laura Patricia Acosta Matos (LPAM)**. LPAM remains fully identified on first reference because the relevant reported statements and conduct are attributed to her. The privacy treatment is a publication-layer control, not a retraction or alteration of the underlying source evidence.
+
 ## New canonical proposition
 
 The 2021 RICPE/CAM external-investment issue is no longer to be described merely as a later public-source reconstruction or an informal warning.
 
-The controlled evidence now establishes that:
+The controlled evidence establishes that:
 
 1. **13-Jan-2021:** CNMV formally received the user-side filing under registry no. **2021002141**.
 2. **13-Jan-2021:** an AEAT telematic registry record documents an ordinary tax complaint (`ZZ061` / `ZZ06`) captioned **“Posible fraude de inversores mediante la materialización de la RIC”** and attaching the RICPE complaint.
@@ -28,7 +34,7 @@ Therefore, by early 2021, the **Mercantile-court institutional record itself** c
 
 ## Calificación consequence
 
-When testing the surviving 2023 Pink/rent causation finding, the sequence must now include:
+When testing the surviving 2023 Pink/rent causation finding, the sequence must include:
 
 `FORMAL DUTY → ACTUAL ACCESS / CONTROL / CAPACITY → PARALLEL COMMERCIAL / INVESTMENT LIFE ALREADY RAISED IN COURT → REAL ABILITY TO OPERATE / COLLECT → COMPETING CAUSATION → ATTRIBUTED CAUSATION → €3,032,010.34 CONSEQUENCE`
 
@@ -38,9 +44,9 @@ This does **not** by itself establish that the Judge personally read every 918/2
 
 ## LPAM relationship question
 
-Patricia Domínguez reports that LPAM described Magistrado-Juez Alberto López Villarrubia as a friend with direct/personal contact or access. **Gil Marer states that he strongly believes that reported account.** Preserve Gil's belief as a party credibility position; it is not independent corroboration of friendship, calls, meetings or improper influence.
+A **person within Gil Marer's personal and business perimeter** reports that **Laura Patricia Acosta Matos (LPAM)** described Magistrado-Juez Alberto López Villarrubia as a friend with direct/personal contact or access. **Gil Marer states that he strongly believes the witness's reported account.** Preserve Gil's belief as a party credibility position; it is not independent corroboration of friendship, calls, meetings or improper influence.
 
-The relationship question is nevertheless now a high-priority finite verification track because it sits alongside an independently documented court-knowledge chain. Required proof remains objective communications/access evidence.
+The relationship question remains a high-priority finite verification track because it sits alongside an independently documented court-knowledge chain. Required proof remains objective communications/access evidence.
 
 ## CGPJ correction
 
