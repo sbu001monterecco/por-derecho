@@ -10,7 +10,7 @@
   if (document.querySelector('[data-cal-source-correction-20260816]')) return;
 
   const marker = document.createElement('div');
-  marker.dataset.calSourceCorrection20260816 = '1';
+  marker.dataset.calSourceCorrection20260816 = '2';
   marker.hidden = true;
   document.body.appendChild(marker);
 
@@ -38,21 +38,75 @@
     }
   }
 
-  const applyJudgeMediaCredit = () => {
-    const caption = document.querySelector('.judge-approved-photo figcaption');
-    if (!caption) return false;
+  const style = document.createElement('style');
+  style.dataset.judgeImageLocationFix = '20260817';
+  style.textContent = `
+    #lpam-magistrado-source-control .lpam-judge-photo{
+      display:block;position:static!important;top:auto!important;
+      width:min(100%,760px);max-width:760px;margin:1rem 0 1.45rem;
+      background:#fff;border:1px solid rgba(19,37,45,.16);border-radius:18px;overflow:hidden;
+      box-shadow:0 10px 28px rgba(19,37,45,.08)
+    }
+    #lpam-magistrado-source-control .lpam-judge-photo img{
+      display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center
+    }
+    #lpam-magistrado-source-control .lpam-judge-photo figcaption{
+      padding:.8rem .95rem;font-size:.82rem;line-height:1.42;color:#586267
+    }
+    #lpam-magistrado-source-control .lpam-judge-photo figcaption a{color:inherit;text-decoration:underline}
+    .judge-approved-grid.judge-approved-grid-no-photo{display:block!important;grid-template-columns:1fr!important}
+    .judge-approved-grid.judge-approved-grid-no-photo>div{width:100%;min-width:0}
+    @media(max-width:850px){
+      #lpam-magistrado-source-control .lpam-judge-photo{width:100%;margin:1rem 0 1.2rem;border-radius:14px}
+    }
+  `;
+  document.head.appendChild(style);
+
+  const relocateJudgePhoto = () => {
+    const figure = document.querySelector('.judge-approved-photo');
+    const target = document.querySelector('#lpam-magistrado-source-control .record');
+    if (!figure || !target) return false;
+
+    const image = figure.querySelector('img');
+    const caption = figure.querySelector('figcaption');
+    if (!image || !caption) return false;
+
+    image.src = asset('alberto-lopez-villarrubia-supplied-16aug2026.jpg?v=20260817b');
+    image.width = 880;
+    image.height = 495;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.alt = es
+      ? 'Fotografía publicada por La Voz de Lanzarote y utilizada en el módulo documental relativo al magistrado Alberto López Villarrubia'
+      : 'Photograph published by La Voz de Lanzarote and used in the documentary module concerning Judge Alberto López Villarrubia';
+
     caption.innerHTML = es
-      ? `<strong>Fuente mediática:</strong> <a href="https://www.lavozdelanzarote.com/actualidad/politica/el-juez-pone-fin-al-proceso-concursal-de-inalsa-aprobando-el-convenio-con-los-acreedores-que-implica-una-quita-del-21-72-por-ciento_82691_102.html" rel="external noopener">La Voz de Lanzarote</a>, 18 de septiembre de 2013. La página de origen revisada no muestra crédito de fotógrafo individual. Imagen aportada a este expediente por Gil Marer; la identificación utilizada por Por Derecho procede del registro documental y de la atribución del aportante, no de reconocimiento facial realizado por ChatGPT.`
-      : `<strong>Media source:</strong> <a href="https://www.lavozdelanzarote.com/en/news/politics/the-judge-ends-inalsa-s-bankruptcy-proceedings-by-approving-the-agreement-with-creditors-which-implies-a-reduction-of-21-72-percent_82691_102.html" rel="external noopener">La Voz de Lanzarote</a>, 18 September 2013. The source page reviewed shows no individual photographer credit. Image supplied to this dossier by Gil Marer; Por Derecho's identification comes from the documentary record and the supplier's attribution, not facial identification performed by ChatGPT.`;
-    caption.dataset.mediaCredit = 'la-voz-de-lanzarote-20130918';
+      ? `<strong>Fuente mediática:</strong> <a href="https://www.lavozdelanzarote.com/actualidad/politica/el-juez-pone-fin-al-proceso-concursal-de-inalsa-aprobando-el-convenio-con-los-acreedores-que-implica-una-quita-del-21-72-por-ciento_82691_102.html" rel="external noopener">La Voz de Lanzarote</a>, 18 de septiembre de 2013. La página de origen revisada no identifica a un fotógrafo individual. Copia aportada por Gil Marer para este expediente; la identificación empleada por Por Derecho procede del registro documental y de la atribución del aportante, no de reconocimiento facial realizado por ChatGPT.`
+      : `<strong>Media source:</strong> <a href="https://www.lavozdelanzarote.com/actualidad/politica/el-juez-pone-fin-al-proceso-concursal-de-inalsa-aprobando-el-convenio-con-los-acreedores-que-implica-una-quita-del-21-72-por-ciento_82691_102.html" rel="external noopener">La Voz de Lanzarote</a>, 18 September 2013. The reviewed source page does not identify an individual photographer. Copy supplied by Gil Marer for this dossier; Por Derecho's identification comes from the documentary record and the supplier's attribution, not facial identification performed by ChatGPT.`;
+
+    figure.classList.add('lpam-judge-photo');
+    figure.dataset.mediaCredit = 'la-voz-de-lanzarote-20130918';
+    figure.dataset.locationFix = 'lpam-magistrado-source-control';
+
+    const heading = target.querySelector('h2');
+    if (heading) heading.insertAdjacentElement('afterend', figure);
+    else target.prepend(figure);
+
+    const grid = document.querySelector('.judge-approved-grid');
+    if (grid) grid.classList.add('judge-approved-grid-no-photo');
     return true;
   };
 
-  if (!applyJudgeMediaCredit()) {
+  if (!relocateJudgePhoto()) {
     const observer = new MutationObserver(() => {
-      if (applyJudgeMediaCredit()) observer.disconnect();
+      if (relocateJudgePhoto()) observer.disconnect();
     });
     observer.observe(document.body, { childList: true, subtree: true });
     window.setTimeout(() => observer.disconnect(), 15000);
+  }
+
+  function asset(filename) {
+    const base = document.querySelector('script[src*="site.js"]')?.src || window.location.href;
+    return new URL(filename, base).href;
   }
 })();
