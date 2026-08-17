@@ -1,202 +1,114 @@
 # CALIFICACIÓN — VISTA VIDEO_02 / VIDEO_03 INTAKE AND INTEGRATION RECORD
 
 **Date:** 17 August 2026  
-**Status:** `PRIVATE-SOURCE INTAKE VERIFIED / TRANSCRIPT AND VIDEO_01 MERGE PENDING`  
+**Status:** `PRIVATE-SOURCE INTAKE VERIFIED / THREE-COMPONENT TECHNICAL INTEGRATION COMPLETE / TRANSCRIPT PENDING`  
 **Proceeding:** Concurso ordinario 36/2012 — Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria  
 **Hearing date visible in source:** 25 July 2023  
-**Purpose:** preserve a deletion-safe, public-safe record that two additional audiovisual components of the Calificación hearing have been received and technically inspected, while preventing premature substantive conclusions before full transcription and three-file reconciliation.
+**Controlling master:** `archive/CALIFICACION_VISTA_25JUL2023_THREE_VIDEO_MASTER_INDEX_17AUG2026.md`
 
 ## 1. Canonical evidential object
 
-Treat the hearing as one evidential object split across three source recordings:
+Treat the hearing as one evidential object split across:
 
 1. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_01.mkv`
 2. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv`
 3. `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv`
 
-VIDEO_01 is being processed in a separate ChatGPT thread. At the time of this intake, no VIDEO_01 handoff or filename-specific record was located on `main`. Do not infer its transcript, duration, speakers or substantive content until that thread commits a canonical handoff or the source is independently recovered.
-
-VIDEO_02 and VIDEO_03 were supplied directly in the current ChatGPT thread as private source binaries. **The binaries themselves have not been uploaded to the public repository.** This file records technical/provenance intelligence only.
+All three private source components are now located and technically fingerprinted. The binaries themselves are not uploaded to the public repository.
 
 ## 2. VIDEO_02 verified technical intake
 
-**Exact filename**  
-`J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv`
+Filename: `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_02.mkv`  
+SHA-256: `fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e`  
+Size: **231,434,953 bytes**  
+Duration: **1916.989500 seconds ≈ 31m56.99s**  
+Streams: H.264 video / AAC audio  
+Visible source clock: approximately **10:46:55 → 11:18:50**.
 
-**SHA-256**  
-`fee31a75c78184e09c07fa4d489028a902233cc340a63faa88a1cd6b94b0f57e`
-
-**File size**  
-`231,434,953 bytes`
-
-**Container duration**  
-`1916.989500 seconds` ≈ `31m 56.99s`
-
-**Streams**
-- video: H.264
-- audio: AAC
-
-**Visible court overlay / source clock**
-- near source start (+1s): `25/07/2023 10:46:55`
-- near source end (-1s): `25/07/2023 11:18:50`
-
-The visible overlay also identifies:
-
-`J. Mercantil 1 (Palmas de Gran Canaria (Las))`  
-`0000036/2012 - Concurso ordinario - Juicio`
-
-### Visually verified participant labels / display states
-
-The recording itself visibly displays the remote-participant label **`JONATHAN SIMO MORALES`** near the beginning. Later inspected frames visibly display **`David Espejo Navarro`**. Near the end the main remote display is a black participant tile labelled **`Gil Marer`**, with the courtroom feed still visible in the inset.
-
-These are **screen-label observations**, not biometric identification findings. Speaker attribution and the legal/procedural role of each person must be established from the audio, hearing record and canonical party/witness materials before substantive use.
+Sampled visual states show the remote label **`JONATHAN SIMO MORALES`** near the beginning, later **`David Espejo Navarro`**, and **`Gil Marer`** near the end. These are screen-label observations, not speech attributions.
 
 ## 3. VIDEO_03 verified technical intake
 
-**Exact filename**  
-`J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv`
+Filename: `J. Mercantil 1 (Palmas de Gran Canaria (Las))_0000036_2012_VIDEO_03.mkv`  
+SHA-256: `8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07`  
+Size: **192,947,423 bytes**  
+Duration: **1500.267375 seconds ≈ 25m00.27s**  
+Streams: H.264 video / AAC audio  
+Visible source clock: approximately **11:58:22 → 12:23:21**.
 
-**SHA-256**  
-`8bc5a27768bf61ee520ebcd97f308bdb5f5ed594175cfa032ee98fa7093cdd07`
+The beginning shows the principal remote tile labelled **`Gil Marer`**; later sampled frames show the courtroom as principal view.
 
-**File size**  
-`192,947,423 bytes`
+## 4. Reconciled chronology with VIDEO_01
 
-**Container duration**  
-`1500.267375 seconds` ≈ `25m 00.27s`
+VIDEO_01 is now independently fingerprinted as:
 
-**Streams**
-- video: H.264
-- audio: AAC
+SHA-256 `63a08742ae6925cb347fe25ceb2c6a78e0625a4aa7ec1df71b6b8602f4eb7d4f`, size 448,937,678 bytes, duration 60:00.614, visible clock approximately **09:46:53 → 10:46:53**.
 
-**Visible court overlay / source clock**
-- near source start (+1s): `25/07/2023 11:58:22`
-- near source end (-1s): `25/07/2023 12:23:21`
+### VIDEO_01 → VIDEO_02
 
-The same visible proceeding overlay identifies Mercantil nº1, proceeding `0000036/2012`, `Concurso ordinario - Juicio`.
+The approximately **two-second** visible-clock boundary and repeated `JONATHAN SIMO MORALES` display state strongly support direct technical continuity. Do not split Jonathan Simó's eventual evidence merely because the file changes at this point.
 
-### Visually verified display states
+### VIDEO_02 → VIDEO_03
 
-At the beginning of VIDEO_03 the principal remote tile is labelled **`Gil Marer`** while the courtroom remains visible in an inset. Later frames show the courtroom as the main view. No speaker identities should be inferred merely from physical appearance in the courtroom feed.
+VIDEO_02 ends approximately **11:18:50**; VIDEO_03 starts approximately **11:58:22**. The approximately **39m32s interval** remains unresolved. Do not call it missing evidence without the certified hearing record. Recess, pause, another component or another technical/procedural explanation remain possible.
 
-## 4. Chronology implication requiring reconciliation
+## 5. Transcript status
 
-VIDEO_02's visible clock ends at approximately **11:18:50**. VIDEO_03 begins at approximately **11:58:22**. The approximately **39m32s visible-clock interval** must not automatically be described as missing evidence.
+No substantive testimony transcript is claimed by this intake. Audio exists in the source files, but the technical processing runtime lacked a trustworthy Spanish ASR model/service.
 
-Possible explanations include, without preference:
+Required next step is a complete source-faithful transcript preserving component-local timestamps and stable speaker IDs, followed by documentary and procedural cross-checking.
 
-- a recess;
-- a recording pause;
-- an unprovided component;
-- source-clock/recording discontinuity;
-- another technical or procedural interruption.
+## 6. OE-CAL-002 current status
 
-The complete VIDEO_01/02/03 chronology and certified hearing record must resolve this before publication.
+The old shorthand that the hearing audiovisual is unavailable is superseded.
 
-## 5. Transcription status
+Current proposition:
 
-**No substantive transcript is claimed by this intake.**
+> Private copies of all three technical components of the 25-Jul-2023 Calificación Vista are now located and fingerprinted. A complete stitched speaker-attributed transcript and the certified audiovisual/minute/attendance/service/representation/rulings record remain outstanding.
 
-The current execution environment can inspect the MKV containers and extract audio/video derivatives, but no local speech-to-text engine/model is installed and network installation is unavailable. Therefore no automated transcript was fabricated from the files.
+Receipt of private copies does not establish certified provenance, completeness of the official recording set or the exact record transmitted to the Audiencia Provincial.
 
-This is an explicit evidence-processing gap, not an absence of audio.
+## 7. Evidential controls
 
-Required next step:
-
-1. obtain a reliable transcription route for the AAC audio or a certified transcript;
-2. transcribe VIDEO_02 and VIDEO_03 completely with local timestamps;
-3. identify speakers from audio + procedural record, not appearance alone;
-4. merge with the VIDEO_01 transcript/handoff;
-5. reconcile against the certified hearing minute, attendance/representation record and evidential rulings.
-
-## 6. Relationship to canonical Calificación evidence controls
-
-This intake materially updates the retrieval posture of `OE-CAL-002` in `archive/CALIFICACION_RECORDED_OPEN_EVIDENCE_INTELLIGENCE_REGISTER_17AUG2026.md`:
-
-- the current project now has **two private-source audiovisual components** of the 25-Jul-2023 hearing available in this ChatGPT intake;
-- the full three-video set has **not yet been reconciled in the repository**;
-- the complete certified audiovisual / transcript / attendance / service / representation / ruling record remains unresolved;
-- receipt of private copies does **not** establish certified provenance, completeness or the exact docket copy transmitted on appeal.
-
-Accordingly, do not continue saying simply that no hearing audiovisual is available. The more precise current proposition is:
-
-> Private copies of VIDEO_02 and VIDEO_03 have been received and technically verified; VIDEO_01 is being processed separately; a complete stitched transcript and certified procedural/audiovisual record remain outstanding.
-
-## 7. Evidential categories and publication controls
-
-### VERIFIED FACT
-- two private MKV files bearing the exact VIDEO_02 and VIDEO_03 filenames were received in the processing thread;
-- their hashes, sizes, durations, codecs and visible court/date/time overlays are recorded above;
-- screen labels identified above are visibly present in sampled source frames.
-
-### EVIDENCE-BASED INFERENCE
-- the files are consistent on their face with being components of the 25-Jul-2023 hearing in Concurso 36/2012.
+### VERIFIED
+- VIDEO_02 and VIDEO_03 filenames, hashes, sizes, durations, codecs and visible source clocks;
+- specified interface labels in sampled frames;
+- technical/visual VIDEO_01→02 continuity strongly supported.
 
 ### UNRESOLVED
-- full chain of custody / court-certified identity of the copies;
-- completeness of the three-file set;
-- exact explanation for the VIDEO_02→VIDEO_03 clock interval;
-- complete transcript;
-- full speaker/role allocation;
-- what objections, evidence, questions or rulings occurred;
+- certified provenance/completeness;
+- exact reason for VIDEO_02→03 interval;
+- transcript and exact speaker allocation;
+- objections, evidence, questions and rulings;
 - effective representation/service history;
-- which source was formally before the AP.
+- exact AP-transmitted record.
 
 ### PUBLICATION RULE
-Do not publish testimony quotations, witness propositions, judicial-knowledge conclusions, contradiction findings or adverse characterisations from VIDEO_02/03 until audio is transcribed and contextually verified. Still frames should remain private unless separately reviewed for publication necessity, privacy and procedural sensitivity.
+Do not publish testimony quotations, contradictions, non-answer inferences or judicial-knowledge conclusions until audio is transcribed and contextually verified.
 
-## 8. Required three-file integration structure
+## 8. Integration outputs
 
-Once VIDEO_01 output becomes available, create or update a single canonical Vista package with:
+The three-file package must ultimately provide:
 
-- master source index and hashes;
-- stitched VIDEO_01→02→03 chronology;
+- source index/hashes;
+- stitched chronology;
 - full transcript;
 - speaker-resolution table;
 - timestamp/issue index;
 - document-mentioned index;
 - allegation → Vista → judgment → appeal crosswalk;
 - judicial-knowledge matrix;
-- AC-specific evidence matrix;
+- AC-specific matrix;
 - contradiction/non-answer register;
 - evidence-gap register;
 - website-publication readiness assessment.
 
-Each proposition must retain source video + local timestamp and must distinguish verified fact, party allegation, evidence-based inference and unresolved question.
+## 9. Website consequence at present stage
 
-## 9. Website / Calificación page consequence at intake stage
+No merits rewrite is justified solely by technical recovery. The eventual Calificación page should present:
 
-**No public page change is justified merely by receiving these files.**
+`ALLEGATION → EVIDENCE RELIED UPON → WHAT THE VISTA SHOWED → DOCUMENTARY CORROBORATION/CONTRADICTION → SENTENCIA 163/2023 → APPEAL ISSUE`.
 
-The Calificación page should be strengthened only after the transcript is source-checked. The likely future visual architecture remains:
+The first-instance judgment remains materially adverse and challenged on appeal; audiovisual recovery does not itself alter that status.
 
-`ALLEGATION → EVIDENCE RELIED UPON → WHAT THE VISTA SHOWED → DOCUMENTARY CORROBORATION/CONTRADICTION → SENTENCIA 163/2023 → APPEAL ISSUE`
-
-The current first-instance judgment must continue to be described as materially adverse and challenged on appeal; no audiovisual intake changes that status by itself.
-
-## 10. Handoff state for VIDEO_01 thread
-
-A VIDEO_01 processing thread should, when it commits its work, cross-reference this file and provide:
-
-- VIDEO_01 exact filename/hash/size/duration;
-- visible source clock start/end;
-- transcript conventions;
-- speaker IDs;
-- last sequence number;
-- documents mentioned;
-- unresolved identities;
-- substantive findings only after transcription;
-- any continuity issue at the VIDEO_01→VIDEO_02 boundary.
-
-Until then, VIDEO_02/03 must remain explicitly **integration pending**, not treated as a freestanding hearing.
-
-## 11. Immediate next evidence targets
-
-1. VIDEO_01 canonical handoff from the parallel thread.
-2. Complete source-faithful transcription of VIDEO_02 and VIDEO_03.
-3. Certified court audiovisual / transcript / hearing minute.
-4. Attendance, service, withdrawal/substitution and representation history.
-5. Exact evidential rulings and document/exhibit index.
-6. Reconciliation with Sentencia 163/2023 and RPL 2523/2025 appeal/nullity materials.
-
-This file is an intake and control record. It does **not** establish what any witness testified or what the judge knew from the hearing.
+This component file is subordinate to the canonical three-video master index and must not be used as a standalone hearing narrative.
