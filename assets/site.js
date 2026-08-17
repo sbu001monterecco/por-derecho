@@ -177,4 +177,8 @@
   // 2008→2022 Community/CEXP ACTA authority provenance: Alimarket baseline, entity corrections,
   // disputed 22-Jun-2011 provenance node, source-safe 2016/2018 primary findings and downstream context bridges.
   load('community-actas-authority-provenance-20260817.js?v=20260817b');
+
+  // Public-authority / independent-review unitary case reconstruction gateway.
+  // Reuses source-controlled canonical propositions while keeping clean-room and criminal-forensic boundaries explicit.
+  load('public-authority-case-reconstruction-20260817.js?v=20260817a');
 })();
