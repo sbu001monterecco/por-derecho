@@ -34,11 +34,19 @@ Canonicalised at:
 
 This file preserves the prompt’s mandatory order, evidential safeguards, strengthening rule, analysis structure, reader simulation, bilingual/publication controls, implementation requirement and deliverables.
 
-### 2. Strategic/drafting decision
+### 2. Prompt-library activation
+
+Registered as **P18 — Unitary Calificación repository + live-site audit** in:
+
+`archive/CHATGPT_PROMPT_LIBRARY.md`
+
+P18 makes the dedicated prompt discoverable from the repository’s standard prompt bootstrap and expressly treats it as the wrapper over P07, P09, P12, P13, P14 and P17.
+
+### 3. Strategic/drafting decision
 
 **Preserved rule:** “stronger” must mean harder to rebut—not simply more accusatory. Serious supported allegations are not to be deleted merely because they are contentious; vulnerable wording is to be replaced by narrower, better sourced and more precise wording.
 
-### 3. Mandatory sequencing decision
+### 4. Mandatory sequencing decision
 
 **Preserved rule:** future execution begins with repository inspection and controlling protocols, then live-site inspection and deployment comparison, before substantive Calificación analysis or rewriting.
 
@@ -61,7 +69,7 @@ The new prompt **synthesises and supplements**, but does not replace:
 
 - `CHATGPT_START_HERE.md`;
 - `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
-- `archive/CHATGPT_PROMPT_LIBRARY.md`, especially P12 and P17;
+- `archive/CHATGPT_PROMPT_LIBRARY.md`, especially P12, P17 and new P18;
 - `archive/CALIFICACION_RECOVERY_CANONICAL_ACTIVATION_16AUG2026.md`;
 - current Calificación serial allegation, AC-report, Fiscalía, appeal, recovery and reader-simulation ledgers;
 - `archive/CORRECTION_REGISTER.md`;
@@ -73,6 +81,7 @@ Current primary sources and later controlled corrections continue to govern over
 
 - Branch: `agent/calificacion-unitary-prompt-deletion-audit-17aug2026`
 - Prompt-preservation commit: `21d22ef46fb4e8249061a46530f58aa2a628bb5e`
+- Prompt-library registration commit: `0aeb50d233fbc5f9f2b77845e0d72ecb1a260003`
 - Pull request: `#260`
 - Intended base: `main`
 - Public-site files changed: none
@@ -84,16 +93,17 @@ A fresh ChatGPT asked to run or improve the unitary Calificación audit should:
 
 1. read `CHATGPT_START_HERE.md`;
 2. read `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
-3. read `archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`;
-4. follow the current Calificación activation and specialist ledgers named by `CHATGPT_START_HERE.md`;
-5. inspect current `main` and the deployed website afresh;
-6. re-query connected primary-source systems where evidence is required;
-7. apply current correction and missing-evidence controls;
-8. use branch → PR → merge → Pages verification for any public-site change.
+3. select P18 in `archive/CHATGPT_PROMPT_LIBRARY.md`;
+4. read `archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`;
+5. follow the current Calificación activation and specialist ledgers named by `CHATGPT_START_HERE.md`;
+6. inspect current `main` and the deployed website afresh;
+7. re-query connected primary-source systems where evidence is required;
+8. apply current correction and missing-evidence controls;
+9. use branch → PR → merge → Pages verification for any public-site change.
 
 ## Final deletion verdict
 
-**DELETION-SAFE once PR #260 is merged and both files are confirmed on `main`.**
+**DELETION-SAFE once PR #260 is merged and all three changed files are confirmed on `main`.**
 
 The presence of this audit file on `main` means the continuity content itself has merged. A final operator should still verify the exact merge commit. Until merge, the correct status is **NOT DELETION-SAFE**, because the material prompt remains only on the branch and in the conversation.
 
