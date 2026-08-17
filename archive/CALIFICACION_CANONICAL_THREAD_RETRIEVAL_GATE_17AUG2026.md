@@ -20,7 +20,9 @@ Any future ChatGPT thread, search, website edit, legal draft, chronology, instit
 - late filing, accounting, collaboration, receivables, rent, complicity, alzamiento or `connivencia`;
 - truth inversion, truth diversion, instrumentalisation, actor knowledge, causation or beneficiary analysis;
 - the 25-Jul-2023 hearing, the 4-Jun-2026 AP deliberation date or current appellate status;
-- recorded open evidence, missing evidence, source completion or evidence-before-actor work.
+- recorded open evidence, missing evidence, source completion or evidence-before-actor work;
+- the 28-Nov-2018 disposal, 24-Oct-2019 non-convalidation, 24-Feb-2021 works/condition order or 12-May-2021 re-tender where they are used as Calificación counter-causation or actor-knowledge evidence;
+- the 27-Jan-2026 PINK continuum/contradiction complaint or the 7-Jan-2025 OLAF multiple-financial-lives alert where either is used to interpret the Calificación record.
 
 This gate supplements `CHATGPT_START_HERE.md`, `archive/CALIFICACION_RECOVERY_CANONICAL_ACTIVATION_16AUG2026.md` and the universal deletion-continuity protocol. It does not replace primary sources or the general correction and missing-evidence registers.
 
@@ -37,14 +39,17 @@ Read, in order:
 7. `archive/CALIFICACION_RECORDED_OPEN_EVIDENCE_INTELLIGENCE_REGISTER_17AUG2026.md`;
 8. `archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_REPEAT_SCAN_APPEND_17AUG2026.md`;
 9. `archive/CALIFICACION_GMAIL_DRIVE_ACTOR_KNOWLEDGE_SOURCE_ADDENDUM_17AUG2026.md`;
-10. `archive/CALIFICACION_PRIMARY_SOURCE_REPEAT_SCAN_PROMPT_17AUG2026.md`;
-11. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`;
-12. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
-13. `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md` and the allegation-specific ledgers relevant to the question;
-14. `archive/THREAD_DELETION_CONTINUITY_AUDIT_CALIFICACION_REPEAT_SOURCE_SCAN_17AUG2026.md` for the recovery route and source-status history;
-15. `archive/CALIFICACION_CANONICAL_MATRIX_IMPLEMENTATION_STATE_17AUG2026.md` when implementation, deployment or page parity is in scope.
+10. `archive/SUN_PARK_NONCONVALIDATION_CALIFICACION_OLAF_PINK_CONTINUUM_FIVE_SOURCE_INGEST_17AUG2026.md`;
+11. `archive/CALIFICACION_PRIMARY_SOURCE_REPEAT_SCAN_PROMPT_17AUG2026.md`;
+12. `archive/CALIFICACION_AC_REPORT_RADICAL_TRANSPARENCY_LEDGER_16AUG2026.md`;
+13. `archive/CALIFICACION_PINK_APPEAL_SOURCE_STATUS_16AUG2026.md`;
+14. `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md` and the allegation-specific ledgers relevant to the question;
+15. `archive/THREAD_DELETION_CONTINUITY_AUDIT_CALIFICACION_REPEAT_SOURCE_SCAN_17AUG2026.md` for the recovery route and source-status history;
+16. `archive/CALIFICACION_CANONICAL_MATRIX_IMPLEMENTATION_STATE_17AUG2026.md` when implementation, deployment or page parity is in scope.
 
 Where the 7-Jun-2018 material-control shift, Community/CEXP, Matkator/third-party property, banking causation, rescue/exit, multiple financial lives or an actor-specific criminal/disciplinary allegation is material, also open the specialist gates mandated by `CHATGPT_START_HERE.md`.
+
+Where the 2018 disposal / 2019 non-convalidation / 2021 re-tender chain is material, treat the signed court and Registry records as the underlying primary anchors. The 17-Aug five-source ingest records the party-pleading/alert layers, the source-version limits and the exact Annex-5 custody mismatch; it does not displace the primary records.
 
 ## 3. Controlling substantive corrections
 
@@ -58,6 +63,8 @@ Future threads must preserve, at minimum:
 - **Accounting material supplied is not the same proposition as legally sufficient, properly legalised mandatory books.**
 - **Signing the PINK agreement is not the same proposition as later non-collection of rent.**
 - **A rejected or narrowed accusation does not automatically prove knowing falsehood, prevarication, collusion or criminal instrumentalisation.** Actor-specific knowledge, duty, act/omission, purpose, causation and benefit must be proved.
+- **The alternate 64-page 6-Jun-2019 opposition PDF supplied on 17-Aug-2026 is not independent corroboration of canonical P3.** It is a distinct binary in the same pleading/source family.
+- **The 27-Jan-2026 PINK continuum/estafa-procesal theory is a party criminal pleading, not a judicial finding.** Test each proceeding, period and legal capacity before calling factual positions mutually exclusive.
 
 ## 4. What has been preserved in `main`
 
@@ -75,6 +82,7 @@ The repository now contains, in durable form:
 - thirteen recorded open-evidence intelligence families;
 - actor-knowledge grades and evidence-before-actor requirements;
 - exact retrieval routes, custody/privilege controls and publication thresholds;
+- the 17-Aug five-source ingest linking the January-2019 objection, 2019 non-convalidation, 2021 works/condition and re-tender chain to the Calificación/DI-248/PINK/OLAF tracks, including version-control limits;
 - bilingual public copy and the route-limited website module;
 - implementation and deployment state.
 
@@ -95,6 +103,8 @@ For each open-evidence family, the controlling intelligence register records:
 
 Open evidence may strengthen, weaken or require a mixed correction to the current thesis. Missing evidence is not proof of existence, favourability, withholding or wrongdoing.
 
+The five-source ingest adds specific open targets that must not be lost: the exact final filed Annex-5 binary, the €400,000/Registry/deed reconciliation, the complete May-2021 tender disclosure pack and later 2021–22 bridge, the proceeding-by-proceeding PINK capacity matrix, and transaction-level FTI/Meeting Point rescue-funds tracing before any project-specific `triple dipping` conclusion.
+
 ## 6. Private-source boundary
 
 Not every native email, bank record, privileged communication or confidential attachment belongs in public GitHub. The repository must preserve the public-safe intelligence needed to locate and evaluate it:
@@ -108,6 +118,8 @@ Not every native email, bank record, privileged communication or confidential at
 - privacy/privilege/publication treatment.
 
 Future threads must re-query Gmail, Drive and uploaded-file systems where the canonical register identifies a private primary source. A repository summary is not a substitute for the native or certified source.
+
+For the 28-Jul-2026 CGPJ Annex 5 specifically, do **not** treat the connected backup/upload copy bearing `(1)` as the exact filed binary: its SHA-512 does not match the fingerprint on `REGAGE26e00069061338`. Recover the receipt-fingerprinted final binary before any fine-grained version comparison.
 
 ## 7. Website implementation
 
@@ -126,6 +138,8 @@ Relevant direct pages:
 
 The module was merged through PR #267 and the exact merge revision `b7b78901a88613dc5fbfd0a38d233d6d4ca000bc` received a successful GitHub Pages build. Later page changes must preserve ES/EN parity and the controlling correction/status boundaries.
 
+The 17-Aug five-source ingest does **not** by itself require a new public module. Public strengthening is justified only where existing text understates a signed primary record and must retain that source's exact limits. OLAF and PINK criminal characterisations remain attributed allegations.
+
 ## 8. Propagation rule
 
 When new evidence is recovered:
@@ -141,6 +155,8 @@ When new evidence is recovered:
 9. update deployment and deletion-continuity records.
 
 Do not merely edit one status banner or one website paragraph.
+
+For the five-source chain, recovery of the final filed Annex 5 or the €400,000/tender-disclosure sources must also be propagated to the CGPJ traceability and non-convalidation controls; any FTI/Meeting Point money-flow source must also be propagated to the multiple-funding gate and source-and-use ledgers.
 
 ## 9. Future-thread completion test
 
