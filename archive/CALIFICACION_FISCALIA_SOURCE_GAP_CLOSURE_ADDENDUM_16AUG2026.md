@@ -1,12 +1,13 @@
 # CALIFICACIÓN / FISCALÍA — PRIMARY-SOURCE GAP-CLOSURE ADDENDUM
 
 **Date:** 16 August 2026  
+**Updated:** 17 August 2026  
 **Status:** INTERNAL CANONICAL SOURCE-COMPLETION ADDENDUM / CORRECTION GATE  
-**Controls:** read with `archive/CALIFICACION_FISCALIA_2012_2019_2026_SOURCE_BUNDLE_RETRIEVAL_GATE_16AUG2026.md`, `archive/CALIFICACION_JAN2026_THREE_SOURCE_PROPAGATION_AND_PICKUP_16AUG2026.md`, current `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`.
+**Controls:** read with `archive/CALIFICACION_FISCALIA_2012_2019_2026_SOURCE_BUNDLE_RETRIEVAL_GATE_16AUG2026.md`, `archive/CALIFICACION_JAN2026_THREE_SOURCE_PROPAGATION_AND_PICKUP_16AUG2026.md`, `archive/SUN_PARK_NONCONVALIDATION_CALIFICACION_OLAF_PINK_CONTINUUM_FIVE_SOURCE_INGEST_17AUG2026.md`, current `archive/CORRECTION_REGISTER.md` and `archive/MISSING_EVIDENCE_REGISTER.md`.
 
 ## Purpose
 
-A fresh connector-backed source-completion scan on 16-Aug-2026 recovered primary institutional/judicial material that closes or materially narrows several gaps preserved by the earlier ten-file CF-01→CF-10 ingest. This addendum **supersedes only the specific old missing-source classifications identified below**. It does not convert any criminal complaint or theory into a finding of criminal liability.
+A fresh connector-backed source-completion scan on 16-Aug-2026 recovered primary institutional/judicial material that closes or materially narrows several gaps preserved by the earlier ten-file CF-01→CF-10 ingest. A 17-Aug five-source follow-up further closes the primary 2021 traceability chain and adds a binary-custody correction for the CGPJ Annex 5. This addendum **supersedes only the specific old missing-source classifications identified below**. It does not convert any criminal complaint or theory into a finding of criminal liability.
 
 ---
 
@@ -159,6 +160,79 @@ CF-10 remains a party pleading, but its reproduced unitary-production/convalidat
 
 ---
 
+## 4A. 17-Aug follow-up — 24-Feb-2021 works/condition Auto and 12-May-2021 re-tender Providencia now controlled in the same source chain
+
+The 30-page traceability annex supplied on 17-Aug-2026 reproduces complete signed copies of two later primary judicial acts that materially extend the 24-Oct-2019 chain.
+
+### 24 February 2021 Auto
+
+The signed Auto records:
+
+- Aweswell's allegation that the relevant locals/pools perimeter had been demolished/reduced to rubble and the request for judicial inspection and expert valuation;
+- alleged inability to access the complex because security prevented entry;
+- the AC's contrary position that it had not delivered LPB's assets into CAM's possession and that CAM had acquired numerous third-party apartments, giving it an owner's access position;
+- CAM's position that its works concerned its own units / Community safety actions;
+- the court's observation that photographs showed works in interiors of uncertain ownership, rubble in common areas and **works in common zones that were the object of the isolated sale the court had not convalidated**;
+- denial of the requested inspection and pericial in the liquidation context; and
+- the court's express observation that such a request could have sense in a possible responsibility action against CAM or the AC.
+
+**Current classification:** `SIGNED PRIMARY COURT ACT / PHYSICAL-CONDITION AND WORKS DISPUTE BEFORE THE COURT / LIABILITY NOT DETERMINED`.
+
+Do not convert the order into a finding that CAM demolished LPB assets, that CAM/AC were liable, or that the court accepted Gil/Aweswell's full factual account.
+
+### 12 May 2021 Providencia
+
+The signed providencia opens bidding among offerors for LPB's listed fincas and expressly includes the same `locales` and `piscinas con solárium` — registry numbers 8.508–8.536, 8.653 and 8.654 — scheduling the hearing for **18 May 2021 at 10:00**. It fixes Ottawa's bond at **€735,694.02**.
+
+**Current classification:** `SIGNED PRIMARY COURT ACT / SAME LOCALS-POOLS PERIMETER AGAIN TENDERED AS LPB PROPERTY`.
+
+### Consequence
+
+The controlled traceability chain is now:
+
+`28-Nov-2018 consummated deed → Jan-2019 contemporaneous objection/notice → 24-Oct-2019 refusal to convalidate → 24-Feb-2021 works/condition dispute before the court → 12-May-2021 re-tender of the same relevant perimeter`.
+
+The finite question is no longer whether those dates/documents exist. It is what acts reconciled the contractual, Registry, possession, physical-works and **€400,000** consequences of the non-convalidated transaction before re-tender, and what equivalent disclosure reached bidders.
+
+---
+
+## 4B. 17-Aug contemporaneous 16-Jan-2019 court opposition — NOTICE SOURCE CONTROLLED
+
+The supplied nine-page `20190116 Denuncia y Oposicion Plan Liquidacion Incumplimiento.pdf` is a contemporaneous party pleading to the Mercantile Court. It expressly raised:
+
+- unitary-disposal architecture;
+- the 26-Jun-2018 suspension dispute;
+- the 28-Nov-2018 locals/pools sale reported by the AC;
+- the stated **€400,000** proceeds and subsequent payments;
+- the alleged `ob rem` problem;
+- possession/control allegations; and
+- the chronology by which the sale preceded the 12-Dec-2018 court-office step.
+
+**Current classification:** `CONTEMPORANEOUS PARTY PLEADING / HIGH-VALUE NOTICE-AND-OBJECTION SOURCE / UNDERLYING ALLEGATIONS NOT AUTOMATICALLY VERIFIED`.
+
+It is important for actor-knowledge chronology but does not substitute for the later signed court and Registry records.
+
+---
+
+## 4C. 28-Jul-2026 CGPJ Annex 5 — filed identity verified, supplied backup is not the exact final filed binary
+
+The official `REGAGE26e00069061338` receipt fingerprints the fifth filed PDF, `05_ANEXO_TRAZABILIDAD_NO_CONVALIDACION_LICITACION_2018_2021.pdf`, with SHA-512:
+
+`5132791ed17013e6a8ed8913c2fdcf711e40fefd0ad5cb98daf4d9f0cf374fcaa5954f7d281d1a2d45becf14f2fc2d3a223cd6cf9d6a1c1d698dcc950fef1039`.
+
+The supplied `(1)` backup copy has a different SHA-512, and the contemporaneous Gmail thread records a later `fixed annex` step before filing. Therefore:
+
+- the receipt proves a final Annex 5 was filed by name;
+- the supplied `(1)` file is a relevant pre-filing/backup copy;
+- it is **not** the exact receipt-fingerprinted final binary;
+- the exact final filed Annex 5 remains a priority recovery/diff target.
+
+See `archive/CGPJ_ALZADA_286_ANNEX5_BINARY_CUSTODY_ADDENDUM_17AUG2026.md`.
+
+This source-integrity point does not alter the independently controlled signed judicial records reproduced in the backup annex.
+
+---
+
 ## 5. 12-Jul-2016 quantified AC warning — gap narrowed, not fully closed
 
 Current repository source-completion work already records that a primary **12-Jul-2016 quantified LPB notice** has been located. Google Drive search additionally returns a source package explicitly describing the **burofax of 12-Jul-2016 directed to the AC and proof of sending/receipt**.
@@ -181,12 +255,16 @@ Still open / requiring stronger originals or complete files:
 4. original CAM offer / Plan Annex II as a standalone native source and original valuation(s), notwithstanding the Plan/Auto quotations;
 5. native 28-Nov-2018 protocol-2150 deed and payment/bank evidence;
 6. original 12-Dec-2018 Diligencia de Ordenación;
-7. original 9-Jan-2019 Registro de Tías qualification;
+7. original 9-Jan-2019 Registro de Tías qualification as a standalone primary source, notwithstanding its reproduction in the 17-Aug annex;
 8. original AC escrito 1760/19 of 20-Mar-2019;
-9. complete Arrecife-side record/current status after Valencia EG 19/2026 inhibition;
-10. downstream/current-status record after Tenerife Diligencias 20/2026 inhibition to Las Palmas;
-11. complete filed receipts/file references/outcomes for the remaining Jan–Feb-2026 complaint family;
-12. source-complete Community accounts/maintenance/operator-cost package and relevant 2017–2018 valuation originals.
+9. complete bank/accounting/refund/set-off/reversal trace for the **€400,000** and related AC/mass-credit payments;
+10. complete 18-May-2021 tender pack/acta/audiovisual, bids, attendance and bidder disclosures concerning the 2018 deed, non-convalidation, works/condition and €400,000 history;
+11. October-2021 / January-2022 acts and complete final 2022 deed/title bridge;
+12. exact final filed CGPJ Annex-5 binary matching the official receipt's SHA-512, followed by a controlled diff against the `(1)` backup;
+13. complete Arrecife-side record/current status after Valencia EG 19/2026 inhibition;
+14. downstream/current-status record after Tenerife Diligencias 20/2026 inhibition to Las Palmas;
+15. complete filed receipts/file references/outcomes for the remaining Jan–Feb-2026 complaint family;
+16. source-complete Community accounts/maintenance/operator-cost package and relevant 2017–2018 valuation originals.
 
 `not yet recovered` / `not yet source-complete` must never be rewritten as `does not exist`.
 
@@ -198,6 +276,9 @@ The source-completion scan strengthens the repository architecture in a precise 
 
 - the 2018 **unitary-production architecture is now directly supported by the original AC Plan**;
 - the 2018 separate unlinking/sale and later attempted convalidation are no longer dependent only on Aweswell's 2019 pleading: the **signed 24-Oct-2019 Auto directly records and refuses convalidation**;
+- the 17-Aug follow-up extends the primary chain through the **signed 24-Feb-2021 works/condition order and signed 12-May-2021 re-tender** of the same relevant perimeter;
+- the supplied 16-Jan-2019 pleading adds a high-value contemporaneous **court-facing notice** source but remains a party pleading;
+- the exact final CGPJ Annex-5 binary remains open despite verified filing identity, because the recovered backup hash differs from the official receipt fingerprint;
 - the Valencia→Arrecife step in EG 19/2026 is now a **verified signed institutional transfer**, not merely a later pleading report;
 - the 27-Jan-2026 Tenerife Diligencias 20/2026 act is now a **verified signed institutional decree**, not merely a CF-05 report.
 
@@ -207,6 +288,6 @@ These upgrades strengthen chronology, institutional notice and the objective doc
 
 ## 8. Continuity instruction
 
-Until the older canonical gate/startup wording is textually reconciled, **this addendum controls over any older sentence saying that the signed 27-Jan-2026 Tenerife decree, signed Valencia→Arrecife inhibition, original Plan or signed convalidation decision remain wholly missing**.
+Until the older canonical gate/startup wording is textually reconciled, **this addendum controls over any older sentence saying that the signed 27-Jan-2026 Tenerife decree, signed Valencia→Arrecife inhibition, original Plan, signed convalidation decision, 24-Feb-2021 works/condition order or 12-May-2021 re-tender remain wholly missing**.
 
-A future thread must apply stronger/current primary sources over earlier missing-source classifications.
+A future thread must apply stronger/current primary sources over earlier missing-source classifications and must preserve the Annex-5 binary-custody correction.
