@@ -34,7 +34,7 @@
   const section = document.createElement('section');
   section.id = 'lpam-cgpj169-calificacion-unitary';
   section.className = 'section alt';
-  section.dataset.lpamCgpj169Unitary = '20260817';
+  section.dataset.lpamCgpj169Unitary = '20260817b';
 
   const esFull = `
     <div class="shell record">
@@ -54,11 +54,11 @@
       <p><strong>2023 · CALIFICACIÓN.</strong> Permanecen hallazgos adversos de primera instancia sobre renta/Pink, Libro Diario y una cuestión más estrecha de colaboración documental, todos dentro del estado de recurso publicado. La cuestión finita ahora es si el contexto ya incorporado de control, comercialización, inversión y adquisición se reconstruyó al atribuir a Gil/Pink capacidad de cobro, causalidad y la consecuencia de <strong>€3.032.010,34</strong>.</p>
 
       <div class="callout">
-        <p><strong>LPAM–MAGISTRADO · TESTIMONIO REPORTADO.</strong> Patricia Domínguez dejó constancia de un relato según el cual LPAM habría descrito al Magistrado como amigo y con acceso/contacto personal o directo. <strong>Gil Marer manifiesta que cree firmemente ese relato.</strong> Esa convicción es una posición de credibilidad de parte; <strong>no es corroboración independiente</strong> de amistad, llamadas, reuniones ni influencia.</p>
-        <p>La comprobación es cerrada y verificable: <strong>palabras exactas → fecha/lugar/testigos → llamadas/mensajes → reuniones/accesos → canal declarado o no declarado → corroboración o refutación</strong>.</p>
+        <p><strong>CUESTIÓN ADICIONAL DE IMPARCIALIDAD APARENTE.</strong> Existe un relato documentado que atribuye a <strong>un actor privado de un perímetro materialmente interesado</strong> un grado inusualmente próximo de proximidad personal o acceso directo al decisor judicial. El relato se considera suficientemente serio para exigir comprobación independiente, pero <strong>no se publica como hecho probado</strong>.</p>
+        <p>La pregunta es cerrada y verificable: <strong>palabras exactas → fecha/lugar/testigos → llamadas/mensajes → reuniones/accesos → eventual canal declarado o no declarado → corroboración o refutación</strong>. La existencia de esa alegación no prueba por sí sola amistad, influencia, parcialidad, concertación, corrupción ni prevaricación.</p>
       </div>
 
-      <p><strong>DI 169/2026 · ALZADA 286/2026.</strong> El archivo disciplinario es de <strong>14-may-2026</strong>. El recurso se presentó formalmente el <strong>15-jun-2026</strong> bajo <code>REGAGE26e00056359487</code>; el <strong>18-jun</strong> es la fecha de entrada en CGPJ comunicada después por la Sección de Recursos. El escrito de 15-jul quedó expresamente unido al expediente. El <strong>módulo específico LPAM–Magistrado</strong> aparece por primera vez formalmente acreditado en la vía de Alzada en el suplemento de <strong>28-jul-2026</strong>, <code>REGAGE26e00069061338</code>. A la fecha de control no se ha localizado resolución sustantiva posterior ni prueba de examen de fondo de ese suplemento.</p>
+      <p><strong>DI 169/2026 · ALZADA 286/2026.</strong> El archivo disciplinario es de <strong>14-may-2026</strong>. El recurso se presentó formalmente el <strong>15-jun-2026</strong> bajo <code>REGAGE26e00056359487</code>; el <strong>18-jun</strong> es la fecha de entrada en CGPJ comunicada después por la Sección de Recursos. El escrito de 15-jul quedó expresamente unido al expediente. El <strong>módulo específico sobre posible proximidad o acceso no declarado</strong> aparece por primera vez formalmente acreditado en la vía de Alzada en el suplemento de <strong>28-jul-2026</strong>, <code>REGAGE26e00069061338</code>. A la fecha de control no se ha localizado resolución sustantiva posterior ni prueba de examen de fondo de ese suplemento.</p>
 
       <p><strong>Gramática de prueba:</strong><br><code>VIDAS PARALELAS YA PUESTAS EN EL EXPEDIENTE → CONTROL/CAPACIDAD REAL → DEBER DE COBRO → CAPACIDAD REAL DE COBRAR/OPERAR → CAUSAS COMPETIDORAS → CAUSALIDAD ATRIBUIDA → CULPABILIDAD</code></p>
 
@@ -85,11 +85,11 @@
       <p><strong>2023 · CLASSIFICATION.</strong> Materially adverse first-instance findings remain on the Pink/rent branch, Daily Journal issue and a narrower document-cooperation issue, all within the published appeal status. The finite question is now whether the already-filed context of control, commercialisation, investment and acquisition was reconstructed before assigning Gil/Pink collection capacity, causation and the <strong>€3,032,010.34</strong> consequence.</p>
 
       <div class="callout">
-        <p><strong>LPAM–JUDGE · REPORTED TESTIMONY.</strong> Patricia Domínguez recorded an account in which LPAM was reported to have described the Judge as a friend with personal/direct contact or access. <strong>Gil Marer states that he strongly believes that account.</strong> His belief is a party credibility position; <strong>it is not independent corroboration</strong> of friendship, calls, meetings or influence.</p>
-        <p>The verification question is finite: <strong>exact words → date/place/witnesses → calls/messages → meetings/access → disclosed or undisclosed channel → corroboration or disproof</strong>.</p>
+        <p><strong>ADDITIONAL APPEARANCE-OF-IMPARTIALITY QUESTION.</strong> A documented account attributes to <strong>a private actor within a materially interested perimeter</strong> an unusually close degree of personal proximity or direct access to the judicial decision-maker. The account is considered sufficiently serious to require independent verification, but <strong>is not published as established fact</strong>.</p>
+        <p>The question is finite and testable: <strong>exact words → date/place/witnesses → calls/messages → meetings/access → any disclosed or undisclosed channel → corroboration or disproof</strong>. The existence of the allegation does not by itself prove friendship, influence, bias, coordination, corruption or judicial prevarication.</p>
       </div>
 
-      <p><strong>DI 169/2026 · APPEAL 286/2026.</strong> The disciplinary archive is dated <strong>14-May-2026</strong>. The appeal was formally presented on <strong>15-Jun-2026</strong> under <code>REGAGE26e00056359487</code>; <strong>18-Jun</strong> is the later CGPJ-reported Council entry date. The 15-Jul traceability filing was expressly confirmed as joined. The <strong>specific LPAM–Judge module</strong> is first presently verified as formally presented in the appeal route in the <strong>28-Jul-2026</strong> supplement, <code>REGAGE26e00069061338</code>. No later substantive decision or proof of merits examination of that supplement has been located at the controlled cut-off.</p>
+      <p><strong>DI 169/2026 · APPEAL 286/2026.</strong> The disciplinary archive is dated <strong>14-May-2026</strong>. The appeal was formally presented on <strong>15-Jun-2026</strong> under <code>REGAGE26e00056359487</code>; <strong>18-Jun</strong> is the later CGPJ-reported Council entry date. The 15-Jul traceability filing was expressly confirmed as joined. The <strong>specific module concerning possible undisclosed proximity or direct access</strong> is first presently verified as formally presented in the appeal route in the <strong>28-Jul-2026</strong> supplement, <code>REGAGE26e00069061338</code>. No later substantive decision or proof of merits examination of that supplement has been located at the controlled cut-off.</p>
 
       <p><strong>Evidence grammar:</strong><br><code>PARALLEL LIVES ALREADY PUT IN THE RECORD → REAL CONTROL/CAPACITY → COLLECTION DUTY → REAL ABILITY TO COLLECT/OPERATE → COMPETING CAUSES → ATTRIBUTED CAUSATION → CULPABILITY</code></p>
 
@@ -103,8 +103,8 @@
       <p class="eyebrow">ACTUALIZACIÓN PROBATORIA · 17 AGO 2026</p>
       <h2>La vida RICPE/CAM de Sun Park entró formalmente en Concurso 36/2012 antes de la sentencia de 2023</h2>
       <p>El 4-feb-2021 Aweswell presentó por LexNET una reposición que alegaba que CAM presentaba públicamente Sun Park como proyecto/propiedad y captaba inversores mediante RIC Private Equity; la Diligencia de 17-feb la registra como <strong>918/2021</strong>. CNMV y AEAT habían recibido el 13-ene comunicaciones formales sobre el mismo perímetro. <strong>Esto prueba la ruta de conocimiento institucional, no la verdad automática de cada alegación.</strong></p>
-      <p>Patricia Domínguez también reporta que LPAM describió una relación de amistad/acceso personal con el Magistrado; Gil Marer manifiesta que cree firmemente ese relato. <strong>La relación sigue siendo una cuestión de corroboración objetiva, no un hecho establecido.</strong> El módulo específico fue presentado formalmente en Alzada 286/2026 el 28-jul-2026, <code>REGAGE26e00069061338</code>.</p>
-      <p class="note"><strong>Límite:</strong> conocimiento institucional + testimonio reportado justifican verificación; no prueban por sí solos influencia, concertación, corrupción o prevaricación.</p>
+      <p>Permanece una cuestión no resuelta: si <strong>un actor privado de un perímetro materialmente interesado</strong> disfrutó de una proximidad personal o acceso directo no declarado al decisor judicial. <strong>Es una alegación que exige corroboración objetiva, no un hecho establecido.</strong> El módulo correspondiente fue presentado formalmente en Alzada 286/2026 el 28-jul-2026, <code>REGAGE26e00069061338</code>.</p>
+      <p class="note"><strong>Límite:</strong> conocimiento institucional + alegación documentada justifican verificación; no prueban por sí solos influencia, concertación, corrupción o prevaricación.</p>
     </div>`;
 
   const enCompact = `
@@ -112,8 +112,8 @@
       <p class="eyebrow">EVIDENCE UPDATE · 17 AUG 2026</p>
       <h2>Sun Park's RICPE/CAM external life formally entered Insolvency 36/2012 before the 2023 judgment</h2>
       <p>On 4-Feb-2021 Aweswell filed by LexNET a reposición alleging that CAM publicly presented Sun Park as its property/project and attracted investors through RIC Private Equity; the 17-Feb Diligencia records it as <strong>918/2021</strong>. CNMV and AEAT had received formal 13-Jan communications concerning the same perimeter. <strong>This proves the institutional notice route, not the automatic truth of every allegation.</strong></p>
-      <p>Patricia Domínguez also reports LPAM describing a friendship/personal-access relationship with the Judge; Gil Marer states that he strongly believes that account. <strong>The relationship remains an objective corroboration question, not an established fact.</strong> The specific module was formally presented in Appeal 286/2026 on 28-Jul-2026, <code>REGAGE26e00069061338</code>.</p>
-      <p class="note"><strong>Boundary:</strong> institutional knowledge plus reported testimony warrants verification; it does not by itself prove influence, coordination, corruption or judicial prevarication.</p>
+      <p>An unresolved question remains whether <strong>a private actor within a materially interested perimeter</strong> enjoyed undisclosed personal proximity or direct access to the judicial decision-maker. <strong>It is an allegation requiring objective corroboration, not an established fact.</strong> The corresponding module was formally presented in Appeal 286/2026 on 28-Jul-2026, <code>REGAGE26e00069061338</code>.</p>
+      <p class="note"><strong>Boundary:</strong> institutional knowledge plus a documented allegation warrants verification; it does not by itself prove influence, coordination, corruption or judicial prevarication.</p>
     </div>`;
 
   section.innerHTML = isFull ? (isEs ? esFull : enFull) : (isEs ? esCompact : enCompact);
