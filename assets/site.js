@@ -173,4 +173,8 @@
   // 7 June 2018: bilingual convergence-hub reader architecture plus a high homepage hinge module.
   // This is a presentation layer over the controlled dossier; it does not create new primary findings.
   load('sun-park-7june-convergence-20260817.js?v=20260817a');
+
+  // 2008→2022 Community/CEXP ACTA authority provenance: Alimarket baseline, entity corrections,
+  // disputed 22-Jun-2011 provenance node, source-safe 2016/2018 primary findings and downstream context bridges.
+  load('community-actas-authority-provenance-20260817.js?v=20260817b');
 })();
