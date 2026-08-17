@@ -4,46 +4,82 @@
 **Author and intended digital signatory:** Gil Marer  
 **Place:** San Cristóbal de La Laguna  
 **Institutional addressee:** RIC Private Equity Investment Partners, S.C.R., S.A. (`RICPE`)  
-**Status:** `FINAL FOR DIGITAL SIGNATURE / NOT YET FILED`  
+**Status:** `FINAL V6 FOR DIGITAL SIGNATURE / NOT YET FILED`  
 **Public/private treatment:** public-safe metadata may be published; the unsigned and later signed binaries remain private unless Gil Marer expressly authorises publication or a public-safe redacted copy is prepared.
 
-## 1. Controlled document
+## 1. Controlling document
 
-The final controlled pre-signature document is:
+The controlling final pre-signature document is:
 
-`01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_V5_PARA_FIRMA.pdf`
+`01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_V6_PARA_FIRMA.pdf`
 
-Document properties verified before this control record was created:
+Document properties verified after the final highlighted-review pass:
 
 - 21 A4 pages;
 - PDF author metadata: `Gil Marer`;
 - title: `Comunicación formal al Consejo de Administración de RICPE - 17 agosto 2026`;
+- subject: preservation, independent investigation, valuation, finance, correction and proposed resolution;
 - place/date expressed in the document: San Cristóbal de La Laguna, 17 August 2026;
 - intended execution: Gil Marer applies his own digital signature;
-- pre-signature SHA-256: `932c015ba8cbc689c2df92b5f9d5f34bed3deb59c8ba1ab59f5175b05c2c65f6`.
+- pre-signature SHA-256: `b09c8754be21fe618b815f09d87c6ebbb569db53854b03d67c8ad72e020665f6`.
 
-Editable control source:
+Clean editable control source:
 
-`01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_V5.docx`
+`01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_V6_LIMPIA_PARA_FIRMA.docx`
 
-Pre-signature DOCX SHA-256:
+Pre-signature clean DOCX SHA-256:
 
-`07025cf1bc176d5e57b0fe59067af2cf6e636bc851713aaa3b0d29e73d461cca`
+`cd269747f30cc12fa9cf00a2e4f4a4eaed2cddca7e2bec2d1cb2ad0fb4fc5986`
 
-The PDF is not stored in public GitHub. A future thread must recover the exact binary from the controlled conversation artifact, private evidence store or user-supplied signed copy and verify the hash before relying on it.
+Review/audit source preserving the accepted amendments in yellow:
 
-## 2. Intended filing route
+`01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_V6_CAMBIOS_RESALTADOS.docx`
+
+Review/audit DOCX SHA-256:
+
+`f9dba7f74202297cec43be018ce7e5a546be59c6beecb92f9313bb2125b40793`
+
+The prior Final V5 and its pre-signature hashes are **SUPERSEDED BEFORE FILING**. They remain part of the drafting/provenance history but must not be signed, submitted or described as the controlling communication.
+
+The V6 PDF is not stored in public GitHub. A future thread must recover the exact binary from the controlled conversation artifact, private evidence store or user-supplied signed copy and verify the hash before relying on it.
+
+## 2. Final-review controls
+
+The reviewed Final V6 was subjected to the following controls:
+
+- every table run containing text uses Carlito 10.5 pt, matching the body text;
+- 21 pages were rendered and visually inspected with no clipping, overlap, broken tables or missing glyphs;
+- the clean copy contains no yellow highlights;
+- the audit copy contains the accepted amendments highlighted for traceability;
+- no comments or tracked insertions/deletions remain;
+- numerical OOXML attributes were normalised to valid integer values;
+- DOCX accessibility audit reported zero high-, medium- or low-severity findings;
+- the PDF is openable, unencrypted, text-searchable, A4, tagged, with embedded fonts, no XFA, attachments, forms, JavaScript or annotations.
+
+The substantive final pass also preserves these evidence boundaries:
+
+- `CAM` identifies Construcciones Acosta Matos, S.A., not every entity or person in the wider group;
+- the Aweswell/LPB/Matkator position is stated as approximately 75%, subject to finca-by-finca reconciliation;
+- the JDAM/Lusán founding/shareholding chain remains a documentary verification request;
+- the October-2017 credit-assignment date remains 20/27 October pending the native contract;
+- 7 June 2018 is treated as alleged/source-supported material or de facto control, not whole-hotel legal title or possession;
+- the Series F/G total is controlled while the exact split and the approximately €4.9m/86-job pairing remain open;
+- the approximately €4.5m Community layer remains party-supplied pending the primary file;
+- Orion's current corporate page is used as evidence that FMMM is presently published as a board member, subject to production of appointment, acceptance, date, period and functions;
+- no Orion responsibility or Sun Park/MYND-to-Orion value flow is inferred from that later role.
+
+## 3. Intended filing route
 
 The intended first filing event is directed to RICPE only:
 
-1. upload the exact digitally signed PDF through the RICPE Ethical Channel;
+1. upload the exact digitally signed V6 PDF through the RICPE Ethical Channel;
 2. send the same signed PDF, without conversion or editing, by corporate email to RICPE;
 3. preserve the channel receipt, case/reference code, date/time, status certificate and the native sent email with headers;
 4. preserve the signed PDF under its exact filename and calculate a new SHA-256 after signature.
 
 The Ethical Channel and email transmissions are two delivery routes for the same controlled communication. They must not become divergent document versions.
 
-## 3. Status vocabulary — do not collapse stages
+## 4. Status vocabulary — do not collapse stages
 
 Use the following stages separately:
 
@@ -59,9 +95,9 @@ Controlled rules:
 - `shared with CNMV or another authority` does not mean RICPE referred it, that the authority accepted competence, opened an investigation or adopted the allegations;
 - an institutional reference proves the procedural event stated by that reference, not every underlying proposition in the communication.
 
-As of this control record, there is **no RICPE Ethical Channel receipt, case code, signed-PDF hash or corporate-email transmission record**. The public website must therefore describe the communication only as prepared for signature and filing.
+As of this control record, there is **no RICPE Ethical Channel receipt, case code, signed-PDF hash or corporate-email transmission record**. The public website must therefore describe the Final V6 only as prepared for signature and filing.
 
-## 4. Post-filing evidence capture
+## 5. Post-filing evidence capture
 
 Immediately after submission, obtain and record:
 
@@ -78,7 +114,7 @@ Immediately after submission, obtain and record:
 | Investigation | admission/scope/investigator/timetable; do not infer merits from opening |
 | Board treatment | date, body, decision and records available |
 
-## 5. Later CNMV and authority transmissions
+## 6. Later CNMV and authority transmissions
 
 Gil Marer intends, after the RICPE filing, to consider sharing the signed communication and filing evidence with CNMV and potentially other competent authorities.
 
@@ -99,11 +135,11 @@ For CNMV, distinguish at least:
 
 For public-funds, tax, EU-financial-interest, criminal, labour or other specialist bodies, preserve competence-specific framing. The same PDF may be relevant to several bodies, but filing the same object does not fuse their legal functions or establish that they adopted the same interpretation.
 
-## 6. Public-site wording before filing
+## 7. Public-site wording before filing
 
 Permitted public-safe wording:
 
-> On 17 August 2026 Gil Marer, writing from San Cristóbal de La Laguna, prepared a 21-page formal communication addressed exclusively to RICPE for digital signature and submission through the Ethical Channel and corporate email. At the time of this update it is not described as filed because no filing receipt has yet been recorded. The site will be updated after filing with the public-safe reference, signed-file hash and any later transmission references.
+> On 17 August 2026 Gil Marer, writing from San Cristóbal de La Laguna, completed a reviewed 21-page Final V6 formal communication addressed exclusively to RICPE for digital signature and submission through the Ethical Channel and corporate email. At the time of this update it is not described as filed because no filing receipt has yet been recorded. The site will be updated after filing with the public-safe reference, signed-file hash and any later transmission references.
 
 Do not publish before filing:
 
@@ -114,9 +150,9 @@ Do not publish before filing:
 - the signed or unsigned full binary without an express publication decision;
 - or a statement that CNMV or another authority has examined, accepted or referred the matter.
 
-## 7. Relationship to the substantive RICPE track
+## 8. Relationship to the substantive RICPE track
 
-This filing-control record does not change the evidential status of the substantive allegations or open questions in:
+This filing-control record does not convert the substantive allegations or open questions into findings. It must be read with:
 
 - `archive/RICPE_GOVERNANCE_FUNDING_RECONCILIATION_16AUG2026.md`;
 - `archive/INSTITUTIONALISATION_CHAIN_RIC_EU_REGIONAL_15AUG2026.md`;
@@ -124,9 +160,9 @@ This filing-control record does not change the evidential status of the substant
 - `archive/MISSING_EVIDENCE_REGISTER.md`;
 - `archive/CORRECTION_REGISTER.md`.
 
-It records the controlled outgoing instrument and the next institutional steps. The signed communication remains an allegation-and-evidence submission until particular propositions are verified or rejected by competent evidence or decision.
+The signed communication remains an allegation-and-evidence submission until particular propositions are verified or rejected by competent evidence or decision.
 
-## 8. Post-filing execution prompt
+## 9. Post-filing execution prompt
 
 Use:
 
@@ -134,6 +170,6 @@ Use:
 
 The next thread must update this record rather than creating a competing filing chronology.
 
-## 9. Continuity status
+## 10. Continuity status
 
-`DELETION-SAFE WITH OPEN FILING EVIDENCE` — the final pre-signature document identity and hashes are controlled; signature, filing, receipt, email transmission, RICPE handling and later CNMV/authority references remain to be captured from primary records.
+`DELETION-SAFE WITH OPEN FILING EVIDENCE` — the reviewed Final V6 identity, pre-signature hashes, QA and implementation state are controlled; signature, filing, receipt, email transmission, RICPE handling and later CNMV/authority references remain to be captured from primary records.
