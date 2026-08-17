@@ -5,16 +5,20 @@
 
 ## 1. Universal continuity conclusion
 
-**DELETION-SAFE WITH OPEN EVIDENCE — conditional on the present digitisation/source-register PR being merged to `main`.**
+**DELETION-SAFE WITH OPEN EVIDENCE AND OPEN CUSTODY.**
 
 The earlier authority-lineage package was merged through PR #285 and finalised through PR #286. This rerun was required because the 17-Aug-2026 Gmail/Drive pass surfaced materially new source intelligence that was not contained in the earlier deletion audit: exact Gmail source IDs, attachment filenames, the 22-Jun-2011 ACTA attachment, the 19-Nov-2015 ACTA variants, the April-2016 convocation/meeting-notice chain, post-April debt-analysis files, the June-2016 AC escalation/burofax-planning thread, and the June-2016 transmission of the Community-credit corpus to concursal counsel.
 
-That new intelligence is now canonicalised on the current branch in:
+That new intelligence was merged to `main` through PR **#302**, `Preserve ACTA 2011-2016 digitisation source corpus`, squash commit:
+
+`e76afc51fc8af73d072f67ac6e3ac54a1017ed87`
+
+It is now canonicalised in:
 
 - `archive/SUN_PARK_ACTA_2011_2016_DIGITISATION_SOURCE_REGISTER_17AUG2026.md`;
 - this updated audit.
 
-Until merge, current `main` is **not fully deletion-safe for the newly surfaced 2011–2016 source corpus**. After merge, the thread is deletion-safe as institutional memory, while native-evidence custody remains incomplete as stated below.
+A fresh thread therefore does not need this conversation to recover the newly surfaced 2011–2016 source map. Native-evidence custody remains incomplete as stated below.
 
 ## 2. Earlier continuity controls preserved
 
@@ -84,7 +88,7 @@ The June-2016 thread `15571b5b4be8e72b`, including message `155770bc9a786fba`, r
 
 ## 4. Full-digitisation status
 
-The user's requested end-state is **full digitisation of ACTAS and related communications**, meaning each important governance event is reconstructed as:
+The requested end-state is **full digitisation of ACTAS and related communications**, meaning each important governance event is reconstructed as:
 
 `NOTICE / INVITATION / AGENDA`
 → `OWNERSHIP / ATTENDANCE / PROXIES`
@@ -110,7 +114,7 @@ This audit distinguishes repository memory from evidence custody.
 
 ### Repository layer
 
-After this branch is merged, the public-safe repository will preserve:
+The public-safe repository now preserves:
 
 - source-native Gmail and Drive identifiers;
 - filenames and relevant dates;
@@ -156,7 +160,7 @@ Future public use must not quote or reproduce privileged communications without 
 
 ## 8. Fresh-thread recovery path
 
-After merge, a fresh ACTA/Community-authority thread should recover this work by reading:
+A fresh ACTA/Community-authority thread can recover this work by reading:
 
 1. `CHATGPT_START_HERE.md`;
 2. `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
@@ -172,7 +176,7 @@ After merge, a fresh ACTA/Community-authority thread should recover this work by
 
 Before this rerun, the answer was **NO** for the newly surfaced source corpus: a fresh thread could recover the visual theory but not the exact 2011–2016 Gmail/attachment retrieval map discovered in this conversation.
 
-Once the present source register and updated audit are merged, the answer becomes **YES for institutional-memory continuity**, because a fresh thread can recover:
+After PR #302 merged, the answer is **YES for institutional-memory continuity**, because a fresh thread can recover:
 
 - the authority-lineage architecture;
 - the good-faith 2012 correction;
@@ -181,9 +185,9 @@ Once the present source register and updated audit are merged, the answer become
 - the June-2016 adviser/AC escalation chronology;
 - the privilege boundary;
 - the exact full-digitisation and custody gaps;
-- the native-source retrieval keys.
+- the native-source retrieval keys;
+- the merge state and controlling source-register path.
 
-It remains **WITH OPEN EVIDENCE / OPEN CUSTODY** because full ACTA transcription, final AC-burofax proof, native-vault export and cryptographic manifest are not complete.
+It remains **WITH OPEN EVIDENCE AND OPEN CUSTODY** because full ACTA transcription, final AC-burofax proof, native-vault export and cryptographic manifest are not complete.
 
-**Current conclusion before merge: NOT DELETION-SAFE for the newly surfaced 2011–2016 corpus.**  
-**Required conclusion after merge: DELETION-SAFE WITH OPEN EVIDENCE AND OPEN CUSTODY.**
+**Conclusion: DELETION-SAFE WITH OPEN EVIDENCE AND OPEN CUSTODY.**
