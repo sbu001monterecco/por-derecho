@@ -2,11 +2,11 @@
 
 **Original date:** 16 August 2026  
 **Canonical update:** **17 August 2026**  
-**Status:** `MANDATORY CALIFICACIÓN CROSS-LINK WHEN LPAM / JUDGE CONTACT / IMPARTIALITY IS IN SCOPE`
+**Status:** `MANDATORY CALIFICACIÓN CROSS-LINK WHEN LPAM / JUDGE CONTACT / IMPARTIALITY IS IN SCOPE / PUBLIC IDENTITY CONTROL APPLIED`
 
 ## 17-Aug integrated override
 
-The LPAM module must no longer be read only as a May-2021 appearance-of-impartiality episode. It now sits inside a wider, separately documented Judge/court-knowledge chain:
+The LPAM module sits inside a wider, separately documented Judge/court-knowledge chain:
 
 `2018 reported rescue/exit notice → 2020 RICPE public presentation → 13-Jan-2021 CNMV/AEAT alerts → 4-Feb-2021 formal LexNET challenge → 17-Feb-2021 registro 918/2021 → 2023 Calificación → CGPJ DI 169/2026 / Alzada 286/2026`
 
@@ -16,8 +16,15 @@ Controlling integrated files:
 - `archive/CALIFICACION_LPAM_CGPJ169_JUDGE_KNOWLEDGE_OVERRIDE_17AUG2026.md`
 - `archive/CORRECTION_REGISTER_LPAM_CGPJ169_2021_ALERT_CHAIN_ADDENDUM_17AUG2026.md`
 - `archive/THREAD_DELETION_CONTINUITY_AUDIT_LPAM_CGPJ169_CALIFICACION_17AUG2026.md`
+- `archive/ANONYMISATION_AND_LPAM_NAMING_CONTROL_17AUG2026.md`
 
 The verified **918/2021** filing materially upgrades the knowledge analysis: before Sentencia 163/2023, a formal adversarial filing inside Concurso 36/2012 expressly alleged that CAM/RICPE were publicly presenting Sun Park as an owned investment/project proposition while the LPB asset perimeter remained in the insolvency process.
+
+## Identity and naming rule
+
+The public repository and website reserve the identity of the person within Gil Marer's personal and business perimeter who memorialised the LPAM account. Refer to that person as **the witness/declarant from Gil Marer's perimeter**. A second private person formerly referred to by first name is **one of Gil Marer's legal advisers at the relevant time**.
+
+Do not confuse either person with **Laura Patricia Acosta Matos (LPAM)**. LPAM remains fully identified on first reference because the reported remarks relevant to this module are attributed to her. Never use `Patricia` alone in public text.
 
 ## Retrieval rule
 
@@ -52,8 +59,8 @@ The 17-Aug knowledge upgrade adds another mandatory sequence:
 ## Evidence that must travel with the allegation
 
 - 24-Jan-2018 email: `Intermediación/Comisiones (3%) - 350.000,00` is a contemporaneously recorded line only; payment, recipient, unlawfulness and any Judge connection are unproved.
-- 5-Jun-2020 email: proves Patricia memorialised the attributed LPAM statement by that date; it does not prove the asserted relationship/call history.
-- **Gil Marer states on 17-Aug-2026 that he strongly believes Patricia Domínguez's account of LPAM's reported remarks. This is a party credibility position, not independent corroboration.**
+- 5-Jun-2020 email: proves that **the witness from Gil Marer's personal and business perimeter** memorialised the attributed LPAM statement by that date; it does not prove the asserted relationship/call history. The source also identifies **one of Gil Marer's legal advisers at the relevant time** as present.
+- **Gil Marer states on 17-Aug-2026 that he strongly believes the witness's account of LPAM's reported remarks. This is a party credibility position, not independent corroboration.**
 - 13-Jan-2021: CNMV filing is formally registered under **2021002141**; AEAT telematic registry separately records `ZZ061 / ZZ06`, subject `Posible fraude de inversores mediante la materialización de la RIC`. Neither proves regulator validation of fraud.
 - 4-Feb-2021: Aweswell's verified LexNET reposición in Concurso 36/2012 expressly put the CAM/RICPE owner/project/investor-presentation allegation before Mercantil nº1.
 - 17-Feb-2021: court Diligencia records the challenge as **registro 918/2021**. This proves procedural incorporation of the challenge, not personal reading of every annex or the truth of every allegation.
@@ -65,12 +72,12 @@ The 17-Aug knowledge upgrade adds another mandatory sequence:
 
 ## Public implementation
 
-Two bilingual layers are now loaded from `assets/site.js`:
+Two bilingual layers are loaded from `assets/site.js`:
 
 1. `assets/lpam-magistrado-source-control-20260816.js` — narrow source/counterevidence/finite-verification control; and
 2. `assets/lpam-cgpj169-calificacion-unitary-20260817.js` — integrated 2018→2021→2023→CGPJ knowledge chain across Calificación, Judge/Court, CGPJ, RICPE, multiple-financial-lives and institutional-accountability routes.
 
-The second layer makes the central proposition public without upgrading the LPAM account into fact: the 2021 formal court record already contained the CAM/RICPE parallel-life allegation; the later LPAM account is a separate relationship/access corroboration question.
+The first layer now expressly anonymises the witness from Gil Marer's perimeter and the legal adviser while fully naming **Laura Patricia Acosta Matos (LPAM)**.
 
 ## Finite open evidence
 
@@ -87,4 +94,4 @@ The second layer makes the central proposition public without upgrading the LPAM
 
 ## Control sentence
 
-**The current corpus is strong enough to prove that the CAM/RICPE parallel-life allegation entered the Mercantile-court record in early 2021 and to state accurately that Patricia reported the LPAM–Magistrado account and Gil believes it. It is not evidence-complete enough to state friendship, improper access, influence, bias, collusion or effect on Sentencia 163/2023 as established fact. Those remain finite, testable verification questions.**
+**The current corpus is strong enough to prove that the CAM/RICPE parallel-life allegation entered the Mercantile-court record in early 2021 and to state accurately that a person within Gil Marer's perimeter reported the LPAM–Magistrado account and that Gil believes that witness. It is not evidence-complete enough to state friendship, improper access, influence, bias, collusion or effect on Sentencia 163/2023 as established fact. Those remain finite, testable verification questions.**
