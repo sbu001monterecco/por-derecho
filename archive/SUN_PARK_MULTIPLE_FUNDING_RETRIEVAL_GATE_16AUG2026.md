@@ -1,6 +1,7 @@
 # SUN PARK MULTIPLE-FUNDING / MULTIPLE-FINANCIAL-LIVES RETRIEVAL GATE
 
 **Created:** 16 August 2026  
+**Updated:** 17 August 2026  
 **Status:** MANDATORY DIRECT-PATH GATE
 
 ## Trigger
@@ -16,6 +17,7 @@ Read and apply this gate before any repository search, public drafting, filing, 
 - GC/836/P06, the €3,440,914.20 subsidy, €11,469,714 eligible investment, 60 jobs or FEDER;
 - employment duplication or the alleged approximately 50-FTE operating requirement;
 - what the Administrador Concursal or Juzgado knew about external refurbishment, financing, RIC, subsidy or public-support lives;
+- the 7-Jan-2025 OLAF/Justice alert, FTI Bavarian COVID support or Meeting Point/SEPI rescue finance where any of those are used to allege Sun Park-specific money flow;
 - any attempt to connect Sun Park funding to Orion;
 - FMMM’s route from paid Sun Park/Comunidad administration into Pamalexsha/AGM/Orion.
 
@@ -27,14 +29,15 @@ Read and apply this gate before any repository search, public drafting, filing, 
 4. `archive/MISSING_EVIDENCE_REGISTER.md`
 5. `archive/MISSING_EVIDENCE_REGISTER_MULTIPLE_FUNDING_APPEND_16AUG2026.md`
 6. `archive/SUN_PARK_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_CONTROL_CHAIN_16AUG2026.md`
-7. `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`
-8. `archive/SUN_PARK_MASTER_STORYLINE_MULTIPLE_FINANCIAL_LIVES_ADDENDUM_16AUG2026.md`
-9. `archive/INSTITUTIONALISATION_CHAIN_RIC_EU_REGIONAL_15AUG2026.md`
-10. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`
-11. `archive/CALIFICACION_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_ADDENDUM_16AUG2026.md`
-12. `archive/RICPE_ORION_PLATFORM_CONTINUITY_15AUG2026.md`
-13. `archive/CONTINUOUS_MAINTENANCE_MATRIX_MULTIPLE_FUNDING_UPDATE_16AUG2026.md`
-14. the primary-source or specialist ledgers for the particular amount, valuation, property, employment promise or institutional gate.
+7. `archive/SUN_PARK_NONCONVALIDATION_CALIFICACION_OLAF_PINK_CONTINUUM_FIVE_SOURCE_INGEST_17AUG2026.md`
+8. `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`
+9. `archive/SUN_PARK_MASTER_STORYLINE_MULTIPLE_FINANCIAL_LIVES_ADDENDUM_16AUG2026.md`
+10. `archive/INSTITUTIONALISATION_CHAIN_RIC_EU_REGIONAL_15AUG2026.md`
+11. `archive/CALIFICACION_CONCURSO36_PARALLEL_LIVES_PUBLICATION_CONTROL_16AUG2026.md`
+12. `archive/CALIFICACION_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_ADDENDUM_16AUG2026.md`
+13. `archive/RICPE_ORION_PLATFORM_CONTINUITY_15AUG2026.md`
+14. `archive/CONTINUOUS_MAINTENANCE_MATRIX_MULTIPLE_FUNDING_UPDATE_16AUG2026.md`
+15. the primary-source or specialist ledgers for the particular amount, valuation, property, employment promise or institutional gate.
 
 If allegations, criminal characterisation, DP 1901/2026, DP 1956/2026, Control 21/22/24 or actor responsibility are in scope, also apply:
 
@@ -49,6 +52,19 @@ Project Sun Rock alleges, on a substantiated documentary basis, that the same Ho
 Do not reduce that position to “several distinct layers converged.” The instruments may be legally distinct while the qualifying base overlaps. The mandatory question is whether the same property, work, invoice, cost, job, value, collateral or project representation was used more than once and whether every gate received a complete account of the other layers and the ownership/concurso position.
 
 Do not convert the allegation into a competent finding of fraud, unlawful aid, double payment or criminal intent unless a primary decision does so.
+
+### 7-Jan-2025 OLAF/Justice alert boundary
+
+The 7-Jan-2025 alert is **historically probative notice of the allegation**, not transaction-level proof of the FTI/Meeting Point rescue-money bridge. It alleged that FTI Bavarian COVID support, Meeting Point/SEPI rescue finance and RICPE/CAM finance formed a `triple dipping` structure around the same Sun Park asset/income.
+
+Current repository control is stricter:
+
+- do not state that FTI's public support financed Sun Park without a traced source-and-use chain;
+- do not state that Meeting Point/SEPI rescue money financed Sun Park without a traced source-and-use chain;
+- group-level rescue, commercialisation of the same hotel and later project finance may justify investigation but do not by themselves prove the same euro, guarantee or collateral was reused;
+- keep this branch open unless primary records establish `rescue decision → beneficiary account → drawdown/payment → intra-group transfer → Sun Park contract/invoice/account → recipient/use/disclosure`.
+
+This control does **not** dilute the separately substantiated same-asset allegation based on the current verified Sun Park-specific anchors: fragmented title/internal RICPE narrowing, later RICPE/HNT finance, regional incentive, FEDER identification and the same current operating hotel.
 
 ## Mandatory evidence-status labels
 
@@ -138,6 +154,8 @@ Separate:
 
 Ask what the AC and court knew of every external project, works and funding life. Do not infer that later title retrospectively authorised earlier works, promotion, control or finance. Do not infer that a unitary hotel economy placed third-party property inside LPB’s estate.
 
+The 17-Aug five-source ingest strengthens the relevant court-protection chronology with the signed **24-Oct-2019 refusal to convalidate**, the signed **24-Feb-2021 works/condition dispute** and the **12-May-2021 re-tender of the same locals/pools perimeter**. Use those records to define what the court/AC were dealing with at specific dates; do not convert them into proof that either actor knew the later RIC/regional/FEDER funding architecture at those earlier dates.
+
 ## Orion boundary
 
 Preserve the verified independent RICPE→Orion corporate/finance facts. Do not present Orion as the next Sun Park funding life without asset-specific proof.
@@ -155,6 +173,8 @@ A public page must be permitted to state the allegation strongly, followed immed
 Approved short form:
 
 > **Project Sun Rock alleges double/triple funding and multiple financial lives of the same Sun Park/MYND Yaiza hotel project. The verified record already shows fragmented title, RICPE’s July 2021 internal narrowing, later RIC financing, regional incentive and FEDER-linked support. The remaining task is not to discover whether multiple layers existed, but to determine whether the same assets, works, costs, jobs and value were used more than once, what each institution was told and who authorised progression despite unresolved prerequisites. This is a substantiated allegation, not yet a judicial or audit finding.**
+
+When referring specifically to FTI/Meeting Point rescue funds, add the separate source-status boundary: the 7-Jan-2025 OLAF alert made the allegation, but the project-specific source-and-use bridge remains open.
 
 ## Mandatory propagation and close-out
 
