@@ -47,8 +47,8 @@
   // Canary Council of Bar Associations institutional mark and source-controlled status record.
   load('ccca-institutional-mark-20260816.js?v=20260816a');
 
-  // Canonical RICPE routing, chronology, legacy-dossier banner, SNCA boundary and 17-Aug formal-communication status.
-  load('canonical-routing-chronology-20260815.js?v=20260817a');
+  // Canonical RICPE routing, chronology, legacy-dossier banner, SNCA boundary and reviewed 17-Aug V6 status.
+  load('canonical-routing-chronology-20260815.js?v=20260817b');
 
   // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
   load('origin-direct-market-context-20260816.js?v=20260816b');
