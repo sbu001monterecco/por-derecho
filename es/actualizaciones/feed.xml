@@ -4,15 +4,15 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-17T22:59:00Z</updated>
+  <updated>2026-08-17T23:06:00Z</updated>
   <author><name>Project Sun Rock</name></author>
   <entry>
-    <title>RICPE: comunicación formal V6 presentada por el Canal Ético</title>
+    <title>RICPE: presentación confirmada por el Canal Ético y correo nativo de plataforma</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ricpe-formal-prefiling-17aug</id>
     <link href="https://sbu001monterecco.github.io/por-derecho/es/ricpe-responsabilidad-documental/#comunicacion-formal-17ago"/>
-    <published>2026-08-17T22:59:00Z</published>
-    <updated>2026-08-17T22:59:00Z</updated>
-    <summary>Gil Marer, desde San Cristóbal de La Laguna, presentó el 17 de agosto de 2026 su comunicación formal V6 final revisada de 21 páginas a través del Canal Ético de RICPE. La plataforma confirmó que la información había sido enviada/trasladada y asignó un código privado de comunicación para seguimiento. Esto acredita presentación y acuse de plataforma, no admisión, investigación, resultado del control de conflictos, medidas de preservación, tratamiento por el Consejo ni fondo. El código y la clave de acceso permanecen privados. El hash del PDF firmado efectivamente presentado y la hora exacta final permanecen pendientes de evidencia primaria.</summary>
+    <published>2026-08-17T23:06:00Z</published>
+    <updated>2026-08-17T23:06:00Z</updated>
+    <summary>Gil Marer, desde San Cristóbal de La Laguna, presentó el 17 de agosto de 2026 una comunicación formal a través del Canal Ético de RICPE. La presentación queda corroborada por la pantalla final y por un correo nativo de la plataforma de 17 agosto 2026, 22:51:17 UTC, que confirma la recepción/comunicación y la asignación de un código privado de seguimiento. La cadena Gmail contemporánea conserva además un PDF firmado de 22 páginas, 447.975 bytes, SHA-256 b455075ceda7841471ef5f4ebfbb784ccd00357439aa8bf282e736fe4757832c, cuya firma criptográfica resulta válida. Ese PDF difiere materialmente de la anterior base V6 de 21 páginas; por ello se conserva como objeto firmado posterior y candidato fuerte al archivo presentado, pero la identidad byte a byte con el adjunto exacto del Canal permanece pendiente de metadatos o certificado de la plataforma. No constan todavía admisión, investigación, control de conflictos, preservación, tratamiento del Consejo ni decisión sobre el fondo. Las credenciales permanecen privadas.</summary>
   </entry>
   <entry>
     <title>RICPE / Sun Park / Orion: gobernanza, financiación, FEDER, Portfolio y CNMV</title>
