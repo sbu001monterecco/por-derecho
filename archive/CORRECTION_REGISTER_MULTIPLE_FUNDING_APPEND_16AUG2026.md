@@ -1,11 +1,12 @@
-# CORRECTION REGISTER — CONTINUATION CR-049–CR-054
+# CORRECTION REGISTER — CONTINUATION CR-049–CR-055
 
 **Created:** 16 August 2026  
+**Updated:** 17 August 2026  
 **Status:** CONTROLLED CONTINUATION OF THE PERMANENT CORRECTION HISTORY  
 **Read after:** `archive/CORRECTION_REGISTER.md`  
 **Controlling gate:** `archive/SUN_PARK_MULTIPLE_FUNDING_RETRIEVAL_GATE_16AUG2026.md`
 
-This continuation does not erase or replace CR-001–CR-048. It records the corrections arising from the unitary same-asset / multiple-financial-lives scan. IDs CR-049–CR-054 are reserved here and must not be reused. They should be folded into the base register at the next compaction without changing their text or IDs.
+This continuation does not erase or replace CR-001–CR-048. It records the corrections arising from the unitary same-asset / multiple-financial-lives scan and the 17-Aug five-source follow-up. IDs CR-049–CR-055 are reserved here and must not be reused. They should be folded into the base register at the next compaction without changing their text or IDs.
 
 | ID | Prior / unsafe proposition | Corrected proposition | Basis / context | Public propagation |
 |---|---|---|---|---|
@@ -15,6 +16,7 @@ This continuation does not erase or replace CR-001–CR-048. It records the corr
 | CR-052 | Approximately €4.5m Comunidad, approximately €4.9m/86 jobs and approximately 50-FTE operating requirement reused as fully reconciled repository facts | These are **specific Project Sun Rock allegations requiring native source ingestion and reconciliation**. The public site may identify them strongly as alleged layers, but must not silently merge them into the controlled €6,573,703.10 total, the GC/836/P06 60-job commitment or a final duplicate-payment conclusion | same-asset control; ME-064, ME-068 and ME-069 continuation rows | DONE ON ES/EN HUBS, RICPE, FUNDS AND CROSS-SITE MODULE; ONGOING CONTROL |
 | CR-053 | The approximately €9.77m CAM valuation and approximately €11–12m project requirement treated as arithmetically proving that finance was impossible or improper, including reliance on a universal 60–80% bank-lending rule | The discrepancy creates a **material missing valuation/finance bridge**. Identify perimeter, current/post-works value, sponsor equity, participating/subordinated finance, public support, collateral, cash flow and the actual LTV/LTC rules of each instrument. Do not substitute a generic market percentage for transaction evidence | same-asset control; ME-066 | DONE ON ES/EN HUBS AND RICPE PAGES; ONGOING CONTROL |
 | CR-054 | “Approximately 73% of the asset” stated as though the July-2021 190/262 property count automatically proved 73% of value, built area, voting rights or economic ownership | The certification’s **190 LPB out of 262 properties equals approximately 72.5% of the identified property count**. It demonstrates that the predominant identified count was not then CAM property. It does not by itself establish 72.5% of value, area, votes, rooms, income or every economic metric; those require the asset/right and valuation ledgers | July-2021 RICPE certification + arithmetic + CR-009/CR-042 legal-person/perimeter controls | CONTROLLED ON NEW HUBS; PROPAGATE WHEN “73%” IS USED ELSEWHERE |
+| CR-055 | The 7-Jan-2025 OLAF/Justice alert's “triple dipping” narrative treated as though it already proves that FTI's Bavarian COVID support or Meeting Point/SEPI rescue money was applied to, collateralised by or diverted into Sun Park | The **alert proves that Gil had formally articulated that allegation by 7-Jan-2025; it does not itself establish the project-specific money flow.** Keep the FTI/Meeting Point rescue-funds branch as an open source-and-use hypothesis unless primary records trace `rescue decision → beneficiary account → drawdown/payment → intra-group transfer → Sun Park contract/invoice/account → recipient/use/disclosure`. This correction does not weaken the separately substantiated Sun Park same-asset allegation based on fragmented title, RICPE/HNT finance, regional incentive and FEDER-linked support | FS-03 in `SUN_PARK_NONCONVALIDATION_CALIFICACION_OLAF_PINK_CONTINUUM_FIVE_SOURCE_INGEST_17AUG2026.md`; current same-asset control | INTERNAL CONTROL ADDED 17-AUG-2026; PUBLIC PROPAGATION ONLY WHERE OLDER COPY IMPLIES PROJECT-SPECIFIC FTI/SEPI MONEY FLOW AS VERIFIED |
 
 ## Rule
 
