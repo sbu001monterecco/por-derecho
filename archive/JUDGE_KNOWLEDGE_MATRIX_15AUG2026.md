@@ -1,11 +1,12 @@
 # JUDICIAL KNOWLEDGE MATRIX — Concurso 36/2012
 
-Evidence cut-off: **16 Aug 2026**. Scope: decisions attributed by primary record to Magistrado-Juez Alberto López Villarrubia and the institutional record of Mercantil nº1. This is not a finding of prevaricación.
+Evidence cut-off: **17 Aug 2026**. Scope: decisions attributed by primary record to Magistrado-Juez Alberto López Villarrubia and the institutional record of Mercantil nº1. This is not a finding of prevaricación.
 
 Read with:
 
-- `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` — legacy filename retained for continuity; controlling vocabulary is now **commercial normalisation / refinancing / hotel-operation / insolvency-exit architecture**; and
-- `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` — primary commercial-source completion and entity/condition controls.
+- `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` — legacy filename retained for continuity; controlling vocabulary is now **commercial normalisation / refinancing / hotel-operation / insolvency-exit architecture**;
+- `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` — primary commercial-source completion and entity/condition controls; and
+- `archive/LPAM_CGPJ169_CALIFICACION_UNITARY_KNOWLEDGE_CHAIN_17AUG2026.md` / `archive/CALIFICACION_LPAM_CGPJ169_JUDGE_KNOWLEDGE_OVERRIDE_17AUG2026.md` — controlling 2020–2021 RICPE/CAM court-notice chain and LPAM/CGPJ source-status boundaries.
 
 | Date | Material issue | Documented judicial act / knowledge point | What it does NOT by itself establish | Next source required |
 |---|---|---|---|---|
@@ -26,21 +27,34 @@ Read with:
 | 24 Oct 2019 | ob rem unlinking / sale | primary record says operation had occurred without prior judicial authorization and later authorization/convalidation was refused | does not automatically determine nullity or every later consequence | full order + post-order registry/accounting/corrective chain |
 | 12 May 2020 | credit/interest and scope | later complaint material identifies tension between res judicata treatment and a future adversarial determination | party characterization must be tested against complete primary order | full order, immediate filings, any later quantification decision |
 | Jun/Dec 2020 | warnings by LPB/Aweswell | working corpus says court was expressly asked to address definitive calculation/classification and impact on offer threshold | does not establish legal correctness of those submissions | LexNET filed versions, annexes, service and judicial disposition |
+| 11 Nov 2020 | external RICPE/Sun Park investment presentation | controlled webinar/web material presented Sun Park within a RICPE/CAM-linked investment/project narrative before later formal LPB title crystallised | public material alone is not court notice and does not establish falsity of every ownership/investment statement | preserved webinar/web source, title records and later court filing bridge |
+| 13 Jan 2021 | regulatory notice of external investment/RIC issue | CNMV electronic complaint formally registered as **2021002141**; separate AEAT telematic registry record documents `ZZ061 / ZZ06` complaint captioned **“Posible fraude de inversores mediante la materialización de la RIC”** | regulatory registration is not a finding of fraud and, by itself, is not notice to Mercantil nº1 | regulator files/responses and formal court-transmission bridge |
 | 18 Jan 2021 | requested clarification | working corpus says clarification was refused as revisiting earlier decisions | does not prove deliberate closure | full order + source decision allegedly making calculation final |
+| 25 Jan 2021 | proposed alienation to CAM | Mercantil nº1 Auto publicised the contemplated direct alienation in favour of Construcciones Acosta Matos, S.A. | does not decide the truth of later RICPE/public-owner allegations | full Auto, service chain and objections |
+| 4 Feb 2021 | **formal RICPE/CAM parallel-life allegation inside Concurso 36/2012** | Aweswell LexNET reposición against the 25-Jan Auto expressly alleged that CAM publicly presented itself as owner/project holder of Sun Park and attracted investors through RIC Private Equity; the pleading invoked/annexed webinar/web material and information sent to CNMV | proves formal filing of the allegation, not that every allegation was true or that the Judge personally read every annex | certified filing package, electronic docket/index and final treatment |
+| 17 Feb 2021 | **procedural incorporation / registro 918/2021** | court Diligencia records the Aweswell reposición under **registro 918/2021** and processes the challenge to the 25-Jan Auto | does not prove personal judicial adoption of every annex or establish improper CAM/RICPE conduct | certified Diligencia, full 918 file, service/opposition and signed judicial disposition |
 | May–Oct 2021 | bidding / improvement process | court records show competitive process and later confirmation/finalization | does not prove inequality or invalidity | complete bidding file, Ottawa/CAM offers, deposits, hearing/video, data-room/access record |
 | 26 Jan 2022 | implementation/complement | order forms part of testimony package later requested by CAM | does not itself prove every deed recital or accounting figure | full order + CAM request + AC calculation + deed comparison |
 | 21 Feb 2022 | deed implementation | downstream deed signed by AC implemented judicially-authorized structure | do not attribute deed figures to judge unless fixed by court | deed, notarial annexes, judicial calculation, registry entries |
-| 28 Sep 2023 | Sentencia 163/2023 | judge adopted selected adverse factual/causal propositions while rejecting or narrowing other AC/Fiscal branches | does not prove knowing injustice; first-instance judgment remains under appeal in controlled record | complete certified docket, 25-Jul-2023 hearing and AP ruling |
+| 28 Sep 2023 | Sentencia 163/2023 | judge adopted selected adverse factual/causal propositions while rejecting or narrowing other AC/Fiscal branches; by then the institutional court record included the verified 918/2021 RICPE/CAM challenge | does not prove knowing injustice; first-instance judgment remains under appeal in controlled record; institutional filing does not automatically prove personal reading of every annex | complete certified docket, 918/2021 final treatment, 25-Jul-2023 hearing and AP ruling |
 
 ## Strongest questions
 
 1. What exact June 2018 application, if any, entered the docket after the reported meeting?
 2. What debt figure did the AC certify, and what deposit/guarantee response followed?
 3. Which operator, financing, valuation, due-diligence, commercial-normalisation and protection documents were formally incorporated and expressly considered?
-4. Which conditions failed or remained unsatisfied, and which of those depended on the court, AC, Community, financier, operator or user-side actors?
-5. How were those materials and the resulting changed operating condition reconciled with the selected adverse factual and causal findings in Sentencia 163/2023?
-6. For each irreversible patrimonial step from 2018 to 2022, can the court identify the exact filing, adopted premise, undecided issue and later authorizing act?
+4. **What exact treatment did registro 918/2021 and its RICPE/CAM webinar/web annexes receive, and which propositions were accepted, rejected, left undecided or treated as irrelevant?**
+5. Given the verified pre-judgment filing of the external CAM/RICPE project allegation, how were actual hotel access/control, operating capacity and competing causation reconstructed before the 2023 Pink/rent finding and €3,032,010.34 consequence?
+6. Which conditions failed or remained unsatisfied, and which of those depended on the court, AC, Community, financier, operator or user-side actors?
+7. How were those materials and the resulting changed operating condition reconciled with the selected adverse factual and causal findings in Sentencia 163/2023?
+8. For each irreversible patrimonial step from 2018 to 2022, can the court identify the exact filing, adopted premise, undecided issue and later authorizing act?
+
+## LPAM / CGPJ cross-cutting corroboration question
+
+Patricia Domínguez reports that LPAM described the Magistrado-Juez as a friend with direct/personal contact or access. Gil Marer states that he strongly believes Patricia's account. **Neither proposition establishes the underlying relationship as fact.** The finite verification question is whether calls, messages, meetings, diary/access records or other objective evidence corroborate or disprove the reported relationship, and whether any relevant channel was disclosed where required.
+
+The specific LPAM–Magistrado module was first presently verified as formally presented in CGPJ Alzada 286/2026 on **28-Jul-2026**, `REGAGE26e00069061338`; it was not part of the original 15-Jun appeal package.
 
 ## Control rule
 
-Silence in an order is not proof the court lacked knowledge. Presence of a document in the docket is not proof the judge personally adopted every proposition in it. A same-day professional report is strong contemporaneous evidence but not a judicial transcript. A draft is not a filing. Informal notice is not formal incorporation. A conditional financing instrument is not unconditional cash. A signed operating contract does not by itself prove the Community had authority over every private finca. The certified electronic index, complete orders, hearing record and service logs prevail over party summaries.
+Silence in an order is not proof the court lacked knowledge. Presence of a document in the docket is not proof the judge personally adopted every proposition in it. A same-day professional report is strong contemporaneous evidence but not a judicial transcript. A draft is not a filing. Informal notice is not formal incorporation. A conditional financing instrument is not unconditional cash. A signed operating contract does not by itself prove the Community had authority over every private finca. Regulatory receipt is not a regulatory merits finding. A party's belief in witness testimony is not independent corroboration. The certified electronic index, complete orders, hearing record and service logs prevail over party summaries.

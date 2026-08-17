@@ -81,6 +81,10 @@
   // 18-May-2021 court-record limits and timing anomaly, 28-Jul filing, and verified 30-Jul CGPJ General Registry routing.
   load('lpam-magistrado-source-control-20260816.js?v=20260816a');
 
+  // Integrated 2018→2021→2023→CGPJ knowledge chain: formal CNMV/AEAT alerts, 918/2021 RICPE/CAM court filing,
+  // LPAM reported-testimony boundary, Gil's stated credibility position, and corrected Alzada chronology.
+  load('lpam-cgpj169-calificacion-unitary-20260817.js?v=20260817a');
+
   // Calificacion: current appellate status and first-person accountability opening, followed by a 90-second
   // professional evidence gateway and the user-approved strong-form Judge Alberto accusation.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
