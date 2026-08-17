@@ -182,6 +182,10 @@
   // Reuses source-controlled canonical propositions while keeping clean-room and criminal-forensic boundaries explicit.
   load('public-authority-case-reconstruction-20260817.js?v=20260817a');
 
+  // Flagship/test case: JV 1260/2011 → AP Las Palmas 89/2014. Gives the pre-concurso operator litigation
+  // a high-visibility Spotlight while keeping the procedural-fraud theory explicitly non-adjudicated.
+  load('flagship-case-1260-2011-20260817.js?v=20260817a');
+
   // Canonical sharing/deep-link capability. Book pages retain their established markup and load this through
   // the legacy compatibility bridge; other substantive ES/EN pages receive the compact page-share control.
   if (!document.querySelector('script[src*="book-page-share-20260815.js"]')) {
