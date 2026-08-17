@@ -140,6 +140,9 @@
   // Calificacion: supersede stale static wording that still described the now-complete 47-page AC report as outstanding.
   load('calificacion-source-status-correction-20260816.js?v=20260816a');
 
+  // Calificacion: canonical person-specific AC → Fiscalía → judgment → appeal map.
+  load('calificacion-canonical-allegations-outcomes-20260817.js?v=20260817a');
+
   // Cross-cutting documentary bridge: pre-concurso minority litigation, 2019 DI248/unitary-liquidation record,
   // and the Jan-Feb-2026 Fiscalía complaint family. Complaints remain allegations; reproduced Plan language is source-qualified.
   load('calificacion-fiscal-2012-2019-2026-bridge-20260816.js?v=20260816b', () => {
