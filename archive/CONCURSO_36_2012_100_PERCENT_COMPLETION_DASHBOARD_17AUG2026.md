@@ -1,7 +1,7 @@
 # CONCURSO 36/2012 — 100% RECOVERABLE DOCKET COMPLETION DASHBOARD
 
 **Control date:** 17 August 2026  
-**Current status:** `NOT 100% — CLOSURE PASS 2 / BATCH A MATERIAL P1 FAMILY RECOVERED`
+**Current status:** `NOT 100% — CLOSURE PASS 2 / BATCH A RECOVERED + 2021 MATERIAL ACTS PROMOTED`
 
 ## Denominator
 
@@ -16,14 +16,15 @@ The next denominator step remains classification and deduplication of every cand
 | Historical discovery coverage 2012–2023 | **HIGH** | workbook read end-to-end; key act families identified |
 | Distinct-act denominator | **OPEN** | full row-to-act deduplication not finished |
 | **Batch A material P1 family 2012–2017** | **RECOVERED / PROMOTED** | 06-Jun-2012, 20-Jan, 22-Mar, 05-May and 19-Dec-2017 complete court copies recovered and source-controlled |
-| Primary / official-copy digitisation | **MEDIUM, IMPROVED** | five major early P1 blockers closed; later P1 families remain |
-| Exact judicial signatory verification | **MEDIUM–HIGH ON MATERIAL SPIKES** | early attribution now materially corrected: Alberto on 06-Jun-2012, 22-Mar and 05-May-2017; Juan Avello on 20-Jan and 19-Dec-2017 |
-| LAJ signatory verification | **LOW–MEDIUM** | 19-Dec-2017 electronic copy identifies Eduardo José Rebollo Sanz; Águeda Reyes Almeida identified on later acts; full tenure/act map open |
-| Notification / service | **MEDIUM, IMPROVED** | court-copy notification dates now captured for all five Batch A acts; underlying service receipts remain desirable |
-| Appeal / finality | **MEDIUM–HIGH on spikes** | global chain still incomplete |
+| **2021 adjudication/review spike** | **MATERIALLY IMPROVED** | signed 18-May definitive-approval Auto, one signed 15-Oct reposición Auto and signed 27-Oct LAJ Diligencia primary-promoted |
+| Primary / official-copy digitisation | **MEDIUM, IMPROVED** | five major early P1 blockers plus material 2021 acts closed; later P1 families remain |
+| Exact judicial signatory verification | **MEDIUM–HIGH ON MATERIAL SPIKES** | early attribution corrected; 18-May/15-Oct signed acts attributable from primary binaries |
+| LAJ signatory verification | **LOW–MEDIUM, IMPROVING** | 19-Dec-2017 copy identifies Eduardo José Rebollo Sanz; Águeda Reyes Almeida identified on later acts including 27-Oct-2021; full tenure/act map open |
+| Notification / service | **MEDIUM, IMPROVED** | Batch A notification dates captured; later service chain still incomplete |
+| Appeal / finality | **MEDIUM–HIGH on spikes** | signed 15-Oct-2021 dismissal/confirmation step now primary-located; global chain still incomplete |
 | 2023 Vista record completeness | **OPEN / MATERIAL** | certified minute, official media index, service and evidential rulings missing |
 | Official court-index reconciliation | **NOT STARTED / ASK REQUIRED** | required for strongest 100% claim |
-| Dedicated Alberto public page | **GATED** | early actor-specific attribution is stronger and fairer, but completion/balance threshold not met |
+| Dedicated Alberto public page | **GATED** | actor-specific attribution stronger and fairer, but completion/balance threshold not met |
 
 ## Closure-pass-2 Batch A promotions
 
@@ -32,6 +33,12 @@ The next denominator step remains classification and deduplication of every cand
 3. `C36-JUD-2017-03-22-001` — complete two-page convenio-opening Auto; Alberto; 27-Mar notification.
 4. `C36-JUD-2017-05-05-001` — complete two-page AC-remuneration Auto; Alberto; 10-May notification.
 5. `C36-JUD-2017-12-19-001` — complete authentic three-page electronically-signed liquidation-opening Auto; **Juan Avello Formoso**, not Alberto; 26-Dec notification.
+
+## Connected-source 2021 promotions
+
+6. `C36-JUD-2021-05-18-001` — standalone signed five-page Auto; primary evidence of the court's Article 210.4 better-offer/licitation analysis and definitive CAM proposal approval.
+7. `C36-JUD-2021-10-15-001` — standalone signed five-page Auto; dismisses LPB/Aweswell reposiciones against 18-May and confirms the challenged Auto in full. One exact 15-Oct act is closed; the same-date family is not globally collapsed.
+8. `C36-LAJ-2021-10-27-001` — signed LAJ Diligencia; records incorporation/transfer of AC filing 7425/2021 and improves post-15-Oct procedural continuity.
 
 ### Important chronology correction
 
@@ -43,7 +50,7 @@ Filename dates are not automatically act dates. `...26JAN2017.pdf` is the notifi
 - 24-Oct-2019 — Aweswell-standing Auto vs non-convalidation Auto.
 - 12-May-2020 — LPB-adverse Auto vs separate Aweswell-favourable Auto.
 - 06-May-2021 — nullity Auto vs reposición/25-Jan route Auto.
-- 15-Oct-2021 — multiple Autos.
+- 15-Oct-2021 — **one exact Auto is now primary-located, but the workbook indicates multiple same-date acts; family remains partially open.**
 - 26-Jan-2022 — multiple clarification Autos.
 
 ## 100% closure gates
@@ -66,8 +73,8 @@ A dashboard status of `100% OF PRESENTLY RECOVERABLE DOCKET ACCOUNTED FOR` requi
 **Batch A control:** material P1 acts previously enumerated for 2012–2017 are recovered; denominator reconciliation for the period remains open.  
 **Batch B — 2018 full act family:** credit succession, plan, clarifications, publication, suspension, insufficiency, LAJ publication acts.  
 **Batch C — 2019–2020 non-convalidation / standing / appeal family.**  
-**Batch D — 2021 tender / asset-preservation / adjudication / appeal family.**  
-**Batch E — 2022 review / finality / correction family.**  
+**Batch D — 2021 tender / asset-preservation / adjudication / appeal family:** 18-May and one 15-Oct primary-closed; bidder disclosure pack, 25-Oct underlying report and remaining same-date acts still open.  
+**Batch E — 2022 review / finality / correction family:** isolated 21-Feb deed and 26-Jan act family remain material.  
 **Batch F — 2023 Calificación and certified Vista record.**
 
 No named-person page should be represented as complete before P1 is substantially closed.

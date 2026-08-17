@@ -14,6 +14,9 @@
 | `C36-JUD-2019-10-24-002` | `Auto No Convalidacion Desvinculacion y Compraventa de Locales (reforma integral) 24OCT2019.pdf` | Google Drive ID `1nJsTs-fwf-BiIRZNoVac9-0-wVmo0OFw`; aliases include `2.Auto No Convalidacion Desvinculacion Obrem y Venta de Locales 25OCT2019.pdf` | standalone judicial PDF | full binary located; CGPJ annex only pp.1,4,5 | standalone hash pending | 25OCT filenames appear to be notification/file-label aliases; act date is 24-Oct-2019 | PRIMARY BINARY LOCATED / FULL DIGITISATION PENDING |
 | `C36-JUD-2021-02-24-001` | complete four-page Auto reproduced in `05_ANEXO_TRAZABILIDAD_NO_CONVALIDACION_LICITACION_2018_2021(1).pdf` | Gmail message `19faa3662ff7b3dd`, CGPJ Alzada 286/2026 package; local custody copy created 17-Aug-2026 | complete electronic court copy embedded in later evidential annex | annex pp.25–28; court pp.1–4 | container SHA-256 `d16d07fd259ac6da86b7a9177d9f77ea416e9f301fad6faa4e04d9d3e7aa53d3` | search for standalone original remains open | COMPLETE ELECTRONIC COPY |
 | `C36-JUD-2021-05-12-001` | complete Providencia reproduced in same CGPJ annex | Gmail message `19faa3662ff7b3dd`; annex pp.29–30 | complete electronic court copy | 2 court pages | same container SHA-256 | standalone source still desirable for custody hierarchy | COMPLETE ELECTRONIC COPY |
+| `C36-JUD-2021-05-18-001` | `3. APROBACION DEFINITIVA PROPUESTA PLAN APROBADO 16ABR2018 - 18MAY2021.pdf` | Google Drive ID `1SpJkBz23fl-Z6yKbbsIhixsKPrQNXqAc` | standalone signed judicial PDF | 5 court pages | SHA-256 `093092dd10764ef995d9a2851d4b4e5c8911d245a212927d1db4bdfcc326abf7` | standalone primary supersedes prior derivative-only status | **PRIMARY BINARY LOCATED / DIGESTED** |
+| `C36-JUD-2021-10-15-001` | `Auto 15OCT2021 ref Auto 18MAY2021 (12-33horas) ref Adjudicación.pdf` | Google Drive ID `1gB3Q737pIX3tD62VituvM8I67zKjvJ2k` | standalone signed judicial PDF | 5 court pages | SHA-256 `1961b8c30889fc93dabc355762cb28fcffc6982761eab51dc80bee5947be48ca` | this is the Auto dismissing LPB/Aweswell reposiciones against 18-May; do not collapse other same-date acts into this ID | **PRIMARY BINARY LOCATED / DIGESTED** |
+| `C36-LAJ-2021-10-27-001` | `DIOR 27OCT2021 ref Informe AC de 25OCT2021.pdf` | Google Drive ID `1F7LgdXaNt0bOJrEskrfnHFv4PyHKvEjm` | standalone signed LAJ Diligencia de Ordenación | 1 court page | SHA-256 `607555b13c2e815395ec3064adc270d70919057ebb82950b3673066910655543` | records incorporation/transfer of AC filing 7425/2021; underlying quarterly report remains a separate source | **PRIMARY BINARY LOCATED / DIGESTED** |
 
 ## Batch A signatory control
 
@@ -22,6 +25,26 @@
 - `C36-JUD-2017-03-22-001` — **Alberto López Villarrubia**.
 - `C36-JUD-2017-05-05-001` — **Alberto López Villarrubia**.
 - `C36-JUD-2017-12-19-001` — **Juan Avello Formoso**, with electronic-copy footer also identifying **Eduardo José Rebollo Sanz, Letrado de la Administración de Justicia**. Do not attribute to Alberto.
+
+## Newly promoted operative controls — 18-May / 15-Oct / 27-Oct 2021
+
+### 18-May-2021 Auto
+
+The signed Auto independently establishes the court's own description of the 2021 better-offer/licitation route and its final approval of CAM's proposal. It expressly distinguishes apartments (dación in payment of privileged claims) from locals/pools/solarium (direct sale for €400,000). It also records Ottawa's expression of interest and the court's treatment of the bond, publicity, non-personation/nonattendance and the non-formal-subasta character of the mechanism.
+
+**Control:** this act defeats the shorthand that no better-offer/competitive mechanism existed. It does not resolve the adequacy, disclosure or equality questions surrounding the mechanism.
+
+### 15-Oct-2021 Auto
+
+The signed Auto dismisses the reposición appeals of LPB and Aweswell against the 18-May Auto, confirms it in full, and states that no further appeal lies against that resolution. It repeats that the court did not regard the mechanism as a formal subasta.
+
+**Control:** this closes one exact 15-Oct act. The historical docket indicates multiple same-date acts, so other 15-Oct acts remain separate until individually reconciled.
+
+### 27-Oct-2021 LAJ Diligencia
+
+The signed LAJ act incorporates AC filing 7425/2021 and records LexNET transfer/availability of the quarterly liquidation report.
+
+**Control:** this is a procedural-continuity source, not the underlying 25-Oct quarterly report itself.
 
 ## Container-level custody record
 
