@@ -7,6 +7,10 @@
 **Canonical evidential object:** **Vista de Calificación — Concurso 36/2012**  
 **Component rule:** VIDEO_01 + VIDEO_02 + VIDEO_03 are one continuous hearing record split only for technical recording purposes. Never interpret any component as a self-contained hearing.
 
+## 0. OE-CAL-002 status control
+
+The hearing audiovisual is no longer wholly missing. **VIDEO_01 of the continuous three-component Vista has been supplied, fingerprinted and structurally indexed; VIDEO_02/03 are being processed separately.** The complete stitched audiovisual set, verified speaker-attributed transcript, official minute, attendance/service/representation history and evidential rulings remain unresolved. Do not revert to the older shorthand that no hearing audiovisual has been recovered.
+
 ## 1. Components
 
 | Component | Exact filename | Current ingest state | Native hash | Duration | Continuity rule |
