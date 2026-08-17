@@ -149,6 +149,10 @@ Do not fill a row merely because a document existed in the docket. The Vista can
 - contradictions / omissions / knowledge claims: **not publication-ready pending transcript + all three components**;
 - website rewriting: **defer merits changes until complete Vista context**.
 
-## 15. Handoff instruction to VIDEO_02/03 thread
+## 15. Tooling limitation that must not be lost
+
+This VIDEO_01 thread processed **100% of the visual/technical duration but 0% of spoken content as a verified transcript** because the runtime did not contain a trustworthy Spanish speech-recognition model/service. An attempted local installation could not reach an external package/model source. This is a tooling limitation only: it does not mean the source audio is absent or unintelligible. A future thread with reliable Spanish ASR should resume from the master schema rather than treating this status as final.
+
+## 16. Handoff instruction to VIDEO_02/03 thread
 
 Read the master index first. Preserve component-local transcript IDs. Do not restart the hearing narrative as if VIDEO_02 or VIDEO_03 were separate evidence. Record exact first visible court clock and compare against VIDEO_01's approximate end ~10:46:53 to detect overlap/gap. If the first VIDEO_02 words are a continuation of a VIDEO_01 question/answer, mark the intervention `CROSSES_COMPONENT_BOUNDARY` and preserve both component timestamps.
