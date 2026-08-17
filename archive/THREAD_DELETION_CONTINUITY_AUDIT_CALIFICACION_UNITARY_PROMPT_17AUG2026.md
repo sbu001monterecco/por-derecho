@@ -1,10 +1,32 @@
 # THREAD-DELETION CONTINUITY AUDIT — CALIFICACIÓN UNITARY SCAN PROMPT
 
 **Date:** 17 August 2026  
+**Status:** `DELETION-SAFE — BLOCKER RESOLVED ON MAIN`  
 **Repository:** `sbu001monterecco/por-derecho`  
-**Base inspected:** `main` at `333416d524ba21ace4ccbc9db3171ef1b23310ec`  
-**Continuity PR:** `#260`  
+**Base originally inspected:** `main` at `333416d524ba21ace4ccbc9db3171ef1b23310ec`  
+**Continuity PR:** `#260` — merged 17 August 2026  
+**Merge commit:** `ed5fa60777463f151aa2cd6b6f59614059a90edf`  
 **Thread scope:** creation, clarification and preservation of a launch prompt for a unitary repository/live-site/Calificación-page audit.
+
+## Current verified state — blocker resolved
+
+The following statement is **SUPERSEDED / INCORRECT**:
+
+> deletion blocker remains: the reusable scan-first, stronger-not-weaker calificación master prompt is not recoverable from `main`.
+
+The blocker no longer remains. The reusable prompt is recoverable from `main` by direct path at:
+
+`archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`
+
+It is also registered as **P18 — Unitary Calificación repository + live-site audit** in:
+
+`archive/CHATGPT_PROMPT_LIBRARY.md`
+
+This deletion audit is itself present on `main`. PR #260 was merged at commit:
+
+`ed5fa60777463f151aa2cd6b6f59614059a90edf`
+
+A zero-result GitHub code-search response must not be treated as proof that the prompt is missing. Recent repository content may not yet be indexed. Future threads must fetch the exact path directly before declaring a deletion blocker.
 
 ## Universal continuity question
 
@@ -23,6 +45,10 @@
 7. preserve the full AC → Fiscalía → judgment → consequence → rebuttal → appeal chain;
 8. implement and verify justified ES/EN improvements rather than stopping at recommendations;
 9. produce the specified allegation matrix, person-by-person outcome, contradiction register, publication-ready copy and deployment record.
+
+### Post-canonicalisation answer
+
+**Yes.** The complete instruction, its prompt-library activation and this continuity audit are now recoverable from `main`.
 
 ## Material created by the thread
 
@@ -69,7 +95,7 @@ The new prompt **synthesises and supplements**, but does not replace:
 
 - `CHATGPT_START_HERE.md`;
 - `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
-- `archive/CHATGPT_PROMPT_LIBRARY.md`, especially P12, P17 and new P18;
+- `archive/CHATGPT_PROMPT_LIBRARY.md`, especially P12, P17 and P18;
 - `archive/CALIFICACION_RECOVERY_CANONICAL_ACTIVATION_16AUG2026.md`;
 - current Calificación serial allegation, AC-report, Fiscalía, appeal, recovery and reader-simulation ledgers;
 - `archive/CORRECTION_REGISTER.md`;
@@ -79,13 +105,18 @@ Current primary sources and later controlled corrections continue to govern over
 
 ## Implementation state
 
-- Branch: `agent/calificacion-unitary-prompt-deletion-audit-17aug2026`
+- Original branch: `agent/calificacion-unitary-prompt-deletion-audit-17aug2026`
 - Prompt-preservation commit: `21d22ef46fb4e8249061a46530f58aa2a628bb5e`
 - Prompt-library registration commit: `0aeb50d233fbc5f9f2b77845e0d72ecb1a260003`
 - Pull request: `#260`
-- Intended base: `main`
+- PR state: **merged**
+- Merge commit: `ed5fa60777463f151aa2cd6b6f59614059a90edf`
+- Confirmed on `main`:
+  - `archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`
+  - `archive/CHATGPT_PROMPT_LIBRARY.md` with P18
+  - `archive/THREAD_DELETION_CONTINUITY_AUDIT_CALIFICACION_UNITARY_PROMPT_17AUG2026.md`
 - Public-site files changed: none
-- Pages verification required: no, because this PR changes archive continuity records only
+- Pages verification required: no, because PR #260 changed archive continuity records only
 
 ## Fresh-thread recovery route
 
@@ -94,7 +125,7 @@ A fresh ChatGPT asked to run or improve the unitary Calificación audit should:
 1. read `CHATGPT_START_HERE.md`;
 2. read `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
 3. select P18 in `archive/CHATGPT_PROMPT_LIBRARY.md`;
-4. read `archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md`;
+4. fetch `archive/CALIFICACION_UNITARY_REPOSITORY_WEBSITE_AUDIT_PROMPT_17AUG2026.md` by exact path, even if code search returns no result;
 5. follow the current Calificación activation and specialist ledgers named by `CHATGPT_START_HERE.md`;
 6. inspect current `main` and the deployed website afresh;
 7. re-query connected primary-source systems where evidence is required;
@@ -103,9 +134,9 @@ A fresh ChatGPT asked to run or improve the unitary Calificación audit should:
 
 ## Final deletion verdict
 
-**DELETION-SAFE once PR #260 is merged and all three changed files are confirmed on `main`.**
+**DELETION-SAFE.**
 
-The presence of this audit file on `main` means the continuity content itself has merged. A final operator should still verify the exact merge commit. Until merge, the correct status is **NOT DELETION-SAFE**, because the material prompt remains only on the branch and in the conversation.
+The reusable scan-first, stronger-not-weaker Calificación master prompt, its P18 activation and the implementation state are all recoverable from current `main`. There is no remaining deletion blocker on this point.
 
 ## Intentionally excluded material
 
