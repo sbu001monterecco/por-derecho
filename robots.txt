@@ -8,3 +8,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-banking-recovery
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-calificacion.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-multiple-financial-lives.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-public-authority-reconstruction.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-flagship-case.xml
