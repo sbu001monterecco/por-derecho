@@ -169,4 +169,8 @@
   load('calificacion-reader-experience-20260817.js?v=20260817a', () => {
     load('calificacion-reader-experience-finish-20260817.js?v=20260817a');
   });
+
+  // 7 June 2018: bilingual convergence-hub reader architecture plus a high homepage hinge module.
+  // This is a presentation layer over the controlled dossier; it does not create new primary findings.
+  load('sun-park-7june-convergence-20260817.js?v=20260817a');
 })();
