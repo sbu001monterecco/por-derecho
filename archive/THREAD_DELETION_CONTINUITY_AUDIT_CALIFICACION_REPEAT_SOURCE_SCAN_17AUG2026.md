@@ -3,11 +3,11 @@
 **Date:** 17 August 2026  
 **Repository:** `sbu001monterecco/por-derecho`  
 **Controlling protocol:** `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`  
-**Main revision used for the substantive post-merge check:** `798649286ce007c4d21715d42f625a4e9647e0a6`  
+**Main revision used for the latest post-merge check:** `9ce4aa74d48fcc53b03efd5840c2d57017d3357a`  
 **Current verdict:** **DELETION-SAFE WITH OPEN EVIDENCE**  
-**Scope:** AC/Fiscal/judgment allegation allocation; connected Gmail/Drive source refresh; improved repeat-scan methodology; actor-knowledge reconstruction; and preservation of all material thread intelligence.
+**Scope:** AC/Fiscal/judgment allegation allocation; connected Gmail/Drive source refresh; improved repeat-scan methodology; actor-knowledge reconstruction; detailed open-evidence intelligence; and preservation of all material thread intelligence.
 
-This file is a recovery map. The substantive continuity changes were already merged to `main` through PRs #264 and #265 before this audit record was created.
+This file is a recovery map. The substantive continuity changes were merged to `main` through PRs #264, #265 and #268 before this audit was synchronised.
 
 ---
 
@@ -19,7 +19,7 @@ This file is a recovery map. The substantive continuity changes were already mer
 
 **Yes, with identified open evidence.**
 
-The thread's reusable methodology, material source-status findings, private-source retrieval instructions, open evidence targets and implementation state are now recoverable from current `main`. The underlying private emails and attachments remain in the connected primary-source systems and must be re-queried; their absence from public GitHub is intentional.
+The thread's reusable methodology, material source-status findings, private-source retrieval instructions, structured open-evidence intelligence, finite retrieval targets and implementation state are recoverable from current `main`. The underlying private emails and attachments remain in the connected primary-source systems and must be re-queried; their absence from public GitHub is intentional.
 
 ---
 
@@ -163,11 +163,42 @@ Merged through:
 - PR **#264**;
 - squash merge commit `bc9c93680fd5e05175c17f8aa2ac01586f8e92b7`.
 
+## J. Recorded open-evidence intelligence
+
+The thread subsequently converted “open evidence” from a short list into a structured intelligence programme.
+
+### Canonical destination
+
+`archive/CALIFICACION_RECORDED_OPEN_EVIDENCE_INTELLIGENCE_REGISTER_17AUG2026.md`
+
+The register captures thirteen evidence families:
+
+1. the AP judgment/full RPL docket;
+2. the 25-Jul-2023 hearing and effective-representation record;
+3. the complete AC annex and Section Six docket set;
+4. the Evidence-Before-Actor matrix;
+5. PINK revenue, occupancy, bank and payment routes;
+6. operating costs, maintenance, payroll, community charges and capex;
+7. CEXP/Comunidad support for €472,500, €518,908.69 and €737,338.85;
+8. official accounting books, legalisation and custody;
+9. the reported LABORY report;
+10. native provenance and external use of Sentencia 163/2023;
+11. the Article 176/conclusion filing history;
+12. the year-by-year control/capacity matrix; and
+13. native custody/authentication of the 2012 and 2018 emails.
+
+For each family it records the current verified evidential floor, precise open question, affected proposition, possible confirming/adverse/mixed result, actor-knowledge consequence, retrieval route, custody/privilege control, publication threshold and priority.
+
+Merged through:
+
+- PR **#268**;
+- squash merge commit `9ce4aa74d48fcc53b03efd5840c2d57017d3357a`.
+
 ---
 
 # 3. Open evidence now preserved
 
-The finite open-source targets are recorded in:
+The finite queue additions are recorded in:
 
 `archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_REPEAT_SCAN_APPEND_17AUG2026.md`
 
@@ -177,9 +208,17 @@ Specifically:
 - **ME-065:** complete LABORY expert-report source chain;
 - **ME-066:** actor-specific filing/service bridge before Fiscalía, the first-instance court and AP RPL 2523/2025.
 
+The detailed intelligence behind those items and the wider open-evidence families is preserved in:
+
+`archive/CALIFICACION_RECORDED_OPEN_EVIDENCE_INTELLIGENCE_REGISTER_17AUG2026.md`
+
 These supplement, without replacing:
 
 - ME-013 — complete RPL 2523/2025/current status;
+- ME-020 and ME-055 — Article 176/conclusion filing history;
+- ME-028 to ME-032 — external transmission/use of Sentencia 163/2023;
+- ME-048, ME-050 and ME-058 — control/capacity;
+- ME-056 — operational/revenue evidence;
 - ME-062 — broader AC cooperation request→response→delivery matrix;
 - ME-004 — the separate Fiscalía rent expert report, which is not the LABORY lead.
 
@@ -205,11 +244,20 @@ These supplement, without replacing:
 - State: **MERGED**
 - Merge commit: `798649286ce007c4d21715d42f625a4e9647e0a6`
 
+## PR #268 — detailed open-evidence intelligence
+
+- Branch: `agent/calificacion-recorded-open-evidence-intelligence-17aug2026`
+- Files:
+  - `archive/CALIFICACION_RECORDED_OPEN_EVIDENCE_INTELLIGENCE_REGISTER_17AUG2026.md`
+  - `archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_REPEAT_SCAN_APPEND_17AUG2026.md`
+- State: **MERGED**
+- Merge commit: `9ce4aa74d48fcc53b03efd5840c2d57017d3357a`
+
 ## Public-site state
 
-No ES/EN website source file was changed by this continuity work. No GitHub Pages build or deployment-log update was required solely for these archive/prompt changes.
+No ES/EN website source file was changed by this continuity/open-evidence work. No GitHub Pages build or deployment-log update was required solely for these archive files.
 
-The thread did not implement the future full repeat scan against every public proposition. It created and preserved the mandatory workflow for that future execution and canonicalised the connected-source findings already made.
+The thread did not implement the future full repeat scan against every public proposition. It created and preserved the mandatory workflow, canonicalised the connected-source findings already made, and converted every principal open-evidence family into a precise retrieval and decision programme.
 
 ---
 
@@ -240,12 +288,13 @@ A fresh ChatGPT continuing this work should:
 4. read `archive/CALIFICACION_PRIMARY_SOURCE_REPEAT_SCAN_PROMPT_17AUG2026.md`;
 5. read `archive/CALIFICACION_GMAIL_DRIVE_ACTOR_KNOWLEDGE_SOURCE_ADDENDUM_17AUG2026.md`;
 6. read `archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_REPEAT_SCAN_APPEND_17AUG2026.md`;
-7. read the controlling AC/Fiscal allegation ledger and current Calificación activation/appeal ledgers;
-8. inspect current `main` and the deployed ES/EN pages afresh;
-9. re-query Gmail/Drive/File Library for the underlying sources;
-10. begin with the Baseline Proposition Inventory and Evidence Before Actor Matrix;
-11. preserve adverse evidence and actor-specific transmission limits;
-12. use branch → diff → PR → merge → Pages verification for any public change.
+7. read `archive/CALIFICACION_RECORDED_OPEN_EVIDENCE_INTELLIGENCE_REGISTER_17AUG2026.md`;
+8. read the controlling AC/Fiscal allegation ledger and current Calificación activation/appeal ledgers;
+9. inspect current `main` and the deployed ES/EN pages afresh;
+10. re-query Gmail/Drive/File Library for the underlying sources;
+11. begin with the Baseline Proposition Inventory and Evidence Before Actor Matrix;
+12. preserve adverse evidence and actor-specific transmission limits;
+13. use branch → diff → PR → merge → Pages verification for any public change.
 
 ---
 
@@ -255,6 +304,6 @@ A fresh ChatGPT continuing this work should:
 
 The conversation no longer contains material project intelligence that exists only in chat history.
 
-The methodology is merged as P19; the connected-source findings and limitations are preserved; the finite evidence gaps are recorded; the existing allegation/judgment allocation remains in its controlling ledger; and the private-source retrieval route is explicit.
+The methodology is merged as P19; the connected-source findings and limitations are preserved; the finite evidence queue is recorded; the wider open-evidence intelligence is captured proposition by proposition; the existing allegation/judgment allocation remains in its controlling ledgers; and the private-source retrieval route is explicit.
 
-Deletion safety does not mean the evidential programme is complete. ME-064, ME-065, ME-066, ME-013 and ME-062 remain open or partial and must be resolved before stronger actor-knowledge or deliberate-withholding propositions are published.
+Deletion safety does not mean the evidential programme is complete. The open items remain capable of supporting, weakening or producing a mixed correction to the current thesis. Stronger actor-knowledge, deliberate-withholding, procedural-fraud, prevarication or criminal-instrumentalisation formulations must wait for the relevant transmission, procedural, economic or custody evidence identified in the intelligence register.
