@@ -18,15 +18,16 @@ The design rule is:
 
 ## Public implementation
 
-A new bilingual runtime module is added:
+Two bilingual runtime modules are added:
 
 - `assets/calificacion-reader-experience-20260817.js`
+- `assets/calificacion-reader-experience-finish-20260817.js`
 
-It is loaded from:
+They are loaded, in that order, from:
 
 - `assets/site.js`
 
-The module applies only to the two canonical Calificación landing routes.
+The modules apply only to the two canonical Calificación landing routes. The canonical ES/EN HTML route files are not renamed, deleted or replaced.
 
 ## Reader-facing changes
 
@@ -35,17 +36,19 @@ The module applies only to the two canonical Calificación landing routes.
 3. Preserves the existing 90-second professional read.
 4. Creates a compact A01–A06 serial-navigation index.
 5. Converts the full A01–A04 public audits into expandable records rather than deleting them.
-6. Adds the central `EVIDENCE BEFORE ACTOR` matrix using only:
+6. Restores the corrected CLS/BDO A04 module under the stable `#audit-a04` anchor after that module intentionally removes the older A04 rendering.
+7. Adds the central `EVIDENCE BEFORE ACTOR` matrix using only:
    - PROVED BEFORE ACTOR;
    - STRONG TRANSMISSION INFERENCE;
    - INSTITUTIONALLY AVAILABLE ONLY;
    - NOT YET PROVED.
-7. Places documentary architecture and counter-record before the strongest judicial-criminal accusation.
-8. Keeps the direct accusation against Magistrate Alberto López Villarrubia complete and visible under a stable anchor.
-9. Moves wider connected material—material control, LPAM/CGPJ, CaixaBank, elEconomista and same-asset/multiple-financial-lives material—into one expandable context dossier.
-10. Adds `WHAT WOULD CHANGE OUR VIEW?`, corrections and right-of-reply controls.
-11. Updates the visible page date to 17 August 2026 at runtime.
-12. Adds mobile, keyboard-focus and print rules.
+8. Places documentary architecture and counter-record before the strongest judicial-criminal accusation.
+9. Keeps the direct accusation against Magistrate Alberto López Villarrubia complete and visible under a stable `#judge-accusation` anchor.
+10. Moves wider connected material—material control, LPAM/CGPJ, CaixaBank, elEconomista and same-asset/multiple-financial-lives material—into one expandable context dossier.
+11. Adds `WHAT WOULD CHANGE OUR VIEW?`, corrections and right-of-reply controls.
+12. Preserves fragment/deep-link navigation by opening the relevant expandable parent before navigation.
+13. Updates the visible page date to 17 August 2026 at runtime.
+14. Adds mobile, keyboard-focus and print rules.
 
 ## Substantive controls
 
@@ -75,14 +78,16 @@ It:
 
 - waits for earlier dynamic modules to settle;
 - applies an idempotent deterministic order;
+- uses a second bounded finishing pass to place residual static sections and the corrected A04 module;
 - observes only top-level `main` insertions for a bounded period;
 - preserves every underlying module in the DOM;
 - wraps, moves or groups content rather than deleting it;
-- retains print visibility for expandable context.
+- retains print visibility for expandable context;
+- adds stable anchors and opens ancestor `<details>` elements for internal deep links.
 
 ## Validation required before merge
 
-- JavaScript syntax check for `assets/site.js` and the new UX module;
+- JavaScript syntax check for `assets/site.js` and both UX modules;
 - compare branch against current `main`;
 - review changed-file patch;
 - confirm ES/EN wording parity;
