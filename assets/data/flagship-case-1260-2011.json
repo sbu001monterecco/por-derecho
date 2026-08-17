@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-17",
+  "caseId": "PROC-2011-1260",
+  "spotlight": true,
+  "classification": ["FLAGSHIP_CASE", "TEST_CASE", "PRE_INSOLVENCY_OPERATOR_DISPUTE", "PROCEDURAL_IDENTITY_TEST"],
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "firstInstance": {
+    "court": "Juzgado de Primera Instancia nº 4 de Arrecife",
+    "procedure": "Juicio verbal (desahucio por precario)",
+    "number": "1260/2011",
+    "nig": "3500442120110008131",
+    "sourceStatus": "VERIFIED"
+  },
+  "appeal": {
+    "court": "Audiencia Provincial de Las Palmas",
+    "roll": "793/2012",
+    "resolution": "Sentencia 89/2014",
+    "date": "2014-01-13",
+    "sourceStatus": "VERIFIED"
+  },
+  "canonicalQuestions": [
+    "Who owned the relevant units at each material date?",
+    "What did the 2008 sale/completion and exploitation arrangements require?",
+    "What exactly did the plaintiffs plead in December 2011?",
+    "What changed in February 2012?",
+    "What exact procedural mechanism brought Monterecco Sun Park, S.L. into the case?",
+    "What did the first-instance court actually decide?",
+    "What did AP Las Palmas 89/2014 actually decide?",
+    "Which later actors relied on the judgment, and for what proposition?",
+    "Was any later use broader than the proposition actually adjudicated?",
+    "What evidence would disprove the Project's procedural-fraud/abuse hypothesis?"
+  ],
+  "propositions": [
+    {
+      "id": "PROC-2011-1260-ORIGIN",
+      "status": "VERIFIED",
+      "publication": "PUBLIC-READY",
+      "textEs": "El procedimiento JV 1260/2011 se inició como juicio verbal de desahucio por precario en el JPI nº 4 de Arrecife.",
+      "textEn": "JV 1260/2011 began as a verbal eviction-for-precario proceeding in JPI no. 4 Arrecife."
+    },
+    {
+      "id": "PROC-2012-1260-EXTENSION",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication": "PUBLIC-READY-WITH-QUALIFICATION",
+      "textEs": "El escrito de 23-feb-2012 registra que la parte actora amplió la acción contra Monterecco Sun Park, S.L. tras conocer un cambio en la explotación.",
+      "textEn": "The 23-Feb-2012 pleading records that the claimant side expanded the action against Monterecco Sun Park, S.L. after learning of a change in exploitation.",
+      "limitationEs": "La caracterización jurídica exacta —ampliación, sucesión, sustitución, acumulación u otra— debe fijarse con el escrito completo y la resolución que lo admitió.",
+      "limitationEn": "The exact legal characterisation —extension, succession, substitution, joinder or another mechanism— must be fixed from the complete pleading and the order that handled it."
+    },
+    {
+      "id": "JUD-2014-089",
+      "status": "VERIFIED",
+      "publication": "PUBLIC-READY",
+      "textEs": "La apelación se tramitó como Rollo 793/2012 y culminó en Sentencia 89/2014 de 13-ene-2014.",
+      "textEn": "The appeal proceeded as Roll 793/2012 and culminated in Judgment 89/2014 dated 13-Jan-2014."
+    },
+    {
+      "id": "UNIT-1260-18-PERIMETER",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication": "PUBLIC-READY-WITH-QUALIFICATION",
+      "textEs": "La extracción actual del expediente identifica un perímetro de 18 unidades vinculado a la parte actora.",
+      "textEn": "The current extraction of the record identifies an 18-unit perimeter linked to the claimant side.",
+      "limitationEs": "Debe normalizarse propietario, finca registral, apartamento/local, coeficiente y estado de participación para cada unidad.",
+      "limitationEn": "Owner, registry property, apartment/commercial identifier, coefficient and participation status must be normalised for each unit."
+    },
+    {
+      "id": "CEXP-LPB-8896",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication": "PUBLIC-READY-WITH-QUALIFICATION",
+      "textEs": "La extracción actual de la sentencia de apelación registra una participación/presencia LPB del 88,96% en la Comunidad de Explotación.",
+      "textEn": "The current extraction of the appeal judgment records an 88.96% LPB presence/participation in the Comunidad de Explotación.",
+      "limitationEs": "No equivale a autoridad sobre las 18 unidades, ni a mayoría válida de la Comunidad de Propietarios en cualquier fecha posterior.",
+      "limitationEn": "It does not equate to authority over the 18 units or a valid property-community majority at any later date."
+    },
+    {
+      "id": "HYP-PROCEDURAL-EQUATION-001",
+      "status": "STRONGLY_SUPPORTED",
+      "publication": "PUBLIC-READY-WITH-QUALIFICATION",
+      "textEs": "La iniciativa procesal que conectó el pleito existente con Monterecco fue promovida por la parte actora; queda por fijar la naturaleza jurídica exacta y si la equivalencia material alegada era completa, parcial o incorrecta.",
+      "textEn": "The procedural initiative connecting the existing litigation to Monterecco was claimant-driven; the exact legal nature and whether the material equivalence asserted was complete, partial or inaccurate remain to be fixed."
+    },
+    {
+      "id": "HYP-PROCEDURAL-FRAUD-001",
+      "status": "WORKING_HYPOTHESIS",
+      "publication": "LEGAL-REVIEW-RECOMMENDED",
+      "textEs": "Debe investigarse, sin presumirlo, si existió una maquinación fraudulenta, fraude procesal, estafa procesal, falsedad documental u otro abuso de procedimiento.",
+      "textEn": "It must be investigated, without presuming it, whether there was fraudulent contrivance, procedural fraud, procedural fraud offence, documentary falsity or another abuse of proceedings.",
+      "requiredProof": ["specific act or representation", "objective inconsistency or material omission", "actor-specific knowledge", "judicial or institutional reliance", "causal consequence", "benefit/harm", "alternative innocent explanation tested"]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "evidenceId": "EVID-2011-1260-CLAIM",
+      "title": "Juicio Desahucio por Precario 1260-2011 23DIC2011.pdf",
+      "type": "originating pleading / court-file copy",
+      "custody": "Google Drive source family",
+      "publication": "REPOSITORY-ONLY-UNTIL-PUBLIC-SOURCE-CHECK"
+    },
+    {
+      "evidenceId": "EVID-2012-1260-EXTENSION",
+      "title": "Desahucio 1260-2011 ampliación demanda MRSL.pdf",
+      "type": "claim extension / amendment",
+      "custody": "Google Drive source family",
+      "publication": "REPOSITORY-ONLY-UNTIL-PUBLIC-SOURCE-CHECK"
+    },
+    {
+      "evidenceId": "EVID-2012-1260-FIRSTINSTANCE",
+      "title": "Proc 1260_2011 (Sentencia Desahucio).pdf",
+      "type": "first-instance judgment",
+      "custody": "Google Drive source family",
+      "publication": "REPOSITORY-ONLY-UNTIL-PUBLIC-SOURCE-CHECK"
+    },
+    {
+      "evidenceId": "EVID-2014-AP89",
+      "title": "Sentencia Proc1260-2011 13ENE2014.pdf",
+      "type": "appeal judgment",
+      "custody": "Google Drive source family",
+      "publication": "REPOSITORY-ONLY-UNTIL-PUBLIC-SOURCE-CHECK"
+    }
+  ],
+  "dependencyModel": [
+    {"from":"OWN-2008-001","to":"UNIT-1260-18-PERIMETER","relation":"CONSTRAINS_TITLE_AND_PARTICIPATION"},
+    {"from":"AUTH-2011-001","to":"PROC-2011-1260","relation":"ALLEGED_UPSTREAM_AUTHORITY_CONTEXT","status":"OPEN"},
+    {"from":"PROC-2011-1260","to":"PROC-2012-1260-EXTENSION","relation":"PROCEDURAL_CONTINUATION_OR_EXTENSION","status":"VERIFIED_WITH_LIMITATION"},
+    {"from":"PROC-2012-1260-EXTENSION","to":"JUD-2014-089","relation":"DOWNSTREAM_APPELLATE_PATH","status":"VERIFIED"}
+  ],
+  "bookLinks": [
+    {"id":"BOOK-JUSTICE-IN-PIECES","routeEn":"/por-derecho/en/books/justice-in-pieces/","routeEs":"/por-derecho/es/libros/justicia-en-fragmentos/","reason":"case study in fragmented decisions and later institutional reuse"},
+    {"id":"BOOK-LAW-MOWER-MAN","routeEn":"/por-derecho/en/books/law-mower-man/","routeEs":"/por-derecho/es/libros/law-mower-man/","reason":"case study in legal-tech reconstruction, entity resolution and procedural provenance"}
+  ],
+  "sourceControl": "archive/SUN_PARK_FLAGSHIP_CASE_JV1260_AP89_CANONICAL_CONTROL_17AUG2026.md"
+}
