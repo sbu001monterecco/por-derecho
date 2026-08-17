@@ -1,1 +1,13 @@
-(()=>{const d=document, url=location.href, title=d.querySelector('h1')?.textContent?.trim()||d.title, hook=d.querySelector('[data-share-hook]')?.textContent?.trim()||d.querySelector('meta[name="description"]')?.content||''; const text=`${title} — ${hook}`; d.querySelectorAll('[data-share-linkedin]').forEach(a=>a.href=`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`); d.querySelectorAll('[data-share-whatsapp]').forEach(a=>a.href=`https://wa.me/?text=${encodeURIComponent(text+' '+url)}`); d.querySelectorAll('[data-share-email]').forEach(a=>a.href=`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(text+'\n\n'+url)}`); d.querySelectorAll('[data-copy-link]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(url);const old=b.textContent;b.textContent=b.dataset.copied||'Copied';setTimeout(()=>b.textContent=old,1800)}catch{prompt('Copy link:',url)}}));})();
+(()=>{
+  if(window.PorDerechoShare){
+    window.PorDerechoShare.init(document);
+    return;
+  }
+  if(document.querySelector('script[src*="share-controls-20260817.js"]')) return;
+  const current=document.currentScript;
+  if(!current) return;
+  const script=document.createElement('script');
+  script.src=new URL('share-controls-20260817.js?v=20260817a',current.src).href;
+  script.defer=true;
+  document.head.appendChild(script);
+})();
