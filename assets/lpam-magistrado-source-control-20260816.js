@@ -10,7 +10,9 @@
     '/en/insolvency-36-2012-mercantile-court-1/',
     '/es/concurso-36-2012-juzgado-mercantil-1/',
     '/es/concurso-36-2012-responsabilidad-institucional/',
-    '/en/insolvency-36-2012-institutional-accountability/'
+    '/en/insolvency-36-2012-institutional-accountability/',
+    '/es/acosta-matos-perimetro/',
+    '/en/acosta-matos-perimeter/'
   ];
   if (!relevant.some(route => path.endsWith(route))) return;
   if (document.getElementById('lpam-magistrado-source-control')) return;
@@ -36,7 +38,7 @@
         <li><strong>Fiscalía · 16 enero 2026:</strong> <code>REGAGE26e00003908732</code> acredita presentación formal del núcleo LPAM–Magistrado; los avisos oficiales de estado acreditan presentación y posterior tramitación registral. Sigue abierta la trazabilidad anexo por anexo hacia DIP 2/2026.</li>
         <li><strong>CGPJ · 28–30 julio 2026:</strong> el paquete de cinco PDF se presentó bajo <code>REGAGE26e00069061338</code> y una notificación 060 de 30 de julio acredita su encaminamiento posterior al Registro General del CGPJ. <strong>Presentación/enrutamiento ≠ unión a Alzada 286/2026 ≠ examen de fondo ≠ aceptación ≠ veracidad.</strong> El reescaneo de 17 de agosto no localizó una resolución sustantiva posterior ni confirmación directa del examen del paquete; es un resultado de búsqueda acotado, no prueba de inexistencia.</li>
       </ul>
-      <p><strong>Relevancia para Calificación y para la página del Magistrado:</strong> el módulo constituye, en el estado actual, una <strong>cuestión documentada de apariencia de imparcialidad susceptible de verificación finita</strong>. Cualquier conexión con Sentencia 163/2023 u otra actuación debe probarse acto por acto mediante <code>FUENTE → CAPACIDAD PROCESAL → EVIDENCIA ANTE EL ACTOR → POSIBLE RELEVANCIA → CONTRAPRUEBA → RECURSO/REMEDIO</code>. No autoriza a publicar “sesgo probado”, “amistad probada” ni que una sentencia fuera procurada por un actor privado.</p>
+      <p><strong>Relevancia para Calificación, el Magistrado y el perímetro Acosta Matos:</strong> el módulo constituye, en el estado actual, una <strong>cuestión documentada de apariencia de imparcialidad susceptible de verificación finita</strong>. Cualquier conexión con Sentencia 163/2023 u otra actuación debe probarse acto por acto mediante <code>FUENTE → CAPACIDAD PROCESAL → EVIDENCIA ANTE EL ACTOR → POSIBLE RELEVANCIA → CONTRAPRUEBA → RECURSO/REMEDIO</code>. No autoriza a publicar “sesgo probado”, “amistad probada” ni que una sentencia fuera procurada por un actor privado.</p>
       <p><strong>Comprobaciones pendientes:</strong> mensaje nativo de 24-ene-2018; RFC822/metadatos de la cadena de 5-jun-2020; testimonio independiente y limitado del asesor jurídico si fuera necesario y compatible con el secreto profesional; acta/audiovisual, asistentes, poderes y cobertura final de 18-may-2021; certificación técnica del Auto; manifiesto de transmisión de DIP 2/2026; informe fiscal y actuación posterior en DP 1901/2026; índice/movimientos y decisión motivada de Alzada 286/2026; y cualquier informe real del Promotor, Inspección o Comisión Permanente.</p>
     </div>` : `
     <div class="shell record">
@@ -54,7 +56,7 @@
         <li><strong>Fiscalía · 16 January 2026:</strong> <code>REGAGE26e00003908732</code> verifies formal presentation of the LPAM–Judge nucleus; official state notices verify presentation and later registry processing. Annex-by-annex traceability into DIP 2/2026 remains open.</li>
         <li><strong>CGPJ · 28–30 July 2026:</strong> the five-PDF package was presented under <code>REGAGE26e00069061338</code>, and a 30 July 060 notice verifies later routing to the CGPJ General Registry. <strong>Presentation/routing ≠ joinder to Appeal 286/2026 ≠ merits examination ≠ acceptance ≠ truth.</strong> The 17-August rescan located no later substantive decision or direct confirmation of examination of the package; that is a bounded search result, not proof of non-existence.</li>
       </ul>
-      <p><strong>Relevance to the insolvency classification and Judge pages:</strong> on current evidence this is a <strong>documented appearance-of-impartiality question capable of finite verification</strong>. Any connection to Judgment 163/2023 or another act must be shown act by act through <code>SOURCE → PROCEDURAL CAPACITY → EVIDENCE BEFORE ACTOR → POSSIBLE RELEVANCE → COUNTEREVIDENCE → REVIEW/REMEDY</code>. It does not justify publishing “proven bias”, “proven friendship” or a judgment procured by a private actor.</p>
+      <p><strong>Relevance to the insolvency classification, Judge and Acosta Matos perimeter pages:</strong> on current evidence this is a <strong>documented appearance-of-impartiality question capable of finite verification</strong>. Any connection to Judgment 163/2023 or another act must be shown act by act through <code>SOURCE → PROCEDURAL CAPACITY → EVIDENCE BEFORE ACTOR → POSSIBLE RELEVANCE → COUNTEREVIDENCE → REVIEW/REMEDY</code>. It does not justify publishing “proven bias”, “proven friendship” or a judgment procured by a private actor.</p>
       <p><strong>Outstanding checks:</strong> native 24-Jan-2018 message; RFC822/metadata for the 5-Jun-2020 chain; independent and limited legal-adviser evidence if necessary and compatible with professional secrecy; 18-May-2021 audiovisual/minute, attendance, powers and final recording coverage; technical certification of the Auto; DIP 2/2026 transmission manifest; Fiscalía report and later act in DP 1901/2026; Appeal 286/2026 index/movements and reasoned decision; and any genuine Promotor, Inspection or Permanent Commission report.</p>
     </div>`;
 
