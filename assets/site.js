@@ -49,6 +49,8 @@
 
   // Canonical RICPE routing, chronology, legacy-dossier banner, SNCA boundary and reviewed 17-Aug V6 status.
   load('canonical-routing-chronology-20260815.js?v=20260817b');
+  // Post-filing correction: native platform email + contemporaneous signed-PDF provenance supersede the pre-filing status card.
+  load('ricpe-filed-status-20260817.js?v=20260817a');
 
   // Banking-origin, direct-market and extraconcursal-perimeter bridge for the Community dossiers.
   load('origin-direct-market-context-20260816.js?v=20260816b');
