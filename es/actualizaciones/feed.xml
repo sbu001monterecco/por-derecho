@@ -4,15 +4,15 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-16T23:47:47Z</updated>
+  <updated>2026-08-17T20:42:34Z</updated>
   <author><name>Project Sun Rock</name></author>
   <entry>
-    <title>RICPE: comunicación formal V5 preparada para firma y presentación</title>
+    <title>RICPE: comunicación formal V6 revisada y preparada para firma y presentación</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#ricpe-formal-prefiling-17aug</id>
     <link href="https://sbu001monterecco.github.io/por-derecho/es/ricpe-responsabilidad-documental/#comunicacion-formal-17ago"/>
-    <published>2026-08-16T23:47:47Z</published>
-    <updated>2026-08-16T23:47:47Z</updated>
-    <summary>Gil Marer, desde San Cristóbal de La Laguna, ha preparado una comunicación formal de 21 páginas dirigida exclusivamente a RICPE para firma electrónica y presentación por el Canal Ético y correo corporativo el 17 de agosto de 2026. A la fecha de esta actualización no consta justificante ni hash del PDF firmado, por lo que no se describe como presentada, recibida, admitida o examinada. Tras la presentación se registrarán por separado la referencia pública segura, el SHA-256 firmado y cualquier remisión posterior a CNMV u otra autoridad.</summary>
+    <published>2026-08-17T20:42:34Z</published>
+    <updated>2026-08-17T20:42:34Z</updated>
+    <summary>Gil Marer, desde San Cristóbal de La Laguna, ha completado una comunicación formal V6 revisada de 21 páginas dirigida exclusivamente a RICPE para firma electrónica y presentación por el Canal Ético y correo corporativo el 17 de agosto de 2026. La V5 quedó sustituida antes de su presentación. A la fecha de esta actualización no consta justificante ni hash del PDF firmado, por lo que no se describe como presentada, recibida, admitida o examinada. Tras la presentación se registrarán por separado la referencia pública segura, el SHA-256 firmado y cualquier remisión posterior a CNMV u otra autoridad.</summary>
   </entry>
   <entry>
     <title>RICPE / Sun Park / Orion: gobernanza, financiación, FEDER, Portfolio y CNMV</title>
