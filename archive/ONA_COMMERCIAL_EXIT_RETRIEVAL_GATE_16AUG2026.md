@@ -6,7 +6,7 @@
 
 A future Project Sun Rock / Por Derecho thread must read this gate whenever the task touches any of:
 
-`ONA` · `ONA Hotels` · `Clubotel La Dorada` · `OnaSystem` · `commercial normalisation` · `normalización comercial` · `commercial exit` · `salida concurso` · `13 June 2018` · `13-Jun-2018` · `bridge finance` · `financiación puente` · `security package` · `garantías provisionales` · `staged security` · `post-exit mortgage` · `Binding Term Sheet` · `financed exit` · `Article 176` · `art. 176 LC` · `multiple lenders` · `standby lenders` · `Monte Lanza` · `Multimatrix` · `2008 sale` · `2008 breach` · `cure` · `minority asset acquisition` · `unitary exploitation` · `unidad de explotación` · `Calificación non-collaboration`.
+`ONA` · `ONA Hotels` · `Clubotel La Dorada` · `OnaSystem` · `commercial normalisation` · `normalización comercial` · `commercial exit` · `salida concurso` · `13 June 2018` · `13-Jun-2018` · `Daniel Irigoyen` · `magistrado en excedencia` · `propco` · `LPB property company` · `mixed ownership` · `propiedad mixta` · `hotel exploitation` · `explotación hotelera` · `joint venture` · `JV` · `bridge finance` · `financiación puente` · `security package` · `garantías provisionales` · `staged security` · `post-exit mortgage` · `Binding Term Sheet` · `financed exit` · `Article 176` · `art. 176 LC` · `multiple lenders` · `standby lenders` · `Monte Lanza` · `Multimatrix` · `2008 sale` · `2008 breach` · `cure` · `minority asset acquisition` · `unitary exploitation` · `unidad de explotación` · `Calificación non-collaboration`.
 
 ## Read in this order
 
@@ -15,10 +15,12 @@ A future Project Sun Rock / Por Derecho thread must read this gate whenever the 
 3. `archive/MISSING_EVIDENCE_REGISTER.md` — especially ME-047, ME-053 and ME-055.
 4. `archive/CALIFICACION_RECOVERY_CANONICAL_ACTIVATION_16AUG2026.md`
 5. `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md`
-6. **`archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md`** — later source-completion layer controlling where it adds the August executed binding term sheet, staged-security proof, multi-route financing clarification and 2008→2011→2014 ownership wording.
-7. **`archive/ONA_FINANCE_CONDITIONS_STAGED_SECURITY_POSITION_16AUG2026.md`** — controls the distinction between Gil/Aweswell's position that the conditions were capable of being met / security could be delivered in stages, what the recovered transaction documents independently verify, and the still-open route-by-route condition-performance ledger.
-8. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` where Judge/AC notice is material.
-9. Relevant primary Gmail/Drive/File Library sources; repository summaries do not replace them.
+6. **`archive/ONA_EXIT_ALLIANCE_LPB_PROPCO_EXPLOITATION_UNITARY_ANALYSIS_17AUG2026.md`** — controls the actor/layer map: Aweswell shareholder; LPB insolvent principal property-owning company within mixed ownership; Comunidad/CEXP/operator separation; Clubotel/ONA Hotels as operating anchor; Daniel Irigoyen's legal-coordinator role; Cuatrecasas transaction work; formal-JV boundary; and the implications for later Calificación/Pink/rent analysis.
+7. **`archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md`** — later source-completion layer controlling where it adds the August executed binding term sheet, staged-security proof, multi-route financing clarification and 2008→2011→2014 ownership wording.
+8. **`archive/CUATRECASAS_2018_TRANSACTION_ROLE_SOURCE_UPGRADE_17AUG2026.md`** — controls the correction that Cuatrecasas' role extended beyond DD into ONA contracts, security structuring, financing documents, financier coordination and concursal exit/debt-quantification work.
+9. **`archive/ONA_FINANCE_CONDITIONS_STAGED_SECURITY_POSITION_16AUG2026.md`** — controls the distinction between Gil/Aweswell's position that the conditions were capable of being met / security could be delivered in stages, what the recovered transaction documents independently verify, and the still-open route-by-route condition-performance ledger.
+10. `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` where Judge/AC notice is material.
+11. Relevant primary Gmail/Drive/File Library sources; repository summaries do not replace them.
 
 ## Controlling vocabulary
 
@@ -28,11 +30,57 @@ Use:
 
 > **ONA-centred commercial exit and operational-normalisation package**
 
+or, where the actor architecture matters:
+
+> **ONA Hotels-centred coordinated exit architecture**
+
 or, where the full scope matters:
 
 > **commercial normalisation, refinancing, hotel-operation and insolvency-exit architecture**.
 
 ONA/Clubotel is the **operating anchor** in the source set, not automatically the legal or financial leader of every component.
+
+## Actor / property / exploitation rule
+
+Do not collapse the 2018 perimeter into `LPB = the hotel = all property = the operator`.
+
+The controlled separation is:
+
+- **Aweswell** — shareholder / investor-side company;
+- **LPB** — insolvent debtor and, functionally, principal property-owning company within a mixed-ownership complex;
+- **other owners** — legally distinct property outside LPB;
+- **Comunidad de Propietarios** — co-ownership/governance layer;
+- **CEXP and historical lessee/operator structures** — separate exploitation layer;
+- **Pink / Spanish Monterecco** — separate operator/lessee company relevant to the 2012 rent branch;
+- **Clubotel La Dorada / ONA Hotels** — intended 2018 professional operating anchor;
+- **external financiers** — separate finance layer;
+- **Daniel Irigoyen / Cuatrecasas / other counsel** — legal/transaction coordination and documentation.
+
+A later 21-Jul-2021 certified property schedule records 262 properties: 190 LPB, 54 CAM and 18 third parties. Use this as structural corroboration that LPB held a majority but not the whole property perimeter. Do **not** back-project that exact ratio to June 2018 without a 2018 title schedule. Preserve `property count ≠ built area ≠ value ≠ voting power`.
+
+The signed 6-Jun-2018 hotel-industry lease facially places the operator-side contract with **Clubotel La Dorada, S.L. (ONA Hotels)** and the lessor-side with the Comunidad de Propietarios, while reciting the distinct historical CEXP exploitation layer. That signed document makes the ownership/governance/exploitation separation concrete.
+
+## Daniel Irigoyen role / status rule
+
+Do not describe Daniel Irigoyen as merely `ONA's lawyer` unless a retainer proves that narrower role.
+
+His contemporaneous 13-Jun-2018 account says he presented himself before the Judge **as lawyer** tasked with solving the situation and coordinating investor, shareholder company, insolvent company and hotel operator.
+
+Official controls support the following historical description:
+
+- BOE-A-2013-7716 placed Magistrate Daniel Irigoyen Fujiwara in voluntary leave under art. 356.c LOPJ effective 1-Sep-2013;
+- the official judicial seniority list closed 31-Mar-2018 records him `E.V. 356.c` and `ESP. MERCANTIL`;
+- BORME-A-2018-47-08 records his admission as professional partner of De Pasqual & Marzo Abogados SLP on 28-Feb-2018.
+
+Public-safe shorthand:
+
+> **Daniel Irigoyen, magistrado de carrera y especialista mercantil que constaba en excedencia voluntaria y que en 2018 actuaba como abogado/coordinador jurídico de la estructura de salida.**
+
+## Formal-JV rule
+
+The commercial architecture may be described as an `alliance`, `coordinated exit initiative` or `exit architecture`.
+
+Do **not** call it a formal legal `JV / joint venture` unless a formal JV/shareholders/consortium agreement is located. ONA Hotels was the operating anchor; Aweswell/LPB were on the shareholder/debtor/property side; Matkator, financiers and advisers occupied distinct roles.
 
 ## Financing rule — no single-lender dependency
 
@@ -96,19 +144,24 @@ Do **not** say that the ONA package legally `cured the 2008 breach` until the co
 
 When this evidence is used against a Calificación allegation or finding, apply:
 
-`ADVERSE PROPOSITION → CONTEMPORANEOUS COMMERCIAL / OPERATIONAL ACTION → PRIMARY SOURCE → EXACT RECIPIENT / FILING → CONDITIONS → ACTOR CAPACITY → RESPONSE / DECISION → EFFECT → LATER CALIFICACIÓN USE`.
+`ADVERSE PROPOSITION → LEGAL/ECONOMIC LAYER → CONTEMPORANEOUS COMMERCIAL / OPERATIONAL ACTION → PRIMARY SOURCE → EXACT RECIPIENT / FILING → CONDITIONS → ACTOR CAPACITY → RESPONSE / DECISION → EFFECT → LATER CALIFICACIÓN USE`.
 
 The package is strong counter-record evidence against categorical portrayals of abandonment or absence of effort. It is **not** automatic proof that the Judge or AC criminally obstructed a fully funded transaction.
 
+For Pink/rent, do not argue simply that `LPB was a propco so rent did not matter`. LPB could hold lease/rent rights. The stronger question is whether the Calificación/Judgment preserved the legal separation between shareholder, debtor/property owner, operator, hotel-wide exploitation, Community structures and other property owners when attributing rent, non-collaboration and causal prejudice.
+
 ## Open evidence already covered by canonical missing-evidence programme
 
-Do not create duplicate missing-evidence entries merely because this gate exists. The principal unresolved items are already captured by ME-047 / ME-053 / ME-055 and the ONA ledger, including:
+Do not create duplicate missing-evidence entries merely because this gate exists. The principal unresolved items are already captured by ME-047 / ME-053 / ME-055 and the ONA/unitary ledgers, including:
 
 - complete primary 2008 transaction and owner/finca completion schedule;
 - complete Multimatrix→Monterecco/Aweswell wider-rights chain;
+- exact June-2018 title schedule if an exact contemporaneous ownership percentage is needed;
+- formal JV agreement, if any, or confirmation that the structure remained contractual/alliance-based;
 - exact post-13-Jun conclusion filing, annexes, docket proof and court/AC response;
 - AC debt reconciliation/certificate;
 - route-by-route condition-satisfaction / waiver / non-completion ledger;
+- exact operator/accounting revenue and rent-capacity record relevant to Pink;
 - exact ONA↔Clubotel legal/corporate/mandate bridge where necessary.
 
 ## Public routes
@@ -118,4 +171,4 @@ Do not create duplicate missing-evidence entries merely because this gate exists
 
 ## Continuity rule
 
-A fresh thread that discusses the June-2018 exit attempt, ONA, lender readiness, staged security, minority-unit normalisation or the 2008 sale without reading this gate, the later ONA canonical ledger and the finance-conditions/staged-security position control is incomplete.
+A fresh thread that discusses the June-2018 exit attempt, Daniel Irigoyen, LPB as propco/principal owner, property versus hotel exploitation, ONA, lender readiness, staged security, formal-JV language, minority-unit normalisation, Pink/rent entity separation or the 2008 sale without reading this gate and the 17-Aug unitary analysis is incomplete.
