@@ -1,0 +1,320 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-17",
+  "status": "PUBLIC-SEED-NOT-COMPLETE",
+  "purpose": "Machine-readable seed for the Por Derecho public-authority and independent-review case reconstruction interface. Absence from this file does not mean absence from the evidence base.",
+  "method": {
+    "rule": "One underlying fact = one canonical proposition; one primary document = one canonical evidence object; one unit/finca = one canonical asset identity.",
+    "criminalParallelCommand": true,
+    "civilInvalidityIsNotCriminality": true,
+    "formalValidityDoesNotExcludeSeparateCriminalRelevance": true,
+    "negativeEvidenceRule": "Use 'not yet located' unless non-existence is itself established."
+  },
+  "statusLabels": [
+    "VERIFIED",
+    "VERIFIED_WITH_LIMITATION",
+    "STRONGLY_SUPPORTED",
+    "WORKING_HYPOTHESIS",
+    "CONTESTED",
+    "CONTRADICTED",
+    "SUPERSEDED",
+    "OPEN"
+  ],
+  "publicationLabels": [
+    "PUBLIC-READY",
+    "PUBLIC-READY-WITH-QUALIFICATION",
+    "LEGAL-REVIEW-RECOMMENDED",
+    "REPOSITORY-ONLY",
+    "DO-NOT-PUBLISH-YET"
+  ],
+  "entities": [
+    {"id":"ENT-LPB","name":"Luchy Playa Blanca, S.L.U.","type":"company","note":"Debtor in Concurso 36/2012; keep distinct from other owners and operators."},
+    {"id":"ENT-MATKATOR","name":"Matkator, S.L.","type":"company","note":"Extraconcursal unit owner; never merge its units into LPB solely because of group relationship."},
+    {"id":"ENT-CAM","name":"Construcciones Acosta Matos, S.A.","type":"company","note":"Creditor/acquirer actor in relevant records; distinguish creditor status, material control and later title by date."},
+    {"id":"ENT-HNT","name":"Hotel New Trend, S.L.","type":"company","note":"Later CAM successor/transferee perimeter; maintain separate legal identity."},
+    {"id":"ENT-CEXP","name":"Comunidad de Explotación del Complejo Sun Park","type":"community/operator","note":"Do not conflate with Comunidad de Propietarios."},
+    {"id":"ENT-COMPROP","name":"Comunidad de Propietarios / relevant Sun Park property-community perimeter","type":"community","note":"Exact body and legal capacity must be identified document by document."},
+    {"id":"ENT-RICPE","name":"RIC Private Equity Investment Partners, S.C.R., S.A.","type":"regulated-investment-entity","note":"Keep separate from CAM/HNT and from public funding bodies."},
+    {"id":"ENT-MYND","name":"MYND Yaiza / relevant operating-brand perimeter","type":"hotel-operation","note":"Brand/operation does not itself determine unit title."}
+  ],
+  "assets": [
+    {
+      "id":"ASSET-001",
+      "labelEs":"Hotel Sun Park / MYND Yaiza — complejo de titularidad fragmentada y explotación hotelera unitaria",
+      "labelEn":"Sun Park / MYND Yaiza — mixed-title complex and unitary hotel operation",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "note":"The project record treats the physical/economic hotel as unitary while requiring finca-by-finca legal ownership reconciliation."
+    }
+  ],
+  "propositions": [
+    {
+      "id":"AUTH-2011-001",
+      "kind":"authority",
+      "labelEs":"Validez y raíz de autoridad de la transición de gobierno comunitario controvertida de 2011",
+      "labelEn":"Validity and root of authority of the disputed 2011 community-governance transition",
+      "status":"WORKING_HYPOTHESIS",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "dependsOn":["ACTA-2011-001","VOTE-2011-001","OWN-2008-001"],
+      "criminalForensic":"INVESTIGATIVE-QUESTION-NOT-FINDING",
+      "whatWouldChangeOurMind":"Complete contemporaneous notice, attendance/proxy, title/coefficient, voting and appointment records proving an independently valid root, or primary evidence positively disproving the alleged transition defect.",
+      "gap":"Complete 2011 source package and unit-level vote reconstruction remain keystone evidence."
+    },
+    {
+      "id":"ACTA-2011-001",
+      "kind":"acta",
+      "labelEs":"Primer ACTA material de 2011 identificado por el proyecto como posible punto de ruptura de autoridad",
+      "labelEn":"First material 2011 ACTA identified by the project as a possible authority breakpoint",
+      "status":"OPEN",
+      "publication":"REPOSITORY-ONLY",
+      "criminalForensic":"NO-OFFENCE-CONCLUSION; authentication, provenance, authority and subsequent use require source-led testing",
+      "gap":"Canonical complete primary ACTA plus annexes not yet bound in this public seed."
+    },
+    {
+      "id":"VOTE-2011-001",
+      "kind":"vote",
+      "labelEs":"Mayoría/quórum real de la reunión material de 2011",
+      "labelEn":"Actual majority/quorum of the material 2011 meeting",
+      "status":"OPEN",
+      "publication":"REPOSITORY-ONLY",
+      "gap":"Requires unit ownership/completion, proxies, exclusions, coefficients and counterfactual vote calculation."
+    },
+    {
+      "id":"OWN-2008-001",
+      "kind":"ownership",
+      "labelEs":"Mapa unitario de cierre/compraventa y titularidad tras la operación de 2008",
+      "labelEn":"Unit-level 2008 sale-completion and post-transaction ownership map",
+      "status":"OPEN",
+      "publication":"REPOSITORY-ONLY",
+      "gap":"Unit/finca sale-completion master reconciliation is not yet complete."
+    },
+    {
+      "id":"JUD-2018-001",
+      "kind":"judicial-act",
+      "labelEs":"Auto de 16-abr-2018 sobre plan de liquidación y alternativas de realización",
+      "labelEn":"16-Apr-2018 liquidation-plan Auto and realisation alternatives",
+      "status":"VERIFIED",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "evidence":["EVID-2018-AUTO-001"],
+      "criminalForensic":"FORMAL-COURT-ACT; does not by itself prove the truth or criminal character of every upstream private proposition"
+    },
+    {
+      "id":"JUD-2018-002",
+      "kind":"judicial-act",
+      "labelEs":"Auto separado de 16-abr-2018 sobre aclaración de intereses del crédito CAM",
+      "labelEn":"Separate 16-Apr-2018 Auto clarifying interest on CAM credit",
+      "status":"VERIFIED",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "evidence":["EVID-2018-AUTO-002"],
+      "criminalForensic":"FORMAL-COURT-ACT; separate from JUD-2018-001"
+    },
+    {
+      "id":"JUD-2018-003",
+      "kind":"judicial-act",
+      "labelEs":"Auto de 4-jun-2018 — copia disponible incompleta",
+      "labelEn":"4-Jun-2018 Auto — available copy incomplete",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "evidence":["EVID-2018-AUTO-003"],
+      "criminalForensic":"NO ACTOR/INTENT INFERENCE FROM INCOMPLETE COPY",
+      "gap":"Complete continuation/dispositive/signature copy remains P1."
+    },
+    {
+      "id":"JUD-2018-004",
+      "kind":"laj-act",
+      "labelEs":"Diligencia de Ordenación de 15-jun-2018 — Águeda Reyes Almeida, LAJ",
+      "labelEn":"15-Jun-2018 Diligencia de Ordenación — Águeda Reyes Almeida, LAJ",
+      "status":"VERIFIED",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "dependsOn":["JUD-2018-001","JUD-2018-003"],
+      "evidence":["EVID-2018-LAJ-001"],
+      "criminalForensic":"FORMAL-LAJ-ACT; do not attribute to the Judge merely because it implemented judicial Autos"
+    },
+    {
+      "id":"JUD-2018-005",
+      "kind":"judicial-act",
+      "labelEs":"Auto de 26-jun-2018 suspendiendo la realización de determinadas fincas durante el recurso",
+      "labelEn":"26-Jun-2018 Auto suspending realisation of specified properties pending appeal",
+      "status":"VERIFIED",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "dependsOn":["JUD-2018-001","JUD-2018-003"],
+      "evidence":["EVID-2018-AUTO-004"],
+      "criminalForensic":"FORMAL-COURT-ACT; downstream factual/legal consequences require separate analysis"
+    },
+    {
+      "id":"OWN-2021-001",
+      "kind":"ownership-representation",
+      "labelEs":"Registro controlado de julio de 2021 que describe 262 fincas: 54 CAM, 190 LPB y 18 terceros, con condicionalidad de título CAM",
+      "labelEn":"Controlled July-2021 record describing 262 properties: 54 CAM, 190 LPB and 18 third-party, with CAM title conditionality",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "criminalForensic":"REPRESENTATION-VERSUS-REALITY TEST REQUIRED; no criminal inference from the split alone",
+      "gap":"Dedicated canonical primary evidence object/hash/source binding should be completed before treating this seed as a full evidence manifest."
+    },
+    {
+      "id":"FUND-2022-001",
+      "kind":"public-funding",
+      "labelEs":"GC/836/P06 — inversión publicada de €11.469.714, subvención de €3.440.914,20 y compromiso de 60 empleos",
+      "labelEn":"GC/836/P06 — published €11,469,714 investment, €3,440,914.20 grant and 60-job commitment",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "criminalForensic":"FUNDING-RECONCILIATION-QUESTION; published award does not itself establish misuse, payment, eligible-cost overlap or fraud",
+      "gap":"Reconcile eligible costs, payment/certification, other finance, employment definitions and control records."
+    },
+    {
+      "id":"FUND-2023-001",
+      "kind":"eu-funding",
+      "labelEs":"Identificación FEDER asociada al proyecto/hotel en el registro público controlado",
+      "labelEn":"ERDF/FEDER identification associated with the project/hotel in the controlled public record",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "criminalForensic":"IDENTIFICATION-ONLY; exact amount, expenditure, payment, verification and any alleged misuse remain separate unresolved questions",
+      "gap":"Exact financing/certification/control chain."
+    },
+    {
+      "id":"TXN-2022-001",
+      "kind":"transaction",
+      "labelEs":"Umbral formal de adjudicación del perímetro LPB en 2022",
+      "labelEn":"2022 formal adjudication threshold for the LPB perimeter",
+      "status":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "criminalForensic":"LATER-TITLE-DOES-NOT-RETROACTIVELY-PROVE-EARLIER-AUTHORITY",
+      "gap":"Continue finca-by-finca reconciliation and conditions/surplus/finality consequences."
+    }
+  ],
+  "evidence": [
+    {
+      "id":"EVID-2018-AUTO-001",
+      "date":"2018-04-16",
+      "type":"AUTO",
+      "description":"Seven-page liquidation-plan Auto",
+      "actor":"Alberto López Villarrubia",
+      "pages":7,
+      "sha256":"2de1527a738658252f81fd3e402622f677280aaed735e5ef117d44c4a06dcd05",
+      "completeness":"COMPLETE",
+      "copyStatus":"PRIMARY / ELECTRONIC COURT COPY",
+      "notification":"2018-04-20",
+      "sourceControl":"archive/CONCURSO_36_2012_BATCH_B_2018_VERIFIED_ACT_REGISTER_17AUG2026.md"
+    },
+    {
+      "id":"EVID-2018-AUTO-002",
+      "date":"2018-04-16",
+      "type":"AUTO",
+      "description":"Separate two-page clarification Auto concerning CAM privileged-credit interest",
+      "actor":"Alberto López Villarrubia",
+      "pages":2,
+      "sha256":"4748ad85af54dac606104e8f93cd71299cfd5878fc32be0bf1d4f236325e59ff",
+      "completeness":"COMPLETE",
+      "copyStatus":"PRIMARY / ELECTRONIC COURT COPY",
+      "notification":"2018-04-20",
+      "sourceControl":"archive/CONCURSO_36_2012_BATCH_B_2018_VERIFIED_ACT_REGISTER_17AUG2026.md"
+    },
+    {
+      "id":"EVID-2018-AUTO-003",
+      "date":"2018-06-04",
+      "type":"AUTO",
+      "description":"Available two-page clarification copy ending mid-analysis",
+      "actor":"NOT PROMOTED FROM INCOMPLETE COPY",
+      "pages":2,
+      "sha256":"867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0",
+      "completeness":"INCOMPLETE",
+      "copyStatus":"PRIMARY EXTRACT / INCOMPLETE COURT COPY",
+      "notification":"2018-06-08",
+      "sourceControl":"archive/CONCURSO_36_2012_BATCH_B_2018_VERIFIED_ACT_REGISTER_17AUG2026.md"
+    },
+    {
+      "id":"EVID-2018-LAJ-001",
+      "date":"2018-06-15",
+      "type":"DILIGENCIA_DE_ORDENACION",
+      "description":"LAJ act implementing 16-Apr and 4-Jun rulings and better-offer/licitation process",
+      "actor":"Águeda Reyes Almeida, LAJ",
+      "pages":2,
+      "sha256":"1298d03daca48284de642299ddb86c6b8ed2900f95d5ce05edf2d491e5f8ade5",
+      "completeness":"COMPLETE",
+      "copyStatus":"PRIMARY / LAJ COURT COPY",
+      "notification":"2018-06-20",
+      "sourceControl":"archive/CONCURSO_36_2012_BATCH_B_2018_VERIFIED_ACT_REGISTER_17AUG2026.md"
+    },
+    {
+      "id":"EVID-2018-AUTO-004",
+      "date":"2018-06-26",
+      "type":"AUTO",
+      "description":"Suspension Auto for specified properties pending appeal",
+      "actor":"Alberto López Villarrubia",
+      "pages":2,
+      "sha256":"4f23ad7e30191b1d32c8708851729f42151c3b095476255d5fe1a5fc43509099",
+      "completeness":"COMPLETE",
+      "copyStatus":"PRIMARY / ELECTRONIC COURT COPY",
+      "notification":"2018-06-28",
+      "sourceControl":"archive/CONCURSO_36_2012_BATCH_B_2018_VERIFIED_ACT_REGISTER_17AUG2026.md"
+    }
+  ],
+  "dependencyEdges": [
+    {"from":"JUD-2018-004","to":"JUD-2018-001","relation":"IMPLEMENTS","foundation":"DEPENDENT"},
+    {"from":"JUD-2018-004","to":"JUD-2018-003","relation":"IMPLEMENTS","foundation":"DEPENDENT","note":"Underlying 4-Jun source copy remains incomplete."},
+    {"from":"JUD-2018-005","to":"JUD-2018-001","relation":"SUSPENDS_REALISATION_CHAIN_FROM","foundation":"DEPENDENT"},
+    {"from":"JUD-2018-005","to":"JUD-2018-003","relation":"REFERS_TO_CLARIFICATION","foundation":"DEPENDENT","note":"Underlying 4-Jun source copy remains incomplete."},
+    {"from":"AUTH-2011-001","to":"ACTA-2011-001","relation":"ROOT_REQUIRES","foundation":"BROKEN"},
+    {"from":"AUTH-2011-001","to":"VOTE-2011-001","relation":"ROOT_REQUIRES","foundation":"BROKEN"},
+    {"from":"VOTE-2011-001","to":"OWN-2008-001","relation":"REQUIRES_UNIT_TITLE_COMPLETION_MAP","foundation":"BROKEN"}
+  ],
+  "institutions": [
+    {
+      "id":"INST-YAIZA",
+      "name":"Ayuntamiento de Yaiza",
+      "routeEs":"/por-derecho/es/yaiza-trazabilidad-institucional/",
+      "routeEn":"/por-derecho/en/yaiza-institutional-traceability/",
+      "coreQuestionEs":"¿Quién solicitó, en qué capacidad, con qué título/autoridad y qué verificó independientemente el Ayuntamiento?",
+      "coreQuestionEn":"Who applied, in what capacity, with what title/authority, and what did the municipality independently verify?"
+    },
+    {
+      "id":"INST-CABILDO",
+      "name":"Cabildo de Lanzarote / Turismo",
+      "routeEs":"/por-derecho/es/cabildo-lanzarote-turismo-trazabilidad/",
+      "routeEn":"/por-derecho/en/cabildo-lanzarote-tourism-traceability/",
+      "coreQuestionEs":"¿Qué establecimiento, operador, titularidad y perímetro fueron presentados y verificados en los expedientes turísticos?",
+      "coreQuestionEn":"What establishment, operator, title and property perimeter were presented and verified in the tourism files?"
+    },
+    {
+      "id":"INST-CNMV",
+      "name":"CNMV",
+      "routeEs":"/por-derecho/es/cnmv-ricpe-verificacion/",
+      "routeEn":"/por-derecho/en/cnmv-ricpe-verification/",
+      "coreQuestionEs":"¿Qué conocían los órganos/gestores de RICPE sobre titularidad, control y litigios, qué se comunicó y qué se verificó?",
+      "coreQuestionEn":"What did RICPE decision-makers know about title, control and litigation, what was communicated, and what was independently checked?"
+    },
+    {
+      "id":"INST-FUNDING",
+      "name":"Public/EU funding control",
+      "routeEs":"/por-derecho/es/snca-fondos-europeos-trazabilidad/",
+      "routeEn":"/por-derecho/en/snca-eu-funds-traceability/",
+      "coreQuestionEs":"¿Pueden reconciliarse activos, obras, costes, empleo y financiación sin doble cómputo ni perímetros incompatibles?",
+      "coreQuestionEn":"Can assets, works, costs, employment and finance be reconciled without double counting or incompatible perimeters?"
+    },
+    {
+      "id":"INST-FISCALIA",
+      "name":"Fiscalía / criminal investigation",
+      "routeEs":"/por-derecho/es/fiscalia-dip-2-2026/",
+      "routeEn":"/por-derecho/en/fiscalia-dip-2-2026/",
+      "coreQuestionEs":"¿Qué cadenas factuales actor-específicas justifican investigación penal y cuáles siguen siendo civiles, concursales o no probadas?",
+      "coreQuestionEn":"Which actor-specific factual chains justify criminal investigation, and which remain civil, insolvency-related or unproved?"
+    },
+    {
+      "id":"INST-CONCURSO",
+      "name":"Concurso 36/2012 / independent insolvency review",
+      "routeEs":"/por-derecho/es/concurso-36-2012-responsabilidad-institucional/",
+      "routeEn":"/por-derecho/en/insolvency-36-2012-institutional-accountability/",
+      "coreQuestionEs":"¿Fueron identificados, preservados, valorados y realizados correctamente los activos/derechos de LPB y se verificaron las proposiciones privadas de autoridad/deuda?",
+      "coreQuestionEn":"Were LPB estate assets/rights correctly identified, preserved, valued and realised, and were private authority/debt propositions independently verified?"
+    }
+  ],
+  "keystoneGaps": [
+    "2008 unit/finca sale-completion/title master map",
+    "pre-2011 governance/ACTA baseline",
+    "complete pivotal 2011 ACTA + notice + attendance/proxy + ownership/coefficient + debt/vote package",
+    "administrator/office-holder/bank/books/records mandate and custody chain",
+    "complete relevant 2018/2019/2022 ACTAs and annexes",
+    "institutional receipt/reliance records proving or disproving independent verification",
+    "funding DD/committee/waiver/source-and-use reconciliation",
+    "complete 4-Jun-2018 Auto continuation/signature copy"
+  ]
+}
