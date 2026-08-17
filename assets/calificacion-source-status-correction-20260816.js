@@ -10,7 +10,7 @@
   if (document.querySelector('[data-cal-source-correction-20260816]')) return;
 
   const marker = document.createElement('div');
-  marker.dataset.calSourceCorrection20260816 = '3';
+  marker.dataset.calSourceCorrection20260816 = '4';
   marker.hidden = true;
   document.body.appendChild(marker);
 
@@ -39,10 +39,10 @@
   }
 
   const mediaArticleUrl = 'https://www.lavozdelanzarote.com/actualidad/politica/el-juez-pone-fin-al-proceso-concursal-de-inalsa-aprobando-el-convenio-con-los-acreedores-que-implica-una-quita-del-21-72-por-ciento_82691_102.html';
-  const mediaImageUrl = 'https://www.lavozdelanzarote.com/uploads/s1/10/92/69/1/2013092818073031032.jpeg';
+  const localImageUrl = asset('alberto-lopez-villarrubia-supplied-17aug2026.webp?v=20260817d');
 
   const style = document.createElement('style');
-  style.dataset.judgeImageLocationFix = '20260817c';
+  style.dataset.judgeImageLocationFix = '20260817d';
   style.textContent = `
     #lpam-magistrado-source-control .lpam-judge-photo{
       display:block;position:static!important;top:auto!important;
@@ -51,7 +51,7 @@
       box-shadow:0 10px 28px rgba(19,37,45,.08)
     }
     #lpam-magistrado-source-control .lpam-judge-photo img{
-      display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center;background:#f1f2f2
+      display:block;width:100%;height:auto;aspect-ratio:760/428;object-fit:cover;object-position:center;background:#f1f2f2
     }
     #lpam-magistrado-source-control .lpam-judge-photo figcaption{
       padding:.8rem .95rem;font-size:.82rem;line-height:1.42;color:#586267
@@ -79,8 +79,8 @@
     if (!image || !caption) return false;
 
     image.removeAttribute('srcset');
-    image.width = 880;
-    image.height = 495;
+    image.width = 760;
+    image.height = 428;
     image.loading = 'eager';
     image.decoding = 'async';
     image.fetchPriority = 'high';
@@ -94,22 +94,22 @@
         const notice = document.createElement('p');
         notice.className = 'judge-image-error';
         notice.innerHTML = es
-          ? `La copia visual no pudo cargarse desde el servidor del medio. <a href="${mediaArticleUrl}" rel="external noopener">Abrir la publicación original en La Voz de Lanzarote →</a>`
-          : `The visual copy could not be loaded from the publisher's server. <a href="${mediaArticleUrl}" rel="external noopener">Open the original La Voz de Lanzarote publication →</a>`;
+          ? `La copia visual local no pudo cargarse. <a href="${mediaArticleUrl}" rel="external noopener">Abrir la publicación original en La Voz de Lanzarote →</a>`
+          : `The local visual copy could not be loaded. <a href="${mediaArticleUrl}" rel="external noopener">Open the original La Voz de Lanzarote publication →</a>`;
         figure.prepend(notice);
       }
     }, { once: true });
 
-    image.src = mediaImageUrl;
+    image.src = localImageUrl;
 
     caption.innerHTML = es
-      ? `<strong>Fuente mediática:</strong> <a href="${mediaArticleUrl}" rel="external noopener">La Voz de Lanzarote</a>, 18 de septiembre de 2013. La página de origen revisada no identifica a un fotógrafo individual. Copia aportada por Gil Marer para este expediente; la identificación empleada por Por Derecho procede del registro documental y de la atribución del aportante, no de reconocimiento facial realizado por ChatGPT.`
-      : `<strong>Media source:</strong> <a href="${mediaArticleUrl}" rel="external noopener">La Voz de Lanzarote</a>, 18 September 2013. The reviewed source page does not identify an individual photographer. Copy supplied by Gil Marer for this dossier; Por Derecho's identification comes from the documentary record and the supplier's attribution, not facial identification performed by ChatGPT.`;
+      ? `<strong>Fuente mediática:</strong> <a href="${mediaArticleUrl}" rel="external noopener">La Voz de Lanzarote</a>, 18 de septiembre de 2013. La página de origen revisada no identifica a un fotógrafo individual. Copia local optimizada a partir de la imagen aportada por Gil Marer para este expediente; la identificación empleada por Por Derecho procede del registro documental y de la atribución del aportante, no de reconocimiento facial realizado por ChatGPT.`
+      : `<strong>Media source:</strong> <a href="${mediaArticleUrl}" rel="external noopener">La Voz de Lanzarote</a>, 18 September 2013. The reviewed source page does not identify an individual photographer. Optimised local copy derived from the image supplied by Gil Marer for this dossier; Por Derecho's identification comes from the documentary record and the supplier's attribution, not facial identification performed by ChatGPT.`;
 
     figure.classList.add('lpam-judge-photo');
     figure.dataset.mediaCredit = 'la-voz-de-lanzarote-20130918';
     figure.dataset.locationFix = 'lpam-magistrado-source-control';
-    figure.dataset.imageSource = 'publisher-original';
+    figure.dataset.imageSource = 'verified-local-webp';
 
     const heading = target.querySelector('h2');
     if (heading) heading.insertAdjacentElement('afterend', figure);
@@ -126,5 +126,10 @@
     });
     observer.observe(document.body, { childList: true, subtree: true });
     window.setTimeout(() => observer.disconnect(), 15000);
+  }
+
+  function asset(filename) {
+    const base = document.querySelector('script[src*="site.js"]')?.src || window.location.href;
+    return new URL(filename, base).href;
   }
 })();
