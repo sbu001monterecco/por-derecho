@@ -10,12 +10,13 @@ Any future Project Sun Rock / Por Derecho thread, search pass, legal analysis or
 3. `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md`
 4. `archive/SUN_PARK_7JUN2018_RUNUP_SOURCE_INGEST_17AUG2026.md`
 5. `archive/SUN_PARK_7JUN2018_STORYLINE_WEBSITE_BRIDGE_17AUG2026.md`
-6. `archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
-7. `archive/EXTRACONCURSAL_ONGOING_HARM_AUDIT_15AUG2026.md`
-8. `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md`
-9. `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`
-10. `archive/CORRECTION_REGISTER.md`, especially CR-018 and CR-042.
-11. `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-044, ME-045, ME-046, ME-048, ME-050 and ME-058. The dedicated source-upgrade files above carry the additional finite production list for the native Borja security email, pre-7-Jun access/measurement/client-contact sources, the 2016 meeting audio and the 7-Jun authority/transmission chain.
+6. `archive/SUN_PARK_7JUN2018_PARALLEL_TRACKS_CONVERGENCE_ARCHITECTURE_17AUG2026.md`
+7. `archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
+8. `archive/EXTRACONCURSAL_ONGOING_HARM_AUDIT_15AUG2026.md`
+9. `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md`
+10. `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`
+11. `archive/CORRECTION_REGISTER.md`, especially CR-018 and CR-042.
+12. `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-044, ME-045, ME-046, ME-048, ME-050 and ME-058. The dedicated source-upgrade files above carry the additional finite production list for the native Borja security email, pre-7-Jun access/measurement/client-contact sources, the 2016 meeting audio and the 7-Jun authority/transmission chain.
 
 ## 17-Aug-2026 source upgrade — mandatory new controls
 
@@ -26,6 +27,8 @@ The new ten-file ingest materially strengthens the chronology but also adds adve
 - A **26-Feb-2018 same-day email** and **11-Apr-2018 complaint** prove a contemporaneous warning/allegation record before 7-Jun concerning owner-like assertions, access, measuring, security, staff/client effects and project preparation. They do not by themselves prove the attributed words or acts.
 - The principal 7-Jun witness used in Control 21 **excludes JDAM's physical presence on 7-Jun-2018**. Any JDAM theory must be based on preparation/instruction/representations/benefit, not invented onsite presence.
 - The **6-Feb-2019 DI 248 new-evidence submission** proves that Lava Verde/public “new owner”/Facebook/security material was formally put to Fiscalía; the **7-May-2019 Fiscalía decree** is a real adverse institutional outcome and archived DI 248. Notice and archive must be presented together.
+
+The 17-Aug convergence-architecture addendum also controls the **reader-facing structure**: the existing bilingual 7-Jun page is the sole public event hub and should show 7 June as a vertical material-control hinge across separate lanes for title/property, access/control, operation/customers, rescue, Concurso/Calificación, Community governance, project/investor representation, same-hotel financial lives and narrative/audience. Connections between lanes require their own evidence; chronology is not automatic causation.
 
 ## Canonical retrieval capsule
 
