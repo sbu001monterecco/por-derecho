@@ -1,13 +1,21 @@
 # THREAD-DELETION CONTINUITY AUDIT — LPAM × CGPJ 169 × CALIFICACIÓN
 
 Audit date: **17 August 2026**  
-Baseline main before this update: `6aceb33f736e06e0d261003c410d1e5ed0ea24c5`  
-Working branch: `agent/lpam-cgpj169-unitary-knowledge-chain`  
-Status: **DELETION-SAFE HANDOVER / SOURCE-STATUS CONTROL**
+Status: **DELETION-SAFE HANDOVER / SOURCE-STATUS CONTROL / PUBLIC IDENTITY RULE APPLIED**
 
 ## Purpose
 
-Preserve the exact continuation point if the originating ChatGPT thread disappears. This audit controls the integrated 2018→2021→2023→2026 Judge-knowledge / RICPE / LPAM / CGPJ chain and prevents later threads from collapsing allegations into facts or losing the corrected CGPJ chronology.
+Preserve the continuation point if the originating ChatGPT thread disappears. This audit controls the integrated 2018→2021→2023→2026 Judge-knowledge / RICPE / LPAM / CGPJ chain and prevents later threads from collapsing allegations into facts, losing the corrected CGPJ chronology, or reintroducing unnecessary identities of private witnesses.
+
+## Public identity rule
+
+- The witness who memorialised the LPAM account is described publicly as **a person within Gil Marer's personal and business perimeter** or **the witness/declarant from Gil Marer's perimeter**.
+- The separate private person formerly identified by first name is described as **one of Gil Marer's legal advisers at the relevant time**.
+- Neither person is **Laura Patricia Acosta Matos (LPAM)**.
+- LPAM remains fully identified on first reference because the relevant reported remarks are attributed to her.
+- Never use `Patricia` alone as public shorthand.
+
+Read `archive/ANONYMISATION_AND_LPAM_NAMING_CONTROL_17AUG2026.md` first.
 
 ## Canonical continuation point
 
@@ -57,8 +65,6 @@ A CAM opposition parsed during source completion concerns Aweswell's challenge t
 
 Do not cite that CAM filing as though it answered the 918/2021 RICPE/webinar allegation unless a primary procedural bridge is later recovered.
 
-A 24-Feb-2021 Auto surfaced in the connected corpus concerning partial success on the **13-Jan Providencia** reposición. Do not silently treat it as final adjudication of 918/2021.
-
 ### 5. 2023 Calificación relevance
 
 Sentencia 163/2023 remains adverse at first instance on materially important branches, including:
@@ -75,11 +81,11 @@ Do not state that this knowledge chain by itself proves prevaricación or knowin
 
 Controlled position:
 
-- Patricia Domínguez reports that LPAM described Magistrado-Juez Alberto López Villarrubia as a friend and as someone with direct/personal telephone access or frequent contact.
-- A contemporaneous-looking wider distribution/memorialisation materially improves provenance of Patricia's account.
+- **A person within Gil Marer's personal and business perimeter** reports that **Laura Patricia Acosta Matos (LPAM)** described Magistrado-Juez Alberto López Villarrubia as a friend and as someone with direct/personal telephone access or frequent contact.
+- Contemporaneous distribution/memorialisation materially improves provenance of the witness's account.
 - No original recording of the reported LPAM remarks has been located in the controlled corpus.
 - Legal-draft memorialisation is corroboration of the **existence of the relayed account**, not independent eyewitness proof of the underlying relationship.
-- **Gil Marer now expressly states that he strongly believes Patricia Domínguez's account of LPAM's reported remarks.** Preserve this as a **party credibility position**, not independent corroboration.
+- **Gil Marer states that he strongly believes the witness's account of LPAM's reported remarks.** Preserve this as a **party credibility position**, not independent corroboration.
 
 Finite corroboration test:
 
@@ -109,17 +115,7 @@ Do not say “appeal filed/signed 18 June.” It was presented **15 June**; 18 J
 
 Safe strong formulation:
 
-> By early 2021, before the later formal LPB-title threshold, the Mercantile-court record itself contained a formal challenge alleging that CAM/RICPE were publicly presenting the same Sun Park hotel as an owned investment project while the LPB asset perimeter remained in Concurso 36/2012. The 2023 Calificación must therefore be tested against a knowledge environment including parallel concursal, ownership/control, operational, commercial and investment lives. Patricia separately reports LPAM describing a friendship/direct-access relationship with the Judge; Gil states that he believes that account. The relationship remains a serious corroboration question, not an established fact.
-
-## Truth-inversion / diversion grammar
-
-Use:
-
-`RAW FACT → OMITTED CONTEXT → REAL POWER/CAPACITY → INVERTED AGENCY → ATTRIBUTED CAUSATION → CULPABILITY → INSTITUTIONAL REUSE → WHAT DISAPPEARED FROM SCRUTINY`
-
-For the rent branch specifically:
-
-`KNOWN PARALLEL LIVES → ACTUAL CONTROL/CAPACITY → RENT-COLLECTION DUTY → REAL ABILITY TO COLLECT/OPERATE → COMPETING CAUSATION → ATTRIBUTED CAUSATION → €3.032m CULPABILITY`
+> By early 2021, before the later formal LPB-title threshold, the Mercantile-court record itself contained a formal challenge alleging that CAM/RICPE were publicly presenting the same Sun Park hotel as an owned investment project while the LPB asset perimeter remained in Concurso 36/2012. The 2023 Calificación must therefore be tested against a knowledge environment including parallel concursal, ownership/control, operational, commercial and investment lives. A person within Gil Marer's personal and business perimeter separately reports **Laura Patricia Acosta Matos (LPAM)** describing a friendship/direct-access relationship with the Judge; Gil states that he believes that witness. The relationship remains a serious corroboration question, not an established fact.
 
 ## Prohibited shortcuts
 
@@ -132,10 +128,7 @@ Future threads must **not** state as established fact that:
 - CNMV or AEAT found fraud;
 - the 2021 RICPE allegations were adjudicated true merely because filed;
 - the CGPJ examined the merits of the 28-Jul supplement;
-- the 10-Jul CGPJ agreement referred the matter to Inspection;
 - prevaricación, corruption, collusion, bribery or secret agreement has been established.
-
-These remain allegations, legal hypotheses or matters requiring corroboration unless later primary evidence changes status.
 
 ## Highest-value next evidence
 
@@ -147,25 +140,6 @@ These remain allegations, legal hypotheses or matters requiring corroboration un
 6. A03 economic trace and exact €2.733m→€3.032m bridge.
 7. AP Las Palmas ruling in RPL 2523/2025.
 
-## Canonical files after this update
-
-- `archive/LPAM_CGPJ169_CALIFICACION_UNITARY_KNOWLEDGE_CHAIN_17AUG2026.md`
-- `archive/CALIFICACION_LPAM_CGPJ169_JUDGE_KNOWLEDGE_OVERRIDE_17AUG2026.md`
-- `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md` as updated/read with the override
-- `archive/LPAM_MAGISTRADO_SOURCE_COMPLETION_16AUG2026.md`
-- `archive/CGPJ_DI169_ALZADA286_VERIFIED_CHRONOLOGY_16AUG2026.md`
-- `archive/CGPJ_ISSUES_AND_VERIFICATION_REGISTER_15AUG2026.md`
-- `archive/CALIFICACION_UNITARY_TRUTH_INVERSION_DIVERSION_THESIS_16AUG2026.md`
-- `archive/SUN_PARK_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_CONTROL_CHAIN_16AUG2026.md`
-- `archive/CALIFICACION_SERIAL_ALLEGATION_AUDIT_INDEX_16AUG2026.md`
-
 ## Deletion-safe continuation instruction
 
-If a future thread receives only this file, it should:
-
-1. read the canonical files above;
-2. preserve the 15-Jun / 18-Jun / 28-Jul CGPJ correction;
-3. preserve 918/2021 as the A-grade formal court-notice bridge;
-4. preserve Gil's belief in the LPAM account as a party credibility position only;
-5. keep all adverse 2023 findings and pending appeal visible; and
-6. continue the serial audit at **A05**, unless the user explicitly requests another cross-cutting update.
+If a future thread receives only this file, it should read the canonical controls, preserve the 15-Jun / 18-Jun / 28-Jul CGPJ correction, preserve 918/2021 as the A-grade formal court-notice bridge, preserve Gil's belief in the LPAM account as a party credibility position only, preserve the public identity-control rule, keep all adverse 2023 findings and pending appeal visible, and continue the serial audit at **A05** unless the user explicitly requests another cross-cutting update.

@@ -1,13 +1,19 @@
 # CORRECTION REGISTER ADDENDUM — LPAM / CGPJ 169 / 2021 ALERT-TO-COURT CHAIN
 
 Control date: **17 August 2026**  
-Status: **CANONICAL CORRECTION / SOURCE-UPGRADE ADDENDUM**
+Status: **CANONICAL CORRECTION / SOURCE-UPGRADE ADDENDUM / PUBLIC IDENTITY CONTROL APPLIED**
+
+## Publication identity control
+
+The public repository must not identify the person from Gil Marer's personal and business perimeter who memorialised the LPAM account. Refer to that person as **the witness/declarant from Gil Marer's perimeter**. A second person formerly identified by first name is described as **one of Gil Marer's legal advisers at the relevant time**.
+
+This witness is a different person from **Laura Patricia Acosta Matos (LPAM)**. LPAM remains fully named on first reference because the reported statements relevant to this module are attributed to her. Never use `Patricia` alone as a public shorthand for either person.
 
 ## CR-LPAM-2021-01 — AEAT 13-Jan-2021 submission status upgraded
 
 **Earlier cautious position:** the corpus contained an AEAT complaint/form concerning RIC materialisation, but successful formal presentation required stronger confirmation.
 
-**Corrected position:** a telematic AEAT registry record dated **13/01/2021** is now directly controlled. It records:
+**Corrected position:** a telematic AEAT registry record dated **13/01/2021** is directly controlled. It records:
 
 - `ZZ061 - Denuncia Ordinaria`;
 - `ZZ06 - Denuncia tributaria`;
@@ -28,7 +34,7 @@ The CNMV filing is positively verified under registry no. **2021002141**, receiv
 
 ## CR-LPAM-2021-03 — 4-Feb-2021 RICPE issue formally entered Concurso 36/2012
 
-The controlled corpus now includes the LexNET acuse and principal Aweswell pleading filed **4-Feb-2021** against the Mercantil nº1 Auto of 25-Jan-2021 concerning proposed alienation to CAM.
+The controlled corpus includes the LexNET acuse and principal Aweswell pleading filed **4-Feb-2021** against the Mercantil nº1 Auto of 25-Jan-2021 concerning proposed alienation to CAM.
 
 The pleading expressly alleged that CAM was publicly presenting Sun Park as owner/project and seeking investors through RIC Private Equity, and invoked/annexed RICPE webinar/web material and information sent to CNMV.
 
@@ -69,7 +75,7 @@ Presentation is not proof of joinder, examination or merits.
 
 Current party position recorded on 17-Aug-2026:
 
-> Gil Marer states that he strongly believes Patricia Domínguez's account of LPAM's reported remarks concerning friendship/direct personal access to the Judge.
+> Gil Marer states that he strongly believes the account given by a person within his personal and business perimeter concerning reported remarks attributed to **Laura Patricia Acosta Matos (LPAM)** about friendship/direct personal access to the Judge.
 
 **Use:** this may be published as Gil Marer's stated credibility position and as the reason he seeks finite corroboration.
 
@@ -82,3 +88,4 @@ Current party position recorded on 17-Aug-2026:
 - `archive/THREAD_DELETION_CONTINUITY_AUDIT_LPAM_CGPJ169_CALIFICACION_17AUG2026.md`
 - `archive/CGPJ_DI169_ALZADA286_VERIFIED_CHRONOLOGY_16AUG2026.md`
 - `archive/LPAM_MAGISTRADO_SOURCE_COMPLETION_16AUG2026.md`
+- `archive/ANONYMISATION_AND_LPAM_NAMING_CONTROL_17AUG2026.md`

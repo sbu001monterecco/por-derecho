@@ -1,19 +1,21 @@
-# Declaración de Patricia Domínguez — mensajes de voz sobre RICPE, CAM, HNT y Sun Park
+# Declaración anonimizada — testigo del perímetro de Gil Marer — mensajes de voz sobre RICPE, CAM, HNT y Sun Park
 
 **N.º:** 002  
-**Declarante:** Patricia Domínguez  
+**Declarante público:** Testigo del perímetro personal y empresarial de Gil Marer — identidad reservada  
 **Fecha:** 15 de agosto de 2026  
 **Lugar:** San Cristóbal de La Laguna  
 **Materia:** Sentido unitario de dieciséis mensajes de voz de 14 de agosto de 2026 relativos a la comunicación dirigida a RIC Private Equity Investment Partners, S.C.R., S.A.  
 **Estado:** REGISTRADA — derivada de grabaciones; no firmada; utilizable con los límites indicados
 
+> **Privacidad y autenticación:** esta es una versión pública anonimizada. Los audios, metadatos y cualquier versión firmada con identidad legal permanecen en el corpus privado/nativo y pueden producirse ante una autoridad competente. La persona declarante es distinta de **Laura Patricia Acosta Matos (LPAM)**.
+
 > **Uso y autenticación:** esta declaración puede conservarse, citarse, comunicarse y utilizarse como relato fechado de repositorio aunque no esté firmada. No debe describirse como firmada, jurada o ratificada personalmente más allá de lo que acrediten los mensajes de voz. Los audios y sus metadatos son la fuente personal primaria. Una versión posterior firmada o ratificada, si existe, controlará la autenticación y el tenor exacto en caso de diferencia, sin borrar ni inutilizar esta versión.
 
-> **Fuente:** corpus de trabajo identificado como dieciséis mensajes de voz únicos de WhatsApp atribuidos a Patricia Domínguez, fechados el 14 de agosto de 2026, con duración conjunta aproximada de una hora. Existe una transcripción de trabajo con marcas temporales, no pericial ni certificada. Las citas literales deben comprobarse contra el audio. El audio bruto y la transcripción íntegra no se publican en este repositorio.
+> **Fuente:** corpus de trabajo identificado como dieciséis mensajes de voz únicos de WhatsApp atribuidos a la declarante anonimizada, fechados el 14 de agosto de 2026, con duración conjunta aproximada de una hora. Existe una transcripción de trabajo con marcas temporales, no pericial ni certificada. Las citas literales deben comprobarse contra el audio. El audio bruto y la transcripción íntegra no se publican en este repositorio.
 
 ## Declaración
 
-1. Yo, **Patricia Domínguez**, dejo constancia del sentido de los comentarios de voz que realicé al revisar un borrador de comunicación relacionado con **RICPE**, **Construcciones Acosta Matos, S.A. (CAM)**, **Hotel New Trend, S.L. (HNT)**, **Luchy Playa Blanca, S.L.U. (LPB)** y el complejo **Sun Park/MYND Yaiza**.
+1. Yo, **persona del perímetro personal y empresarial de Gil Marer cuya identidad se reserva en esta publicación**, dejo constancia del sentido de los comentarios de voz que realicé al revisar un borrador de comunicación relacionado con **RICPE**, **Construcciones Acosta Matos, S.A. (CAM)**, **Hotel New Trend, S.L. (HNT)**, **Luchy Playa Blanca, S.L.U. (LPB)** y el complejo **Sun Park/MYND Yaiza**.
 
 2. Mi conocimiento personal directo comprende mis propias palabras, preguntas, preocupaciones y recomendaciones editoriales. No presento como conocimiento personal hechos internos de RICPE, CAM, HNT, el Administrador Concursal, el Juzgado o la Comunidad de Propietarios que no hubiera presenciado. Las fechas, cifras, resoluciones, cuentas, folletos, tasaciones y actos societarios a los que me referí proceden de documentos revisados, mostrados o explicados, que deben preservarse por separado.
 
@@ -27,11 +29,11 @@
 
 ### B. Partes, personas y Comunidad
 
-6. Insistí en identificar correctamente a Gil Marer, Aweswell Limited, LPB, CAM, HNT, RICPE y las personas y sociedades relevantes, sin tratar como intercambiables a entidades distintas. Pedí explicar las funciones atribuidas en la documentación a **José Daniel Acosta Matos**, **Laura Patricia Acosta Matos**, **Francisco Mario Matos Matas**, **Antonio Cogolludo Rojas** y **Shaila Cogolludo Ramos**, incluidos poderes, cargos comunitarios, administración, custodia, seguridad, acceso, proyecto u operación.
+6. Insistí en identificar correctamente a Gil Marer, Aweswell Limited, LPB, CAM, HNT, RICPE y las personas y sociedades relevantes, sin tratar como intercambiables a entidades distintas. Pedí explicar las funciones atribuidas en la documentación a **José Daniel Acosta Matos**, **Laura Patricia Acosta Matos (LPAM)**, **Francisco Mario Matos Matas**, **Antonio Cogolludo Rojas** y **Shaila Cogolludo Ramos**, incluidos poderes, cargos comunitarios, administración, custodia, seguridad, acceso, proyecto u operación.
 
 7. Mi preocupación era que la Comunidad de Propietarios y quienes ejercieron funciones dentro de ella pudieran haber operado como una capa de control material sobre deuda, voto, documentación, seguridad, llaves, acceso, obras, proyectos o representación. Lo planteé como cuestión a investigar, no como conclusión jurídica definitiva de que la Comunidad fuese el Administrador Concursal o un administrador de hecho en sentido técnico.
 
-8. Consideré necesario reconstruir la infraestructura comunitaria y sus actores desde 2011 o antes, separándola de la entrada directa de CAM en 2017–2018. No afirmo, sin documentación, que CAM, José Daniel Acosta Matos o Laura Patricia Acosta Matos estuvieran presentes en el activo en 2011. Debe verificarse cuándo y cómo la estructura preexistente pudo relacionarse, converger o ser utilizada posteriormente por el perímetro CAM.
+8. Consideré necesario reconstruir la infraestructura comunitaria y sus actores desde 2011 o antes, separándola de la entrada directa de CAM en 2017–2018. No afirmo, sin documentación, que CAM, José Daniel Acosta Matos o **Laura Patricia Acosta Matos (LPAM)** estuvieran presentes en el activo en 2011. Debe verificarse cuándo y cómo la estructura preexistente pudo relacionarse, converger o ser utilizada posteriormente por el perímetro CAM.
 
 9. Cuando hablé de posible actuación conjunta o presunta connivencia entre CAM, la Comunidad y otras personas, lo hice como inferencia o sospecha. Su comprobación requiere actas, poderes, comunicaciones, pagos, instrucciones, registros de acceso, expedientes judiciales, archivos del Administrador Concursal y declaraciones separadas.
 
@@ -79,7 +81,7 @@
 
 Declaro que esta formulación refleja fielmente, según mi leal saber y entender, el sentido de mis comentarios, preguntas, preocupaciones y recomendaciones de 14 de agosto de 2026. He distinguido conocimiento o recuerdo personal, materias conocidas por documentos o información recibida, inferencias u opiniones y extremos que requieren verificación. No pretendo convertir una sospecha en hecho definitivamente probado ni sustituir las fuentes primarias.
 
-**Patricia Domínguez**  
+**Testigo del perímetro de Gil Marer — identidad reservada en la publicación**  
 San Cristóbal de La Laguna  
 15 de agosto de 2026
 
@@ -134,14 +136,14 @@ San Cristóbal de La Laguna
 
 ## Control de integridad y procedencia
 
-- Fuente principal: dieciséis mensajes de voz de WhatsApp de 14 de agosto de 2026.
+- Fuente principal: dieciséis mensajes de voz de WhatsApp de 14 de agosto de 2026, conservados en el corpus privado.
 - Transcripción: versión de trabajo con marcas temporales; no certificada.
 - SHA-256 de la transcripción de trabajo utilizada para esta actualización: `19e654ae03c2afeadc1a507549854a15129c20e10da29bb941fe86fb3c92ba88`.
-- PDF de trabajo previo de declaración: `Patricia_Borrador_Declaracion_Veracidad_14AGO2026.pdf`.
-- SHA-256 de ese PDF de trabajo: `9b217f74e24ff4c96f06cafeaafbb6b82fb5d42da68b99a050f30717d15cbc32`.
+- PDF de trabajo previo: conservado en el corpus privado; su nombre público se omite por contener identidad personal innecesaria.
+- SHA-256 del PDF de trabajo: `9b217f74e24ff4c96f06cafeaafbb6b82fb5d42da68b99a050f30717d15cbc32`.
 - Audios publicados en el repositorio: no.
 - Hash de audios/exportación nativa: pendiente en registro privado de evidencia.
 - Firma: no requerida para utilizar esta versión; no consta firma separada.
 - Versión posterior firmada o ratificada: prevalecerá para autenticación y tenor exacto si difiere.
 - REGAGE/RedSARA: no consta para esta declaración.
-- Relacionada: [`001_DOMINGUEZ_PATRICIA_TESTIMONIO_2018_20260815.md`](./001_DOMINGUEZ_PATRICIA_TESTIMONIO_2018_20260815.md).
+- Relacionada: [`001_WITNESS_GIL_PERIMETER_TESTIMONIO_2018_20260815.md`](./001_WITNESS_GIL_PERIMETER_TESTIMONIO_2018_20260815.md).

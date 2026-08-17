@@ -5,8 +5,9 @@ Evidence cut-off: **17 Aug 2026**. Scope: decisions attributed by primary record
 Read with:
 
 - `archive/JUDICIAL_KNOWLEDGE_RESCUE_EXIT_JUNE2018_SOURCE_REFRESH_16AUG2026.md` — legacy filename retained for continuity; controlling vocabulary is now **commercial normalisation / refinancing / hotel-operation / insolvency-exit architecture**;
-- `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` — primary commercial-source completion and entity/condition controls; and
-- `archive/LPAM_CGPJ169_CALIFICACION_UNITARY_KNOWLEDGE_CHAIN_17AUG2026.md` / `archive/CALIFICACION_LPAM_CGPJ169_JUDGE_KNOWLEDGE_OVERRIDE_17AUG2026.md` — controlling 2020–2021 RICPE/CAM court-notice chain and LPAM/CGPJ source-status boundaries.
+- `archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md` — primary commercial-source completion and entity/condition controls;
+- `archive/LPAM_CGPJ169_CALIFICACION_UNITARY_KNOWLEDGE_CHAIN_17AUG2026.md` / `archive/CALIFICACION_LPAM_CGPJ169_JUDGE_KNOWLEDGE_OVERRIDE_17AUG2026.md` — controlling 2020–2021 RICPE/CAM court-notice chain and LPAM/CGPJ source-status boundaries; and
+- `archive/ANONYMISATION_AND_LPAM_NAMING_CONTROL_17AUG2026.md` — public identity and naming rule.
 
 | Date | Material issue | Documented judicial act / knowledge point | What it does NOT by itself establish | Next source required |
 |---|---|---|---|---|
@@ -51,7 +52,7 @@ Read with:
 
 ## LPAM / CGPJ cross-cutting corroboration question
 
-Patricia Domínguez reports that LPAM described the Magistrado-Juez as a friend with direct/personal contact or access. Gil Marer states that he strongly believes Patricia's account. **Neither proposition establishes the underlying relationship as fact.** The finite verification question is whether calls, messages, meetings, diary/access records or other objective evidence corroborate or disprove the reported relationship, and whether any relevant channel was disclosed where required.
+A **person within Gil Marer's personal and business perimeter** reports that **Laura Patricia Acosta Matos (LPAM)** described the Magistrado-Juez as a friend with direct/personal contact or access. Gil Marer states that he strongly believes **the witness's account**. **Neither proposition establishes the underlying relationship as fact.** The finite verification question is whether calls, messages, meetings, diary/access records or other objective evidence corroborate or disprove the reported relationship, and whether any relevant channel was disclosed where required.
 
 The specific LPAM–Magistrado module was first presently verified as formally presented in CGPJ Alzada 286/2026 on **28-Jul-2026**, `REGAGE26e00069061338`; it was not part of the original 15-Jun appeal package.
 

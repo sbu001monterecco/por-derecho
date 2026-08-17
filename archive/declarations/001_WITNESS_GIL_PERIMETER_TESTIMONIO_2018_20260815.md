@@ -1,17 +1,19 @@
-# Declaración de Patricia Domínguez — secuencia del testimonio de 2018
+# Declaración anonimizada — testigo del perímetro de Gil Marer — secuencia del testimonio de 2018
 
 **N.º:** 001  
-**Declarante:** Patricia Domínguez  
+**Declarante público:** Testigo del perímetro personal y empresarial de Gil Marer — identidad reservada  
 **Fecha:** 15 de agosto de 2026  
 **Lugar:** San Cristóbal de La Laguna  
 **Materia:** Concurso Ordinario 36/2012 — testimonio judicial, operación de 2018 y posterior no convalidación  
 **Estado:** REVISADA Y REGISTRADA — no firmada; utilizable con sus límites
 
+> **Privacidad y autenticación:** esta es la versión pública anonimizada de una declaración cuya identidad legal y fuentes de autenticación se conservan en el corpus privado/nativo. La anonimización no modifica el contenido probatorio ni impide producir el original ante una autoridad competente. No debe confundirse a la declarante con **Laura Patricia Acosta Matos (LPAM)**, que es una persona distinta.
+
 > **Estado documental y uso:** versión de repositorio preparada para preservar y apoyar la trazabilidad pública e institucional del asunto. Puede conservarse, citarse, comunicarse y utilizarse aunque no esté firmada, siempre que no se describa como firmada o ratificada. Si posteriormente existe una versión firmada, ésta controlará la autenticación y el tenor exacto en caso de diferencia, sin borrar ni inutilizar esta versión. Esta declaración no sustituye los documentos judiciales, notariales o registrales originales.
 
 ## Declaración
 
-Yo, **Patricia Domínguez**, formulo la presente declaración para dejar constancia, de manera ordenada y fiel, de mi conocimiento y entendimiento de determinados hechos relacionados con el Concurso Ordinario 36/2012, la operación de liquidación de 2018 y la utilización de testimonios judiciales.
+Yo, **persona del perímetro personal y empresarial de Gil Marer cuya identidad se reserva en esta publicación**, formulo la presente declaración para dejar constancia, de manera ordenada y fiel, de mi conocimiento y entendimiento de determinados hechos relacionados con el Concurso Ordinario 36/2012, la operación de liquidación de 2018 y la utilización de testimonios judiciales.
 
 Distingo expresamente entre aquello que conozco o recuerdo personalmente y aquello que conozco a través de documentos localizados y revisados. No pretendo con esta declaración sustituir los documentos originales ni atribuir por sí sola responsabilidad penal, disciplinaria o de otra naturaleza.
 
@@ -85,7 +87,7 @@ Considero necesario conocer exactamente qué pidió el Administrador Concursal, 
 
 Declaro que lo expuesto refleja fielmente, según mi leal saber y entender, mi conocimiento y recuerdo de los hechos, así como mi entendimiento de los documentos que he podido revisar. Cuando una afirmación depende de documentación y no de percepción personal directa, lo he indicado expresamente. Estoy dispuesta a aclarar, corregir o completar esta declaración si se me exhiben documentos originales o certificados que precisen algún extremo.
 
-**Patricia Domínguez**  
+**Testigo del perímetro de Gil Marer — identidad reservada en la publicación**  
 San Cristóbal de La Laguna  
 15 de agosto de 2026
 
