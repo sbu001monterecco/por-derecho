@@ -181,4 +181,10 @@
   // Public-authority / independent-review unitary case reconstruction gateway.
   // Reuses source-controlled canonical propositions while keeping clean-room and criminal-forensic boundaries explicit.
   load('public-authority-case-reconstruction-20260817.js?v=20260817a');
+
+  // Canonical sharing/deep-link capability. Book pages retain their established markup and load this through
+  // the legacy compatibility bridge; other substantive ES/EN pages receive the compact page-share control.
+  if (!document.querySelector('script[src*="book-page-share-20260815.js"]')) {
+    load('share-controls-20260817.js?v=20260817a');
+  }
 })();
