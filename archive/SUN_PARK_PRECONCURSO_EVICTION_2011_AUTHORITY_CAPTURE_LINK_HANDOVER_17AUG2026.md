@@ -193,3 +193,21 @@ What is preserved by this note:
 - the requirement not to let 2022 title retrospectively wash over the earlier authority period;
 - the ES/EN public visual wording and placement;
 - the requirement to update existing evidence gaps rather than duplicate them.
+
+## 12. Mandatory unitary / prosecutorial upgrade
+
+This handover must now be read through the controlling methodology in:
+
+`archive/SUN_PARK_UNITARY_PENAL_PROSECUTORIAL_REVERSE_ENGINEERING_MODEL_17AUG2026.md`
+
+That model upgrades this linear bridge into a **non-fragmented, bidirectional authority–asset–control–value analysis**. Any future thread that retrieves this file must therefore also test:
+
+- the chronology **bottom-up** from 2008/2011;
+- the present position **top-down / backwards** from current control, title, finance and benefit;
+- each actor's power/duty, knowledge, act/omission, use/adoption and benefit/consequence;
+- offence elements only after the factual chain is reconstructed;
+- forward and reverse causation;
+- counter-evidence capable of breaking the Project's theory;
+- whether a later institutional or title event independently cures/replaces an earlier authority defect or merely inherits it.
+
+Do not atomise this node as `civil`, `concursal`, `operator`, `security`, `finance` or `criminal` in isolation where the same documents, authority or asset chain crosses those labels.
