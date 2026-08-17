@@ -11,7 +11,7 @@ For the Calificación page and wider public routes, the preferred reader-facing 
 
 ## Preferred public formulation — Spanish
 
-> **Cuestión adicional de imparcialidad aparente.** Existe un relato documentado que atribuye a un actor privado de un perímetro materialmente interesado un grado inusualmente próximo de acceso personal o directo al decisor judicial. El relato se considera suficientemente serio para exigir comprobación independiente, pero **no se publica como hecho probado**. La pregunta es verificable mediante comunicaciones, reuniones, registros de acceso, eventuales deberes de revelación y cualquier otra evidencia objetiva capaz de confirmarlo o refutarlo.
+> **Cuestión adicional de imparcialidad aparente.** Existe un relato documentado que atribuye a un actor privado de un perímetro materialmente interesado un grado inusualmente próximo de proximidad personal o acceso directo al decisor judicial. El relato se considera suficientemente serio para exigir comprobación independiente, pero **no se publica como hecho probado**. La pregunta es verificable mediante comunicaciones, reuniones, registros de acceso, eventuales deberes de revelación y cualquier otra evidencia objetiva capaz de confirmarlo o refutarlo.
 
 Short form:
 
@@ -49,6 +49,6 @@ Public rendering may omit the witness identity and the judicial officer's person
 
 ## Public implementation
 
-`assets/impartiality-proximity-public-wording-20260817.js` controls this wording on the Calificación, prior-knowledge, Judge/Court, CGPJ, multiple-financial-lives, RICPE, institutional-record and institutional-accountability routes.
+The existing cross-site module `assets/lpam-cgpj169-calificacion-unitary-20260817.js` now implements this neutral public wording on the Calificación, prior-knowledge, Judge/Court, CGPJ, multiple-financial-lives, RICPE, institutional-record and institutional-accountability routes. The internal source files remain unchanged and retain precise witness/actor identification.
 
 This publication-control layer does **not** alter the internal evidence record or the serial Calificación state. A01–A04 remain complete; A05 remains current.
