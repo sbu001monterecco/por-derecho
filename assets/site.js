@@ -25,11 +25,11 @@
           });
         });
         load('ricpe-identity-correction-20260815.js?v=20260815a', () => {
-          load('police-evidence-preservation-20260815.js?v=20260816a', () => {
-            load('police-regage-drilldown-20260815.js?v=20260816a', () => {
-              load('police-context-explainer-20260815.js?v=20260816a', () => {
-                load('book-foundation-20260815.js?v=20260816b', () => {
-                  load('books-portfolio-20260815.js?v=20260816c');
+          load('police-evidence-preservation-20260815.js?v=20260815a', () => {
+            load('police-regage-drilldown-20260815.js?v=20260815a', () => {
+              load('police-context-explainer-20260815.js?v=20260815a', () => {
+                load('book-foundation-20260815.js?v=20260815b', () => {
+                  load('books-portfolio-20260815.js?v=20260815c');
                   // Book pages now carry the authoritative locked JPG cover in their HTML.
                   // Do not load the legacy SVG router here: it overwrites the correct cover after first paint.
                 });
