@@ -21,6 +21,16 @@ The attachment labelled `...26JAN2017.pdf` is **not** a 26-Jan judicial act. The
 
 Likewise `...26DIC2017.pdf` is the notification-labelled copy of the **19-Dec-2017** liquidation Auto; 26-Dec is the notification date, not a second judicial act.
 
+## Connected-source gap closure — 2021 acts promoted
+
+The following later P1 targets also changed status on 17-Aug-2026:
+
+| Act / date | Recovered source | What is now closed | What remains | Status |
+|---|---|---|---|---|
+| 18-May-2021 Auto | signed standalone Drive binary, stable ID `C36-JUD-2021-05-18-001` | exact five-page judicial act; definitive CAM proposal approval; court's Article 210.4 better-offer/licitation reasoning | notification/service copy or certified testimony only if required for stronger hierarchy | **PRIMARY BINARY LOCATED — ORIGINAL-BINARY GAP CLOSED** |
+| 15-Oct-2021 Auto | signed standalone Drive binary, stable ID `C36-JUD-2021-10-15-001` | exact Auto dismissing LPB/Aweswell reposiciones against 18-May and confirming it in full | other potentially separate 15-Oct acts identified by workbook; notification/finality records where distinct | **ONE ACT CLOSED / SAME-DATE FAMILY PARTIAL** |
+| 27-Oct-2021 LAJ Diligencia | signed standalone Drive binary, stable ID `C36-LAJ-2021-10-27-001` | incorporation/transfer of AC filing 7425/2021 | underlying 25-Oct quarterly report remains separate source if not independently held | **PRIMARY LAJ ACT LOCATED** |
+
 ## Priority 1 — closure blockers still open
 
 | Act / date | Type | How existence/content is presently known | What is still missing | Why it matters | Retrieval status |
@@ -34,8 +44,7 @@ Likewise `...26DIC2017.pdf` is the notification-labelled copy of the **19-Dec-20
 | 12-May-2020 act family | at least 2 Autos | workbook T.3P 79–83 + later pleadings | complete signed binaries separately | one LPB-adverse, one Aweswell-favourable; essential anti-cherry-pick control | P1 |
 | 25-Jan-2021 | Auto | multiple appeals/LAJ acts quote it | complete signed original + exact notification | sets publication/offer conditions | P1 |
 | 06-May-2021 act family | at least 2 Autos | workbook + Drive source family | separate complete signed binaries | nullity denial vs confirmation of 25-Jan route | P1 |
-| 18-May-2021 | Auto | later reposiciones quote dispositive effect; CGPJ annex expressly requests testimony | signed/certified complete original + notification | definitive CAM proposal/adjudication step after Ottawa nonappearance | **P1 — expressly pending in CGPJ annex** |
-| 15-Oct-2021 act family | Autos | workbook identifies multiple decisions and later clarification requests | each separate signed complete binary | appeal/finality architecture | P1 |
+| 15-Oct-2021 remaining act family | Autos | one exact Auto now primary-located; workbook identifies multiple same-date decisions and later clarification requests | each other separate signed complete binary | appeal/finality architecture; prevent same-date conflation | **P1 — PARTIAL FAMILY** |
 | 26-Jan-2022 act family | Autos | workbook records clarifications of 15-Oct acts | separate signed complete binaries | finality/testimonio dispute and later appeal/queja | P1 |
 | 05-Apr-2023 | LAJ Diligencia | Vista witness matrix / formal scheduling source already verified in specialist track | canonical signed binary + citation/service annexes | two-day Vista programme | P1 |
 | 14-Jul-2023 | court resolution | Vista specialist track | complete signed source/type/signatory | pre-Vista participation/evidence handling | P1 |
