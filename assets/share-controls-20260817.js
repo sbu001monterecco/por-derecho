@@ -1,6 +1,6 @@
 (()=>{
   const d=document;
-  if(window.PorDerechoShare?.version==='20260817'){
+  if(window.PorDerechoShare?.version==='20260817b'){
     window.PorDerechoShare.init(d);
     return;
   }
@@ -9,7 +9,7 @@
   if(script && !d.querySelector('link[data-pd-share-styles]')){
     const css=d.createElement('link');
     css.rel='stylesheet';
-    css.href=new URL('share-controls-20260817.css?v=20260817a',script.src).href;
+    css.href=new URL('share-controls-20260817.css?v=20260817b',script.src).href;
     css.dataset.pdShareStyles='true';
     d.head.appendChild(css);
   }
@@ -66,12 +66,8 @@
     });
   };
 
-  const excluded=()=>{
-    const path=location.pathname.replace(/\/+$/,'/');
-    const exactRoots=['/por-derecho/es/','/por-derecho/en/'];
-    if(exactRoots.includes(path)) return true;
-    return /\/(aviso-legal-privacidad|privacy|contacto|contact|faq)(\/|$)/i.test(path);
-  };
+  const excluded=()=>/\/(aviso-legal-privacidad|privacy|contacto|contact|faq)(\/|$)/i.test(location.pathname);
+  const isLanguageHome=()=>/\/por-derecho\/(es|en)\/?$/i.test(location.pathname);
 
   const buildDefault=()=>{
     if(excluded()||!d.querySelector('main')||d.querySelector('.book-share,[data-share-scope],.share-controls')) return;
@@ -79,7 +75,15 @@
     section.className='pd-share-section';
     section.setAttribute('aria-label',strings.label);
     section.innerHTML=`<div class="shell"><div class="share-controls" data-share-scope><p class="share-controls__label">${strings.label}</p><div class="share-controls__actions"><a data-share-linkedin target="_blank" rel="noopener">${strings.linkedin}</a><a data-share-whatsapp target="_blank" rel="noopener">${strings.whatsapp}</a><a data-share-email>${strings.email}</a><button type="button" data-copy-link data-copied="${strings.copied}">${strings.copy}</button></div></div></div>`;
-    d.querySelector('main').appendChild(section);
+    const main=d.querySelector('main');
+    if(isLanguageHome()){
+      const priority=d.querySelector('.priority-band');
+      const hero=d.querySelector('.hero');
+      const anchor=priority||hero;
+      if(anchor) anchor.insertAdjacentElement('afterend',section); else main.prepend(section);
+    }else{
+      main.appendChild(section);
+    }
   };
 
   const init=(root=d)=>{
@@ -89,6 +93,6 @@
     scopes.forEach(bind);
   };
 
-  window.PorDerechoShare={version:'20260817',init,canonical,payload};
+  window.PorDerechoShare={version:'20260817b',init,canonical,payload};
   if(d.readyState==='loading') d.addEventListener('DOMContentLoaded',()=>init(d),{once:true}); else init(d);
 })();
