@@ -31,6 +31,23 @@ The following later P1 targets also changed status on 17-Aug-2026:
 | 15-Oct-2021 Auto | signed standalone Drive binary, stable ID `C36-JUD-2021-10-15-001` | exact Auto dismissing LPB/Aweswell reposiciones against 18-May and confirming it in full | other potentially separate 15-Oct acts identified by workbook; notification/finality records where distinct | **ONE ACT CLOSED / SAME-DATE FAMILY PARTIAL** |
 | 27-Oct-2021 LAJ Diligencia | signed standalone Drive binary, stable ID `C36-LAJ-2021-10-27-001` | incorporation/transfer of AC filing 7425/2021 | underlying 25-Oct quarterly report remains separate source if not independently held | **PRIMARY LAJ ACT LOCATED** |
 
+## 2023 primary-act closure — exact source/date correction
+
+The following prior P1 “missing original” entries are now closed at primary-source level:
+
+| Act / date | Recovered source | What is now closed | What remains | Status |
+|---|---|---|---|---|
+| **31-Mar-2023 Diligencia de Ordenación** | complete electronically signed court copy, stable ID `C36-LAJ-2023-03-31-001` | exact act date; LAJ Águeda Reyes Almeida; two-day 25/26-Jul programme at 09:30; person-by-person modality; citation orders; Arrecife exhort; copy notation `NOTIF. 05/04/23` | individual service returns, exhort execution/receipt, any later amendment of schedule | **PRIMARY ACT CLOSED / SERVICE-RETURN GAP OPEN** |
+| **14-Jul-2023 Providencia** | complete electronically signed court copy, stable ID `C36-JUD-2023-07-14-001` | Alberto López Villarrubia signatory; LAJ Águeda Reyes Almeida countersignature; refusal of Webex participation for LPB lawyer Luis Miguel López Gómez; physical attendance required; copy notation `NOTIF. 18/07/23` | underlying request filing and exact service receipt if stronger hierarchy needed | **PRIMARY ACT CLOSED / SERVICE GAP LIMITED** |
+
+### Controlling correction
+
+There is no longer a P1 item called `05-Apr-2023 scheduling Diligencia` as an act-date gap. The **act is dated 31-Mar-2023; 5-Apr is the notification notation**.
+
+The 14-Jul-2023 Providencia **did not refuse Gil Marer's own Webex participation**. It refused Webex participation for LPB's lawyer Luis Miguel López Gómez. Gil's Webex modality had been expressly scheduled in the 31-Mar Diligencia.
+
+Full correction: `archive/CALIFICACION_VISTA_PRIMARY_ACT_CORRECTION_31MAR_14JUL2023_17AUG2026.md`.
+
 ## Priority 1 — closure blockers still open
 
 | Act / date | Type | How existence/content is presently known | What is still missing | Why it matters | Retrieval status |
@@ -46,9 +63,8 @@ The following later P1 targets also changed status on 17-Aug-2026:
 | 06-May-2021 act family | at least 2 Autos | workbook + Drive source family | separate complete signed binaries | nullity denial vs confirmation of 25-Jan route | P1 |
 | 15-Oct-2021 remaining act family | Autos | one exact Auto now primary-located; workbook identifies multiple same-date decisions and later clarification requests | each other separate signed complete binary | appeal/finality architecture; prevent same-date conflation | **P1 — PARTIAL FAMILY** |
 | 26-Jan-2022 act family | Autos | workbook records clarifications of 15-Oct acts | separate signed complete binaries | finality/testimonio dispute and later appeal/queja | P1 |
-| 05-Apr-2023 | LAJ Diligencia | Vista witness matrix / formal scheduling source already verified in specialist track | canonical signed binary + citation/service annexes | two-day Vista programme | P1 |
-| 14-Jul-2023 | court resolution | Vista specialist track | complete signed source/type/signatory | pre-Vista participation/evidence handling | P1 |
-| 25-Jul-2023 | certified Vista minute / official audiovisual index | judgment + supplied media + specialist registers | certified minute, official component index, attendance, evidence rulings | Article 24 / witness / record completeness | P1 |
+| 25-Jul-2023 | certified Vista minute / official audiovisual index | judgment + supplied media + specialist registers | certified minute, official component index, attendance, evidence rulings, complete official media | Article 24 / witness / record completeness | P1 |
+| 26-Jul-2023 programme disposition | procedural ruling/minute/service chain | 31-Mar primary Diligencia scheduled 26-Jul witnesses; judgment says Vista completed 25-Jul | act/minute/ruling showing how each 26-Jul item was advanced, waived, excluded, not served, unnecessary or otherwise disposed of | central to effective-defence analysis | P1 |
 
 ## Retrieval protocol
 
