@@ -30,11 +30,24 @@ jobs:
 
       - name: Reassemble and expand the validated publication payload
         run: |
-          cat .dip80-materialize/part-*.b64 | tr -d '\r\n' > /tmp/dip80-payload.b64
-          base64 --decode /tmp/dip80-payload.b64 > /tmp/dip80-payload.tar.gz
-          tar -tzf /tmp/dip80-payload.tar.gz > /tmp/dip80-payload-files.txt
-          tar -xzf /tmp/dip80-payload.tar.gz -C .
-          echo "Expanded $(wc -l < /tmp/dip80-payload-files.txt) payload entries"
+          python - <<'PY'
+          from pathlib import Path
+          import base64, re, tarfile
+          parts = sorted(Path('.dip80-materialize').glob('part-*.b64'))
+          if len(parts) != 5:
+              raise SystemExit(f'Expected 5 payload parts, found {len(parts)}')
+          raw = ''.join(p.read_text(encoding='utf-8-sig') for p in parts)
+          clean = re.sub(r'[^A-Za-z0-9+/=]', '', raw)
+          clean += '=' * ((-len(clean)) % 4)
+          payload = base64.b64decode(clean, validate=False)
+          archive = Path('/tmp/dip80-payload.tar.gz')
+          archive.write_bytes(payload)
+          print(f'Payload parts={len(parts)} clean_base64={len(clean)} archive_bytes={len(payload)}')
+          with tarfile.open(archive, 'r:gz') as tf:
+              names = tf.getnames()
+              print(f'Archive entries={len(names)}')
+              tf.extractall('.')
+          PY
 
       - name: Restore current ICALPA pages and add the low-discovery casebook entry
         run: |
