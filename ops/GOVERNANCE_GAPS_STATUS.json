@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-08-18",
+  "issue_355": {
+    "state": "PARTIALLY_OBSERVED",
+    "observed": ["direct_write_to_main_rejected_pr_required"],
+    "remaining": ["ruleset_required_status_contexts_not_readable_via_current_connector", "force_push_delete_and_conversation_resolution_rules_not_independently_readable"]
+  },
+  "issue_356": {
+    "state": "CLOSURE_IN_PROGRESS",
+    "controls": ["full_git_bundle", "bundle_verify", "clean_mirror_restore", "git_fsck_full", "ref_equality", "mission_critical_validator", "static_site_smoke"],
+    "remaining": ["workflow_must_pass_on_main", "artifact_must_be_copied_off_github_and_read_back"]
+  }
+}
