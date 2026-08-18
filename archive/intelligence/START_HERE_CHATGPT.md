@@ -2,9 +2,17 @@
 
 > **Controlling entry point:** `/CHATGPT_START_HERE.md` at repository root. This file is a specialist continuity guide for the Knowledge Project / publishing programme and must not override the root stewardship protocol.
 
-**Status:** public-safe continuity layer · 15 August 2026
+**Status:** public-safe continuity layer · updated 18 August 2026
 
 This file is the specialist entry point for a new ChatGPT thread, researcher or collaborator working on Project Sun Rock / Fundación Por Derecho / the publishing programme / the Knowledge Project / Havidia after reading the root `CHATGPT_START_HERE.md`.
+
+## Latest matter-specific continuity pointer — 18 August 2026
+
+For the current RICPE / MYND Yaiza / RIC-idoneidad / AEAT Series F/G track, read first:
+
+`RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md`
+
+That handover records the exact Series F/G question, Decree 224/2022 / AEAT access routes, the 11 August Transparency Commissioner appeal, the direct AEAT REGAGE/receipt status, website implementation, public/private boundaries, five-source deletion audit and next actions. It is the controlling thread-specific continuity record for this issue; primary source verification remains mandatory.
 
 ## Mandatory publishing-continuity rule
 
@@ -29,21 +37,22 @@ Do not create competing full manuscripts by default. Update canonical files.
 ## Read in this order
 
 1. `/CHATGPT_START_HERE.md` — controlling repository stewardship protocol.
-2. `THREAD_HANDOVER_2026-08-15.md` — integrated state of work.
-3. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
-4. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
-5. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
-6. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
-7. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
-8. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
-9. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
-10. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
-11. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
-12. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
-13. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
-14. `REUSABLE_PROMPTS.md` — reusable prompts.
-15. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
-16. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
+2. `RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md` — latest RICPE/AEAT/idoneidad Series F/G track and deletion audit.
+3. `THREAD_HANDOVER_2026-08-15.md` — integrated state of wider work.
+4. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
+5. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
+6. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
+7. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
+8. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
+9. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
+10. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
+11. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
+12. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
+13. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
+14. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
+15. `REUSABLE_PROMPTS.md` — reusable prompts.
+16. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
+17. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
 
 ## Core rules
 
