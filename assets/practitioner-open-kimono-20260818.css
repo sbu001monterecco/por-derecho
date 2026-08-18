@@ -1,3 +1,4 @@
+main:has(> .cnmv-hero)>#same-asset-multiple-financial-lives-16aug2026,main:has(> .cnmv-hero)>#public-authority-case-reconstruction-gateway-17aug2026,main:has(> .eu-hero)>#same-asset-multiple-financial-lives-16aug2026,main:has(> .eu-hero)>#public-authority-case-reconstruction-gateway-17aug2026,main:has(> .ir-hero)>#same-asset-multiple-financial-lives-16aug2026,main:has(> .ir-hero)>#public-authority-case-reconstruction-gateway-17aug2026{display:none!important}
 .ok-practice{padding:clamp(2.5rem,6vw,5rem) 0;background:#f6f3eb;border-top:1px solid rgba(19,37,45,.12);border-bottom:1px solid rgba(19,37,45,.12)}
 .ok-practice .shell{max-width:1180px}
 .ok-kicker{margin:0 0 .35rem;font-size:.72rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#805f22}
