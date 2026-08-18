@@ -4,18 +4,23 @@ on:
   push:
     branches:
       - agent/dip80-living-casebook-final
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   materialise:
-    if: github.actor != 'github-actions[bot]'
+    if: github.actor != 'github-actions[bot]' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Preserve current low-discovery ICALPA entry pages
         run: |
@@ -95,4 +100,5 @@ jobs:
           git add -A
           git diff --cached --stat
           git commit -m 'Materialize DIP 80 open-kimono living casebook'
-          git push origin HEAD:${GITHUB_REF_NAME}
+          TARGET_BRANCH="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          git push origin HEAD:"${TARGET_BRANCH}"
