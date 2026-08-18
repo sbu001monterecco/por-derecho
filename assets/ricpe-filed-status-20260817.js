@@ -1,4 +1,5 @@
 (() => {
+  const currentScript = document.currentScript;
   const isEn = /\/en\//.test(location.pathname);
 
   const apply = () => {
@@ -23,4 +24,22 @@
     setTimeout(apply, 0);
   }
   setTimeout(apply, 250);
+
+  // 18-Aug-2026: load the progressive, bilingual reader journey after the controlled filing-status layer.
+  if (currentScript && !document.querySelector('script[data-psr-reader-journey]')) {
+    const journey = document.createElement('script');
+    journey.src = new URL('reader-journey-20260818.js?v=20260818a', currentScript.src).href;
+    journey.async = false;
+    journey.dataset.psrReaderJourney = '20260818';
+    document.head.appendChild(journey);
+  }
+
+  // Keep the first screen deliberately simple: three primary choices on RICPE and Community entry pages.
+  if (currentScript && !document.querySelector('script[data-psr-reader-journey-hero]')) {
+    const hero = document.createElement('script');
+    hero.src = new URL('reader-journey-hero-20260818.js?v=20260818a', currentScript.src).href;
+    hero.async = false;
+    hero.dataset.psrReaderJourneyHero = '20260818';
+    document.head.appendChild(hero);
+  }
 })();
