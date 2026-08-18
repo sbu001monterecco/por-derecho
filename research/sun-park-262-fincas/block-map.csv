@@ -1,0 +1,12 @@
+block,ground_floor_apts,first_floor_apts,total_apartments,position_from_entrance,forensic_note
+1,102-114,151-164,27,"left of reception; inner/front-east run","Above/adjacent to lower-ground service-retail layer"
+2,201-210,251-260,20,"farther left of reception; front-east run","Larger lower/front side continues toward Block 3"
+3,301-314,351-364,28,"left side of outer loop; nearest H10 White Suites side","Turns from front-east run toward opposite side"
+4,401-408,451-458,16,"opposite Block 2 on far side","Provisional high-priority ACTUA photo-geolocation / minority-closure test"
+5,501-514,551-564,28,"opposite Block 1 on far side","Provisional high-priority ACTUA photo-geolocation / minority-closure test"
+6,601-616,651-666,32,"opposite Block 8 on far side","Completes far-right arc"
+7,701-716,751-766,32,"right side of outer loop; nearest THB/Sun Royal side","Returns toward Block 8"
+8,801-811,851-862,23,"right of reception; front-east run","Above/adjacent to lower-ground service-retail layer"
+9,901-914,,14,"transverse central block beside reception","Divides central leisure space into two courtyards, producing digital-8 geometry"
+FRONT_SERVICE,"locals 1-40",,40,"lower-ground/front-east layer under/along reception and Blocks 1,2,8","37 retail/service units described by GESVALT in front/east layer; reception and service units require per-finca submapping"
+CENTRAL,"solaria/pools fincas 8653/8654",,2,"two central leisure areas separated by Block 9","Large horizontal-property units: 2762 m2 and 4784 m2 in canonical register"
