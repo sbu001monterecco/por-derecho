@@ -180,8 +180,12 @@ Private-source recovery should be through Gmail, the RSM ethics portal, controll
 
 ### Durable repository state
 
-**PENDING until the branch/PR containing this file and the ES/EN page updates is merged to `main` and live deployment is verified.**
+**PASS.** PR **#403**, “Update RSM NNR4 chronology and preserve thread continuity”, was squash-merged into `main` on 18 August 2026. The merged main tree contains the ES/EN RSM page update, this continuity file and the specialist START_HERE pointer. The PR-head **Publication integrity gate** run **32185295080** completed successfully.
+
+### Live deployment verification
+
+**PENDING INDEPENDENT CONFIRMATION.** The source files are merged into the branch that supplies the public site, but this tool session could not independently fetch the production RSM URLs after merge. Do not convert source-on-main into a claim of independently verified live propagation. The next production/live smoke confirmation should close this final gate.
 
 ### Deletion recommendation
 
-Once merged to `main` and live ES/EN pages are verified, this RSM-focused source thread can be treated as **non-essential for project continuity**. Exact private correspondence and portal records must remain in their source systems; deletion-safety does not mean those primary sources are reproduced in GitHub.
+The thread is **materially deletion-safe for repository continuity**, with one operational caveat: independent live propagation of the two RSM pages has not yet been confirmed in this session. Exact private correspondence and portal records must remain in their source systems; deletion-safety does not mean those primary sources are reproduced in GitHub. For the strict universal deletion threshold requiring live verification, treat the result as **conditional pass pending the next production verification**.
