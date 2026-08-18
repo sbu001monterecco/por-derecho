@@ -1,0 +1,98 @@
+name: Materialise DIP 80 living casebook
+
+on:
+  push:
+    branches:
+      - agent/dip80-living-casebook-final
+
+permissions:
+  contents: write
+
+jobs:
+  materialise:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preserve current low-discovery ICALPA entry pages
+        run: |
+          mkdir -p /tmp/dip80-preserve/es /tmp/dip80-preserve/en
+          cp es/icalpa-recorrido-denuncia-deontologica/index.html /tmp/dip80-preserve/es/index.html
+          cp en/icalpa-complaint-roadmap/index.html /tmp/dip80-preserve/en/index.html
+
+      - name: Reassemble and expand the validated publication payload
+        run: |
+          cat .dip80-materialize/part-*.b64 | tr -d '\r\n' > /tmp/dip80-payload.b64
+          base64 --decode /tmp/dip80-payload.b64 > /tmp/dip80-payload.tar.gz
+          tar -tzf /tmp/dip80-payload.tar.gz > /tmp/dip80-payload-files.txt
+          tar -xzf /tmp/dip80-payload.tar.gz -C .
+          echo "Expanded $(wc -l < /tmp/dip80-payload-files.txt) payload entries"
+
+      - name: Restore current ICALPA pages and add the low-discovery casebook entry
+        run: |
+          cp /tmp/dip80-preserve/es/index.html es/icalpa-recorrido-denuncia-deontologica/index.html
+          cp /tmp/dip80-preserve/en/index.html en/icalpa-complaint-roadmap/index.html
+          python - <<'PY'
+          from pathlib import Path
+          entries = {
+              Path('es/icalpa-recorrido-denuncia-deontologica/index.html'): (
+                  '<section class="section" id="fuentes">',
+                  '<section class="section alt" id="dip80-casebook-entry"><div class="shell"><div class="section-head"><div><p class="kicker">Caso práctico · Open Kimono 👘</p><h2>DIP 80/2026 — Expediente abierto.</h2></div><p>Manual vivo, cronología inversa, árbol de decisiones, atlas probatorio, protección urgente, modelos y aula. Sin presunción de culpabilidad; toda ruta consecuencial llega a una puerta humana.</p></div><div class="rm-boundary"><p><strong>Método abierto. Expediente protegido.</strong> <a href="../icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/">Abrir el manual vivo DIP 80/2026 →</a></p></div></div></section>'
+              ),
+              Path('en/icalpa-complaint-roadmap/index.html'): (
+                  '<section class="section" id="sources">',
+                  '<section class="section alt" id="dip80-casebook-entry"><div class="shell"><div class="section-head"><div><p class="kicker">Practical case · Open Kimono 👘</p><h2>DIP 80/2026 — Open file.</h2></div><p>Living casebook, reverse chronology, decision tree, evidence atlas, urgent protection, models and classroom. No presumption of guilt; every consequential route reaches a human gate.</p></div><div class="rm-boundary"><p><strong>Open method. Protected file.</strong> <a href="../icalpa-rapporteur-workbench/dip-80-2026/living-casebook/">Open the DIP 80/2026 living casebook →</a></p></div></div></section>'
+              ),
+          }
+          for path, (marker, block) in entries.items():
+              text = path.read_text(encoding='utf-8')
+              if 'id="dip80-casebook-entry"' not in text:
+                  if marker not in text:
+                      raise SystemExit(f'Entry marker missing in {path}')
+                  path.write_text(text.replace(marker, block + marker, 1), encoding='utf-8')
+          PY
+
+      - name: Run the case-specific hard acceptance gate
+        run: |
+          if [ -f scripts/validate-dip80-casebook.py ]; then
+            python scripts/validate-dip80-casebook.py
+          elif [ -f scripts/validate_dip80_open_kimono.py ]; then
+            python scripts/validate_dip80_open_kimono.py
+          else
+            echo 'No case-specific validator found' >&2
+            exit 1
+          fi
+          if [ -f assets/icalpa-dip80-casebook.js ]; then node --check assets/icalpa-dip80-casebook.js; fi
+          if [ -f assets/dip80-open-kimono.js ]; then node --check assets/dip80-open-kimono.js; fi
+          if [ -f assets/icalpa-ponente-dashboard.js ]; then node --check assets/icalpa-ponente-dashboard.js; fi
+          python - <<'PY'
+          from pathlib import Path
+          es = Path('es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo')
+          en = Path('en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook')
+          routes = [es/'index.html', es/'cronologia/index.html', es/'arbol-decision/index.html', es/'atlas-prueba/index.html', es/'proteccion-urgente/index.html', es/'modelos/index.html', es/'aula/index.html', en/'index.html', en/'chronology/index.html', en/'decision-tree/index.html', en/'evidence-atlas/index.html', en/'urgent-protection/index.html', en/'models/index.html', en/'classroom/index.html']
+          missing = [str(p) for p in routes if not p.exists()]
+          if missing:
+              raise SystemExit('Missing routes: ' + ', '.join(missing))
+          for path in routes:
+              text = path.read_text(encoding='utf-8')
+              if 'noindex,follow,noarchive' not in text:
+                  raise SystemExit(f'noindex missing: {path}')
+          print('Route gate PASS: 14/14 dedicated casebook pages')
+          PY
+
+      - name: Remove branch-only transfer machinery
+        run: |
+          rm -rf .dip80-materialize
+          rm -f .github/workflows/materialize-dip80-casebook.yml
+
+      - name: Commit the actual source tree
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --stat
+          git commit -m 'Materialize DIP 80 open-kimono living casebook'
+          git push origin HEAD:${GITHUB_REF_NAME}
