@@ -9,6 +9,15 @@
     module.dataset.aweswellAccountsIncorporationLoader = 'true';
     document.head.appendChild(module);
   }
+  // Cross-site CEXP/productive-unit value control: keeps registered title, CEXP participation,
+  // exploitation authority and LPB-attributable going-concern value separate while making the valuation issue prominent.
+  if (currentScript && !document.querySelector('script[data-cexp-productive-unit-value-loader]')) {
+    const cexpModule = document.createElement('script');
+    cexpModule.src = new URL('cexp-productive-unit-value-headline-20260818.js?v=20260818a', currentScript.src).href;
+    cexpModule.async = false;
+    cexpModule.dataset.cexpProductiveUnitValueLoader = 'true';
+    document.head.appendChild(cexpModule);
+  }
 
   const path = window.location.pathname.replace(/\/+$/, '/');
   const isEnglish = path.endsWith('/en/lender-of-record/');

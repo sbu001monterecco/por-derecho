@@ -1,0 +1,108 @@
+{
+  "publication_id": "CEXP-PRODUCTIVE-UNIT-VALUE-HEADLINE-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 413,
+  "base_sha": "76b9c8af56cfb07ae2974fc9ad0d0821f3f32531",
+  "publication_type": "bilingual dynamic cross-site controlling valuation proposition",
+  "controlling_proposition": {
+    "en": "LPB was the debtor. CEXP was outside the insolvency estate. Its economic value was not outside the insolvency analysis.",
+    "es": "LPB era la concursada. La CEXP estaba fuera de la masa. Su valor económico no podía quedar fuera del análisis concursal."
+  },
+  "expected_routes": {
+    "full_en": [
+      "en/lpb-solvency-record/index.html",
+      "en/lpb-insolvency/index.html",
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/community-instrumentalisation/index.html",
+      "en/recovery-restitution-objectives/index.html"
+    ],
+    "full_es": [
+      "es/expediente-solvencia-lpb/index.html",
+      "es/insolvencia-lpb/index.html",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/comunidad-instrumentalizacion/index.html",
+      "es/objetivos-recuperacion-restitucion/index.html"
+    ],
+    "ac_headline_en": [
+      "en/insolvency-36-2012-insolvency-administrator/index.html"
+    ],
+    "ac_headline_es": [
+      "es/concurso-36-2012-administrador-concursal/index.html"
+    ],
+    "compact_en": [
+      "en/insolvency-36-2012-institutional-accountability/index.html",
+      "en/acosta-matos-perimeter/index.html",
+      "en/same-hotel-multiple-financial-lives/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/ricpe-documentary-accountability/index.html",
+      "en/actua-2018-spatial-test/index.html",
+      "en/sun-park-forensic-map-262-properties/index.html"
+    ],
+    "compact_es": [
+      "es/concurso-36-2012-responsabilidad-institucional/index.html",
+      "es/acosta-matos-perimetro/index.html",
+      "es/mismo-hotel-multiples-vidas-financieras/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/ricpe-responsabilidad-documental/index.html",
+      "es/actua-2018-prueba-espacial/index.html",
+      "es/mapa-forense-sun-park-262-fincas/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cexp-productive-unit-value-headline-20260818.js",
+    "assets/aweswell-monterecco-name-continuity-20260816.js",
+    "archive/CEXP_PRODUCTIVE_UNIT_VALUE_HEADLINE_CONTROL_18AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_CEXP_PRODUCTIVE_UNIT_VALUE_HEADLINE_18AUG2026.md"
+  ],
+  "required_live_markers": {
+    "en_full": [
+      "THE OMITTED VALUE · CEXP · PRODUCTIVE UNIT · CONCURSO 36/2012",
+      "LPB was the debtor. CEXP was outside the estate. Its economic value was not outside the insolvency analysis."
+    ],
+    "es_full": [
+      "EL VALOR OMITIDO · CEXP · UNIDAD PRODUCTIVA · CONCURSO 36/2012",
+      "LPB era la concursada. La CEXP estaba fuera de la masa. Su valor económico no podía quedar fuera del análisis concursal."
+    ],
+    "en_ac": [
+      "HEADLINE AC ACCOUNTABILITY CONTROL · CEXP PRODUCTIVE-UNIT VALUE",
+      "The AC accountability question is not complete until it answers what happened to LPB’s attributable value in the CEXP productive unit."
+    ],
+    "es_ac": [
+      "CONTROL CENTRAL DE RESPONSABILIDAD AC · VALOR DE LA UNIDAD PRODUCTIVA CEXP",
+      "La revisión de la AC no está completa mientras no responda qué ocurrió con el valor atribuible a LPB en la unidad productiva articulada mediante la CEXP."
+    ]
+  },
+  "source_basis": [
+    "Aweswell Limited filed provisional parent-level group accounts",
+    "Aweswell Board / Notes to PropCo1 Annual Accounts 2008-2025 dated 20 April 2026",
+    "existing CEXP / Community provenance and Allegation 03 unitary causation controls",
+    "ACTUA 2018 spatial test and separate GESVALT workstream controls"
+  ],
+  "publication_safety": {
+    "cexp_title": "CEXP is not described as registered owner of every finca.",
+    "estate_boundary": "The module does not pull all CEXP or third-party value into LPB's estate.",
+    "ac_liability": "The module does not establish deliberate suppression, dishonesty or liability by the Insolvency Administrator.",
+    "valuation": "The 25.647m ECO appraisal is not presented as the single automatic insolvency valuation.",
+    "solvency": "Positive patrimonial value is not presented as automatically disproving date-specific cash-flow insolvency.",
+    "calificacion": "The materially adverse first-instance judgment and pending appeal remain unchanged.",
+    "prevention": "Prevented/suppressed language requires a dated submission/receipt/response ledger."
+  },
+  "deletion_audit": {
+    "path": "archive/THREAD_DELETION_AUDIT_CEXP_PRODUCTIVE_UNIT_VALUE_HEADLINE_18AUG2026.md",
+    "status": "PENDING_FINAL_COMPARE_AND_CI",
+    "required_invariants": [
+      "no files deleted",
+      "no static public HTML overwritten",
+      "no canonical routes removed",
+      "no existing evidential qualification weakened",
+      "existing Aweswell and accounts-incorporation loaders preserved",
+      "ES/EN substantive parity maintained"
+    ]
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "checked_at": null,
+    "evidence": []
+  }
+}
