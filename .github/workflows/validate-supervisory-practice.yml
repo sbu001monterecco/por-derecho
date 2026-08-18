@@ -1,0 +1,54 @@
+name: Validate supervisory-practice routes
+
+on:
+  pull_request:
+    paths:
+      - 'assets/practitioner-open-kimono-20260818.*'
+      - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'assets/same-asset-multiple-financial-lives-20260816.js'
+      - 'assets/public-authority-case-reconstruction-20260817.js'
+      - 'assets/ricpe-filed-status-20260817.js'
+      - 'es/cnmv-ricpe-verificacion/**'
+      - 'en/cnmv-ricpe-verification/**'
+      - 'es/incentivos-regionales-gc836-p06/**'
+      - 'en/regional-incentives-gc836-p06/**'
+      - 'es/snca-fondos-europeos-trazabilidad/**'
+      - 'en/snca-eu-funds-traceability/**'
+      - 'scripts/validate_supervisory_practice.py'
+      - 'sitemap-supervisory-practice.xml'
+      - 'robots.txt'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/practitioner-open-kimono-20260818.*'
+      - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'es/cnmv-ricpe-verificacion/**'
+      - 'en/cnmv-ricpe-verification/**'
+      - 'es/incentivos-regionales-gc836-p06/**'
+      - 'en/regional-incentives-gc836-p06/**'
+      - 'es/snca-fondos-europeos-trazabilidad/**'
+      - 'en/snca-eu-funds-traceability/**'
+      - 'scripts/validate_supervisory_practice.py'
+      - 'sitemap-supervisory-practice.xml'
+      - 'robots.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check assets/practitioner-open-kimono-20260818.js
+          node --check assets/supervisory-practice-entrypoints-20260818.js
+          node --check assets/same-asset-multiple-financial-lives-20260816.js
+          node --check assets/public-authority-case-reconstruction-20260817.js
+          node --check assets/ricpe-filed-status-20260817.js
+      - name: Route, link, status and XML validation
+        run: python3 scripts/validate_supervisory_practice.py
