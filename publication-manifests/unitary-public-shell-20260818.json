@@ -1,0 +1,62 @@
+{
+  "publication_id": "UNITARY-PUBLIC-SHELL-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "publication_type": "bilingual unitary reader shell, canonical control room and controlled site search",
+  "purpose": "Compress and orchestrate the existing evidence system without replacing dossier ownership, evidential status controls or primary-source records.",
+  "expected_routes": {
+    "en": ["en/case-control-room/index.html", "en/search/index.html"],
+    "es": ["es/sala-control-caso/index.html", "es/buscar/index.html"]
+  },
+  "expected_source_files": [
+    "assets/unitary-public-shell-20260818.js",
+    "assets/unitary-public-shell-20260818.css",
+    "assets/data/unitary-route-registry-v1.json",
+    "assets/share-controls-20260817.js",
+    "sitemap-unitary-shell.xml",
+    "robots.txt",
+    "scripts/render_unitary_public_shell.mjs",
+    ".github/workflows/validate-unitary-public-shell.yml",
+    "archive/UNITARY_PUBLIC_SHELL_CONTROL_18AUG2026.md"
+  ],
+  "reader_contract": [
+    "The Control Room is a cross-system reader interface, not a new source of facts.",
+    "Registered title, CEXP participation, LPB insolvency estate, material control, financing and institutional supervision remain distinct systems.",
+    "A documented gap is not culpability and silence is not treated as proof of wrongdoing.",
+    "Search results are discovery metadata; evidential status remains controlled by the canonical destination page and primary sources.",
+    "Corrections, contrary evidence and evidence capable of defeating Por Derecho's interpretation receive visible treatment.",
+    "Existing dossier ownership and all stronger non-overclaim controls remain in force."
+  ],
+  "homepage_change": {
+    "method": "dynamic additive shell loaded through the already-global share-controls bridge",
+    "primary_navigation": ["Case", "Evidence", "Institutions", "Proceedings", "Updates", "Por Derecho", "Search", "Language"],
+    "gateway": "A compact Case Control Room gateway is inserted after the current-priority band.",
+    "no_static_homepage_overwrite": true
+  },
+  "search": {
+    "mode": "curated canonical route registry plus all main-sitemap routes as fallback",
+    "curated_fields": ["title", "summary", "type", "tags", "aliases", "path"],
+    "examples": ["CEXP", "737338", "8588", "Borja", "ACTUA", "Series F", "DP 1901"],
+    "boundary": "The search index supports discovery only; it does not create or upgrade evidential findings."
+  },
+  "validation": {
+    "workflow": "Validate unitary public shell",
+    "script": "scripts/render_unitary_public_shell.mjs",
+    "desktop_mobile": true,
+    "checks": [
+      "unitary shell loads on both language homepages and representative existing dossiers",
+      "homepage navigation is consolidated",
+      "Control Room exposes six systems",
+      "CEXP search returns a relevant controlled result",
+      "new routes have no duplicate IDs",
+      "tested routes do not introduce horizontal overflow",
+      "screenshots and machine-readable result are uploaded as a workflow artifact"
+    ]
+  },
+  "migration_boundary": {
+    "existing_site_js": "Preserved unchanged in this release.",
+    "reason": "The current global loader chain has mature inter-module dependencies. The consolidation shell creates a route-aware migration point without risking a one-shot dependency rewrite.",
+    "next_safe_step": "Migrate legacy global loaders into route bundles only after this shell regression gate is green and deployed."
+  },
+  "live_verification": {"status": "PENDING", "evidence": []}
+}
