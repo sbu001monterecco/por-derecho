@@ -1,14 +1,40 @@
 {
-  "schema_version": 1,
-  "as_of": "2026-08-18",
+  "schema_version": 2,
+  "as_of": "2026-08-18T14:34:00Z",
   "issue_355": {
-    "state": "PARTIALLY_OBSERVED",
-    "observed": ["direct_write_to_main_rejected_pr_required"],
-    "remaining": ["ruleset_required_status_contexts_not_readable_via_current_connector", "force_push_delete_and_conversation_resolution_rules_not_independently_readable"]
+    "state": "PARTIALLY_CLOSED",
+    "observed": [
+      "direct_write_to_main_rejected_pr_required"
+    ],
+    "remaining": [
+      "ruleset_required_status_contexts_not_readable_via_current_connector",
+      "force_push_delete_and_conversation_resolution_rules_not_independently_readable"
+    ]
   },
   "issue_356": {
-    "state": "CLOSURE_IN_PROGRESS",
-    "controls": ["full_git_bundle", "bundle_verify", "clean_mirror_restore", "git_fsck_full", "ref_equality", "mission_critical_validator", "static_site_smoke"],
-    "remaining": ["workflow_must_pass_on_main", "artifact_must_be_copied_off_github_and_read_back"]
+    "state": "CLOSED_EQUIVALENT_CONTROL",
+    "source_sha": "a2bda8b3efc71d84241b599112a5bf64077bf3d1",
+    "workflow_run": 32149002725,
+    "job_id": 95749849770,
+    "artifact_id": 9328943712,
+    "artifact_digest": "sha256:8c4a75a61dc6f982c1389328cb9380a1849380074b452c3c2b610b653a3c0c37",
+    "controls": [
+      "full_git_bundle",
+      "bundle_verify",
+      "clean_mirror_restore",
+      "git_fsck_full",
+      "ref_equality",
+      "mission_critical_validator",
+      "static_site_smoke",
+      "off_github_google_drive_copy",
+      "drive_readback"
+    ],
+    "off_primary_copy": {
+      "provider": "Google Drive",
+      "file_id": "1vPeTOG5OS4lhVM-UExohcJCPqK4-O-Sm",
+      "title": "Por Derecho - Independent Recovery Bundle - a2bda8b3 - 2026-08-18.zip",
+      "readback": "PASS"
+    },
+    "live_git_mirror": "NOT_CONFIGURED_NOT_REQUIRED_FOR_EQUIVALENT_RECOVERY_CLOSURE"
   }
 }
