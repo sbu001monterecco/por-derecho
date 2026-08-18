@@ -1,8 +1,9 @@
 {
   "publication_id": "CGPJ-UNITARY-SUPERVISION-UPGRADE-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "CI_GREEN",
+  "current_state": "MERGED",
   "controlling_pr": 373,
+  "merge_sha": "6ff3f8cecaccfe42b4a2a392d31164460d14c1e7",
   "expected_routes": {
     "es": [
       "es/cgpj-comision-permanente-sala-lectura/index.html",
@@ -25,7 +26,8 @@
   ],
   "validation": {
     "evidence": [
-      "Publication integrity gate run 32158503633: success on PR 373 head ffc39951d2010dd9e33f56ea4be38b31e9937f37"
+      "Publication integrity gate run 32158503633: success on PR 373 head ffc39951d2010dd9e33f56ea4be38b31e9937f37",
+      "Publication integrity gate run 32158613621: success on CI_GREEN manifest head 7219af5faff4c2b353cb625ef974a73254f13474; mission-critical repository invariants also passed"
     ]
   },
   "reader_contract": [
@@ -58,13 +60,13 @@
     "missing_record_control": "Absence from Por Derecho's corpus is not stated as proof of non-existence."
   },
   "concurrent_main_reconciliation": {
-    "main_commit": "d294e71fbae40aecdffecca3d011185307c56cd5",
-    "dp1956_control": "The ES/EN Insolvency Administrator pages were reset to the current-main DP 1956-corrected versions; deeper AC-supervision analysis is carried by the CGPJ reader and estate-supervision routes."
+    "main_commit_before_merge": "d294e71fbae40aecdffecca3d011185307c56cd5",
+    "dp1956_control": "The ES/EN Insolvency Administrator pages were reset to the then-current-main DP 1956-corrected versions; deeper AC-supervision analysis is carried by the CGPJ reader and estate-supervision routes."
   },
   "discoverability": {
     "dedicated_sitemap": "sitemap-cgpj.xml",
     "robots_registration_already_exists": true,
     "homepage_feature": false
   },
-  "notes": "CI was green on the prior PR head; this manifest-state commit must itself pass the publication integrity gate before merge. Do not call the upgrade merged, deployed or live-verified until each state is evidenced."
+  "notes": "Substantive source is merged to main through PR 373. This manifest intentionally stops at MERGED until public GitHub Pages propagation is independently verified."
 }
