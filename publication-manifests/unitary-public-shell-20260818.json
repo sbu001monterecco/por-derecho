@@ -1,7 +1,9 @@
 {
   "publication_id": "UNITARY-PUBLIC-SHELL-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
+  "controlling_pr": 419,
+  "merge_sha": "e26f6aa54331ba77dded1218eee9a062b5a094a3",
   "publication_type": "bilingual unitary reader shell, canonical control room and controlled site search",
   "purpose": "Compress and orchestrate the existing evidence system without replacing dossier ownership, evidential status controls or primary-source records.",
   "expected_routes": {
@@ -23,7 +25,8 @@
     "robots.txt",
     "scripts/render_unitary_public_shell.mjs",
     ".github/workflows/validate-unitary-public-shell.yml",
-    "archive/UNITARY_PUBLIC_SHELL_CONTROL_18AUG2026.md"
+    "archive/UNITARY_PUBLIC_SHELL_CONTROL_18AUG2026.md",
+    "archive/UNITARY_PUBLIC_SHELL_POSTMERGE_CLOSEOUT_18AUG2026.md"
   ],
   "reader_contract": [
     "The Control Room is a cross-system reader interface, not a new source of facts.",
@@ -47,24 +50,38 @@
     "boundary": "The search index supports discovery only; it does not create or upgrade evidential findings."
   },
   "validation": {
-    "workflow": "Validate unitary public shell",
-    "script": "scripts/render_unitary_public_shell.mjs",
-    "desktop_mobile": true,
-    "checks": [
-      "unitary shell loads on both language homepages and representative existing dossiers",
-      "homepage navigation is consolidated",
-      "Control Room exposes six systems",
-      "CEXP search returns a relevant controlled result",
-      "DP 1901 English routing remains distinct from DIP 2/2026 and DP 1956/2026",
-      "new routes have no duplicate IDs",
-      "tested routes do not introduce horizontal overflow",
-      "screenshots and machine-readable result are uploaded as a workflow artifact"
+    "publication_integrity_run": 32195830815,
+    "supervisory_practice_run": 32195830858,
+    "unitary_browser_run": 32195830796,
+    "unitary_browser_artifact_id": 9345825532,
+    "unitary_browser_artifact_sha256": "380b335b762a939762625ddf36b65c967e696a5a0c9ba795adeb53f736703048",
+    "result": "PASS",
+    "evidence": [
+      "Publication/deletion-safety, operational-control and mission-critical repository checks passed on the final PR #419 head.",
+      "Supervisory-practice route validation passed on the final PR #419 head.",
+      "Playwright rendered 10 route archetypes at desktop and mobile widths: 20 renders passed.",
+      "All tested routes were page-level horizontal-overflow free after responsive navigation, table-wrapper and priority-link corrections.",
+      "The browser regression artifact contains 20 screenshots plus machine-readable results."
     ]
+  },
+  "repository_result": {
+    "changed_files": 16,
+    "additions": 704,
+    "deletions": 0,
+    "substantive_existing_dossier_deletions": 0
   },
   "migration_boundary": {
     "existing_site_js": "Preserved unchanged in this release.",
     "reason": "The current global loader chain has mature inter-module dependencies. The consolidation shell creates a route-aware migration point without risking a one-shot dependency rewrite.",
-    "next_safe_step": "Migrate legacy global loaders into route bundles only after this shell regression gate is green and deployed."
+    "next_safe_step": "Migrate legacy global loaders into route bundles only after public-edge verification of this shell and through the same route-archetype regression gate."
   },
-  "live_verification": {"status": "PENDING", "evidence": []}
+  "live_verification": {
+    "status": "ATTEMPTED_PUBLIC_EDGE_UNAVAILABLE_FROM_EXECUTION_ENVIRONMENT",
+    "checked_at": "2026-08-18T23:10:00+01:00",
+    "evidence": [
+      "Source implementation is merged on main at e26f6aa54331ba77dded1218eee9a062b5a094a3.",
+      "Local production-subpath browser rendering passed in GitHub Actions.",
+      "Direct readback from this execution environment could not resolve the sbu001monterecco.github.io hostname; no LIVE_VERIFIED claim is made from this session."
+    ]
+  }
 }
