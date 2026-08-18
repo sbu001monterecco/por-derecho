@@ -6,31 +6,34 @@
   const firstSection = document.querySelector('main .section');
   if (!firstSection || document.querySelector('[data-accountability-backlog]')) return;
   const style = document.createElement('style');
-  style.textContent = `.ab-wrap{margin:1.2rem 0 1.8rem}.ab-title{font-size:1.35rem;margin:.2rem 0 .75rem}.ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.65rem}.ab-step,.ab-compare{background:#fff;border:1px solid rgba(20,35,45,.16);border-radius:14px;padding:.9rem}.ab-step strong{display:block;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.25rem}.ab-note{margin:.8rem 0 0;padding:.8rem 1rem;border-left:4px solid #315c7b;background:#f5f7f8}.ab-compare-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:.65rem;align-items:stretch}.ab-vs{align-self:center;font-weight:900;text-align:center}.ab-open{border-left:4px solid #c89432}.ab-home{margin:0;padding:1.55rem 0 1.8rem;background:#eef2f1;border-top:1px solid rgba(19,37,45,.1);border-bottom:1px solid rgba(19,37,45,.1)}.ab-home-head{max-width:850px}.ab-home-head .ab-kicker{margin:0 0 .35rem;font-size:.76rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#5b686d}.ab-home-head h2{margin:.1rem 0 .65rem;font:500 clamp(1.9rem,4vw,3.25rem)/1.05 Georgia,serif;color:#13252d}.ab-home-head p{max-width:760px}.ab-home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.15rem}.ab-inst{display:block;background:#fff;color:#13252d;border:1px solid rgba(19,37,45,.16);border-radius:18px;padding:1.15rem;text-decoration:none;box-shadow:0 5px 16px rgba(19,37,45,.06);transition:transform .16s ease,box-shadow .16s ease}.ab-inst:hover,.ab-inst:focus-visible{transform:translateY(-2px);box-shadow:0 9px 24px rgba(19,37,45,.1)}.ab-inst h3{margin:.6rem 0 .2rem;font:500 clamp(1.7rem,3vw,2.35rem)/1.05 Georgia,serif}.ab-inst>strong{display:block;margin-bottom:.45rem}.ab-inst p{margin:.35rem 0 .8rem}.ab-status{display:inline-block;border-radius:999px;padding:.38rem .55rem;font-size:.7rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase}.ab-status-review{background:#f2e5c5;color:#5b4216}.ab-status-closed{background:#e7ebeb;color:#27373d}.ab-enter{font-weight:900}.ab-home-note{margin:1rem 0 0;padding:.8rem 1rem;border-left:4px solid #315c7b;background:rgba(255,255,255,.62)}@media(max-width:720px){.ab-compare-grid,.ab-home-grid{grid-template-columns:1fr}}`;
+  style.textContent = `.ab-wrap{margin:1.2rem 0 1.8rem}.ab-title{font-size:1.35rem;margin:.2rem 0 .75rem}.ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.65rem}.ab-step,.ab-compare{background:#fff;border:1px solid rgba(20,35,45,.16);border-radius:14px;padding:.9rem}.ab-step strong{display:block;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.25rem}.ab-note{margin:.8rem 0 0;padding:.8rem 1rem;border-left:4px solid #315c7b;background:#f5f7f8}.ab-compare-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:.65rem;align-items:stretch}.ab-vs{align-self:center;font-weight:900;text-align:center}.ab-open{border-left:4px solid #c89432}.ab-home{margin:2rem 0 0;padding:1rem 0 0;border-top:1px solid rgba(19,37,45,.14)}.ab-home-head{max-width:820px}.ab-home-head .ab-kicker{margin:0 0 .25rem;font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#66747a}.ab-home-head h3{margin:.1rem 0 .45rem;font:500 clamp(1.35rem,2.4vw,1.9rem)/1.1 Georgia,serif;color:#13252d}.ab-home-head p{margin:.35rem 0;color:#4d5b60}.ab-home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin-top:.9rem}.ab-inst{display:block;background:rgba(255,255,255,.7);color:#13252d;border:1px solid rgba(19,37,45,.14);border-radius:12px;padding:.82rem .9rem;text-decoration:none}.ab-inst:hover,.ab-inst:focus-visible{background:#fff;border-color:rgba(19,37,45,.3)}.ab-inst h4{margin:.4rem 0 .12rem;font:700 1.08rem/1.2 system-ui,sans-serif}.ab-inst>strong{display:block;font-size:.82rem;margin-bottom:.3rem}.ab-inst p{margin:.25rem 0 .5rem;font-size:.9rem;line-height:1.45}.ab-status{display:inline-block;border-radius:999px;padding:.3rem .45rem;font-size:.64rem;font-weight:900;letter-spacing:.035em;text-transform:uppercase}.ab-status-review{background:#f2e5c5;color:#5b4216}.ab-status-closed{background:#e7ebeb;color:#27373d}.ab-enter{font-size:.86rem;font-weight:800}.ab-home-note{margin:.75rem 0 0;font-size:.82rem;color:#5a686d}@media(max-width:720px){.ab-compare-grid,.ab-home-grid{grid-template-columns:1fr}}`;
   document.head.appendChild(style);
   const box = document.createElement('section'); box.dataset.accountabilityBacklog='true'; box.className='ab-wrap';
 
   if(isEsHome || isEnHome){
+    const map = document.querySelector(isEsHome ? '#mapa-institucional' : '#institutional-map');
+    const host = map && map.querySelector('.shell');
+    if (!host) return;
     const t=isEsHome?{
-      kicker:'Archivos institucionales',
-      title:'Si su organización aparece aquí, haga clic en su nombre.',
-      intro:'Vea qué consta documentalmente, qué sigue abierto, qué se le ha comunicado y cómo corregir o responder al registro público. Después, siga las fuentes y el contexto donde considere oportuno.',
-      rsmStatus:'Revisión interna confirmada',rsmText:'RSM comunicó que su Comité seguía analizando NNR4-1025C2F66 y que esperaba obtener conclusiones en septiembre de 2026.',
-      gtStatus:'Archivado · reconsideración invitada',gtText:'Grant Thornton Spain comunicó el archivo de 2024_04 el 10 de diciembre de 2025. Permanecen preguntas de perímetro y reconsideración.',
-      enter:'Abrir su expediente →',
-      note:'Estos expedientes distinguen hechos documentados, declaraciones institucionales, alegaciones, inferencias, preguntas abiertas y prueba pendiente. Las organizaciones nombradas están invitadas a corregir el registro y publicar su posición.'
+      kicker:'Firmas profesionales · expedientes relacionados',
+      title:'Seguimiento de ética y cumplimiento',
+      intro:'Como parte secundaria del mapa institucional, se mantiene trazabilidad sobre cómo determinadas firmas profesionales han recibido y tratado comunicaciones relacionadas con el perímetro profesional del asunto.',
+      rsmStatus:'Revisión interna confirmada',rsmText:'NNR4-1025C2F66 · RSM indicó conclusiones esperadas en septiembre de 2026.',
+      gtStatus:'Archivado · reconsideración invitada',gtText:'2024_04 · Grant Thornton Spain comunicó el archivo el 10 de diciembre de 2025.',
+      enter:'Consultar expediente →',
+      note:'La inclusión en este apartado no atribuye responsabilidad a ninguna firma. Registra únicamente el estado de sus propios procesos de ética, cumplimiento o respuesta y ofrece derecho de corrección.'
     }:{
-      kicker:'Institutional files',
-      title:'If your organisation appears here, click its name.',
-      intro:'See what is documented, what remains unresolved, what has been communicated to you, and how to correct or respond to the public record. Then follow the sources and wider context as you consider appropriate.',
-      rsmStatus:'Internal review confirmed',rsmText:'RSM stated that its Committee was continuing to analyse NNR4-1025C2F66 and expected to obtain conclusions in September 2026.',
-      gtStatus:'Filed away · reconsideration invited',gtText:'Grant Thornton Spain stated that it filed away 2024_04 on 10 December 2025. Perimeter and reconsideration questions remain.',
-      enter:'Open your file →',
-      note:'These files distinguish documented facts, institutional statements, allegations, inferences, open questions and pending evidence. Named organisations are invited to correct the record and place their position on it.'
+      kicker:'Professional firms · related files',
+      title:'Ethics and compliance follow-up',
+      intro:'As a secondary part of the institutional map, this tracks how certain professional firms have received and handled communications connected with the professional perimeter of the matter.',
+      rsmStatus:'Internal review confirmed',rsmText:'NNR4-1025C2F66 · RSM indicated conclusions were expected in September 2026.',
+      gtStatus:'Filed away · reconsideration invited',gtText:'2024_04 · Grant Thornton Spain communicated closure on 10 December 2025.',
+      enter:'View file →',
+      note:'Inclusion here does not attribute responsibility to any firm. It records only the status of its own ethics, compliance or response process and provides a right of correction.'
     };
     box.className='ab-home';
-    box.innerHTML=`<div class="shell"><div class="ab-home-head"><p class="ab-kicker">${t.kicker}</p><h2>${t.title}</h2><p>${t.intro}</p></div><div class="ab-home-grid"><a class="ab-inst" href="rsm/nnr4-1025c2f66/"><span class="ab-status ab-status-review">${t.rsmStatus}</span><h3>RSM Spain</h3><strong>NNR4-1025C2F66</strong><p>${t.rsmText}</p><span class="ab-enter">${t.enter}</span></a><a class="ab-inst" href="grant-thornton/2024-04/"><span class="ab-status ab-status-closed">${t.gtStatus}</span><h3>Grant Thornton</h3><strong>2024_04</strong><p>${t.gtText}</p><span class="ab-enter">${t.enter}</span></a></div><p class="ab-home-note">${t.note}</p></div>`;
-    firstSection.parentNode.insertBefore(box,firstSection);
+    box.innerHTML=`<div class="ab-home-head"><p class="ab-kicker">${t.kicker}</p><h3>${t.title}</h3><p>${t.intro}</p></div><div class="ab-home-grid"><a class="ab-inst" href="rsm/nnr4-1025c2f66/"><span class="ab-status ab-status-review">${t.rsmStatus}</span><h4>RSM Spain</h4><strong>NNR4-1025C2F66</strong><p>${t.rsmText}</p><span class="ab-enter">${t.enter}</span></a><a class="ab-inst" href="grant-thornton/2024-04/"><span class="ab-status ab-status-closed">${t.gtStatus}</span><h4>Grant Thornton</h4><strong>2024_04</strong><p>${t.gtText}</p><span class="ab-enter">${t.enter}</span></a></div><p class="ab-home-note">${t.note}</p>`;
+    host.appendChild(box);
     return;
   }
 
