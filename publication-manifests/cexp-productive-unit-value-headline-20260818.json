@@ -1,8 +1,9 @@
 {
   "publication_id": "CEXP-PRODUCTIVE-UNIT-VALUE-HEADLINE-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "controlling_pr": 413,
+  "merge_sha": "9a4485c35a1d0ee4042b0c3b04b5087a82f18180",
   "base_sha": "76b9c8af56cfb07ae2974fc9ad0d0821f3f32531",
   "publication_type": "bilingual dynamic cross-site controlling valuation proposition",
   "controlling_proposition": {
@@ -79,6 +80,19 @@
     "existing CEXP / Community provenance and Allegation 03 unitary causation controls",
     "ACTUA 2018 spatial test and separate GESVALT workstream controls"
   ],
+  "validation": {
+    "publication_integrity_run": 32190497275,
+    "publication_deletion_safety": "PASS",
+    "operational_control": "PASS",
+    "mission_critical_repository": "PASS",
+    "evidence": [
+      "PR 413 publication integrity run 32190497275: success",
+      "PR 413 publication/deletion-safety validation: success",
+      "PR 413 operational-control validation: success",
+      "PR 413 mission-critical repository validation: success",
+      "PR 413 merged at 9a4485c35a1d0ee4042b0c3b04b5087a82f18180"
+    ]
+  },
   "publication_safety": {
     "cexp_title": "CEXP is not described as registered owner of every finca.",
     "estate_boundary": "The module does not pull all CEXP or third-party value into LPB's estate.",
@@ -90,19 +104,14 @@
   },
   "deletion_audit": {
     "path": "archive/THREAD_DELETION_AUDIT_CEXP_PRODUCTIVE_UNIT_VALUE_HEADLINE_18AUG2026.md",
-    "status": "PENDING_FINAL_COMPARE_AND_CI",
-    "required_invariants": [
-      "no files deleted",
-      "no static public HTML overwritten",
-      "no canonical routes removed",
-      "no existing evidential qualification weakened",
-      "existing Aweswell and accounts-incorporation loaders preserved",
-      "ES/EN substantive parity maintained"
-    ]
+    "repository_result": "PASS — PR 413: 5 changed files, 685 additions, 0 deletions, 0 files deleted, 0 renames; no static public HTML overwritten.",
+    "thread_status": "DELETION_SAFE_AT_REPOSITORY_LEVEL",
+    "public_edge_status": "PENDING_INDEPENDENT_RENDERED_READBACK"
   },
   "live_verification": {
     "status": "PENDING",
     "checked_at": null,
     "evidence": []
-  }
+  },
+  "notes": "PR 413 merged at 9a4485c35a1d0ee4042b0c3b04b5087a82f18180. Source, loader and governance controls are on main. The manifest intentionally remains MERGED rather than LIVE_VERIFIED because an independent rendered GitHub Pages DOM readback was not available in this execution."
 }
