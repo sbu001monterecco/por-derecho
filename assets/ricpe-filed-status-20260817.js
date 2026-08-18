@@ -18,12 +18,17 @@
     }
   };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(apply, 0), { once: true });
-  } else {
-    setTimeout(apply, 0);
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => setTimeout(apply, 0), { once: true });
+  else setTimeout(apply, 0);
   setTimeout(apply, 250);
+
+  if (currentScript && !document.querySelector('link[data-open-kimono-css]')) {
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = new URL('practitioner-open-kimono-20260818.css?v=20260818b', currentScript.src).href;
+    css.dataset.openKimonoCss = '20260818';
+    document.head.appendChild(css);
+  }
 
   const load = (filename, marker, version) => {
     if (!currentScript || document.querySelector(`script[${marker}]`)) return;
@@ -34,12 +39,7 @@
     document.head.appendChild(script);
   };
 
-  // Progressive, bilingual reader journey after the controlled filing-status layer.
   load('reader-journey-20260818.js', 'data-psr-reader-journey', '20260818b');
-
-  // Keep the first screen deliberately simple on RICPE and Community entry pages.
   load('reader-journey-hero-20260818.js', 'data-psr-reader-journey-hero', '20260818b');
-
-  // Open-kimono practitioner standard, public-funds number reconciliation and cross-authority matrix.
   load('practitioner-open-kimono-20260818.js', 'data-open-kimono-practitioner', '20260818b');
 })();
