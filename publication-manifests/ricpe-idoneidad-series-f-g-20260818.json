@@ -1,4 +1,22 @@
 {
+  "publication_id": "RICPE-IDONEIDAD-SERIES-F-G-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 390,
+  "expected_routes": {
+    "es": [
+      "es/ricpe-idoneidad-series-f-g/index.html"
+    ],
+    "en": [
+      "en/ricpe-idoneidad-series-f-g/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/ricpe-idoneidad-public-questions-20260818.js",
+    "assets/ricpe-filed-status-20260817.js",
+    "INSTITUTIONAL_ACTIONS.md",
+    "archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md"
+  ],
   "id": "ricpe-idoneidad-series-f-g-20260818",
   "title_es": "RICPE · Decreto 224/2022 · Series F/G · preguntas públicas",
   "title_en": "RICPE · Decree 224/2022 · Series F/G · public questions",
