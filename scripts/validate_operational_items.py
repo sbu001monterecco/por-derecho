@@ -106,6 +106,7 @@ def main() -> int:
         blocks = item.get("blocks")
         if not isinstance(blocks, dict):
             errors.append(f"{item_id}: blocks must be an object")
+            blocks = {}
         else:
             if set(blocks) != BLOCK_KEYS:
                 errors.append(f"{item_id}: blocks must contain exactly {sorted(BLOCK_KEYS)}")
@@ -114,10 +115,10 @@ def main() -> int:
                     errors.append(f"{item_id}: blocks.{key} must be boolean")
 
         closure_evidence = item.get("closure_evidence")
-        if status == "CLOSED":
-            if not isinstance(closure_evidence, list) or not closure_evidence:
-                errors.append(f"{item_id}: CLOSED requires closure_evidence")
-        if status == "BLOCKED" and not any(bool(blocks.get(k)) for k in BLOCK_KEYS) if isinstance(blocks, dict) else False:
+        if status == "CLOSED" and (not isinstance(closure_evidence, list) or not closure_evidence):
+            errors.append(f"{item_id}: CLOSED requires closure_evidence")
+
+        if status == "BLOCKED" and not any(bool(blocks.get(key)) for key in BLOCK_KEYS):
             errors.append(f"{item_id}: BLOCKED item must declare at least one blocking dimension")
 
     if errors:
