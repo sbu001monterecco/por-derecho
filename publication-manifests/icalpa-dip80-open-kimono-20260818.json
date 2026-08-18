@@ -1,51 +1,18 @@
 {
   "publication_id": "ICALPA-DIP80-OPEN-KIMONO-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "CI_GREEN",
+  "current_state": "PR_OPEN",
   "controlling_branch": "agent/dip80-living-casebook-completion",
   "controlling_pr": 383,
   "expected_routes": {
-    "es": [
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html"
-    ],
-    "en": [
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"
-    ]
+    "es": ["es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html","es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html","es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html","es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html","es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html","es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html","es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html"],
+    "en": ["en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html","en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html","en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html","en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html","en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html","en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html","en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"]
   },
-  "expected_source_files": [
-    "assets/data/dip80-2026-casebook.js",
-    "assets/dip80-casebook.css",
-    "assets/dip80-casebook.js",
-    "assets/dip80-decision-tree.css",
-    "assets/dip80-decision-tree-enhance.js",
-    "scripts/validate_dip80_casebook.py",
-    "archive/DIP80_LIVING_CASEBOOK_IMPLEMENTATION_CONTROL_18AUG2026.md",
-    "archive/DIP80_LIVING_CASEBOOK_DELETION_CONTINUITY_18AUG2026.md",
-    "archive/DIP80_LIVING_CASEBOOK_28_SECTION_ACCEPTANCE_18AUG2026.md"
-  ],
+  "expected_source_files": ["assets/data/dip80-2026-casebook.js","assets/dip80-casebook.css","assets/dip80-casebook.js","assets/dip80-decision-tree.css","assets/dip80-decision-tree-enhance.js","scripts/validate_dip80_casebook.py","scripts/smoke_dip80_navigation.py","archive/DIP80_LIVING_CASEBOOK_IMPLEMENTATION_CONTROL_18AUG2026.md","archive/DIP80_LIVING_CASEBOOK_DELETION_CONTINUITY_18AUG2026.md","archive/DIP80_LIVING_CASEBOOK_28_SECTION_ACCEPTANCE_18AUG2026.md"],
   "validation": {
-    "evidence": [
-      "Local deterministic gate: 14 routes, 13 evidence records, 24 decision nodes, 28/28 master controls.",
-      "GitHub Publication integrity gate run #66 completed successfully on PR #383 after the decision-tree branching and operational-control updates.",
-      "Structured-data source and application JavaScript pass Node syntax validation."
-    ],
-    "browser_note": "Local Chromium navigation is administrator-blocked in the execution environment; deployment and live/mobile smoke verification remain mandatory before LIVE_VERIFIED."
+    "evidence": ["Local deterministic gate: 14 routes, 13 evidence records, 24 decision nodes, 28/28 master controls.","GitHub Publication integrity gate run #66 succeeded before adding rendered-mobile enforcement.","Run #69 passed publication integrity, operational integrity, DIP80 casebook and internal-navigation/responsive checks; Chrome produced a 111536-byte 390x844 screenshot, but the immediate dynamic-DOM text assertion failed. The smoke is being fixed to wait for deferred JavaScript rather than weakened."],
+    "browser_note": "A fresh green final-head rendered/mobile run is required before merge."
   },
-  "live_urls": [
-    "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/",
-    "https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/"
-  ],
+  "live_urls": ["https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/","https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/"],
   "notes": "Ordinary reviewable Git source supersedes the failed encoded-payload approach. Generic supervisory-practice pages do not satisfy this dedicated DIP 80 publication. Prior failed attempts remain preserved in history."
 }
