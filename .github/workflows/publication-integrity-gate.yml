@@ -35,5 +35,22 @@ jobs:
         run: python scripts/validate_operational_items.py
       - name: Validate DIP 80 living casebook
         run: python scripts/validate_dip80_casebook.py
+      - name: Smoke-test DIP 80 internal navigation and responsive structure
+        run: python scripts/smoke_dip80_navigation.py
+      - name: Render DIP 80 mobile casebook in headless Chrome
+        shell: bash
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/dip80-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid || true' EXIT
+          sleep 1
+          chrome="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$chrome"
+          "$chrome" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --screenshot=/tmp/dip80-mobile.png http://127.0.0.1:8765/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/
+          test -s /tmp/dip80-mobile.png
+          "$chrome" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --dump-dom http://127.0.0.1:8765/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/ >/tmp/dip80-mobile-dom.html
+          grep -q 'AHORA: ¿qué decisión humana requiere el expediente?' /tmp/dip80-mobile-dom.html
+          grep -q 'Pasivo y créditos controvertidos' /tmp/dip80-mobile-dom.html
+          sha256sum /tmp/dip80-mobile.png
       - name: Validate mission-critical repository invariants
         run: python scripts/validate_mission_critical_repo.py
