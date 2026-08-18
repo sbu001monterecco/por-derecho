@@ -1,0 +1,104 @@
+{
+  "id": "aweswell-accounts-calificacion-incorporation-20260818",
+  "title": "Aweswell accounts — formal acknowledgment, incorporation and reasoned assessment in the calificación",
+  "publication_type": "bilingual_dynamic_cross-site_evidential_control",
+  "mode": "source_based_procedurally_qualified",
+  "thread": "Aweswell provisional parent-level group accounts, LPB Concurso 36/2012 and calificación incorporation request",
+  "base_branch": "main",
+  "base_sha": "dc5cb47dfa319932c2875bfb8dc1e8b5bfeda30b",
+  "status": "SOURCE_IMPLEMENTED_PENDING_PR_CI_MERGE_AND_LIVE_VERIFICATION",
+  "entered_status": "2026-08-18",
+  "approved_deletion_gate": false,
+  "paths": [
+    "assets/aweswell-accounts-calificacion-incorporation-20260818.js",
+    "assets/aweswell-monterecco-name-continuity-20260816.js",
+    "archive/AWESWELL_ACCOUNTS_CALIFICACION_INCORPORATION_CONTROL_18AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md",
+    "publication-manifests/aweswell-accounts-calificacion-incorporation-20260818.json"
+  ],
+  "routes": [
+    "https://sbu001monterecco.github.io/por-derecho/en/lpb-solvency-record/",
+    "https://sbu001monterecco.github.io/por-derecho/es/expediente-solvencia-lpb/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/recovery-restitution-objectives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/objetivos-recuperacion-restitucion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-institutional-accountability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-responsabilidad-institucional/"
+  ],
+  "live_required_markers": {
+    "english_full": [
+      "Formal evidential request: acknowledge, incorporate and expressly assess",
+      "Admissibility and weight pending",
+      "The accounts are an official, dated and bilingual evidential anchor"
+    ],
+    "spanish_full": [
+      "Solicitud probatoria formal: reconocer, incorporar y valorar expresamente",
+      "Admisibilidad y valor pendientes",
+      "Las cuentas constituyen un anclaje probatorio oficial, fechado y bilingüe"
+    ],
+    "english_compact": [
+      "Acknowledge, incorporate and expressly assess the parent-level accounts in the calificación"
+    ],
+    "spanish_compact": [
+      "Reconocer, incorporar y valorar expresamente las cuentas de la matriz en la calificación"
+    ]
+  },
+  "deletion_audit": {
+    "path": "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md",
+    "status": "PENDING_FINAL_COMPARE_AND_CI",
+    "required_invariants": [
+      "no files deleted",
+      "no routes removed",
+      "no official filing link removed",
+      "no existing evidential qualification weakened",
+      "existing Aweswell name-continuity behavior preserved",
+      "ES/EN substantive parity maintained"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Aweswell Limited — Consolidated Provisional Group Statutory Accounts for the year ended 31 July 2025",
+      "status": "officially filed party-authored statutory source",
+      "key_pages": "1-4, 20-22, 28-33, 54-68"
+    },
+    {
+      "title": "Aweswell Board Meeting and Notes to PropCo1 Annual Accounts 2008-2025",
+      "status": "board-approved party-prepared evidential and claim roadmap",
+      "key_pages": "1-2"
+    },
+    {
+      "title": "Companies House filing record — company 07716847",
+      "status": "official public registry record"
+    }
+  ],
+  "prohibitions": [
+    "do not describe Companies House as auditor or adjudicator",
+    "do not request automatic acceptance of every directors statement as fact",
+    "do not present the filing as a replacement for LPB Spanish annual accounts",
+    "do not imply the filing reverses Sentencia 163/2023",
+    "do not imply title to every hotel unit",
+    "do not imply limitation is interrupted",
+    "do not use consolidated as an independently verified technical conclusion beyond the filed title",
+    "do not remove the adverse first-instance and pending-appeal status"
+  ],
+  "audit": {
+    "pull_request": null,
+    "head_sha": null,
+    "merge_sha": null,
+    "changed_files": null,
+    "additions": null,
+    "deletions": null,
+    "file_deletions": null,
+    "renames": null,
+    "publication_integrity": "PENDING"
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "checked_at": null,
+    "method": null,
+    "evidence": []
+  }
+}
