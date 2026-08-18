@@ -51,11 +51,28 @@ try{
           const ids=[...document.querySelectorAll('[id]')].map(el=>el.id).filter(Boolean);
           const duplicates=[...new Set(ids.filter((id,i)=>ids.indexOf(id)!==i))];
           const viewportWidth=document.documentElement.clientWidth;
-          const offenders=[...document.querySelectorAll('body *')].map(el=>{
+          const isClipped=(el)=>{
+            let p=el.parentElement;
+            while(p&&p!==document.body){
+              const style=getComputedStyle(p);
+              const ox=style.overflowX;
+              if(['auto','scroll','hidden','clip'].includes(ox)){
+                const r=p.getBoundingClientRect();
+                if(r.left>=-3&&r.right<=viewportWidth+3)return true;
+              }
+              p=p.parentElement;
+            }
+            return false;
+          };
+          const offenders=[...document.querySelectorAll('body *')].filter(el=>{
             const r=el.getBoundingClientRect();
-            return {tag:el.tagName.toLowerCase(),id:el.id||'',className:typeof el.className==='string'?el.className.slice(0,120):'',left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width),scrollWidth:el.scrollWidth||0};
-          }).filter(x=>x.right>viewportWidth+3||x.left<-3).sort((a,b)=>Math.max(b.right-viewportWidth,-b.left)-Math.max(a.right-viewportWidth,-a.left)).slice(0,8);
-          return {scrollWidth:document.documentElement.scrollWidth,clientWidth:viewportWidth,duplicates,h1:document.querySelectorAll('h1').length,offenders};
+            return (r.right>viewportWidth+3||r.left<-3)&&!isClipped(el);
+          }).map(el=>{
+            const r=el.getBoundingClientRect();
+            const style=getComputedStyle(el);
+            return {tag:el.tagName.toLowerCase(),id:el.id||'',className:typeof el.className==='string'?el.className.slice(0,120):'',left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width),scrollWidth:el.scrollWidth||0,overflowX:style.overflowX,position:style.position};
+          }).sort((a,b)=>Math.max(b.right-viewportWidth,-b.left)-Math.max(a.right-viewportWidth,-a.left)).slice(0,12);
+          return {scrollWidth:document.documentElement.scrollWidth,bodyScrollWidth:document.body.scrollWidth,clientWidth:viewportWidth,duplicates,h1:document.querySelectorAll('h1').length,offenders};
         });
         if(metrics.scrollWidth>metrics.clientWidth+3)throw new Error(`Horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}; ${JSON.stringify(metrics.offenders)}`);
         if((route.kind==='control'||route.kind==='search'||route.kind==='gateway')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
@@ -63,8 +80,10 @@ try{
         const shot=path.join(out,`${route.name}-${viewport.name}.png`);
         await page.screenshot({path:shot,fullPage:true});
         evidence.push({route:route.url,viewport:viewport.name,status:'pass',metrics,screenshot:shot});
-      }catch(error){failures.push({route:route.url,viewport:viewport.name,error:String(error)});}
-      finally{await page.close();}
+      }catch(error){
+        try{await page.screenshot({path:path.join(out,`${route.name}-${viewport.name}-failure.png`),fullPage:true});}catch{}
+        failures.push({route:route.url,viewport:viewport.name,error:String(error)});
+      }finally{await page.close();}
     }
     await context.close();
   }
