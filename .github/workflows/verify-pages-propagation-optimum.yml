@@ -19,13 +19,27 @@ jobs:
     timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Verify workflow commit descends from the optimum reader-journey merge
-        run: |
-          git merge-base --is-ancestor 6deaba19d8db5c5e20f2965ae8ab7deb28d8de "$GITHUB_SHA"
-          echo "Workflow commit $GITHUB_SHA is a descendant of 6deaba19d8db5c5e20f2965ae8ab7deb28d8de"
+        uses: actions/github-script@v7
+        env:
+          MINIMUM_COMMIT: 6deaba19d8db5c5c5e20f2965ae8ab7deb28d8de
+        with:
+          script: |
+            const minimum = process.env.MINIMUM_COMMIT;
+            const basehead = `${minimum}...${context.sha}`;
+            const { data } = await github.request('GET /repos/{owner}/{repo}/compare/{basehead}', {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              basehead,
+            });
+            const mergeBase = data.merge_base_commit?.sha;
+            const validStatus = data.status === 'ahead' || data.status === 'identical';
+            if (!validStatus || mergeBase !== minimum) {
+              core.setFailed(`Workflow commit ${context.sha} is not a descendant of ${minimum}; status=${data.status}; merge_base=${mergeBase}`);
+              return;
+            }
+            core.info(`Workflow commit ${context.sha} is ${data.ahead_by} commit(s) ahead of ${minimum}; merge base confirmed.`);
 
       - name: Poll the public GitHub Pages host
         run: |
@@ -57,7 +71,6 @@ jobs:
         uses: actions/github-script@v7
         env:
           JOB_STATUS: ${{ job.status }}
-          MINIMUM_COMMIT: 6deaba19d8db5c5c5e20f2965ae8ab7deb28d8de
         with:
           script: |
             const success = process.env.JOB_STATUS === 'success';
