@@ -1,0 +1,192 @@
+{
+  "schema": "por-derecho-institutional-genealogy-v1",
+  "version": "2026-08-18",
+  "status": "PUBLIC-SAFE CONTROLLED",
+  "purpose": "Keep corporate identity, professional relationships and the two separate 2020/2021 public events visually distinct. Relationship is not culpability.",
+  "publication_rule": "RELATIONSHIP -> possible knowledge question -> possible duty -> evidence of compliance/non-compliance -> only then possible breach.",
+  "entities": [
+    {
+      "id": "ENT-AG-CAPITAL-SCR",
+      "name": "A&G Capital Investment Partners, S.C.R., S.A.",
+      "type": "investment_vehicle_legal_line",
+      "status": "DOCUMENTED",
+      "note": "Original denomination in the legal lineage of the later RICPE vehicle. Do not collapse into A&G Asesores."
+    },
+    {
+      "id": "ENT-RICPE",
+      "name": "RIC Private Equity Investment Partners, S.C.R., S.A.",
+      "type": "regulated_vehicle",
+      "status": "DOCUMENTED",
+      "note": "Same SCR legal lineage after name changes; CNMV no. 295 in the controlled public dossier."
+    },
+    {
+      "id": "ENT-AG-ASESORES",
+      "name": "A&G Asesores Legales, Financieros y Tributarios",
+      "type": "professional_services_entity",
+      "status": "DOCUMENTED-SEPARATE-ENTITY",
+      "note": "Separate professional/promoter-services line. Legal identity with A&G Capital Investment Partners is not established."
+    },
+    {
+      "id": "PERSON-AC-BORJA",
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "type": "person",
+      "status": "DOCUMENTED",
+      "note": "Administrador Concursal in Concurso 36/2012. The current public dossier carries an archived-CV proposition of association with ‘A&G Asesores’ in 2009–2010; the exact primary CV/entity source remains a source-completion target."
+    },
+    {
+      "id": "ENT-SAN-TELMO",
+      "name": "San Telmo Abogados y Economistas",
+      "type": "professional_firm",
+      "status": "DOCUMENTED",
+      "note": "Host/publisher of the 30-Nov-2021 Enrique Guerra event. The precise primary corporate/shareholding chain for the AC relationship remains queued for public-source completion."
+    },
+    {
+      "id": "ENT-RSM-SPAIN",
+      "name": "RSM Spain",
+      "type": "professional_firm",
+      "status": "DOCUMENTED-INTEGRATION",
+      "note": "Use ‘integrated/incorporated into RSM in 2024’. Do not publish ‘absorbed/merged’ unless the legal mechanism is independently proved."
+    },
+    {
+      "id": "PERSON-ENRIQUE-GUERRA",
+      "name": "Enrique Luis Guerra Suárez",
+      "type": "person",
+      "status": "DOCUMENTED",
+      "note": "RICPE secretary from the controlled 2019 chronology and Director General from the controlled 2020 chronology; issued the 20-Jul-2021 institutional certification and appeared at the 30-Nov-2021 San Telmo event."
+    },
+    {
+      "id": "PERSON-JOSE-ACOSTA",
+      "name": "José Acosta Matos",
+      "type": "person",
+      "status": "DOCUMENTED-WITH-IDENTITY-CAUTION",
+      "note": "RICPE governance / CAM-Sun Park project relationship must remain actor- and source-specific."
+    }
+  ],
+  "events": [
+    {
+      "id": "EVENT-RICPE-2020-11-11",
+      "date": "2020-11-11",
+      "label_es": "Presentación RICPE a inversores",
+      "label_en": "RICPE investor presentation",
+      "host": "RICPE",
+      "status": "DOCUMENTED",
+      "core": "Sun Park was expressly presented within RICPE's investment/project narrative with Enrique Guerra and Acosta Matos participation in the controlled audiovisual/material set.",
+      "does_not_prove": [
+        "San Telmo organised or advised this event",
+        "every ownership/title representation was correct",
+        "CNMV verified every project representation"
+      ]
+    },
+    {
+      "id": "EVENT-SANTELMO-2021-11-30",
+      "date": "2021-11-30",
+      "label_es": "#UnCaféenSanTelmo · Enrique Guerra",
+      "label_en": "#UnCaféenSanTelmo · Enrique Guerra",
+      "host": "San Telmo Abogados y Economistas",
+      "status": "DOCUMENTED",
+      "core": "San Telmo published/hosted an event interviewing Enrique Guerra in his RICPE context. A preserved audiovisual/capture family is a source-control target.",
+      "does_not_prove": [
+        "the Administrador Concursal prepared, organised or attended the event",
+        "a prior direct professional relationship between the Administrador Concursal and Enrique Guerra",
+        "the unnamed ‘abandoned complex in Lanzarote’ was Sun Park",
+        "professional proximity establishes conflict, coordination or wrongdoing"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "REL-AGCAPITAL-RICPE-LEGAL-LINE",
+      "from": "ENT-AG-CAPITAL-SCR",
+      "to": "ENT-RICPE",
+      "relationship": "same SCR legal lineage / name evolution",
+      "visual": "solid",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "REL-AGASESORES-RIC-PROMOTION",
+      "from": "ENT-AG-ASESORES",
+      "to": "ENT-RICPE",
+      "relationship": "promoter/services relationship described in controlled RIC history",
+      "visual": "dotted",
+      "status": "DOCUMENTED-RELATIONSHIP-NOT-IDENTITY"
+    },
+    {
+      "id": "REL-AC-AGASESORES-HISTORIC",
+      "from": "PERSON-AC-BORJA",
+      "to": "ENT-AG-ASESORES",
+      "relationship": "archived-CV proposition, 2009–2010",
+      "visual": "dashed-question",
+      "status": "PUBLIC-PROPOSITION-PRIMARY-CV-QUEUED"
+    },
+    {
+      "id": "REL-AC-SANTELMO-2021",
+      "from": "PERSON-AC-BORJA",
+      "to": "ENT-SAN-TELMO",
+      "relationship": "formal professional/shareholding/economic relationship described in the controlled 2021/2024 source chronology",
+      "visual": "double",
+      "status": "DOCUMENTED-IN-CONTROLLED-FILING-PRIMARY-CORPORATE-SOURCE-QUEUED"
+    },
+    {
+      "id": "REL-SANTELMO-EVENT-2021",
+      "from": "ENT-SAN-TELMO",
+      "to": "EVENT-SANTELMO-2021-11-30",
+      "relationship": "host/publisher",
+      "visual": "dotted",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "REL-GUERRA-EVENT-2021",
+      "from": "PERSON-ENRIQUE-GUERRA",
+      "to": "EVENT-SANTELMO-2021-11-30",
+      "relationship": "interviewee / RICPE public role",
+      "visual": "dotted",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "REL-AC-GUERRA-DIRECT",
+      "from": "PERSON-AC-BORJA",
+      "to": "PERSON-ENRIQUE-GUERRA",
+      "relationship": "direct prior professional relationship",
+      "visual": "dashed-question",
+      "status": "NOT-ESTABLISHED"
+    },
+    {
+      "id": "REL-SANTELMO-RSM-2024",
+      "from": "ENT-SAN-TELMO",
+      "to": "ENT-RSM-SPAIN",
+      "relationship": "professional-team integration/incorporation, 2024",
+      "visual": "solid-limited",
+      "status": "DOCUMENTED-INTEGRATION-LEGAL-MECHANISM-NOT-INFERRED"
+    }
+  ],
+  "open_evidence": [
+    {
+      "id": "ST-GAP-01",
+      "target": "Primary archived CV and exact entity record for the AC's stated 2009–2010 ‘A&G Asesores’ association",
+      "reason": "Prevents A&G entity-name collision and permits exact dates/capacity to be published."
+    },
+    {
+      "id": "ST-GAP-02",
+      "target": "Primary San Telmo partner/shareholding/corporate records through July 2024, including the stated 500 participaciones and transfer",
+      "reason": "Closes the exact legal/economic relationship instead of relying on a later controlled filing."
+    },
+    {
+      "id": "ST-GAP-03",
+      "target": "30-Nov-2021 event invitation, agenda, production/client/conflict records and communications capable of proving or excluding AC knowledge, participation or relevant professional mandates",
+      "reason": "Tests the relationship without guilt by association."
+    },
+    {
+      "id": "ST-GAP-04",
+      "target": "Audiovisual/contextual evidence identifying or excluding Sun Park as the unnamed ‘complejo abandonado en Lanzarote’",
+      "reason": "Prevents an unnamed asset from being converted into a Sun Park fact."
+    }
+  ],
+  "hard_boundaries": [
+    "The 11-Nov-2020 RICPE event and 30-Nov-2021 San Telmo event are separate evidential objects.",
+    "A&G Asesores and A&G Capital Investment Partners are not to be treated as the same legal person.",
+    "A professional relationship is not proof of knowledge, conflict, coordination, breach or crime.",
+    "No direct Borja–Guerra professional relationship is currently established.",
+    "The unnamed Lanzarote complex in the 2021 event is not to be labelled Sun Park without source closure.",
+    "RSM's later 2024 integration of San Telmo does not create retrospective responsibility for earlier conduct."
+  ]
+}
