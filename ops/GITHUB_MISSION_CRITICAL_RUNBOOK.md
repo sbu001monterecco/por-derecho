@@ -42,7 +42,7 @@ For a suspected production regression:
 
 1. **Detect.** Preserve the failing workflow, route, timestamp and SHA.
 2. **Freeze.** Stop preference-only or unrelated production merges until the failure is understood.
-3. **Identify last-known-good.** Use `ops/PRODUCTION_STATUS.json` and permanent deployment evidence. Do not guess an exact live SHA.
+3. **Identify last-known-good.** Use `ops/LAST_KNOWN_GOOD.json`, `ops/PRODUCTION_STATUS.json` and permanent deployment evidence. Do not guess an exact live SHA.
 4. **Revert.** Prefer a normal `git revert`/revert PR of the first bad production change. Do not force-push `main`.
 5. **Validate.** Run the universal gate plus path-specific checks.
 6. **Merge and deploy.**
@@ -53,7 +53,7 @@ If a global loader (`assets/site.js`, shared loader/CSS, homepage or deployment 
 
 ## 5. Backup and restore
 
-The scheduled `Repository recovery bundle` workflow creates a verified `git bundle` containing all fetched branches/tags and uploads it as a GitHub Actions artifact. This is useful recovery material but is **not independent disaster recovery** because it remains on GitHub.
+The scheduled `Repository recovery bundle` workflow (and any push that changes that workflow itself) creates a verified `git bundle` containing all fetched branches/tags and uploads it as a GitHub Actions artifact. This is useful recovery material but is **not independent disaster recovery** because it remains on GitHub.
 
 Independent mirroring becomes active only when the repository secret `POR_DERECHO_BACKUP_MIRROR_URL` is configured.
 

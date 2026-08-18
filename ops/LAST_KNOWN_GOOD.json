@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "release_id": "mission-critical-hardening-20260818-v1",
+  "state": "LIVE_VERIFIED",
+  "source_sha": "671b0c9026d0c4df188be07f60c137ce825367a0",
+  "public_host": "https://sbu001monterecco.github.io/por-derecho/",
+  "verification": {
+    "workflow": "Verify mission-critical hardening live",
+    "run_id": "32134809955",
+    "artifact_id": "9323553989",
+    "artifact_digest": "sha256:2b43c17452a54753b60c2255cb67feb299c13d2da3c36eed277911f3fdf8f55d",
+    "verified_at": "2026-08-18T12:03:49Z",
+    "checks": [
+      "hardening_probe",
+      "homepage_es",
+      "homepage_en",
+      "ricpe_es",
+      "cnmv_es",
+      "global_loader"
+    ]
+  },
+  "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."
+}
