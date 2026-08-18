@@ -1,0 +1,40 @@
+{
+  "id": "cgpj-permanent-commission-reader-room-20260818",
+  "date": "2026-08-18",
+  "purpose": "Bilingual institutional reader room for possible review by the CGPJ Permanent Commission or related competent CGPJ services.",
+  "routes": {
+    "es": "/es/cgpj-comision-permanente-sala-lectura/",
+    "en": "/en/cgpj-permanent-commission-reader-room/"
+  },
+  "reader_contract": [
+    "Lead with adverse CGPJ decisions before Por Derecho objections",
+    "Separate discipline, inspection/functioning, jurisdictional merits, LAJ/court-office acts, appeals and criminal routes",
+    "Distinguish registry filing/routing from file incorporation, substantive examination, acceptance and truth",
+    "Treat the quantitative €9.052m to ~€13.166m sequence as a party-corpus working bridge unless a primary judicial act fixes it",
+    "Treat the 24 October 2019 to 2021 to 26 January 2022 to deed/Registry sequence as a documentary bridge requiring reconciliation",
+    "Preserve strongest lawful alternative explanations",
+    "Invite correction by primary record"
+  ],
+  "adverse_status_shown": {
+    "di169_archive": "2026-05-14",
+    "promotor_archive_maintained": "2026-07-10",
+    "appeal_286": "later procedural material shown without implying archive reversal"
+  },
+  "institutional_context": {
+    "commission_composition_source": "Official CGPJ publication dated 2025-10-23 / Plenary agreement of October 2025",
+    "composition_effective": "2025-11-01",
+    "checked_for_publication": "2026-08-18",
+    "disclaimer": "Commission membership does not imply prior knowledge, responsibility, cooperation, endorsement or position on the matter. Preparation for a possible visit/review does not imply a scheduled or confirmed visit."
+  },
+  "publication_safety": {
+    "presumption": "No misconduct, corruption, bias, collusion or criminal responsibility is stated as established by the reader room.",
+    "appearance_of_impartiality": "Kept as a finite-verification module; no intimate friendship, influence, partiality or responsibility is asserted without primary proof.",
+    "institutional_mark": "Identification only; no endorsement implied.",
+    "personal_data": "No new private contact information or unredacted confidential material introduced."
+  },
+  "discoverability": {
+    "dedicated_sitemap": "/sitemap-cgpj.xml",
+    "robots_registration": true,
+    "homepage_feature": false
+  }
+}
