@@ -28,14 +28,16 @@ Core issue: reconcile Decree 224/2022, the AEAT binding report of 17 November 20
 - Treat expediente 02/2022 as the canonical administrative file unless corrected by the authority.
 - Request the complete file index first, then the original RICPE application, project memorandum, AEAT referral, requests for clarification, internal reports, proposal, final act, notifications and amendments.
 - On 10 August 2026, Resolution 28/2026 refused the 7 July access request in full. The resolution itself identifies Decree 224/2022, expediente 02/2022 and the AEAT report of 17 November 2022 as procedural antecedents.
-- An appeal to the Canary Islands Transparency Commissioner was filed on 11 August 2026 (appeal file 12/2026-0710092416), seeking category-by-category review, an index, partial/segregable access, metadata and competent transfers.
+- An appeal to the Canary Islands Transparency Commissioner was filed on 11 August 2026 under REGAGE26e00072591992, internal appeal file 12/2026-0710092416. The receipt identifies the Commissioner as destination. The appeal seeks category-by-category review, an index, partial/segregable access, metadata and competent transfers.
 - Prepare a short supplementary submission to that existing appeal: place the now-controlled Series F/G split and 16 December 2022 opening chronology before the Commissioner and ask expressly whether the application/report/decree covered F, G or both. Do not duplicate the entire 7 July request.
 
 ### AEAT
 
 - Keep the state AEAT route separate from the Canary Islands administrative idoneidad file.
-- The 7 July 2026 AEAT access request seeks the 17 November 2022 binding report, antecedents, metadata and related traceability.
-- Current Gmail/File Library audit has not located a substantive AEAT transparency response to that request. Do not call this formal silence until receipt by the competent body, any extension and any third-party procedure have been checked.
+- Direct AEAT access request: REGAGE26e00062944142, presented 7 July 2026 at 23:20:05.
+- The Registro Electrónico General later confirmed that the filing passed to the Registro Central de la Agencia Estatal de Administración Tributaria on 8 July 2026 at 09:51:37. This is the strongest connected-data receipt anchor currently located for the competent AEAT route.
+- The connected Gmail audit through 18 August 2026 has located no substantive AEAT transparency decision and no email notice of an Article 20 extension or Article 19 third-party suspension tied to that registration number. This does not exclude a notice available only in Carpeta Ciudadana/DEHú or another official portal.
+- Under Articles 20 and 24 of Ley 19/2013, the ordinary resolution period is one month from receipt by the competent body; absent a validly notified extension/suspension, expiry produces a presumed refusal that may be challenged before the Consejo de Transparencia y Buen Gobierno. Before filing the CTBG claim, verify the official portal/notification record for any event not visible in Gmail.
 - Ask specifically whether the binding report assessed Series F, Series G or both; whether any 2021 report/antecedent existed; and how any already-incurred refurbishment expenditure, outstanding liabilities, permitted reimbursement or bridge financing was treated.
 - Seek segregable institutional/project information and metadata before protected individual taxpayer information.
 
