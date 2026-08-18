@@ -43,6 +43,7 @@ try {
           return style.display !== 'none' && style.visibility !== 'hidden' && node.getBoundingClientRect().height > 0;
         };
         const main = document.querySelector('main');
+        const hero = document.querySelector(heroSelector);
         const firstVisible = main ? [...main.children].find(visible) : null;
         const ids = [...document.querySelectorAll('[id]')].map((node) => node.id);
         const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
@@ -66,7 +67,8 @@ try {
           title: document.title,
           firstVisibleClass: firstVisible?.className || '',
           firstVisibleTag: firstVisible?.tagName || '',
-          heroVisible: visible(document.querySelector(heroSelector)),
+          heroVisible: visible(hero),
+          heroFirst: firstVisible === hero,
           hasIntent: Boolean(document.querySelector('#psr-reader-intent')),
           hasDepth: Boolean(document.querySelector('#psr-depth-switcher')),
           hasNext: Boolean(document.querySelector('#psr-next-step')),
@@ -83,7 +85,14 @@ try {
       if (item.screenshot) {
         const topPath = path.join(outputDir, `${item.name}-${viewport.name}-top.png`);
         await page.screenshot({ path: topPath, fullPage: false });
-        if (!item.home) {
+        if (item.home) {
+          const intent = page.locator('#psr-reader-intent');
+          if (await intent.count()) {
+            await intent.scrollIntoViewIfNeeded();
+            await page.waitForTimeout(350);
+            await page.screenshot({ path: path.join(outputDir, `${item.name}-${viewport.name}-intent.png`), fullPage: false });
+          }
+        } else {
           const next = page.locator('#psr-next-step');
           if (await next.count()) {
             await next.scrollIntoViewIfNeeded();
@@ -96,6 +105,7 @@ try {
 
       const prefix = `${item.name}/${viewport.name}`;
       if (!state.heroVisible) errors.push(`${prefix}: recipient hero is not visible`);
+      if (!state.heroFirst) errors.push(`${prefix}: recipient hero is not the first visible main module (${state.firstVisibleClass})`);
       if (!state.hasProgress) errors.push(`${prefix}: reading progress control missing`);
       if (state.duplicateIds.length) errors.push(`${prefix}: duplicate IDs: ${state.duplicateIds.join(', ')}`);
       if (state.railCurrent > 1) errors.push(`${prefix}: more than one current journey step`);
