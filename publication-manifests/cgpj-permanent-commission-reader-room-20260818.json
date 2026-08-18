@@ -1,11 +1,22 @@
 {
-  "id": "cgpj-permanent-commission-reader-room-20260818",
-  "date": "2026-08-18",
-  "purpose": "Bilingual institutional reader room for possible review by the CGPJ Permanent Commission or related competent CGPJ services.",
-  "routes": {
-    "es": "/es/cgpj-comision-permanente-sala-lectura/",
-    "en": "/en/cgpj-permanent-commission-reader-room/"
+  "publication_id": "CGPJ-PERMANENT-COMMISSION-READER-ROOM-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 370,
+  "expected_routes": {
+    "es": [
+      "es/cgpj-comision-permanente-sala-lectura/index.html",
+      "es/cgpj-comision-permanente/index.html"
+    ],
+    "en": [
+      "en/cgpj-permanent-commission-reader-room/index.html",
+      "en/cgpj-permanent-commission/index.html"
+    ]
   },
+  "expected_source_files": [
+    "archive/CGPJ_COMISION_PERMANENTE_VISIT_READINESS_MASTER_PROMPT_18AUG2026.md",
+    "sitemap-cgpj.xml"
+  ],
   "reader_contract": [
     "Lead with adverse CGPJ decisions before Por Derecho objections",
     "Separate discipline, inspection/functioning, jurisdictional merits, LAJ/court-office acts, appeals and criminal routes",
@@ -33,8 +44,9 @@
     "personal_data": "No new private contact information or unredacted confidential material introduced."
   },
   "discoverability": {
-    "dedicated_sitemap": "/sitemap-cgpj.xml",
+    "dedicated_sitemap": "sitemap-cgpj.xml",
     "robots_registration": true,
     "homepage_feature": false
-  }
+  },
+  "notes": "PR-open state. Do not call the new routes merged, deployed, live verified or deletion safe until the repository gate, merge and public GitHub Pages checks establish those states."
 }
