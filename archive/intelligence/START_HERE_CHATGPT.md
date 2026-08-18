@@ -10,9 +10,13 @@ This file is the specialist entry point for a new ChatGPT thread, researcher or 
 
 For the current RICPE / MYND Yaiza / RIC-idoneidad / AEAT Series F/G track, read first:
 
+`RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md`
+
+Then read:
+
 `RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md`
 
-That handover records the exact Series F/G question, Decree 224/2022 / AEAT access routes, the 11 August Transparency Commissioner appeal, the direct AEAT REGAGE/receipt status, website implementation, public/private boundaries, five-source deletion audit and next actions. It is the controlling thread-specific continuity record for this issue; primary source verification remains mandatory.
+The closeout records PR #390 merge evidence, independent live GitHub Pages verification, the five-source deletion audit and the deletion-safety verdict. The handover records the exact Series F/G question, Decree 224/2022 / AEAT access routes, the 11 August Transparency Commissioner appeal, the direct AEAT REGAGE/receipt status, website implementation, public/private boundaries and unresolved next actions. Together they are the controlling thread-specific continuity record for this issue; primary source verification remains mandatory.
 
 ## Mandatory publishing-continuity rule
 
@@ -37,22 +41,23 @@ Do not create competing full manuscripts by default. Update canonical files.
 ## Read in this order
 
 1. `/CHATGPT_START_HERE.md` — controlling repository stewardship protocol.
-2. `RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md` — latest RICPE/AEAT/idoneidad Series F/G track and deletion audit.
-3. `THREAD_HANDOVER_2026-08-15.md` — integrated state of wider work.
-4. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
-5. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
-6. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
-7. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
-8. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
-9. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
-10. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
-11. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
-12. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
-13. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
-14. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
-15. `REUSABLE_PROMPTS.md` — reusable prompts.
-16. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
-17. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
+2. `RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md` — merged/live/deletion-safety evidence for the current RICPE Series F/G track.
+3. `RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md` — detailed RICPE/AEAT/idoneidad Series F/G handover and unresolved actions.
+4. `THREAD_HANDOVER_2026-08-15.md` — integrated state of wider work.
+5. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
+6. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
+7. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
+8. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
+9. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
+10. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
+11. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
+12. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
+13. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
+14. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
+15. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
+16. `REUSABLE_PROMPTS.md` — reusable prompts.
+17. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
+18. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
 
 ## Core rules
 

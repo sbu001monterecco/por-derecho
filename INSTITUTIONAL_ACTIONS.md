@@ -4,9 +4,13 @@ Public, source-controlled follow-up items arising from the Sun Park operator-his
 
 ## RIC / MYND Yaiza idoneidad reconciliation — opened 18 August 2026
 
-Status: open — public question ledger published on working branch
+Status: open on the merits — public question ledger merged in PR #390 and live verified on GitHub Pages
 Owner: legal team / Gil Marer
 Core issue: reconcile Decree 224/2022, the AEAT binding report of 17 November 2022, RICPE Series F (€1,598,849.32 — Hotel MYND Yaiza) and Series G (€4,974,853.78 — MYND Yaiza employment creation), and the timing/use of the Series F financing.
+Publication merge: `1ac8284e6d7ef0c8f23f2bcca3dbf09f5bf3b0f8` · 18 August 2026 19:49:17 UTC
+Live verification: workflow run `32179092774` · 18 August 2026 19:52:52 UTC · ES/EN pages, publication JS, dedicated sitemap and robots entry all HTTP 200 with required markers present.
+Canonical pages: `/es/ricpe-idoneidad-series-f-g/` · `/en/ricpe-idoneidad-series-f-g/`
+Deletion/continuity closeout: `archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md`
 
 ### Evidence boundary
 
