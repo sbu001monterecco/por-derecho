@@ -30,7 +30,7 @@ El anuncio administrativo identifica:
 ## 3. Venta de Sun Park por Montelanza — Alimarket 16/07/2008
 
 **Fuente sectorial contemporánea:**  
-https://www.alimarket.es/hoteles/noticia/4433/monte-lanza-vende-el-aparthotel--sun-park--a-la-inversora-israeli-multimatrix
+https://www.alimarket.es/hoteles/noticia/m3292003/monte-lanza-vende-el-aparthotel--sun-park--a-la-inversora-israeli-multimatrix
 
 La información publicada describe la venta, en junio de 2008, del apartahotel Sun Park (220 apartamentos) por Montelanza al vehículo Luchy Playa Blanca y señala que Montelanza mantenía otros activos Sun en Playa Blanca, incluyendo **Sun Royal** y **Sun Tropical-Island**; este último aparece vinculado a su filial Inversiones Turísticas Playa Blanca.
 
@@ -39,7 +39,7 @@ La información publicada describe la venta, en junio de 2008, del apartahotel S
 ## 4. Origen Sun Group / cinco complejos de Playa Blanca — Tourinews 06/05/2022
 
 **Fuente periodística sectorial:**  
-https://www.tourinews.es/resumen-de-prensa/notas-de-prensa-empresas-turismo/fallece-jose-sanchez-fundador-jsp-apartahoteles-sun-group_4469690_102.html
+https://www.tourinews.es/empresas-turismo/canarias-lanzarote-jose-sanchez-jsp-turismo-apartahoteles_4468849_102.html
 
 La pieza sobre José Sánchez Rodríguez, fundador junto a su padre José Sánchez Peñate de JSP, recoge el testimonio del antiguo directivo Luis Rivero, que atribuye a Sánchez el impulso, diseño y construcción de cinco complejos de Playa Blanca agrupados bajo **Sun Group**:
 
@@ -51,7 +51,20 @@ La pieza sobre José Sánchez Rodríguez, fundador junto a su padre José Sánch
 
 **Utilidad:** sustenta la caracterización de JSP/Sun Group como perímetro fundador/desarrollador de los complejos Sun de Playa Blanca.
 
-## 5. Explobeach — gobierno societario (BORME 2015)
+## 5. Montelanza — gobierno societario JSP/Molina (BORME 2015)
+
+**Fuente oficial:** Boletín Oficial del Registro Mercantil, actos inscritos de Las Palmas, 27/10/2015, acto 431396.  
+https://www.boe.es/borme/dias/2015/10/27/pdfs/BORME-A-2015-205-35.pdf
+
+Al documentar la disolución voluntaria y nombramiento de liquidador de **MONTE LANZA SOCIEDAD LIMITADA EN LIQUIDACIÓN**, el BORME registra el cese de su órgano anterior e identifica como consejeros, entre otros, a:
+
+- **José Sánchez Rodríguez**;
+- **Anastasio Molina López**;
+- **José Vicente Llinares Dorta**.
+
+**Utilidad:** aporta prueba primaria de superposición de gobierno entre la figura central de JSP/Sun Group y Montelanza, además del vínculo Molina. Refuerza la conveniencia de tratar Montelanza como vehículo íntimamente integrado en ese perímetro histórico, aunque no convierte por sí solo a Montelanza en filial formal de JSP.
+
+## 6. Explobeach — gobierno societario (BORME 2015)
 
 **Fuente oficial:** Boletín Oficial del Registro Mercantil.  
 https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-230-35
@@ -60,7 +73,7 @@ La publicación registra, entre otros movimientos, ceses de José Sánchez Rodr�
 
 **Utilidad:** aporta una fuente primaria adicional sobre la gobernanza de otra sociedad del perímetro cuya mayoría fue objeto de preguntas formales por accionistas de JSP en 2017.
 
-## 6. CAM → Hotel New Trend — escisión 2022 (BORME)
+## 7. CAM → Hotel New Trend — escisión 2022 (BORME)
 
 **Fuente oficial:** Boletín Oficial del Registro Mercantil.  
 https://www.boe.es/diario_borme/txt.php?id=BORME-C-2022-7271&lang=es
@@ -75,10 +88,18 @@ El anuncio de escisión describe la transmisión en bloque por sucesión univers
 
 Project Sun Rock utiliza **“near subsidiary / cuasi-filial” exclusivamente como término analítico de perímetro**, no como afirmación de que Montelanza fuera una filial formal de JSP conforme al Derecho mercantil.
 
-La hoja interna de reconstrucción `Monte Lanza Accionistas` atribuye a José Sánchez Peñate, S.A. un **26,82%** y la muestra como la mayor participación individual identificada en esa reconstrucción, junto con otras sociedades/personas del perímetro. Esa hoja no demuestra por sí sola:
+La caracterización analítica descansa ahora en varias capas que deben leerse conjuntamente:
 
-- una participación directa superior al 50%;
-- control formal societario;
+1. JSP/Sun Group aparece en las fuentes públicas como impulsor del desarrollo de los cinco complejos Sun de Playa Blanca;
+2. Montelanza figura oficialmente como titular de Sun Park y como vendedor en 2008, manteniendo otros activos Sun;
+3. el BORME de 2015 identifica a **José Sánchez Rodríguez como consejero de Montelanza**, junto con Anastasio Molina López y José Vicente Llinares Dorta;
+4. la hoja interna de reconstrucción `Monte Lanza Accionistas` atribuye a José Sánchez Peñate, S.A. un **26,82%**, la mayor participación individual identificada en esa reconstrucción;
+5. en 2017 accionistas de JSP seguían exigiendo explicaciones sobre la venta de Sun Park y sociedades hoteleras relacionadas.
+
+Estas capas justifican una hipótesis fuerte de **perímetro económico y de gobierno estrechamente integrado**, pero todavía no demuestran por sí solas:
+
+- una participación directa JSP superior al 50%;
+- control formal societario conforme a una definición jurídica concreta;
 - grupo mercantil en sentido técnico;
 - actuación concertada de los demás socios.
 
