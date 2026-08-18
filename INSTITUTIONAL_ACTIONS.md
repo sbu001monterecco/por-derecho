@@ -2,6 +2,58 @@
 
 Public, source-controlled follow-up items arising from the Sun Park operator-history review. This tracker records documentary requests; it does not state that an authority has accepted the underlying legal position.
 
+## RIC / MYND Yaiza idoneidad reconciliation — opened 18 August 2026
+
+Status: open — public question ledger published on working branch
+Owner: legal team / Gil Marer
+Core issue: reconcile Decree 224/2022, the AEAT binding report of 17 November 2022, RICPE Series F (€1,598,849.32 — Hotel MYND Yaiza) and Series G (€4,974,853.78 — MYND Yaiza employment creation), and the timing/use of the Series F financing.
+
+### Evidence boundary
+
+- RICPE audited 2023 accounts identify Series F (253 shares; €1,598,849.32) and Series G (785 shares; €4,974,853.78) as separate MYND Yaiza series and record participatory financing to Hotel New Trend, S.L. for the corresponding amounts.
+- The same controlled accounting record reports Government of the Canary Islands idoneidad on 1 December 2022, reform financing in 2022, hotel opening after reform/transformation on 16 December 2022 and the later employment phase in 2023.
+- The official 1 December 2022 Council of Government agenda records approval, as F.O.D. 25, of the draft decree declaring the idoneidad of the financial instruments referred to in RIC Private Equity Investment Partners, S.C.R., S.A.'s application.
+- Article 15 of Royal Decree 1758/2007 requires the application to identify the project entities, describe the project and RIC eligibility, state the implementation period and describe the financial instruments; it also requires a binding AEAT report.
+- These facts do not establish illegality. The unresolved question is the exact scope of the application/report/decree and the economic use/timing of each financing phase.
+
+### Gobierno de Canarias / Consejo de Gobierno
+
+- Obtain the full Decree 224/2022, including annexes and any stable public version.
+- Ask whether the decree covered Series F, Series G or both, and identify any amendment, second decree, supplementary declaration or parallel act.
+- Obtain the proposal elevated to the Council of Government and the documents identifying the instruments, amounts, entities, project timetable and authorised uses.
+- If a separate or amended authorisation does not exist, request formal identification of the legal/documentary basis on which each phase was treated as covered.
+
+### Servicio de Política Tributaria / Viceconsejería de Hacienda
+
+- Treat expediente 02/2022 as the canonical administrative file unless corrected by the authority.
+- Request the complete file index first, then the original RICPE application, project memorandum, AEAT referral, requests for clarification, internal reports, proposal, final act, notifications and amendments.
+- On 10 August 2026, Resolution 28/2026 refused the 7 July access request in full. The resolution itself identifies Decree 224/2022, expediente 02/2022 and the AEAT report of 17 November 2022 as procedural antecedents.
+- An appeal to the Canary Islands Transparency Commissioner was filed on 11 August 2026 (appeal file 12/2026-0710092416), seeking category-by-category review, an index, partial/segregable access, metadata and competent transfers.
+- Prepare a short supplementary submission to that existing appeal: place the now-controlled Series F/G split and 16 December 2022 opening chronology before the Commissioner and ask expressly whether the application/report/decree covered F, G or both. Do not duplicate the entire 7 July request.
+
+### AEAT
+
+- Keep the state AEAT route separate from the Canary Islands administrative idoneidad file.
+- The 7 July 2026 AEAT access request seeks the 17 November 2022 binding report, antecedents, metadata and related traceability.
+- Current Gmail/File Library audit has not located a substantive AEAT transparency response to that request. Do not call this formal silence until receipt by the competent body, any extension and any third-party procedure have been checked.
+- Ask specifically whether the binding report assessed Series F, Series G or both; whether any 2021 report/antecedent existed; and how any already-incurred refurbishment expenditure, outstanding liabilities, permitted reimbursement or bridge financing was treated.
+- Seek segregable institutional/project information and metadata before protected individual taxpayer information.
+
+### CNMV / RICPE governance
+
+- Ask CNMV/RICPE to reconcile Series F and G with the idoneidad file, investor disclosures, corporate approvals, conflict declarations, abstentions and the Control Unit report.
+- Request the exact Series F use-of-funds trail: participatory-loan agreement, drawdowns, bank value dates, invoices, works certificates, supplier liabilities and any bridge financing/refinancing.
+- Request the same traceability for Series G employment financing and a reconciliation against other public support/employment commitments.
+- Maintain the right-of-reply rule: a verified explanation showing one authorisation covered both phases, a second act existed, or Series F validly financed eligible prior expenditure/outstanding liabilities must be published with equivalent prominence.
+
+### Public question
+
+The controlling public formulation is:
+
+> Did Decree 224/2022 and the AEAT binding report of 17 November 2022 expressly cover Series F (€1,598,849.32), Series G (€4,974,853.78), or both; and if Series F was refurbishment financing when the hotel was already at the point of opening after reform/transformation, which works, invoices, outstanding liabilities, eligible prior expenditure, permitted reimbursement or bridge financing did it actually finance?
+
+This is a documentary reconciliation question, not a finding of fraud, double financing or tax irregularity.
+
 ## Operator-history certification — opened 13 August 2026
 
 Status: open
