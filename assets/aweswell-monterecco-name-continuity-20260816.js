@@ -18,6 +18,15 @@
     cexpModule.dataset.cexpProductiveUnitValueLoader = 'true';
     document.head.appendChild(cexpModule);
   }
+  // Contemporaneous 2015–2018 attempt chain: public-safe chronology of AC responses,
+  // stamped/presentation metadata, CEXP accounting knowledge, expert work and judicial/AC follow-up.
+  if (currentScript && !document.querySelector('script[data-cexp-productive-unit-attempt-chain-loader]')) {
+    const attemptModule = document.createElement('script');
+    attemptModule.src = new URL('cexp-productive-unit-attempt-chain-20260818.js?v=20260818a', currentScript.src).href;
+    attemptModule.async = false;
+    attemptModule.dataset.cexpProductiveUnitAttemptChainLoader = 'true';
+    document.head.appendChild(attemptModule);
+  }
 
   const path = window.location.pathname.replace(/\/+$/, '/');
   const isEnglish = path.endsWith('/en/lender-of-record/');
