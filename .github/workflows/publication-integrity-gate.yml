@@ -31,5 +31,7 @@ jobs:
           GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
           GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: python scripts/validate_publication_integrity.py
+      - name: Validate operational control-plane invariants
+        run: python scripts/validate_operational_items.py
       - name: Validate mission-critical repository invariants
         run: python scripts/validate_mission_critical_repo.py
