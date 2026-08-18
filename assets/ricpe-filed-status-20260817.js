@@ -25,21 +25,21 @@
   }
   setTimeout(apply, 250);
 
-  // 18-Aug-2026: load the progressive, bilingual reader journey after the controlled filing-status layer.
-  if (currentScript && !document.querySelector('script[data-psr-reader-journey]')) {
-    const journey = document.createElement('script');
-    journey.src = new URL('reader-journey-20260818.js?v=20260818a', currentScript.src).href;
-    journey.async = false;
-    journey.dataset.psrReaderJourney = '20260818';
-    document.head.appendChild(journey);
-  }
+  const load = (filename, marker, version) => {
+    if (!currentScript || document.querySelector(`script[${marker}]`)) return;
+    const script = document.createElement('script');
+    script.src = new URL(`${filename}?v=${version}`, currentScript.src).href;
+    script.async = false;
+    script.setAttribute(marker, version);
+    document.head.appendChild(script);
+  };
 
-  // Keep the first screen deliberately simple: three primary choices on RICPE and Community entry pages.
-  if (currentScript && !document.querySelector('script[data-psr-reader-journey-hero]')) {
-    const hero = document.createElement('script');
-    hero.src = new URL('reader-journey-hero-20260818.js?v=20260818a', currentScript.src).href;
-    hero.async = false;
-    hero.dataset.psrReaderJourneyHero = '20260818';
-    document.head.appendChild(hero);
-  }
+  // Progressive, bilingual reader journey after the controlled filing-status layer.
+  load('reader-journey-20260818.js', 'data-psr-reader-journey', '20260818b');
+
+  // Keep the first screen deliberately simple on RICPE and Community entry pages.
+  load('reader-journey-hero-20260818.js', 'data-psr-reader-journey-hero', '20260818b');
+
+  // Open-kimono practitioner standard, public-funds number reconciliation and cross-authority matrix.
+  load('practitioner-open-kimono-20260818.js', 'data-open-kimono-practitioner', '20260818b');
 })();
