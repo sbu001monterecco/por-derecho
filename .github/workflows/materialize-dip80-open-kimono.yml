@@ -1,0 +1,61 @@
+name: Materialize DIP 80 open-kimono casebook
+
+on:
+  push:
+    branches:
+      - agent/dip80-open-kimono-casebook-completion
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dip80-open-kimono-materialize
+  cancel-in-progress: false
+
+jobs:
+  materialize:
+    if: ${{ !contains(github.event.head_commit.message, '[materialized]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out controlled branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Expand controlled source payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f archive/dip80-open-kimono-bootstrap.tar.gz
+          tar -xzf archive/dip80-open-kimono-bootstrap.tar.gz
+          rm archive/dip80-open-kimono-bootstrap.tar.gz
+          # The final validation workflow is installed through the authenticated
+          # GitHub connector after materialisation, avoiding workflow-token scope ambiguity.
+          rm -f .github/workflows/validate-dip80-open-kimono.yml
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run hard 28-section acceptance audit
+        run: python scripts/validate_dip80_open_kimono.py
+
+      - name: Validate JavaScript syntax
+        run: node --check assets/dip80-open-kimono.js
+
+      - name: Commit materialized implementation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Materialize DIP 80 open-kimono living casebook [materialized]"
+          git push origin "HEAD:${{ github.ref_name }}"
