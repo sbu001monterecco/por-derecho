@@ -1,0 +1,40 @@
+{
+  "publication_id": "CGPJ-ALERT-IRREVERSIBILITY-VISUAL-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "CI_GREEN",
+  "controlling_pr": 394,
+  "expected_routes": {
+    "es": ["es/cgpj-alerta-irreversibilidad/index.html"],
+    "en": ["en/cgpj-alert-to-irreversibility/index.html"]
+  },
+  "expected_source_files": [
+    "archive/CGPJ_ALERT_TO_IRREVERSIBILITY_VISUAL_CONTROL_18AUG2026.md",
+    "sitemap-cgpj.xml",
+    "deployment-probes/cgpj-alert-irreversibility-20260818.txt"
+  ],
+  "release_probe": "deployment-probes/cgpj-alert-irreversibility-20260818.txt",
+  "release_probe_marker": "CGPJ-ALERT-IRREVERSIBILITY-LIVE-PROBE-20260818-V1",
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-alerta-irreversibilidad/": ["De la alerta a la irreversibilidad.", "CONSECUENCIA ≠ CONOCIMIENTO JUDICIAL HISTÓRICO", "EL RESULTADO NO RESPONDE EL ORIGEN"],
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/": ["From alert to irreversibility.", "CONSEQUENCE ≠ HISTORICAL JUDICIAL KNOWLEDGE", "THE RESULT DOES NOT ANSWER THE ORIGIN"]
+  },
+  "validation": {
+    "evidence": ["Publication integrity gate run 32180468160: success on PR 394 head f42cd77d59742848243b4a64376036d648d57d47 before CI-state promotion"]
+  },
+  "reader_contract": [
+    "Do not state that the judge never saw the RICPE material; distinguish admission/availability from substantive treatment",
+    "Show 2021 opposition by CAM and the Insolvency Administration without treating opposition as proof of wrongdoing",
+    "Use the 26 January 2022 to April 2022 sequence as tempo of implementation, not an established finding of unlawful rushing",
+    "Treat later RICPE/RIC, regional-incentive, FEDER and MYND layers as consequence/reliance unless historical incorporation is separately proved",
+    "Keep LPB insolvency-estate property separate from Matkator and third-party property/rights",
+    "Do not state a whitewashing purpose; use normalising/legitimising effect as an objective consequence question unless intent is independently proved",
+    "End with evidence capable of confirming, narrowing or defeating Por Derecho's interpretation"
+  ],
+  "publication_safety": {
+    "presumption": "No judicial prevarication, corruption, collusion, intentional whitewashing, funding misuse, double financing or criminal responsibility is stated as established.",
+    "knowledge_control": "External/later context is not attributed to the judge as historical knowledge without proved incorporation.",
+    "perimeter_control": "LPB was the insolvent debtor; Sun Park as a whole was not the insolvency estate; Matkator and third-party rights require independent title analysis.",
+    "missing_record_control": "Absence from the controlled Por Derecho corpus is not proof of non-existence."
+  },
+  "notes": "New bilingual visual satellite for the existing CGPJ reader-room architecture. It links to the canonical RICPE, Series F/G idoneidad, public-funds/FEDER, 7 June takeover/perimeter, judge and Insolvency Administrator dossiers. Historical CGPJ publication manifests remain unchanged."
+}
