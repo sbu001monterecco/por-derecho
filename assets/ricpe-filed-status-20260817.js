@@ -42,4 +42,5 @@
   load('reader-journey-20260818.js', 'data-psr-reader-journey', '20260818b');
   load('reader-journey-hero-20260818.js', 'data-psr-reader-journey-hero', '20260818b');
   load('practitioner-open-kimono-20260818.js', 'data-open-kimono-practitioner', '20260818b');
+  load('supervisory-practice-entrypoints-20260818.js', 'data-supervisory-practice-entrypoints', '20260818a');
 })();
