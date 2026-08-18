@@ -1,8 +1,9 @@
 {
   "publication_id": "CGPJ-ALERT-IRREVERSIBILITY-VISUAL-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "CI_GREEN",
+  "current_state": "MERGED",
   "controlling_pr": 394,
+  "merge_sha": "4cb7401cdfeee28ffb380eb66a093e59d03d9ccf",
   "expected_routes": {
     "es": ["es/cgpj-alerta-irreversibilidad/index.html"],
     "en": ["en/cgpj-alert-to-irreversibility/index.html"]
@@ -10,7 +11,9 @@
   "expected_source_files": [
     "archive/CGPJ_ALERT_TO_IRREVERSIBILITY_VISUAL_CONTROL_18AUG2026.md",
     "sitemap-cgpj.xml",
-    "deployment-probes/cgpj-alert-irreversibility-20260818.txt"
+    "deployment-probes/cgpj-alert-irreversibility-20260818.txt",
+    "scripts/verify_cgpj_alert_irreversibility_live.py",
+    ".github/workflows/verify-cgpj-alert-irreversibility-live.yml"
   ],
   "release_probe": "deployment-probes/cgpj-alert-irreversibility-20260818.txt",
   "release_probe_marker": "CGPJ-ALERT-IRREVERSIBILITY-LIVE-PROBE-20260818-V1",
@@ -19,7 +22,10 @@
     "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/": ["From alert to irreversibility.", "CONSEQUENCE ≠ HISTORICAL JUDICIAL KNOWLEDGE", "THE RESULT DOES NOT ANSWER THE ORIGIN"]
   },
   "validation": {
-    "evidence": ["Publication integrity gate run 32180468160: success on PR 394 head f42cd77d59742848243b4a64376036d648d57d47 before CI-state promotion"]
+    "evidence": [
+      "Publication integrity gate run 32180468160: success on PR 394 head f42cd77d59742848243b4a64376036d648d57d47",
+      "Publication integrity gate run 32180559403: success on final PR 394 head c2c5c3fe5c52d3194d12c0613e4ce9d3093b7909"
+    ]
   },
   "reader_contract": [
     "Do not state that the judge never saw the RICPE material; distinguish admission/availability from substantive treatment",
@@ -36,5 +42,5 @@
     "perimeter_control": "LPB was the insolvent debtor; Sun Park as a whole was not the insolvency estate; Matkator and third-party rights require independent title analysis.",
     "missing_record_control": "Absence from the controlled Por Derecho corpus is not proof of non-existence."
   },
-  "notes": "New bilingual visual satellite for the existing CGPJ reader-room architecture. It links to the canonical RICPE, Series F/G idoneidad, public-funds/FEDER, 7 June takeover/perimeter, judge and Insolvency Administrator dossiers. Historical CGPJ publication manifests remain unchanged."
+  "notes": "PR 394 is merged. This close-out branch adds a GitHub-hosted public Pages verifier and will promote state only after actual HTTP 200/marker evidence is recorded."
 }
