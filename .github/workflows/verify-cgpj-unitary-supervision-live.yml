@@ -47,9 +47,9 @@ jobs:
               ('es-reader', '/es/cgpj-comision-permanente-sala-lectura/', 'SIETE NÚCLEOS DE SUPERVISIÓN'),
               ('en-reader', '/en/cgpj-permanent-commission-reader-room/', 'SEVEN SUPERVISORY NUCLEI'),
               ('es-estate', '/es/cgpj-supervision-masa-activa/', 'Siete núcleos que deben leerse juntos'),
-              ('en-estate', '/en/cgpj-insolvency-estate-supervision/', 'Seven nuclei that must be read together'),
-              ('es-judge', '/es/concurso-36-2012-magistrado-juez/', 'Judicial Knowledge & Supervision Ledger'),
-              ('en-judge', '/en/insolvency-36-2012-mercantile-court-1/', 'Judicial Knowledge & Supervision Ledger'),
+              ('en-estate', '/en/cgpj-insolvency-estate-supervision/', 'Seven nuclei that should be read together'),
+              ('es-judge', '/es/concurso-36-2012-magistrado-juez/', 'Siete núcleos verificables'),
+              ('en-judge', '/en/insolvency-36-2012-mercantile-court-1/', 'Seven verifiable nuclei'),
           ]
           outdir = pathlib.Path('artifacts/cgpj-live-verification')
           outdir.mkdir(parents=True, exist_ok=True)
