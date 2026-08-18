@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-08-18T11:48:00Z",
+  "production_repository": "sbu001monterecco/por-derecho",
+  "production_branch": "main",
+  "public_host": "https://sbu001monterecco.github.io/por-derecho/",
+  "main_at_audit": "3ab3e55a86e1340bd574c9ee7988a592d3a90bbd",
+  "exact_live_sha": "UNKNOWN",
+  "last_live_verification": {
+    "state": "LIVE_VERIFIED_MINIMUM_OR_DESCENDANT",
+    "minimum_commit": "6deaba19d8db5c5c5e20f2965ae8ab7deb28d8de",
+    "verification_workflow_commit": "9204cba913d55b1c1f2c7f2979da305d6694cc51",
+    "workflow_run": "32127642260",
+    "verified_at": "2026-08-18T10:37:16.807622Z",
+    "evidence_record": "archive/PUBLIC_GITHUB_PAGES_PROPAGATION_VERIFICATION_18AUG2026.md"
+  },
+  "branch_protection": {
+    "observed": "PROTECTED_FLAG_WITH_ENFORCEMENT_OFF",
+    "required_status_checks": "NOT_ENFORCED",
+    "blocker": "GitHub repository/ruleset setting must be changed through an administrative settings surface; repository source alone cannot enforce it."
+  },
+  "publication_integrity_gate": "PRESENT_ON_MAIN",
+  "scheduled_production_monitor": "PENDING_HARDENING_MERGE",
+  "repository_recovery_bundle": "PENDING_HARDENING_MERGE",
+  "independent_backup": {
+    "state": "OPEN",
+    "required_secret": "POR_DERECHO_BACKUP_MIRROR_URL",
+    "restore_tested": false
+  },
+  "pages_deployment_mode": {
+    "state": "NOT_CHANGED_IN_THIS_PASS",
+    "reason": "Do not alter a functioning production deployment mechanism until a replacement is independently validated end-to-end."
+  },
+  "mission_critical_hardening": {
+    "state": "PR_PENDING",
+    "source_parent": "3ab3e55a86e1340bd574c9ee7988a592d3a90bbd"
+  }
+}

@@ -1,0 +1,16 @@
+# Production infrastructure
+/.github/workflows/ @sbu001monterecco
+/.github/dependabot.yml @sbu001monterecco
+/scripts/validate_publication_integrity.py @sbu001monterecco
+/scripts/validate_mission_critical_repo.py @sbu001monterecco
+/scripts/production_smoke_check.py @sbu001monterecco
+/ops/ @sbu001monterecco
+
+# High-blast-radius public paths
+/assets/site.js @sbu001monterecco
+/assets/styles.css @sbu001monterecco
+/assets/ricpe-filed-status-20260817.js @sbu001monterecco
+/es/index.html @sbu001monterecco
+/en/index.html @sbu001monterecco
+/robots.txt @sbu001monterecco
+/sitemap.xml @sbu001monterecco

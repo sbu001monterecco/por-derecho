@@ -1,0 +1,57 @@
+name: Repository recovery bundle
+
+on:
+  schedule:
+    - cron: '37 3 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-recovery-bundle
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BACKUP_MIRROR_URL: ${{ secrets.POR_DERECHO_BACKUP_MIRROR_URL }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Fetch all branches and tags
+        run: |
+          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git fetch origin --prune --tags --force
+      - name: Create and verify full Git recovery bundle
+        run: |
+          mkdir -p artifacts/repository-backup
+          BUNDLE="artifacts/repository-backup/por-derecho-${GITHUB_SHA}.bundle"
+          git bundle create "$BUNDLE" --all
+          git bundle verify "$BUNDLE"
+          sha256sum "$BUNDLE" > "$BUNDLE.sha256"
+          {
+            echo "repository=${GITHUB_REPOSITORY}"
+            echo "workflow_sha=${GITHUB_SHA}"
+            echo "created_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git show-ref
+          } > artifacts/repository-backup/refs.txt
+      - name: Upload same-platform recovery artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: por-derecho-repository-recovery-bundle
+          path: artifacts/repository-backup
+          if-no-files-found: error
+          retention-days: 90
+      - name: Mirror all refs to independent remote when configured
+        if: env.BACKUP_MIRROR_URL != ''
+        run: |
+          git push --mirror "$BACKUP_MIRROR_URL"
+      - name: Record independent-backup gap when mirror is not configured
+        if: env.BACKUP_MIRROR_URL == ''
+        run: |
+          echo "::warning::POR_DERECHO_BACKUP_MIRROR_URL is not configured. The Git bundle is recoverable but remains hosted inside GitHub and is not independent disaster recovery."
