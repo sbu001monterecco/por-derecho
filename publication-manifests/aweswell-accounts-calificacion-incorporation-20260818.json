@@ -1,8 +1,9 @@
 {
   "publication_id": "AWESWELL-ACCOUNTS-CALIFICACION-INCORPORATION-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "controlling_pr": 389,
+  "merge_sha": "8f1316895cdac16e2180b00e84edff57f179935d",
   "base_sha": "472d166886f4896ccc04a61b161fdaded0cc75f2",
   "expected_routes": {
     "es": [
@@ -29,6 +30,15 @@
   "publication_type": "bilingual dynamic cross-site evidential control",
   "mode": "source-based and procedurally qualified",
   "controlling_request": "Formally acknowledge the official Companies House filing; receive the filed English version, the Board-authorised Spanish translation, the filing record and supporting materials; admit, incorporate or otherwise receive them through the legally available route; test them against the primary record and independent forensic accounting; and give an express, reasoned determination on procedural status, relevance, scope and probative weight.",
+  "validation": {
+    "evidence": [
+      "PR 389 publication integrity run 32178330195: success",
+      "PR 389 publication/deletion-safety validation: success",
+      "PR 389 operational-control validation: success",
+      "PR 389 mission-critical repository validation: success",
+      "PR 389 merged to main at 8f1316895cdac16e2180b00e84edff57f179935d"
+    ]
+  },
   "live_markers_planned": {
     "english_full": [
       "Formal evidential request: acknowledge, incorporate and expressly assess",
@@ -75,7 +85,9 @@
   },
   "deletion_audit": {
     "path": "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md",
-    "current_result": "5 changed files; 587 additions; 0 deletions; 0 files deleted; 0 renames; no static public HTML overwritten.",
+    "repository_result": "PASS — 5 changed files; 599 additions; 0 line deletions; 0 files deleted; 0 renames; no static public HTML overwritten; merge comparison clean.",
+    "thread_status": "DELETION_SAFE_AT_REPOSITORY_LEVEL",
+    "public_edge_status": "PENDING_INDEPENDENT_READBACK",
     "required_invariants": [
       "no files deleted",
       "no routes removed",
@@ -95,5 +107,5 @@
     "Do not use consolidated as an independently verified technical conclusion beyond the filed title.",
     "Do not remove the adverse first-instance and pending-appeal status."
   ],
-  "notes": "PR 389 is open. The source module and controls exist on the PR branch. CI, merge and public GitHub Pages readback remain required before promotion beyond PR_OPEN."
+  "notes": "PR 389 is merged. The source module and controls are on main. Public GitHub Pages propagation and rendered-DOM marker readback have not been independently verified in this execution, so the manifest intentionally stops at MERGED rather than DEPLOYED, LIVE_VERIFIED or DELETION_SAFE."
 }
