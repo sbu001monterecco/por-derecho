@@ -18,28 +18,29 @@
     }
   };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(apply, 0), { once: true });
-  } else {
-    setTimeout(apply, 0);
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => setTimeout(apply, 0), { once: true });
+  else setTimeout(apply, 0);
   setTimeout(apply, 250);
 
-  // 18-Aug-2026: load the progressive, bilingual reader journey after the controlled filing-status layer.
-  if (currentScript && !document.querySelector('script[data-psr-reader-journey]')) {
-    const journey = document.createElement('script');
-    journey.src = new URL('reader-journey-20260818.js?v=20260818a', currentScript.src).href;
-    journey.async = false;
-    journey.dataset.psrReaderJourney = '20260818';
-    document.head.appendChild(journey);
+  if (currentScript && !document.querySelector('link[data-open-kimono-css]')) {
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = new URL('practitioner-open-kimono-20260818.css?v=20260818b', currentScript.src).href;
+    css.dataset.openKimonoCss = '20260818';
+    document.head.appendChild(css);
   }
 
-  // Keep the first screen deliberately simple: three primary choices on RICPE and Community entry pages.
-  if (currentScript && !document.querySelector('script[data-psr-reader-journey-hero]')) {
-    const hero = document.createElement('script');
-    hero.src = new URL('reader-journey-hero-20260818.js?v=20260818a', currentScript.src).href;
-    hero.async = false;
-    hero.dataset.psrReaderJourneyHero = '20260818';
-    document.head.appendChild(hero);
-  }
+  const load = (filename, marker, version) => {
+    if (!currentScript || document.querySelector(`script[${marker}]`)) return;
+    const script = document.createElement('script');
+    script.src = new URL(`${filename}?v=${version}`, currentScript.src).href;
+    script.async = false;
+    script.setAttribute(marker, version);
+    document.head.appendChild(script);
+  };
+
+  load('reader-journey-20260818.js', 'data-psr-reader-journey', '20260818b');
+  load('reader-journey-hero-20260818.js', 'data-psr-reader-journey-hero', '20260818b');
+  load('practitioner-open-kimono-20260818.js', 'data-open-kimono-practitioner', '20260818b');
+  load('supervisory-practice-entrypoints-20260818.js', 'data-supervisory-practice-entrypoints', '20260818a');
 })();
