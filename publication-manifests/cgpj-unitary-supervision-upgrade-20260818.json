@@ -1,0 +1,70 @@
+{
+  "publication_id": "CGPJ-UNITARY-SUPERVISION-UPGRADE-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "CI_GREEN",
+  "controlling_pr": 373,
+  "expected_routes": {
+    "es": [
+      "es/cgpj-comision-permanente-sala-lectura/index.html",
+      "es/cgpj-supervision-masa-activa/index.html",
+      "es/fuente-profesional-2018-conocimiento-concursal/index.html",
+      "es/concurso-36-2012-magistrado-juez/index.html",
+      "es/concurso-36-2012-administrador-concursal/index.html"
+    ],
+    "en": [
+      "en/cgpj-permanent-commission-reader-room/index.html",
+      "en/cgpj-insolvency-estate-supervision/index.html",
+      "en/2018-professional-source-insolvency-knowledge/index.html",
+      "en/insolvency-36-2012-mercantile-court-1/index.html",
+      "en/insolvency-36-2012-insolvency-administrator/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CGPJ_UNITARY_SUPERVISION_EVIDENCE_MAP_18AUG2026.md",
+    "sitemap-cgpj.xml"
+  ],
+  "validation": {
+    "evidence": [
+      "Publication integrity gate run 32158503633: success on PR 373 head ffc39951d2010dd9e33f56ea4be38b31e9937f37"
+    ]
+  },
+  "reader_contract": [
+    "Lead with the 14 May and 10 July adverse CGPJ archive record before Por Derecho objections",
+    "Make insolvency-estate protection and supervision of the Insolvency Administrator the controlling spine",
+    "Use seven supervisory nuclei rather than a list of adverse rulings",
+    "Separate direct judicial knowledge, Administrator knowledge/reporting duty and external/later context",
+    "Apply the knowledge -> supervisory power -> response -> consequence -> irreversibility test",
+    "Keep the LPAM/appearance-of-impartiality module separate from proof of the seven supervisory nuclei",
+    "Treat the approximate EUR9.052m -> EUR13.1m sequence as a reconciliation question, not an established irregularity",
+    "Treat 24 October 2019 -> 2021 -> 2022 as a title/accounting/implementation bridge requiring a primary act",
+    "Publish Daniel Irigoyen material as a provenance/status ledger only; do not publish privileged correspondence wholesale",
+    "Preserve lawful alternative explanations and change classification when primary records require it"
+  ],
+  "current_legal_controls_checked": {
+    "date": "2026-08-18",
+    "sources": [
+      "BOE TRLC Article 82: Insolvency Administration subject to supervision of the insolvency judge; judge may require specific information",
+      "BOE TRLC Article 100: removal for just cause; current wording includes serious breach of diligence, impartiality or independence",
+      "LOPJ Article 608: appeal to Permanent Commission from Promotor archive/non-initiation; Commission may order initiation/continuation",
+      "CGPJ Inspection Service: under Permanent Commission, checking and controlling functioning of judicial services"
+    ],
+    "historical_warning": "Current TRLC provisions are not applied retroactively to 2018 facts; law in force at each historical date controls. Current provisions are used only as systemic/current institutional anchors."
+  },
+  "publication_safety": {
+    "presumption": "No judicial prevaricacion, corruption, collusion, bias or disciplinary/criminal responsibility is stated as established.",
+    "professional_source": "Full legal-adviser communications remain source-gated unless separately cleared; public pages show date, provenance, verification proposition and evidential limit only.",
+    "personal_data": "No private phone numbers, unnecessary personal contact data or raw witness personal data are introduced.",
+    "knowledge_control": "Administrator knowledge is not attributed automatically to the judge; external context is not treated as historical judicial knowledge without proved incorporation.",
+    "missing_record_control": "Absence from Por Derecho's corpus is not stated as proof of non-existence."
+  },
+  "concurrent_main_reconciliation": {
+    "main_commit": "d294e71fbae40aecdffecca3d011185307c56cd5",
+    "dp1956_control": "The ES/EN Insolvency Administrator pages were reset to the current-main DP 1956-corrected versions; deeper AC-supervision analysis is carried by the CGPJ reader and estate-supervision routes."
+  },
+  "discoverability": {
+    "dedicated_sitemap": "sitemap-cgpj.xml",
+    "robots_registration_already_exists": true,
+    "homepage_feature": false
+  },
+  "notes": "CI was green on the prior PR head; this manifest-state commit must itself pass the publication integrity gate before merge. Do not call the upgrade merged, deployed or live-verified until each state is evidenced."
+}
