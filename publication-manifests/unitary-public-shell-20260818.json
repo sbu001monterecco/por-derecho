@@ -5,12 +5,13 @@
   "publication_type": "bilingual unitary reader shell, canonical control room and controlled site search",
   "purpose": "Compress and orchestrate the existing evidence system without replacing dossier ownership, evidential status controls or primary-source records.",
   "expected_routes": {
-    "en": ["en/case-control-room/index.html", "en/search/index.html"],
+    "en": ["en/case-control-room/index.html", "en/search/index.html", "en/dp-1901-2026/index.html"],
     "es": ["es/sala-control-caso/index.html", "es/buscar/index.html"]
   },
   "expected_source_files": [
     "assets/unitary-public-shell-20260818.js",
     "assets/unitary-public-shell-20260818.css",
+    "assets/unitary-public-shell-20260818.a11y.css",
     "assets/data/unitary-route-registry-v1.json",
     "assets/share-controls-20260817.js",
     "sitemap-unitary-shell.xml",
@@ -24,6 +25,7 @@
     "Registered title, CEXP participation, LPB insolvency estate, material control, financing and institutional supervision remain distinct systems.",
     "A documented gap is not culpability and silence is not treated as proof of wrongdoing.",
     "Search results are discovery metadata; evidential status remains controlled by the canonical destination page and primary sources.",
+    "DP 1901/2026, DIP 2/2026 and DP 1956/2026 remain separate procedural references unless a primary record expressly connects them for a defined purpose.",
     "Corrections, contrary evidence and evidence capable of defeating Por Derecho's interpretation receive visible treatment.",
     "Existing dossier ownership and all stronger non-overclaim controls remain in force."
   ],
@@ -48,6 +50,7 @@
       "homepage navigation is consolidated",
       "Control Room exposes six systems",
       "CEXP search returns a relevant controlled result",
+      "DP 1901 English routing remains distinct from DIP 2/2026 and DP 1956/2026",
       "new routes have no duplicate IDs",
       "tested routes do not introduce horizontal overflow",
       "screenshots and machine-readable result are uploaded as a workflow artifact"
