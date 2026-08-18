@@ -1,0 +1,69 @@
+{
+  "id": "ricpe-idoneidad-series-f-g-20260818",
+  "title_es": "RICPE · Decreto 224/2022 · Series F/G · preguntas públicas",
+  "title_en": "RICPE · Decree 224/2022 · Series F/G · public questions",
+  "published_question_date": "2026-08-18",
+  "canonical_es": "/es/ricpe-idoneidad-series-f-g/",
+  "canonical_en": "/en/ricpe-idoneidad-series-f-g/",
+  "status": "open_documentary_question",
+  "editorial_rule": "A documentary gap is not culpability; a party explanation is not fact without source; verified corrections receive equivalent prominence.",
+  "controlled_propositions": [
+    {
+      "status": "documented",
+      "proposition": "RICPE audited 2023 accounts identify Series F — Hotel MYND Yaiza — 253 shares, total issue EUR 1,598,849.32."
+    },
+    {
+      "status": "documented",
+      "proposition": "RICPE audited 2023 accounts identify Series G — MYND Yaiza Employment Creation — 785 shares, total issue EUR 4,974,853.78."
+    },
+    {
+      "status": "representation_in_audited_accounts",
+      "proposition": "The controlled accounting record reports Canary Islands Government idoneidad on 1 December 2022, reform financing in 2022 and hotel opening after reform/transformation on 16 December 2022."
+    },
+    {
+      "status": "official_public_record",
+      "proposition": "The Canary Islands Council of Government agenda of 1 December 2022 records approval at F.O.D. 25 of a draft decree declaring the idoneidad of the financial instruments referred to in an application by RIC Private Equity Investment Partners, S.C.R., S.A."
+    },
+    {
+      "status": "procedural_fact",
+      "proposition": "Resolution 28/2026 of 10 August 2026 refused the 7 July Canary Islands access request in full and identifies Decree 224/2022, administrative file 02/2022 and the AEAT binding report of 17 November 2022 as procedural antecedents."
+    },
+    {
+      "status": "procedural_fact",
+      "proposition": "An appeal against Resolution 28/2026 was filed with the Canary Islands Transparency Commissioner on 11 August 2026, file 12/2026-0710092416."
+    }
+  ],
+  "central_questions": [
+    "Did Decree 224/2022 and the AEAT binding report of 17 November 2022 cover Series F, Series G, or both?",
+    "Did a second, amended, supplementary or parallel idoneidad/report exist?",
+    "What exact works, invoices, outstanding liabilities, prior eligible expenditure, permitted reimbursement or bridge financing did the EUR 1,598,849.32 Series F participatory financing fund?",
+    "How were Series F/G reconciled with any other public aid, incentives, employment commitments or financing layers?"
+  ],
+  "competent_answer_holders": [
+    "Canary Islands Council of Government",
+    "Servicio de Política Tributaria / Viceconsejería de Hacienda",
+    "AEAT",
+    "CNMV",
+    "RIC Private Equity Investment Partners / Board / Control Unit",
+    "Hotel New Trend, S.L. / Construcciones Acosta Matos, S.A."
+  ],
+  "public_sources": [
+    {
+      "name": "Canary Islands Council of Government agenda — 1 December 2022",
+      "url": "https://www.gobiernodecanarias.org/cmsgob1/export/sites/transparencia/temas/accion-gobierno-normativa/consejo-gobierno/acuerdos/doc/2022/diciembre/48-orden-del-dia-gobierno-1-diciembre.pdf"
+    },
+    {
+      "name": "Royal Decree 1758/2007, Article 15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-745"
+    },
+    {
+      "name": "Canary Islands official RIC supervision procedure",
+      "url": "https://sede.gobiernodecanarias.org/sede/procedimientos_servicios/tramites/6143"
+    }
+  ],
+  "private_source_boundary": [
+    "Unredacted Resolution 28/2026 contains personal data and is not placed in the public repository here.",
+    "Unredacted Transparency Commissioner appeal contains personal data and is not placed in the public repository here.",
+    "Private voice-note attribution and confidential RICPE communications are not reproduced in this public manifest."
+  ]
+}
