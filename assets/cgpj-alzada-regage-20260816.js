@@ -2,6 +2,14 @@
   const path = window.location.pathname;
   const integrationMarker = 'CGPJ_ALERT_VISUAL_INTEGRATION_V1';
 
+  const isAlertVisual = path.includes('/es/cgpj-alerta-irreversibilidad/') || path.includes('/en/cgpj-alert-to-irreversibility/');
+  if (isAlertVisual && !document.querySelector('style[data-cgpj-alert-contrast-fix]')) {
+    const contrastStyle = document.createElement('style');
+    contrastStyle.dataset.cgpjAlertContrastFix = 'CGPJ_ALERT_CONTRAST_FIX_V1';
+    contrastStyle.textContent = '.hero-map .rule{color:#13252d}.hero-map .rule strong{color:inherit}';
+    document.head.appendChild(contrastStyle);
+  }
+
   const isSpanish = path.includes('/es/');
   const isEnglish = path.includes('/en/');
   const visualHref = isSpanish
