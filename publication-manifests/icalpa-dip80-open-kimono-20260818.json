@@ -1,7 +1,7 @@
 {
   "publication_id": "ICALPA-DIP80-OPEN-KIMONO-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "CI_GREEN",
   "controlling_branch": "agent/dip80-living-casebook-completion",
   "controlling_pr": 383,
   "expected_routes": {
@@ -38,7 +38,7 @@
   "validation": {
     "evidence": [
       "Local deterministic gate: 14 routes, 13 evidence records, 24 decision nodes, 28/28 master controls.",
-      "Publication integrity gate run #60 succeeded before final branching enhancement; a fresh run on the final PR head is required before merge.",
+      "GitHub Publication integrity gate run #66 completed successfully on PR #383 after the decision-tree branching and operational-control updates.",
       "Structured-data source and application JavaScript pass Node syntax validation."
     ],
     "browser_note": "Local Chromium navigation is administrator-blocked in the execution environment; deployment and live/mobile smoke verification remain mandatory before LIVE_VERIFIED."
