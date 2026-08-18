@@ -12,19 +12,9 @@
       "owner": "sbu001monterecco",
       "last_verified_at": "2026-08-18",
       "review_by": "2026-08-19",
-      "tracking": {
-        "github_issue": 355
-      },
-      "blocks": {
-        "publication": false,
-        "repository_hardening": true,
-        "security_assurance": true,
-        "deletion_safety": false
-      },
-      "evidence": [
-        "main reports protected=true but required status-check enforcement off with empty contexts/checks",
-        "prior empirical test proved PR-only protection on the tested path but not required-CI-before-merge enforcement"
-      ],
+      "tracking": {"github_issue": 355},
+      "blocks": {"publication": false,"repository_hardening": true,"security_assurance": true,"deletion_safety": false},
+      "evidence": ["main reports protected=true but required status-check enforcement off with empty contexts/checks","prior empirical test proved PR-only protection on the tested path but not required-CI-before-merge enforcement"],
       "next_action": "Configure the strongest supported main ruleset so Publication integrity gate / publication-integrity is required before merge, then empirically retest and preserve the settings evidence.",
       "closure_test": "Issue #355 may close only after a fresh GitHub read proves required CI is enforced and the selected force-push/deletion/review/bypass controls are actually active."
     },
@@ -32,27 +22,15 @@
       "id": "OPS-2026-002",
       "title": "Materialize and publish the dedicated DIP 80/2026 living casebook",
       "severity": "P0",
-      "status": "BLOCKED",
+      "status": "OPEN",
       "owner": "sbu001monterecco",
       "last_verified_at": "2026-08-18",
       "review_by": "2026-08-19",
-      "tracking": {
-        "github_pr": 366,
-        "publication_manifest": "publication-manifests/icalpa-dip80-open-kimono-20260818.json"
-      },
-      "blocks": {
-        "publication": true,
-        "repository_hardening": false,
-        "security_assurance": false,
-        "deletion_safety": false
-      },
-      "evidence": [
-        "PR #366 remains open and unmerged",
-        "Diagnose DIP 80 payload inventory succeeded on head c66499fb4ebfe69a868e1df678f80b2b98670377",
-        "Materialise DIP 80 living casebook and Publication integrity gate failed on that head"
-      ],
-      "next_action": "Recover or materialize the complete ordinary source tree, validate all 14 ES/EN routes and case-specific controls, rebase/update from current main, obtain green CI, merge, deploy and directly verify the public routes.",
-      "closure_test": "Close only after ordinary source exists in Git, case-specific and universal gates pass, the controlling PR merges, Pages deploys and the intended ES/EN routes are directly live-verified."
+      "tracking": {"github_pr": 383,"publication_manifest": "publication-manifests/icalpa-dip80-open-kimono-20260818.json"},
+      "blocks": {"publication": true,"repository_hardening": false,"security_assurance": false,"deletion_safety": false},
+      "evidence": ["Ordinary reviewable source for all fourteen dedicated ES/EN casebook routes exists on branch agent/dip80-living-casebook-completion","PR #383 is the controlling completion PR","Publication integrity gate run #60 succeeded on an earlier PR head; final-head CI, merge, Pages deployment and live verification remain required"],
+      "next_action": "Obtain green CI on the final PR #383 head, merge, verify the casebook on main, verify GitHub Pages and directly smoke-test the intended ES/EN routes and mobile/internal navigation.",
+      "closure_test": "Close only after ordinary source exists on main, case-specific and universal gates pass, PR #383 merges, Pages deploys and the intended ES/EN routes are directly live-verified with responsive/internal-navigation smoke evidence."
     },
     {
       "id": "OPS-2026-003",
@@ -62,20 +40,9 @@
       "owner": "sbu001monterecco",
       "last_verified_at": "2026-08-18",
       "review_by": "2026-08-19",
-      "tracking": {
-        "github_issue": 377
-      },
-      "blocks": {
-        "publication": false,
-        "repository_hardening": false,
-        "security_assurance": true,
-        "deletion_safety": false
-      },
-      "evidence": [
-        "codex-security is listed as available but not installed",
-        "mandatory codex-security-access dependency resolves as no_unique_canonical_plugin",
-        "UI reports connector not found"
-      ],
+      "tracking": {"github_issue": 377},
+      "blocks": {"publication": false,"repository_hardening": false,"security_assurance": true,"deletion_safety": false},
+      "evidence": ["codex-security is listed as available but not installed","mandatory codex-security-access dependency resolves as no_unique_canonical_plugin","UI reports connector not found"],
       "next_action": "Recheck account/workspace availability for Codex Security Access, connect Codex Security when the mandatory dependency resolves, then run and preserve at least one real Por Derecho scan.",
       "closure_test": "Issue #377 closes only after the access connector resolves, Codex Security is connected, a real Por Derecho scan completes and any actionable findings are linked to repository remediation."
     },
@@ -87,20 +54,9 @@
       "owner": "sbu001monterecco",
       "last_verified_at": "2026-08-18",
       "review_by": "2026-08-19",
-      "tracking": {
-        "github_issue": 378,
-        "repository_file": "archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md"
-      },
-      "blocks": {
-        "publication": false,
-        "repository_hardening": true,
-        "security_assurance": false,
-        "deletion_safety": false
-      },
-      "evidence": [
-        "the controlling rule is preserved in Git",
-        "actual installation in ChatGPT Project settings has not yet been independently verified"
-      ],
+      "tracking": {"github_issue": 378,"repository_file": "archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md"},
+      "blocks": {"publication": false,"repository_hardening": true,"security_assurance": false,"deletion_safety": false},
+      "evidence": ["the controlling rule is preserved in Git","actual installation in ChatGPT Project settings has not yet been independently verified"],
       "next_action": "Install the compact publication-truth rule in the Por Derecho Project configuration and run a fresh-chat adversarial test against a deliberately unmerged/unlive work item.",
       "closure_test": "Issue #378 closes only after the rule is installed and a fresh test chat performs current GitHub/deployment verification and refuses to infer a later publication state."
     },
@@ -112,24 +68,12 @@
       "owner": "sbu001monterecco",
       "last_verified_at": "2026-08-18",
       "review_by": "2026-08-25",
-      "tracking": {
-        "github_issue": 356
-      },
-      "blocks": {
-        "publication": false,
-        "repository_hardening": false,
-        "security_assurance": false,
-        "deletion_safety": false
-      },
-      "evidence": [
-        "issue #356 closed after a restore-tested full Git bundle and off-GitHub Google Drive copy/readback were recorded",
-        "recurring refresh remains an operational health control"
-      ],
+      "tracking": {"github_issue": 356},
+      "blocks": {"publication": false,"repository_hardening": false,"security_assurance": false,"deletion_safety": false},
+      "evidence": ["issue #356 closed after a restore-tested full Git bundle and off-GitHub Google Drive copy/readback were recorded","recurring refresh remains an operational health control"],
       "next_action": "Continue the recurring backup refresh and periodically re-run clean restore, git fsck, ref comparison and static-site validation from an independent copy.",
       "closure_test": "This is a continuing control rather than a one-time closure; move to CLOSED only if the repository adopts a superseding documented recovery system with equivalent or stronger tested guarantees.",
-      "closure_evidence": [
-        "Initial disaster-recovery gap closed under issue #356; item remains MONITORING for ongoing health rather than unresolved setup."
-      ]
+      "closure_evidence": ["Initial disaster-recovery gap closed under issue #356; item remains MONITORING for ongoing health rather than unresolved setup."]
     }
   ]
 }
