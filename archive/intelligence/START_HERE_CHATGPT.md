@@ -18,6 +18,12 @@ Then read:
 
 The closeout records PR #390 merge evidence, independent live GitHub Pages verification, the five-source deletion audit and the deletion-safety verdict. The handover records the exact Series F/G question, Decree 224/2022 / AEAT access routes, the 11 August Transparency Commissioner appeal, the direct AEAT REGAGE/receipt status, website implementation, public/private boundaries and unresolved next actions. Together they are the controlling thread-specific continuity record for this issue; primary source verification remains mandatory.
 
+For the current **RSM Spain / legacy San Telmo / Ethics & Independence case NNR4-1025C2F66** track, also read:
+
+`RSM_NNR4_1025C2F66_THREAD_HANDOVER_AND_DELETION_CLOSEOUT_20260818.md`
+
+That file preserves the complete public-safe RSM chronology, Gmail/portal source dependency, the 18 August perimeter/preservation follow-up, the mandatory correction that DP 1956/2026 is under provisional dismissal rather than simply “open”, the San Telmo/RIC platform significance and evidential limits, preservation categories, public/private firewall, open questions and deletion-closeout gates. Exact correspondence must still be re-opened from Gmail or the RSM portal when verbatim wording matters.
+
 ## Mandatory publishing-continuity rule
 
 The project now maintains a **five-book working portfolio**. Do not force all new intelligence into `Reason to Believe`.
@@ -43,21 +49,22 @@ Do not create competing full manuscripts by default. Update canonical files.
 1. `/CHATGPT_START_HERE.md` — controlling repository stewardship protocol.
 2. `RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md` — merged/live/deletion-safety evidence for the current RICPE Series F/G track.
 3. `RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md` — detailed RICPE/AEAT/idoneidad Series F/G handover and unresolved actions.
-4. `THREAD_HANDOVER_2026-08-15.md` — integrated state of wider work.
-5. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
-6. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
-7. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
-8. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
-9. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
-10. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
-11. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
-12. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
-13. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
-14. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
-15. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
-16. `REUSABLE_PROMPTS.md` — reusable prompts.
-17. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
-18. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
+4. `RSM_NNR4_1025C2F66_THREAD_HANDOVER_AND_DELETION_CLOSEOUT_20260818.md` — RSM/San Telmo ethics-review handover, source boundaries, preservation strategy and deletion closeout.
+5. `THREAD_HANDOVER_2026-08-15.md` — integrated state of wider work.
+6. `EVIDENCE_AND_DEPOSITORY_ARCHITECTURE.md` — evidence model and publication discipline.
+7. `../book/BOOK_PORTFOLIO_LIVE.md` — **canonical five-book portfolio and separation rules**.
+8. `../book/BOOK_INTELLIGENCE_LIVE.md` — canonical Reason to Believe intelligence.
+9. `../book/REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md` — canonical living flagship manuscript.
+10. `../book/LAW_MOWER_MAN_CONCEPT_ANALYSIS.md` — Book 2 concept.
+11. `CORPUS_TOKEN_AUDIT.md` — corpus/token planning.
+12. `KNOWLEDGE_PROGRAMME_90D_12M.md` — execution plan.
+13. `BOOK_FOUNDATION_HAVIDIA_ARCHITECTURE.md` — institutional/commercial boundaries.
+14. `BOOK_PROMOTION_AND_COVER.md` — flagship promotion/cover architecture.
+15. `SUNROCKERS_HUMAN_STORY_AND_ETHOS.md` — SunRockers human history.
+16. `RESEARCH_DIRECTIONS_AND_OPEN_TRACKS.md` — comparative/NPL/Canary Islands research directions.
+17. `REUSABLE_PROMPTS.md` — reusable prompts.
+18. `DELETION_AND_CONTINUITY_GATE.md` — continuity/deletion gate.
+19. Public pages: `/en/books/`, `/es/libros/`, `/en/book/`, `/es/libro/`, `/en/knowledge-project/`, `/es/proyecto-conocimiento/`.
 
 ## Core rules
 
