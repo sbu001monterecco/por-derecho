@@ -1,7 +1,8 @@
 {
   "publication_id": "CGPJ-ALERT-IRREVERSIBILITY-VISUAL-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "CI_GREEN",
+  "controlling_pr": 394,
   "expected_routes": {
     "es": ["es/cgpj-alerta-irreversibilidad/index.html"],
     "en": ["en/cgpj-alert-to-irreversibility/index.html"]
@@ -16,6 +17,9 @@
   "live_markers": {
     "https://sbu001monterecco.github.io/por-derecho/es/cgpj-alerta-irreversibilidad/": ["De la alerta a la irreversibilidad.", "CONSECUENCIA ≠ CONOCIMIENTO JUDICIAL HISTÓRICO", "EL RESULTADO NO RESPONDE EL ORIGEN"],
     "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/": ["From alert to irreversibility.", "CONSEQUENCE ≠ HISTORICAL JUDICIAL KNOWLEDGE", "THE RESULT DOES NOT ANSWER THE ORIGIN"]
+  },
+  "validation": {
+    "evidence": ["Publication integrity gate run 32180468160: success on PR 394 head f42cd77d59742848243b4a64376036d648d57d47 before CI-state promotion"]
   },
   "reader_contract": [
     "Do not state that the judge never saw the RICPE material; distinguish admission/availability from substantive treatment",
