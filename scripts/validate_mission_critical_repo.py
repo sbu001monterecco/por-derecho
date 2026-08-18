@@ -27,6 +27,7 @@ REQUIRED_FILES = [
     "ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md",
     "ops/CRITICAL_PATHS.txt",
     "ops/PRODUCTION_STATUS.json",
+    "ops/LAST_KNOWN_GOOD.json",
     "ops/INCIDENT_TEMPLATE.md",
     "deployment-probes/mission-critical-hardening-20260818.json",
 ]
@@ -102,6 +103,18 @@ def validate_operational_files(errors: list[str]) -> None:
         exact_live = data.get("exact_live_sha")
         if exact_live not in {"UNKNOWN", None} and not re.fullmatch(r"[0-9a-f]{40}", str(exact_live)):
             error("ops/PRODUCTION_STATUS.json exact_live_sha must be UNKNOWN or a 40-char SHA", errors)
+
+    lkg_path = ROOT / "ops" / "LAST_KNOWN_GOOD.json"
+    if lkg_path.is_file():
+        try:
+            lkg = json.loads(lkg_path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            error(f"ops/LAST_KNOWN_GOOD.json invalid JSON: {exc}", errors)
+        else:
+            if lkg.get("state") != "LIVE_VERIFIED":
+                error("ops/LAST_KNOWN_GOOD.json must describe a LIVE_VERIFIED release", errors)
+            if not re.fullmatch(r"[0-9a-f]{40}", str(lkg.get("source_sha", ""))):
+                error("ops/LAST_KNOWN_GOOD.json source_sha must be a 40-char SHA", errors)
 
     critical = ROOT / "ops" / "CRITICAL_PATHS.txt"
     if critical.is_file():

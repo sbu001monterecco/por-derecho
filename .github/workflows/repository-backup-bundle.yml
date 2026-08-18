@@ -1,6 +1,10 @@
 name: Repository recovery bundle
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repository-backup-bundle.yml'
   schedule:
     - cron: '37 3 * * 0'
   workflow_dispatch:
