@@ -14,6 +14,16 @@
     d.head.appendChild(css);
   }
 
+  // Shared bridge for the source-controlled A&G / RICPE / San Telmo / RSM genealogy.
+  // The renderer is route-gated and is a no-op outside its defined ES/EN institutional surfaces.
+  if(script && !d.querySelector('script[data-pd-ricpe-santelmo-genealogy]')){
+    const genealogy=d.createElement('script');
+    genealogy.src=new URL('ricpe-santelmo-institutional-genealogy-20260818.js?v=20260818a',script.src).href;
+    genealogy.async=false;
+    genealogy.dataset.pdRicpeSantelmoGenealogy='true';
+    d.head.appendChild(genealogy);
+  }
+
   const lang=(d.documentElement.lang||'en').toLowerCase().startsWith('es')?'es':'en';
   const strings=lang==='es'?{
     label:'Compartir esta página',linkedin:'LinkedIn',whatsapp:'WhatsApp',email:'Email',copy:'Copiar enlace',copied:'Enlace copiado',copyPrompt:'Copiar enlace:'
