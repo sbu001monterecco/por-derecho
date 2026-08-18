@@ -4,7 +4,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 
 | Track | Canonical public surface / hub | Canonical internal control | Current state | Highest-value next evidence/action |
 |---|---|---|---|---|
-| Group recovery / restitution / damages | `/es/objetivos-recuperacion-restitucion/` + `/en/recovery-restitution-objectives/` | `archive/GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` + `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md` | LIVE / controlling strategic parent | populate event-by-event causation/remedy/quantum cells from primary evidence; propagate recovery framing to all affected actor pages without strengthening allegations |
+| Group recovery / restitution / damages | `/es/objetivos-recuperacion-restitucion/` + `/en/recovery-restitution-objectives/` | `archive/GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` + `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md` + `archive/MULTI_CLAIMANT_CROSS_BORDER_RECOVERY_AUTHORITY_PROTOCOL_18AUG2026.md` | LIVE / controlling strategic parent / **multi-claimant, multi-route and multi-jurisdiction architecture is public with an express authority gate, dormant-not-abandoned rule and no-double-recovery control** | run the targeted claimant-by-claimant authority/standing/applicable-law/forum/limitation/quantum review; do not name an independent represented claimant or publish aggregate third-party quantum until the gates are passed; continue populating event-by-event causation/remedy/quantum cells from primary evidence |
 | Ministerio Fiscal | ES/EN open-message + Justice Map | MF handover + publication basis | LIVE / evidence-first / **ME-004 rent expert recovered and substantively read** | complete DI 248; DP 332 final order; determine whether/how Apr-2019 rent expert entered later calificación record; cumulative-review evidence |
 | DP 1901/2026 | `/es/dp-1901-2026/` | DP1901 status record | LIVE / current criminal verification node | signed Fiscalía report; subsequent judicial resolution; exact transmitted package |
 | Concurso 36/2012 hub | ES/EN institutional accountability hub | judicial intelligence archive | LIVE | certified whole-file index and missing primary orders |
@@ -38,7 +38,7 @@ Canonical operational dashboard for future ChatGPT stewardship. Update this file
 | COA Lanzarote / COAGC | professional records | architecture-professional track | BUILD NEXT | complete visado/mandate/authority/archive chain |
 | Books / publishing | `/en/books/`, `/es/libros/` | `archive/book/` living files | LIVE / separate editorial system | keep evidence→book intelligence→manuscript layers separate |
 
-## Controlling cross-track rule — updated 16 Aug 2026
+## Controlling cross-track rule — updated 18 Aug 2026
 
 Do not describe the Sun Park / MYND Yaiza patrimonial problem as merely historical or merely concursal where the evidence requires a wider frame. Maintain three separate-but-connected planes:
 
@@ -47,6 +47,12 @@ Do not describe the Sun Park / MYND Yaiza patrimonial problem as merely historic
 3. **cross-border/transnational** — Aweswell/foreign-investor value, capital, financing, recovery, costs and remedies crossing Spain's border.
 
 Also trace the separate public-finance layers: RICPE/private RIC capital → RIC fiscal/idoneity → regional incentives → **FEDER** → controls/current operation. Do not collapse these layers or infer double funding, subsidy fraud or EU-budget loss without source-specific proof.
+
+### Multi-claimant authority control — 18 Aug 2026
+
+Use `archive/MULTI_CLAIMANT_CROSS_BORDER_RECOVERY_AUTHORITY_PROTOCOL_18AUG2026.md` for every reference to the wider Sun Rock Group, associated entities, inactive counterparties or third-party recovery. A common factual history does not establish common legal identity or claim ownership. Aweswell pursues its own rights and only properly authorised claims; evidence preservation, forensic support and coordination are not themselves representative authority.
+
+The controlled public record does not presently show one blanket mandate, assignment or subrogation covering every independent third party. Do not treat that absence as proof of non-existence. Run a targeted claimant-by-claimant scan for authority, corporate status, direct injury, governing law/forum, limitation, settlement/release, insurer/office-holder control, quantum and conflicts before naming a represented claimant or publishing its amount. `DORMANT` is not `ABANDONED` without operative proof.
 
 ### Banking-origin correction
 
@@ -78,9 +84,9 @@ Temporal control: **historical originating act ≠ extinguished consequence**. A
 
 Where multiple institutions or professional gatekeepers act in sequence, ask what each independently checked against the underlying asset/right source. Do not treat later formalisation, registration, tax idoneity, supervisory status, grant/FEDER decision, market admission or operational contract as automatic validation of every upstream factual premise.
 
-## Recovery-control rule — 15 Aug 2026
+## Recovery-control rule — updated 18 Aug 2026
 
-Across AC, court/judge, LAJ, private-actor and institutional tracks, use `GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` as the strategic parent. The public and internal question is not punishment as an autonomous objective; it is what must be proved, corrected, restored, accounted for or compensated to recover the lawful patrimonial position. Accountability remains actor-specific and evidence-dependent.
+Across AC, court/judge, LAJ, private-actor, institutional and third-party tracks, use `GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` as the strategic parent and the 18-Aug multi-claimant protocol as its specialist authority control. The public and internal question is not punishment as an autonomous objective; it is what must be proved, corrected, restored, accounted for or compensated for the correct claimant. Accountability remains actor-specific and evidence-dependent.
 
 ## Maintenance rules
 - `LIVE` means a public route exists; it does not mean evidentially complete.
