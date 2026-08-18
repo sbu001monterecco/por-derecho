@@ -19,7 +19,7 @@ const routes=[
   {name:'map-es',url:'/es/mapa-forense-sun-park-262-fincas/',kind:'existing'}
 ];
 const viewports=[{name:'desktop',width:1440,height:1000},{name:'mobile',width:390,height:844}];
-const failures=[];const warnings=[];const evidence=[];
+const failures=[];const evidence=[];
 const browser=await chromium.launch({headless:true});
 try{
   for(const viewport of viewports){
@@ -57,11 +57,7 @@ try{
           }).filter(x=>x.right>viewportWidth+3||x.left<-3).sort((a,b)=>Math.max(b.right-viewportWidth,-b.left)-Math.max(a.right-viewportWidth,-a.left)).slice(0,8);
           return {scrollWidth:document.documentElement.scrollWidth,clientWidth:viewportWidth,duplicates,h1:document.querySelectorAll('h1').length,offenders};
         });
-        const overflow=metrics.scrollWidth>metrics.clientWidth+3;
-        if(overflow&&route.kind==='existing'){
-          const warning={route:route.url,viewport:viewport.name,message:`Inherited horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}`,offenders:metrics.offenders};
-          warnings.push(warning);console.warn(JSON.stringify(warning));
-        }else if(overflow){throw new Error(`Horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}; ${JSON.stringify(metrics.offenders)}`);}
+        if(metrics.scrollWidth>metrics.clientWidth+3)throw new Error(`Horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}; ${JSON.stringify(metrics.offenders)}`);
         if((route.kind==='control'||route.kind==='search'||route.kind==='gateway')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
         if(metrics.h1<1)throw new Error('Missing H1');
         const shot=path.join(out,`${route.name}-${viewport.name}.png`);
@@ -73,5 +69,5 @@ try{
     await context.close();
   }
 }finally{await browser.close();}
-fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({base,checked_at:new Date().toISOString(),evidence,warnings,failures},null,2));
-if(failures.length){console.error(JSON.stringify(failures,null,2));process.exit(1);}else console.log(`Unitary public shell checks passed: ${evidence.length}; inherited warnings: ${warnings.length}`);
+fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({base,checked_at:new Date().toISOString(),evidence,failures},null,2));
+if(failures.length){console.error(JSON.stringify(failures,null,2));process.exit(1);}else console.log(`Unitary public shell checks passed: ${evidence.length}; all tested routes overflow-free`);
