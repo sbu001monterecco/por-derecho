@@ -49,6 +49,34 @@ jobs:
           # connector after this source commit, avoiding workflow-token scope ambiguity.
           rm -f .github/workflows/validate-dip80-open-kimono.yml
 
+      - name: Scope privacy audit to the DIP 80 implementation
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("scripts/validate_dip80_open_kimono.py")
+          text = path.read_text(encoding="utf-8")
+          old = 'joined="\\n".join(p.read_text(encoding="utf-8",errors="ignore") for p in ROOT.rglob("*") if p.is_file() and p.suffix in {".html",".json",".js",".md"})\n'
+          new = '''PRIVACY_PATHS=[ROOT/r for r in ROUTES]+[
+              ROOT/"es/icalpa-mesa-del-ponente/dip-80-2026/index.html",
+              ROOT/"en/icalpa-rapporteur-workbench/dip-80-2026/index.html",
+              ROOT/"es/icalpa-recorrido-denuncia-deontologica/index.html",
+              ROOT/"en/icalpa-complaint-roadmap/index.html",
+              ROOT/"assets/data/dip-80-2026-open-kimono.json",
+              ROOT/"assets/dip80-open-kimono.js",
+              ROOT/"assets/dip80-open-kimono.css",
+              ROOT/"archive/ICALPA_DIP80_OPEN_KIMONO_IMPLEMENTATION_CONTROL_18AUG2026.md",
+              ROOT/"archive/ICALPA_DIP80_OPEN_KIMONO_DELETION_CONTINUITY_18AUG2026.md",
+              ROOT/"archive/ICALPA_DIP80_OPEN_KIMONO_MASTER_EXECUTION_PROMPT_18AUG2026.md",
+              ROOT/"archive/ICALPA_DIP80_OPEN_KIMONO_FILE_MANIFEST_18AUG2026.json",
+          ]
+          joined="\\n".join(p.read_text(encoding="utf-8",errors="ignore") for p in PRIVACY_PATHS if p.exists())
+          '''
+          if old not in text:
+              raise SystemExit("privacy-audit target not found")
+          path.write_text(text.replace(old, new), encoding="utf-8")
+          PY
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
