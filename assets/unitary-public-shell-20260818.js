@@ -27,8 +27,12 @@
   const isSearch=()=>/\/(search|buscar)\/?$/i.test(location.pathname);
   const excludedUtility=()=>/\/(aviso-legal|aviso-legal-privacidad|privacy|privacidad|contacto|contact|faq)\/?$/i.test(location.pathname);
   const ensureCss=()=>{
-    if(d.querySelector('link[data-psr-unitary-shell-css]'))return;
-    const link=d.createElement('link');link.rel='stylesheet';link.href=new URL('unitary-public-shell-20260818.css?v=20260818b',assetBase).href;link.dataset.psrUnitaryShellCss='true';d.head.appendChild(link);
+    if(!d.querySelector('link[data-psr-unitary-shell-css]')){
+      const link=d.createElement('link');link.rel='stylesheet';link.href=new URL('unitary-public-shell-20260818.css?v=20260818b',assetBase).href;link.dataset.psrUnitaryShellCss='true';d.head.appendChild(link);
+    }
+    if(!d.querySelector('link[data-psr-unitary-shell-a11y-css]')){
+      const aux=d.createElement('link');aux.rel='stylesheet';aux.href=new URL('unitary-public-shell-20260818.a11y.css?v=20260818b',assetBase).href;aux.dataset.psrUnitaryShellA11yCss='true';d.head.appendChild(aux);
+    }
   };
   const addUtility=()=>{
     if(excludedUtility()||isControl()||isSearch()||d.querySelector('.psr-utility-nav'))return;
