@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - agent/dip80-living-casebook-final
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -11,10 +14,11 @@ permissions:
 
 jobs:
   diagnose:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
       - name: Decode and list casebook paths
         run: |
           python - <<'PY'
