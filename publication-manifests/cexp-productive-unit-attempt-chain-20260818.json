@@ -1,0 +1,94 @@
+{
+  "publication_id": "CEXP-PRODUCTIVE-UNIT-ATTEMPT-CHAIN-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 415,
+  "base_sha": "1fc44884cb8f917f12772f7e9cc09b559a6bf642",
+  "publication_type": "bilingual dynamic cross-site evidential chronology",
+  "controlling_proposition": {
+    "en": "The productive-unit value was not a late reconstruction. The record documents repeated attempts to put the CEXP economics, credits and operating structure before the relevant decision-makers.",
+    "es": "El valor de la unidad productiva no es una reconstrucción tardía. El expediente documenta intentos reiterados de introducir la economía, los créditos y la estructura operativa de la CEXP ante quienes debían decidir."
+  },
+  "expected_routes": {
+    "full_en": [
+      "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/lpb-solvency-record/index.html",
+      "en/community-instrumentalisation/index.html",
+      "en/recovery-restitution-objectives/index.html"
+    ],
+    "full_es": [
+      "es/concurso-36-2012-administrador-concursal/index.html",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/expediente-solvencia-lpb/index.html",
+      "es/comunidad-instrumentalizacion/index.html",
+      "es/objetivos-recuperacion-restitucion/index.html"
+    ],
+    "compact_en": [
+      "en/lpb-insolvency/index.html",
+      "en/insolvency-36-2012-institutional-accountability/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/actua-2018-spatial-test/index.html",
+      "en/sun-park-forensic-map-262-properties/index.html"
+    ],
+    "compact_es": [
+      "es/insolvencia-lpb/index.html",
+      "es/concurso-36-2012-responsabilidad-institucional/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/actua-2018-prueba-espacial/index.html",
+      "es/mapa-forense-sun-park-262-fincas/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cexp-productive-unit-attempt-chain-20260818.js",
+    "assets/aweswell-monterecco-name-continuity-20260816.js",
+    "archive/CEXP_PRODUCTIVE_UNIT_ATTEMPT_AND_OMISSION_LEDGER_18AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_CEXP_PRODUCTIVE_UNIT_ATTEMPT_CHAIN_18AUG2026.md"
+  ],
+  "required_live_markers": {
+    "en": [
+      "The productive-unit value was not a late reconstruction.",
+      "The record documents repeated attempts"
+    ],
+    "es": [
+      "El valor de la unidad productiva no es una reconstrucción tardía.",
+      "El expediente documenta intentos reiterados"
+    ]
+  },
+  "source_basis": [
+    "23 Nov 2015 direct AC correspondence concerning Community intervention and role limits",
+    "25 May 2017 stamped-document / intended AC and Mercantile Court presentation metadata",
+    "19-22 Jan 2018 AC correspondence concerning LPB/CEXP accounting and the 737,338.85 EUR item",
+    "11 Jun 2018 confidential draft economic expert note concerning CEXP economic rights and operating costs",
+    "15 Jun 2018 contemporaneous sent position concerning defence of the CEXP-derived LPB right before the Judge",
+    "Jun-Jul 2018 expert, participation/property and operating-cost reconstruction materials",
+    "Nov-Dec 2018 judicial/AC notification and formal exploitation-information follow-up"
+  ],
+  "publication_safety": {
+    "privilege": "No raw private email bodies, private email addresses or privileged legal advice are published.",
+    "expert_confidentiality": "The 11 Jun 2018 expert note is marked draft/confidential and is not published; only its public-safe existence, court-use purpose and methodology are described.",
+    "admission": "Intended or prepared presentation is not converted into formal filing, admission or judicial readership without receipt/docket proof.",
+    "ac_liability": "The chronology does not establish deliberate suppression, dishonesty or final liability by the Insolvency Administrator.",
+    "estate_boundary": "The chronology does not treat all CEXP or third-party value as part of LPB's insolvency estate.",
+    "quantum": "The expert's wider preliminary calculation is not presented as recognised debt, judgment or current accounting asset."
+  },
+  "deletion_audit": {
+    "path": "archive/THREAD_DELETION_AUDIT_CEXP_PRODUCTIVE_UNIT_ATTEMPT_CHAIN_18AUG2026.md",
+    "status": "PENDING_FINAL_COMPARE_AND_CI",
+    "required_invariants": [
+      "no files deleted",
+      "no static public HTML overwritten",
+      "no canonical routes removed",
+      "existing Aweswell accounts incorporation loader preserved",
+      "existing CEXP productive-unit headline loader preserved",
+      "materially adverse first-instance calificación and pending appeal status preserved",
+      "ES/EN substantive parity maintained",
+      "no confidential expert report or privileged advice published"
+    ]
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "checked_at": null,
+    "evidence": []
+  }
+}
