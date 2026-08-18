@@ -1,0 +1,50 @@
+{
+  "publication_id": "ICALPA-DIP80-OPEN-KIMONO-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "BLOCKED_RECOVERY",
+  "controlling_pr": 352,
+  "blocking_reason": "The dedicated completion PR is open and unmerged. Its remote materialisation workflow requires nine encoded payload parts, but the auditable remote branch has not yet materialised the actual 14 route files. Repeated workflow attempts have failed before the hard acceptance validator runs.",
+  "expected_routes": {
+    "es": [
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia-inversa/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-de-decisiones/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba-procedencia/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos-decisiones-actuaciones/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html"
+    ],
+    "en": [
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/reverse-chronology/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-provenance-atlas/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/model-decisions/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/dip80-open-kimono.js"
+  ],
+  "encoded_bootstrap": {
+    "pattern": "archive/dip80-open-kimono-payload/part-*.b64",
+    "declared_parts": 9,
+    "complete": false,
+    "sha256": "685a0ffcf010c26a871deeaf5ff8dd98610003d377a38ad15f33a4d2b86dc5eb"
+  },
+  "recovery_requirements": [
+    "Recover the complete source payload or original source files from the originating environment before deleting it.",
+    "Commit actual reviewable HTML/JS/data/CSS source to a branch based on current main; do not rely on CI as the only materialisation mechanism.",
+    "Verify all seven ES and seven EN routes exist in Git.",
+    "Run the DIP 80 hard acceptance validator and universal publication integrity gate remotely.",
+    "Merge through a reviewable PR only after CI is green.",
+    "Verify GitHub Pages public URLs and markers after merge.",
+    "Write the final deletion-continuity record only after live verification."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/",
+    "https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/"
+  ],
+  "notes": "This manifest intentionally records the present blocked state. It supersedes any thread narrative that described the casebook as already merged/live before the complete evidence chain was established."
+}
