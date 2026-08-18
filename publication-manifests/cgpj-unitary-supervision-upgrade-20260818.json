@@ -1,7 +1,8 @@
 {
   "publication_id": "CGPJ-UNITARY-SUPERVISION-UPGRADE-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 373,
   "expected_routes": {
     "es": [
       "es/cgpj-comision-permanente-sala-lectura/index.html",
@@ -51,10 +52,14 @@
     "knowledge_control": "Administrator knowledge is not attributed automatically to the judge; external context is not treated as historical judicial knowledge without proved incorporation.",
     "missing_record_control": "Absence from Por Derecho's corpus is not stated as proof of non-existence."
   },
+  "concurrent_main_reconciliation": {
+    "main_commit": "d294e71fbae40aecdffecca3d011185307c56cd5",
+    "dp1956_control": "The ES/EN Insolvency Administrator pages were reset to the current-main DP 1956-corrected versions; deeper AC-supervision analysis is carried by the CGPJ reader and estate-supervision routes."
+  },
   "discoverability": {
     "dedicated_sitemap": "sitemap-cgpj.xml",
     "robots_registration_already_exists": true,
     "homepage_feature": false
   },
-  "notes": "This manifest covers the second-stage CGPJ visitor upgrade. It intentionally starts at REMOTE_SOURCE and must move through PR_OPEN, CI_GREEN, MERGED, DEPLOYED and LIVE_VERIFIED only when each state is evidenced."
+  "notes": "PR 373 is open and mergeable after reconciliation with concurrent DP 1956 work. Do not call the upgrade CI-green, merged, deployed or live-verified until each state is evidenced."
 }
