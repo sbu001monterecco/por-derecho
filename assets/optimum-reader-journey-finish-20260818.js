@@ -9,9 +9,6 @@
   const updatesUrl = p(isEn ? 'updates/' : 'actualizaciones/');
   const collaborateUrl = p(isEn ? 'collaborate/' : 'colaborar/');
   const cnmvUrl = p(isEn ? 'cnmv-ricpe-verification/' : 'cnmv-ricpe-verificacion/');
-  const incentivesUrl = p(isEn ? 'regional-incentives-gc836-p06/' : 'incentivos-regionales-gc836-p06/');
-  const sncaUrl = p(isEn ? 'snca-eu-funds-traceability/' : 'snca-fondos-europeos-trazabilidad/');
-  const cleanRoomUrl = p(isEn ? 'public-authority-unitary-case-reconstruction/' : 'reconstruccion-unitaria-autoridades-publicas/');
   const fundingUrl = p(isEn ? 'same-hotel-multiple-financial-lives/' : 'mismo-hotel-multiples-vidas-financieras/');
   const ricpeControlsUrl = p(isEn ? 'ricpe-documentary-accountability/' : 'ricpe-responsabilidad-documental/');
   const controlUrl = p(isEn ? 'sun-park-takeover-7-june-2018/' : 'toma-control-sun-park-7-junio-2018/');
@@ -128,15 +125,10 @@
     }
   };
 
-  const ensureIdByHeading = (patterns, fallback) => {
-    for (const section of document.querySelectorAll('main > section')) {
-      const heading = section.querySelector('h1,h2,h3')?.textContent?.trim() || '';
-      if (patterns.some((pattern) => pattern.test(heading))) {
-        if (!section.id) section.id = fallback;
-        return `#${section.id}`;
-      }
-    }
-    return null;
+  const sectionId = (section, fallback) => {
+    if (!section) return null;
+    if (!section.id) section.id = fallback;
+    return `#${section.id}`;
   };
 
   const addPractitionerShortcuts = () => {
@@ -144,13 +136,26 @@
     if (!hero || hero.querySelector('.psr-hero-shortcuts')) return;
     const lead = hero.querySelector('.lead');
     if (!lead) return;
-    const quick = ensureIdByHeading([/caso en 7 minutos/i, /case in 7 minutes/i], 'psr-practitioner-seven-minute');
-    const decision = ensureIdByHeading([/árbol de decisión/i, /decision tree/i], 'psr-practitioner-decision-tree');
+    const cardSelector = hero.classList.contains('ir-hero') ? '.ir-card' : '.eu-card';
+    const sections = [...document.querySelectorAll('main > section')];
+    const quickSection = sections.find((section) => section.querySelectorAll(cardSelector).length >= 6);
+    const decisionSection = sections.find((section) => section.querySelector('.ok-decision'));
     const practice = document.querySelector(isEn ? '#open-practice' : '#practica-abierta');
+    const quick = sectionId(quickSection, 'psr-practitioner-seven-minute');
+    const decision = sectionId(decisionSection, 'psr-practitioner-decision-tree');
     const links = document.createElement('div');
     links.className = 'psr-hero-shortcuts';
     links.innerHTML = `${quick ? `<a href="${quick}">${t('Revisión en 7 minutos', '7-minute review')}</a>` : ''}${decision ? `<a href="${decision}">${t('Árbol de decisión', 'Decision tree')}</a>` : ''}${practice ? `<a href="#${practice.id}">${t('Buena práctica / advertencia', 'Good practice / warning')}</a>` : ''}`;
     lead.insertAdjacentElement('afterend', links);
+  };
+
+  const alignJourneyRailMobile = () => {
+    if (!matchMedia('(max-width: 640px)').matches) return;
+    const rail = document.getElementById('psr-unitary-journey');
+    const scroller = rail?.querySelector('.shell');
+    const current = rail?.querySelector('[aria-current="step"]');
+    if (!scroller || !current) return;
+    scroller.scrollTo({ left: Math.max(0, current.offsetLeft - 10), behavior: 'auto' });
   };
 
   const restoreDeepLink = () => {
@@ -166,6 +171,7 @@
     ensureMobileMenu();
     movePrefaceModulesAfterHero();
     addPractitionerShortcuts();
+    alignJourneyRailMobile();
     restoreDeepLink();
   };
 
