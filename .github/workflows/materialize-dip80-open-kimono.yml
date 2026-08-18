@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - archive/dip80-open-kimono-bootstrap.tar.gz
+      - archive/dip80-open-kimono-payload/**
       - .github/workflows/materialize-dip80-open-kimono.yml
 
 permissions:
@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: ${{ github.head_ref || github.ref_name }}
+      PAYLOAD_SHA256: 685a0ffcf010c26a871deeaf5ff8dd98610003d377a38ad15f33a4d2b86dc5eb
     steps:
       - name: Check out controlled branch
         uses: actions/checkout@v4
@@ -31,15 +32,21 @@ jobs:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0
 
-      - name: Expand controlled source payload
+      - name: Reassemble and verify controlled source payload
         shell: bash
         run: |
           set -euo pipefail
-          test -f archive/dip80-open-kimono-bootstrap.tar.gz
-          tar -xzf archive/dip80-open-kimono-bootstrap.tar.gz
-          rm archive/dip80-open-kimono-bootstrap.tar.gz
-          # The final validation workflow is installed through the authenticated
-          # GitHub connector after materialisation, avoiding workflow-token scope ambiguity.
+          test -d archive/dip80-open-kimono-payload
+          find archive/dip80-open-kimono-payload -maxdepth 1 -type f -name 'part-*.b64' -print | sort > /tmp/dip80-parts.txt
+          test "$(wc -l < /tmp/dip80-parts.txt)" -eq 9
+          xargs cat < /tmp/dip80-parts.txt > /tmp/dip80-payload.b64
+          base64 --decode /tmp/dip80-payload.b64 > /tmp/dip80-open-kimono.tar.gz
+          echo "${PAYLOAD_SHA256}  /tmp/dip80-open-kimono.tar.gz" | sha256sum --check --strict
+          tar -xzf /tmp/dip80-open-kimono.tar.gz
+          rm -rf archive/dip80-open-kimono-payload
+          rm -f archive/dip80-open-kimono-bootstrap.tar.gz
+          # The final reusable validation workflow is installed by the authenticated
+          # connector after this source commit, avoiding workflow-token scope ambiguity.
           rm -f .github/workflows/validate-dip80-open-kimono.yml
 
       - name: Set up Python
