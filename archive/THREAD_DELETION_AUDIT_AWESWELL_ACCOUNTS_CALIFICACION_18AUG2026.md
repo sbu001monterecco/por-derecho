@@ -142,3 +142,20 @@ This audit may be promoted to `DELETION_SAFE / LIVE_VERIFIED` only after:
 6. public-host readback confirms the required English and Spanish markers on the controlling routes.
 
 Until those steps are complete, no claim of public deployment or final deletion-safe status should be made.
+
+## 8. Superseding current-main and CI addendum
+
+This addendum supersedes only the repository coordinates and gate status above; it does not alter the substantive audit.
+
+- **Current PR:** `#389`
+- **Current base SHA:** `472d166886f4896ccc04a61b161fdaded0cc75f2`
+- **Current branch:** `agent/aweswell-accounts-calificacion-incorporation-20260818-v2`
+- **Current branch comparison before this addendum:** 5 changed files, 582 additions, 0 deletions, 0 file deletions and 0 renames.
+- **Publication integrity run:** `32178197143` — success.
+- **Publication/deletion-safety validation:** success.
+- **Operational-control validation:** success.
+- **Mission-critical repository validation:** success.
+
+All five changed-file patches were inspected. The only existing-source modification remains the 11-line additive loader; the other four paths are new. No public HTML, route, source link, adverse-status statement or evidential limitation was removed.
+
+**Current verdict:** `PRE-MERGE DELETION-SAFE / CI-GREEN`. Merge and public-host readback remain the only outstanding gates.
