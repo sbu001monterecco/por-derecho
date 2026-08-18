@@ -10,3 +10,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-multiple-financi
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-public-authority-reconstruction.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-supervisory-practice.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-flagship-case.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-cgpj.xml
