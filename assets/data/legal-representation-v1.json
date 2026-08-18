@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-SEED-NOT-COMPLETE",
+  "purpose": "Public-safe, machine-readable reconstruction of legal representation, legal-adviser, procurador and expert-witness interfaces across the Sun Park / Aweswell / LPB / Matkator matter. Designed as a backend source for later bilingual website views. Absence from this seed does not mean absence from the evidence base.",
+  "method": {
+    "clientSpecificTracks": true,
+    "sameProfessionalMayHaveMultipleEngagements": true,
+    "representationIsNotInferredFromCcOrMention": true,
+    "privateEvidenceBoundary": "Do not publish raw mailbox identifiers, private email addresses, privileged correspondence, personal assessments or unredacted source material from private systems.",
+    "negativeEvidenceRule": "Use 'not yet located' or 'no filing evidence located' unless non-existence or non-filing is affirmatively established.",
+    "handoverRule": "A change of lawyer, firm or procurador is a separate event and must be tied to the client and matter affected; do not force parallel representations into one linear chain.",
+    "expertWitnessRule": "Experts and expert witnesses are not legal counsel. Track report receipt, substantive use, procurador transmission and court filing as separate states.",
+    "publicCharacterisationRule": "Describe conduct through dated, verifiable acts and omissions. Private or subjective assessments are not converted into public factual assertions."
+  },
+  "statusLabels": [
+    "VERIFIED",
+    "VERIFIED_WITH_LIMITATION",
+    "STRONGLY_SUPPORTED",
+    "WORKING_HYPOTHESIS",
+    "CONTESTED",
+    "OPEN"
+  ],
+  "publicationLabels": [
+    "PUBLIC-READY",
+    "PUBLIC-READY-WITH-QUALIFICATION",
+    "LEGAL-REVIEW-RECOMMENDED",
+    "REPOSITORY-ONLY",
+    "DO-NOT-PUBLISH-YET"
+  ],
+  "roleTypes": [
+    "counsel_of_record",
+    "legal_adviser",
+    "specialist_counsel",
+    "local_supporting_counsel",
+    "consulted_not_proven_retained",
+    "procurador",
+    "expert_witness"
+  ],
+  "entities": [
+    {"id":"ENT-GIL","name":"Gil Marer","type":"person"},
+    {"id":"ENT-AWESWELL","name":"Aweswell Limited","type":"company"},
+    {"id":"ENT-LPB","name":"Luchy Playa Blanca, S.L.U.","type":"company"},
+    {"id":"ENT-MATKATOR","name":"Matkator, S.L.","type":"company"},
+    {"id":"ENT-PINK","name":"Pink Canary Services, S.L.","type":"company"}
+  ],
+  "firms": [
+    {"id":"FIRM-GARRIGUES","name":"Garrigues","type":"law_firm","status":"former"},
+    {"id":"FIRM-JTP","name":"Juan Tomás Parrilla / practice","type":"law_practice","status":"former"},
+    {"id":"FIRM-CUATRECASAS","name":"Cuatrecasas","type":"law_firm","status":"former"},
+    {"id":"FIRM-PIMENTEL","name":"Pimentel / Cristo Suárez Pimentel practice","type":"law_practice","status":"former_or_nonprimary"},
+    {"id":"FIRM-SLJ","name":"SLJ Abogados","type":"law_firm","status":"former"},
+    {"id":"FIRM-LOPEZ-CASTELO","name":"López Castelo Abogados","type":"law_firm","status":"former"},
+    {"id":"FIRM-SIXTO","name":"Sixto Abogados","type":"law_firm","status":"current"},
+    {"id":"FIRM-LLAMAS","name":"Carlos Llamas legal practice","type":"law_practice","status":"current"}
+  ],
+  "professionals": [
+    {"id":"PER-MIGUEL-MENDEZ","name":"Miguel Méndez Itarte","professionalType":"lawyer","firmIds":["FIRM-GARRIGUES"],"status":"former"},
+    {"id":"PER-JM-MARTINEZ-ARTOLA","name":"José María Martínez de Artola","professionalType":"lawyer","firmIds":["FIRM-GARRIGUES"],"status":"former"},
+    {"id":"PER-VICTOR-DE-LA-TORRE","name":"Víctor de la Torre","professionalType":"lawyer","firmIds":["FIRM-GARRIGUES"],"status":"former"},
+    {"id":"PER-ZULAY-RODRIGUEZ","name":"Zulay Carmen Rodríguez","professionalType":"lawyer_or_legal_team_member","firmIds":["FIRM-GARRIGUES"],"status":"former","qualificationStatus":"to_verify"},
+    {"id":"PER-JUAN-TOMAS-PARRILLA","name":"Juan Tomás Parrilla Suárez","professionalType":"lawyer","firmIds":["FIRM-JTP"],"status":"former"},
+    {"id":"PER-ROSA-GUAL","name":"Rosa Gual Tomás","professionalType":"lawyer","firmIds":["FIRM-CUATRECASAS"],"status":"former"},
+    {"id":"PER-INIGO-DE-LUISA","name":"Iñigo de Luisa Maíz","professionalType":"lawyer","firmIds":["FIRM-CUATRECASAS"],"status":"former"},
+    {"id":"PER-FEDRA-VALENCIA","name":"Fedra Valencia","professionalType":"legal_team_member","firmIds":["FIRM-CUATRECASAS"],"status":"former","individualScopeStatus":"to_verify"},
+    {"id":"PER-ADRIANA-GONZALEZ","name":"Adriana González García","professionalType":"legal_team_member","firmIds":["FIRM-CUATRECASAS"],"status":"former","individualScopeStatus":"to_verify"},
+    {"id":"PER-PAMELA-USTA","name":"Pamela Usta Yabrudy","professionalType":"legal_team_member","firmIds":["FIRM-CUATRECASAS"],"status":"former","individualScopeStatus":"to_verify"},
+    {"id":"PER-CRISTO-PIMENTEL","name":"Cristo Ayose Suárez Pimentel","professionalType":"lawyer","firmIds":["FIRM-PIMENTEL"],"status":"former_or_nonprimary"},
+    {"id":"PER-DANIEL-JIMENEZ","name":"Daniel Jiménez García","professionalType":"lawyer","firmIds":["FIRM-SLJ"],"status":"former"},
+    {"id":"PER-LUIS-MIGUEL-LOPEZ","name":"Luis Miguel López Gómez","professionalType":"lawyer","firmIds":["FIRM-LOPEZ-CASTELO"],"status":"former"},
+    {"id":"PER-JAVIER-SIXTO","name":"Javier Sixto","professionalType":"lawyer","firmIds":["FIRM-SIXTO"],"status":"current_user_confirmed"},
+    {"id":"PER-ESTEFANIA-SIXTO","name":"Estefanía Sixto-Seijas","professionalType":"lawyer","firmIds":["FIRM-SIXTO"],"status":"current_user_confirmed"},
+    {"id":"PER-CARLOS-LLAMAS","name":"Carlos Llamas Sanz","professionalType":"lawyer","firmIds":["FIRM-LLAMAS"],"status":"current_user_confirmed"},
+    {"id":"PER-DAVID-ESPEJO","name":"David Espejo Navarro","professionalType":"expert_witness","firmIds":[],"status":"expert_not_legal_counsel"},
+    {"id":"PER-MONICA-PADRON","name":"Mónica Padrón","professionalType":"procurador","firmIds":[],"status":"historical_current_period_to_verify"},
+    {"id":"PER-ADRIANA-HERNANDEZ","name":"Adriana Hernández Díaz","professionalType":"procurador","firmIds":[],"status":"current_or_recent_2026"},
+    {"id":"PER-TANIA-PROCURADORA","name":"Tania (Aweswell procuradora in 2020 correspondence)","professionalType":"procurador","firmIds":[],"status":"former","identityStatus":"full_identity_to_verify"}
+  ],
+  "matters": [
+    {"id":"MAT-JO-1241-2011","name":"JO 1241/2011 — LPB v Comunidad de Propietarios","type":"civil"},
+    {"id":"MAT-PREINSOLVENCY-2012","name":"LPB Article 5 bis / pre-insolvency and Bankia enforcement strategy","type":"insolvency_preparation"},
+    {"id":"MAT-CONCURSO-36-2012","name":"Concurso ordinario 36/2012 — Luchy Playa Blanca, S.L.U.","type":"insolvency"},
+    {"id":"MAT-AWESWELL-CONCURSO","name":"Aweswell participation / representation in Concurso 36/2012","type":"insolvency_related"},
+    {"id":"MAT-CALIFICACION","name":"Sección de calificación — Concurso 36/2012","type":"insolvency_classification"},
+    {"id":"MAT-2018-CONTROL-CRIMINAL","name":"2018 control/access and related criminal/evidential workstreams","type":"multi_matter"},
+    {"id":"MAT-REGISTRY-OBREM-2018","name":"2018 local/solarium/recepción registry and ob-rem workstream","type":"property_insolvency"},
+    {"id":"MAT-AN-2023","name":"Audiencia Nacional complaint / 2023 criminal strategy","type":"criminal"},
+    {"id":"MAT-AP-CONCURSO","name":"Audiencia Provincial / appeals arising from Concurso 36/2012","type":"appeal"},
+    {"id":"MAT-MATKATOR-ETJ-163-2020","name":"Matkator / ETJ 163/2020","type":"enforcement"},
+    {"id":"MAT-DP-748-2026","name":"DP 748/2026 and related 2026 procedural work","type":"criminal"}
+  ],
+  "engagements": [
+    {
+      "id":"LREP-ENG-001",
+      "professionalIds":["PER-MIGUEL-MENDEZ","PER-JM-MARTINEZ-ARTOLA","PER-VICTOR-DE-LA-TORRE","PER-ZULAY-RODRIGUEZ"],
+      "firmId":"FIRM-GARRIGUES",
+      "clientIds":["ENT-LPB","ENT-GIL"],
+      "matterIds":["MAT-JO-1241-2011","MAT-PREINSOLVENCY-2012","MAT-CONCURSO-36-2012"],
+      "role":"legal_adviser_and_litigation_team",
+      "status":"former",
+      "dates":{"firstVerifiedActivity":"2012-03-28","formalStartVerified":null,"lastVerifiedActivity":"2012-06-07","formalEndVerified":null},
+      "documentedActivities":["Acted in JO 1241/2011 by March 2012.","Prepared and advised on LPB Article 5 bis communication in April 2012.","Advised on Bankia enforcement, scheduled auction and preparation/presentation of LPB insolvency.","Produced financing/security documentation and billed legal services through at least early June 2012."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "openQuestions":["Locate the engagement letter, exact start/end and complete matter allocation, including whether representation began during 2011."]
+    },
+    {
+      "id":"LREP-ENG-002",
+      "professionalIds":["PER-JUAN-TOMAS-PARRILLA"],
+      "firmId":"FIRM-JTP",
+      "clientIds":["ENT-LPB"],
+      "matterIds":["MAT-CONCURSO-36-2012","MAT-CALIFICACION","MAT-REGISTRY-OBREM-2018"],
+      "role":"counsel_of_record",
+      "status":"former",
+      "dates":{"firstVerifiedActivity":"2012-06-15","formalStartVerified":null,"lastVerifiedActivity":"2020-05-31","formalEndVerified":"2020-05-31"},
+      "documentedActivities":["Long-running LPB/Concurso representation is evidenced from June 2012.","Worked alongside Cuatrecasas and other advisers on 2018 liquidation, registry and ob-rem questions.","Was asked to grant venia / be substituted on 31 May 2020."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "handoverTo":["LREP-ENG-006"],
+      "openQuestions":["Locate the original appointment, complete LexNET/court record and final file-transfer inventory."]
+    },
+    {
+      "id":"LREP-ENG-003",
+      "professionalIds":["PER-ROSA-GUAL","PER-INIGO-DE-LUISA","PER-FEDRA-VALENCIA","PER-ADRIANA-GONZALEZ","PER-PAMELA-USTA"],
+      "firmId":"FIRM-CUATRECASAS",
+      "clientIds":["ENT-AWESWELL","ENT-GIL"],
+      "matterIds":["MAT-AWESWELL-CONCURSO","MAT-REGISTRY-OBREM-2018","MAT-AP-CONCURSO"],
+      "role":"multi_lawyer_firm_engagement",
+      "status":"former",
+      "dates":{"firstVerifiedActivity":"2018-09-10","formalStartVerified":null,"lastVerifiedActivity":"2020-05-26","formalEndVerified":"2020-05-26"},
+      "documentedActivities":["Prepared and coordinated filings and strategy relating to debt certification, liquidation and appeals.","Worked concurrently with Juan Tomás Parrilla and other advisers rather than replacing every other representation track.","Rosa Gual coordinated urgent December 2018 registry communications concerning the local/solarium/recepción workstream.","Cuatrecasas granted venia for Aweswell's Concurso representation to Daniel Jiménez on 26 May 2020."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "handoverTo":["LREP-ENG-005"],
+      "openQuestions":["Determine the firm's exact engagement start, which may predate the September 2018 verified window.","Complete the person-by-person Cuatrecasas scope map and identify all separate firm mandates.","Reconcile the full handover inventory and any materials transferred to successor counsel."]
+    },
+    {
+      "id":"LREP-ENG-004",
+      "professionalIds":["PER-CRISTO-PIMENTEL"],
+      "firmId":"FIRM-PIMENTEL",
+      "clientIds":["ENT-GIL","ENT-AWESWELL","ENT-LPB","ENT-MATKATOR","ENT-PINK"],
+      "matterIds":["MAT-2018-CONTROL-CRIMINAL","MAT-CALIFICACION","MAT-AN-2023","MAT-CONCURSO-36-2012"],
+      "role":"multi_matter_legal_adviser_and_counsel",
+      "status":"former_or_nonprimary",
+      "dates":{"firstVerifiedActivity":"2018-08-01","formalStartVerified":null,"lastVerifiedActivity":"2023-12-15","formalEndVerified":null},
+      "documentedActivities":["Performed local and cross-matter legal/evidential work from at least August 2018.","Prepared factual/procedural summaries and coordinated criminal, evidential and related workstreams.","Worked in parallel with Juan Tomás Parrilla, Cuatrecasas and later lawyers rather than occupying a single linear successor slot.","Had direct involvement with the David Espejo expert-report workstream."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "openQuestions":["Locate the engagement letter(s), define client-by-client mandates and establish the exact end/status of each workstream."]
+    },
+    {
+      "id":"LREP-ENG-005",
+      "professionalIds":["PER-DANIEL-JIMENEZ"],
+      "firmId":"FIRM-SLJ",
+      "clientIds":["ENT-AWESWELL"],
+      "matterIds":["MAT-AWESWELL-CONCURSO","MAT-CALIFICACION"],
+      "role":"counsel_of_record",
+      "status":"former",
+      "dates":{"firstVerifiedActivity":"2020-04-05","formalStartVerified":"2020-05-26","lastVerifiedActivity":"2020-06-23","formalEndVerified":"2020-06-23"},
+      "documentedActivities":["Received and reviewed expert/economic material before the formal May 2020 takeover.","Took over Aweswell's Concurso representation following Cuatrecasas venia on 26 May 2020.","Coordinated directly with expert David Espejo and reviewed swap/insolvency issues.","The documentary record shows a short engagement ending with a resignation/fee-closeout communication on 23 June 2020."],
+      "sourceStatus":"VERIFIED",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "handoverFrom":["LREP-ENG-003"],
+      "knowledgeStateAtEnd":["Possessed multiple David Espejo reports/notes and later swap-analysis material.","Was engaged with Aweswell/Concurso succession and LPB counsel-transition questions."],
+      "openQuestions":["Complete a task-by-task output and filing audit.","Identify the exact successor and complete file-transfer chain after resignation.","No report-specific evidence has yet been located proving that Daniel Jiménez filed an Espejo report with the court."]
+    },
+    {
+      "id":"LREP-ENG-006",
+      "professionalIds":["PER-LUIS-MIGUEL-LOPEZ"],
+      "firmId":"FIRM-LOPEZ-CASTELO",
+      "clientIds":["ENT-LPB"],
+      "matterIds":["MAT-CONCURSO-36-2012","MAT-CALIFICACION","MAT-AP-CONCURSO"],
+      "role":"counsel_of_record",
+      "status":"former",
+      "dates":{"firstVerifiedActivity":"2020-05-31","formalStartVerified":"2020-06-01","courtDirectionChangeVerified":"2020-06-16","lastVerifiedActivity":"2022-12-15","formalEndVerified":null},
+      "documentedActivities":["Entered the LPB counsel-transition process at the end of May 2020.","Daniel Jiménez contemporaneously identified Luis Miguel López as the new lawyer of the debtor LPB on 1 June 2020.","The court record reflected LPB's change of legal direction on 16 June 2020.","Continued in LPB/Concurso and appeal-related work through at least 2022."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "handoverFrom":["LREP-ENG-002"],
+      "openQuestions":["Determine the exact end of the engagement and complete successor handover.","Separate proof that Espejo analysis informed a pleading from proof that any Espejo report itself was annexed/filed."]
+    },
+    {
+      "id":"LREP-ENG-007",
+      "professionalIds":["PER-JAVIER-SIXTO","PER-ESTEFANIA-SIXTO"],
+      "firmId":"FIRM-SIXTO",
+      "clientIds":["ENT-GIL","ENT-AWESWELL","ENT-LPB","ENT-MATKATOR"],
+      "matterIds":["MAT-CONCURSO-36-2012","MAT-CALIFICACION","MAT-AP-CONCURSO","MAT-AN-2023"],
+      "role":"current_principal_legal_advisers",
+      "status":"current_user_confirmed",
+      "dates":{"firstVerifiedActivity":"2023-07-29","formalStartVerified":null,"lastVerifiedActivity":"2026-07-12","formalEndVerified":null},
+      "documentedActivities":["Active in 2023 review of Concurso hearing material and the Audiencia Nacional complaint workstream.","Coordinated appellate/personation and Concurso document review through late 2023.","Remain current principal advisers by user confirmation."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "openQuestions":["Locate original engagement date(s) and split Javier/Estefanía responsibilities by client and procedure."]
+    },
+    {
+      "id":"LREP-ENG-008",
+      "professionalIds":["PER-CARLOS-LLAMAS"],
+      "firmId":"FIRM-LLAMAS",
+      "clientIds":["ENT-GIL","ENT-MATKATOR"],
+      "matterIds":["MAT-MATKATOR-ETJ-163-2020","MAT-DP-748-2026"],
+      "role":"current_principal_legal_adviser",
+      "status":"current_user_confirmed",
+      "dates":{"firstVerifiedActivityInCurrentScan":"2026-05-08","proceduralCounselEvidence":"2026-05-20","lastVerifiedActivity":"2026-07-20","formalEndVerified":null},
+      "documentedActivities":["Documented 2026 counsel role includes Matkator/ETJ 163/2020 and DP 748/2026 work.","Worked with procuradora Adriana Hernández Díaz on filings.","Remains a current principal adviser by user confirmation."],
+      "sourceStatus":"VERIFIED_WITH_LIMITATION",
+      "publication":"PUBLIC-READY-WITH-QUALIFICATION",
+      "openQuestions":["Establish the true relationship/engagement start, which may predate the first documentary cluster located in this scan, and map all current mandates."]
+    }
+  ],
+  "handoverEvents": [
+    {"id":"LREP-HAN-001","date":"2020-05-26","clientIds":["ENT-AWESWELL"],"matterIds":["MAT-AWESWELL-CONCURSO"],"fromEngagementIds":["LREP-ENG-003"],"toEngagementIds":["LREP-ENG-005"],"type":"venia_and_change_of_counsel","status":"VERIFIED","publication":"PUBLIC-READY"},
+    {"id":"LREP-HAN-002","dateRange":["2020-05-31","2020-06-16"],"clientIds":["ENT-LPB"],"matterIds":["MAT-CONCURSO-36-2012"],"fromEngagementIds":["LREP-ENG-002"],"toEngagementIds":["LREP-ENG-006"],"type":"substitution_and_court_direction_change","status":"VERIFIED","publication":"PUBLIC-READY"},
+    {"id":"LREP-HAN-003","date":"2020-06-23","clientIds":["ENT-AWESWELL"],"matterIds":["MAT-AWESWELL-CONCURSO"],"fromEngagementIds":["LREP-ENG-005"],"toEngagementIds":[],"type":"resignation_and_successor_handover_to_reconstruct","status":"OPEN","publication":"PUBLIC-READY-WITH-QUALIFICATION"}
+  ],
+  "expertWitnessInteractions": [
+    {"id":"LREP-EXP-001","expertId":"PER-DAVID-ESPEJO","professionalId":"PER-CRISTO-PIMENTEL","relationship":"expert_workstream_coordination","status":"VERIFIED","firstVerifiedYear":2018,"reportFilingStatus":"UNKNOWN","publication":"PUBLIC-READY-WITH-QUALIFICATION"},
+    {"id":"LREP-EXP-002","expertId":"PER-DAVID-ESPEJO","professionalId":"PER-DANIEL-JIMENEZ","relationship":"direct_receipt_and_coordination","status":"VERIFIED","verifiedEvents":[{"date":"2020-04-05","event":"Received multiple Espejo report/note materials."},{"date":"2020-05-26","event":"Direct lawyer-expert coordination confirmed."},{"date":"2020-05-30","event":"Received swap-analysis material."}],"reportFilingStatus":"NO_FILING_EVIDENCE_LOCATED","publication":"PUBLIC-READY-WITH-QUALIFICATION"},
+    {"id":"LREP-EXP-003","expertId":"PER-DAVID-ESPEJO","professionalId":"PER-LUIS-MIGUEL-LOPEZ","relationship":"report_receipt_and_later_pleading_use_to_reconcile","status":"VERIFIED_WITH_LIMITATION","verifiedEvents":[{"date":"2021-02-04","event":"Received Espejo debt-reasonableness report."},{"date":"2022-02-28","event":"Pleading filing activity is documented; this does not by itself prove the Espejo report was annexed."}],"reportFilingStatus":"NO_REPORT_SPECIFIC_FILING_EVIDENCE_LOCATED","publication":"PUBLIC-READY-WITH-QUALIFICATION"},
+    {"id":"LREP-EXP-004","expertId":"PER-DAVID-ESPEJO","professionalId":"PER-ROSA-GUAL","relationship":"contemporaneous_parallel_workstream","status":"OPEN","reportReceiptStatus":"NO_DIRECT_RECEIPT_EVIDENCE_LOCATED_IN_CURRENT_SCAN","publication":"REPOSITORY-ONLY"},
+    {"id":"LREP-EXP-005","expertId":"PER-DAVID-ESPEJO","professionalId":"PER-JUAN-TOMAS-PARRILLA","relationship":"contemporaneous_parallel_workstream","status":"OPEN","reportReceiptStatus":"NO_DIRECT_RECEIPT_EVIDENCE_LOCATED_IN_CURRENT_SCAN","publication":"REPOSITORY-ONLY"}
+  ],
+  "procuradorLinks": [
+    {"id":"LREP-PROC-001","professionalId":"PER-TANIA-PROCURADORA","year":2020,"clientIds":["ENT-AWESWELL"],"linkedLawyerIds":["PER-DANIEL-JIMENEZ"],"matterIds":["MAT-AWESWELL-CONCURSO"],"status":"VERIFIED_WITH_LIMITATION","openQuestion":"Verify full identity, appointment dates and filing inventory."},
+    {"id":"LREP-PROC-002","professionalId":"PER-MONICA-PADRON","year":2023,"clientIds":["ENT-AWESWELL"],"linkedLawyerIds":["PER-JAVIER-SIXTO","PER-ESTEFANIA-SIXTO"],"matterIds":["MAT-AP-CONCURSO"],"status":"VERIFIED_WITH_LIMITATION","openQuestion":"Verify full name, exact representation scope and report-specific Espejo transmission/filing status."},
+    {"id":"LREP-PROC-003","professionalId":"PER-ADRIANA-HERNANDEZ","year":2026,"clientIds":["ENT-GIL","ENT-MATKATOR"],"linkedLawyerIds":["PER-CARLOS-LLAMAS"],"matterIds":["MAT-DP-748-2026","MAT-MATKATOR-ETJ-163-2020"],"status":"VERIFIED_WITH_LIMITATION","openQuestion":"Complete client-by-client appointment and filing inventory."}
+  ],
+  "candidateAdvisersToClassify": [
+    {"name":"Manuel Gallego Águeda","status":"VERIFIED_CONTACT_AND_ADVICE_2012; RETENTION_SCOPE_TO_VERIFY","note":"Separate 2012 legal-advice/Bankia-related correspondence located."},
+    {"name":"Daniel Irigoyen","status":"VERIFIED_2018_STRATEGIC_LEGAL_ACTIVITY; RETENTION_SCOPE_TO_VERIFY","note":"Worked with client/Cristo and other advisers on 2018 strategy."},
+    {"name":"Juan Daniel Fajardo Expósito","status":"VERIFIED_2018_LOCAL_LEGAL_ACTIVITY; RETENTION_SCOPE_TO_VERIFY","note":"Handled/assisted notarial witness and local evidential tasks."},
+    {"name":"Armando L. Betancor","status":"VERIFIED_LATE_2018_SPECIALIST_CONTACT; RETENTION_SCOPE_TO_VERIFY","note":"Received registry/Fiscalía materials."},
+    {"name":"Henry Feltenstein Arechabala","status":"CONSULTED_2018; RETENTION_NOT_PROVEN","note":"Asked to review white-collar-crime materials and advise."}
+  ],
+  "frontEndContract": {
+    "publishNow": false,
+    "reason":"Backend reconstruction remains incomplete; do not expose a definitive public genealogy until start/end dates, client scopes and key handovers are reconciled.",
+    "plannedViews":["chronology_by_client_and_matter","professional_profile","firm_profile","matter_specific_representation","handover_and_continuity_map","expert_report_transmission_matrix"],
+    "safeFields":["name","firm","role","client","matter","verified_date_window","documented_activities","handover_links","status","qualification","open_questions"],
+    "excludeFields":["raw_private_correspondence","mailbox_ids","private_email_addresses","privileged_quotes","subjective_personal_assessments"]
+  },
+  "openQuestions": [
+    {"id":"LREP-OQ-001","priority":"P0","question":"Who represented or advised the relevant entities during 2011 before the first currently verified Garrigues activity in March 2012?","evidenceNeeded":"2011 engagement letters, invoices, powers, procurador appointments, court filings and contemporaneous correspondence."},
+    {"id":"LREP-OQ-002","priority":"P0","question":"What is the complete lawyer/procurador succession for each separate client in Concurso 36/2012?","evidenceNeeded":"Venias, court direction-change notices, powers, LexNET filing receipts and procurador records."},
+    {"id":"LREP-OQ-003","priority":"P0","question":"Which David Espejo reports reached which lawyer, procurador and court, and on what date?","evidenceNeeded":"Native report transmissions, annex indices, filing receipts, LexNET/procurador confirmations and court-file copies."},
+    {"id":"LREP-OQ-004","priority":"P1","question":"What were the exact person-by-person mandates inside Cuatrecasas, Garrigues and Sixto Abogados?","evidenceNeeded":"Engagement letters, time entries, invoices, internal/external work-product and filings."},
+    {"id":"LREP-OQ-005","priority":"P1","question":"What knowledge and pending tasks were transferred at every counsel change?","evidenceNeeded":"Handover emails, file inventories, deadline lists, work-in-progress lists and successor acknowledgements."}
+  ]
+}
