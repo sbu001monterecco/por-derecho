@@ -1,15 +1,20 @@
 {
-  "schema_version": 2,
-  "as_of": "2026-08-18T14:34:00Z",
+  "schema_version": 3,
+  "as_of": "2026-08-18T14:38:00Z",
   "issue_355": {
-    "state": "PARTIALLY_CLOSED",
+    "state": "OPEN_ADMIN_REQUIRED",
     "observed": [
-      "direct_write_to_main_rejected_pr_required"
+      "direct_write_to_main_rejected_pr_required",
+      "pr_365_merged_before_publication_integrity_completed"
     ],
+    "conclusion": "PR-only enforcement is active, but required CI/status-check enforcement is not active on the tested merge path.",
     "remaining": [
-      "ruleset_required_status_contexts_not_readable_via_current_connector",
-      "force_push_delete_and_conversation_resolution_rules_not_independently_readable"
-    ]
+      "configure_repository_ruleset_to_require_publication_integrity_before_merge",
+      "independently_verify_force_push_prohibition",
+      "independently_verify_main_deletion_prohibition",
+      "independently_verify_conversation_resolution_rule"
+    ],
+    "tool_boundary": "Current GitHub connector exposes no ruleset/branch-protection administration action and runtime has no authenticated gh CLI."
   },
   "issue_356": {
     "state": "CLOSED_EQUIVALENT_CONTROL",
@@ -27,7 +32,8 @@
       "mission_critical_validator",
       "static_site_smoke",
       "off_github_google_drive_copy",
-      "drive_readback"
+      "drive_readback",
+      "weekly_off_github_copy_task"
     ],
     "off_primary_copy": {
       "provider": "Google Drive",
@@ -35,6 +41,8 @@
       "title": "Por Derecho - Independent Recovery Bundle - a2bda8b3 - 2026-08-18.zip",
       "readback": "PASS"
     },
-    "live_git_mirror": "NOT_CONFIGURED_NOT_REQUIRED_FOR_EQUIVALENT_RECOVERY_CLOSURE"
+    "recurrence": "Weekly Sunday morning off-GitHub artifact copy and readback via scheduled task",
+    "github_issue": 356,
+    "github_issue_state": "closed"
   }
 }
