@@ -13,6 +13,7 @@ const routes=[
   {name:'control-es',url:'/es/sala-control-caso/',kind:'control'},
   {name:'search-en',url:'/en/search/',kind:'search'},
   {name:'search-es',url:'/es/buscar/',kind:'search'},
+  {name:'dp1901-en',url:'/en/dp-1901-2026/',kind:'existing'},
   {name:'ac-en',url:'/en/insolvency-36-2012-insolvency-administrator/',kind:'existing'},
   {name:'ricpe-en',url:'/en/ric-private-equity-sun-park/',kind:'existing'},
   {name:'map-es',url:'/es/mapa-forense-sun-park-262-fincas/',kind:'existing'}
@@ -29,7 +30,7 @@ try{
       try{
         const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
-        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260818b',{timeout:15000});
+        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260818b',null,{timeout:15000});
         if(route.kind==='home'){
           await page.waitForSelector('.main-nav[data-psr-consolidated-nav="true"]',{timeout:10000});
           await page.waitForSelector('.psr-home-control-gateway',{timeout:10000});
@@ -41,19 +42,21 @@ try{
         }
         if(route.kind==='search'){
           const input=page.locator('#psr-search-input');await input.fill('CEXP');
-          await page.waitForFunction(()=>document.querySelectorAll('.psr-search-result').length>0,{timeout:15000});
+          await page.waitForFunction(()=>document.querySelectorAll('.psr-search-result').length>0,null,{timeout:15000});
           const titles=await page.locator('.psr-search-result h2').allTextContents();
           if(!titles.some(t=>/CEXP|Community|Comunidad|LPB/i.test(t)))throw new Error('CEXP search did not surface a controlled relevant result');
         }
         if(route.kind==='existing')await page.waitForSelector('.psr-utility-nav',{timeout:15000});
         const metrics=await page.evaluate(()=>{
-          const ids=[...document.querySelectorAll('[id]')].map(el=>el.id).filter(Boolean);const dup=[...new Set(ids.filter((id,i)=>ids.indexOf(id)!==i))];
+          const ids=[...document.querySelectorAll('[id]')].map(el=>el.id).filter(Boolean);
+          const dup=[...new Set(ids.filter((id,i)=>ids.indexOf(id)!==i))];
           return {scrollWidth:document.documentElement.scrollWidth,clientWidth:document.documentElement.clientWidth,duplicates:dup,h1:document.querySelectorAll('h1').length};
         });
         if(metrics.scrollWidth>metrics.clientWidth+3)throw new Error(`Horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}`);
         if((route.kind==='control'||route.kind==='search')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
         if(metrics.h1<1)throw new Error('Missing H1');
-        const shot=path.join(out,`${route.name}-${viewport.name}.png`);await page.screenshot({path:shot,fullPage:true});
+        const shot=path.join(out,`${route.name}-${viewport.name}.png`);
+        await page.screenshot({path:shot,fullPage:true});
         evidence.push({route:route.url,viewport:viewport.name,status:'pass',metrics,screenshot:shot});
       }catch(error){failures.push({route:route.url,viewport:viewport.name,error:String(error)});}
       finally{await page.close();}
