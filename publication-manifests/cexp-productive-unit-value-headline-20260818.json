@@ -1,7 +1,8 @@
 {
   "publication_id": "CEXP-PRODUCTIVE-UNIT-VALUE-HEADLINE-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "SOURCE_IMPLEMENTED_PENDING_PR_CI_MERGE_AND_LIVE_VERIFICATION",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 413,
   "base_sha": "76b9c8af56cfb07ae2974fc9ad0d0821f3f32531",
   "publication_type": "bilingual dynamic cross-site controlling valuation proposition",
   "controlling_proposition": {
