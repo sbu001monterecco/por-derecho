@@ -30,7 +30,15 @@
     },
     {
       "status": "procedural_fact",
-      "proposition": "An appeal against Resolution 28/2026 was filed with the Canary Islands Transparency Commissioner on 11 August 2026, file 12/2026-0710092416."
+      "proposition": "An appeal against Resolution 28/2026 was filed with the Canary Islands Transparency Commissioner on 11 August 2026 under REGAGE26e00072591992, internal file 12/2026-0710092416."
+    },
+    {
+      "status": "procedural_fact",
+      "proposition": "Direct AEAT access request REGAGE26e00062944142 was presented on 7 July 2026; the Registro Electrónico General later confirmed processing by the Registro Central de la AEAT from 8 July 2026 at 09:51:37."
+    },
+    {
+      "status": "audit_status_not_official_notification_record",
+      "proposition": "Connected Gmail audit through 18 August 2026 located no substantive AEAT transparency decision and no email notice tied to that REGAGE of an Article 20 extension or Article 19 third-party suspension; official portals must still be checked before treating the route as final administrative silence."
     }
   ],
   "central_questions": [
@@ -57,6 +65,10 @@
       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-745"
     },
     {
+      "name": "Ley 19/2013, Articles 20 and 24",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+    },
+    {
       "name": "Canary Islands official RIC supervision procedure",
       "url": "https://sede.gobiernodecanarias.org/sede/procedimientos_servicios/tramites/6143"
     }
@@ -64,6 +76,7 @@
   "private_source_boundary": [
     "Unredacted Resolution 28/2026 contains personal data and is not placed in the public repository here.",
     "Unredacted Transparency Commissioner appeal contains personal data and is not placed in the public repository here.",
-    "Private voice-note attribution and confidential RICPE communications are not reproduced in this public manifest."
+    "Private voice-note attribution and confidential RICPE communications are not reproduced in this public manifest.",
+    "Gmail absence is not treated as conclusive proof that no official portal notification exists."
   ]
 }
