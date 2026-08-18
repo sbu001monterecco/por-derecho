@@ -1,0 +1,93 @@
+name: Validate unitary public shell
+
+on:
+  pull_request:
+    paths:
+      - 'assets/site.js'
+      - 'assets/styles.css'
+      - 'assets/share-controls-20260817.js'
+      - 'assets/unitary-public-shell-20260818.*'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'assets/*navigation*.js'
+      - 'assets/*reader*.js'
+      - 'assets/*cross-site*.js'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'en/case-control-room/**'
+      - 'es/sala-control-caso/**'
+      - 'en/search/**'
+      - 'es/buscar/**'
+      - 'scripts/render_unitary_public_shell.mjs'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/site.js'
+      - 'assets/styles.css'
+      - 'assets/share-controls-20260817.js'
+      - 'assets/unitary-public-shell-20260818.*'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'assets/*navigation*.js'
+      - 'assets/*reader*.js'
+      - 'assets/*cross-site*.js'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'en/case-control-room/**'
+      - 'es/sala-control-caso/**'
+      - 'en/search/**'
+      - 'es/buscar/**'
+      - 'scripts/render_unitary_public_shell.mjs'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unitary-public-shell-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Syntax and JSON checks
+        run: |
+          node --check assets/unitary-public-shell-20260818.js
+          node --check assets/share-controls-20260817.js
+          node --check scripts/render_unitary_public_shell.mjs
+          python3 -m json.tool assets/data/unitary-route-registry-v1.json >/dev/null
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve static site at production subpath
+        run: |
+          mkdir -p /tmp/psr-site/por-derecho
+          cp -a . /tmp/psr-site/por-derecho/
+          cd /tmp/psr-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-http.log 2>&1 &
+          echo $! > /tmp/psr-http.pid
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/en/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-http.log
+          exit 1
+      - name: Render desktop/mobile route archetypes
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_SCREENSHOT_DIR: artifacts/unitary-public-shell
+        run: node scripts/render_unitary_public_shell.mjs
+      - name: Upload screenshots and result
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: unitary-public-shell-regression
+          path: artifacts/unitary-public-shell
+          if-no-files-found: error
+          retention-days: 30

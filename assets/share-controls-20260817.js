@@ -24,6 +24,17 @@
     d.head.appendChild(genealogy);
   }
 
+  // Unitary public shell: route-aware orientation, compact homepage navigation,
+  // canonical Case Control Room and controlled site-wide search. This is additive;
+  // existing dossier modules, evidence grammar and route ownership remain unchanged.
+  if(script && !d.querySelector('script[data-pd-unitary-public-shell]')){
+    const shell=d.createElement('script');
+    shell.src=new URL('unitary-public-shell-20260818.js?v=20260818b',script.src).href;
+    shell.async=false;
+    shell.dataset.pdUnitaryPublicShell='true';
+    d.head.appendChild(shell);
+  }
+
   const lang=(d.documentElement.lang||'en').toLowerCase().startsWith('es')?'es':'en';
   const strings=lang==='es'?{
     label:'Compartir esta página',linkedin:'LinkedIn',whatsapp:'WhatsApp',email:'Email',copy:'Copiar enlace',copied:'Enlace copiado',copyPrompt:'Copiar enlace:'
