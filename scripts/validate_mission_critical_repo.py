@@ -35,6 +35,7 @@ ALLOWED_WRITE = {
     "verify-pages-propagation-optimum.yml": {"statuses"},
     "verify-mission-critical-hardening-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
+    "repository-backup-bundle.yml": {"statuses"},
 }
 
 

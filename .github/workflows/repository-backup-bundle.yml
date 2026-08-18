@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  statuses: write
 
 concurrency:
   group: repository-recovery-bundle
@@ -59,3 +60,23 @@ jobs:
         if: env.BACKUP_MIRROR_URL == ''
         run: |
           echo "::warning::POR_DERECHO_BACKUP_MIRROR_URL is not configured. The Git bundle is recoverable but remains hosted inside GitHub and is not independent disaster recovery."
+      - name: Publish recovery-bundle status
+        if: always()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          JOB_STATUS: ${{ job.status }}
+        with:
+          script: |
+            const success = process.env.JOB_STATUS === 'success';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: success ? 'success' : 'failure',
+              target_url: runUrl,
+              description: success
+                ? 'Verified Git recovery bundle created'
+                : 'Git recovery bundle creation failed',
+              context: 'backup/repository-recovery-bundle',
+            });
