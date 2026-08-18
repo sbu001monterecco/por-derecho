@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-08-18",
+  "caseId": "DIP-80-2026",
+  "routes": [
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/validate-dip80-open-kimono.yml",
+      "bytes": 1008,
+      "sha256": "4cec926ba7ce9751f35336f60da7aa68816dddc66f9626a1a4ecde87b8322376"
+    },
+    {
+      "path": "archive/ICALPA_DIP80_OPEN_KIMONO_DELETION_CONTINUITY_18AUG2026.md",
+      "bytes": 1667,
+      "sha256": "145630cafa87dfd9b5cdb75cf97b005ea4b0469bcc66caafab1cc8b4483fc774"
+    },
+    {
+      "path": "archive/ICALPA_DIP80_OPEN_KIMONO_FILE_MANIFEST_18AUG2026.json",
+      "bytes": 6045,
+      "sha256": "cea797fc5a889c5586687b21f15caf1047dad01fbda7e3e4d4db8c370b97ca67"
+    },
+    {
+      "path": "archive/ICALPA_DIP80_OPEN_KIMONO_IMPLEMENTATION_CONTROL_18AUG2026.md",
+      "bytes": 4776,
+      "sha256": "81058881d0c16bea294cb36cc94e735b6ca405a86a22b18b591093c95cf22282"
+    },
+    {
+      "path": "archive/ICALPA_DIP80_OPEN_KIMONO_MASTER_EXECUTION_PROMPT_18AUG2026.md",
+      "bytes": 1841,
+      "sha256": "62d1107e8c1ba958edeb9e8f2c5f8a1bb6c6949f8a165bfa0361d52631b6543e"
+    },
+    {
+      "path": "assets/data/dip-80-2026-open-kimono.json",
+      "bytes": 138117,
+      "sha256": "b31e35c66b7895adc203eaea2370cc49076b866ea2499b5d6465bd054e6b4858"
+    },
+    {
+      "path": "assets/dip80-open-kimono.css",
+      "bytes": 42865,
+      "sha256": "fb678eb694091581134f46a74627305bcdcf400d2a3efd8cc8032dba14e34b60"
+    },
+    {
+      "path": "assets/dip80-open-kimono.js",
+      "bytes": 25859,
+      "sha256": "0306e0bfa4d28312433e7049fe8e6cc3a5595b75638bb21fd56618d1aebdefda"
+    },
+    {
+      "path": "en/icalpa-complaint-roadmap/index.html",
+      "bytes": 6710,
+      "sha256": "4fddfa3d1733186b05e1c498695c88e846f08044b8423f65aa2edfa13bdc7edd"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/index.html",
+      "bytes": 506,
+      "sha256": "f55937025f01d32d705917d50ab43ca8e9dc69ee0aaa88ae274fcbf52c99109d"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
+      "bytes": 5492,
+      "sha256": "b0a5f5bbac6ae06dc235368799a0125adf83628635502daa6a938fbac9226ec5"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html",
+      "bytes": 5558,
+      "sha256": "d40ec477eabfe40aa4b8c31a33380d8f04b33d726d6ab59ab15286c470784e07"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
+      "bytes": 5613,
+      "sha256": "c6b510d383359a52a31a9a17c1de7fb02056c63f89018ea32a7f3da89f51b858"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
+      "bytes": 5532,
+      "sha256": "d80c93204c9f1de6532b9b18093b68a7bd5043451fe3d024b42207372a016fb0"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
+      "bytes": 6785,
+      "sha256": "4e5e1bc56970d3dc88a96319a6cdea3dc84fd8763bfa19c85481639c5b8d87ee"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
+      "bytes": 5477,
+      "sha256": "6b11a5238e24cf089524d3687e34f8f2583f6478e071a0abe5f96b1a464c3815"
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
+      "bytes": 5509,
+      "sha256": "b5e465e141e1aca1a35bb059241aee3356a7f93a360707f33b31e9c3e63df673"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/index.html",
+      "bytes": 486,
+      "sha256": "1efcf801388031803de0f30b1463d785a2f409791bb5ae44bdd3ff90ecf4c209"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
+      "bytes": 5696,
+      "sha256": "802d407c6b130947f7d78a9c3b7ebf105bf9b0adae200101ee11c69df5ab825f"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
+      "bytes": 5583,
+      "sha256": "a6be26fbaf4953e90c85455340782da9895c6fddae2553cf8f859a392733e063"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html",
+      "bytes": 5622,
+      "sha256": "fa13a107ca8960f9f265ddedaa103269bc674ee5369a7ca2aeb4c0d6f1fd8ca3"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
+      "bytes": 5581,
+      "sha256": "e1319094cd762f05a9ce6cdb62d1fdabd18fa3ed5414137d31296f5140fd5b3c"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
+      "bytes": 6945,
+      "sha256": "629dc6b475d46a1783ce23e09835cc7370961c95222cd70aa4024d77a41d81b2"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
+      "bytes": 5537,
+      "sha256": "fb15401a6a828b3831b08588c08ad662809214ee7c0708400ed6afb55bd38696"
+    },
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
+      "bytes": 5577,
+      "sha256": "47eb27b9fd0092e2bf0a586cabd0ebc2037c8b75a112e007064d65c8e000f37b"
+    },
+    {
+      "path": "es/icalpa-recorrido-denuncia-deontologica/index.html",
+      "bytes": 6767,
+      "sha256": "0ce71efffedd4287a01b0cd10b51083804aefc7bd7ebf1665a8289f1b5b1704a"
+    },
+    {
+      "path": "scripts/validate_dip80_open_kimono.py",
+      "bytes": 4697,
+      "sha256": "158b8ea5d95c5d7736a5664f7bf2698374aee1130700bf7add3ee8b5110cf2fc"
+    }
+  ]
+}
