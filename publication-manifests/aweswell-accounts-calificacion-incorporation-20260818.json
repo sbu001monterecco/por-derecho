@@ -1,34 +1,35 @@
 {
-  "id": "aweswell-accounts-calificacion-incorporation-20260818",
-  "title": "Aweswell accounts — formal acknowledgment, incorporation and reasoned assessment in the calificación",
-  "publication_type": "bilingual_dynamic_cross-site_evidential_control",
-  "mode": "source_based_procedurally_qualified",
-  "thread": "Aweswell provisional parent-level group accounts, LPB Concurso 36/2012 and calificación incorporation request",
-  "base_branch": "main",
-  "base_sha": "dc5cb47dfa319932c2875bfb8dc1e8b5bfeda30b",
-  "status": "SOURCE_IMPLEMENTED_PENDING_PR_CI_MERGE_AND_LIVE_VERIFICATION",
-  "entered_status": "2026-08-18",
-  "approved_deletion_gate": false,
-  "paths": [
+  "publication_id": "AWESWELL-ACCOUNTS-CALIFICACION-INCORPORATION-20260818",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 389,
+  "base_sha": "472d166886f4896ccc04a61b161fdaded0cc75f2",
+  "expected_routes": {
+    "es": [
+      "es/expediente-solvencia-lpb/index.html",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/objetivos-recuperacion-restitucion/index.html",
+      "es/concurso-36-2012-administrador-concursal/index.html",
+      "es/concurso-36-2012-responsabilidad-institucional/index.html"
+    ],
+    "en": [
+      "en/lpb-solvency-record/index.html",
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/recovery-restitution-objectives/index.html",
+      "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "en/insolvency-36-2012-institutional-accountability/index.html"
+    ]
+  },
+  "expected_source_files": [
     "assets/aweswell-accounts-calificacion-incorporation-20260818.js",
     "assets/aweswell-monterecco-name-continuity-20260816.js",
     "archive/AWESWELL_ACCOUNTS_CALIFICACION_INCORPORATION_CONTROL_18AUG2026.md",
-    "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md",
-    "publication-manifests/aweswell-accounts-calificacion-incorporation-20260818.json"
+    "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md"
   ],
-  "routes": [
-    "https://sbu001monterecco.github.io/por-derecho/en/lpb-solvency-record/",
-    "https://sbu001monterecco.github.io/por-derecho/es/expediente-solvencia-lpb/",
-    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/",
-    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
-    "https://sbu001monterecco.github.io/por-derecho/en/recovery-restitution-objectives/",
-    "https://sbu001monterecco.github.io/por-derecho/es/objetivos-recuperacion-restitucion/",
-    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/",
-    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/",
-    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-institutional-accountability/",
-    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-responsabilidad-institucional/"
-  ],
-  "live_required_markers": {
+  "publication_type": "bilingual dynamic cross-site evidential control",
+  "mode": "source-based and procedurally qualified",
+  "controlling_request": "Formally acknowledge the official Companies House filing; receive the filed English version, the Board-authorised Spanish translation, the filing record and supporting materials; admit, incorporate or otherwise receive them through the legally available route; test them against the primary record and independent forensic accounting; and give an express, reasoned determination on procedural status, relevance, scope and probative weight.",
+  "live_markers_planned": {
     "english_full": [
       "Formal evidential request: acknowledge, incorporate and expressly assess",
       "Admissibility and weight pending",
@@ -46,19 +47,7 @@
       "Reconocer, incorporar y valorar expresamente las cuentas de la matriz en la calificación"
     ]
   },
-  "deletion_audit": {
-    "path": "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md",
-    "status": "PENDING_FINAL_COMPARE_AND_CI",
-    "required_invariants": [
-      "no files deleted",
-      "no routes removed",
-      "no official filing link removed",
-      "no existing evidential qualification weakened",
-      "existing Aweswell name-continuity behavior preserved",
-      "ES/EN substantive parity maintained"
-    ]
-  },
-  "sources": [
+  "source_basis": [
     {
       "title": "Aweswell Limited — Consolidated Provisional Group Statutory Accounts for the year ended 31 July 2025",
       "status": "officially filed party-authored statutory source",
@@ -74,31 +63,37 @@
       "status": "official public registry record"
     }
   ],
-  "prohibitions": [
-    "do not describe Companies House as auditor or adjudicator",
-    "do not request automatic acceptance of every directors statement as fact",
-    "do not present the filing as a replacement for LPB Spanish annual accounts",
-    "do not imply the filing reverses Sentencia 163/2023",
-    "do not imply title to every hotel unit",
-    "do not imply limitation is interrupted",
-    "do not use consolidated as an independently verified technical conclusion beyond the filed title",
-    "do not remove the adverse first-instance and pending-appeal status"
-  ],
-  "audit": {
-    "pull_request": null,
-    "head_sha": null,
-    "merge_sha": null,
-    "changed_files": null,
-    "additions": null,
-    "deletions": null,
-    "file_deletions": null,
-    "renames": null,
-    "publication_integrity": "PENDING"
+  "publication_safety": {
+    "companies_house": "Not described as auditor or adjudicator.",
+    "self_proving": "The filing is not presented as automatic proof of every directors' statement.",
+    "spanish_accounts": "The filing is not presented as replacing LPB's complete Spanish annual accounts.",
+    "title": "The filing is not presented as proving title to every hotel unit.",
+    "calificacion": "Sentencia 163/2023 remains materially adverse at first instance and the appeal remains pending.",
+    "liability": "No civil, professional, criminal or public-authority liability is presented as established by the filing.",
+    "limitation": "Publication is not presented as interrupting limitation or prescription.",
+    "terminology": "The filed title is quoted accurately; the technical scope of consolidated remains subject to independent confirmation."
   },
-  "live_verification": {
-    "status": "PENDING",
-    "checked_at": null,
-    "method": null,
-    "evidence": []
-  }
+  "deletion_audit": {
+    "path": "archive/THREAD_DELETION_AUDIT_AWESWELL_ACCOUNTS_CALIFICACION_18AUG2026.md",
+    "current_result": "5 changed files; 587 additions; 0 deletions; 0 files deleted; 0 renames; no static public HTML overwritten.",
+    "required_invariants": [
+      "no files deleted",
+      "no routes removed",
+      "no official filing link removed",
+      "no existing evidential qualification weakened",
+      "existing Aweswell name-continuity behavior preserved",
+      "ES/EN substantive parity maintained"
+    ]
+  },
+  "prohibitions": [
+    "Do not describe Companies House as auditor or adjudicator.",
+    "Do not request automatic acceptance of every directors' statement as fact.",
+    "Do not present the filing as a replacement for LPB's Spanish annual accounts.",
+    "Do not imply the filing reverses Sentencia 163/2023.",
+    "Do not imply title to every hotel unit.",
+    "Do not imply limitation is interrupted.",
+    "Do not use consolidated as an independently verified technical conclusion beyond the filed title.",
+    "Do not remove the adverse first-instance and pending-appeal status."
+  ],
+  "notes": "PR 389 is open. The source module and controls exist on the PR branch. CI, merge and public GitHub Pages readback remain required before promotion beyond PR_OPEN."
 }
