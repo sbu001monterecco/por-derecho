@@ -1,8 +1,9 @@
 {
   "publication_id": "CGPJ-PERMANENT-COMMISSION-READER-ROOM-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "controlling_pr": 370,
+  "merge_sha": "de3e6c2b704610a59692992741190ba7ce1eaeb9",
   "expected_routes": {
     "es": [
       "es/cgpj-comision-permanente-sala-lectura/index.html",
@@ -17,6 +18,12 @@
     "archive/CGPJ_COMISION_PERMANENTE_VISIT_READINESS_MASTER_PROMPT_18AUG2026.md",
     "sitemap-cgpj.xml"
   ],
+  "validation": {
+    "evidence": [
+      "Publication integrity gate run 32154066173: success",
+      "Validate supervisory-practice routes run 32154066402: success"
+    ]
+  },
   "reader_contract": [
     "Lead with adverse CGPJ decisions before Por Derecho objections",
     "Separate discipline, inspection/functioning, jurisdictional merits, LAJ/court-office acts, appeals and criminal routes",
@@ -48,5 +55,5 @@
     "robots_registration": true,
     "homepage_feature": false
   },
-  "notes": "PR-open state. Do not call the new routes merged, deployed, live verified or deletion safe until the repository gate, merge and public GitHub Pages checks establish those states."
+  "notes": "Source is merged to main through PR 370 and CI was green before merge. Public GitHub Pages propagation has not yet been independently verified in this execution, so this manifest intentionally stops at MERGED rather than DEPLOYED or LIVE_VERIFIED."
 }
