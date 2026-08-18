@@ -1,50 +1,48 @@
 {
   "publication_id": "ICALPA-DIP80-OPEN-KIMONO-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "BLOCKED_RECOVERY",
-  "controlling_pr": 352,
-  "blocking_reason": "The dedicated completion PR is open and unmerged. Its remote materialisation workflow requires nine encoded payload parts, but the auditable remote branch has not yet materialised the actual 14 route files. Repeated workflow attempts have failed before the hard acceptance validator runs.",
+  "current_state": "REMOTE_SOURCE",
+  "controlling_branch": "agent/dip80-living-casebook-completion",
+  "controlling_pr": null,
   "expected_routes": {
     "es": [
       "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia-inversa/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-de-decisiones/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba-procedencia/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
       "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos-decisiones-actuaciones/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
       "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html"
     ],
     "en": [
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/reverse-chronology/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-provenance-atlas/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/model-decisions/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"
     ]
   },
   "expected_source_files": [
-    "assets/dip80-open-kimono.js"
+    "assets/data/dip80-2026-casebook.js",
+    "assets/dip80-casebook.css",
+    "assets/dip80-casebook.js",
+    "scripts/validate_dip80_casebook.py",
+    "archive/DIP80_LIVING_CASEBOOK_IMPLEMENTATION_CONTROL_18AUG2026.md",
+    "archive/DIP80_LIVING_CASEBOOK_DELETION_CONTINUITY_18AUG2026.md",
+    "archive/DIP80_LIVING_CASEBOOK_28_SECTION_ACCEPTANCE_18AUG2026.md"
   ],
-  "encoded_bootstrap": {
-    "pattern": "archive/dip80-open-kimono-payload/part-*.b64",
-    "declared_parts": 9,
-    "complete": false,
-    "sha256": "685a0ffcf010c26a871deeaf5ff8dd98610003d377a38ad15f33a4d2b86dc5eb"
+  "validation": {
+    "evidence": [
+      "Local deterministic gate: 14 routes, 13 evidence records, 24 decision nodes, 28/28 master controls.",
+      "Structured-data source and application JavaScript pass Node syntax validation."
+    ],
+    "browser_note": "Local Chromium navigation is administrator-blocked in the execution environment; remote deployment and live/mobile smoke verification remain mandatory before LIVE_VERIFIED."
   },
-  "recovery_requirements": [
-    "Recover the complete source payload or original source files from the originating environment before deleting it.",
-    "Commit actual reviewable HTML/JS/data/CSS source to a branch based on current main; do not rely on CI as the only materialisation mechanism.",
-    "Verify all seven ES and seven EN routes exist in Git.",
-    "Run the DIP 80 hard acceptance validator and universal publication integrity gate remotely.",
-    "Merge through a reviewable PR only after CI is green.",
-    "Verify GitHub Pages public URLs and markers after merge.",
-    "Write the final deletion-continuity record only after live verification."
-  ],
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/",
     "https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/"
   ],
-  "notes": "This manifest intentionally records the present blocked state. It supersedes any thread narrative that described the casebook as already merged/live before the complete evidence chain was established."
+  "notes": "This revision replaces the failed encoded-payload approach with ordinary reviewable Git source. Generic supervisory-practice pages do not satisfy the dedicated DIP 80 publication. Prior failed attempts remain preserved in repository history."
 }
