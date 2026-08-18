@@ -3,6 +3,7 @@
   "owner": "Por Derecho / Project Sun Rock",
   "current_state": "DELETION_SAFE",
   "controlling_pr": 394,
+  "verification_pr": 395,
   "merge_sha": "4cb7401cdfeee28ffb380eb66a093e59d03d9ccf",
   "expected_routes": {
     "es": ["es/cgpj-alerta-irreversibilidad/index.html"],
@@ -18,14 +19,6 @@
   ],
   "release_probe": "deployment-probes/cgpj-alert-irreversibility-20260818.txt",
   "release_probe_marker": "CGPJ-ALERT-IRREVERSIBILITY-LIVE-PROBE-20260818-V1",
-  "live_urls": [
-    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-alerta-irreversibilidad/",
-    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/"
-  ],
-  "live_markers": {
-    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-alerta-irreversibilidad/": ["De la alerta a la irreversibilidad.", "CONSECUENCIA ≠ CONOCIMIENTO JUDICIAL HISTÓRICO", "EL RESULTADO NO RESPONDE EL ORIGEN"],
-    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/": ["From alert to irreversibility.", "CONSEQUENCE ≠ HISTORICAL JUDICIAL KNOWLEDGE", "THE RESULT DOES NOT ANSWER THE ORIGIN"]
-  },
   "validation": {
     "evidence": [
       "Publication integrity gate run 32180468160: success on PR 394 head f42cd77d59742848243b4a64376036d648d57d47",
@@ -33,14 +26,27 @@
       "Publication integrity gate run 32180790768: success on live-closeout PR 395 head 98e233079671108bff2b42aed56160ad53e1773d"
     ]
   },
-  "live_verification_evidence": {
-    "run": 32180790882,
-    "job": 95853060043,
+  "deployment_evidence": {
+    "workflow": "Verify CGPJ alert-to-irreversibility live publication",
+    "run_id": 32180790882,
+    "job_id": 95853060043,
+    "result": "success",
+    "verified_at_utc": "2026-08-18T20:10:47Z",
+    "attempt": 1,
     "artifact_id": 9340678430,
-    "artifact_name": "cgpj-alert-irreversibility-live-verification",
-    "artifact_digest": "sha256:4012d36347a959988af9e5d386aa484a63d836e42c17b60f663be59295de0846",
-    "result": "success; ES/EN routes, release probe and sitemap returned HTTP 200 with required markers"
+    "artifact_sha256": "4012d36347a959988af9e5d386aa484a63d836e42c17b60f663be59295de0846"
   },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-alerta-irreversibilidad/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/",
+    "https://sbu001monterecco.github.io/por-derecho/deployment-probes/cgpj-alert-irreversibility-20260818.txt",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-cgpj.xml"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-alerta-irreversibilidad/": ["De la alerta a la irreversibilidad.", "CONSECUENCIA ≠ CONOCIMIENTO JUDICIAL HISTÓRICO", "EL RESULTADO NO RESPONDE EL ORIGEN"],
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-alert-to-irreversibility/": ["From alert to irreversibility.", "CONSEQUENCE ≠ HISTORICAL JUDICIAL KNOWLEDGE", "THE RESULT DOES NOT ANSWER THE ORIGIN"]
+  },
+  "live_verification_evidence": "GitHub Actions run 32180790882 fetched the ES/EN visual routes, release probe and CGPJ sitemap with HTTP 200 and no missing required markers on attempt 1 at 2026-08-18T20:10:47Z.",
   "deletion_record": "archive/THREAD_DELETION_CONTINUITY_CGPJ_ALERT_VISUAL_POSTLIVE_18AUG2026.md",
   "reader_contract": [
     "Do not state that the judge never saw the RICPE material; distinguish admission/availability from substantive treatment",
