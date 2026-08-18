@@ -18,7 +18,7 @@ TARGETS = [
     },
     {
         "url": "https://sbu001monterecco.github.io/por-derecho/assets/cgpj-alzada-regage-20260816.js",
-        "markers": ["CGPJ_ALERT_VISUAL_INTEGRATION_V1", "/por-derecho/es/cgpj-alerta-irreversibilidad/", "/por-derecho/en/cgpj-alert-to-irreversibility/", "PUENTE EXTRACONCURSAL", "LATER PUBLIC RELIANCE"],
+        "markers": ["CGPJ_ALERT_VISUAL_INTEGRATION_V1", "CGPJ_ALERT_CONTRAST_FIX_V1", ".hero-map .rule{color:#13252d}", "/por-derecho/es/cgpj-alerta-irreversibilidad/", "/por-derecho/en/cgpj-alert-to-irreversibility/", "PUENTE EXTRACONCURSAL", "LATER PUBLIC RELIANCE"],
     },
     {
         "url": "https://sbu001monterecco.github.io/por-derecho/assets/site.js",
@@ -56,7 +56,7 @@ TARGETS = [
 
 
 def fetch(url: str, timeout: int) -> tuple[int, str]:
-    req = urllib.request.Request(url, headers={"User-Agent": "por-derecho-cgpj-alert-live-verifier/2"})
+    req = urllib.request.Request(url, headers={"User-Agent": "por-derecho-cgpj-alert-live-verifier/3"})
     with urllib.request.urlopen(req, timeout=timeout) as response:
         return response.status, response.read().decode("utf-8", errors="replace")
 
