@@ -1,0 +1,29 @@
+name: Validate DIP 80 open-kimono casebook
+on:
+  pull_request:
+    paths:
+      - "es/icalpa-mesa-del-ponente/dip-80-2026/**"
+      - "en/icalpa-rapporteur-workbench/dip-80-2026/**"
+      - "assets/dip80-open-kimono.*"
+      - "assets/data/dip-80-2026-open-kimono.json"
+      - "archive/ICALPA_DIP80_OPEN_KIMONO_*"
+      - "scripts/validate_dip80_open_kimono.py"
+      - ".github/workflows/validate-dip80-open-kimono.yml"
+  push:
+    branches: [main]
+    paths:
+      - "es/icalpa-mesa-del-ponente/dip-80-2026/**"
+      - "en/icalpa-rapporteur-workbench/dip-80-2026/**"
+      - "assets/dip80-open-kimono.*"
+      - "assets/data/dip-80-2026-open-kimono.json"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
+      - run: python scripts/validate_dip80_open_kimono.py
+      - run: node --check assets/dip80-open-kimono.js

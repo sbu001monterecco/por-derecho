@@ -1,21 +1,24 @@
 {
   "generatedAt": "2026-08-18",
   "caseId": "DIP-80-2026",
+  "manifestPolicy": "The manifest file itself is excluded to avoid an impossible recursive self-hash.",
+  "fileCountExcludingManifest": 26,
+  "routeCount": 14,
   "routes": [
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
-    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html",
-    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
     "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html",
     "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
     "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
-    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
     "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
-    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"
+    "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
+    "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html"
   ],
   "files": [
     {
@@ -27,11 +30,6 @@
       "path": "archive/ICALPA_DIP80_OPEN_KIMONO_DELETION_CONTINUITY_18AUG2026.md",
       "bytes": 1667,
       "sha256": "145630cafa87dfd9b5cdb75cf97b005ea4b0469bcc66caafab1cc8b4483fc774"
-    },
-    {
-      "path": "archive/ICALPA_DIP80_OPEN_KIMONO_FILE_MANIFEST_18AUG2026.json",
-      "bytes": 6045,
-      "sha256": "cea797fc5a889c5586687b21f15caf1047dad01fbda7e3e4d4db8c370b97ca67"
     },
     {
       "path": "archive/ICALPA_DIP80_OPEN_KIMONO_IMPLEMENTATION_CONTROL_18AUG2026.md",
@@ -150,8 +148,15 @@
     },
     {
       "path": "scripts/validate_dip80_open_kimono.py",
-      "bytes": 4697,
-      "sha256": "158b8ea5d95c5d7736a5664f7bf2698374aee1130700bf7add3ee8b5110cf2fc"
+      "bytes": 5384,
+      "sha256": "42413e58fd27babd821e77509e55066609598b6dc907470073904884ca4a8ae6"
     }
-  ]
+  ],
+  "acceptance": {
+    "masterPromptSections": "28/28",
+    "privacyScope": "DIP 80 implementation and integration surfaces only",
+    "humanDecisionGates": true,
+    "dip79Separation": true,
+    "noindexAllCasebookPages": true
+  }
 }
