@@ -45,4 +45,5 @@
   load('supervisory-practice-entrypoints-20260818.js', 'data-supervisory-practice-entrypoints', '20260818a');
   load('optimum-reader-journey-20260818.js', 'data-optimum-reader-journey', '20260818b');
   load('optimum-reader-journey-finish-20260818.js', 'data-optimum-reader-journey-finish', '20260818a');
+  load('ricpe-idoneidad-public-questions-20260818.js', 'data-ricpe-idoneidad-public-questions', '20260818a');
 })();
