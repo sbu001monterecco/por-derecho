@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'assets/optimum-reader-journey-20260818.*'
+      - 'assets/optimum-reader-journey-finish-20260818.js'
       - 'assets/ricpe-filed-status-20260817.js'
       - 'assets/supervisory-practice-entrypoints-20260818.js'
       - 'scripts/render_optimum_reader_journey.mjs'
@@ -12,6 +13,7 @@ on:
     branches: [main]
     paths:
       - 'assets/optimum-reader-journey-20260818.*'
+      - 'assets/optimum-reader-journey-finish-20260818.js'
       - 'assets/ricpe-filed-status-20260817.js'
       - 'assets/supervisory-practice-entrypoints-20260818.js'
       - 'scripts/render_optimum_reader_journey.mjs'
@@ -31,6 +33,7 @@ jobs:
       - name: JavaScript syntax
         run: |
           node --check assets/optimum-reader-journey-20260818.js
+          node --check assets/optimum-reader-journey-finish-20260818.js
           node --check assets/ricpe-filed-status-20260817.js
           node --check assets/supervisory-practice-entrypoints-20260818.js
           node --check scripts/render_optimum_reader_journey.mjs
