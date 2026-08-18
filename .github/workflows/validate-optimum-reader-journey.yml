@@ -1,0 +1,69 @@
+name: Validate optimum reader journey
+
+on:
+  pull_request:
+    paths:
+      - 'assets/optimum-reader-journey-20260818.*'
+      - 'assets/optimum-reader-journey-finish-20260818.js'
+      - 'assets/ricpe-filed-status-20260817.js'
+      - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'scripts/render_optimum_reader_journey.mjs'
+      - 'archive/OPTIMUM_USER_JOURNEY_EXECUTION_PROMPT_18AUG2026.md'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/optimum-reader-journey-20260818.*'
+      - 'assets/optimum-reader-journey-finish-20260818.js'
+      - 'assets/ricpe-filed-status-20260817.js'
+      - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'scripts/render_optimum_reader_journey.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check assets/optimum-reader-journey-20260818.js
+          node --check assets/optimum-reader-journey-finish-20260818.js
+          node --check assets/ricpe-filed-status-20260817.js
+          node --check assets/supervisory-practice-entrypoints-20260818.js
+          node --check scripts/render_optimum_reader_journey.mjs
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve the static site at the production subpath
+        run: |
+          mkdir -p /tmp/psr-site/por-derecho
+          cp -a . /tmp/psr-site/por-derecho/
+          cd /tmp/psr-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-http.log 2>&1 &
+          echo $! > /tmp/psr-http.pid
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-http.log
+          exit 1
+      - name: Render and validate desktop/mobile journeys
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_SCREENSHOT_DIR: artifacts/optimum-reader-journey
+        run: node scripts/render_optimum_reader_journey.mjs
+      - name: Upload screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: optimum-reader-journey-screenshots
+          path: artifacts/optimum-reader-journey
+          if-no-files-found: warn
+          retention-days: 14
