@@ -1,6 +1,6 @@
 # GROUP RECOVERY, RESTITUTION AND ACCOUNTABILITY OBJECTIVES
 
-Evidence/strategy cut-off: 15 August 2026.
+Evidence/strategy cut-off: 18 August 2026.
 
 ## Controlling principle
 
@@ -50,6 +50,81 @@ Maintain separate routes for:
 - State liability where legally applicable;
 - criminal investigation where the elements of a specific offence are independently evidenced.
 
+## Multi-claimant and multi-jurisdiction architecture
+
+The controlling specialist protocol is:
+
+- `archive/MULTI_CLAIMANT_CROSS_BORDER_RECOVERY_AUTHORITY_PROTOCOL_18AUG2026.md`.
+
+The common Sun Park factual and economic history does **not** create one universal claimant, one universal loss, one governing law or one competent court. The programme coordinates evidence and strategy while ring-fencing legal identity, standing, applicable law, limitation, privilege, costs, settlement authority and recovery accounting.
+
+### Meaning of “Sun Rock Group”
+
+`Sun Rock Group` may be used as a historical, economic and strategic umbrella for the ownership, operating, funding, commercialisation and recovery network developed around Hotel Sun Park. It is not one juridical person.
+
+Every legal person, community, operating structure, commercial counterparty and individual rights-holder retains its own assets, contracts, liabilities, causes of action, forum, limitation and recoveries.
+
+### Claimant classes
+
+1. **Aweswell Limited:** its own direct parent-company, creditor, funder, contractual, investment, recovery-cost and cross-border rights.
+2. **LPB:** estate, property, productive-unit, income, creditor, contractual and insolvency causes of action, subject to the standing and control rules of the concurso.
+3. **Matkator:** its own extraconcursal property, title, possession, use, works, income and damages position.
+4. **Historical operating or associated structures:** Explotadora / CEXP / OpCo and any other structure only after legal existence, capacity, representation, current control and claim ownership are verified.
+5. **Independent third parties:** owners, creditors, counterparties, distributors, suppliers, workers, customers, investors, insurers or other persons whose claims remain theirs unless a recognised legal basis transfers or authorises control.
+6. **Public and regulatory interests:** prosecution, supervision, sanctions, correction, confiscation, public-money recovery and institutional accountability remain functions of the competent public body rather than private claims belonging to Aweswell.
+
+### Authority gate
+
+Aweswell or the coordinated programme may say it pursues an independent third party's claim `on that party's behalf` only where the file contains a legally sufficient mandate, assignment, subrogation, agency, joinder/representative mechanism, insolvency-office-holder authority, court-recognised standing or another valid basis under the applicable law.
+
+Until then, the programme may preserve evidence, invite participation, support independent forensic work, coordinate properly instructed counsel and pursue Aweswell's own direct loss arising from the same events. It may not appropriate, settle, waive, assign, quantify as its own or publicly misdescribe the third party's claim.
+
+The present controlled public record does not show one blanket authority covering every independent third party. That is a present corpus result, not proof that no authority exists elsewhere.
+
+### Dormant does not mean abandoned
+
+Use `DORMANT`, `NOT PRESENTLY PURSUED`, `PARTICIPATION UNVERIFIED` or `AUTHORITY PENDING` unless primary evidence establishes a release, settlement, waiver, discontinuance, final adverse disposition or another legally operative abandonment.
+
+Before reactivation or coordinated pursuit, verify legal existence/control, direct injury, prior proceedings, settlement/release, insurer or office-holder control, limitation, willingness to participate and conflicts.
+
+### Separate procedural routes
+
+Maintain distinct but coordinated lanes for:
+
+- civil and contractual recovery;
+- mercantile and corporate remedies;
+- concursal / insolvency-estate remedies;
+- criminal or penal reporting, investigation and associated recovery where the competent law permits;
+- regulatory and supervisory action;
+- administrative, tax, public-funds and public-authority-liability routes;
+- professional and disciplinary accountability;
+- asset tracing, recognition and enforcement.
+
+A criminal, regulatory or disciplinary route may produce investigation, correction, sanction, confiscation, referral or evidence. It does not automatically produce private compensation.
+
+### Spain is central, not automatically exclusive
+
+Spanish and Canary Islands courts and authorities remain central to the hotel property, LPB concurso, local administration, public funding and many alleged acts and consequences. A UK or other foreign route is considered only where claimant-specific facts establish a proper jurisdictional and applicable-law nexus through claimant or defendant domicile, contract, duty, place of performance or harm, direct loss, payment, business operation, evidence or enforceable assets.
+
+For each proposed route record jurisdiction, governing law, service, limitation, costs, evidence, enforceability and interaction with existing Spanish proceedings. Do not use “international law” as a generic substitute for a concrete foreign-law or private-international-law analysis.
+
+## Claimant-specific forensic intake and liability management
+
+No claimant or amount enters the consolidated recovery dashboard until the following gates are completed or expressly marked open:
+
+1. **identity and status** — exact legal name, identifier, jurisdiction, current existence and controller;
+2. **claim ownership and authority** — direct owner, office-holder, assignee, subrogated party, mandated representative or disputed;
+3. **direct injury** — asset, contract or interest affected, date, immediate and consequential loss, and person who actually suffered it;
+4. **defendant and causation** — duty/relationship → act or omission → knowledge → immediate effect → propagated effect → claimant-specific loss;
+5. **applicable law and forum** — jurisdictional gateway, property situs, insolvency exclusivity, contract clauses and enforcement location;
+6. **limitation and procedural history** — accrual, knowledge, expiry, interruption/suspension, prior proceedings, settlement, release, discontinuance and preclusion risks;
+7. **evidence and quantum** — primary records, accounting, expert methodology, counterfactual, mitigation and confidence level;
+8. **non-duplication** — reconcile property value, fruits, operating income, rent, distribution margin, shareholder loss, insurer recovery, criminal restitution and public-authority compensation;
+9. **conflicts, privilege and data protection** — separate engagements, information barriers, settlement authority, disclosure and lawful data handling;
+10. **recovery ledger** — allocate every payment, judgment, settlement or restitution to the claimant and loss it actually satisfies.
+
+A further broad, undirected scan is not a precondition to publishing this controlled architecture. The next evidence pass must be targeted claimant by claimant and search equally for documents that prove, narrow, transfer, extinguish, settle, insure or time-bar a proposed claim.
+
 ## The three accountability nodes within the recovery programme
 
 ### Administrador Concursal — follow the money, assets and estate administration
@@ -92,7 +167,15 @@ Do not convert operating unity, hotel branding or later economic integration int
 
 ## Public formulation
 
-> **Por Derecho seeks restoration, not retaliation: recovery of the Group's businesses, assets, rights, income and lawful economic position wherever possible; compensation for proven harm that cannot be reversed; and proportionate responsibility for each public or private actor only to the extent that primary evidence establishes their individual contribution to the loss or its continuing effects.**
+> **Por Derecho seeks restoration, not retaliation: recovery of the Group's businesses, assets, rights, income and lawful economic position wherever possible; compensation for proven harm that cannot be reversed; coordinated preservation and claimant-specific evaluation of other affected rights; and proportionate responsibility for each public or private actor only to the extent that primary evidence establishes their individual contribution to the loss or its continuing effects.**
+
+Public wording must also state that:
+
+- the common evidence base may be coordinated while legal ownership of each claim remains separate;
+- no independent third party is described as a represented claimant without verified authority;
+- inactivity is not labelled abandonment without operative proof;
+- Spain is central but not automatically the exclusive forum;
+- no aggregate third-party damages figure is published before claimant-specific, non-duplicative expert work.
 
 ## Evidential safeguards
 
@@ -102,19 +185,24 @@ Do not convert operating unity, hotel branding or later economic integration int
 - Court approval ≠ independent verification of every underlying number.
 - Missing document in our corpus ≠ proof that it does not exist.
 - Chronology ≠ causation.
-- Group/perimeter label ≠ common legal identity, knowledge or intent.
+- Group/perimeter label ≠ common legal identity, knowledge, intent or claim ownership.
+- Commercial proximity ≠ authority to represent.
+- Inactivity ≠ abandonment.
+- Regulatory or criminal participation ≠ private control of prosecution or enforcement.
 - Registration/receipt ≠ investigation or merits acceptance.
 
 ## Propagation rule
 
 This file is the canonical strategic parent for the recovery/accountability architecture. Material changes must be propagated, as justified, to:
 
+- `archive/MULTI_CLAIMANT_CROSS_BORDER_RECOVERY_AUTHORITY_PROTOCOL_18AUG2026.md`;
 - `archive/RECOVERY_CAUSATION_MATRIX_CONCURSO36_15AUG2026.md`;
 - `archive/AC_ACCOUNTING_BRIDGE_15AUG2026.md`;
 - `archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md`;
 - `archive/LAJ_TESTIMONIO_LEDGER_15AUG2026.md` and comparative-access/supervisory records;
 - the extraconcursal ongoing-harm audit;
 - the institutional accountability hub;
-- the bilingual public recovery hub and AC / court / LAJ pages.
+- the bilingual public recovery hub and AC / court / LAJ pages;
+- the Correction Register and Missing Evidence Register where claimant-specific work confirms a correction or unresolved source requirement.
 
-The objective is not to make every page repeat this text. It is to make every affected page answer the same controlling question: **what must be proved, corrected or recovered from this part of the chain to restore the Group's lawful patrimonial position?**
+The objective is not to make every page repeat this text. It is to make every affected page answer the same controlling question: **what must be proved, corrected or recovered from this part of the chain to restore the lawful patrimonial position of the correct claimant?**
