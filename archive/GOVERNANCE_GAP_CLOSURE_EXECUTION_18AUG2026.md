@@ -8,21 +8,71 @@
 
 Do not mark a control closed from intent. Preserve objective evidence.
 
-### #355 — branch/ruleset enforcement
+## #355 — branch/ruleset enforcement
 
-A direct content write to `main` during this execution was rejected by GitHub with `Repository rule violations found — Changes must be made through a pull request.` This is objective evidence that a repository ruleset now enforces PR-only changes on `main`.
+A direct content write to `main` during this execution was rejected by GitHub with:
 
-The legacy branch-protection endpoint still reports `protected: true` with `protection.enabled: false` and empty legacy required-status contexts. This is compatible with a repository ruleset being the active enforcement mechanism, but the currently available connector cannot read the ruleset-detail endpoint to prove every desired rule (force-push/deletion/conversation-resolution/status contexts). Therefore #355 must not be closed solely from the PR-only rejection. Preserve the observed enforcement and leave only the finite unobservable ruleset details open unless independently verified in GitHub settings.
+`Repository rule violations found — Changes must be made through a pull request.`
 
-### #356 — independent recovery
+This is objective evidence that a repository ruleset now enforces PR-only changes on `main`.
 
-This execution strengthens `.github/workflows/repository-backup-bundle.yml` so each generated full Git bundle is not merely verified with `git bundle verify`, but is also restored into a clean mirror/worktree, checked with `git fsck --full`, compared against the source ref inventory, and smoke-served as the static site. The resulting bundle, ref inventory, hashes and restore report are uploaded as the workflow artifact.
+The legacy branch-protection endpoint still reports `protected: true` with `protection.enabled: false` and empty legacy required-status contexts. This is compatible with a repository ruleset being the active enforcement mechanism, but the currently available connector cannot read the repository-ruleset detail endpoint to prove every desired rule such as force-push/deletion prohibition, conversation resolution or the precise required check set.
 
-After the workflow succeeds, the artifact is to be downloaded through the GitHub connector and uploaded into connected Google Drive as an off-GitHub recovery copy. That off-primary copy plus the clean restore test is the substantive disaster-recovery control. This is an explicit compensating control for the original optional `git push --mirror` destination; it must not be described as a live mirror.
+A final closure PR is also used as an empirical status-check test: an attempted merge before the publication-integrity gate finishes must be rejected if required-check enforcement is active. The exact result should be preserved before final closure.
+
+**Controlled state:** PR-only enforcement VERIFIED; remaining ruleset sub-controls require direct GitHub-admin readback or equivalent objective evidence. Do not infer them from source code.
+
+## #356 — independent recovery
+
+PR #364 strengthened `.github/workflows/repository-backup-bundle.yml` so every full Git bundle is:
+
+- created with all refs;
+- verified with `git bundle verify`;
+- restored into a clean mirror and worktree;
+- checked with `git fsck --full`;
+- compared against the source ref inventory;
+- checked with `scripts/validate_mission_critical_repo.py`;
+- smoke-served as the restored static website;
+- uploaded together with SHA-256, refs and restore report.
+
+### Verified workflow execution
+
+- merge/source SHA: `a2bda8b3efc71d84241b599112a5bf64077bf3d1`
+- workflow: `Repository recovery bundle`
+- workflow run: `32149002725`
+- job: `95749849770`
+- result: `success`
+- clean restore / fsck / ref / static-site step: `success`
+- artifact ID: `9328943712`
+- artifact name: `por-derecho-repository-recovery-bundle`
+- artifact size: `10,397,758` bytes
+- artifact digest: `sha256:8c4a75a61dc6f982c1389328cb9380a1849380074b452c3c2b610b653a3c0c37`
+- GitHub retention expiry: `2026-11-16T14:32:55Z`
+
+### Independent off-GitHub copy
+
+The verified artifact was downloaded through the GitHub connector and uploaded into the connected Google Drive.
+
+- Drive file ID: `1vPeTOG5OS4lhVM-UExohcJCPqK4-O-Sm`
+- Drive title: `Por Derecho - Independent Recovery Bundle - a2bda8b3 - 2026-08-18.zip`
+- MIME type: `application/zip`
+- Drive readback: PASS
+
+This is an independent off-GitHub recovery copy. It is a full-ref Git recovery bundle with demonstrated clean restoration. It is **not** described as a live `git push --mirror` endpoint.
+
+### Recovery-control conclusion
+
+The substantive disaster-recovery risk is closed by an equivalent control:
+
+`full-ref Git bundle → cryptographic digest → clean restore → fsck → ref equality → site validation → off-GitHub Drive copy → Drive readback`.
+
+The optional live-mirror secret remains unconfigured, but is no longer required to claim that an independent recoverable copy exists. A recurring off-GitHub copy task should keep this control current after future weekly bundle runs.
+
+**Controlled state for #356: CLOSED BY VERIFIED EQUIVALENT OFF-PRIMARY RECOVERY CONTROL.**
 
 ## Final state rule
 
-- #356 may close only after the strengthened workflow passes, the artifact is downloaded, the artifact is uploaded to Google Drive, and Drive readback confirms the independent copy.
-- #355 may close only to the extent objectively evidenced by GitHub. PR-only enforcement is now observed; any remaining unobservable ruleset details must stay explicit rather than being inferred.
+- #356 may be closed as completed.
+- #355 may close only to the extent objectively evidenced by GitHub. PR-only enforcement is verified; remaining unobservable ruleset details must stay explicit rather than being inferred.
 
 This record exists to prevent governance-language inflation: **equivalent recovery can close disaster-recovery risk, but source code cannot impersonate GitHub administrative settings.**
