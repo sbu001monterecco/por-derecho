@@ -1,9 +1,9 @@
 {
   "publication_id": "ICALPA-DIP80-OPEN-KIMONO-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "controlling_branch": "agent/dip80-living-casebook-completion",
-  "controlling_pr": null,
+  "controlling_pr": 383,
   "expected_routes": {
     "es": [
       "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
@@ -28,6 +28,8 @@
     "assets/data/dip80-2026-casebook.js",
     "assets/dip80-casebook.css",
     "assets/dip80-casebook.js",
+    "assets/dip80-decision-tree.css",
+    "assets/dip80-decision-tree-enhance.js",
     "scripts/validate_dip80_casebook.py",
     "archive/DIP80_LIVING_CASEBOOK_IMPLEMENTATION_CONTROL_18AUG2026.md",
     "archive/DIP80_LIVING_CASEBOOK_DELETION_CONTINUITY_18AUG2026.md",
@@ -36,13 +38,14 @@
   "validation": {
     "evidence": [
       "Local deterministic gate: 14 routes, 13 evidence records, 24 decision nodes, 28/28 master controls.",
+      "Publication integrity gate run #60 succeeded before final branching enhancement; a fresh run on the final PR head is required before merge.",
       "Structured-data source and application JavaScript pass Node syntax validation."
     ],
-    "browser_note": "Local Chromium navigation is administrator-blocked in the execution environment; remote deployment and live/mobile smoke verification remain mandatory before LIVE_VERIFIED."
+    "browser_note": "Local Chromium navigation is administrator-blocked in the execution environment; deployment and live/mobile smoke verification remain mandatory before LIVE_VERIFIED."
   },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/",
     "https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/"
   ],
-  "notes": "This revision replaces the failed encoded-payload approach with ordinary reviewable Git source. Generic supervisory-practice pages do not satisfy the dedicated DIP 80 publication. Prior failed attempts remain preserved in repository history."
+  "notes": "Ordinary reviewable Git source supersedes the failed encoded-payload approach. Generic supervisory-practice pages do not satisfy this dedicated DIP 80 publication. Prior failed attempts remain preserved in history."
 }
