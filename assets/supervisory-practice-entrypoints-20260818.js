@@ -1,30 +1,14 @@
 (() => {
   const path = location.pathname.replace(/\/+$/, '/');
   const isEn = /\/en\//.test(path);
-  const t = (es, en) => isEn ? en : es;
-  const root = `/por-derecho/${isEn ? 'en' : 'es'}/`;
   const make = (html) => {
     const template = document.createElement('template');
     template.innerHTML = html.trim();
     return template.content.firstElementChild;
   };
 
-  const addHomeGateway = () => {
-    if (!new RegExp(`/por-derecho/${isEn ? 'en' : 'es'}/?$`).test(path) || document.getElementById('supervisory-practice-home-18aug')) return;
-    const section = make(`
-      <section class="ok-practice" id="supervisory-practice-home-18aug">
-        <div class="shell">
-          <p class="ok-kicker">${t('PRÁCTICA INSTITUCIONAL · EXPEDIENTE ABIERTO', 'INSTITUTIONAL PRACTICE · OPEN FILE')}</p>
-          <h2>${t('El mismo expediente, cuatro puertas profesionales.', 'The same record, four professional gateways.')}</h2>
-          <p class="ok-intro">${t('Cada oficina empieza por su propia competencia, sus primeros documentos y una pregunta finita. No necesita adoptar la teoría global para verificar su parte.', 'Each office starts with its own competence, first records and finite question. It need not adopt the global theory to verify its part.')}</p>
-          <div class="ok-actions"><a href="${root}${isEn ? 'cnmv-ricpe-verification/' : 'cnmv-ricpe-verificacion/'}">CNMV</a><a class="secondary" href="${root}${isEn ? 'regional-incentives-gc836-p06/' : 'incentivos-regionales-gc836-p06/'}">${t('Incentivos Regionales', 'Regional Incentives')}</a><a class="secondary" href="${root}${isEn ? 'snca-eu-funds-traceability/' : 'snca-fondos-europeos-trazabilidad/'}">${t('SNCA / fondos UE', 'SNCA / EU funds')}</a><a class="secondary" href="${root}${isEn ? 'public-authority-unitary-case-reconstruction/' : 'reconstruccion-unitaria-autoridades-publicas/'}">${t('Sala limpia', 'Clean room')}</a></div>
-        </div>
-      </section>`);
-    const summary = document.getElementById(isEn ? 'sixty-second-summary' : 'resumen-60-segundos');
-    if (summary) summary.insertAdjacentElement('afterend', section);
-    else document.querySelector('main')?.insertAdjacentElement('afterbegin', section);
-  };
-
+  // The homepage journey is now owned by optimum-reader-journey-20260818.js.
+  // Keep this file focused on the material Updates entry to avoid duplicate route modules or first-paint churn.
   const addUpdate = () => {
     const updates = /\/(actualizaciones|updates)\/$/.test(path);
     if (!updates || document.getElementById('open-kimono-supervisory-practice-18aug')) return;
@@ -35,7 +19,7 @@
     if (hero) hero.insertAdjacentElement('afterend', section);
   };
 
-  const apply = () => { addHomeGateway(); addUpdate(); };
+  const apply = () => addUpdate();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => setTimeout(apply, 1200), { once: true });
   else setTimeout(apply, 1200);
   setTimeout(apply, 2600);
