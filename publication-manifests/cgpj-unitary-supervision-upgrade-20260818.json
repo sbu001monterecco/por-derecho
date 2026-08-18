@@ -1,7 +1,7 @@
 {
   "publication_id": "CGPJ-UNITARY-SUPERVISION-UPGRADE-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "MERGED",
+  "current_state": "DELETION_SAFE",
   "controlling_pr": 373,
   "merge_sha": "6ff3f8cecaccfe42b4a2a392d31164460d14c1e7",
   "expected_routes": {
@@ -22,14 +22,63 @@
   },
   "expected_source_files": [
     "archive/CGPJ_UNITARY_SUPERVISION_EVIDENCE_MAP_18AUG2026.md",
+    "archive/CGPJ_VISIT_SIMULATION_AND_REASONED_OUTCOME_18AUG2026.md",
+    "archive/THREAD_DELETION_CONTINUITY_AUDIT_CGPJ_VISIT_18AUG2026.md",
+    "archive/CGPJ_LIVE_CLOSEOUT_PLAN_18AUG2026.md",
+    "archive/THREAD_DELETION_CONTINUITY_CGPJ_VISIT_POSTLIVE_18AUG2026.md",
     "sitemap-cgpj.xml"
   ],
   "validation": {
     "evidence": [
       "Publication integrity gate run 32158503633: success on PR 373 head ffc39951d2010dd9e33f56ea4be38b31e9937f37",
-      "Publication integrity gate run 32158613621: success on CI_GREEN manifest head 7219af5faff4c2b353cb625ef974a73254f13474; mission-critical repository invariants also passed"
+      "Publication integrity gate run 32158613621: success on CI_GREEN manifest head 7219af5faff4c2b353cb625ef974a73254f13474; mission-critical repository invariants also passed",
+      "PR 385 final validation run 32169046143: publication integrity, operational control-plane and mission-critical repository invariants all passed",
+      "PR 386 complete-route live verification run 32169673836: success; all ten declared routes plus release probe returned HTTP 200 with required markers"
     ]
   },
+  "deployment_evidence": {
+    "fresh_deployment_trigger_pr": 385,
+    "fresh_deployment_trigger_merge_sha": "b3ddc55266b4c4cd05ccfd4ca908f6645b0b09e9",
+    "release_probe": "deployment-probes/cgpj-unitary-supervision-20260818.txt",
+    "release_probe_marker": "CGPJ-UNITARY-SUPERVISION-LIVE-PROBE-20260818-V1",
+    "public_last_modified_observed": "Tue, 18 Aug 2026 18:05:42 GMT"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-comision-permanente-sala-lectura/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-supervision-masa-activa/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fuente-profesional-2018-conocimiento-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-magistrado-juez/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-permanent-commission-reader-room/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-insolvency-estate-supervision/",
+    "https://sbu001monterecco.github.io/por-derecho/en/2018-professional-source-insolvency-knowledge/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-mercantile-court-1/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-comision-permanente-sala-lectura/": ["SIETE NÚCLEOS DE SUPERVISIÓN"],
+    "https://sbu001monterecco.github.io/por-derecho/es/cgpj-supervision-masa-activa/": ["Siete núcleos que deben leerse juntos"],
+    "https://sbu001monterecco.github.io/por-derecho/es/fuente-profesional-2018-conocimiento-concursal/": ["Ledger público de procedencia"],
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-magistrado-juez/": ["Siete núcleos verificables"],
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/": ["Puente contable indispensable"],
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-permanent-commission-reader-room/": ["SEVEN SUPERVISORY NUCLEI"],
+    "https://sbu001monterecco.github.io/por-derecho/en/cgpj-insolvency-estate-supervision/": ["Seven nuclei that should be read together"],
+    "https://sbu001monterecco.github.io/por-derecho/en/2018-professional-source-insolvency-knowledge/": ["Public provenance ledger"],
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-mercantile-court-1/": ["Seven verifiable nuclei"],
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/": ["Questions the record should answer"]
+  },
+  "live_verification_evidence": {
+    "core_run": 32169454269,
+    "core_job": 95816802780,
+    "core_artifact_id": 9336680989,
+    "core_artifact_zip_sha256": "c097696af0d588b2adf1f5f7c66a6bb35bb2edf156a140e357c64d312251686e",
+    "complete_route_run": 32169673836,
+    "complete_route_job": 95817538171,
+    "complete_route_artifact_id": 9336760165,
+    "complete_route_artifact_zip_sha256": "9c494ac102bb61a2f40511abe004e5a807b6812ea47d9a7c5ddb621537a665c1",
+    "complete_route_result": "verified=true; attempts=1; last_error=null; all ten declared routes and release probe HTTP 200 with markers present"
+  },
+  "deletion_record": "archive/THREAD_DELETION_CONTINUITY_CGPJ_VISIT_POSTLIVE_18AUG2026.md",
   "reader_contract": [
     "Lead with the 14 May and 10 July adverse CGPJ archive record before Por Derecho objections",
     "Make insolvency-estate protection and supervision of the Insolvency Administrator the controlling spine",
@@ -68,5 +117,5 @@
     "robots_registration_already_exists": true,
     "homepage_feature": false
   },
-  "notes": "Substantive source is merged to main through PR 373. This manifest intentionally stops at MERGED until public GitHub Pages propagation is independently verified."
+  "notes": "The substantive source merged through PR 373. PR 385 forced a fresh Pages deployment with a release-specific probe. GitHub-hosted live verification then observed the complete declared route inventory on the actual public host. The prior thread simulation and deletion audit are preserved in Git, and the final post-live continuity record closes the deletion-safety gate when this manifest update merges."
 }
