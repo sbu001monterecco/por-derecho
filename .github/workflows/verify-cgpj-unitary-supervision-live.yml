@@ -13,13 +13,18 @@ on:
       - 'en/cgpj-insolvency-estate-supervision/index.html'
       - 'es/concurso-36-2012-magistrado-juez/index.html'
       - 'en/insolvency-36-2012-mercantile-court-1/index.html'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-cgpj-unitary-supervision-live.yml'
+      - 'publication-manifests/cgpj-unitary-supervision-upgrade-20260818.json'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: verify-cgpj-unitary-supervision-live
+  group: verify-cgpj-unitary-supervision-live-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
