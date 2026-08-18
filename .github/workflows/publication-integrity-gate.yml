@@ -33,5 +33,7 @@ jobs:
         run: python scripts/validate_publication_integrity.py
       - name: Validate operational control-plane invariants
         run: python scripts/validate_operational_items.py
+      - name: Validate DIP 80 living casebook
+        run: python scripts/validate_dip80_casebook.py
       - name: Validate mission-critical repository invariants
         run: python scripts/validate_mission_critical_repo.py
