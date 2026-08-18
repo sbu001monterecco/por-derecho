@@ -1,7 +1,7 @@
 {
   "publication_id": "CGPJ-UNITARY-SUPERVISION-UPGRADE-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "CI_GREEN",
   "controlling_pr": 373,
   "expected_routes": {
     "es": [
@@ -23,6 +23,11 @@
     "archive/CGPJ_UNITARY_SUPERVISION_EVIDENCE_MAP_18AUG2026.md",
     "sitemap-cgpj.xml"
   ],
+  "validation": {
+    "evidence": [
+      "Publication integrity gate run 32158503633: success on PR 373 head ffc39951d2010dd9e33f56ea4be38b31e9937f37"
+    ]
+  },
   "reader_contract": [
     "Lead with the 14 May and 10 July adverse CGPJ archive record before Por Derecho objections",
     "Make insolvency-estate protection and supervision of the Insolvency Administrator the controlling spine",
@@ -61,5 +66,5 @@
     "robots_registration_already_exists": true,
     "homepage_feature": false
   },
-  "notes": "PR 373 is open and mergeable after reconciliation with concurrent DP 1956 work. Do not call the upgrade CI-green, merged, deployed or live-verified until each state is evidenced."
+  "notes": "CI was green on the prior PR head; this manifest-state commit must itself pass the publication integrity gate before merge. Do not call the upgrade merged, deployed or live-verified until each state is evidenced."
 }
