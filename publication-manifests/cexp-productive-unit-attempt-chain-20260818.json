@@ -1,8 +1,9 @@
 {
   "publication_id": "CEXP-PRODUCTIVE-UNIT-ATTEMPT-CHAIN-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "controlling_pr": 415,
+  "merge_sha": "e44b59ce61407f03f12804a40db3ac611a2a3f6f",
   "base_sha": "1fc44884cb8f917f12772f7e9cc09b559a6bf642",
   "publication_type": "bilingual dynamic cross-site evidential chronology",
   "controlling_proposition": {
@@ -64,6 +65,18 @@
     "Jun-Jul 2018 expert, participation/property and operating-cost reconstruction materials",
     "Nov-Dec 2018 judicial/AC notification and formal exploitation-information follow-up"
   ],
+  "validation": {
+    "evidence": [
+      "PR 415 publication integrity run 32192263351: success",
+      "PR 415 publication/deletion-safety validation: success",
+      "PR 415 operational-control validation: success",
+      "PR 415 mission-critical repository validation: success",
+      "PR 415 merged to main at e44b59ce61407f03f12804a40db3ac611a2a3f6f"
+    ],
+    "publication_deletion_safety": "PASS",
+    "operational_control": "PASS",
+    "mission_critical_repository": "PASS"
+  },
   "publication_safety": {
     "privilege": "No raw private email bodies, private email addresses or privileged legal advice are published.",
     "expert_confidentiality": "The 11 Jun 2018 expert note is marked draft/confidential and is not published; only its public-safe existence, court-use purpose and methodology are described.",
@@ -74,7 +87,8 @@
   },
   "deletion_audit": {
     "path": "archive/THREAD_DELETION_AUDIT_CEXP_PRODUCTIVE_UNIT_ATTEMPT_CHAIN_18AUG2026.md",
-    "status": "PENDING_FINAL_COMPARE_AND_CI",
+    "repository_result": "PASS — PR 415: 5 changed files, 478 additions, 0 deletions, 0 files deleted, 0 renames; no static public HTML overwritten.",
+    "thread_status": "DELETION_SAFE_AT_REPOSITORY_LEVEL",
     "required_invariants": [
       "no files deleted",
       "no static public HTML overwritten",
@@ -87,8 +101,13 @@
     ]
   },
   "live_verification": {
-    "status": "PENDING",
-    "checked_at": null,
-    "evidence": []
-  }
+    "status": "ATTEMPTED_PUBLIC_EDGE_UNAVAILABLE_FROM_EXECUTION_ENVIRONMENT",
+    "checked_at": "2026-08-18T23:08:00+01:00",
+    "evidence": [
+      "Repository source and loader verified on main after merge.",
+      "Direct public-edge curl attempt failed at DNS resolution for sbu001monterecco.github.io in this execution environment.",
+      "Web open/search did not expose the GitHub Pages route for independent rendered readback."
+    ]
+  },
+  "notes": "The source implementation, loader, ledger, deletion audit and CI evidence are preserved on main. Public rendered-DOM execution is not independently verified in this execution; no LIVE_VERIFIED claim is made."
 }
