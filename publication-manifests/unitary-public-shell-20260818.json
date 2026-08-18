@@ -5,8 +5,13 @@
   "publication_type": "bilingual unitary reader shell, canonical control room and controlled site search",
   "purpose": "Compress and orchestrate the existing evidence system without replacing dossier ownership, evidential status controls or primary-source records.",
   "expected_routes": {
-    "en": ["en/case-control-room/index.html", "en/search/index.html", "en/dp-1901-2026/index.html"],
+    "en": ["en/case-control-room/index.html", "en/search/index.html"],
     "es": ["es/sala-control-caso/index.html", "es/buscar/index.html"]
+  },
+  "procedural_gateways": {
+    "en": ["en/dp-1901-2026/index.html"],
+    "source_counterpart": ["es/dp-1901-2026/index.html"],
+    "purpose": "English routing gateway only; it prevents substitution of DIP 2/2026 or DP 1956/2026 for the distinct DP 1901/2026 record and does not replace the fuller Spanish dossier."
   },
   "expected_source_files": [
     "assets/unitary-public-shell-20260818.js",
