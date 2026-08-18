@@ -1,4 +1,15 @@
 (() => {
+  // Aweswell continuity bootstrap: the name-continuity module is already loaded globally by site.js.
+  // Load the separate accounts/calificación evidential-control module once, while keeping both controls independent.
+  const currentScript = document.currentScript;
+  if (currentScript && !document.querySelector('script[data-aweswell-accounts-incorporation-loader]')) {
+    const module = document.createElement('script');
+    module.src = new URL('aweswell-accounts-calificacion-incorporation-20260818.js?v=20260818a', currentScript.src).href;
+    module.async = false;
+    module.dataset.aweswellAccountsIncorporationLoader = 'true';
+    document.head.appendChild(module);
+  }
+
   const path = window.location.pathname.replace(/\/+$/, '/');
   const isEnglish = path.endsWith('/en/lender-of-record/');
   const isSpanish = path.endsWith('/es/acreedor-de-registro/');
