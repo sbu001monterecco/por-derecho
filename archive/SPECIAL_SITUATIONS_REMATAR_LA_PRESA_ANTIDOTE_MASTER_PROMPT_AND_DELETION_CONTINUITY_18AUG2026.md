@@ -25,7 +25,7 @@ The phrase should be **earned by the narrative**. It should not appear too early
 
 ## 2. Source-status controls for the remembered conversation
 
-The originating thread records the author’s present recollection of a conversation with a professional identified inconsistently in the chat as **Ignacio Palacín** and later **Ignacio Paredeste**. The identity must therefore be independently verified before public attribution.
+The originating thread records the author’s present recollection of a conversation with a professional whose **first name is recalled as Ignacio but whose surname was stated inconsistently in the originating chat**. The speaker’s identity must therefore be independently verified before any public attribution, and the unresolved surname variants should not be reproduced in this public repository continuity record.
 
 The remembered conversation contained two distinct propositions:
 
