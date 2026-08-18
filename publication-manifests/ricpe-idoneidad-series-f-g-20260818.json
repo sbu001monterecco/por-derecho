@@ -1,8 +1,36 @@
 {
   "publication_id": "RICPE-IDONEIDAD-SERIES-F-G-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "DELETION_SAFE",
   "controlling_pr": 390,
+  "verification_pr": 392,
+  "merge_sha": "1ac8284e6d7ef0c8f23f2bcca3dbf09f5bf3b0f8",
+  "validation": {
+    "evidence": [
+      "Publication integrity gate run 32178301937: success",
+      "Validate supervisory-practice routes run 32178301918: success",
+      "Validate optimum reader journey run 32178301864: success"
+    ]
+  },
+  "deployment_evidence": {
+    "workflow": "Verify RICPE idoneidad live publication",
+    "run_id": 32179092774,
+    "job_id": 95847698935,
+    "result": "success",
+    "verified_at_utc": "2026-08-18T19:52:52Z",
+    "attempt": 1,
+    "artifact_id": 9340099454,
+    "artifact_sha256": "98b0b5742adf2f00828ddae81a3e03fdf18c98d1573005631799c5f65d6154f3"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/ricpe-idoneidad-series-f-g/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ricpe-idoneidad-series-f-g/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/ricpe-idoneidad-public-questions-20260818.js",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-ricpe-idoneidad.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt"
+  ],
+  "live_verification_evidence": "GitHub Actions run 32179092774 fetched all five public endpoints with HTTP 200 and no missing required markers on attempt 1 at 2026-08-18T19:52:52Z.",
+  "deletion_record": "archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md",
   "expected_routes": {
     "es": [
       "es/ricpe-idoneidad-series-f-g/index.html"
@@ -15,7 +43,10 @@
     "assets/ricpe-idoneidad-public-questions-20260818.js",
     "assets/ricpe-filed-status-20260817.js",
     "INSTITUTIONAL_ACTIONS.md",
-    "archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md"
+    "archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_THREAD_HANDOVER_20260818.md",
+    "archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md",
+    "scripts/verify_ricpe_idoneidad_live.py",
+    ".github/workflows/verify-ricpe-idoneidad-live.yml"
   ],
   "id": "ricpe-idoneidad-series-f-g-20260818",
   "title_es": "RICPE · Decreto 224/2022 · Series F/G · preguntas públicas",
