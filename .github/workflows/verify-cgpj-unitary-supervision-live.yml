@@ -1,0 +1,108 @@
+name: Verify CGPJ unitary supervision live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'deployment-probes/cgpj-unitary-supervision-20260818.txt'
+      - '.github/workflows/verify-cgpj-unitary-supervision-live.yml'
+      - 'publication-manifests/cgpj-unitary-supervision-upgrade-20260818.json'
+      - 'es/cgpj-comision-permanente-sala-lectura/index.html'
+      - 'en/cgpj-permanent-commission-reader-room/index.html'
+      - 'es/cgpj-supervision-masa-activa/index.html'
+      - 'en/cgpj-insolvency-estate-supervision/index.html'
+      - 'es/concurso-36-2012-magistrado-juez/index.html'
+      - 'en/insolvency-36-2012-mercantile-court-1/index.html'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-cgpj-unitary-supervision-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Poll public CGPJ Pages routes and markers
+        env:
+          BASE_URL: https://sbu001monterecco.github.io/por-derecho
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, pathlib, time, urllib.request
+
+          base = os.environ['BASE_URL'].rstrip('/')
+          checks = [
+              ('probe', '/deployment-probes/cgpj-unitary-supervision-20260818.txt', 'CGPJ-UNITARY-SUPERVISION-LIVE-PROBE-20260818-V1'),
+              ('es-reader', '/es/cgpj-comision-permanente-sala-lectura/', 'SIETE NÚCLEOS DE SUPERVISIÓN'),
+              ('en-reader', '/en/cgpj-permanent-commission-reader-room/', 'SEVEN SUPERVISORY NUCLEI'),
+              ('es-estate', '/es/cgpj-supervision-masa-activa/', 'Siete núcleos que deben leerse juntos'),
+              ('en-estate', '/en/cgpj-insolvency-estate-supervision/', 'Seven nuclei that should be read together'),
+              ('es-judge', '/es/concurso-36-2012-magistrado-juez/', 'Siete núcleos verificables'),
+              ('en-judge', '/en/insolvency-36-2012-mercantile-court-1/', 'Seven verifiable nuclei'),
+          ]
+          outdir = pathlib.Path('artifacts/cgpj-live-verification')
+          outdir.mkdir(parents=True, exist_ok=True)
+          evidence = {'base_url': base, 'checks': {}, 'verified': False}
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={'User-Agent':'por-derecho-cgpj-live-verifier/1.0','Cache-Control':'no-cache'})
+              with urllib.request.urlopen(req, timeout=20) as r:
+                  data = r.read()
+                  return r.status, r.geturl(), dict(r.headers), data
+
+          last_error = None
+          for attempt in range(1, 61):
+              all_ok = True
+              current = {}
+              for name, path, marker in checks:
+                  url = f"{base}{path}?pd_cgpj_verify={int(time.time())}-{attempt}"
+                  try:
+                      status, final_url, headers, data = fetch(url)
+                      text = data.decode('utf-8', errors='replace')
+                      ok = status == 200 and marker in text
+                      current[name] = {
+                          'path': path,
+                          'status': status,
+                          'final_url': final_url,
+                          'marker': marker,
+                          'marker_present': marker in text,
+                          'bytes': len(data),
+                          'sha256': hashlib.sha256(data).hexdigest(),
+                          'etag': headers.get('ETag'),
+                          'last_modified': headers.get('Last-Modified'),
+                          'attempt': attempt,
+                      }
+                      all_ok = all_ok and ok
+                  except Exception as exc:
+                      current[name] = {'path': path, 'marker': marker, 'error': repr(exc), 'attempt': attempt}
+                      all_ok = False
+                      last_error = repr(exc)
+              evidence['checks'] = current
+              evidence['attempts'] = attempt
+              if all_ok:
+                  evidence['verified'] = True
+                  break
+              time.sleep(10)
+
+          evidence['last_error'] = last_error
+          (outdir/'verification.json').write_text(json.dumps(evidence, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(evidence, ensure_ascii=False, indent=2))
+          if not evidence['verified']:
+              raise SystemExit('CGPJ public Pages routes were not all verified within the polling window')
+          PY
+      - name: Upload CGPJ live verification evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: cgpj-unitary-supervision-live-evidence
+          path: artifacts/cgpj-live-verification/verification.json
+          retention-days: 90
