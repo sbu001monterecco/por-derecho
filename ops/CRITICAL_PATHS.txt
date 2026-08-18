@@ -1,0 +1,19 @@
+# Mission-critical paths
+.github/workflows/
+.github/dependabot.yml
+.github/CODEOWNERS
+scripts/validate_publication_integrity.py
+scripts/validate_mission_critical_repo.py
+scripts/production_smoke_check.py
+assets/site.js
+assets/styles.css
+assets/ricpe-filed-status-20260817.js
+assets/optimum-reader-journey-20260818.js
+assets/optimum-reader-journey-finish-20260818.js
+es/index.html
+en/index.html
+robots.txt
+sitemap.xml
+publication-manifests/
+deployment-probes/
+ops/

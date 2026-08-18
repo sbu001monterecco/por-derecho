@@ -1,0 +1,73 @@
+name: Verify mission-critical hardening live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'deployment-probes/mission-critical-hardening-20260818.json'
+      - 'scripts/production_smoke_check.py'
+      - '.github/workflows/verify-mission-critical-hardening-live.yml'
+      - '.github/workflows/production-smoke-monitor.yml'
+      - '.github/workflows/repository-backup-bundle.yml'
+      - 'ops/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: mission-critical-hardening-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Poll production until the hardening probe and critical routes are live
+        id: verify
+        continue-on-error: true
+        run: |
+          python scripts/production_smoke_check.py \
+            --attempts 72 \
+            --interval 10 \
+            --timeout 20 \
+            --output artifacts/mission-critical-live/verification.json
+      - name: Upload live verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: mission-critical-hardening-live-evidence
+          path: artifacts/mission-critical-live/verification.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish live-propagation status
+        if: always()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+        with:
+          script: |
+            const success = process.env.VERIFY_OUTCOME === 'success';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: success ? 'success' : 'failure',
+              target_url: runUrl,
+              description: success
+                ? 'Mission-critical hardening and production routes are live'
+                : 'Mission-critical hardening live verification failed',
+              context: 'pages-propagation/mission-critical-hardening',
+            });
+      - name: Fail if live propagation was not verified
+        if: steps.verify.outcome != 'success'
+        run: exit 1
