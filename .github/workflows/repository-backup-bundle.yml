@@ -20,7 +20,7 @@ concurrency:
 jobs:
   backup:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     env:
       BACKUP_MIRROR_URL: ${{ secrets.POR_DERECHO_BACKUP_MIRROR_URL }}
     steps:
@@ -34,6 +34,7 @@ jobs:
           git fetch origin --prune --tags --force
       - name: Create and verify full Git recovery bundle
         run: |
+          set -euo pipefail
           mkdir -p artifacts/repository-backup
           BUNDLE="artifacts/repository-backup/por-derecho-${GITHUB_SHA}.bundle"
           git bundle create "$BUNDLE" --all
@@ -45,7 +46,48 @@ jobs:
             echo "created_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
             git show-ref
           } > artifacts/repository-backup/refs.txt
-      - name: Upload same-platform recovery artifact
+      - name: Clean restore, fsck, ref and static-site test
+        run: |
+          set -euo pipefail
+          BUNDLE="artifacts/repository-backup/por-derecho-${GITHUB_SHA}.bundle"
+          RESTORE_MIRROR="$RUNNER_TEMP/por-derecho-restore.git"
+          RESTORE_WORKTREE="$RUNNER_TEMP/por-derecho-restore"
+          rm -rf "$RESTORE_MIRROR" "$RESTORE_WORKTREE"
+
+          git clone --mirror "$BUNDLE" "$RESTORE_MIRROR"
+          git --git-dir="$RESTORE_MIRROR" fsck --full
+          git --git-dir="$RESTORE_MIRROR" show-ref | sort > "$RUNNER_TEMP/restored-refs.txt"
+          git show-ref | sort > "$RUNNER_TEMP/source-refs.txt"
+          diff -u "$RUNNER_TEMP/source-refs.txt" "$RUNNER_TEMP/restored-refs.txt"
+
+          git clone "$RESTORE_MIRROR" "$RESTORE_WORKTREE"
+          test "$(git -C "$RESTORE_WORKTREE" rev-parse HEAD)" = "$GITHUB_SHA"
+          python3 "$RESTORE_WORKTREE/scripts/validate_mission_critical_repo.py"
+
+          python3 -m http.server 8765 --directory "$RESTORE_WORKTREE" > "$RUNNER_TEMP/restore-http.log" 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 20); do
+            if curl -fsS "http://127.0.0.1:8765/es/" -o "$RUNNER_TEMP/restored-home-es.html"; then
+              break
+            fi
+            sleep 0.5
+          done
+          grep -q "Project Sun Rock" "$RUNNER_TEMP/restored-home-es.html"
+          kill "$SERVER_PID" 2>/dev/null || true
+          trap - EXIT
+
+          {
+            echo "restore_test=PASS"
+            echo "workflow_sha=${GITHUB_SHA}"
+            echo "restored_head=$(git -C "$RESTORE_WORKTREE" rev-parse HEAD)"
+            echo "fsck=PASS"
+            echo "refs_match=PASS"
+            echo "mission_critical_validation=PASS"
+            echo "static_site_smoke=PASS"
+            echo "tested_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > artifacts/repository-backup/restore-report.txt
+      - name: Upload verified recovery artifact
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: por-derecho-repository-recovery-bundle
@@ -59,7 +101,7 @@ jobs:
       - name: Record independent-backup gap when mirror is not configured
         if: env.BACKUP_MIRROR_URL == ''
         run: |
-          echo "::warning::POR_DERECHO_BACKUP_MIRROR_URL is not configured. The Git bundle is recoverable but remains hosted inside GitHub and is not independent disaster recovery."
+          echo "::warning::POR_DERECHO_BACKUP_MIRROR_URL is not configured. The workflow nevertheless creates and clean-restores a full Git bundle; an off-GitHub copy must be preserved separately before disaster-recovery closure."
       - name: Publish recovery-bundle status
         if: always()
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
@@ -76,7 +118,7 @@ jobs:
               state: success ? 'success' : 'failure',
               target_url: runUrl,
               description: success
-                ? 'Verified Git recovery bundle created'
-                : 'Git recovery bundle creation failed',
+                ? 'Verified Git recovery bundle + clean restore passed'
+                : 'Git recovery bundle or clean restore failed',
               context: 'backup/repository-recovery-bundle',
             });
