@@ -17,6 +17,34 @@ TARGETS = [
         "markers": ["From alert to irreversibility.", "CONSEQUENCE ≠ HISTORICAL JUDICIAL KNOWLEDGE", "THE RESULT DOES NOT ANSWER THE ORIGIN", "Matkator"],
     },
     {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/cgpj-alzada-regage-20260816.js",
+        "markers": ["CGPJ_ALERT_VISUAL_INTEGRATION_V1", "/por-derecho/es/cgpj-alerta-irreversibilidad/", "/por-derecho/en/cgpj-alert-to-irreversibility/", "PUENTE EXTRACONCURSAL", "LATER PUBLIC RELIANCE"],
+    },
+    {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/site.js",
+        "markers": ["cgpj-alzada-regage-20260816.js"],
+    },
+    {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/cgpj-comision-permanente-sala-lectura/",
+        "markers": ["SALA DE LECTURA", "site.js"],
+    },
+    {
+        "url": "https://sbu001monterecco.github.io/por-derecho/en/cgpj-permanent-commission-reader-room/",
+        "markers": ["PERMANENT COMMISSION", "site.js"],
+    },
+    {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-magistrado-juez/",
+        "markers": ["Alberto López Villarrubia", "site.js"],
+    },
+    {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+        "markers": ["Alerta 2021", "site.js"],
+    },
+    {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+        "markers": ["LPB era la concursada", "site.js"],
+    },
+    {
         "url": "https://sbu001monterecco.github.io/por-derecho/deployment-probes/cgpj-alert-irreversibility-20260818.txt",
         "markers": ["CGPJ-ALERT-IRREVERSIBILITY-LIVE-PROBE-20260818-V1"],
     },
@@ -28,7 +56,7 @@ TARGETS = [
 
 
 def fetch(url: str, timeout: int) -> tuple[int, str]:
-    req = urllib.request.Request(url, headers={"User-Agent": "por-derecho-cgpj-alert-live-verifier/1"})
+    req = urllib.request.Request(url, headers={"User-Agent": "por-derecho-cgpj-alert-live-verifier/2"})
     with urllib.request.urlopen(req, timeout=timeout) as response:
         return response.status, response.read().decode("utf-8", errors="replace")
 
