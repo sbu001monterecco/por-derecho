@@ -17,6 +17,9 @@
   ];
   if (!relevant.some(fragment => path.includes(fragment))) return;
 
+  const isDedicated = path.includes('/retracto-tanteo-cuatro-vias/') || path.includes('/retracto-tanteo-four-tracks/');
+  if (isDedicated) return;
+
   // Primary-source correction lock for the 15-Feb-2018 Commercial Court order.
   // Do not touch five-day remedies belonging to the 5-Mar-2018 decree or 13-May-2024 ordering act.
   document.querySelectorAll('main p, main li, main td, main .question, main .card').forEach(el => {
