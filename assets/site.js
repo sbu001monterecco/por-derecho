@@ -12,7 +12,7 @@
   const caseArchitecture = document.createElement('script');
   caseArchitecture.src = new URL('case-information-architecture-20260819.js?v=20260819b', current.src).href;
   caseArchitecture.async = false;
-  caseArchitecture.dataset.caseInformationArchitectureLoader = 'true';
+  caseArchitecture.setAttribute('data-case-information-architecture-loader', 'true');
   document.head.appendChild(caseArchitecture);
 
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
