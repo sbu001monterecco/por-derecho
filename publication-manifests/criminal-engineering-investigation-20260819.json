@@ -1,0 +1,140 @@
+{
+  "publication_id": "SUN-PARK-CRIMINAL-ENGINEERING-INVESTIGATION-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "publication_type": "bilingual live forensic investigation architecture, unitary repository audit and actor-specific cross-site gateway",
+  "subject": "Alleged multi-stage criminal engineering and enabling across the Sun Park to CAM to HNT to MYND chain",
+  "expected_routes": {
+    "es": [
+      "es/ingenieria-forense-criminal-sun-park/index.html"
+    ],
+    "en": [
+      "en/sun-park-criminal-engineering-investigation/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "operations/SUN_PARK_CRIMINAL_ENGINEERING_ACTIVATION_2026-08-19.md",
+    "assets/criminal-engineering-investigation-20260819.js",
+    "assets/reverse-engineering-360-20260819.js",
+    "assets/data/criminal-engineering-investigation-v1.json",
+    "scripts/audit_criminal_engineering_repository.py",
+    "scripts/render_criminal_engineering_investigation.mjs",
+    ".github/workflows/validate-criminal-engineering-investigation.yml",
+    ".github/workflows/verify-criminal-engineering-investigation-live.yml",
+    "sitemap-criminal-engineering.xml",
+    "robots.txt"
+  ],
+  "controlling_propositions": [
+    "This is a live adversarial investigation, not a textbook exercise.",
+    "Formal acts do not automatically validate the truth or legality of the upstream premise.",
+    "Repeated benefit to the Acosta Matos perimeter is a reason for heightened examination, not automatic proof of coordination or crime.",
+    "Responsibility must be allocated actor by actor and act by act through authority, knowledge, duty, action or omission, benefit, harm and causation.",
+    "Judge and LAJ functions must be separated.",
+    "Every criminal or serious non-compliance hypothesis must be tested element by element with exculpatory evidence and the strongest alternative explanation."
+  ],
+  "allegation_boundary": {
+    "por_derecho_allegation": "The Acosta Matos and RIC Private Equity perimeters may have designed, exploited or preserved a multi-stage sequence assisted by knowing, reckless, negligent or passive enablers.",
+    "judicial_finding": false,
+    "collective_guilt_presumed": false,
+    "presumption_of_innocence_preserved": true,
+    "right_of_response_preserved": true
+  },
+  "eight_phase_architecture": [
+    "strategic entry",
+    "de facto control",
+    "economic and evidential construction",
+    "judicial conversion",
+    "notarial and registry conversion",
+    "investment conversion",
+    "operational normalisation",
+    "defence and irreversibility"
+  ],
+  "actor_perimeters": [
+    "Acosta Matos / CAM / HNT",
+    "RIC Private Equity perimeter",
+    "Insolvency Administration",
+    "judge",
+    "LAJ / judicial office",
+    "notary and Land Registry",
+    "valuers, lawyers, experts and operators",
+    "authorities, supervisors and funding bodies"
+  ],
+  "enabler_ladder": [
+    "E0 unwitting conduit",
+    "E1 professional error",
+    "E2 negligent gatekeeper",
+    "E3 reckless or conscious disregard",
+    "E4 knowing facilitation",
+    "E5 essential cooperation or inducement",
+    "E6 coordinated participation",
+    "E7 concealment, retaliation or benefit preservation"
+  ],
+  "priority_issues": [
+    "P0 definitive creditor texts versus debt used in 2022",
+    "P0 offer, 2021 order, protocol 457 and final accounts",
+    "P0 LPB, Matkator and third-party perimeter finca by finca",
+    "P0 EUR 400,000 unencumbered-premises trail",
+    "P1 RICPE conflict, due diligence, reactivation and money",
+    "P1 Administrator control, loyalty, accounts and causation",
+    "P1 judge and LAJ act-by-act separation",
+    "P1 knowledge, coordination, obstruction or retaliation",
+    "P1 false-premise propagation through formal acts",
+    "P1 benefit, finance and irreversibility flows"
+  ],
+  "counsel_and_evidence_gates": [
+    "complete certified court and LexNET chain",
+    "complete definitive creditor texts and every modification",
+    "legal basis for every component of EUR 13,168,082.02",
+    "proof of five-day court notification of protocol 457",
+    "complete EUR 400,000 bank, ledger, deed and registry chain",
+    "final liquidation accounts and conclusion order",
+    "historic and current finca-by-finca registry certificates",
+    "RICPE board, committee, conflict, due-diligence, waiver and funding files",
+    "actor-specific communications, instructions and exculpatory evidence",
+    "retaliation and preservation evidence where alleged",
+    "date-specific criminal and procedural-law validation before external filing"
+  ],
+  "public_audit": {
+    "scope": [
+      "all Spanish public HTML",
+      "all English public HTML",
+      "runtime JavaScript",
+      "canonical pages",
+      "actor coverage",
+      "judge-LAJ conflation risk",
+      "high-risk criminal wording",
+      "privacy leakage",
+      "evidence-preservation, retaliation, benefit-flow and strongest-defence coverage"
+    ],
+    "interpretation": "The audit identifies publication architecture and wording risks; it does not determine criminal liability."
+  },
+  "publication_safety": {
+    "private_source_files_committed": false,
+    "privileged_communications_committed": false,
+    "recipient_names_committed": false,
+    "gmail_or_drive_identifiers_committed": false,
+    "private_source_hashes_committed": false,
+    "confidential_witnesses_identified": false,
+    "criminal_guilt_stated_as_fact": false,
+    "conspiracy_stated_as_proven": false,
+    "bribery_or_prevarication_stated_without_element_evidence": false
+  },
+  "validation": {
+    "evidence": [
+      "PR validation pending.",
+      "Repository audit, browser rendering, publication integrity, mission-critical policy and off-GitHub preservation must pass before merge."
+    ],
+    "source_presence": "PENDING",
+    "json_and_sitemap": "PENDING",
+    "unitary_repository_audit": "PENDING",
+    "bilingual_route_parity": "PENDING",
+    "desktop_mobile_render": "PENDING",
+    "privacy": "PENDING",
+    "public_edge": "NOT_YET_CLAIMED"
+  },
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR_OPEN records source work only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+  }
+}
