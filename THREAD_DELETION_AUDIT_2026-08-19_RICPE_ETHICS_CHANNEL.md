@@ -7,7 +7,7 @@
 
 **STATUS: SAFE TO DELETE NOW once this repository preservation change is durably retained; prefer merge to `main`.**
 
-The earlier conditional gaps have been closed. The exact long portal narrative and person/role wording have been recovered from the live thread and migrated verbatim/substantively into the canonical preservation record. The controlling signed PDF has also been positively reconciled against an independently preserved private Google Drive copy by exact file name, byte size and SHA-256 hash.
+The earlier conditional gaps have been closed. The exact long portal narrative and person/role wording have been recovered from the live thread and migrated into the canonical preservation record. The controlling signed PDF has also been positively reconciled against an independently preserved private Google Drive copy by exact file name, byte size and SHA-256 hash.
 
 The absence of a future RICPE receipt/reference is not a deletion blocker because no channel submission was evidenced as completed in the source thread. Those are future records to be captured when generated, not existing thread assets that would be lost by deletion.
 
@@ -110,3 +110,5 @@ Prefer merging PR #458 into `main` before deleting the thread. If repository gov
 - **Future submission receipt/reference:** not yet generated/evidenced; not a current-thread deletion dependency.
 
 **This thread may now be deleted without loss of the substantive evidence or unique drafting developed in it, provided the preservation branch/PR is not itself discarded.**
+
+<!-- deletion-safety-closed: 2026-08-19 -->
