@@ -6,6 +6,7 @@
 **Base data:** `assets/data/retracto-credit-1041-2017-v1.json`  
 **Primary-act override:** `assets/data/retracto-primary-act-closure-v1.json`  
 **Representation override:** `assets/data/legal-representation-retracto-override-v1.json`  
+**Four-track cross-control:** `archive/RETRACTO_TANTEO_FOUR_TRACK_360_CONTROL_19AUG2026.md`  
 **Linked controls:** `archive/DP1041_PRIMARY_ACT_CLOSURE_19AUG2026.md`; `archive/PH122_CAM_ASSIGNMENT_ART1535_PUBLICATION_CONTROL_16AUG2026.md`.
 
 ## 1. Controlled conclusion after primary-act closure
@@ -24,6 +25,8 @@ The primary sequence now establishes:
 6. The **13 May 2024** judicial-office order independently confirms that DP 1041 was finalised and archived because of the claimant's withdrawal under the 5 March 2018 Decree, and states that no proceedings derived from it.
 
 The remaining gap is narrower and more important: **who internally decided that LPB should withdraw, who instructed that decision, who drafted/signed/filed the pleading, and what contemporaneous estate-interest analysis justified it.**
+
+**Track-identity rule:** DP 1041 is the PH122→CAM **credit-assignment** workstream. It is separate from the directly documented May–June 2018 lawyer workstream concerning potential rights over **individual Sun Park property interests**. Any unit-level right must be proved transaction-by-transaction and receives its own causation analysis.
 
 ## 2. Why this remains a material storyline event
 
@@ -90,7 +93,13 @@ The order:
 - recognised CAM as assignee creditor; and
 - expressly relied on the AC's favourable report and presumed AC verification rather than requiring all title documentation sought by LPB for creditor substitution.
 
-The order provided a five-day `recurso de reposición` without suspensive effect. The complete challenge/finality chain remains open.
+**Primary-source procedural correction:** the order provided a **20-day `recurso de apelación` under Article 97 bis.2 of the then-applicable Insolvency Law**. Earlier wording attributing a five-day `recurso de reposición` to this order is superseded. The actual challenge/finality chain remains open.
+
+Keep separate:
+
+- 15-Feb-2018 Commercial Court order → 20-day appeal;
+- 5-Mar-2018 DP1041 Decree → five-day review; and
+- 13-May-2024 judicial-office order → five-day reposición.
 
 ### 5 March 2018 — LPB withdraws DP 1041
 
@@ -153,6 +162,25 @@ A strong but responsible formulation is:
 
 > **The AC's intervention had two documented effects in the same workstream: it supported CAM's creditor recognition and it directly displaced the lawyer who had initiated LPB's deed-and-price route. The proceeding later records Borja as LPB's lawyer and LPB's withdrawal. That sequence demands an estate-interest and instruction-chain explanation; it does not by itself prove collusion or unlawful intent.**
 
+### Separate unit/property rights causation
+
+Do **not** transfer the DP1041 C5 finding to the later unit-rights workstream.
+
+For every candidate RTB/RTC/RTD right establish afresh:
+
+1. right-holder;
+2. legal basis and law then in force;
+3. transfer date and title structure;
+4. whether the AC controlled the right;
+5. when the AC knew of the transfer/right;
+6. what counsel asked or advised;
+7. deadline;
+8. AC act/omission;
+9. measurable loss / CAM-side benefit; and
+10. contemporaneous estate-interest explanation.
+
+Only then assign C0–C5.
+
 ## 7. Strongest defensible framing of the Commercial Court
 
 The 15 February order supports an **intervention/deference asymmetry** question:
@@ -174,6 +202,8 @@ Do not publish improper judicial bias, prevaricación or corruption as establish
 4. An insolvency administrator can legitimately decide not to continue weak or value-destructive litigation if that decision is rationally grounded in estate interest.
 5. The JPI and Mercantile routes addressed different applications.
 6. No current primary source proves collusion among CAM, PH122/Cerberus, the AC and the judge.
+7. The existence of a May–June 2018 unit-level legal workstream does not itself prove that a valid retracto existed for every unit transaction.
+8. The Law 5/1999 transitional paragraph investigated by counsel was not an operative 2018 statutory basis; other legal bases must be tested separately.
 
 ## 9. Representation continuity
 
@@ -202,10 +232,11 @@ The P0 list is now narrower:
 3. Author/drafter/signatory/filer and filing channel of the withdrawal pleading.
 4. Complete Cristo → successor `venia`, power and handover chronology.
 5. Contemporaneous estate-interest/cost-benefit analysis for withdrawal.
-6. Complete appeal/finality chain for the 15 February 2018 order.
+6. Actual 20-day appeal/finality chain for the 15 February 2018 order.
 7. Complete PH122 → CAM deed, schedules, allocated price, payment and servicing proof.
 8. Exact pre-assignment declaratory controversy relevant to the technical Article 1535 test, credit by credit.
 9. Any independent substantive Article 1535 action filed elsewhere.
+10. Finca-by-finca unit-rights ledger under the four-track control, including 8,499, 8,500, 8,706, 8,718 and 8,501.
 
 ## 11. Publication rule
 
@@ -215,7 +246,9 @@ This audit supports strong causation and accountability questions. It must not b
 - the AC personally drafted, signed or instructed the withdrawal;
 - the AC destroyed a certain winning claim;
 - the judge blocked a legally certain retracto;
-- Cerberus was the legal assignor absent primary proof; or
+- Cerberus was the legal assignor absent primary proof;
+- LPB definitely had a valid unit-level statutory retracto over every sale to CAM;
+- the AC cancelled every separate unit/property right; or
 - a criminal agreement, corruption or improper motive is established.
 
 The evidence is strongest when the documented chain is stated precisely and the remaining attribution gap is made explicit.
