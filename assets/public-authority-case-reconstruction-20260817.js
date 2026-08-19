@@ -72,3 +72,15 @@
   if (hero) hero.insertAdjacentElement('afterend', section);
   else main.insertAdjacentElement('afterbegin', section);
 })();
+
+// 19-Aug-2026: unitary Control 22/24 liability layer. Kept as an independent loader so
+// the criminal/institutional module is available on CAM and DP1956 routes even when
+// the public-authority gateway above intentionally returns early on a given page.
+(() => {
+  if (document.querySelector('script[data-control22-24-unitary]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('control22-24-unitary-liability-20260819.js?v=20260819a', document.currentScript?.src || location.href).href;
+  script.async = false;
+  script.dataset.control22_24Unitary = '1';
+  document.head.appendChild(script);
+})();
