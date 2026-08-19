@@ -1,0 +1,75 @@
+name: Verify ICALPA DIP 80 Ponente View live
+
+on:
+  pull_request:
+    paths:
+      - 'deployment-probes/icalpa-dip80-ponente-view-20260819.json'
+      - 'scripts/verify_icalpa_dip80_ponente_view_live.py'
+      - '.github/workflows/verify-icalpa-dip80-ponente-view-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'deployment-probes/icalpa-dip80-ponente-view-20260819.json'
+      - 'scripts/verify_icalpa_dip80_ponente_view_live.py'
+      - '.github/workflows/verify-icalpa-dip80-ponente-view-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: verify-icalpa-dip80-ponente-view-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Verify public ES/EN pages and assets
+        run: |
+          python3 scripts/verify_icalpa_dip80_ponente_view_live.py \
+            --probe deployment-probes/icalpa-dip80-ponente-view-20260819.json \
+            --attempts 60 \
+            --interval 10 \
+            --timeout 20 \
+            --output artifacts/icalpa-dip80-ponente-view-live.json
+
+      - name: Show verification evidence
+        if: always()
+        run: cat artifacts/icalpa-dip80-ponente-view-live.json || true
+
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: icalpa-dip80-ponente-view-live-evidence
+          path: artifacts/icalpa-dip80-ponente-view-live.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish commit status
+        if: always()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+        env:
+          JOB_STATUS: ${{ job.status }}
+        with:
+          script: |
+            const success = process.env.JOB_STATUS === 'success';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: success ? 'success' : 'failure',
+              target_url: runUrl,
+              description: success
+                ? 'ES/EN Ponente View and assets verified live'
+                : 'Ponente View public-edge verification failed',
+              context: 'pages-live/icalpa-dip80-ponente-view',
+            });
