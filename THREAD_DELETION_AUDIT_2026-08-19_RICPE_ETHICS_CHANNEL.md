@@ -31,6 +31,8 @@ This file now preserves:
 12. explicit rule against storing passwords/access codes in the public repository;
 13. six-state evidential classification discipline: fact / documentary representation / allegation / inference / question for investigation / unresolved gap.
 
+The repository `README.md` also indexes the RICPE preservation and deletion-audit records so a future operator can locate them without relying on the deleted chat.
+
 ## Controlling signed communication — reconciliation certificate
 
 The source thread and current runtime contain:
@@ -72,6 +74,7 @@ The PDF is deliberately not committed to the public GitHub repository because it
 | Submission receipt/reference fields | same | Future evidence only; no submission was evidenced in the thread |
 | Credential handling rule | same | Secrets must remain outside public GitHub |
 | Evidential-state distinctions | same | None |
+| Future discoverability | README deletion-safety index | None |
 
 ## Claims deliberately NOT hardened into fact
 
