@@ -1,0 +1,139 @@
+{
+  "publication_id": "LPB-TEXTOS-DEFINITIVOS-LIQUIDATION-BASELINE-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-20",
+  "current_state": "REMOTE_SOURCE",
+  "lifecycle": [
+    "DRAFT",
+    "REMOTE_SOURCE",
+    "PR_OPEN",
+    "CI_GREEN",
+    "MERGED",
+    "DEPLOYED",
+    "LIVE_VERIFIED",
+    "DELETION_SAFE"
+  ],
+  "blocked_state": "BLOCKED_RECOVERY",
+  "subject": "Primary-source reconstruction of the LPB definitive texts and liquidation baseline in Concurso 36/2012",
+  "expected_routes": {
+    "es": ["es/textos-definitivos-lpb-base-liquidacion/index.html"],
+    "en": ["en/lpb-definitive-texts-liquidation-baseline/index.html"]
+  },
+  "expected_source_files": [
+    "archive/LPB_TEXTOS_DEFINITIVOS_LIQUIDATION_BASELINE_UNITARY_DIGEST_20AUG2026.md",
+    "assets/data/lpb-definitive-texts-v1.json",
+    "assets/data/lpb-definitive-texts-route-v1.json",
+    "assets/lpb-definitive-texts-unitary-20260820.js",
+    "operations/LPB_TEXTOS_DEFINITIVOS_LIQUIDATION_BASELINE_ACTIVATION_2026-08-20.md",
+    "sitemap-lpb-definitive-texts.xml",
+    "scripts/render_lpb_definitive_texts_unitary.mjs",
+    "scripts/validate_lpb_definitive_texts_unitary.py",
+    ".github/workflows/validate-lpb-definitive-texts-unitary.yml",
+    ".github/workflows/verify-lpb-definitive-texts-live.yml"
+  ],
+  "primary_source_manifest": [
+    {
+      "evidence_id": "EVID-LPB-2013-ART75",
+      "date": "2013-01-15",
+      "pages": 37,
+      "sha256": "a48441aafcddd63ae792f46fc88188b17a32cecba943b8db956587ecd8c8a073",
+      "raw_file_committed": false
+    },
+    {
+      "evidence_id": "EVID-LPB-2016-TD-FILING",
+      "date": "2016-04-28",
+      "signature_date": "2016-04-29",
+      "pages": 6,
+      "sha256": "b62970419a699f07c48777c300f9259721df2072c0f8739aa9aa9d2db9e9aa79",
+      "raw_file_committed": false
+    },
+    {
+      "evidence_id": "EVID-LPB-2016-TD-CREDITORS",
+      "date": "2016-04-28",
+      "pages": 1,
+      "sha256": "9004df2fbc361b5f6a4b7042014e025b7643520f68c863c5835f572bdd071c31",
+      "raw_file_committed": false
+    },
+    {
+      "evidence_id": "EVID-LPB-2018-TD-HOLDER",
+      "date": "2018-02-08",
+      "pages": 3,
+      "sha256": "22f4149590ef80e050640c9691b7c34dc3a5306f87e2d727bc4f852990980b88",
+      "raw_file_committed": false
+    },
+    {
+      "evidence_id": "EVID-LPB-2018-LIQ-PLAN",
+      "date": "2018-02",
+      "pages": 15,
+      "sha256": "767b5966bc2d380a35633b3dcb884256e0067cc3e4be3b07e5cf5d2f947b1a78",
+      "raw_file_committed": false
+    },
+    {
+      "evidence_id": "EVID-LPB-2018-PLAN-AUTO",
+      "date": "2018-04-16",
+      "pages": 7,
+      "sha256": "2de1527a738658252f81fd3e402622f677280aaed735e5ef117d44c4a06dcd05",
+      "raw_file_committed": false
+    }
+  ],
+  "verified_findings": [
+    "The 2016 filing expressly modified the inventory, creditor list and report and elevated the prior report to definitive status except where expressly modified.",
+    "The principal 2016 tables record active EUR 19,486,498.94 and passive EUR 10,125,752.00.",
+    "The separate definitive creditor list records EUR 9,052,251.69 of special privilege.",
+    "The two quantified special-privilege entries are EUR 857,373.81 and EUR 8,194,877.88.",
+    "The 8 February 2018 order substitutes CAM as holder at those recognised amounts.",
+    "The liquidation plan expressly relies on the inventory made definitive.",
+    "The plan identifies 159 apartments, 29 premises and two pool/solarium properties as LPB's real-estate inventory."
+  ],
+  "traceability_questions": [
+    "principal 2016 tables versus materially different figures in a later paragraph",
+    "1 February 2011 report reference versus the controlled 15 January 2013 LPB report",
+    "28 April filing date versus 29 April electronic signature",
+    "three-cent table/list differences in ordinary and subordinated totals"
+  ],
+  "express_exclusions": [
+    "no universal-nullity conclusion",
+    "no established liquid surplus conclusion",
+    "no automatic treatment of mortgage caps or later accruals as definitive insolvency credit",
+    "no automatic cancellation of later rights",
+    "no criminality, bad faith or misconduct finding",
+    "no inclusion of Matkator or third-party property in LPB's estate without property-specific proof",
+    "no publication of raw PDFs, signatures, identifiers or private source-system references"
+  ],
+  "open_evidence": [
+    "complete court-certified definitive-text bundle and docket index",
+    "separate detailed Annex 2 claims-against-the-estate schedule",
+    "filing receipt and decision receiving/joining the definitive texts",
+    "complete later modification chain",
+    "2022-02-21 credit calculation and legal basis for each component",
+    "final accounts, ledger, bank trail, liquidation balance and conclusion record",
+    "property-by-property notarial and Registry implementation"
+  ],
+  "privacy": {
+    "raw_primary_pdfs_committed": false,
+    "personal_identifiers_committed": false,
+    "private_source_ids_committed": false,
+    "hash_metadata_committed": true
+  },
+  "validation": {
+    "publication_integrity": "PENDING",
+    "json_and_javascript": "PENDING",
+    "bilingual_route_parity": "PENDING",
+    "static_render": "PENDING",
+    "repository_merge": "PENDING",
+    "public_edge": "PENDING"
+  },
+  "repository_state": {
+    "branch": "agent/lpb-definitive-texts-unitary-20260820",
+    "pr": null,
+    "merge_sha": null,
+    "merged_at": null
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "workflow_run_id": null,
+    "workflow_job_id": null,
+    "verified_at": null,
+    "commit_status_context": "pages-propagation/lpb-definitive-texts"
+  }
+}
