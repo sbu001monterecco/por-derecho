@@ -1,10 +1,11 @@
 {
   "publication_id": "AC-CONSTRUCTIVE-AGENCY-SITEWIDE-REVIEW-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "publication_type": "repository-wide forensic doctrine review plus bilingual dedicated dossiers and site-wide route-specific module",
   "controlling_pr": 465,
+  "merge_sha": "5a807f7c73155de2261777e6b9f69766985c8961",
   "controlling_proposition": {
     "es": "Existe una pregunta forense unitaria sobre si las facultades confiadas a la Administración Concursal para LPB dejaron, en algún punto, de servir independientemente al interés de la concursada y empezaron a funcionar como mecanismo de implementación de objetivos de un perímetro privado adverso preexistente y de su posible sucesor económico. Cualquier consecuencia debe determinarse acto por acto.",
     "en": "There is a unitary forensic question whether powers entrusted to the insolvency administration for LPB ceased, at some point, to serve the debtor/estate independently and began functioning as a mechanism implementing objectives of a pre-existing adverse private perimeter and its possible economic successor. Any consequence must be determined act by act."
@@ -18,7 +19,8 @@
     "archive/AC_CONSTRUCTIVE_AGENCY_REPOSITORY_WEBSITE_REVIEW_19AUG2026.md",
     "assets/data/ac-loyalty-breakpoint-v1.json",
     "assets/ac-loyalty-breakpoint-20260819.js",
-    "assets/cam-favourable-pattern-20260819.js"
+    "assets/cam-favourable-pattern-20260819.js",
+    "sitemap-banking-recovery.xml"
   ],
   "reviewed_route_families": [
     "Community / 2008 predecessor architecture",
@@ -37,6 +39,18 @@
     "l5": "functional/de facto adverse-agency hypothesis: evidence of knowing implementation of adverse objectives using administrator powers, without yet proving formal mandate or criminal agreement",
     "l6": "direct concerted-action evidence: instructions, representation, agreement, consideration, common planning or knowingly coordinated joint action",
     "power_source_test": "Was a power entrusted to the administrator for LPB/the estate used to produce an outcome the adverse actor could not itself lawfully produce?"
+  },
+  "validation": {
+    "evidence": [
+      "PR 465 Publication integrity gate run 32248725888: success.",
+      "PR 465 Validate unitary public shell run 32248725870: success.",
+      "Syntax, JSON and sitemap checks: success.",
+      "Desktop/mobile Playwright route-archetype rendering: success.",
+      "PR 465 squash-merged to main at 5a807f7c73155de2261777e6b9f69766985c8961."
+    ],
+    "publication_integrity": "PASS",
+    "unitary_public_shell": "PASS",
+    "browser_render": "PASS"
   },
   "legal_source_boundary": {
     "historic": "Ley 22/2003 art.35 is used for historic loyalty/diligence/supervision framing.",
@@ -64,6 +78,7 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "PR/source state is distinct from merge, deployment and public-edge verification."
-  }
+    "note": "MERGED records repository/source state only. DEPLOYED/LIVE_VERIFIED require separate public-edge readback after GitHub Pages propagation."
+  },
+  "notes": "Repository-wide review is merged and CI/browser-green. Functional/de facto adverse agency remains a controlled forensic hypothesis, not an adjudicated finding."
 }
