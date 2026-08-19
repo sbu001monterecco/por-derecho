@@ -23,3 +23,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-adjudicacion-202
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-audiencia-cuentas.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-lender-liability.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-case-governance.xml
