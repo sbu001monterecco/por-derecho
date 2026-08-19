@@ -99,6 +99,12 @@
     "Qualifying pre-assignment declaratory litigation for Article 1535 test.",
     "Contemporaneous insolvency-estate cost/benefit analysis for continuation or abandonment."
   ],
+  "thread_deletion_audit": {
+    "status": "THREAD_CONTINUITY_SAFE_AT_REPOSITORY_LEVEL_WITH_REBINDING_HOLD",
+    "path": "archive/THREAD_DELETION_AUDIT_RETRACTO_DP1041_CAM_PATTERN_19AUG2026.md",
+    "rebinding_hold": "archive/DP1041_PRIMARY_SOURCE_REBINDING_HOLD_19AUG2026.md",
+    "note": "Thread-deletion safety concerns preservation of analytical and source-control continuity only. It does not promote publication state beyond MERGED or convert historic prior-scan findings into current primary verification."
+  },
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
     "note": "MERGED records source/repository state only. DEPLOYED/LIVE_VERIFIED must be separately evidenced after GitHub Pages propagation."
