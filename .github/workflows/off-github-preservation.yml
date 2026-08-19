@@ -59,15 +59,20 @@ jobs:
           tar -czf "$ARCHIVES/${REPOSITORY_NAME}.git.tar.gz" -C "$MIRRORS" "${REPOSITORY_NAME}.git"
 
           echo "Capturing public site..."
-          SITE_STATUS="captured"
           mkdir -p "$SITE/raw"
-          if ! wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --domains=sbu001monterecco.github.io --directory-prefix="$SITE/raw" "$PUBLIC_SITE_URL" >"$INVENTORY/wget-site.log" 2>&1; then
-            SITE_STATUS="wget completed with warnings/errors; inspect wget-site.log"
-          fi
-          if find "$SITE/raw" -type f | grep -q .; then
+          WGET_EXIT=0
+          wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --domains=sbu001monterecco.github.io --directory-prefix="$SITE/raw" "$PUBLIC_SITE_URL" >"$INVENTORY/wget-site.log" 2>&1 || WGET_EXIT=$?
+          SITE_FILE_COUNT="$(find "$SITE/raw" -type f | wc -l | tr -d ' ')"
+          printf '%s\n' "$SITE_FILE_COUNT" > "$INVENTORY/rendered-site-file-count.txt"
+          if [ -n "$(find "$SITE/raw" -type f -print -quit)" ]; then
             tar -czf "$SITE/rendered-site.tar.gz" -C "$SITE/raw" .
+            if [ "$WGET_EXIT" -eq 0 ]; then
+              SITE_STATUS="captured (${SITE_FILE_COUNT} files)"
+            else
+              SITE_STATUS="captured (${SITE_FILE_COUNT} files); wget exit ${WGET_EXIT}, inspect wget-site.log"
+            fi
           else
-            SITE_STATUS="no site files captured"
+            SITE_STATUS="no site files captured; wget exit ${WGET_EXIT}"
           fi
           rm -rf "$SITE/raw"
 
@@ -124,9 +129,13 @@ jobs:
           ) > "$CHECKSUMS/SHA256SUMS.txt"
 
           PACKAGE="$RUNNER_TEMP/GITHUB_PRESERVATION_${TS}.tar.gz"
+          PACKAGE_NAME="$(basename "$PACKAGE")"
           tar -czf "$PACKAGE" -C "$RUNNER_TEMP" "GITHUB_PRESERVATION_${TS}"
-          sha256sum "$PACKAGE" > "$UPLOAD/GITHUB_PRESERVATION_${TS}.tar.gz.sha256"
-          mv "$PACKAGE" "$UPLOAD/"
+          mv "$PACKAGE" "$UPLOAD/$PACKAGE_NAME"
+          (
+            cd "$UPLOAD"
+            sha256sum "$PACKAGE_NAME" > "$PACKAGE_NAME.sha256"
+          )
 
           echo "package_dir=$UPLOAD" >> "$GITHUB_OUTPUT"
           echo "main_sha=$MAIN_SHA" >> "$GITHUB_OUTPUT"
