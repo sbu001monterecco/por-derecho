@@ -1,0 +1,84 @@
+{
+  "manifestVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "publicationId": "retracto-dp1041-unitary-20260819",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "routes": [
+    "/es/retracto-credito-litigioso-1041-2017/",
+    "/en/litigious-credit-retracto-1041-2017/",
+    "/es/acreedor-de-registro/credito-litigioso-escritura/",
+    "/en/lender-of-record/litigious-credit-hidden-deed/"
+  ],
+  "canonicalData": [
+    "assets/data/retracto-credit-1041-2017-v1.json",
+    "assets/data/legal-representation-retracto-override-v1.json"
+  ],
+  "archiveControls": [
+    "archive/RETRACTO_CREDITO_LITIGIOSO_DP1041_UNITARY_CAUSATION_AUDIT_19AUG2026.md",
+    "archive/SUN_PARK_MASTER_STORYLINE_RETRACTO_DP1041_ADDENDUM_19AUG2026.md",
+    "archive/CORRECTION_REGISTER_RETRACTO_DP1041_ADDENDUM_19AUG2026.md",
+    "archive/PH122_CAM_ASSIGNMENT_ART1535_PUBLICATION_CONTROL_16AUG2026.md",
+    "archive/LEGAL_REPRESENTATION_LEDGER_19AUG2026.md",
+    "archive/LEGAL_REPRESENTATION_AC_CAUSATION_RETRACTO_OVERRIDE_19AUG2026.md"
+  ],
+  "materialAssertions": [
+    {
+      "id": "A1",
+      "assertion": "JPI nº 2 admitted DP 1041/2017 and ordered production of the assignment deed/economics after finding just cause and legitimate interest.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "A2",
+      "assertion": "The 15 February 2018 Commercial Court order recognised CAM as assignee creditor, rejected LPB's litigious-credit theory and partially corrected amounts in LPB's favour.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "A3",
+      "assertion": "For creditor substitution, the Commercial Court expressly relied on the AC's favourable report and presumed AC verification rather than requiring all title documentation sought by LPB.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "A4",
+      "assertion": "No measurable LPB estate benefit from the later loss/termination of the DP 1041 information/retracto route has been located in the current reconstruction.",
+      "status": "NEGATIVE-EVIDENCE-WITH-LIMITATION"
+    },
+    {
+      "id": "A5",
+      "assertion": "The AC sequence is described as functional/directional delivery with CAM-favourable effect, not as proof of collusion or intent.",
+      "status": "ANALYTICAL-INFERENCE"
+    },
+    {
+      "id": "A6",
+      "assertion": "The judge sequence is described as an active/passive intervention asymmetry with CAM-favourable effect, balanced by the LPB-favourable amount correction; improper personal bias is not asserted as established.",
+      "status": "ANALYTICAL-INFERENCE"
+    }
+  ],
+  "corrections": [
+    {
+      "old": "8 February 2018 as date of the Commercial Court creditor-substitution / litigious-credit order",
+      "new": "15 February 2018",
+      "status": "PRIMARY-SOURCE-CORRECTED"
+    },
+    {
+      "old": "appeal route",
+      "new": "five-day recurso de reposición without suspensive effect, as stated in the recovered order",
+      "status": "PRIMARY-SOURCE-CORRECTED"
+    }
+  ],
+  "publicationExclusions": [
+    "No assertion that Article 1535 certainly applied.",
+    "No assertion that the AC personally filed the withdrawal/termination of DP 1041 until the exact primary cessation act is rebound.",
+    "No assertion of collusion, corruption or improper judicial bias.",
+    "No raw Gmail identifiers, private email addresses or privileged correspondence.",
+    "No conflation of PH122 with Cerberus/Haya as legal assignor absent primary transaction proof.",
+    "No conflation of the 2017-2018 credit-retracto workstream with later property/unit tanteo-retracto rights."
+  ],
+  "openEvidence": [
+    "Exact DP 1041 withdrawal/archive act and instruction chain.",
+    "Exact Cristo formal-authority change instrument and handover.",
+    "Appeal/finality chain for the 15 February 2018 order.",
+    "Complete PH122-to-CAM deed, schedules, price and proof of payment.",
+    "Qualifying pre-assignment declaratory litigation for Article 1535 test.",
+    "Contemporaneous insolvency-estate cost/benefit analysis for continuation or abandonment."
+  ]
+}
