@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "id": "ART1535_RESIDUAL_RESTORATION_PATHWAY",
+  "internalMetaphor": "ACE_OR_JOKER_RESERVE_CARD",
+  "publicLabelEs": "Vía residual de restitución del art. 1535",
+  "publicLabelEn": "Residual Article 1535 restoration pathway",
+  "strategicRole": "UPSTREAM_RESERVE_PATHWAY",
+  "currentClassification": "UNRESOLVED_REQUIRES_ADJUDICATION",
+  "coreProposition": "Later title, financing and operation do not by themselves answer whether the upstream PH122-to-CAM credit position could have been extinguished under Article 1535 or what restorative consequence follows if effective exercise was frustrated.",
+  "statutoryBoundary": {
+    "effect": "Extinguishment of a qualifying sold litigious credit by reimbursing the assignee the price paid, qualifying costs and interest; not subrogatory acquisition of the credit.",
+    "trigger": "Nine days from the assignee's demand for payment.",
+    "triggerStatus": "TO_BE_FORENSICALLY_DETERMINED",
+    "caducityBoundary": "Supreme Court authority treats the nine-day period as caducity and therefore not ordinarily interruptible by preservation activity that is not effective exercise.",
+    "strictness": "Article 1535 is interpreted strictly and depends on the qualifying controversy, transfer form, timing and other statutory requirements."
+  },
+  "reserveForms": [
+    {
+      "id": "LITERAL_STATUTORY_POSITION",
+      "status": "OPEN",
+      "proposition": "No qualifying payment demand validly triggered the nine-day period, or another legally sufficient basis leaves literal Article 1535 exercise available."
+    },
+    {
+      "id": "RESTORATION_OF_FRUSTRATED_POSITION",
+      "status": "OPEN",
+      "proposition": "Literal exercise is disputed or impossible, but a court may need to determine whether LPB should be restored to the economic/juridical position it would have occupied if the Article 1535 opportunity was unlawfully or ineffectively frustrated."
+    },
+    {
+      "id": "EQUIVALENT_VALUE_DOWNSTREAM_RESTITUTION",
+      "status": "OPEN",
+      "proposition": "If the original credit was transformed or consumed, the relevant remedy may shift to tracing, restitution, unjust enrichment, ineffectiveness/nullity of dependent acts where legally available, or damages."
+    }
+  ],
+  "bridgeRemovalCounterfactual": [
+    "PH122 credit",
+    "CAM assignment",
+    "CAM creditor recognition",
+    "later creditor leverage",
+    "adjudication/dacion",
+    "CAM/HNT title or economic position",
+    "financing/refurbishment",
+    "MYND operation"
+  ],
+  "reverseEngineeringQuestion": "If CAM's PH122 credit position is removed from the history at its original acquisition-cost basis through an assumed effective Article 1535 exercise, how much of the later route to the hotel survives independently?",
+  "proceduralPreservation": {
+    "priority": "P0",
+    "publicRule": "Do not describe an established right to freeze the clock. Test whether declaratory or precautionary protection can preserve an unresolved statutory position before a fresh act arguably starts an irreversible period.",
+    "criminalPrejudiciality": "Article 40 LEC may matter where an existing criminal case investigates facts underlying the civil claim and its determination may decisively affect the civil outcome; it is not an automatic tolling rule."
+  },
+  "controlledChronology": [
+    {"date":"2017-10-20","event":"PH122 to CAM assignment of identified mortgage-credit position","status":"VERIFIED"},
+    {"date":"2017-12-19","event":"JPI No. 2 admitted DP 1041 and ordered a disclosure route to deed/economics","status":"VERIFIED"},
+    {"date":"2018-01-25","event":"AC directly terminated Cristo Suarez Pimentel's specific formal LPB mandate and imposed an authorisation gate","status":"C5_DIRECT_CONTEMPORANEOUS_EVIDENCE"},
+    {"date":"2018-02-15","event":"Commercial Court rejected LPB's Article 1535 theory, corrected some amounts and recognised CAM as assignee creditor with material reliance on AC verification","status":"VERIFIED_WITH_MIXED_EFFECT"},
+    {"date":"2018-03-05","event":"Decree 139/2018 records LPB withdrawal; CAM did not oppose; proceeding terminated; Borja recorded as LPB lawyer","status":"VERIFIED"},
+    {"date":"2024-05-13","event":"Judicial-office act confirms finalisation/archive because of claimant-side withdrawal","status":"VERIFIED"}
+  ],
+  "dueDiligenceAudience": [
+    "lenders",
+    "investors",
+    "public authorities",
+    "hotel operators",
+    "professional advisers",
+    "funding bodies",
+    "persons whose economic or professional interests depend on downstream title stability"
+  ],
+  "p0": [
+    "Complete protocol 2,248 and schedules",
+    "Assignment price/payment proof and allocation",
+    "Trigger ledger of every CAM demand for payment",
+    "Pre-assignment declaratory controversy credit by credit",
+    "Appeal/finality chain for 15-Feb-2018 order",
+    "Underlying DP1041 withdrawal pleading and instruction chain",
+    "Any historical Article 1535 exercise or consignation",
+    "Current counsel opinion on literal exercise and precautionary protection",
+    "Credit-transformation ledger into adjudication/dacion/title/value",
+    "Downstream good-faith/registration/standing/limitation analysis"
+  ],
+  "antiOverstatement": [
+    "Do not state that Article 1535 gives LPB the hotel.",
+    "Do not state that the right can never expire.",
+    "Do not state that the clock is legally frozen.",
+    "Do not state that criminal proceedings automatically suspend caducity.",
+    "Do not state that all downstream title is void."
+  ]
+}
