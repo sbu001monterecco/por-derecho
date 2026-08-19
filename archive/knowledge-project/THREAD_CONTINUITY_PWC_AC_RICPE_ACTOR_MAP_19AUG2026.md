@@ -19,6 +19,8 @@ This file exists so a fresh ChatGPT thread or reviewer can recover the intellige
    - canonical names, family relationships, chronology labels and homepage PwC annotation rule.
 6. `archive/knowledge-project/PWC_CARLOS_PENAL_INSTRUCTION_LATER_ACOSTA_RICPE_CONFLICT_CONGRUENCE_GATE_19AUG2026.md`
    - former-client/conflict-congruence bridge and prohibited overstatement rules.
+7. `archive/knowledge-project/RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md`
+   - full page-level source control for the 11 Nov 2020 RICPE investor webinar and the separate 30 Nov 2021 San Telmo #UnCaféenSanTelmo event; identifies Eduardo Sánchez as the San Telmo partner interviewing Enrique Guerra and sets mandatory no-imputation boundaries.
 
 ## Canonical 2016 PwC chronology
 - 11 June 2016: substantive working meeting on Sun Park / Community / ownership / exploitation / debt / governance / insolvency context.
@@ -45,9 +47,13 @@ Downstream tests include disputed Community debt, governance/access, liquidation
 ## RICPE / PwC control-node chronology
 - 2016: PwC/Carlos and other PwC professionals have asset-specific Sun Park knowledge, including specific private owners/units and Community/control issues.
 - 2019: a PwC entity appears in RICPE statutory-audit history. Corporate audit is not, by itself, Sun Park project/title due diligence.
-- 2020: RICPE webinar publicly places PwC within legal/fiscal due diligence while presenting the Sun Park/CAM project. The Sun Park-specific engagement, entity, scope, team, qualifications and reliance record remain production questions.
+- 11 November 2020: RICPE investor webinar presents the Sun Park/CAM renovation project at approximately €12m. Enrique Guerra publicly attributes legal/fiscal due diligence of the company and especially the project to Pricewaterhouse; separately he describes an approval/control sequence involving the investment department, external Intermoney risk control, fiscal/tax material, DG recommendation and Board decision. José Daniel Acosta Matos advances an ownership/free-of-charges narrative. These are source-authored statements requiring independent reconciliation, not automatically verified title or adviser mandate.
 - 2021: internal RICPE certification describes a fragmented ownership reality; test when each control actor knew this and what correction, qualification, disclosure or Board action followed.
+- 30 November 2021: San Telmo Abogados y Economistas hosts/promotes `#UnCaféenSanTelmo` with RICPE Director General Enrique Guerra interviewed by **San Telmo partner Eduardo Sánchez**. Surviving screenshots show discussion of a Lanzarote complex described as `abandonado` and an asset described as `súper codiciado`. Full context remains required before broader quotation.
 - Later: public/company records show further Carlos/PwC professional convergence within the RICPE / Grupo Acosta Matos ecosystem in other contexts. This creates a former-client/conflict/information-governance question; it does not by itself prove misconduct.
+
+### Mandatory San Telmo boundary
+The 30 Nov 2021 public event proves a later San Telmo/RICPE professional-media connection involving Eduardo Sánchez. It does **not** prove that Eduardo worked on Concurso 36/2012, that he shared the Administrador Concursal's knowledge, that the AC transferred information to him, that San Telmo had a RICPE/CAM/Sun Park mandate, or that common firm affiliation establishes coordination or wrongdoing. `Same firm ≠ shared knowledge. Public co-presentation ≠ mandate.`
 
 ## Public PwC / Carlos pages
 Canonical EN root:
@@ -76,6 +82,8 @@ The page must treat PwC as a prior-knowledge and professional-control node, whil
 - former-client/Carlos knowledge;
 - PwC legal entities and teams.
 
+Detailed webinar claims must be checked against `RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md` before publication.
+
 ## Homepage actor cluster — canonical identity / relationship rules
 - Francisco Mario Matos Matas (FMMM) — husband of Shaila María Cogolludo Ramos.
 - Shaila María Cogolludo Ramos — wife of Francisco Mario Matos Matas and daughter of Antonio Cogolludo Rojas.
@@ -91,6 +99,13 @@ Homepage chronology labels:
 - Laura Patricia Acosta Matos: `2017–2018 legal/insolvency and access role → 2022 CAM representation → later continuity`.
 
 The homepage PwC note is visually attached to the FMMM / Antonio / Shaila cluster to show contemporaneous external-professional notice, not guilt by association.
+
+## San Telmo professional-layer visual rule
+For future expansion of the five-actor visualization, San Telmo is a separate professional/insolvency layer rather than actors 6 and 7 in the same category:
+- **Francisco de Borja Rodríguez-Batllori Laffitte** — Administrador Concursal / insolvency and court-facing control node.
+- **Eduardo Sánchez** — San Telmo partner / 30 Nov 2021 public interviewer of RICPE DG Enrique Guerra / professional-proximity node.
+
+The cards must not imply equal functions or shared knowledge. The connecting question is whether there was an actual mandate or information bridge; it is not assumed.
 
 ## Front-end modules created in this workstream
 - `assets/pwc-penal-route-dominant-20260819.js`
@@ -119,9 +134,9 @@ Classify propositions as one of:
 Right of reply and equivalent-prominence correction remain mandatory.
 
 ## Core connectivity map
-`2011–2018 Community / control structure` → `2016 PwC contemporaneous knowledge + penal-route instruction` → `confirmed PwC–AC contact` → `later concurso / calificación decisions` → `2019/2020 RICPE control architecture` → `2021 fragmented title record` → `2022 control/adjudication/continuity` → `later Grupo Acosta Matos / HNT / MYND and PwC/Carlos professional convergence`.
+`2011–2018 Community / control structure` → `2016 PwC contemporaneous knowledge + penal-route instruction` → `confirmed PwC–AC contact` → `later concurso / calificación decisions` → `11 Nov 2020 RICPE investor narrative + professional-control architecture` → `2021 fragmented title record` → `30 Nov 2021 San Telmo / Enrique Guerra / Eduardo Sánchez public event` → `2022 control/adjudication/continuity` → `later Grupo Acosta Matos / HNT / MYND and PwC/Carlos professional convergence`.
 
 This is a documentary-reconciliation framework. It does not itself establish conspiracy, common criminal purpose, professional breach or causation.
 
 ## Fresh-thread operating instruction
-A new ChatGPT thread working on PwC, the AC, RICPE, calificación, FMMM, Antonio Cogolludo, Shaila Cogolludo, José Daniel Acosta Matos or Laura Patricia Acosta Matos should read this file first, then the six read-first controls above, then the relevant canonical public pages. Do not recreate the chronology from memory when these repository controls are available.
+A new ChatGPT thread working on PwC, the AC, RICPE, San Telmo, Eduardo Sánchez, calificación, FMMM, Antonio Cogolludo, Shaila Cogolludo, José Daniel Acosta Matos or Laura Patricia Acosta Matos should read this file first, then the seven read-first controls above, then the relevant canonical public pages. Do not recreate the chronology from memory when these repository controls are available.
