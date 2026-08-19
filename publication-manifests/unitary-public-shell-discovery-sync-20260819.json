@@ -6,7 +6,7 @@
   "control_date": "2026-08-19",
   "publication_type": "bilingual unitary-search and Control Room synchronization layer",
   "purpose": "Synchronize the existing six-system unitary public shell with post-shell public dossiers and make future same-project specialist-sitemap routes discoverable without changing evidential status.",
-  "expected_public_routes_touched": {
+  "expected_routes": {
     "en": [
       "en/case-control-room/index.html",
       "en/search/index.html"
@@ -46,22 +46,10 @@
     "search_fallback": "Base curated registry + synchronization registry + every same-project sitemap declared in robots.txt"
   },
   "required_search_queries": [
-    {
-      "query": "CEXP",
-      "purpose": "original curated-index non-regression"
-    },
-    {
-      "query": "1041",
-      "purpose": "DP1041 curated synchronization"
-    },
-    {
-      "query": "Cuatrecasas",
-      "purpose": "professional-lifecycle curated synchronization"
-    },
-    {
-      "query": "pwc canarias carlos saavedra",
-      "purpose": "generic specialist-sitemap fallback proof independent of the synchronization registry"
-    }
+    {"query": "CEXP", "purpose": "original curated-index non-regression"},
+    {"query": "1041", "purpose": "DP1041 curated synchronization"},
+    {"query": "Cuatrecasas", "purpose": "professional-lifecycle curated synchronization"},
+    {"query": "pwc canarias carlos saavedra", "purpose": "generic specialist-sitemap fallback proof independent of the synchronization registry"}
   ],
   "publication_safety": {
     "search": "Search results are discovery metadata and do not create, strengthen or adjudicate a factual or legal proposition.",
