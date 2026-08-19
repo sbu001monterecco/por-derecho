@@ -38,6 +38,12 @@
     "ac_causation": "DP1041 C5 applies only to the end of Cristo's specific formal LPB mandate and does not automatically transfer to unit/property rights."
   },
   "validation": {
+    "evidence": [
+      "PR 491 unitary public shell run 32256630740: success.",
+      "PR 491 off-GitHub preservation run 32256630666: success.",
+      "PR 491 publication-integrity and operational-integrity run 32256630675: content invariants passed.",
+      "PR 491 merged at a3d271470219186b51a2bd681d4051a907110617."
+    ],
     "source_and_schema": "PASS",
     "syntax_json_sitemap": "PASS",
     "unitary_public_shell_desktop_mobile": "PASS on PR 491 final head 01ac27563fa4d3a22861d56912da368ba625f06e, run 32256630740",
