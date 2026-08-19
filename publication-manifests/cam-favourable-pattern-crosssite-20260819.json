@@ -1,9 +1,11 @@
 {
   "publication_id": "CAM-FAVOURABLE-PATTERN-CROSSSITE-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "publication_type": "bilingual dedicated dossier plus cross-site accountability module",
+  "controlling_pr": 446,
+  "merge_sha": "39a617bdbe037d10b59309e2fad45544f81a459a",
   "controlling_proposition": {
     "es": "Episodios distintos producen repetidamente ventajas para el perímetro Acosta Matos mientras LPB pierde opciones, control, información o capacidad de reversión. La repetición justifica investigar lealtad, límites de función, influencia y coordinación, sin convertir el patrón de efectos en una conclusión penal.",
     "en": "Distinct episodes repeatedly advantage the Acosta Matos perimeter while LPB loses options, control, information or reversibility. The recurrence justifies investigation of loyalty, role boundaries, influence and coordination without converting an effects pattern into a criminal conclusion."
@@ -42,6 +44,18 @@
       "/en/sun-park-takeover-7-june-2018/",
       "/en/same-hotel-multiple-financial-lives/"
     ]
+  },
+  "validation": {
+    "evidence": [
+      "PR 446 Publication integrity gate run 32215127567: success.",
+      "PR 446 Validate unitary public shell run 32215127565: success.",
+      "Unitary-shell syntax, JSON and sitemap checks: success.",
+      "Desktop/mobile Playwright route archetype rendering: success.",
+      "PR 446 merged to main at 39a617bdbe037d10b59309e2fad45544f81a459a."
+    ],
+    "publication_integrity": "PASS",
+    "unitary_public_shell": "PASS",
+    "browser_render": "PASS"
   },
   "material_assertions": [
     {
@@ -82,5 +96,9 @@
     "Actor-specific communications capable of proving or disproving coordination/influence.",
     "Episode-by-episode LPB estate benefit/harm quantification."
   ],
-  "notes": "PR-open state. No CI_GREEN, MERGED, DEPLOYED or LIVE_VERIFIED state is claimed until independently evidenced."
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "MERGED records repository/source state only. DEPLOYED/LIVE_VERIFIED require separate public-edge readback after GitHub Pages propagation."
+  },
+  "notes": "Repository source is merged and CI/browser-green. No DEPLOYED or LIVE_VERIFIED state is claimed until public-edge verification succeeds."
 }
