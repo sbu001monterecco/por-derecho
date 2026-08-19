@@ -1,199 +1,326 @@
-# ADMINISTRADOR CONCURSAL — LOYALTY BREAKPOINT / PREDECESSOR → CAM CONTINUITY CONTROL
+# ADMINISTRADOR CONCURSAL — LOYALTY / CONFLICT / INDEPENDENCE / FUNCTIONAL-AGENCY CONTROL
 
 **Control date:** 19 August 2026  
 **Status:** CANONICAL INVESTIGATIVE / PUBLIC-SAFE CONTROL  
-**Publication posture:** strong question; no finding of collusion, agency, criminal agreement or global invalidity without act-specific proof.
+**Supersedes:** narrower L0–L5 loyalty-breakpoint model for this workstream.  
+**Publication posture:** strong forensic hypothesis; no finding of formal agency, collusion, criminal agreement or global invalidity without act-specific proof.
 
 ## 1. Controlling question
 
-The repository must ask, throughout the Sun Park reconstruction:
+Throughout the Sun Park reconstruction ask:
 
-> **At what point, if any, did the insolvency administrator cease acting as a loyal, independent estate office-holder for Luchy Playa Blanca, S.L.U. and begin functionally advancing, protecting, adopting or implementing the interests of adverse private parties?**
+> **At what point, if any, did powers entrusted to the insolvency administration to administer and protect LPB and the estate begin functioning in practice as a mechanism that advanced, protected or implemented the objectives of an adverse private perimeter?**
 
-This question must be tested in two temporal stages rather than beginning with Construcciones Acosta Matos (“CAM”).
+The question is not limited to Construcciones Acosta Matos (“CAM”). It must be reverse-engineered through the predecessor architecture.
 
-### Stage A — predecessor adverse architecture before CAM
+`2008 sale/operation → fracture / dissident perimeter → Community / debt / vote / access → AC knowledge and acts/omissions → CAM entry → creditor/control position → June 2018 → liquidation/adjudication → HNT/MYND → later finance/public support`
 
-The group's case begins with the 2008 sale / productive-unit architecture and the later fracture between the unified hotel operation and a dissident minority perimeter associated in the evidence with Monte Lanza / Molina interests and their representatives.
+Chronology alone does not prove a common plan. Each arrow requires evidence.
 
-Public-source / controlled evidence already supports the existence of the 2008 transfer architecture and later dispute. The 11-June-2016 recorded meeting is particularly important because it records:
+## 2. Legal duty anchors
 
-- Juan Carlos Prieto Puente speaking as lawyer for Molina-family interests / the Community;
-- Francisco Mario Matos Matas speaking as Community administrator for Molina-family interests;
+### Historic applicable framework
+
+Ley 22/2003, art.35 required the insolvency administration to perform with the diligence of an orderly administrator and a **loyal representative**, subject to judicial supervision. Historic conduct must be assessed under the law applicable at the time.
+
+Official source: `https://www.boe.es/eli/es/l/2003/07/09/22/con/20141001`
+
+### Current institutional continuity
+
+Current TRLC art.80 expresses duties of diligence in the interest of the insolvency and **impartiality and independence**. The current text is useful as institutional continuity and present supervisory context, not as retroactive merits law for 2012–2018 conduct.
+
+Official source: `https://www.boe.es/buscar/act.php?id=BOE-A-2020-4859`
+
+## 3. Four thresholds
+
+### A. LOYALTY BREAKPOINT
+
+> When did conduct, if ever, cease to be reasonably reconcilable with loyal administration of LPB and the estate?
+
+A harmful or wrong decision is not enough by itself.
+
+### B. CONFLICT BREAKPOINT
+
+> When did the AC know or have reason to recognise that his conduct was materially aligned with interests adverse to LPB?
+
+Search for role overlap, information dependency, repeated same-beneficiary outcomes, lack of estate benefit, undisclosed relationships, asymmetric verification and ignored contrary evidence.
+
+### C. INDEPENDENCE BREAKPOINT
+
+> When did the circumstances, if ever, require disclosure, abstention, enhanced judicial scrutiny, replacement/separation or another independence safeguard?
+
+This is distinct from proving intentional wrongdoing.
+
+### D. CONSTRUCTIVE / FUNCTIONAL ADVERSE-AGENCY THRESHOLD
+
+Internal analytical label:
+
+`CONSTRUCTIVE_FUNCTIONAL_ADVERSE_AGENCY_HYPOTHESIS`
+
+Public labels:
+
+- ES: `hipótesis de agencia funcional / de facto a favor del perímetro adverso`
+- EN: `functional / de facto adverse-agency hypothesis`
+
+Definition:
+
+> **Did the AC knowingly use powers he possessed because he administered LPB/the estate to implement objectives belonging to an adverse perimeter, including objectives that perimeter could not itself lawfully achieve without insolvency-derived power?**
+
+This is a **forensic analytical label, not a standalone named doctrine of Spanish insolvency law**. Formal agency, representation, invalidity, liability and criminal consequences each require their own legal/evidential basis.
+
+## 4. L0–L6 evidence scale
+
+- `L0 — loyal / neutral administration adequately explained by the record`
+- `L1 — isolated adverse effect; no alignment inference`
+- `L2 — repeated adverse-perimeter / same-beneficiary effect`
+- `L3 — conflict / independence warning signs requiring explanation or safeguards`
+- `L4 — strong functional alignment; repeated conduct difficult to reconcile with a loyal estate-interest explanation`
+- `L5 — functional-agency hypothesis; evidence supports knowing implementation of adverse-party objectives using administrator powers, without yet proving formal mandate or criminal agreement`
+- `L6 — direct concerted-action evidence: instructions, representation, agreement, consideration, common planning or knowingly coordinated joint action`
+
+Do not collapse L3/L4/L5/L6.
+
+## 5. Power-source test
+
+For every material AC act/omission ask:
+
+> **Was a power entrusted to the insolvency administrator for LPB/the estate used to produce an outcome an adverse private actor could not itself lawfully produce?**
+
+Record:
+
+1. source of AC power;
+2. legal purpose for which that power existed;
+3. LPB/estate interest at stake;
+4. adverse-party problem or obstacle solved;
+5. who requested, anticipated or benefited from the act;
+6. whose legal/factual theory the AC adopted;
+7. information relied upon and independent verification performed;
+8. what the adverse perimeter gained immediately and downstream;
+9. what measurable benefit LPB/the estate received;
+10. neutral/loyal alternatives available;
+11. conflict disclosure, abstention or enhanced supervision;
+12. act-specific validity/remedial consequence if conflict or misuse is ultimately proved.
+
+## 6. “Whose problem did this solve?” test
+
+For each material episode create a one-line answer to:
+
+- whose problem did the AC act solve?
+- whose legal theory did it adopt?
+- whose information did it rely upon?
+- whose objective did it implement?
+- who requested or expected the act?
+- could that actor achieve the same result without AC power?
+- what did LPB/the estate receive in return?
+- did the act replicate a predecessor-perimeter objective?
+- did CAM later depend upon or benefit from it?
+- would a genuinely independent administrator have had a contemporaneously documented estate-interest reason to do the same thing, in the same way, at that time?
+
+## 7. Pre-CAM predecessor architecture
+
+The controlled record supports the existence of the 2008 transfer/exploitation architecture and later disputes. The 11-Jun-2016 recorded meeting is an important control point because it records:
+
+- Juan Carlos Prieto Puente speaking for Molina-family interests;
+- Francisco Mario Matos Matas as Community administrator;
 - LPB-side PwC / Jonathan Simó / Cristo participants;
-- detailed discussion of the 2008 exploitation structure, Community charges, access, debt/morosity and the role of the insolvency administration.
+- discussion of the 2008 exploitation structure, Community charges, access, debt/morosity, governance and the role of the insolvency administration.
 
-The meeting is evidence of a pre-CAM adverse/private-actor perimeter and of live disputes over debt, access, governance and exploitation. It is **not by itself proof that the insolvency administrator represented or colluded with that perimeter**.
+Controlled proposition:
 
-### Stage B — CAM arrival / adoption / escalation hypothesis
+> **A structured private adverse/dispute perimeter existed before CAM.**
 
-The later question is whether CAM arrived as an independent creditor/acquirer or whether it knowingly **adopted, used, amplified or completed** pre-existing mechanisms created by the predecessor adverse perimeter — and whether the insolvency administrator knowingly supported that transition.
+Not proved by that fact alone:
 
-The user/group allegation to test is that CAM entered with substantial knowledge of, support from and cooperation with the insolvency administrator and with predecessor private actors, producing a functional continuity:
+> AC representation, agency, agreement or collusion with that perimeter.
 
-`2008 sale fracture → predecessor Community/debt/access machinery → insolvency administration decisions/omissions → CAM creditor/control position → 2018 control → liquidation/adjudication → HNT/MYND / later finance`
+Primary pre-CAM question:
 
-This is an **investigative continuity hypothesis**, not a finding of collusion.
+> **Did the AC merely manage the dispute, or progressively accept, validate, protect or operationalise debt, voting, access, exploitation or authority positions advanced by the predecessor perimeter?**
 
-## 2. The loyalty-breakpoint test
+## 8. CAM transition / possible economic succession
 
-For every material AC act or omission, record:
+Do not assume CAM created the mechanism from zero.
 
-1. **date**;
-2. **formal power / capacity**;
-3. **LPB / estate interest at stake**;
-4. **adverse private interest at stake**;
-5. **what the AC knew or had been put on notice of**;
-6. **what the AC did or did not do**;
-7. **who obtained the immediate benefit**;
-8. **what measurable benefit LPB/the estate received**;
-9. **whether the act replicated, validated or operationalised a position previously advanced by the predecessor perimeter**;
-10. **whether the same act later benefited CAM or its successors**;
-11. **alternative loyal / neutral explanation**;
-12. **conflict disclosure / abstention / court supervision**;
-13. **validity and remedial consequence if disloyalty/conflict were ultimately proved**.
+Test:
 
-The goal is to identify the earliest defensible **LOYALTY BREAKPOINT** — if one exists — and then determine whether later acts should be re-analysed as isolated decisions or as acts performed after a material conflict / functional alignment had arisen.
-
-## 3. Evidence grades for the breakpoint
-
-Use:
-
-- `L0 — no evidence of departure from loyal estate administration`
-- `L1 — adverse effect only`
-- `L2 — repeated adverse / same-beneficiary effect`
-- `L3 — conflict / role-boundary indicia`
-- `L4 — strong functional alignment / contradictory estate-interest conduct`
-- `L5 — direct evidence of instruction, representation, agreement, undisclosed agency or knowing joint action`
-
-Do not call the AC “agent for” or “representative of” an adverse party at L1–L4. Those terms require direct evidence or a legal finding.
-
-## 4. Predecessor continuity must be investigated, not assumed
-
-The controlling pre-CAM proposition is:
-
-> The 2008 hotel sale/exploitation architecture later became fractured, and by 2016 the record shows a distinct Molina-family / Community representative perimeter in direct dispute with LPB-side advisers over debt, access, exploitation and governance.
-
-The controlling investigative question is:
-
-> **Did the insolvency administrator merely manage a dispute between LPB and those private parties, or did his acts/omissions begin to validate or operationalise their adverse position against LPB?**
-
-Evidence required includes:
-
-- AC communications with Community / Molina / Monte Lanza-linked actors;
-- treatment of alleged Community debt and voting consequences;
-- treatment of LPB/CEXP accounting and set-off evidence;
-- access/security instructions;
-- responses to LPB evidence that alleged debt was fictitious, duplicated, paid or economically inconsistent;
-- whether equivalent scrutiny was applied to predecessor-perimeter claims and LPB claims;
-- any benefit to LPB/the estate from choices that advantaged the predecessor perimeter.
-
-## 5. CAM transition test
-
-For CAM, add:
-
-- date of first AC↔CAM contact;
-- date AC first knew CAM was negotiating/acquiring credit or units;
-- information CAM had about predecessor Community disputes before acquiring its positions;
-- Community / predecessor actors who introduced, informed, assisted or coordinated with CAM;
+- what CAM created independently;
+- what CAM acquired/inherited/adopted from the predecessor architecture;
+- when CAM first knew the historic Community/title/access disputes;
+- who supplied that knowledge;
+- first AC↔CAM contact;
 - AC support for creditor substitution;
-- AC security/access acts before formal title;
-- AC treatment of CAM offers, liquidation and adjudication;
-- any communications showing common planning, instructions or shared objectives;
-- any conflict, benefit, relationship or dependency requiring disclosure.
+- AC acts/omissions affecting access/security/control before formal title;
+- CAM offers, liquidation and adjudication;
+- communications showing common planning or instruction;
+- conflict/benefit/relationship requiring disclosure.
 
-The public-safe thesis is:
+Public-safe thesis:
 
-> **Por Derecho alleges that CAM did not enter a neutral vacuum: it entered a hotel already fractured by a predecessor adverse architecture. The decisive question is whether CAM merely benefited from that history or knowingly adopted it with the support/cooperation of the insolvency administration.**
+> **Por Derecho alleges that CAM entered a hotel already fractured by a predecessor adverse architecture. The question is whether CAM merely benefited from that history or knowingly adopted and amplified it with AC support/cooperation.**
 
-## 6. Article 1535 and later tanteo/retracto — strongest validity test episode
+“Economic successor” is an analytical question, not a legal-successor finding unless separately established.
 
-Keep the two tracks separate:
+## 9. DP 1041 / Article 1535 — diagnostic power-source episode
 
-1. **2017–2018 Article 1535 / DP 1041 credit-assignment workstream**; and
-2. **later unit/property-level tanteo/retracto / preferential-acquisition workstreams**.
+Keep separate:
 
-Apply the same loyalty/authority test to both.
+1. 2017–2018 Article 1535 / DP1041 credit-assignment workstream;
+2. later unit/property tanteo-retracto / preferential-acquisition workstreams.
 
-For Article 1535, the current primary-act reconstruction proves:
+Controlled primary facts for Article 1535:
 
-- Cristo Suárez Pimentel originated the LPB workstream;
-- on 25-Jan-2018 the AC directly terminated Cristo's specific formal LPB mandate and imposed an AC authorisation gate;
-- by 5-Mar-2018 the judicial record lists Borja as LPB's lawyer and records that LPB requested withdrawal;
+- Cristo originated the LPB workstream;
+- 25-Jan-2018: AC directly terminated Cristo's specific formal LPB mandate and imposed an AC-authorisation gate;
+- 5-Mar-2018: Borja appears as LPB's lawyer and the decree records LPB requested withdrawal;
 - CAM did not oppose;
-- DP 1041 ended;
-- the internal instruction/drafting/filing chain behind the withdrawal remains open.
+- DP1041 ended;
+- internal withdrawal instruction/drafting/filing chain remains open.
 
-Therefore, do **not** publish as fact that the AC personally ordered or filed the desistimiento.
+### The power asymmetry
 
-Instead ask:
+CAM could oppose DP1041, defend its credit and seek creditor recognition. It **could not itself terminate LPB's lawyer or control LPB's litigation instructions**. The AC possessed debtor/insolvency-derived powers.
 
-> **If the AC had already crossed a material loyalty/conflict boundary before controlling LPB's legal representation, what is the validity and legal effect of his intervention in the Article 1535 workstream and of any later withdrawal or loss of protection that depended upon that conflicted control?**
+Therefore ask:
 
-This is a validity / authority / indefensión / restitution question to be determined act by act.
+> **Were those powers exercised for a contemporaneously documented estate interest, or did they functionally remove an obstacle confronting the adverse perimeter?**
 
-## 7. Consequence ladder if a loyalty breakpoint is ultimately proved
+Do not publish as fact that the AC personally instructed, drafted or filed the withdrawal until the missing instruction chain is recovered.
 
-Do not state that every later AC act is automatically void.
+If a material loyalty/conflict/independence breakpoint is eventually proved to predate this intervention, separately analyse authority, validity/ineffectiveness, indefensión, restoration, restitution, unjust enrichment and liability. No automatic global nullity.
 
-Test separately whether each affected act could support:
+## 10. June 2018 / material control
 
-- conflict / loss of independence or impartiality;
+Apply the power-source test to:
+
+- Community authority;
+- security instructions;
+- keys/access;
+- finca-specific title and possession;
+- extraconcursal Matkator/third-party property;
+- AC authorisation or acquiescence;
+- later judicial treatment.
+
+Question:
+
+> **Which material-control consequences depended on a power or authority channel involving the AC, and what independent legal title supported each affected finca/right-holder?**
+
+## 11. Liquidation / adjudication / dación
+
+For each decisive act ask:
+
+- had any loyalty/conflict/independence breakpoint already occurred?
+- what estate benefit was documented?
+- what alternative was available?
+- did the act depend on earlier CAM-favourable or predecessor-perimeter positions?
+- what assets/right-holders were within and outside LPB's estate?
+- what judicial supervision independently validated the underlying assumptions?
+
+## 12. Judicial-supervision threshold
+
+Separate AC knowledge from judicial knowledge.
+
+Ask:
+
+> **At what point, if any, did administrator independence cease to be a premise that could safely be assumed and become a fact requiring judicial verification, contrast, disclosure, abstention, replacement/separation or enhanced supervision?**
+
+Evidence must show what entered the court file, what was reported, what was objectively verifiable and what supervisory response followed.
+
+## 13. Downstream dependency — HNT / MYND / RICPE / RIC / public support
+
+No downstream actor or act becomes invalid by association.
+
+For each later position ask:
+
+- which upstream act supplied title, standing, control, value, asset perimeter or financing eligibility?
+- would the downstream position survive if that upstream act were ineffective or reversed?
+- what independent title, registration, good-faith protection, consideration or legal basis exists?
+
+This is a dependency/tracing exercise, not automatic contagion of invalidity.
+
+## 14. Consequence ladder if a breakpoint is proved
+
+Act-specific and right-holder-specific analysis may include:
+
+- conflict / loss of impartiality or independence;
 - duty breach;
-- separation/removal consequences;
+- separation/removal;
 - lack/excess of authority;
-- invalidity / ineffectiveness / unenforceability depending on act type;
+- invalidity / ineffectiveness / unenforceability / inoponibilidad as appropriate to act type;
 - rescission / reversal / correction;
+- reduced/contested evidential weight where legally relevant;
 - patrimonial liability;
+- accounting;
 - restitution / unjust enrichment;
 - material procedural indefensión;
-- exclusion or reduced evidential weight of conflicted acts;
+- restoration of a lost procedural/economic position where legally available;
 - criminal-investigative significance where constituent facts are separately supported.
 
-The legal consequence must be **act-specific** and **right-holder-specific**.
+## 15. Route-specific website application
 
-## 8. Global public question
+### Community / 2008 / predecessor pages
 
-The website should repeatedly surface:
+Establish the pre-CAM architecture and distinguish private-party claim, Community act, AC knowledge, independent verification and downstream propagation.
 
-> **When did administration of LPB's insolvency, if ever, stop being loyal estate administration and start functioning in the interests of the parties adverse to LPB?**
+### AC pages
 
-Followed by:
+Make this the principal L0–L6 dossier. Apply power-source + estate-benefit + whose-problem tests.
 
-> **Was there one breakpoint, or a gradual transition from tolerating the predecessor Community/Molina architecture, to validating it, to enabling CAM to adopt and monetise it?**
+### CAM pages
 
-And:
+Ask what CAM independently created versus inherited/adopted and what AC-controlled acts made the transition possible.
 
-> **If a material conflict existed before the AC controlled LPB's lawyers, access, recovery routes, liquidation choices or retracto/tanteo protections, which of those later acts remain legally effective?**
+### DP1041 / Article1535
 
-## 9. Publication boundary
+Make debtor-derived power the diagnostic issue while preserving the missing withdrawal instruction chain.
+
+### 7 June / control
+
+Map Community machinery + AC authority + actual title/possession finca by finca.
+
+### Judge / institutional accountability
+
+Add the supervision threshold for AC independence/conflict.
+
+### Recovery
+
+Map remedies act by act, claimant by claimant; no global-nullity shortcut.
+
+### RICPE / RIC / HNT / MYND / public-funds pages
+
+Add upstream dependency without imputing automatic wrongdoing to later entities.
+
+## 16. Publication boundary
 
 Safe:
 
-- “loyalty-breakpoint question”;
-- “possible functional alignment”;
-- “predecessor architecture”;
-- “adoption / operationalisation hypothesis”;
-- “conflict and validity require act-specific determination”;
-- “Por Derecho alleges ... and asks for documentary testing.”
+- loyalty breakpoint;
+- conflict breakpoint;
+- independence breakpoint;
+- “functional/de facto adverse-agency hypothesis” as forensic label;
+- predecessor architecture;
+- possible CAM adoption/economic succession;
+- power-source test;
+- estate-benefit test;
+- act-specific validity/remedy analysis.
 
-Not safe without stronger evidence:
+Not established:
 
-- “the AC was secretly the lawyer/agent of the Molina family”;
-- “the AC was Acosta Matos's representative”;
-- “the AC and CAM colluded” as established fact;
-- “all AC acts are null”;
-- “the AC personally cancelled the Article 1535 right” unless the instruction chain proves it.
+- “constructive agency” as standalone Spanish-law doctrine;
+- AC formal/secret agency for Molina/CAM;
+- AC/CAM collusion;
+- all post-breakpoint acts null;
+- AC personally instructed/filed DP1041 withdrawal;
+- AC personally extinguished Article1535 right.
 
-## 10. P0 retrieval
+## 17. P0 retrieval
 
-1. Complete AC↔Community/Molina/Monte Lanza-linked communications 2012–2018.
+1. Complete AC↔Community/Molina/Monte Lanza communications 2012–2018.
 2. First AC↔CAM contact and first CAM knowledge of predecessor disputes.
-3. Community debt/vote/accounting source file and AC reconciliation.
+3. Community debt/vote/accounting reconciliation and AC treatment.
 4. Security/access instruction chain.
-5. Cristo/DP1041 underlying withdrawal instruction and filing chain.
-6. Later tanteo/retracto instruction/authority chain.
-7. Estate-benefit analysis for every AC decision that materially advantaged an adverse perimeter.
-8. Conflict declarations, abstentions, disclosure and court-supervision record.
-9. Actor-by-actor communication graph around 2017 credit acquisition, June 2018 control and 2020–22 adjudication.
-10. Evidence capable of distinguishing coincidence / deference / negligence from knowing joint action.
+5. DP1041 withdrawal pleading and internal instruction chain.
+6. Later tanteo/retracto authority/instruction chain.
+7. Contemporaneous estate-benefit analysis for materially adverse-perimeter-benefiting AC acts.
+8. Conflict disclosures, abstentions/recusals and judicial-supervision record.
+9. Communication graph around 2017 credit acquisition, June 2018 and 2020–22 adjudication.
+10. Evidence distinguishing coincidence/deference/negligence from knowing implementation and concerted action.
