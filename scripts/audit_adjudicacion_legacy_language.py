@@ -120,6 +120,18 @@ def contextual_exception(rule_id: str, context: str) -> bool:
         )
     ):
         return True
+    if rule_id.startswith("protocol-457-") and any(
+        marker in lowered
+        for marker in (
+            "no queda acreditada",
+            "no se acredita",
+            "no prueba",
+            "is not established",
+            "does not establish",
+            "does not prove",
+        )
+    ):
+        return True
     return False
 
 
