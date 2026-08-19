@@ -47,7 +47,12 @@ jobs:
           node --check assets/media-publication-marks-20260815.js
           node --check scripts/render_adjudicacion_provenance.mjs
           python3 -m json.tool publication-manifests/adjudicacion-2022-reconstruction-2026-08-19.json >/dev/null
-          python3 scripts/audit_adjudicacion_legacy_language.py | tee /tmp/adjudicacion-legacy-language.json
+          mkdir -p artifacts/adjudicacion-provenance
+          if ! python3 scripts/audit_adjudicacion_legacy_language.py > artifacts/adjudicacion-provenance/legacy-language.json; then
+            cat artifacts/adjudicacion-provenance/legacy-language.json
+            exit 1
+          fi
+          cat artifacts/adjudicacion-provenance/legacy-language.json
       - name: Use preinstalled Chrome with Playwright
         run: |
           npm install --no-save playwright@1.50.1
@@ -81,8 +86,6 @@ jobs:
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: adjudication-provenance-validation
-          path: |
-            artifacts/adjudicacion-provenance
-            /tmp/adjudicacion-legacy-language.json
+          path: artifacts/adjudicacion-provenance
           if-no-files-found: warn
           retention-days: 30
