@@ -18,7 +18,7 @@ What remains separately unproved is Borja→Eduardo information transfer, coordi
 
 ## Canonical actor control now overrides visual-memory reconstruction
 
-The repository now contains a structured, machine-readable actor/entity/proceeding register and explicit chronology locks.
+The repository contains a structured, machine-readable actor/entity/proceeding register and explicit chronology locks.
 
 Before changing names, family relationships, entity forms or dates, a fresh thread must read:
 
@@ -59,13 +59,17 @@ The public people/representatives register receives the same historical lock thr
 
 Do not maintain independent copies of identities, family relationships, chronology labels or the `LA VÍA PENAL CONTRA ESTA GENTE` evidential boundary. Update the canonical register, supersession log and shared component together.
 
-## Shared San Telmo / RICPE / Sun Park parallel-lives surface
+## Shared San Telmo / RICPE / Sun Park surfaces
 
-The dominant same-asset visualization is implemented once in:
+The established same-asset analytical visualization remains:
 
 `assets/san-telmo-parallel-lives-red-20260819.js`
 
-Publication routes and page-specific meanings are controlled by:
+The corrected portrait-and-source stamp is implemented once in:
+
+`assets/san-telmo-source-stamp-20260819.js`
+
+The loader places the source stamp immediately before the established parallel-lives analysis. Publication routes and page-specific meanings remain controlled by:
 
 `SAN_TELMO_PARALLEL_LIVES_SURFACE_MATRIX_19AUG2026.md`
 
@@ -74,7 +78,7 @@ The canonical public San Telmo bridge pages are:
 - `/en/san-telmo-ricpe-sun-park/`
 - `/es/san-telmo-ricpe-sun-park/`
 
-The component renders across the homepage, RICPE, RSM, Insolvency Administrator, San Telmo, Grant Thornton/Cuyás and the principal same-hotel / parallel-lives / accountability / reverse-engineering pages.
+The source stamp renders across the bilingual homepage, PwC, RICPE, RSM, Insolvency Administrator, San Telmo, Grant Thornton/Cuyás, 7 June 2018, actor-register, Community and principal same-hotel / parallel-lives / accountability / reverse-engineering pages.
 
 Grant Thornton is controlled separately by:
 
@@ -84,7 +88,7 @@ The Grant Thornton context is a **2020 conflict-memory → later Cuyás / Grant 
 
 ## Mandatory visual-asset identity control
 
-Named-person images are now governed independently from actor chronology and prose.
+Named-person images are governed independently from actor chronology and prose.
 
 Before using a portrait on the website, in an infographic, email, PDF, Word document or presentation, read:
 
@@ -98,8 +102,8 @@ Then resolve every image slot through:
 
 - **Borja / AC** must use `person.francisco-de-borja-rodriguez-batllori.primary` → `assets/actors/francisco-de-borja-rodriguez-batllori.jpg`.
 - **Eduardo Sánchez** must use `person.eduardo-sanchez-san-telmo.primary`.
-- Eduardo's user-confirmed source image is currently `USER_CONFIRMED_PENDING_REPOSITORY_IMPORT`; therefore no Eduardo portrait may be published until it is imported and byte-locked.
-- The user-confirmed Eduardo image must never be placed in the Borja / Administrador Concursal slot.
+- Eduardo’s user-confirmed portrait is active through the byte-locked repository pointer `assets/actors/eduardo-sanchez-san-telmo.url`, with status `LOCKED_CANONICAL_REPOSITORY_ASSET`; the pointer resolves to the first-party RSM profile image and records a first-party San Telmo fallback.
+- Eduardo and Borja must remain in their fixed slots under `assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json`; neither image may be substituted for the other.
 - No AI-generated or stock face may substitute for either named person.
 
 Any composite containing named people requires a `.asset-map.json` sidecar. The San Telmo visual is controlled by:
@@ -111,6 +115,16 @@ The repository CI gate runs:
 `python scripts/validate_visual_asset_registry.py`
 
 A visual with an unresolved person asset must remain blocked or display a neutral labelled placeholder. It must not guess.
+
+## Live source-stamped composite
+
+The corrected visual is controlled by:
+
+- `assets/san-telmo-source-stamp-20260819.js` — canonical native HTML/CSS/JavaScript source stamp;
+- `assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json`;
+- `archive/knowledge-project/SAN_TELMO_RICPE_WEBINAR_TIMESTAMP_CONTROL_19AUG2026.md`.
+
+The source statement begins at **08:08**, completes at **08:12**, and should be read in the **07:57–08:27** context window, transcript pages **29–30 of 85**. The stamp leads with the controlled proposition, shows Eduardo → RICPE investment → Sun Park → Concurso 36/2012 → Borja, links directly to the source from 08:08 and preserves the non-coordination/non-liability boundary.
 
 ## Fresh-thread rule
 
@@ -124,6 +138,7 @@ For San Telmo/RICPE specifically, read at minimum:
 2. `SAN_TELMO_PARALLEL_LIVES_SURFACE_MATRIX_19AUG2026.md`;
 3. `RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`;
 4. `GT_SAN_TELMO_RICPE_PARALLEL_LIVES_ADDENDUM_19AUG2026.md` when Grant Thornton/Cuyás is in scope;
-5. `VISUAL_ASSET_IDENTITY_GOVERNANCE_19AUG2026.md` when any portrait or composite is in scope.
+5. `VISUAL_ASSET_IDENTITY_GOVERNANCE_19AUG2026.md` when any portrait or composite is in scope;
+6. `SAN_TELMO_RICPE_WEBINAR_TIMESTAMP_CONTROL_19AUG2026.md` when quoting or timestamping Eduardo’s statement.
 
 Do not recreate, weaken or move the locked chronology forward from memory. Do not assign a named portrait from appearance, conversational order or prompt proximity.
