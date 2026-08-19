@@ -84,13 +84,14 @@ The 77-page digitally extracted act and annex package is a particularly importan
 
 Those facts do not establish unlawfulness. They make the relationship between **economic allocation, arrears status and governance power** a finite documentary question.
 
-Controlled source records already preserved in the repository include:
+Controlled source records preserved in the repository include:
 
 - `archive/knowledge-project/SUN_PARK_26APR2016_ACTA_DIGITAL_SOURCE_MAP_19AUG2026.md`
 - `archive/knowledge-project/SUN_PARK_26APR_TO_11JUN2016_UNITARY_SCAN_19AUG2026.md`
 - `archive/knowledge-project/PWC_CNMV_2016_UNITARY_DELETION_AUDIT_19AUG2026.md`
+- `evidence/community/ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md`
 
-The raw 77-page extraction should remain outside the public repository because it includes personal/contact/banking material.
+The **unredacted** 77-page extraction remains outside the public repository because it contains personal/contact/banking material. The public repository now carries a proportionate redacted evidential edition preserving the governance-relevant facts, page map and source hash.
 
 ## 6. Three compliance gates remain mandatory
 
@@ -139,3 +140,21 @@ Those stronger characterisations require an attributed allegation, expert opinio
 ## 9. Relationship to the existing audit
 
 `COMMUNITY_ACTAS_TWO_TRACK_AUDIT.md` remains the detailed forensic workpaper. This file controls the **section name and evidential framing** that should be used whenever that workpaper is surfaced, indexed, summarised or later integrated into the bilingual public site.
+
+## 10. Public visual implementation
+
+The dual-track visual reader is now part of the controlled publication architecture:
+
+- English: `en/community-instrumentalisation/two-competing-governance-records/`
+- Spanish: `es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/`
+
+The visual uses:
+
+- a left lane for the original/majority/exploitation record;
+- a right lane for the disputed Owners’ Community record from 2011 onward;
+- a neutral downstream bridge for the 7 June 2018 physical-control event;
+- a separate successor phase from 2022;
+- an explicit **capture-hypothesis causal spine**: costs → attributed debt → voting filter → apparent voting majority → authority outputs → downstream reliance;
+- a voting-filter panel using source-controlled percentages and clearly marking approximations/unverified figures.
+
+The 18 May 2018 reported ~0.385% figure is deliberately **not** hard-coded as a quantitative bar until title, proxies and denominator have been reconstructed finca by finca.
