@@ -139,3 +139,15 @@ Deleting the thread must not be accompanied by deleting:
 - the private evidence-vault material preserved by earlier audits;
 - GitHub Actions evidence or off-GitHub preservation artifacts;
 - the continuing CE-001–CE-010 issue register.
+
+## 20 August 2026 preserve-all re-audit
+
+The user subsequently renewed the instruction in express terms:
+
+> “run a deletion audit for this thread. preserve all”
+
+That renewed instruction, the full preservation scope, the earlier PR/commit/workflow history, all evidential and publication boundaries, the continuing evidence gates, and the expired-attachment limitation are preserved in:
+
+`archive/THREAD_DELETION_REAUDIT_PRESERVE_ALL_CASE_INFORMATION_ARCHITECTURE_20AUG2026.md`
+
+Once that re-audit is merged to `main`, it controls the final renewed deletion check. It does not displace or narrow any protection, correction, open task or evidential qualification in this original audit.
