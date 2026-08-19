@@ -25,6 +25,8 @@ on:
       - 'es/cuatrecasas-sun-park/**'
       - 'en/cuatrecasas-icam-ccacm-2026/**'
       - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/community-instrumentalisation/two-competing-governance-records/**'
+      - 'es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/**'
       - 'scripts/render_unitary_public_shell.mjs'
   push:
     branches: [main]
@@ -51,6 +53,8 @@ on:
       - 'es/cuatrecasas-sun-park/**'
       - 'en/cuatrecasas-icam-ccacm-2026/**'
       - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/community-instrumentalisation/two-competing-governance-records/**'
+      - 'es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/**'
       - 'scripts/render_unitary_public_shell.mjs'
 
 permissions:
@@ -86,6 +90,7 @@ jobs:
               print('XML OK', path)
           PY
           grep -q 'sitemap-legal-advisers.xml' robots.txt
+          grep -q 'sitemap-community-governance.xml' robots.txt
       - name: Install Playwright Chromium
         run: |
           npm install --no-save playwright@1.50.1
