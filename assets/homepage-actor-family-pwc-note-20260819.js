@@ -31,7 +31,8 @@
     pageRicpe:'Este bloque muestra por qué el conocimiento previo de PwC y la historia anterior de la Comunidad importan para los controles, conflictos y due diligence posteriores.',
     homeLink:'Ver mapa principal de actores →',
     pwcLink:'Ver expediente PwC / Carlos 2016 →',
-    ricpeLink:'Ver expediente RICPE / Sun Park →'
+    ricpeLink:'Ver expediente RICPE / Sun Park →',
+    registerLink:'Ver registro canónico de personas, entidades y representantes →'
   }:{
     relation:{
       fmmm:'HUSBAND OF SHAILA MARÍA COGOLLUDO RAMOS',
@@ -56,10 +57,12 @@
     pageRicpe:'This block shows why PwC’s prior knowledge and the earlier Community history matter to later controls, conflicts and due-diligence questions.',
     homeLink:'See the main actor map →',
     pwcLink:'See the full 2016 PwC / Carlos record →',
-    ricpeLink:'See the RICPE / Sun Park record →'
+    ricpeLink:'See the RICPE / Sun Park record →',
+    registerLink:'See the canonical people, entities and representatives register →'
   };
 
   const base=es?'/por-derecho/es/':'/por-derecho/en/';
+  const registerRoute=base+(es?'actores-partes-abogados-representantes/':'actors-parties-lawyers-representatives/');
 
   const ensureStyle=()=>{
     if(d.querySelector('style[data-pd-actor-visual]'))return;
@@ -98,7 +101,7 @@
     add(f,copy.relation.fmmm,copy.chronology.fmmm);add(a,copy.relation.antonio,copy.chronology.antonio);add(s,copy.relation.shaila,copy.chronology.shaila);if(j)add(j,null,copy.chronology.jdam);if(l)add(l,null,copy.chronology.laura);
     const lock=d.createElement('div');lock.className='pd-history-lock';lock.dataset.pdActorHistoryLock='true';lock.textContent=copy.chronologyBoundary;grid.appendChild(lock);
     const note=d.createElement('aside');note.className='pd-pwc-home';note.dataset.homeActorFamilyPwc='true';
-    note.innerHTML=`<div class="pd-pwc-home__k">${copy.noteK}</div><div class="pd-pwc-home__q">${copy.quote}</div><div class="pd-pwc-home__grid"><div><p>${copy.note}</p><a href="${base}pwc-canarias-carlos-saavedra-sun-park/">${copy.pwcLink}</a><a href="${base}ric-private-equity-sun-park/">${copy.ricpeLink}</a></div><div><p class="pd-pwc-home__why"><strong>${copy.why}</strong></p><p class="pd-pwc-home__boundary">${copy.boundary}</p></div></div>`;
+    note.innerHTML=`<div class="pd-pwc-home__k">${copy.noteK}</div><div class="pd-pwc-home__q">${copy.quote}</div><div class="pd-pwc-home__grid"><div><p>${copy.note}</p><a href="${base}pwc-canarias-carlos-saavedra-sun-park/">${copy.pwcLink}</a><a href="${base}ric-private-equity-sun-park/">${copy.ricpeLink}</a><a href="${registerRoute}">${copy.registerLink}</a></div><div><p class="pd-pwc-home__why"><strong>${copy.why}</strong></p><p class="pd-pwc-home__boundary">${copy.boundary}</p></div></div>`;
     grid.appendChild(note);
   };
 
@@ -108,7 +111,7 @@
     if(!hero)return;
     const box=d.createElement('section');box.className='pd-actor-replica';box.dataset.pdActorReplica=isPwc?'pwc':'ricpe';
     const context=isPwc?copy.pagePwc:copy.pageRicpe;
-    box.innerHTML=`<div class="pd-actor-replica__k">${copy.noteK}</div><div class="pd-actor-replica__q">${copy.quote}</div><p class="pd-actor-replica__intro"><strong>${copy.actorTitle}.</strong> ${context}</p><p class="pd-history-lock">${copy.chronologyBoundary}</p><div class="pd-actor-replica__actors"><article><strong>Francisco Mario Matos Matas (FMMM)</strong><span class="pd-actor-replica__relation">${copy.relation.fmmm}</span><small>${copy.chronology.fmmm}</small></article><article><strong>Antonio Cogolludo Rojas</strong><span class="pd-actor-replica__relation">${copy.relation.antonio}</span><small>${copy.chronology.antonio}</small></article><article><strong>Shaila María Cogolludo Ramos</strong><span class="pd-actor-replica__relation">${copy.relation.shaila}</span><small>${copy.chronology.shaila}</small></article></div><div class="pd-actor-replica__body"><div><p>${copy.note}</p><a href="${base}">${copy.homeLink}</a>${isRicpe?`<a href="${base}pwc-canarias-carlos-saavedra-sun-park/">${copy.pwcLink}</a>`:`<a href="${base}ric-private-equity-sun-park/">${copy.ricpeLink}</a>`}</div><div><p class="pd-actor-replica__why"><strong>${copy.why}</strong></p><p class="pd-actor-replica__boundary">${copy.boundary}</p></div></div>`;
+    box.innerHTML=`<div class="pd-actor-replica__k">${copy.noteK}</div><div class="pd-actor-replica__q">${copy.quote}</div><p class="pd-actor-replica__intro"><strong>${copy.actorTitle}.</strong> ${context}</p><p class="pd-history-lock">${copy.chronologyBoundary}</p><div class="pd-actor-replica__actors"><article><strong>Francisco Mario Matos Matas (FMMM)</strong><span class="pd-actor-replica__relation">${copy.relation.fmmm}</span><small>${copy.chronology.fmmm}</small></article><article><strong>Antonio Cogolludo Rojas</strong><span class="pd-actor-replica__relation">${copy.relation.antonio}</span><small>${copy.chronology.antonio}</small></article><article><strong>Shaila María Cogolludo Ramos</strong><span class="pd-actor-replica__relation">${copy.relation.shaila}</span><small>${copy.chronology.shaila}</small></article></div><div class="pd-actor-replica__body"><div><p>${copy.note}</p><a href="${base}">${copy.homeLink}</a>${isRicpe?`<a href="${base}pwc-canarias-carlos-saavedra-sun-park/">${copy.pwcLink}</a>`:`<a href="${base}ric-private-equity-sun-park/">${copy.ricpeLink}</a>`}<a href="${registerRoute}">${copy.registerLink}</a></div><div><p class="pd-actor-replica__why"><strong>${copy.why}</strong></p><p class="pd-actor-replica__boundary">${copy.boundary}</p></div></div>`;
     hero.insertAdjacentElement('afterend',box);
     const pin=()=>{if(hero.nextElementSibling!==box)hero.insertAdjacentElement('afterend',box)};
     setTimeout(pin,250);setTimeout(pin,900);
