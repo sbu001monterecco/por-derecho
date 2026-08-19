@@ -52,6 +52,14 @@ Seek:
 - 2020–2021 title work, corrections, Board materials and disclosure decisions;
 - later PwC/Carlos–Acosta Matos mandate records with exact entity/client/asset separation.
 
+## Full webinar source control — mandatory companion
+
+Read `archive/knowledge-project/RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md` before making detailed claims about the 11 November 2020 RICPE webinar or the 30 November 2021 San Telmo / RICPE event.
+
+That companion control preserves the page-level 2020 source matrix, including the RICPE Director-General representation that legal/fiscal due diligence of the company and **especially the project** was performed through Pricewaterhouse; the Intermoney risk-control / investment-report / tax / DG recommendation / Board approval sequence; the Sun Park €12m project description; the company-ownership/free-of-charges narrative; and the mandatory distinction between those public statements and independently verified fact.
+
+It also records the separate 30 November 2021 San Telmo event: RICPE Director General Enrique Guerra was interviewed by **San Telmo partner Eduardo Sánchez** under San Telmo's #UnCaféenSanTelmo branding. The event creates a legitimate professional-perimeter chronology but does **not** prove a San Telmo mandate, knowledge transfer from the Administrador Concursal, shared knowledge, coordination or wrongdoing.
+
 ## Publication rule
 
 The RICPE page should present PwC as a **prior-knowledge and professional-control node requiring documentary reconciliation**, not as a proved wrongdoer. Right of reply and equivalent-prominence correction remain mandatory.
