@@ -1,0 +1,35 @@
+name: Por Derecho Case Laboratory integrity
+
+on:
+  pull_request:
+    paths:
+      - 'es/por-derecho/laboratorio-de-casos/**'
+      - 'en/por-derecho/case-lab/**'
+      - 'assets/por-derecho/case-lab.*'
+      - 'assets/por-derecho/por-derecho.js'
+      - 'scripts/validate-por-derecho-case-lab.py'
+      - 'sitemap-por-derecho-case-lab.xml'
+      - 'robots.txt'
+  push:
+    branches: [main]
+    paths:
+      - 'es/por-derecho/laboratorio-de-casos/**'
+      - 'en/por-derecho/case-lab/**'
+      - 'assets/por-derecho/case-lab.*'
+      - 'assets/por-derecho/por-derecho.js'
+      - 'scripts/validate-por-derecho-case-lab.py'
+      - 'sitemap-por-derecho-case-lab.xml'
+      - 'robots.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate synthetic Case Laboratory
+        run: python3 scripts/validate-por-derecho-case-lab.py
+      - name: Check JavaScript syntax
+        run: node --check assets/por-derecho/case-lab.js && node --check assets/por-derecho/por-derecho.js
