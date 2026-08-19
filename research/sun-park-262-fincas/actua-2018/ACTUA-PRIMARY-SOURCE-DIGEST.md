@@ -1,211 +1,255 @@
-# ACTÚA 15 January 2018 — primary-source digest
+# ACTÚA 2018 — primary-source digest
 
 Updated: 19 August 2026.
 
 ## Evidential purpose
 
-This note records what the recovered ACTÚA source itself says and shows. It supersedes any repository wording that treated the original ACTÚA report as still missing or assumed that its photographic record was composed only of negative closed-unit imagery.
+This note records what the recovered ACTÚA sources themselves say and show. It supersedes earlier repository wording that treated the original ACTÚA report as missing, assumed its photo record was wholly negative, or treated the number 61 as supported only by the client-side April email.
 
-It does **not** determine criminal intent, title, access authority or whether the valuation was legally valid. Those are separate questions.
+It does **not** determine criminal intent, registered title, access authority or the legal validity of the valuation.
 
-## Source recovered
+## Source A — original 15 January 2018 valuation
 
 **Drive title:** `ANEXO IBB - Tasacion ACTUA 15ENE2018 (ver pags 23-24 y 31-33).pdf`  
 **Drive id:** `1I007yqfjxMtOKDU13c3JoP_MzmLW3K-5`  
-**Container/source size:** about 145.6 MB  
+**Size:** about 145.6 MB  
 **PDF length:** 492 pages.
 
-The first 46 PDF pages are the ACTÚA valuation report. The remaining pages are documentary annexes. The report itself states that it comprises 46 pages excluding annexes.
+The first 46 pages are the ACTÚA valuation report; the remainder are documentary annexes. The report itself states that it comprises 46 pages excluding annexes.
 
-Related native extracts located in Gmail message `17ffbcc70d3475ee`:
+Related native extracts in Gmail message `17ffbcc70d3475ee`:
 
 - `Tasación ACTUA (Datos Fincas Registrales -Catastrales) 15ENE2018.pdf` — 13 pages;
 - `Tasación ACTUA (Coste Construccion a Nuevo) 15ENE2018.pdf` — 6 pages.
 
-Those are useful native components but are **not** the complete report.
+These are components, not the complete report.
 
-## Basic ACTÚA identifiers
+## Original-report identifiers
 
-The recovered report identifies:
+The report identifies:
 
-- applicant / requester: `CONSTRUCCIONES ACOSTA MATOS S.A.`;
+- applicant/requester: `CONSTRUCCIONES ACOSTA MATOS S.A.`;
 - property: `COMPLEJO TURÍSTICO APARTAMENTOS SUN PARK 1*`;
 - location: Calle Janubio nº 3, Playa Blanca, Yaiza;
-- principal file reference: `00405-18-00 Z-0`;
+- principal file: `00405-18-00 Z-0`;
 - valuation date: 15 January 2018;
-- purpose: `ASESORAMIENTO`, specifically to determine the stated `VALOR RAZONABLE`;
+- purpose: `ASESORAMIENTO` to determine stated `VALOR RAZONABLE`;
 - 262 independent registry properties forming a `ÚNICA UNIDAD FUNCIONAL`.
 
-The report also contains an internal reference rendered as `000405-17-00-00` on one page. Preserve this as an internal numbering inconsistency / possible typographical carry-over; do not silently normalise it.
+One page renders an internal reference `000405-17-00-00`. Preserve this numbering inconsistency instead of silently correcting it.
 
-## Primary physical-condition statements
+## Original-report physical-condition statements
 
-The report states:
+ACTÚA states:
 
 - cadastral age: 1988;
 - planning age: 1989;
 - `Año de rehabilitación: No reformado`;
-- the property was in `mal estado de conservación y mantenimiento` consistent, in ACTÚA's wording, with its age;
-- it said general works would be required to meet the cited tourism-regulatory conditions and undertake the activity correctly;
-- for valuation purposes ACTÚA adopted a physical age of 20 years.
+- `mal estado de conservación y mantenimiento`;
+- general works would be required for cited tourism-regulatory conditions/activity;
+- physical age adopted for valuation: 20 years.
 
-These are ACTÚA's own statements. They conflict materially with other dated evidence describing previous refurbishment and/or renovated rooms. The conflict is an evidential object; it is not resolved by choosing one description without unit/date analysis.
+These are ACTÚA's statements and sit in tension with other dated evidence of earlier refurbishment/renovated rooms. The conflict remains an evidential object.
 
 ## Occupation and operating assumptions
 
-ACTÚA states under tenure/occupation:
+ACTÚA states:
 
 `SITUACIÓN Y OCUPACIÓN: Se desconoce.`
 
-Separately, for market modelling, ACTÚA uses statistical hotel-market data and states a Yaiza average occupancy of approximately **80.42%**. It derives an accommodation rate of approximately **EUR 55 per room/night**.
+Separately, for its market model, it uses:
 
-The update model uses:
+- Yaiza market occupancy approximately 80.42%;
+- approximately EUR55 per room/night;
+- 220 apartments / 440 accommodation places;
+- estimated annual income about EUR4,173,305.43;
+- annual costs about EUR2,116,700.51;
+- year-one adaptation investment EUR1,584,762.23.
 
-- 220 apartments;
-- 440 accommodation places;
-- estimated annual income: about EUR 4,173,305.43;
-- annual costs: about EUR 2,116,700.51;
-- adaptation investment in year 1: 13% of replacement cost new = EUR 1,584,762.23;
-- year-1 operating cashflow therefore begins with the adaptation investment and no operating revenue in that first model year.
+Do **not** convert the model's first-year treatment into a factual statement that actual occupancy was 0%. ACTÚA itself says actual occupation was unknown.
 
-These assumptions must not be confused with a direct finding that the hotel had 0% actual occupancy on the valuation date. ACTÚA itself says actual situation/occupation was unknown.
-
-## Uniform physical depreciation — now primary evidence
+## Uniform physical depreciation — primary evidence
 
 ACTÚA's own calculation records:
 
-- normative life considered: 35 years;
+- normative life: 35 years;
 - physical age: 20 years;
 - **physical depreciation: 57.14%**;
-- replacement cost new (`CCN`): EUR 12,190,478.70;
-- net construction value: EUR 5,224,491.00;
-- land value: EUR 4,551,512.13.
+- replacement cost new (`CCN`): EUR12,190,478.70;
+- net construction: EUR5,224,491.00;
+- land: EUR4,551,512.13.
 
-The uniform **20 years / 57.14%** treatment is therefore no longer supported only through GESVALT's criticism: it is visible in ACTÚA's primary calculation.
+The 57.14% figure is therefore primary ACTÚA evidence, not only a later GESVALT criticism.
 
-The report's per-property output values the apartment stock on a uniform mechanical basis rather than by individually documented condition. It gives land repercussion of EUR 20,688.69 per apartment and a total apartment value of about EUR 41,556.93 per apartment in the schedule.
-
-Whether a different hidden inspection schedule existed remains an open evidence question; none has yet been located in the recovered report.
+The apartment schedule applies uniform mechanics rather than visibly documented unit-specific condition adjustments. Whether separate field notes or a hidden unit-condition schedule existed remains open.
 
 ## Update-method value versus selected value
 
-ACTÚA's update calculation produces:
+ACTÚA's update calculation produces approximately:
 
-- updated free cashflow total: about EUR 8,556,364.00;
-- updated land reversion: about EUR 1,586,703.14;
-- `VAN INMOBILIARIO`: **EUR 10,143,067.14**.
+- updated free cashflow: EUR8,556,364.00;
+- land reversion: EUR1,586,703.14;
+- `VAN INMOBILIARIO`: **EUR10,143,067.14**.
 
-ACTÚA nevertheless selects the cost / net-replacement result:
+ACTÚA selects the cost/net-replacement result:
 
-**EUR 9,776,003.13**
+**EUR9,776,003.13**.
 
-as the stated valuation of the complex.
-
-The methodological significance of that choice is analysed in the later GESVALT expert critique. The difference between the two ACTÚA calculations alone does not establish wrongdoing.
+The difference alone does not establish wrongdoing.
 
 ## 31 hotel-service/common-function properties
 
-ACTÚA records a separate request by CAM for individual stated reasonable values for 31 registry properties linked to reception, restaurant/bar, toilets, pools, gardens and hotel-service functions.
-
-The recovered schedule associates:
+ACTÚA separately records 31 titles linked to reception, restaurant/bar, toilets, pools, gardens and hotel-service functions. The recovered schedule associates:
 
 - finca 8536 with reception;
-- fincas 8508–8535 with basement/service/common-function locals;
-- fincas 8653 and 8654 with the central outdoor solarium/pool/garden layer.
+- fincas 8508–8535 with lower/service/common-function locals;
+- fincas 8653 and 8654 with central solarium/pool/garden space.
 
-This is useful for the 262-finca spatial model because ACTÚA itself simultaneously recognises independent titles and the whole complex as one functional unit.
+This reinforces the spatial model: independent titles are simultaneously treated by ACTÚA as parts of one functional hotel unit.
 
-## ACTÚA photographic section — 13 first-class evidence objects
+## Original-report photographic section — 13 first-class evidence objects
 
-ACTÚA pages 16–21 contain **13 substantive JPEG photographs** after excluding recurring page/header graphics. They are indexed in `actua-photo-geolocation.csv` as `ACTUA-PHOTO-001` through `ACTUA-PHOTO-013`.
+Pages 16–21 contain **13 substantive photographs**, indexed in `actua-photo-geolocation.csv` as `ACTUA-PHOTO-001` through `ACTUA-PHOTO-013`.
 
-The critical correction is that the ACTÚA photographic record is **mixed**, not uniformly negative.
+The record is **mixed**, not uniformly negative. It contains:
 
-It contains:
-
-- exterior areas showing neglect / restricted or untidy areas;
-- cluttered corridors / common interiors;
-- a central landscaped/common area with intact façades;
+- exterior neglect/restricted or untidy areas;
+- cluttered corridors/common interiors;
+- a landscaped central/common area with intact façades;
 - café/bar/common areas appearing capable of use;
 - a common/reception area with people visibly present;
-- a reception/front-office desk appearing intact/usable;
-- three clear apartment-interior images on page 21 showing varying wear, stripping or deterioration.
+- an intact-looking reception/front-office desk;
+- three clear apartment-interior images on page 21 showing wear, stripping or deterioration.
 
-### What the photographs do NOT presently establish
+The three apartment interiors are not visibly captioned by apartment, finca, block, owner or access provider. They may show one apartment or several; this is not yet established.
 
-The report does not visibly caption the three apartment interiors with:
+Available extraction did not establish original-camera EXIF/GPS metadata. Extraction-time file timestamps are not camera dates.
 
-- apartment number;
-- registry finca;
-- block;
-- owner;
-- access provider.
+## Falsification of the earlier strongest visual-sampling formulation
 
-The recovered report therefore does **not** presently prove that the three apartment interiors are in Blocks 4–5, or that ACTÚA's photographs document all approximately 44 poor-condition units identified later by GESVALT.
+Earlier Project wording hypothesised that ACTÚA's visible negative presentation consisted largely/wholly of closed Blocks 4–5/minority areas.
 
-The three page-21 interiors could be the same apartment or multiple apartments; that has not yet been proved.
+The original report **weakens that formulation** because:
 
-Available extraction did not reveal original-camera EXIF capture/GPS metadata in the embedded JPEGs. File-system creation times created by extraction must not be mistaken for camera dates.
+- not all photos are negative;
+- only three are clear apartment interiors;
+- several common-area photos show usable/occupied-looking space;
+- no original-report photo is visibly tied to Block 4 or 5.
 
-## Falsification result for the earlier visual-sampling theory
+The stronger question is representativeness and extrapolation rather than an assertion that the photo appendix was wholly negative.
 
-Earlier Project Sun Rock working language hypothesised that ACTÚA's negative presentation might have consisted largely or wholly of closed Blocks 4–5 / minority areas.
+## Source B — ACTÚA 3 April 2018 counter-report
 
-Review of the recovered primary report **weakens that formulation**:
+CAM's recovered later court package contains:
 
-- the report's photos are not all negative;
-- they are not all apartment interiors;
-- several common-area images themselves show usable/occupied-looking space;
-- no photo is presently tied by ACTÚA to Block 4 or 5.
+`18-4-16 DOC2_firmado(1).pdf`
 
-The stronger surviving question is therefore narrower and more testable:
+Title:
 
-> Did ACTÚA have a sufficiently representative, property-specific evidential basis to apply a uniform 57.14% physical depreciation and a categorical whole-complex poor-condition description when its report contains only three unidentified apartment-interior photographs, actual occupation is stated as unknown, and its own common-area photographic record is mixed?
+`CONTRAINFORME AL INFORME PERICIAL ... ANÁLISIS CRÍTICO DE LA VALORACIÓN REALIZADA POR ACTÚA DEL COMPLEJO SUN PARK`
 
-This wording must replace any public implication that ACTÚA's photo appendix was proved to be a wholly negative Blocks 4–5 sample.
+ACTÚA ref `438_2018`.
 
-## 60 / 61 / approximately 44 — primary-source correction
+Author/signatory: Fayna Mª Navarro García, Arquitecto Superior. Dated 3 April 2018.
 
-Text search of the complete ACTÚA report has not located a condition statement identifying:
+### Incomplete interior access — direct ACTÚA statement
 
-- `61 apartamentos`;
-- `dos bloques` / `2 bloques` as a 61-unit condition universe;
-- `44 unidades` / `44 apartamentos` as the poor-condition universe.
+ACTÚA expressly says it could not access the interior of **100% of the complex**. It later says that, because it lacked access to the whole interior, **general exterior images** led it to conclude the overall state was `DEFICIENTE`.
 
-Therefore:
+This is PRIMARY evidence of an access limitation. It does not tell us which interiors ACTÚA did enter or who supplied access.
 
-- **61 / two blocks** remains a contemporaneous **party allegation** in the 17 April 2018 email to Cuatrecasas unless an earlier source is found;
-- **approximately 44 poor units** remains a **GESVALT professional opinion** in the 1 March 2018 critique;
-- **Blocks 4+5 = 44 architectural apartments** remains a numerical/spatial hypothesis, not an ACTÚA statement.
+### The 61-unit input — direct ACTÚA statement, underlying source unresolved
+
+ACTÚA states:
+
+`Existen al menos 61 que se encuentran sin reformar conforme se nos informa`.
+
+Evidentially this means:
+
+- ACTÚA itself recorded **at least 61 unrefurbished units**;
+- ACTÚA expressly attributes the proposition to information supplied to it (`conforme se nos informa`);
+- the provider/source is not identified in the located passage;
+- no 61-unit schedule has yet been located;
+- ACTÚA does not identify those 61 in the located passage as architectural Blocks 4 and 5.
+
+Therefore 61 is no longer merely a client-side allegation; it is an ACTÚA-recorded information input. But the underlying count remains source-dependent until the provider/list is recovered.
+
+### Whole-unit depreciation expressly defended
+
+The counter-report argues:
+
+- original age about 30 years;
+- theoretical 85.71% physical depreciation if nothing had been renovated;
+- staggered maintenance/refurbishment had occurred;
+- **57.14% physical depreciation was adopted for the TOTAL functional unit**;
+- finca-specific depreciation was rejected because ACTÚA treated the hotel/exploitation unit as depreciating as a whole.
+
+Thus whole-unit uniform depreciation is an explicit ACTÚA methodological position, not merely a mechanical spreadsheet effect.
+
+### Other April reasoning
+
+ACTÚA also:
+
+- uses historic GrafCan imagery and says the south-pool area had been inoperative from 2013;
+- defends the EUR55/night comparator methodology;
+- disputes GESVALT's land/reversion analysis;
+- directly contests GESVALT's conclusions.
+
+These are ACTÚA's technical positions, not proof that the positions were correct.
+
+## Formal court filing
+
+The ACTÚA responses were included in a CAM LexNET package in Concurso 36/2012:
+
+- LexNET id **201810203877878**;
+- Mercantil nº1 Las Palmas;
+- submitted 17 April 2018 at 12:27;
+- accepted that day.
+
+See `cam-lexnet-actua-filing-17apr2018.md`.
+
+## 60 / 61 / approximately 44 — corrected provenance
+
+The current source hierarchy is:
+
+- **60** — 2017 acquisition/minority working reconstruction; native source still to recover.
+- **at least 61 unrefurbished** — ACTÚA 3 April counter-report, expressly based on information supplied to ACTÚA; provider/list unresolved.
+- **61 / two blocks / unused-poor** — 17 April client-side email to Cuatrecasas; the `two blocks` geography has not been found in ACTÚA's located passage.
+- **approximately 44 poor** — GESVALT professional opinion in its 1 March critique.
+- **Blocks 4+5 = exactly 44 architectural apartments** — documented geometry, still not proof of identity with GESVALT's approximately 44.
+
+The original 15 January report itself does not visibly enumerate 61 or 44 as condition sets. The later 3 April ACTÚA counter-report supplies the 61 bridge.
 
 ## Strongest alternative explanation
 
-A fair alternative explanation is that ACTÚA may have inspected materially more areas than it chose to photograph in the final report, may have had non-photographic condition observations, and may have regarded a uniform cost-depreciation approach as appropriate for the requested assignment. The report's negative photographs show that some deterioration was real.
+A fair alternative explanation is that ACTÚA inspected more areas than shown in the original 13-photo appendix, held non-photographic observations/field notes, and considered whole-unit depreciation justified by common-area, accessibility and exploitation-unit factors. Some deterioration is genuinely visible.
 
-Evidence that would strengthen that explanation:
+Evidence strengthening that explanation would include:
 
-- contemporaneous inspection notes;
-- a unit-by-unit inspection list;
-- photographs omitted from the report;
-- instructions showing the scope and purpose of the inspection;
-- evidence that a large and representative sample of apartments across Blocks 1–9 was entered and examined.
+- unit-by-unit inspection notes;
+- a representative Blocks 1–9 interior sample;
+- original photos omitted from the report;
+- a documented provider and reliable schedule for the 61;
+- contemporaneous instructions showing a broad inspection mandate.
 
-Evidence that would weaken it:
+Evidence weakening it would include:
 
-- proof that only a small closed subset was entered;
-- instructions restricting access/sample to minority units;
-- drafts showing categorical condition language derived from a bounded subset;
-- proof that contrary operating/refurbishment information was supplied but ignored without explanation.
+- proof that only a narrow closed subset was internally inspected;
+- evidence the 61 input came from an interested actor without verification;
+- drafts extrapolating categorical whole-complex condition from a bounded subset;
+- evidence that contrary operating/refurbishment information was supplied but left unexplained.
 
 ## Next source targets
 
-1. ACTÚA engagement/instruction letter, invoice and inspection notes.
-2. Native/original photo files if they exist outside the PDF.
-3. Identity of the three apartment-interior locations on page 21.
-4. Access/keys chain for the January 2018 inspection.
-5. Unit-by-unit inspection list, if any.
-6. Exact version ACTÚA → CAM → insolvency administrator → court.
-7. Historical title/control of any successfully geolocated photographed units.
-8. Later CAM acquisition of those same units, if any.
+1. Provider and exact schedule behind ACTÚA's `at least 61` input.
+2. ACTÚA engagement/instructions, invoice and field notes.
+3. Original/native photo files and full inspection-image set.
+4. Identity of ACTUA-PHOTO-011/012/013.
+5. January-2018 access/keys chain and number/distribution of interiors entered.
+6. Native 2017 60-apartment acquisition-status source.
+7. Earliest source of the `two blocks` wording.
+8. GESVALT schedule/notes behind approximately44.
+9. Historic title/control and later CAM acquisition of geolocated photographed units.
+10. AC/court treatment of ACTÚA Documents 1/2 and GESVALT's contrary evidence.
 
-No gap above may be filled by inference and then presented as a fact.
+No gap may be filled by inference and then presented as fact.
