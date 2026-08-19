@@ -1,0 +1,105 @@
+name: Validate criminal-engineering investigation
+
+on:
+  pull_request:
+    paths:
+      - 'es/ingenieria-forense-criminal-sun-park/**'
+      - 'en/sun-park-criminal-engineering-investigation/**'
+      - 'assets/criminal-engineering-investigation-20260819.js'
+      - 'assets/reverse-engineering-360-20260819.js'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'scripts/audit_criminal_engineering_repository.py'
+      - 'scripts/render_criminal_engineering_investigation.mjs'
+      - 'operations/SUN_PARK_CRIMINAL_ENGINEERING_ACTIVATION_2026-08-19.md'
+      - 'publication-manifests/criminal-engineering-investigation-20260819.json'
+      - 'sitemap-criminal-engineering.xml'
+      - 'robots.txt'
+      - '.github/workflows/validate-criminal-engineering-investigation.yml'
+      - '.github/workflows/verify-criminal-engineering-investigation-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/ingenieria-forense-criminal-sun-park/**'
+      - 'en/sun-park-criminal-engineering-investigation/**'
+      - 'assets/criminal-engineering-investigation-20260819.js'
+      - 'assets/reverse-engineering-360-20260819.js'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'scripts/audit_criminal_engineering_repository.py'
+      - 'scripts/render_criminal_engineering_investigation.mjs'
+      - 'operations/SUN_PARK_CRIMINAL_ENGINEERING_ACTIVATION_2026-08-19.md'
+      - 'publication-manifests/criminal-engineering-investigation-20260819.json'
+      - 'sitemap-criminal-engineering.xml'
+      - 'robots.txt'
+      - '.github/workflows/validate-criminal-engineering-investigation.yml'
+      - '.github/workflows/verify-criminal-engineering-investigation-live.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: criminal-engineering-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Syntax, JSON, sitemap and unitary audit
+        run: |
+          node --check assets/criminal-engineering-investigation-20260819.js
+          node --check assets/reverse-engineering-360-20260819.js
+          node --check scripts/render_criminal_engineering_investigation.mjs
+          python3 -m json.tool assets/data/criminal-engineering-investigation-v1.json >/dev/null
+          python3 -m json.tool publication-manifests/criminal-engineering-investigation-20260819.json >/dev/null
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse('sitemap-criminal-engineering.xml')
+          print('XML OK sitemap-criminal-engineering.xml')
+          PY
+          grep -q 'sitemap-criminal-engineering.xml' robots.txt
+          mkdir -p artifacts/criminal-engineering-investigation
+          python3 scripts/audit_criminal_engineering_repository.py > artifacts/criminal-engineering-investigation/repository-audit.json
+          cat artifacts/criminal-engineering-investigation/repository-audit.json
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+      - name: Serve static site at production subpath
+        run: |
+          mkdir -p /tmp/psr-site/por-derecho
+          cp -a . /tmp/psr-site/por-derecho/
+          cd /tmp/psr-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-http.log 2>&1 &
+          echo $! > /tmp/psr-http.pid
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/ingenieria-forense-criminal-sun-park/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-http.log
+          exit 1
+      - name: Render canonical pages and actor gateways
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_CRIMINAL_ENGINEERING_ARTIFACT_DIR: artifacts/criminal-engineering-investigation
+        run: node scripts/render_criminal_engineering_investigation.mjs
+      - name: Upload validation evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: criminal-engineering-investigation-validation
+          path: artifacts/criminal-engineering-investigation
+          if-no-files-found: error
+          retention-days: 30
