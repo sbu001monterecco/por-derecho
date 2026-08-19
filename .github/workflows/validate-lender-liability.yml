@@ -1,0 +1,42 @@
+name: Validate lender-liability architecture
+
+on:
+  pull_request:
+    paths:
+      - "research/lender-of-record-liability/**"
+      - "en/lender-of-record/liability/**"
+      - "es/acreedor-de-registro/responsabilidad/**"
+      - "sitemap-lender-liability.xml"
+      - "robots.txt"
+      - ".github/workflows/validate-lender-liability.yml"
+  push:
+    branches: [main]
+    paths:
+      - "research/lender-of-record-liability/**"
+      - "en/lender-of-record/liability/**"
+      - "es/acreedor-de-registro/responsabilidad/**"
+      - "sitemap-lender-liability.xml"
+      - "robots.txt"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate structured lender-liability data
+        run: python research/lender-of-record-liability/validate.py
+      - name: Check bilingual public routes and reciprocal alternates
+        run: |
+          test -f en/lender-of-record/liability/index.html
+          test -f es/acreedor-de-registro/responsabilidad/index.html
+          grep -q 'hreflang="es"' en/lender-of-record/liability/index.html
+          grep -q 'hreflang="en"' es/acreedor-de-registro/responsabilidad/index.html
+          grep -q '/es/acreedor-de-registro/responsabilidad/' en/lender-of-record/liability/index.html
+          grep -q '/en/lender-of-record/liability/' es/acreedor-de-registro/responsabilidad/index.html
+          grep -q 'sitemap-lender-liability.xml' robots.txt
