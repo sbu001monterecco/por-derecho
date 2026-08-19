@@ -45,3 +45,16 @@
   if (hero) hero.insertAdjacentElement('afterend', section);
   else main.insertAdjacentElement('afterbegin', section);
 })();
+
+// Global alleged criminal-engineering investigation loader. It is deliberately separate
+// from the neutral 360° dependency gateway: the new layer states Por Derecho's allegation
+// strongly while preserving actor-specific proof, the strongest defence and no-finding labels.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-criminal-engineering-investigation-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('criminal-engineering-investigation-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.criminalEngineeringInvestigationLoader = 'true';
+  document.head.appendChild(script);
+})();
