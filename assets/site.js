@@ -193,6 +193,10 @@
   // a high-visibility Spotlight while keeping the procedural-fraud theory explicitly non-adjudicated.
   load('flagship-case-1260-2011-20260817.js?v=20260817a');
 
+  // Homepage evidence annotation: contemporaneous PwC knowledge / penal-route instruction beside the
+  // FMMM + Antonio Cogolludo + Shaila Cogolludo actor cluster, with an explicit no-criminal-finding boundary.
+  load('homepage-pwc-knowledge-note-20260819.js?v=20260819a');
+
   // Canonical sharing/deep-link capability. Book pages retain their established markup and load this through
   // the legacy compatibility bridge; other substantive ES/EN pages receive the compact page-share control.
   if (!document.querySelector('script[src*="book-page-share-20260815.js"]')) {
