@@ -15,6 +15,13 @@
   caseArchitecture.setAttribute('data-case-information-architecture-loader', 'true');
   document.head.appendChild(caseArchitecture);
 
+  // Correct the San Telmo speaker attribution on the bilingual homepages without changing the retained image.
+  const attribution = document.createElement('script');
+  attribution.src = new URL('san-telmo-attribution-correction-20260819.js?v=20260819a', current.src).href;
+  attribution.async = false;
+  attribution.setAttribute('data-san-telmo-attribution-loader', 'true');
+  document.head.appendChild(attribution);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 

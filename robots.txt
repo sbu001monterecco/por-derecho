@@ -24,3 +24,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-audiencia-cuenta
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-lender-liability.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-case-governance.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-san-telmo.xml
