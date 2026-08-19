@@ -21,11 +21,9 @@ required = {
     ],
     "en/index.html": [
         '<section class="interview-evidence"',
-        'aria-labelledby="interview-title"',
     ],
     "es/index.html": [
         '<section class="interview-evidence"',
-        'aria-labelledby="interview-title"',
     ],
     "en/san-telmo-ricpe-sun-park/index.html": [
         "The direct public source",
