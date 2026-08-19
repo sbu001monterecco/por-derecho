@@ -1,0 +1,60 @@
+{
+  "id": "adjudicacion-2022-reconstruction-2026-08-19",
+  "created_at": "2026-08-19",
+  "status": "controlled-publication-package",
+  "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
+  "public_pages": {
+    "es": "/es/adjudicacion-2022-reconstruccion-documental/",
+    "en": "/en/2022-adjudication-documentary-reconstruction/"
+  },
+  "source_classes_reviewed": [
+    "internal working papers",
+    "email bodies and attachments",
+    "drive files",
+    "court orders",
+    "notarial deed",
+    "creditor definitive texts",
+    "valuation report",
+    "registry note",
+    "existing public repository"
+  ],
+  "verified_findings": [
+    "The 2018 offer gives an approximate waiver of EUR 5,186,061.79.",
+    "The 2022 deed provides an exact six-component bridge to EUR 13,168,082.02.",
+    "The deed describes EUR 13,168,082.02 as debt serving as non-cash consideration.",
+    "The 2021 order treats the EUR 400,000 unencumbered-property sale separately from the mortgaged-property adjudication.",
+    "Protocol 457 concerns the 159 mortgaged apartments.",
+    "EUR 9,052,251.69 is recorded as a 2016 special-privilege credit-classification figure.",
+    "A May 2022 registry note still displayed both mortgages."
+  ],
+  "express_exclusions": [
+    "no universal nullity conclusion",
+    "no established surplus conclusion",
+    "no established criminal or bad-faith allegation",
+    "no automatic cancellation of later rights",
+    "no publication of internal PDFs, privileged communications or personal data",
+    "no litigation filing or external communication"
+  ],
+  "legal_validation_required": [
+    "standing",
+    "necessary parties",
+    "finality and preclusion",
+    "time limits",
+    "transitional insolvency law",
+    "legal payability and classification of each debt component",
+    "restitution and registry consequences"
+  ],
+  "evidence_gates": [
+    "certified primary court and notarial chain",
+    "credit calculation at 2022-02-21",
+    "proof of five-day court notification",
+    "EUR 400,000 bank and accounting trail",
+    "final liquidation accounts and conclusion order",
+    "historic and current property-by-property registry certificates"
+  ],
+  "privacy": {
+    "private_source_files_committed": false,
+    "email_identifiers_committed": false,
+    "personal_data_committed": false
+  }
+}
