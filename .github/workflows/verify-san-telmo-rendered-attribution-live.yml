@@ -1,0 +1,30 @@
+name: Verify San Telmo rendered attribution live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/site.js"
+      - "assets/san-telmo-attribution-correction-20260819.js"
+      - "en/san-telmo-ricpe-sun-park/index.html"
+      - "es/san-telmo-ricpe-sun-park/index.html"
+      - "sitemap-san-telmo.xml"
+      - "robots.txt"
+      - "scripts/verify_san_telmo_rendered_attribution_live.py"
+      - ".github/workflows/verify-san-telmo-rendered-attribution-live.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Verify corrected public assets, dossier routes and discovery controls
+        run: python scripts/verify_san_telmo_rendered_attribution_live.py
