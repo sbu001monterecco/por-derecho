@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/por-derecho/laboratorio-de-casos/</loc>
+    <lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/por-derecho/laboratorio-de-casos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/por-derecho/case-lab/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/por-derecho/case-lab/</loc>
+    <lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/por-derecho/laboratorio-de-casos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/por-derecho/case-lab/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/por-derecho/laboratorio-de-casos/caso-prisma/</loc>
+    <lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/por-derecho/laboratorio-de-casos/caso-prisma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/por-derecho/case-lab/case-prism/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/por-derecho/case-lab/case-prism/</loc>
+    <lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/por-derecho/laboratorio-de-casos/caso-prisma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/por-derecho/case-lab/case-prism/"/>
+  </url>
+</urlset>
