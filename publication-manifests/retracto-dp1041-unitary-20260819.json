@@ -1,10 +1,11 @@
 {
   "publication_id": "RETRACTO-DP1041-UNITARY-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "publication_type": "bilingual dedicated claim dossier and canonical causation control",
   "controlling_pr": 426,
+  "merge_sha": "ec499d467ae6cc6a10cf37933253bbe1581e9411",
   "controlling_proposition": {
     "es": "LPB obtuvo una vía judicial para conocer la economía de la cesión; CAM obtuvo reconocimiento concursal con apoyo expreso del informe favorable de la Administración Concursal. Si la vía de LPB dejó de producir valor, debe identificarse qué beneficio mensurable recibió la masa.",
     "en": "LPB obtained a judicial route to the assignment economics; CAM obtained insolvency recognition with express reliance on the insolvency administration's favourable report. If LPB's route stopped producing value, the measurable benefit received by the estate must be identified."
@@ -30,6 +31,14 @@
     "archive/LEGAL_REPRESENTATION_AC_CAUSATION_RETRACTO_OVERRIDE_19AUG2026.md",
     "sitemap-banking-recovery.xml"
   ],
+  "validation": {
+    "evidence": [
+      "PR 426 publication-integrity run 32205207372 completed successfully on head 701febb7297ff64a3eb9fe00ef810faeb0ea2985.",
+      "PR 426 merged to main at ec499d467ae6cc6a10cf37933253bbe1581e9411.",
+      "Post-merge GitHub source readback confirmed the canonical retracto data, unitary causation audit and Spanish dedicated page on main."
+    ],
+    "publication_integrity": "PASS"
+  },
   "material_assertions": [
     {
       "id": "A1",
@@ -90,5 +99,9 @@
     "Qualifying pre-assignment declaratory litigation for Article 1535 test.",
     "Contemporaneous insolvency-estate cost/benefit analysis for continuation or abandonment."
   ],
-  "notes": "PR-open publication state. The manifest does not claim CI_GREEN, MERGED, DEPLOYED or LIVE_VERIFIED until those states are independently evidenced."
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "MERGED records source/repository state only. DEPLOYED/LIVE_VERIFIED must be separately evidenced after GitHub Pages propagation."
+  },
+  "notes": "Repository source is merged and CI-green. No DEPLOYED or LIVE_VERIFIED state is claimed by this manifest until public-edge readback succeeds."
 }
