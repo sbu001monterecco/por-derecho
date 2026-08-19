@@ -19,6 +19,8 @@ const routes=[
   {name:'cuatrecasas-en',url:'/en/cuatrecasas-sun-park/',kind:'existing'},
   {name:'cuatrecasas-icam-en',url:'/en/cuatrecasas-icam-ccacm-2026/',kind:'existing'},
   {name:'cuatrecasas-icam-es',url:'/es/cuatrecasas-icam-ccacm-2026/',kind:'existing'},
+  {name:'governance-tracks-en',url:'/en/community-instrumentalisation/two-competing-governance-records/',kind:'existing'},
+  {name:'governance-tracks-es',url:'/es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/',kind:'existing'},
   {name:'ac-en',url:'/en/insolvency-36-2012-insolvency-administrator/',kind:'existing'},
   {name:'ricpe-en',url:'/en/ric-private-equity-sun-park/',kind:'existing'},
   {name:'map-es',url:'/es/mapa-forense-sun-park-262-fincas/',kind:'existing'}
@@ -56,7 +58,6 @@ try{
           await page.waitForSelector('[data-case-control-room]',{timeout:10000});
           const cards=await page.locator('.psr-system-card').count();
           if(cards!==6)throw new Error(`Expected exactly six system cards, found ${cards}`);
-          const requiredLinks=['litigious-credit-retracto-1041-2017','retracto-credito-litigioso-1041-2017','cuatrecasas-sun-park','cuatrecasas-icam-ccacm-2026'];
           const hrefs=await page.locator('a').evaluateAll(els=>els.map(el=>el.getAttribute('href')||''));
           if(!hrefs.some(h=>/1041-2017/.test(h)))throw new Error('Control Room missing DP1041/retracto bridge');
           for(const needle of ['cuatrecasas-sun-park','cuatrecasas-icam-ccacm-2026'])if(!hrefs.some(h=>h.includes(needle)))throw new Error(`Control Room missing ${needle} bridge`);
@@ -65,6 +66,8 @@ try{
           await assertSearch(page,'CEXP',/CEXP|Community|Comunidad|LPB/i,'CEXP');
           await assertSearch(page,'1041',/1041|retracto|litigious/i,'DP1041');
           await assertSearch(page,'Cuatrecasas',/Cuatrecasas/i,'Cuatrecasas');
+          const governanceQuery=route.url.includes('/es/')?'hipotesis de captura':'capture hypothesis';
+          await assertSearch(page,governanceQuery,/Governance|Gobernanza/i,'governance visual');
           await assertSearch(page,'pwc canarias carlos saavedra',/Pwc|PwC.*Canarias|Carlos Saavedra/i,'specialist-sitemap fallback');
         }
         if(route.kind==='existing'||route.kind==='gateway')await page.waitForSelector('.psr-utility-nav',{timeout:15000});
