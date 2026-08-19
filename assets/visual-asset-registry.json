@@ -1,0 +1,122 @@
+{
+  "registry_version": "1.0.0",
+  "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
+  "control_date": "2026-08-19",
+  "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
+  "mandatory_rules": {
+    "named_person_images_must_be_registered": true,
+    "person_identity_must_not_be_inferred_by_ai_from_appearance": true,
+    "generated_or_stock_faces_cannot_substitute_for_named_people": true,
+    "published_composites_with_named_people_require_slot_map_sidecars": true,
+    "active_assets_are_byte_locked_by_git_blob_sha": true,
+    "pending_assets_must_not_be_published": true,
+    "replacements_require_new_variant_id_and_supersession_record": true
+  },
+  "assets": {
+    "person.francisco-de-borja-rodriguez-batllori.primary": {
+      "subject_type": "person",
+      "canonical_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "short_label": "Borja / Administrador Concursal",
+      "roles": [
+        "Administrador Concursal · Concurso 36/2012",
+        "Insolvency Administrator · Concurso 36/2012"
+      ],
+      "path": "assets/actors/francisco-de-borja-rodriguez-batllori.jpg",
+      "git_blob_sha": "f2c3bfd6628e043940f58b4f4c76ffdba735bb57",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing website-approved repository asset and canonical filename. Identity is not inferred by this task from facial appearance.",
+      "approved_contexts": [
+        "Administrador Concursal page",
+        "5 + AC visualization",
+        "San Telmo / RICPE same-asset visualization",
+        "institutional-accountability documents"
+      ],
+      "alt_en": "Francisco de Borja Rodríguez-Batllori Laffitte, Insolvency Administrator in Concurso 36/2012",
+      "alt_es": "Francisco de Borja Rodríguez-Batllori Laffitte, Administrador Concursal en el Concurso 36/2012",
+      "do_not_confuse_with": [
+        "person.eduardo-sanchez-san-telmo.primary"
+      ]
+    },
+    "person.eduardo-sanchez-san-telmo.primary": {
+      "subject_type": "person",
+      "canonical_name": "Eduardo Sánchez",
+      "short_label": "Eduardo Sánchez / socio de San Telmo",
+      "roles": [
+        "Socio · San Telmo",
+        "Partner · San Telmo"
+      ],
+      "path": null,
+      "git_blob_sha": null,
+      "identity_status": "USER_CONFIRMED_PENDING_REPOSITORY_IMPORT",
+      "identity_basis": "The user expressly confirmed on 19 August 2026 that the uploaded file named 'Eduardo Sánchez (1).webp' depicts Eduardo Sánchez. This is a user-provided identity label, not an AI facial-identification finding.",
+      "pending_source": {
+        "original_filename": "Eduardo Sánchez (1).webp",
+        "sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
+        "dimensions": "800x600",
+        "format": "webp",
+        "confirmation_date": "2026-08-19"
+      },
+      "publication_rule": "DO_NOT_PUBLISH_OR_COMPOSITE_UNTIL_IMPORTED TO assets/actors/ AND THE PATH + GIT BLOB SHA ARE LOCKED HERE.",
+      "approved_contexts_after_import": [
+        "San Telmo / RICPE same-asset visualization",
+        "dedicated Eduardo Sánchez / San Telmo evidence context"
+      ],
+      "alt_en": "Eduardo Sánchez, San Telmo partner",
+      "alt_es": "Eduardo Sánchez, socio de San Telmo",
+      "do_not_confuse_with": [
+        "person.francisco-de-borja-rodriguez-batllori.primary"
+      ]
+    },
+    "person.alberto-lopez-villarrubia.primary": {
+      "subject_type": "person",
+      "canonical_name": "Alberto López Villarrubia",
+      "short_label": "Magistrado Alberto López Villarrubia",
+      "path": "assets/actors/alberto-lopez-villarrubia.jpg",
+      "git_blob_sha": "52487a2fb01b2df6b231938668c9f858544fecc5",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing website-approved repository asset and canonical filename; no new facial identification performed.",
+      "alt_en": "Alberto López Villarrubia",
+      "alt_es": "Alberto López Villarrubia"
+    },
+    "person.francisco-mario-matos-matas.primary": {
+      "subject_type": "person",
+      "canonical_name": "Francisco Mario Matos Matas",
+      "short_label": "FMMM",
+      "path": "assets/actors/francisco-mario-matos-matas.jpg",
+      "git_blob_sha": "1a7d8c921b36ef9ad4504708417d3806c91cee13",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing website-approved repository asset and canonical filename; no new facial identification performed.",
+      "alt_en": "Francisco Mario Matos Matas",
+      "alt_es": "Francisco Mario Matos Matas"
+    },
+    "place.sun-park-mynd-yaiza.aerial-primary": {
+      "subject_type": "place",
+      "canonical_name": "Sun Park / MYND Yaiza",
+      "short_label": "Sun Park — same hotel",
+      "path": "assets/sun-park-mynd-yaiza.jpg",
+      "git_blob_sha": "88819bf8b70f0b9f978cca840131331bad122c68",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing primary website hero asset used for the Sun Park / MYND Yaiza physical complex.",
+      "approved_contexts": [
+        "homepage",
+        "same-hotel visualizations",
+        "San Telmo / RICPE same-asset visualization",
+        "documents and email exports"
+      ],
+      "alt_en": "Aerial view of the Sun Park hotel complex, currently MYND Yaiza",
+      "alt_es": "Vista aérea del complejo hotelero Sun Park, actualmente MYND Yaiza"
+    }
+  },
+  "rejected_or_prohibited_mappings": [
+    {
+      "date": "2026-08-19",
+      "prohibited_mapping": "Use the user-uploaded Eduardo Sánchez portrait in the Borja / Administrador Concursal slot.",
+      "reason": "The user confirmed that portrait is Eduardo Sánchez. It is not the canonical Borja asset."
+    },
+    {
+      "date": "2026-08-19",
+      "prohibited_mapping": "Use any AI-generated, stock or silhouette-derived face as a named real person when a canonical repository asset exists.",
+      "reason": "Named-person identity must come from the registry, not visual similarity or generation."
+    }
+  ]
+}
