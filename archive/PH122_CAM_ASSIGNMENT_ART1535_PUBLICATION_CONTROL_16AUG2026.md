@@ -4,6 +4,7 @@
 **Updated:** 19 August 2026  
 **Status:** controlling public-safe record for the assignment / Article 1535 dossier — PRIMARY-ACT CLOSURE APPLIED  
 **Canonical audit:** `archive/RETRACTO_CREDITO_LITIGIOSO_DP1041_UNITARY_CAUSATION_AUDIT_19AUG2026.md`  
+**Four-track cross-control:** `archive/RETRACTO_TANTEO_FOUR_TRACK_360_CONTROL_19AUG2026.md`  
 **Base machine-readable data:** `assets/data/retracto-credit-1041-2017-v1.json`  
 **Primary-act override:** `assets/data/retracto-primary-act-closure-v1.json`
 
@@ -13,6 +14,8 @@
 - `/en/litigious-credit-retracto-1041-2017/`
 - `/es/acreedor-de-registro/credito-litigioso-escritura/`
 - `/en/lender-of-record/litigious-credit-hidden-deed/`
+- `/es/retracto-tanteo-cuatro-vias/`
+- `/en/retracto-tanteo-four-tracks/`
 
 ## Controlling proposition
 
@@ -23,6 +26,8 @@ The verified chain is:
 `PH122 → CAM assignment → LPB court-admitted deed/price route → liquidation/AC control → AC directly terminates Cristo's formal LPB mandate → Commercial Court recognises CAM and rejects LPB's Article 1535 theory → LPB requests withdrawal → DP 1041 terminated → 2024 court confirms archive`
 
 The remaining uncertainty concerns the **internal decision and filing chain behind LPB's withdrawal**, not the procedural endpoint itself.
+
+**Track-identity lock:** this dossier concerns the **credit assignment**. It must not be used as shorthand for the separately documented May–June 2018 unit/property-level `tanteo/retracto` workstream. That second workstream exists, but any enforceable right must be validated transaction-by-transaction under the four-track control.
 
 ## Verified propositions
 
@@ -78,7 +83,13 @@ The order:
 - recognised CAM as assignee creditor; and
 - expressly relied on the AC's favourable report and presumed AC verification rather than requiring all title documentation sought by LPB for creditor substitution.
 
-The order provided a five-day `recurso de reposición` without suspensive effect. The complete challenge/finality chain remains open.
+**Primary-source procedural correction:** the order provided a **20-day `recurso de apelación` under Article 97 bis.2 of the then-applicable Insolvency Law**. Earlier wording attributing a five-day `recurso de reposición` to this order is superseded. The complete actual appeal/finality chain remains open.
+
+Keep separate:
+
+- 15-Feb-2018 Commercial Court order → 20-day appeal;
+- 5-Mar-2018 DP1041 Decree → five-day review; and
+- 13-May-2024 judicial-office order → five-day reposición.
 
 ### 5 March 2018 — LPB withdrawal documented
 
@@ -109,6 +120,22 @@ The proper distinction is:
 
 - **claim merits** — contested and decided adversely to LPB at this stage; versus
 - **information value** — the deed, price, payment and costs remained relevant to transaction reconstruction, debt reconciliation, negotiation, appeal analysis and any available remedy.
+
+## Separate unit/property rights track
+
+A separate May–June 2018 legal workstream is directly documented concerning possible `tanteo/retracto` or preferential-acquisition remedies over individual Sun Park property interests acquired from minority owners by a third party identified contemporaneously as potentially CAM.
+
+That second track must not be merged with Article 1535.
+
+Controlled position:
+
+- its **existence as a legal workstream is verified**;
+- the particular Law 5/1999 transitional paragraph counsel investigated was not an operative 2018 basis;
+- Article 1522/1524 CC is a transaction-specific candidate only where the sale involved an undivided share of the same common property to an outsider;
+- Article 396 CC prevents a generic retracto merely because owners hold separate units in the same horizontal-property complex; and
+- contractual, CEXP, tourism/single-operation and insolvency-estate rights require independent instrument-by-instrument review.
+
+See `archive/RETRACTO_TANTEO_FOUR_TRACK_360_CONTROL_19AUG2026.md`.
 
 ## Estate-benefit test
 
@@ -142,6 +169,8 @@ Safe formulation:
 
 Do not leap from that sequence to collusion, criminality or an improper motive without additional proof.
 
+For the separate unit/property tracks, run a fresh act-specific C0–C5 causation analysis. Do not transfer the DP1041 C5 finding automatically.
+
 ### Commercial Court / judge
 
 Safe classification: `ACTIVE_AND_PASSIVE_CAM_FAVOURABLE_EFFECT_PATTERN`.
@@ -163,10 +192,11 @@ P0 is now:
 3. Author/drafter/signatory/filer and filing/transmission channel.
 4. Complete Cristo → successor `venia`, power and file-handover chronology.
 5. Contemporaneous estate-interest/cost-benefit analysis for the withdrawal decision.
-6. Complete appeal/finality chain for the 15 February 2018 order.
+6. Actual 20-day appeal/finality chain for the 15 February 2018 order.
 7. Complete protocol 2,248, schedules, allocated price, proof of payment and servicing records.
 8. Exact pre-assignment declaratory controversy relevant to Article 1535, credit by credit.
 9. Any independent substantive Article 1535 action filed elsewhere.
+10. Separate finca-by-finca RTB/RTC/RTD rights ledger under the four-track control.
 
 ## Prohibited shortcuts
 
@@ -179,7 +209,9 @@ Do not publish as established fact that:
 - PH122/CAM deliberately inflated the debt;
 - Cerberus was the legal assignor;
 - the JPI admission decided the Article 1535 merits;
-- the Commercial Court judge blocked a legally certain retracto; or
+- the Commercial Court judge blocked a legally certain retracto;
+- LPB had a valid statutory retracto over every later unit sale to CAM;
+- the AC cancelled every unit-level right; or
 - collusion, corruption, improper judicial bias or criminal agreement is proved.
 
 ## Privacy / custody
@@ -188,4 +220,4 @@ Private source documents can contain personal addresses, signatures, contact det
 
 ## Right of reply
 
-PH122, CAM, the insolvency administration, court-record custodians and affected parties are invited to provide the complete deed/economics, withdrawal instruction chain, estate-interest analysis, appeal/finality record and corrective or exculpatory evidence. Documentary correction should receive prompt and comparable visibility.
+PH122, CAM, the insolvency administration, court-record custodians and affected parties are invited to provide the complete deed/economics, withdrawal instruction chain, estate-interest analysis, appeal/finality record, unit-transfer deeds and corrective or exculpatory evidence. Documentary correction should receive prompt and comparable visibility.
