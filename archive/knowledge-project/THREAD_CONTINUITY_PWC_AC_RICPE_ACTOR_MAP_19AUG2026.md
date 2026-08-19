@@ -1,142 +1,160 @@
-# Thread continuity index — PwC / AC / RICPE / actor map
+# Thread continuity index — canonical Sun Park actors / PwC / AC / RICPE / San Telmo
 
-Status: mandatory continuity / handoff index
-Date: 19 August 2026
+**Status:** mandatory continuity / handoff index  
+**Date:** 19 August 2026  
+**Supersession:** this version replaces chronology-by-memory and the earlier narrow San Telmo investor-link caveat.
 
 ## Purpose
-This file exists so a fresh ChatGPT thread or reviewer can recover the intelligence, chronology, evidential boundaries and cross-links developed in the 19 August 2026 PwC / Administrador Concursal / RICPE / homepage actor work without relying on the original chat transcript.
 
-## Read-first controls
-1. `archive/knowledge-project/PWC_2016_NOTICE_AC_CONTACT_PUBLIC_QUESTIONS_GATE_19AUG2026.md`
-   - 2016 PwC notice chronology, penal-route instruction, AC-contact questions and public-question discipline.
-2. `archive/knowledge-project/PWC_AC_KNOWLEDGE_TRANSFER_CRIMINAL_ALLEGATIONS_GATE_19AUG2026.md`
-   - what PwC knew, what AC knowledge is independently proved, what transfer is proved and what remains missing.
-3. `archive/knowledge-project/RICPE_PWC_PRIOR_KNOWLEDGE_CONTROL_NODE_GATE_19AUG2026.md`
-   - 2016 prior-client knowledge → 2019 RICPE audit history → 2020 legal/fiscal due-diligence representation → 2021 title fragmentation → later Carlos/PwC–Acosta Matos convergence.
-4. `archive/knowledge-project/CARLOS_SAAVEDRA_CALIFICACION_MISSING_WITNESS_CONTROL_19AUG2026.md`
-   - why Carlos Saavedra's evidence at the calificación vista is an open documentary question and which records must be retrieved.
-5. `archive/knowledge-project/HOMEPAGE_ACTOR_IDENTITY_RELATIONSHIPS_CONTROL_19AUG2026.md`
-   - canonical names, family relationships, chronology labels and homepage PwC annotation rule.
-6. `archive/knowledge-project/PWC_CARLOS_PENAL_INSTRUCTION_LATER_ACOSTA_RICPE_CONFLICT_CONGRUENCE_GATE_19AUG2026.md`
-   - former-client/conflict-congruence bridge and prohibited overstatement rules.
-7. `archive/knowledge-project/RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md`
-   - page-level source control for the 11 Nov 2020 RICPE investor webinar and the 30 Nov 2021 San Telmo #UnCaféenSanTelmo event.
-8. `archive/knowledge-project/RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`
-   - mandatory Source-B correction/expansion from the full 85-page scan: correct video URL; Eduardo Sánchez's contemporaneous `el despacho` client-introduction statement; Acosta Matos/project familiarity; stronger San Telmo↔RICPE connection; and exact no-imputation boundaries. Read this before relying on the older `public professional proximity` wording.
+A fresh ChatGPT thread or reviewer must be able to recover the current identity, chronology, evidential boundaries and cross-links without relying on the original chat transcript or old homepage labels.
 
-## Canonical 2016 PwC chronology
-- 11 June 2016: substantive working meeting on Sun Park / Community / ownership / exploitation / debt / governance / insolvency context.
-- 12 June 2016: direct notice to Carlos Saavedra and Miguel Hernández of serious client allegations concerning disputed Community debt, control/liquidation, third-party conduct and possible fraud/criminal implications. These are contemporaneous client allegations, not adjudicated findings.
-- 16 June 2016: instruction to stop further Molina-family meetings and pursue a personal criminal complaint; Carlos copied.
-- 19 July 2016: Patricia reiterates that the client wanted `la vía penal contra esta gente`; Carlos copied.
-- 20 July 2016: Miguel/PwC replies `Tomamos nota de vuestra decisión`; Carlos copied. Do not misattribute this wording as Carlos-authored.
-- September 2016: PwC confirms a direct telephone conversation with the Administrador Concursal concerning the tour-operator/new exploitation-contract route. PwC says it was general, without contract detail, and that no report/email was made; Patricia asks for a written reconstruction.
+## Read first — canonical actor controls
 
-## Strong safe proposition
-PwC possessed documented knowledge of allegations regarded by the client as potentially criminal before its confirmed direct contact with the Administrador Concursal. The unresolved question is how much of that knowledge was communicated, what the AC already knew independently, and what procedural or legal consequences followed.
+1. `archive/knowledge-project/SUN_PARK_CANONICAL_REGISTER_READ_FIRST.md`
+2. `archive/knowledge-project/SUN_PARK_ACTOR_CHRONOLOGY_LOCK.md`
+3. `archive/knowledge-project/SUN_PARK_ALIASES_INITIALS_IDENTITY_CONTROL.md`
+4. `archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md`
+5. `archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md`
+6. `archive/knowledge-project/SUN_PARK_MONTE_LANZA_MOLINA_COMMUNITY_PERIMETER.md`
+7. `archive/knowledge-project/SUN_PARK_PROCEEDINGS_ACTOR_CROSSWALK.md`
+8. `archive/knowledge-project/SUN_PARK_PROFESSIONAL_ADVISERS_REPRESENTATIVES_REGISTER.md`
+9. `archive/knowledge-project/SUN_PARK_ACTOR_CONTRADICTIONS_SUPERSESSION_LOG.md`
+10. `archive/knowledge-project/SUN_PARK_CANONICAL_REGISTER.json`
 
-Do not state that PwC transmitted every criminal allegation to the AC unless a source proves it.
+The first saturation pass contains 92 natural-person records, 50 entity/institution records and 12 proceeding records. A person appearing in the register is not automatically adverse, culpable or connected to every later event.
 
-## PwC → AC knowledge-transfer test
-Always separate four buckets:
-1. What PwC/Carlos knew before the conversation.
-2. What the AC knew independently, source by source.
-3. What transfer from PwC to the AC is actually proved.
-4. What remains missing: call content, participants, call/calendar records, notes, billing entries, contemplated `informe para el AC`, AC response and downstream action.
+## Locked historical corrections
 
-Downstream tests include disputed Community debt, governance/access, liquidation, third-party responsibility, alternative causation and the later calificación position.
+- **AAS = Asunción Aizpurúa Sánchez** — `LOCKED_CANONICAL`.
+- **Asunción Aizpurúa Sánchez was Community President by 2 Feb 2011** — `LOCKED_MINIMUM_DATE`.
+- **Francisco Mario Matos Matas was Community Administrator by 22 Jun 2011** — `LOCKED_MINIMUM_DATE`.
+- **Shaila María Cogolludo Ramos was in the Pamanil / Community communications perimeter by 8 Apr 2014** — `LOCKED_MINIMUM_DATE`.
+- **Antonio Cogolludo Rojas was in the Sun Park Community / Pamanil perimeter by 10 Apr 2014 and represented Cristina Molina Petit** — `LOCKED_MINIMUM_DATE`.
 
-## RICPE / PwC / San Telmo control-node chronology
-- 2016: PwC/Carlos and other PwC professionals have asset-specific Sun Park knowledge, including specific private owners/units and Community/control issues.
-- 2019: a PwC entity appears in RICPE statutory-audit history. Corporate audit is not, by itself, Sun Park project/title due diligence.
-- 11 November 2020: RICPE investor webinar presents the Sun Park/CAM renovation project at approximately €12m. Enrique Guerra publicly attributes legal/fiscal due diligence of the company and especially the project to Pricewaterhouse; separately he describes an approval/control sequence involving the investment department, external Intermoney risk control, fiscal/tax material, DG recommendation and Board decision. José Daniel Acosta Matos advances an ownership/free-of-charges narrative. These are source-authored statements requiring independent reconciliation, not automatically verified title or adviser mandate.
-- 2021: internal RICPE certification describes a fragmented ownership reality; test when each control actor knew this and what correction, qualification, disclosure or Board action followed.
-- 30 November 2021: San Telmo Abogados y Economistas hosts `Enrique Guerra, en #UnCaféenSanTelmo` with RICPE Director General Enrique Guerra and San Telmo partner **Eduardo Sánchez**. The full 85-page scan materially strengthens the relationship: while visibly speaking, Eduardo states in substance that `nosotros en el despacho ... metimos unos cuantos clientes` into the first investment under discussion, then discusses investment security/promoters including Acosta Matos and asks Guerra about the live RICPE project pipeline. Guerra responds with detailed project, Acosta Matos, Lanzarote, judicial-problem, administrative-report and funding discussion. The exact legal character of San Telmo's investor/client role remains to be produced.
-- Later: public/company records show further Carlos/PwC professional convergence within the RICPE / Grupo Acosta Matos ecosystem in other contexts. This creates a former-client/conflict/information-governance question; it does not by itself prove misconduct.
+The former labels beginning Shaila in 2017 and Antonio in 2018 are `SUPERSEDED`. A locked minimum date may move earlier when an older primary source is found; it may not be moved later by a later summary.
 
-### Mandatory San Telmo boundary
-The 30 Nov 2021 source proves more than a later San Telmo/RICPE media connection: it contains Eduardo Sánchez's contemporaneous statement that `el despacho` put several clients into an earlier RICPE investment. Controlled description: **San Telmo/RICPE client-investor-introduction connection stated by Eduardo, exact mandate/referral/regulatory role unproved.**
+Locked relationships:
 
-It does **not** prove that Eduardo worked on Concurso 36/2012, that he shared the Administrador Concursal's knowledge, that the AC transferred information to him, that San Telmo formally represented RICPE/CAM/Sun Park, that the clients invested in Sun Park specifically, or that any activity was unlawful. `Same firm ≠ shared knowledge. Client introduction ≠ proved Sun Park mandate. Professional connection ≠ wrongdoing.`
+- FMMM is husband of Shaila María Cogolludo Ramos.
+- Shaila is wife of FMMM and daughter of Antonio Cogolludo Rojas.
+- Antonio is Shaila's father.
+- Laura Patricia Acosta Matos is the canonical full name; after first reference use Laura, not Patricia.
+- Never use `Tuco` for Antonio Cogolludo Rojas.
 
-A separate high-value source question arises from the approximately 10:09–10:31 transcript sequence referring to Lanzarote, judicial problems and a project that the auto-transcript renders as lacking property/title. Do not attribute that passage specifically to Sun Park until native audio and project-by-project reconciliation establish identity.
+## PwC / Carlos Saavedra — read-first controls
 
-## Public PwC / Carlos pages
-Canonical EN root:
-`en/pwc-canarias-carlos-saavedra-sun-park/index.html`
+1. `PWC_2016_NOTICE_AC_CONTACT_PUBLIC_QUESTIONS_GATE_19AUG2026.md`
+2. `PWC_AC_KNOWLEDGE_TRANSFER_CRIMINAL_ALLEGATIONS_GATE_19AUG2026.md`
+3. `RICPE_PWC_PRIOR_KNOWLEDGE_CONTROL_NODE_GATE_19AUG2026.md`
+4. `CARLOS_SAAVEDRA_CALIFICACION_MISSING_WITNESS_CONTROL_19AUG2026.md`
+5. `PWC_CARLOS_PENAL_INSTRUCTION_LATER_ACOSTA_RICPE_CONFLICT_CONGRUENCE_GATE_19AUG2026.md`
 
-Canonical ES root:
-`es/pwc-canarias-carlos-saavedra-sun-park/index.html`
+### Canonical 2016 chronology
 
-Public-question subpages:
-- `en/pwc-canarias-carlos-saavedra-sun-park/public-questions/index.html`
-- `es/pwc-canarias-carlos-saavedra-sun-park/preguntas-publicas/index.html`
+- 11 Jun 2016: substantive working meeting on Sun Park / Community / ownership / exploitation / debt / governance / insolvency context.
+- 12 Jun 2016: direct notice to Carlos Saavedra and Miguel Hernández of serious client allegations concerning disputed Community debt, control/liquidation, third-party conduct and possible fraud/criminal implications. These are contemporaneous client allegations, not adjudicated findings.
+- 16 Jun 2016: instruction to stop further Molina-family meetings and pursue a personal criminal complaint; Carlos copied.
+- 19 Jul 2016: client reiterates that it wanted `la vía penal contra esta gente`; Carlos copied.
+- 20 Jul 2016: Miguel/PwC replies `Tomamos nota de vuestra decisión`; Carlos copied. Do not misattribute that sentence as Carlos-authored.
+- Sep 2016: PwC confirms a direct telephone conversation with the Administrador Concursal concerning the tour-operator/new exploitation-contract route. PwC describes it as general and says no report/email was made; Patricia asks for a written reconstruction.
 
-The dominant public quotation is:
+Strong controlled proposition: PwC possessed documented knowledge of allegations regarded by the client as potentially criminal before its confirmed direct contact with the Administrador Concursal. Do not state that PwC transmitted every allegation to the AC unless a source proves it.
+
+Always separate:
+
+1. what PwC/Carlos knew;
+2. what the AC knew independently;
+3. what PwC→AC transfer is actually proved;
+4. what remains missing: call content, participants, records, notes, billing, contemplated report, AC response and downstream action.
+
+The dominant public quotation remains:
+
 `LA VÍA PENAL CONTRA ESTA GENTE`
 
-Mandatory boundary: this is a client penal-route instruction and contemporaneous PwC knowledge record. It is not a PwC finding that any named person committed a crime.
+Boundary: this is a client penal-route instruction and contemporaneous PwC knowledge record, not a PwC finding that a named person committed a crime.
 
-## RICPE public page
-Canonical RICPE/Sun Park route:
-- EN `en/ric-private-equity-sun-park/index.html`
-- ES `es/ric-private-equity-sun-park/index.html`
+## RICPE / San Telmo / same-hotel chronology
 
-The page must treat PwC as a prior-knowledge and professional-control node, while keeping separate:
-- statutory audit;
-- legal/fiscal due diligence;
-- former-client/Carlos knowledge;
-- PwC legal entities and teams.
+Read:
 
-Detailed webinar claims must be checked against both:
-- `RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md`; and
-- `RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`.
+1. `RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md`
+2. `RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`
+3. `SAN_TELMO_RICPE_SUN_PARK_PROVED_INVESTOR_LINK_CORRECTION_19AUG2026.md`
+4. `SAN_TELMO_PARALLEL_LIVES_SURFACE_MATRIX_19AUG2026.md`
 
-For Source B, the addendum controls where it conflicts with or materially strengthens the earlier description.
+Controlled chronology:
 
-## Homepage actor cluster — canonical identity / relationship rules
-- Francisco Mario Matos Matas (FMMM) — husband of Shaila María Cogolludo Ramos.
-- Shaila María Cogolludo Ramos — wife of Francisco Mario Matos Matas and daughter of Antonio Cogolludo Rojas.
-- Antonio Cogolludo Rojas — father of Shaila María Cogolludo Ramos.
-- Laura Patricia Acosta Matos — use full name on first public mention; thereafter Laura Acosta Matos / Laura is preferred. Do not default to Patricia.
-- Do not use the nickname `Tuco` for Antonio Cogolludo Rojas.
+- 2016: PwC/Carlos and other PwC professionals have asset-specific Sun Park knowledge.
+- 2019: a PwC entity appears in RICPE statutory-audit history. Corporate audit is not automatically Sun Park project/title due diligence.
+- 11 Nov 2020: RICPE webinar presents the Sun Park/CAM renovation project; Enrique Guerra attributes legal/fiscal due diligence of the company and especially the project to Pricewaterhouse and describes an approval/control sequence; José Daniel Acosta Matos advances an ownership/free-of-charges narrative. These are source-authored statements requiring reconciliation.
+- 2021: internal RICPE certification records fragmented ownership/title reality.
+- 30 Nov 2021: San Telmo partner Eduardo Sánchez states in substance that `nosotros en el despacho ... metimos unos cuantos clientes` into the RICPE investment under discussion and discusses promoter/security structure, Acosta Matos and RICPE's live project pipeline with Enrique Guerra.
 
-Homepage chronology labels:
-- FMMM: `2011 → at least 2022 documented`.
-- Antonio Cogolludo: `2018 → later documented business-perimeter continuity`.
-- Shaila Cogolludo: `2017 → later documented business-perimeter continuity`.
-- José Daniel Acosta Matos: `2017–2018 entry into perimeter → 2022 control → later continuity`.
-- Laura Patricia Acosta Matos: `2017–2018 legal/insolvency and access role → 2022 CAM representation → later continuity`.
+### Superseding San Telmo proposition
 
-The homepage PwC note is visually attached to the FMMM / Antonio / Shaila cluster to show contemporaneous external-professional notice, not guilt by association.
+The earlier statement that the clients were not proved connected specifically to the Sun Park investment perimeter is **superseded**.
 
-## San Telmo professional-layer visual rule
-For future expansion of the five-actor visualization, San Telmo is a separate professional/insolvency layer rather than actors 6 and 7 in the same category:
-- **Francisco de Borja Rodríguez-Batllori Laffitte** — Administrador Concursal / insolvency and court-facing control node.
-- **Eduardo Sánchez** — San Telmo partner / contemporaneous RICPE client-investor-introduction connection stated in the 30 Nov 2021 webinar / interviewer and direct counterparty of RICPE DG Enrique Guerra / professional and transaction-proximity node.
+Current controlled proposition:
 
-The cards must not imply equal functions or shared knowledge. The connecting investigation asks whether an actual San Telmo client/referral/matter relationship with RICPE investors, RICPE, CAM/Acosta Matos or relevant projects overlapped institutionally or informationally with the insolvency/AC perimeter. That overlap is not assumed.
+**Eduardo Sánchez stated that `el despacho` put several clients into the RICPE investment being discussed and, read in the full sequence against the established RICPE project chronology, that investment is connected to the Acosta Matos / Sun Park hotel-project investment perimeter.**
 
-## Front-end modules created in this workstream
-- `assets/pwc-penal-route-dominant-20260819.js`
-- `assets/ricpe-pwc-control-node-20260819.js`
-- `assets/homepage-actor-family-pwc-note-20260819.js`
+This proves more than media proximity. It does not by itself prove:
 
-Related loader integration:
-- `assets/ricpe-filed-status-20260817.js`
-- `assets/ricpe-identity-correction-20260815.js`
-- `assets/site.js`
+- Borja→Eduardo transfer of insolvency information;
+- coordination between their roles;
+- unlawfulness;
+- the exact contractual or regulated character of the introduction activity;
+- every investor identity, subscription, fee or conflict/KYC outcome.
 
-## Calificación / missing witness bridge
-Carlos Saavedra is treated as a potentially material contemporaneous evidence custodian. The repository does not state that the judge, Fiscalía or AC deliberately suppressed his evidence. It asks, if he was proposed/admitted/summoned/expected/otherwise positioned but not heard, who requested/agreed/acquiesced/caused that outcome, on what procedural basis and where the record is.
+## Historical Community / Montelanza / Molina discipline
 
-Retrieve witness proposal/list, admission/refusal order, summons, withdrawal/desistimiento/substitution, vista recording/minutes, submissions and Fiscalía/AC positions before converting the open question into a factual proposition.
+Do not use `the Molina family` or `Molina dissidents` as a substitute for named mapping. Use:
 
-## Evidential grammar — mandatory everywhere
-Classify propositions as one of:
+`person → entity/units → representative → lawyer → meeting/proceeding → date → sourced position`
+
+The 2011, 2014 and 2015 source records identify separate people, entities, units, representatives and lawyers. Montelanza, Roque Prieto, Muruga, Inversiones Salinetas, Acciones Canarias, Amenem/Ten Golf, JSP and other owner entities must remain distinct. Entity-form conflicts such as Acciones Canarias S.A./S.L. or JSP/José Sánchez Peñate must not be silently normalised.
+
+## Public routes and shared components
+
+Canonical public people register:
+
+- EN `en/actors-parties-lawyers-representatives/`
+- ES `es/actores-partes-abogados-representantes/`
+
+Canonical PwC pages:
+
+- EN `en/pwc-canarias-carlos-saavedra-sun-park/`
+- ES `es/pwc-canarias-carlos-saavedra-sun-park/`
+
+Canonical RICPE pages:
+
+- EN `en/ric-private-equity-sun-park/`
+- ES `es/ric-private-equity-sun-park/`
+
+Canonical San Telmo bridge:
+
+- EN `en/san-telmo-ricpe-sun-park/`
+- ES `es/san-telmo-ricpe-sun-park/`
+
+Shared components:
+
+- `assets/homepage-actor-family-pwc-note-20260819.js` — actor chronology, relationships and PwC checkpoint.
+- `assets/sun-park-canonical-actor-history-lock-20260819.js` — source-led public correction on the people register.
+- `assets/san-telmo-parallel-lives-red-20260819.js` — same-asset / parallel-lives visual.
+
+Do not maintain independent hard-coded copies of locked dates or relationships.
+
+## Calificación / missing-witness bridge
+
+Carlos Saavedra is treated as a potentially material contemporaneous evidence custodian. The repository does not state that the judge, Fiscalía or AC deliberately suppressed his evidence. Retrieve witness proposal/list, admission/refusal order, summons, withdrawal/substitution, vista recording/minutes, submissions and Fiscalía/AC positions before converting the open question into a factual proposition.
+
+## Mandatory evidential grammar
+
+Classify every proposition as:
+
 - verified fact;
-- contemporaneous party/client allegation;
-- institutional/source-authored statement;
+- source-authored statement;
+- contemporaneous allegation;
 - inference;
 - open question;
 - evidence gap.
@@ -144,9 +162,11 @@ Classify propositions as one of:
 Right of reply and equivalent-prominence correction remain mandatory.
 
 ## Core connectivity map
-`2011–2018 Community / control structure` → `2016 PwC contemporaneous knowledge + penal-route instruction` → `confirmed PwC–AC contact` → `later concurso / calificación decisions` → `11 Nov 2020 RICPE investor narrative + professional-control architecture` → `2021 fragmented title record` → `30 Nov 2021 San Telmo / Eduardo Sánchez client-introduction statement + Enrique Guerra detailed RICPE project discussion` → `2022 control/adjudication/continuity` → `later Grupo Acosta Matos / HNT / MYND and PwC/Carlos professional convergence`.
+
+`2011–2015 named Community / owner / representative structure` → `2016 PwC contemporaneous knowledge + penal-route instruction` → `confirmed PwC–AC contact` → `later concurso / calificación decisions` → `11 Nov 2020 RICPE investor narrative + professional-control architecture` → `2021 fragmented title record` → `30 Nov 2021 San Telmo client-investor statement + detailed RICPE project discussion` → `2022 control/adjudication/continuity` → `later Acosta Matos / HNT / MYND and professional convergence`.
 
 This is a documentary-reconciliation framework. It does not itself establish conspiracy, common criminal purpose, professional breach or causation.
 
 ## Fresh-thread operating instruction
-A new ChatGPT thread working on PwC, the AC, RICPE, San Telmo, Eduardo Sánchez, Enrique Guerra, calificación, FMMM, Antonio Cogolludo, Shaila Cogolludo, José Daniel Acosta Matos or Laura Patricia Acosta Matos should read this file first, then the eight read-first controls above, then the relevant canonical public pages. Do not recreate the chronology from memory when these repository controls are available.
+
+A new thread working on any Sun Park actor, entity, lawyer, representative, Montelanza/Molina faction, PwC, the AC, RICPE, San Telmo, RSM, Grant Thornton, calificación or the five-actor visual must begin with `SUN_PARK_CANONICAL_REGISTER_READ_FIRST.md`, then this continuity index, then the relevant thematic source controls. Do not recreate chronology from memory.
