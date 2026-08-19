@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "matter": "DP 1041/2017 / Article 1535 / PH122 to CAM",
+  "primaryActs": [
+    {
+      "date": "2018-01-25",
+      "type": "authority-change",
+      "status": "VERIFIED",
+      "actor": "Administrador Concursal",
+      "effect": "Directly terminated Cristo Suarez Pimentel's specific formal LPB professional mandate, requested venia in DP 1041 and imposed AC authorisation over future LPB procedural action.",
+      "causation": "C5_DIRECT_CONTEMPORANEOUS_EVIDENCE",
+      "limits": [
+        "Does not prove that Cristo left the wider Sun Park matter.",
+        "Does not prove improper motive or unlawfulness.",
+        "Does not prove who later instructed or drafted LPB's withdrawal."
+      ]
+    },
+    {
+      "date": "2018-03-05",
+      "type": "judicial-decree",
+      "status": "VERIFIED",
+      "court": "Juzgado de Primera Instancia No. 2 de Las Palmas de Gran Canaria",
+      "resolution": "Decreto 139/2018",
+      "facts": [
+        "LPB requested withdrawal from DP 1041/2017.",
+        "CAM did not oppose and expressed conformity.",
+        "The court treated LPB as withdrawn and terminated the proceeding.",
+        "The 25 April 2018 hearing was vacated.",
+        "The intervention table lists Francisco Borja Rodriguez Batllori Laffitte as LPB's lawyer and Alejandro Valido Farray as procurador."
+      ],
+      "limits": [
+        "The decree does not identify who internally decided to withdraw.",
+        "The decree does not identify the drafter/signatory/filer of the underlying withdrawal pleading."
+      ]
+    },
+    {
+      "date": "2024-05-13",
+      "type": "judicial-office-order",
+      "status": "VERIFIED",
+      "court": "Juzgado de Primera Instancia No. 2 de Las Palmas de Gran Canaria",
+      "facts": [
+        "PP/DP 1041/2017 was finalised and archived because of the claimant's withdrawal.",
+        "The withdrawal had been agreed by the 5 March 2018 decree.",
+        "No proceedings derived from DP 1041/2017 existed according to the order.",
+        "The intervention table records Borja as LPB's lawyer and Javier Sixto Seijas for Aweswell."
+      ]
+    }
+  ],
+  "strongestSafeInference": "A documented sequence exists from direct AC termination of Cristo's specific formal LPB mandate, to AC-controlled procedural representation, to Borja being recorded as LPB's lawyer, to claimant-side withdrawal and archive. This establishes matter-specific causation for Cristo's formal-mandate end, but not personal attribution of the withdrawal instruction or proof that Article 1535 would have succeeded.",
+  "p0": [
+    "Underlying withdrawal pleading",
+    "Internal decision/instruction chain",
+    "Author/drafter/signatory/filer",
+    "Complete procurador/power/venia handover",
+    "Contemporaneous estate-interest analysis",
+    "Appeal/finality chain for the 15 February 2018 order",
+    "Any independent substantive Article 1535 action"
+  ]
+}
