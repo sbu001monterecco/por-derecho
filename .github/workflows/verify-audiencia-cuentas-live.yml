@@ -1,0 +1,56 @@
+name: Verify Audiencia de Cuentas live publication
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'es/audiencia-cuentas-canarias/**'
+      - 'en/canary-islands-external-audit/**'
+      - 'sitemap-audiencia-cuentas.xml'
+      - 'robots.txt'
+      - 'scripts/verify_audiencia_cuentas_live.py'
+      - '.github/workflows/verify-audiencia-cuentas-live.yml'
+  pull_request:
+    paths:
+      - 'scripts/verify_audiencia_cuentas_live.py'
+      - '.github/workflows/verify-audiencia-cuentas-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-audiencia-cuentas-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Poll public GitHub Pages publication
+        run: |
+          python scripts/verify_audiencia_cuentas_live.py \
+            --attempts 36 \
+            --interval 10 \
+            --timeout 20 \
+            --output artifacts/audiencia-cuentas-live/verification.json
+      - name: Show verification evidence
+        if: always()
+        run: |
+          test ! -f artifacts/audiencia-cuentas-live/verification.json || cat artifacts/audiencia-cuentas-live/verification.json
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: audiencia-cuentas-live-verification
+          path: artifacts/audiencia-cuentas-live/verification.json
+          if-no-files-found: error
+          retention-days: 30
