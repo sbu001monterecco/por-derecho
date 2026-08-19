@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 required = {
     "assets/site.js": [
         "san-telmo-attribution-correction-20260819.js?v=20260819a",
+        "data-san-telmo-attribution-loader",
     ],
     "assets/san-telmo-attribution-correction-20260819.js": [
         "Speaker correction.",
@@ -13,8 +14,16 @@ required = {
         "Eduardo Sánchez · 08:08–08:12",
         "The programme title identifies Enrique Guerra as the guest",
         "El título del programa identifica a Enrique Guerra como invitado",
+        "section.interview-evidence",
+        "pdSanTelmoAttribution",
         "/por-derecho/en/san-telmo-ricpe-sun-park/",
         "/por-derecho/es/san-telmo-ricpe-sun-park/",
+    ],
+    "en/index.html": [
+        '<section class="interview-evidence"',
+    ],
+    "es/index.html": [
+        '<section class="interview-evidence"',
     ],
     "en/san-telmo-ricpe-sun-park/index.html": [
         "The direct public source",
@@ -31,6 +40,21 @@ required = {
         "https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s",
         "og:title",
         "El silencio no se trata como prueba.",
+    ],
+    "scripts/render_san_telmo_attribution_live.mjs": [
+        'section.interview-evidence[data-pd-san-telmo-attribution="20260819"]',
+        "Speaker correction.",
+        "Corrección de atribución.",
+        "staleTextAbsent",
+        "primarySourceLink",
+        "RENDERED_DOM_LIVE_VERIFIED",
+    ],
+    ".github/workflows/verify-san-telmo-rendered-attribution-live.yml": [
+        "Verify rendered English and Spanish homepage attribution",
+        "scripts/render_san_telmo_attribution_live.mjs",
+        "SOURCE_OUTCOME",
+        "DOM_OUTCOME",
+        "pages-propagation/san-telmo-attribution",
     ],
     "sitemap-san-telmo.xml": [
         "/en/san-telmo-ricpe-sun-park/",

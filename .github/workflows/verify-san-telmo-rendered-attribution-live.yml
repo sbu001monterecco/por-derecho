@@ -6,11 +6,14 @@ on:
     paths:
       - "assets/site.js"
       - "assets/san-telmo-attribution-correction-20260819.js"
+      - "en/index.html"
+      - "es/index.html"
       - "en/san-telmo-ricpe-sun-park/index.html"
       - "es/san-telmo-ricpe-sun-park/index.html"
       - "sitemap-san-telmo.xml"
       - "robots.txt"
       - "scripts/verify_san_telmo_rendered_attribution_live.py"
+      - "scripts/render_san_telmo_attribution_live.mjs"
       - ".github/workflows/verify-san-telmo-rendered-attribution-live.yml"
   workflow_dispatch:
 
@@ -18,26 +21,59 @@ permissions:
   contents: read
   statuses: write
 
+concurrency:
+  group: verify-san-telmo-rendered-attribution-live
+  cancel-in-progress: false
+
 jobs:
   public-edge:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
 
       - name: Verify corrected public assets, dossier routes and discovery controls
-        id: verify
+        id: verify_source
         continue-on-error: true
         run: python scripts/verify_san_telmo_rendered_attribution_live.py
+
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+
+      - name: Verify rendered English and Spanish homepage attribution
+        id: verify_dom
+        continue-on-error: true
+        env:
+          PSR_BASE_URL: https://sbu001monterecco.github.io/por-derecho
+          PSR_SAN_TELMO_ARTIFACT_DIR: artifacts/san-telmo-attribution-live
+        run: node scripts/render_san_telmo_attribution_live.mjs
+
+      - name: Show rendered verification evidence
+        if: always()
+        run: cat artifacts/san-telmo-attribution-live/result.json || true
 
       - name: Publish persistent public-edge commit status
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+          SOURCE_OUTCOME: ${{ steps.verify_source.outcome }}
+          DOM_OUTCOME: ${{ steps.verify_dom.outcome }}
           SOURCE_SHA: ${{ github.sha }}
           RUN_ID: ${{ github.run_id }}
         run: |
@@ -49,14 +85,17 @@ jobs:
           repository = os.environ["GITHUB_REPOSITORY"]
           sha = os.environ["SOURCE_SHA"]
           run_id = os.environ["RUN_ID"]
-          success = os.environ["VERIFY_OUTCOME"] == "success"
+          success = (
+              os.environ["SOURCE_OUTCOME"] == "success"
+              and os.environ["DOM_OUTCOME"] == "success"
+          )
           payload = {
               "state": "success" if success else "failure",
               "target_url": f"https://github.com/{repository}/actions/runs/{run_id}",
               "description": (
-                  "San Telmo attribution and dossier verified live"
+                  "San Telmo attribution and rendered homepages verified live"
                   if success
-                  else "San Telmo attribution public-edge verification failed"
+                  else "San Telmo rendered public-edge verification failed"
               ),
               "context": "pages-propagation/san-telmo-attribution",
           }
@@ -69,7 +108,7 @@ jobs:
                   "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
                   "Content-Type": "application/json",
                   "X-GitHub-Api-Version": "2022-11-28",
-                  "User-Agent": "Por-Derecho-San-Telmo-Live-Verification/1.0",
+                  "User-Agent": "Por-Derecho-San-Telmo-Live-Verification/2.0",
               },
           )
           with urllib.request.urlopen(request, timeout=30) as response:
@@ -77,5 +116,5 @@ jobs:
           PY
 
       - name: Fail when public-edge verification did not succeed
-        if: steps.verify.outcome != 'success'
+        if: steps.verify_source.outcome != 'success' || steps.verify_dom.outcome != 'success'
         run: exit 1
