@@ -1,96 +1,134 @@
 # ACTÚA 2018 — spatial intelligence dossier
 
-Updated: 18 August 2026.
+Updated: 19 August 2026.
 
 ## Purpose
 
-This dossier tests how ACTÚA Valoraciones' 15 January 2018 description and valuation of Sun Park interacted with the CAM acquisition/dación offer and the insolvency administrator's proposed liquidation pathway. It is evidence-first. It does **not** start from a finding that ACTÚA committed fraud.
+This dossier tests how ACTÚA Valoraciones' 15 January 2018 description and valuation of Sun Park interacted with the CAM acquisition/dación offer and the insolvency administrator's proposed liquidation pathway. It is evidence-first and does **not** start from a finding that ACTÚA committed fraud.
 
 The controlling question is:
 
-> Was ACTÚA's physical, economic and valuation representation of Sun Park reliable, representative and fit for the transactional use to which it was subsequently put, and what did each relevant actor know about the source sample, closed units, ownership and operating condition?
+> Was ACTÚA's physical, economic and valuation representation of Sun Park reliable, representative and fit for the transactional use to which it was subsequently put, and what did each relevant actor know about the source sample, condition, ownership and operating state?
 
-## Established / professionally documented propositions
+## Major 19 August correction: complete ACTÚA source recovered
 
-1. The GESVALT critical expert report identifies ACTÚA file `00405-18-00 Z-0` and states that ACTÚA attended Sun Park at the request of ACOSTA MATOS S.L. to determine a stated `valor razonable` for the complex.
-2. GESVALT's 1 March 2018 professional critique says ACTÚA used the cost and update methods but certified the cost/net-replacement result, and criticises that choice for the transaction/market-value purpose.
-3. GESVALT says ACTÚA applied the same 57.14% depreciation across the apartment stock rather than a finca-specific physical depreciation assessment.
-4. GESVALT says only approximately 44 units were in poor condition and the remainder were usable.
-5. GESVALT's conclusions state that the CAM-supplied ACTÚA valuation was not suitable for calculating Sun Park's market value, used erroneous inputs, failed adequately to reflect physical reality, and did not make a property-by-property depreciation assessment.
-6. The AC proposed liquidation plan records ACTÚA's figures: whole complex EUR 9,776,003.13; LPB 159 apartments EUR 6,607,551.87; LPB 31 locals/pools-solaria EUR 489,361.96; LPB real estate total EUR 7,096,913.83.
-7. A separate GESVALT ECO mortgage-purpose workstream was commissioned later in 2018. Its inspection was 23 May 2018 and the 7 June certificate states `Terminado` and `Con ocupante`, with the 262 fincas treated as one exploitation unit.
+The full source gap is now substantially closed.
 
-## Contemporaneous party allegations / intelligence leads — do not convert into findings
+**Recovered Drive source:** `ANEXO IBB - Tasacion ACTUA 15ENE2018 (ver pags 23-24 y 31-33).pdf`  
+**Drive id:** `1I007yqfjxMtOKDU13c3JoP_MzmLW3K-5`  
+**Length:** 492 PDF pages; first 46 pages are the ACTÚA report and the balance are annexes.
 
-An email from Patricia Domínguez to Cuatrecasas on 17 April 2018 (Gmail `162d5ea4c51e8d7f`) states, among other allegations, that:
+Related native Gmail extracts are preserved in message `17ffbcc70d3475ee`.
 
-- ACTÚA valued minority-owner properties rather than LPB properties and extrapolated from them;
-- those minority apartments had been closed since 2011;
-- there were `2 bloques con 61 apartamentos sin uso y en mal estado` plus adjacent common areas;
-- the only closed areas were those two blocks;
-- ACTÚA's valuation was based on the two closed blocks, which the email says were not LPB's;
-- prior TINSA 2015/2017 values were materially higher.
+See `ACTUA-PRIMARY-SOURCE-DIGEST.md` for the controlled digest.
 
-These statements are valuable because they are contemporaneous, predate much of the later reconstruction, and were sent to the then legal advisers. They remain **party allegations** unless independently corroborated.
+## What ACTÚA itself documents
 
-A related 18 April 2018 email (Gmail `162d72ffb53d8ec0`) preserves a comparison image titled `Comparación Fotos Google 12Marzo2018 y Foto de CAM (163 diferencias).jpg`, plus access/entry annexes dated 2 October 2017, 8 January 2018 and 1 March 2018. This is a priority photo-geolocation and access-provenance source.
+The recovered primary report identifies CAM as applicant/requester, describes the assignment as advice to determine `VALOR RAZONABLE`, and treats 262 independent registry properties as a `ÚNICA UNIDAD FUNCIONAL`.
 
-## The 60 / 61 / approximately 44 reconciliation
+ACTÚA itself records:
 
-Three quantities must remain separate:
+- `Año de rehabilitación: No reformado`;
+- a categorical whole-complex statement of `mal estado de conservación y mantenimiento`;
+- `SITUACIÓN Y OCUPACIÓN: Se desconoce`;
+- statistical Yaiza market occupancy around 80.42%;
+- accommodation input around EUR 55 per room/night;
+- physical age 20 years;
+- **uniform physical depreciation 57.14%**;
+- replacement cost new EUR 12.190m;
+- initial adaptation investment EUR 1.584m in the update model;
+- update-method real-estate NPV about EUR 10.143m;
+- selected net-replacement-cost value EUR 9.776m.
 
-| Quantity | Source type | Present meaning |
+The 57.14% uniform depreciation is therefore now supported directly by ACTÚA's own calculation, not only by GESVALT's criticism.
+
+## ACTÚA photographs are now first-class evidence objects
+
+Pages 16–21 contain 13 substantive embedded photographs. They are indexed in `actua-photo-geolocation.csv` as `ACTUA-PHOTO-001` to `ACTUA-PHOTO-013`.
+
+### Important falsification result
+
+The photo record is **mixed**, not wholly negative.
+
+It includes:
+
+- negative exterior/service/clutter images;
+- central/common spaces with intact façades and landscaping;
+- café/bar/common interiors capable of use;
+- a common/reception area with people visibly present;
+- an intact reception/front desk;
+- three clear apartment-interior images on page 21 showing wear/deterioration.
+
+Only those three page-21 images are clearly apartment interiors in the final report. ACTÚA does not visibly identify their apartment number, block, registry finca, owner or access provider.
+
+Therefore the earlier formulation that ACTÚA's visible photographic presentation was proved to consist largely or wholly of closed Blocks 4–5 imagery is **weakened by the primary source** and must not be published as fact.
+
+The stronger surviving question is whether three unidentified apartment-interior photographs, unknown actual occupation and mixed common-area imagery were an adequate evidential basis for categorical whole-complex condition language and uniform 57.14% physical depreciation, or whether additional representative inspection evidence existed but is not visible in the final report.
+
+## GESVALT professional critique remains material
+
+GESVALT's 1 March 2018 professional critique says, among other things, that:
+
+- ACTÚA's valuation was not suitable for adequately calculating Sun Park market value;
+- the report did not perform property-specific depreciation;
+- ACTÚA applied 57.14% across the apartments;
+- only approximately 44 units were in poor condition while the rest were usable;
+- the whole-complex conservation/maintenance description did not reflect the full physical reality in the material examined by GESVALT.
+
+This remains **professional opinion**, not a criminal adjudication.
+
+## 60 / 61 / approximately 44 must remain separate
+
+| Quantity | Source class | Present meaning |
 |---|---|---|
-| 60 apartments | 2017 `List of Fincas SPL - Acquisition - Status` reconstruction preserved in later evidential material | wider minority/acquisition-status universe; not proof of condition or block identity |
-| 61 apartments in two blocks | 17 Apr 2018 email to Cuatrecasas | contemporaneous party allegation about closed/poor-condition minority stock |
-| approximately 44 poor-condition units | GESVALT 1 Mar 2018 expert critique | professional condition assessment stated in the counter-report |
+| 60 apartments | 2017 acquisition/minority reconstruction | wider acquisition/minority universe; native 2017 source still to recover |
+| 61 apartments / two blocks | 17 Apr 2018 email to Cuatrecasas | contemporaneous party allegation |
+| approximately 44 poor units | GESVALT 1 Mar 2018 critique | professional condition assessment/estimate |
 
-Architectural Blocks 4 + 5 contain exactly **44 apartments**: Block 4 = 16; Block 5 = 28. This is an important numerical alignment with GESVALT's `approximately 44` poor-condition units.
+The complete ACTÚA report does **not** presently contain the `61 apartments / two blocks` or `44 poor units` statements.
 
-**It does not prove that the 44 poor-condition units were Blocks 4 + 5.** Nor does it reconcile the email's 61-apartment/two-block statement. The principal live hypothesis is therefore:
+Architectural Blocks 4+5 contain exactly 44 apartments. That remains a useful numerical/spatial hypothesis, not proof that GESVALT's approximately 44 were those blocks.
 
-> 60/61 may refer to the broader closed/minority stock, while approximately 44 may refer to the physically poor-condition subset; Blocks 4+5 are a high-priority candidate for that subset because their architectural capacity is exactly 44.
+See `60_61_44_ORIGIN_AND_RECONCILIATION.md`.
 
-This hypothesis must be proved or disproved by photo → apartment → block → finca → owner/controller → operating-status reconstruction.
+## Blocks 4–5 candidate matrix
 
-## Ownership/control leads from the May-2008–Feb-2022 working owner workbook
+`blocks-4-5-unit-matrix.csv` now enumerates the exact 44 architectural apartments and their fincas, while keeping separate:
 
-Drive workbook `Datos Propietarios Hotel Sun Park May 2008 - Feb2022`, id `1Iwx_OXAiRIpNfrKEVNT1iANL8FgqEANN2_mQIMxtSfs`, contains working owner/contact data that materially concentrates Molina-related/minority entries in the 400/500/900 ranges. Examples include AMENEM entries associated with 404–408 and 453–458; José Luis Molina Marrero around 501/551/914; and other Molina / Salinetas / Roque Prieto / Muruga / Acciones Canarias entries across the relevant ranges.
+- canonical GESVALT historic owner labels;
+- leads from the May-2008–Feb-2022 working owner workbook;
+- unresolved photo/condition/access/later-CAM fields.
 
-This workbook is a **working ownership/contact reconstruction, not Registry proof**. It is useful for targeting historical notas simples, deeds and photo geolocation.
+The owner-source discrepancies are intentional evidence objects. Neither working dataset is silently converted into current Registry title.
 
-## GESVALT commissioning provenance
+## GESVALT workstreams remain separate
 
-The Gmail chain creates a clean distinction between separate 2018 GESVALT workstreams:
+- Feb–Mar 2018: critical expert-report engagement analysing ACTÚA.
+- Apr–Jun 2018: separate ECO mortgage-purpose valuation; inspection 23 May; certificate 7 June; EUR 25.647m; `Terminado`; `Con ocupante`.
 
-- 26 February 2018: GESVALT sends an offer for the expert report rebutting/analysing the other valuation; message `161d1b8d919824af` preserves the proposal circulation.
-- 1 March 2018: Patricia sends Ángel/Manuel Pedrero and GESVALT detailed client-side information about the 40 locals, operation and historic local sale values; message `161e2fc0b6eb21f8`. This is **client input**, not an independent expert finding.
-- 10 April 2018: Raúl Sánchez de la Fuente sends a separate proposal titled `Sun Park (Eco Valuation - Mortgage Purpose)`, message `162b026f7a20736c`.
+Do not collapse them.
 
-Do not collapse the critical expert report into the later ECO valuation. The dates, purposes and evidential functions differ.
+## Decision chain
 
-## RICPE reuse scan — negative/limited result so far
+The repository now tracks:
 
-A targeted Gmail search for 2019–2021 messages combining RICPE with `Gesvalt`, `ACTUA`, `tasación`, `valuation`, EUR 26.4m or EUR 25.647m did **not** locate a direct primary email showing RICPE receiving a GESVALT or ACTÚA appraisal.
+CAM commissions ACTÚA → ACTÚA 15 Jan 2018 → CAM files ACTÚA in LPB insolvency → AC Liquidation Plan uses ACTÚA values → contrary GESVALT evidence → judicial/liquidation pathway → later CAM/HNT/refurbishment/financing.
 
-Later outbound packages from the Aweswell/Project Sun Rock side combine RICPE materials with GESVALT valuations, and the 2022 evidence archive contains both, but that is not proof that RICPE itself received those valuation reports before investment/project decisions. Treat direct RICPE receipt/use as an **open evidence target**.
+Exact transmission dates and exact judicial reliance remain open where not independently reconstructed. See `decision-chain.md`.
 
-## Priority open evidence targets
+## Access / keys — still open
 
-1. Recover the original ACTÚA report and every original/source photograph if possible; preserve metadata.
-2. Geolocate every ACTÚA photograph.
-3. Reconstruct the exact 44 poor-condition units and test Blocks 4+5.
-4. Reconcile the contemporaneous `two blocks / 61 apartments` statement with the 60-apartment 2017 minority list and the approximately 44-condition assessment.
-5. Establish who granted ACTÚA/CAM access, held keys, attended inspection and selected units.
-6. Determine what ownership/condition information ACTÚA received and from whom.
-7. Establish exact circulation: ACTÚA → CAM → AC → court and dates.
-8. Reconstruct historic registered title for every candidate closed unit.
-9. Test whether CAM later acquired units that had been part of the negative ACTÚA sample.
-10. Search for direct RICPE/Cecabank/Renta 4 receipt or reliance on any appraisal or appraisal-derived figure.
+A targeted Gmail scan surfaced later access/takeover/litigation material but did not yet isolate a direct January-2018 record proving who supplied ACTÚA with keys or access to each sampled apartment.
+
+This is `NOT FOUND YET`, not proof that access was unauthorised.
+
+## RICPE reuse scan
+
+A targeted Gmail scan still has not located direct primary evidence that RICPE received ACTÚA/GESVALT appraisals before its Sun Park decisions. Later evidence packages containing both do not prove earlier receipt.
 
 ## Publication rule
 
-Use these labels:
+Use:
 
 - `DOCUMENTED FACT`
 - `PROFESSIONAL OPINION`
@@ -98,5 +136,23 @@ Use these labels:
 - `REASONABLE INFERENCE`
 - `DISPUTED`
 - `OPEN EVIDENCE TARGET`
+- `NOT FOUND`
 
-No website text may turn `LPB inactive` into `whole hotel abandoned`, `approximately 44 poor units` into `Blocks 4+5 proven`, or professional criticism of ACTÚA into `fraud judicially established`.
+Never publish:
+
+- `61/two blocks` as an ACTÚA statement unless its source is proved;
+- Blocks 4–5 as the approximately 44 poor units unless geolocated/unit-level evidence establishes it;
+- the three page-21 apartment interiors as minority/CAM/Blocks4–5 units without identification;
+- ACTÚA fraud as adjudicated fact;
+- LPB corporate inactivity as physical whole-hotel abandonment.
+
+## Priority next targets
+
+1. Geolocate `ACTUA-PHOTO-011` to `013` without assuming Blocks 4–5.
+2. Recover ACTÚA inspection notes/unit list, engagement letter, invoice and original photos.
+3. Reconstruct January-2018 access/keys.
+4. Recover native 2017 60-apartment acquisition-status source.
+5. Locate earliest source of 61/two-block language.
+6. Locate any GESVALT schedule identifying approximately 44 units.
+7. Match any geolocated photographed unit to historic Registry title and later CAM acquisition.
+8. Reconstruct exact CAM filing → AC → court treatment of ACTÚA and contrary valuations.
