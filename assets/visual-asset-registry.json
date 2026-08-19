@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.0.0",
+  "registry_version": "1.1.0",
   "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
   "control_date": "2026-08-19",
   "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
@@ -24,7 +24,7 @@
       "path": "assets/actors/francisco-de-borja-rodriguez-batllori.jpg",
       "git_blob_sha": "f2c3bfd6628e043940f58b4f4c76ffdba735bb57",
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
-      "identity_basis": "Existing website-approved repository asset and canonical filename. Identity is not inferred by this task from facial appearance.",
+      "identity_basis": "Existing website-approved canonical repository asset; the user expressly reconfirmed this exact image as Borja / the Administrador Concursal on 19 August 2026. No facial-identification inference performed.",
       "approved_contexts": [
         "Administrador Concursal page",
         "5 + AC visualization",
@@ -35,7 +35,13 @@
       "alt_es": "Francisco de Borja Rodríguez-Batllori Laffitte, Administrador Concursal en el Concurso 36/2012",
       "do_not_confuse_with": [
         "person.eduardo-sanchez-san-telmo.primary"
-      ]
+      ],
+      "source_provenance": {
+        "sha256": "2fb1a49d1ed2011f390e44daa7770c18b31459bd25acc7b204b72eb315fba743",
+        "dimensions": "135x151",
+        "format": "jpg",
+        "user_reconfirmation_date": "2026-08-19"
+      }
     },
     "person.eduardo-sanchez-san-telmo.primary": {
       "subject_type": "person",
@@ -45,27 +51,32 @@
         "Socio · San Telmo",
         "Partner · San Telmo"
       ],
-      "path": null,
-      "git_blob_sha": null,
-      "identity_status": "USER_CONFIRMED_PENDING_REPOSITORY_IMPORT",
-      "identity_basis": "The user expressly confirmed on 19 August 2026 that the uploaded file named 'Eduardo Sánchez (1).webp' depicts Eduardo Sánchez. This is a user-provided identity label, not an AI facial-identification finding.",
-      "pending_source": {
-        "original_filename": "Eduardo Sánchez (1).webp",
-        "sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
-        "dimensions": "800x600",
-        "format": "webp",
-        "confirmation_date": "2026-08-19"
-      },
-      "publication_rule": "DO_NOT_PUBLISH_OR_COMPOSITE_UNTIL_IMPORTED TO assets/actors/ AND THE PATH + GIT BLOB SHA ARE LOCKED HERE.",
-      "approved_contexts_after_import": [
-        "San Telmo / RICPE same-asset visualization",
-        "dedicated Eduardo Sánchez / San Telmo evidence context"
-      ],
+      "path": "assets/actors/eduardo-sanchez-san-telmo.url",
+      "git_blob_sha": "19fd487e34807715ce40fb357ceb6c58c7bf5e08",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "User expressly identified and authorised the supplied portrait as Eduardo Sánchez on 19 August 2026. The repository byte-locks a pointer to the corresponding first-party RSM profile image, with a first-party San Telmo fallback. No facial-identification inference performed.",
       "alt_en": "Eduardo Sánchez, San Telmo partner",
       "alt_es": "Eduardo Sánchez, socio de San Telmo",
       "do_not_confuse_with": [
         "person.francisco-de-borja-rodriguez-batllori.primary"
-      ]
+      ],
+      "approved_contexts": [
+        "San Telmo / RICPE same-asset visualization",
+        "dedicated Eduardo Sánchez / San Telmo evidence context",
+        "documents and email exports"
+      ],
+      "source_provenance": {
+        "user_supplied_original_filename": "Eduardo Sánchez (1)(1).webp",
+        "user_supplied_sha256": "a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6",
+        "user_supplied_dimensions": "800x600",
+        "user_authorisation_date": "2026-08-19",
+        "live_source_page": "https://www.rsm.global/spain/es/people/eduardo-sanchez",
+        "live_source_type": "first-party RSM professional profile"
+      },
+      "storage_mode": "external-url-pointer",
+      "external_url": "https://res.cloudinary.com/rsmglobal/image/fetch/t_default/f_auto/q_auto/https%3A/www.rsm.global/spain/sites/default/files/media/01%20Global%20assets/02_Thumbnails%201240x930px/06_fotos%20profesionales/Eduardo%20S%C3%A1nchez%20%281%29.jpg",
+      "source_page": "https://www.rsm.global/spain/es/people/eduardo-sanchez",
+      "fallback_external_url": "https://abogadossantelmo.com/wp-content/uploads/2022/07/Eduardo-Sanchez-Iglesias-500x500.jpg"
     },
     "person.alberto-lopez-villarrubia.primary": {
       "subject_type": "person",
@@ -105,6 +116,52 @@
       ],
       "alt_en": "Aerial view of the Sun Park hotel complex, currently MYND Yaiza",
       "alt_es": "Vista aérea del complejo hotelero Sun Park, actualmente MYND Yaiza"
+    },
+    "composite.san-telmo-ricpe-sun-park-stamp-v1": {
+      "subject_type": "object",
+      "canonical_name": "San Telmo / RICPE / Sun Park documentary collision stamp",
+      "short_label": "Eduardo → Sun Park → Borja source stamp",
+      "path": "assets/san-telmo-source-stamp-20260819.js",
+      "git_blob_sha": "adc1f705e0cee8a9013a9b9a23ae5e6fe22a1143",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Native HTML/CSS/JS source stamp rendered from the authorised Eduardo pointer, canonical Sun Park asset and canonical Borja asset under the fixed slot map; the direct statement is timestamped to 08:08–08:12 of the 30 Nov 2021 San Telmo/RICPE webinar.",
+      "source_provenance": {
+        "format": "native-html-css-js",
+        "component_path": "assets/san-telmo-source-stamp-20260819.js",
+        "control_date": "2026-08-19"
+      },
+      "approved_contexts": [
+        "homepage",
+        "RICPE",
+        "San Telmo",
+        "RSM",
+        "Administrador Concursal",
+        "Grant Thornton/Cuyás",
+        "PwC",
+        "7 June 2018",
+        "actor register",
+        "parallel-lives/accountability pages",
+        "documents and email exports"
+      ],
+      "alt_en": "Source-controlled visual connecting Eduardo Sánchez, the RICPE investment, Sun Park and Borja as Insolvency Administrator, with the Eduardo statement timestamp 08:08–08:12.",
+      "alt_es": "Visual controlado por fuentes que conecta a Eduardo Sánchez, la inversión RICPE, Sun Park y Borja como Administrador Concursal, con la manifestación de Eduardo en 08:08–08:12.",
+      "source_reference": {
+        "title": "Enrique Guerra, en #UnCaféenSanTelmo",
+        "publisher": "San Telmo Abogados y Economistas",
+        "publication_date": "2021-11-30",
+        "youtube_video_id": "mHn9IJU0qI4",
+        "statement_start": "00:08:08",
+        "statement_completion": "00:08:12",
+        "context_window": "00:07:57–00:08:27",
+        "transcript_pages": "29–30 of 85",
+        "controlled_words": "bueno, nosotros en el despacho... en esa primera inversión... metimos unos cuantos clientes"
+      },
+      "storage_mode": "native-html-css",
+      "rendered_asset_ids": [
+        "person.eduardo-sanchez-san-telmo.primary",
+        "place.sun-park-mynd-yaiza.aerial-primary",
+        "person.francisco-de-borja-rodriguez-batllori.primary"
+      ]
     }
   },
   "rejected_or_prohibited_mappings": [
