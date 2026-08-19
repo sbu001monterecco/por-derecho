@@ -1,12 +1,22 @@
 {
-  "id": "adjudicacion-2022-reconstruction-2026-08-19",
-  "created_at": "2026-08-19",
-  "status": "controlled-publication-package",
+  "publication_id": "ADJUDICACION-2022-RECONSTRUCTION-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "controlling_pr": 509,
   "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
-  "public_pages": {
-    "es": "/es/adjudicacion-2022-reconstruccion-documental/",
-    "en": "/en/2022-adjudication-documentary-reconstruction/"
+  "expected_routes": {
+    "es": [
+      "es/adjudicacion-2022-reconstruccion-documental/index.html"
+    ],
+    "en": [
+      "en/2022-adjudication-documentary-reconstruction/index.html"
+    ]
   },
+  "expected_source_files": [
+    "operations/ADJUDICACION_2022_RECONSTRUCTION_ACTIVATION_2026-08-19.md",
+    "sitemap-adjudicacion-2022.xml"
+  ],
   "source_classes_reviewed": [
     "internal working papers",
     "email bodies and attachments",
@@ -52,9 +62,19 @@
     "final liquidation accounts and conclusion order",
     "historic and current property-by-property registry certificates"
   ],
+  "publication_safety": {
+    "nullity": "No single universal-nullity claim; consequences are act-specific and right-holder-specific.",
+    "surplus": "No actual remanente is asserted without reconstruction of both the legally relevant realisation amount and legally payable debt.",
+    "third_parties": "No automatic loss of later registered rights is asserted.",
+    "allegations": "No fraud, criminality, coercion or bad faith is presented as an established fact."
+  },
   "privacy": {
     "private_source_files_committed": false,
     "email_identifiers_committed": false,
     "personal_data_committed": false
+  },
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR_OPEN records source presence only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
   }
 }
