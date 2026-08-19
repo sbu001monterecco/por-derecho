@@ -52,7 +52,7 @@
     }
   };
   const normalize=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9€]+/g,' ').trim();
-  const escapeHtml=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
+  const escapeHtml=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const humanize=path=>{const bits=path.replace(/^\/+|\/+$/g,'').split('/');const slug=bits[bits.length-1]||bits[bits.length-2]||'';return slug.replace(/-/g,' ').replace(/\b\w/g,m=>m.toUpperCase());};
   const localProjectUrl=raw=>{
     try{
