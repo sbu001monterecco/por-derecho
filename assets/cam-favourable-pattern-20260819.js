@@ -28,6 +28,41 @@
   const isEn = enTargets.some(route => path.endsWith(route));
   if (!isEs && !isEn) return;
 
+  const replaceStalePatternText = () => {
+    const replacements = isEs ? [
+      [
+        'El acto exacto de terminación de DP 1041 sigue P0.',
+        'El desistimiento y el archivo de DP 1041 están documentados por el Decreto de 05/03/2018 y la Diligencia de 13/05/2024; sigue P0 la cadena interna de decisión, instrucción, redacción y presentación del escrito.'
+      ],
+      [
+        '¿Cómo ayuda a LPB matar la vía de retracto?',
+        '¿Qué beneficio obtuvo LPB de que se desistiera de una vía judicial ya admitida?'
+      ]
+    ] : [
+      [
+        'exact termination act remains P0.',
+        'withdrawal and archive are documented by the 5 March 2018 decree and the 13 May 2024 judicial-office order; the internal decision, instruction, drafting and filing chain remains P0.'
+      ],
+      [
+        'How does killing the retracto route help LPB?',
+        'What benefit did LPB obtain from withdrawing an already-admitted judicial route?'
+      ]
+    ];
+
+    document.querySelectorAll('main td, main p, main .question, main h2, main h3').forEach(el => {
+      let html = el.innerHTML;
+      let changed = false;
+      replacements.forEach(([from, to]) => {
+        if (html.includes(from)) {
+          html = html.replaceAll(from, to);
+          changed = true;
+        }
+      });
+      if (changed) el.innerHTML = html;
+    });
+  };
+  replaceStalePatternText();
+
   const style = document.createElement('style');
   style.textContent = `
     #${id}{background:#f4f1ea}
