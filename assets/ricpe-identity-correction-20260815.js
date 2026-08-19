@@ -19,8 +19,9 @@
     load('ricpe-relationship-network-20260818.js?v=20260818a');
   });
 
-  // Homepage identity/relationship correction and PwC 2016 knowledge checkpoint.
+  // Shared actor-family / PwC knowledge visualization.
+  // One backend component drives the homepage, canonical PwC page and canonical RICPE page.
   // Canonical relationships: Antonio Cogolludo Rojas is Shaila's father;
   // Francisco Mario Matos Matas and Shaila María Cogolludo Ramos are husband and wife.
-  load('homepage-actor-family-pwc-note-20260819.js?v=20260819a');
+  load('homepage-actor-family-pwc-note-20260819.js?v=20260819b');
 })();
