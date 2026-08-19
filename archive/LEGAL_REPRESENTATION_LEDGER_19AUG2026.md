@@ -2,7 +2,8 @@
 
 **Control date:** 19 August 2026  
 **Status:** PUBLIC-SAFE BACKEND SEED — NOT A COMPLETE REPRESENTATION HISTORY  
-**Machine-readable source:** `assets/data/legal-representation-v1.json`
+**Machine-readable source:** `assets/data/legal-representation-v1.json`  
+**Retracto override/control:** `assets/data/retracto-credit-1041-2017-v1.json`
 
 ## 1. Purpose
 
@@ -36,7 +37,7 @@ The canonical objects are therefore:
 
 `person → firm → engagement → client → matter → event → evidence-state → handover`
 
-The public website should later read structured data from `assets/data/legal-representation-v1.json`; it should not hard-code a simplified succession narrative.
+The public website should later read structured data from the canonical data files; it should not hard-code a simplified succession narrative.
 
 ## 3. Current principal representation
 
@@ -45,6 +46,7 @@ The public website should later read structured data from `assets/data/legal-rep
 - **Current status:** current principal advisers, confirmed by the client.
 - **First activity verified in this reconstruction:** July 2023.
 - **Documented tracks:** review of Concurso hearing material; 2023 Audiencia Nacional complaint work; appellate/personation and Concurso document work.
+- **Retracto continuity:** later review of archived Promontoria / DP 1041/2017 / AC-Cristo material is documented. No later Sixto communication has yet been located that definitively states that the Article 1535 claim was viable or non-viable.
 - **Open:** original engagement date; exact client-by-client and Javier/Estefanía division of responsibility.
 
 ### Carlos Llamas Sanz
@@ -81,6 +83,27 @@ Core names located include Miguel Méndez Itarte, José María Martínez de Arto
 
 This track must remain attached to **LPB**, not automatically to Aweswell.
 
+### Cristo Ayose Suárez Pimentel — 2017/2018 onward, parallel multi-matter track
+
+Cristo's role must be reconstructed matter by matter rather than represented as a simple resignation/succession event.
+
+Current verified points include:
+
+- he acted for LPB in the Article 1535 / Diligencias Preliminares 1041/2017 workstream and forwarded the proceeding material in January 2018;
+- he remained involved in broader Sun Park legal work after January 2018, including documented direct client contact in February 2018;
+- from at least August 2018 the evidence shows a broad local/cross-matter role covering legal strategy, evidential reconstruction, criminal workstreams, procedural summaries and coordination with other lawyers;
+- he later worked in parallel with Juan Tomás Parrilla, Cuatrecasas and other counsel;
+- he had a direct role in the David Espejo expert-report workstream.
+
+**Critical continuity note:** no documented voluntary resignation by Cristo has been located in the current reconstruction. The client's present account is that the Administrador Concursal caused Cristo's relevant formal LPB role to cease — colloquially, caused him to “go away” from that formal role — while Cristo continued on other Sun Park matters. This client account is preserved but must not yet be published as independently verified causation until the exact revocation/change-of-authority instrument and handover chain are recovered.
+
+Accordingly:
+
+- do not write “Cristo resigned” absent a primary resignation;
+- do not infer that later continued activity disproves displacement from a specific LPB mandate;
+- distinguish `continued broader adviser relationship` from `formal authority in a named LPB proceeding`;
+- bind the exact DP 1041 termination/withdrawal act before attributing its filing personally to the AC or to any lawyer.
+
 ### Cuatrecasas — Aweswell / multi-lawyer firm track
 
 Verified activity in the present reconstruction runs from at least September 2018 to 26 May 2020.
@@ -99,15 +122,25 @@ On **26 May 2020**, the correspondence documents Cuatrecasas granting venia for 
 
 This is a separate handover from the LPB change described below.
 
-### Cristo Ayose Suárez Pimentel — parallel multi-matter track
+### Armando Betancor Álamo — Aweswell / 2019 recovery and litigation strategy
 
-Verified from at least August 2018.
+The evidence threshold for a retained engagement is now met.
 
-The evidence presently supports a broad local/cross-matter role covering legal strategy, evidential reconstruction, criminal workstreams, procedural summaries and coordination with other lawyers. He worked in parallel with Juan Tomás Parrilla and Cuatrecasas and later with other counsel.
+- A signed 2019 Aweswell services / success-fee engagement has been located.
+- Subsequent correspondence documents active legal drafting, review and strategy.
+- He coordinated with Cristo Suárez Pimentel, Juan Tomás Parrilla and Joaquín Ruiz de Infante Abella on parts of the post-2018 recovery/challenge work.
 
-Cristo also had a direct role in the David Espejo expert-report workstream.
+**Classification:** `VERIFIED_RETAINED_ADVISER_2019`.
 
-His engagement should therefore not be rendered on the website as simply “the lawyer before/after X.” It is a parallel multi-matter band whose exact client-specific mandates require further reconstruction.
+**Open:** map the precise client/matter perimeter of each task; do not infer that every 2019 Sun Park proceeding fell within the same engagement.
+
+### Joaquín Ruiz de Infante Abella — collaborating lawyer / 2019
+
+The evidence shows direct substantive legal work, including coordinated drafting/filing activity and collaboration with Armando, Cristo and other counsel.
+
+**Classification:** `VERIFIED_COLLABORATING_LAWYER_2019`.
+
+A separate standalone engagement letter or retainer has **not yet been located**. Therefore do not promote him to a separately retained principal adviser without further evidence.
 
 ### Daniel Jiménez García — Aweswell / short 2020 engagement
 
@@ -148,6 +181,7 @@ See current representation above. His earlier relationship history remains an op
 
 | Handover | Client | Matter | Status |
 |---|---|---|---|
+| Cristo formal LPB role → successor/control change | LPB | DP 1041/2017 / linked LPB authority | OPEN — client says AC caused formal role to cease; no voluntary resignation located; exact instrument/handover still P0 |
 | Cuatrecasas → Daniel Jiménez | Aweswell | Concurso 36/2012 | VERIFIED — venia 26 May 2020 |
 | Juan Tomás Parrilla → Luis Miguel López | LPB | Concurso 36/2012 | VERIFIED — substitution 31 May/1 June; court direction change 16 June 2020 |
 | Daniel Jiménez → successor | Aweswell | Concurso 36/2012 | OPEN — resignation/fee closeout 23 June 2020; complete successor/file-transfer chain still to reconstruct |
@@ -205,21 +239,20 @@ but the evidence must prove each arrow.
 
 ## 8. Additional advisers already surfaced
 
-The first scan has identified further professionals who should be classified rather than silently omitted:
+The scan has identified further professionals who should be classified rather than silently omitted:
 
 - Manuel Gallego Águeda — 2012 legal/Bankia-related advice; retention scope to verify.
 - Daniel Irigoyen — 2018 strategic legal activity; retention scope to verify.
 - Juan Daniel Fajardo Expósito — 2018 local/notarial/evidential activity; retention scope to verify.
-- Armando L. Betancor — late-2018 specialist legal contact; retention scope to verify.
 - Henry Feltenstein Arechabala — consulted in 2018 on white-collar/criminal material; retention not yet proved.
 
-These appear in `candidateAdvisersToClassify` until the evidence satisfies the engagement test.
+**Armando Betancor Álamo is no longer a candidate-only contact**: signed engagement evidence supports the verified-retained classification above. **Joaquín Ruiz de Infante Abella is separately preserved as verified collaborating counsel**, with standalone retainer still open.
 
 ## 9. Front-end contract
 
-Do **not** yet create a public page that implies the genealogy is complete.
+Do **not** imply that the genealogy is complete.
 
-When the backend reaches publication threshold, the website should provide:
+The website should ultimately provide:
 
 1. **Chronology by client and matter** — parallel bands, 2011→present.
 2. **Professional profile** — lawyer/procurador/expert, firm, verified period, clients, matters, documented acts.
@@ -227,6 +260,7 @@ When the backend reaches publication threshold, the website should provide:
 4. **Matter view** — e.g. “who represented LPB in Concurso 36/2012 at each point?”
 5. **Handover/continuity map** — where knowledge passed cleanly, partially or remains unverified.
 6. **Expert-report transmission matrix** — report → lawyer → procurador → court.
+7. **Retracto/DP 1041 representation view** — formal authority, continued broader role, change of control, termination act and later archive review kept distinct.
 
 Public fields may include names, firms, roles, verified date windows, matters, documented activities, handovers, qualifications and open questions.
 
@@ -236,14 +270,15 @@ Do not expose mailbox IDs, private email addresses, privileged correspondence, p
 
 1. Identify the 2011 legal/procurador layer before the first currently verified Garrigues activity.
 2. Obtain/locate all engagement letters, venias and court direction-change notices for Concurso 36/2012.
-3. Complete the David Espejo report-by-report transmission matrix.
-4. Reconstruct Daniel Jiménez's successor/file handover after 23 June 2020.
-5. Determine exact start/end and individual mandates for Garrigues, Cuatrecasas, Sixto and Carlos Llamas.
-6. Reconstruct procurador appointments and filing inventories.
-7. For each outgoing lawyer, record `knowledge_state_at_end_of_engagement`.
+3. **Locate the exact primary act changing Cristo's formal LPB authority and the exact withdrawal/archive act for DP 1041/2017.**
+4. Complete the David Espejo report-by-report transmission matrix.
+5. Reconstruct Daniel Jiménez's successor/file handover after 23 June 2020.
+6. Determine exact start/end and individual mandates for Garrigues, Cuatrecasas, Sixto and Carlos Llamas.
+7. Reconstruct procurador appointments and filing inventories.
+8. For each outgoing lawyer, record `knowledge_state_at_end_of_engagement`.
 
 ## 11. Continuity rule
 
-This ledger and `assets/data/legal-representation-v1.json` are the canonical starting point for this track. Future work should update them rather than create competing lawyer lists.
+This ledger, `assets/data/legal-representation-v1.json` and the claim-specific retracto control are the canonical starting points for this track. Future work should update them rather than create competing lawyer lists.
 
 The historical narrative may change as earlier or better evidence is recovered. Corrections must preserve the previous proposition/status and explain why it changed.

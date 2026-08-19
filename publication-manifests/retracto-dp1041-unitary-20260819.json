@@ -1,0 +1,94 @@
+{
+  "publication_id": "RETRACTO-DP1041-UNITARY-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "publication_type": "bilingual dedicated claim dossier and canonical causation control",
+  "controlling_pr": 426,
+  "controlling_proposition": {
+    "es": "LPB obtuvo una vía judicial para conocer la economía de la cesión; CAM obtuvo reconocimiento concursal con apoyo expreso del informe favorable de la Administración Concursal. Si la vía de LPB dejó de producir valor, debe identificarse qué beneficio mensurable recibió la masa.",
+    "en": "LPB obtained a judicial route to the assignment economics; CAM obtained insolvency recognition with express reliance on the insolvency administration's favourable report. If LPB's route stopped producing value, the measurable benefit received by the estate must be identified."
+  },
+  "expected_routes": {
+    "es": [
+      "es/retracto-credito-litigioso-1041-2017/index.html",
+      "es/acreedor-de-registro/credito-litigioso-escritura/index.html"
+    ],
+    "en": [
+      "en/litigious-credit-retracto-1041-2017/index.html",
+      "en/lender-of-record/litigious-credit-hidden-deed/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/retracto-credit-1041-2017-v1.json",
+    "assets/data/legal-representation-retracto-override-v1.json",
+    "archive/RETRACTO_CREDITO_LITIGIOSO_DP1041_UNITARY_CAUSATION_AUDIT_19AUG2026.md",
+    "archive/SUN_PARK_MASTER_STORYLINE_RETRACTO_DP1041_ADDENDUM_19AUG2026.md",
+    "archive/CORRECTION_REGISTER_RETRACTO_DP1041_ADDENDUM_19AUG2026.md",
+    "archive/PH122_CAM_ASSIGNMENT_ART1535_PUBLICATION_CONTROL_16AUG2026.md",
+    "archive/LEGAL_REPRESENTATION_LEDGER_19AUG2026.md",
+    "archive/LEGAL_REPRESENTATION_AC_CAUSATION_RETRACTO_OVERRIDE_19AUG2026.md",
+    "sitemap-banking-recovery.xml"
+  ],
+  "material_assertions": [
+    {
+      "id": "A1",
+      "assertion": "JPI nº 2 admitted DP 1041/2017 and ordered production of the assignment deed/economics after finding just cause and legitimate interest.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "A2",
+      "assertion": "The 15 February 2018 Commercial Court order recognised CAM as assignee creditor, rejected LPB's litigious-credit theory and partially corrected amounts in LPB's favour.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "A3",
+      "assertion": "For creditor substitution, the Commercial Court expressly relied on the AC's favourable report and presumed AC verification rather than requiring all title documentation sought by LPB.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "A4",
+      "assertion": "No measurable LPB estate benefit from the later loss/termination of the DP 1041 information/retracto route has been located in the current reconstruction.",
+      "status": "NEGATIVE-EVIDENCE-WITH-LIMITATION"
+    },
+    {
+      "id": "A5",
+      "assertion": "The AC sequence is described as functional/directional delivery with CAM-favourable effect, not as proof of collusion or intent.",
+      "status": "ANALYTICAL-INFERENCE"
+    },
+    {
+      "id": "A6",
+      "assertion": "The judicial sequence is described as an active/passive intervention asymmetry with CAM-favourable effect, balanced by the LPB-favourable amount correction; improper personal bias is not asserted as established.",
+      "status": "ANALYTICAL-INFERENCE"
+    }
+  ],
+  "corrections": [
+    {
+      "old": "8 February 2018 as date of the Commercial Court creditor-substitution / litigious-credit order",
+      "new": "15 February 2018",
+      "status": "PRIMARY-SOURCE-CORRECTED"
+    },
+    {
+      "old": "appeal route",
+      "new": "five-day recurso de reposición without suspensive effect, as stated in the recovered order",
+      "status": "PRIMARY-SOURCE-CORRECTED"
+    }
+  ],
+  "publication_safety": {
+    "article1535": "No assertion that Article 1535 certainly applied or that LPB had a guaranteed winning claim.",
+    "termination": "No assertion that the AC personally filed the withdrawal/termination of DP 1041 until the exact primary cessation act is rebound.",
+    "intent": "No assertion of collusion, corruption or improper judicial bias from the effect pattern alone.",
+    "privacy": "No raw Gmail identifiers, private email addresses or privileged correspondence.",
+    "assignor": "PH122 remains the identified legal assignor; Cerberus/Haya are not substituted into that legal role absent primary proof.",
+    "separation": "The 2017-2018 credit-retracto workstream is kept separate from later property/unit tanteo-retracto rights."
+  },
+  "open_evidence": [
+    "Exact DP 1041 withdrawal/archive act and instruction chain.",
+    "Exact Cristo formal-authority change instrument and handover.",
+    "Challenge/finality chain for the 15 February 2018 order.",
+    "Complete PH122-to-CAM deed, schedules, price and proof of payment.",
+    "Qualifying pre-assignment declaratory litigation for Article 1535 test.",
+    "Contemporaneous insolvency-estate cost/benefit analysis for continuation or abandonment."
+  ],
+  "notes": "PR-open publication state. The manifest does not claim CI_GREEN, MERGED, DEPLOYED or LIVE_VERIFIED until those states are independently evidenced."
+}
