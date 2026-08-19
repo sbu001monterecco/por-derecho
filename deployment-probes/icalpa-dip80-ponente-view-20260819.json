@@ -1,0 +1,33 @@
+{
+  "probeId": "icalpa-dip80-ponente-view-20260819",
+  "minimumSourceCommit": "731563ee441ff380c6b5e182413e09c3e1de7431",
+  "baseUrl": "https://sbu001monterecco.github.io/por-derecho/",
+  "resources": [
+    {
+      "path": "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/",
+      "markers": [
+        "Vista Ponente · Tarjeta roja · DIP 80/2026",
+        "TARJETA ROJA — REVISIÓN HUMANA INMEDIATA POR RIESGO ACUMULATIVO",
+        "data-pv-tab=\"roja\"",
+        "noindex,follow,noarchive"
+      ]
+    },
+    {
+      "path": "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/",
+      "markers": [
+        "Rapporteur View · Red card · DIP 80/2026",
+        "RED CARD — IMMEDIATE HUMAN CUMULATIVE-RISK REVIEW",
+        "data-pv-tab=\"red\"",
+        "noindex,follow,noarchive"
+      ]
+    },
+    {
+      "path": "assets/por-derecho/ponente-view.css",
+      "markers": ["--r:#b42318", "--o:#c04a00", "@media print"]
+    },
+    {
+      "path": "assets/por-derecho/ponente-view.js",
+      "markers": ["data-pv-tab", "data-pv-critical", "data-pv-print"]
+    }
+  ]
+}
