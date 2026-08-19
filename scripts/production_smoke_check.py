@@ -26,6 +26,10 @@ CHECKS = [
      "kind": "ricpe_es", "min_bytes": 1000},
     {"path": "es/cnmv-ricpe-verificacion/", "markers": ["CNMV / RICPE", "EXPEDIENTE ABIERTO"],
      "kind": "cnmv_es", "min_bytes": 1000},
+    {"path": "es/rsm/nnr4-1025c2f66/", "markers": ["NNR4-1025C2F66", "Perímetro profesional y preservación", "18 ago 2026"],
+     "kind": "rsm_es", "min_bytes": 1000},
+    {"path": "en/rsm/nnr4-1025c2f66/", "markers": ["NNR4-1025C2F66", "Professional perimeter and preservation", "18 Aug 2026"],
+     "kind": "rsm_en", "min_bytes": 1000},
     {"path": "assets/site.js", "markers": ["canonical-routing-chronology-20260815.js", "share-controls-20260817.js"],
      "kind": "global_loader", "min_bytes": 1000},
 ]
