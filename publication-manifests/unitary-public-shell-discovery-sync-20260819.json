@@ -7,25 +7,21 @@
   "publication_type": "bilingual unitary-search and Control Room synchronization layer",
   "purpose": "Synchronize the existing six-system unitary public shell with post-shell public dossiers and make future same-project specialist-sitemap routes discoverable without changing evidential status.",
   "expected_routes": {
-    "en": [
-      "en/case-control-room/index.html",
-      "en/search/index.html"
-    ],
-    "es": [
-      "es/sala-control-caso/index.html",
-      "es/buscar/index.html"
-    ]
+    "en": ["en/case-control-room/index.html", "en/search/index.html"],
+    "es": ["es/sala-control-caso/index.html", "es/buscar/index.html"]
   },
   "newly_bridged_existing_routes": {
     "en": [
       "en/litigious-credit-retracto-1041-2017/index.html",
       "en/cuatrecasas-sun-park/index.html",
-      "en/cuatrecasas-icam-ccacm-2026/index.html"
+      "en/cuatrecasas-icam-ccacm-2026/index.html",
+      "en/community-instrumentalisation/two-competing-governance-records/index.html"
     ],
     "es": [
       "es/retracto-credito-litigioso-1041-2017/index.html",
       "es/cuatrecasas-sun-park/index.html",
-      "es/cuatrecasas-icam-ccacm-2026/index.html"
+      "es/cuatrecasas-icam-ccacm-2026/index.html",
+      "es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/index.html"
     ]
   },
   "expected_source_files": [
@@ -33,6 +29,7 @@
     "assets/share-controls-20260817.js",
     "assets/data/unitary-route-registry-sync-20260819.json",
     "sitemap-legal-advisers.xml",
+    "sitemap-community-governance.xml",
     "robots.txt",
     "scripts/render_unitary_public_shell.mjs",
     ".github/workflows/validate-unitary-public-shell.yml",
@@ -43,12 +40,14 @@
     "new_top_level_systems": 0,
     "dp1041_location": "Concurso / creditor / recovery chain",
     "cuatrecasas_location": "Institutional / professional answer-holder chain",
+    "governance_visual_location": "Community / CEXP evidence lane",
     "search_fallback": "Base curated registry + synchronization registry + every same-project sitemap declared in robots.txt"
   },
   "required_search_queries": [
     {"query": "CEXP", "purpose": "original curated-index non-regression"},
     {"query": "1041", "purpose": "DP1041 curated synchronization"},
     {"query": "Cuatrecasas", "purpose": "professional-lifecycle curated synchronization"},
+    {"query": "capture hypothesis / hipótesis de captura", "purpose": "two-track governance visual with controlled hypothesis framing"},
     {"query": "pwc canarias carlos saavedra", "purpose": "generic specialist-sitemap fallback proof independent of the synchronization registry"}
   ],
   "publication_safety": {
@@ -58,18 +57,20 @@
     "dp1041_intent": "No assertion of collusion, corruption or improper judicial bias from the effect pattern alone.",
     "cuatrecasas_complaints": "A professional-conduct complaint is an allegation; archive for limitation or territorial competence is not a merits ruling; a pending appeal does not predict success.",
     "privilege": "No privileged Cuatrecasas advice or confidential lawyer-client material is reproduced by this synchronization layer.",
+    "governance_capture": "Capture remains an attributed/audit hypothesis to be proved meeting by meeting; a numerical minority or disputed minute does not itself prove invalidity or capture.",
     "six_system_boundary": "No new top-level case system is created; new public dossiers are bridged into the existing architecture."
   },
   "validation": {
     "publication_integrity": "PENDING",
     "unitary_browser": "PENDING",
-    "expected_route_archetypes": 15,
-    "expected_desktop_mobile_renders": 30,
+    "expected_route_archetypes": 17,
+    "expected_desktop_mobile_renders": 34,
     "required_controls": [
       "exactly six Control Room system cards in both languages",
       "DP1041/retracto link visible in each Control Room",
       "Cuatrecasas lifecycle and ICAM/CCACM links visible in each Control Room",
-      "CEXP, DP1041, Cuatrecasas and PwC specialist-sitemap searches resolve",
+      "CEXP, DP1041, Cuatrecasas, governance-visual and PwC specialist-sitemap searches resolve",
+      "two-track governance visual renders in both languages",
       "no page-level horizontal overflow on tested routes",
       "new routes and gateways retain the global Case/Search utility"
     ]
