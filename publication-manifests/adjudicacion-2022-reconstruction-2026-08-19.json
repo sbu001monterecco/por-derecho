@@ -1,9 +1,11 @@
 {
   "publication_id": "ADJUDICACION-2022-RECONSTRUCTION-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "CI_GREEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "controlling_pr": 509,
+  "merge_sha": "69216d25aaf2be09b5d334279160d5799f2a75c8",
+  "merged_at": "2026-08-19T17:18:36Z",
   "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
   "expected_routes": {
     "es": [
@@ -15,7 +17,8 @@
   },
   "expected_source_files": [
     "operations/ADJUDICACION_2022_RECONSTRUCTION_ACTIVATION_2026-08-19.md",
-    "sitemap-adjudicacion-2022.xml"
+    "sitemap-adjudicacion-2022.xml",
+    ".github/workflows/verify-adjudicacion-2022-live.yml"
   ],
   "source_classes_reviewed": [
     "internal working papers",
@@ -64,10 +67,11 @@
   ],
   "validation": {
     "evidence": [
-      "PR 509 publication, operational and mission-critical integrity run 32280266373: success.",
-      "PR 509 bilingual unitary public-shell and desktop/mobile rendering run 32280266561: success.",
-      "PR 509 supervisory-practice route validation run 32280266563: success.",
-      "PR 509 off-GitHub preservation snapshot run 32280266381: success after adding retry handling for transient GitHub API failures.",
+      "PR 509 publication, operational and mission-critical integrity run 32280549785: success on final head.",
+      "PR 509 bilingual unitary public-shell and desktop/mobile rendering run 32280549923: success on final head.",
+      "PR 509 supervisory-practice route validation run 32280550227: success on final head.",
+      "PR 509 off-GitHub preservation snapshot run 32280549769: success on final head.",
+      "PR 509 merged to main at 69216d25aaf2be09b5d334279160d5799f2a75c8.",
       "The six deed components were independently reconciled to EUR 13,168,082.02 exactly."
     ],
     "publication_integrity": "PASS",
@@ -75,7 +79,8 @@
     "unitary_public_shell": "PASS",
     "bilingual_route_parity": "PASS",
     "desktop_mobile_render": "PASS",
-    "off_github_preservation": "PASS"
+    "off_github_preservation": "PASS",
+    "repository_merge": "PASS"
   },
   "publication_safety": {
     "nullity": "No single universal-nullity claim; consequences are act-specific and right-holder-specific.",
@@ -90,6 +95,6 @@
   },
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "CI_GREEN records validated PR source state only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+    "note": "MERGED records repository publication at PR 509 merge SHA. DEPLOYED and LIVE_VERIFIED require separate public-edge evidence."
   }
 }
