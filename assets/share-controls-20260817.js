@@ -29,7 +29,7 @@
   // existing dossier modules, evidence grammar and route ownership remain unchanged.
   if(script && !d.querySelector('script[data-pd-unitary-public-shell]')){
     const shell=d.createElement('script');
-    shell.src=new URL('unitary-public-shell-20260818.js?v=20260818b',script.src).href;
+    shell.src=new URL('unitary-public-shell-20260818.js?v=20260819a',script.src).href;
     shell.async=false;
     shell.dataset.pdUnitaryPublicShell='true';
     d.head.appendChild(shell);
