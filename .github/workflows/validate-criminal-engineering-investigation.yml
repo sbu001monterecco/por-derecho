@@ -1,18 +1,29 @@
-name: Validate criminal-engineering investigation
+name: Validate criminal-engineering and case information architecture
 
 on:
   pull_request:
     paths:
       - 'es/ingenieria-forense-criminal-sun-park/**'
       - 'en/sun-park-criminal-engineering-investigation/**'
+      - 'es/correcciones-control-versiones/**'
+      - 'en/corrections-version-control/**'
+      - 'es/implementacion-notarial-protocolo-457/**'
+      - 'en/notarial-implementation-protocol-457/**'
+      - 'es/implementacion-registral-finca-por-finca/**'
+      - 'en/land-registry-implementation-property-by-property/**'
+      - 'assets/site.js'
+      - 'assets/case-information-architecture-20260819.js'
       - 'assets/criminal-engineering-investigation-20260819.js'
       - 'assets/reverse-engineering-360-20260819.js'
       - 'assets/data/criminal-engineering-investigation-v1.json'
       - 'scripts/audit_criminal_engineering_repository.py'
       - 'scripts/render_criminal_engineering_investigation.mjs'
       - 'operations/SUN_PARK_CRIMINAL_ENGINEERING_ACTIVATION_2026-08-19.md'
+      - 'operations/CASE_INFORMATION_ARCHITECTURE_UPDATE_2026-08-19.md'
+      - 'archive/THREAD_DELETION_AUDIT_CASE_INFORMATION_ARCHITECTURE_2026-08-19.md'
       - 'publication-manifests/criminal-engineering-investigation-20260819.json'
       - 'sitemap-criminal-engineering.xml'
+      - 'sitemap-case-governance.xml'
       - 'robots.txt'
       - '.github/workflows/validate-criminal-engineering-investigation.yml'
       - '.github/workflows/verify-criminal-engineering-investigation-live.yml'
@@ -21,14 +32,25 @@ on:
     paths:
       - 'es/ingenieria-forense-criminal-sun-park/**'
       - 'en/sun-park-criminal-engineering-investigation/**'
+      - 'es/correcciones-control-versiones/**'
+      - 'en/corrections-version-control/**'
+      - 'es/implementacion-notarial-protocolo-457/**'
+      - 'en/notarial-implementation-protocol-457/**'
+      - 'es/implementacion-registral-finca-por-finca/**'
+      - 'en/land-registry-implementation-property-by-property/**'
+      - 'assets/site.js'
+      - 'assets/case-information-architecture-20260819.js'
       - 'assets/criminal-engineering-investigation-20260819.js'
       - 'assets/reverse-engineering-360-20260819.js'
       - 'assets/data/criminal-engineering-investigation-v1.json'
       - 'scripts/audit_criminal_engineering_repository.py'
       - 'scripts/render_criminal_engineering_investigation.mjs'
       - 'operations/SUN_PARK_CRIMINAL_ENGINEERING_ACTIVATION_2026-08-19.md'
+      - 'operations/CASE_INFORMATION_ARCHITECTURE_UPDATE_2026-08-19.md'
+      - 'archive/THREAD_DELETION_AUDIT_CASE_INFORMATION_ARCHITECTURE_2026-08-19.md'
       - 'publication-manifests/criminal-engineering-investigation-20260819.json'
       - 'sitemap-criminal-engineering.xml'
+      - 'sitemap-case-governance.xml'
       - 'robots.txt'
       - '.github/workflows/validate-criminal-engineering-investigation.yml'
       - '.github/workflows/verify-criminal-engineering-investigation-live.yml'
@@ -43,7 +65,7 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -53,17 +75,39 @@ jobs:
           node-version: '22'
       - name: Syntax, JSON, sitemap and unitary audit
         run: |
+          node --check assets/site.js
+          node --check assets/case-information-architecture-20260819.js
           node --check assets/criminal-engineering-investigation-20260819.js
           node --check assets/reverse-engineering-360-20260819.js
           node --check scripts/render_criminal_engineering_investigation.mjs
           python3 -m json.tool assets/data/criminal-engineering-investigation-v1.json >/dev/null
           python3 -m json.tool publication-manifests/criminal-engineering-investigation-20260819.json >/dev/null
           python3 - <<'PY'
+          import json
           import xml.etree.ElementTree as ET
-          ET.parse('sitemap-criminal-engineering.xml')
-          print('XML OK sitemap-criminal-engineering.xml')
+          from pathlib import Path
+
+          for sitemap in ['sitemap-criminal-engineering.xml', 'sitemap-case-governance.xml']:
+              ET.parse(sitemap)
+              print('XML OK', sitemap)
+
+          data = json.loads(Path('assets/data/criminal-engineering-investigation-v1.json').read_text(encoding='utf-8'))
+          issues = data.get('priority_issues', [])
+          assert len(issues) == 10, f'Expected 10 CE issues, got {len(issues)}'
+          required = {
+              'id','priority','title_es','title_en','status','status_es','status_en',
+              'route_es','route_en','last_reviewed','documented_es','documented_en',
+              'not_proved_es','not_proved_en','strongest_defence_es','strongest_defence_en',
+              'decisive_next_source_es','decisive_next_source_en','counsel_gate','change_log'
+          }
+          for issue in issues:
+              missing = required - set(issue)
+              assert not missing, f"{issue.get('id')} missing {sorted(missing)}"
+          print('CE register OK', len(issues))
           PY
           grep -q 'sitemap-criminal-engineering.xml' robots.txt
+          grep -q 'sitemap-case-governance.xml' robots.txt
+          grep -q 'case-information-architecture-20260819.js' assets/site.js
           mkdir -p artifacts/criminal-engineering-investigation
           python3 scripts/audit_criminal_engineering_repository.py > artifacts/criminal-engineering-investigation/repository-audit.json
           cat artifacts/criminal-engineering-investigation/repository-audit.json
@@ -90,7 +134,7 @@ jobs:
           done
           cat /tmp/psr-http.log
           exit 1
-      - name: Render canonical pages and actor gateways
+      - name: Render canonical pages, Control Room, compact contexts and new routes
         env:
           PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
           PSR_CRIMINAL_ENGINEERING_ARTIFACT_DIR: artifacts/criminal-engineering-investigation
@@ -99,7 +143,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: criminal-engineering-investigation-validation
+          name: criminal-engineering-case-architecture-validation
           path: artifacts/criminal-engineering-investigation
           if-no-files-found: error
           retention-days: 30
