@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: read
+  statuses: write
 
 concurrency:
   group: verify-adjudicacion-2022-live
@@ -24,6 +25,8 @@ jobs:
     timeout-minutes: 8
     steps:
       - name: Poll public GitHub Pages routes
+        id: verify
+        continue-on-error: true
         env:
           SOURCE_SHA: ${{ github.sha }}
           RUN_ID: ${{ github.run_id }}
@@ -32,7 +35,6 @@ jobs:
           import json
           import os
           import time
-          import urllib.error
           import urllib.request
 
           base = "https://sbu001monterecco.github.io/por-derecho"
@@ -124,3 +126,50 @@ jobs:
       - name: Show live-verification evidence
         if: always()
         run: cat /tmp/adjudicacion-2022-live-verification.json || true
+
+      - name: Publish live-verification commit status
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          repository = os.environ["GITHUB_REPOSITORY"]
+          sha = os.environ["SOURCE_SHA"]
+          run_id = os.environ["RUN_ID"]
+          success = os.environ["VERIFY_OUTCOME"] == "success"
+          payload = {
+              "state": "success" if success else "failure",
+              "target_url": f"https://github.com/{repository}/actions/runs/{run_id}",
+              "description": (
+                  "Bilingual 2022 adjudication reconstruction verified live"
+                  if success
+                  else "2022 adjudication reconstruction not verified live"
+              ),
+              "context": "pages-propagation/adjudicacion-2022",
+          }
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{repository}/statuses/{sha}",
+              data=json.dumps(payload).encode("utf-8"),
+              method="POST",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Content-Type": "application/json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "Por-Derecho-adjudicacion-live-verifier/1.0",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print(response.read().decode("utf-8", "replace"))
+          PY
+
+      - name: Fail when public-edge verification did not succeed
+        if: steps.verify.outcome != 'success'
+        run: exit 1
