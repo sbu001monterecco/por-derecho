@@ -1,7 +1,7 @@
 # Adjudicación 2022 — activation record
 
 **Activated:** 2026-08-19  
-**Status:** controlled publication package; primary-source reconstruction active; provenance/cross-link hardening in PR #521  
+**Status:** LIVE_VERIFIED — source-led reconstruction, provenance correction and reciprocal-link layer deployed  
 **Scope:** Concurso 36/2012, CAM offer, 2021 adjudication order, 2022 deed, EUR 400,000 unencumbered-property line, registry and final accounts
 
 ## Purpose
@@ -53,7 +53,7 @@ The January/February 2026 papers appear not to have been filed in their present 
 
 ## 19 August 2026 provenance and site-hardening update
 
-PR #521 adds a bilingual version-control/prior-use panel to the canonical adjudication pages, a distinct prior-use row to the validation tables, publication/correction dates and reciprocal links from the principal ACTÚA, Acosta Matos, RICPE, lender, premises/valuation and procedural-route pages.
+PR #521 added a bilingual version-control/prior-use panel to the canonical adjudication pages, a distinct prior-use row to the validation tables, publication/correction dates and reciprocal links from the principal ACTÚA, Acosta Matos, RICPE, lender, premises/valuation and procedural-route pages.
 
 A repository-wide public-language audit now checks for the principal superseded formulations, including:
 
@@ -65,6 +65,25 @@ A repository-wide public-language audit now checks for the principal superseded 
 - claims that protocol 457 retransferred the unencumbered premises.
 
 The runtime cross-link layer is publication-safe: it publishes no draft, email, recipient, identifier, hash or privileged advice.
+
+### Validation and deployment evidence
+
+- PR #521 head: `a6725adb159f1c89350a51ee40c33307475d3334`.
+- PR #521 merge: `22ecef79e740c6e97625238210cc5ca22f09a844` at 19:26:42 UTC.
+- Provenance validation run `32292641103`, job `96196738491`: **PASS**.
+  - 337 public Spanish/English HTML and runtime-JavaScript files scanned.
+  - Zero stale-language hits.
+  - Both canonical provenance panels and prior-use table rows rendered.
+  - Ten related bilingual routes produced the correct reciprocal link.
+  - Twelve browser assertions passed in total.
+- Publication integrity run `32292641114`: **PASS**.
+- Unitary public-shell and desktop/mobile run `32292641109`: **PASS**.
+- Off-GitHub preservation run `32292640982`: **PASS**.
+- Visual-asset identity run `32292641021`: **PASS**.
+- Public-edge run `32293059286`, job `96198058480`: **PASS**.
+  - GitHub Pages source routes, runtime module, global loader and sitemap returned the required markers after propagation.
+  - Both canonical provenance panels and all ten tested reciprocal-link routes rendered successfully on the public site.
+  - Commit status `pages-propagation/adjudicacion-2022` was published as `success` on merge SHA `22ecef79e740c6e97625238210cc5ca22f09a844`.
 
 ## Outstanding evidence gates
 
