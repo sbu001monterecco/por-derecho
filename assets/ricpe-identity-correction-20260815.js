@@ -18,4 +18,9 @@
   load('ricpe-identity-correction-core-20260815.js?v=20260818a', () => {
     load('ricpe-relationship-network-20260818.js?v=20260818a');
   });
+
+  // Homepage identity/relationship correction and PwC 2016 knowledge checkpoint.
+  // Canonical relationships: Antonio Cogolludo Rojas is Shaila's father;
+  // Francisco Mario Matos Matas and Shaila María Cogolludo Ramos are husband and wife.
+  load('homepage-actor-family-pwc-note-20260819.js?v=20260819a');
 })();
