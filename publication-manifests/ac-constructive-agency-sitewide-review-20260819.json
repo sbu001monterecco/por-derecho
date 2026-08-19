@@ -1,0 +1,69 @@
+{
+  "publication_id": "AC-CONSTRUCTIVE-AGENCY-SITEWIDE-REVIEW-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "publication_type": "repository-wide forensic doctrine review plus bilingual dedicated dossiers and site-wide route-specific module",
+  "controlling_pr": 465,
+  "controlling_proposition": {
+    "es": "Existe una pregunta forense unitaria sobre si las facultades confiadas a la Administración Concursal para LPB dejaron, en algún punto, de servir independientemente al interés de la concursada y empezaron a funcionar como mecanismo de implementación de objetivos de un perímetro privado adverso preexistente y de su posible sucesor económico. Cualquier consecuencia debe determinarse acto por acto.",
+    "en": "There is a unitary forensic question whether powers entrusted to the insolvency administration for LPB ceased, at some point, to serve the debtor/estate independently and began functioning as a mechanism implementing objectives of a pre-existing adverse private perimeter and its possible economic successor. Any consequence must be determined act by act."
+  },
+  "expected_routes": {
+    "es": ["es/administrador-concursal-punto-quiebre-lealtad/index.html"],
+    "en": ["en/insolvency-administrator-loyalty-breakpoint/index.html"]
+  },
+  "expected_source_files": [
+    "archive/AC_LOYALTY_BREAKPOINT_PREDECESSOR_CAM_CONTINUITY_CONTROL_19AUG2026.md",
+    "archive/AC_CONSTRUCTIVE_AGENCY_REPOSITORY_WEBSITE_REVIEW_19AUG2026.md",
+    "assets/data/ac-loyalty-breakpoint-v1.json",
+    "assets/ac-loyalty-breakpoint-20260819.js",
+    "assets/cam-favourable-pattern-20260819.js"
+  ],
+  "reviewed_route_families": [
+    "Community / 2008 predecessor architecture",
+    "Administrador Concursal",
+    "Acosta Matos perimeter",
+    "DP1041 / Article 1535 reserve pathway",
+    "7 June / material control",
+    "Judge / institutional supervision",
+    "Recovery / restitution",
+    "RICPE / RIC / downstream finance",
+    "LPB insolvency / liquidation / adjudication / qualification"
+  ],
+  "model": {
+    "thresholds": ["LOYALTY_BREAKPOINT","CONFLICT_BREAKPOINT","INDEPENDENCE_BREAKPOINT","CONSTRUCTIVE_AGENCY_THRESHOLD"],
+    "evidence_scale": ["L0","L1","L2","L3","L4","L5","L6"],
+    "l5": "functional/de facto adverse-agency hypothesis: evidence of knowing implementation of adverse objectives using administrator powers, without yet proving formal mandate or criminal agreement",
+    "l6": "direct concerted-action evidence: instructions, representation, agreement, consideration, common planning or knowingly coordinated joint action",
+    "power_source_test": "Was a power entrusted to the administrator for LPB/the estate used to produce an outcome the adverse actor could not itself lawfully produce?"
+  },
+  "legal_source_boundary": {
+    "historic": "Ley 22/2003 art.35 is used for historic loyalty/diligence/supervision framing.",
+    "current": "TRLC art.80 is used for current institutional continuity on diligence, insolvency interest, impartiality and independence; it is not retroactively substituted for historic law."
+  },
+  "publication_safety": {
+    "functional_agency": "Forensic analytical label, not asserted standalone Spanish-law doctrine or established formal agency.",
+    "predecessor_to_cam": "Possible economic/adoption continuity is investigated; legal succession is not assumed.",
+    "collusion": "Not established without communications/agreement/common-plan evidence.",
+    "nullity": "No global automatic nullity; consequences are act-specific and right-holder-specific.",
+    "dp1041": "C5 direct causation is limited to AC termination of Cristo's specific formal LPB mandate; the withdrawal instruction/drafting/filing chain remains open.",
+    "downstream": "HNT/MYND/RICPE/RIC/public-support positions are tested for dependency, not invalidated by association."
+  },
+  "p0_evidence": [
+    "Complete AC-Community/Molina/Monte Lanza communications 2012-2018.",
+    "First AC-CAM contact and CAM knowledge of predecessor disputes.",
+    "Community debt/vote/accounting reconciliation and AC treatment.",
+    "Security/access instruction chain.",
+    "DP1041 withdrawal pleading and internal instruction chain.",
+    "Later tanteo/retracto authority/instruction chain.",
+    "Contemporaneous estate-benefit analysis for materially adverse-perimeter-benefiting AC acts.",
+    "Conflict disclosures, abstentions/recusals and judicial-supervision record.",
+    "Actor communication graph around 2017 credit acquisition, June 2018 and 2020-22 adjudication.",
+    "Evidence distinguishing coincidence/deference/negligence from knowing implementation and direct concerted action."
+  ],
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR/source state is distinct from merge, deployment and public-edge verification."
+  }
+}

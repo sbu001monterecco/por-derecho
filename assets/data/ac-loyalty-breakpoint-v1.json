@@ -1,12 +1,56 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "controlDate": "2026-08-19",
   "status": "PUBLIC-READY-WITH-QUALIFICATION",
-  "id": "AC-LOYALTY-BREAKPOINT-PREDECESSOR-CAM",
+  "id": "AC-LOYALTY-CONFLICT-INDEPENDENCE-CONSTRUCTIVE-AGENCY",
   "coreQuestion": {
-    "es": "¿En qué momento, si alguno, dejó la Administración Concursal de actuar como administración leal e independiente de LPB y empezó a avanzar, proteger, adoptar o ejecutar funcionalmente intereses de partes privadas adversas?",
-    "en": "At what point, if any, did the insolvency administration cease acting as a loyal, independent estate office-holder for LPB and begin functionally advancing, protecting, adopting or implementing adverse private-party interests?"
+    "es": "¿En qué momento, si alguno, las facultades confiadas a la Administración Concursal para administrar y proteger a LPB y la masa empezaron a funcionar, en la práctica, como un mecanismo que avanzaba, protegía o ejecutaba los objetivos de un perímetro privado adverso?",
+    "en": "At what point, if any, did powers entrusted to the insolvency administration to administer and protect LPB and the estate begin functioning in practice as a mechanism that advanced, protected or implemented the objectives of an adverse private perimeter?"
   },
+  "terminology": {
+    "internalAnalyticalLabel": "CONSTRUCTIVE_FUNCTIONAL_ADVERSE_AGENCY_HYPOTHESIS",
+    "publicEs": "hipótesis de agencia funcional / de facto a favor del perímetro adverso",
+    "publicEn": "functional / de facto adverse-agency hypothesis",
+    "doctrinalBoundary": "Constructive agency is used as a forensic analytical label, not asserted as a standalone named doctrine of Spanish insolvency law. Any formal agency, representation, conflict, invalidity, liability or criminal consequence requires its own legal and evidential basis."
+  },
+  "legalAnchors": [
+    {
+      "period": "historic Ley Concursal 22/2003",
+      "provision": "Article 35",
+      "controlledPoint": "The insolvency administration had to perform with the diligence of an orderly administrator and a loyal representative, subject to judicial supervision.",
+      "officialSource": "https://www.boe.es/eli/es/l/2003/07/09/22/con/20141001"
+    },
+    {
+      "period": "current TRLC",
+      "provision": "Article 80",
+      "controlledPoint": "Due diligence, efficient action for the interest of the insolvency, and impartiality and independence from the debtor and insolvency creditors/estate.",
+      "officialSource": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4859"
+    },
+    {
+      "period": "current TRLC",
+      "provision": "Articles 94 and 98/100 as applicable to current numbering/version",
+      "controlledPoint": "Liability for unlawful or undiligent acts/omissions causing harm and separation for serious failure of diligence, impartiality or independence are separate legal consequences requiring act-specific analysis.",
+      "officialSource": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4859"
+    }
+  ],
+  "fourThresholds": [
+    {
+      "id": "LOYALTY_BREAKPOINT",
+      "question": "When did conduct, if ever, cease to be reasonably reconcilable with loyal administration of LPB and the estate?"
+    },
+    {
+      "id": "CONFLICT_BREAKPOINT",
+      "question": "When did the administrator know or have reason to recognise that his conduct materially aligned with interests adverse to LPB?"
+    },
+    {
+      "id": "INDEPENDENCE_BREAKPOINT",
+      "question": "When did the circumstances, if ever, require disclosure, abstention, enhanced judicial scrutiny, replacement/separation or another independence safeguard?"
+    },
+    {
+      "id": "CONSTRUCTIVE_AGENCY_THRESHOLD",
+      "question": "When, if ever, did the pattern move beyond adverse effect or conflict into knowing implementation of objectives that the adverse perimeter needed the administrator's debtor-derived powers to achieve?"
+    }
+  ],
   "temporalStages": [
     {
       "id": "PRE_CAM",
@@ -16,20 +60,61 @@
       "limit": "This does not itself prove that the insolvency administrator represented, colluded with or acted on behalf of that perimeter."
     },
     {
+      "id": "AC_PRE_CAM_TEST",
+      "label": "Administrator treatment of predecessor positions",
+      "status": "FORENSIC_RECONSTRUCTION_REQUIRED",
+      "publicSafeFinding": "The review must determine whether the administrator merely managed the predecessor dispute or progressively validated, protected or operationalised positions adverse to LPB, with what estate benefit and what judicial supervision.",
+      "limit": "Adverse outcomes, inaction or reliance on Community material do not alone establish agency or knowing joint action."
+    },
+    {
       "id": "CAM_TRANSITION",
       "label": "CAM arrival / adoption / escalation hypothesis",
       "status": "INVESTIGATIVE_HYPOTHESIS",
       "publicSafeFinding": "Por Derecho alleges that CAM entered a hotel already fractured by a predecessor adverse architecture. The question is whether CAM merely benefited from that history or knowingly adopted, amplified or completed it with support/cooperation from the insolvency administration.",
-      "limit": "Collusion, agency or criminal agreement is not established by recurrence or benefit alone."
+      "limit": "Collusion, agency or criminal agreement is not established by recurrence, succession or benefit alone."
+    },
+    {
+      "id": "DOWNSTREAM_INSTITUTIONALISATION",
+      "label": "Control → liquidation/adjudication → HNT/MYND/finance",
+      "status": "DEPENDENCY_ANALYSIS",
+      "publicSafeFinding": "Later title, operation and financing must be tested for dependency on earlier administrator-controlled acts without assuming automatic downstream invalidity.",
+      "limit": "Each downstream act retains its own title, good-faith, registration, standing, causation and limitation analysis."
     }
   ],
   "loyaltyGrades": [
-    {"grade":"L0","meaning":"No evidence of departure from loyal estate administration"},
-    {"grade":"L1","meaning":"Adverse effect only"},
-    {"grade":"L2","meaning":"Repeated adverse / same-beneficiary effect"},
-    {"grade":"L3","meaning":"Conflict / role-boundary indicia"},
-    {"grade":"L4","meaning":"Strong functional alignment / contradictory estate-interest conduct"},
-    {"grade":"L5","meaning":"Direct evidence of instruction, representation, agreement, undisclosed agency or knowing joint action"}
+    {"grade":"L0","meaning":"Loyal / neutral administration adequately explained by the record"},
+    {"grade":"L1","meaning":"Isolated adverse effect; no alignment inference"},
+    {"grade":"L2","meaning":"Repeated adverse-perimeter / same-beneficiary effect"},
+    {"grade":"L3","meaning":"Conflict / independence warning signs requiring explanation or safeguard analysis"},
+    {"grade":"L4","meaning":"Strong functional alignment: repeated conduct difficult to reconcile with a loyal estate-interest explanation"},
+    {"grade":"L5","meaning":"Constructive / functional adverse-agency hypothesis: evidence supports knowing implementation of adverse-party objectives using administrator powers, without yet proving a formal mandate or criminal agreement"},
+    {"grade":"L6","meaning":"Direct concerted-action evidence: instructions, formal/informal representation, agreement, consideration, common planning or knowingly coordinated joint action"}
+  ],
+  "powerSourceTest": {
+    "question": "Was a power entrusted to the insolvency administrator for LPB/the estate used to produce an outcome an adverse private actor could not itself lawfully produce?",
+    "subquestions": [
+      "What was the source and legal purpose of the administrator's power?",
+      "Which adverse-party problem or obstacle did the exercise of that power solve?",
+      "Whose factual or legal theory was adopted?",
+      "Whose information was relied upon and independently verified?",
+      "Who requested or anticipated the act?",
+      "Who obtained the immediate and downstream benefit?",
+      "What measurable benefit did LPB/the estate receive?",
+      "What neutral or loyal alternative was available?",
+      "Was conflict disclosed and was abstention or enhanced judicial supervision considered?"
+    ]
+  },
+  "whoseProblemTest": [
+    "whose problem did the act solve",
+    "whose legal theory did it adopt",
+    "whose information did it rely upon",
+    "whose objective did it implement",
+    "who requested it",
+    "who could not achieve the result without administrator power",
+    "what LPB received in return",
+    "whether it replicated a predecessor-perimeter objective",
+    "whether CAM later depended on or benefited from it",
+    "whether an independent administrator had a documented estate-interest reason to do the same thing in the same way at that time"
   ],
   "requiredTests": [
     "date and formal power",
@@ -43,6 +128,8 @@
     "later CAM benefit",
     "alternative loyal explanation",
     "conflict disclosure / abstention / supervision",
+    "power-source test",
+    "whose-problem test",
     "act-specific validity/remedy consequence"
   ],
   "retractoTracks": {
@@ -58,8 +145,11 @@
       "CAM did not oppose and DP 1041 ended.",
       "The internal instruction/drafting/filing chain behind withdrawal remains open."
     ],
-    "validityQuestion": "If a material loyalty/conflict breakpoint had already occurred before the AC controlled LPB's legal representation, what is the validity and legal effect of the AC intervention and of any later withdrawal or loss of protection that depended upon that conflicted control?"
+    "powerSourceQuestion": "CAM, as adverse creditor/acquirer, could not itself terminate LPB's lawyer or control LPB's litigation instructions. The administrator possessed debtor-derived powers. Were those powers exercised for a documented LPB/estate interest or functionally to remove an obstacle confronting the adverse perimeter?",
+    "validityQuestion": "If a material loyalty/conflict/independence breakpoint had already occurred before the AC controlled LPB's legal representation, what is the validity and legal effect of the AC intervention and of any later withdrawal or loss of protection that depended upon that conflicted control?"
   },
+  "judicialSupervisionQuestion": "At what point, if any, should the court have treated the administrator's independence itself as a matter requiring verification or enhanced supervision rather than continuing to rely upon administrator verification or judgment?",
+  "downstreamQuestion": "If an upstream administrator-controlled act is later found conflicted, unauthorised, ineffective or otherwise legally defective, which later CAM/HNT/MYND/RICPE/RIC/public-funds positions depend upon that act and which survive on an independent legal basis?",
   "consequenceLadder": [
     "conflict / loss of independence or impartiality",
     "duty breach",
@@ -67,25 +157,44 @@
     "lack/excess of authority",
     "invalidity / ineffectiveness / unenforceability depending on act type",
     "rescission / reversal / correction",
+    "reduced or contested evidential weight where legally relevant",
     "patrimonial liability",
-    "restitution / unjust enrichment",
+    "restitution / unjust enrichment / accounting",
     "material procedural indefension",
+    "restoration of lost procedural or economic position where legally available",
     "criminal-investigative significance where constituent facts are separately supported"
   ],
+  "routeApplications": {
+    "community_2008_predecessor": "Establish the predecessor dispute architecture and identify what was private-party allegation, what became Community act, what the AC knew and what he independently verified.",
+    "administrator": "Primary loyalty/conflict/independence/constructive-agency dossier; score material acts L0-L6 and apply power-source and estate-benefit tests.",
+    "cam_perimeter": "Ask what CAM independently created versus inherited/adopted from the predecessor architecture and which administrator-controlled acts made the transition possible.",
+    "dp1041_art1535": "Test debtor-derived administrator power over LPB counsel and procedural control against estate benefit; preserve the missing withdrawal instruction chain.",
+    "takeover_7june": "Test whether practical control depended on prior Community machinery or administrator authority and what title existed for each finca/right-holder.",
+    "liquidation_adjudication": "Ask whether decisive liquidation/adjudication acts occurred after an independence breakpoint and what act-specific consequence follows if so.",
+    "judge_institutional": "Add judicial-supervision threshold: when should administrator independence/conflict have been independently examined?",
+    "downstream_finance": "Treat HNT/MYND/RICPE/RIC/public support as downstream dependency analysis, not automatic invalidity.",
+    "recovery": "Map nullity/ineffectiveness, restitution, unjust enrichment, accounting, damages and restoration by right-holder and act."
+  },
   "publicationRules": {
     "safe": [
       "loyalty-breakpoint question",
+      "conflict breakpoint",
+      "independence breakpoint",
+      "constructive / functional adverse-agency hypothesis as a forensic label",
       "possible functional alignment",
       "predecessor architecture",
       "adoption / operationalisation hypothesis",
+      "power-source test",
       "act-specific conflict and validity analysis",
       "Por Derecho alleges / asks for documentary testing"
     ],
     "notEstablished": [
-      "the AC was the secret lawyer or agent of Molina-family interests",
+      "constructive agency is a standalone named Spanish insolvency-law doctrine",
+      "the AC was the secret lawyer or formal agent of Molina-family interests",
       "the AC was Acosta Matos's representative",
       "the AC and CAM colluded",
       "all AC acts are null",
+      "the AC personally instructed or filed the DP 1041 withdrawal",
       "the AC personally cancelled the Article 1535 right"
     ]
   },
@@ -99,6 +208,6 @@
     "Estate-benefit analysis for adverse-perimeter-benefiting AC acts",
     "Conflict declarations, abstentions and supervision record",
     "Communication graph around 2017 credit acquisition, June 2018 control and 2020-22 adjudication",
-    "Evidence distinguishing coincidence/deference/negligence from knowing joint action"
+    "Evidence distinguishing coincidence/deference/negligence from knowing implementation and concerted action"
   ]
 }

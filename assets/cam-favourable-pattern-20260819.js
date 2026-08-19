@@ -145,7 +145,7 @@
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-ac-loyalty-breakpoint-loader]')) return;
   const script = document.createElement('script');
-  script.src = new URL('ac-loyalty-breakpoint-20260819.js?v=20260819a', current.src).href;
+  script.src = new URL('ac-loyalty-breakpoint-20260819.js?v=20260819b', current.src).href;
   script.async = false;
   script.dataset.acLoyaltyBreakpointLoader = 'true';
   document.head.appendChild(script);
