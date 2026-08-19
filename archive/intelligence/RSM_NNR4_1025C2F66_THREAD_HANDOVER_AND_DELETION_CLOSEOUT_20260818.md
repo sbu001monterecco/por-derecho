@@ -1,7 +1,7 @@
 # RSM NNR4-1025C2F66 — thread handover and deletion closeout
 
 **Date:** 18 August 2026  
-**Status:** public-safe continuity layer; private-source re-verification remains mandatory  
+**Status:** public-safe continuity layer; **final deletion-safe state confirmed 19 August 2026**; private-source re-verification remains mandatory  
 **Scope:** RSM Spain / legacy San Telmo professional perimeter / Ethics & Independence review / related preservation and cooperation questions
 
 ## Controlling proposition
@@ -147,6 +147,8 @@ The 18 August email softened this appropriately for the holiday period while pre
 7. Any primary evidence confirming or excluding physical office meetings/visits by Acosta Matos actors.
 8. Any later competent-body request to RSM and RSM's response to it.
 
+These remain open evidence questions and are now canonically captured in `ME-064`; they do not create thread-dependency.
+
 ## Public/private firewall
 
 Do not place into public GitHub:
@@ -160,11 +162,11 @@ Do not place into public GitHub:
 
 Private-source recovery should be through Gmail, the RSM ethics portal, controlled file storage or other lawful source systems.
 
-## Thread deletion audit — 18 August 2026
+## Thread deletion audit — final state confirmed 19 August 2026
 
 ### Reusable intelligence preservation
 
-**PASS.** The core objectives, strategy, source boundaries, chronology, correction on DP 1956/2026, preservation categories, public wording and open questions are now preserved outside the originating conversation.
+**PASS.** The core objectives, strategy, source boundaries, chronology, correction on DP 1956/2026, preservation categories, public wording and open questions are preserved outside the originating conversation.
 
 ### Source dependency preservation
 
@@ -176,16 +178,16 @@ Private-source recovery should be through Gmail, the RSM ethics portal, controll
 
 ### Fresh-thread recoverability
 
-**PASS subject to primary-source re-check.** A new thread reading this file plus the ES/EN RSM pages can recover the complete strategy and current status, then re-open Gmail/portal sources for exact wording when needed.
+**PASS subject to primary-source re-check where exact wording matters.** A new thread reading this file plus the ES/EN RSM pages, CR-049, ME-064 and the 19-Aug activation audit can recover the complete strategy and current status, then re-open Gmail/portal sources when needed.
 
 ### Durable repository state
 
-**PASS.** PR **#403**, “Update RSM NNR4 chronology and preserve thread continuity”, was squash-merged into `main` on 18 August 2026. The merged main tree contains the ES/EN RSM page update, this continuity file and the specialist START_HERE pointer. The PR-head **Publication integrity gate** run **32185295080** completed successfully.
+**PASS.** PR **#403**, “Update RSM NNR4 chronology and preserve thread continuity”, was squash-merged into `main` on 18 August 2026; later activation PR **#460** canonicalised the RSM maintenance row, CR-049, ME-064 and route-specific smoke checks. Publication-integrity checks passed.
 
 ### Live deployment verification
 
-**PENDING INDEPENDENT CONFIRMATION.** The source files are merged into the branch that supplies the public site, but this tool session could not independently fetch the production RSM URLs after merge. Do not convert source-on-main into a claim of independently verified live propagation. The next production/live smoke confirmation should close this final gate.
+**PASS.** Production-smoke workflow run **32248862692** completed successfully on 19 August 2026. Job **96055239667** reported `rsm_es=OK` and `rsm_en=OK` and ended `PRODUCTION SMOKE CHECK: PASS`. The live checks required the exact ES markers `NNR4-1025C2F66`, `Perímetro profesional y preservación`, `18 ago 2026`, and EN markers `NNR4-1025C2F66`, `Professional perimeter and preservation`, `18 Aug 2026`. The evidence artifact ID is **9363623087** with SHA-256 **9a467fa13f888e8ffa802958278c6dd2f2592f25d8e9c01c813c6efcf89c3759**. This verification is recorded in `archive/DEPLOYMENT_LOG.md`.
 
 ### Deletion recommendation
 
-The thread is **materially deletion-safe for repository continuity**, with one operational caveat: independent live propagation of the two RSM pages has not yet been confirmed in this session. Exact private correspondence and portal records must remain in their source systems; deletion-safety does not mean those primary sources are reproduced in GitHub. For the strict universal deletion threshold requiring live verification, treat the result as **conditional pass pending the next production verification**.
+**DELETION-SAFE.** The originating RSM thread is no longer necessary for project continuity. Exact private correspondence and portal records must remain in their source systems; deletion-safety does not mean those primary sources are reproduced in GitHub. Remaining evidence gaps are finite, explicitly classified and recoverable through `ME-064` and the named primary-source systems.
