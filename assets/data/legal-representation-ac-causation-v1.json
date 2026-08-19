@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-SAFE-FORENSIC-SEED-NOT-FRONTEND-READY",
+  "canonicalParent": "assets/data/legal-representation-v1.json",
+  "humanControl": "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
+  "scope": "Hostile causation audit of whether Francisco de Borja Rodríguez-Batllori Laffitte, as Administrador Concursal of Luchy Playa Blanca, S.L.U., materially interfered with, destabilised or caused changes in owner-side legal representation from the pre-Concurso period through current counsel.",
+  "method": {
+    "confirmationBiasForbidden": true,
+    "chronologyIsNotCausation": true,
+    "workstreamImpactSeparatedFromExitCausation": true,
+    "objectiveEffectSeparatedFromIntent": true,
+    "privateSourceBoundary": "Underlying private Gmail and Drive material remains in connected source systems. This file preserves public-safe source descriptions, dates, evidential states and analytical consequences only.",
+    "negativeEvidenceRule": "No evidence located is not proof of non-existence or non-occurrence.",
+    "counterfactualQuestion": "Would the engagement probably have ended, narrowed or failed to formalise if the identified AC event had not occurred?"
+  },
+  "causationScale": {
+    "C0": "No identifiable causal connection on the current record.",
+    "C1": "Temporal/background connection only; direct causes point elsewhere.",
+    "C2": "Plausible contributing factor but evidence is incomplete or materially mixed.",
+    "C3": "Materially supported contributing factor to workstream burden, disruption, cost or strategy; not necessarily to exit.",
+    "C4": "Strong evidence of substantial causal contribution to the representation change.",
+    "C5": "Direct contemporaneous evidence that AC conduct caused or materially precipitated the representation change."
+  },
+  "overallFindings": [
+    {
+      "id": "LRAC-OF-001",
+      "proposition": "AC conduct or AC-controlled procedural dependencies repeatedly imposed material burdens, constraints, workarounds or additional complexity on several owner-side lawyers.",
+      "status": "STRONGLY_SUPPORTED",
+      "qualification": "The mechanisms and strength vary by lawyer and matter; professional conflict with the AC is not itself proof of misconduct or improper purpose."
+    },
+    {
+      "id": "LRAC-OF-002",
+      "proposition": "The present record does not support a recurring proposition that Borja caused the succession of lawyers or effectively pushed the principal lawyers away.",
+      "status": "SUPPORTED_BY_COUNTEREVIDENCE",
+      "qualification": "Where departures are contemporaneously explained, fee non-payment, client-lawyer strategy/confidence, or failed replacement continuity usually provide the more direct explanation."
+    },
+    {
+      "id": "LRAC-OF-003",
+      "proposition": "A continuity asymmetry existed: the Administrador Concursal remained institutionally continuous while owner-side legal teams and mandates changed over a prolonged proceeding.",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "qualification": "The asymmetry is descriptively important but does not by itself prove that the AC caused the turnover."
+    },
+    {
+      "id": "LRAC-OF-004",
+      "proposition": "Unpaid or disputed professional fees are a recurring, independently documented attrition factor and must be treated as counterevidence to an AC-caused-exit theory.",
+      "status": "STRONGLY_SUPPORTED",
+      "qualification": "This factor is particularly clear for Garrigues/Cuatrecasas/Daniel Jiménez/Luis Miguel López and other advisers whose activity was conditioned by unpaid invoices or fees."
+    },
+    {
+      "id": "LRAC-OF-005",
+      "proposition": "Direct evidence that Borja deliberately intended to isolate, discourage or push away a lawyer has not been located in the present pass.",
+      "status": "OPEN_NOT_SUPPORTED",
+      "qualification": "Objective impact, knowledge/foreseeability and intent must remain separate propositions."
+    }
+  ],
+  "engagementAssessments": [
+    {
+      "professional": "Garrigues / early 2012 team",
+      "clientMatter": "LPB and connected pre-Concurso / litigation / Bankia work",
+      "acWorkstreamImpact": "C0-OPEN",
+      "exitCausation": "C0",
+      "documentedAlternativeCause": "Contemporaneous client-side fee/value dispute immediately around the transition to new representation.",
+      "acSpecificFinding": "No current source located showing Borja caused the Garrigues transition.",
+      "counterEvidence": "The transition occurred at the birth of the Concurso while the fee/value dispute is directly documented.",
+      "openQuestion": "Recover the exact engagement-end/venia and earliest AC appointment/communication chain."
+    },
+    {
+      "professional": "Juan Tomás Parrilla Suárez",
+      "clientMatter": "LPB / Concurso 36/2012",
+      "acWorkstreamImpact": "C2",
+      "exitCausation": "C0-C1",
+      "documentedAlternativeCause": "Client-initiated substitution framed contemporaneously as mutual loss of confidence; Parrilla accepted the decision as best for both sides.",
+      "acSpecificFinding": "AC involvement is material to the later fee/handover dispute but is not established as the cause of the initial replacement.",
+      "counterEvidence": "The outgoing lawyer expressly accepted the substitution and granted venia.",
+      "openQuestion": "Separate ordinary concursal fee administration from any independently provable interference with handover or successor work."
+    },
+    {
+      "professional": "Cuatrecasas",
+      "clientMatter": "Aweswell / Concurso 36/2012 and connected work",
+      "acWorkstreamImpact": "C2-C3",
+      "exitCausation": "C0",
+      "documentedAlternativeCause": "Formal 26 May 2020 renunciation correspondence expressly attributes inability to continue to non-payment of fees for more than two years.",
+      "acSpecificFinding": "The firm handled repeated AC/liquidation/registry disputes, but its own stated exit reason is financial.",
+      "counterEvidence": "Cuatrecasas granted venia promptly and provided successor handover assistance.",
+      "openQuestion": "Complete individual-lawyer mandate/end-date reconstruction and quantify AC-generated work separately from the cause of renunciation."
+    },
+    {
+      "professional": "Cristo Ayose Suárez Pimentel",
+      "clientMatter": "Parallel multi-matter legal/evidential/criminal work",
+      "acWorkstreamImpact": "C3",
+      "exitCausation": "C0",
+      "documentedAlternativeCause": null,
+      "acSpecificFinding": "Repeated AC-related disputes and evidential work are documented, but Cristo persisted across successive teams.",
+      "counterEvidence": "Long-running continuation is affirmative counterevidence to a universal push-away theory.",
+      "openQuestion": "Map exact client-specific mandates and periods rather than treating his role as one continuous generic engagement."
+    },
+    {
+      "professional": "Daniel Jiménez García / SLJ",
+      "clientMatter": "Aweswell / Concurso 36/2012",
+      "acWorkstreamImpact": "C3",
+      "exitCausation": "C1-C2",
+      "documentedAlternativeCause": "Formal 23 June 2020 resignation identifies strategy divergence, disagreement over control of legal strategy, and unpaid agreed fees.",
+      "acSpecificFinding": "Direct June 2020 friction with the AC is documented, including concern about work/fee negotiations becoming tied to the position of JT/AC and disagreement over who should channel information/questions to the AC.",
+      "counterEvidence": "The lawyer's formal resignation does not identify Borja as a reason for leaving.",
+      "openQuestion": "Determine whether AC friction materially accelerated a resignation already independently supported by strategy and fee causes."
+    },
+    {
+      "professional": "DWF/RCD team including Bernard Afonso, Jordi Albiol and Joshua Fineman",
+      "clientMatter": "Proposed/accepted successor work concerning LPB/Concurso recovery and AC removal",
+      "acWorkstreamImpact": "C1-C2",
+      "exitCausation": "OPEN-C0",
+      "documentedAlternativeCause": "Unknown on the current record.",
+      "acSpecificFinding": "The team operationally accepted the transition, requested venia/information and analysed AC removal and recovery routes, but later correspondence records that formal personation did not occur.",
+      "counterEvidence": "No current handover source attributes the failure to formalise to Borja.",
+      "openQuestion": "Recover retainer/fee/conflict/onboarding/decision correspondence explaining why DWF/RCD did not formally substitute despite active July 2020 work."
+    },
+    {
+      "professional": "Luis Miguel López Gómez / López Castelo",
+      "clientMatter": "LPB / Concurso 36/2012 and appeals",
+      "acWorkstreamImpact": "C3",
+      "exitCausation": "C1-C2",
+      "documentedAlternativeCause": "Repeated renunciation communications focus on years of unpaid work, the failure of replacement lawyers to formally appear, and the need to avoid indefensión.",
+      "acSpecificFinding": "Luis Miguel independently recommended AC removal/liability review and described AC-controlled conditions affecting proposed actions, including swap litigation, but continued acting for years despite these conflicts.",
+      "counterEvidence": "He remained active through 2023 and filed the LPB calificación appeal despite earlier matter-specific/general renunciation communications.",
+      "openQuestion": "Reconstruct each renunciation by matter and determine the precise reason replacement counsel failed to take over."
+    },
+    {
+      "professional": "Javier Sixto and Estefanía Sixto-Seijas / Sixto Abogados",
+      "clientMatter": "Aweswell/LPB and connected Concurso, appellate and recovery work",
+      "acWorkstreamImpact": "C3",
+      "exitCausation": "C0",
+      "documentedAlternativeCause": null,
+      "acSpecificFinding": "The September 2023 LPB swap/power episode is a strong example of objective workstream disruption: the AC's position on power/authority required immediate redesign of standing and filing strategy and created risk of inadmission/dismissal.",
+      "counterEvidence": "Sixto did not withdraw; it adapted, continued, and in 2025-2026 actively litigated separation/removal of the AC, including appeals and oppositions.",
+      "openQuestion": "Quantify added procedural work/cost and separate legitimate fiduciary verification by the AC from any provable overreach."
+    },
+    {
+      "professional": "Carlos Llamas Sanz",
+      "clientMatter": "Current Matkator/ETJ, criminal and connected recovery work",
+      "acWorkstreamImpact": "C1-C2",
+      "exitCausation": "C0",
+      "documentedAlternativeCause": null,
+      "acSpecificFinding": "Current work includes AC-related subject matter, but this pass has not located a direct Borja-to-Carlos interaction establishing interference with Carlos's mandate.",
+      "counterEvidence": "Carlos remains actively engaged and has accepted further matters in 2026.",
+      "openQuestion": "Continue monitoring direct AC interactions and any practical effect on current filings or access to information."
+    },
+    {
+      "professional": "Armando L. Betancor",
+      "clientMatter": "Specialist/legal support around late-2018 and later work",
+      "acWorkstreamImpact": "OPEN",
+      "exitCausation": "C0",
+      "documentedAlternativeCause": "Contemporaneous correspondence directly links willingness/capacity to continue to unpaid invoices.",
+      "acSpecificFinding": "No current evidence attributes reduced involvement to Borja.",
+      "counterEvidence": "Direct fee explanation.",
+      "openQuestion": "Classify whether this was a retained engagement, specialist consultation or matter-specific support."
+    }
+  ],
+  "materialEvents": [
+    {
+      "id": "LRAC-EVT-2020-001",
+      "dateWindow": "2020-06-12/2020-06-23",
+      "actors": ["Daniel Jiménez García", "Juan Tomás Parrilla", "Administrador Concursal"],
+      "event": "Fee/handover negotiations and direct AC-lawyer friction during Aweswell/LPB representation transition.",
+      "effect": "Added pressure and professional disagreement; Daniel objected to dependence of his fee position on AC/JT negotiations.",
+      "exitLink": "BACKGROUND_CONTRIBUTOR_ONLY_ON_CURRENT_RECORD",
+      "strongestDefence": "The AC was managing matters arising within a concurso and enforcing role boundaries; Daniel's formal resignation identifies independent strategy and payment causes."
+    },
+    {
+      "id": "LRAC-EVT-2023-001",
+      "dateWindow": "2023-09",
+      "actors": ["Javier Sixto", "Estefanía Sixto-Seijas", "Administrador Concursal"],
+      "event": "LPB swap litigation power/authority dispute.",
+      "effect": "Sixto had to redesign standing/filing strategy and address risk that the action could fail for lack of debtor authority/power.",
+      "exitLink": "NONE",
+      "strongestDefence": "The AC was entitled or obliged to verify that an action for the debtor matched the previously authorised/accepted claim and was in the estate's interest."
+    },
+    {
+      "id": "LRAC-EVT-2025-2026-001",
+      "dateWindow": "2025-2026",
+      "actors": ["Javier Sixto", "Estefanía Sixto-Seijas", "Administrador Concursal"],
+      "event": "Active adversarial proceedings concerning separation/removal of the AC and related appellate steps.",
+      "effect": "Significant procedural workload and direct opposition.",
+      "exitLink": "NONE_CURRENT_COUNSEL_CONTINUES",
+      "strongestDefence": "Adversarial opposition to removal is an ordinary exercise of procedural rights and does not establish interference with counsel."
+    }
+  ],
+  "patternTests": {
+    "recurringInformationOrAuthorityDependency": "SUPPORTED",
+    "recurringExtraProceduralWork": "SUPPORTED",
+    "recurringProfessionalConflictWithAC": "SUPPORTED_WITH_LIMITATION",
+    "recurringACCausedLawyerExit": "NOT_SUPPORTED_ON_CURRENT_RECORD",
+    "deliberateIsolationOrPushAway": "NOT_SUPPORTED_ON_CURRENT_RECORD",
+    "ownerSideKnowledgeContinuityLoss": "SUPPORTED_WITH_MIXED_CAUSATION",
+    "unpaidFeesAsRecurringAttritionFactor": "STRONGLY_SUPPORTED"
+  },
+  "safeCurrentConclusion": "Across several independent legal teams, the current record supports treating AC-controlled procedural and authority dependencies as a recurring material burden on owner-side representation. It does not presently support treating Borja as a recurring cause of lawyers leaving. Where exit reasons are documented, fee non-payment, client-lawyer strategy/confidence issues and failed replacement continuity provide more direct explanations. The intent hypothesis remains unproved.",
+  "unsafeCurrentConclusion": "Borja pushed successive lawyers away.",
+  "publicationGate": {
+    "publishAsFrontendClaimNow": false,
+    "reason": "The distinction between recurring workstream constraint and actual exit causation is material. Public wording should not imply that AC conduct caused lawyer turnover unless future actor-specific evidence materially upgrades the causation grades.",
+    "conditionsForUpgrade": [
+      "Recover direct contemporaneous lawyer statements tying resignation/replacement to specific AC conduct.",
+      "Recover DWF/RCD non-personation decision record.",
+      "Complete lawyer-by-lawyer engagement, billing, venia and handover files.",
+      "Quantify the added work/cost attributable to specific AC acts while testing legitimate alternative explanations.",
+      "Separate objective effect, AC knowledge/foreseeability and intent."
+    ]
+  }
+}
