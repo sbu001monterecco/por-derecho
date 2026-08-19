@@ -1,0 +1,68 @@
+[
+  {
+    "id": "INS-PRINCIPAL-MORTGAGE",
+    "name": "Principal mortgage facility / security package",
+    "instrument_type": "asset_backed_credit",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "open_fields": ["Native agreement and amendments", "Complete payment/account ledger", "Acceleration basis", "Balance at each transfer", "Extinction/satisfaction reconciliation"]
+  },
+  {
+    "id": "INS-SECOND-MORTGAGE-850K",
+    "name": "Approximately €850,000 mortgage/refinancing facility",
+    "instrument_type": "asset_backed_credit",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
+    "evidence_status": "documented_party_statement",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "open_fields": ["2010 refinancing package", "Payment settlements", "Linked security and pledged funds", "Balance at each transfer"]
+  },
+  {
+    "id": "INS-SWAP",
+    "name": "SWAP / financial-risk product",
+    "instrument_type": "financial_product",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA"],
+    "evidence_status": "contested",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "open_fields": ["Origination and disclosure", "Connection to refinancing/security package", "Transfer or retention at each stage", "Valencia litigation outcome"]
+  },
+  {
+    "id": "INS-PLEDGED-DEPOSIT",
+    "name": "Pledged deposit / pledged funds",
+    "instrument_type": "accessory_security_or_payment_source",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA"],
+    "evidence_status": "contested",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE"],
+    "open_fields": ["Amount", "Application", "Release", "Effect on claimed balances"]
+  },
+  {
+    "id": "INS-CONCURSAL-CREDIT",
+    "name": "Credit recognised and later substituted in Concurso 36/2012",
+    "instrument_type": "insolvency_claim",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "open_fields": ["Loan-by-loan reconciliation", "Ordinary/default interest", "Costs", "Corrections", "Sobrante/residual"]
+  },
+  {
+    "id": "INS-SUN-PARK-ECONOMIC-UNIT",
+    "name": "Sun Park hotel property/business economic unit",
+    "instrument_type": "asset_and_business_perimeter",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-CAM", "ACT-HNT"],
+    "evidence_status": "contested",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BORME-2022-CAM-HNT-SEGREGATION"],
+    "open_fields": ["Exact properties and third-party units", "Common elements", "Operating rights", "Licences", "Income", "Liabilities and contingencies"]
+  }
+]

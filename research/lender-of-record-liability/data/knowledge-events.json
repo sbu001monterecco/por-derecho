@@ -1,0 +1,86 @@
+[
+  {
+    "id": "KN-2015-04-29-HAYA-REFINANCING",
+    "date": "2015-04-29",
+    "actor_refs": ["ACT-HAYA", "ACT-PH122", "ACT-CERBERUS-PERIMETER"],
+    "knowledge_topic": "PH122-held Luchy loans and active refinancing/workout proposal",
+    "directly_establishes": "A Haya portfolio manager requested written transaction details after a same-day Cerberus discussion and identified PH122 as holder.",
+    "does_not_establish": "The exact mandate, committee authority, legal responsibility or eventual causal effect.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2015-04-29-HAYA-MERIDIAN"],
+    "later_conduct_refs": ["CD-2016-05-18-PROPOSAL-REJECTED"]
+  },
+  {
+    "id": "KN-2016-05-18-HAYA-REJECTION",
+    "date": "2016-05-18",
+    "actor_refs": ["ACT-HAYA", "ACT-PH122"],
+    "knowledge_topic": "Refinancing/settlement proposal and creditor decision",
+    "directly_establishes": "Haya communicated that the creditor rejected the proposal.",
+    "does_not_establish": "Who made the decision, the reasons, compliance with any duty, or resulting damages.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2016-05-18-HAYA-REJECTION"],
+    "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2017-05-03-PRICE-REQUEST",
+    "date": "2017-05-03",
+    "actor_refs": ["ACT-LPB", "ACT-SAREB", "ACT-PH122"],
+    "knowledge_topic": "Request for SAREB-to-PH122 agreement and price under Article 1535 theory",
+    "directly_establishes": "LPB sought judicial access to the sale agreement and price, stating the legal basis it intended to test.",
+    "does_not_establish": "That the credit satisfied Article 1535, that the price created an entitlement, or that any party acted unlawfully.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE"],
+    "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2017-05-12-HAYA-THREE-CREDITS",
+    "date": "2017-05-12",
+    "actor_refs": ["ACT-HAYA", "ACT-PH122", "ACT-LPB"],
+    "knowledge_topic": "SWAP, two mortgages, proposed convenio and viability/refinancing materials",
+    "directly_establishes": "The servicing/interlocutor channel was sent a connected description of the exposures and workout materials.",
+    "does_not_establish": "Acceptance of the figures, legal merits, approval of the workout or causation of later failure.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2017-12-06-CAM-DEED-PRICE",
+    "date": "2017-12-06",
+    "actor_refs": ["ACT-CAM", "ACT-PH122", "ACT-LPB"],
+    "knowledge_topic": "Prior dispute, assignment, deed/price request and preservation of rights",
+    "directly_establishes": "LPB formally requested the deed, price and payment information after learning of the assignment.",
+    "does_not_establish": "Final non-production, concealment, technical litigious-credit status or invalidity.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-LPB-2017-12-06-DEED-PRICE-DEMAND"],
+    "later_conduct_refs": ["CD-2018-01-15-CAM-DACION", "CD-2018-02-15-CAM-RECOGNISED"]
+  },
+  {
+    "id": "KN-2018-01-15-CAM-OWN-PROPOSAL",
+    "date": "2018-01-15",
+    "actor_refs": ["ACT-CAM", "ACT-LPB"],
+    "knowledge_topic": "Debt, valuation and proposed debt-to-asset/dación architecture",
+    "directly_establishes": "CAM participated directly in a proposal using the acquired creditor position and valuation architecture.",
+    "does_not_establish": "Pacto comisorio, improper valuation, bad faith, illegality or recoverable loss.",
+    "evidence_status": "verified_primary",
+    "publication": "privilege_review",
+    "source_refs": ["SRC-CAM-2018-01-DACION-PROPOSAL"],
+    "later_conduct_refs": ["CD-2018-02-15-CAM-RECOGNISED"]
+  },
+  {
+    "id": "KN-2022-CAM-HNT-SEGREGATION",
+    "date": "2022-11-16",
+    "actor_refs": ["ACT-CAM", "ACT-HNT"],
+    "knowledge_topic": "Transfer of the Sun Park economic unit by universal succession",
+    "directly_establishes": "The official notice described the corporate operation and universal-succession mechanism.",
+    "does_not_establish": "Which disputed or contingent liabilities were transferred, retained or shared.",
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BORME-2022-CAM-HNT-SEGREGATION"],
+    "later_conduct_refs": []
+  }
+]

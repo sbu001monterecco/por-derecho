@@ -21,3 +21,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-community-govern
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-reverse-engineering-360.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-adjudicacion-2022.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-audiencia-cuentas.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-lender-liability.xml
