@@ -13,9 +13,9 @@ The first saturation pass contains:
 - **92 natural-person records**
 - **50 legal-entity / institution records**
 - **12 proceeding records**
-- **32 `LOCKED_CANONICAL` person records**
-- **25 `LOCKED_MINIMUM_DATE` person records**
-- **4 open person identities**
+- **28 `LOCKED_CANONICAL` person records**
+- **23 `LOCKED_MINIMUM_DATE` person records**
+- **3 open person identities**
 - continuing provisional records that must be refined rather than guessed
 
 This is a living register, but it is not a loose notebook. Changes require evidence, classification and explicit supersession.
