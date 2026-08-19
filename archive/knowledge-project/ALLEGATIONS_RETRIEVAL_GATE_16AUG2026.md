@@ -1,7 +1,7 @@
 # ALLEGATIONS RETRIEVAL GATE — Project Sun Rock / Por Derecho
 
 **Date:** 16 August 2026  
-**Updated:** 18 August 2026  
+**Updated:** 19 August 2026  
 **Status:** mandatory routing control for allegation-, complaint-, criminal-theory-, accountability- and website-update work.
 
 ## Purpose
@@ -93,7 +93,7 @@ Use the crosswalk and, where relevant, the DP1956 correction overlay, force/auth
 
 Treat these as routing aliases into the crosswalk, DP1956 correction overlay, source digest and, where applicable, the force/authority or five-source ledger:
 
-`querella` · `AN 2023` · `Audiencia Nacional` · `DP 91/2023` · `Rollo 120/2024` · `Auto 119/2024` · `Casación 1867/2024` · `DP 1901/2026` · `DP1901` · `Control 21` · `NEXUS 36` · `DP 1956/2026` · `DP1956` · `Control 22` · `sobreseimiento provisional` · `reapertura` · `reopening` · `Control 24` · `Administrador Concursal` · `Borja` · `Acosta Matos` · `CAM` · `PH122` · `Promontoria` · `Community debt` · `Comunidad` · `OB REM` · `400000` · `350000` · `ACTUA` · `Gesvalt` · `RICPE` · `RPE` · `OLAF` · `FTI rescue` · `Meeting Point SEPI` · `triple dipping` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Pink Canary` · `Monterecco Sun Park SL` · `27ENE2026` · `continuum` · `estafa procesal` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting` · `prevaricación` · `administración desleal` · `cohecho` · `organización criminal` · `force` · `forced possession` · `clandestine possession` · `keys` · `security` · `locks` · `extraconcursal` · `overreach` · `authority laundering` · `authority recycling` · `circular self-legitimation` · `instrumentalisation` · `non-convalidation` · `no convalidación` · `24-Oct-2019` · `24-Feb-2021` · `12-May-2021`.
+`querella` · `AN 2023` · `Audiencia Nacional` · `DP 91/2023` · `Rollo 120/2024` · `Auto 119/2024` · `Casación 1867/2024` · `DP 1901/2026` · `DP1901` · `Control 21` · `NEXUS 36` · `DP 1956/2026` · `DP1956` · `Control 22` · `sobreseimiento provisional` · `reapertura` · `reopening` · `Control 24` · `Administrador Concursal` · `Borja` · `Acosta Matos` · `CAM` · `PH122` · `Promontoria` · `Community debt` · `Comunidad` · `OB REM` · `400000` · `350000` · `ACTUA` · `Gesvalt` · `RICPE` · `RPE` · `OLAF` · `FTI rescue` · `Meeting Point SEPI` · `triple dipping` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Pink Canary` · `Monterecco Sun Park SL` · `27ENE2026` · `continuum` · `estafa procesal` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting` · `prevaricación` · `administración desleal` · `cohecho` · `organización criminal` · `force` · `forced possession` · `clandestine possession` · `keys` · `security` · `locks` · `extraconcursal` · `overreach` · `authority laundering` · `authority recycling` · `circular self-legitimation` · `instrumentalisation` · `non-convalidation` · `no convalidación` · `24-Oct-2019` · `24-Feb-2021` · `12-May-2021` · `Carlos Saavedra` · `PwC Canarias` · `PwC Tenerife` · `11JUN2016` · `26ABR2016` · `FMMM` · `Francisco Mario Matos Matas` · `Paco Matos` · `Cox` · `Thompson` · `former client` · `information barrier`.
 
 ## Current corrections that must accompany the allegation architecture
 
@@ -136,3 +136,19 @@ For the Pink continuum and OLAF/public-funds theories, the same pattern applies 
 ## Continuity test
 
 A Project Sun Rock thread touching these subjects is not deletion-safe if a fresh thread could miss this routing layer and therefore reconstruct the allegation history from isolated complaints or old prose. `CHATGPT_START_HERE.md` already routes allegation/criminal-theory work through this gate; this file now routes DP1956 status/reopening work through the 18-Aug correction overlay, routes 2017–2018 force/possession/overreach work onward to the dedicated canonical ledger and routes the five-source non-convalidation/Pink/OLAF source family to its 17-Aug canonical ingest.
+
+---
+
+## MANDATORY EXTRA ROUTE — PwC / Carlos Saavedra / 2016 Sun Park prior knowledge and later CAM-RICPE convergence
+
+**Added 19 August 2026.** Any task, search, filing analysis, website edit or actor-responsibility work touching **Carlos Saavedra Rodríguez de Palacio, PwC Canarias/Tenerife, Landwell-PwC, Miguel Hernández Lorenzo, Elena Santos Ramos, Alejandro Perera González, the 26-Apr-2016 Junta, the 11-Jun-2016 meeting, Francisco Mario Matos Matas/FMMM/Paco Matos, Juan Carlos Prieto Puente, Cox/Thompson/private Sun Park units, former-client conflict, PwC information barriers, CAM/RICPE/HNT/MYND or the use of Sun Park as a RIC/public-funds investment platform** must also open by direct path:
+
+`archive/knowledge-project/PWC_CARLOS_SAAVEDRA_2016_SUN_PARK_UNITARY_EVIDENCE_GATE_19AUG2026.md`
+
+Do this even if GitHub search does not return the file.
+
+The controlling 2016 proposition is a **knowledge/notice proposition**, not a culpability finding: the surviving record establishes detailed professional knowledge by Carlos/PwC of Sun Park's ownership, private-unit, exploitation, Community, accounting, debt, voting, access, insolvency and governance architecture. The later question is what mandates, information access, conflict checks, information barriers, work product and transaction-level actions actually connected that prior knowledge to any later Acosta Matos/RICPE/Sun Park engagement.
+
+Future searches must **not reverse-engineer guilt**. They must reverse-engineer the evidence required to prove or disprove, person-by-person and PwC-entity-by-PwC-entity: `capacity/duty → actual knowledge/access → later mandate/action → same-asset recognition → use/adoption of earlier information → representation/certification → benefit/consequence → causation/materiality → legally relevant intent → strongest defence`.
+
+The Project allegation that the minority/dissident Community apparatus later became a bridge into the CAM/RICPE structure, that private units were unlawfully displaced, or that downstream RIC/FEDER/regional-incentive finance rested on an illicit foundation remains an **allegation / causal hypothesis until the authority, finca-title, mandate and programme-dependency bridges are separately proved**. In particular, do not state that all PwC-represented units were fraudulently conveyed to CAM unless each deed/registry/authority chain establishes the transfer and the criminal characterisation is independently supported.
