@@ -20,7 +20,9 @@ This file exists so a fresh ChatGPT thread or reviewer can recover the intellige
 6. `archive/knowledge-project/PWC_CARLOS_PENAL_INSTRUCTION_LATER_ACOSTA_RICPE_CONFLICT_CONGRUENCE_GATE_19AUG2026.md`
    - former-client/conflict-congruence bridge and prohibited overstatement rules.
 7. `archive/knowledge-project/RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md`
-   - full page-level source control for the 11 Nov 2020 RICPE investor webinar and the separate 30 Nov 2021 San Telmo #UnCaféenSanTelmo event; identifies Eduardo Sánchez as the San Telmo partner interviewing Enrique Guerra and sets mandatory no-imputation boundaries.
+   - page-level source control for the 11 Nov 2020 RICPE investor webinar and the 30 Nov 2021 San Telmo #UnCaféenSanTelmo event.
+8. `archive/knowledge-project/RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`
+   - mandatory Source-B correction/expansion from the full 85-page scan: correct video URL; Eduardo Sánchez's contemporaneous `el despacho` client-introduction statement; Acosta Matos/project familiarity; stronger San Telmo↔RICPE connection; and exact no-imputation boundaries. Read this before relying on the older `public professional proximity` wording.
 
 ## Canonical 2016 PwC chronology
 - 11 June 2016: substantive working meeting on Sun Park / Community / ownership / exploitation / debt / governance / insolvency context.
@@ -44,16 +46,20 @@ Always separate four buckets:
 
 Downstream tests include disputed Community debt, governance/access, liquidation, third-party responsibility, alternative causation and the later calificación position.
 
-## RICPE / PwC control-node chronology
+## RICPE / PwC / San Telmo control-node chronology
 - 2016: PwC/Carlos and other PwC professionals have asset-specific Sun Park knowledge, including specific private owners/units and Community/control issues.
 - 2019: a PwC entity appears in RICPE statutory-audit history. Corporate audit is not, by itself, Sun Park project/title due diligence.
 - 11 November 2020: RICPE investor webinar presents the Sun Park/CAM renovation project at approximately €12m. Enrique Guerra publicly attributes legal/fiscal due diligence of the company and especially the project to Pricewaterhouse; separately he describes an approval/control sequence involving the investment department, external Intermoney risk control, fiscal/tax material, DG recommendation and Board decision. José Daniel Acosta Matos advances an ownership/free-of-charges narrative. These are source-authored statements requiring independent reconciliation, not automatically verified title or adviser mandate.
 - 2021: internal RICPE certification describes a fragmented ownership reality; test when each control actor knew this and what correction, qualification, disclosure or Board action followed.
-- 30 November 2021: San Telmo Abogados y Economistas hosts/promotes `#UnCaféenSanTelmo` with RICPE Director General Enrique Guerra interviewed by **San Telmo partner Eduardo Sánchez**. Surviving screenshots show discussion of a Lanzarote complex described as `abandonado` and an asset described as `súper codiciado`. Full context remains required before broader quotation.
+- 30 November 2021: San Telmo Abogados y Economistas hosts `Enrique Guerra, en #UnCaféenSanTelmo` with RICPE Director General Enrique Guerra and San Telmo partner **Eduardo Sánchez**. The full 85-page scan materially strengthens the relationship: while visibly speaking, Eduardo states in substance that `nosotros en el despacho ... metimos unos cuantos clientes` into the first investment under discussion, then discusses investment security/promoters including Acosta Matos and asks Guerra about the live RICPE project pipeline. Guerra responds with detailed project, Acosta Matos, Lanzarote, judicial-problem, administrative-report and funding discussion. The exact legal character of San Telmo's investor/client role remains to be produced.
 - Later: public/company records show further Carlos/PwC professional convergence within the RICPE / Grupo Acosta Matos ecosystem in other contexts. This creates a former-client/conflict/information-governance question; it does not by itself prove misconduct.
 
 ### Mandatory San Telmo boundary
-The 30 Nov 2021 public event proves a later San Telmo/RICPE professional-media connection involving Eduardo Sánchez. It does **not** prove that Eduardo worked on Concurso 36/2012, that he shared the Administrador Concursal's knowledge, that the AC transferred information to him, that San Telmo had a RICPE/CAM/Sun Park mandate, or that common firm affiliation establishes coordination or wrongdoing. `Same firm ≠ shared knowledge. Public co-presentation ≠ mandate.`
+The 30 Nov 2021 source proves more than a later San Telmo/RICPE media connection: it contains Eduardo Sánchez's contemporaneous statement that `el despacho` put several clients into an earlier RICPE investment. Controlled description: **San Telmo/RICPE client-investor-introduction connection stated by Eduardo, exact mandate/referral/regulatory role unproved.**
+
+It does **not** prove that Eduardo worked on Concurso 36/2012, that he shared the Administrador Concursal's knowledge, that the AC transferred information to him, that San Telmo formally represented RICPE/CAM/Sun Park, that the clients invested in Sun Park specifically, or that any activity was unlawful. `Same firm ≠ shared knowledge. Client introduction ≠ proved Sun Park mandate. Professional connection ≠ wrongdoing.`
+
+A separate high-value source question arises from the approximately 10:09–10:31 transcript sequence referring to Lanzarote, judicial problems and a project that the auto-transcript renders as lacking property/title. Do not attribute that passage specifically to Sun Park until native audio and project-by-project reconciliation establish identity.
 
 ## Public PwC / Carlos pages
 Canonical EN root:
@@ -82,7 +88,11 @@ The page must treat PwC as a prior-knowledge and professional-control node, whil
 - former-client/Carlos knowledge;
 - PwC legal entities and teams.
 
-Detailed webinar claims must be checked against `RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md` before publication.
+Detailed webinar claims must be checked against both:
+- `RICPE_SAN_TELMO_WEBINARS_CONTROL_19AUG2026.md`; and
+- `RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`.
+
+For Source B, the addendum controls where it conflicts with or materially strengthens the earlier description.
 
 ## Homepage actor cluster — canonical identity / relationship rules
 - Francisco Mario Matos Matas (FMMM) — husband of Shaila María Cogolludo Ramos.
@@ -103,9 +113,9 @@ The homepage PwC note is visually attached to the FMMM / Antonio / Shaila cluste
 ## San Telmo professional-layer visual rule
 For future expansion of the five-actor visualization, San Telmo is a separate professional/insolvency layer rather than actors 6 and 7 in the same category:
 - **Francisco de Borja Rodríguez-Batllori Laffitte** — Administrador Concursal / insolvency and court-facing control node.
-- **Eduardo Sánchez** — San Telmo partner / 30 Nov 2021 public interviewer of RICPE DG Enrique Guerra / professional-proximity node.
+- **Eduardo Sánchez** — San Telmo partner / contemporaneous RICPE client-investor-introduction connection stated in the 30 Nov 2021 webinar / interviewer and direct counterparty of RICPE DG Enrique Guerra / professional and transaction-proximity node.
 
-The cards must not imply equal functions or shared knowledge. The connecting question is whether there was an actual mandate or information bridge; it is not assumed.
+The cards must not imply equal functions or shared knowledge. The connecting investigation asks whether an actual San Telmo client/referral/matter relationship with RICPE investors, RICPE, CAM/Acosta Matos or relevant projects overlapped institutionally or informationally with the insolvency/AC perimeter. That overlap is not assumed.
 
 ## Front-end modules created in this workstream
 - `assets/pwc-penal-route-dominant-20260819.js`
@@ -134,9 +144,9 @@ Classify propositions as one of:
 Right of reply and equivalent-prominence correction remain mandatory.
 
 ## Core connectivity map
-`2011–2018 Community / control structure` → `2016 PwC contemporaneous knowledge + penal-route instruction` → `confirmed PwC–AC contact` → `later concurso / calificación decisions` → `11 Nov 2020 RICPE investor narrative + professional-control architecture` → `2021 fragmented title record` → `30 Nov 2021 San Telmo / Enrique Guerra / Eduardo Sánchez public event` → `2022 control/adjudication/continuity` → `later Grupo Acosta Matos / HNT / MYND and PwC/Carlos professional convergence`.
+`2011–2018 Community / control structure` → `2016 PwC contemporaneous knowledge + penal-route instruction` → `confirmed PwC–AC contact` → `later concurso / calificación decisions` → `11 Nov 2020 RICPE investor narrative + professional-control architecture` → `2021 fragmented title record` → `30 Nov 2021 San Telmo / Eduardo Sánchez client-introduction statement + Enrique Guerra detailed RICPE project discussion` → `2022 control/adjudication/continuity` → `later Grupo Acosta Matos / HNT / MYND and PwC/Carlos professional convergence`.
 
 This is a documentary-reconciliation framework. It does not itself establish conspiracy, common criminal purpose, professional breach or causation.
 
 ## Fresh-thread operating instruction
-A new ChatGPT thread working on PwC, the AC, RICPE, San Telmo, Eduardo Sánchez, calificación, FMMM, Antonio Cogolludo, Shaila Cogolludo, José Daniel Acosta Matos or Laura Patricia Acosta Matos should read this file first, then the seven read-first controls above, then the relevant canonical public pages. Do not recreate the chronology from memory when these repository controls are available.
+A new ChatGPT thread working on PwC, the AC, RICPE, San Telmo, Eduardo Sánchez, Enrique Guerra, calificación, FMMM, Antonio Cogolludo, Shaila Cogolludo, José Daniel Acosta Matos or Laura Patricia Acosta Matos should read this file first, then the eight read-first controls above, then the relevant canonical public pages. Do not recreate the chronology from memory when these repository controls are available.
