@@ -1,22 +1,50 @@
-# Homepage actor identity and relationship control — 19 Aug 2026
+# Homepage actor identity, relationship and chronology control — 19 Aug 2026
 
 ## Canonical identity / relationship rules
 
-These rules are authoritative for future Por Derecho public copy, visual modules and internal prompts unless superseded by stronger primary evidence.
+These rules are authoritative for future Por Derecho public copy, visual modules and internal prompts unless superseded by stronger primary evidence through the canonical supersession process.
 
 - **Francisco Mario Matos Matas (FMMM)** — husband of **Shaila María Cogolludo Ramos**.
 - **Shaila María Cogolludo Ramos** — wife of **Francisco Mario Matos Matas** and daughter of **Antonio Cogolludo Rojas**.
 - **Antonio Cogolludo Rojas** — father of **Shaila María Cogolludo Ramos**.
+- **Asunción Aizpurúa Sánchez** — canonical expansion of `AAS`.
 - **Laura Patricia Acosta Matos** — use full name on first public mention; thereafter `Laura Acosta Matos` or `Laura` is preferred. Do not shorten her to `Patricia` as the default public name.
-- Do **not** use the nickname `Tuco` for Antonio Cogolludo Rojas. No evidential basis has been established for that nickname.
+- Do **not** use the nickname `Tuco` for Antonio Cogolludo Rojas.
 
-## Homepage chronology labels
+## Source-led chronology locks
 
-- FMMM: `2011 → at least 2022 documented` / `2011 → al menos 2022 documentado`.
-- Antonio Cogolludo: `2018 → later documented business-perimeter continuity` / equivalent Spanish wording. Do not imply that 2018 was the end of his relevance.
-- Shaila Cogolludo: `2017 → later documented business-perimeter continuity` / equivalent Spanish wording. Do not imply that 2020 was the end of her relevance.
-- José Daniel Acosta Matos: `2017–2018 entry into perimeter → 2022 control → later continuity`.
-- Laura Patricia Acosta Matos: `2017–2018 legal/insolvency and access role → 2022 CAM representation → later continuity`.
+The earlier homepage chronology was too late for Antonio and Shaila. This section supersedes it.
+
+- **FMMM:** Community Administrator by **22 Jun 2011** → at least 2022 documented.
+  - Source: 22 Jun 2011 Community act expressly identifies him as Administrator.
+  - Status: `LOCKED_MINIMUM_DATE`.
+- **Shaila:** Pamanil / Community communications role by **8 Apr 2014** → later continuity.
+  - Source: Pamanil email to Community owners, on President Asunción's instructions, signed `Francisco Mario Matos / Shaila Cogolludo / PAMANIL S.L.`
+  - Status: `LOCKED_MINIMUM_DATE`.
+- **Antonio:** Sun Park Community / Pamanil role by **10 Apr 2014** → later continuity.
+  - Source: notarial Community record identifies him as representative of Cristina Molina Petit; contemporaneous source family places him in the Pamanil/FMMM working perimeter.
+  - Status: `LOCKED_MINIMUM_DATE`.
+- **José Daniel Acosta Matos:** 2017–2018 entry into Acosta Matos/Sun Park perimeter → 2022 control → later continuity.
+- **Laura Patricia Acosta Matos:** 2017–2018 legal/insolvency and access role → 2022 CAM representation → later continuity.
+
+A locked minimum date proves involvement **no later than** the date. It may move earlier when an older primary source is found; it may not move later because of a later summary.
+
+## Superseded labels
+
+- Antonio: `2018 → later documented business-perimeter continuity` — `SUPERSEDED`.
+- Shaila: `2017 → later documented business-perimeter continuity` — `SUPERSEDED`.
+- FMMM: generic `2011` remains directionally correct but is made precise as `Community Administrator by 22 Jun 2011`.
+
+## Anti-regression rule
+
+No homepage card, PwC/RICPE replica, actor dossier or future AI-generated chronology may use a start date later than the actor's `LOCKED_MINIMUM_DATE`.
+
+Read first:
+
+- `SUN_PARK_CANONICAL_REGISTER_READ_FIRST.md`
+- `SUN_PARK_ACTOR_CHRONOLOGY_LOCK.md`
+- `SUN_PARK_CANONICAL_ACTOR_REGISTER.md`
+- `SUN_PARK_ACTOR_CONTRADICTIONS_SUPERSESSION_LOG.md`
 
 ## PwC visual-note rule
 
