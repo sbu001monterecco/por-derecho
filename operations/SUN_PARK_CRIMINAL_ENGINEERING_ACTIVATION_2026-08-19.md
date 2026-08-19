@@ -1,7 +1,7 @@
 # Sun Park alleged criminal-engineering investigation — activation record
 
 **Activated:** 2026-08-19  
-**State:** PR_OPEN — repository and public-site audit active  
+**State:** CI_GREEN — PR #532 validated; merge and public-edge verification pending  
 **Scope:** Acosta Matos/CAM/HNT, RIC Private Equity perimeter, Insolvency Administration, judge, LAJ, notary, Land Registry, valuers, lawyers, operators, authorities and other potential enablers
 
 ## Controlling posture
@@ -100,21 +100,35 @@ Canonical routes:
 
 The public pages identify the allegation strongly while showing the evidential boundary, strongest defence, missing evidence and right of response.
 
-A cross-site gateway is to be shown on the principal CAM, RICPE, Administrator, judge, institutional, adjudication, lender, control, funding and recovery routes. It must not assign E-levels to named actors without a separately evidenced finding.
+A cross-site gateway is included for the principal CAM, RICPE, Administrator, judge, institutional, adjudication, lender, control, funding and recovery routes. It does not assign E-levels to named actors without a separately evidenced finding.
 
-## Repository audit
+## Repository audit and validation
 
-The automated audit must scan all public Spanish/English HTML and runtime JavaScript and report:
+PR #532 was tested against the combined repository state after intervening `main` commits.
 
-- actor coverage;
-- judge/LAJ conflation risk;
-- absence of allegation/no-finding labels on high-risk language;
-- unsupported collective-guilt or proven-conspiracy language;
-- missing evidence-preservation, retaliation, benefit-flow, false-premise and strongest-defence coverage;
-- presence and parity of the canonical pages and cross-site gateways;
-- leakage of private identifiers, hashes, recipients or privileged-source details.
+- Criminal-engineering validation run `32305093315`, job `96236021679`: **PASS**.
+- 366 public Spanish/English HTML and runtime-JavaScript files scanned.
+- Zero structural failures or private-identifier leaks.
+- Eight wording-review hits were manually examined and found non-actionable: official institutional names, neutral legal-framework references or express negations/safeguards.
+- Both canonical pages and fourteen actor/dependency routes passed sixteen browser assertions.
+- Publication-integrity run `32305093594`: **PASS**.
+- Unitary public-shell run `32305093410`: **PASS**.
+- Off-GitHub preservation run `32305093571`: **PASS**.
+- Visual-asset identity run `32305093654`: **PASS**.
 
 The audit identifies publication architecture and wording risks. It does not determine criminal liability.
+
+## Private source and issue index
+
+A separate confidential source/P0–P1 index has been created inside the Por Derecho Private Evidence Vault. It records source IDs, version relationships, P0/P1 issue cards and the source-derived limits that must not be exposed through the public repository.
+
+Recovered clusters include:
+
+- July 2026 definitive-text / Article 176 / AC and Court reports;
+- June 2026 NEXUS 36 actor, contradiction and witness matrices;
+- criminal, CGPJ, RICPE and EUR 13,168,082.02 complaint families.
+
+The strongest July report supports a genuine 2017–2019 full-payoff alternative, serious conditional financing, Administrator/Court knowledge and objectively CAM-favourable effects. The same report expressly does **not** prove unconditional funds, deliberate obstruction, judicial bias, collusion or prevarication. That distinction is controlling until the underlying primary sources and date-specific law justify a stronger or weaker finding.
 
 ## Immediate evidence gates
 
@@ -131,7 +145,7 @@ The audit identifies publication architecture and wording risks. It does not det
 
 ## Publication safety
 
-The public repository must not contain:
+The public repository does not contain:
 
 - private Patricia/team drafts;
 - email bodies or recipient identities;
