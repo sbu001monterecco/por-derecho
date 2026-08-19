@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "Por Derecho lender-of-record liability architecture",
+  "last_updated": "2026-08-19",
+  "status_values": [
+    "verified_primary",
+    "verified_official",
+    "documented_party_statement",
+    "corroborated_inference",
+    "contested",
+    "missing_primary",
+    "unknown"
+  ],
+  "publication_values": [
+    "public_safe",
+    "internal_only",
+    "privilege_review",
+    "do_not_publish"
+  ],
+  "files": [
+    "sources.json",
+    "actors.json",
+    "instruments.json",
+    "transfers.json",
+    "knowledge-events.json",
+    "conduct-decisions.json",
+    "proceedings.json",
+    "evidence-gaps.json"
+  ],
+  "public_pages": [
+    "en/lender-of-record/liability/",
+    "es/acreedor-de-registro/responsabilidad/"
+  ],
+  "principle": "Who knew what, when, in what legal capacity, what did they then do, what did it cause, where can it be used, and what proves each step?"
+}
