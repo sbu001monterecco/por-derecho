@@ -161,6 +161,11 @@
   // States the allegation strongly while preserving its status as a substantiated allegation rather than an adjudicated finding.
   load('same-asset-multiple-financial-lives-20260816.js?v=20260816a');
 
+  // Cross-site accountability layer: repeated CAM-favourable direction of effect across retracto, control,
+  // liquidation/adjudication and later continuity. Separates repeated effects, possible duty breach and
+  // higher-threshold influence/conspiracy hypotheses rather than converting optics into criminal findings.
+  load('cam-favourable-pattern-20260819.js?v=20260819a');
+
   // ONA exit pages: unitary actor/property/exploitation map. Preserves LPB as principal property owner rather than whole hotel,
   // Clubotel/ONA Hotels as operating anchor, Daniel Irigoyen's legal-coordinator role and Cuatrecasas' broader transaction work.
   load('ona-unitary-actor-map-20260817.js?v=20260817a');

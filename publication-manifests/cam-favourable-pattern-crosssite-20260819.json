@@ -1,0 +1,86 @@
+{
+  "publication_id": "CAM-FAVOURABLE-PATTERN-CROSSSITE-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "publication_type": "bilingual dedicated dossier plus cross-site accountability module",
+  "controlling_proposition": {
+    "es": "Episodios distintos producen repetidamente ventajas para el perímetro Acosta Matos mientras LPB pierde opciones, control, información o capacidad de reversión. La repetición justifica investigar lealtad, límites de función, influencia y coordinación, sin convertir el patrón de efectos en una conclusión penal.",
+    "en": "Distinct episodes repeatedly advantage the Acosta Matos perimeter while LPB loses options, control, information or reversibility. The recurrence justifies investigation of loyalty, role boundaries, influence and coordination without converting an effects pattern into a criminal conclusion."
+  },
+  "expected_routes": {
+    "es": [
+      "es/patron-efectos-favorables-acosta-matos/index.html"
+    ],
+    "en": [
+      "en/acosta-matos-favourable-effect-pattern/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/cam-favourable-pattern-20260819.js",
+    "assets/data/cam-favourable-direction-of-effect-v1.json",
+    "archive/CAM_FAVOURABLE_DIRECTION_OF_EFFECT_CROSSSITE_CONTROL_19AUG2026.md",
+    "assets/site.js",
+    "sitemap-banking-recovery.xml"
+  ],
+  "cross_site_targets": {
+    "es": [
+      "/es/concurso-36-2012-administrador-concursal/",
+      "/es/concurso-36-2012-magistrado-juez/",
+      "/es/concurso-36-2012-responsabilidad-institucional/",
+      "/es/acosta-matos-perimetro/",
+      "/es/retracto-credito-litigioso-1041-2017/",
+      "/es/toma-control-sun-park-7-junio-2018/",
+      "/es/mismo-hotel-multiples-vidas-financieras/"
+    ],
+    "en": [
+      "/en/insolvency-36-2012-insolvency-administrator/",
+      "/en/insolvency-36-2012-mercantile-court-1/",
+      "/en/insolvency-36-2012-institutional-accountability/",
+      "/en/acosta-matos-perimeter/",
+      "/en/litigious-credit-retracto-1041-2017/",
+      "/en/sun-park-takeover-7-june-2018/",
+      "/en/same-hotel-multiple-financial-lives/"
+    ]
+  },
+  "material_assertions": [
+    {
+      "id": "P1",
+      "assertion": "The controlled record supports a repeated CAM-favourable direction of effect across multiple distinct workstreams.",
+      "status": "STRONGLY_SUPPORTED_WITH_LIMITATIONS"
+    },
+    {
+      "id": "P2",
+      "assertion": "The strongest current AC framing is functional delivery with CAM-favourable effect, subject to an episode-specific estate-interest test.",
+      "status": "ANALYTICAL_INFERENCE"
+    },
+    {
+      "id": "P3",
+      "assertion": "The strongest current judicial framing is active/passive intervention asymmetry with CAM-favourable effect, while preserving contrary or LPB-protective judicial acts.",
+      "status": "ANALYTICAL_INFERENCE"
+    },
+    {
+      "id": "P4",
+      "assertion": "The recurrence creates strong optics/indicia of functional convergence sufficient to justify targeted investigation of coordination or influence, but agreement is not proved.",
+      "status": "INVESTIGATIVE_INFERENCE"
+    }
+  ],
+  "publication_safety": {
+    "effect_vs_intent": "Repeated effect is separated from intent, agreement and criminal liability.",
+    "ac": "No finding of disloyal administration or administración desleal without actor-specific duty, conduct, damage and causation.",
+    "judge": "No finding of improper bias, corruption or prevaricación from adverse/asymmetric outcomes alone.",
+    "coordination": "No finding of conspiracy or concerted action without communications/agreement/common-plan evidence.",
+    "entities": "CAM, RICPE, HNT, MYND and other entities remain legally distinct unless act-specific evidence establishes a relevant connection.",
+    "counter_record": "LPB-favourable amount corrections, 2018 suspension and 2019 non-validation remain visible."
+  },
+  "p0_evidence": [
+    "Exact PP 1041 termination act and instruction chain.",
+    "Exact Cristo formal-authority change instrument and handover.",
+    "Contemporaneous AC estate-interest analysis for the retracto/information route.",
+    "Complete challenge/finality chain for the 15-Feb-2018 order.",
+    "Complete PH122-to-CAM transaction economics.",
+    "Actor-specific communications capable of proving or disproving coordination/influence.",
+    "Episode-by-episode LPB estate benefit/harm quantification."
+  ],
+  "notes": "PR-open state. No CI_GREEN, MERGED, DEPLOYED or LIVE_VERIFIED state is claimed until independently evidenced."
+}
