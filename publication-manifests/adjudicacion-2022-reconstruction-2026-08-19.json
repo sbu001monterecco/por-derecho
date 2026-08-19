@@ -82,8 +82,9 @@
     "version-by-version comparison with previous submissions, correspondence and decisions"
   ],
   "provenance_update": {
-    "status": "PR_PREPARATION",
+    "status": "PR_OPEN",
     "control_date": "2026-08-19",
+    "pr": 521,
     "branch": "agent/adjudicacion-provenance-links-20260819",
     "public_change_scope": [
       "bilingual version-control and prior-use panel",
@@ -119,7 +120,7 @@
     "off_github_preservation": "PASS",
     "repository_merge": "PASS",
     "public_edge": "PASS",
-    "provenance_update_validation": "PENDING_PR_CI"
+    "provenance_update_validation": "PENDING_PR_521_CI"
   },
   "deployment_evidence": [
     "GitHub Pages returned HTTP 200 for the Spanish route, English route and dedicated sitemap in workflow run 32281842085.",
@@ -184,6 +185,6 @@
   "live_verification": {
     "status": "LIVE_VERIFIED",
     "verified_at": "2026-08-19T17:29:04Z",
-    "note": "Spanish, English and sitemap routes were independently read back from the public GitHub Pages edge with every declared marker present. The provenance update remains pending separate PR validation and post-merge live read-back."
+    "note": "Spanish, English and sitemap routes were independently read back from the public GitHub Pages edge with every declared marker present. The provenance update remains pending PR 521 validation and post-merge live read-back."
   }
 }
