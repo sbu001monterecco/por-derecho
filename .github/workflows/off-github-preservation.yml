@@ -77,9 +77,20 @@ jobs:
           rm -rf "$SITE/raw"
 
           echo "Capturing public GitHub API metadata..."
-          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/users/${OWNER}" > "$API_EXPORT/user-profile.json"
-          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=full_name" > "$API_EXPORT/owned-repositories.json"
-          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}" > "$API_EXPORT/repository-metadata.json"
+          fetch_api() {
+            local url="$1"
+            local destination="$2"
+            curl --fail --silent --show-error --location \
+              --retry 5 --retry-all-errors --retry-delay 2 \
+              --connect-timeout 10 --max-time 90 \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "$url" > "$destination"
+          }
+          fetch_api "https://api.github.com/users/${OWNER}" "$API_EXPORT/user-profile.json"
+          fetch_api "https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=full_name" "$API_EXPORT/owned-repositories.json"
+          fetch_api "https://api.github.com/repos/${GITHUB_REPOSITORY}" "$API_EXPORT/repository-metadata.json"
 
           cat > "$INVENTORY/repositories.csv" <<CSV
           name,nameWithOwner,visibility,defaultBranch,preservedMainSha

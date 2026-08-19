@@ -1,13 +1,27 @@
 {
   "publication_id": "SUN-PARK-REVERSE-ENGINEERING-360-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
-  "status": "PUBLICATION_CONTROL",
+  "publication_type": "bilingual 360-degree reverse-engineering methodology, cross-site gateway and documentary-control package",
+  "merge_sha": "b943003dcfe1976070947914a5a0c134370601f6",
   "canonical_control": "archive/SUN_PARK_REVERSE_ENGINEERING_360_CONTROL_19AUG2026.md",
   "thread_continuity": "archive/THREAD_DELETION_AUDIT_ART1535_REVERSE_ENGINEERING_19AUG2026.md",
-  "routes": {
-    "es": "/por-derecho/es/ingenieria-inversa-360-cadena-sun-park/",
-    "en": "/por-derecho/en/reverse-engineering-360-sun-park-chain/"
+  "expected_routes": {
+    "es": [
+      "es/ingenieria-inversa-360-cadena-sun-park/index.html"
+    ],
+    "en": [
+      "en/reverse-engineering-360-sun-park-chain/index.html"
+    ]
   },
+  "expected_source_files": [
+    "archive/SUN_PARK_REVERSE_ENGINEERING_360_CONTROL_19AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_ART1535_REVERSE_ENGINEERING_19AUG2026.md",
+    "assets/reverse-engineering-360-20260819.js",
+    "assets/art1535-reserve-pathway-20260819.js",
+    "sitemap-reverse-engineering-360.xml"
+  ],
   "sitewide_gateway": "assets/reverse-engineering-360-20260819.js",
   "loader_bridge": "assets/art1535-reserve-pathway-20260819.js",
   "sitemap": "sitemap-reverse-engineering-360.xml",
@@ -27,5 +41,19 @@
     "actual Article 40 LEC criminal-prejudiciality posture",
     "third-party protection consequences for specific downstream acts"
   ],
-  "verification_policy": "Confirm merge to main separately from public-edge read-back; do not infer one from the other."
+  "validation": {
+    "evidence": [
+      "Merge commit b943003dcfe1976070947914a5a0c134370601f6 records the reverse-engineering 360 package in main.",
+      "Spanish and English expected routes were read back from Git source on 2026-08-19.",
+      "This manifest repair claims MERGED source state only; it does not claim DEPLOYED or LIVE_VERIFIED."
+    ],
+    "source_presence": "PASS",
+    "bilingual_route_parity": "PASS",
+    "live_edge_readback": "NOT_CLAIMED"
+  },
+  "verification_policy": "Confirm merge to main separately from public-edge read-back; do not infer one from the other.",
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "MERGED records repository/source state only. DEPLOYED and LIVE_VERIFIED require separate public-edge evidence."
+  }
 }

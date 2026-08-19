@@ -1,0 +1,95 @@
+{
+  "publication_id": "ADJUDICACION-2022-RECONSTRUCTION-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "CI_GREEN",
+  "control_date": "2026-08-19",
+  "controlling_pr": 509,
+  "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
+  "expected_routes": {
+    "es": [
+      "es/adjudicacion-2022-reconstruccion-documental/index.html"
+    ],
+    "en": [
+      "en/2022-adjudication-documentary-reconstruction/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "operations/ADJUDICACION_2022_RECONSTRUCTION_ACTIVATION_2026-08-19.md",
+    "sitemap-adjudicacion-2022.xml"
+  ],
+  "source_classes_reviewed": [
+    "internal working papers",
+    "email bodies and attachments",
+    "drive files",
+    "court orders",
+    "notarial deed",
+    "creditor definitive texts",
+    "valuation report",
+    "registry note",
+    "existing public repository"
+  ],
+  "verified_findings": [
+    "The 2018 offer gives an approximate waiver of EUR 5,186,061.79.",
+    "The 2022 deed provides an exact six-component bridge to EUR 13,168,082.02.",
+    "The deed describes EUR 13,168,082.02 as debt serving as non-cash consideration.",
+    "The 2021 order treats the EUR 400,000 unencumbered-property sale separately from the mortgaged-property adjudication.",
+    "Protocol 457 concerns the 159 mortgaged apartments.",
+    "EUR 9,052,251.69 is recorded as a 2016 special-privilege credit-classification figure.",
+    "A May 2022 registry note still displayed both mortgages."
+  ],
+  "express_exclusions": [
+    "no universal nullity conclusion",
+    "no established surplus conclusion",
+    "no established criminal or bad-faith allegation",
+    "no automatic cancellation of later rights",
+    "no publication of internal PDFs, privileged communications or personal data",
+    "no litigation filing or external communication"
+  ],
+  "legal_validation_required": [
+    "standing",
+    "necessary parties",
+    "finality and preclusion",
+    "time limits",
+    "transitional insolvency law",
+    "legal payability and classification of each debt component",
+    "restitution and registry consequences"
+  ],
+  "evidence_gates": [
+    "certified primary court and notarial chain",
+    "credit calculation at 2022-02-21",
+    "proof of five-day court notification",
+    "EUR 400,000 bank and accounting trail",
+    "final liquidation accounts and conclusion order",
+    "historic and current property-by-property registry certificates"
+  ],
+  "validation": {
+    "evidence": [
+      "PR 509 publication, operational and mission-critical integrity run 32280266373: success.",
+      "PR 509 bilingual unitary public-shell and desktop/mobile rendering run 32280266561: success.",
+      "PR 509 supervisory-practice route validation run 32280266563: success.",
+      "PR 509 off-GitHub preservation snapshot run 32280266381: success after adding retry handling for transient GitHub API failures.",
+      "The six deed components were independently reconciled to EUR 13,168,082.02 exactly."
+    ],
+    "publication_integrity": "PASS",
+    "mission_critical_repository": "PASS",
+    "unitary_public_shell": "PASS",
+    "bilingual_route_parity": "PASS",
+    "desktop_mobile_render": "PASS",
+    "off_github_preservation": "PASS"
+  },
+  "publication_safety": {
+    "nullity": "No single universal-nullity claim; consequences are act-specific and right-holder-specific.",
+    "surplus": "No actual remanente is asserted without reconstruction of both the legally relevant realisation amount and legally payable debt.",
+    "third_parties": "No automatic loss of later registered rights is asserted.",
+    "allegations": "No fraud, criminality, coercion or bad faith is presented as an established fact."
+  },
+  "privacy": {
+    "private_source_files_committed": false,
+    "email_identifiers_committed": false,
+    "personal_data_committed": false
+  },
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "CI_GREEN records validated PR source state only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+  }
+}
