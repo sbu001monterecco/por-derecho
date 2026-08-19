@@ -1,11 +1,16 @@
 {
   "publication_id": "ADJUDICACION-2022-RECONSTRUCTION-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "MERGED",
+  "current_state": "LIVE_VERIFIED",
   "control_date": "2026-08-19",
   "controlling_pr": 509,
   "merge_sha": "69216d25aaf2be09b5d334279160d5799f2a75c8",
   "merged_at": "2026-08-19T17:18:36Z",
+  "closeout_prs": [510, 511],
+  "closeout_merge_shas": [
+    "28cd3355e0a39bd5e806ed2800987ce1f8165b85",
+    "046e23ea73ec80cc0651cb2090973828f368b632"
+  ],
   "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
   "expected_routes": {
     "es": [
@@ -72,6 +77,8 @@
       "PR 509 supervisory-practice route validation run 32280550227: success on final head.",
       "PR 509 off-GitHub preservation snapshot run 32280549769: success on final head.",
       "PR 509 merged to main at 69216d25aaf2be09b5d334279160d5799f2a75c8.",
+      "PR 510 merged the dedicated live verifier and merged-state closeout at 28cd3355e0a39bd5e806ed2800987ce1f8165b85.",
+      "PR 511 merged durable public-edge status reporting at 046e23ea73ec80cc0651cb2090973828f368b632.",
       "The six deed components were independently reconciled to EUR 13,168,082.02 exactly."
     ],
     "publication_integrity": "PASS",
@@ -80,7 +87,54 @@
     "bilingual_route_parity": "PASS",
     "desktop_mobile_render": "PASS",
     "off_github_preservation": "PASS",
-    "repository_merge": "PASS"
+    "repository_merge": "PASS",
+    "public_edge": "PASS"
+  },
+  "deployment_evidence": [
+    "GitHub Pages returned HTTP 200 for the Spanish route, English route and dedicated sitemap in workflow run 32281842085.",
+    "The public pages returned the source-specific reconstruction, amount, no-universal-nullity and reciprocal-language markers on the first verification attempt.",
+    "Commit status pages-propagation/adjudicacion-2022 was published as success on source SHA 046e23ea73ec80cc0651cb2090973828f368b632."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
+    "https://sbu001monterecco.github.io/por-derecho/en/2022-adjudication-documentary-reconstruction/",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-adjudicacion-2022.xml"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/adjudicacion-2022-reconstruccion-documental/": [
+      "Reconstrucción activa",
+      "13.168.082,02 €",
+      "No se afirma que exista una única acción",
+      "/por-derecho/en/2022-adjudication-documentary-reconstruction/"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/2022-adjudication-documentary-reconstruction/": [
+      "Active reconstruction",
+      "EUR 13,168,082.02",
+      "This page does not claim that one proceeding",
+      "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-adjudicacion-2022.xml": [
+      "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
+      "/por-derecho/en/2022-adjudication-documentary-reconstruction/"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-08-19T17:29:04Z",
+    "source_sha": "046e23ea73ec80cc0651cb2090973828f368b632",
+    "workflow_run_id": 32281842085,
+    "workflow_job_id": 96162209253,
+    "attempt": 1,
+    "commit_status_context": "pages-propagation/adjudicacion-2022",
+    "commit_status_state": "success",
+    "checks": {
+      "es_http_200": true,
+      "es_markers": true,
+      "en_http_200": true,
+      "en_markers": true,
+      "sitemap_http_200": true,
+      "sitemap_markers": true
+    }
   },
   "publication_safety": {
     "nullity": "No single universal-nullity claim; consequences are act-specific and right-holder-specific.",
@@ -94,7 +148,8 @@
     "personal_data_committed": false
   },
   "live_verification": {
-    "status": "NOT_YET_CLAIMED",
-    "note": "MERGED records repository publication at PR 509 merge SHA. DEPLOYED and LIVE_VERIFIED require separate public-edge evidence."
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-08-19T17:29:04Z",
+    "note": "Spanish, English and sitemap routes were independently read back from the public GitHub Pages edge with every declared marker present."
   }
 }
