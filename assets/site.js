@@ -8,6 +8,13 @@
   base.async = false;
   document.head.appendChild(base);
 
+  // Unitary case navigation, CE-001–CE-010 tracker, visible corrections and compact context gateway.
+  const caseArchitecture = document.createElement('script');
+  caseArchitecture.src = new URL('case-information-architecture-20260819.js?v=20260819b', current.src).href;
+  caseArchitecture.async = false;
+  caseArchitecture.dataset.caseInformationArchitectureLoader = 'true';
+  document.head.appendChild(caseArchitecture);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
