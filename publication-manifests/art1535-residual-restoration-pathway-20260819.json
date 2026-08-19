@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "publicationDate": "2026-08-19",
+  "title": "Article 1535 residual restoration pathway",
+  "current_state": "PR_PENDING",
+  "publicRoutes": [
+    "/es/via-residual-articulo-1535/",
+    "/en/residual-article-1535-pathway/"
+  ],
+  "crossSiteModule": "assets/art1535-reserve-pathway-20260819.js",
+  "canonicalData": "assets/data/art1535-residual-restoration-pathway-v1.json",
+  "canonicalControl": "archive/ART1535_RESIDUAL_RESTORATION_PATHWAY_CONTROL_19AUG2026.md",
+  "publicationBoundary": "Qualified legal and evidential pathway; statutory status and remedies require adjudication.",
+  "liveVerification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "Repository merge and public-edge verification are separate states."
+  }
+}
