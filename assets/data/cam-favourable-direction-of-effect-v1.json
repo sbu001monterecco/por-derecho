@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "controlDate": "2026-08-19",
   "status": "PUBLIC-READY-WITH-QUALIFICATION",
   "purpose": "Cross-site analytical control for repeated CAM-favourable outcomes across the Sun Park / LPB record. It distinguishes verified effects, possible duty breaches, role-boundary questions and criminal hypotheses requiring independent proof. It does not infer conspiracy, corruption, improper judicial bias or criminal liability from chronology alone.",
@@ -15,14 +15,16 @@
   "episodes": [
     {
       "id": "CAM-PATTERN-01",
-      "period": "2017-12 to 2018-02",
+      "period": "2017-12 to 2018-03; archive reconfirmed 2024-05",
       "labelEs": "Cesión PH122 → CAM / DP 1041 / art. 1535",
       "labelEn": "PH122 → CAM assignment / PP 1041 / Article 1535",
       "status": "VERIFIED_WITH_LIMITATION",
-      "camGain": "CAM obtains recognised assignee-creditor status in the insolvency with express reliance on the insolvency administration's favourable verification.",
-      "lpbLoss": "LPB's separate court-admitted route to obtain the deed, price and transaction economics later ceases to produce demonstrated value; exact termination act remains P0.",
+      "camGain": "CAM obtained recognised assignee-creditor status in the insolvency with express reliance on the insolvency administration's favourable verification.",
+      "lpbLoss": "LPB's already-admitted route to obtain the deed, price, payment and costs was terminated after LPB requested withdrawal. The 5 March 2018 Decree records that withdrawal and lists Borja as LPB's lawyer; the 13 May 2024 order confirms the archive was caused by that claimant-side withdrawal.",
+      "representationCausation": "On 25 January 2018 the insolvency administrator directly terminated Cristo Suárez Pimentel's specific formal LPB mandate and required AC control over future LPB procedural action. Matter-specific causation classification: C5.",
       "estateBenefit": "NO_MEASURABLE_BENEFIT_LOCATED",
-      "counterRecord": "The 15 February 2018 order corrected part of the amounts in LPB's favour and rejected the Article 1535 theory on legal merits."
+      "counterRecord": "The 15 February 2018 order corrected part of the amounts in LPB's favour and rejected the Article 1535 theory on legal merits.",
+      "openAttribution": "The exact underlying withdrawal pleading and the internal instruction/drafting/filing chain remain open. Do not state that the insolvency administrator personally drafted, signed or instructed the desistimiento without that evidence."
     },
     {
       "id": "CAM-PATTERN-02",
@@ -60,10 +62,10 @@
   ],
   "institutionalTests": {
     "insolvencyAdministrator": {
-      "classification": "FUNCTIONAL_DELIVERY_CAM_FAVOURABLE_EFFECT",
-      "question": "Where the AC supported, enabled, failed to reverse or accepted an outcome that benefited the CAM perimeter, what contemporaneous estate-interest analysis identifies the corresponding LPB benefit?",
+      "classification": "FUNCTIONAL_DELIVERY_CAM_FAVOURABLE_EFFECT__C5_CRISTO_FORMAL_MANDATE_CAUSATION",
+      "question": "Where the AC supported, enabled, failed to reverse or accepted an outcome that benefited the CAM perimeter, what contemporaneous estate-interest analysis identifies the corresponding LPB benefit? In DP 1041 specifically, who decided and instructed the claimant-side withdrawal after the AC had terminated Cristo's formal mandate?",
       "roleBoundaryQuestion": "Did any step move the AC from neutral estate administration/supervision into procedural control or advocacy that requires a separate conflict, authority or loyalty explanation?",
-      "publicationBoundary": "Do not assert disloyal administration or criminal breach as proved until duty, act/omission, authority, damage and causation are established for the specific episode."
+      "publicationBoundary": "The 25 January termination of Cristo's specific formal LPB mandate is verified and may be stated as direct causation. Do not assert that the AC personally authored/signed/instructed the 5 March withdrawal or committed a criminal breach without separate proof."
     },
     "judge": {
       "classification": "ACTIVE_AND_PASSIVE_CAM_FAVOURABLE_EFFECT_PATTERN",
@@ -107,12 +109,14 @@
     "Repeated CAM-favourable outcomes are evidence of a pattern of effects, not proof of conspiracy.",
     "A judge's adverse decision is not itself bias or prevaricación.",
     "An AC's decision that benefits a creditor is not itself disloyal administration; the estate-interest justification must be tested.",
+    "The AC's 25 January 2018 termination of Cristo's specific formal LPB mandate is verified; the later withdrawal-instruction attribution remains separate.",
     "Later RICPE/HNT/MYND continuity does not collapse distinct entities into one actor.",
     "No criminal label should replace the act-by-act elements and causation analysis."
   ],
   "p0Evidence": [
-    "Exact DP 1041/2017 termination/withdrawal/archive act and instruction chain.",
-    "Exact instrument changing Cristo Suárez Pimentel's formal LPB authority and complete handover chronology.",
+    "Exact DP 1041/2017 withdrawal pleading, including author/drafter, signatory, filing channel and cover communication.",
+    "Internal instruction/decision chain authorising LPB's withdrawal after the 25 January 2018 authority change.",
+    "Complete Cristo-to-successor venia/power/file-handover chronology.",
     "Contemporaneous AC estate-interest analysis for the retracto/information route.",
     "Complete appeal/finality chain for the 15 February 2018 creditor-substitution order.",
     "Complete PH122 → CAM transaction economics and payment evidence.",

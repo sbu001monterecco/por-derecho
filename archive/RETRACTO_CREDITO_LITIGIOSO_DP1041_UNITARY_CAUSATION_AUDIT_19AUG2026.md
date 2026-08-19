@@ -2,188 +2,220 @@
 ## Unitary causation, estate-benefit and intervention-asymmetry audit
 
 **Control date:** 19 August 2026  
-**Status:** CANONICAL ANALYTICAL CONTROL — PUBLIC WORDING MUST REMAIN QUALIFIED  
-**Canonical data:** `assets/data/retracto-credit-1041-2017-v1.json`  
-**Linked controls:** `archive/PH122_CAM_ASSIGNMENT_ART1535_PUBLICATION_CONTROL_16AUG2026.md`; `archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md`; `archive/SUN_PARK_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_CONTROL_CHAIN_16AUG2026.md`.
+**Status:** CANONICAL ANALYTICAL CONTROL — PRIMARY-ACT CLOSURE APPLIED  
+**Base data:** `assets/data/retracto-credit-1041-2017-v1.json`  
+**Primary-act override:** `assets/data/retracto-primary-act-closure-v1.json`  
+**Representation override:** `assets/data/legal-representation-retracto-override-v1.json`  
+**Linked controls:** `archive/DP1041_PRIMARY_ACT_CLOSURE_19AUG2026.md`; `archive/PH122_CAM_ASSIGNMENT_ART1535_PUBLICATION_CONTROL_16AUG2026.md`.
 
-## 1. Why this is a material storyline event
+## 1. Controlled conclusion after primary-act closure
 
-This workstream is not a footnote to the lender history. It is a direct test of what happened when a third party acquired the mortgage-credit position against LPB while the debtor was already in a long insolvency process and was contesting material aspects of the banking balance.
+The evidential position is now materially stronger than the earlier reconstruction.
 
-The relevant question is not simply whether Article 1535 of the Civil Code ultimately applied. The sequence created two distinct forms of value for LPB:
+It is no longer accurate to say that the end of DP 1041/2017 or the cessation of Cristo Suárez Pimentel's specific formal LPB mandate are unknown.
 
-1. **substantive optionality** — if the technical statutory conditions were met, a potential route to extinguish the sold litigious credit by reimbursing the assignee on the statutory basis; and
-2. **information and negotiation optionality** — a court-admitted route to obtain the assignment deed, price, payment information and costs and thereby test the transaction economics and LPB's available rights.
+The primary sequence now establishes:
 
-The Commercial Court later rejected LPB's Article 1535 theory. That is significant adverse evidence. It does not erase the independent value of the admitted information route.
+1. LPB obtained an admitted judicial route to the PH122 → CAM assignment deed, price, payment and costs.
+2. On **25 January 2018** the Administrador Concursal directly terminated Cristo Suárez Pimentel's professional relationship with LPB, requested `venia` in DP 1041 and imposed an AC-authorisation gate over future LPB procedural action.
+3. No voluntary resignation by Cristo has been located, and Cristo later continued broader Sun Park legal work.
+4. The **15 February 2018** Commercial Court order rejected LPB's Article 1535 / `crédito litigioso` position, partially corrected amounts in LPB's favour and recognised CAM as assignee creditor with express reliance on the AC's favourable verification.
+5. The **5 March 2018** Decree in DP 1041 records that **LPB requested withdrawal**, CAM did not oppose, the proceeding was terminated and the 25 April hearing was vacated. The intervention table lists **Francisco Borja Rodríguez Batllori Laffitte** as LPB's lawyer and **Alejandro Válido Farray** as procurador.
+6. The **13 May 2024** judicial-office order independently confirms that DP 1041 was finalised and archived because of the claimant's withdrawal under the 5 March 2018 Decree, and states that no proceedings derived from it.
 
-## 2. Primary-source sequence re-verified on 19 August 2026
+The remaining gap is narrower and more important: **who internally decided that LPB should withdraw, who instructed that decision, who drafted/signed/filed the pleading, and what contemporaneous estate-interest analysis justified it.**
 
-### 12 July 2016 — quantified dispute pre-dates the assignment
+## 2. Why this remains a material storyline event
 
-The controlled record shows LPB had already put a quantified dispute concerning the banking liabilities before the insolvency administration. The amounts and legal consequences were LPB-side allegations and must be independently reconciled. The material point is that the later credit assignment did not occur against a documentary vacuum.
+This workstream is not a lender-history footnote. It tests what happened when a third party acquired the mortgage-credit position against LPB while the debtor was already in a long insolvency process and was contesting material aspects of the banking balance.
+
+Two distinct forms of potential value existed for LPB:
+
+- **substantive optionality** — if Article 1535's strict statutory conditions were met, a possible route to extinguish a sold litigated credit on the statutory basis; and
+- **information / negotiation optionality** — an admitted judicial route to obtain the deed, price, payment and costs needed to test the transaction economics, reconcile the debt and assess any available remedy.
+
+The 15 February 2018 ruling is genuine adverse evidence on the first limb. It does not automatically establish that the second limb had no value.
+
+## 3. Verified primary sequence
 
 ### 20 October 2017 — PH122 → CAM
 
-Promontoria Holding 122 B.V. is identified in the controlled transaction record as assignor and Construcciones Acosta Matos, S.A. as assignee of the relevant mortgage-credit position.
+Promontoria Holding 122 B.V. is the identified assignor and Construcciones Acosta Matos, S.A. the identified assignee of the relevant mortgage-credit position.
 
-**Control rule:** references to Cerberus, Haya or other servicing/investment perimeter actors are contextual unless the specific primary transaction instrument establishes their exact legal role in this assignment.
+**Perimeter rule:** Cerberus, Haya or other investment/servicing labels remain contextual unless a primary document establishes their exact legal capacity in this assignment.
 
-### 6 December 2017 — LPB seeks the economics
+### 12 December 2017 — Cristo initiates the disclosure/retracto workstream
 
-LPB requested the assignment deed and economic terms, including price, in order to preserve and test the rights it considered available. LPB's statement that the credits were litigiosos was a party position, not a judicial finding.
+Cristo Suárez Pimentel acted for LPB in the preliminary-proceedings request seeking the complete deed and the economic terms of the assignment, expressly to evaluate rights including a possible Article 1535 route.
 
 ### 19 December 2017 — JPI nº 2 admits DP 1041/2017
 
-The Court of First Instance No. 2 admitted LPB's preliminary proceedings, found just cause and legitimate interest, and ordered production of the deed and the information necessary to identify the sale price, payment and costs.
+The Court of First Instance No. 2 found just cause and legitimate interest and ordered production of the deed and information identifying price, payment and costs.
 
-The safe proposition is therefore stronger than “LPB asked for information”: **LPB had obtained a live judicially recognised disclosure route.**
+**Safe proposition:** LPB had obtained a live court-recognised disclosure route. The admission did **not** decide that the credit was technically `litigioso`.
 
-### 12 January 2018 — the route is operational
+### 19 December 2017 — liquidation opens
 
-A further procedural act set the opposition route and, absent opposition, a 19 February appearance, with procedural consequences for unjustified non-appearance. The route was therefore operational rather than speculative.
+The opening of liquidation changes the formal control environment for LPB and places the insolvency administration in the relevant representation/management position.
 
-### 18–19 December 2017 and 10 January 2018 — parallel CAM recognition route
+### 18 January 2018 — general AC authority gate
 
-CAM separately asked the Commercial Court to change the creditor identity in the definitive insolvency texts. The court referred the application to the insolvency administration. On 10 January the AC reported favourably, subject to the qualification later recorded in the order.
+The AC communicated that LPB's lawyers should not take procedural action without his express authorisation.
 
-### 7 February 2018 — LPB opposes
+### 25 January 2018 — direct termination of Cristo's specific formal LPB mandate
 
-LPB challenged amounts and argued that the transferred credit was litigioso.
+The contemporaneous AC-to-Cristo communication:
+
+- terminates the professional relationship Cristo maintained with LPB;
+- requests `venia` in DP 1041;
+- directs Cristo to abstain from future LPB action; and
+- instructs the procurador not to file LPB pleadings signed by Cristo or another lawyer without AC authorisation, while initially preserving necessary acts in DP 1041.
+
+**Matter-specific causation classification:** `C5 — DIRECT CONTEMPORANEOUS EVIDENCE`.
+
+This is a documented causation finding about the end of the specific formal LPB mandate. It is **not** proof that Cristo abandoned the wider Sun Park matter, that the termination was unlawful, or that the AC later personally instructed the withdrawal.
+
+### 25 January 2018 — CAM opposition
+
+CAM's opposition raised, among other matters, the authority/liquidation issue surrounding LPB's procedural representation.
 
 ### 15 February 2018 — Commercial Court order
 
-The primary order recovered and checked in the present scan is dated **15 February 2018**, not 8 February 2018. Earlier repository references to an “8 February 2018 order” require correction/reconciliation unless a different primary act supporting 8 February is produced.
+The primary order is dated **15 February 2018**. Earlier references to 8 February are superseded for this order unless a distinct primary act is produced.
 
-The order has mixed effects and must be represented in full:
+The order:
 
-- it corrected some CAM credit amounts in LPB's favour;
-- it rejected LPB's Article 1535 / crédito litigioso position;
-- it recognised CAM as assignee creditor; and
-- crucially for the present audit, it stated that **all documentary material supporting CAM's title did not need to be produced for the creditor substitution**, because the insolvency administration had reported favourably and the court would presume the AC had verified the necessary requirements.
-
-This last point is a major unitary finding because it can be compared with the contemporaneous JPI nº 2 approach: LPB's route was directed toward production of the assignment deed and economics; CAM's insolvency recognition was allowed to rest materially on AC verification and judicial presumption rather than court-level production of all supporting title material.
-
-The two courts were deciding legally different applications. The comparison is therefore an **evidentiary/intervention asymmetry**, not proof that identical legal rules were applied inconsistently.
-
-## 3. The estate-benefit test
-
-The cleanest question is:
-
-> **If LPB lost or abandoned an already-admitted judicial route to obtain the assignment economics and preserve possible extinguishment/leverage optionality, what measurable benefit did the insolvency estate obtain in return?**
-
-The current reconstruction has located **no measurable LPB/estate benefit** that answers that question.
-
-A defensible estate-benefit explanation could exist. Examples include a documented settlement payment, waiver or reduction of debt, limitation of enforcement exposure, or a contemporaneous expected-cost/expected-value analysis showing that continuing the route would destroy rather than preserve estate value. Those possibilities must be searched for rather than assumed absent.
-
-But the burden of explanation is real. “The Article 1535 merits may have been weak” is not by itself a complete answer, because the preliminary proceeding also carried information value. A decision not to fund a weak substantive action and a decision to surrender an admitted disclosure route are analytically different decisions.
-
-## 4. Strongest defensible framing of the AC
-
-### Classification: `FUNCTIONAL_DELIVERY_CAM_FAVOURABLE_EFFECT`
-
-The current evidence supports a **functional / directional delivery** finding, not an intent finding.
-
-The measurable distribution of effects is:
-
-- the AC supported CAM's creditor substitution;
-- the Commercial Court expressly relied on that favourable AC report and presumed the AC had verified the necessary requirements rather than demanding all supporting title documents itself;
-- CAM retained and consolidated its recognised secured-credit position;
-- LPB's separate information/Article 1535 route did not result in a demonstrated recovery, reduction or other measurable estate benefit; and
-- the precise act by which DP 1041/2017 ultimately ceased remains to be rebound to primary evidence before personal responsibility for the withdrawal is attributed definitively.
-
-Accordingly, the strongest public-safe formulation is:
-
-> **Whatever the motive, the direction of effect is measurable: the AC's intervention supported the recognition and continuity of the Acosta Matos creditor position, while the debtor-side information/retracto workstream lost practical force and no corresponding LPB estate benefit has yet been identified. That is functional delivery in CAM's favour; it is not, without further evidence, proof of collusion or unlawful intent.**
-
-A still sharper accountability question is:
-
-> **What contemporaneous insolvency-estate analysis explains why supporting CAM's creditor substitution while allowing LPB's price-and-deed route to disappear was better for LPB and its creditors?**
-
-## 5. Strongest defensible framing of the judge
-
-The safe and powerful formulation is **passive/active intervention asymmetry with CAM-favourable effect**.
-
-### Active component
-
-The 15 February order affirmatively:
-
-- rejected LPB's litigated-credit position;
+- corrected some CAM credit amounts in LPB's favour;
+- rejected LPB's Article 1535 / `crédito litigioso` position;
 - recognised CAM as assignee creditor; and
-- treated the AC's favourable report as sufficient to presume verification of the creditor-substitution requirements.
+- expressly relied on the AC's favourable report and presumed AC verification rather than requiring all title documentation sought by LPB for creditor substitution.
 
-### Passive/deferential component
+The order provided a five-day `recurso de reposición` without suspensive effect. The complete challenge/finality chain remains open.
 
-The same order declined to require all title documentation sought by LPB before giving effect to CAM's substitution. This is properly described as **deference to the AC** and as a choice not to undertake the fuller documentary production LPB was pursuing elsewhere.
+### 5 March 2018 — LPB withdraws DP 1041
 
-### Counter-record
+Decreto 139/2018 records that:
 
-The order also corrected part of the claimed amounts in LPB's favour. It is therefore inaccurate to describe every judicial decision or every part of this order as pro-CAM.
+- **LPB requested desistimiento**;
+- CAM did not oppose / expressed conformity;
+- LPB was treated as withdrawn;
+- the proceeding was terminated;
+- the 25 April hearing was vacated; and
+- Borja is listed as LPB's lawyer, with Alejandro Válido Farray as procurador.
 
-### Public conclusion
+**Controlled finding:** the procedural endpoint is established. DP 1041 ended because the claimant LPB withdrew.
 
-> **The dossier supports a CAM-favourable intervention pattern in effect: active judicial steps consolidated CAM's creditor position and rejected LPB's Article 1535 theory, while a more deferential posture accepted AC verification rather than requiring the complete title documentation LPB was seeking. The same order contains an LPB-favourable amount correction. This supports an asymmetry and judicial-deference question; it does not by itself prove improper personal bias.**
+**Attribution limit:** the Decree does not identify the internal decision-maker, instructor, drafter, signatory or filer of the underlying withdrawal pleading.
 
-Use “CAM-favourable in effect”, “intervention asymmetry”, “asymmetric evidentiary treatment” and “deference to AC”. Do not publish “the judge was corrupt” or “improperly biased” as a finding on this evidence alone.
+### 13 May 2024 — archive independently reaffirmed
 
-## 6. Why “killing the retracto claim helps LPB” currently fails the evidence test
+The judicial-office order tells Aweswell that DP 1041 is finalised and archived because of the claimant's withdrawal under the 5 March 2018 Decree and that no proceedings derive from it.
 
-No current record demonstrates that ending or disabling the workstream generated a superior LPB outcome.
+This independently closes the endpoint question. It does not prove that no separate substantive Article 1535 action was ever filed in another proceeding.
 
-Potential lost value includes:
+## 4. The strongest causation chain currently supportable
 
-- access to the assignment price/economics;
-- the ability to complete the technical Article 1535 analysis with primary transaction material;
-- litigation and settlement optionality;
-- bargaining leverage against the assignee; and
-- a cleaner audit trail for the secured-credit balance and assignment chain.
+`Cristo formal LPB mandate → direct AC termination/control intervention → formal procedural-control change → Borja recorded as LPB lawyer → LPB withdrawal → DP 1041 archive`
 
-The existence of these potential values does **not** prove the substantive Article 1535 action would have succeeded. Later Supreme Court jurisprudence confirms a strict conception of crédito litigioso and contains important limitations, including where transfers are made in qualifying bulk transactions. That counter-law reinforces the need to separate **claim merits** from **information value**.
+The first transition is **C5 direct documentary causation**. The later transition from AC procedural control to the specific withdrawal decision remains an open attribution question.
 
-The correct institutional test is therefore not “why did LPB lose a sure winning claim?” It is:
+Accordingly, the strongest public-safe statement is:
 
-> **Why was a live debtor-side option surrendered or allowed to expire, who made that decision, on what evidence, and what objectively measurable estate benefit justified it?**
+> **The insolvency administration directly caused the end of Cristo Suárez Pimentel's specific formal LPB mandate in the DP 1041 workstream. By 5 March 2018 the court record lists Borja as LPB's lawyer and records that LPB had requested withdrawal; in 2024 the court again confirmed that the file was archived because of that plaintiff-side withdrawal. The internal decision and filing chain behind the withdrawal remains to be established.**
 
-## 7. Representation continuity — preservation note
+## 5. Estate-benefit test
+
+The cleanest question is now framed in the court's own procedural terminology:
+
+> **What benefit did LPB obtain from withdrawing an already-admitted judicial route to obtain the assignment deed, price, payment and costs?**
+
+Current reconstruction: `NO_MEASURABLE_LPB_BENEFIT_LOCATED`.
+
+A legitimate explanation may exist — settlement consideration, debt reduction, enforcement-risk reduction, litigation-cost avoidance, or another quantified estate advantage. What has not yet been located is the contemporaneous documentary bridge showing that analysis and identifying the decision-maker.
+
+The adverse Article 1535 ruling matters. But **weak substantive merits** and **zero information value** are not identical propositions.
+
+## 6. Strongest defensible framing of the AC
+
+### Representation causation
+
+`C5_DIRECT_CAUSATION_OF_CRISTO_FORMAL_LPB_MANDATE_END`
+
+This may now be stated as verified for DP 1041.
+
+### Distribution of effects
+
+`FUNCTIONAL_DELIVERY_CAM_FAVOURABLE_EFFECT`
+
+The measurable sequence is that the AC supported CAM's creditor substitution, the Commercial Court expressly relied on that verification, CAM obtained recognised assignee-creditor status, and the debtor-side disclosure/retracto route later ended by LPB withdrawal without a demonstrated corresponding estate benefit.
+
+A strong but responsible formulation is:
+
+> **The AC's intervention had two documented effects in the same workstream: it supported CAM's creditor recognition and it directly displaced the lawyer who had initiated LPB's deed-and-price route. The proceeding later records Borja as LPB's lawyer and LPB's withdrawal. That sequence demands an estate-interest and instruction-chain explanation; it does not by itself prove collusion or unlawful intent.**
+
+## 7. Strongest defensible framing of the Commercial Court
+
+The 15 February order supports an **intervention/deference asymmetry** question:
+
+- LPB obtained a separate JPI order compelling production of the assignment economics;
+- the Mercantile Court recognised CAM while expressly relying on AC verification rather than requiring all title material itself;
+- it rejected LPB's Article 1535 position; but
+- it also corrected amounts in LPB's favour.
+
+Use `CAM-favourable in effect`, `intervention asymmetry`, `asymmetric evidentiary treatment` and `deference to AC`.
+
+Do not publish improper judicial bias, prevaricación or corruption as established from this dossier alone.
+
+## 8. Counter-record that must remain visible
+
+1. Article 1535 uses a strict concept of litigated credit; not every disputed or enforced credit qualifies.
+2. The 15 February 2018 ruling rejected LPB's position on that issue.
+3. The same ruling corrected some amounts in LPB's favour.
+4. An insolvency administrator can legitimately decide not to continue weak or value-destructive litigation if that decision is rationally grounded in estate interest.
+5. The JPI and Mercantile routes addressed different applications.
+6. No current primary source proves collusion among CAM, PH122/Cerberus, the AC and the judge.
+
+## 9. Representation continuity
 
 ### Cristo Suárez Pimentel
 
-No documented voluntary resignation has been located in the current reconstruction. The record also shows continued broader Sun Park legal activity after January 2018, so a total “Cristo resigned/left” formulation is unsafe.
-
-Gil Marer's present account is that the AC caused Cristo's relevant formal LPB role to cease. That account is preserved as **client testimony pending documentary rebinding**. The precise revocation/handover instrument and its effect on DP 1041/2017 remain P0 evidence targets.
+No voluntary resignation has been located. His specific formal LPB mandate was directly terminated by the AC on 25 January 2018. Cristo's later broader Sun Park work means that **formal LPB displacement must not be rewritten as total professional abandonment**.
 
 ### Armando Betancor Álamo
 
-A signed 2019 Aweswell services/success-fee engagement and subsequent legal work have been located. Classification should therefore be upgraded from candidate contact to **VERIFIED_RETAINED_ADVISER_2019**, with matter-by-matter scope still to be mapped.
+Verified as a retained Aweswell adviser in 2019 through a located services/success-fee agreement; matter-by-matter scope still to be mapped.
 
 ### Joaquín Ruiz de Infante Abella
 
-Direct legal drafting/filing and coordinated work are documented in 2019. Classification: **VERIFIED_COLLABORATING_LAWYER_2019; SEPARATE_RETAINER_NOT_YET_LOCATED**.
+Verified as a collaborating lawyer carrying out coordinated drafting/filing work in 2019; separate standalone retainer not yet located.
 
-### Javier and Estefanía Sixto
+### Javier / Estefanía Sixto
 
-Later review of archived Promontoria/retracto material is documented. No later Sixto communication has yet been located that definitively concludes that the Article 1535 action was viable or non-viable. Do not attribute either conclusion to them.
+Later review of the archived Promontoria/retracto material is documented. No definitive later Sixto conclusion on Article 1535 viability/non-viability has yet been located.
 
-## 8. Counterevidence and alternative explanations that must remain visible
+## 10. P0 evidence after closure
 
-1. The Commercial Court's adverse 15 February 2018 interpretation is genuine counterevidence to any assertion that the Article 1535 right was certain.
-2. The court corrected amounts in LPB's favour.
-3. An AC can legitimately avoid weak or value-destructive litigation if that decision is grounded in a rational estate-benefit analysis.
-4. The JPI nº 2 and Commercial Court proceedings concerned different procedural questions.
-5. No current primary source proves collusion among CAM, PH122/Cerberus, the AC and the judge.
+The P0 list is now narrower:
 
-The repository's strength comes from keeping those counterpoints visible while demanding the missing estate-benefit explanation.
+1. Exact withdrawal pleading that produced the 5 March 2018 Decree.
+2. Internal decision/instruction chain: who decided to withdraw and who instructed counsel/procurador.
+3. Author/drafter/signatory/filer and filing channel of the withdrawal pleading.
+4. Complete Cristo → successor `venia`, power and handover chronology.
+5. Contemporaneous estate-interest/cost-benefit analysis for withdrawal.
+6. Complete appeal/finality chain for the 15 February 2018 order.
+7. Complete PH122 → CAM deed, schedules, allocated price, payment and servicing proof.
+8. Exact pre-assignment declaratory controversy relevant to the technical Article 1535 test, credit by credit.
+9. Any independent substantive Article 1535 action filed elsewhere.
 
-## 9. P0 evidence gaps
+## 11. Publication rule
 
-1. Exact primary act ending/withdrawing/archiving DP 1041/2017, including author, signatory, filing date and instruction chain.
-2. Exact instrument changing Cristo's formal LPB authority and complete handover chronology.
-3. Appeal/finality chain for the 15 February 2018 Commercial Court order.
-4. Pre-assignment proceedings relied on by LPB to satisfy the technical litigated-credit test, credit by credit.
-5. Complete PH122 → CAM deed, schedules, price allocation and proof of payment.
-6. Any contemporaneous written AC/court/LPB estate-benefit analysis concerning continuation or abandonment of the workstream.
-7. Separate limitation/enforceability analysis for later property/unit-level preferential-acquisition / tanteo-retracto rights.
+This audit supports strong causation and accountability questions. It must not be converted into an unsupported finding that:
 
-## 10. Publication rule
+- Cristo voluntarily resigned;
+- the AC personally drafted, signed or instructed the withdrawal;
+- the AC destroyed a certain winning claim;
+- the judge blocked a legally certain retracto;
+- Cerberus was the legal assignor absent primary proof; or
+- a criminal agreement, corruption or improper motive is established.
 
-This audit is a causation and effect map. It may support strong institutional questions. It must not be converted into a finding of criminal agreement, corruption or improper motive without additional evidence.
+The evidence is strongest when the documented chain is stated precisely and the remaining attribution gap is made explicit.
