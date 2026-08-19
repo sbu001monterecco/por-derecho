@@ -1,10 +1,11 @@
 {
   "publication_id": "AC-LOYALTY-BREAKPOINT-CROSSSITE-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "publication_type": "bilingual dedicated dossier plus cross-site forensic question module",
   "controlling_pr": 454,
+  "merge_sha": "5255be04a27c8c9aa39cc7205805839902543d99",
   "controlling_proposition": {
     "es": "Por Derecho investiga si y cuándo la Administración Concursal dejó de poder explicarse como administración leal e independiente de LPB y empezó a validar, proteger, adoptar o ejecutar funcionalmente intereses privados adversos, distinguiendo la arquitectura pre-CAM de la posterior entrada de Acosta Matos.",
     "en": "Por Derecho investigates whether and when the insolvency administration ceased to be explainable as loyal, independent administration for LPB and began validating, protecting, adopting or functionally implementing adverse private interests, separating the pre-CAM architecture from the later Acosta Matos phase."
@@ -25,6 +26,18 @@
     "sitemap-banking-recovery.xml"
   ],
   "cross_site_scope": "All substantive ES/EN pages except utility/search/privacy/update/book routes; expanded module on AC, CAM, Community, retracto/Article1535, takeover, insolvency, recovery, RICPE and public-funds routes.",
+  "validation": {
+    "evidence": [
+      "PR 454 Publication integrity gate run 32246192439: success.",
+      "PR 454 Validate unitary public shell run 32246192392: success.",
+      "Syntax, JSON and sitemap checks: success.",
+      "Desktop/mobile Playwright route-archetype rendering: success.",
+      "PR 454 squash-merged to main at 5255be04a27c8c9aa39cc7205805839902543d99."
+    ],
+    "publication_integrity": "PASS",
+    "unitary_public_shell": "PASS",
+    "browser_render": "PASS"
+  },
   "evidence_boundary": {
     "pre_cam": "The 2008 transfer architecture and the 11-Jun-2016 meeting support a documented pre-CAM private adverse/dispute perimeter. They do not by themselves prove AC agency or collusion.",
     "cam_transition": "Knowing adoption, support, cooperation, conflict or collusion remains an investigative question requiring actor-specific communications and conduct.",
@@ -45,6 +58,7 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "PR/source state is distinct from merge, deployment and public-edge verification."
-  }
+    "note": "MERGED records repository/source state only. DEPLOYED/LIVE_VERIFIED require separate public-edge readback after GitHub Pages propagation."
+  },
+  "notes": "The loyalty-breakpoint doctrine is merged, source-controlled and CI/browser-green. No public-edge live state is claimed until independently verified."
 }
