@@ -17,10 +17,14 @@
   });
 
   // Shared actor-family / PwC knowledge visualization.
-  load('homepage-actor-family-pwc-note-20260819.js?v=20260819b');
+  // Version c carries the source-led 2011/2014 chronology locks for FMMM, Antonio and Shaila.
+  load('homepage-actor-family-pwc-note-20260819.js?v=20260819c');
 
-  // Canonical same-asset / parallel-lives visual. One component now serves homepage,
-  // RICPE, RSM, San Telmo, Insolvency Administrator, Grant Thornton and the principal
+  // Canonical historical lock notice for the full public people / representatives register.
+  load('sun-park-canonical-actor-history-lock-20260819.js?v=20260819a');
+
+  // Canonical same-asset / parallel-lives visual. One component serves homepage,
+  // RICPE, RSM, San Telmo, Insolvency Administrator, Grant Thornton and principal
   // parallel-lives / accountability / reconstruction pages in EN and ES.
   load('san-telmo-parallel-lives-red-20260819.js?v=20260819b');
 
