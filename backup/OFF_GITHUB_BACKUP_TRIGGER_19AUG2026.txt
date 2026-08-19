@@ -1,0 +1,2 @@
+One-shot trigger for the 19 August 2026 off-GitHub preservation run.
+This file exists only to cause a second push after the preservation workflow is present on the branch.
