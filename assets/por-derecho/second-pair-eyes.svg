@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" role="img" aria-labelledby="title desc">
+  <title id="title">El Segundo Par de Ojos</title>
+  <desc id="desc">Dos ojos abstractos y una balanza representan una segunda revisión jurídica neutral.</desc>
+  <g fill="none" stroke="#0b2b45" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 27c6-10 14-15 24-15s18 5 24 15c-6 10-14 15-24 15S9 37 3 27Z"/>
+    <circle cx="27" cy="27" r="7"/>
+    <path d="M33 14c4-6 9-9 15-9 6 0 11 3 15 9-4 6-9 9-15 9-3 0-6-.8-8.6-2.5"/>
+    <circle cx="48" cy="14" r="3.6"/>
+  </g>
+  <g fill="none" stroke="#c58a2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 29h16M50 26v17M45 31l-4 7h8l-4-7ZM55 31l-4 7h8l-4-7ZM46 43h8"/>
+  </g>
+</svg>
