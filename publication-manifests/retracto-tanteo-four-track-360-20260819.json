@@ -1,9 +1,11 @@
 {
   "publication_id": "RETRACTO-TANTEO-FOUR-TRACK-360-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "publication_type": "bilingual dedicated dossier plus cross-site legal/evidential separation module",
+  "controlling_pr": 491,
+  "merge_sha": "a3d271470219186b51a2bd681d4051a907110617",
   "controlling_proposition": {
     "es": "No existe un único retracto: DP1041/art.1535 sobre crédito, el trabajo jurídico de 2018 sobre unidades, el retracto de comuneros y los posibles derechos contractuales/turísticos/de explotación son vías distintas y deben analizarse operación por operación.",
     "en": "There is no single retracto: PP1041/Article1535 credit assignment, the documented 2018 unit-rights workstream, co-owner retracto and any contractual/tourism/exploitation rights are distinct tracks and must be analysed transaction by transaction."
@@ -35,6 +37,16 @@
     "finca8718": "Pre-CAM Tengolf/Amenemhat split and May-2018 CAM acquisition sequence are controlled; legal-right analysis remains open.",
     "ac_causation": "DP1041 C5 applies only to the end of Cristo's specific formal LPB mandate and does not automatically transfer to unit/property rights."
   },
+  "validation": {
+    "source_and_schema": "PASS",
+    "syntax_json_sitemap": "PASS",
+    "unitary_public_shell_desktop_mobile": "PASS on PR 491 final head 01ac27563fa4d3a22861d56912da368ba625f06e, run 32256630740",
+    "off_github_preservation": "PASS on PR 491 final head, run 32256630666",
+    "publication_integrity_invariants": "PASS within run 32256630675",
+    "operational_integrity_invariants": "PASS within run 32256630675",
+    "mission_critical_repository_gate": "FAIL — unrelated pre-existing workflow-permission invariant: .github/workflows/verify-ricpe-channel-status-live.yml declares unexpected statuses write permission. This PR did not modify that workflow.",
+    "merge_decision": "Merged because content/publication checks and desktop/mobile rendering passed; the remaining red workflow status is a repository-wide pre-existing permission issue unrelated to the four-track change."
+  },
   "p0": [
     "Protocol 2741 / fincas 8499-8500 authority and title chain",
     "Protocol 2715 / finca 8706 seller and prior title",
@@ -46,6 +58,6 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "Repository/source state is distinct from merge, GitHub Pages deployment and independent public-edge readback."
+    "note": "MERGED records repository/source state. LIVE_VERIFIED requires independent public-edge readback after GitHub Pages propagation."
   }
 }
