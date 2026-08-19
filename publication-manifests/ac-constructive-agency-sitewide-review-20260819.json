@@ -17,6 +17,7 @@
   "expected_source_files": [
     "archive/AC_LOYALTY_BREAKPOINT_PREDECESSOR_CAM_CONTINUITY_CONTROL_19AUG2026.md",
     "archive/AC_CONSTRUCTIVE_AGENCY_REPOSITORY_WEBSITE_REVIEW_19AUG2026.md",
+    "archive/THREAD_DELETION_SAFETY_AC_SITEWIDE_REVIEW_19AUG2026.md",
     "assets/data/ac-loyalty-breakpoint-v1.json",
     "assets/ac-loyalty-breakpoint-20260819.js",
     "assets/cam-favourable-pattern-20260819.js",
@@ -76,9 +77,16 @@
     "Actor communication graph around 2017 credit acquisition, June 2018 and 2020-22 adjudication.",
     "Evidence distinguishing coincidence/deference/negligence from knowing implementation and direct concerted action."
   ],
+  "thread_deletion_audit": {
+    "status": "THREAD_SAFE_TO_DELETE_FOR_ANALYTICAL_CONTINUITY_AFTER_AUDIT_MERGE",
+    "audit_path": "archive/THREAD_DELETION_SAFETY_AC_SITEWIDE_REVIEW_19AUG2026.md",
+    "repository_preservation": "COMPLETE_FOR_THREAD_OUTPUT",
+    "live_edge_dependency": false,
+    "note": "Deleting the chat does not remove the controlling doctrine, implementation, validation record, publication boundaries or P0 evidence queue. Independent public-edge readback remains a separate operational task and is not dependent on preservation of this thread."
+  },
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
     "note": "MERGED records repository/source state only. DEPLOYED/LIVE_VERIFIED require separate public-edge readback after GitHub Pages propagation."
   },
-  "notes": "Repository-wide review is merged and CI/browser-green. Functional/de facto adverse agency remains a controlled forensic hypothesis, not an adjudicated finding."
+  "notes": "Repository-wide review is merged and CI/browser-green. Functional/de facto adverse agency remains a controlled forensic hypothesis, not an adjudicated finding. Thread deletion safety is separately preserved in the repository."
 }
