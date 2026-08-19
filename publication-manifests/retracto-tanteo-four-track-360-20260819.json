@@ -1,0 +1,51 @@
+{
+  "publication_id": "RETRACTO-TANTEO-FOUR-TRACK-360-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "control_date": "2026-08-19",
+  "publication_type": "bilingual dedicated dossier plus cross-site legal/evidential separation module",
+  "controlling_proposition": {
+    "es": "No existe un único retracto: DP1041/art.1535 sobre crédito, el trabajo jurídico de 2018 sobre unidades, el retracto de comuneros y los posibles derechos contractuales/turísticos/de explotación son vías distintas y deben analizarse operación por operación.",
+    "en": "There is no single retracto: PP1041/Article1535 credit assignment, the documented 2018 unit-rights workstream, co-owner retracto and any contractual/tourism/exploitation rights are distinct tracks and must be analysed transaction by transaction."
+  },
+  "expected_routes": {
+    "es": ["es/retracto-tanteo-cuatro-vias/index.html"],
+    "en": ["en/retracto-tanteo-four-tracks/index.html"]
+  },
+  "expected_source_files": [
+    "archive/RETRACTO_TANTEO_FOUR_TRACK_360_CONTROL_19AUG2026.md",
+    "assets/data/retracto-tanteo-four-track-v1.json",
+    "assets/retracto-tanteo-four-track-20260819.js",
+    "assets/cam-favourable-pattern-20260819.js",
+    "archive/DP1041_REGISTER_CORRECTION_SUPPLEMENT_19AUG2026.md",
+    "archive/PH122_CAM_ASSIGNMENT_ART1535_PUBLICATION_CONTROL_16AUG2026.md",
+    "archive/RETRACTO_CREDITO_LITIGIOSO_DP1041_UNITARY_CAUSATION_AUDIT_19AUG2026.md",
+    "sitemap-banking-recovery.xml"
+  ],
+  "legal_controls": {
+    "law5_1999": "Paragraph 4 of the sole transitional provision was investigated by counsel historically but was not an operative 2018 basis; Law 2/2000 had removed it and STC 28/2012 declared it unconstitutional and null.",
+    "art1522_1524": "Candidate only for genuine same-property undivided co-ownership and sale to an outsider; nine-day statutory period must be tested from registration or actual knowledge.",
+    "art396": "No generic tanteo/retracto arises merely because owners hold separate flats/locals in the same horizontal-property regime.",
+    "dp1041_appeal": "The 15-Feb-2018 Commercial Court order provided a 20-day appeal under Article 97 bis.2 LC; five-day remedies belong to distinct later procedural acts."
+  },
+  "evidence_controls": {
+    "rtb": "Separate May-June 2018 unit-rights legal workstream is directly documented; enforceable right remains transaction-specific.",
+    "finca8500": "Priority Article 1522 candidate because 2016 title material records pro-indiviso ownership; no merits conclusion yet.",
+    "finca8706": "CAM 100% acquisition under 27-Dec-2017 protocol 2715 is controlled; seller identity remains P0 until operative deed closure.",
+    "finca8718": "Pre-CAM Tengolf/Amenemhat split and May-2018 CAM acquisition sequence are controlled; legal-right analysis remains open.",
+    "ac_causation": "DP1041 C5 applies only to the end of Cristo's specific formal LPB mandate and does not automatically transfer to unit/property rights."
+  },
+  "p0": [
+    "Protocol 2741 / fincas 8499-8500 authority and title chain",
+    "Protocol 2715 / finca 8706 seller and prior title",
+    "Protocols 1083 and 1127 / finca 8718 price-notice-registration",
+    "Finca 8501 retroventa/CAM chain",
+    "Any actual unit-rights filing or draft from May-June 2018",
+    "Full 2008 sale/exploitation and CEXP instruments",
+    "Fresh AC knowledge/control/causation analysis for each established right"
+  ],
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "Repository/source state is distinct from merge, GitHub Pages deployment and independent public-edge readback."
+  }
+}
