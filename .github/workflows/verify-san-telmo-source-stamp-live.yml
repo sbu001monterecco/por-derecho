@@ -3,9 +3,13 @@ name: Verify San Telmo source stamp live
 on:
   pull_request:
     paths:
+      - "assets/site.js"
+      - "assets/site-base-20260819.js"
       - "assets/san-telmo-source-stamp-20260819.js"
       - "assets/ricpe-identity-correction-20260815.js"
       - "assets/actors/eduardo-sanchez-san-telmo.url"
+      - "assets/actors/francisco-de-borja-rodriguez-batllori.jpg"
+      - "assets/sun-park-mynd-yaiza.jpg"
       - "assets/visual-asset-registry.json"
       - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
       - "scripts/verify_san_telmo_source_stamp_live.py"
@@ -13,9 +17,13 @@ on:
   push:
     branches: [main]
     paths:
+      - "assets/site.js"
+      - "assets/site-base-20260819.js"
       - "assets/san-telmo-source-stamp-20260819.js"
       - "assets/ricpe-identity-correction-20260815.js"
       - "assets/actors/eduardo-sanchez-san-telmo.url"
+      - "assets/actors/francisco-de-borja-rodriguez-batllori.jpg"
+      - "assets/sun-park-mynd-yaiza.jpg"
       - "assets/visual-asset-registry.json"
       - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
       - "scripts/verify_san_telmo_source_stamp_live.py"
@@ -28,7 +36,7 @@ permissions:
 jobs:
   public-edge:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -38,5 +46,17 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Verify source stamp, assets, loader chain and controlled public routes
+      - name: Install browser verification dependency
+        run: python -m pip install --disable-pip-version-check playwright==1.55.0
+
+      - name: Verify HTTP delivery and rendered source stamp on desktop and mobile
         run: python scripts/verify_san_telmo_source_stamp_live.py
+
+      - name: Upload rendered verification screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: san-telmo-source-stamp-live-verification
+          path: artifacts/san-telmo-source-stamp-live
+          if-no-files-found: warn
+          retention-days: 30
