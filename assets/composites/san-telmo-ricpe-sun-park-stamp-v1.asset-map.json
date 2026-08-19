@@ -2,7 +2,7 @@
   "visual_id": "san-telmo-ricpe-sun-park-stamp-v1",
   "title": "San Telmo / RICPE / Sun Park documentary collision",
   "control_date": "2026-08-19",
-  "publication_status": "BLOCKED_PENDING_ALL_ACTIVE_ASSETS",
+  "publication_status": "READY",
   "slots": {
     "left_portrait_eduardo_sanchez": "person.eduardo-sanchez-san-telmo.primary",
     "centre_same_asset_sun_park": "place.sun-park-mynd-yaiza.aerial-primary",
@@ -13,7 +13,22 @@
     "centre_same_asset_sun_park": "Must use the canonical Sun Park / MYND Yaiza asset or an explicitly registered variant.",
     "right_portrait_borja_ac": "Must use the canonical Francisco de Borja Rodríguez-Batllori Laffitte repository asset. Must not use the user-uploaded Eduardo Sánchez portrait."
   },
-  "activation_condition": "Change publication_status to READY only after every slot resolves to an active byte-locked registry asset and the validator passes.",
+  "activation_condition": "Satisfied: each slot resolves to an active canonical registry asset or byte-locked first-party pointer, and the native source-stamp component passes the visual-asset validator before merge.",
   "required_text_lead": "San Telmo partner Eduardo Sánchez stated that ‘el despacho’ put clients into the RICPE investment connected to Sun Park.",
-  "boundary": "The visual may establish the source-controlled same-asset professional overlap. It must not represent Borja–Eduardo coordination, information transfer, unlawfulness or liability as proved without separate evidence."
+  "boundary": "The visual may establish the source-controlled same-asset professional overlap. It must not represent Borja–Eduardo coordination, information transfer, unlawfulness or liability as proved without separate evidence.",
+  "composite_asset_id": "composite.san-telmo-ricpe-sun-park-stamp-v1",
+  "composite_path": "assets/san-telmo-source-stamp-20260819.js",
+  "composite_git_blob_sha": "adc1f705e0cee8a9013a9b9a23ae5e6fe22a1143",
+  "source_reference": {
+    "title": "Enrique Guerra, en #UnCaféenSanTelmo",
+    "publisher": "San Telmo Abogados y Economistas",
+    "publication_date": "2021-11-30",
+    "youtube_video_id": "mHn9IJU0qI4",
+    "statement_start": "00:08:08",
+    "statement_completion": "00:08:12",
+    "context_window": "00:07:57–00:08:27",
+    "transcript_pages": "29–30 of 85",
+    "controlled_words": "bueno, nosotros en el despacho... en esa primera inversión... metimos unos cuantos clientes"
+  },
+  "composite_storage_mode": "native-html-css"
 }

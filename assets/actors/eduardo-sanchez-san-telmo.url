@@ -1,0 +1,7 @@
+# Canonical external image pointer — Eduardo Sánchez
+image_url=https://res.cloudinary.com/rsmglobal/image/fetch/t_default/f_auto/q_auto/https%3A/www.rsm.global/spain/sites/default/files/media/01%20Global%20assets/02_Thumbnails%201240x930px/06_fotos%20profesionales/Eduardo%20S%C3%A1nchez%20%281%29.jpg
+fallback_image_url=https://abogadossantelmo.com/wp-content/uploads/2022/07/Eduardo-Sanchez-Iglesias-500x500.jpg
+source_page=https://www.rsm.global/spain/es/people/eduardo-sanchez
+identity_basis=user-confirmed portrait and first-party RSM professional profile
+user_authorisation_date=2026-08-19
+user_supplied_sha256=a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6

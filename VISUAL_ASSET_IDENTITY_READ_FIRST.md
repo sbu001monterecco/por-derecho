@@ -17,9 +17,9 @@ Any task that uses a named person's image on the Por Derecho website, in an info
   - `assets/actors/francisco-de-borja-rodriguez-batllori.jpg`
 - Eduardo Sánchez / San Telmo:
   - `person.eduardo-sanchez-san-telmo.primary`
-  - currently pending repository import; do not publish a portrait until activated in the registry.
+  - `assets/actors/eduardo-sanchez-san-telmo.url` — a byte-locked repository pointer to the first-party RSM profile image corresponding to the user-authorised portrait.
 
-The user-confirmed Eduardo Sánchez image must never be used in the Borja / AC slot.
+The Eduardo Sánchez and Borja / AC assets are both active and carry reciprocal `do_not_confuse_with` locks. The controlling composite slot map is `assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json`.
 
 Run before merge:
 

@@ -24,10 +24,11 @@
   // Canonical historical lock notice for the full public people / representatives register.
   load('sun-park-canonical-actor-history-lock-20260819.js?v=20260819a');
 
-  // Canonical same-asset / parallel-lives visual. One component serves homepage,
-  // RICPE, RSM, San Telmo, Insolvency Administrator, Grant Thornton and principal
-  // parallel-lives / accountability / reconstruction pages in EN and ES.
-  load('san-telmo-parallel-lives-red-20260819.js?v=20260819b');
+  // Preserve the established parallel-lives analysis and then place the source-stamped
+  // Eduardo → Sun Park → Borja visual immediately before it on every controlled route.
+  load('san-telmo-parallel-lives-red-20260819.js?v=20260819b', () => {
+    load('san-telmo-source-stamp-20260819.js?v=20260819a');
+  });
 
   // RSM NNR4 chronology/read-back update for the recovered 30-Nov-2021 San Telmo/RICPE finding.
   load('rsm-san-telmo-current-update-20260819.js?v=20260819a');
