@@ -46,9 +46,63 @@ Read first:
 - `SUN_PARK_CANONICAL_ACTOR_REGISTER.md`
 - `SUN_PARK_ACTOR_CONTRADICTIONS_SUPERSESSION_LOG.md`
 
+## Canonical `5 + AC` design rule
+
+The controlling visual is **five private actors plus one separate insolvency control point**.
+
+### The five private actors
+
+1. Francisco Mario Matos Matas.
+2. Antonio Cogolludo Rojas.
+3. Shaila María Cogolludo Ramos.
+4. José Daniel Acosta Matos.
+5. Laura Patricia Acosta Matos.
+
+### The `+ AC` node
+
+- **Francisco de Borja Rodríguez-Batllori Laffitte** — Administrador Concursal in Concurso 36/2012.
+- He must not be rendered as a sixth private actor or as automatically sharing the five actors' alleged purpose.
+- The visual test is: `knowledge → statutory power/duty → act or omission → patrimonial consequence`.
+- The attributed Project allegation may state that specified acts, omissions, procedural positions or silences enabled or failed to stop the private/economic chain. It may not state collusion, common criminal intent or proved criminal liability without a source or adjudication establishing it.
+
+### Mandatory visual chain
+
+The component must show, in this order:
+
+`TITLE → COMMUNITY AUTHORITY → DEBT/VOTE → ACCESS → VALUATION/WORKS → CAPITAL → OPERATION/INCOME → BENEFICIARY/OUTCOME`
+
+Each stage is a documentary question, not an assertion that every named actor participated in every stage.
+
+### 7 June 2018 hinge
+
+The design may state that the public record describes a broken lock, chains, padlocks, replacement cylinders, security and exclusion. It may attribute to Gil Marer the allegation that this was a forcible and destructive seizure of hotel control within a wider economic mechanism. It must also preserve that this is not a final criminal finding and that no CAM possession or eviction order has been located in the controlled record.
+
+### Judicial-protection layer
+
+The judge and Court are not seventh private actors. A separate strip may attribute the allegation that the chain obtained judicial protection, continuity or later validation instead of being interrupted. Judicial decisions, omissions, competence and safeguards must remain on their own institutional pages with procedural status, sources, reasonable defence and correction rights.
+
+### Design prohibitions
+
+The visual must not imply:
+
+- guilt by family, company, firm or professional association;
+- that all five actors performed every step;
+- that the AC was a member of the private group;
+- that PwC adopted the client's criminal allegations as its own findings;
+- that PwC transmitted the full allegations to the AC without proof;
+- that a criminal offence, collusion or judicial wrongdoing has already been finally adjudicated.
+
+### Controlled surfaces and implementation
+
+The shared component is implemented in:
+
+`assets/homepage-actor-family-pwc-note-20260819.js?v=20260819d`
+
+It controls the bilingual homepage and the relevant PwC, RICPE, 7 June 2018, Insolvency Administrator and institutional-accountability routes. The obsolete static five-card block is hidden when the component mounts so contradictory 2017/2018 labels are not rendered.
+
 ## PwC visual-note rule
 
-The homepage may attach a compact PwC/Carlos Saavedra evidential annotation to the FMMM / Antonio Cogolludo / Shaila Cogolludo cluster.
+The `5 + AC` component may attach a compact PwC/Carlos Saavedra evidential annotation.
 
 Permitted dominant quotation: `“LA VÍA PENAL CONTRA ESTA GENTE”`.
 
