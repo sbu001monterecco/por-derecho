@@ -1,0 +1,31 @@
+{
+  "publication_id": "SUN-PARK-REVERSE-ENGINEERING-360-20260819",
+  "control_date": "2026-08-19",
+  "status": "PUBLICATION_CONTROL",
+  "canonical_control": "archive/SUN_PARK_REVERSE_ENGINEERING_360_CONTROL_19AUG2026.md",
+  "thread_continuity": "archive/THREAD_DELETION_AUDIT_ART1535_REVERSE_ENGINEERING_19AUG2026.md",
+  "routes": {
+    "es": "/por-derecho/es/ingenieria-inversa-360-cadena-sun-park/",
+    "en": "/por-derecho/en/reverse-engineering-360-sun-park-chain/"
+  },
+  "sitewide_gateway": "assets/reverse-engineering-360-20260819.js",
+  "loader_bridge": "assets/art1535-reserve-pathway-20260819.js",
+  "sitemap": "sitemap-reverse-engineering-360.xml",
+  "robots_registration": "robots.txt",
+  "controlling_propositions": [
+    "The present does not prove the past.",
+    "Prove the bridge; prove the dependency; prove the consequence.",
+    "For Article 1535: no Day Nine without proving Day Zero.",
+    "Downstream invalidity is not presumed; independent survival must be tested node by node."
+  ],
+  "counsel_gates": [
+    "LO 1/2025 Article 7 specifically applied to a live nine-day Article 1535 caducity period",
+    "transitional application of LO 1/2025",
+    "historic or future Article 1535 trigger",
+    "exact Insolvency Administrator limitation position",
+    "claim-specific latest safe dates",
+    "actual Article 40 LEC criminal-prejudiciality posture",
+    "third-party protection consequences for specific downstream acts"
+  ],
+  "verification_policy": "Confirm merge to main separately from public-edge read-back; do not infer one from the other."
+}

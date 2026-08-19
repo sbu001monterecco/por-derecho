@@ -77,3 +77,16 @@
     if (main) main.insertBefore(section, main.firstChild);
   }
 })();
+
+// Global 360° reverse-engineering gateway loader. This reserve module is already loaded
+// site-wide through the CAM pattern chain, so this keeps the new dependency analysis
+// available without duplicating the assets/site.js loader graph.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-reverse-engineering-360-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('reverse-engineering-360-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.reverseEngineering360Loader = 'true';
+  document.head.appendChild(script);
+})();
