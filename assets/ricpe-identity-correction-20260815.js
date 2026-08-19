@@ -28,4 +28,7 @@
   // Dominant San Telmo / RICPE same-asset parallel-lives visual.
   // Reused on the homepage actor map, RSM NNR4, RICPE and Insolvency Administrator pages.
   load('san-telmo-parallel-lives-red-20260819.js?v=20260819a');
+
+  // RSM NNR4 chronology/read-back update for the newly recovered 30-Nov-2021 San Telmo/RICPE finding.
+  load('rsm-san-telmo-current-update-20260819.js?v=20260819a');
 })();
