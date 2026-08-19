@@ -37,6 +37,7 @@ ALLOWED_WRITE = {
     "verify-ricpe-channel-status-live.yml": {"statuses"},
     "verify-adjudicacion-2022-live.yml": {"statuses"},
     "verify-criminal-engineering-investigation-live.yml": {"statuses"},
+    "verify-san-telmo-rendered-attribution-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
     "repository-backup-bundle.yml": {"statuses"},
 }
