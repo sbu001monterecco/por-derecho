@@ -45,7 +45,17 @@ Provider/list behind61; ACTÚA instructions/invoice/field notes/native photos; g
 ## Publication safeguards
 Do not publish as established that ACTÚA showed only Blocks4–5 negative photos; the three apartment interiors are Blocks4–5; ACTÚA personally verified all61; 61 means Blocks4–5; approximately44 equals Blocks4+5; incomplete access was illegal/unauthorised; or fraud is established.
 
-## Governance
-Old PR #448 became non-mergeable against an outdated base. Its material findings were re-applied onto current main through a fresh reconciliation branch instead of forcing an obsolete tree. Final PR number and merge SHA are recorded by the completion email and final thread response after successful merge/main verification.
+## Governance history and final continuity confirmation
+- Old PR #448 became non-mergeable against an outdated base and was closed as superseded.
+- PR #484 also became stale during concurrent `main` updates and was closed as superseded.
+- The material ACTÚA work was atomically rebased onto current `main` in PR **#486**.
+- PR #486 merged successfully with merge SHA **`1f9e6c0e8c809559f9068ca8cb0d09634bede09c`**.
+- After merge, the deletion closeout, primary-source digest, 13-photo ledger, 60/61/approximately44 reconciliation and Spanish publication page were re-read from `main`; the corresponding English page was part of the same six-file merge.
+- A self-addressed continuity email was sent to `sbu001@monterecco.com`, subject `Por Derecho continuity closeout — ACTÚA primary-source scan merged`, Gmail message id **`1a01a15559d13f0a`**. It records the merge SHA, repository paths, material corrections, open evidence targets and governance cleanup.
+- Native Gmail/Drive provenance is recorded, so expiration of temporary conversation-upload copies does not make this thread necessary for source discovery.
 
-Final deletion classification after successful merge/main verification and self-addressed continuity email: **DELETION-SAFE WITH OPEN EVIDENCE**.
+## Final deletion classification
+
+**DELETION-SAFE WITH OPEN EVIDENCE.**
+
+The open items above are evidence-development targets, not chat-continuity dependencies. The thread may be deleted without losing the ACTÚA findings, corrections, source map, publication state, falsification rules or next investigative steps.
