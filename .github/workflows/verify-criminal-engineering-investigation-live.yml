@@ -17,6 +17,7 @@ on:
       - 'assets/data/criminal-engineering-investigation-v1.json'
       - 'scripts/render_criminal_engineering_investigation.mjs'
       - 'publication-manifests/criminal-engineering-investigation-20260819.json'
+      - 'publication-manifests/case-information-architecture-20260819.json'
       - 'sitemap-criminal-engineering.xml'
       - 'sitemap-case-governance.xml'
       - 'robots.txt'
