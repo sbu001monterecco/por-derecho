@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "purpose": "Cross-site analytical control for repeated CAM-favourable outcomes across the Sun Park / LPB record. It distinguishes verified effects, possible duty breaches, role-boundary questions and criminal hypotheses requiring independent proof. It does not infer conspiracy, corruption, improper judicial bias or criminal liability from chronology alone.",
+  "controllingPrinciple": {
+    "es": "No basta contar cuántas decisiones fueron adversas a LPB. Debe medirse, episodio por episodio, quién ganó posición jurídica o patrimonial, qué protección perdió LPB, qué beneficio recibió la masa y qué explicación contemporánea existe.",
+    "en": "It is not enough to count decisions adverse to LPB. Episode by episode, the record should measure who gained legal or patrimonial position, what protection LPB lost, what benefit the estate received, and what contemporaneous explanation exists."
+  },
+  "patternClassification": {
+    "label": "REPEATED_CAM_FAVOURABLE_DIRECTION_OF_EFFECT",
+    "status": "STRONGLY_SUPPORTED_WITH_LIMITATIONS",
+    "meaning": "Across several distinct workstreams, the documented direction of outcome repeatedly benefits the Acosta Matos perimeter while LPB loses options, leverage, control, competitive position or evidentiary routes. This is an effects pattern, not proof of agreement or improper motive."
+  },
+  "episodes": [
+    {
+      "id": "CAM-PATTERN-01",
+      "period": "2017-12 to 2018-02",
+      "labelEs": "Cesión PH122 → CAM / DP 1041 / art. 1535",
+      "labelEn": "PH122 → CAM assignment / PP 1041 / Article 1535",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "camGain": "CAM obtains recognised assignee-creditor status in the insolvency with express reliance on the insolvency administration's favourable verification.",
+      "lpbLoss": "LPB's separate court-admitted route to obtain the deed, price and transaction economics later ceases to produce demonstrated value; exact termination act remains P0.",
+      "estateBenefit": "NO_MEASURABLE_BENEFIT_LOCATED",
+      "counterRecord": "The 15 February 2018 order corrected part of the amounts in LPB's favour and rejected the Article 1535 theory on legal merits."
+    },
+    {
+      "id": "CAM-PATTERN-02",
+      "period": "2018-06 to 2019-10",
+      "labelEs": "Control material / realización / operación no convalidada",
+      "labelEn": "Material control / realisation / non-validated transaction",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "camGain": "The CAM perimeter is repeatedly present on the beneficiary side of control/realisation proposals and the later transaction chain.",
+      "lpbLoss": "LPB's control, property-protection and restitution questions become increasingly difficult to reverse after material and registry consequences.",
+      "estateBenefit": "REQUIRES_RECONCILIATION",
+      "counterRecord": "Judicial acts include suspension and later refusal to validate an unauthorised operation; those controls must be preserved and not rewritten as uniform CAM support."
+    },
+    {
+      "id": "CAM-PATTERN-03",
+      "period": "2020-2022",
+      "labelEs": "Licitación / adjudicación / dación / consolidación",
+      "labelEn": "Tender / adjudication / transfer in payment / consolidation",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "camGain": "CAM becomes the principal identified beneficiary of the insolvency realisation/adjudication chain leading into later HNT title/operation.",
+      "lpbLoss": "LPB's competing exit, valuation, perimeter and deliverability arguments do not prevent the later consolidation.",
+      "estateBenefit": "OPEN_TO_ACCOUNTING_RECONCILIATION",
+      "counterRecord": "Court-supervised insolvency realisation can lawfully produce a creditor acquisition; the issue is whether process, perimeter, equality, value and accounting are reproducible."
+    },
+    {
+      "id": "CAM-PATTERN-04",
+      "period": "2019-2023+",
+      "labelEs": "RICPE / HNT / MYND / financiación y operación",
+      "labelEn": "RICPE / HNT / MYND / finance and operation",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "camGain": "The Acosta Matos/HNT perimeter remains connected to the investment, title, refurbishment and hotel-operation chain.",
+      "lpbLoss": "Earlier LPB ownership/control/value disputes remain unresolved while the same physical hotel acquires later financial and operating lives.",
+      "estateBenefit": "NOT_APPLICABLE_AS_SINGLE_INSOLVENCY_DECISION; REQUIRES_CROSS-TRACK_RECONCILIATION",
+      "counterRecord": "Later corporate, fund, grant and operating actors are distinct legal persons and must not be collapsed into CAM without act-specific evidence."
+    }
+  ],
+  "institutionalTests": {
+    "insolvencyAdministrator": {
+      "classification": "FUNCTIONAL_DELIVERY_CAM_FAVOURABLE_EFFECT",
+      "question": "Where the AC supported, enabled, failed to reverse or accepted an outcome that benefited the CAM perimeter, what contemporaneous estate-interest analysis identifies the corresponding LPB benefit?",
+      "roleBoundaryQuestion": "Did any step move the AC from neutral estate administration/supervision into procedural control or advocacy that requires a separate conflict, authority or loyalty explanation?",
+      "publicationBoundary": "Do not assert disloyal administration or criminal breach as proved until duty, act/omission, authority, damage and causation are established for the specific episode."
+    },
+    "judge": {
+      "classification": "ACTIVE_AND_PASSIVE_CAM_FAVOURABLE_EFFECT_PATTERN",
+      "question": "When CAM required recognition, implementation or continuation, what level of judicial verification and intervention was used; when LPB required disclosure, preservation, neutral verification, restitution or competitive protection, what equivalent protection was used?",
+      "publicationBoundary": "Use intervention asymmetry, deference to AC and CAM-favourable effect. Improper bias, prevaricación or corruption require additional proof of legal wrongfulness and state of mind."
+    },
+    "camPerimeter": {
+      "classification": "RECURRING_BENEFICIARY_PERIMETER",
+      "question": "How often does the same beneficiary perimeter appear after a different institutional act, and what independent commercial/legal explanation accounts for each gain?",
+      "publicationBoundary": "Recurring benefit is not proof that CAM directed every upstream act."
+    }
+  },
+  "criminalInvestigativeLadder": [
+    {
+      "label": "Possible breach / disloyal administration of the insolvency estate",
+      "status": "INVESTIGATIVE_HYPOTHESIS",
+      "whatMustBeProved": "Specific duty, authority, act or omission, deviation from estate interest, patrimonial harm and causation."
+    },
+    {
+      "label": "Administración desleal",
+      "status": "CRIMINAL_HYPOTHESIS_NOT_FINDING",
+      "whatMustBeProved": "Relevant powers over another's assets, abuse/excess or disloyal exercise as legally required, resulting patrimonial damage and actor-specific causation."
+    },
+    {
+      "label": "Improper judicial bias / prevaricación",
+      "status": "CRIMINAL_HYPOTHESIS_NOT_FINDING",
+      "whatMustBeProved": "An objectively unjust judicial decision meeting the applicable criminal threshold plus the required knowledge/intent; adverse or asymmetric outcomes alone are insufficient."
+    },
+    {
+      "label": "Tráfico de influencias / improper influence",
+      "status": "CRIMINAL_HYPOTHESIS_NOT_FINDING",
+      "whatMustBeProved": "An identifiable act of influence, the relevant relationship or position, causal connection to a decision and intended/obtained benefit as legally required."
+    },
+    {
+      "label": "Concerted action / conspiracy",
+      "status": "HIGHEST-THRESHOLD_HYPOTHESIS",
+      "whatMustBeProved": "Evidence of communication, agreement or coordinated plan beyond parallel or aligned outcomes, tied to a legally cognisable offence and the required intent."
+    }
+  ],
+  "antiOverstatementRules": [
+    "Repeated CAM-favourable outcomes are evidence of a pattern of effects, not proof of conspiracy.",
+    "A judge's adverse decision is not itself bias or prevaricación.",
+    "An AC's decision that benefits a creditor is not itself disloyal administration; the estate-interest justification must be tested.",
+    "Later RICPE/HNT/MYND continuity does not collapse distinct entities into one actor.",
+    "No criminal label should replace the act-by-act elements and causation analysis."
+  ],
+  "p0Evidence": [
+    "Exact DP 1041/2017 termination/withdrawal/archive act and instruction chain.",
+    "Exact instrument changing Cristo Suárez Pimentel's formal LPB authority and complete handover chronology.",
+    "Contemporaneous AC estate-interest analysis for the retracto/information route.",
+    "Complete appeal/finality chain for the 15 February 2018 creditor-substitution order.",
+    "Complete PH122 → CAM transaction economics and payment evidence.",
+    "Actor-specific communications capable of proving or disproving coordination, influence or common plan.",
+    "Episode-by-episode LPB estate benefit/damage quantification."
+  ],
+  "publicRoutes": {
+    "es": "/es/patron-efectos-favorables-acosta-matos/",
+    "en": "/en/acosta-matos-favourable-effect-pattern/"
+  }
+}
