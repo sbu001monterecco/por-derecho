@@ -1,6 +1,6 @@
 {
   "method":"Por Derecho — El Segundo Par de Ojos",
-  "version":"1.0",
+  "version":"1.1-active",
   "updated":"2026-08-19",
   "coreChecks":["source","authority","perimeter","contradiction","consequence","reversibility"],
   "applicationStates":[
@@ -11,68 +11,42 @@
   ],
   "cases":[
     {
-      "id":"ICALPA-DIP-80-2026",
-      "institution":"ICALPA",
-      "state":"reference-implementation",
+      "id":"ICALPA-DIP-80-2026","institution":"ICALPA","state":"reference-implementation","activationStatus":"active-reference-001",
       "scopeEs":"Aplicación pública y no oficial de la metodología a un expediente deontológico relativo a un abogado que actuó como administrador concursal.",
       "scopeEn":"Public, non-official application of the methodology to a professional-conduct file concerning a lawyer who acted as insolvency administrator.",
-      "esRoute":"/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/",
-      "enRoute":"/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/",
-      "nextGateEs":"Aplicar las seis comprobaciones a los once módulos y certificar todo desconocido material.",
-      "nextGateEn":"Apply the six checks to all eleven modules and account for every material unknown.",
+      "esRoute":"/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/",
+      "enRoute":"/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/",
+      "nextGateEs":"Certificar expediente oficial, audiencia/respuesta, temporalidad y ruta procesal actual; los once módulos ya tienen segunda comprobación activa.",
+      "nextGateEn":"Certify the official file, hearing/response, temporal treatment and current procedural route; all eleven modules now have an active second check.",
       "officialAdoptionClaimed":false
     },
     {
-      "id":"ICALPA-DIP-79-2026",
-      "institution":"ICALPA",
-      "state":"next-live-application",
-      "scopeEs":"Aplicación focal a tres actuaciones profesionales de 2021, con separación estricta entre fuente, verificación, representación profesional y explicación del afectado.",
-      "scopeEn":"Focal application to three identified 2021 professional acts, strictly separating source, verification, professional representation and respondent explanation.",
+      "id":"ICALPA-DIP-79-2026","institution":"ICALPA","state":"next-live-application","activationStatus":"active-reference-002",
+      "scopeEs":"Aplicación focal activa a tres actuaciones profesionales de 2021, con separación estricta entre fuente, verificación, representación profesional y explicación del afectado.",
+      "scopeEn":"Active focal application to three identified 2021 professional acts, strictly separating source, verification, professional representation and respondent explanation.",
       "esRoute":"/por-derecho/es/icalpa-mesa-del-ponente/dip-79-2026/",
       "enRoute":"/por-derecho/en/icalpa-rapporteur-workbench/dip-79-2026/",
-      "nextGateEs":"Construir el mapa Segundo Par de Ojos acto por acto antes de cualquier inferencia de fondo.",
-      "nextGateEn":"Build the Second Pair map act by act before any merits inference.",
+      "nextGateEs":"Certificar audiencia/respuesta y reconciliar a nivel de fuente cada uno de los tres actos antes de cualquier inferencia de fondo.",
+      "nextGateEn":"Certify hearing/response and reconcile each of the three acts at source level before any merits inference.",
       "officialAdoptionClaimed":false
     },
     {
-      "id":"ICAM-PILOT",
-      "institution":"ICAM",
-      "state":"synthetic-institutional-pilot",
+      "id":"ICAM-PILOT","institution":"ICAM","state":"synthetic-institutional-pilot","activationStatus":"pilot-pack-ready",
       "scopeEs":"Piloto futuro con caso sintético o anonimizado para probar utilidad, neutralidad, privacidad y separación de funciones sin usar expedientes confidenciales reales.",
       "scopeEn":"Future synthetic or anonymised pilot to test usefulness, neutrality, privacy and role separation without using real confidential files.",
-      "esRoute":null,
-      "enRoute":null,
-      "nextGateEs":"Preparar paquete de piloto sin datos reales y protocolo de corrección institucional.",
-      "nextGateEn":"Prepare a no-real-data pilot pack and institutional correction protocol.",
-      "officialAdoptionClaimed":false
+      "esRoute":"/por-derecho/es/por-derecho/aplicaciones-y-colaboracion/paquete-piloto/","enRoute":"/por-derecho/en/por-derecho/applications-and-collaboration/pilot-pack/",
+      "nextGateEs":"Invitación a observar, corregir, red-team y probar un caso sintético; ninguna adopción se presume.",
+      "nextGateEn":"Invitation to observe, correct, red-team and test a synthetic case; no adoption is presumed.","officialAdoptionClaimed":false
     },
     {
-      "id":"CCACM-PILOT",
-      "institution":"CCACM",
-      "state":"synthetic-institutional-pilot",
+      "id":"CCACM-PILOT","institution":"CCACM","state":"synthetic-institutional-pilot","activationStatus":"pilot-pack-ready",
       "scopeEs":"Piloto futuro a nivel de Consejo para revisión de decisiones, recursos, coherencia metodológica y trazabilidad entre Colegio y Consejo.",
       "scopeEn":"Future Council-level pilot for decision review, appeals, methodological consistency and traceability between Bar and Council.",
-      "esRoute":null,
-      "enRoute":null,
-      "nextGateEs":"Diseñar capa de revisión que no invada competencias del Colegio ni anticipe el resultado de recursos reales.",
-      "nextGateEn":"Design a review layer that does not invade Bar competence or pre-judge real appeals.",
-      "officialAdoptionClaimed":false
+      "esRoute":"/por-derecho/es/por-derecho/aplicaciones-y-colaboracion/paquete-piloto/","enRoute":"/por-derecho/en/por-derecho/applications-and-collaboration/pilot-pack/",
+      "nextGateEs":"Probar una capa sintética de revisión que no invada competencia del Colegio ni anticipe recursos reales.",
+      "nextGateEn":"Test a synthetic review layer that does not invade Bar competence or pre-judge real appeals.","officialAdoptionClaimed":false
     }
   ],
-  "collaborationModes":[
-    "observe",
-    "correct",
-    "red-team",
-    "synthetic-pilot",
-    "live-case-method-application",
-    "institutional-pilot"
-  ],
-  "governance":{
-    "humanDecisionOnly":true,
-    "noGuiltScoring":true,
-    "silenceIsNotAdmission":true,
-    "noCrossCaseEvidenceReuseWithoutHumanRelevanceDecision":true,
-    "publicMethodProtectedFile":true,
-    "institutionalEndorsementNeverImplied":true
-  }
+  "collaborationModes":["observe","correct","red-team","synthetic-pilot","live-case-method-application","institutional-pilot"],
+  "governance":{"humanDecisionOnly":true,"noGuiltScoring":true,"silenceIsNotAdmission":true,"noCrossCaseEvidenceReuseWithoutHumanRelevanceDecision":true,"publicMethodProtectedFile":true,"institutionalEndorsementNeverImplied":true}
 }
