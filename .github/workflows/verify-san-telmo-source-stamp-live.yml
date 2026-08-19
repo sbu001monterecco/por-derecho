@@ -13,6 +13,7 @@ on:
       - "assets/visual-asset-registry.json"
       - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
       - "scripts/verify_san_telmo_source_stamp_live.py"
+      - "scripts/run_verify_san_telmo_source_stamp_live.py"
       - ".github/workflows/verify-san-telmo-source-stamp-live.yml"
   push:
     branches: [main]
@@ -27,6 +28,7 @@ on:
       - "assets/visual-asset-registry.json"
       - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
       - "scripts/verify_san_telmo_source_stamp_live.py"
+      - "scripts/run_verify_san_telmo_source_stamp_live.py"
       - ".github/workflows/verify-san-telmo-source-stamp-live.yml"
   workflow_dispatch:
 
@@ -50,7 +52,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check playwright==1.55.0
 
       - name: Verify HTTP delivery and rendered source stamp on desktop and mobile
-        run: python scripts/verify_san_telmo_source_stamp_live.py
+        run: python scripts/run_verify_san_telmo_source_stamp_live.py
 
       - name: Upload rendered verification screenshots and report
         if: always()
