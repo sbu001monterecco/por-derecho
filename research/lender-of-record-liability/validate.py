@@ -1,0 +1,169 @@
+#!/usr/bin/env python3
+"""Validate the Por Derecho lender-liability structured research layer.
+
+Run from repository root:
+    python research/lender-of-record-liability/validate.py
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT / "data"
+
+ALLOWED_STATUS = {
+    "verified_primary",
+    "verified_official",
+    "documented_party_statement",
+    "corroborated_inference",
+    "contested",
+    "missing_primary",
+    "unknown",
+}
+ALLOWED_PUBLICATION = {
+    "public_safe",
+    "internal_only",
+    "privilege_review",
+    "do_not_publish",
+}
+ID_PATTERNS = {
+    "sources.json": re.compile(r"^SRC-[A-Z0-9-]+$"),
+    "actors.json": re.compile(r"^ACT-[A-Z0-9-]+$"),
+    "instruments.json": re.compile(r"^INS-[A-Z0-9-]+$"),
+    "transfers.json": re.compile(r"^TR-[A-Z0-9-]+$"),
+    "knowledge-events.json": re.compile(r"^KN-[A-Z0-9-]+$"),
+    "conduct-decisions.json": re.compile(r"^CD-[A-Z0-9-]+$"),
+    "proceedings.json": re.compile(r"^PROC-[A-Z0-9-]+$"),
+    "evidence-gaps.json": re.compile(r"^GAP-[A-Z0-9-]+$"),
+}
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+UNSAFE_PATTERNS = [
+    re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I),
+    re.compile(r"\b(?:\+34|\+44)\s*\d[\d\s-]{7,}\b"),
+    re.compile(r"\b(passport|número de pasaporte|bank account|cuenta bancaria)\b", re.I),
+    re.compile(r"\b(proven fraud|fraude probado|criminally liable|responsabilidad penal probada)\b", re.I),
+]
+
+errors: list[str] = []
+
+
+def load(name: str) -> list[dict[str, Any]]:
+    path = DATA / name
+    if not path.exists():
+        errors.append(f"{name}: missing file")
+        return []
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        errors.append(f"{name}: invalid JSON: {exc}")
+        return []
+    if not isinstance(value, list):
+        errors.append(f"{name}: top-level value must be a list")
+        return []
+    return value
+
+
+datasets = {name: load(name) for name in ID_PATTERNS}
+
+all_ids: dict[str, str] = {}
+for filename, rows in datasets.items():
+    pattern = ID_PATTERNS[filename]
+    local: set[str] = set()
+    for index, row in enumerate(rows):
+        where = f"{filename}[{index}]"
+        if not isinstance(row, dict):
+            errors.append(f"{where}: row must be an object")
+            continue
+        rid = row.get("id")
+        if not isinstance(rid, str) or not pattern.fullmatch(rid):
+            errors.append(f"{where}: invalid id {rid!r}")
+            continue
+        if rid in local:
+            errors.append(f"{filename}: duplicate id {rid}")
+        local.add(rid)
+        if rid in all_ids:
+            errors.append(f"global duplicate id {rid}: {all_ids[rid]} and {filename}")
+        all_ids[rid] = filename
+        status = row.get("evidence_status")
+        if status is not None and status not in ALLOWED_STATUS:
+            errors.append(f"{where}: invalid evidence_status {status!r}")
+        pub = row.get("publication")
+        if pub is not None and pub not in ALLOWED_PUBLICATION:
+            errors.append(f"{where}: invalid publication {pub!r}")
+        date = row.get("date")
+        if date is not None and (not isinstance(date, str) or not DATE_RE.fullmatch(date)):
+            errors.append(f"{where}: date must be YYYY-MM-DD or null, got {date!r}")
+        rendered = json.dumps(row, ensure_ascii=False)
+        for unsafe in UNSAFE_PATTERNS:
+            if unsafe.search(rendered):
+                errors.append(f"{where}: possible unsafe/private or overclaiming content matched {unsafe.pattern!r}")
+
+source_ids = {row.get("id") for row in datasets["sources.json"] if isinstance(row, dict)}
+actor_ids = {row.get("id") for row in datasets["actors.json"] if isinstance(row, dict)}
+instrument_ids = {row.get("id") for row in datasets["instruments.json"] if isinstance(row, dict)}
+proceeding_ids = {row.get("id") for row in datasets["proceedings.json"] if isinstance(row, dict)}
+conduct_ids = {row.get("id") for row in datasets["conduct-decisions.json"] if isinstance(row, dict)}
+
+
+def refs(row: dict[str, Any], field: str) -> list[str]:
+    value = row.get(field, [])
+    if value is None:
+        return []
+    if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
+        errors.append(f"{row.get('id', '<unknown>')}: {field} must be a list of strings")
+        return []
+    return value
+
+
+def check_refs(rows: list[dict[str, Any]], field: str, valid: set[str | None]) -> None:
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        for ref in refs(row, field):
+            if ref not in valid:
+                errors.append(f"{row.get('id')}: unknown {field} reference {ref}")
+
+
+for rows in datasets.values():
+    check_refs(rows, "source_refs", source_ids)
+    check_refs(rows, "actor_refs", actor_ids)
+    check_refs(rows, "target_actor_refs", actor_ids)
+    check_refs(rows, "debtor_actor_refs", actor_ids)
+    check_refs(rows, "holder_chain_actor_refs", actor_ids)
+    check_refs(rows, "instrument_refs", instrument_ids)
+    check_refs(rows, "later_conduct_refs", conduct_ids)
+    check_refs(rows, "proceeding_refs", proceeding_ids)
+
+for row in datasets["knowledge-events.json"]:
+    for field in ("knowledge_topic", "directly_establishes", "does_not_establish"):
+        if not isinstance(row.get(field), str) or not row[field].strip():
+            errors.append(f"{row.get('id')}: missing {field}")
+
+for row in datasets["transfers.json"]:
+    for field in ("transferor_actor_ref", "transferee_actor_ref", "transfer_type"):
+        if not isinstance(row.get(field), str) or not row[field].strip():
+            errors.append(f"{row.get('id')}: missing {field}")
+    for field in ("transferor_actor_ref", "transferee_actor_ref"):
+        if row.get(field) not in actor_ids:
+            errors.append(f"{row.get('id')}: unknown {field} {row.get(field)!r}")
+
+for row in datasets["evidence-gaps.json"]:
+    if row.get("priority") not in {"P0", "P1", "P2", "P3"}:
+        errors.append(f"{row.get('id')}: invalid priority")
+    if row.get("status") not in {"open", "partial", "closed", "superseded"}:
+        errors.append(f"{row.get('id')}: invalid gap status")
+    if not isinstance(row.get("next_action"), str) or not row["next_action"].strip():
+        errors.append(f"{row.get('id')}: missing next_action")
+
+if errors:
+    print("Lender-liability validation FAILED", file=sys.stderr)
+    for error in errors:
+        print(f" - {error}", file=sys.stderr)
+    raise SystemExit(1)
+
+counts = ", ".join(f"{name}={len(rows)}" for name, rows in datasets.items())
+print(f"Lender-liability validation PASSED: {counts}")

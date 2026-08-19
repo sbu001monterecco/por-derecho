@@ -1,0 +1,102 @@
+[
+  {
+    "id": "GAP-P0-001",
+    "priority": "P0",
+    "title": "Bankia/originating-lender to SAREB transfer instrument and asset schedule",
+    "needed_for": ["credit_genealogy", "retained_originator_obligations", "defences", "amount"],
+    "target_actor_refs": ["ACT-BANKIA", "ACT-SAREB"],
+    "status": "open",
+    "next_action": "Locate complete transfer instrument, schedules, linked-product treatment, warranties and liability reservations.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-002",
+    "priority": "P0",
+    "title": "SAREB to PH122 loans sale and purchase agreement, schedules and allocated price",
+    "needed_for": ["Article_1535", "economic_chain", "defences", "servicing"],
+    "target_actor_refs": ["ACT-SAREB", "ACT-PH122"],
+    "status": "open",
+    "next_action": "Recover the notarial policy/LSAP, asset schedule, total and allocated price, payment, adjustments, warranties and disclosures.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-003",
+    "priority": "P0",
+    "title": "Haya servicing agreement, powers of attorney and decision-authority record",
+    "needed_for": ["mandate", "agency", "ratification", "responsibility_for_others", "knowledge_attribution"],
+    "target_actor_refs": ["ACT-HAYA", "ACT-PH122", "ACT-CERBERUS-PERIMETER"],
+    "status": "open",
+    "next_action": "Obtain servicing contract, PoAs, committee delegations, approval records, voting/enforcement instructions and employer/entity identity of decision-makers.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-004",
+    "priority": "P0",
+    "title": "Complete PH122 to CAM assignment deed and transaction file",
+    "needed_for": ["price", "payment", "balance", "due_diligence", "warranties", "knowledge"],
+    "target_actor_refs": ["ACT-PH122", "ACT-CAM"],
+    "status": "partial",
+    "next_action": "Locate complete protocol 2,248, schedules, payment proof, board/committee papers, due diligence, advisers, side agreements and indemnities.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-005",
+    "priority": "P0",
+    "title": "CAM to HNT segregation project, deed, balance and liability schedules",
+    "needed_for": ["universal_succession", "transferred_liabilities", "retained_liabilities", "litigation_contingencies"],
+    "target_actor_refs": ["ACT-CAM", "ACT-HNT"],
+    "status": "open",
+    "next_action": "Obtain the full corporate project/deed and exact active, passive, litigation, contingency and guarantee schedules.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-006",
+    "priority": "P0",
+    "title": "End-to-end loan, interest, cost, payment and surplus ledger",
+    "needed_for": ["amount", "causation", "damages", "enrichment", "surplus"],
+    "target_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
+    "status": "open",
+    "next_action": "Reconcile original principal, interest, SWAP charges, pledged funds, payments, concursal recognition, corrections, assignments, adjudication/dación values, satisfaction and residual balance.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P1-007",
+    "priority": "P1",
+    "title": "Actor-by-actor refinancing and convenio counterfactual file",
+    "needed_for": ["foreseeability", "lost_chance", "lost_profit", "mitigation"],
+    "target_actor_refs": ["ACT-PH122", "ACT-HAYA", "ACT-CAM", "ACT-LPB"],
+    "status": "partial",
+    "next_action": "Collect term sheets, credit approvals, conditions precedent, funding availability, valuations, operator terms, withdrawal reasons and alternative routes.",
+    "publication": "privilege_review"
+  },
+  {
+    "id": "GAP-P1-008",
+    "priority": "P1",
+    "title": "Actor-specific limitation, notice and interruption ledger",
+    "needed_for": ["limitation", "preservation", "solidaridad_impropia"],
+    "target_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-HAYA", "ACT-CAM", "ACT-HNT"],
+    "status": "open",
+    "next_action": "Record each cause of action, accrual theory, knowledge date, demand, filing, interruption event and service evidence separately.",
+    "publication": "internal_only"
+  },
+  {
+    "id": "GAP-P1-009",
+    "priority": "P1",
+    "title": "Privilege and public-safety review of adviser and transaction correspondence",
+    "needed_for": ["publication_control", "litigation_use", "waiver_avoidance"],
+    "target_actor_refs": ["ACT-LPB"],
+    "status": "open",
+    "next_action": "Separate factual transaction communications from legal advice; do not publish privileged content or waiver-sensitive summaries.",
+    "publication": "do_not_publish"
+  },
+  {
+    "id": "GAP-P1-010",
+    "priority": "P1",
+    "title": "Official copy and identifiers for STS 1621/2024 authority",
+    "needed_for": ["assigned_credit_defences", "retained_originator_obligations", "necessary_parties"],
+    "target_actor_refs": [],
+    "status": "open",
+    "next_action": "Retrieve official judgment, ROJ/ECLI, procedural posture and exact ratio before pleading or public reliance.",
+    "publication": "internal_only"
+  }
+]
