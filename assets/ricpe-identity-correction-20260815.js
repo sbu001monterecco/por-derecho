@@ -24,4 +24,8 @@
   // Canonical relationships: Antonio Cogolludo Rojas is Shaila's father;
   // Francisco Mario Matos Matas and Shaila María Cogolludo Ramos are husband and wife.
   load('homepage-actor-family-pwc-note-20260819.js?v=20260819b');
+
+  // Dominant San Telmo / RICPE same-asset parallel-lives visual.
+  // Reused on the homepage actor map, RSM NNR4, RICPE and Insolvency Administrator pages.
+  load('san-telmo-parallel-lives-red-20260819.js?v=20260819a');
 })();
