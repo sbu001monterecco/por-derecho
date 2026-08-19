@@ -13,7 +13,7 @@
     'administrador-concursal', 'insolvency-administrator', 'toma-control', 'takeover',
     'insolvencia-lpb', 'lpb-insolvency', 'convergencia-venta-acreedor', 'sale-lender-convergence',
     'recuperacion-restitucion', 'recovery-restitution', 'mismo-hotel', 'same-hotel',
-    'ricpe', 'fondos-incentivos', 'institutionalisation-chain'
+    'ricpe', 'ric-private-equity', 'fondos-incentivos', 'institutionalisation-chain'
   ];
   if (!relevant.some(fragment => path.includes(fragment))) return;
 
