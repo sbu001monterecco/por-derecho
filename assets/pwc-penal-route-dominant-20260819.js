@@ -51,3 +51,78 @@
 
   if(d.readyState==='loading') d.addEventListener('DOMContentLoaded',render,{once:true}); else render();
 })();
+
+(()=>{
+  const d=document;
+  const path=location.pathname.replace(/\/+$/,'/');
+  const routes={
+    enPwC:'/en/pwc-canarias-carlos-saavedra-sun-park/',
+    esPwC:'/es/pwc-canarias-carlos-saavedra-sun-park/',
+    enAC:'/en/insolvency-36-2012-insolvency-administrator/',
+    esAC:'/es/concurso-36-2012-administrador-concursal/',
+    enCal:'/en/insolvency-classification-parallel-lives/',
+    esCal:'/es/calificacion-concurso-36-2012-vidas-paralelas/'
+  };
+  const key=Object.keys(routes).find(k=>path.endsWith(routes[k]));
+  if(!key) return;
+  const es=key.startsWith('es');
+  const isAC=key.endsWith('AC');
+  const isCal=key.endsWith('Cal');
+
+  const render=()=>{
+    if(d.querySelector('[data-pd-pwc-ac-knowledge-transfer]')) return;
+    const main=d.querySelector('main');
+    if(!main) return;
+    const style=d.createElement('style');
+    style.textContent=`
+      .pd-kt{max-width:1140px;margin:1.6rem auto;padding:1.35rem;border:2px solid #315c7b;border-radius:20px;background:#f7f9fa;color:#13252d;box-shadow:0 7px 24px rgba(19,37,45,.1)}
+      .pd-kt__k{font-size:.76rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;color:#7e2929}
+      .pd-kt h2{font-size:clamp(1.65rem,3.6vw,2.65rem);line-height:1.05;margin:.35rem 0 .7rem}.pd-kt__flow{font-size:clamp(1.2rem,3vw,2rem);font-weight:1000;text-align:center;padding:1rem;background:#13252d;color:#fff;border-radius:14px;margin:1rem 0}.pd-kt__flow b{color:#f0dfc4}
+      .pd-kt__chron{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin:1rem 0}.pd-kt__chron article{background:#fff;border-top:5px solid #8c2f2c;border-radius:13px;padding:.9rem}.pd-kt__chron strong{display:block;margin-bottom:.35rem}
+      .pd-kt__table{width:100%;border-collapse:collapse;background:#fff;margin:1rem 0}.pd-kt__table th,.pd-kt__table td{border:1px solid #d6dddd;padding:.7rem;vertical-align:top;text-align:left}.pd-kt__table th{background:#e9eeee}.pd-kt__q{border-left:6px solid #9a6a20;background:#fff8dc;border-radius:12px;padding:1rem;font-weight:800}.pd-kt__down{border-left:6px solid #7e2929;background:#fff5f2;border-radius:12px;padding:1rem;margin-top:.8rem}.pd-kt__precision{font-size:.9rem;color:#53656d;margin-top:.8rem}.pd-kt a{font-weight:850}
+      @media(max-width:800px){.pd-kt__chron{grid-template-columns:1fr}.pd-kt__table{font-size:.88rem;display:block;overflow-x:auto}}
+    `;
+    d.head.appendChild(style);
+    const sec=d.createElement('section');
+    sec.className='pd-kt';
+    sec.dataset.pdPwcAcKnowledgeTransfer='true';
+    const pwcHref=es?'../pwc-canarias-carlos-saavedra-sun-park/':'../pwc-canarias-carlos-saavedra-sun-park/';
+    const acHref=es?'../concurso-36-2012-administrador-concursal/':'../insolvency-36-2012-insolvency-administrator/';
+    const calHref=es?'../calificacion-concurso-36-2012-vidas-paralelas/':'../insolvency-classification-parallel-lives/';
+    sec.innerHTML=es?`
+      <div class="pd-kt__k">CONOCIMIENTO · TRANSMISIÓN · ADMINISTRADOR CONCURSAL · RECONSTRUCCIÓN DOCUMENTAL</div>
+      <h2>¿Quién sabía qué — y qué se transmitió al Administrador Concursal?</h2>
+      <p>La secuencia documentada crea una cuestión de transferencia de conocimiento, no una presunción automática: <strong>antes del contacto directo confirmado PwC–AC, PwC/Carlos ya habían recibido alegaciones que el cliente consideraba potencialmente penales y una instrucción expresa de acudir a “la vía penal contra esta gente”.</strong></p>
+      <div class="pd-kt__flow">CLIENTE → <b>PWC / CARLOS SAAVEDRA</b> → ADMINISTRADOR CONCURSAL</div>
+      <div class="pd-kt__chron"><article><strong>12 JUN 2016 · AVISO DIRECTO</strong>Patricia escribe a Carlos y Miguel, atribuyendo parte del contexto a lo explicado por Carlos, Jonathan y Cristo, y expone alegaciones graves sobre deuda, control, liquidación y posible fraude/conducta penal.</article><article><strong>19–20 JUL 2016 · VÍA PENAL</strong>Mientras PwC ultimaba la impugnación de acuerdos de Comunidad, el cliente reitera “la vía penal contra esta gente”. Miguel/PwC responde “Tomamos nota de vuestra decisión”; Carlos está en copia.</article><article><strong>SEP 2016 · CONTACTO PWC–AC</strong>PwC confirma que habló directamente con el AC sobre la propuesta de touroperador/nuevo contrato de explotación. PwC limita el alcance: conversación telefónica general, sin detalle contractual, informe ni emails; Patricia pide inmediatamente que se documente qué se dijo y qué respondió el AC.</article></div>
+      <table class="pd-kt__table"><thead><tr><th>Qué sabía PwC/Carlos</th><th>Qué sabía el AC independientemente</th><th>Qué transmisión está probada</th><th>Qué falta</th></tr></thead><tbody><tr><td>Alegaciones del cliente sobre deuda discutida, control/liquidación, actuación de terceros y posible dimensión penal; respuesta jurídica en curso; instrucción penal expresa.</td><td><strong>Debe reconstruirse fuente por fuente.</strong> No se atribuye al AC conocimiento por mera inferencia. Deben separarse comunicaciones directas, escritos, reuniones, expediente concursal y otras fuentes.</td><td>Existió conversación directa PwC–AC sobre la ruta de touroperador/nuevo contrato de explotación. La existencia del contacto está confirmada por PwC.</td><td>Contenido exacto de la llamada; participantes; notas/calendario; borradores o “informe para el AC”; qué alegaciones se trasladaron; qué contestó el AC; qué hizo después con la información.</td></tr></tbody></table>
+      <p class="pd-kt__q"><strong>Pregunta central:</strong> cuando PwC habló directamente con el Administrador Concursal ya poseía conocimiento documentado de alegaciones que su cliente consideraba potencialmente penales. ¿Qué comunicó exactamente PwC al AC, qué sabía éste ya por otras vías, qué entendió y dónde está el registro de lo que hizo con ese conocimiento?</p>
+      ${(isAC||isCal)?`<p class="pd-kt__down"><strong>Consecuencia para el concurso y la calificación:</strong> si el AC tenía conocimiento independiente o transmitido de hechos materiales atribuidos a terceros, ¿cómo influyó —o por qué no aparece que influyera— en el tratamiento de la deuda de Comunidad discutida, control/liquidación, responsabilidad de terceros, causalidad alternativa y posterior calificación? La pregunta exige reconstrucción documental; no presume respuesta ni intención.</p>`:''}
+      <p class="pd-kt__down"><strong>Puente posterior a comprobar:</strong> 2016 conocimiento PwC + contacto AC → decisiones posteriores dentro del concurso → perímetro posteriormente documentado <strong>Grupo Acosta Matos / RIC Private Equity (#RICPE) / Sun Park–MYND</strong>. Esta secuencia justifica preguntar por continuidad, conocimiento y conflictos; no prueba por sí sola concertación, transmisión de todas las alegaciones ni conducta criminal.</p>
+      <p class="pd-kt__precision"><strong>Control probatorio:</strong> no se afirma que PwC “imputara conocimiento penal” al AC como hecho consumado. Lo probado es el conocimiento previo de PwC y el contacto directo posterior con el AC. El contenido transferido es precisamente la cuestión abierta. <a href="${pwcHref}">PwC/Carlos</a> · <a href="${acHref}">Administrador Concursal</a> · <a href="${calHref}">Calificación</a>.</p>
+    `:`
+      <div class="pd-kt__k">KNOWLEDGE · TRANSFER · INSOLVENCY ADMINISTRATOR · DOCUMENTARY RECONSTRUCTION</div>
+      <h2>Who knew what — and what passed to the Insolvency Administrator?</h2>
+      <p>The documented sequence creates a knowledge-transfer question, not an automatic presumption: <strong>before the confirmed direct PwC–Administrator contact, PwC/Carlos had already received allegations the client regarded as potentially criminal and an express instruction to pursue “la vía penal contra esta gente”.</strong></p>
+      <div class="pd-kt__flow">CLIENT → <b>PWC / CARLOS SAAVEDRA</b> → INSOLVENCY ADMINISTRATOR</div>
+      <div class="pd-kt__chron"><article><strong>12 JUN 2016 · DIRECT NOTICE</strong>Patricia writes to Carlos and Miguel, attributes part of the context to what Carlos, Jonathan and Cristo had explained, and sets out serious client allegations concerning debt, control, liquidation and possible fraud/criminal implications.</article><article><strong>19–20 JUL 2016 · PENAL ROUTE</strong>While PwC was finalising the Community challenge, the client reiterates “la vía penal contra esta gente”. Miguel/PwC replies “Tomamos nota de vuestra decisión”; Carlos is copied.</article><article><strong>SEP 2016 · PWC–AC CONTACT</strong>PwC confirms it spoke directly with the Administrator about the tour-operator/new exploitation-contract route. PwC limits the scope: a general telephone conversation, no contract detail, report or email exchange; Patricia immediately asks for a written account of what was said and what the AC answered.</article></div>
+      <table class="pd-kt__table"><thead><tr><th>What PwC/Carlos knew</th><th>What the AC knew independently</th><th>What transfer is proved</th><th>What remains missing</th></tr></thead><tbody><tr><td>Client allegations concerning disputed debt, control/liquidation, third-party conduct and possible criminal significance; an active legal response; an express penal-route instruction.</td><td><strong>Must be reconstructed source by source.</strong> Knowledge is not attributed to the AC by mere inference. Direct communications, filings, meetings, the insolvency file and other sources must be separated.</td><td>A direct PwC–AC conversation existed concerning the tour-operator/new exploitation-contract route. PwC itself confirmed the contact.</td><td>Exact call content; participants; notes/calendar; drafts or contemplated “report for the AC”; which allegations were conveyed; what the AC answered; what he later did with the information.</td></tr></tbody></table>
+      <p class="pd-kt__q"><strong>Central question:</strong> when PwC spoke directly with the Insolvency Administrator it already possessed documented knowledge of allegations its client regarded as potentially criminal. What exactly did PwC communicate to the AC, what did he already know independently, what did he understand, and where is the record of what he did with that knowledge?</p>
+      ${(isAC||isCal)?`<p class="pd-kt__down"><strong>Consequence for the insolvency and classification:</strong> if the AC possessed independent or transmitted knowledge of material allegations involving third parties, how did that knowledge affect — or why does the record not show it affecting — disputed Community debt, control/liquidation, third-party responsibility, alternative causation and the later classification? The question requires documentary reconstruction; it presumes neither answer nor motive.</p>`:''}
+      <p class="pd-kt__down"><strong>Later bridge to test:</strong> 2016 PwC knowledge + AC contact → later insolvency decisions → subsequently documented <strong>Grupo Acosta Matos / RIC Private Equity (#RICPE) / Sun Park–MYND perimeter</strong>. The sequence warrants questions about continuity, knowledge and conflicts; it does not by itself prove coordination, transmission of every allegation or criminal conduct.</p>
+      <p class="pd-kt__precision"><strong>Evidential control:</strong> this does not state that PwC “imputed criminal knowledge” to the AC as an established fact. What is proved is PwC's prior knowledge and later direct AC contact. What was transferred is the open question. <a href="${pwcHref}">PwC/Carlos</a> · <a href="${acHref}">Insolvency Administrator</a> · <a href="${calHref}">Classification</a>.</p>
+    `;
+
+    const hero=main.querySelector('.hero,.ca-hero,.cal-open,[class*="hero"]');
+    if(key.endsWith('PwC')){
+      const dominant=d.querySelector('[data-pd-pwc-penal-dominant]');
+      if(dominant) dominant.insertAdjacentElement('afterend',sec); else if(hero) hero.insertAdjacentElement('afterend',sec); else main.prepend(sec);
+    }else if(hero){
+      hero.insertAdjacentElement('afterend',sec);
+    }else{
+      main.prepend(sec);
+    }
+  };
+
+  if(d.readyState==='loading') d.addEventListener('DOMContentLoaded',render,{once:true}); else render();
+})();
