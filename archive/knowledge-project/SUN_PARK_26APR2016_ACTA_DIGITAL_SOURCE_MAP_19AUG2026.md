@@ -33,6 +33,23 @@ Approximate extracted text length: **232,120 characters**.
 
 The complete raw extraction should **not** be committed to the public website repository as-is. The 77-page source contains private contact details, addresses, banking material and other personal/operational data. Public work should use controlled extracts, source references and redacted reproductions where publication is necessary and proportionate.
 
+### Public redacted edition — added 19 August 2026
+
+A repository-safe public edition has now been added at:
+
+`evidence/community/ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md`
+
+It preserves the governance-relevant meeting facts, page map, aggregate percentages, chronology and source hash while omitting personal/professional contact details, street-level addresses, telephone/fax/email, DNI/NIF/CIF, bank/account identifiers and non-essential private owner-level financial detail.
+
+It is expressly **not** the evidential master. Authentication hierarchy remains unchanged.
+
+The accompanying visual reader is:
+
+- EN: `en/community-instrumentalisation/two-competing-governance-records/`
+- ES: `es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/`
+
+The visual reader labels **capture as a hypothesis to be proved**, not as the status of the minutes.
+
 ## Page-level source map
 
 ### Pages 1–12 — signed act / meeting record
@@ -135,6 +152,7 @@ Priority follow-up search:
 2. certified copy / Community act book where available;
 3. this 77-page preserved PDF and its hashes;
 4. complete digital text extraction;
-5. later summaries / website statements.
+5. public redacted edition;
+6. later summaries / website statements.
 
 No later summary should override the primary wording of the act.
