@@ -28,3 +28,16 @@
   const wrap=document.createElement('div');wrap.className='media-marks-wrap';const items=[[r.c7,'CANARIAS7','',r.subs[0]],[r.eco,'elEconomista','eco',r.subs[1]],[r.host,'HOSTELTUR','',r.subs[2]],[r.voz,'La Voz de Lanzarote','voz',r.subs[3]]];wrap.innerHTML=`<p class="media-marks-kicker">${r.title}</p><div class="media-marks">${items.map(x=>`<a class="media-mark" href="${x[0]}"><span><span class="media-mark-name ${x[2]}">${x[1]}</span><small>${x[3]}</small></span><span>→</span></a>`).join('')}</div><p class="media-marks-note">${r.note} <a href="${r.hub}">${isEs?'Mapa completo':'Full map'} →</a></p>`;
   const hero=document.querySelector('main .hero,main .mhero');if(!hero)return;const section=document.createElement('section');section.className=isWho?'section alt':'media-switcher';const shell=document.createElement('div');shell.className='shell';shell.appendChild(wrap);section.appendChild(shell);hero.insertAdjacentElement('afterend',section);
 })();
+
+// Global adjudication-provenance loader. This file is already loaded independently on every page
+// through assets/site.js; keep the documentary correction and reciprocal route layer outside the
+// media-specific route gate above.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-adjudicacion-provenance-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('adjudicacion-provenance-cross-site-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.adjudicacionProvenanceLoader = 'true';
+  document.head.appendChild(script);
+})();

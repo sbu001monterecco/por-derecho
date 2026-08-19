@@ -22,11 +22,17 @@
   },
   "expected_source_files": [
     "operations/ADJUDICACION_2022_RECONSTRUCTION_ACTIVATION_2026-08-19.md",
-    "sitemap-adjudicacion-2022.xml",
-    ".github/workflows/verify-adjudicacion-2022-live.yml"
+    "assets/adjudicacion-provenance-cross-site-20260819.js",
+    "assets/media-publication-marks-20260815.js",
+    "scripts/audit_adjudicacion_legacy_language.py",
+    "scripts/render_adjudicacion_provenance.mjs",
+    ".github/workflows/validate-adjudicacion-provenance.yml",
+    ".github/workflows/verify-adjudicacion-2022-live.yml",
+    "sitemap-adjudicacion-2022.xml"
   ],
   "source_classes_reviewed": [
     "internal working papers",
+    "non-identical draft versions",
     "email bodies and attachments",
     "drive files",
     "court orders",
@@ -43,14 +49,17 @@
     "The 2021 order treats the EUR 400,000 unencumbered-property sale separately from the mortgaged-property adjudication.",
     "Protocol 457 concerns the 159 mortgaged apartments.",
     "EUR 9,052,251.69 is recorded as a 2016 special-privilege credit-classification figure.",
-    "A May 2022 registry note still displayed both mortgages."
+    "A May 2022 registry note still displayed both mortgages.",
+    "The exact thread copies and the versions circulated to advisers are non-identical and remain separately preserved.",
+    "Related versions circulated to legal advisers in March 2026; that circulation does not by itself establish filing or judicial use."
   ],
   "express_exclusions": [
     "no universal nullity conclusion",
     "no established surplus conclusion",
     "no established criminal or bad-faith allegation",
     "no automatic cancellation of later rights",
-    "no publication of internal PDFs, privileged communications or personal data",
+    "no publication of internal PDFs, privileged communications, recipients, identifiers, hashes or personal data",
+    "no inference that adviser circulation equals filing, endorsement or judicial determination",
     "no litigation filing or external communication"
   ],
   "legal_validation_required": [
@@ -60,7 +69,8 @@
     "time limits",
     "transitional insolvency law",
     "legal payability and classification of each debt component",
-    "restitution and registry consequences"
+    "restitution and registry consequences",
+    "version-by-version prior use and procedural novelty against the complete docket"
   ],
   "evidence_gates": [
     "certified primary court and notarial chain",
@@ -68,8 +78,29 @@
     "proof of five-day court notification",
     "EUR 400,000 bank and accounting trail",
     "final liquidation accounts and conclusion order",
-    "historic and current property-by-property registry certificates"
+    "historic and current property-by-property registry certificates",
+    "version-by-version comparison with previous submissions, correspondence and decisions"
   ],
+  "provenance_update": {
+    "status": "PR_OPEN",
+    "control_date": "2026-08-19",
+    "pr": 521,
+    "branch": "agent/adjudicacion-provenance-links-20260819",
+    "public_change_scope": [
+      "bilingual version-control and prior-use panel",
+      "separate prior-use validation-table row",
+      "publication and correction dates",
+      "reciprocal links from valuation, perimeter, RICPE, lender, premises and procedural routes",
+      "repository-wide stale-language audit"
+    ],
+    "private_data_excluded": [
+      "draft PDFs",
+      "email bodies and recipients",
+      "message and Drive identifiers",
+      "document hashes",
+      "privileged legal advice"
+    ]
+  },
   "validation": {
     "evidence": [
       "PR 509 publication, operational and mission-critical integrity run 32280549785: success on final head.",
@@ -88,7 +119,8 @@
     "desktop_mobile_render": "PASS",
     "off_github_preservation": "PASS",
     "repository_merge": "PASS",
-    "public_edge": "PASS"
+    "public_edge": "PASS",
+    "provenance_update_validation": "PENDING_PR_521_CI"
   },
   "deployment_evidence": [
     "GitHub Pages returned HTTP 200 for the Spanish route, English route and dedicated sitemap in workflow run 32281842085.",
@@ -140,16 +172,19 @@
     "nullity": "No single universal-nullity claim; consequences are act-specific and right-holder-specific.",
     "surplus": "No actual remanente is asserted without reconstruction of both the legally relevant realisation amount and legally payable debt.",
     "third_parties": "No automatic loss of later registered rights is asserted.",
-    "allegations": "No fraud, criminality, coercion or bad faith is presented as an established fact."
+    "allegations": "No fraud, criminality, coercion or bad faith is presented as an established fact.",
+    "provenance": "Adviser circulation is stated as consultation/awareness only, not filing, endorsement or judicial determination."
   },
   "privacy": {
     "private_source_files_committed": false,
     "email_identifiers_committed": false,
-    "personal_data_committed": false
+    "personal_data_committed": false,
+    "draft_hashes_committed": false,
+    "recipient_names_committed": false
   },
   "live_verification": {
     "status": "LIVE_VERIFIED",
     "verified_at": "2026-08-19T17:29:04Z",
-    "note": "Spanish, English and sitemap routes were independently read back from the public GitHub Pages edge with every declared marker present."
+    "note": "Spanish, English and sitemap routes were independently read back from the public GitHub Pages edge with every declared marker present. The provenance update remains pending PR 521 validation and post-merge live read-back."
   }
 }
