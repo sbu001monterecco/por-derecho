@@ -1,20 +1,17 @@
 {
   "publication_id": "AC-CONSTRUCTIVE-AGENCY-SITEWIDE-REVIEW-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "control_date": "2026-08-19",
   "publication_type": "repository-wide forensic doctrine review plus bilingual dedicated dossiers and site-wide route-specific module",
+  "controlling_pr": 465,
   "controlling_proposition": {
     "es": "Existe una pregunta forense unitaria sobre si las facultades confiadas a la Administración Concursal para LPB dejaron, en algún punto, de servir independientemente al interés de la concursada y empezaron a funcionar como mecanismo de implementación de objetivos de un perímetro privado adverso preexistente y de su posible sucesor económico. Cualquier consecuencia debe determinarse acto por acto.",
     "en": "There is a unitary forensic question whether powers entrusted to the insolvency administration for LPB ceased, at some point, to serve the debtor/estate independently and began functioning as a mechanism implementing objectives of a pre-existing adverse private perimeter and its possible economic successor. Any consequence must be determined act by act."
   },
   "expected_routes": {
-    "es": [
-      "es/administrador-concursal-punto-quiebre-lealtad/index.html"
-    ],
-    "en": [
-      "en/insolvency-administrator-loyalty-breakpoint/index.html"
-    ]
+    "es": ["es/administrador-concursal-punto-quiebre-lealtad/index.html"],
+    "en": ["en/insolvency-administrator-loyalty-breakpoint/index.html"]
   },
   "expected_source_files": [
     "archive/AC_LOYALTY_BREAKPOINT_PREDECESSOR_CAM_CONTINUITY_CONTROL_19AUG2026.md",
@@ -35,12 +32,7 @@
     "LPB insolvency / liquidation / adjudication / qualification"
   ],
   "model": {
-    "thresholds": [
-      "LOYALTY_BREAKPOINT",
-      "CONFLICT_BREAKPOINT",
-      "INDEPENDENCE_BREAKPOINT",
-      "CONSTRUCTIVE_AGENCY_THRESHOLD"
-    ],
+    "thresholds": ["LOYALTY_BREAKPOINT","CONFLICT_BREAKPOINT","INDEPENDENCE_BREAKPOINT","CONSTRUCTIVE_AGENCY_THRESHOLD"],
     "evidence_scale": ["L0","L1","L2","L3","L4","L5","L6"],
     "l5": "functional/de facto adverse-agency hypothesis: evidence of knowing implementation of adverse objectives using administrator powers, without yet proving formal mandate or criminal agreement",
     "l6": "direct concerted-action evidence: instructions, representation, agreement, consideration, common planning or knowingly coordinated joint action",
@@ -72,6 +64,6 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "Repository/source state is distinct from merge, deployment and public-edge verification."
+    "note": "PR/source state is distinct from merge, deployment and public-edge verification."
   }
 }
