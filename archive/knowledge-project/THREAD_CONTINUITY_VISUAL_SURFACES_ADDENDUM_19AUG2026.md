@@ -4,6 +4,7 @@ Read with:
 
 - `THREAD_CONTINUITY_PWC_AC_RICPE_ACTOR_MAP_19AUG2026.md`
 - `SUN_PARK_CANONICAL_REGISTER_READ_FIRST.md`
+- `VISUAL_ASSET_IDENTITY_GOVERNANCE_19AUG2026.md`
 
 ## Superseding San Telmo / RICPE rule — important
 
@@ -81,15 +82,48 @@ Grant Thornton is controlled separately by:
 
 The Grant Thornton context is a **2020 conflict-memory → later Cuyás / Grant Thornton Canarias professional-commercial perimeter reconciliation**, not an assertion that Grant Thornton participated in the November 2021 San Telmo/RICPE event.
 
+## Mandatory visual-asset identity control
+
+Named-person images are now governed independently from actor chronology and prose.
+
+Before using a portrait on the website, in an infographic, email, PDF, Word document or presentation, read:
+
+`VISUAL_ASSET_IDENTITY_GOVERNANCE_19AUG2026.md`
+
+Then resolve every image slot through:
+
+`assets/visual-asset-registry.json`
+
+### Critical Borja / Eduardo lock
+
+- **Borja / AC** must use `person.francisco-de-borja-rodriguez-batllori.primary` → `assets/actors/francisco-de-borja-rodriguez-batllori.jpg`.
+- **Eduardo Sánchez** must use `person.eduardo-sanchez-san-telmo.primary`.
+- Eduardo's user-confirmed source image is currently `USER_CONFIRMED_PENDING_REPOSITORY_IMPORT`; therefore no Eduardo portrait may be published until it is imported and byte-locked.
+- The user-confirmed Eduardo image must never be placed in the Borja / Administrador Concursal slot.
+- No AI-generated or stock face may substitute for either named person.
+
+Any composite containing named people requires a `.asset-map.json` sidecar. The San Telmo visual is controlled by:
+
+`assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json`
+
+The repository CI gate runs:
+
+`python scripts/validate_visual_asset_registry.py`
+
+A visual with an unresolved person asset must remain blocked or display a neutral labelled placeholder. It must not guess.
+
 ## Fresh-thread rule
 
 A fresh thread working on historical Sun Park actors, Montelanza, Molina factions, AAS, Pamanil, Cuatrecasas, Cristo Suárez Pimentel, San Telmo, Eduardo Sánchez, Enrique Guerra, RICPE, Borja/AC, RSM, Grant Thornton/Cuyás or the same-hotel parallel-lives thesis must read the canonical actor register first and then the relevant thematic controls.
+
+For any work using named-person images, it must also read the visual-asset identity governance and registry before generating or publishing.
 
 For San Telmo/RICPE specifically, read at minimum:
 
 1. `SAN_TELMO_RICPE_SUN_PARK_PROVED_INVESTOR_LINK_CORRECTION_19AUG2026.md`;
 2. `SAN_TELMO_PARALLEL_LIVES_SURFACE_MATRIX_19AUG2026.md`;
 3. `RICPE_SAN_TELMO_FULL_WEBINAR_SUPERSEDING_ADDENDUM_19AUG2026.md`;
-4. `GT_SAN_TELMO_RICPE_PARALLEL_LIVES_ADDENDUM_19AUG2026.md` when Grant Thornton/Cuyás is in scope.
+4. `GT_SAN_TELMO_RICPE_PARALLEL_LIVES_ADDENDUM_19AUG2026.md` when Grant Thornton/Cuyás is in scope;
+5. `VISUAL_ASSET_IDENTITY_GOVERNANCE_19AUG2026.md` when any portrait or composite is in scope.
 
-Do not recreate, weaken or move the locked chronology forward from memory.
+Do not recreate, weaken or move the locked chronology forward from memory. Do not assign a named portrait from appearance, conversational order or prompt proximity.
