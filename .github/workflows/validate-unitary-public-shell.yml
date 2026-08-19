@@ -91,10 +91,16 @@ jobs:
           PY
           grep -q 'sitemap-legal-advisers.xml' robots.txt
           grep -q 'sitemap-community-governance.xml' robots.txt
-      - name: Install Playwright Chromium
+      - name: Use preinstalled Chrome with Playwright
         run: |
           npm install --no-save playwright@1.50.1
-          npx playwright install --with-deps chromium
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
       - name: Serve static site at production subpath
         run: |
           mkdir -p /tmp/psr-site/por-derecho
