@@ -1,0 +1,88 @@
+name: Validate adjudication provenance and cross-links
+
+on:
+  pull_request:
+    paths:
+      - 'assets/adjudicacion-provenance-cross-site-20260819.js'
+      - 'assets/media-publication-marks-20260815.js'
+      - 'scripts/audit_adjudicacion_legacy_language.py'
+      - 'scripts/render_adjudicacion_provenance.mjs'
+      - 'operations/ADJUDICACION_2022_RECONSTRUCTION_ACTIVATION_2026-08-19.md'
+      - 'publication-manifests/adjudicacion-2022-reconstruction-2026-08-19.json'
+      - '.github/workflows/validate-adjudicacion-provenance.yml'
+      - '.github/workflows/verify-adjudicacion-2022-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/adjudicacion-provenance-cross-site-20260819.js'
+      - 'assets/media-publication-marks-20260815.js'
+      - 'scripts/audit_adjudicacion_legacy_language.py'
+      - 'scripts/render_adjudicacion_provenance.mjs'
+      - 'operations/ADJUDICACION_2022_RECONSTRUCTION_ACTIVATION_2026-08-19.md'
+      - 'publication-manifests/adjudicacion-2022-reconstruction-2026-08-19.json'
+      - '.github/workflows/validate-adjudicacion-provenance.yml'
+      - '.github/workflows/verify-adjudicacion-2022-live.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: adjudication-provenance-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Syntax, manifest and stale-language audit
+        run: |
+          node --check assets/adjudicacion-provenance-cross-site-20260819.js
+          node --check assets/media-publication-marks-20260815.js
+          node --check scripts/render_adjudicacion_provenance.mjs
+          python3 -m json.tool publication-manifests/adjudicacion-2022-reconstruction-2026-08-19.json >/dev/null
+          python3 scripts/audit_adjudicacion_legacy_language.py | tee /tmp/adjudicacion-legacy-language.json
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+      - name: Serve static site at production subpath
+        run: |
+          mkdir -p /tmp/psr-site/por-derecho
+          cp -a . /tmp/psr-site/por-derecho/
+          cd /tmp/psr-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-http.log 2>&1 &
+          echo $! > /tmp/psr-http.pid
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/adjudicacion-2022-reconstruccion-documental/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-http.log
+          exit 1
+      - name: Render provenance and reciprocal-link routes
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_ADJUDICACION_ARTIFACT_DIR: artifacts/adjudicacion-provenance
+        run: node scripts/render_adjudicacion_provenance.mjs
+      - name: Upload validation evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: adjudication-provenance-validation
+          path: |
+            artifacts/adjudicacion-provenance
+            /tmp/adjudicacion-legacy-language.json
+          if-no-files-found: warn
+          retention-days: 30
