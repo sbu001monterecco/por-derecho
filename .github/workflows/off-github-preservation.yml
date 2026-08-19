@@ -1,0 +1,139 @@
+name: Off-GitHub Preservation Snapshot
+
+on:
+  push:
+    branches:
+      - agent/off-github-backup-run
+
+permissions:
+  contents: read
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Build full preservation package
+        id: build
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: sbu001monterecco
+          REPOSITORY_NAME: por-derecho
+          PUBLIC_SITE_URL: https://sbu001monterecco.github.io/por-derecho/
+        run: |
+          set -euo pipefail
+
+          TS="$(date -u +'%Y-%m-%d_%H%M%SZ')"
+          ROOT="$RUNNER_TEMP/GITHUB_PRESERVATION_${TS}"
+          MIRRORS="$ROOT/repositories"
+          ARCHIVES="$ROOT/repository-archives"
+          SITE="$ROOT/rendered-website"
+          INVENTORY="$ROOT/inventory"
+          CHECKSUMS="$ROOT/checksums"
+          API_EXPORT="$ROOT/github-api-export"
+          ACCOUNT_EXPORT="$ROOT/github-account-export"
+          UPLOAD="$RUNNER_TEMP/upload"
+
+          mkdir -p "$MIRRORS" "$ARCHIVES" "$SITE" "$INVENTORY" "$CHECKSUMS" "$API_EXPORT" "$ACCOUNT_EXPORT" "$UPLOAD"
+
+          echo "Creating full mirror..."
+          git clone --mirror "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$MIRRORS/${REPOSITORY_NAME}.git"
+          git -C "$MIRRORS/${REPOSITORY_NAME}.git" fsck --full | tee "$INVENTORY/git-fsck.txt"
+          git -C "$MIRRORS/${REPOSITORY_NAME}.git" show-ref > "$INVENTORY/git-refs.txt"
+          git -C "$MIRRORS/${REPOSITORY_NAME}.git" count-objects -vH > "$INVENTORY/git-object-count.txt"
+          MAIN_SHA="$(git -C "$MIRRORS/${REPOSITORY_NAME}.git" rev-parse refs/heads/main)"
+
+          LFS_STATUS="git-lfs unavailable"
+          if git lfs version >/dev/null 2>&1; then
+            if git -C "$MIRRORS/${REPOSITORY_NAME}.git" lfs fetch --all; then
+              LFS_STATUS="git-lfs fetch --all completed"
+            else
+              LFS_STATUS="git-lfs available; fetch returned a warning/error"
+            fi
+          fi
+
+          tar -czf "$ARCHIVES/${REPOSITORY_NAME}.git.tar.gz" -C "$MIRRORS" "${REPOSITORY_NAME}.git"
+
+          echo "Capturing public site..."
+          SITE_STATUS="captured"
+          mkdir -p "$SITE/raw"
+          if ! wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --domains=sbu001monterecco.github.io --directory-prefix="$SITE/raw" "$PUBLIC_SITE_URL" >"$INVENTORY/wget-site.log" 2>&1; then
+            SITE_STATUS="wget completed with warnings/errors; inspect wget-site.log"
+          fi
+          if find "$SITE/raw" -type f | grep -q .; then
+            tar -czf "$SITE/rendered-site.tar.gz" -C "$SITE/raw" .
+          else
+            SITE_STATUS="no site files captured"
+          fi
+          rm -rf "$SITE/raw"
+
+          echo "Capturing public GitHub API metadata..."
+          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/users/${OWNER}" > "$API_EXPORT/user-profile.json"
+          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/users/${OWNER}/repos?per_page=100&type=owner&sort=full_name" > "$API_EXPORT/owned-repositories.json"
+          curl -fsSL -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}" > "$API_EXPORT/repository-metadata.json"
+
+          cat > "$INVENTORY/repositories.csv" <<CSV
+          name,nameWithOwner,visibility,defaultBranch,preservedMainSha
+          ${REPOSITORY_NAME},${GITHUB_REPOSITORY},public,main,${MAIN_SHA}
+          CSV
+
+          cat > "$INVENTORY/BACKUP-RUN.txt" <<TXT
+          POR DERECHO / PROJECT SUN ROCK - OFF-GITHUB PRESERVATION RUN
+          ==========================================================
+          UTC timestamp: ${TS}
+          GitHub owner: ${OWNER}
+          Repository: ${GITHUB_REPOSITORY}
+          Main SHA preserved: ${MAIN_SHA}
+          GitHub Actions run ID: ${GITHUB_RUN_ID}
+          GitHub Actions run attempt: ${GITHUB_RUN_ATTEMPT}
+          GitHub Actions commit SHA: ${GITHUB_SHA}
+          Public site: ${PUBLIC_SITE_URL}
+          Site snapshot status: ${SITE_STATUS}
+          Git LFS status: ${LFS_STATUS}
+
+          CONTENTS
+          --------
+          repository-archives/${REPOSITORY_NAME}.git.tar.gz  - full Git mirror archive
+          rendered-website/rendered-site.tar.gz              - rendered public-site snapshot, if capture succeeded
+          github-api-export/                                 - public account/repository metadata
+          inventory/git-refs.txt                             - refs captured from mirror
+          inventory/git-fsck.txt                             - object-integrity verification output
+          checksums/SHA256SUMS.txt                           - hashes of preservation components
+
+          OFFICIAL GITHUB ACCOUNT-DATA EXPORT
+          -----------------------------------
+          GitHub's Settings > Account > Export account data archive cannot be initiated by this workflow/API token.
+          It remains a complementary account-level export, not a prerequisite for restoring this repository mirror.
+          TXT
+
+          cat > "$ACCOUNT_EXPORT/README.txt" <<TXT
+          This directory intentionally records the status of GitHub's official account-data export.
+          The export must be requested interactively from the account settings by the account holder.
+          The repository mirror, site snapshot, API metadata and checksums in this package were captured automatically.
+          TXT
+
+          (
+            cd "$ROOT"
+            find repository-archives rendered-website github-api-export inventory github-account-export -type f -print0 \
+              | sort -z \
+              | xargs -0 sha256sum
+          ) > "$CHECKSUMS/SHA256SUMS.txt"
+
+          PACKAGE="$RUNNER_TEMP/GITHUB_PRESERVATION_${TS}.tar.gz"
+          tar -czf "$PACKAGE" -C "$RUNNER_TEMP" "GITHUB_PRESERVATION_${TS}"
+          sha256sum "$PACKAGE" > "$UPLOAD/GITHUB_PRESERVATION_${TS}.tar.gz.sha256"
+          mv "$PACKAGE" "$UPLOAD/"
+
+          echo "package_dir=$UPLOAD" >> "$GITHUB_OUTPUT"
+          echo "main_sha=$MAIN_SHA" >> "$GITHUB_OUTPUT"
+          echo "site_status=$SITE_STATUS" >> "$GITHUB_OUTPUT"
+
+      - name: Upload preservation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: por-derecho-off-github-backup-${{ github.run_id }}
+          path: ${{ steps.build.outputs.package_dir }}
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
