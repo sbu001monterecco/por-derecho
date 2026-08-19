@@ -4,6 +4,7 @@ import { chromium } from 'playwright';
 
 const base=(process.env.PSR_BASE_URL||'http://127.0.0.1:8000/por-derecho').replace(/\/$/,'');
 const out=process.env.PSR_SCREENSHOT_DIR||'artifacts/unitary-public-shell';
+const browserPath=(process.env.PSR_BROWSER_PATH||'').trim()||undefined;
 fs.mkdirSync(out,{recursive:true});
 
 const routes=[
@@ -14,13 +15,32 @@ const routes=[
   {name:'search-en',url:'/en/search/',kind:'search'},
   {name:'search-es',url:'/es/buscar/',kind:'search'},
   {name:'dp1901-en',url:'/en/dp-1901-2026/',kind:'gateway'},
+  {name:'dp1041-en',url:'/en/litigious-credit-retracto-1041-2017/',kind:'existing'},
+  {name:'dp1041-es',url:'/es/retracto-credito-litigioso-1041-2017/',kind:'existing'},
+  {name:'cuatrecasas-en',url:'/en/cuatrecasas-sun-park/',kind:'existing'},
+  {name:'cuatrecasas-icam-en',url:'/en/cuatrecasas-icam-ccacm-2026/',kind:'existing'},
+  {name:'cuatrecasas-icam-es',url:'/es/cuatrecasas-icam-ccacm-2026/',kind:'existing'},
+  {name:'governance-tracks-en',url:'/en/community-instrumentalisation/two-competing-governance-records/',kind:'existing'},
+  {name:'governance-tracks-es',url:'/es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/',kind:'existing'},
   {name:'ac-en',url:'/en/insolvency-36-2012-insolvency-administrator/',kind:'existing'},
   {name:'ricpe-en',url:'/en/ric-private-equity-sun-park/',kind:'existing'},
   {name:'map-es',url:'/es/mapa-forense-sun-park-262-fincas/',kind:'existing'}
 ];
 const viewports=[{name:'desktop',width:1440,height:1000},{name:'mobile',width:390,height:844}];
 const failures=[];const evidence=[];
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:true,...(browserPath?{executablePath:browserPath}:{})});
+
+async function assertSearch(page,query,pattern,label){
+  const input=page.locator('#psr-search-input');
+  await input.fill(query);
+  await page.waitForFunction(({patternSource,patternFlags})=>{
+    const re=new RegExp(patternSource,patternFlags);
+    return [...document.querySelectorAll('.psr-search-result h2')].some(el=>re.test(el.textContent||''));
+  },{patternSource:pattern.source,patternFlags:pattern.flags},{timeout:15000});
+  const titles=await page.locator('.psr-search-result h2').allTextContents();
+  if(!titles.some(t=>pattern.test(t)))throw new Error(`${label} search failed for ${query}`);
+}
+
 try{
   for(const viewport of viewports){
     const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height}});
@@ -30,7 +50,7 @@ try{
       try{
         const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
-        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260818b',null,{timeout:15000});
+        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260819a',null,{timeout:15000});
         if(route.kind==='home'){
           await page.waitForSelector('.main-nav[data-psr-consolidated-nav="true"]',{state:'attached',timeout:10000});
           await page.waitForSelector('.psr-home-control-gateway',{timeout:10000});
@@ -38,13 +58,18 @@ try{
         if(route.kind==='control'){
           await page.waitForSelector('[data-case-control-room]',{timeout:10000});
           const cards=await page.locator('.psr-system-card').count();
-          if(cards<6)throw new Error(`Expected six system cards, found ${cards}`);
+          if(cards!==6)throw new Error(`Expected exactly six system cards, found ${cards}`);
+          const hrefs=await page.locator('a').evaluateAll(els=>els.map(el=>el.getAttribute('href')||''));
+          if(!hrefs.some(h=>/1041-2017/.test(h)))throw new Error('Control Room missing DP1041/retracto bridge');
+          for(const needle of ['cuatrecasas-sun-park','cuatrecasas-icam-ccacm-2026'])if(!hrefs.some(h=>h.includes(needle)))throw new Error(`Control Room missing ${needle} bridge`);
         }
         if(route.kind==='search'){
-          const input=page.locator('#psr-search-input');await input.fill('CEXP');
-          await page.waitForFunction(()=>document.querySelectorAll('.psr-search-result').length>0,null,{timeout:15000});
-          const titles=await page.locator('.psr-search-result h2').allTextContents();
-          if(!titles.some(t=>/CEXP|Community|Comunidad|LPB/i.test(t)))throw new Error('CEXP search did not surface a controlled relevant result');
+          await assertSearch(page,'CEXP',/CEXP|Community|Comunidad|LPB/i,'CEXP');
+          await assertSearch(page,'1041',/1041|retracto|litigious/i,'DP1041');
+          await assertSearch(page,'Cuatrecasas',/Cuatrecasas/i,'Cuatrecasas');
+          const governanceQuery=route.url.includes('/es/')?'hipotesis de captura':'capture hypothesis';
+          await assertSearch(page,governanceQuery,/Governance|Gobernanza/i,'governance visual');
+          await assertSearch(page,'pwc canarias carlos saavedra',/Pwc|PwC.*Canarias|Carlos Saavedra/i,'specialist-sitemap fallback');
         }
         if(route.kind==='existing'||route.kind==='gateway')await page.waitForSelector('.psr-utility-nav',{timeout:15000});
         const metrics=await page.evaluate(()=>{
@@ -88,5 +113,5 @@ try{
     await context.close();
   }
 }finally{await browser.close();}
-fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({base,checked_at:new Date().toISOString(),evidence,failures},null,2));
-if(failures.length){console.error(JSON.stringify(failures,null,2));process.exit(1);}else console.log(`Unitary public shell checks passed: ${evidence.length}; all tested routes overflow-free`);
+fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({base,browser_path:browserPath||'playwright-managed',checked_at:new Date().toISOString(),evidence,failures},null,2));
+if(failures.length){console.error(JSON.stringify(failures,null,2));process.exit(1);}else console.log(`Unitary public shell checks passed: ${evidence.length}; curated + specialist-sitemap discovery verified; all tested routes overflow-free`);

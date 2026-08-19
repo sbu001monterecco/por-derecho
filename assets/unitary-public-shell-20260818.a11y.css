@@ -8,4 +8,6 @@ html[data-psr-unitary-shell-version] .control-table-wrap table.control-table{min
 html[data-psr-unitary-shell-version] .priority-inner{grid-template-columns:auto minmax(0,1fr)}
 html[data-psr-unitary-shell-version] .priority-links{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:.45rem;min-width:0}
 html[data-psr-unitary-shell-version] .priority-links a{max-width:100%;overflow-wrap:anywhere}
+html[data-psr-unitary-shell-version] table.evidence{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain}
+html[data-psr-unitary-shell-version] .status-pill.hypothesis{max-width:100%;white-space:normal;flex-wrap:wrap;line-height:1.25;overflow-wrap:anywhere}
 }

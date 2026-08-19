@@ -16,3 +16,5 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-gt-cuyas.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-ricpe-idoneidad.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-unitary-shell.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-pwc-canarias.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-legal-advisers.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-community-governance.xml
