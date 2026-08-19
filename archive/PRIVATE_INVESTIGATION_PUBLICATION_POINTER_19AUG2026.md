@@ -1,0 +1,5 @@
+# POINTER
+
+Canonical public derivative: `PRIVATE_INVESTIGATION_REDACTED_PUBLIC_EXTRACT_08MAY2018.md`.
+
+Canonical named internal evidence node: `JDAM_JOAN_CRUZ_SUN_PARK_ACCESS_EVIDENCE_NODE_19AUG2026.md`.
