@@ -1,9 +1,10 @@
 {
   "publication_id": "AC-LOYALTY-BREAKPOINT-CROSSSITE-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "control_date": "2026-08-19",
   "publication_type": "bilingual dedicated dossier plus cross-site forensic question module",
+  "controlling_pr": 454,
   "controlling_proposition": {
     "es": "Por Derecho investiga si y cuándo la Administración Concursal dejó de poder explicarse como administración leal e independiente de LPB y empezó a validar, proteger, adoptar o ejecutar funcionalmente intereses privados adversos, distinguiendo la arquitectura pre-CAM de la posterior entrada de Acosta Matos.",
     "en": "Por Derecho investigates whether and when the insolvency administration ceased to be explainable as loyal, independent administration for LPB and began validating, protecting, adopting or functionally implementing adverse private interests, separating the pre-CAM architecture from the later Acosta Matos phase."
@@ -44,6 +45,6 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "Repository/source state is distinct from merge, deployment and public-edge verification."
+    "note": "PR/source state is distinct from merge, deployment and public-edge verification."
   }
 }
