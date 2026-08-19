@@ -1,0 +1,56 @@
+[
+  {
+    "lang": "en",
+    "path": "en/litigious-credit-retracto-1041-2017/",
+    "title": "Litigious-credit retracto — PP 1041/2017",
+    "type": "proceeding",
+    "summary": "Evidence-led reconstruction of the PH122→CAM assignment, LPB's deed-and-price route, Article 1535 question and measurable estate-benefit test.",
+    "tags": ["DP1041", "PP 1041/2017", "Article 1535", "PH122", "CAM"],
+    "aliases": ["DP 1041/2017", "1041/2017", "litigious credit", "retracto", "retracto de credito litigioso", "Article 1535", "art 1535", "assignment deed", "Cristo Suarez Pimentel"]
+  },
+  {
+    "lang": "es",
+    "path": "es/retracto-credito-litigioso-1041-2017/",
+    "title": "Retracto de crédito litigioso — DP 1041/2017",
+    "type": "proceeding",
+    "summary": "Reconstrucción probatoria de la cesión PH122→CAM, la vía de LPB para obtener escritura y precio, la cuestión del artículo 1535 y el test de beneficio para la masa.",
+    "tags": ["DP1041", "DP 1041/2017", "artículo 1535", "PH122", "CAM"],
+    "aliases": ["1041/2017", "credito litigioso", "crédito litigioso", "retracto", "retracto crédito litigioso", "art 1535", "artículo 1535", "escritura cesión", "Cristo Suárez Pimentel"]
+  },
+  {
+    "lang": "en",
+    "path": "en/cuatrecasas-sun-park/",
+    "title": "Cuatrecasas — Sun Park / LPB professional lifecycle",
+    "type": "institution",
+    "summary": "Documentary reconstruction of mandate, due diligence, protective acts, handover, recovery transition and later ETJ 163/2020 enforcement against Matkator.",
+    "tags": ["Cuatrecasas", "legal adviser", "ETJ 163/2020", "Matkator"],
+    "aliases": ["Inigo de Luisa", "Íñigo de Luisa", "Juan Antonio Ruiz Garcia", "Teresa Morenes", "due diligence", "red flag report", "professional lifecycle"]
+  },
+  {
+    "lang": "es",
+    "path": "es/cuatrecasas-sun-park/",
+    "title": "Cuatrecasas — ciclo profesional Sun Park / LPB",
+    "type": "institution",
+    "summary": "Reconstrucción documental de mandato, due diligence, actuaciones protectoras, entrega, transición a recobro y posterior ETJ 163/2020 contra Matkator.",
+    "tags": ["Cuatrecasas", "asesor jurídico", "ETJ 163/2020", "Matkator"],
+    "aliases": ["Íñigo de Luisa", "Juan Antonio Ruiz García", "Teresa Morenés", "due diligence", "red flag report", "ciclo profesional"]
+  },
+  {
+    "lang": "en",
+    "path": "en/cuatrecasas-icam-ccacm-2026/",
+    "title": "Cuatrecasas — ICAM / CCACM 2026 procedural map",
+    "type": "proceeding",
+    "summary": "Procedural trace of the two ICAM complaints, archives and appeals, separating limitation, territorial competence and merits.",
+    "tags": ["Cuatrecasas", "ICAM", "CCACM", "professional conduct", "2026"],
+    "aliases": ["434/26", "1487/26", "1566/26", "193/2026", "bar complaint", "appeal", "professional conduct"]
+  },
+  {
+    "lang": "es",
+    "path": "es/cuatrecasas-icam-ccacm-2026/",
+    "title": "Cuatrecasas — mapa procesal ICAM / CCACM 2026",
+    "type": "proceeding",
+    "summary": "Trazabilidad de las dos quejas ICAM, archivos y recursos, separando prescripción, competencia territorial y fondo.",
+    "tags": ["Cuatrecasas", "ICAM", "CCACM", "deontología", "2026"],
+    "aliases": ["434/26", "1487/26", "1566/26", "193/2026", "queja deontológica", "alzada", "conducta profesional"]
+  }
+]
