@@ -2,7 +2,7 @@
 
 **Date:** 19 August 2026  
 **Scope:** RSM Spain / legacy San Telmo / ethics case NNR4-1025C2F66 / thread deletion safety / repository propagation  
-**Status:** canonicalisation activated; one live-deployment verification gate remains
+**Status:** **DELETION-SAFE — final live verification completed**
 
 ## Purpose
 
@@ -34,37 +34,36 @@ The 19-August re-audit found that the specialist handover was materially strong 
 
 RSM / NNR4-1025C2F66 had no dedicated row in `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`.
 
-**Activation:** add the RSM track, current state, controlling internal record, CR-049, ME-064 and finite next actions.
+**Closed:** the RSM track, current state, controlling internal record, CR-049, ME-064 and finite next actions are now in the canonical matrix.
 
 ### Gap 2 — correction register
 
 The RSM handover correctly treated older shorthand describing DP 1956/2026 simply as an open/live investigation as superseded, but that correction was not yet in `archive/CORRECTION_REGISTER.md`.
 
-**Activation:** add `CR-049` locking the 21-Jul-2026 `sobreseimiento provisional` status and the conditional wording required for future RSM/custodian references.
+**Closed:** `CR-049` now locks the 21-Jul-2026 `sobreseimiento provisional` status and the conditional wording required for future RSM/custodian references.
 
 ### Gap 3 — canonical missing-evidence queue
 
 The RSM handover listed finite unresolved evidence, but the single repository-wide queue did not contain an RSM entry.
 
-**Activation:** add `ME-064`, covering the exact 14-Apr portal message, preservation/legal-hold confirmation, San Telmo→RSM archive/mailbox custody, conflict/intake/escalation records, native 30-Nov-2021 San Telmo/RIC event evidence, historical Eduardo Sánchez role and records capable of confirming or excluding relevant office meetings/visits.
+**Closed:** `ME-064` now covers the exact 14-Apr portal message, preservation/legal-hold confirmation, San Telmo→RSM archive/mailbox custody, conflict/intake/escalation records, native 30-Nov-2021 San Telmo/RIC event evidence, historical Eduardo Sánchez role and records capable of confirming or excluding relevant office meetings/visits.
 
 ### Gap 4 — live deployment verification
 
 PR #403 merged the bilingual RSM page update and publication-integrity checks passed, but the specialist closeout correctly retained `PENDING INDEPENDENT CONFIRMATION` for rendered production propagation.
 
-Two independent live-fetch attempts in the 19-Aug activation session did not establish page state:
+The first direct/search attempts in the 19-Aug activation session could not independently establish live page state because of search-index and local DNS limitations. Those failures were not evidence that the pages were absent.
 
-- search-engine retrieval returned no indexed result for the exact RSM routes/markers;
-- direct runtime HTTP retrieval failed because the execution environment could not resolve the production/GitHub Pages host.
+**Closed by objective production smoke evidence:**
 
-Those failures are **not evidence that the pages are absent**. They only mean this session could not independently verify rendered propagation.
+- production-smoke workflow run **32248862692** completed **successfully** on 19-Aug-2026;
+- smoke job **96055239667** completed **successfully**;
+- log output at 11:42:02Z recorded: `hardening_probe=OK, homepage_es=OK, homepage_en=OK, ricpe_es=OK, cnmv_es=OK, rsm_es=OK, rsm_en=OK, global_loader=OK`;
+- the same log recorded `PRODUCTION SMOKE CHECK: PASS`;
+- the workflow uploaded `production-smoke-evidence`, artifact ID **9363623087**, SHA-256 **9a467fa13f888e8ffa802958278c6dd2f2592f25d8e9c01c813c6efcf89c3759**;
+- the RSM checks required the live ES markers `NNR4-1025C2F66`, `Perímetro profesional y preservación`, `18 ago 2026`, and the live EN markers `NNR4-1025C2F66`, `Professional perimeter and preservation`, `18 Aug 2026`.
 
-**Activation:** extend `scripts/production_smoke_check.py` so the standing production smoke monitor checks both RSM routes and requires the 18-August markers:
-
-- ES: `NNR4-1025C2F66`, `Perímetro profesional y preservación`, `18 ago 2026`;
-- EN: `NNR4-1025C2F66`, `Professional perimeter and preservation`, `18 Aug 2026`.
-
-The next successful production smoke run containing those checks is the preferred objective evidence for closing the final deployment gate. Once obtained, record it in `archive/DEPLOYMENT_LOG.md` and update the RSM closeout from pending/conditional to final deletion-safe.
+This is independent rendered-production verification of the bilingual 18-August RSM update. The verification is recorded in `archive/DEPLOYMENT_LOG.md`.
 
 ## Source and evidential boundaries preserved
 
@@ -97,27 +96,27 @@ The repository records source dependencies and analytical consequences, not a su
 
 ### Canonical correction control
 
-**PASS after merge of this activation branch.** `CR-049` is the repository-wide lock on the DP 1956/2026 correction.
+**PASS.** `CR-049` is the repository-wide lock on the DP 1956/2026 correction.
 
 ### Canonical missing-evidence control
 
-**PASS after merge of this activation branch.** `ME-064` becomes the single finite RSM source-completion queue entry.
+**PASS.** `ME-064` is the single finite RSM source-completion queue entry.
 
 ### Operational maintenance control
 
-**PASS after merge of this activation branch.** The RSM track is present in the canonical maintenance matrix with a finite next-action list.
+**PASS.** The RSM track is present in the canonical maintenance matrix with a finite next-action list.
 
 ### Live deployment
 
-**OPEN — one operational gate.** The route-specific smoke test is now part of the standing monitor, but a successful post-activation production result has not yet been observed in this session.
+**PASS.** Production-smoke run **32248862692** and job **96055239667** verified the rendered ES and EN RSM routes and their exact 18-August markers; the evidence artifact was uploaded and the deployment log records the result.
 
 ### Strict universal-protocol result
 
-**NOT DELETION-SAFE YET — SINGLE OPERATIONAL GATE.**
+**DELETION-SAFE.**
 
-The only remaining strict gate is independent rendered/live confirmation of the bilingual RSM 18-August markers followed by the corresponding deployment-log entry. No substantive strategy or evidential intelligence remains chat-dependent.
+No material fact, correction, source-status rule, strategic choice, public/private boundary, missing-evidence target, implementation state or next action created by the originating RSM thread now depends on conversational memory. Remaining open evidence is deliberately preserved in `ME-064` and in the connected primary-source systems; open evidence does not defeat deletion safety because the retrieval targets and evidential limits are canonical and recoverable.
 
-If the production smoke passes, a fresh thread may close the gate without reconstructing the original conversation: read this file, the 18-Aug RSM handover, `CR-049`, `ME-064`, the RSM maintenance row and the smoke artifact/run; then record deployment evidence and change the verdict to `DELETION-SAFE`.
+A fresh thread should read this file, the 18-Aug RSM handover, `CR-049`, `ME-064`, the RSM maintenance row and the deployment-log entry, then re-query Gmail/RSM portal sources where verbatim or native evidence is required.
 
 ## Improved reusable activation prompt
 
