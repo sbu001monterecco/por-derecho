@@ -8,6 +8,20 @@
     });
   }
 
+  // Keep the application/collaboration registry discoverable across the
+  // Por Derecho methodology family without changing the live-matter navigation.
+  if (nav && !nav.querySelector('a[href*="aplicaciones-y-colaboracion"],a[href*="applications-and-collaboration"]')) {
+    const lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+    const link = document.createElement('a');
+    link.dataset.pdApplicationsLink = 'true';
+    link.href = lang === 'en'
+      ? '/por-derecho/en/por-derecho/applications-and-collaboration/'
+      : '/por-derecho/es/por-derecho/aplicaciones-y-colaboracion/';
+    link.textContent = lang === 'en' ? 'Applications' : 'Aplicaciones';
+    const anchor = nav.querySelector('.pd-language,.pd-back');
+    nav.insertBefore(link, anchor || null);
+  }
+
   const decisions = document.querySelectorAll('[data-decision]');
   const output = document.querySelector('[data-decision-output]');
   const audit = document.querySelector('[data-audit]');
