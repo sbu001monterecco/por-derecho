@@ -150,3 +150,16 @@
   script.dataset.acLoyaltyBreakpointLoader = 'true';
   document.head.appendChild(script);
 })();
+
+// Global four-track retracto/tanteo loader. It keeps Article 1535 (credit), the documented
+// 2018 unit-rights workstream, Article 1522/1524 co-owner analysis and contractual/exploitation
+// rights separate, and also applies the primary-source 15-Feb-2018 appeal-route correction.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-retracto-tanteo-four-track-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('retracto-tanteo-four-track-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.retractoTanteoFourTrackLoader = 'true';
+  document.head.appendChild(script);
+})();
