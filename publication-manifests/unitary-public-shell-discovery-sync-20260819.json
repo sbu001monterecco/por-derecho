@@ -2,7 +2,9 @@
   "publication_id": "UNITARY-PUBLIC-SHELL-DISCOVERY-SYNC-20260819",
   "parent_publication_id": "UNITARY-PUBLIC-SHELL-20260818",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
+  "controlling_pr": 438,
+  "merge_sha": "c0f581d7306e54f15abb062493fc7d312bd635c6",
   "control_date": "2026-08-19",
   "publication_type": "bilingual unitary-search and Control Room synchronization layer",
   "purpose": "Synchronize the existing six-system unitary public shell with post-shell public dossiers and make future same-project specialist-sitemap routes discoverable without changing evidential status.",
@@ -26,6 +28,7 @@
   },
   "expected_source_files": [
     "assets/unitary-public-shell-20260818.js",
+    "assets/unitary-public-shell-20260818.a11y.css",
     "assets/share-controls-20260817.js",
     "assets/data/unitary-route-registry-sync-20260819.json",
     "sitemap-legal-advisers.xml",
@@ -33,7 +36,8 @@
     "robots.txt",
     "scripts/render_unitary_public_shell.mjs",
     ".github/workflows/validate-unitary-public-shell.yml",
-    "archive/UNITARY_PUBLIC_SHELL_DISCOVERY_SYNC_19AUG2026.md"
+    "archive/UNITARY_PUBLIC_SHELL_DISCOVERY_SYNC_19AUG2026.md",
+    "archive/UNITARY_PUBLIC_SHELL_DISCOVERY_SYNC_CLOSEOUT_19AUG2026.md"
   ],
   "architecture": {
     "top_level_system_count": 6,
@@ -61,28 +65,45 @@
     "six_system_boundary": "No new top-level case system is created; new public dossiers are bridged into the existing architecture."
   },
   "validation": {
-    "publication_integrity": "PENDING",
-    "unitary_browser": "PENDING",
-    "expected_route_archetypes": 17,
-    "expected_desktop_mobile_renders": 34,
-    "required_controls": [
-      "exactly six Control Room system cards in both languages",
-      "DP1041/retracto link visible in each Control Room",
-      "Cuatrecasas lifecycle and ICAM/CCACM links visible in each Control Room",
-      "CEXP, DP1041, Cuatrecasas, governance-visual and PwC specialist-sitemap searches resolve",
-      "two-track governance visual renders in both languages",
-      "no page-level horizontal overflow on tested routes",
-      "new routes and gateways retain the global Case/Search utility"
+    "publication_integrity_run": 32212319992,
+    "supervisory_practice_run": 32212319979,
+    "unitary_browser_run": 32212319981,
+    "unitary_browser_artifact_id": 9351187726,
+    "unitary_browser_artifact_sha256": "93937d33e59fbf953790c6d09916d0a7b44373384df55a5ed4c1c2e03795f5f4",
+    "result": "PASS",
+    "route_archetypes": 17,
+    "desktop_mobile_renders": 34,
+    "browser": "Google Chrome 151.0.7922.108 via Playwright",
+    "evidence": [
+      "Publication/deletion-safety, operational-control and mission-critical repository checks passed on the final PR #438 head.",
+      "Supervisory-practice route validation passed on the final PR #438 head.",
+      "Playwright rendered 17 route archetypes at desktop and mobile widths: 34 renders passed.",
+      "CEXP, DP1041, Cuatrecasas, governance-visual and PwC specialist-sitemap fallback searches all resolved.",
+      "All tested routes were page-level horizontal-overflow free after mobile evidence-table and governance-hypothesis-pill corrections.",
+      "The browser regression artifact contains screenshots plus machine-readable results."
     ]
+  },
+  "repository_result": {
+    "changed_files": 15,
+    "additions": 490,
+    "deletions": 37,
+    "deleted_files": 0,
+    "substantive_existing_dossier_deletions": 0,
+    "deletion_note": "The 37 deleted lines are replacements inside synchronized navigation/search/workflow/CSS files; no canonical public dossier or evidential source was deleted."
   },
   "deletion_safety": {
     "expected_substantive_route_deletions": 0,
+    "actual_substantive_route_deletions": 0,
     "original_unitary_manifest_modified": false,
-    "dp1901_separation_must_remain": true,
-    "original_control_room_system_count_must_remain": 6
+    "dp1901_separation_preserved": true,
+    "control_room_system_count_preserved": 6
   },
   "live_verification": {
-    "status": "NOT_YET_CLAIMED",
-    "note": "Merge and production-subpath browser rendering do not by themselves establish independent public-edge LIVE_VERIFIED status."
+    "status": "NOT_YET_INDEPENDENTLY_LIVE_VERIFIED",
+    "evidence": [
+      "Source implementation is merged on main at c0f581d7306e54f15abb062493fc7d312bd635c6.",
+      "GitHub Actions production-subpath browser rendering passed with the merged candidate.",
+      "No independent public-edge readback is claimed by this closeout; LIVE_VERIFIED remains a separate state."
+    ]
   }
 }
