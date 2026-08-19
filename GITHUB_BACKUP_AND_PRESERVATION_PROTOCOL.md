@@ -179,4 +179,20 @@ For material likely to become important in litigation, regulatory proceedings or
 
 When a ChatGPT thread produces durable methodology, factual findings, evidential links, case chronology, filing references, scripts, governance decisions or other work that would be costly to reconstruct, the thread should not be treated as deletion-safe until the durable content has been transferred to the repository or another controlled record.
 
+For backup, preservation, deletion-audit and similar continuity threads, **repository transfer alone is not the final handoff**. Before declaring such a thread fully closed or 100% deletion-safe, complete the applicable verification steps, preserve any resulting archive/verification files outside GitHub, and perform the email handoff described below when Gmail is available.
+
 For the thread that generated this protocol, the reusable GitHub-preservation methodology is now captured here and in `scripts/backup_github_account.ps1`; the thread itself is no longer the sole copy of that methodology.
+
+## 13. Email handoff rule for similar threads
+
+For future ChatGPT threads that complete a material backup, preservation cycle, deletion-safety transfer, evidential archive, repository snapshot, restoration test or comparable continuity task, the default closure procedure is:
+
+1. send the user a concise completion email through the connected Gmail account before declaring the thread fully closed, where Gmail is available and the user has asked for or established this handoff practice;
+2. send it to the authenticated user (`to: me`) unless a different recipient has been expressly specified;
+3. state what was preserved, the date, relevant repository/asset identity, the preserved commit or version where applicable, verification outcome, storage locations and any material limitation;
+4. include the final SHA-256 hash or equivalent integrity identifier when one exists;
+5. attach the final archive and verification record when attachment size/capability permits; otherwise identify the durable storage location and attach the verification record at minimum;
+6. do not claim 100% completion if the email send fails when this handoff is part of the requested closure procedure; record the failure and keep the thread open for remediation; and
+7. only after durable transfer, independent-copy verification and the required email handoff may the thread be described as fully deletion-safe.
+
+The purpose of this rule is to ensure that the user receives a human-readable, independently retained closure record outside the ChatGPT conversation itself, rather than relying on the thread as the sole record of completion.
