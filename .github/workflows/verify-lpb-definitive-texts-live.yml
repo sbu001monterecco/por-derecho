@@ -1,0 +1,209 @@
+name: Verify LPB definitive texts live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/textos-definitivos-lpb-base-liquidacion/index.html'
+      - 'en/lpb-definitive-texts-liquidation-baseline/index.html'
+      - 'assets/lpb-definitive-texts-unitary-20260820.js'
+      - 'assets/site-base-20260819.js'
+      - 'assets/case-information-architecture-20260819.js'
+      - 'assets/data/lpb-definitive-texts-v1.json'
+      - 'scripts/render_lpb_definitive_texts_unitary.mjs'
+      - 'publication-manifests/lpb-textos-definitivos-liquidation-baseline-2026-08-20.json'
+      - 'sitemap-lpb-definitive-texts.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-lpb-definitive-texts-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: verify-lpb-definitive-texts-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Poll public GitHub Pages routes and assets
+        id: verify_raw
+        continue-on-error: true
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import time
+          import urllib.request
+
+          base = "https://sbu001monterecco.github.io/por-derecho"
+          source_sha = os.environ["SOURCE_SHA"]
+          run_id = os.environ["RUN_ID"]
+          cache_bust = f"source={source_sha[:12]}&run={run_id}"
+          targets = {
+              "es": {
+                  "url": f"{base}/es/textos-definitivos-lpb-base-liquidacion/?{cache_bust}",
+                  "markers": [
+                      "data-lpb-definitive-texts-page=\"20260820\"",
+                      "19.486.498,94 €",
+                      "10.125.752,00 €",
+                      "9.052.251,69 €",
+                  ],
+              },
+              "en": {
+                  "url": f"{base}/en/lpb-definitive-texts-liquidation-baseline/?{cache_bust}",
+                  "markers": [
+                      "data-lpb-definitive-texts-page=\"20260820\"",
+                      "EUR 19,486,498.94",
+                      "EUR 10,125,752.00",
+                      "EUR 9,052,251.69",
+                  ],
+              },
+              "module": {
+                  "url": f"{base}/assets/lpb-definitive-texts-unitary-20260820.js?{cache_bust}",
+                  "markers": [
+                      "data-lpb-td-primary-promotion",
+                      "data-lpb-td-crosslink",
+                      "data-lpb-td-update",
+                  ],
+              },
+              "sitemap": {
+                  "url": f"{base}/sitemap-lpb-definitive-texts.xml?{cache_bust}",
+                  "markers": [
+                      "/por-derecho/es/textos-definitivos-lpb-base-liquidacion/",
+                      "/por-derecho/en/lpb-definitive-texts-liquidation-baseline/",
+                  ],
+              },
+              "robots": {
+                  "url": f"{base}/robots.txt?{cache_bust}",
+                  "markers": ["sitemap-lpb-definitive-texts.xml"],
+              },
+          }
+
+          def fetch(url: str):
+              req = urllib.request.Request(
+                  url,
+                  headers={
+                      "User-Agent": "Por-Derecho-LPB-definitive-texts-live-verifier/1.0",
+                      "Cache-Control": "no-cache",
+                      "Pragma": "no-cache",
+                  },
+              )
+              with urllib.request.urlopen(req, timeout=25) as response:
+                  return response.status, response.read().decode("utf-8", "replace")
+
+          last = {}
+          for attempt in range(1, 31):
+              checks = {}
+              details = {}
+              for name, target in targets.items():
+                  try:
+                      status, body = fetch(target["url"])
+                      markers = {marker: marker in body for marker in target["markers"]}
+                      checks[f"{name}_http_200"] = status == 200
+                      checks[f"{name}_markers"] = all(markers.values())
+                      details[name] = {"status": status, "bytes": len(body.encode("utf-8")), "markers": markers}
+                  except Exception as exc:
+                      checks[f"{name}_http_200"] = False
+                      checks[f"{name}_markers"] = False
+                      details[name] = {"error": repr(exc)}
+              last = {
+                  "attempt": attempt,
+                  "source_sha": source_sha,
+                  "run_id": run_id,
+                  "checks": checks,
+                  "details": details,
+                  "urls": {name: target["url"] for name, target in targets.items()},
+              }
+              print(json.dumps(last, ensure_ascii=False, indent=2))
+              if all(checks.values()):
+                  with open("/tmp/lpb-definitive-texts-live-source.json", "w", encoding="utf-8") as handle:
+                      json.dump({"status": "SOURCE_LIVE_VERIFIED", **last}, handle, ensure_ascii=False, indent=2)
+                  raise SystemExit(0)
+              time.sleep(5)
+
+          with open("/tmp/lpb-definitive-texts-live-source.json", "w", encoding="utf-8") as handle:
+              json.dump({"status": "SOURCE_NOT_VERIFIED", **last}, handle, ensure_ascii=False, indent=2)
+          raise SystemExit(1)
+          PY
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+      - name: Verify rendered public DOM and reciprocal routes
+        id: verify_dom
+        continue-on-error: true
+        env:
+          PSR_BASE_URL: https://sbu001monterecco.github.io/por-derecho
+          PSR_LPB_TD_ARTIFACT_DIR: artifacts/lpb-definitive-texts-live
+        run: node scripts/render_lpb_definitive_texts_unitary.mjs
+      - name: Show live-verification evidence
+        if: always()
+        run: |
+          cat /tmp/lpb-definitive-texts-live-source.json || true
+          cat artifacts/lpb-definitive-texts-live/result.json || true
+      - name: Publish live-verification commit status
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RAW_OUTCOME: ${{ steps.verify_raw.outcome }}
+          DOM_OUTCOME: ${{ steps.verify_dom.outcome }}
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          repository = os.environ["GITHUB_REPOSITORY"]
+          sha = os.environ["SOURCE_SHA"]
+          run_id = os.environ["RUN_ID"]
+          success = os.environ["RAW_OUTCOME"] == "success" and os.environ["DOM_OUTCOME"] == "success"
+          payload = {
+              "state": "success" if success else "failure",
+              "target_url": f"https://github.com/{repository}/actions/runs/{run_id}",
+              "description": (
+                  "LPB definitive-text baseline and bilingual propagation verified live"
+                  if success
+                  else "LPB definitive-text public-edge verification failed"
+              ),
+              "context": "pages-propagation/lpb-definitive-texts",
+          }
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{repository}/statuses/{sha}",
+              data=json.dumps(payload).encode("utf-8"),
+              method="POST",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Content-Type": "application/json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "Por-Derecho-LPB-definitive-texts-live-verifier/1.0",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print(response.read().decode("utf-8", "replace"))
+          PY
+      - name: Fail when public-edge verification did not succeed
+        if: steps.verify_raw.outcome != 'success' || steps.verify_dom.outcome != 'success'
+        run: exit 1
