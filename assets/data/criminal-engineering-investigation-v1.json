@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-19",
+  "status": "ACTIVE_INVESTIGATION",
+  "public_boundary": {
+    "central_allegation": "Por Derecho investigates whether the Acosta Matos and RIC Private Equity perimeters designed, exploited or preserved a multi-stage sequence assisted by knowing, reckless, negligent or passive enablers.",
+    "not_a_finding": true,
+    "presumption_of_innocence": true,
+    "actor_by_actor_proof_required": true,
+    "private_evidence_published": false
+  },
+  "phases": [
+    {"id":"CE-P1","name_es":"Entrada estratégica","name_en":"Strategic entry","focus":["credit","fincas","Community position","information","litigation"]},
+    {"id":"CE-P2","name_es":"Control de facto","name_en":"De facto control","focus":["keys","security","access","works","operation"]},
+    {"id":"CE-P3","name_es":"Construcción económica y probatoria","name_en":"Economic and evidential construction","focus":["debt","interest","mortgage coverage","appraisals","asset perimeter"]},
+    {"id":"CE-P4","name_es":"Conversión judicial","name_en":"Judicial conversion","focus":["Administrator","plan","opposition","orders","finality","adjudication"]},
+    {"id":"CE-P5","name_es":"Conversión notarial y registral","name_en":"Notarial and registry conversion","focus":["protocol 457","EUR 13,168,082.02","cancellation","registration"]},
+    {"id":"CE-P6","name_es":"Conversión inversora","name_en":"Investment conversion","focus":["RICPE","conflicts","DD","financing","public support"]},
+    {"id":"CE-P7","name_es":"Normalización operativa","name_en":"Operational normalisation","focus":["CAM to HNT","MYND","revenue","improvements","third-party reliance"]},
+    {"id":"CE-P8","name_es":"Defensa e irreversibilidad","name_en":"Defence and irreversibility","focus":["finality","registration","corporate succession","forum fragmentation","delay"]}
+  ],
+  "actor_perimeters": [
+    {"id":"A-CAM","name":"Acosta Matos / CAM / HNT","test":"initiation, representations, calculations, omissions, benefit and transfer"},
+    {"id":"A-RICPE","name":"RIC Private Equity perimeter","test":"sponsorship, conflicts, abstentions, conditions, waivers, funding and disclosure"},
+    {"id":"A-AC","name":"Insolvency Administration","test":"estate protection, independent verification, accounts, loyalty and causation"},
+    {"id":"A-JUDGE","name":"Judge","test":"what was decided, evidence, adversarial process, reasoning, authority and undecided issues"},
+    {"id":"A-LAJ","name":"LAJ / judicial office","test":"filings, annexes, notice, appeals, finality, execution and docket traceability"},
+    {"id":"A-NOTREG","name":"Notary / Land Registry","test":"title, authority, calculation, finca scope, warnings and effective entries"},
+    {"id":"A-PRO","name":"Valuers / lawyers / experts / operators","test":"inputs, limitations, transmission, gatekeeping and lost or preserved routes"},
+    {"id":"A-PUBLIC","name":"Authorities / supervisors / funding bodies","test":"specific notice, competence, preservation, verification, referral and inaction"}
+  ],
+  "enabler_ladder": [
+    {"level":"E0","label":"unwitting conduit"},
+    {"level":"E1","label":"professional error"},
+    {"level":"E2","label":"negligent gatekeeper"},
+    {"level":"E3","label":"reckless or conscious disregard"},
+    {"level":"E4","label":"knowing facilitation"},
+    {"level":"E5","label":"essential cooperation or inducement"},
+    {"level":"E6","label":"coordinated participation"},
+    {"level":"E7","label":"concealment, retaliation or benefit preservation"}
+  ],
+  "hypothesis_families": [
+    "procedural or judicial deception",
+    "documentary or accounting falsity",
+    "punishable insolvency or frustration of recovery",
+    "disloyal administration or unauthorised disposition",
+    "coercion, obstruction or retaliation",
+    "conflict, corruption or improper influence where specifically evidenced",
+    "knowing unjust decision where the subjective threshold is evidenced",
+    "concealment or after-the-fact assistance",
+    "conversion or laundering of allegedly unlawful benefit",
+    "investor, market or regulatory misrepresentation",
+    "subsidy, tax-incentive or EU-funds irregularity",
+    "direct, joint, induced, necessary-cooperation, complicity and corporate participation modes"
+  ],
+  "priority_issues": [
+    {"id":"CE-001","priority":"P0","title":"Texto definitivo versus debt used in 2022","status":"LEGAL_CHARACTERISATION_DISPUTED"},
+    {"id":"CE-002","priority":"P0","title":"Offer, 2021 order, protocol 457 and final accounts","status":"PARTIALLY_VERIFIED"},
+    {"id":"CE-003","priority":"P0","title":"LPB, Matkator and third-party asset perimeter","status":"OPEN_FINCA_BY_FINCA"},
+    {"id":"CE-004","priority":"P0","title":"EUR 400,000 unencumbered-premises trail","status":"MISSING_COMPLETE_PRIMARY_SOURCE"},
+    {"id":"CE-005","priority":"P1","title":"RICPE conflict, due diligence, reactivation and use of money","status":"PARTIALLY_VERIFIED"},
+    {"id":"CE-006","priority":"P1","title":"Administrator control, loyalty, accounts and causation","status":"COUNSEL_VALIDATION_REQUIRED"},
+    {"id":"CE-007","priority":"P1","title":"Judge and LAJ act-by-act separation","status":"OPEN"},
+    {"id":"CE-008","priority":"P1","title":"Knowledge, coordination, obstruction or retaliation","status":"HYPOTHESIS"},
+    {"id":"CE-009","priority":"P1","title":"False-premise propagation through formal acts","status":"ACTIVE_RECONSTRUCTION"},
+    {"id":"CE-010","priority":"P1","title":"Benefit, financing and irreversibility flows","status":"ACTIVE_RECONSTRUCTION"}
+  ],
+  "evidence_gates": [
+    "complete certified court and LexNET chain",
+    "complete definitive creditor texts and every modification",
+    "legal basis for every component of EUR 13,168,082.02",
+    "proof of five-day court notification of protocol 457",
+    "complete EUR 400,000 bank, ledger, deed and registry chain",
+    "final liquidation accounts and conclusion order",
+    "historic and current finca-by-finca registry certificates",
+    "RICPE board, committee, conflict, due-diligence, waiver and funding files",
+    "actor-specific communications, instructions and exculpatory evidence",
+    "retaliation and preservation evidence where alleged"
+  ],
+  "canonical_routes": {
+    "es": "/es/ingenieria-forense-criminal-sun-park/",
+    "en": "/en/sun-park-criminal-engineering-investigation/"
+  }
+}
