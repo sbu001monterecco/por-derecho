@@ -40,14 +40,21 @@
 
 - bilingual flagship 360° pages;
 - cross-site `assets/reverse-engineering-360-20260819.js` gateway;
-- site-wide loader entry in `assets/site.js`;
-- bilingual sitemap entries;
+- loader bridge added to the already site-wide `assets/art1535-reserve-pathway-20260819.js` chain (itself loaded through the existing CAM-pattern loader architecture);
+- dedicated `sitemap-reverse-engineering-360.xml` plus `robots.txt` registration;
 - canonical 360 control record;
+- publication manifest;
 - this deletion-audit continuity record.
+
+## Verification state
+
+- PR #503 merged to `main` on 19 August 2026.
+- Repository read-back confirms the Spanish flagship 360° page and this continuity record in `main`.
+- Public-edge browser/search-index read-back was attempted immediately after merge but the browser environment could not directly fetch the unindexed GitHub Pages route. This is recorded as a verification-tool limitation, not as evidence that the route is absent from `main`.
 
 ## Deletion criterion
 
-This thread is deletion-safe only after all implementation components above are merged to `main` and repository read-back confirms them. Independent public-edge read-back is desirable and should be recorded separately; failure of a browser/search-index read-back must not be confused with absence from `main`.
+The material content of this thread is preserved in `main`: the Day Zero doctrine, legal gates, 360° reverse-engineering methodology, opposing-case discipline, propagation architecture and continuity record are no longer dependent on the chat thread. The thread is therefore **repository-deletion-safe**. Independent public-edge read-back remains a separate operational verification item and should not be confused with preservation of the substantive work.
 
 ## Legal uncertainty retained deliberately
 
