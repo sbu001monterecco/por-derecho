@@ -1,8 +1,12 @@
 {
   "publication_id": "CASE-INFORMATION-ARCHITECTURE-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "control_date": "2026-08-19",
+  "controlling_pr": 549,
+  "ci_head_sha": "33520094390d661ec8590f7d826f23f62173c4a1",
+  "merge_sha": "8dff986f5daa17c804ea264ea449026d58e45d6b",
+  "merged_at": "2026-08-19T23:03:48Z",
   "publication_type": "bilingual case-control architecture, corrections register, compact context layer and actor-specific implementation pages",
   "subject": "Public hierarchy from homepage to Case Control Room to CE-001–CE-010 issue to dossier to primary source",
   "expected_routes": {
@@ -40,13 +44,15 @@
     "The investigation asks whether—and, if so, how—the result was engineered; it does not presuppose the answer.",
     "Documented fact, allegation, inference, disputed or corrected material, open question and official outcome must remain visibly distinct.",
     "LIVE_VERIFIED means technical publication and public read-back, not independent or judicial verification of the merits.",
-    "Every CE issue must display what is documented, what is not proved, the strongest defence and the next decisive source.",
-    "One compact page-context module replaces two large dynamic gateways.",
+    "Every CE issue displays what is documented, what is not proved, the strongest defence and the next decisive source.",
+    "One compact page-context module replaces two large dynamic gateways in the final rendered DOM.",
     "Notarial and Registry functions are analysed separately.",
     "Corrections remain visible and bilingual rather than being silently overwritten."
   ],
   "priority_issue_count": 10,
+  "p0_issue_count_on_canonical_investigation": 4,
   "public_corrections_count": 10,
+  "rendered_route_assertions": 26,
   "new_actor_routes": [
     "Notarial implementation of protocol 457",
     "Land Registry implementation property by property"
@@ -60,7 +66,8 @@
     "confidential_witnesses_identified": false,
     "criminal_guilt_stated_as_fact": false,
     "public_enabler_levels_assigned_to_named_people": false,
-    "live_verified_presented_as_merits_verification": false
+    "live_verified_presented_as_merits_verification": false,
+    "legacy_duplicate_gateways_present_in_rendered_dom": false
   },
   "counsel_and_evidence_gates": [
     "complete definitive creditor texts and modifications",
@@ -73,18 +80,84 @@
     "actor-specific knowledge, intent, causation and exculpatory evidence"
   ],
   "validation": {
-    "source_presence": "PENDING",
-    "json_and_sitemap": "PENDING",
-    "bilingual_route_parity": "PENDING",
-    "desktop_mobile_render": "PENDING",
-    "legacy_gateway_removal": "PENDING",
-    "privacy": "PENDING",
-    "publication_integrity": "PENDING",
-    "off_github_preservation": "PENDING",
-    "public_edge": "NOT_YET_CLAIMED"
+    "evidence": [
+      "PR 549 final-head case information architecture run 32311457756, job 96255121016: success.",
+      "PR 549 final-head unitary public-shell run 32311457735, job 96255120951: success.",
+      "PR 549 final-head supervisory-practice run 32311457718: success.",
+      "PR 549 final-head visual-identity run 32311457789: success.",
+      "PR 549 final-head publication-integrity run 32311457709: success.",
+      "PR 549 final-head lender-liability run 32311457750: success.",
+      "PR 549 final-head off-GitHub preservation run 32311457739: success.",
+      "The unitary audit scanned 376 public Spanish/English HTML and runtime-JavaScript files with zero structural failures; eight high-risk wording occurrences were human-reviewed as non-actionable safeguards, official names or neutral legal references.",
+      "PR 549 was reconciled against the complete current main tree and confirmed to contain exactly 17 intended files before merge.",
+      "PR 549 merged to main at 8dff986f5daa17c804ea264ea449026d58e45d6b.",
+      "Public-edge workflow run 32311624295, job 96255612835: source propagation succeeded on attempt 3 and all 26 rendered route assertions passed.",
+      "Persistent commit status pages-propagation/case-information-architecture was published as success on source merge SHA 8dff986f5daa17c804ea264ea449026d58e45d6b."
+    ],
+    "source_presence": "PASS",
+    "json_and_sitemap": "PASS",
+    "bilingual_route_parity": "PASS",
+    "desktop_mobile_render": "PASS",
+    "legacy_gateway_removal": "PASS",
+    "privacy": "PASS",
+    "publication_integrity": "PASS",
+    "off_github_preservation": "PASS",
+    "repository_merge": "PASS",
+    "public_edge": "PASS"
+  },
+  "deployment_evidence": [
+    "GitHub Pages returned HTTP 200 with every declared source marker for the canonical pages, case module, site loader, CE register, corrections, Notary, Registry and both sitemaps.",
+    "The source package became fully visible on propagation attempt 3.",
+    "Playwright rendered 26 live routes, including both homepages, both Case Control Rooms, both canonical investigations, twelve bilingual actor/context routes, corrections, Notary, Registry and Updates.",
+    "Both Case Control Rooms rendered ten CE issue cards; both canonical investigation pages rendered the four P0 cards.",
+    "The conditional headline, state-of-proof panel, evidence legend and compact context modules were present, and both legacy large gateways were absent from the final DOM."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/sala-control-caso/",
+    "https://sbu001monterecco.github.io/por-derecho/en/case-control-room/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/",
+    "https://sbu001monterecco.github.io/por-derecho/es/correcciones-control-versiones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/corrections-version-control/",
+    "https://sbu001monterecco.github.io/por-derecho/es/implementacion-notarial-protocolo-457/",
+    "https://sbu001monterecco.github.io/por-derecho/en/notarial-implementation-protocol-457/",
+    "https://sbu001monterecco.github.io/por-derecho/es/implementacion-registral-finca-por-finca/",
+    "https://sbu001monterecco.github.io/por-derecho/en/land-registry-implementation-property-by-property/",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-case-governance.xml"
+  ],
+  "live_verification_evidence": {
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-08-19T23:05:10Z",
+    "source_sha": "8dff986f5daa17c804ea264ea449026d58e45d6b",
+    "workflow_run_id": 32311624295,
+    "workflow_job_id": 96255612835,
+    "source_propagation_attempt": 3,
+    "rendered_routes_checked": 26,
+    "commit_status_context": "pages-propagation/case-information-architecture",
+    "commit_status_state": "success",
+    "checks": {
+      "raw_source_and_markers": true,
+      "spanish_homepage": true,
+      "english_homepage": true,
+      "spanish_control_room_ten_issues": true,
+      "english_control_room_ten_issues": true,
+      "spanish_canonical_p0_register": true,
+      "english_canonical_p0_register": true,
+      "conditional_headline_and_proof_panel": true,
+      "compact_actor_contexts": true,
+      "legacy_duplicate_gateways_absent": true,
+      "corrections_routes": true,
+      "notary_routes": true,
+      "registry_routes": true,
+      "updates_routes": true,
+      "case_governance_sitemap": true
+    }
   },
   "live_verification": {
-    "status": "NOT_YET_CLAIMED",
-    "note": "PR_OPEN records the proposed source package only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-08-19T23:05:10Z",
+    "note": "The bilingual case hierarchy, CE register, conditional investigation opening, corrections, compact context modules, Notary/Registry routes and sitemap were independently read back and rendered from the public GitHub Pages edge. This is technical publication evidence, not merits verification."
   }
 }
