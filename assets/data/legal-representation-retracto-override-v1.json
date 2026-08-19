@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "CANONICAL-OVERRIDE-FOR-RETRACTO-WORKSTREAM",
+  "purpose": "Claim-specific override/addendum to assets/data/legal-representation-v1.json for the DP 1041/2017 / Article 1535 reconstruction. Where the base seed conflicts on these specific people or this specific matter, this file controls until the base seed is safely regenerated in full.",
+  "controlsMatter": "Diligencias Preliminares 1041/2017 / Article 1535 and linked post-2018 recovery work",
+  "overrides": [
+    {
+      "person": "Cristo Ayose Suárez Pimentel",
+      "baseIssue": "A simple former/non-primary or resignation-style narrative is insufficient.",
+      "replacementStatus": "CONTINUED_BROADER_ROLE_WITH_SPECIFIC_FORMAL_LPB_AUTHORITY_CHANGE_OPEN",
+      "verified": [
+        "Acted for LPB in the DP 1041/2017 workstream.",
+        "Continued broader Sun Park legal activity after January 2018.",
+        "Later multi-matter legal and evidential work is documented."
+      ],
+      "clientAccount": "Gil Marer's present account is that the insolvency administration caused Cristo's relevant formal LPB role to cease; no voluntary resignation has been located in the current reconstruction.",
+      "publicationRule": "Preserve the client account as such until the exact revocation/change-of-authority instrument and handover chain are rebound to primary evidence. Do not state 'Cristo resigned' absent a primary resignation."
+    },
+    {
+      "person": "Armando Betancor Álamo",
+      "baseIssue": "Candidate/specialist-contact status is superseded.",
+      "replacementStatus": "VERIFIED_RETAINED_ADVISER_2019",
+      "verified": [
+        "Signed Aweswell services/success-fee engagement located for 2019.",
+        "Subsequent legal drafting, review and strategy are documented.",
+        "Coordination with Cristo Suárez Pimentel, Juan Tomás Parrilla and Joaquín Ruiz de Infante Abella is documented on parts of the post-2018 recovery/challenge work."
+      ],
+      "open": "Map exact client/matter perimeter task by task."
+    },
+    {
+      "person": "Joaquín Ruiz de Infante Abella",
+      "baseIssue": "Must not be omitted from the lawyer genealogy.",
+      "replacementStatus": "VERIFIED_COLLABORATING_LAWYER_2019",
+      "verified": [
+        "Direct substantive drafting/filing activity located.",
+        "Coordinated legal work with Armando, Cristo and other counsel is documented."
+      ],
+      "open": "A separate standalone engagement letter/retainer has not yet been located."
+    },
+    {
+      "person": "Javier Sixto / Estefanía Sixto-Seijas",
+      "replacementStatus": "CURRENT_COUNSEL_WITH_LATER_ARCHIVE_REVIEW",
+      "verified": [
+        "Later review of archived Promontoria / retracto / AC-Cristo material is documented."
+      ],
+      "open": "No later Sixto communication has yet been located that definitively concludes the Article 1535 claim was viable or non-viable. Do not attribute either conclusion."
+    }
+  ],
+  "handoverOverride": {
+    "from": "Cristo Ayose Suárez Pimentel",
+    "client": "Luchy Playa Blanca, S.L.U.",
+    "matter": "DP 1041/2017 / related formal LPB authority",
+    "status": "OPEN_WITH_CLIENT_ACCOUNT",
+    "voluntaryResignationLocated": false,
+    "exactRevocationInstrumentLocated": false,
+    "exactSuccessorAndHandoverChainComplete": false,
+    "rule": "Continued activity on other Sun Park matters does not prove continued formal authority in the specific LPB proceeding; conversely, cessation of a specific formal mandate does not prove a total resignation from the wider client relationship."
+  }
+}
