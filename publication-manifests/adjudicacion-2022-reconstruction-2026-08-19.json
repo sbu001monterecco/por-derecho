@@ -1,7 +1,7 @@
 {
   "publication_id": "ADJUDICACION-2022-RECONSTRUCTION-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "CI_GREEN",
   "control_date": "2026-08-19",
   "controlling_pr": 509,
   "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
@@ -62,6 +62,21 @@
     "final liquidation accounts and conclusion order",
     "historic and current property-by-property registry certificates"
   ],
+  "validation": {
+    "evidence": [
+      "PR 509 publication, operational and mission-critical integrity run 32280266373: success.",
+      "PR 509 bilingual unitary public-shell and desktop/mobile rendering run 32280266561: success.",
+      "PR 509 supervisory-practice route validation run 32280266563: success.",
+      "PR 509 off-GitHub preservation snapshot run 32280266381: success after adding retry handling for transient GitHub API failures.",
+      "The six deed components were independently reconciled to EUR 13,168,082.02 exactly."
+    ],
+    "publication_integrity": "PASS",
+    "mission_critical_repository": "PASS",
+    "unitary_public_shell": "PASS",
+    "bilingual_route_parity": "PASS",
+    "desktop_mobile_render": "PASS",
+    "off_github_preservation": "PASS"
+  },
   "publication_safety": {
     "nullity": "No single universal-nullity claim; consequences are act-specific and right-holder-specific.",
     "surplus": "No actual remanente is asserted without reconstruction of both the legally relevant realisation amount and legally payable debt.",
@@ -75,6 +90,6 @@
   },
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "PR_OPEN records source presence only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+    "note": "CI_GREEN records validated PR source state only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
   }
 }
