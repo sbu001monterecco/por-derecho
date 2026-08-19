@@ -1,7 +1,7 @@
 # Adjudicación 2022 — activation record
 
 **Activated:** 2026-08-19  
-**Status:** controlled publication package; primary-source reconstruction active; provenance/cross-link hardening pending PR validation  
+**Status:** controlled publication package; primary-source reconstruction active; provenance/cross-link hardening in PR #521  
 **Scope:** Concurso 36/2012, CAM offer, 2021 adjudication order, 2022 deed, EUR 400,000 unencumbered-property line, registry and final accounts
 
 ## Purpose
@@ -53,7 +53,7 @@ The January/February 2026 papers appear not to have been filed in their present 
 
 ## 19 August 2026 provenance and site-hardening update
 
-The live-site follow-up adds a bilingual version-control/prior-use panel to the canonical adjudication pages, a distinct prior-use row to the validation tables, publication/correction dates and reciprocal links from the principal ACTÚA, Acosta Matos, RICPE, lender, premises/valuation and procedural-route pages.
+PR #521 adds a bilingual version-control/prior-use panel to the canonical adjudication pages, a distinct prior-use row to the validation tables, publication/correction dates and reciprocal links from the principal ACTÚA, Acosta Matos, RICPE, lender, premises/valuation and procedural-route pages.
 
 A repository-wide public-language audit now checks for the principal superseded formulations, including:
 
