@@ -126,3 +126,15 @@
   if (hero) hero.insertAdjacentElement('afterend', section);
   else main.insertAdjacentElement('afterbegin', section);
 })();
+
+// Global reserve-pathway loader. This file is already loaded site-wide through assets/site.js,
+// so keep the Article 1535 reserve doctrine decoupled from the CAM-pattern route gate above.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-art1535-reserve-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('art1535-reserve-pathway-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.art1535ReserveLoader = 'true';
+  document.head.appendChild(script);
+})();
