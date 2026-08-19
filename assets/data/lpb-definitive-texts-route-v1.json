@@ -1,0 +1,20 @@
+[
+  {
+    "lang": "es",
+    "path": "es/textos-definitivos-lpb-base-liquidacion/",
+    "title": "Textos definitivos de LPB · base documental de la liquidación",
+    "type": "evidence",
+    "summary": "Informe e inventario de 2013, textos definitivos y lista de acreedores de 2016, modificación de titular de 2018 y relación con el plan de liquidación.",
+    "tags": ["Concurso 36/2012", "LPB", "textos definitivos", "inventario", "acreedores", "liquidación"],
+    "aliases": ["texto definitivo LPB", "lista definitiva acreedores", "9052251,69", "19486498,94", "10125752", "plan liquidacion Luchy"]
+  },
+  {
+    "lang": "en",
+    "path": "en/lpb-definitive-texts-liquidation-baseline/",
+    "title": "LPB definitive texts · documentary liquidation baseline",
+    "type": "evidence",
+    "summary": "The 2013 report and inventory, 2016 definitive texts and creditor list, the 2018 holder modification and their relationship to the liquidation plan.",
+    "tags": ["Insolvency 36/2012", "LPB", "definitive texts", "inventory", "creditors", "liquidation"],
+    "aliases": ["LPB definitive creditor list", "EUR 9,052,251.69", "EUR 19,486,498.94", "EUR 10,125,752", "Luchy liquidation plan"]
+  }
+]
