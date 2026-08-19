@@ -1,0 +1,42 @@
+name: Verify San Telmo source stamp live
+
+on:
+  pull_request:
+    paths:
+      - "assets/san-telmo-source-stamp-20260819.js"
+      - "assets/ricpe-identity-correction-20260815.js"
+      - "assets/actors/eduardo-sanchez-san-telmo.url"
+      - "assets/visual-asset-registry.json"
+      - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
+      - "scripts/verify_san_telmo_source_stamp_live.py"
+      - ".github/workflows/verify-san-telmo-source-stamp-live.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/san-telmo-source-stamp-20260819.js"
+      - "assets/ricpe-identity-correction-20260815.js"
+      - "assets/actors/eduardo-sanchez-san-telmo.url"
+      - "assets/visual-asset-registry.json"
+      - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
+      - "scripts/verify_san_telmo_source_stamp_live.py"
+      - ".github/workflows/verify-san-telmo-source-stamp-live.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify source stamp, assets, loader chain and controlled public routes
+        run: python scripts/verify_san_telmo_source_stamp_live.py
