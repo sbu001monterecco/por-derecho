@@ -3,60 +3,110 @@
 **Date:** 19 August 2026  
 **Thread topic:** preparation and preservation of the RICPE internal-information / ethics-channel filing based on the signed 17 August 2026 communication concerning Sun Park–MYND Yaiza / CAM–HNT, including filing posture, portal fields, person-by-person caution and submission-custody requirements.
 
-## Deletion conclusion
+## Final deletion conclusion
 
-**Status: CONDITIONALLY SAFE TO DELETE AFTER THIS BRANCH/PR IS RETAINED; FULL SAFETY REQUIRES PDF + PORTAL/RECEIPT RECONCILIATION.**
+**STATUS: SAFE TO DELETE NOW once this repository preservation change is durably retained; prefer merge to `main`.**
 
-The thread contained operational filing work product that was not safely represented by the underlying substantive communication alone. That operational layer is now preserved in `RICPE_ETHICS_CHANNEL_FILING_17AUG2026.md` on branch `audit/ricpe-ethics-deletion-safety-20260819`.
+The earlier conditional gaps have been closed. The exact long portal narrative and person/role wording have been recovered from the live thread and migrated verbatim/substantively into the canonical preservation record. The controlling signed PDF has also been positively reconciled against an independently preserved private Google Drive copy by exact file name, byte size and SHA-256 hash.
 
-The preservation record deliberately distinguishes what was recoverable from what was not. It does not invent missing verbatim portal text.
+The absence of a future RICPE receipt/reference is not a deletion blocker because no channel submission was evidenced as completed in the source thread. Those are future records to be captured when generated, not existing thread assets that would be lost by deletion.
 
-## Unique work product preserved
+## Canonical preservation file
 
-1. **Filing posture:** identified and confidential; not anonymous.
-2. **Exact proposed portal subject:** preserved verbatim in the filing record.
-3. **Relationship description:** “Tercero directamente afectado; empresario e inversor; director de Aweswell Limited.”
-4. **Compliance/governance framing:** internal-information / ethics-channel treatment rather than an ordinary commercial complaint.
-5. **Person-by-person discipline:** José Daniel Acosta Matos and Francisco Mario Matos Matas are to be described cautiously and individually; inclusion is not proof of wrongdoing and role/conflict/vote/knowledge issues require evidence.
-6. **Submission evidence architecture:** internal reference, timestamp, receipt, System Officer, Board referral, preservation confirmation, recusals, independent investigator, secure contact and follow-up status.
-7. **Credential rule:** no passwords or portal access codes are to be stored in this public GitHub repository.
+`RICPE_ETHICS_CHANNEL_FILING_17AUG2026.md`
 
-## Preservation gaps explicitly retained as gaps
+This file now preserves:
 
-The following items were identified as thread-developed but could not be recovered verbatim during the deletion-safety capture:
+1. exact proposed portal subject;
+2. exact relationship wording;
+3. identified + confidential filing posture;
+4. recommended portal taxonomy hierarchy;
+5. complete long `Información de detalle` drafting from the thread;
+6. exact initial `Nombre y apellidos / Cargo` table for José Daniel Acosta Matos and Francisco Mario Matos Matas;
+7. person-specific evidential caveats and anti-guilt-by-association discipline;
+8. short alternative portal description;
+9. signed-PDF filename and SHA-256;
+10. attachment-integrity protocol;
+11. receipt/reference/timestamp and System-Officer/Board/conflict/investigator fields;
+12. explicit rule against storing passwords/access codes in the public repository;
+13. six-state evidential classification discipline: fact / documentary representation / allegation / inference / question for investigation / unresolved gap.
 
-- the exact final portal taxonomy/category label;
-- the complete long paste-ready “Información de detalle” text;
-- the exact final “Persona objeto de la comunicación” portal wording/role fields for José Daniel Acosta Matos and Francisco Mario Matos Matas.
+## Controlling signed communication — reconciliation certificate
 
-These are not silently regenerated. If they remain available in the live thread or are used at submission, capture them verbatim before deleting the only remaining source.
+The source thread and current runtime contain:
 
-## Controlling signed communication
+- `01_RICPE_Comunicacion_Unica_Consejo_17AGO2026_FINAL_FIRMADA.pdf`
+- size: **447,975 bytes**
+- SHA-256: **`b455075ceda7841471ef5f4ebfbb784ccd00357439aa8bf282e736fe4757832c`**
 
-The thread identified a signed 22-page final communication dated 17 August 2026. It was described as requesting confidential treatment, immediate preservation, conflict controls and an independent investigation, with RICPE, its President, the non-conflicted Board and the System Officer as intended recipients.
+A Google Drive search located an independently preserved private file with the exact same filename:
 
-**Remaining custody gap:** this audit has not positively reconciled the exact signed PDF against a repository copy or immutable hash. That remains the principal source-document deletion-safety gap.
+- Drive file ID: **`1GPrHcUsSczK5KNkhc4bHjHAWeZdEoj3b`**
+- MIME: `application/pdf`
+- size: **447,975 bytes**
+- sharing status at audit: **not shared / private**
 
-## Submission status
+The Drive file was downloaded during this audit and its SHA-256 was calculated as:
 
-**No actual RICPE ethics-channel submission is evidenced in this thread capture.** No receipt, internal reference number or submission timestamp is preserved as completed. The repository record therefore correctly remains `PRE-SUBMISSION / SUBMISSION NOT YET EVIDENCED`.
+**`b455075ceda7841471ef5f4ebfbb784ccd00357439aa8bf282e736fe4757832c`**
 
-## Claims that must NOT be hardened into facts
+This matches the current-conversation signed PDF and the `.sha256` record exactly. The controlling source document is therefore independently preserved outside the ChatGPT thread and positively byte-reconciled.
 
-- that the filing has already been submitted;
-- that any named person committed wrongdoing merely because they were identified for review;
-- that a conflict, vote, abstention/recusal or internal Board role has been proved unless supported by the underlying record;
-- that reconstructed portal wording is the verbatim wording used in the thread or in any final submission;
-- that the signed PDF is safely in GitHub until the exact file/hash is positively reconciled.
+The PDF is deliberately not committed to the public GitHub repository because it contains personal/signature material. The private Drive custody reference plus cryptographic hash is sufficient for continuity and avoids unnecessary public disclosure.
 
-## Final deletion test
+## Migration matrix
 
-For maximum safety, all of the following should be true before this thread is treated as fully disposable:
+| Material thread asset | Preservation location/status | Residual dependency |
+|---|---|---|
+| Signed 22-page RICPE communication | Private Google Drive file ID + SHA-256 recorded in canonical GitHub file | None for deletion; Drive remains source custody |
+| Portal subject | `RICPE_ETHICS_CHANNEL_FILING_17AUG2026.md` | None |
+| Relationship wording | same | None |
+| Identified/confidential posture | same | None |
+| Portal classification guidance | same | Final portal label is future submission state |
+| Long `Información de detalle` | same, fully migrated | None |
+| José Daniel Acosta Matos name/cargo wording | same | Underlying role/conflict facts remain evidential questions, correctly qualified |
+| Francisco Mario Matos Matas name/cargo wording | same | Underlying role/duties facts remain evidential questions, correctly qualified |
+| Person-by-person caution | same | None |
+| Short paste-ready portal text | same | None |
+| PDF hash/integrity protocol | same | None |
+| Submission receipt/reference fields | same | Future evidence only; no submission was evidenced in the thread |
+| Credential handling rule | same | Secrets must remain outside public GitHub |
+| Evidential-state distinctions | same | None |
 
-1. `RICPE_ETHICS_CHANNEL_FILING_17AUG2026.md` remains accessible in GitHub, preferably merged to `main`;
-2. the exact signed 22-page 17 August 2026 communication is preserved in or immutably referenced from the repository, with hash if practical;
-3. any final submitted portal subject/category/detail/person fields are retained verbatim;
-4. any eventual receipt/reference/submission timestamp is captured outside ChatGPT;
-5. no credentials are stored in the public repository.
+## Claims deliberately NOT hardened into fact
 
-**Current classification after activation:** deletion safety is materially improved and the thread is protected against loss of the recoverable operational synthesis. It is not yet classified as absolutely safe to delete because the exact signed PDF and unrecovered verbatim portal text have not been reconciled.
+Repository preservation does not establish:
+
+- that the RICPE ethics-channel filing has already been submitted;
+- that any named person committed wrongdoing merely because they are identified for investigation;
+- that José Daniel Acosta Matos's exact role, period, conflicts, abstentions or votes are proved without the underlying records;
+- that Francisco Mario Matos Matas committed any specific infringement without evidence of contract, duties, knowledge, conduct and causation;
+- that Orion bears responsibility by association or that there is a Sun Park→Orion patrimonial chain;
+- that all funding layers are duplicative or incompatible; the filing requests reconciliation rather than assuming that conclusion;
+- that every documentary representation quoted in the filing is factually true merely because it appears in a document.
+
+## Credential and privacy audit
+
+No password, portal access code, API key or secret credential has been included in the deletion-safety files. The signed PDF remains private in Drive rather than being copied into the public repository. The repository preserves only the minimum custody metadata and SHA-256 needed for continuity.
+
+## Branch / PR durability
+
+Deletion safety depends on this repository preservation change remaining durably accessible. The working branch is:
+
+`audit/ricpe-ethics-deletion-safety-20260819`
+
+PR: **#458 — Activate deletion safety for RICPE ethics-channel thread**.
+
+Prefer merging PR #458 into `main` before deleting the thread. If repository governance prevents immediate merge, retaining the branch and open PR preserves the migrated work product; deleting both branch and PR without merge would reverse that protection.
+
+## Final deletion certificate
+
+- **Final status:** SAFE TO DELETE NOW, subject only to durable retention of this repository branch/PR or merge into `main`.
+- **Controlling RICPE filing material preserved:** YES — signed PDF independently preserved in private Drive and positively reconciled by SHA-256.
+- **All material thread-only drafting migrated:** YES.
+- **Unresolved facts remain explicitly qualified:** YES.
+- **No credentials committed:** YES.
+- **Residual dependency outside GitHub:** private Google Drive custody of the signed PDF; this is intentional, positively reconciled and does not depend on the ChatGPT thread.
+- **Future submission receipt/reference:** not yet generated/evidenced; not a current-thread deletion dependency.
+
+**This thread may now be deleted without loss of the substantive evidence or unique drafting developed in it, provided the preservation branch/PR is not itself discarded.**
