@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "id": "AC-LOYALTY-BREAKPOINT-PREDECESSOR-CAM",
+  "coreQuestion": {
+    "es": "¿En qué momento, si alguno, dejó la Administración Concursal de actuar como administración leal e independiente de LPB y empezó a avanzar, proteger, adoptar o ejecutar funcionalmente intereses de partes privadas adversas?",
+    "en": "At what point, if any, did the insolvency administration cease acting as a loyal, independent estate office-holder for LPB and begin functionally advancing, protecting, adopting or implementing adverse private-party interests?"
+  },
+  "temporalStages": [
+    {
+      "id": "PRE_CAM",
+      "label": "Pre-CAM predecessor architecture",
+      "status": "DOCUMENTED_DISPUTE_ARCHITECTURE",
+      "publicSafeFinding": "The 2008 transfer/exploitation architecture later fractured. By 2016 the controlled record shows a Molina-family / Community representative perimeter in direct dispute with LPB-side advisers over debt, access, exploitation and governance.",
+      "limit": "This does not itself prove that the insolvency administrator represented, colluded with or acted on behalf of that perimeter."
+    },
+    {
+      "id": "CAM_TRANSITION",
+      "label": "CAM arrival / adoption / escalation hypothesis",
+      "status": "INVESTIGATIVE_HYPOTHESIS",
+      "publicSafeFinding": "Por Derecho alleges that CAM entered a hotel already fractured by a predecessor adverse architecture. The question is whether CAM merely benefited from that history or knowingly adopted, amplified or completed it with support/cooperation from the insolvency administration.",
+      "limit": "Collusion, agency or criminal agreement is not established by recurrence or benefit alone."
+    }
+  ],
+  "loyaltyGrades": [
+    {"grade":"L0","meaning":"No evidence of departure from loyal estate administration"},
+    {"grade":"L1","meaning":"Adverse effect only"},
+    {"grade":"L2","meaning":"Repeated adverse / same-beneficiary effect"},
+    {"grade":"L3","meaning":"Conflict / role-boundary indicia"},
+    {"grade":"L4","meaning":"Strong functional alignment / contradictory estate-interest conduct"},
+    {"grade":"L5","meaning":"Direct evidence of instruction, representation, agreement, undisclosed agency or knowing joint action"}
+  ],
+  "requiredTests": [
+    "date and formal power",
+    "LPB/estate interest",
+    "adverse private interest",
+    "knowledge / notice",
+    "act or omission",
+    "immediate beneficiary",
+    "measurable estate benefit",
+    "predecessor-position validation or operationalisation",
+    "later CAM benefit",
+    "alternative loyal explanation",
+    "conflict disclosure / abstention / supervision",
+    "act-specific validity/remedy consequence"
+  ],
+  "retractoTracks": {
+    "mustRemainSeparate": true,
+    "tracks": [
+      "2017-2018 Article 1535 / DP 1041 credit-assignment workstream",
+      "later unit/property-level tanteo-retracto / preferential-acquisition workstreams"
+    ],
+    "art1535ControlledFacts": [
+      "Cristo Suarez Pimentel originated the LPB workstream.",
+      "On 25-Jan-2018 the AC directly terminated Cristo's specific formal LPB mandate and imposed an AC authorisation gate.",
+      "By 5-Mar-2018 Borja is recorded as LPB's lawyer and the decree records that LPB requested withdrawal.",
+      "CAM did not oppose and DP 1041 ended.",
+      "The internal instruction/drafting/filing chain behind withdrawal remains open."
+    ],
+    "validityQuestion": "If a material loyalty/conflict breakpoint had already occurred before the AC controlled LPB's legal representation, what is the validity and legal effect of the AC intervention and of any later withdrawal or loss of protection that depended upon that conflicted control?"
+  },
+  "consequenceLadder": [
+    "conflict / loss of independence or impartiality",
+    "duty breach",
+    "separation/removal consequence",
+    "lack/excess of authority",
+    "invalidity / ineffectiveness / unenforceability depending on act type",
+    "rescission / reversal / correction",
+    "patrimonial liability",
+    "restitution / unjust enrichment",
+    "material procedural indefension",
+    "criminal-investigative significance where constituent facts are separately supported"
+  ],
+  "publicationRules": {
+    "safe": [
+      "loyalty-breakpoint question",
+      "possible functional alignment",
+      "predecessor architecture",
+      "adoption / operationalisation hypothesis",
+      "act-specific conflict and validity analysis",
+      "Por Derecho alleges / asks for documentary testing"
+    ],
+    "notEstablished": [
+      "the AC was the secret lawyer or agent of Molina-family interests",
+      "the AC was Acosta Matos's representative",
+      "the AC and CAM colluded",
+      "all AC acts are null",
+      "the AC personally cancelled the Article 1535 right"
+    ]
+  },
+  "p0": [
+    "Complete AC-Community/Molina/Monte Lanza communications 2012-2018",
+    "First AC-CAM contact and CAM predecessor-dispute knowledge",
+    "Community debt/vote/accounting reconciliation",
+    "Security/access instruction chain",
+    "DP1041 withdrawal instruction/filing chain",
+    "Later tanteo/retracto instruction/authority chain",
+    "Estate-benefit analysis for adverse-perimeter-benefiting AC acts",
+    "Conflict declarations, abstentions and supervision record",
+    "Communication graph around 2017 credit acquisition, June 2018 control and 2020-22 adjudication",
+    "Evidence distinguishing coincidence/deference/negligence from knowing joint action"
+  ]
+}

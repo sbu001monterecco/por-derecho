@@ -1,0 +1,50 @@
+{
+  "publication_id": "AC-LOYALTY-BREAKPOINT-CROSSSITE-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "publication_type": "bilingual dedicated dossier plus cross-site forensic question module",
+  "controlling_pr": 454,
+  "controlling_proposition": {
+    "es": "Por Derecho investiga si y cuándo la Administración Concursal dejó de poder explicarse como administración leal e independiente de LPB y empezó a validar, proteger, adoptar o ejecutar funcionalmente intereses privados adversos, distinguiendo la arquitectura pre-CAM de la posterior entrada de Acosta Matos.",
+    "en": "Por Derecho investigates whether and when the insolvency administration ceased to be explainable as loyal, independent administration for LPB and began validating, protecting, adopting or functionally implementing adverse private interests, separating the pre-CAM architecture from the later Acosta Matos phase."
+  },
+  "expected_routes": {
+    "es": [
+      "es/administrador-concursal-punto-quiebre-lealtad/index.html"
+    ],
+    "en": [
+      "en/insolvency-administrator-loyalty-breakpoint/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/AC_LOYALTY_BREAKPOINT_PREDECESSOR_CAM_CONTINUITY_CONTROL_19AUG2026.md",
+    "assets/data/ac-loyalty-breakpoint-v1.json",
+    "assets/ac-loyalty-breakpoint-20260819.js",
+    "assets/cam-favourable-pattern-20260819.js",
+    "sitemap-banking-recovery.xml"
+  ],
+  "cross_site_scope": "All substantive ES/EN pages except utility/search/privacy/update/book routes; expanded module on AC, CAM, Community, retracto/Article1535, takeover, insolvency, recovery, RICPE and public-funds routes.",
+  "evidence_boundary": {
+    "pre_cam": "The 2008 transfer architecture and the 11-Jun-2016 meeting support a documented pre-CAM private adverse/dispute perimeter. They do not by themselves prove AC agency or collusion.",
+    "cam_transition": "Knowing adoption, support, cooperation, conflict or collusion remains an investigative question requiring actor-specific communications and conduct.",
+    "retracto": "Article 1535/DP1041 and later unit-level tanteo/retracto remain separate. C5 supports AC causation of Cristo's specific formal LPB mandate ending; it does not yet prove who internally instructed the DP1041 withdrawal.",
+    "validity": "No global nullity claim. Any consequence from a proved loyalty/conflict breakpoint must be act-specific, right-holder-specific and legally classified."
+  },
+  "loyalty_scale": ["L0","L1","L2","L3","L4","L5"],
+  "p0_evidence": [
+    "Complete AC-Community/Molina/Monte Lanza communications 2012-2018.",
+    "First AC-CAM contact and first CAM knowledge of predecessor disputes.",
+    "Community debt/vote/accounting source file and AC reconciliation.",
+    "Security/access instruction chain.",
+    "DP1041 underlying withdrawal pleading and instruction chain.",
+    "Later tanteo/retracto authority and instruction chain.",
+    "Estate-benefit analysis for each materially adverse-perimeter-benefiting AC act.",
+    "Conflict declarations, abstentions and judicial-supervision record.",
+    "Actor communication graph around the 2017 credit acquisition, June 2018 control and 2020-22 adjudication."
+  ],
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR/source state is distinct from merge, deployment and public-edge verification."
+  }
+}

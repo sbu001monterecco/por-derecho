@@ -138,3 +138,15 @@
   script.dataset.art1535ReserveLoader = 'true';
   document.head.appendChild(script);
 })();
+
+// Global loyalty-breakpoint loader. It deliberately runs outside the CAM route gate so the
+// question is visible across substantive ES/EN pages, including predecessor/Community tracks.
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-ac-loyalty-breakpoint-loader]')) return;
+  const script = document.createElement('script');
+  script.src = new URL('ac-loyalty-breakpoint-20260819.js?v=20260819a', current.src).href;
+  script.async = false;
+  script.dataset.acLoyaltyBreakpointLoader = 'true';
+  document.head.appendChild(script);
+})();
