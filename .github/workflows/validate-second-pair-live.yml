@@ -1,0 +1,62 @@
+name: Validate active Second Pair case applications
+
+on:
+  pull_request:
+    paths:
+      - "assets/data/icalpa-second-pair-activation.json"
+      - "assets/por-derecho/second-pair-live.*"
+      - "es/icalpa-mesa-del-ponente/dip-79-2026/**"
+      - "en/icalpa-rapporteur-workbench/dip-79-2026/**"
+      - "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/**"
+      - "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/**"
+      - "es/por-derecho/aplicaciones-y-colaboracion/paquete-piloto/**"
+      - "en/por-derecho/applications-and-collaboration/pilot-pack/**"
+      - ".github/workflows/validate-second-pair-live.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/data/icalpa-second-pair-activation.json"
+      - "assets/por-derecho/second-pair-live.*"
+      - "es/icalpa-mesa-del-ponente/dip-79-2026/**"
+      - "en/icalpa-rapporteur-workbench/dip-79-2026/**"
+      - "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/**"
+      - "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Validate active data and publication boundaries
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          r=pathlib.Path('.')
+          d=json.loads((r/'assets/data/icalpa-second-pair-activation.json').read_text())
+          assert d['method']=='Por Derecho — El Segundo Par de Ojos'
+          cases={c['caseId']:c for c in d['cases']}
+          assert len(cases['DIP-80-2026']['checkpoints'])==11
+          assert len(cases['DIP-79-2026']['checkpoints'])==3
+          for c in cases.values():
+              for cp in c['checkpoints']:
+                  for k in ('source','authority','perimeter','contradiction','consequence','reversibility','missing','humanGate'):
+                      assert cp.get(k), (c['caseId'],cp['id'],k)
+          for p in [
+            'es/icalpa-mesa-del-ponente/dip-79-2026/index.html',
+            'en/icalpa-rapporteur-workbench/dip-79-2026/index.html',
+            'es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/index.html',
+            'en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/index.html']:
+              t=(r/p).read_text()
+              assert 'noindex,follow,noarchive' in t
+              assert 'second-pair' in t.lower() or 'segundo-par' in t.lower() or 'Segundo Par' in t
+          print('Active Second Pair validation PASSED')
+          PY
+      - name: Check JavaScript syntax
+        run: node --check assets/por-derecho/second-pair-live.js
