@@ -1,0 +1,43 @@
+name: Validate visual asset identity registry
+
+on:
+  pull_request:
+    paths:
+      - "assets/actors/**"
+      - "assets/composites/**"
+      - "assets/visual-asset-registry.json"
+      - "scripts/validate_visual_asset_registry.py"
+      - "**/*.html"
+      - "**/*.js"
+      - "**/*.md"
+      - ".github/workflows/validate-visual-asset-registry.yml"
+  push:
+    branches: [main]
+    paths:
+      - "assets/actors/**"
+      - "assets/composites/**"
+      - "assets/visual-asset-registry.json"
+      - "scripts/validate_visual_asset_registry.py"
+      - "**/*.html"
+      - "**/*.js"
+      - "**/*.md"
+      - ".github/workflows/validate-visual-asset-registry.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  visual-asset-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate canonical image identities, byte locks and composite slot maps
+        run: python scripts/validate_visual_asset_registry.py
