@@ -9,6 +9,12 @@ on:
       - 'scripts/production_smoke_check.py'
       - 'es/rsm/**'
       - 'en/rsm/**'
+  pull_request:
+    paths:
+      - '.github/workflows/production-smoke-monitor.yml'
+      - 'scripts/production_smoke_check.py'
+      - 'es/rsm/**'
+      - 'en/rsm/**'
   schedule:
     - cron: '17 */2 * * *'
   workflow_dispatch:
