@@ -27,7 +27,7 @@ Before drawing, generating, compositing, publishing, emailing or inserting the v
 1. List every named person and every image slot.
 2. Resolve each slot to an exact `asset_id` in `assets/visual-asset-registry.json`.
 3. Confirm the asset is `LOCKED_CANONICAL_REPOSITORY_ASSET`.
-4. Confirm the file path and Git blob SHA match the registry.
+4. Confirm the file or first-party pointer path and Git blob SHA match the registry.
 5. Confirm the label, role, alt text and caption come from the same registry entry.
 6. Confirm the `do_not_confuse_with` exclusions.
 7. Create or verify a slot-map sidecar for any composite containing two or more named people.
@@ -50,11 +50,14 @@ A visual may use a neutral placeholder when an asset is pending. It may not borr
 - **Asset ID:** `person.eduardo-sanchez-san-telmo.primary`
 - **Canonical name:** Eduardo Sánchez
 - **Canonical role:** Socio · San Telmo
-- **Current status:** `USER_CONFIRMED_PENDING_REPOSITORY_IMPORT`
-- **User-confirmed source file:** `Eduardo Sánchez (1).webp`
+- **Current status:** `LOCKED_CANONICAL_REPOSITORY_ASSET`
+- **Canonical repository pointer:** `assets/actors/eduardo-sanchez-san-telmo.url`
+- **Live image source:** the first-party RSM profile URL recorded in `assets/visual-asset-registry.json`
+- **First-party fallback:** the San Telmo image URL recorded in the same pointer and registry
+- **User-confirmed source file:** `Eduardo Sánchez (1)(1).webp`
 - **Source SHA-256:** `a46afb994e6fa0fb309d43fff45b72923a75db39680abc01e10a0c13a52af7d6`
 
-Until Eduardo's source image is imported into `assets/actors/` and byte-locked in the registry, the website and any generated composite must use a labelled placeholder in Eduardo's slot. It must not use Borja's image, another person's image, a stock face or an AI-generated likeness.
+Eduardo’s authorised identity is locked through the byte-locked repository pointer `assets/actors/eduardo-sanchez-san-telmo.url`, which resolves to the first-party RSM professional-profile image and carries a first-party San Telmo fallback. The live San Telmo / RICPE composite must use `person.eduardo-sanchez-san-telmo.primary` in the Eduardo slot and `person.francisco-de-borja-rodriguez-batllori.primary` in the Borja / AC slot. Neither asset may substitute for the other.
 
 ### Sun Park / MYND Yaiza
 
@@ -104,16 +107,29 @@ It must not:
 The safe workflow is:
 
 1. generate the graphic structure with empty labelled portrait frames;
-2. composite the exact canonical repository portraits into those frames;
+2. resolve and place the exact canonical asset or first-party pointer in each frame;
 3. validate the composite against its asset-map sidecar;
-4. retain editable source and export a flattened derivative;
+4. retain editable source and export a flattened derivative where needed;
 5. publish only after the validator passes.
+
+## Activated San Telmo / RICPE / Sun Park composite
+
+The source-stamped composite is controlled as:
+
+- **Asset ID:** `composite.san-telmo-ricpe-sun-park-stamp-v1`
+- **Storage mode:** native HTML/CSS/JavaScript
+- **Component path:** `assets/san-telmo-source-stamp-20260819.js`
+- **Slot order:** Eduardo Sánchez → Sun Park / MYND Yaiza → Borja / Administrador Concursal
+- **Source timestamp:** statement begins at **08:08** and completes at **08:12**; context **07:57–08:27**; transcript pages **29–30 of 85**.
+
+The native website composite may be reused across website pages only without altering the portrait-slot mapping, source line or evidential boundary. A flattened export for an email or document is a derivative and must preserve the same slot map and source control.
 
 ## Repository locations
 
-- Named people: `assets/actors/`
+- Named people and first-party pointers: `assets/actors/`
 - Canonical registry: `assets/visual-asset-registry.json`
 - Composite sidecars: `assets/composites/*.asset-map.json`
+- Source-stamped component: `assets/san-telmo-source-stamp-20260819.js`
 - Rejected-output log: `archive/knowledge-project/VISUAL_ASSET_REJECTED_OUTPUTS_LOG.md`
 - Automated validator: `scripts/validate_visual_asset_registry.py`
 - CI gate: `.github/workflows/validate-visual-asset-registry.yml`
@@ -124,24 +140,23 @@ Person assets use the canonical lowercase ASCII slug:
 
 `assets/actors/<canonical-person-slug>.<ext>`
 
-Variants must not overwrite the primary asset. Use:
-
-`<canonical-person-slug>--<variant-purpose>--<YYYYMMDD>.<ext>`
+A first-party external source may use a byte-locked `.url` pointer under the same canonical slug. Variants must not overwrite the primary asset.
 
 Examples:
 
 - `francisco-de-borja-rodriguez-batllori.jpg`
+- `eduardo-sanchez-san-telmo.url`
 - `francisco-de-borja-rodriguez-batllori--square-profile--20260819.webp`
 
 Each variant needs its own asset ID and registry entry.
 
 ## Replacement and correction
 
-Never silently replace a portrait under an existing path.
+Never silently replace a portrait or pointer under an existing path.
 
 A replacement requires:
 
-1. a new file and variant ID;
+1. a new file or pointer and variant ID;
 2. provenance and identity basis;
 3. old and new Git blob SHA values;
 4. explicit `supersedes` / `superseded_by` fields;
@@ -151,7 +166,7 @@ A replacement requires:
 
 ## Website markup rule
 
-Where a named-person image is rendered in HTML, use both the canonical path and asset ID:
+Where a named-person image is rendered in HTML, use the canonical asset ID with the resolved local path or registered first-party URL:
 
 ```html
 <img
@@ -166,9 +181,9 @@ Dynamic components must resolve the same asset ID and must not hard-code an unre
 
 For email, PDF, Word and presentation exports:
 
-- embed the canonical repository image, not a chat-thumbnail copy;
+- use the canonical asset or registered first-party source, not a chat-thumbnail guess;
 - retain the asset ID in the source document's alt text, notes or metadata;
-- preserve the source path and registry version in the working file;
+- preserve the source path/pointer and registry version in the working file;
 - use the slot-map sidecar when more than one named person appears;
 - never treat a generated flattened image as the primary identity source.
 
