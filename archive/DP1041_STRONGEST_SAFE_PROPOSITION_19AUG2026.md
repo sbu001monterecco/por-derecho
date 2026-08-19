@@ -1,0 +1,3 @@
+# DP1041 — STRONGEST SAFE PROPOSITION
+
+The insolvency administration directly caused the end of Cristo Suárez Pimentel's specific formal LPB mandate in the DP1041 workstream. By 5 March 2018 the court record lists Borja as LPB's lawyer and records LPB's withdrawal; in 2024 the court again confirmed that the file was archived because of that claimant-side withdrawal. The internal decision and filing chain behind the withdrawal remains to be established.
