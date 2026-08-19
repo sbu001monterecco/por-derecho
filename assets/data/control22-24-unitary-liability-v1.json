@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "purpose": "Canonical unitary reconstruction of Control 22 (18 June 2026 complaint concerning the insolvency administration), Control 24 (separate 18 June 2026 judge-specific complaint), the PH122→CAM / DP 1041/2017 retracto module, and the recurring Acosta Matos beneficiary perimeter. Maximum-hypothesis scores are evidential ceilings for investigation, not probabilities of guilt, adjudications or findings of criminal responsibility.",
+  "sourceMap": {
+    "control22": {
+      "date": "2026-06-18",
+      "internalReference": "Control 22",
+      "principalTarget": "Francisco de Borja Rodríguez-Batllori Laffitte / insolvency administration",
+      "source": "01_Denuncia_Penal_AC_LPB_Sun_Park_FINAL_18JUN2026.docx",
+      "principalProvisionalHypothesis": "possible administración desleal / disloyal administration, subject to proof of every statutory element",
+      "currentProceduralContext": "The Por Derecho control record links this complaint family to DP 1956/2026; the latest controlled public status is provisional dismissal communicated 21 July 2026. The dismissal is not represented as a final merits adjudication."
+    },
+    "control24": {
+      "date": "2026-06-18",
+      "internalReference": "Control 24",
+      "principalTarget": "Alberto López Villarrubia / judge-specific judicial-conduct route",
+      "source": "02_Paquete_Unificado_Para_Presentacion_JUEZ_FINAL_17JUNE2026 signed package and later Control 24 traceability materials",
+      "principalProvisionalHypothesis": "resolution-specific and omission/supervision criminal relevance, including possible judicial prevarication only if the strict statutory elements are proved",
+      "proceduralBoundary": "Control 24 remains autonomous from Control 22 and from private-actor complaints. No criminal case number is invented in this dataset."
+    },
+    "privateActors": {
+      "status": "AUTONOMOUS",
+      "rule": "Private-actor complaints and NEXUS materials may provide connected knowledge/evidence but are not automatically accumulated into Control 22 or Control 24."
+    },
+    "retractoParent": "assets/data/retracto-credit-1041-2017-v1.json"
+  },
+  "method": {
+    "chain": "act → authority → notice/knowledge → decision/omission → execution/non-neutralisation → beneficiary effect → patrimonial consequence → corrective opportunity → later persistence",
+    "maximumHypothesisRule": "Test the strongest legally coherent culpability theory supported by the record, then preserve the strongest innocent/procedural alternative and every missing bridge.",
+    "noCollectiveGuilt": true,
+    "noOutcomeEqualsCrime": true,
+    "benefitDoesNotEqualParticipation": true,
+    "criminalAgreementRequiresIndependentProof": true,
+    "proceduresRemainSeparate": true
+  },
+  "legalFramework": [
+    {
+      "actor": "Insolvency administration",
+      "framework": "Historical Ley Concursal duties of diligence, loyal representation, estate conservation/administration and judicial supervision; possible CP art. 252 relevance only if entrusted powers, breach/excess, patrimonial damage, causation and the required subjective element are proved."
+    },
+    {
+      "actor": "Judge",
+      "framework": "Possible CP arts. 446-449 relevance is resolution/omission specific and requires the statutory threshold; adverse rulings, deference to an insolvency administrator or failure to adopt the complainant's preferred measure do not themselves establish prevarication or malicious delay."
+    },
+    {
+      "actor": "Private beneficiary / CAM perimeter",
+      "framework": "Possible author/co-author/inducer/cooperator/accomplice theories require knowing participation meeting the applicable Penal Code elements. Repeated benefit alone is not enough."
+    },
+    {
+      "actor": "Joint conduct",
+      "framework": "Conspiracy/concert theories require independent evidence of agreement and resolved criminal purpose where legally punishable. Functional convergence or repeated aligned effects are investigative indicia, not proof of agreement."
+    }
+  ],
+  "unitaryChronology": [
+    {
+      "date": "2016-07-12",
+      "event": "LPB-side quantified banking dispute and warning material reached the insolvency-administration perimeter.",
+      "significance": "Predates the PH122→CAM assignment and weakens any reconstruction that starts only with the June 2018 takeover."
+    },
+    {
+      "date": "2017-10-20",
+      "event": "PH122 assigned the identified mortgage-credit position to CAM.",
+      "significance": "CAM entered the creditor position before later control/adjudication phases."
+    },
+    {
+      "date": "2017-12-19",
+      "event": "JPI nº 2 admitted DP 1041/2017 and ordered production of assignment deed/economics after finding just cause and legitimate interest; in parallel CAM pursued creditor substitution in the insolvency.",
+      "significance": "Two legally distinct routes emerged from the same assignment: LPB information/optionality and CAM creditor recognition."
+    },
+    {
+      "date": "2018-01-10",
+      "event": "The insolvency administration reported favourably on CAM's creditor substitution.",
+      "significance": "The AC became a material validating node in the CAM-recognition route."
+    },
+    {
+      "date": "2018-02-15",
+      "event": "Commercial Court order partially corrected amounts for LPB, rejected LPB's litigious-credit theory, recognised CAM as assignee creditor and expressly relied on favourable AC verification rather than requiring all title documentation sought by LPB.",
+      "significance": "Earliest currently canonical example of active/passive CAM-favourable institutional effect combined with a real LPB-favourable counterpoint."
+    },
+    {
+      "date": "2018-04",
+      "event": "The Control 22 source records that a criminal complaint concerning CAM/JDAM existed before the 7 June 2018 access/control event.",
+      "significance": "Potential prior notice is relevant to knowledge and precaution analysis; the complaint itself is an allegation, not proof of wrongdoing."
+    },
+    {
+      "date": "2018-06-07",
+      "event": "Material access/control event at Sun Park.",
+      "significance": "Control 22 asks what the AC knew, authorised, reported, tolerated or failed to delimit/protect and what estate consequences followed."
+    },
+    {
+      "date": "2018-06-26",
+      "event": "Judicial suspension order affecting realisation of specified assets pending appeal.",
+      "significance": "Creates a concrete supervision/neutralisation node for separating AC conduct from judicial conduct."
+    },
+    {
+      "date": "2018-11-28",
+      "event": "Material transaction/disposition episode later subject to non-convalidation.",
+      "significance": "Requires tracing title, possession, accounting, consideration and later corrective action."
+    },
+    {
+      "date": "2019-10-24",
+      "event": "Non-convalidation of the 2018 operation.",
+      "significance": "The unitary test shifts from whether the earlier operation was validated to whether its factual/patrimonial effects were actually neutralised or restored."
+    },
+    {
+      "date": "2021",
+      "event": "Competition/alternative-bid and neutral-access/evaluation issues arose in the liquidation trajectory.",
+      "significance": "Tests whether earlier control/information asymmetries affected later competition and realisation value."
+    },
+    {
+      "date": "2022",
+      "event": "CAM-centred adjudication/dación/implementation and final-accounting consequences.",
+      "significance": "Potential convergence point for credit recognition, asset realisation, accounting and difficult-to-reverse external title effects."
+    },
+    {
+      "date": "2022-2026",
+      "event": "HNT/MYND/RICPE and public-finance/operation layers developed downstream.",
+      "significance": "May evidence consequence/benefit continuity; does not retroactively prove earlier knowledge, agreement or criminal purpose."
+    }
+  ],
+  "maximumInvestigativeHypotheses": [
+    {
+      "actor": "Francisco de Borja Rodríguez-Batllori Laffitte / insolvency administration",
+      "evidentialCeiling": "8/10",
+      "notProbabilityOrGuiltScore": true,
+      "internalLabel": "MAX_HYPOTHESIS_SYSTEMIC_DISLOYAL_ADMINISTRATION_CAM_BENEFICIARY_PATTERN",
+      "publicLabel": "STRONG_INDICIA_OF_REPEATED_CAM_FAVOURABLE_NON_NEUTRAL_ADMINISTRATION",
+      "hypothesis": "If the remaining knowledge, authority, damage and subjective-element bridges are proved, the record is capable of supporting an investigation into whether entrusted insolvency-administration powers were repeatedly exercised, withheld or left uncorrected in a way incompatible with loyal estate administration and materially favourable to the CAM-centred beneficiary perimeter.",
+      "whyCeilingMoved": [
+        "The chronology now begins before June 2018 and includes the 2017-2018 credit/retracto recognition asymmetry.",
+        "AC favourable verification became an express judicial foundation for CAM creditor recognition.",
+        "The current record has not located a measurable LPB estate benefit corresponding to loss of the DP 1041 information/optionality route.",
+        "Later control, non-convalidation, competition and adjudication episodes can now be tested as continuity rather than isolated events."
+      ],
+      "proofNeededForCriminalPromotion": [
+        "exact entrusted power or duty for each act/omission",
+        "documented knowledge at the relevant time",
+        "specific breach/excess or knowing failure to exercise a required/protective power",
+        "quantified patrimonial damage or loss of estate value/right",
+        "causal link between conduct and harm",
+        "subjective element required by the offence",
+        "exclusion or rebuttal of a rational estate-benefit explanation"
+      ]
+    },
+    {
+      "actor": "Alberto López Villarrubia / judge-specific route",
+      "evidentialCeiling": "7-8/10",
+      "notProbabilityOrGuiltScore": true,
+      "internalLabel": "MAX_HYPOTHESIS_KNOWING_SELECTIVE_SUPERVISION_AND_NON_NEUTRALISATION",
+      "publicLabel": "STRONG_CAM_FAVOURABLE_INTERVENTION_AND_DEFERENCE_PATTERN_REQUIRING_EXPLANATION",
+      "hypothesis": "If exact knowledge, applicable duty/power, objectively unjust resolution/omission and the statutory subjective threshold are proved act by act, the record is capable of supporting investigation into whether selective judicial intervention, deference to AC verification and later non-neutralisation repeatedly preserved CAM-favourable outcomes despite known LPB protection issues.",
+      "counterRecord": "The 15 February 2018 order corrected amounts in LPB's favour, and judicial reliance on the AC can be lawful. This prevents a simplistic 'every ruling favoured CAM' narrative.",
+      "proofNeededForCriminalPromotion": [
+        "exact challenged resolution or omission",
+        "complete record before the judge at that time",
+        "applicable legal duty/power and legally available alternatives",
+        "objective injustice/manifests injustice where required",
+        "knowledge, grave negligence or malicious delay threshold as applicable",
+        "causal and patrimonial consequence",
+        "treatment of contrary rulings and legitimate reliance on the AC"
+      ]
+    },
+    {
+      "actor": "Construcciones Acosta Matos / CAM-centred beneficiary perimeter",
+      "evidentialCeiling": "6-7/10",
+      "notProbabilityOrGuiltScore": true,
+      "internalLabel": "RECURRING_BENEFICIARY_WITH_PARTICIPATION_BRIDGE_OPEN",
+      "publicLabel": "RECURRING_BENEFICIARY_PERIMETER",
+      "hypothesis": "CAM is repeatedly positioned as beneficiary of creditor recognition, material-control leverage, later realisation/adjudication and downstream operational/title structures. That continuity supports investigation of knowledge and participation; benefit alone does not establish co-authorship, inducement, cooperation or agreement."
+    },
+    {
+      "actor": "AC + judge, jointly in effect, with CAM as recurring beneficiary",
+      "evidentialCeiling": "7/10",
+      "notProbabilityOrGuiltScore": true,
+      "internalLabel": "FUNCTIONAL_CONVERGENCE_POSSIBLE_CONCERTED_FACILITATION",
+      "publicLabel": "REPEATED_FUNCTIONAL_CONVERGENCE_WITH_CAM_FAVOURABLE_EFFECT",
+      "hypothesis": "Across distinct procedural stages, AC acts/recommendations/omissions and judicial decisions/deference/non-neutralisation repeatedly converged on preserving or strengthening the CAM-centred beneficiary position while LPB lost information, options, control, competitive neutrality or recovery leverage, without a corresponding estate benefit currently identified. This pattern warrants testing for concerted facilitation but does not itself prove agreement or criminal collaboration."
+    },
+    {
+      "actor": "Criminal conspiracy / agreement theory",
+      "evidentialCeiling": "3-4/10",
+      "notProbabilityOrGuiltScore": true,
+      "internalLabel": "AGREEMENT_AND_RESOLVED_CRIMINAL_PURPOSE_NOT_PROVED",
+      "publicLabel": "COORDINATION_QUESTION_NOT_CONSPIRACY_FINDING",
+      "hypothesis": "Repeated aligned effects create optics and investigative reasons to test communications, instructions, knowledge-sharing and agreement. Current sources do not independently prove a criminal agreement or resolved joint criminal purpose."
+    }
+  ],
+  "jointConvergenceModules": [
+    {
+      "module": "credit/retracto",
+      "acEffect": "favourable verification of CAM substitution",
+      "judicialEffect": "CAM recognition + rejection of LPB Art. 1535 theory + deference to AC verification",
+      "camBenefit": "recognised creditor position",
+      "lpbLossOrRisk": "information/optionality route later ceased without measurable estate benefit currently located",
+      "agreementProof": "not located"
+    },
+    {
+      "module": "access/control 2018",
+      "acEffect": "authority/knowledge/reporting/protection questions under Control 22",
+      "judicialEffect": "suspension/supervision/neutralisation questions under Control 24",
+      "camBenefit": "material-control leverage alleged/documented by the wider record subject to asset-by-asset qualification",
+      "lpbLossOrRisk": "control, possession, operation and preservation risks",
+      "agreementProof": "not located"
+    },
+    {
+      "module": "non-convalidation/restoration",
+      "acEffect": "post-non-convalidation accounting/restoration/correction questions",
+      "judicialEffect": "whether effective neutralisation/restoration was required, ordered or verified",
+      "camBenefit": "potential persistence of prior factual effects",
+      "lpbLossOrRisk": "unrestored estate/property/economic position",
+      "agreementProof": "not located"
+    },
+    {
+      "module": "2021-2022 competition/adjudication",
+      "acEffect": "liquidation design, information, bid comparability, recommendation/accounting questions",
+      "judicialEffect": "competition, adjudication, implementation and finality decisions",
+      "camBenefit": "award/title/economic consolidation",
+      "lpbLossOrRisk": "alternative-bid/recovery/value opportunity and accounting questions",
+      "agreementProof": "not located"
+    }
+  ],
+  "strongestInnocentOrProceduralAlternatives": [
+    "The AC may have reasonably relied on court orders and exercised permissible insolvency discretion.",
+    "The judge may have lawfully relied on the AC's verification and resolved legally distinct applications under different standards.",
+    "The Article 1535 theory may have been legally weak under a strict concept of litigious credit.",
+    "The 15 February 2018 order did correct some figures in LPB's favour.",
+    "A complex fragmented hotel/insolvency can generate repeated disputes and asymmetric outcomes without criminal agreement.",
+    "A contemporaneous estate-benefit analysis, restoration act, challenge or reconciliation document may exist but remain outside the current corpus.",
+    "CAM may have pursued its own legal/economic interests without knowing participation in any breach by public or insolvency actors."
+  ],
+  "openProofBridgesP0": [
+    "Exact primary act ending/withdrawing/archiving DP 1041/2017 and its instruction/signature chain.",
+    "Exact Cristo formal-LPB-authority change and handover instrument.",
+    "Complete challenge/finality chain for the 15 February 2018 CAM/retracto order.",
+    "Complete PH122→CAM deed, schedules, price allocation and proof of payment.",
+    "Certified Control 22 filing/registration and complete DP 1956 routing bridge.",
+    "Certified Control 24 filing/registration and current competent-authority routing/status.",
+    "Actor-by-actor 2018 access/control authority and communication chain.",
+    "Certified consequences of the 24 October 2019 non-convalidation and any restitution/neutralisation measures.",
+    "2021 competition/data-room/access/bid-comparability complete record.",
+    "2022 adjudication/dación/accounting bridge, including credit, asset values, €400,000 component and surplus calculations.",
+    "Quantified LPB estate harm attributable to each challenged act/omission rather than to insolvency generally.",
+    "Any contemporaneous estate-benefit analysis justifying abandonment/non-pursuit of LPB protective options.",
+    "Any direct evidence of influence, agreement, instruction, inducement, necessary cooperation or shared criminal purpose among AC, judge and CAM actors."
+  ],
+  "publicationControls": {
+    "safeStrongFraming": [
+      "strong indicia of repeated CAM-favourable effects",
+      "functional convergence",
+      "intervention asymmetry",
+      "possible disloyal administration requiring criminal investigation",
+      "possible concerted facilitation to be tested",
+      "recurring beneficiary perimeter",
+      "no measurable LPB estate benefit currently located for the loss of specified protective options"
+    ],
+    "prohibitedAsEstablishedFact": [
+      "the AC committed administración desleal",
+      "the judge committed prevarication",
+      "the judge was corrupt or criminally biased",
+      "CAM was a co-author or necessary cooperator",
+      "the actors conspired",
+      "there was bribery or tráfico de influencias",
+      "the adjudication was predetermined",
+      "the AC personally withdrew DP 1041/2017",
+      "all adverse outcomes arose from one criminal plan"
+    ],
+    "rightOfReply": "All named actors and institutions should be invited to provide corrective, exculpatory, missing estate-benefit, authority, restoration, accounting, routing or communications evidence and receive comparable correction visibility."
+  }
+}
