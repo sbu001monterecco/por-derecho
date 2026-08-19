@@ -1,0 +1,154 @@
+[
+  {
+    "id": "SRC-REPO-LENDER-PAGE",
+    "title": "Banking origin and lender-of-record public record",
+    "source_type": "repository_public_page",
+    "date": "2026-08-19",
+    "evidence_status": "verified_primary",
+    "availability": "repository",
+    "publication": "public_safe",
+    "notes": "Controlled chronology and separation of banking/product and concursal-accounting lanes."
+  },
+  {
+    "id": "SRC-GMAIL-2015-04-29-HAYA-MERIDIAN",
+    "title": "Haya follow-up after Cerberus discussion concerning PH122-held Luchy loans",
+    "source_type": "email_attachment",
+    "date": "2015-04-29",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox",
+    "publication": "internal_only",
+    "notes": "Supports knowledge and refinancing-interlocutor chronology; does not by itself establish legal agency or liability."
+  },
+  {
+    "id": "SRC-GMAIL-2016-05-18-HAYA-REJECTION",
+    "title": "Haya communication stating that the creditor rejected the proposal",
+    "source_type": "email",
+    "date": "2016-05-18",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox",
+    "publication": "internal_only",
+    "notes": "Supports decision-chain chronology; decision-maker and authority documents remain required."
+  },
+  {
+    "id": "SRC-GMAIL-2017-05-12-CREDITS-PENDING",
+    "title": "Communication to Haya setting out three connected credit exposures and workout materials",
+    "source_type": "email_with_attachments",
+    "date": "2017-05-12",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox",
+    "publication": "internal_only",
+    "notes": "Supports notice of the mortgage/SWAP/workout architecture; figures remain subject to native-account reconciliation."
+  },
+  {
+    "id": "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE",
+    "title": "Preliminary-diligence application seeking SAREB-to-PH122 sale agreement and price",
+    "source_type": "court_filing",
+    "date": "2017-05-03",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_and_local_extraction",
+    "publication": "public_safe",
+    "notes": "Establishes the request and its stated basis, not the correctness of the Article 1535 characterisation."
+  },
+  {
+    "id": "SRC-TRANSFER-2017-10-20-PH122-CAM",
+    "title": "PH122-to-CAM mortgage-credit assignment identified as 20 October 2017",
+    "source_type": "notarial_transfer_identified_in_later_records",
+    "date": "2017-10-20",
+    "evidence_status": "verified_primary",
+    "availability": "partial_record",
+    "publication": "public_safe",
+    "notes": "Existence/date are documented; complete deed, schedules, consideration and payment proof remain P0."
+  },
+  {
+    "id": "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND",
+    "title": "LPB demand for the assignment deed, price and payment information",
+    "source_type": "formal_communication",
+    "date": "2017-12-06",
+    "evidence_status": "verified_primary",
+    "availability": "repository_record",
+    "publication": "public_safe",
+    "notes": "Establishes notice and request, not a finding of concealment or entitlement."
+  },
+  {
+    "id": "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION",
+    "title": "Commercial Court order recognising CAM as assignee and rejecting LPB's Article 1535 position",
+    "source_type": "court_order",
+    "date": "2018-02-15",
+    "evidence_status": "verified_primary",
+    "availability": "repository_record",
+    "publication": "public_safe",
+    "notes": "Controlling adverse/mixed decision; appeal and finality chain must remain attached."
+  },
+  {
+    "id": "SRC-CAM-2018-01-DACION-PROPOSAL",
+    "title": "CAM debt/valuation/dación proposal and direct communications",
+    "source_type": "party_correspondence_and_proposal",
+    "date": "2018-01-15",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox",
+    "publication": "privilege_review",
+    "notes": "Supports own-conduct chronology; legal characterisation and valuation independence remain contested."
+  },
+  {
+    "id": "SRC-BORME-2022-CAM-HNT-SEGREGATION",
+    "title": "Official notice of CAM-to-HNT segregation by universal succession",
+    "source_type": "official_corporate_notice",
+    "date": "2022-11-16",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "notes": "Official notice establishes the stated operation; full project, deed, balance and liability schedules remain P0."
+  },
+  {
+    "id": "SRC-CC-ARTS-1106-1107",
+    "title": "Spanish Civil Code Articles 1106 and 1107",
+    "source_type": "official_legislation",
+    "date": "1889-07-24",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "notes": "Contractual loss, lost profit, foreseeability and necessary consequence; historical/current text must be checked for the relevant date."
+  },
+  {
+    "id": "SRC-CC-ART-1528",
+    "title": "Spanish Civil Code Article 1528",
+    "source_type": "official_legislation",
+    "date": "1889-07-24",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "notes": "Accessory rights ordinarily travel with assignment; does not itself transfer every personal liability of the assignor."
+  },
+  {
+    "id": "SRC-CC-ARTS-1902-1903",
+    "title": "Spanish Civil Code Articles 1902 and 1903",
+    "source_type": "official_legislation",
+    "date": "1889-07-24",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "notes": "Direct fault and responsibility for others require element-by-element analysis."
+  },
+  {
+    "id": "SRC-LSC-SEGREGATION-HISTORICAL",
+    "title": "Historical structural-modification law applicable to the 2022 segregation",
+    "source_type": "official_legislation",
+    "date": "2009-04-03",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "notes": "Temporal-law verification required; do not substitute current law for the law applicable in 2022."
+  },
+  {
+    "id": "SRC-STS-1621-2024-TO-RETRIEVE",
+    "title": "Supreme Court authority concerning assigned credit and residual originator obligations",
+    "source_type": "case_law_to_retrieve",
+    "date": null,
+    "date_precision": "year",
+    "date_label": "2024",
+    "evidence_status": "missing_primary",
+    "availability": "official_copy_required",
+    "publication": "internal_only",
+    "notes": "Retrieve official judgment, ROJ/ECLI and exact holdings before pleading or publishing a case-specific proposition."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ACT-LPB",
+    "name": "Luchy Playa Blanca, S.L.U.",
+    "role": ["debtor", "insolvent_company", "property_holder_historical"],
+    "relevant_period": {"from": "2008", "to": null},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE"],
+    "open_questions": ["Exact asset and liability perimeter at each transfer date."]
+  },
+  {
+    "id": "ACT-ORIGINATING-LENDER",
+    "name": "Original Canary lender / predecessor banking perimeter",
+    "role": ["originator", "account_administrator", "security_holder_historical"],
+    "relevant_period": {"from": "2008", "to": "2012"},
+    "evidence_status": "contested",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE"],
+    "open_questions": ["Native origination, restructuring, SWAP, account and default files.", "Which obligations remained upstream after each transfer."]
+  },
+  {
+    "id": "ACT-BANKIA",
+    "name": "Bankia, S.A. historical perimeter",
+    "role": ["claimant_in_mortgage_enforcement", "banking_successor_historical"],
+    "relevant_period": {"from": "2011", "to": "2013"},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE"],
+    "open_questions": ["Exact transfer schedule to SAREB and retained obligations."]
+  },
+  {
+    "id": "ACT-SAREB",
+    "name": "SAREB, S.A.",
+    "role": ["intermediate_credit_holder"],
+    "relevant_period": {"from": "2013", "to": "2014"},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE"],
+    "open_questions": ["Complete Bankia-to-SAREB and SAREB-to-PH122 schedules, warranties and price allocation."]
+  },
+  {
+    "id": "ACT-PH122",
+    "name": "Promontoria Holding 122 B.V.",
+    "role": ["credit_holder", "assignor_to_CAM"],
+    "relevant_period": {"from": "2014", "to": "2017-10-20"},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-TRANSFER-2017-10-20-PH122-CAM"],
+    "open_questions": ["Allocated acquisition price.", "Decision authority over servicing, refinancing, voting and enforcement."]
+  },
+  {
+    "id": "ACT-HAYA",
+    "name": "Haya Real Estate servicing/interlocutor perimeter",
+    "role": ["servicer_or_interlocutor", "portfolio_manager_channel"],
+    "relevant_period": {"from": "2014", "to": "2017"},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-GMAIL-2016-05-18-HAYA-REJECTION", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "open_questions": ["Servicing agreement, powers of attorney, delegated authority and committee instructions.", "Whether particular acts were within mandate or later ratified."]
+  },
+  {
+    "id": "ACT-CERBERUS-PERIMETER",
+    "name": "Cerberus economic/investment perimeter",
+    "role": ["economic_perimeter_to_reconstruct"],
+    "relevant_period": {"from": "2014", "to": null},
+    "evidence_status": "corroborated_inference",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-2015-04-29-HAYA-MERIDIAN"],
+    "open_questions": ["Exact ownership, control, instruction and approval links.", "No group-wide liability inference without evidence."]
+  },
+  {
+    "id": "ACT-CAM",
+    "name": "Construcciones Acosta Matos, S.A.",
+    "role": ["assignee", "secured_creditor", "later_title_actor", "segregating_company"],
+    "relevant_period": {"from": "2017-10-20", "to": null},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION", "SRC-CAM-2018-01-DACION-PROPOSAL", "SRC-BORME-2022-CAM-HNT-SEGREGATION"],
+    "open_questions": ["Complete transfer economics and due diligence.", "Actor-specific conduct after notice.", "Liabilities retained after segregation."]
+  },
+  {
+    "id": "ACT-HNT",
+    "name": "Hotel New Trend, S.L.",
+    "role": ["beneficiary_of_segregation", "hotel_property_or_business_successor"],
+    "relevant_period": {"from": "2022", "to": null},
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BORME-2022-CAM-HNT-SEGREGATION"],
+    "open_questions": ["Exact assets, liabilities, contingencies and proceedings included in the transferred economic unit.", "Own post-segregation conduct and knowledge."]
+  },
+  {
+    "id": "ACT-INSOLVENCY-ADMIN",
+    "name": "Insolvency administration in Concurso 36/2012",
+    "role": ["insolvency_administration", "credit_verification_actor", "estate_interest_gatekeeper"],
+    "relevant_period": {"from": "2012", "to": null},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "open_questions": ["Documents reviewed before favourable reports.", "Estate-interest analysis for information, assignment, valuation and disposition decisions."]
+  }
+]
