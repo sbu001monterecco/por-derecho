@@ -1,0 +1,19 @@
+{
+  "visual_id": "san-telmo-ricpe-sun-park-stamp-v1",
+  "title": "San Telmo / RICPE / Sun Park documentary collision",
+  "control_date": "2026-08-19",
+  "publication_status": "BLOCKED_PENDING_ALL_ACTIVE_ASSETS",
+  "slots": {
+    "left_portrait_eduardo_sanchez": "person.eduardo-sanchez-san-telmo.primary",
+    "centre_same_asset_sun_park": "place.sun-park-mynd-yaiza.aerial-primary",
+    "right_portrait_borja_ac": "person.francisco-de-borja-rodriguez-batllori.primary"
+  },
+  "slot_rules": {
+    "left_portrait_eduardo_sanchez": "Must depict Eduardo Sánchez. Must not use the Borja asset or another person's portrait.",
+    "centre_same_asset_sun_park": "Must use the canonical Sun Park / MYND Yaiza asset or an explicitly registered variant.",
+    "right_portrait_borja_ac": "Must use the canonical Francisco de Borja Rodríguez-Batllori Laffitte repository asset. Must not use the user-uploaded Eduardo Sánchez portrait."
+  },
+  "activation_condition": "Change publication_status to READY only after every slot resolves to an active byte-locked registry asset and the validator passes.",
+  "required_text_lead": "San Telmo partner Eduardo Sánchez stated that ‘el despacho’ put clients into the RICPE investment connected to Sun Park.",
+  "boundary": "The visual may establish the source-controlled same-asset professional overlap. It must not represent Borja–Eduardo coordination, information transfer, unlawfulness or liability as proved without separate evidence."
+}
