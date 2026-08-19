@@ -1,8 +1,9 @@
-# Sun Park Community / CEXP — Two-Track Minutes Audit
+# Two Competing Governance Records: Comunidad, Exploitation and the Disputed Majority (2008-2022)
 
 **Control memorandum — 19 August 2026**  
 **Status:** working forensic synthesis; evidence before conclusion.  
-**Public-page relationship:** supplements `en/community-instrumentalisation/`, `en/community-instrumentalisation/minutes-2011-2022/` and the Spanish equivalents. It does not replace the primary-source chronology already published there.
+**Public-page relationship:** supplements `en/community-instrumentalisation/`, `en/community-instrumentalisation/minutes-2011-2022/` and the Spanish equivalents. It does not replace the primary-source chronology already published there.  
+**Naming control:** “capture” remains an attributed/audit hypothesis to be proved, not the evidential label for the record itself.
 
 ## 1. Purpose
 
@@ -182,9 +183,9 @@ A later consequence is not proof that the originating minute was valid. Converse
 
 ## 10. Publication recommendation
 
-Suggested evidential title for future live expansion:
+Controlling evidential title for future live expansion:
 
-> **Two Competing Governance Records: Community, Exploitation and the Disputed Majority (2008–2022)**
+> **Two Competing Governance Records: Comunidad, Exploitation and the Disputed Majority (2008-2022)**
 
 Use **“capture” / “instrumentalisation” as a hypothesis to be demonstrated**, not as the status label for every document. The public reader should be able to see what would defeat the thesis: a valid debt ledger, correct vote deprivation, competent authority, complete proxies, valid resolutions, non-duplicated cost allocation, or other primary records inconsistent with the current reconstruction.
 
