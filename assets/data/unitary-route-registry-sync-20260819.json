@@ -52,5 +52,23 @@
     "summary": "Trazabilidad de las dos quejas ICAM, archivos y recursos, separando prescripción, competencia territorial y fondo.",
     "tags": ["Cuatrecasas", "ICAM", "CCACM", "deontología", "2026"],
     "aliases": ["434/26", "1487/26", "1566/26", "193/2026", "queja deontológica", "alzada", "conducta profesional"]
+  },
+  {
+    "lang": "en",
+    "path": "en/community-instrumentalisation/two-competing-governance-records/",
+    "title": "Two Competing Governance Records — Community / CEXP 2008–2022",
+    "type": "evidence",
+    "summary": "Parallel visual reconstruction of the majority/exploitation record and disputed Owners' Community record; capture is a hypothesis to be tested, not an evidential label.",
+    "tags": ["Community", "CEXP", "governance", "minutes", "2008–2022"],
+    "aliases": ["two tracks", "two competing governance records", "capture hypothesis", "26 April 2016", "voting filter", "majority record", "disputed community"]
+  },
+  {
+    "lang": "es",
+    "path": "es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/",
+    "title": "Dos registros de gobernanza competidores — Comunidad / CEXP 2008–2022",
+    "type": "evidence",
+    "summary": "Reconstrucción visual paralela del registro mayoritario/explotación y del registro disputado de la Comunidad de Propietarios; la captura es una hipótesis a probar, no una etiqueta probatoria.",
+    "tags": ["Comunidad", "CEXP", "gobernanza", "actas", "2008–2022"],
+    "aliases": ["dos vías", "dos registros gobernanza", "hipótesis de captura", "26 abril 2016", "filtro de voto", "mayoría", "comunidad disputada"]
   }
 ]
