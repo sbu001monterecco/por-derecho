@@ -1,0 +1,84 @@
+{
+  "publication_id": "ART1535-RESIDUAL-RESTORATION-PATHWAY-20260819",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-19",
+  "publication_type": "bilingual dedicated dossier plus cross-site reserve-pathway module",
+  "controlling_pr": 452,
+  "controlling_proposition": {
+    "es": "El art. 1535 se preserva como una vía residual de restitución y dependencia jurídica aguas arriba. Las operaciones posteriores no resuelven por sí solas si el puente acreedor PH122→CAM podía extinguirse ni qué remedio procede si su ejercicio efectivo fue frustrado.",
+    "en": "Article 1535 is preserved as a residual restoration pathway and upstream legal dependency. Later transactions do not by themselves resolve whether the PH122→CAM creditor bridge could have been extinguished or what remedy follows if effective exercise was frustrated."
+  },
+  "expected_routes": {
+    "es": [
+      "es/via-residual-articulo-1535/index.html"
+    ],
+    "en": [
+      "en/residual-article-1535-pathway/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/ART1535_RESIDUAL_RESTORATION_PATHWAY_CONTROL_19AUG2026.md",
+    "assets/data/art1535-residual-restoration-pathway-v1.json",
+    "assets/art1535-reserve-pathway-20260819.js",
+    "assets/cam-favourable-pattern-20260819.js",
+    "sitemap-banking-recovery.xml"
+  ],
+  "cross_site_targets": {
+    "es": [
+      "/es/retracto-credito-litigioso-1041-2017/",
+      "/es/acreedor-de-registro/",
+      "/es/insolvencia-lpb/",
+      "/es/convergencia-venta-acreedor/",
+      "/es/acosta-matos-perimetro/",
+      "/es/patron-efectos-favorables-acosta-matos/",
+      "/es/concurso-36-2012-administrador-concursal/",
+      "/es/concurso-36-2012-magistrado-juez/",
+      "/es/concurso-36-2012-responsabilidad-institucional/",
+      "/es/toma-control-sun-park-7-junio-2018/",
+      "/es/mismo-hotel-multiples-vidas-financieras/",
+      "/es/ricpe-responsabilidad-documental/",
+      "/es/cadena-instrumentalizacion-ric-fondos-incentivos/",
+      "/es/objetivos-recuperacion-restitucion/"
+    ],
+    "en": [
+      "/en/litigious-credit-retracto-1041-2017/",
+      "/en/lender-of-record/",
+      "/en/lpb-insolvency/",
+      "/en/sale-lender-convergence/",
+      "/en/acosta-matos-perimeter/",
+      "/en/acosta-matos-favourable-effect-pattern/",
+      "/en/insolvency-36-2012-insolvency-administrator/",
+      "/en/insolvency-36-2012-mercantile-court-1/",
+      "/en/insolvency-36-2012-institutional-accountability/",
+      "/en/sun-park-takeover-7-june-2018/",
+      "/en/same-hotel-multiple-financial-lives/",
+      "/en/ricpe-documentary-accountability/",
+      "/en/institutionalisation-chain-ric-eu-incentives/",
+      "/en/recovery-restitution-objectives/"
+    ]
+  },
+  "publication_safety": {
+    "title": "No claim that Article 1535 automatically gives LPB hotel title.",
+    "survival": "No claim that the statutory right is necessarily alive today.",
+    "trigger": "No claim of an already-established right to freeze the nine-day period.",
+    "criminal_prejudiciality": "No claim that criminal proceedings automatically suspend caducity.",
+    "downstream": "No claim that all downstream acts or title are automatically void; each downstream right remains act-specific."
+  },
+  "p0_evidence": [
+    "Complete protocol 2,248 and schedules.",
+    "Assignment price, allocation and payment proof.",
+    "Trigger ledger of every CAM act potentially amounting to a demand for payment.",
+    "Pre-assignment declaratory controversy credit by credit.",
+    "Appeal/finality chain for the 15-Feb-2018 order.",
+    "Underlying DP 1041 withdrawal pleading and internal instruction chain.",
+    "Any historical Article 1535 exercise or consignation.",
+    "Current counsel analysis of literal exercise, precautionary preservation and emergency nine-day protocol.",
+    "Credit-transformation ledger into adjudication/dación/title/value.",
+    "Act-by-act downstream good-faith, registration, standing and limitation analysis."
+  ],
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR/source state is distinct from deployment and public-edge verification."
+  }
+}
