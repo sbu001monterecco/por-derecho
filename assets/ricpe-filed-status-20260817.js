@@ -78,4 +78,5 @@
   load('optimum-reader-journey-20260818.js', 'data-optimum-reader-journey', '20260818b');
   load('optimum-reader-journey-finish-20260818.js', 'data-optimum-reader-journey-finish', '20260818a');
   load('ricpe-idoneidad-public-questions-20260818.js', 'data-ricpe-idoneidad-public-questions', '20260818a');
+  load('ricpe-pwc-control-node-20260819.js', 'data-ricpe-pwc-control-node', '20260819a');
 })();
