@@ -1,7 +1,7 @@
 # Adjudicación 2022 — activation record
 
 **Activated:** 2026-08-19  
-**Status:** controlled publication package; primary-source reconstruction active  
+**Status:** controlled publication package; primary-source reconstruction active; provenance/cross-link hardening pending PR validation  
 **Scope:** Concurso 36/2012, CAM offer, 2021 adjudication order, 2022 deed, EUR 400,000 unencumbered-property line, registry and final accounts
 
 ## Purpose
@@ -33,6 +33,14 @@ No private email, privileged advice, personal identifier or internal working PDF
 
 The January/February 2026 papers appear not to have been filed in their present form. That does **not** make the underlying facts or theories procedurally new. Correspondence and earlier pleadings show that responsibility-hipoteca versus concursal-debt, waiver, valuation, execution and accounting questions had been discussed or advanced in earlier years. Every contemplated legal step therefore requires a prior-use/finality/preclusion audit.
 
+### Version-control finding added after the deletion audit
+
+- The exact thread copies are an 11-page incident and a 31-page radical-nullity working paper.
+- Related but non-identical 13-page and 33-page versions were circulated to legal advisers on 25 March 2026.
+- That circulation proves consultation and internal awareness. It does **not** by itself prove filing, admission, argument, endorsement or judicial determination.
+- Public wording must therefore avoid both “never used” and the opposite assumption that circulation to advisers means the court considered the material.
+- Exact recipients, message identifiers, Drive identifiers, page hashes and the private drafts remain outside the public repository.
+
 ## Publication rules applied
 
 - No assertion of a single proceeding that nullifies every act.
@@ -41,6 +49,22 @@ The January/February 2026 papers appear not to have been filed in their present 
 - No claim that later registered rights automatically disappear.
 - Clear distinction between offer value, appraisal, credit classification, mortgage caps, debt extinguished as consideration, cash, accounting and actual realisation proceeds.
 - Strongest alternative explanation stated: EUR 13,168,082.02 may be the total debt extinguished as non-cash consideration.
+- Related internal drafts may be described as circulated to advisers, but not as filed or judicially used unless the court record proves that step.
+
+## 19 August 2026 provenance and site-hardening update
+
+The live-site follow-up adds a bilingual version-control/prior-use panel to the canonical adjudication pages, a distinct prior-use row to the validation tables, publication/correction dates and reciprocal links from the principal ACTÚA, Acosta Matos, RICPE, lender, premises/valuation and procedural-route pages.
+
+A repository-wide public-language audit now checks for the principal superseded formulations, including:
+
+- “no fourth option” wording;
+- claims that EUR 13,168,082.02 has no arithmetic calculation;
+- automatic conversion of waived debt into a concursal surplus;
+- automatic collapse of every downstream act;
+- no-time-limit claims based solely on continuing effects;
+- claims that protocol 457 retransferred the unencumbered premises.
+
+The runtime cross-link layer is publication-safe: it publishes no draft, email, recipient, identifier, hash or privileged advice.
 
 ## Outstanding evidence gates
 
@@ -51,6 +75,7 @@ The January/February 2026 papers appear not to have been filed in their present 
 5. Final liquidation accounts, quarterly reports, balance and conclusion order.
 6. Historical and current registry certificates for every affected property and later right-holder.
 7. Counsel validation of standing, necessary parties, finality, time limits, transitional law and the exact remedy.
+8. Version-by-version comparison against the complete court docket, previous submissions, correspondence and decisions.
 
 ## Activated public routes
 
