@@ -82,10 +82,13 @@
     "version-by-version comparison with previous submissions, correspondence and decisions"
   ],
   "provenance_update": {
-    "status": "PR_OPEN",
+    "status": "LIVE_VERIFIED",
     "control_date": "2026-08-19",
     "pr": 521,
     "branch": "agent/adjudicacion-provenance-links-20260819",
+    "merge_sha": "22ecef79e740c6e97625238210cc5ca22f09a844",
+    "merged_at": "2026-08-19T19:26:42Z",
+    "ci_head_sha": "a6725adb159f1c89350a51ee40c33307475d3334",
     "public_change_scope": [
       "bilingual version-control and prior-use panel",
       "separate prior-use validation-table row",
@@ -99,7 +102,29 @@
       "message and Drive identifiers",
       "document hashes",
       "privileged legal advice"
-    ]
+    ],
+    "ci_evidence": {
+      "provenance_workflow_run_id": 32292641103,
+      "provenance_job_id": 96196738491,
+      "public_files_scanned": 337,
+      "stale_language_hits": 0,
+      "browser_assertions_passed": 12,
+      "publication_integrity_run_id": 32292641114,
+      "unitary_public_shell_run_id": 32292641109,
+      "off_github_preservation_run_id": 32292640982,
+      "visual_identity_run_id": 32292641021
+    },
+    "live_evidence": {
+      "status": "LIVE_VERIFIED",
+      "source_sha": "22ecef79e740c6e97625238210cc5ca22f09a844",
+      "workflow_run_id": 32293059286,
+      "workflow_job_id": 96198058480,
+      "source_propagation_attempt": 5,
+      "rendered_browser_assertions_passed": 12,
+      "commit_status_context": "pages-propagation/adjudicacion-2022",
+      "commit_status_state": "success",
+      "verified_at": "2026-08-19T19:27:37Z"
+    }
   },
   "validation": {
     "evidence": [
@@ -110,7 +135,14 @@
       "PR 509 merged to main at 69216d25aaf2be09b5d334279160d5799f2a75c8.",
       "PR 510 merged the dedicated live verifier and merged-state closeout at 28cd3355e0a39bd5e806ed2800987ce1f8165b85.",
       "PR 511 merged durable public-edge status reporting at 046e23ea73ec80cc0651cb2090973828f368b632.",
-      "The six deed components were independently reconciled to EUR 13,168,082.02 exactly."
+      "The six deed components were independently reconciled to EUR 13,168,082.02 exactly.",
+      "PR 521 adjudication-provenance run 32292641103, job 96196738491: 337 public files scanned, zero stale-language hits and 12 browser assertions passed.",
+      "PR 521 publication integrity run 32292641114: success.",
+      "PR 521 unitary public-shell run 32292641109: success.",
+      "PR 521 off-GitHub preservation run 32292640982: success.",
+      "PR 521 visual-asset identity run 32292641021: success.",
+      "PR 521 merged to main at 22ecef79e740c6e97625238210cc5ca22f09a844.",
+      "Public-edge workflow run 32293059286, job 96198058480: source assets and sitemap verified after propagation; both canonical panels and all ten reciprocal routes rendered successfully; durable status published as success."
     ],
     "publication_integrity": "PASS",
     "mission_critical_repository": "PASS",
@@ -120,12 +152,15 @@
     "off_github_preservation": "PASS",
     "repository_merge": "PASS",
     "public_edge": "PASS",
-    "provenance_update_validation": "PENDING_PR_521_CI"
+    "provenance_update_validation": "LIVE_VERIFIED"
   },
   "deployment_evidence": [
     "GitHub Pages returned HTTP 200 for the Spanish route, English route and dedicated sitemap in workflow run 32281842085.",
     "The public pages returned the source-specific reconstruction, amount, no-universal-nullity and reciprocal-language markers on the first verification attempt.",
-    "Commit status pages-propagation/adjudicacion-2022 was published as success on source SHA 046e23ea73ec80cc0651cb2090973828f368b632."
+    "Commit status pages-propagation/adjudicacion-2022 was published as success on source SHA 046e23ea73ec80cc0651cb2090973828f368b632.",
+    "PR 521 public module and loader propagated to GitHub Pages on the fifth source-poll attempt in run 32293059286.",
+    "The Spanish and English canonical provenance panels and ten reciprocal-link routes passed 12 rendered-browser assertions against the public GitHub Pages edge.",
+    "Commit status pages-propagation/adjudicacion-2022 was published as success on source SHA 22ecef79e740c6e97625238210cc5ca22f09a844."
   ],
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
@@ -145,6 +180,16 @@
       "This page does not claim that one proceeding",
       "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/"
     ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/adjudicacion-provenance-cross-site-20260819.js": [
+      "Control de versiones y uso previo",
+      "Version control and prior use",
+      "adjudicacion-version-control-20260819",
+      "adjudicacion-crosslink-20260819"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/media-publication-marks-20260815.js": [
+      "adjudicacion-provenance-cross-site-20260819.js",
+      "data-adjudicacion-provenance-loader"
+    ],
     "https://sbu001monterecco.github.io/por-derecho/sitemap-adjudicacion-2022.xml": [
       "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
       "/por-derecho/en/2022-adjudication-documentary-reconstruction/"
@@ -152,20 +197,28 @@
   },
   "live_verification_evidence": {
     "status": "LIVE_VERIFIED",
-    "verified_at": "2026-08-19T17:29:04Z",
-    "source_sha": "046e23ea73ec80cc0651cb2090973828f368b632",
-    "workflow_run_id": 32281842085,
-    "workflow_job_id": 96162209253,
-    "attempt": 1,
+    "verified_at": "2026-08-19T19:27:37Z",
+    "source_sha": "22ecef79e740c6e97625238210cc5ca22f09a844",
+    "workflow_run_id": 32293059286,
+    "workflow_job_id": 96198058480,
+    "source_propagation_attempt": 5,
     "commit_status_context": "pages-propagation/adjudicacion-2022",
     "commit_status_state": "success",
     "checks": {
       "es_http_200": true,
-      "es_markers": true,
+      "es_source_markers": true,
       "en_http_200": true,
-      "en_markers": true,
+      "en_source_markers": true,
+      "module_http_200": true,
+      "module_markers": true,
+      "loader_http_200": true,
+      "loader_markers": true,
       "sitemap_http_200": true,
-      "sitemap_markers": true
+      "sitemap_markers": true,
+      "canonical_provenance_panels_rendered": true,
+      "prior_use_rows_rendered": true,
+      "reciprocal_routes_rendered": 10,
+      "total_rendered_browser_assertions": 12
     }
   },
   "publication_safety": {
@@ -184,7 +237,7 @@
   },
   "live_verification": {
     "status": "LIVE_VERIFIED",
-    "verified_at": "2026-08-19T17:29:04Z",
-    "note": "Spanish, English and sitemap routes were independently read back from the public GitHub Pages edge with every declared marker present. The provenance update remains pending PR 521 validation and post-merge live read-back."
+    "verified_at": "2026-08-19T19:27:37Z",
+    "note": "The Spanish and English documentary-reconstruction pages, provenance module, global loader and bilingual sitemap were read back from the public GitHub Pages edge. Both canonical version-control panels, both prior-use rows and all ten tested reciprocal routes rendered successfully."
   }
 }
