@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">Revisión del expediente</title>
+  <desc id="desc">Un documento y un ojo representan una comprobación jurídica de fuente y contexto.</desc>
+  <g fill="none" stroke="#0b2b45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4h16l8 8v29H12Z"/>
+    <path d="M28 4v9h8M17 18h13M17 23h10"/>
+    <path d="M5 34c4.6-6 9.9-9 16-9s11.4 3 16 9c-4.6 6-9.9 9-16 9S9.6 40 5 34Z"/>
+    <circle cx="21" cy="34" r="4.2"/>
+  </g>
+  <path fill="none" stroke="#c58a2b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="m33 37 3 3 7-8"/>
+</svg>
