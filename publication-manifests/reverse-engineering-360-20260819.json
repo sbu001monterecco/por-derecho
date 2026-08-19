@@ -1,7 +1,7 @@
 {
   "publication_id": "SUN-PARK-REVERSE-ENGINEERING-360-20260819",
   "control_date": "2026-08-19",
-  "status": "REMOTE_SOURCE_PENDING_MERGE",
+  "status": "PUBLICATION_CONTROL",
   "canonical_control": "archive/SUN_PARK_REVERSE_ENGINEERING_360_CONTROL_19AUG2026.md",
   "thread_continuity": "archive/THREAD_DELETION_AUDIT_ART1535_REVERSE_ENGINEERING_19AUG2026.md",
   "routes": {
@@ -26,5 +26,6 @@
     "claim-specific latest safe dates",
     "actual Article 40 LEC criminal-prejudiciality posture",
     "third-party protection consequences for specific downstream acts"
-  ]
+  ],
+  "verification_policy": "Confirm merge to main separately from public-edge read-back; do not infer one from the other."
 }
