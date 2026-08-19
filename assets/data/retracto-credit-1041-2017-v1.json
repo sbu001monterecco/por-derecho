@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-19",
+  "status": "PUBLIC-READY-WITH-QUALIFICATION",
+  "purpose": "Canonical evidence-led reconstruction of the 2017-2018 Article 1535 / Preliminary Proceedings 1041/2017 workstream and its interaction with the PH122-to-CAM creditor substitution in Concurso 36/2012. This dataset measures acts and effects; it does not infer criminal intent, collusion or improper judicial bias from outcome alone.",
+  "claimIdentity": {
+    "id": "CLAIM-ART1535-DP1041-2017",
+    "labelEs": "Diligencias Preliminares 1041/2017 y potencial extinción del crédito cedido conforme al art. 1535 CC",
+    "labelEn": "Preliminary Proceedings 1041/2017 and potential extinguishment of the assigned credit under Civil Code Article 1535",
+    "applicant": "Luchy Playa Blanca, S.L.U. (LPB)",
+    "respondent": "Construcciones Acosta Matos, S.A. (CAM)",
+    "assignment": "Promontoria Holding 122 B.V. → Construcciones Acosta Matos, S.A.",
+    "assignmentDate": "2017-10-20",
+    "preliminaryProceeding": "Diligencias Preliminares 1041/2017, Juzgado de Primera Instancia nº 2 de Las Palmas de Gran Canaria",
+    "linkedInsolvency": "Concurso ordinario 36/2012, Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+    "separateFrom": [
+      "later property/unit-level tanteo or retracto / preferential-acquisition workstreams",
+      "the 2019 property-transfer and registration challenge",
+      "the 2022 insolvency adjudication/dación sequence"
+    ]
+  },
+  "statusLabels": [
+    "VERIFIED",
+    "VERIFIED_WITH_LIMITATION",
+    "STRONGLY_SUPPORTED",
+    "WORKING_HYPOTHESIS",
+    "CONTESTED",
+    "OPEN"
+  ],
+  "legalFramework": {
+    "article": "Código Civil, art. 1535",
+    "coreEffect": "Where the statutory conditions are met, the debtor may extinguish a sold litigious credit by reimbursing the assignee the price paid, relevant costs and interest.",
+    "strictness": "Whether the Sun Park/LPB credit satisfied the technical definition of a 'crédito litigioso' is contested and was decided adversely to LPB by the Commercial Court on 15 February 2018. The present dataset therefore treats viability as an unresolved legal-merits question rather than as an established right.",
+    "publicSource": "BOE-A-1889-4763, article 1535"
+  },
+  "dateCorrection": {
+    "status": "VERIFIED",
+    "correctDate": "2018-02-15",
+    "document": "AUTO Modificación Textos Definitivos CAM+RETRACTO - 15FEB2018.pdf",
+    "note": "The primary Commercial Court order recovered and re-checked in the 19 August 2026 scan is dated 15 February 2018. Earlier repository references to 8 February 2018 must not be repeated as the date of this order without a separate primary act proving that date. LPB's opposition is recorded as 7 February 2018 in the order's antecedentes."
+  },
+  "verifiedEvents": [
+    {
+      "date": "2016-07-12",
+      "id": "EV-2016-DISPUTE",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "eventEs": "LPB había comunicado una controversia cuantificada sobre el pasivo bancario antes de la cesión.",
+      "eventEn": "LPB had communicated a quantified dispute concerning the banking liabilities before the assignment.",
+      "qualification": "The amounts and legal consequences were LPB-side allegations and require independent reconciliation; the existence of the contemporaneous dispute is the material fact."
+    },
+    {
+      "date": "2017-10-20",
+      "id": "EV-ASSIGNMENT",
+      "status": "VERIFIED",
+      "eventEs": "Promontoria Holding 122 B.V. cedió a CAM los créditos hipotecarios identificados frente a LPB.",
+      "eventEn": "Promontoria Holding 122 B.V. assigned the identified mortgage credits against LPB to CAM."
+    },
+    {
+      "date": "2017-12-06",
+      "id": "EV-LPB-REQUEST",
+      "status": "VERIFIED",
+      "eventEs": "LPB solicitó la escritura, el precio y los datos económicos de la cesión y formuló su posición de que podía existir un derecho bajo el art. 1535 CC.",
+      "eventEn": "LPB requested the assignment deed, price and transaction economics and asserted its position that an Article 1535 right might arise.",
+      "qualification": "LPB's Article 1535 characterisation was a party position, not a judicial finding."
+    },
+    {
+      "date": "2017-12-18",
+      "id": "EV-CAM-CREDITOR-SUBSTITUTION-REQUEST",
+      "status": "VERIFIED",
+      "eventEs": "CAM pidió al Juzgado Mercantil modificar los textos definitivos para sustituir al acreedor tras la cesión.",
+      "eventEn": "CAM asked the Commercial Court to amend the final insolvency texts to substitute the creditor following the assignment."
+    },
+    {
+      "date": "2017-12-19",
+      "id": "EV-JPI2-ADMISSION",
+      "status": "VERIFIED",
+      "eventEs": "El JPI nº 2 admitió las diligencias preliminares 1041/2017, apreció justa causa e interés legítimo y ordenó la exhibición de la escritura con precio, forma/fecha de pago y costes.",
+      "eventEn": "Court of First Instance No. 2 admitted Preliminary Proceedings 1041/2017, found just cause and legitimate interest and ordered production of the deed showing price, payment information and costs.",
+      "effect": "LPB obtained a live court-recognised route to the assignment economics."
+    },
+    {
+      "date": "2017-12-19",
+      "id": "EV-MERCANTILE-AC-REFERRAL",
+      "status": "VERIFIED",
+      "eventEs": "El Juzgado Mercantil dio traslado a la Administración Concursal de la solicitud de CAM de modificación de acreedor.",
+      "eventEn": "The Commercial Court referred CAM's creditor-substitution request to the insolvency administration."
+    },
+    {
+      "date": "2018-01-10",
+      "id": "EV-AC-FAVOURABLE-REPORT",
+      "status": "VERIFIED",
+      "eventEs": "La Administración Concursal informó favorablemente sobre la modificación de acreedor, con la salvedad documental/procesal que recoge el Auto posterior.",
+      "eventEn": "The insolvency administration reported favourably on the creditor substitution, subject to the documentary/procedural qualification recorded in the later order."
+    },
+    {
+      "date": "2018-01-12",
+      "id": "EV-DP1041-PRODUCTION-TIMELINE",
+      "status": "VERIFIED",
+      "eventEs": "El JPI nº 2 fijó el cauce de oposición y, en su defecto, comparecencia para el 19 de febrero; la diligencia mantenía consecuencias procesales ante una incomparecencia injustificada.",
+      "eventEn": "Court of First Instance No. 2 set the opposition route and, absent opposition, a 19 February appearance; the preliminary measure retained procedural consequences for unjustified non-appearance.",
+      "effect": "The disclosure route was operational, not merely hypothetical."
+    },
+    {
+      "date": "2018-01-26",
+      "id": "EV-CAM-DOCS-COMPLETED",
+      "status": "VERIFIED",
+      "eventEs": "Según los antecedentes del Auto de 15 de febrero, CAM completó documentación y quedó pendiente la resolución sobre la modificación de textos definitivos.",
+      "eventEn": "According to the 15 February order's procedural history, CAM completed documentation and the creditor-substitution application was left for decision."
+    },
+    {
+      "date": "2018-02-07",
+      "id": "EV-LPB-OPPOSITION",
+      "status": "VERIFIED",
+      "eventEs": "LPB se opuso a la modificación, cuestionó importes y sostuvo que el crédito cedido era litigioso.",
+      "eventEn": "LPB opposed the amendment, challenged amounts and maintained that the assigned credit was litigious."
+    },
+    {
+      "date": "2018-02-15",
+      "id": "EV-MERCANTILE-ORDER",
+      "status": "VERIFIED",
+      "eventEs": "El Juzgado Mercantil corrigió parcialmente importes en favor de LPB, rechazó la tesis de crédito litigioso y reconoció a CAM como acreedor cesionario. Para el cambio de acreedor no exigió toda la documentación de título pretendida por LPB: se apoyó expresamente en el informe favorable de la AC y en la presunción de que ésta había verificado los requisitos.",
+      "eventEn": "The Commercial Court partially corrected amounts in LPB's favour, rejected the litigious-credit theory and recognised CAM as assignee creditor. For creditor substitution it did not require all title documentation sought by LPB: it expressly relied on the insolvency administration's favourable report and presumed that the administration had verified the necessary requirements.",
+      "effect": "CAM's recognised insolvency-creditor position was consolidated while LPB's Article 1535 merits position was rejected."
+    },
+    {
+      "date": null,
+      "id": "EV-DP1041-TERMINATION",
+      "status": "OPEN",
+      "eventEs": "El expediente 1041/2017 terminó posteriormente sin que el actual escaneo haya re-verificado todavía el acto primario exacto de desistimiento/archivo y su fecha.",
+      "eventEn": "Proceedings 1041/2017 later ended, but the present scan has not yet re-verified the exact primary withdrawal/archive act and date.",
+      "publicationRule": "Do not state that the AC personally withdrew or 'killed' the proceeding as a verified fact until the exact cessation act, representation status and filing are rebound to primary evidence."
+    }
+  ],
+  "comparativeTreatment": {
+    "status": "VERIFIED_WITH_LIMITATION",
+    "label": "ASYMMETRIC_EVIDENTIARY_AND_INTERVENTION_PATTERN",
+    "comparison": [
+      {
+        "forum": "JPI nº 2 / DP 1041/2017",
+        "direction": "LPB-PROTECTIVE",
+        "act": "Required production of the deed and transaction economics after finding just cause and legitimate interest."
+      },
+      {
+        "forum": "Mercantil nº 1 / Concurso 36/2012",
+        "direction": "CAM-FAVOURABLE-EFFECT",
+        "act": "Recognised CAM's substitution and expressly considered it unnecessary to require all title documentation because the AC had reported favourably and was presumed to have verified the requirements."
+      },
+      {
+        "forum": "Mercantil nº 1 / Concurso 36/2012",
+        "direction": "LPB-PROTECTIVE-IN-PART",
+        "act": "Corrected the CAM credit amounts in part rather than accepting every requested figure."
+      }
+    ],
+    "qualification": "The forums were addressing legally different applications. The comparison therefore supports an intervention/evidentiary asymmetry question, not a finding that identical legal tests were applied inconsistently."
+  },
+  "actorEffectFindings": [
+    {
+      "actor": "Administración Concursal",
+      "classification": "FUNCTIONAL_DELIVERY_CAM_FAVOURABLE_EFFECT",
+      "status": "STRONGLY_SUPPORTED",
+      "finding": "The AC's favourable report was an express judicial foundation for recognising CAM's creditor substitution without the court itself requiring all of the title documentation LPB sought. In the wider sequence, CAM retained the recognised secured-credit position while the debtor-side Article 1535/information route did not produce a demonstrated LPB recovery benefit.",
+      "intentRule": "This is a distribution-of-effects finding. It does not by itself establish collusion, improper purpose or criminal intent."
+    },
+    {
+      "actor": "Juzgado de lo Mercantil nº 1 / Alberto López Villarrubia",
+      "classification": "ACTIVE_AND_PASSIVE_CAM_FAVOURABLE_EFFECT_PATTERN",
+      "status": "STRONGLY_SUPPORTED",
+      "finding": "Active component: the 15 February order recognised CAM, rejected LPB's Article 1535 theory and expressly relied on the AC's favourable verification. Passive/deferential component: the court declined to require all supporting title documentation sought by LPB for the creditor substitution, presuming the AC had verified the requirements. The same order also corrected amounts in LPB's favour, so it must not be described as uniformly pro-CAM.",
+      "biasRule": "Public wording should say CAM-favourable in effect, intervention asymmetry or deference-to-AC. 'Improper judicial bias' is a higher-threshold conclusion not established by this dossier alone."
+    },
+    {
+      "actor": "Construcciones Acosta Matos, S.A.",
+      "classification": "DIRECT_BENEFICIARY_OF_CREDITOR_RECOGNITION",
+      "status": "VERIFIED",
+      "finding": "CAM acquired the identified credits and obtained recognition as assignee creditor in the insolvency texts. Its transaction economics were the subject of the separate DP 1041 disclosure route."
+    },
+    {
+      "actor": "Promontoria Holding 122 B.V.",
+      "classification": "ASSIGNOR",
+      "status": "VERIFIED",
+      "finding": "PH122 was the identified assignor in the 20 October 2017 credit transfer. Cerberus/Haya references must remain perimeter/context labels unless the relevant primary document establishes the exact legal role in the specific assignment."
+    }
+  ],
+  "estateBenefitTest": {
+    "questionEs": "Si LPB perdió o abandonó una vía judicial ya admitida para obtener la economía de la cesión y preservar una posible opción de extinción/apalancamiento, ¿qué beneficio mensurable recibió la masa a cambio?",
+    "questionEn": "If LPB lost or abandoned an already-admitted judicial route to obtain the assignment economics and preserve possible extinguishment/leverage optionality, what measurable benefit did the insolvency estate receive in return?",
+    "currentFinding": "NO_MEASURABLE_LPB_BENEFIT_LOCATED_IN_CURRENT_RECONSTRUCTION",
+    "possibleLegitimateBenefitsToTest": [
+      "documented settlement consideration",
+      "debt reduction or waiver",
+      "reduction in enforcement exposure",
+      "clearly documented expected-cost-versus-expected-value decision",
+      "other quantified insolvency-estate advantage"
+    ],
+    "importantQualification": "An adverse view on Article 1535 merits could justify deciding not to spend estate resources on a weak substantive claim. It does not automatically explain why an already-admitted information route to the assignment deed/economics should lose value or be surrendered. Litigation merits and information/optionality value are separate questions."
+  },
+  "counterRecord": [
+    "The 15 February 2018 Commercial Court order reached an adverse legal conclusion on the 'crédito litigioso' requirement; that is real counterevidence to any claim that Article 1535 entitlement was certain.",
+    "The same order corrected some credit figures in LPB's favour; it was not wholly CAM-favourable in every issue decided.",
+    "An insolvency administrator may legitimately decide not to pursue litigation if documented expected cost/risk exceeds expected estate value.",
+    "The JPI nº 2 disclosure ruling and the Mercantile creditor-substitution ruling addressed different procedural/legal questions.",
+    "No current primary source proves collusion among CAM, PH122/Cerberus, the AC and the judge."
+  ],
+  "representationContinuity": {
+    "cristoSuarezPimentel": {
+      "status": "OPEN_WITH_CLIENT_ACCOUNT",
+      "publicSafeNote": "No documented voluntary resignation by Cristo Suárez Pimentel has been located in the current reconstruction. His continued broader Sun Park legal activity must be distinguished from any cessation or displacement of a specific formal LPB mandate. Gil Marer's present account is that the AC caused the relevant formal role to cease; the exact revocation/handover instrument remains to be rebound to primary evidence before that causation is published as independently verified fact."
+    },
+    "armandoBetancorAlamo": {
+      "status": "VERIFIED_RETAINED_ADVISER_2019",
+      "publicSafeNote": "A signed 2019 Aweswell services/success-fee engagement and subsequent legal work have been located. Exact matter-by-matter scope remains to be mapped."
+    },
+    "joaquinRuizDeInfanteAbella": {
+      "status": "VERIFIED_COLLABORATING_LAWYER_2019",
+      "publicSafeNote": "Direct drafting/filing and coordinated legal work are documented. A separate standalone retainer has not yet been located."
+    },
+    "sixtoLaterReview": {
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publicSafeNote": "Later Sixto review of the archived Promontoria/retracto material is documented, but no later Sixto conclusion has been located that definitively declares the Article 1535 claim viable or non-viable."
+    }
+  },
+  "openQuestions": [
+    "Locate and bind the complete primary termination/withdrawal/archive act for DP 1041/2017 and identify who instructed, signed and filed it.",
+    "Locate the exact instrument and court record governing the change in Cristo Suárez Pimentel's formal LPB authority and reconstruct the handover.",
+    "Determine whether the 15 February 2018 order was challenged and, if so, obtain the complete appeal and finality chain.",
+    "Reconstruct the exact pre-20 October 2017 litigation relied on by LPB to classify each assigned credit as litigioso.",
+    "Obtain the complete assignment deed/schedules, purchase price/allocation, proof of payment and any servicing or side documentation.",
+    "Identify any contemporaneous written estate-benefit analysis explaining why continuation, settlement or abandonment of DP 1041 was in LPB's interests.",
+    "Keep the later unit/property tanteo-retracto opportunity separate and independently limitation-tested."
+  ],
+  "publicationControls": {
+    "safeHeadlinesEs": [
+      "¿Qué obtuvo LPB a cambio de perder la vía de información/retracto?",
+      "Una asimetría verificable: exhibición exigida para LPB; verificación presumida a través de la AC para CAM",
+      "Efecto favorable a CAM no equivale, por sí solo, a prueba de intención ilícita"
+    ],
+    "safeHeadlinesEn": [
+      "What did LPB obtain in exchange for losing the information/retracto route?",
+      "A testable asymmetry: production required for LPB; verification presumed through the AC for CAM",
+      "CAM-favourable effect does not, by itself, prove improper intent"
+    ],
+    "prohibitedWithoutFurtherEvidence": [
+      "The AC colluded with CAM",
+      "The judge was corrupt or improperly biased",
+      "The Article 1535 claim was certain to succeed",
+      "The AC personally withdrew DP 1041/2017",
+      "Cerberus or Haya was the legal assignor unless primary transaction documents establish that role"
+    ]
+  }
+}
