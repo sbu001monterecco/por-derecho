@@ -1,0 +1,93 @@
+name: Validate LPB definitive texts unitary baseline
+
+on:
+  pull_request:
+    paths:
+      - 'archive/LPB_TEXTOS_DEFINITIVOS_LIQUIDATION_BASELINE_UNITARY_DIGEST_20AUG2026.md'
+      - 'archive/THREAD_DELETION_AUDIT_LPB_TEXTOS_DEFINITIVOS_20AUG2026.md'
+      - 'assets/data/lpb-definitive-texts-v1.json'
+      - 'assets/data/lpb-definitive-texts-route-v1.json'
+      - 'assets/data/case-reconstruction-v1.json'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'assets/lpb-definitive-texts-unitary-20260820.js'
+      - 'assets/site-base-20260819.js'
+      - 'assets/unitary-public-shell-20260818.js'
+      - 'assets/case-information-architecture-20260819.js'
+      - 'es/textos-definitivos-lpb-base-liquidacion/index.html'
+      - 'en/lpb-definitive-texts-liquidation-baseline/index.html'
+      - 'publication-manifests/lpb-textos-definitivos-liquidation-baseline-2026-08-20.json'
+      - 'sitemap-lpb-definitive-texts.xml'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'scripts/render_lpb_definitive_texts_unitary.mjs'
+      - 'scripts/validate_lpb_definitive_texts_unitary.py'
+      - '.github/workflows/validate-lpb-definitive-texts-unitary.yml'
+  push:
+    branches:
+      - 'agent/lpb-definitive-texts-unitary-20260820'
+    paths:
+      - 'archive/LPB_TEXTOS_DEFINITIVOS_LIQUIDATION_BASELINE_UNITARY_DIGEST_20AUG2026.md'
+      - 'assets/data/lpb-definitive-texts-v1.json'
+      - 'assets/lpb-definitive-texts-unitary-20260820.js'
+      - 'es/textos-definitivos-lpb-base-liquidacion/index.html'
+      - 'en/lpb-definitive-texts-liquidation-baseline/index.html'
+      - 'scripts/validate_lpb_definitive_texts_unitary.py'
+      - '.github/workflows/validate-lpb-definitive-texts-unitary.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-lpb-definitive-texts-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Validate repository propagation and publication boundaries
+        run: python3 scripts/validate_lpb_definitive_texts_unitary.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/lpb-definitive-texts-unitary-20260820.js
+          node --check scripts/render_lpb_definitive_texts_unitary.mjs
+      - name: Start local static server
+        run: |
+          mkdir -p "$RUNNER_TEMP/psr-site"
+          ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/psr-site/por-derecho"
+          nohup python3 -m http.server 4173 --directory "$RUNNER_TEMP/psr-site" >"$RUNNER_TEMP/lpb-td-http.log" 2>&1 &
+          echo $! > "$RUNNER_TEMP/lpb-td-http.pid"
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/por-derecho/es/textos-definitivos-lpb-base-liquidacion/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/lpb-td-http.log" || true
+          exit 1
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+      - name: Verify rendered bilingual routes and cross-site propagation
+        env:
+          PSR_BASE_URL: http://127.0.0.1:4173/por-derecho
+          PSR_LPB_TD_ARTIFACT_DIR: artifacts/lpb-definitive-texts-local
+        run: node scripts/render_lpb_definitive_texts_unitary.mjs
+      - name: Show rendered verification evidence
+        if: always()
+        run: |
+          cat artifacts/lpb-definitive-texts-local/result.json || true
+          cat "$RUNNER_TEMP/lpb-td-http.log" || true
