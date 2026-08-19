@@ -33,3 +33,13 @@ The named-person Camel Travel/Lanzarote Information side record was released on 
 The 7 June dossier owns the full event, pre-event operating record, ONA alternative, aftermath, pilot evidence and insolvency-perimeter analysis. Its nested Camel Travel/Lanzarote Information side record owns only the documented dual-publication and potential travel-sales example; it is intentionally absent from the homepage, main navigation and updates feed. The Community dossier owns the authority/debt/voting record. Its nested minutes dossier owns the Owners’ Community/CEXP source-status chronology and a separately labelled non-minutes lane: a summons, later recital, working meeting, email, pleading, order or judgment must never be relabelled as Community minutes. The RIC dossier owns downstream investor, financing and HNT/MYND analysis; the homepage and updates pages provide gateways rather than competing event narratives.
 
 Open documentary follow-up is maintained in [INSTITUTIONAL_ACTIONS.md](INSTITUTIONAL_ACTIONS.md), including the Cabildo/Tourism Register/Yaiza request for a certified Sun Park operator history.
+
+## Thread deletion-safety records
+
+Where a working ChatGPT thread produces material synthesis or operational filing work, the repository may preserve a thread-specific deletion audit so that the chat is not the sole custody point.
+
+- `THREAD_DELETION_AUDIT_2026-08-19_COMMUNITY_ACTAS.md` — Community / CEXP two-track governance audit.
+- `THREAD_DELETION_AUDIT_2026-08-19_RICPE_ETHICS_CHANNEL.md` — RICPE Ethics Channel deletion-safety closure.
+- `RICPE_ETHICS_CHANNEL_FILING_17AUG2026.md` — canonical operational preservation record for the 17 August 2026 signed RICPE communication and Ethics Channel filing architecture.
+
+The RICPE record keeps the signed PDF itself in private source custody and records a cryptographic hash rather than publishing personal/signature material in this public repository.
