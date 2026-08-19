@@ -92,7 +92,7 @@ A competent human remains free to confirm, downgrade or reject the candidate, bu
 - PR #541 — read-only public-edge verification control, SHA `bf3f59ea5968be5df638209a94ca101363c1311c`.
 - PR #542 — permanent live-verification record, SHA `fbcb0077e051059fb582465c1fd7e8282814ec23`.
 
-Immediately before this audit branch, `main` was verified at `fbcb0077e051059fb582465c1fd7e8282814ec23`.
+The live-verification record entered `main` at `fbcb0077e051059fb582465c1fd7e8282814ec23`. This deletion-audit branch was created later from `main` at `b0efff561b8bb8682ab260642472b6c3ccb3e0b5`, preserving all intervening repository work.
 
 ## 7. Live verification
 
