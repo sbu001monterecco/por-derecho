@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-20",
+  "record_id": "LPB-TD-UNITARY-20260820",
+  "status": "PRIMARY_SOURCE_PROMOTED_WITH_OPEN_CERTIFICATION_GATES",
+  "proceeding": {
+    "debtor": "Luchy Playa Blanca, S.L.U.",
+    "reference": "Concurso ordinario 36/2012",
+    "court": "Juzgado de lo Mercantil no. 1 de Las Palmas"
+  },
+  "public_boundary": {
+    "raw_pdfs_committed": false,
+    "personal_identifiers_published": false,
+    "hashes_and_public_safe_metadata_only": true,
+    "not_a_legal_finding": true
+  },
+  "source_chain": [
+    {
+      "evidence_id": "EVID-LPB-2013-ART75",
+      "date": "2013-01-15",
+      "type": "INSOLVENCY_ADMINISTRATION_REPORT_AND_INVENTORY",
+      "pages": 37,
+      "sha256": "a48441aafcddd63ae792f46fc88188b17a32cecba943b8db956587ecd8c8a073",
+      "role": "original Article 75 report, active inventory and passive analysis",
+      "copy_status": "CONTROLLED_PRIVATE_PRIMARY_COPY"
+    },
+    {
+      "evidence_id": "EVID-LPB-2016-TD-FILING",
+      "date": "2016-04-28",
+      "signature_date": "2016-04-29",
+      "type": "DEFINITIVE_TEXTS_FILING",
+      "pages": 6,
+      "sha256": "b62970419a699f07c48777c300f9259721df2072c0f8739aa9aa9d2db9e9aa79",
+      "role": "Article 96.5 modifications and elevation of the prior report to definitive status",
+      "copy_status": "CONTROLLED_PRIVATE_PRIMARY_COPY"
+    },
+    {
+      "evidence_id": "EVID-LPB-2016-TD-CREDITORS",
+      "date": "2016-04-28",
+      "type": "DEFINITIVE_CREDITOR_LIST_ANNEX_1",
+      "pages": 1,
+      "sha256": "9004df2fbc361b5f6a4b7042014e025b7643520f68c863c5835f572bdd071c31",
+      "role": "creditor-by-creditor definitive classification and totals",
+      "copy_status": "CONTROLLED_PRIVATE_PRIMARY_COPY"
+    },
+    {
+      "evidence_id": "EVID-LPB-2018-TD-HOLDER",
+      "date": "2018-02-08",
+      "type": "COURT_ORDER_MODIFYING_CREDIT_HOLDER",
+      "pages": 3,
+      "sha256": "22f4149590ef80e050640c9691b7c34dc3a5306f87e2d727bc4f852990980b88",
+      "role": "Promontoria-to-CAM holder substitution at the recognised amounts",
+      "copy_status": "CONTROLLED_PRIVATE_ELECTRONIC_COURT_COPY"
+    },
+    {
+      "evidence_id": "EVID-LPB-2018-LIQ-PLAN",
+      "date": "2018-02",
+      "type": "LIQUIDATION_PLAN",
+      "pages": 15,
+      "sha256": "767b5966bc2d380a35633b3dcb884256e0067cc3e4be3b07e5cf5d2f947b1a78",
+      "role": "express reliance on the inventory made definitive and proposed realisation rules",
+      "copy_status": "CONTROLLED_PRIVATE_PRIMARY_COPY"
+    },
+    {
+      "evidence_id": "EVID-LPB-2018-PLAN-AUTO",
+      "date": "2018-04-16",
+      "type": "COURT_ORDER_ON_LIQUIDATION_PROPOSAL",
+      "pages": 7,
+      "sha256": "2de1527a738658252f81fd3e402622f677280aaed735e5ef117d44c4a06dcd05",
+      "role": "judicial implementation layer over the plan",
+      "copy_status": "CONTROLLED_PRIVATE_ELECTRONIC_COURT_COPY"
+    }
+  ],
+  "definitive_amounts_eur": {
+    "active_mass_previous": 16752575.32,
+    "active_mass_definitive": 19486498.94,
+    "passive_mass_previous": 9469157.93,
+    "passive_mass_definitive": 10125752.00,
+    "special_privilege": 9052251.69,
+    "general_privilege": 8407.21,
+    "ordinary_filing_table": 1054651.00,
+    "ordinary_separate_list": 1054651.03,
+    "subordinated_filing_table": 10142.10,
+    "subordinated_separate_list": 10142.07,
+    "claims_against_estate": 304779.42,
+    "debtor_rent_receivable_added": 2733923.64
+  },
+  "special_privilege_entries_eur": [
+    {
+      "holder_2016": "Promontoria Holding 122, B.V.",
+      "holder_after_2018_order": "Construcciones Acosta Matos, S.A.",
+      "mortgage_reference": "2801",
+      "amount": 857373.81
+    },
+    {
+      "holder_2016": "Promontoria Holding 122, B.V.",
+      "holder_after_2018_order": "Construcciones Acosta Matos, S.A.",
+      "mortgage_reference": "30000",
+      "amount": 8194877.88
+    }
+  ],
+  "lpb_real_estate_inventory": {
+    "apartments": 159,
+    "premises": 29,
+    "pool_solarium_properties": 2,
+    "boundary": "LPB inventory only; does not itself include Matkator or third-party title or every operating/common-area right"
+  },
+  "legal_quantity_separation": [
+    "inventory and reference valuation",
+    "insolvency claim classification",
+    "mortgage responsibility caps",
+    "debt legally payable on a specific date",
+    "debt used as non-cash consideration",
+    "cash, set-off, waiver, costs and final realisation outcome"
+  ],
+  "internal_traceability_issues": [
+    {
+      "id": "TD-INC-001",
+      "status": "OPEN_CERTIFICATION_QUESTION",
+      "issue": "The principal tables show active EUR 19,486,498.94, passive EUR 10,125,752.00 and estate claims EUR 304,779.42, while a later paragraph states materially different figures."
+    },
+    {
+      "id": "TD-INC-002",
+      "status": "OPEN_CERTIFICATION_QUESTION",
+      "issue": "The closing paragraph refers to an Article 75 report dated 1 February 2011, while the controlled LPB report is dated 15 January 2013."
+    },
+    {
+      "id": "TD-INC-003",
+      "status": "OPEN_CERTIFICATION_QUESTION",
+      "issue": "The filing is dated 28 April 2016 and electronically signed 29 April 2016."
+    },
+    {
+      "id": "TD-INC-004",
+      "status": "OPEN_CERTIFICATION_QUESTION",
+      "issue": "The filing table and separate list differ by three cents in ordinary and subordinated totals."
+    }
+  ],
+  "open_evidence": [
+    "complete court-certified definitive-text bundle and docket index",
+    "separate detailed Annex 2 claims-against-the-estate schedule",
+    "filing receipt and decision joining/receiving the definitive texts",
+    "complete later modification chain",
+    "credit calculation as at 2022-02-21 and legal basis for each component",
+    "final accounts, ledger, bank trail, liquidation balance and conclusion record",
+    "property-by-property notarial and Registry implementation"
+  ],
+  "public_routes": {
+    "es": "/por-derecho/es/textos-definitivos-lpb-base-liquidacion/",
+    "en": "/por-derecho/en/lpb-definitive-texts-liquidation-baseline/"
+  },
+  "canonical_digest": "archive/LPB_TEXTOS_DEFINITIVOS_LIQUIDATION_BASELINE_UNITARY_DIGEST_20AUG2026.md"
+}
