@@ -1,0 +1,4113 @@
+{
+  "schemaVersion": "2.0.0",
+  "caseId": "DIP-80-2026",
+  "displayId": "DIP 80/2026",
+  "caseType": "longitudinal",
+  "reviewDate": "2026-08-18",
+  "publicBoundary": {
+    "es": "Demostrador independiente basado en el corpus revisado. Las alegaciones no son hallazgos; toda omisión debe vincularse a un deber concreto, una fecha y la información disponible entonces.",
+    "en": "Independent demonstrator based on the reviewed corpus. Allegations are not findings; every alleged omission must be linked to a concrete duty, date and information available at the time."
+  },
+  "professional": {
+    "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+    "blind": {
+      "es": "Profesional B",
+      "en": "Professional B"
+    },
+    "role": {
+      "es": "Administrador concursal identificado en la denuncia",
+      "en": "Insolvency administrator identified in the complaint"
+    }
+  },
+  "ponente": {
+    "name": "Luis Alejandro Guerra Rodríguez",
+    "blind": {
+      "es": "Ponente humano B",
+      "en": "Human rapporteur B"
+    }
+  },
+  "origin": {
+    "registration": "RE-002261/2026",
+    "registeredDate": "2026-02-16",
+    "openedDate": "2026-05-27",
+    "outgoing": "RS-002600",
+    "outgoingDate": "2026-05-28"
+  },
+  "controlDate": {
+    "date": "2026-08-27",
+    "label": {
+      "es": "Fecha ordinaria de control de tres meses — cálculo y situación interna por confirmar",
+      "en": "Ordinary three-month control date — computation and internal status to be confirmed"
+    }
+  },
+  "health": {
+    "formalStatus": {
+      "es": "Múltiples líneas de deber profesional requieren análisis fechado — determinación humana pendiente",
+      "en": "Multiple professional-duty lanes require dated analysis — human determination pending"
+    },
+    "plainStatus": {
+      "es": "Patrón longitudinal: debe distinguirse entre desacuerdo, acto, omisión, deber vigente y posible riesgo presente.",
+      "en": "Longitudinal pattern: disagreement, act, omission, operative duty and any present risk must be separated."
+    },
+    "metrics": [
+      {
+        "key": "lanes",
+        "value": 9,
+        "label": {
+          "es": "líneas de deber separadas",
+          "en": "separate duty lanes"
+        },
+        "state": "judgment"
+      },
+      {
+        "key": "cross",
+        "value": 3,
+        "label": {
+          "es": "documentos con riesgo de mezcla o asignación",
+          "en": "documents with mixing or assignment risk"
+        },
+        "state": "risk"
+      },
+      {
+        "key": "respondent",
+        "value": 0,
+        "label": {
+          "es": "explicaciones localizadas en el corpus revisado",
+          "en": "explanations located in the reviewed corpus"
+        },
+        "state": "unknown"
+      },
+      {
+        "key": "routes",
+        "value": 2,
+        "label": {
+          "es": "rutas protectoras distintas: colegial y judicial",
+          "en": "distinct protective routes: collegiate and judicial"
+        },
+        "state": "official"
+      }
+    ],
+    "matrix": {
+      "concern": 76,
+      "readiness": 30,
+      "quadrant": "sick-undetermined"
+    },
+    "urgentRadar": {
+      "currentRisk": 32,
+      "reliability": 48,
+      "exposure": 38,
+      "readiness": 24
+    },
+    "urgentStatus": {
+      "es": "La necesidad de protección urgente no está establecida en el corpus público. Debe separarse el riesgo para la práctica general del riesgo específico del cargo concursal y definirse la exposición actual.",
+      "en": "Urgent protective necessity is not established in the public corpus. Risk to general practice must be separated from risk specific to the insolvency office, and current exposure must be defined."
+    }
+  },
+  "events": [
+    {
+      "date": "2012-01-01",
+      "dateLabel": {
+        "es": "2012",
+        "en": "2012"
+      },
+      "kind": "context",
+      "materiality": 40,
+      "title": {
+        "es": "Inicio del marco concursal relevante",
+        "en": "Start of the relevant insolvency context"
+      },
+      "status": "context-only",
+      "sourceIds": [
+        "SRC-D80-01"
+      ]
+    },
+    {
+      "date": "2022-01-01",
+      "dateLabel": {
+        "es": "2022",
+        "en": "2022"
+      },
+      "kind": "professional-act",
+      "materiality": 78,
+      "title": {
+        "es": "Actos e informes posteriores que la denuncia pide individualizar",
+        "en": "Later acts and reports the complaint asks to individualise"
+      },
+      "status": "alleged-identification",
+      "sourceIds": [
+        "SRC-D80-01"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "kind": "registration",
+      "materiality": 52,
+      "title": {
+        "es": "Registro de la denuncia RE-002261/2026",
+        "en": "Complaint registered as RE-002261/2026"
+      },
+      "status": "registered",
+      "sourceIds": [
+        "SRC-D80-01"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "kind": "supplement",
+      "materiality": 45,
+      "title": {
+        "es": "Paquete común RE-007200",
+        "en": "Shared package RE-007200"
+      },
+      "status": "registered-not-assigned",
+      "sourceIds": [
+        "SRC-CROSS-7200"
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "kind": "official-act",
+      "materiality": 70,
+      "title": {
+        "es": "Apertura de DIP 80/2026 y designación de ponente",
+        "en": "DIP 80/2026 opened and rapporteur appointed"
+      },
+      "status": "official",
+      "sourceIds": [
+        "SRC-D80-02"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "kind": "notification",
+      "materiality": 48,
+      "title": {
+        "es": "Salida RS-002600",
+        "en": "Outgoing communication RS-002600"
+      },
+      "status": "official",
+      "sourceIds": [
+        "SRC-D80-02"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "kind": "supplement",
+      "materiality": 54,
+      "title": {
+        "es": "Escrito RE-007421",
+        "en": "Submission RE-007421"
+      },
+      "status": "registered-context",
+      "sourceIds": [
+        "SRC-D80-03"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "kind": "cross-file-risk",
+      "materiality": 68,
+      "title": {
+        "es": "RE-007499: material de DIP 79 aparece en paquete DIP 80",
+        "en": "RE-007499: DIP 79 material appears in a DIP 80 package"
+      },
+      "status": "assignment-risk",
+      "sourceIds": [
+        "SRC-CROSS-7499"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "kind": "supplement",
+      "materiality": 48,
+      "title": {
+        "es": "Comunicación de urgencia",
+        "en": "Urgency communication"
+      },
+      "status": "sent-registration-to-confirm",
+      "sourceIds": [
+        "SRC-D80-04"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "kind": "supplement",
+      "materiality": 52,
+      "title": {
+        "es": "Actualización relativa a DP 1956/2026",
+        "en": "Update concerning DP 1956/2026"
+      },
+      "status": "sent",
+      "sourceIds": [
+        "SRC-D80-05"
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "kind": "registry",
+      "materiality": 62,
+      "title": {
+        "es": "Acuses RE-009765 y RE-009768; asignación exacta pendiente",
+        "en": "Receipts RE-009765 and RE-009768; exact assignment pending"
+      },
+      "status": "registered-assignment-open",
+      "sourceIds": [
+        "SRC-ICALPA-9765",
+        "SRC-ICALPA-9768"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "kind": "now",
+      "materiality": 85,
+      "title": {
+        "es": "AHORA: no se localiza comunicación sustantiva posterior en el buzón revisado",
+        "en": "NOW: no later substantive communication located in the reviewed mailbox"
+      },
+      "status": "corpus-boundary",
+      "sourceIds": [
+        "SRC-D80-05",
+        "SRC-ICALPA-9765"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "kind": "control",
+      "materiality": 72,
+      "title": {
+        "es": "Fecha ordinaria de control — no presentada como caducidad automática",
+        "en": "Ordinary control date — not presented as automatic expiry"
+      },
+      "status": "human-check",
+      "sourceIds": [
+        "LAW-ICALPA-CIRCULAR-18-2024"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "D80-LIAB",
+      "short": {
+        "es": "Pasivo",
+        "en": "Liabilities"
+      },
+      "title": {
+        "es": "Examen y corrección de pasivos controvertidos",
+        "en": "Review and correction of disputed liabilities"
+      },
+      "duty": {
+        "es": "Diligencia, independencia y protección de la masa",
+        "en": "Diligence, independence and protection of the estate"
+      },
+      "stage": 3,
+      "concern": "material-question",
+      "status": {
+        "es": "Deber alegado identificado; decisiones y razones contemporáneas por reconstruir",
+        "en": "Alleged duty identified; contemporaneous decisions and reasons must be reconstructed"
+      },
+      "question": {
+        "es": "¿Qué partidas fueron controvertidas, qué información se aportó, qué comprobación se realizó y qué decisión motivada se adoptó?",
+        "en": "Which items were disputed, what information was supplied, what checks were carried out and what reasoned decision was made?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia plantea la falta de examen o corrección suficiente de determinados pasivos.",
+            "en": "The complaint raises whether certain liabilities were sufficiently examined or corrected."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "La administración concursal pudo disponer de información distinta, aplicar un criterio jurídico razonable o considerar que la controversia debía resolverse por otra vía.",
+        "en": "The insolvency administrator may have had different information, applied a reasonable legal test or considered that the dispute belonged in another procedural route."
+      },
+      "changeMind": {
+        "es": "Inventario, comunicaciones, solicitudes de rectificación, informes, respuesta motivada y resoluciones que muestren el tratamiento real.",
+        "en": "The inventory, communications, correction requests, reports, reasoned response and decisions showing the actual treatment."
+      }
+    },
+    {
+      "id": "D80-COMMUNITY",
+      "short": {
+        "es": "Deuda Comunidad",
+        "en": "Community debt"
+      },
+      "title": {
+        "es": "Verificación de deudas atribuidas a la Comunidad",
+        "en": "Verification of debts attributed to the Community"
+      },
+      "duty": {
+        "es": "Diligencia, imparcialidad y comprobación documental",
+        "en": "Diligence, impartiality and documentary verification"
+      },
+      "stage": 3,
+      "concern": "material-question",
+      "status": {
+        "es": "Núcleo documental pendiente de contraste con actas, cuentas, titularidad y objeciones",
+        "en": "Documentary core pending comparison with minutes, accounts, title and objections"
+      },
+      "question": {
+        "es": "¿Qué deuda concreta se reconoció o utilizó, qué fuente la acreditaba y cómo se trataron las objeciones documentadas?",
+        "en": "What specific debt was recognised or used, what source established it and how were documented objections treated?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia identifica la deuda comunitaria como línea de comprobación deontológica.",
+            "en": "The complaint identifies Community debt as a professional-conduct verification lane."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "La existencia o cuantía de una deuda puede depender de resoluciones, información contable o competencias que excedan la decisión colegial.",
+        "en": "The existence or amount of a debt may depend on decisions, accounts or competences outside the College’s determination."
+      },
+      "changeMind": {
+        "es": "Cuenta detallada, actas, reclamaciones, respuesta del administrador concursal y decisión judicial sobre la partida.",
+        "en": "Detailed account, minutes, challenges, the administrator’s response and any judicial decision on the item."
+      }
+    },
+    {
+      "id": "D80-ESTATE",
+      "short": {
+        "es": "Masa activa",
+        "en": "Estate"
+      },
+      "title": {
+        "es": "Protección de la masa activa y de los derechos de terceros",
+        "en": "Protection of the insolvency estate and third-party rights"
+      },
+      "duty": {
+        "es": "Diligencia y protección patrimonial",
+        "en": "Diligence and patrimonial protection"
+      },
+      "stage": 3,
+      "concern": "material-question",
+      "status": {
+        "es": "Debe aislarse cada activo, titular y decisión",
+        "en": "Each asset, owner and decision must be isolated"
+      },
+      "question": {
+        "es": "¿Qué bienes o derechos estaban dentro o fuera de la masa, qué riesgo se comunicó y qué actuación correspondía al cargo?",
+        "en": "Which assets or rights were inside or outside the estate, what risk was communicated and what action fell within the office’s duties?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia plantea posibles insuficiencias en la protección de activos y derechos conectados.",
+            "en": "The complaint raises possible shortcomings in protecting connected assets and rights."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "No todo activo del complejo pertenecía a la concursada ni toda controversia extraconcursal correspondía al administrador concursal.",
+        "en": "Not every asset in the complex belonged to the insolvent company, and not every extra-insolvency dispute fell within the administrator’s role."
+      },
+      "changeMind": {
+        "es": "Matriz finca–titular–masa, solicitudes concretas, competencias del cargo y actuación documentada en cada fecha.",
+        "en": "An asset-owner-estate matrix, concrete requests, the office’s competences and documented action at each date."
+      }
+    },
+    {
+      "id": "D80-UNIT",
+      "short": {
+        "es": "Unidad hotelera",
+        "en": "Hotel unit"
+      },
+      "title": {
+        "es": "Protección de la unidad de explotación hotelera",
+        "en": "Protection of the hotel operating unit"
+      },
+      "duty": {
+        "es": "Diligencia, conservación de valor y actuación dentro de competencia",
+        "en": "Diligence, value preservation and action within competence"
+      },
+      "stage": 3,
+      "concern": "material-question",
+      "status": {
+        "es": "Causalidad y deber concreto pendientes",
+        "en": "Causation and concrete duty pending"
+      },
+      "question": {
+        "es": "¿Qué riesgo para la continuidad o el valor de la explotación fue conocido, qué facultades existían y qué respuesta fue razonablemente exigible?",
+        "en": "What risk to continuity or operating value was known, what powers existed and what response was reasonably required?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia conecta la conducta profesional con la protección de la unidad de explotación.",
+            "en": "The complaint links professional conduct to protection of the operating unit."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "La conservación de una unidad económica puede verse condicionada por resoluciones judiciales, propiedad fragmentada, financiación y decisiones de terceros.",
+        "en": "Preserving an economic unit may be constrained by judicial decisions, fragmented ownership, financing and third-party decisions."
+      },
+      "changeMind": {
+        "es": "Planes de liquidación, informes de viabilidad, ofertas, órdenes judiciales, comunicaciones de riesgo y razones de la actuación elegida.",
+        "en": "Liquidation plans, viability reports, offers, judicial orders, risk communications and reasons for the chosen action."
+      }
+    },
+    {
+      "id": "D80-THIRD",
+      "short": {
+        "es": "Terceros",
+        "en": "Third parties"
+      },
+      "title": {
+        "es": "Respuesta a actuaciones de terceros con posible impacto patrimonial",
+        "en": "Response to third-party conduct with possible patrimonial impact"
+      },
+      "duty": {
+        "es": "Diligencia, independencia y tutela de la masa",
+        "en": "Diligence, independence and protection of the estate"
+      },
+      "stage": 3,
+      "concern": "material-question",
+      "status": {
+        "es": "Debe distinguirse conocimiento, competencia, solicitud y respuesta",
+        "en": "Knowledge, competence, request and response must be separated"
+      },
+      "question": {
+        "es": "¿Qué conducta de tercero se comunicó, cuándo, con qué prueba, qué facultad tenía el administrador y qué hizo o razonó?",
+        "en": "What third-party conduct was reported, when, with what evidence, what power did the administrator have and what did he do or reason?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia pide analizar la respuesta a conductas de terceros que habrían afectado al activo o explotación.",
+            "en": "The complaint asks that the response to third-party conduct allegedly affecting the asset or operation be examined."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "La falta de una actuación pretendida no prueba por sí sola pasividad indebida: debe acreditarse competencia, deber, conocimiento y eficacia posible.",
+        "en": "Failure to take the action sought does not itself prove improper passivity: competence, duty, knowledge and possible effectiveness must be established."
+      },
+      "changeMind": {
+        "es": "Alertas contemporáneas, acuses, informes, peticiones concretas, respuesta y límites de competencia.",
+        "en": "Contemporaneous alerts, receipts, reports, concrete requests, response and competence limits."
+      }
+    },
+    {
+      "id": "D80-INDEP",
+      "short": {
+        "es": "Independencia",
+        "en": "Independence"
+      },
+      "title": {
+        "es": "Independencia, imparcialidad y apariencia objetiva de conflicto",
+        "en": "Independence, impartiality and objective appearance of conflict"
+      },
+      "duty": {
+        "es": "Independencia e incompatibilidades",
+        "en": "Independence and incompatibilities"
+      },
+      "stage": 2,
+      "concern": "human-judgment",
+      "status": {
+        "es": "Verificación objetiva pendiente; asociación o apariencia no equivalen a conflicto probado",
+        "en": "Objective verification pending; association or appearance is not a proven conflict"
+      },
+      "question": {
+        "es": "¿Existía una relación, interés o circunstancia objetiva relevante, fue revelada y qué salvaguardas o abstención procedían?",
+        "en": "Was there a relevant relationship, interest or objective circumstance, was it disclosed, and what safeguards or recusal were required?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia solicita comprobación de circunstancias objetivas de independencia y conflicto.",
+            "en": "The complaint requests verification of objective independence and conflict circumstances."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "Coincidencia profesional, evento público, relación indirecta o apariencia subjetiva no bastan; se necesita nexo objetivo y relevancia para decisiones concretas.",
+        "en": "Professional overlap, a public event, indirect relationship or subjective appearance is insufficient; an objective nexus and relevance to concrete decisions are required."
+      },
+      "changeMind": {
+        "es": "Declaraciones de conflicto, relaciones económicas/profesionales verificadas, salvaguardas, abstenciones y explicación del profesional.",
+        "en": "Conflict declarations, verified economic/professional relationships, safeguards, recusals and the professional’s explanation."
+      }
+    },
+    {
+      "id": "D80-ACCOUNT",
+      "short": {
+        "es": "Cuentas",
+        "en": "Accounts"
+      },
+      "title": {
+        "es": "Información, contabilidad y rendición de cuentas",
+        "en": "Information, accounting and rendering of accounts"
+      },
+      "duty": {
+        "es": "Diligencia, transparencia funcional y rendición",
+        "en": "Diligence, functional transparency and accountability"
+      },
+      "stage": 3,
+      "concern": "material-question",
+      "status": {
+        "es": "Deben identificarse el documento, fecha, destinatario y deber aplicable",
+        "en": "The document, date, recipient and applicable duty must be identified"
+      },
+      "question": {
+        "es": "¿Qué informe o rendición era exigible, qué información contenía, qué omisiones se alegan y cuál era su relevancia?",
+        "en": "What report or account was required, what information did it contain, what omissions are alleged and why were they material?"
+      },
+      "evidence": [
+        {
+          "state": "alleged",
+          "text": {
+            "es": "La denuncia incorpora la contabilidad, informes y rendición como línea separada.",
+            "en": "The complaint includes accounting, reporting and rendering of accounts as a separate lane."
+          },
+          "sourceIds": [
+            "SRC-D80-01"
+          ]
+        }
+      ],
+      "defence": {
+        "es": "La suficiencia de una rendición depende de su objeto legal, período, documentación disponible y control judicial posterior.",
+        "en": "The adequacy of an account depends on its legal purpose, period, available documentation and later judicial review."
+      },
+      "changeMind": {
+        "es": "Informes íntegros, anexos, requerimientos, objeciones, respuestas y decisión del órgano competente.",
+        "en": "Complete reports, annexes, requests, objections, responses and the competent body’s decision."
+      }
+    },
+    {
+      "id": "D80-TIME",
+      "short": {
+        "es": "Actos/omisiones",
+        "en": "Acts/omissions"
+      },
+      "title": {
+        "es": "Temporalidad de cada acto y omisión",
+        "en": "Temporal analysis of each act and omission"
+      },
+      "duty": {
+        "es": "Legalidad, prescripción y delimitación causal",
+        "en": "Legality, limitation and causal delimitation"
+      },
+      "stage": 2,
+      "concern": "human-judgment",
+      "status": {
+        "es": "No puede utilizarse una teoría global de continuidad sin deber y fecha concretos",
+        "en": "A global continuity theory cannot be used without a concrete duty and date"
+      },
+      "question": {
+        "es": "Para cada omisión: ¿qué deber existía, cuándo nació, qué información estaba disponible, hasta cuándo podía actuarse y existe una omisión posterior autónoma?",
+        "en": "For each omission: what duty existed, when did it arise, what information was available, until when could action be taken, and is there a later autonomous omission?"
+      },
+      "evidence": [],
+      "defence": {
+        "es": "Los efectos prolongados de una decisión no convierten automáticamente aquella decisión en una infracción continuada.",
+        "en": "Extended effects of a decision do not automatically make that decision a continuing breach."
+      },
+      "changeMind": {
+        "es": "Matriz deber–hecho desencadenante–fecha–actuación posible–respuesta documentada.",
+        "en": "A duty-trigger-date-available action-documented response matrix."
+      }
+    },
+    {
+      "id": "D80-RESPONSE",
+      "short": {
+        "es": "Contradicción",
+        "en": "Contradiction"
+      },
+      "title": {
+        "es": "Explicación del profesional y expediente interno completo",
+        "en": "The professional’s explanation and complete internal file"
+      },
+      "duty": {
+        "es": "Audiencia, defensa y presunción de no responsabilidad",
+        "en": "Hearing, defence and presumption of no responsibility"
+      },
+      "stage": 1,
+      "concern": "process-risk",
+      "status": {
+        "es": "No localizada en el corpus revisado; no se infiere ausencia interna",
+        "en": "Not located in the reviewed corpus; internal absence is not inferred"
+      },
+      "question": {
+        "es": "¿Se trasladó el núcleo concreto de cada imputación, con documentos correctamente asignados y oportunidad real de responder?",
+        "en": "Was the concrete core of each allegation transferred, with documents correctly assigned and a real opportunity to respond?"
+      },
+      "evidence": [],
+      "defence": {
+        "es": "No puede extraerse consecuencia adversa de una respuesta no localizada públicamente ni de documentos mezclados entre expedientes.",
+        "en": "No adverse inference may be drawn from a response not located publicly or from documents mixed between files."
+      },
+      "changeMind": {
+        "es": "Índice certificado, traslado, acceso, alegaciones, prueba y tratamiento motivado.",
+        "en": "Certified index, transfer, access, submissions, evidence and reasoned treatment."
+      }
+    }
+  ],
+  "decisionGates": [
+    {
+      "id": "scope",
+      "label": {
+        "es": "Líneas de deber separadas",
+        "en": "Duty lanes separated"
+      },
+      "state": "partial"
+    },
+    {
+      "id": "file",
+      "label": {
+        "es": "Índice interno completo certificado",
+        "en": "Complete internal index certified"
+      },
+      "state": "open"
+    },
+    {
+      "id": "assignment",
+      "label": {
+        "es": "RE-007200/7499 y materiales cruzados clasificados",
+        "en": "RE-007200/7499 and cross-file material classified"
+      },
+      "state": "open"
+    },
+    {
+      "id": "time",
+      "label": {
+        "es": "Cada acto y omisión fechado y vinculado a un deber",
+        "en": "Every act and omission dated and linked to a duty"
+      },
+      "state": "open"
+    },
+    {
+      "id": "hearing",
+      "label": {
+        "es": "Posición profesional incorporada y examinada",
+        "en": "Professional position incorporated and examined"
+      },
+      "state": "open"
+    },
+    {
+      "id": "counter",
+      "label": {
+        "es": "Competencia, causalidad y alternativas contrastadas",
+        "en": "Competence, causation and alternatives tested"
+      },
+      "state": "open"
+    },
+    {
+      "id": "routes",
+      "label": {
+        "es": "Ruta ICALPA separada de la ruta judicial concursal",
+        "en": "ICALPA route separated from insolvency-court route"
+      },
+      "state": "partial"
+    },
+    {
+      "id": "authority",
+      "label": {
+        "es": "Órgano humano competente y firma identificados",
+        "en": "Competent human body and signature identified"
+      },
+      "state": "human"
+    }
+  ],
+  "protectiveRoutes": [
+    {
+      "id": "college",
+      "title": {
+        "es": "Práctica profesional general — ICALPA",
+        "en": "General professional practice — ICALPA"
+      },
+      "question": {
+        "es": "¿Existe un riesgo actual, suficientemente fiable y no aplazable que justifique una medida proporcionada sin prejuzgar el fondo?",
+        "en": "Is there a current, sufficiently reliable and unpostponable risk justifying a proportionate measure without prejudging the merits?"
+      },
+      "authority": {
+        "es": "Junta de Gobierno u órgano competente, según norma y delegación verificadas",
+        "en": "Governing Board or competent body, under verified rules and delegations"
+      }
+    },
+    {
+      "id": "court",
+      "title": {
+        "es": "Cargo concursal específico — Juzgado Mercantil",
+        "en": "Specific insolvency office — Commercial Court"
+      },
+      "question": {
+        "es": "¿La continuidad en el cargo concreto requiere valoración judicial por justa causa bajo el artículo 100 TRLC?",
+        "en": "Does continuation in the specific office require judicial assessment for just cause under article 100 of the Insolvency Act?"
+      },
+      "authority": {
+        "es": "Juez del concurso",
+        "en": "Insolvency judge"
+      }
+    }
+  ],
+  "cutOffDate": "2026-08-18",
+  "title": {
+    "es": "EXPEDIENTE ABIERTO — Manual vivo de decisión deontológica",
+    "en": "OPEN FILE — Living deontological decision casebook"
+  },
+  "publicationBoundary": {
+    "independent": true,
+    "officialICALPA": false,
+    "guiltPresumed": false,
+    "automatedDecision": false,
+    "open": {
+      "es": "Método, preguntas, criterios, alternativas, procedencia y razones.",
+      "en": "Method, questions, criteria, alternatives, provenance and reasons."
+    },
+    "closed": {
+      "es": "Datos personales innecesarios, secreto profesional, expediente interno y material no publicable.",
+      "en": "Unnecessary personal data, professional secrecy, the internal file and non-public material."
+    }
+  },
+  "officialStatus": {
+    "complaintRegistration": "RE-002261/2026",
+    "complaintDate": "2026-02-16",
+    "preliminaryOpeningDate": "2026-05-27",
+    "ponente": "Luis Alejandro Guerra Rodríguez",
+    "outgoingReference": "RS-002600",
+    "outgoingRegistrationDate": "2026-05-28",
+    "latestLocatedMailboxEvent": {
+      "es": "Acuses RE-009765/2026 y RE-009768/2026, 14 julio; asignación exacta pendiente de certificar.",
+      "en": "Receipts RE-009765/2026 and RE-009768/2026, 14 July; exact assignment remains to be certified."
+    },
+    "laterSubstantiveICALPAResponse": {
+      "es": "No localizada en el buzón revisado hasta 18 agosto 2026.",
+      "en": "Not located in the reviewed mailbox through 18 August 2026."
+    },
+    "meritsDecision": {
+      "es": "No localizada en el corpus revisado.",
+      "en": "Not located in the reviewed corpus."
+    },
+    "ordinaryControlDate": "2026-08-27",
+    "controlDateCaution": {
+      "es": "Fecha ordinaria calculada; cómputo, excepciones, prórroga, suspensión y estado interno requieren verificación.",
+      "en": "Calculated ordinary control date; computation, exceptions, extension, suspension and internal status require verification."
+    }
+  },
+  "now": {
+    "known": [
+      {
+        "es": "La denuncia se registró el 16 febrero 2026.",
+        "en": "The complaint was registered on 16 February 2026."
+      },
+      {
+        "es": "La información previa se abrió el 27 mayo 2026.",
+        "en": "Preliminary information was opened on 27 May 2026."
+      },
+      {
+        "es": "Se designó ponente y se registró la salida RS-002600.",
+        "en": "A rapporteur was appointed and outgoing RS-002600 was registered."
+      },
+      {
+        "es": "Existen aportaciones posteriores y un riesgo documentado de mezcla DIP 79/DIP 80.",
+        "en": "Later submissions exist and a documented DIP 79/DIP 80 mixing risk is present."
+      }
+    ],
+    "unknown": [
+      {
+        "es": "Índice interno completo y estado de revisión de cada pieza.",
+        "en": "Complete internal index and review status of each item."
+      },
+      {
+        "es": "Traslado efectivo, acceso y respuesta del profesional.",
+        "en": "Effective transfer, access and the professional response."
+      },
+      {
+        "es": "Decisión sobre prórroga, suspensión, incoación o archivo.",
+        "en": "Decision on extension, suspension, initiation or closure."
+      },
+      {
+        "es": "Asignación exacta de RE-009765 y RE-009768.",
+        "en": "Exact assignment of RE-009765 and RE-009768."
+      }
+    ],
+    "verify": [
+      {
+        "es": "Certificar expediente, índice, deduplicación y separación de DIP 79.",
+        "en": "Certify the file, index, deduplication and separation from DIP 79."
+      },
+      {
+        "es": "Individualizar cada acto u omisión por fecha, deber e información disponible.",
+        "en": "Individualise each act or omission by date, duty and information available."
+      },
+      {
+        "es": "Completar audiencia y contradicción o documentar la situación jurídica.",
+        "en": "Complete hearing and contradiction or document the legal position."
+      },
+      {
+        "es": "Resolver competencia y temporalidad módulo por módulo.",
+        "en": "Resolve competence and timing module by module."
+      }
+    ],
+    "humanDecision": {
+      "es": "Adoptar una decisión procesal expresa ahora: diligencias finitas, audiencia, prórroga o suspensión motivada, protección, incoación, remisión o archivo total/parcial.",
+      "en": "Adopt an express procedural decision now: finite checks, hearing, reasoned extension or suspension, protection, initiation, referral or full/partial closure."
+    },
+    "options": [
+      "NODE-FILE",
+      "NODE-HEARING",
+      "NODE-FINITE",
+      "NODE-EXTENSION",
+      "NODE-COORDINATION",
+      "NODE-URGENT",
+      "NODE-ROUTE"
+    ],
+    "rights": {
+      "es": "Competencia, acceso, audiencia, contradicción, secreto, proporcionalidad, motivación, notificación y recurso.",
+      "en": "Competence, access, hearing, contradiction, secrecy, proportionality, reasons, notification and appeal."
+    },
+    "document": {
+      "es": "Acuerdo o informe humano fechado que identifique estado, siguiente actuación, razones, responsable y revisión.",
+      "en": "A dated human agreement or report identifying status, next act, reasons, owner and review."
+    },
+    "next": {
+      "es": "Ejecutar la actuación acordada y volver al nudo AHORA con el expediente actualizado.",
+      "en": "Carry out the agreed act and return to the NOW junction with the updated file."
+    }
+  },
+  "proceduralActs": [
+    {
+      "id": "PROC-COMPLAINT",
+      "date": "2026-02-16",
+      "act": {
+        "es": "Registro de denuncia",
+        "en": "Complaint registration"
+      },
+      "status": "confirmed",
+      "sourceIds": [
+        "SRC-D80-01"
+      ]
+    },
+    {
+      "id": "PROC-OPENING",
+      "date": "2026-05-27",
+      "act": {
+        "es": "Apertura de información previa y designación de ponente",
+        "en": "Opening of preliminary information and appointment of rapporteur"
+      },
+      "status": "confirmed",
+      "sourceIds": [
+        "SRC-D80-02"
+      ]
+    },
+    {
+      "id": "PROC-SUPPLEMENTS",
+      "date": "2026-03-27/2026-07-14",
+      "act": {
+        "es": "Aportaciones y acuses posteriores",
+        "en": "Later submissions and receipts"
+      },
+      "status": "registered-pieces-partially-mapped",
+      "sourceIds": [
+        "SRC-D80-03",
+        "SRC-D80-04",
+        "SRC-D80-05",
+        "SRC-CROSS-7200",
+        "SRC-CROSS-7499"
+      ]
+    },
+    {
+      "id": "PROC-HEARING",
+      "date": null,
+      "act": {
+        "es": "Traslado/audiencia al profesional",
+        "en": "Transfer/hearing of the professional"
+      },
+      "status": "not-located-in-reviewed-corpus",
+      "sourceIds": []
+    },
+    {
+      "id": "PROC-EXTENSION",
+      "date": null,
+      "act": {
+        "es": "Prórroga motivada",
+        "en": "Reasoned extension"
+      },
+      "status": "not-located-in-reviewed-corpus",
+      "sourceIds": []
+    },
+    {
+      "id": "PROC-SUSPENSION",
+      "date": null,
+      "act": {
+        "es": "Suspensión o coordinación formal",
+        "en": "Formal suspension or coordination"
+      },
+      "status": "not-located-in-reviewed-corpus",
+      "sourceIds": []
+    },
+    {
+      "id": "PROC-INITIATION",
+      "date": null,
+      "act": {
+        "es": "Incoación disciplinaria",
+        "en": "Disciplinary initiation"
+      },
+      "status": "not-located-in-reviewed-corpus",
+      "sourceIds": []
+    },
+    {
+      "id": "PROC-CLOSURE",
+      "date": null,
+      "act": {
+        "es": "Archivo o decisión de fase previa",
+        "en": "Closure or preliminary-phase decision"
+      },
+      "status": "not-located-in-reviewed-corpus",
+      "sourceIds": []
+    }
+  ],
+  "allegations": [
+    {
+      "id": "ALG-D80-01",
+      "title": {
+        "es": "Posibles incumplimientos de independencia, diligencia, imparcialidad y lealtad",
+        "en": "Possible failures of independence, diligence, impartiality and loyalty"
+      },
+      "status": "party-allegation",
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "limit": {
+        "es": "No es hallazgo ni tipificación definitiva.",
+        "en": "Not a finding or final classification."
+      }
+    },
+    {
+      "id": "ALG-D80-02",
+      "title": {
+        "es": "Posible apariencia objetiva de conflicto",
+        "en": "Possible objective appearance of conflict"
+      },
+      "status": "party-allegation",
+      "sourceIds": [
+        "SRC-D80-01",
+        "SRC-CROSS-7499"
+      ],
+      "limit": {
+        "es": "Debe vincularse a una relación, decisión y deber concretos.",
+        "en": "Must be linked to a concrete relationship, decision and duty."
+      }
+    },
+    {
+      "id": "ALG-D80-03",
+      "title": {
+        "es": "Posibles omisiones de protección, verificación y rendición",
+        "en": "Possible omissions in protection, verification and reporting"
+      },
+      "status": "party-allegation",
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "limit": {
+        "es": "Cada omisión requiere deber, fecha, capacidad de actuar y explicación.",
+        "en": "Each omission requires duty, date, capacity to act and explanation."
+      }
+    }
+  ],
+  "duties": [
+    {
+      "id": "DUTY-INDEPENDENCE",
+      "title": {
+        "es": "Independencia",
+        "en": "Independence"
+      },
+      "definition": {
+        "es": "Evitar que intereses o relaciones externas condicionen la función.",
+        "en": "Prevent external interests or relationships from conditioning the function."
+      }
+    },
+    {
+      "id": "DUTY-IMPARTIALITY",
+      "title": {
+        "es": "Imparcialidad",
+        "en": "Impartiality"
+      },
+      "definition": {
+        "es": "Aplicar criterios objetivos a deudor, acreedores y terceros.",
+        "en": "Apply objective criteria to debtor, creditors and third parties."
+      }
+    },
+    {
+      "id": "DUTY-DILIGENCE",
+      "title": {
+        "es": "Diligencia",
+        "en": "Diligence"
+      },
+      "definition": {
+        "es": "Verificar, actuar y documentar proporcionalmente.",
+        "en": "Verify, act and document proportionately."
+      }
+    },
+    {
+      "id": "DUTY-LOYALTY",
+      "title": {
+        "es": "Lealtad profesional",
+        "en": "Professional loyalty"
+      },
+      "definition": {
+        "es": "Actuar con buena fe, rigor y respeto institucional.",
+        "en": "Act in good faith, with rigour and institutional respect."
+      }
+    },
+    {
+      "id": "DUTY-ESTATE",
+      "title": {
+        "es": "Protección de la masa",
+        "en": "Protection of the estate"
+      },
+      "definition": {
+        "es": "Preservar y administrar dentro de competencias legales.",
+        "en": "Preserve and administer within lawful powers."
+      }
+    },
+    {
+      "id": "DUTY-VERIFY",
+      "title": {
+        "es": "Verificación razonable",
+        "en": "Reasonable verification"
+      },
+      "definition": {
+        "es": "Contrastar hechos y documentos materiales.",
+        "en": "Check material facts and documents."
+      }
+    },
+    {
+      "id": "DUTY-REPORT",
+      "title": {
+        "es": "Información al juzgado",
+        "en": "Reporting to the court"
+      },
+      "definition": {
+        "es": "Elevar cuestiones cuya decisión corresponde al juez.",
+        "en": "Raise matters whose decision belongs to the judge."
+      }
+    },
+    {
+      "id": "DUTY-ACCOUNT",
+      "title": {
+        "es": "Contabilidad y rendición",
+        "en": "Accounting and reporting"
+      },
+      "definition": {
+        "es": "Registrar, conciliar y explicar activos, pagos, gastos y saldo.",
+        "en": "Record, reconcile and explain assets, payments, costs and balance."
+      }
+    }
+  ],
+  "acts": [
+    {
+      "id": "ACT-2022-REPORT",
+      "date": "2022-01-25",
+      "title": {
+        "es": "Informe y propuesta relativos a dación/venta",
+        "en": "Report and proposal concerning dation/sale"
+      },
+      "status": "question-to-verify",
+      "moduleIds": [
+        "MODULE-2022"
+      ]
+    },
+    {
+      "id": "ACT-2022-DEED",
+      "date": "2022-02-21",
+      "title": {
+        "es": "Intervención profesional en escritura de 2022",
+        "en": "Professional participation in the 2022 deed"
+      },
+      "status": "question-to-verify",
+      "moduleIds": [
+        "MODULE-2022"
+      ]
+    },
+    {
+      "id": "ACT-LATER",
+      "date": "2022-2026",
+      "title": {
+        "es": "Actos posteriores de información o rendición a individualizar",
+        "en": "Later reporting acts to individualise"
+      },
+      "status": "not-individualised",
+      "moduleIds": [
+        "MODULE-ACCOUNTING",
+        "MODULE-LATER"
+      ]
+    }
+  ],
+  "omissions": [
+    {
+      "id": "OMIT-LIABILITIES",
+      "title": {
+        "es": "Falta de depuración alegada de pasivos",
+        "en": "Alleged failure to review liabilities"
+      },
+      "requiredElements": [
+        "duty",
+        "date",
+        "knowledge",
+        "power",
+        "requestedAct",
+        "actualAct",
+        "reason"
+      ],
+      "status": "not-determined",
+      "moduleIds": [
+        "MODULE-LIABILITIES"
+      ]
+    },
+    {
+      "id": "OMIT-PROTECTION",
+      "title": {
+        "es": "Falta de protección alegada de unidad y masa",
+        "en": "Alleged failure to protect unit and estate"
+      },
+      "requiredElements": [
+        "duty",
+        "date",
+        "risk",
+        "competence",
+        "requestedAct",
+        "actualAct",
+        "reason"
+      ],
+      "status": "not-determined",
+      "moduleIds": [
+        "MODULE-OPERATING",
+        "MODULE-THIRD"
+      ]
+    },
+    {
+      "id": "OMIT-ACCOUNTING",
+      "title": {
+        "es": "Falta de rendición o conciliación alegada",
+        "en": "Alleged failure to report or reconcile"
+      },
+      "requiredElements": [
+        "duty",
+        "dueDate",
+        "records",
+        "accountsFiled",
+        "objections",
+        "decision"
+      ],
+      "status": "not-determined",
+      "moduleIds": [
+        "MODULE-ACCOUNTING"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "LAW-ICALPA-STATUTES-2024",
+      "type": "official-law",
+      "title": {
+        "es": "Estatutos de ICALPA publicados en el BOC (2024)",
+        "en": "ICALPA Statutes published in the Canary Islands Official Gazette (2024)"
+      },
+      "date": "2024-01-25",
+      "url": "https://www.gobiernodecanarias.org/boc/2024/018/007.html",
+      "note": {
+        "es": "Fuente oficial. Deben comprobarse reformas y correcciones posteriores.",
+        "en": "Official source. Later amendments and corrections must be checked."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": "n/a",
+        "deduplicated": true,
+        "assigned": true,
+        "reviewed": true,
+        "transferred": "n/a",
+        "contradicted": "n/a",
+        "verified": true,
+        "considered": true,
+        "decisionUse": "legal-reference"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Fuente oficial. Deben comprobarse reformas y correcciones posteriores.",
+        "en": "Official source. Later amendments and corrections must be checked."
+      }
+    },
+    {
+      "id": "LAW-CGAE-RPD-2024",
+      "type": "official-regulation",
+      "title": {
+        "es": "Reglamento de Procedimiento Disciplinario de la Abogacía (2024)",
+        "en": "Spanish Bar disciplinary-procedure regulation (2024)"
+      },
+      "date": "2024-06-28",
+      "url": "https://www.icalpa.es/colegiados/actualidad/182024-nuevo-reglamento-de-procedimiento-disciplinario",
+      "note": {
+        "es": "Marco nacional y supletorio; la aplicación concreta exige validación jurídica.",
+        "en": "National and supplementary framework; concrete application requires legal validation."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": "n/a",
+        "deduplicated": true,
+        "assigned": true,
+        "reviewed": true,
+        "transferred": "n/a",
+        "contradicted": "n/a",
+        "verified": true,
+        "considered": true,
+        "decisionUse": "legal-reference"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Marco nacional y supletorio; la aplicación concreta exige validación jurídica.",
+        "en": "National and supplementary framework; concrete application requires legal validation."
+      }
+    },
+    {
+      "id": "LAW-ICALPA-CIRCULAR-18-2024",
+      "type": "institutional-publication",
+      "title": {
+        "es": "Circular ICALPA 18/2024",
+        "en": "ICALPA Circular 18/2024"
+      },
+      "date": "2024-08-30",
+      "url": "https://www.icalpa.es/colegiados/actualidad/182024-nuevo-reglamento-de-procedimiento-disciplinario",
+      "note": {
+        "es": "Resume la entrada en vigor y los plazos ordinarios; no sustituye el texto normativo.",
+        "en": "Summarises entry into force and ordinary periods; it does not replace the regulation."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": "n/a",
+        "deduplicated": true,
+        "assigned": true,
+        "reviewed": true,
+        "transferred": "n/a",
+        "contradicted": "n/a",
+        "verified": true,
+        "considered": true,
+        "decisionUse": "legal-reference"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Resume la entrada en vigor y los plazos ordinarios; no sustituye el texto normativo.",
+        "en": "Summarises entry into force and ordinary periods; it does not replace the regulation."
+      }
+    },
+    {
+      "id": "LAW-LPAC-56",
+      "type": "official-law",
+      "title": {
+        "es": "Ley 39/2015, artículo 56 — medidas provisionales",
+        "en": "Law 39/2015, article 56 — provisional measures"
+      },
+      "date": "2015-10-02",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565",
+      "note": {
+        "es": "Necesidad, proporcionalidad, efectividad y control temporal.",
+        "en": "Necessity, proportionality, effectiveness and temporal control."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": "n/a",
+        "deduplicated": true,
+        "assigned": true,
+        "reviewed": true,
+        "transferred": "n/a",
+        "contradicted": "n/a",
+        "verified": true,
+        "considered": true,
+        "decisionUse": "legal-reference"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Necesidad, proporcionalidad, efectividad y control temporal.",
+        "en": "Necessity, proportionality, effectiveness and temporal control."
+      }
+    },
+    {
+      "id": "LAW-TRLC-100",
+      "type": "official-law",
+      "title": {
+        "es": "TRLC, artículo 100 — separación del administrador concursal",
+        "en": "Spanish Insolvency Act, article 100 — removal of the insolvency administrator"
+      },
+      "date": "2020-05-07",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4859",
+      "note": {
+        "es": "Ruta judicial específica y separada de la potestad deontológica colegial.",
+        "en": "Specific judicial route, separate from collegiate professional-conduct powers."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": "n/a",
+        "deduplicated": true,
+        "assigned": true,
+        "reviewed": true,
+        "transferred": "n/a",
+        "contradicted": "n/a",
+        "verified": true,
+        "considered": true,
+        "decisionUse": "legal-reference"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Ruta judicial específica y separada de la potestad deontológica colegial.",
+        "en": "Specific judicial route, separate from collegiate professional-conduct powers."
+      }
+    },
+    {
+      "id": "SRC-D80-01",
+      "type": "case-primary",
+      "title": {
+        "es": "Denuncia deontológica RE-002261/2026",
+        "en": "Professional-conduct complaint RE-002261/2026"
+      },
+      "date": "2026-02-16",
+      "url": null,
+      "note": {
+        "es": "Fuente aportada al corpus. Se publican únicamente referencias y extractos necesarios.",
+        "en": "Source supplied to the corpus. Only necessary references and extracts are displayed."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "partial",
+        "assigned": "probable",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "not-publicly-established",
+        "decisionUse": "not-publicly-established"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Fuente aportada al corpus. Se publican únicamente referencias y extractos necesarios.",
+        "en": "Source supplied to the corpus. Only necessary references and extracts are displayed."
+      }
+    },
+    {
+      "id": "SRC-D80-02",
+      "type": "case-primary",
+      "title": {
+        "es": "Comunicación de apertura DIP 80/2026 / RS-002600",
+        "en": "DIP 80/2026 opening communication / RS-002600"
+      },
+      "date": "2026-05-28",
+      "url": null,
+      "note": {
+        "es": "Acredita apertura y designación; no decide el fondo.",
+        "en": "Establishes opening and appointment; it does not decide the merits."
+      },
+      "classification": "P1",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": true,
+        "assigned": true,
+        "reviewed": true,
+        "transferred": "n/a",
+        "contradicted": "n/a",
+        "verified": true,
+        "considered": true,
+        "decisionUse": "official-status"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Acredita apertura y designación; no decide el fondo.",
+        "en": "Establishes opening and appointment; it does not decide the merits."
+      }
+    },
+    {
+      "id": "SRC-D80-03",
+      "type": "case-registration",
+      "title": {
+        "es": "Escrito RE-007421",
+        "en": "Submission RE-007421"
+      },
+      "date": "2026-05-29",
+      "url": null,
+      "note": {
+        "es": "Registro/contexto; revisión y uso interno no acreditados públicamente.",
+        "en": "Registration/context; internal review and use are not publicly established."
+      },
+      "classification": "P2",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "partial",
+        "assigned": "probable",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "not-publicly-established",
+        "decisionUse": "not-publicly-established"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Registro/contexto; revisión y uso interno no acreditados públicamente.",
+        "en": "Registration/context; internal review and use are not publicly established."
+      }
+    },
+    {
+      "id": "SRC-D80-04",
+      "type": "case-communication",
+      "title": {
+        "es": "Comunicación de urgencia de 26 junio 2026",
+        "en": "Urgency communication of 26 June 2026"
+      },
+      "date": "2026-06-26",
+      "url": null,
+      "note": {
+        "es": "Envío localizado; situación registral e interna por confirmar.",
+        "en": "Sending located; registry and internal status remain to be confirmed."
+      },
+      "classification": "P2",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "partial",
+        "assigned": "probable",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "not-publicly-established",
+        "decisionUse": "not-publicly-established"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Envío localizado; situación registral e interna por confirmar.",
+        "en": "Sending located; registry and internal status remain to be confirmed."
+      }
+    },
+    {
+      "id": "SRC-D80-05",
+      "type": "case-communication",
+      "title": {
+        "es": "Actualización de 13 julio 2026 sobre DP 1956/2026",
+        "en": "13 July 2026 update concerning DP 1956/2026"
+      },
+      "date": "2026-07-13",
+      "url": null,
+      "note": {
+        "es": "Envío localizado en el buzón conectado; efecto interno no acreditado.",
+        "en": "Sending located in the connected mailbox; internal effect is not established."
+      },
+      "classification": "P2",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "partial",
+        "assigned": "probable",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "not-publicly-established",
+        "decisionUse": "not-publicly-established"
+      },
+      "file": "DIP-80-2026",
+      "publicLimit": {
+        "es": "Envío localizado en el buzón conectado; efecto interno no acreditado.",
+        "en": "Sending located in the connected mailbox; internal effect is not established."
+      }
+    },
+    {
+      "id": "SRC-CROSS-7200",
+      "type": "cross-file",
+      "title": {
+        "es": "Paquete RE-007200",
+        "en": "Package RE-007200"
+      },
+      "date": "2026-05-26",
+      "url": null,
+      "note": {
+        "es": "Paquete común: requiere clasificación de relevancia y separación entre expedientes.",
+        "en": "Shared package: relevance classification and separation between files are required."
+      },
+      "classification": "P2",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "open",
+        "assigned": "risk",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "blocked",
+        "decisionUse": "blocked"
+      },
+      "file": "CROSS-FILE",
+      "publicLimit": {
+        "es": "Paquete común: requiere clasificación de relevancia y separación entre expedientes.",
+        "en": "Shared package: relevance classification and separation between files are required."
+      }
+    },
+    {
+      "id": "SRC-CROSS-7499",
+      "type": "cross-file",
+      "title": {
+        "es": "Paquete RE-007499",
+        "en": "Package RE-007499"
+      },
+      "date": "2026-06-01",
+      "url": null,
+      "note": {
+        "es": "El inventario revisado indica material de DIP 79 dentro del paquete DIP 80; exige control de asignación, no una inferencia de fondo.",
+        "en": "The reviewed inventory indicates DIP 79 material inside the DIP 80 package; this requires an assignment control, not a merits inference."
+      },
+      "classification": "P2",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "open",
+        "assigned": "risk",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "blocked",
+        "decisionUse": "blocked"
+      },
+      "file": "CROSS-FILE",
+      "publicLimit": {
+        "es": "El inventario revisado indica material de DIP 79 dentro del paquete DIP 80; exige control de asignación, no una inferencia de fondo.",
+        "en": "The reviewed inventory indicates DIP 79 material inside the DIP 80 package; this requires an assignment control, not a merits inference."
+      }
+    },
+    {
+      "id": "SRC-D79-7476",
+      "type": "cross-file",
+      "classification": "P1",
+      "title": {
+        "es": "RE-007476: precisión atribuida a DIP 79",
+        "en": "RE-007476: clarification attributed to DIP 79"
+      },
+      "date": "2026-05-30",
+      "reference": "RE-007476",
+      "file": "DIP-79-2026",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": "copy-in-other-package",
+        "registered": "autonomous-receipt-not-isolated",
+        "deduplicated": "open",
+        "assigned": "DIP79-only-unless-relevance-decided",
+        "reviewed": "not-publicly-established",
+        "transferred": "blocked",
+        "contradicted": "not-located",
+        "verified": "partial",
+        "considered": "blocked",
+        "decisionUse": "blocked"
+      },
+      "publicLimit": {
+        "es": "No se importa a DIP 80 por aparecer dentro de RE-007499.",
+        "en": "Not imported into DIP 80 merely because it appears inside RE-007499."
+      }
+    },
+    {
+      "id": "SRC-ICALPA-9765",
+      "type": "registry-receipt",
+      "classification": "P1",
+      "title": {
+        "es": "Acuse RE-009765/2026",
+        "en": "Receipt RE-009765/2026"
+      },
+      "date": "2026-07-14",
+      "reference": "RE-009765/2026",
+      "file": "ASSIGNMENT-TO-CERTIFY",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "open",
+        "assigned": "not-independently-established",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "n/a",
+        "verified": "receipt",
+        "considered": "not-publicly-established",
+        "decisionUse": "not-publicly-established"
+      },
+      "publicLimit": {
+        "es": "El documento exacto y su asociación a DIP 80 deben certificarse.",
+        "en": "The exact document and its association with DIP 80 must be certified."
+      }
+    },
+    {
+      "id": "SRC-ICALPA-9768",
+      "type": "registry-receipt",
+      "classification": "P1",
+      "title": {
+        "es": "Acuse RE-009768/2026",
+        "en": "Receipt RE-009768/2026"
+      },
+      "date": "2026-07-14",
+      "reference": "RE-009768/2026",
+      "file": "ASSIGNMENT-TO-CERTIFY",
+      "status": {
+        "allegation": false,
+        "referenced": true,
+        "received": true,
+        "registered": true,
+        "deduplicated": "open",
+        "assigned": "not-independently-established",
+        "reviewed": "not-publicly-established",
+        "transferred": "not-located",
+        "contradicted": "n/a",
+        "verified": "receipt",
+        "considered": "not-publicly-established",
+        "decisionUse": "not-publicly-established"
+      },
+      "publicLimit": {
+        "es": "La asociación exacta a DIP 79 o DIP 80 debe certificarse.",
+        "en": "Exact association with DIP 79 or DIP 80 must be certified."
+      }
+    }
+  ],
+  "evidenceLinks": [
+    {
+      "id": "LINK-01",
+      "from": "ALG-D80-01",
+      "to": "SRC-D80-01",
+      "relation": "originates"
+    },
+    {
+      "id": "LINK-02",
+      "from": "PROC-OPENING",
+      "to": "SRC-D80-02",
+      "relation": "established-by"
+    },
+    {
+      "id": "LINK-03",
+      "from": "MODULE-CAM",
+      "to": "SRC-CROSS-7499",
+      "relation": "raises-question"
+    },
+    {
+      "id": "LINK-04",
+      "from": "GATE-DIP-SEPARATION",
+      "to": "SRC-D79-7476",
+      "relation": "blocks-cross-use"
+    }
+  ],
+  "respondentPosition": {
+    "status": "not-located-in-reviewed-public-corpus",
+    "caution": {
+      "es": "No se infiere que no exista internamente ni que el profesional guarde silencio.",
+      "en": "No inference is made that it does not exist internally or that the professional is silent."
+    },
+    "required": {
+      "es": "Traslado concreto, acceso, plazo, alegaciones, documentos y respuesta a cada módulo.",
+      "en": "Concrete transfer, access, deadline, submissions, documents and response to each module."
+    }
+  },
+  "counterEvidence": [
+    {
+      "id": "COUNTER-ROLE-LIMITS",
+      "title": {
+        "es": "Límites competenciales y necesidad de autorización judicial",
+        "en": "Competence limits and need for judicial authority"
+      },
+      "status": "to-test"
+    },
+    {
+      "id": "COUNTER-RECORDS",
+      "title": {
+        "es": "Posibles informes, cuentas o decisiones ausentes del corpus público",
+        "en": "Possible reports, accounts or decisions absent from the public corpus"
+      },
+      "status": "to-obtain"
+    },
+    {
+      "id": "COUNTER-RELIANCE",
+      "title": {
+        "es": "Posible confianza razonable en fuentes o resoluciones",
+        "en": "Possible reasonable reliance on sources or orders"
+      },
+      "status": "to-test"
+    },
+    {
+      "id": "COUNTER-CAUSATION",
+      "title": {
+        "es": "Causalidad alternativa y límites del contrafactual",
+        "en": "Alternative causation and limits of the counterfactual"
+      },
+      "status": "to-test"
+    }
+  ],
+  "temporalIssues": [
+    {
+      "id": "TIME-01",
+      "title": {
+        "es": "Acto consumado frente a efecto continuado",
+        "en": "Completed act versus continuing effect"
+      },
+      "status": "human-analysis-required"
+    },
+    {
+      "id": "TIME-02",
+      "title": {
+        "es": "Omisión puntual, mantenida o deber periódico",
+        "en": "One-off omission, maintained omission or periodic duty"
+      },
+      "status": "human-analysis-required"
+    },
+    {
+      "id": "TIME-03",
+      "title": {
+        "es": "Actos autónomos posteriores 2022–2026",
+        "en": "Autonomous later acts 2022–2026"
+      },
+      "status": "individualisation-required"
+    },
+    {
+      "id": "TIME-04",
+      "title": {
+        "es": "Interrupción, suspensión y norma más favorable",
+        "en": "Interruption, suspension and more favourable rule"
+      },
+      "status": "legal-validation-required"
+    }
+  ],
+  "competenceIssues": [
+    {
+      "id": "COMP-ICALPA",
+      "title": {
+        "es": "Conducta profesional deontológica",
+        "en": "Professional-conduct questions"
+      },
+      "authority": "ICALPA",
+      "status": "within-potential-scope"
+    },
+    {
+      "id": "COMP-COURT",
+      "title": {
+        "es": "Separación del cargo concursal y decisiones del concurso",
+        "en": "Removal from the insolvency office and insolvency decisions"
+      },
+      "authority": {
+        "es": "Juez del concurso",
+        "en": "Insolvency judge"
+      },
+      "status": "separate-authority"
+    },
+    {
+      "id": "COMP-CRIMINAL",
+      "title": {
+        "es": "Responsabilidad penal",
+        "en": "Criminal responsibility"
+      },
+      "authority": {
+        "es": "Jurisdicción penal",
+        "en": "Criminal courts"
+      },
+      "status": "outside-merits-scope"
+    },
+    {
+      "id": "COMP-CIVIL",
+      "title": {
+        "es": "Validez civil, titularidad y daños",
+        "en": "Civil validity, title and damages"
+      },
+      "authority": {
+        "es": "Órganos civiles/mercantiles competentes",
+        "en": "Competent civil/commercial courts"
+      },
+      "status": "outside-merits-scope"
+    }
+  ],
+  "decisionNodes": [
+    {
+      "id": "NODE-FILE",
+      "title": {
+        "es": "Integridad del expediente",
+        "en": "File integrity"
+      },
+      "question": {
+        "es": "¿Está certificado el índice completo, la deduplicación y la asignación DIP 79/DIP 80?",
+        "en": "Is the complete index, deduplication and DIP 79/DIP 80 assignment certified?"
+      },
+      "options": {
+        "es": [
+          "Certificar índice",
+          "Deduplicar",
+          "Separar piezas",
+          "Registrar lagunas"
+        ],
+        "en": [
+          "Certify index",
+          "Deduplicate",
+          "Separate items",
+          "Record gaps"
+        ]
+      },
+      "humanGateId": "GATE-01",
+      "consequential": true
+    },
+    {
+      "id": "NODE-COMPETENCE",
+      "title": {
+        "es": "Competencia",
+        "en": "Competence"
+      },
+      "question": {
+        "es": "¿Qué actuaciones corresponden a ICALPA y cuáles a otra autoridad?",
+        "en": "Which acts belong to ICALPA and which to another authority?"
+      },
+      "options": {
+        "es": [
+          "Competencia total",
+          "Competencia parcial",
+          "Consulta",
+          "Remisión"
+        ],
+        "en": [
+          "Full competence",
+          "Partial competence",
+          "Consultation",
+          "Referral"
+        ]
+      },
+      "humanGateId": "GATE-02",
+      "consequential": true
+    },
+    {
+      "id": "NODE-INDIVIDUALISE",
+      "title": {
+        "es": "Individualización",
+        "en": "Individualisation"
+      },
+      "question": {
+        "es": "¿Cada conducta tiene acto u omisión, fecha, deber, información y fuente?",
+        "en": "Does each conduct have an act or omission, date, duty, information and source?"
+      },
+      "options": {
+        "es": [
+          "Delimitar",
+          "Requerir aclaración",
+          "Excluir narración global",
+          "Continuar"
+        ],
+        "en": [
+          "Define",
+          "Request clarification",
+          "Exclude global narrative",
+          "Continue"
+        ]
+      },
+      "humanGateId": "GATE-03",
+      "consequential": true
+    },
+    {
+      "id": "NODE-TIMING",
+      "title": {
+        "es": "Temporalidad",
+        "en": "Timing"
+      },
+      "question": {
+        "es": "¿Qué régimen temporal se aplica a cada acto, omisión o deber periódico?",
+        "en": "What temporal regime applies to each act, omission or periodic duty?"
+      },
+      "options": {
+        "es": [
+          "Viable",
+          "Parcialmente viable",
+          "Posible prescripción",
+          "Diligencia adicional"
+        ],
+        "en": [
+          "Viable",
+          "Partly viable",
+          "Possible limitation",
+          "Further check"
+        ]
+      },
+      "humanGateId": "GATE-04",
+      "consequential": true
+    },
+    {
+      "id": "NODE-HEARING",
+      "title": {
+        "es": "Audiencia",
+        "en": "Hearing"
+      },
+      "question": {
+        "es": "¿El profesional recibió formulación concreta, acceso y oportunidad efectiva de responder?",
+        "en": "Did the professional receive a concrete formulation, access and an effective opportunity to respond?"
+      },
+      "options": {
+        "es": [
+          "Dar traslado",
+          "Completar acceso",
+          "Recibir alegaciones",
+          "Documentar situación"
+        ],
+        "en": [
+          "Transfer",
+          "Complete access",
+          "Receive submissions",
+          "Document position"
+        ]
+      },
+      "humanGateId": "GATE-05",
+      "consequential": true
+    },
+    {
+      "id": "NODE-SUFFICIENCY",
+      "title": {
+        "es": "Suficiencia",
+        "en": "Sufficiency"
+      },
+      "question": {
+        "es": "¿La información previa permite seleccionar una ruta defendible?",
+        "en": "Does the preliminary information support a defensible route?"
+      },
+      "options": {
+        "es": [
+          "Verificación finita",
+          "Archivo motivado por insuficiencia",
+          "Pasar a decisión"
+        ],
+        "en": [
+          "Finite verification",
+          "Reasoned closure for insufficiency",
+          "Proceed to decision"
+        ]
+      },
+      "humanGateId": "GATE-06",
+      "consequential": true
+    },
+    {
+      "id": "NODE-URGENT",
+      "title": {
+        "es": "Riesgo actual",
+        "en": "Current urgent risk"
+      },
+      "question": {
+        "es": "¿Existe exposición presente que no pueda esperar, separada de la gravedad histórica?",
+        "en": "Is there present exposure that cannot wait, separate from historical seriousness?"
+      },
+      "options": {
+        "es": [
+          "No urgencia establecida",
+          "Aclaración urgente",
+          "Medida colegial",
+          "Remisión al juez"
+        ],
+        "en": [
+          "No urgency established",
+          "Urgent clarification",
+          "Collegiate measure",
+          "Referral to judge"
+        ]
+      },
+      "humanGateId": "GATE-07",
+      "consequential": true
+    },
+    {
+      "id": "NODE-FINITE",
+      "title": {
+        "es": "Verificación finita",
+        "en": "Finite verification"
+      },
+      "question": {
+        "es": "¿Qué documento o respuesta concreta cerraría la laguna decisiva?",
+        "en": "What specific document or answer would close the decisive gap?"
+      },
+      "options": {
+        "es": [
+          "Requerimiento delimitado",
+          "Certificación judicial",
+          "Conciliación contable",
+          "Respuesta profesional"
+        ],
+        "en": [
+          "Defined request",
+          "Court certification",
+          "Accounting reconciliation",
+          "Professional response"
+        ]
+      },
+      "humanGateId": "GATE-08",
+      "consequential": true
+    },
+    {
+      "id": "NODE-EXTENSION",
+      "title": {
+        "es": "Prórroga motivada",
+        "en": "Reasoned extension"
+      },
+      "question": {
+        "es": "¿Existen circunstancias excepcionales, actuaciones pendientes y duración definida?",
+        "en": "Are there exceptional circumstances, pending acts and a defined duration?"
+      },
+      "options": {
+        "es": [
+          "Prorrogar con razones",
+          "No prorrogar",
+          "Fijar revisión"
+        ],
+        "en": [
+          "Extend with reasons",
+          "Do not extend",
+          "Set review"
+        ]
+      },
+      "humanGateId": "GATE-09",
+      "consequential": true
+    },
+    {
+      "id": "NODE-COORDINATION",
+      "title": {
+        "es": "Suspensión / coordinación",
+        "en": "Suspension / coordination"
+      },
+      "question": {
+        "es": "¿Existe solapamiento real con un proceso paralelo y qué puede continuar autónomamente?",
+        "en": "Is there real overlap with a parallel proceeding and what can continue autonomously?"
+      },
+      "options": {
+        "es": [
+          "Continuar cuestiones autónomas",
+          "Suspender parcialmente",
+          "Coordinar",
+          "Revisar"
+        ],
+        "en": [
+          "Continue autonomous issues",
+          "Partially suspend",
+          "Coordinate",
+          "Review"
+        ]
+      },
+      "humanGateId": "GATE-10",
+      "consequential": true
+    },
+    {
+      "id": "NODE-ROUTE",
+      "title": {
+        "es": "Decisión de ruta",
+        "en": "Route decision"
+      },
+      "question": {
+        "es": "¿Qué salida exige el expediente verificado?",
+        "en": "What outcome does the verified file require?"
+      },
+      "options": {
+        "es": [
+          "Archivo total",
+          "Archivo parcial",
+          "Procedimiento simplificado",
+          "Incoación ordinaria",
+          "Remisión"
+        ],
+        "en": [
+          "Full closure",
+          "Partial closure",
+          "Simplified procedure",
+          "Ordinary initiation",
+          "Referral"
+        ]
+      },
+      "humanGateId": "GATE-11",
+      "consequential": true
+    },
+    {
+      "id": "NODE-INITIATION",
+      "title": {
+        "es": "Incoación ordinaria",
+        "en": "Ordinary initiation"
+      },
+      "question": {
+        "es": "¿Están individualizados hechos y tipo provisional, con funciones separadas?",
+        "en": "Are facts and provisional classification individualised, with separated functions?"
+      },
+      "options": {
+        "es": [
+          "Incoar",
+          "No incoar",
+          "Delimitar de nuevo"
+        ],
+        "en": [
+          "Initiate",
+          "Do not initiate",
+          "Redefine"
+        ]
+      },
+      "humanGateId": "GATE-12",
+      "consequential": true
+    },
+    {
+      "id": "NODE-SIMPLIFIED",
+      "title": {
+        "es": "Procedimiento simplificado",
+        "en": "Simplified procedure"
+      },
+      "question": {
+        "es": "¿Se cumplen estrictamente presupuestos y garantías?",
+        "en": "Are statutory conditions and safeguards strictly met?"
+      },
+      "options": {
+        "es": [
+          "Aplicar",
+          "Convertir a ordinario",
+          "No aplicar"
+        ],
+        "en": [
+          "Apply",
+          "Convert to ordinary",
+          "Do not apply"
+        ]
+      },
+      "humanGateId": "GATE-13",
+      "consequential": true
+    },
+    {
+      "id": "NODE-REFERRAL",
+      "title": {
+        "es": "Remisión",
+        "en": "Referral"
+      },
+      "question": {
+        "es": "¿Qué autoridad debe recibir qué material y bajo qué base?",
+        "en": "Which authority should receive what material and on what basis?"
+      },
+      "options": {
+        "es": [
+          "Remitir paquete formal",
+          "Consulta previa",
+          "Conservar índice"
+        ],
+        "en": [
+          "Refer formal package",
+          "Prior consultation",
+          "Keep index"
+        ]
+      },
+      "humanGateId": "GATE-14",
+      "consequential": true
+    },
+    {
+      "id": "NODE-CLOSURE",
+      "title": {
+        "es": "Notificación, recurso y cierre",
+        "en": "Notification, appeal and closure"
+      },
+      "question": {
+        "es": "¿La decisión responde cada cuestión, protege datos e indica recurso?",
+        "en": "Does the decision answer each issue, protect data and state appeal?"
+      },
+      "options": {
+        "es": [
+          "Notificar",
+          "Tramitar recurso",
+          "Ejecutar",
+          "Cerrar"
+        ],
+        "en": [
+          "Notify",
+          "Process appeal",
+          "Enforce",
+          "Close"
+        ]
+      },
+      "humanGateId": "GATE-15",
+      "consequential": true
+    }
+  ],
+  "humanGates": [
+    {
+      "id": "GATE-01",
+      "title": {
+        "es": "Integridad y separación",
+        "en": "Integrity and separation"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "partial",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-02",
+      "title": {
+        "es": "Competencia",
+        "en": "Competence"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "partial",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-03",
+      "title": {
+        "es": "Individualización",
+        "en": "Individualisation"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-04",
+      "title": {
+        "es": "Temporalidad",
+        "en": "Timing"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-05",
+      "title": {
+        "es": "Audiencia",
+        "en": "Hearing"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-06",
+      "title": {
+        "es": "Suficiencia",
+        "en": "Sufficiency"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-07",
+      "title": {
+        "es": "Protección urgente",
+        "en": "Urgent protection"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-08",
+      "title": {
+        "es": "Diligencia finita",
+        "en": "Finite check"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-09",
+      "title": {
+        "es": "Prórroga",
+        "en": "Extension"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-10",
+      "title": {
+        "es": "Coordinación",
+        "en": "Coordination"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-11",
+      "title": {
+        "es": "Decisión de ruta",
+        "en": "Route decision"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-12",
+      "title": {
+        "es": "Incoación",
+        "en": "Initiation"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-13",
+      "title": {
+        "es": "Procedimiento simplificado",
+        "en": "Simplified procedure"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-14",
+      "title": {
+        "es": "Remisión",
+        "en": "Referral"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    },
+    {
+      "id": "GATE-15",
+      "title": {
+        "es": "Notificación y cierre",
+        "en": "Notification and closure"
+      },
+      "owner": {
+        "es": "Órgano humano competente por verificar",
+        "en": "Competent human body to verify"
+      },
+      "state": "open",
+      "requirements": {
+        "es": "Fuente, razones, derechos, alternativas, fecha y responsable humano.",
+        "en": "Source, reasons, rights, alternatives, date and human owner."
+      }
+    }
+  ],
+  "modules": [
+    {
+      "id": "MODULE-LIABILITIES",
+      "number": 1,
+      "title": {
+        "es": "Pasivo y créditos controvertidos",
+        "en": "Disputed liabilities and claims"
+      },
+      "question": {
+        "es": "¿Qué se discutió, qué recibió, qué comprobó, qué informó y qué razón contemporánea documentó?",
+        "en": "What was disputed, received, checked, reported and contemporaneously reasoned?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "El desacuerdo sobre una cifra no prueba por sí solo falta de diligencia.",
+        "en": "Disagreement over a figure does not itself prove lack of diligence."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Expediente certificado, cálculos, informes y comunicaciones.",
+          "en": "Certified file, calculations, reports and communications."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-COMMUNITY",
+      "number": 2,
+      "title": {
+        "es": "Deudas comunitarias",
+        "en": "Community debts"
+      },
+      "question": {
+        "es": "¿Cómo se verificaron origen, autoridad, actas, certificaciones, impugnaciones y tratamiento concursal?",
+        "en": "How were origin, authority, minutes, certificates, challenges and insolvency treatment verified?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "ICALPA no decide la validez civil; examina la diligencia aplicada.",
+        "en": "ICALPA does not decide civil validity; it examines diligence applied."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Libros originales, certificaciones, impugnaciones y decisiones.",
+          "en": "Original books, certificates, challenges and decisions."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-OPERATING",
+      "number": 3,
+      "title": {
+        "es": "Unidad de explotación hotelera",
+        "en": "Hotel operating unit"
+      },
+      "question": {
+        "es": "¿Qué deber existía, qué riesgo se comunicó, qué medidas eran posibles y cuáles correspondían al juez?",
+        "en": "What duty existed, what risk was reported, what measures were possible and which belonged to the judge?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "Un resultado empresarial adverso no equivale automáticamente a infracción.",
+        "en": "An adverse business outcome does not automatically equal misconduct."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Planes, solicitudes, informes, alternativas y razones.",
+          "en": "Plans, applications, reports, alternatives and reasons."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-THIRD",
+      "number": 4,
+      "title": {
+        "es": "Actuaciones de terceros",
+        "en": "Third-party conduct"
+      },
+      "question": {
+        "es": "¿Qué conductas se comunicaron, cuándo, con qué prueba y qué respuesta era razonable?",
+        "en": "What conduct was reported, when, with what evidence and what response was reasonable?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "El administrador no posee poderes ilimitados y puede necesitar decisión judicial.",
+        "en": "The administrator has no unlimited powers and may require a court decision."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Avisos fechados, solicitudes, respuestas y autos.",
+          "en": "Dated notices, requests, responses and orders."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-INDEPENDENCE",
+      "number": 5,
+      "title": {
+        "es": "Independencia e imparcialidad",
+        "en": "Independence and impartiality"
+      },
+      "question": {
+        "es": "¿Existieron circunstancias objetivas que exigían revelación, consulta, abstención o control reforzado?",
+        "en": "Were there objective circumstances requiring disclosure, consultation, recusal or enhanced control?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "Asociación, pertenencia o presencia pública no prueban conflicto sin nexo concreto.",
+        "en": "Association, affiliation or public attendance do not establish conflict without a concrete nexus."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Relaciones, roles, comunicaciones, revelaciones y decisiones.",
+          "en": "Relationships, roles, communications, disclosures and decisions."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-CAM",
+      "number": 6,
+      "title": {
+        "es": "CAM y escrutinio reforzado alegado",
+        "en": "CAM and alleged enhanced scrutiny"
+      },
+      "question": {
+        "es": "¿Qué sabía sobre CAM, qué verificó, qué informó y qué tratamiento propuso?",
+        "en": "What was known about CAM, what was verified, reported and proposed?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01",
+        "SRC-CROSS-7499"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "Ser acreedor o actor económico no prueba conflicto ni alineación.",
+        "en": "Being a creditor or economic actor does not prove conflict or alignment."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Cadena de crédito, actas, comunicaciones e informe al juzgado.",
+          "en": "Claim chain, minutes, communications and report to court."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-FINANCED",
+      "number": 7,
+      "title": {
+        "es": "Alternativas financiadas y salida",
+        "en": "Financed alternatives and exit"
+      },
+      "question": {
+        "es": "¿Existió una alternativa suficientemente firme, conocida y ejecutable, y qué respuesta recibió?",
+        "en": "Was there a sufficiently firm, known and executable alternative, and what response did it receive?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "Una oferta preliminar o condicionada no es una salida ejecutable.",
+        "en": "A preliminary or conditional offer is not an executable exit."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Term sheets, financiación, condiciones, presentación y respuesta.",
+          "en": "Term sheets, funding, conditions, submission and response."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-2018",
+      "number": 8,
+      "title": {
+        "es": "2018: control material",
+        "en": "2018: material control"
+      },
+      "question": {
+        "es": "¿Qué hechos de acceso, llaves, seguridad, posesión y explotación se comunicaron y qué podía hacer cada órgano?",
+        "en": "What access, key, security, possession and operation facts were reported and what could each body do?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "Acceso material debe distinguirse de título, autoridad y conocimiento.",
+        "en": "Material access must be separated from title, authority and knowledge."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Denuncias, autos, imágenes autenticadas, comunicaciones y respuesta.",
+          "en": "Complaints, orders, authenticated images, communications and response."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-2022",
+      "number": 9,
+      "title": {
+        "es": "2022: crédito, dación y 400.000 €",
+        "en": "2022: claim, dation and €400,000"
+      },
+      "question": {
+        "es": "¿Qué cálculo sustentó crédito, dación y pago separado, dónde se registró y cómo se concilió?",
+        "en": "What calculation supported claim, dation and separate payment, where was it recorded and reconciled?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "Una cifra no conciliada públicamente no equivale a apropiación, falsedad o fraude.",
+        "en": "A publicly unreconciled figure is not equivalent to misappropriation, falsity or fraud."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Escritura, auto, cálculo, banco, mayor, informe y cuentas finales.",
+          "en": "Deed, order, calculation, bank, ledger, report and final accounts."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-ACCOUNTING",
+      "number": 10,
+      "title": {
+        "es": "Contabilidad y rendición",
+        "en": "Accounting and rendition"
+      },
+      "question": {
+        "es": "¿Qué cuentas, partidas, saldos, activos, frutos, gastos y honorarios se rindieron?",
+        "en": "What accounts, entries, balances, assets, proceeds, costs and fees were rendered?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "La incompletitud del corpus público no demuestra inexistencia en el expediente oficial.",
+        "en": "An incomplete public corpus does not prove absence from the official file."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Cuentas finales, anexos, mayor, extractos y resoluciones.",
+          "en": "Final accounts, annexes, ledger, statements and orders."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    },
+    {
+      "id": "MODULE-LATER",
+      "number": 11,
+      "title": {
+        "es": "Actos u omisiones posteriores",
+        "en": "Later acts or omissions"
+      },
+      "question": {
+        "es": "¿Qué acto u omisión autónoma de 2022–2026 se atribuye y cuándo nació el deber?",
+        "en": "What autonomous act or omission from 2022–2026 is alleged and when did the duty arise?"
+      },
+      "status": {
+        "es": "Cuestión material para verificación; sin hallazgo de culpabilidad.",
+        "en": "Material question for verification; no finding of culpability."
+      },
+      "sourceIds": [
+        "SRC-D80-01"
+      ],
+      "respondent": {
+        "es": "Respuesta no localizada en el corpus público; debe certificarse el expediente interno.",
+        "en": "Response not located in the public corpus; the internal file must be certified."
+      },
+      "counterEvidence": {
+        "es": "La continuidad del hotel, conflicto o daño no sustituye una conducta individualizada.",
+        "en": "Continuation of the hotel, dispute or harm does not replace an individualised act."
+      },
+      "changeView": {
+        "strengthen": {
+          "es": "Fuente primaria contemporánea que muestre deber, conocimiento, capacidad y falta de razón proporcionada.",
+          "en": "A contemporaneous primary source showing duty, knowledge, capacity and absence of a proportionate reason."
+        },
+        "weaken": {
+          "es": "Acto, informe, resolución o límite competencial que explique una respuesta razonable.",
+          "en": "An act, report, order or competence limit explaining a reasonable response."
+        },
+        "resolve": {
+          "es": "Explicación profesional respaldada por el expediente y compatible con la cronología.",
+          "en": "A professional explanation supported by the file and compatible with the chronology."
+        },
+        "verify": {
+          "es": "Explicación dependiente de documentos o cálculos aún no aportados.",
+          "en": "An explanation dependent on documents or calculations not yet produced."
+        },
+        "missing": {
+          "es": "Actos fechados, deber, información disponible, respuesta y efecto.",
+          "en": "Dated acts, duty, information available, response and effect."
+        },
+        "alternative": {
+          "es": "Archivo, continuación limitada o incoación sobre hechos concretos, según prueba y temporalidad.",
+          "en": "Closure, limited continuation or initiation on specific facts, depending on evidence and timing."
+        }
+      }
+    }
+  ],
+  "urgentProtection": {
+    "question": {
+      "es": "¿Pueden los intereses potencialmente expuestos esperar con seguridad a la decisión final?",
+      "en": "Can potentially exposed interests safely await the final decision?"
+    },
+    "meritsSeparated": true,
+    "radar": {
+      "currentRisk": 35,
+      "reliability": 48,
+      "exposure": 42,
+      "irreversibility": 40,
+      "competence": 58,
+      "hearing": 15,
+      "proportionality": 20
+    },
+    "status": {
+      "es": "La necesidad urgente no está establecida en el corpus público; se requiere evaluación humana separada.",
+      "en": "Urgent necessity is not established in the public corpus; a separate human assessment is required."
+    },
+    "routes": [
+      {
+        "id": "URG-COLLEGIATE",
+        "authority": {
+          "es": "Junta de Gobierno / órgano colegial competente",
+          "en": "Governing Board / competent collegiate body"
+        },
+        "scope": {
+          "es": "Protección provisional de la práctica profesional, si se cumplen requisitos.",
+          "en": "Provisional protection concerning professional practice, if requirements are met."
+        },
+        "status": "human-legal-review"
+      },
+      {
+        "id": "URG-COURT",
+        "authority": {
+          "es": "Juez del concurso",
+          "en": "Insolvency judge"
+        },
+        "scope": {
+          "es": "Continuación o separación del cargo bajo TRLC art. 100.",
+          "en": "Continuation or removal from the office under TRLC article 100."
+        },
+        "status": "separate-route"
+      }
+    ],
+    "proportionality": [
+      {
+        "es": "No adoptar medida y motivar.",
+        "en": "Adopt no measure and give reasons."
+      },
+      {
+        "es": "Verificación acelerada y preservación.",
+        "en": "Accelerated verification and preservation."
+      },
+      {
+        "es": "Seguimiento con fecha de revisión.",
+        "en": "Monitoring with a review date."
+      },
+      {
+        "es": "Limitación específica, si existe base legal.",
+        "en": "Specific restriction, if legally available."
+      },
+      {
+        "es": "Remisión al órgano competente.",
+        "en": "Referral to the competent body."
+      },
+      {
+        "es": "Suspensión general solo como última opción legal y proporcionada.",
+        "en": "General suspension only as a lawful, proportionate last resort."
+      }
+    ]
+  },
+  "modelDecisions": [
+    {
+      "id": "MODEL-STATUS",
+      "title": {
+        "es": "Certificación de estado e índice",
+        "en": "Status and index certification"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-CLARIFY",
+      "title": {
+        "es": "Requerimiento de aclaración",
+        "en": "Request for clarification"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-TRANSFER",
+      "title": {
+        "es": "Traslado al profesional",
+        "en": "Transfer to the professional"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-EVIDENCE",
+      "title": {
+        "es": "Decisión sobre diligencias",
+        "en": "Decision on evidential steps"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-EXTENSION",
+      "title": {
+        "es": "Prórroga motivada",
+        "en": "Reasoned extension"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-SUSPENSION",
+      "title": {
+        "es": "Suspensión / coordinación",
+        "en": "Suspension / coordination"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-URGENT",
+      "title": {
+        "es": "Análisis de medida provisional",
+        "en": "Provisional-measure analysis"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-PARTIAL",
+      "title": {
+        "es": "Archivo parcial",
+        "en": "Partial closure"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-CLOSE",
+      "title": {
+        "es": "Archivo total",
+        "en": "Full closure"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-INITIATE",
+      "title": {
+        "es": "Propuesta de incoación",
+        "en": "Initiation proposal"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-CHARGES",
+      "title": {
+        "es": "Pliego de cargos docente",
+        "en": "Teaching statement of charges"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-PROPOSAL",
+      "title": {
+        "es": "Propuesta de resolución",
+        "en": "Proposed resolution"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-RESOLUTION",
+      "title": {
+        "es": "Resolución hipotética",
+        "en": "Hypothetical resolution"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-APPEAL",
+      "title": {
+        "es": "Pie de recursos",
+        "en": "Appeal notice"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-TRANSFER-PACK",
+      "title": {
+        "es": "Paquete de remisión",
+        "en": "Referral package"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    },
+    {
+      "id": "MODEL-CLOSE-ACT",
+      "title": {
+        "es": "Acta de cierre",
+        "en": "Closure record"
+      },
+      "fields": [
+        "competentBody",
+        "background",
+        "question",
+        "facts",
+        "evidenceFor",
+        "evidenceAgainst",
+        "respondentPosition",
+        "timing",
+        "rights",
+        "alternatives",
+        "reasons",
+        "notification",
+        "appeal",
+        "humanSignature"
+      ]
+    }
+  ],
+  "classroom": {
+    "chapters": [
+      {
+        "number": 1,
+        "title": {
+          "es": "Qué es la deontología",
+          "en": "What professional conduct regulation is"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 2,
+        "title": {
+          "es": "Qué es una información previa",
+          "en": "What preliminary information is"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 3,
+        "title": {
+          "es": "Función del ponente",
+          "en": "Role of the rapporteur"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 4,
+        "title": {
+          "es": "Función del instructor",
+          "en": "Role of the investigator"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 5,
+        "title": {
+          "es": "Función del órgano resolutor",
+          "en": "Role of the decision-making body"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 6,
+        "title": {
+          "es": "Presunción de no responsabilidad",
+          "en": "Presumption of no responsibility"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 7,
+        "title": {
+          "es": "Competencia territorial y funcional",
+          "en": "Territorial and functional competence"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 8,
+        "title": {
+          "es": "Prescripción y temporalidad",
+          "en": "Limitation and timing"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 9,
+        "title": {
+          "es": "Prueba y contradicción",
+          "en": "Evidence and contradiction"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 10,
+        "title": {
+          "es": "Secreto profesional",
+          "en": "Professional secrecy"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 11,
+        "title": {
+          "es": "Independencia",
+          "en": "Independence"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 12,
+        "title": {
+          "es": "Diligencia",
+          "en": "Diligence"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 13,
+        "title": {
+          "es": "El administrador concursal como profesional",
+          "en": "The insolvency administrator as a professional"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 14,
+        "title": {
+          "es": "Medidas provisionales",
+          "en": "Provisional measures"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 15,
+        "title": {
+          "es": "Procesos paralelos",
+          "en": "Parallel proceedings"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 16,
+        "title": {
+          "es": "Motivación",
+          "en": "Reasons"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 17,
+        "title": {
+          "es": "Recurso",
+          "en": "Appeal"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 18,
+        "title": {
+          "es": "Transparencia y privacidad",
+          "en": "Transparency and privacy"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 19,
+        "title": {
+          "es": "IA como apoyo",
+          "en": "AI as support"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      },
+      {
+        "number": 20,
+        "title": {
+          "es": "Lecciones de DIP 80/2026",
+          "en": "Lessons from DIP 80/2026"
+        },
+        "theory": {
+          "es": "Principios, límites y preguntas aplicables al caso.",
+          "en": "Principles, limits and questions applicable to the case."
+        },
+        "exercise": {
+          "es": "Redacte una decisión intermedia sin prejuzgar el fondo.",
+          "en": "Draft an interim decision without prejudging the merits."
+        }
+      }
+    ],
+    "socraticQuestions": [
+      {
+        "es": "¿Qué diferencia existe entre efecto continuado y conducta continuada?",
+        "en": "What is the difference between continuing effect and continuing conduct?"
+      },
+      {
+        "es": "¿Qué convierte una alegación de omisión en pregunta profesional verificable?",
+        "en": "What turns an alleged omission into a verifiable professional question?"
+      },
+      {
+        "es": "¿Puede un registro probar que el documento fue revisado?",
+        "en": "Can registration prove a document was reviewed?"
+      },
+      {
+        "es": "¿Qué parte corresponde a ICALPA y cuál al juez del concurso?",
+        "en": "Which part belongs to ICALPA and which to the insolvency judge?"
+      },
+      {
+        "es": "¿Qué respuesta profesional cambiaría la lectura del caso?",
+        "en": "What professional response would change the reading of the case?"
+      },
+      {
+        "es": "¿Qué debe contener un archivo motivado?",
+        "en": "What must a reasoned closure contain?"
+      }
+    ],
+    "hypotheticals": [
+      {
+        "id": "HYP-1",
+        "title": {
+          "es": "Aparecen cuentas finales completas",
+          "en": "Complete final accounts appear"
+        },
+        "question": {
+          "es": "¿Qué módulos se debilitan y cuáles siguen vivos?",
+          "en": "Which modules weaken and which remain live?"
+        }
+      },
+      {
+        "id": "HYP-2",
+        "title": {
+          "es": "Se acredita audiencia y respuesta extensa",
+          "en": "Hearing and detailed response are established"
+        },
+        "question": {
+          "es": "¿Cómo integrar la respuesta sin desplazar la carga?",
+          "en": "How should the response be integrated without shifting the burden?"
+        }
+      },
+      {
+        "id": "HYP-3",
+        "title": {
+          "es": "El proceso penal se archiva provisionalmente",
+          "en": "The criminal case is provisionally closed"
+        },
+        "question": {
+          "es": "¿Qué cuestiones deontológicas siguen siendo autónomas?",
+          "en": "Which professional-conduct questions remain autonomous?"
+        }
+      },
+      {
+        "id": "HYP-4",
+        "title": {
+          "es": "El juez mantiene al administrador por razones objetivas",
+          "en": "The judge maintains the administrator for objective reasons"
+        },
+        "question": {
+          "es": "¿Qué demuestra y qué no demuestra?",
+          "en": "What does that establish and not establish?"
+        }
+      }
+    ],
+    "commonErrors": [
+      {
+        "es": "Comprimir 2012–2026 en una sola conducta.",
+        "en": "Compressing 2012–2026 into one course of conduct."
+      },
+      {
+        "es": "Tratar silencio público como admisión.",
+        "en": "Treating public silence as admission."
+      },
+      {
+        "es": "Importar RE-007476 a DIP 80 sin decisión de relevancia.",
+        "en": "Importing RE-007476 into DIP 80 without a relevance decision."
+      },
+      {
+        "es": "Confundir deontología con revisión del concurso.",
+        "en": "Confusing professional conduct with review of the insolvency case."
+      },
+      {
+        "es": "Usar porcentaje de culpabilidad o credibilidad.",
+        "en": "Using a guilt or credibility percentage."
+      },
+      {
+        "es": "Adoptar medida provisional como castigo anticipado.",
+        "en": "Using a provisional measure as advance punishment."
+      }
+    ]
+  },
+  "corrections": [
+    {
+      "id": "CORR-01",
+      "date": "2026-08-18",
+      "title": {
+        "es": "Se corrige cualquier afirmación previa de que el manual ya estaba en main.",
+        "en": "Any prior claim that the casebook was already on main is corrected."
+      },
+      "status": "published-correction"
+    },
+    {
+      "id": "CORR-02",
+      "date": "2026-08-18",
+      "title": {
+        "es": "RE-009765 y RE-009768 se tratan como acuses cuya asignación exacta debe certificarse.",
+        "en": "RE-009765 and RE-009768 are treated as receipts whose exact assignment must be certified."
+      },
+      "status": "caution"
+    }
+  ],
+  "publicRedactions": [
+    {
+      "field": "personal-identifiers",
+      "rule": {
+        "es": "Excluir NIF/NIE, domicilios, teléfonos, firmas y claves.",
+        "en": "Exclude ID numbers, addresses, phones, signatures and keys."
+      }
+    },
+    {
+      "field": "professional-secrecy",
+      "rule": {
+        "es": "No publicar asesoramiento, datos de clientes ni material reservado.",
+        "en": "Do not publish advice, client data or protected material."
+      }
+    },
+    {
+      "field": "case-documents",
+      "rule": {
+        "es": "Publicar metadatos y extractos mínimos, no expedientes íntegros.",
+        "en": "Publish metadata and minimal extracts, not complete files."
+      }
+    },
+    {
+      "field": "response",
+      "rule": {
+        "es": "No publicar respuesta privada sin base y revisión específicas.",
+        "en": "Do not publish a private response without a specific basis and review."
+      }
+    }
+  ],
+  "acceptanceSections": [
+    {
+      "number": 1,
+      "status": "pass"
+    },
+    {
+      "number": 2,
+      "status": "pass"
+    },
+    {
+      "number": 3,
+      "status": "pass"
+    },
+    {
+      "number": 4,
+      "status": "pass"
+    },
+    {
+      "number": 5,
+      "status": "pass"
+    },
+    {
+      "number": 6,
+      "status": "pass"
+    },
+    {
+      "number": 7,
+      "status": "pass"
+    },
+    {
+      "number": 8,
+      "status": "pass"
+    },
+    {
+      "number": 9,
+      "status": "pass"
+    },
+    {
+      "number": 10,
+      "status": "pass"
+    },
+    {
+      "number": 11,
+      "status": "pass"
+    },
+    {
+      "number": 12,
+      "status": "pass"
+    },
+    {
+      "number": 13,
+      "status": "pass"
+    },
+    {
+      "number": 14,
+      "status": "pass"
+    },
+    {
+      "number": 15,
+      "status": "pass"
+    },
+    {
+      "number": 16,
+      "status": "pass"
+    },
+    {
+      "number": 17,
+      "status": "pass"
+    },
+    {
+      "number": 18,
+      "status": "pass"
+    },
+    {
+      "number": 19,
+      "status": "pass"
+    },
+    {
+      "number": 20,
+      "status": "pass"
+    },
+    {
+      "number": 21,
+      "status": "pass"
+    },
+    {
+      "number": 22,
+      "status": "pass"
+    },
+    {
+      "number": 23,
+      "status": "pass"
+    },
+    {
+      "number": 24,
+      "status": "pass"
+    },
+    {
+      "number": 25,
+      "status": "pass"
+    },
+    {
+      "number": 26,
+      "status": "pass"
+    },
+    {
+      "number": 27,
+      "status": "pass"
+    },
+    {
+      "number": 28,
+      "status": "pass"
+    }
+  ]
+}
