@@ -109,6 +109,22 @@ A thread is not fully deletion-safe merely because its prose conclusions are rem
 
 A stale or unmerged PR must be recorded as such. Do not imply that an open branch is live or controlling.
 
+## Email delivery rule for preservation/deletion threads
+
+For any thread that performs a **backup, preservation export, disaster-recovery package, evidence-custody package, deletion-safety handover or other durable close-out artifact**, and where the connected Gmail capability is available, the close-out is not operationally complete until the user has also been emailed a concise completion record.
+
+Where practical, that self-email should include or attach:
+
+- the final verified archive/package itself, subject to email size limits and confidentiality constraints;
+- the verification/hash record or manifest;
+- the preserved commit/version/date identifiers;
+- the independent storage location(s); and
+- the final deletion-safety status.
+
+If the primary archive is too large or inappropriate to email, send the verification record plus precise retrieval/storage information instead. Email is an **additional delivery and notification channel**, not a substitute for repository canonicalisation, independent off-platform storage, hashing, custody controls or restoration testing.
+
+Do not claim that an email was sent unless the Gmail send action actually succeeded. Similar future threads should apply this rule automatically rather than waiting for the user to request the email again.
+
 ## End-of-thread checklist
 
 Before declaring a project thread deletion-safe, verify as applicable:
@@ -122,7 +138,8 @@ Before declaring a project thread deletion-safe, verify as applicable:
 7. any substantive repo change followed branch → review/diff → PR → merge;
 8. public-site changes were deployment-verified and logged;
 9. unfinished work is recoverable without chat history;
-10. a fresh ChatGPT can resume by reading `CHATGPT_START_HERE.md` and the named canonical files, then re-querying primary sources where required.
+10. a fresh ChatGPT can resume by reading `CHATGPT_START_HERE.md` and the named canonical files, then re-querying primary sources where required;
+11. for backup/preservation/deletion-safety threads, the final verified package or completion record was emailed to the user when Gmail was available, and successful delivery was confirmed.
 
 If the thread genuinely created no material project intelligence and changed no project state, record that conclusion and no repository write is required solely to manufacture an audit artifact.
 
