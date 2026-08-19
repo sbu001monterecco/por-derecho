@@ -33,6 +33,13 @@ The underlying Sun Park issue is also not an arithmetic dispute about percentage
 
 PwC's own surviving 2016 records materially sharpen that question. The recovered billing appendix records 89.7 hours of named work including strategy, document review, legal research, preparation for and attendance at the 26 April 2016 Sun Park Owners' Community meeting, parent-company issues, work concerning private owners, coordination with other lawyers and the Cerberus/PwC Madrid connection. The 26 April act itself records incomplete historical accounting, non-approval of the 2010–2015 accounts, a retrospective quota adjustment, changed arrears and subsequent governance/debt-enforcement decisions. Later April–June work examined the relationship between common/exploitation expenses, alleged Community debt, voting, ownership, access, the insolvency administrator and the future operating/governance solution.
 
+For ease of institutional review by both the Spanish and UK recipients, the same PwC / Sun Park evidential record is available in both languages:
+
+- **English:** https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/
+- **Español:** https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/
+
+The two versions are intended to be substantively equivalent. If PwC identifies a factual error, omission or translation issue in either version, please identify it so that the corresponding version can be corrected with equivalent prominence.
+
 Against that background, please arrange a reasonable internal review and answer the following finite questions:
 
 1. **Preservation and review.** Will PwC preserve all relevant PwC UK, PwC Spain/Canary Islands and network records and appoint an independent senior reviewer who was not materially involved in the historic work?
@@ -69,7 +76,9 @@ for and on behalf of **Aweswell Limited**
 
 Prefer a small evidential package rather than a document dump:
 
-1. canonical PwC / Carlos Saavedra public page;
+1. canonical PwC / Carlos Saavedra public record in both languages:
+   - EN: https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/
+   - ES: https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/
 2. controlled/redacted 26 April 2016 acta source or public evidential edition;
 3. April–June 2016 PwC knowledge chronology / 89.7-hour appendix control;
 4. one-page governance-authority mechanism visual;
