@@ -2,9 +2,9 @@
 """Unitary public-repository audit for the alleged criminal-engineering investigation.
 
 This audit scans every public Spanish/English HTML page and runtime JavaScript file.
-It identifies publication architecture, actor coverage, high-risk wording requiring
-human review, judge/LAJ conflation risk and privacy leakage. It does not decide
-criminal liability or treat term frequency as proof.
+It identifies publication architecture, actor coverage, genuinely unqualified high-risk
+wording, judge/LAJ conflation risk and privacy leakage. It does not decide criminal
+liability or treat term frequency, institutional names or source quotations as proof.
 """
 from __future__ import annotations
 
@@ -88,14 +88,40 @@ HIGH_RISK_PATTERNS = {
 }
 
 QUALIFIERS = re.compile(
-    r"alegaci[oó]n|hip[oó]tesis|presunt[oa]|no hallazgo|no judicial finding|allegation|hypothesis|not a finding|"
-    r"no se afirma|does not allege|requires evidence|exige prueba|no basta|not enough",
+    r"alegaci[oó]n|acusaci[oó]n|hip[oó]tesis|presunt[oa]|no hallazgo|no judicial finding|"
+    r"allegation|accusation|i accuse|my accusation|alleged|hypothesis|not a finding|"
+    r"no se afirma|no afirma|no establece|no prueba|no constituye|no basta|no equivale|"
+    r"does not allege|does not establish|does not prove|does not constitute|not by itself|"
+    r"requires evidence|requires separate|exige prueba|elemento subjetivo|subjective element|"
+    r"umbral penal|criminal threshold|strongest defence|defensa m[aá]s fuerte",
     re.I,
 )
 
+OFFICIAL_NAME_OR_NEUTRAL_CONTEXT = re.compile(
+    r"Fiscal[ií]a Especial contra la Corrupci[oó]n y la Criminalidad Organizada|"
+    r"Special Prosecutor(?:'s)? Office against Corruption|"
+    r"Comisi[oó]n para la Integridad P[uú]blica y Lucha contra la Corrupci[oó]n|"
+    r"Servicio Ejecutivo de la Comisi[oó]n de Prevenci[oó]n del Blanqueo de Capitales|"
+    r"SEPBLAC|anti-corruption authority|anti-money laundering authority|"
+    r"data-search=.{0,120}(?:corrupci[oó]n|blanqueo de capitales)",
+    re.I | re.S,
+)
+
+SOURCE_QUOTE_CONTEXT = re.compile(
+    r"<blockquote|</blockquote>|original-note|translation:|traducci[oó]n:|"
+    r"el decreto dijo|the decree said|texto literal|verbatim|source quote",
+    re.I,
+)
+
+# Exact office-function tests. Word boundaries prevent false hits such as "preserved"
+# being mistaken for the verb "served", and "judges" being mistaken for "the judge".
 JUDGE_LAJ_CONFLATION = re.compile(
-    r"(?:el juez|the judge).{0,120}(?:notific[oó]|certific[oó] firmeza|tramit[oó]|served|certified finality|docketed)|"
-    r"(?:la LAJ|the LAJ).{0,120}(?:decidi[oó] el fondo|sentenci[oó]|authorised the adjudication|decided the merits)",
+    r"\b(?:el juez|la jueza|the judge)\b"
+    r"(?:(?!\bLAJ\b|oficina judicial|judicial office|Letrad[oa] de la Administraci[oó]n de Justicia).){0,100}"
+    r"\b(?:notific[oó]|certific[oó] la firmeza|tramit[oó]|dio traslado|served|certified finality|docketed)\b|"
+    r"\b(?:la LAJ|el LAJ|the LAJ)\b"
+    r"(?:(?!\bjuez\b|\bjudge\b).){0,100}"
+    r"\b(?:decidi[oó] el fondo|sentenci[oó]|autoriz[oó] la adjudicaci[oó]n|authorised the adjudication|decided the merits|entered judgment)\b",
     re.I | re.S,
 )
 
@@ -116,8 +142,16 @@ def public_files() -> list[Path]:
     return sorted(files)
 
 
-def context(text: str, start: int, end: int, radius: int = 180) -> str:
+def context(text: str, start: int, end: int, radius: int = 240) -> str:
     return re.sub(r"\s+", " ", text[max(0, start-radius):min(len(text), end+radius)]).strip()
+
+
+def is_reviewable_high_risk(snippet: str) -> bool:
+    if OFFICIAL_NAME_OR_NEUTRAL_CONTEXT.search(snippet):
+        return False
+    if SOURCE_QUOTE_CONTEXT.search(snippet) and not re.search(r"adopt(?:o|s)|endorse|sostengo|i accuse|acuso", snippet, re.I):
+        return False
+    return not QUALIFIERS.search(snippet)
 
 
 def main() -> int:
@@ -163,7 +197,7 @@ def main() -> int:
         for risk_id, pattern in HIGH_RISK_PATTERNS.items():
             for match in pattern.finditer(text):
                 snippet = context(text, match.start(), match.end())
-                if not QUALIFIERS.search(snippet):
+                if is_reviewable_high_risk(snippet):
                     review_items.append({
                         "type": "high_risk_language_without_nearby_qualifier",
                         "risk": risk_id,
@@ -217,7 +251,7 @@ def main() -> int:
         "review_items": review_items[:100],
         "actor_coverage": {key: {"file_count": len(value), "sample": sorted(value)[:12]} for key, value in actor_files.items()},
         "architecture_coverage": {key: {"file_count": len(value), "sample": sorted(value)[:12]} for key, value in architecture_files.items()},
-        "interpretation": "Coverage and wording audit only; no criminal liability is inferred from term frequency or route presence."
+        "interpretation": "Coverage and wording audit only; no criminal liability is inferred from term frequency or route presence. Official names, source quotations and expressly qualified allegations are excluded from the high-risk review count."
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 1 if failures else 0
