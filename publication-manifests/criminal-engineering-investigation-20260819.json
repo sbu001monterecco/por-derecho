@@ -1,8 +1,10 @@
 {
   "publication_id": "SUN-PARK-CRIMINAL-ENGINEERING-INVESTIGATION-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "CI_GREEN",
   "control_date": "2026-08-19",
+  "controlling_pr": 532,
+  "ci_head_sha": "4204ae7d64a818b57afbe159696907883c4b175b",
   "publication_type": "bilingual live forensic investigation architecture, unitary repository audit and actor-specific cross-site gateway",
   "subject": "Alleged multi-stage criminal engineering and enabling across the Sun Park to CAM to HNT to MYND chain",
   "expected_routes": {
@@ -95,6 +97,17 @@
     "retaliation and preservation evidence where alleged",
     "date-specific criminal and procedural-law validation before external filing"
   ],
+  "private_source_architecture": {
+    "status": "ACTIVE",
+    "private_vault_index_created": true,
+    "public_identifiers_exposed": false,
+    "source_clusters_indexed": [
+      "July 2026 definitive-text / Article 176 / AC and court reports",
+      "June 2026 NEXUS 36 actor, contradiction and witness matrices",
+      "criminal, CGPJ, RICPE and EUR 13,168,082.02 complaint families"
+    ],
+    "controlling_source_limit": "The strongest July report supports a genuine full-payoff alternative, serious conditional financing, AC/court knowledge and objectively CAM-favourable effects, but expressly does not prove unconditional funds, deliberate obstruction, judicial bias, collusion or prevarication."
+  },
   "public_audit": {
     "scope": [
       "all Spanish public HTML",
@@ -107,6 +120,11 @@
       "privacy leakage",
       "evidence-preservation, retaliation, benefit-flow and strongest-defence coverage"
     ],
+    "public_files_scanned": 366,
+    "structural_failures": 0,
+    "browser_assertions_passed": 16,
+    "review_items": 8,
+    "review_disposition": "All eight were human-reviewed as non-substantive: official institutional names, neutral legal-framework references or express negations/safeguards. No public correction was required by those hits.",
     "interpretation": "The audit identifies publication architecture and wording risks; it does not determine criminal liability."
   },
   "publication_safety": {
@@ -122,19 +140,27 @@
   },
   "validation": {
     "evidence": [
-      "PR validation pending.",
-      "Repository audit, browser rendering, publication integrity, mission-critical policy and off-GitHub preservation must pass before merge."
+      "PR 532 criminal-engineering validation run 32305093315, job 96236021679: success.",
+      "The unitary audit scanned 366 public files with zero structural failures; eight review hits were manually classified as non-actionable safeguards, official names or neutral legal references.",
+      "Both canonical pages and fourteen actor/dependency gateways passed sixteen browser assertions.",
+      "PR 532 publication-integrity run 32305093594: success.",
+      "PR 532 unitary public-shell run 32305093410: success.",
+      "PR 532 off-GitHub preservation run 32305093571: success.",
+      "PR 532 visual-asset identity run 32305093654: success.",
+      "A separate private evidence-vault index was created and populated; no private source identifiers or content were committed to the public repository."
     ],
-    "source_presence": "PENDING",
-    "json_and_sitemap": "PENDING",
-    "unitary_repository_audit": "PENDING",
-    "bilingual_route_parity": "PENDING",
-    "desktop_mobile_render": "PENDING",
-    "privacy": "PENDING",
+    "source_presence": "PASS",
+    "json_and_sitemap": "PASS",
+    "unitary_repository_audit": "PASS_WITH_HUMAN_REVIEW_COMPLETE",
+    "bilingual_route_parity": "PASS",
+    "desktop_mobile_render": "PASS",
+    "privacy": "PASS",
+    "publication_integrity": "PASS",
+    "off_github_preservation": "PASS",
     "public_edge": "NOT_YET_CLAIMED"
   },
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "PR_OPEN records source work only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+    "note": "CI_GREEN records validated PR source state only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
   }
 }
