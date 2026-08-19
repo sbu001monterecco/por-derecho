@@ -1,7 +1,8 @@
 # Sun Park alleged criminal-engineering investigation — activation record
 
 **Activated:** 2026-08-19  
-**State:** CI_GREEN — PR #532 validated; merge and public-edge verification pending  
+**State:** LIVE_VERIFIED — repository audit, bilingual public architecture, private source index and actor-specific gateways deployed  
+**Source merge:** PR #532 · `c00ae0765125a660d972bdf0c796492e53201094`  
 **Scope:** Acosta Matos/CAM/HNT, RIC Private Equity perimeter, Insolvency Administration, judge, LAJ, notary, Land Registry, valuers, lawyers, operators, authorities and other potential enablers
 
 ## Controlling posture
@@ -100,13 +101,15 @@ Canonical routes:
 
 The public pages identify the allegation strongly while showing the evidential boundary, strongest defence, missing evidence and right of response.
 
-A cross-site gateway is included for the principal CAM, RICPE, Administrator, judge, institutional, adjudication, lender, control, funding and recovery routes. It does not assign E-levels to named actors without a separately evidenced finding.
+Actor-specific gateways are live on the principal CAM, RICPE, Administrator, judge, adjudication, lender and 360-degree dependency routes. They do not assign E-levels to named actors without a separately evidenced finding.
 
 ## Repository audit and validation
 
 PR #532 was tested against the combined repository state after intervening `main` commits.
 
-- Criminal-engineering validation run `32305093315`, job `96236021679`: **PASS**.
+### Substantive validation
+
+- Criminal-engineering run `32305093315`, job `96236021679`: **PASS**.
 - 366 public Spanish/English HTML and runtime-JavaScript files scanned.
 - Zero structural failures or private-identifier leaks.
 - Eight wording-review hits were manually examined and found non-actionable: official institutional names, neutral legal-framework references or express negations/safeguards.
@@ -116,11 +119,27 @@ PR #532 was tested against the combined repository state after intervening `main
 - Off-GitHub preservation run `32305093571`: **PASS**.
 - Visual-asset identity run `32305093654`: **PASS**.
 
-The audit identifies publication architecture and wording risks. It does not determine criminal liability.
+### Final-head validation
+
+- Criminal-engineering run `32305816970`: **PASS**.
+- Unitary public-shell run `32305816966`: **PASS**.
+- Publication-integrity run `32305816996`: **PASS**.
+- Off-GitHub preservation run `32305816984`: **PASS**.
+- Visual-asset identity run `32305816992`: **PASS**.
+- Lender-liability architecture run `32305816986`: **PASS**.
+- Supervisory-practice routes run `32305817190`: **PASS**.
+
+## Public-edge verification
+
+- Source merge: `c00ae0765125a660d972bdf0c796492e53201094` at 21:53:32 UTC.
+- Live workflow run `32306163100`, job `96239275096`: **PASS**.
+- Spanish and English pages, runtime module, 360 loader, machine-readable register and sitemap became visible on propagation attempt 5.
+- Both canonical pages and all fourteen tested actor/dependency gateways rendered successfully: sixteen browser assertions.
+- Persistent status `pages-propagation/criminal-engineering-investigation` was published as `success` on the source merge SHA.
 
 ## Private source and issue index
 
-A separate confidential source/P0–P1 index has been created inside the Por Derecho Private Evidence Vault. It records source IDs, version relationships, P0/P1 issue cards and the source-derived limits that must not be exposed through the public repository.
+A separate confidential source/P0–P1 index exists inside the Por Derecho Private Evidence Vault. It records source IDs, version relationships, P0/P1 issue cards and source-derived limits that must not be exposed through the public repository.
 
 Recovered clusters include:
 
@@ -128,7 +147,9 @@ Recovered clusters include:
 - June 2026 NEXUS 36 actor, contradiction and witness matrices;
 - criminal, CGPJ, RICPE and EUR 13,168,082.02 complaint families.
 
-The strongest July report supports a genuine 2017–2019 full-payoff alternative, serious conditional financing, Administrator/Court knowledge and objectively CAM-favourable effects. The same report expressly does **not** prove unconditional funds, deliberate obstruction, judicial bias, collusion or prevarication. That distinction is controlling until the underlying primary sources and date-specific law justify a stronger or weaker finding.
+The strongest July report supports a genuine 2017–2019 full-payoff alternative, serious conditional financing, Administrator/Court knowledge and objectively CAM-favourable effects. The same report expressly does **not** prove unconditional funds, deliberate obstruction, judicial bias, collusion or prevarication. That distinction remains controlling until the underlying primary sources and date-specific law justify a stronger or weaker finding.
+
+The private index now also records that NEXUS 36 is an internal actor/evidence map—not a final merits statement. Its EUR 4.115 million remanente, EUR 6.102 million waiver, hotel-wide transfer and responsibility propositions are controlled by the current source-led corrections concerning the exact six-part EUR 13.168 million arithmetic, non-cash debt-consideration defence, EUR 5.186 million offered waiver, 159-mortgaged-apartment perimeter, separate EUR 400,000 line and judge/LAJ separation.
 
 ## Immediate evidence gates
 
@@ -157,4 +178,4 @@ The public repository does not contain:
 
 ## Completion standard
 
-Repository activation is not completion of the underlying forensic investigation. Completion requires primary-source recovery, actor-specific allocation, element-by-element criminal analysis, benefit-flow reconstruction, adverse-case testing, procedural-route mapping and independent public-edge verification of the published architecture.
+The public forensic architecture is LIVE_VERIFIED. The underlying merits investigation remains active and requires primary-source recovery, actor-specific allocation, element-by-element criminal analysis, benefit-flow reconstruction, adverse-case testing and procedural-route validation.

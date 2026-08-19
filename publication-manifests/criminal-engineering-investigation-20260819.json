@@ -1,10 +1,12 @@
 {
   "publication_id": "SUN-PARK-CRIMINAL-ENGINEERING-INVESTIGATION-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "CI_GREEN",
+  "current_state": "LIVE_VERIFIED",
   "control_date": "2026-08-19",
   "controlling_pr": 532,
-  "ci_head_sha": "4204ae7d64a818b57afbe159696907883c4b175b",
+  "ci_head_sha": "150a1acaf1add14f8740fc0c976b4126d5676894",
+  "merge_sha": "c00ae0765125a660d972bdf0c796492e53201094",
+  "merged_at": "2026-08-19T21:53:32Z",
   "publication_type": "bilingual live forensic investigation architecture, unitary repository audit and actor-specific cross-site gateway",
   "subject": "Alleged multi-stage criminal engineering and enabling across the Sun Park to CAM to HNT to MYND chain",
   "expected_routes": {
@@ -98,7 +100,7 @@
     "date-specific criminal and procedural-law validation before external filing"
   ],
   "private_source_architecture": {
-    "status": "ACTIVE",
+    "status": "ACTIVE_CONFIDENTIAL_INDEX_VERIFIED",
     "private_vault_index_created": true,
     "public_identifiers_exposed": false,
     "source_clusters_indexed": [
@@ -106,6 +108,7 @@
       "June 2026 NEXUS 36 actor, contradiction and witness matrices",
       "criminal, CGPJ, RICPE and EUR 13,168,082.02 complaint families"
     ],
+    "nexus_control": "NEXUS 36 is preserved as an internal actor/evidence map. Its EUR 4.115 million remanente, EUR 6.102 million waiver, hotel-wide transfer and actor-responsibility propositions remain allegations or later characterisations and are controlled by the current source-led corrections.",
     "controlling_source_limit": "The strongest July report supports a genuine full-payoff alternative, serious conditional financing, AC/court knowledge and objectively CAM-favourable effects, but expressly does not prove unconditional funds, deliberate obstruction, judicial bias, collusion or prevarication."
   },
   "public_audit": {
@@ -140,14 +143,23 @@
   },
   "validation": {
     "evidence": [
-      "PR 532 criminal-engineering validation run 32305093315, job 96236021679: success.",
+      "PR 532 substantive criminal-engineering validation run 32305093315, job 96236021679: success.",
       "The unitary audit scanned 366 public files with zero structural failures; eight review hits were manually classified as non-actionable safeguards, official names or neutral legal references.",
       "Both canonical pages and fourteen actor/dependency gateways passed sixteen browser assertions.",
-      "PR 532 publication-integrity run 32305093594: success.",
-      "PR 532 unitary public-shell run 32305093410: success.",
-      "PR 532 off-GitHub preservation run 32305093571: success.",
-      "PR 532 visual-asset identity run 32305093654: success.",
-      "A separate private evidence-vault index was created and populated; no private source identifiers or content were committed to the public repository."
+      "PR 532 substantive publication-integrity run 32305093594: success.",
+      "PR 532 substantive unitary public-shell run 32305093410: success.",
+      "PR 532 substantive off-GitHub preservation run 32305093571: success.",
+      "PR 532 substantive visual-asset identity run 32305093654: success.",
+      "PR 532 final-head criminal-engineering validation run 32305816970: success.",
+      "PR 532 final-head unitary public-shell run 32305816966: success.",
+      "PR 532 final-head publication-integrity run 32305816996: success.",
+      "PR 532 final-head off-GitHub preservation run 32305816984: success.",
+      "PR 532 final-head visual-asset identity run 32305816992: success.",
+      "PR 532 final-head lender-liability architecture run 32305816986: success.",
+      "PR 532 final-head supervisory-practice run 32305817190: success.",
+      "PR 532 merged to main at c00ae0765125a660d972bdf0c796492e53201094.",
+      "Public-edge workflow run 32306163100, job 96239275096: source routes/assets propagated on attempt 5 and all sixteen rendered-browser assertions passed.",
+      "A separate private evidence-vault index was created, populated and extended with corrected NEXUS controls; no private source identifiers or content were committed to the public repository."
     ],
     "source_presence": "PASS",
     "json_and_sitemap": "PASS",
@@ -157,10 +169,83 @@
     "privacy": "PASS",
     "publication_integrity": "PASS",
     "off_github_preservation": "PASS",
-    "public_edge": "NOT_YET_CLAIMED"
+    "repository_merge": "PASS",
+    "public_edge": "PASS"
+  },
+  "deployment_evidence": [
+    "GitHub Pages returned HTTP 200 with all declared markers for the Spanish and English canonical pages, runtime module, 360 loader, machine-readable data register and sitemap in run 32306163100.",
+    "The new source assets became visible on the fifth propagation poll.",
+    "Both canonical pages and all fourteen tested actor/dependency gateways rendered successfully against the public GitHub Pages edge.",
+    "Commit status pages-propagation/criminal-engineering-investigation was published as success on source SHA c00ae0765125a660d972bdf0c796492e53201094."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/criminal-engineering-investigation-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/": [
+      "ALEGACIÓN CENTRAL DE POR DERECHO",
+      "Las ocho fases de la presunta ingeniería",
+      "LAJ / oficina judicial",
+      "Escala de facilitación E0–E7",
+      "Derecho de respuesta"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/": [
+      "POR DERECHO CENTRAL ALLEGATION",
+      "The eight phases of the alleged engineering",
+      "LAJ / judicial office",
+      "E0–E7 enabler ladder",
+      "Right of response"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js": [
+      "data-criminal-engineering-gateway",
+      "authority + knowledge + duty",
+      "criminal-engineering-gateway"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/reverse-engineering-360-20260819.js": [
+      "criminal-engineering-investigation-20260819.js",
+      "data-criminal-engineering-investigation-loader"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/criminal-engineering-investigation-v1.json": [
+      "ACTIVE_INVESTIGATION",
+      "CE-P8",
+      "E7",
+      "CE-010"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-08-19T21:54:32Z",
+    "source_sha": "c00ae0765125a660d972bdf0c796492e53201094",
+    "workflow_run_id": 32306163100,
+    "workflow_job_id": 96239275096,
+    "source_propagation_attempt": 5,
+    "commit_status_context": "pages-propagation/criminal-engineering-investigation",
+    "commit_status_state": "success",
+    "checks": {
+      "es_http_200": true,
+      "es_markers": true,
+      "en_http_200": true,
+      "en_markers": true,
+      "module_http_200": true,
+      "module_markers": true,
+      "loader_http_200": true,
+      "loader_markers": true,
+      "data_http_200": true,
+      "data_markers": true,
+      "sitemap_http_200": true,
+      "sitemap_markers": true,
+      "canonical_pages_rendered": 2,
+      "actor_dependency_gateways_rendered": 14,
+      "total_rendered_browser_assertions": 16
+    }
   },
   "live_verification": {
-    "status": "NOT_YET_CLAIMED",
-    "note": "CI_GREEN records validated PR source state only. MERGED, DEPLOYED and LIVE_VERIFIED require separate evidence."
+    "status": "LIVE_VERIFIED",
+    "verified_at": "2026-08-19T21:54:32Z",
+    "note": "The bilingual canonical pages, runtime investigation module, 360 loader, machine-readable register and sitemap were read back from the public edge, and both canonical pages plus all fourteen tested actor/dependency gateways rendered successfully."
   }
 }
