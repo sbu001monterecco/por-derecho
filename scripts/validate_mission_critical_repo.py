@@ -36,6 +36,7 @@ ALLOWED_WRITE = {
     "verify-mission-critical-hardening-live.yml": {"statuses"},
     "verify-ricpe-channel-status-live.yml": {"statuses"},
     "verify-adjudicacion-2022-live.yml": {"statuses"},
+    "verify-criminal-engineering-investigation-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
     "repository-backup-bundle.yml": {"statuses"},
 }
