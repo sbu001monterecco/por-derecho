@@ -30,7 +30,26 @@ CHECKS = [
      "kind": "rsm_es", "min_bytes": 1000},
     {"path": "en/rsm/nnr4-1025c2f66/", "markers": ["NNR4-1025C2F66", "Professional perimeter and preservation", "18 Aug 2026"],
      "kind": "rsm_en", "min_bytes": 1000},
-    {"path": "assets/site.js", "markers": ["canonical-routing-chronology-20260815.js", "share-controls-20260817.js"],
+    {"path": "es/fundacion-por-derecho/palacete-por-derecho/",
+     "markers": [
+         "Propuesta de futuro Palacete Por Derecho",
+         "palacete-san-bernardo-historica-marco.webp",
+         "palacete-san-bernardo-historica-detalle.webp",
+         "palacete-por-derecho-vision-01.webp",
+         "palacete-por-derecho-vision-02.webp",
+         "Memoria visual",
+         "Visualización conceptual",
+     ],
+     "kind": "palacete_page", "min_bytes": 5000},
+    {"path": "assets/palacete-san-bernardo-historica-marco.webp",
+     "markers": ["RIFF", "WEBP"], "kind": "palacete_history_frame", "min_bytes": 5000},
+    {"path": "assets/palacete-san-bernardo-historica-detalle.webp",
+     "markers": ["RIFF", "WEBP"], "kind": "palacete_history_detail", "min_bytes": 5000},
+    {"path": "assets/palacete-por-derecho-vision-01.webp",
+     "markers": ["RIFF", "WEBP"], "kind": "palacete_vision_01", "min_bytes": 5000},
+    {"path": "assets/palacete-por-derecho-vision-02.webp",
+     "markers": ["RIFF", "WEBP"], "kind": "palacete_vision_02", "min_bytes": 5000},
+    {"path": "assets/site.js", "markers": ["site-base-20260819.js", "pd-history-visuals"],
      "kind": "global_loader", "min_bytes": 1000},
 ]
 
@@ -44,7 +63,7 @@ def fetch(url: str, timeout: int) -> dict[str, Any]:
         "User-Agent": "Por-Derecho-Mission-Critical-Smoke/1.0",
         "Cache-Control": "no-cache, no-store, max-age=0",
         "Pragma": "no-cache",
-        "Accept": "text/html,application/json,text/javascript,*/*;q=0.8",
+        "Accept": "text/html,application/json,text/javascript,image/webp,*/*;q=0.8",
     })
     with urllib.request.urlopen(request, timeout=timeout) as response:
         body = response.read()
@@ -54,9 +73,10 @@ def fetch(url: str, timeout: int) -> dict[str, Any]:
             "etag": response.headers.get("ETag"),
             "last_modified": response.headers.get("Last-Modified"),
             "server": response.headers.get("Server"),
+            "content_type": response.headers.get("Content-Type"),
             "bytes": len(body),
             "sha256": hashlib.sha256(body).hexdigest(),
-            "text": body.decode("utf-8", errors="replace"),
+            "text": body.decode("latin-1", errors="replace"),
         }
 
 
