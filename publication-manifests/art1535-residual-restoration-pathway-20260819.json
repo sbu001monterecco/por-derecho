@@ -1,10 +1,11 @@
 {
   "publication_id": "ART1535-RESIDUAL-RESTORATION-PATHWAY-20260819",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-19",
   "publication_type": "bilingual dedicated dossier plus cross-site reserve-pathway module",
   "controlling_pr": 452,
+  "merge_sha": "2b3658b31da5b09083d9a53be69685f9451e4ffe",
   "controlling_proposition": {
     "es": "El art. 1535 se preserva como una vía residual de restitución y dependencia jurídica aguas arriba. Las operaciones posteriores no resuelven por sí solas si el puente acreedor PH122→CAM podía extinguirse ni qué remedio procede si su ejercicio efectivo fue frustrado.",
     "en": "Article 1535 is preserved as a residual restoration pathway and upstream legal dependency. Later transactions do not by themselves resolve whether the PH122→CAM creditor bridge could have been extinguished or what remedy follows if effective exercise was frustrated."
@@ -58,6 +59,18 @@
       "/en/recovery-restitution-objectives/"
     ]
   },
+  "validation": {
+    "evidence": [
+      "PR 452 Publication integrity gate run 32244834230: success.",
+      "PR 452 Validate unitary public shell run 32244834210: success.",
+      "Syntax, JSON and sitemap checks: success.",
+      "Desktop/mobile Playwright route-archetype rendering: success.",
+      "PR 452 squash-merged to main at 2b3658b31da5b09083d9a53be69685f9451e4ffe."
+    ],
+    "publication_integrity": "PASS",
+    "unitary_public_shell": "PASS",
+    "browser_render": "PASS"
+  },
   "publication_safety": {
     "title": "No claim that Article 1535 automatically gives LPB hotel title.",
     "survival": "No claim that the statutory right is necessarily alive today.",
@@ -79,6 +92,7 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "PR/source state is distinct from deployment and public-edge verification."
-  }
+    "note": "MERGED records repository/source state only. DEPLOYED/LIVE_VERIFIED require separate public-edge readback after GitHub Pages propagation."
+  },
+  "notes": "The reserve-pathway doctrine is merged, source-controlled and CI/browser-green. No public-edge live state is claimed until independently verified."
 }
