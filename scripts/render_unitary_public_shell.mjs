@@ -4,6 +4,7 @@ import { chromium } from 'playwright';
 
 const base=(process.env.PSR_BASE_URL||'http://127.0.0.1:8000/por-derecho').replace(/\/$/,'');
 const out=process.env.PSR_SCREENSHOT_DIR||'artifacts/unitary-public-shell';
+const browserPath=(process.env.PSR_BROWSER_PATH||'').trim()||undefined;
 fs.mkdirSync(out,{recursive:true});
 
 const routes=[
@@ -27,7 +28,7 @@ const routes=[
 ];
 const viewports=[{name:'desktop',width:1440,height:1000},{name:'mobile',width:390,height:844}];
 const failures=[];const evidence=[];
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:true,...(browserPath?{executablePath:browserPath}:{})});
 
 async function assertSearch(page,query,pattern,label){
   const input=page.locator('#psr-search-input');
@@ -112,5 +113,5 @@ try{
     await context.close();
   }
 }finally{await browser.close();}
-fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({base,checked_at:new Date().toISOString(),evidence,failures},null,2));
+fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({base,browser_path:browserPath||'playwright-managed',checked_at:new Date().toISOString(),evidence,failures},null,2));
 if(failures.length){console.error(JSON.stringify(failures,null,2));process.exit(1);}else console.log(`Unitary public shell checks passed: ${evidence.length}; curated + specialist-sitemap discovery verified; all tested routes overflow-free`);
