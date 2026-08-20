@@ -3,7 +3,8 @@
 Date: 20 August 2026
 Status: **MERGED TO `main` via PR #662**
 Merge commit: `3c1cc2ed878bdef43ba8f62fa406dc57fa8da591`
-Public live read-back: **not independently verified at this close-out; retry required**
+Repository read-back: **verified from current `main`**
+Public live read-back: **finite verification item remains open until a successful rendered-site run/browser read-back is recorded**
 
 ## Implemented public-safe propagation
 
@@ -38,6 +39,13 @@ Public live read-back: **not independently verified at this close-out; retry req
 
 The PR-level publication-integrity workflow had one failure caused by a pre-existing repository-wide mission-critical invariant concerning an unrelated `2022-adjudication-documentary-reconstruction` heading. The proceedings files themselves passed the publication/deletion-safety and operational checks inspected in the workflow log. The unrelated pre-existing gate issue was recorded in PR #662 before merge.
 
-## Remaining implementation evidence
+## Live-verification control added 20 August 2026
 
-A fresh thread should verify the public GitHub Pages routes and, once confirmed, record that read-back in the appropriate deployment/verification log. Until then, repository publication is controlling and live-browser deployment remains an open verification item.
+PR #666 added `.github/workflows/verify-pep-proceedings-live.yml` to `main`. The workflow is configured to check both language versions of:
+
+- the institutional-record register;
+- Pink Canary / AEAT / Audiencia Nacional 496/2026;
+- Cuatrecasas ICAM 434/26 → CCACM 193/2026;
+- the new private-actor PEP/influence/PER pages and their actor-register links.
+
+It requires HTTP 200, non-trivial response length and exact content markers, uses cache-busting/retry, and preserves a JSON artifact. The existence of the verifier closes the process-design gap but does **not** itself prove a successful rendered-site response. A future thread must record the successful run/browser read-back when observable; this task is finite and no longer conversation-dependent.
