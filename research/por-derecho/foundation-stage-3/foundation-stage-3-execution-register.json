@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "register_id": "PD-FDN-STAGE3-20260820",
+  "updated": "2026-08-20",
+  "controlling_rule": "PREPARED, SENT, ACCEPTED, COMMISSIONED, COMPLETED, LEGALLY_EFFECTIVE and PUBLICLY_VERIFIED are separate states.",
+  "institution": {
+    "public_name": "Por Derecho",
+    "legal_status": "INITIATIVE_IN_FORMATION",
+    "registered_foundation": false,
+    "patronato_constituted": false,
+    "institutional_pilot_confirmed": false
+  },
+  "workstreams": [
+    {
+      "id": "LEGAL_FORMATION",
+      "title_es": "Constitución jurídica y notarial",
+      "title_en": "Legal and notarial formation",
+      "status": "PREPARED_NOT_SENT",
+      "artifact": "01_FOUNDATION_LEGAL_NOTARIAL_INSTRUCTION_PACK_20AUG2026.md",
+      "external_owner": null,
+      "next_gate": "Written acceptance of a defined legal mandate",
+      "public_claim": "Instruction pack prepared; no lawyer or notary appointed for this mandate"
+    },
+    {
+      "id": "PATRONATO_RECRUITMENT",
+      "title_es": "Selección y aceptación de Patronato independiente",
+      "title_en": "Independent trustee recruitment and acceptance",
+      "status": "ARCHITECTURE_PREPARED_NO_APPOINTMENTS",
+      "artifact": "02_PROSPECTIVE_TRUSTEE_RECRUITMENT_AND_ACCEPTANCE_PACK_20AUG2026.md",
+      "external_owner": null,
+      "next_gate": "Private conflict-cleared exploratory conversations",
+      "public_claim": "No trustee, chair, adviser or council member appointed"
+    },
+    {
+      "id": "SYNTHETIC_RED_TEAM",
+      "title_es": "Revisión independiente sintética",
+      "title_en": "Independent synthetic red-team review",
+      "status": "COMMISSION_PACK_PREPARED_NOT_COMMISSIONED",
+      "artifact": "03_INDEPENDENT_RED_TEAM_COMMISSION_PACK_20AUG2026.md",
+      "external_owner": null,
+      "next_gate": "Frozen Case Prism version and signed conflict-cleared commission",
+      "public_claim": "Independent review not performed; method not externally validated"
+    },
+    {
+      "id": "SAN_BERNARDO_CONSERVATION",
+      "title_es": "Conservación y uso institucional de San Bernardo",
+      "title_en": "San Bernardo conservation and institutional use",
+      "status": "RFP_PREPARED_NO_ACCESS_NO_APPOINTMENT",
+      "artifact": "04_SAN_BERNARDO_CONSERVATION_ARCHITECT_RFP_20AUG2026.md",
+      "external_owner": null,
+      "next_gate": "Counsel-confirmed commissioning authority and written property access permission",
+      "public_claim": "Acquisition incomplete; no architect appointed; no survey authorised"
+    },
+    {
+      "id": "NINETY_DAY_CONTROL",
+      "title_es": "Control de ejecución a 90 días",
+      "title_en": "90-day execution control",
+      "status": "ACTIVE_INTERNAL_CONTROL",
+      "artifact": "05_NINETY_DAY_EXECUTION_CONTROL_REGISTER_20AUG2026.md",
+      "external_owner": null,
+      "next_gate": "Evidence-backed updates against each workstream",
+      "public_claim": "Execution programme prepared; external milestones remain uncompleted"
+    },
+    {
+      "id": "OUTREACH",
+      "title_es": "Invitaciones y encargos",
+      "title_en": "Invitations and commissions",
+      "status": "DRAFTS_PREPARED_NOT_SENT",
+      "artifact": "06_OUTREACH_DRAFTS_AND_SEND_GATES_20AUG2026.md",
+      "external_owner": null,
+      "next_gate": "Recipient verification, classification and explicit send action",
+      "public_claim": "No engagement or institutional support follows from a draft"
+    }
+  ],
+  "method_status": {
+    "case_prism": "INTERNAL_VALIDATION_NOT_DEPLOYED",
+    "independent_review": "NOT_PERFORMED",
+    "dip_79_2026": "EXPERIMENTAL_FOUNDER_RELATED_RESEARCH_APPLICATION",
+    "dip_80_2026": "EXPERIMENTAL_FOUNDER_RELATED_RESEARCH_APPLICATION",
+    "icalpa_endorsement": false,
+    "icalpa_adoption": false
+  },
+  "property_status": {
+    "property": "San Bernardo 27",
+    "acquisition_complete": false,
+    "foundation_owner": false,
+    "access_authorised_by_this_register": false,
+    "architect_appointed": false,
+    "survey_completed": false,
+    "works_authorised": false
+  },
+  "prohibited_public_inferences": [
+    "A prepared legal pack means counsel has accepted the mandate",
+    "A candidate conversation means appointment or endorsement",
+    "A prepared red-team protocol means independent validation",
+    "A public preservation brief means property ownership or access",
+    "An experimental founder-related application means institutional adoption",
+    "A repository merge proves the legal merits of any live matter"
+  ]
+}
