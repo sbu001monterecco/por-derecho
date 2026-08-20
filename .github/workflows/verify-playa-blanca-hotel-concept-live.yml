@@ -14,7 +14,6 @@ on:
 
 permissions:
   contents: read
-  statuses: write
 
 concurrency:
   group: pages-propagation-playa-blanca-concept
@@ -233,25 +232,3 @@ jobs:
           path: artifacts/pages-propagation/playa-blanca-concept-verification.json
           if-no-files-found: warn
           retention-days: 30
-
-      - name: Publish verification commit status
-        if: always()
-        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
-        env:
-          JOB_STATUS: ${{ job.status }}
-          SOURCE_MERGE_SHA: 11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7
-        with:
-          script: |
-            const success = process.env.JOB_STATUS === 'success';
-            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            await github.rest.repos.createCommitStatus({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              sha: process.env.SOURCE_MERGE_SHA,
-              state: success ? 'success' : 'failure',
-              target_url: runUrl,
-              description: success
-                ? 'Bilingual Playa Blanca concept is live on public Pages'
-                : 'Playa Blanca concept propagation was not verified',
-              context: 'pages-propagation/playa-blanca-concept',
-            });
