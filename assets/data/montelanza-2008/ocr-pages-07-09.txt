@@ -1,0 +1,1 @@
+This path will be replaced by the source blob in the controlled tree commit.
