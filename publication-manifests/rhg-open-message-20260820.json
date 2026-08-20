@@ -1,0 +1,67 @@
+{
+  "publication_id": "RHG-OPEN-MESSAGE-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "MERGED_LIVE_VERIFICATION_PENDING",
+  "control_date": "2026-08-20",
+  "source_merge": {
+    "pull_request": 603,
+    "merge_commit": "92cdf1374b7ae98f4b05e83e8644081eaa072d89",
+    "title": "Publish central RHG notice and anonymised open message to a perimeter collaborator"
+  },
+  "expected_routes": {
+    "es": [
+      "es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/index.html"
+    ],
+    "en": [
+      "en/acosta-matos-perimeter/open-message-rhg-collaborator/index.html"
+    ],
+    "assets": [
+      "assets/evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg",
+      "assets/evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg"
+    ],
+    "discovery": [
+      "sitemap-rhg-open-message.xml",
+      "robots.txt"
+    ]
+  },
+  "publication_safety": {
+    "direct_executive_emails_committed": false,
+    "full_confidential_email_committed": false,
+    "unnamed_collaborator_identified": false,
+    "silence_treated_as_admission": false,
+    "legal_person_separation_preserved": true,
+    "professional_firm_statuses_separated": true,
+    "riscpe_portfolio_nexus_treated_as_fraud_finding": false,
+    "right_of_reply_preserved": true
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "validated_head": "7d6373e95d4979268b0d0aec7981008341467a92",
+    "evidence": [
+      "PR #603: Publication integrity gate — success",
+      "PR #603: Validate unitary public shell — success",
+      "PR #603: Public bidder anonymisation gate — success",
+      "PR #603: Validate visual asset identity registry — success",
+      "PR #603: Validate San Telmo rendered attribution — success",
+      "PR #603: Off-GitHub Preservation Snapshot — success"
+    ]
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/",
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/open-message-rhg-collaborator/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-rhg-open-message.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt"
+  ],
+  "live_verification_evidence": {
+    "status": "PENDING",
+    "workflow": ".github/workflows/verify-rhg-open-message-live.yml",
+    "run_id": null,
+    "job_id": null,
+    "artifact_id": null,
+    "artifact_name": "rhg-open-message-live-verification",
+    "verified_at": null,
+    "result": null
+  }
+}
