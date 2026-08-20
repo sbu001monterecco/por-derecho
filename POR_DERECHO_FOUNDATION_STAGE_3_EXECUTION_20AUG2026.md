@@ -21,7 +21,7 @@ It creates:
 8. bilingual public execution routes;
 9. repository and public-edge validation.
 
-## 2. Controlling status at creation
+## 2. Controlling status at completion
 
 - Por Derecho is an initiative in formation.
 - No Foundation is registered.
@@ -35,6 +35,7 @@ It creates:
 - The San Bernardo acquisition is not completed.
 - No conservation architect is appointed.
 - No property access, survey or works are authorised by these documents.
+- Three external-activation emails have been created as Gmail drafts and remain unsent.
 
 ## 3. Source instruments
 
@@ -53,7 +54,7 @@ Files:
 - `foundation-stage-3-execution-register.json`
 - `validate.py`
 
-## 4. Public routes
+## 4. Public routes in the merged repository
 
 Spanish:
 
@@ -64,6 +65,8 @@ English:
 - `/en/por-derecho/institutional-execution/`
 
 The common Por Derecho runtime also inserts a restrained stage-three gateway on the bilingual institutional home and adds the execution route to Por Derecho navigation without modifying Project Sun Rock live-matter pages.
+
+Repository presence and public-edge delivery remain separate facts. The Spanish execution page and its canonical bilingual route were read back from `main` after merge. Independent GitHub Pages HTTP read-back remains controlled by the dedicated read-only workflow and must not be inferred merely from repository presence.
 
 ## 5. Legal-source foundation
 
@@ -104,46 +107,55 @@ The RFP:
 - separates preservation from acquisition diligence, title, valuation, planning, heritage and structural advice;
 - requires conservation, accessibility, fire, privacy and discreet technology to be tested together;
 - allows a professional to recommend less intervention or no intervention;
+- states that the house is not the Foundation;
 - subordinates the institutional programme to safety, fabric and legal constraints.
 
-## 8. Validation architecture
+## 8. PR validation evidence
 
-PR validation:
+The final PR head passed:
 
-- parses and checks both public pages;
-- verifies canonical and reciprocal bilingual routes;
-- checks exact non-registration, non-appointment, non-validation and non-acquisition wording;
-- rejects named-recipient and transaction-sensitive leakage;
-- checks all six source packs;
-- parses the machine-readable status register;
-- verifies common-runtime integration;
-- parses the Foundation sitemap;
-- confirms the stakeholder Palacete page remains `noindex,nofollow,noarchive` and outside the public sitemap;
-- checks Python and JavaScript syntax independently.
+- Por Derecho Foundation stage-three validation;
+- Por Derecho Foundation stage-two validation;
+- publication-integrity gate;
+- unitary public-shell rendering on desktop and mobile;
+- Second Pair applications validation;
+- visual-asset identity validation;
+- off-GitHub preservation snapshot.
 
-Post-merge verification:
+The unitary public-shell run completed 34 route/archetype checks and reported no horizontal overflow across its tested routes.
 
-- polls the public GitHub Pages edge;
-- checks stage-two institutional routes and stage-three execution routes;
-- checks the shared CSS/JavaScript, sitemap and robots registration;
-- remains read-only in accordance with the repository mission-critical permission policy;
-- preserves exact verification evidence in the workflow run and generated JSON report.
+## 9. Outreach state
 
-## 9. Outreach status
+The repository stores controlled email wording and send gates. The following Gmail drafts were created on 20 August 2026 and remain **unsent**:
 
-The repository stores controlled email wording, not a representation that messages were sent. Gmail drafts, where created, remain unsent and should be treated separately from the source pack.
+1. legal/notarial formation instruction to the existing legal contact;
+2. confidential independent-governance critique invitation;
+3. San Bernardo conservation-authority and architect-referral request through the existing buyer-side legal channel.
 
-No message should attach live-case evidence to a Foundation formation or synthetic-review request.
+No live-case dossier or evidence attachment was included. Draft creation does not establish receipt, engagement, acceptance, appointment, endorsement or permission to use any recipient’s name.
+
+Draft identifiers and direct Gmail URLs remain in Gmail rather than the public repository.
 
 ## 10. Merge and public-live fields
 
-To be completed only after the evidence exists:
+- Pull request: `#565 — Activate Por Derecho institutional execution and controlled professional commissions`
+- Final validated head: `dbaaef0b43b18bb098c042db2a83228bfe9b58b5`
+- Merge method: `squash`
+- Merge commit: `1ec79cf4b3dddd77f3f57119372862c40e3ac97a`
+- Merge time: `2026-08-20 08:10:06 UTC`
+- Current `main` immediately after merge: `1ec79cf4b3dddd77f3f57119372862c40e3ac97a`
+- Repository read-back of Spanish execution route: `CONFIRMED_IN_MAIN`
+- Public-edge workflow: `READ_ONLY_VERIFIER_PRESENT`
+- Independent public-edge HTTP result: `PENDING_OBSERVED_RESULT`
 
-- Pull request: `PENDING`
-- Final validated head: `PENDING`
-- Merge commit: `PENDING`
-- Merge time: `PENDING`
-- Public-edge workflow run: `PENDING`
-- Public-edge result: `PENDING`
+The execution package is therefore **repository-complete and merged**. It must not be described as publicly live until the public-edge verifier or an independent HTTP read-back confirms the deployed markers.
 
-The existence of this record does not itself establish any of those milestones.
+## 11. Next evidence gates
+
+The next maturity increase now depends on evidence external to the repository:
+
+1. written acceptance, referral or pause recommendation from the chosen legal coordinator;
+2. private conflict-cleared conversations with prospective independent governance candidates;
+3. a frozen Case Prism version and signed synthetic review commission;
+4. written property-channel authority before any architect approach, access or survey;
+5. accurate public-status updates only after the corresponding documentary milestone.
