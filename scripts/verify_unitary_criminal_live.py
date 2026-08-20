@@ -38,7 +38,7 @@ CHECKS = [
     {
         "path": "en/litigious-credit-retracto-1041-2017/",
         "kind": "pp1041_en",
-        "markers": [MARKER, "A withdrawal was filed in LPB's name"],
+        "markers": [MARKER, "A withdrawal was filed in LPB"],
         "min_bytes": 5000,
     },
     {
@@ -50,7 +50,7 @@ CHECKS = [
     {
         "path": "en/insolvency-administrator-credit-to-title-gatekeeper/",
         "kind": "administrator_gate_en",
-        "markers": [MARKER, "A withdrawal was filed in LPB's name"],
+        "markers": [MARKER, "A withdrawal was filed in LPB"],
         "min_bytes": 5000,
     },
     {
@@ -76,7 +76,7 @@ def fetch(url: str, timeout: int) -> dict[str, Any]:
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Por-Derecho-Unitary-Criminal-Live-Verification/1.0",
+            "User-Agent": "Por-Derecho-Unitary-Criminal-Live-Verification/1.1",
             "Cache-Control": "no-cache, no-store, max-age=0",
             "Pragma": "no-cache",
             "Accept": "text/html,application/xml,text/javascript,*/*;q=0.8",
