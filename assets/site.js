@@ -113,7 +113,8 @@
 
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
-san-telmo-attribution-correction-20260819.js
+jdam-architecture-colegios-20260820.js
+san-telmo-attribution-correction-20260819.js?v=20260819a
 data-san-telmo-attribution-loader
 The executable loader chain for these modules remains in site-pre-intervencion-highlight-20260820.js.
 */
