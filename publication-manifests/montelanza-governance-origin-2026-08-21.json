@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "publication_id": "montelanza-governance-origin-2026-08-21",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-21",
+  "current_state": "DRAFT_SOURCE",
+  "lifecycle_state": "DRAFT_SOURCE",
+  "subject": "Complete Montelanza 2008 account digitisation and bounded reconstruction of the 2008 asset/operating transition, the unresolved 2008-2011 Community/CEXP succession, and the later dependency of CAM's 2017-2018 entry on independently proved authority",
+  "branch": "analysis/montelanza-governance-origin-20260821",
+  "expected_routes": {
+    "es": ["es/montelanza-cuentas-2008/index.html"],
+    "en": ["en/montelanza-accounts-2008/index.html"]
+  },
+  "expected_source_files": [
+    "archive/MONTELANZA_2008_GOVERNANCE_ORIGIN_CRIMINAL_FORENSIC_CONTROL_21AUG2026.md",
+    "archive/MONTELANZA_2008_GOVERNANCE_ORIGIN_RETRIEVAL_GATE_21AUG2026.md",
+    "assets/data/montelanza-2008/manifest.json",
+    "assets/data/montelanza-2008/governance-origin-v1.json",
+    "assets/data/montelanza-2008/ocr-pages-01-06.txt",
+    "assets/data/montelanza-2008/ocr-pages-07-09.txt",
+    "assets/data/montelanza-2008/ocr-pages-10-12.txt",
+    "assets/data/montelanza-2008/ocr-pages-13-15.txt",
+    "assets/data/montelanza-2008/ocr-pages-16-18.txt",
+    "assets/data/montelanza-2008/ocr-pages-19-21.txt",
+    "assets/data/montelanza-2008/ocr-pages-22-24.txt",
+    "assets/data/montelanza-2008/ocr-pages-25-27.txt",
+    "assets/data/montelanza-2008/ocr-pages-28-30.txt",
+    "assets/data/montelanza-2008/ocr-pages-31-33.txt",
+    "assets/data/montelanza-2008/ocr-pages-34-36.txt",
+    "assets/data/montelanza-2008/ocr-pages-37-38.txt",
+    "assets/montelanza-governance-origin-20260821.js",
+    "assets/site.js",
+    "sitemap-montelanza-governance-origin.xml",
+    "scripts/validate_montelanza_governance_origin.py",
+    ".github/workflows/validate-montelanza-governance-origin.yml",
+    ".github/workflows/verify-montelanza-governance-origin-live.yml",
+    "operations/MONTELANZA_GOVERNANCE_ORIGIN_ACTIVATION_2026-08-21.md",
+    "archive/THREAD_DELETION_AUDIT_MONTELANZA_GOVERNANCE_ORIGIN_21AUG2026.md"
+  ],
+  "expected_markers": [
+    "data-montelanza-page=\"20260821\"",
+    "data-montelanza-governance-origin=\"20260821\"",
+    "SOURCE PDF PAGE 38 / 38"
+  ],
+  "source_integrity": {
+    "original_scan_sha256": "f82c41bb6b0985105f31c35d6af09261d5b0820ee0a4049c9510f2ff3e7c5551",
+    "searchable_derivative_sha256": "8bb17c95a0e3f554c72af4507eea83ee6249a49c6681f5d6f480b29995e8e360",
+    "scan_controls_over_ocr": true,
+    "complete_ocr_pages": 38
+  },
+  "public_boundaries": {
+    "criminal_capture_proved": false,
+    "purchaser_identity_proved_by_accounts": false,
+    "community_cexp_succession_proved_by_accounts": false,
+    "historical_ric_equals_later_ricpe": false,
+    "actor_specific_proof_required": true,
+    "strongest_lawful_explanation_visible": true
+  },
+  "repository_state": {
+    "source_branch": "analysis/montelanza-governance-origin-20260821",
+    "source_pr": null,
+    "merge_status": "NOT_MERGED",
+    "live_status": "NOT_CLAIMED"
+  },
+  "open_evidence": [
+    "12-March-2008 option and complete 17-June deeds",
+    "purchaser identity and complete finca schedule",
+    "parallel apartment deeds",
+    "exercise/non-exercise of option over 11 premises",
+    "Montelanza-CEXP contract and owner participation schedule",
+    "15-July-2008 minutes and owner register",
+    "tourism/operator/bank/utilities/insurance/accounting transition",
+    "2010-2012 Community offices, proxies, owner register and debt ledger",
+    "CAM 2017 credit and property chain",
+    "pre-7-June source authentication and property-by-property implementation",
+    "Anticorruption signature cure before merits processing"
+  ]
+}
