@@ -79,7 +79,13 @@ for name in ("es_governance", "en_governance"):
     body = html[name].lower()
     require("borrador" in body or "draft" in body, f"{name}: draft status missing")
     require("no existe todavía fundación registrada" in body or "there is not yet a registered foundation" in body, f"{name}: exact non-registration statement missing")
-    require("no está constituido" in body or "has not yet been constituted" in body or "not constituted" in body, f"{name}: proposed-body boundary missing")
+    require(
+        "no está constituido" in body
+        or "ningún órgano aquí descrito está todavía constituido" in body
+        or "has not yet been constituted" in body
+        or "not constituted" in body,
+        f"{name}: proposed-body boundary missing",
+    )
 
 for name in ("es_research", "en_research"):
     body = html[name].lower()
@@ -87,7 +93,7 @@ for name in ("es_research", "en_research"):
     require("caso prisma" in body or "case prism" in body, f"{name}: Case Prism status missing")
     require("validación interna" in body or "internal validation" in body, f"{name}: internal-validation status missing")
     require("no desplegar" in body or "do not deploy" in body, f"{name}: stop outcome missing")
-    require("no puntuación" in body or "no scoring" in body, f"{name}: person-scoring prohibition missing")
+    require("no puntuación" in body or "sin puntuación" in body or "no scoring" in body, f"{name}: person-scoring prohibition missing")
 
 for name in ("es_origin", "en_origin"):
     body = html[name].lower()
@@ -126,7 +132,11 @@ require("/es/fundacion-por-derecho/palacete-por-derecho/" not in sitemap, "priva
 formation = docs["formation"].lower()
 require("working draft" in formation and "not an executed instrument" in formation, "formation document status boundary missing")
 require("founder-related matter protocol" in formation, "formation document lacks founder-related protocol")
-require("the house is not the foundation" in formation, "formation document lacks property independence")
+require(
+    "the house is not the foundation" in formation
+    or "does not constitute, control or define the institution" in formation,
+    "formation document lacks property independence",
+)
 require("guilt scores" in formation and "credibility scores" in formation, "formation document lacks prohibited output controls")
 
 review = docs["review"].lower()
@@ -145,8 +155,12 @@ require("no action on this list is authorised by this document itself" in preser
 # Runtime integration and corrected maturity ladder.
 require("data-pd-foundation-stage2" in js or "pdFoundationStage2" in js, "home integration marker missing from runtime")
 require("data-pd-maturity-20260820" in js or "pdMaturity20260820" in js, "maturity ladder marker missing from runtime")
+require(
+    "Case Prism is under internal validation" in js
+    or ("Case Prism tests" in js and "Under internal validation; not deployed" in js),
+    "runtime maturity statement missing: Case Prism is under internal validation",
+)
 for marker in (
-    "Case Prism is under internal validation",
     "Caso Prisma prueba",
     "experimental founder-related research applications",
     "aplicaciones experimentales de investigación relacionadas con el fundador",
