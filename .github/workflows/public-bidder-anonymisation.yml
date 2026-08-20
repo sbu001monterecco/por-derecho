@@ -1,4 +1,4 @@
-name: Public bidder anonymisation gate
+name: Public bidder name-only and bid-preservation gate
 
 on:
   pull_request:
@@ -6,30 +6,42 @@ on:
       - 'es/**'
       - 'en/**'
       - 'assets/**'
+      - 'archive/**'
+      - 'docs/**'
+      - 'operations/**'
+      - 'publication-manifests/**'
       - 'index.html'
-      - 'sitemap.xml'
+      - 'sitemap*.xml'
       - 'rss.xml'
       - 'scripts/validate_public_bidder_anonymisation.py'
       - 'scripts/rewrite_public_bidder_anonymisation.py'
       - '.github/workflows/public-bidder-anonymisation.yml'
+      - '.github/workflows/validate-adjudicacion-provenance.yml'
+      - '.github/workflows/verify-adjudicacion-2022-live.yml'
   push:
     branches: [main]
     paths:
       - 'es/**'
       - 'en/**'
       - 'assets/**'
+      - 'archive/**'
+      - 'docs/**'
+      - 'operations/**'
+      - 'publication-manifests/**'
       - 'index.html'
-      - 'sitemap.xml'
+      - 'sitemap*.xml'
       - 'rss.xml'
       - 'scripts/validate_public_bidder_anonymisation.py'
       - 'scripts/rewrite_public_bidder_anonymisation.py'
       - '.github/workflows/public-bidder-anonymisation.yml'
+      - '.github/workflows/validate-adjudicacion-provenance.yml'
+      - '.github/workflows/verify-adjudicacion-2022-live.yml'
 
 permissions:
   contents: read
 
 jobs:
-  anonymisation:
+  name-only-and-preservation:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -37,5 +49,5 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - name: Verify protected bidder identity is absent from public source
+      - name: Verify protected bidder name is absent and the complete bid record is preserved
         run: python scripts/validate_public_bidder_anonymisation.py
