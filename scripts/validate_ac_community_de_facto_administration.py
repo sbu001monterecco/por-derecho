@@ -28,10 +28,12 @@ required = [
     "archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_RETRIEVAL_GATE_20AUG2026.md",
     "archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
     "archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_AC_DE_FACTO_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
     "assets/data/ac-private-actor-de-facto-administration-v1.json",
     "assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json",
     "assets/ac-community-de-facto-administration-20260820.js",
     "assets/ac-de-facto-knowing-facilitation-visibility-20260820.js",
+    "assets/ac-de-facto-knowing-facilitation-stability-20260820.js",
     "es/administracion-de-hecho-comunidad-ac/index.html",
     "en/de-facto-administration-community-ac/index.html",
     "operations/AC_COMMUNITY_DE_FACTO_ADMINISTRATION_ACTIVATION_2026-08-20.md",
@@ -50,6 +52,7 @@ es = read("es/administracion-de-hecho-comunidad-ac/index.html")
 en = read("en/de-facto-administration-community-ac/index.html")
 module = read("assets/ac-community-de-facto-administration-20260820.js")
 visibility = read("assets/ac-de-facto-knowing-facilitation-visibility-20260820.js")
+stability = read("assets/ac-de-facto-knowing-facilitation-stability-20260820.js")
 site = read("assets/site.js")
 robots = read("robots.txt")
 sitemap = read("sitemap-ac-community-de-facto-administration.xml")
@@ -70,7 +73,13 @@ checks = [
     ("data-ac-dfa-route-relevance", visibility, "route-relevance marker"),
     ("data-ac-dfa-route-type", visibility, "route-type marker"),
     ("downstream", visibility, "downstream route boundary"),
+    ("panel.dataset.acDfaUpdate", stability, "base update marker preservation"),
+    ("panel.dataset.acDfaCrosslink", stability, "base crosslink marker preservation"),
+    ("panels.slice(1).forEach(removePanel)", stability, "duplicate-panel removal"),
+    ("data-ac-de-facto-knowing-facilitation-visibility-loader", site, "visibility loader marker"),
     ("ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260820b", site, "visibility loader and cache bump"),
+    ("data-ac-de-facto-knowing-facilitation-stability-loader", site, "stability loader marker"),
+    ("ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260820b", site, "stability loader and cache bump"),
     ("ac-community-de-facto-administration-20260820.js?v=20260820b", site, "base module cache bump"),
     ("sitemap-ac-community-de-facto-administration.xml", robots, "robots sitemap"),
     ("/por-derecho/es/administracion-de-hecho-comunidad-ac/", sitemap, "Spanish sitemap route"),
@@ -110,10 +119,13 @@ if visibility_manifest.get("publication_id") != "AC-DE-FACTO-KNOWING-FACILITATIO
     errors.append("visibility manifest id mismatch")
 if visibility_manifest.get("parent_publication_id") != "AC-COMMUNITY-DE-FACTO-ADMINISTRATION-20260820":
     errors.append("visibility manifest parent mismatch")
+if "assets/ac-de-facto-knowing-facilitation-stability-20260820.js" not in visibility_manifest.get("expected_source_files", []):
+    errors.append("visibility manifest does not track stability guard")
 
-# Public/privacy safety: no raw private source indicators or personal IDs in the new public module/data.
+# Public/privacy safety: no raw private source indicators or personal IDs in the public modules/data.
 for rel, text in [
     ("assets/ac-de-facto-knowing-facilitation-visibility-20260820.js", visibility),
+    ("assets/ac-de-facto-knowing-facilitation-stability-20260820.js", stability),
     ("assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json", read("assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json")),
 ]:
     for forbidden in ["44700629Z", "message_id", "gmail", "privileged advice text"]:
