@@ -15,6 +15,12 @@
   caseArchitecture.setAttribute('data-case-information-architecture-loader', 'true');
   document.head.appendChild(caseArchitecture);
 
+  const unitaryCriminal=document.createElement('script');
+  unitaryCriminal.src=new URL('unitary-criminal-reverse-engineering-20260820.js?v=20260820a',current.src).href;
+  unitaryCriminal.async=false;
+  unitaryCriminal.setAttribute('data-unitary-criminal-loader','unitary-criminal-reverse-engineering-20260820');
+  document.head.appendChild(unitaryCriminal);
+
   // Correct the San Telmo speaker attribution on the bilingual homepages without changing the retained image.
   const attribution = document.createElement('script');
   attribution.src = new URL('san-telmo-attribution-correction-20260819.js?v=20260819a', current.src).href;

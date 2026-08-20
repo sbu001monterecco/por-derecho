@@ -1,0 +1,27 @@
+{
+  "publication_id": "UNITARY-CRIMINAL-REVERSE-ENGINEERING-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "control_date": "2026-08-20",
+  "control_marker": "unitary-criminal-reverse-engineering-20260820",
+  "expected_routes": {
+    "es": [
+      "es/ingenieria-inversa-criminal-unitaria/index.html"
+    ],
+    "en": [
+      "en/unitary-criminal-reverse-engineering/index.html"
+    ]
+  },
+  "publication_safety": {
+    "private_emails_committed": false,
+    "privileged_advice_committed": false,
+    "criminal_guilt_stated_as_final": false,
+    "third_party_bidder_identified": false
+  },
+  "validation": {
+    "status": "PENDING_PR_CI"
+  },
+  "live_verification": {
+    "status": "NOT_YET_MERGED_OR_LIVE_VERIFIED"
+  }
+}
