@@ -6,6 +6,12 @@ on:
       - "research/lender-of-record-liability/**"
       - "en/lender-of-record/liability/**"
       - "es/acreedor-de-registro/responsabilidad/**"
+      - "en/insolvency-administrator-credit-to-title-gatekeeper/**"
+      - "es/administrador-concursal-puerta-credito-titulo/**"
+      - "en/pp1041-withdrawal-authority-authenticity-benefit/**"
+      - "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/**"
+      - "assets/pp1041-withdrawal-authority-correction-20260820.js"
+      - "assets/site.js"
       - "sitemap-lender-liability.xml"
       - "robots.txt"
       - ".github/workflows/validate-lender-liability.yml"
@@ -15,6 +21,12 @@ on:
       - "research/lender-of-record-liability/**"
       - "en/lender-of-record/liability/**"
       - "es/acreedor-de-registro/responsabilidad/**"
+      - "en/insolvency-administrator-credit-to-title-gatekeeper/**"
+      - "es/administrador-concursal-puerta-credito-titulo/**"
+      - "en/pp1041-withdrawal-authority-authenticity-benefit/**"
+      - "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/**"
+      - "assets/pp1041-withdrawal-authority-correction-20260820.js"
+      - "assets/site.js"
       - "sitemap-lender-liability.xml"
       - "robots.txt"
 
@@ -36,8 +48,28 @@ jobs:
         run: |
           test -f en/lender-of-record/liability/index.html
           test -f es/acreedor-de-registro/responsabilidad/index.html
-          grep -q 'hreflang="es"' en/lender-of-record/liability/index.html
-          grep -q 'hreflang="en"' es/acreedor-de-registro/responsabilidad/index.html
-          grep -q '/es/acreedor-de-registro/responsabilidad/' en/lender-of-record/liability/index.html
-          grep -q '/en/lender-of-record/liability/' es/acreedor-de-registro/responsabilidad/index.html
+          test -f en/insolvency-administrator-credit-to-title-gatekeeper/index.html
+          test -f es/administrador-concursal-puerta-credito-titulo/index.html
+          test -f en/pp1041-withdrawal-authority-authenticity-benefit/index.html
+          test -f es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html
+          test -f assets/pp1041-withdrawal-authority-correction-20260820.js
+          grep -q 'hreflang="es"' en/pp1041-withdrawal-authority-authenticity-benefit/index.html
+          grep -q 'hreflang="en"' es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html
+          grep -q '/es/desistimiento-pp1041-autoridad-autenticidad-beneficio/' en/pp1041-withdrawal-authority-authenticity-benefit/index.html
+          grep -q '/en/pp1041-withdrawal-authority-authenticity-benefit/' es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html
           grep -q 'sitemap-lender-liability.xml' robots.txt
+      - name: Enforce the controlled PP1041 formulation
+        run: |
+          grep -q "It is not established that LPB withdrew" en/pp1041-withdrawal-authority-authenticity-benefit/index.html
+          grep -q "No está acreditado que LPB desistiera" es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html
+          grep -q "withdrawal was filed in LPB's name" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
+          grep -q "desistimiento en nombre de LPB" es/administrador-concursal-puerta-credito-titulo/index.html
+          grep -q "Article 51.2" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
+          grep -q "art. 51.2" es/administrador-concursal-puerta-credito-titulo/index.html
+          grep -q "pp1041-withdrawal-authority-correction-20260820.js" assets/site.js
+          ! grep -q "LPB then withdrew" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
+          ! grep -q "The later decree proves that LPB withdrew" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
+          ! grep -q "LPB desistió después" es/administrador-concursal-puerta-credito-titulo/index.html
+          ! grep -q "El Decreto posterior prueba que LPB desistió" es/administrador-concursal-puerta-credito-titulo/index.html
+          grep -q "desistimiento-pp1041-autoridad-autenticidad-beneficio" sitemap-lender-liability.xml
+          grep -q "pp1041-withdrawal-authority-authenticity-benefit" sitemap-lender-liability.xml
