@@ -2,12 +2,12 @@
   {
     "id": "ACT-LPB",
     "name": "Luchy Playa Blanca, S.L.U.",
-    "role": ["debtor", "insolvent_company", "property_holder_historical"],
+    "role": ["debtor", "insolvent_company", "property_holder_historical", "named_party_in_PP1041"],
     "relevant_period": {"from": "2008", "to": null},
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"],
-    "open_questions": ["Exact asset and liability perimeter at each transfer date."]
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-03-05-PP1041-WITHDRAWAL-DECREE"],
+    "open_questions": ["Exact asset and liability perimeter at each transfer date.", "Whether any authentic LPB decision or instruction authorised the PP 1041 withdrawal filing."]
   },
   {
     "id": "ACT-ORIGINATING-LENDER",
@@ -72,12 +72,12 @@
   {
     "id": "ACT-CAM",
     "name": "Construcciones Acosta Matos, S.A.",
-    "role": ["assignee", "secured_creditor", "later_title_actor", "segregating_company"],
+    "role": ["assignee", "secured_creditor", "party_in_PP1041", "later_title_actor", "segregating_company"],
     "relevant_period": {"from": "2017-10-20", "to": null},
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION", "SRC-CAM-2018-01-DACION-PROPOSAL", "SRC-BORME-2022-CAM-HNT-SEGREGATION"],
-    "open_questions": ["Complete transfer economics and due diligence.", "Actor-specific conduct after notice.", "Liabilities retained after segregation."]
+    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-01-12-PP1041-DISCLOSURE-ORDER", "SRC-CAM-2018-01-25-PP1041-OPPOSITION", "SRC-COURT-2018-03-05-PP1041-WITHDRAWAL-DECREE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION", "SRC-CAM-2018-01-DACION-PROPOSAL", "SRC-BORME-2022-CAM-HNT-SEGREGATION"],
+    "open_questions": ["Complete transfer economics and due diligence.", "Actor-specific conduct after notice.", "Identity of persons who instructed or benefited from PP 1041 opposition and withdrawal.", "Liabilities retained after segregation."]
   },
   {
     "id": "ACT-HNT",
@@ -91,12 +91,42 @@
   },
   {
     "id": "ACT-INSOLVENCY-ADMIN",
-    "name": "Insolvency administration in Concurso 36/2012",
-    "role": ["insolvency_administration", "credit_verification_actor", "estate_interest_gatekeeper"],
+    "name": "Francisco de Borja Rodríguez-Batllori Laffitte / Insolvency Administration in Concurso 36/2012",
+    "role": ["insolvency_administration", "credit_verification_actor", "estate_interest_gatekeeper", "LPB_representation_controller", "lawyer_identified_for_LPB_in_PP1041_decree"],
     "relevant_period": {"from": "2012", "to": null},
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
-    "open_questions": ["Documents reviewed before favourable reports.", "Estate-interest analysis for information, assignment, valuation and disposition decisions."]
+    "source_refs": ["SRC-AC-2018-01-25-COUNSEL-CONTROL", "SRC-AC-2018-01-29-REPRESENTATION-CONTROL", "SRC-COURT-2018-03-05-PP1041-WITHDRAWAL-DECREE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION", "SRC-COMPLAINT-2026-06-18-AC"],
+    "open_questions": ["Who instructed, drafted, signed and filed the PP 1041 withdrawal in LPB's name.", "Whether an Article 51.2 insolvency-court authorisation and LPB hearing exist.", "Documents reviewed before favourable reports.", "Estate-interest, conflict and independence analysis for information, assignment, valuation, disposition and withdrawal decisions.", "Por Derecho alleges de facto functional agency for CAM/Acosta Matos; this remains contested and requires actor-specific proof."]
+  },
+  {
+    "id": "ACT-CRISTO",
+    "name": "Cristo Suárez Pimentel",
+    "role": ["LPB_lawyer_in_PP1041_before_25_January_2018", "lawyer_who_obtained_disclosure_order"],
+    "relevant_period": {"from": "2017", "to": "2018-01-25"},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COURT-2018-01-12-PP1041-DISCLOSURE-ORDER", "SRC-AC-2018-01-25-COUNSEL-CONTROL"],
+    "open_questions": ["Complete filing and instruction file.", "Whether he drafted, signed or filed any withdrawal; current sources do not establish that he did."]
+  },
+  {
+    "id": "ACT-JDAM",
+    "name": "José Daniel Acosta Matos",
+    "role": ["CAM_perimeter_person", "decision_or_benefit_role_to_reconstruct"],
+    "relevant_period": {"from": "2017", "to": null},
+    "evidence_status": "contested",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COMPLAINT-2026-06-18-AC"],
+    "open_questions": ["Office and authority at the relevant dates.", "Knowledge, instruction, communication, ratification and benefit concerning PP 1041 and the later credit-to-title route.", "No personal criminal or civil conclusion is established by the complaint alone."]
+  },
+  {
+    "id": "ACT-LPAM",
+    "name": "Laura Patricia Acosta Matos",
+    "role": ["CAM_perimeter_person", "decision_or_benefit_role_to_reconstruct"],
+    "relevant_period": {"from": "2017", "to": null},
+    "evidence_status": "contested",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COMPLAINT-2026-06-18-AC"],
+    "open_questions": ["Office and authority at the relevant dates.", "Knowledge, instruction, communication, ratification and benefit concerning PP 1041 and the later credit-to-title route.", "No personal criminal or civil conclusion is established by the complaint alone."]
   }
 ]
