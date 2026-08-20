@@ -11,14 +11,28 @@ const canonicalRoutes = [
   {
     key: 'es-canonical',
     route: '/es/adjudicacion-2022-reconstruccion-documental/',
-    marker: 'Control de versiones y uso previo',
-    row: 'Versiones y uso previo',
+    marker: 'Control de versiones, fuentes y uso previo',
+    row: 'Jerarquía de fuentes y competencia',
+    required: [
+      'La cuestión central ya no es un recálculo de intereses',
+      '13.168.082,02',
+      'tercer oferente',
+      '14,8 M€',
+      'Reconstrucciones posteriores',
+    ],
   },
   {
     key: 'en-canonical',
     route: '/en/2022-adjudication-documentary-reconstruction/',
-    marker: 'Version control and prior use',
-    row: 'Draft versions and prior use',
+    marker: 'Version, source and prior-use control',
+    row: 'Source hierarchy and competition',
+    required: [
+      'The central issue is no longer a recalculation of interest',
+      '13,168,082.02',
+      'third-party bidder',
+      '14.8m',
+      'later party reconstructions',
+    ],
   },
 ];
 
@@ -51,15 +65,18 @@ async function open(route) {
 try {
   for (const item of canonicalRoutes) {
     const { page, url } = await open(item.route);
-    await page.waitForSelector('#adjudicacion-version-control[data-live-marker="adjudicacion-version-control-20260819"]', { timeout: 15000 });
+    await page.waitForSelector('#adjudicacion-version-control[data-live-marker="adjudicacion-version-control-20260820"]', { timeout: 15000 });
     await page.waitForSelector('tr[data-adjudicacion-prior-use-row="true"]', { timeout: 15000 });
-    const text = await page.locator('#adjudicacion-version-control').innerText();
+    const panelText = await page.locator('#adjudicacion-version-control').innerText();
     const rowText = await page.locator('tr[data-adjudicacion-prior-use-row="true"]').innerText();
-    const passed = text.includes(item.marker)
-      && text.includes('19')
-      && rowText.includes(item.row);
-    results.push({ key: item.key, url, passed, marker: item.marker, row: item.row });
-    if (!passed) throw new Error(`Canonical provenance assertions failed for ${url}`);
+    const bodyText = await page.locator('main').innerText();
+    const missing = item.required.filter(fragment => !bodyText.includes(fragment));
+    const passed = panelText.includes(item.marker)
+      && panelText.includes('20')
+      && rowText.includes(item.row)
+      && missing.length === 0;
+    results.push({ key: item.key, url, passed, marker: item.marker, row: item.row, missing });
+    if (!passed) throw new Error(`Canonical provenance assertions failed for ${url}; missing=${missing.join(', ')}`);
     await page.screenshot({ path: path.join(outputDir, `${item.key}.png`), fullPage: true });
     await page.close();
   }
@@ -67,7 +84,7 @@ try {
   for (const [route, expectedHref] of crossLinkRoutes) {
     const key = route.replace(/^\//, '').replace(/\/$/, '').replaceAll('/', '--');
     const { page, url } = await open(route);
-    await page.waitForSelector('[data-adjudicacion-crosslink][data-live-marker="adjudicacion-crosslink-20260819"]', { timeout: 15000 });
+    await page.waitForSelector('[data-adjudicacion-crosslink][data-live-marker="adjudicacion-crosslink-20260820"]', { timeout: 15000 });
     const href = await page.locator('[data-adjudicacion-crosslink] a').first().getAttribute('href');
     const text = await page.locator('[data-adjudicacion-crosslink]').innerText();
     const passed = href === expectedHref
