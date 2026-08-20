@@ -1,9 +1,13 @@
 {
   "publication_id": "playa-blanca-hotel-services-concept-20260820",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "owner": "Gil Marer / Project Sun Rock",
-  "pr_number": 610,
+  "control_date": "2026-08-20",
+  "controlling_pr": 610,
   "pr_url": "https://github.com/sbu001monterecco/por-derecho/pull/610",
+  "ci_head_sha": "25647ea46841a1aad7692a5fec8e4f3ba0c819f2",
+  "merge_sha": "11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7",
+  "merged_at": "2026-08-20T15:58:07Z",
   "expected_routes": {
     "en": [
       "en/playa-blanca-hotel-services-concept/index.html"
@@ -21,13 +25,37 @@
     "assets/playa-blanca-oasis-poster.svg",
     "assets/playa-blanca-location-diagram.svg",
     "assets/playa-blanca-programme-section.svg",
-    "assets/site.js"
+    "assets/site.js",
+    "deployment-probes/playa-blanca-hotel-concept-20260820.json",
+    ".github/workflows/verify-playa-blanca-hotel-concept-live.yml"
+  ],
+  "controlling_propositions": [
+    "The public concept is 100% hotel and non-residential.",
+    "The exact private site, parcel, sellers, ownership and transaction perimeter are not published.",
+    "The Sun Park/MYND Yaiza recovery record is linked as a separate record and a confidence-in-place narrative, not as compensation or a replacement-asset representation.",
+    "Supercor Exprés or Supercor is identified only as a preferred food-anchor study; no affiliation, negotiation or commitment is represented.",
+    "No site control, planning entitlement, building licence, operator appointment, development finance or public-authority awareness or endorsement is represented.",
+    "The destination-poster visuals are original illustrative communication studies, not survey-verified photomontages or approved architecture."
   ],
   "publication_boundary": "Public concept only; the exact private site, parcel, sellers, ownership, transaction terms and any authority engagement are not represented.",
+  "validation": {
+    "evidence": [
+      "PR 610 final head 25647ea46841a1aad7692a5fec8e4f3ba0c819f2 passed the publication-integrity gate, visual-asset identity validation, unitary public-shell validation, adjudication-provenance validation, criminal-engineering/case-information validation, AC Community validation, bidder anonymisation control, San Telmo attribution control and off-GitHub preservation.",
+      "PR 610 was synchronised with then-current main before merge and contained 12 intended changed files with no deletions.",
+      "PR 610 merged by squash to main as 11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7 at 2026-08-20T15:58:07Z."
+    ],
+    "bilingual_route_parity": "PASS",
+    "source_presence": "PASS",
+    "privacy_and_transaction_boundary": "PASS",
+    "publication_integrity": "PASS",
+    "visual_asset_identity": "PASS",
+    "repository_merge": "PASS",
+    "public_edge": "PENDING DEDICATED LIVE VERIFICATION"
+  },
   "review_notes": [
     "No site control, owner endorsement, operator commitment or public-authority awareness is represented.",
-    "The Sun Park/MYND Yaiza recovery record is linked only as a separate record and a confidence-in-place narrative.",
-    "Supercor Exprés/Supercor is identified only as a preferred target study; no affiliation or commitment is represented.",
-    "The concept visuals are original illustrative communication studies, not survey-verified or approved architectural material."
+    "The Sun Park/MYND Yaiza recovery record remains factually and legally separate.",
+    "The supermarket references remain target studies only.",
+    "The public page uses Playa Blanca and Yaiza but does not identify Montaña Roja, AB3, Lanzarosol, Grenwich, Rodrigo, the sellers, price or transaction terms."
   ]
 }

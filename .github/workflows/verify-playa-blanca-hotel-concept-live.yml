@@ -1,0 +1,234 @@
+name: Verify public Pages propagation — Playa Blanca hotel concept
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'deployment-probes/playa-blanca-hotel-concept-20260820.json'
+      - '.github/workflows/verify-playa-blanca-hotel-concept-live.yml'
+      - 'en/playa-blanca-hotel-services-concept/**'
+      - 'es/playa-blanca-concepto-hotel-servicios/**'
+      - 'assets/playa-blanca-*'
+      - 'assets/site.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-propagation-playa-blanca-concept
+  cancel-in-progress: false
+
+jobs:
+  verify-live-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Verify workflow commit descends from the concept merge
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          MINIMUM_COMMIT: 11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7
+        with:
+          script: |
+            const minimum = process.env.MINIMUM_COMMIT;
+            const basehead = `${minimum}...${context.sha}`;
+            const { data } = await github.request('GET /repos/{owner}/{repo}/compare/{basehead}', {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              basehead,
+            });
+            const mergeBase = data.merge_base_commit?.sha;
+            const validStatus = data.status === 'ahead' || data.status === 'identical';
+            if (!validStatus || mergeBase !== minimum) {
+              core.setFailed(`Workflow commit ${context.sha} is not a descendant of ${minimum}; status=${data.status}; merge_base=${mergeBase}`);
+              return;
+            }
+            core.info(`Workflow commit ${context.sha} is ${data.ahead_by} commit(s) ahead of ${minimum}; merge base confirmed.`);
+
+      - name: Poll the public GitHub Pages host for the bilingual concept
+        env:
+          BASE_URL: https://sbu001monterecco.github.io/por-derecho/
+        run: |
+          python3 - <<'PY'
+          from __future__ import annotations
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          base_url = os.environ['BASE_URL']
+          attempts = 72
+          interval = 10
+          timeout = 20
+          checks = [
+              {
+                  'kind': 'deployment_probe',
+                  'path': 'deployment-probes/playa-blanca-hotel-concept-20260820.json',
+                  'markers': [
+                      'psr-pages-playa-blanca-hotel-concept-20260820-v1',
+                      '11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7',
+                  ],
+              },
+              {
+                  'kind': 'english_concept_page',
+                  'path': 'en/playa-blanca-hotel-services-concept/',
+                  'markers': [
+                      'A new hotel and local-services concept for a place we continue to believe in.',
+                      'Our confidence in Playa Blanca was not taken with it.',
+                      'Supercor Exprés or Supercor-format',
+                      'No awareness, dialogue, support, approval or outcome concerning this concept is represented.',
+                  ],
+              },
+              {
+                  'kind': 'spanish_concept_page',
+                  'path': 'es/playa-blanca-concepto-hotel-servicios/',
+                  'markers': [
+                      'Un nuevo concepto hotelero y de servicios locales para un lugar en el que seguimos creyendo.',
+                      'Nuestra confianza en Playa Blanca sigue intacta.',
+                      'Supercor Exprés o Supercor',
+                      'No se representa conocimiento, diálogo, apoyo, aprobación ni resultado alguno sobre este concepto.',
+                  ],
+              },
+              {
+                  'kind': 'homepage_feature_asset',
+                  'path': 'assets/playa-blanca-concept-home-20260820.js',
+                  'markers': [
+                      'pb-home-feature',
+                      '/por-derecho/en/playa-blanca-hotel-services-concept/',
+                      '/por-derecho/es/playa-blanca-concepto-hotel-servicios/',
+                      'Recovery and reinvestment can proceed in parallel.',
+                  ],
+              },
+              {
+                  'kind': 'site_loader',
+                  'path': 'assets/site.js',
+                  'markers': [
+                      'playa-blanca-concept-home-20260820.js',
+                      'data-playa-blanca-concept-loader',
+                  ],
+              },
+              {
+                  'kind': 'concept_styles',
+                  'path': 'assets/playa-blanca-concept.css',
+                  'markers': ['.pb-home-feature', '.pb-confidence-quote', '.pb-status-table'],
+              },
+              {
+                  'kind': 'hero_poster',
+                  'path': 'assets/playa-blanca-return-poster.svg',
+                  'markers': ['PLAYA BLANCA', 'A NEW HOTEL DESTINATION', 'HOTEL &amp; LOCAL SERVICES CONCEPT'],
+              },
+          ]
+
+          def now():
+              return dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00', 'Z')
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={
+                  'User-Agent': 'Por-Derecho-Playa-Blanca-Pages-Check/1.0',
+                  'Cache-Control': 'no-cache, no-store, max-age=0',
+                  'Pragma': 'no-cache',
+                  'Accept': 'text/html,application/json,text/javascript,image/svg+xml,*/*;q=0.8',
+              })
+              with urllib.request.urlopen(req, timeout=timeout) as response:
+                  body = response.read()
+                  return response.status, response.geturl(), response.headers, body.decode('utf-8', errors='replace'), hashlib.sha256(body).hexdigest(), len(body)
+
+          output = Path('artifacts/pages-propagation/playa-blanca-concept-verification.json')
+          output.parent.mkdir(parents=True, exist_ok=True)
+          started = now()
+          final = []
+
+          for attempt in range(1, attempts + 1):
+              final = []
+              all_ok = True
+              nonce = f'{int(time.time())}-{attempt}'
+              for item in checks:
+                  url = urllib.parse.urljoin(base_url, item['path'])
+                  checked = f'{url}?psr_playa_blanca_probe={nonce}'
+                  record = {
+                      'kind': item['kind'],
+                      'path': item['path'],
+                      'url': url,
+                      'checked_url': checked,
+                      'required_markers': item['markers'],
+                      'checked_at': now(),
+                  }
+                  try:
+                      status, final_url, headers, text, sha256, size = fetch(checked)
+                      missing = [marker for marker in item['markers'] if marker not in text]
+                      record.update({
+                          'status': status,
+                          'final_url': final_url,
+                          'bytes': size,
+                          'sha256': sha256,
+                          'etag': headers.get('ETag'),
+                          'last_modified': headers.get('Last-Modified'),
+                          'x_github_request_id': headers.get('X-GitHub-Request-Id'),
+                          'missing_markers': missing,
+                          'ok': status == 200 and not missing,
+                      })
+                  except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
+                      record.update({'ok': False, 'error': f'{type(exc).__name__}: {exc}'})
+                  if not record['ok']:
+                      all_ok = False
+                  final.append(record)
+              summary = ', '.join(f"{item['kind']}={'OK' if item['ok'] else 'WAIT'}" for item in final)
+              print(f'Attempt {attempt}/{attempts}: {summary}', flush=True)
+              if all_ok:
+                  payload = {
+                      'verified': True,
+                      'source_merge_sha': '11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7',
+                      'workflow_commit': os.environ.get('GITHUB_SHA'),
+                      'repository': os.environ.get('GITHUB_REPOSITORY'),
+                      'workflow_run_id': os.environ.get('GITHUB_RUN_ID'),
+                      'base_url': base_url,
+                      'started_at': started,
+                      'verified_at': now(),
+                      'attempt': attempt,
+                      'checks': final,
+                  }
+                  output.write_text(json.dumps(payload, indent=2), encoding='utf-8')
+                  print('PUBLIC GITHUB PAGES PROPAGATION VERIFIED: PLAYA BLANCA CONCEPT LIVE', flush=True)
+                  raise SystemExit(0)
+              if attempt < attempts:
+                  time.sleep(interval)
+
+          output.write_text(json.dumps({
+              'verified': False,
+              'source_merge_sha': '11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7',
+              'workflow_commit': os.environ.get('GITHUB_SHA'),
+              'repository': os.environ.get('GITHUB_REPOSITORY'),
+              'workflow_run_id': os.environ.get('GITHUB_RUN_ID'),
+              'base_url': base_url,
+              'started_at': started,
+              'failed_at': now(),
+              'attempts': attempts,
+              'checks': final,
+          }, indent=2), encoding='utf-8')
+          raise SystemExit('Public Pages propagation was not verified within the polling window')
+          PY
+
+      - name: Show verification evidence
+        if: always()
+        run: |
+          if [ -f artifacts/pages-propagation/playa-blanca-concept-verification.json ]; then
+            cat artifacts/pages-propagation/playa-blanca-concept-verification.json
+          fi
+
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: playa-blanca-concept-public-pages-evidence
+          path: artifacts/pages-propagation/playa-blanca-concept-verification.json
+          if-no-files-found: warn
+          retention-days: 30
