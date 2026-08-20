@@ -41,6 +41,7 @@ ALLOWED_WRITE = {
     "verify-por-derecho-foundation-stage-3-live.yml": {"statuses"},
     "verify-por-derecho-seller-readiness-live.yml": {"statuses"},
     "verify-ac-community-de-facto-administration-live.yml": {"statuses"},
+    "verify-eleconomista-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
     "repository-backup-bundle.yml": {"statuses"},
 }
@@ -121,7 +122,7 @@ def validate_operational_files(errors: list[str]) -> None:
         else:
             if lkg.get("state") != "LIVE_VERIFIED":
                 error("ops/LAST_KNOWN_GOOD.json must describe a LIVE_VERIFIED release", errors)
-            if not re.fullmatch(r"[0-9a-f]{40}", str(lkg.get("source_sha", ""))):
+            if not re.fullmatch(r"[0-9a-fA-F]{40}", str(lkg.get("source_sha", ""))):
                 error("ops/LAST_KNOWN_GOOD.json source_sha must be a 40-char SHA", errors)
 
     critical = ROOT / "ops" / "CRITICAL_PATHS.txt"
