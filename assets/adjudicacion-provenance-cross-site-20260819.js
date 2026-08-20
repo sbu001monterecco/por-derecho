@@ -57,7 +57,7 @@
         'The 25 January 2021 order explains the move from EUR 3,079,104.66 in default interest to the EUR 3,182,000 mortgage cap through later daily accrual.',
         'The 29 January 2021 notice separates EUR 13,168,082.02 in mortgage components, EUR 400,000 for non-mortgaged assets and EUR 1,145,798.29 in community fees.',
         'Deed no. 457 dated 21 February 2022 verifies EUR 13,168,082.02 as debt serving as consideration for the dación of the mortgaged properties.',
-        'A documented EUR 14.8m proposal by a third-party bidder exists; only the bidder\'s name is anonymised in the public record and the bid and its context remain visible.'
+        "A documented EUR 14.8m proposal by a third-party bidder exists; only the bidder's name is anonymised in the public record and the bid and its context remain visible."
       ],
       notEstablishedTitle: 'What those sources do not yet establish',
       notEstablished: [
