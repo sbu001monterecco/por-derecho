@@ -1,0 +1,126 @@
+name: Verify Playa Blanca concept live status
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-playa-blanca-hotel-concept-status.yml'
+      - 'en/playa-blanca-hotel-services-concept/**'
+      - 'es/playa-blanca-concepto-hotel-servicios/**'
+      - 'assets/playa-blanca-*'
+      - 'assets/site.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: playa-blanca-concept-live-status
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Poll public Pages routes and source assets
+        run: |
+          python3 - <<'PY'
+          import time
+          import urllib.parse
+          import urllib.request
+
+          base = 'https://sbu001monterecco.github.io/por-derecho/'
+          checks = {
+              'en/playa-blanca-hotel-services-concept/': [
+                  'A new hotel and local-services concept for a place we continue to believe in.',
+                  'Our confidence in Playa Blanca was not taken with it.',
+                  'Supercor Exprés or Supercor-format',
+                  'No awareness, dialogue, support, approval or outcome concerning this concept is represented.',
+              ],
+              'es/playa-blanca-concepto-hotel-servicios/': [
+                  'Un nuevo concepto hotelero y de servicios locales para un lugar en el que seguimos creyendo.',
+                  'Nuestra confianza en Playa Blanca sigue intacta.',
+                  'Supercor Exprés o Supercor',
+                  'No se representa conocimiento, diálogo, apoyo, aprobación ni resultado alguno sobre este concepto.',
+              ],
+              'assets/playa-blanca-concept-home-20260820.js': [
+                  'pb-home-feature',
+                  'Recovery and reinvestment can proceed in parallel.',
+                  'Recuperación y reinversión pueden avanzar en paralelo.',
+              ],
+              'assets/site.js': [
+                  'playa-blanca-concept-home-20260820.js',
+                  'data-playa-blanca-concept-loader',
+              ],
+              'assets/playa-blanca-return-poster.svg': [
+                  'PLAYA BLANCA',
+                  'A NEW HOTEL DESTINATION',
+              ],
+          }
+
+          def fetch(path, nonce):
+              url = urllib.parse.urljoin(base, path)
+              sep = '&' if '?' in url else '?'
+              req = urllib.request.Request(
+                  f'{url}{sep}pb_live_status={nonce}',
+                  headers={
+                      'User-Agent': 'Por-Derecho-Playa-Blanca-Live-Status/1.0',
+                      'Cache-Control': 'no-cache, no-store, max-age=0',
+                      'Pragma': 'no-cache',
+                  },
+              )
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  text = response.read().decode('utf-8', errors='replace')
+                  return response.status, text
+
+          for attempt in range(1, 73):
+              failed = []
+              nonce = f'{int(time.time())}-{attempt}'
+              for path, markers in checks.items():
+                  try:
+                      status, text = fetch(path, nonce)
+                      missing = [m for m in markers if m not in text]
+                      if status != 200 or missing:
+                          failed.append((path, status, missing))
+                  except Exception as exc:
+                      failed.append((path, 'ERR', [repr(exc)]))
+              if not failed:
+                  print(f'LIVE VERIFIED on attempt {attempt}: all bilingual routes and source assets returned expected markers')
+                  raise SystemExit(0)
+              print(f'Attempt {attempt}/72 waiting for Pages propagation: {failed}', flush=True)
+              if attempt < 72:
+                  time.sleep(10)
+          raise SystemExit('Playa Blanca concept live verification failed within polling window')
+          PY
+
+      - name: Publish success status on controlling concept merge
+        if: success()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: '11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7',
+              state: 'success',
+              context: 'pages-propagation/playa-blanca-concept',
+              description: 'Bilingual concept pages and homepage assets live-verified',
+              target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            });
+
+      - name: Publish failure status on controlling concept merge
+        if: failure()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: '11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7',
+              state: 'failure',
+              context: 'pages-propagation/playa-blanca-concept',
+              description: 'Public Pages propagation not verified in polling window',
+              target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            });
