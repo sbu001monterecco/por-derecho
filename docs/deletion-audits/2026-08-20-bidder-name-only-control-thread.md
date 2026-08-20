@@ -2,15 +2,16 @@
 
 **Audit date:** 20 August 2026  
 **Repository:** `sbu001monterecco/por-derecho`  
-**Baseline audited:** `main` at `27aa30b462590b553118612ed7c15cb061109d89`  
+**Current base audited:** `main` at `2599fa333b501b8a5ffdf7c7e16784df352f816a`  
 **Implementation branch:** `chore/bidder-name-only-control-2026-08-20`  
-**Thread-deletion verdict:** `SAFE WITH REMOTE BRANCH PRESERVED — PUBLICATION/CI STILL PENDING`
+**Pull request:** [#612 — Enforce bidder name-only anonymisation and preserve complete bid record](https://github.com/sbu001monterecco/por-derecho/pull/612)  
+**Current thread-deletion verdict:** `NOT YET SAFE — FINAL MERGE, LIVE READ-BACK AND EMAIL CUSTODY REQUIRED`
 
 ## 1. Scope of this thread
 
-This thread did not introduce a new evidential document. Its unique work product was a governance and implementation correction to the existing public treatment of the documented third-party proposal dated 8 February 2021.
+This thread did not introduce a new underlying court, notarial, banking, Registry or transactional source. Its unique work product is a governance and implementation correction to the public treatment of the documented third-party proposal dated 8 February 2021.
 
-The controlling instruction is now preserved outside ChatGPT:
+The controlling instruction is preserved outside ChatGPT:
 
 > **Only the third-party bidder’s name is anonymised. The bid, its amount, date, perimeter, terms, procedural treatment and every related fact and document remain fully visible. No other information falls within the anonymisation scope, even where it may indirectly assist in identifying the bidder.**
 
@@ -20,9 +21,9 @@ Spanish controlling formulation:
 
 ## 2. Durable implementation preserved in GitHub
 
-Before this deletion-audit record was added, the branch was exactly 18 commits ahead of the audited `main` baseline, zero commits behind, and contained 11 permanent changed files. Temporary one-time migration files had been removed and therefore did not appear in the net diff.
+The implementation is preserved on the remote branch and in PR #612. The PR is mergeable against the current `main`; the five commits added to `main` after the branch was created affect separate files and are retained by the synthetic merge result.
 
-Permanent implementation files:
+Permanent implementation and control files:
 
 1. `.github/workflows/public-bidder-anonymisation.yml`
 2. `.github/workflows/validate-adjudicacion-provenance.yml`
@@ -35,14 +36,17 @@ Permanent implementation files:
 9. `en/corrections-version-control/index.html`
 10. `scripts/rewrite_public_bidder_anonymisation.py`
 11. `scripts/validate_public_bidder_anonymisation.py`
+12. `publication-manifests/bidder-name-only-control-20260820.json`
+13. `docs/deletion-audits/2026-08-20-bidder-name-only-control-thread.md`
+14. `docs/deletion-audits/README.md`
 
-The implementation is held on a remote GitHub branch and is therefore independent of this ChatGPT thread.
+Temporary one-time migration machinery was removed before PR publication and does not appear in the net changed-file set.
 
 ## 3. Bid-preservation matrix
 
-| Matter | Required state | Branch state |
+| Matter | Required state | PR #612 state |
 |---|---|---|
-| Bidder name | Replaced by a neutral label only | Preserved as `tercer oferente` / `third-party bidder` |
+| Bidder name | Neutral public label only | Preserved as `tercer oferente` / `third-party bidder` |
 | Proposal existence | Specific and searchable | Preserved |
 | Proposal date | 8 February 2021 / 08/02/2021 | Preserved |
 | Proposal amount | EUR 14.8m / 14,8 M€ | Preserved |
@@ -59,15 +63,17 @@ The implementation is held on a remote GitHub branch and is therefore independen
 | Downstream chain | Court, mandamiento, Registry, cancellations, accounting and final accounts | Preserved as open controls |
 | Evidential limits | No automatic admission, funding, entitlement, wrongful exclusion or wrongdoing conclusion | Preserved |
 
-## 4. Technical controls now preserved
+## 4. Technical controls preserved
 
-### Name-absence gate
+### Public name-absence gate
 
-The protected name remains represented by a one-way SHA-256 digest. The validator scans the current repository text tree, relevant paths and any supplied public URLs. The protected name is not placed in plaintext in the validator, workflow, report or test fixture.
+The protected name is represented by a one-way SHA-256 digest. The validator scans only actual public website surfaces: the `es/`, `en/` and `assets/` trees, selected root publication files and explicitly supplied public URLs.
 
-### Bid-preservation gate
+The gate deliberately excludes private/archive, research, prompt and evidence-custody files. Those systems may retain the original legal name and native source references for evidential retrieval. The public anonymisation control must not destroy private evidence.
 
-The validator independently requires positive bilingual markers for:
+### Positive bid-preservation gate
+
+The validator independently requires bilingual markers for:
 
 - date and amount;
 - identified perimeter;
@@ -84,56 +90,51 @@ Deletion or material generalisation of a required bid fact is therefore intended
 
 ### Rewrite boundary
 
-The rewrite utility is explicitly a name-token substitution tool. It is not a paragraph, sentence, event or evidential-content redaction tool. It preserves line structure and surrounding content except for the protected token and a strictly necessary grammatical substitution.
+The rewrite utility is a protected-name-token substitution tool. It is not a paragraph, sentence, event or evidential-content redaction tool. It preserves the surrounding bid record and line structure.
 
-## 5. Audit actually performed
+### History boundary
 
-The following checks were completed against the remote branch:
+This work does not claim that the protected name has been removed from historical Git objects, old commit messages, closed PR metadata, tags or releases. No destructive Git-history rewrite has been authorised. Current public source and deployed public pages are the operative anonymisation boundary.
 
-- current `main` baseline was re-established before implementation;
-- the final implementation branch was compared against that exact baseline;
-- the net implementation diff contained only the 11 permanent files listed above;
-- no one-time migration script or one-time migration workflow remained in the net diff;
-- both canonical pages were read back from the branch and checked for the date, amount, perimeter, comparison figure, procedural questions, deed, separate EUR 400,000 line, court-notification and downstream controls;
-- both corrections registers were checked for the express statement that only the bidder’s name remains anonymised and the bid remains visible;
-- the shared bilingual JavaScript module was checked for the same rule and corrected so its raw-source marker is searchable without an escaped-apostrophe mismatch;
-- the validator was checked to prevent self-matching of its own superseded-wording definitions;
-- workflow labels and live-source markers were aligned with name-only anonymisation and bid preservation.
+## 5. PR and validation history
 
-## 6. Validation boundary
+PR #612 was opened as a draft against `main` and was confirmed mergeable.
 
-No pull request was opened and nothing was merged to `main`, because branch push, pull-request creation and merge are separate publication actions. Therefore:
+The initial PR checks correctly exposed two configuration defects rather than a substantive loss of the bid record:
 
-- full pull-request CI has **not** run;
-- the updated full-tree gate has **not** produced a GitHub Actions result for this branch;
-- GitHub Pages has **not** deployed these branch changes;
-- no live public read-back can yet be claimed;
-- no historical Git-object, commit-message, pull-request-metadata, tag or release clearance is claimed;
-- no destructive Git-history rewrite is authorised.
+1. the first version of the validator scanned private archival evidence, where the original legal name must remain recoverable; and
+2. the new publication manifest used a non-standard state and omitted `expected_routes`.
 
-These are activation and history-audit boundaries, not missing thread content.
+Those defects were corrected on the PR branch:
 
-## 7. Thread uniqueness and deletion safety
+- commit `4e5ea47226dc226b55cef8aa0e952dde13c6f879` narrowed the name gate to public publication surfaces while expressly preserving private evidence;
+- commit `e0e1b90438da3ffb6a688d94ec857267fe543bef` aligned the manifest with the repository publication-state schema and declared bilingual route parity.
 
-All unique instructions, implementation decisions, changed-file scope, preservation requirements, validation architecture, limitations and next steps from this thread are now preserved in the remote repository branch and in this audit.
+Replacement PR checks must be green before the draft is marked ready or merged. The final run IDs and conclusions, merge SHA and deployed read-back are to be recorded in PR #612’s durable closeout metadata.
 
-No original court, notarial, banking, Registry, email or other evidential file was supplied only inside this thread. Deleting the ChatGPT conversation therefore does not delete or alter the underlying evidence.
+## 6. Current deletion boundary
 
-### Verdict
+The unique instructions, implementation decisions, changed-file scope, preservation requirements, limitations and activation history are no longer held only in ChatGPT. They are preserved in the remote branch, PR #612, this audit and the publication manifest.
 
-> **This ChatGPT thread is safe to delete provided the remote branch `chore/bidder-name-only-control-2026-08-20` is retained until the change is reviewed, merged or otherwise durably archived.**
+No original evidential file was supplied only inside this thread. Deleting the ChatGPT conversation would therefore not delete the underlying bid or any primary evidence.
 
-Deletion of the thread must not be described as publication completion. The branch is implemented and reviewable, but `main`, CI and the live website remain unchanged until separately activated.
+However, the user has requested a fully completed repository update and email custody. The final deletion gate is therefore stricter than mere remote-branch preservation.
 
-## 8. Remaining activation steps
+### Current verdict
 
-1. Open one draft pull request from `chore/bidder-name-only-control-2026-08-20` to `main` when separately authorised.
-2. Run the full repository, adjudication-provenance, browser-render and bidder name-only/bid-preservation checks.
-3. Review the exact diff and merge only after all required checks pass.
-4. Run the existing public-edge verifier after GitHub Pages propagation.
-5. Record the PR number, merge SHA, workflow runs and live read-back in the publication manifest.
-6. Keep any Git-history audit separate; do not rewrite history without a distinct preservation and authorisation process.
+> **Do not delete this thread yet. It becomes deletion-safe only after PR #612 is merged, the deployed Spanish and English pages and shared publication module pass public-edge read-back, and the complete final file package is sent to the authenticated account by email.**
 
-## 9. Final controlling statement
+## 7. Final activation and closeout steps
 
-> **Only the third-party bidder’s name has been anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved.**
+1. Obtain green replacement checks on the final PR head.
+2. Mark PR #612 ready for review.
+3. Merge PR #612 to `main` using the verified final head SHA.
+4. Confirm the post-merge workflows and GitHub Pages propagation.
+5. Read back the Spanish and English canonical pages, both corrections pages and the shared JavaScript module, including protected-name absence and all positive bid markers.
+6. Generate the final implementation, workflow, live-readback and deletion-safety package.
+7. Send the complete package by Gmail self-delivery and verify the sent message and attachments.
+8. Add final merge, live-verification and email-custody evidence to PR #612’s durable closeout metadata.
+
+## 8. Final controlling statement
+
+> **Only the third-party bidder’s name is anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved.**
