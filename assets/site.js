@@ -38,10 +38,10 @@
   deFactoAdministration.setAttribute('data-ac-community-de-facto-loader', 'true');
   document.head.appendChild(deFactoAdministration);
 
-  // Five-track refurbishment/levy/utility reconstruction: clean-start account,
-  // pre-title record, parallel 2022 processes, verification and physical/economic result.
+  // One unitary causal spine: live hotel/funded exit → 7 June takeover → works/displacement
+  // → pre-title commercialisation → 2022 formalisation → current benefit/harm.
   const refurbishmentMultitrack = document.createElement('script');
-  refurbishmentMultitrack.src = new URL('sun-park-refurbishment-multitrack-20260820.js?v=20260820a', current.src).href;
+  refurbishmentMultitrack.src = new URL('sun-park-refurbishment-multitrack-20260820.js?v=20260820b', current.src).href;
   refurbishmentMultitrack.async = false;
   refurbishmentMultitrack.setAttribute('data-sun-park-refurbishment-multitrack-loader', 'true');
   document.head.appendChild(refurbishmentMultitrack);
@@ -73,14 +73,8 @@
       bio.insertAdjacentHTML('afterend', `
         <div class="pd-history-visuals">
           <div class="pd-visual-grid" aria-label="Memoria visual histórica de San Bernardo 27">
-            <figure class="pd-visual">
-              <img src="../../../assets/palacete-san-bernardo-historica-marco.webp" width="520" height="691" loading="eager" alt="Fotografía real del cuadro histórico conservado en San Bernardo 27">
-              <figcaption><span class="pd-visual-tag">Memoria visual · fotografía real</span>La imagen histórica tal como se conserva y se muestra dentro de San Bernardo 27. Su presencia física en la casa forma parte de la memoria que queremos recibir y preservar.</figcaption>
-            </figure>
-            <figure class="pd-visual">
-              <img src="../../../assets/palacete-san-bernardo-historica-detalle.webp" width="520" height="691" loading="eager" alt="Detalle de la fotografía histórica conservada en San Bernardo 27">
-              <figcaption><span class="pd-visual-tag">Archivo familiar · detalle</span>Acercamiento a la fotografía antigua. La identificación exacta de la casa representada, la fecha y su relación con la historia familiar se confirmarán con la familia antes de cualquier versión pública definitiva.</figcaption>
-            </figure>
+            <figure class="pd-visual"><img src="../../../assets/palacete-san-bernardo-historica-marco.webp" width="520" height="691" loading="eager" alt="Fotografía real del cuadro histórico conservado en San Bernardo 27"><figcaption><span class="pd-visual-tag">Memoria visual · fotografía real</span>La imagen histórica tal como se conserva y se muestra dentro de San Bernardo 27. Su presencia física en la casa forma parte de la memoria que queremos recibir y preservar.</figcaption></figure>
+            <figure class="pd-visual"><img src="../../../assets/palacete-san-bernardo-historica-detalle.webp" width="520" height="691" loading="eager" alt="Detalle de la fotografía histórica conservada en San Bernardo 27"><figcaption><span class="pd-visual-tag">Archivo familiar · detalle</span>Acercamiento a la fotografía antigua. La identificación exacta de la casa representada, la fecha y su relación con la historia familiar se confirmarán con la familia antes de cualquier versión pública definitiva.</figcaption></figure>
           </div>
           <p class="pd-visual-note"><strong>Dos niveles de evidencia, sin mezclarlos:</strong> estas son fotografías reales del material histórico conservado en el inmueble. No son recreaciones ni imágenes generadas. La interpretación histórica de lo que aparece permanece abierta a la validación de la familia y de fuentes documentales adicionales.</p>
         </div>`);
@@ -90,27 +84,17 @@
     if (use && !document.querySelector('.pd-concept-vision')) {
       use.insertAdjacentHTML('afterend', `
         <div class="pd-concept-vision" id="vision-conceptual">
-          <p class="pd-kicker">Visión de futuro</p>
-          <h3>Imaginar el futuro sin confundirlo con el presente.</h3>
+          <p class="pd-kicker">Visión de futuro</p><h3>Imaginar el futuro sin confundirlo con el presente.</h3>
           <p>Estos estudios visuales exploran cómo San Bernardo podría convertirse en una casa institucional de estándar internacional: gravedad de Mayfair y Belgravia, disciplina de la City, energía intelectual y tecnológica de Manhattan y una identidad canaria y atlántica inequívoca. La azotea se plantea como un espacio funcional de trabajo, conversación, lectura, descanso y vida institucional.</p>
           <div class="pd-visual-grid" aria-label="Estudios conceptuales de Palacete Por Derecho">
-            <figure class="pd-visual">
-              <img src="../../../assets/palacete-por-derecho-vision-01.webp" width="700" height="467" loading="lazy" alt="Estudio conceptual del futuro uso de San Bernardo 27 por Fundación Por Derecho">
-              <figcaption><span class="pd-visual-tag">Visualización conceptual · no aprobada</span>Estudio de visión sobre el edificio real y su entorno: biblioteca, Salón San Bernardo, Sala de Trazabilidad, Patronato, jardín y azotea funcional.</figcaption>
-            </figure>
-            <figure class="pd-visual">
-              <img src="../../../assets/palacete-por-derecho-vision-02.webp" width="700" height="394" loading="lazy" alt="Segundo estudio conceptual del futuro Palacete Por Derecho">
-              <figcaption><span class="pd-visual-tag">Estudio de uso · no representa el estado actual</span>Exploración del Palacete Por Derecho como casa embajadorial, académica y tecnológica: el frente para recibir, el corazón para pensar y gobernar, y la infraestructura digital y de IA casi invisible.</figcaption>
-            </figure>
+            <figure class="pd-visual"><img src="../../../assets/palacete-por-derecho-vision-01.webp" width="700" height="467" loading="lazy" alt="Estudio conceptual del futuro uso de San Bernardo 27 por Fundación Por Derecho"><figcaption><span class="pd-visual-tag">Visualización conceptual · no aprobada</span>Estudio de visión sobre el edificio real y su entorno: biblioteca, Salón San Bernardo, Sala de Trazabilidad, Patronato, jardín y azotea funcional.</figcaption></figure>
+            <figure class="pd-visual"><img src="../../../assets/palacete-por-derecho-vision-02.webp" width="700" height="394" loading="lazy" alt="Segundo estudio conceptual del futuro Palacete Por Derecho"><figcaption><span class="pd-visual-tag">Estudio de uso · no representa el estado actual</span>Exploración del Palacete Por Derecho como casa embajadorial, académica y tecnológica: el frente para recibir, el corazón para pensar y gobernar, y la infraestructura digital y de IA casi invisible.</figcaption></figure>
           </div>
           <p class="pd-visual-note"><strong>Límite:</strong> estas imágenes son herramientas de pensamiento y comunicación. No representan una obra autorizada, un proyecto arquitectónico aprobado, una distribución definitiva ni el estado actual del inmueble o del espacio público circundante.</p>
         </div>`);
     }
   };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', inject, { once: true });
-  } else {
-    inject();
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject, { once: true });
+  else inject();
 })();

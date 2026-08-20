@@ -1,181 +1,150 @@
-# MASTER EXECUTION PROMPT — FIVE-TRACK SUN PARK REFURBISHMENT, CLEAN-START NARRATIVE AND 2022 COMPLIANCE CONVERGENCE
+# MASTER EXECUTION PROMPT — NON-ATOMISED 2018 TAKEOVER, WORKS, PRODUCTIVE-UNIT DESTRUCTION/IMPAIRMENT AND 2022 FORMALISATION
 
-## Authority
+## Authority and lifecycle
 
-The operator is authorised to inspect the current Por Derecho repository and connected Gmail/Drive/files; create one feature branch; edit only the relevant repository/site files; validate; commit; push; and open one draft pull request. Merge, deletion of evidence, publication of private/unredacted material and destructive changes require separate express authority.
+Continue the already-authorised work on draft PR #590 and its existing feature branch. Inspect repository, connected evidence sources and website source; amend only the relevant files; validate; commit and update the draft PR. Do not merge, delete evidence, disclose private material or claim live deployment without separate authority and public read-back.
 
-## Mission
+## Governing correction
 
-Perform and implement a unitary reverse-engineering analysis of Sun Park/MYND Yaiza that does **not** flatten the story into one chronology.
+Do not analyse the planning for works, the works, demolition, pilot rooms, refurbishment, licences, Community expenditure or opening as independent construction/property events.
 
-The output must contrast, without prejudging guilt:
+The mandatory analytical unit is:
 
-- the strongest version of the CAM/HNT-side account that 2022 marked a lawful acquisition and clean post-acquisition development process;
-- the documented and alleged pre-title record of authority disputes, control, works, project activity and investor presentation;
-- the multiple title, Community, municipal, tourism, financing, fiscal, public-support and opening processes that ran in parallel during 2022;
-- each professional or institutional actor's actual verification, reliance, omission and competence;
-- the physical, patrimonial, utility, value and benefit result.
+> **living productive hotel and funded exit → pre-takeover preparation → 7 June 2018 force-based material takeover → exclusion/interruption → physical deterioration and transformation → pre-title project/commercialisation/investor presentation → 2022 formalisation/finance/opening → current operation, benefit and continuing harm.**
 
-The core question is:
+The previous “clean-start versus adverse record” model is superseded. The clean-start account is an adversarial explanation to test at every node, not a co-equal timeline.
 
-> **Was 2022 an independently verified lawful starting point, or did its parallel processes formalise, finance or normalise a position materially created before title—and what actor-specific evidence proves or disproves each explanation?**
+## Non-atomisation command
 
-## Non-negotiable five-track model
+For every work-related source, record both the local legal questions and its unitary function.
 
-### Track 1 — asserted clean start
+### Local legal questions
 
-Reconstruct the account in its strongest defensible form:
+- exact unit/common element;
+- registered owner and possessor on the date;
+- Community authority and majority;
+- project, planning/tourism permission and scope;
+- contractor, invoice, payer and tax treatment;
+- structural/façade/services effect;
+- before/as-built condition.
 
-- exact adjudication, deed and Registry perimeter;
-- point at which CAM/HNT could lawfully claim title;
-- project date and claimed commencement;
-- Community approval;
-- municipal/tourism permissions;
-- finance and public support;
-- operator and opening;
-- independent later rights and third-party protections.
+### Mandatory unitary questions
 
-Identify the source and recipient of every representation. Do not call this account false until the relevant proposition is disproved by primary evidence.
+- did access depend on the 7 June control shift or earlier disputed entry?
+- did the act preserve the prior operation or make its restoration harder?
+- did it interfere with ONA/Lagune/bridge-finance diligence, security, operation or closing conditions?
+- did it impair LPB’s masa activa, the mixed-ownership productive unit, Matkator/third-party rights, goodwill, reservations, data or income?
+- did it create a project, sunk cost, new room inventory, public identity or appearance of ownership before title?
+- was it later relied upon in Community, court, municipal, tourism, investor, lender, RIC, incentive, FEDER or operating processes?
+- who knew the upstream title/concurso/exit facts and what did they do after notice?
+- who obtained the corresponding control, value, finance, income or avoided loss?
 
-### Track 2 — adverse pre-title record
+No event may be classified as innocent, neutral or merely civil from its label alone. No event may be classified as criminal without actor-specific evidence.
 
-Reconstruct separately:
+## Five evidence lanes within one causal spine
 
-- 2008 title fragmentation;
-- 2011 Community authority/debt/vote controversy;
-- 2012 concurso perimeter;
-- 2017 CAM credit and unit entry;
-- pre-June-2018 planning/access/security evidence;
-- 7-June material control;
-- 2018–2021 works, project, customer, public and investor evidence;
-- missing or unproduced Community governance/accounting trail;
-- 2021 54-CAM / 190-LPB / 18-third-party title split and DD limits.
+### Lane A — living productive unit and funded exit
 
-Classify every item. Do not turn allegations, chronology or benefit into criminal proof.
+Reconstruct the operating/physical/value baseline immediately before 7 June 2018 and the ONA, Lagune and bridge-finance exit package. Identify every condition, pending ratification, lender decision and causal vulnerability.
 
-### Track 3 — parallel 2022 compliance/finance/opening processes
+### Lane B — preparation and force-based takeover
 
-Build a day-by-day matrix from January through December 2022 covering:
+Reconstruct the predecessor apparatus; Q4 2017 and early-2018 access/planning; the 18 May security resolution; and the 7 June change to locks, guards, keys, access, onsite management, guests, staff, contractors, data and operation.
 
-- Yaiza and Cabildo applications;
-- technical project versions;
-- judicial title/finality;
-- 4-Feb Community decision and €4.467m levy;
-- 21-Feb deed/transfer and Registry;
-- CAM→HNT;
-- tourism/operator permissions;
-- RICPE/RIC/lender decisions;
-- suitability/binding reports;
-- regional incentive/FEDER/employment;
-- works, completion and opening.
+### Lane C — physical transformation and displacement
 
-For each lane identify the applicant's legal capacity, title supplied, facts checked, facts repeated, conflicts, conditions, waivers and dependencies.
+Map deterioration, maintenance changes, demolition, pilots, works and reconfiguration from the takeover to opening. For each item determine whether it was preservation, independent unit work, or an instrument/effect of the alleged capture and substitution of the prior platform.
 
-### Track 4 — enablement and verification
+### Lane D — formalisation, finance and normalisation
 
-For every actor record:
+Map Lava Verde, Club Sei, RICPE, the 4 February 2022 Community decision and €4.467m levy, January–February 2022 project/title/deed, Registry, HNT, RIC, lenders, incentives, FEDER, tourism and MYND opening.
 
-`role → authority/duty → notice → material received → independent verification → act/omission → reliance → causal contribution → benefit/avoided loss → strongest lawful explanation → missing discriminator`.
+### Lane E — enablement, harm, benefit and remedy
 
-Separate Community, CAM entities, individuals, AC, court, LAJ, Yaiza, Cabildo, architects, contractors, accountants, RICPE, lenders, tax/funding authorities, notary, Registry and operator.
-
-### Track 5 — physical/economic result
-
-Map:
-
-- unit/common-element works;
-- structure/façade/windows/doors/bathrooms/drainage;
-- owner and authority at each date;
-- contracts, invoices, payments and levy;
-- water/electricity holder, payer, consumer and operator;
-- LPB/Matkator/third-party effect;
-- before/after valuation and income;
-- later finance and present benefit.
+Map each actor’s duty, notice, verification, act/omission, contribution, benefit, harm and present remedy across concursal, extraconcursal and cross-border planes.
 
 ## Bidirectional reconstruction
 
 Run both:
 
-1. `MYND current result → HNT/RICPE/funding → 2022 title/acta/licence → 2018–2021 control/project/works → 2011/2008 authority root`.
-2. `2008 structure → 2011 authority → 2012 concurso → 2017 CAM entry → 2018 material control → 2019–2021 project/finance → 2022 formalisation/opening → current result`.
+1. `MYND current operation/value → HNT/RICPE/funding → 2022 title/licences/Community → Lava Verde/Club Sei/pre-title project → post-takeover works → 7 June control → ONA/funded exit and live productive unit`.
+2. `live hotel/funded exit → pre-takeover preparation → 7 June control rupture → exclusion/works/project → investor and institutional reliance → 2022 formalisation → current operation/value`.
 
-Compare the two and classify every bridge as `INDEPENDENT`, `DEPENDENT`, `CIRCULAR`, `BROKEN`, `CONTRADICTED`, `ALLEGED` or `NOT YET LOCATED`.
+Classify every bridge as `INDEPENDENT`, `DEPENDENT`, `CIRCULAR`, `BROKEN`, `CONTRADICTED`, `ALLEGED` or `NOT YET LOCATED`.
 
-## Evidence search
+## Counterfactual command
 
-Search Spanish and English variants across repository, Gmail, Drive and files for Sun Park, Lava Verde, reform/refurbishment, works, licence, project, levy/derrama, 4.467/4.468/4.5m, 3.260.416,81, façades, windows, doors, bathrooms, water, electricity, CUPS, Pink, CEXP, Community, FMMM/Pamalexsha, CAM/JDAM/LPAM, Yaiza, Cabildo, RICPE/HNT/MYND, eligible costs, employment, FEDER, invoices, IGIC and Modelo 415.
+Build an explicit but-for model:
 
-Preserve source status, date, provenance, confidentiality and legal-person separation. A late-2022 complaint package proves notice/dispute, not the truth of its allegations.
+- What would likely have occurred without the 7 June takeover?
+- Which ONA/Lagune/finance conditions were capable of fulfilment?
+- What value, operation, income and preservation path remained?
+- Which later deterioration, works, costs, adjudication economics or project opportunities depended on the changed control?
+- Which independent events would have defeated the exit anyway?
 
-## Key legal/evidential locks
+Do not call the lost exit certain. Do not treat conditionality as making it irrelevant.
 
-- municipal licence ≠ civil title or Community authority;
-- security/access authority ≠ refurbishment authority;
-- later acta/title ≠ automatic retroactive ratification;
-- absence from reviewed archive ≠ non-existence;
-- €4.467m approved ≠ €4.467m spent or properly allocated;
-- utility consumption ≠ operator identity;
-- parallel processes ≠ criminal agreement;
-- formal validity ≠ truth of every upstream premise;
-- benefit ≠ intent;
-- institution receipt ≠ personal knowledge or complicity;
-- civil invalidity ≠ criminality;
-- CAM, HNT, RICPE and individuals remain distinct.
+## Criminal-forensic command
 
-## Criminal-forensic test
+Begin offence-neutral. For every event use:
 
-Begin offence-neutral. Only after the actor/event matrix is complete test retrospective sanitisation, procedural fraud, documentary falsity, disloyal administration, punishable insolvency, unauthorised damage, knowing facilitation and coordination. For every theory list elements, present evidence, missing element, contrary evidence and strongest lawful explanation.
+`actor/legal person → role → objective conduct → authority invoked → knowledge of title/concurso/ONA → representation/omission → recipient and reliance → control/value/benefit → harm → causation → contrary evidence → strongest lawful explanation → missing proof`.
 
-Public pages must never present guilt, conspiracy, falsification, corruption or prevarication as established without a competent final source.
+Then test, where supported:
 
-## Repository implementation
+- unauthorised/coercive dispossession or control;
+- property/common-element damage;
+- destruction or impairment of masa activa and unidad productiva;
+- frustration of rescue/refinancing/sale/exit;
+- punishable insolvency/creditor prejudice;
+- disloyal administration;
+- procedural deception;
+- documentary falsity/use;
+- knowing facilitation or coordinated participation;
+- concealment or retaliation.
 
-Create/update:
+## Source search
 
-- canonical forensic control;
-- mandatory retrieval gate;
-- this execution prompt;
-- correction, missing-evidence and maintenance addenda;
-- machine-readable five-track dataset;
-- bilingual dedicated pages;
-- cross-site context module;
-- sitemap/robots/site loader;
-- validation and post-merge live verification workflows;
-- activation record, publication manifest and deletion audit.
+Search repository, Gmail, Drive and files in Spanish and English for:
 
-Dedicated routes:
+`7 junio 2018 | cerradura | cadena | candado | bombín | seguridad | llave | ONA | Lagune | Batipart | Ben Oldman | Stoneweg | oferta vinculante | salida financiada | conclusión convenio | masa activa | unidad productiva | reservas | PMS | clientes | personal | goodwill | Gesvalt | 25.647.179,50 | reforma | obra | demolición | piloto | Lava Verde | Club Sei | Meeting Point | RICPE | 4.467.928,22 | 3.260.416,81 | HNT | MYND | licencia | proyecto | factura | IGIC | RIC | incentivo | FEDER | empleo`.
 
-- `/es/reforma-derrama-suministros-sun-park/`
-- `/en/sun-park-refurbishment-levy-utilities/`
+Preserve source status, completeness, provenance, confidentiality and legal-person separation.
 
-Public maxim:
+## Mandatory outputs
 
-> **La adjudicación de 2022 no convierte el pasado en una hoja en blanco.**
+1. corrected canonical unitary control;
+2. corrected retrieval gate and execution prompt;
+3. correction, missing-evidence and maintenance registers;
+4. machine-readable one-spine/five-lane dataset;
+5. bilingual public dossier with anti-atomisation rule;
+6. cross-site unitary warning on takeover, reverse-engineering, criminal-engineering, Community, AC, adjudication, funding and public-authority pages;
+7. validator preventing return to a co-equal clean-start track;
+8. updated activation, manifest, PR description and deletion audit.
 
-## Public page structure
+## Public wording lock
 
-1. evidential status;
-2. five-track visual;
-3. strongest clean-start account;
-4. pre-title record;
-5. compressed 2022 parallel-process timeline;
-6. present→origin reverse reconstruction;
-7. origin→present forward reconstruction;
-8. licence/title/Community authority split;
-9. €4.467m accounting trail;
-10. utilities/Pink/Hacienda analysis;
-11. actor-specific enablement matrix;
-12. criminal relevance and limits;
-13. strongest defence;
-14. finite production requests;
-15. what would change the analysis.
+Permitted:
+
+- `alleged continuous takeover-and-conversion sequence`;
+- `no presumption that the works were neutral or severable`;
+- `possible physical execution phase of the alleged takeover`;
+- `alleged destruction or impairment of LPB’s active estate and the productive hotel platform`;
+- `alleged frustration of the ONA/Lagune/funded exit`;
+- `lawful independence must be proved at the relevant node`.
+
+Not permitted as established fact:
+
+- every work was criminal;
+- criminal takeover proved;
+- ONA certainly would have closed;
+- the entire current hotel value belongs to LPB/Aweswell;
+- collective guilt, conspiracy, corruption or knowing institutional participation without actor-specific proof.
 
 ## Validation and lifecycle
 
-Validate required files, JSON, bilingual parity, markers, source-status locks, legal-person separation, overstatement prohibitions, JavaScript syntax, canonical/hreflang, sitemap and cross-site propagation.
+Validate source controls, lane keys, anti-atomisation markers, bilingual parity, JavaScript syntax, sitemap/loader, legal-person separation, source-status wording and prohibition of proved-guilt language.
 
-Lifecycle:
+Lifecycle remains:
 
 `DRAFT → REMOTE_SOURCE → PR_OPEN → CI_GREEN → MERGED → DEPLOYED → LIVE_VERIFIED → DELETION_SAFE`.
-
-Stop at draft PR / available CI unless separately authorised to merge.

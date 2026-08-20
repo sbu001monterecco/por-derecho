@@ -1,255 +1,222 @@
-# SUN PARK REFURBISHMENT AUTHORITY · €4.467M LEVY · UTILITIES · FIVE-TRACK FORENSIC CONTROL
+# SUN PARK — 2018 TAKEOVER, WORKS, DESTRUCTION/IMPAIRMENT OF THE PRODUCTIVE UNIT AND 2022 FORMALISATION
 
 **Control date:** 20 August 2026  
 **Matter:** Sun Park / MYND Yaiza · Luchy Playa Blanca, S.L.U. · Concurso 36/2012  
-**Status:** `CANONICAL MULTITRACK RECONSTRUCTION — ACTIVE INVESTIGATION, NOT A FINDING OF GUILT`  
-**Public boundary:** distinguish verified source, attributed representation, party allegation, evidence-based inference, open question and legal characterisation. Do not publish private emails, privileged advice, unnecessary personal data or unredacted evidential binaries.
+**Status:** `CANONICAL UNITARY CRIMINAL-FORENSIC RECONSTRUCTION — ACTIVE INVESTIGATION, NOT A FINDING OF GUILT`  
+**Architecture:** `ONE UNITARY CAUSAL SPINE · FIVE EVIDENCE LANES · ACTOR-SPECIFIC PROOF`
 
-## Executive finding
+## Immediate correction to the prior five-track framing
 
-The current record justifies a structured test of **two materially different explanations of the same visible result**:
+The previous draft usefully rejected a 2022 “blank page”, but it still created a material analytical risk: it placed an asserted clean-start account beside the pre-title record as though they were two co-equal histories and allowed “security, surveys, pilots, maintenance, limited works or contingent planning” to appear as a neutral track.
 
-1. **The asserted clean-start account:** CAM obtained the LPB-perimeter adjudication/title in early 2022, then lawfully assembled the project, Community approval, licences, finance, operating structure and opening of the hotel as a new post-acquisition development.
-2. **The adverse continuity account advanced by Por Derecho:** material control, project preparation, works or demolition, public presentation, investor positioning and reliance on a contested Community/insolvency architecture pre-dated formal 2022 title; the compressed 2022 processes may therefore have formalised, financed or normalised a position already created in fact.
+That is not the governing architecture.
 
-The second account is **not established merely because the chronology is uncomfortable**, and the first account is **not established merely because the present hotel, licences, deed, Registry entries or public funding exist**. The investigation must prove each bridge independently.
+The correct unit of analysis is the whole alleged sequence:
 
-The strongest presently supportable proposition is:
+> **living hotel and funded exit → pre-takeover access/planning → 7 June 2018 force-based material-control rupture → exclusion and interruption of the existing productive platform → deterioration, demolition, works, pilots and physical reconfiguration → Lava Verde / Club Sei / RICPE project presentation before formal LPB title → 2022 Community, title, licence, finance and opening formalisation → HNT/MYND operation, value and present benefit.**
 
-> **The 2022 adjudication cannot be treated as a documentary reset. A five-track reconstruction is required to determine what pre-dated title, what each 2022 process independently verified, which actors supplied or relied on each premise, and what physical and economic result followed.**
+The strongest lawful explanation must remain visible, but only as a **red-team explanation at each node**. It is not a separate chronology and it does not define the starting presumption.
 
-This control does not establish retrospective sanitisation, criminal coordination, documentary falsity, procedural fraud, disloyal administration, public-official wrongdoing or collective intent.
+## Non-atomisation rule
 
-## Evidence-status vocabulary
+No planning, access, security act, pilot room, demolition, repair, refurbishment, licence, Community decision, invoice, payment, investor representation or later opening may be analysed as a self-contained civil event before its role in the unitary sequence has been tested.
 
-- `PRIMARY VERIFIED FACT`
-- `DIRECT CONTEMPORANEOUS SOURCE`
-- `OFFICIAL ACT OR OUTCOME`
-- `ATTRIBUTED REPRESENTATION`
-- `PARTY ALLEGATION`
-- `EVIDENCE-BASED INFERENCE`
-- `LEGAL CHARACTERISATION REQUIRING COUNSEL`
-- `CONTRADICTED OR MATERIALLY QUALIFIED`
-- `OPEN QUESTION`
-- `NOT YET LOCATED`
+Finca-by-finca ownership, Community authority, planning permission, contract, invoice and payment remain indispensable. They answer local questions of title, authority and remedy. They must be **nested inside**, not substituted for, the criminal-forensic questions:
 
-## The mandatory five tracks
+- Why was the act possible after the 7 June control shift?
+- Who obtained access, information, keys, practical control or project capacity from it?
+- Did it preserve the existing business or displace it?
+- Did it impair LPB’s masa activa, the mixed-ownership productive unit, Matkator/third-party rights, goodwill, data, income or a funded exit?
+- Did it create a sunk-cost or fait-accompli position later presented to a court, authority, investor, lender or operator?
+- What did the actor know about title, the concurso, ONA, mixed ownership and prior objections?
+- What later title, finance or operation relied upon the physical and commercial position created before 2022?
 
-### Track A — asserted clean start in 2022
+## No presumption of neutrality; no premature finding of criminality
 
-Reconstruct the strongest version of the CAM/HNT-side lawful account before criticising it:
+A label such as `security`, `preservation`, `maintenance`, `pilot`, `internal works`, `refurbishment`, `Community expense` or `licensed work` does not make an act innocent or non-criminal for analytical purposes. Each act must first be tested for its instrumental role in the alleged takeover and asset-conversion sequence.
 
-- a defined judicial adjudication and later deed/registration supplied title to the LPB perimeter;
-- a new or finalised technical project was prepared in January 2022;
-- the Community approved works, levy and unitary operation on 4 February 2022;
-- municipal, tourism, fiscal, financing and operational processes then supplied the permissions and capital necessary to reopen;
-- later HNT/MYND rights, finance and operation may have independent legal bases;
-- pre-2022 activity may have been security, surveys, pilots, maintenance, limited works or contingent planning rather than execution of the final project.
+Equally, this control does not declare that every act was criminal. Criminal responsibility still requires actor-specific proof of conduct, knowledge or intent, material use, reliance, benefit, harm and causation. The controlling formulation is:
 
-**Current classification:** `ATTRIBUTED/IMPLICIT NARRATIVE TO TEST`. Do not call it a proved fiction. Identify the exact source in which each element was represented and the recipient to whom it was represented.
+> **No 2018–2022 work is presumptively neutral or severable from the alleged takeover chain; criminality or lawful independence must be proved at the relevant node.**
 
-### Track B — pre-title factual record
+## The alleged unitary event spine
 
-Reconstruct without importing later title backward:
+### 1. A live productive platform and funded exit existed immediately before the rupture
 
-- mixed ownership and one-hotel/multiple-title structure from 2008;
-- disputed Community authority, debt, voting and custody architecture from 2011;
-- LPB's 2012 concurso without absorption of Matkator or third-party property;
-- CAM's entry through credit and defined units in 2017;
-- pre-7 June 2018 access, security, measurement, project and attributed Community-coordination evidence;
-- 7 June 2018 material/access/control threshold;
-- 2018–2019 works, demolition, customer-removal and Lava Verde/public-project material, to the extent primary sources establish each event;
-- 2020 investor presentation before 2022 title;
-- 2021 internal title fragmentation and due-diligence limits;
-- absence in the reviewed archive of primary Community minutes for 2019–2021, classified only as `NOT YET LOCATED`.
+The controlled public record presently includes:
 
-**Current classification:** a mixture of verified anchors, direct sources, allegations and open technical questions. No single item proves a global criminal plan.
+- prior technical planning and a phased refurbishment strategy intended to preserve operation;
+- a May 2018 Gesvalt inspection describing a completed, occupied property with activity registered, no apparent structural deterioration and a mortgage value of approximately €25.647 million;
+- an indicative Lagune / Groupe Batipart proposal of approximately €26 million dated 30 May 2018;
+- a 15-year ONA hotel lease signed on 6 June 2018, subject to conditions and later ratification;
+- identified bridge-finance/take-out routes discussed immediately after the rupture;
+- a reported 13 June presentation to the judge and Insolvency Administrator that requires primary corroboration;
+- ONA’s later inability to inspect the interior while access remained disputed.
 
-### Track C — compressed 2022 parallel regularisation, finance and opening processes
+These materials do not prove that every condition would have closed. They establish that the proper counterfactual is not an abandoned asset with no exit. The criminal-forensic inquiry must test whether the takeover and ensuing works deliberately or foreseeably destroyed or impaired a live rescue, refinancing, sale and operation route.
 
-Map each process on its own legal clock and then compare them side by side:
+### 2. Preparation and control activity pre-dated 7 June 2018
 
-- early-January municipal or Cabildo applications, if primary files confirm them;
-- project dated 28 January 2022;
-- judicial event/finality/title threshold at the end of January 2022;
-- Community meeting of 4 February 2022;
-- approximately €4,467,928.22 project/levy and approximately €3,260,416.81 allocation to LPB, subject to exact source reconciliation;
-- deed/transfer of 21 February 2022;
-- Registry implementation;
-- CAM→HNT corporate/asset implementation;
-- tourism and operating authorisations;
-- RICPE/RIC financing and any lender drawdowns;
-- regional incentive, FEDER identification, employment and eligible-cost controls;
-- MYND opening and current operation.
+The controlled repository identifies a predecessor Community/debt/access apparatus; a specifically dated 2 October 2017 physical-incursion lead; further late-2017 and early-2018 access, security, locksmith, plans, measurements, owner-like assertions and project-preparation evidence; and the 18 May 2018 Community/security decision.
 
-For each process record: applicant, represented capacity, title supplied, project version, asset perimeter, facts independently checked, facts merely repeated, conflicts/abstentions, conditions, waivers, date of decision and later use.
+This is not background decoration. It is the preparation phase to be tested against the conduct executed on 7 June.
 
-**Current classification:** `PARALLEL PROCESSES DOCUMENTED IN PART`. Parallel timing does not itself prove coordination, deception or retrospective validation.
+### 3. 7 June 2018 was the central material-control rupture
 
-### Track D — enablement, verification and non-verification
+The source-controlled public dossier records or attributes:
 
-No collective institutional actor exists. Test separately:
+- force used on the coded access/locks;
+- chains, padlocks or replacement cylinders;
+- private-security control of entry;
+- exclusion of the onsite responsible person;
+- changed ability of guests, staff, owners, contractors, advisers and operators to enter;
+- no located order delivering CAM possession of the whole mixed-ownership hotel.
 
-| Actor/perimeter | Core question |
-|---|---|
-| Community office-holders / FMMM / Pamanil-Pamalexsha | What authority, vote, records, bank control, project, contract, levy, invoice and disclosure supported each act? |
-| CAM entities / JDAM / LPAM | What was initiated, represented, instructed, paid, built, acquired or benefited from, and under which role at each date? |
-| Insolvency Administration | What was known about access, works, title, levy, estate preservation and value; what was authorised, inspected, challenged, disclosed or left unaddressed? |
-| Court / LAJ / office | What was actually decided, received, notified and implemented; what was never adjudicated? |
-| Ayuntamiento de Yaiza | Who applied, in what capacity, with what title and Community authority; what units/common elements and project did the licence cover? |
-| Cabildo / tourism authorities | What operator, establishment perimeter, ownership and unitary-exploitation basis was presented and checked? |
-| Architects / technical directors / contractors | Who instructed the works, what plans/as-built record existed, who certified, invoiced and was paid? |
-| RICPE / advisers / lenders | What due diligence, title, prior-works, conflict, eligible-cost, source-and-use and drawdown checks occurred? |
-| Tax/funding authorities | What project facts, prior expenditure, employment, accumulation and beneficiary information were supplied and verified? |
-| Notary / Registry | What exact instrument and finca perimeter was formalised or registered, and what matters remained outside their competence? |
+The event must be analysed as a multidimensional control shift affecting access, operation, information, preservation, diligence, project preparation and the ability to execute the funded exit—not as an ordinary dispute over one apartment or one lock.
 
-Receipt, repetition or formalisation does not equal independent verification. Error, limited competence and facial reliance are material lawful explanations.
+### 4. Post-takeover works were a possible physical execution phase
 
-### Track E — physical asset, estate value, utilities, benefit and harm
+The governing question is not simply whether a particular room, wall, window, door, bathroom or pipe was inside a CAM-owned finca. It is whether, viewed with the takeover and later project:
 
-Reconstruct the result rather than assuming it:
+- the works depended on control obtained through the 7 June rupture;
+- they altered LPB assets, Matkator/third-party property, common elements or the productive hotel platform;
+- they prevented restoration of the pre-takeover operation;
+- they changed the condition, configuration, room inventory, project identity or valuation of the hotel;
+- they displaced the ONA/Aweswell-funded strategy and substituted a CAM-led project;
+- they generated evidence of possession, sunk cost, urgency or inevitability later used in formal processes;
+- they prepared Lava Verde, Club Sei, RICPE Sun Park or MYND Yaiza before the relevant 2022 formal-title threshold;
+- they produced costs later allocated to LPB or the Community and then used in financing, RIC or public-support narratives.
 
-- unit-by-unit and common-element works;
-- alleged changes to walls, doors, windows, bathrooms, drainage, façade or structure;
-- project versions and as-built condition;
-- owner/title and authority for each affected location;
-- construction cost, levy, invoices, payments, IGIC and final reconciliation;
-- water/electricity contract holder, invoice recipient, payer, physical consumer and operator;
-- effect on LPB, Matkator and third-party rights;
-- before/after value, income capacity and estate consequence;
-- later financing and present operational benefit.
+A work package may still have an independent lawful basis. That basis must be demonstrated with title, authority, scope, date, instruction, project, licence, invoice, payment and as-built evidence, and then tested against the unitary purpose and effect.
 
-A licence does not prove Community consent. Consumption does not identify the operator. Present benefit does not prove past intent. Diminution of the estate requires architectural and valuation proof.
+### 5. 2018–2022 formalisation did not begin a new story
 
-## Multitrack chronology
+Lava Verde, Club Sei/Meeting Point, RICPE investor material, 2021 title-fragmentation knowledge, the January–February 2022 project/Community/title sequence, CAM→HNT, RIC/finance, incentives, tourism authorisation and MYND opening must be treated as later phases of the same physical and economic asset history.
 
-| Period | Track A: asserted clean start | Track B: pre-title record | Track C: parallel processes | Track D: verification/enabling | Track E: result/value |
-|---|---|---|---|---|---|
-| 2008–2011 | Outside the asserted 2022 starting point | One hotel economically; fragmented title; disputed authority/debt/vote root | — | Community/CEXP/title actors | Structural vulnerability created; no criminal conclusion |
-| 2012–2017 | LPB insolvency and later creditor/unit entry can be presented as ordinary background | Concurso reaches LPB, not the whole hotel; operator and Community rights remain distinct | Credit, litigation and unit acquisitions develop separately | AC, court, Community, banks, advisers | Control and value remain divided among legal perimeters |
-| Jan–Jun 2018 | Security/preservation and preliminary work may be the lawful account | Recorded pre-event planning/coordination evidence; 18-May security acta; 7-Jun material-control rupture | Security, valuation, rescue, liquidation and project tracks overlap | AC request/authorisation, Community implementation, private actors | Access, operation, customer and preservation capacity change before title |
-| Jul–Nov 2018 | Limited internal works or later ratification may be alleged | Works/demolition and project-publication questions; 5-Jul source incomplete; 20-Nov original acta not isolated | Municipal/technical/project and liquidation processes require reconciliation | Community, CAM, Yaiza, AC, technical actors | Physical condition, design and estate-value questions arise |
-| 2019–2021 | Preparatory project and future acquisition may be the defence | Lava Verde/Club Sei/RICPE public project; no primary 2019–2021 actas located; 54/190/18 title split in 2021 | Investor, court, tourism, title and DD tracks run in parallel | RICPE, advisers, AC, court, public authorities | Project identity and finance precede formal LPB transfer |
-| Jan–Feb 2022 | Adjudication/title followed by project approval, compliance and development | Prior control/project/works background remains legally and factually relevant | Project, public applications, Community acta, deed and registration compress into weeks | Each recipient must show what it checked independently | €4.467m levy, LPB burden and affected assets require reconciliation |
-| Mar–Dec 2022 | New owner/operator completes funding and opening | Contemporaneous objections and UDEF/party packages dispute the clean reset | HNT, RICPE/RIC, incentives, tourism, opening and branding converge | Gatekeepers receive different slices of the record | Current hotel, income, value and third-party reliance emerge |
-| 2023–present | Stable operation may support independent later rights | Later stability does not prove earlier authority or intent | Funding, audits, supervision and litigation continue | Regulators, auditors, courts and professionals | Restitution becomes more complex; causation still must be proved |
+A later deed, Registry entry, licence, Community resolution, tax decision, investment approval or opening can create prospective legal effects. None automatically cleanses or proves the lawfulness of the earlier means by which access, possession, project readiness, altered condition, customer platform or economic opportunity were obtained.
 
-## Reverse engineering — present to origin
+## The five evidence lanes within the one spine
 
-Start with MYND's current physical, title, operating and financial position. For every indispensable right or value, ask:
+### Lane A — living productive unit and funded exit
 
-1. Which deed, resolution, contract, licence, Community decision or funding instrument supplies the bridge?
-2. What exact asset/finca/common element does it cover?
-3. What event date, signature date, registration date and first-reliance date apply?
-4. Did the recipient verify upstream facts or repeat them?
-5. Does the bridge survive if an earlier authority, title, cost or consent proposition fails?
-6. What lawful independent title or third-party protection exists?
+Reconstruct the hotel immediately before 7 June 2018: title, physical condition, guests, staff, operator, reservations, goodwill, utilities, maintenance, data, valuation, ONA lease, Lagune proposal, bridge finance, planned renovation and conditions to close.
 
-The existence of the present hotel is an endpoint, not proof of the route.
+**Question:** What viable value and exit capacity existed and what precisely was lost, delayed or made impossible?
 
-## Forward reconstruction — origin to present
+### Lane B — preparation and force-based takeover
 
-Rebuild independently:
+Reconstruct the predecessor apparatus, CAM entry, access/planning activity, 18 May security authority and the 7 June execution across gates, keys, guards, people, units, common elements, information and operations.
 
-`2008 fragmented title / unitary hotel`
+**Question:** Who obtained practical hotel-wide capacity, through what authority, and with what knowledge and purpose?
 
-→ `2011 authority-debt-vote apparatus`
+### Lane C — physical transformation and displacement
 
-→ `2012 concurso / separate extraconcursal property`
+Map every deterioration, maintenance failure, demolition, pilot, refurbishment, structural/façade/common-element work, utility change and project version after the takeover.
 
-→ `2017 CAM credit and unit entry`
+**Question:** Was the work preservation, independent unit work or part of converting the captured productive platform into a different project while preventing the prior operation and exit from being restored?
 
-→ `early-2018 security/project preparation`
+### Lane D — formalisation, finance and normalisation
 
-→ `7-Jun-2018 material control`
+Map Lava Verde, Club Sei, RICPE, Community resolutions, €4.467 million levy, January–February 2022 applications/project/title/deed, Registry, CAM→HNT, RIC, lenders, incentives, FEDER, tourism and opening.
 
-→ `2018–2021 works/project/investor activity`
+**Question:** Which processes independently verified the upstream facts and which relied on a position created before title?
 
-→ `Jan–Feb-2022 project/Community/title processes`
+### Lane E — enablement, harm, benefit and remedy
 
-→ `HNT/RICPE/RIC/public support`
+For every actor map duty, notice, act/omission, verification, contribution, benefit, harm, current position and available remedy across concursal, extraconcursal and cross-border planes.
 
-→ `MYND operation and current value`.
+**Question:** Who enabled, failed to stop, formalised, financed, benefited from, corrected or can still reverse each consequence?
 
-Classify each arrow as `INDEPENDENT`, `DEPENDENT`, `CIRCULAR`, `BROKEN`, `CONTRADICTED`, `ALLEGED` or `NOT YET LOCATED`.
+## Masa activa and unidad productiva
 
-## Controlling propositions
+The analysis must keep two propositions simultaneously:
 
-1. The 2022 adjudication did not adjudicate the entire historical truth of Sun Park or automatically validate earlier Community, access, works, investor or third-party-property acts.
-2. The clean-start account must be reconstructed from actual representations, not assumed from later branding or title.
-3. The 18-May-2018 acta facially concerned security/access and is not presently identified as a comprehensive works mandate.
-4. No pre-June-2018 Community resolution specifically authorising the alleged structural/façade/common-element works has yet been located.
-5. The original 5-Jul-2018 source and audio require verification before relying on secondary summaries.
-6. The original 20-Nov-2018 refurbishment acta/package has not yet been isolated; a 2022 recital proves later reliance, not the original vote and scope.
-7. No primary Community minutes for 2019–2021 are presently located in the reviewed archive; absence in the archive is not proof of non-existence.
-8. A municipal licence is an urban-planning act and does not by itself establish civil title, Community consent or authority over another owner's property.
-9. The 4-Feb-2022 acta, attendance, proxies, voting entitlement, absent-owner procedure, conflict and required majority require complete reconstruction.
-10. The approximately €4.467m project figure and approximately €3.260m LPB allocation must be reconciled to annexes, contracts, invoices, payments, accounts and the concurso.
-11. January–February 2022 parallel timing is a material investigation pattern, not proof of an unlawful agreement.
-12. Water/electricity evidence must separate holder, addressee, payer, consumer, works user and operator.
-13. Hacienda's Pink attribution must be tested consistently against non-utility operating evidence and post-Pink consumption/payment/control.
-14. Any loss to the insolvency estate requires proof of affected estate rights, before/after condition, valuation, causation and remedy.
-15. CAM, HNT, RICPE, Community office-holders and individuals remain legally distinct; knowledge and intent are actor-specific.
-16. The late-2022 connected Gmail source family proves contemporaneous circulation of detailed objections and UDEF/party complaint packages; it does not prove their allegations true or prove personal reading by every recipient.
+1. **LPB’s masa activa** comprised LPB assets and rights within Concurso 36/2012. Any loss of possession, deterioration, unaccounted works/costs, lost income, impaired realisation value, lost causes of action or frustrated exit affecting those assets is a concursal-harm question.
+2. **Sun Park as a productive unit/economic hotel platform** extended across LPB, Matkator, other owners, common infrastructure, operating rights, guests, staff, data, goodwill and commercial relationships. The whole productive unit was not automatically part of LPB’s estate, but its destruction or capture could simultaneously damage the estate and extraconcursal rights.
 
-## Criminal/investigative hypotheses
+Do not use the estate boundary to atomise the economic event. Do not use economic unity to erase separate title.
 
-| Hypothesis | Present support | Missing discriminator | Status |
-|---|---|---|---|
-| Retrospective sanitisation/formalisation | Control/project/representation before title plus compressed 2022 processes | Exact representation, knowledge, dependency and purpose at each process | `SERIOUS INVESTIGATIVE HYPOTHESIS; NOT PROVED` |
-| Procedural fraud | Disputed title/authority/cost propositions may have affected judicial or administrative acts | Exact knowingly false proposition, deception, induced error, dispositive act, benefit and loss | `OPEN` |
-| Documentary falsity/use | Missing/contested minutes, figures, roles or project histories | Exact false content, author, knowledge, material alteration and use | `OPEN` |
-| Disloyal administration | Possible failure to protect estate value or challenge unauthorised works/levy | Duty breach, mens rea, unjust benefit, damage and causation | `OPEN / COUNSEL` |
-| Punishable insolvency/frustration | Pre-title control/works and burdens may have impaired recovery | Prohibited act, intent, asset/creditor prejudice and causal link | `OPEN` |
-| Property damage/unauthorised works | Alleged structural/façade/common-element alterations | Technical proof, owner, authority, actor and criminal threshold | `OPEN` |
-| Knowing facilitation/cooperation | Multiple actors supplied indispensable formal steps | Knowledge of falsity/illegality, intent and essential contribution | `NOT ESTABLISHED` |
-| Collusion/conspiracy | Repeated alignment and compressed convergence | Agreement, shared unlawful objective and actor-specific communications | `NOT ESTABLISHED` |
-| Public-office wrongdoing | Adverse or insufficient decisions are alleged | Function, notice, objectively unlawful departure, knowledge and causation | `NOT ESTABLISHED` |
+The central adverse hypothesis is that the 7 June takeover and subsequent physical/commercial conversion destroyed or materially impaired:
 
-## Strongest combined defence
+- LPB’s ability to preserve and realise its active estate;
+- the hotel as a functioning productive unit;
+- the ONA/Lagune/financing exit and its diligence conditions;
+- goodwill, reservations, customer access, operational data and income;
+- Matkator and third-party possession/use/value;
+- Aweswell’s ability to recapitalise, refinance, sell or conclude the concurso;
+- the counterfactual competitive value against which the later adjudication should be judged.
 
-A competent defence may show that:
+Each component remains subject to proof of ownership, baseline, but-for outcome, alternative cause, foreseeability, quantum and actor-specific causation.
 
-- CAM lawfully owned particular units before 2022 and performed only permitted internal or preservation works;
-- municipal and Community authority existed in records not yet located or was later validly ratified;
-- the final 2022 project was materially different from earlier preliminary activity;
-- the hotel required urgent rehabilitation and security measures protected value;
-- title, Community, tourism, finance and public-funding processes had independent lawful functions and competent verification;
-- later HNT/MYND rights and third-party protections survive any earlier dispute;
-- Community costs and utilities were genuine, properly allocated and supported by invoices;
-- the AC and public bodies exercised reasonable judgment on facially valid material within limited competence;
-- the late-2022 complaint/notice packages were allegations, disputed, incomplete or received after decisive acts.
+## Why isolated civil analysis can make the criminal hypothesis disappear
 
-Each defence must identify its source, date, scope and actor. It must not be rejected rhetorically.
+An isolated civil question may yield a locally plausible answer:
 
-## Connected Gmail source family — controlled use
+- CAM owned one unit;
+- a licence existed;
+- the Community approved an expense;
+- a contractor issued an invoice;
+- the court later adjudicated LPB assets.
 
-A first mailbox pass located multiple December 2022 transmissions of:
+None answers the unitary question of whether limited rights and formally valid acts were knowingly used in sequence to obtain, transform and retain a hotel-wide economic position that could not lawfully be obtained at the earlier date.
 
-- a 2022 Sun Park/Playa Blanca summary;
-- a detailed 2008–2022 annex/report;
-- a 27-Nov-2022 UDEF complaint;
-- a 28-Nov-2022 police report/record;
-- a 1-Dec-2022 amplification or draft amplification.
+Accordingly:
 
-These transmissions are relevant to **notice and contemporaneous dispute**. They do not establish the truth of the allegations, do not prove that every recipient read every attachment and must not be published with private message identifiers or unnecessary recipient data.
+> **Civil, planning, Community, tax and concursal analyses define the ingredients. The criminal-forensic reconstruction tests their combined use, knowledge, dependency, benefit and harm.**
 
-## P0 evidence programme
+## Actor-specific event test
 
-1. Complete native municipal works/licence file from 2017–2022, including applicant capacity, title, Community authority, plans, amendments, inspections and completion.
-2. Original 5-Jul-2018 acta/audio and complete 20-Nov-2018 acta package.
-3. Complete 2019–2021 Community minute book, convocations, annual accounts, budgets and owner communications.
-4. Complete 4-Feb-2022 convocation, agenda, ownership roll, proxies, debt/vote list, absent-owner notices and final majority calculation.
-5. All project versions: pre-2018, 2018–2021, 28-Jan-2022 and as-built.
-6. Unit/common-element work-package matrix, photographs, technical certificates and expert inspection.
-7. Community/CAM/HNT contracts, tender material, invoices, IGIC, Modelo 415 where applicable, bank statements and final cost reconciliation.
-8. Month-by-month water/electricity ledger with CUPS/meter, holder, addressee, payer, readings, construction use and operator evidence.
-9. Native AC–Community–CAM communications concerning works, access, levy, preservation, inspections and value.
-10. Before/after estate and extraconcursal valuation with causation analysis.
-11. Complete January–February 2022 Yaiza/Cabildo/tourism chronology and inter-authority communications.
-12. RICPE/lender/RIC/public-funding source-and-use, prior-cost disclosure, conflicts, conditions, waivers, drawdowns and monitoring.
-13. Native evidence proving or disproving actor-specific knowledge of the pre-title record and any shared unlawful purpose.
+For every material event use:
 
-## Publication rule
+`actor and legal person → role/capacity → objective act → authority invoked → source of access/control → knowledge of title/concurso/ONA → work or representation → recipient/reliance → immediate effect → downstream formalisation → benefit/avoided loss → harm → strongest lawful explanation → missing discriminator`.
 
-The public site may say that Por Derecho **challenges an apparent clean-start narrative** and that a substantial pre-title record requires reconciliation. It must not say that CAM's account is a proven fiction, that the 2022 processes were a criminal sanitisation operation, or that any named actor is guilty unless a competent final source establishes it.
+No collective intent is inferred from affiliation alone. No institution is treated as a single mind.
+
+## Candidate criminal/investigative hypotheses
+
+Test offence-neutral facts first, then applicable Spanish-law elements for:
+
+- coercive or unauthorised material dispossession/control;
+- damage or unauthorised alteration of property/common elements;
+- destruction or impairment of the masa activa and productive unit;
+- frustration of a funded rescue, refinancing, sale or exit;
+- punishable-insolvency or creditor-prejudice conduct;
+- disloyal administration or failure to preserve the estate;
+- procedural deception or use of incomplete/false upstream propositions;
+- documentary falsity or knowing use of inaccurate minutes/certificates/project histories;
+- knowing facilitation, essential cooperation or coordinated participation;
+- concealment, evidence suppression or retaliatory conduct where separately evidenced.
+
+Do not publish any category as established without a competent final source.
+
+## Strongest lawful explanation — nested red team
+
+At each node test whether:
+
+- only CAM-owned units were entered or worked upon;
+- urgent security/preservation measures were proportionate;
+- the final project was materially different from earlier activity;
+- valid Community/title/licence authority existed in records not yet located;
+- ONA/Lagune/finance was too conditional to close for independent reasons;
+- deterioration or loss had other causes;
+- public, professional and financial actors independently verified their limited remits;
+- later rights and protected third parties survive any upstream defect.
+
+A lawful explanation is not accepted merely because it is conceivable. It requires contemporaneous source support and must explain the entire causal sequence, not just one room, invoice or licence.
+
+## P0 production programme
+
+1. Complete ONA lease, owner-ratification conditions, Lagune proposal, bridge-finance files, lender decisions, 13 June meeting corroboration and ONA inspection record.
+2. Pre-7 June operating baseline: PMS, bookings, guests, staff, bank, utilities, suppliers, maintenance, data, goodwill and valuation.
+3. Complete 2017–2018 access/security/locksmith/Community/AC/police/CCTV/keys evidence.
+4. Unit/common-element work matrix from 7 June 2018 through opening, with instructions, plans, licences, contracts, invoices, payments, photographs and as-built.
+5. Evidence of restoration requests, denial of access, blocked diligence and inability to resume the prior operation.
+6. Complete 2018–2022 Lava Verde/Club Sei/RICPE/HNT/MYND project-evolution and representation chain.
+7. Complete 4 February 2022 Community vote/levy package and €4.467 million source-and-use ledger.
+8. Full Yaiza/Cabildo/tourism/RIC/incentive/FEDER/lender files showing title, prior works and project facts supplied and checked.
+9. Before/after architectural, operational, valuation and insolvency-exit counterfactual expert reports.
+10. Actor-specific communications proving or disproving knowledge, shared purpose, instruction, reliance and corrective response.
+
+## Publication boundary
+
+The public site may state that Por Derecho’s governing allegation is a continuous takeover-and-conversion sequence beginning before 7 June 2018 and that isolating the works would conceal their possible criminal function. It must also state that this is an investigative allegation, that lawful explanations are tested, and that guilt, intent, criminal coordination, destruction of the estate and deliberate frustration of ONA remain to be established actor by actor.

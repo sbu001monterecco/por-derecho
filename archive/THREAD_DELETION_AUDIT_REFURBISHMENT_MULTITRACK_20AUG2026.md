@@ -1,30 +1,29 @@
-# THREAD DELETION AUDIT — REFURBISHMENT AUTHORITY / FIVE-TRACK STORYLINE
+# THREAD DELETION AUDIT — UNITARY 2018 TAKEOVER / WORKS / 2022 FORMALISATION
 
 **Date:** 20 August 2026  
-**Current status:** `NOT DELETION-SAFE — IMPLEMENTATION BRANCH / DRAFT PR LIFECYCLE`  
-**Reason:** the canonical control, bilingual routes, dataset and validation package are being placed on a feature branch. Deletion safety requires merge, successful public deployment/read-back and a closeout update.
+**Status:** `NOT DELETION-SAFE — DRAFT PR #590 IS UNMERGED AND NOT LIVE-VERIFIED`
 
-## Intelligence preserved by this package
+## Intelligence preserved
 
-- mandatory five-track presentation;
-- distinction between asserted clean-start narrative and proved falsity;
-- pre-title control/project/works record;
-- compressed 2022 title/Community/licence/finance/opening convergence;
-- actor-specific enablement and independent-verification test;
-- €4.467m source-and-use and utilities/Pink ledgers;
-- late-2022 Gmail source-family notice boundary;
-- strongest defence and publication limits;
-- finite missing-evidence programme.
+- correction from five co-equal stories to one unitary causal spine;
+- no-atomisation rule for every planning/work/licence/invoice item;
+- live productive-unit and ONA/Lagune/funded-exit counterfactual;
+- pre-takeover preparation and 7 June 2018 force-based material-control rupture;
+- works as a possible physical execution/displacement phase;
+- masa activa and mixed-ownership productive-unit distinction;
+- pre-title Lava Verde/Club Sei/RICPE continuity;
+- 2022 formalisation, finance and opening dependency analysis;
+- node-by-node defence overlay and actor-specific criminal threshold;
+- finite P0 evidence programme.
 
 ## Deletion gate
 
-Do not declare this thread safe to delete until all are recorded:
+Do not declare safe until:
 
-1. draft PR and exact branch/commit;
-2. validation results;
-3. merge SHA;
-4. public HTTP and rendered-marker read-back for ES/EN routes and module;
-5. activation/manifest state updated to `LIVE_VERIFIED`;
-6. this audit updated to `DELETION_SAFE_WITH_OPEN_EVIDENCE`.
+1. PR #590 validation is green on the unitary-correction head;
+2. PR is merged under separate authority;
+3. ES/EN routes and cross-site markers are independently read back after deployment;
+4. activation and manifest show merge SHA and `LIVE_VERIFIED`;
+5. this audit is updated to `DELETION_SAFE_WITH_OPEN_EVIDENCE`.
 
-Open evidence does not prevent deletion safety once the unresolved queue is preserved and the public/repository implementation is independently verified.
+Open evidence does not prevent deletion safety after the complete unresolved queue is preserved and deployment is independently verified.
