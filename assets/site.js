@@ -24,7 +24,7 @@
 
   // Correct the PP 1041 withdrawal narrative across every connected AC, lender, Article 1535 and pacto-comisorio route.
   const withdrawalAuthority = document.createElement('script');
-  withdrawalAuthority.src = new URL('pp1041-withdrawal-authority-correction-20260820.js?v=20260820a', current.src).href;
+  withdrawalAuthority.src = new URL('pp1041-withdrawal-authority-correction-20260820.js?v=20260820b', current.src).href;
   withdrawalAuthority.async = false;
   withdrawalAuthority.setAttribute('data-pp1041-withdrawal-authority-loader', 'true');
   document.head.appendChild(withdrawalAuthority);
