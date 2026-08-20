@@ -2,6 +2,7 @@
   'use strict';
 
   const VERSION = '20260820b';
+  // Public-edge source marker: data.acDfaVisibilityStability
   let scheduled = false;
 
   const removePanel = panel => {
