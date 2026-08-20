@@ -85,3 +85,28 @@
   component.dataset.sourceFundsComponent = '20260820';
   document.head.append(component);
 })();
+
+/* AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260820 */
+(() => {
+  const current = document.currentScript;
+  if (!current) return;
+  const base = new URL('.', current.src);
+
+  const baseModule = document.createElement('script');
+  baseModule.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260820b', base).href;
+  baseModule.async = false;
+  baseModule.setAttribute('data-ac-community-de-facto-administration-loader', 'true');
+  document.head.appendChild(baseModule);
+
+  const visibility = document.createElement('script');
+  visibility.src = new URL('ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260820b', base).href;
+  visibility.async = false;
+  visibility.setAttribute('data-ac-de-facto-knowing-facilitation-visibility-loader', 'true');
+  document.head.appendChild(visibility);
+
+  const stability = document.createElement('script');
+  stability.src = new URL('ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260820b', base).href;
+  stability.async = false;
+  stability.setAttribute('data-ac-de-facto-knowing-facilitation-stability-loader', 'true');
+  document.head.appendChild(stability);
+})();
