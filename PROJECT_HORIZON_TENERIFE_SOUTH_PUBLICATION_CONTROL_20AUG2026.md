@@ -76,6 +76,16 @@ The statistics are destination context, not project underwriting or forecasts.
 7. Destination statistics remain source-period-labelled and linked to official sources.
 8. Repository and live-publication status must be reported separately: merge is not evidence of GitHub Pages propagation.
 
+## Publication evidence
+
+- Source publication: PR #640.
+- Source merge: `696fe167ff049c3b3c20c568f473f15929490e14`.
+- Pre-merge triggered checks on the publication head: visual-asset identity, publication-integrity, Playa Blanca regression read-back and off-GitHub preservation all passed.
+- Observable Project Horizon public-edge verification: workflow run `32397409951`, job `96517354536`, completed successfully.
+- The read-back required six public resources to return HTTP 200 with the expected content markers: English page, Spanish page, Future/Futuro feature asset, Project Horizon stylesheet, hero visual and privacy-safe location diagram.
+- Verification artifact: `9417153775`, digest `sha256:63d65d8702f4b472c6f90e36cf458c5c8ab98c1701c4dcb8913ec66e2a18dd1b`.
+- Verification infrastructure: PR #642, merged as `ff82aaa7dd5f6b3bc9302325a99353f0bacfe2d9`.
+
 ## Status
 
-`PR_PREPARATION` — advance only after branch review and repository checks. After merge, public read-back must verify both bilingual routes, the Future/Futuro card, stylesheet, hero asset and status markers before this control can be advanced to `LIVE_VERIFIED`.
+`LIVE_VERIFIED` — repository publication and observable GitHub Pages read-back are complete. This is a technical publication status only. It does not change any transaction, ownership, planning, tourism, operator, financing, construction, opening-date or public-authority boundary recorded above.
