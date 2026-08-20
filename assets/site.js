@@ -110,6 +110,41 @@
   document.head.appendChild(stability);
 })();
 
+/* ONSITE-APPROACHES-GATEWAY-20260820 */
+(() => {
+  const normalise = value => {
+    let path = value.replace(/\/index\.html$/, '/');
+    if (!path.endsWith('/')) path += '/';
+    return path;
+  };
+  const path = normalise(location.pathname);
+  const routes = new Set([
+    '/es/toma-control-sun-park-7-junio-2018/',
+    '/en/sun-park-takeover-7-june-2018/',
+    '/es/acosta-matos-perimetro/',
+    '/en/acosta-matos-perimeter/'
+  ]);
+  const matched = [...routes].find(route => path.endsWith(route));
+  if (!matched || document.querySelector('[data-onsite-approaches-gateway]')) return;
+
+  const isEnglish = document.documentElement.lang === 'en';
+  const basePrefix = path.includes('/por-derecho/') ? '/por-derecho/' : '/';
+  const target = isEnglish
+    ? `${basePrefix}en/pre-7-june-2018-approaches-sun-park-onsite-manager/`
+    : `${basePrefix}es/contactos-previos-responsable-in-situ-sun-park/`;
+
+  const section = document.createElement('section');
+  section.className = 'section alt';
+  section.dataset.onsiteApproachesGateway = '20260820';
+  section.innerHTML = `<div class="shell"><a class="dossier-link side-dossier-gateway" href="${target}"><span>${isEnglish ? 'Anonymised primary-evidence dossier · pre-7 June 2018' : 'Dossier probatorio anonimizado · antes del 7 de junio de 2018'}</span><strong>${isEnglish ? 'Repeated access approaches, a certified concealment proposal, sworn refusals and the unresolved implementation question' : 'Contactos repetidos, propuesta certificada de ocultación, negativas bajo declaración y la cuestión no resuelta de su ejecución'}</strong><i aria-hidden="true">→</i></a></div>`;
+
+  const main = document.querySelector('main');
+  if (!main) return;
+  const anchor = isEnglish ? document.querySelector('#events-of-7-june') : document.querySelector('#hechos-7-junio');
+  if (anchor) anchor.insertAdjacentElement('beforebegin', section);
+  else main.append(section);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
