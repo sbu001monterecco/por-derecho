@@ -172,9 +172,13 @@ for marker in (
     "no permission",
     "recusal",
     "do not deploy",
-    "does not by considering or accepting office endorse",
 ):
     require(marker in trustees, f"trustee pack missing: {marker}")
+require(
+    "i do not by considering or accepting office endorse" in trustees
+    or "does not by considering or accepting office endorse" in trustees,
+    "trustee pack lacks the no-endorsement acceptance boundary",
+)
 
 for marker in (
     "no independent review has yet been performed",
@@ -183,10 +187,13 @@ for marker in (
     "false positives",
     "false negatives",
     "do not deploy",
-    "no case in the first independent round",
     "not performed",
 ):
     require(marker in redteam, f"red-team pack missing: {marker}")
+require(
+    "the first independent round must use a wholly synthetic record" in redteam,
+    "red-team pack lacks the synthetic-first rule",
+)
 require("sun park" in redteam and "icalpa" in redteam, "red-team pack must expressly exclude live founder-related sources")
 
 for marker in (
@@ -195,10 +202,20 @@ for marker in (
     "no professional may",
     "desk-based",
     "not acquisition diligence",
-    "the house is not the foundation",
-    "no architect appointed",
 ):
     require(marker in architect, f"architect RFP missing: {marker}")
+require(
+    "proposed future palacete por derecho; acquisition not completed" in architect,
+    "architect RFP lacks the incomplete-acquisition context",
+)
+require(
+    "architect appointed: **no**" in architect,
+    "architect RFP lacks the no-appointment status",
+)
+require(
+    "institutional plan subordinate to safety, fabric and legal constraints" in architect,
+    "architect RFP lacks the building-over-programme boundary",
+)
 
 for marker in (
     "planned, prepared, sent, accepted, commissioned, completed, merged and publicly live are different states",
@@ -216,9 +233,13 @@ for marker in (
     "no endorsement",
     "send gate",
     "no architect copied",
-    "only the institution itself can confirm",
 ):
     require(marker in outreach, f"outreach control missing: {marker}")
+require(
+    "no public announcement without written institutional confirmation" in outreach
+    or "the institution’s express written confirmation" in outreach,
+    "outreach control lacks the institution-only confirmation rule",
+)
 
 # Machine-readable register.
 register_text = read(REGISTER)
