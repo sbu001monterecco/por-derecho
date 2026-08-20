@@ -1,22 +1,61 @@
 (() => {
   if (window.__pdIntervencionProtectedAssets20260820) return;
   window.__pdIntervencionProtectedAssets20260820 = true;
+  const current = document.currentScript;
   const path = window.location.pathname;
   const isEn = /\/en\//.test(path);
+  const assetName = `intervencion-integridad-bienes-protegidos-${isEn ? 'en' : 'es'}.svg`;
+  const assetUrl = current ? new URL(assetName, current.src).href : `/por-derecho/assets/${assetName}`;
+  const pngName = `intervencion-integridad-bienes-protegidos-${isEn ? 'en' : 'es'}.png`;
   const style = document.createElement('style');
-  style.textContent = `.pd-intervencion-protected-assets{margin:1.2rem 0;padding:1.2rem 1.3rem 1.25rem;border:1px solid rgba(200,148,50,.48);border-top:6px solid #c89432;border-radius:16px;background:linear-gradient(135deg,#10252e,#183842);color:#fff;box-shadow:0 16px 38px rgba(16,37,46,.16)}.pd-intervencion-protected-assets .pd-ipa-kicker{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;margin:0 0 .75rem;font-size:.74rem;font-weight:900;letter-spacing:.075em;text-transform:uppercase;color:#e8d3aa}.pd-intervencion-protected-assets .pd-ipa-date{display:inline-block;padding:.25rem .55rem;border:1px solid rgba(232,211,170,.45);border-radius:999px;color:#fff}.pd-intervencion-protected-assets h3{margin:.15rem 0 .75rem;font-size:clamp(1.35rem,2.5vw,2rem);line-height:1.12;color:#fff}.pd-intervencion-protected-assets .pd-ipa-core{margin:.8rem 0;padding:.9rem 1rem;border-left:4px solid #e8d3aa;background:rgba(255,255,255,.075);font-size:clamp(1rem,1.8vw,1.14rem);line-height:1.55}.pd-intervencion-protected-assets .pd-ipa-core strong{color:#fff}.pd-intervencion-protected-assets p{margin:.55rem 0;line-height:1.6;color:rgba(255,255,255,.9)}.pd-intervencion-protected-assets .pd-ipa-boundary{margin-top:.9rem;padding-top:.8rem;border-top:1px solid rgba(255,255,255,.22);font-size:.88rem;color:rgba(255,255,255,.76)}`;
+  style.textContent = `
+    .pd-intervencion-asset{margin:1.35rem 0 1.7rem;padding:0;background:#fff;border:1px solid rgba(19,37,45,.15);border-radius:18px;overflow:hidden;box-shadow:0 18px 42px rgba(16,37,46,.13)}
+    .pd-intervencion-asset img{display:block;width:100%;height:auto;background:#0a1b28}
+    .pd-intervencion-asset figcaption{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center;padding:.9rem 1rem 1rem;border-top:1px solid rgba(19,37,45,.12);color:#334950;font-size:.9rem;line-height:1.55}
+    .pd-intervencion-asset .pd-ipa-caption strong{color:#13252d}
+    .pd-intervencion-asset .pd-ipa-actions{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:flex-end}
+    .pd-intervencion-asset .pd-ipa-actions a,.pd-intervencion-asset .pd-ipa-actions button{appearance:none;border:1px solid rgba(19,37,45,.22);background:#f7f4ed;color:#13252d;border-radius:999px;padding:.55rem .8rem;font:inherit;font-weight:850;text-decoration:none;cursor:pointer}
+    .pd-intervencion-asset .pd-ipa-actions button{background:#13252d;color:#fff;border-color:#13252d}
+    .pd-intervencion-asset.compact figcaption{font-size:.84rem}
+    @media(max-width:760px){.pd-intervencion-asset figcaption{grid-template-columns:1fr}.pd-intervencion-asset .pd-ipa-actions{justify-content:flex-start}}
+  `;
   document.head.appendChild(style);
-  const box = (compact=false) => `<aside class="pd-intervencion-protected-assets" data-intervencion-protected-assets-highlight><p class="pd-ipa-kicker"><span class="pd-ipa-date">24 ${isEn?'February':'febrero'} 2026</span>${isEn?'Integrity Commission · verified institutional event':'Comisión para Integridad Pública · hito institucional verificado'}</p><h3>${isEn?'Judicially / insolvency-protected assets were expressly isolated for referral to Justice':'Los bienes bajo tutela judicial o concursal fueron expresamente aislados para su traslado a Justicia'}</h3><div class="pd-ipa-core">${isEn?'The signed 5 March 2026 General Intervention response records that the Commission considered the 15 December communication at its meeting of <strong>24 February 2026</strong> and agreed an anonymised transfer to the Vice-Ministry of Justice, particularly concerning the reported possibility of <strong>material disposition or removal of assets under judicial or insolvency protection without the required authorisations</strong>.':'La respuesta firmada de la Intervención General de 5 de marzo de 2026 deja constancia de que la Comisión examinó la comunicación de 15 de diciembre en su sesión de <strong>24 de febrero de 2026</strong> y acordó su traslado anonimizado a la Viceconsejería de Justicia, particularmente respecto de la posibilidad comunicada de <strong>disposición material o alzamiento de bienes bajo tutela judicial o concursal sin las debidas autorizaciones</strong>.'}</div>${compact?'':`<p>${isEn?'The same response separately reiterates General Intervention’s autonomous financial-control remit over public subsidies, including verification of the conditions supporting grants and the correct destination of public funds.':'La misma respuesta reitera separadamente la función autónoma de control financiero de la Intervención General sobre subvenciones públicas, incluida la comprobación de las condiciones que sustentan las ayudas y del correcto destino de los fondos públicos.'}</p>`}<p class="pd-ipa-boundary"><strong>${isEn?'Evidence boundary:':'Límite probatorio:'}</strong> ${isEn?'this proves Commission consideration, identification of the protected-assets issue and the competence-based Justice referral. It does not prove that an unlawful disposition, concealment or criminal offence was found.':'esto acredita el examen por la Comisión, la identificación del problema relativo a bienes protegidos y el traslado competencial a Justicia. No acredita que se haya declarado una disposición ilícita, un alzamiento o un delito.'}</p></aside>`;
-  const inject=()=>{
-    if (/\/(es\/registros-institucionales|en\/institutional-records)\/?(?:index\.html)?$/.test(path)) {
-      const intervention=document.querySelector('#gobcan-intervencion');
-      if(intervention&&!document.querySelector('[data-intervencion-protected-assets-highlight]')) intervention.insertAdjacentHTML('afterend',box(false));
-    }
-    const home=/\/por-derecho\/(es|en)\/?(?:index\.html)?$/.test(path)||/^\/(es|en)\/?(?:index\.html)?$/.test(path);
-    if(home&&!document.querySelector('[data-intervencion-protected-assets-highlight]')){
-      const card=Array.from(document.querySelectorAll('.authority-card')).find(c=>/intervenci[oó]n general|general intervention/i.test(c.textContent||''));
-      if(card) card.insertAdjacentHTML('afterend',box(true));
-    }
+
+  const figure = (compact=false) => `<figure class="pd-intervencion-asset${compact ? ' compact' : ''}" data-intervencion-protected-assets-highlight>
+    <a href="${assetUrl}" target="_blank" rel="noopener" aria-label="${isEn ? 'Open documented institutional milestone visual' : 'Abrir visual del hito institucional documentado'}"><img src="${assetUrl}" width="1600" height="900" loading="lazy" alt="${isEn ? '24 February 2026 — Integrity Commission — assets under judicial or insolvency protection' : '24 febrero 2026 — Comisión para Integridad Pública — bienes bajo tutela judicial o concursal'}"></a>
+    <figcaption><span class="pd-ipa-caption"><strong>${isEn ? 'Reusable source-controlled visual.' : 'Visual reutilizable controlado por fuente.'}</strong> ${isEn ? 'The 5 March General Intervention response records Commission consideration on 24 February and an anonymised Justice referral concerning the protected-assets issue. The visual does not convert that routing into a merits finding.' : 'La respuesta de 5 de marzo de la Intervención General deja constancia del examen por la Comisión el 24 de febrero y del traslado anonimizado a Justicia sobre la cuestión de los bienes protegidos. El visual no convierte ese traslado en una resolución de fondo.'}</span><span class="pd-ipa-actions"><a href="${assetUrl}" target="_blank" rel="noopener">${isEn ? 'Open / share SVG' : 'Abrir / compartir SVG'}</a><button type="button" data-intervencion-download-png>${isEn ? 'Download PNG' : 'Descargar PNG'}</button></span></figcaption>
+  </figure>`;
+
+  const downloadPng = async () => {
+    try {
+      const svg = await fetch(assetUrl, {cache:'no-store'}).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); });
+      const blob = new Blob([svg], {type:'image/svg+xml;charset=utf-8'});
+      const src = URL.createObjectURL(blob);
+      const img = new Image();
+      await new Promise((resolve, reject) => { img.onload = resolve; img.onerror = reject; img.src = src; });
+      const canvas = document.createElement('canvas'); canvas.width = 1600; canvas.height = 900;
+      const ctx = canvas.getContext('2d'); ctx.drawImage(img, 0, 0, 1600, 900); URL.revokeObjectURL(src);
+      const png = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+      if (!png) throw new Error('PNG export failed');
+      const pngUrl = URL.createObjectURL(png); const a = document.createElement('a'); a.href = pngUrl; a.download = pngName; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(pngUrl), 1500);
+    } catch (err) { window.open(assetUrl, '_blank', 'noopener'); }
   };
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',inject,{once:true}); else inject();
+
+  const inject = () => {
+    if (/\/(es\/registros-institucionales|en\/institutional-records)\/?(?:index\.html)?$/.test(path)) {
+      const intervention = document.querySelector('#gobcan-intervencion');
+      if (intervention && !document.querySelector('[data-intervencion-protected-assets-highlight]')) intervention.insertAdjacentHTML('afterend', figure(false));
+    }
+    const home = /\/por-derecho\/(es|en)\/?(?:index\.html)?$/.test(path) || /^\/(es|en)\/?(?:index\.html)?$/.test(path);
+    if (home && !document.querySelector('[data-intervencion-protected-assets-highlight]')) {
+      const card = Array.from(document.querySelectorAll('.authority-card')).find(c => /intervenci[oó]n general|general intervention/i.test(c.textContent || ''));
+      if (card) card.insertAdjacentHTML('afterend', figure(true));
+    }
+    if (/\/(es|en)\/ric-private-equity-sun-park\/?(?:index\.html)?$/.test(path) && !document.querySelector('[data-intervencion-protected-assets-highlight]')) {
+      const anchor = document.querySelector('#pregunta-unitaria');
+      if (anchor) anchor.insertAdjacentHTML('afterend', `<section class="section alt" data-intervencion-asset-section><div class="shell">${figure(false)}</div></section>`);
+    }
+    document.querySelectorAll('[data-intervencion-download-png]').forEach(btn => btn.addEventListener('click', downloadPng));
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject, {once:true}); else inject();
 })();
