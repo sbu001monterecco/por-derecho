@@ -1,0 +1,49 @@
+name: Verify Sun Park refurbishment multitrack live
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/reforma-derrama-suministros-sun-park/index.html'
+      - 'en/sun-park-refurbishment-levy-utilities/index.html'
+      - 'assets/sun-park-refurbishment-multitrack-20260820.js'
+      - 'assets/site.js'
+      - 'sitemap-refurbishment-authority-multitrack.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-sun-park-refurbishment-multitrack-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: {persist-credentials: false}
+      - name: Poll public routes and source markers
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import os,time,urllib.request
+          base='https://sbu001monterecco.github.io/por-derecho'
+          q=f'?source={os.environ["SOURCE_SHA"][:12]}'
+          targets={
+            '/es/reforma-derrama-suministros-sun-park/'+q:['data-refurbishment-multitrack-page="20260820"','hoja en blanco'],
+            '/en/sun-park-refurbishment-levy-utilities/'+q:['data-refurbishment-multitrack-page="20260820"','blank page'],
+            '/assets/sun-park-refurbishment-multitrack-20260820.js'+q:['data-refurbishment-multitrack-update','data-refurbishment-multitrack-crosslink'],
+            '/sitemap-refurbishment-authority-multitrack.xml'+q:['reforma-derrama-suministros-sun-park','sun-park-refurbishment-levy-utilities']
+          }
+          last=[]
+          for attempt in range(1,31):
+            last=[]
+            for path,markers in targets.items():
+              try:
+                req=urllib.request.Request(base+path,headers={'User-Agent':'Por-Derecho-live-verifier/1.0','Cache-Control':'no-cache'})
+                with urllib.request.urlopen(req,timeout=20) as r: body=r.read().decode('utf-8','replace')
+                if r.status!=200 or not all(m in body for m in markers): last.append((path,r.status,[m for m in markers if m not in body]))
+              except Exception as exc: last.append((path,'ERR',repr(exc)))
+            if not last: print('LIVE VERIFIED',attempt); raise SystemExit(0)
+            print('attempt',attempt,last); time.sleep(5)
+          raise SystemExit(f'Live verification failed: {last}')
+          PY

@@ -1,0 +1,38 @@
+name: Validate Sun Park refurbishment multitrack
+on:
+  pull_request:
+    paths:
+      - 'archive/*REFURBISHMENT*'
+      - 'archive/*REF-*'
+      - 'assets/data/sun-park-refurbishment-multitrack-v1.json'
+      - 'assets/sun-park-refurbishment-multitrack-20260820.js'
+      - 'assets/site.js'
+      - 'es/reforma-derrama-suministros-sun-park/index.html'
+      - 'en/sun-park-refurbishment-levy-utilities/index.html'
+      - 'sitemap-refurbishment-authority-multitrack.xml'
+      - 'robots.txt'
+      - 'scripts/validate_sun_park_refurbishment_multitrack.py'
+      - '.github/workflows/validate-sun-park-refurbishment-multitrack.yml'
+  push:
+    branches: ['agent/refurbishment-authority-multitrack-20260820']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: validate-refurbishment-multitrack-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: {persist-credentials: false}
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with: {node-version: '22'}
+      - name: Validate source controls and bilingual pages
+        run: python3 scripts/validate_sun_park_refurbishment_multitrack.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/site.js
+          node --check assets/sun-park-refurbishment-multitrack-20260820.js

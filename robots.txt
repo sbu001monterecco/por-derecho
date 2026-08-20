@@ -27,3 +27,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-case-governance.
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-san-telmo.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-por-derecho-foundation.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-ac-community-de-facto-administration.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-refurbishment-authority-multitrack.xml
