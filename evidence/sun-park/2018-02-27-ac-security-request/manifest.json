@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "evidence_id": "SP-2018-02-27-AC-SECURITY-REQUEST",
+  "title": "27 February 2018 insolvency-administrator request to convene Sun Park security meeting",
+  "event_date": "2018-02-27T10:16:06+00:00",
+  "publication_date": "2026-08-21",
+  "language": "es",
+  "source": {
+    "type": "scanned_email_printout",
+    "original_filename": "emailAC a Cdad.pdf",
+    "restricted_source_reference": "Gmail message 16438f74a568214f / attachment emailAC a Cdad.pdf",
+    "restricted_source_sha256": "497ecb49495badbcee155397fe70d37d090c36c4e7998308172e7a612046dbed",
+    "restricted_source_size_bytes": 512711,
+    "public_repository_contains_unredacted_original": false
+  },
+  "public_derivative": {
+    "path": "public/2018-02-27-ac-community-security-request-redacted-searchable.pdf",
+    "sha256": "91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551",
+    "size_bytes": 261820,
+    "pages": 1,
+    "page_format": "A4",
+    "searchable": true,
+    "authoritative_transcript": "../transcript.es.md",
+    "translation": "../transcript.en.md"
+  },
+  "redactions": [
+    {
+      "marker": "R1",
+      "category": "direct professional electronic address",
+      "location": "sender header"
+    },
+    {
+      "marker": "R2",
+      "category": "direct organisational/professional electronic address",
+      "location": "recipient header"
+    },
+    {
+      "marker": "R3",
+      "category": "direct professional electronic address",
+      "location": "cc header"
+    }
+  ],
+  "processing": {
+    "pixel_redaction_before_ocr": true,
+    "render_dpi": 300,
+    "ocr_after_redaction": true,
+    "manual_visual_review": true,
+    "manual_transcript_review": true,
+    "search_layer_sensitive_string_check": "passed",
+    "pdf_structure_check": "passed",
+    "intermediate_redacted_png_sha256": "b6162108762ffcf1e2cc2afc07027ba885668cd75d14f2fa658da6931bd38d9d",
+    "repository_image_dpi": 150
+  },
+  "controlled_meaning": {
+    "directly_supports": [
+      "request by the named insolvency administrator to the Community presidency to convene a General Meeting",
+      "proposed consideration of hiring a security service",
+      "stated purpose of preventing access by unauthorised persons",
+      "stated purpose of preventing deterioration and improper use of common and private areas"
+    ],
+    "does_not_establish_by_itself": [
+      "identity of unauthorised persons",
+      "property-by-property scope",
+      "authority for locks, chains, cylinders, key seizure or exclusionary acts",
+      "transfer of possession, title or hotel operation",
+      "validity or implementation of a later Community resolution",
+      "criminal agreement or final legal characterisation"
+    ]
+  }
+}
