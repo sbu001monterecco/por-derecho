@@ -1,7 +1,9 @@
 # Proceedings website propagation — implementation record
 
 Date: 20 August 2026
-Status: branch implementation pending PR/merge at creation time
+Status: **MERGED TO `main` via PR #662**
+Merge commit: `3c1cc2ed878bdef43ba8f62fa406dc57fa8da591`
+Public live read-back: **not independently verified at this close-out; retry required**
 
 ## Implemented public-safe propagation
 
@@ -31,3 +33,11 @@ Status: branch implementation pending PR/merge at creation time
 - Complaints and party allegations are not converted into verified misconduct findings.
 - Confidential annexes, personal contact details, verification credentials and potentially privileged communications are not reproduced.
 - EN/ES parity maintained for all substantive changes.
+
+## QA / merge note
+
+The PR-level publication-integrity workflow had one failure caused by a pre-existing repository-wide mission-critical invariant concerning an unrelated `2022-adjudication-documentary-reconstruction` heading. The proceedings files themselves passed the publication/deletion-safety and operational checks inspected in the workflow log. The unrelated pre-existing gate issue was recorded in PR #662 before merge.
+
+## Remaining implementation evidence
+
+A fresh thread should verify the public GitHub Pages routes and, once confirmed, record that read-back in the appropriate deployment/verification log. Until then, repository publication is controlling and live-browser deployment remains an open verification item.
