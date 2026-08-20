@@ -116,13 +116,15 @@ def home_series(rel: str, en: bool) -> None:
     t = get(rel)
     if 'data-series-fg-priority' in t:
         return
-    if en:
-        old = '<a href="updates/">See updates</a></div>'
-        new = '<a href="updates/">See updates</a><a data-series-fg-priority href="ricpe-idoneidad-series-f-g/">Series F/G</a></div>'
-    else:
-        old = '<a href="actualizaciones/">Ver actualizaciones</a></div>'
-        new = '<a href="actualizaciones/">Ver actualizaciones</a><a data-series-fg-priority href="ricpe-idoneidad-series-f-g/">Series F/G</a></div>'
-    t = one(t, old, new, f'{rel} Series F/G priority link')
+    marker = '<div class="priority-links">'
+    start = t.find(marker)
+    if start < 0:
+        raise RuntimeError(f'{rel}: priority-links container not found')
+    end = t.find('</div>', start)
+    if end < 0:
+        raise RuntimeError(f'{rel}: priority-links closing div not found')
+    link = '<a data-series-fg-priority href="ricpe-idoneidad-series-f-g/">Series F/G</a>'
+    t = t[:end] + link + t[end:]
     put(rel, t)
 
 
