@@ -22,6 +22,14 @@
   attribution.setAttribute('data-san-telmo-attribution-loader', 'true');
   document.head.appendChild(attribution);
 
+  // Keep the 2022 adjudication reconstruction source-controlled across relevant pages.
+  // Public treatment deliberately refers only to an anonymised third-party bidder.
+  const adjudication = document.createElement('script');
+  adjudication.src = new URL('adjudicacion-provenance-cross-site-20260819.js?v=20260820a', current.src).href;
+  adjudication.async = false;
+  adjudication.setAttribute('data-adjudicacion-provenance-loader', 'true');
+  document.head.appendChild(adjudication);
+
   // Correct the PP 1041 withdrawal narrative across every connected AC, lender, Article 1535 and pacto-comisorio route.
   const withdrawalAuthority = document.createElement('script');
   withdrawalAuthority.src = new URL('pp1041-withdrawal-authority-correction-20260820.js?v=20260820b', current.src).href;
