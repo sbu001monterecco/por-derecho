@@ -22,6 +22,13 @@
   attribution.setAttribute('data-san-telmo-attribution-loader', 'true');
   document.head.appendChild(attribution);
 
+  // Correct the PP 1041 withdrawal narrative across every connected AC, lender, Article 1535 and pacto-comisorio route.
+  const withdrawalAuthority = document.createElement('script');
+  withdrawalAuthority.src = new URL('pp1041-withdrawal-authority-correction-20260820.js?v=20260820a', current.src).href;
+  withdrawalAuthority.async = false;
+  withdrawalAuthority.setAttribute('data-pp1041-withdrawal-authority-loader', 'true');
+  document.head.appendChild(withdrawalAuthority);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
