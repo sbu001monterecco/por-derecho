@@ -157,3 +157,17 @@ Controlling corrections/limits:
 - current public-web material corroborates Espejo's Expert Witness professional role, but the precise historic **VIDISPIR** linkage was not independently established by the present public-web scan.
 
 Deletion status for the originating David Espejo thread remains governed by its own audit and preservation record; primary Gmail, court, appeal and audiovisual originals must remain in durable custody.
+
+## AC saturation / Article 82 / accountability control — 20 August 2026
+
+Read before any new AC-removal, DP 1956, Article 82, accounting, culpability or judge-overlap work:
+
+- `archive/THREAD_DELETION_AUDIT_AC_SATURATION_ART82_ACCOUNTABILITY_20AUG2026.md`
+- `archive/AP_SECTION4_EVIDENCE_ROUTE_CONTROL_20AUG2026.md`
+- `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md`
+
+The controlling correction is that a **broad Article 82 TRLC request is not an automatic next step**. Article 82 is a judicial-supervision/information power, while Article 83 makes orders resolving questions about exercise of the AC office non-appealable and prevents a later concursal incident on the matter resolved. Any Article 82 use must therefore be narrowly counsel-validated for evidence production, preservation, accounting or ongoing estate protection and must be mapped against the pending removal/AP, DP 1956, calificación and civil-responsibility routes before filing.
+
+The strategic objective is cumulative, not curative: protect and exit LPB while preserving a record capable of supporting actor-specific findings of AC responsibility/culpability in the competent concursal/civil and criminal routes. **Late correction, production, restitution or accounting does not erase the historical act/omission**; it must be dated and assessed for mitigation and evidential consequence without being treated either as retroactive exoneration or as proof of prior guilt.
+
+Keep the judicial firewall strict: judge-only decisions, AC factual inputs/recommendations, AC implementation/non-correction and private-actor conduct must remain separately attributed. Public language must not state criminal guilt as established without a competent finding.
