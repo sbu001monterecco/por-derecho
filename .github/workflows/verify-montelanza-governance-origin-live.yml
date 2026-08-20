@@ -1,0 +1,90 @@
+name: Verify Montelanza governance-origin live
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/montelanza-cuentas-2008/index.html'
+      - 'en/montelanza-accounts-2008/index.html'
+      - 'assets/data/montelanza-2008/**'
+      - 'assets/montelanza-governance-origin-20260821.js'
+      - 'assets/site.js'
+      - 'sitemap-montelanza-governance-origin.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-montelanza-governance-origin-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Poll public routes and source markers
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import os, time, urllib.request
+          base = 'https://sbu001monterecco.github.io/por-derecho'
+          q = f'?source={os.environ["SOURCE_SHA"][:12]}'
+          targets = {
+            '/es/montelanza-cuentas-2008/' + q: [
+              'data-montelanza-page="20260821"',
+              'Antes de la alegada captura',
+              '1.368.000',
+            ],
+            '/en/montelanza-accounts-2008/' + q: [
+              'data-montelanza-page="20260821"',
+              'Before the alleged capture',
+              'EUR 1,368,000',
+            ],
+            '/assets/data/montelanza-2008/manifest.json' + q: [
+              'f82c41bb6b0985105f31c35d6af09261d5b0820ee0a4049c9510f2ff3e7c5551',
+              'sale17Jun2008EUR',
+            ],
+            '/assets/data/montelanza-2008/governance-origin-v1.json' + q: [
+              'CRIMINAL_FORENSIC_HYPOTHESIS_NOT_PROVED',
+              'CF-REMOVE-DISPUTED-COMMUNITY-AUTHORITY',
+            ],
+            '/assets/data/montelanza-2008/ocr-pages-37-38.txt' + q: [
+              'SOURCE PDF PAGE 38 / 38',
+            ],
+            '/assets/montelanza-governance-origin-20260821.js' + q: [
+              'data-montelanza-governance-origin',
+              'do not prove criminal capture',
+            ],
+            '/sitemap-montelanza-governance-origin.xml' + q: [
+              'es/montelanza-cuentas-2008/',
+              'en/montelanza-accounts-2008/',
+            ],
+          }
+          last = []
+          for attempt in range(1, 37):
+            last = []
+            for path, markers in targets.items():
+              try:
+                request = urllib.request.Request(
+                  base + path,
+                  headers={
+                    'User-Agent': 'Por-Derecho-Montelanza-live-verifier/1.0',
+                    'Cache-Control': 'no-cache',
+                  },
+                )
+                with urllib.request.urlopen(request, timeout=20) as response:
+                  body = response.read().decode('utf-8', 'replace')
+                  status = response.status
+                missing = [marker for marker in markers if marker not in body]
+                if status != 200 or missing:
+                  last.append((path, status, missing))
+              except Exception as exc:
+                last.append((path, 'ERR', repr(exc)))
+            if not last:
+              print('MONTELANZA LIVE VERIFIED', attempt)
+              raise SystemExit(0)
+            print('attempt', attempt, last)
+            time.sleep(5)
+          raise SystemExit(f'Montelanza live verification failed: {last}')
+          PY
