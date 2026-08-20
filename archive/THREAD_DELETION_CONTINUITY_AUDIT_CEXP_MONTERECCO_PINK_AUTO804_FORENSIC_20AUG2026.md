@@ -2,7 +2,7 @@
 
 **Audit date:** 20 August 2026
 **Owner:** Gil Marer / Project Sun Rock
-**Current publication state:** `LIVE_VERIFIED` — repository, CI, Pages and rendered public-site evidence are recorded below
+**Current publication state:** `DELETION_SAFE` — final continuity status: **DELETION-SAFE WITH OPEN EVIDENCE**
 **Target close-out:** `DELETION-SAFE WITH OPEN EVIDENCE`
 
 ## 1. Scope and controlling rule
@@ -119,11 +119,11 @@ These gaps are evidence-custody or completion gaps, not conversation-dependency 
 | Canary-time reminder | enabled for 27 August 2026, 09:00 `Atlantic/Canary`; bounded records-request wording verified | PASS |
 | PR/CI/merge | PR #631; head `b1d1f7277e2c36f755cea79eb37c704c6e1f292b`; merge `6e175e1fc68537f1923914648e84e0aa1b7b8d57`; all observed PR checks passed | PASS |
 | Pages/live verification | Pages run 779 / Actions run `32395762599` succeeded; eight declared ES/EN routes rendered the controlling markers | PASS |
-| Completion self-email | exact Gmail evidence not yet recorded | PENDING |
+| Completion self-email | sent successfully to the authenticated account on 20 August 2026; subject recorded below and located in Gmail | PASS |
 
 ## 9. Current deletion verdict
 
-**LIVE-VERIFIED; NOT YET DELETION-SAFE.** The private content, public source, tracker, reminder, merge, CI, Pages deployment and rendered bilingual read-back are durable. The only remaining operational gate is the protocol-required completion self-email. After that successful send is recorded in this audit and the publication manifest, the final verdict may become **DELETION-SAFE WITH OPEN EVIDENCE**.
+**DELETION-SAFE WITH OPEN EVIDENCE.** The private content, public source, tracker, reminder, merge, CI, Pages deployment, rendered bilingual read-back and completion email are durable outside the originating conversation. The open items in section 7 are preserved evidence-acquisition gaps, not conversation-dependency gaps. This ChatGPT thread may be deleted without losing continuity.
 
 ### Publication and read-back evidence
 
@@ -133,3 +133,5 @@ These gaps are evidence-custody or completion gaps, not conversation-dependency 
 - Pages: build/deployment run 779, Actions run `32395762599`, succeeded.
 - Rendered read-back: ES/EN home, updates, RICPE/Sun Park and Community pages displayed the matched 20-August date and the controlling CEXP, 1-February-2012, 159/477, Order-804, May-2017 and source-access qualifications.
 - The Atom files parsed in the merged source. Direct browser navigation to the XML feeds was blocked by the verification client, so no separate anonymous rendered-feed claim is made.
+- Post-live continuity record: [PR #637](https://github.com/sbu001monterecco/por-derecho/pull/637), merged as `53242a372a102f73d3d7bbc547321d13f4419697`; its publication-integrity and preservation checks passed.
+- Completion email: sent successfully to the authenticated Gmail account on 20 August 2026 with subject **“Por Derecho — deletion-safe closeout: CEXP / Pink / Order 804 (20 Aug 2026)”**. The public repository records the searchable subject and successful send, not the internal Gmail message identifier.
