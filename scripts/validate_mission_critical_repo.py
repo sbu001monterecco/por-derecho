@@ -39,6 +39,7 @@ ALLOWED_WRITE = {
     "verify-criminal-engineering-investigation-live.yml": {"statuses"},
     "verify-san-telmo-rendered-attribution-live.yml": {"statuses"},
     "verify-por-derecho-foundation-stage-3-live.yml": {"statuses"},
+    "verify-ac-community-de-facto-administration-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
     "repository-backup-bundle.yml": {"statuses"},
 }
