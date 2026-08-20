@@ -108,3 +108,23 @@ Some earlier conversation-only uploads have expired. Recover originals first fro
 ## Public-action control
 
 Do not send, file, publish, merge or expose privileged material merely because it appears in this handover. This file is an internal operational handover and must not be treated as a public-facing legal allegation or counsel opinion.
+
+## David Espejo / Expert Witness deep evidence reconstruction — 20 August 2026
+
+Canonical preservation sources from the current deep scan:
+
+- `archive/DAVID_ESPEJO_EXPERT_WITNESS_DEEP_EVIDENCE_RECONSTRUCTION_20AUG2026.md`
+- `THREAD_DELETION_AUDIT_2026-08-20_DAVID_ESPEJO.md`
+
+Controlling corrections/limits:
+
+- preserve the **professional-first** chronology but not a `professional-only forever` thesis; later 2024 networking/contact evidence must remain visible as contrary evidence;
+- four signed Espejo finals were delivered to counsel on 23 April 2019, but the located LPB opposition filed 23/24 April 2019 identifies **two separate Espejo annexes**, documents 3 and 5; do not say four separate Espejo reports were filed in that specific opposition;
+- the 24 July 2023 issue is a proved **device/media-access barrier** (no CD reader available to Espejo), not proof of a defective/corrupt CD; whether he obtained the exact filed reports before testifying remains unresolved;
+- the stated 25 July recording figures produce a raw approximately **42-minute** wall-clock/runtime difference, not 27 minutes; a recess may account for part/all of the difference and manipulation is not proved;
+- the located final Gil and Pink/PDM appeals do not expressly plead the CD/recording issue; the final LPB appeal text has not been located in the searched mailbox and remains a live gap;
+- **CAM = Construcciones Acosta Matos, S.A.** in this dossier; keep it separate from lender-name abbreviations;
+- distinguish the statutory **RIC** mechanism from **RIC Private Equity Investment Partners SCR, S.A.** / case shorthand `RPE` / informal `RICPE`;
+- current public-web material corroborates Espejo's Expert Witness professional role, but the precise historic **VIDISPIR** linkage was not independently established by the present public-web scan.
+
+Deletion status for the originating thread remains **not yet safe for casual deletion until the preservation branch/PR is retained or merged**. After merge it is conditionally safe from synthesis-loss perspective only; primary Gmail, court, appeal and audiovisual originals must remain in durable custody.
