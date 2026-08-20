@@ -12,6 +12,8 @@ Deleting the conversation will not remove the decisive institutional transmissio
 1. present the reinforced DIP 79 and DIP 80 communications through the appropriate electronic registry; and
 2. monitor for delivery failures, acknowledgment, incorporation, hearing, suspension or decision.
 
+The repository source can be confirmed immediately after merge. GitHub Pages deployment and external read-back are separate states; this audit does not treat a merged source file as independently live until the published route has been read back.
+
 ## Durable records confirmed
 
 | Item | Durable location | Verified state |
@@ -24,7 +26,7 @@ Deleting the conversation will not remove the decisive institutional transmissio
 | July 2021 CAM/RICPE filing and Guerra certificate | Gmail sent attachment set and File Library/registry-receipt records | Preserved independently of the chat |
 | February 2021 CAM filing and Community certificate | Gmail sent attachment set | Preserved independently of the chat |
 | Two Spanish orientation graphics | Gmail DIP 79 and DIP 80 sent messages | Preserved independently of the chat |
-| Criminal/deontological reconstruction and institutional status | Por Derecho repository and noindex pages | Updated in the repository branch covered by this audit |
+| Criminal/deontological reconstruction and institutional status | Por Derecho repository and noindex pages | Updated in the repository change covered by this audit |
 
 ## Website/repository pages carrying the distilled work
 
@@ -97,6 +99,7 @@ The thread also contains exploratory reasoning, intermediate prompts and superse
 | Obtain ICALPA acknowledgment and file-allocation confirmation | Pending | No |
 | Obtain official index, respondent-notification date, hearing status and route decision | Pending | No |
 | Update pages against receipts rather than intention | Pending | No |
+| Confirm external GitHub Pages read-back after deployment | Pending at audit time | No |
 | Create a new off-GitHub backup after the latest repository merges | Recommended, not required for thread deletion | No |
 
 ## Deletion decision
