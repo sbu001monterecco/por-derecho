@@ -18,7 +18,8 @@ const canonicalRoutes = [
       '13.168.082,02',
       'tercer oferente',
       '14,8 M€',
-      'reconstrucciones posteriores',
+      'escritura n.º 457',
+      'deuda que sirve de contraprestación',
     ],
   },
   {
@@ -31,7 +32,8 @@ const canonicalRoutes = [
       '13,168,082.02',
       'third-party bidder',
       '14.8m',
-      'later party reconstructions',
+      'deed no. 457',
+      'debt serving as consideration',
     ],
   },
 ];
