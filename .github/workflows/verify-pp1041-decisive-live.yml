@@ -11,6 +11,15 @@ on:
       - 'scripts/verify_pp1041_decisive_live.py'
       - '.github/workflows/verify-pp1041-decisive-live.yml'
       - 'publication-manifests/pp1041-decisive-production-20260820.json'
+  pull_request:
+    paths:
+      - 'en/pp1041-single-most-important-production/**'
+      - 'es/pp1041-produccion-documental-decisiva/**'
+      - 'assets/unitary-criminal-reverse-engineering-20260820.js'
+      - 'sitemap-criminal-engineering.xml'
+      - 'scripts/verify_pp1041_decisive_live.py'
+      - '.github/workflows/verify-pp1041-decisive-live.yml'
+      - 'publication-manifests/pp1041-decisive-production-20260820.json'
   workflow_dispatch:
 
 permissions:

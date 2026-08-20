@@ -1,9 +1,15 @@
 {
   "publication_id": "PP1041-DECISIVE-PRODUCTION-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "LIVE_VERIFIED",
   "control_date": "2026-08-20",
   "control_marker": "pp1041-single-most-important-production-20260820",
+  "merge_sha": "0d1fb5ba11d9f5b9244bdeb8622057cdb78e431f",
+  "source_merge": {
+    "pull_request": 601,
+    "merge_commit": "0d1fb5ba11d9f5b9244bdeb8622057cdb78e431f",
+    "title": "Publish PP 1041 as the single most important production demand"
+  },
   "expected_routes": {
     "es": [
       "es/pp1041-produccion-documental-decisiva/index.html"
@@ -25,5 +31,60 @@
     "privileged_advice_committed": false,
     "criminal_guilt_stated_as_final": false,
     "formal_allegation_boundary_preserved": true
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "validated_head": "22f3bf85c10297265e194f1c439c27f8542d78db",
+    "evidence": [
+      "PR #601: Validate PP 1041 decisive production — success",
+      "PR #601: Publication integrity gate — success",
+      "PR #601: Validate unitary criminal reverse engineering — success",
+      "PR #601: Validate criminal-engineering and case information architecture — success",
+      "PR #601: Validate unitary public shell — success",
+      "PR #601: Public bidder anonymisation gate — success",
+      "PR #601: Off-GitHub Preservation Snapshot — success",
+      "PR #602: external PP 1041 decisive live verifier — success"
+    ]
+  },
+  "deployment_evidence": [
+    "PR #601 merge 0d1fb5ba11d9f5b9244bdeb8622057cdb78e431f published the bilingual PP 1041 decisive-production pages, P0 gateway, research controls and sitemap entries.",
+    "External production run 32375191910 observed the deployed source on the public GitHub Pages host."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/pp1041-single-most-important-production/",
+    "https://sbu001monterecco.github.io/por-derecho/es/pp1041-produccion-documental-decisiva/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/unitary-criminal-reverse-engineering-20260820.js",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/en/pp1041-single-most-important-production/": [
+      "pp1041-single-most-important-production-20260820",
+      "THE SINGLE MOST IMPORTANT PRODUCTION",
+      "The certified PP 1041/2017 file together with the Insolvency Administrator's internal authority, instruction and estate-interest record."
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/pp1041-produccion-documental-decisiva/": [
+      "pp1041-single-most-important-production-20260820",
+      "LA PRODUCCIÓN DOCUMENTAL MÁS IMPORTANTE",
+      "El expediente certificado PP 1041/2017 junto con el expediente interno del Administrador concursal relativo a autoridad, instrucciones y análisis del interés de la masa."
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/unitary-criminal-reverse-engineering-20260820.js": [
+      "pp1041-single-most-important-production-20260820",
+      "pp1041-single-most-important-production",
+      "pp1041-produccion-documental-decisiva"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml": [
+      "pp1041-single-most-important-production",
+      "pp1041-produccion-documental-decisiva"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "PASS",
+    "workflow": ".github/workflows/verify-pp1041-decisive-live.yml",
+    "run_id": 32375191910,
+    "job_id": 96444775238,
+    "artifact_id": 9408710794,
+    "artifact_name": "pp1041-decisive-live-evidence",
+    "verified_at": "2026-08-20T13:36:12Z",
+    "result": "The English and Spanish pages, permanent P0 gateway and criminal-engineering sitemap returned HTTP 200, exceeded minimum size thresholds and contained their distinctive source markers."
   }
 }
