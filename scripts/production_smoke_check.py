@@ -61,10 +61,10 @@ CHECKS = [
      "markers": ["No fue un buzón pasivo de servicing", "Promontoria Holding 122 B.V. / PH122"],
      "kind": "ph122_perimeter_es", "min_bytes": 5000},
     {"path": "en/insolvency-administrator-credit-to-title-gatekeeper/",
-     "markers": ["The Insolvency Administrator was not an observer", "statutory gatekeeper"],
+     "markers": ["The Insolvency Administrator was not an observer", "His office controlled indispensable gates"],
      "kind": "administrator_gatekeeper_en", "min_bytes": 5000},
     {"path": "es/administrador-concursal-puerta-credito-titulo/",
-     "markers": ["El Administrador concursal no fue un observador", "compuerta legal de la masa"],
+     "markers": ["El Administrador concursal no fue un observador", "Su cargo controló compuertas indispensables"],
      "kind": "administrator_gatekeeper_es", "min_bytes": 5000},
     {"path": "en/lender-of-record/liability/",
      "markers": ["A creditor chain is not a clean slate", "indirect credit-to-control-to-title appropriation architecture"],
@@ -75,7 +75,7 @@ CHECKS = [
     {"path": "sitemap-lender-liability.xml",
      "markers": ["pacto-comisorio-credit-to-title-architecture", "perimetro-ph122-cerberus-haya-bankia-externo", "administrador-concursal-puerta-credito-titulo"],
      "kind": "lender_liability_sitemap", "min_bytes": 500},
-    {"path": "assets/site.js", "markers": ["site-base-20260819.js?v=20260819a", "case-information-architecture-20260819.js?v=20260819b"],
+    {"path": "assets/site.js", "markers": ["site-pre-intervencion-highlight-20260820.js?v=20260820a", "intervencion-protected-assets-highlight-20260820.js?v=20260820a"],
      "kind": "global_loader", "min_bytes": 1000},
 ]
 
