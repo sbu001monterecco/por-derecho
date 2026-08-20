@@ -9,6 +9,8 @@
 
 This request seeks a conservation-led architect or multidisciplinary team able to test whether the proposed institutional uses of San Bernardo 27 can be reconciled with the building’s fabric, legal status, safety, accessibility, privacy and long-term maintenance.
 
+**The house is not the Foundation.** The Foundation’s institutional plan must remain subordinate to safety, historic fabric, lawful authority and legal constraints. A room name, public narrative or desired programme cannot overrule what the building, the law or the persons with authority permit.
+
 The first phase is deliberately non-intrusive and desk-based. It is not acquisition diligence, a condition survey, valuation, planning opinion, heritage consent, technical project, cost plan, works instruction or representation that Por Derecho or any buyer owns or controls the property.
 
 ## 2. Absolute access and communication gate
