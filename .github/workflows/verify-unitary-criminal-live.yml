@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: read
+  statuses: write
 
 concurrency:
   group: verify-unitary-criminal-live
@@ -36,6 +37,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify live bilingual routes, PP 1041 correction, gateway and sitemap
+        id: verify
+        continue-on-error: true
         run: |
           python scripts/verify_unitary_criminal_live.py \
             --attempts 4 \
@@ -50,3 +53,23 @@ jobs:
           path: artifacts/unitary-criminal-live/latest.json
           if-no-files-found: error
           retention-days: 90
+      - name: Publish queryable production status
+        if: always()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+        with:
+          script: |
+            const ok = '${{ steps.verify.outcome }}' === 'success';
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: ok ? 'success' : 'failure',
+              context: 'pages-propagation/unitary-criminal-reverse-engineering',
+              description: ok
+                ? 'ES/EN criminal hub, PP1041 correction, gateway and sitemap live'
+                : 'Unitary criminal live verification failed',
+              target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            });
+      - name: Fail when production verification failed
+        if: steps.verify.outcome != 'success'
+        run: exit 1
