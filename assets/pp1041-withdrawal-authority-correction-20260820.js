@@ -18,11 +18,21 @@
     '/es/concurso-36-2012-administrador-concursal/',
     '/en/insolvency-36-2012-insolvency-administrator/',
     '/es/convergencia-venta-acreedor/',
-    '/en/sale-lender-convergence/'
+    '/en/sale-lender-convergence/',
+    '/es/sala-control-caso/',
+    '/en/case-control-room/'
   ];
   const routeMatch = exactRoutes.some(route => path.includes(route));
   const thematicMatch = [
-    '/1041-', '/retracto-', '/litigious-credit-', '/article-1535', '/articulo-1535'
+    '/1041-',
+    '/retracto-',
+    '/litigious-credit-',
+    '/article-1535',
+    '/articulo-1535',
+    '/dp-1901-2026/',
+    '/ingenieria-forense-criminal',
+    '/criminal-engineering',
+    '/icalpa-'
   ].some(fragment => path.includes(fragment));
   const dedicated = path.includes('/es/desistimiento-pp1041-autoridad-autenticidad-beneficio/') ||
     path.includes('/en/pp1041-withdrawal-authority-authenticity-benefit/');
