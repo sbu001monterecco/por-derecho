@@ -104,7 +104,7 @@ The RFP:
 - separates preservation from acquisition diligence, title, valuation, planning, heritage and structural advice;
 - requires conservation, accessibility, fire, privacy and discreet technology to be tested together;
 - allows a professional to recommend less intervention or no intervention;
-- repeats that the house is not the Foundation.
+- subordinates the institutional programme to safety, fabric and legal constraints.
 
 ## 8. Validation architecture
 
@@ -126,7 +126,8 @@ Post-merge verification:
 - polls the public GitHub Pages edge;
 - checks stage-two institutional routes and stage-three execution routes;
 - checks the shared CSS/JavaScript, sitemap and robots registration;
-- publishes persistent commit status `pages-propagation/por-derecho-foundation-stage-3`.
+- remains read-only in accordance with the repository mission-critical permission policy;
+- preserves exact verification evidence in the workflow run and generated JSON report.
 
 ## 9. Outreach status
 
@@ -144,6 +145,5 @@ To be completed only after the evidence exists:
 - Merge time: `PENDING`
 - Public-edge workflow run: `PENDING`
 - Public-edge result: `PENDING`
-- Persistent status: `PENDING`
 
 The existence of this record does not itself establish any of those milestones.
