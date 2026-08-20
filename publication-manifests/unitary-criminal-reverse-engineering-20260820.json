@@ -1,7 +1,7 @@
 {
   "publication_id": "UNITARY-CRIMINAL-REVERSE-ENGINEERING-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
   "control_date": "2026-08-20",
   "control_marker": "unitary-criminal-reverse-engineering-20260820",
   "merge_sha": "0449e5d5ac00576ac4bbd7f58d69060114cc54c9",
@@ -106,5 +106,15 @@
     "artifact_name": "unitary-criminal-live-evidence",
     "verified_at": "2026-08-20T12:31:38Z",
     "result": "All eight live checks returned HTTP 200, exceeded minimum byte thresholds and contained their distinctive source markers."
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audit_date": "2026-08-20",
+    "audit_path": "docs/deletion-audits/2026-08-20-lender-pacto-pp1041-criminal-first-thread.md",
+    "thread_scope": "Lender-of-record liability, indirect pacto-comisorio architecture, PP 1041 attribution, criminal-first reconstruction, publication and evidence-gap preservation.",
+    "open_evidence_preserved": true,
+    "open_remote_prs_recorded": [576],
+    "chat_required_for_future_work": false,
+    "verdict": "The authoritative source, public routes, live-verification evidence, strongest defences, open evidence queue and custody boundaries are preserved outside ChatGPT."
   }
 }
