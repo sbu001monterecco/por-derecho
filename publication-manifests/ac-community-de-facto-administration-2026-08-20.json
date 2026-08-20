@@ -2,7 +2,8 @@
   "publication_id": "AC-COMMUNITY-DE-FACTO-ADMINISTRATION-20260820",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-20",
-  "current_state": "MERGED_CI_GREEN_LIVE_REVERIFY_PENDING",
+  "current_state": "MERGED",
+  "merge_sha": "0c4d446833070c12816ee47618256e1162ffe550",
   "subject": "Community/private-actor de facto management functions, AC reliance, Community debt and definitive-text compliance in Concurso 36/2012",
   "expected_routes": {
     "es": [
@@ -72,6 +73,16 @@
     "merge_status": "MERGED"
   },
   "validation": {
+    "evidence": [
+      "Dedicated validation workflow run 32353866070 completed successfully on PR #581.",
+      "Publication-integrity workflow run 32353866114 completed successfully on PR #581.",
+      "Criminal-engineering/case-architecture run 32353866045 completed successfully on PR #581.",
+      "Adjudication-provenance run 32353866047 completed successfully on PR #581.",
+      "Unitary-public-shell run 32353866091 completed successfully on PR #581.",
+      "Off-GitHub preservation run 32353866096 completed successfully on PR #581.",
+      "Public-bidder anonymisation run 32353866099 completed successfully on PR #581.",
+      "Visual-asset registry run 32353866078 completed successfully on PR #581."
+    ],
     "dedicated_workflow_run_id": 32353866070,
     "dedicated_workflow": "SUCCESS",
     "publication_integrity_run_id": 32353866114,
