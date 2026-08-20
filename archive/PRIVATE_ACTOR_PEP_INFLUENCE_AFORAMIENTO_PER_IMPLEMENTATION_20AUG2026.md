@@ -1,7 +1,10 @@
 # Private-actor PEP / influence / aforamiento / PER — implementation record
 
 **Date:** 20 August 2026  
-**Initial state:** implementation branch `codex/pep-influence-aforamiento-per-audit-20aug2026`; PR/merge/live verification to be recorded in a later close-out update.
+**Status:** **MERGED TO `main` via PR #666**  
+**Merge commit:** `9d49573d6f40b98549bfa8910bd7bab5454719f9`  
+**Repository read-back:** verified from current `main` after merge.  
+**Rendered-site verification:** dedicated push-to-main live verifier installed; independent external read-back remains a recoverable deployment-verification item until a successful run/browser read-back is recorded.
 
 ## User objective preserved
 
@@ -48,7 +51,18 @@ The user specifically requested that **PER** be added. The implementation also a
 - inbound navigation/cross-links added to the bilingual full actor registers.
 
 ### Live verification
-- `.github/workflows/verify-pep-proceedings-live.yml` created to verify the new PEP pages and to close the prior live-read-back gap for the proceedings propagation from PR #662: institutional records, Pink 496/2026 and Cuatrecasas 434/26 → CCACM 193/2026.
+- `.github/workflows/verify-pep-proceedings-live.yml` is now on `main` and is configured to verify the new PEP pages and the earlier PR #662 proceedings surfaces: institutional records, Pink 496/2026 and Cuatrecasas 434/26 → CCACM 193/2026.
+- The verifier checks both languages, exact marker text, HTTP 200 and non-trivial response length with cache-busting/retry and preserves a JSON artifact.
+- This close-out does **not** upgrade that design into a claim that a successful live run/browser read-back has been observed. A future thread can retrieve the run or repeat the external read-back and then close that finite deployment-evidence item.
+
+## PR / QA state
+
+- Implementation branch: `codex/pep-influence-aforamiento-per-audit-20aug2026`
+- PR: **#666 — Add PEP, influence, aforamiento and related-person audit**
+- Merge: **successful**
+- Merge commit: `9d49573d6f40b98549bfa8910bd7bab5454719f9`
+- Changed-file publication-integrity validation passed all 11 changed files; operational integrity, visual identity, public-bidder preservation and off-GitHub snapshot checks passed.
+- The aggregate Publication Integrity Gate remained red only because the repository-wide mission-critical validator detected a pre-existing, unrelated `statuses: write` permission in `.github/workflows/verify-eleconomista-live.yml`; PR #666 did not modify that workflow. The non-regression explanation was recorded in the PR before merge.
 
 ## Public safeguards
 
@@ -64,3 +78,7 @@ The user specifically requested that **PER** be added. The implementation also a
 ## Open evidence
 
 ME-068 and its specialist sub-questions remain intentionally open. A future thread can recover the exact continuation from the specialist protocol without this conversation.
+
+## Continuity consequence
+
+The substantive intelligence, research prompt, legal-category distinctions, current actor statuses, public wording, source limits, open evidence and implementation/merge state no longer depend on this conversation. Only finite evidence collection and rendered-site verification remain open, both explicitly recoverable from `main`.
