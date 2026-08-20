@@ -1,0 +1,235 @@
+name: Verify Por Derecho and San Bernardo seller readiness
+
+on:
+  pull_request:
+    paths:
+      - 'es/fundacion-por-derecho/palacete-por-derecho/**'
+      - 'es/por-derecho/**'
+      - 'en/por-derecho/**'
+      - 'assets/por-derecho/**'
+      - 'assets/palacete-*.webp'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-por-derecho-seller-readiness-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/fundacion-por-derecho/palacete-por-derecho/**'
+      - 'es/por-derecho/**'
+      - 'en/por-derecho/**'
+      - 'assets/por-derecho/**'
+      - 'assets/palacete-*.webp'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-por-derecho-seller-readiness-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: por-derecho-seller-readiness-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate source routes, status language and private/public separation
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          class Parser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.ids=[]; self.links=[]; self.images=[]; self.metas=[]
+              def handle_starttag(self, tag, attrs):
+                  d=dict(attrs)
+                  if 'id' in d: self.ids.append(d['id'])
+                  if tag == 'a' and 'href' in d: self.links.append(d['href'])
+                  if tag == 'img' and 'src' in d: self.images.append(d['src'])
+                  if tag == 'meta': self.metas.append(d)
+
+          required = {
+              'es/por-derecho/index.html': ['El Segundo Par de Ojos','Iniciativa en formación'],
+              'en/por-derecho/index.html': ['The Second Pair of Eyes','Initiative in formation'],
+              'es/por-derecho/origen/index.html': ['Nacido de un caso','DIP 80/2026'],
+              'en/por-derecho/origin/index.html': ['Born from a case','DIP 80/2026'],
+              'es/por-derecho/gobernanza-e-independencia/index.html': ['No existe todavía Fundación registrada'],
+              'en/por-derecho/governance-and-independence/index.html': ['There is not yet a registered Foundation'],
+              'es/por-derecho/investigacion-y-formacion/index.html': ['Revisión independiente no realizada','Caso Prisma'],
+              'en/por-derecho/research-and-training/index.html': ['Independent review not performed','Case Prism'],
+              'es/por-derecho/ejecucion-institucional/index.html': ['Preparar no es nombrar','data-pd-foundation-stage3="20260820"'],
+              'en/por-derecho/institutional-execution/index.html': ['Preparing is not appointing','data-pd-foundation-stage3="20260820"'],
+              'es/por-derecho/palacete/index.html': ['La casa no es la Fundación','adquisición no está completada'],
+              'en/por-derecho/palacete/index.html': ['The house is not the Foundation','acquisition has not been completed'],
+              'es/fundacion-por-derecho/palacete-por-derecho/index.html': [
+                  'data-pd-seller-readiness="20260820"',
+                  'Contexto conocido; adhesión no presumida',
+                  'El 13 de agosto de 2026, IZADI comunicó',
+                  'Carlos Llamas Sanz',
+                  'La web explica y permite corregir. El contrato, cuando exista',
+                  'No se ha localizado todavía un acuerdo de compraventa',
+                  'noindex,nofollow,noarchive',
+              ],
+          }
+          failures=[]
+          for path, markers in required.items():
+              text=Path(path).read_text(encoding='utf-8')
+              for marker in markers:
+                  if marker.casefold() not in text.casefold(): failures.append(f'{path}: missing {marker}')
+              p=Parser(); p.feed(text)
+              if len(p.ids) != len(set(p.ids)): failures.append(f'{path}: duplicate HTML id')
+
+          seller=Path('es/fundacion-por-derecho/palacete-por-derecho/index.html').read_text(encoding='utf-8')
+          p=Parser(); p.feed(seller)
+          robots=[m.get('content','') for m in p.metas if m.get('name','').lower()=='robots']
+          if 'noindex,nofollow,noarchive' not in [x.replace(' ','').lower() for x in robots]:
+              failures.append('seller page: exact noindex,nofollow,noarchive missing')
+          for href in ['../../por-derecho/','../../por-derecho/palacete/','../../']:
+              if href not in p.links: failures.append(f'seller page: missing route {href}')
+          for image in [
+              '../../../assets/palacete-san-bernardo-historica-marco.webp?v=20260820',
+              '../../../assets/palacete-san-bernardo-historica-detalle.webp?v=20260820',
+              '../../../assets/palacete-por-derecho-vision-01.webp?v=20260820',
+              '../../../assets/palacete-por-derecho-vision-02.webp?v=20260820',
+          ]:
+              if image not in p.images: failures.append(f'seller page: missing image {image}')
+
+          sitemap=Path('sitemap-por-derecho-foundation.xml').read_text(encoding='utf-8')
+          ET.fromstring(sitemap)
+          if '/es/fundacion-por-derecho/palacete-por-derecho/' in sitemap:
+              failures.append('seller direct page must remain outside public sitemap')
+
+          forbidden_public = ['9 millones', 'talones nominativos', 'pagos aplazados', 'arras']
+          public=Path('es/por-derecho/palacete/index.html').read_text(encoding='utf-8')
+          for term in forbidden_public:
+              if term.casefold() in public.casefold(): failures.append(f'public Palacete leaks transaction term: {term}')
+
+          if failures:
+              print('\n'.join(f'- {x}' for x in failures))
+              raise SystemExit(1)
+          print('SOURCE_INTEGRITY_VERIFIED')
+          PY
+
+  public-edge:
+    if: github.event_name != 'pull_request'
+    needs: source-integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    env:
+      BASE_URL: https://sbu001monterecco.github.io/por-derecho
+      STATUS_CONTEXT: pages-propagation/por-derecho-seller-readiness
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Poll public routes, assets and exact seller-readiness markers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+        run: |
+          python - <<'PY'
+          import json, os, time, urllib.request
+
+          base=os.environ['BASE_URL'].rstrip('/')
+          text_targets={
+            '/es/por-derecho/':['El Segundo Par de Ojos','por-derecho.js'],
+            '/en/por-derecho/':['The Second Pair of Eyes','por-derecho.js'],
+            '/es/por-derecho/origen/':['Nacido de un caso','DIP 80/2026'],
+            '/en/por-derecho/origin/':['Born from a case','DIP 80/2026'],
+            '/es/por-derecho/gobernanza-e-independencia/':['No existe todavía Fundación registrada'],
+            '/en/por-derecho/governance-and-independence/':['There is not yet a registered Foundation'],
+            '/es/por-derecho/investigacion-y-formacion/':['Revisión independiente no realizada','Caso Prisma'],
+            '/en/por-derecho/research-and-training/':['Independent review not performed','Case Prism'],
+            '/es/por-derecho/ejecucion-institucional/':['Preparar no es nombrar','data-pd-foundation-stage3="20260820"'],
+            '/en/por-derecho/institutional-execution/':['Preparing is not appointing','data-pd-foundation-stage3="20260820"'],
+            '/es/por-derecho/palacete/':['La casa no es la Fundación','adquisición no está completada'],
+            '/en/por-derecho/palacete/':['The house is not the Foundation','acquisition has not been completed'],
+            '/es/fundacion-por-derecho/palacete-por-derecho/':[
+                'data-pd-seller-readiness="20260820"',
+                'Contexto conocido; adhesión no presumida',
+                'El 13 de agosto de 2026, IZADI comunicó',
+                'Carlos Llamas Sanz',
+                'noindex,nofollow,noarchive',
+            ],
+            '/assets/por-derecho/por-derecho.css':['.pd-header','.pd-footer'],
+            '/assets/por-derecho/foundation-stage-2.css':['.pds2-hero','.pds2-boundary'],
+            '/assets/por-derecho/por-derecho.js':['institutional-execution','data-pd-foundation-stage3'],
+          }
+          binary_targets=[
+            '/assets/palacete-san-bernardo-historica-marco.webp?v=20260820',
+            '/assets/palacete-san-bernardo-historica-detalle.webp?v=20260820',
+            '/assets/palacete-por-derecho-vision-01.webp?v=20260820',
+            '/assets/palacete-por-derecho-vision-02.webp?v=20260820',
+          ]
+          repo=os.environ['GITHUB_REPOSITORY']; sha=os.environ['GITHUB_SHA']
+          context=os.environ['STATUS_CONTEXT']; token=os.environ['GITHUB_TOKEN']
+          run_url=f"{os.environ['GITHUB_SERVER_URL']}/{repo}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+
+          def publish(state, description):
+            data=json.dumps({'state':state,'context':context,'description':description[:140],'target_url':run_url}).encode()
+            req=urllib.request.Request(f'https://api.github.com/repos/{repo}/statuses/{sha}',data=data,method='POST',headers={
+              'Authorization':f'Bearer {token}','Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json','User-Agent':'Por-Derecho-Seller-Readiness/1.0'})
+            with urllib.request.urlopen(req,timeout=30) as r: r.read()
+
+          def get(path):
+            req=urllib.request.Request(base+path,headers={'User-Agent':'Por-Derecho-Seller-Readiness/1.0'})
+            with urllib.request.urlopen(req,timeout=30) as r: return r.status, r.read(), dict(r.headers)
+
+          publish('pending','Waiting for Por Derecho and seller-page propagation')
+          final=[]
+          for attempt in range(1,13):
+            errors=[]; results={}
+            for path,markers in text_targets.items():
+              try:
+                code,data,headers=get(path); text=data.decode('utf-8','replace'); folded=text.casefold()
+                results[path]={'http':code,'bytes':len(data),'markers':{m:m.casefold() in folded for m in markers}}
+                if code!=200: errors.append(f'{path}: HTTP {code}')
+                for m in markers:
+                  if m.casefold() not in folded: errors.append(f'{path}: missing {m}')
+              except Exception as exc: errors.append(f'{path}: {type(exc).__name__}: {exc}')
+            for path in binary_targets:
+              try:
+                code,data,headers=get(path); ok=len(data)>1000 and data[:4]==b'RIFF' and data[8:12]==b'WEBP'
+                results[path]={'http':code,'bytes':len(data),'valid_webp':ok}
+                if code!=200 or not ok: errors.append(f'{path}: invalid WebP or HTTP {code}')
+              except Exception as exc: errors.append(f'{path}: {type(exc).__name__}: {exc}')
+            with open('por-derecho-seller-readiness-live.json','w',encoding='utf-8') as f:
+              json.dump({'attempt':attempt,'sha':sha,'results':results,'errors':errors},f,indent=2,ensure_ascii=False)
+            if not errors:
+              print(f'PUBLIC_EDGE_AND_ASSETS_VERIFIED on attempt {attempt}')
+              for path,r in results.items(): print(path,r)
+              publish('success','Foundation and San Bernardo seller journey are live and exact')
+              raise SystemExit(0)
+            final=errors
+            print(f'Attempt {attempt}:'); print('\n'.join(f'- {x}' for x in errors))
+            if attempt<12: time.sleep(20)
+          publish('failure','Foundation and San Bernardo seller readiness verification failed')
+          print('\n'.join(final)); raise SystemExit(1)
+          PY
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: por-derecho-seller-readiness-live
+          path: por-derecho-seller-readiness-live.json
+          if-no-files-found: error
+          retention-days: 30
