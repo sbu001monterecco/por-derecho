@@ -12,6 +12,7 @@ on:
       - 'assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json'
       - 'assets/ac-community-de-facto-administration-20260820.js'
       - 'assets/ac-de-facto-knowing-facilitation-visibility-20260820.js'
+      - 'assets/ac-de-facto-knowing-facilitation-stability-20260820.js'
       - 'assets/site.js'
       - 'es/administracion-de-hecho-comunidad-ac/index.html'
       - 'en/de-facto-administration-community-ac/index.html'
@@ -54,6 +55,7 @@ jobs:
         run: |
           node --check assets/ac-community-de-facto-administration-20260820.js
           node --check assets/ac-de-facto-knowing-facilitation-visibility-20260820.js
+          node --check assets/ac-de-facto-knowing-facilitation-stability-20260820.js
           node --check scripts/render_ac_community_de_facto_administration.mjs
       - name: Start local site
         run: |
