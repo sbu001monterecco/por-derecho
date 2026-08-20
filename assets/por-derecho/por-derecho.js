@@ -11,8 +11,8 @@
   const lang = document.documentElement.lang === 'en' ? 'en' : 'es';
   const base = `/por-derecho/${lang}/por-derecho/`;
 
-  // Keep the application register and the institutional programme discoverable
-  // across the Por Derecho methodology family without changing live-matter pages.
+  // Keep the application register and institutional programme discoverable
+  // across Por Derecho without changing any live-matter page.
   if (nav && !nav.querySelector('a[href*="aplicaciones-y-colaboracion"],a[href*="applications-and-collaboration"]')) {
     const link = document.createElement('a');
     link.dataset.pdApplicationsLink = 'true';
@@ -33,12 +33,30 @@
     const anchor = nav.querySelector('.pd-language,.pd-back');
     nav.insertBefore(link, anchor || null);
   }
+  if (nav && !nav.querySelector('a[href*="institutional-execution"],a[href*="ejecucion-institucional"]')) {
+    const link = document.createElement('a');
+    link.dataset.pdExecutionLink = 'true';
+    link.href = lang === 'en'
+      ? `${base}institutional-execution/`
+      : `${base}ejecucion-institucional/`;
+    link.textContent = lang === 'en' ? 'Execution' : 'Ejecución';
+    const anchor = nav.querySelector('.pd-language,.pd-back');
+    nav.insertBefore(link, anchor || null);
+  }
 
   function ensureStageTwoCss() {
     if (document.querySelector('link[href*="foundation-stage-2.css"]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = '/por-derecho/assets/por-derecho/foundation-stage-2.css';
+    document.head.appendChild(link);
+  }
+
+  function ensureStageThreeCss() {
+    if (document.querySelector('link[href*="foundation-stage-3.css"]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/por-derecho/assets/por-derecho/foundation-stage-3.css';
     document.head.appendChild(link);
   }
 
@@ -55,7 +73,7 @@
     section.dataset.pdFoundationStage2 = '20260820';
     if (lang === 'en') {
       section.innerHTML = `<div class="pd-shell">
-        <div class="pd-section-head"><div><p class="pd-kicker">Institutional stage two</p><h2>Draft the institution. Try to break the method. Preserve the house carefully.</h2></div><p>Three working instruments now move Por Derecho beyond a demonstrator without overstating its status. The Foundation is not registered, independent review has not yet occurred, and the San Bernardo acquisition is not complete.</p></div>
+        <div class="pd-section-head"><div><p class="pd-kicker">Institutional stage two</p><h2>Draft the institution. Try to break the method. Preserve the house carefully.</h2></div><p>Three working instruments move Por Derecho beyond a demonstrator without overstating its status. The Foundation is not registered, independent review has not yet occurred, and the San Bernardo acquisition is not complete.</p></div>
         <div class="pds2-docs">
           <article class="pds2-doc"><span class="pds2-state">Working draft</span><h3>Formation and governance</h3><p>Proposed purposes, Board, conflicts committee, scientific council, funding controls, founder-related quarantine and the rule that no asset or donor controls conclusions.</p><footer><a href="${base}governance-and-independence/">Open the governance draft →</a></footer></article>
           <article class="pds2-doc"><span class="pds2-state">Review not yet performed</span><h3>Independent red-team protocol</h3><p>Pre-registered synthetic tests, false-positive clearance, stop conditions, dissent, redesign and a real “do not deploy” outcome.</p><footer><a href="${base}research-and-training/">Open the review protocol →</a></footer></article>
@@ -72,6 +90,43 @@
           <article class="pds2-doc"><span class="pds2-state">Adquisición no completada</span><h3>Brief de preservación de San Bernardo</h3><p>Conservación, archivo, programa de estancias y tecnología discreta, separados de titularidad, estado, financiación, diligencia y autoridad para inspeccionar o alterar.</p><footer><a href="${base}palacete/">Abrir el brief de preservación →</a></footer></article>
         </div>
         <div class="pd-actions"><a class="pd-button secondary" href="${base}origen/">Por qué el caso del fundador puede originar preguntas pero no controlar conclusiones →</a></div>
+      </div>`;
+    }
+    main.insertBefore(section, target || null);
+  }
+
+  function addFoundationStageThreeHome() {
+    const path = window.location.pathname.replace(/index\.html$/, '');
+    const isHome = path === '/por-derecho/es/por-derecho/' || path === '/por-derecho/en/por-derecho/';
+    if (!isHome || document.querySelector('[data-pd-foundation-stage3]')) return;
+    ensureStageThreeCss();
+    const main = document.querySelector('main');
+    if (!main) return;
+    const target = main.querySelector('#formacion') || main.lastElementChild;
+    const section = document.createElement('section');
+    section.className = 'pd-section';
+    section.dataset.pdFoundationStage3 = '20260820';
+    if (lang === 'en') {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Institutional execution</p><h2>Four commission-ready packs. No external responsibility is presumed.</h2></div><p>Legal formation, independent Board recruitment, synthetic red-team review and San Bernardo conservation now have defined scopes and stop gates. They remain prepared—not appointed, commissioned, validated or legally completed.</p></div>
+        <div class="pds3-actions">
+          <article class="pds3-action"><strong>Legal/notarial formation</strong><span>Prepared for a lawyer to accept, redirect or recommend a pause.</span></article>
+          <article class="pds3-action"><strong>Independent governance</strong><span>Role and conflict architecture prepared; no trustees appointed.</span></article>
+          <article class="pds3-action"><strong>Synthetic red team</strong><span>Commission protocol prepared; independent review not performed.</span></article>
+          <article class="pds3-action"><strong>San Bernardo conservation</strong><span>RFP prepared; no architect, access or survey authorised.</span></article>
+        </div>
+        <div class="pd-actions"><a class="pd-button" href="${base}institutional-execution/">Open the 90-day execution control →</a></div>
+      </div>`;
+    } else {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Ejecución institucional</p><h2>Cuatro paquetes preparados para encargo. No se presume responsabilidad externa.</h2></div><p>Constitución jurídica, selección de Patronato independiente, red-team sintético y conservación de San Bernardo tienen ya alcance y puertas de parada. Siguen preparados: no nombrados, encargados, validados ni legalmente completados.</p></div>
+        <div class="pds3-actions">
+          <article class="pds3-action"><strong>Constitución jurídica/notarial</strong><span>Preparado para que un abogado acepte, redirija o recomiende pausar.</span></article>
+          <article class="pds3-action"><strong>Gobierno independiente</strong><span>Arquitectura de funciones y conflictos preparada; sin patronos nombrados.</span></article>
+          <article class="pds3-action"><strong>Red-team sintético</strong><span>Protocolo de encargo preparado; revisión independiente no realizada.</span></article>
+          <article class="pds3-action"><strong>Conservación de San Bernardo</strong><span>RFP preparado; sin arquitecto, acceso o levantamiento autorizado.</span></article>
+        </div>
+        <div class="pd-actions"><a class="pd-button" href="${base}ejecucion-institucional/">Abrir el control de ejecución a 90 días →</a></div>
       </div>`;
     }
     main.insertBefore(section, target || null);
@@ -100,6 +155,7 @@
           <article><div><h3>Adoption</h3><p>Use, partnership, accreditation or adoption is recorded only after the institution expressly confirms it.</p></div><aside>No adoption is presently claimed.</aside></article>
         </div>
         <div class="pds2-boundary" style="margin-top:20px"><h3>Case separation remains mandatory</h3><p>Sharing a method never transfers evidence between matters. Each use requires a human decision on relevance, provenance, lawful access, competence and the exact purpose for which a source is sufficient.</p></div>
+        <div class="pd-actions"><a class="pd-button secondary" href="${base}institutional-execution/">See the prepared commissions and unresolved external gates →</a></div>
       </div>`;
     } else {
       section.innerHTML = `<div class="pd-shell">
@@ -113,6 +169,7 @@
           <article><div><h3>Adopción</h3><p>Uso, colaboración, acreditación o adopción solo se registra tras confirmación expresa de la institución.</p></div><aside>No se afirma actualmente adopción.</aside></article>
         </div>
         <div class="pds2-boundary" style="margin-top:20px"><h3>La separación entre asuntos sigue siendo obligatoria</h3><p>Compartir método nunca transfiere prueba. Cada uso exige decisión humana sobre relevancia, procedencia, acceso lícito, competencia y el propósito exacto para el que una fuente resulta suficiente.</p></div>
+        <div class="pd-actions"><a class="pd-button secondary" href="${base}ejecucion-institucional/">Ver los encargos preparados y las puertas externas pendientes →</a></div>
       </div>`;
     }
     if (hero && hero.nextSibling) main.insertBefore(section, hero.nextSibling);
@@ -120,6 +177,7 @@
   }
 
   addFoundationStageTwoHome();
+  addFoundationStageThreeHome();
   addCorrectedMaturityLadder();
 
   const decisions = document.querySelectorAll('[data-decision]');
