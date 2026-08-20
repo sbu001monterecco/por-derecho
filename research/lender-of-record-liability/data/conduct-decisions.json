@@ -22,6 +22,17 @@
     "causation_questions": ["What rights and defences attached to the credit?", "What disclosures and due diligence occurred?", "What did CAM know at acquisition?"]
   },
   {
+    "id": "CD-2018-01-12-PP1041-DISCLOSURE-ORDER",
+    "date": "2018-01-12",
+    "actor_refs": ["ACT-LPB", "ACT-CAM", "ACT-CRISTO"],
+    "conduct": "Court order requiring production of the PH122-to-CAM assignment deed and disclosure of price, payment date and costs",
+    "capacity_status": "judicial_information_order",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COURT-2018-01-12-PP1041-DISCLOSURE-ORDER"],
+    "causation_questions": ["What information would production have supplied?", "What debt-reduction, redemption, negotiation, accounting or financing routes could it have informed?", "Why was the order not carried through?"]
+  },
+  {
     "id": "CD-2018-01-15-CAM-DACION",
     "date": "2018-01-15",
     "actor_refs": ["ACT-CAM"],
@@ -33,6 +44,30 @@
     "causation_questions": ["Was valuation objective and independent?", "How was surplus protected?", "Which properties and third-party rights were assumed?", "What alternative refinancing or convenio routes remained?"]
   },
   {
+    "id": "CD-2018-01-25-CAM-INVOKES-AC-AUTHORITY",
+    "date": "2018-01-25",
+    "actor_refs": ["ACT-CAM", "ACT-INSOLVENCY-ADMIN", "ACT-LPB"],
+    "conduct": "CAM invoked the absence of Insolvency Administration conformity as a procedural objection to LPB's disclosure route",
+    "capacity_status": "party_opposition_and_authority_argument",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-CAM-2018-01-25-PP1041-OPPOSITION"],
+    "causation_questions": ["Who within CAM instructed the objection?", "Was there prior communication with the Administrator or procurator?", "Did the later Administrator intervention satisfy the exact procedural need CAM identified?"],
+    "limits": ["The objection does not by itself prove coordination or improper purpose."]
+  },
+  {
+    "id": "CD-2018-01-25-AC-CONTROLS-REPRESENTATION",
+    "date": "2018-01-25",
+    "actor_refs": ["ACT-INSOLVENCY-ADMIN", "ACT-LPB", "ACT-CRISTO"],
+    "conduct": "Administrator ended Cristo Suárez Pimentel's LPB mandate, instructed him to cease future action and controlled procurator filings",
+    "capacity_status": "insolvency_office_representation_control",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-AC-2018-01-25-COUNSEL-CONTROL", "SRC-AC-2018-01-29-REPRESENTATION-CONTROL"],
+    "causation_questions": ["What statutory authority and estate-interest analysis supported the intervention?", "Was an Article 51.2 authorisation sought before withdrawal?", "What communications, conflicts and benefit analysis existed?"],
+    "allegation": "Por Derecho alleges that the intervention deliberately removed an obstacle confronting CAM and formed part of de facto functional agency for the CAM/Acosta Matos perimeter; this remains contested and is not a final finding."
+  },
+  {
     "id": "CD-2018-02-15-CAM-RECOGNISED",
     "date": "2018-02-15",
     "actor_refs": ["ACT-CAM", "ACT-INSOLVENCY-ADMIN"],
@@ -41,7 +76,20 @@
     "evidence_status": "verified_primary",
     "publication": "public_safe",
     "source_refs": ["SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
-    "causation_questions": ["What documents did the insolvency administration verify?", "What appeal/finality chain followed?", "What benefit or prejudice arose for the estate?"]
+    "causation_questions": ["What documents did the insolvency administration verify?", "What appeal/finality chain followed?", "What benefit or prejudice arose for the estate?", "Did this order determine withdrawal authority or only the separate assignee/Article 1535 issues?"]
+  },
+  {
+    "id": "CD-2018-03-05-WITHDRAWAL-FILED-IN-LPB-NAME",
+    "date": "2018-03-05",
+    "actor_refs": ["ACT-LPB", "ACT-CAM", "ACT-INSOLVENCY-ADMIN"],
+    "conduct": "Court ended PP 1041 after a withdrawal was filed in LPB's name and CAM did not oppose",
+    "capacity_status": "withdrawal_authenticity_authority_and_instruction_contested",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COURT-2018-03-05-PP1041-WITHDRAWAL-DECREE", "SRC-BOE-LC-ART51-2-HISTORICAL"],
+    "causation_questions": ["Who instructed, drafted, signed and filed the withdrawal?", "Which LexNET user/certificate and power were used?", "Where is the insolvency-judge authorisation and LPB hearing required by Article 51.2?", "What estate benefit was documented?", "Who obtained the procedural and economic benefit?"],
+    "allegation": "Por Derecho alleges false and unauthorised attribution of a withdrawal decision to LPB, deliberate estate harm and functional execution for the CAM/Acosta Matos perimeter, including decision or benefit roles of José Daniel Acosta Matos and Laura Patricia Acosta Matos to be proved.",
+    "limits": ["The decree records a withdrawal request in LPB's name; it does not establish an authentic voluntary LPB decision.", "No criminal, civil or professional liability finding is asserted as adjudicated."]
   },
   {
     "id": "CD-2022-CAM-HNT-SEGREGATION",
