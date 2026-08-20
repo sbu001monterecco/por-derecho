@@ -1,0 +1,63 @@
+name: Validate Por Derecho Foundation stage three
+
+on:
+  pull_request:
+    paths:
+      - 'es/por-derecho/**'
+      - 'en/por-derecho/**'
+      - 'assets/por-derecho/**'
+      - 'research/por-derecho/foundation-stage-3/**'
+      - 'es/fundacion-por-derecho/palacete-por-derecho/**'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'robots.txt'
+      - '.github/workflows/validate-por-derecho-foundation-stage-3.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/por-derecho/**'
+      - 'en/por-derecho/**'
+      - 'assets/por-derecho/**'
+      - 'research/por-derecho/foundation-stage-3/**'
+      - 'es/fundacion-por-derecho/palacete-por-derecho/**'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'robots.txt'
+      - '.github/workflows/validate-por-derecho-foundation-stage-3.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: por-derecho-foundation-stage-3-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+
+      - name: Validate execution, governance and property boundaries
+        run: python research/por-derecho/foundation-stage-3/validate.py
+
+      - name: Compile validation script
+        run: python -m py_compile research/por-derecho/foundation-stage-3/validate.py
+
+      - name: Check shared JavaScript syntax
+        run: node --check assets/por-derecho/por-derecho.js
+
+      - name: Validate JSON and sitemap independently
+        run: |
+          python -m json.tool research/por-derecho/foundation-stage-3/foundation-stage-3-execution-register.json >/dev/null
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse('sitemap-por-derecho-foundation.xml')
+          print('Sitemap XML: PASS')
+          PY
