@@ -1,0 +1,108 @@
+{
+  "publication_id": "AC-DE-FACTO-KNOWING-FACILITATION-VISIBILITY-20260820",
+  "parent_publication_id": "AC-COMMUNITY-DE-FACTO-ADMINISTRATION-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-20",
+  "current_state": "REMOTE_SOURCE",
+  "subject": "Cross-site visibility of the attributed serious de facto-management and knowing-facilitation allegation",
+  "public_headlines": {
+    "es": "Alegación transversal: administración de hecho y facilitación consciente",
+    "en": "Cross-cutting allegation: de facto management and knowing facilitation"
+  },
+  "expected_routes": {
+    "es": [
+      "es/administracion-de-hecho-comunidad-ac/index.html"
+    ],
+    "en": [
+      "en/de-facto-administration-community-ac/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
+    "archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_AC_DE_FACTO_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
+    "assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json",
+    "assets/ac-de-facto-knowing-facilitation-visibility-20260820.js",
+    "assets/ac-de-facto-knowing-facilitation-stability-20260820.js",
+    "assets/site.js",
+    "operations/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_ACTIVATION_2026-08-20.md",
+    "scripts/validate_ac_community_de_facto_administration.py",
+    "scripts/render_ac_community_de_facto_administration.mjs",
+    ".github/workflows/validate-ac-community-de-facto-administration.yml",
+    ".github/workflows/verify-ac-community-de-facto-administration-live.yml"
+  ],
+  "visibility_targets": {
+    "core": [
+      "home",
+      "updates",
+      "Case Control Room",
+      "criminal-engineering investigation",
+      "canonical de facto-administration routes"
+    ],
+    "direct_causal": [
+      "Community/CEXP/ACTA authority",
+      "Insolvency Administrator and professional perimeter",
+      "7 June takeover / Acosta Matos / Matkator",
+      "definitive texts / lender / insolvency / Article 1535 / adjudication",
+      "Calificacion / judge / LAJ / CGPJ / Fiscalía",
+      "notarial and Registry implementation"
+    ],
+    "downstream_reliance": [
+      "RICPE",
+      "same asset / multiple financial lives",
+      "RIC / incentives / FEDER",
+      "CNMV",
+      "Portfolio / Orion",
+      "HNT / MYND"
+    ]
+  },
+  "documented_anchors": [
+    "recurring private management functions over debt, voting, access, security and maintenance",
+    "Administrator request, attendance, identified authorisations and use of creditor-generated debt material",
+    "formal 2017 Community contingency modification",
+    "formal 2018 secured-credit holder-only substitution",
+    "later Community/debt figures used in liquidation or bidding without a currently located express post-liquidation enlargement of definitive recognised credit"
+  ],
+  "attributed_allegation": "Private actors operated as unrecognised functional managers and the Insolvency Administration knowingly enabled, adopted, relied upon or allowed important parts of that architecture, requiring investigation of de facto administration, knowing facilitation, essential cooperation or coordinated participation.",
+  "not_established": [
+    "criminal agreement",
+    "full administrator-in-fact status for every actor or function",
+    "knowing falsity of a specific document",
+    "procedural fraud",
+    "blanket double charging",
+    "judicial prevarication",
+    "automatic knowledge or guilt of later actors"
+  ],
+  "publication_boundaries": [
+    "attributed allegation rather than finding",
+    "documented/alleged/not-proved/decisive-evidence separation",
+    "actor and legal-person specificity",
+    "strongest defence and contrary evidence visible",
+    "no private or privileged source publication",
+    "no downstream transfer of knowledge or guilt",
+    "not yet located is not non-existence"
+  ],
+  "repository_state": {
+    "branch": "agent/ac-de-facto-knowing-facilitation-visibility-20260820",
+    "head_sha": null,
+    "pr": 589,
+    "merge_sha": null,
+    "merged_at": null
+  },
+  "validation": {
+    "repository": "PENDING",
+    "javascript": "PENDING",
+    "bilingual_render": "PENDING",
+    "route_classes": "PENDING",
+    "publication_integrity": "PENDING",
+    "public_edge": "PENDING"
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "workflow_run_id": null,
+    "workflow_job_id": null,
+    "source_sha": null,
+    "verified_at": null,
+    "commit_status_context": "pages-propagation/ac-de-facto-knowing-facilitation-visibility"
+  }
+}
