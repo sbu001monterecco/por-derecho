@@ -103,6 +103,14 @@
   cgpjTsjParity.setAttribute('data-cgpj-tsj-professional-parity-loader', 'true');
   document.head.appendChild(cgpjTsjParity);
 
+  // Preserve the 18-Aug-2026 source-derived idoneidad question without converting a witness
+  // recollection into primary proof. Only the RICPE idoneidad and 360° methodology routes render it.
+  const declaration004Provenance = document.createElement('script');
+  declaration004Provenance.src = new URL('declaration004-source-provenance-20260820.js?v=20260820a', current.src).href;
+  declaration004Provenance.async = false;
+  declaration004Provenance.setAttribute('data-declaration004-source-provenance-loader', 'true');
+  document.head.appendChild(declaration004Provenance);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
