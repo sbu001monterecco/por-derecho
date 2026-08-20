@@ -2,6 +2,30 @@
 
 Public, source-controlled follow-up items arising from the Sun Park operator-history review. This tracker records documentary requests; it does not state that an authority has accepted the underlying legal position.
 
+## Audiencia de Cuentas files 60/2026 and 145/2026 — internal entry recorded 20 August 2026
+
+Status: registered internally — treatment and substantive response pending
+Owner: legal team / Gil Marer
+Submission: access, clarification, competence delimitation and limited reconsideration concerning files 60/2026 and 145/2026
+RedSARA filing: `REGAGE26e00074022302`, presented 19 August 2026 at 20:48 Canary time
+Audiencia entry: `1619/2026`, entered 20 August 2026 at 08:30 through SIR
+Public pages: `/es/audiencia-cuentas-canarias/` · `/en/canary-islands-external-audit/`
+Public-safe evidence note: `INSTITUTIONAL_ACTIONS_AUDIENCIA_CUENTAS_1619_20AUG2026.md`
+
+### Controlling effect
+
+- The Audiencia de Cuentas de Canarias receipt of 20 August 2026 proves that the 19 August follow-up was entered correctly under entry number `1619/2026`.
+- The receipt connects the filing with files `60/2026` and `145/2026` and describes its subject as access, clarification, competence delimitation and limited reconsideration.
+- This resolves the previously open question whether the RedSARA filing had obtained an internal Audiencia entry.
+- It does not prove admission, reopening of an audit/fiscalisation, reconsideration on the merits, acceptance of any allegation or a substantive response.
+
+### Finite follow-up
+
+- Preserve the native email and receipt in the access-controlled custody layer. Do not publish the unredacted receipt because it contains personal contact data and a document-verification credential.
+- Track any allocation, procedural treatment, access decision, clarification, referral or merits response against both `REGAGE26e00074022302` and `1619/2026`.
+- Keep the file relationship explicit: file `60/2026` concerns the Plenary decision; file `145/2026` concerns the later communication/transmission; entry `1619/2026` records the 19 August follow-up.
+- Calculate any remedy deadline only from the applicable legal route and a confirmed triggering event. Internal entry alone does not establish the date or availability of a particular remedy.
+
 ## RIC / MYND Yaiza idoneidad reconciliation — opened 18 August 2026
 
 Status: open on the merits — public question ledger merged in PR #390 and live verified on GitHub Pages
