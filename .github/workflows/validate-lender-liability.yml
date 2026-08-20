@@ -10,6 +10,8 @@ on:
       - "es/administrador-concursal-puerta-credito-titulo/**"
       - "en/pp1041-withdrawal-authority-authenticity-benefit/**"
       - "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/**"
+      - "en/corrections-version-control/**"
+      - "es/correcciones-control-versiones/**"
       - "assets/pp1041-withdrawal-authority-correction-20260820.js"
       - "assets/site.js"
       - "sitemap-lender-liability.xml"
@@ -25,6 +27,8 @@ on:
       - "es/administrador-concursal-puerta-credito-titulo/**"
       - "en/pp1041-withdrawal-authority-authenticity-benefit/**"
       - "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/**"
+      - "en/corrections-version-control/**"
+      - "es/correcciones-control-versiones/**"
       - "assets/pp1041-withdrawal-authority-correction-20260820.js"
       - "assets/site.js"
       - "sitemap-lender-liability.xml"
@@ -52,6 +56,8 @@ jobs:
           test -f es/administrador-concursal-puerta-credito-titulo/index.html
           test -f en/pp1041-withdrawal-authority-authenticity-benefit/index.html
           test -f es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html
+          test -f en/corrections-version-control/index.html
+          test -f es/correcciones-control-versiones/index.html
           test -f assets/pp1041-withdrawal-authority-correction-20260820.js
           grep -q 'hreflang="es"' en/pp1041-withdrawal-authority-authenticity-benefit/index.html
           grep -q 'hreflang="en"' es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html
@@ -66,6 +72,8 @@ jobs:
           grep -q "desistimiento en nombre de LPB" es/administrador-concursal-puerta-credito-titulo/index.html
           grep -q "Article 51.2" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
           grep -q "art. 51.2" es/administrador-concursal-puerta-credito-titulo/index.html
+          grep -q "It is not established that LPB voluntarily withdrew" en/corrections-version-control/index.html
+          grep -q "No está acreditado que LPB desistiera voluntariamente" es/correcciones-control-versiones/index.html
           grep -q "pp1041-withdrawal-authority-correction-20260820.js" assets/site.js
           ! grep -q "LPB then withdrew" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
           ! grep -q "The later decree proves that LPB withdrew" en/insolvency-administrator-credit-to-title-gatekeeper/index.html
