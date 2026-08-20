@@ -77,6 +77,15 @@
   playaBlancaConcept.setAttribute('data-playa-blanca-concept-loader', 'true');
   document.head.appendChild(playaBlancaConcept);
 
+  // Keep 20-Aug-2026 CGPJ/TSJ procedural status, the institutional register, homepage,
+  // material-updates surface and PwC/Grant Thornton/RSM custody status in parity with the
+  // canonical repository evidence. This layer does not turn filing/routing into merits proof.
+  const cgpjTsjParity = document.createElement('script');
+  cgpjTsjParity.src = new URL('cgpj-tsj-professional-parity-20260820.js?v=20260820a', current.src).href;
+  cgpjTsjParity.async = false;
+  cgpjTsjParity.setAttribute('data-cgpj-tsj-professional-parity-loader', 'true');
+  document.head.appendChild(cgpjTsjParity);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
