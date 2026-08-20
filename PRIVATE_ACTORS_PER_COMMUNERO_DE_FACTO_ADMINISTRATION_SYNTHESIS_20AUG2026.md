@@ -2,58 +2,42 @@
 
 **Control date:** 20 August 2026  
 **Matter:** Luchy Playa Blanca, S.L.U. — Concurso Ordinario 36/2012  
-**Public routes:**
+**Status:** public-safe repository synthesis; historical legal classification remains open
 
-- Spanish: `/es/administracion-de-hecho-comunidad-ac/`
-- English: `/en/de-facto-administration-community-ac/`
+## Public routes
 
-## Purpose
+- Spanish: `/es/actores-privados-per-comunero-administracion-de-hecho/`
+- English: `/en/private-actors-related-party-community-de-facto-administration/`
+- Earlier detailed Community/AC functions and debt page, preserved separately:
+  - `/es/administracion-de-hecho-comunidad-ac/`
+  - `/en/de-facto-administration-community-ac/`
 
-This is the public-safe repository record for the capacity and conflict analysis concerning CAM, the Community/CEXP architecture and the later adjudication perimeter. The confidential 14 July 2026 forensic report remains an internal source module and is not published in this repository.
+## Controlling conclusion
 
-## Controlling distinctions
+The present public record does **not** establish that CAM or any identified natural person was a statutory *persona especialmente relacionada* (“PER”) or a de facto administrator of LPB. The historical insolvency law in force at each legally relevant date must be applied.
 
-### 1. Strict statutory PER inquiry
+Two inquiries must remain separate:
 
-The present public record does **not** establish that CAM or any identified natural person was a statutory *persona especialmente relacionada* (“PER”). The historical insolvency law in force at the legally relevant date must be applied.
+1. **Strict PER / possible administración de hecho.** Did CAM itself, or conduct legally attributable to identified persons, amount to sufficiently stable, autonomous and general management of LPB?
+2. **Independent multi-capacity conflict.** Even if strict PER status fails, did the accumulation of creditor, communero or owner, Community participant or beneficiary, access/security actor, bidder, proposed purchaser and awardee roles require enhanced disclosure, segregation, independent valuation and independent verification?
 
-The leading open theory is whether CAM itself, or conduct legally attributable to identified persons, exercised sufficiently stable, autonomous and general management functions over LPB to support possible *administración de hecho*.
+Being a creditor, owner, communero, Community participant, bidder or awardee is not sufficient by itself. Keys, security, access, works, data, possession or income may be relevant evidence, but do not automatically prove general corporate management of LPB.
 
-Being a creditor, owner, communero, Community participant, bidder or awardee is not sufficient by itself.
+## Entity and asset separation
 
-### 2. Independent multi-capacity conflict
+The owners’ Community, CEXP or exploitation community, any community of property, any informal owners’ group, LPB, Matkator and third-party owners are not interchangeable. Every minute, vote, debt certificate, access decision, work and asset must be attributed to the correct legal body, actor and property perimeter.
 
-Even if strict PER status ultimately fails, the following capacities must be reconstructed separately by date and source:
+## Key evidence modules incorporated
 
-- debt assignee and secured creditor;
-- owner or communero of identified properties;
-- participant in or beneficiary of a Community structure;
-- actor connected with security, access, maintenance or works;
-- negotiator, bidder and proposed purchaser;
-- awardee;
-- participant in the later HNT/economic-benefit perimeter.
-
-The accumulation of those roles is independently material to disclosure, segregation, valuation, information symmetry and independent verification.
-
-### 3. Practical control is not automatically management of LPB
-
-Keys, security, access, works, data, possession, income or physical control may be relevant evidence. They do not automatically prove general corporate management of LPB. The inquiry must identify who requested, authorised, ordered, executed and paid for each act, and whether the conduct substituted for LPB’s formal decision-making.
-
-### 4. Community and CEXP are not interchangeable
-
-The owners’ Community, CEXP/exploitation community, any community of property, any informal owners’ group, LPB, Matkator and third-party owners must remain legally and evidentially separate. Each minute, vote, debt certificate, access decision and work must be attributed to the correct body and asset perimeter.
-
-## Key factual modules incorporated
-
-1. LPB formally filed a composition proposal on 27 April 2017. Contemporary sources describe a full-payment objective.
-2. The later strategy pursued payment or deposit of insolvency and estate claims followed by conclusion.
-3. Varia and Ben Oldman represented serious but conditional financing windows; final unconditional executability on one date is not proved.
-4. Contemporary evidence supports a change in security, access and practical control around June 2018, but does not yet identify with certainty who ordered every act.
-5. Intact assets, due-diligence access, operational evidence, title, valuation, authority to create security and an official payoff together formed the practical value/security package for a financed exit.
-6. The rigorous causal formulation is loss of opportunity and material contribution, not a proved sole cause or automatic recovery of the whole hotel value.
-7. A complete January 2019 Article 176 draft existed, but its effective filing remains unproved.
-8. A separate January–February 2022 sequence is recorded as a critical lead pending the complete primary filing, receipt, annexes, service, response and continuation packet. Chronology alone does not prove knowledge, causation, PER status or wrongdoing.
-9. The existing Community audit identifies a pre-insolvency governance/debt/access architecture beginning in 2011 and an appearance by FMMM before the 2012 insolvency. This is an audit hypothesis requiring native minutes, title records, proxies, bank records, invoices and actor-specific attribution; it is not a finding of unlawful coordination.
+- LPB formally filed a composition proposal on 27 April 2017; contemporary sources describe a full-payment objective.
+- The later route pursued payment or deposit of insolvency and estate claims followed by conclusion.
+- Varia and Ben Oldman were serious but conditional financing windows; final unconditional executability on one date is not proved.
+- Contemporary evidence supports changes in security, access and practical control around June 2018, but does not yet identify with certainty who ordered every act.
+- Intact assets, due-diligence access, operational evidence, title, valuation, authority to create security and an official payoff together formed the practical value/security package for a financed exit.
+- The rigorous causal formulation is loss of opportunity and material contribution, not a proved sole cause or automatic recovery of the whole hotel value.
+- A complete January 2019 Article 176 draft existed, but its effective filing remains unproved.
+- A separate January–February 2022 sequence remains a critical lead pending the complete primary filing, receipt, annexes, service, response and continuation packet. Chronology alone does not prove knowledge, causation, PER status or wrongdoing.
+- The Community audit identifies a pre-insolvency governance/debt/access architecture beginning in 2011 and an appearance by FMMM before the 2012 insolvency. This is an audit hypothesis requiring native minutes, title records, proxies, bank records, invoices and actor-specific attribution; it is not a finding of unlawful coordination.
 
 ## Institutional methodology
 
@@ -101,3 +85,5 @@ Controlled public wording:
 - Do not infer ownership from possession or practical control.
 - Do not infer causation, knowledge or wrongdoing from chronology alone.
 - Preserve the strongest legitimate contrary explanation, correction mechanism and right of reply.
+
+The confidential 14 July 2026 forensic report remains an internal source module and is not published in this repository.
