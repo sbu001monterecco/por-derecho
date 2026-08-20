@@ -33,10 +33,19 @@
   // Cross-site source-controlled reconstruction of Community/private functional management,
   // AC authorisation/reliance, mobile Community debt and the definitive-text incident answer.
   const deFactoAdministration = document.createElement('script');
-  deFactoAdministration.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260820a', current.src).href;
+  deFactoAdministration.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260820b', current.src).href;
   deFactoAdministration.async = false;
   deFactoAdministration.setAttribute('data-ac-community-de-facto-loader', 'true');
   document.head.appendChild(deFactoAdministration);
+
+  // Stronger attributed-allegation visibility layer. It upgrades the existing panels rather than
+  // creating a competing narrative, and adds route-specific relevance across governance, AC,
+  // material control, liquidation, judicial, implementation and downstream-reliance pages.
+  const deFactoVisibility = document.createElement('script');
+  deFactoVisibility.src = new URL('ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260820b', current.src).href;
+  deFactoVisibility.async = false;
+  deFactoVisibility.setAttribute('data-ac-de-facto-knowing-facilitation-visibility-loader', 'true');
+  document.head.appendChild(deFactoVisibility);
 
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
