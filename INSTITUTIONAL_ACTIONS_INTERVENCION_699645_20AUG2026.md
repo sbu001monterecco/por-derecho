@@ -1,31 +1,43 @@
-# Institutional actions — Intervención General SALIDA 699645/2026
+# Institutional actions — Intervención General three-response sequence
 
-Date opened: 20 August 2026
+Date updated: 20 August 2026  
+Status: competence clarified; funding merits and referral traceability remain open
 
-## Controlling development
+## Controlling sequence
 
-SALIDA 699645/2026 expressly narrows SALIDA 497011/2026: the June letter is **not** a general certification that other aid, subsidies, regional incentives, European/FEDER financing, payments, certifications or administrative files do not exist.
+| Date | Outgoing reference | Controlled effect |
+|---|---:|---|
+| 5 March 2026 | 184368/2026 | Delimits Intervención functions and records use of the internal integrity route; not a general audit conclusion. |
+| 11 June 2026 | 497011/2026 | Identifies the RIC suitability route, states the declaration is not itself an autonomous subsidy/direct regional-treasury payment, and records referral to the competent Vice-Ministry. |
+| 19 August 2026 | 699645/2026 | Declines an all-encompassing audit/certification at a third party’s request and expressly states that June was not a general certificate that no other aid, regional incentive, European funding, payment, certification or file existed. |
 
-## Action architecture
-
-1. **RIC / idoneidad:** continue with Viceconsejería de Hacienda + AEAT + Consejo de Gobierno. Seek the complete 02/2022 / Decree 224/2022 chain, instruments, Series F/G coverage, uses and timing.
-2. **Regional incentives:** pursue the competent regional-incentives authority for GC/836/P06 and any linked file. Request beneficiary, project, eligible investment, resolutions, certifications, payments, controls, beneficiary declarations and cumulation/double-financing checks.
-3. **FEDER / EU:** identify the precise funding programme/file behind the documented FEDER reference; recover grant/co-financing resolution, eligible-cost map, certification, payment, verification/audit trail and compatibility checks against other funding.
-4. **Autonomous/local grants:** do not infer absence from the absence of an Intervención control file. Query each managing/granting body separately.
-5. **Source-and-use:** reconcile all public/private financing against the actual refurbishment/employment chronology and invoices, including RICPE Series F/G, bridge/provider financing, prior expenditure and any reimbursement mechanism.
-6. **Access:** treat Intervención’s confidentiality/interested-party analysis as its institutional position. Separately test lawful access through the granting authority, transparency, alertador, judicial/criminal and oversight channels.
-7. **Anti-corruption channel:** preserve the Office’s invitation to use the internal reporting channel for objective indications involving Canary Islands public-administration organs/authorities; use only where the facts and perimeter fit Decreto 91/2024.
-8. **Custody:** recover the native signed SALIDA 699645/2026 PDF and hash it. Current source is a controlled user-supplied transcription.
-
-## Public wording control
+## Controlling interpretation
 
 Permitted:
 
-> Intervención General says its remit is limited and expressly clarifies that its 11 June response did not certify the absence of other public aid, regional incentives, EU/FEDER financing, payments, certifications or files. Those questions remain to be determined by the bodies with substantive competence.
+> Intervención General limits its own remit and expressly clarifies that its 11 June response did not certify the absence of other public aid, regional incentives, EU/ERDF financing, payments, certifications or files. Those questions remain for the bodies and native files with substantive competence.
 
 Not permitted without new evidence:
 
 - “Intervención confirmed double funding.”
 - “Intervención confirmed there was no public money.”
 - “Intervención cleared RICPE/CAM/HNT/MYND.”
-- “Intervención found fraud/irregularity.”
+- “Confidentiality proves a hidden control file.”
+- “The June referral resulted in a merits investigation.”
+
+## Finite action architecture
+
+1. **June referral:** obtain the receiving entry, responsible unit, file number, status and any reasoned response; confirm whether it joined RIC file 02/2022 or another record.
+2. **RIC / suitability:** obtain the complete application, memorandum, AEAT report, proposal, Decree 224/2022, annexes, amendments and Series F/G coverage/use/timing.
+3. **Regional incentives:** obtain GC/836/P06, beneficiary/title/availability evidence, eligible-cost schedule, other-aid declarations, financing plan, certifications, payments, employment checks and any closure/recovery act.
+4. **ERDF / EU:** identify the operation, programme, percentage and managing/intermediate body; obtain certified expenditure, invoices, verifications, audits, corrections and recovery.
+5. **Source-and-use:** reconcile public/private financing against actual works, invoices, liabilities, assets and employment by date.
+6. **SIINF:** use only for objective indications within the Canary autonomous-administration scope; keep it separate from transparency/access and merits-file requests.
+7. **Access:** test lawful routes separately through granting authorities, transparency, whistleblower protection, criminal/judicial and oversight channels.
+8. **Custody:** recover, verify and hash the native signed 699645/2026 PDF.
+
+## Privacy and publication control
+
+The public site and repository must not display the addressee’s private email, street address, signatures or document-verification credentials. Public records are redacted derivatives. Full/native evidence belongs in an access-controlled custody layer.
+
+Ordinary Git replacement does not erase prior commit history. A separate history-remediation decision is required where previously committed personal data must be purged from all public history.
