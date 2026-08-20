@@ -1,0 +1,117 @@
+name: Verify Por Derecho Foundation stage three live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/por-derecho/**'
+      - 'en/por-derecho/**'
+      - 'assets/por-derecho/**'
+      - 'research/por-derecho/foundation-stage-3/**'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-por-derecho-foundation-stage-3-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: por-derecho-foundation-stage-3-live-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    env:
+      BASE_URL: https://sbu001monterecco.github.io/por-derecho
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+
+      - name: Poll and verify the public Pages edge
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+          import time
+          import urllib.request
+
+          base = os.environ['BASE_URL'].rstrip('/')
+          targets = {
+              '/es/por-derecho/': ['por-derecho.js'],
+              '/en/por-derecho/': ['por-derecho.js'],
+              '/es/por-derecho/origen/': ['Iniciativa en formación', 'DIP 80/2026'],
+              '/en/por-derecho/origin/': ['Initiative in formation', 'DIP 80/2026'],
+              '/es/por-derecho/gobernanza-e-independencia/': ['No existe todavía Fundación registrada'],
+              '/en/por-derecho/governance-and-independence/': ['There is not yet a registered Foundation'],
+              '/es/por-derecho/investigacion-y-formacion/': ['Revisión independiente no realizada', 'Caso Prisma'],
+              '/en/por-derecho/research-and-training/': ['Independent review not performed', 'Case Prism'],
+              '/es/por-derecho/palacete/': ['La casa no es la Fundación', 'adquisición no está completada'],
+              '/en/por-derecho/palacete/': ['The house is not the Foundation', 'acquisition has not been completed'],
+              '/es/por-derecho/ejecucion-institucional/': ['data-pd-foundation-stage3="20260820"', 'Preparar no es nombrar'],
+              '/en/por-derecho/institutional-execution/': ['data-pd-foundation-stage3="20260820"', 'Preparing is not appointing'],
+              '/assets/por-derecho/foundation-stage-3.css': ['.pds3-hero', '.pds3-pack-grid'],
+              '/assets/por-derecho/por-derecho.js': ['data-pd-foundation-stage3', 'institutional-execution'],
+              '/sitemap-por-derecho-foundation.xml': ['/es/por-derecho/ejecucion-institucional/', '/en/por-derecho/institutional-execution/'],
+              '/robots.txt': ['sitemap-por-derecho-foundation.xml'],
+          }
+
+          def fetch(path):
+              request = urllib.request.Request(
+                  f'{base}{path}',
+                  headers={'User-Agent': 'Por-Derecho-Foundation-Stage3-Verifier/1.0'},
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return response.status, response.read().decode('utf-8', errors='replace')
+
+          final_errors = []
+          for attempt in range(1, 13):
+              errors = []
+              results = {}
+              for path, markers in targets.items():
+                  try:
+                      code, body = fetch(path)
+                      results[path] = {
+                          'http': code,
+                          'bytes': len(body.encode()),
+                          'markers': {marker: marker in body for marker in markers},
+                      }
+                      if code != 200:
+                          errors.append(f'{path}: HTTP {code}')
+                      for marker in markers:
+                          if marker not in body:
+                              errors.append(f'{path}: missing {marker}')
+                  except Exception as exc:
+                      errors.append(f'{path}: {type(exc).__name__}: {exc}')
+              with open('foundation-stage-3-live-verification.json', 'w', encoding='utf-8') as fh:
+                  json.dump(
+                      {'attempt': attempt, 'base': base, 'results': results, 'errors': errors},
+                      fh,
+                      indent=2,
+                      ensure_ascii=False,
+                  )
+              if not errors:
+                  print(f'PUBLIC_EDGE_VERIFIED on attempt {attempt}')
+                  for path, result in results.items():
+                      print(f"{path}: HTTP {result['http']} · {result['bytes']} bytes")
+                  sys.exit(0)
+              final_errors = errors
+              print(f'Attempt {attempt} not yet complete:')
+              for error in errors:
+                  print(f'- {error}')
+              if attempt < 12:
+                  time.sleep(20)
+
+          print('Final errors:')
+          for error in final_errors:
+              print(f'- {error}')
+          sys.exit(1)
+          PY
