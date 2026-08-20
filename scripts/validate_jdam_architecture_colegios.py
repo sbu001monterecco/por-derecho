@@ -17,7 +17,11 @@ checks = {
     ],
     "assets/jdam-architecture-colegios-20260820.js": [
         "jdam-architecture-gateway", "20 August 2026", "20 agosto 2026",
-        "criminal-engineering", "public-authority", "ricpe-idoneidad"
+        "criminal-engineering", "public-authority", "ricpe-idoneidad",
+        "jdamInstitutionalParity", "26/008474", "26/008476",
+        "datos aportados «no son coincidentes»", "four-channel redistribution",
+        "Junta del COALZ", "Article 262 LECrim only if the threshold is met",
+        "Registration, receipt, internal transfer or dispatch does not prove"
     ],
     "assets/site.js": [
         "jdam-architecture-colegios-20260820.js",
