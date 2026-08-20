@@ -1,21 +1,30 @@
 {
   "publication_id": "UNITARY-CRIMINAL-REVERSE-ENGINEERING-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "MERGED",
+  "current_state": "LIVE_VERIFIED",
   "control_date": "2026-08-20",
   "control_marker": "unitary-criminal-reverse-engineering-20260820",
-  "merge_sha": "baee14c7532055736fcaa8e79c6e299edc370a9b",
+  "merge_sha": "0449e5d5ac00576ac4bbd7f58d69060114cc54c9",
   "source_merge": {
     "pull_request": 592,
     "merge_commit": "baee14c7532055736fcaa8e79c6e299edc370a9b",
     "merged_at": "2026-08-20T11:56:22Z"
   },
+  "source_correction_merge": {
+    "pull_request": 595,
+    "merge_commit": "0449e5d5ac00576ac4bbd7f58d69060114cc54c9",
+    "purpose": "Eliminate stale autonomous LPB-withdrawal attribution; strengthen bilingual Insolvency Administrator gatekeeper pages; make source and live validation permanent."
+  },
   "expected_routes": {
     "es": [
-      "es/ingenieria-inversa-criminal-unitaria/index.html"
+      "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "es/retracto-credito-litigioso-1041-2017/index.html",
+      "es/administrador-concursal-puerta-credito-titulo/index.html"
     ],
     "en": [
-      "en/unitary-criminal-reverse-engineering/index.html"
+      "en/unitary-criminal-reverse-engineering/index.html",
+      "en/litigious-credit-retracto-1041-2017/index.html",
+      "en/insolvency-administrator-credit-to-title-gatekeeper/index.html"
     ]
   },
   "publication_safety": {
@@ -26,20 +35,76 @@
   },
   "validation": {
     "status": "CI_GREEN",
-    "validated_head": "83dbf34e68c1f66e87d9c9de9fdd5456343ac8c1",
+    "validated_head": "d0c3623a80ca375059a6c5251f9af224a9cc85cb",
     "evidence": [
-      "PR #592: Validate unitary criminal reverse engineering — success",
-      "PR #592: Publication integrity gate — success",
-      "PR #592: Validate criminal-engineering and case information architecture — success",
-      "PR #592: Validate unitary public shell — success",
-      "PR #592: Public bidder anonymisation gate — success",
-      "PR #592: Production smoke monitor — success",
-      "PR #592: Off-GitHub Preservation Snapshot — success"
+      "PR #592: criminal-first architecture, publication integrity, criminal-engineering, unitary shell, bidder anonymisation, production smoke and off-GitHub preservation — success",
+      "PR #595: source-level PP 1041/AC attribution validator — success",
+      "PR #595: publication integrity — success",
+      "PR #595: production smoke — success",
+      "PR #595: independent external live verifier run 32368907565 — success",
+      "PR #595: off-GitHub preservation — success",
+      "PR #597: unitary criminal source validator run 32369293622 — success"
     ]
   },
-  "live_verification": {
-    "status": "PENDING_EXTERNAL_PR_GATED_CHECK",
+  "deployment_evidence": [
+    "PR #592 merge baee14c7532055736fcaa8e79c6e299edc370a9b published the criminal-first ES/EN hub and connected architecture.",
+    "PR #595 merge 0449e5d5ac00576ac4bbd7f58d69060114cc54c9 published the strengthened ES/EN Insolvency Administrator pages and permanent source/live controls.",
+    "External verification run 32369293689 observed the deployed source on the public GitHub Pages host."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/",
+    "https://sbu001monterecco.github.io/por-derecho/es/retracto-credito-litigioso-1041-2017/",
+    "https://sbu001monterecco.github.io/por-derecho/en/litigious-credit-retracto-1041-2017/",
+    "https://sbu001monterecco.github.io/por-derecho/es/administrador-concursal-puerta-credito-titulo/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-administrator-credit-to-title-gatekeeper/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/unitary-criminal-reverse-engineering-20260820.js",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "No son irregularidades aisladas",
+      "Los quince puntos más fuertes"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "These are not isolated irregularities",
+      "The fifteen strongest points"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/retracto-credito-litigioso-1041-2017/": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "Se presentó un desistimiento en nombre de LPB"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/litigious-credit-retracto-1041-2017/": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "A withdrawal was filed in LPB"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/administrador-concursal-puerta-credito-titulo/": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "Se presentó un desistimiento en nombre de LPB"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-administrator-credit-to-title-gatekeeper/": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "A withdrawal was filed in LPB"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/unitary-criminal-reverse-engineering-20260820.js": [
+      "unitary-criminal-reverse-engineering-20260820",
+      "unitaryCriminalGateway"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml": [
+      "ingenieria-inversa-criminal-unitaria",
+      "unitary-criminal-reverse-engineering"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "PASS",
     "workflow": ".github/workflows/verify-unitary-criminal-live.yml",
-    "evidence_artifact": "unitary-criminal-live-evidence"
+    "run_id": 32369293689,
+    "job_id": 96425874230,
+    "artifact_id": 9406487434,
+    "artifact_name": "unitary-criminal-live-evidence",
+    "verified_at": "2026-08-20T12:31:38Z",
+    "result": "All eight live checks returned HTTP 200, exceeded minimum byte thresholds and contained their distinctive source markers."
   }
 }
