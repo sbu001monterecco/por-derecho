@@ -35,6 +35,8 @@ Publication merge: `1ac8284e6d7ef0c8f23f2bcca3dbf09f5bf3b0f8` · 18 August 2026 
 Live verification: workflow run `32179092774` · 18 August 2026 19:52:52 UTC · ES/EN pages, publication JS, dedicated sitemap and robots entry all HTTP 200 with required markers present.
 Canonical pages: `/es/ricpe-idoneidad-series-f-g/` · `/en/ricpe-idoneidad-series-f-g/`
 Deletion/continuity closeout: `archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_DELETION_CLOSEOUT_20260818.md`
+Comisionado internal-entry control: `INSTITUTIONAL_ACTIONS_HACIENDA_COMISIONADO_2220_20AUG2026.md`
+Final thread closeout: `archive/THREAD_DELETION_AUDIT_HACIENDA_RES28_RICPE_20AUG2026.md`
 
 ### Evidence boundary
 
@@ -56,7 +58,8 @@ Deletion/continuity closeout: `archive/intelligence/RICPE_IDONEIDAD_SERIES_F_G_D
 - Treat expediente 02/2022 as the canonical administrative file unless corrected by the authority.
 - Request the complete file index first, then the original RICPE application, project memorandum, AEAT referral, requests for clarification, internal reports, proposal, final act, notifications and amendments.
 - On 10 August 2026, Resolution 28/2026 refused the 7 July access request in full. The resolution itself identifies Decree 224/2022, expediente 02/2022 and the AEAT report of 17 November 2022 as procedural antecedents.
-- An appeal to the Canary Islands Transparency Commissioner was filed on 11 August 2026 under REGAGE26e00072591992, internal appeal file 12/2026-0710092416. The receipt identifies the Commissioner as destination. The appeal seeks category-by-category review, an index, partial/segregable access, metadata and competent transfers.
+- An appeal to the Canary Islands Transparency Commissioner was filed on 11 August 2026 under `REGAGE26e00072591992`, using reference `12/2026-0710092416`. A later native Comisionado certificate records internal Registro de Entrada `2220/2026`, entered 11 August 2026 at 12:44 through SIR and routed to the Servicio de Reclamaciones y Asuntos Generales. This proves internal receipt/routing only; it does not prove merits admission, urgency, estimation or access. The appeal seeks category-by-category review, an index, partial/segregable access, metadata and competent transfers.
+- Preserve the native certificate privately; do not publish the unredacted version because it contains personal contact data and a document-verification credential.
 - Prepare a short supplementary submission to that existing appeal: place the now-controlled Series F/G split and 16 December 2022 opening chronology before the Commissioner and ask expressly whether the application/report/decree covered F, G or both. Do not duplicate the entire 7 July request.
 
 ### AEAT
