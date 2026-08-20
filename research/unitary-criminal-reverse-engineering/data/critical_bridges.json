@@ -1,0 +1,77 @@
+{
+  "marker": "unitary-criminal-reverse-engineering-20260820",
+  "bridges": [
+    [
+      "B01",
+      "Bankia/SAREB→PH122",
+      "Credit, security, price, retained liabilities",
+      "Crédito, garantías, precio, pasivos retenidos"
+    ],
+    [
+      "B02",
+      "PH122/Haya/Cerberus decision channel",
+      "Knowledge, mandate, rejection, alternatives",
+      "Conocimiento, mandato, rechazo y alternativas"
+    ],
+    [
+      "B03",
+      "PH122→CAM",
+      "Assignment, price, DD, disclosures",
+      "Cesión, precio, DD y revelaciones"
+    ],
+    [
+      "B04",
+      "PP 1041 / LPB representation",
+      "Admitted disclosure, counsel removal, filed withdrawal",
+      "Disclosure admitido, cese de abogado y desistimiento presentado"
+    ],
+    [
+      "B05",
+      "ACTÚA→insolvency decision",
+      "Inputs, inspection, use, contrary valuation",
+      "Datos, inspección, uso y valoración contraria"
+    ],
+    [
+      "B06",
+      "AC/Community→material control",
+      "Authority, locks/security, whole-hotel effect",
+      "Autoridad, cerraduras/seguridad y efecto hotel completo"
+    ],
+    [
+      "B07",
+      "ONA/finance→exit",
+      "Conditions, funds, approvals, failure cause",
+      "Condiciones, fondos, aprobaciones y causa de fracaso"
+    ],
+    [
+      "B08",
+      "2021 competition→adjudication",
+      "€14.8m bid, treatment, reasons",
+      "Oferta 14,8 M€, tratamiento y motivos"
+    ],
+    [
+      "B09",
+      "€13.168m→dación",
+      "Debt components, set-off, surplus",
+      "Componentes de deuda, compensación y sobrante"
+    ],
+    [
+      "B10",
+      "Protocol 457→Registry",
+      "Title, notification, cancellation, entries",
+      "Título, comunicación, cancelación y asientos"
+    ],
+    [
+      "B11",
+      "CAM→HNT",
+      "Economic unit, assets/passives/litigation",
+      "Unidad económica, activos/pasivos/litigios"
+    ],
+    [
+      "B12",
+      "HNT/MYND→current benefit",
+      "Income, finance, aid, value and notice",
+      "Ingresos, financiación, ayudas, valor y conocimiento"
+    ]
+  ]
+}

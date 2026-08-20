@@ -1,0 +1,52 @@
+name: Verify unitary criminal publication live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/retracto-credito-litigioso-1041-2017/**'
+      - 'en/litigious-credit-retracto-1041-2017/**'
+      - 'es/administrador-concursal-puerta-credito-titulo/**'
+      - 'en/insolvency-administrator-credit-to-title-gatekeeper/**'
+      - 'assets/unitary-criminal-reverse-engineering-20260820.js'
+      - 'assets/site.js'
+      - 'sitemap-criminal-engineering.xml'
+      - 'scripts/verify_unitary_criminal_live.py'
+      - '.github/workflows/verify-unitary-criminal-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-unitary-criminal-live
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Verify live bilingual routes, PP 1041 correction, gateway and sitemap
+        run: |
+          python scripts/verify_unitary_criminal_live.py \
+            --attempts 4 \
+            --interval 20 \
+            --timeout 25 \
+            --output artifacts/unitary-criminal-live/latest.json
+      - name: Upload canonical live-verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: unitary-criminal-live-evidence
+          path: artifacts/unitary-criminal-live/latest.json
+          if-no-files-found: error
+          retention-days: 90
