@@ -1,7 +1,7 @@
 # AC / COMMUNITY / PRIVATE-ACTOR DE FACTO ADMINISTRATION — ACTIVATION RECORD
 
-**Activated for branch review:** 20 August 2026  
-**Current lifecycle state:** `REMOTE_SOURCE` — implementation prepared; PR, CI, merge, deployment and live read-back remain to be recorded  
+**Activated:** 20 August 2026  
+**Current lifecycle state:** `MERGED / CI_GREEN / LIVE_REVERIFY_PENDING`  
 **Matter:** Luchy Playa Blanca, S.L.U., Concurso 36/2012 / Sun Park
 
 ## Purpose
@@ -77,8 +77,31 @@ Raw private evidence, personal identifiers, private message IDs and privileged a
 
 P0: complete certified court index, native Community authority/accounts, vendor-payment-recharge crosswalk, native AC/private communications, security/access logs, CAM payments, calculation workbooks and final liquidation/notarial/Registry accounting.
 
+## PR, merge and CI evidence
+
+- Pull request: **#581 — Add AC–Community de facto administration forensic reconstruction**.
+- PR head SHA: `b1129889e9bec6f50678da80748852ea77d98de9`.
+- Merge SHA: `0c4d446833070c12816ee47618256e1162ffe550`.
+- Merged: **20 August 2026 at 09:36:55 UTC**.
+- Dedicated validation workflow run `32353866070`: **success**.
+- Publication-integrity run `32353866114`: **success**.
+- Criminal-engineering/case-architecture run `32353866045`: **success**.
+- Adjudication-provenance run `32353866047`: **success**.
+- Unitary-public-shell run `32353866091`: **success**.
+- Off-GitHub preservation run `32353866096`: **success**.
+- Public-bidder anonymisation run `32353866099`: **success**.
+- Visual-asset registry run `32353866078`: **success**.
+
+## Live-verification closeout
+
+The source package is merged and all PR validation gates passed. The follow-up closeout re-arms the public-edge workflow and adds a durable commit-status context:
+
+`pages-propagation/ac-community-de-facto-administration`
+
+Do not promote the lifecycle to `LIVE_VERIFIED` until that context reports success against the closeout merge SHA.
+
 ## Lifecycle
 
 `DRAFT → REMOTE_SOURCE → PR_OPEN → CI_GREEN → MERGED → DEPLOYED → LIVE_VERIFIED → DELETION_SAFE`
 
-Use `BLOCKED_RECOVERY` where any stage cannot be objectively demonstrated. Update this record after merge with PR, merge SHA, workflow runs, live markers and deletion-safety state.
+Current state is **MERGED / CI_GREEN / LIVE_REVERIFY_PENDING**. Use `BLOCKED_RECOVERY` where any stage cannot be objectively demonstrated.
