@@ -1,0 +1,254 @@
+name: Verify source-of-funds notice live
+
+on:
+  pull_request:
+    paths:
+      - 'assets/site.js'
+      - 'assets/source-of-funds-notice-20260820.css'
+      - 'assets/source-of-funds-notice-20260820.js'
+      - 'es/aviso-procedencia-fondos-servicios-profesionales/**'
+      - 'en/source-of-funds-professional-services-notice/**'
+      - 'scripts/apply-source-of-funds-notice.py'
+      - '.github/workflows/verify-source-of-funds-notice-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/site.js'
+      - 'assets/source-of-funds-notice-20260820.css'
+      - 'assets/source-of-funds-notice-20260820.js'
+      - 'es/aviso-procedencia-fondos-servicios-profesionales/**'
+      - 'en/source-of-funds-professional-services-notice/**'
+      - 'scripts/apply-source-of-funds-notice.py'
+      - '.github/workflows/verify-source-of-funds-notice-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-source-of-funds-notice-live-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+
+      - name: Poll canonical pages and shared assets
+        env:
+          RUN_ID: ${{ github.run_id }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+
+          base = 'https://sbu001monterecco.github.io/por-derecho'
+          q = f"source={os.environ['SOURCE_SHA'][:12]}&run={os.environ['RUN_ID']}"
+          targets = {
+              'canonical_es': (f'{base}/es/aviso-procedencia-fondos-servicios-profesionales/?{q}', [
+                  'La procedencia del dinero y de los servicios también forma parte de la prueba.',
+                  'Lo que este aviso no afirma',
+                  'Derecho de respuesta, corrección y documentación',
+              ]),
+              'canonical_en': (f'{base}/en/source-of-funds-professional-services-notice/?{q}', [
+                  'The source of money and professional services is part of the evidence too.',
+                  'What this notice does not allege',
+                  'Right of response, correction and documentation',
+              ]),
+              'loader': (f'{base}/assets/site.js?{q}', [
+                  'SOURCE-OF-FUNDS-NOTICE-20260820',
+                  'source-of-funds-notice-20260820.js',
+                  '/es/pwc-canarias-carlos-saavedra-sun-park/',
+                  '/en/rsm/nnr4-1025c2f66/',
+              ]),
+              'component': (f'{base}/assets/source-of-funds-notice-20260820.js?{q}', [
+                  'second-pair-eyes.svg',
+                  'does not prove wrongdoing',
+                  'no prueba irregularidad',
+                  'source-of-funds-professional-services-notice',
+              ]),
+              'styles': (f'{base}/assets/source-of-funds-notice-20260820.css?{q}', [
+                  '.sfn__grid',
+                  '.sfn--compact',
+                  '@media (max-width: 760px)',
+              ]),
+          }
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={
+                  'User-Agent': 'Por-Derecho-source-funds-live-verifier/1.0',
+                  'Cache-Control': 'no-cache',
+                  'Pragma': 'no-cache',
+              })
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  return response.status, response.read().decode('utf-8', 'replace')
+
+          last = {}
+          for attempt in range(1, 49):
+              checks, details = {}, {}
+              for name, (url, markers) in targets.items():
+                  try:
+                      status, body = fetch(url)
+                      marker_map = {marker: marker in body for marker in markers}
+                      checks[f'{name}_http_200'] = status == 200
+                      checks[f'{name}_markers'] = all(marker_map.values())
+                      details[name] = {
+                          'url': url,
+                          'status': status,
+                          'bytes': len(body.encode()),
+                          'markers': marker_map,
+                      }
+                  except Exception as exc:
+                      checks[f'{name}_http_200'] = False
+                      checks[f'{name}_markers'] = False
+                      details[name] = {'url': url, 'error': repr(exc)}
+              last = {'attempt': attempt, 'checks': checks, 'details': details}
+              print(json.dumps(last, ensure_ascii=False, indent=2))
+              if all(checks.values()):
+                  break
+              time.sleep(5)
+          else:
+              raise SystemExit('Canonical page or shared asset did not propagate')
+
+          os.makedirs('artifacts/source-funds-live', exist_ok=True)
+          with open('artifacts/source-funds-live/source.json', 'w', encoding='utf-8') as handle:
+              json.dump({'status': 'PASS', **last}, handle, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$BROWSER_PATH"
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+
+      - name: Verify all 26 rendered placements
+        env:
+          RUN_ID: ${{ github.run_id }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const fs = require('fs');
+          const base = 'https://sbu001monterecco.github.io/por-derecho';
+          const q = `source=${process.env.SOURCE_SHA.slice(0, 12)}&run=${process.env.RUN_ID}`;
+          const full = [
+            '/es/', '/en/',
+            '/es/ric-private-equity-sun-park/', '/en/ric-private-equity-sun-park/',
+            '/es/mismo-hotel-multiples-vidas-financieras/', '/en/same-hotel-multiple-financial-lives/',
+            '/es/acosta-matos-perimetro/', '/en/acosta-matos-perimeter/',
+            '/es/objetivos-recuperacion-restitucion/', '/en/recovery-restitution-objectives/',
+            '/es/cadena-instrumentalizacion-ric-fondos-incentivos/', '/en/institutionalisation-chain-ric-eu-incentives/'
+          ];
+          const compact = [
+            '/es/ricpe-responsabilidad-documental/', '/en/ricpe-documentary-accountability/',
+            '/es/pwc-canarias-carlos-saavedra-sun-park/', '/en/pwc-canarias-carlos-saavedra-sun-park/',
+            '/es/rsm/nnr4-1025c2f66/', '/en/rsm/nnr4-1025c2f66/',
+            '/es/grant-thornton/cuyas-canarias/', '/en/grant-thornton/cuyas-canarias/',
+            '/es/grant-thornton/2024-04/', '/en/grant-thornton/2024-04/',
+            '/es/actores-partes-abogados-representantes/', '/en/actors-parties-lawyers-representatives/',
+            '/es/san-telmo-ricpe-sun-park/', '/en/san-telmo-ricpe-sun-park/'
+          ];
+          const targets = [
+            ...full.map(path => ({ path, variant: 'full' })),
+            ...compact.map(path => ({ path, variant: 'compact' })),
+          ];
+
+          (async () => {
+            const browser = await chromium.launch({
+              headless: true,
+              executablePath: process.env.PSR_BROWSER_PATH,
+            });
+            const results = [];
+            let ok = true;
+
+            for (const target of targets) {
+              const page = await browser.newPage();
+              const url = `${base}${target.path}?${q}`;
+              const failures = [];
+              try {
+                const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+                if (!response || response.status() !== 200) failures.push(`HTTP ${response ? response.status() : 'none'}`);
+                const selector = `[data-source-of-funds-notice="${target.variant}"] .sfn--${target.variant}`;
+                await page.locator(selector).waitFor({ state: 'visible', timeout: 45000 });
+                const rootCount = await page.locator('[data-source-of-funds-notice]').count();
+                if (rootCount !== 1) failures.push(`notice roots=${rootCount}`);
+                const heading = (await page.locator(`${selector} h2`).innerText()).trim();
+                const expectedHeading = target.path.startsWith('/en/')
+                  ? 'The source of money and professional services is part of the evidence too.'
+                  : 'La procedencia del dinero y de los servicios también forma parte de la prueba.';
+                if (heading !== expectedHeading) failures.push(`heading=${heading}`);
+                const icon = await page.locator(`${selector} img`).getAttribute('src');
+                if (!icon || !icon.includes('second-pair-eyes.svg')) failures.push(`icon=${icon}`);
+                const links = await page.locator(`${selector} .sfn__button`).evaluateAll(nodes => nodes.map(node => node.href));
+                const expectedRoute = target.path.startsWith('/en/')
+                  ? '/en/source-of-funds-professional-services-notice/'
+                  : '/es/aviso-procedencia-fondos-servicios-profesionales/';
+                if (links.length !== 2 || links.some(link => !link.includes(expectedRoute))) failures.push(`links=${JSON.stringify(links)}`);
+              } catch (error) {
+                failures.push(String(error));
+              }
+              const passed = failures.length === 0;
+              ok &&= passed;
+              results.push({ url, variant: target.variant, passed, failures });
+              await page.close();
+            }
+
+            for (const item of [
+              ['/es/aviso-procedencia-fondos-servicios-profesionales/', 'Lo que este aviso no afirma'],
+              ['/en/source-of-funds-professional-services-notice/', 'What this notice does not allege'],
+            ]) {
+              const page = await browser.newPage();
+              const url = `${base}${item[0]}?${q}`;
+              const failures = [];
+              try {
+                const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+                if (!response || response.status() !== 200) failures.push(`HTTP ${response ? response.status() : 'none'}`);
+                const text = await page.locator('body').innerText();
+                if (!text.includes(item[1])) failures.push(`missing ${item[1]}`);
+              } catch (error) {
+                failures.push(String(error));
+              }
+              const passed = failures.length === 0;
+              ok &&= passed;
+              results.push({ url, variant: 'canonical', passed, failures });
+              await page.close();
+            }
+
+            await browser.close();
+            fs.mkdirSync('artifacts/source-funds-live', { recursive: true });
+            fs.writeFileSync('artifacts/source-funds-live/dom.json', JSON.stringify({
+              status: ok ? 'PASS' : 'FAIL',
+              source_sha: process.env.SOURCE_SHA,
+              placements_checked: targets.length,
+              results,
+            }, null, 2));
+            console.log(JSON.stringify({ status: ok ? 'PASS' : 'FAIL', placements_checked: targets.length, results }, null, 2));
+            process.exit(ok ? 0 : 1);
+          })().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
+          NODE
+
+      - name: Show verification evidence
+        if: always()
+        run: |
+          cat artifacts/source-funds-live/source.json || true
+          cat artifacts/source-funds-live/dom.json || true
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v6.0.0
+        if: always()
+        with:
+          name: source-of-funds-notice-live-verification
+          path: artifacts/source-funds-live
+          if-no-files-found: error
+          retention-days: 30
