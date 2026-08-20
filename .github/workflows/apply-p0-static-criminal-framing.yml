@@ -1,8 +1,8 @@
 name: Apply P0 static and criminal-framing corrections
 
 on:
-  push:
-    branches: [p0-static-criminal-framing-20aug2026]
+  pull_request:
+    branches: [main]
     paths:
       - 'scripts/apply_p0_static_criminal_framing.py'
       - 'scripts/run_p0_static_criminal_framing.py'
@@ -10,14 +10,16 @@ on:
 
 permissions:
   contents: write
+  pull-requests: read
 
 jobs:
   patch-and-validate:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: p0-static-criminal-framing-20aug2026
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
       - name: Apply deterministic static-source corrections
         run: python3 scripts/run_p0_static_criminal_framing.py
@@ -27,7 +29,7 @@ jobs:
           python3 -m py_compile scripts/apply_p0_static_criminal_framing.py scripts/run_p0_static_criminal_framing.py
       - name: Re-run existing supervisory validation
         run: python3 scripts/validate_supervisory_practice.py
-      - name: Commit patched public source back to branch
+      - name: Commit patched public source back to PR branch
         run: |
           if git diff --quiet; then
             echo 'No HTML changes required.'
@@ -37,4 +39,4 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add es en
           git commit -m 'Apply P0 static and criminal-framing corrections'
-          git push origin HEAD:p0-static-criminal-framing-20aug2026
+          git push origin HEAD:${{ github.head_ref }}
