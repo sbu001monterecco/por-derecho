@@ -62,7 +62,7 @@ FORBIDDEN_BROAD_WORDING = (
     "The website deliberately anonymises the third-party bidder's " + "identity.",
     "The bidder remains publicly " + "anonymised",
     "the bidder identity is " + "anonymised in the public record.",
-    "protected bidder identity is absent",
+    "protected bidder " + "identity is absent",
     "Anonymise the " + "bidder; preserve the competitive fact.",
 )
 
