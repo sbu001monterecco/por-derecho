@@ -1,8 +1,9 @@
 {
   "publication_id": "RHG-OPEN-MESSAGE-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "MERGED_LIVE_VERIFICATION_PENDING",
+  "current_state": "MERGED",
   "control_date": "2026-08-20",
+  "merge_sha": "92cdf1374b7ae98f4b05e83e8644081eaa072d89",
   "source_merge": {
     "pull_request": 603,
     "merge_commit": "92cdf1374b7ae98f4b05e83e8644081eaa072d89",
@@ -24,6 +25,15 @@
       "robots.txt"
     ]
   },
+  "expected_source_files": [
+    "INSTITUTIONAL_ACTIONS_RADISSON_RHG_20AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_RADISSON_RHG_ADDENDUM_20AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_RADISSON_RHG_ADDENDUM_20AUG2026.md",
+    "archive/CORRECTION_REGISTER_RADISSON_RHG_ADDENDUM_20AUG2026.md",
+    "archive/intelligence/RADISSON_RHG_NOTICE_OPEN_MESSAGE_THREAD_HANDOVER_20AUG2026.md",
+    "scripts/verify_rhg_open_message_live.py",
+    ".github/workflows/verify-rhg-open-message-live.yml"
+  ],
   "publication_safety": {
     "direct_executive_emails_committed": false,
     "full_confidential_email_committed": false,
@@ -31,7 +41,7 @@
     "silence_treated_as_admission": false,
     "legal_person_separation_preserved": true,
     "professional_firm_statuses_separated": true,
-    "riscpe_portfolio_nexus_treated_as_fraud_finding": false,
+    "ricpe_portfolio_nexus_treated_as_fraud_finding": false,
     "right_of_reply_preserved": true
   },
   "validation": {
