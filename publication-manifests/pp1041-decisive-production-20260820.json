@@ -1,9 +1,15 @@
 {
   "publication_id": "PP1041-DECISIVE-PRODUCTION-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "MERGED",
   "control_date": "2026-08-20",
   "control_marker": "pp1041-single-most-important-production-20260820",
+  "merge_sha": "0d1fb5ba11d9f5b9244bdeb8622057cdb78e431f",
+  "source_merge": {
+    "pull_request": 601,
+    "merge_commit": "0d1fb5ba11d9f5b9244bdeb8622057cdb78e431f",
+    "title": "Publish PP 1041 as the single most important production demand"
+  },
   "expected_routes": {
     "es": [
       "es/pp1041-produccion-documental-decisiva/index.html"
@@ -25,5 +31,23 @@
     "privileged_advice_committed": false,
     "criminal_guilt_stated_as_final": false,
     "formal_allegation_boundary_preserved": true
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "validated_head": "22f3bf85c10297265e194f1c439c27f8542d78db",
+    "evidence": [
+      "PR #601: Validate PP 1041 decisive production — success",
+      "PR #601: Publication integrity gate — success",
+      "PR #601: Validate unitary criminal reverse engineering — success",
+      "PR #601: Validate criminal-engineering and case information architecture — success",
+      "PR #601: Validate unitary public shell — success",
+      "PR #601: Public bidder anonymisation gate — success",
+      "PR #601: Off-GitHub Preservation Snapshot — success"
+    ]
+  },
+  "live_verification": {
+    "status": "PENDING_EXTERNAL_PR_GATED_CHECK",
+    "workflow": ".github/workflows/verify-pp1041-decisive-live.yml",
+    "evidence_artifact": "pp1041-decisive-live-evidence"
   }
 }
