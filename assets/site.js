@@ -61,6 +61,14 @@
   deFactoVisibilityStability.setAttribute('data-ac-de-facto-knowing-facilitation-stability-loader', 'true');
   document.head.appendChild(deFactoVisibilityStability);
 
+  // Propagate the verified 20-Aug-2026 CNMV email/REGAGE state across the connected RICPE,
+  // Orion, Portfolio and professional-custody routes without duplicating the canonical record.
+  const cnmvRegageStatus = document.createElement('script');
+  cnmvRegageStatus.src = new URL('cnmv-regage-status-cross-site-20260820.js?v=20260820a', current.src).href;
+  cnmvRegageStatus.async = false;
+  cnmvRegageStatus.setAttribute('data-cnmv-regage-status-loader', 'true');
+  document.head.appendChild(cnmvRegageStatus);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
