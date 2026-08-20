@@ -69,6 +69,14 @@
   cnmvRegageStatus.setAttribute('data-cnmv-regage-status-loader', 'true');
   document.head.appendChild(cnmvRegageStatus);
 
+  // Connect the 25-Feb-2022 visado and the COALZ/COAGC record to the wider economic,
+  // administrative, investor, tax, public-support and judicial reconstruction.
+  const jdamArchitecture = document.createElement('script');
+  jdamArchitecture.src = new URL('jdam-architecture-colegios-20260820.js?v=20260820a', current.src).href;
+  jdamArchitecture.async = false;
+  jdamArchitecture.setAttribute('data-jdam-architecture-colegios-loader', 'true');
+  document.head.appendChild(jdamArchitecture);
+
   // Surface the bilingual Playa Blanca hotel/local-services concept inside the Future section
   // while keeping the exact private site, ownership and transaction perimeter undisclosed.
   const playaBlancaConcept = document.createElement('script');
