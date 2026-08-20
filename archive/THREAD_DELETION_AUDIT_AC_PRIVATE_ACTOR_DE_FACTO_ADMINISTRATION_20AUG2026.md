@@ -1,7 +1,7 @@
 # THREAD DELETION AUDIT — AC / COMMUNITY / PRIVATE-ACTOR DE FACTO ADMINISTRATION
 
 **Date:** 20 August 2026  
-**Current state:** **NOT YET DELETION-SAFE — repository intelligence is merged and CI-green; durable public-edge re-verification remains pending**  
+**Current state:** **DELETION-SAFE WITH OPEN EVIDENCE**  
 **Controlling protocol:** `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`
 
 ## Material intelligence preserved
@@ -40,12 +40,14 @@ A future thread must re-query connected Gmail, Drive, Files and the certified co
 
 Certified docket; native Community authority/accounts; vendor/payment/recharge crosswalk; native AC/private communications; security/access logs; CAM payment trail; calculation workbooks; final accounts, deed notice and Registry chain.
 
-## Repository and CI state
+## Repository, CI and deployment state
+
+### Source implementation
 
 - PR **#581**.
 - Source branch: `agent/ac-community-de-facto-administration-20260820`.
 - PR head: `b1129889e9bec6f50678da80748852ea77d98de9`.
-- Merge SHA: `0c4d446833070c12816ee47618256e1162ffe550`.
+- Source merge SHA: `0c4d446833070c12816ee47618256e1162ffe550`.
 - Merged at `2026-08-20T09:36:55Z`.
 - Dedicated validation run `32353866070`: **success**.
 - Publication integrity `32353866114`: **success**.
@@ -56,18 +58,26 @@ Certified docket; native Community authority/accounts; vendor/payment/recharge c
 - Public-bidder anonymisation `32353866099`: **success**.
 - Visual-asset registry `32353866078`: **success**.
 
-## Remaining implementation gate
+### Deployment closeout and public edge
 
-The closeout workflow must publish a successful durable status on the closeout merge SHA under:
+- PR **#584**.
+- Closeout merge SHA: `de060ad60e7f63e9af748ee005051003c6fa9dcb`.
+- Merged at `2026-08-20T10:31:10Z`.
+- Public-edge workflow run `32359330380`, job `96395329770`: **success**.
+- Spanish/English canonical pages, runtime module, sitemap and robots entry all returned HTTP 200 with required markers on source-poll attempt 1.
+- Rendered-browser verification passed **26 assertions**, including both canonical pages, reciprocal links, Community/Administrator cross-links, Case Control Room and criminal-investigation updates.
+- Durable status `pages-propagation/ac-community-de-facto-administration` is **success** on `de060ad60e7f63e9af748ee005051003c6fa9dcb`, published at `2026-08-20T10:31:56Z`.
 
-`pages-propagation/ac-community-de-facto-administration`
+## Deletion-safety determination
 
-Only after that objective public-edge check may this audit be promoted to:
+A fresh thread can recover every material new fact, source-status decision, correction, legal boundary, strategic choice, open evidence target and implementation state from current repository records and the connected primary-source systems. No material intelligence remains dependent on this chat.
 
-**DELETION-SAFE WITH OPEN EVIDENCE** — meaning all thread intelligence and implementation state are recoverable, while the identified primary evidence remains outstanding.
+The remaining evidence gaps are explicit and do not prevent continuity. They prevent final merits conclusions.
+
+**Final status: DELETION-SAFE WITH OPEN EVIDENCE.**
 
 ## Lifecycle
 
 `DRAFT → REMOTE_SOURCE → PR_OPEN → CI_GREEN → MERGED → DEPLOYED → LIVE_VERIFIED → DELETION_SAFE`
 
-Current state: **MERGED / CI_GREEN / LIVE_REVERIFY_PENDING**.
+Current state: **DELETION-SAFE WITH OPEN EVIDENCE**.
