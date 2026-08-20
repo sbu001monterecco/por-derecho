@@ -5,22 +5,72 @@
 ## Correct counsel identities
 
 - **Sixto Abogados** — correct spelling: **S-I-X-T-O**.
-- **Javier Sixto** — currently the more active Sixto lawyer in the matter; exact current workstreams must be verified from Gmail/files rather than assumed.
-- **Estefanía at Sixto Abogados** — involved; full surname, email, title, dates and exact mandate must be recovered from primary mailbox/file records and not guessed.
+- **Javier Sixto** — currently the more active Sixto lawyer in the matter; exact current workstreams must still be verified from the primary mailbox/file record where a precise statement is needed.
+- **Estefanía Sixto Seijas** — full identity now confirmed from the native mailbox. Treat her role separately from Javier’s and do not infer review/approval merely because she was copied.
 - **Carlos Llamas Sanz** — separate lawyer/adviser. Do not merge his mandate, advice or responsibility into Sixto Abogados.
 
-## Mandatory next review
+## Current counsel-corpus completion checkpoint
 
-Run a fresh **unitary reverse-engineering scan** of the entire Sun Park matter before relying on any prior counsel summary:
+A deep user-side Gmail/files review has now materially advanced the counsel corpus. Current working completeness is **decision-grade but not absolute corpus-complete**:
 
-1. outcome-first from current HNT/MYND operation, financing, title, Matkator assets, ETJ 163/2020 and DP 748/2026;
-2. origin-first from LPB/Matkator ownership, Community/CEXP, lender, Concurso 36/2012, ONA/financing and 2018 control architecture;
-3. reconcile the two models;
-4. then separately digest all emails/files with Javier Sixto, Estefanía/Sixto Abogados and Carlos Llamas Sanz.
+- Javier Sixto substantive matter corpus: approximately **96%**;
+- Estefanía Sixto Seijas substantive matter corpus: approximately **94%**;
+- Carlos Llamas Sanz substantive matter corpus: approximately **96%**;
+- Cuatrecasas workstream across counsel: approximately **97%**;
+- La Laguna / ETJ / DP 748 coordination: approximately **98%**;
+- overall accessible-corpus mastery: approximately **94–96%**.
+
+These are readiness estimates, not mathematical proof that every record ever created has been obtained. Lawyer-side DMS/working notes, unrecorded calls, external shared folders and any expired chat-only original without an independent duplicate remain corpus boundaries.
+
+Material counsel findings preserved for future threads:
+
+- Sixto’s Cuatrecasas analysis is document-first and more cautious than some client-side reconstructions; do not inflate it into counsel adoption of every criminal/professional theory.
+- Javier advised against unnecessary disclosure of strategy to Cuatrecasas; the privilege firewall below remains controlling.
+- On DP 1956/2026, Javier’s written position was to avoid an immediate appeal where an adverse appellate ruling could create a worse preclusive problem; later civil/procedural developments may affect the route. Treat this as privileged current-counsel strategy unless independently public/served.
+- Carlos’s La Laguna role is operational and independently evidenced, including ETJ 163/2020 coordination; his broader July 2026 Group General Counsel role has contractual limits and does not make him responsible for every historic dispute or factual representation.
+- The INPARSA / Hoteles Beatriz comparison is a **client-side comparative hypothesis**. Counsel considering a comparison/contact does not convert it into a proved modus operandi or broad counsel endorsement.
+
+## Critical Cuatrecasas / La Laguna gap reminders
+
+PR #630 merged the persistent critical-gap controls. Read:
+
+- `archive/CUATRECASAS_CRITICAL_GAP_CLOSURE_CONTROL_20AUG2026.md`
+- `/es/cuatrecasas-brechas-criticas/`
+- `/en/cuatrecasas-critical-gaps/`
+
+The control IDs CG-001–CG-010 must be **closed, disproved or explicitly superseded**, never silently removed. The highest-value open items remain the certified Cambiario/ETJ chain, causal-debt/debtor ledger, adjudication/cession/beneficiary status, finca 8584 expert identity/value, 2024–2026 decision/conflict record, ONA/June-2018/2019 handover file, latest signed DP 748/ETJ decisions and source-version/external-source reconciliation.
+
+Permanent language locks:
+
+- `not located` ≠ `does not exist`;
+- reservation of cession ≠ proof a cession occurred;
+- no beneficiary may be named without primary proof;
+- physical/economic integration ≠ automatic fraud or extinction of registry title;
+- knowledge/context ≠ intent;
+- civil, deontological and criminal routes remain distinct;
+- current-counsel advice/work product stays behind privilege.
+
+## New pending workstream — three-case comparative reverse engineering
+
+The latest instruction from the originating thread has been canonicalised here:
+
+- `archive/THREE_CASE_CONCURSAL_JUDICIAL_COMPARATOR_REVERSE_ENGINEERING_20AUG2026.md`
+
+**Status: PENDING EXECUTION.** It has not yet been run and comparator commonalities must not be cited as findings.
+
+The future scan must:
+
+1. identify the two strongest genuinely comparable matters from the corpus rather than guessing them;
+2. scan Gmail/files/repository plus Spanish national and Canary Islands media and then verify material media claims against official sources;
+3. reconstruct the LPB liquidation plan clause-by-clause from zero;
+4. audit judge and Administrador Concursal acts/omissions actor-by-actor, with proof of knowledge and a graduated culpability scale;
+5. compare the three matters mechanism-by-mechanism, preserving material differences and exculpatory explanations;
+6. test, not assume, whether there is a recurring distressed-asset / insolvency-control / creditor-purchaser / valuation / possession / judicial-validation mechanism;
+7. identify exactly what additional evidence would move a proposition from irregularity/negligence into knowing, arbitrary, coordinated or criminally relevant conduct.
 
 ## Privilege firewall — non-negotiable
 
-Treat communications with Javier Sixto, Estefanía, Carlos Llamas Sanz and other current/later counsel as **privileged/internal by default**.
+Treat communications with Javier Sixto, Estefanía Sixto Seijas, Carlos Llamas Sanz and other current/later counsel as **privileged/internal by default**.
 
 External communications to Cuatrecasas must be rebuilt from independent primary sources. Do **not** quote, paraphrase, attach or reveal counsel advice, litigation sequencing, contemplated claims, defendants, forums, limitation strategy, evidence strategy, witness/expert plans, settlement positions or weaknesses.
 
@@ -52,7 +102,7 @@ Before naming it, verify:
 - whether DP 748 material has been served/quoted in ETJ 163/2020;
 - whether any procedural reserve/confidentiality applies;
 - Javier Sixto’s current view;
-- Estefanía’s relevant view, if any;
+- Estefanía Sixto Seijas’s relevant view, if any;
 - Carlos Llamas Sanz’s current view;
 - tactical/prejudice risk.
 
@@ -61,45 +111,24 @@ A. minimal express reference to `ETJ 163/2020` and `DP 748/2026`;
 B. “civil-enforcement and related criminal proceedings in La Laguna”;
 C. “the existing La Laguna proceedings”.
 
-Default until the counsel scan is complete: **B or C**, not A.
+Default while material counsel/court gaps remain open: **B or C**, not A.
 
 ## Current Cuatrecasas unitary position
 
 Canonical sources:
 - `archive/SUN_PARK_UNITARY_REVERSE_ENGINEERING_AND_CUATRECASAS_REDIGEST_20AUG2026.md`
 - `archive/CUATRECASAS_EVIDENCE_GAP_AND_TRIGGER_REGISTER_20AUG2026.md`
+- `archive/CUATRECASAS_CRITICAL_GAP_CLOSURE_CONTROL_20AUG2026.md`
 - `/en/cuatrecasas-sun-park/`
 - `/es/cuatrecasas-sun-park/`
 - `/en/reverse-engineering-360-sun-park-chain/`
 - `/es/ingenieria-inversa-360-cadena-sun-park/`
 
-PR #560 was merged on 20 August 2026. The controlling position is cumulative: the Acosta Matos/CAM/HNT/MYND-connected perimeter remains the alleged primary private actor/benefit chain; Cuatrecasas’s potential responsibility is separate and cumulative, based on accepted mandate, pre-June knowledge, possible protection/implementation/handover failures and later affirmative execution conduct. No common plan is presently proved.
+The controlling position is cumulative: the Acosta Matos/CAM/HNT/MYND-connected perimeter remains the alleged primary private actor/benefit chain; Cuatrecasas’s potential responsibility is separate and cumulative, based on accepted mandate, pre-June knowledge, possible protection/implementation/handover failures and later affirmative execution conduct. No common plan is presently proved.
 
-## Current counsel scan scope
+## Current-counsel source boundary
 
-Search Gmail/Drive/File Library for all variants of:
-- `Sixto`, `Sisto`, `Javier Sixto`, `Estefanía`, `Estefania`, `Sixto Abogados`;
-- `Carlos Llamas`, `Carlos Llamas Sanz`;
-- combined with `Cuatrecasas`, `Aweswell`, `LPB`, `Matkator`, `Sun Park`, `ONA`, `Acosta Matos`, `CAM`, `HNT`, `MYND`, `RICPE`, `Concurso 36/2012`, `Cambiario 1048/2019`, `ETJ 163/2020`, `DP 748/2026`, `pagaré`, `adjudicación`, `cesión del remate`, `suspensión`, `reposición`, `estafa procesal`, `467.2`, `MASC`, `prescripción`, `cautelar`, `estrategia`, `confidencial`, `secreto profesional`.
-
-Include From/To/CC, forwarded messages, quoted threads, attachments, meeting notes and client emails recounting oral advice.
-
-## Required internal deliverables from the next scan
-
-1. complete Sixto email/file inventory;
-2. Javier Sixto mandate/activity report;
-3. Estefanía identity/involvement report;
-4. Carlos Llamas Sanz mandate/email/file report;
-5. shared-counsel coordination matrix;
-6. advice-consistency/conflict register;
-7. current proceedings/deadline matrix;
-8. privilege/strategy register;
-9. independent-source substitution schedule;
-10. DP 748 disclosure memorandum;
-11. clean-room Cuatrecasas leadership email;
-12. external-safe annex schedule;
-13. privileged excluded-material schedule;
-14. repository/live-site disclosure-risk audit.
+Future threads should re-query Gmail/Drive/File Library when a precise counsel statement is material. Include From/To/CC, forwarded messages, quoted threads, attachments, meeting notes and client emails recounting oral advice. Do not treat a client account of an oral lawyer conversation as equivalent to a written lawyer position.
 
 ## Expired-file control
 
@@ -127,4 +156,4 @@ Controlling corrections/limits:
 - distinguish the statutory **RIC** mechanism from **RIC Private Equity Investment Partners SCR, S.A.** / case shorthand `RPE` / informal `RICPE`;
 - current public-web material corroborates Espejo's Expert Witness professional role, but the precise historic **VIDISPIR** linkage was not independently established by the present public-web scan.
 
-Deletion status for the originating thread remains **not yet safe for casual deletion until the preservation branch/PR is retained or merged**. After merge it is conditionally safe from synthesis-loss perspective only; primary Gmail, court, appeal and audiovisual originals must remain in durable custody.
+Deletion status for the originating David Espejo thread remains governed by its own audit and preservation record; primary Gmail, court, appeal and audiovisual originals must remain in durable custody.
