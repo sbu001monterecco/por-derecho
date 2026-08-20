@@ -1,67 +1,72 @@
-# Public-office communication full-text archival protocol
+# Public-office communication custody and redacted-publication protocol
 
 Status: mandatory repository rule  
 Effective date: 20 August 2026  
 Scope: Project Sun Rock / Por Derecho matter
 
-## Mandatory rule
+## Two-layer rule
 
-Every material communication received from a public office, public authority, court, tribunal, Fiscalía/Ministerio Fiscal office, tax authority, regulator, transparency body, inspectorate, ministry, Gobierno de Canarias department, Cabildo, Ayuntamiento, police/public-security body, public commission, public ombudsman or other public-sector body relating to this matter must be preserved in the repository as a **full source record**.
+Every material public-office communication must be handled through two conceptually separate layers:
 
-A summary, chronology entry, analysis, website statement or quotation is never a substitute for the complete communication.
+1. **Primary evidence custody:** complete source, native binary where available, full metadata and unredacted text in a private access-controlled evidence store.
+2. **Public publication derivative:** source-led, institutionally complete and appropriately redacted for the public repository and website.
 
-## What must be preserved
+A summary, chronology entry, analysis, website statement or quotation is never a substitute for the complete primary source. Equally, public GitHub publication is not a justification for exposing unnecessary personal or authentication data.
 
-For every relevant communication, preserve as far as available:
+## Primary evidence custody requirements
 
-1. The complete email body, including an express note when the body is empty.
-2. The complete text of every substantive attached letter, resolution, decree, order, notification, certificate, report or other official document.
-3. Sender/issuing-office and recipient metadata.
-4. Date and time of the email or notification.
-5. Subject line.
-6. Official reference, expediente/proceeding number, SALIDA/ENTRADA/REGAGE number, NDE or verification code where present.
-7. Original attachment filename(s).
-8. Signature and registration metadata appearing in the official document.
-9. Retrieval provenance, including Gmail message ID or equivalent internal retrieval identifier where useful for reproducibility.
-10. The native binary or authenticated/custody location when tooling permits. Where only a text derivative is stored, identify the native source and never describe the text derivative as the native binary.
+Preserve, as far as available:
 
-## Fidelity and source-status rule
+1. complete email body, including a note where empty;
+2. complete substantive attachments;
+3. sender/issuing-office and recipient metadata;
+4. date/time and subject;
+5. official reference, expediente, SALIDA/ENTRADA/REGAGE number and verification code;
+6. original filenames;
+7. signature/registration metadata;
+8. retrieval provenance, including message or portal identifiers;
+9. native binary, official verification result and cryptographic hash;
+10. custody location, access controls and any privilege/secrecy restriction.
 
-- Preserve complete wording where a complete source is available.
-- Normalisation of line wrapping and page-break hyphenation is permitted for readability only; it must not change substance.
-- If extraction is uncertain, mark the uncertainty rather than silently correcting it.
-- Do not silently omit adverse, exculpatory, repetitive or apparently inconvenient passages from a document represented as “full text”.
-- If privacy, secrecy, privilege or publication constraints require a redacted/public derivative, keep the full controlled source and public derivative conceptually separate.
-- A user-supplied pasted transcription is not the native signed binary. It may be used immediately as a controlled derivative, but native-source recovery remains a custody task.
+## Public derivative requirements
 
-## Analytical separation
+A public derivative should retain the institutional and evidential substance needed for accountability while redacting unnecessary:
 
-Each record should distinguish:
+- private email and street addresses;
+- telephone numbers;
+- signatures and signature images;
+- verification codes or credentials capable of retrieving a personal document;
+- unrelated personal identifiers;
+- protected, privileged or legally restricted material.
 
-- **primary/source text**;
-- **provenance/custody metadata**; and
-- **summary, interpretation, allegation, legal analysis or evidential inference**.
+It must state whether it is a transcription, translation, digest, redacted copy or native binary. It must not describe a derivative as the native signed document.
 
-Interpretive material should link back to the complete source record.
+## Fidelity and analytical separation
 
-## Same-pass ingestion rule
+- Do not silently omit adverse or exculpatory substantive passages from a document represented as complete.
+- Where the public layer is a digest rather than full redacted text, label it clearly and point to the private/native custody requirement.
+- Keep primary/source text, provenance/custody metadata and analysis/inference distinct.
+- Mark extraction or translation uncertainty rather than silently correcting it.
 
-Whenever Gmail, Drive, a portal download, uploaded file or other connected source reveals a new material public-office communication, the workflow should, in the same pass where practicable:
+## Same-pass ingestion
+
+When a new material communication is located:
 
 1. read the complete communication and substantive attachments;
-2. create/update its canonical source record;
-3. update the relevant institutional/proceeding chronology;
-4. propagate any material correction through the correction/missing-evidence/storyline architecture; and
-5. only then rely on summaries or excerpts downstream.
+2. secure the native source and hash in the private custody layer where possible;
+3. create or update the public redacted source record;
+4. update the institutional/proceeding chronology;
+5. propagate material corrections through correction, missing-evidence and storyline controls;
+6. audit the public output for personal data before publication.
 
-## Retroactive rule
+## Retroactive correction
 
-The rule is prospective and retroactive. If a historical official communication is already summarized but its full text is not preserved, treat that as an ingestion gap and close it when next handled.
+- If a historical source is summarized but not preserved, treat that as a primary-source gap.
+- If unredacted personal or verification data appear in public Git history, replace the current public version immediately with a redacted derivative.
+- Because ordinary Git commits do not erase prior history, assess separately whether a repository-history rewrite, secret rotation or document-verification mitigation is necessary.
 
 ## Intervención General implementation
 
-Current canonical controlled records include:
-
-- `archive/public_office_communications/intervencion_general/2026-03-06_SALIDA_184368_2026_FULL_TEXT.md` — native PDF recovered from Gmail in the prior ingestion pass.
-- `archive/public_office_communications/intervencion_general/2026-06-11_SALIDA_497011_2026_FULL_TEXT.md` — native PDF recovered from Gmail in the prior ingestion pass.
-- `archive/public_office_communications/intervencion_general/2026-08-19_SALIDA_699645_2026_ES_EN.md` — user-supplied transcription and English translation; native signed PDF still to be recovered/hashed.
+- `2026-03-06_SALIDA_184368_2026_FULL_TEXT.md`: native PDF was recovered in the prior ingestion pass; its public form should be reviewed against this redaction rule.
+- `2026-06-11_SALIDA_497011_2026_FULL_TEXT.md`: native PDF was recovered in the prior ingestion pass; its public form should be reviewed against this redaction rule.
+- `2026-08-19_SALIDA_699645_2026_ES_EN.md`: current public redacted derivative; native signed PDF still requires recovery, verification and hashing in private custody.
