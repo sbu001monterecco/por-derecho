@@ -8,19 +8,119 @@
     });
   }
 
-  // Keep the application/collaboration registry discoverable across the
-  // Por Derecho methodology family without changing the live-matter navigation.
+  const lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+  const base = `/por-derecho/${lang}/por-derecho/`;
+
+  // Keep the application register and the institutional programme discoverable
+  // across the Por Derecho methodology family without changing live-matter pages.
   if (nav && !nav.querySelector('a[href*="aplicaciones-y-colaboracion"],a[href*="applications-and-collaboration"]')) {
-    const lang = document.documentElement.lang === 'en' ? 'en' : 'es';
     const link = document.createElement('a');
     link.dataset.pdApplicationsLink = 'true';
     link.href = lang === 'en'
-      ? '/por-derecho/en/por-derecho/applications-and-collaboration/'
-      : '/por-derecho/es/por-derecho/aplicaciones-y-colaboracion/';
+      ? `${base}applications-and-collaboration/`
+      : `${base}aplicaciones-y-colaboracion/`;
     link.textContent = lang === 'en' ? 'Applications' : 'Aplicaciones';
     const anchor = nav.querySelector('.pd-language,.pd-back');
     nav.insertBefore(link, anchor || null);
   }
+  if (nav && !nav.querySelector('a[href*="governance-and-independence"],a[href*="gobernanza-e-independencia"]')) {
+    const link = document.createElement('a');
+    link.dataset.pdInstitutionLink = 'true';
+    link.href = lang === 'en'
+      ? `${base}governance-and-independence/`
+      : `${base}gobernanza-e-independencia/`;
+    link.textContent = lang === 'en' ? 'Institution' : 'Institución';
+    const anchor = nav.querySelector('.pd-language,.pd-back');
+    nav.insertBefore(link, anchor || null);
+  }
+
+  function ensureStageTwoCss() {
+    if (document.querySelector('link[href*="foundation-stage-2.css"]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/por-derecho/assets/por-derecho/foundation-stage-2.css';
+    document.head.appendChild(link);
+  }
+
+  function addFoundationStageTwoHome() {
+    const path = window.location.pathname.replace(/index\.html$/, '');
+    const isHome = path === '/por-derecho/es/por-derecho/' || path === '/por-derecho/en/por-derecho/';
+    if (!isHome || document.querySelector('[data-pd-foundation-stage2]')) return;
+    ensureStageTwoCss();
+    const main = document.querySelector('main');
+    if (!main) return;
+    const target = main.querySelector('#formacion') || main.lastElementChild;
+    const section = document.createElement('section');
+    section.className = 'pd-section alt';
+    section.dataset.pdFoundationStage2 = '20260820';
+    if (lang === 'en') {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Institutional stage two</p><h2>Draft the institution. Try to break the method. Preserve the house carefully.</h2></div><p>Three working instruments now move Por Derecho beyond a demonstrator without overstating its status. The Foundation is not registered, independent review has not yet occurred, and the San Bernardo acquisition is not complete.</p></div>
+        <div class="pds2-docs">
+          <article class="pds2-doc"><span class="pds2-state">Working draft</span><h3>Formation and governance</h3><p>Proposed purposes, Board, conflicts committee, scientific council, funding controls, founder-related quarantine and the rule that no asset or donor controls conclusions.</p><footer><a href="${base}governance-and-independence/">Open the governance draft →</a></footer></article>
+          <article class="pds2-doc"><span class="pds2-state">Review not yet performed</span><h3>Independent red-team protocol</h3><p>Pre-registered synthetic tests, false-positive clearance, stop conditions, dissent, redesign and a real “do not deploy” outcome.</p><footer><a href="${base}research-and-training/">Open the review protocol →</a></footer></article>
+          <article class="pds2-doc"><span class="pds2-state">Acquisition not completed</span><h3>San Bernardo preservation brief</h3><p>Preservation, archive, room programme and quiet technology, strictly separate from title, condition, finance, diligence and authority to inspect or alter.</p><footer><a href="${base}palacete/">Open the preservation brief →</a></footer></article>
+        </div>
+        <div class="pd-actions"><a class="pd-button secondary" href="${base}origin/">Why the founder’s case may originate questions but cannot control conclusions →</a></div>
+      </div>`;
+    } else {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Segunda etapa institucional</p><h2>Redactar la institución. Intentar romper el método. Preservar la casa con cuidado.</h2></div><p>Tres instrumentos de trabajo llevan Por Derecho más allá del demostrador sin inflar su estado. La Fundación no está registrada, la revisión independiente no se ha realizado y la adquisición de San Bernardo no está completada.</p></div>
+        <div class="pds2-docs">
+          <article class="pds2-doc"><span class="pds2-state">Borrador de trabajo</span><h3>Formación y gobernanza</h3><p>Fines, Patronato, comité de conflictos, consejo científico, financiación, cuarentena de asuntos vinculados y regla de que ningún activo o donante controla conclusiones.</p><footer><a href="${base}gobernanza-e-independencia/">Abrir el borrador de gobernanza →</a></footer></article>
+          <article class="pds2-doc"><span class="pds2-state">Revisión no realizada</span><h3>Protocolo de red-team independiente</h3><p>Pruebas sintéticas pre-registradas, cierre de falsos positivos, condiciones de parada, disenso, rediseño y un resultado real de “no desplegar”.</p><footer><a href="${base}investigacion-y-formacion/">Abrir el protocolo de revisión →</a></footer></article>
+          <article class="pds2-doc"><span class="pds2-state">Adquisición no completada</span><h3>Brief de preservación de San Bernardo</h3><p>Conservación, archivo, programa de estancias y tecnología discreta, separados de titularidad, estado, financiación, diligencia y autoridad para inspeccionar o alterar.</p><footer><a href="${base}palacete/">Abrir el brief de preservación →</a></footer></article>
+        </div>
+        <div class="pd-actions"><a class="pd-button secondary" href="${base}origen/">Por qué el caso del fundador puede originar preguntas pero no controlar conclusiones →</a></div>
+      </div>`;
+    }
+    main.insertBefore(section, target || null);
+  }
+
+  function addCorrectedMaturityLadder() {
+    const path = window.location.pathname;
+    const isApplications = path.includes('/aplicaciones-y-colaboracion/') || path.includes('/applications-and-collaboration/');
+    if (!isApplications || document.querySelector('[data-pd-maturity-20260820]')) return;
+    ensureStageTwoCss();
+    const main = document.querySelector('main');
+    if (!main) return;
+    const hero = main.firstElementChild;
+    const section = document.createElement('section');
+    section.className = 'pd-section';
+    section.dataset.pdMaturity20260820 = 'true';
+    if (lang === 'en') {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Correct maturity sequence · 20 August 2026</p><h2>Simulation, independent criticism, controlled use, then institutional decision.</h2></div><p>Readiness, receipt and experimental use are not validation or adoption. Each stage requires distinct evidence.</p></div>
+        <div class="pds2-flow">
+          <article><div><h3>Brief synthetic demonstrator</h3><p>The public File Alpha explains the six checks and human decision gate.</p></div><aside>Available as a teaching demonstrator.</aside></article>
+          <article><div><h3>Expanded synthetic simulation</h3><p>Case Prism tests time, competence, mixed perimeters, alternatives and difficult-to-reverse effects.</p></div><aside><strong>Under internal validation; not deployed.</strong></aside></article>
+          <article><div><h3>Independent red-team review</h3><p>Pre-registered synthetic cases must test false positives, bias, privacy, security, human control and stop conditions.</p></div><aside>Protocol prepared; review not yet performed.</aside></article>
+          <article><div><h3>Controlled real-matter application</h3><p>DIP 79/2026 and DIP 80/2026 are experimental founder-related research applications under visible conflict controls.</p></div><aside>Not independent validation, ICALPA endorsement, adoption or a disciplinary conclusion.</aside></article>
+          <article><div><h3>Institutional pilot</h3><p>A competent institution may authorise a bounded synthetic or controlled pilot under its own governance.</p></div><aside>No institutional pilot is presently claimed.</aside></article>
+          <article><div><h3>Adoption</h3><p>Use, partnership, accreditation or adoption is recorded only after the institution expressly confirms it.</p></div><aside>No adoption is presently claimed.</aside></article>
+        </div>
+        <div class="pds2-boundary" style="margin-top:20px"><h3>Case separation remains mandatory</h3><p>Sharing a method never transfers evidence between matters. Each use requires a human decision on relevance, provenance, lawful access, competence and the exact purpose for which a source is sufficient.</p></div>
+      </div>`;
+    } else {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Secuencia de madurez corregida · 20 agosto 2026</p><h2>Simulación, crítica independiente, uso controlado y después decisión institucional.</h2></div><p>Preparación, recepción y uso experimental no son validación ni adopción. Cada etapa exige una evidencia distinta.</p></div>
+        <div class="pds2-flow">
+          <article><div><h3>Demostrador sintético breve</h3><p>El Expediente Alfa público explica las seis comprobaciones y la puerta de decisión humana.</p></div><aside>Disponible como demostrador pedagógico.</aside></article>
+          <article><div><h3>Simulación sintética ampliada</h3><p>Caso Prisma prueba tiempo, competencia, perímetros mixtos, alternativas y efectos difíciles de revertir.</p></div><aside><strong>Bajo validación interna; no desplegado.</strong></aside></article>
+          <article><div><h3>Red-team independiente</h3><p>Casos sintéticos pre-registrados deben probar falsos positivos, sesgo, privacidad, seguridad, control humano y parada.</p></div><aside>Protocolo preparado; revisión no realizada.</aside></article>
+          <article><div><h3>Aplicación controlada a asunto real</h3><p>DIP 79/2026 y DIP 80/2026 son aplicaciones experimentales de investigación relacionadas con el fundador y con conflicto visible.</p></div><aside>No son validación independiente, respaldo de ICALPA, adopción ni conclusión disciplinaria.</aside></article>
+          <article><div><h3>Piloto institucional</h3><p>Una institución competente puede autorizar un piloto sintético o controlado bajo su propia gobernanza.</p></div><aside>No se afirma actualmente ningún piloto institucional.</aside></article>
+          <article><div><h3>Adopción</h3><p>Uso, colaboración, acreditación o adopción solo se registra tras confirmación expresa de la institución.</p></div><aside>No se afirma actualmente adopción.</aside></article>
+        </div>
+        <div class="pds2-boundary" style="margin-top:20px"><h3>La separación entre asuntos sigue siendo obligatoria</h3><p>Compartir método nunca transfiere prueba. Cada uso exige decisión humana sobre relevancia, procedencia, acceso lícito, competencia y el propósito exacto para el que una fuente resulta suficiente.</p></div>
+      </div>`;
+    }
+    if (hero && hero.nextSibling) main.insertBefore(section, hero.nextSibling);
+    else main.appendChild(section);
+  }
+
+  addFoundationStageTwoHome();
+  addCorrectedMaturityLadder();
 
   const decisions = document.querySelectorAll('[data-decision]');
   const output = document.querySelector('[data-decision-output]');
@@ -29,12 +129,10 @@
     button.addEventListener('click', () => {
       decisions.forEach((item) => item.setAttribute('aria-pressed', 'false'));
       button.setAttribute('aria-pressed', 'true');
-      if (output) {
-        output.innerHTML = `<strong>${button.dataset.title}</strong><br>${button.dataset.output}`;
-      }
+      if (output) output.innerHTML = `<strong>${button.dataset.title}</strong><br>${button.dataset.output}`;
       if (audit) {
         const li = document.createElement('li');
-        li.textContent = `${button.dataset.audit}: se conserva la advertencia y la motivación humana.`;
+        li.textContent = `${button.dataset.audit}: ${lang === 'en' ? 'the warning and human reasons are preserved.' : 'se conserva la advertencia y la motivación humana.'}`;
         audit.prepend(li);
       }
     });
