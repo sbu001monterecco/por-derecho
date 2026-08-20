@@ -54,7 +54,7 @@ Files:
 - `foundation-stage-3-execution-register.json`
 - `validate.py`
 
-## 4. Public routes in the merged repository
+## 4. Public routes and live verification
 
 Spanish:
 
@@ -66,7 +66,17 @@ English:
 
 The common Por Derecho runtime also inserts a restrained stage-three gateway on the bilingual institutional home and adds the execution route to Por Derecho navigation without modifying Project Sun Rock live-matter pages.
 
-Repository presence and public-edge delivery remain separate facts. The Spanish execution page and its canonical bilingual route were read back from `main` after merge. Independent GitHub Pages HTTP read-back remains controlled by the dedicated read-only workflow and must not be inferred merely from repository presence.
+Repository presence and public-edge delivery were verified separately. The final public-edge run opened and checked:
+
+- the Spanish and English Por Derecho home routes;
+- eight bilingual origin, governance, research and Palacete routes;
+- both institutional-execution routes;
+- the stage-three stylesheet;
+- the common Por Derecho JavaScript;
+- the Foundation sitemap;
+- `robots.txt`.
+
+All sixteen resources returned HTTP 200 and contained their route-specific status markers. The verifier reported `PUBLIC_EDGE_VERIFIED` on attempt 1 and published persistent commit status `pages-propagation/por-derecho-foundation-stage-3 = success`.
 
 ## 5. Legal-source foundation
 
@@ -112,7 +122,7 @@ The RFP:
 
 ## 8. PR validation evidence
 
-The final PR head passed:
+The final substantive PR head passed:
 
 - Por Derecho Foundation stage-three validation;
 - Por Derecho Foundation stage-two validation;
@@ -123,6 +133,8 @@ The final PR head passed:
 - off-GitHub preservation snapshot.
 
 The unitary public-shell run completed 34 route/archetype checks and reported no horizontal overflow across its tested routes.
+
+The live-status hardening then passed the publication-integrity and preservation gates. The first status run established that every route and asset was already publicly delivered; its only two failures were case-sensitive comparisons of equivalent lower-case status text. PR #569 changed marker comparison to Unicode-aware `casefold()` without changing any substantive requirement. The corrected run passed on its first attempt.
 
 ## 9. Outreach state
 
@@ -136,19 +148,39 @@ No live-case dossier or evidence attachment was included. Draft creation does no
 
 Draft identifiers and direct Gmail URLs remain in Gmail rather than the public repository.
 
-## 10. Merge and public-live fields
+## 10. Merge and public-live evidence
+
+### Substantive release
 
 - Pull request: `#565 — Activate Por Derecho institutional execution and controlled professional commissions`
 - Final validated head: `dbaaef0b43b18bb098c042db2a83228bfe9b58b5`
 - Merge method: `squash`
 - Merge commit: `1ec79cf4b3dddd77f3f57119372862c40e3ac97a`
 - Merge time: `2026-08-20 08:10:06 UTC`
-- Current `main` immediately after merge: `1ec79cf4b3dddd77f3f57119372862c40e3ac97a`
-- Repository read-back of Spanish execution route: `CONFIRMED_IN_MAIN`
-- Public-edge workflow: `READ_ONLY_VERIFIER_PRESENT`
-- Independent public-edge HTTP result: `PENDING_OBSERVED_RESULT`
 
-The execution package is therefore **repository-complete and merged**. It must not be described as publicly live until the public-edge verifier or an independent HTTP read-back confirms the deployed markers.
+### Repository closeout
+
+- Pull request: `#566 — Close the Por Derecho Foundation stage-three execution record`
+- Merge commit: `1e5cf4f3a5ab46d2ad859dff163119235608f8d0`
+
+### Persistent public-edge control
+
+- Pull request: `#567 — Publish a persistent live status for Por Derecho Foundation stage three`
+- Merge commit: `8b06439e8590ef284e0edc45ac72a1be7fdc58f7`
+- Initial run: `32348658012`
+- Initial result: public resources delivered; false failure on two capitalisation-sensitive markers.
+
+### Corrected public-edge verification
+
+- Pull request: `#569 — Make the Foundation live verifier robust to editorial capitalisation`
+- Merge commit: `36b2b03797f129998e3090208a0faadf62f35c8f`
+- Workflow run: `32349219164`
+- Job: `96364471683`
+- Result: `PUBLIC_EDGE_VERIFIED on attempt 1`
+- Persistent status: `pages-propagation/por-derecho-foundation-stage-3 = success`
+- Verified resources: `16/16 HTTP 200 with all required markers`
+
+The execution package is therefore **repository-complete, merged and independently public-edge verified**. This is a publication result only. It does not establish any legal, governance, methodological, institutional or property milestone beyond the status expressly stated on the pages.
 
 ## 11. Next evidence gates
 
