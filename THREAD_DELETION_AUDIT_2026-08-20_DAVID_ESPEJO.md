@@ -5,7 +5,9 @@
 
 ## Deletion conclusion
 
-**Status: NOT YET SAFE FOR CASUAL DELETION — MERGE THE PRESERVATION PR FIRST. AFTER MERGE: CONDITIONALLY SAFE FROM SYNTHESIS-LOSS PERSPECTIVE, SUBJECT TO SOURCE-CUSTODY CONDITIONS BELOW.**
+**Status: CONDITIONALLY SAFE TO DELETE FROM A SYNTHESIS-LOSS / WORK-PRODUCT PERSPECTIVE — NOT SAFE FOR SOURCE DELETION.**
+
+PR #607, `Preserve David Espejo / Expert Witness deep evidence reconstruction`, was merged into `main` on 20 August 2026. The repository-preservation condition is therefore satisfied. This does **not** authorize deletion of primary Gmail, court, appeal, report or audiovisual evidence, and it does not close the unresolved source-custody gaps below.
 
 The thread produced material reconciliations that were not safely captured by a single pre-existing source, especially:
 
@@ -17,11 +19,9 @@ The thread produced material reconciliations that were not safely captured by a 
 - professional-first chronology tested against later contrary networking evidence;
 - CAM and RIC/RPE/RICPE terminology normalization.
 
-That synthesis is now preserved on branch `evidence/david-espejo-deep-reconstruction-20260820` in:
+That synthesis is now preserved on `main` in:
 
 - `archive/DAVID_ESPEJO_EXPERT_WITNESS_DEEP_EVIDENCE_RECONSTRUCTION_20AUG2026.md`.
-
-The branch/PR must be retained and preferably merged before this chat becomes expendable.
 
 ## Evidence independently preserved outside the thread
 
@@ -37,7 +37,7 @@ Deleting the chat must **not** be treated as permission to delete those original
 
 ## Source-custody conditions that remain open
 
-Even after the preservation memo is merged, the following originals/gaps still require separate custody or recovery and prevent any broader `source deletion` conclusion:
+The following originals/gaps still require separate custody or recovery and prevent any broader `source deletion` conclusion:
 
 1. original 25 July 2023 audiovisual files, with metadata/hashes if available;
 2. a certified/full court recording or audiovisual index and recess/off-record chronology;
@@ -83,7 +83,7 @@ The 24 July access email was supplied during appeal preparation. It is not expre
 
 ## Final deletion test
 
-After the preservation branch has been retained/merged, this thread is **conditionally safe to delete from a work-product/synthesis-loss perspective** if all of the following remain true:
+This thread is now **conditionally safe to delete from a work-product/synthesis-loss perspective** because PR #607 has been merged, provided all of the following remain true:
 
 1. `archive/DAVID_ESPEJO_EXPERT_WITNESS_DEEP_EVIDENCE_RECONSTRUCTION_20AUG2026.md` remains accessible in the repository;
 2. this deletion audit remains accessible;
@@ -91,4 +91,4 @@ After the preservation branch has been retained/merged, this thread is **conditi
 4. court/judgment/appeal originals remain in durable source custody;
 5. no one interprets thread deletion as authorization to delete original audiovisual evidence or unresolved source files.
 
-Until the branch/PR is retained or merged, keep the present status as **NOT YET SAFE FOR CASUAL DELETION**.
+**Current status after PR #607 merge: synthesis/work-product deletion condition satisfied; primary-source preservation and the seven identified evidence gaps remain live.**
