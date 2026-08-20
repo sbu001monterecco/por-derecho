@@ -1,0 +1,60 @@
+{
+  "publication_id": "PP1041-WITHDRAWAL-AUTHORITY-CORRECTION-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "control_date": "2026-08-20",
+  "publication_type": "bilingual dedicated dossier plus sitewide red correction and structured-evidence update",
+  "controlling_proposition": {
+    "es": "No está acreditado que LPB desistiera voluntariamente. Está acreditado que se presentó un desistimiento en su nombre. Por Derecho alega atribución procesal falsa, falta de autorización, perjuicio deliberado a la masa y agencia funcional de facto para el perímetro CAM/Acosta Matos; la autoría, autoridad, intención y responsabilidad deben determinarse con el expediente certificado.",
+    "en": "It is not established that LPB voluntarily withdrew. It is established that a withdrawal was filed in its name. Por Derecho alleges false procedural attribution, lack of authority, deliberate estate harm and de facto functional agency for the CAM/Acosta Matos perimeter; authorship, authority, intent and liability require determination from the certified file."
+  },
+  "expected_routes": {
+    "es": [
+      "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html",
+      "es/administrador-concursal-puerta-credito-titulo/index.html"
+    ],
+    "en": [
+      "en/pp1041-withdrawal-authority-authenticity-benefit/index.html",
+      "en/insolvency-administrator-credit-to-title-gatekeeper/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/pp1041-withdrawal-authority-correction-20260820.js",
+    "assets/site.js",
+    "research/lender-of-record-liability/PP1041-WITHDRAWAL-AUTHORITY-AUTHENTICITY-BENEFIT.md",
+    "research/lender-of-record-liability/data/sources.json",
+    "research/lender-of-record-liability/data/actors.json",
+    "research/lender-of-record-liability/data/conduct-decisions.json",
+    "research/lender-of-record-liability/data/proceedings.json",
+    "research/lender-of-record-liability/data/evidence-gaps.json",
+    "research/lender-of-record-liability/data/manifest.json",
+    "sitemap-lender-liability.xml"
+  ],
+  "sitewide_scope": [
+    "pacto-comisorio credit-to-title routes",
+    "PH122/Cerberus/Haya/Bankia external perimeter routes",
+    "lender-liability hubs",
+    "Insolvency Administrator gatekeeper and loyalty-breakpoint routes",
+    "Article 1535/litigious-credit/retracto routes",
+    "sale-lender convergence routes"
+  ],
+  "evidence_boundary": {
+    "verified": "The 12 January disclosure order, CAM's authority objection, 25 January Administrator control of counsel/procurator, withdrawal filing in LPB's name, CAM non-opposition and 5 March closure are supported by primary documents.",
+    "not_established": "An authentic voluntary LPB decision, the withdrawal drafter/signer/filer, LexNET chain, specific authority, Article 51.2 authorisation, LPB hearing and estate-interest analysis are not established by the currently available file.",
+    "allegation": "False attribution, deliberate estate harm, de facto functional agency for CAM/Acosta Matos, individual involvement of José Daniel Acosta Matos or Laura Patricia Acosta Matos, and criminal liability are Por Derecho allegations requiring proof; they are not final judicial findings."
+  },
+  "p0_evidence": [
+    "Complete PP 1041 withdrawal pleading and annexes.",
+    "Drafter, signatory, filer and LexNET user/certificate metadata.",
+    "Specific power relied upon for LPB.",
+    "Article 51.2 application, insolvency-court authorisation and LPB hearing record.",
+    "Administrator-procurator-CAM-counsel-Acosta Matos communications.",
+    "Conflict, independence and estate-benefit analysis.",
+    "Counterfactual finance, convenio, payment, redemption and alternative-route file."
+  ],
+  "publication_rule": "Remove the unqualified phrase 'LPB withdrew'. Use 'a withdrawal was filed in LPB's name' and separately classify verified fact, Por Derecho allegation, inference and pending judicial/criminal determination.",
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "REMOTE_SOURCE means the source exists on the correction branch. PR, CI, merge, deployment and live verification require separate observable evidence."
+  }
+}
