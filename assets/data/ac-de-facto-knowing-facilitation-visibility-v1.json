@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-20",
+  "record_id": "AC-DFA-KNOWING-FACILITATION-VISIBILITY-20260820",
+  "status": "ATTRIBUTED_CROSS_CUTTING_ALLEGATION_ACTIVE_INVESTIGATION",
+  "parent_record": "AC-COMMUNITY-DE-FACTO-20260820",
+  "public_allegation": {
+    "es": "Por Derecho alega una arquitectura grave de administración de hecho y facilitación consciente: actores privados ejercieron funciones estables de gestión sobre autoridad comunitaria, deuda, voto, acceso, seguridad, mantenimiento y control práctico, mientras la Administración Concursal solicitó, autorizó, adoptó, utilizó, dependió de o no delimitó suficientemente partes importantes de esa arquitectura.",
+    "en": "Por Derecho alleges a serious de facto-management and knowing-facilitation architecture: private actors exercised recurring management functions over Community authority, debt, voting, access, security, maintenance and practical control, while the Insolvency Administration requested, authorised, adopted, used, relied upon or insufficiently delimited important parts of that architecture.",
+    "attributed": true,
+    "criminal_finding": false,
+    "legal_status_final": false
+  },
+  "documented_anchors": [
+    "recurring private functions over Community debt, voting, access, security and maintenance",
+    "AC request for security, attendance at Community meetings and identified access or maintenance authorisations",
+    "AC use of creditor-generated Community certificates or calculations in the liquidation record",
+    "formal 2017 contingency modification of the Community pre-insolvency claim",
+    "formal 2018 holder-only substitution of the secured creditor",
+    "later Community/debt figures used in liquidation or better-bid conditions without a currently located post-liquidation incident expressly enlarging the recognised definitive credit"
+  ],
+  "alleged_effect_chain": [
+    "Community authority",
+    "debt and voting",
+    "access, security and maintenance",
+    "material control",
+    "liquidation plan and bid conditions",
+    "definitive-text compliance",
+    "adjudication and deed",
+    "notarial and Registry implementation",
+    "later operation, finance and public support",
+    "present benefit, harm and irreversibility"
+  ],
+  "not_proved": [
+    "criminal agreement or common unlawful purpose",
+    "full administrator-in-fact status for every actor or function",
+    "habitual obedience by the Insolvency Administrator to private instructions",
+    "knowing falsity of a specific debt, minute, certificate or calculation",
+    "procedural fraud",
+    "blanket double charging",
+    "judicial prevarication",
+    "automatic knowledge or participation of later investors, advisers, operators, supervisors or funding bodies"
+  ],
+  "decisive_evidence": [
+    "certified complete court docket and post-2016 modification index",
+    "native Community authority, voting, minute and accounting records",
+    "vendor invoice payer recharge duplicate-cost crosswalk",
+    "native AC Community CAM communications",
+    "security locksmith key code and access logs",
+    "offer appraisal and interest workbooks",
+    "final accounts EUR 400000 trail deed notice and property-by-property Registry chain"
+  ],
+  "route_classes": [
+    {
+      "id": "core",
+      "purpose": "make the attributed allegation prominent and show the whole causal chain",
+      "patterns": ["home", "updates", "case-control-room", "criminal-engineering", "canonical-de-facto-page"]
+    },
+    {
+      "id": "governance",
+      "purpose": "test authority, appointments, voting, debt and record custody",
+      "patterns": ["community", "CEXP", "actas", "authority"]
+    },
+    {
+      "id": "ac_professional",
+      "purpose": "test request, authorisation, adoption, reliance, verification, delegation, loyalty and accounting",
+      "patterns": ["insolvency-administrator", "AC loyalty breakpoint", "credit-to-title gatekeeper", "RSM/San Telmo professional perimeter"]
+    },
+    {
+      "id": "material_control",
+      "purpose": "test practical control, instructions, funding, access, works, benefit and pre-title reach",
+      "patterns": ["7 June takeover", "Acosta Matos perimeter", "Matkator", "property map"]
+    },
+    {
+      "id": "liquidation_transaction",
+      "purpose": "separate recognised credit, contingent claims, mortgage caps, bid thresholds, consideration and final accounting",
+      "patterns": ["definitive texts", "lender", "LPB insolvency", "Article 1535", "adjudication", "EUR 400000"]
+    },
+    {
+      "id": "judicial",
+      "purpose": "test notice, evidence, adversarial process, reasoning, unresolved matters and implementation without presuming prevarication",
+      "patterns": ["judge", "LAJ", "AP", "CGPJ", "Calificacion"]
+    },
+    {
+      "id": "implementation",
+      "purpose": "test title, authority, calculations, testimonios, warnings, cancellation and property-by-property Registry effects",
+      "patterns": ["notarial implementation", "protocol 457", "Registry implementation"]
+    },
+    {
+      "id": "downstream_reliance",
+      "purpose": "test due diligence, conflicts, conditions, waivers, drawdowns, use of funds and correction without transferring guilt",
+      "patterns": ["RICPE", "same asset", "multiple financial lives", "RIC/FEDER/incentives", "CNMV", "Portfolio", "Orion", "HNT/MYND"]
+    }
+  ],
+  "publication_boundaries": {
+    "use_attributed_language": true,
+    "show_strongest_defence": true,
+    "show_decisive_evidence": true,
+    "transfer_guilt_across_entities": false,
+    "infer_downstream_knowledge": false,
+    "publish_private_sources": false,
+    "state_not_yet_located_as_nonexistence": false
+  },
+  "canonical_public_routes": {
+    "es": "/por-derecho/es/administracion-de-hecho-comunidad-ac/",
+    "en": "/por-derecho/en/de-facto-administration-community-ac/"
+  },
+  "canonical_visibility_control": "archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md",
+  "master_prompt": "archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md"
+}
