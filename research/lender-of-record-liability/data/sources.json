@@ -70,6 +70,61 @@
     "notes": "Establishes notice and request, not a finding of concealment or entitlement."
   },
   {
+    "id": "SRC-COURT-2018-01-12-PP1041-DISCLOSURE-ORDER",
+    "title": "PP 1041 order requiring CAM to produce the PH122-to-CAM deed and disclose price, payment date and costs",
+    "source_type": "court_order",
+    "date": "2018-01-12",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_native_pdf",
+    "publication": "public_safe",
+    "sha256": "4f94c01735d4ee67fa9d57c99422c2c610c11f2447d502f733f41699ae7e43d7",
+    "notes": "Establishes that PP 1041 had produced a concrete disclosure order; does not determine the ultimate Article 1535 merits."
+  },
+  {
+    "id": "SRC-CAM-2018-01-25-PP1041-OPPOSITION",
+    "title": "CAM filing invoking the need for Insolvency Administration conformity in PP 1041",
+    "source_type": "court_filing",
+    "date": "2018-01-25",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_native_pdf",
+    "publication": "public_safe",
+    "sha256": "02e2efcb55333f647225f1a81e27728f371214e78091f6968f18e84435dd5efc",
+    "notes": "Establishes CAM's procedural reliance on Administrator authority; does not by itself establish coordination."
+  },
+  {
+    "id": "SRC-AC-2018-01-25-COUNSEL-CONTROL",
+    "title": "Administrator communication ending LPB counsel mandate and controlling future procurator filings",
+    "source_type": "email_attachment",
+    "date": "2018-01-25",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_native_pdf",
+    "publication": "public_safe",
+    "sha256": "765d78946b9d4d521eb3450ee219a5bf6d4f9d6db3e2431ea47ef666207752bd",
+    "notes": "Directly establishes representation control after CAM invoked Administrator conformity; purpose, authority, conflict and estate benefit remain disputed."
+  },
+  {
+    "id": "SRC-AC-2018-01-29-REPRESENTATION-CONTROL",
+    "title": "Related Administrator communications asserting control over LPB legal representation",
+    "source_type": "email_attachment",
+    "date": "2018-01-29",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_native_pdf",
+    "publication": "public_safe",
+    "sha256": "5a818ef1114862f5d66ac52447eb2c43fe81ce7324634ecd9c02d738ee1d5c07",
+    "notes": "Corroborates the representation-control framework; does not identify the withdrawal filer or instruction by itself."
+  },
+  {
+    "id": "SRC-COURT-2018-03-05-PP1041-WITHDRAWAL-DECREE",
+    "title": "PP 1041 decree ending the route after a withdrawal was filed in LPB's name",
+    "source_type": "court_decree",
+    "date": "2018-03-05",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_native_pdf",
+    "publication": "public_safe",
+    "sha256": "4f8fff28bb5239895ab3c64ff9650ec5ffa2750cc401841c5a1274948301503c",
+    "notes": "Records a withdrawal request in LPB's name, CAM non-opposition and closure; does not establish an authentic voluntary LPB decision or identify instruction, drafter, signer, filer or Article 51.2 authorisation."
+  },
+  {
     "id": "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION",
     "title": "Commercial Court order recognising CAM as assignee and rejecting LPB's Article 1535 position",
     "source_type": "court_order",
@@ -88,6 +143,26 @@
     "availability": "connected_mailbox",
     "publication": "privilege_review",
     "notes": "Supports own-conduct chronology; legal characterisation and valuation independence remain contested."
+  },
+  {
+    "id": "SRC-BOE-LC-ART51-2-HISTORICAL",
+    "title": "Historical Ley 22/2003 Articles 35, 36, 51.2 and 145",
+    "source_type": "official_legislation",
+    "date": "2003-07-09",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "notes": "Supports loyalty, diligence, estate-damage liability, suspension and the requirement for insolvency-judge authorisation to withdraw pending proceedings; exact temporal text must remain attached."
+  },
+  {
+    "id": "SRC-COMPLAINT-2026-06-18-AC",
+    "title": "Por Derecho criminal complaint concerning the Insolvency Administrator and Sun Park",
+    "source_type": "party_criminal_complaint",
+    "date": "2026-06-18",
+    "evidence_status": "documented_party_statement",
+    "availability": "connected_mailbox_native_pdf",
+    "publication": "public_safe",
+    "notes": "Proves that Por Derecho formally made the allegations and requested investigation; does not prove the truth of any alleged offence."
   },
   {
     "id": "SRC-BORME-2022-CAM-HNT-SEGREGATION",
