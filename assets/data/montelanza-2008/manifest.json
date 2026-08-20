@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-20",
+  "source": {
+    "title": "Depósito de Cuentas Anuales 2008 - Montelanza, S.L.",
+    "issuer": "Registro Mercantil de Las Palmas de Gran Canaria / Registradores de España",
+    "registryIssueTimestamp": "2014-11-11T19:29:00Z",
+    "pages": 38,
+    "company": "MONTELANZA, S.L.",
+    "cif": "B35279850",
+    "registrySheet": "GC-1339",
+    "originalPdfSha256": "f82c41bb6b0985105f31c35d6af09261d5b0820ee0a4049c9510f2ff3e7c5551",
+    "searchableDerivativeSha256": "8bb17c95a0e3f554c72af4507eea83ee6249a49c6681f5d6f480b29995e8e360",
+    "ocrMethod": "forced page-by-page OCR over rendered source; raw OCR retained as derivative",
+    "authorityRule": "The scanned Mercantile Registry filing controls over OCR/transcription if they differ."
+  },
+  "verifiedKeyPages": {
+    "9": {
+      "title": "Balance de situación - 31 Dec 2008",
+      "manualVisualVerification": true,
+      "facts": {
+        "totalAssetsEUR": "360192.84",
+        "nonCurrentAssetsEUR": "242316.77",
+        "currentAssetsEUR": "117877.07",
+        "netEquityEUR": "-321742.56",
+        "nonCurrentLiabilitiesEUR": "294033.15",
+        "currentLiabilitiesEUR": "387902.25",
+        "resultForYearEUR": "-1550210.37"
+      }
+    },
+    "10": {
+      "title": "Profit and loss - 2008",
+      "manualVisualVerification": true,
+      "facts": {
+        "turnoverEUR": "1304632.79",
+        "salesEUR": "411450.94",
+        "servicesEUR": "893181.85",
+        "operatingResultEUR": "-1508572.56",
+        "financialResultEUR": "-41637.81",
+        "resultBeforeTaxEUR": "-1550210.37",
+        "resultForYearEUR": "-1550210.37",
+        "impairmentAndDisposalsEUR": "-1222514.83"
+      }
+    },
+    "12": {
+      "title": "Going concern / 17 June 2008 transaction",
+      "manualVisualVerification": true,
+      "facts": {
+        "shareholderSupportApprovedEUR": "704000",
+        "shareholderContributionsMadeBy30Mar2008EUR": "497000",
+        "refundStillPendingAt31Dec2008EUR": "53486.53",
+        "sale17Jun2008EUR": "1368000",
+        "unsoldPremisesOptionCount": 11,
+        "optionExpiry": "2010-12-31"
+      },
+      "controlledText": "The note states that the 17 June 2008 sale for EUR 1,368,000, parallel to sales of apartments by a number of owners, meant cessation of the company's activity and making the transferred assets available to the purchaser for operation; it also records an option over 11 unsold premises on the same conditions, expiring 31 December 2010."
+    },
+    "17": {
+      "title": "Note 6 - Tangible fixed assets",
+      "manualVisualVerification": true,
+      "facts": {
+        "initialCostEUR": "3232654.69",
+        "additionsEUR": "1200.00",
+        "disposalsEUR": "3064576.00",
+        "finalCostEUR": "169278.69",
+        "finalNetBookValueEUR": "119820.01"
+      }
+    },
+    "18": {
+      "title": "DIC/RIC asset tables",
+      "manualVisualVerification": true,
+      "facts": {
+        "fullyAmortisedDICAssetsAt17Jun2008EUR": "200416.68",
+        "RICAssetsEUR": "437273.09",
+        "RICAmortisationAt17Jun2008EUR": "313779.92",
+        "RIC2000ProvisionAndMaterialisationEUR": "285636.35",
+        "RIC2001ProvisionEUR": "151567.71",
+        "RIC2001MaterialisedTableTotalEUR": "151577.68"
+      }
+    }
+  },
+  "ocrChunks": [
+    {"file":"assets/data/montelanza-2008/ocr-pages-01-06.txt","pages":[1,6],"sha256":"9a6d16b074c9e18cf8d3120a64d992a6c3ab0874d840f263e31cfa6bc6f5b59a","bytes":14808},
+    {"file":"assets/data/montelanza-2008/ocr-pages-07-12.txt","pages":[7,12],"sha256":"43d7c66a1f10020b2f90a09f1edee6553e64bd1461620aeb35b364151e45490f","bytes":20533},
+    {"file":"assets/data/montelanza-2008/ocr-pages-13-18.txt","pages":[13,18],"sha256":"eb6d18f8da7e12739a05844bfcc8b468c4c7fbcd7f8b96d5a5260f505de0440b","bytes":18095},
+    {"file":"assets/data/montelanza-2008/ocr-pages-19-24.txt","pages":[19,24],"sha256":"b1b9b986412247e9c882361670590af11f6f602ff3b9cdeb9b425f9c141d2a40","bytes":14264},
+    {"file":"assets/data/montelanza-2008/ocr-pages-25-30.txt","pages":[25,30],"sha256":"4be6545f0af3ccad710f2466821f8bb794cfe1e24fd5765ebe83b5d82f6ae4a0","bytes":19967},
+    {"file":"assets/data/montelanza-2008/ocr-pages-31-38.txt","pages":[31,38],"sha256":"a7f101e6f402f40898822cb326cac80e649aeda615eecaf01d994881cf1fd046","bytes":41037}
+  ]
+}
