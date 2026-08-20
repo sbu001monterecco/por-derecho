@@ -72,7 +72,7 @@ CHECKS = [
     {"path": "assets/pp1041-withdrawal-authority-correction-20260820.js",
      "markers": ["pp1041-authority-correction", "withdrawal was filed in LPB's name", "desistimiento en nombre de LPB"],
      "kind": "pp1041_global_correction", "min_bytes": 5000},
-    {"path": "assets/site.js", "markers": ["site-base-20260819.js?v=20260819a", "case-information-architecture-20260819.js?v=20260819b", "pp1041-withdrawal-authority-correction-20260820.js?v=20260820a"],
+    {"path": "assets/site.js", "markers": ["site-base-20260819.js?v=20260819a", "case-information-architecture-20260819.js?v=20260819b", "pp1041-withdrawal-authority-correction-20260820.js?v=20260820b"],
      "kind": "global_loader", "min_bytes": 1000},
 ]
 
