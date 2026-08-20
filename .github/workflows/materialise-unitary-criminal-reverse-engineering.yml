@@ -1,10 +1,16 @@
-# Triggered after payload and workflow are both present.
+# One-off branch materialiser. Remove after the generated source is committed.
 name: Materialise unitary criminal reverse engineering
 
 on:
   push:
     branches:
       - strong/unitary-criminal-reverse-engineering-20260820
+    paths:
+      - 'scripts/materialise_unitary_criminal_payload.py'
+      - '.github/workflows/materialise-unitary-criminal-reverse-engineering.yml'
+  pull_request:
+    branches:
+      - main
     paths:
       - 'scripts/materialise_unitary_criminal_payload.py'
       - '.github/workflows/materialise-unitary-criminal-reverse-engineering.yml'
