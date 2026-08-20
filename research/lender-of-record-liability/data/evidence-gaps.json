@@ -98,5 +98,25 @@
     "status": "open",
     "next_action": "Retrieve official judgment, ROJ/ECLI, procedural posture and exact ratio before pleading or public reliance.",
     "publication": "internal_only"
+  },
+  {
+    "id": "GAP-P0-011",
+    "priority": "P0",
+    "title": "Certified PP 1041 withdrawal filing, authority and LexNET chain",
+    "needed_for": ["withdrawal_authenticity", "authority", "Article_51_2", "authorship", "procedural_truth", "causation", "criminal_elements_if_proved"],
+    "target_actor_refs": ["ACT-LPB", "ACT-INSOLVENCY-ADMIN", "ACT-CRISTO", "ACT-CAM"],
+    "status": "open",
+    "next_action": "Obtain from the specific court the complete withdrawal pleading and annexes; drafter, signatory and filer identity; LexNET user/certificate and metadata; filing receipt; specific power; Article 51.2 application and authorisation order; and proof of hearing or notice to LPB.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-012",
+    "priority": "P0",
+    "title": "Administrator–CAM/Acosta Matos communication, conflict, instruction and benefit file around PP 1041",
+    "needed_for": ["functional_agency", "coordination", "intent", "conflict", "ratification", "benefit", "individual_attribution", "estate_interest"],
+    "target_actor_refs": ["ACT-INSOLVENCY-ADMIN", "ACT-CAM", "ACT-JDAM", "ACT-LPAM"],
+    "status": "open",
+    "next_action": "Recover communications, call records, meeting notes, instructions, conflict declarations, abstention analysis, estate-interest memorandum, ratification, consideration and benefit records from 12 January through 5 March 2018 and the connected downstream period.",
+    "publication": "public_safe"
   }
 ]
