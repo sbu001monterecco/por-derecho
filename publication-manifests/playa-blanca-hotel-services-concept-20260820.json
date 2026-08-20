@@ -1,0 +1,31 @@
+{
+  "publication_id": "playa-blanca-hotel-services-concept-20260820",
+  "current_state": "REMOTE_SOURCE",
+  "owner": "Gil Marer / Project Sun Rock",
+  "expected_routes": {
+    "en": [
+      "en/playa-blanca-hotel-services-concept/index.html"
+    ],
+    "es": [
+      "es/playa-blanca-concepto-hotel-servicios/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "PLAYA_BLANCA_HOTEL_CONCEPT_PUBLICATION_CONTROL_20AUG2026.md",
+    "assets/playa-blanca-concept.css",
+    "assets/playa-blanca-concept-home-20260820.js",
+    "assets/playa-blanca-return-poster.svg",
+    "assets/playa-blanca-arrival-poster.svg",
+    "assets/playa-blanca-oasis-poster.svg",
+    "assets/playa-blanca-location-diagram.svg",
+    "assets/playa-blanca-programme-section.svg",
+    "assets/site.js"
+  ],
+  "publication_boundary": "Public concept only; the exact private site, parcel, sellers, ownership, transaction terms and any authority engagement are not represented.",
+  "review_notes": [
+    "No site control, owner endorsement, operator commitment or public-authority awareness is represented.",
+    "The Sun Park/MYND Yaiza recovery record is linked only as a separate record and a confidence-in-place narrative.",
+    "Supercor Exprés/Supercor is identified only as a preferred target study; no affiliation or commitment is represented.",
+    "The concept visuals are original illustrative communication studies, not survey-verified or approved architectural material."
+  ]
+}

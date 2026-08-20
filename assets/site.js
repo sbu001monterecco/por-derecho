@@ -69,6 +69,14 @@
   cnmvRegageStatus.setAttribute('data-cnmv-regage-status-loader', 'true');
   document.head.appendChild(cnmvRegageStatus);
 
+  // Surface the bilingual Playa Blanca hotel/local-services concept inside the Future section
+  // while keeping the exact private site, ownership and transaction perimeter undisclosed.
+  const playaBlancaConcept = document.createElement('script');
+  playaBlancaConcept.src = new URL('playa-blanca-concept-home-20260820.js?v=20260820a', current.src).href;
+  playaBlancaConcept.async = false;
+  playaBlancaConcept.setAttribute('data-playa-blanca-concept-loader', 'true');
+  document.head.appendChild(playaBlancaConcept);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 

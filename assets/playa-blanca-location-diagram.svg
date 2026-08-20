@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Playa Blanca and Yaiza location context</title>
+  <desc id="desc">Schematic diagram locating Playa Blanca in the municipality of Yaiza, southern Lanzarote, and showing the relationship between the opportunity area, town centre, ferry harbour, coastline and Marina Rubicón.</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#86d4d0"/><stop offset="1" stop-color="#177884"/></linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1dfbf"/><stop offset="1" stop-color="#c69765"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="13" flood-color="#0b2932" flood-opacity=".18"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L9,4 z" fill="#bd613c"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#f8f3e9"/>
+  <rect x="35" y="35" width="1530" height="830" rx="18" fill="none" stroke="#173f49" stroke-width="4"/>
+  <text x="90" y="105" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" letter-spacing="7" fill="#173f49">PLAYA BLANCA · MUNICIPALITY OF YAIZA</text>
+  <text x="92" y="145" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="750" letter-spacing="5" fill="#bd613c">SOUTHERN LANZAROTE · CANARY ISLANDS</text>
+
+  <!-- Lanzarote locator -->
+  <g transform="translate(70 205)" filter="url(#shadow)">
+    <rect width="420" height="555" rx="22" fill="#fff" stroke="#d5cab9" stroke-width="3"/>
+    <text x="32" y="50" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="850" letter-spacing="4" fill="#607276">ISLAND CONTEXT</text>
+    <path d="M214 83 C250 105 259 142 249 171 C279 202 276 244 255 274 C281 314 270 347 245 374 C249 414 222 461 189 474 C155 462 143 426 149 391 C119 358 123 320 142 289 C115 251 122 215 147 188 C130 151 151 110 181 96 Z" fill="url(#land)" stroke="#173f49" stroke-width="5"/>
+    <path d="M158 365 C187 350 221 354 244 378 C231 423 211 454 187 467 C161 449 151 410 158 365Z" fill="#bd613c" opacity=".82"/>
+    <circle cx="184" cy="434" r="11" fill="#173f49"/>
+    <path d="M183 434 C95 459 76 493 63 522" fill="none" stroke="#bd613c" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="34" y="535" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="850" fill="#173f49">PLAYA BLANCA</text>
+    <text x="34" y="563" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#677679">South coast · Yaiza municipality</text>
+  </g>
+
+  <!-- Local schematic -->
+  <g transform="translate(540 205)" filter="url(#shadow)">
+    <rect width="990" height="555" rx="22" fill="#fff" stroke="#d5cab9" stroke-width="3"/>
+    <text x="35" y="50" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="850" letter-spacing="4" fill="#607276">LOCAL RELATIONSHIPS · SCHEMATIC, NOT A SURVEY</text>
+    <path d="M0 380 C190 325 345 346 500 300 C690 244 820 258 990 220 L990 555 L0 555Z" fill="url(#sea)"/>
+    <path d="M0 320 C200 282 315 300 500 248 C685 198 825 205 990 178 L990 232 C825 263 685 254 500 307 C320 360 190 340 0 390Z" fill="#d4bd91"/>
+    <path d="M0 0 H990 V178 C830 205 687 198 500 248 C313 300 198 282 0 320Z" fill="#eee1cc"/>
+
+    <!-- Roads -->
+    <path d="M80 108 C230 130 355 155 470 215 C590 278 717 265 876 245" fill="none" stroke="#766d61" stroke-width="22" stroke-linecap="round"/>
+    <path d="M155 210 C305 226 375 260 474 309" fill="none" stroke="#766d61" stroke-width="16" stroke-linecap="round"/>
+    <path d="M470 215 C385 160 330 115 285 74" fill="none" stroke="#766d61" stroke-width="15" stroke-linecap="round"/>
+    <g fill="#fff" opacity=".85"><circle cx="470" cy="215" r="21"/><circle cx="155" cy="210" r="16"/></g>
+
+    <!-- Urban fabric -->
+    <g fill="#fff9ec" stroke="#173f49" stroke-width="3">
+      <rect x="520" y="180" width="83" height="44"/><rect x="615" y="162" width="92" height="50"/><rect x="720" y="142" width="80" height="46"/><rect x="810" y="128" width="74" height="40"/>
+      <rect x="565" y="242" width="70" height="40"/><rect x="648" y="225" width="79" height="42"/><rect x="740" y="208" width="72" height="42"/>
+    </g>
+
+    <!-- Opportunity area -->
+    <path d="M110 90 L318 86 L368 202 L148 210Z" fill="#bd613c" opacity=".83" stroke="#173f49" stroke-width="5"/>
+    <path d="M130 106 L296 103 L330 184 L160 190Z" fill="#f3dfba" opacity=".8"/>
+    <text x="145" y="140" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#173f49">HOTEL CONCEPT</text>
+    <text x="155" y="169" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="750" letter-spacing="2" fill="#173f49">PRIVATE OPPORTUNITY REVIEW</text>
+
+    <!-- Harbour -->
+    <path d="M805 260 L955 230 L970 310 L835 335Z" fill="#283a3e"/>
+    <path d="M835 272 L940 252 L946 285 L850 305Z" fill="#f3dfba"/>
+    <path d="M900 236 V184" stroke="#173f49" stroke-width="7"/><path d="M900 184 l34 34 h-34Z" fill="#fff7e8"/>
+    <text x="758" y="375" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="850" fill="#173f49">FERRY HARBOUR</text>
+
+    <!-- Marina -->
+    <path d="M565 342 L700 312 L733 360 L600 392Z" fill="#2d555c"/>
+    <g stroke="#fff7e8" stroke-width="4"><path d="M610 315 v-62"/><path d="M653 306 v-74"/><path d="M696 296 v-61"/></g>
+    <text x="545" y="430" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="850" fill="#173f49">MARINA RUBICÓN</text>
+
+    <!-- Town label and route arrows -->
+    <text x="620" y="106" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="900" letter-spacing="2" fill="#173f49">PLAYA BLANCA TOWN</text>
+    <path d="M350 135 C450 100 520 95 610 104" fill="none" stroke="#bd613c" stroke-width="5" stroke-dasharray="11 10" marker-end="url(#arrow)"/>
+    <path d="M332 185 C510 205 660 265 820 302" fill="none" stroke="#bd613c" stroke-width="5" stroke-dasharray="11 10" marker-end="url(#arrow)"/>
+    <text x="340" y="98" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#8d5037">SHORT DRIVE · ROUTE TO BE VERIFIED</text>
+    <text x="415" y="260" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#8d5037">PRACTICAL WALK / CYCLE CONNECTION TO BE MEASURED</text>
+  </g>
+
+  <text x="800" y="830" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="760" letter-spacing="3" fill="#677679">CONCEPTUAL CONTEXT ONLY · NO EXACT PARCEL BOUNDARY, TRAVEL TIME OR PUBLIC-AUTHORITY ENDORSEMENT IS REPRESENTED</text>
+</svg>
