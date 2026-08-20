@@ -1,0 +1,119 @@
+{
+  "publication_id": "RHG-OPEN-MESSAGE-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "LIVE_VERIFIED",
+  "control_date": "2026-08-20",
+  "merge_sha": "92cdf1374b7ae98f4b05e83e8644081eaa072d89",
+  "source_merge": {
+    "pull_request": 603,
+    "merge_commit": "92cdf1374b7ae98f4b05e83e8644081eaa072d89",
+    "title": "Publish central RHG notice and anonymised open message to a perimeter collaborator"
+  },
+  "expected_routes": {
+    "es": [
+      "es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/index.html"
+    ],
+    "en": [
+      "en/acosta-matos-perimeter/open-message-rhg-collaborator/index.html"
+    ],
+    "assets": [
+      "assets/evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg",
+      "assets/evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg"
+    ],
+    "discovery": [
+      "sitemap-rhg-open-message.xml",
+      "robots.txt"
+    ]
+  },
+  "expected_source_files": [
+    "INSTITUTIONAL_ACTIONS_RADISSON_RHG_20AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_RADISSON_RHG_ADDENDUM_20AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_RADISSON_RHG_ADDENDUM_20AUG2026.md",
+    "archive/CORRECTION_REGISTER_RADISSON_RHG_ADDENDUM_20AUG2026.md",
+    "archive/intelligence/RADISSON_RHG_NOTICE_OPEN_MESSAGE_THREAD_HANDOVER_20AUG2026.md",
+    "scripts/verify_rhg_open_message_live.py",
+    ".github/workflows/verify-rhg-open-message-live.yml"
+  ],
+  "publication_safety": {
+    "direct_executive_emails_committed": false,
+    "full_confidential_email_committed": false,
+    "unnamed_collaborator_identified": false,
+    "silence_treated_as_admission": false,
+    "legal_person_separation_preserved": true,
+    "professional_firm_statuses_separated": true,
+    "ricpe_portfolio_nexus_treated_as_fraud_finding": false,
+    "right_of_reply_preserved": true
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "validated_head": "9cc70bcf914ceb93d5da99197e8dcff9a7dd7a65",
+    "evidence": [
+      "PR #603: Publication integrity gate — success",
+      "PR #603: Validate unitary public shell — success",
+      "PR #603: Public bidder anonymisation gate — success",
+      "PR #603: Validate visual asset identity registry — success",
+      "PR #603: Validate San Telmo rendered attribution — success",
+      "PR #603: Off-GitHub Preservation Snapshot — success",
+      "PR #604: Publication integrity gate — success",
+      "PR #604: external RHG open-message live verifier — success",
+      "PR #604: Off-GitHub Preservation Snapshot — success"
+    ]
+  },
+  "deployment_evidence": [
+    "PR #603 merge 92cdf1374b7ae98f4b05e83e8644081eaa072d89 published the bilingual RHG/open-message pages, controlled visual derivatives, dedicated sitemap and canonical repository controls.",
+    "External production run 32378781205 observed the deployed pages, assets, sitemap and robots entry on the public GitHub Pages host."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/",
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/open-message-rhg-collaborator/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-rhg-open-message.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/": [
+      "Radisson Blu Lanzarote: aviso central",
+      "Correo enviado · recepción, enrutamiento y revisión pendientes",
+      "Mensaje abierto parcialmente anonimizado",
+      "El silencio no será presentado como admisión",
+      "mHn9IJU0qI4"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/open-message-rhg-collaborator/": [
+      "Radisson Blu Lanzarote: central notice",
+      "Email sent · receipt, routing and review pending",
+      "Partly anonymised open message",
+      "Silence will not be represented as an admission",
+      "mHn9IJU0qI4"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg": [
+      "PWC · 2016 KNOWLEDGE CHECKPOINT",
+      "FIVE PRIVATE ACTORS",
+      "EVIDENTIAL BOUNDARY"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg": [
+      "SAN TELMO · RICPE · SUN PARK",
+      "INSOLVENCY LIFE",
+      "DOCUMENTARY QUESTION"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-rhg-open-message.xml": [
+      "es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/",
+      "en/acosta-matos-perimeter/open-message-rhg-collaborator/"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt": [
+      "sitemap-rhg-open-message.xml"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "PASS",
+    "workflow": ".github/workflows/verify-rhg-open-message-live.yml",
+    "run_id": 32378781205,
+    "job_id": 96456541381,
+    "artifact_id": 9410114677,
+    "artifact_name": "rhg-open-message-live-verification",
+    "artifact_digest": "sha256:3da5bbb71c075305ce8edcea30b0d08cbf9b2179b651d9214be47787964433ac",
+    "verified_at": "2026-08-20T14:13:03.514486Z",
+    "attempt": 1,
+    "result": "The Spanish and English RHG/open-message pages, both new English SVG evidence derivatives, dedicated sitemap and robots entry returned HTTP 200, exceeded minimum size thresholds and contained all required source, status, video and no-silence-as-admission markers. No markers were missing."
+  }
+}
