@@ -3,7 +3,7 @@
 **Date:** 20 August 2026  
 **Current-main snapshot rechecked at closeout:** `d0678177382cc8430cc93bd807da03b971c64759`  
 **Working branch:** `continuity/factual-digest-reverse-engineering-20aug2026`  
-**Current state:** `PRESERVED ON FEATURE BRANCH — SELF-EMAIL PENDING — NOT MERGED / NOT LIVE`
+**Current state:** `PRESERVED ON FEATURE BRANCH + SELF-EMAIL VERIFIED — NOT MERGED / NOT LIVE`
 
 ## 1. Scope of the continuation
 
@@ -108,17 +108,38 @@ At closeout, `main` remained at:
 
 `d0678177382cc8430cc93bd807da03b971c64759`.
 
-Before creation of this audit, the working branch was seven commits ahead of that base with only the controlled declaration/digest/reverse-engineering/data/site paths listed above. This audit adds one further branch commit.
+Before creation of this audit, the working branch was seven commits ahead of that base with only the controlled declaration/digest/reverse-engineering/data/site paths listed above. This audit and its completion update add the deletion-continuity commits.
 
-## 8. Deletion-safety test
+## 8. Self-email closeout — completed and independently verified
+
+The intended preservation email was successfully sent to the authenticated account and then located in Sent mail.
+
+- **Subject:** `Por Derecho — factual digest + reverse engineering + Declaration 004 closeout — 20 Aug 2026`
+- **Intended preservation message ID:** `1a02055c55bc032b`
+- **Role:** full branch/file scope, Declaration 004 status, factual-digest conclusion, 360° rule, website-source update, P0 evidence queue and deletion verdict.
+
+During verification, a second message with the same subject was accidentally sent containing only the sentence `Correction: duplicate-protection test message should not be sent.` It has no evidential or repository-control value.
+
+A separate corrective self-email was therefore sent and independently located in Sent mail:
+
+- **Subject:** `Correction — disregard accidental duplicate test email — Por Derecho closeout 20 Aug 2026`
+- **Correction message ID:** `1a020562a0f0406a`
+- **Role:** expressly identifies the full preservation email as controlling and instructs that the accidental one-line duplicate be disregarded.
+
+The accidental message is retained only as transparent audit history; it does not alter any repository proposition, source status or deletion verdict.
+
+## 9. Deletion-safety test
 
 ### Is the material synthesis recoverable outside chat?
 
-**YES — from the named feature branch.**
+**YES.** It is independently recoverable from:
+
+1. the named feature branch;
+2. the intended self-email identified above.
 
 ### Is the corrected/private identity chain independently preserved?
 
-The earlier continuation already produced self-email custody for the private Patricia attribution and corrected 18-Aug source date. This new digest/audit closeout should also be self-emailed so the current branch scope and deletion verdict are independently recoverable.
+**YES.** The earlier continuation preserved the private attribution/corrected 18-Aug source date, while this closeout preserves the public-safe branch scope and current deletion state.
 
 ### Is the new website update live?
 
@@ -138,7 +159,7 @@ After merge and read-back, with the source module/marker confirmed and this clos
 
 The remaining native voice authentication and primary idoneidad/financing documents would then be open evidential tasks, not continuity failures.
 
-## 9. Post-merge closeout checklist
+## 10. Post-merge closeout checklist
 
 1. verify Declaration 004 in `main`;
 2. verify declaration INDEX row 004 in `main`;
