@@ -39,7 +39,7 @@ The historical record identifies **Carlos Sanz Rodríguez** as the project princ
 
 ### Located source anchors
 
-1. **20–23 November 2018 — acquisition-offer correspondence.** Drive files `02 - 2018-11-21 Correo MIio Con Oferta a Carlos Sanz.pdf` and `03 - 2018-12-01 Oferta A Carlos Sanz.pdf` contain transaction correspondence and an offer addressed to Carlos Sanz in the Pledge context. The subject matter is acquisition structure and commercial terms, not legal representation.
+1. **November–December 2018 — acquisition-offer correspondence.** Drive files `02 - 2018-11-21 Correo MIio Con Oferta a Carlos Sanz.pdf` and `03 - 2018-12-01 Oferta A Carlos Sanz.pdf` contain transaction correspondence and an offer addressed to Carlos Sanz in the Pledge context. The subject matter is acquisition structure and commercial terms, not legal representation.
 2. **28 July 2019 — financing status email.** The email titled `Status of the situation`, sent by Carlos Sanz from the Pledge Investments domain, reports on lender contacts and potential bridge-finance or financing routes, including Alantra, Oquendo, Arion, Solventis and Certior.
 3. **26 February 2021 — explicit role identification.** The email titled `SFV Sun INVEST AV` expressly identifies `Carlos Sanz Rodríguez` as the financial adviser and places his earlier work in the Pledge Investments, offers and financing context.
 4. **2018–2021 wider email record.** Further located correspondence connects Carlos Sanz/Pledge with financing proposals, bridge facilities, lender approaches and transaction/LOI work.
