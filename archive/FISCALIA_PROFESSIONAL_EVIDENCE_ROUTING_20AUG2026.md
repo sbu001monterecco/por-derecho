@@ -1,209 +1,239 @@
 # Fiscalía / Ministerio Fiscal — professional-firm evidence routing
 
 **PwC · Grant Thornton · RSM / San Telmo**  
-**Control date:** 20 August 2026
-
-**Status:** `MAILBOX SCANNED / SEVEN PRIOR REGAGE ROUTES VERIFIED / NEW EVIDENCE IDENTIFIED / PERSONALISED EMAILS TO BE REVIEWED BEFORE SENDING`
+**Control date:** 20 August 2026  
+**Status:** `MAILBOX RESCANNED / SEVEN REGAGE BASELINE VERIFIED / NINE PERSONALISED EMAILS SENT / ANTICORRUPTION SIGNATURE CURE OPEN / RECEIVING REFERENCES PENDING`
 
 ## 1. Purpose
 
-This control separates the new professional-firm evidence layer from the 2–3 August 2026 Ministerio Fiscal filings. It is not a new general complaint and does not convert professional overlap, service provision, client introductions or possession of information into proof of wrongdoing.
+This file controls the prosecutorial use of the PwC, Grant Thornton and RSM/San Telmo evidence layer.
 
-Its prosecutorial relevance is narrower and finite:
+It does not convert:
+
+- professional overlap;
+- service provision;
+- client introduction;
+- possession of information;
+- contact with an insolvency administrator; or
+- an adverse institutional decision
+
+into proof of information transfer, improper influence, corruption or criminal responsibility.
+
+Its purpose is finite:
 
 - identify independent custodians;
 - preserve native records and metadata;
-- establish the legal entity, matter, period and professional capacity involved;
-- determine whether earlier Sun Park institutional memory existed and was available;
-- compare external professional records with court, insolvency, title, financing, investor and public-funds records;
-- confirm or disprove information transfer, conflict, separation, authority and economic-beneficiary hypotheses through evidence rather than association.
+- establish legal entity, matter, period and capacity;
+- compare professional records with judicial, insolvency, title, financing, investor, tax and public-funds records;
+- confirm or disprove information-flow, authority, conflict and economic-beneficiary hypotheses.
 
-## 2. Mailbox scan completed
+Detailed controls:
 
-A controlled Gmail search across the principal official Ministerio Fiscal addresses located **47 direct messages** in the configured address universe. This is an exact count for the search query used, not a claim that no other message exists under a different address, misspelling, connector state or non-email filing route.
+- `archive/FISCALIA_NINE_OFFICE_DISPATCH_CONTROL_20AUG2026.md`
+- `archive/FISCALIA_NINE_OFFICE_DISPATCH_REGISTER_20AUG2026.csv`
+- `archive/PINK_AEAT_AUDIENCIA_NACIONAL_THREE_LANE_CONTROL_20AUG2026.md`
 
-### Principal operational addresses located
+## 2. Mailbox and delivery scan
 
-| Institution / function | Email address found in the mailbox | Existing reference or use |
+The earlier controlled Gmail search found **47 direct messages** in the configured Ministerio Fiscal address universe. The 20 August follow-up scan then reconciled the entire personalised dispatch wave, version-control corrections, incoming replies and delivery-status searches.
+
+Current result:
+
+- nine controlling substantive communications sent;
+- every controlling communication carried the same two Spanish visual source indexes and the controlled webinar link;
+- no delivery failure was located for the controlling institutional destinations;
+- Anticorruption acknowledged receipt but required an electronically signed filing before admission;
+- no other substantive institutional response was located at this control point;
+- PwC and Grant Thornton produced only automatic absence replies to the latest supplements;
+- no substantive later answer from PwC, Grant Thornton or RSM was located.
+
+An open response period or silence is not an adverse finding.
+
+## 3. Principal operational addresses
+
+| Institution / function | Controlling address used | Reference or purpose |
 |---|---|---|
-| Fiscalía de la Comunidad Autónoma de Canarias / Fiscalía Superior | `fiscalia.cac@justiciaencanarias.org` | EG 6/2026, EG 44/2026, EG 112/2026 and earlier competence correspondence |
+| Fiscalía Superior de Canarias | `fiscalia.cac@justiciaencanarias.org` | EG 112/2026 |
 | Fiscalía CAC — diligencias preprocesales | `fiscaliacacdiligenciaspreproc@justiciaencanarias.org` | DIP 2/2026 notifications |
-| Fiscalía Provincial de Las Palmas — institutional address | `fiscaliaprov.lp@justiciaencanarias.org` | EG 33/2025 and Provincial correspondence |
-| Fiscalía Provincial de Las Palmas — gubernativo/notification mailbox | `fisgub.lpa@justiciaencanarias.org` | DI 22/2026 and DI 113/2022 notifications |
-| Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | `fi.arreprosario@justiciaencanarias.org` | DIP 114/2025 and territorial route |
-| Fiscalía de la Audiencia Nacional | `fiscalia.an@fiscal.es` | Exp. Gub. 86/2026 referral to Arrecife |
-| FGE Secretaría Técnica | `fge.secretariatecnica@fiscal.es` | ST 104/2025 and ST 553/2026 acknowledgements |
-| FGE Atención al Ciudadano | `fge.atencionalciudadano@fiscal.es` | central receipt / citizen route |
-| FGE Delitos contra la Administración Pública | `fge.delitosadministracion@fiscal.es` | EG 49/2026 |
-| Fiscalía Especial Anticorrupción — valid complaints address | `fiscalia.anticorrupcion.denuncias@fiscal.es` | complaints and Exp. Gub. 352/2025 route |
-| Fiscalía Provincial de Santa Cruz de Tenerife | `fis.tenerife@justiciaencanarias.org` | prior FYI route only |
+| Fiscalía Provincial de Las Palmas | `fiscaliaprov.lp@justiciaencanarias.org` | Provincial control and REGAGE26e00070237051 |
+| Provincial gubernativo / notification | `fisgub.lpa@justiciaencanarias.org` | DI 22/2026 |
+| Fiscalía de Área de Arrecife | `fi.arreprosario@justiciaencanarias.org` | Exp. Gub. 86/2026 territorial route |
+| Fiscalía de la Audiencia Nacional | `fiscalia.an@fiscal.es` | Exp. Gub. 86/2026 referral traceability |
+| FGE Secretaría Técnica | `fge.secretariatecnica@fiscal.es` | ST 104/2025, ST 553/2026 and central transfers |
+| FGE Atención al Ciudadano | `fge.atencionalciudadano@fiscal.es` | Central receipt / FGE route |
+| Fiscalía Anticorrupción complaints | `fiscalia.anticorrupcion.denuncias@fiscal.es` | Exp. Gub. 352/2025 / specialist route |
 
-Historical control: `anticorrupcion@fiscal.es` was used previously but produced a delivery failure. Do not use it as the controlling complaints address.
+Historical control: `anticorrupcion@fiscal.es` produced a delivery failure and is not the controlling address.
 
-## 3. Seven prior REGAGE routes — verified
+## 4. Seven prior REGAGE routes
 
-The same 2 August 2026 PDF, with SHA-512:
+The same 2 August 2026 PDF, SHA-512:
 
 `352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635`
 
-was filed separately with seven Ministerio Fiscal bodies:
+was separately filed with:
 
-| No. | Body | DIR3 | REGAGE |
-|---:|---|---|---|
-| 1 | Fiscalía General del Estado | J00003992 | REGAGE26e00070235399 |
-| 2 | Inspección Fiscal, through FGE | J00003992 | REGAGE26e00070235775 |
-| 3 | Fiscalía de la Comunidad Autónoma de Canarias | J00015401 | REGAGE26e00070236067 |
-| 4 | Fiscalía Especial contra la Corrupción y la Criminalidad Organizada | J00004991 | REGAGE26e00070236245 |
-| 5 | Fiscal de Sala Coordinador de Delitos Económicos | J00015804 | REGAGE26e00070236543 |
-| 6 | Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | J00017154 | REGAGE26e00070236749 |
-| 7 | Fiscalía Provincial de Las Palmas | J00001657 | REGAGE26e00070237051 |
+| Body | DIR3 | REGAGE |
+|---|---|---|
+| Fiscalía General del Estado | J00003992 | REGAGE26e00070235399 |
+| Inspección Fiscal, through FGE | J00003992 | REGAGE26e00070235775 |
+| Fiscalía Superior de Canarias | J00015401 | REGAGE26e00070236067 |
+| Fiscalía Anticorrupción | J00004991 | REGAGE26e00070236245 |
+| Fiscal de Sala Coordinador de Delitos Económicos | J00015804 | REGAGE26e00070236543 |
+| Fiscalía de Área de Arrecife | J00017154 | REGAGE26e00070236749 |
+| Fiscalía Provincial de Las Palmas | J00001657 | REGAGE26e00070237051 |
 
-The August package already asked for preservation, a differentiated Matkator/Aweswell analysis, DP 1901/2026 corpus control, title–authority–asset–income tracing, and independent review of post-notice treatment. The next emails must therefore identify what is genuinely new and avoid forwarding the same undifferentiated package again.
+The later emails therefore identify genuinely later evidence and destination-specific requests rather than presenting the same undifferentiated package again.
 
-## 4. New material after the 2–3 August filings
+## 5. Common evidence set used on 20 August
 
-### A. PwC
+Every controlling substantive email attached:
 
-Latest institutional escalation sent 19 August 2026.
+1. `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
+2. `san-telmo-ricpe-sun-park-stamp-v1-ES.png`
 
-Documented propositions requiring preservation and verification:
+Every controlling substantive email linked to:
 
-- PwC held contemporaneous Sun Park / Community-control knowledge in 2016;
-- the client expressly instructed pursuit of `la vía penal contra esta gente`;
-- PwC recorded `Tomamos nota de vuestra decisión`;
-- PwC later confirmed direct contact with the insolvency administrator;
-- identified matter, conflict, Legal/Risk, billing, evidence and later-perimeter records may exist.
+`https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s`
 
-Limits:
+Controlled interpretation:
 
-- the client instruction is not a PwC finding that an offence occurred;
-- contact with the insolvency administrator is not inherently improper;
-- a later mandate, overlap or conflict check is not proof of misuse or coordination;
-- the prosecutorial purpose is source identification and preservation.
+- statement approximately 08:08–08:12;
+- broader context approximately 07:57–08:27;
+- the statement does not identify every client or prove coordination, information transfer, illegality or responsibility.
 
-### B. Grant Thornton
+## 6. Source capsules
 
-Latest file 2024_04 supplements sent 18–19 August 2026.
+### PwC
 
-Documented propositions requiring preservation and verification:
+Documented:
 
-- a 2020 Sun Park conflict check identified CAM, Sun Park and Francisco de Borja Rodríguez-Batllori Laffitte;
-- an NDA existed with Grant Thornton Advisory, S.L.P.;
-- formal forensic engagement terms were issued, without the proposal proving that the engagement commenced;
-- Grant Thornton later acknowledged a professional/commercial relationship between Rodríguez-Batllori and a Canary Islands partner company;
-- the exact legal entity, dates, access, matter-opening, conflict and file-separation controls require reconciliation.
+- contemporaneous 2016 Sun Park / Community knowledge;
+- client instruction to pursue `la vía penal contra esta gente`;
+- PwC acknowledgement `Tomamos nota de vuestra decisión`;
+- later-confirmed direct contact with the insolvency administrator;
+- identifiable matter, conflict, Legal/Risk, billing and custodian records.
 
 Limits:
 
-- Grant Thornton is not alleged to have participated in the 2021 San Telmo/RICPE statement or investor introduction;
-- professional status and infrastructure do not prove access to the 2020 file;
-- the issue is whether institutional memory existed, was technically available and was consulted.
+- the client instruction is not a PwC finding of crime;
+- the contact is not inherently improper;
+- later overlap is not proof of misuse or coordination.
 
-### C. RSM / San Telmo
+### Grant Thornton
 
-Latest supplement sent 19 August 2026 to ethics file `NNR4-1025C2F66`.
+Documented:
 
-Documented propositions requiring preservation and verification:
+- 2020 conflict check identifying Sun Park, CAM and Rodríguez-Batllori;
+- NDA with Grant Thornton Advisory, S.L.P.;
+- proposed forensic terms;
+- later acknowledged professional/commercial relationship with a Canary Islands partner entity.
 
-- RSM stated that the ethics review remained active and anticipated conclusions in September 2026;
-- San Telmo partner Eduardo Sánchez publicly stated, in the controlled 30 November 2021 interview sequence, `en esa primera inversión… metimos unos cuantos clientes`;
-- the wider source sequence connects the discussed first investment with the RICPE / Acosta Matos / Sun Park project perimeter;
-- Rodríguez-Batllori was the insolvency administrator in Concurso 36/2012 and belonged to the historical San Telmo professional perimeter;
-- matter, client-introduction, KYC, conflict, access, billing/referral and information-separation records may exist.
+Limits:
 
-Direct video source: `https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s`
+- the proposal does not prove commencement;
+- professional status does not prove access to the 2020 file;
+- Grant Thornton is not attributed the San Telmo/RICPE client-introduction statement.
+
+### RSM / San Telmo
+
+Documented:
+
+- ethics review NNR4-1025C2F66 remained open;
+- Eduardo Sánchez stated `en esa primera inversión… metimos unos cuantos clientes`;
+- the wider controlled source links the discussed first investment with RICPE / Acosta Matos / Sun Park;
+- the insolvency administrator had a historical San Telmo professional connection.
 
 Limits:
 
 - the statement does not identify every client;
-- it does not establish Rodríguez-Batllori–Sánchez coordination;
-- it does not establish transfer of insolvency information;
-- it does not establish professional, civil or criminal liability.
+- it does not prove coordination, transfer of insolvency information or liability.
 
-### D. TSJ / LAJ documentary route
+## 7. Aforado module
 
-On 20 August 2026, the TSJ Government Secretary archived Exp. Gub. 38/2026 while making an attributable statement that ATLANTE preserves incorporated electronic information and traceability. A hierarchical administrative appeal was then filed as `REGAGE26e00074355631`.
+DIP 2/2026 establishes at least one identified aforado module: alleged in-office conduct by the Magistrate of Juzgado de lo Mercantil n.º 1 de Las Palmas. The DIP decree relied on Article 73.3.b LOPJ.
 
-The appeal asks for:
+That module must be separated from the private and economic mechanism.
 
-- complete incorporation of the email chain and visual exhibits;
-- preservation and certification of the relevant court-office record;
-- reconstruction of the 2018 and 2021–2022 instrument chains;
-- and an official CGPJ→TSJ reconciliation linked to CGPJ Appeal 286/2026.
+It does not prove an offence and does not automatically place all facts before the special forum.
 
-This does not prove a court-office irregularity. It provides a parallel institutional preservation and production route relevant to any prosecutor assessing whether external professional records correspond with the official judicial chain.
+EG 112/2026 requires clarification because it states that no aforado person is identified while invoking DIP 2/2026 and the judge-related proceedings to characterise the later filing’s real object.
 
-## 5. Substantive professional-firm response status
+## 8. Nine personalised communications completed
 
-As of the control date, the recent mailbox search located no substantive reply to the 18–19 August PwC, Grant Thornton or RSM supplements. The incoming messages found were automatic absence notices from PwC and Grant Thornton recipients. Do not characterise this as a refusal, non-cooperation or adverse inference while the requested response periods remain open.
-
-## 6. Recipient decision matrix
-
-| Priority | Recipient | Purpose | Recommended action |
+| Order | Destination | Own object | Controlled state |
 |---:|---|---|---|
-| 1 | Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | Primary territorial preservation and new-evidence filing following Exp. Gub. 86/2026 | **Prepare/send first**: full but finite professional-custodian supplement |
-| 2 | Fiscalía Provincial de Las Palmas | Custody, DI 22/2026, DP 1901/2026 corpus, coordination and post-notice traceability | **Prepare/send separately**: shorter coordination email; do not merely copy Arrecife text |
-| 3 | Fiscalía Superior de Canarias | Response to EG 112/2026, object classification, aforado module, correction/clarification and traceable referral | **Prepare separately and review before sending**; not the same professional-evidence email |
-| 4 | FGE / Inspección Fiscal | Central procedural supervision if local incorporation, routing or independence remains unresolved | Hold until local/territorial receipt and file association are tested |
-| 5 | Delitos Económicos | Technical economic coordination | Hold for a transaction-and-custodian matrix or route through the existing REGAGE file |
-| 6 | Anticorrupción | Specialist competence | Hold unless a dedicated competence memorandum ties objective public-finance/corruption indicia to finite transactions and persons |
-| 7 | Fiscalía Audiencia Nacional | Previous competence referral | Do not re-submit merits; use only for a later, limited referral-traceability gap if needed |
+| 1 | Arrecife | Exp. Gub. 86/2026, territorial preservation and local evidence | Sent; reference pending |
+| 2 | Las Palmas Provincial | DI 22/2026, DP 1901/2026 corpus, custody and Arrecife coordination | Controlling version sent; duplicate corrected |
+| 3 | Fiscalía Superior | EG 112/2026 errors, aforamiento, object separation and referral | Controlling version sent; duplicate corrected; traceability notice sent |
+| 4 | Inspección Fiscal | Classification, custody, routing and institutional coherence | Sent through central FGE channels |
+| 5 | Fiscalía General del Estado | Central ownership and avoidance of circular referral | Sent |
+| 6 | Secretaría Técnica | ST association and technical destination | Sent |
+| 7 | Delitos Económicos | Transaction, information and beneficiary matrices | Sent through central channels |
+| 8 | Anticorrupción | Updated competence and public-finance/economic perimeter | Receipt acknowledged; electronic-signature cure required |
+| 9 | Fiscalía Audiencia Nacional | Exp. Gub. 86/2026 referral traceability and Pink/AEAT provenance | Sent; association/forwarding proof pending |
 
-## 7. Recommended sending sequence
+The exact message IDs, times, subjects and correction sequence are preserved in the canonical dispatch control and CSV register.
 
-### First email — Arrecife
+## 9. Version control
 
-Use `fi.arreprosario@justiciaencanarias.org`.
+Two operational duplicates were transmitted:
 
-Core message:
+- one Provincial version;
+- one Fiscalía Superior version.
 
-- Exp. Gub. 86/2026 was formally referred there;
-- the material is post-2-August and not a repetition of the original complaint;
-- three independent professional custodial perimeters have now been identified;
-- request a receiving reference, incorporation, preservation and a finite set of diligences;
-- maintain evidential limits and request no immediate finding against the firms.
+Immediate written corrections identified the controlling versions. The complete evidence set must retain:
 
-### Second email — Las Palmas Provincial
+- both versions;
+- the correction messages;
+- the controlling message;
+- thread and attachment relationships.
 
-Use `fiscaliaprov.lp@justiciaencanarias.org`; consider copying `fisgub.lpa@justiciaencanarias.org` only to connect the message to DI 22/2026 and the existing notification record.
+Do not silently delete the duplicate history or present it as an unresolved ambiguity.
 
-Core message:
+## 10. Anticorruption cure
 
-- refer to `REGAGE26e00070237051` and DI 22/2026;
-- ask whether the new material is joined, separately registered or sent to Arrecife;
-- require a custody and destination answer, not a fresh self-review of the entire case;
-- ask whether the professional-custodian and TSJ/LAJ modules were available to the prosecutor dealing with DP 1901/2026.
+Anticorruption acknowledged receipt and said the communication was pending admission because a written telematic complaint must carry an accepted electronic signature.
 
-### Third email — Fiscalía Superior
+Next step:
 
-Use `fiscalia.cac@justiciaencanarias.org` in the EG 112/2026 thread.
+- produce a signed supplement referencing Exp. Gub. 352/2025 and REGAGE26e00070236245;
+- file it through an accepted signed electronic route;
+- return the receipt into the same email thread;
+- request confirmation of association/admission.
 
-Core message:
+This is a formal cure request, not a merits dismissal.
 
-- do not describe it as an ordinary appeal;
-- ask for correction/clarification of material source errors and separate treatment of the private extraconcursal, aforado/judicial, post-notice and preservation modules;
-- identify the professional-firm evidence as supervening and finite;
-- request traceable referral rather than re-archive by global characterisation.
+## 11. Pink / AEAT / Audiencia Nacional
 
-## 8. Public links
+Keep three lanes separate:
 
-- PwC: `/es/pwc-canarias-carlos-saavedra-sun-park/`
-- Grant Thornton: `/es/grant-thornton/2024-04/`
-- Grant Thornton / Cuyás: `/es/grant-thornton/cuyas-canarias/`
-- RSM: `/es/rsm/nnr4-1025c2f66/`
-- San Telmo / RICPE / Sun Park: `/es/san-telmo-ricpe-sun-park/`
-- TSJ Exp. Gub. 38/2026 full communication: `/es/tsj-canarias-exp-gub-38-2026/`
-- TSJ appeal filed: `/es/tsj-canarias-exp-gub-38-2026-alzada-presentada/`
+1. Fiscalía AN Exp. Gub. 86/2026 criminal-source/provenance communication and Arrecife referral;
+2. Pink Canary Services v AEAT in the contentious-administrative jurisdiction;
+3. earlier DP 91/2023 / JCI n.º 3 / Rollo 120/2024 correspondence.
 
-## 9. Drafting rules
+Pink/Patricia/AEAT was already in the 2 August package. The later professional-custodian evidence is what is genuinely supervening.
 
-1. Separate new evidence from previously filed evidence.
-2. State exact dates, sender, recipient, file/reference and source category.
-3. Do not ask each office to investigate every issue.
-4. Convert professional questions into preservation or finite production requests.
-5. Do not treat silence, automatic replies or response periods still running as culpable conduct.
-6. Do not state that professional overlap proves information transfer or conflict breach.
-7. Distinguish receipt, registration, joinder, referral, preservation, examination and decision.
-8. Ask every recipient to identify the receiving reference and the destination of every severed module.
-9. Avoid a single mass CC distribution: personalised emails create clearer responsibility and less competence diffusion.
-10. Do not send until the recipient matrix and attachment set are approved.
+See:
+
+`archive/PINK_AEAT_AUDIENCIA_NACIONAL_THREE_LANE_CONTROL_20AUG2026.md`
+
+## 12. Next controls
+
+1. Cure the Anticorruption signature requirement.
+2. Obtain Arrecife receiving reference.
+3. Obtain Provincial association/corpus answer.
+4. Obtain EG 112 correction, aforamiento and referral response.
+5. Confirm central registration/functional transfer for Inspection, FGE, ST and Economic Crimes.
+6. Confirm Audiencia Nacional outgoing referral index and delivery.
+7. Track professional-firm response windows.
+8. Preserve native messages, attachments and correction history.
+
+## 13. Publication rules
+
+- Do not state that transmission equals admission or examination.
+- Do not state that professional overlap proves improper influence.
+- Do not treat open response periods as refusal.
+- Do not state that the judge committed an offence.
+- Do not merge Pink’s tax appeal with the criminal-source inquiry.
+- Publish verifiable corrections with equivalent prominence.
