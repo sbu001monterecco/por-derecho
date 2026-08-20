@@ -9,6 +9,14 @@
     "es": "Alegación transversal: administración de hecho y facilitación consciente",
     "en": "Cross-cutting allegation: de facto management and knowing facilitation"
   },
+  "expected_routes": {
+    "es": [
+      "es/administracion-de-hecho-comunidad-ac/index.html"
+    ],
+    "en": [
+      "en/de-facto-administration-community-ac/index.html"
+    ]
+  },
   "expected_source_files": [
     "archive/MASTER_EXECUTION_PROMPT_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_20AUG2026.md",
     "archive/AC_DE_FACTO_MANAGEMENT_KNOWING_FACILITATION_VISIBILITY_CONTROL_20AUG2026.md",
@@ -76,7 +84,7 @@
   "repository_state": {
     "branch": "agent/ac-de-facto-knowing-facilitation-visibility-20260820",
     "head_sha": null,
-    "pr": null,
+    "pr": 589,
     "merge_sha": null,
     "merged_at": null
   },
