@@ -1,0 +1,29 @@
+{
+  "publication_id": "PP1041-DECISIVE-PRODUCTION-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "control_date": "2026-08-20",
+  "control_marker": "pp1041-single-most-important-production-20260820",
+  "expected_routes": {
+    "es": [
+      "es/pp1041-produccion-documental-decisiva/index.html"
+    ],
+    "en": [
+      "en/pp1041-single-most-important-production/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "research/unitary-criminal-reverse-engineering/PP1041-SINGLE-MOST-IMPORTANT-PRODUCTION.md",
+    "research/unitary-criminal-reverse-engineering/data/pp1041_decisive_production.json",
+    "scripts/validate_pp1041_decisive_production.py",
+    "scripts/verify_pp1041_decisive_live.py",
+    ".github/workflows/validate-pp1041-decisive-production.yml",
+    ".github/workflows/verify-pp1041-decisive-live.yml"
+  ],
+  "publication_safety": {
+    "private_emails_committed": false,
+    "privileged_advice_committed": false,
+    "criminal_guilt_stated_as_final": false,
+    "formal_allegation_boundary_preserved": true
+  }
+}
