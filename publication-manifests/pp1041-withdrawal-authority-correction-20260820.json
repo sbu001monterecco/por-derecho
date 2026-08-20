@@ -3,7 +3,7 @@
   "owner": "Por Derecho / Project Sun Rock",
   "current_state": "REMOTE_SOURCE",
   "control_date": "2026-08-20",
-  "publication_type": "bilingual dedicated dossier plus sitewide red correction and structured-evidence update",
+  "publication_type": "bilingual dedicated dossier plus sitewide red correction, correction-register entry and structured-evidence update",
   "controlling_proposition": {
     "es": "No está acreditado que LPB desistiera voluntariamente. Está acreditado que se presentó un desistimiento en su nombre. Por Derecho alega atribución procesal falsa, falta de autorización, perjuicio deliberado a la masa y agencia funcional de facto para el perímetro CAM/Acosta Matos; la autoría, autoridad, intención y responsabilidad deben determinarse con el expediente certificado.",
     "en": "It is not established that LPB voluntarily withdrew. It is established that a withdrawal was filed in its name. Por Derecho alleges false procedural attribution, lack of authority, deliberate estate harm and de facto functional agency for the CAM/Acosta Matos perimeter; authorship, authority, intent and liability require determination from the certified file."
@@ -11,17 +11,28 @@
   "expected_routes": {
     "es": [
       "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/index.html",
-      "es/administrador-concursal-puerta-credito-titulo/index.html"
+      "es/administrador-concursal-puerta-credito-titulo/index.html",
+      "es/correcciones-control-versiones/index.html"
     ],
     "en": [
       "en/pp1041-withdrawal-authority-authenticity-benefit/index.html",
-      "en/insolvency-administrator-credit-to-title-gatekeeper/index.html"
+      "en/insolvency-administrator-credit-to-title-gatekeeper/index.html",
+      "en/corrections-version-control/index.html"
     ]
   },
   "expected_source_files": [
     "assets/pp1041-withdrawal-authority-correction-20260820.js",
     "assets/site.js",
     "research/lender-of-record-liability/PP1041-WITHDRAWAL-AUTHORITY-AUTHENTICITY-BENEFIT.md",
+    "research/lender-of-record-liability/INSOLVENCY-ADMINISTRATOR-CREDIT-TO-TITLE-GATEKEEPER.md",
+    "research/lender-of-record-liability/PACTO-COMISORIO-CREDIT-TO-TITLE-ARCHITECTURE.md",
+    "research/lender-of-record-liability/ACTOR-MATRIX.md",
+    "research/lender-of-record-liability/CAUSATION-DAMAGES.md",
+    "research/lender-of-record-liability/CONDUCT-DECISIONS.md",
+    "research/lender-of-record-liability/CONTRADICTIONS-DEFENCES.md",
+    "research/lender-of-record-liability/KNOWLEDGE-NOTICE.md",
+    "research/lender-of-record-liability/LEGAL-ROUTES.md",
+    "research/lender-of-record-liability/P0-EVIDENCE-GAPS.md",
     "research/lender-of-record-liability/data/sources.json",
     "research/lender-of-record-liability/data/actors.json",
     "research/lender-of-record-liability/data/conduct-decisions.json",
@@ -36,7 +47,8 @@
     "lender-liability hubs",
     "Insolvency Administrator gatekeeper and loyalty-breakpoint routes",
     "Article 1535/litigious-credit/retracto routes",
-    "sale-lender convergence routes"
+    "sale-lender convergence routes",
+    "public correction and version-control registers"
   ],
   "evidence_boundary": {
     "verified": "The 12 January disclosure order, CAM's authority objection, 25 January Administrator control of counsel/procurator, withdrawal filing in LPB's name, CAM non-opposition and 5 March closure are supported by primary documents.",
