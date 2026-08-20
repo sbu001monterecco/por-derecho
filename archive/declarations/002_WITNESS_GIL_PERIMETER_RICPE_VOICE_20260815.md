@@ -11,7 +11,7 @@
 
 > **Uso y autenticación:** esta declaración puede conservarse, citarse, comunicarse y utilizarse como relato fechado de repositorio aunque no esté firmada. No debe describirse como firmada, jurada o ratificada personalmente más allá de lo que acrediten los mensajes de voz. Los audios y sus metadatos son la fuente personal primaria. Una versión posterior firmada o ratificada, si existe, controlará la autenticación y el tenor exacto en caso de diferencia, sin borrar ni inutilizar esta versión.
 
-> **Fuente:** corpus de trabajo identificado como dieciséis mensajes de voz únicos de WhatsApp atribuidos a la declarante anonimizada, fechados el 14 de agosto de 2026, con duración conjunta aproximada de una hora. Existe una transcripción de trabajo con marcas temporales, no pericial ni certificada. Las citas literales deben comprobarse contra el audio. El audio bruto y la transcripción íntegra no se publican en este repositorio.
+> **Fuente:** corpus de trabajo identificado como dieciséis mensajes de voz únicos de WhatsApp atribuidos a la declarante anonimizada, fechados el 14 de agosto de 2026, con duración conjunta aproximada de una hora. Existe una transcripción de trabajo con marcas temporales, no pericial ni certificada. Las citas literales deben comprobarse contra el audio. El audio bruto no se publica en este repositorio. La transcripción íntegra se conserva de forma bit-exacta en un [paquete backend de preservación y reconstrucción](../evidence/witness-voice-14aug2026/README.md), pero no se reproduce como HTML público.
 
 ## Declaración
 
@@ -137,11 +137,13 @@ San Cristóbal de La Laguna
 ## Control de integridad y procedencia
 
 - Fuente principal: dieciséis mensajes de voz de WhatsApp de 14 de agosto de 2026, conservados en el corpus privado.
-- Transcripción: versión de trabajo con marcas temporales; no certificada.
-- SHA-256 de la transcripción de trabajo utilizada para esta actualización: `19e654ae03c2afeadc1a507549854a15129c20e10da29bb941fe86fb3c92ba88`.
+- Transcripción: versión de trabajo con marcas temporales; no certificada; preservada íntegramente en el [paquete backend](../evidence/witness-voice-14aug2026/README.md).
+- SHA-256 de la transcripción de trabajo preservada: `19e654ae03c2afeadc1a507549854a15129c20e10da29bb941fe86fb3c92ba88`.
+- Tamaño exacto de la transcripción: `57.048` bytes; `457` líneas.
+- SHA-256 del payload BZip2/Base64 del repositorio: `52f6486e34397024f8247002911b7e444695ff6d489e9cc22a7ea35da532cdf8`.
 - PDF de trabajo previo: conservado en el corpus privado; su nombre público se omite por contener identidad personal innecesaria.
 - SHA-256 del PDF de trabajo: `9b217f74e24ff4c96f06cafeaafbb6b82fb5d42da68b99a050f30717d15cbc32`.
-- Audios publicados en el repositorio: no.
+- Audios publicados en el repositorio: no; el paquete preserva el texto completo, no los binarios Opus.
 - Hash de audios/exportación nativa: pendiente en registro privado de evidencia.
 - Firma: no requerida para utilizar esta versión; no consta firma separada.
 - Versión posterior firmada o ratificada: prevalecerá para autenticación y tenor exacto si difiere.
