@@ -1,0 +1,1 @@
+BLOCKED: exact OCR blob transplant required before PR/merge. This file is temporary and must be deleted after the source blobs are restored.
