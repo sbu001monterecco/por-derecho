@@ -1,9 +1,13 @@
 {
   "schema_version": "1.0",
-  "control_date": "2026-08-20",
   "publication_id": "sun-park-refurbishment-multitrack-2026-08-20",
-  "lifecycle_state": "REMOTE_SOURCE_PR_TO_BE_OPENED",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-20",
+  "current_state": "PR_OPEN",
+  "lifecycle_state": "PR_OPEN",
+  "subject": "Five-track reconstruction of refurbishment authority, the asserted 2022 clean start, pre-title control and project activity, parallel regularisation/finance/opening processes, the EUR 4.467m levy, utilities and actor-specific verification",
   "branch": "agent/refurbishment-authority-multitrack-20260820",
+  "source_pr": 590,
   "expected_routes": {
     "es": [
       "es/reforma-derrama-suministros-sun-park/index.html"
@@ -12,6 +16,23 @@
       "en/sun-park-refurbishment-levy-utilities/index.html"
     ]
   },
+  "expected_source_files": [
+    "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_FORENSIC_CONTROL_20AUG2026.md",
+    "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_RETRIEVAL_GATE_20AUG2026.md",
+    "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_EXECUTION_PROMPT_20AUG2026.md",
+    "archive/CORRECTION_REGISTER_REFURBISHMENT_MULTITRACK_ADDENDUM_20AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_REFURBISHMENT_MULTITRACK_ADDENDUM_20AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_REFURBISHMENT_MULTITRACK_ADDENDUM_20AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_REFURBISHMENT_MULTITRACK_20AUG2026.md",
+    "assets/data/sun-park-refurbishment-multitrack-v1.json",
+    "assets/sun-park-refurbishment-multitrack-20260820.js",
+    "assets/site.js",
+    "operations/SUN_PARK_REFURBISHMENT_MULTITRACK_ACTIVATION_2026-08-20.md",
+    "sitemap-refurbishment-authority-multitrack.xml",
+    "scripts/validate_sun_park_refurbishment_multitrack.py",
+    ".github/workflows/validate-sun-park-refurbishment-multitrack.yml",
+    ".github/workflows/verify-sun-park-refurbishment-multitrack-live.yml"
+  ],
   "expected_markers": [
     "data-refurbishment-multitrack-page=\"20260820\"",
     "data-refurbishment-multitrack-update=\"20260820\"",
@@ -20,17 +41,26 @@
   "public_boundaries": {
     "clean_start_proved_false": false,
     "criminal_sanitisation_proved": false,
+    "criminal_coordination_proved": false,
     "guilt_finding": false,
-    "actor_specific_proof_required": true
+    "actor_specific_proof_required": true,
+    "not_yet_located_is_not_nonexistence": true
   },
-  "required_files": [
-    "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_FORENSIC_CONTROL_20AUG2026.md",
-    "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_RETRIEVAL_GATE_20AUG2026.md",
-    "archive/SUN_PARK_REFURBISHMENT_AUTHORITY_MULTITRACK_EXECUTION_PROMPT_20AUG2026.md",
-    "assets/data/sun-park-refurbishment-multitrack-v1.json",
-    "assets/sun-park-refurbishment-multitrack-20260820.js",
-    "es/reforma-derrama-suministros-sun-park/index.html",
-    "en/sun-park-refurbishment-levy-utilities/index.html",
-    "sitemap-refurbishment-authority-multitrack.xml"
+  "repository_state": {
+    "source_branch": "agent/refurbishment-authority-multitrack-20260820",
+    "source_pr": 590,
+    "merge_status": "NOT_MERGED"
+  },
+  "open_evidence": [
+    "complete Yaiza and Cabildo works/licence files",
+    "original 5 July and 20 November 2018 Community records",
+    "2019-2021 Community minute book and accounts",
+    "complete 4 February 2022 voting and notification package",
+    "all project versions and property-by-property as-built records",
+    "complete EUR 4.467m source-and-use ledger",
+    "month-by-month water and electricity ledger",
+    "native Administrator-Community-CAM works and value communications",
+    "before-and-after architectural and valuation expert package",
+    "actor-specific proof supporting or disproving shared knowledge or unlawful purpose"
   ]
 }
