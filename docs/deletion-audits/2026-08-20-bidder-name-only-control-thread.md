@@ -2,139 +2,131 @@
 
 **Audit date:** 20 August 2026  
 **Repository:** `sbu001monterecco/por-derecho`  
-**Current base audited:** `main` at `2599fa333b501b8a5ffdf7c7e16784df352f816a`  
-**Implementation branch:** `chore/bidder-name-only-control-2026-08-20`  
 **Pull request:** [#612 — Enforce bidder name-only anonymisation and preserve complete bid record](https://github.com/sbu001monterecco/por-derecho/pull/612)  
-**Current thread-deletion verdict:** `NOT YET SAFE — FINAL MERGE, LIVE READ-BACK AND EMAIL CUSTODY REQUIRED`
+**Validated head:** `ab3654c3b091afbd0a260ca38e6d6aef25560ebd`  
+**Merged main commit:** `3104d3ca4a70258d07c766f3ed48091bc62c93f1`  
+**Thread-deletion verdict:** `DELETION_SAFE`
 
-## 1. Scope of this thread
+## Controlling rule
 
-This thread did not introduce a new underlying court, notarial, banking, Registry or transactional source. Its unique work product is a governance and implementation correction to the public treatment of the documented third-party proposal dated 8 February 2021.
+> **Only the third-party bidder’s name is anonymised. The bid, its amount, date, perimeter, terms, procedural treatment and every related fact and document remain fully visible.**
 
-The controlling instruction is preserved outside ChatGPT:
+Spanish:
 
-> **Only the third-party bidder’s name is anonymised. The bid, its amount, date, perimeter, terms, procedural treatment and every related fact and document remain fully visible. No other information falls within the anonymisation scope, even where it may indirectly assist in identifying the bidder.**
+> **Únicamente se anonimiza el nombre del tercer oferente. La oferta, su importe, fecha, perímetro, términos, tratamiento procesal y todos los hechos y documentos relacionados permanecen íntegramente visibles.**
 
-Spanish controlling formulation:
+The rule, implementation, evidential boundaries and verification record no longer depend on the ChatGPT transcript.
 
-> **Únicamente se anonimiza el nombre del tercer oferente. La oferta, su importe, fecha, perímetro, términos, tratamiento procesal y todos los hechos y documentos relacionados permanecen íntegramente visibles. Ningún otro dato queda dentro del alcance de la anonimización, aunque pueda contribuir indirectamente a identificar al oferente.**
+## Repository implementation complete
 
-## 2. Durable implementation preserved in GitHub
+PR #612 was opened as a draft, corrected after protective CI findings, marked ready only after every final-head check passed, and merged to `main` at the verified GitHub merge commit above.
 
-The implementation is preserved on the remote branch and in PR #612. The PR is mergeable against the current `main`; the five commits added to `main` after the branch was created affect separate files and are retained by the synthetic merge result.
+The durable implementation includes:
 
-Permanent implementation and control files:
+- bilingual canonical and corrections pages;
+- the shared publication/provenance module;
+- a public-surface protected-name gate using a one-way digest;
+- an independent positive bid-preservation gate;
+- source, manifest, browser-render and live-edge workflows;
+- the publication manifest and this deletion audit.
 
-1. `.github/workflows/public-bidder-anonymisation.yml`
-2. `.github/workflows/validate-adjudicacion-provenance.yml`
-3. `.github/workflows/verify-adjudicacion-2022-live.yml`
-4. `archive/THIRD_PARTY_BIDDER_PUBLIC_ANONYMISATION_CONTROL_20AUG2026.md`
-5. `assets/adjudicacion-provenance-cross-site-20260819.js`
-6. `es/adjudicacion-2022-reconstruccion-documental/index.html`
-7. `en/2022-adjudication-documentary-reconstruction/index.html`
-8. `es/correcciones-control-versiones/index.html`
-9. `en/corrections-version-control/index.html`
-10. `scripts/rewrite_public_bidder_anonymisation.py`
-11. `scripts/validate_public_bidder_anonymisation.py`
-12. `publication-manifests/bidder-name-only-control-20260820.json`
-13. `docs/deletion-audits/2026-08-20-bidder-name-only-control-thread.md`
-14. `docs/deletion-audits/README.md`
+Temporary migration machinery was removed from the final tree.
 
-Temporary one-time migration machinery was removed before PR publication and does not appear in the net changed-file set.
+## Material bid record preserved
 
-## 3. Bid-preservation matrix
+The final public record retains:
 
-| Matter | Required state | PR #612 state |
-|---|---|---|
-| Bidder name | Neutral public label only | Preserved as `tercer oferente` / `third-party bidder` |
-| Proposal existence | Specific and searchable | Preserved |
-| Proposal date | 8 February 2021 / 08/02/2021 | Preserved |
-| Proposal amount | EUR 14.8m / 14,8 M€ | Preserved |
-| Property perimeter | Identified property perimeter | Preserved |
-| Comparison point | EUR 14,713,880.31 / 14.713.880,31 € | Preserved |
-| Procedural filing | Open evidential question | Preserved |
-| Corporate authority and funds | Open evidential questions | Preserved |
-| 18 May 2021 licitation treatment | Open evidential question | Preserved |
-| CAM comparison and eventual result | Distinct from the third-party bid | Preserved |
-| Deed | Deed no. 457 dated 21 February 2022 | Preserved |
-| Debt consideration | EUR 13,168,082.02 / 13.168.082,02 € | Preserved |
-| Non-mortgaged-assets line | EUR 400,000 / 400.000 € kept separate | Preserved |
-| Court communication | Five-calendar-day obligation | Preserved |
-| Downstream chain | Court, mandamiento, Registry, cancellations, accounting and final accounts | Preserved as open controls |
-| Evidential limits | No automatic admission, funding, entitlement, wrongful exclusion or wrongdoing conclusion | Preserved |
+- the proposal’s existence and date, 8 February 2021;
+- EUR 14.8 million / 14,8 M€;
+- the identified property perimeter;
+- the EUR 14,713,880.31 / 14.713.880,31 € comparison point;
+- procedural filing, authority, funds and 18 May 2021 licitation-treatment questions;
+- the distinction between the third-party proposal and CAM’s eventual result;
+- deed no. 457 dated 21 February 2022;
+- EUR 13,168,082.02 / 13.168.082,02 € as stated debt consideration;
+- the separate EUR 400,000 / 400.000 € non-mortgaged-assets line;
+- the five-calendar-day court-communication obligation;
+- the downstream Court, mandamiento, Registry, cancellation and final-account questions;
+- the limitation that the present record does not automatically prove admission, funding, entitlement, wrongful exclusion or wrongdoing.
 
-## 4. Technical controls preserved
+## Evidential and history boundaries
 
-### Public name-absence gate
+Private/archive, research, prompt and evidence-custody files may retain the original legal name and native source locators. Public anonymisation does not authorise destruction of private evidence.
 
-The protected name is represented by a one-way SHA-256 digest. The validator scans only actual public website surfaces: the `es/`, `en/` and `assets/` trees, selected root publication files and explicitly supplied public URLs.
+No original court, notarial, banking, Registry, email, bid or other evidential source was deleted. No destructive Git-history rewrite was authorised or performed. This audit does not claim removal from historical Git objects, old commit messages, closed PR metadata, tags or releases.
 
-The gate deliberately excludes private/archive, research, prompt and evidence-custody files. Those systems may retain the original legal name and native source references for evidential retrieval. The public anonymisation control must not destroy private evidence.
+## Final-head validation
 
-### Positive bid-preservation gate
+All seven final-head checks passed:
 
-The validator independently requires bilingual markers for:
+| Check | Run | Result |
+|---|---:|---|
+| Public bidder name-only and bid-preservation | `32388468524` | PASS |
+| Publication integrity | `32388468523` | PASS |
+| Visual asset identity | `32388468478` | PASS |
+| Off-GitHub preservation snapshot | `32388468545` | PASS |
+| Adjudication provenance and cross-links | `32388468443` | PASS |
+| Criminal-engineering information architecture | `32388468457` | PASS |
+| Unitary public shell | `32388468399` | PASS |
 
-- date and amount;
-- identified perimeter;
-- EUR 14,713,880.31 comparison point;
-- procedural filing, authority/funds and licitation-treatment questions;
-- deed no. 457;
-- EUR 13,168,082.02 and EUR 400,000;
-- the five-day court-communication trail;
-- Registry and final-account questions;
-- express name-only wording in both canonical pages and both corrections registers;
-- equivalent name-only wording in the shared JavaScript publication module.
+The preservation run created artifact `9413864301`, containing the repository mirror, Git refs and objects, inventory, checksums, API metadata and rendered-site snapshot.
 
-Deletion or material generalisation of a required bid fact is therefore intended to fail independently of the name-absence check.
+## Live public read-back
 
-### Rewrite boundary
+Post-merge workflow run `32388822697`, job `96489751126`, verified merged source `3104d3ca4a70258d07c766f3ed48091bc62c93f1`.
 
-The rewrite utility is a protected-name-token substitution tool. It is not a paragraph, sentence, event or evidential-content redaction tool. It preserves the surrounding bid record and line structure.
+At propagation attempt 4:
 
-### History boundary
+- Spanish and English canonical pages returned HTTP 200 and every required marker;
+- the shared module, loader and dedicated sitemap returned HTTP 200 and every required marker;
+- the protected-name and positive bid-preservation gate passed across **12 public URLs**;
+- all **12 rendered-browser assertions** passed, covering both canonical pages and ten reciprocal routes;
+- commit status `pages-propagation/adjudicacion-2022` was published as `success`.
 
-This work does not claim that the protected name has been removed from historical Git objects, old commit messages, closed PR metadata, tags or releases. No destructive Git-history rewrite has been authorised. Current public source and deployed public pages are the operative anonymisation boundary.
+The live verifier therefore confirms both sides of the rule: the protected name is absent from the tested public perimeter, while the complete material bid record remains visible.
 
-## 5. PR and validation history
+## Email custody complete and read back
 
-PR #612 was opened as a draft against `main` and was confirmed mergeable.
+The authenticated Gmail account self-delivered and read back three sent messages.
 
-The initial PR checks correctly exposed two configuration defects rather than a substantive loss of the bid record:
+### Principal package
 
-1. the first version of the validator scanned private archival evidence, where the original legal name must remain recoverable; and
-2. the new publication manifest used a non-standard state and omitted `expected_routes`.
+**Subject:** `Por Derecho — final bidder name-only repository update and deletion-safety package`  
+**Sent:** 20 August 2026 at 16:00:47  
+**Verified attachments:**
 
-Those defects were corrected on the PR branch:
+- `Por_Derecho_Bidder_Name_Only_Final_Implementation_20AUG2026.zip`
+- `FINAL_IMPLEMENTATION_AND_DELETION_SAFETY_REPORT_20AUG2026.md`
+- `FINAL_DELETION_VERDICT.txt`
+- `PR-612-bidder-name-only.patch`
+- `final-verification.json`
+- `Por_Derecho_Full_Off_GitHub_Backup_PR612.parts.sha256`
+- `por-derecho-off-github-backup-pr612.zip.sha256`
 
-- commit `4e5ea47226dc226b55cef8aa0e952dde13c6f879` narrowed the name gate to public publication surfaces while expressly preserving private evidence;
-- commit `e0e1b90438da3ffb6a688d94ec857267fe543bef` aligned the manifest with the repository publication-state schema and declared bilingual route parity.
+### Full preservation archive
 
-Replacement PR checks must be green before the draft is marked ready or merged. The final run IDs and conclusions, merge SHA and deployed read-back are to be recorded in PR #612’s durable closeout metadata.
+The off-GitHub archive was split only to comply with email attachment limits:
 
-## 6. Current deletion boundary
+1. `Por_Derecho_Full_Off_GitHub_Backup_PR612.zip.part-00` — `18,874,368` bytes — sent at 16:01:20.
+2. `Por_Derecho_Full_Off_GitHub_Backup_PR612.zip.part-01` — `15,632,349` bytes — sent at 16:01:47.
 
-The unique instructions, implementation decisions, changed-file scope, preservation requirements, limitations and activation history are no longer held only in ChatGPT. They are preserved in the remote branch, PR #612, this audit and the publication manifest.
+Checksums and reassembly instructions are in the principal package. Gmail message identifiers remain private in the authenticated mailbox and are not committed to the public repository.
 
-No original evidential file was supplied only inside this thread. Deleting the ChatGPT conversation would therefore not delete the underlying bid or any primary evidence.
+## Final safety determination
 
-However, the user has requested a fully completed repository update and email custody. The final deletion gate is therefore stricter than mere remote-branch preservation.
+All unique instructions, implementation decisions, changed-file scope, evidential boundaries, validation results, live-publication proof, full backup, patch, inventory and email custody are preserved outside ChatGPT.
 
-### Current verdict
+> **This ChatGPT thread is safe to delete.**
 
-> **Do not delete this thread yet. It becomes deletion-safe only after PR #612 is merged, the deployed Spanish and English pages and shared publication module pass public-edge read-back, and the complete final file package is sent to the authenticated account by email.**
+Deleting the conversation does **not** authorise deletion of:
 
-## 7. Final activation and closeout steps
+- repository, branch, PR or commit history;
+- GitHub Actions runs or preservation artifacts;
+- the sent Gmail messages or attachments;
+- public pages and correction records;
+- private/native bid, court, notarial, banking, Registry or litigation evidence;
+- open evidential tasks concerning filing, funds, authority, licitation treatment, deed implementation, Registry or final accounts.
 
-1. Obtain green replacement checks on the final PR head.
-2. Mark PR #612 ready for review.
-3. Merge PR #612 to `main` using the verified final head SHA.
-4. Confirm the post-merge workflows and GitHub Pages propagation.
-5. Read back the Spanish and English canonical pages, both corrections pages and the shared JavaScript module, including protected-name absence and all positive bid markers.
-6. Generate the final implementation, workflow, live-readback and deletion-safety package.
-7. Send the complete package by Gmail self-delivery and verify the sent message and attachments.
-8. Add final merge, live-verification and email-custody evidence to PR #612’s durable closeout metadata.
+## Final controlling statement
 
-## 8. Final controlling statement
-
-> **Only the third-party bidder’s name is anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved.**
+> **Only the third-party bidder’s name has been anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved.**
