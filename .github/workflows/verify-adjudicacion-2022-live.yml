@@ -63,6 +63,7 @@ jobs:
                       "13.168.082,02 €",
                       "tercer oferente",
                       "14,8 M€",
+                      "Únicamente el nombre del tercer oferente",
                       "/por-derecho/en/2022-adjudication-documentary-reconstruction/",
                   ],
               },
@@ -74,6 +75,7 @@ jobs:
                       "EUR 13,168,082.02",
                       "third-party bidder",
                       "EUR 14.8m",
+                      "Only the bidder's name is anonymised",
                       "/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
                   ],
               },
@@ -86,6 +88,8 @@ jobs:
                       "adjudicacion-crosslink-20260820",
                       "escritura n.º 457",
                       "deed no. 457",
+                      "únicamente su nombre se mantiene anonimizado en la publicación",
+                      "only the bidder's name is anonymised in the public record",
                   ],
               },
               "loader": {
@@ -108,7 +112,7 @@ jobs:
               req = urllib.request.Request(
                   url,
                   headers={
-                      "User-Agent": "Por-Derecho-adjudicacion-live-verifier/3.0",
+                      "User-Agent": "Por-Derecho-adjudicacion-live-verifier/4.0",
                       "Cache-Control": "no-cache",
                       "Pragma": "no-cache",
                   },
@@ -158,7 +162,7 @@ jobs:
           raise SystemExit(1)
           PY
 
-      - name: Verify protected bidder identity is absent from public edge
+      - name: Verify protected bidder name is absent and the complete bid record is preserved at the public edge
         id: verify_anonymisation
         continue-on-error: true
         env:
@@ -233,9 +237,9 @@ jobs:
               "state": "success" if success else "failure",
               "target_url": f"https://github.com/{repository}/actions/runs/{run_id}",
               "description": (
-                  "Adjudication routes and bidder anonymisation verified live"
+                  "Adjudication routes, bidder name-only control and bid preservation verified live"
                   if success
-                  else "Adjudication/anonymisation public-edge verification failed"
+                  else "Adjudication/name-only/bid-preservation public-edge verification failed"
               ),
               "context": "pages-propagation/adjudicacion-2022",
           }
@@ -248,7 +252,7 @@ jobs:
                   "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
                   "Content-Type": "application/json",
                   "X-GitHub-Api-Version": "2022-11-28",
-                  "User-Agent": "Por-Derecho-adjudicacion-live-verifier/3.0",
+                  "User-Agent": "Por-Derecho-adjudicacion-live-verifier/4.0",
               },
           )
           with urllib.request.urlopen(request, timeout=30) as response:

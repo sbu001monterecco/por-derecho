@@ -22,7 +22,7 @@
         'El Auto de 25/01/2021 explica el paso de 3.079.104,66 € de demora al límite hipotecario de 3.182.000 € mediante devengo diario posterior.',
         'El Edicto de 29/01/2021 separa 13.168.082,02 € de componentes hipotecarios, 400.000 € de bienes no hipotecados y 1.145.798,29 € de cuotas comunitarias.',
         'La escritura n.º 457 de 21/02/2022 verifica 13.168.082,02 € como deuda que sirve de contraprestación de la dación de las fincas hipotecadas.',
-        'Existe una propuesta documentada de un tercer oferente por 14,8 M€; su identidad se mantiene anonimizada en la publicación.'
+        'Existe una propuesta documentada de un tercer oferente por 14,8 M€; únicamente su nombre se mantiene anonimizado en la publicación y la oferta y su contexto permanecen visibles.'
       ],
       notEstablishedTitle: 'Lo que esas fuentes todavía no establecen',
       notEstablished: [
@@ -33,9 +33,9 @@
       ],
       initialPublication: 'Publicación inicial: 19 agosto 2026',
       evidenceReview: 'Última revisión probatoria: 20 agosto 2026',
-      correction: 'Corrección: escritura primaria recuperada; funciones de cifras y tercer oferente anonimizado',
+      correction: 'Corrección: escritura primaria recuperada; funciones de cifras y nombre del tercer oferente anonimizado',
       validationMatter: 'Jerarquía de fuentes y competencia',
-      validationStatus: 'Auto, Edicto y escritura primaria localizados; propuesta de tercero documentada y anonimizada públicamente',
+      validationStatus: 'Auto, Edicto y escritura primaria localizados; propuesta de tercero documentada y únicamente su nombre anonimizado públicamente',
       validationNext: 'Completar autos definitivos, testimonios, cálculo de intereses, licitación, 400.000 €, comunicación/Registro y rendición final',
       linkTitle: 'Reconstrucción de la adjudicación de 2022',
       linkAction: 'Abrir la reconstrucción documental →',
@@ -57,7 +57,7 @@
         'The 25 January 2021 order explains the move from EUR 3,079,104.66 in default interest to the EUR 3,182,000 mortgage cap through later daily accrual.',
         'The 29 January 2021 notice separates EUR 13,168,082.02 in mortgage components, EUR 400,000 for non-mortgaged assets and EUR 1,145,798.29 in community fees.',
         'Deed no. 457 dated 21 February 2022 verifies EUR 13,168,082.02 as debt serving as consideration for the dación of the mortgaged properties.',
-        'A documented EUR 14.8m proposal by a third-party bidder exists; the bidder identity is anonymised in the public record.'
+        "A documented EUR 14.8m proposal by a third-party bidder exists; only the bidder's name is anonymised in the public record and the bid and its context remain visible."
       ],
       notEstablishedTitle: 'What those sources do not yet establish',
       notEstablished: [
@@ -68,9 +68,9 @@
       ],
       initialPublication: 'Initial publication: 19 August 2026',
       evidenceReview: 'Latest evidence review: 20 August 2026',
-      correction: 'Correction: primary deed recovered; legal functions of figures and anonymised third-party bidder',
+      correction: 'Correction: primary deed recovered; legal functions of figures and anonymised third-party bidder name',
       validationMatter: 'Source hierarchy and competition',
-      validationStatus: 'Primary order, notice and deed located; third-party proposal documented and publicly anonymised',
+      validationStatus: 'Primary order, notice and deed located; third-party proposal documented and only its name publicly anonymised',
       validationNext: 'Complete final orders, testimonios, interest calculation, licitation, EUR 400,000, court/Registry chain and final accounts',
       linkTitle: 'The 2022 adjudication reconstruction',
       linkAction: 'Open the documentary reconstruction →',

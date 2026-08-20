@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Rewrite protected bidder identifiers out of public website source.
+"""Replace only protected bidder-name tokens in public website source.
 
-The protected identifier is represented only by its SHA-256 digest. Public Spanish
-source receives the generic label ``tercer oferente`` and public English source
-receives ``third-party bidder``. The script is deterministic and idempotent.
+The protected name token is represented only by its SHA-256 digest. Public Spanish
+source receives the neutral label ``tercer oferente`` and public English source
+receives ``third-party bidder``. The bid and every surrounding fact remain intact.
+The operation is deterministic, idempotent and deliberately narrower than content
+redaction.
 """
 
 from __future__ import annotations
@@ -18,6 +20,7 @@ PUBLIC_ROOTS = [ROOT / "es", ROOT / "en", ROOT / "assets"]
 ROOT_FILES = [ROOT / "index.html", ROOT / "sitemap.xml", ROOT / "rss.xml"]
 TEXT_SUFFIXES = {".html", ".htm", ".js", ".css", ".json", ".xml", ".md", ".txt", ".svg"}
 
+# SHA-256 of the protected lower-case name token. Never replace this with plaintext.
 PROTECTED_TOKEN_HASHES = {
     "33c594e4e36529842cb1344043ec59e9f4d026466fd7ba0112a635fbe30baf3e"
 }
@@ -49,11 +52,12 @@ def replacement_for(path: pathlib.Path) -> str:
         return "tercer oferente"
     if rel.parts and rel.parts[0] == "en":
         return "third-party bidder"
-    # Shared assets must stay language-neutral rather than naming the bidder.
+    # Shared public assets use the neutral English label rather than the protected name.
     return "third-party bidder"
 
 
 def rewrite_text(text: str, replacement: str) -> tuple[str, int]:
+    """Return text with protected name tokens replaced and no other content changed."""
     count = 0
 
     def repl(match: re.Match[str]) -> str:
@@ -64,7 +68,10 @@ def rewrite_text(text: str, replacement: str) -> tuple[str, int]:
         count += 1
         return replacement
 
-    return WORD_RE.sub(repl, text), count
+    rewritten = WORD_RE.sub(repl, text)
+    if rewritten.count("\n") != text.count("\n"):
+        raise RuntimeError("Name-token rewrite changed the record's line structure")
+    return rewritten, count
 
 
 def main() -> int:
@@ -75,17 +82,21 @@ def main() -> int:
         except (OSError, UnicodeError) as exc:
             print(f"READ ERROR {path.relative_to(ROOT)}: {exc}", file=sys.stderr)
             return 2
-        rewritten, count = rewrite_text(text, replacement_for(path))
+        try:
+            rewritten, count = rewrite_text(text, replacement_for(path))
+        except RuntimeError as exc:
+            print(f"INVARIANT ERROR {path.relative_to(ROOT)}: {exc}", file=sys.stderr)
+            return 3
         if count:
             path.write_text(rewritten, encoding="utf-8")
             changed.append((path, count))
 
     if changed:
-        print("PUBLIC BIDDER SOURCE REWRITE: CHANGED")
+        print("PUBLIC BIDDER NAME-TOKEN REWRITE: CHANGED")
         for path, count in changed:
-            print(f"- {path.relative_to(ROOT)}: {count} replacement(s)")
+            print(f"- {path.relative_to(ROOT)}: {count} name-token replacement(s)")
     else:
-        print("PUBLIC BIDDER SOURCE REWRITE: NO CHANGES")
+        print("PUBLIC BIDDER NAME-TOKEN REWRITE: NO CHANGES")
     return 0
 
 
