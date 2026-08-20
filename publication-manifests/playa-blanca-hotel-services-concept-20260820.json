@@ -1,6 +1,6 @@
 {
   "publication_id": "playa-blanca-hotel-services-concept-20260820",
-  "current_state": "MERGED",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Gil Marer / Project Sun Rock",
   "control_date": "2026-08-20",
   "controlling_pr": 610,
@@ -27,7 +27,8 @@
     "assets/playa-blanca-programme-section.svg",
     "assets/site.js",
     "deployment-probes/playa-blanca-hotel-concept-20260820.json",
-    ".github/workflows/verify-playa-blanca-hotel-concept-live.yml"
+    ".github/workflows/verify-playa-blanca-hotel-concept-live.yml",
+    ".github/workflows/verify-playa-blanca-hotel-concept-pr-readback.yml"
   ],
   "controlling_propositions": [
     "The public concept is 100% hotel and non-residential.",
@@ -42,7 +43,8 @@
     "evidence": [
       "PR 610 final head 25647ea46841a1aad7692a5fec8e4f3ba0c819f2 passed the publication-integrity gate, visual-asset identity validation, unitary public-shell validation, adjudication-provenance validation, criminal-engineering/case-information validation, AC Community validation, bidder anonymisation control, San Telmo attribution control and off-GitHub preservation.",
       "PR 610 was synchronised with then-current main before merge and contained 12 intended changed files with no deletions.",
-      "PR 610 merged by squash to main as 11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7 at 2026-08-20T15:58:07Z."
+      "PR 610 merged by squash to main as 11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7 at 2026-08-20T15:58:07Z.",
+      "PR 622 corrected the observable read-back markers after the first verification attempt identified two test-expectation mismatches rather than publication failures; the corrected run passed all six public checks on its first attempt."
     ],
     "bilingual_route_parity": "PASS",
     "source_presence": "PASS",
@@ -50,7 +52,46 @@
     "publication_integrity": "PASS",
     "visual_asset_identity": "PASS",
     "repository_merge": "PASS",
-    "public_edge": "PENDING DEDICATED LIVE VERIFICATION"
+    "public_edge": "PASS / LIVE VERIFIED"
+  },
+  "deployment_evidence": {
+    "source_merge_sha": "11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7",
+    "live_readback_pr": 622,
+    "live_readback_workflow_run": 32393006466,
+    "live_readback_job": 96503293022,
+    "verified_at": "2026-08-20T16:37:15.190956Z",
+    "result": "All six checked public resources returned HTTP 200 with all required markers present on attempt 1."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/playa-blanca-hotel-services-concept/",
+    "https://sbu001monterecco.github.io/por-derecho/es/playa-blanca-concepto-hotel-servicios/"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/en/playa-blanca-hotel-services-concept/": [
+      "A new hotel and local-services concept for a place we continue to believe in.",
+      "Our confidence in Playa Blanca was not taken with it.",
+      "Supercor Exprés or Supercor-format"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/es/playa-blanca-concepto-hotel-servicios/": [
+      "Un nuevo concepto hotelero y de servicios locales para un lugar en el que seguimos creyendo.",
+      "Nuestra confianza en Playa Blanca sigue intacta.",
+      "Supercor Exprés o Supercor"
+    ]
+  },
+  "live_verification_evidence": {
+    "workflow_run_id": 32393006466,
+    "job_id": 96503293022,
+    "artifact_id": 9415553860,
+    "artifact_digest": "sha256:96f68e49e21d4f8c25996600d6e0d5440e01f353479de4eaaaa3ab200075799b",
+    "verified_at": "2026-08-20T16:37:15.190956Z",
+    "checks": {
+      "english_concept_page": "HTTP 200 / markers PASS / sha256 2e211ded842c840f27be0d9385cc0c5583fccf7b504e9746bd3b3b49171a0334",
+      "spanish_concept_page": "HTTP 200 / markers PASS / sha256 cb40737851704b33f027a6e5f4e91ff845468f2590a85faa5cf37797a4c0698a",
+      "homepage_feature_asset": "HTTP 200 / markers PASS / sha256 e3c4feabe1c3a13c7ac5f8b96159bab7ad8565e0f52140904bd241db1a12f4d7",
+      "site_loader": "HTTP 200 / markers PASS / sha256 fa8d110806b8021acf825238729631831e181a8d6c59a48dc838d0df9ebe1f12",
+      "concept_styles": "HTTP 200 / markers PASS / sha256 733275a257275bedb4a76b13d6aecfd98b32dc304cc9776a2459b7b6312fac10",
+      "hero_poster": "HTTP 200 / markers PASS / sha256 338d3465f6f77da0e27138f35284a23cb8134bcb0cfba6648fb8292272785a26"
+    }
   },
   "review_notes": [
     "No site control, owner endorsement, operator commitment or public-authority awareness is represented.",
