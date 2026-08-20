@@ -1,7 +1,7 @@
 # THREAD DELETION AUDIT — AUDIENCIA DE CUENTAS ENTRY 1619/2026
 
 **Date:** 20 August 2026  
-**Current state:** **CLOSEOUT IN PROGRESS — LIVE VERIFICATION AND COMPLETION EMAIL PENDING**  
+**Current state:** **CLOSEOUT READY — SOURCE, LIVE PUBLICATION AND OPEN-EVIDENCE CONTROLS VERIFIED; PR MERGE AND COMPLETION EMAIL PENDING**  
 **Controlling protocol:** `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`
 
 ## Thread scope
@@ -28,6 +28,7 @@ The controlling source is independently preserved in connected Gmail:
 - attachment: `Certificacion_registral.pdf`;
 - attachment size: **45,468 bytes**;
 - pages: **1**;
+- page format: **A4**;
 - PDF version: **1.4**;
 - encrypted: **no**;
 - JavaScript: **no**;
@@ -45,6 +46,8 @@ The substantive update was merged through **PR #587**:
 - merge commit: `2b68dfa5aaaff37e1b310a77a1aae7548b12e15c`;
 - current-main ancestry check: current `main` is ahead of that merge and not behind it, so the update remains retained.
 
+Deletion-closeout source PR: **#596** — `Close Audiencia 1619/2026 thread-deletion continuity`.
+
 Canonical recovery points:
 
 - `INSTITUTIONAL_ACTIONS.md`;
@@ -56,6 +59,7 @@ Canonical recovery points:
 - `archive/CORRECTION_REGISTER_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md` — CR-050;
 - `archive/MISSING_EVIDENCE_REGISTER_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md` — ME-065;
 - `archive/CONTINUOUS_MAINTENANCE_MATRIX_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md`;
+- `archive/DEPLOYMENT_LOG_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md`;
 - this deletion audit.
 
 ## Correction and anti-regression control
@@ -81,18 +85,44 @@ These gaps prevent a merits conclusion. They do not make the current work depend
 
 The unredacted receipt contains the interested party's contact data and document-verification credentials. It is not committed to the public repository. Public GitHub records preserve only the minimum procedural fields, source status, file relationship and integrity hash needed for continuity. The native email and PDF remain in Gmail custody.
 
-## Publication and verification state
+## Public-edge verification
 
-The bilingual source pages and institutional registers are present on current `main` with the `REGAGE26e00074022302` and `1619/2026` state. The dedicated live verifier has been strengthened to require those exact markers in both Audiencia pages and both institutional registers.
+The dedicated verifier was strengthened to require the exact `REGAGE26e00074022302` and `1619/2026` state on both bilingual Audiencia pages and both bilingual institutional registers.
 
-Final deletion status must not be issued until:
+- workflow run: **32368595676**;
+- job: **96423676731**;
+- conclusion: **success**;
+- verified at: **2026-08-20T12:23:46.748093Z**;
+- poll attempt: **1**;
+- artifact: **9406238830**;
+- artifact ZIP SHA-256: **`36071f9c925dc23518127920f2781b4939c6b7d2b9a547133026b1ba0494eb93`**.
 
-1. the strengthened public-edge verification passes;
-2. the deletion-closeout PR is merged and retained on `main`;
-3. the completion record is emailed to the user as required by the universal protocol.
+All six checks passed HTTP 200, minimum-size gates and exact-marker tests with no missing marker:
 
-## Provisional deletion determination
+1. `/es/audiencia-cuentas-canarias/`;
+2. `/en/canary-islands-external-audit/`;
+3. `/es/registros-institucionales/`;
+4. `/en/institutional-records/`;
+5. `/sitemap-audiencia-cuentas.xml`;
+6. `/robots.txt`.
 
-A fresh thread can already recover the corrected facts, source custody, evidential boundary, public pages, repository implementation and open evidence from controlled systems. Operational closeout remains pending the three items above.
+The exact route hashes and byte counts are preserved in `archive/DEPLOYMENT_LOG_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md`.
 
-**Provisional status: NOT YET DELETION-SAFE — CLOSEOUT IN PROGRESS.**
+## Final operational gate
+
+The evidential and public-publication gates are closed. Two operational acts remain before the user is told the chat may be deleted:
+
+1. merge PR #596 and retain its result on `main`;
+2. send the concise completion record to the user by Gmail, without attaching the unredacted receipt.
+
+The final merge SHA and successful email delivery will be recorded in a post-merge comment on PR #596 and in the completion email itself. This avoids a second closeout PR while preserving a durable post-merge record.
+
+## Deletion determination
+
+A fresh thread can recover every material new fact, correction, source-status decision, public/private boundary, implementation state, open evidence target and live-publication result from current controlled repository records plus connected Gmail.
+
+Once the two operational acts above are completed, the controlling closeout is:
+
+**FINAL STATUS: DELETION-SAFE WITH OPEN EVIDENCE.**
+
+Open evidence is limited to ME-065 and does not create dependence on this chat.
