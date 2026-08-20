@@ -1,7 +1,7 @@
 {
   "publication_id": "PP1041-DECISIVE-PRODUCTION-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
   "control_date": "2026-08-20",
   "control_marker": "pp1041-single-most-important-production-20260820",
   "merge_sha": "0d1fb5ba11d9f5b9244bdeb8622057cdb78e431f",
@@ -86,5 +86,15 @@
     "artifact_name": "pp1041-decisive-live-evidence",
     "verified_at": "2026-08-20T13:36:12Z",
     "result": "The English and Spanish pages, permanent P0 gateway and criminal-engineering sitemap returned HTTP 200, exceeded minimum size thresholds and contained their distinctive source markers."
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audit_date": "2026-08-20",
+    "audit_path": "docs/deletion-audits/2026-08-20-lender-pacto-pp1041-criminal-first-thread.md",
+    "sent_email_subject": "PP 1041/2017 — the single most important evidential production",
+    "sent_email_located_in_gmail": true,
+    "open_evidence_preserved": true,
+    "chat_required_for_future_work": false,
+    "verdict": "The decisive production demand, bilingual pages, live-verification evidence, sent email, P0 schedule and evidential boundaries are preserved outside ChatGPT."
   }
 }
