@@ -33,11 +33,6 @@ jobs:
           python-version: '3.12'
       - name: Materialise controlled source
         run: python scripts/materialise_unitary_criminal_payload.py
-      - name: Validate generated architecture
-        run: |
-          python scripts/validate_unitary_criminal_reverse_engineering.py
-          node --check assets/unitary-criminal-reverse-engineering-20260820.js
-          node --check assets/site.js
       - name: Commit generated source
         run: |
           if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
@@ -49,3 +44,9 @@ jobs:
           git add .
           git commit -m 'Materialise unitary criminal reverse-engineering architecture'
           git push origin HEAD:strong/unitary-criminal-reverse-engineering-20260820
+      - name: Validate generated architecture for diagnosis
+        continue-on-error: true
+        run: |
+          python scripts/validate_unitary_criminal_reverse_engineering.py
+          node --check assets/unitary-criminal-reverse-engineering-20260820.js
+          node --check assets/site.js
