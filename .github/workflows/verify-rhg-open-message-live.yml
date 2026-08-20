@@ -1,0 +1,64 @@
+name: Verify RHG open-message live publication
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/**'
+      - 'en/acosta-matos-perimeter/open-message-rhg-collaborator/**'
+      - 'assets/evidence/rhg-open-message-20aug2026/**'
+      - 'sitemap-rhg-open-message.xml'
+      - 'robots.txt'
+      - 'scripts/verify_rhg_open_message_live.py'
+      - '.github/workflows/verify-rhg-open-message-live.yml'
+      - 'publication-manifests/rhg-open-message-20260820.json'
+  pull_request:
+    paths:
+      - 'es/acosta-matos-perimetro/mensaje-abierto-colaborador-rhg/**'
+      - 'en/acosta-matos-perimeter/open-message-rhg-collaborator/**'
+      - 'assets/evidence/rhg-open-message-20aug2026/**'
+      - 'sitemap-rhg-open-message.xml'
+      - 'robots.txt'
+      - 'scripts/verify_rhg_open_message_live.py'
+      - '.github/workflows/verify-rhg-open-message-live.yml'
+      - 'publication-manifests/rhg-open-message-20260820.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-rhg-open-message-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Poll public GitHub Pages publication
+        run: |
+          python scripts/verify_rhg_open_message_live.py \
+            --attempts 36 \
+            --interval 10 \
+            --timeout 20 \
+            --output artifacts/rhg-open-message-live/verification.json
+      - name: Show verification evidence
+        if: always()
+        run: |
+          test ! -f artifacts/rhg-open-message-live/verification.json || cat artifacts/rhg-open-message-live/verification.json
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: rhg-open-message-live-verification
+          path: artifacts/rhg-open-message-live/verification.json
+          if-no-files-found: error
+          retention-days: 30
