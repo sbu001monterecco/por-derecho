@@ -38,6 +38,14 @@
   deFactoAdministration.setAttribute('data-ac-community-de-facto-loader', 'true');
   document.head.appendChild(deFactoAdministration);
 
+  // Five-track refurbishment/levy/utility reconstruction: clean-start account,
+  // pre-title record, parallel 2022 processes, verification and physical/economic result.
+  const refurbishmentMultitrack = document.createElement('script');
+  refurbishmentMultitrack.src = new URL('sun-park-refurbishment-multitrack-20260820.js?v=20260820a', current.src).href;
+  refurbishmentMultitrack.async = false;
+  refurbishmentMultitrack.setAttribute('data-sun-park-refurbishment-multitrack-loader', 'true');
+  document.head.appendChild(refurbishmentMultitrack);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
