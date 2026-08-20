@@ -1,7 +1,7 @@
 {
   "publication_id": "thread-deletion-operator-auto804-closeout-20260820",
   "owner": "Gil Marer / Project Sun Rock",
-  "current_state": "LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
   "expected_routes": {
     "es": [
       "es/index.html",
@@ -45,6 +45,12 @@
     "merge_sha": "6e175e1fc68537f1923914648e84e0aa1b7b8d57",
     "merged_at": "2026-08-20T17:06:32Z"
   },
+  "post_live_closeout": {
+    "pull_request": 637,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/637",
+    "merge_sha": "53242a372a102f73d3d7bbc547321d13f4419697",
+    "purpose": "Record exact CI, Pages, rendered read-back, Issue #5 and Atlantic/Canary reminder evidence before the final email gate."
+  },
   "merge_sha": "6e175e1fc68537f1923914648e84e0aa1b7b8d57",
   "deployment_evidence": [
     {
@@ -84,7 +90,19 @@
     "method": "fresh rendered-browser read-back after successful Pages run 32395762599",
     "result": "All eight declared ES/EN HTML routes rendered the applicable date and controlling semantic markers. The merged Atom XML parsed locally; the verification client blocked direct XML navigation, so no separate anonymous rendered-feed claim is made."
   },
-  "deletion_record": null,
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audit_date": "2026-08-20",
+    "audit_path": "archive/THREAD_DELETION_CONTINUITY_AUDIT_CEXP_MONTERECCO_PINK_AUTO804_FORENSIC_20AUG2026.md",
+    "sent_email_subject": "Por Derecho — deletion-safe closeout: CEXP / Pink / Order 804 (20 Aug 2026)",
+    "sent_email_located_in_gmail": true,
+    "private_report_title": "Sun_Park_forensic_scan_2026-08-13.md",
+    "private_report_revision": 3,
+    "private_checkpoint_title": "Sun_Park_forensic_thread_continuity_checkpoint_2026-08-20.md",
+    "open_evidence_preserved": true,
+    "chat_required_for_future_work": false,
+    "verdict": "All material findings, corrections, strategy, publication evidence, recovery instructions and open work are durable outside the originating chat; remaining items are identified evidence-acquisition gaps."
+  },
   "review_notes": [
     "Private report and checkpoint are retained outside public Git and referenced by exact title only.",
     "No privileged counsel content, Patricia personal tax data, signatures, addresses or private source bodies are published.",
