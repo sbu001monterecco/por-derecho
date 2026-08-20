@@ -57,7 +57,7 @@ CHECKS = [
     {"path": "sitemap-lender-liability.xml",
      "markers": ["pacto-comisorio-credit-to-title-architecture", "perimetro-ph122-cerberus-haya-bankia-externo", "administrador-concursal-puerta-credito-titulo"],
      "kind": "lender_liability_sitemap", "min_bytes": 500},
-    {"path": "assets/site.js", "markers": ["canonical-routing-chronology-20260815.js", "share-controls-20260817.js"],
+    {"path": "assets/site.js", "markers": ["site-base-20260819.js?v=20260819a", "case-information-architecture-20260819.js?v=20260819b"],
      "kind": "global_loader", "min_bytes": 1000},
 ]
 
