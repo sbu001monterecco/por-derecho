@@ -2,7 +2,7 @@
 
 **Audit date:** 20 August 2026
 **Owner:** Gil Marer / Project Sun Rock
-**Current publication state:** `REMOTE_SOURCE` — final merge, Pages and live-verification evidence to be added after deployment
+**Current publication state:** `LIVE_VERIFIED` — repository, CI, Pages and rendered public-site evidence are recorded below
 **Target close-out:** `DELETION-SAFE WITH OPEN EVIDENCE`
 
 ## 1. Scope and controlling rule
@@ -111,16 +111,25 @@ These gaps are evidence-custody or completion gaps, not conversation-dependency 
 |---|---|---|
 | Private report corrected | Revision 3 preserved under exact title | PASS |
 | Full private recovery checkpoint | preserved under exact title | PASS |
-| Public continuity source | this file on remote branch | PASS |
-| Canonical registers/startup/tracker | included in this publication patch | PASS |
-| ES/EN public wording and dates | included in this publication patch | PASS |
-| Restricted-source transparency | included in this publication patch | PASS |
-| Issue #5 current state | pending connector update | PENDING |
-| Canary-time reminder | pending automation verification | PENDING |
-| PR/CI/merge | exact evidence not yet recorded | PENDING |
-| Pages/live verification | exact evidence not yet recorded | PENDING |
+| Public continuity source | merged by [PR #631](https://github.com/sbu001monterecco/por-derecho/pull/631) | PASS |
+| Canonical registers/startup/tracker | merged by PR #631 | PASS |
+| ES/EN public wording and dates | merged by PR #631; rendered read-back completed | PASS |
+| Restricted-source transparency | matched ES/EN custody-access notes rendered live | PASS |
+| Issue #5 current state | OPEN; body updated 20 August; no acknowledgement/production located; identifiers and 27-Aug review retained | PASS |
+| Canary-time reminder | enabled for 27 August 2026, 09:00 `Atlantic/Canary`; bounded records-request wording verified | PASS |
+| PR/CI/merge | PR #631; head `b1d1f7277e2c36f755cea79eb37c704c6e1f292b`; merge `6e175e1fc68537f1923914648e84e0aa1b7b8d57`; all observed PR checks passed | PASS |
+| Pages/live verification | Pages run 779 / Actions run `32395762599` succeeded; eight declared ES/EN routes rendered the controlling markers | PASS |
 | Completion self-email | exact Gmail evidence not yet recorded | PENDING |
 
 ## 9. Current deletion verdict
 
-**NOT YET DELETION-SAFE.** The private content is durable and the public source is reviewable, but the publication, live-verification, tracker, reminder and completion-email gates must pass. A post-deployment close-out commit must replace this status with the exact objective evidence before the thread may be deleted.
+**LIVE-VERIFIED; NOT YET DELETION-SAFE.** The private content, public source, tracker, reminder, merge, CI, Pages deployment and rendered bilingual read-back are durable. The only remaining operational gate is the protocol-required completion self-email. After that successful send is recorded in this audit and the publication manifest, the final verdict may become **DELETION-SAFE WITH OPEN EVIDENCE**.
+
+### Publication and read-back evidence
+
+- Controlling publication: [PR #631](https://github.com/sbu001monterecco/por-derecho/pull/631), merged 20 August 2026 at 17:06:32Z as `6e175e1fc68537f1923914648e84e0aa1b7b8d57`.
+- PR-head validation: publication-integrity run `32395308336`, optimum-reader-journey run `32395308241`, unitary-public-shell run `32395308436` and off-GitHub-preservation run `32395308312`, all successful.
+- Post-merge validation: publication-integrity run `32395763663` succeeded.
+- Pages: build/deployment run 779, Actions run `32395762599`, succeeded.
+- Rendered read-back: ES/EN home, updates, RICPE/Sun Park and Community pages displayed the matched 20-August date and the controlling CEXP, 1-February-2012, 159/477, Order-804, May-2017 and source-access qualifications.
+- The Atom files parsed in the merged source. Direct browser navigation to the XML feeds was blocked by the verification client, so no separate anonymous rendered-feed claim is made.

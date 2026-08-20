@@ -1,7 +1,7 @@
 {
   "publication_id": "thread-deletion-operator-auto804-closeout-20260820",
   "owner": "Gil Marer / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "LIVE_VERIFIED",
   "expected_routes": {
     "es": [
       "es/index.html",
@@ -29,12 +29,61 @@
     "en/updates/feed.xml"
   ],
   "validation": {
-    "evidence": []
+    "status": "CI_GREEN",
+    "validated_head": "b1d1f7277e2c36f755cea79eb37c704c6e1f292b",
+    "evidence": [
+      "PR #631: Publication integrity gate run 32395308336 — success",
+      "PR #631: Validate optimum reader journey run 32395308241 — success",
+      "PR #631: Validate unitary public shell run 32395308436 — success",
+      "PR #631: Off-GitHub preservation snapshot run 32395308312 — success",
+      "Post-merge publication integrity run 32395763663 — success"
+    ]
   },
-  "merge_sha": null,
-  "deployment_evidence": [],
-  "live_urls": [],
-  "live_verification_evidence": null,
+  "source_merge": {
+    "pull_request": 631,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/631",
+    "merge_sha": "6e175e1fc68537f1923914648e84e0aa1b7b8d57",
+    "merged_at": "2026-08-20T17:06:32Z"
+  },
+  "merge_sha": "6e175e1fc68537f1923914648e84e0aa1b7b8d57",
+  "deployment_evidence": [
+    {
+      "workflow": "pages-build-deployment",
+      "run_number": 779,
+      "run_id": 32395762599,
+      "result": "success",
+      "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32395762599"
+    }
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/"
+  ],
+  "live_markers": {
+    "date_parity": ["20 agosto 2026", "20 August 2026"],
+    "controlling_propositions": [
+      "CEXP strongest located collective provenance without proved exclusivity",
+      "signed 1 February 2012 CEXP–Monterecco instrument",
+      "genuine 159-unit/477-bed position",
+      "authority and scope remain open",
+      "Order 804 affirmed provisional dismissal and did not adjudicate operator title or total abandonment",
+      "May 2017 cessation of new commercialisation distinguished from continuing services and transition",
+      "no located proof that Bankia or Garrigues ordered incorporation",
+      "custody links are access-controlled and anonymous public copies are not verified"
+    ]
+  },
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-20",
+    "method": "fresh rendered-browser read-back after successful Pages run 32395762599",
+    "result": "All eight declared ES/EN HTML routes rendered the applicable date and controlling semantic markers. The merged Atom XML parsed locally; the verification client blocked direct XML navigation, so no separate anonymous rendered-feed claim is made."
+  },
   "deletion_record": null,
   "review_notes": [
     "Private report and checkpoint are retained outside public Git and referenced by exact title only.",
