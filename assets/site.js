@@ -16,7 +16,7 @@
   document.head.appendChild(caseArchitecture);
 
   const unitaryCriminal=document.createElement('script');
-  unitaryCriminal.src=new URL('unitary-criminal-reverse-engineering-20260820.js?v=20260820a',current.src).href;
+  unitaryCriminal.src=new URL('unitary-criminal-reverse-engineering-20260820.js?v=20260820b',current.src).href;
   unitaryCriminal.async=false;
   unitaryCriminal.setAttribute('data-unitary-criminal-loader','unitary-criminal-reverse-engineering-20260820');
   document.head.appendChild(unitaryCriminal);
