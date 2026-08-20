@@ -15,7 +15,6 @@ on:
 
 permissions:
   contents: read
-  statuses: write
 
 concurrency:
   group: por-derecho-foundation-stage-3-live-${{ github.ref }}
@@ -27,7 +26,6 @@ jobs:
     timeout-minutes: 9
     env:
       BASE_URL: https://sbu001monterecco.github.io/por-derecho
-      STATUS_CONTEXT: pages-propagation/por-derecho-foundation-stage-3
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -38,19 +36,12 @@ jobs:
           python-version: '3.12'
 
       - name: Poll and verify the public Pages edge
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_SHA: ${{ github.sha }}
-          GITHUB_RUN_ID: ${{ github.run_id }}
-          GITHUB_SERVER_URL: ${{ github.server_url }}
         run: |
           python - <<'PY'
           import json
           import os
           import sys
           import time
-          import urllib.error
           import urllib.request
 
           base = os.environ['BASE_URL'].rstrip('/')
@@ -73,33 +64,6 @@ jobs:
               '/robots.txt': ['sitemap-por-derecho-foundation.xml'],
           }
 
-          repo = os.environ['GITHUB_REPOSITORY']
-          sha = os.environ['GITHUB_SHA']
-          context = os.environ['STATUS_CONTEXT']
-          run_url = f"{os.environ['GITHUB_SERVER_URL']}/{repo}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
-          token = os.environ['GITHUB_TOKEN']
-
-          def status(state, description):
-              payload = json.dumps({
-                  'state': state,
-                  'context': context,
-                  'description': description[:140],
-                  'target_url': run_url,
-              }).encode()
-              req = urllib.request.Request(
-                  f'https://api.github.com/repos/{repo}/statuses/{sha}',
-                  data=payload,
-                  method='POST',
-                  headers={
-                      'Authorization': f'Bearer {token}',
-                      'Accept': 'application/vnd.github+json',
-                      'X-GitHub-Api-Version': '2022-11-28',
-                      'Content-Type': 'application/json',
-                  },
-              )
-              with urllib.request.urlopen(req, timeout=30) as response:
-                  response.read()
-
           def fetch(path):
               request = urllib.request.Request(
                   f'{base}{path}',
@@ -108,7 +72,6 @@ jobs:
               with urllib.request.urlopen(request, timeout=30) as response:
                   return response.status, response.read().decode('utf-8', errors='replace')
 
-          status('pending', 'Waiting for Foundation stage-three Pages propagation')
           final_errors = []
           for attempt in range(1, 13):
               errors = []
@@ -116,7 +79,11 @@ jobs:
               for path, markers in targets.items():
                   try:
                       code, body = fetch(path)
-                      results[path] = {'http': code, 'bytes': len(body.encode()), 'markers': {m: m in body for m in markers}}
+                      results[path] = {
+                          'http': code,
+                          'bytes': len(body.encode()),
+                          'markers': {marker: marker in body for marker in markers},
+                      }
                       if code != 200:
                           errors.append(f'{path}: HTTP {code}')
                       for marker in markers:
@@ -125,12 +92,16 @@ jobs:
                   except Exception as exc:
                       errors.append(f'{path}: {type(exc).__name__}: {exc}')
               with open('foundation-stage-3-live-verification.json', 'w', encoding='utf-8') as fh:
-                  json.dump({'attempt': attempt, 'base': base, 'results': results, 'errors': errors}, fh, indent=2, ensure_ascii=False)
+                  json.dump(
+                      {'attempt': attempt, 'base': base, 'results': results, 'errors': errors},
+                      fh,
+                      indent=2,
+                      ensure_ascii=False,
+                  )
               if not errors:
                   print(f'PUBLIC_EDGE_VERIFIED on attempt {attempt}')
                   for path, result in results.items():
                       print(f"{path}: HTTP {result['http']} · {result['bytes']} bytes")
-                  status('success', 'Foundation stage three is live and exact markers are verified')
                   sys.exit(0)
               final_errors = errors
               print(f'Attempt {attempt} not yet complete:')
@@ -139,7 +110,6 @@ jobs:
               if attempt < 12:
                   time.sleep(20)
 
-          status('failure', 'Foundation stage-three public-edge verification failed')
           print('Final errors:')
           for error in final_errors:
               print(f'- {error}')
