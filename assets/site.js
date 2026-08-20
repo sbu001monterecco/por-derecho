@@ -30,6 +30,14 @@
   adjudication.setAttribute('data-adjudicacion-provenance-loader', 'true');
   document.head.appendChild(adjudication);
 
+  // Cross-site source-controlled reconstruction of Community/private functional management,
+  // AC authorisation/reliance, mobile Community debt and the definitive-text incident answer.
+  const deFactoAdministration = document.createElement('script');
+  deFactoAdministration.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260820a', current.src).href;
+  deFactoAdministration.async = false;
+  deFactoAdministration.setAttribute('data-ac-community-de-facto-loader', 'true');
+  document.head.appendChild(deFactoAdministration);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 

@@ -1,0 +1,95 @@
+name: Verify AC Community de facto administration live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/administracion-de-hecho-comunidad-ac/index.html'
+      - 'en/de-facto-administration-community-ac/index.html'
+      - 'assets/ac-community-de-facto-administration-20260820.js'
+      - 'assets/site.js'
+      - 'sitemap-ac-community-de-facto-administration.xml'
+      - 'robots.txt'
+      - 'scripts/render_ac_community_de_facto_administration.mjs'
+      - '.github/workflows/verify-ac-community-de-facto-administration-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-ac-community-de-facto-live
+  cancel-in-progress: false
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Poll public source routes
+        id: source
+        continue-on-error: true
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          base = 'https://sbu001monterecco.github.io/por-derecho'
+          suffix = f"source={os.environ['SOURCE_SHA'][:12]}&run={os.environ['RUN_ID']}"
+          targets = {
+            'es': (f'{base}/es/administracion-de-hecho-comunidad-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260820"','718.663,24','1.145.798,29']),
+            'en': (f'{base}/en/de-facto-administration-community-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260820"','718,663.24','1,145,798.29']),
+            'module': (f'{base}/assets/ac-community-de-facto-administration-20260820.js?{suffix}', ['data-ac-dfa-update','data-ac-dfa-crosslink']),
+            'sitemap': (f'{base}/sitemap-ac-community-de-facto-administration.xml?{suffix}', ['/por-derecho/es/administracion-de-hecho-comunidad-ac/','/por-derecho/en/de-facto-administration-community-ac/']),
+            'robots': (f'{base}/robots.txt?{suffix}', ['sitemap-ac-community-de-facto-administration.xml'])
+          }
+          last = {}
+          for attempt in range(1,31):
+            checks, details = {}, {}
+            for name,(url,markers) in targets.items():
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'Por-Derecho-live-verifier/1.0','Cache-Control':'no-cache'})
+                with urllib.request.urlopen(req,timeout=25) as response:
+                  body=response.read().decode('utf-8','replace')
+                  checks[f'{name}_http']=response.status==200
+                  checks[f'{name}_markers']=all(marker in body for marker in markers)
+                  details[name]={'status':response.status,'markers':{m:m in body for m in markers}}
+              except Exception as exc:
+                checks[f'{name}_http']=False; checks[f'{name}_markers']=False; details[name]={'error':repr(exc)}
+            last={'attempt':attempt,'checks':checks,'details':details}
+            print(json.dumps(last,ensure_ascii=False,indent=2))
+            if all(checks.values()):
+              with open('/tmp/ac-dfa-source.json','w') as f: json.dump({'status':'SOURCE_LIVE_VERIFIED',**last},f,indent=2)
+              raise SystemExit(0)
+            time.sleep(5)
+          with open('/tmp/ac-dfa-source.json','w') as f: json.dump({'status':'SOURCE_NOT_VERIFIED',**last},f,indent=2)
+          raise SystemExit(1)
+          PY
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$BROWSER_PATH"
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+      - name: Verify rendered public pages
+        id: dom
+        continue-on-error: true
+        env:
+          PSR_BASE_URL: https://sbu001monterecco.github.io/por-derecho
+          PSR_AC_DFA_ARTIFACT_DIR: artifacts/ac-community-de-facto-live
+        run: node scripts/render_ac_community_de_facto_administration.mjs
+      - name: Show verification evidence
+        if: always()
+        run: |
+          cat /tmp/ac-dfa-source.json || true
+          cat artifacts/ac-community-de-facto-live/result.json || true
+      - name: Fail when verification failed
+        if: steps.source.outcome != 'success' || steps.dom.outcome != 'success'
+        run: exit 1

@@ -1,0 +1,75 @@
+name: Validate AC Community de facto administration
+
+on:
+  pull_request:
+    paths:
+      - 'archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_**'
+      - 'archive/*DE_FACTO_ADMINISTRATION*'
+      - 'assets/data/ac-private-actor-de-facto-administration-v1.json'
+      - 'assets/ac-community-de-facto-administration-20260820.js'
+      - 'assets/site.js'
+      - 'es/administracion-de-hecho-comunidad-ac/index.html'
+      - 'en/de-facto-administration-community-ac/index.html'
+      - 'operations/AC_COMMUNITY_DE_FACTO_ADMINISTRATION_ACTIVATION_2026-08-20.md'
+      - 'publication-manifests/ac-community-de-facto-administration-2026-08-20.json'
+      - 'sitemap-ac-community-de-facto-administration.xml'
+      - 'robots.txt'
+      - 'scripts/validate_ac_community_de_facto_administration.py'
+      - 'scripts/render_ac_community_de_facto_administration.mjs'
+      - '.github/workflows/validate-ac-community-de-facto-administration.yml'
+  push:
+    branches:
+      - 'agent/ac-community-de-facto-administration-20260820'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-ac-community-de-facto-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Validate files, source boundaries and bilingual markers
+        run: python3 scripts/validate_ac_community_de_facto_administration.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/ac-community-de-facto-administration-20260820.js
+          node --check scripts/render_ac_community_de_facto_administration.mjs
+      - name: Start local site
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/site/por-derecho"
+          nohup python3 -m http.server 4173 --directory "$RUNNER_TEMP/site" >"$RUNNER_TEMP/ac-dfa-http.log" 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/por-derecho/es/administracion-de-hecho-comunidad-ac/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/ac-dfa-http.log" || true
+          exit 1
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$BROWSER_PATH"
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+      - name: Verify rendered bilingual pages and propagation
+        env:
+          PSR_BASE_URL: http://127.0.0.1:4173/por-derecho
+          PSR_AC_DFA_ARTIFACT_DIR: artifacts/ac-community-de-facto-local
+        run: node scripts/render_ac_community_de_facto_administration.mjs
+      - name: Show evidence
+        if: always()
+        run: |
+          cat artifacts/ac-community-de-facto-local/result.json || true
+          cat "$RUNNER_TEMP/ac-dfa-http.log" || true

@@ -1,0 +1,83 @@
+{
+  "publication_id": "AC-COMMUNITY-DE-FACTO-ADMINISTRATION-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-20",
+  "current_state": "REMOTE_SOURCE",
+  "subject": "Source-led reconstruction of Community/private management functions, AC reliance, Community debt and definitive-text compliance",
+  "expected_routes": {
+    "es": ["es/administracion-de-hecho-comunidad-ac/index.html"],
+    "en": ["en/de-facto-administration-community-ac/index.html"]
+  },
+  "expected_files": [
+    "archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_COMMUNITY_DEBT_TEXTOS_FORENSIC_CONTROL_20AUG2026.md",
+    "archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_RETRIEVAL_GATE_20AUG2026.md",
+    "archive/CORRECTION_REGISTER_DE_FACTO_ADMINISTRATION_ADDENDUM_20AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_DE_FACTO_ADMINISTRATION_ADDENDUM_20AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_DE_FACTO_ADMINISTRATION_ADDENDUM_20AUG2026.md",
+    "archive/THREAD_DELETION_AUDIT_AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_20AUG2026.md",
+    "assets/data/ac-private-actor-de-facto-administration-v1.json",
+    "assets/ac-community-de-facto-administration-20260820.js",
+    "operations/AC_COMMUNITY_DE_FACTO_ADMINISTRATION_ACTIVATION_2026-08-20.md",
+    "sitemap-ac-community-de-facto-administration.xml",
+    "scripts/validate_ac_community_de_facto_administration.py",
+    "scripts/render_ac_community_de_facto_administration.mjs",
+    ".github/workflows/validate-ac-community-de-facto-administration.yml",
+    ".github/workflows/verify-ac-community-de-facto-administration-live.yml"
+  ],
+  "verified_findings": [
+    "Private actors performed stable functions over Community debt, voting, access, security and maintenance.",
+    "The Insolvency Administrator requested security, attended meetings, authorised identified access/maintenance acts and relied on creditor-generated debt material.",
+    "The 2017 Community-credit change and 2018 holder substitution were formal and visible.",
+    "No post-liquidation incident is currently located that finally re-quantifies the Community claim or enlarges the EUR 9,052,251.69 privileged total.",
+    "Later Community figures were used in liquidation/better-bid conditions without being identified as definitive-text amendments.",
+    "Operator-side payments support a transaction-level duplicate-charge investigation."
+  ],
+  "not_established": [
+    "criminal collusion",
+    "conspiracy",
+    "full legal de facto-administrator status",
+    "documentary falsity",
+    "procedural fraud",
+    "judicial prevarication",
+    "global double charging",
+    "AC delegation of hotel operation"
+  ],
+  "privacy": {
+    "private_email_bodies_committed": false,
+    "message_ids_committed": false,
+    "raw_unredacted_evidence_committed": false,
+    "privileged_advice_committed": false,
+    "public_safe_functional_analysis_only": true
+  },
+  "evidence_gates": [
+    "certified complete court index and post-2016 modification acts",
+    "native Community authority/vote/accounting records",
+    "vendor invoice payer recharge crosswalk",
+    "native AC Community CAM/Pamalexsha communications",
+    "security locksmith key/code and access records",
+    "CAM Community payment trail",
+    "offer appraisal and interest workbooks",
+    "final accounts EUR 400000 deed notice and Registry chain"
+  ],
+  "validation": {
+    "json": "PENDING",
+    "javascript": "PENDING",
+    "bilingual_parity": "PENDING",
+    "publication_safety": "PENDING",
+    "rendered_routes": "PENDING",
+    "merge": "PENDING",
+    "public_edge": "PENDING"
+  },
+  "repository_state": {
+    "branch": "agent/ac-community-de-facto-administration-20260820",
+    "pr": null,
+    "merge_sha": null,
+    "merged_at": null
+  },
+  "live_verification": {
+    "status": "PENDING",
+    "workflow_run_id": null,
+    "verified_at": null,
+    "commit_status_context": "pages-propagation/ac-community-de-facto"
+  }
+}
