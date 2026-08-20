@@ -1,0 +1,111 @@
+name: Verify PEP and proceedings live publication
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'en/private-actors-pep-influence-aforamiento-related-persons/**'
+      - 'es/actores-privados-pep-influencia-aforamiento-personas-relacionadas/**'
+      - 'en/actors-parties-lawyers-representatives/**'
+      - 'es/actores-partes-abogados-representantes/**'
+      - 'en/pink-canary-aeat-496-2026/**'
+      - 'es/pink-canary-aeat-496-2026/**'
+      - 'en/cuatrecasas-icam-ccacm-2026/**'
+      - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/institutional-records/**'
+      - 'es/registros-institucionales/**'
+      - '.github/workflows/verify-pep-proceedings-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-pep-proceedings-live
+  cancel-in-progress: true
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify rendered production routes with cache busting and retry
+        run: |
+          mkdir -p artifacts/pep-proceedings-live
+          python - <<'PY'
+          import datetime as dt
+          import hashlib
+          import json
+          import time
+          import urllib.parse
+          import urllib.request
+
+          BASE = 'https://sbu001monterecco.github.io/por-derecho/'
+          CHECKS = [
+              ('proceedings_en', 'en/institutional-records/', ['Fourteen stable records', 'Q26/574', 'REGAGE26e00073341191']),
+              ('proceedings_es', 'es/registros-institucionales/', ['Catorce registros estables', 'Q26/574', 'REGAGE26e00073341191']),
+              ('pink496_en', 'en/pink-canary-aeat-496-2026/', ['PO 0000496/2026', 'Auto 00426/2026', 'does not resolve the legality']),
+              ('pink496_es', 'es/pink-canary-aeat-496-2026/', ['PO 0000496/2026', 'Auto 00426/2026', 'No decide la legalidad']),
+              ('cuatrecasas_en', 'en/cuatrecasas-icam-ccacm-2026/', ['Proceeding boundary', '434/26', 'CCACM 193/2026']),
+              ('cuatrecasas_es', 'es/cuatrecasas-icam-ccacm-2026/', ['Límite entre procedimientos', '434/26', 'CCACM 193/2026']),
+              ('pep_en', 'en/private-actors-pep-influence-aforamiento-related-persons/', ['Are any material private actors PEPs', 'José Daniel Acosta Matos', 'Article 231']),
+              ('pep_es', 'es/actores-privados-pep-influencia-aforamiento-personas-relacionadas/', ['¿Algún actor privado material es PEP', 'Laura Patricia Acosta Matos', 'artículo 231']),
+              ('actors_en', 'en/actors-parties-lawyers-representatives/', ['private-actors-pep-influence-aforamiento-related-persons', 'Francisco Mario Matos Matas']),
+              ('actors_es', 'es/actores-partes-abogados-representantes/', ['actores-privados-pep-influencia-aforamiento-personas-relacionadas', 'Francisco Mario Matos Matas']),
+          ]
+          def now():
+              return dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00','Z')
+          final = []
+          ok = False
+          for attempt in range(1, 21):
+              rows = []
+              all_ok = True
+              nonce = f'{int(time.time())}-{attempt}'
+              for kind, path, markers in CHECKS:
+                  url = urllib.parse.urljoin(BASE, path)
+                  req = urllib.request.Request(url + '?psr_verify=' + nonce, headers={
+                      'User-Agent': 'Por-Derecho-PEP-Proceedings-Live-Verify/1.0',
+                      'Cache-Control': 'no-cache, no-store, max-age=0',
+                      'Pragma': 'no-cache',
+                  })
+                  row = {'kind': kind, 'path': path, 'url': url, 'checked_at': now(), 'required_markers': markers}
+                  try:
+                      with urllib.request.urlopen(req, timeout=25) as response:
+                          body = response.read()
+                          text = body.decode('utf-8', errors='replace')
+                          missing = [m for m in markers if m not in text]
+                          row.update({'status': response.status, 'bytes': len(body), 'sha256': hashlib.sha256(body).hexdigest(), 'missing_markers': missing})
+                          row['ok'] = response.status == 200 and len(body) > 700 and not missing
+                  except Exception as exc:
+                      row.update({'ok': False, 'error': f'{type(exc).__name__}: {exc}'})
+                  all_ok = all_ok and row['ok']
+                  rows.append(row)
+              final = rows
+              print(', '.join(f"{r['kind']}={'OK' if r['ok'] else 'FAIL'}" for r in rows), flush=True)
+              if all_ok:
+                  ok = True
+                  payload = {'ok': True, 'base_url': BASE, 'verified_at': now(), 'attempt': attempt, 'checks': rows}
+                  with open('artifacts/pep-proceedings-live/latest.json','w',encoding='utf-8') as f:
+                      json.dump(payload,f,ensure_ascii=False,indent=2)
+                  print('PEP / PROCEEDINGS LIVE VERIFICATION: PASS')
+                  break
+              if attempt < 20:
+                  time.sleep(15)
+          if not ok:
+              payload = {'ok': False, 'base_url': BASE, 'failed_at': now(), 'attempts': 20, 'checks': final}
+              with open('artifacts/pep-proceedings-live/latest.json','w',encoding='utf-8') as f:
+                  json.dump(payload,f,ensure_ascii=False,indent=2)
+              raise SystemExit('PEP / PROCEEDINGS LIVE VERIFICATION: FAIL')
+          PY
+      - name: Upload route-level verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: pep-proceedings-live-evidence
+          path: artifacts/pep-proceedings-live/latest.json
+          if-no-files-found: error
+          retention-days: 30
