@@ -11,11 +11,15 @@ on:
       - 'sitemap-ac-community-de-facto-administration.xml'
       - 'robots.txt'
       - 'scripts/render_ac_community_de_facto_administration.mjs'
+      - 'operations/AC_COMMUNITY_DE_FACTO_ADMINISTRATION_ACTIVATION_2026-08-20.md'
+      - 'publication-manifests/ac-community-de-facto-administration-2026-08-20.json'
+      - 'archive/THREAD_DELETION_AUDIT_AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_20AUG2026.md'
       - '.github/workflows/verify-ac-community-de-facto-administration-live.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
+  statuses: write
 
 concurrency:
   group: verify-ac-community-de-facto-live
@@ -55,15 +59,15 @@ jobs:
             checks, details = {}, {}
             for name,(url,markers) in targets.items():
               try:
-                req=urllib.request.Request(url,headers={'User-Agent':'Por-Derecho-live-verifier/1.0','Cache-Control':'no-cache'})
+                req=urllib.request.Request(url,headers={'User-Agent':'Por-Derecho-live-verifier/2.0','Cache-Control':'no-cache','Pragma':'no-cache'})
                 with urllib.request.urlopen(req,timeout=25) as response:
                   body=response.read().decode('utf-8','replace')
                   checks[f'{name}_http']=response.status==200
                   checks[f'{name}_markers']=all(marker in body for marker in markers)
-                  details[name]={'status':response.status,'markers':{m:m in body for m in markers}}
+                  details[name]={'status':response.status,'bytes':len(body.encode('utf-8')),'markers':{m:m in body for m in markers}}
               except Exception as exc:
                 checks[f'{name}_http']=False; checks[f'{name}_markers']=False; details[name]={'error':repr(exc)}
-            last={'attempt':attempt,'checks':checks,'details':details}
+            last={'attempt':attempt,'source_sha':os.environ['SOURCE_SHA'],'run_id':os.environ['RUN_ID'],'checks':checks,'details':details}
             print(json.dumps(last,ensure_ascii=False,indent=2))
             if all(checks.values()):
               with open('/tmp/ac-dfa-source.json','w') as f: json.dump({'status':'SOURCE_LIVE_VERIFIED',**last},f,indent=2)
@@ -90,6 +94,42 @@ jobs:
         run: |
           cat /tmp/ac-dfa-source.json || true
           cat artifacts/ac-community-de-facto-live/result.json || true
+      - name: Publish durable public-edge status
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_OUTCOME: ${{ steps.source.outcome }}
+          DOM_OUTCOME: ${{ steps.dom.outcome }}
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          success = os.environ['SOURCE_OUTCOME'] == 'success' and os.environ['DOM_OUTCOME'] == 'success'
+          repository = os.environ['GITHUB_REPOSITORY']
+          sha = os.environ['SOURCE_SHA']
+          run_id = os.environ['RUN_ID']
+          payload = {
+            'state': 'success' if success else 'failure',
+            'target_url': f'https://github.com/{repository}/actions/runs/{run_id}',
+            'description': 'AC–Community bilingual routes verified live' if success else 'AC–Community public-edge verification failed',
+            'context': 'pages-propagation/ac-community-de-facto-administration'
+          }
+          request = urllib.request.Request(
+            f'https://api.github.com/repos/{repository}/statuses/{sha}',
+            data=json.dumps(payload).encode('utf-8'),
+            method='POST',
+            headers={
+              'Accept':'application/vnd.github+json',
+              'Authorization':f"Bearer {os.environ['GH_TOKEN']}",
+              'Content-Type':'application/json',
+              'X-GitHub-Api-Version':'2022-11-28',
+              'User-Agent':'Por-Derecho-live-verifier/2.0'
+            }
+          )
+          with urllib.request.urlopen(request,timeout=30) as response:
+            print(response.read().decode('utf-8','replace'))
+          PY
       - name: Fail when verification failed
         if: steps.source.outcome != 'success' || steps.dom.outcome != 'success'
         run: exit 1
