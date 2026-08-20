@@ -161,15 +161,17 @@ The correction email contains:
 - clean branch name;
 - instruction that the earlier draft branch must not be merged.
 
-## 9. Superseded draft branch
+## 9. Superseded draft branch — neutralised
 
 Earlier continuation draft branch:
 
 `continuity/patricia-factual-statement-20aug2026`
 
-was based on an earlier main snapshot and contains superseded source-date/architecture treatment. It is **not** the merge candidate and should not be used for publication or deletion continuity.
+was based on an earlier main snapshot and had superseded source-date/architecture treatment. To prevent accidental use or merge, its branch ref was **force-reset to the later current-main snapshot `1f03aa38c0e1da97228e9ec9ceebcc7ae55baa66`** after the clean Declaration 004 branch had been created.
 
-The clean Declaration 004 branch named above controls.
+It is therefore no longer the holder of the proposed preservation work and is not a merge candidate. Historical commit objects may remain available under ordinary Git history/retention mechanics, but the active branch tip no longer exposes the superseded draft as branch content.
+
+The clean Declaration 004 branch controls.
 
 ## 10. Immediate next actions
 
