@@ -20,7 +20,9 @@
     '/es/convergencia-venta-acreedor/',
     '/en/sale-lender-convergence/',
     '/es/sala-control-caso/',
-    '/en/case-control-room/'
+    '/en/case-control-room/',
+    '/es/correcciones-control-versiones/',
+    '/en/corrections-version-control/'
   ];
   const routeMatch = exactRoutes.some(route => path.includes(route));
   const thematicMatch = [
@@ -36,6 +38,8 @@
   ].some(fragment => path.includes(fragment));
   const dedicated = path.includes('/es/desistimiento-pp1041-autoridad-autenticidad-beneficio/') ||
     path.includes('/en/pp1041-withdrawal-authority-authenticity-benefit/');
+  const correctionRegister = path.includes('/es/correcciones-control-versiones/') ||
+    path.includes('/en/corrections-version-control/');
   if (!routeMatch && !thematicMatch && !dedicated) return;
 
   const replacementsEs = [
@@ -87,12 +91,37 @@
     #pp1041-authority-correction .pp1041-proof{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:.85rem .95rem;margin:.8rem 0}
     #pp1041-authority-correction .pp1041-boundary{font-size:.9rem;color:#ffe8e8}
     #pp1041-authority-correction a{display:inline-block;margin-top:.55rem;background:#fff;color:#641010;text-decoration:none;font-weight:900;border-radius:999px;padding:.62rem .92rem}
+    .pp1041-register-row td{background:#fff0f0!important;border-color:#a32121!important}
+    .pp1041-register-row strong{color:#741010}
   `;
   document.head.appendChild(style);
+
+  const injectRegisterRow = main => {
+    if (!correctionRegister || document.querySelector('.pp1041-register-row')) return;
+    const body = main.querySelector('.matrix tbody');
+    if (!body) return;
+    const row = document.createElement('tr');
+    row.className = 'pp1041-register-row';
+    if (isEs) {
+      row.innerHTML = `
+        <td><strong>“LPB desistió de PP 1041 y decidió abandonar la vía.”</strong></td>
+        <td><strong>No está acreditado que LPB desistiera voluntariamente.</strong> Está acreditado que se presentó un desistimiento en nombre de LPB; CAM no se opuso; el Juzgado cerró; el Decreto identificó al Administrador concursal como abogado de LPB. Por Derecho alega atribución falsa, falta de autorización, perjuicio deliberado y agencia funcional de facto para CAM/Acosta Matos.</td>
+        <td>El Decreto prueba una presentación atribuida a LPB, no una voluntad auténtica. El art. 51.2 LC exigía autorización del juez del concurso para desistir bajo suspensión; no se ha localizado todavía esa autorización.</td>
+        <td><a href="/por-derecho/es/desistimiento-pp1041-autoridad-autenticidad-beneficio/"><strong>Expediente PP 1041 en rojo</strong></a></td>`;
+    } else {
+      row.innerHTML = `
+        <td><strong>“LPB withdrew from PP 1041 and decided to abandon the route.”</strong></td>
+        <td><strong>It is not established that LPB voluntarily withdrew.</strong> It is established that a withdrawal was filed in LPB's name; CAM did not oppose; the Court closed the route; the decree identified the Insolvency Administrator as LPB's lawyer. Por Derecho alleges false attribution, lack of authority, deliberate estate harm and de facto functional agency for CAM/Acosta Matos.</td>
+        <td>The decree proves a filing attributed to LPB, not an authentic intention. Article 51.2 required insolvency-judge authorisation to withdraw under suspension; no such authorisation has yet been located.</td>
+        <td><a href="/por-derecho/en/pp1041-withdrawal-authority-authenticity-benefit/"><strong>PP 1041 red record</strong></a></td>`;
+    }
+    body.prepend(row);
+  };
 
   const inject = () => {
     const main = document.querySelector('main') || document.body;
     replaceTextNodes(main);
+    injectRegisterRow(main);
     if (dedicated || document.getElementById('pp1041-authority-correction')) return;
 
     const section = document.createElement('section');
