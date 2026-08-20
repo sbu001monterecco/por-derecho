@@ -12,7 +12,9 @@
     "originalPdfSha256": "f82c41bb6b0985105f31c35d6af09261d5b0820ee0a4049c9510f2ff3e7c5551",
     "searchableDerivativeSha256": "8bb17c95a0e3f554c72af4507eea83ee6249a49c6681f5d6f480b29995e8e360",
     "ocrMethod": "forced page-by-page OCR over rendered source; raw OCR retained as derivative",
-    "authorityRule": "The scanned Mercantile Registry filing controls over OCR/transcription if they differ."
+    "authorityRule": "The scanned Mercantile Registry filing controls over OCR/transcription if they differ.",
+    "fullOcrTextSha256": "5aa62fa15ac5cc842cf81056f1eb33640f8db41c2132df361d58088e10abb007",
+    "binaryPublicationStatus": "Source PDF and searchable-PDF derivative preserved in source custody; this public release exposes full page-separated OCR and integrity hashes."
   },
   "verifiedKeyPages": {
     "9": {
@@ -80,11 +82,17 @@
     }
   },
   "ocrChunks": [
-    {"file":"assets/data/montelanza-2008/ocr-pages-01-06.txt","pages":[1,6],"sha256":"9a6d16b074c9e18cf8d3120a64d992a6c3ab0874d840f263e31cfa6bc6f5b59a","bytes":14808},
-    {"file":"assets/data/montelanza-2008/ocr-pages-07-12.txt","pages":[7,12],"sha256":"43d7c66a1f10020b2f90a09f1edee6553e64bd1461620aeb35b364151e45490f","bytes":20533},
-    {"file":"assets/data/montelanza-2008/ocr-pages-13-18.txt","pages":[13,18],"sha256":"eb6d18f8da7e12739a05844bfcc8b468c4c7fbcd7f8b96d5a5260f505de0440b","bytes":18095},
-    {"file":"assets/data/montelanza-2008/ocr-pages-19-24.txt","pages":[19,24],"sha256":"b1b9b986412247e9c882361670590af11f6f602ff3b9cdeb9b425f9c141d2a40","bytes":14264},
-    {"file":"assets/data/montelanza-2008/ocr-pages-25-30.txt","pages":[25,30],"sha256":"4be6545f0af3ccad710f2466821f8bb794cfe1e24fd5765ebe83b5d82f6ae4a0","bytes":19967},
-    {"file":"assets/data/montelanza-2008/ocr-pages-31-38.txt","pages":[31,38],"sha256":"a7f101e6f402f40898822cb326cac80e649aeda615eecaf01d994881cf1fd046","bytes":41037}
+    {"file":"assets/data/montelanza-2008/ocr-pages-01-06.txt","pages":[1,6],"sha256":"9a6d16b074c9e18cf8d3120a64d992a6c3ab0874d840f263e31cfa6bc6f5b59a","bytes":14836},
+    {"file":"assets/data/montelanza-2008/ocr-pages-07-09.txt","pages":[7,9],"sha256":"832c94894e9cf7f232c61a6f47fefe84f4ae5c614a0a3b64dad37aff6fc4dc8c","bytes":11088},
+    {"file":"assets/data/montelanza-2008/ocr-pages-10-12.txt","pages":[10,12],"sha256":"8d8fbb1d63b21d2d83887343e4e31138b9e4543d5393f761693ae0c557eb7c1b","bytes":9515},
+    {"file":"assets/data/montelanza-2008/ocr-pages-13-15.txt","pages":[13,15],"sha256":"22c6c87bdb5c72b01c2f7086503910fb96b65d1fe6dbb0e638c3780320ba0388","bytes":8808},
+    {"file":"assets/data/montelanza-2008/ocr-pages-16-18.txt","pages":[16,18],"sha256":"1a30d6a407d304f250d6bc7d78fbfb8f674ce74e2c3961958b8bbf5b8989ca39","bytes":9356},
+    {"file":"assets/data/montelanza-2008/ocr-pages-19-21.txt","pages":[19,21],"sha256":"caf9166d12d8069599e726d324a2d36aa3a35e07571de021c4ca6df0d6f8439b","bytes":7067},
+    {"file":"assets/data/montelanza-2008/ocr-pages-22-24.txt","pages":[22,24],"sha256":"cddca338a5b5f1c3df4a06013b87ee89b18d002e487d37d9eacfab6ad85d5777","bytes":7234},
+    {"file":"assets/data/montelanza-2008/ocr-pages-25-27.txt","pages":[25,27],"sha256":"b5d2fd9b96844e3a9330acbac40ec182dc6335319bc9a6a45ee46bc2e637dd44","bytes":7813},
+    {"file":"assets/data/montelanza-2008/ocr-pages-28-30.txt","pages":[28,30],"sha256":"7aff00f21391621fd70465788f693a8aa448e3a184d3e854014c647fcb8031e6","bytes":12201},
+    {"file":"assets/data/montelanza-2008/ocr-pages-31-33.txt","pages":[31,33],"sha256":"7ea2e7833ae12402f29c37777beb07f6d1c2129c4e7d77ac2ca384cabc666974","bytes":10672},
+    {"file":"assets/data/montelanza-2008/ocr-pages-34-36.txt","pages":[34,36],"sha256":"9d29e564afd073a83c1566883abd899d4eac65788ce0bd6e35c3a175a93b9c75","bytes":15930},
+    {"file":"assets/data/montelanza-2008/ocr-pages-37-38.txt","pages":[37,38],"sha256":"248d4e71dd604b26b5a3c6e029883d9496df76f895ed1d95046a458d8bb030b9","bytes":14530}
   ]
 }
