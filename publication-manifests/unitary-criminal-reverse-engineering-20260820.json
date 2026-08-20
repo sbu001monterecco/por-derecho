@@ -1,9 +1,10 @@
 {
   "publication_id": "UNITARY-CRIMINAL-REVERSE-ENGINEERING-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "MERGED_AWAITING_LIVE_VERIFICATION",
+  "current_state": "MERGED",
   "control_date": "2026-08-20",
   "control_marker": "unitary-criminal-reverse-engineering-20260820",
+  "merge_sha": "baee14c7532055736fcaa8e79c6e299edc370a9b",
   "source_merge": {
     "pull_request": 592,
     "merge_commit": "baee14c7532055736fcaa8e79c6e299edc370a9b",
@@ -26,14 +27,14 @@
   "validation": {
     "status": "CI_GREEN",
     "validated_head": "83dbf34e68c1f66e87d9c9de9fdd5456343ac8c1",
-    "checks": [
-      "Validate unitary criminal reverse engineering",
-      "Publication integrity gate",
-      "Validate criminal-engineering and case information architecture",
-      "Validate unitary public shell",
-      "Public bidder anonymisation gate",
-      "Production smoke monitor",
-      "Off-GitHub Preservation Snapshot"
+    "evidence": [
+      "PR #592: Validate unitary criminal reverse engineering — success",
+      "PR #592: Publication integrity gate — success",
+      "PR #592: Validate criminal-engineering and case information architecture — success",
+      "PR #592: Validate unitary public shell — success",
+      "PR #592: Public bidder anonymisation gate — success",
+      "PR #592: Production smoke monitor — success",
+      "PR #592: Off-GitHub Preservation Snapshot — success"
     ]
   },
   "live_verification": {
