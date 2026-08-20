@@ -1,0 +1,69 @@
+{
+  "control_date": "2026-08-21",
+  "governing_rule": "PRESERVE FIRST. TRACE THE VALUE. DECIDE THE MERITS AFTER.",
+  "unitary_question": "What asset, income stream, right, account, record or metadata is preserved now, by which competent authority, under which statutory power, against which threshold, and from what date?",
+  "tracing_chain": [
+    "original_asset_or_right",
+    "possession_or_control",
+    "transfer_or_transformation",
+    "corporate_layer",
+    "financing",
+    "works_or_capex",
+    "hotel_operation",
+    "revenue_or_fruits",
+    "refinancing",
+    "distribution_or_substitute_value",
+    "current_holder_or_beneficiary"
+  ],
+  "authorities": [
+    {
+      "authority": "criminal_judge",
+      "mechanism": "judicial_intervention_legal_person",
+      "primary_law": ["Codigo Penal 33.7(g)"],
+      "core_power": "Intervention of the whole legal person or defined installations, sections or business units; precautionary intervention may be ordered by the investigating judge during the investigation.",
+      "case_gate": "Entity-specific criminal attribution, procedural posture, statutory purpose and proportionality."
+    },
+    {
+      "authority": "criminal_judge",
+      "mechanism": "early_seizure_attachment_for_confiscation",
+      "primary_law": ["Codigo Penal 127 octies", "Codigo Penal 127 septies"],
+      "core_power": "Seizure or attachment and deposit from the first investigative steps to preserve confiscation effectiveness; equivalent-value confiscation is separately contemplated.",
+      "case_gate": "Trace alleged predicate conduct to identifiable property/value; do not infer criminal provenance from chronology alone."
+    },
+    {
+      "authority": "CNMV",
+      "mechanism": "intervention_and_substitution",
+      "primary_law": ["Ley 22/2014 art. 102", "Ley 35/2003 arts. 72-75"],
+      "covered_categories": ["SCR", "SICC", "SGEIC", "depositaries"],
+      "core_power": "Intervention/provisional substitution under statutory exceptional-gravity conditions, including appointed interveners/administrators and access to offices, books and documents.",
+      "case_gate": "First establish the exact regulated status of the RICPE vehicle, manager and depositary and then test the statutory threshold."
+    },
+    {
+      "authority": "ORGA",
+      "mechanism": "asset_recovery_and_management",
+      "primary_law": ["Real Decreto 948/2015"],
+      "core_power": "Locate, recover, conserve, administer and realise assets within the criminal-law remit when legally entrusted.",
+      "case_gate": "Separate tracing, judicial restraint, management and final confiscation."
+    },
+    {
+      "authority": "AEAT_and_public_funds_bodies",
+      "mechanism": "tax_and_public_funds_preservation_reconciliation",
+      "primary_law": [],
+      "core_power": "Distinct tax, subsidy, financial-control and anti-fraud competences must be mapped separately; the common task is end-to-end reconciliation of RIC, private financing, eligible costs, regional incentives and EU funds.",
+      "case_gate": "Do not collapse tax, Canary autonomous, state anti-fraud and EU competences."
+    }
+  ],
+  "recent_status": {
+    "fiscalia_anticorrupcion": "receipt_acknowledged_admission_pending_signature_cure_required",
+    "aeat_00001_00113069": "processing_commenced_20_august_2026_substantive_access_decision_not_yet_established",
+    "cgpj_general_information_email": "attempted_but_550_rejected_not_delivered",
+    "canary_government_transversal_reconciliation": "preservation_and_end_to_end_RIC_RICPE_HNT_regional_incentives_FEDER_request_sent_20_august_2026"
+  },
+  "publication_controls": [
+    "Later layering does not by itself prove illegality and does not by itself extinguish traceability.",
+    "Do not state that any downstream asset has already been adjudged criminal proceeds without the primary legal finding.",
+    "Do not state that the CNMV intervention threshold is met until exact regulated status and statutory facts are established.",
+    "Attempted transmission is not delivered transmission.",
+    "Receipt by a prosecutor is not admission of a complaint."
+  ]
+}
