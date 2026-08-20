@@ -3,7 +3,9 @@
 **Closeout date:** 20 August 2026  
 **Status:** `DELETION-SAFE WITH OPEN EVIDENCE`  
 **Substantive PR:** #578  
-**Substantive merge:** `aae5e20dd42fe228591f6e376b5adb4fe6ce7f10`
+**Substantive merge:** `aae5e20dd42fe228591f6e376b5adb4fe6ce7f10`  
+**Closeout PR:** #579  
+**Closeout merge:** `07cf3e7b189ff36129bf600dbb42ed6d47ea55f2`
 
 ## 1. Completion state
 
@@ -16,7 +18,7 @@ PR #578 merged the following four files into `main`:
 3. `archive/CAM_TRANSACTION_ACTOR_SEPARATION_ENFORCEMENT_AUDIT_20AUG2026.md`
 4. `archive/THREAD_DELETION_CONTINUITY_AUDIT_CAM_ACTOR_SEPARATION_RULE_ENFORCEMENT_20AUG2026.md`
 
-Post-merge read-back from `main` confirmed the mandatory gate and the deletion audit are present.
+PR #579 merged this final closeout into `main`. Post-merge read-back from `main` confirmed the mandatory gate, deletion audit and closeout are present.
 
 ## 2. Mandatory rule now controlling
 
@@ -90,10 +92,18 @@ The rule is canonical in its dedicated retrieval gate. A direct `CHATGPT_START_H
 
 Future CAM 2018–2022 transaction work should read the gate directly by path even if search indexing lags.
 
-## 9. Final deletion status
+## 9. Completion email record
+
+The deletion-continuity completion record was sent successfully from the connected Gmail account to the account itself after the repository closeout was merged and verified.
+
+- subject: `Por Derecho — CAM actor-separation rule enforcement deletion-safe closeout`
+- Gmail message ID: `1a01e730cb7b5968`
+- delivery state returned by Gmail: SENT and INBOX
+
+The email records PR #578 / merge `aae5e20dd42fe228591f6e376b5adb4fe6ce7f10`, PR #579 / merge `07cf3e7b189ff36129bf600dbb42ed6d47ea55f2`, the mandatory actor-separation rule, key source closures, the 28-Nov→12-Dec chronology correction and the remaining open-evidence queue.
+
+## 10. Final deletion status
 
 **DELETION-SAFE WITH OPEN EVIDENCE.**
 
 A fresh thread can resume from current `main`, the mandatory retrieval gate, the procedural-routing source addendum, the enforcement audit, this closeout and the connected Gmail/Drive primary-source systems without relying on the disappearing chat.
-
-No completion email was sent because the current user instruction did not explicitly request one.
