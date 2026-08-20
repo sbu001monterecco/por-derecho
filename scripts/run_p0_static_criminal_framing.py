@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the P0 static patch with two robustness fixes kept separate for auditability."""
+"""Run the P0 static patch with current-source robustness fixes kept separate for auditability."""
 
 from __future__ import annotations
 
@@ -11,6 +11,29 @@ SPEC = importlib.util.spec_from_file_location("p0patch", HERE / "apply_p0_static
 assert SPEC and SPEC.loader
 m = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(m)
+
+
+# The English Community page evolved editorially after the first deterministic
+# patch was drafted. Keep the patch strict, but map those known equivalent
+# source phrases rather than weakening matching globally.
+_original_replace_once = m.replace_once
+_EN_SOURCE_VARIANTS = {
+    "community EN criminal heading": '<div><p class="kicker">Gil Marer’s public characterisation · not a conviction</p><h2 id="criminal-theory-title">The allegation is criminal; proof must remain element-specific.</h2></div>',
+    "community EN criminal intro": '<p>The minutes are advanced as a unitary patrimonial theory of possible criminal-law significance, pending judicial determination. A disputed meeting, contested debt or adverse outcome is not automatically a crime.</p>',
+    "community EN disclaimer": '<strong>Notice:</strong> the minutes establish that statements and resolutions were recorded; they do not by themselves establish intrinsic truth, validity, execution, crime or intent. The criminal-law characterisations are Gil Marer’s express allegations pending determination. Every named person and entity retains the presumption of innocence and right of reply.',
+}
+
+
+def robust_replace_once(text: str, old: str, new: str, label: str) -> str:
+    if old in text:
+        return text.replace(old, new, 1)
+    variant = _EN_SOURCE_VARIANTS.get(label)
+    if variant and variant in text:
+        return text.replace(variant, new, 1)
+    return _original_replace_once(text, old, new, label)
+
+
+m.replace_once = robust_replace_once
 
 
 def robust_insert_before_after_marker(text: str, marker: str, target: str, insert: str, label: str) -> str:
