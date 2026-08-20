@@ -1,7 +1,9 @@
 {
   "publication_id": "playa-blanca-hotel-services-concept-20260820",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "owner": "Gil Marer / Project Sun Rock",
+  "pr_number": 610,
+  "pr_url": "https://github.com/sbu001monterecco/por-derecho/pull/610",
   "expected_routes": {
     "en": [
       "en/playa-blanca-hotel-services-concept/index.html"
