@@ -18,7 +18,6 @@
   document.head.appendChild(protectedAssets);
 })();
 
-
 /* SOURCE-OF-FUNDS-NOTICE-20260820 */
 (() => {
   const current = document.currentScript;
@@ -114,6 +113,8 @@
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
+playa-blanca-concept-home-20260820.js
+palacete-san-bernardo-historica-marco.webp
 san-telmo-attribution-correction-20260819.js?v=20260819a
 data-san-telmo-attribution-loader
 The executable loader chain for these modules remains in site-pre-intervencion-highlight-20260820.js.
