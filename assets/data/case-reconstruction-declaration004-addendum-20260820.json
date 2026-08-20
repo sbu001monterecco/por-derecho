@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-addendum",
+  "controlDate": "2026-08-20",
+  "baseGraph": "assets/data/case-reconstruction-v1.json",
+  "baseGraphControlDate": "2026-08-17",
+  "status": "ADDITIVE-CONTROL-PENDING-NEXT-CANONICAL-GRAPH-RELEASE",
+  "purpose": "Preserve the source-status and dependency treatment of Declaration 004 and the RICPE Series F/Series G idoneidad timing question without pretending that a source-derived witness declaration is primary proof of the underlying 2022 administrative or financing facts.",
+  "sourceClasses": [
+    {
+      "id": "SOURCE_DERIVED_DECLARATION",
+      "maySupport": ["KNOWLEDGE", "RECOLLECTION", "NOTICE", "CHRONOLOGY", "QUESTION_PROVENANCE", "RETRIEVAL_LEAD"],
+      "doesNotAutomaticallyProve": ["UNDERLYING_DOCUMENTARY_FACT", "LEGAL_EFFECT", "AUTHORISATION_SCOPE", "FUND_USE", "ACTOR_INTENT", "CRIMINAL_LIABILITY"]
+    }
+  ],
+  "entities": [
+    {
+      "id": "ENT-WITNESS-GIL-PERIMETER-PRIVATE",
+      "name": "Testigo del perímetro personal y empresarial de Gil Marer — identidad reservada",
+      "type": "private-witness",
+      "publication": "PUBLIC-DESCRIPTOR-ONLY",
+      "note": "Keep the legal identity in the private custody layer; do not confuse this witness with Laura Patricia Acosta Matos (LPAM)."
+    }
+  ],
+  "propositions": [
+    {
+      "id": "RICPE-IDON-2022-TIMING-001",
+      "kind": "financing-authorisation-timing-question",
+      "labelEs": "Qué autorización y qué uso económico conectaron la idoneidad de diciembre de 2022, la Serie F de 1.598.849,32 €, la reforma/apertura y la posterior Serie G de empleo",
+      "labelEn": "Which authorisation and economic use connected the December-2022 idoneidad, EUR 1,598,849.32 Series F, refurbishment/opening and the later employment Series G",
+      "status": "OPEN",
+      "publication": "PUBLIC-READY-WITH-QUALIFICATION",
+      "sourceStatus": "DOCUMENTARY-RECONCILIATION-OPEN; QUESTION-PROVENANCE-PRESERVED",
+      "criminalForensic": "NO-FRAUD-FINDING; timing tension requires source-and-use and authorisation reconciliation",
+      "strongestLawfulExplanations": [
+        "One competent file/final act covered both phases or instruments",
+        "Separate competent authorisations existed",
+        "The original approval was amended, enlarged, corrected or supplemented",
+        "Series F lawfully reimbursed eligible prior expenditure or discharged supplier/bridge obligations",
+        "Another lawful documentary basis explains the sequence"
+      ],
+      "whatWouldChangeOurMind": "Complete primary administrative, financing, banking and works records identifying the authorisation scope and source-and-use chain, whether they confirm, narrow or reject the present timing question.",
+      "primarySourcesRequired": [
+        "Complete idoneidad application and file index",
+        "17-Nov-2022 AEAT binding report and referral package",
+        "Complete Decree 224/2022/final act, annexes, conditions and amendments",
+        "Series F corporate approval, participatory-loan agreement and drawdowns",
+        "HNT/CAM/RICPE source-and-use accounting",
+        "Works invoices/certificates with accrual and payment dates",
+        "Any supplier/shareholder/bridge-financing records",
+        "Series G approval/legal coverage, drawdown and employment-use record"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVID-DECL-004-RICPE-IDON-20260818",
+      "date": "2026-08-18",
+      "registeredDate": "2026-08-20",
+      "type": "SOURCE_DERIVED_DECLARATION",
+      "description": "Declaration 004 recording the private witness's timing/documentary question concerning RICPE, MYND Yaiza, December-2022 idoneidad, approximately EUR 1.6m refurbishment-linked financing and the separate employment line",
+      "actor": "ENT-WITNESS-GIL-PERIMETER-PRIVATE",
+      "authentication": "REGISTERED-SOURCE-DERIVED; UNSIGNED; CLEAN WORDING NOT YET RATIFIED WORD-FOR-WORD",
+      "completeness": "CONTROLLED-SYNTHESIS; NATIVE 18-AUG VOICE LOCATOR/EXPORT/HASH STILL OPEN",
+      "publication": "PUBLIC-DESCRIPTOR-ONLY",
+      "sourceControl": "archive/declarations/004_WITNESS_GIL_PERIMETER_RICPE_IDONEIDAD_20260818.md",
+      "maySupport": ["QUESTION_PROVENANCE", "WITNESS_UNDERSTANDING", "RETRIEVAL_LEAD"],
+      "doesNotProve": ["DECREE_SCOPE", "AEAT_REPORT_CONTENT", "ABSENCE_OF_SECOND_AUTHORISATION", "SERIES_F_USE", "SERIES_G_USE", "FRAUD", "DOUBLE_FUNDING", "CRIMINAL_INTENT"]
+    }
+  ],
+  "dependencyEdges": [
+    {
+      "from": "EVID-DECL-004-RICPE-IDON-20260818",
+      "to": "RICPE-IDON-2022-TIMING-001",
+      "relation": "SUPPORTS_QUESTION_PROVENANCE",
+      "foundation": "NON-FOUNDATIONAL-FOR-UNDERLYING-2022-FACT"
+    }
+  ],
+  "website": {
+    "routes": [
+      "/es/ricpe-idoneidad-series-f-g/",
+      "/en/ricpe-idoneidad-series-f-g/",
+      "/es/ingenieria-inversa-360-cadena-sun-park/",
+      "/en/reverse-engineering-360-sun-park-chain/"
+    ],
+    "module": "assets/declaration004-source-provenance-20260820.js",
+    "marker": "data-declaration004-source-provenance=\"20260820\"",
+    "boundary": "The public note may state that the question was preserved in a source-derived witness record; it must not upgrade the witness record into proof of authorisation scope, fund use or wrongdoing."
+  },
+  "mergeRule": "At the next canonical case-graph release, merge these nodes into assets/data/case-reconstruction-v1.json or its successor while preserving source class and dependency direction."
+}
