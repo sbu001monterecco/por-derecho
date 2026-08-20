@@ -1,0 +1,48 @@
+name: Verify PP 1041 decisive production live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'en/pp1041-single-most-important-production/**'
+      - 'es/pp1041-produccion-documental-decisiva/**'
+      - 'assets/unitary-criminal-reverse-engineering-20260820.js'
+      - 'sitemap-criminal-engineering.xml'
+      - 'scripts/verify_pp1041_decisive_live.py'
+      - '.github/workflows/verify-pp1041-decisive-live.yml'
+      - 'publication-manifests/pp1041-decisive-production-20260820.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-pp1041-decisive-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Verify bilingual pages, gateway and sitemap on production
+        run: |
+          python scripts/verify_pp1041_decisive_live.py \
+            --attempts 5 \
+            --interval 20 \
+            --timeout 25 \
+            --output artifacts/pp1041-decisive-live/latest.json
+      - name: Upload canonical live-verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: pp1041-decisive-live-evidence
+          path: artifacts/pp1041-decisive-live/latest.json
+          if-no-files-found: error
+          retention-days: 90
