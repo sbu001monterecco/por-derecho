@@ -1,9 +1,10 @@
 # Playa Blanca hotel and local-services concept — publication control
 
 **Control date:** 20 August 2026  
-**Current repository state:** implemented on `main`; bilingual source merged; dedicated public-edge verifier installed  
+**Current publication state:** **LIVE VERIFIED**  
 **Controlling publication PR:** #610  
-**Live-verification infrastructure PR:** #618
+**Live-verification infrastructure PR:** #618  
+**Observable live read-back PR:** #622
 
 ## Purpose
 
@@ -47,11 +48,11 @@ The page does **not** represent this concept as:
 - No complaint, evidence, regulatory matter or non-disposable public-law duty is offered for withdrawal or exchange.
 - The page is not a public investment offer, data room, planning application or claim that site control has been secured.
 
-## Implemented routes
+## Live routes
 
-- English: `en/playa-blanca-hotel-services-concept/index.html`
-- Spanish: `es/playa-blanca-concepto-hotel-servicios/index.html`
-- Bilingual homepages receive a source-controlled Future-section feature through `assets/playa-blanca-concept-home-20260820.js`.
+- English: `https://sbu001monterecco.github.io/por-derecho/en/playa-blanca-hotel-services-concept/`
+- Spanish: `https://sbu001monterecco.github.io/por-derecho/es/playa-blanca-concepto-hotel-servicios/`
+- Bilingual homepages receive a source-controlled Future/Futuro feature through `assets/playa-blanca-concept-home-20260820.js` loaded by `assets/site.js`.
 
 ## Implemented visual assets
 
@@ -69,33 +70,32 @@ PR #610 merged the bilingual concept and Future/Futuro homepage feature to `main
 
 `11e1c69c4cf4bef4e89f64aef7d8d4162fe689e7`
 
-The final PR head had passed the repository publication-integrity, visual-asset identity, unitary public-shell, adjudication-provenance, criminal-engineering/case-information, AC Community, public-bidder anonymisation, San Telmo attribution and off-GitHub preservation checks before merge.
+The final PR head passed the repository publication-integrity, visual-asset identity, unitary public-shell, adjudication-provenance, criminal-engineering/case-information, AC Community, public-bidder anonymisation, San Telmo attribution and off-GitHub preservation checks before merge.
 
-PR #618 subsequently added:
+PR #618 subsequently added the dedicated Pages-verification infrastructure and publication-manifest controls.
 
-- `deployment-probes/playa-blanca-hotel-concept-20260820.json`;
-- `.github/workflows/verify-playa-blanca-hotel-concept-live.yml`;
-- publication-manifest controls for the bilingual public edge.
+PR #622 added an observable, read-only public read-back path and was merged as:
 
-PR #618 merged to `main` as:
+`21efd99be91080ca472d674cb265ffda433d188f`
 
-`976e29d06aa295213680964f318e805ff80cedb0`
+## Live verification evidence
 
-## Public-edge verification rule
+The controlling publication manifest is now `LIVE_VERIFIED`.
 
-Repository merge is not, by itself, proof of public Pages propagation.
+The corrected observable read-back checked the public GitHub Pages host directly and confirmed, with HTTP 200 and no missing markers:
 
-The dedicated verifier checks the following public markers independently of this control note:
-
-1. English concept route.
-2. Spanish concept route.
-3. Homepage feature asset and bilingual routes.
-4. Shared site loader.
+1. English concept page.
+2. Spanish concept page.
+3. Bilingual homepage Future/Futuro feature asset.
+4. Shared `assets/site.js` loader.
 5. Concept stylesheet.
-6. Principal destination-poster asset.
-7. Deployment probe tied to the controlling source merge.
+6. Principal Art Deco destination-poster asset.
 
-Until the dedicated verifier's result is independently observed, the publication manifest remains the controlling status record and must not be advanced to `LIVE_VERIFIED` merely because the source is present on `main`.
+A successful PR #622 run also independently repeated the six checks on its first attempt and recorded:
+
+`PLAYA BLANCA CONCEPT: LIVE PUBLIC READ-BACK VERIFIED`
+
+The live-verification evidence includes response hashes, byte sizes, cache metadata, required markers and timestamps. The publication manifest remains the canonical machine-readable status record.
 
 ## Current disclosure boundary
 
@@ -114,4 +114,4 @@ Do not add publicly without a new disclosure review:
 
 ## Current conclusion
 
-**The Playa Blanca hotel and local-services concept is implemented in the repository and integrated into the bilingual Future / Futuro website architecture.** The exact transaction remains private. Public live status must continue to be earned through the dedicated Pages-propagation verification path rather than inferred from Git merge alone.
+**The Playa Blanca hotel and local-services concept is implemented, merged, publicly propagated and live-verified in both languages.** The homepage Future/Futuro integration assets are live, the exact transaction remains private, and the public page continues to preserve the planning, operator, financing, owner-consent and public-authority boundaries stated above.
