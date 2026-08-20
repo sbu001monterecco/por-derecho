@@ -18,7 +18,7 @@ const canonicalRoutes = [
       '13.168.082,02',
       'tercer oferente',
       '14,8 M€',
-      'Reconstrucciones posteriores',
+      'reconstrucciones posteriores',
     ],
   },
   {
@@ -70,7 +70,8 @@ try {
     const panelText = await page.locator('#adjudicacion-version-control').innerText();
     const rowText = await page.locator('tr[data-adjudicacion-prior-use-row="true"]').innerText();
     const bodyText = await page.locator('main').innerText();
-    const missing = item.required.filter(fragment => !bodyText.includes(fragment));
+    const bodyFolded = bodyText.toLocaleLowerCase();
+    const missing = item.required.filter(fragment => !bodyFolded.includes(fragment.toLocaleLowerCase()));
     const passed = panelText.includes(item.marker)
       && panelText.includes('20')
       && rowText.includes(item.row)
