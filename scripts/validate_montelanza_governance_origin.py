@@ -33,7 +33,6 @@ def read(rel: str) -> str:
     return (ROOT / rel).read_text(encoding="utf-8")
 
 
-# Machine-readable controls.
 for rel in [
     "assets/data/montelanza-2008/manifest.json",
     "assets/data/montelanza-2008/governance-origin-v1.json",
@@ -41,19 +40,18 @@ for rel in [
 ]:
     try:
         json.loads(read(rel))
-    except Exception as exc:  # pragma: no cover - defensive CI output
+    except Exception as exc:
         errors.append(f"invalid JSON {rel}: {exc}")
 
 try:
     governance = json.loads(read("assets/data/montelanza-2008/governance-origin-v1.json"))
     boundary = governance.get("sourceBoundary", {})
-    required_false = [
+    for key in [
         "purchaserIdentityProvedByAccounts",
         "communitySuccessionProvedByAccounts",
         "criminalCaptureProved",
         "historicalRicEqualsLaterRicpe",
-    ]
-    for key in required_false:
+    ]:
         if boundary.get(key) is not False:
             errors.append(f"governance source boundary must keep {key}=false")
     if boundary.get("scanControlsOverOcr") is not True:
@@ -61,7 +59,6 @@ try:
 except Exception:
     pass
 
-# Complete OCR corpus: every page 1-38 exactly once; no placeholders.
 chunks = [
     "01-06", "07-09", "10-12", "13-15", "16-18", "19-21",
     "22-24", "25-27", "28-30", "31-33", "34-36", "37-38",
@@ -86,7 +83,6 @@ pages = [int(value) for value in re.findall(r"===== SOURCE PDF PAGE (\d+) / 38 =
 if pages != list(range(1, 39)):
     errors.append(f"OCR page markers must be exactly 1..38 in order; got {pages}")
 
-# Source-page and bilingual publication markers.
 checks: dict[str, list[str]] = {
     "es/montelanza-cuentas-2008/index.html": [
         'data-montelanza-page="20260821"',
@@ -96,7 +92,7 @@ checks: dict[str, list[str]] = {
         "2008 → 2011",
         "No prueban",
         "ocr-pages-37-38.txt",
-        "/es/actores-privados-per-comunero-administracion-de-hecho/",
+        "../actores-privados-per-comunero-administracion-de-hecho/",
     ],
     "en/montelanza-accounts-2008/index.html": [
         'data-montelanza-page="20260821"',
@@ -106,10 +102,10 @@ checks: dict[str, list[str]] = {
         "2008 → 2011",
         "do not prove",
         "ocr-pages-37-38.txt",
-        "/en/private-actors-related-party-community-de-facto-administration/",
+        "../private-actors-related-party-community-de-facto-administration/",
     ],
     "assets/montelanza-governance-origin-20260821.js": [
-        "data-montelanza-governance-origin",
+        "montelanzaGovernanceOrigin",
         "/es/montelanza-cuentas-2008/",
         "/en/montelanza-accounts-2008/",
         "do not prove criminal capture",
@@ -135,7 +131,6 @@ for rel, markers in checks.items():
         if marker not in body:
             errors.append(f"{rel} missing marker: {marker}")
 
-# Bilingual route/canonical symmetry.
 es = read("es/montelanza-cuentas-2008/index.html") if (ROOT / "es/montelanza-cuentas-2008/index.html").exists() else ""
 en = read("en/montelanza-accounts-2008/index.html") if (ROOT / "en/montelanza-accounts-2008/index.html").exists() else ""
 if 'hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/montelanza-accounts-2008/"' not in es:
@@ -143,17 +138,15 @@ if 'hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/montel
 if 'hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/montelanza-cuentas-2008/"' not in en:
     errors.append("English page missing Spanish hreflang")
 
-# Public-overstatement guard.
-public_paths = [
+for rel in [
     "es/montelanza-cuentas-2008/index.html",
     "en/montelanza-accounts-2008/index.html",
     "assets/montelanza-governance-origin-20260821.js",
-]
-for rel in public_paths:
+]:
     if not (ROOT / rel).exists():
         continue
     lower = read(rel).lower()
-    forbidden = [
+    for phrase in [
         "criminal capture is proved",
         "proved criminal capture",
         "captura criminal probada",
@@ -162,19 +155,16 @@ for rel in public_paths:
         "todos los actos comunitarios fueron criminales",
         "historic ric proves",
         "el ric histórico prueba",
-    ]
-    for phrase in forbidden:
+    ]:
         if phrase in lower:
             errors.append(f"forbidden public overstatement in {rel}: {phrase}")
 
-# Explicit source boundaries in canonical control.
-control = read("archive/MONTELANZA_2008_GOVERNANCE_ORIGIN_CRIMINAL_FORENSIC_CONTROL_21AUG2026.md") if (ROOT / required[0]).exists() else ""
+control = read(required[0]) if (ROOT / required[0]).exists() else ""
 for marker in [
-    "They do not prove",
     "The 2008 filing does **not** by itself prove",
     "CRIMINAL-FORENSIC HYPOTHESIS — NOT PROVED",
     "Strongest lawful explanation",
-    "HISTORIC RIC/DIC",
+    "MONTELANZA HISTORIC RIC/DIC",
 ]:
     if marker not in control:
         errors.append(f"canonical control missing source-boundary marker: {marker}")
