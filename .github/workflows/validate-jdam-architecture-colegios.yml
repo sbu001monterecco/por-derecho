@@ -1,0 +1,57 @@
+name: Validate JDAM architecture and Colleges record
+
+on:
+  pull_request:
+    paths:
+      - "es/arquitectura-nodo-documental-jdam/**"
+      - "en/architecture-documentary-node-jdam/**"
+      - "assets/jdam-*"
+      - "assets/data/jdam-architecture-documentary-node-v1.json"
+      - "assets/site.js"
+      - "sitemap-jdam-architecture.xml"
+      - "robots.txt"
+      - "es/actualizaciones/feed.xml"
+      - "en/updates/feed.xml"
+      - "JDAM_ARCHITECTURE_DOCUMENTARY_NODE_MASTER_RECORD_20AUG2026.md"
+      - "INSTITUTIONAL_ACTIONS_ARCHITECTS_COALZ_COAGC_20AUG2026.md"
+      - "archive/intelligence/JDAM_ARCHITECTURE_COLEGIOS_SEND_CLOSEOUT_20260820.md"
+      - "scripts/validate_jdam_architecture_colegios.py"
+      - ".github/workflows/validate-jdam-architecture-colegios.yml"
+  push:
+    branches: [main]
+    paths:
+      - "es/arquitectura-nodo-documental-jdam/**"
+      - "en/architecture-documentary-node-jdam/**"
+      - "assets/jdam-*"
+      - "assets/data/jdam-architecture-documentary-node-v1.json"
+      - "assets/site.js"
+      - "sitemap-jdam-architecture.xml"
+      - "robots.txt"
+      - "es/actualizaciones/feed.xml"
+      - "en/updates/feed.xml"
+      - "JDAM_ARCHITECTURE_DOCUMENTARY_NODE_MASTER_RECORD_20AUG2026.md"
+      - "INSTITUTIONAL_ACTIONS_ARCHITECTS_COALZ_COAGC_20AUG2026.md"
+      - "archive/intelligence/JDAM_ARCHITECTURE_COLEGIOS_SEND_CLOSEOUT_20260820.md"
+      - "scripts/validate_jdam_architecture_colegios.py"
+      - ".github/workflows/validate-jdam-architecture-colegios.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: JavaScript syntax
+        run: |
+          node --check assets/site.js
+          node --check assets/jdam-architecture-colegios-20260820.js
+      - name: Source and publication controls
+        run: python scripts/validate_jdam_architecture_colegios.py
