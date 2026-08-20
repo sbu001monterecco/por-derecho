@@ -1,7 +1,7 @@
 # THREAD DELETION AUDIT — AC / COMMUNITY / PRIVATE-ACTOR DE FACTO ADMINISTRATION
 
 **Date:** 20 August 2026  
-**Current state:** **NOT DELETION-SAFE — branch review, CI, merge and live verification pending**  
+**Current state:** **NOT YET DELETION-SAFE — repository intelligence is merged and CI-green; durable public-edge re-verification remains pending**  
 **Controlling protocol:** `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`
 
 ## Material intelligence preserved
@@ -18,12 +18,12 @@
 
 ## Canonical recovery points
 
-- forensic control;
-- retrieval gate;
+- `archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_COMMUNITY_DEBT_TEXTOS_FORENSIC_CONTROL_20AUG2026.md`;
+- `archive/AC_PRIVATE_ACTOR_DE_FACTO_ADMINISTRATION_RETRIEVAL_GATE_20AUG2026.md`;
 - correction, missing-evidence and maintenance addenda;
-- machine-readable dataset;
+- `assets/data/ac-private-actor-de-facto-administration-v1.json`;
 - bilingual public routes;
-- activation/publication manifest;
+- activation and publication manifest;
 - confidential prosecutorial memorandum outside public GitHub.
 
 ## Private material intentionally excluded
@@ -40,12 +40,34 @@ A future thread must re-query connected Gmail, Drive, Files and the certified co
 
 Certified docket; native Community authority/accounts; vendor/payment/recharge crosswalk; native AC/private communications; security/access logs; CAM payment trail; calculation workbooks; final accounts, deed notice and Registry chain.
 
-## Implementation state
+## Repository and CI state
 
-Branch: `agent/ac-community-de-facto-administration-20260820`.
+- PR **#581**.
+- Source branch: `agent/ac-community-de-facto-administration-20260820`.
+- PR head: `b1129889e9bec6f50678da80748852ea77d98de9`.
+- Merge SHA: `0c4d446833070c12816ee47618256e1162ffe550`.
+- Merged at `2026-08-20T09:36:55Z`.
+- Dedicated validation run `32353866070`: **success**.
+- Publication integrity `32353866114`: **success**.
+- Criminal-engineering/case architecture `32353866045`: **success**.
+- Adjudication provenance `32353866047`: **success**.
+- Unitary public shell `32353866091`: **success**.
+- Off-GitHub preservation `32353866096`: **success**.
+- Public-bidder anonymisation `32353866099`: **success**.
+- Visual-asset registry `32353866078`: **success**.
 
-Lifecycle:
+## Remaining implementation gate
+
+The closeout workflow must publish a successful durable status on the closeout merge SHA under:
+
+`pages-propagation/ac-community-de-facto-administration`
+
+Only after that objective public-edge check may this audit be promoted to:
+
+**DELETION-SAFE WITH OPEN EVIDENCE** — meaning all thread intelligence and implementation state are recoverable, while the identified primary evidence remains outstanding.
+
+## Lifecycle
 
 `DRAFT → REMOTE_SOURCE → PR_OPEN → CI_GREEN → MERGED → DEPLOYED → LIVE_VERIFIED → DELETION_SAFE`
 
-Update this audit with exact PR, merge SHA, workflow runs, public-edge markers and deletion-safety result. Until then the conversation remains **NOT DELETION-SAFE**.
+Current state: **MERGED / CI_GREEN / LIVE_REVERIFY_PENDING**.
