@@ -7,12 +7,20 @@ on:
     paths:
       - 'es/audiencia-cuentas-canarias/**'
       - 'en/canary-islands-external-audit/**'
+      - 'es/registros-institucionales/**'
+      - 'en/institutional-records/**'
       - 'sitemap-audiencia-cuentas.xml'
       - 'robots.txt'
       - 'scripts/verify_audiencia_cuentas_live.py'
       - '.github/workflows/verify-audiencia-cuentas-live.yml'
   pull_request:
     paths:
+      - 'es/audiencia-cuentas-canarias/**'
+      - 'en/canary-islands-external-audit/**'
+      - 'es/registros-institucionales/**'
+      - 'en/institutional-records/**'
+      - 'sitemap-audiencia-cuentas.xml'
+      - 'robots.txt'
       - 'scripts/verify_audiencia_cuentas_live.py'
       - '.github/workflows/verify-audiencia-cuentas-live.yml'
   workflow_dispatch:

@@ -19,8 +19,9 @@ CHECKS = [
         "path": "es/audiencia-cuentas-canarias/",
         "markers": [
             "Audiencia de Cuentas de Canarias: qué se presentó",
-            "No se inicia actuación fiscalizadora",
-            "Expedientes citados",
+            "REGAGE26e00074022302",
+            "1619/2026",
+            "Entrada acreditada; tratamiento y respuesta sustantiva pendientes",
         ],
         "min_bytes": 5000,
     },
@@ -28,8 +29,27 @@ CHECKS = [
         "path": "en/canary-islands-external-audit/",
         "markers": [
             "Audiencia de Cuentas de Canarias: what was submitted",
-            "No audit/fiscalisation initiated",
-            "Files cited",
+            "REGAGE26e00074022302",
+            "1619/2026",
+            "Entry established; treatment and substantive response pending",
+        ],
+        "min_bytes": 5000,
+    },
+    {
+        "path": "es/registros-institucionales/",
+        "markers": [
+            "Doce registros",
+            "Audiencia de Cuentas de Canarias",
+            "Entrada 1619/2026 acreditada",
+        ],
+        "min_bytes": 5000,
+    },
+    {
+        "path": "en/institutional-records/",
+        "markers": [
+            "Twelve records",
+            "Audiencia de Cuentas de Canarias",
+            "Entry 1619/2026 established",
         ],
         "min_bytes": 5000,
     },
@@ -57,7 +77,7 @@ def fetch(url: str, timeout: int) -> dict[str, Any]:
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Por-Derecho-Audiencia-Live-Verifier/1.0",
+            "User-Agent": "Por-Derecho-Audiencia-Live-Verifier/1.1",
             "Cache-Control": "no-cache, no-store, max-age=0",
             "Pragma": "no-cache",
             "Accept": "text/html,application/xml,text/plain,*/*;q=0.8",

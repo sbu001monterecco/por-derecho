@@ -49,3 +49,21 @@ These identifiers must remain separate and linked; none should be substituted fo
 ## Privacy and custody
 
 The unredacted receipt contains personal contact data and a document-verification credential. It is not published in the public repository. The native email and receipt remain in the access-controlled custody layer; this file records only public-safe procedural facts and the integrity hash.
+
+## Independent source recovery
+
+The native receipt remains independently recoverable from connected Gmail using:
+
+- sender: `noresponder@eadministracion.es`;
+- subject: `Nuevo registro de entrada`;
+- date: 20 August 2026;
+- attachment filename: `Certificacion_registral.pdf`.
+
+A deletion-audit re-read on 20 August 2026 confirmed one A4 page, no encryption, no JavaScript, 45,468 bytes and the exact SHA-256 recorded above. Any expired conversation-uploaded copy should be re-uploaded only when direct chat-file access is required; it is not the source-of-truth custody layer.
+
+## Continuity controls
+
+- Correction/supersession: `archive/CORRECTION_REGISTER_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md` — CR-050.
+- Open evidence: `archive/MISSING_EVIDENCE_REGISTER_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md` — ME-065.
+- Maintenance row: `archive/CONTINUOUS_MAINTENANCE_MATRIX_AUDIENCIA_CUENTAS_1619_ADDENDUM_20AUG2026.md`.
+- Deletion audit: `archive/THREAD_DELETION_AUDIT_AUDIENCIA_CUENTAS_1619_20AUG2026.md`.
