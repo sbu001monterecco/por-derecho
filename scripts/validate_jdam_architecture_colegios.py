@@ -29,7 +29,7 @@ checks = {
         "26/008476", "Article 262 LECrim", "four functional COAGC channels"
     ],
     "JDAM_ARCHITECTURE_DOCUMENTARY_NODE_MASTER_RECORD_20AUG2026.md": [
-        "possible documentary conversion node", "Silence is not an admission"
+        "documentary conversion node", "Silence is not an admission"
     ],
     "es/actualizaciones/feed.xml": [
         "arquitectura-nodo-documental-jdam", "COALZ–COAGC"
