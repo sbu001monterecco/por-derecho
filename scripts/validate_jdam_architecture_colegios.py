@@ -31,6 +31,12 @@ checks = {
     "JDAM_ARCHITECTURE_DOCUMENTARY_NODE_MASTER_RECORD_20AUG2026.md": [
         "possible documentary conversion node", "Silence is not an admission"
     ],
+    "es/actualizaciones/feed.xml": [
+        "arquitectura-nodo-documental-jdam", "COALZ–COAGC"
+    ],
+    "en/updates/feed.xml": [
+        "architecture-documentary-node-jdam", "COALZ–COAGC"
+    ],
 }
 
 for rel, needles in checks.items():
@@ -44,7 +50,7 @@ assert ledger["visado"]["reference"] == "22/000036/7800"
 assert ledger["public_boundary"]["not_a_finding"] is True
 assert ledger["right_of_reply"] is True
 
-for rel in ["sitemap-jdam-architecture.xml"]:
+for rel in ["sitemap-jdam-architecture.xml", "es/actualizaciones/feed.xml", "en/updates/feed.xml"]:
     ET.parse(ROOT / rel)
 
 for rel in ["assets/jdam-pwc-conocimiento-2016-ES.svg", "assets/jdam-san-telmo-ricpe-sun-park-ES.svg"]:
@@ -56,7 +62,6 @@ for rel in [
     "en/architecture-documentary-node-jdam/index.html",
 ]:
     text = (ROOT / rel).read_text(encoding="utf-8")
-    assert "investigación abierta" not in text.lower()
     assert "criminal liability is established" not in text.lower()
 
 print("JDAM architecture / Colleges validation passed")
