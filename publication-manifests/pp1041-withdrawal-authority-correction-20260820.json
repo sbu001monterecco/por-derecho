@@ -1,8 +1,9 @@
 {
   "publication_id": "PP1041-WITHDRAWAL-AUTHORITY-CORRECTION-20260820",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "control_date": "2026-08-20",
+  "controlling_pr": 576,
   "publication_type": "bilingual dedicated dossier plus sitewide red correction, correction-register entry and structured-evidence update",
   "controlling_proposition": {
     "es": "No está acreditado que LPB desistiera voluntariamente. Está acreditado que se presentó un desistimiento en su nombre. Por Derecho alega atribución procesal falsa, falta de autorización, perjuicio deliberado a la masa y agencia funcional de facto para el perímetro CAM/Acosta Matos; la autoría, autoridad, intención y responsabilidad deben determinarse con el expediente certificado.",
@@ -48,6 +49,7 @@
     "Insolvency Administrator gatekeeper and loyalty-breakpoint routes",
     "Article 1535/litigious-credit/retracto routes",
     "sale-lender convergence routes",
+    "criminal, DP 1901, ICALPA and case-control routes",
     "public correction and version-control registers"
   ],
   "evidence_boundary": {
@@ -67,6 +69,6 @@
   "publication_rule": "Remove the unqualified phrase 'LPB withdrew'. Use 'a withdrawal was filed in LPB's name' and separately classify verified fact, Por Derecho allegation, inference and pending judicial/criminal determination.",
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "REMOTE_SOURCE means the source exists on the correction branch. PR, CI, merge, deployment and live verification require separate observable evidence."
+    "note": "PR_OPEN means source is under review in PR 576. Merge, deployment and live verification require separate observable evidence."
   }
 }
