@@ -18,22 +18,23 @@
     "status": "live_multi_issue",
     "actor_refs": ["ACT-LPB", "ACT-INSOLVENCY-ADMIN", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
     "instrument_refs": ["INS-CONCURSAL-CREDIT", "INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K"],
-    "relevance": ["credit_recognition", "substitution", "estate_interest", "valuation", "disposition", "surplus", "title"],
+    "relevance": ["credit_recognition", "substitution", "estate_interest", "withdrawal_authority", "valuation", "disposition", "surplus", "title"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"]
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION", "SRC-BOE-LC-ART51-2-HISTORICAL"]
   },
   {
     "id": "PROC-DP-1041-2017",
     "name": "Preliminary Proceedings 1041/2017",
     "forum": "civil_preliminary_diligence",
-    "status": "final_outcome_to_complete",
-    "actor_refs": ["ACT-LPB", "ACT-PH122", "ACT-CAM"],
+    "status": "closed_after_withdrawal_filed_in_LPB_name_authority_authenticity_and_instruction_contested",
+    "actor_refs": ["ACT-LPB", "ACT-PH122", "ACT-CAM", "ACT-INSOLVENCY-ADMIN", "ACT-CRISTO", "ACT-JDAM", "ACT-LPAM"],
     "instrument_refs": ["INS-CONCURSAL-CREDIT"],
-    "relevance": ["assignment_deed", "price", "payment", "Article_1535", "information_right"],
-    "evidence_status": "verified_primary",
+    "relevance": ["assignment_deed", "price", "payment", "Article_1535", "information_right", "withdrawal_authority", "estate_interest", "functional_agency_allegation", "criminal_relevance_if_elements_proved"],
+    "evidence_status": "contested",
     "publication": "public_safe",
-    "source_refs": ["SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"]
+    "source_refs": ["SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-01-12-PP1041-DISCLOSURE-ORDER", "SRC-CAM-2018-01-25-PP1041-OPPOSITION", "SRC-AC-2018-01-25-COUNSEL-CONTROL", "SRC-AC-2018-01-29-REPRESENTATION-CONTROL", "SRC-COURT-2018-03-05-PP1041-WITHDRAWAL-DECREE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION", "SRC-BOE-LC-ART51-2-HISTORICAL", "SRC-COMPLAINT-2026-06-18-AC"],
+    "limits": ["The decree establishes that a withdrawal was filed in LPB's name; it does not establish an authentic voluntary LPB decision.", "The specific withdrawal pleading, signer, filer, LexNET metadata, power, Article 51.2 authorisation and LPB hearing remain missing primary evidence.", "The 15 February 2018 order is an adverse/mixed decision on assignee recognition and the strict Article 1535 position; it does not by itself determine the authenticity or authority of the withdrawal filing.", "Por Derecho alleges deliberate estate harm and de facto functional agency for CAM/Acosta Matos; no criminal or individual-liability conclusion is asserted as adjudicated."]
   },
   {
     "id": "PROC-VALENCIA-1859-2023-9",
@@ -52,12 +53,12 @@
     "name": "DP 1901/2026",
     "forum": "criminal_investigation",
     "status": "pending",
-    "actor_refs": ["ACT-LPB", "ACT-CAM"],
+    "actor_refs": ["ACT-LPB", "ACT-CAM", "ACT-INSOLVENCY-ADMIN", "ACT-JDAM", "ACT-LPAM"],
     "instrument_refs": ["INS-SUN-PARK-ECONOMIC-UNIT", "INS-CONCURSAL-CREDIT"],
-    "relevance": ["criminal_restitution_if_independent_offence_proved", "asset_preservation", "civil_liability_ex_delicto"],
+    "relevance": ["criminal_restitution_if_independent_offence_proved", "asset_preservation", "civil_liability_ex_delicto", "PP1041_withdrawal_authority_and_authenticity"],
     "evidence_status": "contested",
     "publication": "public_safe",
-    "source_refs": [],
-    "limits": ["No criminal conclusion is asserted.", "Pacto comisorio is not treated as a standalone crime."]
+    "source_refs": ["SRC-COMPLAINT-2026-06-18-AC"],
+    "limits": ["No criminal conclusion is asserted.", "Pacto comisorio is not treated as a standalone crime.", "The complaint establishes that Por Derecho made the allegations; it does not establish the truth of any alleged offence."]
   }
 ]
