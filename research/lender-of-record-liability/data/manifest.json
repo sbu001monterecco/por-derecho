@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Por Derecho lender-of-record liability architecture",
-  "last_updated": "2026-08-19",
+  "last_updated": "2026-08-20",
   "status_values": [
     "verified_primary",
     "verified_official",
@@ -29,7 +29,12 @@
   ],
   "public_pages": [
     "en/lender-of-record/liability/",
-    "es/acreedor-de-registro/responsabilidad/"
+    "es/acreedor-de-registro/responsabilidad/",
+    "en/insolvency-administrator-credit-to-title-gatekeeper/",
+    "es/administrador-concursal-puerta-credito-titulo/",
+    "en/pp1041-withdrawal-authority-authenticity-benefit/",
+    "es/desistimiento-pp1041-autoridad-autenticidad-beneficio/"
   ],
-  "principle": "Who knew what, when, in what legal capacity, what did they then do, what did it cause, where can it be used, and what proves each step?"
+  "principle": "Who knew what, when, in what legal capacity, what did they then do, what did it cause, where can it be used, and what proves each step?",
+  "pp1041_control_rule": "Do not state that LPB withdrew. State that a withdrawal was filed in LPB's name and separately test authenticity, authority, instruction, Article 51.2 authorisation, estate interest, benefit and downstream consequence."
 }
