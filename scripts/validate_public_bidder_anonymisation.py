@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Enforce name-only bidder anonymisation and preservation of the complete bid record.
+"""Enforce name-only bidder anonymisation on public surfaces and preserve the bid.
 
 The protected bidder name is represented only by its SHA-256 digest. The validator
-has two independent gates:
+has two independent public-publication gates:
 
-1. the protected name must be absent from the current public repository tree,
-   public filenames and any explicitly supplied public URLs; and
+1. the protected name must be absent from public website source, public filenames
+   and any explicitly supplied public URLs; and
 2. the bilingual adjudication and corrections pages must retain the material bid,
    comparison, procedural, deed, Registry and accounts markers.
 
-This is a current-tree/public-URL control. It is not a Git-history clearance tool.
+Private/archive, research, prompt and evidence-custody files are deliberately outside
+this public-source gate. They may retain the original legal name and native source
+references for evidential retrieval. This is a current-public-tree/public-URL control;
+it is not a Git-history clearance tool and it never deletes underlying evidence.
 """
 
 from __future__ import annotations
@@ -22,6 +25,7 @@ import sys
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+PUBLIC_ROOTS = [ROOT / "es", ROOT / "en", ROOT / "assets"]
 TEXT_SUFFIXES = {
     ".css",
     ".csv",
@@ -42,7 +46,19 @@ TEXT_SUFFIXES = {
     ".yaml",
     ".yml",
 }
-SKIP_PARTS = {".git", ".venv", "__pycache__", "node_modules"}
+ROOT_PUBLIC_EXACT = {
+    "index.html",
+    "404.html",
+    "robots.txt",
+    "sitemap.xml",
+    "rss.xml",
+}
+ROOT_PUBLIC_GLOBS = (
+    "sitemap*.xml",
+    "rss*.xml",
+    "feed*.xml",
+    "manifest*.json",
+)
 
 # SHA-256 of the protected lower-case name token. Never replace with plaintext.
 PROTECTED_TOKEN_HASHES = {
@@ -51,8 +67,8 @@ PROTECTED_TOKEN_HASHES = {
 
 WORD_RE = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9_-]+", re.UNICODE)
 
-# Build superseded formulations from fragments so the validator does not contain
-# the prohibited wording as a contiguous source string and flag itself.
+# Build superseded formulations from fragments so the source does not contain
+# the prohibited wording as a single literal.
 FORBIDDEN_BROAD_WORDING = (
     "La identidad del tercero se mantiene " + "anonimizada en la publicación.",
     "La web mantiene deliberadamente anonimizada la " + "identidad del tercer oferente.",
@@ -150,22 +166,42 @@ def contains_protected_token(text: str) -> bool:
     return any(digest(token) in PROTECTED_TOKEN_HASHES for token in WORD_RE.findall(text))
 
 
-def repository_text_files():
-    for path in ROOT.rglob("*"):
-        if not path.is_file():
+def public_text_files():
+    """Yield only files that are actually published by the static website."""
+    yielded: set[pathlib.Path] = set()
+
+    for base in PUBLIC_ROOTS:
+        if not base.exists():
             continue
-        rel = path.relative_to(ROOT)
-        if any(part in SKIP_PARTS for part in rel.parts):
-            continue
-        if path.suffix.lower() in TEXT_SUFFIXES:
-            yield path
+        for path in base.rglob("*"):
+            if path.is_file() and path.suffix.lower() in TEXT_SUFFIXES:
+                resolved = path.resolve()
+                if resolved not in yielded:
+                    yielded.add(resolved)
+                    yield path
+
+    for name in ROOT_PUBLIC_EXACT:
+        path = ROOT / name
+        if path.is_file():
+            resolved = path.resolve()
+            if resolved not in yielded:
+                yielded.add(resolved)
+                yield path
+
+    for pattern in ROOT_PUBLIC_GLOBS:
+        for path in ROOT.glob(pattern):
+            if path.is_file() and path.suffix.lower() in TEXT_SUFFIXES:
+                resolved = path.resolve()
+                if resolved not in yielded:
+                    yielded.add(resolved)
+                    yield path
 
 
 def fetch_url(url: str) -> str:
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Por-Derecho-public-bidder-name-only-control/2.0",
+            "User-Agent": "Por-Derecho-public-bidder-name-only-control/3.0",
             "Cache-Control": "no-cache",
             "Pragma": "no-cache",
         },
@@ -184,13 +220,13 @@ def parse_args() -> argparse.Namespace:
         default=[],
         help=(
             "Public URL to scan. Repeat for multiple URLs. When supplied, local "
-            "scanning is skipped unless --also-local is used."
+            "public-source scanning is skipped unless --also-local is used."
         ),
     )
     parser.add_argument(
         "--also-local",
         action="store_true",
-        help="Scan the current repository tree in addition to any --url values.",
+        help="Scan current public website source in addition to any --url values.",
     )
     return parser.parse_args()
 
@@ -203,7 +239,7 @@ def check_text(
     failures: list[str],
 ) -> None:
     if contains_protected_token(text):
-        failures.append(f"Protected third-party bidder name found: {label}")
+        failures.append(f"Protected third-party bidder name found on public surface: {label}")
 
     for wording in FORBIDDEN_BROAD_WORDING:
         if wording in text:
@@ -220,12 +256,12 @@ def scan_local(failures: list[str]) -> int:
     scanned = 0
     seen_required: set[str] = set()
 
-    for path in repository_text_files():
+    for path in public_text_files():
         scanned += 1
         rel = path.relative_to(ROOT).as_posix()
 
         if contains_protected_token(rel):
-            failures.append(f"Protected third-party bidder name found in repository path: {rel}")
+            failures.append(f"Protected third-party bidder name found in public path: {rel}")
 
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
@@ -240,7 +276,7 @@ def scan_local(failures: list[str]) -> int:
 
     for rel in LOCAL_REQUIRED_MARKERS:
         if rel not in seen_required:
-            failures.append(f"Required bid-control file missing from current tree: {rel}")
+            failures.append(f"Required bid-control public file missing from current tree: {rel}")
 
     return scanned
 
@@ -289,7 +325,7 @@ def main() -> int:
 
     scope = []
     if scanned_local:
-        scope.append(f"{scanned_local} current-tree text files")
+        scope.append(f"{scanned_local} public-source files")
     if scanned_urls:
         scope.append(f"{scanned_urls} public URLs")
     print(
