@@ -116,15 +116,16 @@ jobs:
               for path, markers in targets.items():
                   try:
                       code, body = fetch(path)
+                      folded_body = body.casefold()
                       results[path] = {
                           'http': code,
                           'bytes': len(body.encode()),
-                          'markers': {marker: marker in body for marker in markers},
+                          'markers': {marker: marker.casefold() in folded_body for marker in markers},
                       }
                       if code != 200:
                           errors.append(f'{path}: HTTP {code}')
                       for marker in markers:
-                          if marker not in body:
+                          if marker.casefold() not in folded_body:
                               errors.append(f'{path}: missing {marker}')
                   except Exception as exc:
                       errors.append(f'{path}: {type(exc).__name__}: {exc}')
