@@ -15,13 +15,28 @@ on:
       - 'sitemap-criminal-engineering.xml'
       - 'scripts/verify_unitary_criminal_live.py'
       - '.github/workflows/verify-unitary-criminal-live.yml'
+      - 'publication-manifests/unitary-criminal-reverse-engineering-20260820.json'
+  pull_request:
+    paths:
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/retracto-credito-litigioso-1041-2017/**'
+      - 'en/litigious-credit-retracto-1041-2017/**'
+      - 'es/administrador-concursal-puerta-credito-titulo/**'
+      - 'en/insolvency-administrator-credit-to-title-gatekeeper/**'
+      - 'assets/unitary-criminal-reverse-engineering-20260820.js'
+      - 'assets/site.js'
+      - 'sitemap-criminal-engineering.xml'
+      - 'scripts/verify_unitary_criminal_live.py'
+      - '.github/workflows/verify-unitary-criminal-live.yml'
+      - 'publication-manifests/unitary-criminal-reverse-engineering-20260820.json'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: verify-unitary-criminal-live
+  group: verify-unitary-criminal-live-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:

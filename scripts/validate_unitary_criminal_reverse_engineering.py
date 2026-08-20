@@ -1,20 +1,132 @@
 #!/usr/bin/env python3
-import json,re,sys
+"""Validate the criminal-first Sun Park reverse-engineering architecture."""
+from __future__ import annotations
+
+import json
+import re
+import sys
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];M='unitary-criminal-reverse-engineering-20260820';e=[]
-req={'es/ingenieria-inversa-criminal-unitaria/index.html':['No son irregularidades aisladas','Los quince puntos más fuertes',M],'en/unitary-criminal-reverse-engineering/index.html':['These are not isolated irregularities','The fifteen strongest points',M],'es/retracto-credito-litigioso-1041-2017/index.html':['Se presentó un desistimiento en nombre de LPB',M],'en/litigious-credit-retracto-1041-2017/index.html':["A withdrawal was filed in LPB's name",M],'assets/unitary-criminal-reverse-engineering-20260820.js':[M,'unitaryCriminalGateway'],'sitemap-criminal-engineering.xml':['ingenieria-inversa-criminal-unitaria','unitary-criminal-reverse-engineering']}
-for p,ms in req.items():
- t=(R/p).read_text(encoding='utf-8') if (R/p).is_file() else '';
- if not t:e.append('missing '+p)
- for m in ms:
-  if m not in t:e.append(p+' missing '+m)
-for p in ['research/unitary-criminal-reverse-engineering/data/top_points.json','research/unitary-criminal-reverse-engineering/data/offence_matrix.json','research/unitary-criminal-reverse-engineering/data/critical_bridges.json']:
- try:
-  if json.loads((R/p).read_text())['marker']!=M:e.append(p+' marker')
- except Exception as x:e.append(p+' '+str(x))
-for p in ['es/retracto-credito-litigioso-1041-2017/index.html','en/litigious-credit-retracto-1041-2017/index.html']:
- t=(R/p).read_text();
- for x in [r'LPB desiste\b',r'LPB solicitó el desistimiento',r'LPB withdraws\b',r'LPB requested withdrawal']:
-  if re.search(x,t,re.I):e.append(p+' autonomous attribution '+x)
-if e:print('UNITARY CRIMINAL: FAIL\n - '+'\n - '.join(e));sys.exit(1)
-print('UNITARY CRIMINAL: PASS')
+
+ROOT = Path(__file__).resolve().parents[1]
+MARKER = "unitary-criminal-reverse-engineering-20260820"
+
+errors: list[str] = []
+
+required = {
+    "es/ingenieria-inversa-criminal-unitaria/index.html": [
+        "No son irregularidades aisladas",
+        "Los quince puntos más fuertes",
+        MARKER,
+    ],
+    "en/unitary-criminal-reverse-engineering/index.html": [
+        "These are not isolated irregularities",
+        "The fifteen strongest points",
+        MARKER,
+    ],
+    "es/retracto-credito-litigioso-1041-2017/index.html": [
+        "Se presentó un desistimiento en nombre de LPB",
+        MARKER,
+    ],
+    "en/litigious-credit-retracto-1041-2017/index.html": [
+        "A withdrawal was filed in LPB",
+        MARKER,
+    ],
+    "es/administrador-concursal-puerta-credito-titulo/index.html": [
+        "Se presentó un desistimiento en nombre de LPB",
+        "Las nueve compuertas",
+        MARKER,
+    ],
+    "en/insolvency-administrator-credit-to-title-gatekeeper/index.html": [
+        "A withdrawal was filed in LPB",
+        "The nine gates",
+        MARKER,
+    ],
+    "assets/unitary-criminal-reverse-engineering-20260820.js": [
+        MARKER,
+        "unitaryCriminalGateway",
+    ],
+    "sitemap-criminal-engineering.xml": [
+        "ingenieria-inversa-criminal-unitaria",
+        "unitary-criminal-reverse-engineering",
+    ],
+}
+
+for rel, markers in required.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"missing {rel}")
+        continue
+    text = path.read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in text:
+            errors.append(f"{rel}: missing marker {marker!r}")
+
+for rel in [
+    "research/unitary-criminal-reverse-engineering/data/top_points.json",
+    "research/unitary-criminal-reverse-engineering/data/offence_matrix.json",
+    "research/unitary-criminal-reverse-engineering/data/critical_bridges.json",
+]:
+    path = ROOT / rel
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("marker") != MARKER:
+            errors.append(f"{rel}: control marker mismatch")
+    except Exception as exc:
+        errors.append(f"{rel}: invalid JSON: {exc}")
+
+# The controlling source rule applies to the PP 1041 and focused AC pages.
+# A court decree may be reported as attributing a withdrawal request to LPB,
+# but the site may not state as an independent fact that LPB voluntarily withdrew.
+controlled_routes = [
+    "es/retracto-credito-litigioso-1041-2017/index.html",
+    "en/litigious-credit-retracto-1041-2017/index.html",
+    "es/administrador-concursal-puerta-credito-titulo/index.html",
+    "en/insolvency-administrator-credit-to-title-gatekeeper/index.html",
+]
+
+banned = [
+    re.compile(r"\bLPB\s+desiste\b", re.I),
+    re.compile(r"\bLPB\s+desistió\b", re.I),
+    re.compile(r"\bLPB\s+solicitó\s+el\s+desistimiento\b", re.I),
+    re.compile(r"\bLPB\s+(?:then\s+|later\s+)?withdrew\b", re.I),
+    re.compile(r"\bLPB\s+requested\s+withdrawal\b", re.I),
+    re.compile(r"\bLPB['’]s\s+(?:own\s+)?withdrawal\b", re.I),
+]
+
+for rel in controlled_routes:
+    text = (ROOT / rel).read_text(encoding="utf-8")
+    for pattern in banned:
+        if pattern.search(text):
+            errors.append(
+                f"{rel}: prohibited autonomous-withdrawal attribution: {pattern.pattern}"
+            )
+
+# Keep private or privileged material out of the public/research output.
+for root in [
+    ROOT / "es/ingenieria-inversa-criminal-unitaria",
+    ROOT / "en/unitary-criminal-reverse-engineering",
+    ROOT / "research/unitary-criminal-reverse-engineering",
+]:
+    if not root.exists():
+        continue
+    for path in root.rglob("*"):
+        if not path.is_file() or path.suffix not in {".html", ".md", ".json"}:
+            continue
+        text = path.read_text(encoding="utf-8")
+        if re.search(
+            r"\b[\w.+-]+@(gmail|cuatrecasas|jtparrilla|despachosantelmo)\.",
+            text,
+            re.I,
+        ):
+            errors.append(f"{path.relative_to(ROOT)}: private email address leaked")
+
+if errors:
+    print("UNITARY CRIMINAL REVERSE ENGINEERING: FAIL")
+    for error in errors:
+        print(f" - {error}")
+    sys.exit(1)
+
+print(
+    "UNITARY CRIMINAL REVERSE ENGINEERING: PASS "
+    f"({len(required)} controlled sources; {len(controlled_routes)} withdrawal-attribution routes)"
+)
