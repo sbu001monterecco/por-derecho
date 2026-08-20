@@ -2,12 +2,11 @@
   "publication_id": "THIRD-PARTY-BIDDER-NAME-ONLY-CONTROL-20260820",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-20",
-  "current_state": "PR_OPEN",
+  "current_state": "DELETION_SAFE",
   "repository": "sbu001monterecco/por-derecho",
-  "baseline_main_sha": "2599fa333b501b8a5ffdf7c7e16784df352f816a",
-  "implementation_branch": "chore/bidder-name-only-control-2026-08-20",
   "controlling_pr": 612,
-  "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/612",
+  "validated_head_sha": "ab3654c3b091afbd0a260ca38e6d6aef25560ebd",
+  "merge_sha": "3104d3ca4a70258d07c766f3ed48091bc62c93f1",
   "expected_routes": {
     "es": [
       "es/adjudicacion-2022-reconstruccion-documental/index.html",
@@ -33,97 +32,78 @@
     "scripts/rewrite_public_bidder_anonymisation.py",
     "scripts/validate_public_bidder_anonymisation.py"
   ],
-  "controlling_rule": {
-    "en": "Only the third-party bidder's name is anonymised. The bid, its amount, date, perimeter, terms, procedural treatment and every related fact and document remain fully visible. No other information falls within the anonymisation scope, even where it may indirectly assist in identifying the bidder.",
-    "es": "Únicamente se anonimiza el nombre del tercer oferente. La oferta, su importe, fecha, perímetro, términos, tratamiento procesal y todos los hechos y documentos relacionados permanecen íntegramente visibles. Ningún otro dato queda dentro del alcance de la anonimización, aunque pueda contribuir indirectamente a identificar al oferente."
-  },
-  "required_bid_markers": {
-    "date": [
-      "08/02/2021",
-      "8 February 2021"
-    ],
-    "proposal": [
-      "14,8 M€",
-      "EUR 14.8m"
-    ],
-    "perimeter": [
-      "perímetro de fincas identificado",
-      "identified property perimeter"
-    ],
-    "comparison": [
-      "14.713.880,31 €",
-      "EUR 14,713,880.31"
-    ],
-    "neutral_labels": [
-      "tercer oferente",
-      "third-party bidder"
-    ],
-    "procedural_questions": [
-      "presentación procesal",
-      "Procedural filing",
-      "capacidad/fondos",
-      "authority/funds",
-      "tratamiento en la licitación",
-      "treatment at the licitation"
-    ],
-    "deed": [
-      "escritura n.º 457",
-      "deed no. 457"
-    ],
-    "debt_consideration": [
-      "13.168.082,02 €",
-      "EUR 13,168,082.02"
-    ],
-    "separate_non_mortgaged_line": [
-      "400.000 €",
-      "EUR 400,000"
-    ],
-    "court_communication": [
-      "cinco días naturales",
-      "five calendar days"
-    ],
-    "downstream_controls": [
-      "Registro",
-      "Registry",
-      "cuentas",
-      "accounts"
-    ]
-  },
+  "controlling_rule": "Only the third-party bidder's name is anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved.",
   "technical_controls": {
-    "protected_name_storage": "one-way SHA-256 digest only in public-source validator",
-    "rewrite_scope": "protected name-token substitution only",
+    "protected_name_storage": "one-way SHA-256 digest only",
     "name_absence_gate": true,
     "bid_preservation_gate": true,
-    "public_source_and_url_scope": true,
-    "private_archive_and_evidence_scope_excluded": true,
-    "private_original_name_retained_for_evidential_retrieval": true,
-    "git_history_clearance": false,
-    "destructive_history_rewrite_authorised": false
+    "public_surface_scope": true,
+    "private_evidence_preserved": true,
+    "git_history_rewritten": false
   },
-  "pull_request_state": {
-    "status": "OPEN_DRAFT",
-    "mergeable": true,
-    "base": "main",
-    "head": "chore/bidder-name-only-control-2026-08-20",
-    "initial_validation_runs": {
-      "publication_integrity": 32387854874,
-      "adjudication_provenance": 32387855063,
-      "bidder_name_only_gate": 32387855065
-    },
-    "initial_validation_result": "Configuration defects identified and corrected on the PR branch: the name gate was narrowed from private archives to public surfaces, and the manifest was aligned with the repository publication-state schema."
+  "validation": {
+    "evidence": [
+      "PR #612 final-head bidder gate run 32388468524: success.",
+      "Publication integrity run 32388468523: success.",
+      "Visual asset run 32388468478: success.",
+      "Off-GitHub preservation run 32388468545: success; artifact 9413864301.",
+      "Adjudication provenance run 32388468443: success.",
+      "Criminal-engineering architecture run 32388468457: success.",
+      "Unitary public-shell run 32388468399: success."
+    ],
+    "publication_integrity": "PASS",
+    "bidder_name_only_and_bid_preservation": "PASS",
+    "off_github_preservation": "PASS"
   },
-  "deletion_audit": {
-    "path": "docs/deletion-audits/2026-08-20-bidder-name-only-control-thread.md",
-    "current_verdict": "PENDING_FINAL_MERGE_LIVE_READBACK_AND_EMAIL_CUSTODY",
-    "underlying_evidence_deleted": false,
-    "publication_completion_claimed": false
-  },
-  "remaining_activation": [
-    "Obtain green replacement PR checks after the configuration corrections.",
-    "Mark PR 612 ready and merge only after all required checks pass.",
-    "Run and inspect public-edge verification after GitHub Pages propagation.",
-    "Record the merge SHA, workflow runs, live read-back and email custody in PR 612's durable closeout metadata.",
-    "Keep any Git-history audit separate and non-destructive unless separately authorised."
+  "deployment_evidence": [
+    "Live run 32388822697 verified merged source 3104d3ca4a70258d07c766f3ed48091bc62c93f1.",
+    "Spanish, English, module, loader and sitemap checks passed on propagation attempt 4.",
+    "Protected-name and positive bid-preservation validation passed across 12 public URLs.",
+    "All 12 rendered-browser assertions passed.",
+    "Commit status pages-propagation/adjudicacion-2022 is success."
   ],
-  "final_statement": "Only the third-party bidder's name is anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved."
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/adjudicacion-2022-reconstruccion-documental/",
+    "https://sbu001monterecco.github.io/por-derecho/en/2022-adjudication-documentary-reconstruction/",
+    "https://sbu001monterecco.github.io/por-derecho/es/correcciones-control-versiones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/corrections-version-control/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/adjudicacion-provenance-cross-site-20260819.js"
+  ],
+  "live_verification_evidence": {
+    "status": "SOURCE_AND_RENDERED_LIVE_VERIFIED",
+    "verified_at": "2026-08-20T15:54:23Z",
+    "source_sha": "3104d3ca4a70258d07c766f3ed48091bc62c93f1",
+    "workflow_run_id": 32388822697,
+    "workflow_job_id": 96489751126,
+    "source_propagation_attempt": 4,
+    "public_url_gate_count": 12,
+    "rendered_browser_assertions": 12,
+    "commit_status_state": "success"
+  },
+  "email_custody": {
+    "authenticated_self_delivery": true,
+    "sent_readback_verified": true,
+    "principal_subject": "Por Derecho — final bidder name-only repository update and deletion-safety package",
+    "principal_sent_at": "2026-08-20T16:00:47Z",
+    "principal_attachment_count": 7,
+    "backup_part_1": {
+      "filename": "Por_Derecho_Full_Off_GitHub_Backup_PR612.zip.part-00",
+      "size_bytes": 18874368,
+      "sent_at": "2026-08-20T16:01:20Z"
+    },
+    "backup_part_2": {
+      "filename": "Por_Derecho_Full_Off_GitHub_Backup_PR612.zip.part-01",
+      "size_bytes": 15632349,
+      "sent_at": "2026-08-20T16:01:47Z"
+    }
+  },
+  "deletion_record": {
+    "path": "docs/deletion-audits/2026-08-20-bidder-name-only-control-thread.md",
+    "verdict": "SAFE_TO_DELETE_CHAT_THREAD",
+    "underlying_evidence_deleted": false,
+    "repository_history_preserved": true,
+    "workflow_evidence_preserved": true,
+    "live_publication_preserved": true,
+    "email_package_preserved": true
+  }
 }
