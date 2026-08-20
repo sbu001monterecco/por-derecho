@@ -145,6 +145,17 @@
   else main.append(section);
 })();
 
+/* ASSET-RECOVERY-INTERVENTION-20260821 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-asset-recovery-intervention-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('asset-recovery-preservation-20260821.js?v=20260821a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-asset-recovery-intervention-loader', '20260821');
+  document.head.appendChild(module);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
