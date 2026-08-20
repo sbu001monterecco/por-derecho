@@ -22,6 +22,14 @@
   attribution.setAttribute('data-san-telmo-attribution-loader', 'true');
   document.head.appendChild(attribution);
 
+  // Keep the 2022 adjudication reconstruction source-controlled across relevant pages.
+  // Public treatment deliberately refers only to an anonymised third-party bidder.
+  const adjudication = document.createElement('script');
+  adjudication.src = new URL('adjudicacion-provenance-cross-site-20260819.js?v=20260820a', current.src).href;
+  adjudication.async = false;
+  adjudication.setAttribute('data-adjudicacion-provenance-loader', 'true');
+  document.head.appendChild(adjudication);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 

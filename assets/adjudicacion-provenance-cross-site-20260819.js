@@ -14,70 +14,74 @@
     const isCanonical = pathname === canonicalPath;
 
     const copy = isSpanish ? {
-      versionTitle: 'Control de versiones y uso previo',
+      versionTitle: 'Control de versiones, fuentes y uso previo',
       versionLead: 'Se conservan varias versiones internas no idénticas de estos trabajos. Versiones relacionadas fueron remitidas a asesores jurídicos en marzo de 2026. Esa circulación acredita consulta y conocimiento interno, pero no acredita por sí misma presentación judicial, admisión, debate ni decisión.',
-      versionRule: 'La eventual novedad procesal de cada hecho o argumento debe comprobarse frente al expediente judicial, los escritos anteriores y las resoluciones dictadas.',
+      versionRule: 'La fuente de mayor rango controla: el Auto firmado de 25/01/2021, el Edicto de 29/01/2021 y la escritura n.º 457 de 21/02/2022 están ahora vinculados como fuentes primarias. La escritura verifica 13.168.082,02 € como deuda que sirve de contraprestación de la dación; no verifica por sí sola que esa sea la cuantía jurídicamente correcta del crédito privilegiado final.',
       establishedTitle: 'Lo que sí queda establecido',
       established: [
-        'Existen versiones internas distintas y su procedencia se conserva separadamente.',
-        'Versiones relacionadas circularon entre asesores jurídicos en marzo de 2026.',
-        'La reconstrucción pública incorpora las correcciones derivadas de las fuentes primarias.'
+        'El Auto de 25/01/2021 explica el paso de 3.079.104,66 € de demora al límite hipotecario de 3.182.000 € mediante devengo diario posterior.',
+        'El Edicto de 29/01/2021 separa 13.168.082,02 € de componentes hipotecarios, 400.000 € de bienes no hipotecados y 1.145.798,29 € de cuotas comunitarias.',
+        'La escritura n.º 457 de 21/02/2022 verifica 13.168.082,02 € como deuda que sirve de contraprestación de la dación de las fincas hipotecadas.',
+        'Existe una propuesta documentada de un tercer oferente por 14,8 M€; su identidad se mantiene anonimizada en la publicación.'
       ],
-      notEstablishedTitle: 'Lo que no queda establecido por esa circulación',
+      notEstablishedTitle: 'Lo que esas fuentes todavía no establecen',
       notEstablished: [
-        'Que alguna versión fuera presentada, admitida, debatida o resuelta judicialmente.',
-        'Que todos los hechos o argumentos fueran procesalmente nuevos en 2026.',
-        'Que los asesores respaldaran las conclusiones o remedios propuestos.'
+        'Que el umbral de un tercero se convirtiera automáticamente y sin puente jurídico adicional en crédito concursal definitivamente reconocido.',
+        'Que el tercer oferente cumpliera todos los requisitos, acreditara fondos o debiera resultar adjudicatario.',
+        'Que la escritura n.º 457 cure por sí sola la compraventa de locales/piscinas de 2018 no convalidada en 2019 o reconcilie automáticamente los 400.000 €.',
+        'Que las cancelaciones, pagos, comunicación al Juzgado y rendición final se ejecutaran exactamente como se prevé en la escritura sin sus fuentes posteriores.'
       ],
       initialPublication: 'Publicación inicial: 19 agosto 2026',
-      evidenceReview: 'Última revisión probatoria: 19 agosto 2026',
-      correction: 'Corrección: procedencia y circulación previa de versiones no idénticas',
-      validationMatter: 'Versiones y uso previo',
-      validationStatus: 'Versiones relacionadas remitidas a asesores; presentación o uso judicial no acreditados',
-      validationNext: 'Comparar versión por versión con el expediente, escritos anteriores, correspondencia y resoluciones',
+      evidenceReview: 'Última revisión probatoria: 20 agosto 2026',
+      correction: 'Corrección: escritura primaria recuperada; funciones de cifras y tercer oferente anonimizado',
+      validationMatter: 'Jerarquía de fuentes y competencia',
+      validationStatus: 'Auto, Edicto y escritura primaria localizados; propuesta de tercero documentada y anonimizada públicamente',
+      validationNext: 'Completar autos definitivos, testimonios, cálculo de intereses, licitación, 400.000 €, comunicación/Registro y rendición final',
       linkTitle: 'Reconstrucción de la adjudicación de 2022',
       linkAction: 'Abrir la reconstrucción documental →',
       cross: {
-        valuation: 'La metodología y representatividad de ACTÚA o de otras valoraciones son piezas probatorias, pero no determinan por sí solas la nulidad de la adjudicación. La oferta, la deuda, la escritura y las cuentas deben conciliarse por separado.',
-        perimeter: 'La continuidad CAM/JDAM → HNT/MYND debe separar control material, adjudicación judicial, escritura, registro y sucesión societaria. La reconstrucción de 2022 fija esas fronteras.',
-        finance: 'Las valoraciones, necesidades de inversión y fuentes de financiación posteriores aportan contexto y contraste; no prueban por sí solas el importe jurídico de realización ni un remanente concursal.',
-        credit: 'La clasificación concursal del crédito, los límites hipotecarios y la deuda utilizada como contraprestación en 2022 son magnitudes distintas que deben reconstruirse componente por componente.',
-        premises: 'La venta de fincas no hipotecadas por 400.000 € constituye una línea separada de la dación de los 159 apartamentos hipotecados y exige su propio rastro bancario, contable y registral.',
-        procedure: 'La reconstrucción de 2022 muestra por qué no existe un remedio universal para todo el perímetro: cada acto, consecuencia y titular afectado requiere su propio análisis procesal.',
-        generic: 'La página específica concilia la oferta, el crédito, el auto, la escritura, los 400.000 € y las cuentas sin convertir hipótesis internas en conclusiones judiciales.'
+        valuation: 'La escritura n.º 457 verifica 13.168.082,02 € como deuda que sirve de contraprestación de la dación. Eso no convierte por sí solo responsabilidad hipotecaria, tasación o umbral competitivo en crédito concursal definitivamente correcto: cada función debe reconciliarse.',
+        perimeter: 'La continuidad CAM/JDAM → HNT/MYND debe separar control material, competencia real, adjudicación, escritura, Registro y sucesión societaria. La escritura n.º 457 cierra la dación de fincas hipotecadas, no responde automáticamente al problema separado de locales/piscinas y 400.000 €.',
+        finance: 'Las valoraciones, necesidades de inversión y fuentes de financiación posteriores aportan contexto. La escritura verifica la deuda declarada como contraprestación de la dación; no resuelve por sí sola su clasificación concursal, el proceso competitivo ni un eventual remanente.',
+        credit: 'Crédito reconocido, límites hipotecarios, umbral exigido al tercer oferente y deuda declarada como contraprestación en escritura son magnitudes jurídicamente distintas, aunque dos fuentes usen la misma cifra de 13.168.082,02 €.',
+        premises: 'Los 400.000 € por bienes no hipotecados constituyen una línea separada. Las secciones operativas revisadas de la escritura n.º 457 tratan la dación de fincas hipotecadas y no suministran por sí solas la conciliación del negocio de locales/piscinas de 2018.',
+        procedure: 'La propuesta documentada de un tercer oferente por 14,8 M€ convierte la competencia de 2021 en un punto de control real. La escritura añade otro control: debía comunicarse al Juzgado en cinco días naturales y activar la cadena de cancelación que ahora debe trazarse.',
+        generic: 'La página específica reconstruye oferta, competencia, deuda, Autos, escritura primaria, 400.000 €, Registro y cuentas sin convertir una coincidencia numérica en conclusión jurídica automática.'
       }
     } : {
-      versionTitle: 'Version control and prior use',
+      versionTitle: 'Version, source and prior-use control',
       versionLead: 'Several non-identical internal versions of this work are preserved. Related versions were circulated to legal advisers in March 2026. That circulation proves internal consultation and awareness, but does not by itself prove filing, admission, argument or judicial determination.',
-      versionRule: 'The procedural novelty of each fact or argument must be tested against the court record, previous submissions and existing decisions.',
+      versionRule: 'The highest-ranked source controls: the signed 25 January 2021 order, the 29 January court notice and deed no. 457 dated 21 February 2022 are now bound as primary sources. The deed verifies EUR 13,168,082.02 as debt serving as consideration for the dación; it does not by itself verify that amount as the legally correct final privileged credit.',
       establishedTitle: 'What is established',
       established: [
-        'Different internal versions exist and their provenance is preserved separately.',
-        'Related versions circulated among legal advisers in March 2026.',
-        'The public reconstruction incorporates corrections required by the primary sources.'
+        'The 25 January 2021 order explains the move from EUR 3,079,104.66 in default interest to the EUR 3,182,000 mortgage cap through later daily accrual.',
+        'The 29 January 2021 notice separates EUR 13,168,082.02 in mortgage components, EUR 400,000 for non-mortgaged assets and EUR 1,145,798.29 in community fees.',
+        'Deed no. 457 dated 21 February 2022 verifies EUR 13,168,082.02 as debt serving as consideration for the dación of the mortgaged properties.',
+        'A documented EUR 14.8m proposal by a third-party bidder exists; the bidder identity is anonymised in the public record.'
       ],
-      notEstablishedTitle: 'What that circulation does not establish',
+      notEstablishedTitle: 'What those sources do not yet establish',
       notEstablished: [
-        'That any version was filed, admitted, argued or judicially decided.',
-        'That every fact or argument was procedurally new in 2026.',
-        'That the advisers endorsed the proposed conclusions or remedies.'
+        'That a third-party threshold automatically became finally recognised insolvency credit without an additional legal bridge.',
+        'That the third-party bidder met every condition, proved funds or should have received the adjudication.',
+        'That deed no. 457 automatically cured the separate 2018 premises/pools transaction that was not validated in 2019 or reconciled the EUR 400,000.',
+        'That cancellations, payments, court communication and final accounts occurred exactly as contemplated without their downstream sources.'
       ],
       initialPublication: 'Initial publication: 19 August 2026',
-      evidenceReview: 'Latest evidence review: 19 August 2026',
-      correction: 'Correction: provenance and prior circulation of non-identical versions',
-      validationMatter: 'Draft versions and prior use',
-      validationStatus: 'Related versions sent to advisers; filing or judicial use not established',
-      validationNext: 'Compare every version with the court docket, previous submissions, correspondence and decisions',
+      evidenceReview: 'Latest evidence review: 20 August 2026',
+      correction: 'Correction: primary deed recovered; legal functions of figures and anonymised third-party bidder',
+      validationMatter: 'Source hierarchy and competition',
+      validationStatus: 'Primary order, notice and deed located; third-party proposal documented and publicly anonymised',
+      validationNext: 'Complete final orders, testimonios, interest calculation, licitation, EUR 400,000, court/Registry chain and final accounts',
       linkTitle: 'The 2022 adjudication reconstruction',
       linkAction: 'Open the documentary reconstruction →',
       cross: {
-        valuation: 'The methodology and representativeness of ACTÚA or other valuations are evidential inputs, but do not by themselves determine nullity. The offer, debt, deed and accounts must be reconciled separately.',
-        perimeter: 'The CAM/JDAM → HNT/MYND continuity must distinguish physical control, judicial adjudication, deed, registration and corporate succession. The 2022 reconstruction fixes those boundaries.',
-        finance: 'Later valuations, investment needs and funding sources provide context and comparison; they do not by themselves prove the legally relevant realisation amount or an insolvency surplus.',
-        credit: 'The insolvency classification of the credit, mortgage caps and the debt used as consideration in 2022 are distinct quantities requiring component-by-component reconstruction.',
-        premises: 'The EUR 400,000 sale of unencumbered properties is a separate line from the dación of the 159 mortgaged apartments and requires its own banking, accounting and register trail.',
-        procedure: 'The 2022 reconstruction shows why there is no universal remedy for the whole perimeter: each act, consequence and affected right-holder requires its own procedural analysis.',
-        generic: 'The dedicated page reconciles the offer, credit, order, deed, EUR 400,000 line and accounts without turning internal hypotheses into judicial findings.'
+        valuation: 'Deed no. 457 verifies EUR 13,168,082.02 as debt serving as consideration for the dación. That does not by itself transform mortgage liability, appraisal or the competitive threshold into finally correct recognised insolvency credit; each function must be reconciled.',
+        perimeter: 'CAM/JDAM → HNT/MYND continuity must distinguish physical control, real competition, adjudication, deed, registration and corporate succession. Deed no. 457 closes the mortgaged-property dación; it does not automatically answer the separate premises/pools and EUR 400,000 issue.',
+        finance: 'Later valuations, investment needs and funding sources provide context. The deed verifies the debt stated as consideration for the dación; it does not by itself resolve insolvency classification, the competitive process or any residual.',
+        credit: 'Recognised credit, mortgage caps, the threshold imposed on a third-party bidder and debt stated as consideration in the deed are legally distinct quantities even where two sources use the same EUR 13,168,082.02 figure.',
+        premises: 'The EUR 400,000 non-mortgaged-assets line remains separate. The reviewed operative portions of deed no. 457 address the mortgaged-property dación and do not by themselves reconcile the 2018 premises/pools transaction.',
+        procedure: 'The documented EUR 14.8m third-party proposal makes the 2021 competition a real control point. The deed adds another: it required communication to the court within five calendar days and set out a cancellation route that now needs to be traced.',
+        generic: 'The dedicated page reconstructs offer, competition, debt, orders, the primary deed, EUR 400,000 line, Registry and accounts without turning numerical identity into an automatic legal conclusion.'
       }
     };
 
@@ -111,7 +115,7 @@
       const section = document.createElement('section');
       section.className = 'section';
       section.id = 'adjudicacion-version-control';
-      section.dataset.liveMarker = 'adjudicacion-version-control-20260819';
+      section.dataset.liveMarker = 'adjudicacion-version-control-20260820';
       section.innerHTML = `
         <div class="shell adjudicacion-provenance-panel">
           <div class="adjudicacion-provenance-box">
@@ -175,7 +179,7 @@
       const section = document.createElement('section');
       section.className = 'section adjudicacion-crosslink-section';
       section.dataset.adjudicacionCrosslink = type;
-      section.dataset.liveMarker = 'adjudicacion-crosslink-20260819';
+      section.dataset.liveMarker = 'adjudicacion-crosslink-20260820';
       section.innerHTML = `
         <div class="shell">
           <aside class="adjudicacion-crosslink" role="note">

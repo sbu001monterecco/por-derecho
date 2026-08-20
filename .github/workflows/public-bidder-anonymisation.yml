@@ -1,0 +1,41 @@
+name: Public bidder anonymisation gate
+
+on:
+  pull_request:
+    paths:
+      - 'es/**'
+      - 'en/**'
+      - 'assets/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'rss.xml'
+      - 'scripts/validate_public_bidder_anonymisation.py'
+      - 'scripts/rewrite_public_bidder_anonymisation.py'
+      - '.github/workflows/public-bidder-anonymisation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/**'
+      - 'en/**'
+      - 'assets/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'rss.xml'
+      - 'scripts/validate_public_bidder_anonymisation.py'
+      - 'scripts/rewrite_public_bidder_anonymisation.py'
+      - '.github/workflows/public-bidder-anonymisation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  anonymisation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Verify protected bidder identity is absent from public source
+        run: python scripts/validate_public_bidder_anonymisation.py
