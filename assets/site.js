@@ -156,6 +156,17 @@
   document.head.appendChild(module);
 })();
 
+/* AC-SECURITY-REQUEST-EVIDENCE-GATEWAY-20260821 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-ac-security-request-evidence-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('ac-security-request-gateway-20260821.js?v=20260821a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-ac-security-request-evidence-loader', '20260821');
+  document.head.appendChild(module);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
