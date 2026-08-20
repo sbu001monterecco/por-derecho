@@ -1,0 +1,107 @@
+{
+  "publication_id": "THIRD-PARTY-BIDDER-NAME-ONLY-CONTROL-20260820",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-20",
+  "current_state": "BRANCH_IMPLEMENTED_DELETION_SAFE_AWAITING_REVIEW",
+  "repository": "sbu001monterecco/por-derecho",
+  "baseline_main_sha": "27aa30b462590b553118612ed7c15cb061109d89",
+  "implementation_branch": "chore/bidder-name-only-control-2026-08-20",
+  "controlling_rule": {
+    "en": "Only the third-party bidder's name is anonymised. The bid, its amount, date, perimeter, terms, procedural treatment and every related fact and document remain fully visible. No other information falls within the anonymisation scope, even where it may indirectly assist in identifying the bidder.",
+    "es": "Únicamente se anonimiza el nombre del tercer oferente. La oferta, su importe, fecha, perímetro, términos, tratamiento procesal y todos los hechos y documentos relacionados permanecen íntegramente visibles. Ningún otro dato queda dentro del alcance de la anonimización, aunque pueda contribuir indirectamente a identificar al oferente."
+  },
+  "permanent_implementation_files": [
+    ".github/workflows/public-bidder-anonymisation.yml",
+    ".github/workflows/validate-adjudicacion-provenance.yml",
+    ".github/workflows/verify-adjudicacion-2022-live.yml",
+    "archive/THIRD_PARTY_BIDDER_PUBLIC_ANONYMISATION_CONTROL_20AUG2026.md",
+    "assets/adjudicacion-provenance-cross-site-20260819.js",
+    "en/2022-adjudication-documentary-reconstruction/index.html",
+    "en/corrections-version-control/index.html",
+    "es/adjudicacion-2022-reconstruccion-documental/index.html",
+    "es/correcciones-control-versiones/index.html",
+    "scripts/rewrite_public_bidder_anonymisation.py",
+    "scripts/validate_public_bidder_anonymisation.py"
+  ],
+  "required_bid_markers": {
+    "date": [
+      "08/02/2021",
+      "8 February 2021"
+    ],
+    "proposal": [
+      "14,8 M€",
+      "EUR 14.8m"
+    ],
+    "perimeter": [
+      "perímetro de fincas identificado",
+      "identified property perimeter"
+    ],
+    "comparison": [
+      "14.713.880,31 €",
+      "EUR 14,713,880.31"
+    ],
+    "neutral_labels": [
+      "tercer oferente",
+      "third-party bidder"
+    ],
+    "deed": [
+      "escritura n.º 457",
+      "deed no. 457"
+    ],
+    "debt_consideration": [
+      "13.168.082,02 €",
+      "EUR 13,168,082.02"
+    ],
+    "separate_non_mortgaged_line": [
+      "400.000 €",
+      "EUR 400,000"
+    ],
+    "court_communication": [
+      "cinco días naturales",
+      "five calendar days"
+    ],
+    "downstream_controls": [
+      "Registro",
+      "Registry",
+      "cuentas",
+      "accounts"
+    ]
+  },
+  "technical_controls": {
+    "protected_name_storage": "one-way SHA-256 digest only",
+    "rewrite_scope": "protected name-token substitution only",
+    "name_absence_gate": true,
+    "bid_preservation_gate": true,
+    "current_tree_and_url_scope": true,
+    "git_history_clearance": false,
+    "destructive_history_rewrite_authorised": false
+  },
+  "branch_audit_before_audit_records": {
+    "status": "ahead",
+    "ahead_by": 18,
+    "behind_by": 0,
+    "net_changed_files": 11,
+    "temporary_migration_files_in_net_diff": 0,
+    "source_level_marker_review": "PASS",
+    "pull_request_ci": "NOT_RUN_NO_PR_AUTHORISED",
+    "main_merge": "NOT_PERFORMED",
+    "live_public_readback": "NOT_APPLICABLE_BRANCH_NOT_DEPLOYED",
+    "git_history_audit": "NOT_PERFORMED"
+  },
+  "deletion_audit": {
+    "path": "docs/deletion-audits/2026-08-20-bidder-name-only-control-thread.md",
+    "verdict": "SAFE_TO_DELETE_CHAT_THREAD_WITH_REMOTE_BRANCH_PRESERVED",
+    "condition": "Retain the remote implementation branch until review, merge or durable archival.",
+    "underlying_evidence_deleted": false,
+    "publication_completion_claimed": false
+  },
+  "remaining_activation": [
+    "Open one draft pull request when separately authorised.",
+    "Run full repository, browser-render and bidder name-only/bid-preservation checks.",
+    "Merge only after required checks pass.",
+    "Run public-edge verification after GitHub Pages propagation.",
+    "Record PR, merge SHA, workflow runs and live read-back.",
+    "Keep any Git-history audit separate and non-destructive unless separately authorised."
+  ],
+  "final_statement": "Only the third-party bidder's name has been anonymised. The bid and the complete surrounding factual, documentary and procedural record remain preserved."
+}
