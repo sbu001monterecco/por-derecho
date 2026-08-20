@@ -34,6 +34,16 @@ The 7 June dossier owns the full event, pre-event operating record, ONA alternat
 
 Open documentary follow-up is maintained in [INSTITUTIONAL_ACTIONS.md](INSTITUTIONAL_ACTIONS.md), including the Cabildo/Tourism Register/Yaiza request for a certified Sun Park operator history.
 
+## Professional identity attribution control
+
+Any repository search, chronology, adviser register, evidence table, draft correspondence or website text involving `Carlos`, `Carlos Sanz`, `Carlos Llamas` or Pledge Investments must apply the [canonical Carlos identity and attribution control](archive/PROFESSIONAL_IDENTITY_ATTRIBUTION_CONTROL_CARLOS_LLAMAS_SANZ_CARLOS_SANZ_PLEDGE_20AUG2026.md).
+
+- **Carlos Llamas Sanz** is the current lawyer / legal counsel in the located 2025–2026 legal and procedural record.
+- **Carlos Sanz Rodríguez** is the former corporate-finance adviser associated with Pledge Investments in the located 2018–2021 finance and transaction record.
+- A bare `Carlos` remains unresolved until the source-level sender, signature, company, subject matter, attachment or surrounding thread identifies the person.
+
+The two professionals must never be treated as aliases, and professional exposure alone must not be converted into knowledge, adoption, causation, fault, complicity or responsibility.
+
 ## Thread deletion-safety records
 
 Where a working ChatGPT thread produces material synthesis or operational filing work, the repository may preserve a thread-specific deletion audit so that the chat is not the sole custody point.
