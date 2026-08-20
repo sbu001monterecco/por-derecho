@@ -77,6 +77,15 @@
   jdamArchitecture.setAttribute('data-jdam-architecture-colegios-loader', 'true');
   document.head.appendChild(jdamArchitecture);
 
+  // Surface DP 1901/2026 as the current private/extraconcursal control route:
+  // Matkator/Aweswell/non-LPB patrimony, finite source chain, Yaiza proof engine,
+  // Fiscalía production checklist and RIC/FEDER safe wording.
+  const dp1901Extraconcursal = document.createElement('script');
+  dp1901Extraconcursal.src = new URL('dp1901-extraconcursal-implementation-20260820.js?v=20260820a', current.src).href;
+  dp1901Extraconcursal.async = false;
+  dp1901Extraconcursal.setAttribute('data-dp1901-extraconcursal-loader', 'true');
+  document.head.appendChild(dp1901Extraconcursal);
+
   // Surface the bilingual Playa Blanca hotel/local-services concept inside the Future section
   // while keeping the exact private site, ownership and transaction perimeter undisclosed.
   const playaBlancaConcept = document.createElement('script');
