@@ -1,0 +1,45 @@
+{
+  "publication_id": "thread-deletion-operator-auto804-closeout-20260820",
+  "owner": "Gil Marer / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "expected_routes": {
+    "es": [
+      "es/index.html",
+      "es/actualizaciones/index.html",
+      "es/ric-private-equity-sun-park/index.html",
+      "es/comunidad-instrumentalizacion/index.html"
+    ],
+    "en": [
+      "en/index.html",
+      "en/updates/index.html",
+      "en/ric-private-equity-sun-park/index.html",
+      "en/community-instrumentalisation/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/THREAD_DELETION_CONTINUITY_AUDIT_CEXP_MONTERECCO_PINK_AUTO804_FORENSIC_20AUG2026.md",
+    "README.md",
+    "CHATGPT_START_HERE.md",
+    "INSTITUTIONAL_ACTIONS.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "assets/optimum-reader-journey-20260818.js",
+    "es/actualizaciones/feed.xml",
+    "en/updates/feed.xml"
+  ],
+  "validation": {
+    "evidence": []
+  },
+  "merge_sha": null,
+  "deployment_evidence": [],
+  "live_urls": [],
+  "live_verification_evidence": null,
+  "deletion_record": null,
+  "review_notes": [
+    "Private report and checkpoint are retained outside public Git and referenced by exact title only.",
+    "No privileged counsel content, Patricia personal tax data, signatures, addresses or private source bodies are published.",
+    "Order 804 and the May 2017 email remain custody locators whose anonymous public accessibility was not verified.",
+    "Open evidence remains tracked and is not upgraded into a finding."
+  ]
+}

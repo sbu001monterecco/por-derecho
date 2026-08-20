@@ -7,7 +7,7 @@
   const p = (slug = '') => `${root}${slug}`;
   const t = (es, en) => isEn ? en : es;
   const RELEASE = '2026-08-18-optimum-reader-journey-v1';
-  const RELEASE_DATE = t('18 agosto 2026', '18 August 2026');
+  const RELEASE_DATE = t('20 agosto 2026', '20 August 2026');
 
   const communityUrl = p(isEn ? 'community-instrumentalisation/' : 'comunidad-instrumentalizacion/');
   const actasUrl = p(isEn ? 'community-instrumentalisation/minutes-2011-2022/' : 'comunidad-instrumentalizacion/actas-2011-2022/');

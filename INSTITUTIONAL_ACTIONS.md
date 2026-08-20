@@ -91,6 +91,8 @@ Owner: legal team / Gil Marer
 Review acknowledgements by: 27 August 2026
 Baseline filing: REGAGE26e00072883405, a submission referencing Cabildo file 614/2026; allocation and acknowledgement pending
 Tourism identifiers: H-35/3/0034; H-35-3-0000034; LZ/2012/000031
+Tracking issue: [#5 — Obtain certified Sun Park operator history from Cabildo, RGT and Yaiza](https://github.com/sbu001monterecco/por-derecho/issues/5)
+Continuity control: `archive/THREAD_DELETION_CONTINUITY_AUDIT_CEXP_MONTERECCO_PINK_AUTO804_FORENSIC_20AUG2026.md`
 
 ### Cabildo de Lanzarote / Ordenación Turística
 
@@ -128,5 +130,7 @@ Among the materials reviewed to date, CEXP is the only entity for which both a p
 - [4 June 2014 filing GE-014212/2014](https://drive.google.com/file/d/1w1QgRE1sMtKU1NrjaCoxaVlVbJwlH0kR/view)
 - [Cabildo Resolution 2026-2735 / file 614/2026](https://drive.google.com/file/d/1A-RV2JyliHimx4duPpJFur03ECTDpcip/view)
 - [Order 804/2018](https://drive.google.com/file/d/1Q7uDAQ0B4Oa_cc5tUPo-xxACAM51fJ5v/view)
+
+Source-access note (20 August 2026): anonymous access to the Order 804/2018 Drive locator was not verified. Treat it as an access-controlled custody pointer pending a redacted public copy; do not infer that the underlying source is lost.
 
 Calculate any statutory remedy date from confirmed receipt by the competent organ, not from RedSARA upload alone.
