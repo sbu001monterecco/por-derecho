@@ -1,1 +1,0 @@
-No further placeholder OCR files should be created. Use an exact source-blob tree transplant.

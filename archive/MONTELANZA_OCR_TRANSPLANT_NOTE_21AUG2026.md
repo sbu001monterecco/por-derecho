@@ -1,1 +1,0 @@
-The exact OCR blobs from `publish/montelanza-2008-digitisation-20260820` must replace any temporary placeholders before publication. Authoritative blob SHAs are recorded in the source branch directory listing and the publication validator must reject placeholder or undersized files.
