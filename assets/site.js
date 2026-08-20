@@ -47,6 +47,14 @@
   deFactoVisibility.setAttribute('data-ac-de-facto-knowing-facilitation-visibility-loader', 'true');
   document.head.appendChild(deFactoVisibility);
 
+  // Preserve the base-module markers on the upgraded panels and remove any duplicate caused by
+  // delayed cross-site reruns. This keeps one canonical allegation panel per relevant route.
+  const deFactoVisibilityStability = document.createElement('script');
+  deFactoVisibilityStability.src = new URL('ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260820b', current.src).href;
+  deFactoVisibilityStability.async = false;
+  deFactoVisibilityStability.setAttribute('data-ac-de-facto-knowing-facilitation-stability-loader', 'true');
+  document.head.appendChild(deFactoVisibilityStability);
+
   const isPalacete = /\/es\/fundacion-por-derecho\/palacete-por-derecho\/?(?:index\.html)?$/.test(window.location.pathname);
   if (!isPalacete) return;
 
