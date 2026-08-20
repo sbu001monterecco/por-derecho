@@ -1,7 +1,7 @@
 # AC / COMMUNITY / PRIVATE-ACTOR DE FACTO ADMINISTRATION — ACTIVATION RECORD
 
 **Activated:** 20 August 2026  
-**Current lifecycle state:** `MERGED / CI_GREEN / LIVE_REVERIFY_PENDING`  
+**Current lifecycle state:** `DELETION_SAFE WITH OPEN EVIDENCE`  
 **Matter:** Luchy Playa Blanca, S.L.U., Concurso 36/2012 / Sun Park
 
 ## Purpose
@@ -79,6 +79,8 @@ P0: complete certified court index, native Community authority/accounts, vendor-
 
 ## PR, merge and CI evidence
 
+### Source implementation
+
 - Pull request: **#581 — Add AC–Community de facto administration forensic reconstruction**.
 - PR head SHA: `b1129889e9bec6f50678da80748852ea77d98de9`.
 - Merge SHA: `0c4d446833070c12816ee47618256e1162ffe550`.
@@ -92,16 +94,24 @@ P0: complete certified court index, native Community authority/accounts, vendor-
 - Public-bidder anonymisation run `32353866099`: **success**.
 - Visual-asset registry run `32353866078`: **success**.
 
-## Live-verification closeout
+### Deployment closeout
 
-The source package is merged and all PR validation gates passed. The follow-up closeout re-arms the public-edge workflow and adds a durable commit-status context:
+- Pull request: **#584 — Close out AC–Community de facto administration deployment evidence**.
+- Closeout merge SHA: `de060ad60e7f63e9af748ee005051003c6fa9dcb`.
+- Merged: **20 August 2026 at 10:31:10 UTC**.
+- Public-edge workflow run `32359330380`, job `96395329770`: **success**.
+- Raw source verification passed on polling attempt 1 for both canonical pages, the runtime module, dedicated sitemap and robots entry.
+- Rendered-browser verification passed **26 assertions** across the two canonical pages, Community and Administrator cross-links, Case Control Room and criminal-investigation route.
+- Durable commit status `pages-propagation/ac-community-de-facto-administration` was published as **success** on `de060ad60e7f63e9af748ee005051003c6fa9dcb` at `2026-08-20T10:31:56Z`.
 
-`pages-propagation/ac-community-de-facto-administration`
+## Deletion-safety conclusion
 
-Do not promote the lifecycle to `LIVE_VERIFIED` until that context reports success against the closeout merge SHA.
+**DELETION-SAFE WITH OPEN EVIDENCE.** All material source findings, corrections, unresolved questions, public/private boundaries and implementation state are recoverable from the current repository and connected primary-source systems. The certified docket, Community authority/accounts, invoice-level duplicate-cost crosswalk, native communications and final liquidation implementation remain open P0 evidence.
+
+The confidential prosecutorial memorandum remains outside public GitHub and is delivered separately.
 
 ## Lifecycle
 
 `DRAFT → REMOTE_SOURCE → PR_OPEN → CI_GREEN → MERGED → DEPLOYED → LIVE_VERIFIED → DELETION_SAFE`
 
-Current state is **MERGED / CI_GREEN / LIVE_REVERIFY_PENDING**. Use `BLOCKED_RECOVERY` where any stage cannot be objectively demonstrated.
+Current state: **DELETION_SAFE WITH OPEN EVIDENCE**.
