@@ -14,70 +14,70 @@
     const isCanonical = pathname === canonicalPath;
 
     const copy = isSpanish ? {
-      versionTitle: 'Control de versiones y uso previo',
+      versionTitle: 'Control de versiones, fuentes y uso previo',
       versionLead: 'Se conservan varias versiones internas no idénticas de estos trabajos. Versiones relacionadas fueron remitidas a asesores jurídicos en marzo de 2026. Esa circulación acredita consulta y conocimiento interno, pero no acredita por sí misma presentación judicial, admisión, debate ni decisión.',
-      versionRule: 'La eventual novedad procesal de cada hecho o argumento debe comprobarse frente al expediente judicial, los escritos anteriores y las resoluciones dictadas.',
+      versionRule: 'La fuente de mayor rango controla: el Auto firmado de 25/01/2021 y el Edicto de 29/01/2021 corrigen la ontología de cifras; la escritura de 21/02/2022 sigue pendiente de re-vinculación primaria en esta revisión.',
       establishedTitle: 'Lo que sí queda establecido',
       established: [
-        'Existen versiones internas distintas y su procedencia se conserva separadamente.',
-        'Versiones relacionadas circularon entre asesores jurídicos en marzo de 2026.',
-        'La reconstrucción pública incorpora las correcciones derivadas de las fuentes primarias.'
+        'El Auto de 25/01/2021 explica el paso de 3.079.104,66 € de demora al límite hipotecario de 3.182.000 € mediante devengo diario posterior.',
+        'El Edicto de 29/01/2021 separa 13.168.082,02 € de componentes hipotecarios, 400.000 € de bienes no hipotecados y 1.145.798,29 € de cuotas comunitarias.',
+        'Existe una propuesta documentada de un tercer oferente por 14,8 M€; su identidad se mantiene anonimizada en la publicación.'
       ],
-      notEstablishedTitle: 'Lo que no queda establecido por esa circulación',
+      notEstablishedTitle: 'Lo que esas fuentes todavía no establecen',
       notEstablished: [
-        'Que alguna versión fuera presentada, admitida, debatida o resuelta judicialmente.',
-        'Que todos los hechos o argumentos fueran procesalmente nuevos en 2026.',
-        'Que los asesores respaldaran las conclusiones o remedios propuestos.'
+        'Que el umbral de un tercero fuera automáticamente el crédito concursal reconocido o la contraprestación de CAM.',
+        'Que el tercer oferente cumpliera todos los requisitos, acreditara fondos o debiera resultar adjudicatario.',
+        'El contenido exacto de la escritura de 21/02/2022 hasta re-vincular la copia primaria/certificada y su protocolo completo.'
       ],
       initialPublication: 'Publicación inicial: 19 agosto 2026',
-      evidenceReview: 'Última revisión probatoria: 19 agosto 2026',
-      correction: 'Corrección: procedencia y circulación previa de versiones no idénticas',
-      validationMatter: 'Versiones y uso previo',
-      validationStatus: 'Versiones relacionadas remitidas a asesores; presentación o uso judicial no acreditados',
-      validationNext: 'Comparar versión por versión con el expediente, escritos anteriores, correspondencia y resoluciones',
+      evidenceReview: 'Última revisión probatoria: 20 agosto 2026',
+      correction: 'Corrección: funciones de las cifras, estado de la escritura y tercer oferente anonimizado',
+      validationMatter: 'Jerarquía de fuentes y competencia',
+      validationStatus: 'Auto y Edicto primarios localizados; propuesta de tercero documentada; escritura primaria pendiente de re-vinculación',
+      validationNext: 'Completar autos definitivos, testimonios, escritura, cálculo de intereses, licitación, 400.000 € y rendición final',
       linkTitle: 'Reconstrucción de la adjudicación de 2022',
       linkAction: 'Abrir la reconstrucción documental →',
       cross: {
-        valuation: 'La metodología y representatividad de ACTÚA o de otras valoraciones son piezas probatorias, pero no determinan por sí solas la nulidad de la adjudicación. La oferta, la deuda, la escritura y las cuentas deben conciliarse por separado.',
-        perimeter: 'La continuidad CAM/JDAM → HNT/MYND debe separar control material, adjudicación judicial, escritura, registro y sucesión societaria. La reconstrucción de 2022 fija esas fronteras.',
-        finance: 'Las valoraciones, necesidades de inversión y fuentes de financiación posteriores aportan contexto y contraste; no prueban por sí solas el importe jurídico de realización ni un remanente concursal.',
-        credit: 'La clasificación concursal del crédito, los límites hipotecarios y la deuda utilizada como contraprestación en 2022 son magnitudes distintas que deben reconstruirse componente por componente.',
-        premises: 'La venta de fincas no hipotecadas por 400.000 € constituye una línea separada de la dación de los 159 apartamentos hipotecados y exige su propio rastro bancario, contable y registral.',
-        procedure: 'La reconstrucción de 2022 muestra por qué no existe un remedio universal para todo el perímetro: cada acto, consecuencia y titular afectado requiere su propio análisis procesal.',
-        generic: 'La página específica concilia la oferta, el crédito, el auto, la escritura, los 400.000 € y las cuentas sin convertir hipótesis internas en conclusiones judiciales.'
+        valuation: 'Las valoraciones son piezas probatorias, pero no determinan por sí solas la adjudicación. La reconstrucción separa crédito reconocido, responsabilidad hipotecaria, umbral del tercer oferente, venta de 400.000 € y eventual contraprestación notarial.',
+        perimeter: 'La continuidad CAM/JDAM → HNT/MYND debe separar control material, competencia real, adjudicación judicial, escritura, registro y sucesión societaria. Un tercer oferente documentó una propuesta de 14,8 M€; su tratamiento procesal sigue bajo reconstrucción.',
+        finance: 'Las valoraciones, necesidades de inversión y fuentes de financiación posteriores aportan contexto y contraste; no convierten por sí solas el umbral competitivo o una oferta de tercero en precio jurídico de realización o remanente.',
+        credit: 'Crédito concursal reconocido, límites hipotecarios, umbral exigido al tercer oferente y eventual deuda compensada en escritura son magnitudes distintas. La reconstrucción las sigue componente por componente.',
+        premises: 'Los 400.000 € por bienes no hipotecados constituyen una línea separada de los componentes hipotecarios de 13.168.082,02 € y exigen su propio rastro bancario, contable, notarial y registral.',
+        procedure: 'La propuesta documentada de un tercer oferente por 14,8 M€ convierte la competencia de 2021 en un punto de control real. El expediente debe mostrar su presentación, requisitos, licitación, desenlace y efecto para la masa.',
+        generic: 'La página específica reconstruye oferta, competencia, crédito, autos, escritura, 400.000 € y cuentas sin convertir umbrales o hipótesis en conclusiones judiciales.'
       }
     } : {
-      versionTitle: 'Version control and prior use',
+      versionTitle: 'Version, source and prior-use control',
       versionLead: 'Several non-identical internal versions of this work are preserved. Related versions were circulated to legal advisers in March 2026. That circulation proves internal consultation and awareness, but does not by itself prove filing, admission, argument or judicial determination.',
-      versionRule: 'The procedural novelty of each fact or argument must be tested against the court record, previous submissions and existing decisions.',
+      versionRule: 'The highest-ranked source controls: the signed 25 January 2021 order and 29 January court notice correct the number ontology; the 21 February 2022 deed still requires primary rebinding in this review.',
       establishedTitle: 'What is established',
       established: [
-        'Different internal versions exist and their provenance is preserved separately.',
-        'Related versions circulated among legal advisers in March 2026.',
-        'The public reconstruction incorporates corrections required by the primary sources.'
+        'The 25 January 2021 order explains the move from EUR 3,079,104.66 in default interest to the EUR 3,182,000 mortgage cap through later daily accrual.',
+        'The 29 January 2021 notice separates EUR 13,168,082.02 in mortgage components, EUR 400,000 for non-mortgaged assets and EUR 1,145,798.29 in community fees.',
+        'A documented EUR 14.8m proposal by a third-party bidder exists; the bidder identity is anonymised in the public record.'
       ],
-      notEstablishedTitle: 'What that circulation does not establish',
+      notEstablishedTitle: 'What those sources do not yet establish',
       notEstablished: [
-        'That any version was filed, admitted, argued or judicially decided.',
-        'That every fact or argument was procedurally new in 2026.',
-        'That the advisers endorsed the proposed conclusions or remedies.'
+        'That a third-party threshold automatically became recognised insolvency credit or CAM consideration.',
+        'That the third-party bidder met every condition, proved funds or should have received the adjudication.',
+        'The exact content of the 21 February 2022 deed until the primary/certified copy and complete protocol are rebound.'
       ],
       initialPublication: 'Initial publication: 19 August 2026',
-      evidenceReview: 'Latest evidence review: 19 August 2026',
-      correction: 'Correction: provenance and prior circulation of non-identical versions',
-      validationMatter: 'Draft versions and prior use',
-      validationStatus: 'Related versions sent to advisers; filing or judicial use not established',
-      validationNext: 'Compare every version with the court docket, previous submissions, correspondence and decisions',
+      evidenceReview: 'Latest evidence review: 20 August 2026',
+      correction: 'Correction: legal functions of figures, deed source status and anonymised third-party bidder',
+      validationMatter: 'Source hierarchy and competition',
+      validationStatus: 'Primary order and notice located; third-party proposal documented; primary deed rebinding still open',
+      validationNext: 'Complete final orders, testimonios, deed, interest calculation, licitation, EUR 400,000 and final accounts',
       linkTitle: 'The 2022 adjudication reconstruction',
       linkAction: 'Open the documentary reconstruction →',
       cross: {
-        valuation: 'The methodology and representativeness of ACTÚA or other valuations are evidential inputs, but do not by themselves determine nullity. The offer, debt, deed and accounts must be reconciled separately.',
-        perimeter: 'The CAM/JDAM → HNT/MYND continuity must distinguish physical control, judicial adjudication, deed, registration and corporate succession. The 2022 reconstruction fixes those boundaries.',
-        finance: 'Later valuations, investment needs and funding sources provide context and comparison; they do not by themselves prove the legally relevant realisation amount or an insolvency surplus.',
-        credit: 'The insolvency classification of the credit, mortgage caps and the debt used as consideration in 2022 are distinct quantities requiring component-by-component reconstruction.',
-        premises: 'The EUR 400,000 sale of unencumbered properties is a separate line from the dación of the 159 mortgaged apartments and requires its own banking, accounting and register trail.',
-        procedure: 'The 2022 reconstruction shows why there is no universal remedy for the whole perimeter: each act, consequence and affected right-holder requires its own procedural analysis.',
-        generic: 'The dedicated page reconciles the offer, credit, order, deed, EUR 400,000 line and accounts without turning internal hypotheses into judicial findings.'
+        valuation: 'Valuations are evidential inputs, but do not by themselves determine the adjudication. The reconstruction separates recognised credit, mortgage liability, the third-party threshold, the EUR 400,000 sale and any later notarial consideration.',
+        perimeter: 'CAM/JDAM → HNT/MYND continuity must distinguish physical control, real competition, judicial adjudication, deed, registration and corporate succession. A third-party bidder documented a EUR 14.8m proposal; its procedural treatment remains under reconstruction.',
+        finance: 'Later valuations, investment needs and funding sources provide context and comparison; they do not by themselves convert a competitive threshold or third-party offer into the legally relevant realisation price or a surplus.',
+        credit: 'Recognised insolvency credit, mortgage caps, the threshold imposed on a third-party bidder and any debt later set off in the deed are distinct quantities requiring component-by-component reconstruction.',
+        premises: 'The EUR 400,000 non-mortgaged-assets line is separate from the EUR 13,168,082.02 mortgage components and requires its own banking, accounting, notarial and Registry trail.',
+        procedure: 'The documented EUR 14.8m third-party proposal makes the 2021 competition a real control point. The file should show filing, conditions, licitation, outcome and estate effect.',
+        generic: 'The dedicated page reconstructs offer, competition, credit, orders, deed, EUR 400,000 line and accounts without turning thresholds or hypotheses into judicial findings.'
       }
     };
 
@@ -111,7 +111,7 @@
       const section = document.createElement('section');
       section.className = 'section';
       section.id = 'adjudicacion-version-control';
-      section.dataset.liveMarker = 'adjudicacion-version-control-20260819';
+      section.dataset.liveMarker = 'adjudicacion-version-control-20260820';
       section.innerHTML = `
         <div class="shell adjudicacion-provenance-panel">
           <div class="adjudicacion-provenance-box">
@@ -175,7 +175,7 @@
       const section = document.createElement('section');
       section.className = 'section adjudicacion-crosslink-section';
       section.dataset.adjudicacionCrosslink = type;
-      section.dataset.liveMarker = 'adjudicacion-crosslink-20260819';
+      section.dataset.liveMarker = 'adjudicacion-crosslink-20260820';
       section.innerHTML = `
         <div class="shell">
           <aside class="adjudicacion-crosslink" role="note">
