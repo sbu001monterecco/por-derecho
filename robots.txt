@@ -26,6 +26,7 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-enginee
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-case-governance.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-san-telmo.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-por-derecho-foundation.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-por-derecho-technical.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-ac-community-de-facto-administration.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-rhg-open-message.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-jdam-architecture.xml
