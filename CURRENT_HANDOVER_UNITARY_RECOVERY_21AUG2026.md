@@ -167,3 +167,10 @@ deletion-safe for analytical continuity once those files are merged to `main`.
 Private email addresses, privileged communications, native evidence and exact
 private locators remain outside public GitHub and must be re-queried through their
 controlled systems.
+
+For the final six-attachment custody result and reusable closeout method, read
+`archive/THREAD_DELETION_AUDIT_UNITARY_REDIGEST_FINAL_21AUG2026.md`,
+`archive/evidence/THREAD_ATTACHMENT_CUSTODY_MANIFEST_21AUG2026.md` and P22 in
+`archive/CHATGPT_PROMPT_LIBRARY.md`. These controls supersede any interpretation
+that deletion-safe analytical continuity means every uploaded byte has durable,
+provider-independent custody.

@@ -79,5 +79,16 @@ PR A/PR B/PR C sequence. Do not publish quantified causation, operator-income or
 standing conclusions until the calculations and legal-person chain are
 reproducible.
 
+## P22 — Thread deletion and evidence-custody closeout
+Read and execute
+`archive/prompts/THREAD_DELETION_AND_CUSTODY_CLOSEOUT_PROMPT_21AUG2026.md`
+whenever a thread may be deleted or the user asks to preserve files, package the
+record or self-send a closeout. Inventory the complete thread; apply the
+bytes-plus-hash custody statuses; distinguish repository continuity from native
+evidence custody; keep private binaries and locators outside public GitHub; write
+a public-safe manifest; use a branch/PR; and verify the private self-email result.
+Never treat an exact filename, a related source, a compressed variant or a
+temporary scratch copy as proof of byte-identical durable preservation.
+
 ## Universal close-out
 Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.

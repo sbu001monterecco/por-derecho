@@ -52,3 +52,11 @@ and the unitary handover are merged to `main`.
 This conclusion concerns conversational continuity. It does not assert that every
 native evidential item has provider-independent custody or that every open factual
 question has been resolved.
+
+## Final custody addendum
+
+This analytical audit is supplemented by
+`archive/THREAD_DELETION_AUDIT_UNITARY_REDIGEST_FINAL_21AUG2026.md` and
+`archive/evidence/THREAD_ATTACHMENT_CUSTODY_MANIFEST_21AUG2026.md`. Those files
+control the later six-attachment custody result and the narrower verdict
+`DELETION-SAFE WITH OPEN CUSTODY`.
