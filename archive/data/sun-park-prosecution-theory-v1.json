@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-21",
+  "record_id": "SUN-PARK-UNITARY-PROSECUTION-THEORY-20260821",
+  "status_after_merge": "PRESERVED_IN_MAIN_NOT_YET_PUBLIC_SITE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "public_boundary": {
+    "attributed_criminal_allegation": true,
+    "adjudicated_guilt": false,
+    "actor_specific_proof_required": true,
+    "contrary_evidence_required": true,
+    "date_specific_legal_review_required": true
+  },
+  "alleged_objective": "Convert fragmented property and limited Community, creditor, insolvency, professional and administrative powers into apparent whole-hotel authority; neutralise rights and rescue or competing-value routes; consolidate control, project, title, finance and operation; and retain the resulting hotel, income and value.",
+  "participation_model": "SUCCESSIVE_ADOPTION_AND_DIVIDED_FUNCTIONS",
+  "proof_kernel": [
+    "actor_and_legal_person",
+    "capacity",
+    "objective_act",
+    "authority_invoked",
+    "known_limit",
+    "notice",
+    "alleged_criminal_function",
+    "recipient_or_reliance",
+    "decision_or_material_effect",
+    "prejudice",
+    "beneficiary",
+    "causation",
+    "coordination_or_adoption_evidence",
+    "strongest_defence",
+    "missing_discriminator"
+  ],
+  "periodisation": [
+    {"period": "2008", "label": "operating baseline and incomplete title/operation transition"},
+    {"period": "2011-2017", "label": "alleged Community authority, debt, vote and documentary apparatus"},
+    {"period": "2017-2018-03", "label": "credit entry, preparation and PP1041 procedural-neutralisation episode"},
+    {"period": "2018-02-07", "label": "security authority to alleged material-control conversion"},
+    {"period": "2018-2021", "label": "exclusion, works, impairment, project continuity and adjudication route"},
+    {"period": "2022-01-02", "label": "Community/project/title/finance documentary conversion"},
+    {"period": "post-2022", "label": "corporate succession, operation, benefit and post-notice audit"}
+  ],
+  "prosecution_packages": [
+    {"id": "PKG-A", "name": "PP1041 withdrawal authority/authenticity/benefit", "priority": "P0"},
+    {"id": "PKG-B", "name": "Community debt-to-vote-to-authority chain", "priority": "P0"},
+    {"id": "PKG-C", "name": "Security request to 7 June material-control conversion", "priority": "P0"},
+    {"id": "PKG-D", "name": "Living productive unit and funded-exit frustration", "priority": "P0"},
+    {"id": "PKG-E", "name": "Non-convalidated locales transaction and aftermath", "priority": "P0"},
+    {"id": "PKG-F", "name": "Credit-threshold-consideration-accounting bridge", "priority": "P0"},
+    {"id": "PKG-G", "name": "2022 Community/project/bank/levy documentary conversion", "priority": "P0"},
+    {"id": "PKG-H", "name": "Post-notice continuation, benefit and non-correction", "priority": "P0"}
+  ],
+  "actor_classes": [
+    "originators_and_authority_manufacturers",
+    "custodians_certifiers_and_operational_executors",
+    "fiduciary_and_procedural_bridge_actors",
+    "private_adopters_converters_and_beneficiaries",
+    "professional_and_documentary_converters",
+    "institutional_adopters_or_non_correctors",
+    "downstream_holders_operators_and_benefit_retainers"
+  ],
+  "mandatory_corrections": [
+    "Do not identify Aweswell as the EUR14.8m bidder or winner",
+    "Auto 164/2021 of 18 May 2021 controls the third-party-bidder account",
+    "Treat the two 26 January 2022 acts as clarifications unless signed originals establish otherwise",
+    "Use the controlled February 2018 creditor-substitution dates and 20-day appeal",
+    "No whole-hotel title inference from functional valuation or shorthand",
+    "Use no primary payment evidence identified, not no payment",
+    "Qualify no-authorisation language to the examined record",
+    "No standalone 20 November 2018 minutes unless the primary is located",
+    "No JDAM 5 January 2022 signature claim without native proof",
+    "Correct the 2016 PwC meeting date to 10 June and explain the later 11JUN derivative label",
+    "Keep ownership, attendance, represented and vote-qualified percentages denominator-specific"
+  ],
+  "repository_baseline": {
+    "repo": "sbu001monterecco/por-derecho",
+    "substantive_scan_sha": "9d2977b4d71732bfecf2f6c36f73d7c9df82768b",
+    "current_main_reverified_before_preservation": "207174a38069c7f67696bcfd85305418c0436d6e",
+    "preservation_branch": "codex/prosecution-redigest-deletion-safe-20260821"
+  },
+  "institutional_state_21aug2026": {
+    "fge": "Four Secretaria Tecnica acknowledgements: receipt plus management/routing indicated; no assignment, admission, investigation or merits",
+    "anticorruption": "Receipt acknowledged; electronic-signature/formality cure remains before admission",
+    "fiscalia_tenerife_eg95_2026": "Opened and archived because the matter was already judicialised in DP 748/2026; procedural competence/routing decision, not merits exoneration",
+    "pwc": "19 August preservation/escalation; no substantive reply located; one automatic absence response through 24 August",
+    "grant_thornton": "19 August supplementation to the existing 2024_04 record; no confirmed reopening; automatic absence responses only",
+    "rsm": "19 August supplementation to NNR4-1025C2F66; no new substantive reply; September window remains current"
+  },
+  "website_corrections_before_strengthening": [
+    "Qualify no-possession-order wording to no order identified in the examined record",
+    "Replace autos incompatibles with separate resolutions in apparent tension pending reconciliation",
+    "Recognise the 18 May 2021 node before the January 2022 family",
+    "Correct the PwC meeting to 10 June 2016 with later derivative labelled 11JUN2016",
+    "Apply Auto 164/2021 to the bidder account",
+    "Treat 26 January 2022 acts as clarifications unless originals establish otherwise",
+    "Use no primary payment evidence identified, not no payment",
+    "Do not create a standalone 20 November 2018 ACTA without the primary",
+    "Do not attribute a 5 January 2022 JDAM signature without native proof",
+    "Keep all percentages date- and denominator-specific"
+  ],
+  "implementation_rule": "Create a fresh implementation branch from current main; reconcile primary-order corrections first; do not merge diverged draft PRs wholesale; implement ES/EN parity and privacy/render gates before public deployment.",
+  "repository_modified": true,
+  "email_sent": false,
+  "live_site_modified": false,
+  "deletion_status": {
+    "verdict_after_merge": "DELETION_SAFE_WITH_OPEN_IMPLEMENTATION",
+    "public_site_updated": false,
+    "reason": "The strategy, actor/function matrix, corrections, email state and implementation plan are preserved in main after merge; public deployment remains a separate controlled task."
+  }
+}
