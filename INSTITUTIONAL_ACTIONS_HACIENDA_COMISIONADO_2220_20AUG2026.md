@@ -1,6 +1,6 @@
 # Institutional action control — Hacienda Resolution 28/2026 · Comisionado entry 2220/2026
 
-**Date verified:** 20 August 2026  
+**Date verified:** 21 August 2026
 **Status:** appeal internally received/routed — substantive treatment pending  
 **Subject:** Resolution 28/2026 · expediente/reference `12/2026-0710092416` · RIC / Decreto 224/2022 / MYND Yaiza
 
@@ -8,9 +8,14 @@
 
 - Regional access request: `REGAGE26e00062943259`, presented 7 July 2026 at 23:13:38 to the Consejería de Hacienda y Relaciones con la Unión Europea.
 - Resolution 28/2026, dated 10 August 2026, denied the request in full on the basis of tax-relevant/reserved information.
-- Transparency appeal: `REGAGE26e00072591992`, presented 11 August 2026 at 03:20.
+- Transparency appeal: `REGAGE26e00072326601`, presented 11 August 2026 at 03:20:03 and registered at 03:20:06.
 - A later native certificate issued by the Comisionado de Transparencia y Acceso a la Información Pública de Canarias records internal **Registro de Entrada `2220/2026`**, entered **11 August 2026 at 12:44**, reception mode **SIR**.
-- The certificate summary identifies the appeal against Resolution 28/2026 and the same appeal/file reference, and records the destination as the Servicio de Reclamaciones y Asuntos Generales of the Comisionado.
+- The certificate summary identifies the appeal against Resolution 28/2026, repeats `12/2026-0710092416` as the underlying Hacienda expediente in the subject, and records the destination as the Servicio de Reclamaciones y Asuntos Generales of the Comisionado.
+- The certificate's `Nº Expediente Vinculado` field is blank. No separate Comisionado appeal expediente is therefore evidenced by that certificate; `2220/2026` is the incoming-register entry.
+
+## Identifier correction — 21 August 2026
+
+An earlier repository version used unsupported registration `REGAGE26e00072591992` and sometimes described `12/2026-0710092416` as the internal Comisionado appeal file. The controlling RedSARA receipt and Comisionado certificate establish the four-way distinction above. The superseded registration must not be reused.
 
 ## Controlling effect
 
@@ -69,7 +74,7 @@ Future threads needing exact certificate wording should re-query Gmail/File Libr
 
 ## Finite follow-up
 
-1. Track any Comisionado allocation, admission, urgency decision, request for observations, access order, partial-access outcome or merits resolution against `REGAGE26e00072591992`, `12/2026-0710092416` and internal entry `2220/2026`.
+1. Track any Comisionado allocation, admission, urgency decision, request for observations, access order, partial-access outcome or merits resolution against RedSARA registration `REGAGE26e00072326601`, underlying Hacienda expediente `12/2026-0710092416` and Comisionado incoming-register entry `2220/2026`. Do not invent a linked appeal expediente while the certificate field remains blank.
 2. Preserve the distinction between the Canary administrative idoneidad file and the separate state AEAT access route.
 3. Keep the prepared Series F/G supplement marked **unfiled** unless/until a new registration receipt proves presentation.
 4. Calculate future deadlines from the legally relevant notified procedural event, not merely from this internal-entry certificate.
