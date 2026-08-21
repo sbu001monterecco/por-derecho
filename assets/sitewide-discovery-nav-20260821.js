@@ -59,3 +59,31 @@
     });
   });
 })();
+
+/* PUBLIC-OUTREACH-CLARITY-ROUTE-LOADER-20260821 */
+(() => {
+  const normalise = value => {
+    let path = value.replace(/\/index\.html$/, '/');
+    if (!path.endsWith('/')) path += '/';
+    return path.toLowerCase();
+  };
+  const path = normalise(location.pathname);
+  const routes = [
+    '/es/carta-abierta-trabajadores-acosta-matos/',
+    '/en/open-letter-workers-acosta-matos/',
+    '/es/carta-abierta-trabajadores-mynd-yaiza/',
+    '/en/open-letter-workers-mynd-yaiza/',
+    '/es/colaborar/',
+    '/en/collaborate/'
+  ];
+  if (!routes.some(route => path.endsWith(route))) return;
+  if (document.querySelector('script[data-public-outreach-clarity-loader]')) return;
+
+  const current = document.currentScript;
+  if (!current) return;
+  const module = document.createElement('script');
+  module.src = new URL('public-outreach-clarity-20260821.js?v=20260821a', current.src).href;
+  module.async = false;
+  module.dataset.publicOutreachClarityLoader = '20260821';
+  document.head.appendChild(module);
+})();
