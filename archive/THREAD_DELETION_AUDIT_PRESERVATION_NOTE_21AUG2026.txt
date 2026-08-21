@@ -1,0 +1,1 @@
+The repository carries the final audit record and source-status correction. Native Gmail evidence remains in the connected mailbox. The repository does not reproduce privileged email bodies.
