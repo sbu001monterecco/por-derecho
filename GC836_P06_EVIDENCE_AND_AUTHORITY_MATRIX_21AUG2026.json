@@ -1,0 +1,48 @@
+{
+  "record": "GC/836/P06",
+  "updated": "2026-08-21",
+  "status": "open documentary reconciliation",
+  "scope_lock": "This matrix does not state that prohibited double funding, fraud, EU funding or criminality is established.",
+  "project_chain": [
+    "Sun Park",
+    "RIC Private Equity investor/materialisation phase",
+    "Construcciones Acosta Matos -> Hotel New Trend segregation",
+    "MYND Yaiza",
+    "RIC/idoneidad",
+    "GC/836/P06 regional incentives",
+    "EU/ERDF traceability if independently established"
+  ],
+  "fields_to_lock": [
+    {"field": "applicant_beneficiary", "status": "requires primary file"},
+    {"field": "project_holder", "status": "requires primary file"},
+    {"field": "title_or_availability_basis", "status": "requires primary file"},
+    {"field": "application_date", "status": "requires primary file"},
+    {"field": "grant_decision_date", "status": "requires primary file"},
+    {"field": "eligible_investment", "status": "requires primary file"},
+    {"field": "eligible_cost_schedule", "status": "requires primary file"},
+    {"field": "project_start_and_works_start", "status": "requires primary file"},
+    {"field": "financing_plan", "status": "requires primary file"},
+    {"field": "other_aid_cumulation_declarations", "status": "requires primary file"},
+    {"field": "invoices_and_proof_of_payment", "status": "requires primary file"},
+    {"field": "certifications_and_verifications", "status": "requires primary file"},
+    {"field": "employment_commitments_and_checks", "status": "requires primary file"},
+    {"field": "payment_history", "status": "requires primary file"},
+    {"field": "closure_correction_or_recovery", "status": "requires primary file"},
+    {"field": "eu_erdf_operation_identifier", "status": "not established in this control"}
+  ],
+  "authority_routes": [
+    {"body": "Regional Incentives competent authority", "purpose": "complete GC/836/P06 merits and payment file"},
+    {"body": "Gobierno de Canarias - RIC/idoneidad competent authority", "purpose": "Decree 224/2022, application, reports, amendments and Series F/G coverage"},
+    {"body": "Intervencion General de Canarias", "purpose": "referral traceability and control remit; not a general merits certificate"},
+    {"body": "Direccion General del Tesoro y Politica Financiera", "purpose": "Treasury/payment/liquidity custody where competent and custodian identification where not"},
+    {"body": "European-funds managing/intermediate body", "purpose": "only if an EU/ERDF operation is independently identified"},
+    {"body": "Transparency authorities", "purpose": "lawful access, partial access, metadata and custodian routing"},
+    {"body": "SNCA/IGAE and competent prosecutorial bodies", "purpose": "separate integrity/criminal routes where objective evidence meets their remit"}
+  ],
+  "terminology": {
+    "RIC": "Reserva para Inversiones en Canarias - statutory tax mechanism",
+    "RIC_Private_Equity": "separately named regulated investment vehicle; not the statutory RIC mechanism",
+    "HNT": "Hotel New Trend, S.L./S.L.U. as later project-company layer",
+    "MYND_Yaiza": "later hotel/operational identity associated in the source architecture with Hotel New Trend"
+  }
+}
