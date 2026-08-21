@@ -1,0 +1,81 @@
+name: Verify Meeting Point final propagation live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/traceability-crosslinks-20260821.js'
+      - 'assets/site.js'
+      - '.github/workflows/verify-meeting-point-final-propagation-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+
+      - name: Use preinstalled browser
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$BROWSER_PATH"
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+
+      - name: Verify rendered Meeting Point propagation on ES and EN routes
+        run: |
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const base = 'https://sbu001monterecco.github.io/por-derecho';
+          const sha = process.env.GITHUB_SHA || 'manual';
+          const targets = [
+            { key: 'lava-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'No'] },
+            { key: 'lava-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'do not'] },
+            { key: '357-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['Límite 357/2024', 'Auren', 'impropiedad'] },
+            { key: '357-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['357/2024 boundary', 'Auren', 'improper'] },
+            { key: 'takeover-es', url: `${base}/es/toma-control-sun-park-7-junio-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] },
+            { key: 'takeover-en', url: `${base}/en/sun-park-takeover-7-june-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] }
+          ];
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true, executablePath: process.env.PSR_BROWSER_PATH });
+            let ok = false;
+            let last = [];
+            for (let attempt = 1; attempt <= 36; attempt++) {
+              ok = true;
+              last = [];
+              for (const t of targets) {
+                const page = await browser.newPage();
+                try {
+                  await page.goto(t.url, { waitUntil: 'networkidle', timeout: 60000 });
+                  const el = page.locator(t.selector);
+                  const count = await el.count();
+                  const text = count ? await el.innerText() : '';
+                  const markers = Object.fromEntries(t.markers.map(m => [m, text.includes(m)]));
+                  const passed = count === 1 && Object.values(markers).every(Boolean);
+                  ok = ok && passed;
+                  last.push({ key: t.key, count, markers, passed });
+                } catch (err) {
+                  ok = false;
+                  last.push({ key: t.key, error: String(err), passed: false });
+                } finally {
+                  await page.close();
+                }
+              }
+              console.log(JSON.stringify({ attempt, ok, last }, null, 2));
+              if (ok) break;
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+            await browser.close();
+            if (!ok) process.exit(1);
+          })().catch(err => { console.error(err); process.exit(1); });
+          NODE
