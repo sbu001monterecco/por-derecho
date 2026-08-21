@@ -19,6 +19,7 @@ Private operational ledger:
    - **OPEN ACTION:** a ready-to-sign package has been prepared and hash-checked privately. It has not been signed, sent or filed. Preserve the signed PDF, signature-validation result and filing receipt when the authorised filing occurs.
 2. **National LAJ / Justice leg:** `REGAGE26e00073341477` was later rejected. This supersedes earlier shorthand that the third national leg completed an effective three-part chain. Obtain the rejection reason and re-file only if appropriate.
 3. **RICPE ethics channel:** a 19 August notice reported additional information in the existing channel. Read/export/preserve it before another broad RICPE escalation or any characterization of the channel's current position.
+4. **Professional-firms redigest:** read `archive/PROFESSIONAL_FIRMS_ADVERSE_PERIMETER_REVERSE_ENGINEERING_21AUG2026.md` before any new PwC, Grant Thornton, RSM/San Telmo or combined adverse-perimeter communication. Do not send a collective email. PwC and Grant Thornton have existing response windows; RICPE remains behind the channel-export gate. A later RSM closure is reported in continuity context but the native incoming message was not located in the retrievable RSM thread during the 21-August scan, so the public RSM page must remain unchanged until that source is recovered.
 
 ## Do-not-duplicate control
 
