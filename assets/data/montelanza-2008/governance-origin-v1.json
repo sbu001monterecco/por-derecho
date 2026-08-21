@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0",
+  "controlDate": "2026-08-21",
+  "status": "ACTIVE_INVESTIGATION_NOT_A_GUILT_FINDING",
+  "canonicalControl": "archive/MONTELANZA_2008_GOVERNANCE_ORIGIN_CRIMINAL_FORENSIC_CONTROL_21AUG2026.md",
+  "retrievalGate": "archive/MONTELANZA_2008_GOVERNANCE_ORIGIN_RETRIEVAL_GATE_21AUG2026.md",
+  "sourceManifest": "assets/data/montelanza-2008/manifest.json",
+  "sourceBoundary": {
+    "scanControlsOverOcr": true,
+    "accountsProveAccountingRepresentations": true,
+    "purchaserIdentityProvedByAccounts": false,
+    "communitySuccessionProvedByAccounts": false,
+    "criminalCaptureProved": false,
+    "historicalRicEqualsLaterRicpe": false
+  },
+  "verifiedFacts": [
+    {
+      "id": "ML2008-OPERATING-OBJECT",
+      "page": 11,
+      "status": "PRIMARY_VERIFIED_FACT",
+      "proposition": "Montelanza's corporate object included real-estate and hotel/tourism operation."
+    },
+    {
+      "id": "ML2008-TURNOVER",
+      "page": 10,
+      "status": "PRIMARY_VERIFIED_FACT",
+      "amountEur": "1304632.79",
+      "components": {"sales": "411450.94", "services": "893181.85"}
+    },
+    {
+      "id": "ML2008-PERSONNEL",
+      "page": 10,
+      "status": "PRIMARY_VERIFIED_FACT",
+      "amountEur": "368746.75"
+    },
+    {
+      "id": "ML2008-SALE-17JUN",
+      "date": "2008-06-17",
+      "page": 12,
+      "status": "PRIMARY_DOCUMENTARY_REPRESENTATION",
+      "amountEur": "1368000.00",
+      "proposition": "Montelanza states that the sale, parallel to apartment sales by some owners, meant cessation of its activity and making transferred assets available to the purchaser for operation.",
+      "open": ["purchaser identity", "finca schedule", "deed", "legal operating succession"]
+    },
+    {
+      "id": "ML2008-UNSOLD-OPTION",
+      "date": "2008-06-17",
+      "page": 12,
+      "status": "PRIMARY_DOCUMENTARY_REPRESENTATION",
+      "premises": 11,
+      "expiry": "2010-12-31"
+    },
+    {
+      "id": "ML2008-FIXED-ASSET-DISPOSALS",
+      "page": 17,
+      "status": "PRIMARY_VERIFIED_FACT",
+      "initialCostEur": "3232654.69",
+      "disposalsEur": "3064576.00",
+      "finalNetBookValueEur": "119820.01"
+    },
+    {
+      "id": "ML2008-NET-EQUITY",
+      "page": 9,
+      "status": "PRIMARY_VERIFIED_FACT",
+      "amountEur": "-321742.56"
+    },
+    {
+      "id": "ML2008-LOSS",
+      "page": 10,
+      "status": "PRIMARY_VERIFIED_FACT",
+      "amountEur": "-1550210.37"
+    },
+    {
+      "id": "ML2008-HISTORIC-RIC-DIC",
+      "page": 18,
+      "status": "PRIMARY_VERIFIED_FACT_WITH_TABLE_RECONCILIATION_LIMIT",
+      "separationRule": "HISTORIC_MONTELANZA_RIC_DIC_NOT_LATER_RICPE_HNT"
+    }
+  ],
+  "transitionNodes": [
+    {
+      "id": "T-2008-CEXP",
+      "date": "2008-04-29",
+      "status": "CONTROLLED_IN_CURRENT_COMMUNITY_DOSSIER",
+      "question": "Which owners participated and what exact operating/common-cost authority was delegated?"
+    },
+    {
+      "id": "T-2008-SALE",
+      "date": "2008-06-17",
+      "status": "PARTIALLY_PROVED",
+      "dependencies": ["12-Mar option", "sale deed", "parallel apartment deeds", "purchaser identity"]
+    },
+    {
+      "id": "T-2008-OWNER-STRUCTURE",
+      "date": "2008-07-15",
+      "status": "CONTROLLED_SOURCE_FAMILY_REQUIRES_COMPLETE_NATIVE_PACKAGE",
+      "question": "What did LPB, Montelanza, participating owners and residual owners hold after the transition?"
+    },
+    {
+      "id": "T-2010-OPTION-END",
+      "date": "2010-12-31",
+      "status": "OPEN",
+      "question": "Was the 11-premises option exercised, extended, waived or expired?"
+    },
+    {
+      "id": "T-2011-AAS-PRESIDENCY",
+      "date": "2011-02-02",
+      "status": "CURRENT_REPOSITORY_CHRONOLOGY",
+      "question": "What appointment, owner/quota base and authority supported the presidency?"
+    },
+    {
+      "id": "T-2011-FMMM-ADMINISTRATION",
+      "date": "2011-06-22",
+      "status": "CURRENT_REPOSITORY_CHRONOLOGY",
+      "question": "What appointment, contract, powers, bank/book custody and remuneration supported the administrator role?"
+    },
+    {
+      "id": "T-2017-CAM-ENTRY",
+      "period": "2017",
+      "status": "ROLE_AND_DATE_RECONCILIATION_REQUIRED",
+      "question": "What credit and units did CAM acquire, at what price, and what independent Community power followed?"
+    },
+    {
+      "id": "T-2018-MATERIAL-CONTROL",
+      "date": "2018-06-07",
+      "status": "SOURCE_SUPPORTED_MATERIAL_CONTROL_NOT_WHOLE_HOTEL_TITLE",
+      "question": "Which Community/AC authority was invoked and what acts exceeded or stayed within it?"
+    }
+  ],
+  "governanceCaptureHypothesis": {
+    "status": "CRIMINAL_FORENSIC_HYPOTHESIS_NOT_PROVED",
+    "chain": [
+      "owner register and debt",
+      "voting entitlement",
+      "office and record custody",
+      "collective representation",
+      "operation and expense narrative",
+      "keys security and access",
+      "external reliance on Community documents",
+      "CAM entry and project",
+      "later formalisation"
+    ],
+    "requiredMensReaProof": ["actor-specific knowledge", "purpose", "instruction or agreement", "material use", "benefit", "harm", "causation"]
+  },
+  "counterfactuals": [
+    {
+      "id": "CF-REMOVE-DISPUTED-COMMUNITY-AUTHORITY",
+      "question": "What CAM rights remain before 2022 if only its independently proved credit and identified units are retained?"
+    },
+    {
+      "id": "CF-ASSUME-LAWFUL-GOVERNANCE",
+      "question": "What remains of the criminal-capture thesis if every 2008 succession, 2011 appointment, debt, vote, proxy and security act was valid and independently verified?"
+    }
+  ],
+  "strongestLawfulExplanations": [
+    "Complete lawful 2008 CEXP/LPB/purchaser succession",
+    "Valid residual-owner and Community structure",
+    "Valid AAS/FMMM appointments and debt/voting decisions",
+    "Ordinary CAM creditor/unit-owner conduct",
+    "Proportionate preservation/security measures",
+    "Independent lawful downstream title and financing"
+  ],
+  "publicRoutes": {
+    "es": "/por-derecho/es/montelanza-cuentas-2008/",
+    "en": "/por-derecho/en/montelanza-accounts-2008/"
+  },
+  "fiscaliaPlacement": {
+    "primary": "PRIVATE_EXTRACONCURSAL_ORIGIN_GOVERNANCE_PROPERTY",
+    "secondary": "ECONOMIC_FISCAL_HISTORIC_ASSET_RIC_BASELINE",
+    "notRecommended": "NEW_UNDIFFERENTIATED_GLOBAL_COMPLAINT",
+    "proceduralBlocker": "Anticorrupcion communication requires compliant signature before processing"
+  }
+}

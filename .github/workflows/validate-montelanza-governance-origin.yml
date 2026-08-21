@@ -1,0 +1,43 @@
+name: Validate Montelanza governance-origin package
+on:
+  pull_request:
+    paths:
+      - 'archive/MONTELANZA_2008_GOVERNANCE_ORIGIN_*'
+      - 'archive/THREAD_DELETION_AUDIT_MONTELANZA_GOVERNANCE_ORIGIN_21AUG2026.md'
+      - 'assets/data/montelanza-2008/**'
+      - 'assets/montelanza-governance-origin-20260821.js'
+      - 'assets/site.js'
+      - 'es/montelanza-cuentas-2008/index.html'
+      - 'en/montelanza-accounts-2008/index.html'
+      - 'sitemap-montelanza-governance-origin.xml'
+      - 'robots.txt'
+      - 'publication-manifests/montelanza-governance-origin-2026-08-21.json'
+      - 'operations/MONTELANZA_GOVERNANCE_ORIGIN_ACTIVATION_2026-08-21.md'
+      - 'scripts/validate_montelanza_governance_origin.py'
+      - '.github/workflows/validate-montelanza-governance-origin.yml'
+      - '.github/workflows/verify-montelanza-governance-origin-live.yml'
+  push:
+    branches: ['analysis/montelanza-governance-origin-20260821']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: validate-montelanza-governance-origin-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate Montelanza source, OCR, controls and pages
+        run: python3 scripts/validate_montelanza_governance_origin.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/site.js
+          node --check assets/montelanza-governance-origin-20260821.js
