@@ -156,6 +156,17 @@
   document.head.appendChild(module);
 })();
 
+/* TRACEABILITY-CROSSLINKS-AND-CGPJ-RECEIPT-20260821 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-traceability-crosslinks-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('traceability-crosslinks-20260821.js?v=20260821a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-traceability-crosslinks-loader', '20260821');
+  document.head.appendChild(module);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
