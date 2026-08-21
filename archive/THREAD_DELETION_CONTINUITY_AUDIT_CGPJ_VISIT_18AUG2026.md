@@ -85,7 +85,7 @@ The following decisions are preserved in Git and therefore do not depend on the 
    - November 2018 transaction / EUR 400,000 / non-validation / implementation;
    - physical protection / access / operating unity;
    - supervision of the Insolvency Administrator;
-   - material competition — ONA / Ottawa / May 2021;
+   - material competition — ONA / third-party bidder / May 2021;
    - adjudication → office instrument → deed → Registry → final accounts.
 5. **Three knowledge levels:** direct judicial knowledge; Administrator knowledge/reporting duty; external/later context. Administrator knowledge is not automatically attributed to the Judge.
 6. **Irreversibility test:** known risk → supervisory power → identifiable response → patrimonial consequence → later corrective opportunity.

@@ -28,7 +28,7 @@ This addendum does not erase the earlier missing-evidence register. It records w
 | `ME-OC-20` | Registry 9-Jan-2019 + continuation | **PARTIAL** | full finca-by-finca Registry history through 2022 | protocol 2.150 + fincas 8508–8536, 8653, 8654 + continuation/cancellation/adjudicación |
 | `ME-OC-21` | AC escrito 1760/2019 + annexes | **SUBSTANTIALLY CLOSED** | docket completeness check against court file if needed | `1760/2019`, 20-Mar-2019, protocol 2.150 |
 | `ME-OC-22` | €400k economic reconciliation | **PARTIAL / NARROWED** | purchaser debit → estate credit → full ledger → exact payees → reversal/refund/setoff/restitution → final reconciliation | `400.000`, protocol 2150, quarterly reports 2019–21, non-convalidación, devolución/reintegro |
-| `ME-OC-23` | 2021 tender disclosure + 2021–22 bridge | **PARTIAL / NARROWED** | bidder pack, publicity evidence, Ottawa communications, 25-Oct AC report, 26-Jan-2022 acts, isolated 21-Feb deed, Registry bridge | Ottawa, 735.694,02, 14.800.000, 18-May, 15-Oct, 25-Oct, 26-Jan, 21-Feb |
+| `ME-OC-23` | 2021 tender disclosure + 2021–22 bridge | **PARTIAL / NARROWED** | bidder pack, publicity evidence, third-party bidder communications, 25-Oct AC report, 26-Jan-2022 acts, isolated 21-Feb deed, Registry bridge | third-party bidder, 735.694,02, 14.800.000, 18-May, 15-Oct, 25-Oct, 26-Jan, 21-Feb |
 | `ME-OC-24` | 2018 rescue/exit financing | **UNCHANGED** | transaction-level funding/conditions/availability evidence | use existing ONA/Cuatrecasas/Gesvalt gate |
 | `OE-ANNEX5-FINAL` | exact final filed Annex 5 binary | **OPEN** | binary whose SHA-512 matches official REGAGE `5132791e…1039` | filing-thread attachments, final source folder, local pre-filing outputs |
 | `OE-2022-DEED` | isolated 21-Feb-2022 deed/title | **OPEN — CONTROLLED REPRODUCTION EXISTS** | standalone primary deed + notary/protocol + Registry presentation | exact reproduced phrase + `13.168.082,02` + 21-Feb-2022 |
@@ -51,7 +51,7 @@ A later pleading naming an Auto is not enough to primary-close the act. Obtain t
 Receipt/application is now partially primary-verified. Full closure requires the complete economic reversal/reconciliation chain after non-convalidation.
 
 ### 2021 bidder process
-The signed 18-May/15-Oct orders prove the judicial procedure described by the court. They do not authenticate the exact documents or disclosures actually delivered to Ottawa/other potential bidders. Full closure requires the bidder/publicity/disclosure pack.
+The signed 18-May/15-Oct orders prove the judicial procedure described by the court. They do not authenticate the exact documents or disclosures actually delivered to third-party bidder/other potential bidders. Full closure requires the bidder/publicity/disclosure pack.
 
 ### 2022 title bridge
 A later annex reproducing deed text is not equivalent to possession of the isolated signed deed.

@@ -1,5 +1,7 @@
 # CURRENT HANDOVER — CONCURSO 36/2012 JUDICIAL SPINE
 
+> **SUPERSEDED BY THE PRIMARY-AUTOS REDIGEST — LATER 21 AUGUST 2026.** The missing-primary assumptions below were overtaken by recovery and complete reading of Auto 164/2021, both 15-October Autos and both 26-January clarification Autos. Protocol 457 itself says 26 January on page 10 and 22 January on page 11; the signed judicial originals are dated 26 January. Use `archive/CONCURSO_36_2012_PRIMARY_AUTOS_REDIGEST_HANDOVER_21AUG2026.md` and `assets/data/concurso36-what-court-ordered-v1.json` as current control.
+
 **Date:** 21 August 2026  
 **Workstream:** critical Autos / adjudication / deed / Registry / accounting implementation  
 **Canonical internal control:** `archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md`  

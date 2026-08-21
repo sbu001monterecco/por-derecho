@@ -28,7 +28,7 @@ Each record must identify:
 | `SRC-` | source |
 | `GAP-` | evidence gap |
 
-IDs are stable. Correct the data behind an ID rather than silently replacing it.
+IDs are stable. Correct the data behind an ID rather than silently replacing it. If a date-bearing ID is itself disproved by primary-source reinspection, replace it consistently, preserve the former identifier in `legacy_ids`, mark the reason in the source notes, and update every cross-reference in the same change.
 
 ## Date discipline
 

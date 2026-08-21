@@ -81,7 +81,7 @@ A dashboard status of `100% OF PRESENTLY RECOVERABLE DOCKET ACCOUNTED FOR` requi
 **Batch A control:** material P1 acts previously enumerated for 2012–2017 are recovered; denominator reconciliation for the period remains open.  
 **Batch B — 2018 full act family:** credit succession, plan, clarifications, publication, suspension, insufficiency, LAJ publication acts.  
 **Batch C — 2019–2020 non-convalidation / standing / appeal family.**  
-**Batch D — 2021 tender / asset-preservation / adjudication / appeal family:** 18-May and one 15-Oct primary-closed; bidder disclosure pack, 25-Oct underlying report and remaining same-date acts still open.  
+**Batch D — 2021 tender / asset-preservation / adjudication / appeal family:** 18-May, both separate 15-Oct acts and both 26-Jan clarifications are primary-controlled; bidder disclosure/attendance/service/finality context, 25-Oct underlying report and downstream economic implementation remain open.
 **Batch E — 2022 review / finality / correction family:** isolated 21-Feb deed and 26-Jan act family remain material.  
 **Batch F — 2023 Calificación:** scheduling and counsel-participation acts closed; certified Vista minute, full official media index, individual service/exhort returns and person-by-person disposition of the 26-Jul programme remain P1.
 

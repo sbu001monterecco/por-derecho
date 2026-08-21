@@ -46,7 +46,7 @@ This register prevents the project from describing an act as final merely becaus
 - 25-Jan-2021: Auto sets/publicises conditions for possible competing offer.
 - LPB/Aweswell reposiciones.
 - 6-May-2021: same-date judicial act family includes denial of reposiciones against 25-Jan route and separate nullity ruling.
-- 12-May-2021: complete Alberto-signed Providencia opens licitación and sets Ottawa bond.
+- 12-May-2021: complete Alberto-signed Providencia opens licitación and sets third-party bidder bond.
 - 18-May-2021: later appeals state a judicial Auto definitively approved CAM's proposal after the anticipated bidder failed to attend/participate; **signed primary binary remains P1**.
 - 15-Oct-2021: later same-date Auto family resolves reposiciones concerning May acts.
 - 26-Jan-2022: clarification Auto family.

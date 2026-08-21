@@ -1,0 +1,60 @@
+{
+  "publication_id": "CONCURSO36-PRIMARY-AUTOS-REDIGEST-20260821",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-21",
+  "publication_type": "bilingual primary-order reader, public-safe forensic archive and repository-wide correction propagation",
+  "current_state": "DRAFT",
+  "branch": "codex/concurso36-primary-autos-redigest-20260821",
+  "base_sha_at_validation": "9d2977b4d71732bfecf2f6c36f73d7c9df82768b",
+  "validated_head_sha": null,
+  "controlling_pr": null,
+  "purpose": "Reconstruct what the court authorised, refused, conditioned or clarified; keep asset, title, control, debt, implementation and surplus functions separate; and propagate primary-source corrections without converting evidential gaps into allegations.",
+  "expected_routes": {
+    "es": ["es/concurso-36-2012-que-ordeno-el-juzgado/index.html"],
+    "en": ["en/concurso-36-2012-what-the-court-ordered/index.html"]
+  },
+  "expected_source_files": [
+    "assets/data/concurso36-what-court-ordered-v1.json",
+    "archive/CONCURSO_36_2012_PRIMARY_AUTOS_REDIGEST_HANDOVER_21AUG2026.md",
+    "archive/concurso36-primary-autos-21aug2026/README.md",
+    "archive/concurso36-primary-autos-21aug2026/PUBLIC_DERIVATIVE_SHA256SUMS.txt",
+    "scripts/validate_concurso36_primary_autos_redigest.py",
+    ".github/workflows/validate-concurso36-primary-autos-redigest.yml",
+    "sitemap-concurso36-court-orders.xml"
+  ],
+  "controlling_corrections": [
+    "Creditor-substitution ruling body dated 8 February 2018; Judge signature 9 February; LAJ signature 14 February; later 15 February filename/notification label; stated remedy 20-day appeal.",
+    "Auto 164/2021 dated 18 May 2021 records third-party nonappearance and no bond and definitively approves CAM's proposal.",
+    "Two distinct Autos dated 15 October 2021 and two distinct clarification Autos dated 26 January 2022 must not be collapsed.",
+    "Protocol 457 internally recites 26 January on page 10 and 22 January on page 11; this is a notarial reconciliation target, not proof of a distinct judicial order.",
+    "The complete canonical 4 June 2018 clarification copy has three pages.",
+    "The plan excludes property owned by others; functional hotel or valuation shorthand does not transfer Matkator or other third-party title.",
+    "No primary evidence of payment has yet been identified; this proves neither that a legally payable surplus arose nor that it went unpaid."
+  ],
+  "privacy_and_custody": {
+    "public_repo": "Name-sanitised analytical derivatives, source identifiers, hashes, quotations within evidential need, structured records and gap controls.",
+    "restricted_custody": "Raw or unredacted judicial, notarial, Registry, banking, tax, email and litigation binaries remain outside public Git.",
+    "external_bundle_sha256": "b5e1b2ad71259f2be1d4d2c3e8d91b842a4152a101218e8f43cb98f0ee08be85",
+    "completeness_limit": "The public repository update does not claim complete native-binary custody or a certified complete court-file denominator."
+  },
+  "validation": {
+    "result": "PASS",
+    "checks": [
+      "validate_concurso36_primary_autos_redigest.py",
+      "validate_public_bidder_anonymisation.py",
+      "audit_adjudicacion_legacy_language.py",
+      "validate_insolvency_perimeter_language.py",
+      "validate_mission_critical_repo.py",
+      "validate_publication_integrity.py",
+      "validate_supervisory_practice.py",
+      "JSON, XML, YAML and changed-JavaScript syntax parsing",
+      "new ES/EN routes, JSON and specialist sitemap returned HTTP 200 on a local static server",
+      "git diff --check"
+    ],
+    "browser_note": "Full browser screenshot rendering was attempted but no local browser executable was installed; static route, structure, parser and responsive-source controls passed."
+  },
+  "live_verification": {
+    "status": "NOT_LIVE_NOT_MERGED",
+    "note": "A feature-branch source update is not a live-site deployment. Independent public-edge verification remains a post-merge gate."
+  }
+}

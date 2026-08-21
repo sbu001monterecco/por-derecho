@@ -10,7 +10,7 @@ Knowledge is recorded as an evidential chronology, not as a conclusion of bad fa
 | 12 May 2017 | LPB → Haya | SWAP, two mortgages, convenio, viability and offers | email and attachments | party figures/merits not admitted by receipt | who reviewed, forwarded, decided or ignored |
 | 6 Dec 2017 | LPB → assignor/assignee/advisers | prior dispute; deed, price and payment requested | formal demand | no automatic finding of concealment/non-compliance | CAM's knowledge at proposal, substitution and later conduct |
 | 15 Jan 2018 | CAM/LPB direct proposal lane | debt, valuation and dación architecture | contemporaneous proposal record | no finding of pacto comisorio, bad faith or invalidity | valuation, surplus, scope of assets, alternatives |
-| 15 Feb 2018 | CAM / AC / court | creditor substitution and adverse Article 1535 ruling | court order | carry appeal/finality and mixed corrections | documents verified, estate interest, later reliance |
+| 8 Feb 2018 (Judge-signed 9 Feb; LAJ-signed 14 Feb; `15FEB2018` filename/notification alias) | CAM / AC / court | creditor substitution and adverse Article 1535 ruling | court order; 20-day appeal stated | carry appeal/finality and mixed corrections | documents verified, estate interest, later reliance |
 | 2022 segregation | CAM/HNT | transfer of Sun Park economic unit by universal succession | official notice | liability schedule not established | HNT's acquired liabilities and own later conduct |
 
 ## Attribution tests

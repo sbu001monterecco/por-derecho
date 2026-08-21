@@ -4,6 +4,8 @@
 **Branch:** `agent/public-authority-forensic-os`  
 **Status:** `IMPLEMENTED ON REVIEW BRANCH — PENDING PR / MERGE / PAGES VERIFICATION`
 
+> **21-AUG-2026 SOURCE UPDATE.** The complete three-page authentic electronic 4-Jun-2018 Auto is now controlled from Gmail `194a98a11920fefd`; body 4-Jun, Judge signature 5-Jun, LAJ Águeda Reyes Almeida signature 6-Jun. References below to a 4-Jun completeness gap are superseded; the older two-page derivative remains an incomplete alias.
+
 ## Purpose
 
 Record the implementation of the multidisciplinary, LegalTech, authority-UX and parallel criminal/investigative/forensic architecture requested for Por Derecho.
@@ -171,7 +173,7 @@ The site does **not** state that a court-appointed forensic auditor currently ex
 - machine-readable canonical seed: **~65% of the currently selected high-level architecture, intentionally not a complete case database**;
 - unit/finca 2008 reconstruction: **open / major keystone gap**;
 - pivotal 2011 root-of-authority reconstruction: **open / major keystone gap**;
-- 2018 selected court-act source control: **strong, with 4-Jun completeness gap**;
+- 2018 selected court-act source control: **strong; 4-Jun primary completeness closed, substantive figure/implementation reconciliation still open**;
 - later institutional dependency population: **partial**;
 - whole-case criminal/forensic conclusions: **not mature for global conclusion**.
 
@@ -183,7 +185,7 @@ The site does **not** state that a court-appointed forensic auditor currently ex
 4. bind actual complete 2018/2019/2022 ACTAs and annexes;
 5. populate institution-receipt ledgers from exact Yaiza/Cabildo/CNMV/Fiscalía/funding source records;
 6. reconcile funding DD/waivers/source-and-use/costs/jobs/title;
-7. recover the complete 4-Jun-2018 Auto continuation/signature copy;
+7. capture the promoted 4-Jun-2018 Auto's full-file hash/alias equivalence and reconcile its debt figures and implementation effect;
 8. run nominal-vs-reconstructed majority and counterfactual validity calculations when the unit source is sufficient.
 
 ## Publication boundary

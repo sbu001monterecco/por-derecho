@@ -65,7 +65,7 @@ The defence will say:
 - the transaction extinguished debt rather than creating a future appropriation option;
 - the liquidation route was judicially authorised;
 - ACTÚA was a professional valuation and competing appraisals served different purposes;
-- the 15 February 2018 order recognised CAM as assignee and rejected LPB's strict Article 1535 position;
+- the body-dated 8 February 2018 order recognised CAM as assignee and rejected LPB's strict Article 1535 position; Judge signature 9 February, LAJ signature 14 February, `15FEB2018` filename/notification alias and stated 20-day appeal remain separately typed metadata;
 - alternative transactions were conditional;
 - later registry and third-party rights may survive independently.
 

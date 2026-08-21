@@ -221,7 +221,7 @@ The court denied the requested judicial inspection and expert valuation, treated
 
 #### 12 May 2021 — later tender includes the same locals/pools
 
-The signed providencia opened bidding among interested offerors for LPB's listed fincas and expressly included the `locales` and `piscinas con solárium` with registry numbers 8.508–8.536, 8.653 and 8.654, scheduling the tender for 18-May-2021. It fixed Ottawa's bond at **€735,694.02**.
+The signed providencia opened bidding among interested offerors for LPB's listed fincas and expressly included the `locales` and `piscinas con solárium` with registry numbers 8.508–8.536, 8.653 and 8.654, scheduling the tender for 18-May-2021. It fixed the third-party bidder's bond at **€735,694.02**.
 
 This is a strong later-status anchor: the court was again tendering the same property perimeter as property of LPB after the 2018 deed had not been convalidated.
 

@@ -33,14 +33,22 @@
     "causation_questions": ["Was valuation objective and independent?", "How was surplus protected?", "Which properties and third-party rights were assumed?", "What alternative refinancing or convenio routes remained?"]
   },
   {
-    "id": "CD-2018-02-15-CAM-RECOGNISED",
-    "date": "2018-02-15",
+    "id": "CD-2018-02-08-CAM-RECOGNISED",
+    "legacy_ids": ["CD-2018-02-15-CAM-RECOGNISED"],
+    "date": "2018-02-08",
+    "date_layers": {
+      "body_date": "2018-02-08",
+      "judge_signature_date": "2018-02-09",
+      "laj_signature_date": "2018-02-14",
+      "filename_notification_alias": "15FEB2018"
+    },
     "actor_refs": ["ACT-CAM", "ACT-INSOLVENCY-ADMIN"],
     "conduct": "CAM recognised as assignee in Concurso 36/2012; Article 1535 position rejected and amounts partly corrected",
     "capacity_status": "judicially_recognised_creditor_subject_to_order_terms",
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "source_refs": ["SRC-COURT-2018-02-08-CREDITOR-SUBSTITUTION"],
+    "stated_remedy": "recurso de apelación within 20 days under Article 97 bis.2 of the then-applicable Insolvency Law",
     "causation_questions": ["What documents did the insolvency administration verify?", "What appeal/finality chain followed?", "What benefit or prejudice arose for the estate?"]
   },
   {

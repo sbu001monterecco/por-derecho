@@ -1,5 +1,7 @@
 # THREAD DELETION AUDIT — CONCURSO 36/2012 JUDICIAL SPINE
 
+> **HISTORICAL AUDIT — SUPERSEDED IN PART LATER 21 AUGUST 2026.** Later primary-source reinspection recovered Auto 164/2021, both 15-October Autos and both 26-January clarification Autos. Protocol 457 internally recites 26 January on page 10 and 22 January on page 11; signed originals dated 26 January control the judicial-act date. Current control is `archive/CONCURSO_36_2012_PRIMARY_AUTOS_REDIGEST_HANDOVER_21AUG2026.md`.
+
 **Date:** 21 August 2026  
 **Thread scope:** reverse-engineering digest of the Por Derecho repository and website, implementation of the recommended Concurso 36/2012 judicial-act / implementation spine, repository update, bilingual public propagation, validation and deletion-safety closeout.  
 **Deletion status after this record is merged:** **SAFE TO DELETE — subject to the residual evidence gaps below, which are already preserved outside this chat.**

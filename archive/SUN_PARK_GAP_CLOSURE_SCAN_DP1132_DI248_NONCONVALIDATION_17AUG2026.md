@@ -172,11 +172,11 @@ The signed Auto of 18-May-2021 is now independently located as a standalone prim
 It records the preceding route including:
 
 - 25-Jan-2021 publicity of CAM's proposal on a basis associated with the publicity of a sale/subasta;
-- Ottawa's expression of interest on 12-Feb-2021, with an offer of €14.8m plus expenses/taxes;
+- third-party bidder's expression of interest on 12-Feb-2021, with an offer of €14.8m plus expenses/taxes;
 - 6-May rejection of reposición against the 25-Jan route;
-- 12-May application of Article 210.4 TRLC and a required Ottawa bond of €735,694.02;
+- 12-May application of Article 210.4 TRLC and a required third-party bidder bond of €735,694.02;
 - the 18-May hearing;
-- Ottawa's absence/non-personation and unsuccessful notification/contact efforts described by the court;
+- third-party bidder's absence/non-personation and unsuccessful notification/contact efforts described by the court;
 - refusal of the requested suspension;
 - the court's express position that the mechanism was **not a formal subasta**, but a ten-day better-offer period followed by a comparecencia/licitation mechanism; and
 - final approval of CAM's proposal.
@@ -199,7 +199,7 @@ That does **not** resolve whether the process supplied sufficient equality, noti
 
 The signed 15-Oct-2021 Auto resolves the reposición appeals of LPB and Aweswell against the 18-May Auto.
 
-The court expressly rejects the characterisation of the 18-May mechanism as a formal auction and reiterates its Article 210.4 TRLC better-offer/comparecencia analysis. It states that Ottawa did not consign the required amount or personate and rejects challenges concerning CAM's lack of a bond and publicity/communication.
+The court expressly rejects the characterisation of the 18-May mechanism as a formal auction and reiterates its Article 210.4 TRLC better-offer/comparecencia analysis. It states that the third-party bidder did not consign the required amount or personate and rejects challenges concerning CAM's lack of a bond and publicity/communication.
 
 The dispositive **dismisses both reposición appeals**, confirms the 18-May Auto in full, imposes no costs, provides for loss of the deposits and states that no further appeal lies against that resolution.
 
@@ -500,13 +500,13 @@ The AP 2014 judgment makes a zero-control Monterecco thesis for 2011–12 untena
 
 ## B. 2021 bidder disclosure
 
-1. `18 mayo 2021 Ottawa expediente licitación anexos`
+1. `18 mayo 2021 third-party bidder expediente licitación anexos`
 2. `12 mayo 2021 Registro Público Concursal Luchy`
-3. `Ottawa 735.694,02 documentación fincas`
-4. `oferta 14.800.000 Sun Park Ottawa`
+3. `third-party bidder 735.694,02 documentación fincas`
+4. `oferta 14.800.000 Sun Park third-party bidder`
 5. `pliego dossier activos 8508 8536 8653 8654`
-6. `24 octubre 2019` + bidder/Ottawa disclosure
-7. `calificación registral 9 enero 2019` + bidder/Ottawa
+6. `24 octubre 2019` + bidder/third-party bidder disclosure
+7. `calificación registral 9 enero 2019` + bidder/third-party bidder
 8. `estado obras` / `demolición` + 2021 sale pack.
 
 ## C. 2022 deed/title bridge

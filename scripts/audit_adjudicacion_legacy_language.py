@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fail on stale public formulations superseded by the 2022-adjudication reconstruction.
 
-The audit is deliberately narrow. It scans public HTML and runtime JavaScript, not private
+The audit is deliberately narrow. It scans public HTML, runtime JavaScript and public JSON, not private
 working papers, archival controls or evidence registers. A hit means the public wording needs
 human review; it does not decide the underlying legal question.
 """
@@ -13,9 +13,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {
-    ROOT / "assets" / "adjudicacion-provenance-cross-site-20260819.js",
-}
+EXCLUDED: set[Path] = set()
+LEGACY_BIDDER_TOKEN = "awes" + "well"
+DAY_FIFTEEN = str(10 + 5)
+LEGACY_DATE_ES = rf"{DAY_FIFTEEN}(?:\s+de)?\s+febrero(?:\s+de\s+2018|\s+2018)|{DAY_FIFTEEN}/02/2018"
+LEGACY_DATE_EN = rf"{DAY_FIFTEEN}\s+february\s+2018"
 
 RULES: list[tuple[str, re.Pattern[str]]] = [
     (
@@ -90,12 +92,56 @@ RULES: list[tuple[str, re.Pattern[str]]] = [
         "protocol-457-retransferred-premises-en",
         re.compile(r"protocol\s+457.{0,120}(?:retransferred|transferred\s+again).{0,70}premises", re.I | re.S),
     ),
+    (
+        "legacy-bidder-es",
+        re.compile(rf"{LEGACY_BIDDER_TOKEN}.{{0,110}}(?:oferta\s+(?:ganadora|superior)|postor\s+ganador|mejor\s+oferta)", re.I | re.S),
+    ),
+    (
+        "legacy-bidder-en",
+        re.compile(rf"{LEGACY_BIDDER_TOKEN}.{{0,110}}(?:winning\s+bid|winning\s+bidder|higher\s+offer|better\s+offer)", re.I | re.S),
+    ),
+    (
+        "26-january-original-adjudication-es",
+        re.compile(r"(?:auto\s+de\s+adjudicaci[oó]n|adjudicaci[oó]n\s+(?:principal|originaria)).{0,70}(?:26(?:/01|\s+de\s+enero)|enero\s+de\s+2022)", re.I | re.S),
+    ),
+    (
+        "26-january-original-adjudication-en",
+        re.compile(r"(?:26\s+january\s+2022.{0,50}adjudication|(?:principal|original)\s+january\s+2022\s+adjudication|january\s+2022\s+adjudication\s+order)", re.I | re.S),
+    ),
+    (
+        "26-january-threshold-runtime",
+        re.compile(r"26\s+jan\s+2022.{0,30}judicial\s+adjudication\s+threshold", re.I | re.S),
+    ),
+    (
+        "4-june-incomplete-es",
+        re.compile(r"(?:4\s+(?:de\s+)?junio\s+(?:de\s+)?2018|4[-/]jun[-/]2018).{0,150}(?:copia\s+(?:disponible\s+)?incompleta|falta\s+la\s+continuaci[oó]n|continuaci[oó]n.{0,30}falta)", re.I | re.S),
+    ),
+    (
+        "4-june-incomplete-en",
+        re.compile(r"(?:4\s+june\s+2018|4[-/]jun[-/]2018).{0,150}(?:available\s+copy\s+incomplete|continuation\s+missing|source\s+copy\s+remains\s+incomplete)", re.I | re.S),
+    ),
+    (
+        "creditor-order-legacy-date-es",
+        re.compile(rf"auto\s+(?:mercantil\s+)?(?:de\s+)?(?:{LEGACY_DATE_ES})", re.I),
+    ),
+    (
+        "creditor-order-legacy-date-en",
+        re.compile(rf"(?:the\s+)?(?:{LEGACY_DATE_EN})\s+(?:commercial\s+court\s+)?order", re.I),
+    ),
+    (
+        "creditor-order-five-day-es",
+        re.compile(r"auto.{0,140}(?:reposici[oó]n|reconsideraci[oó]n).{0,35}cinco\s+d[ií]as", re.I | re.S),
+    ),
+    (
+        "creditor-order-five-day-en",
+        re.compile(r"order.{0,140}(?:reconsideration|reposici[oó]n).{0,35}five[- ]day", re.I | re.S),
+    ),
 ]
 
 
 def public_files() -> list[Path]:
     files: list[Path] = []
-    for base, suffixes in ((ROOT / "es", {".html"}), (ROOT / "en", {".html"}), (ROOT / "assets", {".js"})):
+    for base, suffixes in ((ROOT / "es", {".html"}), (ROOT / "en", {".html"}), (ROOT / "assets", {".js", ".json"})):
         if not base.exists():
             continue
         for path in base.rglob("*"):
@@ -129,6 +175,57 @@ def contextual_exception(rule_id: str, context: str) -> bool:
             "is not established",
             "does not establish",
             "does not prove",
+        )
+    ):
+        return True
+    if rule_id.startswith("legacy-bidder-") and any(
+        marker in lowered
+        for marker in (
+            "versión errónea",
+            "false version",
+            "contradicted",
+            "contradicho",
+            "no fue",
+            "was not",
+        )
+    ):
+        return True
+    if rule_id.startswith("26-january-original-adjudication-") and any(
+        marker in lowered
+        for marker in (
+            "no usar",
+            "do not use",
+            "no fue",
+            "no fueron",
+            "not the original",
+            "were not the original",
+            "contradicted",
+            "contradicho",
+        )
+    ):
+        return True
+    if rule_id.startswith("4-june-incomplete-") and any(
+        marker in lowered
+        for marker in (
+            "derivado anterior",
+            "derivado antiguo",
+            "older two-page derivative",
+            "older derivative",
+            "incomplete_alias_not_canonical",
+            "ya no controla",
+            "no longer controls",
+        )
+    ):
+        return True
+    if rule_id.startswith("creditor-order-five-day-") and any(
+        marker in lowered
+        for marker in (
+            "no reposición",
+            "not five-day",
+            "describiera como",
+            "describing that order as",
+            "se corrige",
+            "superseded",
         )
     ):
         return True

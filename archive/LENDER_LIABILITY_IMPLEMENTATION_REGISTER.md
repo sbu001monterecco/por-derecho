@@ -38,7 +38,7 @@ No material proposition is promoted unless it is:
 - no automatic inherited-liability language;
 - no group-wide liability from perimeter labels;
 - no criminal conclusion;
-- no suppression of the 15 February 2018 adverse/mixed order;
+- no suppression of the body-dated 8 February 2018 adverse/mixed order (Judge signature 9 February; LAJ signature 14 February; `15FEB2018` source alias);
 - no publication of raw privileged advice, personal contact information or confidential transaction material;
 - no use of the €350,000 commissions line as proof of payment, recipient or illegality;
 - no Ring 2/3 damages figure without counterfactual evidence and counsel/expert review.

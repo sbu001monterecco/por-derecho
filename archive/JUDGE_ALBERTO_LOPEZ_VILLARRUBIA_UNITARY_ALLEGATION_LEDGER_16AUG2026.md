@@ -63,11 +63,11 @@ The unitary allegation is that, once the court identified the non-convalidation 
 
 Gil/Aweswell allege CAM/related actors acquired material access/control and undertook works/alterations before final title while LPB assets remained under concursal protection. In 2021 Aweswell sought independent inspection/pericial/protective measures; the Judge rejected them. Rejection is not criminal by itself; the issue is the reasonableness of that response when viewed with alleged loss of access, physical alteration, the 2019 non-convalidation issue and approaching adjudication.
 
-### 2.6 2021 competition, Ottawa/ONA and alleged material predetermination
+### 2.6 2021 competition, third-party bidder/ONA and alleged material predetermination
 
 `PARTY ALLEGATION / SOURCE-COMPLETE LICITATION RECORD REQUIRED`
 
-Gil alleges formal bidding did not equal materially equal competition if CAM combined creditor position, possession/access, information, registral/functional pieces and a heterogeneous credit/waiver offer while outsiders needed fresh capital and faced uncertainty. Ottawa GBC's reported €14.8m-plus interest and ONA access/personation are evidential leads. Exact edict, timestamps, LexNET service, data-room/inspection access, deposits, full offers and comparative methodology must be reconstructed before calling the competition rigged as fact.
+Gil alleges formal bidding did not equal materially equal competition if CAM combined creditor position, possession/access, information, registral/functional pieces and a heterogeneous credit/waiver offer while outsiders needed fresh capital and faced uncertainty. The third-party bidder's reported €14.8m-plus interest and ONA access/personation are evidential leads. Exact edict, timestamps, LexNET service, data-room/inspection access, deposits, full offers and comparative methodology must be reconstructed before calling the competition rigged as fact.
 
 ### 2.7 2022 adjudication, title and transaction-identity bridge
 
@@ -191,7 +191,7 @@ Controlling question:
 3. Native Irigoyen/Parrilla emails + headers + associated filings/court traces.
 4. CAM credit/interests/threshold/adjudication reconciliation.
 5. OB REM restitution/registry/accounting chain including €400,000.
-6. Full 2021 licitación record: edict, service/publication timestamps, offers, deposits, data room/inspection, Ottawa/ONA.
+6. Full 2021 licitación record: edict, service/publication timestamps, offers, deposits, data room/inspection, third-party bidder/ONA.
 7. 2022 DIOR/testimonio/order/deed/registry chain and exact actor attribution.
 8. AC annual-account, fee, reporting/conflict record and what was before the Judge in 2025 removal proceedings.
 9. Certified calificación docket: AC report/annexes, Fiscal opinion, evidence, 25-Jul-2023 audio/service/counsel-withdrawal/suspension record, filed appeals, notification and AP status.

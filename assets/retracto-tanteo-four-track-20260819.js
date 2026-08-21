@@ -20,13 +20,17 @@
   const isDedicated = path.includes('/retracto-tanteo-cuatro-vias/') || path.includes('/retracto-tanteo-four-tracks/');
   if (isDedicated) return;
 
-  // Primary-source correction lock for the 15-Feb-2018 Commercial Court order.
+  // Primary-source correction lock: body 8-Feb; judge signature 9-Feb;
+  // LAJ signature 14-Feb; later notification/file label 15-Feb.
   // Do not touch five-day remedies belonging to the 5-Mar-2018 decree or 13-May-2024 ordering act.
   document.querySelectorAll('main p, main li, main td, main .question, main .card').forEach(el => {
     const text = el.textContent || '';
     const lower = text.toLowerCase();
-    const is15Feb = lower.includes('15 feb') || lower.includes('15 february') || lower.includes('15 de febrero');
-    if (!is15Feb) return;
+    const hasControlledDate = lower.includes('8 feb') || lower.includes('8 de febrero') ||
+      lower.includes('15 feb') || lower.includes('15 de febrero');
+    const isCreditorAuto = hasControlledDate && (lower.includes('cam') || lower.includes('credit') ||
+      lower.includes('acreedor') || lower.includes('mercantil') || lower.includes('commercial court'));
+    if (!isCreditorAuto) return;
     let html = el.innerHTML;
     const replacements = [
       ['five-day <code>recurso de reposición</code> without suspensive effect', '20-day <code>recurso de apelación</code> under Article 97 bis.2 of the then-applicable Insolvency Law'],

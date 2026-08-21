@@ -42,9 +42,9 @@ Canonical arithmetic now records:
 
 The repo now permanently prevents `€13.568m` from being silently relabelled as the deed consideration.
 
-### C. Ottawa concrete better posture
+### C. third-party bidder concrete better posture
 
-The connected primary `oferta vinculante OTTAWA 8feb2021` is now preserved as a source seed and controlled finding:
+The connected primary `[protected third-party offer — 8-Feb-2021]` is now preserved as a source seed and controlled finding:
 
 - **€14.8m proposed acquisition price**;
 - identified accommodation/commercial/pool/solarium finca package;
@@ -80,7 +80,7 @@ This remains explicitly classified as **PARTY RECONSTRUCTION / DEED BINARY OPEN*
 
 PR #483 contains:
 
-1. `archive/AC_ACCOUNTING_BRIDGE_15AUG2026.md` — upgraded accounting/interest/Ottawa bridge;
+1. `archive/AC_ACCOUNTING_BRIDGE_15AUG2026.md` — upgraded accounting/interest/third-party bidder bridge;
 2. `archive/CAM_2022_ADJUDICATION_TRANSACTION_IDENTITY_AND_CONSIDERATION_CONTROL_19AUG2026.md` — specialist canonical control;
 3. `archive/CORRECTION_REGISTER_CAM_2022_ADJUDICATION_ADDENDUM_19AUG2026.md` — permanent corrections;
 4. `archive/MISSING_EVIDENCE_REGISTER_CAM_2022_ADJUDICATION_ADDENDUM_19AUG2026.md` — ME-064–ME-075 finite queue;
@@ -99,7 +99,7 @@ Primary source seeds include:
 
 - 25-Jan-2021 signed Auto — Drive `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh`;
 - 29-Jan-2021 Edicto — Drive `1mgIFpwTq0F5y9A-pekLEoI2c_yFZJOMl`;
-- Ottawa 8-Feb-2021 offer — Drive `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA`;
+- third-party bidder 8-Feb-2021 offer — Drive `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA`;
 - LPB 28-Feb-2022 appeal — Drive `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC`;
 - Aweswell 2-Mar-2022 appeal — Drive `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc`;
 - 2026 technical reconstruction — Drive `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk`;
@@ -116,7 +116,7 @@ The remaining finite primary-source gaps are catalogued as ME-064–ME-075, incl
 - complete €400k bank/accounting/regularisation chain;
 - definitive recognised CAM credit + exact interest classification;
 - CAM source calculation underlying €3.079m→€3.182m movement;
-- Ottawa filing/receipt/proof/outcome and 18-May licitation record;
+- third-party bidder filing/receipt/proof/outcome and 18-May licitation record;
 - separate Arrecife same-date instrument;
 - CAM legal-person chain;
 - AC final rendición/surplus bridge.

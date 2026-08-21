@@ -30,14 +30,17 @@
   "legalFramework": {
     "article": "Código Civil, art. 1535",
     "coreEffect": "Where the statutory conditions are met, the debtor may extinguish a sold litigious credit by reimbursing the assignee the price paid, relevant costs and interest.",
-    "strictness": "Whether the Sun Park/LPB credit satisfied the technical definition of a 'crédito litigioso' is contested and was decided adversely to LPB by the Commercial Court on 15 February 2018. The present dataset therefore treats viability as an unresolved legal-merits question rather than as an established right.",
+    "strictness": "Whether the Sun Park/LPB credit satisfied the technical definition of a 'crédito litigioso' is contested and was decided adversely to LPB by the Commercial Court order whose body is dated 8 February 2018. The present dataset therefore treats viability as an unresolved legal-merits question rather than as an established right.",
     "publicSource": "BOE-A-1889-4763, article 1535"
   },
   "dateCorrection": {
     "status": "VERIFIED",
-    "correctDate": "2018-02-15",
+    "bodyDate": "2018-02-08",
+    "judgeSignatureDate": "2018-02-09",
+    "lajSignatureDate": "2018-02-14",
+    "laterLabelOrNotificationDate": "2018-02-15",
     "document": "AUTO Modificación Textos Definitivos CAM+RETRACTO - 15FEB2018.pdf",
-    "note": "The primary Commercial Court order recovered and re-checked in the 19 August 2026 scan is dated 15 February 2018. Earlier repository references to 8 February 2018 must not be repeated as the date of this order without a separate primary act proving that date. LPB's opposition is recorded as 7 February 2018 in the order's antecedentes."
+    "note": "The primary order's body is dated 8 February 2018, the judge's electronic signature is dated 9 February and the LAJ signature 14 February. A later notification/file label uses 15 February. The operative remedy is a 20-day appeal under Article 97 bis.2 of the then-applicable Insolvency Law. LPB's opposition is recorded as 7 February in the antecedentes."
   },
   "verifiedEvents": [
     {
@@ -104,8 +107,8 @@
       "date": "2018-01-26",
       "id": "EV-CAM-DOCS-COMPLETED",
       "status": "VERIFIED",
-      "eventEs": "Según los antecedentes del Auto de 15 de febrero, CAM completó documentación y quedó pendiente la resolución sobre la modificación de textos definitivos.",
-      "eventEn": "According to the 15 February order's procedural history, CAM completed documentation and the creditor-substitution application was left for decision."
+      "eventEs": "Según los antecedentes del Auto cuyo cuerpo está fechado el 8 de febrero, CAM completó documentación y quedó pendiente la resolución sobre la modificación de textos definitivos.",
+      "eventEn": "According to the order whose body is dated 8 February, CAM completed documentation and the creditor-substitution application was left for decision."
     },
     {
       "date": "2018-02-07",
@@ -115,12 +118,13 @@
       "eventEn": "LPB opposed the amendment, challenged amounts and maintained that the assigned credit was litigious."
     },
     {
-      "date": "2018-02-15",
+      "date": "2018-02-08",
       "id": "EV-MERCANTILE-ORDER",
       "status": "VERIFIED",
       "eventEs": "El Juzgado Mercantil corrigió parcialmente importes en favor de LPB, rechazó la tesis de crédito litigioso y reconoció a CAM como acreedor cesionario. Para el cambio de acreedor no exigió toda la documentación de título pretendida por LPB: se apoyó expresamente en el informe favorable de la AC y en la presunción de que ésta había verificado los requisitos.",
       "eventEn": "The Commercial Court partially corrected amounts in LPB's favour, rejected the litigious-credit theory and recognised CAM as assignee creditor. For creditor substitution it did not require all title documentation sought by LPB: it expressly relied on the insolvency administration's favourable report and presumed that the administration had verified the necessary requirements.",
-      "effect": "CAM's recognised insolvency-creditor position was consolidated while LPB's Article 1535 merits position was rejected."
+      "effect": "CAM's recognised insolvency-creditor position was consolidated while LPB's Article 1535 merits position was rejected.",
+      "dateMetadata": "Body 8 Feb 2018; judge signature 9 Feb; LAJ signature 14 Feb; later notification/file label 15 Feb."
     },
     {
       "date": null,
@@ -195,7 +199,7 @@
     "importantQualification": "An adverse view on Article 1535 merits could justify deciding not to spend estate resources on a weak substantive claim. It does not automatically explain why an already-admitted information route to the assignment deed/economics should lose value or be surrendered. Litigation merits and information/optionality value are separate questions."
   },
   "counterRecord": [
-    "The 15 February 2018 Commercial Court order reached an adverse legal conclusion on the 'crédito litigioso' requirement; that is real counterevidence to any claim that Article 1535 entitlement was certain.",
+    "The Commercial Court order (body 8 February 2018; signatures 9/14 February; later label 15 February) reached an adverse legal conclusion on the 'crédito litigioso' requirement; that is real counterevidence to any claim that Article 1535 entitlement was certain.",
     "The same order corrected some credit figures in LPB's favour; it was not wholly CAM-favourable in every issue decided.",
     "An insolvency administrator may legitimately decide not to pursue litigation if documented expected cost/risk exceeds expected estate value.",
     "The JPI nº 2 disclosure ruling and the Mercantile creditor-substitution ruling addressed different procedural/legal questions.",
@@ -222,7 +226,7 @@
   "openQuestions": [
     "Locate and bind the complete primary termination/withdrawal/archive act for DP 1041/2017 and identify who instructed, signed and filed it.",
     "Locate the exact instrument and court record governing the change in Cristo Suárez Pimentel's formal LPB authority and reconstruct the handover.",
-    "Determine whether the 15 February 2018 order was challenged and, if so, obtain the complete appeal and finality chain.",
+    "Determine whether the creditor-substitution order (body 8 February 2018; signatures 9/14 February; later label 15 February) was appealed and obtain the complete appeal/finality chain.",
     "Reconstruct the exact pre-20 October 2017 litigation relied on by LPB to classify each assigned credit as litigioso.",
     "Obtain the complete assignment deed/schedules, purchase price/allocation, proof of payment and any servicing or side documentation.",
     "Identify any contemporaneous written estate-benefit analysis explaining why continuation, settlement or abandonment of DP 1041 was in LPB's interests.",

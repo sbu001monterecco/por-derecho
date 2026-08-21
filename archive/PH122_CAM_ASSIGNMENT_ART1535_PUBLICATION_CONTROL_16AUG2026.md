@@ -72,9 +72,9 @@ No voluntary resignation by Cristo has been located. Cristo's later broader Sun 
 
 CAM's opposition raised, among other matters, the authority/liquidation issue concerning LPB's procedural representation.
 
-### 15 February 2018 — Commercial Court order
+### 8 February 2018 — Commercial Court order
 
-The primary order is dated **15 February 2018**. Earlier repository references to an 8 February order are superseded for this decision unless a distinct primary act is produced.
+The controlled primary order is body-dated **8 February 2018**, signed by the Judge on **9 February** and by the LAJ on **14 February**. `15FEB2018` is retained only as the source filename/notification alias; it is not the operative decision date.
 
 The order:
 
@@ -87,7 +87,7 @@ The order:
 
 Keep separate:
 
-- 15-Feb-2018 Commercial Court order → 20-day appeal;
+- 8-Feb-2018 Commercial Court order (Judge signature 9-Feb; LAJ signature 14-Feb; `15FEB2018` source alias) → 20-day appeal;
 - 5-Mar-2018 DP1041 Decree → five-day review; and
 - 13-May-2024 judicial-office order → five-day reposición.
 
@@ -114,7 +114,7 @@ This closes the procedural endpoint. It does not prove that no independent subst
 
 Por Derecho does **not** publish that LPB had a guaranteed winning Article 1535 claim.
 
-The 15 February 2018 Commercial Court order is genuine adverse evidence on the technical `crédito litigioso` requirement. Article 1535 uses a strict statutory concept; a commercial/accounting dispute or mortgage enforcement does not automatically satisfy every condition.
+The 8 February 2018 Commercial Court order is genuine adverse evidence on the technical `crédito litigioso` requirement. Article 1535 uses a strict statutory concept; a commercial/accounting dispute or mortgage enforcement does not automatically satisfy every condition.
 
 The proper distinction is:
 
@@ -192,7 +192,7 @@ P0 is now:
 3. Author/drafter/signatory/filer and filing/transmission channel.
 4. Complete Cristo → successor `venia`, power and file-handover chronology.
 5. Contemporaneous estate-interest/cost-benefit analysis for the withdrawal decision.
-6. Actual 20-day appeal/finality chain for the 15 February 2018 order.
+6. Actual 20-day appeal/finality chain for the 8 February 2018 order.
 7. Complete protocol 2,248, schedules, allocated price, proof of payment and servicing records.
 8. Exact pre-assignment declaratory controversy relevant to Article 1535, credit by credit.
 9. Any independent substantive Article 1535 action filed elsewhere.

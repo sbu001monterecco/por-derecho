@@ -53,7 +53,7 @@
     {"date":"2017-10-20","event":"PH122 to CAM assignment of identified mortgage-credit position","status":"VERIFIED"},
     {"date":"2017-12-19","event":"JPI No. 2 admitted DP 1041 and ordered a disclosure route to deed/economics","status":"VERIFIED"},
     {"date":"2018-01-25","event":"AC directly terminated Cristo Suarez Pimentel's specific formal LPB mandate and imposed an authorisation gate","status":"C5_DIRECT_CONTEMPORANEOUS_EVIDENCE"},
-    {"date":"2018-02-15","event":"Commercial Court rejected LPB's Article 1535 theory, corrected some amounts and recognised CAM as assignee creditor with material reliance on AC verification","status":"VERIFIED_WITH_MIXED_EFFECT"},
+    {"date":"2018-02-08","event":"Commercial Court rejected LPB's Article 1535 theory, corrected some amounts and recognised CAM as assignee creditor with material reliance on AC verification","status":"VERIFIED_WITH_MIXED_EFFECT","dateMetadata":"Body 8 Feb; judge signature 9 Feb; LAJ signature 14 Feb; later notification/file label 15 Feb"},
     {"date":"2018-03-05","event":"Decree 139/2018 records LPB withdrawal; CAM did not oppose; proceeding terminated; Borja recorded as LPB lawyer","status":"VERIFIED"},
     {"date":"2024-05-13","event":"Judicial-office act confirms finalisation/archive because of claimant-side withdrawal","status":"VERIFIED"}
   ],
@@ -71,7 +71,7 @@
     "Assignment price/payment proof and allocation",
     "Trigger ledger of every CAM demand for payment",
     "Pre-assignment declaratory controversy credit by credit",
-    "Appeal/finality chain for 15-Feb-2018 order",
+    "Appeal/finality chain for creditor-substitution order (body 8-Feb-2018; signatures 9/14 Feb; later label 15 Feb)",
     "Underlying DP1041 withdrawal pleading and instruction chain",
     "Any historical Article 1535 exercise or consignation",
     "Current counsel opinion on literal exercise and precautionary protection",

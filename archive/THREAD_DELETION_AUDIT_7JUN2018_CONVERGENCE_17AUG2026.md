@@ -14,7 +14,7 @@ Audit of the Project Sun Rock / Por Derecho thread concerning whether and how 7 
 3. Four-clock model: legal/title; physical/operational; commercial/financial; institutional/knowledge.
 4. Analytical distinction between **parallel lives** (what the hotel was treated as) and **converging pressure tracks** (what mechanisms acted on it).
 5. `Before → 7 June → After` should be the evidential heart of the page.
-6. `Control before title` must be a prominent temporal visual: 7-Jun-2018 material-control threshold versus 26-Jan-2022 adjudication and 21-Feb-2022 deed.
+6. `Control before title` must be a prominent temporal visual: 7-Jun-2018 material-control threshold versus 18-May-2021 definitive approval, the two 26-Jan-2022 clarifications and the 21-Feb-2022 deed. The clarification fallos are not a new transfer.
 7. The object crossing the threshold must be shown as more than property: real estate, operating capacity, customer/community platform, commercial infrastructure and recovery capacity.
 8. Audience-reconciliation test strengthened to ask what the same hotel was represented to be, by whom, to whom, on what date, on what title/authority and asset perimeter, and what document reconciled that version with others.
 9. High homepage placement for a `7 June 2018 — the hinge` module with `Before | 7 June | After` entry points.

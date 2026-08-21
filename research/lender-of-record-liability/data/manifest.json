@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Por Derecho lender-of-record liability architecture",
-  "last_updated": "2026-08-19",
+  "last_updated": "2026-08-21",
   "status_values": [
     "verified_primary",
     "verified_official",

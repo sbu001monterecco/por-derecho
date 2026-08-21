@@ -215,12 +215,13 @@ The refusal does not itself prove criminality. It does prove that the later judi
 Controlled sources establish a later route including:
 
 - 24-Feb-2021 Auto: works/condition/access dispute before the Judge; requested inspection/pericial denied in that liquidation context; no CAM/AC liability finding;
-- 12-May-2021 Providencia: licitación/re-tender step and Ottawa bond control;
+- 12-May-2021 Providencia: licitación/re-tender step and third-party bidder bond control;
 - 18-May-2021 Auto: definitive approval of the CAM proposal after the bidder event described there;
-- 15-Oct-2021 Auto: the 21-Feb-2022 deed recites that this confirmed the 18-May-2021 Auto in full;
-- 22-Jan-2022 Auto: the 21-Feb-2022 deed recites this as clarifying the 15-Oct-2021 Auto.
+- 15-Oct-2021: a signed five-page Auto confirms the 18-May approval in full, while a separate two-page same-date Auto addresses the 12-May Providencia;
+- 26-Jan-2022: two complete authentic clarification Autos address the separate 15-Oct acts; neither is a new adjudication/title-transfer act;
+- 22-Jan-2022: the 21-Feb deed recites a clarification Auto on this date, but no separate signed 22-Jan original is presently bound.
 
-**Date control:** earlier working material referred to a 26-Jan-2022 act family. The native 21-Feb-2022 deed expressly recites **22-Jan-2022**. Do not silently replace one date with the other: recover all January-2022 binaries and determine whether 22-Jan and 26-Jan are separate acts, a notification/signature-date issue, or prior shorthand error.
+**Date control:** the two 26-Jan clarification originals are proved; the deed's **22-Jan-2022** recital remains a documentary discrepancy. Seek a signed 22-Jan act or notarial correction/explanation and do not use either date as generic shorthand for adjudication. Definitive judicial approval remains 18-May-2021; the deed is the 21-Feb-2022 implementation instrument.
 
 ## 13. 21-Feb-2022 native dación deed — apartment closing now recovered
 
@@ -370,10 +371,10 @@ This is a procedural/economic reconstruction. It is **not** a finding of collusi
 6. Proof of €400,000 payment and full estate application/accounting.
 7. Exact post-24-Oct-2019 corrective/non-corrective title and accounting steps.
 8. 2021 bid notices, data room, inspection/access, bidder communications and equality-of-information record.
-9. Ottawa offer, deposit/bond, funding, withdrawal/nonappearance and treatment.
-10. Native 18-May-2021 Auto.
-11. Complete 15-Oct-2021 Auto family.
-12. Complete January-2022 act family; reconcile deed’s 22-Jan-2022 reference with earlier 26-Jan shorthand/records.
+9. third-party bidder offer, deposit/bond, funding, withdrawal/nonappearance and treatment.
+10. Complete 18-May application/attendance/recording/service/bond context around the located signed Auto.
+11. Complete hash/signature/service and review/finality context around both located 15-Oct-2021 acts.
+12. Reconcile the deed’s 22-Jan-2022 recital with the two located 26-Jan clarification originals.
 13. Court filing/receipt of 21-Feb-2022 deed within stated five-day obligation.
 14. Court mandamiento and Registry entries cancelling mortgages/concurso annotations.
 15. Independent debt/mortgage-cap recalculation supporting or contradicting €13,168,082.02.

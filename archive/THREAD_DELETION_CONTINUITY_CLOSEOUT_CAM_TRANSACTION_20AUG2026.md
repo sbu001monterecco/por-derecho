@@ -67,7 +67,7 @@ The merged files preserve source metadata, hashes and retrieval routes for, amon
 ## 6. Corrections preserved
 
 - The 16-Apr-2018 judicial family contains at least two distinct Autos and must not be collapsed.
-- The native 21-Feb-2022 deed recites a **22-Jan-2022** clarification Auto. Earlier shorthand referring to **26-Jan-2022** remains an explicit date-reconciliation gap; it was not silently overwritten.
+- Two authentic **26-Jan-2022** clarification Autos are now controlled; neither is a new adjudication/title-transfer act. The native 21-Feb deed's separate **22-Jan-2022** recital remains an explicit documentary discrepancy requiring a signed source or notarial explanation.
 - The 2022 deed is controlled as an apartment-dación instrument. Reviewed operative sections do not themselves establish an express re-execution/cure of the 29 locales + 2 pools/solarium 2018 transaction; categorical absence across every page/related title act remains subject to exhaustive confirmation.
 - Deed allocation of Community/IBI/plusvalía/transaction costs is not proof of actual payment.
 - The €13,168,082.02 amount is verified as a deed term and must still be independently reconciled against definitive texts, mortgage caps, interest, payments and any `sobrante`.
@@ -79,9 +79,9 @@ The unresolved P1 queue remains preserved in the underlying audit/master. Highes
 1. proof and exact application/accounting of the 2018 **€400,000**;
 2. finca-by-finca title/Registry position of the locales/pools after 2019 non-convalidation;
 3. 2021 bidder data-room, inspection and information-parity record;
-4. Ottawa offer/bond/deposit/withdrawal record;
-5. full 18-May-2021, 15-Oct-2021 and January-2022 judicial binaries;
-6. reconciliation of 22-Jan vs 26-Jan-2022 references;
+4. third-party bidder offer/bond/deposit/withdrawal record;
+5. complete application/service/finality context around the now-located 18-May, two 15-Oct and two 26-Jan judicial originals;
+6. reconciliation of the deed's 22-Jan recital with the two 26-Jan-2022 clarification originals;
 7. court receipt of the 21-Feb-2022 deed and post-closing mandamiento;
 8. final Registry cancellations;
 9. independent debt/mortgage-cap and `sobrante` calculation;

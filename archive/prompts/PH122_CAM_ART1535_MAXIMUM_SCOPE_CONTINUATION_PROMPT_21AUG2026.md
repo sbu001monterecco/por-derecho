@@ -27,12 +27,12 @@ Inspect current `main`, all linked structured data, publication manifests, valid
 
 ### Current controlling corrections
 
-- The relevant Commercial Court order is presently controlled as **15 February 2018**, not 8 February 2018, unless a distinct primary act proves otherwise.
+- The relevant Commercial Court order is body-dated **8 February 2018**, signed by the Judge on **9 February** and by the LAJ on **14 February**; `15FEB2018` is a source filename/notification alias, not the operative decision date.
 - The court-admitted DP 1041 production order is presently controlled as **19 December 2017**.
 - On **25 January 2018**, the Administrador Concursal directly terminated Cristo A. Suárez Pimentel's specific formal LPB mandate, requested `venia`, imposed an authorisation gate and instructed that further LPB filings not proceed without AC authority.
 - Decreto 139/2018 of **5 March 2018** records withdrawal in LPB's name, CAM's non-opposition/conformity, termination of DP 1041 and vacation of the hearing.
 - The decree proves the procedural withdrawal and recorded representation. It does **not**, by itself, prove who internally decided, instructed, drafted, signed or filed the withdrawal, or that it was a voluntary, informed and estate-beneficial LPB decision.
-- The 15 February order provided a **20-day appeal** under the then-applicable Article 97 bis.2 Insolvency Law; do not repeat the superseded five-day-reconsideration description.
+- The 8 February order provided a **20-day appeal** under the then-applicable Article 97 bis.2 Insolvency Law; do not repeat the superseded five-day-reconsideration description.
 - Keep Article 1535 credit redemption, the May–June 2018 unit/property workstream, Articles 1522/1524 co-owner redemption and contractual/tourism/CEXP rights separate under the four-track control.
 
 ---
@@ -200,7 +200,7 @@ Obtain:
 12. Decreto 139/2018 and subsequent archive/finality acts.
 13. 13 May 2024 archive confirmation.
 14. Any independent substantive Article 1535 action elsewhere.
-15. Actual appeal/finality chain for the 15 February 2018 order.
+15. Actual appeal/finality chain for the 8 February 2018 order.
 
 Do not state that LPB “voluntarily withdrew” as an autonomous fact.
 
@@ -321,7 +321,7 @@ Reconstruct:
 - €9.77m versus €25.64m valuation discontinuity;
 - RICPE promotion before title consolidation;
 - 2021 competitive process and anonymised €14.8m proposal;
-- 26 January 2022 adjudication;
+- 18 May 2021 definitive approval and the two 26 January 2022 clarification Autos (not a new adjudication/title transfer);
 - 21 February 2022 dación;
 - protocol 457 and registry implementation;
 - mortgage cancellation and 18 August 2023 execution termination;
@@ -406,7 +406,7 @@ Produce:
 7. **Actor-specific knowledge/causation/benefit/defence matrix.**
 8. **CAM credit-to-control-to-title economic analysis.**
 9. **Article 24 CE / Article 6 ECHR assessment.**
-10. **Strongest adverse-case memorandum**, including the 15 February 2018 order, strict jurisprudence, portfolio doctrine, finality/preclusion, Article 1536, timing, authority, standing, limitation and independent downstream-title arguments.
+10. **Strongest adverse-case memorandum**, including the 8 February 2018 order, strict jurisprudence, portfolio doctrine, finality/preclusion, Article 1536, timing, authority, standing, limitation and independent downstream-title arguments.
 11. **Missing-document production plan**, identifying holder, procedure, urgency and proposition affected.
 12. **Remedies and preservation ledger**, with no invented “latest safe date.”
 13. **Bilingual website/repository update plan**, using verified/inference/open/adverse classifications.
@@ -436,7 +436,7 @@ Do publish, where the primary record remains controlling:
 - LPB's admitted deed/price production route;
 - the AC's direct termination of Cristo A. Suárez Pimentel's specific LPB mandate;
 - the CAM-favourable direction of effect of AC intervention, with limitations;
-- the adverse 15 February 2018 ruling and its correction of amounts;
+- the adverse 8 February 2018 ruling and its correction of amounts;
 - the withdrawal filed in LPB's name and CAM's non-opposition;
 - the unresolved authority/instruction/estate-benefit chain;
 - the later CAM/perimeter benefit as a causation and remedy question;

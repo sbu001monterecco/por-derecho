@@ -142,7 +142,10 @@ Display the temporal gap prominently:
 `↓`  
 `more than 3.5 years`  
 `↓`  
-`26 JAN 2022 — judicial adjudication threshold`  
+`18 MAY 2021 — definitive judicial approval threshold`
+
+`26 JAN 2022 — two judicial clarifications (not new transfer)`
+
 `↓`  
 `21 FEB 2022 — deed/formal transmission threshold`
 

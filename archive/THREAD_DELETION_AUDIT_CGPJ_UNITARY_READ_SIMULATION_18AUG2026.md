@@ -134,7 +134,7 @@ The seven nuclei in the canonical evidence map remain controlling. Preserve thes
 3. **28-Nov-2018 / EUR 400k / 24-Oct-2019 non-validation:** this is strengthened by a judicial act favourable to the complainant's position. The question is what later implementation/restitution/reconciliation gave effect to that act before the assets re-entered the 2021–22 chain.
 4. **Masa activa / physical condition:** strongest finite question remains: if pericial/judicial inspection was refused, what neutral equivalent gave the court reliable information about asset condition before liquidation continued?
 5. **AC supervision:** likely strongest functioning/Inspection module. Reconstruct AC knowledge → verification/reporting → court requirement → alternative control.
-6. **ONA/Ottawa / material competition:** much is jurisdictional-merits territory; retain only separable functioning issues such as access, information, timing, perimeter and procedural treatment unless the full bidding record supports more.
+6. **ONA/third-party bidder / material competition:** much is jurisdictional-merits territory; retain only separable functioning issues such as access, information, timing, perimeter and procedural treatment unless the full bidding record supports more.
 7. **Adjudication → LAJ → deed → Registry → accounts:** actor separation is mandatory. Do not attribute testimony, finality, service or Registry-facing acts automatically to the judge.
 
 ## 6. Cross-cutting modules

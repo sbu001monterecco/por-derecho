@@ -51,7 +51,7 @@
     "holder_chain_actor_refs": ["ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-08-CREDITOR-SUBSTITUTION"],
     "open_fields": ["Loan-by-loan reconciliation", "Ordinary/default interest", "Costs", "Corrections", "Sobrante/residual"]
   },
   {

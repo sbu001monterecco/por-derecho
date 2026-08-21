@@ -23,7 +23,7 @@ At several of those points, the Insolvency Administrator was the statutory actor
 | Assignment-information gate | LPB pursued PH122→CAM deed, price and payment information; the Administrator later controlled LPB's formal representation | Why was an admitted information route not prosecuted to a reasoned conclusion before the assignee's position hardened? |
 | Representation gate | on 25 January 2018 the Administrator directly ended Cristo Suárez Pimentel's formal LPB mandate in PP 1041 and imposed an authorisation gate over future LPB action | What statutory power, instruction, conflict analysis and estate benefit justified that intervention? |
 | Withdrawal gate | the 5 March 2018 decree records LPB's withdrawal and CAM's non-opposition; the withdrawal later caused archive | Who instructed, drafted, signed and filed it, and what value did LPB receive for abandoning the deed-and-price route? |
-| Creditor-recognition gate | the Administrator's report supported CAM's recognition; the 15 February 2018 order rejected LPB's strict Article 1535 position and partly corrected amounts | What transfer instruments, balances and objections did the Administrator independently verify? |
+| Creditor-recognition gate | the Administrator's report supported CAM's recognition; the body-dated 8 February 2018 order rejected LPB's strict Article 1535 position and partly corrected amounts; Judge signature 9 Feb, LAJ signature 14 Feb, `15FEB2018` alias, 20-day appeal | What transfer instruments, balances and objections did the Administrator independently verify? |
 | Valuation gate | ACTÚA's valuation entered the CAM/AC liquidation route and was contemporaneously challenged by GESVALT | How were methodology, condition, title perimeter, operating value and the competing professional evidence reconciled? |
 | Alternative-exit gate | ONA, financing, sale and restructuring materials existed in the relevant period, subject to conditions | Which alternatives were tested, on what timetable, and why was the chosen route better for the estate? |
 | Material-control gate | practical control and access effects arose years before formal LPB title | What preservation, possession, inventory, access, rent/income and non-estate-property measures did the Administrator seek? |
@@ -48,7 +48,7 @@ The present burden is therefore narrower and stronger: produce the instruction, 
 
 > The Administrator's responsibility is not alleged merely because CAM ultimately benefited. It arises for determination because his office controlled indispensable LPB gates and because at least one consequential intervention—the termination of LPB's formal lawyer mandate in the assignment-information proceeding—is directly documented. The court or competent body should determine whether each act was a reasoned exercise of statutory duty for the estate or whether, cumulatively, the office operationalised the creditor-acquisition route while LPB lost information, alternatives, value and reversibility.
 
-## The 15 February 2018 order must remain in the analysis
+## The body-dated 8 February 2018 order must remain in the analysis
 
 The Commercial Court recognised CAM as assignee, rejected LPB's strict litigious-credit position and corrected part of the amounts. That is a real adverse ruling.
 

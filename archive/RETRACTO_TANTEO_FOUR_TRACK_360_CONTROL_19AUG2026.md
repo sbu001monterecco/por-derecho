@@ -172,13 +172,13 @@ Only then assign C0–C5.
 
 ## 8. DP 1041 appeal-route correction
 
-The primary **15 February 2018 Commercial Court order** provided a **20-day recurso de apelación under Article 97 bis.2 of the then-applicable Insolvency Law**.
+The primary Commercial Court order is body-dated **8 February 2018**, Judge-signed **9 February** and LAJ-signed **14 February**; `15FEB2018` is a source filename/notification alias. It provided a **20-day recurso de apelación under Article 97 bis.2 of the then-applicable Insolvency Law**.
 
 Repository wording that says this order carried a five-day `recurso de reposición` is **SUPERSEDED / INCORRECT**.
 
 Keep separate:
 
-- 15-Feb-2018 Commercial Court order → **20-day appeal**;
+- 8-Feb-2018 Commercial Court order → **20-day appeal** (9-Feb Judge signature; 14-Feb LAJ signature; `15FEB2018` source alias);
 - 5-Mar-2018 DP1041 Decree → five-day `recurso de revisión` against that decree;
 - 13-May-2024 judicial-office order → five-day `reposición` against that later ordering act.
 

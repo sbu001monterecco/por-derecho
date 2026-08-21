@@ -261,10 +261,10 @@ For each criminal theory require exact representation/omission, actor, audience,
 6. Proof of €400,000 payment and exact estate application/accounting.
 7. Post-24-Oct-2019 corrective/non-corrective title and accounting acts.
 8. 2021 bid notices, data room, inspections, disclosure parity and communications.
-9. Ottawa offer, bond/deposit, funding and withdrawal/nonappearance record.
-10. Native 18-May-2021 Auto.
-11. Complete 15-Oct-2021 Auto family.
-12. Complete January-2022 act family; reconcile 22-Jan with earlier 26-Jan reference.
+9. third-party bidder offer, bond/deposit, funding and withdrawal/nonappearance record.
+10. Complete application/attendance/recording/service/bond context around the located signed 18-May-2021 Auto.
+11. Complete hash/signature/service and review/finality context around both located 15-Oct-2021 acts.
+12. Reconcile the deed's 22-Jan recital with the two located 26-Jan clarification originals.
 13. Court receipt of 21-Feb-2022 deed and five-day filing compliance.
 14. Court mandamiento + Registry mortgage/concurso-annotation cancellations.
 15. Independent calculation of €13,168,082.02 against mortgage caps/definitive texts.

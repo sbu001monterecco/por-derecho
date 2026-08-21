@@ -3,6 +3,7 @@
   "owner": "Por Derecho / Project Sun Rock",
   "current_state": "MERGED",
   "control_date": "2026-08-19",
+  "last_correction_date": "2026-08-21",
   "publication_type": "bilingual dedicated claim dossier and canonical causation control",
   "controlling_pr": 426,
   "merge_sha": "ec499d467ae6cc6a10cf37933253bbe1581e9411",
@@ -47,7 +48,7 @@
     },
     {
       "id": "A2",
-      "assertion": "The 15 February 2018 Commercial Court order recognised CAM as assignee creditor, rejected LPB's litigious-credit theory and partially corrected amounts in LPB's favour.",
+      "assertion": "The Commercial Court order body-dated 8 February 2018 recognised CAM as assignee creditor, rejected LPB's litigious-credit theory and partially corrected amounts in LPB's favour. The Judge signed on 9 February, the LAJ on 14 February, and 15FEB2018 is only a filename/notification alias.",
       "status": "VERIFIED"
     },
     {
@@ -73,14 +74,14 @@
   ],
   "corrections": [
     {
-      "old": "8 February 2018 as date of the Commercial Court creditor-substitution / litigious-credit order",
-      "new": "15 February 2018",
-      "status": "PRIMARY-SOURCE-CORRECTED"
+      "old": "Earlier manifest correction inferred 15 February 2018 as the decision date from the 15FEB2018 filename/notification label",
+      "new": "Body date 8 February 2018; Judge signature 9 February; LAJ signature 14 February; 15FEB2018 retained only as a filename/notification alias",
+      "status": "SUPERSEDED-AND-PRIMARY-SOURCE-CORRECTED-2026-08-21"
     },
     {
-      "old": "appeal route",
-      "new": "five-day recurso de reposición without suspensive effect, as stated in the recovered order",
-      "status": "PRIMARY-SOURCE-CORRECTED"
+      "old": "five-day recurso de reposición attributed to the creditor-substitution order",
+      "new": "recurso de apelación within 20 days under Article 97 bis.2 of the then-applicable Insolvency Law",
+      "status": "SUPERSEDED-AND-PRIMARY-SOURCE-CORRECTED-2026-08-21"
     }
   ],
   "publication_safety": {
@@ -94,7 +95,7 @@
   "open_evidence": [
     "Exact DP 1041 withdrawal/archive act and instruction chain.",
     "Exact Cristo formal-authority change instrument and handover.",
-    "Challenge/finality chain for the 15 February 2018 order.",
+    "Challenge/finality chain for the body-dated 8 February 2018 order; stated remedy 20-day appeal.",
     "Complete PH122-to-CAM deed, schedules, price and proof of payment.",
     "Qualifying pre-assignment declaratory litigation for Article 1535 test.",
     "Contemporaneous insolvency-estate cost/benefit analysis for continuation or abandonment."

@@ -1,0 +1,38 @@
+FORENSIC SCAN — CRITICAL AUTOS IN CONCURSO 36/2012
+Preservation manifest
+
+Cut-off: 2026-08-21
+Court: Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria
+Debtor: Luchy Playa Blanca, S.L.U.
+Repository audited read-only: Por Derecho
+Repository commit: a50e034b13ae9942ac18f277bdb8f2274e3b60dd
+
+DELIVERABLE 1
+Filename: FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md
+SHA-256: 1770188baec8f42f5d1a25e91dbe5fca2bb2f6422354e7a18c6f61abb651ef6e
+Bytes: 202497
+Lines: 1424
+Words: 29067
+Executive-finding words: 1060
+Contents: requested outputs A–J; 46-source key (S01–S44, R01–R02); exact Spanish operative extracts and English translations; conditions, asset, debt, surplus, knowledge, contradiction, missing-document and website modules.
+
+DELIVERABLE 2
+Filename: FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv
+SHA-256: 2904d552245bea30349b66608b659d366a34f386b96936ddf33d2ac07be087b7
+Bytes: 44645
+Lines: 73
+Data records: 72 (E001–E072)
+Columns per record: 17
+Contents: date, document type/function, actor, forum, proceeding, source locator, page/completeness/annex status, operative or evidential effect, conditions, asset scope, evidential label and retrieval priority.
+
+VALIDATION
+- Every CSV row parses to 17 columns.
+- Record IDs are unique and sequential from E001 through E072.
+- Every S/R citation used in the report has a matching source-key definition and vice versa.
+- Requested output headings A through J are present.
+- The executive finding is within the requested 2–3 page range by word count.
+- No bank-account number was reproduced in either deliverable.
+- The repository audit was read-only; no website or repository file was changed.
+
+EVIDENTIAL CONTROL
+The absence of a document from the examined sources is not proof that it does not exist in the certified court file. Later-recovered primary originals supersede party copies, repository summaries and this cut-off report. The labels PROVEN BY PRIMARY DOCUMENT, STRONGLY SUPPORTED, INFERENCE, UNRESOLVED, CONTRADICTED and DOCUMENT NOT YET LOCATED must retain their defined meanings.

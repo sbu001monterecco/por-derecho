@@ -10,7 +10,8 @@
   "reading_rules": [
     "recognised insolvency credit != mortgage liability != competitive threshold != debt stated as consideration for the dacion != Registry value != possible surplus",
     "authorisation != implementation",
-    "22 January 2022 and 26 January 2022 are separate date references until the signed January act family is reconciled",
+    "definitive approval on 18 May 2021 != two 15 October decisions != two clarification Autos on 26 January 2022 != deed execution on 21 February 2022",
+    "Protocol 457 reportedly recites 26 January on page 10 and 22 January on page 11; that internal notarial inconsistency is a reconciliation target, not a judicial-order candidate, and the signed 26 January judicial originals control their own date and function",
     "later deed or Registry implementation does not automatically cure an earlier authority, competition, credit-classification or non-convalidation issue",
     "documentary difference alone does not prove nullity, fraud, bad faith, surplus or criminal responsibility"
   ],
@@ -51,53 +52,62 @@
       "label": "Third-party acquisition proposal",
       "source_status": "document_located_name_publicly_anonymised",
       "money": ["EUR 14,800,000"],
-      "safe_proposition": "A concrete competitive proposal existed. Its existence alone does not establish admissibility, funding, entitlement to adjudication or improper rejection.",
-      "open_bridge": ["filing receipt", "powers/authority", "proof of funds", "communications", "18 May attendance/minute/recording", "exact judicial treatment"]
+      "safe_proposition": "A concrete EUR 14.8m proposal existed. Auto 164/2021 later records the third party's nonappearance and failure to lodge the bond; it states that, after those events, the competitive licitation could not take place and definitively approves CAM.",
+      "open_bridge": ["stamped filing", "powers/authority", "proof of funds", "service and communications", "bond demand/ledger", "18 May minute/recording"]
     },
     {
       "id": "J36-2021-05-18",
       "date": "2021-05-18",
-      "type": "judicial_event_family",
-      "label": "Licitation / Auto 164/2021 and approval-source family",
-      "source_status": "primary_material_exists_complete_family_not_reconciled",
-      "safe_proposition": "Primary 18-May court material supports CAM's procedural role/representation at the event, while later materials reproduce an approval structure. The complete signed adjudication/approval source family remains to be reconciled.",
-      "open_bridge": ["requests", "attendance/powers", "recording/minute", "all signed orders", "notification", "third-party proposal treatment"]
+      "type": "judicial_order",
+      "label": "Auto 164/2021 · definitive CAM approval",
+      "source_status": "primary_signed_located",
+      "safe_proposition": "The Auto records a EUR 14.8m third-party proposal, nonappearance and failure to lodge the bond; it states that, after those events, the competitive licitation could not take place and definitively approves CAM's enumerated proposal. This is kept distinct from the later clarification that a licitation appearance occurred and was not an auction.",
+      "open_bridge": ["underlying applications", "service", "third-party powers and funds", "bond demand/ledger", "complete appearance minute/recording", "performance of approval terms"]
     },
     {
       "id": "J36-2021-10-15-A",
       "date": "2021-10-15",
-      "type": "judicial_order_candidate",
+      "type": "judicial_order",
       "label": "First described 15 October act",
-      "source_status": "primary_family_incomplete",
-      "safe_proposition": "Current reconstruction identifies a pair of 15-October acts requiring reconciliation; apparent documentary tension is a verification target, not proof of misconduct.",
-      "open_bridge": ["signed original", "request and context", "service", "finality", "clarification/correction/supersession"]
+      "source_status": "primary_signed_located",
+      "safe_proposition": "One of two separate 15-October decisions resolves a challenge in the approval/licitation sequence. It must remain separate from the same-date companion act and the later clarification.",
+      "open_bridge": ["complete application and response pack", "service", "then-current finality", "performance consequences"]
     },
     {
       "id": "J36-2021-10-15-B",
       "date": "2021-10-15",
-      "type": "judicial_order_candidate",
+      "type": "judicial_order",
       "label": "Second described 15 October act",
-      "source_status": "primary_family_incomplete",
-      "safe_proposition": "Current reconstruction identifies a pair of 15-October acts requiring reconciliation; apparent documentary tension is a verification target, not proof of misconduct.",
-      "open_bridge": ["signed original", "request and context", "service", "finality", "relationship to January 2022 acts"]
+      "source_status": "primary_signed_located",
+      "safe_proposition": "The companion 15-October decision separately resolves the licitation-procedure branch. It did not create a new third-party asset transfer and was later the subject of clarification.",
+      "open_bridge": ["complete application and response pack", "service", "then-current finality", "performance consequences"]
     },
     {
-      "id": "J36-2022-01-22-RECITAL",
-      "date": "2022-01-22",
-      "type": "judicial_order_recited_in_deed",
-      "label": "22 January order recited by deed 457",
-      "source_status": "notarial_recital_verified_primary_judicial_original_open",
-      "safe_proposition": "Deed 457 is evidence that the notarial implementation recites/relies on a judicial act dated 22 January 2022; the recital does not establish the complete content or effect of the underlying signed original.",
-      "open_bridge": ["signed original", "application/request", "operative paragraphs", "notification", "relationship to 15 October acts", "relationship to 26 January reference"]
-    },
-    {
-      "id": "J36-2022-01-26",
+      "id": "J36-2022-01-26-A",
       "date": "2022-01-26",
-      "type": "judicial_act_reference",
-      "label": "26 January judicial-date reference",
-      "source_status": "source_family_requires_reconciliation",
-      "safe_proposition": "Preserve 26 January as a distinct date reference. It must not be collapsed into 22 January or used as a generic label for the whole adjudication until the signed source is bound to the record.",
-      "open_bridge": ["signed original and metadata", "operative function", "service/finality", "relationship to deed 457"]
+      "type": "clarification_order",
+      "label": "First clarification Auto concerning a 15 October decision",
+      "source_status": "primary_signed_located",
+      "safe_proposition": "This Auto clarifies a 15 October act. It does not newly adjudicate assets, calculate a surplus or replace the definitive CAM approval of 18 May 2021.",
+      "open_bridge": ["complete clarification application and opposition pack", "service", "then-current finality"]
+    },
+    {
+      "id": "J36-2022-01-26-B",
+      "date": "2022-01-26",
+      "type": "clarification_order",
+      "label": "Second clarification Auto concerning the companion 15 October decision",
+      "source_status": "primary_signed_located",
+      "safe_proposition": "This Auto clarifies that the procedural mechanism was a licitation appearance, not an auction. It does not newly adjudicate assets, calculate a surplus or replace the definitive CAM approval of 18 May 2021.",
+      "open_bridge": ["complete clarification application and opposition pack", "service", "then-current finality"]
+    },
+    {
+      "id": "IMP-2022-02-21-RECITAL-DATE",
+      "date": "2022-02-21",
+      "type": "notarial_recital_inconsistency",
+      "label": "Protocol 457 internal 26/22 January date inconsistency",
+      "source_status": "primary_notarial_source_reviewed_judicial_originals_control",
+      "safe_proposition": "Protocol 457 reportedly refers to 26 January on page 10 and 22 January on page 11. This inconsistency belongs to the deed's recital layer; it is not evidence of a separate 22 January judicial order and cannot replace the two signed 26 January clarification Autos.",
+      "open_bridge": ["certified deed pagination and exact recitals", "notarial source or correction for 22 January", "testimonios supplied to the notary", "docket reconciliation"]
     },
     {
       "id": "IMP-2022-02-21",
@@ -107,7 +117,7 @@
       "source_status": "primary_notarial_source_recovered_reviewed",
       "money": ["EUR 13,168,082.02"],
       "safe_proposition": "The deed transfers the described mortgaged properties to CAM, states EUR 13,168,082.02 as debt serving as consideration for the dacion, requires communication to the Mercantile Court within five calendar days and contains cancellation requests.",
-      "open_bridge": ["legal-function bridge for the stated debt", "court communication", "ensuing act/mandamiento", "Registry implementation", "accounting treatment"]
+      "open_bridge": ["legal-function bridge for the stated debt", "reconciliation of the page 10/page 11 recital-date inconsistency", "court communication", "ensuing act/mandamiento", "Registry implementation", "accounting treatment"]
     },
     {
       "id": "IMP-2022-COURT-NOTICE",

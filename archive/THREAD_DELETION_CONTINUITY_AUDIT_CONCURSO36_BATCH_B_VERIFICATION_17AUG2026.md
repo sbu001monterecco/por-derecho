@@ -4,6 +4,8 @@
 **Scope:** independent verification of the reported PR #312 / Batch A state plus primary-source continuation into the 2018 Batch B family.  
 **Verdict:** `DELETION-SAFE FOR THIS VERIFICATION PASS ONCE MERGED — WHOLE DOCKET REMAINS OPEN`
 
+> **SUPERSEDED IN PART — 21 AUGUST 2026.** This audit accurately recorded the 17-Aug availability of only a two-page derivative. A complete three-page authentic electronic 4-Jun-2018 Auto is now controlled from Gmail `194a98a11920fefd`, filename `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`; body 4-Jun, Judge signature 5-Jun, LAJ Águeda Reyes Almeida signature 6-Jun. Use the later canonical register, not the old missing-source conclusion.
+
 ## What a fresh thread must recover without this conversation
 
 ### PR #312 / Batch A
@@ -27,7 +29,7 @@
 - Gmail alias/scan of the same seven-page act: Gmail `18679e48f1da313c`; SHA-256 `bf134e63cc022aec0e8a2c0e428e481cce65ad80a3c6be05933b15a453916b80`.
 - Earlier reported hash `bf134e63cc0c4d09be7f32536460b6eed206b3e5c7e18de19b2c326c10e15964` was not reproduced from either controlled copy and is **not canonical**.
 - `C36-JUD-2018-04-16-002`: Gmail `1963e7416170ea0b`; SHA-256 `4748ad85af54dac606104e8f93cd71299cfd5878fc32be0bf1d4f236325e59ff`.
-- 4-Jun-2018 copy is currently only two pages and visibly incomplete; Gmail source hash `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`; notification shown 08-Jun-2018. Do not mark complete or bind a Judge from that incomplete copy alone.
+- At the time of this 17-Aug pass, only the two-page incomplete derivative (SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`) was controlled. **21-Aug update:** the separate three-page primary source is complete and controls page count/signatures; the older derivative alone must still not be used as the source for those facts.
 - 15-Jun-2018 is `C36-LAJ-2018-06-15-001`, a two-page **Diligencia de Ordenación by Águeda Reyes Almeida**, notified 20-Jun-2018; Gmail `16761b0024a62292`; SHA-256 `1298d03daca48284de642299ddb86c6b8ed2900f95d5ce05edf2d491e5f8ade5`.
 - 26-Jun-2018 is `C36-JUD-2018-06-26-001`, complete two-page suspension Auto by Alberto López Villarrubia, notified 28-Jun-2018; Drive `18aj6kPU2Rh5KzVc8veKBwKcbGWKen0J-`; SHA-256 `4f23ad7e30191b1d32c8708851729f42151c3b095476255d5fe1a5fc43509099`.
 
@@ -54,13 +56,13 @@ A future thread must not:
 - collapse the two 16-Apr-2018 Autos;
 - treat different source-copy hashes of the same 16-Apr liquidation Auto as different judicial acts;
 - restore the unverified `bf134e63cc0c4d...e15964` hash as canonical without locating the exact binary that produces it;
-- call the 4-Jun two-page extract a complete signed Auto;
+- call the 4-Jun two-page extract itself a complete signed Auto; completeness derives from the separately promoted three-page primary;
 - attribute the 15-Jun LAJ Diligencia to Alberto;
 - claim the whole 2018 or whole Concurso docket is 100% complete.
 
 ## Remaining blockers after this pass
 
-1. Complete 4-Jun-2018 Auto continuation/signature copy.
+1. Full-file hash/equivalence binding for the now-located complete 4-Jun-2018 Auto and reconciliation of its figures/effect.
 2. Full 2018 distinct-act denominator and appeal/finality chain.
 3. Underlying notification/service receipts where available.
 4. Official/certified court-index reconciliation.

@@ -32,7 +32,7 @@ This is deliberately more demanding than a narrative accusation. It requires eve
 - LPB obtained a court-admitted route to the assignment deed, price, payment information and costs.
 - CAM separately sought recognition as assignee creditor in the insolvency.
 - The AC reported favourably.
-- On 15 February 2018 the Commercial Court recognised CAM, rejected LPB's Article 1535 position and expressly relied on the AC's verification rather than requiring all supporting title material itself.
+- In the order body-dated 8 February 2018 (Judge-signed 9 February; LAJ-signed 14 February; `15FEB2018` source alias), the Commercial Court recognised CAM, rejected LPB's Article 1535 position and expressly relied on the AC's verification rather than requiring all supporting title material itself.
 - The same order corrected part of the amounts in LPB's favour and must therefore remain part of the counter-record.
 - The LPB information/retracto route later ceased to produce demonstrated value. The exact termination act remains P0.
 
@@ -91,7 +91,7 @@ The site should distinguish:
 - **active judicial effect** — rulings that recognise, implement or preserve a CAM position; and
 - **passive/deferential effect** — decisions not to require further verification, not to adopt a neutral control, or to rely on AC verification at a point where LPB sought protection.
 
-The 15 February 2018 order is a clean example because it both:
+The 8 February 2018 order is a clean example because it both:
 
 - actively recognised CAM and rejected LPB's Article 1535 theory; and
 - expressly relied on the AC's favourable verification rather than demanding all title material itself.
@@ -173,7 +173,7 @@ This same test should be reused for other episodes:
 ## 9. Counter-record that must remain visible
 
 1. The Commercial Court rejected LPB's Article 1535 merits theory.
-2. The 15 February 2018 order also corrected part of CAM's amounts in LPB's favour.
+2. The 8 February 2018 order also corrected part of CAM's amounts in LPB's favour.
 3. The 26 June 2018 suspension and 2019 refusal of validation are real judicial control points.
 4. Insolvency law can lawfully produce creditor acquisitions and adverse debtor outcomes.
 5. Distinct later entities must not be collapsed into CAM merely because they form part of a later commercial chain.
@@ -200,7 +200,7 @@ It should lead to a dedicated ES/EN page where the complete pattern, counter-rec
 1. Exact DP 1041 termination/withdrawal/archive act and instruction chain.
 2. Exact Cristo formal-authority change instrument and handover.
 3. Contemporaneous AC estate-interest analysis for the retracto route.
-4. Complete challenge/finality chain for the 15 February 2018 order.
+4. Complete challenge/finality chain for the 8 February 2018 order.
 5. Complete PH122 → CAM transaction economics.
 6. Actor-specific communications that can prove or disprove coordination/influence.
 7. Episode-by-episode LPB benefit/damage quantification.

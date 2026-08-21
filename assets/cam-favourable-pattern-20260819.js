@@ -153,7 +153,8 @@
 
 // Global four-track retracto/tanteo loader. It keeps Article 1535 (credit), the documented
 // 2018 unit-rights workstream, Article 1522/1524 co-owner analysis and contractual/exploitation
-// rights separate, and also applies the primary-source 15-Feb-2018 appeal-route correction.
+// rights separate, and also applies the creditor-Auto date/remedy correction
+// (body 8-Feb; signatures 9/14-Feb; later label 15-Feb; 20-day appeal).
 (() => {
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-retracto-tanteo-four-track-loader]')) return;

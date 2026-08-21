@@ -15,5 +15,9 @@ en/index.html
 robots.txt
 sitemap.xml
 publication-manifests/
+archive/concurso36-primary-autos-21aug2026/
+assets/data/concurso36-what-court-ordered-v1.json
+es/concurso-36-2012-que-ordeno-el-juzgado/
+en/concurso-36-2012-what-the-court-ordered/
 deployment-probes/
 ops/

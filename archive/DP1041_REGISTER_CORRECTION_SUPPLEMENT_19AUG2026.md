@@ -4,6 +4,8 @@
 **Status:** CANONICAL OVERRIDE FOR STALE DP 1041 / ART.1535 REGISTER ENTRIES  
 **Four-track cross-control:** `archive/RETRACTO_TANTEO_FOUR_TRACK_360_CONTROL_19AUG2026.md`
 
+> **21-AUG-2026 SUPERSESSION NOTICE.** The 19-August date inference from the `15FEB2018` filename was wrong. Current primary control is: ruling body **8-Feb-2018**; Judge signature **9-Feb**; LAJ signature **14-Feb**; `15FEB2018` only a filename/notification alias; remedy **20-day appeal**. The corrected sections below supersede their earlier 15-Feb decision-date wording.
+
 This supplement prevents older register language from re-opening evidence gaps that have now been closed by primary acts and prevents the Article 1535 credit route from being conflated with the separately documented 2018 unit-transfer rights workstream.
 
 ## Correction CR-DP1041-01 — termination / archive
@@ -24,23 +26,23 @@ This supplement prevents older register language from re-opening evidence gaps t
 
 ## Correction CR-DP1041-03 — Commercial Court date
 
-**Superseded wording:** the relevant Commercial Court creditor-substitution / Article 1535 order is dated 8 February 2018.
+**Superseded wording:** the relevant Commercial Court creditor-substitution / Article 1535 order is dated 15 February 2018 because the source filename contains `15FEB2018`.
 
-**Corrected proposition:** the primary order currently controlling this proposition is dated **15 February 2018**. Earlier 8-February references are superseded unless a distinct primary act is produced.
+**Corrected proposition:** the ruling body is dated **8 February 2018**; the Judge signed on **9 February** and the LAJ on **14 February**. `15FEB2018` is only a filename/notification alias.
 
-## Correction CR-DP1041-04 — challenge route for the 15-Feb-2018 order
+## Correction CR-DP1041-04 — challenge route for the 8-Feb-2018 order
 
-**Superseded / incorrect wording:** the 15-Feb-2018 Commercial Court order provided a five-day `recurso de reposición`.
+**Superseded / incorrect wording:** the creditor-substitution Commercial Court order provided a five-day `recurso de reposición`.
 
-**Corrected proposition:** the primary 15-Feb-2018 order provided a **recurso de apelación within 20 days under Article 97 bis.2 of the then-applicable Insolvency Law**.
+**Corrected proposition:** the primary 8-Feb-2018 order provided a **recurso de apelación within 20 days under Article 97 bis.2 of the then-applicable Insolvency Law**.
 
 Keep separate:
 
-- **15-Feb-2018 Commercial Court order** → 20-day `recurso de apelación`;
+- **8-Feb-2018 Commercial Court order** → 20-day `recurso de apelación` (9-Feb Judge signature; 14-Feb LAJ signature; `15FEB2018` alias);
 - **5-Mar-2018 DP1041 Decree** → five-day `recurso de revisión` against that decree; and
 - **13-May-2024 judicial-office order** → five-day `reposición` against that later ordering act.
 
-**Status:** VERIFIED PRIMARY CORRECTION. Any repository or website wording attributing the five-day reposición to the 15-Feb order is superseded.
+**Status:** VERIFIED PRIMARY CORRECTION. Any repository or website wording attributing a five-day reposición, or the operative decision date 15-Feb, to this Auto is superseded.
 
 ## Correction CR-DP1041-05 — track identity
 
@@ -58,7 +60,7 @@ ME-061 remains **PARTIAL**, but the following former sub-gaps are no longer miss
 - whether the claimant withdrew — **RESOLVED: LPB requested desistimiento**;
 - instrument ending Cristo's specific formal LPB mandate — **RESOLVED**;
 - matter-specific AC causation of that formal-mandate end — **RESOLVED / C5**; and
-- challenge type allowed by the 15-Feb-2018 order — **RESOLVED: 20-day appeal**.
+- challenge type allowed by the 8-Feb-2018 order — **RESOLVED: 20-day appeal**.
 
 ME-061 now remains open for:
 
@@ -79,11 +81,11 @@ Where the continuous-maintenance matrix still says:
 
 - `adverse 8-Feb-2018 ruling`;
 - `1041/2017 outcome` as an unresolved evidence target; or
-- `five-day reposición` as the challenge to the 15-Feb-2018 order,
+- `five-day reposición` as the challenge to the 8-Feb-2018 order,
 
 read instead:
 
-> **Adverse Article 1535 / creditor-substitution ruling controlled at 15-Feb-2018. DP 1041 withdrawal/archive is documented by the 5-Mar-2018 Decree and 13-May-2024 judicial-office order. The AC's 25-Jan-2018 termination of Cristo's specific formal LPB mandate is C5 direct causation. The 15-Feb order provided a 20-day appeal under Article 97 bis.2 LC. Remaining P0 is the underlying withdrawal pleading, internal instruction chain, estate-interest analysis, actual appeal/finality chain and complete transaction economics.**
+> **Adverse Article 1535 / creditor-substitution ruling controlled at body date 8-Feb-2018, Judge signature 9-Feb and LAJ signature 14-Feb; `15FEB2018` is only a filename/notification alias. DP 1041 withdrawal/archive is documented by the 5-Mar-2018 Decree and 13-May-2024 judicial-office order. The AC's 25-Jan-2018 termination of Cristo's specific formal LPB mandate is C5 direct causation. The 8-Feb order provided a 20-day appeal under Article 97 bis.2 LC. Remaining P0 is the underlying withdrawal pleading, internal instruction chain, estate-interest analysis, actual appeal/finality chain and complete transaction economics.**
 
 ## Public-language lock
 

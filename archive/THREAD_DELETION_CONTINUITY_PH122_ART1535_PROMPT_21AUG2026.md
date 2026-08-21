@@ -3,6 +3,8 @@
 **Audit date:** 21 August 2026  
 **Originating thread:** Article 1535 / PH122→Construcciones Acosta Matos / deed and price / DP 1041 / later hotel-asset acquisition / effective judicial protection.
 
+> **SUPERSEDED IN PART — LATER 21-AUG PRIMARY REINSPECTION.** Read every 15-Feb-2018 decision-date reference below as: ruling body **8-Feb-2018**; Judge signature **9-Feb**; LAJ signature **14-Feb**; `15FEB2018` filename/notification alias; stated remedy **20-day appeal**. The reusable prompt referenced below has been updated to the current control.
+
 ## Verdict
 
 **DELETION-SAFE AFTER THIS CHANGE IS MERGED TO MAIN.**
@@ -18,7 +20,7 @@ The replacement prompt incorporates the primary-act corrections and later reposi
 - PH122→CAM assignment and Article 1535 publication control.
 - DP 1041 admitted production route.
 - 25 January 2018 AC termination of Cristo A. Suárez Pimentel's specific formal LPB mandate.
-- 15 February 2018 adverse/mixed Commercial Court order and corrected appeal route.
+- 8 February 2018 adverse/mixed Commercial Court order; Judge signature 9 February, LAJ signature 14 February, `15FEB2018` source alias, and 20-day appeal route.
 - 5 March 2018 withdrawal filed in LPB's name and CAM non-opposition/conformity.
 - 13 May 2024 archive confirmation.
 - Unresolved internal authority, instruction, authorship, filing and estate-benefit chain.
@@ -50,7 +52,7 @@ Deletion safety does not mean evidential closure. P0 remains:
 - native filing/signature metadata;
 - internal AC/representation authority and instruction chain;
 - contemporaneous estate-interest/cost-benefit analysis;
-- actual appeal/finality chain for the 15 February 2018 order;
+- actual appeal/finality chain for the 8 February 2018 order;
 - exact pre-assignment declaratory controversy, credit by credit;
 - complete debt/value/income/dación/surplus reconciliation;
 - communications among PH122/servicers, CAM, AC-controlled representation and relevant advisers;
@@ -60,7 +62,7 @@ These gaps are durably recorded and do not require retention of the exploratory 
 
 ## Material intentionally not treated as authoritative
 
-The conversation's intermediate formulations, implementation narration and superseded assertions—including earlier 8 February dating and stronger unsupported language concerning deliberate concealment, inflation, favouritism, bias or manufactured debt—are not controlling. Current primary-source controls and the dedicated prompt govern.
+The conversation's intermediate formulations, implementation narration and superseded assertions—including the later erroneous inference that `15FEB2018` was the ruling date, and stronger unsupported language concerning deliberate concealment, inflation, favouritism, bias or manufactured debt—are not controlling. Current primary-source controls and the dedicated prompt govern.
 
 ## Final deletion decision
 

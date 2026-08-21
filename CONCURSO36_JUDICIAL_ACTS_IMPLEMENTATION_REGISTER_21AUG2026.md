@@ -1,7 +1,9 @@
 # Concurso 36/2012 — Judicial Acts and Implementation Register
 
+> **SUPERSEDED BY PRIMARY-SOURCE REINSPECTION — 21 AUGUST 2026.** This earlier control is retained for audit history but is no longer canonical. Signed originals now establish Auto 164/2021 of 18 May, two distinct Autos of 15 October and two clarification Autos dated 26 January 2022. Protocol 457 internally recites 26 January on page 10 and 22 January on page 11; that is a notarial recital inconsistency, not evidence of a separate signed 22-January order. Current controls are `archive/CONCURSO_36_2012_PRIMARY_AUTOS_REDIGEST_HANDOVER_21AUG2026.md`, `archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md` and `assets/data/concurso36-what-court-ordered-v1.json`.
+
 **Date:** 21 August 2026  
-**Status:** canonical repository control for the 2018–2022 transaction/judicial implementation spine  
+**Status:** superseded historical repository control for the 2018–2022 transaction/judicial implementation spine
 **Machine-readable companion:** `assets/data/concurso36-judicial-spine-v1.json`
 
 ## Governing rule
