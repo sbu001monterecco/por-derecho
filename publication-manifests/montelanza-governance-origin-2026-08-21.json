@@ -3,10 +3,11 @@
   "publication_id": "montelanza-governance-origin-2026-08-21",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-21",
-  "current_state": "DRAFT_SOURCE",
-  "lifecycle_state": "DRAFT_SOURCE",
+  "current_state": "PR_OPEN",
+  "lifecycle_state": "PR_OPEN",
   "subject": "Complete Montelanza 2008 account digitisation and bounded reconstruction of the 2008 asset/operating transition, the unresolved 2008-2011 Community/CEXP succession, and the later dependency of CAM's 2017-2018 entry on independently proved authority",
-  "branch": "analysis/montelanza-governance-origin-20260821",
+  "branch": "analysis/montelanza-governance-origin-clean-20260821",
+  "source_pr": 685,
   "expected_routes": {
     "es": ["es/montelanza-cuentas-2008/index.html"],
     "en": ["en/montelanza-accounts-2008/index.html"]
@@ -57,8 +58,8 @@
     "strongest_lawful_explanation_visible": true
   },
   "repository_state": {
-    "source_branch": "analysis/montelanza-governance-origin-20260821",
-    "source_pr": null,
+    "source_branch": "analysis/montelanza-governance-origin-clean-20260821",
+    "source_pr": 685,
     "merge_status": "NOT_MERGED",
     "live_status": "NOT_CLAIMED"
   },
