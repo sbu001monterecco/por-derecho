@@ -1,0 +1,91 @@
+{
+  "schema": "por-derecho.control-full-text-manifest.v1",
+  "cutoff_date": "2026-08-21",
+  "public_release": {
+    "raw_source_binaries_in_git": false,
+    "redactions": [
+      "NIE/DNI",
+      "personal service address",
+      "email address",
+      "telephone number",
+      "signature data"
+    ],
+    "status_rule": "The texts reproduce party pleadings; allegations are not findings."
+  },
+  "documents": [
+    {
+      "control": 21,
+      "filing_date": "2026-06-25",
+      "document_role": "base complaint",
+      "source_file": "FINAL-IMPRIMIR_DENUNCIA_PENAL_DOCUMENTADA_Y_ANEXOS_25JUN2026_FINAL_CORREGIDO.pdf",
+      "source_bytes": 10922266,
+      "source_pages": 199,
+      "source_sha256": "ad3f6aea269649a46212967ddb05225fa160b6e93393e8896e001aa3570e5c08",
+      "published_source_range": "1-85",
+      "substantive_pleading_range": "3-85",
+      "public_text": "control-21/2026-06-25-complaint-full-text-public.md",
+      "public_text_sha256": "e1fa90c9de5736bfa59421ff96777782e84a77f03303cdacb8d703025e771fb8"
+    },
+    {
+      "control": 21,
+      "filing_date": "2026-07-09",
+      "document_role": "filing guide preceding amendment",
+      "source_file": "CONTROL21_FILE_THIS_DECANATO_09JUL2026_FINAL_FIRMA.pdf",
+      "source_bytes": 60752517,
+      "source_pages": 492,
+      "source_sha256": "2ef7366966178bab4848c77067c21170f0a3316639d30962201cd28a8172abe8",
+      "published_source_range": "1-6",
+      "public_text": "control-21/2026-07-09-filing-guide-full-text-public.md",
+      "public_text_sha256": "6b6783d176c04b1a2d80b2e82e8984a736bac9f43af7a6a19c6d7559e454c230"
+    },
+    {
+      "control": 21,
+      "filing_date": "2026-07-09",
+      "document_role": "amendment",
+      "source_file": "CONTROL21_FILE_THIS_DECANATO_09JUL2026_FINAL_FIRMA.pdf",
+      "source_bytes": 60752517,
+      "source_pages": 492,
+      "source_sha256": "2ef7366966178bab4848c77067c21170f0a3316639d30962201cd28a8172abe8",
+      "published_source_range": "7-25",
+      "public_text": "control-21/2026-07-09-ampliacion-full-text-public.md",
+      "public_text_sha256": "06dcae994655dfd485e6dd0a6e086607e131359f9e9b44967a31f373847271a0"
+    },
+    {
+      "control": 22,
+      "filing_date": "2026-06-18",
+      "document_role": "base complaint",
+      "source_file": "01_Denuncia_Penal_AC_LPB_Sun_Park_AC-FINAL_17JUN2026.pdf",
+      "source_bytes": 887597,
+      "source_pages": 55,
+      "source_sha256": "b11f10e7410f922a8cd1796ea462ea7ea20d555b7308e4481f2cb23732b1002b",
+      "published_source_range": "1-55",
+      "public_text": "control-22/2026-06-18-complaint-full-text-public.md",
+      "public_text_sha256": "21999890fb4a994fbc9f5c6e1007f152b95d323774afbae9273e4d84ada258fb"
+    },
+    {
+      "control": 24,
+      "filing_date": "2026-06-18",
+      "document_role": "base complaint",
+      "source_file": "02_Paquete_Unificado_Para_Presentacion_JUEZ_ FINAL 17JUNE2026 (signed).pdf",
+      "source_bytes": 2879748,
+      "source_pages": 79,
+      "source_sha256": "1cae1912a20202c5f5779db07e77c7e1d3f0ae514676e07d3ace4dd56f6f76a0",
+      "published_source_range": "1-30",
+      "substantive_pleading_range": "4-30",
+      "public_text": "control-24/2026-06-18-complaint-full-text-public.md",
+      "public_text_sha256": "1e7b770f08b0085631a04df22e3edd8c34e30a9daf000c0e93c7f34bfdfd3895"
+    },
+    {
+      "control": 24,
+      "filing_date": "2026-06-25",
+      "document_role": "complement",
+      "source_file": "APORTACION_COMPLEMENTARIA_CONTROL_24_25JUN2026.pdf",
+      "source_bytes": 170730,
+      "source_pages": 10,
+      "source_sha256": "a552c10094a3bdbf21132f7083689d79bee39b8d51ed96de19090a3d638b7c48",
+      "published_source_range": "1-10",
+      "public_text": "control-24/2026-06-25-complement-full-text-public.md",
+      "public_text_sha256": "e847cd58ac9accd327d58206d24724779e01de6ddfe86459a5118e0236708c84"
+    }
+  ]
+}
