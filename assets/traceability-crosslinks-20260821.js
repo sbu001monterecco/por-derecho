@@ -90,3 +90,63 @@
   if (lead) lead.insertAdjacentElement('afterend', box);
   else hero.append(box);
 })();
+
+/* MEETING-POINT-DIRECT-COMMERCIAL-EVIDENCE-PROPAGATION-20260821 */
+(() => {
+  const normalise = value => {
+    let path = value.replace(/\/index\.html$/, '/').toLowerCase();
+    if (!path.endsWith('/')) path += '/';
+    return path;
+  };
+  const path = normalise(location.pathname);
+  const isEn = document.documentElement.lang === 'en';
+  const base = path.includes('/por-derecho/') ? '/por-derecho/' : '/';
+  const lavaEs = path.endsWith('/es/lava-verde-club-sei-meeting-point/');
+  const lavaEn = path.endsWith('/en/lava-verde-club-sei-meeting-point/');
+  const mp357Es = path.endsWith('/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/');
+  const mp357En = path.endsWith('/en/legal-notebook/meeting-point-357-2024-judicial-traceability/');
+  const takeoverEs = path.endsWith('/es/toma-control-sun-park-7-junio-2018/');
+  const takeoverEn = path.endsWith('/en/sun-park-takeover-7-june-2018/');
+
+  if ((lavaEs || lavaEn || mp357Es || mp357En) && !document.querySelector('[data-mp-direct-commercial-source-20260821]')) {
+    const panel = document.createElement('aside');
+    panel.dataset.mpDirectCommercialSource20260821 = 'true';
+    panel.style.cssText = 'margin:1rem 0 1.4rem;padding:1rem 1.15rem;border-left:5px solid #315c7b;background:#f5f8fa;border-radius:12px;color:#172632;';
+    panel.innerHTML = isEn
+      ? `<strong>Direct-source upgrade · same location, independent commercial layer.</strong> A preserved Meeting Point Hotels corporate brochure describes <strong>Club Sei Lanzarote</strong> as a 315-room Playa Blanca hotel, while an archived <strong>sonnenklar.TV offer dated 27 January 2020 places Club Sei Lanzarote at Calle Janubio 3</strong>. Historical Sun Park material gives the same Calle Janubio 3 address. Together, these sources establish public presentation/distribution of the Sun Park location within the FTI/Meeting Point commercial ecosystem. They do <strong>not</strong> yet establish the exact contracting legal person, room-by-room authority, completed bookings, receipts, commissions or legality.`
+      : `<strong>Refuerzo de fuente directa · misma localización, capa comercial independiente.</strong> Un folleto corporativo preservado de Meeting Point Hotels describe <strong>Club Sei Lanzarote</strong> como hotel de 315 habitaciones en Playa Blanca, mientras una oferta archivada de <strong>sonnenklar.TV de 27 de enero de 2020 sitúa Club Sei Lanzarote en Calle Janubio 3</strong>. El material histórico de Sun Park da la misma dirección, Calle Janubio 3. En conjunto, estas fuentes acreditan presentación/distribución pública de la localización Sun Park dentro del ecosistema comercial FTI/Meeting Point. <strong>No</strong> acreditan todavía la persona jurídica contractual exacta, la autoridad habitación por habitación, reservas consumadas, cobros, comisiones ni la licitud.`;
+
+    let anchor = null;
+    if (lavaEs || lavaEn) anchor = document.querySelector('.notebook-hero');
+    if (mp357Es || mp357En) anchor = document.querySelector('#sun-park .notebook-intro') || document.querySelector('.notebook-hero');
+    if (anchor) {
+      if (mp357Es || mp357En) anchor.insertAdjacentElement('afterend', panel);
+      else anchor.insertAdjacentElement('afterend', panel);
+    }
+  }
+
+  if ((mp357Es || mp357En) && !document.querySelector('[data-mp357-custody-boundary-20260821]')) {
+    const boundary = document.createElement('div');
+    boundary.dataset.mp357CustodyBoundary20260821 = 'true';
+    boundary.className = 'editorial-rule';
+    boundary.innerHTML = isEn
+      ? `<strong>357/2024 boundary:</strong> the same-address commercial evidence makes the proceeding more relevant as a possible records-custody/disclosure node. It does not prove that those records entered the debtor schedules or Auren workfile, that either judge personally saw Sun Park material, or that the successive judicial names reflect anything improper.`
+      : `<strong>Límite 357/2024:</strong> la evidencia comercial de misma dirección hace más relevante el procedimiento como posible nodo de custodia/revelación documental. No prueba que esos registros entraran en los anexos del deudor o en el archivo de Auren, que cualquiera de los magistrados viera personalmente material Sun Park, ni que la sucesión de nombres judiciales refleje impropiedad alguna.`;
+    const sunPark = document.querySelector('#sun-park .shell');
+    if (sunPark) sunPark.append(boundary);
+  }
+
+  if ((takeoverEs || takeoverEn) && !document.querySelector('[data-takeover-meeting-point-gateway-20260821]')) {
+    const gateway = document.createElement('div');
+    gateway.dataset.takeoverMeetingPointGateway20260821 = 'true';
+    gateway.style.cssText = 'margin:1.35rem 0;padding:1rem 1.15rem;border:1px solid rgba(20,35,45,.16);border-left:5px solid #315c7b;border-radius:12px;background:#fff;';
+    const target = isEn
+      ? `${base}en/lava-verde-club-sei-meeting-point/`
+      : `${base}es/lava-verde-club-sei-meeting-point/`;
+    gateway.innerHTML = isEn
+      ? `<p class="kicker" style="margin-top:0">From material control to commercial product</p><h3 style="margin:.2rem 0 .55rem">Follow the downstream chain: Lava Verde → Club Sei → Meeting Point/FTI.</h3><p>Independent preserved commercial sources later place Club Sei Lanzarote at the same Calle Janubio 3 address as Sun Park before the 2022 LPB title threshold. That strengthens the chronology from access/control to project and distribution, while leaving contract, exact inventory, authority, completed bookings and legality open.</p><p><a class="button secondary" href="${target}">Open the commercialisation dossier →</a></p>`
+      : `<p class="kicker" style="margin-top:0">Del control material al producto comercial</p><h3 style="margin:.2rem 0 .55rem">Seguir la cadena posterior: Lava Verde → Club Sei → Meeting Point/FTI.</h3><p>Fuentes comerciales independientes preservadas sitúan después Club Sei Lanzarote en la misma dirección Calle Janubio 3 de Sun Park antes del umbral de título LPB de 2022. Esto refuerza la cronología desde acceso/control hacia proyecto y distribución, manteniendo abiertos contrato, inventario exacto, autoridad, reservas consumadas y licitud.</p><p><a class="button secondary" href="${target}">Abrir el dossier de comercialización →</a></p>`;
+    const project = document.querySelector('#proyecto-antes-del-titulo .shell, #project-before-title .shell');
+    if (project) project.append(gateway);
+  }
+})();
