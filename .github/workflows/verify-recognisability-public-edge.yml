@@ -1,0 +1,57 @@
+name: Verify recognisability public edge
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/verify-recognisability-public-edge.yml'
+      - 'archive/THREAD_DELETION_CONTINUITY_RECOGNISABILITY_FRAGMENTATION_21AUG2026.md'
+  push:
+    branches: [main]
+    paths:
+      - 'en/por-derecho/research-and-training/fragmented-truth/**'
+      - 'es/por-derecho/investigacion-y-formacion/verdad-fragmentada/**'
+      - 'sitemap-por-derecho-foundation.xml'
+      - '.github/workflows/verify-recognisability-public-edge.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: write
+
+jobs:
+  verify-public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify bilingual fragmented-truth routes
+        shell: bash
+        run: |
+          set -euo pipefail
+          en='https://sbu001monterecco.github.io/por-derecho/en/por-derecho/research-and-training/fragmented-truth/'
+          es='https://sbu001monterecco.github.io/por-derecho/es/por-derecho/investigacion-y-formacion/verdad-fragmentada/'
+          for attempt in $(seq 1 30); do
+            en_body="$(curl --fail --silent --show-error --location --max-time 20 --header 'Cache-Control: no-cache' "${en}?verify=${GITHUB_SHA}-${attempt}" || true)"
+            es_body="$(curl --fail --silent --show-error --location --max-time 20 --header 'Cache-Control: no-cache' "${es}?verify=${GITHUB_SHA}-${attempt}" || true)"
+            if grep -Fq 'Separate responsibility. Integrate evidence.' <<<"$en_body" \
+              && grep -Fq 'Initiative in formation' <<<"$en_body" \
+              && grep -Fq 'Separa la responsabilidad. Integra la prueba.' <<<"$es_body" \
+              && grep -Fq 'Iniciativa en formación' <<<"$es_body"; then
+              echo "PUBLIC_EDGE_VERIFIED on attempt ${attempt}"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'Public edge did not expose both expected bilingual route markers within the verification window.' >&2
+          exit 1
+
+      - name: Publish persistent public-edge success status
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state='success' \
+            -f context='pages-propagation/recognisability-public-edge' \
+            -f description='Bilingual recognisability routes verified live'

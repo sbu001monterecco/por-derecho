@@ -2,7 +2,7 @@
 
 **Control date:** 21 August 2026  
 **Thread subject:** repository/website reverse engineering; Por Derecho initiative-in-formation; The Second Pair of Eyes; fragmentation/atomisation; evidential recognisability; deletion audit.  
-**Current implementation state:** feature branch + draft PR; not merged; public-edge deployment not claimed.
+**Current implementation state:** substantive doctrine merged to `main`; final public-edge closeout verifier added in follow-up branch; final deletion-safe status depends only on observed verifier result and closeout merge.
 
 ## 1. Material new intelligence created by the thread
 
@@ -17,21 +17,15 @@ This thread identified and formalised a methodological refinement not previously
 7. **Second Pair architecture** — recognisability is an overlay across the existing six checks, not a seventh check.
 8. **Foundation/research boundary** — the initiative may steward and test the methodology, but founder-related live matters do not independently validate it and must remain subject to quarantine, recusal, contrary evidence and external red-team controls.
 
-## 2. Canonical implementation on feature branch
+## 2. Canonical implementation now merged to `main`
 
-Branch:
+PR `#693 — Add evidential recognisability and relationship-preservation doctrine` was merged by squash on 21 August 2026.
 
-`agent/recognisability-fragmentation-doctrine-21aug2026`
+Merge commit:
 
-Draft pull request:
+`8ea8eb6583acdbfc8a5b7bb70202df2692f55cb0`
 
-`#693 — Add evidential recognisability and relationship-preservation doctrine`
-
-PR URL:
-
-`https://github.com/sbu001monterecco/por-derecho/pull/693`
-
-### Files added
+The merged package contains:
 
 1. `archive/POR_DERECHO_EVIDENTIAL_RECOGNISABILITY_RELATIONSHIP_PRESERVATION_PROTOCOL_21AUG2026.md`
    - canonical cross-cutting doctrine;
@@ -41,29 +35,52 @@ PR URL:
    - institutional handoff and public/private evidence boundaries;
    - mandatory output status.
 
-2. `research/por-derecho/second-pair-of-eyes/recognisability-overlay.md`
+2. `archive/POR_DERECHO_EVIDENTIAL_RECOGNISABILITY_RETRIEVAL_GATE_21AUG2026.md`
+   - mandatory future retrieval gate for fragmentation, atomisation, breadth-paradox and cross-forum context-loss work.
+
+3. `research/por-derecho/second-pair-of-eyes/recognisability-overlay.md`
    - preserves locked sequence `Source → Authority → Perimeter → Contradiction → Consequence → Reversibility`;
    - adds overlay fields and trigger;
    - requires the system to clear reconciled concerns.
 
-3. `research/por-derecho/foundation-stage-2/04_FRAGMENTED_TRUTH_BREADTH_PARADOX_SYNTHETIC_CASE_21AUG2026.md`
+4. `research/por-derecho/foundation-stage-2/04_FRAGMENTED_TRUTH_BREADTH_PARADOX_SYNTHETIC_CASE_21AUG2026.md`
    - wholly synthetic case family I;
    - variants for benign compartmentalisation, non-deliberate atomisation, transmission/notification failure, strategic private audience switching and actual synthetic coordination evidence;
    - no live-matter evidence.
 
-4. `en/por-derecho/research-and-training/fragmented-truth/index.html`
+5. `en/por-derecho/research-and-training/fragmented-truth/index.html`
    - restrained English public research explanation;
    - initiative-in-formation and no-independent-review status preserved.
 
-5. `es/por-derecho/investigacion-y-formacion/verdad-fragmentada/index.html`
+6. `es/por-derecho/investigacion-y-formacion/verdad-fragmentada/index.html`
    - reciprocal Spanish public research explanation.
 
-6. `.github/workflows/validate-recognisability-doctrine.yml`
-   - checks canonical phrases, locked method, clearance capability, synthetic status, bilingual reciprocity and no-adoption boundaries.
+7. `.github/workflows/validate-recognisability-doctrine.yml`
+   - checks canonical phrases, locked method, clearance capability, synthetic status, bilingual reciprocity, sitemap presence and no-adoption boundaries.
 
-7. this continuity record.
+8. `sitemap-por-derecho-foundation.xml`
+   - contains both bilingual fragmented-truth public routes.
 
-## 3. Relationship to existing canonical architecture
+9. this continuity record.
+
+## 3. Validation state of PR #693
+
+Before merge, all observed PR-head gates passed, including:
+
+- Validate evidential recognisability doctrine;
+- Publication integrity gate;
+- Off-GitHub Preservation Snapshot;
+- Validate Second Pair applications;
+- Validate Por Derecho Foundation stage two;
+- Validate Por Derecho Foundation stage three;
+- Validate unitary public shell;
+- visual-asset identity validation;
+- seller-readiness validation;
+- public-bidder preservation gate.
+
+No failed substantive or publication-integrity gate remained at merge.
+
+## 4. Relationship to existing canonical architecture
 
 This is an extension, not a replacement, of:
 
@@ -74,7 +91,7 @@ This is an extension, not a replacement, of:
 
 The existing canonical six-check Second Pair sequence remains unchanged.
 
-## 4. Source-status and allegation safeguards
+## 5. Source-status and allegation safeguards
 
 Preserve these distinctions in all later reuse:
 
@@ -86,13 +103,13 @@ Preserve these distinctions in all later reuse:
 - adverse decisions, common economic interest, professional proximity, institutional sequence and similar outcomes are insufficient to prove coordination;
 - relationship evidence does not itself prove causation, knowledge, intent, benefit, liability or guilt.
 
-## 5. Live-matter boundary
+## 6. Live-matter and privacy boundary
 
 The doctrine was developed from a wider Project Sun Rock / Pink Canary / multi-forum fragmentation analysis, but the public research routes and synthetic test contain no live-matter evidence.
 
 Do not publish private Gmail, tax, privileged, sealed, personal or redistribution-sensitive sources merely to illustrate recognisability. Public-safe proposition/relationship identifiers, dates, source type and status may be used where lawful; future work must re-query connected primary-source systems when protected evidence is required.
 
-## 6. Por Derecho legal/status boundary
+## 7. Por Derecho legal/status boundary
 
 At this control date:
 
@@ -101,38 +118,40 @@ At this control date:
 - no constituted Patronato is claimed;
 - no independent red-team review has yet been performed;
 - no institution is claimed to have adopted or endorsed the method;
-- the new fragmented-truth case is a prepared synthetic research instrument only.
+- the fragmented-truth case is a synthetic research instrument, not an institutional finding.
 
 Do not upgrade these states without documentary evidence.
 
-## 7. Implementation truth
+## 8. Final public-edge closeout control
 
-At creation of this continuity record:
+Direct external HTTP verification was not available from the local analysis runtime, so the repository now adds a GitHub-hosted verifier:
 
-- substantive files have been written to the feature branch;
-- draft PR #693 is open against `main`;
-- the changes are **not merged**;
-- public routes are **not claimed live** merely because they exist on the branch;
-- PR/CI status must be checked after this final branch update;
-- public-edge HTTP verification is required after any eventual merge before describing the new routes as publicly live.
+`.github/workflows/verify-recognisability-public-edge.yml`
 
-## 8. Required future bootstrap
+It independently requests both public GitHub Pages routes and requires the expected bilingual doctrine/status markers before returning `PUBLIC_EDGE_VERIFIED`.
+
+Follow-up branch:
+
+`agent/recognisability-deletion-closeout-21aug2026`
+
+The final closeout must record the successful run and merge this updated continuity record to `main`.
+
+## 9. Required future bootstrap
 
 A future thread touching fragmentation, atomisation, cross-forum evidence, Second Pair context loss, institutional handoff or evidential recognisability should read, in order:
 
 1. `CHATGPT_START_HERE.md`;
 2. `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
 3. `archive/POR_DERECHO_UNITARY_CASE_RECONSTRUCTION_MULTIDISCIPLINARY_CRIMINAL_FORENSIC_PROTOCOL_17AUG2026.md`;
-4. `archive/POR_DERECHO_EVIDENTIAL_RECOGNISABILITY_RELATIONSHIP_PRESERVATION_PROTOCOL_21AUG2026.md` once merged; while PR #693 is unmerged, inspect the PR branch directly;
-5. `research/por-derecho/second-pair-of-eyes/case-application-standard.md`;
-6. `research/por-derecho/second-pair-of-eyes/recognisability-overlay.md` once merged;
-7. the relevant specialist factual/evidential ledgers;
-8. connected primary-source systems where protected or current evidence is required.
+4. `archive/POR_DERECHO_EVIDENTIAL_RECOGNISABILITY_RETRIEVAL_GATE_21AUG2026.md`;
+5. `archive/POR_DERECHO_EVIDENTIAL_RECOGNISABILITY_RELATIONSHIP_PRESERVATION_PROTOCOL_21AUG2026.md`;
+6. `research/por-derecho/second-pair-of-eyes/case-application-standard.md`;
+7. `research/por-derecho/second-pair-of-eyes/recognisability-overlay.md`;
+8. the relevant specialist factual/evidential ledgers;
+9. connected primary-source systems where protected or current evidence is required.
 
-## 9. Deletion-safety verdict at this stage
+## 10. Deletion-safety verdict at this intermediate closeout stage
 
-**NOT YET DELETION-SAFE AS A `main`-ONLY CONTINUITY STATE.**
+**CONTINUITY PRESERVED; FINAL DELETION-SAFE VERDICT PENDING ONLY PUBLIC-EDGE VERIFICATION + CLOSEOUT MERGE.**
 
-The thread's substantive intelligence is preserved on the feature branch and in draft PR #693, but the repository-wide universal continuity protocol treats unmerged implementation as a distinct state. A future close-out should verify PR review/checks, merge status and—if the public routes are merged—public-edge delivery before issuing a final `DELETION-SAFE` verdict.
-
-If the conversation disappears before merge, recover the work from PR #693 and this branch rather than reconstructing it from memory.
+The substantive intelligence is now on `main`, not dependent on the conversation. The only remaining repository hygiene task is to convert the observed public-edge result into a durable final closeout state in this file.
