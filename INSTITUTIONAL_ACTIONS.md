@@ -137,3 +137,23 @@ Among the materials reviewed to date, CEXP is the only entity for which both a p
 Source-access note (20 August 2026): anonymous access to the Order 804/2018 Drive locator was not verified. Treat it as an access-controlled custody pointer pending a redacted public copy; do not infer that the underlying source is lost.
 
 Calculate any statutory remedy date from confirmed receipt by the competent organ, not from RedSARA upload alone.
+
+
+## State transparency file 00001-00113069 — exact control (21 August 2026)
+
+**Nature:** state public-information access file; not a tax complaint, regional transparency appeal, tax litigation or prosecution file.
+
+**Controlled chronology**
+
+- 12 December 2025 — AEAT communication `RGE449073832025`.
+- 15 December 2025 — traceability request `REGAGE25e00108884880`.
+- 16 December 2025 — accepted by AEAT Central Registry.
+- 5 January 2026 — date of state file `00001-00113069`.
+- 20 August 2026 — commencement-processing document.
+- 21 August 2026 — Finance Transparency Unit confirmed that the follow-up email was transferred to AEAT, the body responsible for processing the file, and stated that requests must be included in the management tool.
+
+**Effect boundary:** transfer proves dispatch to AEAT only. It does not establish competent-unit receipt, effective management-tool inclusion, confirmed linkage to either December entry, substantive processing, extension/suspension, third-party consultation, decision, access or any effect on AEAT acts or Pink–AEAT litigation.
+
+**Mandatory separation:** keep `00001-00111718`, `REGAGE26e00062869818`, `REGAGE26e00062944142`, `REGAGE26e00062943259`, Resolution 28/2026, `REGAGE26e00072326601`, Commissioner entry `2220/2026`, Pink–AEAT litigation and all Fiscalía/Anticorrupción files separate.
+
+**Next finite proof:** obtain an AEAT acknowledgement/entry identifying the receiving unit and explicit linkage or non-linkage to `RGE449073832025` and `REGAGE25e00108884880`; then preserve any management-tool index or formal procedural notice.
