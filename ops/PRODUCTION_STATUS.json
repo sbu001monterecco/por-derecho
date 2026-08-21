@@ -4,7 +4,7 @@
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "40603843619b8bf9ba2492a2ec94b29b1ee0e587",
+  "main_at_audit": "b6d6c1a326f8b97afa1b01e03f71596dc5e95aff",
   "exact_live_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
   "last_live_verification": {
     "state": "LIVE_VERIFIED",

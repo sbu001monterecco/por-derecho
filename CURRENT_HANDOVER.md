@@ -4,7 +4,7 @@
 
 ## 21 August repository, website and institutional checkpoint
 
-Baseline `main` used for this checkpoint: `40603843619b8bf9ba2492a2ec94b29b1ee0e587`, which follows the merged reverse-engineering strengthening commit `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9` from PR #726. Always verify the remote ref before writing because this is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity; PR #726 corrected the LPB/whole-hotel insolvency language and repository controls; the later Concurso 36/2012 judicial-act spine was preserved separately.
+Baseline `main` used for this checkpoint: `b6d6c1a326f8b97afa1b01e03f71596dc5e95aff`, which follows the merged reverse-engineering strengthening commit `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9` from PR #726. Always verify the remote ref before writing because this is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity; PR #726 corrected the LPB/whole-hotel insolvency language and repository controls; the later Concurso 36/2012 judicial-act spine and its deletion audit were preserved separately.
 
 The latest controlling institutional position is:
 
