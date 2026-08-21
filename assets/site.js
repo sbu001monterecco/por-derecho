@@ -156,6 +156,17 @@
   document.head.appendChild(module);
 })();
 
+/* MONTELANZA-GOVERNANCE-ORIGIN-LOAD-20260821 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-montelanza-governance-origin-loader]')) return;
+  const gateway = document.createElement('script');
+  gateway.src = new URL('montelanza-governance-origin-20260821.js?v=20260821a', current.src).href;
+  gateway.async = false;
+  gateway.setAttribute('data-montelanza-governance-origin-loader', '20260821');
+  document.head.appendChild(gateway);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
