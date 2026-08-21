@@ -1,0 +1,118 @@
+{
+  "schema": "project-sun-rock-prosecution-public-state/v1",
+  "control_date": "2026-08-21",
+  "status": "PUBLIC-SAFE SOURCE-STATUS CONTROL",
+  "purpose": "Provide one machine-readable source for the public criminal-law/evidence architecture without converting allegations, institutional receipt, legal error, relationship, chronology or benefit into findings of criminal liability.",
+  "proof_rule": [
+    "act",
+    "capacity_or_authority",
+    "authorship_or_instruction",
+    "knowledge",
+    "intent_where_required",
+    "use_or_reliance",
+    "prejudice",
+    "benefit",
+    "causation",
+    "correction_or_continuation_after_notice"
+  ],
+  "non_conflation": [
+    "LPB != whole hotel",
+    "Owners Community != CEXP",
+    "CEXP != Monterecco/Pink",
+    "creditor position != whole-hotel title",
+    "material control != title",
+    "later title != retroactive authority",
+    "relationship != responsibility",
+    "institutional receipt != endorsement",
+    "allegation != adjudicated finding"
+  ],
+  "institutional_status_rule": [
+    "SENT",
+    "DELIVERED",
+    "RECEIVED",
+    "ACKNOWLEDGED",
+    "JOINED_TO_FILE",
+    "ADMITTED",
+    "INVESTIGATED",
+    "ACCEPTED",
+    "ENDORSED",
+    "PROVED"
+  ],
+  "red_sara_snapshot": {
+    "source": "REG/REG-AGE CSV snapshot supplied for analysis; source file preserved separately",
+    "record_period_start": "2025-12-07T00:12:28",
+    "record_period_end": "2026-08-15T20:04:00",
+    "registrations": 360,
+    "destination_labels": 80,
+    "status": {
+      "Recibido": 319,
+      "Enviado": 15,
+      "Rechazado": 26
+    },
+    "caveat": "REG exchange status proves only the registration/exchange state shown by the source. It does not by itself establish substantive receipt by the competent unit, joinder, admission, investigation, acceptance, endorsement or truth of the underlying proposition."
+  },
+  "prosecution_packages": [
+    {
+      "id": "PKG-A",
+      "name": "PP1041 withdrawal authority/authenticity/estate-benefit",
+      "public_question": "Who instructed, authored, signed and filed the withdrawal presented in LPB's name, under what power and insolvency authority, after what hearing of LPB, and for what contemporaneous estate-interest reason?",
+      "status": "FINITE EVIDENCE QUESTION; NO CRIMINAL CONCLUSION"
+    },
+    {
+      "id": "PKG-B",
+      "name": "Community debt to vote to authority",
+      "public_question": "Was each debt used to affect voting rights supported by a real service, lawful debtor, valid budget/allocation, due date, non-duplication, competent resolution and reliable certification before the resulting authority was used externally?",
+      "status": "DOCUMENT-LED VALIDATION REQUIRED"
+    },
+    {
+      "id": "PKG-C",
+      "name": "Security authority to 7 June 2018 material control",
+      "public_question": "What instrument, if any, converted preservation/security authority into locks, chains, key control, exclusion, access restriction, possession effects, private-unit intervention, works or whole-hotel practical control?",
+      "status": "MATERIAL EVENT DOCUMENTED; LEGAL CHARACTERISATION CONTESTED"
+    },
+    {
+      "id": "PKG-D",
+      "name": "Living hotel and funded-exit counterfactual",
+      "public_question": "What operating, financing and rescue alternatives were realistically available, what conditions remained, what event caused them to fail, and what loss is causally attributable rather than assumed?",
+      "status": "COUNTERFACTUAL AND CAUSATION TEST"
+    },
+    {
+      "id": "PKG-E",
+      "name": "2018 locales transaction and 24 October 2019 non-validation aftermath",
+      "public_question": "After the refusal to convalidate, what happened to title, Registry position, possession, fruits, consideration, restitution and estate accounting for the affected properties?",
+      "status": "SIGNED ORDER ANCHOR; AFTERMATH RECONCILIATION OPEN"
+    },
+    {
+      "id": "PKG-F",
+      "name": "Credit to EUR13,168,082.02 threshold to deed consideration to accounts",
+      "public_question": "Which signed judicial/accounting bridge explains the figure's legal and economic function at each stage, including any separate EUR400,000 branch, offsets, payment, surplus and final accounts?",
+      "status": "ACCOUNTING/JUDICIAL BRIDGE OPEN"
+    },
+    {
+      "id": "PKG-G",
+      "name": "2022 Community, project, bank and exploitation authority",
+      "public_question": "Which original notices, powers, quorum, votes, signatures, project versions and owner-derived authorities supported the 2022 decisions and their downstream use?",
+      "status": "LOCATED COPY FEATURES; ORIGINAL/AUTHORITY PACKAGE INCOMPLETE"
+    },
+    {
+      "id": "PKG-H",
+      "name": "Post-notice continuation, correction and benefit",
+      "public_question": "For each actor or institution: what exact proposition and source were received, what competence existed, what happened afterwards, what was corrected, what continued, and what benefit or prejudice can be causally traced?",
+      "status": "NOTICE DOES NOT EQUAL KNOWLEDGE OF TRUTH OR LIABILITY"
+    }
+  ],
+  "produce_the_bridge": [
+    "CEXP governance -> valid dissolution/replacement/transfer -> HNT/current operation",
+    "security/preservation authority -> material control/access/exclusion",
+    "creditor/unit position -> any claimed whole-hotel authority before later title",
+    "EUR13.168m threshold -> deed consideration -> ledger/final accounts",
+    "non-convalidated locales -> restitution/fruits/accounting",
+    "2022 Owners Community decisions -> owner-by-owner exploitation authority where required"
+  ],
+  "adverse_evidence_rule": {
+    "required": true,
+    "example": "AP 804/2018 is materially adverse: it confirmed provisional dismissal, treated much of the dispute as civil, questioned the criminally protectable possession asserted for CEXP and relied on the insolvency administrator's account. It must be disclosed accurately together with the matters it did not adjudicate.",
+    "page_pattern": "strongest_contrary_evidence -> strongest_innocent_explanation -> what_would_narrow_or_defeat_the_inference -> remaining_discriminator"
+  },
+  "publication_rule": "Do not intensify attribution merely because multiple documents, actors or institutions form a chronology. Public criminal framing must remain actor-specific, source-specific, falsifiable and correction-first."
+}
