@@ -1,0 +1,1 @@
+Final deletion-safety decision is made only after merge, preservation success, and final main re-read.
