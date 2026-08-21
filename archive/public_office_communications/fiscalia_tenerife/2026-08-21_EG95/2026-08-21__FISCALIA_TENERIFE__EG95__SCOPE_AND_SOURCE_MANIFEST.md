@@ -21,49 +21,59 @@ This is a documented **scope/characterisation difference**. It supports the crit
 - It does not determine that the new documents are false, irrelevant, exculpatory or insufficient on their merits.
 - It does not state whether the email and annexes were associated with, transferred to, or made available in DP 748/2026.
 
+## Project storage model
+
+The deletion-safe record is deliberately redundant:
+
+- **GitHub feature branch:** controlled full text of the sent and received emails, controlled Spanish transcription, full English translation, scope comparison, hashes, evidence gaps and the proposed public page.
+- **Connected Google Drive archive:** the byte-for-byte native Fiscalía PDF and the two byte-for-byte native PNG annexes.
+- **Gmail:** the controlling sent and received electronic messages, original headers/MIME structure and original attachments.
+
+The GitHub repository therefore contains the durable evidential index and digitised text; each native binary is independently preserved in Drive and Gmail and is identified below by file ID and cryptographic hash. No GitHub link should be read as implying that a native binary was committed to GitHub when it was instead preserved in Drive.
+
 ## Source inventory and hashes
 
 ### Native incoming decree
 
-- Repository filename: `2026-08-21__FISCALIA_TENERIFE__EG_95_2026__NATIVE.pdf`
-- Source Gmail attachment filename: `01. Decreto de incoación y archivo (21.08.2026).pdf`
+- Source Gmail attachment: `01. Decreto de incoación y archivo (21.08.2026).pdf`
+- Drive archive filename: `2026-08-21__FISCALIA_TENERIFE__EG_95_2026__NATIVE.pdf`
+- Drive file ID: `1RRDqvDdYYvqIAAjtLAT7xKVYDOza-6RI`
+- Drive view: `https://drive.google.com/file/d/1RRDqvDdYYvqIAAjtLAT7xKVYDOza-6RI/view`
 - Bytes: `72605`
 - SHA-256: `926a1351a488661d9d5359cd8ae0951c49d6967f65a17368be61c12fc8290128`
-- Git blob SHA-1: `c69b76f70e18032185367c85aa4b76e717cf8bb5`
+- Git blob SHA-1 of the native bytes: `c69b76f70e18032185367c85aa4b76e717cf8bb5`
 
 ### Controlled transcription and full English translation
 
-- Repository filename: `2026-08-21__FISCALIA_TENERIFE__EG_95_2026__CONTROLLED_TRANSCRIPTION_AND_FULL_ENGLISH_TRANSLATION.md`
-- SHA-256: `1a97abf1c7d619efd4bab875d3e1d6e22bc9e1c1b9960e8f4af959b53bcc9d2b`
+- GitHub filename: `2026-08-21__FISCALIA_TENERIFE__EG_95_2026__CONTROLLED_TRANSCRIPTION_AND_FULL_ENGLISH_TRANSLATION.md`
+- Local source SHA-256: `1a97abf1c7d619efd4bab875d3e1d6e22bc9e1c1b9960e8f4af959b53bcc9d2b`
 
 ### Outgoing visual attachment 1
 
 - Native Gmail filename: `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
+- Drive archive filename: `2026-08-21__FISCALIA_TENERIFE__OUTGOING_ATTACHMENT_01__NATIVE.png`
+- Drive file ID: `1OjK_oeyjPcO-Zk8PKyJjrcbHD0K5_nr7`
+- Drive view: `https://drive.google.com/file/d/1OjK_oeyjPcO-Zk8PKyJjrcbHD0K5_nr7/view`
 - Native bytes: `489983`
 - Native SHA-256: `6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf`
 - Native Git blob SHA-1: `a73795442ac78df702685561d94acef687035e2b`
-- Repository full-page visual derivative: `2026-08-21__OUTGOING_ATTACHMENT_01__pwc-five-actors__FULL_VISUAL.webp`
-- Derivative bytes: `195292`
-- Derivative SHA-256: `9a0d550005126195b737ff1286e275843d6d1e8336bdfebe3bda9a6f6db53d0b`
-- Transformation: 1800 × 1200 RGB PNG to 1800 × 1200 WebP, quality 85. The native Gmail attachment remains controlling.
 
 ### Outgoing visual attachment 2
 
 - Native Gmail filename: `san-telmo-ricpe-sun-park-stamp-v1 (2).png`
+- Drive archive filename: `2026-08-21__FISCALIA_TENERIFE__OUTGOING_ATTACHMENT_02__NATIVE.png`
+- Drive file ID: `1Ny2SAGxTkShL_CRGyPQg0qZWTkIJf71i`
+- Drive view: `https://drive.google.com/file/d/1Ny2SAGxTkShL_CRGyPQg0qZWTkIJf71i/view`
 - Native bytes: `617049`
 - Native SHA-256: `2006db8fdd5684299bd166324ae749f1407f50c90485072ac34254bf73bb0c1f`
 - Native Git blob SHA-1: `43404404bc45b57cd9d9c8d75624958498d4e299`
-- Repository full-page visual derivative: `2026-08-21__OUTGOING_ATTACHMENT_02__san-telmo-ricpe__FULL_VISUAL.webp`
-- Derivative bytes: `243612`
-- Derivative SHA-256: `9f2c51e99de67317cc8228ad1119572db25c246423e528f64705942cb3ee1051`
-- Transformation: 1800 × 1200 RGB PNG to 1800 × 1200 WebP, quality 85. The native Gmail attachment remains controlling.
 
 ## Email records
 
 - Outgoing Gmail message ID: `1a021abc315951c7`
 - Incoming Gmail message ID: `1a024394e1f6889c`
-- The repository stores controlled full body text for both messages.
-- Gmail remains the controlling source for headers, MIME structure and the two native PNG attachments.
+- The GitHub branch stores controlled full body text for both messages.
+- Gmail remains the controlling source for headers, MIME structure and delivery state.
 
 ## Related prior Fiscalía record
 
@@ -77,4 +87,4 @@ The January 2026 notification of DIP 20/2026 and its decrees show that the Tener
 
 ## Deletion-safe conclusion
 
-Deleting the ChatGPT thread does not delete Gmail or GitHub. This repository package preserves the thread's unique controlled outputs and records the remaining external evidence gaps without pretending they have been resolved.
+Deleting the ChatGPT thread does not delete Gmail, Drive or GitHub. This package preserves the thread's unique controlled outputs and the complete native source set outside the chat, while recording the remaining external evidence gaps without pretending they have been resolved.
