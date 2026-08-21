@@ -3,6 +3,7 @@
 **Date:** 21 August 2026  
 **Workstream:** critical Autos / adjudication / deed / Registry / accounting implementation  
 **Canonical internal control:** `archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md`  
+**Correction addendum:** `archive/CORRECTION_REGISTER_CONCURSO36_JUDICIAL_SPINE_ADDENDUM_21AUG2026.md`  
 **Machine-readable seed:** `assets/data/concurso36-judicial-acts-v1.json`
 
 ## Why this handover exists
