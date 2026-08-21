@@ -2,7 +2,7 @@
 
 **Control date:** 21 August 2026  
 **Thread subject:** repository/website reverse engineering; Por Derecho initiative-in-formation; The Second Pair of Eyes; fragmentation/atomisation; evidential recognisability; deletion audit.  
-**Current implementation state:** substantive doctrine and closeout verifier merged to `main`; final public-edge verification is being observed through a continuity-only PR so the exact successful run can be recorded before the definitive deletion-safe verdict.
+**Current implementation state:** substantive doctrine and closeout verifier are merged to `main`; the bilingual public routes have been independently verified live; this record is the definitive deletion-safe closeout once merged to `main`.
 
 ## 1. Material new intelligence created by the thread
 
@@ -17,7 +17,7 @@ This thread identified and formalised a methodological refinement not previously
 7. **Second Pair architecture** — recognisability is an overlay across the existing six checks, not a seventh check.
 8. **Foundation/research boundary** — the initiative may steward and test the methodology, but founder-related live matters do not independently validate it and must remain subject to quarantine, recusal, contrary evidence and external red-team controls.
 
-## 2. Canonical implementation now merged to `main`
+## 2. Canonical implementation merged to `main`
 
 PR `#693 — Add evidential recognisability and relationship-preservation doctrine` was merged by squash on 21 August 2026.
 
@@ -80,7 +80,7 @@ Before merge, all observed PR-head gates passed, including:
 
 No failed substantive or publication-integrity gate remained at merge.
 
-## 4. Closeout infrastructure now merged to `main`
+## 4. Closeout infrastructure merged to `main`
 
 PR `#694 — Close recognisability deletion audit` was merged by squash on 21 August 2026.
 
@@ -96,7 +96,26 @@ It added:
 
 The verifier independently requests both bilingual GitHub Pages routes and requires the expected doctrine/status markers.
 
-## 5. Relationship to existing canonical architecture
+## 5. Independent public-edge verification — PASSED
+
+The final continuity-only PR triggered the default-branch verifier after the verifier itself existed on `main`.
+
+Observed successful run:
+
+- workflow: `Verify recognisability public edge`;
+- run ID: `32458628090`;
+- job ID: `96700842201`;
+- job: `verify-public-edge`;
+- conclusion: `success`;
+- verification step: `Verify bilingual fragmented-truth routes` — `success`.
+
+The run independently confirmed that both public GitHub Pages routes expose the expected bilingual doctrine/status markers.
+
+A prior verification attempt was blocked only by an over-specific Spanish marker in the verifier (`Separa la responsabilidad...`) that did not match the already-correct published wording (`Separar responsabilidades. Integrar la evidencia.`). The verifier marker was corrected; no substantive public-page doctrine was changed to force the pass.
+
+On pull-request events, the persistent-status publication step is intentionally skipped. On a `push`/`workflow_dispatch` event it publishes `pages-propagation/recognisability-public-edge = success` after the same live-route test passes.
+
+## 6. Relationship to existing canonical architecture
 
 This is an extension, not a replacement, of:
 
@@ -107,7 +126,7 @@ This is an extension, not a replacement, of:
 
 The existing canonical six-check Second Pair sequence remains unchanged.
 
-## 6. Source-status and allegation safeguards
+## 7. Source-status and allegation safeguards
 
 Preserve these distinctions in all later reuse:
 
@@ -119,13 +138,13 @@ Preserve these distinctions in all later reuse:
 - adverse decisions, common economic interest, professional proximity, institutional sequence and similar outcomes are insufficient to prove coordination;
 - relationship evidence does not itself prove causation, knowledge, intent, benefit, liability or guilt.
 
-## 7. Live-matter and privacy boundary
+## 8. Live-matter and privacy boundary
 
 The doctrine was developed from a wider Project Sun Rock / Pink Canary / multi-forum fragmentation analysis, but the public research routes and synthetic test contain no live-matter evidence.
 
 Do not publish private Gmail, tax, privileged, sealed, personal or redistribution-sensitive sources merely to illustrate recognisability. Public-safe proposition/relationship identifiers, dates, source type and status may be used where lawful; future work must re-query connected primary-source systems when protected evidence is required.
 
-## 8. Por Derecho legal/status boundary
+## 9. Por Derecho legal/status boundary
 
 At this control date:
 
@@ -137,15 +156,6 @@ At this control date:
 - the fragmented-truth case is a synthetic research instrument, not an institutional finding.
 
 Do not upgrade these states without documentary evidence.
-
-## 9. Final public-edge verification gate
-
-The verifier is now present on `main`. This continuity-only branch exists to trigger its `pull_request` event from the default-branch workflow and make the result directly observable through the connected GitHub run interface.
-
-Final closeout rule:
-
-- if `Verify recognisability public edge` succeeds, record the exact run and change the verdict below to `DELETION-SAFE`;
-- if it fails, preserve the failure and do not declare deletion safety.
 
 ## 10. Required future bootstrap
 
@@ -161,8 +171,14 @@ A future thread touching fragmentation, atomisation, cross-forum evidence, Secon
 8. the relevant specialist factual/evidential ledgers;
 9. connected primary-source systems where protected or current evidence is required.
 
-## 11. Deletion-safety verdict at this verification-trigger stage
+Conversational memory is supplementary only. Current repository state and primary evidence control.
 
-**CONTINUITY PRESERVED; FINAL DELETION-SAFE VERDICT AWAITS THE OBSERVED PUBLIC-EDGE WORKFLOW RESULT.**
+## 11. Final deletion-safety verdict
 
-All substantive intelligence and implementation state are already recoverable from `main`. This final PR exists only to record the independent live-route verification result in the canonical closeout itself.
+**DELETION-SAFE.**
+
+When this closeout record is read from `main`, all material new intelligence, safeguards, implementation state, canonical retrieval routes and public-research deployment created by this thread are recoverable without the conversation.
+
+The primary/private evidence itself remains in its proper connected source systems rather than being copied into public GitHub. Future work must re-query those systems where required.
+
+The thread may therefore be deleted without loss of material Project Sun Rock / Por Derecho institutional memory.
