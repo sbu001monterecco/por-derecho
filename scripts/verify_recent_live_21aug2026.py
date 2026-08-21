@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the 21 August 2026 asset-recovery and CGPJ routes on production."""
+"""Verify the 21 August 2026 asset-recovery, CGPJ and Por Derecho routes on production."""
 from __future__ import annotations
 
 import argparse
@@ -39,21 +39,21 @@ CHECKS: list[dict[str, Any]] = [
     },
     {
         "path": "en/cgpj-public-prosecution-routing-update-20-august-2026/",
-        "kind": "cgpj_delivery_correction_en",
+        "kind": "cgpj_current_status_en",
         "markers": [
-            "21 August delivery correction.",
-            "two sent with receipt unproved, one failed delivery",
-            "No bounce is not proof of receipt.",
+            "Appeals: five-file package + two later annexes + audiovisual link incorporated",
+            "Four central acknowledgements · 21 August.",
+            "Do not resend the material already confirmed as joined.",
         ],
         "min_bytes": 7000,
     },
     {
         "path": "es/actualizacion-cgpj-fiscalia-20-agosto-2026/",
-        "kind": "cgpj_delivery_correction_es",
+        "kind": "cgpj_current_status_es",
         "markers": [
-            "Corrección de entrega de 21 de agosto.",
-            "dos enviados con recepción no acreditada y uno con entrega fallida",
-            "Ausencia de rebote no equivale a recepción.",
+            "Recursos: paquete de cinco archivos + dos anexos posteriores + enlace audiovisual incorporados",
+            "Cuatro acuses centrales · 21 de agosto.",
+            "No reenviar el material ya confirmado como unido.",
         ],
         "min_bytes": 7000,
     },
@@ -75,6 +75,25 @@ CHECKS: list[dict[str, Any]] = [
             "2026-08-21",
         ],
         "min_bytes": 500,
+    },
+    {
+        "path": "sitemap-por-derecho-technical.xml",
+        "kind": "por_derecho_technical_sitemap",
+        "markers": [
+            "/en/por-derecho/second-pair-of-eyes/",
+            "/es/por-derecho/segundo-par-de-ojos/",
+            "/en/por-derecho/technical-partners/",
+            "/es/por-derecho/socios-tecnicos/",
+        ],
+        "min_bytes": 900,
+    },
+    {
+        "path": "robots.txt",
+        "kind": "por_derecho_technical_robots",
+        "markers": [
+            "Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-por-derecho-technical.xml",
+        ],
+        "min_bytes": 1000,
     },
     {
         "path": "assets/site.js",
@@ -99,7 +118,7 @@ def fetch(url: str, timeout: int) -> dict[str, Any]:
             "User-Agent": "Por-Derecho-Recent-Live-Verification/20260821",
             "Cache-Control": "no-cache, no-store, max-age=0",
             "Pragma": "no-cache",
-            "Accept": "text/html,application/xml,text/javascript,*/*;q=0.8",
+            "Accept": "text/html,application/xml,text/plain,text/javascript,*/*;q=0.8",
         },
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:

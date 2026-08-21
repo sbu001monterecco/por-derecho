@@ -14,6 +14,8 @@ on:
       - 'es/actualizacion-cgpj-fiscalia-20-agosto-2026/**'
       - 'sitemap-asset-recovery.xml'
       - 'sitemap-cgpj.xml'
+      - 'sitemap-por-derecho-technical.xml'
+      - 'robots.txt'
   pull_request:
     paths:
       - '.github/workflows/verify-recent-live-21aug2026.yml'
@@ -26,6 +28,8 @@ on:
       - 'es/actualizacion-cgpj-fiscalia-20-agosto-2026/**'
       - 'sitemap-asset-recovery.xml'
       - 'sitemap-cgpj.xml'
+      - 'sitemap-por-derecho-technical.xml'
+      - 'robots.txt'
   workflow_dispatch:
 
 permissions:
