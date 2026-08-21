@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'assets/traceability-crosslinks-20260821.js'
+      - 'assets/site.js'
       - '.github/workflows/verify-eleconomista-clarification-live.yml'
   workflow_dispatch:
 
