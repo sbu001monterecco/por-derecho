@@ -35,21 +35,23 @@ The communication is material to the pre-7 June chronology and to the documentar
 
 ## Public/private separation
 
-The public PDF is an irreversible raster-redacted derivative created before OCR. Three direct electronic contact addresses in the header were removed. Names, professional capacities, date, subject, operative text, firm identity and business footer remain visible. The unredacted source is not stored in the public repository; it remains in the restricted evidential source account and is represented here by its SHA-256 and source pointer.
+The canonical repository PDF is a deterministic, searchable digital derivative built from the manually checked diplomatic transcript. Three direct electronic contact addresses are replaced by irreversible R1–R3 redaction markers. Names, professional capacities, date, subject and operative text remain visible. The unredacted scan is not stored in the public repository; it remains in the restricted evidential source account and is represented here by its SHA-256 and source pointer. A separately produced raster-redacted facsimile was visually checked and is retained as a working/public-delivery copy, but the reproducible digital derivative controls the website.
 
 ## Files
 
-- `public/2018-02-27-ac-community-security-request-redacted-searchable.pdf` — public searchable facsimile.
+- `public/2018-02-27-ac-community-security-request-redacted-searchable.pdf` — deterministic public searchable digital copy.
 - `transcript.es.md` — manually checked Spanish source transcript.
 - `transcript.en.md` — faithful English translation.
 - `manifest.json` — hashes, provenance, redaction and validation data.
-- `redaction-log.md` — redaction decisions and publication boundaries.
+- `redaction-log.md` — redaction decisions, public/private separation and publication boundaries.
+- `../../../tools/build_ac_security_request_public_pdf.py` — reproducible PDF builder (repository-relative path is `/tools/...`).
 - `SHA256SUMS.txt` — integrity values.
 
 ## Integrity values
 
 - restricted source SHA-256: `497ecb49495badbcee155397fe70d37d090c36c4e7998308172e7a612046dbed`
-- public PDF SHA-256: `91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551`
+- canonical repository PDF SHA-256: `f7ae8cf03455dd087f31b52a1cfa4c6e3989a1db2b566515a9fc81c8e1d18f98`
+- separately produced raster-redacted facsimile working-copy SHA-256: `91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551`
 - intermediate redacted image SHA-256: `b6162108762ffcf1e2cc2afc07027ba885668cd75d14f2fa658da6931bd38d9d`
 
 Hashes identify the reviewed files; they do not by themselves authenticate the sender, establish the completeness of the email chain or determine the legal effect of the communication.
