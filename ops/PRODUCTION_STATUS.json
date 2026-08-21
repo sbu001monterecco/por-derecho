@@ -1,28 +1,26 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-21T12:58:00Z",
+  "as_of": "2026-08-21T13:01:13Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "307a0db41a451c6efa2cb9688987ef96c4a98c83",
-  "exact_live_sha": "083cac35a9f5332d69aace1a11f014a41fac3fc0",
+  "main_at_audit": "40603843619b8bf9ba2492a2ec94b29b1ee0e587",
+  "exact_live_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
   "last_live_verification": {
-    "state": "LIVE_VERIFIED_WITH_TOOLING_EXCEPTION",
-    "source_sha": "083cac35a9f5332d69aace1a11f014a41fac3fc0",
-    "workflow_run": "32481823998",
-    "artifact_id": "9446331554",
-    "artifact_digest": "sha256:8ab3a9c454f093ebb077d15238f56c0a41a3f55d7b84f25ba4858df9306b00b8",
-    "verified_at": "2026-08-21T12:51:34Z",
+    "state": "LIVE_VERIFIED",
+    "source_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
+    "workflow_run": "32484432959",
+    "artifact_id": "9447323466",
+    "artifact_digest": "sha256:83eeb960f1520ad04f146f3f576499041416e4ae934ee3fd6976ed0dda0215ad",
+    "verified_at": "2026-08-21T13:01:13Z",
     "verification_scope": [
-      "cgpj_fiscalia_es_http_200_and_markers",
-      "cgpj_fiscalia_en_source_markers",
-      "technical_partner_discovery_validator",
-      "technical_sitemap_and_robots",
-      "asset_recovery_routes",
+      "eight_changed_es_en_routes_http_200_and_exact_markers",
+      "publication_integrity_29_manifests_17_changed_files",
+      "insolvency_perimeter_language_513_public_files",
       "case_information_architecture_rendered_dom",
-      "nested_case_information_loader"
-    ],
-    "known_exception": "pages-propagation/case-information-architecture was red because the raw verifier required nested-loader markers in the outer site.js; public routes, rendered DOM and the executable nested loader passed"
+      "outer_and_nested_case_information_loaders",
+      "rhg_live_publication"
+    ]
   },
   "branch_protection": {
     "observed": "PROTECTED_FLAG_WITH_ENFORCEMENT_OFF",
@@ -39,8 +37,8 @@
     "restore_tested": false
   },
   "pages_deployment_mode": {
-    "state": "UNCHANGED_AND_LIVE_VERIFIED_WITH_TOOLING_EXCEPTION",
-    "reason": "The functioning Pages delivery path published PR #720 and PR #721 independently verified nine critical public-edge routes/files. PR #723 changed handover/deletion records only. One separate raw-source verifier contract remained stale; rendered and route checks passed."
+    "state": "UNCHANGED_AND_LIVE_VERIFIED",
+    "reason": "The functioning Pages delivery path published PR #726. The corrected loader contract, rendered route suite and all eight changed bilingual routes passed post-merge verification."
   },
   "mission_critical_hardening": {
     "state": "LIVE_VERIFIED",

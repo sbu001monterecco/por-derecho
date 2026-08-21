@@ -79,4 +79,4 @@ This strengthening does not:
 
 ## Publication and deletion rule
 
-This record preserves the reasoning that would otherwise exist only in a ChatGPT thread. Deletion safety still requires the implementation commit to be merged, the exact merged source to pass CI and the changed public routes to be read back from the live host.
+This record preserves the reasoning that would otherwise exist only in a ChatGPT thread. The publication condition is complete: PR #726 merged as `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9`; all PR checks passed; and all eight changed English/Spanish routes returned the exact new markers on the first post-merge no-cache read-back. Open substantive actions remain open, but they no longer depend on this conversation for continuity.

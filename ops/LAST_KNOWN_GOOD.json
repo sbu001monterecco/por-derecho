@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "release_id": "mission-critical-hardening-20260818-v1",
+  "release_id": "lpb-insolvency-perimeter-strengthening-20260821-v1",
   "state": "LIVE_VERIFIED",
-  "source_sha": "671b0c9026d0c4df188be07f60c137ce825367a0",
+  "source_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
   "verification": {
-    "workflow": "Verify mission-critical hardening live",
-    "run_id": "32134809955",
-    "artifact_id": "9323553989",
-    "artifact_digest": "sha256:2b43c17452a54753b60c2255cb67feb299c13d2da3c36eed277911f3fdf8f55d",
-    "verified_at": "2026-08-18T12:03:49Z",
+    "workflow": "PR #726 publication, rendered architecture and post-merge bilingual route verification",
+    "run_id": "32484432959",
+    "artifact_id": "9447323466",
+    "artifact_digest": "sha256:83eeb960f1520ad04f146f3f576499041416e4ae934ee3fd6976ed0dda0215ad",
+    "verified_at": "2026-08-21T13:01:13Z",
     "checks": [
-      "hardening_probe",
-      "homepage_es",
-      "homepage_en",
-      "ricpe_es",
-      "cnmv_es",
-      "global_loader"
+      "publication_integrity",
+      "insolvency_perimeter_language_513_files",
+      "mission_critical_repository",
+      "rendered_case_information_architecture",
+      "outer_and_nested_loader_contract",
+      "eight_changed_bilingual_routes_live"
     ]
   },
   "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."

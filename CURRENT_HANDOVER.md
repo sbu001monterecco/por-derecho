@@ -4,7 +4,7 @@
 
 ## 21 August repository, website and institutional checkpoint
 
-Baseline `main` used for this checkpoint: `307a0db41a451c6efa2cb9688987ef96c4a98c83`. Always verify the remote ref before writing because this SHA is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity without changing public website routes; the later Meeting Point status-policy synchronization was preserved during reconciliation.
+Baseline `main` used for this checkpoint: `40603843619b8bf9ba2492a2ec94b29b1ee0e587`, which follows the merged reverse-engineering strengthening commit `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9` from PR #726. Always verify the remote ref before writing because this is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity; PR #726 corrected the LPB/whole-hotel insolvency language and repository controls; the later Concurso 36/2012 judicial-act spine was preserved separately.
 
 The latest controlling institutional position is:
 
@@ -36,9 +36,9 @@ The opening declaration, the first-instance `calificación culpable`, the pendin
 ## Current repository-control checkpoint
 
 - The public site is functioning and PR #721 verified the critical PR #720 CGPJ/Fiscalía and technical-discovery markers at the public edge.
-- The case-information-architecture red status at the baseline SHA is a verifier-contract defect: rendered routes and the nested executable loader passed, while the raw check looked for nested-loader markers in `assets/site.js`.
+- PR #726 corrected the case-information verifier contract so the outer and nested loaders are tested at their actual locations. The full rendered case-information workflow passed before merge.
 - `scripts/verify_recent_live_21aug2026.py` follows the corrected Alzada/FGE status and must not regress to the superseded receipt-unproved wording.
-- `ops/PRODUCTION_STATUS.json` records the latest positively observed deployment; `ops/LAST_KNOWN_GOOD.json` remains the rollback anchor until a corrected current-head live gate passes.
+- `ops/PRODUCTION_STATUS.json` records the latest positively observed deployment. PR #726 passed the corrected gates and eight exact public-route read-backs, so `ops/LAST_KNOWN_GOOD.json` now identifies `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9` as the positively verified rollback anchor.
 - Draft or conflicted PRs must be reconciled against current `main`; mergeability is not evidence that their content remains current. In particular, PR #710 substantially duplicates merged PR #709 and should be closed as superseded after final confirmation.
 
 ## Correct counsel identities
