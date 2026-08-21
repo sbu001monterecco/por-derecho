@@ -1,8 +1,9 @@
 # MONTELANZA 2008 / GOVERNANCE-ORIGIN ACTIVATION RECORD
 
 **Activated in source:** 21 August 2026  
-**Current lifecycle state:** `DRAFT_SOURCE — PR/CI/MERGE/LIVE VERIFICATION PENDING`  
-**Branch:** `analysis/montelanza-governance-origin-20260821`
+**Current lifecycle state:** `PR_OPEN — CI/MERGE/LIVE VERIFICATION PENDING`  
+**Branch:** `analysis/montelanza-governance-origin-clean-20260821`  
+**Draft pull request:** `#685`
 
 ## Purpose
 
@@ -45,6 +46,12 @@ The accounts provide the historical operating/property baseline and identify the
 - Secondary: economic/fiscal historical-asset and RIC/DIC baseline.
 - Not recommended: a new undifferentiated global complaint.
 - Live procedural blocker: Anticorrupción has acknowledged receipt of the recent communication but requires a compliant signature before processing.
+
+## Current verification
+
+- Clean branch recreated from current `main` and then synchronised with the later DP 748 landing-page commit.
+- Dedicated validator and repository-wide CI are running through draft PR #685.
+- No merge or public deployment has been performed or claimed.
 
 ## Lifecycle
 
