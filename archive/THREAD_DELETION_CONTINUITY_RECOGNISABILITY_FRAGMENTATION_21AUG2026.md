@@ -2,7 +2,7 @@
 
 **Control date:** 21 August 2026  
 **Thread subject:** repository/website reverse engineering; Por Derecho initiative-in-formation; The Second Pair of Eyes; fragmentation/atomisation; evidential recognisability; deletion audit.  
-**Current implementation state:** substantive doctrine and closeout verifier are merged to `main`; the bilingual public routes have been independently verified live; this record is the definitive deletion-safe closeout once merged to `main`.
+**Current implementation state:** substantive doctrine and read-only public-edge verifier are merged to `main`; the bilingual public routes have been independently verified live; this record is the definitive deletion-safe closeout once merged to `main`.
 
 ## 1. Material new intelligence created by the thread
 
@@ -88,32 +88,28 @@ Merge commit:
 
 `9f1593124d89c6c350301d0a59fbf0a4f1d00cb0`
 
-It added:
+It added `.github/workflows/verify-recognisability-public-edge.yml`, a GitHub-hosted verifier which independently requests both bilingual GitHub Pages routes and requires the expected doctrine/status markers.
 
-- `.github/workflows/verify-recognisability-public-edge.yml`;
-- persistent success context `pages-propagation/recognisability-public-edge` for main-branch live verification;
-- the post-merge continuity update replacing the stale draft/unmerged state.
-
-The verifier independently requests both bilingual GitHub Pages routes and requires the expected doctrine/status markers.
+The verifier is intentionally **read-only** (`contents: read`). An experimental closeout version briefly requested `statuses: write`; the mission-critical repository gate correctly rejected that unnecessary permission. The write permission and status-publication step were removed. This was a verifier-governance correction only; it did not change the doctrine or public research pages.
 
 ## 5. Independent public-edge verification — PASSED
 
-The final continuity-only PR triggered the default-branch verifier after the verifier itself existed on `main`.
-
-Observed successful run:
+After the verifier was made read-only, the final continuity PR produced an observed successful verification on the corrected head:
 
 - workflow: `Verify recognisability public edge`;
-- run ID: `32458628090`;
-- job ID: `96700842201`;
-- job: `verify-public-edge`;
-- conclusion: `success`;
-- verification step: `Verify bilingual fragmented-truth routes` — `success`.
+- run ID: `32458828931`;
+- workflow run number: `8`;
+- conclusion: `success`.
 
-The run independently confirmed that both public GitHub Pages routes expose the expected bilingual doctrine/status markers.
+The same corrected head also passed:
 
-A prior verification attempt was blocked only by an over-specific Spanish marker in the verifier (`Separa la responsabilidad...`) that did not match the already-correct published wording (`Separar responsabilidades. Integrar la evidencia.`). The verifier marker was corrected; no substantive public-page doctrine was changed to force the pass.
+- Publication integrity gate — run `32458828804`, `success`;
+- Validate visual asset identity registry — run `32458828879`, `success`;
+- Public bidder name-only and bid-preservation gate — run `32458828795`, `success`.
 
-On pull-request events, the persistent-status publication step is intentionally skipped. On a `push`/`workflow_dispatch` event it publishes `pages-propagation/recognisability-public-edge = success` after the same live-route test passes.
+The verifier independently confirmed that both public GitHub Pages routes expose the expected bilingual doctrine/status markers.
+
+An earlier verifier attempt used an over-specific Spanish marker that did not match the already-correct published wording. The verifier marker was corrected; no substantive public-page doctrine was changed to obtain the pass.
 
 ## 6. Relationship to existing canonical architecture
 
