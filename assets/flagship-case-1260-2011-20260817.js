@@ -28,6 +28,12 @@
     correction.async = false;
     correction.dataset.jv1260EvidenceBridgeCorrection = '20260821';
     document.head.appendChild(correction);
+
+    const supersession = document.createElement('script');
+    supersession.src = new URL('jv1260-physical-deliverer-supersession-20260821.js?v=20260821a', current.src).href;
+    supersession.async = false;
+    supersession.dataset.jv1260PhysicalDelivererSupersession = '20260821';
+    document.head.appendChild(supersession);
   }
 
   if (selfRoutes.some(route => path.includes(route))) return;
