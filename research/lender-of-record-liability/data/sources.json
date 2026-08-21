@@ -70,14 +70,22 @@
     "notes": "Establishes notice and request, not a finding of concealment or entitlement."
   },
   {
-    "id": "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION",
+    "id": "SRC-COURT-2018-02-08-CREDITOR-SUBSTITUTION",
+    "legacy_ids": ["SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
     "title": "Commercial Court order recognising CAM as assignee and rejecting LPB's Article 1535 position",
     "source_type": "court_order",
-    "date": "2018-02-15",
+    "date": "2018-02-08",
+    "date_layers": {
+      "body_date": "2018-02-08",
+      "judge_signature_date": "2018-02-09",
+      "laj_signature_date": "2018-02-14",
+      "filename_notification_alias": "15FEB2018"
+    },
+    "stated_remedy": "recurso de apelación within 20 days under Article 97 bis.2 of the then-applicable Insolvency Law",
     "evidence_status": "verified_primary",
     "availability": "repository_record",
     "publication": "public_safe",
-    "notes": "Controlling adverse/mixed decision; appeal and finality chain must remain attached."
+    "notes": "Controlling adverse/mixed decision. The legacy 2018-02-15 identifier arose from the source filename/notification alias and is superseded; appeal and finality chain must remain attached."
   },
   {
     "id": "SRC-CAM-2018-01-DACION-PROPOSAL",

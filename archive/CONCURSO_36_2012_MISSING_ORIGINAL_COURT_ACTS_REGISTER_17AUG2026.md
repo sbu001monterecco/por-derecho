@@ -28,7 +28,7 @@ The following later P1 targets also changed status on 17-Aug-2026:
 | Act / date | Recovered source | What is now closed | What remains | Status |
 |---|---|---|---|---|
 | 18-May-2021 Auto | signed standalone Drive binary, stable ID `C36-JUD-2021-05-18-001` | exact five-page judicial act; definitive CAM proposal approval; court's Article 210.4 better-offer/licitation reasoning | notification/service copy or certified testimony only if required for stronger hierarchy | **PRIMARY BINARY LOCATED — ORIGINAL-BINARY GAP CLOSED** |
-| 15-Oct-2021 Auto | signed standalone Drive binary, stable ID `C36-JUD-2021-10-15-001` | exact Auto dismissing LPB/Aweswell reposiciones against 18-May and confirming it in full | other potentially separate 15-Oct acts identified by workbook; notification/finality records where distinct | **ONE ACT CLOSED / SAME-DATE FAMILY PARTIAL** |
+| 15-Oct-2021 Auto family | signed five-page standalone Drive binary `C36-JUD-2021-10-15-001` plus separate complete two-page copy `C36-JUD-2021-10-15-002` | first dismisses LPB/Aweswell reposiciones against 18-May and confirms it in full; second concerns challenges to the 12-May Providencia | full hash/signature/service binding for the two-page copy and complete review/finality context | **TWO ACTS LOCATED / SERVICE-FINALITY CONTEXT PARTIAL** |
 | 27-Oct-2021 LAJ Diligencia | signed standalone Drive binary, stable ID `C36-LAJ-2021-10-27-001` | incorporation/transfer of AC filing 7425/2021 | underlying 25-Oct quarterly report remains separate source if not independently held | **PRIMARY LAJ ACT LOCATED** |
 
 ## 2023 primary-act closure — exact source/date correction

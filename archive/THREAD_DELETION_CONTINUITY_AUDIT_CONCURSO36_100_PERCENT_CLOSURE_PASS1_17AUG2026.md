@@ -44,7 +44,7 @@ Complete two-page LAJ Diligencia verified. Signed by **Águeda Reyes Almeida**. 
 Complete four-page Auto verified. Signed by **Alberto López Villarrubia**. It partially upholds Aweswell's reposición against the 13-Jan-2021 Providencia because the motivation was too brief, substitutes fuller reasons, but maintains substantive refusal of inspection/pericial measures. It records competing Aweswell / AC / CAM positions concerning works, debris, access and asset condition. Header records notification **1-Mar-2021**.
 
 ### `C36-JUD-2021-05-12-001`
-Complete two-page Providencia verified. Signed by **Alberto López Villarrubia**. Opens licitación over the enumerated LPB fincas including locals and pools/solaria, fixes 18-May-2021 at 10:00 and Ottawa bond of €735,694.02.
+Complete two-page Providencia verified. Signed by **Alberto López Villarrubia**. Opens licitación over the enumerated LPB fincas including locals and pools/solaria, fixes 18-May-2021 at 10:00 and third-party bidder bond of €735,694.02.
 
 ### `C36-JUD-2019-10-24-002`
 The 2026 annex contains substantive pages 1,4,5 only; standalone Drive primary binary is separately located. The extract expressly states that the separate sale contradicted the liquidation plan/AP interpretation; that the earlier partial suspension was erroneous; that the 28-Nov-2018 operation was made without court authorisation and reported after consummation; refuses convalidation and leaves the 12-Dec-2018 Diligencia without effect. Full standalone digitisation remains P1.
@@ -75,7 +75,7 @@ This compiled annex is **not itself treated as primary proof for its narrative**
 - 24-Oct-2019 Aweswell-standing Auto and full non-convalidation binary.
 - 12-May-2020 dual Auto family.
 - 25-Jan and 6-May-2021 Auto families.
-- **18-May-2021 Auto** — expressly missing/requested in the 2026 CGPJ annex.
+- **18-May-2021 Auto** — expressly missing/requested in the 2026 CGPJ annex at the time; subsequently located as a signed five-page standalone primary and no longer a generic source blocker.
 - 15-Oct-2021 and 26-Jan-2022 same-date act families.
 - final resolution of 2022 review/correction chain.
 - 5-Apr/14-Jul/25-Jul-2023 complete Calificación/Vista procedural record.

@@ -35,7 +35,7 @@ A further 19-Aug primary-source promotion closes the earlier **€102,895.34** a
 | Edicto threshold excluding community/taxes | **€13,568,082.02** = €13,168,082.02 + €400,000 | do not relabel as deed consideration unless the deed itself says so |
 | Community component in Edicto | **€1,145,798.29** identified separately as pending community fees. The 25-Jan-2021 Auto explains this as €427,135.05 post-concurso community charges plus at least €718,663.24 contingent/litigated community charges. | underlying Community certification, later amount, litigation outcome, classification, payment/assumption and relationship to 4-Feb-2022 Community figures |
 | Edicto quantified total before taxes | **€14,713,880.31** = €13,568,082.02 + €1,145,798.29 | taxes/costs were expressly unquantified; establish which components a third-party bidder actually had to fund and which CAM itself had to economically satisfy |
-| 2021 better posture / Ottawa | **PRIMARY THIRD-PARTY OFFER located:** Ottawa Corporación, 8-Feb-2021, expressly responds to the 29-Jan Edicto and offers **€14.8m** for the 159 accommodation fincas plus 29 commercial units and 4 pool/solarium fincas, states intended use of own funds, and describes a cash-purchase structure subject to conditions/authorisations. | prove filing/receipt/acceptance status, corporate authority and funds, exact comparison with Edicto conditions, later correspondence, attendance/non-attendance and 18-May licitation record |
+| 2021 better posture / third-party bidder | **PRIMARY THIRD-PARTY OFFER located:** the third-party bidder, 8-Feb-2021, expressly responds to the 29-Jan Edicto and offers **€14.8m** for the 159 accommodation fincas plus 29 commercial units and 4 pool/solarium fincas, states intended use of own funds, and describes a cash-purchase structure subject to conditions/authorisations. | prove filing/receipt/acceptance status, corporate authority and funds, exact comparison with Edicto conditions, later correspondence, attendance/non-attendance and 18-May licitation record |
 | 28-Feb / 2-Mar-2022 appeals | Filed LPB/Aweswell appeals quote the definitive-sale structure as: **apartments — dación en pago de créditos privilegiados; locales/pools — venta directa por €400,000; bidder also bears taxes and recognised contingent community fees** | bind exact 18-May-2021, 15-Oct-2021 and 26-Jan-2022 signed orders and their finality/service records |
 | 25-Jan-2022 AC report | located forensic record describes dación of apartments for privileged credits; direct sale for €400,000; treasury €2,472.58; deed pending | annexes, calculation workbook and exact credit bridge |
 | 21-Feb-2022 deed | **CONTROLLED WORKING PROPOSITION:** connected 2026 party-prepared reconstructions state the deed uses **€13,168,082.02** as `valor de contraprestación`; the older bridge formulation `€12,768,082.02 + €400,000` must not be treated as an independently verified decomposition | recover/rebind exact deed binary/certified copy, page/clause, notarial protocol, incorporated testimonios and the judicial act relied on for each economic/legal component |
@@ -54,7 +54,7 @@ Can the Administrador Concursal and the court record produce one certified, arit
 1. the definitively recognised CAM credit;
 2. each interest component and its legal basis, including the **€3,079,104.66 → €3,182,000** first-rank default-interest transition;
 3. the 29-Jan-2021 better-posture figures;
-4. the Ottawa €14.8m better posture and its procedural treatment;
+4. the third-party bidder €14.8m better posture and its procedural treatment;
 5. the separate €400,000 non-mortgaged-asset component;
 6. community liabilities and taxes/costs;
 7. the definitive 2021/2022 sale/adjudication orders;
@@ -88,7 +88,7 @@ A mismatch is an **investigative/legal question**, not automatically proof of nu
 
 1. **Primary signed judicial source:** `19. Auto Publicidad Subasta 25ENE2021.pdf` — Drive ID `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh` — signed electronically by Magistrado-Juez Alberto López Villarrubia; explains AP threshold, interest update and community figures.
 2. **Primary court-office source:** `22. EDICTO Cedula de Notificacion 29ENE2021.pdf` — Drive ID `1mgIFpwTq0F5y9A-pekLEoI2c_yFZJOMl`.
-3. **Primary third-party commercial/procedural source:** `oferta vinculante OTTAWA 8feb2021` — Drive ID `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA` — €14.8m offer responding to the Edicto; filing/outcome still to be proved.
+3. **Primary third-party commercial/procedural source:** `[protected third-party offer — 8-Feb-2021]` — Drive ID `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA` — €14.8m offer responding to the Edicto; filing/authority/funds remain to be proved, while Auto 164/2021 records nonappearance, no bond and the resulting CAM approval.
 4. **Filed party procedural source:** `13. RECURSO DE APELACION PACTO COMISORIO 28FEB2022.pdf` — Drive ID `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC`.
 5. **Filed/prepared Aweswell appeal source:** `recursoautoadjudicacion 2MAR2022` — Drive ID `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc`.
 6. **Party-prepared reconstruction:** `ANEXO TÉCNICO - Reconstruccion Economica Provisiona de la Adjudicacion 17FEB2026` — Drive ID `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk`.

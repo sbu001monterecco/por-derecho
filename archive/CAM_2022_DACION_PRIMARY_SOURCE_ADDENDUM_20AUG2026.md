@@ -4,6 +4,8 @@
 **Proceeding:** Concurso ordinario 36/2012 — Luchy Playa Blanca, S.L.U.  
 **Status:** `NATIVE SOURCE RECOVERED / VISUALLY REVIEWED / OPERATIVE TERMS CONTROLLED`
 
+> **21-AUG-2026 SOURCE PROMOTION.** Both authentic 26-Jan-2022 originals are now controlled: a two-page clarification of the 15-Oct ruling concerning the 12-May Providencia, and a separate three-page clarification/completion of the 15-Oct ruling confirming 18-May. Neither is the original adjudication/title-transfer act. Definitive approval is Auto 164/2021 of 18-May-2021; Protocol 457 of 21-Feb-2022 is the implementation deed. The deed's 22-Jan recital remains an unexplained discrepancy, not proof of a distinct signed order.
+
 ## 1. Purpose
 
 This addendum controls the native 21-Feb-2022 closing deed and separates what the deed itself proves from later lawyer summaries, allegations, economic inferences and still-missing Registry/court/accounting evidence.
@@ -52,19 +54,19 @@ The deed recites the following judicial sequence:
 
 The deed is a strong primary source for the fact that the notarial closing was executed on the basis of that recited chain. The exact operative content of each judicial act should still be checked against its own signed binary before attributing every proposition to the Judge.
 
-### January-2022 date correction/gap
+### January-2022 source correction and residual deed-recital gap
 
-Earlier repository/chat shorthand referred to a **26-Jan-2022** act family. The native 21-Feb-2022 deed expressly recites **22-Jan-2022**.
+Earlier repository/chat shorthand referred generically to a **26-Jan-2022 adjudication**. The native 21-Feb-2022 deed expressly recites **22-Jan-2022**, while two complete authentic clarification Autos are body-dated **26-Jan-2022**.
 
-Do **not** silently replace the old date. Current status:
+Current status:
 
-`JAN-2022 ACT FAMILY — 22-Jan-2022 recited in native deed; prior 26-Jan-2022 reference remains to be reconciled.`
+`JAN-2022 ACT FAMILY — two 26-Jan clarification originals located; 22-Jan remains a deed recital requiring source reconciliation.`
 
 Required source test:
 
-- recover every January-2022 Auto/Diligencia/notification;
-- distinguish act date, electronic-signature date and notification date;
-- determine whether 22-Jan and 26-Jan are distinct acts or whether one date is prior shorthand error.
+- complete hash/signature/service binding for both 26-Jan originals;
+- search for a signed 22-Jan act or a notarial correction/explanation;
+- distinguish the deed recital from proved judicial operative text.
 
 ## 5. Page 12 — property perimeter stated in the judicial recap
 
@@ -243,7 +245,7 @@ Mandatory counterevidence / lawful explanations to retain:
 
 1. Native 18-May-2021 Auto and complete annex/service chain.
 2. Complete 15-Oct-2021 Auto family.
-3. Complete January-2022 act family; resolve 22-Jan vs 26-Jan.
+3. Complete signature/service/finality binding for the two 26-Jan clarifications and resolve the deed's unexplained 22-Jan recital.
 4. Court filing receipt showing 21-Feb-2022 deed communication within/after five days.
 5. Court mandamiento/order for mortgage and concurso-annotation cancellation.
 6. Registry entries implementing the 2022 transfer and cancellations.

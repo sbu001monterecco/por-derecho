@@ -70,7 +70,7 @@ The deliverable is a document-to-number bridge, not an accusation.
 
 Reconstruct:
 
-**24 October 2019 non-validation / lack of prior authorization → 2021 tender / sale process → 26 January 2022 adjudication → deed / testimony → registration / external effects.**
+**24 October 2019 non-validation / lack of prior authorization → 2021 tender / sale process → 18 May 2021 definitive approval → 15 October confirmations → two 26 January 2022 clarifications → 21 February deed / testimony → registration / external effects.**
 
 For every step identify:
 

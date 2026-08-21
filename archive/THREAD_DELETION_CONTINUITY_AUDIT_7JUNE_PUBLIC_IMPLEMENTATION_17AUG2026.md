@@ -28,7 +28,7 @@ The public model now preserves:
 
 1. four separate clocks;
 2. Before → 7 June → After as the evidential heart;
-3. 7-Jun-2018 practical/material-control threshold separated from 26-Jan-2022 adjudication and 21-Feb-2022 deed/formal-transmission thresholds;
+3. 7-Jun-2018 practical/material-control threshold separated from 18-May-2021 definitive approval, the two 26-Jan-2022 clarifications and the 21-Feb-2022 deed/formal-transmission threshold;
 4. parallel lives separated from converging pressure tracks;
 5. a cross-track bridge rule rather than chronology-as-causation;
 6. a full-platform threshold extending beyond keys/apartments;

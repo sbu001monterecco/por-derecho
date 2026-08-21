@@ -1,8 +1,8 @@
 # CAM / CONCURSO 36/2012 — 2022 ADJUDICATION TRANSACTION IDENTITY + CONSIDERATION CONTROL
 
 **Control date:** 19 August 2026  
-**Status:** `CANONICAL SPECIALIST CONTROL — PRIMARY 25-JAN AUTO + 29-JAN EDICTO + OTTAWA OFFER / DEED BINARY REBINDING OPEN`  
-**Scope:** 2018 offer → 2019 appellate/publicity rules → Jan-2021 calculation/publicity → Ottawa better posture → 2021 definitive authorisation → Jan/Feb-2022 finality/testimonios → 21-Feb-2022 deed → Registry/accounting/surplus.
+**Status:** `CANONICAL SPECIALIST CONTROL — PRIMARY 25-JAN AUTO + 29-JAN EDICTO + third-party bidder OFFER / DEED BINARY REBINDING OPEN`
+**Scope:** 2018 offer → 2019 appellate/publicity rules → Jan-2021 calculation/publicity → third-party bidder better posture → 2021 definitive authorisation → Jan/Feb-2022 finality/testimonios → 21-Feb-2022 deed → Registry/accounting/surplus.
 
 ## 1. Controlling question
 
@@ -106,11 +106,11 @@ before unquantified taxes/costs.
 
 ---
 
-## 4. Ottawa — a concrete €14.8m third-party offer is now source-located
+## 4. Third-party bidder — a concrete €14.8m offer is now source-located
 
 Primary third-party document located:
 
-- `oferta vinculante OTTAWA 8feb2021`
+- `[protected third-party offer — 8-Feb-2021]`
 - Drive ID `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA`
 - dated **8-Feb-2021**.
 
@@ -210,7 +210,7 @@ Apply this chain:
 
 `→ 29-Jan-2021 EDICTO`
 
-`→ 8-Feb-2021 OTTAWA €14.8m OFFER`
+`→ 8-Feb-2021 third-party bidder €14.8m OFFER`
 
 `→ 12/18-May-2021 LICITATION / DEFINITIVE AUTHORISATION`
 
@@ -262,7 +262,7 @@ No later description may substitute for the missing bridge itself.
 | **€718,663.24** | Jan-2021 Auto's contingent/litigated community component | PRIMARY JUDICIAL SOURCE |
 | **€1,145,798.29** | aggregate community-fee better-posture condition | PRIMARY JUDICIAL + EDICTO |
 | **€14,713,880.31** | Edicto quantified components excluding unknown taxes/costs | PRIMARY-derived arithmetic |
-| **€14.8m** | Ottawa proposed acquisition price in its 8-Feb-2021 offer | PRIMARY THIRD-PARTY DOCUMENT; procedural acceptance/outcome open |
+| **€14.8m** | proposed acquisition price in the third-party bidder's 8-Feb-2021 offer | PRIMARY THIRD-PARTY DOCUMENT; filing/authority/funds open; Auto 164/2021 proves the court's nonappearance/no-bond treatment and CAM outcome |
 
 ### Source-typo control
 
@@ -317,7 +317,7 @@ Controlled questions:
 2. 24-Oct-2019 non-convalidation/downstream legal effect;
 3. whether price was returned, retained or later credited;
 4. 25/29-Jan-2021 fresh €400k better-posture component;
-5. Ottawa's treatment of the whole finca package;
+5. third-party bidder's treatment of the whole finca package;
 6. 2021 definitive authorisation describing direct sale for €400k;
 7. 21-Feb-2022 deed treatment;
 8. Registry treatment;
@@ -374,7 +374,7 @@ The repository is an evidence and issue-control system, not a substitute for pro
 
 1. **Signed judicial act:** `19. Auto Publicidad Subasta 25ENE2021.pdf`, Drive `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh`.
 2. **Court-office Edicto:** `22. EDICTO Cedula de Notificacion 29ENE2021.pdf`, Drive `1mgIFpwTq0F5y9A-pekLEoI2c_yFZJOMl`.
-3. **Third-party offer:** `oferta vinculante OTTAWA 8feb2021`, Drive `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA`.
+3. **Third-party offer:** `[protected third-party offer — 8-Feb-2021]`, Drive `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA`.
 4. **Filed LPB appeal:** `13. RECURSO DE APELACION PACTO COMISORIO 28FEB2022.pdf`, Drive `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC`.
 5. **Aweswell appeal source:** `recursoautoadjudicacion 2MAR2022`, Drive `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc`.
 6. **Later party technical reconstruction:** Drive `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk`.
@@ -395,7 +395,7 @@ P1:
 5. definitive-text CAM credit recognition and classification;
 6. original 2018 offer and literal condonation clause;
 7. €400,000 bank/accounting/return/credit/novation chain;
-8. Ottawa court filing/receipt, proof-of-funds/authority and 18-May-2021 licitation outcome;
+8. third-party bidder court filing/receipt, proof-of-funds/authority and 18-May-2021 licitation outcome;
 9. AC final ledger/rendición and surplus calculation;
 10. separate Arrecife 21-Feb-2022 instrument, if any;
 11. exact CAM S.A. → later corporate/successor chain.
@@ -404,6 +404,6 @@ P1:
 
 ## 17. Public-safe formulation
 
-> **A signed 25-Jan-2021 Auto and the 29-Jan court-office Edicto reconstruct the better-posture threshold: the mortgage components total €13.168m, with a separate €400,000 non-mortgaged-asset component and separate community/tax obligations. The Auto also explains the €102,895.34 movement in first-rank default interest as continued daily accrual from the 2019 AP figure to the €3.182m mortgage cap. An 8-Feb-2021 Ottawa document proposes €14.8m for the identified finca package. Later party reconstructions state that the 21-Feb-2022 deed used €13.168m as a `valor de contraprestación`; the deed itself remains the priority source needed to reconcile judicial authorisation, competitive process, notarial implementation, Registry effects and any surplus.**
+> **A signed 25-Jan-2021 Auto and the 29-Jan court-office Edicto reconstruct the better-posture threshold: the mortgage components total €13.168m, with a separate €400,000 non-mortgaged-asset component and separate community/tax obligations. The Auto also explains the €102,895.34 movement in first-rank default interest as continued daily accrual from the 2019 AP figure to the €3.182m mortgage cap. An 8-Feb-2021 third-party bidder document proposes €14.8m for the identified finca package. Later party reconstructions state that the 21-Feb-2022 deed used €13.168m as a `valor de contraprestación`; the deed itself remains the priority source needed to reconcile judicial authorisation, competitive process, notarial implementation, Registry effects and any surplus.**
 
 Do not publish `€13.568m deed price`, `fabricated interest`, `double sale`, `double counting`, `fraud`, `misappropriation` or `nullity` as fact unless the required primary chain supports the specific proposition.

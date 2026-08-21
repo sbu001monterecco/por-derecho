@@ -19,7 +19,7 @@ The architecture must be able to survive the opposing case.
 
 ## Adverse-decision rule
 
-The 15 February 2018 order rejecting LPB's Article 1535 position and recognising CAM is not a footnote. It must appear in every relevant public and internal analysis, together with amount corrections and the appeal/finality gap.
+The body-dated 8 February 2018 order rejecting LPB's Article 1535 position and recognising CAM is not a footnote. It must appear in every relevant public and internal analysis, together with the 9-Feb Judge signature, 14-Feb LAJ signature, `15FEB2018` filename/notification alias, amount corrections, stated 20-day appeal and appeal/finality gap.
 
 ## Exculpatory-material invitation
 

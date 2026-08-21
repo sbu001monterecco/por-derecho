@@ -50,5 +50,5 @@ The first arrow is direct documentary causation (`C5`). The later step from AC c
 3. Internal instruction deciding that LPB should withdraw.
 4. Complete procurador/power/venia and handover chronology.
 5. Any contemporaneous estate-interest cost/benefit analysis.
-6. Appeal/finality chain for the 15 February 2018 Commercial Court order.
+6. Appeal/finality chain for the body-dated 8 February 2018 Commercial Court order (Judge signature 9 February; LAJ signature 14 February; `15FEB2018` source alias).
 7. Any independent substantive Article 1535 action filed elsewhere.

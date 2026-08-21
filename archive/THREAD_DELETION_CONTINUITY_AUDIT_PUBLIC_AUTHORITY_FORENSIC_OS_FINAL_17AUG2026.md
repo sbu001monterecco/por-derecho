@@ -5,6 +5,8 @@
 **Primary squash commit:** `7eb75a3f791ee92ad1daa98f747a350307989636`  
 **Status:** `DELETION-SAFE — MERGED / PAGES BUILT / RENDER CHECK LIMIT EXPLICIT`
 
+> **SUPERSEDED IN PART — 21 AUGUST 2026.** The then-open 4-Jun-2018 continuation/signature target below is closed by the complete three-page authentic electronic source in Gmail `194a98a11920fefd`; body 4-Jun, Judge signature 5-Jun, LAJ Águeda Reyes Almeida signature 6-Jun. Full hash/alias binding and substantive reconciliation remain open.
+
 ## Final audit question
 
 > If this entire conversation disappeared now, could a fresh investigator recover what was requested, what was designed, what was actually implemented, what was merged, the evidential and criminal-law boundaries, what was not proved, what remains missing, and what deployment verification was and was not possible?
@@ -66,7 +68,7 @@ The final state preserves:
 5. complete relevant 2018/2019/2022 ACTAs and annexes;
 6. institution-by-institution receipt and independent-verification ledgers;
 7. funding DD/committee/waiver/source-and-use/cost/job/title reconciliation;
-8. complete 4-Jun-2018 Auto continuation/signature copy.
+8. full-file hash/alias binding for the now-complete 4-Jun-2018 Auto and reconciliation of its figures/effect.
 
 ## Deployment verification
 

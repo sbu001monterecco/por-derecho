@@ -160,8 +160,9 @@ Current controlling PH122/CAM dates are:
 - 19 December 2017: court-admitted DP 1041 production order;
 - 25 January 2018: the AC terminated Cristo A. Suarez Pimentel's specific LPB
   mandate and imposed an authority gate;
-- 15 February 2018: mixed/adverse order recognising CAM, rejecting strict Article
-  1535 treatment and correcting part of the amounts;
+- 8 February 2018: mixed/adverse order recognising CAM, rejecting strict Article
+  1535 treatment and correcting part of the amounts; Judge signature 9 February,
+  LAJ signature 14 February, and `15FEB2018` only a filename/notification alias;
 - 5 March 2018: Decreto 139/2018 records withdrawal in LPB's name, CAM's
   non-opposition/conformity and termination of DP 1041.
 

@@ -1,7 +1,7 @@
 # MASTER PROMPT — CAM / 2022 ADJUDICATION PRIMARY-SOURCE RECONCILIATION
 
 **Date:** 19 August 2026  
-**Use when:** resuming the Concurso 36/2012 adjudication, €3.079m→€3.182m interest bridge, €13.168m/€13.568m, Ottawa, €400k, testimonios, condonation, Registry or surplus work.
+**Use when:** resuming the Concurso 36/2012 adjudication, €3.079m→€3.182m interest bridge, €13.168m/€13.568m, third-party bidder, €400k, testimonios, condonation, Registry or surplus work.
 
 ## Prompt
 
@@ -45,9 +45,9 @@ The Auto records that CAM supplied material stating the cap had been reached by 
 
 Do **not** call €13,568,082.02 the deed consideration unless the deed itself proves that legal function. Connected 2026 party reconstructions state that the 21-Feb-2022 deed uses €13,168,082.02 as `valor de contraprestación`; rebind the actual deed before promoting that to PRIMARY VERIFIED.
 
-### Ottawa
+### Third-party bidder
 
-A primary 8-Feb-2021 Ottawa Corporación document proposes **€14.8m** for the identified 159 accommodation fincas plus the commercial/pool/solarium package, states intended own-funds financing and is expressly framed in response to the Edicto. Treat the **existence/content of the offer document as source-located**; filing/receipt, authority/funds, binding effect and the 18-May outcome remain open.
+A primary 8-Feb-2021 third-party bidder document proposes **€14.8m** for the identified 159 accommodation fincas plus the commercial/pool/solarium package, states intended own-funds financing and is expressly framed in response to the Edicto. Treat the **existence/content of the offer document as source-located**; filing/receipt and authority/funds remain open. Auto 164/2021 supplies the court's nonappearance/no-bond treatment and resulting CAM approval.
 
 ## Main mission
 
@@ -61,7 +61,7 @@ Reconstruct, document by document:
 
 `→ 29-Jan-2021 EDICTO`
 
-`→ 8-Feb-2021 OTTAWA €14.8m OFFER`
+`→ 8-Feb-2021 THIRD-PARTY €14.8m OFFER`
 
 `→ 12/18-May-2021 LICITATION + DEFINITIVE AUTHORISATION`
 
@@ -112,7 +112,7 @@ Search specifically for:
 8. definitive-text CAM credit and interest classification;
 9. original 2018 CAM offer and literal condonation clause;
 10. €400k 2018 payment, non-convalidation, return/retention and 2022 treatment;
-11. Ottawa court filing/receipt, corporate authority, proof of funds and licitation treatment;
+11. Third-party bidder court filing/receipt, corporate authority, proof of funds and complete licitation treatment;
 12. 18-May-2021 hearing minute/audio and attendance/non-attendance record;
 13. AC final accounting, estate bank and surplus/no-surplus calculation;
 14. any separate 21-Feb-2022 Arrecife dación/mortgage-cancellation instrument;
@@ -122,13 +122,13 @@ Search specifically for:
 
 - `19. Auto Publicidad Subasta 25ENE2021.pdf` — Drive ID `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh` — **PRIMARY SIGNED JUDICIAL SOURCE**.
 - `22. EDICTO Cedula de Notificacion 29ENE2021.pdf` — Drive ID `1mgIFpwTq0F5y9A-pekLEoI2c_yFZJOMl` — **PRIMARY COURT-OFFICE SOURCE**.
-- `oferta vinculante OTTAWA 8feb2021` — Drive ID `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA` — **PRIMARY THIRD-PARTY DOCUMENT**.
+- `[protected third-party offer — 8-Feb-2021]` — Drive ID `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA` — **PRIMARY THIRD-PARTY DOCUMENT**.
 - `13. RECURSO DE APELACION PACTO COMISORIO 28FEB2022.pdf` — Drive ID `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC` — FILED PROCEDURAL SOURCE.
 - `recursoautoadjudicacion 2MAR2022` — Drive ID `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc` — PARTY PROCEDURAL SOURCE.
 - `ANEXO TÉCNICO - Reconstruccion Economica Provisiona de la Adjudicacion 17FEB2026` — Drive ID `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk` — LATER PARTY RECONSTRUCTION.
 - `Incidente Concursal Nulidad Adjudicacion 17FEB2026` — Drive ID `1fVkCG4XrKduPAkBwkh_HBj6ii43FSwLRwAucEIYip-E` — LATER PARTY PLEADING/HYPOTHESIS.
 
-Additional Ottawa-related source family located by search:
+Additional third-party bidder source family located by search:
 
 - `Escrito de Mejor Postura Oferta Adquisición - Concurso Luchy Playa Blanca SLU - 7FEB2021` — Drive `1NF4X3NHazp07mDHh84Qyl-r2d3pmLtb3AJxOjqzbqUE`;
 - `LUCHY PLAYA Blanca SL - Carta de Oferta Vinculante 7FEB2021.docx` — Drive `1MHbxT9gngUql5PIA0VP4vOC98IDJNKSQ`;
@@ -141,7 +141,7 @@ Additional Ottawa-related source family located by search:
 - Treat any `€1,226,191` variant as a likely later-source typo: the primary Edicto says **€1,226,161**.
 - Do not merge the Concurso deed with a same-date Arrecife instrument.
 - Do not merge CAM S.A., any S.L. label, HNT or individuals.
-- Do not convert Ottawa's offer document into proof that it was formally accepted, fully funded or wrongfully excluded without the procedural record.
+- Do not convert the third-party offer document into proof that it was formally accepted, fully funded or wrongfully excluded without the procedural record.
 
 ## Required outputs
 
@@ -150,7 +150,7 @@ Produce:
 1. **Primary-source transaction matrix**.
 2. **Number ontology** — every figure, source and legal function.
 3. **Interest bridge** — AP figure → daily accrual → cap → Edicto → recognised-credit comparison.
-4. **Competitive-process ledger** — Edicto → Ottawa → licitation → result.
+4. **Competitive-process ledger** — Edicto → third-party bidder → licitation → result.
 5. **Transaction-identity comparison** — authorised vs publicised vs deed vs Registry.
 6. **€400k ledger**.
 7. **Condonation/finiquito ledger**.
@@ -187,4 +187,4 @@ Never turn:
 
 Do not declare completion until a fresh ChatGPT can answer, from repository + connected primary sources alone:
 
-> **What exactly did each 2018–2022 instrument authorise, require, offer, transfer, extinguish, compensate or leave unresolved — and how does every euro travel from recognised credit and better-posture calculations through Ottawa/competition, final deed and estate accounting?**
+> **What exactly did each 2018–2022 instrument authorise, require, offer, transfer, extinguish, compensate or leave unresolved — and how does every euro travel from recognised credit and better-posture calculations through the third-party competition, final deed and estate accounting?**

@@ -3,6 +3,8 @@
 Date: 21 Aug 2026
 Status: continuity preservation record for the repository update initiated from the hard-closure prompt
 
+> **SUPERSEDED IN PART — LATER 21 AUGUST 2026.** The incomplete-copy warning below records the earlier branch state. Current canonical source is the complete three-page authentic electronic 4-Jun-2018 Auto, Gmail `194a98a11920fefd`; body 4-Jun, Judge signature 5-Jun, LAJ Águeda Reyes Almeida signature 6-Jun. The old two-page derivative remains an incomplete alias.
+
 ## Current repository base used
 
 This update was branched from current `main` at:
@@ -21,7 +23,7 @@ Preserved controls include:
 - canonical clean seven-page liquidation-plan hash;
 - separate two-page CAM-credit/interest clarification hash;
 - rejection gate for the previously reported unmatched seven-page hash;
-- 4-Jun-2018 incomplete-copy warning and P1 continuation/signature target;
+- 4-Jun-2018 complete three-page primary promotion, with the prior two-page copy retained only as an incomplete alias;
 - exact attribution of the 15-Jun-2018 Diligencia to LAJ Águeda Reyes Almeida;
 - exact attribution of the 26-Jun-2018 suspension Auto to Alberto López Villarrubia;
 - explicit requirement to bind the 15-Jun Diligencia to the existing LAJ complaint analysis;
@@ -46,7 +48,7 @@ The accompanying addendum registers as P1:
 - any formally amended definitive list afterwards;
 - complete statutory modification chain;
 - exact `crédito firme reconocido` used in liquidation;
-- complete 4-Jun-2018 Auto;
+- full-file hash/equivalence binding for the promoted 4-Jun-2018 Auto and reconciliation of its debt figures/implementation effect;
 - 15-Jun service/publication chain;
 - 15-Jun → 26-Jun implementation interval;
 - €400,000 route;

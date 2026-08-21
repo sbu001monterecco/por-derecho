@@ -3,6 +3,7 @@
   "owner": "Por Derecho / Project Sun Rock",
   "current_state": "MERGED",
   "control_date": "2026-08-19",
+  "last_correction_date": "2026-08-21",
   "publication_type": "bilingual dedicated dossier plus cross-site legal/evidential separation module",
   "controlling_pr": 491,
   "merge_sha": "a3d271470219186b51a2bd681d4051a907110617",
@@ -28,7 +29,7 @@
     "law5_1999": "Paragraph 4 of the sole transitional provision was investigated by counsel historically but was not an operative 2018 basis; Law 2/2000 had removed it and STC 28/2012 declared it unconstitutional and null.",
     "art1522_1524": "Candidate only for genuine same-property undivided co-ownership and sale to an outsider; nine-day statutory period must be tested from registration or actual knowledge.",
     "art396": "No generic tanteo/retracto arises merely because owners hold separate flats/locals in the same horizontal-property regime.",
-    "dp1041_appeal": "The 15-Feb-2018 Commercial Court order provided a 20-day appeal under Article 97 bis.2 LC; five-day remedies belong to distinct later procedural acts."
+    "dp1041_appeal": "The Commercial Court order is body-dated 8-Feb-2018, Judge-signed 9-Feb and LAJ-signed 14-Feb; 15FEB2018 is only a filename/notification alias. It provided a 20-day appeal under Article 97 bis.2 LC; five-day remedies belong to distinct later procedural acts."
   },
   "evidence_controls": {
     "rtb": "Separate May-June 2018 unit-rights legal workstream is directly documented; enforceable right remains transaction-specific.",

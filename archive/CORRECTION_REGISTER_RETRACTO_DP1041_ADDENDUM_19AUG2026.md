@@ -3,23 +3,27 @@
 **Date:** 19 August 2026  
 **Applies to:** PH122 → CAM assignment / crédito litigioso / Article 1535 storyline and public pages.
 
-## CR-RETRACTO-001 — date of the Commercial Court creditor-substitution / crédito litigioso order
+> **SUPERSEDED 21 AUGUST 2026 — CURRENT READ CONTROL.** CR-RETRACTO-001 below preserves the erroneous 19-August conclusion for correction history; it is not current authority. Re-inspection of the complete three-page primary copy establishes: ruling body dated **8 February 2018**; Judge signature **9 February**; LAJ signature **14 February**; `15FEB2018` only a source filename/notification alias; stated remedy **appeal within 20 days**. Apply `CR-059` in `archive/CORRECTION_REGISTER.md` and canonical ID `C36-JUD-2018-02-08-001`.
+
+## CR-RETRACTO-001 — SUPERSEDED historical 19-August date conclusion
 
 ### Prior wording requiring correction
 
-Some repository material and public pages identify the relevant Commercial Court order as **8 February 2018**.
+The 19-August pass treated repository material identifying the relevant Commercial Court order as **8 February 2018** as requiring correction. That historical assessment is now itself superseded.
 
 ### Primary-source re-verification
 
-The official primary court PDF recovered and re-checked in the 19 August 2026 scan is titled `AUTO Modificación Textos Definitivos CAM+RETRACTO - 15FEB2018.pdf` and the order itself is dated **15 February 2018**.
+**SUPERSEDED HISTORICAL CONCLUSION:** the 19-August pass inferred from the filename `AUTO Modificación Textos Definitivos CAM+RETRACTO - 15FEB2018.pdf` that the order was dated **15 February 2018**. The 21-August complete-document read disproves that inference: the body says 8 February, followed by the 9-February Judge signature and 14-February LAJ signature.
 
-Its procedural history records LPB's opposition on **7 February 2018**. No separate primary order dated 8 February has been rebound in the current scan that supports using 8 February as the date of this decision.
+Its procedural history records LPB's opposition on **7 February 2018**. The same controlled primary copy itself supports **8 February 2018** as the ruling-body date; no separate act is needed to justify that date.
 
 ### Correct canonical treatment
 
-- Use **15 February 2018** for the Commercial Court order that modified the definitive creditor texts, recognised CAM as assignee creditor and rejected LPB's crédito litigioso argument.
+- Use **8 February 2018** for the Commercial Court order that modified the definitive creditor texts, recognised CAM as assignee creditor and rejected LPB's crédito litigioso argument.
+- Preserve **9 February** as Judge-signature date, **14 February** as LAJ-signature date and `15FEB2018` only as filename/notification-layer retrieval metadata.
+- Preserve the stated **20-day recurso de apelación**; do not attach a five-day reposición to this Auto.
 - Preserve 7 February 2018 as the date of LPB's opposition where supported by the order.
-- Treat any 8 February reference as `SUPERSEDED / REQUIRES-SEPARATE-SOURCE` unless a distinct primary act is later produced.
+- Treat any unqualified 15 February decision-date reference as `SUPERSEDED / FILENAME-OR-NOTIFICATION-ALIAS`.
 
 ### Substantive clarification added at the same time
 

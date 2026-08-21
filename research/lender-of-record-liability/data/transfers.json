@@ -42,7 +42,7 @@
     "transfer_type": "mortgage_credit_assignment",
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-08-CREDITOR-SUBSTITUTION"],
     "consideration_status": "not_publicly_reconciled",
     "liability_allocation_status": "complete_deed_required",
     "open_questions": ["Complete deed and schedules", "Price and payment", "Due diligence and disclosures", "Warranties/indemnities", "Loan-by-loan balance"]

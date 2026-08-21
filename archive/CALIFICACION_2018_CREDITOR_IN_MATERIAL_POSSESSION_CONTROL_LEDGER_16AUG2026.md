@@ -57,9 +57,9 @@ The controlled record contains subsequent locks/security/exclusion/works allegat
 
 **Status:** `CONTINUITY PARTIAL; ACTOR / PERIOD / ASSET PROOF REQUIRED`.
 
-### 2021–2022 — bidding, adjudication and dación
+### 2021–2022 — bidding, definitive approval, clarifications and dación
 
-Later bidding, the 26 January 2022 adjudication route and the 21 February 2022 deed form a legally distinct later stage. They must not be used as retroactive proof of the legal basis for control in June 2018.
+Later bidding, the 18 May 2021 definitive approval, the two 26 January 2022 clarification Autos and the 21 February 2022 deed form a legally distinct later stage. The 26-Jan fallos did not newly adjudicate assets or transfer title. None may be used as retroactive proof of the legal basis for control in June 2018.
 
 **Status:** `LATER JUDICIAL / NOTARIAL STAGE; NO RETROACTIVE INFERENCE`.
 

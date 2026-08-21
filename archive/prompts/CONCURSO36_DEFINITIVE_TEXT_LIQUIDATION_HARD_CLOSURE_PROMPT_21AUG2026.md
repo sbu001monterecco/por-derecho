@@ -4,6 +4,8 @@ Date: 21 Aug 2026
 Status: CONTROLLING EXECUTION PROMPT
 Scope: LPB / Concurso 36/2012 / definitive creditor texts / CAM-credit treatment / liquidation plan / Judge / LAJ / AC / appeal-finality chain
 
+> **LATER 21-AUG-2026 SOURCE PROMOTION.** The complete three-page authentic electronic 4-Jun-2018 Auto is now controlled from Gmail `194a98a11920fefd` (`20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`): body 4-Jun, Judge signature 5-Jun, LAJ Águeda Reyes Almeida signature 6-Jun. Any “incomplete / promotion blocked / recover continuation” instruction below is superseded and applies only to the older two-page derivative.
+
 ## Purpose
 
 Run an evidence-led, end-to-end reconstruction of whether the creditor amount, classification, security treatment and interest position actually used during liquidation can be traced step-by-step back to LPB's legally operative definitive creditor texts.
@@ -28,7 +30,7 @@ Preserve the existing verified anti-conflation rules:
 - `C36-JUD-2018-04-16-001`: seven-page liquidation-plan Auto, Alberto López Villarrubia, canonical clean Drive SHA-256 `2de1527a738658252f81fd3e402622f677280aaed735e5ef117d44c4a06dcd05`.
 - `C36-JUD-2018-04-16-002`: separate two-page CAM-credit/interest clarification Auto, Alberto López Villarrubia, SHA-256 `4748ad85af54dac606104e8f93cd71299cfd5878fc32be0bf1d4f236325e59ff`.
 - Do not restore the previously reported unverified seven-page hash `bf134e63cc0c4d09be7f32536460b6eed206b3e5c7e18de19b2c326c10e15964` without locating the exact binary that generates it.
-- 4-Jun-2018 controlled copy remains `INCOMPLETE COURT COPY — primary promotion blocked`; known SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`.
+- 4-Jun-2018 canonical source is the complete three-page authentic electronic copy from Gmail `194a98a11920fefd`; the older two-page derivative with SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` remains an incomplete alias and cannot control quotation/page/signature status.
 - `C36-LAJ-2018-06-15-001`: 15-Jun-2018 Diligencia de Ordenación, Águeda Reyes Almeida, SHA-256 `1298d03daca48284de642299ddb86c6b8ed2900f95d5ce05edf2d491e5f8ade5`.
 - `C36-JUD-2018-06-26-001`: 26-Jun-2018 suspension Auto, Alberto López Villarrubia, SHA-256 `4f23ad7e30191b1d32c8708851729f42151c3b095476255d5fe1a5fc43509099`.
 - 18-May-2021 is not to be resurrected as a generic missing-original blocker merely because older work once described it that way.
@@ -145,7 +147,7 @@ At minimum reconstruct:
 - later licitation/adjudication steps;
 - creditor standing and assignments;
 - 2021 realisation decisions;
-- 26-Jan-2022 adjudication;
+- two 26-Jan-2022 clarification Autos (not a new adjudication/title transfer);
 - set-off/payment/sobrante requirements;
 - later conveyance/title consequences.
 
@@ -277,14 +279,13 @@ Reconstruct end-to-end the authorised direct sale of locales and pools/solarium 
 - compliance with every upstream condition;
 - later appearance in 2022 perimeter/transaction if proved.
 
-## Complete 4-Jun-2018 Auto remains P1
+## Complete 4-Jun-2018 Auto — source promotion closed; substantive reconciliation continues
 
-Search Gmail, Drive, composite PDFs, LexNET bundles, pleadings, forwards and annex packages for the continuation, dispositive and signature pages.
+Use the complete three-page Gmail source as canonical for the continuation, dispositive and signature pages. Capture its full-file hash and bind any equivalent Drive/LexNET copy without treating aliases as separate acts.
 
-Do not promote a replacement until it is demonstrably more complete.
+Do not let the older two-page derivative override the promoted source.
 
-If found: hash, source-control, promote, update all dependent conclusions.
-If not found: retain `P1 — COMPLETE 4-JUN-2018 AUTO NOT YET RECOVERED`.
+Remaining work is substantive: reconcile the notarial balance components, better-offer mechanics, service and downstream implementation. Do not reopen a generic “complete Auto missing” blocker.
 
 ## Exact final questions
 
@@ -302,7 +303,7 @@ The execution report must answer:
 10. What was CAM's legally operative `crédito firme reconocido`?
 11. What did the 16-Apr plan Auto authorise?
 12. What did the separate 16-Apr CAM-credit Auto decide?
-13. What can presently be proved about 4-Jun?
+13. What does the complete 4-Jun Auto prove, and what debt/accounting or implementation questions does it leave unresolved?
 14. What did 15-Jun implement?
 15. What did LPB appeal?
 16. What did 26-Jun suspend?

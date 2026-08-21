@@ -20,7 +20,7 @@ The primary sequence now establishes:
 1. LPB obtained an admitted judicial route to the PH122 → CAM assignment deed, price, payment and costs.
 2. On **25 January 2018** the Administrador Concursal directly terminated Cristo Suárez Pimentel's professional relationship with LPB, requested `venia` in DP 1041 and imposed an AC-authorisation gate over future LPB procedural action.
 3. No voluntary resignation by Cristo has been located, and Cristo later continued broader Sun Park legal work.
-4. The **15 February 2018** Commercial Court order rejected LPB's Article 1535 / `crédito litigioso` position, partially corrected amounts in LPB's favour and recognised CAM as assignee creditor with express reliance on the AC's favourable verification.
+4. The Commercial Court order body-dated **8 February 2018** rejected LPB's Article 1535 / `crédito litigioso` position, partially corrected amounts in LPB's favour and recognised CAM as assignee creditor with express reliance on the AC's favourable verification. It was Judge-signed 9 February and LAJ-signed 14 February; `15FEB2018` is a filename/notification alias.
 5. The **5 March 2018** Decree in DP 1041 records that **LPB requested withdrawal**, CAM did not oppose, the proceeding was terminated and the 25 April hearing was vacated. The intervention table lists **Francisco Borja Rodríguez Batllori Laffitte** as LPB's lawyer and **Alejandro Válido Farray** as procurador.
 6. The **13 May 2024** judicial-office order independently confirms that DP 1041 was finalised and archived because of the claimant's withdrawal under the 5 March 2018 Decree, and states that no proceedings derived from it.
 
@@ -37,7 +37,7 @@ Two distinct forms of potential value existed for LPB:
 - **substantive optionality** — if Article 1535's strict statutory conditions were met, a possible route to extinguish a sold litigated credit on the statutory basis; and
 - **information / negotiation optionality** — an admitted judicial route to obtain the deed, price, payment and costs needed to test the transaction economics, reconcile the debt and assess any available remedy.
 
-The 15 February 2018 ruling is genuine adverse evidence on the first limb. It does not automatically establish that the second limb had no value.
+The 8 February 2018 ruling is genuine adverse evidence on the first limb. It does not automatically establish that the second limb had no value.
 
 ## 3. Verified primary sequence
 
@@ -82,9 +82,9 @@ This is a documented causation finding about the end of the specific formal LPB 
 
 CAM's opposition raised, among other matters, the authority/liquidation issue surrounding LPB's procedural representation.
 
-### 15 February 2018 — Commercial Court order
+### 8 February 2018 — Commercial Court order
 
-The primary order is dated **15 February 2018**. Earlier references to 8 February are superseded for this order unless a distinct primary act is produced.
+The controlled primary order is body-dated **8 February 2018**, signed by the Judge on **9 February** and by the LAJ on **14 February**. `15FEB2018` is retained only as the source filename/notification alias; it is not the operative decision date.
 
 The order:
 
@@ -97,7 +97,7 @@ The order:
 
 Keep separate:
 
-- 15-Feb-2018 Commercial Court order → 20-day appeal;
+- 8-Feb-2018 Commercial Court order (Judge signature 9-Feb; LAJ signature 14-Feb; `15FEB2018` source alias) → 20-day appeal;
 - 5-Mar-2018 DP1041 Decree → five-day review; and
 - 13-May-2024 judicial-office order → five-day reposición.
 
@@ -183,7 +183,7 @@ Only then assign C0–C5.
 
 ## 7. Strongest defensible framing of the Commercial Court
 
-The 15 February order supports an **intervention/deference asymmetry** question:
+The 8 February order supports an **intervention/deference asymmetry** question:
 
 - LPB obtained a separate JPI order compelling production of the assignment economics;
 - the Mercantile Court recognised CAM while expressly relying on AC verification rather than requiring all title material itself;
@@ -197,7 +197,7 @@ Do not publish improper judicial bias, prevaricación or corruption as establish
 ## 8. Counter-record that must remain visible
 
 1. Article 1535 uses a strict concept of litigated credit; not every disputed or enforced credit qualifies.
-2. The 15 February 2018 ruling rejected LPB's position on that issue.
+2. The 8 February 2018 ruling rejected LPB's position on that issue.
 3. The same ruling corrected some amounts in LPB's favour.
 4. An insolvency administrator can legitimately decide not to continue weak or value-destructive litigation if that decision is rationally grounded in estate interest.
 5. The JPI and Mercantile routes addressed different applications.
@@ -232,7 +232,7 @@ The P0 list is now narrower:
 3. Author/drafter/signatory/filer and filing channel of the withdrawal pleading.
 4. Complete Cristo → successor `venia`, power and handover chronology.
 5. Contemporaneous estate-interest/cost-benefit analysis for withdrawal.
-6. Actual 20-day appeal/finality chain for the 15 February 2018 order.
+6. Actual 20-day appeal/finality chain for the 8 February 2018 order.
 7. Complete PH122 → CAM deed, schedules, allocated price, payment and servicing proof.
 8. Exact pre-assignment declaratory controversy relevant to the technical Article 1535 test, credit by credit.
 9. Any independent substantive Article 1535 action filed elsewhere.

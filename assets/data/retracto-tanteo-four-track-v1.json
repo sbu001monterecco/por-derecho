@@ -110,7 +110,10 @@
   },
   "appealCorrection": {
     "status": "VERIFIED_PRIMARY_CORRECTION",
-    "commercialCourtOrderDate": "2018-02-15",
+    "commercialCourtOrderBodyDate": "2018-02-08",
+    "judgeSignatureDate": "2018-02-09",
+    "lajSignatureDate": "2018-02-14",
+    "laterLabelOrNotificationDate": "2018-02-15",
     "correctRemedy": "20-day recurso de apelacion under Article 97 bis.2 of the then-applicable Insolvency Law",
     "incorrectSupersededWording": "five-day recurso de reposicion",
     "separateActs": [

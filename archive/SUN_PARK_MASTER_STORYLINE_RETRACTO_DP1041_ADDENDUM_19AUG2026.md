@@ -55,9 +55,9 @@ The later Commercial Court order records that documentation was completed and th
 
 LPB challenges amounts and maintains that the transferred credit is litigioso.
 
-### 15 February 2018 — Commercial Court recognises CAM and rejects LPB's Article 1535 theory
+### 8 February 2018 — Commercial Court recognises CAM and rejects LPB's Article 1535 theory
 
-The recovered primary order is dated **15 February 2018**. It:
+The controlled primary order is body-dated **8 February 2018**, Judge-signed **9 February** and LAJ-signed **14 February**. `15FEB2018` is a source filename/notification alias, not the operative decision date. It:
 
 - partially corrects amounts in LPB's favour;
 - rejects LPB's litigated-credit position;

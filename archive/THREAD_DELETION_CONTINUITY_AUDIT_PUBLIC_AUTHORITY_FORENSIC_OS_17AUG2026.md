@@ -5,6 +5,8 @@
 **PR:** #323  
 **Status:** `DELETION-SAFE ON REVIEW BRANCH — FINAL MAIN/PAGES VERIFICATION STILL REQUIRED`
 
+> **SUPERSEDED IN PART — 21 AUGUST 2026.** The statement below that the 4-Jun-2018 Auto remained incomplete describes the 17-Aug custody state only. Current canonical source is a complete three-page authentic electronic copy: Gmail `194a98a11920fefd`, `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`; body 4-Jun, Judge signature 5-Jun, LAJ Águeda Reyes Almeida signature 6-Jun. The older two-page derivative remains incomplete and must not control.
+
 ## Audit question
 
 > If this conversation disappeared now, could a fresh investigator reconstruct the requested multidisciplinary, public-authority and parallel criminal/forensic architecture, the implementation performed, the evidential limits, the open source gaps and the next actions solely from repository controls?
@@ -28,7 +30,7 @@
 - `AUTH-2011-001` is a `WORKING_HYPOTHESIS`, not a verified authority defect or criminal fact.
 - `ACTA-2011-001`, `VOTE-2011-001` and `OWN-2008-001` remain open pending primary source/unit reconstruction.
 - The selected 2018 judicial/LAJ nodes inherit the source status and hashes from the verified Batch-B register.
-- The 4-Jun-2018 Auto remains incomplete and its actor is not promoted from the partial copy.
+- The 4-Jun-2018 Auto is now controlled from the complete three-page primary copy, with Judge and LAJ signatures separately dated; the older two-page derivative is retained only as an incomplete alias.
 - The 15-Jun-2018 item remains an LAJ act by Águeda Reyes Almeida, not a Judge-signed act.
 - Later title is not treated as retroactive proof of earlier ownership/authority.
 - FEDER/public-funding identification is not converted into proof of misuse, duplicate expenditure or fraud.

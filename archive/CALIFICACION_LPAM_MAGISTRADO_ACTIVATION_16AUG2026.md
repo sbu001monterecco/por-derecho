@@ -4,6 +4,8 @@
 **Canonical update:** **17 August 2026**  
 **Status:** `MANDATORY CALIFICACIÓN CROSS-LINK WHEN LPAM / JUDGE CONTACT / IMPARTIALITY IS IN SCOPE / PUBLIC IDENTITY CONTROL APPLIED`
 
+> **21-AUG-2026 SUPERSESSION NOTICE.** The prior statement that Aweswell was the €14.8m higher bidder/successful party is contradicted by primary Auto 164/2021. Public-safe current control: a **third-party bidder** submitted the €14.8m proposal, did not appear and did not lodge the bond; the court therefore definitively approved CAM's proposal. Aweswell was not that bidder. Preserve bidder anonymisation on public surfaces.
+
 ## 17-Aug integrated override
 
 The LPAM module sits inside a wider, separately documented Judge/court-knowledge chain:
@@ -65,7 +67,7 @@ The 17-Aug knowledge upgrade adds another mandatory sequence:
 - 4-Feb-2021: Aweswell's verified LexNET reposición in Concurso 36/2012 expressly put the CAM/RICPE owner/project/investor-presentation allegation before Mercantil nº1.
 - 17-Feb-2021: court Diligencia records the challenge as **registro 918/2021**. This proves procedural incorporation of the challenge, not personal reading of every annex or the truth of every allegation.
 - 12/18-May-2021 primary court records: prove CAM's procedural role and `representación`; they do not personally identify LPAM as the official representative.
-- Auto 164/2021: records Aweswell as the higher bidder and immediate successful party — mandatory counterevidence against a simplistic predetermined-CAM-result theory.
+- Auto 164/2021: records a third-party €14.8m proposal, that bidder's nonappearance and failure to lodge the bond, and the resulting definitive approval of CAM's proposal. Aweswell was not the bidder. This remains mandatory counterevidence against any simplistic predetermined-CAM-result theory, while proof of the competing offer's authority, funds, service and bond history remains a separate source test.
 - Signed 28-Jul-2026 declarations: narrow the observed exit episode; no direct hearing of a private conversation, no observed LPAM/Judge solitude, no office entry. Gil's earlier stronger wording is inference, not direct perception.
 - Preserved Auto copy: download marker 11:50:54 and Judge signature 12:47:38 on 18-May-2021. This is a technical anomaly warranting certification, not itself proof of alteration/backdating/predetermination/misconduct.
 - CGPJ: original appeal was formally presented **15-Jun-2026** under `REGAGE26e00056359487`; **18-Jun** is the later CGPJ-reported entry date. The **specific LPAM–Magistrado module was not in that original package**. It was first presently verified as formally presented in the Alzada route on **28-Jul-2026**, `REGAGE26e00069061338`; 30-Jul routing to the CGPJ General Registry is verified. Joinder/examination of that supplement remains open.

@@ -12,7 +12,7 @@ This addendum prevents three errors:
 
 1. collapsing all 21-Feb-2022 legal effects into one event;
 2. collapsing the 2021 better-bid figures into the final deed price/consideration without source proof; and
-3. losing the concrete **Ottawa €14.8m better-posture** and the signed judicial explanation for the first-rank interest movement.
+3. losing the concrete **third-party bidder €14.8m better-posture** and the signed judicial explanation for the first-rank interest movement.
 
 ## Controlled 2019–2022 sequence
 
@@ -22,12 +22,12 @@ This addendum prevents three errors:
 | **24 Oct 2019** | Court orders renewed publicity/competition and source-completion for interest/community figures | existing primary court control + signed 25-Jan-2021 Auto summary | bridge from non-convalidation/publicity issue to finite better-posture process |
 | **25 Jan 2021** | Signed Auto fixes/reconstructs amounts for better postures | **PRIMARY SIGNED JUDICIAL SOURCE** | records CAM material saying first-rank default interest reached €3.182m cap; court uses full cap; community components €427,135.05 + €718,663.24 |
 | **29 Jan 2021** | LAJ Edicto / Cédula de Notificación publishes better-posture requirements | **PRIMARY VERIFIED** | first-rank €11,941,921.02; second-rank €1,226,161; separate €400k; separate €1,145,798.29 community fees; taxes/costs additional |
-| **8 Feb 2021** | Ottawa Corporación offer document responds to Edicto and proposes **€14.8m** for identified finca package | **PRIMARY THIRD-PARTY DOCUMENT; filing/outcome open** | concrete competitive alternative; states intended own-funds financing and conditions |
-| **12 May 2021** | Court calls licitation/subasta event for 18 May | quoted in filed 2022 appeal; signed source to rebind | procedural implementation of competition route |
-| **18 May 2021** | Court approves definitively CAM proposal | quoted in filed 2022 appeals; signed source to rebind | operative structure quoted as apartments dación in payment of privileged credits + locales/pools direct sale €400k + costs/taxes/community obligations |
-| **15 Oct 2021** | Reposition appeals resolved; definitive-sale structure confirmed according to later appeals | filed 2022 procedural sources | direct predecessor to clarification/finality node |
+| **8 Feb 2021** | the third-party bidder offer document responds to Edicto and proposes **€14.8m** for identified finca package | **PRIMARY THIRD-PARTY DOCUMENT; filing/authority/funds open; later court treatment located** | concrete competitive alternative; Auto 164/2021 records nonappearance/no bond and resulting CAM approval |
+| **12 May 2021** | Court calls the licitation event for 18 May and fixes the third-party bidder's bond | **complete two-page electronic primary located** | procedural implementation of competition route; full hash/service context remains to bind |
+| **18 May 2021** | Court approves definitively CAM proposal | **signed five-page Auto 164/2021 located** | records the third-party €14.8m proposal, bidder nonappearance/no bond and CAM approval; operative structure separates apartments dación from locales/pools €400k branch |
+| **15 Oct 2021** | Two separate Autos resolve distinct challenge tracks | **signed five-page + complete two-page originals located** | one confirms 18-May in full; the other concerns challenges to the 12-May Providencia |
 | **25 Oct 2021** | CAM testimony request/issue episode | LAJ ledger VERIFIED/PARTIAL | first downstream authority package; actual testimony binary/manifest missing |
-| **26 Jan 2022** | Clarification orders / formal adjudication-finality node | filed 2022 appeals + existing repo | distinguish order date, notification, finality and notarial implementation |
+| **26 Jan 2022** | Two separate clarification Autos | **complete two- and three-page authentic originals located** | clarify separate 15-Oct acts; neither fallo newly adjudicates assets, fixes closing debt, decides a sobrante or transfers title |
 | **31 Jan 2022** | 26-Jan clarification orders notified to LPB according to filed 28-Feb appeal | filed procedural source | appeal-clock / knowledge node |
 | **14–17 Feb 2022** | CAM requests/receives further testimony including 26-Jan order with expression of finality | LAJ ledger VERIFIED/PARTIAL | likely downstream notarial/Registry authority package; exact contents/use open |
 | **21 Feb 2022** | Concurso 36/2012 deed formalisation | **PARTY-RECONSTRUCTION working proposition pending deed binary** | connected 2026 reconstructions state deed uses €13,168,082.02 as `valor de contraprestación`; do not substitute €13,568,082.02 |
@@ -63,9 +63,9 @@ The underlying CAM calculation, exact days/rate and credit-classification effect
 
 The timeline must never say `the court fixed a €13.568m deed price` unless a deed/judicial source expressly assigns that legal function.
 
-## Ottawa significance
+## Third-party bidder significance
 
-The 8-Feb-2021 Ottawa document is now part of the canonical timeline because it converts `possible third-party competition` into a concrete, dated **€14.8m offer document**. It does not yet establish that the court accepted it, that all conditions were satisfied, that funds were proved, or why Ottawa did not prevail. Those are source-completion questions.
+The 8-Feb-2021 third-party bidder document is now part of the canonical timeline because it converts `possible third-party competition` into a concrete, dated **€14.8m offer document**. It does not establish that all conditions were satisfied or that funds were proved. Auto 164/2021 supplies the court's later nonappearance/no-bond treatment and resulting CAM approval.
 
 ## 21-Feb-2022 separation rule
 
@@ -81,7 +81,7 @@ Required fields for each instrument:
 
 1. **material/control threshold** — 2017 / 7-Jun-2018;
 2. **offer/Plan threshold** — 2018;
-3. **publicity/better-posture threshold** — 2019–Jan/Feb-2021, now including Ottawa;
+3. **publicity/better-posture threshold** — 2019–Jan/Feb-2021, now including third-party bidder;
 4. **definitive judicial authorisation/finality threshold** — May/Oct-2021 to Jan-2022;
 5. **notarial/Registry implementation threshold** — Feb-2022 onward.
 
@@ -89,4 +89,4 @@ The existence of each threshold does not prove the next one was invalid. The for
 
 ## Controlling public-safe formulation
 
-> **The signed 25-Jan-2021 Auto and 29-Jan Edicto reconstruct a defined better-posture process. The mortgage components total €13.168m, with a separate €400,000 non-mortgaged-asset component and separate community/tax obligations; the Auto explains the €102,895.34 default-interest movement as daily accrual to the mortgage cap. An 8-Feb Ottawa document proposes €14.8m for the identified finca package. The definitive-sale orders are quoted in 2022 appeals as approving apartments by dación in payment of privileged credits and locales/pools by a separate €400,000 direct sale. Later party reconstructions state that the 21-Feb-2022 deed used €13.168m as a `valor de contraprestación`. The exact deed and incorporated testimonios remain priority sources for reconciling judicial authorisation, competition, notarial implementation, Registry effects and any surplus.**
+> **The signed 25-Jan-2021 Auto and 29-Jan Edicto reconstruct a defined better-posture process. The mortgage components total €13.168m, with a separate €400,000 non-mortgaged-asset component and separate community/tax obligations; the Auto explains the €102,895.34 default-interest movement as daily accrual to the mortgage cap. An 8-Feb third-party bidder document proposes €14.8m for the identified finca package. The definitive-sale orders are quoted in 2022 appeals as approving apartments by dación in payment of privileged credits and locales/pools by a separate €400,000 direct sale. Later party reconstructions state that the 21-Feb-2022 deed used €13.168m as a `valor de contraprestación`. The exact deed and incorporated testimonios remain priority sources for reconciling judicial authorisation, competition, notarial implementation, Registry effects and any surplus.**

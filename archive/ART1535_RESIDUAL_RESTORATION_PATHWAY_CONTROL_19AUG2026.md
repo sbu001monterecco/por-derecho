@@ -120,7 +120,7 @@ The reserve-pathway theory relies on the following controlled chronology, with e
 - Dec-2017: LPB sought deed/price/economic information and articulated Article 1535 position.
 - 19-Dec-2017: JPI nº2 admitted DP 1041 and ordered the disclosure route after finding just cause and legitimate interest.
 - 25-Jan-2018: direct contemporaneous evidence supports C5 causation by the AC for termination of Cristo Suárez Pimentel's **specific formal LPB mandate** and imposition of an AC authorisation gate.
-- 15-Feb-2018: Mercantile Court rejected LPB's Article 1535 theory in the creditor-substitution context, corrected some amounts in LPB's favour and recognised CAM as assignee creditor, relying materially on the AC's favourable verification.
+- 8-Feb-2018: Mercantile Court order (Judge-signed 9-Feb; LAJ-signed 14-Feb; `15FEB2018` source alias) rejected LPB's Article 1535 theory in the creditor-substitution context, corrected some amounts in LPB's favour and recognised CAM as assignee creditor, relying materially on the AC's favourable verification.
 - 5-Mar-2018: Decree 139/2018 records that LPB requested withdrawal, CAM did not oppose, the proceeding terminated and Borja was recorded as LPB's lawyer.
 - 13-May-2024: judicial-office act independently confirms finalisation/archive because of claimant-side withdrawal.
 
@@ -146,7 +146,7 @@ The effect on any downstream right depends on its own legal basis, registration,
 2. Total and credit-allocated price, payment date and payment proof.
 3. Trigger ledger: every CAM act potentially amounting to a demand for payment, with service/receipt evidence.
 4. Exact pre-assignment declaratory controversy, credit by credit.
-5. Appeal/finality chain for the 15-Feb-2018 order.
+5. Appeal/finality chain for the 8-Feb-2018 order.
 6. Underlying DP1041 withdrawal pleading and internal instruction chain.
 7. Any historical Article 1535 demand/exercise/consignation not yet indexed.
 8. Current counsel opinion on literal exercise, precautionary preservation and emergency nine-day protocol.

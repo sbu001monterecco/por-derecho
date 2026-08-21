@@ -4,6 +4,8 @@
 **Proceeding:** Concurso ordinario 36/2012  
 **Status:** `ACTOR-SEPARATED / PRIMARY-SOURCE LEDGER`
 
+> **21-AUG-2026 SOURCE PROMOTION.** Signed Auto 164/2021 of 18-May, both 15-Oct acts and both authentic 26-Jan-2022 clarification Autos are now controlled. The 26-Jan pair clarifies separate 15-Oct acts; neither is the original adjudication/title-transfer act. The deed's 22-Jan recital remains a discrepancy requiring a signed source or notarial explanation.
+
 ## Governing rule
 
 > **CAM REQUEST / POSITION → AC RECOMMENDATION OR IMPLEMENTATION → JUDGE DECISION OR PROVED OMISSION → CONSEQUENCE**
@@ -109,35 +111,31 @@ The controlled Auto shows a works/condition/access dispute was before the Judge.
 
 What asset-preservation, condition and access evidence was already available, what procedural route was considered proper, and what later consequences followed?
 
-## JUD-2021-05-12 — licitación / Ottawa bond
+## JUD-2021-05-12 — licitación / third-party bidder bond
 
-The controlled Providencia reopened/structured the bidder event and fixed the Ottawa bond. Use the native act for exact terms; do not infer bidder qualification or withdrawal merely from later shorthand.
+The controlled Providencia reopened/structured the bidder event and fixed the third-party bidder bond. Use the native act for exact terms; do not infer bidder qualification or withdrawal merely from later shorthand.
 
 ## JUD-2021-05-18 — definitive CAM approval
 
-The native 21-Feb-2022 deed recites that the **18-May-2021 Auto** `aprueba de modo definitivo la propuesta de enajenación a favor de Construcciones Acosta Matos, S.A.` contained in the AC Plan approved 16-Apr-2018.
+Signed Auto 164/2021 itself establishes the **18-May-2021** definitive approval of CAM's proposal after the better-offer/licitation route. It records the third-party €14.8m proposal, bidder nonappearance/no bond and resulting CAM approval. The native 21-Feb-2022 deed later recites that approval.
 
 This is later definitive judicial approval. It must be analysed as a later cure/approval route, not as retroactive validation of the 28-Nov-2018 deed that was refused convalidation in 2019.
 
 ## JUD-2021-10-15 — confirmation
 
-The 21-Feb-2022 deed recites an Auto dated **15-Oct-2021** that confirms the 18-May-2021 Auto `en su integridad`.
+The signed five-page **15-Oct-2021** Auto confirms the 18-May-2021 Auto `en su integridad`; a separate two-page same-date Auto addresses challenges to the 12-May Providencia.
 
-Recover the complete same-date family and do not collapse multiple 15-Oct acts if more than one exists.
+Keep the two acts separate. Complete hash/signature/service and review/finality binding remains open; the originals themselves are no longer a generic missing-source target.
 
-## JUD-2022-01-22 — clarification recited by the native deed
+## JUD-2022-01-26-A/B — two clarification Autos; 22-Jan remains a deed recital
 
-The 21-Feb-2022 deed expressly recites an Auto dated **22-Jan-2022** clarifying the 15-Oct-2021 Auto.
+Two complete authentic Autos are body-dated **26-Jan-2022**. One clarifies the 15-Oct ruling concerning the 12-May Providencia and states that the event was a licitation appearance following a better offer, not an auction. The other separately clarifies/completes the 15-Oct ruling confirming 18-May. Neither fallo newly adjudicates assets, fixes closing debt, decides a sobrante or transfers title.
+
+The 21-Feb-2022 deed separately recites an Auto dated **22-Jan-2022** clarifying a 15-Oct act. No signed 22-Jan original is presently bound.
 
 ### Date-control warning
 
-Earlier repository/chat shorthand referred to a **26-Jan-2022** act family. That wording is not to be silently overwritten. Recover all January-2022 binaries and determine whether:
-
-1. 22-Jan and 26-Jan are separate acts;
-2. one date is execution/signature and another notification/record date; or
-3. earlier shorthand was wrong.
-
-Until resolved, use `JAN-2022 ACT FAMILY — 22-Jan recited in 21-Feb deed; 26-Jan reference unresolved`.
+Current control is: `TWO 26-JAN CLARIFICATION ORIGINALS LOCATED / 22-JAN DEED RECITAL UNEXPLAINED`. Recover a signed 22-Jan act only if one exists, or obtain the notarial correction/explanation. Do not convert the recital into judicial operative text.
 
 ## TXN-2022-02-21 — deed implementation and residual judicial steps
 

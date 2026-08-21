@@ -12,6 +12,8 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/en/sun-park-takeover-7-june-2018/camel-travel-lanzarote-information/` — subsidiary English record of the Cliffe-Jones dual Sun Park/MYND publication
 - `/es/comunidad-instrumentalizacion/actas-2011-2022/` — canonical Spanish chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/en/community-instrumentalisation/minutes-2011-2022/` — canonical English chronology of Owners’ Community/CEXP minutes, linked records and authority
+- `/es/concurso-36-2012-que-ordeno-el-juzgado/` — Spanish primary-order reader: judicial text → condition → later event → compliance evidence → unresolved question
+- `/en/concurso-36-2012-what-the-court-ordered/` — English primary-order reader for the same verified judicial spine
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
@@ -33,6 +35,8 @@ The named-person Camel Travel/Lanzarote Information side record was released on 
 The 7 June dossier owns the full event, pre-event operating record, ONA alternative, aftermath, pilot evidence and insolvency-perimeter analysis. Its nested Camel Travel/Lanzarote Information side record owns only the documented dual-publication and potential travel-sales example; it is intentionally absent from the homepage, main navigation and updates feed. The Community dossier owns the authority/debt/voting record. Its nested minutes dossier owns the Owners’ Community/CEXP source-status chronology and a separately labelled non-minutes lane: a summons, later recital, working meeting, email, pleading, order or judgment must never be relabelled as Community minutes. The RIC dossier owns downstream investor, financing and HNT/MYND analysis; the homepage and updates pages provide gateways rather than competing event narratives.
 
 Open documentary follow-up is maintained in [INSTITUTIONAL_ACTIONS.md](INSTITUTIONAL_ACTIONS.md), including the Cabildo/Tourism Register/Yaiza request for a certified Sun Park operator history.
+
+The public-safe analytical package for the 21 August 2026 primary-autos scan is preserved under [`archive/concurso36-primary-autos-21aug2026/`](archive/concurso36-primary-autos-21aug2026/README.md). It contains reports, evidence and gap indexes, hashes and retrieval controls—not the unredacted judicial, notarial, Registry, banking or email binaries, which remain in restricted custody.
 
 ## Professional identity attribution control
 

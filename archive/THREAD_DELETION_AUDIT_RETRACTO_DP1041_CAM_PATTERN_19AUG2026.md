@@ -4,6 +4,8 @@
 **Thread result:** `THREAD_CONTINUITY_SAFE_AT_REPOSITORY_LEVEL_WITH_REBINDING_HOLD`  
 **Scope:** the working thread that reconstructed the 2017–2018 Article 1535 / DP 1041/2017 claim, legal-representation continuity, Acosta Matos-favourable direction of effect, AC/judicial intervention asymmetry and cross-site publication architecture.
 
+> **SUPERSEDED IN PART — 21 AUGUST 2026.** This is a historical deletion audit. Any 15-Feb-2018 decision-date reference below must now be read as: ruling body **8-Feb-2018**; Judge signature **9-Feb**; LAJ signature **14-Feb**; `15FEB2018` filename/notification alias; stated remedy **20-day appeal**. Current control is CR-059 and `C36-JUD-2018-02-08-001`.
+
 ## 1. Deletion-safety standard
 
 A thread is continuity-safe only if its material work product can be recovered without relying on chat history. This requires preservation of:
@@ -44,8 +46,8 @@ Material preserved propositions include:
 1. PH122 → CAM assignment is kept distinct from later property/unit tanteo-retracto tracks.
 2. LPB sought the deed, price and economics to test/preserve rights including its Article 1535 position.
 3. JPI nº 2 admitted DP 1041/2017 and created an operational disclosure route.
-4. The controlling Commercial Court order is now canonically dated **15 February 2018**, superseding the prior 8-Feb reference for that decision unless a separate primary act is produced.
-5. The 15-Feb order had mixed effects: partial amount correction in LPB's favour, rejection of LPB's litigated-credit position, recognition of CAM as assignee creditor and express reliance on favourable AC verification.
+4. The controlling Commercial Court order is body-dated **8 February 2018**, Judge-signed 9 February and LAJ-signed 14 February; `15FEB2018` is a filename/notification alias.
+5. The 8-Feb order had mixed effects: partial amount correction in LPB's favour, rejection of LPB's litigated-credit position, recognition of CAM as assignee creditor and express reliance on favourable AC verification.
 6. Article 1535 viability is not published as certain.
 7. Loss/termination of the information/retracto route is tested separately from merits of the substantive Article 1535 claim.
 
@@ -186,7 +188,7 @@ This prevents deletion of prior research knowledge while preserving the stricter
 
 The repository does not preserve only the accusatory direction. It records:
 
-- the adverse 15-Feb-2018 Article 1535 ruling;
+- the adverse body-dated 8-Feb-2018 Article 1535 ruling;
 - the LPB-favourable credit-amount correction;
 - the 2018 judicial suspension;
 - the 2019 non-validation;
@@ -234,7 +236,7 @@ The manifests remain `MERGED`; they do not claim `LIVE_VERIFIED` absent independ
 1. Rebind exact 25-Jan-2018 Cristo authority-change email.
 2. Rebind exact 5-Mar-2018 DP 1041 decree and obtain the underlying desistimiento filing/instruction chain.
 3. Rebind 13-May-2024 archive-confirmation act.
-4. Complete challenge/finality chain for 15-Feb-2018 Commercial Court order.
+4. Complete challenge/finality chain for the body-dated 8-Feb-2018 Commercial Court order.
 5. Obtain complete PH122→CAM deed, schedules, purchase price/allocation, proof of payment and servicing documentation.
 6. Identify qualifying pre-assignment declaratory litigation for the strict Article 1535 test.
 7. Locate contemporaneous AC estate-interest/cost-benefit analysis for continuation or abandonment of DP 1041.

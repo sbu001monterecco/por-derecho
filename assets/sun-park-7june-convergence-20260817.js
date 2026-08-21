@@ -298,7 +298,7 @@
           <div class="j7-title-gap" role="group" aria-label="${t.controlTitle}">
             <div class="j7-date"><strong>7 JUN 2018</strong><span>${isEs ? 'umbral de control material' : 'material-control threshold'}</span></div><span class="j7-arrow" aria-hidden="true">→</span>
             <div class="j7-date"><strong>${isEs ? 'más de 3,5 años' : 'more than 3.5 years'}</strong><span>${isEs ? 'los relojes siguen separados' : 'the clocks remain separate'}</span></div><span class="j7-arrow" aria-hidden="true">→</span>
-            <div><div class="j7-date"><strong>26 JAN 2022</strong><span>${isEs ? 'umbral de adjudicación judicial' : 'judicial adjudication threshold'}</span></div><div class="j7-date" style="margin-top:8px"><strong>21 FEB 2022</strong><span>${isEs ? 'escritura / transmisión formal' : 'deed / formal transmission'}</span></div></div>
+            <div><div class="j7-date"><strong>18 MAY 2021</strong><span>${isEs ? 'Auto 164: aprobación definitiva CAM' : 'Auto 164: definitive CAM approval'}</span></div><div class="j7-date" style="margin-top:8px"><strong>26 JAN 2022</strong><span>${isEs ? 'dos Autos de aclaración' : 'two clarification Autos'}</span></div><div class="j7-date" style="margin-top:8px"><strong>21 FEB 2022</strong><span>${isEs ? 'escritura / transmisión formal' : 'deed / formal transmission'}</span></div></div>
           </div>
           <p class="j7-control-copy"><strong>${t.controlTitle}.</strong> ${t.controlCopy}</p>
         </section>

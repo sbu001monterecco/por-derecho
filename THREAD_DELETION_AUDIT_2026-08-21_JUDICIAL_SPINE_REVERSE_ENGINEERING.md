@@ -1,5 +1,7 @@
 # Thread deletion audit — Judicial spine reverse-engineering
 
+> **HISTORICAL AUDIT — SUPERSEDED IN PART LATER 21 AUGUST 2026.** The previously missing Auto 164/2021, both 15-October Autos and both 26-January clarification Autos are now controlled. Protocol 457 internally recites 26 January on page 10 and 22 January on page 11; the signed judicial originals are dated 26 January. Current control is `archive/CONCURSO_36_2012_PRIMARY_AUTOS_REDIGEST_HANDOVER_21AUG2026.md`.
+
 **Date:** 21 August 2026  
 **Thread scope:** reverse-engineering digest of the Por Derecho repository/live website followed by implementation of the recommended Concurso 36/2012 judicial-spine architecture.
 

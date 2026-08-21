@@ -22,12 +22,12 @@
         'El Auto de 25/01/2021 explica el paso de 3.079.104,66 € de demora al límite hipotecario de 3.182.000 € mediante devengo diario posterior.',
         'El Edicto de 29/01/2021 separa 13.168.082,02 € de componentes hipotecarios, 400.000 € de bienes no hipotecados y 1.145.798,29 € de cuotas comunitarias.',
         'La escritura n.º 457 de 21/02/2022 verifica 13.168.082,02 € como deuda que sirve de contraprestación de la dación de las fincas hipotecadas.',
-        'Existe una propuesta documentada de un tercer oferente por 14,8 M€; únicamente su nombre se mantiene anonimizado en la publicación y la oferta y su contexto permanecen visibles.'
+        'Existe una propuesta documentada de un tercer oferente por 14,8 M€; únicamente su nombre se mantiene anonimizado. Auto 164/2021 registra incomparecencia y falta de caución; declara que, tras esos hechos, la licitación competitiva no podía tener lugar y aprueba definitivamente CAM.'
       ],
       notEstablishedTitle: 'Lo que esas fuentes todavía no establecen',
       notEstablished: [
         'Que el umbral de un tercero se convirtiera automáticamente y sin puente jurídico adicional en crédito concursal definitivamente reconocido.',
-        'Que el tercer oferente cumpliera todos los requisitos, acreditara fondos o debiera resultar adjudicatario.',
+        'Que toda notificación, comparación y condición fuera regular, o que el tercer oferente debiera resultar adjudicatario.',
         'Que la escritura n.º 457 cure por sí sola la compraventa de locales/piscinas de 2018 no convalidada en 2019 o reconcilie automáticamente los 400.000 €.',
         'Que las cancelaciones, pagos, comunicación al Juzgado y rendición final se ejecutaran exactamente como se prevé en la escritura sin sus fuentes posteriores.'
       ],
@@ -45,7 +45,7 @@
         finance: 'Las valoraciones, necesidades de inversión y fuentes de financiación posteriores aportan contexto. La escritura verifica la deuda declarada como contraprestación de la dación; no resuelve por sí sola su clasificación concursal, el proceso competitivo ni un eventual remanente.',
         credit: 'Crédito reconocido, límites hipotecarios, umbral exigido al tercer oferente y deuda declarada como contraprestación en escritura son magnitudes jurídicamente distintas, aunque dos fuentes usen la misma cifra de 13.168.082,02 €.',
         premises: 'Los 400.000 € por bienes no hipotecados constituyen una línea separada. Las secciones operativas revisadas de la escritura n.º 457 tratan la dación de fincas hipotecadas y no suministran por sí solas la conciliación del negocio de locales/piscinas de 2018.',
-        procedure: 'La propuesta documentada de un tercer oferente por 14,8 M€ convierte la competencia de 2021 en un punto de control real. La escritura añade otro control: debía comunicarse al Juzgado en cinco días naturales y activar la cadena de cancelación que ahora debe trazarse.',
+        procedure: 'La propuesta documentada de un tercer oferente por 14,8 M€ y Auto 164/2021 fijan un punto de control concreto: tras registrar incomparecencia y falta de caución, el Auto declara que la licitación competitiva no podía tener lugar y aprueba definitivamente CAM. La comparecencia de licitación luego aclarada no se confunde con una subasta. La escritura añade otro control: debía comunicarse al Juzgado en cinco días naturales y activar la cadena de cancelación que ahora debe trazarse.',
         generic: 'La página específica reconstruye oferta, competencia, deuda, Autos, escritura primaria, 400.000 €, Registro y cuentas sin convertir una coincidencia numérica en conclusión jurídica automática.'
       }
     } : {
@@ -57,12 +57,12 @@
         'The 25 January 2021 order explains the move from EUR 3,079,104.66 in default interest to the EUR 3,182,000 mortgage cap through later daily accrual.',
         'The 29 January 2021 notice separates EUR 13,168,082.02 in mortgage components, EUR 400,000 for non-mortgaged assets and EUR 1,145,798.29 in community fees.',
         'Deed no. 457 dated 21 February 2022 verifies EUR 13,168,082.02 as debt serving as consideration for the dación of the mortgaged properties.',
-        "A documented EUR 14.8m proposal by a third-party bidder exists; only the bidder's name is anonymised in the public record and the bid and its context remain visible."
+        "A documented EUR 14.8m proposal by a third-party bidder exists; only the bidder's name is anonymised. Auto 164/2021 records nonappearance and failure to lodge the bond; it states that, after those events, the competitive licitation could not take place and definitively approves CAM."
       ],
       notEstablishedTitle: 'What those sources do not yet establish',
       notEstablished: [
         'That a third-party threshold automatically became finally recognised insolvency credit without an additional legal bridge.',
-        'That the third-party bidder met every condition, proved funds or should have received the adjudication.',
+        'That every notice, comparison and condition was regular, or that the third-party bidder should have received the adjudication.',
         'That deed no. 457 automatically cured the separate 2018 premises/pools transaction that was not validated in 2019 or reconciled the EUR 400,000.',
         'That cancellations, payments, court communication and final accounts occurred exactly as contemplated without their downstream sources.'
       ],
@@ -80,7 +80,7 @@
         finance: 'Later valuations, investment needs and funding sources provide context. The deed verifies the debt stated as consideration for the dación; it does not by itself resolve insolvency classification, the competitive process or any residual.',
         credit: 'Recognised credit, mortgage caps, the threshold imposed on a third-party bidder and debt stated as consideration in the deed are legally distinct quantities even where two sources use the same EUR 13,168,082.02 figure.',
         premises: 'The EUR 400,000 non-mortgaged-assets line remains separate. The reviewed operative portions of deed no. 457 address the mortgaged-property dación and do not by themselves reconcile the 2018 premises/pools transaction.',
-        procedure: 'The documented EUR 14.8m third-party proposal makes the 2021 competition a real control point. The deed adds another: it required communication to the court within five calendar days and set out a cancellation route that now needs to be traced.',
+        procedure: 'The documented EUR 14.8m third-party proposal and Auto 164/2021 create a concrete control point: after recording nonappearance and failure to lodge the bond, the Auto states that the competitive licitation could not take place and definitively approves CAM. The later clarified licitation appearance is not conflated with an auction. The deed adds another: it required communication to the court within five calendar days and set out a cancellation route that now needs to be traced.',
         generic: 'The dedicated page reconstructs offer, competition, debt, orders, the primary deed, EUR 400,000 line, Registry and accounts without turning numerical identity into an automatic legal conclusion.'
       }
     };

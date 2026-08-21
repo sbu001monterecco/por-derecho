@@ -68,8 +68,10 @@ counterfactual, remedy, contrary evidence and unresolved defence.
    certification.
 7. The current PH122/CAM control dates are 20 October 2017 assignment under
    examination; 19 December 2017 DP 1041 production order; 25 January 2018 AC
-   mandate/authority gate; 15 February 2018 mixed/adverse order; and 5 March 2018
-   Decreto 139/2018 withdrawal/non-opposition/termination. The decree does not
+   mandate/authority gate; body-dated 8 February 2018 mixed/adverse order
+   (Judge signature 9 February; LAJ signature 14 February; `15FEB2018` only a
+   filename/notification alias; 20-day appeal); and 5 March 2018 Decreto
+   139/2018 withdrawal/non-opposition/termination. The decree does not
    prove the internal instruction, authority or benefit to the estate.
 8. Order 804/2018 is materially adverse and must be disclosed. It did not decide
    universal operator title after trial or prove total Pink abandonment.

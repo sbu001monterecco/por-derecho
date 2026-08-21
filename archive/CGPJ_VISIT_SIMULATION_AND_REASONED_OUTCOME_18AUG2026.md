@@ -42,7 +42,7 @@ The post-scan simulation must examine the matter through the seven supervisory n
 3. November 2018 transaction / EUR 400,000 / October 2019 non-validation / implementation;
 4. physical protection, access, condition and operating unity of the insolvency estate;
 5. supervision of the Insolvency Administrator;
-6. material competition — ONA / Ottawa / May 2021;
+6. material competition — ONA / third-party bidder / May 2021;
 7. adjudication → office instrument → deed → Registry → final accounting.
 
 Cross-cutting controls are:

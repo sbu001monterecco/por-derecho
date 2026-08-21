@@ -57,7 +57,7 @@
     "evidence_status": "verified_primary",
     "publication": "public_safe",
     "source_refs": ["SRC-LPB-2017-12-06-DEED-PRICE-DEMAND"],
-    "later_conduct_refs": ["CD-2018-01-15-CAM-DACION", "CD-2018-02-15-CAM-RECOGNISED"]
+    "later_conduct_refs": ["CD-2018-01-15-CAM-DACION", "CD-2018-02-08-CAM-RECOGNISED"]
   },
   {
     "id": "KN-2018-01-15-CAM-OWN-PROPOSAL",
@@ -69,7 +69,7 @@
     "evidence_status": "verified_primary",
     "publication": "privilege_review",
     "source_refs": ["SRC-CAM-2018-01-DACION-PROPOSAL"],
-    "later_conduct_refs": ["CD-2018-02-15-CAM-RECOGNISED"]
+    "later_conduct_refs": ["CD-2018-02-08-CAM-RECOGNISED"]
   },
   {
     "id": "KN-2022-CAM-HNT-SEGREGATION",

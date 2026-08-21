@@ -1,0 +1,49 @@
+name: Validate Concurso 36/2012 primary-autos redigest
+
+on:
+  pull_request:
+    paths:
+      - 'archive/concurso36-primary-autos-21aug2026/**'
+      - 'assets/data/concurso36-what-court-ordered-v1.json'
+      - 'assets/data/**'
+      - 'assets/**/*.js'
+      - 'assets/**/*.mjs'
+      - 'es/**'
+      - 'en/**'
+      - 'robots.txt'
+      - 'sitemap*.xml'
+      - 'scripts/**'
+      - '.github/workflows/validate-concurso36-primary-autos-redigest.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/concurso36-primary-autos-21aug2026/**'
+      - 'assets/data/concurso36-what-court-ordered-v1.json'
+      - 'assets/data/**'
+      - 'assets/**/*.js'
+      - 'assets/**/*.mjs'
+      - 'es/**'
+      - 'en/**'
+      - 'robots.txt'
+      - 'sitemap*.xml'
+      - 'scripts/**'
+      - '.github/workflows/validate-concurso36-primary-autos-redigest.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  primary-autos-source-control:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate primary-autos redigest, canonical facts and public descendants
+        run: python -B scripts/validate_concurso36_primary_autos_redigest.py
+      - name: Re-verify bidder name-only anonymisation
+        run: python -B scripts/validate_public_bidder_anonymisation.py

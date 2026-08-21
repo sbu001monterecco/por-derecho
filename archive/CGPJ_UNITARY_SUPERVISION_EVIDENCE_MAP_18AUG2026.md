@@ -66,7 +66,7 @@ Control terms:
 - 2025 removal applications as later supervisory opportunities, not proof that removal was legally required;
 - current TRLC arts. 82 and 100 may be used as systemic/current anchors, not retroactively for earlier facts.
 
-### 6. Material competition — ONA / Ottawa / May 2021
+### 6. Material competition — ONA / third-party bidder / May 2021
 Control terms:
 - publicity and notice;
 - time;
@@ -74,7 +74,7 @@ Control terms:
 - exact perimeter and title information;
 - deposits/solvency;
 - comparability of new cash versus credit set-off/extinguishment and heterogeneous consideration;
-- exact Ottawa and ONA procedural treatment.
+- exact third-party bidder and ONA procedural treatment.
 
 Public rule: higher nominal offer alone does not prove impropriety.
 

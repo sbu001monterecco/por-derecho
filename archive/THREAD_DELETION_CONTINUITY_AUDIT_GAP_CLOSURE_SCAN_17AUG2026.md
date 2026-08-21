@@ -43,7 +43,7 @@ The gap-closure pass materially strengthened evidence reliability because it pre
 
 - AP Sentencia 16/2014 supports practical Monterecco possession/interrelationship in the 2011–12 dispute.
 - The AC's 31-Jul-2018 statement denies CEXP reactivation, denies ordering the main-lock takeover and denies knowledge of illicit CAM conduct, while describing narrower access authority.
-- The 18-May/15-Oct Autos state that the court did create a better-offer/licitation route and record Ottawa's failure to deposit the required bond/personate/attend as treated by the court.
+- The 18-May/15-Oct Autos state that the court did create a better-offer/licitation route and record third-party bidder's failure to deposit the required bond/personate/attend as treated by the court.
 - The DI248 archive remains an adverse official prosecutorial assessment of the criminal material then presented.
 - The 3% email theory remains evidentially insufficient to show an AC payment.
 - A future bidder pack may show fuller disclosure than presently recovered.
@@ -95,7 +95,7 @@ The following remain genuine evidence/retrieval targets:
 13. Actual protocol 2.248 Promontoria→CAM deed, court exhibition and price/payment/cost result.
 14. Complete Registry continuation for protocol 2.150 and all relevant fincas through 2022.
 15. Full €400,000 purchaser-debit → estate-credit → payee/ledger → reversal/refund/setoff/restitution → final reconciliation chain.
-16. Full 2021 publicity/bidder/Ottawa disclosure pack, including transaction history and asset-condition disclosure.
+16. Full 2021 publicity/bidder/third-party bidder disclosure pack, including transaction history and asset-condition disclosure.
 17. Underlying AC quarterly report filed as 7425/2021 in the 25-Oct family, if not separately held.
 18. Remaining separate 15-Oct-2021 acts in the same-date docket family.
 19. 26-Jan-2022 act family.

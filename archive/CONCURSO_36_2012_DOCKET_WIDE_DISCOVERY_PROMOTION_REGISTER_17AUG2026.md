@@ -109,7 +109,7 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 - 08-Jul / 13-Jul / 19-Jul-2021 LAJ/AP diligencias on reposición and queja.
 - 07-Sep-2021 Decreto accepting CAM withdrawal of reposición and declaring 25-May Diligencia final.
 - 21-Sep-2021 Decreto upholding Aweswell opposition to Daniel Jiménez/SLJ fee account.
-- 15-Oct-2021 Auto dismissing LPB/Aweswell reposiciones against 18-May-2021 Auto; workbook also records two Autos of this date, so exact binary separation is required.
+- 15-Oct-2021 has two separately controlled Autos: the five-page dismissal/confirmation of the 18-May Auto and a separate two-page act concerning challenges to the 12-May Providencia. Keep their IDs, functions and later 26-Jan clarifications separate.
 - 27-Oct / 28-Oct / 02-Nov-2021 LAJ diligencias on clarification/protest/finality.
 - 16-Nov / 23-Dec-2021 AP Autos dismissing queja routes against 17-Jun-2021 inadmission.
 - 29-Dec-2021 Decreto dismissing Aweswell reposición against 05-Nov-2020 Decreto while ordering deposit return.

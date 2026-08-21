@@ -182,7 +182,7 @@ Do not convert the order into a finding that CAM demolished LPB assets, that CAM
 
 ### 12 May 2021 Providencia
 
-The signed providencia opens bidding among offerors for LPB's listed fincas and expressly includes the same `locales` and `piscinas con solárium` — registry numbers 8.508–8.536, 8.653 and 8.654 — scheduling the hearing for **18 May 2021 at 10:00**. It fixes Ottawa's bond at **€735,694.02**.
+The signed providencia opens bidding among offerors for LPB's listed fincas and expressly includes the same `locales` and `piscinas con solárium` — registry numbers 8.508–8.536, 8.653 and 8.654 — scheduling the hearing for **18 May 2021 at 10:00**. It fixes the third-party bidder's bond at **€735,694.02**.
 
 **Current classification:** `SIGNED PRIMARY COURT ACT / SAME LOCALS-POOLS PERIMETER AGAIN TENDERED AS LPB PROPERTY`.
 
