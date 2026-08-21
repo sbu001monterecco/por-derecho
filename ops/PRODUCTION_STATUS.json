@@ -1,26 +1,28 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-18T12:03:54Z",
+  "as_of": "2026-08-21T12:58:00Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "3ab3e55a86e1340bd574c9ee7988a592d3a90bbd",
-  "exact_live_sha": "671b0c9026d0c4df188be07f60c137ce825367a0",
+  "main_at_audit": "307a0db41a451c6efa2cb9688987ef96c4a98c83",
+  "exact_live_sha": "083cac35a9f5332d69aace1a11f014a41fac3fc0",
   "last_live_verification": {
-    "state": "LIVE_VERIFIED",
-    "source_sha": "671b0c9026d0c4df188be07f60c137ce825367a0",
-    "workflow_run": "32134809955",
-    "artifact_id": "9323553989",
-    "artifact_digest": "sha256:2b43c17452a54753b60c2255cb67feb299c13d2da3c36eed277911f3fdf8f55d",
-    "verified_at": "2026-08-18T12:03:49Z",
+    "state": "LIVE_VERIFIED_WITH_TOOLING_EXCEPTION",
+    "source_sha": "083cac35a9f5332d69aace1a11f014a41fac3fc0",
+    "workflow_run": "32481823998",
+    "artifact_id": "9446331554",
+    "artifact_digest": "sha256:8ab3a9c454f093ebb077d15238f56c0a41a3f55d7b84f25ba4858df9306b00b8",
+    "verified_at": "2026-08-21T12:51:34Z",
     "verification_scope": [
-      "hardening_probe",
-      "homepage_es",
-      "homepage_en",
-      "ricpe_es",
-      "cnmv_es",
-      "global_loader"
-    ]
+      "cgpj_fiscalia_es_http_200_and_markers",
+      "cgpj_fiscalia_en_source_markers",
+      "technical_partner_discovery_validator",
+      "technical_sitemap_and_robots",
+      "asset_recovery_routes",
+      "case_information_architecture_rendered_dom",
+      "nested_case_information_loader"
+    ],
+    "known_exception": "pages-propagation/case-information-architecture was red because the raw verifier required nested-loader markers in the outer site.js; public routes, rendered DOM and the executable nested loader passed"
   },
   "branch_protection": {
     "observed": "PROTECTED_FLAG_WITH_ENFORCEMENT_OFF",
@@ -37,8 +39,8 @@
     "restore_tested": false
   },
   "pages_deployment_mode": {
-    "state": "UNCHANGED_AND_LIVE_VERIFIED",
-    "reason": "Hardening was deployed without migrating the functioning Pages delivery path."
+    "state": "UNCHANGED_AND_LIVE_VERIFIED_WITH_TOOLING_EXCEPTION",
+    "reason": "The functioning Pages delivery path published PR #720 and PR #721 independently verified nine critical public-edge routes/files. PR #723 changed handover/deletion records only. One separate raw-source verifier contract remained stale; rendered and route checks passed."
   },
   "mission_critical_hardening": {
     "state": "LIVE_VERIFIED",

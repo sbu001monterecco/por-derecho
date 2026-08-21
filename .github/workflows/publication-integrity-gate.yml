@@ -31,6 +31,8 @@ jobs:
           GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
           GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: python scripts/validate_publication_integrity.py
+      - name: Validate LPB and whole-hotel insolvency perimeter language
+        run: python scripts/validate_insolvency_perimeter_language.py
       - name: Validate operational control-plane invariants
         run: python scripts/validate_operational_items.py
       - name: Validate mission-critical repository invariants

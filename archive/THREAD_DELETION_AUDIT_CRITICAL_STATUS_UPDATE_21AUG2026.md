@@ -91,6 +91,6 @@ This closeout does not:
 
 ## Deletion verdict
 
-**DELETION-SAFE WITH OPEN ACTIONS once this correction package is merged to `main` and the changed repository/public routes are read back.**
+**DELETION-SAFE WITH OPEN ACTIONS.** The condition recorded when this file was created has been satisfied: PR #720 was merged to `main` as `083cac35a9f5332d69aace1a11f014a41fac3fc0`, and the changed repository/public routes were read back after deployment. The later reverse-engineering strengthening work has its own separate deletion audit and does not reopen the completed PR #720 preservation condition.
 
 Deleting the ChatGPT thread does not delete or supersede the underlying Gmail messages, portal records, signed filings, RedSARA receipts, native attachments, repository history or public correction obligations.
