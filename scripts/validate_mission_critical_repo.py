@@ -42,6 +42,7 @@ ALLOWED_WRITE = {
     "verify-por-derecho-seller-readiness-live.yml": {"statuses"},
     "verify-ac-community-de-facto-administration-live.yml": {"statuses"},
     "verify-eleconomista-live.yml": {"statuses"},
+    "verify-meeting-point-final-propagation-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
     "repository-backup-bundle.yml": {"statuses"},
 }
@@ -128,7 +129,8 @@ def validate_operational_files(errors: list[str]) -> None:
     critical = ROOT / "ops" / "CRITICAL_PATHS.txt"
     if critical.is_file():
         entries = [
-            line.strip() for line in critical.read_text(encoding="utf-8").splitlines()
+            line.strip()
+            for line in critical.read_text(encoding="utf-8").splitlines()
             if line.strip() and not line.lstrip().startswith("#")
         ]
         if len(entries) < 8:
