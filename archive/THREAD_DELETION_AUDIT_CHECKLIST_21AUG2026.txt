@@ -1,0 +1,12 @@
+THREAD DELETION AUDIT CHECKLIST — 21 AUG 2026
+
+[READY] broader prosecution/reverse-engineering handover already on main
+[READY] CEXP→Owners' Community→HNT governance contradiction already on main
+[READY] May-2012 contemporaneous-source supersession prepared
+[READY] public JV1260 physical-deliverer source-status correction prepared
+[READY] final audit record prepared
+[PENDING PR] merge audit branch
+[PENDING PR] preservation workflow success
+[PENDING POST-MERGE] final main SHA re-read
+
+After the three pending conditions are satisfied, classify this thread DELETION-SAFE.
