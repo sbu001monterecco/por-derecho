@@ -1,0 +1,35 @@
+{
+  "publication_id": "fti-meeting-point-media-reconciliation-20260821",
+  "owner": "Gil Marer / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "expected_routes": {
+    "es": [
+      "es/fti-meeting-point-registro-2024/index.html",
+      "es/reconciliacion-meeting-point-fti-eleconomista/index.html"
+    ],
+    "en": [
+      "en/fti-meeting-point-record-2024/index.html",
+      "en/meeting-point-fti-eleconomista-reconciliation/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "es/fti-meeting-point-registro-2024/index.html",
+    "en/fti-meeting-point-record-2024/index.html",
+    "es/reconciliacion-meeting-point-fti-eleconomista/index.html",
+    "en/meeting-point-fti-eleconomista-reconciliation/index.html",
+    "es/lava-verde-club-sei-meeting-point/index.html",
+    "en/lava-verde-club-sei-meeting-point/index.html",
+    "es/eleconomista-javier-romera-enero2025/index.html",
+    "en/eleconomista-javier-romera-january2025/index.html",
+    "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+    "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+    "sitemap-fti-media-reconciliation.xml"
+  ],
+  "review_notes": [
+    "The public pages publish a limited chronology and document requests only; private email bodies, contact data, meeting links, legal advice and confidential attachments are excluded.",
+    "The FTI correspondence establishes receipt, report reference 2024-94, a planned interview and later requests for title and possession-recovery material. It does not establish an admission, investigation result or liability.",
+    "The public Club Sei trace establishes public presentation or offering, not the contracting entity, authority, completed reservations, revenue or lawfulness.",
+    "The elEconomista record does not identify the physical sender of the judgment, and does not allege bad faith, collusion, censorship or criminal conduct by Javier Romera or elEconomista.",
+    "The Meeting Point Spain 357/2024 record is framed as a potential custody and disclosure route, not evidence of concealment, judicial impropriety or an improper connection between proceedings."
+  ]
+}

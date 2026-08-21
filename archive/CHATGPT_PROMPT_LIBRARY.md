@@ -90,5 +90,18 @@ a public-safe manifest; use a branch/PR; and verify the private self-email resul
 Never treat an exact filename, a related source, a compressed variant or a
 temporary scratch copy as proof of byte-identical durable preservation.
 
+## P23 — Club Sei / Lava Verde commercialisation and image recovery
+Read and execute
+`archive/prompts/CLUB_SEI_LAVA_VERDE_COMMERCIALISATION_IMAGE_RECOVERY_PROMPT_21AUG2026.md`
+whenever the task concerns Club Sei, Lava Verde, Meeting Point, FTI,
+1-2-FLY/12fly, sonnenklar.TV, Loveholidays, UK/German travel-platform
+material, commercial screenshots, visual captures or the timing of public
+presentation. Start with the controlled preliminary chronology in
+`archive/CLUB_SEI_LAVA_VERDE_COMMERCIALISATION_IMAGE_TIMELINE_21AUG2026.md`.
+Treat aliases such as Club Say, Costa Maris and Club Holidays as search leads,
+not facts. Keep native private material out of public GitHub and do not turn a
+consumer offer or brochure into proof of contract, authority, booking, revenue
+or unlawful conduct.
+
 ## Universal close-out
 Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.
