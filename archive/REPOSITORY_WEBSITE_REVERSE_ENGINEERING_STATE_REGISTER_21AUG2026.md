@@ -139,6 +139,19 @@ The highest marginal evidential value is now in finite bridges, not more general
 - exact current RICPE vehicle/manager/depositary regulatory classification;
 - map preservation/tracing authority actor by actor before merits are finally decided.
 
+### P0-E — RICPE idoneidad / Series F–G source-and-use
+- complete idoneidad application and file index;
+- 17-Nov-2022 AEAT binding report and referral package;
+- full Decree 224/2022 / final act, annexes, conditions and amendments;
+- Series-F approval, participatory-loan agreement and drawdowns;
+- works invoices/certificates with accrual and payment dates;
+- supplier/shareholder/bridge-financing records if any;
+- HNT/CAM/RICPE source-and-use accounting;
+- Series-G legal coverage, approval, drawdown and employment-use record;
+- reconciliation against other incentives/funding without presuming prohibited overlap.
+
+Declaration 004 preserves the provenance of this question in a source-derived personal record. It does **not** close any of the documentary items above.
+
 ## 9. State-management defect and rule
 
 The main repository-governance weakness is now **canonical-state drift**: later primary-source corrections can overtake older `CURRENT` files and dashboards faster than every summary is manually synchronised.
@@ -174,6 +187,38 @@ The most valuable next records are:
 3. EUR 400,000 title/cash/accounting chain;
 4. AC final accounting bridge;
 5. complete third-party competition file;
-6. current asset-preservation/value-tracing matrix.
+6. current asset-preservation/value-tracing matrix;
+7. RICPE idoneidad / Series-F–G source-and-use bridge.
 
 Either a lawful documentary bridge exists and narrows the theory, or it does not appear after a properly bounded retrieval. **Both outcomes improve the evidential record.**
+
+## 11. Declaration 004 source-status control
+
+Declaration 004 is already present in `main` and indexed. The remaining repository-control issue is its evidential classification.
+
+Controlling rule:
+
+> **SOURCE-DERIVED DECLARATION ≠ PRIMARY DOCUMENT.**
+
+Declaration 004 may support:
+
+- knowledge/recollection;
+- chronology or notice;
+- provenance of the 18-Aug-2026 question;
+- a retrieval lead.
+
+It does not automatically prove:
+
+- scope/content of Decree 224/2022;
+- full content of the AEAT binding report;
+- absence of a second/amended authorisation;
+- Series-F or Series-G use;
+- prohibited double funding;
+- fraud, criminal intent or liability.
+
+Read with:
+
+- `archive/REVERSE_ENGINEERING_360_RICPE_IDONEIDAD_DECLARATION004_ADDENDUM_21AUG2026.md`;
+- `assets/data/case-reconstruction-declaration004-addendum-20260821.json`.
+
+Public treatment should remain anonymous and documentary-first: the witness record preserves that the question was raised; the primary administrative, financing, banking and works record controls the answer.
