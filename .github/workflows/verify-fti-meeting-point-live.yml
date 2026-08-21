@@ -11,7 +11,6 @@ on:
 
 permissions:
   contents: read
-  statuses: write
 
 concurrency:
   group: verify-fti-meeting-point-live
@@ -64,22 +63,6 @@ jobs:
       - name: Show verification evidence
         if: always()
         run: cat /tmp/fti-mp-live.json || true
-
-      - name: Publish persistent live status
-        if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
-          SOURCE_SHA: ${{ github.sha }}
-          RUN_ID: ${{ github.run_id }}
-        run: |
-          python3 - <<'PY'
-          import json, os, urllib.request
-          repo=os.environ['GITHUB_REPOSITORY']; sha=os.environ['SOURCE_SHA']; run=os.environ['RUN_ID']; success=os.environ['VERIFY_OUTCOME']=='success'
-          payload={'state':'success' if success else 'failure','target_url':f'https://github.com/{repo}/actions/runs/{run}','description':'FTI / Meeting Point chain verified live' if success else 'FTI / Meeting Point live verification failed','context':'pages-propagation/fti-meeting-point-chain'}
-          req=urllib.request.Request(f'https://api.github.com/repos/{repo}/statuses/{sha}',data=json.dumps(payload).encode(),method='POST',headers={'Accept':'application/vnd.github+json','Authorization':f"Bearer {os.environ['GH_TOKEN']}",'Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Por-Derecho-FTI-MP-live-verifier/1.0'})
-          with urllib.request.urlopen(req,timeout=30) as r: print(r.read().decode())
-          PY
 
       - name: Fail if live verification failed
         if: steps.verify.outcome != 'success'
