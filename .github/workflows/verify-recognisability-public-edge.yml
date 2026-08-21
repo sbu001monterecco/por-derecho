@@ -16,7 +16,6 @@ on:
 
 permissions:
   contents: read
-  statuses: write
 
 jobs:
   verify-public-edge:
@@ -43,17 +42,3 @@ jobs:
           done
           echo 'Public edge did not expose both expected bilingual route markers within the verification window.' >&2
           exit 1
-
-      - name: Publish persistent public-edge success status
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
-            -f state='success' \
-            -f context='pages-propagation/recognisability-public-edge' \
-            -f description='Bilingual recognisability routes verified live'
-
-# Continuity-only synchronization trigger for final deletion audit.
