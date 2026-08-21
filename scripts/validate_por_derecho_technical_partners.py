@@ -23,10 +23,13 @@ ROUTES = {
     "es_pilot": ROOT / "es/por-derecho/aplicaciones-y-colaboracion/paquete-piloto/index.html",
 }
 
-SITEMAPS = [
+SITEMAPS_TO_PARSE = [
     ROOT / "sitemap.xml",
     ROOT / "sitemap-por-derecho-foundation.xml",
+    ROOT / "sitemap-por-derecho-technical.xml",
 ]
+DISCOVERY_SITEMAP = ROOT / "sitemap-por-derecho-technical.xml"
+ROBOTS = ROOT / "robots.txt"
 
 errors: list[str] = []
 
@@ -158,19 +161,28 @@ for pattern in (
 ):
     require(re.search(pattern, joined) is None, f"forbidden public status/control phrase matched: {pattern}")
 
-for sitemap_path in SITEMAPS:
-    body = read(sitemap_path)
+for sitemap_path in SITEMAPS_TO_PARSE:
+    read(sitemap_path)
     try:
         ET.parse(sitemap_path)
     except ET.ParseError as exc:
         errors.append(f"invalid XML {sitemap_path.name}: {exc}")
-    for route in (
-        "/en/por-derecho/second-pair-of-eyes/",
-        "/es/por-derecho/segundo-par-de-ojos/",
-        "/en/por-derecho/technical-partners/",
-        "/es/por-derecho/socios-tecnicos/",
-    ):
-        require(route in body, f"{sitemap_path.name}: missing {route}")
+
+required_routes = (
+    "/en/por-derecho/second-pair-of-eyes/",
+    "/es/por-derecho/segundo-par-de-ojos/",
+    "/en/por-derecho/technical-partners/",
+    "/es/por-derecho/socios-tecnicos/",
+)
+discovery_body = read(DISCOVERY_SITEMAP)
+for route in required_routes:
+    require(route in discovery_body, f"{DISCOVERY_SITEMAP.name}: missing {route}")
+
+robots_body = read(ROBOTS)
+require(
+    "sitemap-por-derecho-technical.xml" in robots_body,
+    "robots.txt: dedicated Por Derecho technical sitemap is not exposed",
+)
 
 if errors:
     print("Por Derecho technical-partner validation: FAIL")
@@ -179,4 +191,4 @@ if errors:
     sys.exit(1)
 
 print("Por Derecho technical-partner validation: PASS")
-print("Validated bilingual partner routes, Second Pair routes, navigation bridges, status boundaries and sitemap entries.")
+print("Validated bilingual partner routes, Second Pair routes, navigation bridges, status boundaries and dedicated sitemap discovery.")
