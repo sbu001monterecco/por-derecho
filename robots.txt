@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /netlify/functions/
 
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-digital-identity.xml
@@ -34,3 +37,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-asset-recovery.x
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-discovery-navigation.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-meeting-point.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-prosecution-evidence.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-ai-assistant.xml
