@@ -103,3 +103,79 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', apply, { once: true });
   else apply();
 })();
+
+/* CEXP-COMPETENCE-TO-HNT-GOVERNANCE-BRIDGE-20260821 */
+(() => {
+  const path = location.pathname.replace(/\/index\.html$/, '/').toLowerCase();
+  const isEs = path.includes('/es/');
+  const community = /comunidad-instrumentalizacion|community-instrumentalisation/.test(path);
+  if (!community || document.querySelector('[data-cexp-hnt-governance-bridge-20260821]')) return;
+
+  let tries = 0;
+  const mount = () => {
+    const main = document.querySelector('main');
+    if (!main) return;
+    const reverse = document.getElementById('jv1260-reverse-engineering-17aug2026');
+    if (!reverse) {
+      if (tries++ < 40) setTimeout(mount, 75);
+      return;
+    }
+    const shell = reverse.querySelector('.shell');
+    if (!shell || shell.querySelector('[data-cexp-hnt-governance-bridge-20260821]')) return;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'jvre-grid';
+    wrap.dataset.cexpHntGovernanceBridge20260821 = 'true';
+    const target = isEs
+      ? '/por-derecho/es/ricpe-hnt-gc836-trazabilidad/'
+      : '/por-derecho/en/ricpe-hnt-gc836-traceability/';
+    const minutes = isEs
+      ? '/por-derecho/es/comunidad-instrumentalizacion/actas-2011-2022/'
+      : '/por-derecho/en/community-instrumentalisation/minutes-2011-2022/';
+
+    wrap.innerHTML = isEs ? `
+      <article class="jvre-card jvre-cam">
+        <span class="jvre-status open">CONTRADICCIÓN DE GOBERNANZA · PRODUZCA EL PUENTE DE SUCESIÓN</span>
+        <h3>En 2011 la explotación estaba «fuera de la Comunidad». ¿Qué instrumento permitió después a la Comunidad autorizar la explotación unitaria y qué ocurrió jurídicamente con CEXP?</h3>
+        <p><strong>2011 · límite de competencia:</strong> el propio registro de la Comunidad de Propietarios de 2-feb-2011 trata el cierre/continuidad de la explotación hotelera y la licencia turística como materias fuera de su competencia ordinaria. El 22-jun-2011, dentro del controvertido circuito deuda→voto, la mayoría LPB estaba presente pero quedó sin voto por deuda atribuida y la línea habilitada acordó, entre otras cosas, terminar el mantenimiento CEXP y desplazar funciones hacia Pamanil.</p>
+        <p><strong>CEXP siguió teniendo un registro propio:</strong> existe un acta separada de gobernanza CEXP de 7-abr-2017. En el conjunto revisado no se ha localizado una resolución CEXP debidamente convocada, notificada, constituida y votada que la disuelva, la retire o sustituya válidamente su órgano. La ausencia documental no prueba inexistencia; convierte el instrumento en prueba prioritaria.</p>
+        <p><strong>2022 · la función reaparece desde otra entidad:</strong> la copia escaneada localizada de 4-feb-2022 es de la <em>Comunidad de Propietarios</em>, no de CEXP. Declara un 20,993% de asistencia/representación, identifica a José Daniel Acosta Matos como presidente de esa Comunidad y pretende aprobar el proyecto CAM, licencias y la incorporación a explotación turística unitaria, además de autoridad bancaria comunitaria. Después, la cadena societaria BORME sitúa la unidad económica hotelera en Hotel New Trend para transformación y posterior explotación MYND.</p>
+        <p><strong>Corrección esencial:</strong> ninguna fuente primaria revisada acredita actualmente que José Daniel Acosta Matos fuera Presidente de CEXP. Presidencia de la Comunidad de Propietarios ≠ Presidencia de CEXP. Tampoco se ha localizado el acto CEXP que transfiera su mandato derivado de los propietarios a HNT o al operador posterior.</p>
+        <p><strong>Alegación de Gil Marer:</strong> Gil sostiene que la línea comunitaria minoritaria/discutida capturó el órgano en 2011 mediante el circuito deuda→voto, rechazó o desplazó CEXP y que, tras el control material de 2018, la estructura posterior se apropió de la función de gobernanza de la explotación para reemplazar de hecho CEXP en favor de HNT/operación posterior sin autoridad CEXP válida. Esa es una <strong>alegación a probar</strong>, no una conclusión adjudicada. El episodio físico de 7-jun-2018 tampoco constituye por sí solo sucesión corporativa de CEXP.</p>
+        <p><strong>Produzca cinco documentos:</strong></p>
+        <ul>
+          <li>la resolución CEXP que nombró, removió o sustituyó sus órganos después del último registro controlado, con convocatoria, miembros, poderes, quórum y voto;</li>
+          <li>el instrumento que disolvió, retiró o sustituyó CEXP, o transfirió su mandato, derechos y obligaciones de explotación;</li>
+          <li>la base jurídica que permitió a la Comunidad de Propietarios autorizar en 2022 licencias y explotación unitaria pese a su propio límite competencial de 2011;</li>
+          <li>el instrumento por el que HNT y/o el operador posterior adquirieron derechos de explotación sobre cada perímetro relevante, separado de una segregación societaria o del título sobre fincas concretas; y</li>
+          <li>qué documentos de autoridad CEXP/Comunidad/HNT fueron entregados a Yaiza, Cabildo, inversores, financiadores, autoridades turísticas y operador actual, y qué verificó cada receptor.</li>
+        </ul>
+        <p><strong>Regla:</strong> control material ≠ sucesión de gobernanza; Comunidad de Propietarios ≠ CEXP; segregación de una unidad económica ≠ transferencia automática del mandato colectivo de los propietarios.</p>
+        <div class="jvre-actions"><a href="${minutes}">Ver actas y autoridad →</a><a class="secondary" href="${target}">Seguir CEXP → HNT → MYND →</a></div>
+      </article>` : `
+      <article class="jvre-card jvre-cam">
+        <span class="jvre-status open">GOVERNANCE CONTRADICTION · PRODUCE THE SUCCESSION BRIDGE</span>
+        <h3>Operation was “outside the Community” in 2011. What instrument later empowered the Community to authorise unified operation—and what legally happened to CEXP?</h3>
+        <p><strong>2011 · competence boundary:</strong> the Owners’ Community’s own 2-Feb-2011 record treats closure/continuation of hotel operation and the tourism licence as outside ordinary Community competence. On 22-Jun-2011, within the disputed debt→vote chain, the LPB majority was present but treated as unable to vote because of attributed debt; the enabled line then resolved, among other things, to terminate CEXP maintenance and move functions toward Pamanil.</p>
+        <p><strong>CEXP still had its own governance record:</strong> a separate CEXP minute exists dated 7-Apr-2017. In the reviewed source set, no duly convened, notified, constituted and voted CEXP resolution has been located dissolving it, retiring it or validly replacing its governing organ. Absence from the reviewed record does not prove non-existence; it makes the instrument priority evidence.</p>
+        <p><strong>2022 · the function reappears through a different body:</strong> the located 4-Feb-2022 scanned copy is an <em>Owners’ Community</em> record, not a CEXP act. On its face it records 20.993% attendance/representation, identifies José Daniel Acosta Matos as president of that Community and purports to approve the CAM project, licences and incorporation into unified tourist operation, as well as Community banking authority. Later BORME/corporate records place the hotel economic unit into Hotel New Trend for transformation and later MYND operation.</p>
+        <p><strong>Essential correction:</strong> no reviewed primary source currently establishes that José Daniel Acosta Matos was President of CEXP. Owners’ Community presidency ≠ CEXP presidency. Nor has a CEXP act been located transferring its owners-derived collective mandate to HNT or the later operator.</p>
+        <p><strong>Gil Marer’s allegation:</strong> Gil alleges that the minority-led/disputed Community line captured the Community organ in 2011 through the debt→vote mechanism, rejected or displaced CEXP and that, after the 2018 material-control change, the later structure appropriated the exploitation-governance function so as to replace CEXP in practice in favour of HNT/later operation without valid CEXP authority. That is an <strong>allegation to prove</strong>, not an adjudicated finding. The physical 7-Jun-2018 event does not itself constitute CEXP corporate succession.</p>
+        <p><strong>Produce five records:</strong></p>
+        <ul>
+          <li>the CEXP resolution appointing, removing or replacing its governing officers after the last controlled record, with notice, members, proxies, quorum and vote;</li>
+          <li>the instrument dissolving, retiring or replacing CEXP, or transferring its exploitation mandate, rights and obligations;</li>
+          <li>the legal basis on which the Owners’ Community purported in 2022 to authorise licences and unified operation despite its own 2011 competence boundary;</li>
+          <li>the instrument by which HNT and/or the later operator acquired exploitation rights over each relevant perimeter, separately from corporate segregation or title to particular properties; and</li>
+          <li>which CEXP/Community/HNT authority records were supplied to Yaiza, Cabildo, investors, financiers, tourism authorities and the current operator, and what each recipient verified.</li>
+        </ul>
+        <p><strong>Rule:</strong> material control ≠ governance succession; Owners’ Community ≠ CEXP; segregation of an economic unit ≠ automatic transfer of an owners-derived collective mandate.</p>
+        <div class="jvre-actions"><a href="${minutes}">Open minutes and authority →</a><a class="secondary" href="${target}">Follow CEXP → HNT → MYND →</a></div>
+      </article>`;
+
+    shell.appendChild(wrap);
+  };
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount, { once: true });
+  else mount();
+})();
