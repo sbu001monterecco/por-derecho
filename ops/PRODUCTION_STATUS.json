@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-21T12:55:00Z",
+  "as_of": "2026-08-21T12:58:00Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "985466e1075890d67e8abbeed724a64cbb29ceca",
+  "main_at_audit": "307a0db41a451c6efa2cb9688987ef96c4a98c83",
   "exact_live_sha": "083cac35a9f5332d69aace1a11f014a41fac3fc0",
   "last_live_verification": {
     "state": "LIVE_VERIFIED_WITH_TOOLING_EXCEPTION",

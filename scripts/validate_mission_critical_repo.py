@@ -129,7 +129,8 @@ def validate_operational_files(errors: list[str]) -> None:
     critical = ROOT / "ops" / "CRITICAL_PATHS.txt"
     if critical.is_file():
         entries = [
-            line.strip() for line in critical.read_text(encoding="utf-8").splitlines()
+            line.strip()
+            for line in critical.read_text(encoding="utf-8").splitlines()
             if line.strip() and not line.lstrip().startswith("#")
         ]
         if len(entries) < 8:

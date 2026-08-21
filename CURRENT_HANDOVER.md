@@ -4,7 +4,7 @@
 
 ## 21 August repository, website and institutional checkpoint
 
-Baseline `main` used for this checkpoint: `985466e1075890d67e8abbeed724a64cbb29ceca`, merged through PR #723. Always verify the remote ref before writing because this SHA is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity without changing public website routes.
+Baseline `main` used for this checkpoint: `307a0db41a451c6efa2cb9688987ef96c4a98c83`. Always verify the remote ref before writing because this SHA is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity without changing public website routes; the later Meeting Point status-policy synchronization was preserved during reconciliation.
 
 The latest controlling institutional position is:
 

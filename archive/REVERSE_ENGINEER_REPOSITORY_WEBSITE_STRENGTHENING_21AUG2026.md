@@ -29,7 +29,7 @@ The repository has four interacting layers:
 3. archive, evidence, correction, handover and publication-control records preserving provenance and limits; and
 4. workflows, validators and operational JSON files asserting source, deployment and deletion states.
 
-The public routes were functioning at baseline `985466e1075890d67e8abbeed724a64cbb29ceca`. During the audit, PRs #721 and #723 advanced `main`; the implementation was rebased and their newer records were preserved. The principal remaining weakness was control drift: later evidence and public corrections had moved ahead of the master handover, deployment log, production-status record and two other validators.
+The public routes were functioning at baseline `307a0db41a451c6efa2cb9688987ef96c4a98c83`. During the audit, PRs #721 and #723 and the later Meeting Point status-policy synchronization advanced `main`; the implementation was rebased and those newer records were preserved. The principal remaining weakness was control drift: later evidence and public corrections had moved ahead of the master handover, deployment log, production-status record and the separate case-information verifier.
 
 ## Material findings and action taken
 
