@@ -63,5 +63,21 @@ Read `archive/CALIFICACION_PRIMARY_SOURCE_REPEAT_SCAN_PROMPT_17AUG2026.md` after
 ## P20 — PH122→CAM / Article 1535 / DP 1041 maximum-scope continuation
 Read and execute `archive/prompts/PH122_CAM_ART1535_MAXIMUM_SCOPE_CONTINUATION_PROMPT_21AUG2026.md` whenever the task concerns the 20 October 2017 PH122→Construcciones Acosta Matos assignment, whether either credit was `litigioso`, protocol 2,248, deed/price/payment disclosure, DP 1041/2017, Cristo A. Suárez Pimentel's mandate, AC representation control, the withdrawal filed in LPB's name, the nine-day trigger, CAM's later credit-to-control-to-title benefit, Article 24 CE/Article 6 ECHR, or connected restitution/criminal-investigative routes. Apply the current correction and missing-evidence registers; keep the four retracto/tanteo tracks separate; do not revive superseded dates or unsupported guilt findings.
 
+## P21 — Unitary repository, website and recovery redigest
+Read `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md` and execute
+`archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md` as the current
+cross-track wrapper. Reconstruct the whole chain without merging LPB, Aweswell,
+Matkator, CEXP, Pink Canary, CAM/HNT or individual claimants. Start with the
+canonical route owner for each proposition; open the relevant primary evidence,
+correction register, missing-evidence register and specialist ledger; test contrary
+and exculpatory material; then propagate any justified change across bilingual
+pages, structured data, navigation and tests. Preserve the three separate 2012
+decisions, the limited LPB insolvency perimeter, the current burofax proof status,
+DP 1956/DP 1901/judicial-route separation, daily Decanato reference no. 24, the
+non-final calificacion appeal and source-specific property counts. Use the staged
+PR A/PR B/PR C sequence. Do not publish quantified causation, operator-income or
+standing conclusions until the calculations and legal-person chain are
+reproducible.
+
 ## Universal close-out
 Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.

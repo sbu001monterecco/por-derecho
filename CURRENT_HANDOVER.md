@@ -2,6 +2,21 @@
 
 **Status:** canonical immediate handover for future ChatGPT threads. Read this file before continuing the Sun Park / Cuatrecasas / La Laguna / current-counsel work.
 
+## Controlling unitary recovery handover
+
+Before substantive repository, website, insolvency-causation, lender-standing,
+operation/income or recovery work, read
+`CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md` and
+`archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`. They provide
+the current cross-track chain, mission lock, canonical route ownership and staged
+implementation sequence. Specialist ledgers and primary evidence continue to
+control their detailed propositions.
+
+Also apply `CURRENT_HANDOVER_DP1956_DP1901_JUDICIAL_ROUTES_21AUG2026.md` to all
+DP 1956/DP 1901/judicial-route work. The number 24 in the 18 June 2026 complaint
+chain is a daily Decanato reference, not `Control 24`, `DP 24`, a cause, a
+proceeding number or a NIG.
+
 ## 21 August repository, website and institutional checkpoint
 
 Baseline `main` used for this checkpoint: `b6d6c1a326f8b97afa1b01e03f71596dc5e95aff`, which follows the merged reverse-engineering strengthening commit `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9` from PR #726. Always verify the remote ref before writing because this is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity; PR #726 corrected the LPB/whole-hotel insolvency language and repository controls; the later Concurso 36/2012 judicial-act spine and its deletion audit were preserved separately.
