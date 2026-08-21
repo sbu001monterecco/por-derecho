@@ -45,3 +45,16 @@ Once this handover and its canonical closeout are merged to current `main`, the 
 > **DELETION-SAFE WITH OPEN ACTIONS**
 
 Deleting the chat does not complete the remaining actions; it only removes the chat dependency.
+
+## 7. AEAT state-transparency continuity — 00001-00113069
+
+This thread's exact continuity record is preserved in:
+
+`archive/intelligence/AEAT_00001_00113069_THREAD_HANDOVER_AND_DELETION_AUDIT_20260821.md`
+
+Public canonical routes:
+
+- ES: `/es/transparencia-aeat-00001-00113069/`
+- EN: `/en/aeat-transparency-00001-00113069/`
+
+Controlling new fact: on 21 August 2026 the Finance Transparency Unit confirmed transfer of the follow-up to AEAT. Transfer is not competent receipt, linkage, substantive processing, decision, access or a tax merits outcome. All adjacent identifiers and legal tracks remain separately labelled in the closeout.
