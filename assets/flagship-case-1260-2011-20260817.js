@@ -18,10 +18,16 @@
   ];
   if (current && reverseTargets.some(route => path.includes(route)) && !document.querySelector('script[data-jv1260-reverse-engineering]')) {
     const script = document.createElement('script');
-    script.src = new URL('jv1260-unitary-reverse-engineering-20260817.js?v=20260817a', current.src).href;
-    script.defer = true;
+    script.src = new URL('jv1260-unitary-reverse-engineering-20260817.js?v=20260821b', current.src).href;
+    script.async = false;
     script.dataset.jv1260ReverseEngineering = 'true';
     document.head.appendChild(script);
+
+    const correction = document.createElement('script');
+    correction.src = new URL('jv1260-evidence-bridge-correction-20260821.js?v=20260821b', current.src).href;
+    correction.async = false;
+    correction.dataset.jv1260EvidenceBridgeCorrection = '20260821';
+    document.head.appendChild(correction);
   }
 
   if (selfRoutes.some(route => path.includes(route))) return;
