@@ -55,3 +55,5 @@ jobs:
             -f state='success' \
             -f context='pages-propagation/recognisability-public-edge' \
             -f description='Bilingual recognisability routes verified live'
+
+# Continuity-only synchronization trigger for final deletion audit.
