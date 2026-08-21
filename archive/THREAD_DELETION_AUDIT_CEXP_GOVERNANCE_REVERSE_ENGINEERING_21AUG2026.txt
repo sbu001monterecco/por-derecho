@@ -1,0 +1,253 @@
+PROJECT SUN ROCK / POR DERECHO
+THREAD DELETION AND CONTINUITY AUDIT
+CEXP GOVERNANCE, 20 NOVEMBER 2018 CORRECTION AND CONCURSO 36/2012 JUDICIAL SPINE
+
+Audit time: 2026-08-21T14:37:26Z
+Repository: sbu001monterecco/por-derecho
+Draft pull request: https://github.com/sbu001monterecco/por-derecho/pull/737
+Feature branch: codex/reverse-engineering-corrections-20260821
+
+1. VERDICT
+
+DELETION-SAFE WITH OPEN ACTIONS, conditional on confirmation that this exact
+public-safe TXT checkpoint has been committed to the feature branch and sent to
+the authenticated account by self-email during the same audit.
+
+This verdict means the reasoning, corrections, qualifications, repository
+state and outstanding actions needed to continue the work no longer depend on
+the ChatGPT thread. It does not mean that PR #737 has been merged, that the live
+website contains the corrections, that any tax or criminal allegation has been
+proved, or that any outstanding administrative, tax, civil or criminal action
+has been completed.
+
+2. REPOSITORY AND PUBLICATION STATE AT AUDIT
+
+- Current main SHA: 6efddb66200c720ee08f679ff87b5c38cc3c1b8f.
+- PR #737 is open, draft and mergeable.
+- PR head before addition of this audit:
+  48e1f2396ec9230ad56719b60cfeeb591ee19f9a.
+- The PR contained eight commits affecting eight bilingual website files.
+- All seven workflows reported for that head completed successfully:
+  publication integrity; adjudication provenance/cross-links; unitary public
+  shell; bidder name-only/privacy; visual identity; San Telmo attribution; and
+  off-GitHub preservation.
+- main remained unchanged at audit time. Therefore the live website still
+  displayed the former wording on the competing-governance page, did not yet
+  display the corrected 2011/2014/2017 CEXP office analysis, and did not yet
+  expose the judicial-spine link from the home page.
+- The judicial-spine route itself was already live:
+  https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-columna-judicial/
+
+3. FILES CHANGED IN PR #737 BEFORE THIS AUDIT
+
+- es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/index.html
+- en/community-instrumentalisation/two-competing-governance-records/index.html
+- es/comunidad-instrumentalizacion/actas-2011-2022/index.html
+- en/community-instrumentalisation/minutes-2011-2022/index.html
+- es/index.html
+- en/index.html
+- es/adjudicacion-2022-reconstruccion-documental/index.html
+- en/2022-adjudication-documentary-reconstruction/index.html
+
+This audit is to be preserved as:
+archive/THREAD_DELETION_AUDIT_CEXP_GOVERNANCE_REVERSE_ENGINEERING_21AUG2026.txt
+
+4. CONTROLLING DOCUMENTARY CORRECTIONS
+
+4.1 Alleged 20 November 2018 minutes
+
+- No standalone 20 November 2018 minutes have been located.
+- The 4 February 2022 minutes merely recite that a November 2018 meeting had
+  agreed to continue studying comprehensive refurbishment and budgets.
+- That recital proves that the history was invoked in 2022. It does not prove
+  the 2018 notice, attendees, chair, quorum, voting denominator, votes, wording
+  or authority.
+- Jose Daniel Acosta Matos is recorded as chair at the 4 February 2022 meeting.
+  The located record does not establish that he chaired a 20 November 2018
+  meeting.
+- Any complaint or query should request the alleged original 2018 instrument,
+  notice, service, attendance, title and proxy evidence, quorum, votes,
+  signatures, annexes, audio and later reliance chain.
+
+4.2 Gil Marer and CEXP offices
+
+- The located notarised/apostilled instrument dated 1 December 2011 appoints
+  Gil Marer as “Director and Sole Administrator” for an indefinite period. It
+  does not use the office “President”. The grantor's authority and compatibility
+  with CEXP statutes and resolutions remain to be verified.
+- The first located express CEXP presidential appointment is 28 August 2014.
+- The located CEXP minutes record re-election on 7 April 2017 for a stated
+  three-year period ending in April 2020.
+- Article 14 of the located statutes states one-year terms for President,
+  Secretary and Treasurer. The conflict with the three-year language in the
+  2014 and 2017 minutes remains unresolved.
+- No duly convened, notified, constituted and voted CEXP removal or replacement
+  has been located. That absence is important evidence but does not, by itself,
+  prove continuing or current representative authority.
+- Gil Marer should not be described as “President since 2012”. The accurate
+  formulation is: management appointment in December 2011; express presidency
+  from August 2014; documented re-election in April 2017; present authority not
+  claimed and term/removal questions reserved.
+
+4.3 Matkator and standing
+
+- Matkator is documented as a separate CEXP participant and as a separate,
+  non-insolvent property holder.
+- Its title, notice, participation, possession, works, income and damages must
+  not be collapsed into LPB, the Owners' Community, CEXP, Pink Canary Services,
+  Aweswell or Gil Marer personally.
+- Matkator's independent property/member interest can support participation in
+  an administrative matter affecting its own rights, subject to current
+  corporate and Registry proof.
+- A tax complainant is not thereby an interested party in the resulting tax
+  investigation under Article 114.3 LGT. Taxpayer/right-holder capacity and
+  complainant capacity must remain separate.
+
+4.4 Auto AP 804/2018
+
+- The 13 November 2018 Provincial Court order is materially adverse evidence.
+- It confirmed provisional dismissal, treated the controversy as predominantly
+  civil, questioned the criminally protectable possession asserted for CEXP,
+  relied on the insolvency administrator's account/authority, and was adverse
+  to the criminal standing/continuity case advanced by CEXP and Gil/Matkator.
+- It must be disclosed accurately and confronted, not omitted or described as
+  favourable.
+- It did not adjudicate later tax treatment, IGIC, RIC/RICPE, the 2022 judicial
+  implementation, the CAMSA-to-HNT segregation, current HNT title, Canarian
+  Hospitality/MYND operations, or every civil, tourism, Community or Registry
+  right.
+- It is not a conviction and did not establish that Gil Marer or Matkator were
+  “criminally excluded”.
+
+5. REVERSE-ENGINEERED CHAIN AND LIMITS
+
+The working chain is:
+
+current HNT/MYND operation
+  <- 2022 corporate segregation and judicial implementation
+  <- 2018 material access/control transition
+  <- disputed Owners' Community authority and voting record
+  <- separate LPB, CEXP, Matkator, third-party and operator rights.
+
+This chain is an investigative structure, not proof of a criminal agreement.
+The repository must continue to distinguish:
+
+- fact;
+- attributed allegation;
+- inference;
+- legal argument;
+- adverse evidence;
+- open question; and
+- result determined by a competent authority.
+
+Concurso 36/2012 concerned LPB. It did not automatically supply title,
+possession, works, operating, income or disposition authority over CEXP,
+Matkator, third-party properties or the entire physical hotel.
+
+The 2022 BORME description of a transfer to HNT as an independent economic unit
+creates concrete title, asset-perimeter, accounting, IGIC and other tax
+questions. It does not by itself prove tax fraud, money diversion, double
+funding, shared intent, joint liability or a revenue flow from HNT/MYND to
+Canarian Hospitality.
+
+6. JUDICIAL-SPINE CONTROLS
+
+- Keep Order-to-Asset, Order-to-Money and Order-to-Implementation separate.
+- Do not use the shorthand “the 26 January 2022 adjudication order” as a settled
+  single act. Deed 457 recites a 22 January 2022 order while other references
+  use 26 January. Preserve both pending the complete signed act family.
+- Located anchors include the signed 24 October 2019 non-validation order, the
+  signed 25 January 2021 order, the 29 January 2021 competitive notice, the
+  8 February 2021 EUR 14.8m third-party proposal, and primary 18 May 2021
+  material.
+- Still required: the signed complete 18 May 2021 family; both signed
+  15 October 2021 orders; the complete January 2022 family; the post-deed court
+  return/communication; Registry testimonios and mandamientos; bank and
+  accounting bridge; EUR 400,000/locales treatment; and final accounts/surplus.
+
+7. OPEN EVIDENCE AND ACTIONS
+
+Repository/publication
+
+1. Review and merge PR #737 if its corrections remain approved.
+2. After merge and Pages deployment, perform exact bilingual live read-back of
+   the eight changed pages and record the deployed SHA. Until then, do not say
+   that the corrections are live.
+
+CEXP/Community
+
+3. Obtain certified/original CEXP statutes, the 1 December 2011 instrument and
+   grantor authority, 2014 and 2017 signed minutes, member/address register,
+   notices, service evidence, proxies, quorum/voting materials, complete minute
+   books and any amendment to Article 14.
+4. Obtain the alleged 20 November 2018 original and its complete formation and
+   reliance chain. Its absence must not be silently converted into proof that
+   no meeting occurred.
+5. Obtain the certified complete DP 1132/2018 / AP 804/2018 record, including
+   underlying evidence, service and appeal materials.
+
+Title, control, money and tax
+
+6. Build and certify the property-by-property crosswalk:
+   finca -> owner -> title -> possession -> access -> works -> operation ->
+   income recipient -> beneficial recipient -> tax treatment.
+7. Reconcile LPB estate assets, Matkator and third-party properties, the 2022
+   deed/Registry chain, CAMSA-to-HNT asset schedules, project use of funds,
+   invoices, accounting, IGIC, Corporate Tax and RIC/RICPE treatment.
+8. Preserve the distinction between HNT/MYND hotel revenue and Canarian
+   Hospitality/group or system sales unless native contracts and ledgers prove
+   an allocation.
+
+Administrative action
+
+9. The focused ATC CEXP/IGIC complaint and the corrected ATC/AEAT contribution
+   prepared in the preceding work remain drafts unless a receipt proves filing.
+10. Do not duplicate the substantial AEAT filings already made on 7 July 2026.
+    Any later communication should cross-reference, narrow and add identified
+    evidence or a genuinely distinct question.
+
+8. PRIVACY AND PUBLICATION FIREWALL
+
+Do not put the following in the public repository:
+
+- raw or complete private email bodies;
+- unredacted tax records;
+- personal identifiers, addresses, signatures or bank data;
+- privileged legal advice or confidential Javier/Garrigues material;
+- protected-witness material;
+- confidential native recordings or transcripts; or
+- credentials, access links or non-public storage locations.
+
+The public repository may preserve public-safe filenames, custody/retrieval
+descriptions, evidence status, hashes where appropriate, analytical
+consequences, adverse evidence, open questions and redacted/public editions.
+
+9. NON-DUPLICATION AND CONTINUITY RULE
+
+- Re-query current primary sources and current main before every later action.
+- Treat PR #737 as proposed work until merged; do not duplicate it in another
+  branch or PR.
+- Repository publication, email preservation and thread deletion do not cure a
+  filing, signature, service, standing or merits defect.
+- Rejected electronic submissions are traceability evidence but are not to be
+  described as received.
+- Do not merge capacities: Gil personally, Aweswell, Matkator, LPB, CEXP, the
+  Owners' Community and Pink Canary Services remain distinct unless a specific
+  instrument proves the relevant representation or succession.
+- Do not merge the voices or statements of Gil Marer and Patricia Dominguez.
+- Do not duplicate losses or infer concerted intent from association, sequence,
+  common advisers, later ownership, operation or benefit alone.
+
+10. DELETION BASIS
+
+The thread may be deleted after both preservation operations are independently
+confirmed:
+
+A. this exact TXT content exists on the PR #737 feature branch at the stated
+   archive path; and
+B. the same TXT is sent by the authenticated Gmail account to itself, with the
+   repository path, PR number, repository commit SHA and SHA-256 digest stated
+   in the email body.
+
+After A and B, the thread is deletion-safe with the open actions above. The
+open actions survive as work items and must not be mistaken for completed acts.
