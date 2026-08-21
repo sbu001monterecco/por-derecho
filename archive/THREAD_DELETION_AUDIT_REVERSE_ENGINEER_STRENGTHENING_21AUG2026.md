@@ -29,4 +29,4 @@ The Anticorrupción signature cure, unread RICPE/Ithikios update, AEAT response,
 
 ## Deletion verdict
 
-**CONDITIONALLY DELETION-SAFE:** safe only after the strengthening pull request is merged to `main`, CI is reconciled and the changed English/Spanish public routes are read back from the exact merged deployment. Until those finite conditions are recorded as complete, retain this thread.
+**DELETION-SAFE WITH OPEN ACTIONS.** PR #726 merged to `main` as `964d124486b6c8dc3bbb7aaf8444f51f5409d9a9`; all pull-request checks passed; and all eight changed English/Spanish routes returned the exact new markers on the first post-merge no-cache read-back. The open actions above survive deletion and remain governed by the canonical handover and primary-source record.
