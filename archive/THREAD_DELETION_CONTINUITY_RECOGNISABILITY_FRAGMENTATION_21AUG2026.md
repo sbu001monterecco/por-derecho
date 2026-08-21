@@ -2,7 +2,7 @@
 
 **Control date:** 21 August 2026  
 **Thread subject:** repository/website reverse engineering; Por Derecho initiative-in-formation; The Second Pair of Eyes; fragmentation/atomisation; evidential recognisability; deletion audit.  
-**Current implementation state:** substantive doctrine merged to `main`; final public-edge closeout verifier added in follow-up branch; final deletion-safe status depends only on observed verifier result and closeout merge.
+**Current implementation state:** substantive doctrine and closeout verifier merged to `main`; final public-edge verification is being observed through a continuity-only PR so the exact successful run can be recorded before the definitive deletion-safe verdict.
 
 ## 1. Material new intelligence created by the thread
 
@@ -80,7 +80,23 @@ Before merge, all observed PR-head gates passed, including:
 
 No failed substantive or publication-integrity gate remained at merge.
 
-## 4. Relationship to existing canonical architecture
+## 4. Closeout infrastructure now merged to `main`
+
+PR `#694 — Close recognisability deletion audit` was merged by squash on 21 August 2026.
+
+Merge commit:
+
+`9f1593124d89c6c350301d0a59fbf0a4f1d00cb0`
+
+It added:
+
+- `.github/workflows/verify-recognisability-public-edge.yml`;
+- persistent success context `pages-propagation/recognisability-public-edge` for main-branch live verification;
+- the post-merge continuity update replacing the stale draft/unmerged state.
+
+The verifier independently requests both bilingual GitHub Pages routes and requires the expected doctrine/status markers.
+
+## 5. Relationship to existing canonical architecture
 
 This is an extension, not a replacement, of:
 
@@ -91,7 +107,7 @@ This is an extension, not a replacement, of:
 
 The existing canonical six-check Second Pair sequence remains unchanged.
 
-## 5. Source-status and allegation safeguards
+## 6. Source-status and allegation safeguards
 
 Preserve these distinctions in all later reuse:
 
@@ -103,13 +119,13 @@ Preserve these distinctions in all later reuse:
 - adverse decisions, common economic interest, professional proximity, institutional sequence and similar outcomes are insufficient to prove coordination;
 - relationship evidence does not itself prove causation, knowledge, intent, benefit, liability or guilt.
 
-## 6. Live-matter and privacy boundary
+## 7. Live-matter and privacy boundary
 
 The doctrine was developed from a wider Project Sun Rock / Pink Canary / multi-forum fragmentation analysis, but the public research routes and synthetic test contain no live-matter evidence.
 
 Do not publish private Gmail, tax, privileged, sealed, personal or redistribution-sensitive sources merely to illustrate recognisability. Public-safe proposition/relationship identifiers, dates, source type and status may be used where lawful; future work must re-query connected primary-source systems when protected evidence is required.
 
-## 7. Por Derecho legal/status boundary
+## 8. Por Derecho legal/status boundary
 
 At this control date:
 
@@ -122,21 +138,16 @@ At this control date:
 
 Do not upgrade these states without documentary evidence.
 
-## 8. Final public-edge closeout control
+## 9. Final public-edge verification gate
 
-Direct external HTTP verification was not available from the local analysis runtime, so the repository now adds a GitHub-hosted verifier:
+The verifier is now present on `main`. This continuity-only branch exists to trigger its `pull_request` event from the default-branch workflow and make the result directly observable through the connected GitHub run interface.
 
-`.github/workflows/verify-recognisability-public-edge.yml`
+Final closeout rule:
 
-It independently requests both public GitHub Pages routes and requires the expected bilingual doctrine/status markers before returning `PUBLIC_EDGE_VERIFIED`.
+- if `Verify recognisability public edge` succeeds, record the exact run and change the verdict below to `DELETION-SAFE`;
+- if it fails, preserve the failure and do not declare deletion safety.
 
-Follow-up branch:
-
-`agent/recognisability-deletion-closeout-21aug2026`
-
-The final closeout must record the successful run and merge this updated continuity record to `main`.
-
-## 9. Required future bootstrap
+## 10. Required future bootstrap
 
 A future thread touching fragmentation, atomisation, cross-forum evidence, Second Pair context loss, institutional handoff or evidential recognisability should read, in order:
 
@@ -150,8 +161,8 @@ A future thread touching fragmentation, atomisation, cross-forum evidence, Secon
 8. the relevant specialist factual/evidential ledgers;
 9. connected primary-source systems where protected or current evidence is required.
 
-## 10. Deletion-safety verdict at this intermediate closeout stage
+## 11. Deletion-safety verdict at this verification-trigger stage
 
-**CONTINUITY PRESERVED; FINAL DELETION-SAFE VERDICT PENDING ONLY PUBLIC-EDGE VERIFICATION + CLOSEOUT MERGE.**
+**CONTINUITY PRESERVED; FINAL DELETION-SAFE VERDICT AWAITS THE OBSERVED PUBLIC-EDGE WORKFLOW RESULT.**
 
-The substantive intelligence is now on `main`, not dependent on the conversation. The only remaining repository hygiene task is to convert the observed public-edge result into a durable final closeout state in this file.
+All substantive intelligence and implementation state are already recoverable from `main`. This final PR exists only to record the independent live-route verification result in the canonical closeout itself.
