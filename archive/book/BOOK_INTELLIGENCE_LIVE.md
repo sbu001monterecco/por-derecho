@@ -1,322 +1,322 @@
 # REASON TO BELIEVE / RAZÓN PARA CREER — LIVE BOOK INTELLIGENCE
 
 **Status:** canonical living book-intelligence layer · continuously updated  
-**Last major reset:** 15 August 2026
+**Last major reset:** 21 August 2026
 
 ## Purpose
 
-This is the **single canonical intelligence file for the book**. It is not the manuscript and it is not the evidence register.
-
-Its job is to preserve the cumulative editorial, narrative, commercial, historical, legal-risk, audience and research intelligence that should inform future versions of `REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md`.
-
-Future ChatGPT threads should update this file whenever a new source, legal development, memory, public record, email, Drive document, publishing insight or audience reaction changes how the book should be understood, structured, written, sourced, marketed or protected.
+This is the canonical editorial/intelligence layer for `Reason to Believe / Razón para creer`. It is not the manuscript and not the evidence register. Its job is to preserve the cumulative narrative, structural, commercial, historical, legal-risk, audience and research intelligence that should inform the private manuscript and public book page.
 
 ## Three-layer rule
 
-1. **Evidence layer** — what the sources support.
-2. **Book-intelligence layer** — what the sources may mean for narrative, structure, themes, questions, risk and publishing strategy.
-3. **Manuscript layer** — the prose presented to the reader.
+1. **Evidence** — what sources actually support.
+2. **Book intelligence** — what the evidence/research means for structure, themes, questions, risk, audience and publishing strategy.
+3. **Manuscript** — reader-facing prose.
 
-Never collapse these layers.
-
----
-
-# 1. CURRENT BOOK THESIS
-
-`Reason to Believe` is not principally a book about an insolvency proceeding. It is the continuous story of one place and the human/economic/institutional history around it.
-
-The strongest current formulation is:
-
-> **Before it was a legal battle, it was a place people belonged.**
-
-The central narrative spine is:
-
-> **Sun Park → Playa Blanca → SunRockers → rupture → one asset fragmented across many systems → MYND Yaiza → documentary reconstruction → whether effective rights and institutional self-correction can still work.**
-
-The legal dispute provides stakes and consequence. The SunRockers provide emotional meaning. The Knowledge Project provides source discipline. Fundación Por Derecho provides the public-interest extension.
+Never collapse these layers. AI-generated analysis or artwork is not evidence.
 
 ---
 
-# 2. CURRENT STRUCTURAL DECISION
+# 1. CONTROLLING BOOK THESIS
 
-Preferred six-part architecture:
+`Reason to Believe` is the flagship book about **Spanish justice, experienced principally through the Canary Islands, tested against one continuous economic and factual history**.
 
-- **Part I — The Place**
-- **Part II — The SunRockers**
-- **Part III — The Break**
-- **Part IV — One Asset, Many Systems**
-- **Part V — Institutions**
-- **Part VI — Reconstruction / Reason to Believe**
+Canonical formula:
 
-The densest legal material should not appear before the reader understands the place, the people and what was at stake.
+> **ONE ASSET · ONE HISTORY · ONE MEMORY**
+>
+> **UN ACTIVO · UNA HISTORIA · UNA MEMORIA**
+
+The central proposition is:
+
+> A citizen can live one continuous problem while the legal/institutional system divides it among proceedings, courts, prosecution, insolvency, enforcement, registries and public administrations. Effective justice requires a way to remember that those fragments belong to the same underlying history.
+
+Sun Park / MYND Yaiza is the principal documented case study. The book tests whether the rule of law can:
+
+> **remember → connect → hear → protect → review → correct**
+
+The title is not generic optimism. The ultimate question is whether there remains a rational **reason to believe** in Spanish justice when the complete record is difficult, fragmented, adverse in places and still capable — or not — of institutional correction.
 
 ---
 
-# 3. CORE THEMES
+# 2. CONTROLLING SEPARATION FROM THE SUNROCKERS
 
-## Belonging
+The prior version of this intelligence over-weighted SunRockers/community material. That is superseded.
 
-The value of Sun Park was not exhausted by title, rooms or balance-sheet value. The book should examine hospitality as a generator of relationships, memory and belonging.
+`Reason to Believe` is **not** primarily the SunRockers lifestyle/community book.
 
-## Later life as possibility
+The detailed 50+ grown-up community story — longer stays, friendship, participation, activities, contribution, reinvention and belonging — belongs primarily to **The SunRockers**.
 
-The SunRocker proposition is particularly strong when explained as a later-life/community idea: time, participation, friendship, contribution, experimentation and renewal.
+Book 1 may use that human history only in a limited way to establish:
 
-## One Asset. One History.
+- what Sun Park was;
+- why the asset/place mattered economically and humanly;
+- what was at stake before the legal/institutional fragmentation;
+- why continuity of the same physical place matters to the reader.
 
-The continuous physical/economic history of the asset remains the master investigative principle. Different proceedings do not create different historical realities.
+Do not rebuild a long SunRockers section inside Book 1. Cross-reference Book 3 instead.
+
+Adam J. Jackson / `The Ethos` belongs primarily to SunRockers/community intelligence, not the controlling architecture of `Reason to Believe`.
+
+---
+
+# 3. STRUCTURAL DECISION
+
+Preferred architecture is now justice/memory-led rather than people/community-led.
+
+### Part I — One Asset
+Establish the physical/economic object, ownership/perimeter distinctions and why one underlying asset/history matters.
+
+### Part II — One History
+Build the continuous chronology across title, credit, authority, access/control, valuation, works, operation, income and consequence.
+
+### Part III — Many Proceedings
+Show how one continuous history enters insolvency, enforcement, prosecution, registries, public administration, professional advice and appeal routes without pretending those legal tracks are identical.
+
+### Part IV — One Memory
+Ask what each actor/institution knew, received, decided and transmitted; identify where factual continuity was preserved or lost.
+
+### Part V — Effective Justice
+Test hearing, evidence access, challenge, preservation of rights, reasoned decisions, appeal, correction, restitution and compensation.
+
+### Part VI — Reason to Believe
+Assess whether the system remains capable of recognising and correcting legally relevant failure. The ending may remain open while proceedings remain live.
+
+Human scenes and Sun Park life should be used selectively inside this architecture, not as a separate community-history half of the book.
+
+---
+
+# 4. CORE THEMES
+
+## One Asset. One History. One Memory.
+
+Different proceedings, companies, creditors, operators, titles and institutions do not create different factual histories of the same underlying economic reality. Legal distinctions must nevertheless remain explicit.
+
+## Institutional memory
+
+The book should ask how a justice system remembers across years, offices, jurisdictions and procedural files. Possessing records is not the same as possessing coherent memory.
 
 ## Fragmentation
 
-A central institutional question is whether a sequence of locally defensible decisions can produce a globally incoherent result because no one institution reconstructs the whole history.
+A sequence of individually lawful or locally defensible acts can still produce a globally incoherent result if no mechanism reconnects chronology, knowledge, cause and consequence. That is a question to investigate, not a predetermined finding.
 
-## Memory
+## Effective rights / tutela judicial efectiva
 
-The book should distinguish legal memory, institutional memory and human memory. AI may assist with the first two; oral history and archives preserve the third.
+Rights matter only if they remain practically usable: the ability to be heard, access relevant evidence, challenge adverse acts, preserve rights while disputes are determined, receive reasoned decisions, appeal and obtain correction/restitution/compensation where legally justified.
 
-## Effective rights
+## Institutional self-correction
 
-The title `Reason to Believe` works best when attached not to optimism in the abstract but to the possibility that rights, evidence and institutional self-correction remain usable even after prolonged failure.
+Belief in the rule of law does not require believing institutions never fail. It requires testing whether they can recognise and correct failure when the complete record demands it.
 
----
+## Economic/property reality
 
-# 4. SUNROCKERS / SUN PARK LIVING INTELLIGENCE
-
-The connected archive materially supports treating SunRockers as a genuine historical corpus rather than a modern narrative invention. Located material includes dedicated community documents, historical spreadsheets, brochures, archived forum/TripAdvisor material and later presentations preserving the project concept.
-
-Editorial implication: the manuscript should progressively replace generic summaries with publication-cleared contemporaneous detail: names where permitted, dates, activities, photographs, schedules, quotations within copyright/permission limits, and contradictory memories.
-
-Research priority: build a **Sun Park Memory Project** with provenance and consent.
-
-Do not exclude negative or contrary memories. A credible social history must include disappointment, disputes and criticism as well as affection.
+Property and economic rights represent capital, labour, years of life, employment, security and autonomy. The book should translate procedural events into their real economic consequences without collapsing legal causation into narrative assumption.
 
 ---
 
-# 5. ADAM J. JACKSON / THE ETHOS
+# 5. SUN PARK → MYND YAIZA
 
-A January 2023 project email explicitly paired Sun Park Living material with Adam J. Jackson's `The Ethos: Because life is better together`.
-
-Book-intelligence significance:
-
-- useful philosophical vocabulary for community, friendship, purpose and later-life renewal;
-- helpful bridge between the hospitality concept and the book's larger human themes;
-- useful editorial reminder to make complexity understandable.
-
-Hard boundary:
-
-- no implication that Jackson created the SunRocker concept;
-- no implication that he endorses this manuscript or legal allegations;
-- no implication that he is involved in Fundación Por Derecho or Havidia;
-- no substantial reproduction of his copyrighted work without permission.
-
----
-
-# 6. SUN PARK → MYND YAIZA
-
-The visible physical continuity is one of the book's most powerful narrative devices.
+The visible physical continuity of the same place is one of the book's strongest narrative devices.
 
 The book can safely ask:
 
-- what changed in title?
-- what changed in control?
-- what changed in financing?
-- what changed in operation and brand?
-- what value was created around the transformed asset?
-- what institutional decisions connect the stages?
+- what changed in title and what did not?
+- what changed in control, possession/access and exploitation?
+- what changed in the creditor chain?
+- what changed in financing/support?
+- what changed in operation/brand?
+- what value and income were created around the transformed asset?
+- which institutional decisions connect the stages?
+- which rights/assets were concursal and which were extraconcursal?
 
-The book must not infer IP theft or unlawful appropriation merely from similarities in experiential programming.
-
-The uploaded publication draft provides a useful public-interest framework: “follow the title, follow the authority, follow the money, follow the beneficiary.” fileciteturn108file0L25-L37
-
-That formulation should inform the investigative method while its stronger allegations remain clearly attributed as the author's whistleblower thesis rather than judicial findings.
+Physical continuity is narrative evidence of one place; it does **not** by itself prove legal identity, IP continuity, common ownership, unlawful appropriation or liability.
 
 ---
 
-# 7. THE FUNDED-EXIT / SECURITY-PACKAGE IDEA
+# 6. READER METHOD — SHOW THE CHAIN
 
-This is potentially one of the strongest explanatory economic chapters because it converts abstract insolvency language into something an ordinary reader can understand.
+Preferred recurring reader architecture:
 
-The core idea from the current publication draft is that a funded exit depended on the hotel remaining accessible, preserved, independently valu-able, operationally continuous and financeable; those practical conditions constituted the security package of the exit. fileciteturn108file0L42-L46
+> **Asset/title → authority → debt/credit → access/control → valuation → works → operation → money/income → beneficiary → consequences**
 
-Manuscript implication: explain this through concrete scenes — doors, access, valuers, due diligence, lenders/operators, condition of rooms/common areas, ability to inspect and verify — rather than only through legal argument.
+Alternative compact form:
 
-Legal-risk rule: distinguish between:
+> **Title → authority → debt → access → valuation → works → operation → income → beneficiary**
 
-- existence of a proposed financing/exit route;
-- evidence it was viable at a particular stage;
-- acts or omissions that objectively affected its feasibility;
-- any allegation of deliberate sabotage or criminal intent.
+This device should help ordinary readers follow a complex case without treating sequence as automatic causation.
 
-These are not the same proposition.
+Every chapter should distinguish:
 
----
-
-# 8. “SHOW THE CHAIN” AS READER METHOD
-
-Potential recurring device:
-
-> **Title → authority → debt → access → valuation → works → operation → income → beneficiary.**
-
-The uploaded draft uses this as its closing evidential demand and asks for the title, transfer, authority, financing, incentive files, management arrangements, accounts, income and ultimate benefit to be shown. fileciteturn108file0L64-L75
-
-Book use: a simple visual or recurring chapter-end checklist can help non-lawyers retain the logic.
+- what is proved;
+- what is alleged;
+- what is inferred;
+- what is adverse;
+- what remains missing or disputed.
 
 ---
 
-# 9. CHARACTERS / HUMAN VOICES TO DEVELOP
+# 7. FUNDED EXIT / SECURITY PACKAGE
+
+The funded-exit idea remains potentially important because it translates abstract insolvency arguments into economic reality.
+
+Key distinction:
+
+1. existence of a proposed financing/exit route;
+2. evidence that it was viable at a given time;
+3. practical conditions needed for financeability (access, preservation, inspection, independent valuation, operational continuity, security/collateral);
+4. acts or omissions that objectively affected feasibility;
+5. any allegation of deliberate sabotage or criminal intent.
+
+These propositions must never be conflated.
+
+---
+
+# 8. AI IN THIS BOOK
+
+AI is secondary in `Reason to Believe`.
+
+It may appear as a later tool that changes the economics of searching, comparing and recovering institutional/factual memory across a very large archive.
+
+AI does not decide who is right. It does not replace primary evidence, lawyers, judges or legal reasoning. The fuller AI/documentary-capability story belongs to **Law-mower Man**.
+
+---
+
+# 9. CHARACTER / VOICE PRIORITIES
 
 Priority voices, subject to consent, fairness and source control:
 
 - Gil;
 - Patricia;
-- former SunRockers / returning guests;
-- former staff and collaborators;
-- people who had negative experiences or payment disputes;
-- professionals who advised, financed, operated or assessed the project;
-- institutional actors only where documented public acts justify inclusion;
-- people around Playa Blanca who can describe the place across time.
+- professionals who advised, financed, administered, operated or assessed relevant stages;
+- former guests/staff only where their experience illuminates what the asset/place was or the consequences of the dispute;
+- people with adverse/contrary experiences as well as supportive ones;
+- institutional actors only in relation to sourced acts/roles.
 
-Avoid turning every legal actor into a literary villain. Institutional behaviour is more credible when motive is not invented.
+Do not turn legal/professional actors into literary villains by inventing motive.
 
 ---
 
-# 10. CHAPTER-LEVEL SOURCE MAP
+# 10. CHAPTER SOURCE MAP
 
-For each chapter, maintain four buckets:
+For every chapter maintain:
 
 - **primary documentary sources**;
 - **human recollections / interviews**;
 - **public contextual sources**;
-- **unresolved questions / contradictory evidence**.
+- **adverse evidence**;
+- **unresolved questions / missing evidence**.
 
-A chapter is not publication-ready because its prose is good. It is publication-ready when its material factual propositions have a source path and its unresolved/adverse material is fairly represented.
+Good prose is not publication readiness. A material factual proposition needs a source path and fair treatment of adverse/unresolved material.
 
 ---
 
-# 11. BOOK-RISK REGISTER
+# 11. RISK REGISTER
 
 ## Defamation / allegation inflation
-
-Risk: repeated allegations across filings, emails and AI summaries can appear more verified than they are.
-
-Control: always return to primary sources; use attribution; distinguish objective effect from motive/intent; include adverse evidence.
+Repeated allegations across filings, emails and AI summaries can look more verified than they are. Control: return to primary sources; attribute; separate effect from motive/intent; include adverse evidence.
 
 ## Privacy
-
-Risk: former guests, staff, family and private correspondents may appear in archives without publication consent.
-
-Control: public-safe summaries until permission or a valid publication basis exists.
+Former guests, staff, family and private correspondents may appear in archives without publication consent. Use public-safe summaries unless a lawful publication basis exists.
 
 ## Privilege / confidential legal material
-
-Risk: internal legal advice migrating into public book files.
-
-Control: keep privileged advice out of the public repository; extract only lawful/public-safe propositions.
+Keep privileged advice and sensitive correspondence out of the public repository/manuscript layer unless lawfully cleared.
 
 ## Copyright
-
-Risk: brochures, photographs, books and archived web material reproduced beyond permitted limits.
-
-Control: permission/licensing or limited quotation/commentary; preserve provenance.
+Brochures, photographs, review screenshots, books and archived web material require permission/licensing or carefully limited lawful use.
 
 ## False continuity
+Same physical place ≠ same legal entity, title, contractual right or IP. Prove each legal bridge separately.
 
-Risk: assuming that the same physical place means the same legal entity, ownership, contractual rights or intellectual property.
-
-Control: physical continuity is narrative; legal continuity must be separately proved.
-
----
-
-# 12. AUDIENCE INTELLIGENCE
-
-Primary audiences now include:
-
-- former Sun Park guests / SunRockers / staff;
-- Playa Blanca, Lanzarote and Canary Islands readers;
-- readers interested in later life, community and reinvention;
-- investigative nonfiction / institutional failure readers;
-- insolvency / NPL / property / legal professionals;
-- journalists and documentary makers;
-- AI/legal-tech and access-to-justice communities;
-- students / academics;
-- people who have experienced complex institutional disputes.
-
-The book should be understandable to the first three groups without requiring legal literacy.
+## Generated-document appearance
+AI-generated cover labels, stamps, handwritten text or buildings are artwork only and may never be cited as evidence.
 
 ---
 
-# 13. PROMOTION INTELLIGENCE
+# 12. AUDIENCE
 
-Current strongest lines:
+Primary audiences:
 
-- **Before it was a legal battle, it was a place people belonged.**
-- **The hotel changed. The place did not move.**
-- **The evidence explains what happened. The book remembers what mattered.**
-- **One Asset. One History.**
-- **Many versions were created. There was only one history.**
+- Canary Islands / Spanish general readers;
+- readers interested in justice, institutional failure/correction and effective rights;
+- property owners, entrepreneurs and people facing complex institutional disputes;
+- investigative-nonfiction readers;
+- lawyers, judges, prosecutors, insolvency professionals and public officials;
+- journalists/documentary makers;
+- legal-memory / access-to-justice / AI communities;
+- students and academics.
 
-Promotion should lead with people/place and only then reveal the documentary/legal architecture.
+The book must be understandable without legal training.
 
-Visual hierarchy:
+Readers primarily interested in later-life community/lifestyle should be directed to **The SunRockers**.
 
-1. Playa Blanca / hotel / Atlantic / volcanic environment;
-2. warmth and human presence;
-3. the continuous line as memory/history;
-4. documentary textures as secondary;
-5. title dominant at thumbnail scale.
+---
+
+# 13. PROMOTION / COVER INTELLIGENCE
+
+Current strongest public lines:
+
+- **ONE ASSET. ONE HISTORY. ONE MEMORY.**
+- **UN ACTIVO. UNA HISTORIA. UNA MEMORIA.**
+- **Many proceedings should not mean many realities.**
+- **The citizen experiences one problem. The system creates many cases. Justice needs a way to remember that they belong to the same history.**
+
+Promotion should lead with Spanish/Canary Islands justice, documentary memory and the single-case paradox — not with SunRockers community nostalgia.
+
+The controlling cover direction is documented in:
+
+`SIX_BOOK_COVER_BIBLE_BILINGUAL_PRE_AI_20260821.md`
+
+Book 1 was explicitly reopened from the earlier generic six-cover lock. Separate Spanish and English justice-centred masters are preserved privately in connected Google Drive. Their exact filenames and deployment status are recorded in `CANONICAL_COVERS_LOCK_20260815.md` and the 21 August books-thread deletion closeout.
 
 ---
 
 # 14. CONTINUOUS-UPDATE PROTOCOL
 
-Whenever a future ChatGPT thread performs a material scan of Gmail, Drive, the website, court records or current public information, it should ask internally:
+After any material Gmail/Drive/file/web/court-record scan ask:
 
 ### A. Does this change the evidence?
-If yes, update the canonical evidence/depository architecture or relevant evidential page/register.
+If yes, update the canonical evidence/depository/register layer.
 
-### B. Does this change how the book should understand the story?
+### B. Does this change how `Reason to Believe` should understand the story?
 If yes, update this file.
 
-### C. Does this deserve reader-facing prose now?
-If yes, update `REASON_TO_BELIEVE_LIVE_MANUSCRIPT.md`.
+### C. Does it belong primarily to another book?
+If yes, update that book/portfolio intelligence instead of pulling it into Book 1.
 
-### D. Does this change marketing, title, cover, audience or rights?
-If yes, also update `BOOK_PROMOTION_AND_COVER.md`.
+### D. Does this deserve reader-facing prose now?
+If yes, update the private canonical manuscript through the appropriate private workflow.
 
-### E. Is it private, privileged, unverified or unsafe for publication?
-If yes, record only the public-safe consequence, not the sensitive source content.
+### E. Does this change title, cover, audience, rights or promotion?
+If yes, update the relevant cover/promotion intelligence.
+
+### F. Is it private, privileged, unverified or unsafe for public publication?
+If yes, preserve the public-safe consequence only; leave sensitive source content in its private source system.
 
 ---
 
 # 15. CURRENT RESEARCH QUEUE
 
-High-value next scans:
-
-1. contemporaneous Sun Park brochures and community documents;
-2. historical photographs and publication rights;
-3. SunRocker activity programmes / newsletters / guest communications;
-4. guest payment / chargeback controversy, including adverse evidence;
-5. precise funded-exit chronology and financing counterparties;
-6. title/credit/control chronology rendered for ordinary readers;
-7. exact Sun Park → MYND corporate/operational transformation chronology;
-8. memories from former guests/staff, with consent;
-9. Patricia/Gil chronology and personal stakes;
-10. ending tracker: latest procedural events that may change the final chapters.
+1. exact single-asset title/authority/right map across LPB, Matkator, CEXP and third parties;
+2. complete creditor/credit-transfer/enforcement chain and economics;
+3. funded-exit chronology and financeability conditions;
+4. event-by-event court/Fiscalía/administrative knowledge/transmission matrix;
+5. exact Sun Park → MYND Yaiza corporate/operational/financial/public-support transformation chronology;
+6. concursal vs extraconcursal vs cross-border consequence map;
+7. current correction/restitution/remedy pathways;
+8. adverse decisions and strongest counterarguments;
+9. personal stakes/voice where publication-safe and narratively necessary;
+10. ending tracker for live proceedings/institutional responses.
 
 ---
 
-# 16. INTELLIGENCE CHANGE LOG
+# 16. CHANGE LOG
 
-## 15 August 2026 — canonical live intelligence established
+## 21 August 2026 — controlling reset
 
-- Created a single living intelligence layer distinct from manuscript and evidence.
-- Made Sun Park / SunRockers / Playa Blanca the emotional foundation.
-- Integrated MYND Yaiza as physical-continuity narrative spine.
-- Integrated funded-exit/security-package explanatory thesis.
-- Integrated “show the chain” reader method.
-- Established legal/publication risk register.
-- Established continuous-update protocol for all future ChatGPT research passes.
-
-## Future entries
-
-Record date, source category, affected chapters/themes, confidence level, publication sensitivity and resulting manuscript action.
+- Recentered the flagship on Spanish/Canary Islands justice.
+- Made `ONE ASSET · ONE HISTORY · ONE MEMORY` controlling.
+- Removed SunRockers/community as the emotional/structural foundation of this book; redirected that material to Book 3.
+- Reframed structure around asset → history → proceedings → memory → effective justice → correction.
+- Preserved `show the chain`, funded-exit and AI-assisted-memory concepts inside narrower boundaries.
+- Updated audience, promotion and cover intelligence to match the corrected thesis.
+- Recorded explicit Book 1 cover reopen and separate ES/EN justice masters through the cover/deletion-closeout records.
