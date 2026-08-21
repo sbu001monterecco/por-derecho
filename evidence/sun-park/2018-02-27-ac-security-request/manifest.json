@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "evidence_id": "SP-2018-02-27-AC-SECURITY-REQUEST",
   "title": "27 February 2018 insolvency-administrator request to convene Sun Park security meeting",
   "event_date": "2018-02-27T10:16:06+00:00",
@@ -14,14 +14,23 @@
     "public_repository_contains_unredacted_original": false
   },
   "public_derivative": {
+    "type": "deterministic searchable digital copy from manually checked diplomatic transcript",
     "path": "public/2018-02-27-ac-community-security-request-redacted-searchable.pdf",
-    "sha256": "91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551",
-    "size_bytes": 261820,
+    "sha256": "f7ae8cf03455dd087f31b52a1cfa4c6e3989a1db2b566515a9fc81c8e1d18f98",
+    "size_bytes": 4235,
     "pages": 1,
     "page_format": "A4",
     "searchable": true,
+    "builder": "/tools/build_ac_security_request_public_pdf.py",
+    "builder_dependency": "reportlab==4.4.9",
     "authoritative_transcript": "../transcript.es.md",
     "translation": "../transcript.en.md"
+  },
+  "supplementary_redacted_facsimile": {
+    "committed_to_public_repository": false,
+    "sha256": "91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551",
+    "processing": "render at 300 dpi; burn redactions into pixels; OCR after redaction; visual and searchable-layer inspection",
+    "intermediate_redacted_png_sha256": "b6162108762ffcf1e2cc2afc07027ba885668cd75d14f2fa658da6931bd38d9d"
   },
   "redactions": [
     {
@@ -41,15 +50,14 @@
     }
   ],
   "processing": {
-    "pixel_redaction_before_ocr": true,
-    "render_dpi": 300,
-    "ocr_after_redaction": true,
-    "manual_visual_review": true,
+    "manual_visual_review_of_source": true,
     "manual_transcript_review": true,
+    "silent_correction_prohibited": true,
+    "deterministic_pdf_generation": true,
+    "pdf_invariant_mode": true,
     "search_layer_sensitive_string_check": "passed",
     "pdf_structure_check": "passed",
-    "intermediate_redacted_png_sha256": "b6162108762ffcf1e2cc2afc07027ba885668cd75d14f2fa658da6931bd38d9d",
-    "repository_image_dpi": 150
+    "visual_render_check": "passed"
   },
   "controlled_meaning": {
     "directly_supports": [
