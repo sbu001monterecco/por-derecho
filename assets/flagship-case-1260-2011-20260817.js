@@ -24,7 +24,7 @@
     document.head.appendChild(script);
 
     const correction = document.createElement('script');
-    correction.src = new URL('jv1260-evidence-bridge-correction-20260821.js?v=20260821b', current.src).href;
+    correction.src = new URL('jv1260-evidence-bridge-correction-20260821.js?v=20260821c', current.src).href;
     correction.async = false;
     correction.dataset.jv1260EvidenceBridgeCorrection = '20260821';
     document.head.appendChild(correction);
