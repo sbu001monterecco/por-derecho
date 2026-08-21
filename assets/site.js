@@ -178,6 +178,17 @@
   document.head.appendChild(module);
 })();
 
+/* DECLARATION-004-SOURCE-PROVENANCE-20260821 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-declaration004-source-provenance-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('declaration004-source-provenance-20260821.js?v=20260821a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-declaration004-source-provenance-loader', '20260821');
+  document.head.appendChild(module);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
