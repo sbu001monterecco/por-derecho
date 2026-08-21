@@ -2,7 +2,7 @@
 
 **Audit date:** 21 August 2026
 **Repository:** `sbu001monterecco/por-derecho`
-**Final status:** `NOT DELETION-SAFE UNTIL REMOTE PRESERVATION; OPEN EVIDENCE REMAINS`
+**Final status:** `DELETION-SAFE WITH OPEN EVIDENCE`
 
 ## Scope
 
@@ -48,7 +48,7 @@ It preserves:
 
 ## Implementation state
 
-The controlled changes were committed locally on branch `audit/professional-firms-redigest-20260821`. The attempted push was blocked because external publication of the case analysis requires explicit user approval. They are not remotely preserved, live or controlling on `main` until pushed, reviewed and merged.
+The controlled changes were published through PR `#711` and merged into `main` as commit `79bb88ee07109ce2e8ab10dd53b3541047e15485`. The two new controls and both index/handover updates were then read back from `main`.
 
 No public-page change was made because the reported RSM closure lacks a recovered native source in the present scan.
 
@@ -70,6 +70,6 @@ If this chat disappears, every material new analytical conclusion, strategic cho
 
 The chat is therefore:
 
-> **NOT DELETION-SAFE UNTIL THE LOCAL AUDIT COMMIT IS REMOTELY PRESERVED; OPEN EVIDENCE REMAINS**
+> **DELETION-SAFE WITH OPEN EVIDENCE**
 
 This does not mean the native RSM closure or current RICPE channel state has been preserved. Those remain explicit evidence-custody and retrieval gaps.
