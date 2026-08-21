@@ -1,0 +1,72 @@
+name: Verify prosecution evidence sharpening live
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/verify-prosecution-evidence-live.yml'
+      - 'THREAD_CLOSEOUT_PROSECUTION_SHARPENING_21AUG2026.md'
+  push:
+    branches: [main]
+    paths:
+      - 'es/mapa-probatorio-penal-unitario/**'
+      - 'en/unitary-criminal-evidence-map/**'
+      - 'PROSECUTION_PUBLIC_STATE_21AUG2026.json'
+      - 'assets/prosecution-public-entry-20260821.js'
+      - 'assets/site.js'
+      - 'sitemap-prosecution-evidence.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-prosecution-evidence-live.yml'
+      - 'THREAD_CLOSEOUT_PROSECUTION_SHARPENING_21AUG2026.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-prosecution-evidence-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Verify exact GitHub Pages routes and deployment markers
+        run: |
+          python3 - <<'PY'
+          import json, time, urllib.request
+          base = 'https://sbu001monterecco.github.io/por-derecho'
+          targets = {
+            'es_map': (f'{base}/es/mapa-probatorio-penal-unitario/', ['Mapa probatorio penal unitario', 'PP1041', 'AP 804/2018']),
+            'en_map': (f'{base}/en/unitary-criminal-evidence-map/', ['Unitary criminal evidence map', 'PP1041', 'Provincial Court Order 804/2018']),
+            'es_home': (f'{base}/es/', ['assets/site.js']),
+            'en_home': (f'{base}/en/', ['assets/site.js']),
+            'site_loader': (f'{base}/assets/site.js', ['PROSECUTION-PUBLIC-ENTRY-20260821', 'prosecution-public-entry-20260821.js']),
+            'entry_module': (f'{base}/assets/prosecution-public-entry-20260821.js', ['PROSECUTION-PUBLIC-ENTRY-20260821', '360', 'SENT ≠ DELIVERED']),
+            'state': (f'{base}/PROSECUTION_PUBLIC_STATE_21AUG2026.json', ['project-sun-rock-prosecution-public-state/v1', '"registrations": 360', 'AP 804/2018']),
+            'sitemap': (f'{base}/sitemap-prosecution-evidence.xml', ['mapa-probatorio-penal-unitario', 'unitary-criminal-evidence-map']),
+            'robots': (f'{base}/robots.txt', ['sitemap-prosecution-evidence.xml']),
+          }
+          checks, details = {}, {}
+          for name, (url, markers) in targets.items():
+            try:
+              sep = '&' if '?' in url else '?'
+              req = urllib.request.Request(
+                f'{url}{sep}livecheck={int(time.time())}',
+                headers={'User-Agent':'Por-Derecho-prosecution-live-verifier/1.1','Cache-Control':'no-cache','Pragma':'no-cache'}
+              )
+              with urllib.request.urlopen(req, timeout=8) as r:
+                status = r.status
+                body = r.read().decode('utf-8','replace')
+              marker_map = {m: (m in body) for m in markers}
+              checks[name] = status == 200 and all(marker_map.values())
+              details[name] = {'status': status, 'bytes': len(body.encode()), 'markers': marker_map}
+            except Exception as exc:
+              checks[name] = False
+              details[name] = {'error': repr(exc)}
+          result = {'checks': checks, 'details': details}
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          if not all(checks.values()):
+            raise SystemExit(1)
+          print('PROSECUTION_EVIDENCE_LIVE_VERIFIED')
+          PY
