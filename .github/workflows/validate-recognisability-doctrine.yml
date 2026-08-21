@@ -8,6 +8,7 @@ on:
       - 'research/por-derecho/foundation-stage-2/04_FRAGMENTED_TRUTH_BREADTH_PARADOX_SYNTHETIC_CASE_21AUG2026.md'
       - 'en/por-derecho/research-and-training/fragmented-truth/**'
       - 'es/por-derecho/investigacion-y-formacion/verdad-fragmentada/**'
+      - 'sitemap-por-derecho-foundation.xml'
       - '.github/workflows/validate-recognisability-doctrine.yml'
   push:
     branches: [main]
@@ -17,6 +18,7 @@ on:
       - 'research/por-derecho/foundation-stage-2/04_FRAGMENTED_TRUTH_BREADTH_PARADOX_SYNTHETIC_CASE_21AUG2026.md'
       - 'en/por-derecho/research-and-training/fragmented-truth/**'
       - 'es/por-derecho/investigacion-y-formacion/verdad-fragmentada/**'
+      - 'sitemap-por-derecho-foundation.xml'
       - '.github/workflows/validate-recognisability-doctrine.yml'
   workflow_dispatch:
 
@@ -38,12 +40,14 @@ jobs:
           synthetic='research/por-derecho/foundation-stage-2/04_FRAGMENTED_TRUTH_BREADTH_PARADOX_SYNTHETIC_CASE_21AUG2026.md'
           en='en/por-derecho/research-and-training/fragmented-truth/index.html'
           es='es/por-derecho/investigacion-y-formacion/verdad-fragmentada/index.html'
+          sitemap='sitemap-por-derecho-foundation.xml'
 
           test -s "$protocol"
           test -s "$overlay"
           test -s "$synthetic"
           test -s "$en"
           test -s "$es"
+          test -s "$sitemap"
 
           grep -Fq 'Separate responsibility. Integrate evidence.' "$protocol"
           grep -Fq 'The whole can be too broad to investigate. The pieces can be too small to reveal the whole.' "$protocol"
@@ -59,6 +63,7 @@ jobs:
           set -euo pipefail
           en='en/por-derecho/research-and-training/fragmented-truth/index.html'
           es='es/por-derecho/investigacion-y-formacion/verdad-fragmentada/index.html'
+          sitemap='sitemap-por-derecho-foundation.xml'
 
           grep -Fq 'Initiative in formation' "$en"
           grep -Fq 'independent review not yet performed' "$en"
@@ -69,5 +74,8 @@ jobs:
           grep -Fq 'revisión independiente aún no realizada' "$es"
           grep -Fq 'No hay una séptima comprobación.' "$es"
           grep -Fq '/en/por-derecho/research-and-training/fragmented-truth/' "$es"
+
+          grep -Fq '/es/por-derecho/investigacion-y-formacion/verdad-fragmentada/' "$sitemap"
+          grep -Fq '/en/por-derecho/research-and-training/fragmented-truth/' "$sitemap"
 
           ! grep -Eiq 'institutional adoption confirmed|adopted by|endorsed by|fundación constituida|foundation registered' "$en" "$es"
