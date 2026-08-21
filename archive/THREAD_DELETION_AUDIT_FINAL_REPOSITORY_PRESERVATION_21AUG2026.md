@@ -3,13 +3,15 @@
 **Audit date:** 21 August 2026  
 **Repository:** `sbu001monterecco/por-derecho`  
 **Audit branch:** `audit/thread-deletion-final-20260821`  
-**Main SHA at audit start:** `e4b46770eaa81fa12a7c1d89293c2aa2acfb656b`  
-**Status at file creation:** `DELETION-SAFE ON MERGE + SUCCESSFUL PRESERVATION RUN`  
+**Current `main` baseline re-read during audit:** `c1a8795ddd58c2c10ecfb498d9b42f017a3bb548`  
+**Status at file creation/update:** `DELETION-SAFE ON MERGE + SUCCESSFUL PRESERVATION RUN`  
 **Scope:** the current ChatGPT thread and the immediately preceding reverse-engineering / repository / website / email work whose continuity could otherwise depend on this conversation.
 
 ## 1. Verdict
 
 All material propositions introduced or materially corrected in this thread have been mapped to durable repository controls or to identified native source systems. The thread may be treated as **deletion-safe once the branch containing this audit and the May-2012 supersession is merged to `main` and the preservation workflow for that PR succeeds**.
+
+During the audit, `main` advanced through a separate prosecution-evidence merge. The baseline was therefore re-read rather than freezing the earlier SHA. The audit branch compares from the current `main` ancestry and contains only the deletion-safety/source-status changes described below.
 
 Deletion-safe means the reasoning and evidence-status corrections required to continue the work no longer depend on this ChatGPT conversation. It does **not** mean all primary evidence has been recovered, all open PRs have been reconciled, the public edge has been independently re-read after every merge, or any allegation has been adjudicated.
 
