@@ -32,3 +32,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-rhg-open-message
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-jdam-architecture.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-asset-recovery.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-discovery-navigation.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-meeting-point.xml
