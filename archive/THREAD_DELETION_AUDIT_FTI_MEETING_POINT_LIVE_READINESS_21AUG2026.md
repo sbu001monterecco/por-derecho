@@ -154,6 +154,19 @@ completion record sent before the thread can move to:
 
 **DELETION-SAFE WITH OPEN EVIDENCE / CUSTODY.**
 
+### Closeout execution recorded
+
+- This audit was committed to the remote PR branch at
+  `25b003840fb97dea9c28a29c3c038ef55faa2943`; an exact remote read-back matched
+  the reviewed local file.
+- A private self-delivery record titled `Project Sun Rock - FTI / Meeting Point
+  thread deletion audit - 21 Aug 2026` was sent successfully to the
+  authenticated account with this public-safe audit attached. It did not attach
+  private emails, native audio, the brochure image, legal advice or confidential
+  attachments.
+- Those preservation steps do not alter the release state. PR #750 remains a
+  draft and the new public routes remain unmerged and not live-verified.
+
 A future thread should begin with `CHATGPT_START_HERE.md`, the universal
 continuity and publication protocols, this audit, the prior Meeting Point
 continuity audit, P23, ME-049 and the current PR/live state. It must re-query
