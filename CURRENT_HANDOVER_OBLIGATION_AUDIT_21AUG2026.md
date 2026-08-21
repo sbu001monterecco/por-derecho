@@ -13,6 +13,10 @@ Private operational ledger:
 ## Immediate institutional controls
 
 1. **Anticorrupción:** acknowledgement is not enough; the signature / electronic-identification blocker remains to be formally cured before treating that route as procedurally complete.
+   - **VERIFIED FACT:** the object requiring signature is the unsigned 20 August email communication linked to `Exp. Gub. 352/2025` and `REGAGE26e00070236245`, with exactly the two PNG annexes named in that communication. It is not a direction to replace or re-sign the already registered 2 August package.
+   - **VERIFIED FACT:** Fiscalía acknowledged receipt and stated that the communication remained pending admission until signed through an accepted method. The reply stated no cure deadline, filing channel, competence outcome or merits finding.
+   - **CONTROL:** cure only the formal defect: sign the unchanged 20 August communication, reattach the same two PNGs without modification, identify both references, and state expressly that the cure adds no facts, people, allegations, documents or requests.
+   - **OPEN ACTION:** a ready-to-sign package has been prepared and hash-checked privately. It has not been signed, sent or filed. Preserve the signed PDF, signature-validation result and filing receipt when the authorised filing occurs.
 2. **National LAJ / Justice leg:** `REGAGE26e00073341477` was later rejected. This supersedes earlier shorthand that the third national leg completed an effective three-part chain. Obtain the rejection reason and re-file only if appropriate.
 3. **RICPE ethics channel:** a 19 August notice reported additional information in the existing channel. Read/export/preserve it before another broad RICPE escalation or any characterization of the channel's current position.
 
