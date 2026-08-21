@@ -2,7 +2,8 @@
 
 **Read with:** `CURRENT_HANDOVER.md`  
 **Canonical strategy:** `archive/ASSET_RECOVERY_INTERVENTION_CONFISCATION_ARCHITECTURE_21AUG2026.md`  
-**Machine-readable matrix:** `ASSET_RECOVERY_AUTHORITY_MATRIX_21AUG2026.json`
+**Machine-readable matrix:** `ASSET_RECOVERY_AUTHORITY_MATRIX_21AUG2026.json`  
+**Repository/website state register:** `archive/REPOSITORY_WEBSITE_REVERSE_ENGINEERING_STATE_REGISTER_21AUG2026.md`
 
 ## Governing shift
 
@@ -27,11 +28,14 @@ The global `assets/site.js` loader propagates a strong gateway to the homepage, 
 4. **ORGA — RD 948/2015:** location, recovery, conservation, administration and realisation of criminal assets within its lawful remit after the appropriate judicial/prosecutorial activation.
 5. **Tax/public-funds/EU control:** do not collapse AEAT, Canary authorities, granting bodies, IGAE/SNCA and EU competences; use one transversal value/funding matrix across them.
 
-## 20 August procedural facts that control future public statements
+## Current 20–21 August procedural facts controlling future public statements
 
-- **Fiscalía Anticorrupción:** receipt acknowledged; admission pending; signature/formality cure required.
-- **AEAT expediente 00001-00113069:** processing of the transparency-access request notified as commenced on 20 August; no substantive access decision yet established.
-- **CGPJ:** dedicated Recursos and Secretaría General communications remain distinct from the attempted general-information email, which bounced with 550 rejection and must not be counted as delivered.
+- **Fiscalía Anticorrupción:** receipt acknowledged; admission pending; signature/formality cure required. Receipt is not admission or a merits view.
+- **FGE central routes:** separate acknowledgements confirm receipt of the identified Fiscal General / Inspección Fiscal / Secretaría Técnica / Economic Crimes communications; receipt does not prove file association, assignment, admission, investigation or endorsement.
+- **AEAT expediente 00001-00113069:** processing of the transparency-access request was notified as commenced on 20 August; the 21-August follow-up was transferred to AEAT as responsible body; no substantive access decision or complete internal-routing explanation is yet established.
+- **CGPJ / Alzada 286/2026:** the Appeals Section confirmed on 21 August that the five-file July package was received and joined; two later graphic annexes and the audiovisual-source link were also incorporated; the appeal was expressly described as `en trámite`. Incorporation does not establish examination, acceptance, Inspection referral or a favourable outcome.
+- **CGPJ / Secretaría General:** remains separate; receipt, association and functional routing are not established merely from absence of a bounce.
+- **CGPJ / General Information:** the separate general-information attempt failed delivery and must not be counted as delivered.
 - **Gobierno de Canarias:** the 20 August communication asks for end-to-end reconciliation and preservation across RIC → RICPE/HNT finance → regional incentives → FEDER/EU funds.
 
 ## Institutional demand template
@@ -56,6 +60,20 @@ The controlling formula is:
 
 Do not publish that a specific later asset is already “proceeds of crime” unless the required legal/evidential finding exists. The project should instead force the authority to identify the exact tracing and preservation position.
 
+## Repository / website synchronisation checkpoint
+
+The previous generic task to “resolve current GitHub Pages/live-readback workflow failures” is **closed as a generic open item**. Critical CGPJ/FGE and Por Derecho technical routes have since been verified at the public edge with no-cache checks, and the third-party bidder anonymisation is protected by repository and public-edge validation.
+
+Future website work should therefore focus on:
+
+- regression/public-edge verification after material changes;
+- preventing stale procedural-status text from surviving in older dashboards/handovers;
+- simplifying the layered runtime loader architecture rather than adding further corrective layers where static/source correction is practical.
+
+The reverse-engineering state register controls the current diagnosis and finite evidence queue:
+
+- `archive/REPOSITORY_WEBSITE_REVERSE_ENGINEERING_STATE_REGISTER_21AUG2026.md`
+
 ## Next work
 
 1. Exact current CNMV regulatory classification of the RICPE vehicle, SGEIC/manager and depositary.
@@ -63,5 +81,6 @@ Do not publish that a specific later asset is already “proceeds of crime” un
 3. Tie CP 127 tracing to alleged predicate acts without collectivising liability.
 4. Reconcile Montelanza 8498/8499/8500 and pending 2016 purchase entries against the canonical title register before promoting any new public ownership conclusion.
 5. Cure Anticorrupción signature formality and preserve proof of cure.
-6. Continue AEAT 00001-00113069 through the substantive access decision.
-7. Resolve current GitHub Pages/live-readback workflow failures separately from source-merge status.
+6. Continue AEAT 00001-00113069 through the substantive access decision and internal-routing clarification.
+7. Close the highest-value 2022 transaction bridges: testimonios/service/use, signed order family, five-day post-deed court/mandamiento chain, Registry implementation, EUR 400,000 title/cash/accounting line and final AC credit→interest→dation→cash→surplus/no-surplus reconciliation.
+8. Maintain public-edge regression checks and begin a controlled plan to replace layered `site.js` corrective loaders with a declarative route/component build architecture.
