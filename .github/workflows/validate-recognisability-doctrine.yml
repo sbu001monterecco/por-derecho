@@ -49,7 +49,7 @@ jobs:
           grep -Fq 'The whole can be too broad to investigate. The pieces can be too small to reveal the whole.' "$protocol"
           grep -Fq 'Do **not** add a seventh core check' "$protocol"
           grep -Fq 'Source → Authority → Perimeter → Contradiction → Consequence → Reversibility' "$overlay"
-          grep -Fq 'The method must be capable of clearing the concern.' "$overlay"
+          grep -Fq 'The overlay must be capable of clearing the concern.' "$overlay"
           grep -Fq 'F5 — possible coordinated fragmentation requiring investigation' "$synthetic"
           grep -Fq 'no live-matter data' "$synthetic"
 
