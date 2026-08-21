@@ -1,8 +1,9 @@
 # THREAD DELETION AUDIT — MONTELANZA 2008 / GOVERNANCE ORIGIN / CAM ENTRY
 
 **Date:** 21 August 2026  
-**Working branch:** `analysis/montelanza-governance-origin-20260821`  
-**Current status:** `NOT DELETION-SAFE — DRAFT SOURCE NOT YET MERGED OR LIVE-VERIFIED`
+**Working branch:** `analysis/montelanza-governance-origin-clean-20260821`  
+**Draft pull request:** `#685`  
+**Current status:** `NOT DELETION-SAFE — DRAFT PR NOT YET MERGED OR LIVE-VERIFIED`
 
 ## 1. Material intelligence preserved on the branch
 
@@ -75,18 +76,25 @@ Open evidence includes:
 
 These may remain open after canonical publication; they are evidence-development tasks rather than continuity failures.
 
-## 6. Current deletion verdict
+## 6. Current repository state
+
+- The original exploratory branch `analysis/montelanza-governance-origin-20260821` is not the merge candidate.
+- A clean branch was recreated from current `main`: `analysis/montelanza-governance-origin-clean-20260821`.
+- The clean branch was synchronised with the later `es/fiscalia-tenerife-dp748/` landing-page addition before the PR lifecycle update.
+- Draft PR #685 contains the Montelanza package.
+- CI remains to be completed and corrected if necessary.
+- No merge, GitHub Pages deployment or live-route verification is claimed.
+
+## 7. Current deletion verdict
 
 `NOT DELETION-SAFE YET`.
 
 Required closeout:
 
-1. create a clean current-main integration commit;
-2. open draft PR;
-3. pass Montelanza-specific and non-regression validation;
-4. merge only under separate user authority;
-5. verify both public routes, OCR source blocks, JSON controls, gateway and sitemap from GitHub Pages;
-6. update manifest/activation/audit to `LIVE_VERIFIED / DELETION_SAFE WITH OPEN EVIDENCE`;
-7. preserve final completion by self-email if Gmail remains available.
+1. pass Montelanza-specific and non-regression validation on PR #685;
+2. merge only under separate user authority;
+3. verify both public routes, OCR source blocks, JSON controls, gateway and sitemap from GitHub Pages;
+4. update manifest/activation/audit to `LIVE_VERIFIED / DELETION_SAFE WITH OPEN EVIDENCE`;
+5. preserve final completion by self-email if Gmail remains available.
 
-Until those steps, the branch is recoverable but not canonical on current `main` and the pages are not claimed live.
+Until those steps, the branch and PR are recoverable but not canonical on current `main`, and the pages are not claimed live.
