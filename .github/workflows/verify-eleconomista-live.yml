@@ -8,6 +8,7 @@ on:
       - 'en/eleconomista-javier-romera-january2025/**'
       - 'assets/site.js'
       - 'assets/unitary-criminal-reverse-engineering-20260820.js'
+      - 'assets/traceability-crosslinks-20260821.js'
       - '.github/workflows/verify-eleconomista-live.yml'
   workflow_dispatch:
 
@@ -152,11 +153,63 @@ jobs:
           })().catch(e=>{console.error(e);process.exit(1)});
           NODE
 
+      - name: Verify rendered Meeting Point propagation
+        id: verify_mp
+        continue-on-error: true
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const fs = require('fs');
+          const base = 'https://sbu001monterecco.github.io/por-derecho';
+          const q = `source=${process.env.SOURCE_SHA.slice(0,12)}&run=${process.env.RUN_ID}`;
+          const targets = [
+            {key:'lava-es',url:`${base}/es/lava-verde-club-sei-meeting-point/?${q}`,selector:'[data-mp-direct-commercial-source-20260821]',markers:['sonnenklar.TV','Calle Janubio 3','no acreditan todavía']},
+            {key:'lava-en',url:`${base}/en/lava-verde-club-sei-meeting-point/?${q}`,selector:'[data-mp-direct-commercial-source-20260821]',markers:['sonnenklar.TV','Calle Janubio 3','do not yet establish']},
+            {key:'357-es',url:`${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?${q}`,selector:'[data-mp357-custody-boundary-20260821]',markers:['Límite 357/2024','Auren','impropiedad']},
+            {key:'357-en',url:`${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?${q}`,selector:'[data-mp357-custody-boundary-20260821]',markers:['357/2024 boundary','Auren','improper']},
+            {key:'takeover-es',url:`${base}/es/toma-control-sun-park-7-junio-2018/?${q}`,selector:'[data-takeover-meeting-point-gateway-20260821]',markers:['Lava Verde','Club Sei','Meeting Point/FTI']},
+            {key:'takeover-en',url:`${base}/en/sun-park-takeover-7-june-2018/?${q}`,selector:'[data-takeover-meeting-point-gateway-20260821]',markers:['Lava Verde','Club Sei','Meeting Point/FTI']},
+          ];
+          (async()=>{
+            const browser=await chromium.launch({headless:true,executablePath:process.env.PSR_BROWSER_PATH});
+            let finalResults=[]; let ok=false;
+            for(let attempt=1;attempt<=36;attempt++){
+              let pass=true; const results=[];
+              for(const t of targets){
+                const page=await browser.newPage();
+                try{
+                  await page.goto(t.url,{waitUntil:'networkidle',timeout:60000});
+                  const el=page.locator(t.selector);
+                  const count=await el.count();
+                  const text=count?await el.innerText():'';
+                  const markers=Object.fromEntries(t.markers.map(m=>[m,text.includes(m)]));
+                  const passed=count===1 && Object.values(markers).every(Boolean);
+                  pass &&= passed;
+                  results.push({key:t.key,count,markers,passed});
+                }catch(e){pass=false;results.push({key:t.key,error:String(e),passed:false});}
+                finally{await page.close();}
+              }
+              finalResults=results;
+              console.log(JSON.stringify({attempt,pass,results},null,2));
+              if(pass){ok=true;break;}
+              await new Promise(r=>setTimeout(r,5000));
+            }
+            await browser.close();
+            fs.mkdirSync('artifacts/meeting-point-live',{recursive:true});
+            fs.writeFileSync('artifacts/meeting-point-live/result.json',JSON.stringify({status:ok?'PASS':'FAIL',source_sha:process.env.SOURCE_SHA,results:finalResults},null,2));
+            process.exit(ok?0:1);
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
+
       - name: Show exact-route verification evidence
         if: always()
         run: |
           cat /tmp/eleconomista-live-source.json || true
           cat artifacts/eleconomista-live/result.json || true
+          cat artifacts/meeting-point-live/result.json || true
 
       - name: Publish persistent exact-route status
         if: always()
@@ -182,6 +235,29 @@ jobs:
           with urllib.request.urlopen(req,timeout=30) as r: print(r.read().decode())
           PY
 
-      - name: Fail when exact elEconomista verification did not succeed
-        if: steps.verify_raw.outcome != 'success' || steps.verify_dom.outcome != 'success'
+      - name: Publish persistent Meeting Point status
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MP_OUTCOME: ${{ steps.verify_mp.outcome }}
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          repo=os.environ['GITHUB_REPOSITORY']; sha=os.environ['SOURCE_SHA']; run=os.environ['RUN_ID']
+          success=os.environ['MP_OUTCOME']=='success'
+          payload={
+            'state':'success' if success else 'failure',
+            'target_url':f'https://github.com/{repo}/actions/runs/{run}',
+            'description':'Meeting Point six-route propagation verified live' if success else 'Meeting Point six-route live verification failed',
+            'context':'pages-propagation/meeting-point-final',
+          }
+          req=urllib.request.Request(f'https://api.github.com/repos/{repo}/statuses/{sha}',data=json.dumps(payload).encode(),method='POST',headers={
+            'Accept':'application/vnd.github+json','Authorization':f"Bearer {os.environ['GH_TOKEN']}",'Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Por-Derecho-MeetingPoint-live-verifier/1.0'})
+          with urllib.request.urlopen(req,timeout=30) as r: print(r.read().decode())
+          PY
+
+      - name: Fail when exact-route verification did not succeed
+        if: steps.verify_raw.outcome != 'success' || steps.verify_dom.outcome != 'success' || steps.verify_mp.outcome != 'success'
         run: exit 1
