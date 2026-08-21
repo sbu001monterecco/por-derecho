@@ -1,7 +1,7 @@
 # BORRADOR OPERATIVO — Aportación complementaria al Comisionado de Transparencia
 
 **Fecha de preparación:** 18 de agosto de 2026  
-**Reclamación de referencia:** REGAGE26e00072591992 · expediente interno 12/2026-0710092416  
+**Reclamación de referencia:** REGAGE26e00072326601 · expediente Hacienda de origen 12/2026-0710092416 · asiento de entrada Comisionado 2220/2026 (sin nº de expediente vinculado acreditado)
 **Acto recurrido:** Resolución 28/2026, de 10 de agosto de 2026  
 **Materia:** expediente de idoneidad RIC 02/2022 · Decreto 224/2022 · informe vinculante AEAT de 17/11/2022 · MYND Yaiza
 
@@ -89,7 +89,7 @@ La cuestión se formula precisamente porque existen varias explicaciones posible
 1. extracto de las cuentas auditadas 2023 de RICPE donde figuran las Series F y G y sus importes;
 2. extracto donde se refiere la idoneidad de 1/12/2022, el préstamo de 1.598.849,32 € y la cronología de apertura;
 3. orden del día oficial del Consejo de Gobierno de 1/12/2022, F.O.D. 25;
-4. copia del justificante REGAGE26e00072591992 sólo si resulta útil para facilitar el enlace con la reclamación ya abierta.
+4. copia del justificante REGAGE26e00072326601 sólo si resulta útil para facilitar el enlace con la reclamación ya abierta.
 
 ## Control de presentación
 

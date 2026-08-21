@@ -1,7 +1,7 @@
-# THREAD DELETION AUDIT — Hacienda Resolución 28/2026 · RICPE idoneidad · 20 August 2026
+# THREAD DELETION AUDIT — Hacienda Resolución 28/2026 · RICPE idoneidad · 20 August 2026 · corrected 21 August 2026
 
-**Status:** FINAL CLOSEOUT  
-**Verdict:** **DELETION-SAFE** once this record is merged and the completion self-email is sent successfully.  
+**Status:** CORRECTED FINAL CLOSEOUT
+**Verdict:** **DELETION-SAFE only after** the 21 August identifier corrections are merged, the bilingual production pages are verified, and the corrective self-email superseding the inaccurate 20 August closeout is sent successfully.
 **Scope:** reverse-engineering/deletion audit of the repository, public website source, Gmail and File Library concerning the 7 July 2026 Hacienda access request, Resolution 28/2026, the Transparency Commissioner appeal, the June 2026 continuity filings and the RICPE / Decreto 224/2022 Series F/G public-question system.
 
 ## 1. Primary-source systems checked
@@ -47,19 +47,24 @@ The appeal against Resolution 28/2026 was independently located in Gmail/Library
 - it invokes Article 44 custody/transfer handling where the recipient is not the competent custodian;
 - it relies on Resolution 154/2026 and the Yaiza Transparency Commissioner precedent as practical comparators for segregated/partial treatment.
 
-Controlling appeal metadata:
+Controlling appeal metadata, corrected against the native RedSARA receipt and Comisionado certificate:
 
-- RedSARA appeal: `REGAGE26e00072591992`;
-- appeal/file reference used in the filing: `12/2026-0710092416`;
-- presentation: 11 August 2026 at 03:20.
+- RedSARA appeal: `REGAGE26e00072326601`;
+- presentation: 11 August 2026 at 03:20:03; registration: 03:20:06;
+- underlying Hacienda access-request expediente: `12/2026-0710092416`;
+- this Hacienda expediente is not a proved internal Comisionado appeal-file number.
 
 **Newly verified closeout datum:** a later native certificate from the Comisionado de Transparencia y Acceso a la Información Pública de Canarias records:
 
 - internal **Registro de Entrada 2220/2026**;
 - entry date/time: **11 August 2026 at 12:44**;
 - reception mode: **SIR**;
-- subject/summary identifies the appeal against Resolution 28/2026 and the same appeal/file reference;
+- subject/summary identifies the appeal against Resolution 28/2026 and repeats the underlying Hacienda expediente;
 - destination: Servicio de Reclamaciones y Asuntos Generales, Comisionado de Transparencia y Acceso a la Información Pública de Canarias.
+
+The certificate's `Nº Expediente Vinculado` field is blank. It therefore proves internal incoming registration and routing, not allocation of a separate Comisionado appeal expediente.
+
+**Correction history:** the 20 August repository closeout and its self-email used unsupported registration `REGAGE26e00072591992` and misclassified `12/2026-0710092416`. Those propositions are superseded by this corrected record and CR-057. They must not be reused.
 
 This proves internal receipt/routing of the appeal. It does **not** prove admission on the merits, urgency, estimation, access, a suspension, or any substantive determination.
 
@@ -126,7 +131,7 @@ Deletion-safe does not mean the underlying administrative/funding questions are 
 
 ## 10. Final closeout rule
 
-After this record is merged to `main` and the required completion self-email is sent successfully, a fresh ChatGPT can recover the material substance and implementation state from the repository plus connected primary-source systems without access to the originating conversation.
+After this corrected record is merged to `main`, the bilingual production pages are verified, and a corrective completion self-email expressly supersedes the inaccurate 20 August messages, a fresh ChatGPT can recover the material substance and implementation state from the repository plus connected primary-source systems without access to the originating conversation.
 
 Accordingly, after those completion events, the final status is:
 

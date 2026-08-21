@@ -96,10 +96,12 @@ The unredacted resolution contains personal/private material and is not to be co
 
 ### Transparency Commissioner appeal — filed
 
-- REGAGE: **REGAGE26e00072591992**.
-- Filed: **11 August 2026, 02:09:29**.
+- REGAGE: **REGAGE26e00072326601**.
+- Presented: **11 August 2026, 03:20:03**; registered: **03:20:06**.
 - Destination: Canary Islands Commissioner for Transparency and Access to Public Information.
-- Internal appeal file: **12/2026-0710092416**.
+- Underlying Hacienda access-request expediente: **12/2026-0710092416**.
+- Comisionado incoming-register entry: **2220/2026**, entered 11 August 2026 at 12:44 through SIR.
+- No separate linked Comisionado appeal expediente is evidenced: the certificate's `Nº Expediente Vinculado` field is blank.
 
 The appeal asks for category-by-category review, index, partial/segregable access, metadata and competent transfers.
 
