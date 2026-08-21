@@ -48,3 +48,45 @@
   const first = main.querySelector('section');
   if (first) first.insertAdjacentElement('afterend', note); else main.prepend(note);
 })();
+
+/* ELECONOMISTA-JUDGMENT-SCOPE-CLARIFICATION-20260821 */
+(() => {
+  const path = location.pathname.replace(/\/index\.html$/, '/').toLowerCase();
+  const isEs = path.endsWith('/es/eleconomista-javier-romera-enero2025/');
+  const isEn = path.endsWith('/en/eleconomista-javier-romera-january2025/');
+  if ((!isEs && !isEn) || document.querySelector('#eleconomista-source-status-clarification-20260821')) return;
+
+  const hero = document.querySelector('.mhero .shell');
+  if (!hero) return;
+
+  const box = document.createElement('aside');
+  box.id = 'eleconomista-source-status-clarification-20260821';
+  box.setAttribute('aria-label', isEn ? 'Documentary clarification on Judgment 163/2023' : 'Clarificación documental sobre la Sentencia 163/2023');
+  box.style.cssText = 'margin:1.25rem 0 0;padding:1.05rem 1.15rem;border:1px solid rgba(255,255,255,.28);border-left:6px solid #f0c666;border-radius:14px;background:rgba(255,255,255,.96);color:#172632;box-shadow:0 12px 34px rgba(0,0,0,.16);';
+
+  if (isEn) {
+    box.innerHTML = `
+      <p style="margin:0 0 .55rem;font-size:.76rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#7b171d">Documentary clarification · what the judgment did — and did not — decide</p>
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .75rem">
+        <span class="tag">FIRST INSTANCE</span><span class="tag">APPEALED</span><span class="tag">NOT FINAL</span><span class="tag">LPB ≠ SUN PARK</span><span class="tag">MEETING POINT UNDECIDED</span>
+      </div>
+      <p style="margin:.35rem 0"><strong>Judgment 163/2023 was a materially adverse first-instance insolvency-classification judgment concerning Luchy Playa Blanca, S.L. (Concurso 36/2012), not a judgment about “Sun Park” as a whole.</strong> By 20 January 2025 it had already been appealed and was not final; the judgment itself makes the stated disqualification run from finality.</p>
+      <p style="margin:.65rem 0"><strong>It did not decide the question elEconomista was verifying:</strong> whether Meeting Point/FTI had presented or commercialised Club Sei/Sun Park, under what authority, over which units, or with what economic flows.</p>
+      <p style="margin:.65rem 0;padding:.7rem .8rem;border-left:4px solid #315c7b;background:#f5f8fa"><strong>The document that stopped publication did not answer the factual question the newsroom had been investigating.</strong></p>
+      <p style="margin:.65rem 0 0;font-size:.94rem">The preserved independent commercial evidence — Meeting Point Hotels’ corporate brochure and the sonnenklar.TV offer dated 27/01/2020 — places Club Sei Lanzarote at Calle Janubio 3, the Sun Park address, within the FTI/Meeting Point commercial ecosystem. <strong>This establishes public presentation/distribution;</strong> it does not yet establish the contract, exact inventory, consummated bookings, receipts, or the lawfulness of the commercialisation.</p>`;
+  } else {
+    box.innerHTML = `
+      <p style="margin:0 0 .55rem;font-size:.76rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#7b171d">Clarificación documental · qué decidía — y qué no decidía — la sentencia</p>
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .75rem">
+        <span class="tag">PRIMERA INSTANCIA</span><span class="tag">RECURRIDA</span><span class="tag">NO FIRME</span><span class="tag">LPB ≠ SUN PARK</span><span class="tag">MEETING POINT NO RESUELTO</span>
+      </div>
+      <p style="margin:.35rem 0"><strong>La Sentencia 163/2023 era una resolución de primera instancia materialmente adversa sobre la calificación del concurso de Luchy Playa Blanca, S.L. (Concurso 36/2012), no una resolución sobre «Sun Park» en su conjunto.</strong> El 20 de enero de 2025 ya estaba recurrida y no era firme; la propia sentencia hace operar la inhabilitación desde su firmeza.</p>
+      <p style="margin:.65rem 0"><strong>No resolvió la cuestión que elEconomista estaba contrastando:</strong> si Meeting Point/FTI había presentado o comercializado Club Sei/Sun Park, con qué autoridad, sobre qué unidades o con qué flujos económicos.</p>
+      <p style="margin:.65rem 0;padding:.7rem .8rem;border-left:4px solid #315c7b;background:#f5f8fa"><strong>El documento que detuvo la publicación no contestó la pregunta factual que la redacción venía investigando.</strong></p>
+      <p style="margin:.65rem 0 0;font-size:.94rem">La evidencia comercial independiente preservada —el folleto corporativo de Meeting Point Hotels y la oferta de sonnenklar.TV del 27/01/2020— sitúa Club Sei Lanzarote en Calle Janubio 3, la dirección de Sun Park, dentro del ecosistema comercial FTI/Meeting Point. <strong>Esto acredita presentación/distribución pública;</strong> no acredita todavía el contrato, el inventario exacto, reservas consumadas, cobros ni la licitud de la comercialización.</p>`;
+  }
+
+  const lead = hero.querySelector('.lead');
+  if (lead) lead.insertAdjacentElement('afterend', box);
+  else hero.append(box);
+})();
