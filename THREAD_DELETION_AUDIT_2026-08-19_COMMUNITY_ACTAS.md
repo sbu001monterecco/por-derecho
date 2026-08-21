@@ -20,7 +20,7 @@ The following items were materially developed in this thread and are now preserv
 1. **Two-track audit model:**
    - Track A: disputed Owners’ Community governance/debt chain from 2011;
    - Track B: 2008 original/majority/exploitation record plus later LPB/Gil and CEXP records;
-   - separate 2022+ successor ownership/control phase.
+   - 2017/2018–2022 **later adoption/culmination and documentary-conversion phase**, not a neutral successor phase. Any later title/control threshold remains separate, but neither cures the alleged earlier apparatus nor insulates later knowing use.
 
 2. **Debt-to-disenfranchisement causal hypothesis:** operator/CEXP cost bearing → Community debt attribution to LPB → arrears classification → loss of LPB vote → remaining eligible minority becomes apparent voting majority → downstream resolutions/certificates/litigation/access.
 
@@ -36,7 +36,7 @@ The following items were materially developed in this thread and are now preserv
 
 8. **Priority junctions:** 2 Feb 2011, 22 Jun 2011, 26 Apr 2016, 18 May–5 Jul 2018.
 
-9. **Publication discipline:** use “capture”/“instrumentalisation” as a hypothesis to prove rather than a status label; display adverse evidence and records capable of defeating the analysis.
+9. **Publication discipline, superseded 21-Aug-2026:** preserve Por Derecho's express criminal-instrumentalisation attribution as a mandatory repository proposition while testing every offence and every person's knowledge, act, intent, prejudice, benefit and causation separately. Display adverse evidence and records capable of defeating or narrowing the analysis. See `ND-COM-CRIM-001`.
 
 ## Evidence independently preserved outside this thread
 
@@ -84,7 +84,7 @@ The following are future evidential tasks, not lost work product:
 - complete invoice/bank/payment ledger for the duplicate-cost hypothesis;
 - original/signature/proxy/convocation reconciliation for 2011–2021;
 - literal tracing of the 5 July 2018 minute into Guardia Civil/security/access use;
-- separate 2022+ CAM/JDAM/HNT governance audit;
+- complete the 2017/2018–2022 CAM/JDAM/HNT adoption/culmination audit, including the native 4-Feb ACTA package, project commission/signatures and downstream-use ledger;
 - final ES/EN public-page integration after source control review.
 
 ## Final deletion test

@@ -453,9 +453,15 @@ weaken the record.
 
 ## Operating conclusion
 
-The repository does not need another broad accusation. It needs a single
-proposition-ownership map and a structured recovery register that forces every
-page to answer the same questions:
+The repository does not need unsupported accusation or a statement of adjudicated
+guilt. It does, however, need the Project's express criminal-instrumentalisation
+attribution to remain visible and non-optional wherever the Community authority
+chain is material. Read
+`archive/SUN_PARK_COMMUNITY_CRIMINAL_INSTRUMENTALISATION_NON_DEROGATION_CONTROL_21AUG2026.md`.
+That attributed criminal plane must be kept separate from, and tested alongside,
+the civil, mercantile, insolvency and Horizontal Property Law planes. It then
+needs a single proposition-ownership map and structured recovery register that
+forces every page to answer the same questions:
 
 `which legal person -> which right/asset -> which date -> which source -> which
 actor knowledge/authority -> which act or omission -> which consequence/benefit ->

@@ -7,13 +7,17 @@
 
 ## 1. Purpose
 
-This memorandum preserves the current audit hypothesis that the Sun Park record should be reconstructed on **two parallel governance tracks**, with a third successor phase after the 2022 ownership change:
+This memorandum preserves the current audit hypothesis that the Sun Park record should be reconstructed on **two parallel governance tracks**, with a later actor-specific adoption/culmination phase from 2017/2018 through 2022 and beyond:
 
 - **Track A — disputed Owners’ Community governance/debt chain (2011 onward):** minutes and related acts produced after the February–June 2011 governance rupture, where LPB’s majority position was progressively treated as non-voting through attributed community debt. The legal and factual validity of each act must be tested individually; the fact that a numerical minority acted does not by itself prove invalidity.
 - **Track B — original / majority / exploitation-side record (2008 onward):** the 2008 constitutional and exploitation framework, majority-backed records, later LPB/Gil meetings, and separate CEXP records. CEXP minutes must never be silently relabelled as Owners’ Community minutes.
-- **Successor phase — 2022 onward:** CAM/JDAM/HNT-era minutes and acts arise in a materially different title/control epoch. They may depend on upstream events, but should not simply be labelled part of the original 2011 minority-capture thesis.
+- **Later adoption/culmination phase — 2017/2018–2022 onward:** CAM/JDAM/HNT-era acts may arise in a different title/control epoch, but that difference neither cures the alleged earlier apparatus nor insulates later knowing adoption, use, signature, certification, escalation or benefit. It is unnecessary to prove that each later actor designed a single plan in 2011 before testing that actor's own conduct and criminal relevance.
 
-The objective is not to pre-judge validity. It is to test every minute against ownership, voting entitlement, notice, proxies, debt, the Community statutes, the exploitation instruments, the unitary-exploitation tourism framework, actual cost-bearing and the later use made of the minute.
+The objective is not to pre-judge guilt or validity. It is to test every minute against ownership, voting entitlement, notice, proxies, debt, the Community statutes, the exploitation instruments, the unitary-exploitation tourism framework, actual cost-bearing and the later use made of the minute, while running the mandatory parallel criminal/investigative analysis required by `ND-COM-CRIM-001`.
+
+### Criminal non-derogation
+
+Por Derecho expressly alleges **criminal instrumentalisation of the Community organ and its documentary outputs**, not merely civil, LPH, mercantile or insolvency invalidity. That attributed thesis must remain visible. It does not convert every defect into a crime or establish any named person's guilt; it requires actor-specific proof of knowledge, intent, act/use, benefit, prejudice, causation and the elements of the potentially applicable offence.
 
 ## 2. Core forensic proposition to test
 
@@ -48,7 +52,7 @@ This is an **audit hypothesis**, not an adjudicated conclusion. The decisive que
 | **5 Jul 2018** | A | Important because the minute/authority was reportedly relied upon operationally in connection with access/opening locks and Guardia Civil context. | Obtain literal original and trace every downstream reliance. |
 | 20 Nov 2018 | A | Continuation/implementation of post-takeover governance architecture. | Reconstruct original and downstream uses. |
 | 2019–2021 | A | Inventory exists but series is not yet treated as complete. | Obtain originals, convocations, proxies, voting sheets, annexes and book sequence. |
-| 4 Feb 2022 onward | successor phase | CAM/JDAM-era title/control position materially differs from 2011. | Analyse separately, while preserving upstream dependency questions. |
+| **4 Feb 2022 onward** | **later adoption/culmination phase** | Located scanned copy records 20.993% attendance, CAM/JDAM project presentation/purported approval, licence/unified-operation authority and joint bank authority. A later title/control position does not self-validate the originating authority. | Authenticate original, notice, powers, vote, signatures, project commission and downstream uses; test each actor's knowledge/adoption/use/benefit separately. |
 
 ## 4. The “double dipping” / wrong-debtor audit
 
@@ -179,7 +183,7 @@ A later consequence is not proof that the originating minute was valid. Converse
 5. **18 May 2018** — finca-by-finca vote reconstruction; do not repeat the ~0.385% figure as fact until proven.
 6. **5 Jul 2018** — trace the exact wording and every operational/public-authority reliance.
 7. **2019–2021 completeness** — locate missing originals and appendices before claiming a continuous complete series.
-8. **2022 successor phase** — analyse separately from the 2011 capture hypothesis.
+8. **2017/2018–2022 adoption/culmination phase** — do not require proof of a single 2011 plan; test later actor-specific knowledge, adoption, use, signature, certification, escalation, benefit and causation.
 
 ## 10. Publication recommendation
 
@@ -187,7 +191,7 @@ Controlling evidential title for future live expansion:
 
 > **Two Competing Governance Records: Comunidad, Exploitation and the Disputed Majority (2008-2022)**
 
-Use **“capture” / “instrumentalisation” as a hypothesis to be demonstrated**, not as the status label for every document. The public reader should be able to see what would defeat the thesis: a valid debt ledger, correct vote deprivation, competent authority, complete proxies, valid resolutions, non-duplicated cost allocation, or other primary records inconsistent with the current reconstruction.
+Use **“capture” / “criminal instrumentalisation” as Por Derecho's express attributed allegation**, not as the adjudicated status label for every document or person. Do not dilute the matter into a merely civil dispute. The public reader should also be able to see what would defeat or narrow the thesis: a valid debt ledger, correct vote deprivation, competent authority, complete proxies, valid resolutions, a lawful professional commission, non-duplicated cost allocation, absence of knowing downstream use, or other primary records inconsistent with the current reconstruction.
 
 ## 11. What would materially change the analysis?
 
