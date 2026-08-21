@@ -178,6 +178,17 @@
   document.head.appendChild(module);
 })();
 
+/* PROSECUTION-PUBLIC-ENTRY-20260821 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-prosecution-public-entry-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('prosecution-public-entry-20260821.js?v=20260821a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-prosecution-public-entry-loader', '20260821');
+  document.head.appendChild(module);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js
