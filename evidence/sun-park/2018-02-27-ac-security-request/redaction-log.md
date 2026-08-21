@@ -1,13 +1,13 @@
-# Public redaction log
+# Public redaction and digitisation log
 
 **Evidence ID:** `SP-2018-02-27-AC-SECURITY-REQUEST`  
-**Method:** render original at 300 dpi → burn redaction rectangles into pixels → create raster PDF → OCR the already-redacted raster → strip/replace metadata → render and inspect final PDF.
+**Canonical repository method:** manually verify source image → create diplomatic transcript without silent correction → replace three direct electronic addresses with R1–R3 redaction markers → generate deterministic searchable PDF in ReportLab invariant mode → inspect text layer, structure and rendered page.
 
 ## Redactions
 
 | Marker | Location | Removed category | Reason | Operative meaning retained? |
 |---|---|---|---|---|
-| R1 | Header — sender field | Direct professional electronic address | Unnecessary direct contact data | Yes: sender name, capacity, firm and message remain visible |
+| R1 | Header — sender field | Direct professional electronic address | Unnecessary direct contact data | Yes: sender name/capacity and operative message are preserved in the source record |
 | R2 | Header — recipient field | Direct organisational/professional electronic address | Unnecessary direct contact data | Yes: the body identifies the recipient’s Community role |
 | R3 | Header — copy field | Direct professional electronic address | Unnecessary direct contact data | Yes: the operative request is unaffected |
 
@@ -16,17 +16,25 @@
 - sender and recipient names where evidentially material;
 - stated professional and institutional capacities;
 - date, time and subject;
-- the complete operative message;
-- firm identity and standard business footer;
-- the original scan appearance, including visible typographical forms.
+- complete operative wording;
+- the visible source forms `Le escrito` and `accedo`, marked `[sic]`;
+- source hash and evidence ID.
 
-## Validation
+## Canonical repository PDF
 
-- the three removed address strings are absent from the final PDF’s searchable text layer;
-- the final PDF is a one-page A4 document and contains no forms or JavaScript;
-- visual inspection confirms that the redaction rectangles fully cover the original address glyphs;
-- manual transcript and translation are stored separately because OCR is a retrieval aid, not the authoritative transcript.
+The committed PDF is a clean digital derivative, not a representation that the original was natively digital. It is built reproducibly from the checked transcript by `/tools/build_ac_security_request_public_pdf.py` using `reportlab==4.4.9` with invariant output enabled.
+
+Validation:
+
+- no direct email address is present in visible text or the searchable layer;
+- one A4 page, no forms, JavaScript or encryption;
+- rendered page visually reviewed;
+- exact SHA-256: `f7ae8cf03455dd087f31b52a1cfa4c6e3989a1db2b566515a9fc81c8e1d18f98`.
+
+## Supplementary facsimile working copy
+
+A raster-redacted facsimile was separately produced by burning the three redactions into pixels before OCR. It was visually checked and its searchable layer was tested. Its SHA-256 is `91e8366e65496ff63d11877af6f81f90a89472c37c386db94622b4d1de180551`. It is retained as a working/public-delivery copy and is not the canonical repository object.
 
 ## Boundary
 
-The public derivative does not replace or alter the restricted original. No unredacted copy is committed to the public GitHub repository.
+Neither public derivative replaces or alters the restricted original. No unredacted copy is committed to the public GitHub repository.
