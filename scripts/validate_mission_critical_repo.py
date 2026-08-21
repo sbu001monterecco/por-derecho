@@ -42,6 +42,7 @@ ALLOWED_WRITE = {
     "verify-por-derecho-seller-readiness-live.yml": {"statuses"},
     "verify-ac-community-de-facto-administration-live.yml": {"statuses"},
     "verify-eleconomista-live.yml": {"statuses"},
+    "verify-meeting-point-final-propagation-live.yml": {"statuses"},
     "production-smoke-monitor.yml": {"issues"},
     "repository-backup-bundle.yml": {"statuses"},
 }

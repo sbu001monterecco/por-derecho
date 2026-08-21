@@ -1,6 +1,45 @@
-# CURRENT HANDOVER — 20 AUGUST 2026
+# CURRENT HANDOVER — 21 AUGUST 2026
 
 **Status:** canonical immediate handover for future ChatGPT threads. Read this file before continuing the Sun Park / Cuatrecasas / La Laguna / current-counsel work.
+
+## 21 August repository, website and institutional checkpoint
+
+Baseline `main` used for this checkpoint: `985466e1075890d67e8abbeed724a64cbb29ceca`, merged through PR #723. Always verify the remote ref before writing because this SHA is an audit anchor, not a permanent assertion about the current head. PR #720 supplied the controlling CGPJ/FGE public correction; PR #721 independently verified its critical public-edge markers and technical discovery; PR #723 preserved the linked Treasury/RICPE/GC836 thread continuity without changing public website routes.
+
+The latest controlling institutional position is:
+
+- **CGPJ Alzada 286/2026:** the 28/29 July package with five attachments was received and joined; two later graphical annexes and the audiovisual-source link were incorporated on 21 August; the appeal was described as `en trámite`. Joinder and procedural status are not merits findings.
+- **Fiscalía General del Estado:** four separate Secretaría Técnica acknowledgements establish receipt and anticipated management only. They do not establish file association, assignment, admission, investigation or endorsement.
+- **AEAT transparency `00001-00113069`:** the 21 August follow-up was transferred to AEAT. Origin linkage, January-August chronology, operative unit, status and internal index remain open.
+- **Anticorrupción:** receipt is acknowledged; admission remains subject to curing the identified electronic-signature/formalisation defect without expanding the allegations.
+- **RICPE ethics / Ithikios:** an additional portal update exists but remains to be opened, preserved and characterised from the native record.
+
+Canonical sources:
+
+- `CURRENT_HANDOVER_CGPJ_FISCALIA_ROUTING_20AUG2026.md`
+- `archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md`
+- `/en/cgpj-public-prosecution-routing-update-20-august-2026/`
+- `/es/actualizacion-cgpj-fiscalia-20-agosto-2026/`
+
+## Insolvency-perimeter language lock
+
+Never use `the insolvent hotel`, `Sun Park insolvency`, `the hotel was insolvent` or `LPB was insolvent` as an unqualified project description.
+
+Controlling formulation:
+
+> LPB was the debtor declared in Concurso 36/2012 following its voluntary filing under an asserted cash-flow position and imminent enforcement pressure. The proceeding concerned LPB and its estate. It did not by itself place the whole mixed-ownership Sun Park complex, CEXP, Matkator, Aweswell, other owners, independent units or the hotel exploitation layer into insolvency or under the Insolvency Administrator's authority.
+
+Where a source used broader shorthand, preserve it only as an attributed quotation or contemporaneous characterisation and correct the legal perimeter immediately. Link to `/en/lpb-insolvency/` or `/es/insolvencia-lpb/` on material public routes.
+
+The opening declaration, the first-instance `calificación culpable`, the pending appeal, LPB's actual cash-flow position, the causes of the filing and the avoidability of the crisis are separate propositions. Do not convert any one of them into automatic proof of the others.
+
+## Current repository-control checkpoint
+
+- The public site is functioning and PR #721 verified the critical PR #720 CGPJ/Fiscalía and technical-discovery markers at the public edge.
+- The case-information-architecture red status at the baseline SHA is a verifier-contract defect: rendered routes and the nested executable loader passed, while the raw check looked for nested-loader markers in `assets/site.js`.
+- `scripts/verify_recent_live_21aug2026.py` follows the corrected Alzada/FGE status and must not regress to the superseded receipt-unproved wording.
+- `ops/PRODUCTION_STATUS.json` records the latest positively observed deployment; `ops/LAST_KNOWN_GOOD.json` remains the rollback anchor until a corrected current-head live gate passes.
+- Draft or conflicted PRs must be reconciled against current `main`; mergeability is not evidence that their content remains current. In particular, PR #710 substantially duplicates merged PR #709 and should be closed as superseded after final confirmation.
 
 ## Correct counsel identities
 
