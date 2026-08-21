@@ -30,3 +30,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-ac-community-de-
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-rhg-open-message.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-jdam-architecture.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-asset-recovery.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-montelanza-governance-origin.xml
