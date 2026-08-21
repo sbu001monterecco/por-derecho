@@ -2,7 +2,7 @@
 
 **Date:** 21 August 2026  
 **Evidence ID:** `SP-2018-02-27-AC-SECURITY-REQUEST`  
-**Status:** `PRIMARY SOURCE LOCATED · PUBLIC DERIVATIVE REDACTED · OCR AFTER REDACTION · LEGAL SCOPE CONTROLLED`
+**Status:** `PRIMARY SOURCE LOCATED · PUBLIC CONTACT DATA REDACTED · DETERMINISTIC DIGITAL COPY · LEGAL SCOPE CONTROLLED`
 
 ## Mandatory retrieval
 
@@ -32,7 +32,7 @@ This is direct evidence of the proposed institutional route. It is not, without 
 
 ## Public/private separation
 
-Only the redacted searchable derivative is committed to the public repository. Three direct electronic contact addresses were removed through pixel-level redaction before OCR. The unredacted source remains outside the public repository. The restricted-source SHA-256 and source pointer are recorded in the evidence manifest.
+The public repository contains a deterministic, searchable digital derivative built from the manually checked diplomatic transcript. Three direct electronic contact addresses are represented only by irreversible redaction markers. The unredacted scan remains outside the public repository. A separately produced raster-redacted facsimile was visually checked for disclosure risk and retained as a working/public-delivery copy; the repository derivative is the reproducible canonical web copy. The restricted-source SHA-256 and source pointer are recorded in the evidence manifest.
 
 ## Required cross-checks
 
