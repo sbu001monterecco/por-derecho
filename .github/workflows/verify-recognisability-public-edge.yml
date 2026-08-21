@@ -34,7 +34,7 @@ jobs:
             es_body="$(curl --fail --silent --show-error --location --max-time 20 --header 'Cache-Control: no-cache' "${es}?verify=${GITHUB_SHA}-${attempt}" || true)"
             if grep -Fq 'Separate responsibility. Integrate evidence.' <<<"$en_body" \
               && grep -Fq 'Initiative in formation' <<<"$en_body" \
-              && grep -Fq 'Separa la responsabilidad. Integra la prueba.' <<<"$es_body" \
+              && grep -Fq 'Separar responsabilidades. Integrar la evidencia.' <<<"$es_body" \
               && grep -Fq 'Iniciativa en formación' <<<"$es_body"; then
               echo "PUBLIC_EDGE_VERIFIED on attempt ${attempt}"
               exit 0
