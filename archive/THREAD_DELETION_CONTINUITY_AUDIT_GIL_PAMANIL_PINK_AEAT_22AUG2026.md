@@ -26,7 +26,7 @@ A private controlling note is separately retained with the original participant 
 | Speaker attribution | Gil identifies the written instructions as his. The earlier declarant remains separately attributed. | Text attribution is not biometric voice authentication. |
 | Relationship | Gil says he and the reserved declarant were generally close and coordinated; divergences are limited and Pink-linked. | Pressure and fragmented-misunderstanding explanations remain Gil's uncorroborated allegations. |
 | Pamanil | Gil alleges every proved Pamanil act was an instrument of fraud or another economic offence through the relevant natural persons, principals or agents. | “Pamanil did nothing” is literally contradicted by observable administrative/documentary/judicial acts and Community-side payments/services. No located primary proof establishes Pamanil's integrated hotel maintenance. Criminal purpose requires actor-by-actor proof. |
-| 2008 authority | Gil asserts a valid collective owner route to CEXP and no unilateral LPB power to create the whole-hotel mandate. | The located vote was 74.90% approval with 10.01% opposition/reservation, not unanimous consent. Owners' Community, CEXP and owners are distinct layers. |
+| 2008 authority | Gil's controlling asserted chain is `owners → Owners' Community acting lawfully → CEXP as explotadora`; “all owners” identifies the universe entitled to participate through the organ, not a claim that each owner voted in favour. LPB had no unilateral power, in Gil's position, to bypass that chain or create the whole-hotel mandate. | The located vote was 74.90% approval with 10.01% opposition/reservation, not unanimous consent. The exact competent organ, quorum, threshold, affected rights and binding effect remain to be proved. Owners' Community, CEXP and owners are distinct layers. |
 | Pink contract | Gil's primary position is total nullity *ab initio* of the 6-Feb-2012 LPB–Monterecco contract. | Unadjudicated. Preserve the 1-Feb notice, LPB own-unit rights, severability clause, real 159-unit/477-bed operation/registration, contemporaneous defence, 2015 judgment and later adverse rulings. |
 | Keys | Pink did not hold the CEXP maintenance/master set and lacked lawful whole-hotel transfer authority, according to Gil. | The facially signed 22-May-2017 Pink→LPB access-key/possession instrument contradicts “Pink never had or delivered any physical key.” May-2012 and May-2017 are distinct events. |
 | AP 89/2014 | Adverse, period-specific finding concerning Monterecco and 18 claimant units; not universal whole-hotel authority. | Drive `1hnZx…` / SHA-256 `1bce9ad…` is AP 89/2014, Rollo 793/2012. Former AP 16/2014 / 570/2012 references to the same binary are superseded by CR-066. |
@@ -39,7 +39,7 @@ A private controlling note is separately retained with the original participant 
 ## 3. Main contradiction questions preserved for Gil
 
 1. What exact keys, zones and physical exchange did the 22-May-2017 instrument cover, and are authenticity/signatures disputed or only scope/capacity?
-2. Does “all owners” mean unanimity or a collective decision said to bind a defined participating/affected perimeter, and what legal threshold applies?
+2. Gil has clarified that “all owners” means the universe entitled to act through the Owners' Community and that the operative act is a legally valid collective resolution conferring the mandate on CEXP. Which exact organ, quorum, majority, finca/rights perimeter and legal threshold made that resolution binding?
 3. Which competent organ authorised the 1-Feb-2012 CEXP→Monterecco notice?
 4. Why is the 6-Feb contract's essential object indivisible despite LPB's own units and the severability clause?
 5. For every Pamanil act, who acted for whom, what was false or unlawful, who relied, what effect and benefit followed, and what innocent explanation is excluded?
@@ -62,3 +62,11 @@ A private controlling note is separately retained with the original participant 
 - criminality of Pamanil, the insolvency administrator or a judge as an established fact.
 
 Any later first-person clarification by Gil or authenticated primary source should be added as a visible superseding control, never by silently deleting this correction history.
+
+## 5. Publication checkpoint
+
+- GitHub PR [#800](https://github.com/sbu001monterecco/por-derecho/pull/800) merged into `main` on 22 August 2026 as commit `4a92163f99c4e3339368692534197d0632ac7d98` after all six reported GitHub workflows completed successfully.
+- Public readback succeeded for the English and Spanish Community pages, both Pink/AEAT pages and Declaration 009.
+- The live Community pages reproduce the controlling authority chain and unanimity caveat; the Pamanil criminal-purpose position is explicitly attributed; the AEAT source audit and Declaration 009 are publicly retrievable.
+
+This checkpoint proves repository merge and public availability of the controlled wording. It does not prove the truth of an allegation or resolve any open legal/evidentiary issue above.
