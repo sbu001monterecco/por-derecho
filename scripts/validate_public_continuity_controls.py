@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+import re
 from pathlib import Path
 
 
@@ -29,6 +30,7 @@ REQUIRED_TEXT = {
 
 PROHIBITED_PUBLIC_TEXT = ("Control 24", "control 24")
 JUDICIAL_SITEMAP = f"Sitemap: {SITE}/sitemap-judicial-spine.xml"
+CANONICAL_OR_ALTERNATE = re.compile(r'<link rel="(?:canonical|alternate)"[^>]+href="([^"]+)"')
 
 
 def main() -> int:
@@ -37,8 +39,9 @@ def main() -> int:
         text = (ROOT / rel).read_text(encoding="utf-8")
         if f'<link rel="canonical" href="{canonical}">' not in text:
             errors.append(f"{rel}: self canonical is missing or incorrect")
-        if "https://aweswell.com/" in text:
-            errors.append(f"{rel}: unavailable external canonical or alternate remains")
+        for href in CANONICAL_OR_ALTERNATE.findall(text):
+            if not href.startswith(f"{SITE}/"):
+                errors.append(f"{rel}: canonical or alternate must use GitHub Pages")
 
     for rel, expected in REQUIRED_TEXT.items():
         if expected not in (ROOT / rel).read_text(encoding="utf-8"):

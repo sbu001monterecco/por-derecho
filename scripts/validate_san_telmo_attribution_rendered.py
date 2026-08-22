@@ -71,10 +71,10 @@ required = {
 
 forbidden = {
     "en/san-telmo-ricpe-sun-park/index.html": [
-        "https://aweswell.com/en/san-telmo-ricpe-sun-park/",
+        '<link rel="canonical" href="https://sbu001monterecco.github.io/por-derecho/es/san-telmo-ricpe-sun-park/">',
     ],
     "es/san-telmo-ricpe-sun-park/index.html": [
-        "https://aweswell.com/es/san-telmo-ricpe-sun-park/",
+        '<link rel="canonical" href="https://sbu001monterecco.github.io/por-derecho/en/san-telmo-ricpe-sun-park/">',
     ],
 }
 
