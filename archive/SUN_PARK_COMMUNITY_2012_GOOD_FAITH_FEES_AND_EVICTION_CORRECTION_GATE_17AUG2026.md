@@ -4,11 +4,13 @@
 **Status:** CANONICAL CORRECTION / RETRIEVAL GATE — MUST BE READ FOR COMMUNITY, CEXP, OWNER-FEE, EVICTION AND AUTHORITY-LINEAGE WORK  
 **Scope:** 2008 restructuring and participation baseline → disputed 2011 authority break → early-2012 incoming management → JV 1260/2011 eviction/operator litigation → temporary owner invoicing / cost-recovery practice → later Community authority and instrumentalisation arguments.
 
+**Mandatory pickup:** read Declarations 005–008, CR-058/CR-059/CR-061 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`. Gil's written self-attribution supports attribution of his present text; it does not authenticate any voice.
+
 ## 1. Why this correction exists
 
 Future Project Sun Rock / Por Derecho work must **own and explain**, rather than conceal or rationalise away, an early-2012 operational mistake made by the incoming hotel-management side.
 
-The user’s present correction is that when the incoming management team and Patricia Domínguez arrived in the Sun Park situation in early 2012 they were **new to the pre-existing ownership / Community / exploitation conflict, materially misinformed and, in the user’s account, misadvised**. During the first period of operating the hotel they applied and invoiced charges described as Community / maintenance-type fees to owners who had withdrawn their units from the common hotel exploitation while continuing to occupy, rent, lend or otherwise use those units and consume hotel/common infrastructure such as electricity and water.
+The user’s present correction is that when the incoming management team, including the reserved declarant from Gil Marer's personal/business perimeter, arrived in the Sun Park situation in early 2012 they were **new to the pre-existing ownership / Community / exploitation conflict, materially misinformed and, in the user’s account, misadvised**. During the first period of operating the hotel they applied and invoiced charges described as Community / maintenance-type fees to owners who had withdrawn their units from the common hotel exploitation while continuing to occupy, rent, lend or otherwise use those units and consume hotel/common infrastructure such as electricity and water.
 
 The user now states expressly that **this charging model was wrong / incorrect as a matter of the legal and governance structure then applicable**, notwithstanding the practical problem of non-participating owners consuming services without contributing to the operating cost base. The Project must continue to acknowledge that error wherever the invoices or early-2012 Community-cost practice are material.
 
@@ -34,7 +36,7 @@ The Project position is instead:
 
 ### 3.1 Incoming-management knowledge / state of mind
 
-**PARTY ADMISSION / FIRST-PERSON CORRECTION:** the user says that he and Patricia arrived in early 2012 as newcomers to the pre-existing dispute and were misinformed / misadvised.
+**PARTY ADMISSION / FIRST-PERSON CORRECTION:** the user says that he and the reserved declarant arrived in early 2012 as newcomers to the pre-existing dispute and were misinformed / misadvised.
 
 Do not upgrade `misadvised` into professional negligence by a named adviser without the underlying advice, retainer, instructions and legal analysis.
 
@@ -55,6 +57,14 @@ Future research should test that explanation against meter data, utility bills, 
 **CORRECTED PROJECT POSITION:** do not present the early-2012 invoice practice as legally correct merely because it was used by the incoming operator. The Project’s current position is that the fee mechanism was wrong / incorrect.
 
 That correction does **not** decide every separate question about service consumption, unjust enrichment, contractual contribution, Community expenses, hotel-exploitation obligations or owner liability; those require the exact legal source and period-specific facts.
+
+### 3.5 Declarations 007–008 — relationship, Garrigues and contract/CEXP clarification
+
+Gil Marer now clarifies that he and the reserved declarant were generally very close and coordinated and that the differences he identifies are limited and Pink-linked. His allegation that the declarant's personal Pink exposure and adverse/insolvency-administration pressure caused fragmented misunderstandings remains attributed and uncorroborated. The separate-voice rule is evidential discipline, not a general non-coordination finding.
+
+Gil also recalls that **Garrigues** recommended the Monterecco route, says he considered that advice wrong very soon, and argues that the 6-Feb LPB–Monterecco contract should have been treated as wholly or partly void *ab initio* because only CEXP could hold or confer the owners-derived whole-hotel mandate. This remains his recollection/legal position; the first presently verified Garrigues activity is 28-Mar-2012, after the 1/6-Feb instruments, and the record has not adjudicated nullity or CEXP exclusivity. Gil authorises naming Garrigues and requests its testimony/file; this does not itself prove the advice or permit indiscriminate publication of confidential/privileged source bodies.
+
+That clarification does not withdraw the admission in this gate. Even if the Pink contract was invalid or ineffective, the early fee/invoicing mechanism must still be preserved and assessed on its own legal, accounting and factual basis.
 
 ## 4. JV 1260/2011 / eviction chronology — what is presently controlled
 
@@ -84,11 +94,13 @@ The master storyline currently records:
 - a major Community governance / debt / maintenance rupture placed in 2011 by the controlled source family;
 - pre-concurso owner/operator litigation active by February 2012.
 
+The causation control now separates: Gil's attributed 2008 Montelanza, S.L./actor-specific Molina-linked root-cause theory; the documented structural vulnerability of divided titles, voluntary CEXP participation and unresolved seller/unit completion; the disputed 22-Jun-2011 debt/vote/authority matrix; and Bankia enforcement/scheduled auction as the immediate documented 2012 trigger.
+
 Accordingly, future analysis must not use the incoming operator’s erroneous invoicing as if it originated the underlying governance conflict or as if it cured, adopted or validated every pre-existing minority-side authority claim.
 
 ## 6. 2008 sale / approximately 23% non-compliant-owner proposition — source-status lock
 
-The user’s present instruction states that the 2008 Monte Lanza → Multimatrix ownership/restructuring transaction was breached / not complied with by owners representing **approximately 23% of the total 262-unit perimeter**, and asks that this be treated as confirmed.
+Gil's present position is that the 2008 Montelanza, S.L. → Multimatrix ownership/restructuring transaction was incompletely or defectively performed by a seller/minority perimeter associated, in specific acts, with Montelanza, S.L. and Molina-linked owners; an **approximately 23%** perimeter is his current asserted estimate.
 
 For repository discipline:
 
@@ -97,6 +109,9 @@ For repository discipline:
 - verify the denominator and category: `262` may describe the productive-hotel unit structure (220 apartments + 40 commercial premises + 2 solariums in the controlled Annex), while the relevant sale / participation denominator may use a different legal coefficient or finca schedule;
 - recover the 2008 sale/transfer documents, owner participation/accession commitments, Community/CEXP minutes and the exact list of owners/units said not to have complied;
 - distinguish `breach of the sale / participation arrangement`, `non-participation in hotel exploitation`, `non-payment`, and `later Community voting position`; they are related but not identical propositions.
+- do not infer collective identity, contractual obligation, shared intent, sole causation or liability from minority/family association, non-adherence or temporal sequence; map each actor, finca, capacity, act and defence.
+
+The divided-title/voluntary-CEXP structure is a separately documented **structural vulnerability**, not proof of misconduct. The 22-Jun-2011 governance matrix and Bankia's immediate 2012 enforcement/auction trigger are later, separate causal layers.
 
 **Nomenclature control:** current repository history uses `Multimatrix`. The present user instruction also pronounced/wrote `Multimetrics`. Do not create a second entity from that spelling variation. Use the exact corporate name shown by the 2008 primary document once recovered/verified.
 
@@ -144,8 +159,9 @@ This correction is subordinate to stronger primary evidence but **mandatory alon
 - `archive/CALIFICACION_ALLEGATION_03_UNITARY_COMMUNITY_PRIVATE_ACTORS_AC_CAUSATION_16AUG2026.md`;
 - `archive/FMMM_COMMUNITY_AC_LIQUIDATION_JANFEB2026_SOURCE_BUNDLE_INGEST_AND_RETRIEVAL_GATE_16AUG2026.md`;
 - `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md`;
-- `archive/CORRECTION_REGISTER.md`, especially CR-019 and CR-032;
-- `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-047.
+- `archive/CORRECTION_REGISTER.md`, especially CR-019, CR-032, CR-058, CR-059 and CR-061;
+- `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-047 and ME-065;
+- Declarations 005–008 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`.
 
 Future Community/ACTA searches must read both this correction gate and the authority-lineage gate before treating invoices, debts, voting exclusions or office-holder authority as evidence.
 
@@ -156,26 +172,29 @@ Update the existing Community predecessor-apparatus evidence queue rather than c
 1. native 2008 Monte Lanza → Multimatrix sale / transfer package;
 2. exact owner/unit accession / participation schedule and the source supporting the approximately-23% non-compliance figure;
 3. pre-2012 CEXP / Comunidad statutes, exploitation agreements and cost-allocation rules;
-4. complete JV 1260/2011 claim, annexes, defence, hearing record, judgment/order and appellate history;
-5. native early-2012 invoices issued by incoming management / operator to non-participating owners;
-6. the accounting ledger showing how those invoices were booked and whether reversed/credited/collected;
-7. contemporaneous emails/legal advice explaining why the charges were issued and later discontinued/corrected;
-8. meter/utility/service evidence for electricity, water and other shared operating costs by unit / period;
-9. owner correspondence showing occupation/rental/use status and objections/payment positions;
-10. later Community/AC/Fiscal/judicial documents that cite or rely on the incoming operator’s invoices, so the exact alleged instrumentalisation can be mapped.
+4. complete 2-Feb and 22-Jun-2011 ACTAS, calls, attendance, proxies, debt schedules, votes, challenges and outcomes;
+5. complete JV 1260/2011 claim, annexes, defence, hearing record, judgment/order and appellate history;
+6. native early-2012 invoices issued by incoming management / operator to non-participating owners;
+7. the accounting ledger showing how those invoices were booked and whether reversed/credited/collected;
+8. Garrigues engagement, pre-1/6-Feb advice/draft chronology, witnesses, billing, May-2012 forwarding chain and 11-Apr-2013 report, preserved and confidentiality/privilege-reviewed before disclosure;
+9. Bankia enforcement/auction documents and month-by-month causal bridge;
+10. meter/utility/service evidence for electricity, water and other shared operating costs by unit / period;
+11. owner correspondence showing occupation/rental/use status and objections/payment positions;
+12. later Community/AC/Fiscal/judicial documents that cite or rely on the incoming operator’s invoices, so the exact alleged instrumentalisation can be mapped.
 
 ## 11. Name / identity safety note
 
-The present oral/user instruction referred once to the incoming person as `Miguel`, while the repository’s controlled project identity elsewhere is Gil Marer together with Patricia Domínguez. **Do not publish or propagate `Miguel` as a verified identity from this instruction.** Treat it as an apparent speech/name discrepancy unless the user separately confirms that a different Miguel is intended. This correction therefore uses `the user / incoming management team` plus Patricia rather than silently changing the historical actor.
+The present oral/user instruction referred once to the incoming person as `Miguel`, while the repository’s controlled project identity elsewhere is Gil Marer together with the reserved declarant from his personal/business perimeter. **Do not publish or propagate `Miguel` as a verified identity from this instruction.** Treat it as an apparent speech/name discrepancy unless the user separately confirms that a different Miguel is intended. This correction therefore uses `the user / incoming management team` plus the reserved functional descriptor rather than silently changing the historical actor.
 
 ## 12. Deletion-safety / propagation instruction
 
-If this originating chat disappears, a fresh thread must still recover the following five points from current repository state:
+If this originating chat disappears, a fresh thread must first read Declarations 005–008 and the proposition-by-proposition contradiction register, and must still recover the following points from current repository state:
 
 1. the incoming management team arrived in early 2012 into a dispute already in progress;
 2. the user acknowledges an early good-faith but incorrect Community/maintenance-type invoicing practice toward non-participating owners;
 3. the stated operational rationale was unpaid/uncaptured hotel/common service consumption, which remains a separate evidential question from the legal validity of the invoice mechanism;
 4. the mistake **must not be used as a precedent validating the later contested Community organ, debt/vote mechanics or claimed authority**;
 5. JV 1260/2011 is a pre-concurso eviction/operator dispute whose 23-Feb-2012 pleading records expansion against Monterecco Sun Park, S.L.; its merits and the allegation that the eviction was obtained under a false residential/apartment premise remain to be tested against the complete court file.
+6. Gil's alleged 2008 root cause, structural vulnerability, the 22-Jun-2011 matrix and Bankia's immediate 2012 trigger are distinct layers; Garrigues is a named requested witness/custodian whose pre-contract advice chronology remains unproved and confidentiality-controlled.
 
 Any later source that materially narrows, contradicts or strengthens these points must be propagated back into this gate, the authority-lineage gate, the master storyline, the correction/missing-evidence registers and any public page that relies on the earlier formulation.

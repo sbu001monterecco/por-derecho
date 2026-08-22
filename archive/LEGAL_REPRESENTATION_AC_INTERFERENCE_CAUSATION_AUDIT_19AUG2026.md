@@ -17,6 +17,8 @@ The governing distinction is:
 
 Chronology is not causation. Professional conflict with the AC is not proof of improper interference. Objective effect, foreseeability and intent are separate questions.
 
+**22-Aug-2026 attribution control:** Gil Marer has authorised public identification of **Garrigues** and asks that the firm/relevant professionals give witness evidence. His statement was supplied in text while he identified himself. It is recorded as his recollection, not as forensic voice authentication, verified counsel advice or a finding of professional fault.
+
 ## 2. Causation scale
 
 - **C0** — no identifiable causal connection on the current record.
@@ -64,6 +66,12 @@ No direct evidence has been located in this pass that Borja deliberately intende
 Garrigues was deeply involved immediately before the Concurso: litigation with the Comunidad, Article 5 bis/pre-insolvency work, Bankia enforcement/subasta and LPB insolvency preparation. At the point representation changed, the private contemporaneous record contains a serious client-side dispute over fees/value. Juan Tomás was then being asked to take over pending litigation within days of the Concurso opening.
 
 **Result:** the present evidence does not support Borja as a cause of the Garrigues transition. This is a material counterexample and must remain visible.
+
+Gil now separately recalls that Garrigues recommended the Monterecco/Pink route before the 1/6-February-2012 instruments and says he regarded that advice as wrong very soon. Public naming and a witness request are authorised, but the present documentary chronology does not yet verify that earlier advice: the first controlled Garrigues activity is 28 March 2012. May-2012 receipt of older non-adherence material and the 11-May Garrigues CEXP/Monterecco/maintenance-copy analysis are later knowledge points, not automatic proof of pre-contract advice.
+
+This new witness position does **not** alter the C0 finding for AC causation of Garrigues' exit. It creates a different inquiry: what Garrigues was told about the 2008 transaction, the actor-specific Montelanza, S.L./Molina-linked non-adherence and 2011 governance conflict; who proposed Monterecco; what authority and limits were analysed; and how that advice related to Bankia execution, auction and the later insolvency filing.
+
+The complete Garrigues retainer, pre-February drafts/advice/time entries, May forwarding chain, 11-May email with native headers, April-2013 management-contract report and handover to Juan Tomás must be recovered. Naming Garrigues is not a blanket waiver permitting publication of complete privileged bodies.
 
 ### B. Juan Tomás Parrilla replacement, May–June 2020
 
@@ -147,6 +155,12 @@ Carlos is active across current Matkator, criminal/procedural and recovery work 
 - a deliberate strategy by Borja to isolate or push lawyers away;
 - treating every lawyer change as part of one continuous AC-caused phenomenon.
 
+### Separate upstream root-cause hierarchy — do not import it into lawyer-exit causation
+
+Gil attributes the earliest private causal layer to actor-specific omissions and acts in the Montelanza, S.L./named Molina-linked seller and owner perimeter concerning the allegedly incomplete/frustrated 2008 restructuring and the later exploitation/Community conflict. Current evidence supports investigation of structural fragmentation, 2009 non-adherence and the 2011 debt/vote/authority mechanism. It does not yet prove seller-specific breach, an exact c.23% perimeter, collective intent or sole causation of LPB's insolvency.
+
+That upstream thesis is analytically separate from this audit's question, `did AC conduct cause a lawyer to leave?`. Bankia's enforcement and scheduled auction remain the immediate documented timing trigger for the 2012 defensive filing, and the fee/value dispute remains direct counterevidence in the Garrigues transition. Garrigues testimony may illuminate the upstream facts and advice; it does not erase either adverse point.
+
 ## 7. Strongest defence and what survives it
 
 The strongest reasonable AC defence is that:
@@ -173,6 +187,7 @@ That is now the stronger investigation question.
 5. **Quantified AC-generated workload** — identify extra filings, meetings, appeals, delays and costs causally attributable to specific AC positions while testing whether those positions were legitimate.
 6. **Direct resignation-attribution evidence** — any contemporaneous statement by an outgoing lawyer that a specific AC act caused or materially precipitated withdrawal.
 7. **Current counsel monitoring** — direct Borja interactions with Carlos/Sixto, preserving evidence both of disruption and of successful continued advocacy.
+8. **Garrigues operator-structure chronology** — pre-1/6-Feb retainer/advice/drafts, May-2012 inherited-dispute materials, 11-May entity/capacity analysis and April-2013 report, separated from Article 5 bis/auction/concurso advice and from the Garrigues→Juan Tomás exit/handover question.
 
 ## 9. Public-writing lock
 
@@ -185,6 +200,10 @@ The present safe formulation, if this issue later becomes public, is closer to:
 > “The record documents recurring procedural and authority conflicts with the Administrador Concursal that materially increased the complexity of several owner-side legal workstreams. The present evidence does not establish that those conflicts caused the succession of lawyers; where departures are contemporaneously explained, other direct causes—especially unpaid fees and client-lawyer strategy/confidence—predominate.”
 
 Any future upgrade requires actor-specific C4/C5 evidence and must preserve the counterevidence.
+
+Gil's authorised public Garrigues formulation is separate and may be stated as:
+
+> “Gil Marer asks Garrigues and the professionals with direct knowledge to give evidence about what they were told and advised concerning CEXP, the inherited 2008–2011 exploitation/governance conflict, Monterecco/Pink, Bankia enforcement and the 2012 filing. Gil recalls Garrigues recommending the Monterecco route; the present documentary record verifies Garrigues activity from 28 March 2012 but has not yet located the pre-contract bridge. The request is not a finding of professional wrongdoing and does not alter the present absence of evidence that the Administrador Concursal caused Garrigues to leave.”
 
 ## 10. Continuity / deletion-safe instruction
 

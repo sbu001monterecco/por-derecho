@@ -17,9 +17,14 @@ This allegation must be split into two legally and evidentially different propos
 2. **03-B — rent was not collected / Pink did not pay / Gil failed to pursue payment and termination, aggravating insolvency.**  
    **Result:** materially adverse first-instance finding. Sentencia 163/2023 finds gross fault, causation and Pink complicity on this branch. Those findings are appealed. The actual operating-profit/cash premise and the quantum chain remain materially unresolved and must not be inferred from the adverse judgment more broadly than it says.
 
+3. **03-C — civil validity, CEXP authority and possible total/partial nullity *ab initio*.**
+   **Result:** not adjudicated by the 03-A economic-rationality ruling. Declaration 007 records Gil Marer's legal position that the 6-Feb-2012 LPB–Monterecco contract should have been treated as wholly or partly void *ab initio* because LPB could not independently convey or bypass CEXP's owners-derived whole-hotel mandate. The 1-Feb CEXP–Monterecco notice, Pink's real operation/registration, competent-organ authority, severability, third-party/common-area scope, later resolution/rent judgments and restitution remain to be analysed. This is a party legal position, not a current finding of nullity.
+
 The strongest defensible accountability conclusion is therefore **not** `the whole Pink allegation was fabricated`. It is:
 
 > **the AC's attack on the economic rationality of entering the contract was expressly rejected, while the later non-payment branch was upheld on a record in which actual operating income/profitability was not reconstructed and the monetary sequence from contractual rent to €2.733m and €3.032m remains unreconciled.**
+
+That conclusion does not decide 03-C. Economic rationality for calificación, civil validity/authority, factual operation, contractual payment, resolution and restitution are different questions.
 
 ---
 
@@ -393,6 +398,7 @@ Without presuming motive, the complete economic inquiry must include:
 | €3,032,010.34 provenance is fully explained | **UNRESOLVED** | Exact judgment→execution calculation bridge remains missing. |
 | AC knowingly fabricated all of Allegation 03 | **NOT SUPPORTED AS A GLOBAL CLAIM** | AC actually litigated and obtained adverse judgment; contract-entry branch nevertheless failed. |
 | AC/Judge knowingly fabricated the €3.032m damages amount for clandestine gain | **GIL MARER PARTY ALLEGATION** | Controlled separately; documentary amount-provenance challenge exists but intent/benefit route remains open. |
+| 6-Feb-2012 contract was wholly/partly void *ab initio* and could not bypass CEXP | **GIL MARER LEGAL POSITION — NOT ADJUDICATED HERE** | Declaration 007; requires competent-organ, title, historical tourism law, object/cause, consent, severability and later-ruling analysis. |
 
 ---
 
@@ -408,7 +414,8 @@ Priority retrieval targets:
 6. Complete DP 332/2014 final disposition and the evidential role, if any, of the Apr-2019 Fiscalía expert.
 7. Evidence showing whether and how the Fiscalía expert entered the **calificación** record before the 2023 decision; do not assume cross-proceeding judicial knowledge.
 8. Any evidence contradicting the defence allegation that rent was initially/partially paid.
-9. Full euro bridge:
+9. Complete CEXP/participating-owner authority file for the 1-Feb notice and 6-Feb contract, the privately controlled external-counsel advice chronology and an independent opinion distinguishing radical nullity, voidability, partial ineffectiveness, severability and restitution.
+10. Full euro bridge:
 
 `MONTH → RENT → COMMUNITY → IGIC → OTHER CONTRACTUAL COMPONENT → PAYMENT/CREDIT → JUDGMENT PRINCIPAL → POST-JUDGMENT INTEREST → COSTS → EXECUTION PRINCIPAL → €3,032,010.34`.
 

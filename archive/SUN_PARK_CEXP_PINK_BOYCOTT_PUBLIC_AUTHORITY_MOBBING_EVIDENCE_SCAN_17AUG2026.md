@@ -4,11 +4,13 @@
 **Status:** CANONICAL EVIDENTIAL SCAN / CONTINUITY CONTROL — OPEN EVIDENCE  
 **Scope:** 2008 exploitation architecture → pre-existing non-adherence / alleged breach → 2011 authority rupture → Monterecco/Pink operating solution → JV 1260/2011 → Community / licence / utilities / public-authority pressure → AC/PwC intersections → later possession / liquidation / control consequences.
 
+**Mandatory pickup:** read Declarations 005–008, CR-055/CR-058/CR-059/CR-061 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md` before reusing this scan. Declaration 008 records Gil's self-attribution and supports attribution of the current text; ChatGPT has not authenticated any speaker's voice.
+
 ## 1. Controlling proposition
 
 This note preserves the current evidential position that the decision to use **Monterecco Sun Park, S.L. (later Pink Canary Services, S.L.)** must not be analysed as a free-standing corporate preference divorced from the conditions inherited at Sun Park.
 
-The Project's present explanation is that the operating solution emerged in material part from a pre-existing breakdown of the common exploitation architecture, including non-adherence / alleged breach by a Molina-linked / Monte Lanza-associated dissident-owner perimeter, operator litigation, contested Community authority, pressure concerning services and public-authority interfaces, and the practical need to continue operating an existing hotel.
+Gil's present attributed explanation is that the originating private layer was incomplete/frustrated performance of the 2008 restructuring by a seller/minority perimeter associated, in specific acts, with Montelanza, S.L. and Molina-linked owners. Separately, divided titles, voluntary CEXP participation and unresolved seller/unit completion created structural vulnerability; the disputed 22-Jun-2011 debt/vote/authority matrix amplified the conflict; and Bankia enforcement/scheduled auction was the immediate documented 2012 trigger. The operating solution emerged within those inherited conditions, operator litigation, service/public-authority pressure and the practical need to continue operating an existing hotel.
 
 The Project further alleges that those pressures later developed into a coordinated pattern of **mobbing / instrumentalisation** across Community governance, litigation, tourism/licence, electricity, water, public authorities, concursal administration and ultimately control of the asset.
 
@@ -20,7 +22,7 @@ These are **PARTY ALLEGATIONS / INVESTIGATIVE HYPOTHESES** unless and until the 
 
 The current Gmail / Drive scan materially strengthens four propositions:
 
-1. **The exploitation conflict pre-dated Gil Marer, Patricia Domínguez and Monterecco/Pink.**
+1. **The exploitation conflict pre-dated Gil Marer, the reserved declarant from his personal/business perimeter and Monterecco/Pink.**
 2. **A Molina-linked owner group was contemporaneously described in 2009 as not interested in adhering to the Comunidad de Explotación, while proposing a different short-term rental arrangement.**
 3. **That pre-existing non-adherence evidence was forwarded to Garrigues in May 2012**, placing external counsel on notice of at least part of the inherited exploitation problem.
 4. By 2015–2016, documentary families show the dispute operating simultaneously across **Community authority, tourist status/licence, Cabildo/Turismo, electricity/Endesa, Industria/OCA, water/cost allocation, owner litigation and concursal-credit questions**.
@@ -62,7 +64,7 @@ Do not treat `owner`, `CEXP member`, `hotel operator`, `Community member` and `s
 
 A 27-Apr-2009 Campanario email recovered from Gmail identifies a defined Molina-linked group and states that they were **not interested in adhering to the Comunidad de Explotación**, while proposing a different one-year rental arrangement.
 
-This is important because it predates Gil/Patricia's arrival and the 2012 Monterecco/Pink operating solution. It supports a pre-existing split between the common exploitation model and a dissident / non-adhering owner perimeter.
+This is important because it predates Gil/the reserved declarant's arrival and the 2012 Monterecco/Pink operating solution. It supports a pre-existing split between the common exploitation model and a dissident / non-adhering owner perimeter.
 
 Do **not** yet convert `not interested in adhering` into `unlawful breach`. The stronger legal characterisation requires:
 
@@ -104,6 +106,20 @@ The current evidence supports investigation of the following causal model:
 This is a **causation model to prove**, not a concluded chain. The key question is not whether a private S.L. could lawfully act as hotel operator in principle, but:
 
 > **Why was Monterecco chosen at that date, what valid owner/CEXP authority was transferred or re-granted to it, and to what extent was that choice an emergency response to a pre-existing exploitation breakdown and hostile owner environment?**
+
+### 4.1 Gil Marer's 22-Aug-2026 controlling clarifications
+
+Declarations 007–008 and the proposition-by-proposition contradiction register now record Gil Marer's more specific present position:
+
+- he and the reserved declarant were generally very close and coordinated; evidential voice separation is not a finding of general disagreement;
+- he attributes a limited set of Pink-related divergences to the declarant's personal exposure and alleged pressure, while accepting that the causal allegation requires corroboration;
+- he recalls **Garrigues** recommending the Monterecco route under LPB enforcement/auction and inherited-operation pressure, and says he came to regard that advice as wrong very soon;
+- he argues that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as wholly or partly void *ab initio*; and
+- he says CEXP was the only vehicle capable of holding or conferring the owners-derived whole-hotel collective mandate, so an LPB bilateral contract could not independently bypass CEXP or create authority over common elements or third-party rights;
+- he attributes the alleged root cause to an actor-specific 2008 Montelanza, S.L./Molina-linked seller/minority perimeter, while preserving structural vulnerability, the June-2011 matrix and Bankia's immediate 2012 trigger as distinct layers; and
+- Declaration 008 records his self-attribution and supports attribution of the current written text; it does not authenticate any voice.
+
+Classify these propositions as `PERSONAL RECOLLECTION:GIL` and `GIL LEGAL POSITION`. They are not a verified `COUNSEL_POSITION`, adjudicated nullity, established seller breach or sole-causation finding. The current source record still requires the 1-Feb notice, Monterecco/Pink's real 159-unit/477-bed operation, AP 89/2014 and later adverse rulings to remain visible. CR-055/CR-059/CR-061 must be read together.
 
 ## 5. February 2012 operating-contract / licence source cluster
 
@@ -207,15 +223,15 @@ Gmail / Drive contain direct Sun Park tourism-authority source families includin
 - `Certificado Informe Urbanístico Hotel Sun Park (Diciembre 2015).pdf`;
 - the relevant Canarias tourism-law material circulated with the file.
 
-These records support that Gil/Patricia/Pink/LPB-side representatives were actively trying to document, regularise and defend the hotel's tourist status / operating position rather than simply abandoning regulatory compliance.
+These records support that Gil/the reserved declarant/Pink/LPB-side representatives were actively trying to document, regularise and defend the hotel's tourist status / operating position rather than simply abandoning regulatory compliance.
 
-### 9.2 December 2015 Patricia → Cuatrecasas report
+### 9.2 December 2015 reserved-declarant → Cuatrecasas report
 
 **CONTEMPORANEOUS PARTY REPORT — NOT AN OFFICIAL CABILD0 HOLDING.**
 
-Patricia sent Cuatrecasas a detailed December-2015 account following a meeting with a tourism-ordering official at Cabildo. The account connects the tourism/licence problem with the wider Community / owner / eviction / operating dispute.
+The reserved declarant sent Cuatrecasas a detailed December-2015 account following a meeting with a tourism-ordering official at Cabildo. The account connects the tourism/licence problem with the wider Community / owner / eviction / operating dispute.
 
-This is valuable evidence of what Patricia contemporaneously understood and reported. Statements about what Cabildo officials told her must be corroborated with the official file, notes, resolutions or direct Cabildo correspondence before being presented as institutional findings.
+This is valuable evidence of what the reserved declarant contemporaneously understood and reported. Statements about what Cabildo officials told her must be corroborated with the official file, notes, resolutions or direct Cabildo correspondence before being presented as institutional findings.
 
 ## 10. Yaiza / urbanism track
 
@@ -275,6 +291,8 @@ This is a priority retrieval target because it may answer what Garrigues underst
 - risks created by the existing dissident-owner position.
 
 The exact contents were not successfully recovered in this scan. **Do not infer its advice from the title.**
+
+Declarations 007–008 add Gil Marer's direct recollection that **Garrigues** recommended use of the Monterecco structure and his retrospective view that the advice was wrong. Gil expressly authorises public naming and requests testimony and complete custodial production, including adverse or corrective material. That changes the witness/recollection record but not the documentary grade. The first presently verified Garrigues activity is **28-Mar-2012**; the 2009 non-adherence material was forwarded to it in May 2012. The public record therefore does not yet verify pre-contract advice before the 1-Feb notice and 6-Feb contract. Preserve the complete professional file and review confidentiality/privilege and third-party data before publishing or filing source bodies. Do not conflate alleged operator-structure advice with separate execution, pre-insolvency or concurso advice.
 
 ### 12.2 Cuatrecasas
 
@@ -353,7 +371,7 @@ Do not write merely `Pink existed because of mobbing`.
 
 Use the stronger source-testable formulation:
 
-> **The Project's present explanation is that Monterecco/Pink was adopted as an operating response within an inherited and already fractured exploitation environment. The current record supports pre-existing non-adherence, operator conflict and subsequent multi-track pressure. The precise causal contribution of the Molina/Monte-Lanza dissident perimeter, professional advice, missing/contested Community authority, banking pressure and regulatory/utility issues must be reconstructed from contemporaneous sources.**
+> **Gil's present explanation is that Monterecco/Pink was adopted as an operating response within an inherited and already fractured exploitation environment. He places the alleged originating private cause in incomplete/frustrated 2008 performance by an actor-specific Montelanza, S.L./Molina-linked perimeter. The record separately supports structural vulnerability, pre-existing non-adherence, the disputed 22-Jun-2011 governance matrix, operator conflict and Bankia enforcement/auction as the immediate documented 2012 trigger. Garrigues advice, each actor's contribution and every legal consequence require contemporaneous proof; none of these layers establishes collective breach, shared intent or sole causation.**
 
 The decisive contemporaneous questions are:
 
@@ -362,12 +380,14 @@ The decisive contemporaneous questions are:
 3. What exploitation rights were unavailable because owners refused or withdrew?
 4. What advice did Garrigues give before / after the February-2012 contract?
 5. Was Monterecco intended as a temporary bridge, long-term OpCo or defensive response?
-6. What did Gil/Patricia know about the 2009–2011 owner dispute at each decision date?
+6. What did Gil/the reserved declarant know about the 2009–2011 owner dispute at each decision date?
 7. Did pending litigation make a clean CEXP restoration impracticable?
 
 ## 16. Relationship to possible contract nullity
 
 This scan must feed, but not predetermine, a separate clarification of the February-2012 exploitation / management contract.
+
+Gil Marer's now-controlled legal position is that the 6-Feb LPB–Monterecco contract was or should have been declared void *ab initio*, wholly or at least in the severable parts purporting to bypass or transfer CEXP's owners-derived whole-hotel mandate without competent authority. He further says CEXP was the only vehicle legally capable of holding or conferring that unitary mandate. Preserve this position accurately while marking it `GIL LEGAL POSITION — NOT ADJUDICATED`.
 
 Test separately:
 
@@ -382,6 +402,8 @@ Test separately:
 - whether later criminal findings establish facts relevant to radical nullity, voidability, restitution or damages.
 
 Do not use later criminal allegations as automatic proof that a private contract was void ab initio.
+
+Also do not use Monterecco/Pink's de facto operation, administrative registration, the rejection of the rent-versus-mortgage culpability theory in Sentencia 163/2023, or a later contract-resolution/rent judgment as automatic proof that the 2012 contract validly displaced CEXP or bound third-party rights. Civil validity, administrative position, factual operation, economic rationality, payment/enforcement and restitution are separate lanes.
 
 ## 17. AC-aiding allegation — mandatory proof discipline
 
@@ -465,14 +487,19 @@ Read this file together with:
 - `archive/CALIFICACION_FISCALIA_2012_2019_2026_SOURCE_BUNDLE_RETRIEVAL_GATE_16AUG2026.md`;
 - `archive/EVIDENCE_CUSTODY_AND_PRESERVATION_PROTOCOL_16AUG2026.md`;
 - `archive/CORRECTION_REGISTER.md`;
-- `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-047.
+- `archive/MISSING_EVIDENCE_REGISTER.md`, especially ME-047 and ME-065;
+- Declarations 005–008 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`.
 
 ## 21. Deletion-safety / continuity
 
 If the originating chat disappears, future threads must retain:
 
+- the mandatory combined reading of Declarations 005–008, CR-058/CR-059/CR-061 and the contradiction register;
+- the text-not-voice authentication boundary;
+- Gil's actor-specific 2008 Montelanza, S.L./Molina-linked root-cause position, separately from structural vulnerability, the 22-Jun-2011 governance matrix and Bankia's immediate 2012 trigger;
 - the 2009 contemporaneous Molina-linked non-adherence anchor;
 - its forwarding to Garrigues in May 2012;
+- Garrigues as the adviser Gil remembers and witness/custodian he requests, while the pre-1/6-Feb chronology remains unproved and professional source bodies remain confidentiality-controlled;
 - the need to analyse Monterecco/Pink as an operating response to an inherited exploitation breakdown rather than an isolated company choice;
 - the 2012 contract/licence source cluster;
 - JV 1260/2011 as immediate pre-concurso operator pressure;

@@ -13,15 +13,17 @@ This control prevents three different matters from being collapsed into one:
 
 The overlap lies in particular documents, actors and consequences. It does not create identity of procedure, jurisdiction or legal issue.
 
+**Mandatory 22-August pickup:** read Declarations 005–008, CR-058/CR-059/CR-061 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`. Declaration 005 is preserved but controlled proposition by proposition. Gil's written self-attribution supports attribution of his text; ChatGPT has not authenticated any voice.
+
 ## 2. Lane A — Fiscalía AN Exp. Gub. 86/2026
 
-The 2 August 2026 package to Fiscalía de la Audiencia Nacional already contained the Pink Canary Services / Patricia Domínguez / AEAT dimension together with the Acosta Matos, Sun Park / MYND Yaiza, RIC/RICPE, incentive and public-funds questions.
+The 2 August 2026 package to Fiscalía de la Audiencia Nacional already contained the Pink Canary Services / reserved declarant from Gil Marer's perimeter / AEAT dimension together with the Acosta Matos, Sun Park / MYND Yaiza, RIC/RICPE, incentive and public-funds questions.
 
 The 10 August 2026 Fiscalía AN email and signed decree referred the package to Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario.
 
 Controlled conclusion:
 
-- Pink/Patricia/AEAT is part of the original referred corpus;
+- Pink / the reserved declarant from Gil Marer's perimeter / AEAT is part of the original referred corpus;
 - it is not a fact discovered after the referral;
 - the referral is a competence/territorial act, not a finding that the criminal hypothesis is true or false;
 - later material must preserve the provenance of the original Pink/AEAT documents and identify what is genuinely supervening.
@@ -73,7 +75,7 @@ The finite questions are:
 4. How did it reach AEAT?
 5. In which files and decisions was it used?
 6. What independent evidence and reasoning did AEAT apply?
-7. What consequences followed for Pink and Patricia?
+7. What consequences followed for Pink and the reserved declarant from Gil Marer's perimeter?
 8. Did the originating environment obtain any defensive, tax, investment, financing or procedural benefit?
 
 No arrow is established merely because the events are sequential.
@@ -90,9 +92,19 @@ The current repository and website record supports a nuanced position:
 
 ### 22 August 2026 controlling keys correction
 
-Gil Marer expressly corrects Declaration 005 and states that Pink never had “the keys” and had no authority to deliver them to the insolvency administrator, the owners’ Community or anyone else. The presently identified 28-May-2012 key event is attributed by Gil to his act as **President of CEXP**, involving CEXP maintenance copies, not an act or capacity of Pink.
+Gil Marer expressly corrects Declaration 005 and states that Pink never had “the keys” and had no authority to deliver them to the insolvency administrator, the owners’ Community or anyone else. Contemporaneous records identify the May-2012 obligation as CEXP's and the items as CEXP maintenance copies, not an act or capacity of Pink. Gil remembers personally making the delivery as CEXP President, but contemporaneous email materially conflicts with that recollection and the physical deliverer remains unresolved.
 
-This is direct first-person corrective evidence, controlled by Declaration 006 and the earlier JV1260 CEXP capacity clarification. Any different key event requires its own date, key schedule, zone/unit, holder and authority evidence. Do not infer Pink possession or authority from operation, registration, common personnel or Gil’s roles in other entities.
+The Pink correction is direct first-person evidence; the physical-deliverer question is controlled by `JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md`. Any different key event requires its own date, key schedule, zone/unit, holder and authority evidence. Do not infer Pink possession or authority from operation, registration, common personnel or Gil’s roles in other entities.
+
+### 22 August 2026 contract-validity / CEXP / Garrigues clarification
+
+Declarations 007–008 record Gil Marer's legal position that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as wholly or partly void *ab initio* and that only CEXP could hold or confer the owners-derived collective mandate for unitary operation. They also record his recollection that **Garrigues** recommended the Monterecco route and his retrospective view that the advice was wrong. Gil expressly authorises public naming and requests Garrigues testimony and complete custodial production.
+
+This is `PERSONAL_RECOLLECTION:GIL` and `GIL LEGAL POSITION`, not verified pre-contract `COUNSEL_POSITION` or an adjudicated nullity. The first presently verified Garrigues activity is 28-Mar-2012, after the 1/6-Feb instruments; the 2009 Molina-linked non-adherence material was forwarded to it in May 2012. Naming/testimony authority does not prove the recalled advice or permit indiscriminate publication of confidential/privileged source bodies. Tax attribution, factual operation/registration, civil validity, CEXP authority, rent and key possession remain separate functions and periods.
+
+### 22 August 2026 causal-layer clarification
+
+Gil attributes the alleged originating private cause to incomplete/frustrated performance of the 2008 restructuring by a seller/minority perimeter associated, in specific acts only, with Montelanza, S.L. and Molina-linked owners. Keep that party position separate from: the documented structural vulnerability of divided titles, voluntary CEXP participation and unresolved seller/unit completion; the disputed 22-Jun-2011 debt/vote/authority matrix; and Bankia enforcement/scheduled auction as the immediate documented 2012 trigger. None establishes collective breach, common intent, sole causation, tax attribution or criminal liability. Every actor, finca, obligation, communication, capacity, defence and causal link requires separate proof.
 
 Tax attribution must therefore be period-specific and function-specific.
 
@@ -101,7 +113,7 @@ Tax attribution must therefore be period-specific and function-specific.
 ### Already in the 2 August corpus
 
 - Pink Canary Services;
-- Patricia Domínguez;
+- the reserved declarant from Gil Marer's perimeter;
 - AEAT assessment/sanction and derivative consequences as presented by the contributor;
 - the attributed private-source hypothesis;
 - Sun Park / MYND Yaiza;
@@ -129,12 +141,14 @@ Public-safe:
 - referral and archive/admission status;
 - professional-custodian categories and evidential limits;
 - correction and right-of-reply route.
+- Gil's attributed naming of Garrigues as the adviser he remembers and witness/custodian he requests, together with the unproved pre-contract chronology and evidence-grade warning.
 
 Keep private or redact unless necessary:
 
 - personal tax identifiers;
 - residential/contact details;
 - privileged legal advice;
+- Garrigues/client source bodies, retainer material, correspondence and third-party data pending confidentiality/privilege review;
 - unnecessary assessment figures or enforcement data;
 - unredacted email headers and attachment infrastructure;
 - private credentials or access codes.
@@ -149,9 +163,12 @@ Keep private or redact unless necessary:
 6. Evidence supporting or rebutting private benefit.
 7. Arrecife receiving reference and treatment of the referred Pink/AEAT corpus.
 8. Audiencia Nacional outgoing referral index and proof of delivery.
+9. Complete seller–finca–obligation–performance map, 2-Feb/22-Jun-2011 governance package and Bankia trigger/monthly causation bridge.
+10. Garrigues engagement, witness/personnel map, pre-1/6-Feb communications/drafts, billing, May-2012 forwarding chain and 11-Apr-2013 report, preserved and legally reviewed before disclosure.
+11. Native audio and chain-of-custody evidence if voice attribution becomes material; text attribution alone is not voice authentication.
 
 ## 10. Public wording lock
 
 Use:
 
-> Pink Canary Services appears in three legally distinct lanes: a criminal-source/provenance communication referred by Fiscalía de la Audiencia Nacional to Arrecife; a separate contentious-administrative challenge to AEAT acts; and older, separate Fiscalía AN correspondence concerning another criminal proceeding. The Pink/Patricia/AEAT dimension was already in the 2 August referred package. Later PwC, Grant Thornton and RSM/San Telmo material identifies additional custodians and preservation questions; it does not prove the private-source or influence hypothesis.
+> Pink Canary Services appears in three legally distinct lanes: a criminal-source/provenance communication referred by Fiscalía de la Audiencia Nacional to Arrecife; a separate contentious-administrative challenge to AEAT acts; and older, separate Fiscalía AN correspondence concerning another criminal proceeding. The Pink / reserved-declarant / AEAT dimension was already in the 2 August referred package. Later PwC, Grant Thornton and RSM/San Telmo material identifies additional custodians and preservation questions; it does not prove the private-source or influence hypothesis.

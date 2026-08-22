@@ -4,6 +4,26 @@
 **Status:** canonical first-saturation professional register  
 **Rule:** `professional appeared` is not the same as `professional represented every connected party` or `professional shared all firm knowledge`.
 
+**22-Aug-2026 attribution control:** Gil Marer has expressly authorised public identification of **Garrigues** and asks that the firm and the relevant individual professionals be called as witnesses concerning the matters they personally handled. This naming/witness request is Gil's attributed position. It is not proof of the content of advice, a finding of professional fault or a blanket waiver authorising publication of lawyer-client communications. Gil supplied this clarification in text while identifying himself; that supports conversational attribution to him, not forensic voice authentication. Any audio or disputed speaker identity requires its own authentication.
+
+## Garrigues historical file — named witness request and chronology control
+
+The current record verifies Garrigues activity no later than **28 March 2012**, followed by LPB Article 5 bis/pre-insolvency work in April, Bankia enforcement/auction work in May and preparation for LPB's filing through early June. The identified team presently includes **Miguel Méndez Itarte, José María Martínez de Artola, Víctor de la Torre and Zulay Carmen Rodríguez**; individual authorship and responsibility must be fixed document by document.
+
+Gil's direct recollection is more specific but presently documentary-open: he says Garrigues advised the Monterecco/Pink operating route before the 1/6-February-2012 instruments and that he regarded that advice as wrong very soon. The public chronology has not yet established a Garrigues engagement or advice predating those instruments. Preserve both propositions; do not use the later verified work to backdate the alleged advice.
+
+The requested witness/evidence programme is:
+
+1. retainer, opening memorandum, attendance notes, calls, drafts, invoices/time entries and instructions predating the 1-Feb notice and 6-Feb contract;
+2. identification of who first proposed Monterecco, for which LPB/CEXP/owner perimeter, with which warnings and as what temporary or permanent solution;
+3. what Garrigues had been told about the 2008 asset/exploitation architecture, owner accessions, the 2009 Molina-linked non-adherence/alternative-rental position, the disputed 2011 debt/vote/governance act and JV 1260/2011;
+4. the May-2012 forwarding chain for the 27-Apr-2009 Campanario/Molina material;
+5. Gmail message `1373c2030b7a560e` in thread `1372de1b77e22b82`, where contemporaneous Garrigues correspondence separates CEXP from Monterecco and describes CEXP maintenance copies;
+6. the native file, metadata, drafts and attachments for `Informe Garrigues - LUCHY Nuevo Contrato de Gestión Hotelera 11 Abril 2013.docx`; and
+7. testimony distinguishing alleged operator-structure advice from the separately verified Article 5 bis, enforcement, auction and insolvency work.
+
+**Root-cause boundary:** Gil attributes the earliest private causal layer to actor-specific omissions and acts in the Montelanza, S.L./named Molina-linked seller and owner perimeter concerning the incomplete/frustrated 2008 restructuring and the later exploitation/governance conflict. Garrigues is requested as a witness to what it was told and advised, not as proof that the asserted seller breach, an exact c.23% perimeter, collective intent or sole insolvency causation is already established. Bankia's execution and scheduled auction remain the documented immediate timing trigger for LPB's defensive filing.
+
 ## Cuatrecasas historical file — identified professionals
 
 | Professional | Sourced role / matter | Controlled proposition |

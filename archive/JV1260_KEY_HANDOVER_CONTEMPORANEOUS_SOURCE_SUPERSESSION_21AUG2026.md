@@ -5,6 +5,8 @@
 **Supersedes:** any statement in `archive/JV1260_CEXP_KEY_HANDOVER_CAPACITY_CLARIFICATION_17AUG2026.md`, runtime modules, deletion pre-audits or later summaries that treats Gil Marer's personal physical delivery on 28 May 2012 as established or controlling fact.  
 **Does not supersede:** the separate CEXP-versus-Monterecco capacity analysis, the maintenance-copy characterisation, or the requirement to recover the complete notarial/appellate record.
 
+**22-Aug-2026 Garrigues naming control:** Gil Marer expressly authorises public identification of **Garrigues** and asks that the firm/relevant professionals be called as witnesses. That authorises naming and a witness request; it does not by itself authenticate every message, establish the alleged pre-February advice, prove professional fault or authorise publication of complete privileged correspondence.
+
 ## 1. Why this supersession is required
 
 A later first-person recollection states that Gil Marer personally attended and physically delivered the relevant keys as President of CEXP. That recollection must now be treated as **DISPUTED PERSONAL RECOLLECTION**, because contemporaneous private correspondence located in Gmail is materially inconsistent with the personal-delivery proposition.
@@ -18,6 +20,8 @@ This correction strengthens, rather than weakens, the entity-capacity point: con
 ## 2. Private-custody source map
 
 These are retrieval/custody locators only. The correspondence includes lawyer-client material and must not be publicly reproduced or quoted without privilege/confidentiality review.
+
+The entries below are written email/thread sources. Their conversational attribution arises from the preserved account/thread context and must be verified through native headers and custody if formally disputed. They are **not voice recordings and do not constitute voice authentication** of Gil, Patricia or any professional.
 
 | Date | Private locator | Controlled non-quoting proposition |
 |---|---|---|
@@ -39,6 +43,8 @@ These are retrieval/custody locators only. The correspondence includes lawyer-cl
 | A security guard physically delivered the keys | **CONTEMPORANEOUSLY STATED PLAN/ACCOUNT; ACTUAL PERFORMANCE STILL REQUIRES PRIMARY CONFIRMATION** |
 | Actual physical deliverer and attendees/capacities | **PRIMARY RECORD REQUIRED** |
 | The event proves Monterecco possession | **NOT ESTABLISHED; REQUIRES SEPARATE DOCUMENTARY BRIDGE** |
+| Garrigues advised the Monterecco/Pink route before 1/6 February 2012 | **PERSONAL RECOLLECTION:GIL; PUBLIC NAMING AUTHORISED; PRE-CONTRACT DOCUMENTARY BRIDGE NOT YET LOCATED** |
+| The 11-May Garrigues message proves the content of earlier operator-structure advice | **NOT ESTABLISHED; IT PROVES A LATER CONTEMPORANEOUS CEXP/MONTERECCO/MAINTENANCE-COPY POSITION** |
 
 ## 4. Required primary bridge
 
@@ -53,6 +59,7 @@ P0 evidence remains:
 7. decision admitting the new evidence;
 8. opposition/observations;
 9. exact proposition extracted by AP Las Palmas in Sentencia 89/2014.
+10. Garrigues retainer, drafts, time entries and communications fixing whether and when the firm advised on the 1-Feb notice or 6-Feb LPB–Monterecco contract.
 
 Until this package is recovered, the public record must say that the **physical deliverer is unresolved**.
 
@@ -68,10 +75,14 @@ Until this package is recovered, the public record must say that the **physical 
 
 ## 6. Privilege and publication firewall
 
-- Do not publish the full bodies of Garrigues/private lawyer correspondence from this source family.
+- Gil Marer authorises public naming of Garrigues and the request that it give witness evidence.
+- That authorisation is not a blanket waiver: do not publish the full bodies of Garrigues/private lawyer correspondence from this source family without a separate, document-specific privilege/confidentiality decision.
 - Use the private correspondence as an internal evidence map to locate non-privileged primary court/notarial records.
 - Do not treat privilege/confidentiality as a reason to suppress the contradiction internally.
 - Public pages may state the source-status conflict without quoting privileged text.
+- Preserve the chronology: current source control verifies this Garrigues position on 11 May 2012; it does not, without the missing bridge, backdate the same advice to 1/6 February 2012.
+
+This key-delivery source family is downstream evidence about entity/capacity and the character of the copies. It is not by itself proof that any Montelanza, S.L./Molina-linked actor breached a 2008 obligation or caused LPB's 2012 filing. Gil's separate root-cause position must remain actor-specific and be tested against the seller/finca completion map, adverse JV/AP result and the independently documented Bankia auction trigger.
 
 ## 7. Deletion-safety consequence
 

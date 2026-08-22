@@ -9,6 +9,10 @@
 
 > **Efecto inmediato:** esta declaración suplementa y corrige materialmente la Declaración 005. Ninguna referencia de la Declaración 005 a que Pink Canary Services tuvo, retuvo, ofreció entregar o estaba facultada para entregar “las llaves” debe utilizarse como hecho, posición conjunta o reconstrucción adoptada por Gil Marer.
 
+> **Lectura conjunta:** la Declaración 007 conserva la aclaración posterior de Gil Marer sobre su coordinación general con la declarante, el carácter limitado de las divergencias, el asesoramiento externo de 2012 que recuerda y su posición jurídica sobre posible nulidad *ab initio* y autoridad CEXP. Esta Declaración 006 continúa controlando específicamente la cuestión de las llaves.
+
+> **Límite probatorio contemporáneo:** esta declaración conserva fielmente el recuerdo directo de Gil, pero no convierte en hecho establecido quién realizó materialmente la entrega del 28 de mayo de 2012. Un correo contemporáneo entra en conflicto material con su recuerdo de presencia y entrega personal. El [control de supersesión de fuente contemporánea](../JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md) establece que el entregante físico permanece sin resolver. Lo sólidamente corroborado es que la obligación se atribuía a CEXP, no a Monterecco/Pink, y que se trataba de copias de mantenimiento de CEXP.
+
 ## 1. Corrección directa
 
 Yo, **Gil Marer**, declaro que la declarante de la Declaración 005 está equivocada en la parte de su relato que atribuye a Monterecco Sun Park/Pink Canary Services la posesión de “las llaves” o autoridad para entregarlas a la administración concursal, a la Comunidad de Propietarios o a cualquier otra persona.
@@ -32,13 +36,13 @@ Esas afirmaciones no deben repetirse ni propagarse.
 
 El acontecimiento de entrega de llaves que yo identifico personalmente es el relacionado con JV 1260/2011 y con la comparecencia notarial situada actualmente por el repositorio el 28 de mayo de 2012.
 
-Yo estuve presente y entregué personalmente las llaves relevantes **en mi capacidad de Presidente de la Comunidad de Explotación — CEXP**.
+Mi recuerdo directo es que estuve presente y entregué personalmente las llaves relevantes **en mi capacidad de Presidente de la Comunidad de Explotación — CEXP**.
 
 Las llaves se describen en la reconstrucción documental como copias de mantenimiento de CEXP. Mi actuación no fue una actuación de Monterecco Sun Park, Pink Canary Services, LPB ni de todas las entidades con las que yo estaba relacionado.
 
 La presencia de la misma persona natural en distintas entidades no autoriza a atribuir a Pink una posesión, una entrega o una facultad que correspondía a CEXP o a otra persona.
 
-El control ya conservado en archive/JV1260_CEXP_KEY_HANDOVER_CAPACITY_CLARIFICATION_17AUG2026.md refleja correctamente mi evidencia directa y debe controlar sobre cualquier formulación incompatible de la Declaración 005.
+Este recuerdo debe conservarse como evidencia personal, pero queda materialmente controvertido por la fuente contemporánea. El control vigente es `archive/JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md`, que mantiene la atribución CEXP/copias de mantenimiento y deja sin resolver la identidad del entregante material.
 
 ## 3. Alcance de mi anterior adopción de la Declaración 005
 
@@ -48,7 +52,7 @@ Esa confirmación no puede entenderse como adopción irrevocable de una afirmaci
 
 Retiro y excluyo expresamente de mi adopción cualquier proposición según la cual Pink tuvo, retuvo o podía entregar las llaves. Mi responsabilidad por la utilización de la declaración incluye precisamente corregirla cuando detecto que una proposición es incorrecta.
 
-La Declaración 005 debe permanecer preservada como registro histórico de lo que la declarante de la Declaración 005 dijo, pero marcada como **SUPLEMENTADA Y MATERIALMENTE DISPUTADA** en este punto.
+La Declaración 005 debe permanecer preservada como registro histórico de lo que la declarante de la Declaración 005 dijo, pero marcada como **SUPLEMENTADA Y MATERIALMENTE DISPUTADA EN EXTREMOS DELIMITADOS** en este punto.
 
 ## 4. Presión sobre la declarante de la Declaración 005 — posición personal de Gil Marer
 
@@ -83,7 +87,7 @@ Cada proposición debe verificarse separadamente. La corrección inmediata y con
 
 Toda página, declaración, ledger, prompt o análisis deberá aplicar esta regla:
 
-> **No atribuir a Monterecco Sun Park/Pink Canary Services la posesión, retención, oferta de entrega o autoridad para entregar las llaves. El acontecimiento de llaves directamente identificado por Gil Marer corresponde a su actuación como Presidente de CEXP y no puede trasladarse a Pink por asociación personal o empresarial. Cualquier acontecimiento distinto exige prueba propia, fecha, llave, zona, titular y capacidad.**
+> **No atribuir a Monterecco Sun Park/Pink Canary Services la posesión, retención, oferta de entrega o autoridad para entregar las llaves. La obligación contemporáneamente identificada y las copias de mantenimiento correspondían a CEXP, no a Pink. Gil Marer recuerda haber realizado personalmente la entrega como Presidente de CEXP, pero el entregante físico permanece sin resolver y ese recuerdo no debe publicarse como hecho establecido. Cualquier acontecimiento distinto exige prueba propia, fecha, llave, zona, titular y capacidad.**
 
 ## 7. Declaración de veracidad
 

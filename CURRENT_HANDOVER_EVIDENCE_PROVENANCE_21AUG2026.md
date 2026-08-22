@@ -21,9 +21,11 @@ Use the following classes in future analysis and intake:
 
 Where a sentence combines more than one class, split it.
 
-## 2. Gil / Patricia voice separation
+## 2. Gil / reserved-declarant voice separation and relationship baseline
 
-Statements by **Gil Marer** and **Patricia Domínguez** must be stored and analysed as separate voices unless a primary record independently proves the underlying proposition.
+Statements by **Gil Marer** and **the declarant from Gil Marer's personal and business perimeter whose public identity is reserved** must be stored and analysed as separate voices unless both expressly adopt the proposition or a primary record independently proves it.
+
+This rule is evidential, not biographical. Gil's controlling clarification of 22 August 2026 is that he and the declarant were generally very close and coordinated. He identifies only a limited set of divergences connected, in his view, with the declarant's personal exposure through Pink and pressure by the insolvency-administration/adverse perimeter. The relationship and coordination baseline is Gil's direct account; the alleged pressure and its causal effect remain Gil's uncorroborated allegation until episode-specific contemporaneous evidence is recovered. Apply **Declarations 005–008**, CR-058/CR-059/CR-061 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`; Declaration 005 remains preserved, but the proposition-specific controls supersede it where they conflict.
 
 Rules:
 
@@ -34,6 +36,25 @@ Rules:
 5. Disagreement is not an error to be harmonised away. Preserve it as a potentially useful evidential distinction and identify what primary record could resolve it.
 6. A later correction by either speaker supersedes that speaker's earlier project summary on the corrected point, while the original statement remains part of the audit trail if material.
 7. Public-facing copy should prefer primary records and neutral evidential language over personal interpretation wherever possible.
+
+For CEXP/Monterecco/Pink work, also preserve the distinction between (a) Gil's newly explicit legal position that the 6-Feb-2012 contract should have been treated as wholly or partly void *ab initio* and that only CEXP could hold or confer the owners-derived whole-hotel mandate, and (b) the current evidential record, which has not yet established that legal conclusion and preserves Pink's real historical operation, the 1-Feb notice, later judgments and open authority/scope questions.
+
+### 2.1 Text attribution is not voice authentication
+
+Declaration 008 records Gil's self-attribution of the current **written instruction**. That supports `PERSONAL_RECOLLECTION:GIL` and `OPINION_INTERPRETATION:GIL` attribution for the text; it does not mean ChatGPT authenticated his or the reserved declarant's voice. Earlier dictated material remains attributed through the participants' identification unless the native audio, chain of custody and any required independent comparison are produced.
+
+### 2.2 Root-cause and trigger separation
+
+Gil's current root-cause position is an attributed causal theory beginning with alleged incomplete or frustrated performance of the 2008 Montelanza, S.L./Multimatrix restructuring by a seller/minority perimeter associated, **in specific acts only**, with Montelanza, S.L. and Molina-linked owners. Do not treat family, minority or group association as proof of contract, breach, shared intent or liability. Preserve four separate analytical layers:
+
+1. `OPINION_INTERPRETATION:GIL` — the alleged 2008 originating private cause;
+2. `PRIMARY_SOURCE_FACT` plus open legal effect — divided titles, voluntary CEXP participation and unresolved seller/unit completion created structural vulnerability;
+3. `PRIMARY_SOURCE_FACT` plus contested validity — the 22-Jun-2011 ACTA is the debt/vote/authority matrix node, distinct from 2-Feb-2011; and
+4. `PRIMARY_SOURCE_FACT` — Bankia enforcement and the scheduled auction were the immediate documented 2012 trigger, without resolving earlier or concurrent causal contributions.
+
+### 2.3 Garrigues witness, chronology and confidentiality control
+
+Gil expressly authorises public naming of **Garrigues**, recalls that it advised the Monterecco route and asks it to provide testimony and its complete file, including adverse or corrective material. The advice remains `PERSONAL_RECOLLECTION:GIL`, not `COUNSEL_POSITION`, until attributable professional evidence is recovered. The first presently verified Garrigues activity is 28 March 2012, after the 1/6-Feb instruments; the 2009 Molina-linked non-adherence material was forwarded to Garrigues in May 2012. Public naming authority does not itself authenticate the pre-contract chronology or authorise indiscriminate publication of confidential, privileged, personal or third-party material. Preserve the file and apply legal/confidentiality review before publication or filing.
 
 ## 3. Pre-7-June-2018 Sun Park hotel-management contact route
 

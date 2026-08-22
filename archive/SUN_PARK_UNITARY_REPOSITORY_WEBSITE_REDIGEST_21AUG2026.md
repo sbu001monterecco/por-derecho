@@ -50,8 +50,8 @@ a recovery discipline, not a surrender of the whole-platform objective.
 | LPB | Luchy Playa Blanca, S.L.U.; majority property/right holder and sole debtor in Concurso 36/2012. | LPB was not 100% of Sun Park and its estate did not absorb every unit, operating right or income stream. |
 | Aweswell | Foreign investor/shareholder perimeter with any separately evidenced direct, funding, contractual and shareholder rights. | LPB loss must not be duplicated automatically as shareholder loss. |
 | Matkator | Separate extraconcursal property and income perimeter. | Matkator assets did not enter LPB's estate by association. |
-| CEXP | Owners-derived exploitation/governance layer under its own instruments and disputed continuity/authority. | Collective origin does not prove universal, exclusive or uninterrupted authority. |
-| Monterecco/Pink | Real operator and administrative/tourism participant for a defined period/perimeter; Spanish company name continuity must be preserved. | Operation, keys and registration do not prove universal succession to every CEXP or owner right. |
+| CEXP | Owners-derived exploitation/governance layer under its own instruments and disputed continuity/authority. Gil's current legal position is that only CEXP could hold or confer the collective whole-hotel mandate. | That legal position is not yet adjudicated; collective origin alone does not prove universal, exclusive or uninterrupted authority over every unit/right. |
+| Monterecco/Pink | Real factual operator and administrative/tourism participant for a defined period/perimeter; Spanish company name continuity must be preserved. | Operation and registration do not prove valid whole-hotel succession to CEXP or every owner right. Do not attribute generic “keys” or key-delivery authority to Pink; apply CR-058. |
 | Owners' Community | Administration of common elements and expenses within its lawful scope. | Community office, debt, voting or certification is not property title or universal hotel-operating authority. |
 | Bank/credit chain | Original lender/Bankia, SAREB, PH122, servicing/decision actors and exact CAM assignee. | Economic owner, registered holder, servicer, sponsor and procedural claimant need not change together. |
 | Insolvency administration | Statutory office for LPB's proceeding, duties, property and phase. | Appointment is not authority over the whole hotel and is not proof of substantive neutrality or wrongdoing. |
@@ -66,11 +66,18 @@ Every material proposition must preserve both source class and speaker. Use
 `COUNSEL_POSITION`, `WORKING_HYPOTHESIS` or `OPEN_EVIDENCE_GAP`. Split a sentence
 that combines classes.
 
-Gil Marer's and Patricia Dominguez's accounts are separate voices unless both
-adopt the proposition or an independent record proves it. A statement attributed
-to Patricia must also be identity-guarded against the unrelated Haya professional
-with that first name. Public wording may summarise a shared position only after
-the underlying attribution has been preserved privately.
+Gil Marer's and the reserved declarant's accounts are separate evidential voices
+unless both adopt the proposition or an independent record proves it. That rule
+does not imply general personal or professional non-coordination: Gil states they
+were generally very close and coordinated and identifies only limited Pink-linked
+divergences. His allegation that personal exposure and pressure caused those
+fragmented divergences remains uncorroborated. Public wording may summarise a
+shared position only after the underlying attribution has been preserved privately.
+Any affected thread must read **Declarations 005–008**, CR-058/CR-059/CR-061 and
+`GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`.
+Gil's written self-attribution supports attribution of his text; it is not
+ChatGPT voice recognition, and prior dictated material remains participant-attributed
+pending native-audio authentication.
 
 ## End-to-end reconstruction
 
@@ -79,9 +86,13 @@ the underlying attribution has been preserved privately.
 The located record describes transfers of individually divided assets rather than
 a simple sale of Montelanza, S.L. as one company. LPB became a majority PropCo,
 while CEXP/operation, common governance and third-party units remained distinct.
-The group position is that this structure created the fracture points later used
-to confuse owner, operator, payer, voter and authority. That is an attributed
-causal assessment, not a finding of dishonesty by the 2008 sellers.
+Divided titles, voluntary CEXP participation and unresolved seller/unit completion
+created a documented structural vulnerability. Gil's present, narrower root-cause
+position is that incomplete or frustrated performance of the 2008 restructuring
+by a seller/minority perimeter associated, in specific acts, with Montelanza, S.L.
+and Molina-linked owners began the later causal chain. That is an attributed party
+position, not a finding of breach, shared intent, dishonesty, sole causation or
+liability. It requires a seller–finca–obligation–performance–defence map.
 
 ### 2. 2008-2010 banking package
 
@@ -100,7 +111,11 @@ Monterecco Sun Park Limited acquired the LPB shares from Multimatrix in December
 February 2012. Separately, Community/CEXP authority, owner participation, charges,
 voting and operator succession were already disputed or structurally fragile.
 The share transition, property titles, operating mandate and Community offices are
-not interchangeable events.
+not interchangeable events. Keep the 2-Feb-2011 Community boundary separate from
+the disputed **22-Jun-2011** matrix, where LPB's large coefficient was present but
+vote-excluded by attributed debt while debt recovery, administration and
+Community/CEXP-maintenance decisions were approved. The ACTA is a provenance node;
+its legal validity and actor-specific consequences remain contested.
 
 ### 4. Early 2012 operation and attempted rescue
 
@@ -111,6 +126,20 @@ it and its scope across owners, units and common areas. The 28 February 2012 pla
 already described direct, repeat-customer, residential/long-stay and tour-operator
 lanes. This is relevant to hotel viability and to rebutting a narrative that no
 business/recovery architecture existed before the concurso.
+
+Declarations 007–008 add Gil Marer's controlling but not adjudicated legal position:
+he recalls **Garrigues** recommending the Monterecco route under enforcement,
+auction and inherited-operation pressure; says he regarded that advice as wrong
+very soon; argues that the separate 6-Feb LPB–Monterecco contract should have been
+treated as wholly or partly void *ab initio*; and says only CEXP could hold or confer
+the owners-derived whole-hotel mandate. The current documentary record does not yet
+prove the pre-contract advice chronology, exclusivity or nullity: the first presently
+verified Garrigues activity is 28-Mar-2012. Gil authorises naming the firm and asks
+for its testimony and complete file, including adverse/corrective material; that
+does not itself prove the advice or authorise indiscriminate publication of
+confidential/privileged source bodies. Preserve separately
+the 1-Feb notice, 6-Feb contract, de facto operation/registration, AP 89/2014,
+contract-resolution/rent history, Order 804/2018 and Sentencia 163/2023.
 
 ### 5. Enforcement, filing and declaration
 
@@ -295,7 +324,7 @@ status must be checked against the latest primary act before public reuse.
 | CEXP | Separately evidenced exploitation/governance and operating-income rights. | Prove authority, participants, period and scope. |
 | Pink Canary | Tax, contract, operational and procedural position for its own periods and acts. | AEAT attribution is not automatic beneficial-operation proof. |
 | Gil Marer | Separately evidenced personal, professional and patrimonial damage. | Separate direct loss from company loss. |
-| Patricia Dominguez | Separately evidenced company-role, ownership and personal damage. | Keep her voice and capacity distinct from Gil's and from the unrelated Haya professional named Patricia. |
+| Reserved declarant from Gil's perimeter | Separately evidenced rights and personal damage. | Keep the declarant's voice and any legally relevant capacity distinct from Gil's; do not publish the reserved identity merely for narration. |
 | Other owners/staff/suppliers | Their own property, income, employment or contract rights where standing exists. | No representative claim without authority/standing. |
 
 ## Reverse-engineered repository and website architecture
@@ -436,6 +465,13 @@ weaken the record.
 
 - complete banking contracts, suitability/information record, notices and account
   allocation for the swap/second loan;
+- complete 2008 seller–finca–contract–performance map, CEXP accession schedule and
+  actor-specific Montelanza, S.L./Molina-linked acts and defences;
+- complete 2-Feb and 22-Jun-2011 calls, attendance, proxies, debt schedules, votes,
+  challenges and legal-effect record;
+- Garrigues retainer, personnel/witness map, pre-contract correspondence/drafts,
+  billing and 11-Apr-2013 report, preserved first and disclosed only after
+  confidentiality/privilege review;
 - month-by-month LPB cash, due liabilities, restricted deposits, receivables,
   operating income, interference and bridge finance;
 - exact legal person/NIF and instrument for every credit/standing transition;
