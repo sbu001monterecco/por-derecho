@@ -81,6 +81,12 @@ Entries:
 - 19/04/2016 — 5.0 h — jurisprudence research on adding a point to agenda and right of information of other owners.
 - 21/04/2016 — 5.0 h — jurisprudence research on the legal nature of Community-fee claims in relation to the asserted non-existence of common expenses.
 
+## Direct 21-Apr email cross-check
+
+Gmail forwarded copy `1a0294bdf7a986f8` preserves Borja Rodríguez-Batllori's 21-Apr-2016 reply directly copying Carlos Saavedra, Miguel Hernández and Elena Santos. Borja refuses to authorise Luchy/LPB contracting the PwC lawyers on the information then supplied and asks them not to provide Luchy services without his express consent, citing treasury, estate-credit, necessity and fee-information concerns.
+
+This is a material cross-check on the appendix's 21-Apr strategy/preparation entries and 26-Apr attendance entries. It does **not** establish that PwC generated an unauthorised estate credit. The appendix's Matkator client terminology and the ACTA's named private-owner representation may identify a different/non-estate mandate, but the engagement letter, payer, scope and any later AC consent remain controlling. See `archive/BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md`.
+
 ## Expenses / client terminology
 
 The expenses page includes a Carlos Saavedra car-hire entry described as being for travel to Lanzarote on 26 April **“para prestar servicios de asesoramiento al cliente Matkator S.L.”**
