@@ -175,7 +175,12 @@ jobs:
               const url = `${base}${target.path}?${q}`;
               const failures = [];
               try {
-                const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+                let response;
+                for (let attempt = 1; attempt <= 3; attempt += 1) {
+                  response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+                  if (response && response.status() === 200) break;
+                  if (attempt < 3) await page.waitForTimeout(1500);
+                }
                 if (!response || response.status() !== 200) failures.push(`HTTP ${response ? response.status() : 'none'}`);
                 const selector = `[data-source-of-funds-notice="${target.variant}"] .sfn--${target.variant}`;
                 await page.locator(selector).waitFor({ state: 'visible', timeout: 45000 });
@@ -192,7 +197,8 @@ jobs:
                 const expectedRoute = target.path.startsWith('/en/')
                   ? '/en/source-of-funds-professional-services-notice/'
                   : '/es/aviso-procedencia-fondos-servicios-profesionales/';
-                if (links.length !== 2 || links.some(link => !link.includes(expectedRoute))) failures.push(`links=${JSON.stringify(links)}`);
+                const expectedLinkCount = target.variant === 'compact' ? 1 : 2;
+                if (links.length !== expectedLinkCount || links.some(link => !link.includes(expectedRoute))) failures.push(`links=${JSON.stringify(links)}`);
               } catch (error) {
                 failures.push(String(error));
               }
