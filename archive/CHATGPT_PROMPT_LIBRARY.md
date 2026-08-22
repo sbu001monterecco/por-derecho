@@ -90,5 +90,10 @@ a public-safe manifest; use a branch/PR; and verify the private self-email resul
 Never treat an exact filename, a related source, a compressed variant or a
 temporary scratch copy as proof of byte-identical durable preservation.
 
+Apply `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`: the closeout prompt may prepare a
+self-email package, but it must not send it without the user's final approval of
+the exact recipients, body, attachments and links. When no send is authorised,
+record `NO EMAIL SENT` and complete repository/authorised-destination preservation.
+
 ## Universal close-out
 Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.

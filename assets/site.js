@@ -87,7 +87,10 @@
           {
             src: 'evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png?v=20260822g',
             alt: 'PwC five-actor and Acosta Matos 2016 professional knowledge checkpoint graphic',
-            caption: '2016 professional knowledge checkpoint'
+            caption: 'PwC · five actors + IA · open the 15–26 April 2016 chain',
+            href: new URL('../en/evidence-pwc-sun-park-meeting-21-april-2016/#sequence', base).href,
+            ariaLabel: 'PwC 2016 professional-knowledge checkpoint. The client made the penal-route decision and PwC acknowledged it; this is not an independent PwC finding that any named person committed an offence. Open the complete 15–26 April 2016 chain.',
+            loading: 'lazy'
           }
         ]
       : [
@@ -99,7 +102,10 @@
           {
             src: 'evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png?v=20260822g',
             alt: 'Gráfico PwC, cinco actores y Acosta Matos sobre el punto de conocimiento profesional de 2016',
-            caption: 'Punto de conocimiento profesional · 2016'
+            caption: 'PwC · cinco actores + AC · abrir cadena 15–26 abril 2016',
+            href: new URL('../es/evidencia-pwc-junta-sun-park-21-abril-2016/#secuencia', base).href,
+            ariaLabel: 'Punto de conocimiento profesional PwC de 2016. El cliente decidió e instruyó seguir la vía penal y PwC acusó recibo; no es una conclusión independiente de PwC de que una persona nombrada cometiera delito. Abrir la cadena completa de 15–26 abril 2016.',
+            loading: 'lazy'
           }
         ];
     const intro = document.createElement('header');
@@ -125,15 +131,15 @@
     graphicData.forEach(item => {
       const link = document.createElement('a');
       link.className = 'source-funds-email-graphic';
-      link.href = `${notice.href}#${isEnglish ? 'scope' : 'alcance'}`;
-      link.setAttribute('aria-label', `${item.caption} — ${isEnglish ? 'read the full professional notice' : 'leer el aviso profesional completo'}`);
+      link.href = item.href || `${notice.href}#${isEnglish ? 'scope' : 'alcance'}`;
+      link.setAttribute('aria-label', item.ariaLabel || `${item.caption} — ${isEnglish ? 'read the full professional notice' : 'leer el aviso profesional completo'}`);
       const image = document.createElement('img');
       image.src = new URL(item.src, base).href;
       image.alt = item.alt;
       image.width = 1800;
       image.height = 1200;
-      image.loading = 'eager';
-      image.fetchPriority = 'high';
+      image.loading = item.loading || 'eager';
+      if (!item.loading) image.fetchPriority = 'high';
       image.decoding = 'async';
       const caption = document.createElement('span');
       caption.textContent = item.caption;
@@ -287,9 +293,31 @@
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-junta-pwc-warning-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('sun-park-junta-pwc-warning-20260822.js?v=20260822b', current.src).href;
+  module.src = new URL('sun-park-junta-pwc-warning-20260822.js?v=20260822c', current.src).href;
   module.async = false;
   module.setAttribute('data-junta-pwc-warning-loader', '20260822');
+  document.head.appendChild(module);
+})();
+
+/* AUTHOR-REPORTING-PERSON-ALERTADOR-NOTICE-20260822 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-alertador-notice-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('alertador-notice-20260822.js?v=20260822a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-alertador-notice-loader', '20260822');
+  document.head.appendChild(module);
+})();
+
+/* PWC-VISUAL-APRIL-CHAIN-LINK-20260822 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-pwc-chain-link-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('pwc-visual-chain-link-20260822.js?v=20260822a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-pwc-chain-link-loader', '20260822');
   document.head.appendChild(module);
 })();
 

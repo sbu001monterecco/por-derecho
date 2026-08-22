@@ -6,3 +6,4 @@ This directory contains durable thread-deletion safety audits. Each audit record
 - [20 August 2026 — lender liability, pacto comisorio, PP 1041 and criminal-first reconstruction thread](2026-08-20-lender-pacto-pp1041-criminal-first-thread.md)
 - [20 August 2026 — ICALPA DIP 79/2026 and DIP 80/2026 thread](2026-08-20-icalpa-dip79-dip80-thread.md)
 - [21 August 2026 — CIB technical-partner reply and website discovery-navigation thread](2026-08-21-cib-website-publication-thread.md)
+- [22 August 2026 — PwC / AC refusal image links, reporting-person footer and no-send control](2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md)

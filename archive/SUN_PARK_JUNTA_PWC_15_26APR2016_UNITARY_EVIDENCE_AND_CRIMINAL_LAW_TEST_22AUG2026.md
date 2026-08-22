@@ -82,3 +82,12 @@ Safe: “Gil alleges concealment; the source proves late/indirect arrival.”
 Safe: “The sequence warrants an element-by-element criminal-law review.”  
 Unsafe without further proof: “The organisers concealed the meeting as an established fact.”  
 Unsafe without a judicial finding or complete element proof: “Borja’s email is itself criminal.”
+
+## Public implementation control
+
+The exact PwC email graphic is used only with this proposition: the client decided and instructed pursuit of the penal route and PwC acknowledged the decision; the graphic is not an independent PwC finding that any named person committed an offence. Its language-specific click-through destinations are the complete public 15–26-April sequence pages:
+
+- `es/evidencia-pwc-junta-sun-park-21-abril-2016/index.html`;
+- `en/evidence-pwc-sun-park-meeting-21-april-2016/index.html`.
+
+The 15-route core inventory, hashes, alertador-footer boundary, no-email status, merge and live-readback gates are recorded in `docs/deletion-audits/2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md` and `publication-manifests/pwc-ac-refusal-alertador-sitewide-20260822.json`.

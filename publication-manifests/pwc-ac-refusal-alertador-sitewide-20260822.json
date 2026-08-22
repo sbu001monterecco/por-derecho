@@ -1,0 +1,239 @@
+{
+  "publication_id": "PWC-AC-REFUSAL-ALERTADOR-SITEWIDE-20260822",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-22",
+  "repository": "sbu001monterecco/por-derecho",
+  "branch": "codex/pwc-ac-alertador-footer-20260822",
+  "current_state": "DRAFT",
+  "deletion_status": "PENDING_NOT_YET_DELETION_SAFE",
+  "subject": "Existing PwC 2016 criminality-knowledge checkpoint artwork linked to the complete April 2016 AC-refusal chain, plus a controlled reporting-person / alertador footer",
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012-administrador-concursal/index.html",
+      "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "es/pwc-canarias-carlos-saavedra-sun-park/preguntas-publicas/index.html",
+      "es/acosta-matos-perimetro/index.html",
+      "es/ricpe-responsabilidad-documental/index.html",
+      "es/san-telmo-ricpe-sun-park/index.html",
+      "es/evidencia-pwc-junta-sun-park-21-abril-2016/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "en/pwc-canarias-carlos-saavedra-sun-park/public-questions/index.html",
+      "en/acosta-matos-perimeter/index.html",
+      "en/ricpe-documentary-accountability/index.html",
+      "en/san-telmo-ricpe-sun-park/index.html",
+      "en/evidence-pwc-sun-park-meeting-21-april-2016/index.html"
+    ]
+  },
+  "unpaired_expected_routes": [
+    "es/reunion-pwc-fmmm-11-junio-2016/index.html"
+  ],
+  "supplemental_exact_png_routes": [
+    "/es/ric-private-equity-sun-park/",
+    "/en/ric-private-equity-sun-park/",
+    "/es/cadena-instrumentalizacion-ric-fondos-incentivos/",
+    "/en/institutionalisation-chain-ric-eu-incentives/"
+  ],
+  "existing_derivative_route_families": [
+    "RHG open-message routes in Spanish and English",
+    "CGPJ / Public Prosecution update routes in Spanish and English",
+    "prosecutorial professional-evidence routes in Spanish and English",
+    "TSJ Canarias Exp. Gub. 38/2026 routes in Spanish and English"
+  ],
+  "sitewide_footer_coverage": {
+    "site_js_loader_files": 345,
+    "direct_loader_files": 53,
+    "covered_content_or_redirect_html_files": 398,
+    "excluded_html_files": {
+      "404.html": "Relative asset resolution is unstable when the 404 document is served for arbitrary nested missing paths.",
+      "googlea2c9cf79bda90f1c.html": "Search-provider verification token; not a human-facing content page."
+    },
+    "dependency_model": "One dependency-free static JavaScript notice; no framework, analytics, form or external runtime dependency added."
+  },
+  "expected_source_files": [
+    "AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md",
+    "CHATGPT_START_HERE.md",
+    "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
+    "GITHUB_BACKUP_AND_PRESERVATION_PROTOCOL.md",
+    "README.md",
+    "archive/BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md",
+    "archive/CHATGPT_PROMPT_LIBRARY.md",
+    "archive/SUN_PARK_JUNTA_PWC_15_26APR2016_UNITARY_EVIDENCE_AND_CRIMINAL_LAW_TEST_22AUG2026.md",
+    "archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md",
+    "archive/TSJ_EXP_GUB_38_2026_VISUAL_ASSET_CONTROL_20AUG2026.md",
+    "archive/knowledge-project/PWC_2016_NOTICE_AC_CONTACT_PUBLIC_QUESTIONS_GATE_19AUG2026.md",
+    "archive/prompts/THREAD_DELETION_AND_CUSTODY_CLOSEOUT_PROMPT_21AUG2026.md",
+    "assets/alertador-notice-20260822.js",
+    "assets/pwc-visual-chain-link-20260822.js",
+    "assets/site.js",
+    "assets/sun-park-junta-pwc-warning-20260822.js",
+    "aviso-legal.html",
+    "contacto.html",
+    "docs/deletion-audits/2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md",
+    "docs/deletion-audits/README.md",
+    "en/cgpj-permanent-commission/index.html",
+    "en/daniel-irigoyen-insolvency-knowledge/index.html",
+    "en/evidence-pwc-sun-park-meeting-21-april-2016/index.html",
+    "en/insolvency-36-2012-administrator/index.html",
+    "en/open-letter-public-prosecution-service/addressees.html",
+    "en/open-letter-public-prosecution-service/index.html",
+    "en/por-derecho/applications-and-collaboration/index.html",
+    "en/por-derecho/applications-and-collaboration/pilot-pack/index.html",
+    "en/por-derecho/governance-and-independence/index.html",
+    "en/por-derecho/how-it-works/index.html",
+    "en/por-derecho/index.html",
+    "en/por-derecho/institutional-execution/index.html",
+    "en/por-derecho/origin/index.html",
+    "en/por-derecho/oversight-of-oversight/index.html",
+    "en/por-derecho/palacete/index.html",
+    "en/por-derecho/research-and-training/fragmented-truth/index.html",
+    "en/por-derecho/research-and-training/index.html",
+    "en/por-derecho/second-pair-of-eyes/index.html",
+    "en/por-derecho/technical-partners/index.html",
+    "en/pwc-legal-prior-advice-adverse-position/index.html",
+    "en/tsj-canarias-exp-gub-38-2026/appeal-filed/index.html",
+    "es/carta-abierta-ministerio-fiscal/destinatarios.html",
+    "es/carta-abierta-ministerio-fiscal/index.html",
+    "es/cgpj-comision-permanente/index.html",
+    "es/daniel-irigoyen-conocimiento-concursal/index.html",
+    "es/evidencia-pwc-junta-sun-park-21-abril-2016/index.html",
+    "es/fundacion-por-derecho/palacete-por-derecho/index.html",
+    "es/grant-thornton/linkedin-21dec2024/index.html",
+    "es/por-derecho/aplicaciones-y-colaboracion/index.html",
+    "es/por-derecho/aplicaciones-y-colaboracion/paquete-piloto/index.html",
+    "es/por-derecho/como-funciona/index.html",
+    "es/por-derecho/ejecucion-institucional/index.html",
+    "es/por-derecho/gobernanza-e-independencia/index.html",
+    "es/por-derecho/index.html",
+    "es/por-derecho/investigacion-y-formacion/index.html",
+    "es/por-derecho/investigacion-y-formacion/verdad-fragmentada/index.html",
+    "es/por-derecho/origen/index.html",
+    "es/por-derecho/palacete/index.html",
+    "es/por-derecho/segundo-par-de-ojos/index.html",
+    "es/por-derecho/socios-tecnicos/index.html",
+    "es/por-derecho/supervision-de-la-supervision/index.html",
+    "es/pwc-legal-asesoramiento-previo-posicion-adversa/index.html",
+    "es/tsj-canarias-exp-gub-38-2026/alzada-presentada/index.html",
+    "estatutos.html",
+    "faq.html",
+    "gobernanza.html",
+    "index.html",
+    "institutional-preparation.html",
+    "origen.html",
+    "preparacion-institucional.html",
+    "privacidad.html",
+    "programas.html",
+    "publication-manifests/pwc-ac-refusal-alertador-sitewide-20260822.json",
+    "que-somos.html"
+  ],
+  "assets": [
+    {
+      "locale": "es",
+      "path": "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+      "width": 1800,
+      "height": 1200,
+      "sha256": "6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf",
+      "reuse_only": true
+    },
+    {
+      "locale": "en",
+      "path": "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png",
+      "width": 1800,
+      "height": 1200,
+      "sha256": "d00d2a5d334bc73bf2c1dd034a8d8341b00c47d9e0a382aff08e1a716d75bc8f",
+      "reuse_only": true
+    }
+  ],
+  "gmail_locators": [
+    {
+      "message_id": "1541a151da1f1751",
+      "date": "2016-04-15",
+      "role": "remainder of notice material received that day and internally forwarded photographs"
+    },
+    {
+      "message_id": "1541a132422e7102",
+      "date": "2016-04-15",
+      "role": "PwC-facing notice package, analysis and proposed attendance"
+    },
+    {
+      "message_id": "154291cb9c1dab86",
+      "date": "2016-04-18",
+      "role": "PwC accounting-demonstration and prior-claim request"
+    },
+    {
+      "message_id": "15432e003fed8f5e",
+      "date": "2016-04-20",
+      "role": "PwC travel confirmation and notary question"
+    },
+    {
+      "message_id": "1a0294bdf7a986f8",
+      "date": "2016-04-21",
+      "role": "2026 forward preserving quoted 2016 AC refusal, no-service instruction and voting position"
+    }
+  ],
+  "chain_control": {
+    "sequence": "2016-04-15 -> 2016-04-20 -> 2016-04-21 -> 2016-04-26",
+    "meeting_source": "signed 26 April 2016 meeting record and associated evidence family; no Gmail ID is assigned to the meeting itself in the April locator set",
+    "concealment_boundary": "The record proves late/indirect arrival of notice material recorded on 15 April; it does not establish the organisers' subjective intention to conceal the meeting without service and organiser evidence."
+  },
+  "publication_boundaries": [
+    "The client's criminal-route decision/instruction was received and expressly acknowledged by Miguel Hernández/PwC with Carlos Saavedra copied; this establishes professional notice and knowledge, not an independent PwC criminal determination or a finding that any named person committed an offence.",
+    "Do not attribute 'Tomamos nota de vuestra decisión' to Carlos Saavedra personally unless a Carlos-authored source is located.",
+    "The 21 April 2016 email establishes the AC's stated refusal, warning and voting position; it does not by itself prove debt invalidity, concealment, misconduct or criminality.",
+    "PwC later confirmed direct contact with the AC but described it as a general telephone conversation without a report or email exchange; exact transfer of criminal allegations to the AC remains unproved.",
+    "The reporting-person / alertador footer is Gil Marer's stated position, not an automatic or officially conferred legal status.",
+    "Directive (EU) 2019/1937, Spain's Law 2/2023 and Germany's HinSchG must not be applied retroactively to 2016 facts or communications; Great Britain and Northern Ireland protection also depends on all statutory and jurisdictional conditions.",
+    "Repository publication does not authorise any email send, resend or self-email."
+  ],
+  "official_law_sources": {
+    "eu": "https://eur-lex.europa.eu/eli/dir/2019/1937/oj",
+    "spain": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513",
+    "germany": "https://www.gesetze-im-internet.de/hinschg/",
+    "great_britain_employment_rights_act_part_iva": "https://www.legislation.gov.uk/ukpga/1996/18/part/IVA",
+    "great_britain_public_interest_disclosure_act": "https://www.legislation.gov.uk/ukpga/1998/23/contents",
+    "northern_ireland_employment_rights_order": "https://www.legislation.gov.uk/nisi/1996/1919/contents",
+    "northern_ireland_public_interest_disclosure_order": "https://www.legislation.gov.uk/nisi/1998/1763/contents"
+  },
+  "email_delivery": {
+    "status": "NOT_SENT",
+    "reason": "Explicit final approval of the exact recipients, body, attachments and links has not been given.",
+    "repository_publication_is_email_authorization": false
+  },
+  "open_evidence": [
+    "native 2016 messages with full RFC 822 headers and attachments",
+    "notice service records, envelopes, addressee list, photographs and organiser communications",
+    "missing substantive attachment referenced in the 21 April chain",
+    "PwC engagement, client, payer, scope, authority, conflict and invoice-allocation records",
+    "Community ledger, accounts, debt certificate, challenge/deposit evidence, authorities and complete signed minutes",
+    "native 26 April audio and metadata plus court-certified procedural use",
+    "native June-July penal-instruction and acknowledgement messages and September AC-contact material",
+    "complete removal/separation filings, actor-specific elements, causation, loss and limitation evidence"
+  ],
+  "validation": {
+    "status": "LOCAL_PASS",
+    "evidence": [
+      "git diff --check and staged-equivalent new-file whitespace checks passed",
+      "node --check passed for site.js, warning, alertador footer and site-wide PwC image linker",
+      "public-bidder anonymisation, San Telmo attribution, unitary criminal reverse-engineering, visual-asset registry, publication-integrity and mission-critical repository validators passed",
+      "all 15 core route files and all declared source files exist; exact ES/EN PNG SHA-256 values match",
+      "13-route warning, bilingual footer and generic image-link simulations passed"
+    ],
+    "required": [
+      "JavaScript syntax",
+      "repository publication and integrity validators",
+      "canonical asset SHA-256 verification",
+      "all 15 source-route and link checks",
+      "four supplemental exact-PNG links and representative existing SVG-derivative links",
+      "bilingual footer and official-source checks",
+      "production HTTP and downloaded-asset readback"
+    ]
+  },
+  "publication": {
+    "pull_request": "PENDING",
+    "merge_commit": "PENDING",
+    "live_readback": "PENDING",
+    "deployment_log": "PENDING"
+  }
+}

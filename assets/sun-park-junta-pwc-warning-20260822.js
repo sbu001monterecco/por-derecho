@@ -11,6 +11,8 @@
     '/en/insolvency-36-2012-insolvency-administrator/',
     '/es/pwc-canarias-carlos-saavedra-sun-park/',
     '/en/pwc-canarias-carlos-saavedra-sun-park/',
+    '/es/pwc-canarias-carlos-saavedra-sun-park/preguntas-publicas/',
+    '/en/pwc-canarias-carlos-saavedra-sun-park/public-questions/',
     '/es/reunion-pwc-fmmm-11-junio-2016/',
     '/es/acosta-matos-perimetro/',
     '/en/acosta-matos-perimeter/',
@@ -41,15 +43,25 @@
       ? (en ? 'Open the complete 2016 evidence record →' : 'Abrir el expediente probatorio completo de 2016 →')
       : (en ? 'Open the source dossier →' : 'Abrir expediente fuente →');
     const sanTelmoImage = `${prefix}assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-${en ? 'EN' : 'ES'}.png?v=20260822g`;
+    const pwcImage = `${prefix}assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-${en ? 'EN' : 'ES'}.png?v=20260822g`;
+    const pwcAlreadyFeatured = [
+      '/es/acosta-matos-perimetro/',
+      '/en/acosta-matos-perimeter/',
+      '/es/ricpe-responsabilidad-documental/',
+      '/en/ricpe-documentary-accountability/'
+    ].some(route => path.endsWith(route));
+    const pwcVisual = pwcAlreadyFeatured ? '' : (en ? `
+      <a class="jpwc__visual" href="${target}"><img src="${pwcImage}" width="1800" height="1200" loading="lazy" decoding="async" alt=""><span>PwC · five private actors + Insolvency Administrator · 2016 professional-knowledge checkpoint. The graphic records the client’s penal-route decision and instruction and PwC’s acknowledgement; it is not an independent PwC finding that any named person committed an offence. Open the complete 15–26 April 2016 email-chain analysis →</span></a>` : `
+      <a class="jpwc__visual" href="${target}"><img src="${pwcImage}" width="1800" height="1200" loading="lazy" decoding="async" alt=""><span>PwC · cinco actores privados + Administrador Concursal · punto de conocimiento profesional 2016. El gráfico documenta la decisión e instrucción del cliente de seguir la vía penal y el acuse de PwC; no es una conclusión independiente de PwC de que una persona nombrada cometiera delito. Abrir el análisis completo de la cadena de correos de 15–26 abril 2016 →</span></a>`);
 
     const style = d.createElement('style');
     style.textContent = `
       .jpwc{padding:1.2rem 0;background:#fff3ef;color:#13252d;border-top:7px solid #a61b16;border-bottom:7px solid #a61b16}
       .jpwc__card{display:grid;grid-template-columns:1.05fr 1.95fr;gap:1rem;max-width:1180px;margin:auto;padding:1.15rem;border:2px solid #a61b16;border-radius:20px;background:#fff;box-shadow:0 14px 36px rgba(55,16,14,.16)}
       .jpwc__signal{display:flex;flex-direction:column;justify-content:center;padding:1.2rem;border-radius:15px;background:#a61b16;color:#fff}.jpwc__mark{font-weight:1000;font-size:clamp(2rem,5vw,4.4rem);line-height:.9;letter-spacing:-.04em}.jpwc__signal p{margin:.75rem 0 0;font-weight:850}.jpwc__signal small{margin-top:.6rem;opacity:.9}
-      .jpwc__visual{grid-column:1/-1;display:block;overflow:hidden;border:2px solid #13252d;border-radius:15px;background:#0e171b;color:#fff;text-decoration:none}.jpwc__visual img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#f4f0e7}.jpwc__visual span{display:block;padding:.65rem .85rem;font-size:.86rem;font-weight:850;line-height:1.35}.jpwc__visual:hover,.jpwc__visual:focus-visible{outline:4px solid #e3ac3a;outline-offset:3px}
+      .jpwc__visuals{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.jpwc__visuals--single{grid-template-columns:1fr}.jpwc__visual{display:block;overflow:hidden;border:2px solid #13252d;border-radius:15px;background:#0e171b;color:#fff;text-decoration:none}.jpwc__visual img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#f4f0e7}.jpwc__visual span{display:block;padding:.65rem .85rem;font-size:.86rem;font-weight:850;line-height:1.35}.jpwc__visual:hover,.jpwc__visual:focus-visible{outline:4px solid #e3ac3a;outline-offset:3px}
       .jpwc__copy{padding:.2rem}.jpwc__k{margin:0;color:#7b1511;font-size:.76rem;font-weight:950;letter-spacing:.09em;text-transform:uppercase}.jpwc h2{font-size:clamp(1.65rem,3vw,2.65rem);line-height:1.02;margin:.35rem 0 .65rem}.jpwc__lead{font-size:1.02rem;margin:.25rem 0 .8rem}.jpwc__timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.55rem}.jpwc__timeline div{padding:.7rem;border-radius:12px;background:#f3f5f5;border-top:5px solid #315c7b}.jpwc__timeline b{display:block;color:#7b1511}.jpwc__action{display:inline-flex;margin-top:.85rem;padding:.72rem 1rem;border-radius:999px;background:#13252d;color:#fff!important;font-weight:950;text-decoration:none}.jpwc__limit{display:block;margin-top:.7rem;color:#55666d;font-size:.82rem;line-height:1.35}
-      @media(max-width:880px){.jpwc__card{grid-template-columns:1fr}.jpwc__timeline{grid-template-columns:1fr 1fr}}@media(max-width:560px){.jpwc__timeline{grid-template-columns:1fr}.jpwc__card{border-radius:12px}.jpwc__mark{font-size:2.6rem}}
+      @media(max-width:880px){.jpwc__card{grid-template-columns:1fr}.jpwc__visuals{grid-template-columns:1fr}.jpwc__timeline{grid-template-columns:1fr 1fr}}@media(max-width:560px){.jpwc__timeline{grid-template-columns:1fr}.jpwc__card{border-radius:12px}.jpwc__mark{font-size:2.6rem}}
     `;
     d.head.append(style);
 
@@ -59,18 +71,18 @@
     section.setAttribute('aria-label', en ? 'Key evidence: PwC and the 2016 Sun Park meeting' : 'Prueba clave: PwC y la Junta Sun Park de 2016');
     section.innerHTML = en ? `
       <div class="shell"><div class="jpwc__card">
-        <a class="jpwc__visual" href="${sanTelmoTarget}"><img src="${sanTelmoImage}" width="1800" height="1200" loading="eager" fetchpriority="high" decoding="async" alt=""><span>Eduardo Sánchez (San Telmo) · Sun Park / MYND Yaiza · Francisco de Borja Rodríguez-Batllori (Insolvency Administrator) — source-controlled same-asset professional-overlap graphic. It does not by itself prove coordination, information transfer, unlawfulness or liability. ${sanTelmoCta}</span></a>
+        <div class="jpwc__visuals${pwcAlreadyFeatured ? ' jpwc__visuals--single' : ''}"><a class="jpwc__visual" href="${sanTelmoTarget}"><img src="${sanTelmoImage}" width="1800" height="1200" loading="eager" fetchpriority="high" decoding="async" alt=""><span>Eduardo Sánchez (San Telmo) · Sun Park / MYND Yaiza · Francisco de Borja Rodríguez-Batllori (Insolvency Administrator) — source-controlled same-asset professional-overlap graphic. It does not by itself prove coordination, information transfer, unlawfulness or liability. ${sanTelmoCta}</span></a>${pwcVisual}</div>
         <div class="jpwc__signal"><span class="jpwc__mark">21 APR</span><p>“I DO NOT AUTHORISE THEIR ENGAGEMENT”</p><small>Insolvency Administrator’s email · 2016</small></div>
         <div class="jpwc__copy"><p class="jpwc__k">KEY CONTEMPORANEOUS EVIDENCE · READ AS ONE EVENT</p><h2>PwC agreed to attend. The next day the Insolvency Administrator refused authority.</h2><p class="jpwc__lead">The sequence connects late delivery of the notice, PwC’s legal work, planned attendance, Borja Rodríguez-Batllori’s refusal and the disputed loss of voting rights.</p>
-          <div class="jpwc__timeline"><div><b>15 APR</b>Notice photographs reach the complex; the analysis is sent to PwC.</div><div><b>20 APR</b>Carlos confirms Carlos, Miguel and Elena will travel to Lanzarote.</div><div><b>21 APR</b>Borja refuses PwC’s engagement and tells the three not to act.</div><div><b>26 APR</b>Meeting and disputed Community resolutions.</div></div>
+          <div class="jpwc__timeline"><div><b>15 APR</b>Notice photographs reach the complex; the analysis is sent to PwC.</div><div><b>20 APR</b>Carlos confirms Carlos, Miguel and Elena will travel to Lanzarote.</div><div><b>21 APR</b>Borja refuses PwC’s engagement and asks the three not to act.</div><div><b>26 APR</b>Meeting and disputed Community resolutions.</div></div>
           <a class="jpwc__action" href="${target}">Open the complete evidence and criminal-law test →</a><small class="jpwc__limit">The email proves the refusal and warning. It does not, by itself, prove concealment, a false debt or a criminal offence.</small>
         </div>
       </div></div>` : `
       <div class="shell"><div class="jpwc__card">
-        <a class="jpwc__visual" href="${sanTelmoTarget}"><img src="${sanTelmoImage}" width="1800" height="1200" loading="eager" fetchpriority="high" decoding="async" alt=""><span>Eduardo Sánchez (San Telmo) · Sun Park / MYND Yaiza · Francisco de Borja Rodríguez-Batllori (Administrador Concursal) — gráfico controlado por fuentes sobre el solapamiento profesional relativo al mismo activo. No prueba por sí solo coordinación, transmisión de información, ilicitud ni responsabilidad. ${sanTelmoCta}</span></a>
+        <div class="jpwc__visuals${pwcAlreadyFeatured ? ' jpwc__visuals--single' : ''}"><a class="jpwc__visual" href="${sanTelmoTarget}"><img src="${sanTelmoImage}" width="1800" height="1200" loading="eager" fetchpriority="high" decoding="async" alt=""><span>Eduardo Sánchez (San Telmo) · Sun Park / MYND Yaiza · Francisco de Borja Rodríguez-Batllori (Administrador Concursal) — gráfico controlado por fuentes sobre el solapamiento profesional relativo al mismo activo. No prueba por sí solo coordinación, transmisión de información, ilicitud ni responsabilidad. ${sanTelmoCta}</span></a>${pwcVisual}</div>
         <div class="jpwc__signal"><span class="jpwc__mark">21 ABR</span><p>«NO AUTORIZO SU CONTRATACIÓN»</p><small>Correo del Administrador Concursal · 2016</small></div>
         <div class="jpwc__copy"><p class="jpwc__k">PRUEBA CONTEMPORÁNEA CLAVE · LECTURA UNITARIA</p><h2>PwC confirmó que asistiría. Al día siguiente, el Administrador Concursal negó la autorización.</h2><p class="jpwc__lead">La secuencia une la llegada tardía de la convocatoria, el trabajo jurídico de PwC, la asistencia prevista, la negativa de Borja Rodríguez-Batllori y la privación de voto discutida.</p>
-          <div class="jpwc__timeline"><div><b>15 ABR</b>Llegan al complejo fotos de la convocatoria; el análisis se envía a PwC.</div><div><b>20 ABR</b>Carlos confirma que Carlos, Miguel y Elena viajarán a Lanzarote.</div><div><b>21 ABR</b>Borja niega el encargo PwC y ordena a los tres no actuar.</div><div><b>26 ABR</b>Junta y acuerdos comunitarios controvertidos.</div></div>
+          <div class="jpwc__timeline"><div><b>15 ABR</b>Llegan al complejo fotos de la convocatoria; el análisis se envía a PwC.</div><div><b>20 ABR</b>Carlos confirma que Carlos, Miguel y Elena viajarán a Lanzarote.</div><div><b>21 ABR</b>Borja niega el encargo PwC y pide a los tres que no actúen.</div><div><b>26 ABR</b>Junta y acuerdos comunitarios controvertidos.</div></div>
           <a class="jpwc__action" href="${target}">Abrir prueba completa y test penal →</a><small class="jpwc__limit">El correo prueba la negativa y el apercibimiento. No prueba por sí solo ocultación, deuda falsa ni delito.</small>
         </div>
       </div></div>`;

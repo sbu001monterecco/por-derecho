@@ -117,3 +117,12 @@ Borja's statements about voting, estate-credit priority and authority are contem
 - `archive/knowledge-project/SUN_PARK_26APR_TO_11JUN2016_UNITARY_SCAN_19AUG2026.md`
 - `archive/knowledge-project/PWC_INVOICE_APPENDIX_89_7_HOURS_SOURCE_CONTROL_19AUG2026.md`
 - `evidence/community/ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md`
+
+## 10. Public implementation control
+
+The source-controlled public explanation is linked in both languages at:
+
+- `es/evidencia-pwc-junta-sun-park-21-abril-2016/index.html`;
+- `en/evidence-pwc-sun-park-meeting-21-april-2016/index.html`.
+
+The exact outgoing-email PwC graphic is presented on the controlled 15-route AC/PwC/PwC-public-questions/Acosta Matos/RICPE/San Telmo/evidence cohort and links language-specifically to those pages. The public caption preserves the boundary that the client made the penal-route decision and PwC acknowledged it; it does not describe PwC as independently finding a crime. Deployment state, route inventory and read-back evidence are controlled in `docs/deletion-audits/2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md` and `publication-manifests/pwc-ac-refusal-alertador-sitewide-20260822.json`.
