@@ -32,7 +32,7 @@
 
   ready(() => {
     if (document.querySelector('[data-sitewide-discovery-nav-mounted]')) return;
-    document.documentElement.dataset.sitewideDiscoveryNavMounted = '20260821';
+    document.documentElement.dataset.sitewideDiscoveryNavMounted = '20260822';
 
     const path = normalisePath(location.pathname);
     const lang = (document.documentElement.lang || '').toLowerCase();
@@ -43,11 +43,13 @@
           { href: `${prefix}es/buscar/`, label: 'Buscar', route: '/es/buscar/', current: true },
           { href: `${prefix}es/indice-web/`, label: 'Indice', route: '/es/indice-web/', current: true },
           { href: `${prefix}es/por-derecho/`, label: 'Por Derecho', route: '/es/por-derecho/' },
+          { href: `${prefix}es/por-que-debe-importar-al-reino-unido/`, label: 'Por qué UK', route: '/es/por-que-debe-importar-al-reino-unido/', current: true },
         ]
       : [
           { href: `${prefix}en/search/`, label: 'Search', route: '/en/search/', current: true },
           { href: `${prefix}en/site-index/`, label: 'Site Index', route: '/en/site-index/', current: true },
           { href: `${prefix}en/por-derecho/`, label: 'Foundation', route: '/en/por-derecho/' },
+          { href: `${prefix}en/why-the-uk-should-care/`, label: 'Why the UK?', route: '/en/why-the-uk-should-care/', current: true },
         ];
 
     document.querySelectorAll('.main-nav').forEach((nav) => {
@@ -57,6 +59,29 @@
     document.querySelectorAll('.priority-links').forEach((band) => {
       entries.slice(0, 2).forEach((item) => addLink(band, item, '[href*="updates/"],[href*="actualizaciones/"],[data-series-fg-priority]'));
     });
+
+    if (!document.querySelector('[data-why-uk-home-gateway]')) {
+      const homeRoute = isSpanish ? '/es/' : '/en/';
+      if (path.endsWith(homeRoute)) {
+        const anchor = document.querySelector(isSpanish ? '#plataforma-construida-2011-2018' : '#platform-built-2011-2018');
+        if (anchor) {
+          const section = document.createElement('section');
+          section.className = 'section';
+          section.dataset.whyUkHomeGateway = '20260822';
+          const href = isSpanish
+            ? `${prefix}es/por-que-debe-importar-al-reino-unido/`
+            : `${prefix}en/why-the-uk-should-care/`;
+          const eyebrow = isSpanish
+            ? 'Sociedad británica · inversión española · daño transfronterizo'
+            : 'British company · Spanish investment · cross-border harm';
+          const title = isSpanish
+            ? 'Por qué el Reino Unido debe mirar más allá del hotel de Lanzarote'
+            : 'Why the United Kingdom should look beyond the Lanzarote hotel';
+          section.innerHTML = `<div class="shell"><a class="dossier-link side-dossier-gateway" href="${href}"><span>${eyebrow}</span><strong>${title}</strong><i aria-hidden="true">→</i></a></div>`;
+          anchor.insertAdjacentElement('afterend', section);
+        }
+      }
+    }
   });
 })();
 
