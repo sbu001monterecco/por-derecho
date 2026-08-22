@@ -35,13 +35,11 @@
     "Costa Papagayo ledger, invoices, EUR25,000 payment receipt and any agreement",
     "complete execution record and alleged debtor-substitution basis"
   ],
-  "privacy": {
-    "raw_private_evidence_committed": false,
-    "unredacted_image_masters_committed": false,
-    "personal_identifiers_committed": false,
-    "signatures_committed": false,
-    "privileged_advice_committed": false,
-    "public_edition": "operative non-personal content, integrity hashes and source-access route only"
+  "source_publication": {
+    "forwarded_email_changes_document_status": false,
+    "received_copy_hashes_verified": true,
+    "public_edition": "indexed, searchable account of the operative source content, integrity hashes and authenticated-source comparison route",
+    "image_facsimile_status": "technical publication layer in preparation; it is not withheld because the documents were forwarded by email"
   },
-  "publication_boundary": "The public repository carries the controlled digital edition, not the unredacted forwarded scans. Any later public image edition requires document-by-document privacy, provenance and redaction review."
+  "publication_boundary": "The public repository distinguishes the governing instruments from the email route by which the received copies arrived. The forwarding record is a provenance fact, not a confidentiality classification or an authentication substitute."
 }
