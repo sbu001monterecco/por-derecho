@@ -114,7 +114,7 @@ Declarations 007–008 and the proposition-by-proposition contradiction register
 - he and the reserved declarant were generally very close and coordinated; evidential voice separation is not a finding of general disagreement;
 - he attributes a limited set of Pink-related divergences to the declarant's personal exposure and alleged pressure, while accepting that the causal allegation requires corroboration;
 - he recalls **Garrigues** recommending the Monterecco route under LPB enforcement/auction and inherited-operation pressure, and says he came to regard that advice as wrong very soon;
-- he argues that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as wholly or partly void *ab initio*; and
+- he now advances total *ab initio* nullity of the 6-Feb-2012 LPB–Monterecco agreement as his primary position, superseding his earlier total/partial alternative; and
 - he says CEXP was the only vehicle capable of holding or conferring the owners-derived whole-hotel collective mandate, so an LPB bilateral contract could not independently bypass CEXP or create authority over common elements or third-party rights;
 - he attributes the alleged root cause to an actor-specific 2008 Montelanza, S.L./Molina-linked seller/minority perimeter, while preserving structural vulnerability, the June-2011 matrix and Bankia's immediate 2012 trigger as distinct layers; and
 - Declaration 008 records his self-attribution and supports attribution of the current written text; it does not authenticate any voice.

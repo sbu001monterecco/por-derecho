@@ -74,7 +74,7 @@ Gil attributes the alleged originating private cause to incomplete/frustrated pe
 
 ### 4.6 Gil's CEXP/nullity legal position is controlled but not adjudicated
 
-Gil now argues that the 6-Feb LPB–Monterecco contract should have been treated as wholly or partly void *ab initio* and that CEXP was the only vehicle capable of holding or conferring the owners-derived mandate for unitary operation of the integrated hotel. This does not mean that CEXP owned every finca, that a service company could never act under valid CEXP authority, or that exclusivity/universal scope is already proved. Preserve simultaneously:
+Gil now advances total *ab initio* nullity of the 6-Feb LPB–Monterecco contract as his primary position and argues that CEXP was the only vehicle capable of holding or conferring the owners-derived mandate for unitary operation of the integrated hotel. Declaration 009 supersedes his earlier total/partial alternative. This does not mean that CEXP owned every finca, that a service company could never act under valid CEXP authority, or that exclusivity/universal scope is already proved. Preserve simultaneously:
 
 1. Gil's legal position;
 2. the current open authority/nullity question;
@@ -93,7 +93,7 @@ The primary quantified 12 July 2016 notice to the insolvency administrator is lo
 
 - The primary 15 May 2012 auction schedule contains **158 properties**; 159 and the contemporaneous Garrigues figure 166 are distinct measurements pending a finca crosswalk.
 - Valencia PO 1859/2023 is now listed for **9 October 2026 at 12:00**, superseding the earlier 28 January 2027 date in Revision 2.
-- AP 89/2014 and AP 16/2014 references must remain distinct and unreconciled until certified headers/proceedings are checked.
+- The former AP 16/2014 reference for Drive `1hnZxJUl4jwDCsaM59cAH775YGJCT4fCM` / SHA-256 `1bce9ad…` is superseded: the controlled source is AP **89/2014**, Rollo **793/2012**. CR-066 prevents reintroduction of the duplicate/misidentified case.
 - Adverse judgments, DI 248/2018 and innocent explanations remain part of the required red-team analysis; convergence does not prove coordination, knowledge or criminal purpose.
 
 ## 5. Cabildo / tourism register / Yaiza action
@@ -118,7 +118,7 @@ The following remain open and are not resolved by this close-out:
 6. an exhaustive search/query/attachment log and complete Microsoft/OneDrive/SharePoint coverage;
 7. CAM assignment, price, balance, accounting, adjudication/dación and hedge-separation decision records;
 8. native 2016 burofax/annex/receipt reconciliation;
-9. certified reconciliation of AP 89/2014 and AP 16/2014;
+9. certified AP 89/2014 header, evidence, finality and execution package, preserving CR-066's correction of the former AP 16/2014 duplicate label;
 10. complete 2008 seller–finca–obligation–performance–defence map and complete 2-Feb/22-Jun-2011 governance package;
 11. Garrigues retainer, witnesses, pre-1/6-Feb communications/drafts, billing, May-2012 forwarding chain and 11-Apr-2013 report, preserved and confidentiality/privilege-reviewed before disclosure;
 12. native audio and chain-of-custody evidence if any voice attribution becomes material; and

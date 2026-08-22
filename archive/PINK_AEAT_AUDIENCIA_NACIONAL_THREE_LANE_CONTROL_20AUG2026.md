@@ -13,7 +13,7 @@ This control prevents three different matters from being collapsed into one:
 
 The overlap lies in particular documents, actors and consequences. It does not create identity of procedure, jurisdiction or legal issue.
 
-**Mandatory 22-August pickup:** read Declarations 005–008, CR-058/CR-059/CR-061 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`. Declaration 005 is preserved but controlled proposition by proposition. Gil's written self-attribution supports attribution of his text; ChatGPT has not authenticated any voice.
+**Mandatory 22-August pickup:** read Declarations 005–009, CR-058/CR-059/CR-061–CR-065, `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md` and `archive/GIL_PAMANIL_AEAT_PINK_NULLITY_CRITICAL_REANALYSIS_22AUG2026.md`. Declaration 005 is preserved but controlled proposition by proposition. Gil's written self-attribution supports attribution of his text; ChatGPT has not authenticated any voice.
 
 ## 2. Lane A — Fiscalía AN Exp. Gub. 86/2026
 
@@ -30,14 +30,23 @@ Controlled conclusion:
 
 ## 3. Lane B — Pink Canary Services v AEAT
 
-The correspondence records a separate contentious-administrative challenge by Pink Canary Services against AEAT acts before the Audiencia Nacional.
+The primary administrative/judicial record controls the following chronology:
 
-The available email record supports stating:
+- 29-Jul-2020: Pink was included in the inspection plan;
+- 30-Nov/2-Dec-2020: inspection commenced for Corporate Tax 2017–2018;
+- 7-Oct-2021: Act `A02-73355153` proposed a provisional zero result;
+- 22-Mar/6-Apr-2022: later site/information diligence recorded Acosta-channel statements;
+- 12-Jul-2022 and 14/25-Sep-2022: replacement act and final assessment followed;
+- Mar-2023: sanction decision followed;
+- Aug-2024: TEAR challenge was registered; no final TEAR merits decision has been located in the reviewed record;
+- 8–9-Aug-2024: Pink also initiated a nullity route;
+- 29-Sep-2025: AEAT expressly declared that route inadmissible, deemed notified in Oct-2025;
+- 2-Sep-2025: the contentious case began in the Canary Islands High Court;
+- 17-Nov-2025: High Court Order 209/2025 transferred jurisdiction to the Audiencia Nacional;
+- 2026: Audiencia Nacional `PO 496/2026`, Section 7, remains pending;
+- 6-Jul-2026: Order 426/2026 denied interim suspension; it did not decide the tax merits.
 
-- the judicial challenge existed by April 2026;
-- interim relief was later reported as refused;
-- counsel identified notification, NIF/contact-channel and underlying operator-period evidence as relevant;
-- the merits and final outcome remain unresolved in the reviewed record.
+The judicial record initially treated the challenged administrative state as presumed silence. The State later produced the 29-Sep-2025 express inadmissibility act. The reviewed record does not yet establish that Pink formally expanded or adapted its judicial claim to that express act. This procedural alignment must be checked rather than assumed.
 
 This lane concerns the legality and procedural effects of public tax acts.
 
@@ -92,15 +101,15 @@ The current repository and website record supports a nuanced position:
 
 ### 22 August 2026 controlling keys correction
 
-Gil Marer expressly corrects Declaration 005 and states that Pink never had “the keys” and had no authority to deliver them to the insolvency administrator, the owners’ Community or anyone else. Contemporaneous records identify the May-2012 obligation as CEXP's and the items as CEXP maintenance copies, not an act or capacity of Pink. Gil remembers personally making the delivery as CEXP President, but contemporaneous email materially conflicts with that recollection and the physical deliverer remains unresolved.
+Gil Marer's initial literal correction—“Pink never had the keys”—is itself superseded by Declaration 009. Contemporaneous May-2012 records identify the JV 1260/2011 obligation as CEXP's and the items as CEXP maintenance copies; Gil's later personal-delivery recollection conflicts with a same-day email and the physical deliverer remains unresolved. A **separate facially signed instrument dated 22-May-2017** says Pink's administrator—the reserved declarant—delivered “las llaves de acceso al complejo Sun Park” to Gil for LPB and that LPB received possession.
 
-The Pink correction is direct first-person evidence; the physical-deliverer question is controlled by `JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md`. Any different key event requires its own date, key schedule, zone/unit, holder and authority evidence. Do not infer Pink possession or authority from operation, registration, common personnel or Gil’s roles in other entities.
+Unless authenticity, signatures, inventory, scope or function are successfully challenged, the 2017 instrument contradicts any universal no-physical-key/no-delivery proposition. Gil's sustainable current position is narrower: Pink never possessed the CEXP maintenance/master set and never had lawful whole-hotel authority capable of transferring CEXP or third-party rights. Physical key, access, factual operation, possession and legal transfer capacity remain distinct. Each event requires its own date, key schedule, zone/unit, holder and authority evidence.
 
 ### 22 August 2026 contract-validity / CEXP / Garrigues clarification
 
-Declarations 007–008 record Gil Marer's legal position that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as wholly or partly void *ab initio* and that only CEXP could hold or confer the owners-derived collective mandate for unitary operation. They also record his recollection that **Garrigues** recommended the Monterecco route and his retrospective view that the advice was wrong. Gil expressly authorises public naming and requests Garrigues testimony and complete custodial production.
+Declarations 007–009 record Gil Marer's current primary legal position that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as **wholly void *ab initio*** and that only a competent collective act could confer CEXP's owners-derived mandate for unitary operation. They also record his recollection that **Garrigues** recommended the Monterecco route and his retrospective view that the advice was wrong. Gil expressly authorises public naming and requests Garrigues testimony and complete custodial production.
 
-This is `PERSONAL_RECOLLECTION:GIL` and `GIL LEGAL POSITION`, not verified pre-contract `COUNSEL_POSITION` or an adjudicated nullity. The first presently verified Garrigues activity is 28-Mar-2012, after the 1/6-Feb instruments; the 2009 Molina-linked non-adherence material was forwarded to it in May 2012. Naming/testimony authority does not prove the recalled advice or permit indiscriminate publication of confidential/privileged source bodies. Tax attribution, factual operation/registration, civil validity, CEXP authority, rent and key possession remain separate functions and periods.
+This is `PERSONAL_RECOLLECTION:GIL` and `GIL LEGAL POSITION`, not verified pre-contract `COUNSEL_POSITION` or an adjudicated nullity. The first presently verified Garrigues activity is 28-Mar-2012, after the 1/6-Feb instruments; the 2009 Molina-linked non-adherence material was forwarded to it in May 2012. Naming/testimony authority does not prove the recalled advice or permit indiscriminate publication of confidential/privileged source bodies. The contrary case remains visible: the 1-Feb notice, LPB's own-unit rights, the severability clause, Pink's genuine operation/registration and adverse judgments. Tax attribution, factual operation/registration, civil validity, CEXP authority, rent and key possession remain separate functions and periods.
 
 ### 22 August 2026 causal-layer clarification
 
@@ -155,8 +164,8 @@ Keep private or redact unless necessary:
 
 ## 9. Next finite evidence
 
-1. Complete Pink v AEAT court reference, current status and public-safe operative decisions.
-2. Complete AEAT file index identifying the origin and use of each relevant statement.
+1. Certified complete `PO 496/2026` docket, including proof whether the claim was expanded/adapted to AEAT's express 29-Sep-2025 inadmissibility act.
+2. Complete AEAT file index identifying the origin and use of each relevant statement, including the inspection-plan trigger before the Acosta material.
 3. Certified call/recording source, speakers, date, transcript and chain of custody.
 4. Operator/income matrix by period and entity.
 5. Direct evidence of any transmission from private/professional actors to AEAT.
@@ -165,7 +174,8 @@ Keep private or redact unless necessary:
 8. Audiencia Nacional outgoing referral index and proof of delivery.
 9. Complete seller–finca–obligation–performance map, 2-Feb/22-Jun-2011 governance package and Bankia trigger/monthly causation bridge.
 10. Garrigues engagement, witness/personnel map, pre-1/6-Feb communications/drafts, billing, May-2012 forwarding chain and 11-Apr-2013 report, preserved and legally reviewed before disclosure.
-11. Native audio and chain-of-custody evidence if voice attribution becomes material; text attribution alone is not voice authentication.
+11. Original 22-May-2017 handover instrument, signature/authenticity evidence and a key-by-key/unit-by-unit inventory, kept separate from the May-2012 CEXP event.
+12. Native audio and chain-of-custody evidence if voice attribution becomes material; text attribution alone is not voice authentication.
 
 ## 10. Public wording lock
 

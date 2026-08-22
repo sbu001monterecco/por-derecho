@@ -17,8 +17,8 @@ This allegation must be split into two legally and evidentially different propos
 2. **03-B — rent was not collected / Pink did not pay / Gil failed to pursue payment and termination, aggravating insolvency.**  
    **Result:** materially adverse first-instance finding. Sentencia 163/2023 finds gross fault, causation and Pink complicity on this branch. Those findings are appealed. The actual operating-profit/cash premise and the quantum chain remain materially unresolved and must not be inferred from the adverse judgment more broadly than it says.
 
-3. **03-C — civil validity, CEXP authority and possible total/partial nullity *ab initio*.**
-   **Result:** not adjudicated by the 03-A economic-rationality ruling. Declaration 007 records Gil Marer's legal position that the 6-Feb-2012 LPB–Monterecco contract should have been treated as wholly or partly void *ab initio* because LPB could not independently convey or bypass CEXP's owners-derived whole-hotel mandate. The 1-Feb CEXP–Monterecco notice, Pink's real operation/registration, competent-organ authority, severability, third-party/common-area scope, later resolution/rent judgments and restitution remain to be analysed. This is a party legal position, not a current finding of nullity.
+3. **03-C — civil validity, CEXP authority and Gil's current total-nullity *ab initio* position.**
+   **Result:** not adjudicated by the 03-A economic-rationality ruling. Declaration 009 supersedes Gil's earlier total/partial alternative and records his primary position that the 6-Feb-2012 LPB–Monterecco contract was wholly void *ab initio* because LPB could not independently convey or bypass CEXP's owners-derived whole-hotel mandate. The contrary case remains mandatory: the 1-Feb CEXP–Monterecco notice, LPB's own-unit rights, the contract's severability clause, Pink's real operation/registration, competent-organ authority, third-party/common-area scope, later resolution/rent judgments, restitution and preclusion/res judicata. This is a party legal position, not a current finding of nullity.
 
 The strongest defensible accountability conclusion is therefore **not** `the whole Pink allegation was fabricated`. It is:
 
@@ -398,7 +398,7 @@ Without presuming motive, the complete economic inquiry must include:
 | €3,032,010.34 provenance is fully explained | **UNRESOLVED** | Exact judgment→execution calculation bridge remains missing. |
 | AC knowingly fabricated all of Allegation 03 | **NOT SUPPORTED AS A GLOBAL CLAIM** | AC actually litigated and obtained adverse judgment; contract-entry branch nevertheless failed. |
 | AC/Judge knowingly fabricated the €3.032m damages amount for clandestine gain | **GIL MARER PARTY ALLEGATION** | Controlled separately; documentary amount-provenance challenge exists but intent/benefit route remains open. |
-| 6-Feb-2012 contract was wholly/partly void *ab initio* and could not bypass CEXP | **GIL MARER LEGAL POSITION — NOT ADJUDICATED HERE** | Declaration 007; requires competent-organ, title, historical tourism law, object/cause, consent, severability and later-ruling analysis. |
+| 6-Feb-2012 contract was wholly void *ab initio* and could not bypass CEXP | **GIL MARER CURRENT PRIMARY LEGAL POSITION — NOT ADJUDICATED HERE** | Declaration 009 supersedes the earlier total/partial alternative; requires competent-organ, title, historical tourism law, object/cause, consent, indivisibility, severability, restitution, third-party effect and later-ruling/preclusion analysis. |
 
 ---
 
