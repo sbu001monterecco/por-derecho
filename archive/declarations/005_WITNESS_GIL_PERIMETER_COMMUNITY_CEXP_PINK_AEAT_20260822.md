@@ -5,7 +5,9 @@
 **Fecha de la declaración fuente:** 2026-08-22  
 **Fecha de archivo:** 2026-08-22  
 **Tema:** Sun Park; Comunidad de Propietarios; Comunidad de Explotación; cuotas y gastos comunes; Pamanil; Monterecco Sun Park/Pink Canary Services; Concurso 36/2012; conservación del activo; inspección tributaria y Audiencia Nacional  
-**Estado:** REGISTRADA — derivada de dictado de voz transcrito; no firmada; no revisada ni ratificada todavía palabra por palabra por la declarante
+**Estado:** SUPLEMENTADA Y MATERIALMENTE DISPUTADA — derivada de dictado de voz transcrito; no firmada; no revisada ni ratificada palabra por palabra
+
+> **CORRECCIÓN MATERIAL URGENTE — 22 de agosto de 2026:** Gil Marer declara que esta versión es incorrecta allí donde atribuye a Monterecco Sun Park/Pink Canary Services la posesión, retención, oferta de entrega o autoridad para entregar “las llaves”. Gil afirma que Pink nunca tuvo “las llaves” ni autoridad para entregarlas a la administración concursal o a nadie. El acontecimiento de llaves identificado por Gil corresponde a su actuación como Presidente de CEXP y no a Pink. Gil retira expresamente de su adopción cualquier proposición contraria. Véase [Declaración correctiva 006](./006_GIL_CORRECTION_DECLARATION_005_PINK_KEYS_AUTHORITY_20260822.md). El texto fuente se conserva debajo para mantener la procedencia; **no reutilizar sus referencias a llaves de Pink como hechos ni como posición conjunta**.
 
 > **Uso y autenticación:** esta declaración fue preparada como una nota única, en primera persona, a partir de una secuencia de audios dictados por la declarante en una conversación de ChatGPT el 22 de agosto de 2026. Al finalizar la secuencia, Gil Marer identificó expresamente a la declarante. Esta versión no está firmada y no debe describirse como jurada, firmada, ratificada ni revisada palabra por palabra. Puede utilizarse como relato fechado, fuente de investigación, índice de hechos, guía de verificación y material de trabajo jurídico. Una versión posterior revisada, corregida, firmada o ratificada controlará el tenor exacto en caso de diferencia, sin borrar esta versión.
 
