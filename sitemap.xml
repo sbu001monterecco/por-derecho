@@ -262,4 +262,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/aeat-transparency-00001-00113069/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/aeat-transparency-00001-00113069/"/>
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-lanzarote/</loc><lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-lanzarote/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/open-letter-lanzarote/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-lanzarote/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/open-letter-lanzarote/</loc><lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/open-letter-lanzarote/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-lanzarote/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-lanzarote/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/</loc><lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/costa-papagayo-wastewater-traceability/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/costa-papagayo-wastewater-traceability/</loc><lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/costa-papagayo-wastewater-traceability/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/"/>
+  </url>
 </urlset>

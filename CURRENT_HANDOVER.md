@@ -225,3 +225,13 @@ The controlling correction is that a **broad Article 82 TRLC request is not an a
 The strategic objective is cumulative, not curative: protect and exit LPB while preserving a record capable of supporting actor-specific findings of AC responsibility/culpability in the competent concursal/civil and criminal routes. **Late correction, production, restitution or accounting does not erase the historical act/omission**; it must be dated and assessed for mitigation and evidential consequence without being treated either as retroactive exoneration or as proof of prior guilt.
 
 Keep the judicial firewall strict: judge-only decisions, AC factual inputs/recommendations, AC implementation/non-correction and private-actor conduct must remain separately attributed. Public language must not state criminal guilt as established without a competent finding.
+
+
+## Costa Papagayo — live coordination pointer (22 August 2026)
+
+For the source-safe, document-led scan of Community authority, Costa Papagayo, ETJ 370/2013, and possible concursal/extra-concursal effects, read these files first:
+
+- `COSTA_PAPAGAYO_CONCURSAL_TRANSPARENCY_HANDOVER_22AUG2026.md`
+- `COSTA_PAPAGAYO_PRIMARY_RECORD_STATUS_22AUG2026.md`
+
+These files establish a research protocol and primary-record status only. They do not establish criminality, undisclosed coordination, false authority, debt validity, or liability. Keep confidential email material and legal advice out of the public repository.

@@ -1,0 +1,73 @@
+/* Lanzarote invitation and Costa Papagayo record pages */
+.lanzarote-page { color: #183034; background: #f6f1e8; }
+.lanzarote-page .site-header { background: rgba(246,241,232,.96); }
+.lz-hero { position: relative; overflow: hidden; padding: clamp(4.5rem, 9vw, 8rem) 0 clamp(3.25rem, 6vw, 5.5rem); color: #fdf8ee; background: radial-gradient(circle at 78% 18%, rgba(231,191,111,.34), transparent 23rem), linear-gradient(124deg, #152f34 0%, #155e62 50%, #bc7a38 160%); }
+.lz-hero::before { content: ""; position: absolute; inset: 0; opacity: .5; background: repeating-linear-gradient(154deg, transparent 0 3.4rem, rgba(255,255,255,.055) 3.48rem 3.58rem); pointer-events: none; }
+.lz-hero .shell, .lz-callout .shell { position: relative; }
+.lz-hero-grid { display: grid; grid-template-columns: minmax(0, 1.32fr) minmax(16rem, .68fr); gap: clamp(2rem, 6vw, 5.5rem); align-items: end; }
+.lz-hero .eyebrow { color: #f5d5a3; }
+.lz-hero h1 { max-width: 14ch; margin: .45rem 0 1rem; color: #fffdf7; font-size: clamp(3rem, 7.2vw, 6.4rem); font-weight: 500; line-height: .94; letter-spacing: -.045em; }
+.lz-hero .lead { max-width: 44rem; color: #e4efed; font-size: clamp(1.08rem, 1.7vw, 1.38rem); }
+.lz-hero-aside { padding: 1.35rem; border: 1px solid rgba(255,255,255,.28); border-radius: 1rem; background: rgba(10,38,42,.42); box-shadow: 0 1rem 3rem rgba(0,0,0,.18); }
+.lz-hero-aside span, .lz-track > span, .lz-source-card > span, .lz-callout .kicker { display: block; color: #f0c685; font-size: .67rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.lz-hero-aside strong { display: block; margin: .55rem 0 .8rem; color: #fff; font: 500 clamp(1.55rem, 2.8vw, 2.2rem)/1.05 Georgia, serif; }
+.lz-hero-aside p { margin: 0; color: #d4e3e1; font-size: .86rem; }
+.lz-status { border-bottom: 1px solid #cfbe9d; background: #efe1c5; }
+.lz-status .shell { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #cfbe9d; }
+.lz-status div { min-height: 6.3rem; padding: 1.15rem 1.25rem; background: #f7f0e2; }
+.lz-status span { display: block; color: #6b5b46; font-size: .64rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.lz-status strong { display: block; margin-top: .35rem; color: #26484b; font: 500 1.08rem/1.15 Georgia, serif; }
+.lz-section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, .75fr); gap: 2.5rem; align-items: end; margin-bottom: 1.55rem; }
+.lz-section-head h2 { max-width: 17ch; margin: .35rem 0 0; font-size: clamp(2rem, 4vw, 3.8rem); font-weight: 500; line-height: 1; letter-spacing: -.03em; }
+.lz-section-head > p { margin: 0; color: #566c6e; font-size: .94rem; }
+.lz-promise-grid, .lz-track-grid, .lz-source-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+.lz-promise, .lz-track, .lz-source-card { padding: 1.35rem; border: 1px solid #d8d2c6; border-radius: .9rem; background: #fffdfa; box-shadow: 0 .6rem 1.6rem rgba(31,49,47,.06); }
+.lz-promise { border-top: .3rem solid #c18543; }
+.lz-promise:nth-child(2) { border-top-color: #197377; }
+.lz-promise:nth-child(3) { border-top-color: #204b50; }
+.lz-promise .number { color: #ba7d3d; font-size: .68rem; font-weight: 900; letter-spacing: .09em; }
+.lz-promise h3, .lz-track h3, .lz-source-card h3 { margin: .65rem 0 .65rem; font: 500 1.48rem/1.08 Georgia, serif; }
+.lz-promise p, .lz-track p, .lz-source-card p { margin: 0; color: #586d6e; font-size: .85rem; }
+.lz-track-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lz-track { display: flex; flex-direction: column; min-height: 19rem; border-top: .35rem solid #1b7477; }
+.lz-track.yaiza { border-top-color: #b06642; }
+.lz-track > span { color: #167174; }
+.lz-track.yaiza > span { color: #9a5939; }
+.lz-track .track-rule { margin: 1rem 0 1.35rem; padding: .8rem .9rem; color: #365457; border-left: .25rem solid #d3b170; background: #f4ece0; font-size: .78rem; }
+.lz-track ul, .lz-record-list { margin: 0 0 1.25rem; padding-left: 1.1rem; color: #52696b; font-size: .83rem; }
+.lz-track li + li, .lz-record-list li + li { margin-top: .46rem; }
+.lz-track a { margin-top: auto; color: #0d696d; font-size: .8rem; font-weight: 900; text-underline-offset: .2em; }
+.lz-track.yaiza a { color: #914b30; }
+.lz-callout { padding: clamp(2rem, 5vw, 4rem) 0; color: #fff; background: linear-gradient(125deg, #17383d, #247579); }
+.lz-callout-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 3rem; align-items: center; }
+.lz-callout h2 { margin: .45rem 0 0; color: #fffdf5; font-size: clamp(2.25rem, 4vw, 4.2rem); font-weight: 500; line-height: .97; }
+.lz-callout p { margin: 0; color: #d9ebe8; }
+.lz-callout p + p { margin-top: .8rem; }
+.lz-callout .actions { margin-top: 1.25rem; }
+.lz-callout .button { color: #17383d; background: #f2d39b; }
+.lz-callout .button.secondary { color: #fff; border-color: rgba(255,255,255,.45); background: transparent; }
+.lz-safeguard { padding: 1.1rem 1.2rem; color: #4a3731; border-left: .35rem solid #b46643; background: #f2dfcf; border-radius: 0 .7rem .7rem 0; font-size: .86rem; }
+.lz-source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lz-source-card { display: flex; flex-direction: column; min-height: 15rem; border-top: .3rem solid #b17440; }
+.lz-source-card:nth-child(2) { border-top-color: #237577; }
+.lz-source-card:nth-child(3) { border-top-color: #254d52; }
+.lz-source-card > span { color: #9a5c34; }
+.lz-source-card a { margin-top: auto; color: #0e6c70; font-size: .8rem; font-weight: 900; text-underline-offset: .2em; }
+.lz-source-card small { display: block; margin-top: 1rem; color: #758486; font-size: .72rem; }
+.lz-evidence-notice { margin-top: 1.1rem; padding: 1rem 1.15rem; color: #3f5154; border: 1px solid #c8d8d3; border-radius: .7rem; background: #e9f2ef; font-size: .82rem; }
+.lz-evidence-notice strong { color: #1d6568; }
+.lz-records { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: 2.2rem; padding: 1.4rem; border: 1px solid #d3ddd8; border-radius: .9rem; background: #f4faf7; }
+.lz-records h2 { margin: 0; color: #1f5558; font-size: clamp(1.75rem, 3vw, 2.55rem); font-weight: 500; line-height: 1.04; }
+.lz-records p { margin: .8rem 0 0; color: #5c7374; font-size: .85rem; }
+.lz-record-list { columns: 2; margin: 0; }
+.lz-record-list li { break-inside: avoid; }
+.lz-footnote { margin-top: 1rem; color: #687879; font-size: .76rem; }
+@media (max-width: 800px) {
+  .lz-hero-grid, .lz-section-head, .lz-callout-grid, .lz-records { grid-template-columns: 1fr; }
+  .lz-status .shell, .lz-promise-grid, .lz-track-grid { grid-template-columns: 1fr; }
+  .lz-source-grid { grid-template-columns: 1fr; }
+  .lz-status .shell { gap: 1px; }
+  .lz-track { min-height: 0; }
+  .lz-track a { margin-top: 1.4rem; }
+  .lz-record-list { columns: 1; }
+}
