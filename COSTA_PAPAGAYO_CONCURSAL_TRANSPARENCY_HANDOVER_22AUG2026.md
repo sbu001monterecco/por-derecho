@@ -1,7 +1,7 @@
 # Costa Papagayo — Concursal/Extra-Concursal Transparency Handover
 
 **Status:** live forensic scan started 22 August 2026  
-**Scope:** private repository working material. Not public-site copy; not an accusation or a legal conclusion.  
+**Scope:** public-repository research coordination only. It contains no confidential correspondence, personal data or legal advice; it is not public-site copy, an accusation or a legal conclusion.  
 **Working branch:** `codex/lanzarote-invitation-costa-papagayo-20260822`  
 **Related public-facing PR:** #768 (the public page preserves only source-safe, non-conclusive material).
 
@@ -103,4 +103,4 @@ Use the full prompt in the originating ChatGPT thread. Before extending it, read
 
 ## 10. Next update
 
-Append a source-led scan result only after the repository and mailbox materials have been independently reconciled. Keep the public Costa Papagayo page distinct from this working file.
+Append only source-safe, primary-record findings after independent reconciliation. Keep confidential mailbox material and legal advice out of GitHub, and keep the public Costa Papagayo page distinct from this research handover.
