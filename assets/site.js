@@ -31,18 +31,18 @@
   const exact = new Map([
     ['/es/', ['full', '#historia-reconstruida', 'after']],
     ['/en/', ['full', null, 'append']],
-    ['/es/ric-private-equity-sun-park/', ['full', '#respuesta', 'before']],
-    ['/en/ric-private-equity-sun-park/', ['full', '#response', 'before']],
+    ['/es/ric-private-equity-sun-park/', ['full', '#respuesta', 'before', true]],
+    ['/en/ric-private-equity-sun-park/', ['full', '#response', 'before', true]],
     ['/es/mismo-hotel-multiples-vidas-financieras/', ['full', null, 'append']],
     ['/en/same-hotel-multiple-financial-lives/', ['full', null, 'append']],
-    ['/es/acosta-matos-perimetro/', ['full', null, 'append']],
-    ['/en/acosta-matos-perimeter/', ['full', null, 'append']],
+    ['/es/acosta-matos-perimetro/', ['full', null, 'append', true]],
+    ['/en/acosta-matos-perimeter/', ['full', null, 'append', true]],
     ['/es/objetivos-recuperacion-restitucion/', ['full', '#vias', 'before']],
     ['/en/recovery-restitution-objectives/', ['full', null, 'append']],
-    ['/es/cadena-instrumentalizacion-ric-fondos-incentivos/', ['full', null, 'append']],
-    ['/en/institutionalisation-chain-ric-eu-incentives/', ['full', null, 'append']],
-    ['/es/ricpe-responsabilidad-documental/', ['compact', null, 'append']],
-    ['/en/ricpe-documentary-accountability/', ['compact', null, 'append']],
+    ['/es/cadena-instrumentalizacion-ric-fondos-incentivos/', ['full', null, 'append', true]],
+    ['/en/institutionalisation-chain-ric-eu-incentives/', ['full', null, 'append', true]],
+    ['/es/ricpe-responsabilidad-documental/', ['compact', null, 'append', true]],
+    ['/en/ricpe-documentary-accountability/', ['compact', null, 'append', true]],
     ['/es/pwc-canarias-carlos-saavedra-sun-park/', ['compact', null, 'append']],
     ['/en/pwc-canarias-carlos-saavedra-sun-park/', ['compact', null, 'append']],
     ['/es/rsm/nnr4-1025c2f66/', ['compact', null, 'append']],
@@ -59,7 +59,7 @@
   const match = [...exact.entries()].find(([suffix]) => path.endsWith(suffix));
   if (!match || document.querySelector('[data-source-of-funds-notice]')) return;
 
-  const [variant, selector, position] = match[1];
+  const [variant, selector, position, showEmailGraphics = false] = match[1];
   const section = document.createElement('section');
   section.className = 'section source-funds-notice-section';
   section.setAttribute('aria-label', document.documentElement.lang === 'en'
@@ -69,6 +69,58 @@
   shell.className = 'shell';
   const mount = document.createElement('div');
   mount.dataset.sourceOfFundsNotice = variant;
+
+  if (showEmailGraphics) {
+    const isEnglish = document.documentElement.lang === 'en';
+    const notice = new URL(isEnglish
+      ? '../en/source-of-funds-professional-services-notice/'
+      : '../es/aviso-procedencia-fondos-servicios-profesionales/', base);
+    const graphicData = isEnglish
+      ? [
+          {
+            src: 'evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg?v=20260822a',
+            alt: 'San Telmo, RICPE and Sun Park professional-overlap and traceability graphic',
+            caption: 'San Telmo · RICPE · Sun Park'
+          },
+          {
+            src: 'evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg?v=20260822a',
+            alt: 'PwC five-actor and Acosta Matos 2016 professional knowledge checkpoint graphic',
+            caption: '2016 professional knowledge checkpoint'
+          }
+        ]
+      : [
+          {
+            src: 'evidence/tsj-exp-gub-38/san-telmo-ricpe-sun-park-stamp-v1-ES.svg?v=20260822a',
+            alt: 'Gráfico San Telmo, RICPE y Sun Park sobre solapamiento profesional y trazabilidad',
+            caption: 'San Telmo · RICPE · Sun Park'
+          },
+          {
+            src: 'evidence/tsj-exp-gub-38/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.svg?v=20260822a',
+            alt: 'Gráfico PwC, cinco actores y Acosta Matos sobre el punto de conocimiento profesional de 2016',
+            caption: 'Punto de conocimiento profesional · 2016'
+          }
+        ];
+    const graphics = document.createElement('div');
+    graphics.className = 'source-funds-email-graphics';
+    graphics.dataset.emailGraphics = '20260822';
+    graphicData.forEach(item => {
+      const link = document.createElement('a');
+      link.className = 'source-funds-email-graphic';
+      link.href = `${notice.href}#${isEnglish ? 'scope' : 'alcance'}`;
+      link.setAttribute('aria-label', `${item.caption} — ${isEnglish ? 'read the full professional notice' : 'leer el aviso profesional completo'}`);
+      const image = document.createElement('img');
+      image.src = new URL(item.src, base).href;
+      image.alt = item.alt;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      const caption = document.createElement('span');
+      caption.textContent = item.caption;
+      link.append(image, caption);
+      graphics.append(link);
+    });
+    shell.append(graphics);
+  }
+
   shell.append(mount);
   section.append(shell);
 
