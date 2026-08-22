@@ -287,7 +287,7 @@
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-junta-pwc-warning-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('sun-park-junta-pwc-warning-20260822.js?v=20260822a', current.src).href;
+  module.src = new URL('sun-park-junta-pwc-warning-20260822.js?v=20260822b', current.src).href;
   module.async = false;
   module.setAttribute('data-junta-pwc-warning-loader', '20260822');
   document.head.appendChild(module);
