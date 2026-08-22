@@ -63,9 +63,9 @@ jobs:
           query = f'source={source_sha[:12]}&run={run_id}'
           targets = {
               'es': (f'{base}/es/ingenieria-forense-criminal-sun-park/?{query}', [
-                  'ALEGACIÓN CENTRAL DE POR DERECHO', 'Las ocho fases de la presunta ingeniería', 'Derecho de respuesta']),
+                  'HIPÓTESIS INVESTIGATIVAS DE POR DERECHO', 'No existe una escala pública de «facilitación»', 'Derecho de respuesta']),
               'en': (f'{base}/en/sun-park-criminal-engineering-investigation/?{query}', [
-                  'POR DERECHO CENTRAL ALLEGATION', 'The eight phases of the alleged engineering', 'Right of response']),
+                  'POR DERECHO INVESTIGATIVE HYPOTHESES', 'No public “enabler” scale', 'Right of response']),
               'case_module': (f'{base}/assets/case-information-architecture-20260819.js?{query}', [
                   'data-case-context-gateway', 'case-issue-register', 'LIVE_VERIFIED =']),
               'outer_loader': (f'{base}/assets/site.js?{query}', [
@@ -73,7 +73,7 @@ jobs:
               'case_loader': (f'{base}/assets/site-pre-intervencion-highlight-20260820.js?{query}', [
                   'case-information-architecture-20260819.js', 'data-case-information-architecture-loader']),
               'data': (f'{base}/assets/data/criminal-engineering-investigation-v1.json?{query}', [
-                  '"schema_version": "1.1"', '"CE-010"', '"corrections_es"', '"notary_es"', '"registry_es"']),
+                  '"schema_version": "1.2"', '"CE-010"', '"actor_attribution_questions"', '"corrections_es"', '"notary_es"', '"registry_es"']),
               'es_corrections': (f'{base}/es/correcciones-control-versiones/?{query}', [
                   'Correcciones materiales vigentes', 'Control de versiones y uso previo']),
               'en_corrections': (f'{base}/en/corrections-version-control/?{query}', [

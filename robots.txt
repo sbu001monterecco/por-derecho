@@ -11,6 +11,7 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-public-authority
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-supervisory-practice.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-flagship-case.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-cgpj.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-judicial-spine.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-dp1956.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-gt-cuyas.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-ricpe-idoneidad.xml

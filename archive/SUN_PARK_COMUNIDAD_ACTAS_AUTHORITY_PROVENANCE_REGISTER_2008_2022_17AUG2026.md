@@ -347,14 +347,16 @@ Do not call the ACTA fake, criminal or fabricated as an established fact absent 
 ### SP-ACTA-2022-02-04
 
 **Body:** Comunidad de Propietarios  
-**Status:** PRIMARY ACTA identified in existing controlled dossier; exact Drive ID/source copy must be re-queried before new direct-source publication  
-**Current dossier reading:** 20.993% appears; Construcciones Acosta Matos / related named owners attend; JDAM presides; Laura Acosta Matos represents CAM; FMMM/Pamalexsha acts as secretary-administrator and shares bank authority; the presented project/licence/unitary-operation proposal and a substantial levy are approved; substantial debt/levy is attributed to LPB.
+**Status:** NATIVE GMAIL-SOURCE ATTACHMENT / CONTROLLED SCAN LOCATED; not the original diligenced Community minute-book record. A related source attachment and exact-name recovered candidate are custody-controlled; direct public source publication remains barred pending privacy, authenticity and provenance review.
+**Current dossier reading:** the seven-page scan records 20.993% present/represented and unanimity among those recorded present. It identifies José Daniel Acosta Matos as president/project architect; Laura Acosta Matos for Construcciones Acosta Matos, S.A.; Javier Acosta Matos for Construcciones Acos-Matos, S.L.; José Acosta Matos for Proyectos Acosta Matos, S.L.; Stephanie Lee Greenwood; and Manuel Molina Climent. The text assigns Francisco Mario Matos Matas secretary-administrator/joint-bank functions while the execution block identifies Pamalexsha. It records LPB €1,199,729.12 in the debt table, and a €4,467,928.22 works-assessment table including LPB €3,260,416.81 and Matkator €34,402.00. Elsewhere it says CAM would carry out four-star conversion works at its own cost.
 
-**Significance:** later concentration of Community presidency, project design/promotion, representation, administration/bank/debt and approval roles. This supports a conflict/authority verification question.
+**Significance:** the record supports a specific accounting and authority reconciliation question: the work-assessment table, the at-own-cost statement, title/vote basis, actual invoices/payments and each later recipient/use must be reconciled property-by-property. It also sharpens the separate LPB-versus-Matkator perimeter: Matkator’s entry is a recorded works assessment, not a proven estate debt, payment, loss or title effect.
 
-**Does not establish:** criminality, unlawful benefit or lack of all independent title/authority. Those require actor-specific evidence, transaction flows and competent findings.
+**Does not establish:** valid notice/quorum/vote/title, enforceable debt, collection, work completion, realised benefit, criminality, unlawful benefit or lack of all independent title/authority. It does not establish FMMM attendance/signature: the attendance list does not name him and the execution block does not show an identifiable FMMM signature. Those questions require actor-specific evidence, transaction flows and competent findings.
 
-**Open:** exact source ID/hash; complete ACTA/audio/annexes; title and vote basis on date; conflicts/abstentions; licences; budget/payment; RIC/RICPE/public-incentive link; realised benefit.
+**AC / Court control:** 26-January Autos predate the ACTA. The 25-January and 25-April AC quarterly reports use the plan’s formulation for Community dues recognised as contingent credits in the definitive creditor lists but do not name the ACTA or its LPB/Matkator figures. No located record establishes that the ACTA was filed with, received by, or relied upon by the AC, Judge or Court. This is a transmission/reliance gap, not evidence of knowledge or intent.
+
+**Open:** original minute book/certified copy; exact source/byte reconciliation; audio/annexes; convocation/service/proxies; title and vote basis; conflicts/abstentions; project/licences; budget, ledger, invoices and payment; contemporaneous court/AC receipt and filing trail; RIC/RICPE/public-incentive link; and realised benefit. See `archive/SUN_PARK_ACTA_2022_LPB_MATKATOR_AC_JUDICIAL_NEXUS_CONTROL_22AUG2026.md`.
 
 ---
 

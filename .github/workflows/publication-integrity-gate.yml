@@ -35,5 +35,11 @@ jobs:
         run: python scripts/validate_insolvency_perimeter_language.py
       - name: Validate operational control-plane invariants
         run: python scripts/validate_operational_items.py
+      - name: Validate public continuity controls
+        run: python scripts/validate_public_continuity_controls.py
+      - name: Validate criminal-law public boundaries
+        run: python scripts/validate_criminal_public_boundaries.py
+      - name: Validate Community actor coverage
+        run: python scripts/validate_community_actor_coverage.py
       - name: Validate mission-critical repository invariants
         run: python scripts/validate_mission_critical_repo.py

@@ -25,6 +25,8 @@ This is **digitisation by source indexing + readable text recovery + evidential 
 
 **Digitisation action required:** full page-by-page transcription and ACTA X-RAY of `7. ACTA 22 JUN 2011.pdf`; extract exact convenor, attendees/proxies, coefficients, exclusions, voting denominator, resolutions, signatures and references to exploitation/debt. Preserve the attached judgment separately and cross-reference only propositions it actually decides or records.
 
+**22-Aug-2026 retrieval check:** the native 16-page PDF remains recoverable from the identified Gmail message. The connector identified it as a scanned PDF with no machine-readable text. This confirms source availability, not complete digitisation: OCR, human verification, a page-by-page ACTA X-RAY, and integrity-recorded private custody remain outstanding. It must not be represented publicly as a fully transcribed or fully preserved repository item.
+
 ### B. November-2015 ACTA + April-2016 meeting notice / invitation package
 
 **Gmail message:** `155270de97a23680` — subject `Luchy 2 de 4 - documentación del juicio pendiente que afecta el crédito de la comunidad en el concurso` — 6-Jun-2016.  

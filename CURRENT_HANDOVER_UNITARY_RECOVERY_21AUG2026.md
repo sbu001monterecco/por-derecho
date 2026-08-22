@@ -1,6 +1,6 @@
 # CURRENT HANDOVER - UNITARY RECOVERY REDIGEST
 
-**Date:** 21 August 2026
+**Date:** 22 August 2026
 **Status:** controlling cross-track handover for the next repository and website implementation cycle.
 **Repository baseline inspected:** `c7e22c6e54a2caa13ab930ce2cb2b96bf7abcc9d`
 **Full redigest:** `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`
@@ -90,6 +90,15 @@ counterfactual, remedy, contrary evidence and unresolved defence.
 14. In the RICPE/San Telmo line, keep the 2020 RICPE presentation and 2021 San
     Telmo event separate. Current evidence does not establish a direct AC-Enrique
     Guerra relationship or AC participation in that event.
+15. The controlled 4-Feb-2022 Owners’ Community ACTA source records LPB and
+    Matkator works-assessment entries alongside CAM-at-own-cost wording. It is a
+    native Gmail-source attachment, not the diligenced minute book. The
+    25-January and 25-April AC reports refer only to Community dues recognised as
+    contingent credits and do not name the later ACTA or its figures. No source
+    currently establishes that the ACTA reached, was relied on by, or was
+    knowingly enabled by the AC, Judge or Court. Keep LPB and Matkator separate;
+    test this through the ledger, receipt and property-by-property title/use
+    record, not chronology.
 
 ## Repository and website findings
 

@@ -8,6 +8,7 @@ source, and every principal route on which the shared component is intended to r
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 import time
@@ -25,6 +26,8 @@ TIMEOUT_SECONDS = 25
 SOURCE_ASSET = "/assets/san-telmo-source-stamp-20260819.js"
 LOADER_ASSET = "/assets/ricpe-identity-correction-20260815.js"
 SITE_ASSET = "/assets/site.js"
+PRE_HIGHLIGHT_ASSET = "/assets/site-pre-intervencion-highlight-20260820.js"
+BASE_LOADER_ASSET = "/assets/site-base-20260819.js"
 BORJA_ASSET = "/assets/actors/francisco-de-borja-rodriguez-batllori.jpg"
 SUN_PARK_ASSET = "/assets/sun-park-mynd-yaiza.jpg"
 
@@ -83,7 +86,13 @@ LOADER_MARKERS = [
     "san-telmo-source-stamp-20260819.js?v=20260819a",
 ]
 
-SITE_MARKERS = ["ricpe-identity-correction-20260815.js"]
+SITE_MARKERS = [
+    "site-pre-intervencion-highlight-20260820.js",
+    "data-pre-intervencion-site-loader",
+]
+PRE_HIGHLIGHT_MARKERS = ["site-base-20260819.js"]
+BASE_LOADER_MARKERS = ["ricpe-identity-correction-20260815.js"]
+SKIP_EXTERNAL_PORTRAIT = False
 
 
 @dataclass
@@ -196,6 +205,16 @@ def verify_once() -> dict[str, object]:
         raise AssertionError(f"site loader: HTTP {site.status}")
     assert_markers("site loader", site.text, SITE_MARKERS)
 
+    pre_highlight = request(BASE + PRE_HIGHLIGHT_ASSET, cache_bust=True)
+    if pre_highlight.status != 200:
+        raise AssertionError(f"pre-highlight loader: HTTP {pre_highlight.status}")
+    assert_markers("pre-highlight loader", pre_highlight.text, PRE_HIGHLIGHT_MARKERS)
+
+    base_loader = request(BASE + BASE_LOADER_ASSET, cache_bust=True)
+    if base_loader.status != 200:
+        raise AssertionError(f"base loader: HTTP {base_loader.status}")
+    assert_markers("base loader", base_loader.text, BASE_LOADER_MARKERS)
+
     result = {
         "verified_at": datetime.now(timezone.utc).isoformat(),
         "base": BASE,
@@ -216,15 +235,39 @@ def verify_once() -> dict[str, object]:
             "content_type": site.content_type,
             "bytes": len(site.body),
         },
+        "pre_highlight_loader": {
+            "status": pre_highlight.status,
+            "content_type": pre_highlight.content_type,
+            "bytes": len(pre_highlight.body),
+            "markers": PRE_HIGHLIGHT_MARKERS,
+        },
+        "base_loader": {
+            "status": base_loader.status,
+            "content_type": base_loader.content_type,
+            "bytes": len(base_loader.body),
+            "markers": BASE_LOADER_MARKERS,
+        },
         "borja": verify_local_asset(BORJA_ASSET, "image/"),
         "sun_park": verify_local_asset(SUN_PARK_ASSET, "image/"),
-        "eduardo": verify_eduardo_image(),
+        "eduardo": ({"skipped": True} if SKIP_EXTERNAL_PORTRAIT else verify_eduardo_image()),
         "routes": verify_routes(),
     }
     return result
 
 
 def main() -> int:
+    global BASE, ATTEMPTS, SLEEP_SECONDS, SKIP_EXTERNAL_PORTRAIT
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--base-url", default=BASE)
+    parser.add_argument("--attempts", type=int, default=ATTEMPTS)
+    parser.add_argument("--sleep-seconds", type=int, default=SLEEP_SECONDS)
+    parser.add_argument("--skip-external-portrait", action="store_true")
+    args = parser.parse_args()
+    BASE = args.base_url.rstrip("/")
+    ATTEMPTS = max(1, args.attempts)
+    SLEEP_SECONDS = max(0, args.sleep_seconds)
+    SKIP_EXTERNAL_PORTRAIT = args.skip_external_portrait
+
     failures: list[str] = []
     for attempt in range(1, ATTEMPTS + 1):
         try:

@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.1",
-  "control_date": "2026-08-19",
-  "last_public_review": "2026-08-19",
+  "schema_version": "1.2",
+  "control_date": "2026-08-22",
+  "last_public_review": "2026-08-22",
   "status": "ACTIVE_INVESTIGATION",
   "public_boundary": {
-    "central_allegation": "Por Derecho investigates whether the Acosta Matos and RIC Private Equity perimeters designed, exploited or preserved a multi-stage sequence assisted by knowing, reckless, negligent or passive enablers.",
+    "central_allegation": "Por Derecho tests whether identified contested acts had lawful authority, a documented source, individual authorship, relevant knowledge, causal effect and traceable benefit. A chronology, relationship, attendance or formal role does not establish a common plan or criminal responsibility.",
     "not_a_finding": true,
     "presumption_of_innocence": true,
     "actor_by_actor_proof_required": true,
@@ -44,15 +44,16 @@
     {"id":"A-PRO","name":"Valuers / lawyers / experts / operators","test":"inputs, limitations, transmission, gatekeeping and lost or preserved routes"},
     {"id":"A-PUBLIC","name":"Authorities / supervisors / funding bodies","test":"specific notice, competence, preservation, verification, referral and inaction"}
   ],
-  "enabler_ladder": [
-    {"level":"E0","label":"unwitting conduit"},
-    {"level":"E1","label":"professional error"},
-    {"level":"E2","label":"negligent gatekeeper"},
-    {"level":"E3","label":"reckless or conscious disregard"},
-    {"level":"E4","label":"knowing facilitation"},
-    {"level":"E5","label":"essential cooperation or inducement"},
-    {"level":"E6","label":"coordinated participation"},
-    {"level":"E7","label":"concealment, retaliation or benefit preservation"}
+  "actor_attribution_questions": [
+    "specific act or omission",
+    "capacity, authority and applicable duty",
+    "authorship, instruction or adoption",
+    "source provenance and independent verification",
+    "relevant knowledge and intent where legally required",
+    "use, reliance or later transmission",
+    "causation, prejudice and traceable benefit",
+    "strongest contrary evidence and innocent explanation",
+    "competent legal classification and outcome"
   ],
   "hypothesis_families": [
     "procedural or judicial deception",

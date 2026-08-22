@@ -5,6 +5,9 @@ on:
     paths:
       - "assets/san-telmo-source-stamp-20260819.js"
       - "assets/ricpe-identity-correction-20260815.js"
+      - "assets/site.js"
+      - "assets/site-pre-intervencion-highlight-20260820.js"
+      - "assets/site-base-20260819.js"
       - "assets/actors/eduardo-sanchez-san-telmo.url"
       - "assets/visual-asset-registry.json"
       - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
@@ -15,6 +18,9 @@ on:
     paths:
       - "assets/san-telmo-source-stamp-20260819.js"
       - "assets/ricpe-identity-correction-20260815.js"
+      - "assets/site.js"
+      - "assets/site-pre-intervencion-highlight-20260820.js"
+      - "assets/site-base-20260819.js"
       - "assets/actors/eduardo-sanchez-san-telmo.url"
       - "assets/visual-asset-registry.json"
       - "assets/composites/san-telmo-ricpe-sun-park-stamp-v1.asset-map.json"
@@ -38,5 +44,23 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Verify the pull-request source and loader chain
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 --directory . >/tmp/por-derecho-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid' EXIT
+          for attempt in {1..20}; do
+            curl --fail --silent http://127.0.0.1:4173/robots.txt >/dev/null && break
+            sleep 0.2
+          done
+          curl --fail --silent --show-error http://127.0.0.1:4173/robots.txt >/dev/null
+          python scripts/verify_san_telmo_source_stamp_live.py \
+            --base-url http://127.0.0.1:4173 \
+            --attempts 1 \
+            --sleep-seconds 0 \
+            --skip-external-portrait
+
       - name: Verify source stamp, assets, loader chain and controlled public routes
+        if: github.event_name != 'pull_request'
         run: python scripts/verify_san_telmo_source_stamp_live.py

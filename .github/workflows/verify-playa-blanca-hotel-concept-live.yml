@@ -10,6 +10,7 @@ on:
       - 'es/playa-blanca-concepto-hotel-servicios/**'
       - 'assets/playa-blanca-*'
       - 'assets/site.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
   workflow_dispatch:
 
 permissions:
@@ -103,14 +104,21 @@ jobs:
                   'path': 'assets/playa-blanca-concept-home-20260820.js',
                   'markers': [
                       'pb-home-feature',
-                      '/por-derecho/en/playa-blanca-hotel-services-concept/',
-                      '/por-derecho/es/playa-blanca-concepto-hotel-servicios/',
+                      "route: 'playa-blanca-hotel-services-concept/'",
+                      "route: 'playa-blanca-concepto-hotel-servicios/'",
                       'Recovery and reinvestment can proceed in parallel.',
                   ],
               },
               {
                   'kind': 'site_loader',
                   'path': 'assets/site.js',
+                  'markers': [
+                      'site-pre-intervencion-highlight-20260820.js',
+                  ],
+              },
+              {
+                  'kind': 'pre_highlight_loader',
+                  'path': 'assets/site-pre-intervencion-highlight-20260820.js',
                   'markers': [
                       'playa-blanca-concept-home-20260820.js',
                       'data-playa-blanca-concept-loader',
@@ -124,7 +132,11 @@ jobs:
               {
                   'kind': 'hero_poster',
                   'path': 'assets/playa-blanca-return-poster.svg',
-                  'markers': ['PLAYA BLANCA', 'A NEW HOTEL DESTINATION', 'HOTEL &amp; LOCAL SERVICES CONCEPT'],
+                  'markers': [
+                      'PLAYA BLANCA',
+                      'Playa Blanca — a new hotel destination',
+                      'HOTEL &amp; LOCAL SERVICES CONCEPT · ILLUSTRATIVE STUDY',
+                  ],
               },
           ]
 

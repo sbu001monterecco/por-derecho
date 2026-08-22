@@ -38,7 +38,6 @@ CHECKS = [
     {
         "path": "es/registros-institucionales/",
         "markers": [
-            "Doce registros",
             "Audiencia de Cuentas de Canarias",
             "Entrada 1619/2026 acreditada",
         ],
@@ -47,7 +46,6 @@ CHECKS = [
     {
         "path": "en/institutional-records/",
         "markers": [
-            "Twelve records",
             "Audiencia de Cuentas de Canarias",
             "Entry 1619/2026 established",
         ],

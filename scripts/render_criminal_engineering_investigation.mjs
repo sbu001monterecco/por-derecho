@@ -11,13 +11,13 @@ const canonicalRoutes = [
   {
     key: 'es-canonical',
     route: '/es/ingenieria-forense-criminal-sun-park/',
-    markers: ['ALEGACIÓN CENTRAL DE POR DERECHO', 'Estado de prueba:', 'Hay que reconstruir si', 'Registro vivo CE-001–CE-010'],
+    markers: ['HIPÓTESIS INVESTIGATIVAS DE POR DERECHO', 'No existe una escala pública de «facilitación»', 'Estado de prueba:', 'Hay que reconstruir si', 'Registro vivo CE-001–CE-010'],
     issueCount: 4,
   },
   {
     key: 'en-canonical',
     route: '/en/sun-park-criminal-engineering-investigation/',
-    markers: ['POR DERECHO CENTRAL ALLEGATION', 'State of proof:', 'The investigation must determine whether', 'Live CE-001–CE-010 register'],
+    markers: ['POR DERECHO INVESTIGATIVE HYPOTHESES', 'No public “enabler” scale', 'State of proof:', 'The investigation must determine whether', 'Live CE-001–CE-010 register'],
     issueCount: 4,
   },
 ];

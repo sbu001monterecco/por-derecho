@@ -189,6 +189,17 @@
   document.head.appendChild(module);
 })();
 
+/* CRIMINAL-PUBLIC-BOUNDARIES-20260822 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-criminal-public-boundaries-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('criminal-public-boundaries-20260822.js?v=20260822a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-criminal-public-boundaries-loader', '20260822');
+  document.head.appendChild(module);
+})();
+
 /* INHERITED-LOADER-VALIDATION-SENTINELS
 case-information-architecture-20260819.js
 jdam-architecture-colegios-20260820.js

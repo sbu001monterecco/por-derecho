@@ -22,24 +22,25 @@ CANONICAL = {
 MODULE = ROOT / "assets" / "criminal-engineering-investigation-20260819.js"
 LOADER = ROOT / "assets" / "reverse-engineering-360-20260819.js"
 DATA = ROOT / "assets" / "data" / "criminal-engineering-investigation-v1.json"
+MANIFEST = ROOT / "publication-manifests" / "criminal-engineering-investigation-20260819.json"
 
 REQUIRED_MARKERS = {
     CANONICAL["es"]: [
-        "ALEGACIÓN CENTRAL DE POR DERECHO",
-        "NO HALLAZGO JUDICIAL",
+        "HIPÓTESIS INVESTIGATIVAS DE POR DERECHO",
+        "NO HALLAZGOS JUDICIALES",
         "Las ocho fases de la presunta ingeniería",
         "LAJ / oficina judicial",
-        "Escala de facilitación E0–E7",
+        "No existe una escala pública de «facilitación»",
         "Prueba en entorno hostil",
         "Beneficio y daño",
         "Derecho de respuesta",
     ],
     CANONICAL["en"]: [
-        "POR DERECHO CENTRAL ALLEGATION",
-        "NOT A JUDICIAL FINDING",
+        "POR DERECHO INVESTIGATIVE HYPOTHESES",
+        "NOT JUDICIAL FINDINGS",
         "The eight phases of the alleged engineering",
         "LAJ / judicial office",
-        "E0–E7 enabler ladder",
+        "No public “enabler” scale",
         "Evidence in a hostile environment",
         "Benefit and harm",
         "Right of response",
@@ -68,7 +69,8 @@ ACTOR_PATTERNS = {
 
 ARCHITECTURE_PATTERNS = {
     "eight_phase_sequence": re.compile(r"entrada estrat[eé]gica|strategic entry|normalizaci[oó]n operativa|operational normalisation", re.I),
-    "enabler_ladder": re.compile(r"E0.{0,120}E7|enabler ladder|escala de facilitaci[oó]n", re.I | re.S),
+    "actor_attribution": re.compile(r"actor por actor|actor by actor|atribuci[oó]n individual|individual attribution", re.I),
+    "no_public_actor_categorisation": re.compile(r"no public .?enabler.? scale|no existe una escala p[uú]blica de .?facilitaci[oó]n", re.I),
     "false_premise_propagation": re.compile(r"premisa.{0,60}(?:cadena|formal|aguas arriba)|false[- ]premise|upstream premise", re.I | re.S),
     "evidence_preservation": re.compile(r"preservaci[oó]n de (?:la )?prueba|evidence preservation|hostile environment|entorno hostil", re.I),
     "retaliation": re.compile(r"represalia|retaliation|informant|informante|whistleblower", re.I),
@@ -127,7 +129,7 @@ JUDGE_LAJ_CONFLATION = re.compile(
 
 PRIVATE_PATTERNS = {
     "gmail_message_id": re.compile(r"\b[0-9a-f]{16}\b"),
-    "drive_document_id": re.compile(r"\b1[A-Za-z0-9_-]{24,}\b"),
+    "drive_document_id": re.compile(r"\b1(?![0-9a-f]{39}\b)[A-Za-z0-9_-]{24,}\b"),
     "sha256_private_source": re.compile(r"SHA-256\s*[:=]\s*[0-9a-f]{64}", re.I),
     "attachment_identifier": re.compile(r"ANGjdJ[A-Za-z0-9_-]{25,}"),
 }
@@ -174,8 +176,10 @@ def main() -> int:
         data = json.loads(DATA.read_text(encoding="utf-8"))
         if len(data.get("phases", [])) != 8:
             failures.append({"type": "data_phase_count", "path": str(DATA.relative_to(ROOT)), "detail": "expected exactly 8 phases"})
-        if len(data.get("enabler_ladder", [])) != 8:
-            failures.append({"type": "data_enabler_count", "path": str(DATA.relative_to(ROOT)), "detail": "expected E0-E7"})
+        if "enabler_ladder" in data:
+            failures.append({"type": "legacy_public_actor_categorisation", "path": str(DATA.relative_to(ROOT)), "detail": "remove the E0–E7 public ladder"})
+        if len(data.get("actor_attribution_questions", [])) < 8:
+            failures.append({"type": "data_actor_attribution_questions", "path": str(DATA.relative_to(ROOT)), "detail": "expected at least eight actor-specific proof questions"})
     except Exception as exc:
         failures.append({"type": "invalid_data_json", "path": str(DATA.relative_to(ROOT)), "detail": repr(exc)})
 
@@ -218,6 +222,8 @@ def main() -> int:
         CANONICAL["es"].read_text(encoding="utf-8") if CANONICAL["es"].is_file() else "",
         CANONICAL["en"].read_text(encoding="utf-8") if CANONICAL["en"].is_file() else "",
         MODULE.read_text(encoding="utf-8") if MODULE.is_file() else "",
+        DATA.read_text(encoding="utf-8") if DATA.is_file() else "",
+        MANIFEST.read_text(encoding="utf-8") if MANIFEST.is_file() else "",
     ])
     for private_id, pattern in PRIVATE_PATTERNS.items():
         match = pattern.search(new_public_text)
@@ -233,7 +239,7 @@ def main() -> int:
             failures.append({"type": "missing_actor_coverage", "actor": actor})
 
     required_architecture = [
-        "eight_phase_sequence", "enabler_ladder", "false_premise_propagation",
+        "eight_phase_sequence", "actor_attribution", "no_public_actor_categorisation", "false_premise_propagation",
         "evidence_preservation", "retaliation", "benefit_flow", "irreversibility",
         "strongest_defence", "right_of_response",
     ]
@@ -243,7 +249,7 @@ def main() -> int:
 
     report = {
         "audit": "sun-park-criminal-engineering-public-repository",
-        "control_date": "2026-08-19",
+        "control_date": "2026-08-22",
         "scanned_public_files": scanned,
         "status": "FAIL" if failures else ("PASS_WITH_REVIEW" if review_items else "PASS"),
         "failures": failures,
