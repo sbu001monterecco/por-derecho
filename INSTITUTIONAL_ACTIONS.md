@@ -128,7 +128,7 @@ Among the materials reviewed to date, CEXP is the only entity for which both a p
 ### Source controls
 
 - [29 April 2008 owners’ resolution](https://drive.google.com/file/d/1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe/view)
-- Montelanza–CEXP statutes and transfer — primary source reviewed; no unredacted public link pending removal of identity, address and signature data
+- [1987 Owners' Statutes and 2008 CEXP instruments — controlled public edition](evidence/community/OWNER_STATUTES_1987_CEXP_2008_PUBLIC_DIGITAL_EDITION.md) — primary source digitised and indexed; unredacted image masters remain protected pending privacy, provenance and signature review
 - 1 February 2012 CEXP–Monterecco notice — primary source reviewed; no unredacted public link pending privacy review
 - [4 June 2014 filing GE-014212/2014](https://drive.google.com/file/d/1w1QgRE1sMtKU1NrjaCoxaVlVbJwlH0kR/view)
 - [Cabildo Resolution 2026-2735 / file 614/2026](https://drive.google.com/file/d/1A-RV2JyliHimx4duPpJFur03ECTDpcip/view)
