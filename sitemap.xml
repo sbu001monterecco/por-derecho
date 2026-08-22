@@ -286,4 +286,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/costa-papagayo-depuradora-trazabilidad/"/>
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/unitary-record/</loc><lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/unitary-record/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/unitary-record/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/</loc><lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/unitary-record/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/unitary-record/"/>
+  </url>
 </urlset>
