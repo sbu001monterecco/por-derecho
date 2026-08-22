@@ -42,13 +42,13 @@ El control ya conservado en archive/JV1260_CEXP_KEY_HANDOVER_CAPACITY_CLARIFICAT
 
 ## 3. Alcance de mi anterior adopción de la Declaración 005
 
-Yo había confirmado que asumía responsabilidad personal por la conservación, comunicación y utilización de la reconstrucción general de Patricia, admitiendo que podía requerir aclaración o reformulación.
+Yo había confirmado que asumía responsabilidad personal por la conservación, comunicación y utilización de la reconstrucción general de la declarante de la Declaración 005, admitiendo que podía requerir aclaración o reformulación.
 
 Esa confirmación no puede entenderse como adopción irrevocable de una afirmación materialmente incorrecta.
 
 Retiro y excluyo expresamente de mi adopción cualquier proposición según la cual Pink tuvo, retuvo o podía entregar las llaves. Mi responsabilidad por la utilización de la declaración incluye precisamente corregirla cuando detecto que una proposición es incorrecta.
 
-La Declaración 005 debe permanecer preservada como registro histórico de lo que Patricia dijo, pero marcada como **SUPLEMENTADA Y MATERIALMENTE DISPUTADA** en este punto.
+La Declaración 005 debe permanecer preservada como registro histórico de lo que la declarante de la Declaración 005 dijo, pero marcada como **SUPLEMENTADA Y MATERIALMENTE DISPUTADA** en este punto.
 
 ## 4. Presión sobre la declarante de la Declaración 005 — posición personal de Gil Marer
 
@@ -58,13 +58,13 @@ Esta es mi posición personal y una alegación que debe investigarse. No la pres
 
 Antes de publicar una atribución concreta de presión, deben recuperarse comunicaciones, instrucciones, reuniones, mensajes o declaraciones separadas que permitan comprobar:
 
-- qué se dijo a Patricia;
+- qué se dijo a la declarante de la Declaración 005;
 - por quién;
 - en qué fecha y capacidad;
 - qué efecto tuvo sobre su comprensión o manifestaciones;
 - y si existen explicaciones alternativas.
 
-La existencia de esta alegación refuerza la necesidad de no tratar la Declaración 005 como ratificada palabra por palabra por Patricia ni como una posición conjunta cerrada.
+La existencia de esta alegación refuerza la necesidad de no tratar la Declaración 005 como ratificada palabra por palabra por la declarante de la Declaración 005 ni como una posición conjunta cerrada.
 
 ## 5. Extremos que esta corrección no decide
 
