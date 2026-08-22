@@ -6,7 +6,7 @@
 
 ## 1. What primary court records presently establish
 
-The initial mailbox-and-repository scan has located primary court materials for **ETJ 370/2013**, arising from **monitorio 1438/2012**, before the Juzgado de Primera Instancia nº 1 de Arrecife.
+The initial source-led scan has located primary court materials for **ETJ 370/2013**, arising from **monitorio 1438/2012**, before the Juzgado de Primera Instancia nº 1 de Arrecife.
 
 | Date | Record | Procedural fact established | What it does not establish |
 |---|---|---|---|
