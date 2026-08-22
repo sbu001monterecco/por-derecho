@@ -26,4 +26,18 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/"/>
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/reglas-lectura-derecho-penal/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/reglas-lectura-derecho-penal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/criminal-law-reading-rules/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/criminal-law-reading-rules/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/criminal-law-reading-rules/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/reglas-lectura-derecho-penal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/criminal-law-reading-rules/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/criminal-law-reading-rules/"/>
+  </url>
 </urlset>
