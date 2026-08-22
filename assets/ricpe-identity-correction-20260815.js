@@ -26,8 +26,8 @@
 
   // Preserve the established parallel-lives analysis and then place the source-stamped
   // Eduardo → Sun Park → Borja visual immediately before it on every controlled route.
-  load('san-telmo-parallel-lives-red-20260819.js?v=20260819b', () => {
-    load('san-telmo-source-stamp-20260819.js?v=20260819a');
+  load('san-telmo-parallel-lives-red-20260819.js?v=20260819c', () => {
+    load('san-telmo-source-stamp-20260819.js?v=20260819b');
   });
 
   // RSM NNR4 chronology/read-back update for the recovered 30-Nov-2021 San Telmo/RICPE finding.
