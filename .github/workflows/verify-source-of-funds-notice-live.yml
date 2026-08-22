@@ -70,8 +70,8 @@ jobs:
               ]),
               'component': (f'{base}/assets/source-of-funds-notice-20260820.js?{q}', [
                   'second-pair-eyes.svg',
-                  'does not prove wrongdoing',
-                  'no prueba irregularidad',
+                  'not an allegation of wrongdoing',
+                  'no una acusación de irregularidad',
                   'source-of-funds-professional-services-notice',
               ]),
               'styles': (f'{base}/assets/source-of-funds-notice-20260820.css?{q}', [
