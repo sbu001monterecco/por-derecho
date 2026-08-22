@@ -16,6 +16,7 @@ Read together with:
 - `CHATGPT_START_HERE.md`;
 - `archive/THREAD_DELETION_CONTINUITY_PROTOCOL_16AUG2026.md`;
 - `archive/CORRECTION_REGISTER.md`;
+- **Declarations 005–008**, `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md` and **CR-058/CR-059/CR-061**, preserving proposition-specific corrections, Gil Marer's attributed CEXP/nullity and root-cause positions, and the text-not-voice authentication boundary;
 - `archive/MISSING_EVIDENCE_REGISTER.md`;
 - `archive/SUN_PARK_MASTER_STORYLINE_TIMELINE_1989_2022_16AUG2026.md`;
 - `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md`;
@@ -131,17 +132,21 @@ Common physical hotel reality does not erase legal-person or title boundaries.
 
 ## 5. Minority / sale-completion question
 
-**Project position:** owners representing circa 23% / a minority perimeter did not complete or breached the contemplated 2008 sale and their later acts/omissions became a central causal track.
+**Gil Marer's attributed position:** incomplete or frustrated performance of the contemplated 2008 restructuring by a seller/minority perimeter associated, in specific acts only, with **Montelanza, S.L.** and Molina-linked owners became the alleged originating private causal layer, followed by later acts or omissions.
 
 **Controlled status:** **PARTY ALLEGATION / OPEN QUANTIFICATION AND LEGAL CHARACTERISATION.**
 
-Do not publish one exact percentage or a finding of contractual breach until a seller/finca-level map is complete.
+Do not publish one exact percentage, collective identity, finding of contractual breach, common intent or sole causation until a seller/finca-level map is complete. `Montelanza, S.L.`, each owner, representative and adviser remain distinct actors. Family, minority, non-adherence or later-benefit labels do not prove any particular obligation or breach.
+
+**Structural-vulnerability control:** separately from Gil's breach theory, the located architecture shows divided titles, voluntary/participating-owner CEXP formation and unresolved seller/unit completion. Those features created fracture points in ownership, exploitation and governance; they do not establish wrongdoing.
 
 Required table:
 
 `owner/seller → finca/unit → quota → sale commitment → deed completion/non-completion → evidence/reason → later Community role → later litigation → later debt/vote position`.
 
 Where the source denominators differ, say so. A defensible interim formulation is **“a minority / approximately one-quarter perimeter remained outside LPB or otherwise requires sale-completion reconciliation.”**
+
+Declaration 008 records Gil's self-attribution and supports attribution of his current written text; that is **not voice authentication**. Any earlier dictated account remains participant-attributed pending preservation and, if material, independent authentication of the native audio.
 
 ---
 
@@ -166,6 +171,8 @@ Where the source denominators differ, say so. A defensible interim formulation i
 **Local/source family name:** `ACTA 22 JUNIO 2011.pdf` / `ACTA 22062011.pdf` in prior repository/site references.
 
 **Current controlled reading:** FMMM acts as administrator; Aizpurúa presides; LPB appears with a very large ownership quota but without vote due to attributed Community debt; vote-qualified owners ratify debt/recovery/lawyer/administration decisions and the Community/CEXP maintenance transition. LPB objections are recorded.
+
+**Causation boundary:** this 22-Jun-2011 ACTA is the disputed governance matrix node, not proof that every decision was valid or that every later consequence followed from it. It must remain distinct from 2-Feb-2011 and from Bankia enforcement/scheduled auction, which are the immediate documented 2012 trigger. Gil's alleged 2008 origin, structural vulnerability, June-2011 mechanism and Bankia trigger are four separate layers.
 
 **Percentage discipline:** do not confuse LPB ownership quota, attendance quota and voting quota. Working material has used more than one quota figure/denominator. The site should show the exact source-specific percentage beside each document rather than force all records into one number.
 
@@ -439,9 +446,10 @@ A public screenshot/crop/ChatGPT evidence card is a derivative and does not repl
 8. Confirm whether any 2019–2021 Community minutes exist; absence in present corpus is not proof of absence.
 9. Exact primary 4-Feb-2022 Drive source + audio/annexes/titles/proxies/conflict/abstention/payment trail.
 10. Transmission/reliance record for each ACTA used before AC/court/Yaiza/Cabildo/RICPE/other public or private recipient.
+11. Complete Garrigues engagement, witness/personnel map, pre-1/6-Feb correspondence and drafts, billing, May-2012 forwarding chain and 11-Apr-2013 report. Gil authorises naming Garrigues and requests its testimony, but the first presently verified activity is 28-Mar-2012; preserve the complete file and apply confidentiality/privilege review before publication or filing.
 
 ---
 
 ## 16. Deletion-safe one-paragraph reconstruction
 
-Sun Park's authority-provenance story begins before Concurso 36/2012: a 2008 specialist press report publicly announced the Monte Lanza→Multimatrix transaction, while primary 2008 records separately show a participating-owner exploitation structure whose statutes describe a `comunidad civil`. The critical later provenance question is not simply who owned most units, but how Community debt was used to distinguish ownership/attendance from voting power and how documents generated from that system travelled downstream. The current controlled chronology treats 22-Jun-2011 as the matrix provenance node, while preserving adverse procedural history. The primary 26-Apr-2016 ACTA records 89.727% represented but 11.039% vote-qualified and expressly recounts the 2011 litigation. The primary 18-May-2018 ACTA records 86.715% represented, LPB at 72.976%, CAM at 13.034%, but only 0.385% vote-qualified; it brings security/access to the meeting at LPB/AC's request without facially transferring whole-hotel possession to CAM. No 2019–2021 Community ACTAs are presently located in the controlled set. The 4-Feb-2022 Community project node must be tied to its exact primary source and then analysed for authority, voting, conflict, title, financing and downstream use. The project's c.23% seller-breach thesis remains a party allegation requiring a seller/finca completion map before exact public promotion.
+Sun Park's authority-provenance story begins before Concurso 36/2012: a 2008 specialist press report publicly announced the Monte Lanza→Multimatrix transaction, while primary 2008 records separately show a participating-owner exploitation structure whose statutes describe a `comunidad civil`. Gil attributes the alleged originating cause to incomplete/frustrated 2008 performance by an actor-specific Montelanza, S.L./Molina-linked seller/minority perimeter; the record independently shows structural vulnerability from divided titles, voluntary CEXP participation and unresolved seller/unit completion. Neither is a collective-breach finding. The critical later provenance question is how Community debt distinguished ownership/attendance from voting power and how documents generated from that system travelled downstream. The current controlled chronology treats 22-Jun-2011 as the contested matrix node, separately from the immediate documented Bankia enforcement/auction trigger in 2012. The primary 26-Apr-2016 ACTA records 89.727% represented but 11.039% vote-qualified and expressly recounts the 2011 litigation. The primary 18-May-2018 ACTA records 86.715% represented, LPB at 72.976%, CAM at 13.034%, but only 0.385% vote-qualified; it brings security/access to the meeting at LPB/AC's request without facially transferring whole-hotel possession to CAM. No 2019–2021 Community ACTAS are presently located in the controlled set. The 4-Feb-2022 Community project node must be tied to its exact primary source and then analysed for authority, voting, conflict, title, financing and downstream use. Declarations 005–008 and the contradiction register control; Gil's text attribution is not voice authentication, and Garrigues naming/testimony authority does not prove pre-contract advice or waive confidentiality over its file.

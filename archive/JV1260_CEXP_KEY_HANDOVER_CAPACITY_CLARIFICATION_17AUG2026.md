@@ -2,14 +2,16 @@
 ## Gil Marer's first-person evidence, entity capacity, compliance and downstream use
 
 **Date recorded:** 17 August 2026  
-**Status:** CONTROLLING FACTUAL CLARIFICATION / DIRECT-WITNESS EVIDENCE — CORROBORATION BOUNDARIES PRESERVED  
+**Status:** SUPERSEDED IN PART FOR PHYSICAL-DELIVERER QUESTION / DIRECT-WITNESS RECOLLECTION PRESERVED
 **Procedural family:** JV 1260/2011 → Sentencia 122/2012 → Rollo 793/2012 → AP Las Palmas Sentencia 89/2014  
 **Physical handover event presently identified by the repository:** 28 May 2012, post-Sentencia 122/2012, subject to recovery/review of the complete notarial act and associated court record  
 **Witness:** Gil Marer  
 **Capacity asserted for the physical handover:** President of the Comunidad de Explotación (CEXP)  
-**Controlling rule:** Do not attribute Gil Marer's physical delivery of the keys to MRSP, Monterecco Sun Park, LPB, Pink Canary Services or any other entity merely because he was associated with those entities. The capacity asserted by the direct witness for this act is **President of CEXP**.
+**Controlling rule:** Do not attribute the May-2012 CEXP maintenance-copy event to MRSP, Monterecco Sun Park, LPB, Pink Canary Services or any other entity merely because Gil Marer was associated with those entities. Gil asserts a **President of CEXP** capacity, but the physical deliverer remains unresolved.
 
 > **22 August 2026 confirmation / anti-regression:** Gil Marer has issued Declaration 006 expressly correcting Declaration 005. He states that Pink never had “the keys” and had no authority to deliver them to the AC or anyone else. Declaration 006 confirms and strengthens this pre-existing capacity control; it does not erase the original source history.
+
+> **CONTROLLING SUPERSESSION:** `archive/JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md` controls over this file wherever this file treats Gil Marer's personal attendance or physical delivery as established fact. Contemporaneous email materially conflicts with that recollection. The actual physical deliverer is unresolved pending the signed receipt and complete notarial/court record. The separate CEXP-versus-Pink capacity and maintenance-copy propositions remain strongly corroborated.
 
 ---
 
@@ -21,7 +23,7 @@ Gil Marer has now supplied a direct first-person clarification that materially n
 
 > **I was there when persons attending from or on behalf of the local court came to Sun Park accompanied by a notary. I personally handed over the keys. I did so as President of the Comunidad de Explotación — CEXP — and in that capacity, not as MRSP or indiscriminately on behalf of other entities.**
 
-This statement is direct-witness evidence as to Gil Marer's own presence, physical act and asserted capacity. It is not a substitute for the complete notarial act, court attendance record, key schedule or other contemporaneous primary documentation, all of which remain priority evidence for independent corroboration and exact reconstruction.
+This statement is Gil Marer's direct personal recollection as to his own presence, physical act and asserted capacity. Contemporaneous email now materially conflicts with the presence/delivery element. It is not a substitute for the complete notarial act, court attendance record, key schedule or other contemporaneous primary documentation, all of which remain priority evidence for independent corroboration and exact reconstruction.
 
 The clarification must therefore be preserved alongside, and used to interpret, the existing canonical control:
 
@@ -31,19 +33,19 @@ It narrows any reading of the existing record that could otherwise imply that Gi
 
 ---
 
-## 2. Direct-witness facts stated by Gil Marer
+## 2. Direct-witness recollections stated by Gil Marer
 
-The following propositions are recorded as **Gil Marer's direct personal evidence**, because he states that he personally witnessed or performed them:
+The following propositions are recorded as **Gil Marer's direct personal recollection**. Items 1–4 are materially disputed by contemporaneous email as to attendance and physical performance and must not be stated as established facts:
 
 1. **Personal presence.** Gil Marer states that he was physically present at Sun Park when the key handover was implemented.
 2. **Court/notarial attendance.** He recalls persons attending from or on behalf of the local court and a notary being present.
-3. **Physical delivery.** He personally handed over the relevant keys.
-4. **Capacity.** He did so **as President of CEXP / Comunidad de Explotación**.
+3. **Physical delivery.** He recalls personally handing over the relevant keys.
+4. **Capacity.** He recalls doing so **as President of CEXP / Comunidad de Explotación**.
 5. **Entity non-conflation.** He did **not** perform that physical act as MRSP and does not accept that it should be retrospectively attributed indiscriminately to MRSP, Monterecco, LPB, Pink Canary Services or another entity because he had other relationships or responsibilities within the wider Sun Park structure.
 6. **Compliance with the imposed situation.** He states that he and the operating side respected the court-imposed situation and did not thereafter simply continue using the affected units as if the intervention had not occurred.
 7. **No self-help retaking.** He states categorically that the affected units were not simply retaken or used by his side in defiance of the imposed position.
 
-These propositions should be used as first-person witness evidence unless and until reliable primary material contradicts or materially qualifies them.
+These propositions may be used only as attributed first-person recollection. Reliable contemporaneous material already materially qualifies items 1–4; the physical-deliverer question is open.
 
 ---
 
@@ -88,7 +90,7 @@ Presence of the same individual across parts of the wider structure does not pro
 
 Whenever the 28-May-2012 handover is described, the default formulation must be substantially:
 
-> **Gil Marer states that he personally delivered the relevant keys while acting as President of CEXP. His physical participation is not, without additional evidence, to be treated as an act by MRSP/Monterecco or another entity.**
+> **Contemporaneous records identify the May-2012 obligation as CEXP's and the keys as CEXP maintenance copies, not an act of MRSP/Monterecco/Pink. Gil Marer recalls personally delivering them as CEXP President, but contemporaneous email materially conflicts with that recollection and the physical deliverer remains unresolved.**
 
 Any stronger entity attribution requires its own primary evidence.
 
@@ -100,7 +102,7 @@ The existing repository record already makes an important corrective finding: cu
 
 The recovered material instead indicates that the incoming side was prepared to return the owners' keys while disputing the plaintiffs' allegation that CEXP had tourist-exploited the 18 units. Contemporaneous correspondence and key sheets describe the relevant keys as **maintenance copies** and treat their return as a CEXP responsibility.
 
-Gil Marer's direct evidence is consistent with that existing evidential architecture in one particularly important respect: he states that the **physical act of handover was performed by him in the CEXP capacity**.
+Gil Marer's recollection is consistent with that existing evidential architecture only as to the **asserted CEXP capacity**. It is materially disputed as to his personal attendance and physical performance.
 
 This does not by itself decide:
 

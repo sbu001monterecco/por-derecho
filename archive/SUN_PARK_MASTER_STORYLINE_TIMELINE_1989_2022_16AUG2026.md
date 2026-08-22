@@ -5,7 +5,7 @@
 **Primary input for this memo:** private 136-page PDF uploaded by Gil Marer, `SUN PARK - Anexo I - Informe Detallado del Estado del Hotel 2008-2022 (Acoso Inmobiliario-Estafa Inversores y Fiscal) 9ENE_2023.pdf` (the cover itself says `2008-2020`, while the filename and substantive content run through December 2022).  
 **Source treatment:** PRIVATE / RESTRICTED SOURCE-DERIVED ANALYSIS. Do **not** upload or publish the PDF or its screenshots from this repository. Re-query the File Library by filename if the source itself is needed.
 
-Read this memo **after** `CHATGPT_START_HERE.md`, `archive/CORRECTION_REGISTER.md`, `archive/MISSING_EVIDENCE_REGISTER.md`, `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md` and `archive/SUN_PARK_CONTROL_CONTINUITY_REPOSITORY_SITE_PLAN_15AUG2026.md`. Where this 9-Jan-2023 source conflicts with later controlled corrections, **the current repository correction register controls**.
+Read this memo **after** `CHATGPT_START_HERE.md`, `archive/CORRECTION_REGISTER.md`, `archive/MISSING_EVIDENCE_REGISTER.md`, **Declarations 005–008**, `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`, `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md` and `archive/SUN_PARK_CONTROL_CONTINUITY_REPOSITORY_SITE_PLAN_15AUG2026.md`. Apply CR-058/CR-059/CR-061. Where this 9-Jan-2023 source conflicts with later controlled corrections, **the current repository correction register controls**.
 
 ---
 
@@ -35,7 +35,7 @@ Do **not** use the Annex itself to establish as fact that any person committed `
 
 ## 2. The reader-facing story in one minute
 
-Sun Park began as a **single operating hotel/product built from legally separate units and common/operating infrastructure**. From the late 1980s through 2008 it was presented and operated as one hotel. After the 2008 ownership/restructuring phase, the ownership, exploitation, Community governance and cost-sharing structure became progressively contested. The Annex’s central thesis is that minority/dissident owners ceased participating in the common operating model while continuing to use the hotel infrastructure, impairing cash flow and governance; that thesis is important but **must be proved separately and not treated as the sole established cause of LPB’s insolvency**.
+Sun Park began as a **single operating hotel/product built from legally separate units and common/operating infrastructure**. From the late 1980s through 2008 it was presented and operated as one hotel. After the 2008 ownership/restructuring phase, the ownership, exploitation, Community governance and cost-sharing structure became progressively contested. Gil's current root-cause position is that incomplete/frustrated performance by a seller/minority perimeter associated, in specific acts, with Montelanza, S.L. and Molina-linked owners began the causal chain. That is a party theory, not a collective breach or liability finding. The documented structural vulnerability lies in divided titles, voluntary CEXP participation and unresolved seller/unit completion. The Annex’s related thesis that minority/dissident owners ceased participating while continuing to use hotel infrastructure must be proved actor by actor and **must not be treated as the sole established cause of LPB’s insolvency**.
 
 LPB entered **Concurso 36/2012** in June 2012, yet the hotel did not simply disappear as an economic unit: the Annex depicts Sun Park as continuing to operate through 2018, with a living guest/community proposition, press coverage, commercial agreements and a functioning hotel environment. That distinction matters. **The company was in concurso; the physical hotel and mixed-ownership operating platform remained an economic reality.**
 
@@ -63,9 +63,9 @@ Future public pages should be capable of reconnecting the following ten beats wi
 
 ### Beat 2 — The conflict is about governance, exploitation and cash flow before it is about liquidation
 
-**2008–2012.** The Annex presents a split between participants and dissidents, competing exploitation arrangements, non-participation in common expenses and alleged parallel use of hotel infrastructure. It attributes negative operating results and LPB’s eventual insolvency to that conflict. See pp. 12–13.
+**2008–2012.** The Annex presents a split between participants and dissidents, competing exploitation arrangements, non-participation in common expenses and alleged parallel use of hotel infrastructure. Gil now locates his alleged originating private cause in incomplete/frustrated 2008 performance by an actor-specific Montelanza, S.L./Molina-linked seller/minority perimeter. The 22-Jun-2011 ACTA is the distinct debt/vote/authority matrix node; Bankia enforcement and the scheduled auction are the immediate documented 2012 trigger. These are separate causal layers, not substitutes for each other. See pp. 12–13 and Declarations 005–008.
 
-**Control rule:** the Annex’s `boycott → negative results → concurso` chain is a **party causation thesis**, not an established judicial finding. The public insolvency page must separately test bank debt, liquidity, asset values, swap/financing, owner interference, operating results, costs and professional advice.
+**Control rule:** the Annex’s `boycott → negative results → concurso` chain is a **party causation thesis**, not an established judicial finding. The public insolvency page must separately test seller/finca obligations and defences, structural vulnerability, the June-2011 governance mechanism, bank debt, liquidity, asset values, swap/financing, owner interference, operating results, costs, Garrigues advice and the parties' own decisions. Gil authorises naming Garrigues and requests its testimony, but the first presently verified activity is 28-Mar-2012 and confidential/privileged source bodies remain review-controlled. His written self-attribution supports attribution of the text; it does not authenticate a voice.
 
 ### Beat 3 — Concurso did not mean the economic hotel disappeared
 
@@ -134,8 +134,9 @@ Public finance also remains layered: **RICPE/private RIC capital → RIC fiscal/
 | Date / period | Storyline event | Source / status | Website significance | Primary verification / caution |
 |---|---|---|---|---|
 | **1989–2008** | Sun Park presented as one productive hotel of **262 units: 220 apartments + 40 commercial premises + 2 solariums** despite unit-level ownership. | ANNEX pp. 3–4, 11, 123. | Establishes `one hotel business / multiple legal units`. | Recover title/constitutive deed, original operator agreements, exact unit schedule. |
-| **May 2008–Jan 2012** | Ownership/exploitation structure changes; Annex depicts majority/LPB-led operation and a growing dissident/non-participating perimeter. | ANNEX pp. 4, 12. | Origin of governance/cost/exploitation conflict. | Do not publish `boycott` or `illegal parallel exploitation` as fact without contracts, minutes, accounts and judgments. |
-| **2011** | Annex places a major Community governance/debt/maintenance rupture here and later attributes Pamanil/FMMM administration to the dissident perimeter. | ANNEX pp. 12, 15–18; CTRL P19 predecessor phase. | Explains why 7-Jun-2018 cannot be presented as an isolated event. | Need original 2011 minutes, debt/accounting, powers, bank/book custody, Proc. 1260/2011. |
+| **May 2008–Jan 2012** | Ownership/exploitation structure changes; Annex depicts majority/LPB-led operation and a growing dissident/non-participating perimeter. Gil alleges incomplete/frustrated 2008 performance by an actor-specific Montelanza, S.L./Molina-linked seller/minority perimeter. | ANNEX pp. 4, 12; `OPINION_INTERPRETATION:GIL`; 2008 CEXP/Montelanza sources. | Alleged originating private layer plus documented structural vulnerability of divided titles/voluntary participation. | Do not publish collective breach, intent, `boycott` or illegal exploitation without the seller–finca–obligation–performance–defence map. |
+| **2 Feb / 22 Jun 2011** | The February ACTA records a Community/exploitation boundary; the June ACTA is the disputed debt/vote/authority matrix, with LPB's large coefficient present but vote-excluded by attributed debt while debt recovery, administration and Community/CEXP-maintenance decisions were approved. | PRIMARY ACTAS / legal effect contested. | Explains the precise governance mechanism without merging the meetings. | Need originals, calls, attendance, proxies, debt basis, votes, challenges and outcomes; presence/ownership is not voting authority. |
+| **May–Jun 2012** | Bankia enforcement and the auction fixed for 22-Jun supplied the immediate documented timing trigger for LPB's defensive concurso filing. | CTRL banking/execution record. | Separates immediate trigger from the alleged 2008 origin and 2011 amplification. | Does not establish sole causation, validity of every banking act or correctness of every professional/party decision. |
 | **6 Jun 2012** | LPB voluntary concurso opens. | ANNEX p. 24; CTRL repository. | Formal insolvency threshold. | Keep LPB legal person separate from whole Sun Park complex. |
 | **2012–2018** | Annex depicts continuing Sun Park operation, community life and commercial proposition under a post-2012 operator while ownership/governance remained disputed. | ANNEX pp. 5–10, 12–13. | Critical rebuttal to any narrative that `concurso = dead hotel`. | Verify operator identity/contract, tax/operator files, PMS, reservations, staff, accounts and unit participation. |
 | **2 Oct 2017** | First specifically dated physical-incursion lead currently located in controlled repo. | **CTRL / CORRECTED CR-017; not derived from Annex’s main chronology.** | Shows attributed physical interference/access predates 2018 takeover and 2022 title. | Attribution, scope and authority require native images, metadata, witness/security/police/court records. |
@@ -435,15 +436,16 @@ A credible public site should answer these questions with documents, not omit th
 A future ChatGPT asked to improve the Sun Park story should use this exact sequence:
 
 1. Read `CHATGPT_START_HERE.md` and the universal thread-deletion protocol.
-2. Read `CORRECTION_REGISTER`, `MISSING_EVIDENCE_REGISTER`, P19 and the control/site plan.
-3. Read **this memo** to understand the narrative spine and page-to-source roadmap.
-4. Re-query the private PDF by filename only if a specific Annex page/image is needed.
-5. Re-query primary evidence for every proposition to be strengthened publicly.
-6. Update the relevant canonical ledger first; do not use the Annex as proof where a primary source is required.
-7. Keep `formal title / legal possession / material control / effective hotel-wide control` separate.
-8. Keep LPB / Matkator / other owners / Community / CAM / HNT / Canarian Hospitality / RICPE separate as legal persons or rights-holders.
-9. Preserve strongest contrary evidence and state what the record does not prove.
-10. Use branch → PR → review/diff → merge → Pages verification for any public change.
+2. Read `CORRECTION_REGISTER`, `MISSING_EVIDENCE_REGISTER`, **Declarations 005–008**, the reserved-declarant contradiction register, P19 and the control/site plan.
+3. Apply CR-058/CR-059/CR-061, including text-not-voice, actor-specific root-cause and Garrigues chronology/confidentiality controls.
+4. Read **this memo** to understand the narrative spine and page-to-source roadmap.
+5. Re-query the private PDF by filename only if a specific Annex page/image is needed.
+6. Re-query primary evidence for every proposition to be strengthened publicly.
+7. Update the relevant canonical ledger first; do not use the Annex as proof where a primary source is required.
+8. Keep `formal title / legal possession / material control / effective hotel-wide control` separate.
+9. Keep LPB / Matkator / other owners / Community / CAM / HNT / Canarian Hospitality / RICPE separate as legal persons or rights-holders.
+10. Preserve strongest contrary evidence and state what the record does not prove.
+11. Use branch → PR → review/diff → merge → Pages verification for any public change.
 
 ---
 

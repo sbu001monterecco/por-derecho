@@ -13,6 +13,8 @@ This record closes the continuity gap left by the 13 August 2026 maximum-depth f
 - `archive/UNIVERSAL_PUBLICATION_AND_THREAD_DELETION_SAFETY_PROTOCOL_18AUG2026.md`; and
 - the current correction, missing-evidence, maintenance and deployment registers.
 
+**22-Aug-2026 pickup supplement:** any future use of this audit for Pink, CEXP, keys, the reserved declarant, 2008/2011 causation or Garrigues must first read Declarations 005–008, CR-058/CR-059/CR-061 and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`. Gil's written self-attribution supports attribution of the text; it does not authenticate a voice.
+
 The chat is not a source of truth. Current `main`, the access-controlled report and checkpoint named below, and re-queried primary sources control.
 
 ## 2. Durable private recovery route
@@ -33,8 +35,9 @@ The private checkpoint preserves the complete operative mandate needed to resume
 - separation of factual operation, administrative registration, possession, contractual authority, common-area delegation, owners-wide authority, succession and ownership;
 - the 2011 maintenance-contract termination and the unproved leap from that act to termination or replacement of CEXP's wider operating mandate;
 - the 2011–2013 financial and governance bind, the 159/220 perimeter problem and Garrigues formalisation history;
+- Gil's attributed 2008 Montelanza, S.L./actor-specific Molina-linked root-cause position, separated from structural vulnerability, the 22-Jun-2011 governance matrix and Bankia's immediate 2012 trigger;
 - the Bankia-originated economic package and the later SAREB/Promontoria/CAM mortgage-credit track versus the CaixaBank financial-product litigation in Valencia;
-- Pink/Patricia tax, service, access and notification issues, with personal evidence kept private;
+- Pink/reserved-declarant tax, service, access and notification issues, with personal evidence kept private;
 - Community minutes, debt-based vote exclusion, authority propagation and later institutional reliance;
 - the insolvency-administration, judicial, possession, title, control, value-transfer, RIC/public-funding and successor narratives;
 - actor-specific criminal-elements discipline, contrary evidence, innocent explanations, limitation, standing, causation, benefit and damages;
@@ -59,19 +62,34 @@ Order 804/2018 is final as an appellate order affirming provisional dismissal of
 
 The original May 2017 record distinguishes cessation of new commercialisation from continuing existing stays, supplies, services, maintenance, preservation and transition before formal handover. The order is also adverse evidence: it did not recognise CEXP's asserted possession at that time. Both aspects must be disclosed.
 
-### 4.4 No proved Bankia or Garrigues direction
+### 4.4 Gil recalls Garrigues advice; the pre-contract chronology is not proved
 
-Severe financial, enforcement, liquidity, insolvency and governance pressure is documented. The reviewed record does not prove that Bankia or Garrigues ordered the incorporation or use of Monterecco/Pink. Crisis reliance, incomplete facts and a mistaken or unproved perimeter assumption are stronger sustainable propositions than express coercion.
+Severe financial, enforcement, liquidity, insolvency and governance pressure is documented. The reviewed record does not independently prove that Bankia or Garrigues ordered the incorporation or use of Monterecco/Pink. Bankia enforcement/scheduled auction is the immediate documented 2012 trigger; that does not establish the content of professional advice or sole causation.
 
-### 4.5 Credit/product separation remains an investigated allegation
+Declarations 007–008 record Gil Marer's direct recollection that **Garrigues** recommended use of the Monterecco structure and his view that he recognised the advice as wrong very soon. Gil authorises public naming and requests Garrigues testimony and complete custodial production. This is material personal evidence, but it does not yet alter the documentary grade: the first presently verified Garrigues activity is **28-Mar-2012**, after the 1/6-Feb instruments, and the 2009 Molina-linked non-adherence material was forwarded to it in May 2012. Use `PERSONAL_RECOLLECTION:GIL`, not verified `COUNSEL_POSITION`; preserve confidentiality/privilege over professional source bodies and keep operator-structure advice separate from execution, pre-insolvency and concurso advice.
+
+### 4.5 Root cause, structural vulnerability, governance mechanism and immediate trigger are separate
+
+Gil attributes the alleged originating private cause to incomplete/frustrated performance of the 2008 restructuring by a seller/minority perimeter associated, in specific acts only, with Montelanza, S.L. and Molina-linked owners. The record separately documents structural vulnerability through divided titles, voluntary CEXP participation and unresolved seller/unit completion; identifies the 22-Jun-2011 ACTA as the contested debt/vote/authority matrix; and identifies Bankia enforcement/scheduled auction as the immediate documented 2012 trigger. None is a finding of collective breach, common intent, sole causation or liability. Require actor, finca, obligation, act, capacity, defence and causal bridge.
+
+### 4.6 Gil's CEXP/nullity legal position is controlled but not adjudicated
+
+Gil now argues that the 6-Feb LPB–Monterecco contract should have been treated as wholly or partly void *ab initio* and that CEXP was the only vehicle capable of holding or conferring the owners-derived mandate for unitary operation of the integrated hotel. This does not mean that CEXP owned every finca, that a service company could never act under valid CEXP authority, or that exclusivity/universal scope is already proved. Preserve simultaneously:
+
+1. Gil's legal position;
+2. the current open authority/nullity question;
+3. the 1-Feb notice and Monterecco/Pink's real historic operation/registration; and
+4. all adverse judgments and unresolved historical-tourism-law issues.
+
+### 4.7 Credit/product separation remains an investigated allegation
 
 The mortgage-credit position travelled through SAREB and Promontoria into the CAM perimeter; the disputed financial-product claim remained against CaixaBank in Valencia PO 1859/2023. No located ruling establishes that this separation was unlawful or criminal. Intent, legal accessory status, assignment scope, notice, defence effects and harm remain evidence targets.
 
-### 4.6 The 12 July 2016 notice is a specific knowledge hinge
+### 4.8 The 12 July 2016 notice is a specific knowledge hinge
 
 The primary quantified 12 July 2016 notice to the insolvency administrator is located and is the specific pre-2018 notice hinge for disputed Community authority, accounting, debt and voting issues. Native burofax, annex and receipt reconciliation remains partial and must not be overstated.
 
-### 4.7 Later-canon corrections
+### 4.9 Later-canon corrections
 
 - The primary 15 May 2012 auction schedule contains **158 properties**; 159 and the contemporaneous Garrigues figure 166 are distinct measurements pending a finca crosswalk.
 - Valencia PO 1859/2023 is now listed for **9 October 2026 at 12:00**, superseding the earlier 28 January 2027 date in Revision 2.
@@ -101,7 +119,10 @@ The following remain open and are not resolved by this close-out:
 7. CAM assignment, price, balance, accounting, adjudication/dación and hedge-separation decision records;
 8. native 2016 burofax/annex/receipt reconciliation;
 9. certified reconciliation of AP 89/2014 and AP 16/2014;
-10. acknowledgement and production results from Cabildo/RGT/Yaiza and any Fiscalía corrective track.
+10. complete 2008 seller–finca–obligation–performance–defence map and complete 2-Feb/22-Jun-2011 governance package;
+11. Garrigues retainer, witnesses, pre-1/6-Feb communications/drafts, billing, May-2012 forwarding chain and 11-Apr-2013 report, preserved and confidentiality/privilege-reviewed before disclosure;
+12. native audio and chain-of-custody evidence if any voice attribution becomes material; and
+13. acknowledgement and production results from Cabildo/RGT/Yaiza and any Fiscalía corrective track.
 
 These gaps are evidence-custody or completion gaps, not conversation-dependency gaps once this audit and the private checkpoint are durable.
 

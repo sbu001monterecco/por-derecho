@@ -1,0 +1,90 @@
+# GIL / RESERVED DECLARANT — CONTRADICTION AND CLARIFICATION REGISTER
+
+**Date:** 22 August 2026
+**Status:** CANONICAL PROPOSITION-BY-PROPOSITION CONTROL / REQUIRED RETRIEVAL GATE
+**Public identity rule:** the declarant is identified by Gil in the private corpus; the public repository uses `reserved declarant from Gil Marer's perimeter` unless identity is legally necessary and separately authorised.
+**Scope:** Declarations 001–005, especially Declaration 005; Gil's Declarations 006–008; primary/source controls; public ES/EN pages.
+
+## 1. Controlling relationship and evidence rule
+
+Gil states that he and the reserved declarant were very close and generally coordinated personally and professionally. The contradictions below are **limited and proposition-specific**. They do not justify a global finding that the declarant was dishonest, unreliable or generally opposed to Gil.
+
+The repository must nevertheless keep the two voices separately attributable. Gil adopts only what he expressly confirms. Primary documents, court/administrative originals and later controlling corrections prevail over either person's memory.
+
+## 2. Authentication rule — text is not voice recognition
+
+Gil has identified himself as the author of the current written instruction and previously identified the declarant after the transcribed dictation. ChatGPT can preserve those attributions. It cannot independently authenticate a person's voice from text alone. The native audio is not in the public repository; any biometric or forensic voice conclusion would require the original recording and appropriate comparison.
+
+## 3. Declaration 005 — confirmed contradictions, tensions and open clarifications
+
+| ID | Declaration 005 proposition | Grade | Controlling position / required correction | Closure evidence or question |
+|---|---|---|---|---|
+| RDC-01 | Pink held, retained, offered or was told to keep/deliver “the keys” (§§11–16). | **DIRECT CONTRADICTION** | Pink must not be attributed the CEXP maintenance keys or authority to deliver them. Contemporaneous sources identify a CEXP obligation and maintenance copies. Gil's recollection of personal delivery is itself disputed; the physical deliverer remains unresolved. The correction does not prove that Pink never possessed an ordinary access key for any unit in its own factual perimeter. | Signed receipt, complete 28-May-2012 notarial/court record, key-by-key/unit-by-unit schedule. |
+| RDC-02 | Pink became a post-rescission “residual custodian” because it had keys, suppliers, workers and practical obligations (§12). | **MATERIAL TENSION** | The keys limb is rejected. `Custody` and `preservation` describe a claimed function or purpose, not legal authority. Identify separately any supplier contract, employee, payor role, records, equipment, unit access and mandate. | Contract/employer/payor/funder/mandate inventory by month. |
+| RDC-03 | The Owners' Community had to continue the tourism activity and integrated hotel operation after Pink (§§11–13). | **DIRECT CAPACITY CONFLICT** | Gil's legal position is that only CEXP could hold or confer the owners-derived unitary operating mandate. Separate Owners' Community duties for common elements/services from CEXP exploitation authority, LPB ownership, Pink's factual role and any AC preservation duty. The 2-Feb-2011 ACTA itself placed operation/licence outside ordinary Community competence. | Statutes, CEXP instruments, Community/CEXP maintenance agreement, exact termination/succession decisions, applicable tourism law. |
+| RDC-04 | Monterecco/Pink was created as a freely agreed temporary solution because no operator could be found (§9). | **MATERIAL OMISSION / LEGAL CONFLICT** | Gil recalls Garrigues advising the route under inherited conflict and Bankia execution/subasta pressure, says he soon considered it wrong and argues the 6-Feb contract was wholly/partly void *ab initio*. This does not erase Pink's factual operation. | Garrigues engagement/advice chronology; drafts; competent CEXP resolution; independent validity/severability opinion. |
+| RDC-05 | Lack of Owners' Community approval explains the defect in the Pink arrangement (§9). | **WRONG-ORGAN / AUTHORITY TENSION** | Under Gil's current position the central question is not whether the contested Owners' Community approved it, but whether the competent CEXP/participating-owner body validly authorised the 1-Feb notice and what LPB could convey in the separate 6-Feb contract. | CEXP call, agenda, votes, proxies, owner accession/title and both instruments. |
+| RDC-06 | Pink “continued the exploitation” and paid the structure of “the hotel” (§§9–11). | **ENTITY/PERIMETER OVERSTATEMENT** | Preserve real operation and a 159-unit/477-bed administrative position, while separating factual operation, registered title, civil validity, common-area authority, third-party units and whole-hotel mandate. AP 89/2014's adverse 18-unit reasoning remains visible. | Unit/title/booking/revenue/staff/supply/common-area crosswalk by period. |
+| RDC-07 | The same owners voluntarily left “the purchase or exploitation” (§3). | **MATERIAL COLLAPSE OF DISTINCT EVENTS** | Separate: alleged seller non-completion/breach of the 2008 transaction; opposition/reservation or non-adherence to CEXP; later withdrawal/termination; individual use/rental; Community payment status. Non-adherence does not automatically prove breach or illegality. Attribute Montelanza, S.L. and every Molina-linked person by actor, date and capacity rather than treating them as one legal actor. | Seller–finca–contract–deed–payment–CEXP accession map. |
+| RDC-08 | The earlier owners sold the complex/assets to Multimatrix (§8). | **ALIGNED SHORTHAND, LEGAL PATH IMPRECISE** | The public record supports a contemporaneously announced Montelanza–Multimatrix transaction concerning property/operation and partial implementation through LPB. Do not state that Montelanza, S.L. itself was sold as a company or that every seller/finca completed. | Complete 2008 contracts/deeds, LPB title schedules and corporate/share records. |
+| RDC-09 | February 2011 brought LPB debt/vote exclusion and ended CEXP, later ratified in June (§4). | **CHRONOLOGY CONTRADICTION** | The located 2-Feb ACTA concerns election/administrative authority and expressly declines operation/licence decisions. The located 22-Jun ACTA contains LPB's attributed debt/vote exclusion and Community/CEXP maintenance/Pamanil decisions. Keep the meetings separate. | Complete signed ACTAs, calls, attendance, proxies and challenges for both dates. |
+| RDC-10 | Pamanil formally replaced CEXP and was to perform the integrated hotel services (§6). | **CAPACITY OVERSTATEMENT** | The 22-Jun record ratifies Pamanil for stated Community administration, maintenance, custody and claims functions; it does not by itself establish Pamanil as lawful whole-hotel operator or universal CEXP successor. | Pamanil contract, scope, invoices, staff, bank, authority and actual work. |
+| RDC-11 | Charging non-participating owners directly was the proper consequence of common-service consumption (§§3, 7–8). | **DIRECT CORRECTION / ADMISSION** | Gil accepts that the incoming side's early Community/maintenance-style invoicing mechanism was wrong, although the service-consumption/cost-allocation problem was real and remains separate. The invoices cannot validate later Community debt, vote exclusion or authority. | Invoice/ledger/owner-response/meter/service reconciliation. |
+| RDC-12 | The Pink contract involved about €24,500 rent and €33,000 charges for 159 fincas, periodicity uncertain (§9). | **MATERIAL IMPRECISION** | The controlled contract figure is €24,575/month rent plus €33,915.29/month LPB Community component, before IGIC, plus operating costs. Do not merge 158 auction properties, 159 tourism units/477 beds, Garrigues's 166-unit statement or a later 188-asset model. | Contract schedules, finca/unit crosswalk, invoices, accounts and payments. |
+| RDC-13 | Paying suppliers/preservation explains the rent and Community obligations (§§11–15). | **UNRESOLVED SET-OFF / ADVERSE-EVIDENCE TENSION** | Expenditure does not discharge rent or the contract's Community component without a proved direct-payment, set-off, credit, amendment or restitution basis. Sentencia 163/2023's adverse findings are under appeal; the bank/ledger record remains incomplete. | Month-by-month rent, Community, IGIC, supplier, credit/set-off and judgment/execution bridge. |
+| RDC-14 | CEXP was rescinded, nevertheless survived, was never liquidated and could be reactivated (§§4, 11). | **INTERNAL LEGAL/ENTITY TENSION** | Separate the CEXP entity/community, Montelanza→CEXP exploitation transfer, Owners' Community–CEXP maintenance arrangement, attempted 2011 termination/suspension, and 1-Feb-2012 CEXP→Monterecco notice. Survival does not itself prove authority, membership or operating capacity. | Each instrument, competent organ, notice, effective date, participants and liquidation/status records. |
+| RDC-15 | A morose owner could not challenge anything until paying (§5). | **LEGAL OVERSTATEMENT** | The LPH position requires proceeding-specific analysis, including judicial consignment, debt challenge and the statutory exception for participation-quota disputes. Do not state an absolute bar. | Exact historical statute, each challenge, consignation, debt status and ruling. |
+| RDC-16 | The Community had no 2010–2015 documents but nevertheless calculated debt (§14). | **INTERNAL CUSTODY TENSION** | The 26-Apr-2016 ACTA also records the reserved declarant saying accounting documents in her possession would be delivered, followed by a promised audit. Both propositions must be shown together. | What she held, capacity, delivery date/receipt, audit and follow-up meeting. |
+| RDC-17 | The debt was fabricated and there was no creditor, contract, invoice or payment (§§5, 14, 16). | **CATEGORICAL OVERSTATEMENT** | Treat duplicated/unsupported/misallocated debt and governance use as transaction-level hypotheses. Some administrative/legal costs and a contractual Community component existed. Do not use universal negation without complete books. | Service-by-service invoice, creditor, bank, allocation, CEXP/Pink payment and debt-vote reconciliation. |
+| RDC-18 | Pamanil appeared nowhere and did nothing (§§6, 9). | **PERSONAL OBSERVATION, NOT UNIVERSAL FACT** | Safe wording: the declarant did not observe Pamanil performing the integrated services claimed during the period she directly knew. Total inactivity requires the complete Pamanil file. | Contract, staff, invoices, bank, tax, access and work product. |
+| RDC-19 | The dissident units were simply operated independently and the key evidence supports the Project version (§§3, 8, 11). | **ADVERSE JUDGMENT MUST REMAIN VISIBLE** | AP 89/2014 found possession/operation affecting 18 claimant units and used key/relationship evidence. Gil disputes the entity/capacity inference; contemporaneous sources support CEXP maintenance copies, but the complete appellate package remains missing. | Certified judgment, first-instance decision, appeal/new-evidence filing, notarial act, key schedules and booking data. |
+| RDC-20 | One/common meters and Pink supplier invoices prove costs were hotel/common, not Pink income (§§13, 15). | **GENERALLY ALIGNED, TECHNICALLY INCOMPLETE** | An invoice proves formal contract/payment functions, not tourism income by itself. Meter topology, consumption, allocation and contractual liability remain separate. | CUPS, plans, meters, bills, technical reports, bookings, invoices and bank receipts. |
+| RDC-21 | AC, Community, CAM or another actor may have originated the AEAT case (§15). | **SPECULATION / OPEN PROVENANCE** | Do not adopt any source of complaint or transmission without the AEAT file. Keep tax merits, service/notification and criminal-source hypotheses in separate lanes. | AEAT provenance, acts, evidence index, service logs and Audiencia Nacional record. |
+| RDC-22 | Later works were aimed at devaluing the asset (§17). | **PURPOSE NOT PROVED** | Material control, works, valuation effects and authority are investigable; inferred purpose must remain attributed until actor-specific evidence proves it. | Licences, instructions, works, valuations, financing, before/after condition and communications. |
+| RDC-23 | The narrative begins operationally in 2011/2012 and treats Pink/Community repetition as the main pattern (§16). | **ALIGNED BUT CAUSALLY INCOMPLETE** | Gil's controlling root-cause position begins with alleged non-completion/breach of the 2008 transaction by a seller/minority perimeter associated in specific acts with Montelanza, S.L. and Molina-linked owners, followed by relevant acts/omissions. This is an upstream party allegation, not a proved sole/proximate cause. Bankia's scheduled auction is the immediate documented filing trigger. | Full 2008 completion map and monthly actual/counterfactual causation ledger through 2012. |
+
+## 4. Other declarations — propositions kept separate from Gil
+
+| ID | Proposition | Current control |
+|---|---|---|
+| RDC-24 | Declaration 003: a €350,000 intermediary/commission line proves payment to the AC. | The contemporaneous line proves that the amount/label was recorded; payment, recipient and unlawfulness remain unproved. Gil must separately state what he personally heard or saw. |
+| RDC-25 | Declaration 003: a CAM representative had personal contact with or privileged access to the judge. | Preserve as the declarant's recollection/hearsay unless direct communications or independent witnesses prove it. Do not merge Gil's separate observations. |
+| RDC-26 | The judge had not read the case material. | Prohibited inference on the current record. The narrower controlled fact is a reported document-access problem immediately before the hearing. |
+| RDC-27 | RICPE/CAM/HNT value, financing, incentive, force, connivance or double-funding propositions in Declarations 002/004. | Most are framed as questions. Keep them document-led and declarant-specific unless Gil expressly adopts each proposition or primary evidence proves it. |
+| RDC-28 | Two Pink/reserved-declarant appeal versions give different notification histories. | Identify the filed version through LexNET receipt and service record; do not combine the 17-page and 19-page histories. |
+| RDC-29 | 2018 security/force information and specific valuation/unit counts. | Separate direct observation, contemporaneous hearsay, later reconstruction and competing unit/condition denominators. |
+
+## 5. Gil's controlling root-cause hierarchy
+
+Do not flatten the causal case into one event or actor. Future threads must preserve this hierarchy:
+
+1. **Gil's alleged originating private causal layer:** incomplete/frustrated performance of the 2008 asset/exploitation restructuring by an actor-specific seller/minority perimeter associated in different acts with Montelanza, S.L. and Molina-linked owners, followed by non-adherence and later acts/omissions.
+2. **Documented structural vulnerability:** individual asset transfers, divided titles, voluntary CEXP participation and unresolved seller/unit completion created fracture points.
+3. **Documented 2011 mechanism requiring legality review:** LPB's large coefficient was present but vote-excluded by attributed debt while debt recovery, administration and CEXP-maintenance decisions were approved.
+4. **Immediate documented 2012 trigger:** Bankia enforcement and scheduled auction.
+5. **Alleged amplification:** professional advice, the defective/contested Monterecco structure, Community/AC conduct and the parties' own decisions.
+6. **Later adoption/benefit:** each CAM/HNT/other downstream act requires its own knowledge, title, causation and benefit proof.
+
+The record does not yet prove the exact c.23% perimeter, seller-by-seller breach, collective intent, sole causation or criminal liability. Minority status, family association, non-adherence, later benefit and temporal sequence are not substitutes for actor-specific proof.
+
+## 6. Garrigues witness control
+
+Gil expressly authorises public naming of Garrigues and requests its testimony and records. Use:
+
+> **Gil Marer recalls that Garrigues advised the Monterecco route under the inherited operating conflict and Bankia execution/subasta pressure. He asks Garrigues to provide its complete evidence, including material favourable, adverse or corrective to his position. The present public record verifies Garrigues activity from 28 March 2012 and receipt in May 2012 of earlier Molina-linked non-adherence material; it does not yet prove the precise pre-1/6-Feb advice chronology.**
+
+Naming authorisation does not alter the evidence grade or automatically waive confidentiality over every document. Preserve the complete professional file; publish or file source bodies only after legal/confidentiality review.
+
+## 7. Mandatory pickup rule
+
+Any future thread touching the reserved declarant, Declaration 005, Pink, CEXP, keys, Community duties, the 2008 sale, the perimeter associated in specific acts with Montelanza, S.L. and Molina-linked owners, Garrigues, AEAT or the 2012 causal chain must read:
+
+1. Declarations 005–008;
+2. CR-058, CR-059 and CR-061;
+3. this register;
+4. `SUN_PARK_COMMUNITY_2012_GOOD_FAITH_FEES_AND_EVICTION_CORRECTION_GATE_17AUG2026.md`;
+5. `SUN_PARK_COMUNIDAD_ACTAS_AUTHORITY_PROVENANCE_REGISTER_2008_2022_17AUG2026.md`;
+6. `JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md`; and
+7. ME-047 and ME-065.
+
+The source Declaration 005 remains preserved. Corrections must be added visibly; they must not silently rewrite the original account.

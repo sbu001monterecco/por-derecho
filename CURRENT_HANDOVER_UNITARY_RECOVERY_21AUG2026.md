@@ -27,8 +27,8 @@ specie is unavailable.
 
 That whole-platform objective does not merge the claimants or duplicate loss.
 Always separate LPB/the estate, Aweswell, Matkator, CEXP, Pink Canary Services,
-Gil Marer, Patricia Dominguez and any other person with independently evidenced
-standing.
+Gil Marer, the reserved declarant from his personal/business perimeter and any
+other person with independently evidenced standing.
 
 ## Unitary chain
 
@@ -43,6 +43,16 @@ HNT/RICPE/MYND/income -> appeals/accountability/recovery`.
 For each node record exact legal person, right or asset, date, source status,
 actor knowledge and authority, act or omission, consequence or benefit,
 counterfactual, remedy, contrary evidence and unresolved defence.
+
+Gil's 22-August control adds a four-level causation hierarchy that must not be
+flattened: (1) his attributed originating theory of incomplete/frustrated 2008
+performance by a seller/minority perimeter associated, in specific acts, with
+Montelanza, S.L. and Molina-linked owners; (2) the documented structural
+vulnerability of divided titles, voluntary CEXP participation and unresolved
+seller/unit completion; (3) the contested 22-Jun-2011 debt/vote/authority matrix,
+kept distinct from 2-Feb-2011; and (4) Bankia enforcement and scheduled auction as
+the immediate documented 2012 trigger. None proves collective breach, common
+intent, sole causation or actor liability without the seller/finca/act/capacity map.
 
 ## Controlling corrections
 
@@ -77,10 +87,15 @@ counterfactual, remedy, contrary evidence and unresolved defence.
    not flatten them into one number.
 10. Judgment 163/2023 is a materially adverse first-instance culpable-insolvency
     judgment under appeal. It is neither final nor reversed.
-11. Preserve source class and speaker. Gil Marer's and Patricia Dominguez's
+11. Preserve source class and speaker. Gil Marer's and the reserved declarant's
     recollections and interpretations are separate unless jointly adopted or
-    independently proved. Identity-guard Patricia from the unrelated Haya
-    professional.
+    independently proved. That evidential rule does not imply general lack of
+    coordination. Any work touching either account, Pink, CEXP, keys, 2008/2011
+    causation or Garrigues must read **Declarations 005–008**, CR-058/CR-059/CR-061
+    and `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`.
+    Declaration 008 records Gil's self-attribution and supports attribution of his
+    current written text; it does not authenticate any voice;
+    his allegation about pressure and its causal effect remains uncorroborated.
 12. Keep plan/realisation, definitive creditor texts and
     notice/appeal/finality/suspension as separate liquidation tracks. Do not infer
     that a later liquidation instrument amended the operative creditor list.
@@ -90,6 +105,19 @@ counterfactual, remedy, contrary evidence and unresolved defence.
 14. In the RICPE/San Telmo line, keep the 2020 RICPE presentation and 2021 San
     Telmo event separate. Current evidence does not establish a direct AC-Enrique
     Guerra relationship or AC participation in that event.
+15. Declarations 007–008 record Gil's legal position that the 6-Feb-2012
+    LPB–Monterecco contract should have been treated as wholly or partly void
+    *ab initio* and that only CEXP could hold or confer the owners-derived
+    whole-hotel mandate. Gil now expressly names Garrigues as the adviser he
+    remembers, authorises public naming and requests its testimony/file. This is
+    not documented pre-contract advice, an adjudicated nullity or presently proved
+    exclusivity: the first currently verified Garrigues activity is 28-Mar-2012.
+    Read CR-055/CR-059/CR-061 together and preserve the 1-Feb notice, real
+    operation/registration, adverse rulings and open advice/authority record.
+16. Garrigues naming authority is not indiscriminate waiver or publication
+    authority for professional source bodies. Preserve the full file, distinguish
+    operator-structure advice from execution/preconcurso/concurso advice, and apply
+    confidentiality/privilege and third-party-data review before disclosure.
 
 ## Repository and website findings
 
