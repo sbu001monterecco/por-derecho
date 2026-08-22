@@ -153,6 +153,19 @@
   else if (anchor && position === 'after') anchor.insertAdjacentElement('afterend', section);
   else main.append(section);
 
+  if (showEmailGraphics && position === 'after') {
+    const pinFeaturedSection = () => {
+      const opening = document.querySelector('main > section:first-of-type');
+      if (opening && opening.nextElementSibling !== section) {
+        opening.insertAdjacentElement('afterend', section);
+      }
+    };
+    const placementGuard = new MutationObserver(pinFeaturedSection);
+    placementGuard.observe(main, { childList: true });
+    window.addEventListener('load', pinFeaturedSection, { once: true });
+    pinFeaturedSection();
+  }
+
   const component = document.createElement('script');
   component.src = new URL('source-of-funds-notice-20260820.js?v=20260822d', base).href;
   component.dataset.sourceFundsComponent = '20260820';
