@@ -1,0 +1,38 @@
+{
+  "publication_id": "SUN-PARK-262-FINCA-JOURNEY-2008-PRESENT-20260822",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "DRAFT",
+  "control_date": "2026-08-22",
+  "control_marker": "sun-park-262-finca-journey-2008-present-20260822",
+  "expected_routes": {
+    "es": [
+      "es/fincas-262-recorrido-2008-hoy/index.html"
+    ],
+    "en": [
+      "en/262-properties-journey-2008-present/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "research/sun-park-262-fincas/sun-park-262-fincas.csv",
+    "research/sun-park-262-fincas/acquisition-overlay.csv",
+    "research/sun-park-262-fincas/finca-journey-evidence-v1.json",
+    "assets/data/sun-park-262-finca-journey-v1.json",
+    "scripts/build_262_finca_journey.py",
+    "scripts/validate_262_finca_journey.py"
+  ],
+  "publication_safety": {
+    "all_262_physical_rows_visible": true,
+    "complex_context_not_promoted_to_property_event": true,
+    "historical_gesvalt_labels_not_current_title": true,
+    "working_sheet_categories_not_title_or_payment_proof": true,
+    "party_filings_labelled_as_party_allegations": true,
+    "private_or_privileged_material_excluded": true,
+    "current_title_payment_fraud_intent_not_stated_without_primary_source": true
+  },
+  "release_gates": [
+    "Run scripts/build_262_finca_journey.py --check and scripts/validate_262_finca_journey.py on the exact PR head.",
+    "Pass the dedicated source/render workflow and the repository-wide publication-integrity gate.",
+    "Review ES/EN parity, priority-finca safeguards, 8557 crosswalk conflict and stale-map-route correction.",
+    "Obtain explicit approval before merge; do not represent the routes as deployed or live before a post-main GitHub Pages read-back."
+  ]
+}
