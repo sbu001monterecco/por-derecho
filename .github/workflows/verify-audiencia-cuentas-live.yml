@@ -43,7 +43,25 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
+      - name: Verify the pull-request source
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 --directory . >/tmp/por-derecho-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid' EXIT
+          for attempt in {1..20}; do
+            curl --fail --silent http://127.0.0.1:4173/robots.txt >/dev/null && break
+            sleep 0.2
+          done
+          curl --fail --silent --show-error http://127.0.0.1:4173/robots.txt >/dev/null
+          python scripts/verify_audiencia_cuentas_live.py \
+            --base-url http://127.0.0.1:4173 \
+            --attempts 1 \
+            --interval 1 \
+            --timeout 10 \
+            --output artifacts/audiencia-cuentas-source/verification.json
       - name: Poll public GitHub Pages publication
+        if: github.event_name != 'pull_request'
         run: |
           python scripts/verify_audiencia_cuentas_live.py \
             --attempts 36 \
@@ -51,11 +69,11 @@ jobs:
             --timeout 20 \
             --output artifacts/audiencia-cuentas-live/verification.json
       - name: Show verification evidence
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         run: |
           test ! -f artifacts/audiencia-cuentas-live/verification.json || cat artifacts/audiencia-cuentas-live/verification.json
       - name: Upload verification evidence
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: audiencia-cuentas-live-verification

@@ -9,6 +9,17 @@ on:
       - 'es/playa-blanca-concepto-hotel-servicios/**'
       - 'assets/playa-blanca-*'
       - 'assets/site.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-playa-blanca-hotel-concept-pr-readback.yml'
+      - 'publication-manifests/playa-blanca-hotel-services-concept-20260820.json'
+      - 'en/playa-blanca-hotel-services-concept/**'
+      - 'es/playa-blanca-concepto-hotel-servicios/**'
+      - 'assets/playa-blanca-*'
+      - 'assets/site.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
   workflow_dispatch:
 
 permissions:
@@ -26,8 +37,47 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      - name: Verify the pull-request source contract
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          checks = {
+              'en/playa-blanca-hotel-services-concept/index.html': [
+                  'A new hotel and local-services concept for a place we continue to believe in.',
+                  'Our confidence in Playa Blanca was not taken with it.',
+              ],
+              'es/playa-blanca-concepto-hotel-servicios/index.html': [
+                  'Un nuevo concepto hotelero y de servicios locales para un lugar en el que seguimos creyendo.',
+                  'Nuestra confianza en Playa Blanca sigue intacta.',
+              ],
+              'assets/playa-blanca-concept-home-20260820.js': [
+                  'pb-home-feature',
+                  "route: 'playa-blanca-hotel-services-concept/'",
+                  "route: 'playa-blanca-concepto-hotel-servicios/'",
+              ],
+              'assets/site.js': ['site-pre-intervencion-highlight-20260820.js'],
+              'assets/site-pre-intervencion-highlight-20260820.js': [
+                  'playa-blanca-concept-home-20260820.js',
+                  'data-playa-blanca-concept-loader',
+              ],
+              'assets/playa-blanca-concept.css': ['.pb-home-feature', '.pb-confidence-quote', '.pb-status-table'],
+              'assets/playa-blanca-return-poster.svg': ['PLAYA BLANCA', 'Playa Blanca — a new hotel destination'],
+          }
+          errors = []
+          for path, markers in checks.items():
+              text = Path(path).read_text(encoding='utf-8')
+              missing = [marker for marker in markers if marker not in text]
+              if missing:
+                  errors.append(f'{path}: missing {missing}')
+          if errors:
+              raise SystemExit('\n'.join(errors))
+          print('PLAYA BLANCA CONCEPT SOURCE PREFLIGHT: PASS')
+          PY
 
       - name: Verify public concept pages and homepage feature assets
+        if: github.event_name != 'pull_request'
         env:
           BASE_URL: https://sbu001monterecco.github.io/por-derecho/
         run: |
@@ -81,6 +131,13 @@ jobs:
               {
                   'kind': 'site_loader',
                   'path': 'assets/site.js',
+                  'markers': [
+                      'site-pre-intervencion-highlight-20260820.js',
+                  ],
+              },
+              {
+                  'kind': 'pre_highlight_loader',
+                  'path': 'assets/site-pre-intervencion-highlight-20260820.js',
                   'markers': [
                       'playa-blanca-concept-home-20260820.js',
                       'data-playa-blanca-concept-loader',
@@ -204,11 +261,11 @@ jobs:
           PY
 
       - name: Show live verification evidence
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         run: cat artifacts/playa-blanca-concept-live-readback.json || true
 
       - name: Upload live verification evidence
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: playa-blanca-concept-live-readback
