@@ -98,7 +98,11 @@
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
       "identity_basis": "Existing website-approved repository asset and canonical filename; no new facial identification performed.",
       "alt_en": "Francisco Mario Matos Matas",
-      "alt_es": "Francisco Mario Matos Matas"
+      "alt_es": "Francisco Mario Matos Matas",
+      "approved_contexts": [
+        "Community authority / actor register",
+        "2011–2022 minutes dossier"
+      ]
     },
     "place.sun-park-mynd-yaiza.aerial-primary": {
       "subject_type": "place",
