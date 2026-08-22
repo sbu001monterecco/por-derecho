@@ -4,7 +4,7 @@
   if (!document.querySelector('link[data-source-funds-css]')) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = new URL('source-of-funds-notice-20260820.css?v=20260822c', base).href;
+    link.href = new URL('source-of-funds-notice-20260820.css?v=20260822d', base).href;
     link.dataset.sourceFundsCss = '20260820';
     document.head.append(link);
   }
