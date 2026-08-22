@@ -57,6 +57,7 @@
     ['/en/san-telmo-ricpe-sun-park/', ['compact', null, 'append']]
   ]);
   const match = [...exact.entries()].find(([suffix]) => path.endsWith(suffix));
+  const placeSourceFundsNotice = () => {
   if (!match || document.querySelector('[data-source-of-funds-notice]')) return;
 
   const [variant, selector, position, showEmailGraphics = false] = match[1];
@@ -156,6 +157,12 @@
   component.src = new URL('source-of-funds-notice-20260820.js?v=20260822d', base).href;
   component.dataset.sourceFundsComponent = '20260820';
   document.head.append(component);
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', placeSourceFundsNotice, { once: true });
+  } else {
+    placeSourceFundsNotice();
+  }
 })();
 
 /* AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260820 */
