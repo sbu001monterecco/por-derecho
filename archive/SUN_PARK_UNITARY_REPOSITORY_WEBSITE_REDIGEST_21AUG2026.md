@@ -233,6 +233,25 @@ Later adjudication/dacion, mortgage cancellation and termination of Execution
 The record must show which exact legal person obtained credit recognition,
 possession, title, cancellation, income and each resulting advantage.
 
+### 10A. 4-February 2022 Community ACTA / LPB / Matkator accounting-and-reliance control
+
+A controlled seven-page 4-February Owners’ Community ACTA source is now located as
+a native Gmail-source attachment, not as the diligenced minute-book original. It
+records 20.993% participation, an LPB works-assessment entry of EUR 3,260,416.81,
+a Matkator entry of EUR 34,402.00, and a separate statement that CAM would carry
+out conversion works at its own cost. This creates a finite reconciliation issue,
+not a finding: identify the notice/vote/title basis; project/budget; Community
+ledger, invoices, certificates and payments; any LPB-credit treatment; and actual
+works/value recipient.
+
+The 25-January and 25-April AC reports say the purchaser would assume Community
+dues recognised as contingent credits in the definitive creditor lists, but do
+not name the 4-February ACTA or its figures. The 26-January Autos predate the
+ACTA; the 14-February LAJ act is not a judicial decision on it. No located source
+establishes ACTA filing/receipt/reliance by the AC, Judge or Court. Do not infer
+knowledge, omission, coordination or crime from this sequence. The controlling
+detail is `archive/SUN_PARK_ACTA_2022_LPB_MATKATOR_AC_JUDICIAL_NEXUS_CONTROL_22AUG2026.md`.
+
 ### 11. RICPE, HNT, MYND, public support and operating income
 
 Investment, works, corporate succession/segregation, tourism records, incentives,
