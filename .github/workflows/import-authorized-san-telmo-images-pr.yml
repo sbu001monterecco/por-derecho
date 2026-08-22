@@ -1,0 +1,45 @@
+name: Import authorized San Telmo assets on PR
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths:
+      - ".asset-import/**"
+      - "scripts/import_authorized_san_telmo_assets.py"
+      - ".github/workflows/import-authorized-san-telmo-images-pr.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import-authorized-assets:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out pull-request head branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Decode and verify user-authorized assets
+        run: python scripts/import_authorized_san_telmo_assets.py
+
+      - name: Commit imported assets and consume staging data
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -f .asset-import/trigger.txt ]]; then
+            echo "Trigger already consumed; no commit required."
+            exit 0
+          fi
+          git config user.name "por-derecho-asset-bot"
+          git config user.email "sbu001@monterecco.com"
+          git add assets/actors/eduardo-sanchez-san-telmo.webp
+          git add assets/places/sun-park-mynd-yaiza--user-authorized-20260819.jpg
+          git add assets/composites/san-telmo-ricpe-sun-park-stamp-v1.svg
+          git rm -f .asset-import/eduardo.*.b64 .asset-import/sunpark.*.b64 .asset-import/trigger.txt
+          git commit -m "Import authorized Eduardo Sánchez and Sun Park assets"
+          git push origin HEAD:${{ github.head_ref }}
