@@ -78,6 +78,15 @@ def main() -> None:
         ],
     )
 
+    require(
+        ROOT / "scripts/verify_san_telmo_source_stamp_live.py",
+        [
+            "site-pre-intervencion-highlight-20260820.js",
+            "site-base-20260819.js",
+            "BASE_SITE_MARKERS",
+        ],
+    )
+
     pages = {
         "en/evidence-pwc-sun-park-meeting-21-april-2016/index.html": [
             "Redacted visual exhibit",

@@ -46,7 +46,8 @@
     "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.webp",
     "assets/evidence/ac-email-21-april-2016/AC2016-EMAIL-001-PUBLIC.md",
     "assets/sun-park-junta-pwc-warning-20260822.js",
-    "scripts/validate_ac2016_email_visual.py"
+    "scripts/validate_ac2016_email_visual.py",
+    "scripts/verify_san_telmo_source_stamp_live.py"
   ],
   "source_controls": {
     "email_status": "2026_FORWARD_REPRODUCING_VISIBLE_2016_CHAIN_NATIVE_2016_MESSAGE_PENDING",
@@ -54,6 +55,10 @@
     "administrator_received_five_pdfs_before_reply": "NOT_ESTABLISHED",
     "legacy_carrier_hash_reconciled": false,
     "native_2016_authentication_established": false
+  },
+  "ci_continuity_fix": {
+    "issue": "The public-edge verifier still expected ricpe-identity-correction-20260815.js directly in site.js after the loader moved behind site-pre-intervencion-highlight-20260820.js and site-base-20260819.js.",
+    "resolution": "Follow and verify the current three-stage loader chain before checking the RICPE identity loader."
   },
   "controlling_propositions": [
     "The reply says attendance itself required no authority.",

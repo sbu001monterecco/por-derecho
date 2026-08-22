@@ -25,6 +25,8 @@ TIMEOUT_SECONDS = 25
 SOURCE_ASSET = "/assets/san-telmo-source-stamp-20260819.js"
 LOADER_ASSET = "/assets/ricpe-identity-correction-20260815.js"
 SITE_ASSET = "/assets/site.js"
+PRIOR_SITE_ASSET = "/assets/site-pre-intervencion-highlight-20260820.js"
+BASE_SITE_ASSET = "/assets/site-base-20260819.js"
 BORJA_ASSET = "/assets/actors/francisco-de-borja-rodriguez-batllori.jpg"
 SUN_PARK_ASSET = "/assets/sun-park-mynd-yaiza.jpg"
 
@@ -83,7 +85,9 @@ LOADER_MARKERS = [
     "san-telmo-source-stamp-20260819.js?v=20260819a",
 ]
 
-SITE_MARKERS = ["ricpe-identity-correction-20260815.js"]
+SITE_MARKERS = ["site-pre-intervencion-highlight-20260820.js"]
+PRIOR_SITE_MARKERS = ["site-base-20260819.js"]
+BASE_SITE_MARKERS = ["ricpe-identity-correction-20260815.js"]
 
 
 @dataclass
@@ -196,6 +200,16 @@ def verify_once() -> dict[str, object]:
         raise AssertionError(f"site loader: HTTP {site.status}")
     assert_markers("site loader", site.text, SITE_MARKERS)
 
+    prior_site = request(BASE + PRIOR_SITE_ASSET, cache_bust=True)
+    if prior_site.status != 200:
+        raise AssertionError(f"prior site loader: HTTP {prior_site.status}")
+    assert_markers("prior site loader", prior_site.text, PRIOR_SITE_MARKERS)
+
+    base_site = request(BASE + BASE_SITE_ASSET, cache_bust=True)
+    if base_site.status != 200:
+        raise AssertionError(f"base site loader: HTTP {base_site.status}")
+    assert_markers("base site loader", base_site.text, BASE_SITE_MARKERS)
+
     result = {
         "verified_at": datetime.now(timezone.utc).isoformat(),
         "base": BASE,
@@ -215,6 +229,19 @@ def verify_once() -> dict[str, object]:
             "status": site.status,
             "content_type": site.content_type,
             "bytes": len(site.body),
+            "markers": SITE_MARKERS,
+        },
+        "prior_site_loader": {
+            "status": prior_site.status,
+            "content_type": prior_site.content_type,
+            "bytes": len(prior_site.body),
+            "markers": PRIOR_SITE_MARKERS,
+        },
+        "base_site_loader": {
+            "status": base_site.status,
+            "content_type": base_site.content_type,
+            "bytes": len(base_site.body),
+            "markers": BASE_SITE_MARKERS,
         },
         "borja": verify_local_asset(BORJA_ASSET, "image/"),
         "sun_park": verify_local_asset(SUN_PARK_ASSET, "image/"),
