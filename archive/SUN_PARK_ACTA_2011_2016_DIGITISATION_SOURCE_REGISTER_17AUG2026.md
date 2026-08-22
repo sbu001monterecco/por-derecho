@@ -42,6 +42,18 @@ This is **digitisation by source indexing + readable text recovery + evidential 
 
 **Digitisation action required:** recover the full 26-Apr-2016 notice/agenda package, all attachments/images from the 15-Apr sequence, and ACTA/minutes produced after the 26-Apr meeting; link each invitation→attendance→meeting→minute→post-meeting communication as one event chain.
 
+### B2. 21-Apr-2016 AC refusal to authorise an LPB/Luchy PwC engagement
+
+**Gmail forwarded copy:** `1a0294bdf7a986f8` — original quoted subject `Re: CONVOCATORIA SUN PARK` — original quoted reply dated 21-Apr-2016 at 09:47; forwarded to the connected mailbox on 22-Aug-2026.
+
+**Dedicated source record:** `archive/BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md`.
+
+Borja Rodríguez-Batllori states that Gil did not require AC permission merely to attend the 26-Apr Junta, but asserts that attributed unpaid Community fees prevented voting. He expressly refuses to authorise contracting the copied PwC lawyers on the information then supplied, citing lack of treasury, possible estate credits, no demonstrated need and no proposed-fee information; he asks Carlos Saavedra, Miguel Hernández and Elena Santos not to provide services to Luchy without his express consent. He also asserts the prior status of his own court-approved estate-credit fees.
+
+**Controlled consequence:** this directly joins the pre-meeting debt/voting issue to the proposed PwC engagement and gives the copied PwC professionals contemporaneous notice of the AC's position. It does not prove that later PwC attendance breached the instruction: the signed ACTA records PwC professionals representing named private owners, and PwC billing uses Matkator client terminology for the 26-Apr service. The actual engagement, payer, scope and any later AC consent remain open.
+
+**Attachment control:** the forwarded message's three unique PNGs are inline signature/rendering assets only. The substantive document mentioned in the earlier quoted email is absent from this forwarded copy and remains a retrieval target.
+
 ### C. 2016 accounting / source-demand communications
 
 **Gmail thread:** `154291cb9c1dab86`, especially messages `154304f5105cf3a1`, `15432cf387d0942c`, `15432d8b5ed87cb6`.  
@@ -167,12 +179,13 @@ Do not describe identified Gmail attachments as `vault-preserved` merely because
 2. Locate the Feb-2011 meeting/ACTA said in the April-2016 email to be the presidency threshold.
 3. Locate original notice/agenda for the 22-Jun-2011 meeting and ownership/coefficient schedule.
 4. Fully extract both 19-Nov-2015 ACTA variants and determine why two versions exist.
-5. Recover the complete 26-Apr-2016 convocation/agenda/notification package from the 15-Apr emails/images.
-6. Locate and extract the signed ACTA of 26-Apr-2016 and any subsequent certification/debt schedule.
-7. Extract `Análisis Gastos de la Cdad Explotación v3.docx` and `Propuesta de Deuda Comunidad - Junta Abril 2016 (2).xlsx`.
-8. Locate the final June-2016 burofax to the AC, exact sender/signatory, content, transmission receipt and delivery proof.
-9. Recover direct AC response(s), meeting confirmation, meeting attendance/notes and post-meeting follow-up.
-10. Crosswalk all identified ACTAS against later 2018/2019/2022 ACTAS/authority assertions and current office-holder chain.
+5. Recover the complete 26-Apr-2016 convocation/agenda/notification package from the 15-Apr emails/images, including the substantive document mentioned in Gil's 21-Apr 00:21 email but absent from Gmail forward `1a0294bdf7a986f8`.
+6. Locate the native/original 21-Apr-2016 Borja email with complete RFC 822 headers and determine whether any later AC consent or refusal followed fuller PwC scope/fee disclosure.
+7. Locate and extract the signed ACTA of 26-Apr-2016 and any subsequent certification/debt schedule.
+8. Extract `Análisis Gastos de la Cdad Explotación v3.docx` and `Propuesta de Deuda Comunidad - Junta Abril 2016 (2).xlsx`.
+9. Locate the final June-2016 burofax to the AC, exact sender/signatory, content, transmission receipt and delivery proof.
+10. Recover direct AC response(s), meeting confirmation, meeting attendance/notes and post-meeting follow-up.
+11. Crosswalk all identified ACTAS against later 2018/2019/2022 ACTAS/authority assertions and current office-holder chain.
 
 ## 7. Privilege/publication control
 
