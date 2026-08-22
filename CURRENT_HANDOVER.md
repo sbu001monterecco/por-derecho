@@ -12,6 +12,17 @@ the current cross-track chain, mission lock, canonical route ownership and stage
 implementation sequence. Specialist ledgers and primary evidence continue to
 control their detailed propositions.
 
+## Mandatory external-email control — 22 August 2026
+
+Before drafting any substantive external email, preservation request, alert,
+professional outreach or meeting request, read and apply
+`OUTBOUND_EMAIL_CAPACITY_ALERTADOR_AND_FUNDS_RULE_22AUG2026.md`. It makes the
+directly-affected/interested-party capacity, the conditional Ley 2/2023
+informant/alertador formulation, the LPB authority limitation, the RIC/RIC Private
+Equity/regional-incentive/EU-FEDER distinctions, visual/webinar limits and the
+pre-send gate mandatory. It does not authorise a send or replace a
+recipient-specific evidence/authority check.
+
 Also apply `CURRENT_HANDOVER_DP1956_DP1901_JUDICIAL_ROUTES_21AUG2026.md` to all
 DP 1956/DP 1901/judicial-route work. The number 24 in the 18 June 2026 complaint
 chain is a daily Decanato reference, not `Control 24`, `DP 24`, a cause, a
