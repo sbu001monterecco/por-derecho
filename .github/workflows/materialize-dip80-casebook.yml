@@ -1,0 +1,192 @@
+name: Materialise DIP 80 living casebook
+
+on:
+  push:
+    branches:
+      - agent/dip80-living-casebook-final
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialise:
+    if: github.actor != 'github-actions[bot]' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Preserve current low-discovery ICALPA entry pages
+        run: |
+          mkdir -p /tmp/dip80-preserve/es /tmp/dip80-preserve/en
+          cp es/icalpa-recorrido-denuncia-deontologica/index.html /tmp/dip80-preserve/es/index.html
+          cp en/icalpa-complaint-roadmap/index.html /tmp/dip80-preserve/en/index.html
+
+      - name: Reassemble and expand the validated publication payload
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64
+          import binascii
+          import io
+          import re
+          import tarfile
+
+          parts = sorted(Path('.dip80-materialize').glob('part-*.b64'))
+          if len(parts) != 5:
+              raise SystemExit(f'Expected 5 payload parts, found {len(parts)}')
+
+          cleaned = []
+          for part in parts:
+              raw = part.read_text(encoding='utf-8-sig')
+              clean = re.sub(r'[^A-Za-z0-9+/=]', '', raw)
+              if not clean:
+                  raise SystemExit(f'Empty payload part: {part}')
+              cleaned.append(clean)
+              print(
+                  f'{part.name}: raw={len(raw)} clean={len(clean)} '
+                  f'mod4={len(clean) % 4} padding={clean.count("=")} '
+                  f'head={clean[:8]} tail={clean[-8:]}'
+              )
+
+          def decode_text(text: str) -> bytes:
+              text = text + ('=' * ((-len(text)) % 4))
+              return base64.b64decode(text, validate=False)
+
+          candidates = []
+
+          # Model A: one continuous base64 stream split at arbitrary boundaries.
+          for label, joined in (
+              ('continuous-preserve', ''.join(cleaned)),
+              ('continuous-strip-boundary-padding', ''.join(part.rstrip('=') for part in cleaned)),
+              ('continuous-repad', ''.join(part.replace('=', '') for part in cleaned)),
+          ):
+              try:
+                  candidates.append((label, decode_text(joined)))
+              except (binascii.Error, ValueError) as exc:
+                  print(f'{label}: base64 decode failed: {exc}')
+
+          # Model B: independently encoded binary fragments that must be decoded first.
+          try:
+              candidates.append((
+                  'independent-fragments',
+                  b''.join(decode_text(part) for part in cleaned),
+              ))
+          except (binascii.Error, ValueError) as exc:
+              print(f'independent-fragments: base64 decode failed: {exc}')
+
+          required = {
+              'es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html',
+              'en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html',
+          }
+          failures = []
+          selected = None
+
+          for label, payload in candidates:
+              try:
+                  with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
+                      names = {name.lstrip('./') for name in archive.getnames()}
+                      missing = sorted(required - names)
+                      if missing:
+                          raise ValueError(f'missing required archive entries: {missing}')
+                      for member in archive.getmembers():
+                          target = (Path('.') / member.name).resolve()
+                          if Path('.').resolve() not in (target, *target.parents):
+                              raise ValueError(f'unsafe archive member: {member.name}')
+                      archive.extractall('.')
+                      selected = (label, len(payload), len(names))
+                      break
+              except Exception as exc:
+                  failures.append(f'{label}: {type(exc).__name__}: {exc}')
+
+          if selected is None:
+              print('Payload reconstruction attempts:')
+              for failure in failures:
+                  print(' -', failure)
+              raise SystemExit('No reconstruction candidate produced the validated DIP 80 tar archive')
+
+          print(
+              f'Selected reconstruction={selected[0]} '
+              f'archive_bytes={selected[1]} archive_entries={selected[2]}'
+          )
+          PY
+
+      - name: Restore current ICALPA pages and add the low-discovery casebook entry
+        run: |
+          cp /tmp/dip80-preserve/es/index.html es/icalpa-recorrido-denuncia-deontologica/index.html
+          cp /tmp/dip80-preserve/en/index.html en/icalpa-complaint-roadmap/index.html
+          python - <<'PY'
+          from pathlib import Path
+          entries = {
+              Path('es/icalpa-recorrido-denuncia-deontologica/index.html'): (
+                  '<section class="section" id="fuentes">',
+                  '<section class="section alt" id="dip80-casebook-entry"><div class="shell"><div class="section-head"><div><p class="kicker">Caso práctico · Open Kimono 👘</p><h2>DIP 80/2026 — Expediente abierto.</h2></div><p>Manual vivo, cronología inversa, árbol de decisiones, atlas probatorio, protección urgente, modelos y aula. Sin presunción de culpabilidad; toda ruta consecuencial llega a una puerta humana.</p></div><div class="rm-boundary"><p><strong>Método abierto. Expediente protegido.</strong> <a href="../icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/">Abrir el manual vivo DIP 80/2026 →</a></p></div></div></section>'
+              ),
+              Path('en/icalpa-complaint-roadmap/index.html'): (
+                  '<section class="section" id="sources">',
+                  '<section class="section alt" id="dip80-casebook-entry"><div class="shell"><div class="section-head"><div><p class="kicker">Practical case · Open Kimono 👘</p><h2>DIP 80/2026 — Open file.</h2></div><p>Living casebook, reverse chronology, decision tree, evidence atlas, urgent protection, models and classroom. No presumption of guilt; every consequential route reaches a human gate.</p></div><div class="rm-boundary"><p><strong>Open method. Protected file.</strong> <a href="../icalpa-rapporteur-workbench/dip-80-2026/living-casebook/">Open the DIP 80/2026 living casebook →</a></p></div></div></section>'
+              ),
+          }
+          for path, (marker, block) in entries.items():
+              text = path.read_text(encoding='utf-8')
+              if 'id="dip80-casebook-entry"' not in text:
+                  if marker not in text:
+                      raise SystemExit(f'Entry marker missing in {path}')
+                  path.write_text(text.replace(marker, block + marker, 1), encoding='utf-8')
+          PY
+
+      - name: Run the case-specific hard acceptance gate
+        run: |
+          if [ -f scripts/validate-dip80-casebook.py ]; then
+            python scripts/validate-dip80-casebook.py
+          elif [ -f scripts/validate_dip80_open_kimono.py ]; then
+            python scripts/validate_dip80_open_kimono.py
+          else
+            echo 'No case-specific validator found' >&2
+            exit 1
+          fi
+          if [ -f assets/icalpa-dip80-casebook.js ]; then node --check assets/icalpa-dip80-casebook.js; fi
+          if [ -f assets/dip80-open-kimono.js ]; then node --check assets/dip80-open-kimono.js; fi
+          if [ -f assets/icalpa-ponente-dashboard.js ]; then node --check assets/icalpa-ponente-dashboard.js; fi
+          python - <<'PY'
+          from pathlib import Path
+          es = Path('es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo')
+          en = Path('en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook')
+          routes = [
+              es/'index.html', es/'cronologia/index.html', es/'arbol-decision/index.html',
+              es/'atlas-prueba/index.html', es/'proteccion-urgente/index.html',
+              es/'modelos/index.html', es/'aula/index.html',
+              en/'index.html', en/'chronology/index.html', en/'decision-tree/index.html',
+              en/'evidence-atlas/index.html', en/'urgent-protection/index.html',
+              en/'models/index.html', en/'classroom/index.html',
+          ]
+          missing = [str(path) for path in routes if not path.exists()]
+          if missing:
+              raise SystemExit('Missing routes: ' + ', '.join(missing))
+          for path in routes:
+              text = path.read_text(encoding='utf-8')
+              if 'noindex,follow,noarchive' not in text:
+                  raise SystemExit(f'noindex missing: {path}')
+          print('Route gate PASS: 14/14 dedicated casebook pages')
+          PY
+
+      - name: Remove branch-only transfer machinery
+        run: |
+          rm -rf .dip80-materialize
+          rm -f .github/workflows/materialize-dip80-casebook.yml
+
+      - name: Commit the actual source tree
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --stat
+          git commit -m 'Materialize DIP 80 open-kimono living casebook'
+          TARGET_BRANCH="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          git push origin HEAD:"${TARGET_BRANCH}"

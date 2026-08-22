@@ -1,0 +1,38 @@
+name: Diagnose DIP 80 payload inventory
+
+on:
+  push:
+    branches:
+      - agent/dip80-living-casebook-final
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+      - name: Decode and list casebook paths
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64, io, re, tarfile
+          parts = sorted(Path('.dip80-materialize').glob('part-*.b64'))
+          cleaned = [re.sub(r'[^A-Za-z0-9+/=]', '', p.read_text(encoding='utf-8-sig')) for p in parts]
+          joined = ''.join(part.replace('=', '') for part in cleaned)
+          joined += '=' * ((-len(joined)) % 4)
+          payload = base64.b64decode(joined, validate=False)
+          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as archive:
+              names = [name.lstrip('./') for name in archive.getnames()]
+          print(f'parts={len(parts)} payload_bytes={len(payload)} archive_entries={len(names)}')
+          for name in names:
+              if any(token in name for token in ('dip-80-2026', 'dip80', 'ponente', 'rapporteur', 'casebook', 'manual-vivo')):
+                  print(name)
+          PY
