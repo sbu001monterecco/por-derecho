@@ -88,6 +88,12 @@ The current repository and website record supports a nuanced position:
 - the record also does not support a simplistic statement that an empty hotel had been totally abandoned;
 - CEXP, Pink/Monterecco, LPB, Matkator, the owners’ Community and third-party owners remain distinct.
 
+### 22 August 2026 controlling keys correction
+
+Gil Marer expressly corrects Declaration 005 and states that Pink never had “the keys” and had no authority to deliver them to the insolvency administrator, the owners’ Community or anyone else. The presently identified 28-May-2012 key event is attributed by Gil to his act as **President of CEXP**, involving CEXP maintenance copies, not an act or capacity of Pink.
+
+This is direct first-person corrective evidence, controlled by Declaration 006 and the earlier JV1260 CEXP capacity clarification. Any different key event requires its own date, key schedule, zone/unit, holder and authority evidence. Do not infer Pink possession or authority from operation, registration, common personnel or Gil’s roles in other entities.
+
 Tax attribution must therefore be period-specific and function-specific.
 
 ## 7. Old evidence versus supervening evidence
