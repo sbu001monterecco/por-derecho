@@ -31,18 +31,18 @@
   const exact = new Map([
     ['/es/', ['full', '#historia-reconstruida', 'after']],
     ['/en/', ['full', null, 'append']],
-    ['/es/ric-private-equity-sun-park/', ['full', '#respuesta', 'before', true]],
-    ['/en/ric-private-equity-sun-park/', ['full', '#response', 'before', true]],
+    ['/es/ric-private-equity-sun-park/', ['full', 'main > section:first-of-type', 'after', true]],
+    ['/en/ric-private-equity-sun-park/', ['full', 'main > section:first-of-type', 'after', true]],
     ['/es/mismo-hotel-multiples-vidas-financieras/', ['full', null, 'append']],
     ['/en/same-hotel-multiple-financial-lives/', ['full', null, 'append']],
-    ['/es/acosta-matos-perimetro/', ['full', null, 'append', true]],
-    ['/en/acosta-matos-perimeter/', ['full', null, 'append', true]],
+    ['/es/acosta-matos-perimetro/', ['full', 'main > section:first-of-type', 'after', true]],
+    ['/en/acosta-matos-perimeter/', ['full', 'main > section:first-of-type', 'after', true]],
     ['/es/objetivos-recuperacion-restitucion/', ['full', '#vias', 'before']],
     ['/en/recovery-restitution-objectives/', ['full', null, 'append']],
-    ['/es/cadena-instrumentalizacion-ric-fondos-incentivos/', ['full', null, 'append', true]],
-    ['/en/institutionalisation-chain-ric-eu-incentives/', ['full', null, 'append', true]],
-    ['/es/ricpe-responsabilidad-documental/', ['compact', null, 'append', true]],
-    ['/en/ricpe-documentary-accountability/', ['compact', null, 'append', true]],
+    ['/es/cadena-instrumentalizacion-ric-fondos-incentivos/', ['full', 'main > section:first-of-type', 'after', true]],
+    ['/en/institutionalisation-chain-ric-eu-incentives/', ['full', 'main > section:first-of-type', 'after', true]],
+    ['/es/ricpe-responsabilidad-documental/', ['full', 'main > section:first-of-type', 'after', true]],
+    ['/en/ricpe-documentary-accountability/', ['full', 'main > section:first-of-type', 'after', true]],
     ['/es/pwc-canarias-carlos-saavedra-sun-park/', ['compact', null, 'append']],
     ['/en/pwc-canarias-carlos-saavedra-sun-park/', ['compact', null, 'append']],
     ['/es/rsm/nnr4-1025c2f66/', ['compact', null, 'append']],
@@ -62,6 +62,7 @@
   const [variant, selector, position, showEmailGraphics = false] = match[1];
   const section = document.createElement('section');
   section.className = 'section source-funds-notice-section';
+  if (showEmailGraphics) section.classList.add('source-funds-notice-section--featured');
   section.setAttribute('aria-label', document.documentElement.lang === 'en'
     ? 'Source of funds and professional services notice'
     : 'Aviso sobre procedencia de fondos y servicios profesionales');
@@ -100,6 +101,23 @@
             caption: 'Punto de conocimiento profesional · 2016'
           }
         ];
+    const intro = document.createElement('header');
+    intro.className = 'source-funds-email-graphics-intro';
+    const introKicker = document.createElement('p');
+    introKicker.className = 'source-funds-email-graphics-intro__kicker';
+    introKicker.textContent = isEnglish
+      ? 'Documented professional traceability checkpoint'
+      : 'Punto documentado de trazabilidad profesional';
+    const introTitle = document.createElement('h2');
+    introTitle.textContent = isEnglish
+      ? 'Two documentary graphics. One verification question.'
+      : 'Dos gráficos documentales. Una cuestión de verificación.';
+    const introLead = document.createElement('p');
+    introLead.textContent = isEnglish
+      ? 'Examine the professional, hotel and funding perimeter before acting. Select either source-controlled graphic, then read the preservation notice immediately below.'
+      : 'Examine el perímetro profesional, hotelero y financiero antes de actuar. Seleccione cualquiera de los gráficos de fuente controlada y lea después el aviso de preservación situado inmediatamente debajo.';
+    intro.append(introKicker, introTitle, introLead);
+
     const graphics = document.createElement('div');
     graphics.className = 'source-funds-email-graphics';
     graphics.dataset.emailGraphics = '20260822';
@@ -111,14 +129,17 @@
       const image = document.createElement('img');
       image.src = new URL(item.src, base).href;
       image.alt = item.alt;
-      image.loading = 'lazy';
+      image.width = 1600;
+      image.height = 1000;
+      image.loading = 'eager';
+      image.fetchPriority = 'high';
       image.decoding = 'async';
       const caption = document.createElement('span');
       caption.textContent = item.caption;
       link.append(image, caption);
       graphics.append(link);
     });
-    shell.append(graphics);
+    shell.append(intro, graphics);
   }
 
   shell.append(mount);
@@ -132,7 +153,7 @@
   else main.append(section);
 
   const component = document.createElement('script');
-  component.src = new URL('source-of-funds-notice-20260820.js?v=20260822b', base).href;
+  component.src = new URL('source-of-funds-notice-20260820.js?v=20260822d', base).href;
   component.dataset.sourceFundsComponent = '20260820';
   document.head.append(component);
 })();
