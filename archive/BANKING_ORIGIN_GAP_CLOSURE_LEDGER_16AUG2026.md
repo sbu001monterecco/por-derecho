@@ -165,9 +165,9 @@ The digitally signed company book records:
 
 Sentencia 163/2023 independently describes the 6-February-2012 operator as **“MONTERECCO SUN PARK, S.L. (actualmente denominada Pink Canary Services, S.L.)”**.
 
-The official BORME records Monterecco Sun Park SRL under registry sheet **H TF 49739** in 2012. A later official BOE/AEAT publication identifies Pink Canary Services SLU with NIF **B76564517** in the Tenerife Mercantile Registry.
+The official BORME records Monterecco Sun Park SRL under registry sheet **H TF 49739** in 2012. A later official BOE/AEAT publication identifies Pink Canary Services SLU with NIF **B76564517** in the Tenerife Mercantile Registry **in a publication revoking that NIF, with Registry date 2 September 2019**. Revocation is not extinction; current rehabilitation, Registry, accounts, governance and operational status require certified records.
 
-**Controlled conclusion:** Monterecco Sun Park, S.L. and Pink Canary Services, S.L. are successive names of the same Spanish company. The change did not itself transfer the operating contract, create a successor operator or produce a new Spanish legal person. `SLU` identifies single-member status, not a different entity.
+**Controlled conclusion:** Monterecco Sun Park, S.L. and Pink Canary Services, S.L. are successive names of the same Spanish company. The change did not itself transfer the operating contract, create a successor operator or produce a new Spanish legal person. `SLU` identifies single-member status, not a different entity. BOE-A-2019-14965 is an adverse NIF-revocation source, not proof of later ordinary operational status.
 
 **Date boundary:** 30 September 2013 is presently verified as the date recorded in the signed company book. The original shareholder resolution, notarial deed, Registry presentation, inscription certificate and BORME name-change publication have not yet been located; do not present 30 September as the independently verified registry-publication date.
 

@@ -13,7 +13,7 @@ This control prevents three different matters from being collapsed into one:
 
 The overlap lies in particular documents, actors and consequences. It does not create identity of procedure, jurisdiction or legal issue.
 
-**Mandatory 22-August pickup:** read Declarations 005–009, CR-058/CR-059/CR-061–CR-065, `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md` and `archive/GIL_PAMANIL_AEAT_PINK_NULLITY_CRITICAL_REANALYSIS_22AUG2026.md`. Declaration 005 is preserved but controlled proposition by proposition. Gil's written self-attribution supports attribution of his text; ChatGPT has not authenticated any voice.
+**Mandatory 22-August pickup:** read Declarations 005–010, CR-058/CR-059/CR-061–CR-070, `archive/GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md` and `archive/GIL_PAMANIL_AEAT_PINK_NULLITY_CRITICAL_REANALYSIS_22AUG2026.md`. Declaration 005 is preserved but controlled proposition by proposition. Gil's written self-attribution supports attribution of his text; ChatGPT has not authenticated any voice.
 
 ## 2. Lane A — Fiscalía AN Exp. Gub. 86/2026
 
@@ -107,7 +107,7 @@ Unless authenticity, signatures, inventory, scope or function are successfully c
 
 ### 22 August 2026 contract-validity / CEXP / Garrigues clarification
 
-Declarations 007–009 record Gil Marer's current primary legal position that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as **wholly void *ab initio*** and that only a competent collective act could confer CEXP's owners-derived mandate for unitary operation. They also record his recollection that **Garrigues** recommended the Monterecco route and his retrospective view that the advice was wrong. Gil expressly authorises public naming and requests Garrigues testimony and complete custodial production.
+Declarations 007–010 record Gil Marer's current primary legal position that the 6-Feb-2012 LPB–Monterecco agreement should have been treated as **wholly void *ab initio*** and that only a competent collective act could confer CEXP's owners-derived mandate for unitary operation. They also record his recollection that **Garrigues** recommended the Monterecco route and his retrospective view that the advice was wrong. Gil expressly authorises public naming and requests Garrigues testimony and complete custodial production.
 
 This is `PERSONAL_RECOLLECTION:GIL` and `GIL LEGAL POSITION`, not verified pre-contract `COUNSEL_POSITION` or an adjudicated nullity. The first presently verified Garrigues activity is 28-Mar-2012, after the 1/6-Feb instruments; the 2009 Molina-linked non-adherence material was forwarded to it in May 2012. Naming/testimony authority does not prove the recalled advice or permit indiscriminate publication of confidential/privileged source bodies. The contrary case remains visible: the 1-Feb notice, LPB's own-unit rights, the severability clause, Pink's genuine operation/registration and adverse judgments. Tax attribution, factual operation/registration, civil validity, CEXP authority, rent and key possession remain separate functions and periods.
 

@@ -26,7 +26,7 @@ The reviewed Owners’ Community record expressly treats the closure/continuatio
 
 ### B. 22 June 2011 — debt/vote/governance and CEXP-maintenance displacement
 
-The reviewed record places LPB present with approximately 72.976% but treated as unable to vote because of attributed Community debt. The enabled voting pool then adopts decisions involving debt, claims, lawyers, administration and termination of CEXP maintenance, with maintenance/administrative functions moving into the Pamanil line.
+The reviewed 22-June-2011 coefficient rows total approximately 75.671% for LPB, which was treated as unable to vote because of attributed Community debt; the seven listed vote-eligible entries total approximately 6.930%. Those are repository arithmetic totals, not certified totals expressly stated by the minutes. The enabled voting pool then adopts decisions involving debt, claims, lawyers, administration and termination of CEXP maintenance, with maintenance/administrative functions moving into the Pamanil line.
 
 This is central to Por Derecho’s capture/instrumentalisation allegation, but the legality of the debt, vote exclusion, notice, authority and each resolution remains separately testable.
 

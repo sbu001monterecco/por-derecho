@@ -500,3 +500,25 @@ which counterfactual -> which remedy -> which unresolved defence`.
 That architecture supports maximum lawful recovery of the whole economic platform
 without confusing the legal persons, proceedings, evidential standards or loss
 layers through which recovery must actually be pursued.
+
+## 22-Aug-2026 controlling addendum — Gil / reserved declarant / Pink / AEAT / Pamanil
+
+This addendum supersedes any narrower handover rule on the following points:
+
+1. Read Declarations 005–010 together. The reserved declarant appears generally capable and professionally experienced. Gil's pressure account is a limited retrospective hypothesis that may explain specific conflations; it is not proof of legal coercion, incapacity, causation or global unreliability.
+2. Gil's personal responsibility statement does not adopt the reserved declarant's testimony, invalidate her acts, confer corporate office or authorise him to represent Pink.
+3. Gil's whole-nullity theory is preserved as his primary position, but the strongest current case is lack of authority/non-opposability concerning CEXP, common elements and third-party rights. Total nullity depends on indivisibility and must overcome the 1-Feb notice, severability, actual performance/registration, the 2014 defence and the 24-Nov-2015 judgment/preclusion. Nullity would require reciprocal restitution and double-recovery control.
+4. BOE-A-2019-14965 records revocation of Pink NIF B76564517 in 2019. Revocation is not extinction. Current rehabilitation, Registry, shareholder, administrator, accounts, governance and Gil eligibility require certified sources. If revocation remains, rehabilitation/cure precedes any assumption that an administrator change can be registered.
+5. The complete 22-Jun-2011 source is now represented by a structured public redacted digest, not a line-by-line transcription. Repository arithmetic over its coefficient rows totals approximately 75.671% for LPB and 6.930% for the seven listed payment-current voting entries; those are not certified totals expressly stated by the minutes. The source also proves a written Pamanil proposal/recorded approval, not actual integrated performance.
+6. AEAT chronology now controls as: plan 29-Jul-2020; commencement 30-Nov/2-Dec-2020; first provisional-zero act 7-Oct-2021; complement ordered/notified 4/15-Mar-2022; located Acosta material 22-Mar/6-Apr-2022. The 2022 statements may be materially relied on but did not originate the 2020 selection or, absent undisclosed earlier contact, the already ordered complement.
+7. No actor-specific evidence presently proves institutional AEAT conflict, capture or retaliation. Audit selection/referral, Gil's 13-Jan-2021 RICPE alert routing, complement source, reliance, officials/units/abstention and full RIC file 02/2022.
+8. Public Community/Pamanil communications use controlled indexes and redacted editions. Do not publish private recipients, owner-level debts, NIF/DNI, tax-reserved files, source audio or privileged/confidential bodies without lawful review.
+
+Controlling new sources:
+
+- `archive/declarations/010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md`
+- `archive/GIL_PINK_TOTAL_NULLITY_AEAT_NEUTRALITY_COMMUNITY_360_REVERSE_ENGINEERING_22AUG2026.md`
+- `archive/THREAD_DELETION_CONTINUITY_AUDIT_GIL_PINK_NULLITY_AEAT_COMMUNITY_22AUG2026.md`
+- `evidence/community/ACTA_22JUN2011_PUBLIC_REDACTED_EDITION.md`
+- `archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md`
+- CR-067–CR-070 and ME-069.
