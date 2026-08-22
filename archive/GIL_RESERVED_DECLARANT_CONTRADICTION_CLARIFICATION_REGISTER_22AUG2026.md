@@ -79,12 +79,12 @@ Naming authorisation does not alter the evidence grade or automatically waive co
 
 Any future thread touching the reserved declarant, Declaration 005, Pink, CEXP, keys, Community duties, the 2008 sale, the perimeter associated in specific acts with Montelanza, S.L. and Molina-linked owners, Garrigues, AEAT or the 2012 causal chain must read:
 
-1. Declarations 005–009;
-2. CR-058, CR-059 and CR-061–CR-065;
+1. Declarations 005–010;
+2. CR-058, CR-059 and CR-061–CR-070;
 3. this register;
 4. `SUN_PARK_COMMUNITY_2012_GOOD_FAITH_FEES_AND_EVICTION_CORRECTION_GATE_17AUG2026.md`;
 5. `SUN_PARK_COMUNIDAD_ACTAS_AUTHORITY_PROVENANCE_REGISTER_2008_2022_17AUG2026.md`;
 6. `JV1260_KEY_HANDOVER_CONTEMPORANEOUS_SOURCE_SUPERSESSION_21AUG2026.md`; and
-7. ME-047, ME-065 and ME-066.
+7. ME-047, ME-065, ME-066, ME-068 and ME-069.
 
 The source Declaration 005 remains preserved. Corrections must be added visibly; they must not silently rewrite the original account.

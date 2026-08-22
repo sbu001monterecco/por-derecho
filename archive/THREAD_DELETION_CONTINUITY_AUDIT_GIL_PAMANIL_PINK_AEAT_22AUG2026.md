@@ -8,7 +8,7 @@
 
 The thread is recoverable from the following public-safe controls:
 
-1. Declarations 005–009, with 009 controlling where incompatible;
+1. Declarations 005–010, with 009 controlling where incompatible;
 2. `GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md`;
 3. `GIL_PAMANIL_AEAT_PINK_NULLITY_CRITICAL_REANALYSIS_22AUG2026.md`;
 4. CR-058, CR-059 and CR-061–CR-066 in `CORRECTION_REGISTER.md`;

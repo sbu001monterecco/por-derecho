@@ -1,6 +1,6 @@
 {
   "registry_version": 1,
-  "as_of": "2026-08-20",
+  "as_of": "2026-08-22",
   "owner": "Por Derecho / Project Sun Rock",
   "policy": "Open operational work must be explicit, owned, linked, review-dated and closed only by evidence. Open status is not a CI failure; stale, unowned, untracked or falsely closed status is.",
   "items": [
@@ -35,8 +35,8 @@
       "severity": "P0",
       "status": "BLOCKED",
       "owner": "sbu001monterecco",
-      "last_verified_at": "2026-08-20",
-      "review_by": "2026-08-22",
+      "last_verified_at": "2026-08-22",
+      "review_by": "2026-08-29",
       "tracking": {
         "github_pr": 366,
         "publication_manifest": "publication-manifests/icalpa-dip80-open-kimono-20260818.json"
@@ -48,7 +48,7 @@
         "deletion_safety": false
       },
       "evidence": [
-        "Fresh 20 August 2026 readback confirms PR #366 remains open, unmerged and conflict-free on head c66499fb4ebfe69a868e1df678f80b2b98670377.",
+        "Fresh 22 August 2026 GitHub readback confirms PR #366 remains open and unmerged; GitHub reports closed_at null and no update after 18 August 2026. The last verified conflict-free head remains c66499fb4ebfe69a868e1df678f80b2b98670377 from the 20 August review.",
         "Diagnose DIP 80 payload inventory succeeded on that head.",
         "Materialise DIP 80 living casebook and Publication integrity gate remain failed on that head, and the PR base predates substantial subsequent main-branch work."
       ],
