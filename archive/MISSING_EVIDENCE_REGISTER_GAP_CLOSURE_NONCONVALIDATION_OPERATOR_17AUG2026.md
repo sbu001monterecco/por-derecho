@@ -8,7 +8,7 @@ This addendum does not erase the earlier missing-evidence register. It records w
 
 | ID | Target | Status after scan | What closes the current residual gap | Next exact pivots |
 |---|---|---|---|---|
-| `ME-OC-01` | complete JV1260/2011 outcome | **SUBSTANTIALLY CLOSED** | execution/finality/cassation record if needed; possession implementation | `570/2012`, `Sentencia 16/2014`, `13 enero 2014`, `ejecución`, `firmeza` |
+| `ME-OC-01` | complete JV1260/2011 outcome | **SUBSTANTIALLY CLOSED** | execution/finality/cassation record if needed; possession implementation | `793/2012`, `Sentencia 89/2014`, `13 enero 2014`, `ejecución`, `firmeza`; former `570/2012` / `16/2014` identification superseded by CR-066 |
 | `ME-OC-02` | Turismo 92/11 | **OPEN** | native administrative expediente / certified copy + outcome/appeal | `92/11 Sun Park`, `Viceconsejería Turismo`, CEXP, plaintiff-owner names |
 | `ME-OC-04` | 2008 exploitation/meeting chain | **PARTIAL / OPEN** | native 26-May-2008 transfer + April/July minutes + authority/title material | `26 mayo 2008 explotación`, CEXP, Monte Lanza, Multimatrix, April/July 2008 |
 | `ME-OC-05` | Monterecco→Pink corporate continuity | **OPEN** | Registro Mercantil/BORME/certificate showing same Spanish company/name change | exact old/new names + company number/CIF variants |

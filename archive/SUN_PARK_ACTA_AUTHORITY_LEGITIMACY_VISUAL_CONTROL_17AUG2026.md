@@ -327,7 +327,7 @@ Future threads must read this file together with:
 - `archive/CALIFICACION_ALLEGATION_03_DP1132_PRIVATE_ACTOR_SOURCE_COMPLETION_16AUG2026.md`;
 - `archive/CALIFICACION_FISCALIA_2012_2019_2026_SOURCE_BUNDLE_RETRIEVAL_GATE_16AUG2026.md`;
 - `archive/CORRECTION_REGISTER.md`, especially **CR-018, CR-019 and CR-059**;
-- `archive/declarations/007_GIL_COORDINATION_PINK_CONTRACT_CEXP_CONTROLLING_KEYNOTE_20260822.md`, preserving Gil Marer's attributed total/partial *ab initio* nullity and CEXP-authority position without presenting either as adjudicated;
+- Declarations 007–009, preserving Gil Marer's current primary total *ab initio* nullity and CEXP-authority position without presenting either as adjudicated, while retaining the earlier total/partial formulation as superseded history;
 - `archive/MISSING_EVIDENCE_REGISTER.md`, especially **ME-044 through ME-050 and ME-047 in particular**.
 
 ### Existing gap control — do not duplicate

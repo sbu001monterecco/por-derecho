@@ -9,6 +9,8 @@
 
 > **Efecto rector:** esta declaración complementa las Declaraciones 005–007. Autoriza identificar públicamente a Garrigues, fija la posición causal actual de Gil Marer y aclara el límite entre atribución textual y autenticación de una voz.
 
+> **Actualización rectora posterior:** la Declaración 009 controla las formulaciones incompatibles sobre Pamanil, AEAT, llaves y nulidad. Gil sostiene ahora como posición primaria la nulidad **total** *ab initio* del contrato de 6-Feb-2012; sigue siendo una tesis no adjudicada y debe publicarse con la prueba contraria. La frase absoluta «Pink nunca tuvo ninguna llave» queda sustituida por la posición sobre ausencia del juego maestro/de mantenimiento CEXP y ausencia de autoridad hotelera total, ante el documento facial de 22-May-2017.
+
 ## 1. Identificación de esta instrucción y límite de autenticación
 
 Yo, **Gil Marer**, confirmo que la instrucción escrita de la que deriva esta declaración procede de mí. Me identifico en este contexto como proponente y productor/promotor del proyecto y de esta línea de reconstrucción.

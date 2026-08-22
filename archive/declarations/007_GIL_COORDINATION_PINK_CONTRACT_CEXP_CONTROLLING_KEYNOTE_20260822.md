@@ -11,6 +11,8 @@
 
 > **Autorización nominativa posterior:** la Declaración 008 autoriza expresamente identificar públicamente a **Garrigues** y solicitar su testimonio. Esa autorización permite nombrar a la firma; no convierte el recuerdo de Gil en consejo documentalmente probado ni autoriza la publicación indiscriminada de comunicaciones confidenciales.
 
+> **Actualización rectora posterior:** la Declaración 009 sustituye, donde sean incompatibles, la alternativa de nulidad «total o parcial» y la frase literal «Pink nunca tuvo ninguna llave». La posición primaria actual de Gil es **nulidad total *ab initio***; la conclusión sigue sin estar adjudicada. Respecto de llaves, el documento facial de 22-May-2017 obliga a la formulación más estrecha: Pink no tuvo el juego maestro/de mantenimiento de CEXP ni autoridad jurídica para transferir la explotación o posesión hotelera total.
+
 ## 1. Relación y coordinación general
 
 Yo, **Gil Marer**, dejo constancia de que la declarante de las Declaraciones 001–005 y yo fuimos personas muy cercanas y estuvimos, en términos generales, muy coordinados personal y profesionalmente.

@@ -1,5 +1,7 @@
 # DECLARACIÓN CORRECTIVA URGENTE DE GIL MARER — PINK NO TUVO LAS LLAVES NI AUTORIDAD PARA ENTREGARLAS
 
+> **SUPERSEDIDA EN SU FORMULACIÓN LITERAL POR LA DECLARACIÓN 009:** el documento facialmente firmado de 22-May-2017 Pink→LPB contradice «Pink nunca tuvo o entregó ninguna llave de ningún tipo». La posición actual de Gil es más estrecha: Pink nunca tuvo el juego maestro/de mantenimiento de CEXP ni autoridad jurídica para transferir la explotación/posesión del hotel entero o derechos CEXP/terceros. La Declaración 006 se conserva como procedencia de la corrección inicial; no debe reutilizarse sin Declaración 009 y CR-058.
+
 **N.º:** 006  
 **Declarante:** Gil Marer  
 **Fecha de la declaración fuente:** 2026-08-22  

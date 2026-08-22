@@ -131,7 +131,7 @@ Declarations 007–008 add Gil Marer's controlling but not adjudicated legal pos
 he recalls **Garrigues** recommending the Monterecco route under enforcement,
 auction and inherited-operation pressure; says he regarded that advice as wrong
 very soon; argues that the separate 6-Feb LPB–Monterecco contract should have been
-treated as wholly or partly void *ab initio*; and says only CEXP could hold or confer
+treated as wholly void *ab initio* as his current primary position; and says only CEXP could hold or confer
 the owners-derived whole-hotel mandate. The current documentary record does not yet
 prove the pre-contract advice chronology, exclusivity or nullity: the first presently
 verified Garrigues activity is 28-Mar-2012. Gil authorises naming the firm and asks
