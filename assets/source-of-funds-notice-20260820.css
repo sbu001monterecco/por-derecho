@@ -92,3 +92,61 @@
   .sfn::before { width:100%; transition:none; }
   .sfn__button { transition:none; }
 }
+
+/* Email-used evidence pair above the professional warning · 22 August 2026 */
+.source-funds-email-graphics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+.source-funds-email-graphic {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--sfn-line);
+  border-radius: 18px;
+  background: var(--sfn-paper);
+  color: var(--sfn-ink) !important;
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(11, 43, 69, .10);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.source-funds-email-graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.source-funds-email-graphic span {
+  display: flex;
+  min-height: 3.25rem;
+  align-items: center;
+  padding: .72rem .9rem;
+  border-top: 1px solid var(--sfn-line);
+  background: linear-gradient(90deg, var(--sfn-night), #194b68);
+  color: #fff;
+  font-size: .84rem;
+  font-weight: 900;
+  letter-spacing: .035em;
+}
+.source-funds-email-graphic:hover,
+.source-funds-email-graphic:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--sfn-gold);
+  box-shadow: 0 18px 42px rgba(11, 43, 69, .17);
+}
+.source-funds-email-graphic:focus-visible {
+  outline: 3px solid rgba(197, 138, 43, .42);
+  outline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .source-funds-email-graphics { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .source-funds-email-graphic { transition: none; }
+}
+@media print {
+  .source-funds-email-graphics { break-inside: avoid; }
+}
