@@ -11,7 +11,7 @@
 
 ## 1. Corrección directa
 
-Yo, **Gil Marer**, declaro que Patricia está equivocada en la parte de su relato que atribuye a Monterecco Sun Park/Pink Canary Services la posesión de “las llaves” o autoridad para entregarlas a la administración concursal, a la Comunidad de Propietarios o a cualquier otra persona.
+Yo, **Gil Marer**, declaro que la declarante de la Declaración 005 está equivocada en la parte de su relato que atribuye a Monterecco Sun Park/Pink Canary Services la posesión de “las llaves” o autoridad para entregarlas a la administración concursal, a la Comunidad de Propietarios o a cualquier otra persona.
 
 Mi posición y recuerdo son inequívocos:
 
@@ -50,9 +50,9 @@ Retiro y excluyo expresamente de mi adopción cualquier proposición según la c
 
 La Declaración 005 debe permanecer preservada como registro histórico de lo que Patricia dijo, pero marcada como **SUPLEMENTADA Y MATERIALMENTE DISPUTADA** en este punto.
 
-## 4. Presión sobre Patricia — posición personal de Gil Marer
+## 4. Presión sobre la declarante de la Declaración 005 — posición personal de Gil Marer
 
-Mi entendimiento actual es que **Juan Tomás Parrilla y la administración concursal ejercieron presión sobre Patricia**, y que Patricia no estaba escuchando ni incorporando correctamente mis explicaciones sobre la separación entre CEXP, Pink y la autoridad respecto de las llaves.
+Mi entendimiento actual es que **Juan Tomás Parrilla y la administración concursal ejercieron presión sobre la declarante de la Declaración 005**, y que la declarante no estaba escuchando ni incorporando correctamente mis explicaciones sobre la separación entre CEXP, Pink y la autoridad respecto de las llaves.
 
 Esta es mi posición personal y una alegación que debe investigarse. No la presento como una conclusión judicial ni como un hecho independientemente corroborado en esta declaración.
 
@@ -104,6 +104,6 @@ Debe aplicarse inmediatamente sin borrar silenciosamente la Declaración 005. La
 3. Identificar la documentación que acredita la presidencia de Gil Marer en CEXP.
 4. Retirar de uso toda formulación que atribuya el acto de CEXP a Pink.
 5. Revisar páginas y controles que utilicen conjuntamente “registro, operación y llaves” sin atribución por entidad y periodo.
-6. Solicitar a Patricia una declaración suplementaria independiente que confirme o corrija su propio recuerdo, sin alterar esta corrección de Gil.
+6. Solicitar a la declarante de la Declaración 005 una declaración suplementaria independiente que confirme o corrija su propio recuerdo, sin alterar esta corrección de Gil.
 7. Investigar separadamente la alegación de presión mediante fuentes contemporáneas y no publicarla como hecho establecido sin corroboración.
 8. Mantener separadas CEXP, Pink, LPB, Comunidad de Propietarios, propietarios particulares y administración concursal.
