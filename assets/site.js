@@ -80,24 +80,24 @@
     const graphicData = isEnglish
       ? [
           {
-            src: 'evidence/rhg-open-message-20aug2026/san-telmo-ricpe-sun-park-stamp-v1-EN.svg?v=20260822a',
+            src: 'evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-EN.png?v=20260822g',
             alt: 'San Telmo, RICPE and Sun Park professional-overlap and traceability graphic',
             caption: 'San Telmo · RICPE · Sun Park'
           },
           {
-            src: 'evidence/rhg-open-message-20aug2026/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.svg?v=20260822a',
+            src: 'evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png?v=20260822g',
             alt: 'PwC five-actor and Acosta Matos 2016 professional knowledge checkpoint graphic',
             caption: '2016 professional knowledge checkpoint'
           }
         ]
       : [
           {
-            src: 'evidence/tsj-exp-gub-38/san-telmo-ricpe-sun-park-stamp-v1-ES.svg?v=20260822a',
+            src: 'evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png?v=20260822g',
             alt: 'Gráfico San Telmo, RICPE y Sun Park sobre solapamiento profesional y trazabilidad',
             caption: 'San Telmo · RICPE · Sun Park'
           },
           {
-            src: 'evidence/tsj-exp-gub-38/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.svg?v=20260822a',
+            src: 'evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png?v=20260822g',
             alt: 'Gráfico PwC, cinco actores y Acosta Matos sobre el punto de conocimiento profesional de 2016',
             caption: 'Punto de conocimiento profesional · 2016'
           }
@@ -130,8 +130,8 @@
       const image = document.createElement('img');
       image.src = new URL(item.src, base).href;
       image.alt = item.alt;
-      image.width = 1600;
-      image.height = 1000;
+      image.width = 1800;
+      image.height = 1200;
       image.loading = 'eager';
       image.fetchPriority = 'high';
       image.decoding = 'async';

@@ -235,11 +235,11 @@ jobs:
                   if (featureState.imageStates.length !== 2) failures.push(`featured images=${featureState.imageStates.length}`);
                   for (const image of featureState.imageStates) {
                     if (image.loading !== 'eager') failures.push(`image loading=${image.loading}`);
-                    if (image.width !== '1600' || image.height !== '1000') failures.push(`image dimensions=${image.width}x${image.height}`);
-                    if (!image.complete || image.naturalWidth !== 1600 || image.naturalHeight !== 1000) failures.push(`image incomplete=${JSON.stringify(image)}`);
+                    if (image.width !== '1800' || image.height !== '1200') failures.push(`image dimensions=${image.width}x${image.height}`);
+                    if (!image.complete || image.naturalWidth !== 1800 || image.naturalHeight !== 1200) failures.push(`image incomplete=${JSON.stringify(image)}`);
                   }
-                  if (!featureState.imageStates[0]?.src.includes('san-telmo-ricpe-sun-park-stamp-v1')) failures.push(`first graphic=${featureState.imageStates[0]?.src}`);
-                  if (!featureState.imageStates[1]?.src.includes('pwc-five-actors-plus-ac-2016-knowledge-checkpoint')) failures.push(`second graphic=${featureState.imageStates[1]?.src}`);
+                  if (!featureState.imageStates[0]?.src.includes('email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1') || !featureState.imageStates[0]?.src.includes('.png')) failures.push(`first graphic=${featureState.imageStates[0]?.src}`);
+                  if (!featureState.imageStates[1]?.src.includes('email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint') || !featureState.imageStates[1]?.src.includes('.png')) failures.push(`second graphic=${featureState.imageStates[1]?.src}`);
                 }
                 const heading = (await page.locator(`${selector} h2`).innerText()).trim();
                 const expectedHeading = target.path.startsWith('/en/')
