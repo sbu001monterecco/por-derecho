@@ -9,6 +9,7 @@ on:
       - 'es/playa-blanca-concepto-hotel-servicios/**'
       - 'assets/playa-blanca-*'
       - 'assets/site.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
   workflow_dispatch:
 
 permissions:
@@ -79,8 +80,16 @@ jobs:
                   ],
               },
               {
-                  'kind': 'site_loader',
+                  'kind': 'site_loader_delegate',
                   'path': 'assets/site.js',
+                  'markers': [
+                      'site-pre-intervencion-highlight-20260820.js',
+                      'data-pre-intervencion-site-loader',
+                  ],
+              },
+              {
+                  'kind': 'inherited_site_loader',
+                  'path': 'assets/site-pre-intervencion-highlight-20260820.js',
                   'markers': [
                       'playa-blanca-concept-home-20260820.js',
                       'data-playa-blanca-concept-loader',
