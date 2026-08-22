@@ -104,10 +104,12 @@ Use a branch and pull request. Review the diff and run the repository's relevant
 tests. Merge only when the record is accurate. Verify deployment only if public
 site files changed; do not claim a Pages deployment for archive-only changes.
 
-### 7. Create an off-thread self-email record
+### 7. Create an off-thread record; email only after final authorisation
 
-Send a private closeout email to the authenticated account using `to: me`. The
-email must state:
+Apply `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`. Preserve a private or repository
+closeout record, but do not send, resend, forward or self-email it unless the user
+has given final approval of the exact recipient(s), body, attachments and links.
+If that final approval is given, the email must state:
 
 - repository, branch, pull request and merge commit when known;
 - closeout verdict;
@@ -118,7 +120,9 @@ email must state:
 - any connector failure that prevented a native-message or attachment copy.
 
 Do not say the evidence was attached if only a manifest or source locator was
-sent. Verify that the email action returned a sent-message identifier.
+sent. Verify that any authorised email action returned a sent-message identifier.
+If no email was authorised, record `NO EMAIL SENT`; repository or other authorised
+durable preservation may still satisfy the closeout instruction.
 
 ### 8. Required final answer
 
@@ -131,8 +135,8 @@ Choose exactly one verdict:
 - `NOT SAFE TO DELETE`: material thread intelligence or irreplaceable source
   material remains only in the conversation.
 
-Report the merged pull request, merge commit, validation performed, self-email
-subject, sent status, attachment results and every open custody item. Distinguish
+Report the merged pull request, merge commit, validation performed, email
+authorisation/sent status, attachment results and every open custody item. Distinguish
 what is complete from what remains recoverable.
 
 ## Matter-specific mission lock

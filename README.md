@@ -58,3 +58,9 @@ Where a working ChatGPT thread produces material synthesis or operational filing
 - `RICPE_ETHICS_CHANNEL_FILING_17AUG2026.md` — canonical operational preservation record for the 17 August 2026 signed RICPE communication and Ethics Channel filing architecture.
 
 The RICPE record keeps the signed PDF itself in private source custody and records a cryptographic hash rather than publishing personal/signature material in this public repository.
+
+## Author / reporting-person notice
+
+Gil Marer states that he has acted and continues to act as a reporting person, informant or whistleblower in communicating to authorities, regulators, professional bodies and other competent recipients information and allegations that he considers grounded and in the public interest. Where their temporal, material, personal, territorial and procedural requirements apply, he invokes the protections and procedures available under [Directive (EU) 2019/1937](https://eur-lex.europa.eu/eli/dir/2019/1937/oj), [Spain's Law 2/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513), Germany's [HinSchG](https://www.gesetze-im-internet.de/hinschg/), and the British protected-disclosure regimes under the [Public Interest Disclosure Act 1998](https://www.legislation.gov.uk/ukpga/1998/23/contents), [Part IVA of the Employment Rights Act 1996](https://www.legislation.gov.uk/ukpga/1996/18/part/IVA) and [separate Northern Ireland legislation](https://www.legislation.gov.uk/nisi/1998/1763/contents).
+
+This is the author's stated position. It does not confer protected status automatically, apply later legislation retroactively to 2016 facts or communications, or replace a determination by a competent authority or court. The controlling bilingual wording and scope limits are preserved in [AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md](AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md).

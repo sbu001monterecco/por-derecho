@@ -111,9 +111,9 @@ A stale or unmerged PR must be recorded as such. Do not imply that an open branc
 
 ## Email delivery rule for preservation/deletion threads
 
-For any thread that performs a **backup, preservation export, disaster-recovery package, evidence-custody package, deletion-safety handover or other durable close-out artifact**, and where the connected Gmail capability is available, the close-out is not operationally complete until the user has also been emailed a concise completion record.
+For any thread that performs a **backup, preservation export, disaster-recovery package, evidence-custody package, deletion-safety handover or other durable close-out artifact**, preserve a concise completion record outside the ChatGPT conversation. Connected Gmail capability does not authorise a send. Apply `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`: no email, resend, forward or self-email may occur without the user's final approval of the exact recipient(s), body, attachments and links.
 
-Where practical, that self-email should include or attach:
+If the user gives that final email approval, the message should include or attach where practical:
 
 - the final verified archive/package itself, subject to email size limits and confidentiality constraints;
 - the verification/hash record or manifest;
@@ -121,9 +121,9 @@ Where practical, that self-email should include or attach:
 - the independent storage location(s); and
 - the final deletion-safety status.
 
-If the primary archive is too large or inappropriate to email, send the verification record plus precise retrieval/storage information instead. Email is an **additional delivery and notification channel**, not a substitute for repository canonicalisation, independent off-platform storage, hashing, custody controls or restoration testing.
+If the primary archive is too large or inappropriate to email, the approved message may identify precise retrieval/storage information instead. Email is an **additional delivery and notification channel**, not a substitute for repository canonicalisation, independent off-platform storage, hashing, custody controls or restoration testing.
 
-Do not claim that an email was sent unless the Gmail send action actually succeeded. Similar future threads should apply this rule automatically rather than waiting for the user to request the email again.
+Do not claim that an email was sent unless the Gmail send action actually succeeded. Repository publication, merge authority or an instruction using “and/or” does not imply email authority.
 
 ## End-of-thread checklist
 
@@ -139,7 +139,7 @@ Before declaring a project thread deletion-safe, verify as applicable:
 8. public-site changes were deployment-verified and logged;
 9. unfinished work is recoverable without chat history;
 10. a fresh ChatGPT can resume by reading `CHATGPT_START_HERE.md` and the named canonical files, then re-querying primary sources where required;
-11. for backup/preservation/deletion-safety threads, the final verified package or completion record was emailed to the user when Gmail was available, and successful delivery was confirmed.
+11. for backup/preservation/deletion-safety threads, the final verified package or completion record was preserved in an authorised durable destination; if the user separately approved an email, successful delivery was confirmed.
 
 If the thread genuinely created no material project intelligence and changed no project state, record that conclusion and no repository write is required solely to manufacture an audit artifact.
 
