@@ -134,6 +134,7 @@ jobs:
         env:
           RUN_ID: ${{ github.run_id }}
           SOURCE_SHA: ${{ github.sha }}
+          VERIFY_FEATURED: ${{ github.event_name == 'push' }}
         run: |
           node <<'NODE'
           const { chromium } = require('playwright');
@@ -146,10 +147,10 @@ jobs:
             '/es/mismo-hotel-multiples-vidas-financieras/', '/en/same-hotel-multiple-financial-lives/',
             '/es/acosta-matos-perimetro/', '/en/acosta-matos-perimeter/',
             '/es/objetivos-recuperacion-restitucion/', '/en/recovery-restitution-objectives/',
-            '/es/cadena-instrumentalizacion-ric-fondos-incentivos/', '/en/institutionalisation-chain-ric-eu-incentives/'
+            '/es/cadena-instrumentalizacion-ric-fondos-incentivos/', '/en/institutionalisation-chain-ric-eu-incentives/',
+            '/es/ricpe-responsabilidad-documental/', '/en/ricpe-documentary-accountability/'
           ];
           const compact = [
-            '/es/ricpe-responsabilidad-documental/', '/en/ricpe-documentary-accountability/',
             '/es/pwc-canarias-carlos-saavedra-sun-park/', '/en/pwc-canarias-carlos-saavedra-sun-park/',
             '/es/rsm/nnr4-1025c2f66/', '/en/rsm/nnr4-1025c2f66/',
             '/es/grant-thornton/cuyas-canarias/', '/en/grant-thornton/cuyas-canarias/',
@@ -161,6 +162,13 @@ jobs:
             ...full.map(path => ({ path, variant: 'full' })),
             ...compact.map(path => ({ path, variant: 'compact' })),
           ];
+          const featured = new Set([
+            '/es/ric-private-equity-sun-park/', '/en/ric-private-equity-sun-park/',
+            '/es/acosta-matos-perimetro/', '/en/acosta-matos-perimeter/',
+            '/es/cadena-instrumentalizacion-ric-fondos-incentivos/', '/en/institutionalisation-chain-ric-eu-incentives/',
+            '/es/ricpe-responsabilidad-documental/', '/en/ricpe-documentary-accountability/',
+          ]);
+          const verifyFeatured = process.env.VERIFY_FEATURED === 'true';
 
           (async () => {
             const browser = await chromium.launch({
@@ -186,6 +194,37 @@ jobs:
                 await page.locator(selector).waitFor({ state: 'visible', timeout: 45000 });
                 const rootCount = await page.locator('[data-source-of-funds-notice]').count();
                 if (rootCount !== 1) failures.push(`notice roots=${rootCount}`);
+                if (verifyFeatured && featured.has(target.path)) {
+                  const featureState = await page.evaluate(() => {
+                    const opening = document.querySelector('main > section:first-of-type');
+                    const section = document.querySelector('.source-funds-notice-section--featured');
+                    const graphics = [...document.querySelectorAll('.source-funds-email-graphic')];
+                    const images = graphics.map(node => node.querySelector('img')).filter(Boolean);
+                    return {
+                      immediatelyAfterOpening: Boolean(opening && section && opening.nextElementSibling === section),
+                      graphicCount: graphics.length,
+                      imageStates: images.map(image => ({
+                        loading: image.loading,
+                        width: image.getAttribute('width'),
+                        height: image.getAttribute('height'),
+                        complete: image.complete,
+                        naturalWidth: image.naturalWidth,
+                        naturalHeight: image.naturalHeight,
+                        src: image.src,
+                      })),
+                    };
+                  });
+                  if (!featureState.immediatelyAfterOpening) failures.push('featured placement is not immediately after opening section');
+                  if (featureState.graphicCount !== 2) failures.push(`featured graphics=${featureState.graphicCount}`);
+                  if (featureState.imageStates.length !== 2) failures.push(`featured images=${featureState.imageStates.length}`);
+                  for (const image of featureState.imageStates) {
+                    if (image.loading !== 'eager') failures.push(`image loading=${image.loading}`);
+                    if (image.width !== '1600' || image.height !== '1000') failures.push(`image dimensions=${image.width}x${image.height}`);
+                    if (!image.complete || image.naturalWidth !== 1600 || image.naturalHeight !== 1000) failures.push(`image incomplete=${JSON.stringify(image)}`);
+                  }
+                  if (!featureState.imageStates[0]?.src.includes('san-telmo-ricpe-sun-park-stamp-v1')) failures.push(`first graphic=${featureState.imageStates[0]?.src}`);
+                  if (!featureState.imageStates[1]?.src.includes('pwc-five-actors-plus-ac-2016-knowledge-checkpoint')) failures.push(`second graphic=${featureState.imageStates[1]?.src}`);
+                }
                 const heading = (await page.locator(`${selector} h2`).innerText()).trim();
                 const expectedHeading = target.path.startsWith('/en/')
                   ? (target.variant === 'compact' ? 'Before accepting instructions or payment' : 'Who is paying—and what is being defended?')
