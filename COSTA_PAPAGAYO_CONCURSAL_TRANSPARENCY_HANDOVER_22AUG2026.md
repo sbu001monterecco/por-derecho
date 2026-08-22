@@ -86,11 +86,12 @@ Do **not** send a merits email to a private counterparty on the strength of this
 
 ## 8. Canonical scan prompt
 
-Run the task titled:
+Use `COSTA_PAPAGAYO_DEEP_SCAN_AND_PUBLICATION_PROTOCOL_22AUG2026.md` as the canonical two-stage task. It supplies:
 
-**“REVERSE-ENGINEERING DIGEST — COMMUNITY AUTHORITY, COSTA PAPAGAYO, CONCURSAL DISCLOSURE AND POSSIBLE OFF-RECORD ARRANGEMENTS”**
+1. **Prompt A:** a fresh repository/website reverse-engineering digest before confidential review; and
+2. **Prompt B:** a controlled Gmail, File Library, current-uploads and proceedings scan, followed by a publication-routing decision for each verified record.
 
-Use the full prompt in the originating ChatGPT thread. Before extending it, read the sources listed below and update this handover with exact file paths and document citations.
+The protocol requires a master proceedings register before any source-safe public expansion. It is designed to prevent both omission of material proceedings and indiscriminate publication of private, incomplete or unproven material. Before extending it, read the sources listed below and update this handover with exact file paths and document citations.
 
 ## 9. Priority repository files to read first
 
