@@ -1,0 +1,81 @@
+{
+  "publication_id": "AC2016-EMAIL-VISUAL-PROPAGATION-20260822",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-22",
+  "current_state": "PR_OPEN",
+  "controlling_pr": 804,
+  "base_commit": "f27e6f7aa13efd9ead5b58e26dc1fa5b9377d9c5",
+  "branch": "codex/2016-sun-park-email-visual-20260822",
+  "purpose": "Publish a privacy-minimised visual derivative of the later-forwarded 21-April-2016 Sun Park reply; correct its LPB/Luchy-specific scope; expose the complete visible 18–21 April chain; and propagate the Community-governance-not-arithmetic control.",
+  "canonical_routes": {
+    "en": "en/evidence-pwc-sun-park-meeting-21-april-2016/index.html",
+    "es": "es/evidencia-pwc-junta-sun-park-21-abril-2016/index.html"
+  },
+  "expected_routes": {
+    "en": ["en/evidence-pwc-sun-park-meeting-21-april-2016/index.html"],
+    "es": ["es/evidencia-pwc-junta-sun-park-21-abril-2016/index.html"]
+  },
+  "static_context_routes": [
+    "en/community-instrumentalisation/index.html",
+    "es/comunidad-instrumentalizacion/index.html",
+    "en/community-instrumentalisation/minutes-2011-2022/index.html",
+    "es/comunidad-instrumentalizacion/actas-2011-2022/index.html"
+  ],
+  "route_scoped_visual_context": [
+    "en/insolvency-36-2012-insolvency-administrator/index.html",
+    "es/concurso-36-2012-administrador-concursal/index.html",
+    "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+    "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+    "es/reunion-pwc-fmmm-11-junio-2016/index.html",
+    "en/acosta-matos-perimeter/index.html",
+    "es/acosta-matos-perimetro/index.html",
+    "en/ricpe-documentary-accountability/index.html",
+    "es/ricpe-responsabilidad-documental/index.html",
+    "en/san-telmo-ricpe-sun-park/index.html",
+    "es/san-telmo-ricpe-sun-park/index.html"
+  ],
+  "source_assets": [
+    "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.svg",
+    "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.png",
+    "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.webp",
+    "assets/evidence/ac-email-21-april-2016/AC2016-EMAIL-001-PUBLIC.md"
+  ],
+  "expected_source_files": [
+    "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.svg",
+    "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.png",
+    "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.webp",
+    "assets/evidence/ac-email-21-april-2016/AC2016-EMAIL-001-PUBLIC.md",
+    "assets/sun-park-junta-pwc-warning-20260822.js",
+    "scripts/validate_ac2016_email_visual.py"
+  ],
+  "source_controls": {
+    "email_status": "2026_FORWARD_REPRODUCING_VISIBLE_2016_CHAIN_NATIVE_2016_MESSAGE_PENDING",
+    "meeting_package_status": "SEPARATE_2026_FORWARD_OF_18_APRIL_MESSAGE",
+    "administrator_received_five_pdfs_before_reply": "NOT_ESTABLISHED",
+    "legacy_carrier_hash_reconciled": false,
+    "native_2016_authentication_established": false
+  },
+  "controlling_propositions": [
+    "The reply says attendance itself required no authority.",
+    "The author asserted an arrears/no-vote premise.",
+    "The refusal concerns LPB/Luchy's proposed PwC engagement and services to Luchy.",
+    "The reply does not determine Gil Marer's separately claimed Matkator, CEXP, Owners' Community or personal capacities.",
+    "Debt arithmetic cannot determine Community offices, constitution, representation, notice, quorum, proxies or resolution-specific owner-and-coefficient thresholds."
+  ],
+  "privacy_controls": {
+    "raw_gmail_ui_public": false,
+    "raw_carrier_public": false,
+    "direct_addresses_public": false,
+    "telephone_numbers_public": false,
+    "signatures_or_avatars_public": false,
+    "message_or_attachment_tokens_public": false,
+    "accessible_transcription_required": true,
+    "correction_and_reply_visibility_required": true
+  },
+  "publication_claims": {
+    "merged": false,
+    "deployed": false,
+    "live_verified": false,
+    "explicit_user_merge_approval_required": true
+  }
+}

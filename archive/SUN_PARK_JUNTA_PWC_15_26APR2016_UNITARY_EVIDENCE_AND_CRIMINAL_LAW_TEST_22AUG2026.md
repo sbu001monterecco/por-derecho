@@ -4,6 +4,14 @@
 **Status:** contemporaneous-source analysis; allegations and hypotheses are not judicial findings  
 **Primary email record:** `BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md`
 
+## Controlling 22 August 2026 source-control correction
+
+The visible 18→21 April text chain and the five substantive meeting PDFs are preserved in **different 2026 carriers**. The 21-April carrier contains only inline signature/rendering images. The meeting notice, budget, debtor schedule, president's letter and 38-page November-2015 ACTA were recovered from a separate forward of the 18-April Pamanil package. Current evidence does not prove that the Insolvency Administrator received or read those five PDFs before his 21-April reply.
+
+The reply must be stated narrowly: the Administrator refused to authorise LPB/Luchy's proposed engagement of PwC and asked the copied professionals not to provide services to Luchy without consent. It does not decide Gil Marer's separately claimed Matkator, CEXP, Owners' Community or personal capacities, or any separate PwC mandate. An asserted balance might affect LPB's vote only if the applicable legal conditions were satisfied; it does not establish Community offices, notice, quorum, proxies, owner-and-coefficient thresholds or authority over non-LPB rights.
+
+The separate package materially strengthens the governance and reconciliation inquiry: its agenda concerns accounts, quotas, alleged balances, certificates, litigation, penalties and banking; its budget leaves the bank balance as `???` and major operating lines unquantified; its schedule allocates €3,866,774.25 across all 262 property codes without the transaction-level LPB↔Community↔CEXP reconciliation. Those facts do not adjudicate debt validity, misconduct or intent.
+
 ## Executive conclusion
 
 The repository now supports a continuous 15→20→21→26 April 2016 sequence:

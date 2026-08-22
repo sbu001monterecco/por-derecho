@@ -2481,3 +2481,52 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .case-question { gap: 1.2rem; padding: 1.45rem; }
   .document-questions li { grid-template-columns: 2.4rem 1fr; }
 }
+
+/* AC2016-EMAIL-001 · reusable, source-bounded visual link */
+.email-exhibit-link {
+  display: grid;
+  grid-template-columns: minmax(150px, 240px) 1fr;
+  gap: 1.15rem;
+  align-items: center;
+  margin: 1.25rem 0;
+  padding: 1.15rem;
+  border: 3px solid #a61b16;
+  border-radius: 18px;
+  background: #fff;
+  color: #13252d;
+  box-shadow: 0 12px 30px rgba(19, 37, 45, .14);
+}
+.email-exhibit-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 19rem;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #bdc8ca;
+  border-radius: 11px;
+}
+.email-exhibit-link h3 { margin: .25rem 0 .55rem; color: #13252d; }
+.email-exhibit-link p { margin: .45rem 0; color: #253f4a; }
+.email-exhibit-link .email-exhibit-kicker {
+  color: #8b1713;
+  font-size: .76rem;
+  font-weight: 950;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+.email-exhibit-link .email-exhibit-maxim {
+  display: block;
+  margin: .75rem 0;
+  padding: .7rem .85rem;
+  background: #13252d;
+  color: #fff;
+  font-weight: 900;
+}
+.email-exhibit-link .email-exhibit-action { font-weight: 950; }
+.email-exhibit-link .email-exhibit-source { color: #586970; font-size: .82rem; }
+
+@media (max-width: 680px) {
+  .email-exhibit-link { grid-template-columns: 1fr; }
+  .email-exhibit-link img { max-height: 15rem; }
+}

@@ -1,7 +1,7 @@
 {
-  "registry_version": "1.1.0",
+  "registry_version": "1.2.0",
   "policy_id": "PD-VISUAL-ID-LOCK-2026-08-19",
-  "control_date": "2026-08-19",
+  "control_date": "2026-08-22",
   "purpose": "Canonical identity, provenance and byte-lock registry for named-person and material-asset images used by Por Derecho.",
   "mandatory_rules": {
     "named_person_images_must_be_registered": true,
@@ -161,6 +161,43 @@
         "person.eduardo-sanchez-san-telmo.primary",
         "place.sun-park-mynd-yaiza.aerial-primary",
         "person.francisco-de-borja-rodriguez-batllori.primary"
+      ]
+    },
+    "document.ac2016-email-001.redacted-source-card-v2": {
+      "subject_type": "document",
+      "canonical_name": "AC2016-EMAIL-001 — redacted 21 April 2016 source card",
+      "short_label": "21-Apr-2016 Sun Park email",
+      "path": "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.svg",
+      "git_blob_sha": "a16dacaa8be9d435e10f4948ee006925e52b8d3a",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Reconstructed derivative of material text visible in a 2026 forward reproducing the attributed 21-April-2016 reply. It is not a raw Gmail screenshot or an authenticated native-2016 message.",
+      "approved_contexts": [
+        "canonical bilingual email evidence pages",
+        "Owners' Community and minutes dossiers",
+        "Insolvency Administrator and PwC context cards",
+        "route-scoped evidential warnings"
+      ],
+      "alt_en": "Redacted documentary card reproducing the material Spanish text of the 21 April 2016 reply about the Sun Park meeting",
+      "alt_es": "Tarjeta documental redactada que reproduce el texto material de la respuesta de 21 de abril de 2016 sobre la junta Sun Park",
+      "source_provenance": {
+        "source_status": "LATER_FORWARDED_COPY_NATIVE_2016_MESSAGE_PENDING",
+        "source_note": "assets/evidence/ac-email-21-april-2016/AC2016-EMAIL-001-PUBLIC.md",
+        "svg_sha256": "c7bf1b8f5921dc363a33644f774846b3f649276908362af5f305713eee5ae053",
+        "png_sha256": "57e992461dc08e5024dce5aea05f8e8a5515a4f4a2963d4e4b07e56ba4399e37",
+        "webp_sha256": "ec5b5bfa5688a4b50d6c550959e438171459d388452ce5822d204216c33e3f40",
+        "dimensions": "1800x3200 SVG; 1350x2400 PNG/WebP",
+        "control_date": "2026-08-22"
+      },
+      "redaction_controls": [
+        "no direct email addresses",
+        "no telephone or postal details",
+        "no signatures, avatars or Gmail identifiers",
+        "no message or attachment tokens",
+        "editorial interpretation kept outside the source body"
+      ],
+      "rendered_variants": [
+        "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.png",
+        "assets/evidence/ac-email-21-april-2016/ac2016-email-001-redacted-source-card-v2.webp"
       ]
     }
   },

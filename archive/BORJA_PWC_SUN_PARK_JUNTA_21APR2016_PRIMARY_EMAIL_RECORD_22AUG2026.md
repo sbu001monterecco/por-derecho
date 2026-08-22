@@ -8,6 +8,51 @@
 
 **Scope:** Concurso 36/2012; LPB/Luchy; 26-Apr-2016 Sun Park Owners' Community meeting; PwC attendance/engagement; asserted Community arrears; voting; estate-credit control; AC fees.
 
+## Controlling 22 August 2026 source-control supplement
+
+### Two carriers — do not merge their attachments
+
+The forensic mailbox rescan identifies two separate 2026 carriers:
+
+1. the 21-April reply carrier reproduces the visible 18→21 April text chain and contains only three inline PNG signature/rendering elements; and
+2. a separate forward of Pamanil's 18-April message carries the five substantive meeting PDFs.
+
+The present evidence therefore does **not** establish that the five PDFs were attached to, received with, or read before the Administrator's 21-April reply. Any contrary implication is superseded.
+
+### Carrier hash reconciliation
+
+The current Gmail API raw export of the 21-April carrier is 54,647 bytes and hashes to:
+
+`f3f558c118b06b3b07034eb279afb90a7b179a5203dfc79c1ff729ce544aa2e1`
+
+A legacy source note records a different carrier hash beginning `cb60ba`. Its underlying source file and serialization method remain unidentified. The values must not be silently substituted. Neither is a hash of the native 2016 message, which remains unrecovered.
+
+### Separate five-file package manifest
+
+| File | Size / pages | SHA-256 |
+|---|---:|---|
+| `CONVOCATORIA ABRIL 2016.pdf` | 775,653 bytes / 2 | `764e7b63a8507c4ca942032b39ee7838c4f3b32dedae1fd0161f093784a09bb9` |
+| `PRESUPUESTO 2016.pdf` | 583,240 bytes / 1 | `dea97881acc26b6b7758eab176b8bcd3848504885746afb6dfc08b45dc43714c` |
+| `LISTADO DEUDORES ABRIL 2016.pdf` | 1,363,863 bytes / 6 | `0ba34e23a7505fcfec8d06dff60cbd66ea8b933be6d4ed81f8777da119224d0f` |
+| `CARTA DE LA PRESIDENTA.pdf` | 444,458 bytes / 1 | `813d898b8046f3a7ec4a9058adc1cd67fa8e54b241f238dab7b6f971549fc592` |
+| `ACTA JUNTA EXTRAORDINARIA NOV-15.pdf` | 15,552,345 bytes / 38 | `d67f88c7243e84e1ceb89ecd0ef14dd4c199449d9fc6053282ddb7fc14b49c65` |
+
+The 38-page November 2015 ACTA binary is also attached, with the identical hash, to a native Gmail Sent message dated 12 May 2016. This materially strengthens its temporal provenance. It does not authenticate every statement in the ACTA or permit publication of the confidential lawyer-facing message body.
+
+### What the separate package adds—and does not add
+
+The convocation puts accounts, budget/fees, objections, alleged debtor balances, certificates, litigation authority, penalties, banking and LPB proceedings on the 26-April agenda. The budget leaves the bank balance as `???` and major operating lines unquantified. The schedule attributes a positive balance to each of 262 property codes and totals €3,866,774.25 without an owner ledger, transaction periods, CEXP/operator funding, credits or set-offs. The president's letter says sufficient documentation to convene was obtained only on 30 March.
+
+Those records create material authority, allocation, reconciliation and internal-consistency questions. They do not by themselves prove that a debt was valid or invalid, that the Administrator saw the package before replying, or that any person acted with improper or criminal intent.
+
+### Capacity and governance control
+
+The 21-April reply is LPB/Luchy-specific: it refuses authorisation for the proposed PwC engagement and asks the copied professionals not to provide services to Luchy without consent. It does not determine Gil Marer's separately claimed capacities for Matkator, CEXP, the Owners' Community or personally, nor any separate PwC mandate.
+
+An alleged balance may be relevant to LPB's vote if the legal conditions were satisfied. It cannot determine who lawfully convened, constituted, represented or bound the Community; whether offices, notice, quorum, proxies and the owner-and-coefficient threshold applicable to each resolution existed; or whether authority extended over Matkator, CEXP or other non-LPB rights.
+
+> **Control maxim:** debt arithmetic may affect one vote; it does not manufacture Community authority.
+
 ## 1. Source and custody
 
 **Located Gmail message:** `1a0294bdf7a986f8`
