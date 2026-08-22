@@ -9,6 +9,8 @@
 **Capacity asserted for the physical handover:** President of the Comunidad de Explotación (CEXP)  
 **Controlling rule:** Do not attribute Gil Marer's physical delivery of the keys to MRSP, Monterecco Sun Park, LPB, Pink Canary Services or any other entity merely because he was associated with those entities. The capacity asserted by the direct witness for this act is **President of CEXP**.
 
+> **22 August 2026 confirmation / anti-regression:** Gil Marer has issued Declaration 006 expressly correcting Declaration 005. He states that Pink never had “the keys” and had no authority to deliver them to the AC or anyone else. Declaration 006 confirms and strengthens this pre-existing capacity control; it does not erase the original source history.
+
 ---
 
 ## 1. Why this clarification exists
