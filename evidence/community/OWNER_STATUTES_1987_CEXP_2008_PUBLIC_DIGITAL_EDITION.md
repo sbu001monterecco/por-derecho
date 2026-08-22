@@ -1,19 +1,19 @@
 # Sun Park governance instruments: 1987 Owners' Statutes and 2008 CEXP material
 
-**Public digital edition (redacted) — 22 August 2026**
+**Public digital edition — 22 August 2026**
 
-## Publication boundary
+## Source provenance and publication status
 
-This is a source-led public edition of two foundational instrument sets. The image masters were received in a recent forward from a private mailbox and are held in protected custody. They contain names, addresses, signatures and other personal data; the forwarded copies also carry confidentiality language. They are therefore **not reproduced unredacted in this public repository**.
+This is a source-led public edition of two foundational instrument sets. The image copies were received by a forwarded email. That transmission route does **not** make the Acts or Statutes private or confidential, and does not change their character as governing instruments. It is relevant only to the provenance of the particular digital copies received.
 
-This edition publishes the operative, non-personal content needed to understand the documentary architecture, identifies its limits, and permits a party or competent body to request an inspected redacted copy or to compare an authenticated original. It does not publish legal advice, party emails, debtor lists, staff schedules, bank details or signature material.
+This edition publishes an indexed and searchable account of the operative content needed to understand the documentary architecture, identifies its limits, and allows comparison with an authenticated original. The present page is not a substitute for the Spanish originals or a legal opinion. A page-image facsimile is a separate technical publication layer; it is not withheld because the documents were forwarded by email.
 
 ## Custody and integrity record
 
 | Source ID | Description | Pages | SHA-256 of image master | Public status |
 |---|---|---:|---|---|
-| `SP-CP-1987` | Statutes of the Comunidad de Propietarios / horizontal-property instrument dated 1987 | 24 | `8e23ec5dc71efa42aedbed578120672010eebd203744ddd8b4bb78f4e28a6037` | Operative public edition below; unredacted image master protected |
-| `SP-CEXP-2008` | 2008 CEXP statutes-and-transfer compilation, including the 26 May 2008 tourist-operation transfer | 15 | `f5fe1c25116c9845fe9ba26b76c3e8780f4fff5953b233d280369f5892c6b4d7` | Operative public edition below; unredacted image master protected |
+| `SP-CP-1987` | Statutes of the Comunidad de Propietarios / horizontal-property instrument dated 1987 | 24 | `8e23ec5dc71efa42aedbed578120672010eebd203744ddd8b4bb78f4e28a6037` | Public digital edition below; received source image copy recovered and hash-verified |
+| `SP-CEXP-2008` | 2008 CEXP statutes-and-transfer compilation, including the 26 May 2008 tourist-operation transfer | 15 | `f5fe1c25116c9845fe9ba26b76c3e8780f4fff5953b233d280369f5892c6b4d7` | Public digital edition below; received source image copy recovered and hash-verified |
 
 The hashes identify the received copies, not an authenticated notarial, registry or official-custody copy. A later certified copy that differs in form, pagination or hash does not by itself establish a contradiction.
 
@@ -66,7 +66,7 @@ The 29 May 2012 Owners' Community accounting/bank extract separately records a d
 
 ## 5. Public access and correction
 
-The public pages link to this edition and give any affected party an equal route to submit an authenticated correction, a redacted primary copy, or evidence of a later amendment. A request for a controlled inspection copy may be directed to the publisher with the document ID and proposed relevance. No request is treated as an admission, and no public response is treated as proof of the underlying merits.
+The public pages link to this edition and give any affected party an equal route to submit an authenticated correction, an authenticated primary copy, or evidence of a later amendment. The fact that a copy was forwarded by email is not treated as a confidentiality restriction. No request or public response is treated as proof of the underlying merits.
 
 ## 6. Outstanding source-production requests
 
