@@ -11,11 +11,22 @@ The 4 February ACTA, the later LPB dación/adjudication sequence, a Community le
 In particular:
 
 - LPB was the debtor in Concurso 36/2012; Matkator was not thereby absorbed into that estate;
-- an amount appearing in an ACTA assessment table does not itself prove an enforceable debt, a payment, a work performed, a loss, a benefit or a valid resolution;
+- an amount appearing in an ACTA assessment table is a documented **claimed assessment/charge in that record**. It remains material even if it was never collected or later abandoned; it does not by itself prove an enforceable debt, a payment, a work performed, a loss, a benefit or a valid resolution;
 - a court or AC act later in time does not prove that the ACTA was filed, read, relied upon or known beforehand;
 - a document defect, conflict question or suspicious chronology does not itself establish falsity, deception, intent, collusion or a criminal offence.
 
 The public question is therefore: **for each named actor and each asset, what document shows authority, notice, use, reliance, payment, benefit and resulting effect?**
+
+### Documentary entry is not the end of the enquiry
+
+The record supports a four-stage audit, not an either/or choice between “debt proved” and “nothing happened”:
+
+1. **ACTA/document stage:** what assessment or claim the minutes record or purport to create;
+2. **ledger/certificate stage:** whether it was booked, certified, invoiced, demanded, contested or otherwise treated as a Community claim;
+3. **legal-effect stage:** whether a competent route made it valid, enforceable, contingent or assumed within a defined perimeter; and
+4. **downstream stage:** whether any recipient received, relied on, paid, collected, presented or used it in the insolvency, title, project, investor or public-support track.
+
+An absence of collection evidence does not erase the documentary entry. Conversely, the entry alone does not prove any later stage, purpose, fraud or common intent.
 
 ## 2. Source status and custody boundary
 
@@ -51,6 +62,10 @@ Two visible reconciliation issues are preserved rather than resolved: the works-
 | 29 March–5 April 2022 · signature/export/dissemination route | The scan’s visible e-signatures/post-meeting transmission are recorded in the controlled source chain. | Backdated fabrication, later judicial/AC knowledge, payment, collection or any actor’s criminal intent. |
 
 The 21 February deed also recites a 22 January Auto while controlled primary copies identify 26 January Autos. The relationship between those dates must be reconciled from the complete court file; neither date should be used as a generic shorthand for a supposedly settled 2022 judicial order.
+
+The early-April email material establishes a **limited transmission route**: a copy reached a third-party co-owner recipient and then LPB’s side. It is not a complete convocation, recipient, service or concealment record. The original dispatch list, delivery receipts and owner-by-owner notice route remain open.
+
+Later HNT, RICPE, FEDER and regional-incentive material is a separate audit track. No reviewed source establishes that it received, relied upon or financed this ACTA or its entries. Chronology can justify targeted requests for title/availability, other-aid, invoices, payment and justification files; it cannot prove causation, awareness or overlap.
 
 ## 5. Actor-specific enquiry matrix
 
