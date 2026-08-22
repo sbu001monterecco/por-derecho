@@ -81,6 +81,6 @@
   }
 
   document.querySelectorAll('p small').forEach(node => {
-    if (/Percentages are investigative strength|Porcentajes.*prioridad|investigative strength/i.test(node.textContent)) node.textContent = copy.scoreText;
+    if (/Percentages are investigative strength|Los porcentajes son fuerza investigativa|Porcentajes.*prioridad|investigative strength/i.test(node.textContent)) node.textContent = copy.scoreText;
   });
 })();

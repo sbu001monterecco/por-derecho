@@ -95,6 +95,7 @@ def main() -> int:
         "Prueba primero. Atribución individual. Sin culpabilidad colectiva.",
         "evidence-collection priority only",
         "prioridad de obtención de prueba",
+        "Los porcentajes son fuerza investigativa",
     ):
         if phrase not in module:
             errors.append(f"criminal public-boundaries module: missing safeguard {phrase!r}")
