@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" role="img" aria-labelledby="title desc">
-  <title id="title">El Segundo Par de Ojos</title>
-  <desc id="desc">Dos ojos abstractos y una balanza representan una segunda revisión jurídica neutral.</desc>
-  <g fill="none" stroke="#0b2b45" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M3 27c6-10 14-15 24-15s18 5 24 15c-6 10-14 15-24 15S9 37 3 27Z"/>
-    <circle cx="27" cy="27" r="7"/>
-    <path d="M33 14c4-6 9-9 15-9 6 0 11 3 15 9-4 6-9 9-15 9-3 0-6-.8-8.6-2.5"/>
-    <circle cx="48" cy="14" r="3.6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" role="img" aria-labelledby="title desc">
+  <title id="title">The Traceability Eye</title>
+  <desc id="desc">An eye, provenance path, euro node and verified document represent scrutiny of source, authority and destination.</desc>
+  <rect x="1.5" y="1.5" width="93" height="69" rx="17" fill="#fffaf0" stroke="#c58a2b" stroke-width="3"/>
+  <g fill="none" stroke="#0b2b45" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 31c8-12 18-18 30-18s22 6 30 18c-8 12-18 18-30 18S18 43 10 31Z"/>
+    <circle cx="40" cy="31" r="9"/><circle cx="40" cy="31" r="3.5" fill="#0b2b45"/>
+    <path d="M58 48c5 0 7 7 12 7h8"/><rect x="68" y="44" width="17" height="19" rx="2.5"/><path d="m72 54 3 3 6-7"/>
   </g>
-  <g fill="none" stroke="#c58a2b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M42 29h16M50 26v17M45 31l-4 7h8l-4-7ZM55 31l-4 7h8l-4-7ZM46 43h8"/>
+  <g fill="none" stroke="#c58a2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 19h16c5 0 8 3 8 8v7"/><circle cx="79" cy="34" r="8" fill="#fff4d7"/>
   </g>
+  <text x="79" y="38.2" fill="#855814" font-family="Arial, sans-serif" font-size="12" font-weight="800" text-anchor="middle">€</text>
 </svg>

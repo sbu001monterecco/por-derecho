@@ -80,7 +80,7 @@
   else main.append(section);
 
   const component = document.createElement('script');
-  component.src = new URL('source-of-funds-notice-20260820.js', base).href;
+  component.src = new URL('source-of-funds-notice-20260820.js?v=20260822b', base).href;
   component.dataset.sourceFundsComponent = '20260820';
   document.head.append(component);
 })();

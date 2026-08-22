@@ -53,13 +53,13 @@ jobs:
           q = f"source={os.environ['SOURCE_SHA'][:12]}&run={os.environ['RUN_ID']}"
           targets = {
               'canonical_es': (f'{base}/es/aviso-procedencia-fondos-servicios-profesionales/?{q}', [
-                  'La procedencia del dinero y de los servicios también forma parte de la prueba.',
-                  'Lo que este aviso no afirma',
+                  '¿Quién paga y qué se está defendiendo?',
+                  'Lo que esta advertencia no afirma',
                   'Derecho de respuesta, corrección y documentación',
               ]),
               'canonical_en': (f'{base}/en/source-of-funds-professional-services-notice/?{q}', [
-                  'The source of money and professional services is part of the evidence too.',
-                  'What this notice does not allege',
+                  'Who is paying—and what is being defended?',
+                  'What this warning does not allege',
                   'Right of response, correction and documentation',
               ]),
               'loader': (f'{base}/assets/site.js?{q}', [
@@ -183,8 +183,8 @@ jobs:
                 if (rootCount !== 1) failures.push(`notice roots=${rootCount}`);
                 const heading = (await page.locator(`${selector} h2`).innerText()).trim();
                 const expectedHeading = target.path.startsWith('/en/')
-                  ? 'The source of money and professional services is part of the evidence too.'
-                  : 'La procedencia del dinero y de los servicios también forma parte de la prueba.';
+                  ? (target.variant === 'compact' ? 'Before accepting instructions or payment' : 'Who is paying—and what is being defended?')
+                  : (target.variant === 'compact' ? 'Antes de aceptar instrucciones o pagos' : '¿Quién paga y qué se está defendiendo?');
                 if (heading !== expectedHeading) failures.push(`heading=${heading}`);
                 const icon = await page.locator(`${selector} img`).getAttribute('src');
                 if (!icon || !icon.includes('second-pair-eyes.svg')) failures.push(`icon=${icon}`);
@@ -203,8 +203,8 @@ jobs:
             }
 
             for (const item of [
-              ['/es/aviso-procedencia-fondos-servicios-profesionales/', 'Lo que este aviso no afirma'],
-              ['/en/source-of-funds-professional-services-notice/', 'What this notice does not allege'],
+              ['/es/aviso-procedencia-fondos-servicios-profesionales/', 'Lo que esta advertencia no afirma'],
+              ['/en/source-of-funds-professional-services-notice/', 'What this warning does not allege'],
             ]) {
               const page = await browser.newPage();
               const url = `${base}${item[0]}?${q}`;

@@ -67,3 +67,28 @@
   .sfn { box-shadow: none; break-inside: avoid; }
   .sfn__actions { display: none; }
 }
+
+
+/* Traceability Eye prominence and accessible entrance · 22 August 2026 */
+.sfn { border-top-width: 7px; box-shadow: 0 20px 52px rgba(11,43,69,.14); isolation:isolate; }
+.sfn::before { content:""; position:absolute; z-index:-1; left:0; top:0; width:0; height:4px; background:linear-gradient(90deg,var(--sfn-gold),#f2c96f,var(--sfn-gold)); transition:width 720ms ease-out; }
+.sfn--visible::before { width:100%; }
+.sfn__grid { grid-template-columns:190px minmax(0,1fr); }
+.sfn__mark { box-shadow:inset 0 0 0 4px rgba(197,138,43,.08); }
+.sfn__mark img { width:128px; height:96px; object-fit:contain; }
+.sfn__kicker { display:inline-flex; padding:.32rem .58rem; border:1px solid rgba(133,88,20,.35); border-radius:999px; background:var(--sfn-gold-soft); color:#72490f; }
+.sfn h2 { max-width:27ch; font-size:clamp(1.85rem,3.4vw,3rem); }
+.sfn__rule { border-left-width:6px; }
+.sfn__direction { margin:.7rem 0; color:var(--sfn-ink); font-weight:900; line-height:1.48; }
+.sfn--compact .sfn__grid { grid-template-columns:106px minmax(0,1fr); }
+.sfn--compact .sfn__mark img { width:82px; height:64px; }
+.sfn--compact .sfn__direction { font-size:.88rem; }
+@media (max-width:760px) {
+  .sfn__grid,.sfn--compact .sfn__grid { grid-template-columns:1fr; }
+  .sfn__mark img,.sfn--compact .sfn__mark img { width:82px; height:62px; }
+  .sfn h2 { font-size:clamp(1.62rem,8.7vw,2.35rem); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .sfn::before { width:100%; transition:none; }
+  .sfn__button { transition:none; }
+}
