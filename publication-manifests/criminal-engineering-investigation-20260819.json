@@ -2,13 +2,13 @@
   "publication_id": "SUN-PARK-CRIMINAL-ENGINEERING-INVESTIGATION-20260819",
   "owner": "Por Derecho / Project Sun Rock",
   "current_state": "LIVE_VERIFIED",
-  "control_date": "2026-08-19",
+  "control_date": "2026-08-22",
   "controlling_pr": 532,
   "ci_head_sha": "150a1acaf1add14f8740fc0c976b4126d5676894",
   "merge_sha": "c00ae0765125a660d972bdf0c796492e53201094",
   "merged_at": "2026-08-19T21:53:32Z",
   "publication_type": "bilingual live forensic investigation architecture, unitary repository audit and actor-specific cross-site gateway",
-  "subject": "Alleged multi-stage criminal engineering and enabling across the Sun Park to CAM to HNT to MYND chain",
+  "subject": "Actor-specific forensic questions concerning a disputed multi-stage Sun Park to CAM to HNT to MYND chain",
   "expected_routes": {
     "es": [
       "es/ingenieria-forense-criminal-sun-park/index.html"
@@ -38,7 +38,7 @@
     "Every criminal or serious non-compliance hypothesis must be tested element by element with exculpatory evidence and the strongest alternative explanation."
   ],
   "allegation_boundary": {
-    "por_derecho_allegation": "The Acosta Matos and RIC Private Equity perimeters may have designed, exploited or preserved a multi-stage sequence assisted by knowing, reckless, negligent or passive enablers.",
+    "por_derecho_allegation": "Por Derecho tests whether identified contested acts had lawful authority, a documented source, individual authorship, relevant knowledge, causal effect and traceable benefit. A chronology, relationship, attendance or formal role does not establish a common plan or criminal responsibility.",
     "judicial_finding": false,
     "collective_guilt_presumed": false,
     "presumption_of_innocence_preserved": true,
@@ -64,15 +64,16 @@
     "valuers, lawyers, experts and operators",
     "authorities, supervisors and funding bodies"
   ],
-  "enabler_ladder": [
-    "E0 unwitting conduit",
-    "E1 professional error",
-    "E2 negligent gatekeeper",
-    "E3 reckless or conscious disregard",
-    "E4 knowing facilitation",
-    "E5 essential cooperation or inducement",
-    "E6 coordinated participation",
-    "E7 concealment, retaliation or benefit preservation"
+  "actor_attribution_questions": [
+    "specific act or omission",
+    "capacity, authority and applicable duty",
+    "authorship, instruction or adoption",
+    "source provenance and independent verification",
+    "relevant knowledge and intent where legally required",
+    "use, reliance or later transmission",
+    "causation, prejudice and traceable benefit",
+    "strongest contrary evidence and innocent explanation",
+    "competent legal classification and outcome"
   ],
   "priority_issues": [
     "P0 definitive creditor texts versus debt used in 2022",
@@ -187,17 +188,17 @@
   ],
   "live_markers": {
     "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/": [
-      "ALEGACIÓN CENTRAL DE POR DERECHO",
+      "HIPÓTESIS INVESTIGATIVAS DE POR DERECHO",
       "Las ocho fases de la presunta ingeniería",
       "LAJ / oficina judicial",
-      "Escala de facilitación E0–E7",
+      "No existe una escala pública de «facilitación»",
       "Derecho de respuesta"
     ],
     "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/": [
-      "POR DERECHO CENTRAL ALLEGATION",
+      "POR DERECHO INVESTIGATIVE HYPOTHESES",
       "The eight phases of the alleged engineering",
       "LAJ / judicial office",
-      "E0–E7 enabler ladder",
+      "No public “enabler” scale",
       "Right of response"
     ],
     "https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js": [
@@ -212,7 +213,7 @@
     "https://sbu001monterecco.github.io/por-derecho/assets/data/criminal-engineering-investigation-v1.json": [
       "ACTIVE_INVESTIGATION",
       "CE-P8",
-      "E7",
+      "actor_attribution_questions",
       "CE-010"
     ]
   },

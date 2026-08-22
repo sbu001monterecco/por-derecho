@@ -63,6 +63,9 @@ STALE_ENGINE_LABELS = (
     "asistidos por facilitadores conscientes, imprudentes, negligentes o pasivos",
 )
 
+PUBLIC_DATA = ROOT / "assets/data/criminal-engineering-investigation-v1.json"
+PUBLIC_MANIFEST = ROOT / "publication-manifests/criminal-engineering-investigation-20260819.json"
+
 
 def main() -> int:
     errors: list[str] = []
@@ -103,6 +106,14 @@ def main() -> int:
     loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
     if "CRIMINAL-PUBLIC-BOUNDARIES-20260822" not in loader:
         errors.append("assets/site.js: criminal public-boundaries loader is missing")
+
+    for path in (PUBLIC_DATA, PUBLIC_MANIFEST):
+        text = path.read_text(encoding="utf-8")
+        for stale in STALE_ENGINE_LABELS:
+            if stale in text:
+                errors.append(f"{path.relative_to(ROOT)}: stale public categorisation remains: {stale!r}")
+        if "enabler_ladder" in text:
+            errors.append(f"{path.relative_to(ROOT)}: public enabler ladder field remains")
 
     sitemap = (ROOT / "sitemap-prosecution-evidence.xml").read_text(encoding="utf-8")
     for url in (

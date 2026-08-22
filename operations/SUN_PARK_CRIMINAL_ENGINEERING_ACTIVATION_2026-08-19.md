@@ -3,7 +3,7 @@
 **Activated:** 2026-08-19  
 **State:** LIVE_VERIFIED — repository audit, bilingual public architecture, private source index and actor-specific gateways deployed  
 **Source merge:** PR #532 · `c00ae0765125a660d972bdf0c796492e53201094`  
-**Scope:** Acosta Matos/CAM/HNT, RIC Private Equity perimeter, Insolvency Administration, judge, LAJ, notary, Land Registry, valuers, lawyers, operators, authorities and other potential enablers
+**Scope:** Acosta Matos/CAM/HNT, RIC Private Equity perimeter, Insolvency Administration, judge, LAJ, notary, Land Registry, valuers, lawyers, operators, authorities and other relevant actors whose conduct requires evidence-led, actor-specific examination
 
 ## Controlling posture
 
@@ -15,7 +15,7 @@ The investigation must:
 
 - test the sequence as a whole without collapsing actors into collective guilt;
 - allocate authority, knowledge, duty, action, omission, benefit and harm actor by actor;
-- distinguish professional error, negligent gatekeeping, conscious disregard, knowing facilitation, essential cooperation, coordinated participation and concealment/retaliation;
+- test each proposed attribution through the specific act or omission, capacity, authority, authorship, source provenance, knowledge or intent where required, causation, prejudice, benefit and strongest contrary explanation; no public rank is assigned to a person or entity;
 - identify the strongest lawful or innocent explanation for every adverse hypothesis;
 - preserve the presumption of innocence and the right of response;
 - keep private drafts, witnesses, privileged communications and preservation strategy outside the public repository.
@@ -30,7 +30,7 @@ The new layer does not replace the adjudication reconstruction or the Article 15
 
 1. the eight-phase alleged engineering sequence;
 2. actor-specific responsibility and judge/LAJ separation;
-3. the E0–E7 enabler ladder;
+3. an actor-attribution protocol rather than public ranks;
 4. false-premise propagation through formal acts;
 5. criminal/non-compliance hypotheses tested element by element;
 6. evidence-preservation and retaliation controls;
@@ -101,7 +101,7 @@ Canonical routes:
 
 The public pages identify the allegation strongly while showing the evidential boundary, strongest defence, missing evidence and right of response.
 
-Actor-specific gateways are live on the principal CAM, RICPE, Administrator, judge, adjudication, lender and 360-degree dependency routes. They do not assign E-levels to named actors without a separately evidenced finding.
+Actor-specific gateways are live on the principal CAM, RICPE, Administrator, judge, adjudication, lender and 360-degree dependency routes. They do not rank or categorise named actors publicly.
 
 ## Repository audit and validation
 
