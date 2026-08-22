@@ -136,3 +136,31 @@
   module.dataset.cliffeJonesRelationshipMapLoader = '20260822';
   document.head.appendChild(module);
 })();
+
+/* CAM-DIRECT-INSTRUCTION-SHADOW-ADMIN-JUDICIAL-OMISSION-ROUTE-LOADER-20260823 */
+(() => {
+  const normalise = value => {
+    let path = value.replace(/\/index\.html$/, '/');
+    if (!path.endsWith('/')) path += '/';
+    return path.toLowerCase();
+  };
+  const path = normalise(location.pathname);
+  const routes = [
+    '/en/sun-park-takeover-7-june-2018/',
+    '/es/toma-control-sun-park-7-junio-2018/',
+    '/en/insolvency-classification-parallel-lives/',
+    '/es/calificacion-concurso-36-2012-vidas-paralelas/',
+    '/en/acosta-matos-perimeter/',
+    '/es/acosta-matos-perimetro/'
+  ];
+  if (!routes.some(route => path.endsWith(route))) return;
+  if (document.querySelector('script[data-cam-direct-instruction-loader]')) return;
+
+  const current = document.currentScript;
+  if (!current) return;
+  const module = document.createElement('script');
+  module.src = new URL('cam-direct-instruction-shadow-admin-judicial-omission-20260823.js?v=20260823a', current.src).href;
+  module.async = false;
+  module.dataset.camDirectInstructionLoader = '20260823';
+  document.head.appendChild(module);
+})();
