@@ -4,6 +4,11 @@
 **Status:** evidence-control title and framing.  
 **Underlying workpaper:** `COMMUNITY_ACTAS_TWO_TRACK_AUDIT.md`.
 
+**21-Aug-2026 controlling supplement:** read this file with `AGENTS.md` and
+`archive/SUN_PARK_COMMUNITY_CRIMINAL_INSTRUMENTALISATION_NON_DEROGATION_CONTROL_21AUG2026.md`.
+Por Derecho's criminal-instrumentalisation attribution is non-optional. The
+mechanisms and individual offence elements remain to be proved actor by actor.
+
 ## 1. Naming rule
 
 This is the controlling evidential title for the Sun Park governance/minutes reconstruction from 2008 through the 2022 transition.
@@ -14,13 +19,19 @@ The public-safe and court-safe label is therefore:
 
 > **Two Competing Governance Records: Comunidad, Exploitation and the Disputed Majority (2008-2022)**
 
-## 2. The capture hypothesis — retained, but not assumed
+## 2. Express criminal attribution; mechanisms tested, not assumed
 
-The repository may test the following hypothesis:
+The repository records Por Derecho's express allegation that the Community organ
+and its documentary outputs were criminally instrumentalised. The following is
+the principal mechanism to test:
 
 > From 2011 onward, a numerically minority Owners’ Community governance line may have acquired effective decision-making control through the attribution of Community debt to LPB, the resulting exclusion of LPB from voting, and the later use of those resolutions to generate or propagate authority over debt, records, litigation, access, security, operation or related matters.
 
-That proposition is **not a repository conclusion**. It must be proved or narrowed act-by-act and resolution-by-resolution.
+The **attribution of that criminal case thesis to Por Derecho is a repository
+conclusion**. Whether the mechanism occurred as alleged, whether a particular
+document was false or unauthorised, and whether a named person completed an
+offence are not adjudicated conclusions. They must be proved or narrowed act by
+act, actor by actor and resolution by resolution.
 
 The fact that a numerical minority participated or voted does **not by itself** establish invalidity. The controlling questions are the applicable voting rules, the legal and economic basis of any debt used to remove voting rights, the convocation/proxy/majority requirements for the particular resolution, and the limits of the Owners’ Community’s authority relative to CEXP, the operator, registered owners and the tourism framework.
 
@@ -42,7 +53,8 @@ Audit every minute and linked act for:
 - security/access/technical/operational decisions;
 - later reliance before courts, the insolvency administrator, administrations, counterparties or investors.
 
-This is the line in which the **capture hypothesis** is to be tested, not presumed.
+This is the line in which the alleged **criminal-instrumentalisation mechanism**
+is to be tested, not presumed as an adjudicated finding.
 
 ### Record B — original / majority / exploitation-side line from 2008 onward
 
@@ -153,7 +165,9 @@ The visual uses:
 - a left lane for the original/majority/exploitation record;
 - a right lane for the disputed Owners’ Community record from 2011 onward;
 - a neutral downstream bridge for the 7 June 2018 physical-control event;
-- a separate successor phase from 2022;
+- a 2017/2018–2022 later adoption/culmination and documentary-conversion phase,
+  with any later title/control threshold separately shown but not treated as a
+  cure or immunity;
 - an explicit **capture-hypothesis causal spine**: costs → attributed debt → voting filter → apparent voting majority → authority outputs → downstream reliance;
 - a voting-filter panel using source-controlled percentages and clearly marking approximations/unverified figures.
 

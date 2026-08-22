@@ -372,6 +372,12 @@ Do not paste the same long narrative everywhere. Reuse the **same visual grammar
 
 ## 13. Criminal-characterisation control
 
+**21-Aug-2026 controlling supplement:** read this section with
+`archive/SUN_PARK_COMMUNITY_CRIMINAL_INSTRUMENTALISATION_NON_DEROGATION_CONTROL_21AUG2026.md`.
+The later CAM/Acosta Matos period is an alleged adoption/culmination and
+documentary-conversion phase, not a neutral successor phase. The criminal thesis
+is non-derogable; adjudicated guilt and individual offence elements are not.
+
 The Project expressly alleges that parts of the Community-governance displacement involved falsification, usurpation or instrumentalisation and may form part of criminal conduct rather than a merely civil disagreement. Preserve that allegation where relevant and do not dilute it into `just a civil dispute`.
 
 At the same time:

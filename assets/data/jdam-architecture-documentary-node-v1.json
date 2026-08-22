@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "control_date": "2026-08-20",
+  "control_date": "2026-08-21",
   "status": "ACTIVE_DOCUMENTARY_RECONSTRUCTION",
   "public_boundary": {
     "not_a_finding": true,
@@ -8,10 +8,15 @@
     "actor_by_actor_proof_required": true,
     "no_collective_authority_liability": true,
     "silence_is_not_admission": true,
-    "article_262": "LECrim assessment requested; no breach asserted"
+    "article_262": "LECrim assessment requested; no breach asserted",
+    "criminal_thesis_must_not_be_neutralised": true,
+    "criminal_thesis_status": "Por Derecho express allegation; not an adjudicated finding"
   },
+  "periodisation": "2017/2018-2022 later adoption/culmination phase; not a neutral successor phase",
   "central_question_es": "Si la documentación arquitectónica pudo convertirse, con o sin conocimiento del profesional, en una capa de legitimación técnica dentro de una secuencia económica, administrativa y judicial más amplia.",
   "central_question_en": "Whether architectural documentation may have become, with or without the professional's knowledge, a technical-legitimacy layer within a wider economic, administrative and judicial sequence.",
+  "express_criminal_attribution_es": "Por Derecho alega instrumentalización penal del órgano comunitario y conversión de autoridad aparente en autoridad profesional y pública; la responsabilidad individual de JDAM exige prueba actor por actor.",
+  "express_criminal_attribution_en": "Por Derecho alleges criminal instrumentalisation of the Community organ and conversion of apparent authority into professional and public authority; JDAM's individual responsibility requires actor-by-actor proof.",
   "visado": {
     "date": "2022-02-25",
     "title": "Reforma interior parcial y acondicionamientos exteriores de edificación turística",
@@ -23,6 +28,27 @@
     "reference": "22/000036/7800",
     "reproduced_coagc_number": "2315",
     "status": "professional identifiers require COALZ/COAGC reconciliation"
+  },
+  "community_acta_2022_copy": {
+    "meeting_date_stated": "2022-02-04",
+    "source_status": "located seven-page scanned copy; not diligenced original or complete native package",
+    "attendance_stated_percent": 20.993,
+    "budget_annex_date_stated": "2022-01-28",
+    "budget_annex_amount_eur": 4467793.26,
+    "greenwood_signature_block_date": "2022-03-29",
+    "copy_metadata_created": "2022-03-31",
+    "copy_metadata_modified": "2022-05-06",
+    "purported_outputs": [
+      "CAM-supplied/JDAM-prepared project approval",
+      "licence and unified-operation authority",
+      "joint Community bank authority for JDAM and FMMM"
+    ],
+    "not_proved": [
+      "valid notice, title, powers, vote or signatures",
+      "lawful prior professional commission",
+      "knowledge, criminal intent, offence or liability"
+    ],
+    "date_control": "do not state a 5 January 2022 JDAM project signature without the native signature/timestamp package"
   },
   "institutional_events": [
     {

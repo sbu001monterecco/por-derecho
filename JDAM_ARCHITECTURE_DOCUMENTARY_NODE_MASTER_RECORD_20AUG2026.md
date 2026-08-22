@@ -12,7 +12,9 @@ The architectural file is investigated as a possible **documentary conversion no
 
 `apparent authority → professional commission → technical project → visado → municipal/tourism use → investment/finance/tax/public-support reliance → operation → judicial evidence`
 
-The word “possible” is controlling. The record does not presume that the architect knew of, adopted or participated in any unlawful purpose.
+The word “possible” remains controlling as to JDAM's individual criminal responsibility. It must not, however, neutralise Por Derecho's case thesis: **Por Derecho expressly alleges that the architecture/visado chain formed part of a criminal instrumentalisation of disputed Community authority, not merely a professional or civil-authority defect.** The unresolved actor-specific issue is whether the architect knew of, adopted, used, escalated or benefited from that alleged purpose.
+
+The correct periodisation is **later adoption/culmination (2017/2018–2022)**, not a neutral successor phase. It is unnecessary to prove that JDAM designed a single common plan in 2011 before testing his own later knowledge, commission, project, signature, explanation, Community role, bank authority and downstream use.
 
 ## Visado anchor
 
@@ -27,6 +29,24 @@ The word “possible” is controlling. The record does not presume that the arc
 - Reproduced COAGC/2315 field: unresolved and requiring exact inter-College reconciliation.
 
 The reviewed copy does not by itself establish valid Community authority, consent across every private unit, title, absence of conflict, correspondence with actual works, later site direction, illegality or liability.
+
+## 4 February ACTA / 28 January annex — newly controlled source position
+
+A seven-page scanned copy located as a Gmail attachment (`1809a319667e145e`) records on its face:
+
+- purported attendance/representation of 20.993%;
+- JDAM as president and as legal representative of Proyectos Acosta Matos, S.L.;
+- Laura Acosta Matos for Construcciones Acosta Matos, S.A. and Javier Acosta Matos for Construcciones Acos-Matos, S.L.;
+- the only execution project as supplied by CAM and prepared/explained by JDAM;
+- purported unanimous approval of the project and licence/unified-operation authority;
+- purported joint Community bank authority for JDAM and FMMM; and
+- signature marks over the president/secretary labels plus a Greenwood digital-signature block dated 29 March 2022.
+
+The copy's metadata records creation on 31 March 2022 and modification on 6 May 2022. Its budget annex is dated 28 January 2022 and states €4,467,793.26, but the identity/authenticity of its signature marks is not established from the copy.
+
+These are features of a **located copy**, not proof of the diligenced original, valid notice, title, power, vote, signature authenticity, lawful commission or criminal intent. A purported 4 February approval does not self-ratify an earlier professional commission.
+
+The repository must not state as fact that JDAM “signed the project on 5 January 2022.” A 5 January/15 January/date-field conflict remains open. The controlled anchor is the 25 February visado until the native commission, project version, signature certificate and timestamp package resolve the issue.
 
 ## Procedural record
 
@@ -55,6 +75,18 @@ The architectural question is not limited to refurbishment of a hotel. It may to
 10. DP 1901/2026 and preservation of native professional evidence.
 
 No coordinated participation by all public authorities is alleged. Each authority must be assessed by its own notice, competence, custody, verification and decision.
+
+## Criminal issue map
+
+The professional-documentary chain must be assessed in parallel under the potentially applicable date-specific criminal framework, without treating similarity as legal completion:
+
+- documentary falsehood and knowing use (CP arts. 390–396), if an essential falsehood, authorship/use and the required knowledge/purpose are proved;
+- fraud or procedural fraud (CP arts. 248/250), if deception caused a disposition or judicial error, economic prejudice and the required profit intent;
+- false attribution of powers of disposition (CP art. 251.1), if the required disposition over property followed;
+- disloyal administration (CP art. 252), subject to proof of actual management powers, excess/breach and damage; and
+- any insolvency, group or other offence only if its separate statutory elements and the actor's conduct are proved.
+
+The source-controlled conclusion is therefore stronger than “possible lack of legitimacy” but narrower than conviction: **Por Derecho alleges criminal conversion of apparent Community authority into professional/public authority; the native commission/signature/use chain is required to determine JDAM's own knowledge, intent, conduct, benefit and causation.**
 
 ## Professional chronology and visual indexes
 
