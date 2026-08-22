@@ -1,0 +1,104 @@
+name: Validate Sun Park 262-finca journey
+
+on:
+  pull_request:
+    paths:
+      - 'research/sun-park-262-fincas/**'
+      - 'assets/data/sun-park-262-finca-journey-v1.json'
+      - 'assets/finca-journey-2008-present-20260822.*'
+      - 'en/262-properties-journey-2008-present/**'
+      - 'es/fincas-262-recorrido-2008-hoy/**'
+      - 'en/sun-park-forensic-map-262-properties/**'
+      - 'es/mapa-forense-sun-park-262-fincas/**'
+      - 'en/land-registry-implementation-property-by-property/**'
+      - 'es/implementacion-registral-finca-por-finca/**'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'sitemap-case-governance.xml'
+      - 'publication-manifests/262-finca-journey-2008-present-20260822.json'
+      - 'operations/SUN_PARK_262_FINCA_JOURNEY_ACTIVATION_2026-08-22.md'
+      - 'scripts/build_262_finca_journey.py'
+      - 'scripts/validate_262_finca_journey.py'
+      - 'scripts/render_262_finca_journey.mjs'
+      - '.github/workflows/validate-262-finca-journey.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'research/sun-park-262-fincas/**'
+      - 'assets/data/sun-park-262-finca-journey-v1.json'
+      - 'assets/finca-journey-2008-present-20260822.*'
+      - 'en/262-properties-journey-2008-present/**'
+      - 'es/fincas-262-recorrido-2008-hoy/**'
+      - 'en/sun-park-forensic-map-262-properties/**'
+      - 'es/mapa-forense-sun-park-262-fincas/**'
+      - 'en/land-registry-implementation-property-by-property/**'
+      - 'es/implementacion-registral-finca-por-finca/**'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'sitemap-case-governance.xml'
+      - 'publication-manifests/262-finca-journey-2008-present-20260822.json'
+      - 'operations/SUN_PARK_262_FINCA_JOURNEY_ACTIVATION_2026-08-22.md'
+      - 'scripts/build_262_finca_journey.py'
+      - 'scripts/validate_262_finca_journey.py'
+      - 'scripts/render_262_finca_journey.mjs'
+      - '.github/workflows/validate-262-finca-journey.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-262-finca-journey-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Verify generated public projection
+        run: python3 scripts/build_262_finca_journey.py --check
+      - name: Validate 262-finca source boundaries and route continuity
+        run: python3 scripts/validate_262_finca_journey.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/finca-journey-2008-present-20260822.js
+          node --check scripts/render_262_finca_journey.mjs
+      - name: Start local site at the production subpath
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          ln -s "$GITHUB_WORKSPACE" "$RUNNER_TEMP/site/por-derecho"
+          nohup python3 -m http.server 4173 --directory "$RUNNER_TEMP/site" >"$RUNNER_TEMP/262-finca-http.log" 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/por-derecho/en/262-properties-journey-2008-present/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/262-finca-http.log" || true
+          exit 1
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          test -n "$BROWSER_PATH"
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+      - name: Render and exercise ES/EN 262-finca journeys
+        env:
+          PSR_BASE_URL: http://127.0.0.1:4173/por-derecho
+          PSR_262_FINCA_ARTIFACT_DIR: artifacts/262-finca-journey-local
+        run: node scripts/render_262_finca_journey.mjs
+      - name: Upload local render evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: 262-finca-journey-render-evidence
+          path: artifacts/262-finca-journey-local
+          if-no-files-found: warn
+          retention-days: 14

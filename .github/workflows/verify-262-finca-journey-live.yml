@@ -1,0 +1,55 @@
+name: Verify Sun Park 262-finca journey live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'research/sun-park-262-fincas/**'
+      - 'assets/data/sun-park-262-finca-journey-v1.json'
+      - 'assets/finca-journey-2008-present-20260822.*'
+      - 'en/262-properties-journey-2008-present/**'
+      - 'es/fincas-262-recorrido-2008-hoy/**'
+      - 'en/sun-park-forensic-map-262-properties/**'
+      - 'es/mapa-forense-sun-park-262-fincas/**'
+      - 'en/land-registry-implementation-property-by-property/**'
+      - 'es/implementacion-registral-finca-por-finca/**'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'sitemap-case-governance.xml'
+      - 'scripts/verify_262_finca_journey_live.py'
+      - '.github/workflows/verify-262-finca-journey-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-262-finca-journey-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Read back the deployed source and direct routes
+        run: |
+          python3 scripts/verify_262_finca_journey_live.py \
+            --attempts 8 \
+            --interval 15 \
+            --timeout 25 \
+            --output artifacts/262-finca-journey-live/latest.json
+      - name: Upload public-edge verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: 262-finca-journey-live-evidence
+          path: artifacts/262-finca-journey-live
+          if-no-files-found: error
+          retention-days: 90

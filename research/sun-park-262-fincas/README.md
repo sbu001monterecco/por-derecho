@@ -93,3 +93,17 @@ Para cada finca debe contestarse:
 Las contradicciones se conservan. Si una valoración, lista de propietarios, nota simple, acta, escritura, hoja de adquisición o documento concursal da una versión distinta, se añade como **otra capa temporal**. No se reemplaza una fuente incómoda por una versión “limpia”.
 
 El objetivo del futuro hilo es producir, para las 262 fincas, una matriz temporal **hecho → fuente → fecha → nivel de prueba → contradicción → explicación adversa → siguiente documento necesario**.
+
+## 8. Primera publicación controlada: recorrido 2008–hoy
+
+La primera proyección pública de ese trabajo ya se genera de forma reproducible, sin sustituir la matriz privada ni afirmar una cadena completa donde todavía no existe:
+
+- libro de fuentes y eventos de entrada: `finca-journey-evidence-v1.json`;
+- generador: `scripts/build_262_finca_journey.py`;
+- proyección pública derivada: `assets/data/sun-park-262-finca-journey-v1.json`;
+- validador: `scripts/validate_262_finca_journey.py`;
+- rutas directas: `/es/fincas-262-recorrido-2008-hoy/` y `/en/262-properties-journey-2008-present/`.
+
+La proyección incluye las 262 filas físicas. Cuando no hay evento específico de finca vinculado a fuente, muestra expresamente `NOT_YET_RECONSTRUCTED` o `SOURCE_POINTER_ONLY`; el contexto global de 2008 en adelante se presenta en carril separado y **no** se replica como transmisión, deuda, posesión, pago, autoridad, fraude o intención de cada finca.
+
+No se editan manualmente las filas derivadas: cualquier corrección entra primero en el libro de fuentes con fecha, estado de prueba, límite, explicación alternativa y siguiente documento necesario, y después se regenera y valida la proyección. La publicación mantiene fuera del repositorio público las escrituras y notas nativas, identificadores personales, direcciones, firmas, datos bancarios/pagos, comunicaciones privadas, material privilegiado y ubicaciones privadas de custodia.
