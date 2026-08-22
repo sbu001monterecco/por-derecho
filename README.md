@@ -12,6 +12,7 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/en/sun-park-takeover-7-june-2018/camel-travel-lanzarote-information/` — subsidiary English record of the Cliffe-Jones dual Sun Park/MYND publication
 - `/es/comunidad-instrumentalizacion/actas-2011-2022/` — canonical Spanish chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/en/community-instrumentalisation/minutes-2011-2022/` — canonical English chronology of Owners’ Community/CEXP minutes, linked records and authority
+- `/es/comunidad-instrumentalizacion/instrumentos-gobernanza-2008/` and `/en/community-instrumentalisation/2008-governance-instruments/` — controlled public editions of the 1987 Owners’ Statutes and 2008 CEXP source instruments
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.

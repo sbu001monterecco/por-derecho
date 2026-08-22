@@ -1,0 +1,47 @@
+{
+  "publication_id": "COMMUNITY-GOVERNANCE-INSTRUMENTS-20260822",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-22",
+  "current_state": "REMOTE_SOURCE",
+  "subject": "Controlled public edition of the 1987 Sun Park Owners' Statutes and 2008 CEXP governance and operating-transfer source materials",
+  "expected_routes": {
+    "es": [
+      "es/comunidad-instrumentalizacion/instrumentos-gobernanza-2008/index.html"
+    ],
+    "en": [
+      "en/community-instrumentalisation/2008-governance-instruments/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/community/OWNER_STATUTES_1987_CEXP_2008_PUBLIC_DIGITAL_EDITION.md",
+    "INSTITUTIONAL_ACTIONS.md",
+    "sitemap-community-governance.xml"
+  ],
+  "verified_findings": [
+    "The located 1987 source instrument is an Owners' Community / horizontal-property record with an operative tourism-purpose provision.",
+    "The located 2008 compilation records a collective CEXP origin and a direct operating-transfer instrument from Montelanza to CEXP, stated to take effect on 27 May 2008.",
+    "The located sources distinguish the property-community and operating-community layers; they do not by themselves identify a later Costa Papagayo debtor or establish a debtor substitution."
+  ],
+  "not_established": [
+    "universal CEXP mandate or uninterrupted operation",
+    "validity or amount of a Costa Papagayo liability",
+    "automatic LPB succession to a Community obligation",
+    "falsification, collusion or criminal conduct",
+    "extension of LPB's Concurso 36/2012 to CEXP, the Owners' Community, Matkator or third-party property"
+  ],
+  "open_evidence": [
+    "authenticated 1987 statutes/title and complete annexes",
+    "certified 2008 meeting, CEXP statutes, governing-body authority, transfer and annexes",
+    "Costa Papagayo ledger, invoices, EUR25,000 payment receipt and any agreement",
+    "complete execution record and alleged debtor-substitution basis"
+  ],
+  "privacy": {
+    "raw_private_evidence_committed": false,
+    "unredacted_image_masters_committed": false,
+    "personal_identifiers_committed": false,
+    "signatures_committed": false,
+    "privileged_advice_committed": false,
+    "public_edition": "operative non-personal content, integrity hashes and source-access route only"
+  },
+  "publication_boundary": "The public repository carries the controlled digital edition, not the unredacted forwarded scans. Any later public image edition requires document-by-document privacy, provenance and redaction review."
+}
