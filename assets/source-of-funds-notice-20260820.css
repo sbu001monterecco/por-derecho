@@ -150,3 +150,90 @@
 @media print {
   .source-funds-email-graphics { break-inside: avoid; }
 }
+
+
+/* Prominent direct-page evidence placement and eager dimensions · 22 August 2026 */
+.source-funds-notice-section--featured {
+  padding: clamp(2rem, 5vw, 4.25rem) 0;
+  border-top: 1px solid rgba(197, 138, 43, .32);
+  border-bottom: 1px solid rgba(11, 43, 69, .12);
+  background:
+    radial-gradient(circle at 93% 3%, rgba(197, 138, 43, .18), transparent 28rem),
+    linear-gradient(180deg, #f8fbfc 0%, #eef4f6 100%);
+}
+.source-funds-email-graphics-intro {
+  max-width: 920px;
+  margin: 0 0 1.35rem;
+}
+.source-funds-email-graphics-intro__kicker {
+  display: inline-flex;
+  margin: 0 0 .55rem;
+  padding: .35rem .65rem;
+  border: 1px solid rgba(133, 88, 20, .38);
+  border-radius: 999px;
+  background: var(--sfn-gold-soft);
+  color: #72490f;
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.source-funds-email-graphics-intro h2 {
+  max-width: 24ch;
+  margin: 0;
+  color: var(--sfn-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4.5vw, 3.65rem);
+  line-height: 1.02;
+}
+.source-funds-email-graphics-intro > p:last-child {
+  max-width: 76ch;
+  margin: .9rem 0 0;
+  color: var(--sfn-ink-soft);
+  font-size: 1.04rem;
+  line-height: 1.58;
+}
+.source-funds-notice-section--featured .source-funds-email-graphics {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.35rem;
+  margin-bottom: 1.35rem;
+}
+.source-funds-notice-section--featured .source-funds-email-graphic {
+  border: 2px solid rgba(11, 43, 69, .18);
+  border-top: 6px solid var(--sfn-gold);
+  border-radius: 22px;
+  box-shadow: 0 20px 52px rgba(11, 43, 69, .15);
+}
+.source-funds-notice-section--featured .source-funds-email-graphic:first-child {
+  border-top-color: #0f6774;
+}
+.source-funds-notice-section--featured .source-funds-email-graphic img {
+  aspect-ratio: 8 / 5;
+  object-fit: contain;
+}
+.source-funds-notice-section--featured .source-funds-email-graphic span {
+  min-height: 4rem;
+  padding: .9rem 1.15rem;
+  font-size: clamp(.92rem, 1.6vw, 1.08rem);
+}
+.source-funds-notice-section--featured .sfn {
+  border-top-width: 9px;
+  box-shadow: 0 24px 62px rgba(11, 43, 69, .18);
+}
+@media (max-width: 760px) {
+  .source-funds-notice-section--featured {
+    padding: 1.75rem 0;
+  }
+  .source-funds-email-graphics-intro h2 {
+    font-size: clamp(1.8rem, 9.5vw, 2.7rem);
+  }
+  .source-funds-notice-section--featured .source-funds-email-graphic {
+    border-radius: 16px;
+  }
+}
+@media print {
+  .source-funds-notice-section--featured {
+    background: #fff;
+    border: 0;
+  }
+}
