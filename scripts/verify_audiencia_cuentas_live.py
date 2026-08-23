@@ -38,7 +38,7 @@ CHECKS = [
     {
         "path": "es/registros-institucionales/",
         "markers": [
-            "Doce registros",
+            "Qué se envió. Qué volvió. Qué queda.",
             "Audiencia de Cuentas de Canarias",
             "Entrada 1619/2026 acreditada",
         ],
@@ -47,7 +47,7 @@ CHECKS = [
     {
         "path": "en/institutional-records/",
         "markers": [
-            "Twelve records",
+            "What was sent. What came back. What remains.",
             "Audiencia de Cuentas de Canarias",
             "Entry 1619/2026 established",
         ],
