@@ -29,7 +29,7 @@
 
 | ID | Verifiable control |
 |---|---|
-| `C36-JUD-2018-02-08-AC-MODTEXT` | Recognized CAM as transferee of two specified specially privileged principals and contingent costs. |
+| `C36-JUD-2018-02-15-CREDITOR` | The current three-page primary control dates the order to 15 Feb and recognizes CAM as transferee of two specified specially privileged principals and contingent costs. The 8/9/14-Feb layers are superseded and await reinspection, not published as facts. |
 | `C36-FIL-2018-02-09-AC-PLAN` | AC plan proposal; judicial approval/modifications are separate sources. |
 | `C36-FIL-2018-02-15-AC-CLARIFY` | AC request to clarify interest treatment. |
 | `C36-FIL-2018-03-06-LPB-OBS` | LPB observations on the plan. |

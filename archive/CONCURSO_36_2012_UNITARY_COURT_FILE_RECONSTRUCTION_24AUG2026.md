@@ -25,7 +25,7 @@ This closes the narrative gap between the 2016 definitive texts, the unsuccessfu
 
 ### B. Liquidation plan and appeal family
 
-- **8/9-Feb-2018:** the court recognized CAM as transferee of specified Promontoria specially privileged claims; the AC filed the liquidation plan.
+- **15-Feb-2018:** the current three-page primary-source control recognized CAM as transferee of specified Promontoria specially privileged claims. A located Drive copy carries 8/9/14-February layers, but those are superseded pending direct reinspection and are not published as act dates. The AC filed the liquidation plan on 9-Feb-2018.
 - **15-Feb to 16-Mar-2018:** AC clarification and LPB observations defined the dispute over interest, value, better offers and realization structure.
 - **16-Apr-2018:** two different orders exist. One clarified that specially privileged interest could increase only up to the mortgage limits. The other approved the liquidation plan with conditions: dation of listed mortgaged apartments; a separate direct sale of listed premises/pools for EUR 400,000; publicity; a ten-day better-offer mechanism; and quarterly reports. It did **not** adopt Actúa's valuation figures as findings.
 - **4/15/26-Jun-2018:** the court clarified that any later licitation would be a flexible appearance with successive bids; the LAJ ordered publicity; the court then suspended realization of the listed mortgaged apartments pending appeal while liquidation continued for other estate assets.

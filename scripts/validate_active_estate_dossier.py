@@ -211,6 +211,11 @@ for record in court_records:
         errors.append(f"court-file record missing required key: {record.get('id')}")
 if "C36-JUD-2019-07-23-AP" not in court_ids or "C36-JUD-2019-07-29-AP" in court_ids:
     errors.append("23-Jul-2019 AP date correction is not canonical")
+if "C36-JUD-2018-02-15-CREDITOR" not in court_ids or "C36-JUD-2018-02-08-AC-MODTEXT" in court_ids:
+    errors.append("15-Feb-2018 creditor-substitution control is not canonical")
+creditor_control = next((record for record in court_records if record.get("id") == "C36-JUD-2018-02-15-CREDITOR"), {})
+if creditor_control.get("date") != "2018-02-15" or "SUPERSEDED" not in creditor_control.get("supersession_control", ""):
+    errors.append("creditor-substitution date-layer supersession control is incomplete")
 if len([record for record in court_records if record.get("date") == "2018-04-16" and record.get("kind") == "judicial_order"]) != 2:
     errors.append("two distinct 16-Apr-2018 orders are not preserved")
 if len([record for record in court_records if record.get("date") == "2021-10-15" and record.get("kind") == "judicial_order"]) != 2:

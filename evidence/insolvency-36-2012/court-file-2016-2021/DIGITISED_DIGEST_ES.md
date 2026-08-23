@@ -29,7 +29,7 @@
 
 | ID | Control verificable |
 |---|---|
-| `C36-JUD-2018-02-08-AC-MODTEXT` | Reconoció a CAM como cesionaria de dos principales privilegiados especiales y costas contingentes. |
+| `C36-JUD-2018-02-15-CREDITOR` | El control primario vigente de tres páginas fecha el Auto el 15-feb y reconoce a CAM como cesionaria de dos principales privilegiados especiales y costas contingentes. Las capas 8/9/14-feb quedan superadas y pendientes de reinspección, no publicadas como hechos. |
 | `C36-FIL-2018-02-09-AC-PLAN` | Propuesta AC de plan; la aprobación/modificaciones judiciales son fuentes separadas. |
 | `C36-FIL-2018-02-15-AC-CLARIFY` | Petición AC de aclaración de intereses. |
 | `C36-FIL-2018-03-06-LPB-OBS` | Observaciones de LPB al plan. |
