@@ -5,7 +5,7 @@
 | Control surface | Required state | Current maintenance rule |
 |---|---|---|
 | Canonical analysis | Direct-instruction, creditor-control, four de facto lanes, AC four-level ladder, judge act-by-act matrix, contrary evidence and production demands | Update `CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md` first |
-| Identity | Laura Isabel in the filed amendment is not silently converted to LPAM/Laura Patricia | Apply CR-CAM7J-001 and ME-CAM7J-012 to every reuse |
+| Identity | Laura Patricia Acosta Matos is the controlled identity; the different forename in the filed amendment is an isolated typographical error | Apply the controlling identity file and CR-CAM7J-001 to every reuse; keep mandate/participation proof separate |
 | Capacity chronology | Title, Community and credit capacities are dated separately; later governance/adjudication is non-retroactive | Apply CR-CAM7J-002–004 |
 | Criminal attribution | Allegations are prominent; guilt, conspiracy, approval and prevarication are not stated as findings | Preserve actor/act/duty/knowledge/causation/benefit matrices |
 | Contrary record | 2018 dismissal/appeal, AC denial/narrow authority, valid credit/individual title and later adjudication remain adjacent | Apply CR-CAM7J-005 and the defence section of the canonical lead |

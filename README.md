@@ -19,7 +19,7 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
 
-The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently but do not state guilt as adjudicated. They preserve the 2018 provisional dismissal and appeal result, the insolvency administrator's denial/narrower-authority account, CAM's potentially valid credit/individual-title rights, the Laura Isabel/Laura Patricia identity gap and an act-by-act Articles 446–449 judicial test.
+The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently but do not state guilt as adjudicated. They preserve the 2018 provisional dismissal and appeal result, the insolvency administrator's denial/narrower-authority account, CAM's potentially valid credit/individual-title rights and an act-by-act Articles 446–449 judicial test. `archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md` controls the identity: public output uses Laura Patricia Acosta Matos; mandate, participation and responsibility remain actor-specific questions requiring proof.
 
 ## Editorial safeguards
 

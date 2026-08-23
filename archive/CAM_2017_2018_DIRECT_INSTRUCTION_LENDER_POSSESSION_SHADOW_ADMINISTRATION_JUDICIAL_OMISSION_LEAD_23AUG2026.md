@@ -46,27 +46,27 @@ The repository, website, Gmail and connected files contain the following evident
 | Post-event continuity and benefit evidence | Security/access chronology, 31-finca transaction, investor representations, RICPE/HNT/MYND, later Community control and operation | Possible persistence, downstream use, project benefit and the need for accounting | Automatic proof that every later actor shared the original purpose |
 | Contrary and adverse records | Provisional dismissal and appellate confirmation; AC denials; later adjudication and conveyance | Procedural outcome and strongest contrary case | A universal merits finding that every act and later-discovered evidential bridge was lawful |
 
-## 3. Mandatory identity control — Laura Isabel is not silently converted into Laura Patricia
+## 3. Mandatory identity control — Laura Patricia Acosta Matos
 
 This is a controlling correction.
 
-The located contemporaneous record uses three different formulations:
+The controlling identity rule is `IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md`. The located contemporaneous record uses different formulations:
 
 - the first 7 June 2018 email says **“la abogada de CAM, Laura Matos”**;
-- the filed 7 June 2018 complaint amendment identifies **Laura Isabel Acosta Matos**;
+- the filed 7 June 2018 complaint amendment contains a different forename as an isolated typographical error;
 - the repository’s established abbreviation **LPAM** refers to **Laura Patricia Acosta Matos**.
 
-Gil now expressly attributes direct-instruction responsibility to **LPAM / Laura Patricia Acosta Matos**. That allegation must be preserved. However, the presently located primary 7 June pleading does not itself establish that Laura Isabel and Laura Patricia are the same person, that one name was an error, or that both participated separately.
+Gil expressly attributes direct-instruction responsibility to **LPAM / Laura Patricia Acosta Matos**. That allegation must be preserved. The identity is controlled; the evidence still must prove mandate, presence, instruction, knowledge, purpose, participation and any responsibility separately.
 
 ### Publication rule
 
-Until the identity bridge is closed, public pages must use one of these formulations:
+Public pages must use the full correct name and keep attribution limits adjacent:
 
-> **the Laura Acosta Matos actor identified in the contemporaneous 7 June record—named Laura Isabel in the filed amendment—while Gil separately attributes responsibility to LPAM / Laura Patricia Acosta Matos; that identity and participation bridge remains to be proved.**
+> **Laura Patricia Acosta Matos is identified in the public record; mandate, exact instructions, knowledge, purpose and responsibility remain actor-specific allegations requiring independent proof.**
 
 or, when brevity is required:
 
-> **Laura Acosta Matos actor (identity variant under verification).**
+> **Laura Patricia Acosta Matos (participation alleged; responsibility not adjudicated).**
 
 No public page may state as an established fact that Laura Patricia Acosta Matos was physically present on 7 June 2018 or directly issued instructions merely by silently replacing the name in the primary pleading.
 
@@ -152,7 +152,7 @@ The first contemporaneous email says that CAM’s lawyer “Laura Matos” and O
 
 A later same-day email says the CAM side showed the onsite manager a paper asserting ownership of the whole complex, while the Community side showed an 18 May 2018 minute said to authorise the action.
 
-The filed complaint amendment alleges that Antonio Cogolludo and Laura Isabel Acosta Matos, acting personally and purportedly for the Community and CAM, arrived with security, a locksmith and others, forced access, changed locks and controlled entry.
+The filed complaint amendment alleges that Antonio Cogolludo and Laura Patricia Acosta Matos, acting personally and purportedly for the Community and CAM, arrived with security, a locksmith and others, forced access, changed locks and controlled entry.
 
 **Status:** `CONTEMPORANEOUS EMAILS + PARTY PLEADING + VIDEO/PHOTOGRAPHIC CORPUS / EXACT COMMAND CHAIN OPEN`.
 
@@ -202,7 +202,7 @@ The unitary hypothesis is therefore temporal:
 - CAM had a recognised secured-credit position before 7 June 2018.
 - JDAM and FMMM are placed by the filed April complaint in earlier access, ownership-assertion and control episodes.
 - The 7 June contemporaneous email places a CAM lawyer identified as “Laura Matos” with Community personnel at the physical event.
-- The 7 June complaint amendment identifies Antonio Cogolludo and Laura Isabel Acosta Matos as acting personally and purportedly for the Community and CAM.
+- The 7 June complaint amendment identifies Antonio Cogolludo and Laura Patricia Acosta Matos as acting personally and purportedly for the Community and CAM, subject to the controlling typographical correction.
 - The CAM side reportedly produced a paper representing that CAM owned the whole complex.
 - The Community side reportedly relied upon the 18 May security minute.
 - The event implemented an outcome materially beneficial to the secured creditor and later successor project.
@@ -236,7 +236,7 @@ The absence of a recovered written instruction does not disprove oral or tacit i
 |---|---|---|
 | CAM entities and identified natural persons | Isolated title, secured credit, alleged preparation/coordination, project benefit and later direct governance | Exact assignee/entity at each date; native instructions; mandate; payer; receipt of keys; operational decisions; income and benefit |
 | JDAM | Recorded-call attribution and prior access/project/ownership sequence; later direct governance and benefit | Technical speaker attribution; bridge from March planning to June order; native messages; no physical presence on 7 June is presently established |
-| Relevant Laura Acosta Matos actor | Direct-day conduct is alleged in contemporaneous and filed sources | Laura Isabel / Laura Patricia identity bridge; CAM mandate; exact order; denial and other contrary evidence |
+| Laura Patricia Acosta Matos | Direct-day conduct is alleged in contemporaneous and filed sources | CAM mandate; exact order; presence and participation evidence; denial and other contrary evidence |
 | Antonio Cogolludo | Community president and formal authority relay; alleged direct-day conduct | Knowledge of the mandate's limits; communications with CAM, AC, FMMM and providers |
 | Cogolludo treasurer/voting interest | Approximately 0.385% vote-qualified interest through which the May resolution was adopted | Knowledge of debt/vote architecture, intended scope and later physical implementation |
 | FMMM | Secretary-administrator; debt, voting, records, banking and Community/security continuity | Native provider instructions, physical role, certification/record custody and relationship to the actual control event |
@@ -500,7 +500,7 @@ The legal effect of the 2018 dismissal cannot be derived from the word “provis
 
 1. State the direct-instruction, criminal-approval and judicial-prevarication positions forcefully as **Gil Marer / Aweswell allegations**.
 2. Do not state criminal guilt, conspiracy or prevarication as judicially established.
-3. Never silently merge Laura Isabel and Laura Patricia.
+3. Use Laura Patricia Acosta Matos in public output; do not treat the source typo as a separate actor or identity gap.
 4. Preserve the 2018 dismissal and strongest contrary evidence with equivalent prominence.
 5. Distinguish CAM’s unit ownership, Community capacity, secured-credit status, actual possession, project role and later adjudicated title.
 6. Distinguish LPB estate assets from CEXP rights, Matkator and other third-party property.
@@ -525,6 +525,6 @@ In particular, this confirmation does **not** confirm as fact that JDAM, LPAM/La
 
 ## 15. Right of reply
 
-CAM, JDAM, Laura Isabel Acosta Matos, Laura Patricia Acosta Matos, FMMM, Antonio and Shaila Cogolludo, Pamanil/Pamalexsha, the security and locksmith providers, the insolvency administrator, the competent judge/court and every separately named actor retain a full right of reply, identification correction, exculpatory production and source challenge.
+CAM, JDAM, Laura Patricia Acosta Matos, FMMM, Antonio and Shaila Cogolludo, Pamanil/Pamalexsha, the security and locksmith providers, the insolvency administrator, the competent judge/court and every separately named actor retain a full right of reply, identification correction, exculpatory production and source challenge.
 
 A substantive response or primary correction must be attributed, preserved and integrated with equivalent prominence. Silence is not admission.

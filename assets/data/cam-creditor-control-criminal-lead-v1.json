@@ -39,7 +39,7 @@
         "recognised CAM secured-credit position before 7 June 2018",
         "filed allegations of earlier JDAM and FMMM access, asserted ownership and control conduct",
         "contemporaneous placement of a CAM lawyer identified as Laura Matos with Community personnel at the physical event",
-        "filed 7 June amendment naming Laura Isabel Acosta Matos and Antonio Cogolludo as acting personally and purportedly for CAM and the Community",
+        "filed 7 June amendment naming Laura Patricia Acosta Matos and Antonio Cogolludo as acting personally and purportedly for CAM and the Community",
         "reported use of a whole-complex ownership paper and the 18 May security minute",
         "material benefit to the creditor and later project perimeter",
         "later direct Acosta Matos Community and project control"
@@ -202,12 +202,12 @@
   ],
   "identity_control": {
     "contemporaneous_email_name": "Laura Matos",
-    "filed_7_june_amendment_name": "Laura Isabel Acosta Matos",
+    "filed_7_june_amendment_name": "Laura Patricia Acosta Matos",
     "repository_lpam_name": "Laura Patricia Acosta Matos",
-    "same_person_established": false,
+    "name_controlled_as_typographical_error": true,
     "laura_patricia_physical_presence_established": false,
     "laura_patricia_direct_instruction_established": false,
-    "publication_rule": "Preserve Gil's LPAM allegation while keeping the identity and participation bridge open; never silently replace Laura Isabel with Laura Patricia."
+    "publication_rule": "Use Laura Patricia Acosta Matos in all public output. Preserve Gil's LPAM allegation while requiring independent proof of mandate, participation, knowledge, purpose and responsibility."
   },
   "functional_frameworks": {
     "creditor_in_possession": {

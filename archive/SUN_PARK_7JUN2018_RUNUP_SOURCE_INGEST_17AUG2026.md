@@ -140,7 +140,7 @@ Control 21's source map preserves the strongest disciplined treatment currently 
 
 This caveat is mandatory.
 
-**Identity correction:** the filed 7-Jun amendment names **Laura Isabel Acosta Matos**, while the repository abbreviation **LPAM** identifies **Laura Patricia Acosta Matos**. This source-ingest record does not itself prove that those are the same person, that the filed name was erroneous or that both participated. Earlier `LPAM` shorthand in this file is superseded by “Laura Acosta Matos actor” until the identity/participation bridge is recovered.
+**Identity control:** `IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md` establishes **Laura Patricia Acosta Matos** as the correct identity and the different forename in the filed amendment as an isolated typographical error. This source-ingest record does not establish mandate, participation, instructions or responsibility; those remain actor-specific proof questions.
 
 Any JDAM responsibility theory for 7 June must therefore be tested through **preparation, instruction, project/ownership representations, prior access, communications, benefit and later conduct**, not by inventing physical presence.
 
@@ -240,7 +240,7 @@ For the 7-Jun storyline, the key point is narrower:
 | **1-Mar-2018** | Complaint alleges hotel tour, measuring and presentation to prospective hotel participants. | CONTEMPORANEOUS PARTY ALLEGATION + separate visual/source routes | Pre-title redevelopment/operator preparation. |
 | **11-Apr-2018** | Criminal complaint filed before 7-Jun event. | CONTEMPORANEOUS PARTY PLEADING | Critical anti-hindsight anchor. |
 | **18-May-2018** | Community/security meeting is part of existing P19 control chain. | SOURCE-CONTROLLED; authority/vote scope open | Security authority immediately before control shift. |
-| **7-Jun-2018** | Locks/chains/cylinders/security/exclusion event; witness attributes operational acts to ACR and a Laura Acosta Matos actor; witness excludes JDAM's physical presence. The filed amendment names Laura Isabel; any attribution to LPAM/Laura Patricia requires a separate identity bridge. | SOURCE-SUPPORTED MATERIAL-CONTROL SHIFT; criminal/legal characterisation and Laura identity unresolved | Principal material-control threshold. |
+| **7-Jun-2018** | Locks/chains/cylinders/security/exclusion event; witness attributes operational acts to ACR and Laura Patricia Acosta Matos; witness excludes JDAM's physical presence. Identity is controlled; mandate, exact participation and instructions require separate proof. | SOURCE-SUPPORTED MATERIAL-CONTROL SHIFT; criminal/legal characterisation and actor-specific conduct unresolved | Principal material-control threshold. |
 | **13-Jun-2018** | Same-day professional account records judicial briefing on financed conclusion/rescue route. | CONTEMPORANEOUS PROFESSIONAL ACCOUNT, not transcript | Shows takeover and rescue/exit tracks overlap in time. |
 | **26-Jun-2018** | Partial suspension of liquidation plan. | JUDICIAL ACT / scope controlled elsewhere | Cannot be projected backwards as 7-Jun authority. |
 | **7-Dec-2018** | Matkator appeals Proc. 213/2015 Community/allanamiento result. | PARTY APPEAL | Governance continuity / extra-estate rights. |
