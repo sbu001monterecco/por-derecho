@@ -25,13 +25,14 @@ Read current `main` first, then read at minimum:
 3. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`
 4. `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
 5. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`
-6. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md`
-7. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`
-8. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`
-9. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`
-10. `archive/JOURNALIST_MEDIA_REGISTER.md`
-11. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
-12. the recipient-specific records for every currently active sent/prepared journalist.
+6. `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
+7. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md`
+8. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`
+9. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`
+10. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`
+11. `archive/JOURNALIST_MEDIA_REGISTER.md`
+12. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
+13. the recipient-specific records for every currently active sent/prepared journalist.
 
 Also inspect the current public Por Derecho website routes relevant to the next recipient and the current correction/missing-evidence controls.
 
@@ -75,20 +76,17 @@ The repository should currently show the following unless fresh Gmail/source evi
 - Taiana González / HOSTELTUR — sent + verified; awaiting response.
 - Carlos Sosa / Canarias Ahora / elDiario.es Canarias — sent + verified; awaiting response.
 
-The next unsent priority at this control point is:
+The current unsent execution focus is **maximum-distribution preparation for all suitable named media professionals**, with no same-outlet hold, response window or spacing rule.
 
-**Joaquín Gil / EL PAÍS**
+Atlántico Hoy currently has 11 separately prepared named editorial packages through its two official newsroom routes. Read `archive/ATLANTICO_HOY_MAXIMUM_DISTRIBUTION_PREPARATION_RECORD_23AUG2026.md`. No direct staff address is claimed, no Gmail draft exists and nothing is authorised or sent.
 
-followed, subject to fresh revalidation, by:
-
-**Salvador Hernández / Biosfera Digital**
-**Alfonso Canales Segovia / Crónicas de Lanzarote**
+Continue the live dashboard and refresh concurrently across all other suitable named lanes, subject to fresh identity, role, route and dual-Gmail verification.
 
 If a new inbound response changes priority, deal with the response state first, prepare the exact reply package, but do not send without fresh approval.
 
 ### 4. FOR THE NEXT RECIPIENT: DO THE FULL RECIPIENT-SPECIFIC RECONSTRUCTION
 
-For Joaquín Gil / EL PAÍS, or whichever recipient is now genuinely next:
+For each suitable current named recipient in the live maximum-distribution dashboard:
 
 1. verify the person's current role, beat and organisation from current public sources;
 2. verify the best current professional routing and do not guess an address;
@@ -97,7 +95,7 @@ For Joaquín Gil / EL PAÍS, or whichever recipient is now genuinely next:
 5. reverse-engineer the story as one unitary chain rather than disconnected allegations;
 6. identify what is genuinely new for that recipient and what they already know;
 7. prepare the exact recipient-specific email and mandatory package;
-8. read back the saved Gmail draft before calling it ready; and
+8. do not create a Gmail draft unless the current user instruction authorises that external write; if a draft is created, read it back before calling it ready; and
 9. update the repository with a public-safe preparation state so another future thread can resume from it.
 
 ### 5. UNITARY STORY CORE

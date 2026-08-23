@@ -30,15 +30,16 @@ For media work, read at minimum:
 3. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
 4. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`;
 5. `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`;
-6. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md` when local/Lanzarote media is in scope;
-7. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md` whenever 54-CAM/minority/media-propagation questions are used;
-8. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
-9. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
-10. `archive/JOURNALIST_MEDIA_REGISTER.md`;
-11. `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
-12. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
-13. recipient-specific preparation/sent records for the active journalist set; and
-14. current correction / missing-evidence controls and relevant public website dossiers.
+6. `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`;
+7. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md` when local/Lanzarote media is in scope;
+8. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md` whenever 54-CAM/minority/media-propagation questions are used;
+9. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
+10. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
+11. `archive/JOURNALIST_MEDIA_REGISTER.md`;
+12. `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
+13. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
+14. recipient-specific preparation/sent records for the active journalist set; and
+15. current correction / missing-evidence controls and relevant public website dossiers.
 
 Then scan connected Gmail under the dual gate: independently for the person and the outlet/employer/organisation, in both directions and through every continuation token, before inferring any response state or presenting a package as ready.
 
@@ -58,18 +59,20 @@ Subject always to a fresh Gmail scan:
 - **Silvia Fernández / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **David Ojeda / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **Fran Fajardo / CANARIAS7** — `CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE`.
-- **Ariadna Martínez / Atlántico Hoy** — `PROPOSITION ISOLATED / PREPARED LOCALLY / PERSON + OUTLET GMAIL GATE COMPLETE / DIRECT PROFESSIONAL ROUTE UNRESOLVED / NO GMAIL DRAFT / NOT AUTHORISED / NOT SENT`.
-- **Diego Sánchez de la Cruz / Civismo-related routing** — HOLD for immediate repeat contact unless new information provides a recipient-specific reason.
+- **Atlántico Hoy / all 11 current named editorial professionals** — `11 DISTINCT PACKAGES PREPARED / PERSON + OUTLET GMAIL GATES COMPLETE / OFFICIAL NEWSROOM ROUTES VERIFIED / NO DIRECT STAFF ADDRESS CLAIMED / NO GMAIL DRAFT / NOT AUTHORISED / NOT SENT`.
+- **Diego Sánchez de la Cruz / Civismo-related routing** — prior contact requires a genuinely current recipient-specific reason and accurate classification; it is not an automatic same-outlet hold.
 
 The current research/preparation order is:
 
-1. **Ariadna Martínez / Atlántico Hoy** — package prepared; verify a current direct professional route without guessing;
+1. **Atlántico Hoy** — all 11 current named editorial packages prepared through official newsroom routes; do not guess direct staff addresses;
 2. **Ramón Betancor / RTVC**;
 3. **Sandra Tobar / EL ESPAÑOL-Invertia**;
-4. **Javi Rodríguez / Janire Alfaya / SER Canarias**, subject to outlet spacing; and
+4. **Javi Rodríguez / Janire Alfaya / SER Canarias**, both active for separate packages after dual Gmail scans; and
 5. **Daniel Toledo Quer / Cinco Días**.
 
 subject to fresh public-role/contact/history and Gmail-response checks.
+
+This is a maximum-distribution campaign. Every suitable named professional may be active concurrently; no same-outlet response window or spacing rule applies. Prior history controls classification and content, not automatic delay.
 
 No queue position authorises sending.
 

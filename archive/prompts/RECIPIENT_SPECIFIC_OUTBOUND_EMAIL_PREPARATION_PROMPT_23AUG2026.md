@@ -1,7 +1,7 @@
 # Recipient-Specific Outbound Email Preparation Prompt
 
 **Control date:** 23 August 2026  
-**Use with:** `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md` and `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`  
+**Use with:** `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`, `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md` and `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
 **Send-control rule:** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
 
 ## Execution instruction
@@ -17,6 +17,7 @@ Read:
 - `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`;
 - `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
 - `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
+- `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md` when media is in scope;
 - `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
 - `archive/CORRECTION_REGISTER.md`;
@@ -68,12 +69,14 @@ For each proposed To/Cc/Bcc recipient determine:
 - whether inclusion creates unnecessary disclosure or data-protection risk;
 - what realistic action the recipient can take;
 - audience lane under the maximum-reach layer;
-- Tier A / B / C / HOLD classification; and
+- Tier A / B / C / RESEARCH ACTIVE classification; and
 - proposed campaign wave.
 
 Do not revive an old recipient list without validating it against the current thread and instructions.
 
 Do not use a large CC distribution as a substitute for recipient analysis.
+
+For media, multiple suitable named people at the same outlet may be active concurrently. Do not impose a same-outlet hold or response-window spacing rule. Where no direct staff address is verified, an outlet-published newsroom route may carry a named `A la atención de [name]` package, but it must never be represented as the person's direct address.
 
 ### 4. Run the channel-preflight gate
 

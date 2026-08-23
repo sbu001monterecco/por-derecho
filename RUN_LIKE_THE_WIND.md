@@ -14,6 +14,10 @@ Start with:
 
 Then execute the current next action from source-controlled state.
 
+## Maximum media distribution
+
+Read `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`. For all media, every suitable verified named editorial professional may be active concurrently. Do not impose a same-outlet hold, response window or spacing rule merely because another person at the outlet was contacted. Official outlet-published newsroom addresses may route explicitly named `A la atención de [name]` packages when no direct address is verified; never label them as personal addresses.
+
 ## Important limitation
 
 The phrase is a **project convention stored in the repository, not a platform-level macro or automatic GitHub execution trigger**. A fresh thread must still identify the Por Derecho project/repository context. The most reliable minimal command is therefore:

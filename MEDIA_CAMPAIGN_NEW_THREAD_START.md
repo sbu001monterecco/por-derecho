@@ -12,7 +12,7 @@ Read `RUN_LIKE_THE_WIND.md`, then `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_
 - David Ojeda — Local/Las Palmas/institutions/public files — SENT + VERIFIED / awaiting response.
 - **Fran Fajardo — tribunals/courts/judicial-document lane — CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / awaiting response.**
 
-CANARIAS7 already satisfies the minimum two-named-journalist threshold, but user instruction is to continue relevant named journalists one by one.
+CANARIAS7 already satisfies the minimum two-named-journalist threshold. The current instruction is maximum distribution: continue every suitable named professional without a same-outlet hold, spacing rule or two-person ceiling.
 
 Read:
 
@@ -46,17 +46,17 @@ Latest response status:
 
 The fresh exact V3 authorisation was consumed by one verified send. It does not authorise any resend, correction, follow-up, reply or new-recipient send.
 
-## After Fran — research/preparation only
+## Current maximum-distribution preparation state
 
 Read `archive/CANARY_AND_SPANISH_MEDIA_TARGET_REFRESH_23AUG2026.md`.
 
-1. Ariadna Martínez / Atlántico Hoy — number-one package prepared locally; proposition isolated; pagination-complete person/outlet Gmail gate passed; direct professional route unresolved; no Gmail draft; not authorised; not sent. Read `archive/ATLANTICO_HOY_ARIADNA_MARTINEZ_PREPARATION_RECORD_23AUG2026.md`;
+1. Atlántico Hoy — all 11 current named editorial professionals have separate prepared packages; pagination-complete person/outlet Gmail gates passed; no public direct staff email was verified; official Tenerife and Las Palmas newsroom routes are verified and honestly labelled; no Gmail draft; not authorised; not sent. Read `archive/ATLANTICO_HOY_MAXIMUM_DISTRIBUTION_PREPARATION_RECORD_23AUG2026.md`;
 2. Ramón Betancor / RTVC — new Tier A in-depth audiovisual lane;
 3. Sandra Tobar / EL ESPAÑOL-Invertia — new Tier A national hotel-company/tourism lane;
-4. Javi Rodríguez and Janire Alfaya / SER Canarias — strong additional lanes, but apply outlet-level spacing because Lourdes Santana is already sent;
+4. Javi Rodríguez and Janire Alfaya / SER Canarias — both strong active additional lanes; run the dual Gmail gate and prepare separate packages without outlet-level spacing;
 5. Daniel Toledo Quer / Cinco Días — second national finance/commissioning lane;
-6. Carmen Delia Aranda, Francisco Suárez Álamo and Javier Sheng Pang Blanco remain optional CANARIAS7 candidates requiring fresh role/route verification;
-7. historical `lpalacios@canarias7.es` remains HOLD until identity/current role is resolved.
+6. Carmen Delia Aranda, Francisco Suárez Álamo and Javier Sheng Pang Blanco remain active CANARIAS7 candidates requiring fresh role/route verification;
+7. historical `lpalacios@canarias7.es` is identity research only; do not guess or use until identity/current role is resolved.
 
 ## Critical Gmail control
 

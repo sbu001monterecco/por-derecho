@@ -3,7 +3,7 @@
 **Prepared:** 23 August 2026
 **Message class:** proposed first person-specific email at an outlet with a limited prior other-channel contact signal
 **Language:** Spanish
-**Current state:** PROPOSITION ISOLATED / PERSON + OUTLET GMAIL HISTORY GATE COMPLETE / PROFESSIONAL ROUTE NOT VERIFIED / NOT AUTHORISED / NOT SENT
+**Current state:** PROPOSITION ISOLATED / PERSON + OUTLET GMAIL HISTORY GATE COMPLETE / OFFICIAL NEWSROOM ROUTING VERIFIED / NOT AUTHORISED / NOT SENT
 **Gmail draft:** NOT CREATED
 
 This is a research and preparation record. It does not authorise an email, create a Gmail draft, schedule delivery or permit transmission. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` and `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md` control.
@@ -51,7 +51,7 @@ These sources establish current professional relevance only. They do not establi
 
 > Whether Atlántico Hoy's publicly presented Sun Park → MYND Yaiza RIC investment account can be reconciled, asset by asset and funding source by funding source, with the later primary record describing a fragmented `54 CAM / 190 LPB / 18 third parties` title perimeter, the `RICPE → Hotel New Trend` structure and the separate `GC/836/P06` regional-incentive and FEDER support layers.
 
-This closes the earlier `HOLD — proposition/source attribution not isolated` condition for research and preparation. It does not close routing or send authorization.
+This closes the earlier proposition/source-attribution research condition. It does not authorise transmission.
 
 ## 4. Source and attribution checkpoint
 
@@ -82,22 +82,25 @@ Ask Ariadna whether she would examine this as a Canary economy/tourism/public-su
 
 Do not ask for confidential journalistic sources beyond what is necessary and lawfully disclosable. Invite documentary contradiction and correction of the Por Derecho reconstruction.
 
-## 7. Proposed exact package — not yet routable or authorised
+## 7. Proposed exact package — officially routable, not authorised
 
 ### Recipient and routing
 
 - **Proposed named recipient:** Ariadna Martínez, Atlántico Hoy.
-- **Direct professional address:** UNRESOLVED.
-- **Generic newsroom route:** publicly available but does not count as a verified direct named route.
-- **Routing decision:** do not guess; verify a current professional route or present a separately identified generic-newsroom package for exact user approval.
+- **Direct professional address:** NONE PUBLICLY VERIFIED; do not guess.
+- **Official newsroom route:** `redacciongc@atlanticohoy.com`, published by Atlántico Hoy for Las Palmas.
+- **Exact routing:** `To: redacciongc@atlanticohoy.com`; no Cc; no Bcc; body begins `A la atención de Ariadna Martínez:`.
+- **Routing classification:** verified professional newsroom routing for a named package; not Ariadna Martínez's direct or personal address.
 
-**SEND STATUS: BLOCKED — PROFESSIONAL ROUTE NOT VERIFIED / EXACT FINAL AUTHORIZATION ABSENT.**
+**SEND STATUS: NOT AUTHORISED — EXACT FINAL AUTHORIZATION ABSENT.**
 
 ### Exact proposed subject
 
 `Ariadna / Atlántico Hoy — Sun Park → MYND Yaiza: RIC, título y trazabilidad de fondos`
 
 ### Exact proposed Spanish body
+
+A la atención de Ariadna Martínez:
 
 Hola, Ariadna:
 
@@ -177,17 +180,17 @@ DIRECT OUTLET EMAIL HISTORY = NONE LOCATED
 COLLEAGUE / FALLBACK / OTHER-CHANNEL COLLISION = LIMITED OUTLET-EDITOR LINKEDIN INVITATION ACCEPTANCE; NO SUBSTANTIVE EMAIL OR STORY ENGAGEMENT LOCATED
 RESPONSE / BOUNCE / REDIRECT STATUS = NONE LOCATED FOR ARIADNA OR ATLÁNTICO HOY
 MESSAGE CLASSIFICATION = PROPOSED FIRST PERSON-SPECIFIC EMAIL / OUTLET HAS LIMITED PRIOR OTHER-CHANNEL SIGNAL
-ROUTING / SPACING DECISION = VERIFY NAMED PROFESSIONAL ROUTE; DO NOT GUESS; ONE ATLÁNTICO HOY LANE AT A TIME
+ROUTING / COLLISION DECISION = OFFICIAL LAS PALMAS NEWSROOM ROUTE VERIFIED; HONEST A-LA-ATENCIÓN ROUTING; NO SAME-OUTLET HOLD OR SPACING
 HISTORY-GATE RESULT = PASS FOR PREPARATION
 PROPOSITION = ISOLATED
 SOURCE ANCHORS = FIVE
 MEDIA CORE PACKAGE = INCLUDED IN PROPOSED BODY/MANIFEST
-PROFESSIONAL ROUTE = NOT VERIFIED
+PROFESSIONAL ROUTE = OFFICIAL NEWSROOM ROUTING VERIFIED; DIRECT PERSONAL ADDRESS NOT CLAIMED
 EXACT USER AUTHORIZATION = ABSENT
 GMAIL DRAFT = NOT CREATED
-SEND STATUS = BLOCKED — PROFESSIONAL ROUTE NOT VERIFIED / EXACT FINAL AUTHORIZATION ABSENT
+SEND STATUS = NOT AUTHORISED / NOT SENT
 ```
 
 ## 9. Next controlled action
 
-Verify a current professional route attributable to Ariadna Martínez without guessing. Then rerun the fresh dual Gmail scan if any time has elapsed or new mail may have arrived, resolve every link, present the exact To/Cc/Bcc/subject/body/attachments/links to the user and wait for fresh exact authorization. Do not create or send a Gmail draft under this record alone.
+Use the verified official Las Palmas newsroom route without representing it as Ariadna Martínez's direct address. Before any transmission, rerun the fresh dual Gmail scan if any time has elapsed or new mail may have arrived, resolve every link, present the exact To/Cc/Bcc/subject/body/attachments/links to the user and wait for fresh exact authorization. Do not create or send a Gmail draft under this record alone.
