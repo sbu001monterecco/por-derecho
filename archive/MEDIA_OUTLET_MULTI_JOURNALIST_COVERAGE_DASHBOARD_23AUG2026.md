@@ -19,15 +19,16 @@ This dashboard is private campaign-control material. Do not publish private cont
 | Biosfera Digital | Salvador Hernández — director/local tourism/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
 | Crónicas de Lanzarote | Alfonso Canales Segovia — director/local governance/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
 | Cinco Días | Carlos Molina — hotels/tour operators/travel | SENT + VERIFIED | Daniel Toledo — Empresas editor | Cc only, not person-specific | PARTIAL | Prepare separate Daniel lane if justified |
-| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — TWO NAMED LANES SENT + VERIFIED; ADDITIONAL LANES ACTIVE** | **Fran Fajardo V3 — CONTROLLING GMAIL DRAFT VERIFIED / NOT SENT. Present V3 for approval; then Carmen Delia Aranda.** |
+| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — THREE NAMED LANES SENT + VERIFIED; ADDITIONAL LANES ACTIVE** | **Fran Fajardo V3 — SENT ONCE + ACTUAL SENT COPY VERIFIED. Next distinct lane: Carmen Delia Aranda, preparation only.** |
 
 ## CANARIAS7 additional named-lane queue
 
-1. **Fran Fajardo — REDIGEST V3 PREPARED / NOT SENT** — tribunals/courts/Fiscalía/judicial-document lane. V3 adds a bounded archival question about the 30-May-2022 CANARIAS7 headline/path `La Fiscalía Provincial acusa a Acosta Matos de falsificación y estafa procesal` and same-day 2-Jun search/404 captures. It does **not** infer authorship, reason for unavailability, censorship, CMS intent or truth of the accusation. Read:
+1. **Fran Fajardo — CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE** — tribunals/courts/Fiscalía/judicial-document lane. V3 adds a bounded archival question about the 30-May-2022 CANARIAS7 headline/path `La Fiscalía Provincial acusa a Acosta Matos de falsificación y estafa procesal` and same-day 2-Jun search/404 captures. It does **not** infer authorship, reason for unavailability, censorship, CMS intent or truth of the accusation. Read:
    - `archive/CANARIAS7_FRAN_FAJARDO_ARTICLE_REPOSITORY_WEBSITE_EMAIL_REDIGEST_23AUG2026.md`;
    - `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
    - Controlling subject: `Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`.
    - V1 and V2 are superseded / DO NOT SEND.
+   - No resend, correction, follow-up or reply is authorised.
 2. **Carmen Delia Aranda** — institutional/social-public-affairs lane; historical direct professional route exists; reverify current role/contact before preparation.
 3. **Francisco Suárez Álamo** — director/commissioning/editorial-accountability lane; use only current verified role routing.
 4. **Javier Sheng Pang Blanco** — economics/tourism/business/public-policy lane; do not guess a direct address.

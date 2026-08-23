@@ -1,6 +1,6 @@
 # CANARIAS7 / Francisco José “Fran” Fajardo preparation record — 23 August 2026
 
-**Status:** REDIGEST V3 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT  
+**Status:** CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE
 **Record class:** outbound-media preparation state  
 **Privacy rule:** do not reproduce private Gmail identifiers or private contact history on the public website.
 
@@ -135,6 +135,6 @@ The controlling V3 Gmail draft has been read back with:
 
 ## Current gate
 
-**V3 PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
+**V3 SENT ONCE AFTER FRESH EXACT USER AUTHORISATION / ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE.**
 
-Any material change resets approval. A fresh exact `Send` instruction authorises only V3. Post-send verification must be read/search only.
+The Gmail read-back confirmed the exact recipient, no Cc/Bcc, the controlling subject and body, both mandatory PNGs with the expected byte sizes, the timestamped webinar route, and the RIC/regional-incentive/European-support context. No resend, correction, follow-up or reply is authorised by this record.
