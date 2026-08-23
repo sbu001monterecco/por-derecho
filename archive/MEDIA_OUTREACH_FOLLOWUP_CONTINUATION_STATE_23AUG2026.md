@@ -29,51 +29,11 @@ For Carlos Molina read:
 
 For every recipient, re-read connected Gmail before any follow-up.
 
-## Latest verified Carlos Molina send
+## Latest response scan
 
-The stored Carlos Molina / Cinco Días draft was sent once and read back from the actual sent copy.
+A fresh connected-Gmail scan immediately before CANARIAS7 preparation found **NO RESPONSE LOCATED YET** from the active media set.
 
-Verified routing:
-- To: official Cinco Días newsroom route;
-- Cc: current Empresas editor route;
-- Bcc: none.
-
-Verified subject:
-
-`A la atención de Carlos Molina — Canarian Hospitality / MYND Yaiza: crecimiento 2026 frente a 54/190/18 y due diligence pendiente`
-
-Verified mandatory media core:
-- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
-- `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes;
-- San Telmo webinar at approximately 08:08;
-- current Por Derecho routes;
-- adverse/contrary evidence and explicit evidential limitations.
-
-The package expressly superseded the older generic Cinco Días 2024–25 broad framing and used Carlos's 2025–2026 Canarian Hospitality growth reporting as the current business/hotel-investment hook.
-
-## Current response rule
-
-Before any follow-up or new-recipient send, run a fresh connected-Gmail scan.
-
-If no new message is found, use only:
-
-`NO RESPONSE LOCATED YET`.
-
-Do not translate silence into rejection, reading, delivery failure, acceptance or editorial decision.
-
-Classify any inbound narrowly as:
-- `SUBSTANTIVE EDITORIAL RESPONSE`;
-- `REQUEST FOR PRIMARY SOURCES`;
-- `REQUEST FOR CALL / INTERVIEW`;
-- `CORRECTION / CHALLENGE`;
-- `ROUTING / WRONG PERSON`;
-- `ACKNOWLEDGEMENT ONLY`;
-- `OUT-OF-OFFICE`;
-- `BOUNCE / DELIVERY FAILURE`;
-- `REFUSAL / NO INTEREST`;
-- `OTHER — DESCRIBE EXACTLY`.
-
-A response does not itself authorise a reply.
+Use only that wording. Silence is not evidence of reading, rejection, non-delivery, interest or editorial decision.
 
 ## Immediate HOLDs / timing limits
 
@@ -86,6 +46,46 @@ Do not immediately re-contact:
 - Diego Sánchez de la Cruz / Civismo-related routing — recent-contact HOLD.
 
 Reassess only after elapsed working time, a substantive reply or materially new source.
+
+## Prepared but unsent state
+
+### Silvia Fernández / CANARIAS7 — Economía
+
+`PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`
+
+Current public material confirms Silvia Fernández's continuing CANARIAS7 economics/RIC relevance and a current professional CANARIAS7 route. The package copies the CANARIAS7 newsroom/web-redaction route previously used in the project and does not guess a Javier Sheng Pang address.
+
+Recipient-specific source checkpoints:
+
+- **24-Jan-2020 / Silvia Fernández / CANARIAS7** — article introducing RIC Private Equity as a collective-RIC route for hotel construction/renovation and identifying José Acosta / Acosta Matos among the promoter group;
+- **May-2023 / CANARIAS7** — José Acosta quoted saying RICPE had two open hotel-sector materialisations, including `un hotel en Yaiza` for €3 million.
+
+Connected Gmail confirms previous CANARIAS7 outreach in 2022 and Dec-2024 to several routes. Those older approaches used broader and more categorical fraud/co-ordination framing. The new package expressly supersedes that methodology and tells CANARIAS7 not to inherit it.
+
+Prepared subject:
+
+`Silvia / Economía CANARIAS7 — RICPE y hotel de Yaiza: 54/190/18, 3 M€ RIC y trazabilidad del activo`
+
+Prepared architecture:
+
+`CANARIAS7 2020 RICPE launch / legal-fiscal-security narrative`
+→ `fragmented Sun Park title / LPB majority / third-party units / separate exploitation`
+→ `54-CAM provenance and purchaser-knowledge questions`
+→ `2018 material-control transition + adverse provisional dismissal retained`
+→ `pre-title Lava Verde / Club Sei / Meeting Point hotel preparation`
+→ `Nov-2020 integrated ownership/control representation`
+→ `Jul-2021 internal 54 CAM / 190 LPB / 18 terceros + future/conditional title + unsigned LOI + incomplete DD`
+→ `CANARIAS7 May-2023 public €3m Yaiza hotel materialisation checkpoint`
+→ `HNT / MYND / RICPE / RIC / GC836 / EU-support reconciliation`
+→ `2026 Yaiza/Cabildo constructive institutional-resolution route`.
+
+The actual Gmail draft has been read back with both mandatory Spanish PNGs at expected byte sizes, San Telmo webinar, current Por Derecho routes, the two CANARIAS7/RICPE archive links, contrary/adverse evidence and express evidential limitations.
+
+Read:
+- `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
+- `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
+
+Do not send until Gil gives fresh exact final authorisation. Any material edit resets approval.
 
 ## Current unitary story core
 
@@ -129,17 +129,9 @@ For `54 CAM`, also apply `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA
 
 ## Current next action
 
-The prior local-media and current Carlos Molina specialist steps are complete.
+Present the exact Silvia Fernández / CANARIAS7 package for final approval. If approved without material change, send that exact stored Gmail draft once and read back the actual sent copy.
 
-Before selecting the next recipient:
-1. run a fresh Gmail response scan across all active recipients;
-2. re-read the media register and recipient-fit playbook;
-3. consider elapsed-time HOLDs and out-of-office states;
-4. choose the next unsent specialist or wider-reach recipient based on story fit and what has materially changed;
-5. prepare and read back the exact package;
-6. obtain fresh exact final authorisation before any send.
-
-Do not automatically send to a recently contacted or out-of-office recipient.
+After any verified CANARIAS7 send, run a fresh response scan before selecting the next Canary-wide recipient. Current high-value unsent Canary-wide lanes include La Provincia, Atlántico Hoy, Cadena SER Canarias and RTVC, but none is pre-authorised.
 
 ## New-thread trigger alias
 
