@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the draft Sun Park active-estate dossier and 28-upload manifest."""
+"""Validate the draft Sun Park dossiers, including the 2016–2021 court file."""
 
 from __future__ import annotations
 
@@ -32,6 +32,14 @@ ROUTES = ROOT / "assets/data/unitary-route-registry-v1.json"
 SPINE_DATA = ROOT / "assets/data/concurso36-judicial-spine-v1.json"
 FLAGSHIP_DATA = ROOT / "assets/data/flagship-case-1260-2011.json"
 FLAGSHIP_CONTROL = ROOT / "archive/SUN_PARK_FLAGSHIP_CASE_JV1260_AP89_CANONICAL_CONTROL_17AUG2026.md"
+COURT_FILE_DATA = ROOT / "assets/data/concurso36-court-file-v1.json"
+COURT_FILE_ROOT = ROOT / "evidence/insolvency-36-2012/court-file-2016-2021"
+COURT_FILE_README = COURT_FILE_ROOT / "README.md"
+COURT_FILE_ES = COURT_FILE_ROOT / "DIGITISED_DIGEST_ES.md"
+COURT_FILE_EN = COURT_FILE_ROOT / "DIGITISED_DIGEST_EN.md"
+CONVENIO_OCR = COURT_FILE_ROOT / "full-text/C36-CF-2017-04-27-convenio-proposal-ocr-redacted.md"
+COURT_FILE_CONTROL = ROOT / "archive/CONCURSO_36_2012_UNITARY_COURT_FILE_RECONSTRUCTION_24AUG2026.md"
+COURT_FILE_PROMPT = ROOT / "archive/prompts/CONCURSO_36_2012_COMPLETE_COURT_FILE_CONTINUATION_PROMPT_24AUG2026.md"
 
 SITEMAPS = {
     "sitemap.xml": ROOT / "sitemap.xml",
@@ -131,6 +139,13 @@ for path in (
     SPINE_DATA,
     FLAGSHIP_DATA,
     FLAGSHIP_CONTROL,
+    COURT_FILE_DATA,
+    COURT_FILE_README,
+    COURT_FILE_ES,
+    COURT_FILE_EN,
+    CONVENIO_OCR,
+    COURT_FILE_CONTROL,
+    COURT_FILE_PROMPT,
     *SITEMAPS.values(),
 ):
     read(path)
@@ -170,6 +185,37 @@ for required in (
 if by_id.get("MAT-008", {}).get("sha256") == by_id.get("C36-JUD-2021-02-24-002", {}).get("sha256"):
     errors.append("same-date 24-Feb-2021 orders were conflated")
 
+try:
+    court_file = json.loads(read(COURT_FILE_DATA))
+except Exception as exc:
+    errors.append(f"court-file inventory invalid JSON: {exc}")
+    court_file = {}
+
+court_records = court_file.get("records", [])
+court_counts = court_file.get("counts", {})
+if len(court_records) != 66 or court_counts.get("docket_items") != 65 or court_counts.get("connected_external_items") != 1:
+    errors.append(f"court-file denominator disagrees: records={len(court_records)} counts={court_counts}")
+court_ids = [record.get("id") for record in court_records]
+if len(court_ids) != len(set(court_ids)):
+    errors.append("court-file inventory has duplicate stable IDs")
+connected = [record for record in court_records if record.get("kind") == "connected_external_complaint"]
+if len(connected) != 1 or connected[0].get("id") != "C36-EXT-2021-02-10-DESTRUCTION-COMPLAINT":
+    errors.append("connected external complaint is not separately typed")
+core_records = [record for record in court_records if record.get("kind") != "connected_external_complaint"]
+core_statuses = Counter(record.get("status") for record in core_records)
+expected_core_statuses = {"primary_text": 24, "party_text": 38, "ocr_redacted": 1, "scan_pending": 2}
+if dict(core_statuses) != expected_core_statuses:
+    errors.append(f"court-file text-status counts disagree: {dict(core_statuses)}")
+for record in court_records:
+    if not all(key in record for key in ("id", "date", "kind", "lane", "status", "locator", "title", "effect")):
+        errors.append(f"court-file record missing required key: {record.get('id')}")
+if "C36-JUD-2019-07-23-AP" not in court_ids or "C36-JUD-2019-07-29-AP" in court_ids:
+    errors.append("23-Jul-2019 AP date correction is not canonical")
+if len([record for record in court_records if record.get("date") == "2018-04-16" and record.get("kind") == "judicial_order"]) != 2:
+    errors.append("two distinct 16-Apr-2018 orders are not preserved")
+if len([record for record in court_records if record.get("date") == "2021-10-15" and record.get("kind") == "judicial_order"]) != 2:
+    errors.append("two distinct 15-Oct-2021 orders are not preserved")
+
 full_root = ROOT / "evidence/insolvency-36-2012/masa-activa-2017-2021/full-text"
 actual = {path.name for path in full_root.glob("*.md")}
 if actual != set(TRANSCRIPTS):
@@ -196,6 +242,15 @@ if len(re.findall(r"\b\w[\w.’'-]*\b", ap89_text, flags=re.UNICODE)) < 2400:
     errors.append("AP89 transcript unexpectedly short")
 if "1bce9ad6111645393ee2f23915b7df05a9a879181f2c19fad83f6b3e8989c1ec" not in ap89_text:
     errors.append("AP89 transcript source hash mismatch")
+
+convenio_text = read(CONVENIO_OCR)
+convenio_pages = re.findall(r"^## Página PDF (\d+)$", convenio_text, flags=re.M)
+if convenio_pages != [str(number) for number in range(1, 8)]:
+    errors.append(f"convenio OCR page markers disagree: {convenio_pages}")
+if "b248a22148503d6c9d9f8c3dc473ed54ad9862f60de5fde3622713f4313999b5" not in convenio_text:
+    errors.append("convenio OCR source hash mismatch")
+if len(re.findall(r"\b\w[\w.’'-]*\b", convenio_text, flags=re.UNICODE)) < 1000:
+    errors.append("convenio OCR derivative unexpectedly short")
 
 for path, lang, title in (
     (ES, "es", "Estado y conservación de la masa activa"),
@@ -269,6 +324,17 @@ for path, lang in (
     if f'<html lang="{lang}">' not in text:
         errors.append(f"{path.relative_to(ROOT)}: html language marker missing")
 
+spine_es_text, spine_en_text = read(SPINE_ES), read(SPINE_EN)
+for marker_es, marker_en in (
+    ("65 elementos del expediente", "65-item docket inventory"),
+    ("De los textos definitivos al resultado de 2021", "From definitive texts to the 2021 result"),
+    ("Alegación atribuida", "Attributed allegation"),
+    ("23-jul-2019", "23-Jul-2019"),
+    ("no convalidó", "refused to validate"),
+):
+    if marker_es not in spine_es_text or marker_en not in spine_en_text:
+        errors.append(f"court-file website parity missing: {marker_es} / {marker_en}")
+
 flagship_es_text, flagship_en_text = read(FLAGSHIP_ES), read(FLAGSHIP_EN)
 for marker_es, marker_en in (
     ("Ratio adversa", "Adverse ratio"),
@@ -281,7 +347,7 @@ for marker_es, marker_en in (
         errors.append(f"flagship adverse/scope parity missing: {marker_es} / {marker_en}")
 
 parsed_data: dict[Path, object] = {}
-for data_path in (SPINE_DATA, FLAGSHIP_DATA, ROUTES):
+for data_path in (SPINE_DATA, FLAGSHIP_DATA, ROUTES, COURT_FILE_DATA):
     try:
         parsed_data[data_path] = json.loads(read(data_path))
     except Exception as exc:
@@ -360,7 +426,7 @@ privacy_patterns = {
     "possible 19-digit case identifier": r"\b\d{19}\b",
 }
 missing_tail = read(MISSING).split("| ME-074", 1)[-1]
-public_text = "\n".join(read(path) for path in [ES, EN, SPINE_ES, SPINE_EN, FLAGSHIP_ES, FLAGSHIP_EN, MANIFEST, PROVENANCE, REGISTER, PROMPT, SUPPLEMENT, CROSS_THREAD, COURT_ACTS, AP89, ROUTES, SPINE_DATA, FLAGSHIP_DATA, FLAGSHIP_CONTROL, *sorted(full_root.glob("*.md"))]) + "\n" + missing_tail
+public_text = "\n".join(read(path) for path in [ES, EN, SPINE_ES, SPINE_EN, FLAGSHIP_ES, FLAGSHIP_EN, MANIFEST, PROVENANCE, REGISTER, PROMPT, SUPPLEMENT, CROSS_THREAD, COURT_ACTS, AP89, ROUTES, SPINE_DATA, FLAGSHIP_DATA, FLAGSHIP_CONTROL, COURT_FILE_DATA, COURT_FILE_README, COURT_FILE_ES, COURT_FILE_EN, CONVENIO_OCR, COURT_FILE_CONTROL, COURT_FILE_PROMPT, *sorted(full_root.glob("*.md"))]) + "\n" + missing_tail
 for label, pattern in privacy_patterns.items():
     if re.search(pattern, public_text, flags=re.I):
         errors.append(f"possible {label} leakage")
@@ -384,6 +450,17 @@ for marker in (
 ):
     if marker not in prompt:
         errors.append(f"continuation prompt missing marker: {marker}")
+
+court_prompt = read(COURT_FILE_PROMPT)
+for marker in (
+    "65 located docket items",
+    "Adverse-evidence control",
+    "full criminal instrumentalisation",
+    "ME-PDFSCAN-032",
+    "Do not contact courts",
+):
+    if marker not in court_prompt and marker not in read(COURT_ACTS):
+        errors.append(f"court-file continuation control missing marker: {marker}")
 
 flagship_control = read(FLAGSHIP_CONTROL)
 for marker in (

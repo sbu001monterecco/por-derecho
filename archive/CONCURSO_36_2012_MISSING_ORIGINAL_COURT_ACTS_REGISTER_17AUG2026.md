@@ -3,6 +3,36 @@
 **Control date:** 17 August 2026  
 **Purpose:** convert every unresolved court/LAJ source into an explicit retrieval target rather than inferring content from later summaries.
 
+## Unitary court-file sweep — 24 August 2026
+
+The earlier requested cutoff is **1 January 2016**, because 2016 precedes the 2017 convenio phase. The controlled sweep now identifies **65 docket items for 2016–2021 plus one connected external complaint**. The machine denominator is `assets/data/concurso36-court-file-v1.json`; the bilingual human digest is under `evidence/insolvency-36-2012/court-file-2016-2021/`.
+
+### Newly consolidated source families
+
+| Family | Located control | Remaining original/completeness gap | Status |
+|---|---|---|---|
+| 2016 definitive texts | AC filing 28-Apr and LPB opposition 16-Jun, both searchable | annexes, receipt/service and exact ruling on every objection | **TEXT LOCATED / DISPOSITION-ANNEX GAP OPEN** |
+| 2017 convenio | 20-Jan and 22-Mar Autos; 19-Apr proposal/viability material; 27-Apr filing; 5-May remuneration Auto; 15-May Promontoria challenge; 6-Nov credit filing; 19-Dec liquidation Auto | admission/challenge rulings, adhesions/oppositions, meeting record and complete route to failure of convenio | **CORE SOURCES LOCATED / COMPLETE CONVENIO DOCKET OPEN** |
+| 2018 plan/appeal | plan; LPB/AC/CAM filings; two distinct 16-Apr Autos; 4-Jun clarification; 15-Jun LAJ act; 26-Jun suspension; appeal briefs; 12-Dec LAJ act | complete annexes, returns, opposition/transmission/finality and implementation | **CORE SOURCE FAMILY LOCATED / SERVICE-ANNEX-FINALITY OPEN** |
+| 2019 AP/non-convalidation | AP order dated 23-Jul (29-Jul filename alias); 24-Oct refusal to validate; connected AC/LPB/Aweswell/CAM filings | complete remittal/finality; deed 2,150 and reversal/title/accounting consequences | **PRIMARY ACTS LOCATED / IMPLEMENTATION GAP OPEN** |
+| 2020 amount-setting | 12-May dismissal plus LPB/AC/CAM/Community submissions | page-faithful OCR of 5-Nov-2019 Community pack and 9-Jun-2020 CAM certificate; ledgers and final amount order | **TEXT MOSTLY LOCATED / TWO SCANS + FINAL AMOUNT OPEN** |
+| 2021 publicity/licitation | 18/25/29-Jan acts; 4-Feb challenges; 19-Feb nullity; two 6-May Autos; 12/18-May acts; two 15-Oct Autos; 27-Oct LAJ act | public-notice returns, third-party complete offer/funds/bond, 18-May recording/minute, service/finality and downstream implementation | **PRIMARY ACT FAMILY LOCATED / HEARING-IMPLEMENTATION OPEN** |
+| Calificación | 21-Jul and 25-Oct AC Article 424 reports plus LAJ transfer located in the scanned corpus | full separate pieza, Fiscalía/party responses, evidence, 2023 hearing and final outcome | **PARTIAL — DO NOT MERGE WITH REALIZATION TRACK** |
+| Connected complaint | 10-Feb-2021 complaint located | receipt, competent authority, investigation and outcome | **EXTERNAL ALLEGATION — NOT A C36 DOCKET ACT** |
+
+### New finite retrieval controls — continuation of canonical queue
+
+| ID | Exact request | Reason | Status |
+|---|---|---|---|
+| `ME-PDFSCAN-032` | Certified chronological Juzgado/LAJ index covering every section/pieza, filing, annex, act, service, appeal, finality event, recording and close-out from 6-Jun-2012 to conclusion. | Establishes the legal denominator against which the 65 located nodes can be tested. | **OPEN — MASTER DENOMINATOR** |
+| `ME-PDFSCAN-033` | Complete 2016 definitive-text pack: all AC annexes, LPB opposition exhibits, receipts, transfers and each resolving act. | Prevents the 2016 starting point from being reconstructed only from the parties' cover filings. | **PARTIAL — TWO CORE FILINGS LOCATED** |
+| `ME-PDFSCAN-034` | Complete convenio file: admission, payment-plan annexes, adhesions/oppositions, Promontoria disposition, creditors' meeting minute/recording/vote or cancellation act, and causal bridge to 19-Dec liquidation. | Tests the proposed no-haircut/one-year route against what creditors and the court actually did. | **PARTIAL — PROPOSAL OCR + CORE AUTOS LOCATED** |
+| `ME-PDFSCAN-035` | Page-faithful OCR/source review of the 5-Nov-2019 AC/Community pack and 9-Jun-2020 CAM interest certificate, plus native underlying Community and loan ledgers and the final judicial amount order. | Separates asserted certificates from the amounts finally set and their accounting basis. | **PARTIAL — TWO BINARIES LOCATED / OCR OPEN** |
+| `ME-PDFSCAN-036` | Full 18-May-2021 licitation record: third-party filed offer, authority, funds, bond attempt/result, service, attendance, minute, recording, evidence rulings and disposition. | Tests the decisive nonappearance/no-bond recital in Order 164/2021. | **PARTIAL — CALLING AND APPROVAL ACTS LOCATED** |
+| `ME-PDFSCAN-037` | Post-approval implementation: both 15-Oct orders and 26-Jan clarifications with filings/service/finality; deed communication within five days; mandamientos/testimonios; finca-level Registry; EUR 400,000 bank trail; taxes/costs; quarterly reports; closure and rendición. | Converts authorization into a provable title/money/accounting chain. | **PARTIAL — JUDICIAL ACTS LOCATED / IMPLEMENTATION OPEN** |
+
+These controls are collision-safe. Where an older `ME-PDFSCAN-*` row already requests the same source, update that older row and mark the newer control `MERGED`, rather than opening a parallel production demand.
+
 ## Batch A pass 2 — P1 items closed from Gmail-controlled court copies
 
 The following items were P1 gaps in closure pass 1 and are **no longer missing-original targets**:

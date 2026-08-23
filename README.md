@@ -15,14 +15,13 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/es/comunidad-instrumentalizacion/actas-2011-2022/` — canonical Spanish chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/en/community-instrumentalisation/minutes-2011-2022/` — canonical English chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/es/comunidad-instrumentalizacion/instrumentos-gobernanza-2008/` and `/en/community-instrumentalisation/2008-governance-instruments/` — controlled public editions of the 1987 Owners’ Statutes and 2008 CEXP source instruments
-- `/es/concurso-36-2012-autos-resoluciones/` — Spanish full-text archive of the 50 located 2024–2026 removal/remuneration records: 25 Judge/Appeal Court/LAJ acts and 25 party filings; a specialist corpus, not the whole file
-- `/en/insolvency-36-2012-orders-decisions/` — English navigation and scope-control counterpart for that complete public-safe specialist corpus
-- `/es/concurso-36-2012-que-ordeno-el-juzgado/` and `/en/concurso-36-2012-what-the-court-ordered/` — bilingual reader of twelve selected critical instruments, their limits, implementation and open proof
-- `/es/concurso-36-2012-columna-judicial/` and `/en/concurso-36-2012-judicial-spine/` — judicial/LAJ state-transition map read together with the denominator-aware whole-record catalogue
-- `/es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/` and `/en/insolvency-administrator-security-request-sun-park-27-february-2018/` — privacy-safe source reader for the 27 February 2018 AC security-meeting request; a party communication, not a court order or proof of implementation
+- `/es/concurso-36-2012-autos-resoluciones/` — dedicated Spanish full-text archive of the removal/remuneration court record: 25 Judge/Appeal Court/LAJ acts and 25 party filings
+- `/en/insolvency-36-2012-orders-decisions/` — English navigation and scope-control counterpart displaying the complete redacted Spanish judicial text
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
+
+The judicial-spine routes now link to a controlled 2016–2021 court-file inventory: 65 located docket items plus one connected external complaint, kept outside the Mercantile docket count. The public evidence layer includes bilingual item-by-item digests and a reviewed, redacted OCR derivative of the April-2017 convenio proposal. It remains explicitly partial until the certified court/LAJ chronology is recovered.
 
 The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently but do not state guilt as adjudicated. They preserve the 2018 provisional dismissal and appeal result, the insolvency administrator's denial/narrower-authority account, CAM's potentially valid credit/individual-title rights and an act-by-act Articles 446–449 judicial test. `archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md` controls the identity: public output uses Laura Patricia Acosta Matos; mandate, participation and responsibility remain actor-specific questions requiring proof.
 
@@ -31,8 +30,6 @@ The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently b
 Public content distinguishes documents, facts, allegations, inferences, open questions and official outcomes. Personal data, privileged material, legal strategy and unaudited capital or claim figures must remain outside this repository.
 
 Public primary documents are stored under `assets/docs/` or the controlled `evidence/` tree only after provenance, scope and redaction review; publication of a receipt, filing or procedural record does not convert it into a merits finding. The Concurso 36/2012 Autos corpus uses complete redacted Markdown transcriptions plus raster-only decision PDFs, with source hashes and known gaps preserved in its manifest and provenance record.
-
-The denominator-aware `assets/data/concurso36-complete-record-v1.json` catalogue joins the historical forensic index, the 50-record specialist corpus and separately controlled sources without claiming a certified whole-file denominator. Its controlling status is `INVENTORY PARTIAL — CERTIFIED DOCKET OR RECORDS STILL MISSING`; publication can be complete only for the identified public-safe corpus, not for the whole court file.
 
 ### RICPE publication controls
 

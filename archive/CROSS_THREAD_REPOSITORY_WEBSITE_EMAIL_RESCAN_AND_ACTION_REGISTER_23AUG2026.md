@@ -150,3 +150,15 @@ Any other thread locating one of these items must:
 4. link the source to the relevant pleading/order and record what it establishes and does not establish;
 5. retain personal data, privilege and private binaries outside public Git unless a separate publication gate is approved; and
 6. never claim website publication until the merge SHA, Pages deployment and exact live route have been checked.
+
+## 8. Concurso 36/2012 whole-docket continuation — 24 August 2026
+
+The controlled 2016–2021 sweep supersedes an unstructured “search every email/file” instruction with a finite denominator and prompt:
+
+- inventory: `assets/data/concurso36-court-file-v1.json`;
+- result: **65 located docket items plus one separately typed external complaint**;
+- bilingual digests: `evidence/insolvency-36-2012/court-file-2016-2021/`;
+- continuation prompt: `archive/prompts/CONCURSO_36_2012_COMPLETE_COURT_FILE_CONTINUATION_PROMPT_24AUG2026.md`; and
+- new denominator/closure controls: `ME-PDFSCAN-032`–`037` in `archive/CONCURSO_36_2012_MISSING_ORIGINAL_COURT_ACTS_REGISTER_17AUG2026.md`.
+
+Other threads must begin with the certified-index request, then bind any located email attachment or scan to the stable ID and existing `ME-PDFSCAN-*` row. The 10-Feb-2021 complaint remains outside the Mercantile docket count; calificación remains a separate pieza; source variants and wrong filename dates are not second acts.
