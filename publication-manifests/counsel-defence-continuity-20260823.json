@@ -9,8 +9,16 @@
   "original_branch": "codex/counsel-defence-expanded-20260823",
   "nuance_revision": {
     "control_date": "2026-08-23",
-    "state": "SOURCE_READY_PENDING_MERGE",
-    "purpose": "Replace the public binary causation/withdrawal characterisation with an integrated mandate account and explain the Article 215.2 providencia precisely."
+    "state": "LIVE_VERIFIED",
+    "purpose": "Replace the public binary causation/withdrawal characterisation with an integrated mandate account and explain the Article 215.2 providencia precisely.",
+    "pull_request": 879,
+    "head_sha": "73ba539f4671c06e066a5d5468172b21a9e6220b",
+    "merge_sha": "7ed8a4469d1f5a46a68f3f2cf55711f99176d97f",
+    "checks": {
+      "status": "ALL_EIGHT_SUCCESS",
+      "run_ids": [32674663023, 32674662974, 32674662998, 32674663003, 32674662991, 32674663008, 32674663002, 32674663009]
+    },
+    "live_verified_at_utc": "2026-08-23T23:51:15Z"
   },
   "expected_routes": {
     "es": [
@@ -188,6 +196,27 @@
       "title": "Actors, parties, lawyers and representatives — full names | Project Sun Rock",
       "rows": 18,
       "markers_passed": true
+    }
+  },
+  "nuance_live_verification_evidence": {
+    "method": "cloud-browser public-edge readback",
+    "verified_at_utc": "2026-08-23T23:51:15Z",
+    "status": "PASS_BILINGUAL_NUANCE_MARKERS_STALE_BINARY_ABSENT",
+    "es": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
+      "title": "Actores, partes, abogados y representantes — nombres completos | Project Sun Rock",
+      "rows": 21,
+      "article_215_2_marker": true,
+      "cuatrecasas_integrated_marker": true,
+      "stale_binary_withdrawal_wording": false
+    },
+    "en": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/",
+      "title": "Actors, parties, lawyers and representatives — full names | Project Sun Rock",
+      "rows": 21,
+      "article_215_2_marker": true,
+      "cuatrecasas_integrated_marker": true,
+      "stale_binary_withdrawal_wording": false
     }
   },
   "deletion_record": {
