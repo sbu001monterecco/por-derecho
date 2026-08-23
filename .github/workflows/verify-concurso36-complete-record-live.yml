@@ -1,0 +1,198 @@
+name: Verify Concurso 36/2012 complete record live
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'publication-manifests/concurso36-complete-record-20260823.json'
+      - 'evidence/insolvency-36-2012/concurso-autos/**'
+      - 'evidence/insolvency-36-2012/ac-removal-fees/**'
+      - 'evidence/sun-park/2018-02-27-ac-security-request/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-judicial-spine/**'
+      - 'es/concurso-36-2012-columna-judicial/**'
+      - 'en/insolvency-administrator-security-request-sun-park-27-february-2018/**'
+      - 'es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/**'
+      - 'en/insolvency-36-2012-administrator-removal-fees/**'
+      - 'es/concurso-36-2012-separacion-ac-honorarios/**'
+      - 'en/lender-of-record/litigious-credit-hidden-deed/**'
+      - 'es/acreedor-de-registro/credito-litigioso-escritura/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/ric-private-equity-sun-park/**'
+      - 'es/ric-private-equity-sun-park/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'scripts/verify_concurso36_complete_record_live.py'
+      - '.github/workflows/verify-concurso36-complete-record-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'publication-manifests/concurso36-complete-record-20260823.json'
+      - 'evidence/insolvency-36-2012/concurso-autos/**'
+      - 'evidence/insolvency-36-2012/ac-removal-fees/**'
+      - 'evidence/sun-park/2018-02-27-ac-security-request/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-judicial-spine/**'
+      - 'es/concurso-36-2012-columna-judicial/**'
+      - 'en/insolvency-administrator-security-request-sun-park-27-february-2018/**'
+      - 'es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/**'
+      - 'en/insolvency-36-2012-administrator-removal-fees/**'
+      - 'es/concurso-36-2012-separacion-ac-honorarios/**'
+      - 'en/lender-of-record/litigious-credit-hidden-deed/**'
+      - 'es/acreedor-de-registro/credito-litigioso-escritura/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/ric-private-equity-sun-park/**'
+      - 'es/ric-private-equity-sun-park/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'scripts/verify_concurso36_complete_record_live.py'
+      - '.github/workflows/verify-concurso36-complete-record-live.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: concurso36-complete-record-live-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  exact-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Compile exact-readback verifier
+        run: python -B -m py_compile scripts/verify_concurso36_complete_record_live.py
+      - name: Serve pull-request checkout at the production subpath
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory "$(dirname "$GITHUB_WORKSPACE")" > /tmp/concurso36-live-server.log 2>&1 &
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent --show-error http://127.0.0.1:4173/por-derecho/es/ > /dev/null; then
+              exit 0
+            fi
+            sleep 0.5
+          done
+          cat /tmp/concurso36-live-server.log
+          exit 1
+      - name: Verify pull-request checkout byte-for-byte
+        if: github.event_name == 'pull_request'
+        run: |
+          python scripts/verify_concurso36_complete_record_live.py \
+            --base-url http://127.0.0.1:4173/por-derecho/ \
+            --attempts 1 \
+            --output artifacts/concurso36-complete-record-live/result.json
+      - name: Attest successful Pages deployment for the exact merge SHA
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import time
+          import urllib.request
+
+          repository = os.environ["REPOSITORY"]
+          expected_sha = os.environ["EXPECTED_SHA"]
+          token = os.environ["GH_TOKEN"]
+          api = (
+              f"https://api.github.com/repos/{repository}/actions/runs"
+              f"?head_sha={expected_sha}&per_page=100"
+          )
+          last_seen = []
+          for attempt in range(1, 49):
+              request = urllib.request.Request(
+                  api,
+                  headers={
+                      "Accept": "application/vnd.github+json",
+                      "Authorization": f"Bearer {token}",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "Por-Derecho-Concurso36-Pages-Attestation/1.0",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=25) as response:
+                  payload = json.load(response)
+              candidates = [
+                  run for run in payload.get("workflow_runs", [])
+                  if run.get("name") == "pages build and deployment"
+                  and run.get("path") == "dynamic/pages/pages-build-deployment"
+              ]
+              last_seen = [
+                  {
+                      "id": run.get("id"),
+                      "head_sha": run.get("head_sha"),
+                      "status": run.get("status"),
+                      "conclusion": run.get("conclusion"),
+                      "html_url": run.get("html_url"),
+                  }
+                  for run in candidates
+              ]
+              successful = next(
+                  (
+                      run for run in candidates
+                      if run.get("head_sha") == expected_sha
+                      and run.get("status") == "completed"
+                      and run.get("conclusion") == "success"
+                  ),
+                  None,
+              )
+              if successful:
+                  result = {
+                      "ok": True,
+                      "expected_sha": expected_sha,
+                      "pages_run_id": successful["id"],
+                      "pages_run_number": successful.get("run_number"),
+                      "pages_head_sha": successful.get("head_sha"),
+                      "pages_url": successful.get("html_url"),
+                      "attempt": attempt,
+                  }
+                  output = "artifacts/concurso36-complete-record-live/pages-attestation.json"
+                  os.makedirs(os.path.dirname(output), exist_ok=True)
+                  with open(output, "w", encoding="utf-8") as handle:
+                      json.dump(result, handle, indent=2)
+                      handle.write("\n")
+                  print(json.dumps(result, indent=2))
+                  raise SystemExit(0)
+              print(f"Pages attestation attempt {attempt}/48: pending", flush=True)
+              if attempt < 48:
+                  time.sleep(10)
+
+          print(json.dumps({"ok": False, "expected_sha": expected_sha, "last_seen": last_seen}, indent=2))
+          raise SystemExit(1)
+          PY
+      - name: Wait for and verify the exact public deployment
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/verify_concurso36_complete_record_live.py \
+            --attempts 48 \
+            --interval 10 \
+            --output artifacts/concurso36-complete-record-live/result.json
+      - name: Upload exact readback evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: concurso36-complete-record-live
+          path: artifacts/concurso36-complete-record-live/
+          if-no-files-found: error
+          retention-days: 30

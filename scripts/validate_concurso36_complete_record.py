@@ -12,6 +12,7 @@ GitHub Actions job without installing document or HTML packages.
 
 from __future__ import annotations
 
+import ast
 import hashlib
 import json
 import pathlib
@@ -36,6 +37,11 @@ PROMPT = ROOT / "archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUI
 PUBLICATION_MANIFEST = ROOT / "publication-manifests/concurso36-complete-record-20260823.json"
 PRIMARY_AUTOS_ARCHIVE = ROOT / "archive/concurso36-primary-autos-21aug2026"
 IMPLEMENTATION_REGISTER = ROOT / "archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md"
+CLOSEOUT_AUDIT = ROOT / "docs/deletion-audits/2026-08-23-concurso36-complete-record.md"
+LIVE_VERIFIER = ROOT / "scripts/verify_concurso36_complete_record_live.py"
+LIVE_WORKFLOW = ROOT / ".github/workflows/verify-concurso36-complete-record-live.yml"
+PRODUCTION_SMOKE = ROOT / "scripts/production_smoke_check.py"
+PRODUCTION_SMOKE_WORKFLOW = ROOT / ".github/workflows/production-smoke-monitor.yml"
 
 SECURITY_DIR = ROOT / "evidence/sun-park/2018-02-27-ac-security-request"
 SECURITY_MANIFEST = SECURITY_DIR / "manifest.json"
@@ -182,6 +188,7 @@ ESSENTIAL_MANIFEST_SOURCES = {
     "archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md",
     "archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md",
     "archive/CONCURSO_36_2012_PRIMARY_AUTOS_REDIGEST_HANDOVER_21AUG2026.md",
+    "docs/deletion-audits/2026-08-23-concurso36-complete-record.md",
     "archive/concurso36-primary-autos-21aug2026/README.md",
     "archive/concurso36-primary-autos-21aug2026/PUBLIC_DERIVATIVE_SHA256SUMS.txt",
     "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
@@ -201,7 +208,11 @@ ESSENTIAL_MANIFEST_SOURCES = {
     "evidence/sun-park/2018-02-27-ac-security-request/public/2018-02-27-ac-community-security-request-redacted-searchable.pdf",
     "scripts/build_concurso36_complete_record.py",
     "scripts/validate_concurso36_complete_record.py",
+    "scripts/verify_concurso36_complete_record_live.py",
+    "scripts/production_smoke_check.py",
     ".github/workflows/validate-concurso36-complete-record.yml",
+    ".github/workflows/verify-concurso36-complete-record-live.yml",
+    ".github/workflows/production-smoke-monitor.yml",
     "tools/build_ac_security_request_public_pdf.py",
     "sitemap.xml",
     "sitemap-unitary-shell.xml",
@@ -493,10 +504,52 @@ def check_publication_manifest(failures: list[str]) -> None:
 
     require(manifest.get("publication_id") == "CONCURSO36-COMPLETE-RECORD-20260823",
             "complete-record publication manifest ID changed", failures)
-    require(manifest.get("current_state") in {
+    state = manifest.get("current_state")
+    require(state in {
         "DRAFT", "REMOTE_SOURCE", "PR_OPEN", "CI_GREEN", "MERGED",
         "DEPLOYED", "LIVE_VERIFIED", "DELETION_SAFE",
     }, "complete-record publication manifest has an invalid lifecycle state", failures)
+
+    if state in {"LIVE_VERIFIED", "DELETION_SAFE"}:
+        require(manifest.get("merge_sha") == "86708da90a015d128d32ee681587f1ccdd323455",
+                "live manifest must preserve the substantive publication merge SHA", failures)
+        deployment = manifest.get("deployment_evidence")
+        require(isinstance(deployment, dict), "live manifest deployment evidence missing", failures)
+        if isinstance(deployment, dict):
+            require(deployment.get("publication_pages_run_id") == 32667895000,
+                    "initial exact Pages deployment evidence drifted", failures)
+            require(deployment.get("post_deployment_hotfix_merge_sha")
+                    == "30a60bc507e76792a565fe599afb0db92665149b",
+                    "post-deployment hotfix merge evidence drifted", failures)
+            require(deployment.get("hotfix_pages_run_id") == 32668816716,
+                    "hotfix exact Pages deployment evidence drifted", failures)
+        live_urls = manifest.get("live_urls")
+        require(isinstance(live_urls, list) and len(live_urls) == 20
+                and len(live_urls) == len(set(live_urls)),
+                "live manifest must preserve exactly 20 unique canonical/control URLs", failures)
+        live_evidence = manifest.get("live_verification_evidence")
+        require(isinstance(live_evidence, dict)
+                and live_evidence.get("bilingual_routes") == "18/18"
+                and live_evidence.get("catalogue_records") == 127
+                and live_evidence.get("specialist_records") == 50
+                and live_evidence.get("public_safe_pdfs") == 11,
+                "live verification evidence is incomplete", failures)
+        live_verification = manifest.get("live_verification")
+        require(isinstance(live_verification, dict)
+                and live_verification.get("expected_exact_surfaces") == 85
+                and live_verification.get("duplicate_target_policy") == "FAIL_CLOSED"
+                and live_verification.get("pages_head_sha_attestation")
+                == "REQUIRED_BEFORE_EXACT_PUBLIC_READBACK",
+                "live verifier inventory and exact-SHA controls are incomplete", failures)
+
+    if state == "DELETION_SAFE":
+        require(manifest.get("deletion_status") == "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+                "deletion-safe state must remain qualified by open evidence", failures)
+        deletion_record = manifest.get("deletion_record")
+        require(isinstance(deletion_record, dict)
+                and deletion_record.get("open_evidence_preserved") is True
+                and deletion_record.get("complete_court_file_claim_permitted") is False,
+                "deletion-safe record must preserve open evidence and denominator limits", failures)
 
     labels = manifest.get("result_labels")
     require(isinstance(labels, dict), "publication manifest result_labels missing", failures)
@@ -901,6 +954,13 @@ def check_analytical_artifacts(failures: list[str]) -> None:
             "certified court index",
             "connected-source acquisition is read-only",
             "do not send, reply, forward, file, lodge or self-email",
+            "NO RESPONSE LOCATED IN THE SEARCHED SOURCES",
+            "Message-ID and thread/conversation identifier",
+            "Privilege screening occurs at ingestion",
+            "127 / 50 / 12 / 85",
+            "all located, authenticated and lawfully redistributable",
+            "reject duplicate URL targets",
+            "head_sha` equal to the exact merge SHA",
         ),
         failures,
     )
@@ -921,6 +981,99 @@ def check_analytical_artifacts(failures: list[str]) -> None:
         for pattern in (r"\b8 February 2018\b", r"\b8-Feb-2018\b", r"\b8 de febrero de 2018\b"):
             require(re.search(pattern, text, flags=re.IGNORECASE) is None,
                     f"{relative(path)} republishes the superseded creditor-date layer", failures)
+
+
+def check_live_closeout_controls(failures: list[str]) -> None:
+    closeout = read_text(CLOSEOUT_AUDIT, failures)
+    verifier = read_text(LIVE_VERIFIER, failures)
+    live_workflow = read_text(LIVE_WORKFLOW, failures)
+    smoke_workflow = read_text(PRODUCTION_SMOKE_WORKFLOW, failures)
+    smoke_source = read_text(PRODUCTION_SMOKE, failures)
+
+    require_markers(
+        CLOSEOUT_AUDIT,
+        closeout,
+        (
+            "85 public surfaces",
+            "42-route",
+            "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+            "official reparto/allocation record",
+            "E056–E058",
+            "R07",
+            "No email was sent",
+        ),
+        failures,
+    )
+    require_markers(
+        LIVE_VERIFIER,
+        verifier,
+        (
+            "duplicate public target",
+            '"route_es": 9',
+            '"route_en": 9',
+            '"control_json": 4',
+            '"specialist_full_text": 50',
+            '"security_transcript": 2',
+            '"public_pdf": 11',
+            "len(result) != 85",
+        ),
+        failures,
+    )
+    require_markers(
+        LIVE_WORKFLOW,
+        live_workflow,
+        (
+            "actions: read",
+            "evidence/insolvency-36-2012/ac-removal-fees/**",
+            "Attest successful Pages deployment for the exact merge SHA",
+            'run.get("head_sha") == expected_sha',
+            "--attempts 48",
+        ),
+        failures,
+    )
+
+    smoke_checks: list[dict[str, Any]] | None = None
+    try:
+        tree = ast.parse(smoke_source, filename=str(PRODUCTION_SMOKE))
+        for node in tree.body:
+            if isinstance(node, ast.Assign) and any(
+                isinstance(target, ast.Name) and target.id == "CHECKS"
+                for target in node.targets
+            ):
+                value = ast.literal_eval(node.value)
+                if isinstance(value, list):
+                    smoke_checks = value
+                break
+    except (SyntaxError, ValueError) as exc:
+        failures.append(f"could not parse production smoke inventory: {exc}")
+    require(isinstance(smoke_checks, list) and len(smoke_checks) == 42,
+            "permanent production smoke must contain exactly 42 checks", failures)
+    if isinstance(smoke_checks, list):
+        paths = [item.get("path") for item in smoke_checks if isinstance(item, dict)]
+        kinds = [item.get("kind") for item in smoke_checks if isinstance(item, dict)]
+        require(len(paths) == len(set(paths)) == 42,
+                "production smoke route paths must be 42 unique values", failures)
+        require(len(kinds) == len(set(kinds)) == 42,
+                "production smoke kinds must be 42 unique values", failures)
+        expected_canonical = {
+            route.removesuffix("index.html")
+            for routes in MANIFEST_ROUTES.values()
+            for route in routes
+        }
+        require(expected_canonical.issubset(set(paths)),
+                "production smoke omits a canonical Concurso 36/2012 route", failures)
+
+    for trigger in (
+        "deployment-probes/mission-critical-hardening-20260818.json",
+        "assets/site.js",
+        "en/index.html",
+        "es/index.html",
+        "es/cnmv-ricpe-verificacion/**",
+        "en/cam-creditor-control-shadow-administration-judicial-omission/**",
+        "es/control-acreedor-cam-administracion-hecho-omision-judicial/**",
+    ):
+        require(smoke_workflow.count(trigger) == 2,
+                f"production smoke workflow must trigger on push and PR for {trigger}", failures)
 
 
 class _HTMLCollector(HTMLParser):
@@ -1233,6 +1386,7 @@ def main() -> int:
     check_publication_manifest(failures)
     check_security_publication(failures)
     check_analytical_artifacts(failures)
+    check_live_closeout_controls(failures)
     check_route_pages(failures)
     check_implementation_register(failures)
     check_discovery(failures)
