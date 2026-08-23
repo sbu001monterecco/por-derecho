@@ -523,6 +523,13 @@ def check_publication_manifest(failures: list[str]) -> None:
                     "post-deployment hotfix merge evidence drifted", failures)
             require(deployment.get("hotfix_pages_run_id") == 32668816716,
                     "hotfix exact Pages deployment evidence drifted", failures)
+            if state == "DELETION_SAFE":
+                require(deployment.get("live_closeout_pull_request") == 872
+                        and deployment.get("live_closeout_merge_sha")
+                        == "6793691a8e141b1842b0156e45b6522b9fb0126d"
+                        and deployment.get("live_closeout_pages_run_id") == 32670629109
+                        and deployment.get("live_closeout_pages_sequence") == 983,
+                        "deletion-safe deployment evidence is incomplete", failures)
         live_urls = manifest.get("live_urls")
         require(isinstance(live_urls, list) and len(live_urls) == 20
                 and len(live_urls) == len(set(live_urls)),
@@ -537,10 +544,22 @@ def check_publication_manifest(failures: list[str]) -> None:
         live_verification = manifest.get("live_verification")
         require(isinstance(live_verification, dict)
                 and live_verification.get("expected_exact_surfaces") == 85
-                and live_verification.get("duplicate_target_policy") == "FAIL_CLOSED"
-                and live_verification.get("pages_head_sha_attestation")
-                == "REQUIRED_BEFORE_EXACT_PUBLIC_READBACK",
-                "live verifier inventory and exact-SHA controls are incomplete", failures)
+                and live_verification.get("duplicate_target_policy") == "FAIL_CLOSED",
+                "live verifier inventory and duplicate-target controls are incomplete", failures)
+        if isinstance(live_verification, dict):
+            attestation = live_verification.get("pages_head_sha_attestation")
+            if state == "LIVE_VERIFIED":
+                require(attestation == "REQUIRED_BEFORE_EXACT_PUBLIC_READBACK",
+                        "live state must require exact-SHA Pages attestation", failures)
+            elif state == "DELETION_SAFE":
+                require(attestation == "PASS — 6793691a8e141b1842b0156e45b6522b9fb0126d"
+                        and live_verification.get("exact_surface_run_id") == 32670629833
+                        and live_verification.get("exact_surface_job_id") == 97270843044
+                        and live_verification.get("exact_surface_readback") == "85/85 PASS"
+                        and live_verification.get("production_smoke_run_id") == 32670629825
+                        and live_verification.get("production_smoke_job_id") == 97270843093
+                        and live_verification.get("production_smoke") == "42/42 PASS",
+                        "deletion-safe exact-readback or production-smoke evidence drifted", failures)
 
     if state == "DELETION_SAFE":
         require(manifest.get("deletion_status") == "DELETION_SAFE_WITH_OPEN_EVIDENCE",
@@ -548,7 +567,17 @@ def check_publication_manifest(failures: list[str]) -> None:
         deletion_record = manifest.get("deletion_record")
         require(isinstance(deletion_record, dict)
                 and deletion_record.get("open_evidence_preserved") is True
-                and deletion_record.get("complete_court_file_claim_permitted") is False,
+                and deletion_record.get("complete_court_file_claim_permitted") is False
+                and deletion_record.get("certified_docket_obtained") is False
+                and deletion_record.get("email_sent") is False
+                and deletion_record.get("live_closeout_pull_request") == 872
+                and deletion_record.get("live_closeout_merge_sha")
+                == "6793691a8e141b1842b0156e45b6522b9fb0126d"
+                and deletion_record.get("pages_run_id") == 32670629109
+                and deletion_record.get("pages_head_sha")
+                == "6793691a8e141b1842b0156e45b6522b9fb0126d"
+                and deletion_record.get("exact_surface_result") == "85/85 PASS"
+                and deletion_record.get("production_smoke_result") == "42/42 PASS",
                 "deletion-safe record must preserve open evidence and denominator limits", failures)
 
     labels = manifest.get("result_labels")
