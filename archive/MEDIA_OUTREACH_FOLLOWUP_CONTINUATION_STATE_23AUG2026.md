@@ -22,6 +22,7 @@ Do not infer silence and do not rely on chat memory.
 - Carlos Molina / Cinco Días — SENT + VERIFIED / awaiting response.
 - Silvia Fernández / CANARIAS7 — SENT + VERIFIED / awaiting response.
 - David Ojeda / CANARIAS7 — SENT + VERIFIED / awaiting response.
+- Fran Fajardo / CANARIAS7 — CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / awaiting response.
 
 Latest connected-Gmail media scan, refreshed after the Fran V3 redigest, found:
 
@@ -36,9 +37,9 @@ David Ojeda = Local/Las Palmas/institutions/public-files lane, SENT + VERIFIED.
 
 CANARIAS7 satisfies the two-named-journalist minimum, but user instruction is to continue relevant named lanes one by one.
 
-## Fran Fajardo — controlling V3 gate
+## Fran Fajardo — controlling V3 sent state
 
-**Status:** `REDIGEST V3 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`.
+**Status:** `CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE`.
 
 Read:
 
@@ -94,7 +95,7 @@ A fresh `main` search found no public Por Derecho page citing that article/path 
 - explicit evidential limitations;
 - six finite tribunals checks and complete right of reply.
 
-**SEND GATE: NOT AUTHORISED / NOT SENT.** Any material edit resets approval. A fresh exact `Send` instruction authorises only V3. Post-send verification must use read/search actions only.
+**VERIFIED SEND:** fresh exact user authorisation was followed by a single send of V3. Post-send Gmail read-back confirmed the exact recipient, no Cc/Bcc, controlling subject/body, both mandatory PNGs with their expected byte sizes, the timestamped webinar route, and the RIC/regional-incentive/European-support context. No resend, correction, follow-up or reply is authorised.
 
 ## CANARIAS7 queue after Fran
 
@@ -115,7 +116,7 @@ Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before 
 
 ## Current next action
 
-Present the exact Fran Fajardo controlling V3 package for final approval. Do not send without a fresh exact user instruction.
+Subject to a fresh connected-Gmail response scan, proceed only to research and prepare the next distinct CANARIAS7 lane for Carmen Delia Aranda. Do not send, resend, correct, follow up or reply without fresh exact user authorisation for that specific package.
 
 ## No autonomous send/follow-up
 

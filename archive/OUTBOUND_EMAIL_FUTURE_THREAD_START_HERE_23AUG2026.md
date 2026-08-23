@@ -56,14 +56,14 @@ Subject always to a fresh Gmail scan:
 - **Carlos Molina / Cinco Días** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **Silvia Fernández / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **David Ojeda / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Fran Fajardo / CANARIAS7** — `CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE`.
 - **Diego Sánchez de la Cruz / Civismo-related routing** — HOLD for immediate repeat contact unless new information provides a recipient-specific reason.
 
 The next unsent priority is:
 
-1. **Fran Fajardo / CANARIAS7 — controlling V3 prepared and draft-verified**;
-2. **Carmen Delia Aranda / CANARIAS7**;
-3. **Francisco Suárez Álamo / CANARIAS7**;
-4. **Javier Sheng Pang Blanco / CANARIAS7**, only when a current direct route is verified.
+1. **Carmen Delia Aranda / CANARIAS7**;
+2. **Francisco Suárez Álamo / CANARIAS7**;
+3. **Javier Sheng Pang Blanco / CANARIAS7**, only when a current direct route is verified.
 
 subject to fresh public-role/contact/history and Gmail-response checks.
 
@@ -179,11 +179,11 @@ An inbound response does not automatically authorise a reply.
 
 ## Current next action
 
-Unless a fresh inbound response changes priority, present the exact **Fran Fajardo / CANARIAS7 controlling V3** package for final approval. V1 and V2 are superseded and must not be sent.
+Unless a fresh inbound response changes priority, research and prepare the next distinct **Carmen Delia Aranda / CANARIAS7** lane. Do not send without a separately reviewed exact package and fresh exact user authorisation.
 
-The current V3 package has been rechecked against connected Gmail, the seven live Por Derecho routes, the mandatory two Spanish PNGs, the timestamped San Telmo webinar, current public professional-fit material, adverse evidence and the six finite judicial/documentary asks.
+Fran Fajardo V3 was sent once after fresh exact user authorisation. The actual sent-copy read-back verified the recipient, no Cc/Bcc, subject/body, the two mandatory Spanish PNGs, timestamped San Telmo webinar, RIC/regional-incentive/European-support context, adverse evidence and six finite judicial/documentary asks.
 
-`SEND STATUS: NOT AUTHORISED / NOT SENT` until Gil approves that exact package.
+`FRAN V3 STATUS: SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE`. No resend, correction, follow-up or reply is authorised.
 
 ## Working style
 

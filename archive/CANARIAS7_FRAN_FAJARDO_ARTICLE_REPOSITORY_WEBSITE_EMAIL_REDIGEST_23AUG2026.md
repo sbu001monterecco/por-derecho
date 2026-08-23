@@ -1,7 +1,7 @@
 # CANARIAS7 / Fran Fajardo — article, repository, website and email redigest
 
 **Control date:** 23 August 2026  
-**Status:** CONTROLLING V3 / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT  
+**Status:** CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE
 **Purpose:** preserve the unitary recipient-specific reconstruction after re-reading current `main`, the public Por Derecho website, Fran Fajardo’s public work and connected Gmail, including the recovered May/June-2022 CANARIAS7 article-path evidence.
 
 ## 1. Controlling conclusion
@@ -171,14 +171,14 @@ The actual V3 Gmail draft has been read back and contains:
 - explicit limitations for maps, webinar, funding chronology, procedural transfers and the 2022 article-path question; and
 - full right-of-reply language.
 
-## 12. Supersession and send gate
+## 12. Supersession and verified send state
 
 The original Fran draft and the V2 draft are both:
 
 `SUPERSEDED / DO NOT SEND`.
 
-Current gate:
+Current state:
 
-**V3 PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
+**V3 SENT ONCE AFTER FRESH EXACT USER AUTHORISATION / ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE.**
 
-A fresh exact user instruction to `Send` authorises only the controlling V3 package, provided no material change occurs first. Post-send verification must be read/search only.
+Post-send Gmail read-back confirmed the controlling recipient, no Cc/Bcc, subject and body, the two expected PNGs, the timestamped webinar route, and the full RIC/regional-incentive/European-support context. No resend, correction, follow-up or reply is authorised by this record.
