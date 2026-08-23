@@ -67,15 +67,19 @@ Do not describe an outlet as campaign-complete merely because a single journalis
 
 ## CANARIAS7 immediate application
 
-Silvia Fernández is the first named CANARIAS7 economics/RIC lane and has been sent + verified.
+Silvia Fernández is the named CANARIAS7 economics/RIC lane and has been sent + verified.
 
-CANARIAS7 therefore remains:
+David Ojeda is the named Local/Las Palmas/institutions/public-files lane and has been sent + verified.
 
-`PARTIAL — ONE NAMED JOURNALIST`.
+Fran Fajardo is the named tribunals/courts/judicial-document lane; controlling V3 was sent once and the actual sent copy was verified.
 
-Javier Sheng Pang Blanco is a priority candidate for a second named CANARIAS7 lane, subject to fresh current-role, beat and professional-contact verification and a separate recipient-specific package.
+CANARIAS7 therefore is:
 
-A generic CANARIAS7 newsroom/web-redaction Cc does not satisfy the second-journalist requirement.
+`MULTI-JOURNALIST COVERAGE — THREE NAMED LANES SENT + VERIFIED`.
+
+Carmen Delia Aranda, Francisco Suárez Álamo and Javier Sheng Pang Blanco remain optional additional named candidates, subject to fresh current-role, beat and professional-contact verification and a separate recipient-specific package.
+
+A generic CANARIAS7 newsroom/web-redaction Cc never counted toward the named-journalist requirement.
 
 ## Current-campaign audit principle
 
