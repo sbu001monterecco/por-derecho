@@ -2,7 +2,7 @@
   "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260823",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-23",
-  "current_state": "LIVE_VERIFIED_PARTIAL_PUBLICATION",
+  "current_state": "LIVE_VERIFIED",
   "publication_control": {
     "repository": "sbu001monterecco/por-derecho",
     "source_branch": "control/full-actas-event-record-20260822",
@@ -15,6 +15,28 @@
     "pages_status": "success",
     "publication_closeout_pr": "https://github.com/sbu001monterecco/por-derecho/pull/813"
   },
+  "merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 32608569055,
+    "status": "success",
+    "exact_merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
+    "post_merge_workflows": "7/7 success"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/community/actas/public-index.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/docs/community-actas/2011-06-22-public-redacted-es.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2011-06-22/page-014.webp",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2016-04-26/page-014.webp"
+  ],
+  "live_verification_evidence": [
+    "All eight downloaded public artifacts matched the repository SHA-256 values.",
+    "The public index returned 15 partial packages, 179 represented source-variant pages, 209 PDF edition pages and 209 previews; every completion/manual/facsimile/source-image flag remained false.",
+    "The stale 2011-06-22 page-018.webp derivative returned HTTP 404.",
+    "LIVE_VERIFIED applies only to publication of the disclosed partial derivative layer; it does not satisfy the separate thread-deletion audit."
+  ],
   "subject": "Bilingual Sun Park ACTA document room, public-safe OCR text editions and event/source continuity controls",
   "expected_routes": {
     "es": [
