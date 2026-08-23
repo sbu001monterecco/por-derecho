@@ -1,14 +1,12 @@
-# HOSTELTUR / Taiana González preparation record — 23 August 2026
+# HOSTELTUR / Taiana González outreach record — 23 August 2026
 
-**Status:** PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT  
-**Record class:** outbound-media preparation state  
-**Privacy rule:** no private email address, Gmail identifier or full draft body is reproduced here.
+**Status:** SENT + VERIFIED / AWAITING RESPONSE  
+**Record class:** outbound-media sent-state record  
+**Privacy rule:** no private email address, Gmail identifier or full message body is reproduced here.
 
-## 1. Current recipient fit
+## 1. Recipient fit
 
 Current public HOSTELTUR material identifies **Taiana González** as a journalist at HOSTELTUR, based in Palma de Mallorca, with long-running hotel/tourism coverage and current 2026 reporting on hotel investment, repositioning and Canary Islands hotel activity.
-
-A current publicly available HOSTELTUR publication identifies her professional work address. Connected Gmail searches located no prior direct correspondence with that exact address at the preparation cutoff.
 
 Her recipient fit is unusually strong because she personally authored HOSTELTUR's 15-Oct-2021 report:
 
@@ -20,7 +18,7 @@ The article is used as a **market-information timestamp**, not as evidence that 
 
 ## 2. Controlling tourism/hospitality story
 
-The prepared email applies the same unitary media record in a tourism-industry form:
+The sent email applies the same unitary media record in a tourism-industry form:
 
 `2008 fragmented title / hotel operation`
 → `minority / CEXP / Community marketability and governance conflict`
@@ -54,7 +52,7 @@ The resulting tourism-industry question is:
 
 ## 4. HOSTELTUR publication traceability
 
-The prepared email identifies:
+The sent email identifies:
 
 - Taiana's 15-Oct-2021 Canarian Hospitality/MYND launch report;
 - later HOSTELTUR reporting on MYND Yaiza and Canarian Hospitality's Lanzarote expansion; and
@@ -70,14 +68,16 @@ It asks what non-confidential dossier, presentation, communication or other sour
 
 It expressly states that no evidence has been located showing that Taiana knew the July-2021 `54/190/18` internal certificate when writing the October-2021 article.
 
-## 5. Mandatory Media Core Package — verified in draft
+## 5. Mandatory Media Core Package — verified in actual sent copy
 
-The actual Gmail draft contains both canonical Spanish PNG attachments:
+The actual sent Gmail message was read back after transmission and verified as `SENT` with no Cc and no Bcc.
+
+It contains both canonical Spanish PNG attachments:
 
 - `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`;
 - `san-telmo-ricpe-sun-park-stamp-v1-ES.png`.
 
-The draft body also contains:
+The actual sent body also contains:
 
 - the direct San Telmo webinar link at approximately 08:08;
 - the public Lanzarote open-letter route;
@@ -89,28 +89,29 @@ The draft body also contains:
 - Taiana's original HOSTELTUR article; and
 - express evidential limitations for the maps, webinar, 279-room/commercialisation evidence, economic-crime/RIC allegations and 2018 adverse outcome.
 
-## 6. Prepared subject
+## 6. Verified subject
 
 > Taiana — Sun Park/MYND Yaiza: 54 fincas, inversión hotelera y una vía de solución en Lanzarote
 
-## 7. Three finite asks
+## 7. Three finite asks sent
 
-The prepared email asks Taiana/HOSTELTUR to consider:
+The email asks Taiana/HOSTELTUR to consider:
 
 1. identifying what information/dossier/presentation supported her 15-Oct-2021 report and later HOSTELTUR MYND reporting, and what was independently checked about the Playa Blanca asset's property, availability and control;
 2. examining the reconciliation `279-room Lava Verde/Club Sei → 54 CAM / 190 LPB / 18 terceros` and seeking explanations from Canarian Hospitality, Grupo Acosta Matos, RICPE and, where relevant, Meeting Point about contractual and operating authority by date; and
 3. asking Yaiza and the Cabildo about the 22-August constructive invitation, its routing and the public records capable of reconciling title, tourism operation, refurbishment, investment and public support.
 
-## 8. Current send gate
+## 8. Follow-up state
 
-The draft is **not authorised** and has **not been sent**.
+Current status is:
 
-Before send:
+`SENT + VERIFIED / AWAITING RESPONSE`.
 
-- re-read the actual Gmail draft;
-- re-check current recipient routing if any time has passed or new evidence appears;
-- verify both attachments and all links;
-- present the exact To/Cc/Bcc, subject, body, attachments and links to Gil; and
-- obtain fresh exact final authorisation under `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
+Before any follow-up:
 
-Any material edit resets approval.
+- search connected Gmail in both directions;
+- classify any response narrowly under the media continuation protocol;
+- do not infer reading, rejection, interest or delivery status from silence;
+- do not send an immediate same-day chase;
+- prepare any reply/follow-up as a new exact package; and
+- obtain fresh final authorisation under `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
