@@ -41,51 +41,88 @@ This rule applies retrospectively to all already-contacted outlets.
 
 These statuses are individual-recipient states, not outlet-completion states. Most current outlets remain `PARTIAL` under the multi-journalist rule until a second named editorial lane is sent + verified or a documented exception is established.
 
-For Silvia/CANARIAS7 read:
-- `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
-- `archive/CANARIAS7_SILVIA_FERNANDEZ_SENT_VERIFICATION_23AUG2026.md`.
+## Latest fresh response scan
 
-For Carlos Molina read:
-- `archive/CINCO_DIAS_CARLOS_MOLINA_PREPARATION_RECORD_23AUG2026.md`;
-- `archive/CINCO_DIAS_CARLOS_MOLINA_SENT_VERIFICATION_23AUG2026.md`.
+Immediately before preparing David Ojeda / CANARIAS7, a fresh connected-Gmail scan of the active media-domain set found:
 
-For every recipient, re-read connected Gmail before any follow-up.
+`NO RESPONSE LOCATED YET`.
+
+Use only that wording. Silence is not evidence of reading, rejection, delivery failure, interest or editorial decision.
 
 ## CANARIAS7 outlet state
 
 Silvia Fernández's economics/RIC lane was sent + verified. That does **not** complete CANARIAS7.
 
+David Ojeda has now been selected by user instruction as the second named CANARIAS7 lane because his current Local/Las Palmas/editorial role gives a genuinely different institutional/public-interest route.
+
 Current outlet state:
 
-`CANARIAS7 = PARTIAL — ONE NAMED JOURNALIST`.
+`CANARIAS7 = PARTIAL — SECOND NAMED LANE PREPARED / DAVID OJEDA NOT SENT`.
 
-Priority second-lane candidate:
+Read:
 
-`Javier Sheng Pang Blanco → verify current role/beat/contact → define WHY THIS PERSON → prepare separate source-led package → read back → obtain exact final approval → send once if approved → verify actual sent copy`.
+- `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
+- `archive/CANARIAS7_SILVIA_FERNANDEZ_SENT_VERIFICATION_23AUG2026.md`;
+- `archive/CANARIAS7_DAVID_OJEDA_PREPARATION_RECORD_23AUG2026.md`.
 
-The generic CANARIAS7 newsroom/web-redaction Cc on Silvia's message does not satisfy journalist number two.
+### David Ojeda prepared lane
 
-## Latest verified CANARIAS7 send
+Prepared subject:
 
-The stored Silvia Fernández / CANARIAS7 draft was sent once after fresh exact final authorisation and was then read back from the actual sent copy.
+`David / CANARIAS7 — Sun Park/MYND: Fiscalía a Arrecife, Gobierno de Canarias y trazabilidad 54/190/18`
 
-Verified routing:
-- Silvia Fernández direct current professional CANARIAS7 route as `To`;
-- CANARIAS7 newsroom/web-redaction route as `Cc`;
+Prepared routing:
+
+- David's direct professional CANARIAS7 route already present in historical project Gmail as `To`;
+- no `Cc`;
 - no `Bcc`.
+
+No delivery-failure/bounce for David's route was located in the fresh preflight check. No inbound reply from David was located. Current public professional material confirms David remains at CANARIAS7 in Las Palmas and identifies him with the Local/editorial lane.
+
+David's package is **not** a duplicate of Silvia's. Its controlling hook is institutional traceability:
+
+`10-Aug-2026 Fiscalía AN inhibition to Fiscalía de Área Arrecife–Lanzarote–Puerto del Rosario`
+→ `12-Aug-2026 Gobierno de Canarias Law 2/2023 internal-routing record`
+→ `22-Aug-2026 Yaiza/Cabildo constructive invitations`
+→ `what title/authority each public body actually received and verified`
+→ `54 CAM / 190 LPB / 18 third parties + conditional title + incomplete DD`
+→ `RICPE / HNT / MYND / RIC / GC836 / EU-support traceability`.
+
+The Fiscalía transfer is presented only as routing, not a merits finding. The Canary Government internal transfer is presented only as receipt/routing, not a finding of infringement. AP 89/2014 and the adverse 2018 provisional dismissal remain expressly disclosed.
+
+The actual Gmail draft has been read back and contains both mandatory Spanish PNGs at expected byte sizes, direct San Telmo webinar, current Por Derecho routes, adverse/contrary evidence, 54-CAM controls and explicit evidential limitations.
+
+**SEND GATE: NOT AUTHORISED / NOT SENT.**
+
+Any material edit resets approval. Present the exact David package for fresh final approval before any send.
+
+### Further CANARIAS7 lanes after David
+
+User instruction is to work through the remaining CANARIAS7 professionals one by one. Current queue after David:
+
+1. Fran Fajardo — justice/courts/investigative-document lane; reverify current role/contact before draft;
+2. Carmen Delia Aranda — institutional/social-public-affairs lane; reverify current role/contact before draft;
+3. Francisco Suárez Álamo — director/commissioning/editorial-accountability lane; use only current verified role routing;
+4. Javier Sheng Pang Blanco — economics/tourism/business/public-policy lane; relevant but no verified direct route currently, so do not guess;
+5. historical `lpalacios@canarias7.es` route remains HOLD until named identity/current role is resolved.
+
+The generic CANARIAS7 newsroom/web-redaction route does not count as a named journalist.
+
+## Latest verified Silvia/CANARIAS7 send
+
+The stored Silvia Fernández / CANARIAS7 draft was sent once after fresh exact final authorisation and then read back from the actual sent copy.
 
 Verified subject:
 
 `Silvia / Economía CANARIAS7 — RICPE y hotel de Yaiza: 54/190/18, 3 M€ RIC y trazabilidad del activo`
 
 Verified mandatory media core:
+
 - `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
 - `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes;
 - direct San Telmo webinar at approximately 08:08;
 - current Por Derecho routes;
 - adverse/contrary evidence and express evidential limitations.
-
-The package used CANARIAS7's own 24-Jan-2020 RICPE launch article and May-2023 €3m Yaiza hotel-materialisation report as source/chronology checkpoints. It expressly superseded the broader 2022/2024 CANARIAS7 outreach methodology and did not accuse the outlet of lying or knowingly publishing falsehood absent proof.
 
 ## Current response rule
 
@@ -98,6 +135,7 @@ If no new message is found, use only:
 Do not translate silence into rejection, reading, delivery failure, acceptance or editorial decision.
 
 Classify any inbound narrowly as:
+
 - `SUBSTANTIVE EDITORIAL RESPONSE`;
 - `REQUEST FOR PRIMARY SOURCES`;
 - `REQUEST FOR CALL / INTERVIEW`;
@@ -137,7 +175,7 @@ Reassess only after elapsed working time, a substantive reply or materially new 
 → `2021 professional/institutional knowledge points`
 → `HNT / MYND / RICPE / RIC / Series F/G / GC/836/P06 / EU-cofinancing traceability`
 → `media/public narrative`
-→ `2026 Yaiza + Cabildo constructive institutional-resolution route`.
+→ `2026 institutional routing + Yaiza/Cabildo constructive-resolution route`.
 
 This chain does not prove a single conspiracy or common criminal intent. Keep every actor, entity, property, financing instrument, public body and media publication separate unless the documentary bridge is proved.
 
@@ -165,20 +203,11 @@ For `54 CAM`, also apply `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA
 
 ## Current next action
 
-Do **not** treat the prior one-person outlet sends as finished coverage.
+Present the exact David Ojeda / CANARIAS7 package for fresh final approval. If approved without material change, send that exact stored Gmail draft once and read back the actual sent copy.
 
-Immediate sequence:
+After any verified David send, update CANARIAS7 to multi-journalist coverage and then proceed one by one through the remaining CANARIAS7 named lanes, starting with Fran Fajardo, subject to fresh response scan and contact/role verification each time.
 
-1. fresh connected-Gmail response scan across all active recipients;
-2. read `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_DASHBOARD_23AUG2026.md`;
-3. begin filling missing second named editorial lanes, with CANARIAS7 / Javier Sheng Pang Blanco the immediate priority candidate;
-4. for each second lane verify current role/beat, current professional contact route, prior Gmail history and distinct recipient-specific fit;
-5. prepare/read back the exact package;
-6. obtain fresh exact final authorisation before any send;
-7. after CANARIAS7 second lane, continue the retrospective second-journalist audit for El Confidencial, Diario de Lanzarote, La Voz de Lanzarote, HOSTELTUR, Canarias Ahora/elDiario.es Canarias, EL PAÍS, Biosfera Digital, Crónicas de Lanzarote and Cinco Días;
-8. continue opening new Canary-wide outlets — La Provincia, Atlántico Hoy, Cadena SER Canarias, RTVC — but apply the two-or-more-named-editorial-professionals rule from the start.
-
-No dashboard rank or second-lane identification authorises sending.
+No queue rank, coverage state or preparation record authorises sending.
 
 ## New-thread trigger alias
 
