@@ -19,65 +19,58 @@ Do not rely on chat memory and do not infer silence.
 - Taiana González / HOSTELTUR — `SENT + VERIFIED / AWAITING RESPONSE`.
 - Carlos Sosa / Canarias Ahora / elDiario.es Canarias — `SENT + VERIFIED / AWAITING RESPONSE`.
 - Joaquín Gil / EL PAÍS — `SENT + VERIFIED / AWAITING RESPONSE`.
+- Salvador Hernández / Biosfera Digital — `SENT + VERIFIED / AWAITING RESPONSE`.
+- Alfonso Canales Segovia / Crónicas de Lanzarote — `SENT + VERIFIED / AWAITING RESPONSE`.
 
-For Joaquín read `archive/EL_PAIS_JOAQUIN_GIL_PREPARATION_RECORD_23AUG2026.md`, which now functions as the sent-state record.
+For each recipient, read the corresponding preparation/sent record and then re-read connected Gmail before any follow-up.
 
 ### Diego Sánchez de la Cruz / Civismo-related routing
 
 HOLD for immediate repeated outreach unless a new response or materially new recipient-specific reason appears.
 
-## Fresh response scan at Salvador preparation cutoff
+## Latest verified Alfonso send
 
-A fresh connected-Gmail scan found **no new inbound response located yet** from the active media set, including EL PAÍS.
+The exact stored Alfonso/Crónicas draft was sent once and then read back from Gmail.
 
-Use only:
+Verified routing:
+- To: Alfonso Canales Segovia direct professional address;
+- Cc: Crónicas de Lanzarote newsroom address;
+- Bcc: none.
+
+Verified subject:
+
+`Alfonso — Sun Park/MYND: 54 fincas, RIC y una propuesta de claridad y solución para Lanzarote`
+
+Verified mandatory media core:
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`;
+- `san-telmo-ricpe-sun-park-stamp-v1-ES.png`;
+- San Telmo webinar at approximately 08:08;
+- current Por Derecho routes;
+- adverse/contrary evidence and explicit evidential limitations.
+
+## Current response rule
+
+Before any follow-up or new-recipient send, run a fresh connected-Gmail scan.
+
+If no new message is found, use only:
 
 `NO RESPONSE LOCATED YET`.
 
-Never translate silence into rejection, reading, acceptance, non-delivery or editorial decision.
+Do not translate silence into rejection, reading, delivery failure, acceptance or editorial decision.
 
-## Prepared but unsent state
+Classify any inbound narrowly as:
+- `SUBSTANTIVE EDITORIAL RESPONSE`;
+- `REQUEST FOR PRIMARY SOURCES`;
+- `REQUEST FOR CALL / INTERVIEW`;
+- `CORRECTION / CHALLENGE`;
+- `ROUTING / WRONG PERSON`;
+- `ACKNOWLEDGEMENT ONLY`;
+- `OUT-OF-OFFICE`;
+- `BOUNCE / DELIVERY FAILURE`;
+- `REFUSAL / NO INTEREST`;
+- `OTHER — DESCRIBE EXACTLY`.
 
-### Salvador Hernández / Biosfera Digital
-
-`PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`
-
-Current public Biosfera material identifies Salvador Hernández as Director. No prior Project Sun Rock / Biosfera / Salvador correspondence was located in connected Gmail at preparation cutoff.
-
-Prepared routing uses the current Biosfera newsroom/news route as `To`, the current general contact route as a limited `Cc`, and no Bcc.
-
-Prepared subject:
-
-`A la atención de Salvador Hernández — Sun Park/MYND: 54 fincas, RIC y una vía de solución para Lanzarote`
-
-Biosfera-specific source checkpoints:
-
-- 5-Dec-2022 report on >€4m of RIC being available to materialise in the financing of the rehabilitation/transformation of Sun Park into MYND Yaiza;
-- 22-Mar-2023 report on Canarian Hospitality's Lanzarote presentation, the total transformation of MYND Yaiza and the financial/strategic support of Grupo Acosta Matos.
-
-These are source/chronology checkpoints, not proof that Salvador/Biosfera knew the internal RICPE title position or independently verified every proposition.
-
-Prepared architecture:
-
-`positive Yaiza/Cabildo hook`
-→ `2008 fragmented title / exploitation`
-→ `minority/CEXP/Community marketability conflict`
-→ `54-CAM provenance / purchaser knowledge`
-→ `2018 material-control transition + adverse dismissal retained`
-→ `pre-title Lava Verde / Club Sei / Meeting Point preparation`
-→ `2020 integrated ownership/control representation`
-→ `July-2021 internal 54/190/18 + conditional title + unsigned LOI + incomplete DD`
-→ `Biosfera Dec-2022 RIC transformation report`
-→ `Biosfera Mar-2023 Canarian Hospitality/MYND report`
-→ `RICPE/HNT/MYND/GC836/EU-support reconciliation`
-→ `media-source traceability`
-→ `constructive Yaiza/Cabildo ending`.
-
-The actual Gmail draft has been read back and contains both mandatory Spanish PNGs with the expected sizes, the direct San Telmo webinar, multiple current Por Derecho routes, the two Biosfera source links, contrary/adverse evidence and express evidential limitations.
-
-Read `archive/BIOSFERA_DIGITAL_SALVADOR_HERNANDEZ_PREPARATION_RECORD_23AUG2026.md` before any action.
-
-Do not send until Gil gives fresh exact final authorisation. Any material edit resets approval.
+A response does not itself authorise a reply.
 
 ## Current unitary story core
 
@@ -108,7 +101,6 @@ Do not state that CAM, RICPE, Canarian Hospitality, Government or another actor 
 ## Mandatory media package
 
 Unless Gil approves an exact one-use exception, every future substantive media email must include:
-
 - appropriate-language PwC PNG;
 - appropriate-language San Telmo / RICPE / Sun Park PNG;
 - direct San Telmo webinar at approximately 08:08;
@@ -119,24 +111,26 @@ Unless Gil approves an exact one-use exception, every future substantive media e
 
 For `54 CAM`, also apply `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
 
-## Continuation queue — revalidate before drafting
+## Continuation queue
 
-1. **Salvador Hernández / Biosfera Digital — PREPARED, AWAITING EXACT SEND AUTHORISATION.**
-2. **Alfonso Canales Segovia / Crónicas de Lanzarote** — Lanzarote local institutional/governance route.
+The previously prepared local-media queue through Alfonso is now exhausted.
 
-Specialist/HOLD lanes remain available for economic/investment and German tourism/cross-border media.
+Before selecting another recipient:
+1. run a fresh Gmail response scan across all active media recipients;
+2. re-read the neutral media register and current recipient-fit playbook;
+3. choose the next unsent specialist or wider-reach recipient based on story fit and what has changed since the last wave;
+4. prepare and read back the exact draft;
+5. obtain fresh exact final authorisation before any send.
 
-No ranking or prepared draft is authority to send.
+Likely remaining lanes include economic/investment media, German tourism/cross-border media and other national/investigative recipients, but no lane is pre-authorised.
 
-## Follow-up discipline
+## Follow-up timing discipline
 
-Do not send same-day chasers merely because no answer appears. Before proposing a follow-up assess elapsed working time, holiday/reduced-newsroom conditions, new primary sources/official responses, whether the first email contained a finite ask and whether another route is actually a new recipient.
+Do not send same-day chasers simply because no answer appears. Before proposing a follow-up assess elapsed working time, holiday/reduced-newsroom conditions, new primary sources or official responses, whether the first email contained a finite ask and whether another colleague/outlet route is actually a new recipient.
 
-Any inbound must be read and classified narrowly as substantive editorial response, primary-source request, call/interview request, correction/challenge, routing, acknowledgement, out-of-office, bounce, refusal/no-interest, other exact state, or `NO RESPONSE LOCATED YET`.
+Preferred follow-up is normally shorter than the first email and says what changed or why now.
 
-A response does not itself authorise a reply.
-
-## New-thread alias
+## New-thread trigger alias
 
 Read `RUN_LIKE_THE_WIND.md`. The reliable short command is:
 
@@ -144,8 +138,6 @@ Read `RUN_LIKE_THE_WIND.md`. The reliable short command is:
 
 This is a project convention, not a platform macro, and never authorises an outbound send.
 
-## Current next action
+## No autonomous send/follow-up
 
-Present the exact Salvador Hernández / Biosfera Digital package for final approval. If approved without material change, send that exact stored Gmail draft once and read back the actual sent copy. Then update this state to `SENT + VERIFIED / AWAITING RESPONSE` and proceed to Alfonso Canales Segovia only after fresh Gmail/public-role/history checks.
-
-No chase, resend, correction, reply or new-recipient send is authorised by this file.
+No chase, resend, correction, reply or new-recipient send is authorised by this file. Every outbound transmission requires a fresh exact package and user approval under `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
