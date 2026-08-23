@@ -114,3 +114,34 @@ No specific legacy verifier is declared defective by this register where its com
 6. Consolidate legacy live verifiers without weakening any required public-edge control.
 
 This register is a recoverable handover. It does not depend on the chat thread for its meaning.
+
+## 7. Master email/files scan-request batch queue — active-estate and 18-PDF corpus
+
+**Activated:** 23 August 2026  
+**Controlling source register:** `archive/SUN_PARK_ACTIVE_ESTATE_2018_2021_EIGHT_SOURCE_SUPPLEMENT_23AUG2026.md`  
+**Canonical gap rows:** `ME-012`, `ME-050`, `ME-074`–`ME-076`, plus the cross-referenced existing ME / ME-CAM7J rows.
+
+The eighteen uploads have been reconciled as seventeen unique binaries and sixteen documentary items. Five later binaries already match private custody rows `MAT-005`–`MAT-009`; one CAM print is a source variant; the two 18-page photo PDFs are exact duplicates. Do not upload or count them again as independent corroboration.
+
+Run future scans as resumable micro-batches and write results back to the canonical ME row and source supplement. A no-result search is logged; it is not proof of non-existence.
+
+| Batch | Source-completion IDs | Exact focus | Primary search locations / query ladder | Exit condition |
+|---|---|---|---|---|
+| `AE-01` | `ME-PDFSCAN-001`–`004` | 24-Oct-2019 anchor; 4-Nov reposición + blocks; AP 23-Jul-2019; interest/Community certificates and final amounts | exact dates + `36/2012` + `Auto` / `reposición` / `3.079.104,66` / `3.182.000`; Drive, Gmail attachments, counsel/procurador files, court-certified index | signed acts and annex inventory located, hashed and linked, or negative-search log complete |
+| `AE-02` | `ME-PDFSCAN-005`–`008` | Aweswell photographic dossier; Jan/Feb-2021 reposición/DIOR; AC opposition/certificates/reports; CAM `DOCUMENTO NÚMERO UNO` | `7299`, `654/2021`, `690/2021`, `13 enero 2021`, `4 febrero 2021`, `9 febrero 2021`, `15 enero 2019`, `estado masa activa`, `certificación Comunidad`; Gmail/Drive/LexNET/counsel/Community | each filing, receipt and expressly cited annex reconciled |
+| `AE-03` | `ME-PDFSCAN-009`–`011` | CAM 54-unit title; municipal licence/plans/works; finca-photo overlay; access/key/security requests and logs | Registry/deeds, Yaiza licence/project file, CAM/contractor records, Community/security/locksmith files, expert/notary correspondence | date-specific unit/title/licence/access matrix produced or remaining custodian stated |
+| `AE-04` | `ME-PDFSCAN-012`, `ME-075` | native 23-Feb/8-Mar-2021 email, photographic attachment and complete request→response→inspection outcome | Gmail exact subject `autorización para peritos - informe estado de la masa activa de Luchy Hotel Sun Park (36/2012)`; sent/all-mail/Trash; Google Takeout; recipient mailboxes; Drive attachment search | `.eml`/RFC822 + MIME/headers + attachments + later responses/outcome hashed, or bounded negative log |
+| `AE-05` | `ME-PDFSCAN-013`–`014` | RPC publication, offer/auction/due diligence; later responsibility/appeal, restitution, rectification and EUR 400,000 accounting | RPC, Concurso/LexNET, AC data room/accounts, bidder correspondence, deeds/Registry, court/appeal/counsel files | full decision and implementation chain reconciled |
+| `AE-06` | `ME-PDFSCAN-015`–`016`, `ME-076` | original 1-Mar-2018 images/event proof; reconcile CAM pleading variants/receipt/annex | exact annex alias `ANEXO_08D_DOCUMENTO_GRAFICO_CAM_JOAN_CRUZ_01MAR2018`; device/photo libraries, Drive/Gmail, DP 1132 exhibits; CAM/LexNET file | originals/EXIF/identity/context and filing treatment located; duplicate/variant relations fixed |
+| `AE-07` | `ME-PDFSCAN-017`–`022` | prior-ten completion: JV 1260; 2014 Fiscalía annexes/outcome; DI 248; May-2019 sequence; complete 2-May order; 1-Aug mixed-bundle components | exact filenames and procedure numbers; court/Fiscalía certified files; LexNET; Gmail/Drive; counsel files; existing repository retrieval aliases | every fragment/bundle separated into source, receipt, opposition, official act and outcome |
+
+### Cross-thread execution rule
+
+Any other thread locating one of these items must:
+
+1. preserve the native source before OCR/redaction;
+2. calculate SHA-256 and record filename, bytes, acquisition date, custodian and parent/variant/duplicate relation;
+3. update the controlling `ME-*` status instead of creating a parallel generic gap;
+4. link the source to the relevant pleading/order and record what it establishes and does not establish;
+5. retain personal data, privilege and private binaries outside public Git unless a separate publication gate is approved; and
+6. never claim website publication until the merge SHA, Pages deployment and exact live route have been checked.
