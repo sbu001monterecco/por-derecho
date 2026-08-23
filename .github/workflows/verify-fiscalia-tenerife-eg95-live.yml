@@ -1,0 +1,71 @@
+name: Verify Fiscalía Tenerife EG 95/2026 live
+
+on:
+  pull_request:
+    paths:
+      - "scripts/verify_fiscalia_tenerife_eg95_live.py"
+      - "scripts/render_fiscalia_tenerife_eg95_live.mjs"
+      - ".github/workflows/verify-fiscalia-tenerife-eg95-live.yml"
+      - "archive/FISCALIA_TENERIFE_EG95_DEPLOYMENT_CLOSEOUT_23AUG2026.md"
+  push:
+    branches: [main]
+    paths:
+      - "es/fiscalia-tenerife-eg95-2026/**"
+      - "en/fiscalia-tenerife-eg95-2026/**"
+      - "assets/fiscalia-eg95-*"
+      - "assets/site-pre-intervencion-highlight-20260820.js"
+      - "sitemap-fiscalia-tenerife.xml"
+      - "robots.txt"
+      - "scripts/verify_fiscalia_tenerife_eg95_live.py"
+      - "scripts/render_fiscalia_tenerife_eg95_live.mjs"
+      - ".github/workflows/verify-fiscalia-tenerife-eg95-live.yml"
+      - "archive/FISCALIA_TENERIFE_EG95_DEPLOYMENT_CLOSEOUT_23AUG2026.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-fiscalia-tenerife-eg95-live
+  cancel-in-progress: false
+
+jobs:
+  public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: "22"
+
+      - name: Poll static GitHub Pages publication
+        run: python scripts/verify_fiscalia_tenerife_eg95_live.py
+
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+
+      - name: Verify rendered public propagation
+        env:
+          PSR_BASE_URL: https://sbu001monterecco.github.io/por-derecho
+          PSR_EG95_ARTIFACT_DIR: artifacts/fiscalia-tenerife-eg95-live
+        run: node scripts/render_fiscalia_tenerife_eg95_live.mjs
+
+      - name: Show verification evidence
+        if: always()
+        run: |
+          cat artifacts/fiscalia-tenerife-eg95-live/static-public-edge.json || true
+          cat artifacts/fiscalia-tenerife-eg95-live/rendered-public-edge.json || true
