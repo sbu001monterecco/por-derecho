@@ -293,6 +293,14 @@ rejected/narrowed, appeal grounds and matters the classification did not decide.
 This track affects but does not automatically determine creditor standing, estate
 administration, operation, extraconcursal rights, causation or damages.
 
+The 23-Aug-2026 source completion confirms three first-instance opposition
+instruments (LPB; Gil; joint PINK/Patricia) and three appeal instruments for four
+appellant interests (Gil; joint PINK/Patricia; LPB). The six-page joint opposition
+and its 24-Mar-2021 LexNET receipt are now recovered. The actual filed LPB appeal
+and receipt remain open, although counsel's filing report and the deposit chain are
+located. This refines source provenance and public wording but does not change the
+unitary merits synthesis above.
+
 ### 13. Current accountability routes
 
 Keep three routes separate but evidentially coordinated:
