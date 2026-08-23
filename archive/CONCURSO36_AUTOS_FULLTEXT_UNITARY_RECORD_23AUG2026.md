@@ -56,6 +56,10 @@ No public text may say that the court found the remuneration lawful or unlawful,
 - `scripts/build_concurso_autos_pages.py`
 - `scripts/validate_concurso_autos_publication.py`
 
+### Whole-file continuation
+
+- `archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md` — controlling umbrella prompt for deriving the complete court-file denominator; obtaining every located Judge/Appeal Court/LAJ act, party filing, annex, receipt, notice and material party communication; preserving native originals; extending the stable corpus; digitising every page; and publishing only verified public-safe derivatives. The present 50-record removal/remuneration archive is its specialist baseline, not the denominator for the whole Concurso 36/2012 file.
+
 The private originals are not committed. Builders accept a controlled local source directory and produce only minimised public artifacts.
 
 ## 4. Decision matrix

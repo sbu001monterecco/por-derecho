@@ -1,0 +1,495 @@
+# Execution prompt — complete Concurso 36/2012 judicial and party record
+
+**Date:** 23 August 2026
+
+**Status:** controlling umbrella execution prompt
+
+**Scope:** Concurso ordinario 36/2012, NIG `3501647120120000351`, Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria; every section, piece, incident, appeal and implementation record materially connected to LPB's insolvency proceeding
+
+**Default mode:** `AUDIT_ACQUIRE_DIGITISE_PREPARE`
+
+**Optional release mode:** `PUBLISH_PUBLIC_SAFE` only when the current user instruction expressly authorises publication
+
+## Copy/paste instruction
+
+> Run the complete Concurso 36/2012 judicial-and-party-record acquisition, digitisation, unitary digest and public-safe publication workflow. Start from current `main`, the live website and the existing 50-record AC removal/remuneration corpus, but do not treat that specialist corpus as the whole insolvency file. Search the connected Gmail, Google Drive, Library/Files and every repository source for all Judge, appellate-court and LAJ acts; every party filing, appeal, opposition, clarification request, exhibit and filing receipt; every official notice, service, hearing record and court communication; and every material party communication that proves notice, authority, instruction, implementation, objection, contradiction, response or silence. Preserve native originals privately with source IDs and hashes. Create complete page-accounted Spanish transcriptions and public-safe derivatives only after source, privacy, privilege and hidden-data review. Keep judicial holdings, LAJ procedural acts, party allegations, private communications and later interpretation separate. Reconstruct what was requested, what was before the decision-maker, what was ordered, notified, appealed, stayed, finalised, implemented and accounted for. Update the proceedings, correction, missing-evidence, custody and maintenance controls; extend the existing dedicated public archive rather than creating duplicate routes; publish all public-safe judicial decisions and clearly labelled party records only in `PUBLISH_PUBLIC_SAFE` mode; then validate, merge through a dedicated PR, verify the exact GitHub Pages deployment and report the remaining certified-docket gaps. Never claim the file is complete until a certified court index has been reconciled record by record.
+
+The remainder of this document defines what `complete`, `digitised`, `party communication`, `public-safe` and `verified live` mean.
+
+## 1. Objective
+
+Create one recoverable, source-addressable and independently auditable record of the entire judicial and party-document history of Concurso 36/2012.
+
+The execution is not satisfied by:
+
+- a conventional chronology;
+- a list of filenames;
+- repeating the existing website;
+- finding only favourable documents;
+- publishing OCR without checking every source page;
+- calling an editable lawyer copy an official filed copy;
+- treating a court recital as adoption of every underlying assertion;
+- treating an order as proof that its conditions were implemented; or
+- describing the present corpus as complete because all presently located files were processed.
+
+The controlling reconstruction is:
+
+`request → evidence before organ → opposition/response → decision → service → appeal/review → suspension/finality → implementation → accounting/result → later treatment`
+
+For every break in that chain, identify the exact missing document or verification act.
+
+## 2. Mandatory starting record
+
+Before searching or drafting, read current `main` and at least:
+
+1. `CHATGPT_START_HERE.md`;
+2. `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md`;
+3. `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`;
+4. `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md` and `archive/PROCEEDINGS_MASTER_REGISTER.csv`;
+5. `archive/EVIDENCE_CUSTODY_AND_PRESERVATION_PROTOCOL_16AUG2026.md`;
+6. `archive/MISSING_EVIDENCE_REGISTER.md` and `archive/CORRECTION_REGISTER.md`;
+7. `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`;
+8. `archive/CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md`;
+9. `archive/prompts/CONCURSO36_DEFINITIVE_TEXT_LIQUIDATION_HARD_CLOSURE_PROMPT_21AUG2026.md`;
+10. `archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md`;
+11. `archive/AC_SEPARATION_FEES_AUTOS_DP1901_REFERENCE22_UNITARY_DIGEST_23AUG2026.md`; and
+12. the Calificación, CAM/7-June, Matkator, Community/ACTA, creditor-assignment, Judge, LAJ and AC specialist gates whenever their records enter the scan.
+
+Current baseline, not completion claim:
+
+- the specialist AC removal/remuneration archive contains 50 digitised records;
+- those 50 comprise 25 court/LAJ acts and 25 party filings;
+- they concern two lanes only and do not establish a complete denominator for Concurso 36/2012;
+- the public routes already display the located decisions and link the located party filings; and
+- their builders, stable IDs, redaction rules and standing-versus-merits controls must be extended, not replaced.
+
+## 3. Perimeter: what must be sought
+
+### A. Judicial decisions
+
+Find every available signed or source-identifiable:
+
+- Auto;
+- Sentencia;
+- Providencia;
+- judicial clarification, correction, supplementation or refusal;
+- order opening, suspending, resuming, modifying or concluding a section or incident;
+- order concerning the active estate, passive estate, recognised credit, administration powers, liquidation, sale, dación, adjudication, works, possession, access, preservation, accounting, remuneration, removal, liability or Calificación;
+- appeal-court decision, including admission, evidence, accumulation, interim treatment, merits, finality and remittal; and
+- Supreme Court or other later review act actually connected to the insolvency file.
+
+### B. LAJ and court-office acts
+
+Find every material:
+
+- Decreto;
+- Diligencia de Ordenación;
+- cédula, edicto, oficio, mandamiento, exhorto, testimonio or certification;
+- filing, joinder, transfer, service, summons, hearing, publication, remittal, appeal-formation, enforcement, archive or finality act;
+- electronic-court notification and acknowledgement; and
+- court index, docket export, hearing minute, audiovisual or recording locator.
+
+LAJ and office acts prove the procedural operation stated in them. They do not automatically prove the truth of a party allegation or the merits of a judicial dispute.
+
+### C. Party filings
+
+Find every located version and filing proof for:
+
+- applications, claims and incidental claims;
+- allegations, objections and responses;
+- AC reports and accounts;
+- creditor, debtor, shareholder, owner, operator, Community and third-party submissions;
+- appeals, oppositions, impugnations, reconsideration and clarification requests;
+- evidence applications, preservation requests and proposed expert/witness evidence;
+- settlement, sale, financing, rescue, offer, bid, dación and adjudication documents actually filed or relied on;
+- annexes, exhibits, powers, expert reports, spreadsheets, valuations and title schedules; and
+- later-document submissions and requests for joinder, transmission or testimony.
+
+A party filing proves that a representation or request was made in that form. It does not prove its underlying factual or legal proposition merely because it entered the court file.
+
+### D. Communications by parties
+
+Search for communications involving LPB, Aweswell, the Insolvency Administrator, counsel, creditors, CAM/Acosta Matos, SAREB/PH122/servicers, Community actors, CEXP/Pink/Monterecco, Matkator, bidders, operators, experts, notaries, registries and public bodies where they bear on:
+
+- notice or knowledge;
+- authority, representation or mandate;
+- instructions and implementation;
+- access, possession, security, keys, works or preservation;
+- creditor amount, standing, assignment or payment;
+- rescue, refinancing, offer, inspection, valuation or sale;
+- filing, service, attachment transmission or procedural status;
+- objection, denial, correction, ratification, adoption or contrary evidence; or
+- accounts, income, fees, costs, use, fruits, loss or benefit.
+
+Include emails, letters, burofaxes, LexNET-style notices, messages, meeting records, call memorialisations and cover communications transmitting court documents.
+
+Do not silently treat an unfiled private communication as part of the judicial record. Classify it separately and record whether it was ever filed, served, disclosed, mentioned, relied on or judicially considered.
+
+### E. Implementation evidence
+
+For every operative judicial act, seek the downstream instrument that shows what happened:
+
+- filing or service receipt;
+- deed, mandamiento or Registry presentation/entry;
+- bank or estate ledger;
+- payment, set-off, consignation, cancellation or remanente record;
+- possession, access, works or inventory record;
+- publication and competitive-offer evidence;
+- AC implementation report;
+- later judicial review; and
+- final accounts, objections, approval and conclusion/finality record.
+
+`Authorisation ≠ implementation.`
+
+## 4. Search and acquisition method
+
+### Pass 1 — derive the expected denominator
+
+Build the most complete expected court-file index available from:
+
+- certified or official docket/index exports;
+- section and piece numbers;
+- judicial and LAJ recitals referring to earlier acts;
+- appeal indices and remittal records;
+- party filing annex lists;
+- email attachment lists and cover messages;
+- repository ledgers and missing-evidence controls; and
+- notarial, Registry, Fiscalía or other files reproducing insolvency documents.
+
+Every referenced-but-unlocated document becomes an expected record with a reasoned source anchor. Do not count it as a located document.
+
+### Pass 2 — search every connected source
+
+Search current repository history, Gmail in both directions, Google Drive, Library/Files and any lawful court or counsel export available to the user.
+
+Search by combinations of:
+
+- `36/2012`, the full NIG and section/piece references;
+- court, Judge and LAJ names;
+- exact dates and document types;
+- appeal numbers and destination court;
+- party and counsel names;
+- distinctive quoted phrases from later recitals;
+- filename variants, OCR errors and legacy abbreviations;
+- amounts, fincas, deed numbers and stable transaction identifiers; and
+- attachments referenced by messages even when the message subject omits the proceeding.
+
+Search chronologically and proposition-led. Review result pagination; record query, date, hit count, source limit and unsearched remainder. A capped search is not an exhaustive search.
+
+### Pass 3 — reverse retrieval
+
+For every document named in a located decision or filing but still absent:
+
+1. search the exact title/date/reference;
+2. search the transmitting email and attachment family;
+3. search later documents that reproduce or quote it;
+4. search the appeal or notarial/Registry file that may carry a testimonio;
+5. identify the present custodian; and
+6. generate a finite production request specifying the missing record, date, organ, section, purpose and preferred certified format.
+
+### Pass 4 — deduplicate without destroying provenance
+
+Do not deduplicate by filename or file size alone.
+
+For each binary:
+
+- calculate SHA-256;
+- retain source-native ID and original filename;
+- identify exact duplicates, derivative/OCR versions, partial copies and materially different variants;
+- select a canonical best copy without deleting custody copies;
+- record parent/child and alias relationships; and
+- preserve evidence that the same document travelled through different actors or proceedings where transmission is itself relevant.
+
+## 5. Stable record and source-status model
+
+Assign every expected and located item a stable `C36` record ID. Never reuse an existing `R`, `F`, `C36-JUD`, `C36-LAJ` or implementation ID for a different instrument.
+
+Record at minimum:
+
+| Field | Requirement |
+|---|---|
+| stable ID | collision-safe and immutable |
+| proceeding / section / piece / appeal | exact route; `UNKNOWN` if unproved |
+| document date and effective date | keep distinct where necessary |
+| organ and decision-maker/issuer | source-literal, with identity correction notes if needed |
+| document class | Judge / appellate / LAJ / party filing / exhibit / official notice / private communication / implementation |
+| applicant/sender and recipient | legal person and capacity, not group shorthand |
+| relief/request/subject | source-faithful summary |
+| operative effect | exact effect, or `NOT_APPLICABLE` for non-decisions |
+| what it proves | direct evidential effect only |
+| what it does not prove | mandatory limitation |
+| source system and native locator | message/file/court/index ID |
+| original filename, MIME, bytes, pages | exact copy controls |
+| SHA-256 | for every preserved binary and derivative where appropriate |
+| copy status | use the controlled ladder below |
+| annex completeness | complete / partial / unknown |
+| filing/service status | proved / supported / reported / unproved |
+| appeal/finality | exact latest primary status |
+| public class | public full text / public summary / public PDF / internal only / restricted |
+| related records | request, response, decision, appeal, implementation and contradiction links |
+| open gap | finite missing source or verification step |
+
+Use these copy/status classes:
+
+- `CERTIFIED_COURT_COPY`
+- `SIGNED_OFFICIAL_COPY`
+- `OFFICIAL_ELECTRONIC_COPY`
+- `SOURCE_COPY_LOCATED`
+- `EDITABLE_COUNSEL_COPY`
+- `DERIVATIVE_OCR_OR_TRANSCRIPT`
+- `PARTIAL_OR_INCOMPLETE_COPY`
+- `REFERENCED_NOT_LOCATED`
+- `AUTHENTICITY_OR_CONTEXT_OPEN`
+- `SUPERSEDED_DUPLICATE`
+
+Do not call a source `certified`, `filed`, `served`, `examined`, `final` or `complete` unless the record proves that exact status.
+
+## 6. Digitisation standard
+
+For every located PDF, image or scan:
+
+1. preserve and hash the best native/private source before transformation;
+2. identify page count, rotation, blank pages, attachments, annotations, forms, text layers and metadata;
+3. render every page for visual inspection;
+4. OCR in the source language without rewriting the source;
+5. preserve page boundaries and visible page numbering;
+6. reproduce tables, headings, signatures-as-status and operative paragraphs faithfully;
+7. mark illegible text, omissions and redactions visibly;
+8. manually compare the transcription with every source page;
+9. record OCR and manual-verification status separately;
+10. create a minimised public derivative only after privacy/privilege review;
+11. rasterise a public PDF where a facsimile is justified, removing hidden text, forms, annotations, inherited metadata, verification codes and recoverable redactions; and
+12. render the public derivative again and compare every page before release.
+
+A page-complete transcription is not a certified copy. A rendered text edition is not a source facsimile. OCR confidence is not manual legal verification.
+
+## 7. Public/private and privilege boundary
+
+Native originals belong in controlled private custody unless already lawfully public and safe for redistribution. The public repository must not receive unredacted:
+
+- DNI/NIE/NIF, addresses, personal phones or private emails;
+- bank, payment, insurance-policy or tax-reserved data;
+- signatures, verification codes, CSV/XML signature payloads or court-download credentials;
+- private third-party data unnecessary to understand the case;
+- legally privileged/confidential advice or communications;
+- sealed, restricted or redistribution-prohibited records; or
+- credentials, account tokens or source-system secrets.
+
+Public treatment rules:
+
+- publish complete public-safe text of judicial and LAJ acts where lawful and relevant;
+- prioritise privacy-safe PDFs for material judicial decisions;
+- publish party filings as complete redacted text where public interest, source status and data minimisation permit;
+- label every party assertion as a party position rather than a finding;
+- publish private communications only where necessary, lawful, source-authenticated and proportionate; otherwise publish a faithful summary and stable evidence locator;
+- preserve adverse and exculpatory material at the same evidential level as favourable material; and
+- maintain correction and right-of-reply mechanisms.
+
+The prompt does not authorise sending, resending, forwarding or self-emailing any message. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` remains controlling.
+
+## 8. Unitary digest required for every document family
+
+Do not analyse documents in isolation. For each family, produce:
+
+1. the exact legal/procedural question;
+2. the initiating request and standing/capacity asserted;
+3. evidence and annexes before the organ;
+4. every opposition, response and contrary source;
+5. the decision and exact operative effect;
+6. issues expressly not decided;
+7. notice, appeal, suspension and finality;
+8. required implementation;
+9. actual implementation evidence;
+10. accounting or patrimonial consequence;
+11. later reliance, contradiction or attempted correction;
+12. strongest available defence/innocent explanation;
+13. unresolved source gap; and
+14. effect on the unitary Sun Park/LPB recovery reconstruction.
+
+Maintain at least these linked matrices:
+
+- `decision → request → evidence → opposition → result`;
+- `decision → service → appeal → suspension → finality`;
+- `decision → required implementation → actual implementation → discrepancy`;
+- `communication → recipient → proved knowledge → action/response → consequence`;
+- `party proposition → primary source → contradiction → judicial treatment`;
+- `order → LPB finca/asset → deed/Registry → money/accounting`; and
+- `missing reference → custodian → retrieval route → priority`.
+
+## 9. Non-negotiable legal and factual separations
+
+1. LPB alone is the debtor in Concurso 36/2012; the whole mixed-ownership Sun Park complex was not automatically in the estate.
+2. Keep LPB/the estate, Aweswell, Matkator, CEXP, Pink/Monterecco, the Community and individual owners legally distinct.
+3. Separate Judge decisions, LAJ/office handling, AC acts, party filings, private communications and later commentary.
+4. A procedural or standing dismissal is not a merits adjudication.
+5. A party filing is not proof of its allegations.
+6. A judicial recital is not necessarily an adopted finding.
+7. Receipt is not examination; joinder is not acceptance; referral is not decision.
+8. Authorisation is not implementation; deed/Registry entry is not automatically proof of every upstream condition.
+9. Adverse decisions—including AP 89/2014, the DP 1132/2018 provisional dismissal/appeal and DI 248/2018 archive—remain visible beside later allegations.
+10. Sentencia 163/2023 concerns LPB and remains subject to its exact appellate/finality status; do not generalise it to the entire hotel or describe it as final without current proof.
+11. Keep the AC-removal, remuneration, daily-reference-22, DP 1901, DP 1956, deontological, judicial-conduct and Calificación lanes separate unless an official bridge proves joinder or transmission.
+12. Liability, fraud, falsity, prevaricación, knowing omission, coordination and criminal intent remain actor-specific conclusions requiring the applicable elements and source-led proof.
+
+## 10. Existing public archive: extend, do not duplicate
+
+Use the existing architecture:
+
+- `assets/data/concurso36-autos-fulltext-v1.json`;
+- `evidence/insolvency-36-2012/concurso-autos/full-text/`;
+- `evidence/insolvency-36-2012/concurso-autos/public-pdfs/`;
+- `es/concurso-36-2012-autos-resoluciones/`;
+- `en/insolvency-36-2012-orders-decisions/`; and
+- the current reproducible builders and validator.
+
+Before expanding the schema, preserve compatibility with the existing 50 stable records. Add a versioned whole-file dataset or compatible schema migration rather than silently changing the meaning of the existing specialist corpus.
+
+The reader interface should provide:
+
+- a plain-language scope and completeness boundary;
+- filters by year, section/piece, organ, actor, document class, subject and source status;
+- a decision-first view showing what was and was not decided;
+- a separately labelled party-record view;
+- source, copy, filing, service, appeal and finality status;
+- full public-safe Spanish text with page markers;
+- English navigation and neutral summaries without pretending the Spanish source was translated when it was not;
+- links between request, response, decision, appeal and implementation;
+- visible gaps and document-production requests; and
+- canonical/hreflang, sitemap, index and accessible mobile rendering.
+
+Do not publish a raw document dump without the procedural relationships and evidential labels needed to read it safely.
+
+## 11. Current P0 source demands
+
+At minimum, attempt to close and then accurately report:
+
+1. a certified electronic docket/index for every section and material incident of Concurso 36/2012;
+2. every opening, administration, common phase, creditor-text, liquidation-plan, asset-realisation, adjudication, accounting, conclusion and Calificación act;
+3. the complete 2018, 2021 and 2022 judicial/LAJ source families already identified in the definitive-text and implementation registers;
+4. the full January-2022 act family, reconciling 22 January and 26 January without assuming identity;
+5. service, appeal, suspension and finality records for material decisions;
+6. the 1 September 2025 decree, cited March-2025 direction and 20 January 2026 hearing record in the remuneration lane;
+7. current signed merits outcomes in RPL 3304/2025, RPL 3319/2025 and RPL 421/2026;
+8. complete AC accounting, remuneration-extension orders, invoices, estate ledger and final accounts;
+9. the deed/mandamiento/Registry/bank chain implementing judicial acts, including deed 457 and the separate EUR 400,000 route;
+10. complete attachments, filing receipts and independent filed-copy proof for party documents currently held only as editable counsel copies;
+11. the complete DP 1132/2018 and DI 248/2018 files to the extent they were used in or illuminate Concurso 36/2012; and
+12. every material communication proving what the Judge, LAJ, AC, parties and implementation actors received, knew, requested, denied, adopted or left unanswered.
+
+Update existing missing-evidence IDs rather than creating duplicate demands.
+
+## 12. Mandatory deliverables
+
+Produce or update:
+
+1. a machine-readable expected-versus-located court-file coverage register;
+2. stable source records and SHA-256/alias manifest for every acquired binary;
+3. complete redacted page-accounted transcriptions for public-safe records;
+4. private-custody pointers for originals not suitable for public GitHub;
+5. the unitary judicial/party chronology and the matrices in section 8;
+6. `PROCEEDINGS_MASTER_REGISTER.csv` status and source fields;
+7. `MISSING_EVIDENCE_REGISTER.md`, `CORRECTION_REGISTER.md` and maintenance controls;
+8. the canonical judicial-act and AC/full-text specialist records;
+9. versioned public data and bilingual archive pages in release mode;
+10. a publication manifest identifying every public artifact, source commit, redaction class and known gap;
+11. a deletion-continuity audit that does not confuse repository continuity with private custody; and
+12. a final production schedule addressed to the custodian of every still-missing certified record.
+
+## 13. Validation and release gate
+
+Before any public release:
+
+### Source and corpus checks
+
+- every manifest ID is unique;
+- every referenced derivative exists;
+- every source page is accounted for;
+- every hash and page count is reproducible;
+- exact duplicates and source variants are identified;
+- no record is promoted beyond its copy, filing, service or finality status;
+- expected-versus-located counts reconcile; and
+- every unresolved expected record has a finite gap entry.
+
+### Legal and privacy checks
+
+- judicial findings and party allegations are visibly different;
+- `decided` and `not decided` are both stated;
+- LPB's estate is not expanded into the whole hotel;
+- adverse/contrary evidence is adjacent where material;
+- no private identifiers, hidden text, verification data, privileged content or unsafe metadata leak;
+- public PDFs have been rendered after redaction and checked page by page; and
+- actor-specific criminal or professional conclusions are not stated as findings without a competent final source.
+
+### Repository and website checks
+
+- builders are reproducible;
+- JSON, Markdown, HTML, XML and scripts validate;
+- internal links, canonical URLs, hreflang, sitemaps and site indexes pass;
+- bilingual factual/status parity passes;
+- desktop and mobile rendered pages have no duplicate IDs or overflow;
+- the publication-integrity and mission-critical gates pass; and
+- unrelated user changes are preserved.
+
+### Publication checks
+
+In `PUBLISH_PUBLIC_SAFE` mode only:
+
+1. create an isolated branch and reviewable PR;
+2. state the scope, public/private boundary and known gaps in the PR;
+3. merge only the reviewed head after required checks pass;
+4. verify the exact merge SHA on current `main`;
+5. require a successful exact-SHA GitHub Pages deployment;
+6. no-cache read back every critical public route, data file and public PDF;
+7. compare live bytes/hashes with repository artifacts;
+8. update `archive/DEPLOYMENT_LOG.md` and the publication manifest; and
+9. run a fresh-thread recovery test before calling the work deletion-safe.
+
+A merge is not proof of deployment. HTTP 200 alone is not proof that the correct revision is live.
+
+## 14. Stop and reporting conditions
+
+Do not conceal blockers. Stop the affected release step and report precisely when:
+
+- a source cannot lawfully be published;
+- privilege or personal-data review is unresolved;
+- redaction cannot be proved irreversible;
+- a document is incomplete or its annexes are missing;
+- the latest appeal/finality status is unknown;
+- a public statement conflicts with a controlling source;
+- repository authentication or Pages verification is unavailable; or
+- a material source variation cannot be reconciled.
+
+Continue all safe acquisition, indexing, transcription, analysis and gap-recording work that is not blocked.
+
+## 15. Required final report
+
+Finish with exact figures and no generic `complete` assurance:
+
+- expected records by class and source of denominator;
+- located records by class;
+- newly acquired originals and derivatives;
+- fully transcribed/manual-verified records;
+- public full texts and public PDFs;
+- private/restricted records;
+- exact duplicates and unresolved variants;
+- certified versus working/editable copies;
+- missing annexes, receipts, service, appeal, finality and implementation records;
+- corrections made to earlier repository/site statements;
+- validation results;
+- branch, PR, merge SHA and Pages run if publication was authorised;
+- live URL/hash results; and
+- the next five finite document-production requests.
+
+Use one of these conclusions:
+
+- `INVENTORY COMPLETE AGAINST CERTIFIED DOCKET — OPEN EVIDENCE LISTED`
+- `INVENTORY PARTIAL — CERTIFIED DOCKET OR RECORDS STILL MISSING`
+- `PUBLICATION COMPLETE FOR THE IDENTIFIED PUBLIC-SAFE CORPUS — NOT THE WHOLE COURT FILE`
+- `SOURCE PREPARED — PUBLICATION NOT AUTHORISED`
+- `SOURCE MERGED — LIVE DEPLOYMENT NOT INDEPENDENTLY VERIFIED`
+
+Never substitute `all uploaded`, `fully complete` or `nothing missing` for the measured result.
+
+## Controlling principle
+
+> Preserve the native source; establish the expected denominator; distinguish decision from allegation and filing from communication; digitise every page faithfully; map request to decision and decision to implementation; publish only the lawful public-safe derivative; and state exactly what remains missing.
