@@ -3,10 +3,10 @@
   "control_marker": "cam-creditor-control-criminal-lead-20260823",
   "owner": "Gil Marer / Aweswell",
   "created_at": "2026-08-23T00:25:00Z",
-  "current_state": "LIVE_VERIFIED",
-  "deletion_status": "CLOSEOUT_PENDING_PUBLIC_EDGE_VERIFICATION",
-  "branch": "codex/cam-thread-closeout-cross-thread-rescan-20260823",
-  "merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+  "branch": "closeout/cam-thread-deletion-safe-20260823",
+  "merge_sha": "ea90c4a9b44c559eaa7b51d73ea852596c6856fb",
   "expected_routes": {
     "en": [
       "en/cam-creditor-control-shadow-administration-judicial-omission/index.html"
@@ -62,6 +62,7 @@
     ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
     ".github/workflows/validate-audience-experience.yml",
     ".github/workflows/verify-pr830-cam-nondilution-live.yml",
+    ".github/workflows/verify-cam-thread-closeout-live.yml",
     "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
     "publication-manifests/cam-creditor-control-criminal-lead-20260823.json"
   ],
@@ -123,40 +124,55 @@
   "static_chronology_update": {
     "pull_request": 808,
     "merge_sha": "22f10cea2cab18539c55d6283eb9ebce16d40f71",
-    "status": "MERGED_PENDING_CLOSEOUT_PUBLIC_EDGE_CHECK"
+    "status": "MERGED_AND_LIVE_VERIFIED"
   },
   "closeout_control": {
-    "status": "PENDING_CLOSEOUT_PR_MERGE_AND_PUBLIC_EDGE_VERIFICATION",
+    "status": "MERGED_LIVE_VERIFIED_DELETION_SAFE",
+    "closeout_pull_request": 834,
+    "closeout_merge_sha": "ea90c4a9b44c559eaa7b51d73ea852596c6856fb",
+    "final_audit_pull_request": 835,
     "public_record": "assets/data/cam-nondilution-thread-closeout-v1.json",
     "rescan_register": "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
-    "verifier": ".github/workflows/verify-pr830-cam-nondilution-live.yml",
-    "final_required_result": "DELETION_SAFE_WITH_OPEN_EVIDENCE"
+    "verifier": ".github/workflows/verify-cam-thread-closeout-live.yml",
+    "live_verification_run": 32639271526,
+    "live_verification_job": 97193729364,
+    "verified_at_utc": "2026-08-23T12:23:57.074948+00:00",
+    "result": "DELETION_SAFE_WITH_OPEN_EVIDENCE"
   },
   "validation": {
     "script": "scripts/validate_cam_creditor_control_criminal_lead.py",
     "workflow": ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
-    "status": "CI_GREEN_LIVE_VERIFIED_SUBSTANTIVE_PACKAGE",
+    "status": "CI_GREEN_LIVE_VERIFIED_CLOSEOUT",
     "evidence": [
       {
         "type": "github_actions",
         "workflow": "Validate CAM creditor-control criminal lead",
-        "run_id": 32633401128,
-        "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
+        "run_id": 32639001212,
         "conclusion": "success"
       },
       {
         "type": "github_actions",
         "workflow": "Validate audience experience",
-        "run_id": 32633401157,
-        "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
-        "conclusion": "success"
+        "run_id": 32639001214,
+        "conclusion": "success",
+        "scope_note": "Source, JavaScript, bilingual desktop and mobile rendering passed for PR #834."
       },
       {
         "type": "github_actions",
         "workflow": "Verify PR 830 CAM non-dilution live",
-        "run_id": 32636419354,
+        "run_id": 32639001222,
         "conclusion": "success",
-        "scope_note": "Verified the merged substantive CAM package on the public edge. The closeout JSON and PR #808 chronology are separately required after this closeout merges."
+        "scope_note": "Verified the merged substantive CAM package and PR #808 chronology at the public edge."
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Verify CAM thread closeout live",
+        "run_id": 32639271526,
+        "job_id": 97193729364,
+        "conclusion": "success",
+        "attempt": 1,
+        "verified_at_utc": "2026-08-23T12:23:57.074948+00:00",
+        "scope_note": "Verified the public closeout JSON, bilingual publication-control text, both CAM dossiers, both corrected homepages, identity/source-literal/non-finding controls and no-email/no-external-test-send boundaries."
       }
     ]
   },
@@ -192,19 +208,30 @@
   },
   "deployment_evidence": {
     "substantive_merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+    "closeout_merge_sha": "ea90c4a9b44c559eaa7b51d73ea852596c6856fb",
     "deployment_url": "https://sbu001monterecco.github.io/por-derecho/",
-    "deployment_status": "success-confirmed-by-public-edge-verifier"
+    "deployment_status": "success-confirmed-by-public-edge-verification"
   },
   "live_verification_evidence": {
-    "workflow_name": "Verify PR 830 CAM non-dilution live",
-    "workflow_file": ".github/workflows/verify-pr830-cam-nondilution-live.yml",
-    "workflow_run_id": 32636419354,
+    "workflow_name": "Verify CAM thread closeout live",
+    "workflow_file": ".github/workflows/verify-cam-thread-closeout-live.yml",
+    "workflow_run_id": 32639271526,
+    "workflow_job_id": 97193729364,
     "workflow_conclusion": "success",
-    "status": "PASS_SUBSTANTIVE_PACKAGE"
+    "attempt": 1,
+    "verified_at_utc": "2026-08-23T12:23:57.074948+00:00",
+    "status": "PASS_COMPLETE_CLOSEOUT"
   },
   "deletion_record": {
     "path": "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
-    "status": "PENDING_FINAL_CLOSEOUT_PUBLIC_EDGE_VERIFICATION",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "scope_exclusions": [
+      "PR #804 redacted 21 April 2016 email publication",
+      "ACTA native preservation and source-line verification",
+      "REGAGE26e00074403517 destination and package classification",
+      "Ruth Ugalde response/follow-up status",
+      "legacy live-verifier consolidation"
+    ],
     "recovery_order": [
       "CHATGPT_START_HERE.md",
       "CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md",
