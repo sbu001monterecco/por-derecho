@@ -19,12 +19,12 @@ This dashboard is private campaign-control material. Do not publish private cont
 | Biosfera Digital | Salvador Hernández — director/local tourism/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
 | Crónicas de Lanzarote | Alfonso Canales Segovia — director/local governance/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
 | Cinco Días | Carlos Molina — hotels/tour operators/travel | SENT + VERIFIED | Daniel Toledo — Empresas editor | Cc only, not person-specific | PARTIAL | Prepare separate Daniel lane if justified |
-| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — TWO NAMED LANES SENT + VERIFIED** | Continue user-directed additional lanes one by one: Fran Fajardo → Carmen Delia Aranda → Francisco Suárez Álamo → Javier Sheng Pang when direct route verified |
+| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — TWO NAMED LANES SENT + VERIFIED; ADDITIONAL LANES ACTIVE** | **Fran Fajardo — PREPARED / GMAIL DRAFT VERIFIED / NOT SENT. Present exact package for approval; then Carmen Delia Aranda.** |
 
 ## CANARIAS7 additional named-lane queue
 
-1. **Fran Fajardo** — justice/courts/investigative-document lane; historical direct professional route exists; reverify current role/contact before drafting.
-2. **Carmen Delia Aranda** — institutional/social-public-affairs lane; historical direct professional route exists; reverify current role/contact.
+1. **Fran Fajardo — PREPARED / NOT SENT** — tribunals/courts/Fiscalía/judicial-document lane. Current role reverified; historical direct professional route has no located bounce; exact Gmail draft read back with mandatory media core. Read `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
+2. **Carmen Delia Aranda** — institutional/social-public-affairs lane; historical direct professional route exists; reverify current role/contact before preparation.
 3. **Francisco Suárez Álamo** — director/commissioning/editorial-accountability lane; use only current verified role routing.
 4. **Javier Sheng Pang Blanco** — economics/tourism/business/public-policy lane; do not guess a direct address.
 5. Historical `lpalacios@canarias7.es` route remains HOLD until current named identity is resolved.
@@ -35,4 +35,4 @@ A generic newsroom route does not count as a named journalist. Reaching the two-
 
 El Confidencial → Diario de Lanzarote → La Voz de Lanzarote → HOSTELTUR → Canarias Ahora/elDiario.es Canarias → EL PAÍS → Biosfera Digital → Crónicas de Lanzarote → Cinco Días → new Canary-wide outlets including La Provincia, Atlántico Hoy, Cadena SER Canarias and RTVC.
 
-No ranking or dashboard state authorises a send.
+No ranking, dashboard state or prepared draft authorises a send.
