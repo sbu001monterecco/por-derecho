@@ -28,27 +28,24 @@ At the current 23-Aug-2026 control point, the following are in sent/awaiting-res
 - Joaquín Gil;
 - Salvador Hernández;
 - Alfonso Canales Segovia;
-- Carlos Molina / Cinco Días.
+- Carlos Molina / Cinco Días;
+- Silvia Fernández / CANARIAS7.
 
-The latest fresh connected-Gmail scan found **NO RESPONSE LOCATED YET** from the active media set.
-
-**Silvia Fernández / CANARIAS7 — Economía is now PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
-
-Read:
+For Silvia/CANARIAS7 read:
 - `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
-- `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
+- `archive/CANARIAS7_SILVIA_FERNANDEZ_SENT_VERIFICATION_23AUG2026.md`.
 
-The CANARIAS7 package is anchored to the outlet's own documentary chronology:
+The CANARIAS7 step is complete. Its package reconciled the outlet's 24-Jan-2020 RICPE launch article and May-2023 €3m Yaiza hotel-materialisation checkpoint with the July-2021 internal 54 CAM / 190 LPB / 18 terceros, conditional-title, unsigned-LOI and incomplete-DD record. The sent package expressly superseded broader 2022/2024 CANARIAS7 outreach methodology and retained the adverse evidence and media-causation limits.
 
-`24-Jan-2020 Silvia Fernández RICPE launch / collective RIC hotel-finance article`
-→ `Sun Park fragmented title / 54-CAM provenance / 2018 material-control / pre-title hotel preparation`
-→ `Jul-2021 internal 54 CAM / 190 LPB / 18 terceros + conditional title + unsigned LOI + incomplete DD`
-→ `CANARIAS7 May-2023 public reference to a €3m RIC hotel materialisation in Yaiza`
-→ `HNT / MYND / RICPE / RIC / GC836 / EU-support reconciliation`
-→ `2026 Yaiza/Cabildo constructive solution route`.
+The next fresh thread must **not guess the next recipient from an old queue**. It must first scan connected Gmail, re-read the media register and recipient-fit playbook, account for elapsed-time HOLDs/out-of-office states and then prepare the strongest unsent Canary-wide or specialist package.
 
-The package expressly supersedes broader 2022/2024 CANARIAS7 outreach methodology and does not accuse the outlet of lying or knowing falsehood absent proof.
+Current high-value unsent Canary-wide lanes include:
 
-No queue position, prepared draft, bootstrap instruction or `Run like the wind` command authorises an email send. Exact-package send authorisation remains governed by `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
+- La Provincia;
+- Atlántico Hoy;
+- Cadena SER Canarias;
+- RTVC / Televisión Canaria / Canarias Radio.
 
-If Silvia/CANARIAS7 is later sent and verified, run a fresh Gmail scan before selecting the next Canary-wide recipient. Likely high-value unsent lanes include La Provincia, Atlántico Hoy, Cadena SER Canarias and RTVC, but none is pre-authorised.
+None is pre-authorised.
+
+No queue position, bootstrap instruction or `Run like the wind` command authorises an email send. Exact-package send authorisation remains governed by `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
