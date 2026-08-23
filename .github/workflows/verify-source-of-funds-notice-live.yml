@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'assets/site.js'
+      - 'assets/audience-experience-order-20260823.js'
       - 'assets/source-of-funds-notice-20260820.css'
       - 'assets/source-of-funds-notice-20260820.js'
       - 'es/aviso-procedencia-fondos-servicios-profesionales/**'
@@ -22,6 +23,7 @@ on:
     branches: [main]
     paths:
       - 'assets/site.js'
+      - 'assets/audience-experience-order-20260823.js'
       - 'assets/source-of-funds-notice-20260820.css'
       - 'assets/source-of-funds-notice-20260820.js'
       - 'es/aviso-procedencia-fondos-servicios-profesionales/**'

@@ -57,16 +57,19 @@
     const summary = document.getElementById(isEnglish ? 'sixty-second-summary' : 'resumen-60-segundos');
     const audiences = document.getElementById('psr-reader-intent');
     const perimeters = document.getElementById(isEnglish ? 'case-perimeters' : 'perimetros-del-caso');
+    const sourceFunds = main.querySelector('.source-funds-notice-section');
+    const coreSections = [hero, priority, prosecution, summary, audiences, perimeters];
+    if (sourceFunds) coreSections.push(sourceFunds);
 
     let anchor = priority || hero;
-    for (const section of [prosecution, summary, audiences, perimeters]) {
+    for (const section of [...coreSections.slice(2)]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
       }
     }
-    const fullRecord = ensureFullRecord(main, isEnglish, [hero, priority, prosecution, summary, audiences, perimeters]);
-    placeAfter(fullRecord, perimeters || audiences || summary || prosecution || anchor);
+    const fullRecord = ensureFullRecord(main, isEnglish, coreSections);
+    placeAfter(fullRecord, sourceFunds || perimeters || audiences || summary || prosecution || anchor);
 
     if (prosecution) {
       prosecution.dataset.audienceProtectedAttribution = '20260823';

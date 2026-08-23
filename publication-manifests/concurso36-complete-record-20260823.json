@@ -160,7 +160,7 @@
     "status": "LOCAL_VALIDATION_PASSED",
     "completed_at_utc": "2026-08-23T00:00:00Z",
     "catalog_sha256": "fc9407913489fe65ea13b44fe7cbfb0d2176162241f20ca2b7051823de5b0867",
-    "reviewed_release_files": 113,
+    "reviewed_release_files": 114,
     "evidence": [
       "validate_concurso36_complete_record.py: PASS — 127 canonical records, 8 source-copy links and 12 controlled gaps",
       "validate_concurso36_primary_autos_redigest.py: PASS — 11 pinned public derivatives and 12 canonical register entries",
@@ -190,7 +190,7 @@
   },
   "release_file_inventory": {
     "base_sha": "448beb21f195a266a44f02f2d8ea2b619bd2c9d2",
-    "count": 113,
+    "count": 114,
     "paths": [
       ".github/workflows/validate-concurso36-complete-record.yml",
       ".github/workflows/validate-concurso36-primary-autos-redigest.yml",
@@ -254,6 +254,7 @@
       "archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md",
       "archive/prompts/CONCURSO36_DEFINITIVE_TEXT_LIQUIDATION_HARD_CLOSURE_PROMPT_21AUG2026.md",
       "archive/prompts/PH122_CAM_ART1535_MAXIMUM_SCOPE_CONTINUATION_PROMPT_21AUG2026.md",
+      "assets/audience-experience-order-20260823.js",
       "assets/data/case-reconstruction-v1.json",
       "assets/data/concurso36-autos-fulltext-v1.json",
       "assets/data/concurso36-complete-record-v1.json",

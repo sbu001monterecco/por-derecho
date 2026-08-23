@@ -564,8 +564,8 @@ def check_publication_manifest(failures: list[str]) -> None:
         require(isinstance(release_paths, list),
                 "release-file inventory paths must be a list", failures)
         if isinstance(release_paths, list):
-            require(release_inventory.get("count") == len(release_paths) == 113,
-                    "release-file inventory must remain locked to the 113 reviewed paths", failures)
+            require(release_inventory.get("count") == len(release_paths) == 114,
+                    "release-file inventory must remain locked to the 114 reviewed paths", failures)
             require(len(release_paths) == len(set(release_paths)),
                     "release-file inventory contains duplicate paths", failures)
             require(release_paths == sorted(release_paths),
