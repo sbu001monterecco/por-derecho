@@ -3,10 +3,10 @@
   "control_marker": "cam-creditor-control-criminal-lead-20260823",
   "owner": "Gil Marer / Aweswell",
   "created_at": "2026-08-23T00:25:00Z",
-  "current_state": "DELETION_SAFE",
-  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
-  "branch": "codex/cam-creditor-control-criminal-lead-20260823",
-  "merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
+  "current_state": "LIVE_VERIFIED",
+  "deletion_status": "CLOSEOUT_PENDING_PUBLIC_EDGE_VERIFICATION",
+  "branch": "codex/cam-thread-closeout-cross-thread-rescan-20260823",
+  "merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
   "expected_routes": {
     "en": [
       "en/cam-creditor-control-shadow-administration-judicial-omission/index.html"
@@ -21,12 +21,19 @@
     "CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md",
     "README.md",
     "CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md",
+    "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
     "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
     "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md",
     "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
     "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
+    "archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md",
+    "archive/REGAGE_26E00074403517_INTAKE_RECORD_23AUG2026.md",
+    "archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md",
+    "archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md",
+    "archive/JOURNALIST_MEDIA_REGISTER.md",
     "archive/CAM_2018_EXTRACONCURSAL_TAKEOVER_RETRIEVAL_GATE_16AUG2026.md",
     "archive/CALIFICACION_EXTRACONCURSAL_TAKEOVER_BORJA_SECURITY_SOURCE_UPGRADE_16AUG2026.md",
     "archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md",
@@ -35,6 +42,7 @@
     "archive/MISSING_EVIDENCE_REGISTER.md",
     "archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md",
     "assets/data/cam-creditor-control-criminal-lead-v1.json",
+    "assets/data/cam-nondilution-thread-closeout-v1.json",
     "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
     "assets/prosecution-public-entry-20260821.js",
     "assets/audience-experience-order-20260823.js",
@@ -53,6 +61,7 @@
     "scripts/render_audience_experience.mjs",
     ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
     ".github/workflows/validate-audience-experience.yml",
+    ".github/workflows/verify-pr830-cam-nondilution-live.yml",
     "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
     "publication-manifests/cam-creditor-control-criminal-lead-20260823.json"
   ],
@@ -66,18 +75,14 @@
     "LPB estate property is separated from CEXP, Matkator and other non-LPB rights",
     "the homepage first-read direct attribution remains outside collapsed progressive disclosure",
     "right of reply and silence-is-not-admission remain visible",
-    "no email is sent without separate final authorisation"
+    "no external test send and no email without separate exact final authorization"
   ],
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
     "https://sbu001monterecco.github.io/por-derecho/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
     "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-creditor-control-criminal-lead-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-nondilution-thread-closeout-v1.json",
     "https://sbu001monterecco.github.io/por-derecho/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
-    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml",
-    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
-    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
-    "https://sbu001monterecco.github.io/por-derecho/sitemap.xml",
-    "https://sbu001monterecco.github.io/por-derecho/assets/data/unitary-route-registry-v1.json",
     "https://sbu001monterecco.github.io/por-derecho/en/",
     "https://sbu001monterecco.github.io/por-derecho/es/"
   ],
@@ -105,32 +110,37 @@
     "source_typo_creates_separate_actor": false,
     "source_literal_rewritten_as_canonical_identity": false,
     "contemporaneous_email_source_literal": "Laura Matos",
-    "public_rule": "Use the full canonical identity in narrative and actor labels; preserve marked source literals exactly; keep mandate, participation, knowledge, purpose and responsibility evidence-controlled.",
     "control_file": "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md"
   },
   "superseding_rule_update": {
     "date": "2026-08-23",
     "pull_request": 830,
-    "branch": "codex/audience-experience-20260823",
-    "status": "PR_VALIDATED_AND_AUTHORISED_FOR_MERGE_AND_LIVE_DEPLOYMENT",
-    "scope": [
-      "sitewide criminal-attribution anti-dilution",
-      "source-literal/canonical-identity separation",
-      "homepage first-read prominence",
-      "bilingual CAM page correction",
-      "machine-readable and render validation"
-    ]
+    "merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+    "status": "MERGED_AND_LIVE_VERIFIED",
+    "verifier_pull_requests": [832, 833],
+    "live_verification_run": 32636419354
+  },
+  "static_chronology_update": {
+    "pull_request": 808,
+    "merge_sha": "22f10cea2cab18539c55d6283eb9ebce16d40f71",
+    "status": "MERGED_PENDING_CLOSEOUT_PUBLIC_EDGE_CHECK"
+  },
+  "closeout_control": {
+    "status": "PENDING_CLOSEOUT_PR_MERGE_AND_PUBLIC_EDGE_VERIFICATION",
+    "public_record": "assets/data/cam-nondilution-thread-closeout-v1.json",
+    "rescan_register": "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
+    "verifier": ".github/workflows/verify-pr830-cam-nondilution-live.yml",
+    "final_required_result": "DELETION_SAFE_WITH_OPEN_EVIDENCE"
   },
   "validation": {
     "script": "scripts/validate_cam_creditor_control_criminal_lead.py",
     "workflow": ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
-    "status": "CI_GREEN_LIVE_VERIFIED",
+    "status": "CI_GREEN_LIVE_VERIFIED_SUBSTANTIVE_PACKAGE",
     "evidence": [
       {
         "type": "github_actions",
         "workflow": "Validate CAM creditor-control criminal lead",
         "run_id": 32633401128,
-        "run_number": 17,
         "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
         "conclusion": "success"
       },
@@ -138,26 +148,17 @@
         "type": "github_actions",
         "workflow": "Validate audience experience",
         "run_id": 32633401157,
-        "run_number": 12,
         "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
         "conclusion": "success"
       },
       {
         "type": "github_actions",
-        "workflow": "Verify unitary criminal publication live",
-        "run_id": 32633401140,
-        "run_number": 133,
-        "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
+        "workflow": "Verify PR 830 CAM non-dilution live",
+        "run_id": 32636419354,
         "conclusion": "success",
-        "scope_note": "Pre-merge live continuity check; post-merge deployment requires fresh verification."
+        "scope_note": "Verified the merged substantive CAM package on the public edge. The closeout JSON and PR #808 chronology are separately required after this closeout merges."
       }
-    ],
-    "historical_pr_number": 816,
-    "historical_validated_pr_head": "0c752c8315b18ec685f24e0b842f41e966ee035a",
-    "historical_validated_merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
-    "historical_github_pages_run_id": 32609842885,
-    "historical_live_verification_run_id": 32610343380,
-    "historical_verified_at_utc": "2026-08-23T00:42:07.702Z"
+    ]
   },
   "open_evidence": [
     "native CAM, JDAM, FMMM, Laura-actor, Community and provider instruction chain",
@@ -177,55 +178,40 @@
     "privileged_advice_committed": false,
     "unnecessary_personal_identifiers_committed": false,
     "criminal_guilt_stated_as_final": false,
-    "direct_instruction_stated_as_adjudicated": false,
-    "administrator_criminal_approval_stated_as_adjudicated": false,
-    "judicial_prevarication_stated_as_established": false,
     "source_typo_treated_as_separate_actor": false,
     "source_literal_rewritten_as_canonical_identity": false,
     "direct_attribution_diluted_to_question_or_lead": false,
     "direct_attribution_hidden_in_collapsed_content": false,
     "presumption_of_innocence_preserved": true,
-    "right_of_reply_preserved": true
+    "right_of_reply_preserved": true,
+    "this_closeout_authorizes_email": false,
+    "external_test_sends_permitted": false
   },
   "deployment_evidence": {
-    "exact_merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
-    "workflow_name": "pages-build-deployment",
-    "workflow_run_id": 32609842885,
-    "workflow_run_number": 2448,
-    "workflow_status": "completed",
-    "workflow_conclusion": "success",
-    "deployed_environment": "github-pages",
+    "substantive_merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
     "deployment_url": "https://sbu001monterecco.github.io/por-derecho/",
-    "deployment_status": "success",
-    "deployment_finished_at": "2026-08-23T00:37:38Z"
+    "deployment_status": "success-confirmed-by-public-edge-verifier"
   },
   "live_verification_evidence": {
-    "workflow_name": "Verify unitary criminal publication live",
-    "workflow_file": ".github/workflows/verify-unitary-criminal-publication.yml",
-    "workflow_run_id": 32610343380,
-    "workflow_run_number": 125,
-    "workflow_job_id": 93592640678,
-    "workflow_status": "completed",
+    "workflow_name": "Verify PR 830 CAM non-dilution live",
+    "workflow_file": ".github/workflows/verify-pr830-cam-nondilution-live.yml",
+    "workflow_run_id": 32636419354,
     "workflow_conclusion": "success",
-    "verified_at_utc": "2026-08-23T00:42:07.702Z",
-    "status": "PASS",
-    "deployment_probe": "deployment-probes/cam-creditor-control-criminal-lead-20260823.json"
+    "status": "PASS_SUBSTANTIVE_PACKAGE"
   },
   "deletion_record": {
     "path": "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
-    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "status": "PENDING_FINAL_CLOSEOUT_PUBLIC_EDGE_VERIFICATION",
     "recovery_order": [
       "CHATGPT_START_HERE.md",
       "CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md",
       "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
+      "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
       "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md",
       "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
-      "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
-      "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
-      "archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
       "assets/data/cam-creditor-control-criminal-lead-v1.json",
+      "assets/data/cam-nondilution-thread-closeout-v1.json",
       "publication-manifests/cam-creditor-control-criminal-lead-20260823.json",
-      "deployment-probes/cam-creditor-control-criminal-lead-20260823.json",
       "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md"
     ],
     "fresh_thread_can_recover_without_chat": true
