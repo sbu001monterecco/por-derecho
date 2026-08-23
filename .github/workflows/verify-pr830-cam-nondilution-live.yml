@@ -1,0 +1,176 @@
+name: Verify PR 830 CAM non-dilution live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
+      - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'assets/site.js'
+      - 'assets/prosecution-public-entry-20260821.js'
+      - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
+      - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
+      - '.github/workflows/verify-pr830-cam-nondilution-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-pr830-cam-nondilution-live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      SOURCE_MERGE_SHA: 05cba3c9af7071f96b56eae90a67a2ceae3a783d
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Verify merged CAM rule on the public edge
+        env:
+          VERIFY_TRIGGER_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import datetime as dt
+          import json
+          import os
+          import time
+          import urllib.request
+
+          base = "https://sbu001monterecco.github.io/por-derecho"
+          targets = {
+              "english_cam_dossier": (
+                  f"{base}/en/cam-creditor-control-shadow-administration-judicial-omission/",
+                  [
+                      'data-express-criminal-attribution="20260823"',
+                      "Gil Marer and Aweswell expressly allege",
+                      "These are direct criminal allegations supported by a multi-layer evidential corpus. They are not judicial findings.",
+                      "The attribution is direct.",
+                      "Laura Patricia Acosta Matos",
+                      '<span data-source-literal>“Laura Matos”</span>',
+                  ],
+              ),
+              "spanish_cam_dossier": (
+                  f"{base}/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+                  [
+                      'data-express-criminal-attribution="20260823"',
+                      "Gil Marer y Aweswell atribuyen directamente",
+                      "Son acusaciones penales directas apoyadas en un corpus probatorio de varias capas. No son declaraciones judiciales.",
+                      "La atribución es directa.",
+                      "Laura Patricia Acosta Matos",
+                      '<span data-source-literal>«Laura Matos»</span>',
+                  ],
+              ),
+              "english_home": (
+                  f"{base}/en/",
+                  ["../assets/site.js", "The case in 60 seconds"],
+              ),
+              "spanish_home": (
+                  f"{base}/es/",
+                  ["../assets/site.js", "El caso en 60 segundos"],
+              ),
+              "site_loader": (
+                  f"{base}/assets/site.js",
+                  [
+                      "PROSECUTION-PUBLIC-ENTRY-20260821",
+                      "prosecution-public-entry-20260821.js?v=20260821a",
+                      "AUDIENCE-EXPERIENCE-ORDER-AND-DEDUPLICATION-20260823",
+                  ],
+              ),
+              "first_read_module": (
+                  f"{base}/assets/prosecution-public-entry-20260821.js",
+                  [
+                      "Gil Marer and Aweswell directly allege an organised criminal course—not merely a set of questions.",
+                      "Gil Marer y Aweswell alegan directamente un curso delictivo organizado, no una mera serie de preguntas.",
+                      "Laura Patricia Acosta Matos",
+                      "Relationship is not responsibility; missing proof does not erase the allegation.",
+                      "Relación no es responsabilidad; la prueba pendiente no borra la acusación.",
+                  ],
+              ),
+              "cam_cross_site_module": (
+                  f"{base}/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
+                  [
+                      "Gil Marer and Aweswell directly allege",
+                      "Laura Patricia Acosta Matos",
+                      "Direct allegation ≠ adjudicated finding",
+                  ],
+              ),
+              "machine_readable_record": (
+                  f"{base}/assets/data/cam-creditor-control-criminal-lead-v1.json",
+                  [
+                      "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+                      "Laura Patricia Acosta Matos",
+                      "DIRECT_ACTOR_SPECIFIC_CRIMINAL_ATTRIBUTION_NOT_MERE_QUESTION_OR_LEAD",
+                      '"criminal_guilt_adjudicated": false',
+                  ],
+              ),
+          }
+
+          def fetch(url: str, attempt: int) -> tuple[int, str]:
+              separator = "&" if "?" in url else "?"
+              request = urllib.request.Request(
+                  f"{url}{separator}pr830live={int(time.time())}-{attempt}",
+                  headers={
+                      "User-Agent": "Por-Derecho-PR830-live-verifier/1.0",
+                      "Cache-Control": "no-cache",
+                      "Pragma": "no-cache",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return response.status, response.read().decode("utf-8", "replace")
+
+          latest: dict = {}
+          passed = False
+          for attempt in range(1, 31):
+              checks: dict[str, bool] = {}
+              details: dict[str, dict] = {}
+              for name, (url, markers) in targets.items():
+                  try:
+                      status, body = fetch(url, attempt)
+                      marker_results = {marker: marker in body for marker in markers}
+                      checks[name] = status == 200 and all(marker_results.values())
+                      details[name] = {
+                          "url": url,
+                          "http_status": status,
+                          "bytes": len(body.encode("utf-8")),
+                          "markers": marker_results,
+                      }
+                  except Exception as exc:
+                      checks[name] = False
+                      details[name] = {"url": url, "error": repr(exc)}
+
+              latest = {"attempt": attempt, "checks": checks, "details": details}
+              print(json.dumps(latest, ensure_ascii=False, indent=2))
+              if all(checks.values()):
+                  passed = True
+                  break
+              time.sleep(15)
+
+          record = {
+              "schema": "por-derecho/pr830-cam-live-verification/v1",
+              "status": "PASS" if passed else "FAIL",
+              "source_merge_sha": os.environ["SOURCE_MERGE_SHA"],
+              "verification_trigger_sha": os.environ["VERIFY_TRIGGER_SHA"],
+              "verified_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+              "public_base": base,
+              **latest,
+          }
+          print("PR830_CAM_LIVE_RESULT=" + json.dumps(record, ensure_ascii=False, separators=(",", ":")))
+          if not passed:
+              raise SystemExit("PR 830 CAM PUBLIC EDGE: FAIL")
+          print("PR 830 CAM PUBLIC EDGE: LIVE VERIFIED")
+          PY
