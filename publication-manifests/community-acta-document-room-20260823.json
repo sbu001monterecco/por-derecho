@@ -2,15 +2,41 @@
   "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260823",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-23",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "publication_control": {
     "repository": "sbu001monterecco/por-derecho",
     "source_branch": "control/full-actas-event-record-20260822",
     "controlling_pr": "https://github.com/sbu001monterecco/por-derecho/pull/811",
     "base_sha": "05f9b10a4275feeb05c17cffeaa0bb34354490df",
     "content_commit_sha": "ea036563fb1e97c8d11e7e99d681cc526d24a61d",
-    "content_tree_sha": "2d719e974bdb1f6d1e3e7f37d889071f57af4637"
+    "content_tree_sha": "2d719e974bdb1f6d1e3e7f37d889071f57af4637",
+    "merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
+    "pages_workflow_run": 32608569055,
+    "pages_status": "success",
+    "publication_closeout_pr": "https://github.com/sbu001monterecco/por-derecho/pull/813"
   },
+  "merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 32608569055,
+    "status": "success",
+    "exact_merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
+    "post_merge_workflows": "7/7 success"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/community/actas/public-index.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/docs/community-actas/2011-06-22-public-redacted-es.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2011-06-22/page-014.webp",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2016-04-26/page-014.webp"
+  ],
+  "live_verification_evidence": [
+    "All eight downloaded public artifacts matched the repository SHA-256 values.",
+    "The public index returned 15 partial packages, 179 represented source-variant pages, 209 PDF edition pages and 209 previews; every completion/manual/facsimile/source-image flag remained false.",
+    "The stale 2011-06-22 page-018.webp derivative returned HTTP 404.",
+    "LIVE_VERIFIED applies only to publication of the disclosed partial derivative layer; it does not satisfy the separate thread-deletion audit."
+  ],
   "subject": "Bilingual Sun Park ACTA document room, public-safe OCR text editions and event/source continuity controls",
   "expected_routes": {
     "es": [
@@ -72,7 +98,32 @@
     "reason": "Publication of an indexed partial OCR layer does not satisfy native preservation, complete manual transcription, source-facsimile, event-chain or fresh-thread recovery gates."
   },
   "live_verification": {
-    "status": "NOT_YET_CLAIMED",
-    "note": "PR_OPEN records the validated content commit and controlling PR. Merge, deployment and public-edge readback are not yet claimed and must be recorded separately."
+    "status": "PASS_FOR_PARTIAL_PUBLICATION",
+    "verified_at_utc": "2026-08-23",
+    "post_merge_checks": "7/7 success for merge SHA 5acefbd376133ed7154d21309e4682aab94266a8",
+    "public_urls": [
+      "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/",
+      "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
+      "https://sbu001monterecco.github.io/por-derecho/evidence/community/actas/public-index.json",
+      "https://sbu001monterecco.github.io/por-derecho/assets/docs/community-actas/2011-06-22-public-redacted-es.pdf",
+      "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2011-06-22/page-014.webp",
+      "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2016-04-26/page-014.webp"
+    ],
+    "exact_public_hashes": {
+      "en_document_room": "5aca80c95b8a6b86cd5bf15e15b2d239314c288af8c56d99a307adcd73eca6ac",
+      "es_document_room": "02315e70a8f82f3d300efebeb6a4b506a7675fd568b982066aaa30d7de80c35a",
+      "public_index": "bfc3d3e78c95161438736faa17fa91d3efb122f3ff27d52fe2bb636230ae83db",
+      "acta_2011_pdf": "989fd3e0a0d7030055a96c71b00a4370b5ff849032e115d8b0a7ecaed63921d4",
+      "acta_2011_page_014": "33ccc791649e16894953fb9d25bc1d81995aa6673f84b5eadc557fb431f227cf",
+      "acta_2016_page_014": "f0e85df71a42bc60bb570334f7b330bd059574c5e46b388fcf0e66782d8ca753",
+      "document_room_js": "ad3414404323a71a07cfdc3a31e588c356803806d8fc5a8a0d763f26e7b68294",
+      "document_room_css": "c10f3ab10227c667ff7156e240948b18b4282b324f565623342025ea7c4b6ece"
+    },
+    "readback": [
+      "All eight downloaded public artifacts matched the repository SHA-256 values.",
+      "The public index returned 15 partial packages, 179 represented source-variant pages, 209 PDF edition pages and 209 previews; every completion/manual/facsimile/source-image flag remained false.",
+      "The stale 2011-06-22 page-018.webp derivative returned HTTP 404.",
+      "Live verification proves publication of the disclosed partial derivative layer only; it does not complete the open-evidence or thread-deletion gates."
+    ]
   }
 }
