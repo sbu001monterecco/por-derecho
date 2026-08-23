@@ -21,6 +21,8 @@ Do not publish private email addresses, personal telephone numbers, Gmail messag
 | Name | Media / organisation | Role / relevance | Geography / language | Notes |
 |---|---|---|---|---|
 | **Lourdes Santana Navarro** | **PRISA Media / Cadena SER Canarias** | Senior Canary Islands journalist/editorial manager; public-interest, economic and tourism relevance | Canarias / Spanish | Track professional context only here. |
+| **Silvia Fernández Díaz** | **CANARIAS7** | Economics/RIC/business journalist; authored 24-Jan-2020 RIC Private Equity launch article and continues to write on RIC/economics | Canarias / Spanish | Strong editorial-traceability fit for 2020 RICPE launch → later Yaiza hotel materialisation → 54/190/18/DD chronology. Article/source use is not proof of prior knowledge of internal title evidence. |
+| **Javier Sheng Pang Blanco** | **CANARIAS7** | Economics, tourism, labour, regulation and business reporting | Canarias / Spanish | Relevant secondary CANARIAS7 economic/tourism desk route. Do not guess contact address; use only verified routing. |
 | **Ruth Ugalde** | **El Confidencial** | Real estate, hotel assets, insolvency/restructuring, funds/debt/NPLs and institutional-accountability fit | Spain / Spanish | Strong asset-provenance/investment lane. |
 | **Saúl García Crespo** | **Diario de Lanzarote; Agencia EFE; local collaborations** | Long-running Yaiza/Playa Blanca, planning, courts, tourism and local-accountability reporting | Lanzarote / Spanish | Strong local document-led fit. |
 | **Teresa Acosta Hernández** | **La Voz de Lanzarote / Lanzarote Media** | Director; relevant to outlet's own EKN Sun Park→MYND/RICPE reporting | Lanzarote / Spanish | Strong institutional-resolution + editorial-traceability fit. |
