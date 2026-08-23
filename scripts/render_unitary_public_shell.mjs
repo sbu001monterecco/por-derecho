@@ -50,7 +50,7 @@ try{
       try{
         const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
-        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260819a',null,{timeout:15000});
+        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260823a',null,{timeout:15000});
         if(route.kind==='home'){
           await page.waitForSelector('.main-nav[data-psr-consolidated-nav="true"]',{state:'attached',timeout:10000});
           await page.waitForSelector('.psr-home-control-gateway',{timeout:10000});
