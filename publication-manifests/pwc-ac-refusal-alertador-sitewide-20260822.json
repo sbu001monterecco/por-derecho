@@ -212,7 +212,7 @@
     "complete removal/separation filings, actor-specific elements, causation, loss and limitation evidence"
   ],
   "validation": {
-    "status": "LOCAL_AND_CI_PASS_WITH_ONE_DOCUMENTED_UNRELATED_NON_REGRESSION",
+    "status": "TASK_PUBLICATION_PASS_WITH_DOCUMENTED_LEGACY_LIVE_READBACK_FAILURES",
     "evidence": [
       "git diff --check and staged-equivalent new-file whitespace checks passed",
       "node --check passed for site.js, warning, alertador footer and site-wide PwC image linker",
@@ -220,6 +220,7 @@
       "all 15 core route files and all declared source files exist; exact ES/EN PNG SHA-256 values match",
       "13-route warning, bilingual footer and generic image-link simulations passed",
       "22 of 23 PR-head workflows succeeded; the sole failure was an unrelated pre-existing Playa Blanca site-loader marker contract absent from both base and head",
+      "exact merge SHA post-merge suite completed 28 success and 6 documented legacy/live-readback failures; GitHub Pages itself succeeded",
       "all 33 controlled live routes and four runtime assets returned HTTP 200; rendered representative routes showed a visible single image, locale-correct click-through and bilingual footer",
       "repository-wide production smoke passed all 23 checks"
     ],
@@ -259,6 +260,22 @@
     "A live click from the English RICPE route reached /en/evidence-pwc-sun-park-meeting-21-april-2016/#sequence",
     "production_smoke_check.py passed 23 of 23 checks"
   ],
+  "post_merge_workflow_record": {
+    "total": 34,
+    "success": 28,
+    "failure": 6,
+    "pages_run": 32606326835,
+    "pages_status": "success",
+    "failed_runs": {
+      "32606327389": "source-of-funds: Spanish RICPE lazy image sampled before viewport entry; direct post-scroll readback completed at 1800x1200",
+      "32606327396": "Palacete: all four assets HTTP 200 with exact hashes; three older page-heading markers absent",
+      "32606327403": "adjudication: canonical source, module, sitemap and rendered DOM passed; two legacy outer-site.js loader literals absent",
+      "32606327449": "Meeting Point: six expected injected selectors absent",
+      "32606327392": "elEconomista: own ES/EN source and rendered DOM passed; embedded Meeting Point check failed",
+      "32606327374": "Playa Blanca: bilingual pages, probe and styles passed; three older exact-marker assumptions failed"
+    },
+    "boundary": "These failures are preserved as validator/runtime-maintenance findings and are not represented as green; task-specific asset, route, rendered-link, footer, Pages and production-smoke evidence passed."
+  },
   "deletion_record": {
     "audit": "docs/deletion-audits/2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md",
     "verdict": "DELETION-SAFE WITH OPEN EVIDENCE",
