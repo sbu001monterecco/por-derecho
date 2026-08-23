@@ -21,6 +21,11 @@ Do not publish private email addresses, personal telephone numbers, Gmail messag
 | Name | Media / organisation | Role / relevance | Geography / language | Notes |
 |---|---|---|---|---|
 | **Lourdes Santana Navarro** | **PRISA Media / Cadena SER Canarias** | Senior Canary Islands journalist/editorial manager; relevant to public-interest, economic and tourism reporting and potential internal routing within PRISA/SER | Canarias / Spanish | Track professional-media context only here. Any outreach history is controlled separately and is **not automatically website-public**. |
+| **Cristian Reche** | **elEconomista / elEconomista Capital Privado** | Economic, restructuring, M&A and private-equity relevance; current public 2026 elEconomista material identifies him as director of *elEconomista Capital Privado* | Spain / Spanish | High fit for RICPE, investment, restructuring, asset provenance, incentives and finance modules. Outreach history, if any, is controlled separately. |
+| **Javier Romera** | **elEconomista** | Economic/business journalist relevant to the existing FTI / Meeting Point / Sun Park media-verification track | Spain / Spanish | Media affiliation is supported by direct correspondence and the existing repository media-traceability record. Reverify current title/beat before a new bespoke approach. |
+| **Frederik Obermaier** | **Paper Trail Media** | Co-founder/director and cross-border investigative reporter; strong fit for documented international, financial, public-interest and whistleblower-led investigations | Germany / German-English | Public Paper Trail Media and ICIJ profiles current in August 2026. Keep contact history separate from this neutral register. |
+| **Jochen Eversmeier** | **fvw / TravelTalk** | German travel-industry media relevance; potential fit for FTI / Meeting Point / Club Sei / Canary tourism distribution modules | Germany / German-English | Organisation is confirmed by recent direct auto-reply. Reverify current editorial role/beat before a new Tier-A/B package. |
+| **Tobias Fuchs** | **BILD** | German national-media relevance; possible fit where a concise public-interest/tourism/consumer angle is justified | Germany / German | Organisation is supported by recent direct correspondence. Reverify current role/beat and story fit before any future approach. |
 
 ## Maintenance instructions
 
@@ -33,13 +38,15 @@ When a journalist or media professional becomes relevant:
 5. do not record speculative affiliations;
 6. preserve outreach status, message history and private contact details outside this neutral register unless a separate controlled record requires them;
 7. never use inclusion in this register as authority to publish on the website that the person was contacted;
-8. if the person's role/media changes, update the register while preserving material historical context where relevant.
+8. if the person's role/media changes, update the register while preserving material historical context where relevant; and
+9. during active outreach use `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md` to score story fit, audience lane and Tier A/B/C/HOLD status before drafting.
 
 ## Relationship to outbound-email controls
 
 For any actual outreach, read:
 
 - `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
+- `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
 - `archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md`; and
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
 
