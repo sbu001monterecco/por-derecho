@@ -1,140 +1,67 @@
-# EL PAÍS / Joaquín Gil preparation record — 23 August 2026
+# EL PAÍS / Joaquín Gil outreach record — 23 August 2026
 
-**Status:** PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT  
-**Record class:** outbound-media preparation state  
-**Privacy rule:** no private email address, Gmail identifier or full draft body is reproduced here.
+**Status:** SENT + VERIFIED / AWAITING RESPONSE  
+**Record class:** outbound-media recipient state  
+**Privacy rule:** no private Gmail identifier or full private body is reproduced here.
 
-## 1. Current recipient fit
+## Recipient fit
 
-Current EL PAÍS public material identifies **Joaquín Gil** as a journalist in the paper's **Investigación** section, with two decades of experience and participation in international investigations. His 2026 work continues to cover criminal networks, judicial proceedings, public institutions, corruption-related allegations and evidential reconstruction.
+Current EL PAÍS public material identifies **Joaquín Gil** as a journalist in the paper's **Investigación** section, with long experience and participation in international investigations. The national-investigative form of the Sun Park/MYND record was therefore used: property/title → control → economic pressure → project preparation → RIC/investment → public support → institutional knowledge → media/public narrative.
 
-This makes him a strong fit for the national investigative form of the Sun Park / MYND record: property/title → control → economic pressure → project preparation → RIC/investment → public support → institutional knowledge → media/public narrative.
+## Prior-contact correction
 
-## 2. Prior contact and re-entry control
+Connected Gmail confirms direct outbound contact in December 2024 and January 2025. Those earlier messages used broad `coordinated network / collusion / €100m+ fraud` language and mixed Sun Park, RIC, judicial/administrative allegations, FTI, Orion and media-suppression claims.
 
-Connected Gmail confirms prior direct outbound contact to Joaquín in:
+The 23-Aug-2026 package expressly **superseded that framing methodologically**. Joaquín was told not to inherit the old global conclusions and was instead given a source-separated reconstruction distinguishing verified fact, party allegation, inference/hypothesis, adverse judicial outcome, missing primary bridge and public/corporate representation.
 
-- December 2024; and
-- January 2025.
+## Controlling story architecture
 
-The December-2024 message used an expansive `coordinated network / collusion` framing and linked Sun Park, RIC, judicial/administrative allegations, FTI, Orion and media-suppression allegations. A January-2025 message used a `€100m+ fraud` headline and again presented broad criminal/systemic conclusions.
-
-No inbound response from the currently known Joaquín work route was located in the fresh Gmail scan at this preparation cutoff.
-
-The current package therefore **does not inherit those old global conclusions**. It expressly tells Joaquín that the 2024–25 framing was too broad and that the present reconstruction supersedes it methodologically by separating:
-
-- verified fact;
-- party allegation;
-- inference/hypothesis;
-- adverse judicial outcome;
-- missing primary bridge; and
-- public/corporate representation.
-
-This correction is a core credibility feature, not a concession that the underlying documentary questions disappear.
-
-## 3. Controlling national-investigative story
-
-The prepared email uses:
-
-`2008 property / operation fragmentation`
+`2008 fragmented property / operation`
 → `minority / CEXP / Community marketability and governance conflict`
 → `creditor / enforcement / LPB-only insolvency perimeter`
 → `CAM specific-property acquisition / 54-CAM provenance`
 → `purchaser-knowledge questions`
-→ `2018 material-control transition / adverse provisional dismissal retained`
-→ `pre-title Lava Verde / Club Sei / Meeting Point project and commercial preparation`
+→ `2018 material-control transition + adverse provisional dismissal retained`
+→ `pre-title Lava Verde / Club Sei / Meeting Point preparation`
 → `2020 integrated ownership/control representation`
 → `July-2021 internal 54 CAM / 190 LPB / 18 third parties + conditional title + unsigned LOI + incomplete DD`
 → `RICPE / Series F-G / HNT / MYND / GC/836/P06 / European-cofinancing traceability`
-→ `public/media narrative and source-transmission questions`
-→ `22-Aug-2026 constructive Yaiza + Cabildo institutional-resolution route`.
+→ `media/public source-transmission questions`
+→ `22-Aug-2026 Yaiza/Cabildo constructive institutional-resolution route`.
 
-The email presents this as a **document chain to test**, not proof of a single conspiracy or common criminal intent.
+This is a document chain to test, not proof of a single conspiracy or common criminal intent.
 
-## 4. 54-CAM / minority gate
+## Key controls retained in the sent package
 
-The package applies `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
+- `54 CAM` was not used as shorthand for acquisition of Sun Park; provenance and minority-marketability questions were preserved.
+- The 2018 provisional dismissal confirmed on appeal was stated visibly.
+- Pre-title Lava Verde/Club Sei/Meeting Point material was not presented as proof of an unlawful contract, actual bookings/revenue or whole-hotel authority.
+- Coexistence of RIC, private finance, GC/836/P06 and European cofinancing was expressly stated not to prove fraud, double funding or illegality by itself.
+- Media causation was corrected to `UPSTREAM REPRESENTATION → ATTRIBUTED PUBLICATION → INDEPENDENT VERIFICATION → KNOWINGLY FALSE PUBLICATION`.
+- The constructive Yaiza/Cabildo route was used as the present-tense endpoint.
 
-It explains that `54 CAM` is not shorthand for acquisition of Sun Park and requires:
+## Verified transmission
 
-`seller → finca → seller authority → CEXP/Community position → disputed debt/litigation/access → deed/order → price/payment/set-off → Registry → possession → purchaser knowledge → later project use`.
+After Gil's fresh exact approval, the stored Gmail draft was sent once and the actual sent copy was read back.
 
-It expressly avoids saying minority owners were forced to sell absent primary evidence proving that proposition.
+Verified state:
 
-## 5. 2018 adverse evidence
+- To: Joaquín's established EL PAÍS professional route;
+- Cc: none;
+- Bcc: none;
+- subject: `Joaquín — Sun Park/MYND: 54 fincas, RIC, fondos públicos y una reconstrucción que corrige mis correos de 2024-25`;
+- Gmail label: `SENT`.
 
-The prepared email states that:
+Both mandatory Spanish PNGs were present in the actual sent copy:
 
-- LPB, not all Sun Park, was the insolvent debtor perimeter;
-- no located court order currently establishes CAM whole-hotel possession/desalojo authority;
-- contemporaneous testimony/communications support material-access/control questions; and
-- the criminal track opened around those events ended in provisional dismissal confirmed on appeal.
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
+- `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes.
 
-The adverse outcome is retained visibly and is not described as a conviction or merits finding in Project Sun Rock's favour.
+The sent body contained the San Telmo webinar, current Por Derecho routes, 54-CAM, 7-Jun-2018, Lava Verde/Club Sei/Meeting Point, RICPE→HNT→GC/836/P06 and media-traceability routes, together with the required evidential limitations.
 
-## 6. Pre-title commercialisation / Meeting Point gate
+## Five finite asks used
 
-The package includes the sourced Sun Park → Lava Verde → Club Sei / Meeting Point-FTI chronology and the 279-room versus 54/190/18 reconciliation problem.
-
-It does **not** claim that an unlawful Meeting Point contract, bookings, revenue, or legal authority over all rooms is already proved.
-
-## 7. RIC / public-support boundary
-
-The package states Project Sun Rock's allegation that a possible fraudulent materialisation of RIC should be investigated, while expressly saying that coexistence of:
-
-- RIC;
-- private finance;
-- RICPE investment;
-- regional incentive GC/836/P06; and
-- European cofinancing
-
-is not by itself evidence of fraud, double financing or illegality.
-
-The investigative question is whether asset, title, availability, works, eligible costs, employment and other funding were represented compatibly and completely to each decision-maker.
-
-## 8. Media-causation correction
-
-The new package expressly corrects the earlier broad `silence / controlled narrative` framing and applies:
-
-`UPSTREAM REPRESENTATION → ATTRIBUTED PUBLICATION → INDEPENDENT VERIFICATION → KNOWINGLY FALSE PUBLICATION`.
-
-No causal claim about a particular article is made without the actual transmission bridge, and no claim of knowing media falsehood is made without separate proof of what the outlet knew and verified.
-
-## 9. Constructive present-tense endpoint
-
-The email begins and ends with the 22-August invitation to Yaiza and the Cabildo.
-
-The current proposition is not that those institutions can resolve the whole private/judicial dispute. It is that each can identify and explain its own records and competencies, with documentary clarity potentially supporting a constructive path for Lanzarote.
-
-## 10. Prepared routing and subject
-
-The Gmail draft uses the same direct EL PAÍS professional route previously used in connected Gmail history, with no Cc or Bcc.
-
-Prepared subject:
-
-> Joaquín — Sun Park/MYND: 54 fincas, RIC, fondos públicos y una reconstrucción que corrige mis correos de 2024-25
-
-## 11. Mandatory Media Core Package — verified in Gmail draft
-
-The actual Gmail draft was read back and contains both canonical Spanish PNG attachments:
-
-- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`;
-- `san-telmo-ricpe-sun-park-stamp-v1-ES.png`.
-
-The body contains:
-
-- direct San Telmo webinar link at approximately 08:08;
-- public Lanzarote open-letter route;
-- 54-CAM provenance/minority route;
-- 7-Jun-2018 material-control dossier;
-- Lava Verde / Club Sei / Meeting Point route;
-- RICPE→HNT→GC/836/P06 / European-support route;
-- media/public-narrative traceability route; and
-- express evidential limitations.
-
-## 12. Five finite asks
-
-The prepared message asks Joaquín to consider:
+The message invited Joaquín to consider:
 
 1. reconstructing the 54-CAM seller/finca/instrument/price/payment/Registry chain;
 2. comparing the 2020 integrated presentation with RICPE's July-2021 54/190/18 + conditional title + incomplete DD internal record;
@@ -142,18 +69,14 @@ The prepared message asks Joaquín to consider:
 4. reconciling asset/works/costs/employment/availability across RICPE, HNT/MYND, RIC, GC/836/P06 and European cofinancing; and
 5. asking Yaiza/Cabildo what records and interlocutors exist for the current constructive route.
 
-It offers, as the next source step, a **five-primary-document index rather than another broad narrative dossier**.
+It offered a five-primary-document index rather than another broad narrative dossier.
 
-## 13. Current send gate
+## Follow-up state
 
-**SEND STATUS: NOT AUTHORISED / NOT SENT.**
+Use only:
 
-Before any send:
+`SENT + VERIFIED / AWAITING RESPONSE`
 
-- re-read the actual Gmail draft;
-- verify routing;
-- verify both mandatory PNGs and all links;
-- scan Gmail for any new inbound response/correction affecting the package; and
-- obtain fresh exact final approval from Gil.
+unless a fresh connected-Gmail scan proves otherwise.
 
-Any material edit resets approval.
+No follow-up, reply, resend or correction is authorised by this record. Any future transmission requires a new exact package and fresh approval under `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
