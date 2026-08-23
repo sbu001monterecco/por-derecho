@@ -17,7 +17,7 @@ Do not begin by copying an old draft or assuming silence.
 ### Ruth Ugalde / El Confidencial
 
 - Status: `SENT / CORRECTIVE COMPLETE PACKAGE SENT / AWAITING RESPONSE`.
-- The initial incomplete package was corrected by a separately authorised same-thread resend containing both Spanish PNGs, webinar and Por Derecho routes.
+- Initial incomplete package was corrected by separately authorised same-thread resend containing both Spanish PNGs, webinar and Por Derecho routes.
 - Read `archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md` before any further contact.
 
 ### Saúl García / Diario de Lanzarote
@@ -29,7 +29,7 @@ Do not begin by copying an old draft or assuming silence.
 ### Teresa Acosta Hernández / La Voz de Lanzarote
 
 - Status: `SENT + VERIFIED / AWAITING RESPONSE`.
-- Controlling story architecture: full conversion sequence from minority/title fragmentation and 54-CAM provenance through 2018 control, 2020→2021 RICPE contradiction, RIC/HNT/MYND/public support, La Voz's own 2022/2023 publications and the 2026 constructive Yaiza/Cabildo route.
+- Architecture: minority/title fragmentation and 54-CAM provenance → 2018 control → 2020→2021 RICPE contradiction → RIC/HNT/MYND/public support → La Voz's own 2022/2023 publications → 2026 constructive Yaiza/Cabildo route.
 - Read:
   - `archive/LA_VOZ_TERESA_ACOSTA_OUTREACH_RECORD_23AUG2026.md`;
   - `archive/LA_VOZ_TERESA_UNITARY_STORY_REDIGEST_23AUG2026.md`;
@@ -38,8 +38,8 @@ Do not begin by copying an old draft or assuming silence.
 ### Taiana González / HOSTELTUR
 
 - Status: `SENT + VERIFIED / AWAITING RESPONSE`.
-- The actual sent copy was read back after transmission and verified with the intended subject, no Cc/Bcc, both mandatory Spanish PNGs, the direct San Telmo webinar and the intended Por Derecho source routes.
-- Controlling tourism-industry architecture:
+- Actual sent copy was read back and verified with intended subject, no Cc/Bcc, both mandatory Spanish PNGs, direct San Telmo webinar and intended Por Derecho source routes.
+- Tourism architecture:
 
   `2008 fragmented title / hotel operation`
   → `minority/CEXP/Community marketability conflict`
@@ -52,26 +52,61 @@ Do not begin by copying an old draft or assuming silence.
   → `2022–2023 MYND/RIC/incentive/EU-support and later HOSTELTUR coverage`
   → `2026 constructive Yaiza/Cabildo resolution route`.
 
-- Read `archive/HOSTELTUR_TAIANA_GONZALEZ_PREPARATION_RECORD_23AUG2026.md` before any further action; that file now operates as the sent-state outreach record despite its historical filename.
+- Read `archive/HOSTELTUR_TAIANA_GONZALEZ_PREPARATION_RECORD_23AUG2026.md` before any further action; it now operates as the sent-state record despite its historical filename.
 
 ### Diego Sánchez de la Cruz / Civismo-related routing
 
-- Recent contact exists and is currently a HOLD for immediate repeated outreach unless a new response or materially new recipient-specific reason appears.
+- Recent contact exists; HOLD for immediate repeated outreach unless a new response or materially new recipient-specific reason appears.
 - Do not treat a historical professional address as a verified current direct address.
 
-## 3. Current response scan rule
+## 3. Prepared but unsent state
 
-The latest known active campaign state is `AWAITING RESPONSE` for Ruth, Saúl, Teresa and Taiana unless a fresh connected-Gmail scan shows otherwise.
+### Carlos Sosa / Canarias Ahora / elDiario.es Canarias
+
+- Status: `PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`.
+- Current public material identifies Carlos as director/founder of Canarias Ahora and active in August 2026, with strong fit for institutional accountability, public administration, justice/power and corporate-public interfaces.
+- Fresh connected-Gmail searches located no prior Project Sun Rock correspondence with the current Carlos/Canarias Ahora direct/newsroom routes.
+- Prepared subject:
+
+  `Carlos — Sun Park/MYND: de la RIC pública de 2020 a 54 fincas y una vía de solución en Lanzarote`
+
+- The prepared package uses Carlos directly with the current press/newsroom route as editorial backstop; private routing is preserved only in Gmail/source systems.
+- Unique Canarias Ahora archive anchors:
+  1. 8-Nov-2020 RICPE tourism-reconstruction event with regional/Cabildo/RICPE/PwC/Meeting Point participation as published;
+  2. 9-Nov-2020 public-policy/EU-funds context from the same event;
+  3. 19-Nov-2021 Enrique Guerra/RICPE signed opinion article about the RIC; and
+  4. 4-Feb-2026 continuing Canarian Hospitality / Grupo Acosta Matos Lanzarote project narrative.
+- These are chronology/source checkpoints. They do not prove Sun Park-specific knowledge by event participants, editorial endorsement, coordination, wrongdoing or independent verification.
+- Controlling architecture:
+
+  `2008 fragmented title / operation`
+  → `minority/CEXP/Community marketability conflict`
+  → `creditor/enforcement / LPB-only insolvency perimeter`
+  → `54-CAM provenance / purchaser-knowledge questions`
+  → `2018 material-control transition + adverse dismissal retained`
+  → `pre-title Lava Verde / Club Sei / Meeting Point preparation`
+  → `8–9 Nov 2020 RICPE institutional event documented by Canarias Ahora`
+  → `2020 integrated ownership/control presentation`
+  → `July-2021 internal 54/190/18 + conditional title + unsigned LOI + incomplete DD`
+  → `19-Nov-2021 RICPE executive opinion published by Canarias Ahora`
+  → `HNT/MYND/RIC/Series F-G/GC836/EU support`
+  → `2026 continuing corporate/public narrative`
+  → `22-Aug-2026 constructive Yaiza/Cabildo route`.
+- Actual Gmail draft has been read back and contains both mandatory Spanish PNGs, direct San Telmo webinar, Por Derecho routes, contrary/adverse material and explicit evidential limitations.
+- Read `archive/CANARIAS_AHORA_CARLOS_SOSA_PREPARATION_RECORD_23AUG2026.md` before any action.
+- Do not send until Gil gives fresh exact final authorisation of this stored package. Any material edit resets approval.
+
+## 4. Current response scan rule
+
+At the Carlos preparation cutoff, a fresh connected-Gmail scan found no new inbound message from the active El Confidencial, Diario de Lanzarote, La Voz/Lanzarote Media or HOSTELTUR domains.
 
 Use only:
 
-`NO RESPONSE LOCATED YET`
-
-when a fresh Gmail scan actually supports that statement.
+`NO RESPONSE LOCATED YET`.
 
 Never translate silence into rejection, reading, delivery failure, acceptance or editorial decision.
 
-## 4. Follow-up classifications
+## 5. Follow-up classifications
 
 Any incoming media message must be read in full and classified narrowly as one of:
 
@@ -88,7 +123,7 @@ Any incoming media message must be read in full and classified narrowly as one o
 
 A response does not automatically authorise a reply. Prepare the exact reply package and obtain fresh final approval.
 
-## 5. Same-matter story core for other media
+## 6. Same-matter story core for other media
 
 The current unitary media story is:
 
@@ -112,7 +147,11 @@ For tourism/travel media, add where relevant:
 
 `Lava Verde 279-room project → Club Sei Lanzarote / Meeting Point-FTI commercial preparation → exact contracting entity / room authority / bookings / revenue still open → July-2021 54/190/18 reconciliation`.
 
-## 6. Media-propagation rule
+For Canary-wide institutional media, add where sourced:
+
+`institutional/public event → published participant perimeter → what was actually presented → later internal title/availability record → subsequent public-policy/investment narrative → present administrative traceability`.
+
+## 7. Media-propagation rule
 
 For all outlets distinguish:
 
@@ -122,7 +161,7 @@ Do not state that CAM, RICPE, Canarian Hospitality, Government or another actor 
 
 Where an article itself says a fact was presented/announced/stated by a named source, use that attribution exactly.
 
-## 7. Mandatory package for every future media email
+## 8. Mandatory package for every future media email
 
 Unless Gil approves an exact one-use exception:
 
@@ -134,50 +173,43 @@ Unless Gil approves an exact one-use exception:
 - adverse material required to prevent misleading impression; and
 - recipient-specific finite ask.
 
-For use of `54 CAM`, also apply the provenance gate in `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
+For use of `54 CAM`, also apply `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
 
-## 8. Continuation queue — revalidate before drafting
+## 9. Continuation queue — revalidate before drafting
 
 Current state:
 
-1. **Carlos Sosa / Canarias Ahora / elDiario.es Canarias** — institutional accountability, public administration, economic/public-interest and Canary-wide governance angle.
+1. **Carlos Sosa / Canarias Ahora / elDiario.es Canarias — PREPARED, AWAITING EXACT SEND AUTHORISATION.**
 2. **Joaquín Gil / EL PAÍS** — broader investigative/property/institutional story only if current story fit and source package justify national escalation.
 3. **Salvador Hernández / Biosfera Digital** — Lanzarote local public-interest/institutional route.
 4. **Alfonso Canales Segovia / Crónicas de Lanzarote** — Lanzarote local institutional/governance route.
 
 HOLD or later-specialist lanes remain available for economic/investment, German tourism/cross-border and prior-contact journalists.
 
-No ranking is authority to send. Every new recipient requires fresh profile/contact/history verification, a recipient-specific package and exact final approval.
+No ranking or prepared draft is authority to send.
 
-## 9. Follow-up timing discipline
+## 10. Follow-up timing discipline
 
 Do not send immediate same-day chasers merely because no answer appears.
 
 For each recipient, before proposing a follow-up assess:
 
-- elapsed working time since the verified send;
-- whether the recipient/outlet is in a holiday/reduced-newsroom period;
-- whether a new primary source, official response or material correction has emerged;
-- whether the original message asked a finite question capable of reply;
-- whether a phone/call route was invited or provided; and
-- whether another colleague/outlet route would be a new recipient requiring separate approval.
+- elapsed working time since verified send;
+- holiday/reduced-newsroom period;
+- new primary source, official response or material correction;
+- whether the original finite question is capable of reply;
+- whether a call route was invited/provided; and
+- whether another colleague/outlet route is actually a new recipient requiring separate approval.
 
-The preferred follow-up is usually shorter than the first email and should identify **what changed or why now**, not resend the entire dossier unless correction requires it.
+Preferred follow-up is normally shorter than the first email and says what changed or why now; do not automatically resend the whole dossier.
 
-## 10. Current next action
+## 11. Current next action
 
-Proceed to **Carlos Sosa / Canarias Ahora / elDiario.es Canarias** by default only after:
+Present the exact Carlos Sosa / Canarias Ahora package for final approval. If approved without material change, send that exact stored Gmail draft once and read back the actual sent copy.
 
-1. a fresh connected-Gmail scan for any new media responses;
-2. verification of Carlos Sosa's current role, beat and professional routing;
-3. review of the current Canarias Ahora/elDiario.es media/publication context in repository and website;
-4. selection of the institutional-accountability form of the same unitary story;
-5. inclusion of the mandatory Media Core Package; and
-6. preparation of an exact package marked `SEND STATUS: NOT AUTHORISED` until Gil approves it.
+If Carlos is sent and verified, update this file to `SENT + VERIFIED / AWAITING RESPONSE` and proceed to Joaquín Gil only after fresh response/public-role/history checks.
 
-Do not send Carlos or any other new recipient solely because Taiana has now been sent.
-
-## 11. No autonomous follow-up
+## 12. No autonomous follow-up
 
 This repository state enables future threads to resume work; it does **not** create an automatic email campaign.
 
