@@ -6,7 +6,7 @@
   "current_state": "DELETION_SAFE",
   "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
   "branch": "closeout/cam-thread-deletion-safe-20260823",
-  "merge_sha": "ea90c4a9b44c559eaa7b51d73ea852596c6856fb",
+  "merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
   "expected_routes": {
     "en": [
       "en/cam-creditor-control-shadow-administration-judicial-omission/index.html"
@@ -142,7 +142,7 @@
   "validation": {
     "script": "scripts/validate_cam_creditor_control_criminal_lead.py",
     "workflow": ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
-    "status": "CI_GREEN_LIVE_VERIFIED_CLOSEOUT",
+    "status": "CI_GREEN_LIVE_VERIFIED",
     "evidence": [
       {
         "type": "github_actions",
