@@ -3,6 +3,8 @@
 **Date:** 19 August 2026  
 **Thread topic:** audit of the Sun Park Owners’ Community and CEXP minutes as parallel governance records from 2008 onward, disputed post-2011 governance, debt/voting consequences, unidad de explotación and alleged duplicate cost attribution.
 
+> **Superseded-scope notice (22-Aug-2026):** the conditional conclusion below remains historical for the narrower two-track synthesis. It does not govern the later full-ACTA/text/PDF/image/event-capture mandate. The current controlling verdict is **FAIL — NOT SAFE TO DELETE** in `archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md`.
+
 ## Deletion conclusion
 
 **Status: CONDITIONALLY SAFE TO DELETE AFTER THIS BRANCH/PR IS RETAINED; PREFER MERGE FIRST.**

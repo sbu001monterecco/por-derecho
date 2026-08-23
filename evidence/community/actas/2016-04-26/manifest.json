@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-ACTA-2016-04-26",
+  "slug": "2016-04-26",
+  "date": "2016-04-26",
+  "body": "Comunidad de Propietarios",
+  "meeting_type": "ordinary",
+  "language": "es",
+  "status": "located-package-partial",
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-text-edition",
+  "redacted_facsimile_available": false,
+  "source_page_images_available": false,
+  "complete_public_text": false,
+  "native_page_count": 77,
+  "native_page_count_status": "separately-recorded-working-master-not-certified",
+  "source_variant_page_count": 24,
+  "public_pdf_page_count": 25,
+  "source": {
+    "filename": "ACTA 2016 - 26 ABR.pdf (variante local de 24 páginas)",
+    "pages": 24,
+    "bytes": 13849921,
+    "sha256": "d084dfe4adddbb1ea67cfd7e14edddfda1f95986690114e096de4d137df52a61",
+    "variant_note_es": "La copia local tiene 24 páginas y no está reconciliada con el maestro separado de 77 páginas (SHA-256 68ff...2dec) ni con su extracción registrada (SHA-256 4ba8...63fd). No debe presentarse como sustituto del maestro de 77 páginas.",
+    "variant_note_en": "The local copy has 24 pages and is not reconciled with the separate 77-page master (SHA-256 68ff...2dec) or its registered extraction (SHA-256 4ba8...63fd). It must not be presented as a substitute for the 77-page master.",
+    "additional_known_variants": [
+      {
+        "sha256": "68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec",
+        "pages": 77,
+        "note": "Separately recorded 77-page master"
+      },
+      {
+        "sha256": "4ba8b77315b0dca9dc735e13f08a80b82b73dd080921f2a9d73583013e2563fd",
+        "note": "Registered extraction from the 77-page source family"
+      }
+    ],
+    "native_publication": false
+  },
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2016-04-26/transcript-es.md",
+    "provenance": "evidence/community/actas/2016-04-26/provenance.md",
+    "redaction_log": "evidence/community/actas/2016-04-26/redaction-log.md",
+    "pdf": "assets/docs/community-actas/2016-04-26-public-redacted-es.pdf",
+    "pdf_sha256": "00686bb8d74c8942fc036d6b2241b338d148f9b4d61ee616af9fddec006fd842",
+    "pdf_pages": 25,
+    "preview_pages": [
+      "assets/evidence/community-actas/2016-04-26/page-001.webp",
+      "assets/evidence/community-actas/2016-04-26/page-002.webp",
+      "assets/evidence/community-actas/2016-04-26/page-003.webp",
+      "assets/evidence/community-actas/2016-04-26/page-004.webp",
+      "assets/evidence/community-actas/2016-04-26/page-005.webp",
+      "assets/evidence/community-actas/2016-04-26/page-006.webp",
+      "assets/evidence/community-actas/2016-04-26/page-007.webp",
+      "assets/evidence/community-actas/2016-04-26/page-008.webp",
+      "assets/evidence/community-actas/2016-04-26/page-009.webp",
+      "assets/evidence/community-actas/2016-04-26/page-010.webp",
+      "assets/evidence/community-actas/2016-04-26/page-011.webp",
+      "assets/evidence/community-actas/2016-04-26/page-012.webp",
+      "assets/evidence/community-actas/2016-04-26/page-013.webp",
+      "assets/evidence/community-actas/2016-04-26/page-014.webp",
+      "assets/evidence/community-actas/2016-04-26/page-015.webp",
+      "assets/evidence/community-actas/2016-04-26/page-016.webp",
+      "assets/evidence/community-actas/2016-04-26/page-017.webp",
+      "assets/evidence/community-actas/2016-04-26/page-018.webp",
+      "assets/evidence/community-actas/2016-04-26/page-019.webp",
+      "assets/evidence/community-actas/2016-04-26/page-020.webp",
+      "assets/evidence/community-actas/2016-04-26/page-021.webp",
+      "assets/evidence/community-actas/2016-04-26/page-022.webp",
+      "assets/evidence/community-actas/2016-04-26/page-023.webp",
+      "assets/evidence/community-actas/2016-04-26/page-024.webp",
+      "assets/evidence/community-actas/2016-04-26/page-025.webp"
+    ],
+    "preview_count": 25
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "privacy_scan": "pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": true
+  },
+  "redaction_categories": [
+    "attendance-and-vote-lists",
+    "attendance-list",
+    "extracto-bancario",
+    "firma-sello",
+    "identificador-en-linea",
+    "identificadores-contacto-domicilio-firma",
+    "tabla-propietarios-deuda"
+  ],
+  "created": "2026-08-23"
+}

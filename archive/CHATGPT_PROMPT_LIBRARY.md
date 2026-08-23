@@ -95,5 +95,8 @@ self-email package, but it must not send it without the user's final approval of
 the exact recipients, body, attachments and links. When no send is authorised,
 record `NO EMAIL SENT` and complete repository/authorised-destination preservation.
 
+## P23 — Complete ACTAS, redacted source facsimiles and event ledger
+Read and execute `archive/prompts/SUN_PARK_COMPLETE_ACTAS_FACSIMILES_EVENT_LEDGER_EXECUTION_PROMPT_22AUG2026.md` whenever the task concerns full ACTA text, ACTA PDFs/images, source variants, meeting notices, emails, attached records, implementation or downstream reliance. Begin with `evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md` and the current full-ACTA deletion audit. Preserve native sources privately with hashes; publish only page-complete public-safe text and irreversibly redacted source facsimiles after privacy/privilege and hidden-text review. An interim OCR edition may be exposed only as `located-package-partial`, with `complete_public_text: false`, `manual_source_line_verification: false` and both source-facsimile flags false. A rendered text-edition PDF or WEBP is not a source facsimile. Keep Community, CEXP, working meetings and later recitals separate. Use explicit missing-source cards, never a false completeness claim. Deletion remains unsafe until the evidence-gated checklist, merge, deployment, live readback and fresh-thread recovery test pass.
+
 ## Universal close-out
 Before finishing any prompt: update canonical registers; use a branch/PR for substantive changes; review changed files; merge only if safe; verify Pages for public changes; update deployment log; confirm a fresh ChatGPT can continue without this chat.

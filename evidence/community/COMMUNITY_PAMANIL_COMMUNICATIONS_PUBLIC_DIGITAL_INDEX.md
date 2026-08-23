@@ -7,9 +7,9 @@
 
 | Date | Public source | Main evidential use | Limit |
 |---|---|---|---|
-| 22 Jun 2011 | [Structured public redacted digest](./ACTA_22JUN2011_PUBLIC_REDACTED_EDITION.md) | Debt → vote → litigation/administrator; CEXP termination position; Pamanil work proposal | Not a line-by-line transcription; proposal/approval does not prove performance, lawful authority or payment |
-| 26 Apr 2016 | [Structured public redacted digest and annex map](./ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md) | Missing accounts; retroactive quota/debt recalculation; Pamanil/Pamalexsha continuity | Not a line-by-line transcription; native master, audio and private annex fields remain controlled |
-| 22 Aug 2026 | [Custodial communications register](../../archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md) | Lists 2012–2017 meeting statements, notices, acts and communication families | A locator proves preservation/identity, not truth, delivery or legal effect |
+| 22 Jun 2011 | [Structured public redacted digest (legacy)](./ACTA_22JUN2011_PUBLIC_REDACTED_EDITION.md) · [page-sequenced OCR text edition](./actas/2011-06-22/transcript-es.md) | Debt → vote → litigation/administrator; CEXP termination position; Pamanil work proposal | The OCR edition is not yet manually verified line by line or a source facsimile; proposal/approval does not prove performance, lawful authority or payment |
+| 26 Apr 2016 | [Legacy public evidential digest/annex map](./ACTA_26APR2016_PUBLIC_REDACTED_EDITION.md) · [24-page-variant OCR text edition](./actas/2016-04-26/transcript-es.md) | Missing accounts; retroactive quota/debt recalculation; Pamanil/Pamalexsha continuity | The 24-page edition does not replace the 77-page master and is not yet manually verified or a source facsimile; audio and private annex fields remain controlled |
+| 22 Aug 2026 | [Finite searched-source communications register](../../archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md) | Lists 2012–2017 meeting statements, notices, acts and communication families | A connected-source locator does not prove independent preservation, truth, delivery or legal effect |
 
 ## Indexed but not publicly reproduced in full
 

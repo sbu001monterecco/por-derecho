@@ -51,8 +51,10 @@ The searches returned later pleadings/reconstructions containing the 2022 event 
 
 Do not substitute a 2026 pleading or forensic report for the 2022 primary ACTA.
 
-## 4. Deletion-continuity consequence
+## 4. Deletion-continuity consequence — superseded for the expanded full-ACTA mandate
 
 This late retrieval result must survive deletion of the originating chat. A fresh thread should no longer waste time re-discovering the 22-Jun-2011 Drive locator; it should use ID `1k6zmHh59XbkhWWqqY0VEC_vLKLhNy0Az` and focus on authenticating/completing the surrounding source package.
 
-The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The new fact narrows an existing evidence gap; it does not change the evidential status of the allegation that the 2011 authority basis was manufactured, false or invalid.
+The former conclusion **DELETION-SAFE WITH OPEN EVIDENCE** applied only to the narrower source-locator update completed on 17-Aug-2026. It is superseded for the later request to publish full public-safe ACTA text, ACTA files/images and a complete linked event record.
+
+Current controlling verdict: **FAIL — NOT SAFE TO DELETE**, under `archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md`, until its evidence-gated PASS checklist is satisfied. The recovered 22-Jun-2011 locator narrows one evidence gap; it does not establish complete transcription, source facsimile, independent native custody, validity or criminality.

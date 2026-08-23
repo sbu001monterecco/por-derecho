@@ -1,0 +1,308 @@
+.acta-room-hero {
+  background:
+    radial-gradient(circle at 92% 0, rgba(209, 172, 86, .22), transparent 34rem),
+    linear-gradient(145deg, #10242b 0%, #173840 68%, #1d4750 100%);
+  color: #f8f5ed;
+  padding: clamp(3.5rem, 8vw, 7rem) 0 3rem;
+}
+
+.acta-room-hero .eyebrow,
+.acta-room-hero .lead { color: #e8eee9; }
+
+.acta-room-hero-grid {
+  align-items: end;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.6fr) minmax(18rem, .8fr);
+}
+
+.acta-room-hero h1 {
+  color: #fff;
+  font-size: clamp(2.35rem, 5.8vw, 5rem);
+  letter-spacing: -.045em;
+  line-height: .96;
+  margin: .5rem 0 1.25rem;
+  max-width: 14ch;
+}
+
+.acta-room-rule {
+  background: rgba(6, 20, 24, .46);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 1rem;
+  box-shadow: 0 1.25rem 3rem rgba(1, 12, 15, .24);
+  padding: 1.25rem;
+}
+
+.acta-room-rule strong,
+.acta-room-rule span { display: block; }
+.acta-room-rule strong { color: #f2d38a; margin-bottom: .45rem; }
+.acta-room-rule span { color: #eef3ef; font-size: .92rem; line-height: 1.55; }
+
+.acta-room-boundary {
+  background: #fff9e9;
+  border: 1px solid #e4ca82;
+  border-left: .35rem solid #aa7419;
+  border-radius: .8rem;
+  color: #392c15;
+  margin: 1.5rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.acta-room-boundary strong { color: #69450c; }
+
+.acta-room-controls {
+  align-items: end;
+  background: #fff;
+  border: 1px solid #dce4df;
+  border-radius: 1rem;
+  box-shadow: 0 .7rem 2rem rgba(17, 44, 52, .08);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(15rem, 1.4fr) minmax(11rem, .8fr) auto;
+  margin: 1.4rem 0 1rem;
+  padding: 1rem;
+  position: sticky;
+  top: .75rem;
+  z-index: 6;
+}
+
+.acta-room-field { display: grid; gap: .35rem; }
+.acta-room-field label { color: #31454b; font-size: .78rem; font-weight: 750; letter-spacing: .055em; text-transform: uppercase; }
+.acta-room-field input,
+.acta-room-field select {
+  background: #f7faf8;
+  border: 1px solid #bdcbc5;
+  border-radius: .65rem;
+  color: #142a31;
+  font: inherit;
+  min-height: 2.8rem;
+  padding: .6rem .75rem;
+  width: 100%;
+}
+
+.acta-room-field input:focus,
+.acta-room-field select:focus,
+.acta-room-toggle:focus-visible,
+.acta-room-actions a:focus-visible {
+  outline: .2rem solid #c68e24;
+  outline-offset: .15rem;
+}
+
+.acta-room-count {
+  align-items: center;
+  color: #42575d;
+  display: flex;
+  font-size: .9rem;
+  justify-content: flex-end;
+  min-height: 2.8rem;
+  white-space: nowrap;
+}
+
+.acta-room-stats {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 1.2rem;
+}
+
+.acta-room-stat {
+  background: #edf4f0;
+  border: 1px solid #d4e1db;
+  border-radius: .8rem;
+  padding: .9rem 1rem;
+}
+
+.acta-room-stat span,
+.acta-room-stat strong { display: block; }
+.acta-room-stat span { color: #607178; font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+.acta-room-stat strong { color: #173840; font-size: 1.65rem; margin-top: .15rem; }
+
+.acta-room-list { display: grid; gap: 1rem; }
+
+.acta-record {
+  background: #fff;
+  border: 1px solid #d8e1dc;
+  border-radius: 1rem;
+  box-shadow: 0 .55rem 1.8rem rgba(15, 42, 49, .07);
+  overflow: clip;
+}
+
+.acta-record[data-state="located-package-complete-public"] { border-left: .35rem solid #27734d; }
+.acta-record[data-state="located-package-partial"] { border-left: .35rem solid #b17a18; }
+.acta-record[data-state="referenced-original-not-located"],
+.acta-record[data-state="no-acta-located"] { border-left: .35rem solid #a4473e; }
+.acta-record[data-state="non-acta-event"] { border-left: .35rem solid #54748c; }
+
+.acta-record-head {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 1.2rem 1.25rem 1rem;
+}
+
+.acta-record-meta {
+  align-items: center;
+  color: #5b6e73;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .78rem;
+  gap: .45rem .75rem;
+  letter-spacing: .04em;
+  margin-bottom: .4rem;
+  text-transform: uppercase;
+}
+
+.acta-record-id {
+  background: #eef3f0;
+  border-radius: .35rem;
+  color: #294149;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  padding: .2rem .4rem;
+  text-transform: none;
+}
+
+.acta-record h2 {
+  color: #17333b;
+  font-size: clamp(1.25rem, 2.8vw, 1.75rem);
+  letter-spacing: -.02em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.acta-status {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .045em;
+  line-height: 1.1;
+  max-width: 16rem;
+  padding: .45rem .65rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.acta-status.complete { background: #e7f5ec; color: #246845; }
+.acta-status.partial { background: #fff6dd; color: #835a0e; }
+.acta-status.missing { background: #fff0ee; color: #933e37; }
+.acta-status.event { background: #edf4f8; color: #415f74; }
+
+.acta-record-body {
+  border-top: 1px solid #e2e8e4;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(15rem, .65fr);
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.acta-record-summary { color: #354b52; line-height: 1.62; margin: 0; }
+.acta-record-note { color: #68797e; font-size: .86rem; line-height: 1.5; margin: .7rem 0 0; }
+
+.acta-record-availability {
+  background: #f5f8f6;
+  border: 1px solid #e0e7e3;
+  border-radius: .7rem;
+  display: grid;
+  gap: .4rem;
+  padding: .8rem .9rem;
+}
+
+.acta-record-availability div {
+  align-items: baseline;
+  display: flex;
+  gap: .6rem;
+  justify-content: space-between;
+}
+
+.acta-record-availability span { color: #66777c; font-size: .78rem; }
+.acta-record-availability strong { color: #243d44; font-size: .82rem; text-align: right; }
+
+.acta-room-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: 1rem;
+}
+
+.acta-room-actions a,
+.acta-room-toggle {
+  background: #173b43;
+  border: 1px solid #173b43;
+  border-radius: .55rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 750;
+  line-height: 1.2;
+  padding: .6rem .72rem;
+  text-decoration: none;
+}
+
+.acta-room-actions a.secondary,
+.acta-room-toggle { background: transparent; color: #173b43; }
+.acta-room-actions a[aria-disabled="true"] { cursor: not-allowed; opacity: .5; }
+
+.acta-preview-wrap {
+  border-top: 1px solid #e2e8e4;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.acta-preview-grid {
+  display: grid;
+  gap: .8rem;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  margin-top: 1rem;
+}
+
+.acta-preview-grid[hidden] { display: none; }
+.acta-preview {
+  background: #edf1ee;
+  border: 1px solid #d5ddd8;
+  border-radius: .5rem;
+  color: #30464c;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.acta-preview img { aspect-ratio: .707; display: block; object-fit: cover; width: 100%; }
+.acta-preview span { display: block; font-size: .75rem; padding: .45rem .55rem; }
+
+.acta-room-empty {
+  background: #fff;
+  border: 1px dashed #aabbb4;
+  border-radius: 1rem;
+  color: #4e6268;
+  padding: 2rem;
+  text-align: center;
+}
+
+.acta-room-noscript { background: #fff3d4; border: 1px solid #d9ad4f; border-radius: .75rem; color: #60420b; padding: 1rem; }
+
+.acta-gap-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.acta-gap-grid article { background: #fff; border: 1px solid #e0d5d1; border-radius: .8rem; padding: 1rem; }
+.acta-gap-grid h3 { color: #7a3e37; margin-top: 0; }
+
+@media (max-width: 820px) {
+  .acta-room-hero-grid,
+  .acta-record-body { grid-template-columns: 1fr; }
+  .acta-room-controls { grid-template-columns: 1fr 1fr; position: static; }
+  .acta-room-count { justify-content: start; }
+  .acta-room-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .acta-gap-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .acta-room-controls,
+  .acta-room-stats,
+  .acta-record-head { grid-template-columns: 1fr; }
+  .acta-record-head { gap: .65rem; }
+  .acta-status { justify-self: start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .acta-room-controls { scroll-behavior: auto; }
+}

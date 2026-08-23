@@ -6,6 +6,8 @@
 **File size / metadata:** 4,551,801 bytes; PDF 1.3; Producer `Mac OS X 10.6.8 Quartz PDFContext`; creation metadata 16 March 2012; later modification metadata 4 February 2021  
 **Status:** structured editorial digest of the complete source with privacy redactions; not a line-by-line transcription, the evidential master, a certified copy or a finding that any resolution was lawful, valid, false or criminal.
 
+> **22-Aug-2026 companion package:** this legacy digest remains available for analysis, but it is no longer the only public derivative. The document room now includes a [page-sequenced Spanish public-redacted OCR edition](actas/2011-06-22/transcript-es.md), its provenance/redaction manifest, a downloadable public **text-edition** PDF and WEBP previews. Those previews are not images of the native ACTA and are not a source facsimile. Source variants, manual line verification, original-book comparison and source-derived facsimile remain open.
+
 ## Publication and transcription rule
 
 The native PDF controls. It was rendered page by page and OCR-assisted; headings, decisions, figures and voting mechanics below were checked against the rendered pages. The source contains a private person's NIF, owner/unit/debt rows, signatures and other unnecessary personal data. Those fields are not republished.

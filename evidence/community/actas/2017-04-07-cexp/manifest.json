@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-ACTA-2017-04-07-CEXP",
+  "slug": "2017-04-07-cexp",
+  "date": "2017-04-07",
+  "body": "Comunidad de Explotación (CEXP)",
+  "meeting_type": "extraordinary",
+  "language": "es",
+  "status": "located-package-partial",
+  "complete_public_text": false,
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-text-edition",
+  "redacted_facsimile_available": false,
+  "source_page_images_available": false,
+  "native_page_count": null,
+  "native_page_count_status": "not-established-from-certified-native",
+  "source_variant_page_count": 2,
+  "public_pdf_page_count": 3,
+  "source": {
+    "filename": "ACTA Comunidad de Explotación (CEXP) - 2017-04-07.pdf",
+    "pages": 2,
+    "bytes": 84535,
+    "sha256": "e2612c11bb243893492b4a490c37ccdada270a8400d5764e8e309a674c95736f",
+    "variant_note_es": "Exportación PDF de dos páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.",
+    "variant_note_en": "Two-page PDF export of a working document. Address, identifier, nominal attendance, unit details and signatures are removed. Extracted text is not certified and has not been manually checked line by line.",
+    "additional_known_variants": [],
+    "native_publication": false
+  },
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2017-04-07-cexp/transcript-es.md",
+    "provenance": "evidence/community/actas/2017-04-07-cexp/provenance.md",
+    "redaction_log": "evidence/community/actas/2017-04-07-cexp/redaction-log.md",
+    "pdf": "assets/docs/community-actas/2017-04-07-cexp-public-redacted-es.pdf",
+    "pdf_sha256": "ebb8aaf0c1f98ded37c72e70edb8f891b6b0f71dba89040f6557f539ccc3694d",
+    "pdf_pages": 3,
+    "preview_pages": [
+      "assets/evidence/community-actas/2017-04-07-cexp/page-001.webp",
+      "assets/evidence/community-actas/2017-04-07-cexp/page-002.webp",
+      "assets/evidence/community-actas/2017-04-07-cexp/page-003.webp"
+    ],
+    "preview_count": 3
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "privacy_scan": "pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": false
+  },
+  "redaction_categories": [
+    "identificador-contacto-domicilio",
+    "lista-asistentes-representaciones",
+    "nombre-personal"
+  ],
+  "created": "2026-08-23"
+}

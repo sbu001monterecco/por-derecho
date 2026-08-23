@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-ACTA-2008-04-29",
+  "slug": "2008-04-29",
+  "date": "2008-04-29",
+  "body": "Propietarios / capa de formación de CEXP",
+  "meeting_type": "extraordinary",
+  "language": "es",
+  "status": "located-package-partial",
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-text-edition",
+  "redacted_facsimile_available": false,
+  "source_page_images_available": false,
+  "complete_public_text": false,
+  "native_page_count": null,
+  "native_page_count_status": "not-established-from-certified-native",
+  "source_variant_page_count": 5,
+  "public_pdf_page_count": 6,
+  "source": {
+    "filename": "ACTA 2008 - 29 ABR (constitución CEXP por venta del Hotel).pdf",
+    "pages": 5,
+    "bytes": 2484558,
+    "sha256": "733b0cb9a1cc4aa84c82e58267b44a3166caa4e4cac09fff9eb3d43f5efc6897",
+    "variant_note_es": "Copia de trabajo de cinco páginas; no es el libro diligenciado ni una copia certificada. La quinta página es una hoja notarial de legitimación/autenticación con nombres, identificadores, firmas, sello y serie, íntegramente retirada de la edición pública por privacidad.",
+    "variant_note_en": "Five-page working copy; not the diligenced minute book or a certified copy. Source page five is a notarial authentication/signature sheet containing names, identifiers, signatures, seal and serial, wholly withheld from the public edition for privacy.",
+    "additional_known_variants": [],
+    "native_publication": false
+  },
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2008-04-29/transcript-es.md",
+    "provenance": "evidence/community/actas/2008-04-29/provenance.md",
+    "redaction_log": "evidence/community/actas/2008-04-29/redaction-log.md",
+    "pdf": "assets/docs/community-actas/2008-04-29-public-redacted-es.pdf",
+    "pdf_sha256": "ebbf38c600c35e2f8ac240f4e56c810f4c2f006d3053a6ad4a22a7b912d83d1d",
+    "pdf_pages": 6,
+    "preview_pages": [
+      "assets/evidence/community-actas/2008-04-29/page-001.webp",
+      "assets/evidence/community-actas/2008-04-29/page-002.webp",
+      "assets/evidence/community-actas/2008-04-29/page-003.webp",
+      "assets/evidence/community-actas/2008-04-29/page-004.webp",
+      "assets/evidence/community-actas/2008-04-29/page-005.webp",
+      "assets/evidence/community-actas/2008-04-29/page-006.webp"
+    ],
+    "preview_count": 6
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "privacy_scan": "pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": true
+  },
+  "redaction_categories": [
+    "attendance-list",
+    "firma-sello",
+    "lista-asistentes-representaciones",
+    "no-ocr-text"
+  ],
+  "created": "2026-08-23"
+}

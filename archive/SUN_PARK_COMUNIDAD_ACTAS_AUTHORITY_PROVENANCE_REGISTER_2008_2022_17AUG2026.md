@@ -7,6 +7,20 @@
 
 ---
 
+## 0. 22-Aug-2026 source-completion control
+
+For current ACTA source variants, full-text/public-artifact status, notices, meetings, emails, implementation and downstream reliance, read first:
+
+- `evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md`;
+- `evidence/community/actas/public-index.json`; and
+- `archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md`.
+
+Those controls add the recovered 15/25-Jul and 17-Dec-2008 and 28-May-2009 families, exact later source hashes and the public document-room completion state. They also resolve the apparent 26-Apr-2016 Drive-ID discrepancy: IDs `1YMnEVDQj7r1E2aWgWL2Ne9b5gYP6ZRbd` and `1H10Rco79BHeO-qmnwbpeVpm7UXRqdIUb` are byte-identical 77-page, 27,329,507-byte PDFs with SHA-256 `68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec`. The separate 24-page/Gmail and other variants remain distinct.
+
+An initial public text-edition PDF or its WEBP preview is a derivative, not a source facsimile, original or certified copy. No `full record` or deletion-safe description is permitted until the newer audit passes.
+
+---
+
 ## 1. Mandatory retrieval rule
 
 Any future Project Sun Rock / Por Derecho thread touching the origin, validity, authority, voting, debt, custody, litigation, security, possession/access, project approval or downstream institutional use of a Sun Park Community/CEXP ACTA must read this register before drafting or publishing.
