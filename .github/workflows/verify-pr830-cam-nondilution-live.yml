@@ -12,6 +12,7 @@ on:
       - 'assets/prosecution-public-entry-20260821.js'
       - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
       - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
+      - 'assets/data/cam-nondilution-thread-closeout-v1.json'
       - '.github/workflows/verify-pr830-cam-nondilution-live.yml'
   push:
     branches: [main]
@@ -24,6 +25,7 @@ on:
       - 'assets/prosecution-public-entry-20260821.js'
       - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
       - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
+      - 'assets/data/cam-nondilution-thread-closeout-v1.json'
       - '.github/workflows/verify-pr830-cam-nondilution-live.yml'
   workflow_dispatch:
 
@@ -40,6 +42,7 @@ jobs:
     timeout-minutes: 12
     env:
       SOURCE_MERGE_SHA: 05cba3c9af7071f96b56eae90a67a2ceae3a783d
+      GITHUB_EVENT_NAME: ${{ github.event_name }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -64,6 +67,7 @@ jobs:
           import urllib.request
 
           base = "https://sbu001monterecco.github.io/por-derecho"
+          event_name = os.environ.get("GITHUB_EVENT_NAME", "")
           targets = {
               "english_cam_dossier": (
                   f"{base}/en/cam-creditor-control-shadow-administration-judicial-omission/",
@@ -89,11 +93,29 @@ jobs:
               ),
               "english_home": (
                   f"{base}/en/",
-                  ["../assets/site.js", "The case in 60 seconds"],
+                  [
+                      "../assets/site.js",
+                      "The case in 60 seconds",
+                      "By 22 Jun 2011 → Community administration",
+                      "The 22 June 2011 minutes identify him as Community Administrator.",
+                      "By 10 Apr 2014 → representation / Community",
+                      "The 10 April 2014 notarial record identifies him as Cristina Molina Petit’s representative.",
+                      "By 8 Apr 2014 → communications / administration",
+                      "A Pamanil communication dated 8 April 2014 appears signed by FMMM and Shaila.",
+                  ],
               ),
               "spanish_home": (
                   f"{base}/es/",
-                  ["../assets/site.js", "El caso en 60 segundos"],
+                  [
+                      "../assets/site.js",
+                      "El caso en 60 segundos",
+                      "Antes del 22 jun 2011 → administración comunitaria",
+                      "El acta de 22 de junio de 2011 lo identifica como Administrador de la Comunidad.",
+                      "Antes del 10 abr 2014 → representación / Comunidad",
+                      "El acta notarial de 10 de abril de 2014 lo identifica como representante de Cristina Molina Petit.",
+                      "Antes del 8 abr 2014 → comunicaciones / administración",
+                      "Una comunicación Pamanil de 8 de abril de 2014 aparece firmada por FMMM y Shaila.",
+                  ],
               ),
               "site_loader": (
                   f"{base}/assets/site.js",
@@ -132,12 +154,33 @@ jobs:
               ),
           }
 
+          # Pull-request checks verify the currently deployed substantive package and
+          # the already-merged PR #808 chronology. New closeout markers are required
+          # only after the closeout source itself is on main and Pages has propagated.
+          if event_name != "pull_request":
+              targets["cam_cross_site_module"][1].extend([
+                  "Publication control: merged, publicly verified and recoverable without the originating chat.",
+                  "Control de publicación: fusionado, verificado públicamente y recuperable sin el chat de origen.",
+                  "cam-nondilution-thread-closeout-v1.json",
+              ])
+              targets["thread_closeout_record"] = (
+                  f"{base}/assets/data/cam-nondilution-thread-closeout-v1.json",
+                  [
+                      "CAM-NONDILUTION-THREAD-CLOSEOUT-20260823",
+                      "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+                      "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+                      "22f10cea2cab18539c55d6283eb9ebce16d40f71",
+                      '"direct_attribution_preserved": true',
+                      '"this_closeout_authorizes_email": false',
+                  ],
+              )
+
           def fetch(url: str, attempt: int) -> tuple[int, str]:
               separator = "&" if "?" in url else "?"
               request = urllib.request.Request(
                   f"{url}{separator}pr830live={int(time.time())}-{attempt}",
                   headers={
-                      "User-Agent": "Por-Derecho-PR830-live-verifier/1.0",
+                      "User-Agent": "Por-Derecho-PR830-live-verifier/2.0",
                       "Cache-Control": "no-cache",
                       "Pragma": "no-cache",
                   },
@@ -173,8 +216,9 @@ jobs:
               time.sleep(15)
 
           record = {
-              "schema": "por-derecho/pr830-cam-live-verification/v1",
+              "schema": "por-derecho/pr830-cam-live-verification/v2",
               "status": "PASS" if passed else "FAIL",
+              "event_name": event_name,
               "source_merge_sha": os.environ["SOURCE_MERGE_SHA"],
               "verification_trigger_sha": os.environ["VERIFY_TRIGGER_SHA"],
               "verified_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
