@@ -96,9 +96,12 @@ jobs:
                   [
                       "../assets/site.js",
                       "The case in 60 seconds",
-                      "By 22 Jun 2011, Community material treated him as carrying Community administration",
-                      "By 10 Apr 2014, Community material treated him as holding Deputy Secretary and maintenance functions",
-                      "By 8 Apr 2014, Community material treated her as exercising an advisory role",
+                      "By 22 Jun 2011 → Community administration",
+                      "The 22 June 2011 minutes identify him as Community Administrator.",
+                      "By 10 Apr 2014 → representation / Community",
+                      "The 10 April 2014 notarial record identifies him as Cristina Molina Petit’s representative.",
+                      "By 8 Apr 2014 → communications / administration",
+                      "A Pamanil communication dated 8 April 2014 appears signed by FMMM and Shaila.",
                   ],
               ),
               "spanish_home": (
@@ -106,9 +109,12 @@ jobs:
                   [
                       "../assets/site.js",
                       "El caso en 60 segundos",
-                      "A 22 jun 2011, la prueba comunitaria lo situaba al frente de la administración de la Comunidad",
-                      "A 10 abr 2014, la prueba comunitaria lo situaba en funciones de vicesecretaría y mantenimiento",
-                      "A 8 abr 2014, la prueba comunitaria la situaba ejerciendo una función de asesoramiento",
+                      "Antes del 22 jun 2011 → administración comunitaria",
+                      "El acta de 22 de junio de 2011 lo identifica como Administrador de la Comunidad.",
+                      "Antes del 10 abr 2014 → representación / Comunidad",
+                      "El acta notarial de 10 de abril de 2014 lo identifica como representante de Cristina Molina Petit.",
+                      "Antes del 8 abr 2014 → comunicaciones / administración",
+                      "Una comunicación Pamanil de 8 de abril de 2014 aparece firmada por FMMM y Shaila.",
                   ],
               ),
               "site_loader": (
@@ -148,9 +154,9 @@ jobs:
               ),
           }
 
-          # A pull-request check verifies the currently deployed substantive package and
-          # the already-merged static chronology. The new closeout markers can only be
-          # required after the closeout source itself is on main and Pages has propagated.
+          # Pull-request checks verify the currently deployed substantive package and
+          # the already-merged PR #808 chronology. New closeout markers are required
+          # only after the closeout source itself is on main and Pages has propagated.
           if event_name != "pull_request":
               targets["cam_cross_site_module"][1].extend([
                   "Publication control: merged, publicly verified and recoverable without the originating chat.",
