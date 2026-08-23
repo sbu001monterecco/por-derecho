@@ -2,12 +2,14 @@
 from __future__ import annotations
 
 import json
+import os
 import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-BASE = "https://sbu001monterecco.github.io/por-derecho"
+BASE = os.environ.get("PSR_BASE_URL", "https://sbu001monterecco.github.io/por-derecho").rstrip("/")
+SCOPE = "LIVE" if BASE.startswith("https://") else "CHECKOUT"
 ATTEMPTS = 30
 SLEEP_SECONDS = 10
 TIMEOUT_SECONDS = 25
@@ -81,7 +83,7 @@ for attempt in range(1, ATTEMPTS + 1):
         result = verify_once()
         result["attempt"] = attempt
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        print(f"SAN TELMO RENDERED ATTRIBUTION LIVE VERIFICATION: PASS (attempt {attempt}/{ATTEMPTS})")
+        print(f"SAN TELMO RENDERED ATTRIBUTION {SCOPE} VERIFICATION: PASS (attempt {attempt}/{ATTEMPTS})")
         raise SystemExit(0)
     except (AssertionError, urllib.error.URLError, TimeoutError) as exc:
         message = f"attempt {attempt}/{ATTEMPTS}: {type(exc).__name__}: {exc}"
@@ -90,7 +92,7 @@ for attempt in range(1, ATTEMPTS + 1):
         if attempt < ATTEMPTS:
             time.sleep(SLEEP_SECONDS)
 
-print("SAN TELMO RENDERED ATTRIBUTION LIVE VERIFICATION: FAIL")
+print(f"SAN TELMO RENDERED ATTRIBUTION {SCOPE} VERIFICATION: FAIL")
 for failure in failures[-10:]:
     print(f" - {failure}")
 raise SystemExit(1)

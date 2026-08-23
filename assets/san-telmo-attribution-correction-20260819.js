@@ -55,6 +55,9 @@
         <p><strong>${copy.context}</strong><br>${copy.contextText}</p>
         <cite><a href="${source}" rel="external noopener" target="_blank">${copy.cite}</a></cite>
       </blockquote>`;
+    document.dispatchEvent(new CustomEvent('pd:san-telmo-attribution-ready', {
+      detail: { version: '20260819' }
+    }));
   };
 
   if (document.readyState === 'loading') {
