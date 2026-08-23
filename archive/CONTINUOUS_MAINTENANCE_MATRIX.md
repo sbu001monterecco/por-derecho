@@ -88,6 +88,10 @@ Temporal control: **historical originating act ≠ extinguished consequence**. A
 
 The collision-safe maintenance and propagation rules for alleged direct instruction, creditor control, de facto administration, AC approval/omission and judicial acts are in `CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`. Its Laura identity, capacity chronology, dismissal, no-finding, email and custody controls are mandatory.
 
+### Insolvency Administrator removal, remuneration and reference-22 gateway — 23 Aug 2026
+
+For every analysis of the Insolvency Administrator or an act/omission attributed to him, first read `archive/AC_SEPARATION_FEES_AUTOS_DP1901_REFERENCE22_UNITARY_DIGEST_23AUG2026.md`. The analysis must then identify the exact act, date, capacity, source, procedural lane, legal duty or power, knowledge evidence, practical capacity, patrimonial effect, claimant, contrary/exculpatory material and current procedural status. The 23-Apr-2025 removal application, Auto 1377/2025, the 11-Nov-2025 reconsideration order, the 1-Sep-2024 fee claim, Sentencia 4/2026/RPL 421, daily-reference-22 complaint, DP 1901 and each ampliación are connected evidence lanes but remain procedurally distinct. Daily reference 22 is not a proved case number and is not mapped to DP 1956 without certified reparto proof.
+
 ## Serial-reliance control — 15 Aug 2026
 
 Where multiple institutions or professional gatekeepers act in sequence, ask what each independently checked against the underlying asset/right source. Do not treat later formalisation, registration, tax idoneity, supervisory status, grant/FEDER decision, market admission or operational contract as automatic validation of every upstream factual premise.

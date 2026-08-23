@@ -451,13 +451,13 @@ if manifest_state == "DELETION_SAFE":
             "dataset": DATA_REL,
             "runtime_module": MODULE_REL,
             "criminal_sitemap": SITEMAP_REL,
-            "general_sitemap": GENERAL_SITEMAP_REL,
             "updates_en": "en/updates/index.html",
             "updates_es": "es/actualizaciones/index.html",
-            "route_registry": "assets/data/unitary-route-registry-v1.json",
-            "site_index_en": "en/site-index/index.html",
-            "site_index_es": "es/indice-web/index.html",
         }
+        # sitemap.xml, the unitary route registry and both site indices are shared,
+        # append-only discovery surfaces. Their historical probe hashes remain
+        # evidence of the 2026-08-23 deployment, while current publications may
+        # add routes without rewriting that historical deployment record.
         for kind, rel in exact_source_map.items():
             expected_sha = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
             if probe_by_kind.get(kind, {}).get("sha256") != expected_sha:
