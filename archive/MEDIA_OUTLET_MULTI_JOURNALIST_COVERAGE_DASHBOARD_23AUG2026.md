@@ -8,54 +8,31 @@ This dashboard is private campaign-control material. Do not publish private cont
 
 ## Current outlet coverage
 
-| Outlet | Journalist / editorial lane 1 | Role / why fit | Lane 1 state | Journalist / editorial lane 2 | Required role / why fit | Outlet coverage | Next action |
-|---|---|---|---|---|---|---|---|
-| El Confidencial | Ruth Ugalde | Real estate, hotel assets, insolvency/restructuring, funds/debt | SENT / corrected package verified | **REQUIRED** | A distinct investigations/business/finance editor or journalist able to test title, funding and public-support chain | PARTIAL | Verify second named professional and prepare separate package |
-| Diario de Lanzarote | Saúl García Crespo | Yaiza/Playa Blanca, planning, courts, tourism and local accountability | SENT + VERIFIED | Manuel Riveiro — **candidate; verify current role/contact** | Editorial/local-investigative lane complementary to Saúl | PARTIAL | Reverify Manuel or strongest second named newsroom professional |
-| La Voz de Lanzarote | Teresa Acosta Hernández | Director; outlet's own Sun Park→MYND/RICPE chronology | SENT + VERIFIED | **REQUIRED** | Named local economy/institutional/tourism reporter or editor distinct from Teresa | PARTIAL | Research second named professional |
-| HOSTELTUR | Taiana González | Hotels/tourism; authored Canarian Hospitality/MYND launch report | SENT + VERIFIED | **REQUIRED** | Named hotel-investment, Canary tourism or tourism-finance journalist/editor | PARTIAL | Research second named professional |
-| Canarias Ahora / elDiario.es Canarias | Carlos Sosa | Director/founder; institutions, justice/power, corporate-public interface | SENT + VERIFIED | **REQUIRED** | Named investigations/economics/public-administration journalist distinct from Carlos | PARTIAL | Research second named professional |
-| EL PAÍS | Joaquín Gil | Investigación; property, finance, courts, institutions, alleged economic crime | SENT + VERIFIED | **REQUIRED** | Named Empresas/economics/tourism/public-funds or second investigations journalist | PARTIAL | Research second named professional; do not count Cinco Días as EL PAÍS outlet coverage |
-| Biosfera Digital | Salvador Hernández | Director; Lanzarote tourism/economy/institutional relevance | SENT + VERIFIED | **REQUIRED** | Named local reporter/editor with tourism, Yaiza, economy or institutions beat | PARTIAL | Verify whether suitable second professional exists before any exception |
-| Crónicas de Lanzarote | Alfonso Canales Segovia | Director; local institutional/governance, economy and Yaiza relevance | SENT + VERIFIED | **REQUIRED** | Named reporter/editor distinct from Alfonso with local politics/economy/tourism remit | PARTIAL | Verify second professional before any exception |
-| Cinco Días | Carlos Molina | Hotels, tour operators, agencies, airlines; Canarian Hospitality growth reporting | SENT + VERIFIED through newsroom-attention route | Daniel Toledo | Empresas editor; received Cc on Carlos package | PARTIAL / REQUIRES SECOND PERSON-SPECIFIC LANE | Daniel's Cc is useful but does not replace a second separately personalised named-journalist approach under the new rule |
-| CANARIAS7 | Silvia Fernández | Economics/RIC; authored 24-Jan-2020 RICPE launch article | SENT + VERIFIED | **David Ojeda — PREPARED** | Local/Las Palmas/editorial lane; institutions, public files and accountability. Distinct Aug-2026 Fiscalía/Gobierno/Yaiza/Cabildo source-led package prepared and read back | **PARTIAL — SECOND LANE PREPARED** | Present exact David package for approval → if approved send/verify → then continue additional CANARIAS7 lanes (Fran Fajardo, Carmen Delia Aranda, director; Javier Sheng Pang when direct route verified) |
+| Outlet | Journalist / editorial lane 1 | Lane 1 state | Journalist / editorial lane 2 | Lane 2 state | Outlet coverage | Next action |
+|---|---|---|---|---|---|---|
+| El Confidencial | Ruth Ugalde — real estate/hotel assets/restructuring | SENT / corrected package verified | **REQUIRED** — distinct investigations/business/finance lane | NOT STARTED | PARTIAL | Verify second named professional and prepare separately |
+| Diario de Lanzarote | Saúl García Crespo — Yaiza/planning/courts/tourism | SENT + VERIFIED | Manuel Riveiro — candidate, reverify | NOT STARTED | PARTIAL | Reverify strongest second named lane |
+| La Voz de Lanzarote | Teresa Acosta Hernández — director/source chronology | SENT + VERIFIED | **REQUIRED** — local economy/institutions/tourism | NOT STARTED | PARTIAL | Research second named professional |
+| HOSTELTUR | Taiana González — hotels/tourism | SENT + VERIFIED | **REQUIRED** — hotel investment/Canary tourism/finance | NOT STARTED | PARTIAL | Research second named professional |
+| Canarias Ahora / elDiario.es Canarias | Carlos Sosa — institutions/justice/power | SENT + VERIFIED | **REQUIRED** — investigations/economics/public administration | NOT STARTED | PARTIAL | Research second named professional |
+| EL PAÍS | Joaquín Gil — Investigación | SENT + VERIFIED | **REQUIRED** — Empresas/economics/public funds or second investigations lane | NOT STARTED | PARTIAL | Research second named professional |
+| Biosfera Digital | Salvador Hernández — director/local tourism/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
+| Crónicas de Lanzarote | Alfonso Canales Segovia — director/local governance/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
+| Cinco Días | Carlos Molina — hotels/tour operators/travel | SENT + VERIFIED | Daniel Toledo — Empresas editor | Cc only, not person-specific | PARTIAL | Prepare separate Daniel lane if justified |
+| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — TWO NAMED LANES SENT + VERIFIED** | Continue user-directed additional lanes one by one: Fran Fajardo → Carmen Delia Aranda → Francisco Suárez Álamo → Javier Sheng Pang when direct route verified |
 
 ## CANARIAS7 additional named-lane queue
 
-After David Ojeda, current named CANARIAS7 candidates already identified are:
+1. **Fran Fajardo** — justice/courts/investigative-document lane; historical direct professional route exists; reverify current role/contact before drafting.
+2. **Carmen Delia Aranda** — institutional/social-public-affairs lane; historical direct professional route exists; reverify current role/contact.
+3. **Francisco Suárez Álamo** — director/commissioning/editorial-accountability lane; use only current verified role routing.
+4. **Javier Sheng Pang Blanco** — economics/tourism/business/public-policy lane; do not guess a direct address.
+5. Historical `lpalacios@canarias7.es` route remains HOLD until current named identity is resolved.
 
-1. **Fran Fajardo** — courts / justice / investigative-document lane; historical direct professional route exists in project Gmail and current role must be reverified before preparation;
-2. **Carmen Delia Aranda** — Canary institutional/social-public-affairs lane; historical direct professional route exists in project Gmail and current role must be reverified before preparation;
-3. **Francisco Suárez Álamo** — director / commissioning / editorial-accountability lane; use only current verified role routing;
-4. **Javier Sheng Pang Blanco** — economics/tourism/business/public-policy lane; relevant current professional, but do not guess a direct address;
-5. unresolved historical `lpalacios@canarias7.es` route remains HOLD until the current named professional is identified with confidence.
+A generic newsroom route does not count as a named journalist. Reaching the two-person minimum does not prevent additional recipient-specific lanes where the user has instructed continued one-by-one coverage.
 
-A generic CANARIAS7 newsroom/web-redaction route does not count as a named journalist.
+## Retrospective audit queue after current CANARIAS7 sequence
 
-## Rule for future outlets
+El Confidencial → Diario de Lanzarote → La Voz de Lanzarote → HOSTELTUR → Canarias Ahora/elDiario.es Canarias → EL PAÍS → Biosfera Digital → Crónicas de Lanzarote → Cinco Días → new Canary-wide outlets including La Provincia, Atlántico Hoy, Cadena SER Canarias and RTVC.
 
-Every new newspaper/media organisation enters this dashboard before it can be treated as covered.
-
-Minimum internal record:
-
-`OUTLET → PERSON 1 / ROLE → PERSON 2 / ROLE → WHY EACH → STORY MODULE → CONTACT BASIS → SENT STATE → COVERAGE STATE`.
-
-A newsroom address does not count as person 2. A director alone does not complete the outlet. A second journalist should add a genuinely different editorial route rather than receive a duplicated salutation-only version.
-
-## Retrospective audit queue
-
-After the current CANARIAS7 multi-journalist sequence, audit and fill second named professionals for:
-
-1. El Confidencial;
-2. Diario de Lanzarote;
-3. La Voz de Lanzarote;
-4. HOSTELTUR;
-5. Canarias Ahora / elDiario.es Canarias;
-6. EL PAÍS;
-7. Biosfera Digital;
-8. Crónicas de Lanzarote;
-9. Cinco Días;
-10. then every newly added Canary-wide outlet such as La Provincia, Atlántico Hoy, Cadena SER Canarias and RTVC.
-
-No ranking or dashboard status authorises a send.
+No ranking or dashboard state authorises a send.
