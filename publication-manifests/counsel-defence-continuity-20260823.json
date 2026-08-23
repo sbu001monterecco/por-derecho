@@ -1,37 +1,71 @@
 {
   "id": "counsel-defence-continuity-20260823",
   "date": "2026-08-23",
-  "status": "published",
+  "status": "expanded-published",
   "pages": [
     "es/actores-partes-abogados-representantes/index.html",
     "en/actors-parties-lawyers-representatives/index.html"
   ],
   "entries": [
     "A1",
-    "A2",
+    "A2a",
+    "A2b",
+    "A2c",
     "A3",
     "A4",
-    "A5"
+    "A5",
+    "A6",
+    "A7",
+    "A8"
   ],
   "public_names": [
     "Juan Tomás Parrilla Suárez",
+    "Armando Betancor Álamo",
     "José María Betancor Álamo",
+    "Davinia Sánchez de la Cruz",
     "Joaquín Ruiz de Infante Abella",
     "Daniel Jiménez García",
-    "Luis Miguel López"
+    "Luis Miguel López",
+    "Rosa Gual Tomás",
+    "Iñigo de Luisa Maíz",
+    "Adriana González García",
+    "Pedro Campaña Ávila",
+    "Miguel Méndez",
+    "José María Martínez de Artola",
+    "Zulay Carmen Rodríguez",
+    "Cristo Ayose Suárez Pimentel"
+  ],
+  "public_firms": [
+    "Alas Legal Advisors, S.L.",
+    "Kepler–Karst",
+    "Bufete Ruiz de Infante",
+    "SLJ Abogados",
+    "López Castelo Abogados",
+    "Cuatrecasas",
+    "Garrigues",
+    "Pimentel Servicios Legales"
   ],
   "controls": [
     "act-effect-causation separation",
+    "client allegation attribution",
     "withdrawal stated reasons retained",
+    "strongest contrary evidence retained",
     "no privilege publication",
+    "current-firm continuity is not successor liability",
     "right of correction",
-    "ES/EN parity"
+    "ES/EN parity",
+    "remaining professionals coded B-series"
+  ],
+  "institutional_call": [
+    "Fiscalía",
+    "Ilustre Colegio de Abogados de Las Palmas (ICALPA)"
   ],
   "open_evidence": [
-    "certified Article 215.2 order and later docket",
+    "certified Article 215.2 order and later complaint docket",
     "complete opposition authorship/edit history",
     "LPB counsel payment request-response chain",
     "complete powers venias and LexNET records",
-    "June-July 2018 document request chain"
+    "native 25 January 2018 AC-Cristo instruction and DP1041 docket",
+    "B-series identity and mandate verification"
   ]
 }
