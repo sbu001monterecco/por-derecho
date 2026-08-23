@@ -21,6 +21,7 @@ Do not publish private email addresses, personal telephone numbers, Gmail messag
 | Name | Media / organisation | Role / relevance | Geography / language | Notes |
 |---|---|---|---|---|
 | **Lourdes Santana Navarro** | **PRISA Media / Cadena SER Canarias** | Senior Canary Islands journalist/editorial manager; relevant to public-interest, economic and tourism reporting and potential internal routing within PRISA/SER | Canarias / Spanish | Track professional-media context only here. Any outreach history is controlled separately and is **not automatically website-public**. |
+| **Diego Sánchez de la Cruz** | **Libertad Digital / Libre Mercado; Foro Regulación Inteligente** | Economic journalist/analyst with recurring relevance to legal certainty, investment, property rights, regulation, tax/investment incentives and institutional effectiveness; also co-founder/director of Foro Regulación Inteligente | Spain / Spanish | Strong fit for legal-certainty/investment-climate and economic-regulation modules, including carefully bounded Canary Islands analysis. Preserve the distinction between his media role and FRI role; neither organisation is implied to endorse Project Sun Rock. Reverify current editorial role and direct contact route before future substantive outreach. |
 | **Cristian Reche** | **elEconomista / elEconomista Capital Privado** | Economic, restructuring, M&A and private-equity relevance; current public 2026 elEconomista material identifies him as director of *elEconomista Capital Privado* | Spain / Spanish | High fit for RICPE, investment, restructuring, asset provenance, incentives and finance modules. Outreach history, if any, is controlled separately. |
 | **Javier Romera** | **elEconomista** | Economic/business journalist relevant to the existing FTI / Meeting Point / Sun Park media-verification track | Spain / Spanish | Media affiliation is supported by direct correspondence and the existing repository media-traceability record. Reverify current title/beat before a new bespoke approach. |
 | **Frederik Obermaier** | **Paper Trail Media** | Co-founder/director and cross-border investigative reporter; strong fit for documented international, financial, public-interest and whistleblower-led investigations | Germany / German-English | Public Paper Trail Media and ICIJ profiles current in August 2026. Keep contact history separate from this neutral register. |
@@ -47,6 +48,8 @@ For any actual outreach, read:
 
 - `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
 - `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
+- `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
+- `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
 - `archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md`; and
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
 
