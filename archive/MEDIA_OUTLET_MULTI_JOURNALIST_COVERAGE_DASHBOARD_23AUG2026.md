@@ -19,11 +19,14 @@ This dashboard is private campaign-control material. Do not publish private cont
 | Biosfera Digital | Salvador Hernández — director/local tourism/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
 | Crónicas de Lanzarote | Alfonso Canales Segovia — director/local governance/economy | SENT + VERIFIED | **REQUIRED** | NOT STARTED | PARTIAL | Verify suitable second professional |
 | Cinco Días | Carlos Molina — hotels/tour operators/travel | SENT + VERIFIED | Daniel Toledo — Empresas editor | Cc only, not person-specific | PARTIAL | Prepare separate Daniel lane if justified |
-| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — TWO NAMED LANES SENT + VERIFIED; ADDITIONAL LANES ACTIVE** | **Fran Fajardo — PREPARED / GMAIL DRAFT VERIFIED / NOT SENT. Present exact package for approval; then Carmen Delia Aranda.** |
+| **CANARIAS7** | **Silvia Fernández — economics/RIC/business** | **SENT + VERIFIED** | **David Ojeda — Local/Las Palmas/institutions/public files** | **SENT + VERIFIED** | **MULTI-JOURNALIST COVERAGE — TWO NAMED LANES SENT + VERIFIED; ADDITIONAL LANES ACTIVE** | **Fran Fajardo REDIGEST V2 — CONTROLLING GMAIL DRAFT VERIFIED / NOT SENT. Present V2 for approval; then Carmen Delia Aranda.** |
 
 ## CANARIAS7 additional named-lane queue
 
-1. **Fran Fajardo — PREPARED / NOT SENT** — tribunals/courts/Fiscalía/judicial-document lane. Current role reverified; historical direct professional route has no located bounce; exact Gmail draft read back with mandatory media core. Read `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
+1. **Fran Fajardo — REDIGEST V2 PREPARED / NOT SENT** — tribunals/courts/Fiscalía/judicial-document lane. Full repository, website, article and Gmail redigest completed. The earlier Fran draft is superseded. Read:
+   - `archive/CANARIAS7_FRAN_FAJARDO_ARTICLE_REPOSITORY_WEBSITE_EMAIL_REDIGEST_23AUG2026.md`;
+   - `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
+   - Controlling subject: `Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`.
 2. **Carmen Delia Aranda** — institutional/social-public-affairs lane; historical direct professional route exists; reverify current role/contact before preparation.
 3. **Francisco Suárez Álamo** — director/commissioning/editorial-accountability lane; use only current verified role routing.
 4. **Javier Sheng Pang Blanco** — economics/tourism/business/public-policy lane; do not guess a direct address.
