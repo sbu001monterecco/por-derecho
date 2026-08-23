@@ -35,6 +35,7 @@
     const href = en
       ? `${prefix}en/cam-creditor-control-shadow-administration-judicial-omission/`
       : `${prefix}es/control-acreedor-cam-administracion-hecho-omision-judicial/`;
+    const controlHref = `${prefix}assets/data/cam-nondilution-thread-closeout-v1.json`;
     const c = en ? {
       eyebrow: 'EXPRESS CRIMINAL ATTRIBUTION · UPDATED 23 AUGUST 2026',
       title: 'Direct instruction, creditor in possession, de facto administration and institutional omission',
@@ -56,7 +57,9 @@
       contraryP: 'The 2018 criminal proceedings were provisionally dismissed and that result was upheld on appeal. The administrator denied the principal lock-takeover instruction and described narrower access. CAM had valid creditor rights and may have held valid individual titles. Later adjudication remains legally distinct and non-retroactive.',
       open: 'Open the complete direct criminal-attribution and proof matrix',
       badge: 'Direct allegation ≠ adjudicated finding',
-      nav: 'Criminal attribution'
+      nav: 'Criminal attribution',
+      control: 'Publication control: merged, publicly verified and recoverable without the originating chat. Open evidence remains identified.',
+      controlLabel: 'Open the machine-readable closeout record'
     } : {
       eyebrow: 'ATRIBUCIÓN PENAL EXPRESA · ACTUALIZADO 23 AGOSTO 2026',
       title: 'Instrucción directa, acreedor en posesión, administración de hecho y omisión institucional',
@@ -78,14 +81,16 @@
       contraryP: 'Las diligencias penales de 2018 fueron archivadas provisionalmente y el resultado se confirmó en apelación. El administrador negó la instrucción de la toma principal y describió un acceso más limitado. CAM tenía derechos acreedores válidos y puede haber tenido títulos individuales válidos. La adjudicación posterior es jurídicamente distinta y no retroactiva.',
       open: 'Abrir la matriz completa de atribución penal directa y prueba',
       badge: 'Acusación directa ≠ declaración judicial',
-      nav: 'Atribución penal'
+      nav: 'Atribución penal',
+      control: 'Control de publicación: fusionado, verificado públicamente y recuperable sin el chat de origen. La prueba pendiente sigue identificada.',
+      controlLabel: 'Abrir el registro de cierre legible por máquina'
     };
 
     const section = document.createElement('section');
     section.className = 'section alt cam-criminal-lead';
     section.dataset.camCriminalLead = '20260823';
     section.innerHTML = `<div class="shell">
-      <header class="camcl-head"><p class="kicker">${c.eyebrow}</p><h2>${c.title}</h2><p class="camcl-lead">${c.lead}</p><span class="camcl-badge">${c.badge}</span></header>
+      <header class="camcl-head"><p class="kicker">${c.eyebrow}</p><h2>${c.title}</h2><p class="camcl-lead">${c.lead}</p><span class="camcl-badge">${c.badge}</span><p class="camcl-control">${c.control} <a href="${controlHref}">${c.controlLabel}</a>.</p></header>
       <div class="camcl-grid">
         <article><span>${c.directK}</span><h3>${c.directT}</h3><p>${c.directP}</p></article>
         <article><span>${c.acK}</span><h3>${c.acT}</h3><p>${c.acP}</p></article>
@@ -100,7 +105,7 @@
     style.textContent = `
       .cam-criminal-lead{position:relative;overflow:hidden;background:linear-gradient(145deg,#f7f1ed,#edf3f3)}
       .cam-criminal-lead:before{content:"CONTROL";position:absolute;right:-.04em;top:.05em;font-size:clamp(5rem,14vw,12rem);font-weight:900;letter-spacing:-.07em;color:rgba(19,37,45,.035);pointer-events:none}
-      .camcl-head{position:relative;max-width:1000px}.camcl-head h2{max-width:900px}.camcl-lead{font-size:1.08rem;line-height:1.67;max-width:980px}.camcl-badge{display:inline-block;margin:.5rem 0 1rem;border-radius:999px;padding:.35rem .65rem;background:#13252d;color:#fff;font-size:.73rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+      .camcl-head{position:relative;max-width:1000px}.camcl-head h2{max-width:900px}.camcl-lead{font-size:1.08rem;line-height:1.67;max-width:980px}.camcl-badge{display:inline-block;margin:.5rem 0 1rem;border-radius:999px;padding:.35rem .65rem;background:#13252d;color:#fff;font-size:.73rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.camcl-control{max-width:920px;margin:.2rem 0 1.15rem;padding:.7rem .85rem;border-left:4px solid #526b59;background:rgba(255,255,255,.72);font-size:.88rem;line-height:1.5}.camcl-control a{font-weight:800}
       .camcl-grid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}.camcl-grid article,.camcl-split article{border:1px solid rgba(19,37,45,.15);border-radius:15px;background:#fff;padding:1rem;box-shadow:0 .65rem 1.6rem rgba(19,37,45,.05)}
       .camcl-grid article{border-top:5px solid #8c2f2c}.camcl-grid article:nth-child(2){border-top-color:#8c6b2f}.camcl-grid article:nth-child(3){border-top-color:#5b5578}.camcl-grid span{display:block;margin-bottom:.35rem;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:#7b2e2e}.camcl-grid h3,.camcl-split h3{margin:.15rem 0 .5rem}.camcl-grid p,.camcl-split p{line-height:1.57}
       .camcl-split{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem;margin:1rem 0}.camcl-identity{border-left:6px solid #8c6b2f!important;background:#fffaf0!important}.camcl-contrary{border-left:6px solid #526b59!important;background:#f3f7f5!important}.camcl-link{margin-top:.7rem}
