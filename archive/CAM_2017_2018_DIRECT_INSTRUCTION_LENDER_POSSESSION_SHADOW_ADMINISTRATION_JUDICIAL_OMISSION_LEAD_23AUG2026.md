@@ -2,6 +2,7 @@
 
 **Date:** 23 August 2026
 **Status:** `CANONICAL CRIMINAL-ALLEGATION / EVIDENCE-STATUS / PUBLICATION-CONTROL RECORD`
+**Mandatory controlling rule:** `EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md`
 **Proceeding:** Concurso ordinario 36/2012 · Luchy Playa Blanca, S.L.U. (“LPB”) · Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria
 **Related public routes:**
 
@@ -20,13 +21,15 @@ Gil Marer and Aweswell expressly allege that the events culminating on 7 June 20
 
 Their controlling allegations are:
 
-1. **Direct instruction and coordinated implementation.** CAM, through or with natural persons in the Acosta Matos / Community-administration perimeter, including José Daniel Acosta Matos (“JDAM”), Francisco Mario Matos Matas (“FMMM”) and the relevant Laura Acosta Matos actor, directly instructed, coordinated, authorised, procured, adopted or knowingly implemented the 7 June 2018 physical entry, lock replacement, security deployment, key demand, guest control and exclusion at Sun Park.
+1. **Direct instruction and coordinated implementation.** CAM, through or with natural persons in the Acosta Matos / Community-administration perimeter, including José Daniel Acosta Matos (“JDAM”), Laura Patricia Acosta Matos (“LPAM”), Francisco Mario Matos Matas (“FMMM”) and other separately identified private actors, directly instructed, coordinated, authorised, procured, adopted or knowingly implemented the 7 June 2018 physical entry, lock replacement, security deployment, key demand, guest control and exclusion at Sun Park.
 2. **Creditor crossing into possession and management.** CAM crossed from isolated-unit ownership and secured-credit enforcement into de facto possession, management and exploitation of LPB estate assets and, separately, interference with CEXP, Matkator and other non-LPB rights and property. For comparative explanation, Gil describes this as a **creditor or lender in possession**, without asserting that Spanish insolvency law creates that English label as a standalone formal status.
 3. **Shadow or de facto administration.** CAM-perimeter private actors exercised or attempted to exercise functions properly belonging to LPB’s corporate or insolvency management, the hotel operator, the Owners’ Community or third-party owners, while formal officeholders or administrators implemented, followed, tolerated or failed to reverse those acts.
 4. **Criminal approval or ratification by the insolvency administrator.** Gil alleges that the insolvency administrator did more than passively fail to object: the administrator participated in the 18 May 2018 security-authority chain, knew or should have known the foreseeable use of that structure, authorised at least a narrower access route, and then approved, enabled, ratified, concealed or failed in a legally equivalent way to prevent and reverse the wider material takeover.
 5. **Judicial omission / prevarication allegation.** Gil alleges that the competent judge’s treatment of the evidence, requests for protection, actual-control change and later consequences amounted to **omissionary judicial prevarication**. The legal classification must be tested against the precise resolution, refusal, delay or omission, the evidence demonstrably before the judge, the judge’s legal competence and duty, knowledge of injustice, arbitrariness, intent and causal effect.
 
-These are **Gil Marer / Aweswell criminal allegations**, not judicial findings. The corpus contains multiple and mutually reinforcing types of evidence sufficient to formulate, preserve and request investigation of those allegations. It does not yet close every actor-specific instruction, identity, mental-state, ratification and judicial-prevarication element.
+These are **Gil Marer / Aweswell criminal allegations**, not judicial findings. They are direct actor-specific attributions, not merely concerns, questions or investigative leads. The corpus contains multiple and mutually reinforcing types of evidence sufficient to formulate, preserve, publish as attributed allegations and request investigation of those allegations. It does not yet close every actor-specific instruction, mandate, participation, mental-state, ratification and judicial-prevarication element.
+
+The attribution, evidential support, contrary record, unresolved proof, procedural outcome and source literal are separate fields. Evidential caution or non-adjudication must not be used to euphemistically dilute the attribution; equally, the direct attribution must not be presented as adjudicated guilt.
 
 ## 2. What the evidence corpus contains
 
@@ -46,31 +49,33 @@ The repository, website, Gmail and connected files contain the following evident
 | Post-event continuity and benefit evidence | Security/access chronology, 31-finca transaction, investor representations, RICPE/HNT/MYND, later Community control and operation | Possible persistence, downstream use, project benefit and the need for accounting | Automatic proof that every later actor shared the original purpose |
 | Contrary and adverse records | Provisional dismissal and appellate confirmation; AC denials; later adjudication and conveyance | Procedural outcome and strongest contrary case | A universal merits finding that every act and later-discovered evidential bridge was lawful |
 
-## 3. Mandatory identity control — Laura Patricia Acosta Matos
+## 3. Mandatory identity and source-fidelity control — Laura Patricia Acosta Matos
 
 This is a controlling correction.
 
 The controlling identity rule is `IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md`. The located contemporaneous record uses different formulations:
 
 - the first 7 June 2018 email says **“la abogada de CAM, Laura Matos”**;
-- the filed 7 June 2018 complaint amendment contains a different forename as an isolated typographical error;
+- the filed 7 June 2018 complaint amendment contains a different forename as an isolated typographical error; and
 - the repository’s established abbreviation **LPAM** refers to **Laura Patricia Acosta Matos**.
 
-Gil expressly attributes direct-instruction responsibility to **LPAM / Laura Patricia Acosta Matos**. That allegation must be preserved. The identity is controlled; the evidence still must prove mandate, presence, instruction, knowledge, purpose, participation and any responsibility separately.
+Gil expressly attributes direct-instruction responsibility to **LPAM / Laura Patricia Acosta Matos**. That allegation must be preserved at full attributed strength. The identity is controlled; the evidence still must prove mandate, presence, exact instruction, knowledge, purpose, participation and any responsibility separately.
 
 ### Publication rule
 
-Public pages must use the full correct name and keep attribution limits adjacent:
+Public narrative, actor labels and metadata must use the full correct name and keep attribution and proof limits adjacent:
 
-> **Laura Patricia Acosta Matos is identified in the public record; mandate, exact instructions, knowledge, purpose and responsibility remain actor-specific allegations requiring independent proof.**
+> **Gil Marer directly alleges that Laura Patricia Acosta Matos participated in and bears actor-specific responsibility for the CAM-side instruction and implementation chain; mandate, presence, exact instructions, knowledge, purpose and legal responsibility remain independently provable and are not adjudicated findings.**
 
 or, when brevity is required:
 
-> **Laura Patricia Acosta Matos (participation alleged; responsibility not adjudicated).**
+> **Laura Patricia Acosta Matos — direct participation alleged by Gil; responsibility not adjudicated.**
 
-No public page may state as an established fact that Laura Patricia Acosta Matos was physically present on 7 June 2018 or directly issued instructions merely by silently replacing the name in the primary pleading.
+Canonical identity does not rewrite a source literal. No repository or public source description may say that the contemporaneous email or filed amendment literally used the corrected full name when it did not. An exact public quotation may reproduce “Laura Matos” only as a visibly marked source literal immediately reconciled to the canonical identity; it must not create a separate actor or identity gap.
 
-Required records include identification, professional-registration data, CAM mandates, telephone numbers, emails, travel/location evidence, witness confirmation and the original signed complaint annexes.
+No public page may state as an established fact that Laura Patricia Acosta Matos was physically present on 7 June 2018 or directly issued instructions merely by substituting the canonical name into the primary pleading. Conversely, the incomplete proof of mandate or presence must not be used to suppress Gil's direct attribution.
+
+Required records include professional-registration data, CAM mandates, telephone numbers, emails, travel/location evidence, witness confirmation and the original signed complaint annexes.
 
 ## 4. Dated unitary chronology
 
@@ -137,8 +142,8 @@ The controlled Community record shows:
 - Antonio Cogolludo as president;
 - FMMM as secretary-administrator;
 - the Cogolludo treasurer role;
-- authorisation of private security expenditure of up to €8,500 per month;
-- and an insolvency-administrator communication asking the president to convene the resolution on LPB’s behalf as majority owner.
+- authorisation of private security expenditure of up to €8,500 per month; and
+- an insolvency-administrator communication asking the president to convene the resolution on LPB’s behalf as majority owner.
 
 This produces an authority inversion:
 
@@ -148,11 +153,13 @@ This produces an authority inversion:
 
 ### 7 June 2018 — physical entry and material-control threshold
 
-The first contemporaneous email says that CAM’s lawyer “Laura Matos” and Owners’ Community personnel arrived to take possession; broke or forced the entrance/reception access; demanded keys to the complex and premises; checked or sought guest identification; and said the complex was theirs. The email said no judgment, Community minutes or other authority had been produced at that moment.
+The first contemporaneous email says that CAM’s lawyer **“Laura Matos”** and Owners’ Community personnel arrived to take possession; broke or forced the entrance/reception access; demanded keys to the complex and premises; checked or sought guest identification; and said the complex was theirs. The email said no judgment, Community minutes or other authority had been produced at that moment.
 
 A later same-day email says the CAM side showed the onsite manager a paper asserting ownership of the whole complex, while the Community side showed an 18 May 2018 minute said to authorise the action.
 
-The filed complaint amendment alleges that Antonio Cogolludo and Laura Patricia Acosta Matos, acting personally and purportedly for the Community and CAM, arrived with security, a locksmith and others, forced access, changed locks and controlled entry.
+The filed complaint amendment alleges that Antonio Cogolludo and the Laura Acosta Matos actor identified in that pleading—whose different forename is controlled as a typographical error and whose canonical identity is Laura Patricia Acosta Matos—acted personally and purportedly for the Community and CAM, arrived with security, a locksmith and others, forced access, changed locks and controlled entry.
+
+This formulation preserves three separate propositions: what the source literally says, the repository's canonical identity and Gil's direct attribution. It does not alter the source or create a second actor.
 
 **Status:** `CONTEMPORANEOUS EMAILS + PARTY PLEADING + VIDEO/PHOTOGRAPHIC CORPUS / EXACT COMMAND CHAIN OPEN`.
 
@@ -193,16 +200,16 @@ CAM's capacities must be dated rather than projected backwards:
 
 The unitary hypothesis is therefore temporal:
 
-> **Across the 2017–2022 sequence, CAM's isolated-title, Community and secured-credit positions converged. By the 2018 control events, there is a serious actor-specific question whether creditor and title positions crossed into material possession and management; by 2022, direct CAM Community governance and project control were documented.**
+> **Across the 2017–2022 sequence, CAM's isolated-title, Community and secured-credit positions converged. Gil directly alleges that by the 2018 control events those positions were deliberately converted into material possession and management beyond CAM's lawful asset and creditor perimeter. The evidential task is to prove the actor-specific instruction, mandate, knowledge, purpose, implementation and effect; by 2022, direct CAM Community governance and project control were documented.**
 
-## 5. Direct-instruction allegation — CAM / JDAM / FMMM / Laura actor
+## 5. Direct-instruction allegation — CAM / JDAM / FMMM / Laura Patricia Acosta Matos
 
 ### 5.1 What is presently documented
 
 - CAM had a recognised secured-credit position before 7 June 2018.
 - JDAM and FMMM are placed by the filed April complaint in earlier access, ownership-assertion and control episodes.
-- The 7 June contemporaneous email places a CAM lawyer identified as “Laura Matos” with Community personnel at the physical event.
-- The 7 June complaint amendment identifies Antonio Cogolludo and Laura Patricia Acosta Matos as acting personally and purportedly for the Community and CAM, subject to the controlling typographical correction.
+- The 7 June contemporaneous email places a CAM lawyer identified in the source literal as **“Laura Matos”** with Community personnel at the physical event.
+- The 7 June complaint amendment alleges direct-day conduct by Antonio Cogolludo and the Laura Acosta Matos actor identified there with a different forename controlled as a typographical error; the repository's canonical identity is **Laura Patricia Acosta Matos**.
 - The CAM side reportedly produced a paper representing that CAM owned the whole complex.
 - The Community side reportedly relied upon the 18 May security minute.
 - The event implemented an outcome materially beneficial to the secured creditor and later successor project.
@@ -210,43 +217,43 @@ The unitary hypothesis is therefore temporal:
 
 ### 5.2 The strongest presently supportable allegation
 
-> **Gil Marer alleges that the 7 June event was not an unauthorised improvisation by a locksmith or security guard. He alleges that CAM, JDAM, FMMM, the relevant Laura Acosta Matos actor and Community-officeholder/service-company participants formed or used a coordinated instruction and implementation chain to convert CAM’s secured-credit and isolated-title position into practical whole-hotel control.**
+> **Gil Marer directly alleges that the 7 June event was not an unauthorised improvisation by a locksmith or security guard. He alleges that CAM, JDAM, Laura Patricia Acosta Matos, FMMM and Community-officeholder/service-company participants formed or used a coordinated instruction and implementation chain to convert CAM’s secured-credit and isolated-title position into practical whole-hotel control.**
 
-The allegation is supported by the convergence of prior approaches, contemporaneous presence, asserted representation, Community authority, creditor benefit, later control and absence so far of a located whole-hotel possession order.
+This is a direct criminal attribution, not merely a question or possible lead. The allegation is supported by the convergence of prior approaches, contemporaneous presence reporting, asserted representation, Community authority, creditor benefit, later control and absence so far of a located whole-hotel possession order. The exact actor-specific command chain remains to be proved and has not been adjudicated.
 
 ### 5.3 What remains necessary to convert inference into proved direct instruction
 
 - native emails, WhatsApp, calls or meeting records issuing instructions;
 - CAM Board or management approval;
-- legal mandate and power of attorney for the Laura actor;
+- legal mandate and power of attorney for Laura Patricia Acosta Matos;
 - security-company and locksmith contracts;
 - payer and invoice;
 - key handover receipt;
 - instructions identifying areas and owners;
 - Antonio Cogolludo/FMMM communications;
 - witness evidence identifying who gave each order;
-- post-event CAM adoption, ratification or internal reporting;
-- precise identification of the Laura actor.
+- post-event CAM adoption, ratification or internal reporting; and
+- presence, mandate, knowledge and exact participation evidence concerning Laura Patricia Acosta Matos.
 
-The absence of a recovered written instruction does not disprove oral or tacit instruction. It prevents direct instruction from being published as an adjudicated or conclusively proved fact.
+The absence of a recovered written instruction does not disprove oral or tacit instruction. It prevents direct instruction from being published as an adjudicated or conclusively proved fact. It does not convert Gil's direct allegation into a merely hypothetical question.
 
 ### 5.4 Actor/function matrix
 
-| Actor or perimeter | Located or alleged function | What remains to be proved |
+| Actor or perimeter | Express allegation / located or alleged function | What remains to be proved |
 |---|---|---|
-| CAM entities and identified natural persons | Isolated title, secured credit, alleged preparation/coordination, project benefit and later direct governance | Exact assignee/entity at each date; native instructions; mandate; payer; receipt of keys; operational decisions; income and benefit |
-| JDAM | Recorded-call attribution and prior access/project/ownership sequence; later direct governance and benefit | Technical speaker attribution; bridge from March planning to June order; native messages; no physical presence on 7 June is presently established |
-| Laura Patricia Acosta Matos | Direct-day conduct is alleged in contemporaneous and filed sources | CAM mandate; exact order; presence and participation evidence; denial and other contrary evidence |
-| Antonio Cogolludo | Community president and formal authority relay; alleged direct-day conduct | Knowledge of the mandate's limits; communications with CAM, AC, FMMM and providers |
+| CAM entities and identified natural persons | Gil alleges deliberate conversion of isolated title and secured credit into wider material control; preparation/coordination, project benefit and later direct governance are evidenced to differing degrees | Exact assignee/entity at each date; native instructions; mandate; payer; receipt of keys; operational decisions; income and benefit |
+| JDAM | Gil directly alleges instruction/coordination; recorded-call attribution and prior access/project/ownership sequence plus later governance and benefit are material leads | Technical speaker attribution; bridge from March planning to June order; native messages; no physical presence on 7 June is presently established |
+| Laura Patricia Acosta Matos | Gil directly alleges direct-day participation and instruction responsibility; same-day and filed sources concern the Laura CAM actor under the source-literal controls above | CAM mandate; exact order; presence and participation evidence; knowledge, purpose, denial and other contrary evidence |
+| Antonio Cogolludo | Gil alleges participation in the direct-day operation; Community president and formal authority-relay role are documented | Knowledge of the mandate's limits; communications with CAM, AC, FMMM and providers |
 | Cogolludo treasurer/voting interest | Approximately 0.385% vote-qualified interest through which the May resolution was adopted | Knowledge of debt/vote architecture, intended scope and later physical implementation |
-| FMMM | Secretary-administrator; debt, voting, records, banking and Community/security continuity | Native provider instructions, physical role, certification/record custody and relationship to the actual control event |
-| Pamanil/Pamalexsha | Observable administrative, documentary, maintenance and Community-side functions | Which legal person performed each act, under whose instruction, with what authority, knowledge, reliance and benefit |
-| Security company and locksmith personnel | Direct physical implementation of guards, access and lock measures | Identity, contract, payer, orders, zones, key recipient, logs, reports and knowledge of authority limits |
-| Insolvency administrator | Requested/advanced the security route and later described a narrower authority while denying the main takeover | Exact authority, scope, supervision, first notice, response, recovery/accounting action, knowledge and intent |
+| FMMM | Gil directly alleges coordinated participation; secretary-administrator, debt, voting, records, banking and Community/security continuity are documented | Native provider instructions, physical role, certification/record custody and relationship to the actual control event |
+| Pamanil/Pamalexsha | Gil alleges instrumental participation where the proved acts and instructions support it; observable administrative, documentary, maintenance and Community-side functions exist | Which legal person performed each act, under whose instruction, with what authority, knowledge, reliance and benefit |
+| Security company and locksmith personnel | Direct physical implementation of guards, access and lock measures is alleged and partly visible/reported | Identity, contract, payer, orders, zones, key recipient, logs, reports and knowledge of authority limits |
+| Insolvency administrator | Gil directly alleges criminal approval, enablement, ratification or legally equivalent omission; the security-authority route and later narrower account are documented nodes | Exact authority, scope, supervision, first notice, response, recovery/accounting action, knowledge and intent |
 | CAM advisers or lawyers | Possible communication, mandate and transaction roles | Professional representation alone proves nothing; knowing assistance must be shown document by document |
 | Montelanza/Molina-linked sellers | Earlier title and retained-property chain | Each later conveyance, representation, instruction and benefit; no automatic participation in the 2018 event |
 
-No family, professional, corporate or commercial association substitutes for proof of instruction, knowledge, contribution and benefit.
+No family, professional, corporate or commercial association substitutes for proof of instruction, knowledge, contribution and benefit. The proof rule does not suppress the express allegation.
 
 ## 6. Creditor or lender in possession — functional liability framework
 
@@ -270,7 +277,7 @@ The required accounting starts at the first proven material-control date and mus
 - information asymmetry in later sale/adjudication;
 - value generated using LPB and third-party assets;
 - expenses charged to the estate, Community or other owners;
-- debt set-off or other economic benefit;
+- debt set-off or other economic benefit; and
 - later project, finance and public-support benefit.
 
 Any liability and remedy must be allocated to the correct claimant—LPB/the estate, Aweswell, CEXP, Matkator, Pink, individual owners or another person—and must avoid double recovery.
@@ -291,7 +298,7 @@ Potential indicators include:
 - directing security, maintenance and works;
 - controlling records, reservations or revenue;
 - directing insolvency proposals, disposals or settlement positions;
-- using LPB assets in project promotion;
+- using LPB assets in project promotion; and
 - determining access for bidders, experts or advisers.
 
 Creditor pressure, negotiation or benefit alone is insufficient.
@@ -313,7 +320,7 @@ The hotel-operation analysis must identify who actually controlled:
 - cleaning and maintenance;
 - utilities and insurance;
 - tourism registrations and licences;
-- commercial contracts and inventory;
+- commercial contracts and inventory; and
 - income and expenditure.
 
 ### 7.4 Interference with assets outside LPB
@@ -330,8 +337,8 @@ The strongest point is not silence alone:
 
 - the insolvency administrator represented or administered the LPB insolvency perimeter;
 - the administrator is linked to the request that the 18 May security resolution be convened on LPB’s behalf;
-- the administrator later denied ordering or approving the principal lock takeover;
-- but referred to a narrower access authorisation concerning maintenance/local areas.
+- the administrator later denied ordering or approving the principal lock takeover; and
+- the administrator referred to a narrower access authorisation concerning maintenance/local areas.
 
 The controlled treatment of the administrator's 31 July 2018 declaration also records selection of a security provider, pursuit of Community ratification and authority for limited entry by Laura Acosta into identified LPB premises for maintenance/supervision. That source must be read in full: it is an affirmative authority-chain node and simultaneously a narrower, potentially exculpatory account.
 
@@ -339,7 +346,9 @@ The narrower authorisation is exculpatory as to a whole-hotel takeover if it was
 
 ### 8.2 Gil’s strongest allegation
 
-> **Gil alleges that the insolvency administrator criminally approved or enabled the 7 June operation: first by supplying or facilitating the authority route through the 18 May security decision; then by failing to delimit and supervise it; and, after the alleged excess became known, by failing to recover control, protect estate and non-estate assets, demand an account, reverse the effects or present the material-control change accurately to the court.**
+> **Gil directly alleges that the insolvency administrator criminally approved or enabled the 7 June operation: first by supplying or facilitating the authority route through the 18 May security decision; then by failing to delimit and supervise it; and, after the alleged excess became known, by failing to recover control, protect estate and non-estate assets, demand an account, reverse the effects or present the material-control change accurately to the court.**
+
+This is Gil's direct criminal allegation. The four-level evidential ladder below classifies proof and possible innocent explanations; it does not replace the allegation with a neutral question.
 
 ### 8.3 Four-level evidential ladder
 
@@ -365,16 +374,16 @@ Criminal omission is not inferred from silence, deficient supervision or profess
 - inspection and preservation measures;
 - treatment of Matkator and third-party assets;
 - treatment in AC reports, liquidation and calificación;
-- any benefit retained after notice;
+- any benefit retained after notice; and
 - all contrary records showing attempted prevention or reversal.
 
 ## 9. Judicial omission / “omissionary prevarication” allegation
 
 ### 9.1 Attribution
 
-Gil alleges that the competent judge's omission to protect, restore, investigate, account for or causally attribute the change in actual control amounted to **omissionary judicial prevarication**.
+Gil directly alleges that the competent judge's omission to protect, restore, investigate, account for or causally attribute the change in actual control amounted to **omissionary judicial prevarication**.
 
-That label must be published as Gil’s allegation, not as an established legal conclusion.
+That label must be published as Gil’s direct allegation, not as a mere question and not as an established legal conclusion.
 
 ### 9.2 Legal classification must be precise
 
@@ -383,8 +392,8 @@ Spanish criminal law separately addresses:
 - knowingly issuing an unjust judicial resolution;
 - grossly negligent or inexcusably ignorant issuance of a manifestly unjust resolution;
 - refusal to judge without legal cause;
-- malicious delay intended to achieve an illegitimate purpose;
-- and, in appropriate offences, commission by omission where a specific legal/contractual duty or prior risk-creating conduct creates an equivalent duty to act.
+- malicious delay intended to achieve an illegitimate purpose; and
+- in appropriate offences, commission by omission where a specific legal/contractual duty or prior risk-creating conduct creates an equivalent duty to act.
 
 There is no safe public shortcut from “the judge did not grant the remedy sought” to criminal prevarication.
 
@@ -410,9 +419,9 @@ For each alleged judicial omission identify:
 
 ### 9.4 Strongest presently publishable formulation
 
-> **Gil alleges that the court was repeatedly placed on notice of a creditor/private-actor change in actual control, yet the concursal record and later causation analysis did not provide an equivalent actor-by-actor account of who then controlled access, preservation, operation, works, income and rescue. He alleges that identifiable judicial resolutions, refusals, delay and omissions knowingly preserved or legitimised that private-control result. Whether those acts satisfy judicial prevarication, refusal to judge, malicious delay or any commission-by-omission theory requires the exact evidence-before-judge and subjective proof matrix.**
+> **Gil directly alleges that the court was repeatedly placed on notice of a creditor/private-actor change in actual control, yet the concursal record and later causation analysis did not provide an equivalent actor-by-actor account of who then controlled access, preservation, operation, works, income and rescue. He alleges that identifiable judicial resolutions, refusals, delay and omissions knowingly preserved or legitimised that private-control result and constituted judicial prevarication, refusal or malicious delay. Whether those acts satisfy the exact statutory elements requires the evidence-before-judge, duty, objective-injustice, subjective and causation matrices.**
 
-A judicial error, incomplete reasoning or adverse ruling is not by itself criminal.
+A judicial error, incomplete reasoning or adverse ruling is not by itself criminal. That limitation classifies proof; it does not erase Gil's direct allegation.
 
 ## 10. Criminal-law lead map
 
@@ -432,12 +441,12 @@ The criminal investigation should test, without prejudging:
 - judicial prevarication/refusal/malicious delay under the exact statutory elements;
 - arbitrary exercise of an asserted right involving violence, intimidation or force against things, as a matter for investigation under Article 455 where its elements fit;
 - the specific treatment of insolvency administrators under Article 435.4 only where an underlying malversation offence, affected estate/creditor interests and the required intent are proved;
-- concealment or later ratification;
+- concealment or later ratification; and
 - subsidy/public-funds offences only if later applications contain the required false or concealed conditions.
 
 Every offence must be mapped:
 
-> `ACTOR → CAPACITY → DUTY/POWER → KNOWLEDGE → ACT/OMISSION → SOURCE → RELIANCE → EFFECT → BENEFIT → SUBJECTIVE ELEMENT → CONTRARY EVIDENCE`.
+> `ACTOR → EXPRESS ALLEGATION → CAPACITY → DUTY/POWER → KNOWLEDGE → ACT/OMISSION → SOURCE → RELIANCE → EFFECT → BENEFIT → SUBJECTIVE ELEMENT → CONTRARY EVIDENCE → PROCEDURAL STATUS`.
 
 ## 11. Contrary evidence and strongest defences
 
@@ -453,16 +462,16 @@ The repository must preserve:
 8. evidence that LPB/Gil retained meaningful access or control;
 9. later judicial adjudication and conveyance, prospectively and within their lawful perimeter;
 10. evidence that the court lacked a proper request, jurisdiction or sufficient proof at a relevant moment;
-11. evidence that the judge ruled, rather than refused or delayed;
+11. evidence that the judge ruled, rather than refused or delayed; and
 12. any prompt AC or judicial action to contain, investigate or reverse the event.
 
-These defences do not erase the need to explain the actual-control transition. They prevent the allegation from becoming a predetermined conclusion.
+These defences do not erase the need to explain the actual-control transition and do not suppress the direct accusation. They prevent the allegation from becoming a predetermined or adjudicated conclusion.
 
 The legal effect of the 2018 dismissal cannot be derived from the word “provisional” alone. Any renewed route must compare the exact persons and facts, the investigation actually completed, finality and the existence of genuinely new relevant indicia or legally distinct later acts. The dismissal is neither a conviction nor an automatic affirmative declaration that every act was lawful; nor may the website promise that it has no preclusive effect.
 
 ## 12. Immediate production requests
 
-### CAM / JDAM / Laura actor / FMMM / Community perimeter
+### CAM / JDAM / Laura Patricia Acosta Matos / FMMM / Community perimeter
 
 - all 2017–2018 access, security, hotel-inspection and possession communications;
 - mandates, powers and CAM Board records;
@@ -473,14 +482,14 @@ The legal effect of the 2018 dismissal cannot be derived from the word “provis
 - the paper reportedly shown as whole-complex ownership authority;
 - post-event internal reports;
 - title list used on 7 June;
-- communications with AC and court;
+- communications with AC and court; and
 - later use, income, works and project records.
 
 ### Insolvency administrator
 
 - full authority and knowledge file described in section 8.4;
 - all protective, restorative and accounting measures;
-- all explanations for non-action;
+- all explanations for non-action; and
 - complete calificación and liquidation causation treatment.
 
 ### Court / CGPJ / prosecution
@@ -489,7 +498,7 @@ The legal effect of the 2018 dismissal cannot be derived from the word “provis
 - original evidence and annexes before each decision;
 - hearing recordings and internal procedural metadata where obtainable;
 - exact treatment of protective requests;
-- timing and reason for each delay, refusal or resolution;
+- timing and reason for each delay, refusal or resolution; and
 - later use of the control position in sale, adjudication and calificación.
 
 ### Security company / locksmith / onsite witnesses
@@ -498,30 +507,32 @@ The legal effect of the 2018 dismissal cannot be derived from the word “provis
 
 ## 13. Publication rules
 
-1. State the direct-instruction, criminal-approval and judicial-prevarication positions forcefully as **Gil Marer / Aweswell allegations**.
-2. Do not state criminal guilt, conspiracy or prevarication as judicially established.
-3. Use Laura Patricia Acosta Matos in public output; do not treat the source typo as a separate actor or identity gap.
-4. Preserve the 2018 dismissal and strongest contrary evidence with equivalent prominence.
-5. Distinguish CAM’s unit ownership, Community capacity, secured-credit status, actual possession, project role and later adjudicated title.
-6. Distinguish LPB estate assets from CEXP rights, Matkator and other third-party property.
-7. Treat “lender in possession” as a functional comparison and explain the Spanish-law acts and remedies separately.
-8. Use `evidence before actor`: no later-discovered evidence is attributed retrospectively to the AC or judge without proof of receipt or knowledge.
-9. Publish a right of reply and integrate primary corrections with equivalent prominence.
-10. A filing, complaint, investigation or receipt proves its procedural existence, not its merits.
+1. State the direct-instruction, criminal-approval and judicial-prevarication positions forcefully as **Gil Marer / Aweswell's direct criminal allegations**.
+2. Do not replace those allegations with softer-only formulations such as concern, question, possible involvement, investigative lead or “evidence warrants investigation whether”. Such language may describe proof or procedure only after the direct attribution is visible.
+3. Do not state criminal guilt, conspiracy, approval or prevarication as judicially established unless a competent final source does so.
+4. Use Laura Patricia Acosta Matos as narrative identity; preserve “Laura Matos” and the different filed forename only as controlled source literals. Never claim that a source literally used the corrected full name when it did not.
+5. Preserve the 2018 dismissal and strongest contrary evidence with equivalent prominence and exact scope.
+6. Distinguish CAM’s unit ownership, Community capacity, secured-credit status, actual possession, project role and later adjudicated title.
+7. Distinguish LPB estate assets from CEXP rights, Matkator and other third-party property.
+8. Treat “lender in possession” as a functional comparison and explain the Spanish-law acts and remedies separately.
+9. Use `evidence before actor`: no later-discovered evidence is attributed retrospectively to the AC or judge without proof of receipt or knowledge.
+10. Publish a right of reply and integrate primary corrections with equivalent prominence.
+11. A filing, complaint, investigation, receipt or referral proves its procedural existence, not its merits.
+12. Audience-first or progressive-disclosure design must keep the direct attribution, alleged conduct, non-finding boundary and strongest contrary record visible before any collapsed specialist content.
 
 ## 14. Confirmation of evidential sufficiency for making the allegations
 
-The present corpus contains enough **types and layers of evidence** to support Gil Marer making and requesting investigation of the three principal allegations:
+The present corpus contains enough **types and layers of evidence** to support Gil Marer / Aweswell directly making, preserving, publishing as attributed allegations and requesting investigation of the three principal criminal allegations:
 
 - direct CAM/private-actor instruction or coordination of the 7 June physical event;
-- criminal approval, enablement, ratification or legally equivalent omission by the insolvency administrator;
+- criminal approval, enablement, ratification or legally equivalent omission by the insolvency administrator; and
 - knowing judicial omission/prevarication, refusal or malicious delay.
 
 That sufficiency arises from contemporaneous reporting, video/photographic evidence, pre-event and same-day complaints, alleged prior conduct, formal governance and access nodes, creditor/title records, later control and benefit, and institutional decisions or omissions.
 
-The evidence is **not yet sufficient to publish those allegations as proved criminal facts**. The remaining gaps are not hidden weaknesses; they are the exact instruction, identity, scope, mental-state, ratification, evidence-before-judge and causation records that competent authorities and record holders are asked to produce.
+The evidence is **not yet sufficient to publish those allegations as proved criminal facts**. The remaining gaps are not hidden weaknesses and are not reasons to dilute the direct attribution; they are the exact instruction, mandate, participation, scope, mental-state, ratification, evidence-before-judge and causation records that competent authorities and record holders are asked to produce.
 
-In particular, this confirmation does **not** confirm as fact that JDAM, LPAM/Laura Patricia or FMMM gave the operative 7 June order; that the insolvency administrator criminally approved it; or that Judge Alberto López Villarrubia committed prevarication. It confirms the existence of a concrete, multi-source basis to allege and investigate those propositions under the actor-specific matrices above.
+In particular, this confirmation does **not** confirm as fact that JDAM, Laura Patricia or FMMM gave the operative 7 June order; that the insolvency administrator criminally approved it; or that Judge Alberto López Villarrubia committed prevarication. It confirms the existence of a concrete, multi-source basis for Gil / Aweswell to make those direct allegations and demand investigation under the actor-specific matrices above.
 
 ## 15. Right of reply
 

@@ -36,49 +36,49 @@
       ? `${prefix}en/cam-creditor-control-shadow-administration-judicial-omission/`
       : `${prefix}es/control-acreedor-cam-administracion-hecho-omision-judicial/`;
     const c = en ? {
-      eyebrow: 'CRIMINAL-LEAD CONVERGENCE · UPDATED 23 AUGUST 2026',
+      eyebrow: 'EXPRESS CRIMINAL ATTRIBUTION · UPDATED 23 AUGUST 2026',
       title: 'Direct instruction, creditor in possession, de facto administration and institutional omission',
-      lead: 'Gil Marer and Aweswell allege that the 7 June 2018 physical operation was directly instructed or coordinated by CAM-perimeter actors; criminally enabled, approved or ratified by the insolvency administrator; and preserved through judicial omission amounting, in Gil’s allegation, to omissionary judicial prevarication.',
-      directK: 'Allegation 1 · private instruction',
-      directT: 'CAM / JDAM / FMMM / relevant Laura actor',
-      directP: 'The allegation is that secured credit, isolated title and Community/security authority were deliberately converted into whole-hotel physical control. Contemporaneous emails place CAM lawyer Laura Patricia Acosta Matos and Community personnel at the event; earlier filed material places JDAM/FMMM in the access-and-control sequence. The native instruction chain remains a production demand.',
-      acK: 'Allegation 2 · insolvency administrator',
+      lead: 'Gil Marer and Aweswell directly allege that identified CAM / Acosta Matos and connected private actors deliberately instructed, coordinated, authorised, procured, adopted or knowingly implemented the 7 June 2018 physical-control operation; that the insolvency administrator criminally enabled, approved, ratified or failed in a legally equivalent way to prevent or reverse it; and that specified judicial conduct amounted, in Gil’s allegation, to omissionary judicial prevarication. These are direct criminal allegations, not merely questions or investigative leads and not adjudicated findings.',
+      directK: 'Direct criminal allegation 1 · private instruction',
+      directT: 'CAM / JDAM / Laura Patricia / FMMM',
+      directP: 'Gil alleges that secured credit, isolated title and Community/security authority were deliberately converted into whole-hotel physical control. The contemporaneous email source literal describes the CAM lawyer as <span data-source-literal>“Laura Matos”</span>; the repository’s canonical identity is Laura Patricia Acosta Matos, and the different forename in the filed amendment is controlled as a typo. Native mandate, instruction and participation evidence remains a production demand.',
+      acK: 'Direct criminal allegation 2 · insolvency administrator',
       acT: 'Criminal approval, enablement or ratification',
-      acP: 'The administrator is linked to the 18 May security-authority route and later acknowledged a narrower access authorisation while denying the main lock takeover. Gil alleges that the authority was knowingly designed, tolerated, ratified or not reversed in a legally equivalent way. Scope, knowledge, power to act and intent remain decisive.',
-      judgeK: 'Allegation 3 · court',
+      acP: 'Gil directly alleges that the administrator supplied or facilitated the authority route, knowingly tolerated or ratified the result, or failed in a legally equivalent way to prevent or reverse it. The administrator’s denial and narrower-access account remain material contrary evidence. Scope, knowledge, power to act, intent and causation remain decisive proof questions.',
+      judgeK: 'Direct criminal allegation 3 · court',
       judgeT: 'Omissionary judicial prevarication',
-      judgeP: 'Gil alleges that resolutions, refusals, delay or omissions knowingly preserved the private-control result. The legal test requires an exact judicial act, evidence before the judge, competence and duty, objective injustice or malicious delay, knowledge, purpose and causation. An adverse or incomplete ruling is not automatically criminal.',
-      identityT: 'Attribution control — Laura Patricia Acosta Matos',
-      identityP: 'The public record identifies Laura Patricia Acosta Matos. Gil attributes responsibility to LPAM, but mandate, exact instructions, knowledge, purpose and any criminal responsibility remain actor-specific allegations requiring independent proof.',
+      judgeP: 'Gil directly alleges that specified resolutions, refusals, delay or omissions knowingly preserved the private-control result. The legal test requires the exact judicial act, evidence before the judge, competence and duty, objective injustice or malicious delay, knowledge, purpose and causation. An adverse or incomplete ruling is not automatically criminal.',
+      identityT: 'Attribution and source-fidelity control — Laura Patricia Acosta Matos',
+      identityP: 'Laura Patricia Acosta Matos is the canonical identity and Gil directly attributes actor-specific participation and responsibility to her. Identity, mandate, presence, exact instructions, knowledge, purpose and criminal responsibility remain separate fields. A source literal is preserved as written and is not silently rewritten as the canonical identity.',
       documentedT: 'What is already documented',
-      documentedP: 'Contemporaneous emails; same-day videos and photographs; pre-event and same-day criminal pleadings; the 18 May Community/security node; the creditor/title record; later control and project benefit; and institutional decisions or omissions. These evidence types support making and investigating the allegations—not treating guilt as adjudicated.',
+      documentedP: 'Contemporaneous emails; same-day videos and photographs; pre-event and same-day criminal pleadings; the 18 May Community/security node; the creditor/title record; later control and project benefit; and institutional decisions or omissions. These evidence classes make the direct allegations concrete and publishable as attributed allegations; they do not make guilt adjudicated.',
       contraryT: 'Contrary record preserved',
       contraryP: 'The 2018 criminal proceedings were provisionally dismissed and that result was upheld on appeal. The administrator denied the principal lock-takeover instruction and described narrower access. CAM had valid creditor rights and may have held valid individual titles. Later adjudication remains legally distinct and non-retroactive.',
-      open: 'Open the complete criminal-allegation and proof matrix',
-      badge: 'Allegation ≠ adjudicated finding',
-      nav: 'Criminal lead'
+      open: 'Open the complete direct criminal-attribution and proof matrix',
+      badge: 'Direct allegation ≠ adjudicated finding',
+      nav: 'Criminal attribution'
     } : {
-      eyebrow: 'CONVERGENCIA DE LÍNEA PENAL · ACTUALIZADO 23 AGOSTO 2026',
+      eyebrow: 'ATRIBUCIÓN PENAL EXPRESA · ACTUALIZADO 23 AGOSTO 2026',
       title: 'Instrucción directa, acreedor en posesión, administración de hecho y omisión institucional',
-      lead: 'Gil Marer y Aweswell alegan que la operación física de 7 de junio de 2018 fue instruida o coordinada directamente por actores del perímetro CAM; habilitada, aprobada o ratificada penalmente por el administrador concursal; y preservada mediante omisión judicial constitutiva, según la alegación de Gil, de prevaricación judicial por omisión.',
-      directK: 'Alegación 1 · instrucción privada',
-      directT: 'CAM / JDAM / FMMM / actor Laura pertinente',
-      directP: 'La alegación es que crédito garantizado, títulos aislados y autoridad de Comunidad/seguridad se convirtieron deliberadamente en control físico de todo el hotel. Correos contemporáneos sitúan a la abogada CAM Laura Patricia Acosta Matos y personal de la Comunidad en el acto; material anterior presentado sitúa a JDAM/FMMM en la secuencia de acceso y control. La cadena nativa de instrucciones sigue siendo un requerimiento de producción.',
-      acK: 'Alegación 2 · administrador concursal',
+      lead: 'Gil Marer y Aweswell atribuyen directamente a actores identificados de CAM / Acosta Matos y del perímetro privado conectado la instrucción, coordinación, autorización, procuración, adopción o ejecución consciente de la operación de control físico de 7 de junio de 2018; al administrador concursal su habilitación, aprobación, ratificación penal u omisión jurídicamente equivalente; y a actuaciones judiciales concretas, según la alegación de Gil, prevaricación judicial por omisión. Son acusaciones penales directas, no meras preguntas ni simples líneas de investigación y no son declaraciones judiciales.',
+      directK: 'Atribución penal directa 1 · instrucción privada',
+      directT: 'CAM / JDAM / Laura Patricia / FMMM',
+      directP: 'Gil alega que crédito garantizado, títulos aislados y autoridad de Comunidad/seguridad se convirtieron deliberadamente en control físico de todo el hotel. El literal de fuente del correo contemporáneo describe a la abogada CAM como <span data-source-literal>“Laura Matos”</span>; la identidad canónica del repositorio es Laura Patricia Acosta Matos y el nombre diferente del escrito presentado se controla como errata. La prueba nativa de mandato, instrucción y participación sigue siendo un requerimiento de producción.',
+      acK: 'Atribución penal directa 2 · administrador concursal',
       acT: 'Aprobación, habilitación o ratificación penal',
-      acP: 'El administrador está vinculado a la vía de autoridad de seguridad de 18 de mayo y después reconoció una autorización de acceso más limitada mientras negaba la toma principal de cerraduras. Gil alega que la autoridad fue diseñada, tolerada, ratificada conscientemente o no revertida de manera jurídicamente equivalente. Alcance, conocimiento, poder de actuación e intención son decisivos.',
-      judgeK: 'Alegación 3 · juzgado',
+      acP: 'Gil alega directamente que el administrador suministró o facilitó la vía de autoridad, toleró o ratificó conscientemente el resultado, o no lo impidió o revirtió de manera jurídicamente equivalente. La negativa del administrador y su explicación de acceso más limitado permanecen como prueba contraria material. Alcance, conocimiento, capacidad, intención y causalidad siguen siendo cuestiones probatorias decisivas.',
+      judgeK: 'Atribución penal directa 3 · juzgado',
       judgeT: 'Prevaricación judicial por omisión',
-      judgeP: 'Gil alega que resoluciones, negativas, demoras u omisiones preservaron conscientemente el resultado de control privado. El test jurídico exige acto judicial exacto, prueba ante el juez, competencia y deber, injusticia objetiva o demora maliciosa, conocimiento, finalidad y causalidad. Una resolución adversa o incompleta no es automáticamente penal.',
-      identityT: 'Control de atribución — Laura Patricia Acosta Matos',
-      identityP: 'El registro público identifica a Laura Patricia Acosta Matos. Gil atribuye responsabilidad a LPAM, pero mandato, instrucciones exactas, conocimiento, finalidad y cualquier responsabilidad penal siguen siendo alegaciones actor-específicas que exigen prueba independiente.',
+      judgeP: 'Gil alega directamente que resoluciones, negativas, demoras u omisiones concretas preservaron conscientemente el resultado de control privado. El test exige acto judicial exacto, prueba ante el juez, competencia y deber, injusticia objetiva o demora maliciosa, conocimiento, finalidad y causalidad. Una resolución adversa o incompleta no es automáticamente penal.',
+      identityT: 'Control de atribución y fidelidad de fuente — Laura Patricia Acosta Matos',
+      identityP: 'Laura Patricia Acosta Matos es la identidad canónica y Gil le atribuye directamente participación y responsabilidad actor-específica. Identidad, mandato, presencia, instrucciones exactas, conocimiento, finalidad y responsabilidad penal son campos separados. El literal de una fuente se conserva como fue escrito y no se sustituye silenciosamente por la identidad canónica.',
       documentedT: 'Lo que ya está documentado',
-      documentedP: 'Correos contemporáneos; vídeos y fotos del mismo día; denuncias anteriores y coetáneas; nodo Comunidad/seguridad de 18 de mayo; registro de crédito/título; control y beneficio de proyecto posteriores; y decisiones u omisiones institucionales. Estos tipos de prueba permiten formular e investigar las alegaciones, no tratar la culpabilidad como declarada.',
+      documentedP: 'Correos contemporáneos; vídeos y fotos del mismo día; denuncias anteriores y coetáneas; nodo Comunidad/seguridad de 18 de mayo; registro de crédito/título; control y beneficio de proyecto posteriores; y decisiones u omisiones institucionales. Estas clases de prueba hacen concretas y publicables como atribuidas las acusaciones directas; no convierten la culpabilidad en declarada.',
       contraryT: 'Registro contrario preservado',
       contraryP: 'Las diligencias penales de 2018 fueron archivadas provisionalmente y el resultado se confirmó en apelación. El administrador negó la instrucción de la toma principal y describió un acceso más limitado. CAM tenía derechos acreedores válidos y puede haber tenido títulos individuales válidos. La adjudicación posterior es jurídicamente distinta y no retroactiva.',
-      open: 'Abrir la matriz completa de alegación penal y prueba',
-      badge: 'Alegación ≠ declaración judicial',
-      nav: 'Línea penal'
+      open: 'Abrir la matriz completa de atribución penal directa y prueba',
+      badge: 'Acusación directa ≠ declaración judicial',
+      nav: 'Atribución penal'
     };
 
     const section = document.createElement('section');
@@ -104,6 +104,7 @@
       .camcl-grid{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}.camcl-grid article,.camcl-split article{border:1px solid rgba(19,37,45,.15);border-radius:15px;background:#fff;padding:1rem;box-shadow:0 .65rem 1.6rem rgba(19,37,45,.05)}
       .camcl-grid article{border-top:5px solid #8c2f2c}.camcl-grid article:nth-child(2){border-top-color:#8c6b2f}.camcl-grid article:nth-child(3){border-top-color:#5b5578}.camcl-grid span{display:block;margin-bottom:.35rem;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:#7b2e2e}.camcl-grid h3,.camcl-split h3{margin:.15rem 0 .5rem}.camcl-grid p,.camcl-split p{line-height:1.57}
       .camcl-split{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem;margin:1rem 0}.camcl-identity{border-left:6px solid #8c6b2f!important;background:#fffaf0!important}.camcl-contrary{border-left:6px solid #526b59!important;background:#f3f7f5!important}.camcl-link{margin-top:.7rem}
+      [data-source-literal]{font-style:italic;text-decoration:underline dotted;text-underline-offset:.18em}
       @media(max-width:900px){.camcl-grid,.camcl-split{grid-template-columns:1fr}}
     `;
     document.head.appendChild(style);

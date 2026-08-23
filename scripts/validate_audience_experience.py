@@ -13,7 +13,14 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIRS = (ROOT / "es", ROOT / "en", ROOT / "assets")
 HTML_ROOTS = (ROOT / "es", ROOT / "en")
-FORBIDDEN_PUBLIC_IDENTITIES = (b"Laura Isabel", b"Laura Matos")
+FORBIDDEN_PUBLIC_IDENTITIES = (b"Laura Isabel",)
+SOURCE_LITERAL_MARKERS = (
+    b"data-source-literal",
+    b'"contemporaneous_email_source_literal"',
+    b"source literal",
+    b"literal de fuente",
+    b"literal de la fuente",
+)
 
 
 class LinkParser(HTMLParser):
@@ -90,6 +97,8 @@ def validate_identity(errors: list[str]) -> int:
             for forbidden in FORBIDDEN_PUBLIC_IDENTITIES:
                 if forbidden in data:
                     fail(errors, f"forbidden public identity variant {forbidden!r}: {path.relative_to(ROOT)}")
+            if b"Laura Matos" in data and not any(marker in data for marker in SOURCE_LITERAL_MARKERS):
+                fail(errors, f"unmarked source-literal name used as narrative identity: {path.relative_to(ROOT)}")
     return checked
 
 
@@ -152,6 +161,10 @@ def validate_home(errors: list[str], lang: str) -> None:
 def validate_runtime_contract(errors: list[str]) -> None:
     module = (ROOT / "assets/audience-experience-order-20260823.js").read_text(encoding="utf-8")
     loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
+    prosecution = (ROOT / "assets/prosecution-public-entry-20260821.js").read_text(encoding="utf-8")
+    cam_module = (ROOT / "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js").read_text(encoding="utf-8")
+    renderer = (ROOT / "scripts/render_audience_experience.mjs").read_text(encoding="utf-8")
+
     for marker in (
         "MutationObserver",
         "deduplicate('.prosecution-entry-20260821')",
@@ -162,11 +175,51 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "perimetros-del-caso",
         "data-audience-full-record",
         "openHashTarget",
+        "const prosecution = main.querySelector",
+        "[hero, priority, prosecution, summary, audiences, perimeters]",
+        "main.dataset.expressCriminalAttributionVisible",
+        "audienceProtectedAttribution",
     ):
         if marker not in module:
             fail(errors, f"audience runtime missing contract marker: {marker}")
     if "audience-experience-order-20260823.js?v=20260823a" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
+
+    for marker in (
+        "section.dataset.expressCriminalAttribution = '20260823'",
+        "Gil Marer and Aweswell directly allege an organised criminal course",
+        "Gil Marer y Aweswell alegan directamente un curso delictivo organizado",
+        "not merely a set of questions",
+        "no una mera serie de preguntas",
+        "Relationship is not responsibility; missing proof does not erase the allegation.",
+        "Relación no es responsabilidad; la prueba pendiente no borra la acusación.",
+        "provisional dismissal",
+        "archivo provisional",
+    ):
+        if marker not in prosecution:
+            fail(errors, f"homepage prosecution module missing non-dilution marker: {marker}")
+
+    for marker in (
+        "directly allege that identified CAM / Acosta Matos",
+        "atribuyen directamente a actores identificados de CAM / Acosta Matos",
+        "data-source-literal",
+        "source literal",
+        "literal de fuente",
+        "Direct allegation ≠ adjudicated finding",
+        "Acusación directa ≠ declaración judicial",
+    ):
+        if marker not in cam_module:
+            fail(errors, f"cross-site CAM module missing attribution/source-fidelity marker: {marker}")
+
+    for marker in (
+        "attributionVisibleBeforeCollapse",
+        "directAttributionTextPresent",
+        "protectedAttributionMarker",
+        "contraryRecordPresent",
+        "direct attribution is hidden in collapsed full record",
+    ):
+        if marker not in renderer:
+            fail(errors, f"audience renderer missing non-dilution check: {marker}")
 
 
 def main() -> int:
@@ -186,7 +239,7 @@ def main() -> int:
     print(
         "AUDIENCE EXPERIENCE VALIDATION PASSED — "
         f"{pages} HTML pages, {links} internal links, {public_files} public files; "
-        "bilingual role gateways, perimeter controls, identity gate and runtime order verified."
+        "bilingual role gateways, perimeter controls, marked source literals, visible direct criminal attribution and runtime order verified."
     )
     return 0
 

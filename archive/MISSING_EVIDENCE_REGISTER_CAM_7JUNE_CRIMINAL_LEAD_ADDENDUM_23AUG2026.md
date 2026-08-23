@@ -4,7 +4,9 @@
 
 **Namespace:** `ME-CAM7J-*`
 
-These are mandatory production targets, not reasons to suppress the criminal-investigative lead. Existing general gaps including ME-044, ME-045, ME-046, ME-048, ME-050, ME-058 and ME-061 remain active.
+These are mandatory production targets. They determine evidence strength, adjudication readiness and the scope of actor-specific conclusions. They are **not reasons to suppress, neutralise or euphemistically dilute Gil Marer / Aweswell's direct criminal allegations**. Existing general gaps including ME-044, ME-045, ME-046, ME-048, ME-050, ME-058 and ME-061 remain active.
+
+Apply `EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md`: attribution, evidence, adjudication and source literal remain separate fields.
 
 | ID | Evidence demand | Why decisive | Present position | Status |
 |---|---|---|---|---|
@@ -19,5 +21,10 @@ These are mandatory production targets, not reasons to suppress the criminal-inv
 | ME-CAM7J-009 | Certified 2018 dismissal and appeal record with facts/persons/issues/investigation/finality map | Determines exact adverse result, preclusion risk and scope of genuinely new evidence/later acts | Outcome recorded; standalone complete signed-source closure remains incomplete | PARTIAL |
 | ME-CAM7J-010 | All exculpatory communications showing CAM objection to excess, AC attempts to stop/reverse it or provider action beyond instructions | Tests the strongest innocent/exculpatory alternatives | Denials and narrower explanations located; native complete set absent | OPEN |
 | ME-CAM7J-011 | Judge-by-act evidence-before-actor matrix: filed request, receipt, competence/duty, exact resolution/refusal/delay, knowledge, purpose and causation | Required before judicial prevarication/refusal/malicious-delay attribution can move beyond allegation | Several notice and decision nodes controlled; complete matrix not closed | PARTIAL |
-| ME-CAM7J-012 | Laura Patricia Acosta Matos mandate and participation evidence | Separates correct identity from proof of conduct or responsibility | Identity is controlled; Gil alleges LPAM involvement, but mandate, exact instructions, knowledge, purpose and contrary evidence remain incomplete | OPEN — ACTOR-SPECIFIC PROOF |
+| ME-CAM7J-012 | Laura Patricia Acosta Matos mandate and participation evidence | Separates correct identity and Gil's direct attribution from proof of each alleged act or responsibility | Identity and attribution are controlled; mandate, exact instructions, knowledge, purpose and contrary evidence remain incomplete | OPEN — ACTOR-SPECIFIC PROOF |
 | ME-CAM7J-013 | Asset/period/claimant accounting from first proved material control | Quantifies revenue, use, expenses, deterioration, obstruction and later value while avoiding double recovery | Accounting heads defined; source ledger and claimant allocation incomplete | OPEN |
+| ME-CAM7J-014 | Native same-day email, certified/filed 7-Jun amendment and page/line source-literal map, together with the documentary basis for treating the alternative forename as a typo | Preserves exact source wording while defending the canonical Laura Patricia identity and preventing either silent source rewriting or a fabricated second actor | Same-day literal “Laura Matos” and the different filed forename are located; certified filing package, exact annex mapping and correction basis require final consolidation | PARTIAL — SOURCE FIDELITY |
+
+## Controlling interpretation
+
+An item marked OPEN or PARTIAL means the repository must state the proof limit. It does not mean that Gil's direct allegation is merely hypothetical, that he has not made the allegation, or that the allegation may be replaced by a softer question. Conversely, the existence of the allegation does not close the missing proof or establish criminal guilt.
