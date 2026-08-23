@@ -31,6 +31,14 @@ The following later P1 targets also changed status on 17-Aug-2026:
 | 15-Oct-2021 Auto | signed standalone Drive binary, stable ID `C36-JUD-2021-10-15-001` | exact Auto dismissing LPB/Aweswell reposiciones against 18-May and confirming it in full | other potentially separate 15-Oct acts identified by workbook; notification/finality records where distinct | **ONE ACT CLOSED / SAME-DATE FAMILY PARTIAL** |
 | 27-Oct-2021 LAJ Diligencia | signed standalone Drive binary, stable ID `C36-LAJ-2021-10-27-001` | incorporation/transfer of AC filing 7425/2021 | underlying 25-Oct quarterly report remains separate source if not independently held | **PRIMARY LAJ ACT LOCATED** |
 
+## 2020–2021 active-estate source promotion — 23 August 2026
+
+| Act / date | Recovered source | What is now closed | What remains | Status |
+|---|---|---|---|---|
+| 12-May-2020 LPB reposición Auto | exact official electronic binary, custody ID `MAT-005`, SHA-256 `2caa1492433a74c603efedf9662ca1057eda863cadb81474cf05a8b7a5cfbbfa` | two-page signed order; res-judicata treatment; demolition/access requests treated as new/extemporaneous in that procedural vehicle; operative dismissal | separate same-date Aweswell-favourable act; AP 23-Jul-2019 anchor/finality; certificates, submissions and definitive amount order | **ONE ACT CLOSED / SAME-DATE FAMILY PARTIAL** |
+| 24-Feb-2021 Aweswell reposición Auto | exact official electronic binary, custody ID `MAT-008`, SHA-256 `3b02a944ae5becb154bdc2109935d060de80bb9e862f10ab055582696e5ee40f` | four-page signed reasoned order and operative partial allowance limited to motivation while preserving denial of filing 7,299 | 13-Jan Providencia; complete reposición/DIOR; AC/CAM annexes; service/finality where needed; later responsibility/implementation chain | **PRIMARY ACT CLOSED / CONNECTED-SOURCE GAPS OPEN** |
+
+Read with `archive/SUN_PARK_ACTIVE_ESTATE_2018_2021_EIGHT_SOURCE_SUPPLEMENT_23AUG2026.md`. Closing the original-binary gap does not convert the court's procedural holdings into a global finding about ownership, damage, authority or responsibility.
 ## 2023 primary-act closure — exact source/date correction
 
 The following prior P1 “missing original” entries are now closed at primary-source level:
@@ -58,7 +66,7 @@ Full correction: `archive/CALIFICACION_VISTA_PRIMARY_ACT_CORRECTION_31MAR_14JUL2
 | 12-Dec-2018 | LAJ Diligencia | later 24-Oct-2019 Auto expressly leaves it without effect; workbook summarizes it | complete signed original + signatory + notification | key bridge between publication and 28-Nov sale / later non-convalidation | P1 |
 | 11-Mar-2019 act family | Diligencia + Providencia / multiple matters | workbook + later 24-Oct Auto references | separate signed originals; exact actor for each operative decision | standing, document production, ob-rem/source access | P1 |
 | 24-Oct-2019 Aweswell-standing act | Auto | workbook T.3P 19–20 | signed complete binary | favourable rejection of AC expulsion/nullity request; balance control | P1 |
-| 12-May-2020 act family | at least 2 Autos | workbook T.3P 79–83 + later pleadings | complete signed binaries separately | one LPB-adverse, one Aweswell-favourable; essential anti-cherry-pick control | P1 |
+| 12-May-2020 act family | at least 2 Autos | exact official electronic LPB-reposición Auto now hash-controlled as `MAT-005`; workbook T.3P 79–83 + later pleadings identify another same-date act | the separate Aweswell-favourable signed binary and complete family index; service/finality where material | **one LPB-adverse act closed; same-date family remains partial**; essential anti-cherry-pick control | **P1 — PARTIAL FAMILY** |
 | 25-Jan-2021 | Auto | multiple appeals/LAJ acts quote it | complete signed original + exact notification | sets publication/offer conditions | P1 |
 | 06-May-2021 act family | at least 2 Autos | workbook + Drive source family | separate complete signed binaries | nullity denial vs confirmation of 25-Jan route | P1 |
 | 15-Oct-2021 remaining act family | Autos | one exact Auto now primary-located; workbook identifies multiple same-date decisions and later clarification requests | each other separate signed complete binary | appeal/finality architecture; prevent same-date conflation | **P1 — PARTIAL FAMILY** |
