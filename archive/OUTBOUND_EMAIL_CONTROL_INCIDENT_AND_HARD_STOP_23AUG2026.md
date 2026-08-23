@@ -3,7 +3,7 @@
 **Status:** CONTROLLING INCIDENT RECORD / HARD STOP  
 **Public-data rule:** no private address, Gmail identifier or unnecessary personal data is reproduced here.
 
-## 1. Incident recorded
+## 1. Test-transmission incidents recorded
 
 The connected-mail rescan located two transmissions used as tests when no external test transmission should have occurred:
 
@@ -60,14 +60,50 @@ The send path must fail closed where any of the following is true:
 
 ## 5. Incident response
 
-- Do not send a correction, apology, explanation or replacement merely because this incident was discovered.
+- Do not send a correction, apology, explanation or replacement merely because an incident was discovered.
 - Any corrective communication requires its own exact final authorization.
 - Preserve the native sent-message and bounce evidence in the connected mailbox.
 - Treat an empty transmission as a transmission event, not as “nothing happened”.
 - Record future connector defects or unexpected sends as incidents immediately.
 
-## 6. Relationship to existing rules
+## 6. Media-core omission incident
 
-This file strengthens, and does not replace, `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` and `archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md`.
+A separate 23 August 2026 media email was initially sent without the two standard PNG source maps and the controlled San Telmo webinar link. The email did contain Por Derecho dossier links, but the complete recurring media package had been wrongly reduced because the message was classified as link-led and the source-kit language was treated as discretionary.
+
+The actual control failure was not Gmail attachment handling. It occurred during requirements translation and readiness review:
+
+- the two source maps and webinar were incorrectly treated as optional;
+- recipient-specific brevity was allowed to override the user’s standing package instruction;
+- the readiness check verified an intended attachment count of zero rather than first testing whether zero was permissible; and
+- a general final instruction to send was wrongly treated as sufficient even though the prepared package should have failed the standing media requirement.
+
+A separately prepared and expressly authorized same-thread correction then supplied both source maps, the direct webinar link, Por Derecho routes and evidential-limits wording. The actual sent correction was read back and verified.
+
+Permanent control:
+
+`archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
+
+Required media preflight:
+
+```text
+PWC_SOURCE_MAP_FOUND = YES
+SAN_TELMO_SOURCE_MAP_FOUND = YES
+WEBINAR_LINK_FOUND = YES
+POR_DERECHO_LINK_FOUND = YES
+EVIDENTIAL_LIMITS_TEXT_FOUND = YES
+```
+
+Without all five values, or an exact user-approved exception:
+
+**SEND STATUS: BLOCKED — MANDATORY MEDIA CORE PACKAGE INCOMPLETE.**
+
+## 7. Relationship to existing rules
+
+This file strengthens, and does not replace:
+
+- `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
+- `archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`;
+- `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`; and
+- `archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md`.
 
 No outbound communication is authorized by this incident record.
