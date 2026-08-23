@@ -31,10 +31,10 @@ This gate prevents future threads from silently assuming either:
 
 ### 4-Jun-2018 Auto family
 
-- current controlled source remains incomplete
-- SHA-256: `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`
-- status remains `INCOMPLETE COURT COPY — primary promotion blocked`
-- P1 target: continuation + dispositive + signature
+- complete three-page authentic court copy located in Gmail `194a98a11920fefd`, `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`
+- the older two-page SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` is a superseded derivative/source-history object only
+- status: `COMPLETE THREE-PAGE CANONICAL COPY — HASH / SERVICE / IMPLEMENTATION BINDING OPEN`
+- P1 targets: canonical-copy hash, exact notification/service and downstream implementation
 
 ### C36-LAJ-2018-06-15-001
 
@@ -126,7 +126,7 @@ It must visibly distinguish:
 
 P1:
 
-1. complete 4-Jun-2018 Auto;
+1. canonical hash, exact service/notification and downstream-implementation binding for the located complete three-page 4-Jun-2018 Auto;
 2. actual operative definitive creditor list before the 2018 CAM-credit rulings;
 3. any formally amended definitive list after those rulings;
 4. request to AC for later modification, if any;

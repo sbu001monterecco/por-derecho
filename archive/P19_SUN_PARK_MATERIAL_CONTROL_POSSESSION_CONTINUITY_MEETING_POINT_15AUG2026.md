@@ -289,7 +289,7 @@ Trace guard logs, access decisions, continuing exclusion, locks, utilities, main
 
 Separate later adjudication/title from earlier control.
 
-Trace the 26 January 2022 order, 4 February Community meeting, 21 February deed, CAM→HNT, Canarian Hospitality/MYND, RICPE/AGM/Orion, public finance and current access, title, use, income, financing and alleged harm.
+Trace Auto 164/2021's 18 May 2021 definitive approval, both separate 15 October 2021 Autos, both 26 January 2022 clarification Autos (neither making a new award), the 4 February Community meeting, the 21 February deed, CAM→HNT, Canarian Hospitality/MYND, RICPE/AGM/Orion, public finance and current access, title, use, income, financing and alleged harm.
 
 Never say later title retrospectively authorised a 2017 or 2018 act.
 
@@ -317,8 +317,8 @@ At minimum:
 16. **September 2018–October 2019** — DI 248, ob-rem/€400,000 and non-validation.
 17. **2019–2021** — Lava Verde, pilot rooms, Club Sei/Meeting Point, RICPE, continued works/control and court notice.
 18. **24 February 2021** — signed court record of alleged demolition, security-blocked access and refused inspection/pericial.
-19. **2021 bidding/adjudication route** — control, access, competition and project representations.
-20. **January–February 2022** — adjudication/deed and formal-title threshold.
+19. **2021 bidding/approval route** — control, access, competition and project representations; 18-May definitive approval and the two separate 15-Oct challenge decisions.
+20. **January–February 2022** — two 26-Jan clarification Autos (no new award), testimony/finality, deed and formal-title implementation threshold.
 21. **2022 onward** — HNT, MYND, finance/incentives and continuing benefit/harm.
 22. **June–July 2024** — Meeting Point/FTI compliance notice and preservation requests.
 23. **September 2024–2025** — Meeting Point Spain 357/2024 and the two judicial attributions.

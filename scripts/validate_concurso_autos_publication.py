@@ -46,7 +46,10 @@ PRIVACY_PATTERNS = {
     "UK mobile": r"(?<!\d)(?:\+44|0044)\s*\d(?:[\s()-]*\d){8,11}(?!\d)",
     "NIG/IUP": r"\b(?:NIG|IUP)\s*:",
     "court verification code": r"A05003250|sede\.justiciaencanarias\.es/sede/tramites-comprobacion",
-    "electronic-signature metadata": r"Firmado digitalmente por:|NOMBRE\s+[A-ZÁÉÍÓÚÜÑ ]+\s+-\s+NIF",
+    "electronic-signature metadata": r"Firmado digitalmente por\b|^\s*Firmado por\b|NOMBRE\s+[A-ZÁÉÍÓÚÜÑ ]+\s+-\s+NIF",
+    "masked personal identifier": r"\*{2,}\d{2,}\*{2,}",
+    "signature certificate tail": r"\b(?:FNMT Usuarios|certificado emitido por ACA)\b",
+    "unnecessary published postal address": r"Paseo de la Castellana\s*(?:n[ºo]\s*)?4|calle Hero\s+12-1",
     "IBAN": r"\bES\d{2}(?:[ -]?\d){20}\b",
 }
 
@@ -94,6 +97,12 @@ if manifest.get("schema") != "concurso36-autos-fulltext-v1":
     errors.append("manifest: wrong schema")
 if manifest.get("cutoff") != "2026-08-23":
     errors.append("manifest: wrong cut-off")
+for marker in (
+    "20 January 2026 preliminary hearing",
+    "certified chronological docket/index",
+):
+    if not any(marker in gap for gap in manifest.get("known_gaps", [])):
+        errors.append(f"manifest known_gaps: missing {marker!r}")
 if len(documents) != 50:
     errors.append(f"manifest: expected 50 records, found {len(documents)}")
 
@@ -144,7 +153,7 @@ for record in documents:
         errors.append(f"{path.relative_to(ROOT)}: empty or missing text block")
     privacy_text = re.sub(r"`[0-9a-f]{64}`", "", text, flags=re.I)
     for label, pattern in PRIVACY_PATTERNS.items():
-        if re.search(pattern, privacy_text, flags=re.I):
+        if re.search(pattern, privacy_text, flags=re.I | re.M):
             errors.append(f"{path.relative_to(ROOT)}: possible {label} leakage")
 
 actual_transcripts = {path.name for path in FULL_ROOT.glob("[RF][0-9][0-9]-*.md")}
@@ -183,8 +192,8 @@ require(
     ES_PATH,
     es,
     [
-        "Autos y resoluciones del Concurso 36/2012",
-        "50</strong><span>piezas digitizadas",
+        "Autos, decisiones y escritos localizados del Concurso 36/2012",
+        "50</strong><span>piezas especialistas digitizadas",
         "25</strong><span>actos judiciales / LAJ",
         "La solicitud de separación y la demanda de honorarios fueron desestimadas en primera instancia por legitimación activa",
         "Texto íntegro de Juez, Sala y LAJ",
@@ -196,8 +205,8 @@ require(
     EN_PATH,
     en,
     [
-        "Orders and decisions in Insolvency 36/2012",
-        "50</strong><span>digitised records",
+        "Located orders, decisions and filings in Insolvency 36/2012",
+        "50</strong><span>digitised specialist records",
         "25</strong><span>court / LAJ acts",
         "The removal application and the remuneration claim were dismissed at first instance on active-standing grounds",
         "Complete Judge, Appeal Court and LAJ text",

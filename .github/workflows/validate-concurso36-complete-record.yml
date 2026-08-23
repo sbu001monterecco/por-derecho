@@ -1,0 +1,77 @@
+name: Validate Concurso 36/2012 complete record
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'archive/CONCURSO36_COMPLETE_RECORD_EXECUTION_DIGEST_23AUG2026.md'
+      - 'archive/JUDGE_LAJ_COMMUNICATIONS_REGISTER_CONCURSO36.md'
+      - 'archive/SUN_PARK_27FEB2018_AC_SECURITY_REQUEST_PUBLICATION_CONTROL_21AUG2026.md'
+      - 'archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md'
+      - 'publication-manifests/concurso36-complete-record-20260823.json'
+      - 'evidence/sun-park/2018-02-27-ac-security-request/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-judicial-spine/**'
+      - 'es/concurso-36-2012-columna-judicial/**'
+      - 'en/insolvency-administrator-security-request-sun-park-27-february-2018/**'
+      - 'es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/**'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'sitemap-unitary-shell.xml'
+      - 'sitemap-concurso36-court-orders.xml'
+      - 'scripts/build_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_complete_record.py'
+      - 'tools/build_ac_security_request_public_pdf.py'
+      - '.github/workflows/validate-concurso36-complete-record.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'archive/CONCURSO36_COMPLETE_RECORD_EXECUTION_DIGEST_23AUG2026.md'
+      - 'archive/JUDGE_LAJ_COMMUNICATIONS_REGISTER_CONCURSO36.md'
+      - 'archive/SUN_PARK_27FEB2018_AC_SECURITY_REQUEST_PUBLICATION_CONTROL_21AUG2026.md'
+      - 'archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md'
+      - 'publication-manifests/concurso36-complete-record-20260823.json'
+      - 'evidence/sun-park/2018-02-27-ac-security-request/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/concurso-36-2012-what-the-court-ordered/**'
+      - 'es/concurso-36-2012-que-ordeno-el-juzgado/**'
+      - 'en/concurso-36-2012-judicial-spine/**'
+      - 'es/concurso-36-2012-columna-judicial/**'
+      - 'en/insolvency-administrator-security-request-sun-park-27-february-2018/**'
+      - 'es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/**'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'sitemap-unitary-shell.xml'
+      - 'sitemap-concurso36-court-orders.xml'
+      - 'scripts/build_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_complete_record.py'
+      - 'tools/build_ac_security_request_public_pdf.py'
+      - '.github/workflows/validate-concurso36-complete-record.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  complete-record-source-publication-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Compile standard-library validator
+        run: python -B -m py_compile scripts/validate_concurso36_complete_record.py
+      - name: Validate complete-record catalogue, source controls and discovery
+        run: python -B scripts/validate_concurso36_complete_record.py

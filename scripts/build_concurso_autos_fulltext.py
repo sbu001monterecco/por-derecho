@@ -547,7 +547,7 @@ def redact_page(text: str, *, first_page: bool, start: str) -> str:
         if re.match(r"^Firmado digitalmente por", stripped, flags=re.I):
             cleaned.append("[datos de firma electrónica suprimidos]")
             break
-        if re.match(r"^Firmado por .+ el$", stripped, flags=re.I):
+        if re.match(r"^Firmado por\b", stripped, flags=re.I):
             cleaned.append("[datos de firma electrónica suprimidos]")
             break
         if re.match(r"^(?:Página\s+)?\d+\s+(?:de\s+\d+)?$", stripped, flags=re.I):
@@ -561,6 +561,7 @@ def redact_page(text: str, *, first_page: bool, start: str) -> str:
     text = re.sub(r"\b(?:[XYZ]\d{7}[A-Z]|\d{8}[A-Z]|[A-Z]\d{8})\b", "[identificador personal suprimido]", text, flags=re.I)
     text = re.sub(r"\((?:7716847|N8262488C)\)", "[identificador societario suprimido]", text, flags=re.I)
     text = re.sub(r"\b(?:NIG|IUP)\s*:\s*[A-Z0-9]+", "[identificador judicial administrativo suprimido]", text, flags=re.I)
+    text = re.sub(r"\*{2,}\d{2,}\*{2,}", "[identificador personal suprimido]", text)
     text = re.sub(r"\bES\d{2}(?:[ -]?\d){20}\b", "[cuenta bancaria suprimida]", text, flags=re.I)
     text = re.sub(r"\b8-6\.937\.696-E\b", "[número de póliza suprimido]", text, flags=re.I)
     text = re.sub(
@@ -572,6 +573,21 @@ def redact_page(text: str, *, first_page: bool, start: str) -> str:
     text = re.sub(r"A05003250-?[0-9a-f\-]+", "[código de verificación suprimido]", text, flags=re.I)
     text = re.sub(r"https?://sede\.justiciaencanarias\.es/\S+", "[URL de verificación suprimida]", text, flags=re.I)
     text = re.sub(r"(?im)^\s*(?:De|Para|CC|CCO)\s*:\s*.*@.*$", "[cabecera de correo suprimida]", text)
+    text = re.sub(
+        r"(?i)domicilio en Paseo de la Castellana,?\s*(?:n[ºo]\s*)?4,?\s*28043 Madrid(?:\s*\(Madrid\))?",
+        "domicilio [suprimido]",
+        text,
+    )
+    text = re.sub(
+        r"(?i)domicilio en Madrid,\s*Paseo de la Castellana\s*(?:n[ºo]\s*)?4",
+        "domicilio [suprimido]",
+        text,
+    )
+    text = re.sub(
+        r"(?i)cuyo domicilio social se encuentra\s+en\s+la calle Hero\s+12-1[ºo],?\s*38008\s+de\s+Santa Cruz de Tenerife",
+        "cuyo domicilio social [suprimido]",
+        text,
+    )
 
     for name in PROFESSIONAL_NAMES:
         # PDF text extraction frequently wraps a person's given name and
@@ -717,8 +733,10 @@ def main() -> None:
         "redaction_policy": "Substantive text retained; administrative/contact/identity/bank/verification/signature data and unnecessary procedural-professional names removed with visible markers.",
         "known_gaps": [
             "Decreto de 1 septiembre 2025 and the cited March 2025 diligence in ORD 641/2024 are not present as autonomous source files.",
+            "No located minutes or recording of the 20 January 2026 preliminary hearing.",
             "No located signed merits outcome after Auto 223/2026 in accumulated RPL 3304/2025 and 3319/2025.",
             "No located signed merits outcome after the 7 April 2026 transfer in RPL 421/2026.",
+            "No certified chronological docket/index has been obtained for the whole Concurso 36/2012 court file.",
         ],
         "documents": records,
     }

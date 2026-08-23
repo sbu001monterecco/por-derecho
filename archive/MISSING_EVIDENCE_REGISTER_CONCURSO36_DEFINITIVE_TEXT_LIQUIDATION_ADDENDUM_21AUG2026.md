@@ -7,7 +7,7 @@ Do not create duplicate generic missing-document entries for items already contr
 
 ## ME-C36-DT-001 — Operative definitive creditor list before 2018 CAM-credit rulings
 
-Need the best controlled primary copy of LPB's operative definitive creditor texts/list of creditors immediately before the 8-Feb / 16-Apr / 4-Jun-2018 CAM-credit rulings.
+Need the best controlled primary copy of LPB's operative definitive creditor texts/list of creditors immediately before the 15-Feb / 16-Apr / 4-Jun-2018 CAM-credit rulings. The prior 8-Feb alias is superseded pending authentication of a distinct act.
 
 Must establish exact:
 
@@ -56,15 +56,15 @@ A demand, offer component, mortgage-liability ceiling or AC calculation does not
 
 Status: OPEN / P1.
 
-## ME-C36-2018-004J — Complete 4-Jun-2018 Auto
+## ME-C36-2018-004J — 4-Jun-2018 canonical-copy binding and implementation
 
-Current controlled two-page copy ends during reasoning and lacks the complete dispositive/signature ending.
+A complete three-page authentic court copy is located in Gmail `194a98a11920fefd` as `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`. The former two-page copy ends during the reasoning and is retained only as a superseded derivative/source-history object.
 
-Known controlled SHA-256: `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`.
+Derivative SHA-256: `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`. This hash must not be assigned to the complete three-page canonical copy.
 
-Need continuation, dispositive and signature pages from a controlled court/LexNET/composite source.
+Still needed: canonical-copy SHA-256 binding, exact notification/service record and evidence of downstream implementation.
 
-Status: OPEN / P1 / primary promotion blocked until complete copy recovered.
+Status: **ORIGINAL-COPY GAP CLOSED / HASH-SERVICE-IMPLEMENTATION OPEN — P1**.
 
 ## ME-C36-2018-15J-SERVICE — 15-Jun-2018 implementation service/publication chain
 

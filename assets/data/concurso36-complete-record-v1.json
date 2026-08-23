@@ -1,0 +1,3868 @@
+{
+  "schema": "concurso36-complete-record-v1",
+  "cutoff": "2026-08-23",
+  "case": {
+    "court": "Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+    "proceeding": "Concurso ordinario 36/2012",
+    "debtor": "Luchy Playa Blanca, S.L.U. (LPB)",
+    "nig": "3501647120120000351"
+  },
+  "result": {
+    "inventory_status": "INVENTORY PARTIAL — CERTIFIED DOCKET OR RECORDS STILL MISSING",
+    "publication_status": "PUBLICATION COMPLETE FOR THE IDENTIFIED PUBLIC-SAFE CORPUS — NOT THE WHOLE COURT FILE",
+    "certified_docket_obtained": false,
+    "official_denominator": null,
+    "discovery_lower_bound_act_families_2012_2023": 95,
+    "historical_workbook_rows_reported": "600+ including filings, copies and duplicates",
+    "complete_or_all_uploaded_claim_permitted": false
+  },
+  "counts": {
+    "canonical_records": 127,
+    "historical_forensic_records": 72,
+    "historical_complete_copies": 49,
+    "historical_missing_complete_copies": 21,
+    "historical_copy_status_uncertain": 2,
+    "specialist_records": 50,
+    "specialist_public_full_text_transcripts": 50,
+    "specialist_public_pdfs": 10,
+    "supplemental_canonical_records": 5,
+    "supplemental_source_copy_entries": 8,
+    "supplemental_public_pdfs": 1,
+    "supplemental_page_complete_transcripts": 0,
+    "public_safe_pdfs_total": 11,
+    "public_page_complete_source_transcripts_total": 50,
+    "record_classes": {
+      "implementation_or_notarial_record": 2,
+      "judicial_act": 40,
+      "judicial_or_laj_type_unresolved": 1,
+      "laj_or_court_office_act": 39,
+      "other_evidential_record": 2,
+      "party_communication": 2,
+      "party_filing": 34,
+      "photographic_derivative": 1,
+      "registry_record": 4,
+      "report_inventory_or_certificate": 2
+    }
+  },
+  "authority_and_status_rules": [
+    "LPB alone is the debtor; the mixed-ownership hotel is not automatically the estate.",
+    "A party filing proves the representation was made, not the truth of its allegations.",
+    "A receipt is not substantive examination; joinder is not acceptance; referral is not a decision.",
+    "A judicial or LAJ authorisation must be kept separate from physical, registry and accounting implementation.",
+    "Standing or procedural dismissal is not an adjudication of the unexamined merits.",
+    "Missing from the reviewed corpus does not mean the record does not exist."
+  ],
+  "current_run_source_coverage": {
+    "repository_and_history": "searched and reconciled",
+    "live_website": "exact-current-main readback verified before this update",
+    "local_supplied_files": "three known restricted PDFs hash-matched to existing custody controls",
+    "gmail": "connector returned no usable corpus in this run, including a known message locator",
+    "google_drive": "connector returned no usable corpus in this run",
+    "library_files": "connector returned no usable corpus in this run",
+    "interpretation": "connector results are an access-coverage limitation, not evidence of non-existence or deletion"
+  },
+  "known_gaps": [
+    "Certified chronological docket/index for every section and incident, with a sealed court export.",
+    "Complete filing, service, LexNET/ATLANTE and finality chain for each material act.",
+    "Complete 20 January 2026 preliminary-hearing minutes and recording.",
+    "Certified 25 July 2023 hearing minutes, official audiovisual index and evidence rulings, plus the disposition of the 26 July programme.",
+    "Complete 18 May 2021 third-party offer, authority, funding, bond, appearance/hearing and exact procedural treatment.",
+    "Underlying AP complaint 375/22 order and reconciliation of conflicting 4/27 July 2022 recital dates.",
+    "Protocol 457 five-day court-return receipt, resulting court act/mandamiento and all-finca Registry/cancellation implementation.",
+    "Complete creditor assignment, final compensable-debt calculation and source-system accounting bridge.",
+    "Complete EUR 400,000 premises/pools title, cash, restitution and accounting chain.",
+    "AC report 5367/2022, later quarterly reports, estate ledger/bank records, final accounts and conclusion order.",
+    "Signed merits outcomes in RPL 421/2026 and combined RPL 3304/2025 and 3319/2025.",
+    "Native RFC822 export and full response/outcome chain for MAT-009 and filing receipts for editable specialist pleadings."
+  ],
+  "source_copy_crosswalk": [
+    {
+      "source_id": "SP-2018-02-27-AC-SECURITY-REQUEST",
+      "canonical_record": "C36-SUP-ACSEC-2018-02-27",
+      "relationship": "canonical_source_copy_with_public_derivative"
+    },
+    {
+      "source_id": "MAT-005",
+      "canonical_record": "C36-E032",
+      "relationship": "same_document_source_copy"
+    },
+    {
+      "source_id": "MAT-006",
+      "canonical_record": "C36-SUP-MAT-006",
+      "relationship": "canonical_source_copy"
+    },
+    {
+      "source_id": "MAT-007",
+      "canonical_record": "C36-SUP-MAT-007",
+      "relationship": "canonical_source_copy"
+    },
+    {
+      "source_id": "MAT-007-ALT-01",
+      "canonical_record": "C36-SUP-MAT-007",
+      "relationship": "alternate_facsimile_not_new_filing"
+    },
+    {
+      "source_id": "MAT-008",
+      "canonical_record": "C36-E040",
+      "relationship": "same_document_source_copy"
+    },
+    {
+      "source_id": "MAT-009",
+      "canonical_record": "C36-SUP-MAT-009",
+      "relationship": "canonical_rendered_copy_native_email_missing"
+    },
+    {
+      "source_id": "SP18-PHOTO-01",
+      "canonical_record": "C36-SUP-SP18-PHOTO-01",
+      "relationship": "canonical_compiled_derivative"
+    }
+  ],
+  "records": [
+    {
+      "canonical_id": "C36-E001",
+      "aliases": [
+        "E001"
+      ],
+      "period": "2012-2023",
+      "date": "2012-06-06",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Declaration of voluntary insolvency",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso ordinario 36/2012; NIG 3501647120120000351",
+      "source_system": "Gmail",
+      "source_locator": "message 163d0e6f6da5d4ed; AUTO Declaración Concurso LPB - DocExp 1997-14150 08junio2012.pdf; SHA-256 04b0454f773e9d74ccd847d09f3e24a9be6b8f4431f6954baebc8ffa586f7139",
+      "source_pages_or_units": "9",
+      "complete_copy_status": "yes",
+      "annex_status": "no schedules attached",
+      "direct_effect_or_proposition": "Declares LPB in voluntary concurso; retains LPB powers subject to AC intervention; appoints Francisco de Borja Rodríguez-Batllori Laffitte; orders updated inventory",
+      "conditions_or_limits": "Not a disposition or third-party-title decision",
+      "asset_scope": "LPB and LPB patrimony",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E002",
+      "aliases": [
+        "E002"
+      ],
+      "period": "2012-2023",
+      "date": "2017-01-20",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Modification of definitive texts concerning Owners' Community",
+      "issuer_or_actor": "Judge Juan Avello Formoso",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 1",
+      "source_system": "Gmail",
+      "source_locator": "message 163d0e6f6da5d4ed; AUTO Modificación Textos Definitivos CDAD PROP 26JAN2017.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying application and AC report not attached",
+      "direct_effect_or_proposition": "Adds contingent ordinary claim without own amount for pre-declaration Community fees; leaves during-concurso estate claim unchanged",
+      "conditions_or_limits": "Unappealable; does not quantify contingent claim or validate later Community figures",
+      "asset_scope": "Community creditor claims",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; supporting pack P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E003",
+      "aliases": [
+        "E003"
+      ],
+      "period": "2012-2023",
+      "date": "2017-12-19",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Opening of liquidation",
+      "issuer_or_actor": "Judge Juan Avello Formoso; LAJ Eduardo José Rebollo Sanz",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 19e7ee756d18c96f; DOCUMENTO Nº1 Notificacion Auto Apertura Liquidacion 26DIC2017.pdf",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Opens liquidation; suspends LPB powers over its patrimony; dissolves LPB; substitutes AC; requires plan and quarterly reports",
+      "conditions_or_limits": "No individual conveyance or third-party-property mechanism",
+      "asset_scope": "LPB patrimony",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E004",
+      "aliases": [
+        "E004"
+      ],
+      "period": "2012-2023",
+      "date": "2018-01-12",
+      "record_class": "judicial_act",
+      "document_type": "Reported providencia",
+      "title_or_function": "Requirement to exhibit complete CAM assignment deed",
+      "issuer_or_actor": "Court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, compliance filing and service missing",
+      "direct_effect_or_proposition": "Repository register identifies a requirement directed to CAM concerning the full assignment instrument",
+      "conditions_or_limits": "Secondary locator only; exact text and compliance cannot be inferred",
+      "asset_scope": "Creditor-position evidence",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E005",
+      "aliases": [
+        "E005"
+      ],
+      "period": "2012-2023",
+      "date": "2018-01-15",
+      "record_class": "party_filing",
+      "document_type": "Unilateral offer; Annex II",
+      "title_or_function": "CAM offer to insolvency administrator",
+      "issuer_or_actor": "Construcciones Acosta Matos, S.A.; signed by Laura Acosta Matos",
+      "court_or_forum": "Commercial submission related to Juzgado Mercantil nº 1",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; 2. ANEXO II. OFERTA DE CAM 15FEB2018.pdf",
+      "source_pages_or_units": "12",
+      "complete_copy_status": "yes",
+      "annex_status": "referenced authority deed and reasonable-value appraisal absent",
+      "direct_effect_or_proposition": "Offers future dación of 159 stated LPB fincas and €400,000 purchase of 31-finca branch; asserts €12,251,446.21 debt and €7,065,384.42 159-unit value",
+      "conditions_or_limits": "Offer only; no AC acceptance or judicial signature; no present possession, exploitation or surplus clause; second list duplicates 8579 and omits 8519",
+      "asset_scope": "159 offered LPB fincas; stated 31-finca branch; no third-party transfer",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; missing offer attachments P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E006",
+      "aliases": [
+        "E006"
+      ],
+      "period": "2012-2023",
+      "date": "2018-01-18",
+      "record_class": "party_filing",
+      "document_type": "AC filing",
+      "title_or_function": "Liquidation plan",
+      "issuer_or_actor": "Insolvency administrator Francisco de Borja Rodríguez-Batllori Laffitte",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive and Gmail",
+      "source_locator": "Google Drive; restricted source locator withheld; Gmail message 1963e7416170ea0b; PLAN DE LIQUIDACION DE LUCHY 15FEB2018.pdf",
+      "source_pages_or_units": "15",
+      "complete_copy_status": "yes",
+      "annex_status": "core body complete; Annex II separately controlled; exact filed ACTÚA Annex I absent",
+      "direct_effect_or_proposition": "Proposes LPB liquidation route; distinguishes €9,776,003.13 whole-complex appraisal including foreign fincas from €7,096,913.83 LPB real estate; lists unsupported receivables and intangibles",
+      "conditions_or_limits": "Not self-executing; required court approval, title verification, competition, conveyance and accounting",
+      "asset_scope": "LPB 159 apartments, 31 locales/pools and listed financial/intangible assets; foreign fincas excluded",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; exact Annex I and definitive inventory P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E007",
+      "aliases": [
+        "E007"
+      ],
+      "period": "2012-2023",
+      "date": "2018-02-15",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Recognition of CAM as successor secured-credit holder",
+      "issuer_or_actor": "Judge Alberto López Villarrubia; LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 1",
+      "source_system": "Gmail and Google Drive",
+      "source_locator": "Gmail message 1963e7416170ea0b; AUTO Modificación Textos Definitivos CAM+RETRACTO - 15FEB2018.pdf; restricted Drive source locator withheld",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "AC report, Protocol 2248 and appeal/finality pack missing",
+      "direct_effect_or_proposition": "Current repository control recognises CAM in place of PH122 for €857,373.81 plus €8,194,877.88 secured claims and contingent unquantified costs; it preserves definitive-text quantum on holder change",
+      "conditions_or_limits": "Current canonical date 15 February 2018; the source snapshot's 8/9/14-February layers require direct reinspection. The act changes creditor identity/recognised-credit treatment only and does not prove assignment economics, payment, later possession or finality.",
+      "asset_scope": "Creditor position only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; DATE-LAYER REINSPECTION OPEN",
+      "retrieval_priority": "P0 source reinspection, assignment economics and finality",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      },
+      "snapshot_reported_date": "2018-02-08",
+      "date_layer_conflict": {
+        "status": "SUPERSEDED_RECONSTRUCTION_REQUIRES_PRIMARY_REINSPECTION",
+        "current_control": "2018-02-15",
+        "superseded_snapshot": "2018-02-08 body; 2018-02-09/14 signatures",
+        "rule": "Do not repeat the snapshot layers as established facts without authenticating a distinct primary act."
+      }
+    },
+    {
+      "canonical_id": "C36-E008",
+      "aliases": [
+        "E008"
+      ],
+      "period": "2012-2023",
+      "date": "2018-04-16",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Approval of liquidation plan",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "7",
+      "complete_copy_status": "yes",
+      "annex_status": "core plan controlled; exact ACTÚA Annex I absent",
+      "direct_effect_or_proposition": "Approves plan; authorises 159-apartment dación and 31-finca €400,000 route; expressly excludes property of others",
+      "conditions_or_limits": "Publicity; ten-day better offer; later licitation; taxes/costs; difference and surplus rules; reporting; later cancellation order",
+      "asset_scope": "Enumerated LPB fincas; foreign property excluded",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E009",
+      "aliases": [
+        "E009"
+      ],
+      "period": "2012-2023",
+      "date": "2018-04-16",
+      "record_class": "judicial_act",
+      "document_type": "Auto aclaratorio",
+      "title_or_function": "Clarification of CAM interest within mortgage maxima",
+      "issuer_or_actor": "Judge Alberto López Villarrubia; LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 1",
+      "source_system": "Gmail and Google Drive",
+      "source_locator": "Gmail message 1963e7416170ea0b; Auto Aclaracion Intereses CAM (art 59LC) Responsabilidad Hipotecaria Pactada 16ABR2018.pdf; Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying accrual records absent",
+      "direct_effect_or_proposition": "Clarifies the earlier holder-substitution ruling so the interest component may increase up to mortgage-deed maxima",
+      "conditions_or_limits": "The clarification reportedly recites an 8 February date; that source recital does not displace the current 15 February 2018 date control and remains pending direct reinspection. It does not state caps had accrued; no euro liquidation, rate-period reconciliation, closing payoff or asset conveyance.",
+      "asset_scope": "Creditor quantum only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; DATE-RECITAL REINSPECTION OPEN",
+      "retrieval_priority": "controlled; accrual/payoff and date recital P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E010",
+      "aliases": [
+        "E010"
+      ],
+      "period": "2012-2023",
+      "date": "2018-04-26",
+      "record_class": "registry_record",
+      "document_type": "Nota simple",
+      "title_or_function": "Finca 8584 Matkator title",
+      "issuer_or_actor": "Registro de la Propiedad de Tías",
+      "court_or_forum": "Land Registry",
+      "proceeding": "Finca 8584; CRU 35019000361734",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; earlier copy 1XpPd4Jcx6jUr69mnKQzcD_QUclNwWl4A",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "post-2022 certified history absent",
+      "direct_effect_or_proposition": "Shows Matkator 100 percent title; acquisition 26 Jun 2015, Protocol 569",
+      "conditions_or_limits": "Informative note, not art. 225 certification; physical unit mappings conflict elsewhere",
+      "asset_scope": "Matkator finca 8584",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; certified history P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E011",
+      "aliases": [
+        "E011"
+      ],
+      "period": "2012-2023",
+      "date": "2018-04-26",
+      "record_class": "registry_record",
+      "document_type": "Nota simple",
+      "title_or_function": "Finca 8588 Matkator title",
+      "issuer_or_actor": "Registro de la Propiedad de Tías",
+      "court_or_forum": "Land Registry",
+      "proceeding": "Finca 8588; CRU 35019000361772",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "post-2022 certified history absent",
+      "direct_effect_or_proposition": "Shows Matkator 100 percent title; acquisition 1 Jun 2016, Protocol 412; mortgage noted",
+      "conditions_or_limits": "Informative note, not art. 225 certification; physical unit mappings conflict elsewhere",
+      "asset_scope": "Matkator finca 8588",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; certified history P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E012",
+      "aliases": [
+        "E012"
+      ],
+      "period": "2012-2023",
+      "date": "2018-06-04",
+      "record_class": "judicial_act",
+      "document_type": "Auto aclaratorio",
+      "title_or_function": "Clarification of plan approval",
+      "issuer_or_actor": "Judge Alberto López Villarrubia; LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 194a98a11920fefd; 20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "17 May balance certificates absent",
+      "direct_effect_or_proposition": "Clarifies competitive debt components, working-day period, deposit timing, no remate assignment and court-run licitation",
+      "conditions_or_limits": "Not a conveyance or final closing ledger; loan-2 printed components differ from subtotal by €30",
+      "asset_scope": "Same 159 plus 31 proposal",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; balance certificates P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E013",
+      "aliases": [
+        "E013"
+      ],
+      "period": "2012-2023",
+      "date": "2018-06-15",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Publicity and better-offer implementation",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 167c817fdf0b45e0; 10. Diligencia Notificación Liquidación 15JUN2018.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "publication receipts and last-publication calculation absent",
+      "direct_effect_or_proposition": "Orders notice-board and Public Insolvency Registry publication; ten days after last publication; licitation if a better offer appears",
+      "conditions_or_limits": "Procedural direction only; signed 18 Jun; no title, value or possession adjudication",
+      "asset_scope": "159-apartment and 31-finca LPB branches",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; publicity bundle P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E014",
+      "aliases": [
+        "E014"
+      ],
+      "period": "2012-2023",
+      "date": "2018-06-26",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Suspension of realisation pending appeal",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Suspends only realisation of listed mortgaged apartment fincas; other liquidation continues",
+      "conditions_or_limits": "No possession, works, exploitation, income or keys authority",
+      "asset_scope": "Listed mortgaged LPB apartments",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E015",
+      "aliases": [
+        "E015"
+      ],
+      "period": "2012-2023",
+      "date": "2018-07-24",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported court-office act",
+      "title_or_function": "Estate insufficiency and mass-claim payment issue",
+      "issuer_or_actor": "Court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket lead registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, filings and service absent",
+      "direct_effect_or_proposition": "Repository register identifies a mass-payment/insufficiency event later challenged by CAM",
+      "conditions_or_limits": "Secondary locator only; exact effect cannot be inferred",
+      "asset_scope": "Estate liquidity and mass claims",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E016",
+      "aliases": [
+        "E016"
+      ],
+      "period": "2012-2023",
+      "date": "2018-10-17",
+      "record_class": "party_filing",
+      "document_type": "AC filing",
+      "title_or_function": "Request for testimony of April and June autos",
+      "issuer_or_actor": "Insolvency administrator Francisco de Borja Rodríguez-Batllori Laffitte",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 19fa84e0224689b7; 0.20181017 Solicitud TESTIMONIO Concursal.pdf",
+      "source_pages_or_units": "1",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "AC requests testimony of existing plan-approval and suspension orders",
+      "conditions_or_limits": "Party application only; not a new merits authority or disposition",
+      "asset_scope": "Existing plan and suspension rulings",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E017",
+      "aliases": [
+        "E017"
+      ],
+      "period": "2012-2023",
+      "date": "2018-10-22",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Direction to deliver requested testimony",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 19fa84e0224689b7; 0.20181022 DIOR Entrega TESTIMONIO AC.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Directs delivery to the AC of testimony of the identified existing orders",
+      "conditions_or_limits": "Procedural implementation only; not new authority for disposition, possession or exploitation",
+      "asset_scope": "Existing plan and suspension rulings",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E018",
+      "aliases": [
+        "E018"
+      ],
+      "period": "2012-2023",
+      "date": "2018-11-21",
+      "record_class": "party_filing",
+      "document_type": "AC filing",
+      "title_or_function": "Opposition to CAM reposición on estate insufficiency",
+      "issuer_or_actor": "Insolvency administrator",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 167c817fdf0b45e0; Impugnación AC del Recurso de Reposición de CAM (21NOV2018).pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "native CAM burofax and terminal order absent",
+      "direct_effect_or_proposition": "AC states plan auto was not final and expects €400,000 from unencumbered branch while warning estate liquidity may remain insufficient",
+      "conditions_or_limits": "Actor position only, not judicial decision or prior authority for deed",
+      "asset_scope": "Estate liquidity and locales branch",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; related filings P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E019",
+      "aliases": [
+        "E019"
+      ],
+      "period": "2012-2023",
+      "date": "2018-11-28",
+      "record_class": "implementation_or_notarial_record",
+      "document_type": "Public deed 2150",
+      "title_or_function": "Direct sale of locales and pools",
+      "issuer_or_actor": "AC for LPB; CAM; Notary Manuel Guzmán Ramos",
+      "court_or_forum": "Notarial",
+      "proceeding": "Related to Concurso 36/2012 plan",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; alternate bundle 179RCavcOp4K9bJXXo_0Xr_chXzjaP-19; SHA-256 1ab0fca1692eb202dd0b439a165e56785550d7bc320c947d5953a32f0fc8c9c5",
+      "source_pages_or_units": "component span not independently controlled within 282-page bundle",
+      "complete_copy_status": "not independently established",
+      "annex_status": "independent bank and final registry pack absent; exact component boundaries require control",
+      "direct_effect_or_proposition": "Purports to sell 31 fincas for €400,000; recites cheque, receipt and notarial possession",
+      "conditions_or_limits": "Executed before 12 Dec LAJ direction; later convalidation refused; independent bank debit/credit, final application and post-ruling cure unresolved",
+      "asset_scope": "Fincas 8508–8536, 8653 and 8654",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled bundle; component topology and money/title trail P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E020",
+      "aliases": [
+        "E020"
+      ],
+      "period": "2012-2023",
+      "date": "2018-12-12",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Preclusion and direction to formalise locales sale",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 167c817fdf0b45e0; Diligencia Preclusión Plazo Venta Locales-Piscinas (12DIC2018).pdf",
+      "source_pages_or_units": "1",
+      "complete_copy_status": "yes",
+      "annex_status": "publication computation not attached",
+      "direct_effect_or_proposition": "Declares better-offer period closed and directs AC to formalise sale of fincas 8508–8536, 8653 and 8654",
+      "conditions_or_limits": "Issued 14 days after deed; challengeable; later set aside by 24 Oct 2019 auto",
+      "asset_scope": "31 LPB locales/pools fincas only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E021",
+      "aliases": [
+        "E021"
+      ],
+      "period": "2012-2023",
+      "date": "2018-12-20",
+      "record_class": "report_inventory_or_certificate",
+      "document_type": "AC quarterly report",
+      "title_or_function": "Fourth liquidation report and locales receipt/application account",
+      "issuer_or_actor": "Insolvency administrator",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Google Drive and Gmail",
+      "source_locator": "Google Drive; restricted source locator withheld; Gmail message 18e95e07309c5491; AWESELL - 4º Informe trimestral LUCHY PLAYA BLANCA 4154-6009-1161 v.1.pdf",
+      "source_pages_or_units": "8 PDF pages: cover plus numbered 1-7",
+      "complete_copy_status": "yes",
+      "annex_status": "independent bank records and final ledger absent",
+      "direct_effect_or_proposition": "AC reports €400,000 cheque effective, LPB collection account opened, identified AC remuneration paid and other estate creditors contacted; lists €239,743.79 estate claims",
+      "conditions_or_limits": "AC representation, not independent bank proof or judicial validation; later non-convalidation controls authority question",
+      "asset_scope": "Locales proceeds and estate accounting",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; bank/final ledger P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E022",
+      "aliases": [
+        "E022"
+      ],
+      "period": "2012-2023",
+      "date": "2019-01-09",
+      "record_class": "registry_record",
+      "document_type": "Registry qualification",
+      "title_or_function": "Ob-rem and registration obstacle concerning locales package",
+      "issuer_or_actor": "Registro de la Propiedad de Tías",
+      "court_or_forum": "Land Registry",
+      "proceeding": "Protocol 2150 title presentation",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; 282-page mixed bundle",
+      "source_pages_or_units": "component span not independently controlled within 282-page bundle",
+      "complete_copy_status": "not independently established",
+      "annex_status": "exact component boundaries and complete later registration history absent",
+      "direct_effect_or_proposition": "Identifies an ob-rem/cancellation obstacle and suspends relevant treatment",
+      "conditions_or_limits": "Registry qualification, not judicial title adjudication or final registry history",
+      "asset_scope": "Locales/title package",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled bundle; component topology and certified histories P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E023",
+      "aliases": [
+        "E023"
+      ],
+      "period": "2012-2023",
+      "date": "2019-01-10",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Admit challenges and make AC report available",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 16852afcf702f59e; Adjunto1(30).pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying challenges not appended to act",
+      "direct_effect_or_proposition": "Admits LPB and Aweswell reposiciones; gives five days to oppose; routes nullity and extension to judge; places AC report before parties",
+      "conditions_or_limits": "Routing only; no merits decision or sale validation; dated 10 Jan and signed 14 Jan",
+      "asset_scope": "Locales challenge and liquidation reporting",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E024",
+      "aliases": [
+        "E024"
+      ],
+      "period": "2012-2023",
+      "date": "2019-01-10",
+      "record_class": "party_filing",
+      "document_type": "Joint party filing",
+      "title_or_function": "Request for disclosure of AC decisions and contracts",
+      "issuer_or_actor": "LPB and Aweswell",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Google Drive and Gmail",
+      "source_locator": "Google Drive; restricted source locator withheld; Gmail message 1683bff3fa36b376 LexNET receipt/extract",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "referenced registry notes and earlier appeals not appended",
+      "direct_effect_or_proposition": "Puts alleged pre-authorisation deed timing, pending challenges and ob-rem issues before court; requests AC disclosure",
+      "conditions_or_limits": "Proves filing/representations, not truth of allegations or judicial acceptance",
+      "asset_scope": "Fincas 8508–8536, 8653 and 8654 and asserted ob-rem links",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E025",
+      "aliases": [
+        "E025"
+      ],
+      "period": "2012-2023",
+      "date": "2019-03-11",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "LAJ act",
+      "title_or_function": "Routing of challenges and requests",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 19fa84e0224689b7; 0.20190311 DIOR Testimonios Fiscalia Comision Delitos AC.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying allegations and terminal rulings not attached",
+      "direct_effect_or_proposition": "Records procedural status and routes specified applications to judge",
+      "conditions_or_limits": "Does not accept underlying allegations or supply merits authority",
+      "asset_scope": "Locales and procedural requests",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E026",
+      "aliases": [
+        "E026"
+      ],
+      "period": "2012-2023",
+      "date": "2019-03-20",
+      "record_class": "party_filing",
+      "document_type": "AC application",
+      "title_or_function": "Request to convalidate Protocol 2150",
+      "issuer_or_actor": "Insolvency administrator",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Later primary judicial recital",
+      "source_locator": "Auto of 24 Oct 2019, Google Drive; restricted source locator withheld, identifies application/date",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original application and annexes absent",
+      "direct_effect_or_proposition": "Later auto proves AC sought post-event convalidation",
+      "conditions_or_limits": "Application is not approval; primary original still missing",
+      "asset_scope": "31-finca locales/pools deed",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E027",
+      "aliases": [
+        "E027"
+      ],
+      "period": "2012-2023",
+      "date": "2019-05-07",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported decreto",
+      "title_or_function": "Intermediate resolution of challenges to 12 Dec act",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket lead registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, service and review pack absent",
+      "direct_effect_or_proposition": "Repository register identifies an intermediate decree",
+      "conditions_or_limits": "Secondary locator only; cannot be used as final validation or title ruling",
+      "asset_scope": "Locales procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E028",
+      "aliases": [
+        "E028"
+      ],
+      "period": "2012-2023",
+      "date": "2019-07-23",
+      "record_class": "judicial_act",
+      "document_type": "Auto de apelación 78/2019",
+      "title_or_function": "Appeal on plan and debt limits",
+      "issuer_or_actor": "President Juan José Cobo Plana; Magistrates Jesús Ángel Suárez Ramos and Margarita Hidalgo Bilbao",
+      "court_or_forum": "Audiencia Provincial de Las Palmas, Section 4",
+      "proceeding": "Rollo 1094/2018",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "9",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying appraisal and balance certificates absent",
+      "direct_effect_or_proposition": "Partially allows appeal as to interest limits; records €6,607,551.87 159-unit value and AC €12,251,446.21 burden",
+      "conditions_or_limits": "Definitive default-interest amount/classification and closing calculation reserved; the AP recital's €9,052,877.88 exceeds the earlier component total by €626.19. That recital does not displace the current 15 February 2018 date control.",
+      "asset_scope": "159 mortgaged LPB apartments plus separate €400,000 branch",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; calculations P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E029",
+      "aliases": [
+        "E029"
+      ],
+      "period": "2012-2023",
+      "date": "2019-10-24",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Refusal to convalidate Protocol 2150",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "6",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying AC application/opposition pack absent",
+      "direct_effect_or_proposition": "Sets aside 12 Dec act; refuses convalidation; orders republication",
+      "conditions_or_limits": "Reasoning contemplates undoing if better offer authorised; not a self-executing global civil-nullity judgment",
+      "asset_scope": "31-finca branch and unitary CAM proposal",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E030",
+      "aliases": [
+        "E030"
+      ],
+      "period": "2012-2023",
+      "date": "2019-10-24",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Dismiss AC request to expel Aweswell",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 172134c64f5c98dd; 29b. Auto Denegada Expulsión de Aweswell - 25OCT2019.pdf; court verification code withheld",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "AC 3 May application not attached",
+      "direct_effect_or_proposition": "Preserves Aweswell participation because its earlier admission went unchallenged",
+      "conditions_or_limits": "Standing only; no ownership or merits finding; body date controls over filename",
+      "asset_scope": "Procedural participation",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E031",
+      "aliases": [
+        "E031"
+      ],
+      "period": "2012-2023",
+      "date": "2020-02-04",
+      "record_class": "judicial_act",
+      "document_type": "Providencia",
+      "title_or_function": "One-year liquidation extension",
+      "issuer_or_actor": "Court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Later primary judicial recital",
+      "source_locator": "24 Feb 2021 extension auto, Gmail message 18a8d0cbb13b9ecb",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, application, service and computation absent",
+      "direct_effect_or_proposition": "Later auto expressly records a one-year extension",
+      "conditions_or_limits": "Existence/effect proved through later recital; original precise terms missing",
+      "asset_scope": "Liquidation timetable",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E032",
+      "aliases": [
+        "E032"
+      ],
+      "period": "2012-2023",
+      "date": "2020-05-12",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Dismiss LPB reposición and confirm non-convalidation",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; MAT-005__Auto_Desestimacion_LPB_12MAY2020.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying appeal and response filings absent",
+      "direct_effect_or_proposition": "Confirms 24 Oct 2019 ruling; treats AP cap route as binding; reserves later hearing on certifications",
+      "conditions_or_limits": "Demolition/access allegations rejected as new and late, not decided on truth; no new conveyance or possession authority",
+      "asset_scope": "Locales/common-area allegations and debt procedure",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E033",
+      "aliases": [
+        "E033"
+      ],
+      "period": "2012-2023",
+      "date": "2020-05-12",
+      "record_class": "judicial_act",
+      "document_type": "Auto 83/2020",
+      "title_or_function": "Uphold Aweswell standing and archive AC nullity incident",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 172134c64f5c98dd; Auto 12MAY2020 Aweswell permanece.pdf; court verification code withheld",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying nullity application absent",
+      "direct_effect_or_proposition": "Allows Aweswell reposición; revokes 3 Jul 2019 providencia; orders AC nullity incident inadmissible and archived",
+      "conditions_or_limits": "No appeal; standing only, not ownership or merits adjudication",
+      "asset_scope": "Procedural participation",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E034",
+      "aliases": [
+        "E034"
+      ],
+      "period": "2012-2023",
+      "date": "2021-01-13",
+      "record_class": "judicial_act",
+      "document_type": "Reported providencia",
+      "title_or_function": "Preservation measure preceding 24 Feb ruling",
+      "issuer_or_actor": "Court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket lead registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, application and service absent",
+      "direct_effect_or_proposition": "Repository register identifies a preservation act later considered in 24 Feb auto",
+      "conditions_or_limits": "Secondary locator only; exact operative terms unknown",
+      "asset_scope": "Alleged works/access and estate preservation",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E035",
+      "aliases": [
+        "E035"
+      ],
+      "period": "2012-2023",
+      "date": "2021-01-18",
+      "record_class": "judicial_act",
+      "document_type": "Auto aclaratorio",
+      "title_or_function": "Refuse clarification of 12 May 2020 ruling",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; 30. Auto Aclaración denegada 18ENE2021.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Refuses to reopen interest/res-judicata holding through clarification",
+      "conditions_or_limits": "No new euro calculation, asset effect or title; final under art. 214.4 LEC",
+      "asset_scope": "Debt procedure only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E036",
+      "aliases": [
+        "E036"
+      ],
+      "period": "2012-2023",
+      "date": "2021-01-25",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Republication of CAM proposal",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "4",
+      "complete_copy_status": "yes",
+      "annex_status": "publication/service and underlying certifications incomplete",
+      "direct_effect_or_proposition": "Reopens ten-working-day better-offer route with debt, €400,000, costs and Community conditions",
+      "conditions_or_limits": "Figures are competitive-entry conditions, not necessarily final allowed debts",
+      "asset_scope": "Same 159 plus 31 LPB branches",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E037",
+      "aliases": [
+        "E037"
+      ],
+      "period": "2012-2023",
+      "date": "2021-01-29",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Edicto and cédula de notificación",
+      "title_or_function": "Publication of better-posture conditions",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; 22. EDICTO Cedula de Notificacion 29ENE2021.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "proof of every publication/service route absent",
+      "direct_effect_or_proposition": "Publishes €11,941,921.02 first-rank plus €1,226,161 second-rank components, separate €400,000, €1,145,798.29 Community component and unknown taxes/costs",
+      "conditions_or_limits": "Notice and competitive threshold only; not adjudication, final debt or realised price",
+      "asset_scope": "Enumerated 159 plus 31 LPB branches",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; publicity/service P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E038",
+      "aliases": [
+        "E038"
+      ],
+      "period": "2012-2023",
+      "date": "2021-02-08",
+      "record_class": "party_filing",
+      "document_type": "Native proposed offer text",
+      "title_or_function": "third-party bidder €14.8m better posture",
+      "issuer_or_actor": "third-party bidder Corporación",
+      "court_or_forum": "Proposed submission to Juzgado Mercantil nº 1 and AC",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Native Drive document; restricted source locator withheld; oferta vinculante third-party bidder 8feb2021",
+      "source_pages_or_units": "no fixed page count",
+      "complete_copy_status": "yes",
+      "annex_status": "examined version contains placeholders and blank execution/acceptance blocks",
+      "direct_effect_or_proposition": "Proposes €14.8m own-funds cash purchase subject to conditions and future deed",
+      "conditions_or_limits": "Proves proposed text only; filing, authority, execution, acceptance, proof of funds and binding effect unresolved",
+      "asset_scope": "Enumerated 159 plus 31 package; hotel shorthand",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "court-filed executed offer and funds pack P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E039",
+      "aliases": [
+        "E039"
+      ],
+      "period": "2012-2023",
+      "date": "2021-02-24",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "One-year liquidation extension",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 18a8d0cbb13b9ecb; AUTO Ampliación Liquidación (incluye accion vs Bankia por SWAP) 24FEB2021.pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "application and service/finality pack absent",
+      "direct_effect_or_proposition": "Extends liquidation one year from order due to difficulties and contemplated Bankia nullity actions",
+      "conditions_or_limits": "If unfinished AC must seek and explain new extension; no disposition, possession or debt effect",
+      "asset_scope": "Liquidation timetable only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; downstream extension/conclusion P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E040",
+      "aliases": [
+        "E040"
+      ],
+      "period": "2012-2023",
+      "date": "2021-02-24",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Reposición and urgent measures concerning works/access",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "4",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying photographs/expert materials incomplete",
+      "direct_effect_or_proposition": "Maintains refusal of inspection, expert and stop-work measures; records competing positions and mixed ownership",
+      "conditions_or_limits": "Not title, possession or exploitation authority; truth of allegations not determined",
+      "asset_scope": "Mixed complex and alleged locales works",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E041",
+      "aliases": [
+        "E041"
+      ],
+      "period": "2012-2023",
+      "date": "2021-05-06",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Confirm 25 January republication order",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "4",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Confirms republication and expressly refuses to adjudicate existence/amount of Community credit",
+      "conditions_or_limits": "Bid condition is not an allowed-credit finding; works/control claims outside order",
+      "asset_scope": "Competitive proposal perimeter",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E042",
+      "aliases": [
+        "E042"
+      ],
+      "period": "2012-2023",
+      "date": "2021-05-06",
+      "record_class": "judicial_act",
+      "document_type": "Auto 356/2021",
+      "title_or_function": "Reject LPB nullity application on default interest",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Nulidad LOPJ-12 in Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 1796aa406ac83582; Adjunto1(26).pdf; court verification code withheld",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying nullity application absent",
+      "direct_effect_or_proposition": "Dismisses LPB attempt to revisit default-interest exclusion through nullity",
+      "conditions_or_limits": "No appeal; no new euro calculation, title or possession effect",
+      "asset_scope": "Debt procedure only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E043",
+      "aliases": [
+        "E043"
+      ],
+      "period": "2012-2023",
+      "date": "2021-05-12",
+      "record_class": "judicial_act",
+      "document_type": "Providencia",
+      "title_or_function": "Convene licitation appearance and set third-party bidder bond",
+      "issuer_or_actor": "Judge Alberto López Villarrubia; LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "appearance recording and court-filed third-party bidder pack absent",
+      "direct_effect_or_proposition": "Opens art. 210.4 licitation; sets 18 May appearance and €735,694.02 bond",
+      "conditions_or_limits": "Reposición non-suspensive; third-party bidder had to attend and deposit",
+      "asset_scope": "Enumerated 159 plus 31 branches",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; third-party bidder/appearance pack P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E044",
+      "aliases": [
+        "E044"
+      ],
+      "period": "2012-2023",
+      "date": "2021-05-18",
+      "record_class": "judicial_act",
+      "document_type": "Auto 164/2021",
+      "title_or_function": "Definitive approval of CAM proposal",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "5",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying appearance recording absent",
+      "direct_effect_or_proposition": "Definitively approves CAM proposal after third-party bidder nonappearance and nondeposit",
+      "conditions_or_limits": "Still required finality/enforceability, lawful debt, deeds, €400,000 branch, costs, reporting, cancellations, registry and accounts",
+      "asset_scope": "159 enumerated LPB apartments plus 31-finca branch",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E045",
+      "aliases": [
+        "E045"
+      ],
+      "period": "2012-2023",
+      "date": "2021-07-08",
+      "record_class": "judicial_act",
+      "document_type": "Reported providencia",
+      "title_or_function": "Require detailed AC liquidation report and warn of possible responsibility",
+      "issuer_or_actor": "Court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket lead registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, service and AC response absent",
+      "direct_effect_or_proposition": "Repository register identifies a judicial demand for detailed liquidation reporting",
+      "conditions_or_limits": "Secondary locator only; exact warning and compliance unknown",
+      "asset_scope": "Liquidation accounting and AC conduct",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E046",
+      "aliases": [
+        "E046"
+      ],
+      "period": "2012-2023",
+      "date": "2021-10-15",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Dismiss challenges to 18 May and confirm approval",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "5",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Dismisses LPB/Aweswell reposiciones and confirms 18 May; describes process as improvement-of-offer, not formal auction",
+      "conditions_or_limits": "No proof of performance, final debt, title, cancellation or surplus",
+      "asset_scope": "Fincas propiedad de la concursada",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E047",
+      "aliases": [
+        "E047"
+      ],
+      "period": "2012-2023",
+      "date": "2021-10-15",
+      "record_class": "judicial_act",
+      "document_type": "Auto",
+      "title_or_function": "Dismiss challenges to 12 May providencia",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Dismisses challenges as moot but uses auction/adjudication terminology",
+      "conditions_or_limits": "Terminology later clarified; no scope enlargement or performance proof",
+      "asset_scope": "Same proposal",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; CONTRADICTED",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E048",
+      "aliases": [
+        "E048"
+      ],
+      "period": "2012-2023",
+      "date": "2021-10-27",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Receipt of AC quarterly report 7425/2021",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld",
+      "source_pages_or_units": "1",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying report 7425/2021 absent",
+      "direct_effect_or_proposition": "Joins and transfers quarterly report",
+      "conditions_or_limits": "Proves receipt only; report contents unknown",
+      "asset_scope": "Liquidation status",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P1 report",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E049",
+      "aliases": [
+        "E049"
+      ],
+      "period": "2012-2023",
+      "date": "2022-01-25",
+      "record_class": "report_inventory_or_certificate",
+      "document_type": "AC quarterly report",
+      "title_or_function": "Status before dación and mass-credit accounting",
+      "issuer_or_actor": "Insolvency administrator",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 17ebb618b0608771; Adjunto2(46).pdf",
+      "source_pages_or_units": "4",
+      "complete_copy_status": "yes",
+      "annex_status": "post-deed accounts absent",
+      "direct_effect_or_proposition": "Reports deed still outstanding, treasury €2,472.58 and detailed mass-credit payments; no surplus payment reported",
+      "conditions_or_limits": "AC representation, not merits ruling or final closing ledger; says procedural challenges remained",
+      "asset_scope": "Liquidation status and treasury",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled; post-deed accounts P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E050",
+      "aliases": [
+        "E050"
+      ],
+      "period": "2012-2023",
+      "date": "2022-01-26",
+      "record_class": "judicial_act",
+      "document_type": "Auto aclaratorio A",
+      "title_or_function": "Clarify 15 October order concerning 12 May providencia",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 17ea1b081fb1b620; Adjunto1(72).pdf",
+      "source_pages_or_units": "2",
+      "complete_copy_status": "yes",
+      "annex_status": "individual responses/service log absent",
+      "direct_effect_or_proposition": "Clarifies event was better-offer licitation appearance, not auction",
+      "conditions_or_limits": "Clarification only; no original approval, conveyance, consideration, scope enlargement or surplus",
+      "asset_scope": "No asset-scope change",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E051",
+      "aliases": [
+        "E051"
+      ],
+      "period": "2012-2023",
+      "date": "2022-01-26",
+      "record_class": "judicial_act",
+      "document_type": "Auto aclaratorio B",
+      "title_or_function": "Clarify and complete other 15 October order",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, Section 5",
+      "source_system": "Gmail",
+      "source_locator": "message 17ea1adf8c8ee44a; Adjunto1(71).pdf",
+      "source_pages_or_units": "3",
+      "complete_copy_status": "yes",
+      "annex_status": "individual responses/service log absent",
+      "direct_effect_or_proposition": "Resolves omissions/date; records July 2021 ownership publicity was put before court but held irrelevant to finca realisation",
+      "conditions_or_limits": "Recital is not whole-hotel title finding; no conveyance, debt or surplus decision",
+      "asset_scope": "No asset-scope change",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E052",
+      "aliases": [
+        "E052"
+      ],
+      "period": "2012-2023",
+      "date": "2022-01-31",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Receipt of 25 January AC report",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 17ebb618b0608771; Adjunto1(74).pdf",
+      "source_pages_or_units": "1",
+      "complete_copy_status": "yes",
+      "annex_status": "none indicated",
+      "direct_effect_or_proposition": "Receives report, transfers it to personated parties and makes it available to others",
+      "conditions_or_limits": "Does not adopt every reported fact; reposición available",
+      "asset_scope": "Liquidation status",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT",
+      "retrieval_priority": "controlled",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E053",
+      "aliases": [
+        "E053"
+      ],
+      "period": "2012-2023",
+      "date": "2022-02-11",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported LAJ act",
+      "title_or_function": "Separate act in testimony/finality chain",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; appeal/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, service and exact effect absent",
+      "direct_effect_or_proposition": "Repository register identifies a separate act later challenged",
+      "conditions_or_limits": "Secondary locator only; cannot infer exact finality effect",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E054",
+      "aliases": [
+        "E054"
+      ],
+      "period": "2012-2023",
+      "date": "2022-02-14",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "CAM testimony request and court-office finality treatment",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Gmail",
+      "source_locator": "message 194a98a11920fefd; 20220214 DIOR Entrega TESTIMONIO 3 CAM.pdf",
+      "source_pages_or_units": "1",
+      "complete_copy_status": "yes",
+      "annex_status": "complete testimony and later challenge/review pack absent",
+      "direct_effect_or_proposition": "Orders testimony of 18 May, 15 October confirmation and 26 January clarification, stating finality",
+      "conditions_or_limits": "Not disposition or condition-performance proof; later docket leads show review continued through July",
+      "asset_scope": "Judicial approval testimony",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; terminal finality P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E055",
+      "aliases": [
+        "E055"
+      ],
+      "period": "2012-2023",
+      "date": "2022-02-21",
+      "record_class": "implementation_or_notarial_record",
+      "document_type": "Public deed 457",
+      "title_or_function": "Dación implementation",
+      "issuer_or_actor": "AC Francisco de Borja Rodríguez-Batllori Laffitte for LPB; Laura Patricia Acosta Matos for CAM; Notary José del Cerro Peñalver",
+      "court_or_forum": "Notarial",
+      "proceeding": "Implementation of Concurso 36/2012 orders",
+      "source_system": "Gmail",
+      "source_locator": "message 18ab89a1775e61b3; Escritura de Adjudicacion a CAM 21FEB2022.pdf; duplicate message 18f6ed9bab25f193, Doc35 escritura venta.pdf",
+      "source_pages_or_units": "76",
+      "complete_copy_status": "yes",
+      "annex_status": "post-deed court, registry and accounting pack absent",
+      "direct_effect_or_proposition": "Declares conveyance of 159 scheduled LPB fincas; states €13,168,082.02 debt consideration; traditio on deed date; requests cancellation",
+      "conditions_or_limits": "AC to report in five natural days; deed does not prove final allowed debt, third-party title, charge cancellation, locales branch or surplus performance",
+      "asset_scope": "159 scheduled LPB apartment fincas only",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; implementation P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E056",
+      "aliases": [
+        "E056"
+      ],
+      "period": "2012-2023",
+      "date": "2022-03-09",
+      "record_class": "judicial_act",
+      "document_type": "Reported Auto",
+      "title_or_function": "Inadmit appeals against 15 October autos",
+      "issuer_or_actor": "Judge/court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; appeal/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, applications and service absent",
+      "direct_effect_or_proposition": "Repository register identifies an inadmission ruling",
+      "conditions_or_limits": "Secondary locator only; exact effect and downstream review cannot be inferred",
+      "asset_scope": "Approval/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E057",
+      "aliases": [
+        "E057"
+      ],
+      "period": "2012-2023",
+      "date": "2022-04-26",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Decreto",
+      "title_or_function": "Dismiss reposición against 11 February act",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; appeal/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, service and review pack absent",
+      "direct_effect_or_proposition": "Repository register identifies dismissal of one reposición",
+      "conditions_or_limits": "Distinct from same-date decree on 14 Feb act; terminal effect unproved",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E058",
+      "aliases": [
+        "E058"
+      ],
+      "period": "2012-2023",
+      "date": "2022-04-26",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Decreto",
+      "title_or_function": "Dismiss reposición against 14 February act",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; appeal/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "original, service and review pack absent",
+      "direct_effect_or_proposition": "Repository register identifies dismissal of a separate reposición",
+      "conditions_or_limits": "Distinct from same-date decree on 11 Feb act; terminal effect unproved",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E059",
+      "aliases": [
+        "E059"
+      ],
+      "period": "2012-2023",
+      "date": "2022-05-06",
+      "record_class": "registry_record",
+      "document_type": "Nota simple",
+      "title_or_function": "Finca 8751 title and charge state",
+      "issuer_or_actor": "Registro de la Propiedad de Tías",
+      "court_or_forum": "Land Registry",
+      "proceeding": "Finca 8751; CRU 35019000363400",
+      "source_system": "Gmail",
+      "source_locator": "message 18cff447871fa30f; 11. 2022FEB21 Land Registry Certification of Transfer of Title to CAM SL and charges to CAM SA.pdf; CSV 235019286750B8FD",
+      "source_pages_or_units": "5",
+      "complete_copy_status": "yes",
+      "annex_status": "later art. 225 certification and cancellation history absent",
+      "direct_effect_or_proposition": "Shows CAM 100 percent title by Protocol 457; mortgage remains under CARGAS; records SAREB to PH122 to CAM chain",
+      "conditions_or_limits": "Informative note only; not proof of clean title or every finca",
+      "asset_scope": "One sampled LPB finca",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "controlled; later certification P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E060",
+      "aliases": [
+        "E060"
+      ],
+      "period": "2012-2023",
+      "date": "2022-06-16",
+      "record_class": "judicial_act",
+      "document_type": "Reported Providencia family",
+      "title_or_function": "Initial inadmission of Aweswell review request(s)",
+      "issuer_or_actor": "Judge/court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary providencia(s), service and applications absent",
+      "direct_effect_or_proposition": "Registers say review request(s) were initially inadmitted for supposed missing deposits",
+      "conditions_or_limits": "Secondary locator only; exact number/text/effect cannot be inferred and the step was reportedly annulled 13 Jul",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E061",
+      "aliases": [
+        "E061"
+      ],
+      "period": "2012-2023",
+      "date": "2022-06-20",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Diligencia",
+      "title_or_function": "Deposit/error identification and ex officio nullity routing",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act, deposits and service absent",
+      "direct_effect_or_proposition": "Register says deposits were identified, possible error recorded and an ex officio nullity piece opened",
+      "conditions_or_limits": "Secondary locator only; no merits or terminal finality inference",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E062",
+      "aliases": [
+        "E062"
+      ],
+      "period": "2012-2023",
+      "date": "2022-06-20",
+      "record_class": "judicial_act",
+      "document_type": "Reported Providencia",
+      "title_or_function": "Hearing of parties on ex officio nullity",
+      "issuer_or_actor": "Judge/court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act, submissions and service absent",
+      "direct_effect_or_proposition": "Register says parties were given time to address nullity",
+      "conditions_or_limits": "Secondary locator only; separate from same-date LAJ act",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E063",
+      "aliases": [
+        "E063"
+      ],
+      "period": "2012-2023",
+      "date": "2022-07-13",
+      "record_class": "judicial_act",
+      "document_type": "Reported Auto",
+      "title_or_function": "Nullity of 16 June providencia",
+      "issuer_or_actor": "Judge/court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary auto, submissions and service absent",
+      "direct_effect_or_proposition": "Register says the 16 Jun providencia was declared null/not issued while remaining proceedings were preserved",
+      "conditions_or_limits": "Secondary locator only; exact operative text and remedies unknown",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E064",
+      "aliases": [
+        "E064"
+      ],
+      "period": "2012-2023",
+      "date": "2022-07-14",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Diligencia",
+      "title_or_function": "Admission of Aweswell review request(s)",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act, review requests and service absent",
+      "direct_effect_or_proposition": "Register says Aweswell review request(s) were admitted after correction of the deposit error",
+      "conditions_or_limits": "Secondary locator only; terminal decision absent",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E065",
+      "aliases": [
+        "E065"
+      ],
+      "period": "2012-2023",
+      "date": "2022-07-21",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Diligencia",
+      "title_or_function": "Nullity/review procedural routing",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act and service absent",
+      "direct_effect_or_proposition": "Register identifies a further LAJ routing event",
+      "conditions_or_limits": "Secondary locator only; exact effect cannot be inferred",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E066",
+      "aliases": [
+        "E066"
+      ],
+      "period": "2012-2023",
+      "date": "2022-07-26",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Diligencia",
+      "title_or_function": "Nullity/review procedural routing",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act and service absent",
+      "direct_effect_or_proposition": "Register identifies a further LAJ routing event",
+      "conditions_or_limits": "Secondary locator only; exact effect cannot be inferred",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E067",
+      "aliases": [
+        "E067"
+      ],
+      "period": "2012-2023",
+      "date": "2022-07-27",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Diligencia",
+      "title_or_function": "Nullity/review procedural routing",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality register",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act and service absent",
+      "direct_effect_or_proposition": "Register identifies a further LAJ routing event",
+      "conditions_or_limits": "Secondary locator only; exact effect cannot be inferred",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E068",
+      "aliases": [
+        "E068"
+      ],
+      "period": "2012-2023",
+      "date": "2022-07-28",
+      "record_class": "laj_or_court_office_act",
+      "document_type": "Reported Diligencia",
+      "title_or_function": "Submission of review file to judge",
+      "issuer_or_actor": "LAJ/court office",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Repository docket lead",
+      "source_locator": "Por Derecho commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; docket/finality registers",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "primary act and terminal judicial decision absent",
+      "direct_effect_or_proposition": "Register says file was put before the judge for resolution",
+      "conditions_or_limits": "Secondary locator only; ultimate finality cannot be declared",
+      "asset_scope": "Testimony/finality procedure",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E069",
+      "aliases": [
+        "E069"
+      ],
+      "period": "2012-2023",
+      "date": "2022-11-16",
+      "record_class": "other_evidential_record",
+      "document_type": "BORME notice",
+      "title_or_function": "CAM to HNT segregation announcement",
+      "issuer_or_actor": "CAM and Hotel New Trend corporate bodies",
+      "court_or_forum": "BORME",
+      "proceeding": "Boards reportedly approved 30 Oct 2022",
+      "source_system": "Official web",
+      "source_locator": "https://www.boe.es/diario_borme/txt.php?id=BORME-C-2022-7271",
+      "source_pages_or_units": "1",
+      "complete_copy_status": "yes",
+      "annex_status": "segregation project, deed and registry schedule absent",
+      "direct_effect_or_proposition": "Announces approval of in-block universal succession of described Sun Park economic unit to HNT",
+      "conditions_or_limits": "Notice does not prove execution, registration or CAM title to every third-party asset",
+      "asset_scope": "Stated economic unit; exact perimeter unresolved",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "P0 underlying project",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E070",
+      "aliases": [
+        "E070"
+      ],
+      "period": "2012-2023",
+      "date": "2023-09-28",
+      "record_class": "judicial_act",
+      "document_type": "Sentencia 163/2023",
+      "title_or_function": "First-instance culpability judgment",
+      "issuer_or_actor": "Judge Alberto López Villarrubia",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012, culpability section",
+      "source_system": "Google Drive",
+      "source_locator": "Google Drive; restricted source locator withheld; misleading filename AUTO_CONCURSO_CULPOSO",
+      "source_pages_or_units": "27",
+      "complete_copy_status": "yes",
+      "annex_status": "appeal/finality record absent",
+      "direct_effect_or_proposition": "Civil-insolvency culpability findings; records passive €9,469,157.93 and specially secured €9,052,251.69",
+      "conditions_or_limits": "Not criminal conviction; not final without appeal record; no retrospective title cure",
+      "asset_scope": "Control and debt history",
+      "evidence_label": "PROVEN BY PRIMARY DOCUMENT; UNRESOLVED",
+      "retrieval_priority": "P1 appeal",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E071",
+      "aliases": [
+        "E071"
+      ],
+      "period": "2012-2023",
+      "date": "unknown",
+      "record_class": "judicial_or_laj_type_unresolved",
+      "document_type": "Auto or decreto",
+      "title_or_function": "Conclusion or termination of insolvency",
+      "issuer_or_actor": "Court",
+      "court_or_forum": "Juzgado de lo Mercantil nº 1 de Las Palmas",
+      "proceeding": "Concurso 36/2012",
+      "source_system": "Court file",
+      "source_locator": "not located",
+      "source_pages_or_units": "unknown",
+      "complete_copy_status": "no",
+      "annex_status": "final accounts, rendition and distribution records absent",
+      "direct_effect_or_proposition": "Unknown",
+      "conditions_or_limits": "Cannot presume conclusion, surplus disposition or final accounting",
+      "asset_scope": "Entire concurso",
+      "evidence_label": "DOCUMENT NOT YET LOCATED",
+      "retrieval_priority": "P0",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-E072",
+      "aliases": [
+        "E072"
+      ],
+      "period": "2012-2023",
+      "date": "unknown",
+      "record_class": "other_evidential_record",
+      "document_type": "Secondary research dataset",
+      "title_or_function": "Additional Matkator title leads: fincas 8497, 8498 and 8587",
+      "issuer_or_actor": "Repository researchers",
+      "court_or_forum": "Por Derecho evidential index",
+      "proceeding": "Concurso 36/2012 / Sun Park asset crosswalk",
+      "source_system": "Repository",
+      "source_locator": "commit a50e034b13ae9942ac18f277bdb8f2274e3b60dd; research/sun-park-262-fincas/sun-park-262-fincas.csv; acquisition-overlay.csv; README.md; manifest.json",
+      "source_pages_or_units": "n/a",
+      "complete_copy_status": "yes",
+      "annex_status": "underlying deeds and certified Registry histories absent",
+      "direct_effect_or_proposition": "Historical row labels 8587 MATKATOR SL - M LLORENS; working overlay marks 8497, 8498 and 8587 En Propiedad; later pleading lead questions 8497/8498 registration",
+      "conditions_or_limits": "Secondary leads only; do not prove owner, physical unit, transfer, or current operator; all three are absent from Annex II enumerations",
+      "asset_scope": "Fincas 8497, 8498 and 8587",
+      "evidence_label": "UNRESOLVED",
+      "retrieval_priority": "P0 certified Registry/deed chains",
+      "public_derivative": {
+        "status": "PUBLIC_ANALYTICAL_INDEX_ONLY",
+        "index": "archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R01",
+      "aliases": [
+        "R01"
+      ],
+      "period": "2024-2026",
+      "date": "2025-04-23",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Solicitud de parte",
+      "title_or_function": "Solicitud de separación del Administrador Concursal",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Paquete aportado, pp. 23–80; Gmail 19663da50d6eb73e",
+      "source_sha256": "40663e4911b772152344d99880231241071b26c7acf24db7adb3895a7e76a82d",
+      "source_pages_or_units": 58,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R01-solicitud-de-separacion-del-administrador-concursal-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R02",
+      "aliases": [
+        "R02"
+      ],
+      "period": "2024-2026",
+      "date": "2025-04-28",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de traslado de la solicitud de separación",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 196c920189b01dbe",
+      "source_sha256": "0e9dffc8633e88f35402d1ab4631c6d2467482c8185a2046eceaa1df26956b64",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Incorpora el escrito y concede cinco días al Administrador Concursal para alegaciones.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R02-diligencia-de-traslado-de-la-solicitud-de-separacion-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/laj-28abr2025-traslado-separacion-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R03",
+      "aliases": [
+        "R03"
+      ],
+      "period": "2024-2026",
+      "date": "2025-05-12",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de oposición",
+      "title_or_function": "Oposición del Administrador Concursal a la separación",
+      "issuer_or_actor": "Administrador Concursal",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 196f702b5820ec1a",
+      "source_sha256": "e1d8340ced7583e4626c68fcad28ddbdd92136e7372c24d19113888e4d56fb5f",
+      "source_pages_or_units": 17,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R03-oposicion-del-administrador-concursal-a-la-separacion-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R04",
+      "aliases": [
+        "R04"
+      ],
+      "period": "2024-2026",
+      "date": "2025-05-20",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de unión de la oposición y puesta a resolver",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 196f702b5820ec1a",
+      "source_sha256": "9d068f8186f1d0197f68d316e687a24b138de25c77d5919ccaf0921c7b085e44",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Une la oposición y pone las actuaciones sobre la mesa del juez para resolver.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R04-diligencia-de-union-de-la-oposicion-y-puesta-a-resolver-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/laj-20may2025-puesta-a-resolver-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R05",
+      "aliases": [
+        "R05"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-12",
+      "record_class": "judicial_act",
+      "lane": "separacion",
+      "document_type": "Auto",
+      "title_or_function": "Auto 1377/2025 sobre la solicitud de separación",
+      "issuer_or_actor": "Magistrado-juez Alberto López Villarrubia",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Paquete aportado, pp. 81–83; Gmail 19952646b51e374b",
+      "source_sha256": "a52f817d32143e3ec5429d9a7f80472a9cbf37197aaeecc4605f98c86808b883",
+      "source_pages_or_units": 3,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Desestima la solicitud por falta de legitimación activa de Aweswell.",
+      "conditions_or_limits": "No entra en los motivos de fondo; lo declara expresamente.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R05-auto-1377-2025-sobre-la-solicitud-de-separacion-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/ac-removal-fees/auto-1377-2025-removal-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R06",
+      "aliases": [
+        "R06"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-12",
+      "record_class": "judicial_act",
+      "lane": "separacion",
+      "document_type": "Auto complementario",
+      "title_or_function": "Auto que deniega aclarar la providencia de 25 de julio",
+      "issuer_or_actor": "Magistrado-juez Alberto López Villarrubia",
+      "proceeding": "Concurso 36/2012 · Sección 1.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Paquete aportado, pp. 84–85",
+      "source_sha256": "6025ea29d817ad81c8e154f8452bcbe4b0231754ebc68f1ef3b1d5e0317bb07b",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "No aclara la providencia de 25 de julio de 2025.",
+      "conditions_or_limits": "No decide la solicitud de separación.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R06-auto-que-deniega-aclarar-la-providencia-de-25-de-julio-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/auto-12sep2025-aclaracion-providencia-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R07",
+      "aliases": [
+        "R07"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-21",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Recurso de reposición",
+      "title_or_function": "Recurso de reposición de Aweswell contra el Auto 1377/2025",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19962e9c78aaf74d",
+      "source_sha256": "d84f977d1244134bbf4ba0600c91655b4aad25adde5043ec9dc73591a64c7d1e",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; el corpus no contiene acuse independiente",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R07-recurso-de-reposicion-de-aweswell-contra-el-auto-1377-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R08",
+      "aliases": [
+        "R08"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-22",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Recurso de reposición",
+      "title_or_function": "Recurso de reposición de LPB contra el Auto 1377/2025",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 1996d275177e44a8",
+      "source_sha256": "5f0a591de8743b211d6c64df709d1eb1ff2c056c4c99e9a18cf6511aa7b39b79",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; el corpus no contiene acuse independiente",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R08-recurso-de-reposicion-de-lpb-contra-el-auto-1377-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R09",
+      "aliases": [
+        "R09"
+      ],
+      "period": "2024-2026",
+      "date": "2025-11-11",
+      "record_class": "judicial_act",
+      "lane": "separacion",
+      "document_type": "Auto",
+      "title_or_function": "Auto que resuelve los recursos de reposición",
+      "issuer_or_actor": "Magistrado-juez Alberto López Villarrubia",
+      "proceeding": "Concurso 36/2012 · Sección 2.ª",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Paquete aportado, pp. 86–89; Gmail 19a7d06c03e1c731",
+      "source_sha256": "a76be9747bd62dffc19ed859c27821f976e5b126dcb9ccea401a47f9c47594cb",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Desestima los recursos de LPB y Aweswell, confirma el auto y no impone costas.",
+      "conditions_or_limits": "Mantiene la barrera procesal; añade una apreciación ex officio de ausencia de indicios, pero no realiza una adjudicación documental de cada motivo de separación.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R09-auto-que-resuelve-los-recursos-de-reposicion-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/ac-removal-fees/auto-11nov2025-reconsideration-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R10",
+      "aliases": [
+        "R10"
+      ],
+      "period": "2024-2026",
+      "date": "2025-12-09",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Recurso de apelación",
+      "title_or_function": "Recurso de apelación de LPB",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "RPL 3304/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19b04094f9c30145",
+      "source_sha256": "20fcde53cf469d9470a25babb668dca7b7b877a16220dd0ee8609b8340b33faa",
+      "source_pages_or_units": 26,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R10-recurso-de-apelacion-de-lpb-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R11",
+      "aliases": [
+        "R11"
+      ],
+      "period": "2024-2026",
+      "date": "2025-12-10",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Recurso de apelación",
+      "title_or_function": "Recurso de apelación de Aweswell",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19b0796510d29c61",
+      "source_sha256": "45626eb10dd6945e5475d8c22b201ce19372d062063e048fff8e5d73e8c741b7",
+      "source_pages_or_units": 13,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R11-recurso-de-apelacion-de-aweswell-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R12",
+      "aliases": [
+        "R12"
+      ],
+      "period": "2024-2026",
+      "date": "2026-01-28",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de formación del RPL 3319/2025",
+      "issuer_or_actor": "LAJ María Victoria Henríquez Santana",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19c065bd368bf2fd",
+      "source_sha256": "6505cdfdf87976fe8e03cfb3317a28c5ad9ff5e32b09a83d95599860e0b182a3",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Forma el rollo, designa ponente y requiere elevación, emplazamiento y depósito.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R12-diligencia-de-formacion-del-rpl-3319-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R13",
+      "aliases": [
+        "R13"
+      ],
+      "period": "2024-2026",
+      "date": "2026-02-20",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Cédula de emplazamiento",
+      "title_or_function": "Diligencia y cédula de emplazamiento en la apelación",
+      "issuer_or_actor": "LAJ del órgano de origen",
+      "proceeding": "Concurso 36/2012 · RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19c8a7b4d4fe393d",
+      "source_sha256": "286d53367d29a56e621d66c4940d45c8c4f79c35a96d80b5aea7692eeca9a7f5",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Emplaza a LPB para comparecer ante la Audiencia Provincial.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R13-diligencia-y-cedula-de-emplazamiento-en-la-apelacion-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R14",
+      "aliases": [
+        "R14"
+      ],
+      "period": "2024-2026",
+      "date": "2026-02-20",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de remisión y emplazamiento a segunda instancia",
+      "issuer_or_actor": "LAJ del órgano de origen",
+      "proceeding": "Concurso 36/2012 · RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19c8a7b4d4fe393d",
+      "source_sha256": "77b6c1838dc99b6ec46fd900da7858a6a65a83d5bf9d44629a708731c316a0d3",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Ordena la remisión/visibilidad de actuaciones y el emplazamiento correspondiente.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R14-diligencia-de-remision-y-emplazamiento-a-segunda-instancia-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R15",
+      "aliases": [
+        "R15"
+      ],
+      "period": "2024-2026",
+      "date": "2026-02-23",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de personación",
+      "title_or_function": "Personación de LPB en el RPL 3319/2025",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19c8a7b4d4fe393d",
+      "source_sha256": "6cd2e3980c8160bf479dda9bc6f52b9f002016bb08d8e0cc04a688333022e05b",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R15-personacion-de-lpb-en-el-rpl-3319-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R16",
+      "aliases": [
+        "R16"
+      ],
+      "period": "2024-2026",
+      "date": "2026-03-25",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de formación del RPL 3304/2025",
+      "issuer_or_actor": "LAJ Francisco Javier Labella Ribes",
+      "proceeding": "RPL 3304/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19d25c002b6c122d",
+      "source_sha256": "618c1783a365391a016bee67508cf0d2ff6b7978c399aa2fee6203ecfc925e1d",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Forma el rollo, designa ponente y requiere elevación, emplazamiento y depósito.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R16-diligencia-de-formacion-del-rpl-3304-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R17",
+      "aliases": [
+        "R17"
+      ],
+      "period": "2024-2026",
+      "date": "2026-04-17",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de impugnación",
+      "title_or_function": "Impugnación de LPB a la resolución apelada",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19d96cc44c8ff878",
+      "source_sha256": "95eb122d070c55a6538e06142893578c0d38075638c8c6ec1a5bbc5dc981e085",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; la diligencia de 19 de mayo registra el escrito",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R17-impugnacion-de-lpb-a-la-resolucion-apelada-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R18",
+      "aliases": [
+        "R18"
+      ],
+      "period": "2024-2026",
+      "date": "2026-04-29",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de oposición",
+      "title_or_function": "Oposición del Administrador Concursal a la apelación de Aweswell",
+      "issuer_or_actor": "Administrador Concursal",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e49b22de990be2",
+      "source_sha256": "672be79dea8680755eede0bf5e77e226fefe6e434b6b111bd6da40785a7762ea",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R18-oposicion-del-administrador-concursal-a-la-apelacion-de-aweswell-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R19",
+      "aliases": [
+        "R19"
+      ],
+      "period": "2024-2026",
+      "date": "2026-05-05",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia que tiene por impugnada la resolución apelada",
+      "issuer_or_actor": "LAJ de la Sección Cuarta",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19df8a5b371ed339",
+      "source_sha256": "b35263696f44ccbf7b9feba0b284069b540c6e58cbc2308950e8be5247ce668b",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Tiene por formalizada la impugnación de LPB y ordena su traslado.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R19-diligencia-que-tiene-por-impugnada-la-resolucion-apelada-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R20",
+      "aliases": [
+        "R20"
+      ],
+      "period": "2024-2026",
+      "date": "2026-05-11",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Recurso de reposición",
+      "title_or_function": "Reposición del Administrador Concursal contra la diligencia de 5 de mayo",
+      "issuer_or_actor": "Administrador Concursal",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e49b22de990be2",
+      "source_sha256": "d453be637658ba9287a20d942e50cfa3d76accea6c764fbe38052612f9a371b4",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R20-reposicion-del-administrador-concursal-contra-la-diligencia-de-5-de-mayo-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R21",
+      "aliases": [
+        "R21"
+      ],
+      "period": "2024-2026",
+      "date": "2026-05-19",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de traslado del recurso de reposición del AC",
+      "issuer_or_actor": "LAJ Amelia Villarreal Sancho",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e49b22de990be2",
+      "source_sha256": "bce80d9a086ccce7dca61e241ad0f87d0fe996b343bc941e1aa4f52c0a0ac0cd",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Admite la reposición del AC y concede cinco días comunes para impugnarla.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R21-diligencia-de-traslado-del-recurso-de-reposicion-del-ac-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R22",
+      "aliases": [
+        "R22"
+      ],
+      "period": "2024-2026",
+      "date": "2026-05-19",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de traslado de oposición e impugnación",
+      "issuer_or_actor": "LAJ de la Sección Cuarta",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e49b22de990be2",
+      "source_sha256": "b57c53ce38ec2c6016118e14f4341a9575a863937472670c2b034fe575e51f4b",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Traslada a la apelante la oposición del AC y la impugnación de LPB por diez días.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R22-diligencia-de-traslado-de-oposicion-e-impugnacion-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R23",
+      "aliases": [
+        "R23"
+      ],
+      "period": "2024-2026",
+      "date": "2026-05-22",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de impugnación",
+      "title_or_function": "Impugnación de LPB a la reposición del Administrador Concursal",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e4e9d5364218d5",
+      "source_sha256": "f6c78f728ec57af34692acf981a05cff83e92c0a4b4de5aceb4d183b2d775006",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; existe acuse separado en el correo de 22 de mayo",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R23-impugnacion-de-lpb-a-la-reposicion-del-administrador-concursal-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R24",
+      "aliases": [
+        "R24"
+      ],
+      "period": "2024-2026",
+      "date": "2026-05-25",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de impugnación",
+      "title_or_function": "Impugnación de Aweswell a la reposición del Administrador Concursal",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e5fc3ae1a5ab58",
+      "source_sha256": "ed06bdbdbc5240ae458eebfb137ad57a5290f824a14407c00af487c4ee863448",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; el corpus no contiene acuse independiente",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R24-impugnacion-de-aweswell-a-la-reposicion-del-administrador-concursal-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R25",
+      "aliases": [
+        "R25"
+      ],
+      "period": "2024-2026",
+      "date": "2026-06-02",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de manifestaciones",
+      "title_or_function": "Manifestaciones de Aweswell al amparo del artículo 461.4 LEC",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19e8772593ab4016",
+      "source_sha256": "bac7e4d257ca58c59566c06d189be66827e6faaa577cca487860b5c83f2d046d",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; el corpus no contiene acuse independiente",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R25-manifestaciones-de-aweswell-al-amparo-del-articulo-461-4-lec-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R26",
+      "aliases": [
+        "R26"
+      ],
+      "period": "2024-2026",
+      "date": "2026-06-09",
+      "record_class": "judicial_act",
+      "lane": "separacion",
+      "document_type": "Providencia",
+      "title_or_function": "Providencia de señalamiento para estudio, votación y fallo",
+      "issuer_or_actor": "Sección Cuarta de la Audiencia Provincial",
+      "proceeding": "RPL 3304/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19eb0de9f7d935b6",
+      "source_sha256": "00a0625c1f0076e389bc50a3069b5af864601ddc8239a0652c96ff478e99ff50",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Señala estudio, votación y fallo y resuelve sobre la documentación entonces aportada.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R26-providencia-de-senalamiento-para-estudio-votacion-y-fallo-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R27",
+      "aliases": [
+        "R27"
+      ],
+      "period": "2024-2026",
+      "date": "2026-06-10",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de aportación documental",
+      "title_or_function": "Aportación documental de LPB al amparo del artículo 271.2 LEC",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "RPL 3304/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19eb0de9f7d935b6",
+      "source_sha256": "60a15a263444c5fa99b879bfd77723f620df34210b6d927d69a4558c6d81ca2b",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; la diligencia de 19 de junio registra la aportación",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R27-aportacion-documental-de-lpb-al-amparo-del-articulo-271-2-lec-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R28",
+      "aliases": [
+        "R28"
+      ],
+      "period": "2024-2026",
+      "date": "2026-06-19",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia que promueve la acumulación desde el RPL 3304/2025",
+      "issuer_or_actor": "LAJ Francisco Javier Labella Ribes",
+      "proceeding": "RPL 3304/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19ee061600a5d9b0",
+      "source_sha256": "cb5ea57f4f2f65a58fad67967b801e4d0f2b1569bce72be1861cb69cd82df76e",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Promueve acumulación de oficio y concede audiencia común de diez días.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R28-diligencia-que-promueve-la-acumulacion-desde-el-rpl-3304-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R29",
+      "aliases": [
+        "R29"
+      ],
+      "period": "2024-2026",
+      "date": "2026-06-19",
+      "record_class": "laj_or_court_office_act",
+      "lane": "separacion",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia sobre acumulación en el RPL 3319/2025",
+      "issuer_or_actor": "LAJ Amelia Villarreal Sancho",
+      "proceeding": "RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19ee061600a5d9b0",
+      "source_sha256": "039dc66beef544c908624905d40b27a7d7f196513138d8e5487c23948dfe2010",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Deja sin efecto una diligencia anterior y queda a lo resuelto en el rollo más antiguo.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R29-diligencia-sobre-acumulacion-en-el-rpl-3319-2025-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R30",
+      "aliases": [
+        "R30"
+      ],
+      "period": "2024-2026",
+      "date": "2026-07-15",
+      "record_class": "judicial_act",
+      "lane": "separacion",
+      "document_type": "Auto",
+      "title_or_function": "Auto 223/2026 de acumulación de apelaciones",
+      "issuer_or_actor": "Sección Cuarta de la Audiencia Provincial",
+      "proceeding": "RPL 3304/2025 + RPL 3319/2025",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19f8a422471edc64",
+      "source_sha256": "0ccda8e853eee308c793b0d000264b286f2a0fb66eea2afa81bde65fb127ecd2",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Acumula el RPL 3319/2025 al RPL 3304/2025 y ordena completar trámites.",
+      "conditions_or_limits": "No resuelve el fondo de la separación.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R30-auto-223-2026-de-acumulacion-de-apelaciones-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/auto-223-2026-acumulacion-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R31",
+      "aliases": [
+        "R31"
+      ],
+      "period": "2024-2026",
+      "date": "2026-07-23",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de alegaciones",
+      "title_or_function": "Alegaciones de LPB tras el Auto 223/2026",
+      "issuer_or_actor": "Luchy Playa Blanca, S.L.U.",
+      "proceeding": "RPL 3304/2025 acumulado",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19f938cf72496e5b",
+      "source_sha256": "511afd9a12c7c74a49351bf3f6790bcb3e37d7befae1f8bada0e29d9c0b741df",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R31-alegaciones-de-lpb-tras-el-auto-223-2026-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-R32",
+      "aliases": [
+        "R32"
+      ],
+      "period": "2024-2026",
+      "date": "2026-07-24",
+      "record_class": "party_filing",
+      "lane": "separacion",
+      "document_type": "Escrito de alegaciones",
+      "title_or_function": "Alegaciones de Aweswell tras el Auto 223/2026",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "RPL 3304/2025 acumulado",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19f938cf72496e5b",
+      "source_sha256": "b76fec926511239035aee94e3236d41acb5b6edd5c3b6ab7e3207a6e49bdc018",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/R32-alegaciones-de-aweswell-tras-el-auto-223-2026-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F01",
+      "aliases": [
+        "F01"
+      ],
+      "period": "2024-2026",
+      "date": "2024-09-01",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Demanda de juicio ordinario",
+      "title_or_function": "Demanda de responsabilidad y reintegro de honorarios a la masa",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "ORD 641/2024 · origen 582/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Paquete aportado, pp. 2–22; Gmail 193a8015d8eee373",
+      "source_sha256": "959fa2a662ea05566812be9796af9bed65fd1a64f3e5bef4fb889ff16d6e00fc",
+      "source_pages_or_units": 21,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F01-demanda-de-responsabilidad-y-reintegro-de-honorarios-a-la-masa-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F02",
+      "aliases": [
+        "F02"
+      ],
+      "period": "2024-2026",
+      "date": "2024-10-07",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Decreto",
+      "title_or_function": "Decreto 113/2024 de inhibición a favor del Juzgado Mercantil 1",
+      "issuer_or_actor": "LAJ del Juzgado Mercantil 2",
+      "proceeding": "ORD 582/2024 → ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail (fuente recuperada del expediente de honorarios)",
+      "source_sha256": "8eac9d66f51c449405dbd02567c9ee0321d362d077d1119d3d74b40872c3da38",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Declara la inhibición y remite el asunto al órgano que conoce del Concurso 36/2012.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F02-decreto-113-2024-de-inhibicion-a-favor-del-juzgado-mercantil-1-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/decreto-113-2024-inhibicion-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F03",
+      "aliases": [
+        "F03"
+      ],
+      "period": "2024-2026",
+      "date": "2024-11-28",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Decreto",
+      "title_or_function": "Decreto de admisión de la demanda de honorarios",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail (fuente recuperada del expediente de honorarios)",
+      "source_sha256": "735b4d8d6620979aa0ecbcbb4f860289fb98b2ebb47e214f3a3511330813de79",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Admite la demanda, fija cuantía de 110.956,97 euros y emplaza a los demandados.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F03-decreto-de-admision-de-la-demanda-de-honorarios-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/decreto-28nov2024-admision-honorarios-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F04",
+      "aliases": [
+        "F04"
+      ],
+      "period": "2024-2026",
+      "date": "2024-11-28",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de emplazamiento electrónico de la aseguradora",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail (fuente recuperada del expediente de honorarios)",
+      "source_sha256": "24622fb85839bfb3db765e79fe1d094759c2f212a7a8885babce30491f489252",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Ordena el emplazamiento electrónico de la aseguradora.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F04-diligencia-de-emplazamiento-electronico-de-la-aseguradora-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F05",
+      "aliases": [
+        "F05"
+      ],
+      "period": "2024-2026",
+      "date": "2025-01-07",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Contestación a la demanda",
+      "title_or_function": "Contestación de la aseguradora a la demanda",
+      "issuer_or_actor": "Occident GCO, S.A.U.",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19442467f65c63e5",
+      "source_sha256": "6861af6b59daad557ae9fe3b832b757cb4fa84d92f0e152680c3ef094c2885b1",
+      "source_pages_or_units": 7,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F05-contestacion-de-la-aseguradora-a-la-demanda-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F06",
+      "aliases": [
+        "F06"
+      ],
+      "period": "2024-2026",
+      "date": "2025-01-08",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Contestación a la demanda",
+      "title_or_function": "Contestación del Administrador Concursal a la demanda",
+      "issuer_or_actor": "Administrador Concursal",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 195afde2fddd8c0d",
+      "source_sha256": "adf8e198e266f2113adec7a004454272dfcbd5a309b3c3cbc7ef7e9609f49296",
+      "source_pages_or_units": 15,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F06-contestacion-del-administrador-concursal-a-la-demanda-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F07",
+      "aliases": [
+        "F07"
+      ],
+      "period": "2024-2026",
+      "date": "2025-03-17",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia que tiene por contestada la demanda y convoca audiencia previa",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 195afdddc67acf6e",
+      "source_sha256": "ae13e6b773ad0189a907d6ce8ff1cd086a1b30bfeac008769635684fef38f839",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Incorpora ambas contestaciones y convoca audiencia previa.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F07-diligencia-que-tiene-por-contestada-la-demanda-y-convoca-audiencia-previa-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F08",
+      "aliases": [
+        "F08"
+      ],
+      "period": "2024-2026",
+      "date": "2025-03-26",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Escrito de alegaciones",
+      "title_or_function": "Alegaciones de Aweswell tras las contestaciones",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 195d37a036038b9d",
+      "source_sha256": "edafe5a0ef218289768a9562649d005e6a7713ec5cf4365cccaea8ceb2e3d166",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia editable remitida por letrado; el corpus no contiene acuse independiente",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F08-alegaciones-de-aweswell-tras-las-contestaciones-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F09",
+      "aliases": [
+        "F09"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-02",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia que vuelve a señalar audiencia previa",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19937d11d054046c",
+      "source_sha256": "1b1464deda7b43af9e5b6f8a595ee25a53806e9e59c68df38bba126fc3f05ce4",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Señala audiencia previa para el 20 de enero de 2026 y difiere la prueba al acto.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F09-diligencia-que-vuelve-a-senalar-audiencia-previa-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F10",
+      "aliases": [
+        "F10"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-08",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Solicitud de aclaración",
+      "title_or_function": "Solicitud de aclaración de Aweswell sobre el Decreto de 1 de septiembre",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19928fb34997d4e7",
+      "source_sha256": "bb36961a7407266422428f11bec3cb5b9eab431ec25b43b9bac432a04d16e8c5",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F10-solicitud-de-aclaracion-de-aweswell-sobre-el-decreto-de-1-de-septiembre-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F11",
+      "aliases": [
+        "F11"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-23",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Escrito de oposición",
+      "title_or_function": "Oposición del Administrador Concursal a la aclaración",
+      "issuer_or_actor": "Administrador Concursal",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 199850dae6b3e23a",
+      "source_sha256": "d095484ba601a4238ad6afb7178d95e7576b41a5034a9a80179d5c01eca96f25",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F11-oposicion-del-administrador-concursal-a-la-aclaracion-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F12",
+      "aliases": [
+        "F12"
+      ],
+      "period": "2024-2026",
+      "date": "2025-09-24",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Escrito de oposición",
+      "title_or_function": "Oposición de la aseguradora a la aclaración",
+      "issuer_or_actor": "Occident GCO, S.A.U.",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 199850dae6b3e23a",
+      "source_sha256": "b72347a9cd37d64cfe4364c0d102aa5f3092eb046c68d5df14ac42025e748e0c",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F12-oposicion-de-la-aseguradora-a-la-aclaracion-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F13",
+      "aliases": [
+        "F13"
+      ],
+      "period": "2024-2026",
+      "date": "2026-01-21",
+      "record_class": "judicial_act",
+      "lane": "honorarios",
+      "document_type": "Sentencia",
+      "title_or_function": "Sentencia 4/2026 sobre la demanda de honorarios",
+      "issuer_or_actor": "Magistrado-juez Alberto López Villarrubia",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Paquete aportado, pp. 90–94; Gmail 19bfb3134cbaf69a",
+      "source_sha256": "663f7bae1efd6781c761aa7d64a00b909d69a209ca5fa856e32932905d23697c",
+      "source_pages_or_units": 5,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Desestima la demanda por falta de legitimación activa e impone costas a Aweswell.",
+      "conditions_or_limits": "No entra en las restantes defensas ni decide si los honorarios e intereses eran debidos.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F13-sentencia-4-2026-sobre-la-demanda-de-honorarios-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/sentencia-4-2026-honorarios-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F14",
+      "aliases": [
+        "F14"
+      ],
+      "period": "2024-2026",
+      "date": "2026-01-21",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Decreto",
+      "title_or_function": "Decreto que deniega la aclaración del decreto de 1 de septiembre",
+      "issuer_or_actor": "LAJ Águeda Reyes Almeida",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19bfb3134cbaf69a",
+      "source_sha256": "363e8c4b15fdb5097ca5268c8936e139406817a3828c1f9c07f9414b6960c9c7",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "No aclara el decreto de 1 de septiembre de 2025.",
+      "conditions_or_limits": "No resuelve la legalidad ni cuantía de los honorarios.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F14-decreto-que-deniega-la-aclaracion-del-decreto-de-1-de-septiembre-redacted.md",
+        "public_pdf": "evidence/insolvency-36-2012/concurso-autos/public-pdfs/decreto-21ene2026-no-aclaracion-public-redacted.pdf"
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F15",
+      "aliases": [
+        "F15"
+      ],
+      "period": "2024-2026",
+      "date": "2026-02-23",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Recurso de apelación",
+      "title_or_function": "Recurso de apelación de Aweswell contra la Sentencia 4/2026",
+      "issuer_or_actor": "Aweswell Limited",
+      "proceeding": "RPL 421/2026",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19c8a7b4d4fe393d",
+      "source_sha256": "5383dce15ac86a0de88ea76c98bb971a774390af48eae0309b2bb867e21d4982",
+      "source_pages_or_units": 17,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F15-recurso-de-apelacion-de-aweswell-contra-la-sentencia-4-2026-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F16",
+      "aliases": [
+        "F16"
+      ],
+      "period": "2024-2026",
+      "date": "2026-03-06",
+      "record_class": "party_filing",
+      "lane": "honorarios",
+      "document_type": "Escrito de parte",
+      "title_or_function": "Solicitud del Administrador Concursal para declarar firme la sentencia",
+      "issuer_or_actor": "Administrador Concursal",
+      "proceeding": "ORD 641/2024",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19cd8d1e9fa4e531",
+      "source_sha256": "f1dcd586c3155a3afe8e90ef0136b905b03cb3dee1bac544d080361bc41e008a",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F16-solicitud-del-administrador-concursal-para-declarar-firme-la-sentencia-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F17",
+      "aliases": [
+        "F17"
+      ],
+      "period": "2024-2026",
+      "date": "2026-03-06",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia de formación del RPL 421/2026",
+      "issuer_or_actor": "LAJ Francisco Javier Labella Ribes",
+      "proceeding": "RPL 421/2026",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19cd8d1e9fa4e531",
+      "source_sha256": "3a6be5da6671f89c4fd63d15e53e063c4e25805f7492eadf4637457b0d7664f2",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Forma el rollo, requiere elevación/emplazamiento y depósito de apelación.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F17-diligencia-de-formacion-del-rpl-421-2026-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SPECIALIST-F18",
+      "aliases": [
+        "F18"
+      ],
+      "period": "2024-2026",
+      "date": "2026-04-07",
+      "record_class": "laj_or_court_office_act",
+      "lane": "honorarios",
+      "document_type": "Diligencia de ordenación",
+      "title_or_function": "Diligencia que tiene por interpuesta la apelación y da traslado",
+      "issuer_or_actor": "LAJ Amelia Villarreal Sancho",
+      "proceeding": "RPL 421/2026",
+      "source_system": "Controlled source corpus",
+      "source_locator": "Gmail 19d685f9784b385a",
+      "source_sha256": "dd27c15c9ec5977440da3160612001375d6d52c8b389c396e2b15ec54bf948f9",
+      "source_pages_or_units": 2,
+      "complete_copy_status": "yes",
+      "filing_or_copy_status": "Copia fuente localizada",
+      "direct_effect_or_proposition": "Tiene por interpuesta la apelación, da traslado por diez días y pasa la prueba solicitada a la ponencia.",
+      "conditions_or_limits": "No aplica: escrito o trámite procesal.",
+      "evidence_label": "SOURCE COPY LOCATED; EFFECT LIMITED TO DOCUMENT CONTENT",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_FULL_TEXT_TRANSCRIPT",
+        "page_complete_transcript": true,
+        "transcript": "evidence/insolvency-36-2012/concurso-autos/full-text/F18-diligencia-que-tiene-por-interpuesta-la-apelacion-y-da-traslado-redacted.md",
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SUP-ACSEC-2018-02-27",
+      "aliases": [
+        "SP-2018-02-27-AC-SECURITY-REQUEST"
+      ],
+      "period": "2012-2023",
+      "date": "2018-02-27",
+      "record_class": "party_communication",
+      "document_type": "Scanned email printout / public diplomatic edition",
+      "title_or_function": "Insolvency-administrator request to convene an Owners' Community meeting concerning security",
+      "issuer_or_actor": "Insolvency administrator of LPB",
+      "source_system": "Restricted Gmail source; public-safe repository derivative",
+      "source_locator": "SP-2018-02-27-AC-SECURITY-REQUEST; manifest-controlled restricted message locator",
+      "source_sha256": "497ecb49495badbcee155397fe70d37d090c36c4e7998308172e7a612046dbed",
+      "source_pages_or_units": 1,
+      "complete_copy_status": "yes; native RFC822 and full thread absent",
+      "direct_effect_or_proposition": "Records the insolvency administrator asking the Community president to convene a meeting to consider hiring security to prevent unauthorised access and deterioration/improper use of common and private areas.",
+      "conditions_or_limits": "A communication, not a judicial act, Community resolution or proof of implementation. It does not establish identity of unauthorised persons, exact property scope, authority for locks/keys/exclusion, later instructions, title, possession, operation or criminal agreement.",
+      "evidence_label": "PRIMARY COMMUNICATION COPY; NATIVE RFC822/AUTHENTICATION OPEN",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_REDACTED_SEARCHABLE_DERIVATIVE",
+        "page_complete_transcript": false,
+        "public_pdf": "evidence/sun-park/2018-02-27-ac-security-request/public/2018-02-27-ac-community-security-request-redacted-searchable.pdf",
+        "public_pdf_sha256": "129cfdd2b74fe7f5e35b0db7890878aa10c5b81e6d4d6c9d3eaf0845eb820607",
+        "transcript_es": "evidence/sun-park/2018-02-27-ac-security-request/transcript.es.md",
+        "transcript_en": "evidence/sun-park/2018-02-27-ac-security-request/transcript.en.md",
+        "manifest": "evidence/sun-park/2018-02-27-ac-security-request/manifest.json"
+      }
+    },
+    {
+      "canonical_id": "C36-SUP-MAT-006",
+      "aliases": [
+        "MAT-006"
+      ],
+      "period": "2012-2023",
+      "date": "2020-12-18",
+      "record_class": "party_filing",
+      "document_type": "Estate-preservation application",
+      "title_or_function": "Aweswell request concerning conservation and inspection of the active estate",
+      "issuer_or_actor": "Aweswell Limited",
+      "source_system": "Restricted evidence custody",
+      "source_locator": "MAT-006",
+      "source_sha256": "8ab76545ff263d4226cff7f363ddab6daea354abde932d1ed63d920bdc9037da",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes; cited annex absent",
+      "evidence_label": "PARTY FILING; ALLEGATIONS NOT FINDINGS",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_SUMMARY_ONLY",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SUP-MAT-007",
+      "aliases": [
+        "MAT-007",
+        "MAT-007-ALT-01"
+      ],
+      "period": "2012-2023",
+      "date": "2021-02-16",
+      "signature_dates": [
+        "2021-02-17"
+      ],
+      "record_class": "party_filing",
+      "document_type": "Opposition",
+      "title_or_function": "CAM opposition to the active-estate preservation request",
+      "issuer_or_actor": "Construcciones Acosta Matos, S.A.",
+      "source_system": "Restricted evidence custody",
+      "source_locator": "MAT-007; alternate facsimile MAT-007-ALT-01",
+      "source_sha256": "de45a090b2ffeccb7a7308cd08e1f75c8418fde3617949b2b3774697bde9742b",
+      "source_pages_or_units": 4,
+      "complete_copy_status": "yes; cited annex absent",
+      "evidence_label": "PARTY COUNTER-POSITION; NOT A JUDICIAL FINDING",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_SUMMARY_ONLY",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SUP-MAT-009",
+      "aliases": [
+        "MAT-009"
+      ],
+      "period": "2012-2023",
+      "date": "2021-03-08",
+      "related_dates": [
+        "2021-02-23",
+        "2021-03-08"
+      ],
+      "record_class": "party_communication",
+      "document_type": "Rendered email thread",
+      "title_or_function": "Expert-access request and response chronology",
+      "issuer_or_actor": "Party correspondence with the insolvency administrator",
+      "source_system": "Restricted evidence custody",
+      "source_locator": "MAT-009",
+      "source_sha256": "e542e8fddcc7f0a78782012c5f07221b9c735cb81b479d6dcac7d77819d02201",
+      "source_pages_or_units": 3,
+      "complete_copy_status": "rendered PDF only; native RFC822 and attachment chain missing",
+      "evidence_label": "PRIMARY COMMUNICATION COPY; AUTHENTICATION/OUTCOME OPEN",
+      "public_derivative": {
+        "status": "PUBLIC_SAFE_SUMMARY_ONLY",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    },
+    {
+      "canonical_id": "C36-SUP-SP18-PHOTO-01",
+      "aliases": [
+        "SP18-PHOTO-01"
+      ],
+      "period": "2012-2023",
+      "date": "2018-03-01",
+      "record_class": "photographic_derivative",
+      "document_type": "Later-compiled photographic PDF",
+      "title_or_function": "Photographic sequence attributed by its cover to an alleged access event",
+      "issuer_or_actor": "Compiler not independently established",
+      "source_system": "Restricted evidence custody",
+      "source_locator": "SP18-PHOTO-01",
+      "source_sha256": "e66d1c78166595c9f3899063fdf39767339d608d4184f93cd10993f11e051abc",
+      "source_pages_or_units": 18,
+      "complete_copy_status": "compiled derivative; underlying photographs/metadata missing",
+      "evidence_label": "VISUAL LEAD; COVER ATTRIBUTION IS NOT A FINDING",
+      "public_derivative": {
+        "status": "WITHHELD_PENDING SOURCE/PRIVACY REVIEW",
+        "page_complete_transcript": false,
+        "public_pdf": null
+      }
+    }
+  ]
+}

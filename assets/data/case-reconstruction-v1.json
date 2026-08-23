@@ -110,13 +110,13 @@
     {
       "id":"JUD-2018-003",
       "kind":"judicial-act",
-      "labelEs":"Auto de 4-jun-2018 — copia disponible incompleta",
-      "labelEn":"4-Jun-2018 Auto — available copy incomplete",
-      "status":"VERIFIED_WITH_LIMITATION",
+      "labelEs":"Auto de 4-jun-2018 — copia canónica completa de tres páginas",
+      "labelEn":"4-Jun-2018 Auto — complete three-page canonical copy",
+      "status":"VERIFIED",
       "publication":"PUBLIC-READY-WITH-QUALIFICATION",
       "evidence":["EVID-2018-AUTO-003"],
-      "criminalForensic":"NO ACTOR/INTENT INFERENCE FROM INCOMPLETE COPY",
-      "gap":"Complete continuation/dispositive/signature copy remains P1."
+      "criminalForensic":"FORMAL-COURT-ACT; no actor/intent inference beyond the complete order",
+      "sourceHistory":"An older two-page derivative was incomplete; the complete authentic electronic copy is now canonical."
     },
     {
       "id":"JUD-2018-004",
@@ -212,14 +212,16 @@
       "id":"EVID-2018-AUTO-003",
       "date":"2018-06-04",
       "type":"AUTO",
-      "description":"Available two-page clarification copy ending mid-analysis",
-      "actor":"NOT PROMOTED FROM INCOMPLETE COPY",
-      "pages":2,
-      "sha256":"867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0",
-      "completeness":"INCOMPLETE",
-      "copyStatus":"PRIMARY EXTRACT / INCOMPLETE COURT COPY",
+      "description":"Complete canonical copy has three pages; authentic electronic clarification order; earlier two-page extract superseded",
+      "actor":"Alberto López Villarrubia",
+      "pages":3,
+      "sha256":null,
+      "sourceHashControl":"Restricted-custody SHA-256 begins 3b236; complete hash remains in the controlled source record",
+      "supersededTwoPageExtractSha256":"867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0",
+      "completeness":"COMPLETE",
+      "copyStatus":"PRIMARY / AUTHENTIC ELECTRONIC COURT COPY",
       "notification":"2018-06-08",
-      "sourceControl":"archive/CONCURSO_36_2012_BATCH_B_2018_VERIFIED_ACT_REGISTER_17AUG2026.md"
+      "sourceControl":"assets/data/concurso36-what-court-ordered-v1.json"
     },
     {
       "id":"EVID-2018-LAJ-001",
@@ -250,9 +252,9 @@
   ],
   "dependencyEdges": [
     {"from":"JUD-2018-004","to":"JUD-2018-001","relation":"IMPLEMENTS","foundation":"DEPENDENT"},
-    {"from":"JUD-2018-004","to":"JUD-2018-003","relation":"IMPLEMENTS","foundation":"DEPENDENT","note":"Underlying 4-Jun source copy remains incomplete."},
+    {"from":"JUD-2018-004","to":"JUD-2018-003","relation":"IMPLEMENTS","foundation":"DEPENDENT","note":"Underlying 4-Jun canonical source is complete; implementation remains a separate act."},
     {"from":"JUD-2018-005","to":"JUD-2018-001","relation":"SUSPENDS_REALISATION_CHAIN_FROM","foundation":"DEPENDENT"},
-    {"from":"JUD-2018-005","to":"JUD-2018-003","relation":"REFERS_TO_CLARIFICATION","foundation":"DEPENDENT","note":"Underlying 4-Jun source copy remains incomplete."},
+    {"from":"JUD-2018-005","to":"JUD-2018-003","relation":"REFERS_TO_CLARIFICATION","foundation":"DEPENDENT","note":"Underlying 4-Jun canonical source is complete; suspension scope remains controlled by the later order."},
     {"from":"AUTH-2011-001","to":"ACTA-2011-001","relation":"ROOT_REQUIRES","foundation":"BROKEN"},
     {"from":"AUTH-2011-001","to":"VOTE-2011-001","relation":"ROOT_REQUIRES","foundation":"BROKEN"},
     {"from":"VOTE-2011-001","to":"OWN-2008-001","relation":"REQUIRES_UNIT_TITLE_COMPLETION_MAP","foundation":"BROKEN"}

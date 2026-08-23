@@ -138,13 +138,19 @@ Ask separately:
 
 Display the temporal gap prominently:
 
-`7 JUN 2018 — material-control threshold`  
-`↓`  
-`more than 3.5 years`  
-`↓`  
-`26 JAN 2022 — judicial adjudication threshold`  
-`↓`  
-`21 FEB 2022 — deed/formal transmission threshold`
+```text
+7 JUN 2018 — material-control threshold
+↓
+nearly 3 years
+↓
+18 MAY 2021 — Auto 164/2021 definitive judicial approval
+↓
+15 OCT 2021 — two separate confirmation/challenge Autos
+↓
+26 JAN 2022 — two clarification Autos; no new award
+↓
+21 FEB 2022 — deed/formal transmission threshold
+```
 
 Controlled explanatory text:
 

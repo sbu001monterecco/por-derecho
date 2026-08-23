@@ -321,8 +321,8 @@ Reconstruct:
 - €9.77m versus €25.64m valuation discontinuity;
 - RICPE promotion before title consolidation;
 - 2021 competitive process and anonymised €14.8m proposal;
-- 26 January 2022 adjudication;
-- 21 February 2022 dación;
+- 18 May 2021 definitive approval → two separate 15 October 2021 confirmation/challenge Autos → two 26 January 2022 clarification Autos / testimony-finality bridge, neither making a new award;
+- 21 February 2022 dación deed;
 - protocol 457 and registry implementation;
 - mortgage cancellation and 18 August 2023 execution termination;
 - separate €400,000 branch;
