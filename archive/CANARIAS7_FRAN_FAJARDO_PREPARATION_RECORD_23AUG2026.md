@@ -1,6 +1,6 @@
 # CANARIAS7 / Francisco José “Fran” Fajardo preparation record — 23 August 2026
 
-**Status:** REDIGEST V2 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT  
+**Status:** REDIGEST V3 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT  
 **Record class:** outbound-media preparation state  
 **Privacy rule:** do not reproduce private Gmail identifiers or private contact history on the public website.
 
@@ -10,129 +10,131 @@ Read first:
 
 ## Supersession
 
-The first prepared Fran package is superseded.
+Both earlier Fran packages are **SUPERSEDED / DO NOT SEND**:
 
-**DO NOT SEND** the earlier draft with subject:
+1. `Fran / Tribunales CANARIAS7 — Concurso 36/2012: qué decidió el juez, qué quedó sin decidir y qué cadena documental falta`
+2. the earlier V2 package using the current subject but without the recovered May/June-2022 CANARIAS7 article-path question.
 
-`Fran / Tribunales CANARIAS7 — Concurso 36/2012: qué decidió el juez, qué quedó sin decidir y qué cadena documental falta`
+Only V3 is controlling.
 
-Only the V2 package below is controlling.
+## Recipient fit
 
-## Recipient fit after full redigest
+Current public material identifies Fran as CANARIAS7’s journalist responsible for tribunal/court reporting. His current and historical work shows a method fit for judicial outcomes, file custody, documentary gaps and Fiscalía/court procedure. Those reports are used only for personalisation and do not prove Sun Park facts.
 
-Current public material identifies Fran Fajardo as the CANARIAS7 journalist responsible for tribunals/court reporting, with continuing activity in 2025–2026.
-
-The V2 preparation reviewed his reporting on:
-
-- the Ralons insolvency being classified as fortuitous and the alleged asset concealment rejected;
-- the missing La Laguna crane-case file;
-- the role of delay/missing documentation in Valka; and
-- the European Prosecutor / Canary masks matter.
-
-These examples establish his judicial-document and procedural beat. They are not evidence of Sun Park facts or of prior knowledge of Project Sun Rock.
-
-This remains a distinct CANARIAS7 lane:
+Distinct CANARIAS7 lanes remain:
 
 - Silvia Fernández — economics / RIC / business;
 - David Ojeda — Local / Las Palmas / institutions / public files;
 - Fran Fajardo — courts / judicial outcomes / evidence custody / testimony and certification chain.
 
-## Repository and website result
+## Repository / website result
 
-A fresh search of the current indexed repository and public website located **no Por Derecho page citing a Fran Fajardo article by title or using one of his reports as evidence of a Sun Park proposition**.
+No current public Por Derecho page was located citing a Fran Fajardo article by title or using one as evidence of a Sun Park proposition. No current `main` hit was found for the recovered historical path/headline either.
 
-His articles are used only to explain recipient fit. The substantive package is grounded in Por Derecho’s own primary-source reconstruction:
+Substantive sources sent to Fran are the current Por Derecho pages for:
 
-- `/es/concurso-36-2012-autos-resoluciones/`;
-- `/es/concurso-36-2012-separacion-ac-honorarios/`;
-- `/es/dp-1901-2026/`;
-- `/es/toma-control-sun-park-7-junio-2018/`;
-- `/es/54-cam-proveniencia-minorias-relato-publico/`;
-- `/es/ricpe-hnt-gc836-trazabilidad/`; and
-- `/es/medios-trazabilidad-relato-publico/`.
+- Concurso 36/2012 autos/resolutions;
+- AC separation/fees;
+- DP 1901/2026;
+- 7-Jun-2018;
+- 54-CAM provenance;
+- RICPE/HNT/GC836/EU support; and
+- media-source traceability.
+
+## New V3 historical-media checkpoint
+
+A 2-Jun-2022 Gmail preservation package contains contemporaneous Google/Bing captures for CANARIAS7 headline:
+
+`La Fiscalía Provincial acusa a Acosta Matos de falsificación y estafa procesal`
+
+with historical path:
+
+`https://www.canarias7.es/canarias/gran-canaria/las-palmas-de-gran-canaria/fiscalia-provincial-acusa-20220530232448-nt.html`
+
+and a same-day direct capture of that path returning 404. The package also contains ten contemporaneous captures of Fran’s CANARIAS7 profile/article pages.
+
+### Boundary
+
+This proves a contemporaneous search-result/path/404 sequence. It does **not** prove Fran’s authorship, why the page became unavailable, who changed it, censorship, improper influence, knowing suppression, or the truth of the underlying accusation.
+
+V3 therefore asks Fran only to confirm/correct:
+
+`BYLINE → ORIGINAL TEXT → SOURCE/NOTE OF ORIGIN → CMS STATUS/HISTORY → REASON IF KNOWN`.
 
 ## Gmail history
 
-Connected Gmail confirms one historical direct message to Fran in June 2022. It used a broad `presunto fraude` subject and essentially one external link, with no attachments.
-
-No inbound reply and no delivery-failure/bounce were located.
+- Direct 6-Jun-2022 message to Fran: broad `presunto fraude` subject, essentially one link, no attachments.
+- No inbound reply located.
+- No bounce located.
+- Separate 2-Jun-2022 internal preservation package as above.
 
 Controlled status:
 
 `NO RESPONSE LOCATED YET`.
 
-The V2 package expressly corrects the 2022 methodology and asks Fran not to inherit it.
+V3 expressly corrects the 2022 methodology.
 
-## Controlling V2 routing and subject
-
-The actual Gmail draft was read back with:
+## Controlling V3 routing and subject
 
 - `To`: Fran’s verified direct professional CANARIAS7 route;
 - `Cc`: none;
 - `Bcc`: none.
 
-**Controlling subject:**
+**Subject:**
 
 `Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`
 
-## Controlling judicial question
-
-> What did each court actually decide, what did it expressly leave unresolved, and can the relevant Concurso 36/2012 judicial-testimony chain be reconstructed directly from the primary file as request → decision → issuance → firmness wording → notification/transfer → delivery → later external use?
-
 ## Judicial anchors and limits
 
-The V2 draft uses:
+V3 retains:
 
-1. **Auto 1377/2025 — 12 September 2025:** removal dismissed for active standing; substantive grounds not entered.
-2. **Order — 11 November 2025:** reposiciones dismissed; appeal preserved; no document-by-document merits adjudication of the seven blocks.
-3. **Judgment 4/2026 — 21 January 2026:** fee claim dismissed for active standing; material legality, period and amount not adjudicated on the merits.
-4. **Auto 223/2026 — 15 July 2026:** removal appeals accumulated; merits not resolved.
+1. Auto 1377/2025 — removal dismissed for active standing; substantive grounds not entered.
+2. Auto 11-Nov-2025 — reposiciones dismissed; no block-by-block merits adjudication.
+3. Sentencia 4/2026 — fee claim dismissed for active standing; material legality/period/amount not decided on merits.
+4. Auto 223/2026 — appeals accumulated; merits not resolved.
 
-The judge’s contrary view that no indications requiring ex officio removal were appreciated is retained.
+The judge’s contrary ex-officio assessment is preserved. A procedural dismissal is neither proof of the allegation nor a merits finding on an issue not reached.
 
-The draft does not present a procedural dismissal as proof of the allegations, and it does not present it as a merits judgment on matters the court did not reach.
+V3 also keeps separate:
 
-## Separate routes
+- the 18-Jun-2026 AC complaint / handwritten daily reference 22;
+- DP 1901/2026; and
+- GUB 86/2026 transferred to the Arrecife-area prosecution service.
 
-The draft keeps separate:
+Registration/transfer/inhibition are not described as merits findings.
 
-- the 18 June 2026 insolvency-administrator complaint and its handwritten daily intake reference `22`;
-- DP 1901/2026 and its finite testimony/certification question; and
-- GUB 86/2026, transferred to the Arrecife-area prosecution service.
+## Adverse evidence retained
 
-Registration, transfer, inhibition or a prosecutor’s report on admission is not presented as final admission, proven facts or responsibility.
+- AP Judgment 89/2014 individual title/possession for the 18-unit perimeter;
+- contrary CAM account on 7-Jun-2018;
+- 2018 criminal route provisional dismissal confirmed on appeal;
+- judicial testimony is an ordinary procedural act;
+- `54 CAM / 190 LPB / 18 terceros` is not proof CAM owned Sun Park;
+- funding coexistence does not prove fraud/double funding; and
+- media causation/knowledge requires a separate evidential bridge.
 
-## Adverse and contrary evidence retained
+## Six finite asks
 
-- AP Judgment 89/2014 preserves individual title/possessory rights for an 18-unit perimeter;
-- the contrary account says CAM limited itself to its own properties/common areas;
-- the 2018 criminal route ended in provisional dismissal confirmed on appeal;
-- issuing a judicial testimony is an ordinary act and is not inherently irregular;
-- coexistence of RIC, private finance, regional incentive and EU support does not itself prove fraud, double funding or illegality; and
-- media causation/knowledge is not alleged without the actual transmission and knowledge bridge.
+1. Confirm/correct the 30-May-2022 CANARIAS7 article’s byline, text, source and CMS history.
+2. Read the four judicial milestones and state `decided / not decided`.
+3. Request the certified 2018/2021/2022 testimony chain.
+4. Verify separately the current status of the 18-Jun AC complaint, DP 1901/2026 and GUB 86/2026.
+5. Contrast 7-Jun-2018 with insolvency decisions and property titles while retaining the adverse dismissal.
+6. Give complete right of reply to all materially affected parties and competent judicial/fiscal bodies.
 
 ## Verified mandatory media core
 
-The controlling V2 Gmail draft contains:
+The controlling V3 Gmail draft has been read back with:
 
-- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
 - `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes;
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
 - direct San Telmo webinar at approximately 08:08;
-- current Por Derecho judicial, title, funding and media-traceability routes;
-- four Fran article links used only for recipient fit;
-- express evidential limitations; and
-- five finite tribunals checks with full right of reply.
-
-## Five finite asks
-
-1. Read the four judicial milestones and state what each decided and did not decide.
-2. Request the certified 2018/2021/2022 testimony chain: request, issuance, notification, delivery and later use.
-3. Keep the 18-June AC complaint, DP 1901/2026 and GUB 86/2026 separate and verify the official procedural status of each.
-4. Contrast the 7-June-2018 record with insolvency decisions and property titles while retaining the adverse dismissal.
-5. Give complete right of reply to the insolvency administrator, CAM, RICPE, Hotel New Trend/Canarian Hospitality and relevant judicial/fiscal bodies.
+- current Por Derecho routes;
+- adverse/contrary evidence; and
+- express evidential limitations.
 
 ## Current gate
 
-**V2 PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
+**V3 PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
 
-Any material change resets approval. A fresh `Send` instruction authorises only this V2 draft. Post-send verification must be read-only.
+Any material change resets approval. A fresh exact `Send` instruction authorises only V3. Post-send verification must be read/search only.
