@@ -15,6 +15,8 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/es/comunidad-instrumentalizacion/actas-2011-2022/` — canonical Spanish chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/en/community-instrumentalisation/minutes-2011-2022/` — canonical English chronology of Owners’ Community/CEXP minutes, linked records and authority
 - `/es/comunidad-instrumentalizacion/instrumentos-gobernanza-2008/` and `/en/community-instrumentalisation/2008-governance-instruments/` — controlled public editions of the 1987 Owners’ Statutes and 2008 CEXP source instruments
+- `/es/concurso-36-2012-autos-resoluciones/` — dedicated Spanish full-text archive of the removal/remuneration court record: 25 Judge/Appeal Court/LAJ acts and 25 party filings
+- `/en/insolvency-36-2012-orders-decisions/` — English navigation and scope-control counterpart displaying the complete redacted Spanish judicial text
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
@@ -25,7 +27,7 @@ The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently b
 
 Public content distinguishes documents, facts, allegations, inferences, open questions and official outcomes. Personal data, privileged material, legal strategy and unaudited capital or claim figures must remain outside this repository.
 
-Public primary documents are stored under `assets/docs/` only after provenance, scope and redaction review; publication of a receipt or procedural record does not convert it into a merits finding.
+Public primary documents are stored under `assets/docs/` or the controlled `evidence/` tree only after provenance, scope and redaction review; publication of a receipt, filing or procedural record does not convert it into a merits finding. The Concurso 36/2012 Autos corpus uses complete redacted Markdown transcriptions plus raster-only decision PDFs, with source hashes and known gaps preserved in its manifest and provenance record.
 
 ### RICPE publication controls
 

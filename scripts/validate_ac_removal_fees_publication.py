@@ -21,11 +21,11 @@ PROVENANCE_REL = "evidence/insolvency-36-2012/ac-removal-fees/provenance.md"
 PDF_SPECS = {
     "evidence/insolvency-36-2012/ac-removal-fees/auto-1377-2025-removal-public-redacted.pdf": (
         3,
-        "2286dc7ae2321106f82e2ed9aa6ea0a2cfde10b7844111ead766cd5723eac11a",
+        "a19975991ddf5aceb17f95247d05c7a7cd115bf9cd4ce6e7b3c7f127aeeba5b7",
     ),
     "evidence/insolvency-36-2012/ac-removal-fees/auto-11nov2025-reconsideration-public-redacted.pdf": (
         4,
-        "a2ae1143c2d4dd5c5f8539b58a46eb0af9e6876cadf62f69abfcfabe3ecab8a1",
+        "da1fc63c666cf20167d1075dbc06e85afd66fc985a8c9255507b7364c1358220",
     ),
 }
 
@@ -59,7 +59,7 @@ require(
         "23 abril 2025 · 58 páginas",
         "110.956,97 € para la masa",
         "Auto 1377/2025 · PDF",
-        "Auto 11/11/2025 · PDF",
+        "Abrir Autos y resoluciones",
         "sin necesidad de entrar en los motivos de fondo",
         "RPL 3304/2025",
         "RPL 3319/2025",
@@ -80,7 +80,7 @@ require(
         "23 April 2025 · 58 pages",
         "EUR 110,956.97 for the estate",
         "Order 1377/2025 · PDF",
-        "Order 11 Nov 2025 · PDF",
+        "Open Orders and decisions",
         "without needing to enter the merits grounds",
         "RPL 3304/2025",
         "RPL 3319/2025",

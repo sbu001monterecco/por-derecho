@@ -4,6 +4,8 @@ Control date: **23 August 2026**
 Scope: Concurso ordinario 36/2012 · Francisco de Borja Rodríguez-Batllori Laffitte · Aweswell Limited · LPB
 Status: **controlling repository analysis and public-source gate**
 
+Full-text publication record: `archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md`. The dedicated bilingual Autos/decisions page and 50-record redacted corpus now supply the complete located text of the two civil/insolvency tracks; this digest remains the broader analytical and non-merger control for DP 1901, DP 1956 and intake reference 22.
+
 ## 1. Controlling conclusion
 
 The Insolvency Administrator record must no longer be analysed as disconnected allegations about accounts, access, title, liquidation or fees. Every AC proposition must be tested against the complete source family:
@@ -49,7 +51,7 @@ Aweswell's 58-page application sought removal under article 100 TRLC. Its openin
 6. **Remuneration.** Alleged accrual and receipt of remuneration beyond statutory liquidation limits and alleged interest charges. This block overlaps factually with, but does not replace, the separate professional-liability action.
 7. **Structural opacity and conflicts.** Alleged failure to disclose or manage relationships, information asymmetries and conflicts said to compromise independence, transparency and confidence in the office.
 
-The application reproduced these blocks as legal grounds under diligence, loyalty, transparency and article 100 TRLC. The AC opposed the application. That opposition is part of the controlling record even where the complete opposition has not been publicly reproduced.
+The application reproduced these blocks as legal grounds under diligence, loyalty, transparency and article 100 TRLC. The AC opposed the application. Both the application and the complete located opposition are now published as redacted full-text transcriptions (`R01` and `R03`).
 
 ### Relief requested
 
