@@ -1,41 +1,97 @@
-# Email send — final authorisation rule
+# Email send — exact final authorization and no-test-send rule
 
-**Control date:** 22 August 2026
-**Status:** controlling user-specific outbound-email rule
+**Control date:** 23 August 2026  
+**Status:** CONTROLLING USER-SPECIFIC OUTBOUND-EMAIL HARD STOP
 
-## Rule
+## 1. Core rule
 
-No email may be sent, resent, forwarded or self-emailed without the user's **explicit final approval of the exact outbound package**.
+No email may be sent, resent, forwarded, corrected, followed up, scheduled or self-emailed without the user's **fresh explicit final approval of one exact outbound package**.
 
-The final approval must cover:
+The exact package must identify:
 
 1. every To, Cc and Bcc recipient;
-2. the exact subject and body;
-3. every attachment, including the precise file/version; and
-4. every included link.
+2. whether the act is a new message, reply, correction, resend, forward, follow-up or self-email;
+3. the exact final subject;
+4. the complete final body in its final language order;
+5. every attachment, including the precise filename and version and, where available, its hash; and
+6. every included external link.
 
-Approval to investigate, draft, file in the repository, publish a website change, create an audit, preserve evidence or prepare a completion record is **not** email authorisation. Repository publication is never, by itself, authority to send an email.
+Approval to investigate, draft, file in the repository, publish a website change, create an audit, preserve evidence, prepare a completion record or approve a different package is **not** email authorization. Repository publication is never, by itself, authority to send an email.
 
-## Permitted before final approval
+## 2. No external test sends
 
-- Search and read connected email when otherwise authorised by the task.
-- Prepare, revise and repository-file an email draft.
-- Identify proposed recipients, attachments and links for review.
+No real, reserved, invalid, throwaway or deliberately non-working external address may be used to test:
+
+- recipient resolution;
+- formatting;
+- delivery;
+- bounce handling;
+- connector availability;
+- attachments;
+- links;
+- authorization logic; or
+- draft rendering.
+
+Testing must remain local, in draft state or in an explicitly non-transmitting validation system.
+
+An empty message, a one-character message or a message labelled **“DO NOT SEND”**, **“TEST”**, **“DRAFT”**, **“PLACEHOLDER”**, **“NO ENVIAR”**, **“PRUEBA”** or **“BORRADOR”** must fail closed. A prohibition or placeholder label is never permission to transmit.
+
+## 3. Mandatory refusal conditions
+
+The send path must stop where any of the following is true:
+
+- the body is empty or effectively empty;
+- the body consists only of one character, punctuation, whitespace or placeholder text;
+- the subject or body contains a stop/test/draft marker;
+- the user asked to prepare, preview, stage, hold, test, check, verify or confirm rather than to send;
+- any recipient was added or changed after approval;
+- the subject, body, attachment, link, language order or quoted thread differs from the approved package;
+- the proposed action changes from a draft to a send, or from a new message to a reply, resend, correction, forward or follow-up;
+- the only supposed approval is earlier general consent, publication permission, repository authority, a preservation instruction or approval of another version;
+- the final package has not been presented or unambiguously identified to the user; or
+- there is any uncertainty whether the authorization applies to this exact transmission.
+
+Any change after approval invalidates the approval and requires a new final authorization.
+
+## 4. Permitted before final approval
+
+- Search and read connected email when otherwise authorized by the task.
+- Prepare and revise an email draft.
+- Identify proposed recipients, attachments and links.
+- Render or validate the draft locally without transmission.
+- Repository-file a redacted draft, recipient plan or attachment manifest where privacy controls permit.
 - Present the complete final outbound package to the user for approval.
 
-A draft must remain a draft. Do not press Send, schedule delivery, resend, forward or self-email it until the explicit final approval is received.
+A draft must remain a draft. Do not press Send, schedule delivery, resend, forward, self-email or use a connector action that transmits it until the fresh exact authorization is received.
 
-## Approval and change control
+## 5. Approval and change control
 
-- The approval must be the final instruction following presentation or unambiguous identification of the exact package.
-- If any recipient, subject, body text, attachment or link changes materially after approval, obtain a new final approval before sending.
-- Silence, earlier general consent, a request to “prepare,” or an earlier approval of a different version is not approval of the changed package.
-- Do not infer self-email authority from a generic preservation, backup or deletion-closeout protocol. This later user-specific rule controls unless the user expressly approves the exact self-email package.
+- One authorization permits, at most, one transmission of the approved package unless the user expressly authorizes multiple sends.
+- A successful send consumes the authorization. A resend, correction or follow-up requires a new authorization.
+- A failed or uncertain send does not authorize an automatic retry.
+- Silence, an out-of-office reply, an acknowledgement, a bounce, prior correspondence or a request for more information does not authorize a new recipient or transmission.
+- Do not infer self-email authority from a generic preservation, backup or deletion-closeout protocol.
 
-## Post-send verification
+## 6. Post-send verification
 
-When an authorised send is performed, do not state that it succeeded unless the email tool confirms success. Preserve the successful message/thread identifier and exact sent-package summary without exposing private content publicly. A failed or uncertain send remains `NOT SENT` until verified.
+When an authorized send is performed:
 
-## Current PwC / AC / alertador thread
+- do not state that it succeeded unless the mail tool confirms success;
+- preserve the native sent-message evidence and exact package summary privately;
+- classify a bounce, out-of-office response or automated acknowledgement only as the limited event it proves;
+- do not treat delivery as proof of opening, reading, competent routing, acceptance or merits review; and
+- do not expose private addresses, message identifiers or full private content in the public repository.
 
-For the 22 August 2026 PwC / AC refusal, artwork, reporting-person footer and deletion-audit work, preservation is repository-only. **No new email, resend or self-email has been sent.** A future email requires a separate final-authorisation checkpoint under this rule.
+A failed or uncertain send remains `NOT VERIFIED AS SENT` until the connected mailbox confirms the event.
+
+## 7. Incident control
+
+The 23 August 2026 connected-mail rescan located an empty “DO NOT SEND” transmission to a real external address and a one-character test to a reserved invalid address. Neither carried the substantive evidence package. The incident and corrective hard stop are preserved in:
+
+`archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`
+
+Do not send an apology, correction, replacement or explanation merely because the incident was discovered. Any corrective communication requires its own exact final authorization.
+
+## 8. Current repository work
+
+The CAM closeout, cross-thread rescan and website updates authorize **no email**. All preservation in this package is repository-only unless the user later approves an exact outbound package under this rule.
