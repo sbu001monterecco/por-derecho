@@ -26,10 +26,18 @@ The repository preserves judge/LAJ acts, party filings, party communications, im
 - Initial exact Pages deployment: run `32667895000`, Pages deployment `#981`
 - Post-deployment visibility repair PR: [#871](https://github.com/sbu001monterecco/por-derecho/pull/871)
 - Visibility-repair merge: `30a60bc507e76792a565fe599afb0db92665149b`
-- Current exact Pages deployment: run `32668816716`, Pages deployment `#982`
-- Current Pages artifact: `sha256:215fa8595233aac36fa1c01b8214e744d7ea707d7b07cfc1f4273f6ebdb20841`
+- Post-deployment-hotfix Pages run: `32668816716`, Pages deployment `#982`
+- Post-deployment-hotfix Pages artifact: `sha256:215fa8595233aac36fa1c01b8214e744d7ea707d7b07cfc1f4273f6ebdb20841`
+- Live-closeout PR: [#872](https://github.com/sbu001monterecco/por-derecho/pull/872)
+- Live-closeout merge: `6793691a8e141b1842b0156e45b6522b9fb0126d`
+- Exact closeout Pages deployment: run `32670629109`, Pages deployment `#983`
+- Exact closeout Pages artifact: `sha256:461795a850201c648e2ddf211d190128fa1497bdd6693c41840df0180aae2cfc`
+- Exact public-corpus verifier: run `32670629833`, job `97270843044`, `85/85 PASS`
+- Exact-verifier artifact: `sha256:cf236161908a5bc866e6c91adc80fde2381be323ad344157c6aa3d39bf1cae2a`
+- Permanent production smoke: run `32670629825`, job `97270843093`, `42/42 PASS`
+- Production-smoke artifact: `sha256:b7e80708a930a0a84ed553bc941be0a177977e67e28b30eb262db1f5a72404c9`
 
-PR #870 passed 29/29 pre-merge checks. PR #871 passed 19/19 pre-merge checks. After deployment, the San Telmo public-edge check passed and the source-of-funds verifier passed all 26 placements on rerun after Pages propagation. The latter's first push attempt read the previous cached loader before Pages completed; the settled live DOM contains two eager, complete 1800×1200 source graphics.
+PR #870 passed 29/29 pre-merge checks. PR #871 passed 19/19 pre-merge checks. PR #872 passed all 12 triggered workflow suites. After deployment, the closeout workflow first attested that Pages run #983 had `head_sha` equal to `6793691a…`; its first public pass saw 84/85 surfaces while one edge object settled, and its second no-cache pass verified 85/85 exact bytes. The permanent monitor then passed 42/42 routes. The earlier San Telmo public-edge and 26-placement source-of-funds controls also remain green after propagation.
 
 ## 3. Controlling source and prompt
 
@@ -95,6 +103,6 @@ The improved umbrella prompt additionally prevents a null search from becoming a
 
 ## 7. Deletion-safety meaning
 
-`DELETION_SAFE_WITH_OPEN_EVIDENCE` means that the identified public-safe publication, its provenance, validation and remaining gaps are recoverable from Git and the live site. It does not mean that the judicial file, evidence investigation, appeals, recovery claims or criminal allegations are closed.
+`DELETION_SAFE_WITH_OPEN_EVIDENCE` is now earned for the identified public-safe corpus: the exact merge was deployed, 85/85 controlled surfaces matched repository bytes, and 42/42 production routes passed. It means that the publication, provenance, validation and remaining gaps are recoverable from Git and the live site. It does not mean that the judicial file, evidence investigation, appeals, recovery claims or criminal allegations are closed.
 
 No email was sent as part of this publication or closeout.
