@@ -3,8 +3,8 @@
   "control_marker": "counsel-defence-continuity-20260823",
   "owner": "Gil Marer / Aweswell",
   "created_at": "2026-08-23T23:17:00Z",
-  "current_state": "PR_OPEN",
-  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE_AFTER_MERGE_AND_LIVE_READBACK",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
   "branch": "codex/counsel-defence-expanded-20260823",
   "expected_routes": {
     "es": [
@@ -92,5 +92,100 @@
     "professional_withdrawal_reasons_preserved": true,
     "contrary_evidence_preserved": true,
     "right_of_reply_preserved": true
+  },
+  "pull_request": 876,
+  "merge_sha": "8261cc54bde703c9da69204338adcb631537508a",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
+    "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/": [
+      "A1–A8 · CONTINUIDAD DE LA DEFENSA · CONCURSO 36/2012",
+      "Davinia Sánchez de la Cruz",
+      "Llamamiento institucional",
+      "no establece que la querella fuese finalmente presentada ni prosperase"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/": [
+      "A1–A8 · CONTINUITY OF THE DEFENCE · CONCURSO 36/2012",
+      "Davinia Sánchez de la Cruz",
+      "Institutional call",
+      "does not establish that a complaint was ultimately filed or succeeded"
+    ]
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "evidence": [
+      {
+        "type": "github_actions",
+        "workflow": "Publication integrity gate",
+        "run_id": 32673244320,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate audience experience",
+        "run_id": 32673244310,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate visual asset identity registry",
+        "run_id": 32673244323,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate Concurso 36/2012 primary-autos redigest",
+        "run_id": 32673244304,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Public bidder name-only and bid-preservation gate",
+        "run_id": 32673244328,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Off-GitHub Preservation Snapshot",
+        "run_id": 32673244313,
+        "conclusion": "success"
+      }
+    ]
+  },
+  "deployment_evidence": {
+    "substantive_merge_sha": "8261cc54bde703c9da69204338adcb631537508a",
+    "deployment_url": "https://sbu001monterecco.github.io/por-derecho/",
+    "deployment_status": "success-confirmed-by-public-edge-readback"
+  },
+  "live_verification_evidence": {
+    "method": "cloud-browser public-edge readback",
+    "verified_at_utc": "2026-08-23T23:22:00Z",
+    "status": "PASS_BILINGUAL_MARKERS_AND_STRUCTURE",
+    "es": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
+      "title": "Actores, partes, abogados y representantes — nombres completos | Project Sun Rock",
+      "rows": 18,
+      "markers_passed": true
+    },
+    "en": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/",
+      "title": "Actors, parties, lawyers and representatives — full names | Project Sun Rock",
+      "rows": 18,
+      "markers_passed": true
+    }
+  },
+  "deletion_record": {
+    "path": "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "fresh_thread_can_recover_without_chat": true,
+    "recovery_order": [
+      "archive/COUNSEL_DEFENCE_CONTINUITY_REGISTER_23AUG2026.md",
+      "archive/COUNSEL_DEFENCE_CONTINUITY_SOURCE_MAP_23AUG2026.md",
+      "archive/prompts/COUNSEL_DEFENCE_CONTINUITY_EXHAUSTIVE_SCAN_PROMPT_23AUG2026.md",
+      "publication-manifests/counsel-defence-continuity-20260823.json",
+      "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md"
+    ]
   }
 }

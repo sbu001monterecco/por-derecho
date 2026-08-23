@@ -86,6 +86,14 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - expanded publication manifest;
 - this audit.
 
+## Merge, CI and public readback
+
+- substantive PR: #876;
+- squash merge: `8261cc54bde703c9da69204338adcb631537508a`;
+- all six PR checks passed, including publication integrity and bilingual audience rendering;
+- Spanish public edge: A1–A8, Davinia, institutional call and complaint-status caveat visible; 18 table rows;
+- English public edge: A1–A8, Davinia, institutional call and complaint-status caveat visible; 18 table rows.
+
 ## Final gate
 
-After PR merge and successful Pages deployment/readback, the thread is **DELETION-SAFE WITH OPEN EVIDENCE**.
+The thread is **DELETION-SAFE WITH OPEN EVIDENCE**. The remaining work is evidential completion, not recovery of the published state.
