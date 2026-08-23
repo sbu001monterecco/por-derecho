@@ -1,6 +1,18 @@
 name: Verify PR 830 CAM non-dilution live
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
+      - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'assets/site.js'
+      - 'assets/prosecution-public-entry-20260821.js'
+      - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
+      - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
+      - '.github/workflows/verify-pr830-cam-nondilution-live.yml'
   push:
     branches: [main]
     paths:
@@ -19,7 +31,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: verify-pr830-cam-nondilution-live-${{ github.ref }}
+  group: verify-pr830-cam-nondilution-live-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
