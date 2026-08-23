@@ -16,50 +16,67 @@ Do not rely on chat memory and do not infer silence.
 ### Ruth Ugalde / El Confidencial
 `SENT / CORRECTIVE COMPLETE PACKAGE SENT / AWAITING RESPONSE`
 
-Read `archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md`.
-
 ### Saúl García / Diario de Lanzarote
 `SENT + VERIFIED / AWAITING RESPONSE`
-
-Read `archive/DIARIO_DE_LANZAROTE_SAUL_GARCIA_OUTREACH_RECORD_23AUG2026.md`.
 
 ### Teresa Acosta Hernández / La Voz de Lanzarote
 `SENT + VERIFIED / AWAITING RESPONSE`
 
-Read:
-- `archive/LA_VOZ_TERESA_ACOSTA_OUTREACH_RECORD_23AUG2026.md`;
-- `archive/LA_VOZ_TERESA_UNITARY_STORY_REDIGEST_23AUG2026.md`;
-- `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
-
 ### Taiana González / HOSTELTUR
 `SENT + VERIFIED / AWAITING RESPONSE`
-
-Read `archive/HOSTELTUR_TAIANA_GONZALEZ_PREPARATION_RECORD_23AUG2026.md`, which now functions as the sent-state record.
 
 ### Carlos Sosa / Canarias Ahora / elDiario.es Canarias
 `SENT + VERIFIED / AWAITING RESPONSE`
 
-The actual sent copy was read back and verified with:
-
-- Carlos direct professional route;
-- Canarias Ahora newsroom route copied;
-- no Bcc;
-- subject `Carlos — Sun Park/MYND: de la RIC pública de 2020 a 54 fincas y una vía de solución en Lanzarote`;
-- both canonical Spanish PNGs;
-- direct San Telmo webinar;
-- required Por Derecho and Canarias Ahora source links; and
-- evidential limitations / adverse material.
-
-Read:
+Read recipient-specific records before any follow-up. For Carlos read:
 - `archive/CANARIAS_AHORA_CARLOS_SOSA_PREPARATION_RECORD_23AUG2026.md`;
 - `archive/CANARIAS_AHORA_CARLOS_SOSA_SENT_VERIFICATION_23AUG2026.md`.
 
 ### Diego Sánchez de la Cruz / Civismo-related routing
 HOLD for immediate repeated outreach unless a new response or materially new recipient-specific reason appears.
 
+## Prepared but unsent state
+
+### Joaquín Gil / EL PAÍS
+
+`PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`
+
+Current EL PAÍS public material identifies Joaquín as a journalist in the **Investigación** section, with two decades of experience and participation in international investigations.
+
+Connected Gmail confirms prior direct outbound contact in December 2024 and January 2025. The old messages used broad `coordinated network / collusion / €100m+ fraud` language. The new package expressly **supersedes that framing methodologically**: it tells Joaquín not to inherit the old global conclusions and instead presents a source-separated reconstruction.
+
+No inbound response from the currently known Joaquín work route was located in the fresh Gmail scan at preparation cutoff.
+
+Prepared subject:
+
+`Joaquín — Sun Park/MYND: 54 fincas, RIC, fondos públicos y una reconstrucción que corrige mis correos de 2024-25`
+
+Prepared national-investigative architecture:
+
+`2008 fragmented property / operation`
+→ `minority / CEXP / Community marketability and governance conflict`
+→ `creditor / enforcement / LPB-only insolvency perimeter`
+→ `CAM specific-property acquisition / 54-CAM provenance`
+→ `purchaser-knowledge questions`
+→ `2018 material-control transition + adverse provisional dismissal retained`
+→ `pre-title Lava Verde / Club Sei / Meeting Point preparation`
+→ `2020 integrated ownership/control representation`
+→ `July-2021 internal 54/190/18 + conditional title + unsigned LOI + incomplete DD`
+→ `RICPE / Series F-G / HNT / MYND / GC/836/P06 / European-cofinancing traceability`
+→ `media/public source-transmission questions`
+→ `22-Aug-2026 Yaiza/Cabildo constructive institutional-resolution route`.
+
+The draft contains both mandatory Spanish PNGs, the San Telmo webinar, current Por Derecho routes, adverse evidence and explicit evidential limitations.
+
+Read:
+- `archive/EL_PAIS_JOAQUIN_GIL_PREPARATION_RECORD_23AUG2026.md`;
+- `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
+
+Do not send until Gil gives fresh exact final approval. Any material edit resets approval.
+
 ## Current response rule
 
-Before any follow-up, run a fresh connected-Gmail scan.
+Before any follow-up or new-recipient send, run a fresh connected-Gmail scan.
 
 If no new message is found, use only:
 
@@ -100,14 +117,6 @@ A response does not itself authorise a reply.
 
 This chain does not prove a single conspiracy or common criminal intent. Keep every actor, entity, property, financing instrument, public body and media publication separate unless the documentary bridge is proved.
 
-For tourism media, add where sourced:
-
-`Lava Verde 279-room project → Club Sei Lanzarote / Meeting Point-FTI commercial preparation → exact contracting entity / room authority / bookings / revenue open → July-2021 54/190/18 reconciliation`.
-
-For Canary-wide institutional media, add where sourced:
-
-`institutional/public event → published participant perimeter → what was actually presented → later internal title/availability record → subsequent public-policy/investment narrative → present administrative traceability`.
-
 ## Media-propagation rule
 
 Always distinguish:
@@ -132,13 +141,15 @@ For `54 CAM`, also apply `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA
 
 ## Continuation queue — revalidate before drafting
 
-1. **Joaquín Gil / EL PAÍS** — broader investigative/property/institutional story only if fresh role/contact/history and source-fit checks justify national escalation.
+Current state:
+
+1. **Joaquín Gil / EL PAÍS — PREPARED, AWAITING EXACT SEND AUTHORISATION.**
 2. **Salvador Hernández / Biosfera Digital** — Lanzarote local public-interest/institutional route.
 3. **Alfonso Canales Segovia / Crónicas de Lanzarote** — Lanzarote local institutional/governance route.
 
 Specialist/HOLD lanes remain available for economic/investment and German tourism/cross-border media.
 
-No ranking is authority to send.
+No ranking or prepared draft is authority to send.
 
 ## Follow-up timing discipline
 
@@ -148,13 +159,22 @@ Preferred follow-up is normally shorter than the first email and says what chang
 
 ## Current next action
 
-Proceed to **Joaquín Gil / EL PAÍS** only after:
+Present the exact Joaquín Gil / EL PAÍS package for final approval. If approved without material change, send that exact stored Gmail draft once and read back the actual sent copy.
 
-1. fresh Gmail scan for inbound responses from the active media set;
-2. fresh verification of Joaquín Gil's current role, beat and professional routing;
-3. connected-Gmail history scan for prior contact;
-4. repository/website redigest for the national investigative angle;
-5. exact recipient-specific package with the mandatory Media Core Package; and
-6. `SEND STATUS: NOT AUTHORISED` until Gil approves that exact package.
+If Joaquín is sent and verified, update this file to `SENT + VERIFIED / AWAITING RESPONSE` and proceed to Salvador Hernández only after fresh response/public-role/history checks.
 
-No chase, resend, correction, reply or new-recipient send is authorised by this file.
+## New-thread trigger alias
+
+The repository now also contains:
+
+`RUN_LIKE_THE_WIND.md`
+
+The most reliable minimal fresh-thread command is:
+
+`Run like the wind — Por Derecho.`
+
+This is a project convention, not a platform macro, and it does not authorise outbound sends.
+
+## No autonomous send/follow-up
+
+No chase, resend, correction, reply or new-recipient send is authorised by this file. Every outbound transmission requires a fresh exact package and user approval under `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
