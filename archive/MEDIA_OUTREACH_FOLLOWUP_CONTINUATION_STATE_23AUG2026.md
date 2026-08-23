@@ -40,7 +40,37 @@ Do not begin by copying an old draft or assuming silence.
 - Recent contact exists and is currently a HOLD for immediate repeated outreach unless a new response or materially new recipient-specific reason appears.
 - Do not treat a historical professional address as a verified current direct address.
 
-## 3. Current response scan
+## 3. Prepared but unsent state
+
+### Taiana González / HOSTELTUR
+
+- Status: `PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`.
+- Current public HOSTELTUR material identifies Taiana as a HOSTELTUR journalist whose beat includes hotels, hotel investment/repositioning and Canary Islands hotel activity.
+- Her 15-Oct-2021 article `Canarian Hospitality lanza su primera marca y anuncia 12 hoteles` is a key market-information timestamp: it reported a planned Playa Blanca MYND opening and strategic/financial support from Grupo Acosta Matos.
+- The package does **not** imply that Taiana knew RICPE's internal July-2021 `54 CAM / 190 LPB / 18 terceros` certificate.
+- Connected Gmail search located no prior direct correspondence with the verified current professional address used in the draft.
+- Prepared subject:
+
+  `Taiana — Sun Park/MYND Yaiza: 54 fincas, inversión hotelera y una vía de solución en Lanzarote`
+
+- Prepared story architecture:
+
+  `2008 fragmented hotel/title structure`
+  → `minority/CEXP/Community marketability conflict`
+  → `CAM creditor + specific property / 54-CAM provenance`
+  → `2018 material control + adverse dismissal preserved`
+  → `pre-title Lava Verde / Club Sei / Meeting Point project and commercial preparation`
+  → `2020 integrated project/ownership representation`
+  → `July-2021 internal 54/190/18 + conditional title + unsigned LOI + incomplete DD`
+  → `15-Oct-2021 HOSTELTUR/Canarian Hospitality market narrative`
+  → `2022–2023 MYND/RIC/incentive/EU-support and later HOSTELTUR coverage`
+  → `2026 constructive Yaiza/Cabildo resolution route`.
+
+- The draft contains both mandatory Spanish PNGs, the direct San Telmo webinar and current Por Derecho routes including 54-CAM, 7-Jun-2018, Lava Verde/Club Sei/Meeting Point, HOSTELTUR traceability, RICPE/HNT/GC836 and the Lanzarote open letter.
+- Read `archive/HOSTELTUR_TAIANA_GONZALEZ_PREPARATION_RECORD_23AUG2026.md` before any action.
+- Do not send the draft until Gil gives fresh exact final authorisation of this package. Any material edit resets approval.
+
+## 4. Current response scan
 
 At the current cutoff, a connected-Gmail scan found no new inbound response after 23 August 2026 from the active El Confidencial, Diario de Lanzarote or La Voz/Lanzarote Media domains.
 
@@ -50,7 +80,7 @@ Use only:
 
 Never translate silence into rejection, reading, delivery failure, acceptance or editorial decision.
 
-## 4. Follow-up classifications
+## 5. Follow-up classifications
 
 Any incoming media message must be read in full and classified narrowly as one of:
 
@@ -67,7 +97,7 @@ Any incoming media message must be read in full and classified narrowly as one o
 
 A response does not automatically authorise a reply. Prepare the exact reply package and obtain fresh final approval.
 
-## 5. Same-matter story core for other media
+## 6. Same-matter story core for other media
 
 The current unitary media story is:
 
@@ -87,7 +117,11 @@ The current unitary media story is:
 
 This chain does not prove a single conspiracy or common criminal intent. Every actor, entity, financing instrument, property and media publication must be attributed separately.
 
-## 6. Media-propagation rule
+For tourism/travel media, add where relevant:
+
+`Lava Verde 279-room project → Club Sei Lanzarote / Meeting Point-FTI commercial preparation → exact contracting entity / room authority / bookings / revenue still open → July-2021 54/190/18 reconciliation`.
+
+## 7. Media-propagation rule
 
 For all outlets distinguish:
 
@@ -97,7 +131,7 @@ Do not state that CAM, RICPE, Canarian Hospitality, Government or another actor 
 
 Where an article itself says a fact was presented/announced/stated by a named source, use that attribution exactly.
 
-## 7. Mandatory package for every future media email
+## 8. Mandatory package for every future media email
 
 Unless Gil approves an exact one-use exception:
 
@@ -111,11 +145,11 @@ Unless Gil approves an exact one-use exception:
 
 For use of `54 CAM`, also apply the provenance gate in `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
 
-## 8. Next recipient queue — revalidate before drafting
+## 9. Continuation queue — revalidate before drafting
 
-The current ranked continuation queue, subject to fresh Gmail/public-role checks, is:
+Current state:
 
-1. **Taiana González / HOSTELTUR** — tourism/hospitality transformation, ownership/operation distinction, MYND, FTI/Meeting Point/Club Sei context where sourced, plus finance/public-support traceability.
+1. **Taiana González / HOSTELTUR — PREPARED, AWAITING EXACT SEND AUTHORISATION.**
 2. **Carlos Sosa / Canarias Ahora / elDiario.es Canarias** — institutional accountability, public administration, economic/public-interest and Canary-wide governance angle.
 3. **Joaquín Gil / EL PAÍS** — broader investigative/property/institutional story only if current story fit and source package justify national escalation.
 4. **Salvador Hernández / Biosfera Digital** — Lanzarote local public-interest/institutional route.
@@ -123,9 +157,9 @@ The current ranked continuation queue, subject to fresh Gmail/public-role checks
 
 HOLD or later-specialist lanes remain available for economic/investment, German tourism/cross-border and prior-contact journalists.
 
-No ranking is authority to send. Every recipient requires fresh profile/contact/history verification and exact final approval.
+No ranking or prepared draft is authority to send.
 
-## 9. Follow-up timing discipline
+## 10. Follow-up timing discipline
 
 Do not send immediate same-day chasers merely because no answer appears.
 
@@ -140,22 +174,15 @@ For each recipient, before proposing a follow-up assess:
 
 The preferred follow-up is usually shorter than the first email and should identify **what changed or why now**, not resend the entire dossier unless correction requires it.
 
-## 10. Current next action
+## 11. Current next action
 
-Proceed to **Taiana González / HOSTELTUR** by default unless a fresh inbound response changes priority.
+Present the exact Taiana/HOSTELTUR package for final approval. If approved without material change, send that exact draft once and read back the actual sent copy.
 
-Before drafting:
+If the user does not approve the Taiana send or places it on HOLD, move only then to the next queue item after recording the state.
 
-1. search connected Gmail for all prior HOSTELTUR/Taiana correspondence in both directions;
-2. verify current role, beat and professional routing;
-3. read the current HOSTELTUR-specific Por Derecho page and any original HOSTELTUR MYND/Sun Park article;
-4. select the tourism/hospitality form of the same unitary story;
-5. include the mandatory Media Core Package;
-6. preserve the 54-CAM provenance and 2020→2021 contradiction where relevant;
-7. make the finite ask specific to tourism reporting; and
-8. leave `SEND STATUS: NOT AUTHORISED` until Gil approves the exact package.
+After any Taiana send, update this file to `SENT + VERIFIED / AWAITING RESPONSE` and continue to Carlos Sosa unless a fresh inbound response changes priority.
 
-## 11. No autonomous follow-up
+## 12. No autonomous follow-up
 
 This repository state enables future threads to resume work; it does **not** create an automatic email campaign.
 
