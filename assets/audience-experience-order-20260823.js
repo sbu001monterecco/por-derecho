@@ -53,21 +53,30 @@
     const isEnglish = document.documentElement.lang === 'en';
     const hero = main.querySelector(':scope > #inicio, :scope > #home, :scope > .hero');
     const priority = main.querySelector(':scope > .priority-band');
+    const prosecution = main.querySelector(':scope > .prosecution-entry-20260821, :scope > [data-prosecution-entry-20260821]');
     const summary = document.getElementById(isEnglish ? 'sixty-second-summary' : 'resumen-60-segundos');
     const audiences = document.getElementById('psr-reader-intent');
     const perimeters = document.getElementById(isEnglish ? 'case-perimeters' : 'perimetros-del-caso');
 
     let anchor = priority || hero;
-    for (const section of [summary, audiences, perimeters]) {
+    for (const section of [prosecution, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
       }
     }
-    const fullRecord = ensureFullRecord(main, isEnglish, [hero, priority, summary, audiences, perimeters]);
-    placeAfter(fullRecord, perimeters || audiences || summary || anchor);
+    const fullRecord = ensureFullRecord(main, isEnglish, [hero, priority, prosecution, summary, audiences, perimeters]);
+    placeAfter(fullRecord, perimeters || audiences || summary || prosecution || anchor);
+
+    if (prosecution) {
+      prosecution.dataset.audienceProtectedAttribution = '20260823';
+      if (prosecution.closest('[data-audience-full-record]')) {
+        placeAfter(prosecution, priority || hero);
+      }
+    }
 
     main.dataset.audienceOrder = '20260823';
+    main.dataset.expressCriminalAttributionVisible = prosecution ? '20260823' : 'pending';
     observer?.observe(main, { childList: true });
     openHashTarget();
   };

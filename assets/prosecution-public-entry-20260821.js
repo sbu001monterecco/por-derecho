@@ -1,7 +1,7 @@
 /* PROSECUTION-PUBLIC-ENTRY-20260821
- * Public-safe entry layer for the unitary criminal-evidence architecture.
- * This module sharpens evidential navigation; it does not convert allegations,
- * institutional receipt, relationship, benefit, chronology or legal error into guilt.
+ * Public-safe first-read layer for the unitary criminal-evidence architecture.
+ * It preserves Gil Marer / Aweswell's direct actor-specific criminal attribution
+ * without converting it into an adjudicated finding or a collective presumption.
  */
 (() => {
   const normalise = value => {
@@ -20,20 +20,22 @@
   style.dataset.prosecutionPublicEntryStyle = '20260821';
   style.textContent = `
     .prosecution-entry-20260821{padding:clamp(2.8rem,6vw,5rem) 0;background:#f3f0e9;border-top:1px solid rgba(19,37,45,.12);border-bottom:1px solid rgba(19,37,45,.12)}
-    .prosecution-entry-20260821 .pe-head{max-width:68rem;margin-bottom:1.5rem}
-    .prosecution-entry-20260821 .pe-kicker{font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;font-weight:850;color:#6d5527}
+    .prosecution-entry-20260821 .pe-head{max-width:72rem;margin-bottom:1.2rem}
+    .prosecution-entry-20260821 .pe-kicker{font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;font-weight:900;color:#8c2f2c}
     .prosecution-entry-20260821 h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.04;margin:.3rem 0 .8rem;color:#13252d}
-    .prosecution-entry-20260821 .pe-lead{font-size:1.08rem;line-height:1.62;max-width:64rem}
+    .prosecution-entry-20260821 .pe-lead{font-size:1.08rem;line-height:1.62;max-width:70rem}
+    .prosecution-entry-20260821 .pe-attribution{border-left:7px solid #8c2f2c;background:#fff4f2;padding:1rem 1.15rem;border-radius:12px;margin:1rem 0;line-height:1.58}
     .prosecution-entry-20260821 .pe-proof-rule{border-left:6px solid #8c6b2f;background:#fff;padding:1rem 1.15rem;border-radius:12px;margin:1rem 0 1.35rem;line-height:1.55}
     .prosecution-entry-20260821 .pe-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
     .prosecution-entry-20260821 .pe-card{background:#fff;border:1px solid rgba(19,37,45,.16);border-top:4px solid #13252d;border-radius:13px;padding:1rem}
+    .prosecution-entry-20260821 .pe-card:first-child{border-top-color:#8c2f2c}.prosecution-entry-20260821 .pe-card:nth-child(2){border-top-color:#8c6b2f}.prosecution-entry-20260821 .pe-card:nth-child(3){border-top-color:#5b5578}.prosecution-entry-20260821 .pe-card:nth-child(4){border-top-color:#526b59}
     .prosecution-entry-20260821 .pe-card b{display:block;color:#6d5527;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.35rem}
     .prosecution-entry-20260821 .pe-card strong{display:block;line-height:1.25;margin-bottom:.45rem;color:#13252d}
     .prosecution-entry-20260821 .pe-card span{font-size:.88rem;line-height:1.45}
     .prosecution-entry-20260821 .pe-reg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem;margin:1rem 0}
     .prosecution-entry-20260821 .pe-stat{background:#13252d;color:#fff;border-radius:11px;padding:.8rem}
     .prosecution-entry-20260821 .pe-stat strong{display:block;font-size:1.55rem;line-height:1}.prosecution-entry-20260821 .pe-stat span{display:block;font-size:.72rem;opacity:.84;margin-top:.3rem}
-    .prosecution-entry-20260821 .pe-limit{font-size:.88rem;line-height:1.5;border-left:5px solid #8c2f2c;padding:.7rem .85rem;background:#fff;border-radius:9px}
+    .prosecution-entry-20260821 .pe-limit{font-size:.88rem;line-height:1.5;border-left:5px solid #526b59;padding:.7rem .85rem;background:#fff;border-radius:9px}
     .prosecution-entry-20260821 .pe-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem}.prosecution-entry-20260821 .pe-actions a{display:inline-block;padding:.68rem .9rem;border-radius:8px;background:#13252d;color:#fff;text-decoration:none;font-weight:800}.prosecution-entry-20260821 .pe-actions a.secondary{background:#fff;color:#13252d;border:1px solid #13252d}
     .prosecution-reading-control-20260821{margin:1rem auto 2rem;max-width:1120px;border:2px solid #8c6b2f;border-left-width:7px;border-radius:14px;background:#fffdf8;padding:1.1rem 1.25rem;line-height:1.56}
     .prosecution-reading-control-20260821 h2{font-size:1.35rem;margin:.1rem 0 .55rem;color:#13252d}.prosecution-reading-control-20260821 p{margin:.5rem 0}.prosecution-reading-control-20260821 a{font-weight:850}
@@ -45,6 +47,9 @@
   const prefix = path.includes('/por-derecho/') ? '/por-derecho/' : '/';
   const mapHref = isEn ? `${prefix}en/unitary-criminal-evidence-map/` : `${prefix}es/mapa-probatorio-penal-unitario/`;
   const correctionsHref = isEn ? `${prefix}en/corrections-version-control/` : `${prefix}es/correcciones-control-versiones/`;
+  const camHref = isEn
+    ? `${prefix}en/cam-creditor-control-shadow-administration-judicial-omission/`
+    : `${prefix}es/control-acreedor-cam-administracion-hecho-omision-judicial/`;
 
   const mountHome = () => {
     if (!isHome || document.querySelector('[data-prosecution-entry-20260821]')) return;
@@ -53,36 +58,39 @@
     const section = document.createElement('section');
     section.className = 'prosecution-entry-20260821';
     section.dataset.prosecutionEntry20260821 = 'true';
-    section.setAttribute('aria-label', isEn ? 'Criminal-law evidence lens' : 'Lente probatoria penal');
+    section.dataset.expressCriminalAttribution = '20260823';
+    section.setAttribute('aria-label', isEn ? 'Express criminal attribution and proof control' : 'Atribución penal expresa y control probatorio');
     section.innerHTML = isEn ? `
       <div class="shell">
-        <div class="pe-head"><span class="pe-kicker">Criminal-law lens · evidence before attribution</span><h2>Eight evidence packages — not a collective accusation.</h2><p class="pe-lead">Por Derecho asks competent authorities to test a connected economic-criminal hypothesis through finite primary records. The method is deliberately falsifiable: a lawful explanation or contrary document that defeats an inference belongs in the same record as evidence that supports it.</p></div>
-        <div class="pe-proof-rule"><strong>Individual attribution only:</strong> act → capacity/authority → authorship/instruction → knowledge → intent where required → use/reliance → prejudice → benefit → causation → correction or continuation after notice. <strong>Relationship is not responsibility.</strong></div>
+        <div class="pe-head"><span class="pe-kicker">Express criminal attribution · individual proof · no collective conviction</span><h2>Gil Marer and Aweswell directly allege an organised criminal course—not merely a set of questions.</h2><p class="pe-lead">The attribution is direct. The evidence, contrary record, missing proof and adjudication status are separate. No audience-first summary may weaken the accusation into a concern, possible lead or neutral chronology; no accusation may be presented as a conviction.</p></div>
+        <div class="pe-attribution"><strong>Attributed private-actor case.</strong> Gil Marer and Aweswell directly allege that identified CAM / Acosta Matos and connected private actors—including José Daniel Acosta Matos, Laura Patricia Acosta Matos, Francisco Mario Matos Matas, Antonio Cogolludo Rojas and other separately identified participants—performed connected instruction, authority, implementation, control, continuation or benefit functions in an unlawful material-displacement operation. Gil separately alleges criminal approval, enablement, ratification or legally equivalent omission by the insolvency administrator and specified judicial prevarication, refusal or malicious delay.</div>
+        <div class="pe-proof-rule"><strong>Controlling proof rule:</strong> actor → express allegation → alleged act or omission → capacity/duty → supporting source → contrary or exculpatory material → missing proof → procedural/adjudication status → alleged effect or benefit. <strong>Relationship is not responsibility; missing proof does not erase the allegation.</strong></div>
         <div class="pe-grid">
-          <article class="pe-card"><b>PKG-A · PP1041</b><strong>Who authorised the withdrawal filed in LPB's name?</strong><span>Produce instruction, author, power, LexNET record, LPB hearing, insolvency authority and estate-interest rationale.</span></article>
-          <article class="pe-card"><b>PKG-B · debt → vote</b><strong>Was the debt used to affect voting rights validly built?</strong><span>Service, legal debtor, allocation, due date, certificate, no duplication, vote consequence and later external use.</span></article>
-          <article class="pe-card"><b>PKG-C · 7 June</b><strong>What converted security authority into material control?</strong><span>Security does not by itself authorise locks, keys, exclusion, private-unit intervention, possession, works or operation.</span></article>
-          <article class="pe-card"><b>PKG-H · notice → conduct</b><strong>What happened after each documented notice?</strong><span>Exact proposition, source, competence, later act, correction/non-correction, benefit and causally linked prejudice.</span></article>
+          <article class="pe-card"><b>1 · CAM / private actors</b><strong>Direct instruction and coordinated implementation alleged</strong><span>Credit, isolated title and Community/security mechanisms are alleged to have been deliberately converted into wider physical control. Native mandate and command-chain proof remains required.</span></article>
+          <article class="pe-card"><b>2 · insolvency administrator</b><strong>Criminal approval, enablement or ratification alleged</strong><span>The authority route, knowledge, supervision, response, power to reverse and mental element must be tested against the administrator’s denial and narrower-access account.</span></article>
+          <article class="pe-card"><b>3 · judicial conduct</b><strong>Prevarication, refusal or malicious delay alleged</strong><span>Each resolution, refusal, delay or omission requires an exact evidence-before-judge, duty, objective-injustice, knowledge, purpose and causation matrix.</span></article>
+          <article class="pe-card"><b>4 · adverse record</b><strong>Dismissal, valid rights and innocent explanations preserved</strong><span>The 2018 provisional dismissal and appeal, possible valid CAM credit/unit title, later adjudication and all exculpatory records remain visible and accurately scoped.</span></article>
         </div>
         <div class="pe-reg"><div class="pe-stat"><strong>360</strong><span>REG-AGE records in analysed snapshot</span></div><div class="pe-stat"><strong>80</strong><span>destination labels</span></div><div class="pe-stat"><strong>319</strong><span>Recibido</span></div><div class="pe-stat"><strong>15</strong><span>Enviado</span></div><div class="pe-stat"><strong>26</strong><span>Rechazado</span></div></div>
-        <div class="pe-limit"><strong>Registry status limit:</strong> SENT ≠ DELIVERED ≠ RECEIVED ≠ ACKNOWLEDGED ≠ JOINED ≠ ADMITTED ≠ INVESTIGATED ≠ ACCEPTED ≠ ENDORSED ≠ PROVED. The snapshot covers 7 December 2025–15 August 2026; it is a transmission/chronology layer, not a merits finding.</div>
-        <div class="pe-actions"><a href="${mapHref}">Open the eight-package evidence map →</a><a class="secondary" href="${correctionsHref}">Corrections and contrary evidence</a></div>
+        <div class="pe-limit"><strong>Non-finding and registry-status limit:</strong> a direct party accusation is not a judicial finding. SENT ≠ DELIVERED ≠ RECEIVED ≠ ACKNOWLEDGED ≠ JOINED ≠ ADMITTED ≠ INVESTIGATED ≠ ACCEPTED ≠ ENDORSED ≠ PROVED.</div>
+        <div class="pe-actions"><a href="${camHref}">Open the CAM direct-attribution and proof matrix →</a><a class="secondary" href="${mapHref}">Open the eight-package evidence map</a><a class="secondary" href="${correctionsHref}">Corrections and contrary evidence</a></div>
       </div>` : `
       <div class="shell">
-        <div class="pe-head"><span class="pe-kicker">Lente penal · prueba antes de atribución</span><h2>Ocho paquetes probatorios — no una acusación colectiva.</h2><p class="pe-lead">Por Derecho pide a las autoridades competentes comprobar una hipótesis económico-penal conectada mediante documentos primarios finitos. El método es deliberadamente falsable: una explicación lícita o documento contrario que destruya una inferencia debe figurar junto a la prueba que la apoya.</p></div>
-        <div class="pe-proof-rule"><strong>Atribución individual únicamente:</strong> acto → capacidad/autoridad → autoría/instrucción → conocimiento → intención cuando proceda → uso/confianza → perjuicio → beneficio → causalidad → corrección o continuación después del aviso. <strong>Relación no es responsabilidad.</strong></div>
+        <div class="pe-head"><span class="pe-kicker">Atribución penal expresa · prueba individual · ninguna condena colectiva</span><h2>Gil Marer y Aweswell alegan directamente un curso delictivo organizado, no una mera serie de preguntas.</h2><p class="pe-lead">La atribución es directa. La prueba, el registro contrario, la prueba pendiente y el estado de adjudicación son campos separados. Ningún resumen orientado a la audiencia puede rebajar la acusación a preocupación, posible indicio o cronología neutral; ninguna acusación puede presentarse como condena.</p></div>
+        <div class="pe-attribution"><strong>Caso atribuido a actores privados.</strong> Gil Marer y Aweswell atribuyen directamente a actores identificados de CAM / Acosta Matos y del perímetro privado conectado—incluidos José Daniel Acosta Matos, Laura Patricia Acosta Matos, Francisco Mario Matos Matas, Antonio Cogolludo Rojas y otros participantes identificados separadamente—funciones conectadas de instrucción, autoridad, ejecución, control, continuidad o beneficio dentro de una operación ilícita de desplazamiento material. Gil atribuye separadamente al administrador concursal aprobación, habilitación, ratificación penal u omisión jurídicamente equivalente y a actuaciones judiciales concretas prevaricación, negativa a juzgar o demora maliciosa.</div>
+        <div class="pe-proof-rule"><strong>Regla probatoria rectora:</strong> actor → acusación expresa → acto u omisión atribuido → capacidad/deber → fuente de apoyo → material contrario o exculpatorio → prueba pendiente → estado procesal/adjudicativo → efecto o beneficio atribuido. <strong>Relación no es responsabilidad; la prueba pendiente no borra la acusación.</strong></div>
         <div class="pe-grid">
-          <article class="pe-card"><b>PKG-A · PP1041</b><strong>¿Quién autorizó el desistimiento presentado en nombre de LPB?</strong><span>Produzca instrucción, autor, poder, registro LexNET, audiencia de LPB, autoridad concursal y razón contemporánea de interés de la masa.</span></article>
-          <article class="pe-card"><b>PKG-B · deuda → voto</b><strong>¿La deuda utilizada para afectar el voto estaba válidamente construida?</strong><span>Servicio, deudor legal, reparto, vencimiento, certificado, no duplicación, consecuencia electoral y uso externo posterior.</span></article>
-          <article class="pe-card"><b>PKG-C · 7 junio</b><strong>¿Qué convirtió autoridad de seguridad en control material?</strong><span>Seguridad no autoriza por sí sola cerraduras, llaves, exclusión, intervención de fincas privadas, posesión, obras o explotación.</span></article>
-          <article class="pe-card"><b>PKG-H · aviso → conducta</b><strong>¿Qué ocurrió después de cada aviso documentado?</strong><span>Proposición exacta, fuente, competencia, acto posterior, corrección/no corrección, beneficio y perjuicio causal.</span></article>
+          <article class="pe-card"><b>1 · CAM / actores privados</b><strong>Se alega instrucción directa y ejecución coordinada</strong><span>Se atribuye la conversión deliberada de crédito, títulos aislados y mecanismos de Comunidad/seguridad en un control físico más amplio. Sigue exigiéndose prueba nativa de mandato y cadena de mando.</span></article>
+          <article class="pe-card"><b>2 · administrador concursal</b><strong>Se alega aprobación, habilitación o ratificación penal</strong><span>La vía de autoridad, conocimiento, supervisión, respuesta, capacidad de reversión y elemento subjetivo deben contrastarse con la negativa y explicación de acceso más limitado.</span></article>
+          <article class="pe-card"><b>3 · conducta judicial</b><strong>Se alega prevaricación, negativa o demora maliciosa</strong><span>Cada resolución, negativa, demora u omisión exige matriz exacta de prueba ante el juez, deber, injusticia objetiva, conocimiento, finalidad y causalidad.</span></article>
+          <article class="pe-card"><b>4 · registro adverso</b><strong>Se conservan archivo, derechos válidos y explicaciones inocentes</strong><span>El archivo provisional de 2018 y su apelación, posibles derechos válidos de crédito/títulos CAM, adjudicación posterior y toda prueba exculpatoria permanecen visibles y delimitados.</span></article>
         </div>
         <div class="pe-reg"><div class="pe-stat"><strong>360</strong><span>registros REG-AGE en el snapshot analizado</span></div><div class="pe-stat"><strong>80</strong><span>etiquetas de destino</span></div><div class="pe-stat"><strong>319</strong><span>Recibido</span></div><div class="pe-stat"><strong>15</strong><span>Enviado</span></div><div class="pe-stat"><strong>26</strong><span>Rechazado</span></div></div>
-        <div class="pe-limit"><strong>Límite del estado registral:</strong> ENVIADO ≠ ENTREGADO ≠ RECIBIDO ≠ ACUSADO ≠ UNIDO ≠ ADMITIDO ≠ INVESTIGADO ≠ ACEPTADO ≠ RESPALDADO ≠ PROBADO. El snapshot cubre 7 diciembre 2025–15 agosto 2026; es una capa de transmisión/cronología, no una decisión de fondo.</div>
-        <div class="pe-actions"><a href="${mapHref}">Abrir el mapa de ocho paquetes →</a><a class="secondary" href="${correctionsHref}">Correcciones y prueba contraria</a></div>
+        <div class="pe-limit"><strong>Límite de no declaración y estado registral:</strong> una acusación directa de parte no es una declaración judicial. ENVIADO ≠ ENTREGADO ≠ RECIBIDO ≠ ACUSADO ≠ UNIDO ≠ ADMITIDO ≠ INVESTIGADO ≠ ACEPTADO ≠ RESPALDADO ≠ PROBADO.</div>
+        <div class="pe-actions"><a href="${camHref}">Abrir la matriz CAM de atribución directa y prueba →</a><a class="secondary" href="${mapHref}">Abrir el mapa de ocho paquetes</a><a class="secondary" href="${correctionsHref}">Correcciones y prueba contraria</a></div>
       </div>`;
     const anchor = document.querySelector('.priority-band');
-    const before = document.querySelector('#resumen-60-segundos');
+    const before = document.querySelector('#resumen-60-segundos, #sixty-second-summary');
     if (anchor) anchor.insertAdjacentElement('afterend', section);
     else if (before) before.insertAdjacentElement('beforebegin', section);
     else main.prepend(section);
@@ -97,12 +105,12 @@
     box.dataset.prosecutionReadingControl20260821 = 'true';
     box.setAttribute('role', 'note');
     box.innerHTML = isEn ? `
-      <h2>Reading control — scores are triage, not probability of guilt</h2>
-      <p>Any numeric strength score on this page is an internal/public <strong>evidence-prioritisation indicator only</strong>. It is not a probability, judicial finding, criminal-liability score or statement that every legal element is established. Offence labels are investigative hypotheses requiring actor-specific proof.</p>
-      <p>The current public-safe controlling map is <a href="${mapHref}">Eight mechanisms. Individual proof. No collective conviction →</a>. Contrary evidence and legitimate explanations must be given equal methodological access.</p>` : `
-      <h2>Control de lectura — las puntuaciones son triaje, no probabilidad de culpabilidad</h2>
-      <p>Cualquier puntuación numérica de fuerza en esta página es únicamente un <strong>indicador de priorización probatoria</strong>. No es una probabilidad, hallazgo judicial, puntuación de responsabilidad penal ni afirmación de que todos los elementos del tipo estén acreditados. Las etiquetas de delito son hipótesis investigativas que exigen prueba individual.</p>
-      <p>El mapa público de control actual es <a href="${mapHref}">Ocho mecanismos. Prueba individual. Ninguna condena colectiva →</a>. La prueba contraria y las explicaciones legítimas deben tener el mismo acceso metodológico.</p>`;
+      <h2>Reading control — direct attribution and proof are separate</h2>
+      <p>Gil Marer / Aweswell's actor-specific accusations remain direct. Any numeric strength score is only an <strong>evidence-prioritisation indicator</strong>, not a probability, conviction, criminal-liability score or statement that every element is established. Contrary evidence and innocent explanations remain part of the same method.</p>
+      <p>The current public-safe controlling map is <a href="${mapHref}">Eight mechanisms. Individual proof. No collective conviction →</a>.</p>` : `
+      <h2>Control de lectura — atribución directa y prueba son campos separados</h2>
+      <p>Las acusaciones actor-específicas de Gil Marer / Aweswell siguen siendo directas. Cualquier puntuación numérica es únicamente un <strong>indicador de priorización probatoria</strong>, no una probabilidad, condena, puntuación de responsabilidad penal ni afirmación de que todo elemento esté acreditado. La prueba contraria y las explicaciones inocentes forman parte del mismo método.</p>
+      <p>El mapa público de control actual es <a href="${mapHref}">Ocho mecanismos. Prueba individual. Ninguna condena colectiva →</a>.</p>`;
     const hero = main.querySelector('.hero');
     if (hero) hero.insertAdjacentElement('afterend', box);
     else main.prepend(box);

@@ -6,18 +6,28 @@ on:
       - 'es/**'
       - 'en/**'
       - 'assets/**'
+      - 'archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md'
+      - 'archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md'
+      - 'archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md'
       - 'scripts/validate_audience_experience.py'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - 'scripts/render_audience_experience.mjs'
       - '.github/workflows/validate-audience-experience.yml'
+      - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
   push:
     branches: [main]
     paths:
       - 'es/**'
       - 'en/**'
       - 'assets/**'
+      - 'archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md'
+      - 'archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md'
+      - 'archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md'
       - 'scripts/validate_audience_experience.py'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - 'scripts/render_audience_experience.mjs'
       - '.github/workflows/validate-audience-experience.yml'
+      - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
 
 permissions:
   contents: read
@@ -37,11 +47,15 @@ jobs:
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
-      - name: Validate source, routes and public identity
+      - name: Validate source, routes, source literals and visible direct attribution
         run: python3 scripts/validate_audience_experience.py
+      - name: Validate CAM attribution/source-fidelity contract
+        run: python3 scripts/validate_cam_creditor_control_criminal_lead.py
       - name: Validate JavaScript syntax
         run: |
           node --check assets/audience-experience-order-20260823.js
+          node --check assets/prosecution-public-entry-20260821.js
+          node --check assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js
           node --check assets/optimum-reader-journey-20260818.js
           node --check assets/site.js
           node --check scripts/render_audience_experience.mjs

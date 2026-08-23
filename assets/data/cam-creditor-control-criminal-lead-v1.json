@@ -1,11 +1,12 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "publication_id": "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
   "control_marker": "cam-creditor-control-criminal-lead-20260823",
   "control_date": "2026-08-23",
   "status": "DRAFT_ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_FINDING",
-  "purpose": "Machine-readable control for the actor-specific allegations concerning the 7 June 2018 Sun Park entry, CAM creditor control, de facto administration, insolvency-administrator approval or ratification, and judicial omission. It records evidential sufficiency to make and seek investigation of the allegations, not proof of criminal guilt.",
+  "purpose": "Machine-readable control for Gil Marer / Aweswell's direct actor-specific criminal allegations concerning the 7 June 2018 Sun Park entry, CAM creditor control, de facto administration, insolvency-administrator approval or ratification, and judicial omission. It preserves the attribution at full strength while classifying evidence, contrary material, unresolved proof, adjudication and source literal separately.",
   "canonical_source": "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+  "non_dilution_rule": "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
   "public_routes": {
     "en": "/en/cam-creditor-control-shadow-administration-judicial-omission/",
     "es": "/es/control-acreedor-cam-administracion-hecho-omision-judicial/"
@@ -15,7 +16,11 @@
       "Gil Marer",
       "Aweswell"
     ],
-    "evidence_sufficiency": "SUFFICIENT_TO_MAKE_PRESERVE_AND_REQUEST_INVESTIGATION",
+    "attribution_strength": "DIRECT_ACTOR_SPECIFIC_CRIMINAL_ATTRIBUTION_NOT_MERE_QUESTION_OR_LEAD",
+    "evidence_sufficiency": "SUFFICIENT_TO_MAKE_PRESERVE_PUBLISH_AS_ATTRIBUTED_AND_REQUEST_INVESTIGATION",
+    "non_dilution_required": true,
+    "first_read_prominence_required": true,
+    "source_literals_preserved": true,
     "criminal_guilt_adjudicated": false,
     "collective_guilt_presumed": false,
     "presumption_of_innocence_preserved": true,
@@ -26,20 +31,22 @@
       "id": "CAM-LEAD-01",
       "label": "CAM/private-actor direct instruction or coordinated implementation",
       "attributed": true,
+      "attribution_strength": "DIRECT_CRIMINAL_ALLEGATION",
       "criminal_finding": false,
-      "status": "FIRST_ORDER_CRIMINAL_INVESTIGATIVE_ALLEGATION",
+      "status": "FIRST_ORDER_ACTOR_SPECIFIC_CRIMINAL_ALLEGATION",
       "actors": [
         "CAM entity or entities",
         "José Daniel Acosta Matos (JDAM)",
+        "Laura Patricia Acosta Matos (LPAM)",
         "Francisco Mario Matos Matas (FMMM)",
-        "relevant Laura Acosta Matos actor",
+        "Antonio Cogolludo Rojas",
         "separately identified Community, service, security and locksmith actors"
       ],
       "documented_basis": [
         "recognised CAM secured-credit position before 7 June 2018",
         "filed allegations of earlier JDAM and FMMM access, asserted ownership and control conduct",
-        "contemporaneous placement of CAM lawyer Laura Patricia Acosta Matos with Community personnel at the physical event",
-        "filed 7 June amendment naming Laura Patricia Acosta Matos and Antonio Cogolludo as acting personally and purportedly for CAM and the Community",
+        "contemporaneous email source literal placing a CAM lawyer described as Laura Matos with Community personnel at the physical event",
+        "filed 7 June amendment alleging direct-day conduct by the Laura Acosta Matos actor using a different forename controlled as a typographical error; canonical identity Laura Patricia Acosta Matos",
         "reported use of a whole-complex ownership paper and the 18 May security minute",
         "material benefit to the creditor and later project perimeter",
         "later direct Acosta Matos Community and project control"
@@ -51,15 +58,16 @@
         "key receipt and asset-perimeter instructions",
         "witness attribution of each operational order",
         "post-event adoption or ratification",
-        "precise identity and participation of the relevant Laura actor"
+        "mandate, presence, knowledge, purpose and exact participation of Laura Patricia Acosta Matos"
       ]
     },
     {
       "id": "CAM-LEAD-02",
       "label": "Insolvency-administrator criminal approval, enablement, ratification or legally equivalent omission",
       "attributed": true,
+      "attribution_strength": "DIRECT_CRIMINAL_ALLEGATION",
       "criminal_finding": false,
-      "status": "FIRST_ORDER_ACTOR_SPECIFIC_CRIMINAL_INVESTIGATIVE_ALLEGATION",
+      "status": "FIRST_ORDER_ACTOR_SPECIFIC_CRIMINAL_ALLEGATION",
       "documented_basis": [
         "administrator participation in or connection to the 18 May 2018 security-authority chain",
         "administrator denial of the principal lock-takeover instruction",
@@ -85,8 +93,9 @@
       "id": "CAM-LEAD-03",
       "label": "Judicial omission or omissionary judicial prevarication",
       "attributed": true,
+      "attribution_strength": "DIRECT_GIL_MARER_CRIMINAL_ALLEGATION",
       "criminal_finding": false,
-      "status": "GIL_MARER_ALLEGATION_REQUIRING_EXACT_ACT_AND_STATUTORY_CLASSIFICATION",
+      "status": "DIRECT_ALLEGATION_REQUIRING_EXACT_ACT_AND_STATUTORY_CLASSIFICATION",
       "documented_basis": [
         "complaints, requests and evidence presented to judicial or institutional channels",
         "identifiable resolutions, refusals, delay or omissions alleged to have preserved the private-control result",
@@ -122,6 +131,7 @@
       "alleged material controller of the hotel"
     ],
     "boundary": "The capacities converged across the sequence; the record does not state that one CAM entity held all capacities throughout 2017 or that any one capacity conferred whole-hotel possession.",
+    "attributed_position": "Gil directly alleges that the converging capacities were deliberately converted into material possession and management beyond CAM's lawful asset and creditor perimeter.",
     "later_control_point": "By February 2022, direct Acosta Matos Community governance and project control were documented; this is continuity and benefit evidence, not automatic proof of the June 2018 instruction chain."
   },
   "authority_inversion": {
@@ -201,13 +211,17 @@
     }
   ],
   "identity_control": {
-    "contemporaneous_email_name": "Laura Patricia Acosta Matos",
-    "filed_7_june_amendment_name": "Laura Patricia Acosta Matos",
+    "canonical_identity": "Laura Patricia Acosta Matos",
     "repository_lpam_name": "Laura Patricia Acosta Matos",
+    "contemporaneous_email_source_literal": "Laura Matos",
+    "filed_7_june_amendment_source_literal_status": "DIFFERENT_FORENAME_TYPO_PRESERVED_IN_NATIVE_SOURCE",
+    "source_literal_rewritten_as_canonical_identity": false,
+    "source_literal_public_only_if_expressly_marked": true,
     "name_controlled_as_typographical_error": true,
+    "direct_attribution_preserved": true,
     "laura_patricia_physical_presence_established": false,
     "laura_patricia_direct_instruction_established": false,
-    "publication_rule": "Use Laura Patricia Acosta Matos in all public output. Preserve Gil's LPAM allegation while requiring independent proof of mandate, participation, knowledge, purpose and responsibility."
+    "publication_rule": "Use Laura Patricia Acosta Matos as narrative identity and preserve Gil's direct LPAM allegation. Preserve source literals exactly; require independent proof of mandate, presence, exact instruction, knowledge, purpose, participation and responsibility."
   },
   "functional_frameworks": {
     "creditor_in_possession": {
@@ -321,15 +335,20 @@
     "cam_valid_credit_possible": true,
     "cam_valid_individual_titles_possible": true,
     "later_adjudication_legally_distinct_and_non_retroactive": true,
-    "scope_rule": "Preserve the procedural outcome prominently and compare its exact subject, actors and evidence with the expanded later record; do not recast it as either a conviction or a universal merits declaration."
+    "scope_rule": "Preserve the procedural outcome prominently and compare its exact subject, actors and evidence with the expanded later record; do not recast it as either a conviction, universal merits declaration or reason to suppress the direct attribution."
   },
   "publication_boundaries": {
     "state_allegations_as_attributed": true,
+    "state_direct_attribution_before_caveats": true,
+    "first_read_direct_attribution_required": true,
     "criminal_guilt_as_established": false,
     "direct_instruction_as_adjudicated_fact": false,
     "administrator_criminal_approval_as_adjudicated_fact": false,
     "judicial_prevarication_as_established": false,
+    "dilute_direct_attribution_to_question_or_lead": false,
+    "rewrite_source_literal_as_canonical_identity": false,
     "treat_source_typo_as_separate_actor": false,
+    "hide_direct_attribution_in_collapsed_content": false,
     "infer_later_evidence_was_before_earlier_actor": false,
     "treat_valid_credit_as_whole_hotel_title": false,
     "treat_later_adjudication_as_retroactive_authority": false,
@@ -338,6 +357,8 @@
     "preserve_right_of_reply": true
   },
   "controlled_sources": [
+    "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
+    "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md",
     "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
     "archive/CAM_2018_EXTRACONCURSAL_TAKEOVER_RETRIEVAL_GATE_16AUG2026.md",
     "archive/CALIFICACION_EXTRACONCURSAL_TAKEOVER_BORJA_SECURITY_SOURCE_UPGRADE_16AUG2026.md",
@@ -345,6 +366,7 @@
     "archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md",
     "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/CORRECTION_REGISTER.md",
     "archive/MISSING_EVIDENCE_REGISTER.md"
   ],
