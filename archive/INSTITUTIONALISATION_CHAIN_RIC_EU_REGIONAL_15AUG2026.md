@@ -87,7 +87,7 @@ Controlled significance:
 
 The corpus identifies a 29 December 2021 RICPE capital/investment decision linked to Sun Park and later review material in early 2022. That route must be reconciled against the simultaneous concurso/documentary sequence:
 
-`26 Jan 2022 adjudication → 14 Feb 2022 testimony/finality episode → 21 Feb 2022 deed → Registry → CAM→HNT corporate restructuring`.
+`18 May 2021 definitive approval → two separate 15 October 2021 confirmation/challenge Autos → two 26 January 2022 clarification Autos (no new award) → 14 February 2022 testimony/finality episode → 21 February 2022 deed → Registry → CAM→HNT corporate restructuring`.
 
 The audit must identify the precise document or combination of documents that moved the project from **future ownership / incomplete due diligence** to a status regarded as sufficient for investment, financing, transformation and downstream administrative reliance.
 

@@ -48,10 +48,7 @@ conformidad de esta parte con la pérdida sobrevenida de interés en la resoluci
 de reposición interpuesto por la Administración Concursal contra la Diligencia de Ordenación
 de 5 de mayo de 2026, con cuanto demás proceda en Derecho.
 
-                                                             Firmado por SIXTO SEIJAS
-                                                             JAVIER - ***8165** con un
-                                                             certificado emitido por AC
-                                                             FNMT Usuarios
+                                                             [datos de firma electrónica suprimidos]
 
                                           En Las Palmas de Gran Canaria, a 24 de julio de 2026.
 ```

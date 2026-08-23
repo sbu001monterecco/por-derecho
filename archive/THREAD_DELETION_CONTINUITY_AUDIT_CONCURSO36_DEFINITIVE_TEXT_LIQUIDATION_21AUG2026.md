@@ -3,6 +3,8 @@
 Date: 21 Aug 2026
 Status: continuity preservation record for the repository update initiated from the hard-closure prompt
 
+> **23-Aug-2026 source-status supersession:** References below to an incomplete or two-page 4-Jun-2018 source preserve the historical state of this continuity record; they are not the current source status. Current control is the complete three-page authentic court copy in Gmail `194a98a11920fefd`, filename `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`. SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` belongs only to the superseded two-page derivative and must not be assigned to the three-page copy. Canonical-copy hash binding, exact service/notification and downstream implementation remain open.
+
 ## Current repository base used
 
 This update was branched from current `main` at:

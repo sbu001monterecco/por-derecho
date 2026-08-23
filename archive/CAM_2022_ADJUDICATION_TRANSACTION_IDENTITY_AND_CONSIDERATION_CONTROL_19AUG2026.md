@@ -1,7 +1,7 @@
 # CAM / CONCURSO 36/2012 — 2022 ADJUDICATION TRANSACTION IDENTITY + CONSIDERATION CONTROL
 
 **Control date:** 19 August 2026  
-**Status:** `CANONICAL SPECIALIST CONTROL — PRIMARY 25-JAN AUTO + 29-JAN EDICTO + OTTAWA OFFER / DEED BINARY REBINDING OPEN`  
+**Status:** `CANONICAL SPECIALIST CONTROL — PRIMARY 25-JAN AUTO + 29-JAN EDICTO + OTTAWA OFFER + 18-MAY/15-OCT/26-JAN JUDICIAL FAMILY + DEED 457 LOCATED / IMPLEMENTATION OPEN`
 **Scope:** 2018 offer → 2019 appellate/publicity rules → Jan-2021 calculation/publicity → Ottawa better posture → 2021 definitive authorisation → Jan/Feb-2022 finality/testimonios → 21-Feb-2022 deed → Registry/accounting/surplus.
 
 ## 1. Controlling question
@@ -165,22 +165,26 @@ Source locators:
 - `13. RECURSO DE APELACION PACTO COMISORIO 28FEB2022.pdf` — Drive ID `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC`;
 - `recursoautoadjudicacion 2MAR2022` — Drive ID `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc`.
 
-These are **filed/prepared party procedural sources quoting the operative resolutions**. The signed 18-May, 15-Oct and 26-Jan sources remain the higher-rank retrieval target.
+These are **filed/prepared party procedural sources quoting the operative resolutions**. The complete signed 18-May Auto, both separate 15-Oct Autos and both separate 26-Jan clarification Autos are now the higher-rank controls; their underlying applications, service/finality and downstream implementation context remain open.
 
 ---
 
-## 6. 21-Feb-2022 deed — controlled working position
+## 6. 21-Feb-2022 deed 457 — primary source located; implementation open
 
-Connected 2026 party-prepared reconstruction documents state that the **21-Feb-2022 public deed** uses:
+The recovered and reviewed **76-page primary public deed 457 of 21-Feb-2022** states:
 
 > **€13,168,082.02** as `valor de contraprestación`.
 
-Sources:
+Primary source:
+
+- Gmail message `18ab89a1775e61b3`, `Escritura de Adjudicacion a CAM 21FEB2022.pdf`; duplicate source message `18f6ed9bab25f193`, `Doc35 escritura venta.pdf`.
+
+Earlier party-reconstruction sources, now subordinate to the primary deed:
 
 - `ANEXO TÉCNICO - Reconstruccion Economica Provisiona de la Adjudicacion 17FEB2026` — Drive ID `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk`;
 - `Incidente Concursal Nulidad Adjudicacion 17FEB2026` — Drive ID `1fVkCG4XrKduPAkBwkh_HBj6ii43FSwLRwAucEIYip-E`.
 
-**Source-status rule:** this is a controlled **party-reconstruction proposition**, not yet PRIMARY VERIFIED, because the exact deed binary/certified copy, clause, page and notarial protocol have not been rebound in this pass.
+**Source-status rule:** the deed's stated amount, described 159-LPB-finca perimeter, traditio wording, cancellation requests and five-calendar-day court-reporting duty are primary-source propositions. The deed does not by itself prove the final legally allowable insolvency debt, third-party title, completed cancellations, the separate locales/pools branch, court return, Registry implementation, accounting or surplus.
 
 ### Superseded formulations
 
@@ -216,7 +220,7 @@ Apply this chain:
 
 `→ 15-Oct-2021 ORDERS`
 
-`→ 26-Jan-2022 CLARIFICATION / FINALITY NODE`
+`→ 26-Jan-2022 TWO CLARIFICATION AUTOS / TESTIMONY-FINALITY BRIDGE — NO NEW AWARD`
 
 `→ 2021 + 2022 TESTIMONIOS`
 
@@ -255,7 +259,7 @@ No later description may substitute for the missing bridge itself.
 | **€3,182,000** | first-rank default-interest mortgage-guarantee cap and Jan-2021 better-posture component | PRIMARY JUDICIAL + EDICTO |
 | **€11,941,921.02** | first-rank better-posture total | PRIMARY VERIFIED |
 | **€1,226,161.00** | second-rank better-posture total | PRIMARY VERIFIED |
-| **€13,168,082.02** | sum of the two mortgage components in the Edicto; separately stated by 2026 party reconstructions as deed `valor de contraprestación` | PRIMARY arithmetic / deed function SOURCE-DERIVED pending deed binary |
+| **€13,168,082.02** | sum of the two mortgage components in the Edicto; deed 457 states the same figure as debt serving as consideration for the dación | PRIMARY JUDICIAL ARITHMETIC + PRIMARY NOTARIAL FUNCTION; legal/accounting bridge still open |
 | **€400,000** | separate non-mortgaged-asset component; 2022 appeals describe locales/pools direct sale for this amount | PRIMARY / FILED-PROCEDURAL support |
 | **€13,568,082.02** | €13.168m + €400k; intermediate better-posture subtotal excluding community/taxes | PRIMARY-derived arithmetic; **not deed total absent deed proof** |
 | **€427,135.05** | Jan-2021 Auto's post-concurso community component | PRIMARY JUDICIAL SOURCE |
@@ -275,7 +279,7 @@ A later 2026 party technical annex contains a line using **€1,226,191**. The p
 The current LAJ ledger independently proves:
 
 - **25-Oct-2021** CAM testimony request/handling;
-- **14-Feb-2022** CAM request for testimony including the 26-Jan-2022 order with expression of finality, with later notification notation.
+- **14-Feb-2022** CAM request for testimony including Auto 164/2021 of 18 May, both separate 15-Oct-2021 Autos and both separate 26-Jan-2022 clarification Autos with expression of finality, with later notification notation.
 
 The deletion thread additionally mentioned approximate **325 → 646 folio** package sizes. The 19-Aug connected-Drive search did not independently recover those counts.
 
@@ -375,10 +379,13 @@ The repository is an evidence and issue-control system, not a substitute for pro
 1. **Signed judicial act:** `19. Auto Publicidad Subasta 25ENE2021.pdf`, Drive `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh`.
 2. **Court-office Edicto:** `22. EDICTO Cedula de Notificacion 29ENE2021.pdf`, Drive `1mgIFpwTq0F5y9A-pekLEoI2c_yFZJOMl`.
 3. **Third-party offer:** `oferta vinculante OTTAWA 8feb2021`, Drive `1K7qlKcDTmvKbRuPrSo-nxJShoFi7WjDkIz0B-uD5nUA`.
-4. **Filed LPB appeal:** `13. RECURSO DE APELACION PACTO COMISORIO 28FEB2022.pdf`, Drive `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC`.
-5. **Aweswell appeal source:** `recursoautoadjudicacion 2MAR2022`, Drive `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc`.
-6. **Later party technical reconstruction:** Drive `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk`.
-7. **Later party incident pleading:** Drive `1fVkCG4XrKduPAkBwkh_HBj6ii43FSwLRwAucEIYip-E`.
+4. **Signed definitive approval:** Auto 164/2021, Drive `1SpJkBz23fl-Z6yKbbsIhixsKPrQNXqAc`.
+5. **Signed same-day pairs:** both 15-Oct-2021 Autos and both 26-Jan-2022 clarification Autos, controlled as distinct records `C36-E046`, `C36-E047`, `C36-E050` and `C36-E051`.
+6. **Primary deed 457:** Gmail `18ab89a1775e61b3`, `Escritura de Adjudicacion a CAM 21FEB2022.pdf`, 76 pages; duplicate Gmail `18f6ed9bab25f193`, `Doc35 escritura venta.pdf`.
+7. **Filed LPB appeal:** `13. RECURSO DE APELACION PACTO COMISORIO 28FEB2022.pdf`, Drive `1u8fq6eZVPXg5cSA65kZgd9TSXk81kfKC`.
+8. **Aweswell appeal source:** `recursoautoadjudicacion 2MAR2022`, Drive `1bY5h7udaQV364Nq-Qx7husr9IYImFFXQ7JwVvRVGlCc`.
+9. **Later party technical reconstruction:** Drive `1t0HDv5gScn-1XUhXcqiFQhC5VtIwd0ai8xJxYPEcunk`.
+10. **Later party incident pleading:** Drive `1fVkCG4XrKduPAkBwkh_HBj6ii43FSwLRwAucEIYip-E`.
 
 Lower-ranked sources may identify gaps but must not overwrite higher-ranked sources.
 
@@ -388,8 +395,8 @@ Lower-ranked sources may identify gaps but must not overwrite higher-ranked sour
 
 P1:
 
-1. exact 21-Feb-2022 deed binary/certified copy, protocol and `valor de contraprestación` clause;
-2. signed 18-May-2021, 15-Oct-2021 and 26-Jan-2022 judicial sources plus finality/service;
+1. deed 457 five-day court-return receipt, resulting court act/mandamiento, finca-by-finca Registry/cancellation implementation and accounting treatment;
+2. underlying applications, opposition, service/finality and testimony use for the located signed 18-May-2021, two 15-Oct-2021 and two 26-Jan-2022 Autos;
 3. full 2021 and 2022 testimonios, manifests/page counts and downstream deed use;
 4. CAM calculation/certificate underlying the Jan-2021 interest update;
 5. definitive-text CAM credit recognition and classification;

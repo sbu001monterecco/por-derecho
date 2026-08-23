@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-08-21",
+  "as_of": "2026-08-23",
   "case": {
     "name": "Concurso 36/2012",
     "court": "Juzgado de lo Mercantil nº 1 de Las Palmas",
@@ -10,7 +10,7 @@
   "reading_rules": [
     "recognised insolvency credit != mortgage liability != competitive threshold != debt stated as consideration for the dacion != Registry value != possible surplus",
     "authorisation != implementation",
-    "22 January 2022 and 26 January 2022 are separate date references until the signed January act family is reconciled",
+    "two signed clarification Autos dated 26 January 2022 are located; the deed's separate 22 January recital is an internal notarial date inconsistency, not proof of a third judicial act",
     "later deed or Registry implementation does not automatically cure an earlier authority, competition, credit-classification or non-convalidation issue",
     "documentary difference alone does not prove nullity, fraud, bad faith, surplus or criminal responsibility"
   ],
@@ -57,47 +57,61 @@
     {
       "id": "J36-2021-05-18",
       "date": "2021-05-18",
-      "type": "judicial_event_family",
-      "label": "Licitation / Auto 164/2021 and approval-source family",
-      "source_status": "primary_material_exists_complete_family_not_reconciled",
-      "safe_proposition": "Primary 18-May court material supports CAM's procedural role/representation at the event, while later materials reproduce an approval structure. The complete signed adjudication/approval source family remains to be reconciled.",
-      "open_bridge": ["requests", "attendance/powers", "recording/minute", "all signed orders", "notification", "third-party proposal treatment"]
+      "type": "judicial_order",
+      "label": "Auto 164/2021 — definitive approval of CAM proposal",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E044",
+      "safe_proposition": "The complete signed five-page order definitively approves CAM's proposal after recording the third-party bidder's nonappearance and failure to lodge the bond. It does not prove every aspect of the third-party offer pack or later transaction performance.",
+      "open_bridge": ["complete third-party filed offer and authority/funds", "recording/minute", "notification", "appeal/finality", "deed, Registry and accounting performance"]
     },
     {
       "id": "J36-2021-10-15-A",
       "date": "2021-10-15",
-      "type": "judicial_order_candidate",
-      "label": "First described 15 October act",
-      "source_status": "primary_family_incomplete",
-      "safe_proposition": "Current reconstruction identifies a pair of 15-October acts requiring reconciliation; apparent documentary tension is a verification target, not proof of misconduct.",
-      "open_bridge": ["signed original", "request and context", "service", "finality", "clarification/correction/supersession"]
+      "type": "judicial_order",
+      "label": "First signed 15 October Auto — challenges to 18 May",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E046",
+      "safe_proposition": "The complete five-page order dismisses LPB/Aweswell challenges and confirms the 18 May approval, describing the event as an improvement-of-offer process rather than a formal auction.",
+      "open_bridge": ["complete underlying challenges and context", "service", "finality", "performance of the confirmed approval"]
     },
     {
       "id": "J36-2021-10-15-B",
       "date": "2021-10-15",
-      "type": "judicial_order_candidate",
-      "label": "Second described 15 October act",
-      "source_status": "primary_family_incomplete",
-      "safe_proposition": "Current reconstruction identifies a pair of 15-October acts requiring reconciliation; apparent documentary tension is a verification target, not proof of misconduct.",
-      "open_bridge": ["signed original", "request and context", "service", "finality", "relationship to January 2022 acts"]
+      "type": "judicial_order",
+      "label": "Second signed 15 October Auto — challenges to 12 May providencia",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E047",
+      "safe_proposition": "The complete two-page order dismisses challenges as moot but uses auction/adjudication terminology later clarified by a separate 26 January order. Shared date does not make the two Autos one instrument.",
+      "open_bridge": ["complete underlying challenges and context", "service", "finality", "relationship to clarification C36-E050"]
     },
     {
       "id": "J36-2022-01-22-RECITAL",
       "date": "2022-01-22",
-      "type": "judicial_order_recited_in_deed",
-      "label": "22 January order recited by deed 457",
-      "source_status": "notarial_recital_verified_primary_judicial_original_open",
-      "safe_proposition": "Deed 457 is evidence that the notarial implementation recites/relies on a judicial act dated 22 January 2022; the recital does not establish the complete content or effect of the underlying signed original.",
-      "open_bridge": ["signed original", "application/request", "operative paragraphs", "notification", "relationship to 15 October acts", "relationship to 26 January reference"]
+      "type": "notarial_date_recital_discrepancy",
+      "label": "22 January date recited internally in deed 457",
+      "source_status": "notarial_internal_inconsistency_not_separate_judicial_act",
+      "safe_proposition": "One page of deed 457 contains a 22 January recital while another refers to 26 January. The two signed judicial originals located are both dated 26 January; the 22 January notation is preserved as a notarial reconciliation target, not modelled as a proved separate order.",
+      "open_bridge": ["notarial source/execution explanation", "certified docket confirmation that no distinct 22 January act exists", "correction or rectification if any"]
     },
     {
-      "id": "J36-2022-01-26",
+      "id": "J36-2022-01-26-A",
       "date": "2022-01-26",
-      "type": "judicial_act_reference",
-      "label": "26 January judicial-date reference",
-      "source_status": "source_family_requires_reconciliation",
-      "safe_proposition": "Preserve 26 January as a distinct date reference. It must not be collapsed into 22 January or used as a generic label for the whole adjudication until the signed source is bound to the record.",
-      "open_bridge": ["signed original and metadata", "operative function", "service/finality", "relationship to deed 457"]
+      "type": "judicial_clarification_order",
+      "label": "First signed 26 January clarification Auto",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E050",
+      "safe_proposition": "The complete two-page order clarifies that the event was a better-offer licitation appearance, not an auction. It does not make the original approval, convey title, enlarge asset scope or calculate a surplus.",
+      "open_bridge": ["individual responses and service log", "complete finality/review chain", "relationship to deed wording"]
+    },
+    {
+      "id": "J36-2022-01-26-B",
+      "date": "2022-01-26",
+      "type": "judicial_clarification_order",
+      "label": "Second signed 26 January clarification Auto",
+      "source_status": "primary_signed_located",
+      "canonical_record": "C36-E051",
+      "safe_proposition": "The complete three-page order clarifies and completes the other 15 October Auto and records that July 2021 ownership publicity was put before the court but considered irrelevant to realisation of the identified fincas. It is not a whole-hotel title finding or new adjudication.",
+      "open_bridge": ["individual responses and service log", "complete finality/review chain", "exact relationship to deed wording"]
     },
     {
       "id": "IMP-2022-02-21",

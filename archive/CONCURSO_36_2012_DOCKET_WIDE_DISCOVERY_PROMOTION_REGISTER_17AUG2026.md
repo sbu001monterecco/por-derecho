@@ -49,9 +49,9 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 - 15-Feb-2018 Auto modifying final texts to recognise CAM as successor to Promontoria for secured credits.
 - 09-Feb-2018 two LAJ diligencias concerning access to plan documents and AC remuneration.
 - 16-Feb-2018 Autos fixing liquidation remuneration and supplementing the 05-May-2017 remuneration act.
-- 08-Mar-2018 LAJ Diligencia on clarification of 08-Feb Auto / CAM appearance.
+- 08-Mar-2018 LAJ Diligencia on clarification of the 15-Feb-2018 creditor-substitution/credit-interest Auto / CAM appearance; the prior 08-Feb alias is superseded unless a distinct authenticated act is produced.
 - 12-Apr-2018 LAJ Diligencia moving plan-of-liquidation allegations to S.Sª.
-- 16-Apr-2018 Auto approving plan of liquidation and CAM disposal proposal; separate same-date Auto clarifying 08-Feb credit-interest treatment. These must remain distinct.
+- 16-Apr-2018 Auto approving plan of liquidation and CAM disposal proposal; separate same-date Auto clarifying the 15-Feb credit-interest treatment. These must remain distinct.
 - 08-May-2018 LAJ Diligencia handling clarification requests against 16-Apr Auto.
 - 04-Jun-2018 Auto clarifying 16-Apr plan/disposal conditions and offer amounts.
 - 15-Jun-2018 LAJ Diligencia implementing publication/announcement of sale/dación terms.

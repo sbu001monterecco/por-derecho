@@ -48,7 +48,9 @@ The `26JAN2017` attachment label is the **notification date**, not the judicial 
 ## Material contents — Batch A
 
 ### `C36-JUD-2012-06-06-001`
-The recovered nine-page court copy declares LPB in voluntary concurso, identifies the insolvency, preserves LPB's administration/disposition subject to insolvency-administrator intervention, appoints Fernando de León Marrero as insolvency administrator, opens the common phase, calls creditors and orders the statutory publicity/registry measures. The final page expressly attributes the act to Alberto López Villarrubia.
+The recovered nine-page court copy declares LPB in voluntary concurso, identifies the insolvency, preserves LPB's administration/disposition subject to insolvency-administrator intervention, appoints **Francisco de Borja Rodríguez-Batllori Laffitte** as insolvency administrator, opens the common phase, calls creditors and orders the statutory publicity/registry measures. The final page expressly attributes the act to Alberto López Villarrubia.
+
+**Collision-safe correction control `C36-CORR-OPENING-AC-20260823`:** the opening appointment is Francisco de Borja Rodríguez-Batllori Laffitte, not Fernando de León Marrero. This corrects only the operative appointment in the 6-Jun-2012 Auto; any later acceptance, substitution or continuity must be proved from its own act.
 
 ### `C36-JUD-2017-01-20-001`
 The complete court copy resolves modification of the definitive texts in relation to the Comunidad de Propietarios. It is a Juan Avello Formoso act, not an Alberto act. The copy records notification on 26-Jan-2017.
