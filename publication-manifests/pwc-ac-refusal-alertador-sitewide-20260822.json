@@ -4,8 +4,8 @@
   "control_date": "2026-08-22",
   "repository": "sbu001monterecco/por-derecho",
   "branch": "codex/pwc-ac-alertador-footer-20260822",
-  "current_state": "DRAFT",
-  "deletion_status": "PENDING_NOT_YET_DELETION_SAFE",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
   "subject": "Existing PwC 2016 criminality-knowledge checkpoint artwork linked to the complete April 2016 AC-refusal chain, plus a controlled reporting-person / alertador footer",
   "expected_routes": {
     "es": [
@@ -212,13 +212,16 @@
     "complete removal/separation filings, actor-specific elements, causation, loss and limitation evidence"
   ],
   "validation": {
-    "status": "LOCAL_PASS",
+    "status": "LOCAL_AND_CI_PASS_WITH_ONE_DOCUMENTED_UNRELATED_NON_REGRESSION",
     "evidence": [
       "git diff --check and staged-equivalent new-file whitespace checks passed",
       "node --check passed for site.js, warning, alertador footer and site-wide PwC image linker",
       "public-bidder anonymisation, San Telmo attribution, unitary criminal reverse-engineering, visual-asset registry, publication-integrity and mission-critical repository validators passed",
       "all 15 core route files and all declared source files exist; exact ES/EN PNG SHA-256 values match",
-      "13-route warning, bilingual footer and generic image-link simulations passed"
+      "13-route warning, bilingual footer and generic image-link simulations passed",
+      "22 of 23 PR-head workflows succeeded; the sole failure was an unrelated pre-existing Playa Blanca site-loader marker contract absent from both base and head",
+      "all 33 controlled live routes and four runtime assets returned HTTP 200; rendered representative routes showed a visible single image, locale-correct click-through and bilingual footer",
+      "repository-wide production smoke passed all 23 checks"
     ],
     "required": [
       "JavaScript syntax",
@@ -230,10 +233,48 @@
       "production HTTP and downloaded-asset readback"
     ]
   },
+  "merge_sha": "2a8ce42658a742b6cce276bd06e667a7b7b2e9bc",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 32606326835,
+    "deployment_number": 920,
+    "status": "success",
+    "completed_at": "2026-08-22T23:52:00Z",
+    "exact_merge_sha": "2a8ce42658a742b6cce276bd06e667a7b7b2e9bc"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/evidencia-pwc-junta-sun-park-21-abril-2016/",
+    "https://sbu001monterecco.github.io/por-derecho/en/evidence-pwc-sun-park-meeting-21-april-2016/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png",
+    "https://sbu001monterecco.github.io/por-derecho/assets/alertador-notice-20260822.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/pwc-visual-chain-link-20260822.js"
+  ],
+  "live_verification_evidence": [
+    "Downloaded public ES PNG SHA-256 6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf matched the repository asset",
+    "Downloaded public EN PNG SHA-256 d00d2a5d334bc73bf2c1dd034a8d8341b00c47d9e0a382aff08e1a716d75bc8f matched the repository asset",
+    "33 of 33 core, supplemental and existing-derivative routes returned HTTP 200",
+    "Cloud-browser readback confirmed visible 1800x1200 image, one-copy placement, locale-correct April-chain anchors and ES/EN reporting-person footer headings",
+    "Spanish RICPE lazy image was incomplete before viewport entry and completed at 1800x1200 with the correct #secuencia link after scrolling; post-merge run 32606327389 was a timing false negative",
+    "A live click from the English RICPE route reached /en/evidence-pwc-sun-park-meeting-21-april-2016/#sequence",
+    "production_smoke_check.py passed 23 of 23 checks"
+  ],
+  "deletion_record": {
+    "audit": "docs/deletion-audits/2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md",
+    "verdict": "DELETION-SAFE WITH OPEN EVIDENCE",
+    "email_status": "NOT_SENT",
+    "scope_limit": "This closes chat-custody continuity only; it does not close the investigation, resolve the open-evidence register, establish a criminal offence or confer protected-reporting-person status.",
+    "preserve": [
+      "Gmail originals and native exports",
+      "repository history and public pages",
+      "byte-locked email artwork",
+      "open-evidence and legal-boundary records"
+    ]
+  },
   "publication": {
-    "pull_request": "PENDING",
-    "merge_commit": "PENDING",
-    "live_readback": "PENDING",
-    "deployment_log": "PENDING"
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/807",
+    "merge_commit": "2a8ce42658a742b6cce276bd06e667a7b7b2e9bc",
+    "live_readback": "PASS_33_OF_33_ROUTES_EXACT_ASSET_HASHES_RENDERED_LINK_AND_FOOTER",
+    "deployment_log": "archive/DEPLOYMENT_LOG.md"
   }
 }

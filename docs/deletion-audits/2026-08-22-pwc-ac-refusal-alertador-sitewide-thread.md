@@ -8,17 +8,20 @@
 
 **Scope:** preservation and publication of the existing bilingual PwC criminality-knowledge checkpoint artwork; direct linking to the complete 15–26 April 2016 Sun Park meeting evidence route; controlled site-wide reporting-person / alertador footer; and the no-email-without-final-authorisation rule.
 
-**Implementation status:** `PENDING MERGE + LIVE READBACK`
-**Deletion verdict:** `PENDING — NOT YET DELETION-SAFE`
+**Implementation status:** `LIVE VERIFIED — PR #807 / MERGE 2a8ce42658a742b6cce276bd06e667a7b7b2e9bc`
+**Deletion verdict:** `DELETION-SAFE WITH OPEN EVIDENCE`
 
-## Provisional decision
+## Final decision
 
-This audit is a repository preservation record, not a completed deployment certificate. The thread must not be treated as deletion-safe until:
+The publication and repository-preservation gates are complete:
 
-1. the listed source changes and this audit are merged to `main`;
-2. the two canonical images and all fifteen core routes are read back from the public site;
-3. the direct April-2016 chain links and the bilingual footer are verified live; and
-4. the PR number, merge commit and live-readback results below are replaced with final values.
+1. PR [#807](https://github.com/sbu001monterecco/por-derecho/pull/807) was merged to `main` at `2a8ce42658a742b6cce276bd06e667a7b7b2e9bc`;
+2. GitHub Pages build and deployment run `32606326835` (deployment #920) completed successfully at 23:52:00Z;
+3. both canonical public images downloaded with the exact repository SHA-256 values;
+4. all 33 core, supplemental and existing-derivative routes returned HTTP 200;
+5. rendered browser readback confirmed the image visible at 1800 × 1200, single-copy placement, locale-correct April-chain link and reporting-person footer on the dedicated Spanish page, the Spanish AC route and the English RICPE route;
+6. a real click from the RICPE image reached the English dedicated page's `#sequence` section; and
+7. the repository-wide production smoke passed all 23 checks.
 
 No self-email or other email was sent for this close-out. Repository preservation was selected under `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`: no send, resend or self-email is authorised without the user's explicit final approval of the exact recipients, body, attachments and links.
 
@@ -38,7 +41,7 @@ The April sequence must remain non-fragmented:
 
 1. **15 April:** Patricia recorded that the Pamanil notice material concerning the November 2015 minutes and the 26 April meeting arrived at the complex that day, after photographs had been forwarded internally from maintenance to reservations. The notice package and debt/legal analysis were sent to Carlos Saavedra, Miguel Hernández and Elena Santos at PwC.
 2. **20 April:** Carlos Saavedra confirmed that Carlos, Miguel and Elena would travel to Lanzarote the following Tuesday following Gil's request; Gil asked whether a notary had been found.
-3. **21 April:** Borja said Gil could attend but asserted that Community arrears removed LPB/Luchy's vote; refused the PwC engagement; instructed the copied PwC professionals not to provide Luchy services without his express consent; cited treasury, estate-credit, necessity and fee concerns; and asserted priority for his own court-approved fees.
+3. **21 April:** Borja said Gil could attend but asserted that Community arrears removed LPB/Luchy's vote; refused the PwC engagement; asked the copied PwC professionals not to provide Luchy services without his express consent; cited treasury, estate-credit, necessity and fee concerns; and asserted priority for his own court-approved fees.
 4. **26 April:** the Owners' Community meeting took place. The notice/service record, arrears list and debt basis, authorities, attendance capacities, signed minutes, resolutions and later procedural use form the required comparison set.
 
 This sequence proves late/indirect arrival of the notice material recorded on 15 April and the attempted professional participation. It does not, without the service and organiser records, prove the organisers' subjective intention to conceal the meeting.
@@ -124,26 +127,32 @@ The footer records Gil Marer's own position that he has acted and continues to a
 7. Native June–July 2016 messages recording the client's penal-route instruction and PwC acknowledgement, plus the September 2016 AC-contact thread and any internal PwC follow-up.
 8. Complete later removal/separation filings, annex indices, court-stamped copies, resulting rulings, actor-specific conduct, causation, loss and limitation-interruption evidence needed for any criminal-law conclusion.
 
-## Validation, PR and live-readback placeholders
+## Validation, PR and live readback
 
 | Control | Required value | Current state |
 |---|---|---|
-| Source validation | JavaScript syntax; repository publication/integrity validators; image hashes; route/link checks; bilingual footer-source checks | `PASS — LOCAL SOURCE HEAD` |
-| Pull request | GitHub PR number and URL | `PENDING` |
-| Merge commit | Full merge SHA on `main` | `PENDING` |
-| Public image readback | HTTP 200 plus downloaded SHA-256 match for ES and EN PNGs | `PENDING` |
-| Shared-route readback | All thirteen shared routes HTTP 200 and correct image/direct-link marker present without duplicate PwC copies on Acosta/RICPE | `PENDING` |
-| Existing-image link readback | Four supplemental exact-PNG routes and representative SVG-derivative routes retarget to the April chain | `PENDING` |
-| Dedicated-route readback | Both dedicated routes HTTP 200, canonical image and local sequence link present | `PENDING` |
-| Footer readback | Spanish and English controlled text plus official source links present on representative global-loader, direct-loader and Por Derecho microsite pages | `PENDING` |
-| Deployment log | Final PR, merge SHA and live probes recorded | `PENDING` |
+| Source validation | JavaScript syntax; repository publication/integrity validators; image hashes; route/link checks; bilingual footer-source checks | `PASS — 73 changed files inspected` |
+| Pull request | GitHub PR number and URL | `PASS — #807` |
+| Merge commit | Full merge SHA on `main` | `PASS — 2a8ce42658a742b6cce276bd06e667a7b7b2e9bc` |
+| Public image readback | HTTP 200 plus downloaded SHA-256 match for ES and EN PNGs | `PASS — ES 6b3dfa…43bf; EN d00d2a…bc8f` |
+| Shared-route readback | All thirteen shared routes HTTP 200 and correct image/direct-link marker present without duplicate PwC copies on Acosta/RICPE | `PASS — 13/13 HTTP; route/link simulation; rendered AC and RICPE checks` |
+| Existing-image link readback | Four supplemental exact-PNG routes and existing SVG-derivative routes retarget to the April chain | `PASS — 18/18 HTTP; global link control live; rendered RICPE click-through` |
+| Dedicated-route readback | Both dedicated routes HTTP 200, canonical image and local sequence link present | `PASS — ES and EN rendered; visible 1800 × 1200 image; locale anchor correct` |
+| Footer readback | Spanish and English controlled text plus official source links present on representative global-loader, direct-loader and Por Derecho microsite pages | `PASS — 398-page source coverage; rendered ES/EN footer headings and official links` |
+| Deployment log | Final PR, merge SHA and live probes recorded | `PASS — Pages run 32606326835 / deployment #920` |
 
-Local pre-publication checks passed: `git diff --check`; staged-equivalent whitespace checks for all new text files; `node --check` for the four changed/new JavaScript files; JSON parsing; public-bidder anonymisation; San Telmo rendered attribution; unitary criminal reverse-engineering; visual-asset registry; publication integrity; mission-critical repository invariants; all 15 core route/source files; exact PNG hashes; route simulations; bilingual footer simulations; and generic existing-image link simulation. CI, merge and live verification remain separate gates.
+Local pre-publication checks passed: `git diff --check`; staged-equivalent whitespace checks for all new text files; `node --check` for the four changed/new JavaScript files; JSON parsing; public-bidder anonymisation; San Telmo rendered attribution; unitary criminal reverse-engineering; visual-asset registry; publication integrity; mission-critical repository invariants; all 15 core route/source files; exact PNG hashes; route simulations; bilingual footer simulations; and generic existing-image link simulation.
+
+On the PR head, 22 of 23 triggered workflows succeeded. The sole failure was the unrelated `Verify Playa Blanca concept live read-back` run `32605929498`: its final artifact reported every concept page and asset OK except the `site_loader` check, because the already-live `assets/site.js` lacked the literal `data-playa-blanca-concept-loader`. Both PR base `f1156e504f075406cd93e0d6398dd9438efd1d9f` and PR head `387774f736c1578f9e873a0a6cef1db4d74cbe7f` contained zero occurrences of that marker. PR #807 did not remove or change it. This is preserved on the PR as a pre-existing, unrelated verifier-contract failure, not treated as a green check and not misreported as a regression caused by this publication.
+
+After merge, GitHub Pages deployed the exact merge SHA successfully. Independent no-cache readback returned HTTP 200 for all 33 controlled routes and all four new runtime assets. Downloaded public PNG hashes matched the byte-locked originals. The live browser confirmed visible images, single-copy placement, correct locale-specific links and both footer languages. `scripts/production_smoke_check.py` then passed all 23 repository-wide production checks.
+
+The post-merge source-of-funds live job `32606327389` reported the Spanish RICPE lazy images with `naturalWidth=0` before they entered the viewport, while its static page, loader, component and asset checks passed. A direct cloud-browser recheck reproduced that pre-scroll state and then confirmed, after scrolling the placement into view, `complete=true`, 1800 × 1200 natural dimensions, visible placement and the correct Spanish `#secuencia` link. This is a verifier timing limitation for a deliberately lazy image, not a missing or corrupt public asset.
 
 ## Deletion decision
 
-**PENDING — NOT YET DELETION-SAFE.**
+**DELETION-SAFE WITH OPEN EVIDENCE.**
 
-The repository now has a provisional recovery map, but the publication and deployment state remains intentionally unresolved until merge and live readback. Once the placeholders above are completed and the controlled records are on `main`, the expected close-out category is **DELETION-SAFE WITH OPEN EVIDENCE**. That category will preserve the listed source-completion work without making this conversation the only record of it.
+The publication, recovery map, evidential boundary, exact asset identities, Gmail locators, no-send rule, legal-status limitation and outstanding source-completion work are preserved outside this conversation. The open-evidence list remains active: deletion-safe status closes this chat-custody task, not the factual investigation or any legal determination.
 
 Deleting the thread never authorises deletion of Gmail originals, native evidence, repository history, website source or published pages, and never authorises sending an email.
