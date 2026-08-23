@@ -18,7 +18,16 @@ Current campaign control lives in:
 
 `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`
 
-At the current 23-Aug-2026 control point, the following are in sent/awaiting-response states, always subject to a fresh Gmail scan:
+## Mandatory multi-journalist outlet rule
+
+Read before selecting any newspaper/media recipient:
+
+- `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_RULE_23AUG2026.md`;
+- `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_DASHBOARD_23AUG2026.md`.
+
+**One journalist does not complete an outlet.** For every material newspaper/media organisation, identify at least two distinct named editorial professionals where suitable current professionals can be verified, each with a defined role/beat and a separate `WHY THIS PERSON` rationale. A generic newsroom address or newsroom Cc does not count as journalist number two.
+
+At the current 23-Aug-2026 control point, the following individual recipients are in sent/awaiting-response states, always subject to a fresh Gmail scan:
 
 - Ruth Ugalde;
 - Saúl García;
@@ -31,21 +40,23 @@ At the current 23-Aug-2026 control point, the following are in sent/awaiting-res
 - Carlos Molina / Cinco Días;
 - Silvia Fernández / CANARIAS7.
 
+These individual sends do **not** mean their outlets are fully covered under the multi-journalist rule.
+
 For Silvia/CANARIAS7 read:
 - `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
 - `archive/CANARIAS7_SILVIA_FERNANDEZ_SENT_VERIFICATION_23AUG2026.md`.
 
-The CANARIAS7 step is complete. Its package reconciled the outlet's 24-Jan-2020 RICPE launch article and May-2023 €3m Yaiza hotel-materialisation checkpoint with the July-2021 internal 54 CAM / 190 LPB / 18 terceros, conditional-title, unsigned-LOI and incomplete-DD record. The sent package expressly superseded broader 2022/2024 CANARIAS7 outreach methodology and retained the adverse evidence and media-causation limits.
+Silvia's CANARIAS7 economics/RIC lane is complete as an individual send, but **CANARIAS7 outlet coverage remains PARTIAL — ONE NAMED JOURNALIST**. The priority second-lane candidate is Javier Sheng Pang Blanco, subject to fresh role/beat/contact verification and a separate recipient-specific package. The generic CANARIAS7 newsroom Cc does not satisfy the second-journalist requirement.
 
-The next fresh thread must **not guess the next recipient from an old queue**. It must first scan connected Gmail, re-read the media register and recipient-fit playbook, account for elapsed-time HOLDs/out-of-office states and then prepare the strongest unsent Canary-wide or specialist package.
+The next fresh thread must first scan connected Gmail, then read the coverage dashboard. It should fill missing second named editorial lanes retrospectively for already-contacted outlets, beginning with the highest-value current gap, rather than moving endlessly to new outlets after one person each.
 
-Current high-value unsent Canary-wide lanes include:
+Current high-value unsent Canary-wide outlets still include:
 
 - La Provincia;
 - Atlántico Hoy;
 - Cadena SER Canarias;
 - RTVC / Televisión Canaria / Canarias Radio.
 
-None is pre-authorised.
+When those outlets are opened, the same two-or-more-named-editorial-professionals rule applies from the start.
 
-No queue position, bootstrap instruction or `Run like the wind` command authorises an email send. Exact-package send authorisation remains governed by `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
+No queue position, coverage state, bootstrap instruction or `Run like the wind` command authorises an email send. Exact-package send authorisation remains governed by `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
