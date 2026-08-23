@@ -4,11 +4,13 @@
 
 **Package reconciliation:** 23 August 2026
 
+**Live-publication reconciliation:** 23 August 2026 — PR #811 / merge `5acefbd376133ed7154d21309e4682aab94266a8`
+
 **Repository:** `sbu001monterecco/por-derecho`
 
 **Verdict:** **FAIL — NOT SAFE TO DELETE**
 
-**Reason:** a bilingual document room and fifteen page-sequenced, OCR-assisted public-redacted text-edition packages now exist, but every package remains `located-package-partial` and the corpus is still incomplete. The packages are not complete or manually verified line-by-line transcriptions, source facsimiles, source page images, certified copies or independently preserved native masters. Variant reconciliation, all-source preservation, complete event-chain capture, package privacy/visual QA, publication/deployment proof and the fresh-thread recovery test remain incomplete.
+**Reason:** a bilingual document room and fifteen page-sequenced, OCR-assisted public-redacted text-edition packages are merged and live, but every package remains `located-package-partial` and the corpus is still incomplete. The packages are not complete or manually verified line-by-line transcriptions, source facsimiles, source page images, certified copies or independently preserved native masters. Variant reconciliation, all-source preservation, complete event-chain capture, complete package privacy/visual QA and the fresh-thread recovery test remain incomplete.
 
 ## 1. User objective preserved
 
@@ -44,6 +46,9 @@ The controlling event/source inventory is:
 - [x] every manifest records the package-source and PDF SHA-256 values and records source-page-count verification, PDF reopen and full PDF-page rendering;
 - [x] the packaged 24-page 26-Apr-2016 variant remains expressly separate from, and is not presented as a substitute for, the separately recorded 77-page master;
 - [x] current contradiction locks for 2011/Pamanil/Pink/keys/entity capacity are preserved; and
+- [x] PR [#811](https://github.com/sbu001monterecco/por-derecho/pull/811) passed all seven applicable PR-head checks and was squash-merged as `5acefbd376133ed7154d21309e4682aab94266a8`;
+- [x] GitHub Pages run [32608569055](https://github.com/sbu001monterecco/por-derecho/actions/runs/32608569055) and all seven exact-merge-SHA workflows completed successfully;
+- [x] both public rooms, the public index, the representative 2011 PDF, the corrected 2011/2016 page images and the room JS/CSS were downloaded from Pages and matched repository SHA-256 values; the stale 2011 `page-018.webp` returned HTTP 404; and
 - [x] this audit keeps the deletion verdict at FAIL.
 
 ## 3. Material work still incomplete
@@ -58,8 +63,6 @@ The controlling event/source inventory is:
 - [ ] one-to-one ES/EN ACTA pages and complete public packages for every located source family; the current bilingual room/index and fifteen partial source-language packages are not corpus completion;
 - [ ] complete private/native and public machine-readable manifests, plus source-to-public-page and variant validation across the whole corpus;
 - [ ] repository privacy/privilege/PII review, build, link, accessibility, PDF and visual QA;
-- [ ] reviewed PR, successful CI, merge to `main`, final SHA and Pages deployment;
-- [ ] live public readback; and
 - [ ] fresh-thread recovery test.
 
 ## 4. Exact PASS checklist
@@ -78,9 +81,9 @@ This audit may change to `PASS` only when **every** condition below is linked to
 - [ ] equivalent ES/EN document-room pages, relevant hubs, deep links, sitemap/search and machine-readable manifest are complete;
 - [ ] corrected propositions, adverse evidence, legal-person/capacity distinctions and allegation labels are visible;
 - [ ] source, repository, link, HTML/accessibility, hash, PDF-redaction and visual tests pass;
-- [ ] the exact reviewed diff is merged to `main` with successful required CI;
-- [ ] final `main` SHA, PR/merge and Pages deployment identifiers are recorded;
-- [ ] live readback succeeds for all changed ES/EN routes and representative public PDF/image families;
+- [x] the exact reviewed diff is merged to `main` with successful required CI;
+- [x] final `main` SHA, PR/merge and Pages deployment identifiers are recorded;
+- [x] live readback succeeds for all changed ES/EN routes and representative public PDF/image families;
 - [ ] a fresh thread reconstructs the work and next action using only durable records/source locators; and
 - [ ] no material source, instruction, correction or implementation state remains only in this chat.
 
