@@ -11,7 +11,7 @@
 3. These facts support a serious de facto-management and knowing-facilitation investigation but do not establish criminal collusion or full legal `administrador de hecho` status.
 4. Community figures €718,663.24, €195,815, €427,135.05 and €1,145,798.29 have been separated by date, category and procedural function.
 5. The double-charge hypothesis has been narrowed to a transaction-level vendor/invoice/period/payer/recharge test.
-6. The 20-Jan-2017 Community modification and 8-Feb-2018 holder substitution were formal Article 97 bis processes.
+6. The 20-Jan-2017 Community modification and 15-Feb-2018 holder substitution were formal Article 97 bis processes.
 7. No post-liquidation incident has yet been located that finally re-quantifies the Community claim, enlarges the €9,052,251.69 privileged total or converts every later interest component into definitive credit.
 8. Later Community figures were visibly filed and contested; possible functional category collapse is supported as a question, while clandestinity remains unproved.
 9. The strongest lawful explanations—security necessity, facial Community authority, updateable estate claims, secured-creditor status, AC discretion and open settlement communications—are preserved.

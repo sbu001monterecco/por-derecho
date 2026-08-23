@@ -80,3 +80,7 @@ Do not attribute a post-control omission to Gil, LPB or Pink without testing cap
 - **Other actors:** attribute only source-specific acts, authority, knowledge and benefit; do not infer participation from family, Community or corporate relationships.
 
 Direct-path retrieval controls over search-index absence.
+
+## 23-Aug-2026 mandatory continuation
+
+For direct-instruction, creditor-in-possession, de facto administration, AC criminal-approval/omission or judicial-prevarication work, continue immediately to `CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`, `CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md` and `MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`. The filed 7-Jun amendment's Laura Isabel identity must not be silently changed to LPAM/Laura Patricia.

@@ -79,8 +79,16 @@ jobs:
                   ],
               },
               {
-                  'kind': 'site_loader',
+                  'kind': 'site_loader_sentinel',
                   'path': 'assets/site.js',
+                  'markers': [
+                      'site-pre-intervencion-highlight-20260820.js',
+                      'playa-blanca-concept-home-20260820.js',
+                  ],
+              },
+              {
+                  'kind': 'site_loader_chain',
+                  'path': 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js',
                   'markers': [
                       'playa-blanca-concept-home-20260820.js',
                       'data-playa-blanca-concept-loader',

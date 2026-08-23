@@ -1,0 +1,76 @@
+# Deletion audit — CAM creditor-control criminal lead
+
+**Audit date:** 23 August 2026
+
+**Repository:** `sbu001monterecco/por-derecho`
+
+**Branch:** `codex/cam-direct-instruction-ac-shadow-admin-prevarication-20260823-v3`
+
+**Scope:** CAM capacity convergence across 2017–2022; alleged direct instruction or coordination of the 7 June 2018 physical operation; functional creditor/lender-in-possession analysis; four separate de facto-control lanes; alleged criminal approval, enablement, ratification or legally equivalent omission by the Insolvency Administrator; and alleged judicial prevarication/refusal/malicious delay.
+
+**Implementation status:** `PENDING PR / MERGE / LIVE READBACK`
+
+**Deletion verdict:** `PENDING — NOT YET DELETION-SAFE`
+
+## Preserved controlling record
+
+- `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`
+- `archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
+- `archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
+- `archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
+- `assets/data/cam-creditor-control-criminal-lead-v1.json`
+- `publication-manifests/cam-creditor-control-criminal-lead-20260823.json`
+- bilingual canonical public routes listed in the manifest.
+
+## Evidential conclusion preserved
+
+The repository contains enough types and layers of evidence for Gil Marer/Aweswell to make, preserve and request investigation of three serious actor-specific criminal allegations:
+
+1. CAM-perimeter preparation, direct instruction or coordinated implementation of the 7 June 2018 operation;
+2. knowing approval, enablement, ratification or legally equivalent omission by the Insolvency Administrator; and
+3. specified judicial resolutions, refusals or delays requiring examination under Criminal Code Articles 446–449.
+
+This does not prove that JDAM or FMMM issued the operative order; that LPAM/Laura Patricia was the actor identified in the filed 7 June amendment; that the Insolvency Administrator acted with criminal intent; or that Judge Alberto López Villarrubia committed prevarication. The principal record does not place JDAM physically onsite on 7 June. The filed amendment names Laura Isabel Acosta Matos; LPAM denotes Laura Patricia Acosta Matos. The identity and participation bridge remains open.
+
+## Contrary and exculpatory record preserved
+
+- 2018 provisional dismissal and appellate confirmation;
+- AC denial of the principal takeover instruction and narrower-authority explanation;
+- potentially valid CAM secured-credit and individual-title rights;
+- possible provider conduct outside instructions;
+- later adjudication as prospective, legally distinct and non-retroactive;
+- protective or corrective judicial acts;
+- the rule that adverse or incomplete decisions do not themselves establish prevarication.
+
+## Evidence source and custody boundary
+
+The analysis reviewed repository-controlled Gmail/Drive source ledgers, locators, primary-source digests and correction matrices. This turn did not perform a fresh live Gmail or Drive connector re-download because those connector actions were unavailable. It does not record a new native `.eml`, Takeout, provider export, SHA-256 custody event or external backup event.
+
+Gmail message IDs and Drive locators remain private retrieval metadata. Their presence in internal ledgers does not authenticate a source body by itself and they are not public URLs.
+
+## Email state
+
+No email, resend, forward or self-email was sent. Repository work and publication authority are not email-send authority. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` remains controlling and requires explicit final approval of exact recipients, body, attachments and links.
+
+## Open evidence preserved
+
+The collision-safe `ME-CAM7J-*` register preserves the native credit-assignment deed, 54-finca provenance, instruction/provider/key chain, actual-control and income ledger, AC knowledge/response chronology, ONA causation, later continuity and benefit, certified dismissal scope, exculpatory communications, judge-by-act matrix, Laura identity bridge and claimant-specific accounting.
+
+## Validation and deployment placeholders
+
+| Control | Required value | Current state |
+|---|---|---|
+| Dedicated publication validator | Source, pages, identity, contrary record, legal tests, sitemap, manifest | `PASS — LOCAL SOURCE HEAD` |
+| Repository validators | Mission-critical, publication integrity, insolvency perimeter, criminal/AC controls, smoke checks | `PENDING COMPLETE SUITE` |
+| Pull request | PR number and URL | `PENDING` |
+| Merge commit | Full merge SHA on `main` | `PENDING` |
+| Pages deployment | Successful build tied to merge SHA | `PENDING` |
+| Public canonical readback | Both routes HTTP 200 with markers, attribution and safeguards | `PENDING` |
+| Search/index/feed readback | Routes discoverable with 23-Aug update | `PENDING` |
+| Deployment log | Final entry | `PENDING` |
+
+## Deletion decision
+
+**PENDING — NOT YET DELETION-SAFE.**
+
+The conversation must not be treated as the sole record after the listed source is merged and verified. Deleting a chat never authorises deletion of native evidence, mailbox/Drive originals, repository history or public pages, and never authorises sending an email.

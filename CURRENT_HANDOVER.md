@@ -235,3 +235,15 @@ For the source-safe, document-led scan of Community authority, Costa Papagayo, E
 - `COSTA_PAPAGAYO_PRIMARY_RECORD_STATUS_22AUG2026.md`
 
 These files establish a research protocol and primary-record status only. They do not establish criminality, undisclosed coordination, false authority, debt validity, or liability. Keep confidential email material and legal advice out of the public repository.
+
+## CAM direct-instruction / AC approval / judicial-omission criminal lead — 23 August 2026
+
+Read first:
+
+- `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`
+- `archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
+- `archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
+
+Controlling position: the evidence categories and dated nodes are sufficient for Gil Marer/Aweswell to make and demand investigation of actor-specific criminal allegations concerning direct CAM-perimeter instruction/coordination, AC approval/enablement/ratification or legally equivalent omission and specified judicial acts under CP Articles 446–449. They are not findings. Do not state an operative JDAM/FMMM order as proved; the principal record does not place JDAM physically onsite on 7 June. The filed amendment names Laura Isabel, while LPAM means Laura Patricia; preserve Gil's LPAM allegation and the open identity bridge together. Keep the 2018 dismissal/appeal, AC denial/narrow mandate, valid potential CAM credit/individual title and protective/corrective judicial acts adjacent.
+
+No email was sent in this workstream. Repository/publication authority remains separate from exact final email-send authorisation.

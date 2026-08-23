@@ -1,0 +1,66 @@
+name: Validate CAM creditor-control criminal lead
+
+on:
+  pull_request:
+    paths:
+      - 'archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md'
+      - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
+      - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
+      - 'assets/sitewide-discovery-nav-20260821.js'
+      - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
+      - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'en/de-facto-administration-community-ac/**'
+      - 'es/administracion-de-hecho-comunidad-ac/**'
+      - 'assets/calificacion-2018-creditor-material-control-20260816.js'
+      - 'publication-manifests/ac-community-de-facto-administration-2026-08-20.json'
+      - 'sitemap.xml'
+      - 'sitemap-criminal-engineering.xml'
+      - 'publication-manifests/cam-creditor-control-criminal-lead-20260823.json'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
+      - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md'
+      - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
+      - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
+      - 'assets/sitewide-discovery-nav-20260821.js'
+      - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
+      - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
+      - 'en/insolvency-36-2012-insolvency-administrator/**'
+      - 'es/concurso-36-2012-administrador-concursal/**'
+      - 'en/de-facto-administration-community-ac/**'
+      - 'es/administracion-de-hecho-comunidad-ac/**'
+      - 'assets/calificacion-2018-creditor-material-control-20260816.js'
+      - 'publication-manifests/ac-community-de-facto-administration-2026-08-20.json'
+      - 'sitemap.xml'
+      - 'sitemap-criminal-engineering.xml'
+      - 'publication-manifests/cam-creditor-control-criminal-lead-20260823.json'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
+      - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-cam-creditor-control-criminal-lead-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate source, pages, identity, legal boundaries and sitemap
+        run: python3 scripts/validate_cam_creditor_control_criminal_lead.py
+      - name: Validate JavaScript syntax
+        run: node --check assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js

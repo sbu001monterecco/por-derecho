@@ -1,7 +1,7 @@
 (()=>{
   'use strict';
   const d=document;
-  const VERSION='20260819a';
+  const VERSION='20260823a';
   if(window.PorDerechoUnitaryShell?.version===VERSION){window.PorDerechoUnitaryShell.init?.();return;}
   const script=d.currentScript;
   const assetBase=script?new URL('.',script.src):new URL('/por-derecho/assets/',location.origin);
@@ -65,7 +65,7 @@
   const loadEntries=async()=>{
     let curated=[];
     for(const file of ['data/unitary-route-registry-v1.json','data/unitary-route-registry-sync-20260819.json']){
-      try{const r=await fetch(new URL(`${file}?v=20260819a`,assetBase));if(r.ok){const data=await r.json();if(Array.isArray(data))curated.push(...data);}}catch{}
+      try{const r=await fetch(new URL(`${file}?v=20260823a`,assetBase));if(r.ok){const data=await r.json();if(Array.isArray(data))curated.push(...data);}}catch{}
     }
     const seen=new Set(curated.map(x=>x.path));
     const ingest=xmlText=>{
@@ -79,9 +79,9 @@
         }catch{}
       });
     };
-    const sitemapUrls=new Set([new URL('../sitemap.xml?v=20260819a',assetBase).href]);
+    const sitemapUrls=new Set([new URL('../sitemap.xml?v=20260823a',assetBase).href]);
     try{
-      const r=await fetch(new URL('../robots.txt?v=20260819a',assetBase));
+      const r=await fetch(new URL('../robots.txt?v=20260823a',assetBase));
       if(r.ok){
         const text=await r.text();
         text.split(/\r?\n/).forEach(line=>{

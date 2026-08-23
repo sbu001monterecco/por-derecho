@@ -7,3 +7,4 @@ This directory contains durable thread-deletion safety audits. Each audit record
 - [20 August 2026 — ICALPA DIP 79/2026 and DIP 80/2026 thread](2026-08-20-icalpa-dip79-dip80-thread.md)
 - [21 August 2026 — CIB technical-partner reply and website discovery-navigation thread](2026-08-21-cib-website-publication-thread.md)
 - [22 August 2026 — PwC / AC refusal image links, reporting-person footer and no-send control](2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md)
+- [23 August 2026 — CAM creditor-control, direct-instruction, AC-approval and judicial-omission criminal lead](2026-08-23-cam-creditor-control-criminal-lead-thread.md)

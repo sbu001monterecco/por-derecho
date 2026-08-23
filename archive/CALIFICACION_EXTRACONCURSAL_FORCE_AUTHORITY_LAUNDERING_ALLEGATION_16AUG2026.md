@@ -53,7 +53,7 @@ This is the central extraconcursal boundary.
 The controlled credit chronology records:
 
 - PH122 → CAM assignment route dated **20 October 2017**;
-- Commercial Court order of **8 February 2018** recognising CAM as holder of the two relevant mortgage-credit amounts.
+- Commercial Court order of **15 February 2018** recognising CAM as holder of the two relevant mortgage-credit amounts.
 
 Credit status did not itself confer ownership or whole-hotel possession.
 

@@ -8,6 +8,8 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/en/` — English
 - `/es/toma-control-sun-park-7-junio-2018/` — canonical Spanish record of the 7 June 2018 takeover and aftermath
 - `/en/sun-park-takeover-7-june-2018/` — canonical English record of the 7 June 2018 takeover and aftermath
+- `/es/control-acreedor-cam-administracion-hecho-omision-judicial/` — Spanish criminal-lead record for alleged CAM instruction, creditor control, de facto administration, AC approval/omission and judicial omission
+- `/en/cam-creditor-control-shadow-administration-judicial-omission/` — English criminal-lead record with the same allegation, evidence-status, contrary-record and production controls
 - `/es/toma-control-sun-park-7-junio-2018/camel-travel-lanzarote-information/` — subsidiary Spanish record of the Cliffe-Jones dual Sun Park/MYND publication
 - `/en/sun-park-takeover-7-june-2018/camel-travel-lanzarote-information/` — subsidiary English record of the Cliffe-Jones dual Sun Park/MYND publication
 - `/es/comunidad-instrumentalizacion/actas-2011-2022/` — canonical Spanish chronology of Owners’ Community/CEXP minutes, linked records and authority
@@ -16,6 +18,8 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
+
+The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently but do not state guilt as adjudicated. They preserve the 2018 provisional dismissal and appeal result, the insolvency administrator's denial/narrower-authority account, CAM's potentially valid credit/individual-title rights, the Laura Isabel/Laura Patricia identity gap and an act-by-act Articles 446–449 judicial test.
 
 ## Editorial safeguards
 

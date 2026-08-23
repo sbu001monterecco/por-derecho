@@ -52,7 +52,7 @@ Full correction: `archive/CALIFICACION_VISTA_PRIMARY_ACT_CORRECTION_31MAR_14JUL2
 
 | Act / date | Type | How existence/content is presently known | What is still missing | Why it matters | Retrieval status |
 |---|---|---|---|---|---|
-| 16-Apr-2018 act family | at least 2 Autos | workbook identifies liquidation-plan/disposal Auto and separate clarification of 8-Feb-2018 credit-interest Auto | full signed binaries for each act; exact separate IDs/signatories | central sale/liquidation architecture; same-date conflation risk | P1 |
+| 16-Apr-2018 act family | at least 2 Autos | workbook identifies liquidation-plan/disposal Auto and separate clarification of 15-Feb-2018 credit-interest Auto | full signed binaries for each act; exact separate IDs/signatories | central sale/liquidation architecture; same-date conflation risk | P1 |
 | 04-Jun-2018 | Auto | workbook and 26-Jun Auto expressly reference it | complete signed binary + notification | clarifies conditions for competing offers | P1 |
 | 15-Jun-2018 | LAJ Diligencia | workbook reproduces operative content | signed LAJ source + signatory + service | publication route that later generated reposición | P1 |
 | 12-Dec-2018 | LAJ Diligencia | later 24-Oct-2019 Auto expressly leaves it without effect; workbook summarizes it | complete signed original + signatory + notification | key bridge between publication and 28-Nov sale / later non-convalidation | P1 |

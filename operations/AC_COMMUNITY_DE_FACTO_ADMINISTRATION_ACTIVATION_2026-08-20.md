@@ -21,7 +21,7 @@ Create one source-led, actor-specific reconstruction of:
 - 2013 AC report/inventory and 2016 definitive-text package;
 - definitive creditor list and Annex 2;
 - 20-Jan-2017 Community Article 97 bis order;
-- 8-Feb-2018 holder-substitution order;
+- 15-Feb-2018 holder-substitution order;
 - 2018 liquidation plan and court orders;
 - 18-May-2018 Community minute;
 - 20/31-Jul-2018 private-actor and AC declarations;

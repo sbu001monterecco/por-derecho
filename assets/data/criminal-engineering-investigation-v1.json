@@ -189,17 +189,17 @@
       "status_en":"Counsel validation required",
       "route_es":"/por-derecho/es/concurso-36-2012-administrador-concursal/",
       "route_en":"/por-derecho/en/insolvency-36-2012-insolvency-administrator/",
-      "last_reviewed":"2026-08-19",
-      "documented_es":"La vía de pago total fue profesionalmente planteada y existió financiación seria pero condicionada; el resultado institucional fue objetivamente favorable a la continuidad de la ruta CAM.",
-      "documented_en":"A full-payoff route was professionally advanced and serious but conditional financing existed; the institutional effect objectively favoured continuation of the CAM route.",
-      "not_proved_es":"Fondos incondicionales en una fecha, obstrucción deliberada, mala fe o participación criminal.",
-      "not_proved_en":"Unconditional funds on a specific date, deliberate obstruction, bad faith or criminal participation.",
+      "last_reviewed":"2026-08-23",
+      "documented_es":"La AC participó en la vía de seguridad/autoridad de 18 de mayo y posteriormente describió una autorización limitada mientras negó la toma principal. Gil alega habilitación, aprobación, ratificación u omisión penal; la secuencia exige el test de cuatro niveles y el artículo 11 CP.",
+      "documented_en":"The Insolvency Administration participated in the 18 May security/authority route and later described limited authority while denying the principal takeover. Gil alleges criminal enablement, approval, ratification or omission; the sequence requires the four-level ladder and Criminal Code Article 11 test.",
+      "not_proved_es":"Conocimiento del exceso, finalidad común, aprobación penal, equivalencia causal de la omisión, intención o contribución esencial.",
+      "not_proved_en":"Knowledge of the excess, common purpose, criminal approval, causal equivalence of omission, intent or essential contribution.",
       "strongest_defence_es":"La liquidación estaba abierta, no existió consignación completa y la AC podía seguir la vía autorizada y discrepar de la alternativa del socio.",
       "strongest_defence_en":"Liquidation was open, complete consignment had not occurred and the Administrator could follow the authorised route and disagree with the shareholder alternative.",
       "decisive_next_source_es":"Expediente AC, comunicaciones contemporáneas, decisiones internas, cifras oficiales y cuentas finales.",
       "decisive_next_source_en":"Administrator file, contemporaneous communications, internal decisions, official figures and final accounts.",
       "counsel_gate":true,
-      "change_log":["2026-08-19: se separó efecto adverso de conocimiento, intención y causalidad penal."]
+      "change_log":["2026-08-19: se separó efecto adverso de conocimiento, intención y causalidad penal.","2026-08-23: se añadió la vía afirmativa 18-May→7-Jun, el mandato limitado/negativa y la escalera de cuatro niveles sin convertir la alegación en hallazgo."]
     },
     {
       "id":"CE-007",
@@ -211,9 +211,9 @@
       "status_en":"Open",
       "route_es":"/por-derecho/es/concurso-36-2012-magistrado-juez/",
       "route_en":"/por-derecho/en/insolvency-36-2012-mercantile-court-1/",
-      "last_reviewed":"2026-08-19",
-      "documented_es":"Existen resoluciones judiciales y actuaciones de oficina identificables, pero deben clasificarse por autor, función y fuente primaria.",
-      "documented_en":"Identifiable judicial decisions and court-office acts exist, but they must be classified by author, function and primary source.",
+      "last_reviewed":"2026-08-23",
+      "documented_es":"Gil alega que resoluciones, negativas y demoras identificadas de Alberto López Villarrubia preservaron el resultado de control privado. Existen nodos de aviso/decisión y actos protectores o correctivos que deben clasificarse por autor, prueba ante el juez y artículos 446–449 CP.",
+      "documented_en":"Gil alleges that identified resolutions, refusals and delays by Alberto López Villarrubia preserved the private-control result. Notice/decision nodes and protective or corrective acts exist and must be classified by author, evidence before the judge and Criminal Code Articles 446–449.",
       "not_proved_es":"Conocimiento personal de cada uso externo, coordinación, favoritismo, injusticia consciente o causalidad de cada efecto posterior.",
       "not_proved_en":"Personal knowledge of every external use, coordination, favouritism, knowing injustice or causation of every later effect.",
       "strongest_defence_es":"Las decisiones jurisdiccionales fueron razonadas dentro del expediente y las actuaciones de oficina se limitaron a ejecutar o certificar lo ordenado.",
@@ -221,7 +221,7 @@
       "decisive_next_source_es":"Expediente certificado, LexNET, notificaciones, recursos, firmeza, testimonios y registro de comunicación del protocolo 457.",
       "decisive_next_source_en":"Certified file, LexNET, service, appeals, finality, testimonies and the protocol 457 notification record.",
       "counsel_gate":true,
-      "change_log":["2026-08-19: se prohibió atribuir decisiones jurisdiccionales al LAJ o actos de oficina al juez sin fuente primaria."]
+      "change_log":["2026-08-19: se prohibió atribuir decisiones jurisdiccionales al LAJ o actos de oficina al juez sin fuente primaria.","2026-08-23: la prevaricación por omisión queda como alegación atribuida y se exige resolución/negativa/demora exacta, deber, injusticia, conocimiento o finalidad y causalidad."]
     },
     {
       "id":"CE-008",
@@ -233,9 +233,9 @@
       "status_en":"Hypothesis",
       "route_es":"/por-derecho/es/ingenieria-forense-criminal-sun-park/",
       "route_en":"/por-derecho/en/sun-park-criminal-engineering-investigation/",
-      "last_reviewed":"2026-08-19",
-      "documented_es":"Existe una secuencia de ventajas y efectos alineados que justifica examen reforzado.",
-      "documented_en":"A sequence of aligned advantages and effects exists that justifies heightened examination.",
+      "last_reviewed":"2026-08-23",
+      "documented_es":"La llamada de 22 de marzo con atribución contextual, el nodo de 18 de mayo, los relatos y denuncia de 7 de junio y las declaraciones de julio hacen concreta e investigable una alegación de preparación, instrucción y ejecución coordinada CAM/Comunidad/seguridad.",
+      "documented_en":"The contextually attributed 22 March call, 18 May node, 7 June reports and pleading, and July declarations make a CAM/Community/security preparation, instruction and coordinated-implementation allegation concrete and investigable.",
       "not_proved_es":"Objetivo común, reparto de funciones, comunicaciones coordinadas, destrucción de prueba o represalia causalmente vinculada.",
       "not_proved_en":"Common objective, role allocation, coordinated communications, destruction of evidence or causally linked retaliation.",
       "strongest_defence_es":"Los actos fueron independientes, facialmente regulares y explicables por roles, tiempos y decisiones separadas.",
@@ -243,7 +243,7 @@
       "decisive_next_source_es":"Comunicaciones, instrucciones, reuniones, documentos compartidos, cronología y prueba exculpatoria.",
       "decisive_next_source_en":"Communications, instructions, meetings, shared documents, chronology and exculpatory evidence.",
       "counsel_gate":true,
-      "change_log":["2026-08-19: la ventaja repetida quedó definida como razón para investigar, no como prueba automática de coordinación."]
+      "change_log":["2026-08-19: la ventaja repetida quedó definida como razón para investigar, no como prueba automática de coordinación.","2026-08-23: se elevó la instrucción directa a alegación penal actor-específica; siguen sin probarse la orden operativa JDAM/FMMM y el puente Laura Isabel/Laura Patricia."]
     },
     {
       "id":"CE-009",
@@ -312,6 +312,8 @@
     "notary_es": "/es/implementacion-notarial-protocolo-457/",
     "notary_en": "/en/notarial-implementation-protocol-457/",
     "registry_es": "/es/implementacion-registral-finca-por-finca/",
-    "registry_en": "/en/land-registry-implementation-property-by-property/"
+    "registry_en": "/en/land-registry-implementation-property-by-property/",
+    "cam_criminal_lead_es": "/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+    "cam_criminal_lead_en": "/en/cam-creditor-control-shadow-administration-judicial-omission/"
   }
 }

@@ -129,3 +129,7 @@ The repository already contains enough primary material to define the decisive q
 **Can the complete signed judicial record demonstrate an unbroken, legally explained chain from the transaction proposed, through competition and the 2021/January-2022 orders, into deed 457, finca-level registration and final accounts, without an unexplained change in asset perimeter, authority, or the legal function of a material money figure?**
 
 That is the controlling reconstruction question until the P0 evidence chain is closed.
+
+## 23-Aug-2026 judicial-omission allegation control
+
+Gil alleges that specified resolutions, refusals and delays of Judge Alberto López Villarrubia preserved or legitimised the 2018 private-control result. This register must not convert a missing source, adverse outcome or incomplete protection into prevarication. For each alleged act, record the exact filing/request and receipt, evidence before the judge, competence and duty, resolution/refusal/delay, objective injustice or arbitrariness, knowledge or malicious purpose, causation and contrary explanation. Classify the conduct under CP Articles 446–449 rather than importing administrative-prevarication omission doctrine automatically. Apply the full matrix in `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`.

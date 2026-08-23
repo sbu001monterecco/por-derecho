@@ -33,7 +33,7 @@ Before searching, drafting, publishing or filing on this subject, read:
 
 - Incident 07 and Incident 08 preceded the 2016 definitive filing.
 - The 20-Jan-2017 Article 97 bis order formally changed the Community pre-concurso claim to ordinary contingent/no own amount.
-- The 8-Feb-2018 Article 97 bis order changed the mortgage-credit holder from Promontoria to CAM without enlarging the recognised amounts.
+- The 15-Feb-2018 Article 97 bis order changed the mortgage-credit holder from Promontoria to CAM without enlarging the recognised amounts.
 - The 23-Jul-2019 appellate ruling and 2021 order/edict addressed liquidation/better-bid consequences; they are not presently identified as definitive-text amendments.
 - No post-liquidation incidente concursal has yet been located that expressly re-quantifies the Community pre-concurso claim as final, enlarges the €9,052,251.69 privileged total, or reclassifies each later interest component as definitive concursal credit.
 

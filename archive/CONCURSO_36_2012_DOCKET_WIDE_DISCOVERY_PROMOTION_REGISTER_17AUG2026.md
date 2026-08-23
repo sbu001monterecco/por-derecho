@@ -46,7 +46,7 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 ### 2018 — creditor substitution, plan of liquidation, sale/dación architecture, suspension, LAJ implementation
 
 - 12-Jan-2018 Providencia requiring CAM to exhibit full credit-assignment deed.
-- 08-Feb-2018 Auto modifying final texts to recognise CAM as successor to Promontoria for secured credits.
+- 15-Feb-2018 Auto modifying final texts to recognise CAM as successor to Promontoria for secured credits.
 - 09-Feb-2018 two LAJ diligencias concerning access to plan documents and AC remuneration.
 - 16-Feb-2018 Autos fixing liquidation remuneration and supplementing the 05-May-2017 remuneration act.
 - 08-Mar-2018 LAJ Diligencia on clarification of 08-Feb Auto / CAM appearance.
@@ -142,7 +142,7 @@ The end-to-end workbook scan confirms material procedural activity across the fo
 
 ## 4. Critical chronology corrections exposed by the workbook
 
-1. **16-Apr-2018 is not one generic act.** The workbook records at least the plan-of-liquidation approval/disposal Auto and a separate same-date clarification of the 08-Feb-2018 credit-interest Auto. Never collapse them.
+1. **16-Apr-2018 is not one generic act.** The workbook records at least the plan-of-liquidation approval/disposal Auto and a separate same-date clarification of the 15-Feb-2018 credit-interest Auto. Never collapse them.
 2. **24-Oct-2019 is not one generic act.** The workbook records a separate Aweswell-standing Auto and the non-convalidation Auto.
 3. **12-May-2020 is not one generic act.** One Auto confirms the 24-Oct-2019 non-convalidation decision against LPB reposición; another favours Aweswell and revokes the 03-Jul-2019 route for AC nullity/expulsion.
 4. **06-May-2021 is not one generic act.** The workbook records the nullity-denial Auto and a separate Auto confirming the 25-Jan-2021 sale/publication conditions.
@@ -177,7 +177,7 @@ Any future named-Judge page must display these alongside adverse acts.
 - 05-May-2017 AC-remuneration Auto.
 - 19-Dec-2017 liquidation-opening Auto.
 - 12-Jan-2018 Providencia.
-- 08-Feb-2018 CAM-credit substitution Auto.
+- 15-Feb-2018 CAM-credit substitution Auto.
 - both 16-Apr-2018 Autos.
 - 04-Jun-2018 clarification Auto.
 - 15-Jun-2018 Diligencia.

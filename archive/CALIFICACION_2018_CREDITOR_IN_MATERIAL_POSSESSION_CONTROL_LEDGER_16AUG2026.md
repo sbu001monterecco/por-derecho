@@ -27,9 +27,9 @@ The controlled PH122/CAM assignment dossier records the transfer of the relevant
 
 **Status:** `DOCUMENTED PRIMARY-SOURCE CHRONOLOGY`.
 
-### 8 February 2018 — recognised credit holder
+### 15 February 2018 — recognised credit holder
 
-The Commercial Court order of 8 February 2018 is controlled as recognising CAM as holder of the two mortgage-credit amounts while rejecting LPB's Article 1535 theory in the form then advanced.
+The Commercial Court order of 15 February 2018 is controlled as recognising CAM as holder of the two mortgage-credit amounts while rejecting LPB's Article 1535 theory in the form then advanced.
 
 **Status:** `DOCUMENTED JUDICIAL ACT`.
 
@@ -307,3 +307,7 @@ Read together:
 - `archive/MISSING_EVIDENCE_REGISTER.md`
 
 Legal frame checked against the **2018-applicable consolidated text of Ley 22/2003** (not the later TRLC), especially Articles 40, 43, 55–57, 155, 164, 166 and 172, and Civil Code possession/fruits provisions including Articles 441, 446 and 451–455.
+
+## 23-Aug-2026 controlling extension
+
+The material-possession lane is now a principal attributed criminal-investigative lead, not only a Calificación/causation input. Apply the capacity chronology, Laura identity correction, functional “lender in possession” qualification, four de facto lanes, AC four-level ladder, judge matrix and dismissal scope in `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`. This elevates the allegation; it does not convert direct instruction, criminal approval or prevarication into proved facts.
