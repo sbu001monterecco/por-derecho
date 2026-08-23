@@ -13,7 +13,7 @@ Do not infer silence and do not rely on chat memory.
 
 - Ruth Ugalde / El Confidencial — SENT / corrective complete package sent / awaiting response.
 - Saúl García / Diario de Lanzarote — SENT + VERIFIED / awaiting response.
-- Teresa Acosta Hernández / La Voz de Lanzarote — SENT + VERIFIED / awaiting response.
+- Teresa Acosta Hernández / La Voz de Lanzarote — SENT COPY VERIFIED / primary newsroom route BOUNCED (`554 5.7.1`); limited direction Cc route not listed as failed but delivery not independently confirmed / no substantive response located.
 - Taiana González / HOSTELTUR — SENT + VERIFIED / awaiting response.
 - Carlos Sosa / Canarias Ahora / elDiario.es Canarias — SENT + VERIFIED / awaiting response.
 - Joaquín Gil / EL PAÍS — SENT + VERIFIED / awaiting response.
@@ -23,11 +23,11 @@ Do not infer silence and do not rely on chat memory.
 - Silvia Fernández / CANARIAS7 — SENT + VERIFIED / awaiting response.
 - David Ojeda / CANARIAS7 — SENT + VERIFIED / awaiting response.
 
-Latest connected-Gmail media scan before the Fran V3 redigest found:
+Latest connected-Gmail media scan, refreshed after the Fran V3 redigest, found:
 
 `NO RESPONSE LOCATED YET`.
 
-Use only that wording. Silence is not evidence of reading, rejection, delivery failure, interest or editorial decision.
+For Teresa, preserve the separate route-level delivery classification above. For every other active media recipient, use only `NO RESPONSE LOCATED YET`. Silence is not evidence of reading, rejection, delivery failure, interest or editorial decision.
 
 ## CANARIAS7 current outlet state
 
