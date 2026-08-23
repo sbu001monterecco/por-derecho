@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0",
+  "publication_id": "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+  "control_marker": "cam-creditor-control-criminal-lead-20260823",
+  "control_date": "2026-08-23",
+  "status": "DRAFT_ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_FINDING",
+  "purpose": "Machine-readable control for the actor-specific allegations concerning the 7 June 2018 Sun Park entry, CAM creditor control, de facto administration, insolvency-administrator approval or ratification, and judicial omission. It records evidential sufficiency to make and seek investigation of the allegations, not proof of criminal guilt.",
+  "canonical_source": "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+  "public_routes": {
+    "en": "/en/cam-creditor-control-shadow-administration-judicial-omission/",
+    "es": "/es/control-acreedor-cam-administracion-hecho-omision-judicial/"
+  },
+  "controlling_position": {
+    "attributed_to": [
+      "Gil Marer",
+      "Aweswell"
+    ],
+    "evidence_sufficiency": "SUFFICIENT_TO_MAKE_PRESERVE_AND_REQUEST_INVESTIGATION",
+    "criminal_guilt_adjudicated": false,
+    "collective_guilt_presumed": false,
+    "presumption_of_innocence_preserved": true,
+    "right_of_reply_preserved": true
+  },
+  "allegation_lanes": [
+    {
+      "id": "CAM-LEAD-01",
+      "label": "CAM/private-actor direct instruction or coordinated implementation",
+      "attributed": true,
+      "criminal_finding": false,
+      "status": "FIRST_ORDER_CRIMINAL_INVESTIGATIVE_ALLEGATION",
+      "actors": [
+        "CAM entity or entities",
+        "José Daniel Acosta Matos (JDAM)",
+        "Francisco Mario Matos Matas (FMMM)",
+        "relevant Laura Acosta Matos actor",
+        "separately identified Community, service, security and locksmith actors"
+      ],
+      "documented_basis": [
+        "recognised CAM secured-credit position before 7 June 2018",
+        "filed allegations of earlier JDAM and FMMM access, asserted ownership and control conduct",
+        "contemporaneous placement of a CAM lawyer identified as Laura Matos with Community personnel at the physical event",
+        "filed 7 June amendment naming Laura Isabel Acosta Matos and Antonio Cogolludo as acting personally and purportedly for CAM and the Community",
+        "reported use of a whole-complex ownership paper and the 18 May security minute",
+        "material benefit to the creditor and later project perimeter",
+        "later direct Acosta Matos Community and project control"
+      ],
+      "unresolved_bridges": [
+        "native instruction communications",
+        "CAM board or management mandate",
+        "security and locksmith contracting, payer and orders",
+        "key receipt and asset-perimeter instructions",
+        "witness attribution of each operational order",
+        "post-event adoption or ratification",
+        "precise identity and participation of the relevant Laura actor"
+      ]
+    },
+    {
+      "id": "CAM-LEAD-02",
+      "label": "Insolvency-administrator criminal approval, enablement, ratification or legally equivalent omission",
+      "attributed": true,
+      "criminal_finding": false,
+      "status": "FIRST_ORDER_ACTOR_SPECIFIC_CRIMINAL_INVESTIGATIVE_ALLEGATION",
+      "documented_basis": [
+        "administrator participation in or connection to the 18 May 2018 security-authority chain",
+        "administrator denial of the principal lock-takeover instruction",
+        "administrator description of a narrower access authorisation",
+        "later notice and response questions concerning recovery, protection, accounting and court reporting"
+      ],
+      "evidential_ladder": [
+        "lawful narrow mandate exceeded without administrator knowledge",
+        "negligent design, delimitation or supervision",
+        "knowing tolerance or ratification after actual knowledge and capacity to act",
+        "affirmative instruction or common purpose"
+      ],
+      "unresolved_bridges": [
+        "exact authorised scope",
+        "foreseeability and supervision",
+        "first notice and actual knowledge",
+        "legal and practical capacity to prevent or reverse",
+        "protective, restorative and accounting measures",
+        "required mental element and causal effect"
+      ]
+    },
+    {
+      "id": "CAM-LEAD-03",
+      "label": "Judicial omission or omissionary judicial prevarication",
+      "attributed": true,
+      "criminal_finding": false,
+      "status": "GIL_MARER_ALLEGATION_REQUIRING_EXACT_ACT_AND_STATUTORY_CLASSIFICATION",
+      "documented_basis": [
+        "complaints, requests and evidence presented to judicial or institutional channels",
+        "identifiable resolutions, refusals, delay or omissions alleged to have preserved the private-control result",
+        "later causation and actual-control questions requiring act-by-act reconstruction"
+      ],
+      "mandatory_proof_matrix": [
+        "exact judge, court, date and procedural capacity",
+        "matter and evidence properly before the court",
+        "competence and specific legal duty",
+        "exact resolution, refusal, delay or omission",
+        "evidence demonstrably before the judge at that time",
+        "objective injustice or arbitrariness beyond appealable error",
+        "knowledge, gross negligence or malicious illegitimate purpose as applicable",
+        "causation, loss and private benefit",
+        "strongest contrary procedural explanation"
+      ],
+      "unresolved_bridges": [
+        "resolution-specific statutory fit",
+        "evidence-before-judge chronology",
+        "objective injustice or manifest injustice",
+        "knowledge or malicious purpose",
+        "legally equivalent omission duty",
+        "actor-specific causation"
+      ]
+    }
+  ],
+  "capacity_convergence": {
+    "period": "2017-2022",
+    "capacities": [
+      "secured creditor",
+      "owner or claimant of isolated units",
+      "Community participant or beneficiary",
+      "alleged material controller of the hotel"
+    ],
+    "boundary": "The capacities converged across the sequence; the record does not state that one CAM entity held all capacities throughout 2017 or that any one capacity conferred whole-hotel possession.",
+    "later_control_point": "By February 2022, direct Acosta Matos Community governance and project control were documented; this is continuity and benefit evidence, not automatic proof of the June 2018 instruction chain."
+  },
+  "authority_inversion": {
+    "date": "2018-05-18",
+    "present_or_represented_percent": 86.715,
+    "vote_qualified_percent": 0.385,
+    "security_budget_eur_per_month": 8500,
+    "proposition": "LPB's majority position was invoked to convene or legitimate the security measure while LPB was deprived of effective voting power through the disputed Community-debt mechanism.",
+    "legal_effect_boundary": "The security resolution did not on its face establish whole-hotel possession, eviction authority or management power for CAM."
+  },
+  "evidence_types": [
+    {
+      "id": "E-01",
+      "type": "contemporaneous communications",
+      "probative_use": "real-time reporting of people, access, keys, security, guests and ownership assertions",
+      "limit": "does not alone prove hidden instructions, accuracy of every observation or criminal intent"
+    },
+    {
+      "id": "E-02",
+      "type": "same-day video and photographic material",
+      "probative_use": "visible condition, presence, conduct and contemporaneity",
+      "limit": "does not alone establish the complete command chain or off-camera events"
+    },
+    {
+      "id": "E-03",
+      "type": "pre-event and same-day criminal pleadings",
+      "probative_use": "formal allegations, identified witnesses, alleged prior conduct and requested investigation",
+      "limit": "a pleading does not prove guilt or judicial acceptance of its factual claims"
+    },
+    {
+      "id": "E-04",
+      "type": "judicial investigative and procedural acts",
+      "probative_use": "procedural chronology, notice and investigative measures",
+      "limit": "receipt or investigation is not a merits endorsement"
+    },
+    {
+      "id": "E-05",
+      "type": "Owners' Community records",
+      "probative_use": "governance mechanism, attendance, vote qualification, security authority and officeholder roles",
+      "limit": "does not alone prove valid transfer of possession or authorise every later physical act"
+    },
+    {
+      "id": "E-06",
+      "type": "insolvency-administrator communications and reports",
+      "probative_use": "knowledge and participation nodes plus a narrower-authorisation defence",
+      "limit": "does not alone prove criminal approval of the full takeover"
+    },
+    {
+      "id": "E-07",
+      "type": "credit assignment and insolvency records",
+      "probative_use": "date, identity and scope of CAM's creditor capacity",
+      "limit": "secured credit is not whole-hotel title or possession"
+    },
+    {
+      "id": "E-08",
+      "type": "finca title and asset schedules",
+      "probative_use": "fragmented ownership and separation of CAM, LPB and third-party property",
+      "limit": "the complete provenance of every CAM finca still requires a native deed ledger"
+    },
+    {
+      "id": "E-09",
+      "type": "due-diligence, expert and valuation material",
+      "probative_use": "known or available title, debt, valuation and operating contradictions",
+      "limit": "does not prove adoption or knowledge by every possible recipient"
+    },
+    {
+      "id": "E-10",
+      "type": "post-event continuity, governance and benefit evidence",
+      "probative_use": "persistence, downstream use, project benefit and accounting scope",
+      "limit": "does not automatically prove that later actors shared an original criminal purpose"
+    },
+    {
+      "id": "E-11",
+      "type": "contrary and adverse records",
+      "probative_use": "dismissal, appellate outcome, administrator denial, valid individual title and later adjudication",
+      "limit": "must be read for exact scope and does not automatically resolve distinct later evidence, actors or acts"
+    }
+  ],
+  "identity_control": {
+    "contemporaneous_email_name": "Laura Matos",
+    "filed_7_june_amendment_name": "Laura Isabel Acosta Matos",
+    "repository_lpam_name": "Laura Patricia Acosta Matos",
+    "same_person_established": false,
+    "laura_patricia_physical_presence_established": false,
+    "laura_patricia_direct_instruction_established": false,
+    "publication_rule": "Preserve Gil's LPAM allegation while keeping the identity and participation bridge open; never silently replace Laura Isabel with Laura Patricia."
+  },
+  "functional_frameworks": {
+    "creditor_in_possession": {
+      "status": "COMPARATIVE_FUNCTIONAL_DESCRIPTION_NOT_STANDALONE_SPANISH_STATUS",
+      "test": "Whether the creditor crossed from enforcement and collateral protection into actual possession, direction, management, use or appropriation before formal adjudication."
+    },
+    "de_facto_administration": {
+      "lanes": [
+        "de facto administration of LPB as a company",
+        "de facto possession or management of insolvency-estate assets",
+        "de facto hotel operation or control",
+        "unauthorised possession, use or interference concerning CEXP, Matkator and other non-LPB property"
+      ],
+      "boundary": "Creditor pressure, negotiation or benefit alone is insufficient, and non-LPB property is not classified as LPB shadow administration."
+    },
+    "accounting_start": "The first proven date of material use, access, decision-making power or economic benefit, not merely the later adjudication or registration date.",
+    "claimant_allocation": "LPB or its estate, Aweswell, CEXP, Matkator, Pink, individual owners and other claimants must be allocated separate heads without double recovery."
+  },
+  "legal_boundaries": {
+    "official_sources": {
+      "spanish_criminal_code": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "spanish_companies_act_article_236": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544#a236",
+      "spanish_civil_code_article_1859": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#a1859",
+      "spanish_civil_code_article_1876": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#a1876",
+      "mortgage_law_article_104": "https://www.boe.es/buscar/act.php?id=BOE-A-1946-2453#a104",
+      "civil_procedure_act_article_690": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-323#a690",
+      "criminal_procedure_act_article_641": "https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036#a641"
+    },
+    "statutory_tests": [
+      {
+        "provision": "CP 2.2",
+        "boundary": "Each act is classified under the criminal law in force when committed, subject to retroactive application of a later provision more favourable to the accused; current consolidated wording is not projected backwards automatically."
+      },
+      {
+        "provision": "CP 11",
+        "boundary": "Commission by omission requires a specific legal or contractual duty, or prior risk-creating conduct, making non-prevention legally equivalent to action."
+      },
+      {
+        "provision": "CP 12",
+        "boundary": "Negligent conduct is criminal only where the Criminal Code expressly provides for punishment of negligence."
+      },
+      {
+        "provision": "CP 31",
+        "boundary": "Corporate or representative capacity does not replace proof of the natural person's act, role and mental element."
+      },
+      {
+        "provision": "CP 251",
+        "boundary": "Any property-disposition or authority representation theory requires the exact act, insufficient authority, reliance, loss and intent."
+      },
+      {
+        "provision": "CP 252",
+        "boundary": "Any disloyal-administration theory requires powers over another's assets, excess or abuse and patrimonial loss."
+      },
+      {
+        "provision": "CP 435.4",
+        "boundary": "The insolvency-administrator provision does not criminalise every breach; an underlying malversation offence, affected estate or creditor interests and the required intent must be proved."
+      },
+      {
+        "provision": "CP 446",
+        "boundary": "Judicial prevarication requires a knowingly unjust judicial sentence or resolution."
+      },
+      {
+        "provision": "CP 447",
+        "boundary": "The negligent judicial form requires gross negligence or inexcusable ignorance and a manifestly unjust sentence or resolution."
+      },
+      {
+        "provision": "CP 448",
+        "boundary": "Refusal to judge must be identified and distinguished from an adverse decision or procedural disposition."
+      },
+      {
+        "provision": "CP 449",
+        "boundary": "Malicious delay requires delay caused to obtain an illegitimate purpose."
+      },
+      {
+        "provision": "CP 455",
+        "boundary": "Any arbitrary-self-help theory requires assertion of one's own right outside lawful channels with violence, intimidation or force against things; it is an investigative issue, not a conclusion."
+      },
+      {
+        "provision": "CC 1859",
+        "boundary": "A creditor may not appropriate or dispose of pledged or mortgaged property merely by virtue of the security."
+      },
+      {
+        "provision": "CC 1876",
+        "boundary": "Mortgage creates direct subjection of the asset to the secured obligation; it does not itself transfer possession."
+      },
+      {
+        "provision": "LH 104",
+        "boundary": "Mortgage-law subjection of the asset is not automatic possession, management or whole-hotel title."
+      },
+      {
+        "provision": "LEC 690",
+        "boundary": "Interim administration or possession follows a judicial procedural route; no corresponding CAM instrument is located in the reviewed corpus."
+      },
+      {
+        "provision": "LECrim 641",
+        "boundary": "The effect of provisional dismissal requires the actual order, facts, persons, completed investigation, finality and any genuinely new indicia; the label alone is insufficient."
+      },
+      {
+        "provision": "LSC 236.3",
+        "boundary": "De facto administrator status turns on actual administrator functions or habitual instruction of formal administrators, not creditor influence alone."
+      }
+    ],
+    "judicial_shortcut_prohibited": "An adverse or incomplete judicial ruling, a failure to grant a requested remedy, or an institutional receipt is not by itself proof of judicial prevarication."
+  },
+  "contrary_record": {
+    "provisional_dismissal_2018": true,
+    "appellate_confirmation": true,
+    "conviction_from_physical_entry_complaint": false,
+    "administrator_denied_main_lock_takeover_instruction": true,
+    "administrator_described_narrower_access_authority": true,
+    "cam_valid_credit_possible": true,
+    "cam_valid_individual_titles_possible": true,
+    "later_adjudication_legally_distinct_and_non_retroactive": true,
+    "scope_rule": "Preserve the procedural outcome prominently and compare its exact subject, actors and evidence with the expanded later record; do not recast it as either a conviction or a universal merits declaration."
+  },
+  "publication_boundaries": {
+    "state_allegations_as_attributed": true,
+    "criminal_guilt_as_established": false,
+    "direct_instruction_as_adjudicated_fact": false,
+    "administrator_criminal_approval_as_adjudicated_fact": false,
+    "judicial_prevarication_as_established": false,
+    "merge_laura_isabel_and_laura_patricia": false,
+    "infer_later_evidence_was_before_earlier_actor": false,
+    "treat_valid_credit_as_whole_hotel_title": false,
+    "treat_later_adjudication_as_retroactive_authority": false,
+    "publish_raw_private_evidence": false,
+    "preserve_strongest_defences": true,
+    "preserve_right_of_reply": true
+  },
+  "controlled_sources": [
+    "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+    "archive/CAM_2018_EXTRACONCURSAL_TAKEOVER_RETRIEVAL_GATE_16AUG2026.md",
+    "archive/CALIFICACION_EXTRACONCURSAL_TAKEOVER_BORJA_SECURITY_SOURCE_UPGRADE_16AUG2026.md",
+    "archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md",
+    "archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md",
+    "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md"
+  ],
+  "cross_site_routes": [
+    "/en/sun-park-takeover-7-june-2018/",
+    "/es/toma-control-sun-park-7-junio-2018/",
+    "/en/insolvency-classification-parallel-lives/",
+    "/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "/en/acosta-matos-perimeter/",
+    "/es/acosta-matos-perimetro/",
+    "/en/insolvency-36-2012-insolvency-administrator/",
+    "/es/concurso-36-2012-administrador-concursal/",
+    "/en/insolvency-36-2012-mercantile-court-1/",
+    "/es/concurso-36-2012-magistrado-juez/",
+    "/en/lender-of-record/liability/",
+    "/es/acreedor-de-registro/responsabilidad/",
+    "/en/de-facto-administration-community-ac/",
+    "/es/administracion-de-hecho-comunidad-ac/",
+    "/en/sun-park-criminal-engineering-investigation/",
+    "/es/ingenieria-forense-criminal-sun-park/",
+    "/en/unitary-criminal-reverse-engineering/",
+    "/es/ingenieria-inversa-criminal-unitaria/"
+  ]
+}

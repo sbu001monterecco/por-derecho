@@ -137,3 +137,7 @@ Every route-specific panel must explain why the allegation matters to that route
 ## Readiness decision
 
 **READY TO ACTIVATE IMMEDIATELY.** The source basis and evidential limits are already canonical. The remaining task is visibility, route-specific relevance and stronger attributed wording—not creation of a new merits conclusion.
+
+## Activated controlling route — 23 August 2026
+
+The attributed allegation is now integrated through `/en/cam-creditor-control-shadow-administration-judicial-omission/` and `/es/control-acreedor-cam-administracion-hecho-omision-judicial/`, with the 2018 dismissal, AC denial/narrow authority, identity correction and act-specific judge classification preserved. `not_proved` remains the controlling merits status.

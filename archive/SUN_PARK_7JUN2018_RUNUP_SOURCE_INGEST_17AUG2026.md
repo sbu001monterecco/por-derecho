@@ -134,11 +134,13 @@ The current corpus strongly supports that this was the **project's contemporaneo
 Control 21's source map preserves the strongest disciplined treatment currently available:
 
 - the principal witness describes **7-Jun-2018** as a rupture involving coded-lock damage, chains/padlocks, cylinder changes, a security guard and exclusion from the workplace;
-- according to the witness, Guardia Civil identified the guard, ACR and LPAM;
-- the witness attributes operational instructions to LPAM and ACR in the episode;
+- according to the witness, Guardia Civil identified the guard, ACR and a Laura Acosta Matos actor;
+- the witness attributes operational instructions to that Laura actor and ACR in the episode;
 - **the same witness says JDAM was not physically present that day**.
 
 This caveat is mandatory.
+
+**Identity correction:** the filed 7-Jun amendment names **Laura Isabel Acosta Matos**, while the repository abbreviation **LPAM** identifies **Laura Patricia Acosta Matos**. This source-ingest record does not itself prove that those are the same person, that the filed name was erroneous or that both participated. Earlier `LPAM` shorthand in this file is superseded by “Laura Acosta Matos actor” until the identity/participation bridge is recovered.
 
 Any JDAM responsibility theory for 7 June must therefore be tested through **preparation, instruction, project/ownership representations, prior access, communications, benefit and later conduct**, not by inventing physical presence.
 
@@ -238,7 +240,7 @@ For the 7-Jun storyline, the key point is narrower:
 | **1-Mar-2018** | Complaint alleges hotel tour, measuring and presentation to prospective hotel participants. | CONTEMPORANEOUS PARTY ALLEGATION + separate visual/source routes | Pre-title redevelopment/operator preparation. |
 | **11-Apr-2018** | Criminal complaint filed before 7-Jun event. | CONTEMPORANEOUS PARTY PLEADING | Critical anti-hindsight anchor. |
 | **18-May-2018** | Community/security meeting is part of existing P19 control chain. | SOURCE-CONTROLLED; authority/vote scope open | Security authority immediately before control shift. |
-| **7-Jun-2018** | Locks/chains/cylinders/security/exclusion event; witness attributes operational acts to LPAM/ACR; witness excludes JDAM's physical presence. | SOURCE-SUPPORTED MATERIAL-CONTROL SHIFT; criminal/legal characterisation unresolved | Principal material-control threshold. |
+| **7-Jun-2018** | Locks/chains/cylinders/security/exclusion event; witness attributes operational acts to ACR and a Laura Acosta Matos actor; witness excludes JDAM's physical presence. The filed amendment names Laura Isabel; any attribution to LPAM/Laura Patricia requires a separate identity bridge. | SOURCE-SUPPORTED MATERIAL-CONTROL SHIFT; criminal/legal characterisation and Laura identity unresolved | Principal material-control threshold. |
 | **13-Jun-2018** | Same-day professional account records judicial briefing on financed conclusion/rescue route. | CONTEMPORANEOUS PROFESSIONAL ACCOUNT, not transcript | Shows takeover and rescue/exit tracks overlap in time. |
 | **26-Jun-2018** | Partial suspension of liquidation plan. | JUDICIAL ACT / scope controlled elsewhere | Cannot be projected backwards as 7-Jun authority. |
 | **7-Dec-2018** | Matkator appeals Proc. 213/2015 Community/allanamiento result. | PARTY APPEAL | Governance continuity / extra-estate rights. |
@@ -354,7 +356,7 @@ Do not publish as established fact:
 
 ## 16. Retrieval rule
 
-Any future thread touching **7-Jun-2018, pre-takeover access, clients being told to leave, staff exclusion, JDAM/LPAM/ACR/FMMM, Community security, AP 89/2014, DI 248/2018, Lava Verde, narrative capture, or the legal distinction between defined-unit possession and hotel-wide control** must read this file together with:
+Any future thread touching **7-Jun-2018, pre-takeover access, clients being told to leave, staff exclusion, JDAM/the relevant Laura Acosta Matos actor/ACR/FMMM, Community security, AP 89/2014, DI 248/2018, Lava Verde, narrative capture, or the legal distinction between defined-unit possession and hotel-wide control** must read this file together with:
 
 - `archive/CAM_2018_EXTRACONCURSAL_TAKEOVER_RETRIEVAL_GATE_16AUG2026.md`;
 - `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md`;

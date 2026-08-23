@@ -210,3 +210,7 @@ It should lead to a dedicated ES/EN page where the complete pattern, counter-rec
 The site may say the optics of convergence are strong. It may say repeated effects create indicia that justify investigation. It may ask whether conduct crossed professional or institutional lines. It may identify possible legal/criminal hypotheses.
 
 It must not state as established fact that a conspiracy, corruption, prevaricación, tráfico de influencias or administración desleal occurred unless the required elements are independently established.
+
+## 13. 23-Aug-2026 criminal-lead extension
+
+Repeated CAM-favourable direction of effect is now joined to the 22-Mar call lead, 18-May authority inversion, 7-Jun contemporaneous/event record, July declarations and later governance/benefit evidence. Together they support Gil's actor-specific allegations of direct preparation/instruction, AC criminal approval/ratification/omission and specified judicial wrongdoing. Recurring benefit remains evidence for investigation, not proof that CAM directed every upstream act. The controlling route and legal/identity limits are in `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`.

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1",
-  "controlDate": "2026-08-19",
+  "schemaVersion": "1.2",
+  "controlDate": "2026-08-23",
   "status": "PUBLIC-READY-WITH-QUALIFICATION",
   "purpose": "Cross-site analytical control for repeated CAM-favourable outcomes across the Sun Park / LPB record. It distinguishes verified effects, possible duty breaches, role-boundary questions and criminal hypotheses requiring independent proof. It does not infer conspiracy, corruption, improper judicial bias or criminal liability from chronology alone.",
   "controllingPrinciple": {
@@ -32,10 +32,13 @@
       "labelEs": "Control material / realización / operación no convalidada",
       "labelEn": "Material control / realisation / non-validated transaction",
       "status": "VERIFIED_WITH_LIMITATION",
-      "camGain": "The CAM perimeter is repeatedly present on the beneficiary side of control/realisation proposals and the later transaction chain.",
+      "camGain": "The 7 June sources support a material access/control shift extending beyond isolated CAM units, followed by repeated CAM-perimeter presence on the beneficiary side of control/realisation proposals and the later transaction chain.",
       "lpbLoss": "LPB's control, property-protection and restitution questions become increasingly difficult to reverse after material and registry consequences.",
       "estateBenefit": "REQUIRES_RECONCILIATION",
-      "counterRecord": "Judicial acts include suspension and later refusal to validate an unauthorised operation; those controls must be preserved and not rewritten as uniform CAM support."
+      "criminalLead": "Gil alleges direct CAM-perimeter instruction or coordination through the Community/security apparatus and criminal approval, ratification or legally equivalent omission by the insolvency administrator.",
+      "directInstructionStatus": "SERIOUS_ATTRIBUTED_ALLEGATION_NOT_PROVED",
+      "identityControl": "The filed 7 June amendment names Laura Isabel Acosta Matos; LPAM denotes Laura Patricia Acosta Matos. The identity/participation bridge is open.",
+      "counterRecord": "Judicial acts include suspension and later refusal to validate an unauthorised operation; the 2018 provisional dismissal and appellate confirmation, AC denial/narrow authority, valid CAM credit/title and those corrective acts must be preserved and not rewritten as uniform CAM support."
     },
     {
       "id": "CAM-PATTERN-03",
@@ -125,6 +128,8 @@
   ],
   "publicRoutes": {
     "es": "/es/patron-efectos-favorables-acosta-matos/",
-    "en": "/en/acosta-matos-favourable-effect-pattern/"
+    "en": "/en/acosta-matos-favourable-effect-pattern/",
+    "criminalLeadEs": "/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+    "criminalLeadEn": "/en/cam-creditor-control-shadow-administration-judicial-omission/"
   }
 }

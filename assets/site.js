@@ -271,7 +271,7 @@
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-sitewide-discovery-nav-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('sitewide-discovery-nav-20260821.js?v=20260822a', current.src).href;
+  module.src = new URL('sitewide-discovery-nav-20260821.js?v=20260823a', current.src).href;
   module.async = false;
   module.setAttribute('data-sitewide-discovery-nav-loader', '20260822');
   document.head.appendChild(module);

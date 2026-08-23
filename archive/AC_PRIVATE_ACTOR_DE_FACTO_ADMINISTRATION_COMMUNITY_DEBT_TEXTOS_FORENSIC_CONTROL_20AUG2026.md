@@ -123,7 +123,7 @@ That mobility is a major forensic issue. It was not wholly hidden: the later fig
 | Garrigues invoices | Incident 07, judgment before definitive filing | Specific inclusions/exclusions | Formal incident. |
 | Monterecco rent receivable | Incident 08, 24-Nov-2015 judgment | Adds €2,733,923.64 receivable plus later rent | Formal incident before definitive filing. |
 | Community pre-concurso claim | 20-Jan-2017 order under Article 97 bis | €718,663.24 becomes ordinary contingent claim without own amount | Formal, visible modification before liquidation. |
-| Promontoria→CAM holder | 8-Feb-2018 order under Article 97 bis | Holder only; amounts remain €857,373.81 and €8,194,877.88 plus contingent costs | Formal holder substitution after liquidation opening. |
+| Promontoria→CAM holder | 15-Feb-2018 order under Article 97 bis | Holder only; amounts remain €857,373.81 and €8,194,877.88 plus contingent costs | Formal holder substitution after liquidation opening. |
 | Mortgage/better-bid interest | 2018–2021 liquidation orders and appellate ruling | Liquidation/bid threshold; 23-Jul-2019 ruling says it does not modify definitive texts | Not a located textual amendment. Legal function must remain separate. |
 | Community post-concurso increase | AC filings, creditor certification/spreadsheet, court bid conditions | Estate claim/current better-bid burden | Not located as an incident modifying the definitive list; claims against estate were expressly updateable, but substantive basis remains to be proved. |
 | 2022 deed consideration | deed/order implementation | Debt used as non-cash consideration | Not itself a definitive-text amendment. Must be reconciled component by component. |
@@ -135,7 +135,7 @@ That mobility is a major forensic issue. It was not wholly hidden: the later fig
 1. **Incident 07** — Garrigues fee invoices; completed before the 2016 definitive filing.
 2. **Incident 08** — Monterecco lease/rent; judgment 24 November 2015; completed before the definitive filing.
 3. **20 January 2017 Article 97 bis order** — formally changes the Community pre-concurso claim to ordinary contingent/no own amount; post-concurso estate claim not changed.
-4. **8 February 2018 Article 97 bis order** — formally substitutes CAM for Promontoria as holder of the two recognised specially privileged claims; no enlargement of amount or reclassification.
+4. **15 February 2018 Article 97 bis order** — formally substitutes CAM for Promontoria as holder of the two recognised specially privileged claims; no enlargement of amount or reclassification.
 5. **2019 and 2021 liquidation orders/edict** — determine liquidation and better-bid conditions; the 2019 appellate order expressly states it is not modifying the definitive texts.
 
 **Current answer:** no post-liquidation incidente concursal has been located that unequivocally changes:
@@ -234,3 +234,7 @@ The public site may state:
 - what Por Derecho alleges and what remains unproved.
 
 It must not publish criminal guilt, conspiracy, falsification or prevarication as established fact. A confidential prosecutorial memorandum may set out the stronger criminal hypothesis with the same source-status controls.
+
+## 23-Aug-2026 criminal-allegation upgrade
+
+The earlier `OPEN_INSUFFICIENT_FOR_FACTUAL_ALLEGATION` shorthand is superseded. The evidence supports publishing a **serious attributed criminal allegation** of knowing facilitation/approval/ratification or legally equivalent omission and demanding investigation, while guilt remains unproved. Apply the exact duty, knowledge, practical-capacity, causal-equivalence and intent test in `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`.

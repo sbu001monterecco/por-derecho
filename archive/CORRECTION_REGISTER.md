@@ -77,3 +77,7 @@ Permanent control against reintroducing superseded facts. Record material correc
 
 ## Rule
 When a correction changes a public proposition, update: (1) public page(s), (2) canonical evidence/maintenance ledger, (3) any manuscript/book intelligence using it, and (4) this register. Never delete the correction history merely because the current page is correct.
+
+## Namespaced continuation — 23 August 2026
+
+CAM / 7-Jun-2018 direct-instruction, creditor-control, AC-approval/omission and judicial-prevarication corrections continue in `CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md` under collision-safe IDs `CR-CAM7J-001` onward.

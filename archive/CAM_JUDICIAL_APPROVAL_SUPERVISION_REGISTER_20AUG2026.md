@@ -197,3 +197,7 @@ Retain and analyse, not bury:
 Controlling reconstruction: `archive/CAM_OFFER_TO_TRANSFER_MASTER_RECONSTRUCTION_20AUG2026.md`  
 2022 source addendum: `archive/CAM_2022_DACION_PRIMARY_SOURCE_ADDENDUM_20AUG2026.md`  
 Deletion continuity: `archive/THREAD_DELETION_CONTINUITY_AUDIT_CAM_TRANSACTION_REVERSE_ENGINEERING_20AUG2026.md`
+
+## 23-Aug-2026 criminal-lead control
+
+The later transaction/supervision record must now be read with `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`. Gil alleges that specified acts, refusals, delays and omissions preserved the 2018 private-control result. The public classification remains act-specific under CP Articles 446–449; adverse outcomes, incomplete reasoning or omitted protection do not by themselves establish prevarication.
