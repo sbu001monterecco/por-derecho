@@ -23,6 +23,7 @@ ES_PATH = ROOT / "es/concurso-36-2012-autos-resoluciones/index.html"
 EN_PATH = ROOT / "en/insolvency-36-2012-orders-decisions/index.html"
 PROVENANCE_PATH = ROOT / "evidence/insolvency-36-2012/ac-removal-fees/provenance.md"
 UNITARY_PATH = ROOT / "archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md"
+WHOLE_FILE_PROMPT_PATH = ROOT / "archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md"
 
 PDF_SPECS = {
     "evidence/insolvency-36-2012/ac-removal-fees/auto-1377-2025-removal-public-redacted.pdf": (3, "a19975991ddf5aceb17f95247d05c7a7cd115bf9cd4ce6e7b3c7f127aeeba5b7"),
@@ -248,8 +249,39 @@ require(
         "## 4. Decision matrix",
         "## 7. Known gaps at the cut-off",
         "No public text may say that the court found the remuneration lawful or unlawful",
+        "Whole-file continuation",
+        str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)),
     ],
 )
+
+whole_file_prompt = read(WHOLE_FILE_PROMPT_PATH)
+require(
+    WHOLE_FILE_PROMPT_PATH,
+    whole_file_prompt,
+    [
+        "complete Concurso 36/2012 judicial and party record",
+        "AUDIT_ACQUIRE_DIGITISE_PREPARE",
+        "PUBLISH_PUBLIC_SAFE",
+        "derive the expected denominator",
+        "Communications by parties",
+        "Authorisation ≠ implementation",
+        "CERTIFIED_COURT_COPY",
+        "Public/private and privilege boundary",
+        "Existing public archive: extend, do not duplicate",
+        "Current P0 source demands",
+        "Validation and release gate",
+        "Never claim the file is complete until a certified court index has been reconciled record by record",
+        "The prompt does not authorise sending, resending, forwarding or self-emailing any message",
+    ],
+)
+
+for rel, markers in {
+    "CHATGPT_START_HERE.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "31. For **any request to obtain"],
+    "archive/CHATGPT_PROMPT_LIBRARY.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "## P25 — Complete Concurso 36/2012 judicial and party record"],
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "Complete Concurso 36/2012 judicial and party record"],
+}.items():
+    path = ROOT / rel
+    require(path, read(path), markers)
 
 route_pairs = (
     "/es/concurso-36-2012-autos-resoluciones/",
