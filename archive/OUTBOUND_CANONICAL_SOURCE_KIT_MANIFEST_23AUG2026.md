@@ -9,6 +9,14 @@
 
 Every future outbound package must select from this manifest or document why a different source is justified. A recurring visual, public source or website route must have one controlling label and a clear statement of what it proves and does not prove.
 
+For media-facing email, this manifest is governed by the hard stop in:
+
+`archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
+
+The two appropriate-language source maps, controlled San Telmo webinar, at least one Por Derecho website route and the evidential-limits text are **mandatory in every media-facing outbound email** unless the user expressly approves the precise omission for the exact recipient and exact transmission.
+
+The words “normally”, “consider”, “where relevant”, “link-led” or “smallest package” elsewhere do not create a media exception.
+
 This file does **not** authorise sending, publication of private correspondence, or reuse of a source outside its evidential scope.
 
 ## Reusable visual sources
@@ -50,29 +58,38 @@ Do not use a single universal website link merely for convenience.
 | Lawyers / academics / technically oriented media | Legal Notebook / judicial-spine route | Prefer doctrine/source-status framing rather than advocacy |
 | General media first look | future `/es/media-briefing/` or `/en/media-briefing/` once implemented and verified | Not yet assumed live merely because recommended internally |
 
-## Audience package defaults
+## Audience package requirements
 
-### Journalist — Level 1
-Normally:
+### Journalist / editor / newsroom / media routing contact — mandatory core
+
+Every media email must contain:
+
 1. one recipient-specific first-screen;
 2. three to five independently checkable anchors;
-3. the two language-appropriate source maps where relevant;
-4. the controlled webinar where relevant;
-5. one exact public dossier or orientation route;
-6. a finite ask: examine, verify, request the short dossier, or identify the correct editorial contact.
+3. the two appropriate-language source maps;
+4. the controlled webinar URL;
+5. at least one exact public Por Derecho dossier or orientation route;
+6. the source-limitations wording for the maps and webinar; and
+7. a finite ask: examine, verify, request the short dossier, identify the correct editorial contact, comment, correct or update.
+
+This applies to first approaches, replies, resends, corrections, supplements, follow-ups and routing enquiries. The complete core is repeated even if the same recipient received it earlier, unless the user expressly approves an exact omission.
 
 ### Economic / investment / markets journalist
+
 Emphasise:
 `asset provenance → title/control chronology → RICPE/investment → HNT/MYND → incentives → due diligence / disclosure / source-and-use → legal certainty / effective recovery`.
 
 ### General / Canary public-interest journalist
+
 Emphasise:
 `Sun Park → alleged long-term pressure/interference → material control transition → RIC/RICPE → MYND Yaiza → public/institutional funding questions → present tourism/economic relevance`.
 
 ### Regulator / authority / professional body
+
 Use primary documents first. Visual maps are orientation aids only. Separate ordinary email notice from legally operative filing.
 
 ### Witness / historical participant
+
 Do not lead recollection with argumentative visual bundles. Ask for the witness’s own records/recollection first unless there is a specific justified reason otherwise.
 
 ## Attachment hygiene
@@ -82,6 +99,8 @@ Before final approval record:
 `filename → language → version → purpose → source class → evidence limitation → exact file selected`.
 
 Do not use ambiguous outgoing filenames such as `(2)`, `(3)`, `final-final` or download-copy suffixes when a canonical copy is available. Preserve aliases internally for provenance.
+
+For media email, a manifest that intentionally lists zero core attachments is invalid unless the user has expressly approved the exact omission.
 
 ## Link hygiene
 
@@ -96,13 +115,21 @@ Before final approval verify every outbound link for:
 
 A material link change after approval resets final email authorisation.
 
+For media email, the Link Manifest must show both:
+
+- `WEBINAR_LINK_FOUND = YES`; and
+- `POR_DERECHO_LINK_FOUND = YES`.
+
 ## Proven working pattern — 23 August 2026
 
-Two recent Spanish first-look packages successfully used the same compact source architecture:
+Spanish media/routing packages established the compact architecture of:
 
-- a direct journalist approach to a Canary media gatekeeper; and
-- a routing/permission enquiry through a historical professional address for **Diego Sánchez de la Cruz**.
+- the two Spanish source maps;
+- the controlled San Telmo webinar;
+- a recipient-specific Por Derecho route;
+- clear evidential limits; and
+- a finite recipient-specific ask.
 
-Both used the two Spanish source maps plus the San Telmo webinar as orientation, while preserving the limitation that the maps and webinar do not independently prove wrongdoing.
+A later media-package omission demonstrated that treating this architecture as optional creates repeated errors. The package is therefore now a hard requirement under `archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`.
 
-The Diego routing email adds an important reusable rule: when a public historical address is documented but current direct deliverability is uncertain, it may be used for a narrowly framed routing enquiry asking whether the organisation may forward the material or identify the appropriate current contact. Do not represent the historical address as the person’s current direct email unless verified.
+A separate routing lesson remains valid: when a public historical address is documented but current direct deliverability is uncertain, it may be used for a narrowly framed routing enquiry asking whether the organisation may forward the material or identify the appropriate current contact. Do not represent the historical address as the person’s current direct email unless verified.
