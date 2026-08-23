@@ -38,7 +38,7 @@
       "documented_basis": [
         "recognised CAM secured-credit position before 7 June 2018",
         "filed allegations of earlier JDAM and FMMM access, asserted ownership and control conduct",
-        "contemporaneous placement of a CAM lawyer identified as Laura Matos with Community personnel at the physical event",
+        "contemporaneous placement of CAM lawyer Laura Patricia Acosta Matos with Community personnel at the physical event",
         "filed 7 June amendment naming Laura Patricia Acosta Matos and Antonio Cogolludo as acting personally and purportedly for CAM and the Community",
         "reported use of a whole-complex ownership paper and the 18 May security minute",
         "material benefit to the creditor and later project perimeter",
@@ -201,7 +201,7 @@
     }
   ],
   "identity_control": {
-    "contemporaneous_email_name": "Laura Matos",
+    "contemporaneous_email_name": "Laura Patricia Acosta Matos",
     "filed_7_june_amendment_name": "Laura Patricia Acosta Matos",
     "repository_lpam_name": "Laura Patricia Acosta Matos",
     "name_controlled_as_typographical_error": true,
@@ -329,7 +329,7 @@
     "direct_instruction_as_adjudicated_fact": false,
     "administrator_criminal_approval_as_adjudicated_fact": false,
     "judicial_prevarication_as_established": false,
-    "merge_laura_isabel_and_laura_patricia": false,
+    "treat_source_typo_as_separate_actor": false,
     "infer_later_evidence_was_before_earlier_actor": false,
     "treat_valid_credit_as_whole_hotel_title": false,
     "treat_later_adjudication_as_retroactive_authority": false,

@@ -13,7 +13,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIRS = (ROOT / "es", ROOT / "en", ROOT / "assets")
 HTML_ROOTS = (ROOT / "es", ROOT / "en")
-FORBIDDEN_PUBLIC_IDENTITY = b"Laura Isabel"
+FORBIDDEN_PUBLIC_IDENTITIES = (b"Laura Isabel", b"Laura Matos")
 
 
 class LinkParser(HTMLParser):
@@ -87,8 +87,9 @@ def validate_identity(errors: list[str]) -> int:
             except OSError as exc:
                 fail(errors, f"cannot read public file {path.relative_to(ROOT)}: {exc}")
                 continue
-            if FORBIDDEN_PUBLIC_IDENTITY in data:
-                fail(errors, f"forbidden public identity variant: {path.relative_to(ROOT)}")
+            for forbidden in FORBIDDEN_PUBLIC_IDENTITIES:
+                if forbidden in data:
+                    fail(errors, f"forbidden public identity variant {forbidden!r}: {path.relative_to(ROOT)}")
     return checked
 
 
