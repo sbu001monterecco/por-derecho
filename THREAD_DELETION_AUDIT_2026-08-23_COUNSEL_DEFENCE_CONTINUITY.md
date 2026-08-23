@@ -105,6 +105,16 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - Spanish public edge: A1–A8, Davinia, institutional call and complaint-status caveat visible; 18 table rows;
 - English public edge: A1–A8, Davinia, institutional call and complaint-status caveat visible; 18 table rows.
 
+### 23 August contextual correction closeout
+
+- correction PR: [#879](https://github.com/sbu001monterecco/por-derecho/pull/879);
+- source head: `73ba539f4671c06e066a5d5468172b21a9e6220b`;
+- squash merge: `7ed8a4469d1f5a46a68f3f2cf55711f99176d97f`;
+- all eight GitHub checks passed: publication integrity, AC removal/remuneration publication, primary-autos redigest, visual registry, public-bidder control, Gil/Pink/AEAT/Community 360, off-GitHub preservation and audience experience;
+- Spanish public edge: Article 215.2 procedural-gate marker and integrated Cuatrecasas mandate marker visible; stale binary withdrawal wording absent; 21 total table rows;
+- English public edge: corresponding Article 215.2 and integrated-mandate markers visible; stale binary withdrawal wording absent; 21 total table rows;
+- verified at `2026-08-23T23:51:15Z` by cloud-browser public-edge readback.
+
 ## Final gate
 
 The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 23 August contextual correction prevents a formal withdrawal reason from being used as a substitute for the full mandate history. The remaining work is evidential completion, not recovery of the reasoning or source map.
