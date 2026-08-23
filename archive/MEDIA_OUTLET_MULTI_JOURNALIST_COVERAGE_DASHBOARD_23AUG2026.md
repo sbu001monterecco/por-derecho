@@ -19,7 +19,19 @@ This dashboard is private campaign-control material. Do not publish private cont
 | Biosfera Digital | Salvador Hernández | Director; Lanzarote tourism/economy/institutional relevance | SENT + VERIFIED | **REQUIRED** | Named local reporter/editor with tourism, Yaiza, economy or institutions beat | PARTIAL | Verify whether suitable second professional exists before any exception |
 | Crónicas de Lanzarote | Alfonso Canales Segovia | Director; local institutional/governance, economy and Yaiza relevance | SENT + VERIFIED | **REQUIRED** | Named reporter/editor distinct from Alfonso with local politics/economy/tourism remit | PARTIAL | Verify second professional before any exception |
 | Cinco Días | Carlos Molina | Hotels, tour operators, agencies, airlines; Canarian Hospitality growth reporting | SENT + VERIFIED through newsroom-attention route | Daniel Toledo | Empresas editor; received Cc on Carlos package | PARTIAL / REQUIRES SECOND PERSON-SPECIFIC LANE | Daniel's Cc is useful but does not replace a second separately personalised named-journalist approach under the new rule |
-| CANARIAS7 | Silvia Fernández | Economics/RIC; authored 24-Jan-2020 RICPE launch article | SENT + VERIFIED | Javier Sheng Pang Blanco — **priority candidate** | Economics/tourism/business; complementary CANARIAS7 source-traceability lane | PARTIAL — ONE NAMED JOURNALIST | Fresh role/contact verification → separate Javier package → exact approval → send/verify |
+| CANARIAS7 | Silvia Fernández | Economics/RIC; authored 24-Jan-2020 RICPE launch article | SENT + VERIFIED | **David Ojeda — PREPARED** | Local/Las Palmas/editorial lane; institutions, public files and accountability. Distinct Aug-2026 Fiscalía/Gobierno/Yaiza/Cabildo source-led package prepared and read back | **PARTIAL — SECOND LANE PREPARED** | Present exact David package for approval → if approved send/verify → then continue additional CANARIAS7 lanes (Fran Fajardo, Carmen Delia Aranda, director; Javier Sheng Pang when direct route verified) |
+
+## CANARIAS7 additional named-lane queue
+
+After David Ojeda, current named CANARIAS7 candidates already identified are:
+
+1. **Fran Fajardo** — courts / justice / investigative-document lane; historical direct professional route exists in project Gmail and current role must be reverified before preparation;
+2. **Carmen Delia Aranda** — Canary institutional/social-public-affairs lane; historical direct professional route exists in project Gmail and current role must be reverified before preparation;
+3. **Francisco Suárez Álamo** — director / commissioning / editorial-accountability lane; use only current verified role routing;
+4. **Javier Sheng Pang Blanco** — economics/tourism/business/public-policy lane; relevant current professional, but do not guess a direct address;
+5. unresolved historical `lpalacios@canarias7.es` route remains HOLD until the current named professional is identified with confidence.
+
+A generic CANARIAS7 newsroom/web-redaction route does not count as a named journalist.
 
 ## Rule for future outlets
 
@@ -33,7 +45,7 @@ A newsroom address does not count as person 2. A director alone does not complet
 
 ## Retrospective audit queue
 
-After CANARIAS7 second-lane preparation, audit and fill second named professionals for:
+After the current CANARIAS7 multi-journalist sequence, audit and fill second named professionals for:
 
 1. El Confidencial;
 2. Diario de Lanzarote;

@@ -42,21 +42,28 @@ At the current 23-Aug-2026 control point, the following individual recipients ar
 
 These individual sends do **not** mean their outlets are fully covered under the multi-journalist rule.
 
-For Silvia/CANARIAS7 read:
+## Current CANARIAS7 state
+
+Silvia Fernández's economics/RIC lane is sent + verified.
+
+**David Ojeda / CANARIAS7 is now PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
+
+Read:
+
 - `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
-- `archive/CANARIAS7_SILVIA_FERNANDEZ_SENT_VERIFICATION_23AUG2026.md`.
+- `archive/CANARIAS7_SILVIA_FERNANDEZ_SENT_VERIFICATION_23AUG2026.md`;
+- `archive/CANARIAS7_DAVID_OJEDA_PREPARATION_RECORD_23AUG2026.md`.
 
-Silvia's CANARIAS7 economics/RIC lane is complete as an individual send, but **CANARIAS7 outlet coverage remains PARTIAL — ONE NAMED JOURNALIST**. The priority second-lane candidate is Javier Sheng Pang Blanco, subject to fresh role/beat/contact verification and a separate recipient-specific package. The generic CANARIAS7 newsroom Cc does not satisfy the second-journalist requirement.
+David is the deliberately different second named lane: Local / Las Palmas / institutions / public files / accountability. His package is anchored to the 10-Aug Fiscalía AN transfer to the Arrecife-area prosecution service, the 12-Aug Canary Government Law 2/2023 internal-routing record, the 22-Aug Yaiza/Cabildo invitations and the property/title/public-funding chronology. It expressly corrects the broad December-2024 message previously forwarded to him and retains adverse evidence and evidential limitations.
 
-The next fresh thread must first scan connected Gmail, then read the coverage dashboard. It should fill missing second named editorial lanes retrospectively for already-contacted outlets, beginning with the highest-value current gap, rather than moving endlessly to new outlets after one person each.
+Current outlet state:
 
-Current high-value unsent Canary-wide outlets still include:
+`CANARIAS7 = PARTIAL — SECOND LANE PREPARED`.
 
-- La Provincia;
-- Atlántico Hoy;
-- Cadena SER Canarias;
-- RTVC / Televisión Canaria / Canarias Radio.
+If David is later sent + verified, CANARIAS7 reaches the minimum two-named-journalist threshold, but user instruction is to continue one by one through additional relevant CANARIAS7 lanes: Fran Fajardo, Carmen Delia Aranda, Francisco Suárez Álamo, and Javier Sheng Pang Blanco when a verified direct route is available.
 
-When those outlets are opened, the same two-or-more-named-editorial-professionals rule applies from the start.
+The latest fresh connected-Gmail scan found **NO RESPONSE LOCATED YET** from the active media-domain set searched.
 
-No queue position, coverage state, bootstrap instruction or `Run like the wind` command authorises an email send. Exact-package send authorisation remains governed by `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
+Current high-value unsent Canary-wide outlets still include La Provincia, Atlántico Hoy, Cadena SER Canarias and RTVC / Televisión Canaria / Canarias Radio, but the current immediate action is the David Ojeda exact-package gate.
+
+No queue position, coverage state, prepared draft, bootstrap instruction or `Run like the wind` command authorises an email send. Exact-package send authorisation remains governed by `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
