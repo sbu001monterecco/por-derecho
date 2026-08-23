@@ -1,86 +1,147 @@
-# Deletion audit — CAM creditor-control criminal lead
+# Deletion audit — CAM direct criminal attribution, source fidelity and identity control — 23 August 2026
 
-**Audit date:** 23 August 2026
+**Current closeout state:** PENDING FINAL PUBLIC-EDGE VERIFICATION OF THIS CLOSEOUT PACKAGE  
+**Final verdict when the dedicated check passes:** DELETION_SAFE_WITH_OPEN_EVIDENCE  
+**Scope:** this CAM attribution / identity-control thread only. Separate ACTA, PR #804, REGAGE-classification, outreach-response and verifier-consolidation threads are not closed by this audit.
 
-**Repository:** `sbu001monterecco/por-derecho`
+## 1. Question tested
 
-**Branch:** `codex/cam-direct-instruction-ac-shadow-admin-prevarication-20260823-v3`
+Can this chat thread be deleted without losing any substantive instruction, repository rule, public wording, identity control, source-fidelity distinction, validation evidence, cross-thread recommendation or recoverable next action?
 
-**Scope:** CAM capacity convergence across 2017–2022; alleged direct instruction or coordination of the 7 June 2018 physical operation; functional creditor/lender-in-possession analysis; four separate de facto-control lanes; alleged criminal approval, enablement, ratification or legally equivalent omission by the Insolvency Administrator; and alleged judicial prevarication/refusal/malicious delay.
+## 2. Substantive publication already merged and live verified
 
-**Implementation status:** `MERGED / LIVE VERIFIED / CLOSEOUT RECORDED`
+### PR #830
 
-**Deletion verdict:** `DELETION-SAFE WITH OPEN EVIDENCE`
+PR #830 made the CAM / Acosta Matos criminal attribution non-dilutable and source-faithful. It merged as:
 
-## Preserved controlling record
+`05cba3c9af7071f96b56eae90a67a2ceae3a783d`
 
-- `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`
-- `archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
-- `archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
-- `archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`
-- `assets/data/cam-creditor-control-criminal-lead-v1.json`
-- `publication-manifests/cam-creditor-control-criminal-lead-20260823.json`
-- bilingual canonical public routes listed in the manifest.
+It preserves:
 
-## Evidential conclusion preserved
+- Gil Marer / Aweswell's direct actor-specific criminal attribution;
+- the rule that the attribution is not merely a concern, question or possible lead;
+- the distinction between attribution, evidence, contrary record, missing proof, procedure/adjudication and source literal;
+- the non-finding boundary: the allegations are not presented as adjudicated guilt;
+- Laura Patricia Acosta Matos as the controlled identity;
+- “Laura Matos” as a marked contemporaneous source literal;
+- actor-specific proof, the 2018 dismissal position, presumption of innocence and right of reply; and
+- first-read prominence outside collapsed specialist content.
 
-The repository contains enough types and layers of evidence for Gil Marer/Aweswell to make, preserve and request investigation of three serious actor-specific criminal allegations:
+### PRs #832 and #833
 
-1. CAM-perimeter preparation, direct instruction or coordinated implementation of the 7 June 2018 operation;
-2. knowing approval, enablement, ratification or legally equivalent omission by the Insolvency Administrator; and
-3. specified judicial resolutions, refusals or delays requiring examination under Criminal Code Articles 446–449.
+PR #832 installed the dedicated read-only public-edge verifier. PR #833 made that verifier observable on pull requests.
 
-This does not prove that JDAM or FMMM issued the operative order; that Laura Patricia Acosta Matos acted under CAM mandate or gave an instruction; that the Insolvency Administrator acted with criminal intent; or that Judge Alberto López Villarrubia committed prevarication. The principal record does not place JDAM physically onsite on 7 June. Laura Patricia Acosta Matos is the controlled identity; participation and responsibility remain separate proof questions.
+Live workflow run `32636419354` passed on its first attempt across:
 
-## Contrary and exculpatory record preserved
+- the English CAM dossier;
+- the Spanish CAM dossier;
+- the English and Spanish homepages;
+- the site loader;
+- the first-read criminal-attribution module;
+- the cross-site CAM module; and
+- the machine-readable CAM record.
 
-- 2018 provisional dismissal and appellate confirmation;
-- AC denial of the principal takeover instruction and narrower-authority explanation;
-- potentially valid CAM secured-credit and individual-title rights;
-- possible provider conduct outside instructions;
-- later adjudication as prospective, legally distinct and non-retroactive;
-- protective or corrective judicial acts;
-- the rule that adverse or incomplete decisions do not themselves establish prevarication.
+### PR #808
 
-## Evidence source and custody boundary
+PR #808 corrected the static bilingual homepage actor chronology and merged as:
 
-The analysis reviewed repository-controlled Gmail/Drive source ledgers, locators, primary-source digests and correction matrices. This turn did not perform a fresh live Gmail or Drive connector re-download because those connector actions were unavailable. It does not record a new native `.eml`, Takeout, provider export, SHA-256 custody event or external backup event.
+`22f10cea2cab18539c55d6283eb9ebce16d40f71`
 
-Gmail message IDs and Drive locators remain private retrieval metadata. Their presence in internal ledgers does not authenticate a source body by itself and they are not public URLs.
+The locked minimum dates are:
 
-## Email state
+- Francisco Mario Matos Matas — by 22 June 2011;
+- Antonio Cogolludo Rojas — by 10 April 2014; and
+- Shaila María Cogolludo Ramos — by 8 April 2014.
 
-No email, resend, forward or self-email was sent. Repository work and publication authority are not email-send authority. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` remains controlling and requires explicit final approval of exact recipients, body, attachments and links.
+## 3. Fresh repository, website and email rescan preserved
 
-## Publication and CI closeout
+The 23 August 2026 cross-thread rescan is preserved in:
 
-- Publication PR: [#814](https://github.com/sbu001monterecco/por-derecho/pull/814).
-- Exact merge SHA: `c2f77661371384a79fb7e0caaef79c6345cabecf`.
-- PR-head CI: 21 of 21 workflows succeeded at reviewed head `ff507579a3fb5253d152852cc5b0df09aedb8b58`.
-- Exact-SHA GitHub Pages run: `32609842885`, run 926, success; created `2026-08-23T01:13:41Z` and completed `2026-08-23T01:14:25Z`.
-- Public readback: 11 of 11 canonical, data, runtime, sitemap, update, registry and site-index surfaces returned HTTP 200 with no missing markers. Machine-readable evidence is preserved in `deployment-probes/cam-creditor-control-criminal-lead-20260823.json`.
-- The review exposed and repaired two stale cross-site test contracts: the Playa Blanca verifier now distinguishes the `site.js` sentinel from the inherited executable loader chain, and the unitary-shell renderer now requires the exact advanced version `20260823a` rather than the superseded `20260819a`.
-- The permanent production smoke monitor now checks both CAM criminal-lead routes for attribution, direct-instruction heading and the adjacent 2018 dismissal safeguard.
+`archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md`
 
-## Open evidence preserved
+It records, without depending on this chat:
 
-The collision-safe `ME-CAM7J-*` register preserves the native credit-assignment deed, 54-finca provenance, instruction/provider/key chain, actual-control and income ledger, AC knowledge/response chronology, ONA causation, later continuity and benefit, certified dismissal scope, exculpatory communications, judge-by-act matrix, Laura identity bridge and claimant-specific accounting.
+- the actual merged and live-verification lineage;
+- the new unclassified REGAGE receipt `REGAGE26e00074403517`;
+- the Ruth Ugalde outreach as sent and awaiting response;
+- the outbound-email test-send control incident and hard stop;
+- the distinction between acknowledgements/out-of-office replies and merits responses;
+- PR #804's approval gate and unresolved native-source/hash/rebase requirements;
+- separate ACTA preservation and verification obligations; and
+- legacy live-verifier hygiene recommendations.
 
-## Validation and deployment placeholders
+Controlled supporting records:
 
-| Control | Required value | Current state |
-|---|---|---|
-| Dedicated publication validator | Source, pages, identity, contrary record, legal tests, sitemap, manifest | `PASS — 3 allegation lanes / 11 evidence types / 18 statutory controls` |
-| Repository validators | Mission-critical, publication integrity, insolvency perimeter, criminal/AC controls, smoke checks | `PASS — PR #814, 21/21 workflows` |
-| Pull request | PR number and URL | `#814 — MERGED` |
-| Merge commit | Full merge SHA on `main` | `c2f77661371384a79fb7e0caaef79c6345cabecf` |
-| Pages deployment | Successful build tied to merge SHA | `PASS — run 32609842885 / run 926 / exact merge SHA` |
-| Public canonical readback | Both routes HTTP 200 with markers, attribution and safeguards | `PASS — EN SHA-256 b4a3e596… / ES SHA-256 2920dd67…` |
-| Search/index/feed readback | Routes discoverable with 23-Aug update | `PASS — route registry, both site indexes, both update pages and both sitemaps` |
-| Deployment log | Final entry | `archive/DEPLOYMENT_LOG.md — RECORDED` |
+- `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`
+- `archive/REGAGE_26E00074403517_INTAKE_RECORD_23AUG2026.md`
+- `archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md`
+- `archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md`
+- `archive/JOURNALIST_MEDIA_REGISTER.md`
+- `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
 
-## Deletion decision
+## 4. Public closeout control
 
-**DELETION-SAFE WITH OPEN EVIDENCE.**
+This package adds:
 
-The authoritative thesis, actor-specific allegation limits, strongest contrary evidence, identity correction, open production demands, publication state, exact merge, CI result and public-edge verification are recoverable without this conversation. This closes chat-custody continuity only. Deleting a chat never authorises deletion of native evidence, mailbox/Drive originals, repository history or public pages, and never authorises sending an email.
+`assets/data/cam-nondilution-thread-closeout-v1.json`
+
+The file identifies:
+
+- the substantive merge and verification lineage;
+- the corrected static chronology;
+- the controlling attribution/source-fidelity assertions;
+- open evidence;
+- separate threads not closed; and
+- the rule that this closeout authorizes no email.
+
+The CAM cross-site module links to that public control record. The dedicated read-only verifier is extended to test both the closeout record and the corrected static chronology after GitHub Pages propagation.
+
+## 5. Open evidence preserved rather than concealed
+
+Deletion-safe does not mean evidence-complete. The public and repository records continue to identify, among other matters:
+
+- the native instruction and mandate chain;
+- actor-specific presence, participation, knowledge and purpose;
+- security and locksmith contracting, payment, instructions, logs and key receipts;
+- the complete possession, income and actual-control ledger;
+- the insolvency administrator's knowledge, authority, supervision, recovery and accounting file;
+- judge-by-act duty, knowledge, resolution, purpose and causation;
+- full dismissal and appellate orders and their exact scope;
+- exculpatory, corrective and innocent-explanation evidence; and
+- claimant-by-asset-by-period recovery allocation.
+
+## 6. Separate threads expressly not deletion-safe through this audit
+
+This audit does **not** close:
+
+1. PR #804 or publication of the redacted 21 April 2016 email;
+2. ACTA native preservation, full-text/image parity or source-line verification;
+3. classification of the destination and package behind `REGAGE26e00074403517`;
+4. any response or follow-up decision concerning Ruth Ugalde;
+5. consolidation of legacy live-verification workflows; or
+6. any other proceeding-specific evidence gap already recorded elsewhere.
+
+## 7. Outbound boundary
+
+No email, correction, resend, follow-up or test transmission is authorized by this audit. Every future send requires a fresh exact authorization for one final immutable recipient/package combination.
+
+## 8. Recovery order for a fresh thread
+
+A fresh thread can recover the full controlling position in this order:
+
+1. `CHATGPT_START_HERE.md`
+2. `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md`
+3. `archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md`
+4. `archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md`
+5. `archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md`
+6. `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`
+7. `assets/data/cam-creditor-control-criminal-lead-v1.json`
+8. `assets/data/cam-nondilution-thread-closeout-v1.json`
+9. `publication-manifests/cam-creditor-control-criminal-lead-20260823.json`
+10. this deletion audit.
+
+## 9. Final deletion condition
+
+This thread becomes **DELETION_SAFE_WITH_OPEN_EVIDENCE** when the closeout PR is merged and the dedicated `Verify PR 830 CAM non-dilution live` workflow passes against the public site with the new closeout and chronology markers.
+
+If that check fails, this audit remains blocked until the source/public mismatch is corrected. The thread must not be called deletion-safe merely because a PR was opened or merged.
