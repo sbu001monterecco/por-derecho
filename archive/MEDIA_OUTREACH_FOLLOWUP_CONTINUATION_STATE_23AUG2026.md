@@ -116,7 +116,11 @@ Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before 
 
 ## Current next action
 
-Subject to a fresh connected-Gmail response scan, proceed only to research and prepare the next distinct CANARIAS7 lane for Carmen Delia Aranda. Do not send, resend, correct, follow up or reply without fresh exact user authorisation for that specific package.
+Read `archive/CANARY_AND_SPANISH_MEDIA_TARGET_REFRESH_23AUG2026.md`.
+
+Subject to a fresh connected-Gmail response/collision scan and current public-role/routing verification, proceed only to research and prepare the Ariadna Martínez / Atlántico Hoy lane. Ramón Betancor / RTVC and Sandra Tobar / EL ESPAÑOL-Invertia follow in the research queue. Javi Rodríguez and Janire Alfaya require SER outlet-level spacing because Lourdes Santana is already sent. Manuel Riveiro is HOLD because he was named as the fallback in the Saúl package. Agustín Marco is HOLD because of extensive 2024 same-subject Gmail history plus the current Ruth Ugalde window.
+
+Do not send, resend, correct, follow up or reply without fresh exact user authorisation for that specific package.
 
 ## No autonomous send/follow-up
 
