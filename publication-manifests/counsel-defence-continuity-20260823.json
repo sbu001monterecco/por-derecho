@@ -1,0 +1,37 @@
+{
+  "id": "counsel-defence-continuity-20260823",
+  "date": "2026-08-23",
+  "status": "publication-candidate",
+  "pages": [
+    "es/actores-partes-abogados-representantes/index.html",
+    "en/actors-parties-lawyers-representatives/index.html"
+  ],
+  "entries": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5"
+  ],
+  "public_names": [
+    "Juan Tomás Parrilla Suárez",
+    "José María Betancor Álamo",
+    "Joaquín Ruiz de Infante Abella",
+    "Daniel Jiménez García",
+    "Luis Miguel López"
+  ],
+  "controls": [
+    "act-effect-causation separation",
+    "withdrawal stated reasons retained",
+    "no privilege publication",
+    "right of correction",
+    "ES/EN parity"
+  ],
+  "open_evidence": [
+    "certified Article 215.2 order and later docket",
+    "complete opposition authorship/edit history",
+    "LPB counsel payment request-response chain",
+    "complete powers venias and LexNET records",
+    "June-July 2018 document request chain"
+  ]
+}
