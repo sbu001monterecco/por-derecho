@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-ACTA-2014-08-28-CEXP",
+  "slug": "2014-08-28-cexp",
+  "date": "2014-08-28",
+  "body": "Comunidad de Explotación (CEXP)",
+  "meeting_type": "extraordinary",
+  "language": "es",
+  "status": "located-package-partial",
+  "complete_public_text": false,
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-text-edition",
+  "redacted_facsimile_available": false,
+  "source_page_images_available": false,
+  "native_page_count": null,
+  "native_page_count_status": "not-established-from-certified-native",
+  "source_variant_page_count": 3,
+  "public_pdf_page_count": 4,
+  "source": {
+    "filename": "ACTA Comunidad de Explotación (CEXP) - 2014-08-28.pdf",
+    "pages": 3,
+    "bytes": 90821,
+    "sha256": "a510106ec8c8a860ffff50575843139afffb5c2313d218edf99eb410ab56e3d2",
+    "variant_note_es": "Exportación PDF de tres páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.",
+    "variant_note_en": "Three-page PDF export of a working document. Address, identifier, nominal attendance, unit details and signatures are removed. Extracted text is not certified and has not been manually checked line by line.",
+    "additional_known_variants": [],
+    "native_publication": false
+  },
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2014-08-28-cexp/transcript-es.md",
+    "provenance": "evidence/community/actas/2014-08-28-cexp/provenance.md",
+    "redaction_log": "evidence/community/actas/2014-08-28-cexp/redaction-log.md",
+    "pdf": "assets/docs/community-actas/2014-08-28-cexp-public-redacted-es.pdf",
+    "pdf_sha256": "e42f7f8c0678e36c06d415ea1f6871d2639378f90cc6726d7bed25012a2d4d6a",
+    "pdf_pages": 4,
+    "preview_pages": [
+      "assets/evidence/community-actas/2014-08-28-cexp/page-001.webp",
+      "assets/evidence/community-actas/2014-08-28-cexp/page-002.webp",
+      "assets/evidence/community-actas/2014-08-28-cexp/page-003.webp",
+      "assets/evidence/community-actas/2014-08-28-cexp/page-004.webp"
+    ],
+    "preview_count": 4
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "privacy_scan": "pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": false
+  },
+  "redaction_categories": [
+    "bloque-nominal-o-deuda",
+    "identificador-contacto-domicilio",
+    "nombre-personal"
+  ],
+  "created": "2026-08-23"
+}

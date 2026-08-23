@@ -4,6 +4,8 @@
 **Status:** CANONICAL PUBLIC-SAFE SOURCE INDEX; NATIVE CUSTODY REMAINS IN CONNECTED SOURCE SYSTEMS UNLESS SEPARATELY EXPORTED/HASHED  
 **Scope:** authority-lineage evidence from 2011 through 2016, including ACTAS, meeting notices, post-meeting communications, litigation material, Community-debt analysis and communications concerning the Administrador Concursal.
 
+> **22-Aug-2026 completion note:** this register remains a historical 2011–2016 discovery record. Current full-source and public-artifact status is controlled by `evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md`, `evidence/community/actas/public-index.json` and `archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md`. Initial public text-edition PDFs/previews are derivatives, not source facsimiles. The 26-Apr-2016 Drive IDs `1YMnEVD…` and `1H10Rco…` have now been proved byte-identical 77-page aliases; the separate 24-page variant remains unreconciled.
+
 ## 1. Purpose
 
 This register prevents the ACTA-authority thread from depending on conversational memory. It records the concrete source family located in Gmail/Drive on 17-Aug-2026 and the evidential consequence of those sources without copying privileged/private binaries into the public repository.

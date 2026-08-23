@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-ACTA-2009-05-28",
+  "slug": "2009-05-28",
+  "date": "2009-05-28",
+  "body": "Comunidad de Propietarios",
+  "meeting_type": "ordinary",
+  "language": "es",
+  "status": "located-package-partial",
+  "complete_public_text": false,
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-text-edition",
+  "redacted_facsimile_available": false,
+  "source_page_images_available": false,
+  "native_page_count": null,
+  "native_page_count_status": "not-established-from-certified-native",
+  "source_variant_page_count": 13,
+  "public_pdf_page_count": 14,
+  "source": {
+    "filename": "ACTA Comunidad de Propietarios - 2009-05-28.pdf",
+    "pages": 13,
+    "bytes": 7682134,
+    "sha256": "1ec959c04c3b5f307eb6d2b5f96a7530fad8498f14fd89dbfb7ccf46a6ae9b1d",
+    "variant_note_es": "Copia de trabajo de trece páginas recuperada de un adjunto de correo. Se preservan acuerdos y partidas agregadas; se retiran anexos de deuda y reparto por propietario o finca. OCR no certificado y sin cotejo manual línea por línea.",
+    "variant_note_en": "Thirteen-page working copy recovered from an email attachment. Resolutions and aggregate budget lines are retained; owner or unit debt and allocation annexes are removed. OCR is not certified and has not been manually checked line by line.",
+    "additional_known_variants": [],
+    "native_publication": false
+  },
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2009-05-28/transcript-es.md",
+    "provenance": "evidence/community/actas/2009-05-28/provenance.md",
+    "redaction_log": "evidence/community/actas/2009-05-28/redaction-log.md",
+    "pdf": "assets/docs/community-actas/2009-05-28-public-redacted-es.pdf",
+    "pdf_sha256": "ec907be7479f3dba277918c2ddb773777bff36dd9dfe1d084323b0fc6dcb5013",
+    "pdf_pages": 14,
+    "preview_pages": [
+      "assets/evidence/community-actas/2009-05-28/page-001.webp",
+      "assets/evidence/community-actas/2009-05-28/page-002.webp",
+      "assets/evidence/community-actas/2009-05-28/page-003.webp",
+      "assets/evidence/community-actas/2009-05-28/page-004.webp",
+      "assets/evidence/community-actas/2009-05-28/page-005.webp",
+      "assets/evidence/community-actas/2009-05-28/page-006.webp",
+      "assets/evidence/community-actas/2009-05-28/page-007.webp",
+      "assets/evidence/community-actas/2009-05-28/page-008.webp",
+      "assets/evidence/community-actas/2009-05-28/page-009.webp",
+      "assets/evidence/community-actas/2009-05-28/page-010.webp",
+      "assets/evidence/community-actas/2009-05-28/page-011.webp",
+      "assets/evidence/community-actas/2009-05-28/page-012.webp",
+      "assets/evidence/community-actas/2009-05-28/page-013.webp",
+      "assets/evidence/community-actas/2009-05-28/page-014.webp"
+    ],
+    "preview_count": 14
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "privacy_scan": "pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": false
+  },
+  "redaction_categories": [
+    "bloque-nominal-o-deuda",
+    "finca-individual",
+    "identificador-contacto-domicilio",
+    "nombre-personal",
+    "relacion-nominal-finca-deuda-voto-firma"
+  ],
+  "created": "2026-08-23"
+}

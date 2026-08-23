@@ -5,6 +5,8 @@
 **Unredacted extraction SHA-256:** `4ba8b77315b0dca9dc735e13f08a80b82b73dd080921f2a9d73583013e2563fd`  
 **Status:** public evidential edition; not the evidential master and not a finding that any resolution was valid or invalid.
 
+> **22-Aug-2026 companion package and limit:** the document room now includes a [page-sequenced Spanish public-redacted OCR edition of a located 24-page variant](actas/2016-04-26/transcript-es.md), with a public text-edition PDF and WEBP previews. It does **not** replace or complete the separate 77-page master. Drive IDs `1YMnEVD…` and `1H10Rco…` have been verified as byte-identical aliases of that 77-page master (SHA-256 `68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec`). The generated previews are not native ACTA images or a source facsimile.
+
 ## Redaction / publication rule
 
 This edition preserves the meeting structure, dates, percentages, agenda, resolutions, named office-holders, professional advisers, representatives and institutional/corporate actors where they are materially relevant. It omits or redacts personal/professional contact details, street-level addresses, telephone/fax numbers, email addresses, DNI/NIF/CIF identifiers, bank/account identifiers and private financial detail that is not necessary to understand the governance mechanism.

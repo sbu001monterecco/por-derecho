@@ -1,0 +1,78 @@
+{
+  "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260823",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-23",
+  "current_state": "PR_OPEN",
+  "publication_control": {
+    "repository": "sbu001monterecco/por-derecho",
+    "source_branch": "control/full-actas-event-record-20260822",
+    "controlling_pr": "https://github.com/sbu001monterecco/por-derecho/pull/811",
+    "base_sha": "05f9b10a4275feeb05c17cffeaa0bb34354490df",
+    "content_commit_sha": "ea036563fb1e97c8d11e7e99d681cc526d24a61d",
+    "content_tree_sha": "2d719e974bdb1f6d1e3e7f37d889071f57af4637"
+  },
+  "subject": "Bilingual Sun Park ACTA document room, public-safe OCR text editions and event/source continuity controls",
+  "expected_routes": {
+    "es": [
+      "es/comunidad-instrumentalizacion/sala-documental-actas/index.html"
+    ],
+    "en": [
+      "en/community-instrumentalisation/acta-document-room/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md",
+    "evidence/community/actas/public-index.json",
+    "evidence/community/actas/build_public_packages.py",
+    "archive/prompts/SUN_PARK_COMPLETE_ACTAS_FACSIMILES_EVENT_LEDGER_EXECUTION_PROMPT_22AUG2026.md",
+    "archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md",
+    "assets/acta-document-room-20260822.css",
+    "assets/acta-document-room-20260822.js",
+    "sitemap-community-governance.xml",
+    "sitemap.xml"
+  ],
+  "package_state": {
+    "indexed_partial_packages": 15,
+    "received_source_variant_pages_represented": 179,
+    "public_text_edition_pdfs": 15,
+    "rendered_public_text_edition_pages": 209,
+    "complete_public_text_packages": 0,
+    "manually_source_line_verified_packages": 0,
+    "redacted_source_facsimiles": 0,
+    "redacted_source_page_image_sets": 0,
+    "artifact_kind": "public-redacted OCR-assisted text editions, not source facsimiles"
+  },
+  "publication_boundary": [
+    "Every package is located-package-partial with complete_public_text and manual_source_line_verification set false.",
+    "The PDF and WEBP artifacts are rendered text-edition derivatives, not native ACTA pages, official originals, certified copies or source facsimiles.",
+    "The image-only 5 July 2018 source remains located but unpackaged because reliable OCR/manual transcription is pending.",
+    "The referenced 10 August 2012 and 20 November 2018 originals remain unlocated in the finite searched universe.",
+    "Personal identifiers, signatures, private contact and bank data, owner-level financial rows, tax-reserved material and privileged advice are excluded from the public packages."
+  ],
+  "validation": {
+    "evidence": [
+      "Local package validator passed for 15 manifests, 15 PDFs and 209 WEBP previews: file existence, non-zero decoding, page-count parity, public derivative hashes, PDF render and automated privacy patterns.",
+      "Selected public text-edition pages were visually sampled across 2008, 2009, 2011, 2014, 2015, 2016, 2018 and 2022; this cross-year sample does not mark every per-package visual_pdf_sample_review gate complete.",
+      "Automated validation does not replace manual line-by-line comparison with each received source page."
+    ]
+  },
+  "open_evidence": [
+    "manual source-line verification for every represented page and annex",
+    "irreversibly redacted source-derived facsimiles and source-page images with hidden-text tests",
+    "complete native preservation manifests and independent custody copies",
+    "source-family and annex reconciliation, including the 24-page and 77-page 26 April 2016 records",
+    "reliable transcription/package for the image-only 5 July 2018 copy",
+    "originals for the referenced 10 August 2012 and 20 November 2018 meetings",
+    "complete notice, proxy, implementation, challenge and downstream-reliance chain",
+    "fresh-thread recovery test"
+  ],
+  "thread_deletion_audit": {
+    "status": "FAIL — NOT SAFE TO DELETE",
+    "audit_path": "archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md",
+    "reason": "Publication of an indexed partial OCR layer does not satisfy native preservation, complete manual transcription, source-facsimile, event-chain or fresh-thread recovery gates."
+  },
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "PR_OPEN records the validated content commit and controlling PR. Merge, deployment and public-edge readback are not yet claimed and must be recorded separately."
+  }
+}

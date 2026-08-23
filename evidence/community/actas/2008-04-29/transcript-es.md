@@ -1,0 +1,131 @@
+# Junta General Extraordinaria de Propietarios - 29 abril 2008
+
+**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+
+- ID: `SP-ACTA-2008-04-29`
+- Fecha de reunión atribuida: `2008-04-29`
+- Órgano: Propietarios / capa de formación de CEXP
+- Copia utilizada: `ACTA 2008 - 29 ABR (constitución CEXP por venta del Hotel).pdf`
+- Páginas fuente: 5
+- SHA-256 de la copia privada utilizada: `733b0cb9a1cc4aa84c82e58267b44a3166caa4e4cac09fff9eb3d43f5efc6897`
+- Idioma de la fuente: español
+- Estado: copia localizada / paquete público parcial
+
+## Advertencia de uso
+
+Esta es una transcripción de lectura pública derivada de OCR. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Conserva todas las páginas de la copia utilizada, pero reemplaza mediante marcadores explícitos los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, tablas privadas por propietario/finca/deuda y material potencialmente privilegiado o reservado.
+
+**Control de variante:** Copia de trabajo de cinco páginas; no es el libro diligenciado ni una copia certificada. La quinta página es una hoja notarial de legitimación/autenticación con nombres, identificadores, firmas, sello y serie, íntegramente retirada de la edición pública por privacidad.
+
+## Página fuente 1 de 5
+
+at i
+En el Hotel Iberia de Las Palmas de Gran Canaria, siendo las 18.00 horas del 29
+de abril de 2008 se rete la Junta General Extraordinaria de Propietarios de
+SUNPARK, | | convocada por correo certificado y con la antelacién y demas
+requisitos estatutarios, con el siguiente Orden del Dia: ,
+
+1°) Constitucién de la / Comunidad, de Explotacién del Complejo SUNPARK.
+Acuerdos que procedan.
+tse |
+
+2°) Ruegos y preguntas
+
+[RELACIÓN NOMINAL DE ASISTENTES Y REPRESENTACIONES REDACTADA]
+
+## Página fuente 2 de 5
+
+[CONTENIDO REDACTADO - LISTA ASISTENTES REPRESENTACIONES]
+
+Objeto de la página: Relación nominal de asistentes y representaciones; se conserva en el original privado.
+
+La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+
+## Página fuente 3 de 5
+
+[ÚLTIMO ASIENTO NOMINAL DE LA LISTA REDACTADO]
+
+Entre presentes y representados asisten a la reunion el 84,988% del total de
+propietarios de apartamentos y locales.
+
+A continuacién ge ental a examinar el Orden del Dia; eligiéndose a D. José
+Manuel Romero para presidir esta reunién, en ausencia de D. Vicente Linares.
+|
+
+2°) Constitucién de la Comunidad de Explotacién del Complejo SUNPARK.
+Acuertos que prq cedan. ,
+
+Por D. José M omero, en primer lugar, y después con diversas
+intervenciones de, D tilio Rodriguez, D. José Miguel Bravo de Laguna se
+exponen las raz
+libremente lo. a
+Sunpark, que’ ‘pueda sustituir a Montelanza, S.L. en dicha explotacién, antes de
+que se ejecute la opcion de venta que esta en vigor con VICTORY PROPERTIES y
+que qued6 acordada en fa Junta General de Propietarios del pasado 18 de febrero
+de este mismo: afio.
+
+Se plantean diversas cuestiones por D. Carmelo Marrero y por D. Sebastian
+Molina Petit y D ‘Agustin: Calzada, que muestran sus reparos’a dicha constituci6n.
+
+En definitiva, y aunque ste es un proceso complejo, se estima por muchos de
+los asistentes conveniente constituir esta COMUNIDAD DE EXPLOTACION que
+pueda subrogarse en la explotacién que hasta ahora ha realizado MONTELANZA
+S.L. con la intencién de evitar que si se ejecuta la opcién prevista con Victory
+Properties los propietarios que vendan no sigan asumiendo, por sus
+‘participaciones sociales en MONTELANZA S.L., los riesgos empresariales de tal
+explotacion, sino que és s, se asuman por los nuevos compradores, teniendo en
+cuenta ademas que | | propia Montelanza S.L. también enajenara la parte
+correspondie t de los locales.
+
+Se trata, en todo caso, de un proceso abierto, en que no se obliga a nadie a
+participar en est nunidad de Explotacién y que, en todo caso, se llevara a
+‘ejecucién con todos los requisitos legales de subrogacién de empresas y con
+garantias plenas para los trabajadores del complejo, que continuaran prestando
+sus servicios 0 seran indemnizados después de la venta.
+[FIRMA, SELLO O DILIGENCIA DE FIRMA REDACTADA]
+SOBRE UN FOLIO DE PAPEL TIMBRADO
+3 HOMERO ZROASROLS
+
+## Página fuente 4 de 5
+
+Sometido este burtto a yotaci6n, votan a favor de tal constitucién propietarios
+que representan el 74. 90% del Complejo, y en contra o reservandose su decisién
+para mas adelante el 10. 01%, y por ello no participan en esta constitucién.
+
+Seguidamente se | pe un proyecto de Estatutos, y tras dicha lectura se aprueban
+con igual porcentaje, esto es, el 74,90% de los propietarios del “complejo,
+presentés ce) repiesentadge, quedando incorporados a este Acta como anexo.
+
+A continuacion sé t la eleccidn de Presidente, Tesorero y Secretario de la
+Junta Rectora prevista en el art. 14 de los Estatutos y recae esta eleccién en D.
+Fco. José Machado Codesido, D. Atilio Rodriguez y D. José Miguel Bravo de
+Laguna,’ actuando estos dos Ultimos en nombre y de HURIAMEN S.L. y
+REALIZACIONES MADRESELVA CANARIAS, S.L. respectivamente. Presentes los
+indicados, aceptan SUS cargos.
+
+Va
+Por ultimo se acue da por la Junta de Propietarios, en ese porcentaje del 74,90%
+expresamente feeaiter a la Junta Rectora a celebrar los contratos precisos con
+MONTELANZA S.L. |pare la cesién del contrato de explotacié6n a que se ha hecho.
+pererene
+
+2°) No hay mas ruegos ni preguntas. a
+i but
+i rit
+
+3°) Redactada y leida el Acta de la reunién es aprobada por unanimidad de los
+asistentes, de lo qu eda fe el Secretario, con el V° B° del Presidente.
+Hib
+
+Se levanta la sesion siendo las 19.15 horas del dia sefialado.
+
+EXPEDIDO TESTIMONIG OF LEGITIMACION
+[FIRMA, SELLO O DILIGENCIA DE FIRMA REDACTADA]
+
+evar
+SOBRE UN FOLIO OF PAPEL TIMBRADO
+nOMERO SIROTA
+
+## Página fuente 5 de 5
+
+[PÁGINA DE LEGITIMACIÓN/AUTENTICACIÓN NOTARIAL ÍNTEGRAMENTE REDACTADA - CONTIENE NOMBRES, IDENTIFICADORES, FIRMAS, SELLO Y SERIE. LA PÁGINA FUENTE PERMANECE CONTABILIZADA EN LA COPIA PRIVADA.]

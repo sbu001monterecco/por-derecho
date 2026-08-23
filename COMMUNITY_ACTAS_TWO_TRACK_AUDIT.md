@@ -5,6 +5,8 @@
 **Public-page relationship:** supplements `en/community-instrumentalisation/`, `en/community-instrumentalisation/minutes-2011-2022/` and the Spanish equivalents. It does not replace the primary-source chronology already published there.  
 **Naming control:** “capture” remains an attributed/audit hypothesis to be proved, not the evidential label for the record itself.
 
+> **22-Aug-2026 source-status update:** use `evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md` for the current finite source inventory and public-artifact status. In particular, the 18-May-2018 source directly lists a `0.385%` vote-eligible entry under its stated filter; authenticity, debt basis, denominator and legal effect remain open. Initial public text-edition PDFs/previews are derivatives, not source facsimiles.
+
 ## 1. Purpose
 
 This memorandum preserves the current audit hypothesis that the Sun Park record should be reconstructed on **two parallel governance tracks**, with a third successor phase after the 2022 ownership change:
@@ -43,7 +45,7 @@ This is an **audit hypothesis**, not an adjudicated conclusion. The decisive que
 | 2016 PwC / Jonathan Simó work | evidential overlay | Contemporaneous email chain expressly concerns **“cuentas de comunidad soportadas por la explotadora.”** Accounting analysis was commissioned around the 26 Apr 2016 meeting. | Strong contemporaneous pedigree for cost-bearing/double-charge question. |
 | 12 Jun 2017 | A | Further disputed-lineage minute. Around the same period, 2008 statutes/contract/29 Apr 2008 minute were supplied to Cuatrecasas to challenge the Community position. | Reconcile original, proxies, voting and debt. |
 | 2017 signed CEXP record | B / exploitation | Separate exploitation-side governance record. | Do not treat as CP minute. |
-| **18 May 2018** | **A** | Major control/security-era minute. A contemporaneous legal calculation reportedly reduced supporting ownership vote to about 0.385%; this percentage is **not adopted as fact until reconstructed finca-by-finca**. | **Priority 1.** Exact denominator, proxies, title and voting entitlement. |
+| **18 May 2018** | **A** | Major control/security-era minute. The fetched primary-copy text lists only the Amenen/Shaila Cogolludo `0.385%` entry as vote-eligible under the stated payment filter. That is a documentary description, not acceptance of the debt, denominator, authority or legal effect. | **Priority 1.** Exact denominator, proxies, title, debt basis, source-version authentication and voting entitlement. |
 | **7 Jun 2018** | downstream physical-control event | Clearest presently documented physical take-possession/access event: demands concerning keys/access/clients, followed by lock/chain/security/service changes. Existing live dossier correctly distinguishes this from a judicial possession/eviction order in CAM’s favour. | **Critical causal bridge, not itself a Community minute.** |
 | **5 Jul 2018** | A | Important because the minute/authority was reportedly relied upon operationally in connection with access/opening locks and Guardia Civil context. | Obtain literal original and trace every downstream reliance. |
 | 20 Nov 2018 | A | Continuation/implementation of post-takeover governance architecture. | Reconstruct original and downstream uses. |
