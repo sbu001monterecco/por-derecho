@@ -207,6 +207,7 @@ jobs:
                 }
                 if (!response || response.status() !== 200) failures.push(`HTTP ${response ? response.status() : 'none'}`);
                 const selector = `[data-source-of-funds-notice="${target.variant}"] .sfn--${target.variant}`;
+                await page.locator(`[data-source-of-funds-notice="${target.variant}"]`).scrollIntoViewIfNeeded();
                 await page.locator(selector).waitFor({ state: 'visible', timeout: 45000 });
                 const rootCount = await page.locator('[data-source-of-funds-notice]').count();
                 if (rootCount !== 1) failures.push(`notice roots=${rootCount}`);

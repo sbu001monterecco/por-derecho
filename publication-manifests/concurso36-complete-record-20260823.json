@@ -160,7 +160,7 @@
     "status": "LOCAL_VALIDATION_PASSED",
     "completed_at_utc": "2026-08-23T00:00:00Z",
     "catalog_sha256": "fc9407913489fe65ea13b44fe7cbfb0d2176162241f20ca2b7051823de5b0867",
-    "reviewed_release_files": 112,
+    "reviewed_release_files": 113,
     "evidence": [
       "validate_concurso36_complete_record.py: PASS — 127 canonical records, 8 source-copy links and 12 controlled gaps",
       "validate_concurso36_primary_autos_redigest.py: PASS — 11 pinned public derivatives and 12 canonical register entries",
@@ -190,10 +190,11 @@
   },
   "release_file_inventory": {
     "base_sha": "448beb21f195a266a44f02f2d8ea2b619bd2c9d2",
-    "count": 112,
+    "count": 113,
     "paths": [
       ".github/workflows/validate-concurso36-complete-record.yml",
       ".github/workflows/validate-concurso36-primary-autos-redigest.yml",
+      ".github/workflows/verify-source-of-funds-notice-live.yml",
       "README.md",
       "archive/ALBERTO_LOPEZ_VILLARRUBIA_SIGNED_ACTS_AND_KNOWLEDGE_REGISTER_17AUG2026.md",
       "archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md",
