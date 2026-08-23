@@ -8,6 +8,51 @@ Read this file before relying on prior-chat memory. Then inspect current `main`,
 
 This file is an operational synthesis, **not primary evidence and not a contract**. Where this synthesis conflicts with a later signed instrument or primary source, the later/primary source controls.
 
+## Mandatory scope and project-hierarchy gate
+
+**This is a specialist transaction handoff. It is not the root Project Sun Rock / Por Derecho handoff and must never be used as a substitute for the repository's unitary legal, evidential and recovery reconstruction.**
+
+For every future thread touching San Bernardo, the correct order is:
+
+1. `CHATGPT_START_HERE.md`;
+2. `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md`;
+3. `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`;
+4. current corrections, missing-evidence controls and the specialist legal/evidential ledger relevant to the task;
+5. **only then** this San Bernardo transaction handoff where the proposed acquisition is actually relevant.
+
+### Whole-project perspective
+
+The repository and principal website are primarily a **living evidence, recovery, restitution and accountability system around the Sun Park / MYND Yaiza economic platform and the legally distinct rights affected by its history**. The controlling strategic parent remains recovery/restoration across the correct claimants and legal routes, with accountability serving that recovery and criminal/disciplinary consequences treated separately and only where independently supported.
+
+The core reconstruction runs, at a high level, through:
+
+`mixed title / one hotel economy -> Community/CEXP authority and operation -> banking package and enforcement -> LPB-only Concurso 36/2012 -> credit assignments and creditor standing -> material access/control disputes -> works, valuation and commercialisation -> judicial competition/adjudication/implementation -> deed/Registry/accounting -> HNT/RICPE/MYND, financing/public-support and hotel-income layers -> appeals, institutional review, asset tracing, restitution and damages`.
+
+Permanent perimeter rules include:
+
+- LPB was the sole debtor in Concurso 36/2012; the proceeding did not automatically absorb the whole mixed-ownership hotel, CEXP, Matkator, Aweswell, other owners or every hotel income/right;
+- economic unity does not mean unity of title, claimant or legal authority;
+- creditor rights, ownership of isolated units, Community office, security/access authority, operating rights, insolvency powers and later title are different legal capacities;
+- later adjudication, registration, financing or operation does not by itself prove earlier authority or illegality;
+- allegations of criminal conduct, de facto control, institutional omission or coordination remain actor-specific and evidence-led and must not be converted into adjudicated guilt;
+- the recovery objective may be whole-platform in economic ambition while every asset, claimant, cause of action, loss and remedy remains legally separated to avoid overreach and double recovery.
+
+The public homepage correctly puts the Sun Park recovery/evidence case first: it leads readers through the case in 60 seconds, legal perimeters, creditor chain, Community/governance, judicial implementation, later investment/public-support layers and recovery routes. That hierarchy should not be displaced merely because a specialist thread happens to concern a future property acquisition.
+
+### Where Por Derecho and San Bernardo fit
+
+The repository currently separates three concepts that must remain distinct:
+
+1. **Project Sun Rock** — the living Sun Park evidence/recovery case and its connected legal, patrimonial, institutional and accountability work;
+2. **Por Derecho** — a proposed separate, generalisable public-interest methodology/institutional initiative inspired in part by lessons from the case, but whose legitimacy does not depend on acceptance of the merits of any Sun Park allegation;
+3. **San Bernardo 27 / Palacete Por Derecho** — one proposed future acquisition and possible physical home for that initiative **only if the acquisition completes**.
+
+San Bernardo therefore sits downstream/alongside the principal legal matter. It is not the centre of the repository, not part of the existing Sun Park recovery estate or claim perimeter, not evidence of the merits of the Sun Park case and not a reason to reshape the wider site around the transaction.
+
+A seller-facing San Bernardo page is necessarily property-focused because of its audience. Do not generalise that narrow audience framing into the architecture of the whole website or repository. Equally, do not burden seller/family communications with the full legal dispute merely to prove that the wider project is larger.
+
+Nothing about a seller, family member, intermediary, adviser or transaction participant's receipt of Project Sun Rock / Por Derecho context proves endorsement, adoption, knowledge of underlying evidential propositions, support for proceedings or agreement with allegations.
+
 ## Controlling transaction status
 
 Use this formulation unless the evidence changes:
@@ -157,10 +202,11 @@ The material operational conclusions from the thread that produced this handoff 
 - current acquisition-not-completed framing;
 - PR #828 / live-page state;
 - Manuel/IZADI and David/IZADI routing/status distinctions;
-- Carlos/Igancio anticipated post-summer coordination;
+- Carlos/Ignacio anticipated post-summer coordination;
 - the seller/family reader framing;
 - privacy rule for raw WhatsApp;
-- no-send-without-final-authorisation rule.
+- no-send-without-final-authorisation rule;
+- the whole-project scope correction: San Bernardo is a specialist future-acquisition track subordinate to the controlling Sun Park recovery/evidence architecture.
 
 **What is deliberately not duplicated here:** the full private WhatsApp transcript and casual personal details. Those should remain with the original messaging source/export rather than being republished in a public GitHub repository.
 
@@ -172,8 +218,9 @@ For any future thread substantially touching San Bernardo 27, Palacete Por Derec
 
 1. inspect current `main`;
 2. read `CHATGPT_START_HERE.md`;
-3. read this file in full;
-4. inspect the current seller/public Palacete pages rather than relying on screenshots or old chat text;
-5. retrieve the relevant Gmail/Drive/WhatsApp primary source where the proposition matters;
-6. distinguish current ownership, negotiation, contract and completion status;
-7. update this handoff when a material transaction milestone occurs.
+3. read `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md` and `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md` so the specialist transaction remains in whole-project perspective;
+4. read this file in full;
+5. inspect the current seller/public Palacete pages rather than relying on screenshots or old chat text;
+6. retrieve the relevant Gmail/Drive/WhatsApp primary source where the proposition matters;
+7. distinguish current ownership, negotiation, contract and completion status;
+8. update this handoff when a material transaction milestone occurs.
