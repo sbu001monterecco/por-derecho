@@ -89,8 +89,7 @@
             alt: 'PwC five-actor and Acosta Matos 2016 professional knowledge checkpoint graphic',
             caption: 'PwC · five actors + IA · open the 15–26 April 2016 chain',
             href: new URL('../en/evidence-pwc-sun-park-meeting-21-april-2016/#sequence', base).href,
-            ariaLabel: 'PwC 2016 professional-knowledge checkpoint. The client made the penal-route decision and PwC acknowledged it; this is not an independent PwC finding that any named person committed an offence. Open the complete 15–26 April 2016 chain.',
-            loading: 'lazy'
+            ariaLabel: 'PwC 2016 professional-knowledge checkpoint. The client made the penal-route decision and PwC acknowledged it; this is not an independent PwC finding that any named person committed an offence. Open the complete 15–26 April 2016 chain.'
           }
         ]
       : [
@@ -104,8 +103,7 @@
             alt: 'Gráfico PwC, cinco actores y Acosta Matos sobre el punto de conocimiento profesional de 2016',
             caption: 'PwC · cinco actores + AC · abrir cadena 15–26 abril 2016',
             href: new URL('../es/evidencia-pwc-junta-sun-park-21-abril-2016/#secuencia', base).href,
-            ariaLabel: 'Punto de conocimiento profesional PwC de 2016. El cliente decidió e instruyó seguir la vía penal y PwC acusó recibo; no es una conclusión independiente de PwC de que una persona nombrada cometiera delito. Abrir la cadena completa de 15–26 abril 2016.',
-            loading: 'lazy'
+            ariaLabel: 'Punto de conocimiento profesional PwC de 2016. El cliente decidió e instruyó seguir la vía penal y PwC acusó recibo; no es una conclusión independiente de PwC de que una persona nombrada cometiera delito. Abrir la cadena completa de 15–26 abril 2016.'
           }
         ];
     const intro = document.createElement('header');

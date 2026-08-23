@@ -16,8 +16,17 @@ required = {
         "El título del programa identifica a Enrique Guerra como invitado",
         "section.interview-evidence",
         "pdSanTelmoAttribution",
+        "pd:san-telmo-attribution-ready",
         "/por-derecho/en/san-telmo-ricpe-sun-park/",
         "/por-derecho/es/san-telmo-ricpe-sun-park/",
+    ],
+    "assets/audience-experience-order-20260823.js": [
+        "section.interview-evidence[data-pd-san-telmo-attribution=",
+        "audienceProtectedSanTelmo",
+        "sanTelmoAttributionVisible",
+        "sanTelmo.classList.add('shell')",
+        "placeAfter(sanTelmo, sourceFunds || fullRecord)",
+        "pd:san-telmo-attribution-ready",
     ],
     "en/index.html": [
         '<section class="interview-evidence"',
@@ -48,6 +57,8 @@ required = {
         "staleTextAbsent",
         "primarySourceLink",
         "RENDERED_DOM_LIVE_VERIFIED",
+        "visibleOutsideCollapsedRecord",
+        "directChildOfMain",
     ],
     ".github/workflows/verify-san-telmo-rendered-attribution-live.yml": [
         "Verify rendered English and Spanish homepage attribution",
