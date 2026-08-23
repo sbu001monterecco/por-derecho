@@ -21,14 +21,59 @@ Do not rely on chat memory and do not infer silence.
 - Joaquín Gil / EL PAÍS — `SENT + VERIFIED / AWAITING RESPONSE`.
 - Salvador Hernández / Biosfera Digital — `SENT + VERIFIED / AWAITING RESPONSE`.
 - Alfonso Canales Segovia / Crónicas de Lanzarote — `SENT + VERIFIED / AWAITING RESPONSE`.
+- Carlos Molina / Cinco Días — `SENT + VERIFIED / AWAITING RESPONSE`.
 
-For each recipient, read the corresponding preparation/sent record and then re-read connected Gmail before any follow-up.
+For Carlos Molina read:
+- `archive/CINCO_DIAS_CARLOS_MOLINA_PREPARATION_RECORD_23AUG2026.md`;
+- `archive/CINCO_DIAS_CARLOS_MOLINA_SENT_VERIFICATION_23AUG2026.md`.
 
-## Latest response scan
+For every recipient, re-read connected Gmail before any follow-up.
 
-A fresh connected-Gmail scan at the start of the post-local specialist wave found **NO RESPONSE LOCATED YET** from the active media set.
+## Latest verified Carlos Molina send
 
-Use only that wording. Silence is not evidence of reading, rejection, non-delivery, interest or editorial decision.
+The stored Carlos Molina / Cinco Días draft was sent once and read back from the actual sent copy.
+
+Verified routing:
+- To: official Cinco Días newsroom route;
+- Cc: current Empresas editor route;
+- Bcc: none.
+
+Verified subject:
+
+`A la atención de Carlos Molina — Canarian Hospitality / MYND Yaiza: crecimiento 2026 frente a 54/190/18 y due diligence pendiente`
+
+Verified mandatory media core:
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
+- `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes;
+- San Telmo webinar at approximately 08:08;
+- current Por Derecho routes;
+- adverse/contrary evidence and explicit evidential limitations.
+
+The package expressly superseded the older generic Cinco Días 2024–25 broad framing and used Carlos's 2025–2026 Canarian Hospitality growth reporting as the current business/hotel-investment hook.
+
+## Current response rule
+
+Before any follow-up or new-recipient send, run a fresh connected-Gmail scan.
+
+If no new message is found, use only:
+
+`NO RESPONSE LOCATED YET`.
+
+Do not translate silence into rejection, reading, delivery failure, acceptance or editorial decision.
+
+Classify any inbound narrowly as:
+- `SUBSTANTIVE EDITORIAL RESPONSE`;
+- `REQUEST FOR PRIMARY SOURCES`;
+- `REQUEST FOR CALL / INTERVIEW`;
+- `CORRECTION / CHALLENGE`;
+- `ROUTING / WRONG PERSON`;
+- `ACKNOWLEDGEMENT ONLY`;
+- `OUT-OF-OFFICE`;
+- `BOUNCE / DELIVERY FAILURE`;
+- `REFUSAL / NO INTEREST`;
+- `OTHER — DESCRIBE EXACTLY`.
+
+A response does not itself authorise a reply.
 
 ## Immediate HOLDs / timing limits
 
@@ -40,49 +85,7 @@ Do not immediately re-contact:
 - Jochen Eversmeier / fvw — 22-Aug out-of-office through 24-Aug;
 - Diego Sánchez de la Cruz / Civismo-related routing — recent-contact HOLD.
 
-Reassess those lanes only after elapsed working time, a substantive reply or materially new source.
-
-## Prepared but unsent state
-
-### Carlos Molina / Cinco Días
-
-`PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`
-
-Current public Cinco Días material identifies Carlos Molina as an Empresas journalist specialising in hotels, tour operators, travel agencies and airlines. His author page remains active in August 2026.
-
-Controlling recipient-specific hooks:
-
-- 10-Nov-2025 Carlos Molina report on Canarian Hospitality's planned portfolio growth, its genesis with Grupo Acosta Matos and the account that the new gestora began with three assets;
-- 4-Feb-2026 Carlos Molina report on the gestora's ninth Canary Islands hotel and a new five-star Playa Blanca project promoted with Acosta Matos and Canary investors.
-
-Connected Gmail also located generic Cinco Días newsroom mailings from Dec-2024 and Jan-2025 containing much broader `coordinated network / €100m+ fraud` language. The new Carlos package expressly supersedes that framing methodologically and asks him not to inherit it.
-
-No prior direct Carlos Molina correspondence was located.
-
-No verified direct Carlos work address was located. Prepared routing therefore uses the current official Cinco Días newsroom address as `To` and the current Empresas editor route as limited `Cc`, naming Carlos in the subject/opening.
-
-Prepared subject:
-
-`A la atención de Carlos Molina — Canarian Hospitality / MYND Yaiza: crecimiento 2026 frente a 54/190/18 y due diligence pendiente`
-
-Prepared architecture:
-
-`Canarian Hospitality 2025-2026 growth / current Playa Blanca investment`
-→ `MYND Yaiza as one of the original project assets`
-→ `fragmented Sun Park title / LPB majority / third-party units / separate exploitation`
-→ `54-CAM provenance and purchaser-knowledge questions`
-→ `2018 material-control transition + adverse provisional dismissal retained`
-→ `pre-title Lava Verde / pilot / Club Sei / Meeting Point preparation`
-→ `Nov-2020 integrated ownership/control representation`
-→ `Jul-2021 internal 54 CAM / 190 LPB / 18 terceros + future/conditional title + unsigned LOI + incomplete DD`
-→ `HNT / MYND / RICPE / RIC / GC836 / EU-support chain`
-→ `current Canarian Hospitality expansion / new investor-facing narrative`.
-
-The draft contains both mandatory Spanish PNGs with expected byte sizes, direct San Telmo webinar, current Por Derecho routes, both Carlos-authored article links, adverse evidence and express limitations.
-
-Read `archive/CINCO_DIAS_CARLOS_MOLINA_PREPARATION_RECORD_23AUG2026.md` before any action.
-
-Do not send until Gil gives fresh exact final authorisation. Any material edit resets approval.
+Reassess only after elapsed working time, a substantive reply or materially new source.
 
 ## Current unitary story core
 
@@ -126,9 +129,17 @@ For `54 CAM`, also apply `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA
 
 ## Current next action
 
-Present the exact Carlos Molina / Cinco Días package for final approval. If approved without material change, send that exact stored Gmail draft once and read back the actual sent copy.
+The prior local-media and current Carlos Molina specialist steps are complete.
 
-After any verified Carlos send, run a fresh response scan before choosing the next specialist/wider-reach lane. Do not automatically move to recently contacted or out-of-office recipients.
+Before selecting the next recipient:
+1. run a fresh Gmail response scan across all active recipients;
+2. re-read the media register and recipient-fit playbook;
+3. consider elapsed-time HOLDs and out-of-office states;
+4. choose the next unsent specialist or wider-reach recipient based on story fit and what has materially changed;
+5. prepare and read back the exact package;
+6. obtain fresh exact final authorisation before any send.
+
+Do not automatically send to a recently contacted or out-of-office recipient.
 
 ## New-thread trigger alias
 
