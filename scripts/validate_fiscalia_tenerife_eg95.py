@@ -63,7 +63,7 @@ checks = {
     "archive/public_office_communications/fiscalia_tenerife/2026-08-21_EG95/2026-08-21__FISCALIA_TENERIFE__EG_95_2026__CONTROLLED_TRANSCRIPTION_AND_FULL_ENGLISH_TRANSLATION.md": [
         "EXPEDIENTE GUBERNATIVO",
         "ADMINISTRATIVE/GOVERNANCE FILE",
-        "DIP 7, 12 and 20/2026",
+        "opened under numbers 7, 12 and 20/2026",
     ],
     "robots.txt": ["sitemap-fiscalia-tenerife.xml"],
 }
