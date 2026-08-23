@@ -18,6 +18,8 @@ on:
       - 'sitemap.xml'
       - 'sitemap-criminal-engineering.xml'
       - 'publication-manifests/cam-creditor-control-criminal-lead-20260823.json'
+      - 'deployment-probes/cam-creditor-control-criminal-lead-20260823.json'
+      - 'docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md'
       - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
   push:
@@ -38,6 +40,8 @@ on:
       - 'sitemap.xml'
       - 'sitemap-criminal-engineering.xml'
       - 'publication-manifests/cam-creditor-control-criminal-lead-20260823.json'
+      - 'deployment-probes/cam-creditor-control-criminal-lead-20260823.json'
+      - 'docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md'
       - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - '.github/workflows/validate-cam-creditor-control-criminal-lead.yml'
   workflow_dispatch:
