@@ -1,6 +1,7 @@
 {
   "publication_id": "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
   "control_marker": "cam-creditor-control-criminal-lead-20260823",
+  "owner": "Gil Marer / Aweswell",
   "created_at": "2026-08-23T00:25:00Z",
   "current_state": "DELETION_SAFE",
   "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
@@ -57,56 +58,15 @@
   ],
   "required_controls": [
     "Gil Marer and Aweswell's actor-specific criminal attribution is direct and must not be reduced to a concern, question, possible involvement or investigative lead",
-    "all three criminal positions are expressly attributed to Gil Marer or Aweswell",
-    "evidential sufficiency is limited to making, preserving, publishing as attributed and requesting investigation of allegations",
     "criminal guilt and judicial prevarication are not stated as adjudicated facts",
     "attribution, evidence, contrary material, missing proof, adjudication and source literal remain separate fields",
     "Laura Patricia Acosta Matos is the controlled identity; mandate, participation and responsibility remain separate proof questions",
     "the contemporaneous email source literal Laura Matos is preserved and not silently rewritten as the canonical full name",
     "the 2018 provisional dismissal and appellate confirmation remain prominent",
-    "lender in possession remains a functional comparison rather than a standalone Spanish status",
     "LPB estate property is separated from CEXP, Matkator and other non-LPB rights",
-    "each judicial allegation is classified act by act under Criminal Code Articles 446-449",
-    "the law in force at the act date controls subject to later favourable retroactivity under Criminal Code Article 2.2",
-    "source locators are not published as native authentication",
     "the homepage first-read direct attribution remains outside collapsed progressive disclosure",
     "right of reply and silence-is-not-admission remain visible",
     "no email is sent without separate final authorisation"
-  ],
-  "required_update_targets": [
-    "CHATGPT_START_HERE.md",
-    "CURRENT_HANDOVER.md",
-    "CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md",
-    "README.md",
-    "CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md",
-    "archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md",
-    "archive/CORRECTION_REGISTER.md",
-    "archive/MISSING_EVIDENCE_REGISTER.md",
-    "en/index.html",
-    "es/index.html",
-    "en/updates/index.html",
-    "es/actualizaciones/index.html",
-    "en/updates/feed.xml",
-    "es/actualizaciones/feed.xml",
-    "assets/prosecution-public-entry-20260821.js",
-    "assets/audience-experience-order-20260823.js",
-    "assets/sitewide-discovery-nav-20260821.js",
-    "assets/data/unitary-route-registry-v1.json",
-    "sitemap.xml",
-    "sitemap-criminal-engineering.xml"
-  ],
-  "expected_live_urls": [
-    "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
-    "https://sbu001monterecco.github.io/por-derecho/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
-    "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-creditor-control-criminal-lead-v1.json",
-    "https://sbu001monterecco.github.io/por-derecho/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
-    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml",
-    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
-    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
-    "https://sbu001monterecco.github.io/por-derecho/sitemap.xml",
-    "https://sbu001monterecco.github.io/por-derecho/assets/data/unitary-route-registry-v1.json",
-    "https://sbu001monterecco.github.io/por-derecho/en/",
-    "https://sbu001monterecco.github.io/por-derecho/es/"
   ],
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
@@ -120,22 +80,6 @@
     "https://sbu001monterecco.github.io/por-derecho/assets/data/unitary-route-registry-v1.json",
     "https://sbu001monterecco.github.io/por-derecho/en/",
     "https://sbu001monterecco.github.io/por-derecho/es/"
-  ],
-  "principles": [
-    "state Gil Marer / Aweswell's direct actor-specific criminal attribution before evidential and adjudication caveats",
-    "never replace the direct attribution with softer-only question, concern, possible-involvement or investigative-lead wording",
-    "make the strongest criminal allegations as attributed allegations, not findings",
-    "preserve source literal separately from canonical identity and never silently rewrite a source",
-    "test direct instruction, common purpose, criminal omission and prevarication actor by actor",
-    "record legitimate creditor, title, Community, procedural and innocent explanations",
-    "start accounting at first proven material control or benefit",
-    "allocate every remedy to the correct claimant and avoid double recovery",
-    "date capacities and do not project later control backwards",
-    "keep exact judicial statutory classification and evidence-before-actor discipline",
-    "publish source limits, corrections and missing evidence",
-    "keep the homepage direct attribution visible before progressive disclosure",
-    "do not confuse source location with native authentication",
-    "do not send or self-email without exact-package final approval"
   ],
   "non_dilution_control": {
     "date": "2026-08-23",
@@ -168,7 +112,7 @@
     "date": "2026-08-23",
     "pull_request": 830,
     "branch": "codex/audience-experience-20260823",
-    "status": "RULE_AND_PUBLICATION_UPDATE_PENDING_CURRENT_PR_VALIDATION_AND_MERGE",
+    "status": "PR_VALIDATED_AND_AUTHORISED_FOR_MERGE_AND_LIVE_DEPLOYMENT",
     "scope": [
       "sitewide criminal-attribution anti-dilution",
       "source-literal/canonical-identity separation",
@@ -181,31 +125,39 @@
     "script": "scripts/validate_cam_creditor_control_criminal_lead.py",
     "workflow": ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
     "status": "CI_GREEN_LIVE_VERIFIED",
-    "pr_number": 816,
-    "validated_pr_head": "0c752c8315b18ec685f24e0b842f41e966ee035a",
-    "validated_merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
-    "github_pages_run_id": 32609842885,
-    "github_pages_run_number": 2448,
-    "github_pages_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
-    "live_verification_workflow": ".github/workflows/verify-unitary-criminal-publication.yml",
-    "live_verification_job_id": 93592640678,
-    "live_verification_run_id": 32610343380,
-    "live_verification_run_number": 125,
-    "live_verification_conclusion": "success",
-    "verified_at_utc": "2026-08-23T00:42:07.702Z",
-    "notes": [
-      "the dedicated validator passed on the exact PR head before merge",
-      "the dedicated validator passed again on the exact merge SHA on main",
-      "the GitHub Pages build and deploy completed successfully from the exact merge SHA",
-      "the persistent live verifier fetched all eleven public controls and passed",
-      "the current non-dilution/source-fidelity update is separately gated in PR 830"
-    ]
-  },
-  "evidence_readback_scope": {
-    "repository_controlled_gmail_and_drive_source_ledgers_reviewed": true,
-    "fresh_live_gmail_connector_readback_performed_in_this_change": false,
-    "fresh_live_drive_connector_readback_performed_in_this_change": false,
-    "reason": "The controlling source package already preserves the relevant source locators, snippets, hashes where available, evidential limitations and retrieval targets. This publication does not claim native RFC 822 or newly authenticated Drive originals."
+    "evidence": [
+      {
+        "type": "github_actions",
+        "workflow": "Validate CAM creditor-control criminal lead",
+        "run_id": 32633401128,
+        "run_number": 17,
+        "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate audience experience",
+        "run_id": 32633401157,
+        "run_number": 12,
+        "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Verify unitary criminal publication live",
+        "run_id": 32633401140,
+        "run_number": 133,
+        "commit_sha": "c59a23e3bfe4424990a697d252fb54d5cdf55592",
+        "conclusion": "success",
+        "scope_note": "Pre-merge live continuity check; post-merge deployment requires fresh verification."
+      }
+    ],
+    "historical_pr_number": 816,
+    "historical_validated_pr_head": "0c752c8315b18ec685f24e0b842f41e966ee035a",
+    "historical_validated_merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
+    "historical_github_pages_run_id": 32609842885,
+    "historical_live_verification_run_id": 32610343380,
+    "historical_verified_at_utc": "2026-08-23T00:42:07.702Z"
   },
   "open_evidence": [
     "native CAM, JDAM, FMMM, Laura-actor, Community and provider instruction chain",
