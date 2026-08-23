@@ -24,15 +24,23 @@ Open and execute:
 
 `archive/FUTURE_THREAD_EXECUTE_PR804_21APR2016_EMAIL_SOURCE_HASH_APPROVAL_23AUG2026.md`
 
-Objective: close the native-source/hash/current-main/privacy/render gaps and return PR #804 to a genuinely approval-ready state. **Do not merge or publish PR #804 without Gil's fresh exact final approval of the final diff.**
+Also read the source advance:
 
-### P0 — REGAGE receipt classification
+`archive/PR804_21APR2016_GMAIL_SOURCE_STATUS_ADDENDUM_23AUG2026.md`
+
+A fresh Gmail rescan has now located a provider-backed later forward preserving the full represented 21 April 2016 reply chain, plus a distinct provider-backed 18 April carrier with the five substantive PDFs. This materially narrows the source gap. It **does not** recover the original 2016 SMTP/MIME object and does not prove that the Administrator received/read the five PDFs before replying.
+
+Objective: hash/reconcile the located source family, search for a still-better original 2016 message object, rebase to current `main`, rerun privacy/source/render gates, and return PR #804 to a genuinely approval-ready state. **Do not merge or publish PR #804 without Gil's fresh exact final approval of the final diff.**
+
+### P0 — REGAGE submission/package classification
 
 Open and execute:
 
 `archive/FUTURE_THREAD_EXECUTE_REGAGE26E00074403517_CLASSIFICATION_23AUG2026.md`
 
-Objective: identify the destination, exact submitted package, attachments and subsequent routing for `REGAGE26e00074403517` from primary evidence. Until bridged, keep it as `RECEIPT LOCATED / DESTINATION AND PACKAGE UNCLASSIFIED`.
+The connected automated Registro Electrónico General email now supports that an electronic registration request was **submitted under** `REGAGE26e00074403517`. The email has no attachments and does not identify the destination, exact package or routing.
+
+Objective: recover the official receipt/Carpeta Ciudadana detail, destination, exact submitted package, attachments and subsequent routing from primary evidence. Until bridged, use `SUBMISSION CONFIRMATION LOCATED / DESTINATION AND PACKAGE UNCLASSIFIED`.
 
 ### P0 — ACTA native/source-line completion
 
