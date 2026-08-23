@@ -22,7 +22,8 @@ Do not publish private email addresses, personal telephone numbers, Gmail messag
 |---|---|---|---|---|
 | **Lourdes Santana Navarro** | **PRISA Media / Cadena SER Canarias** | Senior Canary Islands journalist/editorial manager; public-interest, economic and tourism relevance | Canarias / Spanish | Track professional context only here. |
 | **Silvia Fernández Díaz** | **CANARIAS7** | Economics/RIC/business journalist; authored 24-Jan-2020 RIC Private Equity launch article and continues to write on RIC/economics | Canarias / Spanish | Strong editorial-traceability fit for 2020 RICPE launch → later Yaiza hotel materialisation → 54/190/18/DD chronology. Article/source use is not proof of prior knowledge of internal title evidence. |
-| **Javier Sheng Pang Blanco** | **CANARIAS7** | Economics, tourism, labour, regulation and business reporting | Canarias / Spanish | Relevant secondary CANARIAS7 economic/tourism desk route. Do not guess contact address; use only verified routing. |
+| **Javier Sheng Pang Blanco** | **CANARIAS7** | Economics, tourism, labour, regulation and business reporting | Canarias / Spanish | Relevant additional CANARIAS7 economic/tourism desk route. Do not guess contact address; use only verified routing. |
+| **David Ojeda** | **CANARIAS7** | Editor / Local-section journalist in Las Palmas de Gran Canaria; local institutions, municipal/public affairs, contextual reporting and accountability | Canarias / Spanish | Strong complementary lane to Silvia: public files, institutional competence, Fiscalía/Gobierno de Canarias/Yaiza/Cabildo traceability and what each authority actually received or verified. Use current role plus source-led limits; do not treat routing as merits findings. |
 | **Ruth Ugalde** | **El Confidencial** | Real estate, hotel assets, insolvency/restructuring, funds/debt/NPLs and institutional-accountability fit | Spain / Spanish | Strong asset-provenance/investment lane. |
 | **Saúl García Crespo** | **Diario de Lanzarote; Agencia EFE; local collaborations** | Long-running Yaiza/Playa Blanca, planning, courts, tourism and local-accountability reporting | Lanzarote / Spanish | Strong local document-led fit. |
 | **Teresa Acosta Hernández** | **La Voz de Lanzarote / Lanzarote Media** | Director; relevant to outlet's own EKN Sun Park→MYND/RICPE reporting | Lanzarote / Spanish | Strong institutional-resolution + editorial-traceability fit. |
@@ -56,6 +57,8 @@ Do not publish private email addresses, personal telephone numbers, Gmail messag
 For any actual outreach, read:
 
 - `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`;
+- `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_RULE_23AUG2026.md`;
+- `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_DASHBOARD_23AUG2026.md`;
 - `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
 - `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`;
 - `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md` when local Canary media is in scope;
