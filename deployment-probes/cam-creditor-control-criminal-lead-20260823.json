@@ -1,0 +1,167 @@
+{
+  "publication_id": "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+  "source_merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
+  "pages_run_id": 32609842885,
+  "pages_run_number": 926,
+  "verified_at": "2026-08-23T01:16:39Z",
+  "verified": true,
+  "method": "parallel no-cache HTTP readback from the public GitHub Pages edge",
+  "checks": [
+    {
+      "kind": "canonical_en",
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
+      "status": 200,
+      "bytes": 31287,
+      "sha256": "b4a3e5966f0b2f0f34e8fd432900a63e14328f635d9e23462c6da1726559e4d5",
+      "etag": "\"6a8a496b-7a37\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "They are not judicial findings.",
+        "DIRECT-INSTRUCTION ALLEGATION",
+        "The 2018 provisional dismissal and appellate confirmation remain prominently preserved."
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "canonical_es",
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+      "status": 200,
+      "bytes": 33035,
+      "sha256": "2920dd67c349056b27a98035216d2cb83292c5d71e450709912213460592786c",
+      "etag": "\"6a8a496b-810b\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "No son declaraciones judiciales.",
+        "ALEGACIÓN DE INSTRUCCIÓN DIRECTA",
+        "Se conservan con igual visibilidad el archivo provisional de 2018 y su confirmación en apelación."
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "dataset",
+      "url": "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-creditor-control-criminal-lead-v1.json",
+      "status": 200,
+      "bytes": 19472,
+      "sha256": "a6404a91e8c4d5b9ec12e7781cf01da5f84328fa0d209df1a96c2e0080e6344b",
+      "etag": "\"6a8a496b-4c10\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
+        "CAM-LEAD-03"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "runtime_module",
+      "url": "https://sbu001monterecco.github.io/por-derecho/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
+      "status": 200,
+      "bytes": 12515,
+      "sha256": "f4c923015226567bf8e1eb73e5cb6e265e643c3324ab0613c05cfeff2ff34164",
+      "etag": "\"6a8a496b-30e3\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "data-cam-criminal-lead=\"20260823\"",
+        "Gil Marer and Aweswell allege"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "criminal_sitemap",
+      "url": "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml",
+      "status": 200,
+      "bytes": 4524,
+      "sha256": "15805eade32d77ad0063a4e057eec2b4db5c2c153d47c666601cf8435c8b5d08",
+      "etag": "\"6a8a496b-11ac\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "cam-creditor-control-shadow-administration-judicial-omission",
+        "control-acreedor-cam-administracion-hecho-omision-judicial"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "general_sitemap",
+      "url": "https://sbu001monterecco.github.io/por-derecho/sitemap.xml",
+      "status": 200,
+      "bytes": 34776,
+      "sha256": "ee8a14f03229abed06ff1a72dff5fa1bd77166a50726a87c0c8ae5caa501c809",
+      "etag": "\"6a8a496b-87d8\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "cam-creditor-control-shadow-administration-judicial-omission",
+        "control-acreedor-cam-administracion-hecho-omision-judicial"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "updates_en",
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+      "status": 200,
+      "bytes": 70633,
+      "sha256": "6f5b3cebcc0458e1892b018a4e43439111b4ada3f5ae0561d19f72a5ee9c2209",
+      "etag": "\"6a8a496b-113e9\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "cam-creditor-control-shadow-administration-judicial-omission",
+        "23 August 2026"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "updates_es",
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+      "status": 200,
+      "bytes": 73604,
+      "sha256": "f1e23ac3102095f34ef1225d9c335d740df6941ca5c99a1185b84034754d91ba",
+      "etag": "\"6a8a496b-11f84\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "control-acreedor-cam-administracion-hecho-omision-judicial",
+        "23 agosto 2026"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "route_registry",
+      "url": "https://sbu001monterecco.github.io/por-derecho/assets/data/unitary-route-registry-v1.json",
+      "status": 200,
+      "bytes": 16484,
+      "sha256": "e0a93bf9914c6e65cc262b912772e6beb3a847888cfaf74001ef341a76cdc298",
+      "etag": "\"6a8a496b-4064\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "cam-creditor-control-shadow-administration-judicial-omission",
+        "control-acreedor-cam-administracion-hecho-omision-judicial"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "site_index_en",
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/site-index/",
+      "status": 200,
+      "bytes": 4737,
+      "sha256": "fefabd86f34522907b69b9f7f677fa191ad9e108573d3579751bb160afa7721c",
+      "etag": "\"6a8a496b-1281\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "cam-creditor-control-shadow-administration-judicial-omission",
+        "CAM"
+      ],
+      "missing_markers": []
+    },
+    {
+      "kind": "site_index_es",
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/indice-web/",
+      "status": 200,
+      "bytes": 4802,
+      "sha256": "c7b14e35818d23864bfc60b629703e1387eed1a9fca09144918e576b7002f9ce",
+      "etag": "\"6a8a496b-12c2\"",
+      "last_modified": "Sun, 23 Aug 2026 01:14:19 GMT",
+      "required_markers": [
+        "control-acreedor-cam-administracion-hecho-omision-judicial",
+        "CAM"
+      ],
+      "missing_markers": []
+    }
+  ]
+}

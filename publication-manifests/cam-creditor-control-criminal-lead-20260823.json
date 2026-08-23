@@ -4,7 +4,8 @@
   "repository": "sbu001monterecco/por-derecho",
   "branch": "codex/cam-direct-instruction-ac-shadow-admin-prevarication-20260823-v3",
   "control_date": "2026-08-23",
-  "current_state": "DRAFT",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
   "control_marker": "cam-creditor-control-criminal-lead-20260823",
   "publication_type": "bilingual actor-specific criminal-allegation, evidential-sufficiency and production-control record",
   "subject": "CAM capacity convergence, alleged direct instruction of the 7 June 2018 physical entry, creditor-in-possession and de facto administration, insolvency-administrator approval or ratification, and alleged judicial omission",
@@ -59,7 +60,12 @@
     "sitemap-criminal-engineering.xml",
     "publication-manifests/cam-creditor-control-criminal-lead-20260823.json",
     "scripts/validate_cam_creditor_control_criminal_lead.py",
-    ".github/workflows/validate-cam-creditor-control-criminal-lead.yml"
+    "scripts/production_smoke_check.py",
+    "scripts/render_unitary_public_shell.mjs",
+    "deployment-probes/cam-creditor-control-criminal-lead-20260823.json",
+    "archive/DEPLOYMENT_LOG.md",
+    ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
+    ".github/workflows/verify-playa-blanca-hotel-concept-pr-readback.yml"
   ],
   "expected_live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
@@ -95,10 +101,19 @@
     "right_of_reply_preserved": true
   },
   "validation": {
-    "status": "PENDING_CI",
+    "status": "CI_GREEN_LIVE_VERIFIED",
     "source_validator": "scripts/validate_cam_creditor_control_criminal_lead.py",
     "workflow": ".github/workflows/validate-cam-creditor-control-criminal-lead.yml",
-    "deployment_verification": "PENDING_MERGE_AND_PUBLIC_EDGE_READBACK"
+    "validated_pr_head": "ff507579a3fb5253d152852cc5b0df09aedb8b58",
+    "deployment_verification": "PASS_EXACT_MERGE_SHA_AND_PUBLIC_EDGE_READBACK",
+    "evidence": [
+      "PR #814 completed 21 of 21 workflows successfully at reviewed head ff507579a3fb5253d152852cc5b0df09aedb8b58",
+      "the dedicated CAM validator passed with three attributed allegation lanes, 11 evidence types and 18 statutory controls",
+      "publication integrity passed with 66 changed files inspected",
+      "GitHub Pages run 32609842885 succeeded for exact merge SHA c2f77661371384a79fb7e0caaef79c6345cabecf",
+      "11 canonical, data, runtime, sitemap, update, registry and site-index readbacks returned HTTP 200 with no missing markers",
+      "the two stale cross-site CI contracts discovered during PR review were repaired without weakening their exact checks"
+    ]
   },
   "evidence_readback_scope": {
     "repository_controlled_gmail_and_drive_source_ledgers_reviewed": true,
@@ -118,5 +133,59 @@
     "complete evidence-before-judge and resolution, refusal, delay or omission chronology",
     "actor-specific mental-state, ratification, causation and benefit evidence",
     "all exculpatory communications and protective or restorative acts"
-  ]
+  ],
+  "publication": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/814",
+    "merge_commit": "c2f77661371384a79fb7e0caaef79c6345cabecf",
+    "live_readback": "PASS_11_OF_11_CONTROLLED_PUBLIC_SURFACES",
+    "deployment_log": "archive/DEPLOYMENT_LOG.md"
+  },
+  "merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 32609842885,
+    "run_number": 926,
+    "event": "dynamic",
+    "status": "success",
+    "created_at": "2026-08-23T01:13:41Z",
+    "completed_at": "2026-08-23T01:14:25Z",
+    "exact_merge_sha": "c2f77661371384a79fb7e0caaef79c6345cabecf"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cam-creditor-control-shadow-administration-judicial-omission/",
+    "https://sbu001monterecco.github.io/por-derecho/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/cam-creditor-control-criminal-lead-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-engineering.xml",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap.xml",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/unitary-route-registry-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/en/site-index/",
+    "https://sbu001monterecco.github.io/por-derecho/es/indice-web/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-23T01:16:39Z",
+    "probe": "deployment-probes/cam-creditor-control-criminal-lead-20260823.json",
+    "result": "All 11 controlled public surfaces returned HTTP 200 and contained their required allegation, attribution, contrary-record, discovery or routing markers.",
+    "canonical_en_sha256": "b4a3e5966f0b2f0f34e8fd432900a63e14328f635d9e23462c6da1726559e4d5",
+    "canonical_es_sha256": "2920dd67c349056b27a98035216d2cb83292c5d71e450709912213460592786c",
+    "dataset_sha256": "a6404a91e8c4d5b9ec12e7781cf01da5f84328fa0d209df1a96c2e0080e6344b",
+    "runtime_module_sha256": "f4c923015226567bf8e1eb73e5cb6e265e643c3324ab0613c05cfeff2ff34164"
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audit": "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
+    "email_status": "NOT_SENT",
+    "chat_required_for_future_work": false,
+    "open_evidence_preserved": true,
+    "scope_limit": "This closes chat-custody continuity only. It does not close the investigation, prove criminal guilt, resolve the actor-specific instruction or knowledge chain, or authorise deletion of native evidence.",
+    "preserve": [
+      "native mailbox, Drive and provider originals",
+      "repository history and public pages",
+      "open-evidence and correction registers",
+      "all exculpatory, protective and restorative material"
+    ]
+  }
 }

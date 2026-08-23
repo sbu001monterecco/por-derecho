@@ -2,6 +2,7 @@
 """Validate the CAM creditor-control criminal-lead publication controls."""
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -11,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA_REL = "assets/data/cam-creditor-control-criminal-lead-v1.json"
 MANIFEST_REL = "publication-manifests/cam-creditor-control-criminal-lead-20260823.json"
+PROBE_REL = "deployment-probes/cam-creditor-control-criminal-lead-20260823.json"
 SOURCE_REL = "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md"
 EN_REL = "en/cam-creditor-control-shadow-administration-judicial-omission/index.html"
 ES_REL = "es/control-acreedor-cam-administracion-hecho-omision-judicial/index.html"
@@ -80,6 +82,7 @@ sitemap_text = read(SITEMAP_REL)
 general_sitemap_text = read(GENERAL_SITEMAP_REL)
 data = load_json(DATA_REL)
 manifest = load_json(MANIFEST_REL)
+probe = load_json(PROBE_REL)
 
 require_markers(
     SOURCE_REL,
@@ -398,13 +401,67 @@ if manifest.get("publication_id") != PUBLICATION_ID:
     errors.append("manifest publication_id mismatch")
 if manifest.get("control_marker") != CONTROL_MARKER:
     errors.append("manifest control_marker mismatch")
-if manifest.get("current_state") != "DRAFT":
-    errors.append("manifest current_state must remain DRAFT before merge and live verification")
+manifest_state = manifest.get("current_state")
+if manifest_state not in {"DRAFT", "DELETION_SAFE"}:
+    errors.append(f"manifest current_state is not controlled: {manifest_state!r}")
 if manifest.get("expected_routes") != {"en": [EN_REL], "es": [ES_REL]}:
     errors.append("manifest expected bilingual routes mismatch")
 for rel in manifest.get("expected_source_files", []):
     if not isinstance(rel, str) or not (ROOT / rel).is_file():
         errors.append(f"manifest expected source missing: {rel!r}")
+
+if manifest_state == "DELETION_SAFE":
+    expected_merge = "c2f77661371384a79fb7e0caaef79c6345cabecf"
+    if manifest.get("deletion_status") != "DELETION_SAFE_WITH_OPEN_EVIDENCE":
+        errors.append("manifest deletion status mismatch")
+    if manifest.get("merge_sha") != expected_merge:
+        errors.append("manifest exact merge SHA mismatch")
+    if manifest.get("validation", {}).get("status") != "CI_GREEN_LIVE_VERIFIED":
+        errors.append("manifest CI/live validation state mismatch")
+    if manifest.get("deployment_evidence", {}).get("exact_merge_sha") != expected_merge:
+        errors.append("manifest deployment evidence is not tied to the exact merge SHA")
+    if manifest.get("deployment_evidence", {}).get("workflow_run_id") != 32609842885:
+        errors.append("manifest GitHub Pages run mismatch")
+    if manifest.get("live_verification_evidence", {}).get("status") != "PASS":
+        errors.append("manifest live verification is not PASS")
+    if manifest.get("deletion_record", {}).get("status") != "DELETION_SAFE_WITH_OPEN_EVIDENCE":
+        errors.append("manifest deletion record mismatch")
+    if not set(manifest.get("expected_live_urls", [])).issubset(set(manifest.get("live_urls", []))):
+        errors.append("manifest live URL set does not include every expected public URL")
+
+    if probe.get("publication_id") != PUBLICATION_ID:
+        errors.append("deployment probe publication_id mismatch")
+    if probe.get("source_merge_sha") != expected_merge:
+        errors.append("deployment probe exact merge SHA mismatch")
+    if probe.get("pages_run_id") != 32609842885:
+        errors.append("deployment probe Pages run mismatch")
+    if probe.get("verified") is not True:
+        errors.append("deployment probe must be verified")
+    probe_checks = probe.get("checks", [])
+    if not isinstance(probe_checks, list) or len(probe_checks) != 11:
+        errors.append("deployment probe must contain exactly 11 controlled readbacks")
+    else:
+        for check in probe_checks:
+            if check.get("status") != 200 or check.get("missing_markers") != []:
+                errors.append(f"deployment probe failed control: {check.get('kind')!r}")
+        probe_by_kind = {check.get("kind"): check for check in probe_checks}
+        exact_source_map = {
+            "canonical_en": EN_REL,
+            "canonical_es": ES_REL,
+            "dataset": DATA_REL,
+            "runtime_module": MODULE_REL,
+            "criminal_sitemap": SITEMAP_REL,
+            "general_sitemap": GENERAL_SITEMAP_REL,
+            "updates_en": "en/updates/index.html",
+            "updates_es": "es/actualizaciones/index.html",
+            "route_registry": "assets/data/unitary-route-registry-v1.json",
+            "site_index_en": "en/site-index/index.html",
+            "site_index_es": "es/indice-web/index.html",
+        }
+        for kind, rel in exact_source_map.items():
+            expected_sha = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
+            if probe_by_kind.get(kind, {}).get("sha256") != expected_sha:
+                errors.append(f"deployment probe SHA-256 mismatch for {kind}: {rel}")
 
 safety = manifest.get("publication_safety", {})
 for key in [
