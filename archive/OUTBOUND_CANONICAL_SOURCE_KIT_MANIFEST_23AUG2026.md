@@ -11,13 +11,23 @@ Every future outbound package must select from this manifest or document why a d
 
 This file does **not** authorise sending, publication of private correspondence, or reuse of a source outside its evidential scope.
 
+### Mandatory media override
+
+For every journalist, editor, newsroom, media organisation, media-routing address or journalistic contact, the two appropriate-language PNG source maps, the controlled San Telmo webinar link and at least one Por Derecho website link are **mandatory**, not optional.
+
+The controlling hard gate is:
+
+`archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
+
+Any wording elsewhere such as “normally”, “where relevant”, “consider”, “link-led” or “smallest package” cannot remove those components. Only an exact user-approved exception for the exact recipient, exact transmission and exact omitted component may do so.
+
 ## Reusable visual sources
 
 | Canonical asset | Language | Source class | Use | What it does not prove | Known aliases / drift to avoid |
 |---|---|---|---|---|---|
 | `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` | ES | explanatory derivative / source map | Fast orientation to the documented 2016 PwC knowledge point, actor perimeter and AC-related knowledge questions | It does not prove guilt, conspiracy, criminal agreement, causation or every relationship shown | `Anlage-2C-PwC-Punto-Conocimiento-2016-ES.png`; duplicate download suffixes |
 | `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png` | EN | explanatory derivative / source map | English equivalent for international media/investor/professional audiences | Same limitation as ES version | `Anlage-2B-PwC-Knowledge-Checkpoint-2016-EN.png` |
-| `Anlage-2A-PwC-Kenntnispunkt-2016-DE.png` | DE | explanatory derivative / source map | German orientation for German media/institutional audiences where justified | Same limitation as ES/EN versions | Preserve current filename until a canonical DE rename is deliberately implemented |
+| `Anlage-2A-PwC-Kenntnispunkt-2016-DE.png` | DE | explanatory derivative / source map | German orientation for German media/institutional audiences | Same limitation as ES/EN versions | Preserve current filename until a canonical DE rename is deliberately implemented |
 | `san-telmo-ricpe-sun-park-stamp-v1-ES.png` | ES | explanatory derivative / source map | Fast orientation to Sun Park / RICPE / San Telmo role and source questions | It does not prove wrongdoing, improper investor introduction, defective due diligence or unlawful finance | `san-telmo-ricpe-sun-park-stamp-v1 (2).png`; Spanish copies carrying duplicate suffixes |
 | `san-telmo-ricpe-sun-park-stamp-v1.png` | EN | explanatory derivative / source map | English orientation to the RICPE / Sun Park / San Telmo source chain | Same limitation as ES version | `Anlage-1B-RICPE-Sun-Park-Roles-EN.png` where the underlying visual is the same/related; verify exact binary before claiming identity |
 | `Anlage-1A-RICPE-Sun-Park-Rollen-DE.png` | DE | explanatory derivative / source map | German orientation for FTI/Meeting Point, finance or cross-border audiences | Same limitation as ES/EN versions | Preserve filename until canonical DE reconciliation |
@@ -35,6 +45,8 @@ This file does **not** authorise sending, publication of private correspondence,
 
 Before reuse, verify the public link still resolves and that the current source-control file has not corrected speaker attribution, timestamp or interpretation.
 
+For media recipients, this link must appear directly in the email body unless Gil has expressly approved its omission for that exact message.
+
 ## Website route selection
 
 Do not use a single universal website link merely for convenience.
@@ -42,7 +54,7 @@ Do not use a single universal website link merely for convenience.
 | Recipient first question | Preferred route type | Current note |
 |---|---|---|
 | “What is Project Sun Rock / what is the overall story?” | Spanish/English homepage orientation | Verify current live homepage immediately before send |
-| “Can a journalist work with this record?” | `/en/collaborate/` or Spanish equivalent | Live scan on 23-Aug-2026 confirms a specific `Journalistic verification and responsible coverage` route, public-source-first boundary and correction route |
+| “Can a journalist work with this record?” | `/en/collaborate/` or Spanish equivalent | Current route contains a specific journalistic-verification invitation, public-source-first boundary and correction route |
 | Material control / mixed ownership / 7-Jun-2018 | exact 7-Jun-2018 dossier | Use only after current correction/source gate is read |
 | Creditor / title / standing | lender-of-record route | Preserve exact legal-person/date distinctions |
 | Community / CEXP authority | Community/minutes route | Preserve Community/CEXP separation and ACTA provenance limits |
@@ -52,27 +64,36 @@ Do not use a single universal website link merely for convenience.
 
 ## Audience package defaults
 
-### Journalist — Level 1
-Normally:
+### Journalist / editor / media route — mandatory core package
+
+Every media email must contain:
+
 1. one recipient-specific first-screen;
 2. three to five independently checkable anchors;
-3. the two language-appropriate source maps where relevant;
-4. the controlled webinar where relevant;
-5. one exact public dossier or orientation route;
-6. a finite ask: examine, verify, request the short dossier, or identify the correct editorial contact.
+3. the two appropriate-language source-map PNGs as actual attachments;
+4. the controlled webinar URL in the body;
+5. at least one current Por Derecho website route;
+6. an express evidential limitation for the maps and webinar; and
+7. a finite ask: examine, verify, request the short dossier, or identify the correct editorial contact.
+
+Additional primary documents remain recipient-specific and proportionate. The mandatory two-map package is not a licence to attach a document dump.
 
 ### Economic / investment / markets journalist
+
 Emphasise:
 `asset provenance → title/control chronology → RICPE/investment → HNT/MYND → incentives → due diligence / disclosure / source-and-use → legal certainty / effective recovery`.
 
 ### General / Canary public-interest journalist
+
 Emphasise:
 `Sun Park → alleged long-term pressure/interference → material control transition → RIC/RICPE → MYND Yaiza → public/institutional funding questions → present tourism/economic relevance`.
 
 ### Regulator / authority / professional body
+
 Use primary documents first. Visual maps are orientation aids only. Separate ordinary email notice from legally operative filing.
 
 ### Witness / historical participant
+
 Do not lead recollection with argumentative visual bundles. Ask for the witness’s own records/recollection first unless there is a specific justified reason otherwise.
 
 ## Attachment hygiene
@@ -82,6 +103,8 @@ Before final approval record:
 `filename → language → version → purpose → source class → evidence limitation → exact file selected`.
 
 Do not use ambiguous outgoing filenames such as `(2)`, `(3)`, `final-final` or download-copy suffixes when a canonical copy is available. Preserve aliases internally for provenance.
+
+For media recipients, a zero-attachment manifest is non-compliant unless an exact user-approved exception is recorded.
 
 ## Link hygiene
 
@@ -96,13 +119,26 @@ Before final approval verify every outbound link for:
 
 A material link change after approval resets final email authorisation.
 
-## Proven working pattern — 23 August 2026
+For media recipients, the manifest must expressly list the controlled webinar URL and at least one Por Derecho route.
 
-Two recent Spanish first-look packages successfully used the same compact source architecture:
+## Pre-send media-core checklist
 
-- a direct journalist approach to a Canary media gatekeeper; and
-- a routing/permission enquiry through a historical professional address for **Diego Sánchez de la Cruz**.
+```text
+PWC PNG FOUND = YES
+SAN TELMO PNG FOUND = YES
+WEBINAR LINK FOUND = YES
+POR DERECHO LINK FOUND = YES
+EVIDENTIAL LIMITATION FOUND = YES
+```
 
-Both used the two Spanish source maps plus the San Telmo webinar as orientation, while preserving the limitation that the maps and webinar do not independently prove wrongdoing.
+If any result is not `YES` and no exact user-approved exception exists:
 
-The Diego routing email adds an important reusable rule: when a public historical address is documented but current direct deliverability is uncertain, it may be used for a narrowly framed routing enquiry asking whether the organisation may forward the material or identify the appropriate current contact. Do not represent the historical address as the person’s current direct email unless verified.
+**SEND STATUS: BLOCKED — MANDATORY MEDIA CORE PACKAGE INCOMPLETE.**
+
+## Proven working pattern and corrective lesson — 23 August 2026
+
+The compact Spanish orientation package consists of the two Spanish source maps, the controlled San Telmo webinar and recipient-specific Por Derecho routes, with explicit evidential limitations.
+
+A 23-August media send initially omitted the two maps and webinar after the standing instruction was incorrectly treated as discretionary. A later authorised same-thread correction supplied the complete package. That incident established the hard rule that recipient tailoring, brevity and document-overload concerns cannot remove the Media Core Package.
+
+A historical professional address may still be used for a narrowly framed routing enquiry when its historical connection is documented, but it must not be represented as the person’s verified current direct address. The routing email remains subject to the same Media Core Package unless an exact exception is approved.
