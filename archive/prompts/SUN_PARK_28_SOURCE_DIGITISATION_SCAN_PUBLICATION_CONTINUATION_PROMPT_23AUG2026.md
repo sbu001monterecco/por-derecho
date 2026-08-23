@@ -51,6 +51,47 @@ Never use editorial filename labels such as `DeudaFalsa`, `Destruccion Masa`, `E
 6. The 16-April-2018 Auto numerically states EUR 400,000 but does not state/adopt the Actúa values EUR 9.776m / EUR 7.097m / EUR 6.608m. Do not reproduce the confidential draft's contrary overreading as a judicial holding.
 7. The Valencia `DOC 7 _ Liquidaciones` file is a 2008 bank/interest/hedge receipt exhibit, not a Concurso liquidation act.
 
+## AP 89/2014 — strongest-criticism, criminal-instrumentalisation and capacity control
+
+Preserve the adverse judgment exactly, but do not let its formal existence end the reconstruction. The review must present the **strongest source-supported criticism** of:
+
+1. the adverse parties' pleadings, procedural extension, factual and capacity attributions, evidential selections or omissions, and every later use of the result;
+2. the Juzgado de Primera Instancia nº 4 de Arrecife's handling of JV 1260/2011, including joinder/extension, notice, hearing, evidence, entity separation, possession, keys, consent, capacity, reasoning, remedy and costs; and
+3. the Audiencia Provincial's review in AP 89/2014, including its possession/key inferences, justification of the extension, veil-lifting analysis, treatment of distinct legal persons, response to contrary material, scope control and any downstream overreading.
+
+**Gil Marer's expressly attributed allegation:** JV 1260/2011 and AP 89/2014 formed part of a broader **full criminal instrumentalisation of proceedings**, operating both inside and outside Concurso 36/2012 and related proceedings. Record that proposition as `party allegation / open investigative hypothesis`. It is not an adjudicated finding and does not by itself establish criminal responsibility by an adverse party, lawyer, judge, court employee, insolvency actor or other person.
+
+Do not dilute source-supported criticism, but keep the evidential ladder explicit:
+
+`adverse or wrong result` ≠ `legal/procedural error` ≠ `unreasoned or asymmetric treatment` ≠ `abuse by a party` ≠ `knowing judicial participation` ≠ `criminal offence proved`.
+
+For every proposed criticism state the exact act, actor, contemporaneous source, knowledge evidence, materiality, decision effect, benefit/harm, causal link, contrary evidence and innocent alternative. Judicial criticism must distinguish appealable error, overreach, omission, inadequate reasoning, appearance of partiality, institutional failure, knowing assistance and proved criminal conduct.
+
+### Yehuda Marer — identity and no-role lock
+
+The user states that **Yehuda Marer was Gil Marer's retired father, visiting him, and was present on Gil's behalf in the moment despite holding no formal position**. His presence, or receipt of a notarial communication, must not be converted into a corporate, managerial, operational or procedural role.
+
+Unless a primary source proves the specific capacity, do not describe Yehuda Marer as a director, administrator, officer, employee, hotel manager, operator, controller, CEXP/Community office-holder, general agent, litigation representative or authorised decision-maker. The phrase “on Gil Marer's behalf” is limited to that immediate event; it does not establish a general power, mandate or continuing authority. If a source attributes a wider role, quote it as a source attribution, test it, and place this correction beside it.
+
+### Finite AP89 gap-closure checklist — update `ME-PDFSCAN-017`
+
+Other threads must close this case through the existing canonical gap row `ME-PDFSCAN-017`, not a parallel generic gap. Locate, hash, transcribe and cross-link:
+
+1. the certified docket/index, originating claim and every annex;
+2. the complete 23-Feb-2012 extension pleading, service and the exact order admitting or handling it;
+3. every defence, objection, reply and procedural ruling;
+4. hearing audio/video, minutes, witness/expert material and admitted/refused evidence;
+5. the complete first-instance judgment, notification, clarification and costs record;
+6. the appeal, opposition, transmitted record, AP 89/2014, service, finality and enforcement/eviction record;
+7. every notarial demand and proof of delivery, including the recipient's identity, immediate function and source for any claimed authority;
+8. contemporaneous documents capable of proving or disproving Yehuda Marer's capacity and the capacity of every other attributed actor;
+9. the CEXP–Monterecco–LPB instruments, February-2012 transfer/cession records and unit-by-unit possession/key/consent chain;
+10. the 2008–2012 title, exploitation, Community, Registry, tourism-inspection and commercial record for the eighteen units;
+11. every later use of JV 1260/AP 89 inside or outside Concurso 36/2012, with proposition, recipient, decision and consequence; and
+12. complaints, Fiscalía/court outcomes, contrary evidence and innocent explanations relevant to the instrumentalisation allegation.
+
+For each missing source, log custodian, exact query, date range, repository/email/Drive/court location searched, result, OCR limit and smallest next production request. A no-result search is not proof that the source never existed.
+
 ## Work modes
 
 ### `AUDIT_ONLY`

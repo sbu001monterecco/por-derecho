@@ -371,9 +371,29 @@ for marker in ("twenty-six unique binaries", "ME-PDFSCAN-031", "Two separate Aut
         errors.append(f"source register missing marker: {marker}")
 
 prompt = read(PROMPT)
-for marker in ("AUDIT_ONLY", "ACQUIRE_AND_DIGITISE", "PREPARE_PUBLIC_SAFE", "PUBLISH_AFTER_REVIEW", "AE-12", "Do not send email"):
+for marker in (
+    "AUDIT_ONLY",
+    "ACQUIRE_AND_DIGITISE",
+    "PREPARE_PUBLIC_SAFE",
+    "PUBLISH_AFTER_REVIEW",
+    "AE-12",
+    "Do not send email",
+    "full criminal instrumentalisation of proceedings",
+    "Yehuda Marer — identity and no-role lock",
+    "ME-PDFSCAN-017",
+):
     if marker not in prompt:
         errors.append(f"continuation prompt missing marker: {marker}")
+
+flagship_control = read(FLAGSHIP_CONTROL)
+for marker in (
+    "strongest source-supported criticism",
+    "full criminal instrumentalisation of proceedings operating both inside and outside Concurso 36/2012",
+    "Yehuda Marer was his retired father",
+    "NO FORMAL OR CONTINUING ROLE ESTABLISHED",
+):
+    if marker not in flagship_control:
+        errors.append(f"flagship allegation/capacity control missing marker: {marker}")
 
 if errors:
     print("active-estate dossier validation: FAIL", file=sys.stderr)

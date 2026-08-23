@@ -74,6 +74,18 @@ Canonical investigative chain:
 
 The words **conversion**, **succession**, **substitution**, **joinder**, **extension**, **continuation**, **new possessor** and **new operator** are not interchangeable. The exact procedural order/pleading must decide which legal mechanism occurred.
 
+### 3A. Gil Marer's allegation and strongest-criticism rule
+
+Gil Marer alleges that JV 1260/2011 and AP 89/2014 were used within a broader **full criminal instrumentalisation of proceedings operating both inside and outside Concurso 36/2012 and related proceedings**. This is a party allegation and open investigative hypothesis, not an adjudicated fact.
+
+The adverse holding must be reproduced in full and not minimised. Equally, the repository must not treat formal judicial validity as the end of the inquiry. It must develop the strongest source-supported criticism of the adverse parties, the first-instance court and the Audiencia Provincial by testing the extension mechanism, notice, hearing, evidence, capacity attributions, distinct entity treatment, possession/key inferences, veil lifting, response to contrary material, remedy, costs, scope and later use.
+
+The critical ladder is mandatory:
+
+`adverse or wrong result` ≠ `legal/procedural error` ≠ `unreasoned or asymmetric treatment` ≠ `party abuse` ≠ `knowing judicial participation` ≠ `proved criminal offence`.
+
+No actor-specific criminal conclusion may be stated without element-by-element primary evidence and the competent procedural outcome. Criticism must identify the act, actor, contemporaneous source, knowledge, materiality, effect on the decision, benefit/harm, causation, contrary evidence and innocent alternative.
+
 ## 4. Key appellate source findings — use with precision
 
 The appellate source is important because the complete page-faithful review records three points that must remain separate:
@@ -91,6 +103,12 @@ These figures are not self-proving conclusions about every legal issue. In parti
 - the adverse possessory result for the claimant-side units does **not** itself prove the broader later proposition that the claimant/minority perimeter possessed valid authority over the hotel as a whole.
 
 This distinction is one of the reasons the case is a test case.
+
+### 4A. Yehuda Marer — identity and capacity correction
+
+Gil Marer states that **Yehuda Marer was his retired father, visiting him, and was present on Gil's behalf in the moment, without any formal position**. A presence, delivery or receipt event does not establish a continuing role.
+
+Unless a primary source proves a specific capacity, Yehuda Marer must not be described as a director, administrator, officer, employee, hotel manager, operator, controller, CEXP/Community office-holder, general agent, litigation representative or authorised decision-maker. “On Gil Marer's behalf” is limited to the immediate event and does not prove a general mandate or power. Any source making a broader attribution must be quoted as an attribution, tested and displayed beside this correction.
 
 ## 5. What the proceeding can prove — and what it cannot
 
@@ -177,6 +195,10 @@ Every serious review of JV 1260/2011 / AP 89/2014 should answer:
 13. Did any actor have contrary primary evidence at the time of later reliance?
 14. Would the outcome change if the complete 2008–2011 commercial/title record had been before the court?
 15. What evidence would disprove the Project's fraud/abuse hypothesis?
+16. What exact source identified Yehuda Marer, what immediate act did he perform, and did any court or party falsely enlarge that moment into a formal or continuing role?
+17. What is the strongest source-supported criticism of the first-instance court's treatment of extension, notice, evidence, capacity, possession and distinct legal persons?
+18. What is the strongest source-supported criticism of AP 89/2014's review, veil lifting, scope control and treatment of contrary material?
+19. Which facts support, contradict or leave open Gil Marer's criminal-instrumentalisation allegation inside and outside Concurso 36/2012?
 
 ## 8. Keystone source queue
 
@@ -196,7 +218,9 @@ Priority source package for this flagship case:
 12. tourism complaint/inspection material and expediente 92/11;
 13. 3-Jan-2011 detective material if actually relied upon;
 14. complete 2011 Community ACTA/attendance/proxy/coefficient/debt package;
-15. every later court/AC/Fiscal/administrative document that cites the proceeding or judgment.
+15. every source identifying Yehuda Marer, the exact notarial-delivery/receipt event and any claimed capacity, mandate or authority;
+16. every later court/AC/Fiscal/administrative document that cites the proceeding or judgment; and
+17. every complaint, investigative act, contrary source and competent outcome bearing on the alleged inside/outside-Concurso instrumentalisation.
 
 ## 9. Public presentation rule
 
@@ -229,6 +253,8 @@ The books are interpretive/long-form outputs; the repository remains the source-
 - 18-unit claimant-side perimeter: **VERIFIED WITH CONTEXT LIMITATION**.
 - 88.96% CEXP apartment-composition statement: **VERIFIED WITH CONTEXT LIMITATION**.
 - Plaintiffs' procedural equation as the origin of the CEXP→Monterecco litigation bridge: **STRONGLY SUPPORTED / REQUIRES COMPLETE ORDER-AND-PLEADING RECONSTRUCTION FOR EXACT LEGAL CHARACTERISATION**.
+- Gil Marer's full criminal-instrumentalisation proposition, inside and outside Concurso 36/2012: **EXPRESS PARTY ALLEGATION / OPEN INVESTIGATIVE HYPOTHESIS / NOT AN ADJUDICATED FINDING**.
+- Yehuda Marer: **IDENTIFIED BY GIL MARER AS HIS RETIRED FATHER, PRESENT ON HIS BEHALF IN THE IMMEDIATE EVENT / NO FORMAL OR CONTINUING ROLE ESTABLISHED**.
 - Maquinación fraudulenta / fraude procesal / estafa procesal: **WORKING HYPOTHESES TO TEST; NOT ADJUDICATED FINDINGS**.
 - Any actor-specific criminal responsibility: **OPEN / NO COMPETENT FINDING IDENTIFIED IN THIS CONTROL**.
 
@@ -253,6 +279,9 @@ Once merged to `main`, a fresh thread must be able to reconstruct without this c
 - the exact proceeding family;
 - why it is a flagship/test case;
 - the plaintiffs' role in bringing Monterecco into the existing action;
+- Gil Marer's expressly attributed inside/outside-Concurso criminal-instrumentalisation allegation and the evidential ladder required to test it;
+- the strongest source-supported criticism of the adverse parties, first-instance court and appellate court without converting error or suspicion into proved crime;
+- the Yehuda Marer identity/capacity correction and prohibition on inventing a formal or continuing role;
 - the 18-unit vs 88.96% distinction;
 - the separation between adverse possessory outcome and wider authority/fraud hypotheses;
 - the keystone evidence queue;
