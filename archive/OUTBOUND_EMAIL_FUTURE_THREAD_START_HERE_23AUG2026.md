@@ -47,16 +47,23 @@ Subject always to a fresh Gmail scan:
 
 - **Ruth Ugalde / El Confidencial** — `SENT / CORRECTIVE COMPLETE PACKAGE SENT / AWAITING RESPONSE`.
 - **Saúl García / Diario de Lanzarote** — `SENT + VERIFIED / AWAITING RESPONSE`.
-- **Teresa Acosta Hernández / La Voz de Lanzarote** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Teresa Acosta Hernández / La Voz de Lanzarote** — `SENT COPY VERIFIED / PRIMARY NEWSROOM ROUTE BOUNCED (554 5.7.1) / LIMITED DIRECTION CC ROUTE DELIVERY UNCONFIRMED / NO SUBSTANTIVE RESPONSE LOCATED`.
 - **Taiana González / HOSTELTUR** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **Carlos Sosa / Canarias Ahora / elDiario.es Canarias** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Joaquín Gil / EL PAÍS** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Salvador Hernández / Biosfera Digital** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Alfonso Canales Segovia / Crónicas de Lanzarote** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Carlos Molina / Cinco Días** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Silvia Fernández / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **David Ojeda / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **Diego Sánchez de la Cruz / Civismo-related routing** — HOLD for immediate repeat contact unless new information provides a recipient-specific reason.
 
 The next unsent priority is:
 
-1. **Joaquín Gil / EL PAÍS**;
-2. **Salvador Hernández / Biosfera Digital**;
-3. **Alfonso Canales Segovia / Crónicas de Lanzarote**;
+1. **Fran Fajardo / CANARIAS7 — controlling V3 prepared and draft-verified**;
+2. **Carmen Delia Aranda / CANARIAS7**;
+3. **Francisco Suárez Álamo / CANARIAS7**;
+4. **Javier Sheng Pang Blanco / CANARIAS7**, only when a current direct route is verified.
 
 subject to fresh public-role/contact/history and Gmail-response checks.
 
@@ -172,17 +179,11 @@ An inbound response does not automatically authorise a reply.
 
 ## Current next action
 
-Unless a fresh inbound response changes priority, proceed to **Joaquín Gil / EL PAÍS** by:
+Unless a fresh inbound response changes priority, present the exact **Fran Fajardo / CANARIAS7 controlling V3** package for final approval. V1 and V2 are superseded and must not be sent.
 
-1. fresh connected-Gmail response scan for the active media set;
-2. fresh verification of Joaquín Gil's current role, beat and professional routing;
-3. connected-Gmail history scan for prior contact;
-4. unitary repository/website redigest for the national investigative/property/institutional angle;
-5. current public-source scan of his relevant work and EL PAÍS context;
-6. exact recipient-specific draft with the mandatory Media Core Package;
-7. Gmail draft read-back;
-8. public-safe repository preparation record; and
-9. `SEND STATUS: NOT AUTHORISED` until Gil approves that exact package.
+The current V3 package has been rechecked against connected Gmail, the seven live Por Derecho routes, the mandatory two Spanish PNGs, the timestamped San Telmo webinar, current public professional-fit material, adverse evidence and the six finite judicial/documentary asks.
+
+`SEND STATUS: NOT AUTHORISED / NOT SENT` until Gil approves that exact package.
 
 ## Working style
 

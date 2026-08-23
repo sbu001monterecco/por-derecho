@@ -12,7 +12,7 @@ This dashboard is private campaign-control material. Do not publish private cont
 |---|---|---|---|---|---|---|
 | El Confidencial | Ruth Ugalde — real estate/hotel assets/restructuring | SENT / corrected package verified | **REQUIRED** — distinct investigations/business/finance lane | NOT STARTED | PARTIAL | Verify second named professional and prepare separately |
 | Diario de Lanzarote | Saúl García Crespo — Yaiza/planning/courts/tourism | SENT + VERIFIED | Manuel Riveiro — candidate, reverify | NOT STARTED | PARTIAL | Reverify strongest second named lane |
-| La Voz de Lanzarote | Teresa Acosta Hernández — director/source chronology | SENT + VERIFIED | **REQUIRED** — local economy/institutions/tourism | NOT STARTED | PARTIAL | Research second named professional |
+| La Voz de Lanzarote | Teresa Acosta Hernández — director/source chronology | SENT COPY VERIFIED / PRIMARY ROUTE BOUNCED / LIMITED CC ROUTE DELIVERY UNCONFIRMED | **REQUIRED** — local economy/institutions/tourism | NOT STARTED | PARTIAL | Verify current routing before any separately approved follow-up; research second named professional |
 | HOSTELTUR | Taiana González — hotels/tourism | SENT + VERIFIED | **REQUIRED** — hotel investment/Canary tourism/finance | NOT STARTED | PARTIAL | Research second named professional |
 | Canarias Ahora / elDiario.es Canarias | Carlos Sosa — institutions/justice/power | SENT + VERIFIED | **REQUIRED** — investigations/economics/public administration | NOT STARTED | PARTIAL | Research second named professional |
 | EL PAÍS | Joaquín Gil — Investigación | SENT + VERIFIED | **REQUIRED** — Empresas/economics/public funds or second investigations lane | NOT STARTED | PARTIAL | Research second named professional |
