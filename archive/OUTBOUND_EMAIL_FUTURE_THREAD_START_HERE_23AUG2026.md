@@ -1,150 +1,191 @@
 # OUTBOUND EMAIL / EXPOSURE — FUTURE THREAD START HERE
 
 **Control date:** 23 August 2026  
-**Purpose:** fast recovery pointer for a future ChatGPT thread dealing with Project Sun Rock / Por Derecho outreach, journalists, authorities, regulators, compliance, investors or exposure strategy.
+**Purpose:** authoritative recovery pointer for a fresh ChatGPT thread dealing with Project Sun Rock / Por Derecho media outreach, follow-up, repository/website exposure work or related recipient communications.
 
-Before proposing new outreach or website exposure work, read:
+## Fastest recovery path
 
-1. `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md` when media outreach/follow-up is in scope;
-2. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
-3. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`;
-4. `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md` whenever any journalist, editor, newsroom, media organisation, media-routing address or journalistic contact is in scope;
-5. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md` whenever Lanzarote/Yaiza/Playa Blanca or other local Canary media is in scope;
-6. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md` whenever `54 CAM`, minority provenance or media propagation is used;
-7. `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
+If a prior ChatGPT thread is too long, unavailable or deliberately abandoned, do not ask Gil to restate the campaign.
+
+Read and execute:
+
+`archive/prompts/NEW_THREAD_RUN_WRITE_LIKE_THE_WIND_MEDIA_CONTINUATION_23AUG2026.md`
+
+The user can simply paste that prompt into a fresh thread and say:
+
+> **RUN — WRITE LIKE THE WIND.**
+
+A root pointer also exists at:
+
+`MEDIA_CAMPAIGN_NEW_THREAD_START.md`
+
+The new thread must rehydrate current state from repository `main`, connected Gmail in both directions, current public Por Derecho pages and fresh public sources. Current connected/source data overrides stale chat memory or older repository text.
+
+## Mandatory first reads
+
+For media work, read at minimum:
+
+1. `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`;
+2. `archive/prompts/NEW_THREAD_RUN_WRITE_LIKE_THE_WIND_MEDIA_CONTINUATION_23AUG2026.md`;
+3. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
+4. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`;
+5. `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`;
+6. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md` when local/Lanzarote media is in scope;
+7. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md` whenever 54-CAM/minority/media-propagation questions are used;
 8. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
 9. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
-10. `archive/OUTBOUND_EMAIL_SEVEN_DAY_MAXIMUM_REACH_AUDIT_23AUG2026.md`;
-11. `archive/OUTBOUND_EXPOSURE_FUTURE_THREADS_NEXT_ACTIONS_23AUG2026.md`;
-12. `archive/prompts/MAXIMUM_REACH_FUTURE_THREAD_CONTINUATION_PROMPT_23AUG2026.md`;
-13. `archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md`;
-14. `archive/JOURNALIST_MEDIA_REGISTER.md` when media is in scope;
-15. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
-16. `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`;
-17. `archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md`;
-18. `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md` and current correction/missing-evidence controls; and
-19. connected Gmail in both directions for any recipient/topic being considered.
+10. `archive/JOURNALIST_MEDIA_REGISTER.md`;
+11. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
+12. recipient-specific preparation/sent records for the active journalist set; and
+13. current correction / missing-evidence controls and relevant public website dossiers.
 
-Revalidate every recommendation against current `main`, the currently deployed website and current Gmail before implementation.
+Then scan connected Gmail in both directions before inferring any response state.
 
-## Absolute no-test-send gate
+## Current verified media state at this control point
 
-External test sends are prohibited. Never use a real, invalid, reserved, throwaway or deliberately non-working external address to test recipient resolution, formatting, attachments, connector behavior, delivery or bounces.
+Subject always to a fresh Gmail scan:
 
-An empty body, a one-character body or a subject/body containing “DO NOT SEND”, “TEST”, “DRAFT”, “PLACEHOLDER”, “NO ENVIAR”, “PRUEBA” or “BORRADOR” must fail closed. Testing is local/draft-only.
+- **Ruth Ugalde / El Confidencial** — `SENT / CORRECTIVE COMPLETE PACKAGE SENT / AWAITING RESPONSE`.
+- **Saúl García / Diario de Lanzarote** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Teresa Acosta Hernández / La Voz de Lanzarote** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Taiana González / HOSTELTUR** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Carlos Sosa / Canarias Ahora / elDiario.es Canarias** — `SENT + VERIFIED / AWAITING RESPONSE`.
+- **Diego Sánchez de la Cruz / Civismo-related routing** — HOLD for immediate repeat contact unless new information provides a recipient-specific reason.
 
-The 23 August 2026 incident record is controlling. Discovery of an unintended test transmission does not authorize an apology, correction, resend or replacement.
+The next unsent priority is:
 
-## Mandatory website-link gate
+1. **Joaquín Gil / EL PAÍS**;
+2. **Salvador Hernández / Biosfera Digital**;
+3. **Alfonso Canales Segovia / Crónicas de Lanzarote**;
 
-Every Project Sun Rock / Por Derecho outbound email must contain at least one current public Por Derecho website link in the body. The default hub is:
+subject to fresh public-role/contact/history and Gmail-response checks.
 
-`https://sbu001monterecco.github.io/por-derecho/`
+No queue position authorises sending.
 
-Prefer the recipient-specific dossier/language route where useful. A draft with no Por Derecho website link is **NOT READY TO SEND** unless an expressly recorded exception under `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md` applies.
+## Current unitary story core
 
-## Mandatory media-core gate
+`2008 property / operation fragmentation`
+→ `minority / CEXP / Community marketability and governance conflict`
+→ `creditor / enforcement / LPB-only insolvency perimeter`
+→ `CAM specific-property acquisition / 54-CAM provenance`
+→ `purchaser-knowledge questions`
+→ `2018 material-control transition`
+→ `pre-title pilot / redevelopment / commercialisation activity`
+→ `2020 integrated ownership/control representation`
+→ `2021 internal 54 CAM / 190 LPB / 18 terceros + conditional title + incomplete DD contradiction`
+→ `2021 professional / institutional knowledge points`
+→ `HNT / MYND / RICPE / RIC / Series F/G / GC/836/P06 / EU-cofinancing traceability`
+→ `media / public narrative`
+→ `2026 Yaiza + Cabildo constructive institutional-resolution route`.
 
-Every Project Sun Rock / Por Derecho email to a journalist, editor, newsroom, media organisation, media-routing address or journalistic contact must contain:
+This chain does not prove one conspiracy or common criminal intent. Preserve legal-person, actor, property, funding-instrument, institutional and media distinctions unless the documentary bridge is proved.
 
-1. the appropriate-language PwC 2016 PNG source map as an attachment;
-2. the appropriate-language San Telmo / RICPE / Sun Park PNG source map as an attachment;
-3. the controlled timestamped San Telmo webinar link;
-4. at least one current Por Derecho website route; and
-5. an express evidential limitation for the maps and webinar.
+For tourism/travel media add, where sourced:
 
-A “Level 0”, “link-led”, brevity or document-overload decision cannot remove these components. The word “send” is not an implied waiver.
+`Lava Verde 279-room project → Club Sei Lanzarote / Meeting Point-FTI commercial preparation → exact contracting entity / room authority / bookings / revenue open → July-2021 54/190/18 reconciliation`.
 
-An exception is valid only if Gil expressly identifies the exact recipient, exact transmission and exact component to omit.
+For Canary-wide institutional media add, where sourced:
 
-Before approval and before send, require:
+`institutional/public event → published participant perimeter → what was actually presented → later internal title/availability record → subsequent public-policy/investment narrative → current administrative traceability`.
+
+## Media-propagation and falsehood rule
+
+Always distinguish:
+
+`UPSTREAM REPRESENTATION → MEDIA ATTRIBUTION/REPUBLICATION → INDEPENDENT VERIFICATION → KNOWINGLY FALSE PUBLICATION`.
+
+Do not state that CAM, RICPE, Canarian Hospitality, Government or another actor caused a particular article/programme without the actual transmission bridge — press release, email, dossier, presentation, briefing or equivalent.
+
+Do not state that a journalist/outlet knowingly published a false proposition without separate evidence of what it knew and what it verified.
+
+## 54-CAM rule
+
+Never use `54 CAM` as shorthand for CAM ownership of Sun Park.
+
+Where relevant reconstruct:
+
+`seller → finca → seller authority → CEXP / Community context → disputed debt / litigation / access → deed/order → price/payment/set-off → Registry → possession → purchaser knowledge → later project/public representation`.
+
+Do not state that minority owners were forced to sell unless primary evidence proves that exact proposition.
+
+## Mandatory Media Core Package
+
+Unless Gil approves an exact one-use exception, every substantive media email must include:
+
+1. appropriate-language PwC source-map PNG;
+2. appropriate-language San Telmo / RICPE / Sun Park PNG;
+3. direct San Telmo webinar at approximately 08:08;
+4. at least one current Por Derecho website route;
+5. evidential limitation for maps/webinar;
+6. adverse/contrary material necessary to avoid a misleading impression; and
+7. a finite recipient-specific ask.
+
+For Spanish media the canonical attachments are:
+
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`;
+- `san-telmo-ricpe-sun-park-stamp-v1-ES.png`.
+
+Before approval and again before send, verify the actual Gmail draft:
 
 ```text
 PWC PNG FOUND = YES
 SAN TELMO PNG FOUND = YES
-WEBINAR LINK FOUND = YES
+WEBINAR FOUND = YES
 POR DERECHO LINK FOUND = YES
 EVIDENTIAL LIMITATION FOUND = YES
+ADVERSE MATERIAL INCLUDED = YES
+RECIPIENT-SPECIFIC ASK = YES
 ```
 
-Any failure without an exact recorded exception produces:
+Any failure without an exact approved exception produces:
 
-**SEND STATUS: BLOCKED — MANDATORY MEDIA CORE PACKAGE INCOMPLETE.**
+**SEND STATUS: BLOCKED — PACKAGE INCOMPLETE.**
 
-## Mandatory local-media story architecture
+## Absolute send control
 
-For Lanzarote, Yaiza, Playa Blanca and analogous local-Canary media, use:
+Research, repository updates, website work, public-source scans, Gmail reads and draft preparation may proceed when the task calls for them.
 
-`POSITIVE PRESENT-TENSE HOOK → FULL UNITARY DOCUMENTARY/ECONOMIC MIDDLE → CONSTRUCTIVE FINITE ENDING`
+No email may be sent, resent, forwarded, corrected, followed up or self-emailed without Gil's fresh explicit final approval of the exact outbound package:
 
-The positive hook may use the documented invitation to Yaiza and Cabildo to open a competence-respecting working conversation. The middle must not omit the underlying story where relevant: fragmented title/exploitation, alleged hotel mobbing, creditor/enforcement/insolvency chain, June-2018 material control, RICPE, HNT/MYND, alleged economic-crime concerns, alleged possible fraudulent RIC materialisation, GC/836/P06, FEDER and current reconciliation/recovery questions.
+- To / Cc / Bcc;
+- transmission type;
+- subject;
+- full body;
+- attachments / versions; and
+- links.
 
-Economic-crime and fraudulent-materialisation language must remain explicitly allegation-qualified unless a competent decision establishes the proposition. RIC, incentives, FEDER, renovation or commercial success do not themselves prove fraud, double financing or wrongdoing.
+Material changes reset approval.
 
-Where the outlet has previously published about Sun Park/MYND/RICPE, personalise the email around what was attributed, what was independently checked, what the article intended to say about transformation versus ownership, and whether later primary material warrants clarification/update.
+After an authorised send, read the actual sent copy and verify recipients, subject, attachments, links and substantive state before recording `SENT + VERIFIED`.
 
-Where no current direct journalist address is verified, use one current official newsroom/editorial address as `To` and, only where justified, one current official general/direction route as a limited `Cc` fallback. Exclude advertising/subscriptions.
+External test sends are prohibited.
 
-## Mandatory media follow-up state machine
+## Media follow-up state machine
 
-Before any media follow-up, chase, correction, resend or reply:
+Before any chase, correction, resend, reply or follow-up:
 
-`SEARCH GMAIL BOTH DIRECTIONS → READ RESPONSE/THREAD → CLASSIFY EXACTLY → CHECK CURRENT REPOSITORY/WEBSITE → PREPARE RECIPIENT-SPECIFIC DELTA → VERIFY MEDIA CORE → PRESENT EXACT PACKAGE → FRESH USER APPROVAL → SEND → READ BACK SENT COPY`.
+`SEARCH GMAIL BOTH DIRECTIONS → READ THREAD → CLASSIFY EXACTLY → CHECK REPOSITORY/WEBSITE → IDENTIFY RECIPIENT-SPECIFIC DELTA → PREPARE EXACT PACKAGE → VERIFY MEDIA CORE → FRESH USER APPROVAL → SEND → READ BACK ACTUAL SENT COPY → UPDATE REPOSITORY`.
 
-Never infer from silence that a message was unread, rejected, accepted or ignored.
+Never infer rejection, reading, acceptance, non-delivery or editorial decision from silence.
 
-A response must be classified narrowly as substantive editorial response, source request, call/interview request, correction/challenge, routing, acknowledgement, out-of-office, bounce, refusal/no interest or other exact state.
+An inbound response does not automatically authorise a reply.
 
-No incoming response automatically authorises a reply.
+## Current next action
 
-## Current outreach-state corrections and implementation status
+Unless a fresh inbound response changes priority, proceed to **Joaquín Gil / EL PAÍS** by:
 
-- **Canonical ES/EN/DE outreach source-kit manifest: IMPLEMENTED** in `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`.
-- **Mandatory Media Core Package rule: IMPLEMENTED** in `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`.
-- **Local-media positive-hook / unitary-middle rule: IMPLEMENTED** in `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md`.
-- **54-CAM provenance/media-propagation rule: IMPLEMENTED** in `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`.
-- **Cross-thread media continuation/follow-up state: IMPLEMENTED** in `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`.
-- **Recipient-fit dossier/personalisation layer: IMPLEMENTED** in `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`.
-- **Mandatory website-link rule: IMPLEMENTED** in `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`.
-- **Exact final authorization and no-test-send hard stop: IMPLEMENTED** in `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` and `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`.
-- **Diego Sánchez de la Cruz, Ruth Ugalde, Saúl García Crespo and Teresa Acosta Hernández** are included neutrally in `archive/JOURNALIST_MEDIA_REGISTER.md`; private outreach history remains controlled separately.
-- **Ruth Ugalde outreach:** initial incomplete package corrected by separately authorised same-thread complete resend. Status: `SENT / AWAITING RESPONSE`. Read `archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md`.
-- **Diario de Lanzarote / Saúl García outreach:** verified complete package. Status: `SENT + VERIFIED / AWAITING RESPONSE`. Read `archive/DIARIO_DE_LANZAROTE_SAUL_GARCIA_OUTREACH_RECORD_23AUG2026.md`.
-- **La Voz de Lanzarote / Teresa Acosta Hernández outreach:** verified complete package using second unitary redigest, 54-CAM provenance and La Voz source-attribution controls. Status: `SENT + VERIFIED / AWAITING RESPONSE`. Read `archive/LA_VOZ_TERESA_ACOSTA_OUTREACH_RECORD_23AUG2026.md` and `archive/LA_VOZ_TERESA_UNITARY_STORY_REDIGEST_23AUG2026.md`.
-- A connected-Gmail scan at the current cutoff located no new inbound response from the active El Confidencial, Diario de Lanzarote or La Voz/Lanzarote Media domains. Use only `NO RESPONSE LOCATED YET`.
-- **REGAGE26e00074403517:** receipt located, destination and package unclassified. Do not describe it as delivery of a particular filing until the primary bridge is recovered.
-- Automated acknowledgements, out-of-office replies and bounces are limited-status evidence only. They do not authorize substitute-recipient sends or prove merits review.
-- The neutral bilingual media-briefing routes remain a genuine open recommendation unless a later thread verifies implementation.
+1. fresh connected-Gmail response scan for the active media set;
+2. fresh verification of Joaquín Gil's current role, beat and professional routing;
+3. connected-Gmail history scan for prior contact;
+4. unitary repository/website redigest for the national investigative/property/institutional angle;
+5. current public-source scan of his relevant work and EL PAÍS context;
+6. exact recipient-specific draft with the mandatory Media Core Package;
+7. Gmail draft read-back;
+8. public-safe repository preparation record; and
+9. `SEND STATUS: NOT AUTHORISED` until Gil approves that exact package.
 
-## Current next media action
+## Working style
 
-Absent a fresh inbound response changing priority, continue with **Taiana González / HOSTELTUR**.
+`WRITE LIKE THE WIND` means execute the non-send preparation decisively, use connected sources instead of asking Gil to repeat information, keep fact/allegation/inference/judicial outcome separate, preserve adverse evidence, update repository continuity as work progresses, and avoid generic progress essays.
 
-Before drafting, search connected Gmail for all prior HOSTELTUR/Taiana communication, verify current role and routing, read the current HOSTELTUR-specific Por Derecho page and the underlying HOSTELTUR article, then apply the tourism/hospitality version of the same unitary story.
-
-The current continuation queue after Taiana, subject to fresh revalidation, is Carlos Sosa / Canarias Ahora-elDiario.es Canarias, Joaquín Gil / EL PAÍS, Salvador Hernández / Biosfera Digital and Alfonso Canales Segovia / Crónicas de Lanzarote.
-
-No queue position authorises sending.
-
-## Separate approval-gated publication
-
-PR #804, concerning the redacted 21 April 2016 email, remains draft, explicitly approval-gated and non-mergeable. It must be rebased, source/hash reconciled, privacy-checked, rendered and presented as a final diff before any renewed publication authorization. Do not treat prior general website permission as permission to merge it.
-
-## Reusable outreach lessons
-
-1. For dual-role recipients, tailor the same evidence record to the legitimate overlap between roles rather than producing unrelated pitches.
-2. A historical professional address may be used as a routing/permission channel when its historical connection is documented, but it must not be represented as a verified current direct address.
-3. The two appropriate-language source maps, controlled San Telmo webinar and at least one Por Derecho route are mandatory in every media-facing email unless an exact exception is approved.
-4. For local media, a positive present-tense institutional hook can lead and close the message while the middle preserves the full unitary story rather than softening it away.
-5. Where the outlet previously published the relevant narrative, ask what was attributed versus independently verified and whether later primary evidence warrants clarification, update or restatement.
-6. Where `54 CAM` appears, never use it as shorthand for ownership of Sun Park; reconstruct provenance, seller context, purchaser knowledge and later representation.
-7. Where no direct current journalist address is verified, newsroom routing plus one justified official fallback is preferable to guessing a personal address or spraying multiple mailboxes.
-8. A long dossier paragraph can be appropriate when a routing organisation needs enough context to decide whether to forward, provided evidence classes remain separated and the ask stays finite.
-9. The current collaboration route is a useful journalist-facing trust surface because it offers journalistic verification, public-sources-first review, no inherited conclusions and correction/right-of-reply routes.
-10. One exact authorization permits at most one exact transmission. A resend, correction or follow-up is a new package requiring new authorization.
-11. Never send an external test message, even to an invalid address.
-12. Package verification must test mandatory requirements, not merely confirm that an incorrectly declared manifest matches the draft.
-
-Do not publish private email addresses, message identifiers, telephone numbers or full private bodies merely because they exist in Gmail or a controlled working record.
-
-No email may be sent without the user's separate explicit final approval of the exact recipients, transmission type, subject/body, attachments/versions and links.
+Never claim `sent`, `published`, `deployed` or `verified` unless the relevant tool actually confirms it.
