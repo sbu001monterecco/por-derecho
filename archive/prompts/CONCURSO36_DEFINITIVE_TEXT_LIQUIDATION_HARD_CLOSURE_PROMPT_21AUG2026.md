@@ -28,7 +28,7 @@ Preserve the existing verified anti-conflation rules:
 - `C36-JUD-2018-04-16-001`: seven-page liquidation-plan Auto, Alberto López Villarrubia, canonical clean Drive SHA-256 `2de1527a738658252f81fd3e402622f677280aaed735e5ef117d44c4a06dcd05`.
 - `C36-JUD-2018-04-16-002`: separate two-page CAM-credit/interest clarification Auto, Alberto López Villarrubia, SHA-256 `4748ad85af54dac606104e8f93cd71299cfd5878fc32be0bf1d4f236325e59ff`.
 - Do not restore the previously reported unverified seven-page hash `bf134e63cc0c4d09be7f32536460b6eed206b3e5c7e18de19b2c326c10e15964` without locating the exact binary that generates it.
-- 4-Jun-2018 controlled copy remains `INCOMPLETE COURT COPY — primary promotion blocked`; known SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0`.
+- The 4-Jun-2018 clarification is controlled through a **complete three-page authentic court copy**, Gmail `194a98a11920fefd`, `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`. The older two-page SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` is retained only as a superseded derivative/source-history object. Canonical-copy hash, service and downstream-implementation binding remain open.
 - `C36-LAJ-2018-06-15-001`: 15-Jun-2018 Diligencia de Ordenación, Águeda Reyes Almeida, SHA-256 `1298d03daca48284de642299ddb86c6b8ed2900f95d5ce05edf2d491e5f8ade5`.
 - `C36-JUD-2018-06-26-001`: 26-Jun-2018 suspension Auto, Alberto López Villarrubia, SHA-256 `4f23ad7e30191b1d32c8708851729f42151c3b095476255d5fe1a5fc43509099`.
 - 18-May-2021 is not to be resurrected as a generic missing-original blocker merely because older work once described it that way.
@@ -145,7 +145,7 @@ At minimum reconstruct:
 - later licitation/adjudication steps;
 - creditor standing and assignments;
 - 2021 realisation decisions;
-- 26-Jan-2022 adjudication;
+- 18-May-2021 definitive approval → two separate 15-Oct-2021 confirmation/challenge Autos → two 26-Jan-2022 clarification Autos / testimony-finality bridge (no new award) → 21-Feb-2022 deed;
 - set-off/payment/sobrante requirements;
 - later conveyance/title consequences.
 
@@ -277,14 +277,11 @@ Reconstruct end-to-end the authorised direct sale of locales and pools/solarium 
 - compliance with every upstream condition;
 - later appearance in 2022 perimeter/transaction if proved.
 
-## Complete 4-Jun-2018 Auto remains P1
+## Complete 4-Jun-2018 Auto located — binding remains P1
 
-Search Gmail, Drive, composite PDFs, LexNET bundles, pleadings, forwards and annex packages for the continuation, dispositive and signature pages.
+Use the complete three-page canonical copy located in Gmail `194a98a11920fefd`. Preserve the older two-page binary and SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` only as derivative source history; it is not the best copy and does not create a separate act.
 
-Do not promote a replacement until it is demonstrably more complete.
-
-If found: hash, source-control, promote, update all dependent conclusions.
-If not found: retain `P1 — COMPLETE 4-JUN-2018 AUTO NOT YET RECOVERED`.
+The remaining P1 work is to bind the canonical three-page hash, exact service/notification record and downstream implementation. Do not reopen continuation-page recovery unless later evidence shows that the three-page copy itself is defective.
 
 ## Exact final questions
 

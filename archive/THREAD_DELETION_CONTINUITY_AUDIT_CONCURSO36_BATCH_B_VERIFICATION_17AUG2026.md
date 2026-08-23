@@ -4,6 +4,8 @@
 **Scope:** independent verification of the reported PR #312 / Batch A state plus primary-source continuation into the 2018 Batch B family.  
 **Verdict:** `DELETION-SAFE FOR THIS VERIFICATION PASS ONCE MERGED — WHOLE DOCKET REMAINS OPEN`
 
+> **23-Aug-2026 source-status supersession:** References below to a two-page, visibly incomplete 4-Jun-2018 copy preserve the historical state of this verification pass; they are not the current source status. Current control is the complete three-page authentic court copy in Gmail `194a98a11920fefd`, filename `20180604 Auto Aclaracion Auto Aprobacion Plan Liquidacion.pdf`. SHA-256 `867d80f99efc029411a0baef80467a27ceacb649ea41d1ff70f57726f33551c0` belongs only to the superseded two-page derivative and must not be assigned to the three-page copy. Canonical-copy hash binding, exact service/notification and downstream implementation remain open.
+
 ## What a fresh thread must recover without this conversation
 
 ### PR #312 / Batch A

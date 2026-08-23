@@ -35,7 +35,7 @@ AL JUZGADO DE LO MERCANTIL Nº. 1 DE LAS PALMAS DE GRAN CANARIA
       reclamación de responsabilidad civil profesional contra: Don Francisco de Borja Rodriguez-
       Batllori Laffitte en su calidad de Administrador Concursal de la mercantil Luchy Playa Blanca;
       y contra la entidad Occident GCO SAU de seguros y reaseguros, con NIF [identificador personal suprimido] y
-      domicilio en Paseo de la Castellana, 4, 28043 Madrid (Madrid) como aseguradora de la
+      domicilio [suprimido] como aseguradora de la
       Responsabilidad Civil del asegurado; todo ello de acuerdo con los siguientes,
 
                                                  HECHOS

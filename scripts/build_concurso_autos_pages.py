@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "assets/data/concurso36-autos-fulltext-v1.json"
+COMPLETE_CATALOG = ROOT / "assets/data/concurso36-complete-record-v1.json"
 TEXT_ROOT = ROOT / "evidence/insolvency-36-2012/concurso-autos/full-text"
 ES_OUTPUT = ROOT / "es/concurso-36-2012-autos-resoluciones/index.html"
 EN_OUTPUT = ROOT / "en/insolvency-36-2012-orders-decisions/index.html"
@@ -114,7 +115,7 @@ def inline_decisions(records: list[dict], lang: str) -> str:
             f'{html.escape(record["outcome"] or ("Trámite procesal." if lang == "es" else "Procedural step."))}</p>'
             f'<p><strong>{"Alcance:" if lang == "es" else "Scope:"}</strong> {html.escape(record["merits_scope"])}</p>'
             f'<div>{document_links(record, lang)}</div></div>'
-            f'<p class="source-note">{source_note}</p><pre>{source_text}</pre></div></details>'
+            f'<p class="source-note">{source_note}</p><pre lang="es">{source_text}</pre></div></details>'
         )
     return "".join(pieces)
 
@@ -132,13 +133,15 @@ def filing_rows(records: list[dict], lane: str, lang: str) -> str:
     return "".join(rows)
 
 
-def render(records: list[dict], lang: str) -> str:
+def render(records: list[dict], catalog: dict, lang: str) -> str:
     court_count = sum(record["record_class"] == "court" for record in records)
     party_count = len(records) - court_count
+    catalog_counts = catalog["counts"]
+    catalog_result = catalog["result"]
     if lang == "es":
         meta = {
-            "title": "Autos y resoluciones judiciales · Concurso 36/2012",
-            "description": "Archivo íntegro redactado de autos, sentencia, decretos, diligencias y escritos de los procedimientos de separación del Administrador Concursal y honorarios.",
+            "title": "Corpus judicial y de parte localizado · Concurso 36/2012",
+            "description": "Archivo especialista íntegro redactado de separación/honorarios y acceso al catálogo unitario parcial de las decisiones, escritos, comunicaciones e implementación actualmente localizados.",
             "canonical": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/",
             "alternate": "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/",
             "alternate_lang": "en",
@@ -146,11 +149,12 @@ def render(records: list[dict], lang: str) -> str:
             "lang_link": "../../en/insolvency-36-2012-orders-decisions/",
             "lang_text": "EN",
             "eyebrow": "JUEZ · SALA · LAJ · ESCRITOS · TEXTO ÍNTEGRO",
-            "h1": "Autos y resoluciones del Concurso 36/2012",
-            "lead": "Página propia para las dos vías relativas al Administrador Concursal: la solicitud de separación y la reclamación de honorarios para la masa. Se publica el texto sustantivo íntegro localizado —con redacciones visibles— de las decisiones del juez, la Audiencia Provincial y la LAJ; los escritos de todas las partes quedan digitizados y enlazados en el repositorio.",
+            "h1": "Autos, decisiones y escritos localizados del Concurso 36/2012",
+            "lead": "Esta ruta conserva el corpus especialista de 2024–2026 sobre separación del Administrador Concursal y honorarios: 50 transcripciones públicas íntegras y redactadas. El catálogo unitario enlazado amplía la vista a 2012–2026, pero no sustituye un índice judicial certificado ni permite afirmar que se haya obtenido o publicado todo el expediente.",
             "scope": "Regla de alcance",
             "scope_text": "La solicitud de separación y la demanda de honorarios fueron desestimadas en primera instancia por legitimación activa. Las resoluciones localizadas no decidieron el fondo de los siete motivos de separación ni la legalidad material o cuantía de los honorarios. El Auto 223/2026 acumuló las apelaciones de separación; no las resolvió sobre el fondo.",
-            "nav_decisions": "Decisiones judiciales",
+            "nav_coverage": "Cobertura total",
+            "nav_decisions": "Decisiones 2024–2026",
             "nav_text": "Texto judicial completo",
             "nav_filings": "Escritos de parte",
             "nav_gaps": "Vacíos y método",
@@ -161,8 +165,8 @@ def render(records: list[dict], lang: str) -> str:
             "text_kicker": "Decisiones a la vista",
             "text_h2": "Texto íntegro de Juez, Sala y LAJ",
             "text_intro": "Abra cualquier resolución para leerla completa, página por página. La redacción no modifica los antecedentes, fundamentos ni la parte dispositiva.",
-            "filings_kicker": "Expediente completo",
-            "filings_h2": "Todos los escritos localizados de las partes",
+            "filings_kicker": "Corpus especialista",
+            "filings_h2": "Todos los escritos localizados en estas dos vías",
             "filings_intro": "Cada enlace abre la transcripción integral redactada, con hash de la fuente y estado de la copia. Una demanda, oposición o recurso registra una posición procesal; no prueba por sí solo sus alegaciones.",
             "removal_h3": "Separación del Administrador Concursal",
             "fees_h3": "Honorarios / responsabilidad civil",
@@ -179,11 +183,23 @@ def render(records: list[dict], lang: str) -> str:
             "reply_h3": "Derecho de respuesta y corrección",
             "reply": "Cualquier parte o profesional citado puede aportar una resolución posterior, señalar un error de transcripción o solicitar una revisión de minimización. La corrección se versionará sin borrar la procedencia ni reescribir retrospectivamente el expediente.",
             "back": "Volver al digesto de separación y honorarios",
+            "coverage_kicker": "Denominador y trazabilidad",
+            "coverage_h2": "Un catálogo unitario, con la ausencia certificada a la vista",
+            "coverage_intro": "El catálogo reúne 72 registros forenses de 2012–2023, las 50 piezas especialistas de 2024–2026 y cinco fuentes adicionales únicas. Las 95 familias históricas son un mínimo de descubrimiento, no el denominador oficial.",
+            "coverage_status": "INVENTARIO PARCIAL — FALTA ÍNDICE CERTIFICADO O DOCUMENTACIÓN",
+            "coverage_catalog": "Abrir catálogo JSON de 127 registros",
+            "coverage_index": "Abrir índice forense de 72 registros",
+            "coverage_reader": "Abrir lector de autos críticos",
+            "coverage_records": "registros canónicos",
+            "coverage_complete": "copias históricas completas",
+            "coverage_missing": "copias históricas completas pendientes",
+            "coverage_pdfs": "PDF públicos seguros",
+            "caption": "Decisiones localizadas en las vías especialistas de separación y honorarios",
         }
     else:
         meta = {
-            "title": "Orders and judicial decisions · Insolvency 36/2012",
-            "description": "Complete redacted archive of orders, judgment, decrees, procedural directions and filings in the administrator-removal and remuneration proceedings.",
+            "title": "Located judicial and party corpus · Insolvency 36/2012",
+            "description": "Complete redacted specialist removal/fees archive with access to the partial unitary catalogue of currently located decisions, filings, communications and implementation records.",
             "canonical": "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/",
             "alternate": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/",
             "alternate_lang": "es",
@@ -191,11 +207,12 @@ def render(records: list[dict], lang: str) -> str:
             "lang_link": "../../es/concurso-36-2012-autos-resoluciones/",
             "lang_text": "ES",
             "eyebrow": "JUDGE · APPEAL COURT · LAJ · FILINGS · FULL TEXT",
-            "h1": "Orders and decisions in Insolvency 36/2012",
-            "lead": "A dedicated page for the two proceedings concerning the Insolvency Administrator: the removal application and the estate-remuneration claim. The complete located substantive text—with visible redactions—of Judge, Appeal Court and LAJ decisions is displayed here; every located party filing is digitised and linked in the repository.",
+            "h1": "Located orders, decisions and filings in Insolvency 36/2012",
+            "lead": "This route preserves the 2024–2026 specialist corpus on removal of the Insolvency Administrator and remuneration: 50 complete public-safe redacted transcripts. The linked unitary catalogue extends the view to 2012–2026, but it does not replace a certified court index or permit a claim that the whole file has been obtained or published.",
             "scope": "Controlling scope",
             "scope_text": "The removal application and the remuneration claim were dismissed at first instance on active-standing grounds. The located decisions did not adjudicate the seven substantive removal grounds or the material legality and amount of the remuneration. Order 223/2026 combined the removal appeals; it did not decide their merits.",
-            "nav_decisions": "Judicial decisions",
+            "nav_coverage": "Whole-file coverage",
+            "nav_decisions": "2024–2026 decisions",
             "nav_text": "Complete court text",
             "nav_filings": "Party filings",
             "nav_gaps": "Gaps and method",
@@ -206,8 +223,8 @@ def render(records: list[dict], lang: str) -> str:
             "text_kicker": "Decisions on the page",
             "text_h2": "Complete Judge, Appeal Court and LAJ text",
             "text_intro": "Open any decision to read the complete Spanish original, page by page. Redaction does not change the background, reasoning or operative part.",
-            "filings_kicker": "Complete record",
-            "filings_h2": "Every located party filing",
+            "filings_kicker": "Specialist corpus",
+            "filings_h2": "Every located filing in these two lanes",
             "filings_intro": "Each link opens the complete redacted Spanish transcript, with source hash and copy status. A claim, defence or appeal records a procedural position; it does not by itself prove its allegations.",
             "removal_h3": "Removal of the Insolvency Administrator",
             "fees_h3": "Remuneration / civil liability",
@@ -224,10 +241,37 @@ def render(records: list[dict], lang: str) -> str:
             "reply_h3": "Right of response and correction",
             "reply": "Any named party or professional may provide a later decision, identify a transcription error or request a data-minimisation review. Corrections will be versioned without erasing provenance or retrospectively rewriting the record.",
             "back": "Back to the removal and remuneration digest",
+            "coverage_kicker": "Denominator and traceability",
+            "coverage_h2": "One unitary catalogue, with the certification gap visible",
+            "coverage_intro": "The catalogue combines 72 forensic records for 2012–2023, the 50 specialist records for 2024–2026 and five additional unique sources. The 95 historical families are a discovery floor, not the official denominator.",
+            "coverage_status": "INVENTORY PARTIAL — CERTIFIED DOCKET OR RECORDS STILL MISSING",
+            "coverage_catalog": "Open the 127-record JSON catalogue",
+            "coverage_index": "Open the 72-record forensic index",
+            "coverage_reader": "Open the critical-orders reader",
+            "coverage_records": "canonical records",
+            "coverage_complete": "complete historical copies",
+            "coverage_missing": "historical complete copies missing",
+            "coverage_pdfs": "public-safe PDFs",
+            "caption": "Located decisions in the specialist removal and remuneration lanes",
         }
 
     gaps = "".join(f"<li>{html.escape(item)}</li>" for item in meta["gaps"])
+    if catalog_result["certified_docket_obtained"]:
+        raise ValueError("catalog unexpectedly claims a certified docket")
     opposite_digest = "../concurso-36-2012-separacion-ac-honorarios/" if lang == "es" else "../insolvency-36-2012-administrator-removal-fees/"
+    reader = "../concurso-36-2012-que-ordeno-el-juzgado/" if lang == "es" else "../concurso-36-2012-what-the-court-ordered/"
+    coverage = (
+        f'<section class="section" id="cobertura"><div class="shell"><p class="kicker">{meta["coverage_kicker"]}</p>'
+        f'<h2>{meta["coverage_h2"]}</h2><p class="intro">{meta["coverage_intro"]}</p>'
+        f'<div class="scope"><strong>{meta["coverage_status"]}</strong><br>'
+        f'{catalog_counts["canonical_records"]} {meta["coverage_records"]} · '
+        f'{catalog_counts["historical_complete_copies"]} {meta["coverage_complete"]} · '
+        f'{catalog_counts["historical_missing_complete_copies"]} {meta["coverage_missing"]} · '
+        f'{catalog_counts["public_safe_pdfs_total"]} {meta["coverage_pdfs"]}.</div>'
+        f'<p><a class="button" href="../../assets/data/concurso36-complete-record-v1.json">{meta["coverage_catalog"]}</a>'
+        f'<a class="button view" href="../../archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv">{meta["coverage_index"]}</a>'
+        f'<a class="button pdf" href="{reader}">{meta["coverage_reader"]}</a></p></div></section>'
+    )
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -236,7 +280,9 @@ def render(records: list[dict], lang: str) -> str:
   <title>{meta["title"]}</title>
   <meta name="description" content="{meta["description"]}">
   <link rel="canonical" href="{meta["canonical"]}">
+  <link rel="alternate" hreflang="{lang}" href="{meta["canonical"]}">
   <link rel="alternate" hreflang="{meta["alternate_lang"]}" href="{meta["alternate"]}">
+  <link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/">
   <link rel="stylesheet" href="../../assets/styles.css">
   <script src="../../assets/site.js" defer></script>
   <style>
@@ -252,6 +298,7 @@ def render(records: list[dict], lang: str) -> str:
     .autos-page h2{{font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.04;margin:.35rem 0 1rem;max-width:22ch}}.autos-page .intro{{font-size:1.08rem;line-height:1.62;max-width:70rem}}
     .autos-page .key-grid{{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:2rem 0}}.autos-page .key-card{{background:#fff;border-top:5px solid var(--red);padding:1.1rem;box-shadow:0 8px 22px rgba(16,42,53,.08)}}.autos-page .key-card span,.autos-page .key-card small{{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:#666}}.autos-page .key-card h3{{margin:.4rem 0}}.autos-page .key-card a{{font-weight:900}}
     .autos-page .table-wrap{{overflow:auto;margin-top:1.7rem;border:1px solid #d3ccbf}}.autos-page table{{border-collapse:collapse;width:100%;min-width:980px;background:#fff}}.autos-page th,.autos-page td{{padding:.8rem;vertical-align:top;text-align:left;border-bottom:1px solid #ded8cd}}.autos-page th{{background:var(--sand)}}.autos-page td small{{display:block;margin-top:.45rem;color:#626b6f}}.autos-page td:first-child{{white-space:nowrap}}
+    .autos-page caption{{text-align:left;font-weight:900;padding:.75rem;background:#fff;color:var(--navy)}}
     .autos-page .button{{display:inline-block;text-decoration:none;font-weight:900;font-size:.78rem;padding:.45rem .58rem;border-radius:6px;margin:.12rem;background:var(--navy);color:#fff!important}}.autos-page .button.pdf{{background:var(--red)}}.autos-page .button.view{{background:var(--green)}}
     .autos-page .decision{{background:#fff;border:1px solid #d4cec3;margin:.8rem 0}}.autos-page .decision summary{{cursor:pointer;display:grid;grid-template-columns:58px 1fr 36px;gap:.8rem;align-items:center;padding:1rem 1.1rem;list-style:none}}.autos-page .decision summary::-webkit-details-marker{{display:none}}.autos-page .decision summary small{{display:block;margin-top:.25rem;color:#637076}}.autos-page .decision-id{{font-weight:900;color:var(--red)}}.autos-page .chevron{{font-size:1.45rem}}.autos-page .decision[open] .chevron{{transform:rotate(45deg)}}
     .autos-page .decision-body{{border-top:1px solid #ddd6ca;padding:1rem}}.autos-page .decision-meta{{background:#f5f8f7;border-left:5px solid var(--green);padding:.85rem 1rem}}.autos-page .source-note{{font-size:.83rem;color:#5f686c;margin-top:1rem}}.autos-page pre{{white-space:pre-wrap;overflow-wrap:anywhere;background:#13272f;color:#edf3f2;padding:1rem;border-radius:8px;max-height:62rem;overflow:auto;font:13px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}}
@@ -265,9 +312,10 @@ def render(records: list[dict], lang: str) -> str:
 <a class="skip-link" href="#contenido">{'Saltar al contenido' if lang == 'es' else 'Skip to content'}</a>
 <header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><span class="brand-mark">PD</span><span class="brand-copy"><strong>Por Derecho</strong><small>{meta["brand"]}</small></span></a><nav class="main-nav"><a href="{opposite_digest}">{meta["back"]}</a><a class="language-link" href="{meta["lang_link"]}" lang="{meta["alternate_lang"]}">{meta["lang_text"]}</a></nav></div></header>
 <main id="contenido">
-  <section class="hero"><div class="shell"><div class="hero-grid"><div><p class="eyebrow">{meta["eyebrow"]}</p><h1>{meta["h1"]}</h1><p class="lead">{meta["lead"]}</p></div><aside><div class="hero-stat"><strong>{len(records)}</strong><span>{'piezas digitizadas' if lang == 'es' else 'digitised records'}</span></div><div class="hero-stat"><strong>{court_count}</strong><span>{'actos judiciales / LAJ' if lang == 'es' else 'court / LAJ acts'}</span></div><div class="hero-stat"><strong>{party_count}</strong><span>{'escritos de parte' if lang == 'es' else 'party filings'}</span></div><div class="hero-stat"><strong>23·08·2026</strong><span>{'corte documental' if lang == 'es' else 'record cut-off'}</span></div></aside></div><div class="scope"><strong>{meta["scope"]}:</strong> {meta["scope_text"]}</div></div></section>
-  <nav class="jump" aria-label="{'En esta página' if lang == 'es' else 'On this page'}"><div class="shell"><a href="#decisiones">{meta["nav_decisions"]}</a><a href="#texto-judicial">{meta["nav_text"]}</a><a href="#escritos">{meta["nav_filings"]}</a><a href="#metodo">{meta["nav_gaps"]}</a></div></nav>
-  <section class="section alt" id="decisiones"><div class="shell"><p class="kicker">{meta["decisions_kicker"]}</p><h2>{meta["decisions_h2"]}</h2><p class="intro">{meta["decisions_intro"]}</p><div class="key-grid">{key_cards(records, lang)}</div><div class="table-wrap"><table><thead><tr><th>{meta["th_date"]}</th><th>{meta["th_issuer"]}</th><th>{meta["th_doc"]}</th><th>{meta["th_effect"]}</th><th>{meta["th_access"]}</th></tr></thead><tbody>{decision_rows(records, lang)}</tbody></table></div></div></section>
+  <section class="hero"><div class="shell"><div class="hero-grid"><div><p class="eyebrow">{meta["eyebrow"]}</p><h1>{meta["h1"]}</h1><p class="lead">{meta["lead"]}</p></div><aside><div class="hero-stat"><strong>{len(records)}</strong><span>{'piezas especialistas digitizadas' if lang == 'es' else 'digitised specialist records'}</span></div><div class="hero-stat"><strong>{court_count}</strong><span>{'actos judiciales / LAJ' if lang == 'es' else 'court / LAJ acts'}</span></div><div class="hero-stat"><strong>{party_count}</strong><span>{'escritos de parte' if lang == 'es' else 'party filings'}</span></div><div class="hero-stat"><strong>23·08·2026</strong><span>{'corte documental' if lang == 'es' else 'record cut-off'}</span></div></aside></div><div class="scope"><strong>{meta["scope"]}:</strong> {meta["scope_text"]}</div></div></section>
+  <nav class="jump" aria-label="{'En esta página' if lang == 'es' else 'On this page'}"><div class="shell"><a href="#cobertura">{meta["nav_coverage"]}</a><a href="#decisiones">{meta["nav_decisions"]}</a><a href="#texto-judicial">{meta["nav_text"]}</a><a href="#escritos">{meta["nav_filings"]}</a><a href="#metodo">{meta["nav_gaps"]}</a></div></nav>
+  {coverage}
+  <section class="section alt" id="decisiones"><div class="shell"><p class="kicker">{meta["decisions_kicker"]}</p><h2>{meta["decisions_h2"]}</h2><p class="intro">{meta["decisions_intro"]}</p><div class="key-grid">{key_cards(records, lang)}</div><div class="table-wrap"><table><caption>{meta["caption"]}</caption><thead><tr><th scope="col">{meta["th_date"]}</th><th scope="col">{meta["th_issuer"]}</th><th scope="col">{meta["th_doc"]}</th><th scope="col">{meta["th_effect"]}</th><th scope="col">{meta["th_access"]}</th></tr></thead><tbody>{decision_rows(records, lang)}</tbody></table></div></div></section>
   <section class="section" id="texto-judicial"><div class="shell"><p class="kicker">{meta["text_kicker"]}</p><h2>{meta["text_h2"]}</h2><p class="intro">{meta["text_intro"]}</p>{inline_decisions(records, lang)}</div></section>
   <section class="section alt" id="escritos"><div class="shell"><p class="kicker">{meta["filings_kicker"]}</p><h2>{meta["filings_h2"]}</h2><p class="intro">{meta["filings_intro"]}</p><div class="filing-grid"><article class="filing-panel"><h3>{meta["removal_h3"]}</h3><ol class="filing-list">{filing_rows(records, "separacion", lang)}</ol></article><article class="filing-panel"><h3>{meta["fees_h3"]}</h3><ol class="filing-list">{filing_rows(records, "honorarios", lang)}</ol></article></div></div></section>
   <section class="section" id="metodo"><div class="shell"><p class="kicker">{meta["gaps_kicker"]}</p><h2>{meta["gaps_h2"]}</h2><ul class="gaps">{gaps}</ul><div class="method-grid"><article class="method-card"><h3>{meta["method_h3"]}</h3><p>{meta["method"]}</p></article><article class="method-card"><h3>{meta["reply_h3"]}</h3><p>{meta["reply"]}</p></article></div><a class="back" href="{opposite_digest}">← {meta["back"]}</a></div></section>
@@ -283,10 +331,11 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, default=MANIFEST)
     args = parser.parse_args()
     payload = json.loads(args.manifest.read_text(encoding="utf-8"))
+    catalog = json.loads(COMPLETE_CATALOG.read_text(encoding="utf-8"))
     records = payload["documents"]
     for output, lang in ((ES_OUTPUT, "es"), (EN_OUTPUT, "en")):
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render(records, lang), encoding="utf-8")
+        output.write_text(render(records, catalog, lang), encoding="utf-8")
         print(output.relative_to(ROOT))
 
 

@@ -1,7 +1,7 @@
 # Recipient-Specific Outbound Email Preparation Prompt
 
 **Control date:** 23 August 2026  
-**Use with:** `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md` and `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`  
+**Use with:** `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`, `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md` and `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
 **Send-control rule:** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
 
 ## Execution instruction
@@ -17,6 +17,8 @@ Read:
 - `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`;
 - `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
 - `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
+- `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md` when media is in scope;
+- `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
 - `archive/CORRECTION_REGISTER.md`;
 - `archive/MISSING_EVIDENCE_REGISTER.md`;
@@ -29,7 +31,9 @@ Where the recipient is an authority, regulator, professional body, auditor, comp
 
 ### 2. Scan the current communication history
 
-Search Gmail for the recipient, institution, domain, topic and closely related subject lines.
+Search the entire accessible Gmail corpus independently for the proposed person and for the outlet/employer/organisation. Use `in:anywhere` or the connected-mail equivalent, names and variants, verified addresses, domains, organisation names, relevant current/former colleagues and fallback routes, all header roles, quoted/forwarded content, replies, bounces, redirects and other-channel notifications.
+
+Paginate every query family until no continuation token remains. A retained token, an omitted person/organisation half or an unclassified collision means the history gate is incomplete and the package cannot be marked ready.
 
 Read the relevant full threads, not merely search snippets.
 
@@ -39,6 +43,9 @@ Reconstruct:
 
 Record:
 
+- query families, cutoff and pagination-completeness for the person;
+- query families, cutoff and pagination-completeness for the organisation;
+- direct-person, direct-organisation, colleague/fallback and other-channel collision classification;
 - what the recipient has already been told;
 - what attachments and links were already supplied;
 - what they acknowledged or disputed;
@@ -62,12 +69,14 @@ For each proposed To/Cc/Bcc recipient determine:
 - whether inclusion creates unnecessary disclosure or data-protection risk;
 - what realistic action the recipient can take;
 - audience lane under the maximum-reach layer;
-- Tier A / B / C / HOLD classification; and
+- Tier A / B / C / RESEARCH ACTIVE classification; and
 - proposed campaign wave.
 
 Do not revive an old recipient list without validating it against the current thread and instructions.
 
 Do not use a large CC distribution as a substitute for recipient analysis.
+
+For media, multiple suitable named people at the same outlet may be active concurrently. Do not impose a same-outlet hold or response-window spacing rule. Where no direct staff address is verified, an outlet-published newsroom route may carry a named `A la atención de [name]` package, but it must never be represented as the person's direct address.
 
 ### 4. Run the channel-preflight gate
 
@@ -75,6 +84,9 @@ Before drafting, check:
 
 - current identity and role;
 - address reliability/current public source where practical;
+- completed person Gmail scan;
+- completed outlet/employer/organisation Gmail scan;
+- exhausted pagination and classified collisions;
 - previous bounce or delivery failure;
 - existing specialist mailbox/channel;
 - existing ticket/reference/expediente;
@@ -298,7 +310,11 @@ Before any request for send approval, present:
 **Exposure-package level**  
 **Story module(s)**  
 **Why this recipient / personalised angle**  
-**Prior-thread status**  
+**Person Gmail scan / cutoff / pagination result**
+**Organisation Gmail scan / cutoff / pagination result**
+**Direct / colleague / fallback / other-channel collision classification**
+**Prior-thread / response / bounce / redirect status**
+**Routing / outlet-spacing decision**
 **Material new or corrected facts**  
 **Evidence-status / legal-publication risks**  
 **Exact subject**  

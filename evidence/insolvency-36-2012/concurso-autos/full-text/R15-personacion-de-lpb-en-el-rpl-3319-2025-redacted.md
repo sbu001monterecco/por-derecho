@@ -43,7 +43,5 @@ representación a los efectos oportunos
 
                                          En Las Palmas de Gran Canaria, a 26 de febrero de 2026.
 
-                                                              Firmado por [profesional procesal suprimido]
-                                                              (SW) el día 23/02/2026 con un
-                                                              certificado emitido por ACA 1
+                                                              [datos de firma electrónica suprimidos]
 ```

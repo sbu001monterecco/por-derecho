@@ -23,7 +23,7 @@ AL JUZGADO DE DE LO MERCANTIL Nº 1
 
 Don [profesional procesal suprimido], Procurador de los Tribunales, a nombre y en
 representación de la entidad mercantil OCCIDENT GCO, S.A.U. DE SEGUROS Y
-REASEGUROS, con domicilio en Madrid, Paseo de la Castellana nº 4, con CIF
+REASEGUROS, con domicilio [suprimido], con CIF
 [identificador personal suprimido], como así acredito con la correspondiente copia de la escritura de poder que
 se acompaña bajo el documento nº UNO; ante el Juzgado comparezco y como mejor
 proceda en Derecho, respetuosamente, D I G O:
@@ -32,8 +32,8 @@ Que habiendo sido emplazada mi principal en el procedimiento de Juicio Ordinario
 número 641/2024, por medio del presente escrito me persono en las indicadas
 actuaciones, bajo la dirección jurídica del Letrado del ICATF, don [profesional procesal suprimido], colegiación [suprimida] del ICATF, y miembro de la Sociedad Limitada Profesional
 Gabinete Jurídico Hernández Montoya, S.L.P. inscrita en el Registro de Sociedades
-Profesionales del citado ICATF, con el número 83 y cuyo domicilio social se encuentra
-en la calle Hero 12-1º, 38008 de Santa Cruz de Tenerife ([dato de contacto suprimido]email
+Profesionales del citado ICATF, con el número 83 y cuyo domicilio social [suprimido]
+([dato de contacto suprimido]email
 [correo electrónico suprimido]), procediendo a CONTESTAR Y OPONERNOS
 A LA DEMANDA formulada de contrario en base a los siguientes hechos y fundamentos
 jurídicos, y a los fines que en el suplico concretare.

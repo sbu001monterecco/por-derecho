@@ -23,6 +23,7 @@ ES_PATH = ROOT / "es/concurso-36-2012-autos-resoluciones/index.html"
 EN_PATH = ROOT / "en/insolvency-36-2012-orders-decisions/index.html"
 PROVENANCE_PATH = ROOT / "evidence/insolvency-36-2012/ac-removal-fees/provenance.md"
 UNITARY_PATH = ROOT / "archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md"
+WHOLE_FILE_PROMPT_PATH = ROOT / "archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md"
 
 PDF_SPECS = {
     "evidence/insolvency-36-2012/ac-removal-fees/auto-1377-2025-removal-public-redacted.pdf": (3, "a19975991ddf5aceb17f95247d05c7a7cd115bf9cd4ce6e7b3c7f127aeeba5b7"),
@@ -45,7 +46,10 @@ PRIVACY_PATTERNS = {
     "UK mobile": r"(?<!\d)(?:\+44|0044)\s*\d(?:[\s()-]*\d){8,11}(?!\d)",
     "NIG/IUP": r"\b(?:NIG|IUP)\s*:",
     "court verification code": r"A05003250|sede\.justiciaencanarias\.es/sede/tramites-comprobacion",
-    "electronic-signature metadata": r"Firmado digitalmente por:|NOMBRE\s+[A-ZÁÉÍÓÚÜÑ ]+\s+-\s+NIF",
+    "electronic-signature metadata": r"Firmado digitalmente por\b|^\s*Firmado por\b|NOMBRE\s+[A-ZÁÉÍÓÚÜÑ ]+\s+-\s+NIF",
+    "masked personal identifier": r"\*{2,}\d{2,}\*{2,}",
+    "signature certificate tail": r"\b(?:FNMT Usuarios|certificado emitido por ACA)\b",
+    "unnecessary published postal address": r"Paseo de la Castellana\s*(?:n[ºo]\s*)?4|calle Hero\s+12-1",
     "IBAN": r"\bES\d{2}(?:[ -]?\d){20}\b",
 }
 
@@ -93,6 +97,12 @@ if manifest.get("schema") != "concurso36-autos-fulltext-v1":
     errors.append("manifest: wrong schema")
 if manifest.get("cutoff") != "2026-08-23":
     errors.append("manifest: wrong cut-off")
+for marker in (
+    "20 January 2026 preliminary hearing",
+    "certified chronological docket/index",
+):
+    if not any(marker in gap for gap in manifest.get("known_gaps", [])):
+        errors.append(f"manifest known_gaps: missing {marker!r}")
 if len(documents) != 50:
     errors.append(f"manifest: expected 50 records, found {len(documents)}")
 
@@ -143,7 +153,7 @@ for record in documents:
         errors.append(f"{path.relative_to(ROOT)}: empty or missing text block")
     privacy_text = re.sub(r"`[0-9a-f]{64}`", "", text, flags=re.I)
     for label, pattern in PRIVACY_PATTERNS.items():
-        if re.search(pattern, privacy_text, flags=re.I):
+        if re.search(pattern, privacy_text, flags=re.I | re.M):
             errors.append(f"{path.relative_to(ROOT)}: possible {label} leakage")
 
 actual_transcripts = {path.name for path in FULL_ROOT.glob("[RF][0-9][0-9]-*.md")}
@@ -182,8 +192,8 @@ require(
     ES_PATH,
     es,
     [
-        "Autos y resoluciones del Concurso 36/2012",
-        "50</strong><span>piezas digitizadas",
+        "Autos, decisiones y escritos localizados del Concurso 36/2012",
+        "50</strong><span>piezas especialistas digitizadas",
         "25</strong><span>actos judiciales / LAJ",
         "La solicitud de separación y la demanda de honorarios fueron desestimadas en primera instancia por legitimación activa",
         "Texto íntegro de Juez, Sala y LAJ",
@@ -195,8 +205,8 @@ require(
     EN_PATH,
     en,
     [
-        "Orders and decisions in Insolvency 36/2012",
-        "50</strong><span>digitised records",
+        "Located orders, decisions and filings in Insolvency 36/2012",
+        "50</strong><span>digitised specialist records",
         "25</strong><span>court / LAJ acts",
         "The removal application and the remuneration claim were dismissed at first instance on active-standing grounds",
         "Complete Judge, Appeal Court and LAJ text",
@@ -248,8 +258,39 @@ require(
         "## 4. Decision matrix",
         "## 7. Known gaps at the cut-off",
         "No public text may say that the court found the remuneration lawful or unlawful",
+        "Whole-file continuation",
+        str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)),
     ],
 )
+
+whole_file_prompt = read(WHOLE_FILE_PROMPT_PATH)
+require(
+    WHOLE_FILE_PROMPT_PATH,
+    whole_file_prompt,
+    [
+        "complete Concurso 36/2012 judicial and party record",
+        "AUDIT_ACQUIRE_DIGITISE_PREPARE",
+        "PUBLISH_PUBLIC_SAFE",
+        "derive the expected denominator",
+        "Communications by parties",
+        "Authorisation ≠ implementation",
+        "CERTIFIED_COURT_COPY",
+        "Public/private and privilege boundary",
+        "Existing public archive: extend, do not duplicate",
+        "Current P0 source demands",
+        "Validation and release gate",
+        "Never claim the file is complete until a certified court index has been reconciled record by record",
+        "The prompt does not authorise sending, resending, forwarding or self-emailing any message",
+    ],
+)
+
+for rel, markers in {
+    "CHATGPT_START_HERE.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "31. For **any request to obtain"],
+    "archive/CHATGPT_PROMPT_LIBRARY.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "## P25 — Complete Concurso 36/2012 judicial and party record"],
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "Complete Concurso 36/2012 judicial and party record"],
+}.items():
+    path = ROOT / rel
+    require(path, read(path), markers)
 
 route_pairs = (
     "/es/concurso-36-2012-autos-resoluciones/",

@@ -77,8 +77,5 @@ de 5 de mayo de 2026, con cuanto demás proceda en Derecho.
 
                                         En Las Palmas de Gran Canaria, a 23 de julio de 2026.
 
-                                                         Firmado por SIXTO SEIJAS
-                                                         JAVIER - ***8165** con un
-                                                         certificado emitido por AC
-                                                         FNMT Usuarios
+                                                         [datos de firma electrónica suprimidos]
 ```

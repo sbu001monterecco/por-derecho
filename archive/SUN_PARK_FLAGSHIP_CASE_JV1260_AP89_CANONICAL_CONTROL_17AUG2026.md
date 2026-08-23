@@ -1,7 +1,7 @@
 # SUN PARK — FLAGSHIP / TEST CASE CONTROL
 
 **Canonical proceeding family:** JV 1260/2011 → Rollo de Apelación 793/2012 → AP Las Palmas Sentencia 89/2014  
-**Date:** 17 August 2026  
+**Date:** 17 August 2026; updated 23 August 2026  
 **Status:** CANONICAL CASE-SPOTLIGHT CONTROL / PUBLICATION-SAFE WITH QUALIFICATIONS  
 **Purpose:** Give the pre-concurso eviction/operator proceeding its own flagship case identity and preserve the exact boundary between documented judicial facts, the plaintiffs' procedural initiative, Project allegations, and the separate criminal/forensic questions now under investigation.
 
@@ -30,7 +30,7 @@ The case is therefore a **flagship reconstruction case**, not a predetermined cr
 
 - **Court:** Juzgado de Primera Instancia nº 4 de Arrecife.
 - **Proceeding:** Juicio verbal (desahucio por precario), nº 1260/2011.
-- **NIG:** 3500442120110008131 (recorded in the appellate header).
+- **NIG:** retained in private source control and withheld from public derivatives as an unnecessary case identifier.
 - **Originating claim family:** a primary PDF is controlled in Google Drive under titles including `Juicio Desahucio por Precario 1260-2011 23DIC2011.pdf` and duplicate/copy variants.
 - **23-Feb-2012 pleading:** the existing action was expanded against **Monterecco Sun Park, S.L.** after the claimants said they had learned of a change in exploitation.
 
@@ -41,12 +41,18 @@ The case is therefore a **flagship reconstruction case**, not a predetermined cr
 - **Date:** 13 January 2014.
 - **Origin:** JPI nº 4 de Arrecife, JV 1260/2011.
 - **Primary PDF family:** controlled in Drive under titles including `Sentencia Proc1260-2011 13ENE2014.pdf` and `Sentencia Apelación Audiencia Proc1260-2011 13ENE2014.pdf` (encoding variants exist).
+- **Source control:** SHA-256 `1bce9ad6111645393ee2f23915b7df05a9a879181f2c19fad83f6b3e8989c1ec`; the original remains private. Public derivative: `evidence/jv-1260-2011/full-text/AP89-2014-JV1260-sentencia-redacted.md`.
+- **Operative result:** the Audiencia allowed the claimants' appeal, partially reversed the first-instance judgment, ordered the eviction of both CEXP and Monterecco from the claimants' eighteen units, imposed first-instance costs on Monterecco and made no special appellate costs order.
+- **Adverse ratio:** the Audiencia found that Monterecco possessed the apartments and keys, held the extension against it justified, and applied veil lifting because of the close relationship between CEXP, Monterecco and LPB in this dispute.
+- **Scope boundary:** the judgment did not decide title or authority over the rest of the mixed-ownership complex, later Community governance, the 2018 events, Concurso 36/2012 or criminal responsibility. Finality and actual enforcement remain separate source questions.
 
 ## 3. Plaintiffs' procedural equation / extension — controlling hypothesis
 
 The project must not describe CEXP as simply having "converted into" Monterecco Sun Park.
 
 The central procedural fact to reconstruct is that **the plaintiffs initiated the expansion/equation** by asking the court to extend the existing proceedings against Monterecco after the February-2012 change in exploitation.
+
+The appellate result is not open on that dispute: AP 89/2014 accepted Monterecco's possession, treated the extension as justified and lifted the veil. What remains open is the exact first-instance procedural mechanism, finality/implementation and whether any later actor reused that ratio beyond the eighteen-unit perimeter.
 
 Canonical investigative chain:
 
@@ -70,14 +76,15 @@ The words **conversion**, **succession**, **substitution**, **joinder**, **exten
 
 ## 4. Key appellate source findings — use with precision
 
-The appellate source is important because the current extraction/review records two propositions that must remain separate:
+The appellate source is important because the complete page-faithful review records three points that must remain separate:
 
-1. a claimant-side perimeter tied to **18 units**; and
-2. a recorded **88.96% LPB presence/participation in the Comunidad de Explotación**.
+1. **adjudicated holding:** eviction of CEXP and Monterecco from the claimants' eighteen apartments; first-instance costs against Monterecco; no appellate costs order;
+2. a claimant-side perimeter tied to **18 units**; and
+3. the judgment's wording that the Comunidad de Explotación **“was constituted 88.96% by the apartments” belonging to LPB**.
 
 These figures are not self-proving conclusions about every legal issue. In particular:
 
-- the 88.96% operating/participation figure does **not** itself establish authority over the 18 claimant-side units;
+- that 88.96% apartment-composition statement does **not** itself establish authority over the 18 claimant-side units;
 - it does **not** establish a valid Comunidad de Propietarios voting majority at every later meeting;
 - it does **not** determine the validity of the disputed 2011 governance transition;
 - it does **not** automatically validate or invalidate later debt certificates, vote exclusions or office-holder authority;
@@ -217,9 +224,10 @@ The books are interpretive/long-form outputs; the repository remains the source-
 
 - Existence/procedural identity of JV 1260/2011: **VERIFIED**.
 - 23-Feb-2012 plaintiff expansion against Monterecco: **VERIFIED WITH SOURCE-SCOPE LIMITATION**.
-- AP 89/2014 / Rollo 793/2012 / date 13-Jan-2014: **VERIFIED**.
+- AP 89/2014 / Rollo 793/2012 / date 13-Jan-2014: **VERIFIED; COMPLETE REDACTED PUBLIC TRANSCRIPT CONTROLLED**.
+- Adverse appellate holding — eviction of CEXP and Monterecco from the eighteen claimant units, first-instance costs against Monterecco and no appellate costs order: **ADJUDICATED / PUBLIC WITH THE EXPRESS SCOPE LIMIT ABOVE**.
 - 18-unit claimant-side perimeter: **VERIFIED WITH CONTEXT LIMITATION**.
-- 88.96% LPB/CEXP participation figure: **VERIFIED WITH CONTEXT LIMITATION**.
+- 88.96% CEXP apartment-composition statement: **VERIFIED WITH CONTEXT LIMITATION**.
 - Plaintiffs' procedural equation as the origin of the CEXP→Monterecco litigation bridge: **STRONGLY SUPPORTED / REQUIRES COMPLETE ORDER-AND-PLEADING RECONSTRUCTION FOR EXACT LEGAL CHARACTERISATION**.
 - Maquinación fraudulenta / fraude procesal / estafa procesal: **WORKING HYPOTHESES TO TEST; NOT ADJUDICATED FINDINGS**.
 - Any actor-specific criminal responsibility: **OPEN / NO COMPETENT FINDING IDENTIFIED IN THIS CONTROL**.

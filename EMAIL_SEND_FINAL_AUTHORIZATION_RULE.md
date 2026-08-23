@@ -16,6 +16,12 @@ The exact package must identify:
 5. every attachment, including the precise filename and version and, where available, its hash; and
 6. every included external link.
 
+Before the package can be presented as ready or sent, it must also pass the pagination-complete dual Gmail history gate in:
+
+`archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`
+
+That gate requires a fresh, independent search for both the proposed person and their outlet/employer/organisation, including prior direct and indirect approaches, replies, bounces, redirects, colleague/fallback collisions and other-channel contact evidenced by email. Neither half may be omitted.
+
 Approval to investigate, draft, file in the repository, publish a website change, create an audit, preserve evidence, prepare a completion record or approve a different package is **not** email authorization. Repository publication is never, by itself, authority to send an email.
 
 ## 2. No external test sends
@@ -49,6 +55,7 @@ The send path must stop where any of the following is true:
 - the proposed action changes from a draft to a send, or from a new message to a reply, resend, correction, forward or follow-up;
 - the only supposed approval is earlier general consent, publication permission, repository authority, a preservation instruction or approval of another version;
 - the final package has not been presented or unambiguously identified to the user; or
+- the person-and-organisation Gmail history scan is missing, stale, not pagination-complete, leaves a collision unclassified or does not establish a verified current professional route;
 - there is any uncertainty whether the authorization applies to this exact transmission.
 
 Any change after approval invalidates the approval and requires a new final authorization.
@@ -60,6 +67,16 @@ Exact final authorization does not cure a package that violates a controlling re
 For every media recipient—journalist, editor, newsroom, media organisation, media-routing address or journalistic contact—the package must first satisfy:
 
 `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
+
+Media recipient selection and concurrent same-outlet preparation are controlled by:
+
+`archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
+
+That rule permits separate named packages through an outlet-published general newsroom route when it is labelled honestly as `A la atención de [name]`; it never turns that route into a claimed personal address and never bundles approval for several transmissions.
+
+It must also satisfy:
+
+`archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`
 
 That means the actual draft must contain:
 
@@ -86,6 +103,8 @@ If the media-core check fails and no exact waiver exists:
 - Repository-file a redacted draft, recipient plan or attachment manifest where privacy controls permit.
 - Present the complete final outbound package to the user for approval.
 
+Research and drafting may begin from a preliminary history check, but the package must not be marked ready or presented for final approval until the fresh person-and-organisation Gmail scan is complete and every continuation token is exhausted.
+
 A draft must remain a draft. Do not press Send, schedule delivery, resend, forward, self-email or use a connector action that transmits it until the fresh exact authorization is received.
 
 ## 6. Approval and change control
@@ -106,6 +125,8 @@ When an authorized send is performed:
 - classify a bounce, out-of-office response or automated acknowledgement only as the limited event it proves;
 - do not treat delivery as proof of opening, reading, competent routing, acceptance or merits review; and
 - do not expose private addresses, message identifiers or full private content in the public repository.
+
+The sent-copy record must also preserve privately the completed person-and-organisation history-gate classification that controlled the send.
 
 For a media recipient, sent-copy verification must additionally confirm the two exact PNG filenames, the controlled webinar URL, at least one Por Derecho URL and the evidential limitation.
 

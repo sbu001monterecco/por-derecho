@@ -1,6 +1,6 @@
 # La Voz de Lanzarote / Teresa Acosta Hernández outreach record — 23 August 2026
 
-**Status:** SENT + VERIFIED / AWAITING RESPONSE  
+**Status:** SENT COPY VERIFIED / PRIMARY ROUTE BOUNCED / LIMITED CC ROUTE DELIVERY UNCONFIRMED / NO SUBSTANTIVE RESPONSE LOCATED
 **Record class:** outbound-media contact status  
 **Privacy rule:** no private email address, telephone number, Gmail identifier or full private message body is reproduced here.
 
@@ -9,6 +9,8 @@
 The authorised package used a verified La Voz/Lanzarote Media newsroom route as the primary recipient and a verified direction route as a limited routing fallback. It was addressed to Teresa Acosta Hernández in her role as director of La Voz de Lanzarote.
 
 No advertising/subscription address and no Bcc recipient was used.
+
+The actual sent copy remains verified as the authorised package. A later authenticated delivery-status notification records failure only for the primary newsroom route, with SMTP status `554 5.7.1` / `Relay access denied`. The limited direction Cc route is not listed as a failed recipient in that notification. That absence is not independent proof of delivery, reading or competent routing.
 
 ## 2. Final subject and story architecture
 
@@ -69,15 +71,17 @@ The finite request asked La Voz to identify the non-confidential documents, note
 2. Identify what documentary/public-relations material supported the two La Voz/EKN reports and what the newsroom independently verified.
 3. Ask Yaiza and the Cabildo about the 22-August invitation, internal routing, competent interlocutors and records capable of reconciling title, operation, works, finance and public support.
 
-## 6. Current response status
+## 6. Current delivery and response status
 
 A connected-Gmail scan immediately after the send located **no incoming response** from the active La Voz/Lanzarote Media, Diario de Lanzarote or El Confidencial media domains after 23 August 2026 at the scan cutoff.
 
-That status means only:
+A later connected-Gmail read located the authenticated delivery-status notification described above. The controlled classifications are therefore:
 
-`NO RESPONSE LOCATED YET`.
+- `PRIMARY NEWSROOM ROUTE — DELIVERY FAILURE / BOUNCE`;
+- `LIMITED DIRECTION CC ROUTE — NO FAILURE NOTICE LOCATED / DELIVERY NOT INDEPENDENTLY CONFIRMED`; and
+- `NO SUBSTANTIVE RESPONSE LOCATED YET`.
 
-It does not establish non-receipt, refusal, non-interest, non-reading or editorial rejection.
+The bounce proves failure of the primary route only. It does not establish failure or success of the limited Cc route, refusal, non-interest, non-reading or editorial rejection.
 
 ## 7. Follow-up rule
 

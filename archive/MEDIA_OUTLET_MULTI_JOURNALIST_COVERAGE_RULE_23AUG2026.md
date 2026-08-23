@@ -4,6 +4,8 @@
 **Status:** mandatory media-campaign coverage control  
 **Send control:** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
 
+**Maximum-distribution overlay:** `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
+
 ## Core rule
 
 A newspaper, digital newspaper, news magazine, broadcaster or comparable editorial organisation is **not treated as fully covered merely because one journalist has been contacted**.
@@ -13,6 +15,8 @@ For every material media outlet, identify and pursue at least **two distinct nam
 A generic newsroom, `redaccion@`, `info@`, contact form, switchboard, press mailbox or general editorial address does **not** count as the second named journalist. One named journalist plus a generic newsroom Cc therefore remains:
 
 `OUTLET COVERAGE = PARTIAL`.
+
+An outlet-published general or regional newsroom address may nevertheless be used as an honest professional routing route for a named package when no direct address is verified and the package says `A la atención de [name]`. It is never described as that person's direct address. Under the maximum-distribution overlay, all suitable named lanes may be prepared concurrently and no same-outlet response window, spacing rule or two-person ceiling applies.
 
 ## Role differentiation
 
@@ -51,6 +55,8 @@ Default:
 
 Where two journalists genuinely work the same story together, a shared package may be appropriate, but the package must still explain why both are relevant. Do not mass-CC multiple staff merely to manufacture multi-journalist coverage.
 
+This personalisation rule does not require sequential outreach. Separate tailored packages for several people at one outlet may all be active concurrently.
+
 ## Send-control interaction
 
 This rule authorises **research, verification, coverage planning and draft preparation only**.
@@ -67,15 +73,21 @@ Do not describe an outlet as campaign-complete merely because a single journalis
 
 ## CANARIAS7 immediate application
 
-Silvia Fernández is the first named CANARIAS7 economics/RIC lane and has been sent + verified.
+Silvia Fernández is the named CANARIAS7 economics/RIC lane and has been sent + verified.
 
-CANARIAS7 therefore remains:
+David Ojeda is the named Local/Las Palmas/institutions/public-files lane and has been sent + verified.
 
-`PARTIAL — ONE NAMED JOURNALIST`.
+Fran Fajardo is the named tribunals/courts/judicial-document lane; controlling V3 was sent once and the actual sent copy was verified.
 
-Javier Sheng Pang Blanco is a priority candidate for a second named CANARIAS7 lane, subject to fresh current-role, beat and professional-contact verification and a separate recipient-specific package.
+CANARIAS7 therefore is:
 
-A generic CANARIAS7 newsroom/web-redaction Cc does not satisfy the second-journalist requirement.
+`MULTI-JOURNALIST COVERAGE — THREE NAMED LANES SENT + VERIFIED`.
+
+Carmen Delia Aranda, Francisco Suárez Álamo and Javier Sheng Pang Blanco remain optional additional named candidates, subject to fresh current-role, beat and professional-contact verification and a separate recipient-specific package.
+
+Under maximum distribution, `optional` means additional suitable lane rather than `hold`: verify and prepare every role-supported candidate without waiting for another CANARIAS7 lane.
+
+A generic CANARIAS7 newsroom/web-redaction Cc never counted toward the named-journalist requirement.
 
 ## Current-campaign audit principle
 

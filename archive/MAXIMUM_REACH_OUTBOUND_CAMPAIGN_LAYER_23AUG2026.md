@@ -8,7 +8,7 @@
 
 This layer governs how Project Sun Rock / Por Derecho converts safe recipient-specific email preparation into a controlled exposure and engagement programme.
 
-The objective is **not maximum recipient count**. The objective is to maximise:
+The media-distribution objective is maximum credible coverage across all suitable verified named professionals and useful official newsroom routes. Recipient count is pursued through role-based personalisation, not blind duplication. Optimise:
 
 `RELEVANT REACH × RECIPIENT CREDIBILITY × MESSAGE COMPREHENSION × EVIDENTIAL CREDIBILITY × DELIVERABILITY × CHANCE OF MEANINGFUL ACTION × FOLLOW-UP TRACEABILITY`
 
@@ -65,9 +65,9 @@ Then classify:
 - **TIER A — bespoke high-value gatekeeper**;
 - **TIER B — specialist audience**;
 - **TIER C — wider awareness**;
-- **HOLD — not presently justified**.
+- **RESEARCH ACTIVE — fit, identity or route not yet sufficiently verified; do not guess**.
 
-A high-recipient-count list is not evidence of high reach.
+A high-recipient-count list is not by itself evidence of high reach; under `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`, every suitable verified named media lane nevertheless remains active and no same-outlet hold or spacing rule applies.
 
 ## 4. Controlled exposure waves
 
@@ -91,7 +91,7 @@ Before drafting, verify:
 1. current recipient identity;
 2. current professional role;
 3. address from a reliable source;
-4. Gmail history for prior contact;
+4. pagination-complete Gmail history for the person **and**, independently, the outlet/employer/organisation under `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
 5. previous bounce or delivery failure;
 6. existing ticket/reference/expediente/thread;
 7. whether a specialist mailbox or channel exists;
@@ -100,6 +100,8 @@ Before drafting, verify:
 10. whether a prior exclusion or correction affects the route.
 
 If a previous address bounced, do not reuse it without fresh verification.
+
+If either the person or organisation scan is incomplete, a continuation token remains, a relevant thread is unread or a colleague/fallback/other-channel collision is unclassified, the channel preflight fails closed. Do not describe the target as untouched merely because no direct `to/from` domain email was located.
 
 If a specialist working channel has already produced a response, prefer it over a generic information address unless there is a documented reason not to.
 
