@@ -1,0 +1,30 @@
+{
+  "id": "fiscalia-tenerife-eg95-2026",
+  "date": "2026-08-21",
+  "updated": "2026-08-23",
+  "status": "procedural-archive-no-express-merits-determination",
+  "office": "Fiscalía Provincial de Santa Cruz de Tenerife",
+  "references": [
+    "Expediente Gubernativo 95/2026",
+    "DP 748/2026",
+    "DIP 20/2026",
+    "ETJ 163/2020",
+    "Cambiario 1048/2019"
+  ],
+  "verified": [
+    "EG 95/2026 was opened and archived on 21 August 2026.",
+    "The stated rationale was that the matter was judicialised in DP 748/2026 and could not be investigated through parallel Fiscalía DIP proceedings.",
+    "The sent email contained preservation, association, classification and finite-evidence requests beyond a request to review the 8 June Fiscalía position."
+  ],
+  "not_proved": [
+    "That the new documents were rejected on their merits.",
+    "That the Decree was legally invalid or issued in bad faith.",
+    "That the 21 August email and annexes were incorporated into DP 748/2026.",
+    "The exact scope of DIP 7/2026 or DIP 12/2026."
+  ],
+  "routes": {
+    "es": "/es/fiscalia-tenerife-eg95-2026/",
+    "en": "/en/fiscalia-tenerife-eg95-2026/",
+    "dp748_es": "/es/fiscalia-tenerife-dp748/"
+  }
+}
