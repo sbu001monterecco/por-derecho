@@ -53,7 +53,31 @@ The send path must stop where any of the following is true:
 
 Any change after approval invalidates the approval and requires a new final authorization.
 
-## 4. Permitted before final approval
+## 4. Mandatory recipient-class content rules
+
+Exact final authorization does not cure a package that violates a controlling recipient-class content rule.
+
+For every media recipient—journalist, editor, newsroom, media organisation, media-routing address or journalistic contact—the package must first satisfy:
+
+`archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
+
+That means the actual draft must contain:
+
+- the appropriate-language PwC PNG attachment;
+- the appropriate-language San Telmo / RICPE / Sun Park PNG attachment;
+- the controlled timestamped San Telmo webinar link;
+- at least one current Por Derecho website link; and
+- the evidential limitation applicable to the maps and webinar.
+
+A general instruction to **“send”** approves only a compliant package; it is not an implied waiver of a missing mandatory component.
+
+A waiver is valid only where the user expressly identifies the exact recipient, exact transmission and exact component to omit. Any such waiver is one-use and must be recorded in the readiness record.
+
+If the media-core check fails and no exact waiver exists:
+
+**SEND STATUS: BLOCKED — MANDATORY MEDIA CORE PACKAGE INCOMPLETE.**
+
+## 5. Permitted before final approval
 
 - Search and read connected email when otherwise authorized by the task.
 - Prepare and revise an email draft.
@@ -64,15 +88,16 @@ Any change after approval invalidates the approval and requires a new final auth
 
 A draft must remain a draft. Do not press Send, schedule delivery, resend, forward, self-email or use a connector action that transmits it until the fresh exact authorization is received.
 
-## 5. Approval and change control
+## 6. Approval and change control
 
 - One authorization permits, at most, one transmission of the approved package unless the user expressly authorizes multiple sends.
 - A successful send consumes the authorization. A resend, correction or follow-up requires a new authorization.
 - A failed or uncertain send does not authorize an automatic retry.
 - Silence, an out-of-office reply, an acknowledgement, a bounce, prior correspondence or a request for more information does not authorize a new recipient or transmission.
 - Do not infer self-email authority from a generic preservation, backup or deletion-closeout protocol.
+- Do not infer an exception to a mandatory attachment, webinar or website-link rule from brevity, recipient tailoring, urgency or the user's later use of the word “send”.
 
-## 6. Post-send verification
+## 7. Post-send verification
 
 When an authorized send is performed:
 
@@ -82,16 +107,22 @@ When an authorized send is performed:
 - do not treat delivery as proof of opening, reading, competent routing, acceptance or merits review; and
 - do not expose private addresses, message identifiers or full private content in the public repository.
 
+For a media recipient, sent-copy verification must additionally confirm the two exact PNG filenames, the controlled webinar URL, at least one Por Derecho URL and the evidential limitation.
+
 A failed or uncertain send remains `NOT VERIFIED AS SENT` until the connected mailbox confirms the event.
 
-## 7. Incident control
+## 8. Incident control
 
 The 23 August 2026 connected-mail rescan located an empty “DO NOT SEND” transmission to a real external address and a one-character test to a reserved invalid address. Neither carried the substantive evidence package. The incident and corrective hard stop are preserved in:
 
 `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`
 
-Do not send an apology, correction, replacement or explanation merely because the incident was discovered. Any corrective communication requires its own exact final authorization.
+A separate 23 August 2026 media-package incident, in which mandatory media attachments and the webinar were wrongly treated as optional before a later authorised correction, is controlled by:
 
-## 8. Current repository work
+`archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
 
-The CAM closeout, cross-thread rescan and website updates authorize **no email**. All preservation in this package is repository-only unless the user later approves an exact outbound package under this rule.
+Do not send an apology, correction, replacement or explanation merely because an incident was discovered. Any corrective communication requires its own exact final authorization.
+
+## 9. Current repository work
+
+Repository updates, cross-thread rescans and website changes authorize **no email**. All preservation in those packages is repository-only unless the user later approves an exact compliant outbound package under this rule.
