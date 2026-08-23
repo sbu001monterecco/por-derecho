@@ -68,6 +68,12 @@ For every media recipient—journalist, editor, newsroom, media organisation, me
 
 `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
 
+Media recipient selection and concurrent same-outlet preparation are controlled by:
+
+`archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
+
+That rule permits separate named packages through an outlet-published general newsroom route when it is labelled honestly as `A la atención de [name]`; it never turns that route into a claimed personal address and never bundles approval for several transmissions.
+
 It must also satisfy:
 
 `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`

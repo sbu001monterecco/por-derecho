@@ -70,13 +70,13 @@ Apply this exact result if either half of the scan is missing, any pagination to
 
 **SEND STATUS: BLOCKED — PERSON/ORGANISATION GMAIL HISTORY GATE INCOMPLETE.**
 
-A prior approach does not always prohibit a later email. It does require an explicit classification, recipient-specific justification, duplicate/outlet-spacing decision and accurate message type before the package can advance.
+A prior approach does not by itself prohibit or hold a later email. It requires an explicit classification, recipient-specific justification, collision/routing decision and accurate message type before the package can advance. Under `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`, prior contact with a colleague or outlet does not create automatic same-outlet spacing.
 
 If a proposed named recipient lacks a verified current professional route:
 
 **SEND STATUS: BLOCKED — PROFESSIONAL ROUTE NOT VERIFIED.**
 
-Do not guess a private or professional address. A generic newsroom or information address does not count as a verified direct route to a named person unless the outlet expressly identifies it for that person or the user expressly approves the generic routing package as such.
+Do not guess a private or professional address. A generic newsroom or information address is not a verified direct route to a named person. It may be used as a verified **professional routing route** only when the outlet publishes it as an official route and the package honestly says `A la atención de [name]`, or the user expressly approves another accurately labelled generic routing package.
 
 ## 6. Timing, invalidation and authorization
 
@@ -102,8 +102,8 @@ DIRECT ORGANISATION HISTORY = ...
 COLLEAGUE / FALLBACK / OTHER-CHANNEL COLLISION = ...
 RESPONSE / BOUNCE / REDIRECT STATUS = ...
 MESSAGE CLASSIFICATION = ...
-ROUTING / SPACING DECISION = ...
+ROUTING / COLLISION DECISION = ...
 HISTORY-GATE RESULT = PASS / BLOCKED
 ```
 
-No send action may be invoked unless `PERSON GMAIL SCAN`, `ORGANISATION GMAIL SCAN` and `PAGINATION` are complete, the collision decision is recorded, the professional route is verified, all other package rules pass and the exact package has fresh final authorization.
+No send action may be invoked unless `PERSON GMAIL SCAN`, `ORGANISATION GMAIL SCAN` and `PAGINATION` are complete, the collision decision is recorded, the direct or official professional routing route is verified, all other package rules pass and the exact package has fresh final authorization.

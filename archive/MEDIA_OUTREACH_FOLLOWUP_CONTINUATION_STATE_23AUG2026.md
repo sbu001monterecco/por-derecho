@@ -35,7 +35,7 @@ For Teresa, preserve the separate route-level delivery classification above. For
 Silvia Fernández = economics/RIC/business lane, SENT + VERIFIED.  
 David Ojeda = Local/Las Palmas/institutions/public-files lane, SENT + VERIFIED.
 
-CANARIAS7 satisfies the two-named-journalist minimum, but user instruction is to continue relevant named lanes one by one.
+CANARIAS7 satisfies the two-named-journalist minimum. The controlling instruction is maximum distribution: all suitable named lanes may be researched and prepared concurrently. No same-outlet hold, response window or spacing rule applies. Read `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`.
 
 ## Fran Fajardo — controlling V3 sent state
 
@@ -102,7 +102,7 @@ A fresh `main` search found no public Por Derecho page citing that article/path 
 1. Carmen Delia Aranda — institutional/social-public-affairs lane; reverify current role/contact.
 2. Francisco Suárez Álamo — director/commissioning/editorial-accountability lane; current verified role routing only.
 3. Javier Sheng Pang Blanco — economics/tourism/public-policy lane when a verified direct route is available.
-4. Historical `lpalacios@canarias7.es` remains HOLD until current named identity is resolved.
+4. Historical `lpalacios@canarias7.es` remains `IDENTITY RESEARCH ACTIVE — DO NOT GUESS` until current named identity is resolved.
 
 ## Current story core
 
@@ -118,7 +118,7 @@ Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before 
 
 Read `archive/CANARY_AND_SPANISH_MEDIA_TARGET_REFRESH_23AUG2026.md`.
 
-The Ariadna Martínez / Atlántico Hoy lane has now passed the pagination-complete person-and-outlet Gmail history scan and its exact proposition/package is prepared locally in `archive/ATLANTICO_HOY_ARIADNA_MARTINEZ_PREPARATION_RECORD_23AUG2026.md`. No direct person/outlet email was located; a limited outlet-editor LinkedIn invitation acceptance is classified as prior-channel contact, not substantive engagement. Her direct professional route remains unresolved, no Gmail draft exists, and nothing is authorised or sent. Verify the route without guessing before any approval checkpoint. Ramón Betancor / RTVC and Sandra Tobar / EL ESPAÑOL-Invertia follow in the research queue. Javi Rodríguez and Janire Alfaya require SER outlet-level spacing because Lourdes Santana is already sent. Manuel Riveiro is HOLD because he was named as the fallback in the Saúl package. Agustín Marco is HOLD because of extensive 2024 same-subject Gmail history plus the current Ruth Ugalde window.
+All 11 current Atlántico Hoy editorial lanes have now passed the pagination-complete person-and-outlet Gmail history scan and have separate recipient-specific packages in `archive/ATLANTICO_HOY_MAXIMUM_DISTRIBUTION_PREPARATION_RECORD_23AUG2026.md`. No public direct staff address was verified. The official Tenerife and Las Palmas newsroom routes are verified and are labelled honestly as routing addresses, not personal mailboxes. A limited outlet-editor LinkedIn invitation acceptance remains prior-channel context, not substantive engagement. No Gmail draft exists and nothing is authorised or sent. Ramón Betancor / RTVC, Sandra Tobar / EL ESPAÑOL-Invertia, both additional SER lanes, Manuel Riveiro and Agustín Marco all remain active for history-aware research/preparation without same-outlet holds.
 
 Do not send, resend, correct, follow up or reply without fresh exact user authorisation for that specific package.
 
