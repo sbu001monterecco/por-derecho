@@ -1,0 +1,179 @@
+name: Verify CAM thread closeout live
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md'
+      - 'publication-manifests/cam-creditor-control-criminal-lead-20260823.json'
+      - 'assets/data/cam-nondilution-thread-closeout-v1.json'
+      - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
+      - 'en/index.html'
+      - 'es/index.html'
+      - '.github/workflows/verify-cam-thread-closeout-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md'
+      - 'publication-manifests/cam-creditor-control-criminal-lead-20260823.json'
+      - 'assets/data/cam-nondilution-thread-closeout-v1.json'
+      - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
+      - 'en/index.html'
+      - 'es/index.html'
+      - '.github/workflows/verify-cam-thread-closeout-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-cam-thread-closeout-live-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-public-edge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Verify closeout, chronology, attribution and no-send boundaries
+        env:
+          VERIFY_TRIGGER_SHA: ${{ github.sha }}
+          VERIFY_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import datetime as dt
+          import json
+          import os
+          import time
+          import urllib.request
+
+          base = "https://sbu001monterecco.github.io/por-derecho"
+          targets = {
+              "closeout_record": (
+                  f"{base}/assets/data/cam-nondilution-thread-closeout-v1.json",
+                  [
+                      "CAM-NONDILUTION-THREAD-CLOSEOUT-20260823",
+                      "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+                      "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+                      "22f10cea2cab18539c55d6283eb9ebce16d40f71",
+                      '"direct_attribution_preserved": true',
+                      '"criminal_guilt_adjudicated": false',
+                      '"contemporaneous_email_source_literal": "Laura Matos"',
+                      '"this_closeout_authorizes_email": false',
+                      '"external_test_sends_permitted": false',
+                  ],
+              ),
+              "cam_cross_site_module": (
+                  f"{base}/assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js",
+                  [
+                      "Gil Marer and Aweswell directly allege",
+                      "Laura Patricia Acosta Matos",
+                      "Direct allegation ≠ adjudicated finding",
+                      "Publication control: merged, publicly verified and recoverable without the originating chat.",
+                      "Control de publicación: fusionado, verificado públicamente y recuperable sin el chat de origen.",
+                      "cam-nondilution-thread-closeout-v1.json",
+                  ],
+              ),
+              "english_cam_dossier": (
+                  f"{base}/en/cam-creditor-control-shadow-administration-judicial-omission/",
+                  [
+                      'data-express-criminal-attribution="20260823"',
+                      "Gil Marer and Aweswell expressly allege",
+                      "These are direct criminal allegations supported by a multi-layer evidential corpus. They are not judicial findings.",
+                      "Laura Patricia Acosta Matos",
+                      '<span data-source-literal>“Laura Matos”</span>',
+                  ],
+              ),
+              "spanish_cam_dossier": (
+                  f"{base}/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
+                  [
+                      'data-express-criminal-attribution="20260823"',
+                      "Gil Marer y Aweswell atribuyen directamente",
+                      "Son acusaciones penales directas apoyadas en un corpus probatorio de varias capas. No son declaraciones judiciales.",
+                      "Laura Patricia Acosta Matos",
+                      '<span data-source-literal>«Laura Matos»</span>',
+                  ],
+              ),
+              "english_home_chronology": (
+                  f"{base}/en/",
+                  [
+                      "By 22 Jun 2011 → Community administration",
+                      "The 22 June 2011 minutes identify him as Community Administrator.",
+                      "By 10 Apr 2014 → representation / Community",
+                      "The 10 April 2014 notarial record identifies him as Cristina Molina Petit’s representative.",
+                      "By 8 Apr 2014 → communications / administration",
+                      "A Pamanil communication dated 8 April 2014 appears signed by FMMM and Shaila.",
+                  ],
+              ),
+              "spanish_home_chronology": (
+                  f"{base}/es/",
+                  [
+                      "Antes del 22 jun 2011 → administración comunitaria",
+                      "El acta de 22 de junio de 2011 lo identifica como Administrador de la Comunidad.",
+                      "Antes del 10 abr 2014 → representación / Comunidad",
+                      "El acta notarial de 10 de abril de 2014 lo identifica como representante de Cristina Molina Petit.",
+                      "Antes del 8 abr 2014 → comunicaciones / administración",
+                      "Una comunicación Pamanil de 8 de abril de 2014 aparece firmada por FMMM y Shaila.",
+                  ],
+              ),
+          }
+
+          def fetch(url: str, attempt: int) -> tuple[int, str]:
+              separator = "&" if "?" in url else "?"
+              request = urllib.request.Request(
+                  f"{url}{separator}camcloseout={int(time.time())}-{attempt}",
+                  headers={
+                      "User-Agent": "Por-Derecho-CAM-thread-closeout-verifier/1.0",
+                      "Cache-Control": "no-cache",
+                      "Pragma": "no-cache",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return response.status, response.read().decode("utf-8", "replace")
+
+          latest: dict = {}
+          passed = False
+          for attempt in range(1, 31):
+              checks: dict[str, bool] = {}
+              details: dict[str, dict] = {}
+              for name, (url, markers) in targets.items():
+                  try:
+                      status, body = fetch(url, attempt)
+                      marker_results = {marker: marker in body for marker in markers}
+                      checks[name] = status == 200 and all(marker_results.values())
+                      details[name] = {
+                          "url": url,
+                          "http_status": status,
+                          "bytes": len(body.encode("utf-8")),
+                          "markers": marker_results,
+                      }
+                  except Exception as exc:
+                      checks[name] = False
+                      details[name] = {"url": url, "error": repr(exc)}
+              latest = {"attempt": attempt, "checks": checks, "details": details}
+              print(json.dumps(latest, ensure_ascii=False, indent=2))
+              if all(checks.values()):
+                  passed = True
+                  break
+              time.sleep(15)
+
+          record = {
+              "schema": "por-derecho/cam-thread-closeout-live-verification/v1",
+              "status": "PASS" if passed else "FAIL",
+              "event_name": os.environ.get("VERIFY_EVENT_NAME", ""),
+              "verification_trigger_sha": os.environ.get("VERIFY_TRIGGER_SHA", ""),
+              "verified_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
+              "public_base": base,
+              **latest,
+          }
+          print("CAM_THREAD_CLOSEOUT_LIVE_RESULT=" + json.dumps(record, ensure_ascii=False, separators=(",", ":")))
+          if not passed:
+              raise SystemExit("CAM THREAD CLOSEOUT PUBLIC EDGE: FAIL")
+          print("CAM THREAD CLOSEOUT PUBLIC EDGE: LIVE VERIFIED")
+          PY
