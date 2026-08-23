@@ -11,11 +11,13 @@ This pass tested the hypothesis that Francisco de Borja Rodríguez-Batllori Laff
 
 The audit was run as a hostile causation test, not as an instruction to confirm the hypothesis. Gmail, Google Drive and the current repository were searched for both supporting and contradicting material. Private correspondence remains in its source system; this repository records only public-safe metadata, evidential classification and analytical consequence.
 
-The governing distinction is:
+The original audit used the following internal distinction:
 
 > **AC conduct may materially burden or constrain a lawyer's work without being the reason that lawyer leaves.**
 
 Chronology is not causation. Professional conflict with the AC is not proof of improper interference. Objective effect, foreseeability and intent are separate questions.
+
+**23-Aug-2026 contextual correction:** that distinction is an internal evidence check, not an adequate public narrative. It must not be used to split an integrated mandate into a binary “AC impact” versus “fee-caused withdrawal” label. A stated withdrawal reason does not retrospectively answer what protection was accepted or billed, how AC conduct affected the work, whether the professional response was effective, or how cumulative pressure affected continuity. Future public wording must present those elements together, preserving both the client’s attributed allegation and the strongest contrary evidence. It may not turn the absence of proof of an exclusive exit cause into a finding of no material AC effect.
 
 **22-Aug-2026 attribution control:** Gil Marer has authorised public identification of **Garrigues** and asks that the firm/relevant professionals give witness evidence. His statement was supplied in text while he identified himself. It is recorded as his recollection, not as forensic voice authentication, verified counsel advice or a finding of professional fault.
 
@@ -32,32 +34,32 @@ No lawyer is assigned C4/C5 exit causation in this pass.
 
 ## 3. Executive finding
 
-The hostile test **does not support the broad proposition that Borja caused the succession of lawyers or systematically pushed the principal lawyers away**.
+The hostile test does not establish a single, exclusive chain in which Borja caused every succession of lawyers, or a proved deliberate strategy to push the principal lawyers away.
 
 It does support a narrower and more defensible proposition:
 
-> Across several independent legal teams, AC-controlled procedural, authority and information dependencies repeatedly created additional work, strategic constraints, conflict or workaround requirements for owner-side counsel. Those burdens were material in particular workstreams, but the contemporaneously documented reasons for actual departures are more often unpaid fees, client-lawyer strategy/confidence, or failed replacement continuity.
+> Across several independent legal teams, AC-controlled procedural, authority and information dependencies repeatedly created additional work, strategic constraints, conflict or workaround requirements for owner-side counsel. The effect must be assessed mandate by mandate, including billed protection, professional limits, results and attrition. Contemporaneous departure reasons—often fees or client-lawyer strategy/confidence—remain material evidence, but are not treated as exhaustive accounts of prior AC effect or mandate effectiveness.
 
 The present record also shows a genuine **continuity asymmetry**: the AC remained institutionally continuous throughout a very long proceeding while the owner side repeatedly had to onboard, coordinate or replace lawyers. That asymmetry may have increased the practical cost of each transition, but it does not prove that the AC caused the transitions.
 
-A recurring and independently documented counterfactor is **non-payment or disputed professional fees**. Any future attrition theory that suppresses that evidence would be unreliable.
+A recurring and independently documented factor is **non-payment or disputed professional fees**. Any future account that suppresses that evidence would be unreliable; treating it as an automatic rebuttal of earlier AC impact would be equally incomplete.
 
 No direct evidence has been located in this pass that Borja deliberately intended to isolate, discourage or push away a lawyer.
 
 ## 4. Lawyer-by-lawyer findings
 
-| Professional / firm | AC impact on work | AC causation of exit | Strongest contemporaneous alternative | Current finding |
-|---|---:|---:|---|---|
-| Garrigues / early-2012 team | C0 / open | **C0** | serious client-side fee/value dispute at the transition | no evidence currently ties Borja to the Garrigues exit |
-| Juan Tomás Parrilla | C2 | **C0–C1** | client-initiated substitution / mutual loss of confidence | AC became relevant to later fee/handover mechanics, not proved cause of replacement |
-| Cuatrecasas | C2–C3 | **C0** | formal renunciation expressly based on >2 years unpaid fees | direct counterevidence to AC-caused exit |
-| Cristo Suárez Pimentel | C3 | **C0** | n/a | long-term persistence despite AC conflict is counterevidence to universal push-away theory |
-| Daniel Jiménez / SLJ | **C3** | **C1–C2** | strategy divergence, disagreement over legal-direction control, unpaid agreed fees | direct AC friction existed, but formal resignation does not attribute exit to Borja |
-| DWF/RCD proposed successor team | C1–C2 | **OPEN / C0** | reason not yet recovered | active transition occurred but formal personation did not; no source yet ties failure to Borja |
-| Luis Miguel López | **C3** | **C1–C2** | years of unpaid work + failed replacement continuity + avoidance of indefensión | independent AC criticism/removal recommendation exists, but he continued acting for years |
-| Javier Sixto / Estefanía Sixto | **C3** | **C0** | n/a | strong example of workstream constraint; equally strong counterexample to exit theory because they adapted and continued |
-| Carlos Llamas Sanz | C1–C2 | **C0** | n/a | no direct Borja-to-Carlos interference with current mandate located; Carlos remains active |
-| Armando L. Betancor | open | **C0** | unpaid invoices directly identified | no current source ties reduced activity to Borja |
+| Professional / firm | AC impact on work | Formal transition evidence | Integrated current finding |
+|---|---:|---|---|
+| Garrigues / early-2012 team | C0 / open | Client-side fee/value dispute at transition | No evidence currently ties Borja to the Garrigues transition. Its wider advice and the client’s recollection remain a separate inquiry. |
+| Juan Tomás Parrilla | C2 | Client-initiated substitution / mutual loss of confidence | Direct information limitation and later AC involvement in fee/handover mechanics are documented; the initial replacement is not established as AC-caused. |
+| Cuatrecasas | **C3** | 26 May 2020 letter: >2 years’ unpaid fees; prompt venia/handover | Broad billed finance/insolvency protection, favourable results, entity-specific limits and conditioned responses must be read together. The client alleges the firm/partners failed to deploy the protective architecture fully and that AC conduct materially affected efficacy. The fee letter is relevant but does not dispose of that allegation; no adjudicated professional failure is asserted. |
+| Cristo Suárez Pimentel | C3 | Continued across other mandates | A 25 January 2018 AC communication directly ended/conditioned a defined LPB mandate; persistence elsewhere prevents overgeneralisation. |
+| Daniel Jiménez / SLJ | **C3** | Strategy divergence, legal-direction dispute and unpaid agreed fees | Direct AC friction and the client’s prior no-contact instruction are documented alongside Jiménez’s resistance and stated withdrawal reasons. Shared responsibility/effect remains disputed. |
+| DWF/RCD proposed successor team | C1–C2 | Reason for non-personation not yet recovered | Active transition occurred but formal personation did not; no source yet ties the failure to Borja. |
+| Luis Miguel López | **C3** | Years of unpaid work, failed replacement continuity and avoidance of indefensión | Independent AC criticism/removal recommendation and AC-controlled dependencies existed; long continuation and fee evidence remain part of the same history. |
+| Javier Sixto / Estefanía Sixto | **C3** | Adapted and continued | Strong workstream constraint with sustained advocacy; contradicts an automatic push-away thesis without negating practical AC impact. |
+| Carlos Llamas Sanz | C1–C2 | Remains active | No direct Borja-to-Carlos interference with the current mandate has been located. |
+| Armando L. Betancor | open | Unpaid invoices identified | Reduced-activity causation remains open; separate Article 215.2/Alas evidence is controlled in the 23 August continuity register. |
 
 ## 5. Key episodes
 
@@ -81,13 +83,15 @@ The AC became materially involved in the subsequent dispute over fees/costs and 
 
 **Result:** AC impact on the handover mechanics is plausible/material; AC causation of the initial replacement is not established.
 
-### C. Cuatrecasas renunciation, 26 May 2020
+### C. Cuatrecasas — billed protective mandate, limits, results and 26 May 2020 transition
 
-This is the strongest direct counterevidence to the broad hypothesis. Cuatrecasas' own formal correspondence says that non-payment of its fees for more than two years prevented it continuing to advise Aweswell in the LPB Concurso. The firm granted Daniel Jiménez venia and assisted with handover.
+The 2018 and January–March 2019 proformas show a substantially broader Aweswell mandate than the July 2019 exclusion dispute alone. They billed work principally in corporate finance and insolvency, including liquidation-plan and IA-facing filings, information requests, Acosta Matos/Community issues, ONA, diligence, financing, security and exit. June 2019 correspondence adds proposed lender legal comfort and an Article 176/guarantee/loan/security package. July filings resisted the IA’s attempted exclusion of Aweswell; October correspondence records favourable orders, including rejection of that exclusion request.
 
-Cuatrecasas had nevertheless been dealing with difficult AC/liquidation/registry issues, so AC-generated work and exit causation must not be conflated.
+The same record shows limits in the response. In April 2019, when the classification phase required defence of Gil/LPB, Cuatrecasas drew an entity-specific boundary: Parrilla was LPB counsel; the firm would coordinate, and required venia before taking Gil’s personal defence. Other CAM/IA responses routed immediate action through LPB/Parrilla or made it dependent on deeds. Gil/Patricia allege that, against the breadth of the paid/billed programme, the firm and its partners failed to deploy fully the protective architecture they understood had been retained and that the AC took practical advantage of the resulting gaps. This is their position, not an adjudicated negligence finding.
 
-**Result:** exit causation C0 for Borja on the current record.
+Cuatrecasas’s 26 May 2020 letter says more than two years of unpaid fees prevented continued advice. The firm granted Daniel Jiménez venia and assisted with handover. That is direct evidence of the formal transition reason and professional cooperation; it is not a complete answer to whether earlier AC conduct affected the work or whether the protection delivered matched the mandate understood by the client.
+
+**Result:** material AC effect on the workstream is supported at C3. Overall mandate effectiveness and contribution to deterioration are mixed and disputed; they are not reduced to an exit-causation C0 label.
 
 ### D. Daniel Jiménez — June 2020 AC friction vs formal resignation
 
@@ -168,7 +172,7 @@ The strongest reasonable AC defence is that:
 1. the AC was exercising statutory/fiduciary functions in a difficult Concurso;
 2. litigation for LPB required estate-level control and verification;
 3. requests for information/power/authority were legitimate safeguards rather than interference;
-4. lawyer exits were driven by unpaid fees, client strategy or confidence issues;
+4. formal lawyer-exit communications often identify unpaid fees, client strategy or confidence issues, without necessarily resolving prior AC effect or overall mandate effectiveness;
 5. opposition to AC removal is ordinary procedural defence;
 6. no outgoing lawyer located in this pass directly says Borja caused the departure.
 
@@ -191,15 +195,17 @@ That is now the stronger investigation question.
 
 ## 9. Public-writing lock
 
-Do **not** publish:
+Do **not** publish either reductive formulation:
 
 > “Borja pushed our lawyers away.”
 
-The present safe formulation, if this issue later becomes public, is closer to:
+> “The departure cited fees, therefore the Administrator did not materially affect the firm or the protection it delivered.”
 
-> “The record documents recurring procedural and authority conflicts with the Administrador Concursal that materially increased the complexity of several owner-side legal workstreams. The present evidence does not establish that those conflicts caused the succession of lawyers; where departures are contemporaneously explained, other direct causes—especially unpaid fees and client-lawyer strategy/confidence—predominate.”
+The present safe formulation is:
 
-Any future upgrade requires actor-specific C4/C5 evidence and must preserve the counterevidence.
+> “The record documents recurring procedural and authority conflicts with the Administrador Concursal that materially affected several owner-side legal workstreams. Each mandate must be assessed as a whole: the protection accepted and billed, the AC act, the professional response or limit, the result and any later deterioration or transition. Formal withdrawal reasons remain relevant but do not, by themselves, decide the earlier effect or the adequacy of protection. Allegations of abusive pressure or professional failure remain expressly attributed unless and until adjudicated.”
+
+Any future upgrade to an exclusive-cause, deliberate-intent or professional-liability finding requires actor-specific evidence and must preserve the counterevidence.
 
 Gil's authorised public Garrigues formulation is separate and may be stated as:
 

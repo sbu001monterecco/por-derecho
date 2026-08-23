@@ -24,7 +24,9 @@
 | Gmail thread `17247f3e3ac9a976` | 25 May 2020 | Client’s contemporaneous briefing to Jiménez characterises Joaquín as the signing “face” for Armando/team; this is client account. |
 | Gmail thread `174b08aebc36af90` | 21 September 2020 | Joaquín complete withdrawal, stated ground: irreparable lawyer-client breakdown. |
 | Gmail thread `174b13c4a6a82081` | 21 September 2020 | Armando/team joint withdrawal from Gil/Patricia/Aweswell/related perimeter, same stated ground. |
-| Court order | 19 February 2020 | Authority under Article 215.2 CP concerning Gil, procurator Francisco Javier Pérez Almeida and Joaquín. Does not prove later filing/admission/success. |
+| Gmail parent `1708603cf389331a`; attachment `Providencia Querella GM y equipo legal 19FEB20.pdf` | 19–20 February 2020 | Electronically signed *providencia*. It considers the AC’s filing no. 743/2020 and authorises Francisco de Borja Rodríguez-Batllori Laffitte under Article 215.2 CP “para que pueda interponer querella criminal” against Gil, procurator Francisco Javier Pérez Almeida and Joaquín, conditionally “por si” the pleaded facts constituted calumny and/or serious insult. Reconsideration within five days. It does not decide the merits or prove later filing/admission/success. |
+| AC motion attached to Gmail parent `1708603cf389331a` | 5 February 2020 | Requests Article 215.2 licence and identifies pages 20 and 39 of Gil’s 6 June 2019 classification opposition as the impugned statements. |
+| BOE Código Penal, Article 215.2, `https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a215` | official current text; paragraph applicable in 2020 | No calumny/injury action for statements made in judicial proceedings may be brought without prior licence of the court that heard the matter. Procedural gate, not merits determination. |
 
 ## A4 — Daniel Jiménez / SLJ
 
@@ -54,8 +56,12 @@
 
 | Source | Date | Minimum proposition |
 |---|---|---|
+| Gmail message `16a068a00ac45bb0`; attachments `PROFORMA LUCHY 2018.pdf`, `PROFORMA LUCHY 2019.pdf` | 10 April 2019; time entries 2018–March 2019 | Aweswell was billed for advice mainly in corporate finance and insolvency, including liquidation-plan and IA-facing filings, Acosta Matos/Community issues, ONA, diligence, finance, security and exit-related work. Records a 30% discount and earlier unpaid invoices. |
+| Gmail thread `16a070ee58ac987e`; message `16a0c0e0e50b799c` | 10–11 April 2019 | Client asked the insolvency team with the long case background to assist on the IA classification report. Cuatrecasas stated it represented Aweswell rather than LPB/Gil in the insolvency proceeding, identified Parrilla as LPB counsel, offered coordination and required venia before taking Gil’s personal classification defence. |
+| Gmail message `16a45d3e211a7f82` | 22 April 2019 | On CAM works/appropriation, the response routed the immediate step through LPB/Parrilla and treated a sale challenge as dependent on deeds. This supports a conditioned professional response, not a finding of professional fault. |
+| Gmail messages `16b45e516250be4b`, `16b47bc42d5439c9` | 11 June 2019 | Client sought an Aweswell incident concerning IA/CAM; Iñigo discussed lender legal comfort and the Article 176/guarantee/loan/security package for financed exit. |
 | Gmail thread `16bd678b9e8e95d5`; messages `16bff50c5571c56c`, `16c002202f22e29a` | 4–17 July 2019 | Adriana/team prepared and filed two Aweswell standing/exclusion responses; client approved work. |
-| Gmail thread `16e031deca8e4324`; message `16e1d44fa181d524` | 27–30 October 2019 | Favourable rulings; Iñigo credits Rosa/team work. |
+| Gmail thread `16e031deca8e4324`; message `16e1d44fa181d524`; later reproduced in thread `1725112747cd813a` | 24–30 October 2019 | Orders accepted arguments in the final two Cuatrecasas filings, did not validate the separated sale to CAM and rejected the IA’s 3 May 2019 request to exclude Aweswell as unsupported; Rosa/team work credited. |
 | Gmail message `1725112747cd813a` | 26 May 2020 | Rosa withdrawal; more than two years of unpaid fees stated. |
 | Gmail thread `17251240dec64b8a`; messages `172514078bd7135b`, `17251774e95bab49` | 26 May 2020 | SLJ asks for and Cuatrecasas grants venia; handover. |
 | Gmail messages `17256a585fc1fd43`, `1725bf1d7c4fef84` | 27–28 May 2020 | Pedro Campaña transition and proceeding summary. |

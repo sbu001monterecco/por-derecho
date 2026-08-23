@@ -29,7 +29,9 @@ Previously published names A1–A5 remain.
 
 ### Article 215.2 order
 
-The 19 February 2020 order authorised the AC to bring a possible complaint against Gil, procurator Francisco Javier Pérez Almeida and Joaquín Ruiz de Infante. It does not itself prove filing, admission, success or liability. Cristo’s 27 February assessment of intimidating effect is published as contemporaneous professional opinion.
+Gmail parent `1708603cf389331a` preserves the AC’s 5 February 2020 motion and the attachment `Providencia Querella GM y equipo legal 19FEB20.pdf`, electronically signed by the magistrate-judge on 19 February and LAJ on 20 February. The motion identified pages 20 and 39 of Gil’s opposition. The *providencia* granted the prior Article 215.2 procedural licence “para que pueda interponer querella criminal” against Gil, procurator Francisco Javier Pérez Almeida and Joaquín Ruiz de Infante, conditionally “por si” the statements could constitute calumny and/or serious insult; reconsideration was available within five days. It was not a merits finding and does not itself prove filing, admission, success or liability.
+
+The procedural limitation does not erase practical effect. The record shows urgent meetings, reputation/insurance concern, a ratification draft and internal threats of withdrawal around the core defence pleading. Cristo’s 27 February assessment of intimidating effect is published as contemporaneous professional opinion. Gil/Patricia’s description of the initiative as abusive and materially damaging remains attributed.
 
 ### Daniel / Parrilla / AC
 
@@ -45,7 +47,15 @@ The public page states the client allegation that the AC exploited an opening bu
 
 ### Cuatrecasas
 
-July 2019 filings responded to the attempted exclusion of Aweswell; October correspondence records favourable outcomes and team work. Rosa Gual’s 26 May 2020 withdrawal cites more than two years of unpaid fees. No AC-caused withdrawal is claimed.
+The controlled source set now preserves the mandate as one integrated history:
+
+- Gmail `16a068a00ac45bb0` and `PROFORMA LUCHY 2018.pdf` / `PROFORMA LUCHY 2019.pdf`: broad billed Aweswell finance/insolvency work, including liquidation-plan and IA-facing filings, information, Acosta Matos/Community, ONA, diligence, finance, security and exit;
+- Gmail `16a070ee58ac987e` / `16a0c0e0e50b799c`: April 2019 entity-specific limit when Gil/LPB needed classification defence, coordination with Parrilla and venia requirement;
+- Gmail `16a45d3e211a7f82`, `16b45e516250be4b` and `16b47bc42d5439c9`: conditioned CAM/IA response, requested incident, lender comfort and Article 176/security/financed-exit work;
+- July 2019 Aweswell standing/exclusion filings and October favourable orders, including rejection of the IA exclusion request;
+- Rosa Gual’s 26 May 2020 letter citing more than two years’ unpaid fees, followed by prompt venia and handover.
+
+The public page states, as Gil/Patricia’s allegation, that the firm and its partners did not fully deploy the protective architecture they understood had been billed and that IA conduct materially affected its efficacy. It also preserves the work and favourable results and does not assert adjudicated professional negligence. The formal fee reason is relevant but is not used as a complete characterisation of the earlier mandate or AC effect.
 
 ### Garrigues
 
@@ -63,12 +73,12 @@ The work ledger places Cristo from May 2016 to June 2022. A 25 January 2018 comm
 
 ## Anti-overclaim controls
 
-1. Authorisation is not proof of complaint filing or success.
+1. Article 215.2 licence is not a merits finding or proof of complaint filing/success; its separately documented practical defence effect remains visible.
 2. “Abusive”, “face” and “took advantage” remain attributed allegations.
-3. Sequence is not causation.
-4. Lawyer withdrawal reasons and contrary evidence remain visible.
+3. Sequence alone is not causation, but a mandate account must preserve practical/cumulative effects shown by the record.
+4. Lawyer withdrawal reasons and contrary evidence remain visible without being treated as exhaustive explanations.
 5. Parrilla substitution remains a client decision.
-6. Cuatrecasas withdrawal remains a fee/non-payment event.
+6. Cuatrecasas is presented through its broad billed work, mandate limits, favourable results, the attributed client protection-failure allegation and the fee-based transition—not as a binary fee/non-AC event.
 7. Garrigues has no located AC causal link.
 8. Cristo finding is limited to the identified mandate.
 9. Remaining professionals stay B1, B2, B3… pending verification/publication decision.
@@ -82,6 +92,7 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 
 - bilingual page updates;
 - expanded counsel register;
+- exact source map and corrected AC-interference audit/JSON sidecar;
 - refined exhaustive-scan prompt;
 - expanded publication manifest;
 - this audit.
@@ -96,4 +107,4 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 
 ## Final gate
 
-The thread is **DELETION-SAFE WITH OPEN EVIDENCE**. The remaining work is evidential completion, not recovery of the published state.
+The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 23 August contextual correction prevents a formal withdrawal reason from being used as a substitute for the full mandate history. The remaining work is evidential completion, not recovery of the reasoning or source map.

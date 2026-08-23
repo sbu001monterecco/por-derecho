@@ -27,10 +27,10 @@ Do not treat this list as exhaustive. Unauthorised/unverified names remain B1, B
 
 - all versions and final filed Gil opposition to the classification application;
 - 5–6 June 2019 drafting/revision chain and 26 February–3 March 2020 Alas/Joaquín/ratification threads;
-- 19 February 2020 Article 215.2 order, reconsideration and complete later complaint docket;
+- AC’s 5 February 2020 Article 215.2 motion; the electronically signed 19–20 February *providencia*; any reconsideration; and the complete later complaint docket;
 - 21 September 2020 Ruiz de Infante and Alas/team withdrawal notices;
 - 22 May 2020 SLJ proposal; 25 May briefing; 28 May–23 June Parrilla/AC/CAM contacts; 23 June SLJ withdrawal and client response;
-- Cuatrecasas July 2019 Aweswell-exclusion filings, October result and May 2020 withdrawal/venia;
+- Cuatrecasas engagement/mandate materials; 2018 and Q1-2019 proformas/time entries; April 2019 classification mandate-boundary chain; April/June IA-CAM, lender-comfort and financed-exit work; July Aweswell-exclusion filings; October results; May 2020 withdrawal/venia;
 - Garrigues May–June 2012 insolvency, Bankia, interim-measures and Community work;
 - Cristo May 2016–June 2022 work ledger; 25 January 2018 AC instruction; DP1041/2017 outcome; February 2020 contemporaneous assessment;
 - Luis Miguel 2020 engagement/venia, 2021 and 2025 withdrawals, interim filings and payment chain;
@@ -42,9 +42,9 @@ Do not treat this list as exhaustive. Unauthorised/unverified names remain B1, B
 
 For every professional construct:
 
-`CODE → FULL IDENTITY → FIRM AT TIME → CURRENT IDENTITY (IF PUBLIC/VERIFIED) → CLIENT → PROCEEDING → MANDATE → WORK PRODUCT → AC POWER/DUTY → AC ACT/OMISSION → SOURCE → IMMEDIATE EFFECT → SUBSTITUTION/WITHDRAWAL → STATED REASON → CAUSATION GRADE → STRONGEST CONTRARY EVIDENCE → OPEN GAP`
+`CODE → FULL IDENTITY → FIRM AT TIME → CURRENT IDENTITY (IF PUBLIC/VERIFIED) → CLIENT → PROCEEDING → ACCEPTED/BILLED MANDATE → WORK PRODUCT → AC POWER/DUTY → AC ACT/OMISSION → SOURCE → PROFESSIONAL RESPONSE OR LIMIT → IMMEDIATE/PRACTICAL EFFECT → RESULT → DETERIORATION/SUBSTITUTION/WITHDRAWAL → STATED REASON → CLIENT POSITION → STRONGEST CONTRARY EVIDENCE → OPEN GAP`
 
-Use only these causation grades:
+Internally, use only these source-status controls:
 
 - **DIRECTLY DOCUMENTED**
 - **STRONG SEQUENCE; CAUSATION UNRESOLVED**
@@ -52,18 +52,23 @@ Use only these causation grades:
 - **NO AC LINK LOCATED**
 - **CONTRADICTED / CORRECTED**
 
+These controls are not public causation badges. The public account must read as one integrated mandate history. Do not split the account into “AC workstream impact” and “non-AC exit cause” in a way that treats the formal exit reason as a complete answer to prior effect, performance or cumulative deterioration.
+
 ## Anti-overclaim rules
 
 - Do not convert authorisation to complain into proof of filing, admission or success.
+- Explain Article 215.2 precisely: prior judicial licence is required before bringing a calumny/injury action over statements made in judicial proceedings. The licence is not a merits ruling, but its procedural character does not erase a separately documented practical effect on the defence.
 - Attribute “abusive”, “threat”, “face” and “took advantage” to the person/source making the allegation unless independently established.
 - Do not convert chronology into causation.
 - Retain the lawyer’s own stated reasons and strongest contrary evidence.
+- Do not treat a stated withdrawal reason as an exhaustive characterisation of the earlier mandate, its effectiveness or AC impact.
 - Do not describe client substitution as involuntary withdrawal.
 - Do not infer that non-payment was an AC decision without invoice/request/response proof.
 - Do not merge LPB, Gil, Aweswell, Matkator or Pink mandates.
 - Do not treat Kepler–Karst as corporate successor to Alas without corporate proof.
 - Preserve legal privilege and do not publish confidential advice/weaknesses.
 - Appearance does not imply wrongdoing.
+- Attribute any client allegation that billed protection was not deployed or that a firm “failed” to protect; preserve documented work, favourable results and professional limits, and do not publish professional negligence as adjudicated without such a ruling.
 
 ## Deliverables
 

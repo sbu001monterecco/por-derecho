@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "controlDate": "2026-08-19",
+  "controlDate": "2026-08-23",
   "status": "PUBLIC-SAFE-FORENSIC-SEED-NOT-FRONTEND-READY",
   "canonicalParent": "assets/data/legal-representation-v1.json",
   "humanControl": "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
@@ -9,6 +9,8 @@
     "confirmationBiasForbidden": true,
     "chronologyIsNotCausation": true,
     "workstreamImpactSeparatedFromExitCausation": true,
+    "internalScaleNotPublicNarrative": true,
+    "publicNarrativeIntegratedMandate": "Public wording must combine accepted/billed scope, AC act, professional response or limit, result, deterioration/transition, client position and contrary evidence. A formal exit reason is not an exhaustive finding about prior AC effect or mandate performance.",
     "objectiveEffectSeparatedFromIntent": true,
     "privateSourceBoundary": "Underlying private Gmail and Drive material remains in connected source systems. This file preserves public-safe source descriptions, dates, evidential states and analytical consequences only.",
     "negativeEvidenceRule": "No evidence located is not proof of non-existence or non-occurrence.",
@@ -31,9 +33,9 @@
     },
     {
       "id": "LRAC-OF-002",
-      "proposition": "The present record does not support a recurring proposition that Borja caused the succession of lawyers or effectively pushed the principal lawyers away.",
+      "proposition": "The present record does not establish one exclusive, universal chain in which Borja caused every succession of lawyers, or a deliberate strategy to push all principal lawyers away.",
       "status": "SUPPORTED_BY_COUNTEREVIDENCE",
-      "qualification": "Where departures are contemporaneously explained, fee non-payment, client-lawyer strategy/confidence, or failed replacement continuity usually provide the more direct explanation."
+      "qualification": "Formal reasons such as non-payment, strategy/confidence or failed replacement continuity remain material. They must not be used as exhaustive answers to earlier AC impact, mandate effectiveness or cumulative deterioration."
     },
     {
       "id": "LRAC-OF-003",
@@ -43,9 +45,9 @@
     },
     {
       "id": "LRAC-OF-004",
-      "proposition": "Unpaid or disputed professional fees are a recurring, independently documented attrition factor and must be treated as counterevidence to an AC-caused-exit theory.",
+      "proposition": "Unpaid or disputed professional fees are a recurring, independently documented attrition factor that must be retained in the integrated mandate history.",
       "status": "STRONGLY_SUPPORTED",
-      "qualification": "This factor is particularly clear for Garrigues/Cuatrecasas/Daniel Jiménez/Luis Miguel López and other advisers whose activity was conditioned by unpaid invoices or fees."
+      "qualification": "This factor is particularly clear for Garrigues/Cuatrecasas/Daniel Jiménez/Luis Miguel López and other advisers. It is neither suppressed nor treated as an automatic rebuttal of prior AC impact or alleged protection failures."
     },
     {
       "id": "LRAC-OF-005",
@@ -78,12 +80,13 @@
     {
       "professional": "Cuatrecasas",
       "clientMatter": "Aweswell / Concurso 36/2012 and connected work",
-      "acWorkstreamImpact": "C2-C3",
-      "exitCausation": "C0",
+      "acWorkstreamImpact": "C3",
+      "exitCausation": "MIXED_NOT_REDUCED_TO_SINGLE_CAUSE",
       "documentedAlternativeCause": "Formal 26 May 2020 renunciation correspondence expressly attributes inability to continue to non-payment of fees for more than two years.",
-      "acSpecificFinding": "The firm handled repeated AC/liquidation/registry disputes, but its own stated exit reason is financial.",
-      "counterEvidence": "Cuatrecasas granted venia promptly and provided successor handover assistance.",
-      "openQuestion": "Complete individual-lawyer mandate/end-date reconstruction and quantify AC-generated work separately from the cause of renunciation."
+      "acSpecificFinding": "The 2018/Q1-2019 proformas and 2019 correspondence document a broad finance/insolvency protection programme and IA-facing work across the liquidation plan, information, standing, sales/Registry, Acosta Matos/Community, ONA, financing, security and exit. April 2019 correspondence also records entity-specific mandate limits and conditioned responses when Gil/LPB required classification and CAM/IA protection.",
+      "clientPosition": "Gil/Patricia allege that the firm and its partners did not fully deploy the protective architecture billed for and that IA conduct materially affected its efficacy. This is not an adjudicated professional-negligence finding.",
+      "counterEvidence": "Cuatrecasas obtained favourable October 2019 orders, including rejection of the IA exclusion request, then granted venia promptly and assisted the successor handover.",
+      "openQuestion": "Map each billed protective task to the client/entity, IA event, requested response, professional boundary, result and loss alleged; obtain the complete engagement and invoice/payment file."
     },
     {
       "professional": "Cristo Ayose Suárez Pimentel",
@@ -194,11 +197,11 @@
     "ownerSideKnowledgeContinuityLoss": "SUPPORTED_WITH_MIXED_CAUSATION",
     "unpaidFeesAsRecurringAttritionFactor": "STRONGLY_SUPPORTED"
   },
-  "safeCurrentConclusion": "Across several independent legal teams, the current record supports treating AC-controlled procedural and authority dependencies as a recurring material burden on owner-side representation. It does not presently support treating Borja as a recurring cause of lawyers leaving. Where exit reasons are documented, fee non-payment, client-lawyer strategy/confidence issues and failed replacement continuity provide more direct explanations. The intent hypothesis remains unproved.",
+  "safeCurrentConclusion": "Across several independent legal teams, the record supports treating AC-controlled procedural and authority dependencies as a recurring material influence on owner-side representation. Each mandate must be described as an integrated history of billed scope, IA conduct, professional response or limit, result and later transition. Formal exit reasons remain relevant without deciding the prior AC effect or mandate effectiveness. Exclusive-cause, deliberate-intent and professional-liability findings remain unproved unless specifically adjudicated.",
   "unsafeCurrentConclusion": "Borja pushed successive lawyers away.",
   "publicationGate": {
     "publishAsFrontendClaimNow": false,
-    "reason": "The distinction between recurring workstream constraint and actual exit causation is material. Public wording should not imply that AC conduct caused lawyer turnover unless future actor-specific evidence materially upgrades the causation grades.",
+    "reason": "Internal causation grades are evidential controls, not suitable public characterisations. Public wording may state actor-specific documented practical effects and attributed client allegations, but must integrate mandate scope, response, results, formal transition evidence and counterevidence; it may not imply exclusive causation, intent or adjudicated professional liability without stronger proof.",
     "conditionsForUpgrade": [
       "Recover direct contemporaneous lawyer statements tying resignation/replacement to specific AC conduct.",
       "Recover DWF/RCD non-personation decision record.",
