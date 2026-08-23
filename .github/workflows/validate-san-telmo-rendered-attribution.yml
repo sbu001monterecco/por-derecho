@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "assets/site.js"
+      - "assets/audience-experience-order-20260823.js"
       - "assets/san-telmo-attribution-correction-20260819.js"
       - "assets/san-telmo-source-stamp-20260819.js"
       - "en/index.html"
@@ -20,6 +21,7 @@ on:
     branches: [main]
     paths:
       - "assets/site.js"
+      - "assets/audience-experience-order-20260823.js"
       - "assets/san-telmo-attribution-correction-20260819.js"
       - "assets/san-telmo-source-stamp-20260819.js"
       - "en/index.html"
@@ -51,7 +53,36 @@ jobs:
       - name: Validate JavaScript syntax
         run: |
           node --check assets/site.js
+          node --check assets/audience-experience-order-20260823.js
           node --check assets/san-telmo-attribution-correction-20260819.js
           node --check scripts/render_san_telmo_attribution_live.mjs
       - name: Validate attribution, evidence boundaries and discovery controls
         run: python scripts/validate_san_telmo_attribution_rendered.py
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+      - name: Serve pull-request checkout at the production subpath
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory "$(dirname "$GITHUB_WORKSPACE")" > /tmp/por-derecho-san-telmo-server.log 2>&1 &
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent --show-error http://127.0.0.1:4173/por-derecho/es/ > /dev/null; then
+              exit 0
+            fi
+            sleep 0.5
+          done
+          cat /tmp/por-derecho-san-telmo-server.log
+          exit 1
+      - name: Verify checkout resources and rendered bilingual correction
+        env:
+          PSR_BASE_URL: http://127.0.0.1:4173/por-derecho
+          PSR_SAN_TELMO_ARTIFACT_DIR: artifacts/san-telmo-attribution-checkout
+        run: |
+          python scripts/verify_san_telmo_rendered_attribution_live.py
+          node scripts/render_san_telmo_attribution_live.mjs

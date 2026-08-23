@@ -79,7 +79,7 @@ try {
       entry.status = response?.status() ?? null;
 
       const selector = 'section.interview-evidence[data-pd-san-telmo-attribution="20260819"]';
-      await page.waitForSelector(selector, { state: 'attached', timeout: 30_000 });
+      await page.waitForSelector(selector, { state: 'visible', timeout: 30_000 });
       entry.correctionApplied = true;
 
       const rendered = await page.locator(selector).evaluate((section) => {
@@ -90,12 +90,16 @@ try {
           dossierHref: dossierLink?.href || null,
           sourceHref: sourceLink?.href || null,
           marker: section.getAttribute('data-pd-san-telmo-attribution'),
+          protectedMarker: section.getAttribute('data-audience-protected-san-telmo'),
+          outsideCollapsedRecord: !section.closest('[data-audience-full-record]'),
+          directChildOfMain: section.parentElement === document.querySelector('main'),
         };
       });
 
       entry.dossierHref = rendered.dossierHref;
       entry.sourceHref = rendered.sourceHref;
       entry.marker = rendered.marker;
+      entry.protectedMarker = rendered.protectedMarker;
 
       for (const marker of target.required) {
         entry.required[marker] = rendered.text.includes(marker);
@@ -111,10 +115,14 @@ try {
       const forbiddenPass = Object.values(entry.forbidden).every((present) => present === false);
       const statusPass = entry.status === 200;
       const markerPass = rendered.marker === '20260819';
+      const visiblePlacementPass = rendered.protectedMarker === '20260823'
+        && rendered.outsideCollapsedRecord
+        && rendered.directChildOfMain;
 
       entry.checks = {
         http200: statusPass,
         renderedMarker: markerPass,
+        visibleOutsideCollapsedRecord: visiblePlacementPass,
         requiredText: requiredPass,
         staleTextAbsent: forbiddenPass,
         dossierLink: dossierMatches,
@@ -139,8 +147,11 @@ try {
   await browser.close();
 }
 
+const successStatus = base.startsWith('https://')
+  ? 'RENDERED_DOM_LIVE_VERIFIED'
+  : 'RENDERED_DOM_CHECKOUT_VERIFIED';
 const output = {
-  status: failed ? 'RENDERED_DOM_NOT_VERIFIED' : 'RENDERED_DOM_LIVE_VERIFIED',
+  status: failed ? 'RENDERED_DOM_NOT_VERIFIED' : successStatus,
   base,
   verifiedAt: new Date().toISOString(),
   results,

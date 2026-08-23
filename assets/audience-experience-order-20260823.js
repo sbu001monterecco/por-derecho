@@ -58,8 +58,10 @@
     const audiences = document.getElementById('psr-reader-intent');
     const perimeters = document.getElementById(isEnglish ? 'case-perimeters' : 'perimetros-del-caso');
     const sourceFunds = main.querySelector('.source-funds-notice-section');
+    const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
     const coreSections = [hero, priority, prosecution, summary, audiences, perimeters];
     if (sourceFunds) coreSections.push(sourceFunds);
+    if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = priority || hero;
     for (const section of [prosecution, summary, audiences, perimeters]) {
@@ -71,6 +73,11 @@
     const fullRecord = ensureFullRecord(main, isEnglish, coreSections);
     placeAfter(fullRecord, perimeters || audiences || summary || prosecution || anchor);
     if (sourceFunds) placeAfter(sourceFunds, fullRecord);
+    if (sanTelmo) {
+      sanTelmo.classList.add('shell');
+      placeAfter(sanTelmo, sourceFunds || fullRecord);
+      sanTelmo.dataset.audienceProtectedSanTelmo = '20260823';
+    }
 
     if (prosecution) {
       prosecution.dataset.audienceProtectedAttribution = '20260823';
@@ -81,6 +88,7 @@
 
     main.dataset.audienceOrder = '20260823';
     main.dataset.expressCriminalAttributionVisible = prosecution ? '20260823' : 'pending';
+    main.dataset.sanTelmoAttributionVisible = sanTelmo ? '20260823' : 'pending';
     observer?.observe(main, { childList: true });
     openHashTarget();
   };
@@ -97,6 +105,7 @@
     observer = new MutationObserver(schedule);
     observer.observe(main, { childList: true });
     window.addEventListener('hashchange', openHashTarget);
+    document.addEventListener('pd:san-telmo-attribution-ready', schedule);
     document.addEventListener('click', (event) => {
       const link = event.target.closest('a[href^="#"]');
       if (!link) return;
