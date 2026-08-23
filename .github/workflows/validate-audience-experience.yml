@@ -1,0 +1,76 @@
+name: Validate audience experience
+
+on:
+  pull_request:
+    paths:
+      - 'es/**'
+      - 'en/**'
+      - 'assets/**'
+      - 'scripts/validate_audience_experience.py'
+      - 'scripts/render_audience_experience.mjs'
+      - '.github/workflows/validate-audience-experience.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/**'
+      - 'en/**'
+      - 'assets/**'
+      - 'scripts/validate_audience_experience.py'
+      - 'scripts/render_audience_experience.mjs'
+      - '.github/workflows/validate-audience-experience.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: audience-experience-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Validate source, routes and public identity
+        run: python3 scripts/validate_audience_experience.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/audience-experience-order-20260823.js
+          node --check assets/optimum-reader-journey-20260818.js
+          node --check assets/site.js
+          node --check scripts/render_audience_experience.mjs
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve the static site at the production subpath
+        run: |
+          mkdir -p /tmp/psr-audience-site/por-derecho
+          cp -a . /tmp/psr-audience-site/por-derecho/
+          cd /tmp/psr-audience-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-audience-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-audience-http.log
+          exit 1
+      - name: Render bilingual desktop and mobile experience
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_SCREENSHOT_DIR: artifacts/audience-experience-20260823
+        run: node scripts/render_audience_experience.mjs
+      - name: Upload screenshots and metrics
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: audience-experience-20260823
+          path: artifacts/audience-experience-20260823
+          if-no-files-found: warn
+          retention-days: 14

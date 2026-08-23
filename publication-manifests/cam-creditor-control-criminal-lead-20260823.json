@@ -23,6 +23,7 @@
     "README.md",
     "CONCURSO36_JUDICIAL_ACTS_IMPLEMENTATION_REGISTER_21AUG2026.md",
     "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+    "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md",
     "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
@@ -78,7 +79,7 @@
     "all three criminal positions are expressly attributed to Gil Marer or Aweswell",
     "evidential sufficiency is limited to making, preserving and requesting investigation of allegations",
     "criminal guilt and judicial prevarication are not stated as adjudicated facts",
-    "the Laura Isabel and Laura Patricia identity and participation bridge remains open",
+    "Laura Patricia Acosta Matos is the controlled identity; mandate, participation and responsibility remain separate proof questions",
     "the 2018 provisional dismissal and appellate confirmation remain prominent",
     "lender in possession remains a functional comparison rather than a standalone Spanish status",
     "LPB estate property is separated from CEXP, Matkator and other non-LPB rights",
@@ -96,7 +97,7 @@
     "direct_instruction_stated_as_adjudicated": false,
     "administrator_criminal_approval_stated_as_adjudicated": false,
     "judicial_prevarication_stated_as_established": false,
-    "laura_identities_silently_merged": false,
+    "source_typo_treated_as_separate_actor": false,
     "presumption_of_innocence_preserved": true,
     "right_of_reply_preserved": true
   },
@@ -115,6 +116,14 @@
       "the two stale cross-site CI contracts discovered during PR review were repaired without weakening their exact checks"
     ]
   },
+  "superseding_identity_control": {
+    "date": "2026-08-23",
+    "status": "REPOSITORY_CONTROLLING",
+    "identity": "Laura Patricia Acosta Matos",
+    "source_typo_creates_separate_actor": false,
+    "public_rule": "Use the full correct name only; keep mandate, participation, knowledge, purpose and responsibility evidence-controlled.",
+    "control_file": "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md"
+  },
   "evidence_readback_scope": {
     "repository_controlled_gmail_and_drive_source_ledgers_reviewed": true,
     "fresh_live_gmail_connector_readback_performed_in_this_change": false,
@@ -126,7 +135,7 @@
   },
   "open_evidence": [
     "native CAM, JDAM, FMMM, Laura-actor, Community and provider instruction chain",
-    "identity and participation bridge for Laura Isabel, Laura Patricia and Laura Matos",
+    "actor-specific mandate, participation and instruction evidence for Laura Patricia Acosta Matos",
     "security and locksmith contract, payer, orders, logs and key receipts",
     "complete post-entry actual-control and income ledger",
     "administrator scope, knowledge, supervision, response, recovery and accounting file",

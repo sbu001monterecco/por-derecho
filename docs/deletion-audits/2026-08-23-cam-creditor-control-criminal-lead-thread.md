@@ -30,7 +30,7 @@ The repository contains enough types and layers of evidence for Gil Marer/Aweswe
 2. knowing approval, enablement, ratification or legally equivalent omission by the Insolvency Administrator; and
 3. specified judicial resolutions, refusals or delays requiring examination under Criminal Code Articles 446–449.
 
-This does not prove that JDAM or FMMM issued the operative order; that LPAM/Laura Patricia was the actor identified in the filed 7 June amendment; that the Insolvency Administrator acted with criminal intent; or that Judge Alberto López Villarrubia committed prevarication. The principal record does not place JDAM physically onsite on 7 June. The filed amendment names Laura Isabel Acosta Matos; LPAM denotes Laura Patricia Acosta Matos. The identity and participation bridge remains open.
+This does not prove that JDAM or FMMM issued the operative order; that Laura Patricia Acosta Matos acted under CAM mandate or gave an instruction; that the Insolvency Administrator acted with criminal intent; or that Judge Alberto López Villarrubia committed prevarication. The principal record does not place JDAM physically onsite on 7 June. Laura Patricia Acosta Matos is the controlled identity; participation and responsibility remain separate proof questions.
 
 ## Contrary and exculpatory record preserved
 

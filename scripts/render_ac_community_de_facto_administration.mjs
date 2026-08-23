@@ -18,6 +18,8 @@ async function inspect(name, route, assertions, screenshot) {
     const response = await page.goto(`${base}${route}?verify=${Date.now()}`, { waitUntil: 'domcontentloaded', timeout: 45000 });
     record(`${name}: http`, response?.status() === 200, `status=${response?.status()}`);
     await page.waitForTimeout(2900);
+    const progressiveRecord = page.locator('[data-audience-full-record] > details');
+    if (await progressiveRecord.count()) await progressiveRecord.evaluate((node) => { node.open = true; });
     const body = await page.locator('body').innerText();
     for (const assertion of assertions) {
       if (assertion.text) record(`${name}: ${assertion.label}`, body.includes(assertion.text), assertion.text);

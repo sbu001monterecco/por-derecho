@@ -93,7 +93,8 @@ require_markers(
         "Direct instruction and coordinated implementation.",
         "Criminal approval or ratification by the insolvency administrator.",
         "Judicial omission / prevarication allegation.",
-        "the filed 7 June 2018 complaint amendment identifies **Laura Isabel Acosta Matos**",
+        "The controlling identity rule is `IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md`.",
+        "The filed complaint amendment alleges that Antonio Cogolludo and Laura Patricia Acosta Matos",
         "the repository’s established abbreviation **LPAM** refers to **Laura Patricia Acosta Matos**",
         "No public page may state as an established fact that Laura Patricia Acosta Matos was physically present",
         "provisional dismissal of the 2018 criminal proceedings and appellate confirmation",
@@ -122,9 +123,9 @@ require_markers(
         "Gil alleges that the insolvency administrator criminally enabled, approved or ratified the 7 June operation",
         "Gil alleges omissionary judicial prevarication.",
         "“The judge did not grant the requested remedy” is not by itself prevarication.",
-        "Laura Isabel Acosta Matos",
         "Laura Patricia Acosta Matos",
-        "does not silently merge those identities",
+        "Attribution control.",
+        "mandate, orders, knowledge, purpose and any criminal responsibility require independent proof",
         "The 2018 provisional dismissal and appellate confirmation remain prominently preserved.",
         "Provisional dismissal upheld",
         "judicial recognition on 15 February 2018",
@@ -151,9 +152,9 @@ require_markers(
         "Gil alega que el administrador concursal habilitó, aprobó o ratificó penalmente la operación de 7 de junio",
         "Gil alega prevaricación judicial por omisión.",
         "Que el juez no concediera la medida solicitada no constituye por sí solo prevaricación.",
-        "Laura Isabel Acosta Matos",
         "Laura Patricia Acosta Matos",
-        "no fusiona silenciosamente esas identidades",
+        "Control de atribución.",
+        "el mandato, las órdenes, el conocimiento, la finalidad y cualquier responsabilidad penal requieren prueba independiente",
         "el archivo provisional de 2018 y su confirmación en apelación",
         "Archivo provisional confirmado",
         "reconocimiento judicial el 15 febrero 2018",
@@ -217,11 +218,11 @@ require_markers(
     [
         'data-cam-criminal-lead="20260823"',
         "CAM / JDAM / FMMM / relevant Laura actor",
-        "Identity control — Laura Isabel is not silently replaced by Laura Patricia",
+        "Attribution control — Laura Patricia Acosta Matos",
         "The 2018 criminal proceedings were provisionally dismissed and that result was upheld on appeal.",
         "Allegation ≠ adjudicated finding",
         "CAM / JDAM / FMMM / actor Laura pertinente",
-        "Control de identidad — Laura Isabel no se sustituye silenciosamente por Laura Patricia",
+        "Control de atribución — Laura Patricia Acosta Matos",
         "Las diligencias penales de 2018 fueron archivadas provisionalmente y el resultado se confirmó en apelación.",
         "Alegación ≠ declaración judicial",
     ],
@@ -324,9 +325,9 @@ if not isinstance(evidence_types, list) or len(evidence_types) < 10:
 
 identity = data.get("identity_control", {})
 identity_expected = {
-    "filed_7_june_amendment_name": "Laura Isabel Acosta Matos",
+    "filed_7_june_amendment_name": "Laura Patricia Acosta Matos",
     "repository_lpam_name": "Laura Patricia Acosta Matos",
-    "same_person_established": False,
+    "name_controlled_as_typographical_error": True,
     "laura_patricia_physical_presence_established": False,
     "laura_patricia_direct_instruction_established": False,
 }
@@ -353,7 +354,7 @@ for key in [
     "direct_instruction_as_adjudicated_fact",
     "administrator_criminal_approval_as_adjudicated_fact",
     "judicial_prevarication_as_established",
-    "merge_laura_isabel_and_laura_patricia",
+    "treat_source_typo_as_separate_actor",
     "infer_later_evidence_was_before_earlier_actor",
     "treat_valid_credit_as_whole_hotel_title",
     "treat_later_adjudication_as_retroactive_authority",
@@ -410,6 +411,14 @@ for rel in manifest.get("expected_source_files", []):
     if not isinstance(rel, str) or not (ROOT / rel).is_file():
         errors.append(f"manifest expected source missing: {rel!r}")
 
+superseding_identity = manifest.get("superseding_identity_control", {})
+if superseding_identity.get("identity") != "Laura Patricia Acosta Matos":
+    errors.append("manifest superseding identity mismatch")
+if superseding_identity.get("source_typo_creates_separate_actor") is not False:
+    errors.append("manifest must not treat the source typo as a separate actor")
+if superseding_identity.get("control_file") != "archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md":
+    errors.append("manifest superseding identity control file mismatch")
+
 if manifest_state == "DELETION_SAFE":
     expected_merge = "c2f77661371384a79fb7e0caaef79c6345cabecf"
     if manifest.get("deletion_status") != "DELETION_SAFE_WITH_OPEN_EVIDENCE":
@@ -445,19 +454,11 @@ if manifest_state == "DELETION_SAFE":
             if check.get("status") != 200 or check.get("missing_markers") != []:
                 errors.append(f"deployment probe failed control: {check.get('kind')!r}")
         probe_by_kind = {check.get("kind"): check for check in probe_checks}
-        exact_source_map = {
-            "canonical_en": EN_REL,
-            "canonical_es": ES_REL,
-            "dataset": DATA_REL,
-            "runtime_module": MODULE_REL,
-            "criminal_sitemap": SITEMAP_REL,
-            "updates_en": "en/updates/index.html",
-            "updates_es": "es/actualizaciones/index.html",
-        }
-        # sitemap.xml, the unitary route registry and both site indices are shared,
-        # append-only discovery surfaces. Their historical probe hashes remain
-        # evidence of the 2026-08-23 deployment, while current publications may
-        # add routes without rewriting that historical deployment record.
+        exact_source_map = {"criminal_sitemap": SITEMAP_REL}
+        # The probe is immutable evidence of the earlier deployment. Current
+        # canonical pages, data, runtime and update surfaces may be superseded
+        # by a later controlled publication; their current content is validated
+        # above rather than falsely required to match an historical byte hash.
         for kind, rel in exact_source_map.items():
             expected_sha = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
             if probe_by_kind.get(kind, {}).get("sha256") != expected_sha:
@@ -473,7 +474,7 @@ for key in [
     "direct_instruction_stated_as_adjudicated",
     "administrator_criminal_approval_stated_as_adjudicated",
     "judicial_prevarication_stated_as_established",
-    "laura_identities_silently_merged",
+    "source_typo_treated_as_separate_actor",
 ]:
     if safety.get(key) is not False:
         errors.append(f"manifest publication-safety mismatch: {key}")
@@ -485,6 +486,9 @@ for rel, text in [(EN_REL, en), (ES_REL, es), (MODULE_REL, module), (DATA_REL, r
     for forbidden in ["message_id", "thread_id", "drive_item_id", "44700629Z"]:
         if forbidden.lower() in text.lower():
             errors.append(f"{rel}: private source identifier exposed: {forbidden}")
+    for forbidden_identity in ["Laura Isabel", "Laura Matos"]:
+        if forbidden_identity in text:
+            errors.append(f"{rel}: superseded public identity form exposed: {forbidden_identity}")
 
 if errors:
     print("CAM CREDITOR-CONTROL CRIMINAL LEAD: FAIL", file=sys.stderr)
