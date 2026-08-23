@@ -5,7 +5,13 @@
   "created_at": "2026-08-23T23:17:00Z",
   "current_state": "DELETION_SAFE",
   "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
-  "branch": "codex/counsel-defence-expanded-20260823",
+  "branch": "codex/counsel-impact-nuance-20260823",
+  "original_branch": "codex/counsel-defence-expanded-20260823",
+  "nuance_revision": {
+    "control_date": "2026-08-23",
+    "state": "SOURCE_READY_PENDING_MERGE",
+    "purpose": "Replace the public binary causation/withdrawal characterisation with an integrated mandate account and explain the Article 215.2 providencia precisely."
+  },
   "expected_routes": {
     "es": [
       "es/actores-partes-abogados-representantes/index.html"
@@ -17,7 +23,10 @@
   "expected_source_files": [
     "archive/COUNSEL_DEFENCE_CONTINUITY_REGISTER_23AUG2026.md",
     "archive/COUNSEL_DEFENCE_CONTINUITY_SOURCE_MAP_23AUG2026.md",
+    "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
     "archive/prompts/COUNSEL_DEFENCE_CONTINUITY_EXHAUSTIVE_SCAN_PROMPT_23AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "assets/data/legal-representation-ac-causation-v1.json",
     "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md",
     "publication-manifests/counsel-defence-continuity-20260823.json"
   ],
@@ -61,7 +70,10 @@
     "Pimentel Servicios Legales"
   ],
   "required_controls": [
-    "act-effect-causation separation",
+    "integrated mandate account",
+    "internal source-status controls not exposed as reductive public causation badges",
+    "formal withdrawal reason is not exhaustive of prior AC effect or mandate performance",
+    "Article 215.2 procedural licence explained without minimising separately documented defence impact",
     "client allegation attribution",
     "withdrawal stated reasons retained",
     "strongest contrary evidence retained",
@@ -76,7 +88,7 @@
     "Ilustre Colegio de Abogados de Las Palmas (ICALPA)"
   ],
   "open_evidence": [
-    "certified Article 215.2 order and later complaint docket",
+    "certified court copy of the controlled electronically signed Article 215.2 providencia and later complaint docket",
     "complete opposition authorship/edit history",
     "LPB counsel payment request-response chain",
     "complete powers venias and LexNET records",
@@ -104,13 +116,15 @@
       "A1–A8 · CONTINUIDAD DE LA DEFENSA · CONCURSO 36/2012",
       "Davinia Sánchez de la Cruz",
       "Llamamiento institucional",
-      "no establece que la querella fuese finalmente presentada ni prosperase"
+      "puerta procesal, no una decisión sobre verdad, culpabilidad o responsabilidad",
+      "motivo formal de retirada es relevante, sin constituir una caracterización completa"
     ],
     "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/": [
       "A1–A8 · CONTINUITY OF THE DEFENCE · CONCURSO 36/2012",
       "Davinia Sánchez de la Cruz",
       "Institutional call",
-      "does not establish that a complaint was ultimately filed or succeeded"
+      "opened a procedural gate; it was not a finding about truth, guilt or liability",
+      "formal withdrawal reason is relevant without being a complete characterisation"
     ]
   },
   "validation": {
