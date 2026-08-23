@@ -186,6 +186,43 @@ Do not create disconnected summaries. Analyse the chain:
 
 **AC assertion → Fiscalía position → judicial treatment → consequence → rebuttal evidence → appellate challenge → present status.**
 
+## MANDATORY PARTY / PLEADING RECONSTRUCTION
+
+Do not use the number of named parties as the number of filed instruments. Reconstruct the record at both levels:
+
+1. **party/appellant interest**; and
+2. **physical pleading or appeal instrument**.
+
+For every opposition and appeal, record:
+
+- exact party or parties represented;
+- whether the instrument was individual or joint;
+- document date and filing date;
+- exact filename and page count;
+- draft, transmitted-for-filing, filed-copy or certified-copy status;
+- lawyer and procurator;
+- LexNET/court receipt, entry number, timestamp and deposit evidence;
+- service/notification premise pleaded in the document;
+- later court treatment and appellate-roll allocation; and
+- whether a native filed copy remains missing.
+
+Start from, but independently verify, the following controlled reconstruction:
+
+| Stage | Party interests | Physical instrument | Controlled status |
+|---|---|---|---|
+| First-instance opposition | LPB | LPB opposition dated 23-Apr-2019 | Judgment records the opposition; Gmail contains a 24-Apr-2019 LexNET filing receipt and the first page of the pleading. Reconcile document date with filing timestamp. |
+| First-instance opposition | Gil Marer | Gil opposition dated/filed 6-Jun-2019 | Separate instrument; filed/source copy located in the controlled record. |
+| First-instance opposition | PINK + Patricia | Six-page joint opposition dated 23-Mar-2021; filed 24-Mar-2021 | Native pleading and LexNET receipt recovered in Gmail `178692fdd1c427e5`: IdLexNet `202110397349419`, sent 15:41:33; principal-document SHA-256 `fd87b9818a84506723ec9ba26a72afe467a59e806d34b8316478bb9b449f24fe`. Do not invent separate PINK and Patricia oppositions. |
+| First-instance opposition | Aweswell | None identified in the Calificación section | Do not import Aweswell filings from other Concurso 36/2012 lanes. |
+| Appeal | Gil Marer | Separate appeal filed 30-Oct-2023 | Filed PDF and procurator receipt chain located. |
+| Appeal | PINK + Patricia | One joint 17-page appeal filed 30-Oct-2023 | The modified 17-page PDF was sent for filing after deletion of the draft notification-nullity ground; the procurator returned a filing receipt and the same-size PDF on 31-Oct-2023. |
+| Appeal | LPB | Separate appeal reported filed 2-Nov-2023 | Counsel's contemporaneous email, later deposit-requirement correspondence and cure payment support filing; recover the actual filed appeal and receipt before quoting its grounds. |
+| Appeal | Aweswell | None identified against Sentencia 163/2023 | Aweswell appeals in the AC-removal and fees/civil-liability lanes are separate proceedings and must not be counted as Calificación appeals. |
+
+A 9-Nov-2023 email calls these “los cuatro recursos ... de LPB, GM, PINK y PDM”. Treat that as party-level shorthand unless and until the docket proves four physical appeal instruments. The located filing record presently supports three physical instruments for four appellant interests: LPB; Gil; and joint PINK/Patricia.
+
+No public or internal text may say merely “the opposition” or “the PINK appeal” where that wording erases LPB, Patricia, joint filing structure or the source-status gap. No text may add Aweswell as a Calificación opponent/appellant without a proceeding-specific primary source.
+
 ---
 
 # REQUIRED SEARCH
