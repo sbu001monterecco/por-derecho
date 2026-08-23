@@ -52,7 +52,7 @@ try{
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
         await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260823a',null,{timeout:15000});
         if(route.kind==='home'){
-          const progressiveRecord=page.locator('[data-audience-full-record] details');
+          const progressiveRecord=page.locator('[data-audience-full-record] > details');
           if(await progressiveRecord.count())await progressiveRecord.evaluate(node=>{node.open=true;});
           await page.waitForSelector('.main-nav[data-psr-consolidated-nav="true"]',{state:'attached',timeout:10000});
           await page.waitForSelector('.psr-home-control-gateway',{timeout:10000});

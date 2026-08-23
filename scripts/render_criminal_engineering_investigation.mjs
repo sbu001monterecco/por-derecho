@@ -113,7 +113,7 @@ try {
 
   for (const item of homepageRoutes) {
     const { page, url } = await open(item.route);
-    const progressiveRecord = page.locator('[data-audience-full-record] details');
+    const progressiveRecord = page.locator('[data-audience-full-record] > details');
     if (await progressiveRecord.count()) await progressiveRecord.evaluate((node) => { node.open = true; });
     await page.waitForSelector('[data-case-status-band]', { timeout: 25000 });
     const body = await page.locator('body').innerText();
