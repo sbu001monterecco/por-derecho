@@ -2,7 +2,15 @@
   "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260823",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-23",
-  "current_state": "DRAFT",
+  "current_state": "PR_OPEN",
+  "publication_control": {
+    "repository": "sbu001monterecco/por-derecho",
+    "source_branch": "control/full-actas-event-record-20260822",
+    "controlling_pr": "https://github.com/sbu001monterecco/por-derecho/pull/811",
+    "base_sha": "05f9b10a4275feeb05c17cffeaa0bb34354490df",
+    "content_commit_sha": "ea036563fb1e97c8d11e7e99d681cc526d24a61d",
+    "content_tree_sha": "2d719e974bdb1f6d1e3e7f37d889071f57af4637"
+  },
   "subject": "Bilingual Sun Park ACTA document room, public-safe OCR text editions and event/source continuity controls",
   "expected_routes": {
     "es": [
@@ -65,6 +73,6 @@
   },
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "DRAFT records local source state only. PR, merge, deployment and public-edge readback must be recorded separately."
+    "note": "PR_OPEN records the validated content commit and controlling PR. Merge, deployment and public-edge readback are not yet claimed and must be recorded separately."
   }
 }
