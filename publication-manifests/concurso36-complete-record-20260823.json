@@ -159,7 +159,7 @@
   "validation": {
     "status": "LOCAL_VALIDATION_PASSED",
     "completed_at_utc": "2026-08-23T00:00:00Z",
-    "catalog_sha256": "1ec371cf0a0deb7cbdf6e696ccacd40a87ed5c915a1565abe57910ac381ac592",
+    "catalog_sha256": "fc9407913489fe65ea13b44fe7cbfb0d2176162241f20ca2b7051823de5b0867",
     "reviewed_release_files": 112,
     "evidence": [
       "validate_concurso36_complete_record.py: PASS — 127 canonical records, 8 source-copy links and 12 controlled gaps",

@@ -3,7 +3,7 @@
 **Control date:** 23 August 2026
 **Proceeding:** Concurso ordinario 36/2012 · NIG 3501647120120000351
 **Machine-readable control:** `assets/data/concurso36-complete-record-v1.json`
-**Control-file SHA-256 at this run:** `1ec371cf0a0deb7cbdf6e696ccacd40a87ed5c915a1565abe57910ac381ac592`
+**Control-file SHA-256 at this run:** `fc9407913489fe65ea13b44fe7cbfb0d2176162241f20ca2b7051823de5b0867`
 **Status:** public-safe analytical digest; not a certified court-file index and not a representation that every court or party document has been obtained or uploaded
 
 ## 1. Result

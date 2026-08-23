@@ -48,9 +48,9 @@ EXACT_SURPLUS_CAVEAT = "No primary evidence of payment has yet been identified"
 # may acquire later, traceable editorial additions.
 PUBLIC_DERIVATIVE_HASHES = {
     "FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv":
-        "8d09e1ae079c03fbe01f73c567e8cb8e5668b51d9f34689f2e2a737fd1ceef62",
+        "0604ac0c1196cab9f38214632aa48c52283a92b65d8b34ddc9fba72ab3ffcedb",
     "FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md":
-        "ec01072a90b6f4b9f2d728ffa269f97e7864f9f9af51c5db7cf2a2e7eae324ad",
+        "ed9aa387a2d3c2f023a6151bdb71571aba1dc30b88bd5af717bfdd50c0af8e8f",
     "FORENSIC_SCAN_MANIFEST_CONCURSO_36_2012_21AUG2026.txt":
         "3e057b26f3db8c7ae857fcc1300db0db63eaa335ada1a4da51f57882e3bcdd5c",
     "GAP_CLOSURE_REGISTER_CONCURSO_36_2012_21AUG2026.csv":
@@ -73,7 +73,7 @@ PUBLIC_DERIVATIVE_HASHES = {
 
 PUBLIC_DERIVATIVE_MANIFEST = "PUBLIC_DERIVATIVE_SHA256SUMS.txt"
 PUBLIC_DERIVATIVE_MANIFEST_SHA256 = (
-    "b9b9ea61f6b31096ea37e6c71cc5f64d2aa85fb4c9a98acc54ff1e4cb5348d43"
+    "c74c0ac5f5bb1e66eb9753f61525f32e59548c3a1772eaccde2e9698cd6a696a"
 )
 
 EXPECTED_ORDER_IDS = {
@@ -189,6 +189,15 @@ FORBIDDEN_PUBLIC_LOCATOR_PATTERNS = (
     re.compile(r"https://(?:drive|docs|mail)\.google\.com", re.IGNORECASE),
     re.compile(r"\bA05003250-[A-Za-z0-9-]+\b", re.IGNORECASE),
     re.compile(r"\b(?:Drive|Native Drive document)\s+[A-Za-z0-9_-]{20,}\b"),
+    re.compile(
+        r"\bCSV[ \t:#-]+(?=[A-Z0-9-]*\d)[A-Z0-9-]{8,}\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:secure[- ]verification code|c[oó]digo (?:seguro )?de verificaci[oó]n)"
+        r"[ \t:#-]+(?=[A-Z0-9-]*\d)[A-Z0-9-]{8,}\b",
+        re.IGNORECASE,
+    ),
 )
 
 
@@ -710,6 +719,13 @@ def check_pages_and_privacy(failures: list[str]) -> None:
     for path, text in {**texts, DATA: read_text(DATA, failures)}.items():
         if text and contains_protected_token(text):
             failures.append(f"protected bidder name found on canonical public surface: {rel(path)}")
+        for pattern in FORBIDDEN_PUBLIC_LOCATOR_PATTERNS:
+            if pattern.search(text):
+                failures.append(
+                    "restricted provider locator or court verification code found on "
+                    f"canonical public surface: {rel(path)}"
+                )
+                break
     check_archive_protected_token(contains_protected_token, failures)
 
 

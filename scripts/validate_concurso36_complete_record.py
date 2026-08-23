@@ -16,6 +16,7 @@ import hashlib
 import json
 import pathlib
 import re
+import subprocess
 import sys
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -123,10 +124,24 @@ REQUIRED_ROUTES = (
 )
 
 FORBIDDEN_PUBLIC_LOCATOR_PATTERNS = (
-    re.compile(r"https://(?:drive|docs|mail)\.google\.com", re.IGNORECASE),
+    re.compile(r"https://(?:drive|docs|mail)\.google\.com[^\s\"'<>]+", re.IGNORECASE),
     re.compile(r"\bA05003250-[A-Za-z0-9-]+\b", re.IGNORECASE),
     re.compile(r"\b(?:Drive|Native Drive document)\s+[A-Za-z0-9_-]{20,}\b"),
+    re.compile(
+        r"\bCSV[ \t:#-]+(?=[A-Z0-9-]*\d)[A-Z0-9-]{8,}\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:secure[- ]verification code|c[oó]digo (?:seguro )?de verificaci[oó]n)"
+        r"[ \t:#-]+(?=[A-Z0-9-]*\d)[A-Z0-9-]{8,}\b",
+        re.IGNORECASE,
+    ),
 )
+
+RELEASE_PRIVACY_TEXT_SUFFIXES = {
+    ".csv", ".html", ".js", ".json", ".jsonl", ".md", ".mjs",
+    ".py", ".rst", ".txt", ".xml", ".yml", ".yaml",
+}
 
 MANIFEST_ROUTES = {
     "es": {
@@ -542,6 +557,7 @@ def check_publication_manifest(failures: list[str]) -> None:
     require(isinstance(release_inventory, dict),
             "publication manifest exact release-file inventory missing", failures)
     if isinstance(release_inventory, dict):
+        release_base = str(release_inventory.get("base_sha", ""))
         release_paths = release_inventory.get("paths")
         require(release_inventory.get("base_sha") == manifest.get("base_sha_at_start"),
                 "release-file inventory base SHA does not match the publication base", failures)
@@ -557,8 +573,34 @@ def check_publication_manifest(failures: list[str]) -> None:
             require(str(PUBLICATION_MANIFEST.relative_to(ROOT)) in release_paths,
                     "release-file inventory must include its own publication manifest", failures)
             for release_path in release_paths:
-                require(isinstance(release_path, str) and (ROOT / release_path).is_file(),
+                target = ROOT / release_path if isinstance(release_path, str) else None
+                require(target is not None and target.is_file(),
                         f"release-file inventory path missing from Git tree: {release_path!r}", failures)
+                if target is None or not target.is_file() or target.suffix.casefold() not in RELEASE_PRIVACY_TEXT_SUFFIXES:
+                    continue
+                release_text = read_text(target, failures)
+                baseline = subprocess.run(
+                    ["git", "show", f"{release_base}:{release_path}"],
+                    cwd=ROOT,
+                    check=False,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.DEVNULL,
+                    text=True,
+                )
+                baseline_text = baseline.stdout if baseline.returncode == 0 else ""
+                for pattern in FORBIDDEN_PUBLIC_LOCATOR_PATTERNS:
+                    current_matches = Counter(match.group(0) for match in pattern.finditer(release_text))
+                    baseline_matches = Counter(match.group(0) for match in pattern.finditer(baseline_text))
+                    new_count = sum(
+                        max(0, count - baseline_matches.get(token, 0))
+                        for token, count in current_matches.items()
+                    )
+                    require(
+                        new_count == 0,
+                        "release-file inventory introduces a restricted provider locator or "
+                        f"secure-verification code: {release_path}",
+                        failures,
+                    )
 
     nested = manifest.get("nested_artifact_inventories")
     require(isinstance(nested, dict), "publication manifest nested artifact inventories missing", failures)
