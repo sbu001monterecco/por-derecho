@@ -91,7 +91,7 @@ Before drafting, verify:
 1. current recipient identity;
 2. current professional role;
 3. address from a reliable source;
-4. Gmail history for prior contact;
+4. pagination-complete Gmail history for the person **and**, independently, the outlet/employer/organisation under `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
 5. previous bounce or delivery failure;
 6. existing ticket/reference/expediente/thread;
 7. whether a specialist mailbox or channel exists;
@@ -100,6 +100,8 @@ Before drafting, verify:
 10. whether a prior exclusion or correction affects the route.
 
 If a previous address bounced, do not reuse it without fresh verification.
+
+If either the person or organisation scan is incomplete, a continuation token remains, a relevant thread is unread or a colleague/fallback/other-channel collision is unclassified, the channel preflight fails closed. Do not describe the target as untouched merely because no direct `to/from` domain email was located.
 
 If a specialist working channel has already produced a response, prefer it over a generic information address unless there is a documented reason not to.
 

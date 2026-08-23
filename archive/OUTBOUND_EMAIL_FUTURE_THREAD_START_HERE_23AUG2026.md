@@ -35,11 +35,12 @@ For media work, read at minimum:
 8. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
 9. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
 10. `archive/JOURNALIST_MEDIA_REGISTER.md`;
-11. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
-12. recipient-specific preparation/sent records for the active journalist set; and
-13. current correction / missing-evidence controls and relevant public website dossiers.
+11. `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`;
+12. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
+13. recipient-specific preparation/sent records for the active journalist set; and
+14. current correction / missing-evidence controls and relevant public website dossiers.
 
-Then scan connected Gmail in both directions before inferring any response state.
+Then scan connected Gmail under the dual gate: independently for the person and the outlet/employer/organisation, in both directions and through every continuation token, before inferring any response state or presenting a package as ready.
 
 ## Current verified media state at this control point
 
@@ -57,13 +58,16 @@ Subject always to a fresh Gmail scan:
 - **Silvia Fernández / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **David Ojeda / CANARIAS7** — `SENT + VERIFIED / AWAITING RESPONSE`.
 - **Fran Fajardo / CANARIAS7** — `CONTROLLING V3 SENT ONCE + ACTUAL SENT COPY VERIFIED / AWAITING RESPONSE`.
+- **Ariadna Martínez / Atlántico Hoy** — `PROPOSITION ISOLATED / PREPARED LOCALLY / PERSON + OUTLET GMAIL GATE COMPLETE / DIRECT PROFESSIONAL ROUTE UNRESOLVED / NO GMAIL DRAFT / NOT AUTHORISED / NOT SENT`.
 - **Diego Sánchez de la Cruz / Civismo-related routing** — HOLD for immediate repeat contact unless new information provides a recipient-specific reason.
 
-The next unsent priority is:
+The current research/preparation order is:
 
-1. **Carmen Delia Aranda / CANARIAS7**;
-2. **Francisco Suárez Álamo / CANARIAS7**;
-3. **Javier Sheng Pang Blanco / CANARIAS7**, only when a current direct route is verified.
+1. **Ariadna Martínez / Atlántico Hoy** — package prepared; verify a current direct professional route without guessing;
+2. **Ramón Betancor / RTVC**;
+3. **Sandra Tobar / EL ESPAÑOL-Invertia**;
+4. **Javi Rodríguez / Janire Alfaya / SER Canarias**, subject to outlet spacing; and
+5. **Daniel Toledo Quer / Cinco Días**.
 
 subject to fresh public-role/contact/history and Gmail-response checks.
 
@@ -142,6 +146,10 @@ POR DERECHO LINK FOUND = YES
 EVIDENTIAL LIMITATION FOUND = YES
 ADVERSE MATERIAL INCLUDED = YES
 RECIPIENT-SPECIFIC ASK = YES
+PERSON GMAIL HISTORY SCAN = COMPLETE
+ORGANISATION GMAIL HISTORY SCAN = COMPLETE
+PAGINATION = EXHAUSTED
+COLLISION DECISION = RECORDED
 ```
 
 Any failure without an exact approved exception produces:
@@ -179,7 +187,7 @@ An inbound response does not automatically authorise a reply.
 
 ## Current next action
 
-Unless a fresh inbound response changes priority, research and prepare the next distinct **Carmen Delia Aranda / CANARIAS7** lane. Do not send without a separately reviewed exact package and fresh exact user authorisation.
+Unless a fresh inbound response changes priority, verify a current professional route attributable to **Ariadna Martínez / Atlántico Hoy** without guessing. Her proposition, draft, attachments, links, RIC/regional-incentive/European-support boundaries and Gmail collision classification are preserved in `archive/ATLANTICO_HOY_ARIADNA_MARTINEZ_PREPARATION_RECORD_23AUG2026.md`. No Gmail draft exists. Do not send without a fresh dual history scan where required, a separately reviewed exact package and fresh exact user authorisation.
 
 Fran Fajardo V3 was sent once after fresh exact user authorisation. The actual sent-copy read-back verified the recipient, no Cc/Bcc, subject/body, the two mandatory Spanish PNGs, timestamped San Telmo webinar, RIC/regional-incentive/European-support context, adverse evidence and six finite judicial/documentary asks.
 
