@@ -1,0 +1,81 @@
+{
+  "schema": "por-derecho/cam-nondilution-thread-closeout/v1",
+  "publication_id": "CAM-NONDILUTION-THREAD-CLOSEOUT-20260823",
+  "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+  "control_date": "2026-08-23",
+  "scope": "Repository and public-site closeout of the CAM direct-criminal-attribution non-dilution, source-fidelity, first-read and identity-control thread.",
+  "substantive_publication": {
+    "pull_request": 830,
+    "merge_sha": "05cba3c9af7071f96b56eae90a67a2ceae3a783d",
+    "direct_attribution_preserved": true,
+    "criminal_guilt_adjudicated": false,
+    "source_literal_preserved": true,
+    "canonical_identity": "Laura Patricia Acosta Matos",
+    "contemporaneous_source_literal": "Laura Matos",
+    "first_read_prominence_preserved": true
+  },
+  "verification_controls": {
+    "verifier_pull_requests": [832, 833],
+    "live_verification_run": 32636419354,
+    "live_verification_conclusion": "success",
+    "checked_surfaces": [
+      "English CAM dossier",
+      "Spanish CAM dossier",
+      "English homepage",
+      "Spanish homepage",
+      "site loader",
+      "first-read criminal-attribution module",
+      "cross-site CAM module",
+      "machine-readable CAM record"
+    ],
+    "closeout_record_and_static_chronology_must_pass_after_merge": true
+  },
+  "static_homepage_chronology": {
+    "pull_request": 808,
+    "merge_sha": "22f10cea2cab18539c55d6283eb9ebce16d40f71",
+    "locked_minimum_dates": {
+      "Francisco Mario Matos Matas": "by 2011-06-22",
+      "Antonio Cogolludo Rojas": "by 2014-04-10",
+      "Shaila María Cogolludo Ramos": "by 2014-04-08"
+    }
+  },
+  "controlling_assertions": {
+    "direct_actor_specific_attribution_is_not_a_mere_question_or_lead": true,
+    "attribution_and_evidence_are_separate": true,
+    "attribution_and_adjudication_are_separate": true,
+    "canonical_identity_and_source_literal_are_separate": true,
+    "contrary_record_remains_visible": true,
+    "right_of_reply_remains_open": true,
+    "missing_proof_does_not_erase_the_attribution": true,
+    "missing_proof_is_not_concealed": true
+  },
+  "open_evidence": [
+    "native instruction and mandate chain",
+    "actor-specific presence, participation, knowledge and purpose evidence",
+    "security and locksmith contract, payer, orders, logs and key receipts",
+    "complete possession, income and actual-control ledger",
+    "administrator knowledge, authority, supervision, recovery and accounting file",
+    "judge-by-act knowledge, duty, decision, purpose and causation matrix",
+    "full dismissal and appellate orders with exact scope and later-evidence comparison",
+    "all exculpatory, corrective and innocent-explanation evidence",
+    "claimant-by-asset-by-period recovery allocation"
+  ],
+  "separate_threads_not_closed": [
+    "PR 804 redacted 21 April 2016 email publication",
+    "ACTA native preservation and source-line verification",
+    "REGAGE26e00074403517 destination and package classification",
+    "Ruth Ugalde outreach response status",
+    "legacy live-verifier consolidation"
+  ],
+  "outbound_boundary": {
+    "this_closeout_authorizes_email": false,
+    "fresh_exact_authorization_required_for_every_send": true,
+    "external_test_sends_permitted": false
+  },
+  "recovery_files": [
+    "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
+    "archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md",
+    "docs/deletion-audits/2026-08-23-cam-creditor-control-criminal-lead-thread.md",
+    "publication-manifests/cam-creditor-control-criminal-lead-20260823.json"
+  ]
+}
