@@ -50,7 +50,7 @@ The fresh exact V3 authorisation was consumed by one verified send. It does not 
 
 Read `archive/CANARY_AND_SPANISH_MEDIA_TARGET_REFRESH_23AUG2026.md`.
 
-1. Ariadna Martínez / Atlántico Hoy — new Tier A Canary economy/tourism/property lane;
+1. Ariadna Martínez / Atlántico Hoy — number-one package prepared locally; proposition isolated; pagination-complete person/outlet Gmail gate passed; direct professional route unresolved; no Gmail draft; not authorised; not sent. Read `archive/ATLANTICO_HOY_ARIADNA_MARTINEZ_PREPARATION_RECORD_23AUG2026.md`;
 2. Ramón Betancor / RTVC — new Tier A in-depth audiovisual lane;
 3. Sandra Tobar / EL ESPAÑOL-Invertia — new Tier A national hotel-company/tourism lane;
 4. Javi Rodríguez and Janire Alfaya / SER Canarias — strong additional lanes, but apply outlet-level spacing because Lourdes Santana is already sent;
@@ -60,6 +60,6 @@ Read `archive/CANARY_AND_SPANISH_MEDIA_TARGET_REFRESH_23AUG2026.md`.
 
 ## Critical Gmail control
 
-Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before any live Gmail operation. Verification must use read/search actions only. A consumed draft is never retried after successful send confirmation.
+Read `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md` and `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before any live Gmail operation. Every proposed email requires a fresh, pagination-complete scan for both the person and the outlet/employer/organisation, including indirect/colleague/other-channel collisions. Verification must use read/search actions only. A consumed draft is never retried after successful send confirmation.
 
 No trigger, queue, draft, coverage state or repository instruction authorises an email send. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` controls every outbound transmission.

@@ -27,7 +27,8 @@ Before preparing a material outbound communication, read and apply:
 6. the specialist source/retrieval gate for the recipient or proposition in scope;
 7. `archive/INSTITUTIONAL_MESSAGE_DISCOVERY_PROTOCOL_15AUG2026.md` where institutional accountability or formal notice is involved;
 8. relevant media traceability ledgers where journalists, editors, publication history or newsroom contact are involved; and
-9. **always** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` before any send, resend, forward or self-email.
+9. `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`; and
+10. **always** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` before any send, resend, forward or self-email.
 
 If this protocol conflicts with `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`, the latter controls.
 
@@ -53,6 +54,10 @@ At minimum determine:
 - which language, attachments and links are justified for this particular recipient.
 
 Search for evidence adverse to the Project Sun Rock position as deliberately as supporting evidence.
+
+For every proposed email, the Gmail portion of this scan is governed by `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`. Search the entire accessible corpus independently for the named person and the outlet/employer/organisation; include names, variants, addresses, domains, relevant colleagues/fallbacks, all header roles, quoted/forwarded content, replies, bounces, redirects and other-channel notifications. Exhaust every continuation token and read relevant threads. Until both halves are complete and the collision is classified:
+
+**SEND STATUS: BLOCKED — PERSON/ORGANISATION GMAIL HISTORY GATE INCOMPLETE.**
 
 ## 4. Communication-family model
 
@@ -333,6 +338,7 @@ The normal operating states are:
 
 **READ / RESEARCH ONLY**  
 → **PREPARED**  
+→ **PERSON + ORGANISATION GMAIL HISTORY GATE PASSED**
 → **GMAIL DRAFT CREATED**  
 → **DRAFT READ-BACK VERIFIED**  
 → **EXACT OUTBOUND PACKAGE PRESENTED TO USER**  
@@ -359,7 +365,11 @@ Before requesting final send approval, present a compact **Outbound Package Read
 - message type;
 - language;
 - why this recipient / personalised angle;
-- prior-thread status;
+- person Gmail scan, query families, cutoff and pagination-completeness result;
+- organisation Gmail scan, query families, cutoff and pagination-completeness result;
+- direct-person, direct-organisation, colleague/fallback and other-channel collision classification;
+- prior-thread / response / bounce / redirect status;
+- routing and outlet/organisation-spacing decision;
 - current narrative spine used;
 - material facts newly added or changed;
 - evidence-status / correction risks;
