@@ -16,14 +16,17 @@ Read:
 - `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md`;
 - `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md`;
 - `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
+- `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`;
+- `archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md` whenever media is in scope;
 - `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
+- `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
 - `archive/CORRECTION_REGISTER.md`;
 - `archive/MISSING_EVIDENCE_REGISTER.md`;
 - `archive/JOURNALIST_MEDIA_REGISTER.md` when media is in scope; and
 - every specialist retrieval/source gate relevant to the recipient and propositions in scope.
 
-Where the recipient is a journalist/editor or the email concerns media history, read the relevant media traceability ledger before drafting.
+Where the recipient is a journalist/editor, newsroom, media routing contact or the email concerns media history, read the mandatory media-core rule and the relevant media traceability ledger before drafting.
 
 Where the recipient is an authority, regulator, professional body, auditor, compliance function or institutional actor, read the relevant accountability/proceeding/source register first.
 
@@ -49,6 +52,8 @@ Record:
 - whether the current message should remain in an existing thread.
 
 An OOO or redirect does not itself authorise a new send to another address.
+
+Previous receipt of the Media Core Package does not permit silent omission from a later media email.
 
 ### 3. Validate and classify the recipient
 
@@ -79,7 +84,8 @@ Before drafting, check:
 - existing specialist mailbox/channel;
 - existing ticket/reference/expediente;
 - whether the message belongs in an existing thread;
-- whether email is sufficient for the requested institutional/procedural act; and
+- whether email is sufficient for the requested institutional/procedural act;
+- whether the recipient is being approached in a media capacity and therefore triggers the Media Core Package; and
 - any prior correction, exclusion or supersession affecting the route.
 
 If an address previously bounced, stop and re-verify before recommending it.
@@ -124,6 +130,8 @@ Classify the email as exactly one primary type:
 
 Secondary functions may be noted, but the primary purpose must remain clear.
 
+For media recipients, every one of these types remains subject to the mandatory Media Core Package.
+
 ### 7. Determine language
 
 Select Spanish, English, German or justified bilingual treatment from the recipient context and prior correspondence.
@@ -142,6 +150,8 @@ If multiple language versions are produced, run a parity check for:
 - ask;
 - attachment references; and
 - links.
+
+Use the appropriate-language source-map pair identified in the canonical source-kit manifest.
 
 ### 8. Select the story module(s)
 
@@ -165,6 +175,8 @@ Select only the modules relevant to the recipient from the current story-module 
 
 Keep the unitary chain available through links, but do not make every email a complete case history.
 
+Selecting a narrow story module does not permit removal of the mandatory media-core source maps or webinar from a media email.
+
 ### 9. Choose exposure-package level
 
 Classify the package:
@@ -174,9 +186,11 @@ Classify the package:
 - **LEVEL 2 — EVIDENTIAL**;
 - **LEVEL 3 — INDEXED DOSSIER**.
 
-Use the smallest package that enables the recipient to understand and act.
+Use the smallest additional package that enables the recipient to understand and act.
 
 For a first journalist/editor approach, Level 1 will normally be the default unless another level is justified.
+
+**Media hard stop:** Level 0 or “link-led” may reduce additional material, but it may not omit the two source-map PNGs, direct webinar link, at least one Por Derecho route or evidential-limits wording. Those are the fixed core, not optional additions.
 
 ### 10. Build the recipient-specific message
 
@@ -204,6 +218,8 @@ For every material proposition distinguish:
 
 Do not convert chronology, notice, association or benefit into proof of criminal intent or causation.
 
+For media emails, include a short statement that the PNG maps are explanatory source indexes and that the webinar does not independently prove wrongdoing, coordination, defective advice, unlawful finance, causation or responsibility.
+
 ### 11. Red-team before finalising
 
 Search deliberately for material that weakens, contradicts, corrects or narrows the proposed email.
@@ -220,7 +236,7 @@ Ask:
 - Does it overstate FEDER/RIC/public-funding conclusions?
 - Does it overstate `alertador` status or representative capacity?
 - Could the subject/body look like indiscriminate bulk campaigning?
-- Would a shorter message increase engagement?
+- Would a shorter message increase engagement without removing mandatory media-core components?
 - Is the ask realistic for this recipient?
 
 Correct the draft before presenting it.
@@ -247,6 +263,8 @@ Do not attach every available file merely because it exists.
 
 Do not use ambiguous duplicate suffixes such as `(2)` or `(3)` in a final package where a canonical filename is available.
 
+For every media email, the manifest must include both appropriate-language source maps. An intended media attachment count of zero or one is invalid unless the user expressly approved the exact omission.
+
 ### 13. Build Link Manifest
 
 For every proposed link provide:
@@ -260,7 +278,12 @@ For every proposed link provide:
 
 Verify the current public page and correction state before recommending it.
 
-Do not automatically use the homepage or material-updates page. Choose the route that best answers the recipient's first question.
+Do not automatically use the homepage or material-updates page. Choose the Por Derecho route that best answers the recipient's first question.
+
+For every media email, the Link Manifest must include:
+
+- the direct controlled San Telmo webinar URL; and
+- at least one current Por Derecho / Project Sun Rock route.
 
 ### 14. Draft / Gmail preparation
 
@@ -277,6 +300,27 @@ After creating a draft, read it back and verify:
 - attachment count;
 - filenames; and
 - language/version.
+
+For a media recipient, the actual draft read-back must also record:
+
+```text
+MEDIA_RECIPIENT = YES
+PWC_SOURCE_MAP_REQUIRED = YES
+PWC_SOURCE_MAP_FOUND = YES / NO
+SAN_TELMO_SOURCE_MAP_REQUIRED = YES
+SAN_TELMO_SOURCE_MAP_FOUND = YES / NO
+WEBINAR_LINK_REQUIRED = YES
+WEBINAR_LINK_FOUND = YES / NO
+POR_DERECHO_LINK_REQUIRED = YES
+POR_DERECHO_LINK_FOUND = YES / NO
+EVIDENTIAL_LIMITS_TEXT_REQUIRED = YES
+EVIDENTIAL_LIMITS_TEXT_FOUND = YES / NO
+EXPLICIT_EXCEPTION = NONE / EXACT USER-APPROVED EXCEPTION
+```
+
+If any required value is `NO` without an exact exception:
+
+**SEND STATUS: BLOCKED — MANDATORY MEDIA CORE PACKAGE INCOMPLETE.**
 
 Never use a real Gmail send action to test draft creation, attachment handling, recipient formatting, address validity, threading, deletion, connector behaviour or sending functionality.
 
@@ -305,9 +349,10 @@ Before any request for send approval, present:
 **Exact body**  
 **Attachment Manifest**  
 **Link Manifest**  
+**Media Core Package preflight, where applicable**  
 **Gmail draft ID, if any**  
 **Draft read-back result**  
-**SEND STATUS: NOT AUTHORISED**
+**SEND STATUS: NOT AUTHORISED / BLOCKED**
 
 Do not phrase readiness as permission to send.
 
@@ -322,6 +367,8 @@ The approval must cover:
 - every attachment/version; and
 - every link.
 
+For media email, a general “send” instruction does not waive a missing core element. Any exception must name the exact omitted component for the exact recipient and message.
+
 If any material element changes after approval, return to **NOT AUTHORISED** and obtain a new approval.
 
 ### 17. Authorised send
@@ -329,6 +376,8 @@ If any material element changes after approval, return to **NOT AUTHORISED** and
 When final approval is received, prefer sending the exact already-reviewed Gmail draft by draft ID.
 
 Do not reconstruct a materially different message at send time.
+
+Do not invoke the send action where the Media Core Package preflight is incomplete.
 
 ### 18. Sent-copy verification
 
@@ -347,7 +396,13 @@ Verify:
 - attachment language/version; and
 - Gmail message/thread identifier.
 
-Only then may the package be marked:
+For media email, additionally verify both source maps, the direct webinar URL, at least one Por Derecho route and the evidential-limits text in the actual sent copy.
+
+Only then may a media package be marked:
+
+**SEND STATUS: SENT + VERIFIED — COMPLETE MEDIA CORE PACKAGE PRESENT.**
+
+For non-media packages, use:
 
 **SEND STATUS: SENT + VERIFIED**
 
@@ -375,8 +430,9 @@ Apply response-based follow-up:
 - do not chase before a promised review period expires;
 - do not automatically resend to an OOO alternative address;
 - stop and re-verify after a bounce;
-- separate formal filing from email notice where required; and
-- do not treat no reply as refusal or non-receipt.
+- separate formal filing from email notice where required;
+- do not treat no reply as refusal or non-receipt; and
+- apply the complete Media Core Package again to any later media reply/follow-up unless the user expressly approves an exact exception.
 
 ### 20. Weekly maximum-reach review
 
@@ -396,6 +452,7 @@ Record:
 - OOO return dates;
 - recipient clusters that were too broad;
 - source/attachment patterns that improved or impaired comprehension;
+- any media-core omission or exception;
 - neutral journalist/media register additions; and
 - next Tier A/B/C priorities.
 
