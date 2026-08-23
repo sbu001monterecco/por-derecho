@@ -18,30 +18,45 @@ One journalist does not complete an outlet. A generic newsroom route does not co
 
 - Silvia Fernández — economics/RIC/business — SENT + VERIFIED / awaiting response.
 - David Ojeda — Local/Las Palmas/institutions/public files — SENT + VERIFIED / awaiting response.
-- **Fran Fajardo — tribunals/courts/judicial-document lane — PREPARED / GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
+- **Fran Fajardo — tribunals/courts/judicial-document lane — REDIGEST V2 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT.**
 
-CANARIAS7 already satisfies the minimum two-named-journalist threshold, but user instruction is to continue its relevant journalists one by one.
+CANARIAS7 already satisfies the minimum two-named-journalist threshold, but user instruction is to continue relevant journalists one by one.
 
 Read:
-- `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`;
-- `archive/CANARIAS7_SILVIA_FERNANDEZ_PREPARATION_RECORD_23AUG2026.md`;
-- `archive/CANARIAS7_DAVID_OJEDA_SENT_VERIFICATION_23AUG2026.md`.
 
-Fran's exact prepared subject:
+- `archive/CANARIAS7_FRAN_FAJARDO_ARTICLE_REPOSITORY_WEBSITE_EMAIL_REDIGEST_23AUG2026.md`;
+- `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
 
-`Fran / Tribunales CANARIAS7 — Concurso 36/2012: qué decidió el juez, qué quedó sin decidir y qué cadena documental falta`
+## Fran controlling V2
 
-Fran's package is deliberately different from Silvia and David. It asks a finite tribunal question: what the court decided vs did not decide, and whether the relevant Concurso 36/2012 testimony/certification chain can be reconstructed as `request → issuance → notification/transfer → delivery → later external use`.
+The earlier Fran draft is superseded and must not be sent.
 
-The package retains adverse evidence, including AP 89/2014, the judge's contrary ex-officio assessment, and the provisional dismissal of the 2018 criminal route confirmed on appeal. It keeps the 18-Jun-2026 AC complaint separate from DP 1901/2026 and treats the 10-Aug-2026 Fiscalía AN inhibition to Arrecife as routing only, not a merits finding.
+**Controlling subject:**
 
-The actual Gmail draft has both mandatory Spanish PNGs at expected byte sizes, current Por Derecho judicial/title/media routes, the San Telmo webinar and express evidential limitations.
+`Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`.
 
-The latest fresh connected-Gmail scan found `NO RESPONSE LOCATED YET` from the active media-domain set searched.
+The redigest includes:
+
+- Fran’s current tribunals/court role and article-specific fit;
+- the Ralons judicial-outcome report;
+- the missing La Laguna crane-case file;
+- Valka documentation/delay reporting;
+- European Prosecutor/masks procedural reporting;
+- the result that no current Por Derecho public page was located citing a Fran article by title or using it as Sun Park evidence;
+- the corrected 2022 Gmail history;
+- exact four-court-outcome/non-merits analysis;
+- separate AC complaint / DP 1901 / GUB 86 routes;
+- the finite testimony chain;
+- adverse evidence and full right of reply;
+- both mandatory Spanish PNGs and the San Telmo webinar.
+
+The latest connected-Gmail scan found `NO RESPONSE LOCATED YET` from the active media-domain set searched.
+
+A fresh exact `Send` instruction authorises only the controlling V2 draft if no material change occurs first.
 
 ## After Fran
 
-Proceed one by one only after Fran is either sent+verified or otherwise resolved:
+Proceed one by one only after Fran is sent+verified or otherwise resolved:
 
 1. Carmen Delia Aranda;
 2. Francisco Suárez Álamo;
