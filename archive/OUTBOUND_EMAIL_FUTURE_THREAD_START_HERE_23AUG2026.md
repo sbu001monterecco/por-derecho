@@ -7,19 +7,20 @@ Before proposing new outreach or website exposure work, read:
 
 1. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`;
 2. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`;
-3. `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
-4. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
-5. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
-6. `archive/OUTBOUND_EMAIL_SEVEN_DAY_MAXIMUM_REACH_AUDIT_23AUG2026.md`;
-7. `archive/OUTBOUND_EXPOSURE_FUTURE_THREADS_NEXT_ACTIONS_23AUG2026.md`;
-8. `archive/prompts/MAXIMUM_REACH_FUTURE_THREAD_CONTINUATION_PROMPT_23AUG2026.md`;
-9. `archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md`;
-10. `archive/JOURNALIST_MEDIA_REGISTER.md` when media is in scope;
-11. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
-12. `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`;
-13. `archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md`;
-14. `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md` and current correction/missing-evidence controls; and
-15. connected Gmail in both directions for any recipient/topic being considered.
+3. `archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md` whenever media is in scope;
+4. `archive/MAXIMUM_REACH_OUTBOUND_CAMPAIGN_LAYER_23AUG2026.md`;
+5. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`;
+6. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`;
+7. `archive/OUTBOUND_EMAIL_SEVEN_DAY_MAXIMUM_REACH_AUDIT_23AUG2026.md`;
+8. `archive/OUTBOUND_EXPOSURE_FUTURE_THREADS_NEXT_ACTIONS_23AUG2026.md`;
+9. `archive/prompts/MAXIMUM_REACH_FUTURE_THREAD_CONTINUATION_PROMPT_23AUG2026.md`;
+10. `archive/prompts/RECIPIENT_SPECIFIC_OUTBOUND_EMAIL_PREPARATION_PROMPT_23AUG2026.md`;
+11. `archive/JOURNALIST_MEDIA_REGISTER.md` when media is in scope;
+12. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
+13. `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`;
+14. `archive/CROSS_THREAD_REPOSITORY_WEBSITE_EMAIL_RESCAN_AND_ACTION_REGISTER_23AUG2026.md`;
+15. `CURRENT_HANDOVER_UNITARY_RECOVERY_21AUG2026.md` and current correction/missing-evidence controls; and
+16. connected Gmail in both directions for any recipient/topic being considered.
 
 The 23-Aug recommendations are recommendations, not completed actions. Revalidate them against current `main`, the current live website and current Gmail before implementation.
 
@@ -41,14 +42,43 @@ Prefer the recipient-specific dossier/language route where useful. A draft with 
 
 The 23-Aug-2026 Civismo / Diego Sánchez de la Cruz routing email is the triggering correction: it was sent with the webinar and two PNG source maps but accidentally omitted the website link. Preserve that sent history accurately; the omission does not itself authorize a corrective resend.
 
+## Mandatory media-core gate
+
+Every outbound email to a journalist, editor, newsroom, media organisation, media-routing address or other recipient being approached in a media capacity must contain the complete Media Core Package:
+
+1. appropriate-language PwC 2016 source-map PNG;
+2. appropriate-language San Telmo / RICPE / Sun Park source-map PNG;
+3. direct San Telmo webinar link at approximately 08:08;
+4. at least one current Por Derecho website route; and
+5. the evidential-limits wording for the maps and webinar.
+
+This rule applies to first approaches, replies, resends, corrections, supplements, follow-ups and routing enquiries. Level 0, link-led treatment, brevity, previous receipt or the drafter’s editorial judgment do not create an exception.
+
+An exception exists only where the user expressly approves the exact omitted component for the exact recipient and exact message.
+
+Required pre-send result:
+
+```text
+PWC_SOURCE_MAP_FOUND = YES
+SAN_TELMO_SOURCE_MAP_FOUND = YES
+WEBINAR_LINK_FOUND = YES
+POR_DERECHO_LINK_FOUND = YES
+EVIDENTIAL_LIMITS_TEXT_FOUND = YES
+```
+
+Otherwise:
+
+**SEND STATUS: BLOCKED — MANDATORY MEDIA CORE PACKAGE INCOMPLETE.**
+
 ## Current outreach-state corrections and implementation status
 
 - **Canonical ES/EN/DE outreach source-kit manifest: IMPLEMENTED** in `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`.
 - **Recipient-fit dossier/personalisation layer: IMPLEMENTED** in `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`.
 - **Mandatory website-link rule: IMPLEMENTED** in `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`.
+- **Mandatory media-core rule: IMPLEMENTED** in `archive/MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md` and `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`.
 - **Exact final authorization and no-test-send hard stop: IMPLEMENTED** in `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` and `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_AND_HARD_STOP_23AUG2026.md`.
 - **Diego Sánchez de la Cruz** is included neutrally in `archive/JOURNALIST_MEDIA_REGISTER.md` with dual-role legal-certainty / investment-climate relevance; outreach history remains private/controlled.
-- **Ruth Ugalde outreach:** `SENT / AWAITING RESPONSE`. No substantive reply was located in the 23 August rescan. Do not resend, correct or follow up without a fresh exact authorization. See `archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md`.
+- **Ruth Ugalde outreach:** the initial media email omitted the two PNG source maps and webinar. A separately authorized same-thread correction then resent the complete substantive package with both Spanish PNGs, the controlled webinar and three Por Derecho dossier links. Current state: `CORRECTIVE PACKAGE SENT + VERIFIED / AWAITING RESPONSE`. Do not send another follow-up without fresh exact authorization. See `archive/RUTH_UGALDE_EL_CONFIDENCIAL_OUTREACH_RECORD_23AUG2026.md`.
 - **REGAGE26e00074403517:** receipt located, destination and package unclassified. Do not describe it as delivery of a particular filing until the primary bridge is recovered. See `archive/REGAGE_26E00074403517_INTAKE_RECORD_23AUG2026.md`.
 - Automated acknowledgements, out-of-office replies and bounces are limited-status evidence only. They do not authorize substitute-recipient sends or prove merits review.
 - The earlier seven-day audit observation that Material Updates was still topped by 14-Aug material is **SUPERSEDED**: a live rescan on 23-Aug-2026 found the English Updates page declaring `Latest material update 22 August 2026` and publishing 20–22 August entries with explicit evidential boundaries.
@@ -71,12 +101,13 @@ PR #804, concerning the redacted 21 April 2016 email, remains draft, explicitly 
 
 1. For dual-role recipients, tailor the same evidence record to the legitimate overlap between roles rather than producing unrelated pitches.
 2. A historical professional address may be used as a **routing/permission channel** when its historical connection is documented, but it must not be represented as a verified current direct address.
-3. The two Spanish source maps plus the controlled San Telmo webinar form a compact orientation package where relevant, subject to their explicit evidence limitations.
+3. The two appropriate-language source maps, controlled San Telmo webinar, at least one Por Derecho route and evidential-limits wording are the **mandatory Media Core Package**, not optional orientation materials.
 4. A long dossier paragraph can be appropriate when a routing organisation needs enough context to decide whether to forward, provided evidence classes remain separated and the ask stays finite.
 5. The current `/en/collaborate/` route is a useful journalist-facing trust surface because it expressly offers `Journalistic verification and responsible coverage`, public-sources-first review, no inherited conclusions and correction/right-of-reply routes.
 6. Every future outbound email must include a current Por Derecho website link and list it in the Link Manifest before final approval.
 7. One exact authorization permits at most one exact transmission. A resend, correction or follow-up is a new package requiring new authorization.
 8. Never send an external test message, even to an invalid address.
+9. A one-word “send” instruction does not waive a mandatory package component; the package must already comply or carry an exact approved exception.
 
 Do not publish journalist contact history merely because it exists in Gmail/repository records.
 
