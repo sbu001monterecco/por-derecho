@@ -9,14 +9,6 @@
 
 Do not infer silence and do not rely on chat memory.
 
-## Mandatory multi-journalist rule
-
-Read:
-- `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_RULE_23AUG2026.md`;
-- `archive/MEDIA_OUTLET_MULTI_JOURNALIST_COVERAGE_DASHBOARD_23AUG2026.md`.
-
-One journalist does not complete an outlet. A newsroom address does not count as a second named journalist. Additional lanes remain separate outbound acts requiring separate exact approval.
-
 ## Active sent media state — individual recipients
 
 - Ruth Ugalde / El Confidencial — SENT / corrective complete package sent / awaiting response.
@@ -31,7 +23,7 @@ One journalist does not complete an outlet. A newsroom address does not count as
 - Silvia Fernández / CANARIAS7 — SENT + VERIFIED / awaiting response.
 - David Ojeda / CANARIAS7 — SENT + VERIFIED / awaiting response.
 
-The latest fresh connected-Gmail scan before Fran V2 preparation found:
+Latest connected-Gmail media scan before the Fran V3 redigest found:
 
 `NO RESPONSE LOCATED YET`.
 
@@ -39,71 +31,70 @@ Use only that wording. Silence is not evidence of reading, rejection, delivery f
 
 ## CANARIAS7 current outlet state
 
-Silvia Fernández = economics/RIC/business lane, SENT + VERIFIED.
-
+Silvia Fernández = economics/RIC/business lane, SENT + VERIFIED.  
 David Ojeda = Local/Las Palmas/institutions/public-files lane, SENT + VERIFIED.
 
-CANARIAS7 satisfies the minimum two-named-journalist threshold, but user instruction is to continue relevant CANARIAS7 lanes one by one.
+CANARIAS7 satisfies the two-named-journalist minimum, but user instruction is to continue relevant named lanes one by one.
 
-## Fran Fajardo — controlling V2 gate
+## Fran Fajardo — controlling V3 gate
 
-**Status:** `REDIGEST V2 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`.
+**Status:** `REDIGEST V3 / CONTROLLING GMAIL DRAFT VERIFIED / NOT AUTHORISED / NOT SENT`.
 
 Read:
 
 - `archive/CANARIAS7_FRAN_FAJARDO_ARTICLE_REPOSITORY_WEBSITE_EMAIL_REDIGEST_23AUG2026.md`;
 - `archive/CANARIAS7_FRAN_FAJARDO_PREPARATION_RECORD_23AUG2026.md`.
 
-### Superseded draft
+### Supersession
 
-Do **not** send the earlier Fran draft with subject:
+V1 and V2 Fran drafts are **SUPERSEDED / DO NOT SEND**.
 
-`Fran / Tribunales CANARIAS7 — Concurso 36/2012: qué decidió el juez, qué quedó sin decidir y qué cadena documental falta`.
+### Controlling V3 subject
 
-### Controlling V2 subject
+`Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`
 
-`Fran / Tribunales CANARIAS7 — Sun Park: autos procesales, testimonios judiciales y una cadena documental verificable`.
-
-### Controlling V2 routing
+### Controlling routing
 
 - Fran’s verified direct professional CANARIAS7 route as `To`;
 - no `Cc`;
 - no `Bcc`.
 
-### Why Fran after the redigest
+### New V3 archival checkpoint
 
-Current public material identifies Fran as CANARIAS7’s tribunals/court journalist. His reporting on the Ralons insolvency outcome, the missing La Laguna crane-case file, Valka documentation delays and the European Prosecutor/masks matter shows a recipient-specific fit for:
+The full repository/website/Gmail redigest recovered a 2-Jun-2022 preservation package containing:
 
-`allegation → primary file → procedural ruling → merits actually decided → document custody/absence → later legal effect`.
+- Google/Bing search captures for headline `La Fiscalía Provincial acusa a Acosta Matos de falsificación y estafa procesal`;
+- historical CANARIAS7 path `fiscalia-provincial-acusa-20220530232448-nt.html`;
+- a same-day direct 404 capture; and
+- contemporaneous Fran profile/article captures.
 
-Those articles establish beat only. They are not evidence of Sun Park facts or prior knowledge.
+**Do not infer authorship, motive, censorship, improper pressure or CMS intent.** V3 asks Fran to confirm/correct byline, original text, source and CMS status/history only.
 
-A repository/site search located no public Por Derecho page citing a Fran article by title or using it as Sun Park evidence.
+A fresh `main` search found no public Por Derecho page citing that article/path or another Fran report as Sun Park evidence.
 
-### Judicial and documentary core
+### Judicial/documentary core
 
 - Auto 1377/2025: removal dismissed for standing; substantive grounds not entered.
-- Order of 11 November 2025: reposiciones dismissed; no document-by-document merits resolution of the seven blocks.
-- Judgment 4/2026: fees claim dismissed for standing; material legality, period and amount not decided on the merits.
+- Auto 11-Nov-2025: reposiciones dismissed; no block-by-block merits adjudication.
+- Sentencia 4/2026: fee claim dismissed for standing; material legality/period/amount not decided on merits.
 - Auto 223/2026: appeals accumulated; merits not resolved.
 - Judge’s contrary ex-officio assessment retained.
-- AC complaint of 18 June 2026, DP 1901/2026 and GUB 86/2026 remain separate routes.
-- Issuing judicial testimony is ordinary and is not itself evidence of irregularity.
+- AC complaint of 18-Jun-2026, DP 1901/2026 and GUB 86/2026 remain separate routes.
+- Judicial testimony issuance is ordinary and not itself evidence of irregularity.
 - Finite chain: `request → decision → issuance → firmness wording → notification/transfer → delivery → later external use`.
 - AP 89/2014 and the provisional 2018 dismissal confirmed on appeal remain prominent adverse evidence.
-- July-2021 `54 CAM / 190 LPB / 18 terceros` remains a title checkpoint, not proof CAM owned Sun Park.
+- `54 CAM / 190 LPB / 18 terceros` remains a title checkpoint, not proof CAM owned Sun Park.
 
-### Verified V2 mandatory media core
+### Verified V3 media core
 
 - `san-telmo-ricpe-sun-park-stamp-v1-ES.png` — 827,315 bytes;
 - `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png` — 489,983 bytes;
 - San Telmo webinar at approximately 08:08;
 - current Por Derecho judicial/title/funding/media-traceability routes;
-- four Fran article links used for recipient fit;
-- adverse/contrary evidence and express limitations;
-- five finite tribunals checks and complete right of reply.
+- explicit evidential limitations;
+- six finite tribunals checks and complete right of reply.
 
-**SEND GATE: NOT AUTHORISED / NOT SENT.** Any material edit resets approval. A fresh `Send` instruction authorises only V2. Post-send verification must use read/search actions only.
+**SEND GATE: NOT AUTHORISED / NOT SENT.** Any material edit resets approval. A fresh exact `Send` instruction authorises only V3. Post-send verification must use read/search actions only.
 
 ## CANARIAS7 queue after Fran
 
@@ -118,17 +109,13 @@ A repository/site search located no public Por Derecho page citing a Fran articl
 
 This chain does not prove a single conspiracy, common criminal intent, institutional complicity, double funding or knowing media falsehood.
 
-## Immediate HOLDs
-
-Do not immediately re-contact Javier Romera, Cristian Reche, Frederik Obermaier, Jochen Eversmeier or Diego Sánchez de la Cruz except after the previously recorded elapsed-time/response conditions.
-
 ## Outbound-control incident
 
-Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before any further live Gmail operation. Post-send verification must use read/search actions only. Never substitute a send action for verification or testing.
+Read `archive/OUTBOUND_EMAIL_CONTROL_INCIDENT_NOOP_EXAMPLE_23AUG2026.md` before any live Gmail operation. Post-send verification must use read/search only. Never substitute a send action for verification/testing.
 
 ## Current next action
 
-Present the exact Fran Fajardo controlling V2 package for final approval. Do not send without a fresh exact user instruction.
+Present the exact Fran Fajardo controlling V3 package for final approval. Do not send without a fresh exact user instruction.
 
 ## No autonomous send/follow-up
 
