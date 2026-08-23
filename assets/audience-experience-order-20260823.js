@@ -62,14 +62,15 @@
     if (sourceFunds) coreSections.push(sourceFunds);
 
     let anchor = priority || hero;
-    for (const section of [...coreSections.slice(2)]) {
+    for (const section of [prosecution, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
       }
     }
     const fullRecord = ensureFullRecord(main, isEnglish, coreSections);
-    placeAfter(fullRecord, sourceFunds || perimeters || audiences || summary || prosecution || anchor);
+    placeAfter(fullRecord, perimeters || audiences || summary || prosecution || anchor);
+    if (sourceFunds) placeAfter(sourceFunds, fullRecord);
 
     if (prosecution) {
       prosecution.dataset.audienceProtectedAttribution = '20260823';
