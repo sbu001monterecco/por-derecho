@@ -1,3 +1,8 @@
 __pycache__/
 *.py[cod]
 tmp/
+
+# Cuatrecasas private working artifacts — never publish from this repository.
+CUATRECASAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
+CUATRECASAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv
+CUATRECASAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md

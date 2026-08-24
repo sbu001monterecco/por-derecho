@@ -10,8 +10,8 @@ const outputDir = process.env.PSR_CALIFICACION_THESIS_ARTIFACT_DIR || 'artifacts
 const routes = [
   { key: 'es-canonical', route: '/es/tesis-uso-criminal-procedimiento-calificacion/', variant: 'canonical', anchor: 'hero', pillars: 5, canonical: true },
   { key: 'en-canonical', route: '/en/insolvency-classification-criminal-misuse-thesis/', variant: 'canonical', anchor: 'hero', pillars: 5, canonical: true },
-  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'hero', persistent: true },
-  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'hero', persistent: true },
+  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'controlling', persistent: true },
+  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'controlling', persistent: true },
   { key: 'es-institutional', route: '/es/concurso-36-2012-responsabilidad-institucional/', variant: 'featured', anchor: 'hero', persistent: true },
   { key: 'en-institutional', route: '/en/insolvency-36-2012-institutional-accountability/', variant: 'featured', anchor: 'hero', persistent: true },
   { key: 'es-appeal', route: '/es/concurso-36-2012-ap-seccion-4/', variant: 'appeal', anchor: 'hero', appeal: true },
@@ -52,9 +52,16 @@ try {
         const thesis = document.querySelector('[data-calificacion-misuse-thesis]');
         const hero = main?.querySelector(':scope > section:first-of-type');
         const detailed = main?.querySelector(':scope > section[data-pd-five-ac]');
+        const controlling = main?.querySelector(':scope > .ac-dfa-update-section');
         const sourceFunds = main?.querySelector(':scope > .source-funds-notice-section--featured');
         const guided = main?.querySelector(':scope > #calificacion-reader-gateway');
-        const legacyAnchor = spec.anchor === 'source-funds' ? sourceFunds : spec.anchor === 'guided' ? guided : hero;
+        const legacyAnchor = spec.anchor === 'source-funds'
+          ? sourceFunds
+          : spec.anchor === 'guided'
+            ? guided
+            : spec.anchor === 'controlling'
+              ? controlling
+              : hero;
         const anchor = detailed || legacyAnchor;
         const text = thesis?.textContent?.replace(/\s+/g, ' ').trim() || '';
         const style = thesis ? getComputedStyle(thesis) : null;

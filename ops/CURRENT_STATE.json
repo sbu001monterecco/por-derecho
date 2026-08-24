@@ -42,6 +42,33 @@
     "evidence_map": "assets/data/calificacion-rpl2523-evidence-map-v1.json",
     "controlling_source": "archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md"
   },
+  "cuatrecasas": {
+    "status": "SITE_WIDE_SYNC_RELEASE_24AUG2026",
+    "controlling_continuation": "archive/CUATRECASAS_PERIMETER_BILLING_EMAIL_AGENTIC_CONTINUATION_24AUG2026.md",
+    "canonical_routes": [
+      "es/cuatrecasas-sun-park/",
+      "en/cuatrecasas-sun-park/",
+      "es/ona-hotels-salida-concurso-36-2012/",
+      "en/ona-hotels-insolvency-exit-36-2012/",
+      "es/toma-control-sun-park-7-junio-2018/",
+      "en/sun-park-takeover-7-june-2018/"
+    ],
+    "billing_checkpoint": {
+      "located_issued_invoices": 22,
+      "native_invoice_face_total_eur": "327608.32",
+      "firm_2019_table_total_eur": "326608.32",
+      "unpaid_issued_eur": "136830.72",
+      "unissued_or_estimated_eur": "152424.95",
+      "scope": "2014-to-present whole client-service perimeter; legal capacities must remain separate"
+    },
+    "june_2018_lock": "Stoneweg itself issued an Oferta Vinculante Condicionada after the agreed 12 June call and for the 13 June meeting. The offer stage was agreed and closed; transaction completion remained conditional. Elaia/Lagune is one documented EUR 26m route comprising reciprocal package components.",
+    "private_public_firewall": "Line-level timekeeper/disbursement ledgers, private emails, current-counsel material and unsent correspondence remain outside the public repository.",
+    "communications_campaign": {
+      "research_recipient_resolution_and_drafting_may_resume": true,
+      "transmission_authorized": false,
+      "send_gate": "Fresh approval of exact recipients, subject, text, links and attachments is mandatory."
+    }
+  },
   "finite_priority_gaps": [
     "Signed later RPL merits judgment or order",
     "Service record",
