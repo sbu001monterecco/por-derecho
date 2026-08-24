@@ -4,7 +4,7 @@
 
   // Preserve and execute the complete established pre-Intervención loader unchanged.
   const prior = document.createElement('script');
-  prior.src = new URL('site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824d', current.src).href;
+  prior.src = new URL('site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e', current.src).href;
   prior.async = false;
   prior.setAttribute('data-pre-fiscalia-eg95-pre-intervencion-loader', '20260823');
   document.head.appendChild(prior);

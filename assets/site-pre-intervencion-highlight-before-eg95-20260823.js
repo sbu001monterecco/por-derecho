@@ -4,7 +4,7 @@
 
   // Preserve the site's established loader unchanged, but move it behind this thin wrapper.
   const base = document.createElement('script');
-  base.src = new URL('site-base-20260819.js?v=20260824d', current.src).href;
+  base.src = new URL('site-base-20260819.js?v=20260824e', current.src).href;
   base.async = false;
   document.head.appendChild(base);
 

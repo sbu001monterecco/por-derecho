@@ -70,7 +70,7 @@
   section.dataset.art1535ReservePathway = 'true';
   section.innerHTML = `<div class="art1535-reserve__inner"><p class="art1535-reserve__eyebrow">${copy.eyebrow}</p><h2>${copy.title}</h2><p>${copy.body}</p><div class="art1535-reserve__flow">${copy.flow}</div><p class="art1535-reserve__test">${copy.test}</p><p>${copy.trigger}</p><p class="art1535-reserve__limit">${copy.limit}</p><a href="${copy.href}">${copy.cta} →</a></div>`;
 
-  const hero = document.querySelector('main .hero, main > section.hero, .hero');
+  const hero = document.querySelector('main > .dossier-hero, main > .hero, main > section.hero, main > .mhero');
   const thesis = document.querySelector('main [data-calificacion-misuse-thesis]');
   if ((thesis || hero)?.parentNode) (thesis || hero).insertAdjacentElement('afterend', section);
   else {

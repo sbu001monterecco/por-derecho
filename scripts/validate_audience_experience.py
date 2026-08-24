@@ -163,7 +163,7 @@ def validate_home(errors: list[str], lang: str) -> None:
         'data-five-actor-front-page-lock="express-authorization-required"',
         'data-key-direct-route-presentation="front-page"',
         'data-pd-five-ac-css="20260824b"',
-        'site.js?v=20260824d',
+        'site.js?v=20260824e',
         '../assets/actors/francisco-mario-matos-matas.jpg',
         '../assets/actors/francisco-de-borja-rodriguez-batllori.jpg',
         '../assets/actors/alberto-lopez-villarrubia.jpg',
@@ -229,7 +229,7 @@ def validate_key_direct_routes(errors: list[str]) -> None:
             fail(errors, f"missing locked five-actor direct route: {relative}")
             continue
         text = page.read_text(encoding="utf-8")
-        if "site.js?v=20260824d" not in text:
+        if "site.js?v=20260824e" not in text:
             fail(errors, f"{relative}: missing cache-busted five-actor direct-route loader")
 
 
@@ -283,9 +283,9 @@ def validate_runtime_contract(errors: list[str]) -> None:
     for marker, source, label in (
         ("homepage-actor-family-pwc-note-20260819.js?v=20260824d", ricpe_loader, "five-actor component"),
         ("ricpe-identity-correction-20260815.js?v=20260824d", site_base, "RICPE identity loader"),
-        ("site-base-20260819.js?v=20260824d", pre_intervencion, "site base loader"),
-        ("site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824d", site_wrapper, "pre-intervencion loader"),
-        ("site-pre-intervencion-highlight-20260820.js?v=20260824d", loader, "site wrapper loader"),
+        ("site-base-20260819.js?v=20260824e", pre_intervencion, "site base loader"),
+        ("site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e", site_wrapper, "pre-intervencion loader"),
+        ("site-pre-intervencion-highlight-20260820.js?v=20260824e", loader, "site wrapper loader"),
     ):
         if marker not in source:
             fail(errors, f"cache-busted direct-route loader chain missing {label}: {marker}")

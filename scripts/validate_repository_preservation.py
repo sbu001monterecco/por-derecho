@@ -264,7 +264,7 @@ def validate_five_actor_lock(contract: dict, errors: list[str]) -> None:
     )
     for rel in direct_routes:
         path = ROOT / rel
-        if path.is_file() and "site.js?v=20260824d" not in path.read_text(encoding="utf-8"):
+        if path.is_file() and "site.js?v=20260824e" not in path.read_text(encoding="utf-8"):
             add(errors, f"{rel}: protected direct-route loader missing")
 
     module_path = ROOT / "assets" / "homepage-actor-family-pwc-note-20260819.js"
@@ -292,6 +292,24 @@ def validate_five_actor_lock(contract: dict, errors: list[str]) -> None:
         ]:
             if marker and marker not in module:
                 add(errors, f"five-actor runtime contract missing: {marker}")
+
+    # Direct dossier composition is part of the visibility lock. These older
+    # modules must recognise dossier heroes instead of prepending a generic
+    # section before the hero and confusing first-read ordering.
+    placement_contract = {
+        "assets/asset-recovery-preservation-20260821.js": ":scope > .dossier-hero",
+        "assets/art1535-reserve-pathway-20260819.js": "main > .dossier-hero",
+        "assets/site.js": "asset-recovery-preservation-20260821.js?v=20260824a",
+        "assets/cam-favourable-pattern-20260819.js": "art1535-reserve-pathway-20260819.js?v=20260824a",
+        "assets/site-base-20260819.js": "cam-favourable-pattern-20260819.js?v=20260824a",
+        "scripts/render_ac_community_de_facto_administration.mjs": "window.__pdFirstReadStableSince",
+    }
+    for rel, marker in placement_contract.items():
+        path = ROOT / rel
+        if not path.is_file():
+            add(errors, f"first-read placement source missing: {rel}")
+        elif marker not in path.read_text(encoding="utf-8"):
+            add(errors, f"{rel}: first-read placement contract missing: {marker}")
 
 
 def validate_governance_links(errors: list[str]) -> None:

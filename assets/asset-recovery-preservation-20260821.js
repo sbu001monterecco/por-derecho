@@ -56,7 +56,7 @@
       const target = document.querySelector('#routes, #vias');
       if (target) target.insertAdjacentElement('beforebegin', section); else main.insertAdjacentElement('afterbegin', section);
     } else {
-      const hero = main.querySelector('.hero');
+      const hero = main.querySelector(':scope > .dossier-hero, :scope > .hero, :scope > section.hero, :scope > .mhero');
       if (hero) hero.insertAdjacentElement('afterend', section); else main.insertAdjacentElement('afterbegin', section);
     }
   };

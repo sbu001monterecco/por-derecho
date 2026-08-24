@@ -19,6 +19,8 @@ The repair in PR #919 restored static homepage copies and a dynamic presentation
 
 The final re-digest found one important omission in the original lock: the canonical Spanish Judge route is `es/concurso-36-2012-magistrado-juez/`, while the smaller `es/concurso-36-2012-juzgado-mercantil-1/` route is a legacy surface. The final guard protects and tests both. It does not silently redirect or remove either route.
 
+The first CI pass for the final guard also exposed two older composition defects rather than missing actor content. On the RICPE routes, `asset-recovery-preservation-20260821.js` did not recognise `.dossier-hero` and could prepend its gateway before the real hero; on the takeover routes, `art1535-reserve-pathway-20260819.js` had the same omission for its Article 1535 reserve card. A grouped test selector then treated the prepended generic section as `section:first-of-type`. RICPE also had an older source-of-funds observer competing with the five-actor observer for the same post-hero slot. The final guard corrects the two hero selectors, places the source-of-funds section after the locked actor component, cache-busts both repaired loader chains and resolves the hero in explicit priority order. The render check now proves 500 ms of continuous first-read adjacency and scrolls lazy evidence images into view before requiring non-zero natural dimensions; exact counts, file paths and placement requirements remain unchanged.
+
 ## 3. Durable preservation controls in this package
 
 - `AGENTS.md` makes current remote `main` the editing baseline and prohibits stale-snapshot overwrite.
@@ -26,6 +28,7 @@ The final re-digest found one important omission in the original lock: the canon
 - `scripts/validate_repository_preservation.py` blocks protected deletion/rename without a newly added, exact-base authorization record; it also validates local uncommitted work against `origin/main`.
 - `operations/preservation-authorizations/README.md` defines the only acceptable deletion-authorization record.
 - The settled-DOM verifier covers both homepages, fourteen canonical direct routes and the preserved legacy Spanish court route. It checks five full cards, two full institutional cards, five full linkage rows, stable IDs, seven reciprocal dossier links, approved images, role separation, first-read placement and prohibited identity drift.
+- The preservation gate locks the `.dossier-hero` placement selectors and their cache-busted loader versions so older gateways cannot again be prepended ahead of the protected direct-route first read.
 - The scheduled live workflow runs every six hours and includes every protected route in its source trigger set.
 
 ## 4. Content boundaries preserved

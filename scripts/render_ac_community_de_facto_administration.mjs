@@ -18,6 +18,9 @@ async function inspect(name, route, assertions, screenshot, options = {}) {
   try {
     const response = await page.goto(`${base}${route}?verify=${Date.now()}`, { waitUntil: 'domcontentloaded', timeout: 45000 });
     record(`${name}: http`, response?.status() === 200, `status=${response?.status()}`);
+    if (JSON.stringify(assertions).includes('data-pd-five-ac')) {
+      await page.locator('section[data-pd-five-ac]').waitFor({ state: 'attached', timeout: 15000 });
+    }
     await page.waitForTimeout(2900);
     const progressiveRecord = page.locator('[data-audience-full-record] > details');
     if (options.openProgressive !== false && await progressiveRecord.count()) await progressiveRecord.evaluate((node) => { node.open = true; });
@@ -67,12 +70,46 @@ async function inspect(name, route, assertions, screenshot, options = {}) {
         record(`${name}: ${assertion.label}`, ok, JSON.stringify(result));
       }
       if (assertion.firstReadAfterHeroSelector) {
-        const result = await page.locator(assertion.firstReadAfterHeroSelector).evaluate(node => {
+        const selector = assertion.firstReadAfterHeroSelector;
+        let waitError = '';
+        try {
+          await page.evaluate(() => { delete window.__pdFirstReadStableSince; });
+          const settled = await page.waitForFunction((candidateSelector) => {
+            const node = document.querySelector(candidateSelector);
+            const main = node?.closest('main');
+            const hero = main?.querySelector(':scope > .dossier-hero')
+              || main?.querySelector(':scope > .hero')
+              || main?.querySelector(':scope > section:first-of-type');
+            const inPosition = Boolean(node && main && node.parentElement === main && hero?.nextElementSibling === node);
+            if (!inPosition) {
+              window.__pdFirstReadStableSince = 0;
+              return false;
+            }
+            if (!window.__pdFirstReadStableSince) window.__pdFirstReadStableSince = performance.now();
+            return performance.now() - window.__pdFirstReadStableSince >= 500;
+          }, selector, { timeout: 10000 });
+          await settled.dispose();
+          // Sample again after a paint after proving 500 ms of continuous
+          // adjacency. This remains an exact first-after-hero assertion while
+          // allowing the page's documented composition guards to settle.
+          await page.waitForTimeout(120);
+        } catch (error) {
+          waitError = String(error);
+        }
+        const result = await page.locator(selector).evaluate(node => {
           const main = node.closest('main');
-          const hero = main?.querySelector(':scope > .dossier-hero, :scope > .hero, :scope > section:first-of-type');
-          return { direct: node.parentElement === main, immediatelyAfter: hero?.nextElementSibling === node };
+          const hero = main?.querySelector(':scope > .dossier-hero')
+            || main?.querySelector(':scope > .hero')
+            || main?.querySelector(':scope > section:first-of-type');
+          const next = hero?.nextElementSibling;
+          return {
+            direct: node.parentElement === main,
+            immediatelyAfter: next === node,
+            hero: hero ? `${hero.tagName.toLowerCase()}${hero.id ? `#${hero.id}` : ''}.${[...hero.classList].join('.')}` : null,
+            actualNext: next ? `${next.tagName.toLowerCase()}${next.id ? `#${next.id}` : ''}.${[...next.classList].join('.')}` : null
+          };
         });
-        record(`${name}: ${assertion.label}`, result.direct && result.immediatelyAfter, JSON.stringify(result));
+        record(`${name}: ${assertion.label}`, result.direct && result.immediatelyAfter, JSON.stringify({ ...result, waitError }));
       }
       if (assertion.outsideCollapsedSelector) {
         const result = await page.locator(assertion.outsideCollapsedSelector).evaluateAll((nodes) => ({
@@ -82,11 +119,38 @@ async function inspect(name, route, assertions, screenshot, options = {}) {
         record(`${name}: ${assertion.label}`, result.count === (assertion.exactCount ?? 1) && result.outside, JSON.stringify(result));
       }
       if (assertion.loadedImageSelector) {
-        const result = await page.locator(assertion.loadedImageSelector).evaluateAll((images) => ({
-          count: images.length,
-          loaded: images.every((image) => image.complete && image.naturalWidth > 0)
+        const selector = assertion.loadedImageSelector;
+        const images = page.locator(selector);
+        const expected = assertion.exactCount ?? 1;
+        const count = await images.count();
+        let waitError = '';
+        if (count === expected) {
+          try {
+            for (let index = 0; index < count; index += 1) {
+              await images.nth(index).scrollIntoViewIfNeeded({ timeout: 5000 });
+            }
+            const loaded = await page.waitForFunction(({ candidateSelector, expectedCount }) => {
+              const candidates = [...document.querySelectorAll(candidateSelector)];
+              return candidates.length === expectedCount
+                && candidates.every(image => image.complete && image.naturalWidth > 0 && image.naturalHeight > 0);
+            }, { candidateSelector: selector, expectedCount: expected }, { timeout: 10000 });
+            await loaded.dispose();
+          } catch (error) {
+            waitError = String(error);
+          }
+        }
+        const result = await images.evaluateAll((candidates) => ({
+          count: candidates.length,
+          loaded: candidates.every(image => image.complete && image.naturalWidth > 0 && image.naturalHeight > 0),
+          images: candidates.map(image => ({
+            src: image.currentSrc || image.getAttribute('src'),
+            loading: image.loading,
+            complete: image.complete,
+            naturalWidth: image.naturalWidth,
+            naturalHeight: image.naturalHeight
+          }))
         }));
-        record(`${name}: ${assertion.label}`, result.count === (assertion.exactCount ?? 1) && result.loaded, JSON.stringify(result));
+        record(`${name}: ${assertion.label}`, result.count === expected && result.loaded, JSON.stringify({ ...result, waitError }));
       }
       if (assertion.href) {
         const count = await page.locator(`a[href="${assertion.href}"]`).count();

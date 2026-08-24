@@ -99,7 +99,7 @@ CHECKS: list[dict[str, Any]] = [
         "path": "assets/site.js",
         "kind": "asset_recovery_global_loader",
         "markers": [
-            "asset-recovery-preservation-20260821.js?v=20260821a",
+            "asset-recovery-preservation-20260821.js?v=",
             "data-asset-recovery-intervention-loader",
         ],
         "min_bytes": 1000,

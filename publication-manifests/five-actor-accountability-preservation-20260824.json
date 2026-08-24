@@ -53,6 +53,10 @@
     "archive/FIVE_ACTOR_VISIBILITY_REGRESSION_AND_REPAIR_24AUG2026.md",
     "assets/five-actor-accountability-20260824.css",
     "assets/homepage-actor-family-pwc-note-20260819.js",
+    "assets/asset-recovery-preservation-20260821.js",
+    "assets/art1535-reserve-pathway-20260819.js",
+    "assets/cam-favourable-pattern-20260819.js",
+    "assets/site.js",
     "scripts/validate_repository_preservation.py",
     "scripts/render_ac_community_de_facto_administration.mjs",
     "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md"
@@ -75,7 +79,8 @@
       "PR #919 repair merged as a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
       "GitHub Pages run 32726738047 published the exact repair merge",
       "source and rendered checks verified both homepages and the then-declared direct-route set",
-      "the final guard adds the canonical Spanish Magistrate-Judge route, one-change deletion authorization, stable actor IDs, complete linkage/card checks, first-read placement and scheduled live verification"
+      "the final guard adds the canonical Spanish Magistrate-Judge route, one-change deletion authorization, stable actor IDs, complete linkage/card checks, first-read placement and scheduled live verification",
+      "the final guard also repairs two legacy dossier-hero placement selectors, removes the RICPE post-hero observer conflict, cache-busts those fixes and verifies 500 ms of stable adjacency plus actual lazy-image loading"
     ]
   },
   "live_urls": [
