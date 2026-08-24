@@ -131,8 +131,11 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - replaced any implication of substantial SLJ work with the claimed-hours/no-signed-filing distinction;
 - separated the 179-page inventory from the 4,458 underlying client files and left actual AC/CAM access open;
 - publication PR: [#885](https://github.com/sbu001monterecco/por-derecho/pull/885), source head `489529af9fe6875ed434293c1fabd6c57e296200`;
-- merge/deployment identifiers and public-edge verification remain pending.
+- final source head: `7ed42ffab839d38b6de8d586d2f69532b34679cb`; all nine CI checks passed;
+- squash merge: `40179d1498debe381b5ac442c8e93610e5cc83d8` at `2026-08-24T01:02:19Z`;
+- Spanish and English public-edge readback returned HTTP 200 with the new attempted-instrumentalisation, 179-page inventory and 4,458-document distinctions visible; the stale completed-CAM-channel wording was absent;
+- live verified at `2026-08-24T01:03:25Z`.
 
 ## Final gate
 
-The previously published thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 24 August responsibility/data-room revision is source-complete locally but not yet live-verified. Its remaining substantive gaps are certified fee-piece access/service/consultation history, the native Parrilla payment/source chain and SLJ's response; the reasoning and source map are preserved.
+The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 24 August responsibility/data-room revision is merged, deployed and live-verified. Its remaining substantive gaps are certified fee-piece access/service/consultation history, the native Parrilla payment/source chain and SLJ's response; the reasoning and source map are preserved.
