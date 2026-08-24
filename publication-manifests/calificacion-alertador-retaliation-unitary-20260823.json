@@ -118,5 +118,32 @@
       "canonical 85-surface live exact-parity verifier passed"
     ]
   },
+  "deletion_record": {
+    "status": "PENDING_AUDIT_PR_MERGE_AND_PUBLIC_DATA_READBACK",
+    "audited_at_utc": "2026-08-24T21:38:27Z",
+    "audited_base_main_sha": "5bb676a62edbe662e2dadfcc80229de8d195a514",
+    "publication_pull_request": 903,
+    "publication_merge_sha": "91334adaa3c82c6b7d4505666188a2d7e98daddb",
+    "live_closeout_pull_request": 904,
+    "live_closeout_merge_sha": "e422e4ddfc6d0015b6d4dd134b5357288ee777c9",
+    "audit": "docs/deletion-audits/2026-08-23-calificacion-alertador-retaliation-unitary.md",
+    "canonical_recovery_paths": [
+      "archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+      "archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+      "archive/CALIFICACION_CRIMINAL_FIRST_ELECONOMISTA_PLEADING_COVERAGE_REVERSE_ENGINEERING_24AUG2026.md",
+      "archive/prompts/CALIFICACION_ALERTADOR_RETALIATION_UNITARY_EXECUTION_PROMPT_23AUG2026.md",
+      "assets/data/calificacion-rpl2523-evidence-map-v1.json"
+    ],
+    "thread_unique_material_remaining": false,
+    "open_evidence_preserved": true,
+    "evidential_closure_percent": 55,
+    "certified_complete_docket_obtained": false,
+    "email_sent": false,
+    "filing_made": false,
+    "source_evidence_deleted": false,
+    "private_source_requery_required": true,
+    "custody_boundary": "Deletion safety preserves repository continuity only. Private emails, privileged communications, unredacted pleadings and native evidence remain in their lawful source systems and must be re-queried; independent native-evidence backup is not claimed.",
+    "meaning": "The thread's material reasoning, corrections, source states, publication controls, implementation evidence and open retrieval targets are recoverable without chat history. The investigation, appeals, remedies and evidence queue remain open."
+  },
   "thread_deletion_audit": "docs/deletion-audits/2026-08-23-calificacion-alertador-retaliation-unitary.md"
 }
