@@ -54,6 +54,7 @@ jobs:
       - name: Validate JavaScript syntax
         run: |
           node --check assets/audience-experience-order-20260823.js
+          node --check assets/homepage-actor-family-pwc-note-20260819.js
           node --check assets/prosecution-public-entry-20260821.js
           node --check assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js
           node --check assets/optimum-reader-journey-20260818.js

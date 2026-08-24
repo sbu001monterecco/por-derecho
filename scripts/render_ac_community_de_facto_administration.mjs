@@ -13,14 +13,14 @@ const record = (name, ok, detail = '') => checks.push({ name, ok: Boolean(ok), d
 const browser = await chromium.launch({ headless: true, executablePath });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1200 } });
 
-async function inspect(name, route, assertions, screenshot) {
+async function inspect(name, route, assertions, screenshot, options = {}) {
   const page = await context.newPage();
   try {
     const response = await page.goto(`${base}${route}?verify=${Date.now()}`, { waitUntil: 'domcontentloaded', timeout: 45000 });
     record(`${name}: http`, response?.status() === 200, `status=${response?.status()}`);
     await page.waitForTimeout(2900);
     const progressiveRecord = page.locator('[data-audience-full-record] > details');
-    if (await progressiveRecord.count()) await progressiveRecord.evaluate((node) => { node.open = true; });
+    if (options.openProgressive !== false && await progressiveRecord.count()) await progressiveRecord.evaluate((node) => { node.open = true; });
     const body = await page.locator('body').innerText();
     for (const assertion of assertions) {
       if (assertion.text) record(`${name}: ${assertion.label}`, body.includes(assertion.text), assertion.text);
@@ -29,6 +29,28 @@ async function inspect(name, route, assertions, screenshot) {
         const expected = assertion.exactCount ?? null;
         const ok = expected === null ? count >= (assertion.minCount || 1) : count === expected;
         record(`${name}: ${assertion.label}`, ok, `count=${count}${expected === null ? '' : ` expected=${expected}`}`);
+      }
+      if (assertion.visibleSelector) {
+        const nodes = page.locator(assertion.visibleSelector);
+        const count = await nodes.count();
+        const expected = assertion.exactCount ?? 1;
+        let visible = count === expected;
+        for (let index = 0; visible && index < count; index += 1) visible = await nodes.nth(index).isVisible();
+        record(`${name}: ${assertion.label}`, visible, `count=${count} expected=${expected} visible=${visible}`);
+      }
+      if (assertion.outsideCollapsedSelector) {
+        const result = await page.locator(assertion.outsideCollapsedSelector).evaluateAll((nodes) => ({
+          count: nodes.length,
+          outside: nodes.every((node) => !node.closest('[data-audience-full-record] details:not([open])'))
+        }));
+        record(`${name}: ${assertion.label}`, result.count === (assertion.exactCount ?? 1) && result.outside, JSON.stringify(result));
+      }
+      if (assertion.loadedImageSelector) {
+        const result = await page.locator(assertion.loadedImageSelector).evaluateAll((images) => ({
+          count: images.length,
+          loaded: images.every((image) => image.complete && image.naturalWidth > 0)
+        }));
+        record(`${name}: ${assertion.label}`, result.count === (assertion.exactCount ?? 1) && result.loaded, JSON.stringify(result));
       }
       if (assertion.href) {
         const count = await page.locator(`a[href="${assertion.href}"]`).count();
@@ -92,8 +114,33 @@ await inspect('Spanish homepage visibility', '/es/', [
   { label: 'stable allegation marker', selector: '[data-ac-dfa-visibility-stable="20260824a"]', exactCount: 1 },
   { label: 'impact chain', selector: '[data-ac-dfa-impact-chain="20260824a"]', exactCount: 1 },
   { label: 'headline', text: 'Cinco administradores en la sombra alegados y una habilitación institucional activa' },
-  { label: 'canonical link', href: '/por-derecho/es/administracion-de-hecho-comunidad-ac/' }
-], 'es-home.png');
+  { label: 'canonical link', href: '/por-derecho/es/administracion-de-hecho-comunidad-ac/' },
+  { label: 'one detailed visual', selector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+  { label: 'detailed visual visible before collapse', visibleSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+  { label: 'detailed visual outside collapsed record', outsideCollapsedSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+  { label: 'audience protection marker', selector: 'section[data-audience-protected-five-actor-visual="20260824b"]', exactCount: 1 },
+  { label: 'five private actor cards', selector: 'section[data-pd-five-ac] [data-private-actor-card]', exactCount: 5 },
+  { label: 'Administrator and Judge cards', selector: 'section[data-pd-five-ac] [data-institution-card]', exactCount: 2 },
+  { label: 'five complete linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
+  { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
+  { label: 'private actor canonical portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
+  { label: 'Administrator acts and omissions', text: 'Actos afirmativos / comisiones alegadas' },
+  { label: 'Judge linkage named', text: 'Alberto López Villarrubia' }
+], 'es-home.png', { openProgressive: false });
+
+await inspect('English homepage visibility', '/en/', [
+  { label: 'one detailed visual', selector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+  { label: 'detailed visual visible before collapse', visibleSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+  { label: 'detailed visual outside collapsed record', outsideCollapsedSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+  { label: 'audience protection marker', selector: 'section[data-audience-protected-five-actor-visual="20260824b"]', exactCount: 1 },
+  { label: 'five private actor cards', selector: 'section[data-pd-five-ac] [data-private-actor-card]', exactCount: 5 },
+  { label: 'Administrator and Judge cards', selector: 'section[data-pd-five-ac] [data-institution-card]', exactCount: 2 },
+  { label: 'five complete linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
+  { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
+  { label: 'private actor canonical portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
+  { label: 'Administrator acts and omissions', text: 'Alleged affirmative acts / commissions' },
+  { label: 'Judge linkage named', text: 'Alberto López Villarrubia' }
+], 'en-home.png', { openProgressive: false });
 
 await inspect('English criminal hub visibility', '/en/sun-park-criminal-engineering-investigation/', [
   { label: 'one allegation spotlight', selector: '[data-ac-dfa-allegation-visibility="20260824a"]', exactCount: 1 },

@@ -157,17 +157,44 @@ def validate_home(errors: list[str], lang: str) -> None:
         if marker not in text:
             fail(errors, f"{lang}/index.html: missing metadata/stylesheet marker {marker}")
 
+    for marker in (
+        'data-pd-five-ac="20260824b"',
+        'data-five-actor-accountability-static="true"',
+        'data-pd-five-ac-css="20260824b"',
+        '../assets/actors/francisco-mario-matos-matas.jpg',
+        '../assets/actors/francisco-de-borja-rodriguez-batllori.jpg',
+        '../assets/actors/alberto-lopez-villarrubia.jpg',
+        'Francisco Mario Matos Matas',
+        'Antonio Cogolludo Rojas',
+        'Shaila María Cogolludo Ramos',
+        'José Daniel Acosta Matos',
+        'Laura Patricia Acosta Matos',
+    ):
+        if marker not in text:
+            fail(errors, f"{lang}/index.html: missing static five-actor accountability marker {marker}")
+    for marker, expected in (
+        ('data-private-actor-card=', 5),
+        ('data-institution-card=', 2),
+        ('data-linkage-row', 5),
+    ):
+        count = text.count(marker)
+        if count != expected:
+            fail(errors, f"{lang}/index.html: expected {expected} {marker} markers, got {count}")
+
 
 def validate_runtime_contract(errors: list[str]) -> None:
     module = (ROOT / "assets/audience-experience-order-20260823.js").read_text(encoding="utf-8")
     loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
     prosecution = (ROOT / "assets/prosecution-public-entry-20260821.js").read_text(encoding="utf-8")
     cam_module = (ROOT / "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js").read_text(encoding="utf-8")
+    five_actor_module = (ROOT / "assets/homepage-actor-family-pwc-note-20260819.js").read_text(encoding="utf-8")
+    five_actor_css = (ROOT / "assets/five-actor-accountability-20260824.css").read_text(encoding="utf-8")
     renderer = (ROOT / "scripts/render_audience_experience.mjs").read_text(encoding="utf-8")
 
     for marker in (
         "MutationObserver",
         "deduplicate('.ac-dfa-update-section')",
+        "deduplicate('section[data-pd-five-ac]')",
         "deduplicate('.prosecution-entry-20260821')",
         "sixty-second-summary",
         "resumen-60-segundos",
@@ -176,16 +203,43 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "perimetros-del-caso",
         "data-audience-full-record",
         "openHashTarget",
+        "const detailed = main.querySelector('section[data-pd-five-ac]')",
         "const prosecution = main.querySelector",
-        "[hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
+        "[hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
         "main.dataset.expressCriminalAttributionVisible",
         "main.dataset.fiveActorControllingAllegationVisible",
+        "main.dataset.fiveActorVisualVisible",
         "audienceProtectedAttribution",
+        "audienceProtectedFiveActorVisual",
+        "pd:five-actor-visual-ready",
     ):
         if marker not in module:
             fail(errors, f"audience runtime missing contract marker: {marker}")
-    if "audience-experience-order-20260823.js?v=20260824a" not in loader:
+    if "audience-experience-order-20260823.js?v=20260824b" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
+
+    for marker in (
+        "section.dataset.pdFiveAc = '20260824b'",
+        "data-private-actor-card",
+        "data-institution-card",
+        "data-linkage-row",
+        "pd:five-actor-visual-ready",
+        "francisco-de-borja-rodriguez-batllori.jpg",
+        "alberto-lopez-villarrubia.jpg",
+        "NO ROW DECLARES GUILT",
+        "NINGUNA FILA DECLARA CULPABILIDAD",
+    ):
+        if marker not in five_actor_module:
+            fail(errors, f"five-actor module missing static/runtime accountability marker: {marker}")
+    for marker in (
+        ".pd-five-ac__cards",
+        ".pd-five-ac__institutional-grid",
+        ".pd-five-ac__institution-portrait",
+        ".pd-five-ac__linkage-row",
+        "@media (max-width: 780px)",
+    ):
+        if marker not in five_actor_css:
+            fail(errors, f"five-actor stylesheet missing responsive marker: {marker}")
 
     for marker in (
         "section.dataset.expressCriminalAttribution = '20260824'",
@@ -226,6 +280,11 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "protectedAttributionMarker",
         "contraryRecordPresent",
         "direct attribution is hidden in collapsed full record",
+        "fiveActorVisualVisibleBeforeCollapse",
+        "fiveActorCards",
+        "institutionCards",
+        "linkageRows",
+        "institutionPortraitsLoaded",
     ):
         if marker not in renderer:
             fail(errors, f"audience renderer missing non-dilution check: {marker}")
