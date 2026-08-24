@@ -1,0 +1,106 @@
+{
+  "publication_id": "FIVE-ACTOR-ACCOUNTABILITY-PRESERVATION-20260824",
+  "control_marker": "five-actor-accountability-preservation-20260824",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "DRAFT",
+  "baseline_main_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+  "baseline_tree": "0f8efa58f56490c99cc85e3ea30362e547e30e92",
+  "source_repair": {
+    "pull_request": 919,
+    "merge_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+    "pages_workflow_run": 32726738047,
+    "verified_at": "2026-08-24T12:23:03Z"
+  },
+  "final_guard_release": {
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_workflow_run": null,
+    "verified_at": null,
+    "status": "PENDING"
+  },
+  "expected_routes": {
+    "es": [
+      "es/index.html",
+      "es/administracion-de-hecho-comunidad-ac/index.html",
+      "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "es/ric-private-equity-sun-park/index.html",
+      "es/concurso-36-2012-administrador-concursal/index.html",
+      "es/concurso-36-2012-magistrado-juez/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/concurso-36-2012-responsabilidad-institucional/index.html"
+    ],
+    "en": [
+      "en/index.html",
+      "en/de-facto-administration-community-ac/index.html",
+      "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+      "en/ric-private-equity-sun-park/index.html",
+      "en/insolvency-36-2012-insolvency-administrator/index.html",
+      "en/insolvency-36-2012-mercantile-court-1/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/insolvency-36-2012-institutional-accountability/index.html"
+    ]
+  },
+  "additional_protected_routes": [
+    "es/concurso-36-2012-juzgado-mercantil-1/index.html"
+  ],
+  "expected_source_files": [
+    "AGENTS.md",
+    "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+    "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
+    "operations/preservation-authorizations/README.md",
+    "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md",
+    "archive/FIVE_ACTOR_VISIBILITY_REGRESSION_AND_REPAIR_24AUG2026.md",
+    "assets/five-actor-accountability-20260824.css",
+    "assets/homepage-actor-family-pwc-note-20260819.js",
+    "scripts/validate_repository_preservation.py",
+    "scripts/render_ac_community_de_facto_administration.mjs",
+    "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md"
+  ],
+  "required_controls": [
+    "five private actors remain separate and individually described",
+    "Insolvency Administrator remains court-appointed and judicial-adjacent, not a private actor and not the judge",
+    "Magistrate-Judge remains a separate judicial role",
+    "five actor-specific linkage rows preserve alleged acts or commissions, omissions, contrary record, proof boundaries and dossier links",
+    "relationship does not transfer conduct, knowledge, intention or responsibility",
+    "allegations are not presented as adjudicated findings",
+    "Laura Patricia Acosta Matos is the exclusive public narrative identity",
+    "only verified repository portraits are used",
+    "both homepages and fourteen canonical direct routes plus the legacy Spanish court route remain protected",
+    "protected deletion, rename, hide, collapse, abridgement and unlinking require exact express authorization"
+  ],
+  "validation": {
+    "status": "LOCAL_AND_CI_FINAL_GUARD_PENDING",
+    "evidence": [
+      "PR #919 repair merged as a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+      "GitHub Pages run 32726738047 published the exact repair merge",
+      "source and rendered checks verified both homepages and the then-declared direct-route set",
+      "the final guard adds the canonical Spanish Magistrate-Judge route, one-change deletion authorization, stable actor IDs, complete linkage/card checks, first-read placement and scheduled live verification"
+    ]
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/administracion-de-hecho-comunidad-ac/",
+    "https://sbu001monterecco.github.io/por-derecho/en/de-facto-administration-community-ac/",
+    "https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-magistrado-juez/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-mercantile-court-1/",
+    "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-responsabilidad-institucional/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-institutional-accountability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-juzgado-mercantil-1/"
+  ],
+  "deletion_record": {
+    "status": "PENDING_FINAL_GUARD_MERGE_AND_LIVE_VERIFICATION",
+    "audit_path": "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md",
+    "open_recommendations_path": "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
+    "chat_required_for_future_work": true
+  }
+}

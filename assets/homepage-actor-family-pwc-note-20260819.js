@@ -11,7 +11,7 @@
   const isAc = /\/en\/insolvency-36-2012-insolvency-administrator\/$/.test(path)
     || /\/es\/concurso-36-2012-administrador-concursal\/$/.test(path);
   const isCourt = /\/en\/insolvency-36-2012-mercantile-court-1\/$/.test(path)
-    || /\/es\/concurso-36-2012-juzgado-mercantil-1\/$/.test(path);
+    || /\/es\/concurso-36-2012-(?:magistrado-juez|juzgado-mercantil-1)\/$/.test(path);
   const isTakeover = /\/en\/sun-park-takeover-7-june-2018\/$/.test(path)
     || /\/es\/toma-control-sun-park-7-junio-2018\/$/.test(path);
   const isAccountability = /\/en\/insolvency-36-2012-institutional-accountability\/$/.test(path)
@@ -26,7 +26,7 @@
   const routes = {
     actors: base + (es ? 'actores-partes-abogados-representantes/' : 'actors-parties-lawyers-representatives/'),
     ac: base + (es ? 'concurso-36-2012-administrador-concursal/' : 'insolvency-36-2012-insolvency-administrator/'),
-    court: base + (es ? 'concurso-36-2012-juzgado-mercantil-1/' : 'insolvency-36-2012-mercantile-court-1/'),
+    court: base + (es ? 'concurso-36-2012-magistrado-juez/' : 'insolvency-36-2012-mercantile-court-1/'),
     accountability: base + (es ? 'concurso-36-2012-responsabilidad-institucional/' : 'insolvency-36-2012-institutional-accountability/'),
     takeover: base + (es ? 'toma-control-sun-park-7-junio-2018/' : 'sun-park-takeover-7-june-2018/'),
     pwc: base + 'pwc-canarias-carlos-saavedra-sun-park/',
@@ -417,8 +417,16 @@
       <small class="pd-five-ac__portrait-note">${esc(actor.imageNote)}</small>
     </span>` : '';
 
+  const actorIds = new Map([
+    ['Francisco Mario Matos Matas', 'fmmm'],
+    ['Antonio Cogolludo Rojas', 'acr'],
+    ['Shaila María Cogolludo Ramos', 'smcr'],
+    ['José Daniel Acosta Matos', 'jdam'],
+    ['Laura Patricia Acosta Matos', 'lpam']
+  ]);
+
   const actorCards = c.actors.map((actor) => `
-    <article class="pd-five-ac__card" data-number="${esc(actor.n)}" data-private-actor-card="${esc(actor.n)}">
+    <article class="pd-five-ac__card" data-number="${esc(actor.n)}" data-private-actor-card="${esc(actor.n)}" data-private-actor-id="${esc(actorIds.get(actor.name))}">
       ${portrait(actor)}
       <span class="pd-five-ac__stage">${esc(actor.stage)}</span>
       <strong class="pd-five-ac__name">${esc(actor.name)}</strong>
@@ -448,7 +456,7 @@
   const legend = c.legend.map((item) => `<span>${esc(item)}</span>`).join('');
   const linkageHead = `<div class="pd-five-ac__linkage-row pd-five-ac__linkage-row--head">${c.linkageLabels.map((label) => `<span class="pd-five-ac__linkage-cell">${esc(label)}</span>`).join('')}</div>`;
   const linkageRows = c.linkageRows.map((row) => `
-    <div class="pd-five-ac__linkage-row" data-linkage-row>
+    <div class="pd-five-ac__linkage-row" data-linkage-row data-linkage-actor-id="${esc(actorIds.get(row.name))}">
       <span class="pd-five-ac__linkage-cell" data-label="${esc(c.linkageLabels[0])}"><strong class="pd-five-ac__linkage-actor">${esc(row.name)}</strong></span>
       <span class="pd-five-ac__linkage-cell" data-label="${esc(c.linkageLabels[1])}">${esc(row.private)}</span>
       <span class="pd-five-ac__linkage-cell" data-label="${esc(c.linkageLabels[2])}">${esc(row.ac)}</span>
@@ -523,8 +531,22 @@
   const mountPage = () => {
     const hero = d.querySelector('.dossier-hero, main > .hero, .hero');
     if (!hero) return false;
-    const thesis = d.querySelector('[data-calificacion-misuse-thesis]');
-    (thesis || hero).insertAdjacentElement('afterend', build());
+    const section = build();
+    section.dataset.directRouteFirstReadPin = '20260824d';
+    hero.insertAdjacentElement('afterend', section);
+    const main = hero.closest('main');
+    const pin = () => {
+      const liveHero = d.querySelector('.dossier-hero, main > .hero, .hero');
+      const liveSection = d.querySelector('section[data-pd-five-ac]');
+      if (liveHero && liveSection && liveHero.nextElementSibling !== liveSection) {
+        liveHero.insertAdjacentElement('afterend', liveSection);
+      }
+    };
+    if (main) {
+      const observer = new MutationObserver(pin);
+      observer.observe(main, { childList: true });
+      [0, 100, 350, 1000, 3000, 7000, 11000, 15000, 22000, 30000].forEach((delay) => window.setTimeout(pin, delay));
+    }
     announceReady();
     return true;
   };

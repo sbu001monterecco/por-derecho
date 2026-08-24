@@ -31,6 +31,15 @@ jobs:
           GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
           GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: python scripts/validate_publication_integrity.py
+      - name: Validate repository preservation contract
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python scripts/validate_repository_preservation.py
+      - name: Validate locked first-read actor presentation
+        run: python scripts/validate_audience_experience.py
+      - name: Validate actor and institutional linkage record
+        run: python scripts/validate_ac_community_de_facto_administration.py
       - name: Validate LPB and whole-hotel insolvency perimeter language
         run: python scripts/validate_insolvency_perimeter_language.py
       - name: Validate operational control-plane invariants

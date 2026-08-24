@@ -163,6 +163,7 @@ def validate_home(errors: list[str], lang: str) -> None:
         'data-five-actor-front-page-lock="express-authorization-required"',
         'data-key-direct-route-presentation="front-page"',
         'data-pd-five-ac-css="20260824b"',
+        'site.js?v=20260824d',
         '../assets/actors/francisco-mario-matos-matas.jpg',
         '../assets/actors/francisco-de-borja-rodriguez-batllori.jpg',
         '../assets/actors/alberto-lopez-villarrubia.jpg',
@@ -183,6 +184,26 @@ def validate_home(errors: list[str], lang: str) -> None:
         if count != expected:
             fail(errors, f"{lang}/index.html: expected {expected} {marker} markers, got {count}")
 
+    preservation_links = (
+        (
+            'concurso-36-2012-magistrado-juez/',
+            'pwc-canarias-carlos-saavedra-sun-park/',
+            'ric-private-equity-sun-park/',
+        )
+        if lang == "es"
+        else (
+            'insolvency-36-2012-mercantile-court-1/',
+            'pwc-canarias-carlos-saavedra-sun-park/',
+            'ric-private-equity-sun-park/',
+        )
+    )
+    for route in preservation_links:
+        if f'href="{route}"' not in text:
+            fail(errors, f"{lang}/index.html: locked static component missing reciprocal route {route}")
+    footer_match = re.search(r'<footer class="pd-five-ac__footer">(.*?)</footer>', text, re.DOTALL)
+    if not footer_match or footer_match.group(1).count('<a href=') != 7:
+        fail(errors, f"{lang}/index.html: locked static component must retain seven reciprocal dossier links")
+
 
 def validate_key_direct_routes(errors: list[str]) -> None:
     routes = (
@@ -194,6 +215,7 @@ def validate_key_direct_routes(errors: list[str]) -> None:
         "en/ric-private-equity-sun-park/index.html",
         "es/concurso-36-2012-administrador-concursal/index.html",
         "en/insolvency-36-2012-insolvency-administrator/index.html",
+        "es/concurso-36-2012-magistrado-juez/index.html",
         "es/concurso-36-2012-juzgado-mercantil-1/index.html",
         "en/insolvency-36-2012-mercantile-court-1/index.html",
         "es/toma-control-sun-park-7-junio-2018/index.html",
@@ -207,7 +229,7 @@ def validate_key_direct_routes(errors: list[str]) -> None:
             fail(errors, f"missing locked five-actor direct route: {relative}")
             continue
         text = page.read_text(encoding="utf-8")
-        if "site.js?v=20260824c" not in text:
+        if "site.js?v=20260824d" not in text:
             fail(errors, f"{relative}: missing cache-busted five-actor direct-route loader")
 
 
@@ -253,17 +275,17 @@ def validate_runtime_contract(errors: list[str]) -> None:
     if "audience-experience-order-20260823.js?v=20260824b" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
     for marker in (
-        "const detailed = match(home) ? main.querySelector(':scope > section[data-pd-five-ac]') : null",
+        "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')",
         "const anchor = detailed || controlling || sourceFunds || hero",
     ):
         if marker not in calificacion:
             fail(errors, f"Calificacion first-read pin can race the locked five-actor visual: {marker}")
     for marker, source, label in (
-        ("homepage-actor-family-pwc-note-20260819.js?v=20260824c", ricpe_loader, "five-actor component"),
-        ("ricpe-identity-correction-20260815.js?v=20260824c", site_base, "RICPE identity loader"),
-        ("site-base-20260819.js?v=20260824c", pre_intervencion, "site base loader"),
-        ("site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824c", site_wrapper, "pre-intervencion loader"),
-        ("site-pre-intervencion-highlight-20260820.js?v=20260824c", loader, "site wrapper loader"),
+        ("homepage-actor-family-pwc-note-20260819.js?v=20260824d", ricpe_loader, "five-actor component"),
+        ("ricpe-identity-correction-20260815.js?v=20260824d", site_base, "RICPE identity loader"),
+        ("site-base-20260819.js?v=20260824d", pre_intervencion, "site base loader"),
+        ("site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824d", site_wrapper, "pre-intervencion loader"),
+        ("site-pre-intervencion-highlight-20260820.js?v=20260824d", loader, "site wrapper loader"),
     ):
         if marker not in source:
             fail(errors, f"cache-busted direct-route loader chain missing {label}: {marker}")

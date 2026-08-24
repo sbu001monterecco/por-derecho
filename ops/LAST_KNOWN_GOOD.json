@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "release_id": "calificacion-rpl2523-evidence-governance-20260824-v1",
+  "release_id": "five-actor-visibility-repair-20260824-pr919",
   "state": "LIVE_VERIFIED",
-  "source_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+  "source_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
   "verification": {
-    "workflow": "PR #899 publication, full PR matrix, exact-SHA Pages deployment and post-merge bilingual route verification",
-    "run_id": "32685412186",
+    "workflow": "PR #919 five-actor visibility repair, exact-SHA Pages deployment and bilingual homepage/direct-route verification",
+    "run_id": "32726738047",
     "artifact_id": null,
     "artifact_digest": null,
-    "verified_at": "2026-08-24T03:09:02Z",
+    "verified_at": "2026-08-24T12:23:03Z",
     "checks": [
-      "all_19_pull_request_workflows_success",
-      "all_21_post_merge_workflow_runs_success",
-      "calificacion_settled_dom_browser_render",
+      "five_actor_static_homepage_source_integrity",
+      "five_actor_settled_dom_browser_render",
       "publication_integrity",
       "mission_critical_repository",
-      "audience_experience_415_html_4493_internal_links",
+      "audience_experience_417_bilingual_html_pages",
       "exact_sha_pages_deployment",
-      "eight_critical_bilingual_html_routes_live",
-      "machine_readable_evidence_map_live"
+      "both_homepages_live",
+      "then_declared_fourteen_direct_actor_routes_live",
+      "canonical_spanish_magistrate_judge_route_assigned_to_final_guard"
     ]
   },
   "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."

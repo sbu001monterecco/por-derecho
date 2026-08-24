@@ -14,21 +14,30 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOWS = ROOT / ".github" / "workflows"
-FULL_SHA_USES = re.compile(r"^\s*-\s+uses:\s+([^#\s]+)\s*(?:#.*)?$", re.MULTILINE)
+FULL_SHA_USES = re.compile(r"^\s*(?:-\s+)?uses:\s+([^#\s]+)\s*(?:#.*)?$", re.MULTILINE)
 WRITE_SCOPE = re.compile(r"^\s{2,}([A-Za-z0-9_-]+):\s*write\s*$", re.MULTILINE)
 
 REQUIRED_FILES = [
+    "AGENTS.md",
     ".github/CODEOWNERS",
     ".github/dependabot.yml",
     ".github/workflows/production-smoke-monitor.yml",
     ".github/workflows/repository-backup-bundle.yml",
     ".github/workflows/verify-mission-critical-hardening-live.yml",
+    "scripts/validate_publication_integrity.py",
+    "scripts/validate_repository_preservation.py",
     "scripts/production_smoke_check.py",
     "ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md",
     "ops/CRITICAL_PATHS.txt",
+    "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+    "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
     "ops/PRODUCTION_STATUS.json",
     "ops/LAST_KNOWN_GOOD.json",
     "ops/INCIDENT_TEMPLATE.md",
+    "operations/preservation-authorizations/README.md",
+    "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md",
+    "publication-manifests/five-actor-accountability-preservation-20260824.json",
+    "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md",
     "deployment-probes/mission-critical-hardening-20260818.json",
 ]
 ALLOWED_WRITE = {

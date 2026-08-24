@@ -1,14 +1,25 @@
 # Production infrastructure
+/AGENTS.md @sbu001monterecco
+/CHATGPT_START_HERE.md @sbu001monterecco
+/CURRENT_HANDOVER.md @sbu001monterecco
 /.github/workflows/ @sbu001monterecco
 /.github/dependabot.yml @sbu001monterecco
 /scripts/validate_publication_integrity.py @sbu001monterecco
+/scripts/validate_repository_preservation.py @sbu001monterecco
 /scripts/validate_mission_critical_repo.py @sbu001monterecco
 /scripts/production_smoke_check.py @sbu001monterecco
 /ops/ @sbu001monterecco
+/operations/preservation-authorizations/ @sbu001monterecco
+/publication-manifests/ @sbu001monterecco
+/docs/deletion-audits/ @sbu001monterecco
+/archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md @sbu001monterecco
 
 # High-blast-radius public paths
 /assets/site.js @sbu001monterecco
 /assets/styles.css @sbu001monterecco
+/assets/audience-experience-order-20260823.js @sbu001monterecco
+/assets/homepage-actor-family-pwc-note-20260819.js @sbu001monterecco
+/assets/five-actor-accountability-20260824.css @sbu001monterecco
 /assets/ricpe-filed-status-20260817.js @sbu001monterecco
 /es/index.html @sbu001monterecco
 /en/index.html @sbu001monterecco

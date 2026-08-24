@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "contract_id": "POR-DERECHO-REPOSITORY-CONTINUITY-20260824",
+  "owner": "Gil Marer / Por Derecho",
+  "adopted": "2026-08-24",
+  "purpose": "Prevent stale-snapshot overwrite, silent deletion, public-route loss, actor or role collapse, first-read demotion and loss of evidential boundaries.",
+  "source_of_truth": {
+    "repository": "sbu001monterecco/por-derecho",
+    "branch": "main",
+    "public_host": "https://sbu001monterecco.github.io/por-derecho/",
+    "baseline_live_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+    "baseline_tree": "0f8efa58f56490c99cc85e3ea30362e547e30e92",
+    "pages_run": 32726738047
+  },
+  "baseline_minimums": {
+    "tracked_files": 2401,
+    "bilingual_html_pages": 417,
+    "asset_files": 536,
+    "archive_files": 858,
+    "evidence_files": 167
+  },
+  "deletion_control": {
+    "express_authorization_required": true,
+    "authorization_directory": "operations/preservation-authorizations",
+    "protected_prefixes": [
+      ".github/",
+      "archive/",
+      "assets/",
+      "deployment-probes/",
+      "docs/",
+      "en/",
+      "es/",
+      "evidence/",
+      "operations/",
+      "ops/",
+      "publication-manifests/",
+      "scripts/"
+    ],
+    "protected_exact_files": [
+      "AGENTS.md",
+      "README.md",
+      "CHATGPT_START_HERE.md",
+      "CURRENT_HANDOVER.md",
+      "GITHUB_BACKUP_AND_PRESERVATION_PROTOCOL.md",
+      "INSTITUTIONAL_ACTIONS.md",
+      "robots.txt",
+      "sitemap.xml"
+    ],
+    "authorization_status": "EXPLICIT_USER_AUTHORIZATION",
+    "authorized_by": "Gil Marer",
+    "authorization_must_be_new_in_same_change": true,
+    "authorization_must_match_base_sha": true
+  },
+  "five_actor_front_page_lock": {
+    "authorization_marker": "express-authorization-required",
+    "component_marker": "20260824b",
+    "private_actors": [
+      "Francisco Mario Matos Matas",
+      "Antonio Cogolludo Rojas",
+      "Shaila María Cogolludo Ramos",
+      "José Daniel Acosta Matos",
+      "Laura Patricia Acosta Matos"
+    ],
+    "institutional_roles": {
+      "insolvency_administrator": {
+        "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+        "classification": "court-appointed and judicial-adjacent; not a private actor and not the judge"
+      },
+      "magistrate_judge": {
+        "name": "Alberto López Villarrubia",
+        "classification": "Magistrate-Judge exercising judicial power"
+      }
+    },
+    "homepages": [
+      "es/index.html",
+      "en/index.html"
+    ],
+    "direct_routes": {
+      "es": [
+        "es/administracion-de-hecho-comunidad-ac/index.html",
+        "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+        "es/ric-private-equity-sun-park/index.html",
+        "es/concurso-36-2012-administrador-concursal/index.html",
+        "es/concurso-36-2012-magistrado-juez/index.html",
+        "es/toma-control-sun-park-7-junio-2018/index.html",
+        "es/concurso-36-2012-responsabilidad-institucional/index.html"
+      ],
+      "en": [
+        "en/de-facto-administration-community-ac/index.html",
+        "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+        "en/ric-private-equity-sun-park/index.html",
+        "en/insolvency-36-2012-insolvency-administrator/index.html",
+        "en/insolvency-36-2012-mercantile-court-1/index.html",
+        "en/sun-park-takeover-7-june-2018/index.html",
+        "en/insolvency-36-2012-institutional-accountability/index.html"
+      ]
+    },
+    "legacy_direct_routes": [
+      "es/concurso-36-2012-juzgado-mercantil-1/index.html"
+    ],
+    "required_source_files": [
+      "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md",
+      "archive/FIVE_ACTOR_VISIBILITY_REGRESSION_AND_REPAIR_24AUG2026.md",
+      "assets/audience-experience-order-20260823.js",
+      "assets/five-actor-accountability-20260824.css",
+      "assets/homepage-actor-family-pwc-note-20260819.js",
+      "assets/actors/francisco-mario-matos-matas.jpg",
+      "assets/actors/francisco-de-borja-rodriguez-batllori.jpg",
+      "assets/actors/alberto-lopez-villarrubia.jpg",
+      "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+      "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png",
+      "assets/acosta-matos-family-hotel-plans.jpg",
+      "assets/site.js",
+      "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
+      "publication-manifests/five-actor-accountability-preservation-20260824.json",
+      "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md",
+      "scripts/render_ac_community_de_facto_administration.mjs",
+      "scripts/render_audience_experience.mjs",
+      "scripts/validate_ac_community_de_facto_administration.py",
+      "scripts/validate_audience_experience.py"
+    ],
+    "required_homepage_structure": {
+      "private_actor_cards": 5,
+      "institutional_cards": 2,
+      "linkage_rows": 5,
+      "stable_actor_ids": [
+        "fmmm",
+        "acr",
+        "smcr",
+        "jdam",
+        "lpam"
+      ],
+      "reciprocal_dossier_links": 7,
+      "outside_closed_progressive_disclosure": true,
+      "static_first": true
+    }
+  },
+  "first_read_sequence": [
+    "case position and controlling allegation",
+    "five separate private actors",
+    "Insolvency Administrator and Magistrate-Judge in separate roles",
+    "actor-specific acts or omissions and linkage",
+    "evidence state, contrary record and proof outstanding",
+    "recovery objectives and direct dossier routes"
+  ],
+  "editorial_boundaries": [
+    "Direct allegation is not an adjudicated finding.",
+    "Relationship does not transfer conduct, knowledge, intention or responsibility.",
+    "The Insolvency Administrator and Magistrate-Judge are separate institutional roles.",
+    "Laura Patricia Acosta Matos is the only permitted public narrative identity; source literals must remain expressly marked.",
+    "No fabricated portrait may replace a missing verified source asset.",
+    "Spanish and English routes must remain materially equivalent.",
+    "Contrary evidence, corrections, right of reply and unresolved proof remain visible."
+  ]
+}
