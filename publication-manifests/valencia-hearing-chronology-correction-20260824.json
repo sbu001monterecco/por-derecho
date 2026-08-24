@@ -5,7 +5,7 @@
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-24T22:07:04Z",
   "source_base": "87d1689cd1766d564b7248fd94944f80ca00a44d",
-  "current_state": "DRAFT",
+  "current_state": "DELETION_SAFE",
   "purpose": "Replace the unsupported October 2026 Valencia hearing entry with the source-controlled original and relisted hearing chronology, then prevent recurrence.",
   "controlling_status": {
     "court": "Juzgado de Primera Instancia nº 27 de Valencia",
@@ -27,7 +27,8 @@
     "es/actualizaciones/",
     "en/updates/feed.xml",
     "es/actualizaciones/feed.xml",
-    "assets/data/valencia-hearing-status-v1.json"
+    "assets/data/valencia-hearing-status-v1.json",
+    "assets/caixabank-borja-witness-context-20260816.js"
   ],
   "expected_routes": {
     "es": [
@@ -68,8 +69,71 @@
   "privacy_control": "Only public-safe procedural summaries are committed. Native correspondence, message identifiers, addresses, signatures, verification codes and private strategy remain outside the public repository.",
   "later_source_rule": "A later signed order or citation controls if it changes the 28 January 2027 setting; update the data record, public pages, correction register and validator together.",
   "deletions": [],
+  "pull_request": 957,
+  "merge_sha": "ac483ab2c3a01113f3de626529cd93410958fee4",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 32784227403,
+    "status": "success",
+    "head_sha": "ac483ab2c3a01113f3de626529cd93410958fee4",
+    "completed_at": "2026-08-24T22:21:33Z",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32784227403"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/caixabank-valencia-claim/",
+    "https://sbu001monterecco.github.io/por-derecho/es/reclamacion-caixabank-valencia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/",
+    "https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/valencia-hearing-status-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/caixabank-borja-witness-context-20260816.js"
+  ],
+  "live_verification_evidence": {
+    "result": "12/12 HTTP 200 AND BYTE-FOR-BYTE MATCH",
+    "verified_at": "2026-08-24T22:22:00Z",
+    "sha256": {
+      "en/index.html": "eaf5aab0721a6c83a9030728f49da9598541ca415079bba297a2242d1cbbe8ba",
+      "es/index.html": "74038a05c96f7a9dfb816d038a66b1146d3951624f3b0c55a367f4ad666c6942",
+      "en/caixabank-valencia-claim/index.html": "99514a8bde963c81335fcb6b155e06d22dc23dcef68dea9bc18417707b7236aa",
+      "es/reclamacion-caixabank-valencia/index.html": "f52af1413c292eb8fe461c9826b3a3fa580b73746ae07e4eae8ec6d281ce7ade",
+      "en/lender-of-record/index.html": "af99f867c2c18b02f473410a56d4f6a10f0f44dae9ad9c08a17d16de4a042ca8",
+      "es/acreedor-de-registro/index.html": "1b61534ad858c8a1d2bd7e22fcba36ca9b43156947644680288cb56c5cf5c970",
+      "en/updates/index.html": "c86ff472f4377dd15ef5b4845b524baaa408b6107eb108b8eff5d7225a2e8c4b",
+      "es/actualizaciones/index.html": "55f3391286fa9c892e8584effde28ecf88d3e062fd7e2f6068cbcce455e7ce3b",
+      "en/updates/feed.xml": "3283a6c983a95d2f196458c3a6c22031fa1752c239aae7124a6b14b33b8de865",
+      "es/actualizaciones/feed.xml": "b81247aa1e3ee0e61becd932ff8d7bb5c42ae0636a640752cc041e05072a49e9",
+      "assets/data/valencia-hearing-status-v1.json": "631cf64887de63799bba8715fdca14b1d04a789710c2115ce75268d31d9bcf91",
+      "assets/caixabank-borja-witness-context-20260816.js": "9599777e2a78ef517c28a7d98f8a9852e7c69a3d0649375e4074113ea333a922"
+    }
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "canonical_recovery_paths": [
+      "publication-manifests/valencia-hearing-chronology-correction-20260824.json",
+      "assets/data/valencia-hearing-status-v1.json",
+      "archive/CORRECTION_REGISTER.md#cr-093",
+      "archive/MISSING_EVIDENCE_REGISTER.md"
+    ],
+    "open_evidence": "Obtain any later signed order or citation changing the relisted hearing; absence from the reviewed corpus is not proof of nonexistence.",
+    "private_source_rule": "Re-query the controlled correspondence and native court source; do not reconstruct private bodies or locators from public Git history.",
+    "email_sent": false,
+    "gmail_draft_created": false
+  },
   "validation": {
-    "status": "PENDING",
+    "status": "CI_GREEN_MERGED_DEPLOYED_LIVE_VERIFIED",
+    "evidence": [
+      "PR #957 passed all 18 triggered pull-request workflows after current-main reconciliation",
+      "Valencia chronology validator passed across 2,048 repository text files",
+      "repository preservation, publication integrity, audience experience, mission-critical, operational and insolvency-perimeter gates passed",
+      "JavaScript, JSON, Atom XML and diff syntax passed",
+      "Pages run 32784227403 completed successfully for exact merge SHA ac483ab2c3a01113f3de626529cd93410958fee4",
+      "12/12 public surfaces returned HTTP 200 and matched repository SHA-256 byte for byte"
+    ],
     "required": [
       "validate_valencia_hearing_status.py",
       "validate_repository_preservation.py",
