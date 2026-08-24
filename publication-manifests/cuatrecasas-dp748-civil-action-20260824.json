@@ -4,14 +4,15 @@
   "owner": "Gil Marer / Aweswell / Matkator",
   "created_at": "2026-08-24T00:00:00Z",
   "current_state": "REMOTE_SOURCE",
-  "branch": "codex/cuatrecasas-dp748-civil-causation-20260823",
-  "purpose": "Publish a bilingual, privacy-controlled position separating the finite DP 748 criminal hypothesis, La Laguna enforcement and assignee evidence ladder, the modular civil mandate-and-billing audit, professional-conduct routes and a jurisdiction-dependent SRA review.",
+  "branch": "codex/cuatrecasas-institutional-accountability-20260824",
+  "purpose": "Publish a bilingual, privacy-controlled and Spain-led institutional-accountability position separating the finite DP 748 criminal hypothesis, La Laguna enforcement and assignee evidence ladder, the modular civil mandate-and-billing audit, professional-conduct routes and any secondary jurisdiction-dependent SRA review.",
   "expected_routes": {
     "es": ["es/cuatrecasas-dp748-accion-civil/index.html"],
     "en": ["en/cuatrecasas-dp748-civil-action/index.html"]
   },
   "expected_source_files": [
     "archive/CUATRECASAS_DP748_CIVIL_ACTION_CAUSATION_CONTROL_24AUG2026.md",
+    "archive/CUATRECASAS_MAXIMUM_PERMISSIBLE_INSTITUTIONAL_ACCOUNTABILITY_24AUG2026.md",
     "scripts/validate_cuatrecasas_dp748_civil_action.py",
     "sitemap.xml",
     "sitemap-legal-advisers.xml"
@@ -24,7 +25,9 @@
     "civil_claim_stated_as_filed": false,
     "sra_notification_stated_as_filed": false,
     "current_legal_team_named_on_routes": false,
-    "privileged_advice_published": false
+    "privileged_advice_published": false,
+    "silence_treated_as_proof": false,
+    "personal_or_mass_pressure_authorised": false
   },
   "validation": {
     "status": "LOCAL_PASS",
