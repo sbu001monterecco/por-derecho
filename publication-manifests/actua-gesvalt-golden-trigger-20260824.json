@@ -81,5 +81,31 @@
   "live_verification_evidence": [
     "English marker 'One hotel, four valuation products' and Spanish marker 'Un hotel, cuatro productos de valoración' were read back from the public edge.",
     "Each of the five public PDF downloads reproduced the SHA-256 recorded in public_evidence."
-  ]
+  ],
+  "evidence_strengthening_revision": {
+    "control_date": "2026-08-24",
+    "state": "LIVE_VERIFIED",
+    "purpose": "Distinguish the non-convalidation judgment from its unproved implementation chain; strengthen the 2018 golden-trigger persistence analysis; state Gil Marer's cumulative actual-knowledge/conscious-avoidance allegation concerning Parrilla; and publish the additional June 2017 instruction conflict with response-gap and contrary-evidence controls.",
+    "evidential_boundary": "The order refused convalidation and restored the competition route but did not itself execute or prove the complete civil, Registry, tax, banking and ledger unwind. Parrilla's specialist status and receipt do not alone prove mens rea; the allegation is tied to direct exposure across the actor-specific chronology and remains unadjudicated. Private email bodies are not published.",
+    "authorisation": "Gil Marer expressly approved public disclosure of the named-lawyer allegations and private-email-derived analysis to sbu001monterecco/por-derecho and GitHub Pages.",
+    "local_commit": "d8d70d6995dc1611e651ad2e8a80fdbd157cf1b4",
+    "local_tree": "c51dc2ce19f193e062f03c144f8b8b08ec84f367",
+    "pull_request": 901,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/901",
+    "pull_request_head_sha": "c56402bd80c2a4164353804b75cea23227ed569f",
+    "merge_sha": "f971faeb0267bf0ec781abe6a116b47df6421ea2",
+    "checks": {
+      "pr_head": "7/7 success",
+      "post_merge": "7/7 success",
+      "pages_run_id": 32686402539,
+      "pages_conclusion": "success"
+    },
+    "live_html_sha256": {
+      "es_comparison": "0aac2e5a8449d2e2ecc39507fee198d187d1921bcbcd17974a20bbf2ffa311d0",
+      "en_comparison": "424551173d9be06636cd20f53591791fd2df1b9d8bbda94e3c66616dc7a10f78",
+      "es_counsel": "cc27539380ac4f8ba0bf4987f2959585aab933c38cae6a0853cd5d1756ec4853",
+      "en_counsel": "1302acaa5672650f012de0c0e5dfdf8e57d069b53be785638ef57dc05ed8235a"
+    },
+    "public_evidence_hashes_reverified": true
+  }
 }
