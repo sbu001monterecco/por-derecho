@@ -120,6 +120,7 @@ Where multiple institutions or professional gatekeepers act in sequence, ask wha
 Across AC, court/judge, LAJ, private-actor, institutional and third-party tracks, use `GROUP_RECOVERY_RESTITUTION_AND_ACCOUNTABILITY_OBJECTIVES_15AUG2026.md` as the strategic parent and the 18-Aug multi-claimant protocol as its specialist authority control. The public and internal question is not punishment as an autonomous objective; it is what must be proved, corrected, restored, accounted for or compensated for the correct claimant. Accountability remains actor-specific and evidence-dependent.
 
 ## Maintenance rules
+- **Garrigues / La Laguna PO 344/2013:** maintain `assets/data/garrigues-la-laguna-proceeding-v1.json`, the ES/EN dedicated routes, the public judgment transcription, TF-CIV-006, ME-086 and CR-088 together. Never upgrade the judgment-derived claim or defence reconstruction to an original pleading. Keep HAVAVIDA→Garrigues EUR 9,450 separate from the two EUR 1,250 Parrilla defence-fee legs. Any certified claim, defence, costs, appeal, finality or bank source requires hash/provenance review and public/private screening before propagation.
 - `LIVE` means a public route exists; it does not mean evidentially complete.
 - Update the row after substantive new evidence, correction, major filing, public-page change or current-status change.
 - Missing evidence belongs in `archive/MISSING_EVIDENCE_REGISTER.md`; corrections belong in `archive/CORRECTION_REGISTER.md`.

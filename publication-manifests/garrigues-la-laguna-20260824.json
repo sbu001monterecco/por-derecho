@@ -1,0 +1,62 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "GARRIGUES-LA-LAGUNA-PO344-20260824",
+  "control_marker": "garrigues-la-laguna-20260824",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "DRAFT",
+  "date": "2026-08-24",
+  "package": "garrigues-la-laguna-po-344-2013",
+  "expected_routes": {
+    "es": ["es/garrigues-la-laguna/index.html"],
+    "en": ["en/garrigues-la-laguna/index.html"]
+  },
+  "routes": [
+    "es/garrigues-la-laguna/",
+    "en/garrigues-la-laguna/"
+  ],
+  "inbound_links": [
+    "es/continuidad-defensa-letrados/",
+    "en/counsel-defence-continuity/"
+  ],
+  "source_data": "assets/data/garrigues-la-laguna-proceeding-v1.json",
+  "public_transcription": "evidence/garrigues-la-laguna/SENTENCIA_41_2014_PUBLIC_TRANSCRIPTION_ES.md",
+  "evidence_register": "archive/GARRIGUES_LA_LAGUNA_344_2013_EVIDENCE_AND_COMMUNICATIONS_REGISTER_24AUG2026.md",
+  "judgment": {
+    "original_filename": "Sentencia 344-2013.pdf",
+    "pages": 7,
+    "bytes": 319679,
+    "sha256": "1d39af97262c5031a78c6857c96476f605c3e1c397968a0952b755d3d9ac8b2a",
+    "native_binary_committed": false,
+    "reason": "Public/private evidence boundary; original contains administrative identifiers and signatures"
+  },
+  "completion": {
+    "judgment": "LOCATED_AND_TRANSCRIBED",
+    "claim": "NOT_LOCATED_JUDGMENT_DERIVED_RECONSTRUCTION",
+    "defence": "NOT_LOCATED_JUDGMENT_DERIVED_RECONSTRUCTION",
+    "communications": "FINITE_PUBLIC_SAFE_INDEX_PRIVATE_BODIES_WITHHELD",
+    "costs_appeal_finality": "OPEN"
+  },
+  "required_public_propositions": [
+    "Garrigues claimed EUR 63,441.67",
+    "Judgment 41/2014 dismissed the claim in full",
+    "First-instance costs were imposed on Garrigues",
+    "HAVAVIDA paid EUR 9,450 to Garrigues, not to Juan Tomás Parrilla",
+    "Parrilla defence fee was described as EUR 2,500 in two EUR 1,250 legs",
+    "Original claim and defence have not been located",
+    "Later 2016 treatment excluded EUR 51,156.67 and retained EUR 12,285"
+  ],
+  "prohibited_public_content": [
+    "raw private email bodies",
+    "Gmail message or thread identifiers",
+    "bank account numbers",
+    "signatures",
+    "NIG/IUP identifiers",
+    "privileged legal advice",
+    "unredacted native judgment PDF"
+  ],
+  "open_evidence_id": "ME-086",
+  "correction_id": "CR-088",
+  "proceeding_id": "TF-CIV-006",
+  "validator": "scripts/validate_garrigues_la_laguna.py"
+}
