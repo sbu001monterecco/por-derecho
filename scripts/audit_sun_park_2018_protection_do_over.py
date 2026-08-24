@@ -26,6 +26,8 @@ REQUIRED_FILES = [
     "intelligence/UNITARY_EVIDENCE_PRIORITY_LEDGER_24AUG2026.csv",
     "ops/SUN_PARK_DO_OVER_BACKLOG_24AUG2026.md",
     "ops/SUN_PARK_DO_OVER_STATUS_24AUG2026.json",
+    "ops/AC_7JUNE2018_P0_PRODUCTION_BACKLOG_24AUG2026.md",
+    "docs/deletion-audits/2026-08-24-ac-7june-unitary-thread-closeout.md",
     "es/2018-proteccion-leal-masa/index.html",
     "en/2018-loyal-protection-estate/index.html",
 ]
@@ -87,7 +89,8 @@ def audit() -> dict[str, Any]:
             "workstream": "sun-park-2018-protection-and-do-over",
             "status": "active",
             "deletion_eligibility": "not_eligible",
-            "publication_status": "branch_and_pr_only",
+            "thread_deletion_eligibility": "eligible",
+            "publication_status": "merged_to_main",
             "liability_status": "not_determined",
         }
         for key, expected in expected_status.items():
@@ -103,6 +106,14 @@ def audit() -> dict[str, Any]:
         ]
         add_check(checks, "accountability order preserved", order == expected_order, json.dumps(order, ensure_ascii=False))
 
+        restart = status.get("canonical_restart_files", [])
+        for marker in [
+            "reports/AC_7JUNE2018_KNOWLEDGE_AFFIRMATIVE_ACTION_ENABLEMENT_24AUG2026.md",
+            "intelligence/AC_7JUNE2018_ELEMENT_MATRIX_24AUG2026.csv",
+            "ops/AC_7JUNE2018_P0_PRODUCTION_BACKLOG_24AUG2026.md",
+        ]:
+            add_check(checks, f"restart anchor: {marker}", marker in restart, "present" if marker in restart else "missing")
+
     for relative_path, expected_rows in EXPECTED_MATRIX_COUNTS.items():
         matrix_path = ROOT / relative_path
         if not matrix_path.is_file():
@@ -117,38 +128,57 @@ def audit() -> dict[str, Any]:
     report_path = "reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md"
     if (ROOT / report_path).is_file():
         report = read_text(report_path)
-        report_markers = [
+        for marker in [
             "does not absolve private actors",
             "No responsive protective action has yet been located in the accessible corpus",
             "The original communication, annex set, Registry entry, outcome, client authority and privilege status must control",
             "does **not** mean ignoring final decisions",
-        ]
-        for marker in report_markers:
+        ]:
             add_check(checks, f"report boundary: {marker[:55]}", marker in report, "present" if marker in report else "missing")
 
     priority_report = ROOT / "reports/AC_7JUNE2018_KNOWLEDGE_AFFIRMATIVE_ACTION_ENABLEMENT_24AUG2026.md"
     if priority_report.is_file():
         priority_text = priority_report.read_text(encoding="utf-8")
-        priority_markers = [
+        for marker in [
             "knowledge → authority → affirmative act/validation → effect → later follow-through",
             "does **not yet prove** that the AC instructed the physical acts of 7 June in advance",
-            "Pre-event operational enablement: not yet established",
-            "Intent to enable the takeover: presently an inference, not a fact",
-        ]
-        for marker in priority_markers:
+            "Pre-event operational enablement",
+            "not yet established",
+            "Intent to enable the takeover",
+            "presently an inference, not a fact",
+        ]:
             add_check(checks, f"7 June evidential boundary: {marker[:55]}", marker in priority_text, "present" if marker in priority_text else "missing")
+
+    p0_path = ROOT / "ops/AC_7JUNE2018_P0_PRODUCTION_BACKLOG_24AUG2026.md"
+    if p0_path.is_file():
+        p0_text = p0_path.read_text(encoding="utf-8")
+        for marker in [
+            "not eligible for substantive evidential closeout",
+            "A chat thread may be deleted",
+            "Deleting a thread does not close this P0 lane",
+        ]:
+            add_check(checks, f"P0/thread distinction: {marker}", marker in p0_text, "present" if marker in p0_text else "missing")
+
+    closeout_path = ROOT / "docs/deletion-audits/2026-08-24-ac-7june-unitary-thread-closeout.md"
+    if closeout_path.is_file():
+        closeout = closeout_path.read_text(encoding="utf-8")
+        for marker in [
+            "THREAD STATUS: SAFE TO DELETE AFTER THIS CLOSEOUT IS MERGED",
+            "The substantive workstream remains active",
+            "The restart path does not depend on this chat transcript",
+        ]:
+            add_check(checks, f"thread closeout: {marker}", marker in closeout, "present" if marker in closeout else "missing")
 
     transaction_path = "intelligence/SUN_PARK_2018_TRANSACTION_DISAGGREGATION_24AUG2026.csv"
     if (ROOT / transaction_path).is_file():
         transaction_text = read_text(transaction_path)
         for event_id in [f"TX-{index:02d}" for index in range(1, 15)]:
             add_check(checks, f"transaction lane {event_id}", event_id in transaction_text, "present" if event_id in transaction_text else "missing")
-        distinct_markers = [
+        for marker in [
             "Locales transaction / EUR 400,000 component",
             "Alleged acquisition/transfer of 31 LPB fincas",
             "Licitation, adjudication, AC report and deed",
-        ]
-        for marker in distinct_markers:
+        ]:
             add_check(checks, f"distinct transaction marker: {marker}", marker in transaction_text, "present" if marker in transaction_text else "missing")
 
     public_markers = {
@@ -178,7 +208,7 @@ def audit() -> dict[str, Any]:
 
     passed = all(check["passed"] for check in checks)
     return {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "workstream": "sun-park-2018-protection-and-do-over",
         "passed": passed,
         "check_count": len(checks),
