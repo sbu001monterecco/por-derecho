@@ -20,6 +20,8 @@ No current public formulation may state that Cuatrecasas joined the Acosta Matos
 
 Chronology, third-party benefit and a documentary gap are not substitutes for this chain.
 
+The controlling counterfactual is a **real and substantial opportunity**, not guaranteed rescue: competent, timely and integrated performance may have prevented or materially contained identifiable increments of the later chain. Each increment must still be tested against legal availability, probability, intervening causes and entity-specific loss.
+
 ## 3. Route separation
 
 | Route | Controlling object | Public boundary |
@@ -27,7 +29,7 @@ Chronology, third-party benefit and a documentary gap are not substitutes for th
 | DP 748/2026 | finite procedural-fraud hypothesis in Cambiario/ETJ | not a whole-history professional-negligence case |
 | Civil route | mandate, billing, delivery, breach, restitution/damages, causation | in preparation and under legal review; no filing asserted |
 | ICAM/CCACM | professional-conduct treatment | does not decide crime or damages |
-| SRA | jurisdiction over an identified regulated person/entity and conduct | no notification stated as filed; organisation-level status is not overstated |
+| SRA | secondary, contingent jurisdiction over an identified regulated person/entity and conduct | Spain remains the principal civil/deontological route; no notification stated as filed and organisation-level status is not overstated |
 
 The controlled current-team correspondence and filed-source index record: complaint on 4 February; expansion on 16 March; provisional dismissal on 24 March; reconsideration/subsidiary appeal; 20 May admission/transfer; an 8 June prosecution report seeking partial allowance because the dismissal's specific reasoning was insufficient while requesting clearer ordering and delimitation; joinder on 15 June; and a synthesis filed on 26 June. The 21 August 2026 Fiscalía Decree is the public procedural source for its recital that the dismissal was ratified on 16 July. The signed 16 July decision and certified complete DP 748 docket remain evidence gaps.
 
@@ -71,3 +73,9 @@ The public routes must not identify current lawyers or procedural representative
 - complete mandate, invoice/time-entry, pagaré or handover file;
 - civil MASC/claim filing or jurisdictional decision;
 - confirmed SRA jurisdictional basis or notification outcome.
+
+## 8. Institutional accountability protocol
+
+The companion control `archive/CUATRECASAS_MAXIMUM_PERMISSIBLE_INSTITUTIONAL_ACCOUNTABILITY_24AUG2026.md` governs public pressure. It converts the position into document-answerable questions concerning mandate/client mapping, January–June 2018 decisions, DD versions, October 2019 implementation, 2020 handover, the invoice–pagaré–debtor bridge, later recovery decisions and preservation/insurance governance.
+
+Silence or non-response may be recorded only as unanswered; it is not proof of breach, intent, coordination or crime. Public pressure must remain institutional, proportionate and non-personal, preserve the strongest defence, and never expose current-lawyer identities, privileged strategy or private negotiation positions.
