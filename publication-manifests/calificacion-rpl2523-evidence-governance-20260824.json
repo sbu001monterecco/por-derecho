@@ -1,0 +1,121 @@
+{
+  "publication_id": "CALIFICACION-RPL2523-EVIDENCE-GOVERNANCE-20260824",
+  "control_marker": "calificacion-rpl2523-evidence-governance-20260824",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "LIVE_VERIFIED",
+  "branch": "codex/calificacion-evidence-governance-20260824",
+  "baseline_main_sha": "f734cf219b3a8446a0c4a6b947560a304701e18d",
+  "pull_request": 899,
+  "pull_request_head_sha": "2c3d026b4892fe23a967977b9ee065287ec54281",
+  "merge_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+  "expected_routes": {
+    "es": [
+      "es/calificacion-rpl-2523-mapa-prueba/index.html"
+    ],
+    "en": [
+      "en/calificacion-rpl-2523-evidence-map/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md",
+    "assets/data/calificacion-rpl2523-evidence-map-v1.json",
+    "assets/data/unitary-route-registry-v1.json",
+    "ops/CURRENT_STATE.json",
+    "scripts/validate_calificacion_rpl2523_evidence_map.py",
+    ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
+    "es/index.html",
+    "en/index.html",
+    "es/concurso-36-2012-ap-seccion-4/index.html",
+    "en/insolvency-36-2012-ap-section-4/index.html",
+    "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+    "en/insolvency-classification-criminal-misuse-thesis/index.html",
+    "sitemap.xml",
+    "sitemap-calificacion.xml",
+    "publication-manifests/calificacion-rpl2523-evidence-governance-20260824.json"
+  ],
+  "required_controls": [
+    "three appeal instruments for four appellant interests",
+    "LPB, Gil, joint Pink-Patricia and Aweswell lane separation",
+    "publisher attribution distinct from appellants and procedural representatives",
+    "signed, filed, received, reported, certified and not-located states kept separate",
+    "five-pillar proposition-level proof tests",
+    "RPL record-only appeal firewall",
+    "ACTUA-GESVALT related context kept outside the RPL evidence lane",
+    "contrary explanation and equal-visibility right of reply",
+    "not located does not mean nonexistent",
+    "static homepage visibility with runtime deduplication"
+  ],
+  "open_evidence": [
+    "signed later RPL merits judgment or order",
+    "service record",
+    "finality or pending-remedy certification",
+    "certified appellate docket and transmitted-record index",
+    "exact LPB appeal and principal receipt",
+    "Gil principal filing receipt",
+    "oppositions, cross-appeals and Fiscal appellate submissions",
+    "admission, evidence, transmission and cure orders",
+    "official hearing acta, certified recording and integrity/provenance record"
+  ],
+  "publication_safety": {
+    "raw_private_emails_committed": false,
+    "private_hearing_recordings_committed": false,
+    "unnecessary_personal_identifiers_committed": false,
+    "current_lawyer_names_on_new_pages": false,
+    "criminal_guilt_stated_as_adjudicated": false,
+    "common_design_stated_as_proved": false,
+    "personal_coordination_stated_as_proved": false,
+    "institutional_capture_stated_as_proved": false,
+    "purposeful_private_benefit_stated_as_proved": false,
+    "appeal_independence_preserved": true,
+    "contrary_evidence_preserved": true,
+    "right_of_reply_preserved": true
+  },
+  "validation": {
+    "status": "CI_GREEN_LIVE_VERIFIED",
+    "evidence": [
+      "python scripts/validate_calificacion_position_objectives.py",
+      "python scripts/validate_calificacion_criminal_misuse_thesis.py",
+      "python scripts/validate_calificacion_rpl2523_evidence_map.py",
+      "python scripts/validate_publication_integrity.py",
+      "python scripts/validate_mission_critical_repo.py",
+      "python scripts/validate_audience_experience.py",
+      "python scripts/validate_unitary_criminal_reverse_engineering.py",
+      "node --check assets/calificacion-criminal-misuse-thesis-20260824.js",
+      "node --check assets/site.js",
+      "git diff --check",
+      "19/19 pull-request workflow runs passed on PR #899",
+      "21/21 post-merge workflow runs passed on the exact merge SHA",
+      "GitHub Pages run 32685412186 published the exact merge SHA",
+      "eight critical HTML routes returned HTTP 200 with exact new markers"
+    ]
+  },
+  "deployment_evidence": [
+    "PR #899 merged as 1c4beb6ef66782c186e743d676f436b0db256710 after all 19 pull-request workflow runs passed.",
+    "GitHub Pages run 32685412186 published the exact merge SHA.",
+    "All 21 post-merge workflow runs passed; post-merge no-cache readback returned HTTP 200 and one exact marker on both homepages, both new evidence maps, both AP routes and both canonical thesis routes."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-rpl-2523-mapa-prueba/",
+    "https://sbu001monterecco.github.io/por-derecho/en/calificacion-rpl-2523-evidence-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-ap-seccion-4/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-ap-section-4/",
+    "https://sbu001monterecco.github.io/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/calificacion-rpl2523-evidence-map-v1.json"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-24T03:09:02Z",
+    "pull_request": 899,
+    "validated_head": "2c3d026b4892fe23a967977b9ee065287ec54281",
+    "merge_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+    "pages_workflow_run": 32685412186,
+    "pull_request_result": "All 19 pull-request workflow runs passed, including the dedicated settled-DOM Calificacion browser render.",
+    "post_merge_result": "All 21 workflow runs on the exact merge SHA completed successfully.",
+    "production_result": "Eight critical HTML routes returned HTTP 200 with exactly one expected marker. Both new map routes, both static homepage links, both AP instrument tables and both canonical publisher attributions were live. The structured JSON returned HTTP 200.",
+    "last_modified": "Mon, 24 Aug 2026 03:09:02 GMT"
+  }
+}

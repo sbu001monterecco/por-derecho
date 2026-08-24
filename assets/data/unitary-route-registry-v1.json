@@ -478,6 +478,44 @@
   },
   {
     "lang": "en",
+    "path": "en/calificacion-rpl-2523-evidence-map/",
+    "title": "Calificación / RPL 2523/2025 — evidence and instrument map",
+    "type": "evidence",
+    "summary": "Party-by-party map of three first-instance oppositions, three located or reported appeal instruments for four appellant interests, five investigative pillars, source states, appeal firewall and finite closure records.",
+    "tags": [
+      "calificacion",
+      "RPL 2523/2025",
+      "LexNET",
+      "evidence map"
+    ],
+    "aliases": [
+      "appeal instrument map",
+      "three appeals four appellants",
+      "LPB appeal receipt",
+      "certified docket"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/calificacion-rpl-2523-mapa-prueba/",
+    "title": "Calificación / RPL 2523/2025 — mapa de prueba e instrumentos",
+    "type": "evidence",
+    "summary": "Mapa parte por parte de tres oposiciones, tres recursos localizados o reportados para cuatro intereses apelantes, cinco pilares investigativos, estados de fuente, cortafuegos de apelación y cierre finito.",
+    "tags": [
+      "calificación",
+      "RPL 2523/2025",
+      "LexNET",
+      "mapa de prueba"
+    ],
+    "aliases": [
+      "mapa instrumentos apelación",
+      "tres recursos cuatro apelantes",
+      "recurso LPB justificante",
+      "índice certificado"
+    ]
+  },
+  {
+    "lang": "en",
     "path": "en/insolvency-classification-criminal-misuse-thesis/",
     "title": "Calificación — criminal-misuse investigative thesis",
     "type": "proceeding",

@@ -1,0 +1,72 @@
+{
+  "schema": "por-derecho.current-state.v1",
+  "as_of": "2026-08-24",
+  "purpose": "Single current routing layer. Specialist source controls remain authoritative for proposition-level detail.",
+  "repository": {
+    "baseline_main_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+    "baseline_release": "CALIFICACION_RPL2523_EVIDENCE_GOVERNANCE_PR_899_LIVE_VERIFIED",
+    "calificacion_governance_release": "LIVE_VERIFIED",
+    "branch": "main via PR #899",
+    "legacy_status_notice": "ops/PRODUCTION_STATUS.json and ops/LAST_KNOWN_GOOD.json were advanced from the historical 21-Aug controls after exact-SHA Pages and route readback verification.",
+    "rollback_rule": "Use a normal revert PR to a positively verified release; never force-push main."
+  },
+  "website": {
+    "host": "https://sbu001monterecco.github.io/por-derecho/",
+    "latest_verified_public_packages_at_baseline": [
+      "Calificacion criminal-misuse thesis PR 894 plus live verification PR 896",
+      "ACTUA-GESVALT comparison PR 897 plus live verification PR 898",
+      "Calificacion RPL 2523 evidence governance PR 899; exact merge SHA and eight critical HTML routes live verified"
+    ],
+    "canonical_calificacion_routes": [
+      "es/tesis-uso-criminal-procedimiento-calificacion/",
+      "en/insolvency-classification-criminal-misuse-thesis/",
+      "es/concurso-36-2012-ap-seccion-4/",
+      "en/insolvency-36-2012-ap-section-4/",
+      "es/calificacion-rpl-2523-mapa-prueba/",
+      "en/calificacion-rpl-2523-evidence-map/"
+    ]
+  },
+  "calificacion": {
+    "origin": "Concurso 36/2012 · Seccion de Calificacion",
+    "first_instance_decision": "Sentencia 163/2023",
+    "appeal_court": "Audiencia Provincial de Las Palmas · Seccion 4",
+    "appeal_roll": "RPL 2523/2025",
+    "instrument_count_rule": "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS",
+    "last_located_procedural_record": "Decision signed 11 May 2026 scheduling deliberation, vote and decision for 4 June 2026",
+    "later_merits_decision_located": false,
+    "service_record_located": false,
+    "finality_or_pending_remedy_certificate_located": false,
+    "inference_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT",
+    "record_only_firewall": "The appeal is determined only on the procedurally usable RPL record, pleaded grounds, adversarial process and law; public post-record analysis belongs outside that lane unless a lawful transmission bridge is proved.",
+    "five_pillar_status": "SERIOUS_DOCUMENT_BASED_INVESTIGATIVE_THESIS_NOT_ADJUDICATED_CRIMINAL_FACT",
+    "evidence_map": "assets/data/calificacion-rpl2523-evidence-map-v1.json",
+    "controlling_source": "archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md"
+  },
+  "finite_priority_gaps": [
+    "Signed later RPL merits judgment or order",
+    "Service record",
+    "Finality or pending-remedy certification",
+    "Certified appellate docket and transmitted-record index",
+    "Exact LPB appeal and principal receipt",
+    "Gil principal filing receipt",
+    "Oppositions, cross-appeals and Fiscal appellate submissions",
+    "Admission, evidence, transmission and cure orders",
+    "Official hearing acta, certified recording and integrity/provenance record",
+    "Certified whole-file denominator for Concurso 36/2012"
+  ],
+  "open_pull_request_snapshot": {
+    "observed_at": "2026-08-24",
+    "open_count": 31,
+    "draft_count": 19,
+    "non_draft_count": 12,
+    "source": "GitHub public pulls API, first page with per_page=100",
+    "governance_rule": "Do not merge stale PRs wholesale. Rebase or compare each against current main, preserve only unique validated deltas, rerun current controls, then close or supersede explicitly."
+  },
+  "authority_boundaries": {
+    "public_position": "Gil Marer / Por Derecho",
+    "does_not_speak_for_all_appellants": true,
+    "does_not_speak_for_procedural_representatives": true,
+    "email_send_authorized_by_repository_work": false,
+    "current_lawyer_names_on_new_calificacion_pages": false
+  }
+}

@@ -1,5 +1,7 @@
 # CHATGPT START HERE — Project Sun Rock / Por Derecho
 
+> **Current-state gate (24 August 2026):** read `ops/CURRENT_STATE.json` before the historical handovers below. For Calificación / RPL 2523/2025 work, then read `archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md` and `assets/data/calificacion-rpl2523-evidence-map-v1.json`. Preserve the rule “three appeal instruments for four appellant interests”, the RPL record-only firewall and `not located ≠ nonexistent`.
+
 This is the root operating entry point for any ChatGPT thread maintaining this repository, Depository or live site.
 
 ## Mission

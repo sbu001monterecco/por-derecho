@@ -1,22 +1,25 @@
 {
   "schema_version": 1,
-  "release_id": "lpb-insolvency-perimeter-strengthening-20260821-v1",
+  "release_id": "calificacion-rpl2523-evidence-governance-20260824-v1",
   "state": "LIVE_VERIFIED",
-  "source_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
+  "source_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
   "verification": {
-    "workflow": "PR #726 publication, rendered architecture and post-merge bilingual route verification",
-    "run_id": "32484432959",
-    "artifact_id": "9447323466",
-    "artifact_digest": "sha256:83eeb960f1520ad04f146f3f576499041416e4ae934ee3fd6976ed0dda0215ad",
-    "verified_at": "2026-08-21T13:01:13Z",
+    "workflow": "PR #899 publication, full PR matrix, exact-SHA Pages deployment and post-merge bilingual route verification",
+    "run_id": "32685412186",
+    "artifact_id": null,
+    "artifact_digest": null,
+    "verified_at": "2026-08-24T03:09:02Z",
     "checks": [
+      "all_19_pull_request_workflows_success",
+      "all_21_post_merge_workflow_runs_success",
+      "calificacion_settled_dom_browser_render",
       "publication_integrity",
-      "insolvency_perimeter_language_513_files",
       "mission_critical_repository",
-      "rendered_case_information_architecture",
-      "outer_and_nested_loader_contract",
-      "eight_changed_bilingual_routes_live"
+      "audience_experience_415_html_4493_internal_links",
+      "exact_sha_pages_deployment",
+      "eight_critical_bilingual_html_routes_live",
+      "machine_readable_evidence_map_live"
     ]
   },
   "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."

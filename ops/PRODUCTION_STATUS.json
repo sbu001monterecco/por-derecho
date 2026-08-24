@@ -1,25 +1,28 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-21T13:01:13Z",
+  "as_of": "2026-08-24T03:09:02Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "b6d6c1a326f8b97afa1b01e03f71596dc5e95aff",
-  "exact_live_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
+  "main_at_audit": "1c4beb6ef66782c186e743d676f436b0db256710",
+  "exact_live_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
   "last_live_verification": {
     "state": "LIVE_VERIFIED",
-    "source_sha": "964d124486b6c8dc3bbb7aaf8444f51f5409d9a9",
-    "workflow_run": "32484432959",
-    "artifact_id": "9447323466",
-    "artifact_digest": "sha256:83eeb960f1520ad04f146f3f576499041416e4ae934ee3fd6976ed0dda0215ad",
-    "verified_at": "2026-08-21T13:01:13Z",
+    "source_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+    "workflow_run": "32685412186",
+    "artifact_id": null,
+    "artifact_digest": null,
+    "verified_at": "2026-08-24T03:09:02Z",
     "verification_scope": [
-      "eight_changed_es_en_routes_http_200_and_exact_markers",
-      "publication_integrity_29_manifests_17_changed_files",
-      "insolvency_perimeter_language_513_public_files",
-      "case_information_architecture_rendered_dom",
-      "outer_and_nested_case_information_loaders",
-      "rhg_live_publication"
+      "pr_899_all_19_pull_request_workflows_success",
+      "post_merge_all_21_workflow_runs_success",
+      "pages_build_and_deployment_run_32685412186_success_for_exact_merge_sha",
+      "eight_critical_es_en_html_routes_http_200_and_exact_markers",
+      "both_new_evidence_map_routes_live",
+      "both_static_homepage_thesis_links_live",
+      "both_ap_instrument_tables_live",
+      "both_canonical_publisher_attributions_live",
+      "machine_readable_evidence_map_http_200"
     ]
   },
   "branch_protection": {
@@ -38,7 +41,7 @@
   },
   "pages_deployment_mode": {
     "state": "UNCHANGED_AND_LIVE_VERIFIED",
-    "reason": "The functioning Pages delivery path published PR #726. The corrected loader contract, rendered route suite and all eight changed bilingual routes passed post-merge verification."
+    "reason": "The functioning Pages delivery path published PR #899 at exact merge SHA 1c4beb6ef66782c186e743d676f436b0db256710. Both new evidence maps and six strengthened strategic routes passed post-merge no-cache readback."
   },
   "mission_critical_hardening": {
     "state": "LIVE_VERIFIED",
