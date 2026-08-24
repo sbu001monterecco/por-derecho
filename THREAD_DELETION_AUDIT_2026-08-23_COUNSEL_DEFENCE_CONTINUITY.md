@@ -162,9 +162,13 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - Gil's statements that the sale was criminal and its consideration illicit proceeds are published as his prosecution thesis, not a judgment. The principal challenged authorisation/strategic-use allegation is directed at the AC; Parrilla's knowledge of criminal origin is not inferred from receipt;
 - ACTÚA page now connects the documented access/source/depreciation defects and contrary GESVALT unitary methodology to the €400,000 disposal, while leaving AC knowledge/deliberate disregard/criminal purpose for investigation;
 - Gil's Cajasiete €1m statement is retained as an attributed priority-verification lead. No mortgage deed/current certified Registry entry was located in the finite scan, so it is not upgraded to verified public fact.
+- publication PR: [#892](https://github.com/sbu001monterecco/por-derecho/pull/892), source head `64c7bd9f5385dadfdb0b6d4e7c7fcc02f131aeef`;
+- all 24 GitHub checks passed; squash merge `48fcf988a96eacca76911bc4b911ce9ed533d7a1` at `2026-08-24T01:55:53Z`;
+- live public-edge readback returned HTTP 200 for both dedicated pages and the English ACTÚA bridge. Criminal-first, €9,000, Cajasiete, downstream-proceeds and A1–A8 markers were present; superseded source-wholly-unproved wording was absent;
+- live verified at `2026-08-24T01:57:49Z`.
 
 Open gates: matching Parrilla debit, invoices/IGIC/cost allocation/authority, complete post-nonconvalidation ledger, and Cajasiete deed/current Registry certifications.
 
 ## Final gate
 
-The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The responsibility/data-room revision is live; the criminal-proceeds/fee-reconciliation revision is source-preserved and awaits its PR/deployment fields. Remaining substantive gaps are certified fee-piece access/service/consultation history, the matching Parrilla bank debit and invoice reconciliation, Cajasiete mortgage/Registry proof and SLJ's response.
+The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The responsibility/data-room and criminal-proceeds/fee-reconciliation revisions are merged, deployed and live-verified. Remaining substantive gaps are certified fee-piece access/service/consultation history, the matching Parrilla bank debit and invoice reconciliation, Cajasiete mortgage/Registry proof and SLJ's response.
