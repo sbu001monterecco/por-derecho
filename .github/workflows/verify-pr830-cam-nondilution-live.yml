@@ -120,8 +120,8 @@ jobs:
               "site_loader": (
                   f"{base}/assets/site.js",
                   [
-                      "PROSECUTION-PUBLIC-ENTRY-20260821",
-                      "prosecution-public-entry-20260821.js?v=20260821a",
+                      "PROSECUTION-PUBLIC-ENTRY-20260824",
+                      "prosecution-public-entry-20260821.js?v=20260824a",
                       "AUDIENCE-EXPERIENCE-ORDER-AND-DEDUPLICATION-20260823",
                   ],
               ),
