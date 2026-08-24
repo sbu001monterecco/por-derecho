@@ -22,12 +22,12 @@
   },
   "responsibility_revision": {
     "control_date": "2026-08-24",
-    "state": "PR_OPEN",
+    "state": "LIVE_VERIFIED",
     "purpose": "Correct the Parrilla-Daniel-AC responsibility and influence sequence, remove any unsupported characterisation of SLJ work as substantial, record the no-signed-filing fee judgment, and define the later client-file inventory disclosure precisely.",
     "evidential_boundary": "Attempted influence through outgoing counsel is published as a document-based investigative inference. Unlawful motive, collusion, resignation causation, theft and actual AC/CAM access to the later fee-piece material are not published as proved facts.",
     "draft_completed_at_utc": "2026-08-24T00:54:17Z",
     "branch": "codex/counsel-responsibility-daniel-20260824",
-    "source_head_sha": "489529af9fe6875ed434293c1fabd6c57e296200",
+    "source_head_sha": "7ed42ffab839d38b6de8d586d2f69532b34679cb",
     "pull_request": 885,
     "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/885",
     "opened_at_utc": "2026-08-24T00:59:38Z",
@@ -36,7 +36,25 @@
       "PUBLICATION_INTEGRITY_PASS",
       "AUDIENCE_EXPERIENCE_PASS",
       "DIFF_CHECK_PASS"
-    ]
+    ],
+    "checks": {
+      "status": "ALL_NINE_SUCCESS",
+      "run_ids": [32678411668, 32678411671, 32678411687, 32678411679, 32678411823, 32678411720, 32678411686, 32678411674, 32678411675]
+    },
+    "merge_sha": "40179d1498debe381b5ac442c8e93610e5cc83d8",
+    "merged_at_utc": "2026-08-24T01:02:19Z",
+    "live_verified_at_utc": "2026-08-24T01:03:25Z",
+    "live_verification": {
+      "method": "cache-busted public-edge HTTP readback",
+      "es_status": 200,
+      "es_sha256": "726cfac5933374c1fe251b6e907c7aa1293d9333ea4bc29678e585b0744fd7ab",
+      "es_markers": ["inventario de 179 páginas", "4.458 documentos", "intentó instrumentalizar", "no acredita que ocurriera"],
+      "es_stale_wording_absent": "abrió después un canal con CAM",
+      "en_status": 200,
+      "en_sha256": "209b438ee6b8a93b6de60102ac61c8afc137e69fd3d32ba74f965bce40fd5910",
+      "en_markers": ["179-page inventory", "4,458-document client file", "sought to instrumentalise", "does not prove that it occurred"],
+      "en_stale_wording_absent": "opened a channel with CAM"
+    }
   },
   "expected_routes": {
     "es": [
