@@ -89,7 +89,7 @@ The 8-June transaction email circulated to prospective financiers and reproduced
 - proposed bridge financing of up to approximately **€15m**;
 - approximately **€14m** contemplated for payment of insolvency liabilities in the worst-case scenario stated in the email;
 - a security package involving Aweswell, LPB, Matkator, share pledges, assets and credit rights;
-- a separate **€26m acquisition proposal attributed to SOCIMI Elaia** as an alternative refinancing/sale route;
+- one reciprocal **Lagune/Elaia €26m standby-acquisition package**, tied to the bridge-finance discussions;
 - an **ECO valuation stated in the email at approximately €25.6m for the complex**;
 - the signed operator/industry-lease documents and operator business plan;
 - a Cuatrecasas due-diligence package, including red-flag and insolvency schedules; and

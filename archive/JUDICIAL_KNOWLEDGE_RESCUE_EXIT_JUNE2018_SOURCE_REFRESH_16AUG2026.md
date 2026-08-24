@@ -62,7 +62,7 @@ The transaction email circulated to prospective financiers records a wider packa
 - an ECO valuation presented in the transaction at approximately **€25.6 million**;
 - a bridge-finance structure being assembled;
 - a proposed Aweswell/LPB/Matkator security package; and
-- a separate **€26 million acquisition proposal attributed to SOCIMI Elaia** as an alternative refinancing/sale route.
+- one reciprocal **Lagune/Elaia €26 million standby-acquisition package**, tied to the bridge-finance discussions.
 
 It also describes the planned 13 June court meeting as intended to present this context and obtain a workable route/time to formalise the operation.
 

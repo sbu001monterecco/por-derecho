@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">The remate disclosure dilemma</title>
+  <desc id="desc">A documentary visual separating Aweswell as former client and billed entity, Matkator as pagaré and judicial debtor and executed party, and an unidentified possible remate recipient.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f252c"/>
+      <stop offset="0.62" stop-color="#173e44"/>
+      <stop offset="1" stop-color="#72551c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#071419" flood-opacity="0.32"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f3d17a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="1200" rx="32" fill="url(#bg)"/>
+  <circle cx="1095" cy="115" r="170" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="1095" cy="115" r="115" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+
+  <text x="70" y="78" fill="#f3d17a" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="2.4">CUATRECASAS · FORMER CLIENT → EXECUTION → POSSIBLE THIRD PARTY</text>
+  <text x="70" y="133" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="45" font-weight="700">THE REMATE DISCLOSURE DILEMMA</text>
+  <text x="70" y="178" fill="#dce9e8" font-family="Arial, Helvetica, sans-serif" font-size="24">Aweswell was the documented client. Matkator was not the invoice debtor</text>
+  <text x="70" y="210" fill="#dce9e8" font-family="Arial, Helvetica, sans-serif" font-size="24">shown in Cuatrecasas’ 2019 schedule.</text>
+
+  <g>
+    <rect x="65" y="262" width="330" height="308" rx="24" fill="#effaf5"/>
+    <rect x="435" y="262" width="330" height="308" rx="24" fill="#fff1ef"/>
+    <rect x="805" y="262" width="330" height="308" rx="24" fill="#fff8dc"/>
+  </g>
+
+  <text x="92" y="303" fill="#1d5c4a" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="800" letter-spacing=".9">1 · FORMER CLIENT / BILLED RELATIONSHIP</text>
+  <text x="92" y="350" fill="#10262d" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700">AWESWELL LIMITED</text>
+  <text x="92" y="382" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">UK COMPANY · FOREIGN INVESTOR IN SPAIN</text>
+  <text x="92" y="427" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">Cuatrecasas: “our client, AWESWELL”</text>
+  <text x="92" y="461" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">2019 schedule: issued invoices attributed</text>
+  <text x="92" y="490" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">to Aweswell / LPB</text>
+  <rect x="92" y="514" width="210" height="35" rx="17" fill="#1d5c4a"/>
+  <text x="197" y="538" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800">NOT MATKATOR</text>
+
+  <text x="462" y="303" fill="#9a332e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" letter-spacing="1.1">2 · INSTRUMENT / JUDICIAL POSITION</text>
+  <text x="462" y="350" fill="#10262d" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700">MATKATOR, S.L.</text>
+  <text x="462" y="382" fill="#7c302c" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">PAGARÉ / JUDICIAL DEBTOR</text>
+  <text x="462" y="413" fill="#7c302c" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">EXECUTED DEBTOR / PARTY</text>
+  <text x="462" y="455" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">Four pagarés → Cambiario 1048/2019</text>
+  <text x="462" y="487" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">Finca 8584 → requested adjudication</text>
+  <text x="462" y="519" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">€77,840 credited; €104,677.72 said</text>
+  <text x="462" y="548" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">to remain against other assets</text>
+
+  <text x="832" y="303" fill="#80621d" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="1.5">3 · EXPRESSLY RESERVED</text>
+  <text x="832" y="347" fill="#10262d" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700">UNIDENTIFIED</text>
+  <text x="832" y="382" fill="#10262d" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700">THIRD PARTY</text>
+  <text x="832" y="421" fill="#6f561c" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800">POSSIBLE REMATE RECIPIENT</text>
+  <text x="832" y="460" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">10 Feb 2026: Cuatrecasas expressly</text>
+  <text x="832" y="489" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">reserved “cession of the remate to</text>
+  <text x="832" y="518" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="16">a third party.”</text>
+  <text x="832" y="548" fill="#8c2f2c" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800">NO ASSIGNEE / CESSION YET PROVED</text>
+
+  <text x="415" y="423" text-anchor="middle" fill="#f3d17a" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="800">→</text>
+  <text x="785" y="423" text-anchor="middle" fill="#f3d17a" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="800">→</text>
+
+  <text x="70" y="637" fill="#f3d17a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="1.7">GAME THEORY · FOUR POSSIBLE ANSWERS · ONE AUDITABLE EXIT</text>
+  <text x="70" y="672" fill="#dce9e8" font-family="Arial, Helvetica, sans-serif" font-size="20">This is a document-production dilemma—not a finding of collusion.</text>
+
+  <g>
+    <rect x="65" y="712" width="255" height="224" rx="20" fill="#ffffff" fill-opacity="0.96"/>
+    <rect x="340" y="712" width="255" height="224" rx="20" fill="#ffffff" fill-opacity="0.96"/>
+    <rect x="615" y="712" width="255" height="224" rx="20" fill="#ffffff" fill-opacity="0.96"/>
+    <rect x="890" y="712" width="255" height="224" rx="20" fill="#ffffff" fill-opacity="0.96"/>
+  </g>
+
+  <rect x="88" y="735" width="116" height="31" rx="15" fill="#1d5c4a"/>
+  <text x="146" y="757" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">NO THIRD PARTY</text>
+  <text x="88" y="806" fill="#10262d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">Certify it.</text>
+  <text x="88" y="842" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">No person contemplated,</text>
+  <text x="88" y="870" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">contacted, negotiated with,</text>
+  <text x="88" y="898" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">selected or used.</text>
+
+  <rect x="363" y="735" width="151" height="31" rx="15" fill="#315b72"/>
+  <text x="438" y="757" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">INDEPENDENT PARTY</text>
+  <text x="363" y="806" fill="#10262d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">Reconcile it.</text>
+  <text x="363" y="842" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">Recipient / UBO, KYC and</text>
+  <text x="363" y="870" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">conflict control, consideration</text>
+  <text x="363" y="898" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">and full debtor credit.</text>
+
+  <rect x="638" y="735" width="174" height="31" rx="15" fill="#8a6820"/>
+  <text x="725" y="757" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800">CLIENT / CONNECTED</text>
+  <text x="638" y="806" fill="#10262d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">Explain it.</text>
+  <text x="638" y="842" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">Former-client loyalty, own-</text>
+  <text x="638" y="870" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">interest conflict, secrecy,</text>
+  <text x="638" y="898" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">barriers, KYC and approval.</text>
+
+  <rect x="913" y="735" width="171" height="31" rx="15" fill="#8c2f2c"/>
+  <text x="998" y="757" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800">WITHHELD / NO ANSWER</text>
+  <text x="913" y="806" fill="#10262d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">Index the reason.</text>
+  <text x="913" y="842" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">State the lawful category and</text>
+  <text x="913" y="870" fill="#35545a" font-family="Arial, Helvetica, sans-serif" font-size="16">provide non-privileged control</text>
+  <text x="913" y="898" fill="#8c2f2c" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800">Gap remains. Silence ≠ proof.</text>
+
+  <rect x="65" y="976" width="1070" height="96" rx="20" fill="#f3d17a"/>
+  <text x="600" y="1017" text-anchor="middle" fill="#10262d" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="900">ONE LEGITIMATE EXIT: A COMPLETE SINGLE-SATISFACTION LEDGER</text>
+  <text x="600" y="1051" text-anchor="middle" fill="#17363d" font-family="Arial, Helvetica, sans-serif" font-size="20">invoice → WIP → pagaré → claim → credit → cession → recovery → balance</text>
+
+  <text x="70" y="1114" fill="#dce9e8" font-family="Arial, Helvetica, sans-serif" font-size="16">Boundary: a valid autonomous pagaré may still establish Matkator liability. The current record does not prove an assignee,</text>
+  <text x="70" y="1138" fill="#dce9e8" font-family="Arial, Helvetica, sans-serif" font-size="16">completed cession, collusion, invalid debt or double receipt. It proves a reservation that requires a document-supported answer.</text>
+  <text x="70" y="1173" fill="#f3d17a" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">POR DERECHO · SOURCE-CORRECTION OPEN · 24 AUGUST 2026</text>
+</svg>
