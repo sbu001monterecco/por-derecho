@@ -7,10 +7,18 @@ on:
     paths:
       - '.github/workflows/production-smoke-monitor.yml'
       - 'scripts/production_smoke_check.py'
+      - 'scripts/validate_sent_email_link_continuity.py'
+      - 'publication-manifests/sent-email-link-continuity-20260824.json'
+      - '404.html'
       - 'deployment-probes/mission-critical-hardening-20260818.json'
       - 'assets/site.js'
       - 'en/index.html'
       - 'es/index.html'
+      - 'de/lava-verde-club-sei-meeting-point/**'
+      - 'es/activo-financiacion-sun-park-mynd/**'
+      - 'es/concurso-36-2012-autos-decisiones/**'
+      - 'es/ricpe-hnt-gc836-trazabilidad/**'
+      - 'es/yaiza-obras-trazabilidad/**'
       - 'es/cnmv-ricpe-verificacion/**'
       - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
       - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
@@ -57,10 +65,18 @@ on:
     paths:
       - '.github/workflows/production-smoke-monitor.yml'
       - 'scripts/production_smoke_check.py'
+      - 'scripts/validate_sent_email_link_continuity.py'
+      - 'publication-manifests/sent-email-link-continuity-20260824.json'
+      - '404.html'
       - 'deployment-probes/mission-critical-hardening-20260818.json'
       - 'assets/site.js'
       - 'en/index.html'
       - 'es/index.html'
+      - 'de/lava-verde-club-sei-meeting-point/**'
+      - 'es/activo-financiacion-sun-park-mynd/**'
+      - 'es/concurso-36-2012-autos-decisiones/**'
+      - 'es/ricpe-hnt-gc836-trazabilidad/**'
+      - 'es/yaiza-obras-trazabilidad/**'
       - 'es/cnmv-ricpe-verificacion/**'
       - 'en/cam-creditor-control-shadow-administration-judicial-omission/**'
       - 'es/control-acreedor-cam-administracion-hecho-omision-judicial/**'
@@ -126,15 +142,23 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
+      - name: Validate sent-email link continuity in the proposed source
+        if: github.event_name == 'pull_request'
+        run: python scripts/validate_sent_email_link_continuity.py
       - name: Check the public production host
+        if: github.event_name != 'pull_request'
         id: smoke
         continue-on-error: true
         run: |
+          set -euo pipefail
           python scripts/production_smoke_check.py \
             --attempts 2 \
             --interval 15 \
             --timeout 20 \
             --output artifacts/production-smoke/latest.json
+          python scripts/validate_sent_email_link_continuity.py \
+            --live-base-url https://sbu001monterecco.github.io/por-derecho/ \
+            --timeout 20
       - name: Upload production evidence
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -144,7 +168,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Open or update a production incident
-        if: steps.smoke.outcome != 'success'
+        if: github.event_name != 'pull_request' && steps.smoke.outcome != 'success'
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
@@ -183,5 +207,5 @@ jobs:
               });
             }
       - name: Fail the workflow when production is unhealthy
-        if: steps.smoke.outcome != 'success'
+        if: github.event_name != 'pull_request' && steps.smoke.outcome != 'success'
         run: exit 1
