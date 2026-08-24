@@ -136,7 +136,9 @@
       "amount_eur": 9450.00,
       "date": "2012-05-17",
       "ledger_posting_date": "2012-05-23",
-      "payor": "HAVAVIDA T&T, S.L.",
+      "payor": "Hava Vida Travel & Tourism, S.L.U.",
+      "payor_identifier": "B76564434",
+      "source_literal_payor": "HAVAVIDA T&T, S.L.",
       "recipient": "Garrigues",
       "purpose": "Funding described contemporaneously for the separate challenge-of-resolutions/interim-measures litigation",
       "limit": "Not a payment to Juan Tomás Parrilla; bank account details are withheld"
@@ -189,7 +191,7 @@
       {"date": "2012-03-13", "amount_eur": 24022.95, "public_descriptor": "BBVA / Monterecco"},
       {"date": "2012-03-20", "amount_eur": 24022.95, "public_descriptor": "BBVA / Garrigues"},
       {"date": "2012-03-31", "amount_eur": 9450.00, "public_descriptor": "cash / Monterecco"},
-      {"date": "2012-05-23", "amount_eur": 9450.00, "public_descriptor": "BBVA / HAVAVIDA"}
+      {"date": "2012-05-23", "amount_eur": 9450.00, "public_descriptor": "BBVA / HAVAVIDA", "identity_control": "HAVAVIDA is a source literal for Hava Vida Travel & Tourism, S.L.U.; the ledger is not independent bank proof."}
     ],
     "limit": "Client-side vendor ledger, not independent bank proof; no account number is public."
   },
@@ -226,6 +228,21 @@
     {"reference": "PO 213/2015", "status": "MASTER_REGISTER_CAPTURED_COMPLETE_REDACTED_FILE_NOT_PUBLIC"},
     {"reference": "Rollo 1094/2018", "status": "PARTIAL_REPOSITORY_COVERAGE_COMPLETE_APPEAL_ROLL_NOT_PUBLIC"}
   ],
+  "parrilla_connected_corpus_mastery": {
+    "control_date": "2026-08-24",
+    "defined_text_units": 1523,
+    "text_readable_units": 1502,
+    "coverage_percent": 98.6,
+    "gmail_direct_address_messages": 1094,
+    "gmail_message_records_retrieved": 1094,
+    "gmail_messages_with_body_text": 1092,
+    "gmail_direct_set_attachments_inventoried": 1219,
+    "gmail_connector_unsupported_attachments": 27,
+    "drive_unique_documents": 429,
+    "drive_documents_fetched": 429,
+    "drive_documents_with_readable_text": 410,
+    "limit": "Connected-text coverage only. Attachment hash deduplication, OCR/native review, a certified court-file denominator and the complete redacted court corpus remain open; 100% legal/evidential mastery is not claimed."
+  },
   "insolvency_effect": {
     "excluded_eur": 51156.67,
     "retained_eur": 12285.00,

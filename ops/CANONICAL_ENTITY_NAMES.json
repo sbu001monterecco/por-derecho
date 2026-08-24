@@ -70,6 +70,41 @@
       ]
     },
     {
+      "id": "E004",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "project_side_spanish_company": true,
+      "canonical_name": "Matkator, S.L.U.",
+      "first_reference": "Matkator, S.L.U.",
+      "identifier": {
+        "type": "NIF",
+        "value": "B76621689",
+        "verification_status": "REPOSITORY_RECORDED_PRIMARY_NIF_DOCUMENT_OPEN"
+      },
+      "controlled_context": "Project-side owner of identified property outside the LPB insolvency estate",
+      "registered_denominational_form": "MATKATOR SL",
+      "registered_status_descriptor": "Declaración de unipersonalidad",
+      "registry_coordinates": {
+        "volume": 3305,
+        "folio": 61,
+        "section": 8,
+        "sheet": "TF 52875"
+      },
+      "source_literal_variants": [
+        "Matkator, S.L.",
+        "MATKATOR SL"
+      ],
+      "name_rule": "Use Matkator, S.L.U. in controlled narrative. Preserve Matkator, S.L. or MATKATOR SL only as an identified source literal. Do not merge Matkator property with LPB's insolvency estate.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2013-246-38, entry 551984",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-246-38",
+          "proposition": "The registry publication records incorporation of MATKATOR SL, declaration of unipersonality, Monterecco Sun Park as sole shareholder and sheet TF 52875. The publication does not print the NIF."
+        }
+      ]
+    },
+    {
       "id": "E005",
       "record_type": "legal_entity",
       "canonical_name": "Aweswell Limited",
@@ -87,6 +122,105 @@
           "reference": "Company 07716847",
           "url": "https://find-and-update.company-information.service.gov.uk/company/07716847",
           "proposition": "The register identifies AWESWELL LIMITED, company number 07716847, and lists MONTERECCO SUN PARK LIMITED as its previous name through 3 June 2014."
+        }
+      ]
+    },
+    {
+      "id": "E006",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "project_side_spanish_company": true,
+      "canonical_name": "Pink Canary Services, S.L.U.",
+      "first_reference": "Pink Canary Services, S.L.U.",
+      "identifier": {
+        "type": "NIF",
+        "value": "B76564517"
+      },
+      "former_name": "Monterecco Sun Park, S.L.U.",
+      "former_name_change_date": null,
+      "former_name_change_date_status": "OPEN_EXACT_REGISTRY_ACT_NOT_LOCATED",
+      "registered_denominational_form_at_incorporation": "MONTERECCO SUN PARK SL",
+      "registered_status_descriptor": "Declaración de unipersonalidad",
+      "registry_coordinates": {
+        "volume": 3217,
+        "folio": 73,
+        "section": 8,
+        "sheet": "TF 49739"
+      },
+      "name_continuity_rule": "Pink Canary Services, S.L.U. and the former Spanish name Monterecco Sun Park, S.L.U. refer to the same Spanish legal person under NIF B76564517. Use the name applicable to the source date. Do not infer the exact change date until the registry act is obtained.",
+      "separation_rule": "Never conflate this Spanish company with UK company 07716847, formerly Monterecco Sun Park Limited and now Aweswell Limited.",
+      "source_literal_variants": [
+        "Pink Canary Services, S.L.",
+        "PINK CANARY SERVICES SLU.",
+        "Monterecco Sun Park, S.L.",
+        "MONTERECCO SUN PARK SL"
+      ],
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-27-38, entry 64023",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+          "proposition": "The registry publication records incorporation of MONTERECCO SUN PARK SL, declaration of unipersonality and sheet TF 49739."
+        },
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-A-2019-14965",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14965",
+          "proposition": "The 2019 notice identifies PINK CANARY SERVICES SLU., NIF B76564517, in the Tenerife registry. The recorded NIF-revocation agreement is not evidence of corporate extinction."
+        }
+      ],
+      "current_status_rule": "Do not state a current 2026 corporate or tax status without a current registry or tax certificate."
+    },
+    {
+      "id": "E051",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "project_side_spanish_company": true,
+      "canonical_name": "Hava Vida Travel & Tourism, S.L.U.",
+      "first_reference": "Hava Vida Travel & Tourism, S.L.U.",
+      "identifier": {
+        "type": "NIF",
+        "value": "B76564434",
+        "verification_status": "REPOSITORY_RECORDED_PRIMARY_SPANISH_NIF_DOCUMENT_OPEN"
+      },
+      "controlled_context": "Project-side Spanish company and separately identified payer in the Garrigues payment record",
+      "registered_denominational_form": "HAVA VIDA TRAVEL & TOURISM SL",
+      "registered_status_descriptor": "Declaración de unipersonalidad",
+      "registry_coordinates": {
+        "volume": 3217,
+        "folio": 63,
+        "section": 8,
+        "sheet": "TF 49735"
+      },
+      "source_literal_variants": [
+        "Hava Vida Travel & Tourism, S.L.",
+        "HAVA VIDA TRAVEL & TOURISM SL",
+        "HAVAVIDA T&T, S.L.",
+        "HAVAVIDA"
+      ],
+      "search_aliases_not_legal_names": [
+        "Hava Vida",
+        "Habavida",
+        "HAVAVIDA"
+      ],
+      "forbidden_generated_aliases": [
+        "Habavida, S.L.",
+        "Habavida Travel & Tourism",
+        "Havidia Travel & Tourism"
+      ],
+      "separation_rule": "Do not conflate Hava Vida Travel & Tourism, S.L.U. with the separate US entity Havidia LLC or with LPB.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-27-38, entry 64020",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+          "proposition": "The registry publication records incorporation of HAVA VIDA TRAVEL & TOURISM SL, declaration of unipersonality and sheet TF 49735. The publication does not print the NIF."
+        },
+        {
+          "authority": "UK Companies House",
+          "reference": "Spanish company officer record for company 10762489",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
+          "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
         }
       ]
     },

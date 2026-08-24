@@ -1,0 +1,45 @@
+{
+  "schema": "por-derecho.project-side-spanish-companies.v1",
+  "control_date": "2026-08-24",
+  "scope": "Historical/project-context identity control; not a statement of current ownership, trading, tax or registry status.",
+  "companies": [
+    {
+      "canonical_name": "Luchy Playa Blanca, S.L.U.",
+      "acronym": "LPB",
+      "identifier": "B35998582",
+      "identifier_type": "CIF",
+      "official_name_evidence": ["BOE-B-2012-22189", "BOE-B-2013-26977", "BORME-A-2012-39-35"]
+    },
+    {
+      "canonical_name": "Matkator, S.L.U.",
+      "identifier": "B76621689",
+      "identifier_type": "NIF",
+      "source_literal_variants": ["Matkator, S.L.", "MATKATOR SL"],
+      "official_name_evidence": ["BORME-A-2013-246-38, entry 551984"],
+      "open_control": "Current primary Spanish NIF/status certificate"
+    },
+    {
+      "canonical_name": "Pink Canary Services, S.L.U.",
+      "identifier": "B76564517",
+      "identifier_type": "NIF",
+      "former_name": "Monterecco Sun Park, S.L.U.",
+      "official_name_evidence": ["BORME-A-2012-27-38, entry 64023", "BOE-A-2019-14965"],
+      "open_control": "Exact registry name-change act/date and current status",
+      "must_not_conflate_with": "Aweswell Limited, UK company 07716847, formerly Monterecco Sun Park Limited"
+    },
+    {
+      "canonical_name": "Hava Vida Travel & Tourism, S.L.U.",
+      "identifier": "B76564434",
+      "identifier_type": "NIF",
+      "search_aliases_not_legal_names": ["HAVAVIDA", "Habavida", "HAVAVIDA T&T, S.L."],
+      "official_name_evidence": ["BORME-A-2012-27-38, entry 64020"],
+      "open_control": "Current primary Spanish NIF/status certificate",
+      "must_not_conflate_with": "Havidia LLC or Luchy Playa Blanca, S.L.U."
+    }
+  ],
+  "person_name_control": {
+    "canonical_name": "Juan Tomás Parrilla Suárez",
+    "first_reference_rule": "Retain both accents and both surnames on first reference."
+  },
+  "source_of_truth": "../../ops/CANONICAL_ENTITY_NAMES.json"
+}
