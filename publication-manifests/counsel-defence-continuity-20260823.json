@@ -20,6 +20,13 @@
     },
     "live_verified_at_utc": "2026-08-23T23:51:15Z"
   },
+  "responsibility_revision": {
+    "control_date": "2026-08-24",
+    "state": "DRAFT",
+    "purpose": "Correct the Parrilla-Daniel-AC responsibility and influence sequence, remove any unsupported characterisation of SLJ work as substantial, record the no-signed-filing fee judgment, and define the later client-file inventory disclosure precisely.",
+    "evidential_boundary": "Attempted influence through outgoing counsel is published as a document-based investigative inference. Unlawful motive, collusion, resignation causation, theft and actual AC/CAM access to the later fee-piece material are not published as proved facts.",
+    "draft_completed_at_utc": "2026-08-24T00:54:17Z"
+  },
   "expected_routes": {
     "es": [
       "es/actores-partes-abogados-representantes/index.html"
@@ -35,6 +42,8 @@
     "archive/prompts/COUNSEL_DEFENCE_CONTINUITY_EXHAUSTIVE_SCAN_PROMPT_23AUG2026.md",
     "archive/CORRECTION_REGISTER.md",
     "assets/data/legal-representation-ac-causation-v1.json",
+    "assets/data/legal-representation-v1.json",
+    "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
     "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md",
     "publication-manifests/counsel-defence-continuity-20260823.json"
   ],
@@ -89,7 +98,10 @@
     "current-firm continuity is not successor liability",
     "right of correction",
     "ES/EN parity",
-    "remaining professionals coded B-series"
+    "remaining professionals coded B-series",
+    "pre-engagement no-contact instruction identified as client testimony corroborated by contemporaneous sequencing restrictions",
+    "4,458-document client file distinguished from the 179-page inventory actually filed",
+    "actual AC/CAM fee-piece access not inferred from LexNET copy-transfer to Aweswell procurator"
   ],
   "institutional_call": [
     "Fiscalía",
@@ -101,6 +113,9 @@
     "LPB counsel payment request-response chain",
     "complete powers venias and LexNET records",
     "native 25 January 2018 AC-Cristo instruction and DP1041 docket",
+    "native 18 May 2020 Parrilla instruction and July 2020 AC payment-report binary",
+    "certified fee-piece access service and consultation history",
+    "complete SLJ response and confidentiality necessity proportionality assessment",
     "B-series identity and mandate verification"
   ],
   "publication_safety": {
@@ -109,6 +124,9 @@
     "unnecessary_personal_identifiers_committed": false,
     "complaint_filing_or_success_stated_as_proved": false,
     "client_allegations_stated_as_adjudicated": false,
+    "theft_stated_as_adjudicated": false,
+    "all_4458_files_stated_as_filed": false,
+    "actual_ac_cam_access_stated_as_proved": false,
     "professional_withdrawal_reasons_preserved": true,
     "contrary_evidence_preserved": true,
     "right_of_reply_preserved": true

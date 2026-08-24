@@ -7,7 +7,10 @@
 | Source | Date | Minimum proposition |
 |---|---|---|
 | Gmail June–July 2018 Community-document chain | 8 June–11 July 2018 | Parrilla requested Community notices/minutes from AC; did not obtain them by that route; alternative-owner route considered. |
-| Gmail thread `1725b557561dac5f` | 28 May 2020 | Jiménez reported that Parrilla relayed the AC’s wish to speak and possible withdrawal of the announced action concerning Joaquín. |
+| Gmail client instruction chain — native identifier to lock | 18 May 2020 | Client requested action on interest, contingent Community debt, inspection/photographs and the proceeds of the non-convalidated sale. The source proves the request, not that each requested action was procedurally available, obligatory or omitted. |
+| Gmail thread `1725b557561dac5f`; messages `1725b6086eed189c`, `1725b659c71743ae`, `1725b7f06c75bf93` | 28 May 2020 | Jiménez reported that Parrilla relayed the AC's wish to speak and possible withdrawal of the announced action concerning Joaquín. Patricia recorded that Parrilla had repeatedly been told not to intercede for the AC and to put dealings in writing, and warned Jiménez of the influence risk. Jiménez said he preferred to speak to the AC last and denied he could be conditioned. |
+| Gmail thread/message `17270d066dc072e5` | 1 June 2020 | Jiménez's 17-point report of the direct AC call: proposed “peace” and possible complaint withdrawal; defended AC/CAM positions; said Parrilla and the procurator would be paid from money in the proceeding; praised Parrilla; disclosed knowledge Jiménez inferred came from Parrilla. The message proves Jiménez's contemporaneous report, not the objective truth or propriety of each reported statement. |
+| AC July 2020 report/payment entry — native binary and identifier to lock | July 2020 | Records €25,000 plus 7% IGIC (€26,750) paid for Parrilla professional fees. Exact bank source and any link to proceeds of the non-convalidated transaction remain open. |
 | Gmail message `172c843550c07b57`, thread `172c31fbb7a8f0d6` | 18 June 2020 | Jiménez said he had broken negotiations with Parrilla/AC because they tried to condition work on fee payment. |
 | Substitution/venia chain | 31 May–1 June 2020 | Client-decided substitution following mutual loss of trust. |
 
@@ -32,16 +35,20 @@
 
 | Source | Date | Minimum proposition |
 |---|---|---|
-| Drive file `1JmRSeVrzAZVPirwTosQfcTp1kp3n9qAv` (“Proposal Daniel SLJ 22MAY2020.pdf”) | 22 May 2020 | Direct-client instruction model; proposed AC removal and possible AC/CAM claims; one-month reasonable termination notice. |
+| Drive file `1JmRSeVrzAZVPirwTosQfcTp1kp3n9qAv` (“Proposal Daniel SLJ 22MAY2020.pdf”) | 22 May 2020 | Bilingual proposal accepted by client; direct-client instruction model; proposed AC removal and possible AC/CAM claims; one-month reasonable termination notice. |
 | Gmail thread `17247f3e3ac9a976` | 25 May 2020 | Client briefing on prior counsel/AC/CAM risk and intended contacts. |
-| Gmail thread `1725b557561dac5f` | 28 May 2020 | Parrilla relays possible AC contact. |
+| Gmail thread `1725b557561dac5f`; messages `1725b6086eed189c`, `1725b659c71743ae`, `1725b7f06c75bf93` | 28 May 2020 | Parrilla relays the AC contact request; client contemporaneously records repeated no-intermediation/in-writing instruction to Parrilla and warns Jiménez of the precise off-record influence risk; Jiménez says he is not conditionable. This corroborates the substance of the client's later instruction account but does not itself contain the exact sentence “do not speak to the AC”. |
 | Gmail message `17270819a20ed6af` | 1 June 2020 | Jiménez announces scheduled call with AC and topics. |
-| Gmail thread/message `17270d066dc072e5` | 1 June 2020 | Jiménez reports direct call with AC. |
-| Gmail message `17283fc54aad3b5f` | 5 June 2020 | Jiménez says CAM lawyer wishes to speak and a call will occur. |
+| Gmail thread/message `17270d066dc072e5`; Patricia annotation `17270f16a1ef606d` | 1 June 2020 | Jiménez's 17-point report of direct AC call records peace/possible complaint withdrawal, assurance of Parrilla/procurator payment, praise of Parrilla and IA/CAM positions. Patricia disputes material propositions and expressly withholds payment authorisation. This supports an influence-route inference, not proof of unlawful purpose or collusion. |
+| Gmail thread `17283fc54aad3b5f`; messages `17283fc54aad3b5f`, `17284534d8f8e1a6`, `17285237fc69684e`, `172852c999adb573`, `172852d197b092e4` | 5 June 2020 | Jiménez says CAM's lawyer asked the AC to arrange contact and proposes a Monday call. Patricia instructs that claims should be filed first and no information given, while acknowledging counsel might have to listen. The located chain does not prove the CAM call occurred and does not itself contain an absolute written never-contact prohibition. |
 | Gmail message `172a22d46b71f105` | 11 June 2020 | Draft objection to AC position submitted for client approval. |
 | Gmail message `172c85f77efb15d3` | 18 June 2020 | Jiménez forwards AC private/confidential lawyer communication and says AC is losing his manners. |
 | Gmail message `172c843550c07b57` | 18 June 2020 | Jiménez says negotiations were broken because work was being conditioned on fee payment. |
-| Gmail thread `172e2050762030ac` | 23–24 June 2020 | Jiménez withdrawal, client response recording alleged no-contact instruction, and Jiménez reply. |
+| Gmail thread `172e2050762030ac` | 23–24 June 2020 | Jiménez announces withdrawal; client contemporaneously restates alleged pre-engagement no-contact instruction and alleges hostile reversal; Jiménez replies. His stated grounds include strategy, client control and unpaid fees. |
+| Proposed formal resignation filing | 3 July 2020 | Post-announcement draft/step concerning formal court withdrawal. Must be distinguished from a signed procedural filing during the mandate. |
+| Gmail message `1762d69c342b23e8`; LexNET wrapper `2012_0000036_CUA_202010373152320_20201203161328(1).pdf`; principal `N-2200(2).pdf`; annex `01 Listado de documentos y escritos(1).pdf` | 3–4 December 2020 | SLJ fee-account opposition states Aweswell supplied 4,458 documents; files a 179-page inventory extracted from SLJ's client database plus selected client material. The wrapper identifies court receipt and immediate copy-transfer only to Aweswell procurator Tania Alejandra Domínguez Limiñana. It does not show delivery to the AC/CAM and does not contain all 4,458 underlying files. |
+| Gmail message `17c3b7f30e32a4c9`; attachment `Adjunto1(52).pdf` (Decree 316/2021) | 29 September 2021 | Upholds Aweswell's opposition to the SLJ fee account; finds no filing in the mandate period signed by Jiménez/SLJ, all located filings signed by Cristo, and the alleged court filing unproved. Leaves reciprocal contractual breach/payment/notice issues to ordinary proceedings. |
+| Gmail message `17ceb3d53b340b06`; attachment `Adjunto1(61).pdf` | 2 November 2021 | Records finality and archive after no appeal. |
 
 ## A5 — Luis Miguel López
 
@@ -99,4 +106,6 @@
 - Lock native/certified copies before formal submission to Fiscalía/ICALPA.
 - Resolve the native identifier for the 25 January 2018 AC/Cristo communication.
 - Obtain the complete post-19 February 2020 complaint docket.
+- Lock the native identifier for the 18 May 2020 Parrilla instruction and the native July 2020 AC payment-report binary.
+- Obtain the certified access, service and consultation history for fee-account piece 36/2012, piece 11; do not infer AC/CAM receipt from the LexNET wrapper.
 - Keep full email bodies and privileged work product out of public HTML.

@@ -524,19 +524,31 @@
         "MAT-AWESWELL-CONCURSO",
         "MAT-CALIFICACION"
       ],
-      "role": "counsel_of_record",
+      "role": "engaged_counsel_short_mandate_no_verified_signed_procedural_filing",
       "status": "former",
       "dates": {
         "firstVerifiedActivity": "2020-04-05",
-        "formalStartVerified": "2020-05-26",
+        "engagementAcceptedVerified": "2020-05-22",
+        "veniaVerified": "2020-05-26",
+        "formalStartVerified": "2020-05-22",
         "lastVerifiedActivity": "2020-06-23",
-        "formalEndVerified": "2020-06-23"
+        "resignationAnnouncedVerified": "2020-06-23",
+        "formalWithdrawalFilingProposed": "2020-07-03",
+        "formalEndVerified": "2020-06-23",
+        "postEngagementInventoryFiled": "2020-12-04",
+        "feeDecisionVerified": "2021-09-29",
+        "feeDecisionFinalityVerified": "2021-11-02"
       },
       "documentedActivities": [
         "Received and reviewed expert/economic material before the formal May 2020 takeover.",
-        "Took over Aweswell's Concurso representation following Cuatrecasas venia on 26 May 2020.",
+        "Entered a bilingual engagement accepted on 22 May 2020 providing for direct Aweswell instructions, proposed removal of the Administrador Concursal and assessment of possible claims against the AC and Acosta Matos; Cuatrecasas granted venia on 26 May 2020.",
         "Coordinated directly with expert David Espejo and reviewed swap/insolvency issues.",
-        "The documentary record shows a short engagement ending with a resignation/fee-closeout communication on 23 June 2020."
+        "On 28 May Juan Tomás Parrilla conveyed the AC's request to speak to incoming counsel; after a contemporaneous client warning about off-record intermediation, Daniel took and reported the direct 1 June AC call.",
+        "The 1 June call report records proposed peace and possible complaint withdrawal, assurance that Parrilla and the procurator would be paid, praise of Parrilla and IA/CAM positions. This supports an influence-route inference but does not prove unlawful motive or collusion.",
+        "On 5 June Daniel reported that CAM's lawyer had asked the AC to arrange contact. The client instructed claims first and no information disclosure; a CAM call was proposed but has not been proved to have occurred.",
+        "SLJ later claimed 55 hours of review, calls and drafting. Decree 316/2021 found no procedural filing during the mandate signed by Daniel/SLJ and treated the alleged court filing as unproved.",
+        "The documentary record shows a short engagement ending with a resignation announcement on 23 June 2020 before any verified signed procedural filing by Daniel/SLJ.",
+        "In the later fee proceeding SLJ stated that Aweswell had supplied 4,458 documents and on 4 December 2020 filed a 179-page inventory extracted from its client database plus selected client material. The filing did not include every underlying file; the LexNET wrapper shows immediate copy-transfer only to Aweswell's procurator."
       ],
       "sourceStatus": "VERIFIED",
       "publication": "PUBLIC-READY-WITH-QUALIFICATION",
@@ -545,12 +557,20 @@
       ],
       "knowledgeStateAtEnd": [
         "Possessed multiple David Espejo reports/notes and later swap-analysis material.",
-        "Was engaged with Aweswell/Concurso succession and LPB counsel-transition questions."
+        "Was engaged with Aweswell/Concurso succession and LPB counsel-transition questions.",
+        "SLJ later described its database as containing a 4,458-document Aweswell client file and filed the full 179-page inventory in the fee proceeding."
+      ],
+      "clientPositionAndLimits": [
+        "Gil/Patricia say Daniel was expressly instructed before engagement not to speak to the AC or Acosta Matos before protective claims were filed. The exact pre-contract wording has not been located, but contemporaneous 28 May and 5 June emails corroborate the protective sequencing, anti-intermediation and no-information substance.",
+        "Gil/Patricia characterise the rapid change in Daniel's tone and position as hostile and infer that the AC sought to instrumentalise Parrilla's departure to influence incoming counsel. The 28 May-5 June sequence supports investigation of that inference, not publication of unlawful intent, collusion or exit causation as proved fact.",
+        "The client describes SLJ's retention/use of the client data room as theft. No adjudication or source located proves theft; the controlled questions are authority to retain, litigation necessity, confidentiality, proportionality and actual access or prejudice."
       ],
       "openQuestions": [
-        "Complete a task-by-task output and filing audit.",
+        "Complete a task-by-task output audit while preserving the Decree 316/2021 finding that no Daniel/SLJ-signed procedural filing in the mandate period was proved.",
         "Identify the exact successor and complete file-transfer chain after resignation.",
-        "No report-specific evidence has yet been located proving that Daniel Jiménez filed an Espejo report with the court."
+        "No report-specific evidence has yet been located proving that Daniel Jiménez filed an Espejo report with the court.",
+        "Obtain certified access, service and consultation records for fee-account piece 36/2012, piece 11, to determine whether the AC, CAM or any adverse representative accessed the inventory or selected materials.",
+        "Assess professional-secrecy, confidentiality, retention, necessity and proportionality rules against the complete file and any response from SLJ; do not treat the client's theft characterisation as an adjudicated fact."
       ]
     },
     {
