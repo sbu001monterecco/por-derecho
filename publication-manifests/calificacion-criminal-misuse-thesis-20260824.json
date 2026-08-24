@@ -3,7 +3,7 @@
   "control_marker": "calificacion-criminal-misuse-thesis-20260824",
   "owner": "Gil Marer / Aweswell",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "MERGED",
+  "current_state": "LIVE_VERIFIED",
   "branch": "codex/calificacion-investigative-thesis-20260824",
   "pull_request": 882,
   "merge_sha": "8d8111880046ecd5eb4663e063da5cb678b2b7a5",
@@ -18,8 +18,9 @@
   "strategic_pinning_fix": {
     "branch": "codex/calificacion-thesis-strategic-pinning-v2-20260824",
     "pull_request": 889,
-    "status": "PR_OPEN_SUPERSEDES_884",
+    "status": "MERGED_LIVE_VERIFIED",
     "superseded_pull_request": 884,
+    "merge_sha": "a674f461014ab978c8da6023eb1956874dfc4479",
     "reason": "The broader live-route sweep found the AP appeal, independence note and institutional hub callouts technically visible but several screens below the opening section.",
     "required_result": "AP, independence-note and institutional callouts remain in the first-read position after all late-loading modules settle; the guided Calificación dossier retains its decision-first order."
   },
@@ -87,16 +88,50 @@
     "appeal_independence_preserved": true,
     "right_of_reply_preserved": true
   },
+  "deployment_evidence": [
+    "PR 882 merge 8d8111880046ecd5eb4663e063da5cb678b2b7a5 published the bilingual canonical thesis, five-pillar visual treatment, route callouts, source-state corrections and publication controls.",
+    "PR 883 merge d971f9e189f38850dbc424ed458f30af9db384ab corrected the canonical and homepage first-read placement and the Acosta Matos source-of-funds ordering.",
+    "PR 889 merge a674f461014ab978c8da6023eb1956874dfc4479 pinned the thesis deterministically on strategic routes and added the settled 15-route browser-render gate."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-responsabilidad-institucional/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-institutional-accountability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-ap-seccion-4/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-ap-section-4/",
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-perimetro/",
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/nota-independencia-judicial-estado-procesal-reserva-acciones/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-24T01:32:50Z",
+    "pull_request": 889,
+    "validated_head": "4259da530bacbeeb4f74cf612195324da30f29a3",
+    "merge_sha": "a674f461014ab978c8da6023eb1956874dfc4479",
+    "workflow_run_id": 32679768977,
+    "workflow_result": "All 21 pull-request workflows passed, including the dedicated 15-route settled-DOM browser render.",
+    "production_result": "Production serves loader revision 20260824c. All 15 routes contained exactly one visible thesis block in the required first-read sequence, outside collapsed content; canonical and guided routes retained five pillars; the AP routes retained the RPL 2523/2025 appeal firewall; Acosta Matos routes retained source-of-funds, adjudication and case-hub controls."
+  },
   "validation": {
-    "status": "LOCAL_PASS_PENDING_CI",
+    "status": "CI_GREEN_LIVE_VERIFIED",
     "evidence": [
       "python scripts/validate_calificacion_criminal_misuse_thesis.py",
       "python scripts/validate_publication_integrity.py",
       "python scripts/validate_insolvency_perimeter_language.py",
       "python scripts/validate_mission_critical_repo.py",
       "node --check on the new scoped module, global loader and Calificación reader-order script",
-      "HTML parser and sitemap XML parse checks"
+      "HTML parser and sitemap XML parse checks",
+      "21/21 pull-request workflows passed on PR 889",
+      "15-route production cold-render and live-browser first-read sweep"
     ],
-    "visual_render": "PENDING_REMOTE_BROWSER; local Chromium was unavailable and browser download failed before any external publication"
+    "visual_render": "PASS: production serves loader 20260824c; canonical, homepage, institutional, AP appeal, Acosta Matos, administrator, independence-note and guided Calificacion routes passed settled DOM placement checks"
   }
 }
