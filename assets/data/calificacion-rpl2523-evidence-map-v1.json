@@ -1,0 +1,161 @@
+{
+  "schema": "por-derecho.calificacion-rpl2523-evidence-map.v1",
+  "control_date": "2026-08-24",
+  "publisher_position": "Gil Marer / Por Derecho",
+  "attribution_boundary": "This publication does not speak for the appellants collectively or for any procedural representative, and it does not amend any filed pleading.",
+  "proceeding": {
+    "origin": "Concurso Ordinario 36/2012 · Sección de Calificación",
+    "first_instance_decision": "Sentencia 163/2023",
+    "appeal_court": "Audiencia Provincial de Las Palmas · Sección 4ª",
+    "appeal_roll": "RPL 2523/2025",
+    "located_scheduling_decision": "Resolución firmada el 11 de mayo de 2026",
+    "scheduled_deliberation_vote_decision": "2026-06-04",
+    "later_merits_decision_located": false,
+    "service_record_located": false,
+    "finality_or_pending_remedy_certificate_located": false,
+    "status_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT"
+  },
+  "record_only_appeal_firewall": "RPL 2523/2025 must be determined only on its procedurally usable record, pleaded grounds, adversarial process and applicable law. Public post-record analysis is not asserted as appeal evidence.",
+  "evidence_states": {
+    "SIGNED_COPY_LOCATED": "A signed copy is held in the controlled source corpus; certification and record inclusion remain separate questions.",
+    "FILED_COPY_AND_RECEIPT_LOCATED": "The filed copy and a corresponding transmission or filing receipt are located.",
+    "REPORTED_FILED_SUPPORT_LOCATED": "Contemporaneous communications or later procedural steps support filing, but the principal filed instrument or receipt remains unlocated.",
+    "JUDICIAL_DECISION_IDENTIFIES_INSTRUMENT": "A judicial decision records the instrument or party position; the complete filed instrument is not necessarily located.",
+    "NO_CALIFICACION_INSTRUMENT_IDENTIFIED": "No instrument has been identified in this proceeding; instruments from other proceedings are not imported.",
+    "PUBLIC_POST_RECORD_ANALYSIS": "Related public analysis only; not asserted to be in the RPL record.",
+    "NOT_LOCATED": "Not present in the controlled corpus; this is not proof of nonexistence."
+  },
+  "instrument_map": [
+    {
+      "stage": "FIRST_INSTANCE_OPPOSITION",
+      "party_interests": ["Luchy Playa Blanca, S.L.U."],
+      "instrument_count": 1,
+      "instrument": "Separate opposition dated 23 April 2019",
+      "evidence_state": "JUDICIAL_DECISION_IDENTIFIES_INSTRUMENT",
+      "located_support": "Sentencia 163/2023 AH 7; 24 April 2019 LexNET receipt and first pleading page located in the controlled communications corpus.",
+      "open_gap": "Complete filed pleading and annex set."
+    },
+    {
+      "stage": "FIRST_INSTANCE_OPPOSITION",
+      "party_interests": ["Gil Marer"],
+      "instrument_count": 1,
+      "instrument": "Separate 64-page opposition dated 6 June 2019 and digitally signed 10 June 2019",
+      "evidence_state": "SIGNED_COPY_LOCATED",
+      "located_support": "Final signed PDF SHA-256 f442b6856ee73e2413d1877127456638eb5bbd4b577eb884621bb034802a9815; drafting provenance and separate unsigned draft are controlled.",
+      "open_gap": "Certified court-file index and principal filing receipt."
+    },
+    {
+      "stage": "FIRST_INSTANCE_OPPOSITION",
+      "party_interests": ["Pink Canary Services", "Patricia Domínguez"],
+      "instrument_count": 1,
+      "instrument": "Joint six-page opposition dated 23 March 2021 and filed 24 March 2021",
+      "evidence_state": "FILED_COPY_AND_RECEIPT_LOCATED",
+      "located_support": "LexNET ID 202110397349419; principal-document SHA-256 fd87b9818a84506723ec9ba26a72afe467a59e806d34b8316478bb9b449f24fe; Sentencia 163/2023 AH 8.",
+      "open_gap": "Certified service and court-file mapping."
+    },
+    {
+      "stage": "FIRST_INSTANCE_OPPOSITION",
+      "party_interests": ["Aweswell, S.L."],
+      "instrument_count": 0,
+      "instrument": "No Calificación opposition identified",
+      "evidence_state": "NO_CALIFICACION_INSTRUMENT_IDENTIFIED",
+      "located_support": "Aweswell is not listed as an affected person in Sentencia 163/2023.",
+      "open_gap": "Certified docket only if it contradicts the present reconstruction."
+    },
+    {
+      "stage": "APPEAL",
+      "party_interests": ["Gil Marer"],
+      "instrument_count": 1,
+      "instrument": "Separate appeal filed 30 October 2023",
+      "evidence_state": "SIGNED_COPY_LOCATED",
+      "located_support": "Filed PDF and later deposit/filing-summary chain located; the 31 October receipt concerns the deposit, not by itself the principal appeal transmission.",
+      "open_gap": "Principal LexNET filing receipt and certified appellate mapping."
+    },
+    {
+      "stage": "APPEAL",
+      "party_interests": ["Pink Canary Services", "Patricia Domínguez"],
+      "instrument_count": 1,
+      "instrument": "Joint 17-page appeal filed 30 October 2023",
+      "evidence_state": "FILED_COPY_AND_RECEIPT_LOCATED",
+      "located_support": "Modified 17-page version and same-size returned PDF with filing receipt located on 31 October 2023; the separate 19-page version is a superseded draft.",
+      "open_gap": "Certified service and appellate docket mapping."
+    },
+    {
+      "stage": "APPEAL",
+      "party_interests": ["Luchy Playa Blanca, S.L.U."],
+      "instrument_count": 1,
+      "instrument": "Separate appeal reported filed 2 November 2023",
+      "evidence_state": "REPORTED_FILED_SUPPORT_LOCATED",
+      "located_support": "Contemporaneous filing report and later deposit/cure material located; the 11 May 2026 decision identifies LPB as an appellant.",
+      "open_gap": "Actual filed appeal, principal receipt, entry number, page count and grounds."
+    },
+    {
+      "stage": "APPEAL",
+      "party_interests": ["Aweswell, S.L."],
+      "instrument_count": 0,
+      "instrument": "No appeal identified from Sentencia 163/2023",
+      "evidence_state": "NO_CALIFICACION_INSTRUMENT_IDENTIFIED",
+      "located_support": "RPL 3319/2025 and RPL 421/2026 concern separate Administrator-removal and fees/civil-liability lanes.",
+      "open_gap": "None unless a certified Calificación docket contradicts this separation."
+    }
+  ],
+  "instrument_count_rule": "Three located/reported appeal instruments for four appellant interests.",
+  "five_pillar_map": [
+    {
+      "pillar": "MATERIALLY_EXCESSIVE_ADMINISTRATOR_ALLEGATIONS",
+      "located_record": "Complete 47-page Administrator report and identified first-level annex set; Judgment 163/2023 rejected or narrowed several branches.",
+      "status": "DOCUMENTED_AND_CONTESTED",
+      "record_bridge_gap": "Certified proposition-to-source index, autonomous DOC3 explanation and actor-specific knowledge/response matrix."
+    },
+    {
+      "pillar": "EXCEPTIONALLY_SEVERE_TWO_PAGE_FISCAL_OPINION",
+      "located_record": "Two-page opinion dated 12 March 2019 seeking 15 years, damages and deficit liability, with limited visible individual reasoning and a facial actor-description defect.",
+      "status": "DOCUMENTED_AND_CONTESTED",
+      "record_bridge_gap": "Underlying source file, material reviewed, drafting history and actor-specific knowledge; the defect may be an error and requires clarification."
+    },
+    {
+      "pillar": "DI248_INSTITUTIONAL_CIRCULARITY",
+      "located_record": "The adverse Fiscal Calificación position was invoked in the 7 May 2019 DI 248 archive decree.",
+      "status": "INSTITUTIONAL_CONNECTION_DOCUMENTED_NO_COORDINATION_INFERRED",
+      "record_bridge_gap": "Complete DI 248 expediente and requested/performed/omitted/assessed diligence ledger."
+    },
+    {
+      "pillar": "SELECTED_JUDICIAL_ADOPTION",
+      "located_record": "Sentencia 163/2023 accepted selected adverse propositions, rejected or narrowed others and is under appeal.",
+      "status": "DECISION_UNDER_APPEAL",
+      "record_bridge_gap": "Certified evidence-before-court matrix, official hearing record, transmitted-record index and current appellate merits/status certification."
+    },
+    {
+      "pillar": "POSSIBLE_ACOSTA_MATOS_PERIMETER_BENEFIT",
+      "located_record": "The controlled sequence permits an actor- and legal-person-specific investigation of possible direct or indirect benefit.",
+      "status": "OPEN_HYPOTHESIS_NOT_PROOF_OF_AGREEMENT_PURPOSE_OR_OFFENCE",
+      "record_bridge_gap": "Asset–decision–flow–beneficiary–harm–counterfactual trace, strongest innocent explanation and legal-person separation."
+    }
+  ],
+  "related_context_outside_rpl_record_lane": [
+    {
+      "title": "ACTÚA–GESVALT 2018 valuation comparison",
+      "state": "PUBLIC_POST_RECORD_ANALYSIS",
+      "rule": "Potentially relevant economic context; not asserted as evidence admitted or transmitted in RPL 2523/2025."
+    }
+  ],
+  "finite_open_gaps": [
+    "Signed later merits judgment or order",
+    "Service record",
+    "Finality or pending-remedy certification",
+    "Certified appellate docket and transmitted-record index",
+    "Exact LPB appeal and principal receipt",
+    "Gil principal filing receipt",
+    "Oppositions, cross-appeals or Fiscalía appellate submissions",
+    "Admission, evidence, transmission and cure orders",
+    "Official hearing acta, certified recording and integrity/provenance record"
+  ],
+  "proof_boundary": {
+    "silence_is_admission": false,
+    "adverse_decision_is_offence": false,
+    "aligned_benefit_is_coordination": false,
+    "institutional_connection_is_capture": false,
+    "right_of_reply": "Substantive source-backed corrections and contrary evidence receive equivalent visibility."
+  },
+  "controlling_internal_source": "archive/CALIFICACION_OPPOSITIONS_APPEALS_FIVE_PARTY_SOURCE_CONTROL_23AUG2026.md"
+}
