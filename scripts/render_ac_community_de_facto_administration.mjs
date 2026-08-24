@@ -186,6 +186,35 @@ await inspect('Spanish RICPE downstream boundary', '/es/ricpe-responsabilidad-do
   { label: 'no automatic transfer wording', text: 'No se transfiere conocimiento ni culpabilidad automáticamente' }
 ], 'es-ricpe.png');
 
+const lockedDirectRoutes = [
+  ['Spanish canonical detailed presentation', '/es/administracion-de-hecho-comunidad-ac/', 'canonical'],
+  ['English canonical detailed presentation', '/en/de-facto-administration-community-ac/', 'canonical'],
+  ['Spanish PwC detailed presentation', '/es/pwc-canarias-carlos-saavedra-sun-park/', 'pwc'],
+  ['English PwC detailed presentation', '/en/pwc-canarias-carlos-saavedra-sun-park/', 'pwc'],
+  ['Spanish RICPE detailed presentation', '/es/ric-private-equity-sun-park/', 'ricpe'],
+  ['English RICPE detailed presentation', '/en/ric-private-equity-sun-park/', 'ricpe'],
+  ['Spanish Administrator detailed presentation', '/es/concurso-36-2012-administrador-concursal/', 'ac'],
+  ['English Administrator detailed presentation', '/en/insolvency-36-2012-insolvency-administrator/', 'ac'],
+  ['Spanish Judge detailed presentation', '/es/concurso-36-2012-juzgado-mercantil-1/', 'court'],
+  ['English Judge detailed presentation', '/en/insolvency-36-2012-mercantile-court-1/', 'court'],
+  ['Spanish takeover detailed presentation', '/es/toma-control-sun-park-7-junio-2018/', 'takeover'],
+  ['English takeover detailed presentation', '/en/sun-park-takeover-7-june-2018/', 'takeover'],
+  ['Spanish accountability detailed presentation', '/es/concurso-36-2012-responsabilidad-institucional/', 'accountability'],
+  ['English accountability detailed presentation', '/en/insolvency-36-2012-institutional-accountability/', 'accountability'],
+];
+
+for (const [name, route, presentation] of lockedDirectRoutes) {
+  await inspect(name, route, [
+    { label: 'locked detailed component', selector: `section[data-pd-five-ac="20260824b"][data-five-actor-front-page-lock="express-authorization-required"][data-key-direct-route-presentation="${presentation}"]`, exactCount: 1 },
+    { label: 'detailed component visible', visibleSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+    { label: 'five private actor cards', selector: 'section[data-pd-five-ac] [data-private-actor-card]', exactCount: 5 },
+    { label: 'Administrator and Judge cards', selector: 'section[data-pd-five-ac] [data-institution-card]', exactCount: 2 },
+    { label: 'five actor-specific linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
+    { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
+    { label: 'canonical private-actor portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
+  ], null, { openProgressive: false });
+}
+
 await browser.close();
 
 const result = {

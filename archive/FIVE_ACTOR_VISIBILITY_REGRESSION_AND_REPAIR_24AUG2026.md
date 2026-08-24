@@ -70,3 +70,6 @@ Source and browser gates now fail unless both language homepages render, before 
 - the component outside closed progressive disclosure;
 - no horizontal overflow at mobile and desktop viewports.
 
+## Preservation instruction
+
+The detailed five-private-actor + court-appointed Administrator + Magistrate-Judge presentation is now subject to the separate `FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md`: it must remain on both homepages and the controlled direct routes unless Gil Marer expressly authorizes its removal or demotion.

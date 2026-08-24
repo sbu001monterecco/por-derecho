@@ -4,15 +4,19 @@
   const path = location.pathname.replace(/\/+$/, '/');
   const es = /\/es\//.test(path);
   const isHome = /\/(en|es)\/$/.test(path);
+  const isCanonical = /\/en\/de-facto-administration-community-ac\/$/.test(path)
+    || /\/es\/administracion-de-hecho-comunidad-ac\/$/.test(path);
   const isPwc = /\/(en|es)\/pwc-canarias-carlos-saavedra-sun-park\/$/.test(path);
   const isRicpe = /\/(en|es)\/ric-private-equity-sun-park\/$/.test(path);
   const isAc = /\/en\/insolvency-36-2012-insolvency-administrator\/$/.test(path)
     || /\/es\/concurso-36-2012-administrador-concursal\/$/.test(path);
+  const isCourt = /\/en\/insolvency-36-2012-mercantile-court-1\/$/.test(path)
+    || /\/es\/concurso-36-2012-juzgado-mercantil-1\/$/.test(path);
   const isTakeover = /\/en\/sun-park-takeover-7-june-2018\/$/.test(path)
     || /\/es\/toma-control-sun-park-7-junio-2018\/$/.test(path);
   const isAccountability = /\/en\/insolvency-36-2012-institutional-accountability\/$/.test(path)
     || /\/es\/concurso-36-2012-responsabilidad-institucional\/$/.test(path);
-  if (!isHome && !isPwc && !isRicpe && !isAc && !isTakeover && !isAccountability) return;
+  if (!isHome && !isCanonical && !isPwc && !isRicpe && !isAc && !isCourt && !isTakeover && !isAccountability) return;
 
   const assetBase = current?.src
     ? new URL('.', current.src)
@@ -38,9 +42,11 @@
     criminalB: 'La acusación conecta deuda y voto, acceso y seguridad, llaves, mantenimiento, obras y valoración, información, estrategia concursal, operación, ingresos, título y resultado. Gil sostiene que Aweswell había cumplido o podía cumplir las condiciones bajo su control y que el obstáculo operativo estaba en preservar y entregar garantías/colateral, obtener cifra de deuda y autoridad concursal/judicial y mantener acceso, explotación y valoración. Es una acusación directa, no una sentencia ni una prueba de desembolso o propósito común.',
     context: {
       home: 'Vista principal del mecanismo económico, sus cinco actores privados y sus dos puntos institucionales de control.',
+      canonical: 'Expediente directo de la administración de hecho alegada: cinco actores privados y dos funciones institucionales separadas.',
       pwc: 'Conecta el conocimiento profesional de 2016 con el contacto confirmado PwC–Administrador Concursal.',
       ricpe: 'Conecta Comunidad/control con las posteriores preguntas de título, due diligence, capital y operación RICPE.',
       ac: 'Separa al AC del perímetro privado y somete su papel a conocimiento → poder/deber → comisión/omisión → consecuencia.',
+      court: 'Separa al Magistrado-Juez del perímetro privado y del AC y vincula cada actuación u omisión judicial alegada con cada actor y resultado.',
       takeover: 'Coloca el 7 de junio de 2018 como bisagra de control material dentro de la cadena alegada.',
       accountability: 'Separa el perímetro privado, el control concursal y la revisión judicial para evitar atribuciones por asociación.'
     },
@@ -213,9 +219,11 @@
     criminalB: 'The allegation connects debt and voting, access and security, keys, maintenance, works and valuation, information, insolvency strategy, operation, income, title and result. Gil says Aweswell performed or could perform the conditions within its control and that the operative blockage concerned preserving and delivering security/collateral, obtaining the debt figure and insolvency/judicial authority, and maintaining access, operation and valuation. It is a direct allegation, not a judgment or proof of drawdown or common purpose.',
     context: {
       home: 'Principal view of the economic mechanism, its five private actors and two institutional control points.',
+      canonical: 'Direct alleged de facto-administration record: five private actors and two separate institutional roles.',
       pwc: 'Connects professional knowledge in 2016 with later confirmed PwC–Administrator contact.',
       ricpe: 'Connects the Community/control history with later title, diligence, capital and RICPE-operation questions.',
       ac: 'Separates the Administrator from the private perimeter and tests knowledge → power/duty → commission/omission → consequence.',
+      court: 'Separates the Judge from the private perimeter and Administrator and links each alleged judicial act or omission to each actor and outcome.',
       takeover: 'Places 7 June 2018 as the material-control hinge inside the alleged chain.',
       accountability: 'Separates the private perimeter, insolvency control and judicial review to prevent guilt by association.'
     },
@@ -384,9 +392,11 @@
   const contextKey = isPwc ? 'pwc'
     : isRicpe ? 'ricpe'
       : isAc ? 'ac'
-        : isTakeover ? 'takeover'
-          : isAccountability ? 'accountability'
-            : 'home';
+        : isCourt ? 'court'
+          : isTakeover ? 'takeover'
+            : isAccountability ? 'accountability'
+              : isCanonical ? 'canonical'
+                : 'home';
   const context = c.context[contextKey];
   const esc = (value) => String(value).replace(/[&<>"']/g, (char) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
@@ -453,6 +463,8 @@
     section.className = 'pd-five-ac';
     section.dataset.pdFiveAc = '20260824b';
     section.dataset.fiveActorAccountabilityStatic = 'enhanced';
+    section.dataset.fiveActorFrontPageLock = 'express-authorization-required';
+    section.dataset.keyDirectRoutePresentation = isHome ? 'front-page' : contextKey;
     section.setAttribute('aria-labelledby', 'pd-five-ac-title');
     section.innerHTML = `
       <header class="pd-five-ac__head">

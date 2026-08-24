@@ -4,7 +4,7 @@
 
   // Preserve and execute the complete pre-highlight site loader unchanged.
   const prior = document.createElement('script');
-  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824b', current.src).href;
+  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824c', current.src).href;
   prior.async = false;
   prior.setAttribute('data-pre-intervencion-site-loader', 'true');
   document.head.appendChild(prior);

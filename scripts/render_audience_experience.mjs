@@ -68,6 +68,8 @@ try {
           controllingFiveActorTextPresent: ['Francisco Mario Matos Matas','Antonio Cogolludo Rojas','Shaila María Cogolludo Ramos','José Daniel Acosta Matos','Laura Patricia Acosta Matos'].every(name => controllingText.includes(name)),
           controllingInstitutionalTextPresent: controllingText.includes('Alberto López Villarrubia') && (controllingText.includes('administrador concursal') || controllingText.includes('insolvency administrator')),
           fiveActorVisualMarker: detailedNode?.dataset.pdFiveAc || '',
+          fiveActorFrontPageLock: detailedNode?.dataset.fiveActorFrontPageLock || '',
+          keyDirectRoutePresentation: detailedNode?.dataset.keyDirectRoutePresentation || '',
           fiveActorProtectedMarker: detailedNode?.dataset.audienceProtectedFiveActorVisual || '',
           fiveActorVisualVisibleBeforeCollapse: Boolean(detailedNode && !fullRecordNode?.contains(detailedNode)),
           fiveActorCards: detailedNode?.querySelectorAll('[data-private-actor-card]').length || 0,
@@ -110,6 +112,8 @@ try {
       if (!metrics.controllingInstitutionalTextPresent) failures.push(`${prefix}: controlling panel omits the AC or Judge allegation`);
       if (metrics.fiveActorVisualPanels !== 1) failures.push(`${prefix}: expected 1 detailed five-actor visual, got ${metrics.fiveActorVisualPanels}`);
       if (metrics.fiveActorVisualMarker !== '20260824b') failures.push(`${prefix}: detailed five-actor visual marker missing`);
+      if (metrics.fiveActorFrontPageLock !== 'express-authorization-required') failures.push(`${prefix}: express-authorization front-page preservation lock missing`);
+      if (metrics.keyDirectRoutePresentation !== 'front-page') failures.push(`${prefix}: front-page presentation marker missing`);
       if (metrics.fiveActorProtectedMarker !== '20260824b') failures.push(`${prefix}: detailed five-actor visual is not protected by audience ordering`);
       if (!metrics.fiveActorVisualVisibleBeforeCollapse) failures.push(`${prefix}: detailed five-actor visual is hidden in collapsed full record`);
       if (metrics.fiveActorCards !== 5) failures.push(`${prefix}: expected 5 private actor cards, got ${metrics.fiveActorCards}`);
