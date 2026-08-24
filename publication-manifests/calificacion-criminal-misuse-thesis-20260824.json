@@ -3,8 +3,16 @@
   "control_marker": "calificacion-criminal-misuse-thesis-20260824",
   "owner": "Gil Marer / Aweswell",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "MERGED",
   "branch": "codex/calificacion-investigative-thesis-20260824",
+  "pull_request": 882,
+  "merge_sha": "8d8111880046ecd5eb4663e063da5cb678b2b7a5",
+  "runtime_first_read_fix": {
+    "branch": "codex/calificacion-thesis-first-read-20260824",
+    "status": "SOURCE_READY_PENDING_PR",
+    "reason": "Live browser inspection found legacy organisers moving the sitewide thesis into collapsed/later content on the homepage and behind unrelated modules on the canonical page.",
+    "required_result": "Exactly one thesis block, kept as the direct sibling after the route hero on canonical, homepage, institutional and compact target routes."
+  },
   "expected_routes": {
     "es": [
       "es/tesis-uso-criminal-procedimiento-calificacion/index.html"
