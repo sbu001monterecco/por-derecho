@@ -357,3 +357,14 @@ The executable loader chain for these modules remains in site-pre-intervencion-h
   module.setAttribute('data-calificacion-misuse-thesis-loader', '20260824');
   document.head.appendChild(module);
 })();
+
+/* RICPE-SAIP-BATCH-STATUS-20260824 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-ricpe-saip-batch-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('ricpe-saip-batch-status-20260824.js?v=20260824b', current.src).href;
+  module.async = false;
+  module.setAttribute('data-ricpe-saip-batch-loader', '20260824');
+  document.head.appendChild(module);
+})();

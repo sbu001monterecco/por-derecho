@@ -1,0 +1,38 @@
+name: Validate RICPE SAIP batch
+
+on:
+  pull_request:
+    paths:
+      - "data/ricpe-saip-batch-20260824.json"
+      - "operations/RICPE_SAIP_BATCH_24AUG2026.md"
+      - "es/ricpe-acciones-pendientes-ahora/index.html"
+      - "en/ricpe-outstanding-actions-now/index.html"
+      - "assets/ricpe-saip-batch-status-20260824.js"
+      - "assets/site.js"
+      - "scripts/validate_ricpe_saip_batch_20260824.py"
+      - ".github/workflows/validate-ricpe-saip-batch-20260824.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/ricpe-saip-batch-20260824.json"
+      - "operations/RICPE_SAIP_BATCH_24AUG2026.md"
+      - "es/ricpe-acciones-pendientes-ahora/index.html"
+      - "en/ricpe-outstanding-actions-now/index.html"
+      - "assets/ricpe-saip-batch-status-20260824.js"
+      - "assets/site.js"
+      - "scripts/validate_ricpe_saip_batch_20260824.py"
+      - ".github/workflows/validate-ricpe-saip-batch-20260824.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - run: python scripts/validate_ricpe_saip_batch_20260824.py
