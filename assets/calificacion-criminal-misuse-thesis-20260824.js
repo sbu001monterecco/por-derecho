@@ -41,7 +41,6 @@
   const match = suffixes => [...suffixes].some(suffix => path.endsWith(suffix));
 
   const pinFirstRead = (section, main) => {
-    const keepWatching = match(featured);
     const pin = () => {
       const hero = main.querySelector(':scope > section:first-of-type');
       const sourceFunds = main.querySelector(':scope > .source-funds-notice-section--featured');
@@ -56,9 +55,7 @@
       window.setTimeout(pin, 7000);
       window.setTimeout(pin, 15000);
       window.setTimeout(pin, 25000);
-      if (!keepWatching) window.setTimeout(() => observer.disconnect(), 33000);
     }, { once: true });
-    if (!keepWatching) window.setTimeout(() => observer.disconnect(), 35000);
     pin();
   };
 
