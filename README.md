@@ -19,6 +19,7 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/en/insolvency-36-2012-orders-decisions/` — English navigation and scope-control counterpart for that complete public-safe specialist corpus
 - `/es/concurso-36-2012-que-ordeno-el-juzgado/` and `/en/concurso-36-2012-what-the-court-ordered/` — bilingual reader of twelve selected critical instruments, their limits, implementation and open proof
 - `/es/concurso-36-2012-columna-judicial/` and `/en/concurso-36-2012-judicial-spine/` — judicial/LAJ state-transition map read together with the denominator-aware whole-record catalogue
+- `/es/tesis-uso-criminal-procedimiento-calificacion/` and `/en/insolvency-classification-criminal-misuse-thesis/` — canonical five-pillar, actor-specific investigative thesis for the Calificación record, with an express RPL 2523/2025 appeal firewall, contrary evidence and equal-visibility right of reply
 - `/es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/` and `/en/insolvency-administrator-security-request-sun-park-27-february-2018/` — privacy-safe source reader for the 27 February 2018 AC security-meeting request; a party communication, not a court order or proof of implementation
 - `/es/cuatrecasas-dp748-accion-civil/` and `/en/cuatrecasas-dp748-civil-action/` — bilingual, privacy-controlled position separating DP 748/2026, the La Laguna enforcement/assignee hypothesis, the planned civil mandate-and-billing audit, ICAM and a jurisdiction-dependent SRA route
 - `/` — language-aware entry point
