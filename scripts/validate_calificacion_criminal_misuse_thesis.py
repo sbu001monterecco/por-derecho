@@ -86,6 +86,50 @@ def main() -> int:
             if marker not in body:
                 errors.append(f"{path}: missing static control {marker!r}")
 
+    context_routes = {
+        "es/calificacion-concurso-36-2012-vidas-paralelas/index.html": [
+            "LECTURA PENAL PRIMERO · PROTECCIÓN CIVIL EN PARALELO",
+            "cinco de los seis instrumentos",
+            "../concurso-36-2012-autos-resoluciones/",
+            "MADRID DP 913/2025",
+        ],
+        "en/insolvency-classification-parallel-lives/index.html": [
+            "CRIMINAL FIRST · CIVIL PROTECTION IN PARALLEL",
+            "five of the six asserted instruments",
+            "../insolvency-36-2012-orders-decisions/",
+            "MADRID DP 913/2025",
+        ],
+        "es/eleconomista-javier-romera-enero2025/index.html": [
+            "HISTORIA PROPUESTA → ALCANCE JUDICIAL → EFECTO DOCUMENTADO",
+            "DP 913/2025 · JUZGADO DE INSTRUCCIÓN Nº 44 DE MADRID",
+            "../calificacion-concurso-36-2012-vidas-paralelas/#eleconomista",
+            "../concurso-36-2012-ap-seccion-4/",
+            "../concurso-36-2012-autos-resoluciones/",
+        ],
+        "en/eleconomista-javier-romera-january2025/index.html": [
+            "PROPOSED STORY → JUDICIAL SCOPE → DOCUMENTED EFFECT",
+            "DP 913/2025 · MADRID INVESTIGATING COURT NO. 44",
+            "../insolvency-classification-parallel-lives/#eleconomista",
+            "../insolvency-36-2012-ap-section-4/",
+            "../insolvency-36-2012-orders-decisions/",
+        ],
+        "es/concurso-36-2012-autos-resoluciones/index.html": [
+            "TEXTO ÍNTEGRO → POSICIÓN → CONSECUENCIA",
+            "../calificacion-concurso-36-2012-vidas-paralelas/",
+            "../eleconomista-javier-romera-enero2025/#madrid-2025-media",
+        ],
+        "en/insolvency-36-2012-orders-decisions/index.html": [
+            "FULL TEXT → POSITION → CONSEQUENCE",
+            "../insolvency-classification-parallel-lives/",
+            "../eleconomista-javier-romera-january2025/#madrid-2025-media",
+        ],
+    }
+    for path, markers in context_routes.items():
+        body = read(path)
+        for marker in markers:
+            if marker not in body:
+                errors.append(f"{path}: missing criminal-first/context-link control {marker!r}")
+
     stale = {
         "es/calificacion-concurso-36-2012-vidas-paralelas/index.html": [
             "Siguen pendientes el informe/anexos auténticos e íntegros del AC",

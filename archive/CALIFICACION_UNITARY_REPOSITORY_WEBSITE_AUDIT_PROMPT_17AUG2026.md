@@ -5,6 +5,18 @@
 **Scope:** `sbu001monterecco/por-derecho`, the deployed Por Derecho website, and the Spanish/English Calificación surfaces  
 **Purpose:** make the allegations stronger through greater precision, source discipline and rebuttal resistance—not through broader or less supportable wording.
 
+## 23 AUGUST 2026 CONTROLLING AUGMENTATION
+
+For any rerun involving alertador/reporting-person status, retaliation, the 2021 CNMV/AEAT notices, `registro 918/2021`, the 25-Jul-2023 hearing, Law 2/2023 Articles 35–38 or the same-hotel parallel-lives theory, this prompt must be executed together with:
+
+- `archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md`;
+- `archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md`; and
+- `archive/prompts/CALIFICACION_ALERTADOR_RETALIATION_UNITARY_EXECUTION_PROMPT_23AUG2026.md`.
+
+The later specialist prompt controls on temporal scope, Article 38.4, the exact 2020–2023 alert chronology, proceedings interfaces, visualisation and completion scoring. Do not report one ambiguous completion percentage: separate implementation completion from evidential closure. The required reader journey is now:
+
+`same hotel / overlapping asset perimeter → external investment life → CNMV/AEAT reporting → court-record incorporation → later title/operation → challenged hearing → adverse judgment → appeal/protection/accountability interfaces`.
+
 ---
 
 # MASTER PROMPT
