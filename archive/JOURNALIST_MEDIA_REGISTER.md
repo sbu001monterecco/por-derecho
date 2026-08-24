@@ -16,6 +16,8 @@ Website publication of any outreach/contact fact requires a separate, explicit e
 
 Do not publish private email addresses, personal telephone numbers, Gmail message identifiers or other non-public contact details in this register.
 
+**Execution-state warning (24 August 2026):** contact-state wording embedded in older row notes is historical and is superseded by `MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`. This identity/professional-context register is never authority to send or resend.
+
 ## Register
 
 | Name | Media / organisation | Role / relevance | Geography / language | Notes |

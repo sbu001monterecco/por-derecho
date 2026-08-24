@@ -3,6 +3,12 @@
 **Control date:** 23 August 2026  
 **Status:** controlling cross-thread continuation pointer for current media campaign
 
+## Superseding Gmail reconciliation — 24 August 2026
+
+Campaign execution state is now controlled by `MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`. A fresh read-only audit located 57 sent copies across 55 threads. Accordingly, later sections of this 23-August snapshot that call Atlántico Hoy, Ramón Betancor, Sandra Tobar, Javi Rodríguez, Janire Alfaya, Daniel Toledo Quer or other reconciled lanes `PREPARED / NOT SENT` are historical and must not be executed.
+
+No substantive editorial response was located. Europa Press supplied an acknowledgement only; four route/delivery failures retain separate controlled classifications. CR-081 and CR-082 prepare, but do not authorise, corrections for Iván Alhambra and Nacho Calle. No outbound operation is authorised.
+
 ## Mandatory resume sequence
 
 `CURRENT MAIN → THIS STATE FILE → MULTI-JOURNALIST OUTLET DASHBOARD → RECIPIENT-SPECIFIC RECORD → CURRENT WEBSITE/DOSSIER → CONNECTED GMAIL BOTH DIRECTIONS → CURRENT PUBLIC ROLE/CONTACT CHECK → DRAFT/REPLY`.

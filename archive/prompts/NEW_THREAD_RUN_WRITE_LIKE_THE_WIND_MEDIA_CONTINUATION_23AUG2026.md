@@ -20,19 +20,20 @@ Do **not** ask me to reconstruct or restate the prior thread. Rehydrate the stat
 
 Read current `main` first, then read at minimum:
 
-1. `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`
-2. `archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md`
-3. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`
-4. `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
-5. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`
-6. `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
-7. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md`
-8. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`
-9. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`
-10. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`
-11. `archive/JOURNALIST_MEDIA_REGISTER.md`
-12. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
-13. the recipient-specific records for every currently active sent/prepared journalist.
+1. `archive/MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`
+2. `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`
+3. `archive/OUTBOUND_EMAIL_FUTURE_THREAD_START_HERE_23AUG2026.md`
+4. `archive/OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md`
+5. `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
+6. `archive/OUTBOUND_WEBSITE_LINK_MANDATORY_RULE_23AUG2026.md`
+7. `archive/MAXIMUM_MEDIA_DISTRIBUTION_MULTI_RECIPIENT_RULE_23AUG2026.md`
+8. `archive/OUTBOUND_LOCAL_MEDIA_POSITIVE_HOOK_UNITARY_MIDDLE_RULE_23AUG2026.md`
+9. `archive/CAM_54_PROVENANCE_MINORITY_MARKETABILITY_MEDIA_PROPAGATION_CONTROL_23AUG2026.md`
+10. `archive/OUTBOUND_CANONICAL_SOURCE_KIT_MANIFEST_23AUG2026.md`
+11. `archive/OUTBOUND_RECIPIENT_FIT_DOSSIER_PLAYBOOK_23AUG2026.md`
+12. `archive/JOURNALIST_MEDIA_REGISTER.md`
+13. `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`
+14. the recipient-specific records for every currently active sent/prepared journalist.
 
 Also inspect the current public Por Derecho website routes relevant to the next recipient and the current correction/missing-evidence controls.
 
@@ -66,7 +67,9 @@ Never convert silence into rejection, reading, acceptance, non-delivery or edito
 
 A response does not itself authorise a reply.
 
-### 3. CURRENT CAMPAIGN STATE AT THIS CONTROL POINT
+### 3. HISTORICAL 23-AUGUST CAMPAIGN STATE — RECONCILE BEFORE USE
+
+The list below is retained as the original 23-August prompt snapshot. It is superseded for execution by the 24-August reconciliation, which located 57 sent copies across 55 threads and found that many former `PREPARED / NOT SENT` lanes were already sent. Never execute an address or package from this section without reconciling current Gmail. The two prepared correction packages are not authorised.
 
 The repository should currently show the following unless fresh Gmail/source evidence changes it:
 
