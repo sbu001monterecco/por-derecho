@@ -176,13 +176,13 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "data-audience-full-record",
         "openHashTarget",
         "const prosecution = main.querySelector",
-        "[hero, priority, prosecution, summary, audiences, perimeters]",
+        "[hero, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
         "main.dataset.expressCriminalAttributionVisible",
         "audienceProtectedAttribution",
     ):
         if marker not in module:
             fail(errors, f"audience runtime missing contract marker: {marker}")
-    if "audience-experience-order-20260823.js?v=20260823a" not in loader:
+    if "audience-experience-order-20260823.js?v=20260824a" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
 
     for marker in (
