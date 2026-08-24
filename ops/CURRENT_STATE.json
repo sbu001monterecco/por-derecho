@@ -3,18 +3,19 @@
   "as_of": "2026-08-24",
   "purpose": "Single current routing layer. Specialist source controls remain authoritative for proposition-level detail.",
   "repository": {
-    "baseline_main_sha": "f734cf219b3a8446a0c4a6b947560a304701e18d",
-    "baseline_release": "ACTUA_GESVALT_LIVE_VERIFICATION_PR_898",
-    "calificacion_governance_release": "CHANGESET_PENDING_PR_AND_LIVE_VERIFICATION",
-    "branch": "codex/calificacion-evidence-governance-20260824",
-    "legacy_status_notice": "ops/PRODUCTION_STATUS.json and ops/LAST_KNOWN_GOOD.json remain historical 21-Aug controls until a verified post-merge release records a successor exact SHA.",
+    "baseline_main_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+    "baseline_release": "CALIFICACION_RPL2523_EVIDENCE_GOVERNANCE_PR_899_LIVE_VERIFIED",
+    "calificacion_governance_release": "LIVE_VERIFIED",
+    "branch": "main via PR #899",
+    "legacy_status_notice": "ops/PRODUCTION_STATUS.json and ops/LAST_KNOWN_GOOD.json were advanced from the historical 21-Aug controls after exact-SHA Pages and route readback verification.",
     "rollback_rule": "Use a normal revert PR to a positively verified release; never force-push main."
   },
   "website": {
     "host": "https://sbu001monterecco.github.io/por-derecho/",
     "latest_verified_public_packages_at_baseline": [
       "Calificacion criminal-misuse thesis PR 894 plus live verification PR 896",
-      "ACTUA-GESVALT comparison PR 897 plus live verification PR 898"
+      "ACTUA-GESVALT comparison PR 897 plus live verification PR 898",
+      "Calificacion RPL 2523 evidence governance PR 899; exact merge SHA and eight critical HTML routes live verified"
     ],
     "canonical_calificacion_routes": [
       "es/tesis-uso-criminal-procedimiento-calificacion/",
