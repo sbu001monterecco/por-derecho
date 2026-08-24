@@ -4,8 +4,17 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-24T10:38:46Z</updated>
+  <updated>2026-08-24T22:07:04Z</updated>
   <author><name>Project Sun Rock</name></author>
+  <entry>
+    <title>Corregida la cronología de la vista de Valencia conforme a la diligencia firmada</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#cronologia-vista-valencia-24ago</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/reclamacion-caixabank-valencia/"/>
+    <link rel="related" href="https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/"/>
+    <published>2026-08-24T22:07:04Z</published>
+    <updated>2026-08-24T22:07:04Z</updated>
+    <summary>La vista original de 6 de noviembre de 2025 a las 10:00 no se celebró después de que el perito contrario comunicara la cancelación de su vuelo la tarde anterior. Aweswell no se opuso porque consideraba necesario interrogarle personalmente. La diligencia firmada el 6 de noviembre volvió a señalar la vista para el 28 de enero de 2027 a las 10:00. La anterior referencia del repositorio a octubre de 2026 / 12:00 era una transcripción sin respaldo, no un segundo aplazamiento. El incidente no acredita dilación táctica ni nada sobre el fondo.</summary>
+  </entry>
   <entry>
     <title>Cuatrecasas: sincronizados Stoneweg/Varia y la continuación de la auditoría integral de facturación</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#cuatrecasas-paquete-facturacion-24ago</id>

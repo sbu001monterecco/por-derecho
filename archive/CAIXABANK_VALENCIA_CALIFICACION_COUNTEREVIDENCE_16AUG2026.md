@@ -20,9 +20,9 @@ Read together with `archive/CAIXABANK_AC_WITNESS_ORIGIN_ADHESION_CONTROL_16AUG20
 
 The controlled primary court record identifies the live proceeding as:
 
-**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0057718, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
+**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0049579, Juzgado de Primera Instancia nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
 
-A Diligencia de Ordenación dated **6 November 2025** fixes trial for **9 October 2026 at 12:00**.
+A signed Diligencia dated **6 November 2025** records that the hearing listed for that day at **10:00** did not proceed and relists it for **28 January 2027 at 10:00**. Contemporaneous counsel correspondence records notice on the evening before that the opposing expert's flight had been cancelled and records Aweswell's decision not to oppose suspension because it wished to question him personally.
 
 As of the 16-Aug-2026 controlled Gmail refresh, no later primary court record was located changing that trial date or terminating the proceeding.
 
@@ -102,13 +102,13 @@ The project/client's present strategic objective is to obtain a favourable separ
 
 ## 4. N.I.G. source-control discrepancy
 
-The witness citations for ORD 1859/2023-9 carry **N.I.G. 46250-42-1-2023-0049579**. The later 6-Nov-2025 Diligencia de Ordenación for the same proceeding number and parties carries **N.I.G. 46250-42-1-2023-0057718**.
+The witness citations and signed 6-Nov-2025 diligence reviewed for ORD 1859/2023-9 carry **N.I.G. 46250-42-1-2023-0049579**. The different N.I.G. formerly recorded in the repository was a transcription error.
 
 Preserve both identifiers as document metadata. Do not silently merge, correct or infer the reason for the discrepancy without the court's own reconciliation.
 
 For current procedural naming, use the later controlled order:
 
-**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0057718, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
+**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0049579, Juzgado de Primera Instancia nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
 
 ## 5. Evidential use against the Calificación narrative
 
@@ -149,7 +149,7 @@ The live claim is nevertheless material **subsequent counter-evidence** to any c
 
 The controlled proposition for future repository searches, institutional submissions and publication work is:
 
-> **The materially adverse Calificación record must be reconciled with the live CaixaBank recovery track. Aweswell Limited is claimant against CAIXABANK, S.A. in Procedimiento ordinario [ORD] 1859/2023-9 before Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, with trial presently fixed for 9 October 2026. The pleaded recovery recorded in CaixaBank's own expert report is €1,124,445.84 and is contested, not adjudicated. CaixaBank requested/proposed the Administrador Concursal, Francisco de Borja Rodríguez-Batllori Laffitte, as a witness; Aweswell's counsel adhered to that request, and the later court record therefore describes him procedurally as proposed by claimant and defendant. This must not be flattened into “both parties independently asked for the AC.” These facts do not prove liability, bias or criminality, but they materially require cross-proceeding reconciliation of bank-side causation/recovery, AC knowledge and authorisation, loss quantum, and any continuing Calificación narrative that treats the relevant patrimonial prejudice as fixed, solely debtor-caused or irrecoverable.**
+> **The materially adverse Calificación record must be reconciled with the live CaixaBank recovery track. Aweswell Limited is claimant against CAIXABANK, S.A. in Procedimiento ordinario [ORD] 1859/2023-9 before Juzgado de Primera Instancia nº 27 de Valencia, with the hearing relisted for 28 January 2027 at 10:00 after the original 6 November 2025 hearing was suspended. The pleaded recovery recorded in CaixaBank's own expert report is €1,124,445.84 and is contested, not adjudicated. CaixaBank requested/proposed the Administrador Concursal, Francisco de Borja Rodríguez-Batllori Laffitte, as a witness; Aweswell's counsel adhered to that request, and the later court record therefore describes him procedurally as proposed by claimant and defendant. This must not be flattened into “both parties independently asked for the AC.” These facts do not prove liability, bias or criminality, but they materially require cross-proceeding reconciliation of bank-side causation/recovery, AC knowledge and authorisation, loss quantum, and any continuing Calificación narrative that treats the relevant patrimonial prejudice as fixed, solely debtor-caused or irrecoverable.**
 
 ## 7. Public / institutional drafting controls
 
@@ -157,7 +157,7 @@ The controlled proposition for future repository searches, institutional submiss
 
 - Name **CAIXABANK, S.A.**.
 - Name the proceeding and court fully.
-- State the 9-Oct-2026 trial date as the latest controlled primary court date.
+- State the original 6-Nov-2025 hearing and the signed relisting to 28-Jan-2027 at 10:00 as one procedural chronology.
 - State that the pleaded €1,124,445.84 recovery is material, contested and not adjudicated.
 - State that **CaixaBank requested/proposed Borja and Aweswell's counsel adhered to that request**.
 - Explain that later court wording saying claimant and defendant proposed him reflects the resulting procedural posture after adhesion, not proof of equal/independent sponsorship.
@@ -183,7 +183,7 @@ The controlled proposition for future repository searches, institutional submiss
 Controlled source documents/correspondence read for this refresh:
 
 1. **Javier Sixto email, 30-Oct-2024**, Gmail ID `192de7e1c6b3837f`, `RE: Valencia y próxima videollamada` — contemporaneous report that Borja's testimony was admitted “a petición de Caixabank, a la cual nos adherimos”.
-2. **Diligencia de Ordenación, 6-Nov-2025**, ORD 1859/2023-9 — current controlled court/case naming and trial fixed for 9-Oct-2026 at 12:00.
+2. **Diligencia de Ordenación, 6-Nov-2025**, ORD 1859/2023-9 — current controlled court/case naming and hearing relisted for 28-Jan-2027 at 10:00.
 3. **Citación de Francisco de Borja Rodríguez-Batllori Laffitte, issued 29-Oct-2024 for 6-Nov-2025**, ORD 1859/2023-9 — later procedural wording: witness proposed by claimant and defendant.
 4. **Citación judicial, 23-Apr-2024**, ORD 1859/2023-9 — same both-sides procedural proposition.
 5. **Pericial de CaixaBank, 18-Jun-2024** — pleaded claim architecture/quantum and CaixaBank's characterisation of the AC-authorised component; defendant's contest of liability/quantum.
@@ -193,7 +193,7 @@ Controlled source documents/correspondence read for this refresh:
 
 Future searches touching any of these terms must retrieve this control and `archive/CAIXABANK_AC_WITNESS_ORIGIN_ADHESION_CONTROL_16AUG2026.md`:
 
-`CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `Francisco de Borja Rodríguez-Batllori Laffitte` · `testigo propuesto por la parte actora y demandada` · `a petición de Caixabank` · `nos adherimos` · `adhesión` · `riesgo procesal` · `separación AC` · `3304/2025` · `3319/2025` · `Calificación culpable` · `Sentencia 163/2023` · `bank recovery` · `recuperación bancaria`.
+`CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `6 noviembre 2025` · `28 enero 2027` · `€1,124,445.84` · `Francisco de Borja Rodríguez-Batllori Laffitte` · `testigo propuesto por la parte actora y demandada` · `a petición de Caixabank` · `nos adherimos` · `adhesión` · `riesgo procesal` · `separación AC` · `3304/2025` · `3319/2025` · `Calificación culpable` · `Sentencia 163/2023` · `bank recovery` · `recuperación bancaria`.
 
 ## Control sentence
 

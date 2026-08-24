@@ -138,7 +138,7 @@ The record supports the existence and economic substance of a direct-market plat
 
 **Classification:** VERIFIED PROCEDURAL STATUS / RECONCILIATION OPEN.
 
-Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, remains pending, with trial presently recorded for January 2027. It concerns the banking and financial-product lane.
+Ordinary Proceeding **1859/2023-9**, Court of First Instance 27 of Valencia, remains pending. The hearing originally listed for 6-Nov-2025 at 10:00 did not proceed; the signed diligence dated that day relists it for 28-Jan-2027 at 10:00. It concerns the banking and financial-product lane.
 
 A controlled expert/administrator comparison identifies a **€517,750.04** difference between one expert principal figure and the amount recognised by the insolvency administrator. This may matter to Concurso 36/2012 but does not automatically determine the separate Valencia claim.
 

@@ -7,7 +7,7 @@
 
 This control prevents an unfair or evidentially flattened description of how the Administrador Concursal, **Francisco de Borja Rodríguez-Batllori Laffitte**, came to be admitted as a witness in the pending Valencia banking proceeding:
 
-**Procedimiento ordinario [ORD] 1859/2023-9, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
+**Procedimiento ordinario [ORD] 1859/2023-9, Juzgado de Primera Instancia nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
 
 The phrase **“both parties asked for/proposed the AC”** must not be used without the qualification below.
 
@@ -74,7 +74,7 @@ Any later order deciding separation/removal, any fresh Valencia witness citation
 
 ## 5. Current Valencia scheduling control
 
-The repository's later primary court scheduling record currently controls: **trial fixed for 9 October 2026 at 12:00** by Diligencia de Ordenación dated 6-Nov-2025. Preserve that date unless a later primary court record changes it.
+The signed primary scheduling record currently controls: the original hearing was **6 November 2025 at 10:00** and the Diligencia dated that day relisted it for **28 January 2027 at 10:00**. The former October 2026 repository date was a transcription error. Preserve the signed relisting unless a later primary court record changes it.
 
 Informal/counsel references to other dates are chronology evidence but do not supersede the current controlled court order without a later court source.
 

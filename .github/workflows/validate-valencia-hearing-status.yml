@@ -1,0 +1,56 @@
+name: Validate Valencia hearing chronology
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/validate-valencia-hearing-status.yml'
+      - 'assets/data/valencia-hearing-status-v1.json'
+      - 'assets/caixabank-borja-witness-context-20260816.js'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'en/caixabank-valencia-claim/**'
+      - 'es/reclamacion-caixabank-valencia/**'
+      - 'en/lender-of-record/**'
+      - 'es/acreedor-de-registro/**'
+      - 'en/updates/**'
+      - 'es/actualizaciones/**'
+      - 'archive/**'
+      - 'scripts/validate_valencia_hearing_status.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/validate-valencia-hearing-status.yml'
+      - 'assets/data/valencia-hearing-status-v1.json'
+      - 'assets/caixabank-borja-witness-context-20260816.js'
+      - 'en/index.html'
+      - 'es/index.html'
+      - 'en/caixabank-valencia-claim/**'
+      - 'es/reclamacion-caixabank-valencia/**'
+      - 'en/lender-of-record/**'
+      - 'es/acreedor-de-registro/**'
+      - 'en/updates/**'
+      - 'es/actualizaciones/**'
+      - 'archive/**'
+      - 'scripts/validate_valencia_hearing_status.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-valencia-hearing-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate Valencia hearing chronology and superseded markers
+        run: python3 scripts/validate_valencia_hearing_status.py

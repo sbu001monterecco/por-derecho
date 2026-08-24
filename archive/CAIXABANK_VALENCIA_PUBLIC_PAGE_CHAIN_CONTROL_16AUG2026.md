@@ -58,17 +58,17 @@ This is a publication-scope correction, not a change to historical creditor iden
 
 Use:
 
-**Aweswell Limited c. CAIXABANK, S.A. — Procedimiento ordinario [ORD] 1859/2023-9 — Juzgado de Primera Instancia e Instrucción nº 27 de Valencia.**
+**Aweswell Limited c. CAIXABANK, S.A. — Procedimiento ordinario [ORD] 1859/2023-9 — Juzgado de Primera Instancia nº 27 de Valencia.**
 
 Current controlled scheduling:
 
 - Diligencia de Ordenación: 6-Nov-2025;
-- trial: **9-Oct-2026 at 12:00**;
+- original hearing: **6-Nov-2025 at 10:00**;
+- current signed relisting: **28-Jan-2027 at 10:00**;
 - status: pending and contested;
 - no merits judgment / adjudicated recovery located.
 
-Later-order N.I.G.: `46250-42-1-2023-0057718`.
-Earlier witness citations in the same ORD carry `46250-42-1-2023-0049579`; preserve both pending court reconciliation.
+The signed 6-Nov-2025 diligence and the earlier witness citations reviewed in the same ORD carry N.I.G. `46250-42-1-2023-0049579`. The different later-order N.I.G. formerly recorded here was a transcription error and is superseded.
 
 ## 4. Pleaded recovery
 

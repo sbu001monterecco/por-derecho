@@ -11,7 +11,7 @@ The decisive contemporaneous source is Javier Sixto's 30 October 2024 report imm
 
 Accordingly:
 
-- **VERIFIED:** CaixaBank requested/proposed Francisco de Borja Rodríguez-Batllori Laffitte as a witness in Aweswell Limited c. CAIXABANK, S.A., ORD 1859/2023-9, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia.
+- **VERIFIED:** CaixaBank requested/proposed Francisco de Borja Rodríguez-Batllori Laffitte as a witness in Aweswell Limited c. CAIXABANK, S.A., ORD 1859/2023-9, Juzgado de Primera Instancia nº 27 de Valencia.
 - **VERIFIED:** Aweswell's lawyers subsequently adhered to CaixaBank's request.
 - **VERIFIED:** later court citations describe Borja as `testigo propuesto por la parte actora y demandada`.
 - **CONTROLLED INTERPRETATION:** that later court phrase records the resulting procedural posture after adhesion; it must not be paraphrased as “both parties asked for the AC”, “both sides independently wanted Borja”, or “Aweswell chose Borja as its own witness”.
@@ -30,7 +30,7 @@ The strategic objective is to obtain a favourable separation/removal determinati
 
 ## Current Valencia scheduling control
 
-The later primary Diligencia de Ordenación dated 6 November 2025 fixes trial for **9 October 2026 at 12:00**. That remains controlling unless a later primary court record changes it.
+The signed Diligencia dated 6 November 2025 records the relisted hearing for **28 January 2027 at 10:00** after the original 6 November 2025 hearing did not proceed. That remains controlling unless a later primary court record changes it. The former October 2026 repository date was a transcription error.
 
 ## Required public propagation
 

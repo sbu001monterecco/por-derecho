@@ -19,16 +19,17 @@ Read together with `archive/CAIXABANK_VALENCIA_CALIFICACION_COUNTEREVIDENCE_16AU
 
 The current controlled proceeding is:
 
-**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0057718, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
+**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0049579, Juzgado de Primera Instancia nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
 
 - Latest controlled scheduling order: Diligencia de Ordenación, 6-Nov-2025.
-- Current controlled trial date: **9 October 2026 at 12:00**.
+- Original hearing: **6 November 2025 at 10:00**; it did not proceed after short-notice notice that the opposing expert's flight had been cancelled.
+- Current controlled relisted hearing: **28 January 2027 at 10:00**.
 - Status: pending and contested; no liability or merits finding located.
-- The former repository wording “January 2027” is superseded by the later primary court order.
+- The former repository October 2026 / 12:00 wording was a transcription error. The signed 6-Nov-2025 diligence controls the January 2027 relisting.
 
 ### N.I.G. metadata control
 
-Witness citations in the same ORD 1859/2023-9 carry **N.I.G. 46250-42-1-2023-0049579**, while the later 6-Nov-2025 scheduling order carries **N.I.G. 46250-42-1-2023-0057718**. Preserve both as source metadata. Do not silently reconcile the discrepancy without a court source explaining it.
+The signed 6-Nov-2025 diligence and the earlier witness citations reviewed for ORD 1859/2023-9 carry **N.I.G. 46250-42-1-2023-0049579**. The former repository reference to a different N.I.G. was a transcription error and is superseded.
 
 ## Pending recovery / pleaded quantum
 
@@ -186,7 +187,7 @@ Do not infer that:
 
 1. Certified/public-safe claim, defence, orders and complete expert reports in ORD 1859/2023-9.
 2. Native AC authorisation underlying CaixaBank's expert-report characterisation of €573,591.53.
-3. Any fresh 2026 witness citations / admitted-evidence order for the 9-Oct-2026 trial.
+3. Any order, admitted-evidence record or fresh witness citation issued after the signed 6-Nov-2025 diligence and affecting the 28-Jan-2027 hearing.
 4. Any contemporaneous lawyer communication, hearing note or pleading expressly explaining the procedural-risk rationale for Aweswell's adhesion to CaixaBank's Borja witness request.
 5. Any new order in Rollo 3304/2025 / 3319/2025 bearing on separation/removal before the Valencia testimony.
 6. Native mortgage and linked-product instruments.
