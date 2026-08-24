@@ -58,17 +58,36 @@
   },
   "sale_peace_revision": {
     "control_date": "2026-08-24",
-    "state": "DRAFT_COMPLETE_VALIDATED",
+    "state": "LIVE_VERIFIED",
     "purpose": "Correct the locales/pools sale figure to EUR 400,000 and publish the connected asset-funds and counsel-transition tracks as Gil/Patricia's false-peace/perverse-incentive investigative thesis.",
     "evidential_boundary": "The 2018 sale, AC receipt/self-payment report, 2020 payment assurance/praise and later EUR 26,750 Parrilla entry are separate documented records. Bribery, collusion, improper payment and a EUR 400,000-to-EUR 26,750 bank/ledger link remain unproved.",
     "branch": "codex/counsel-sale-peace-incentive-20260824",
     "draft_completed_at_utc": "2026-08-24T01:18:50Z",
+    "source_head_sha": "db7f447141a927d387d4faae957375ea7ecb5a92",
+    "pull_request": 887,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/887",
+    "merge_sha": "5da2702d6b9f97e03cf7d72e06a162ad64493d2f",
+    "merged_at_utc": "2026-08-24T01:21:00Z",
     "local_validation": [
       "JSON_PARSE_PASS",
       "PUBLICATION_INTEGRITY_PASS",
       "AUDIENCE_EXPERIENCE_PASS",
       "DIFF_CHECK_PASS"
-    ]
+    ],
+    "checks": {
+      "status": "ALL_NINE_SUCCESS",
+      "run_ids": [32679433723, 32679433574, 32679433667, 32679433613, 32679433616, 32679433625, 32679433623, 32679433619, 32679433566]
+    },
+    "live_verified_at_utc": "2026-08-24T01:22:37Z",
+    "live_verification": {
+      "method": "cache-busted public-edge HTTP readback",
+      "es_status": 200,
+      "es_sha256": "c41371642b78a0518c6630b81425dae95a5b7da52784daf9af8147a755a74b30",
+      "es_markers": ["Dos pistas conectadas", "400.000 €", "paz falsa"],
+      "en_status": 200,
+      "en_sha256": "62198cf3efd5feb5acf73023b2c89186b60d77f2424d8ecf6c489210386e2870",
+      "en_markers": ["Two connected tracks", "€400,000", "false peace"]
+    }
   },
   "expected_routes": {
     "es": [
