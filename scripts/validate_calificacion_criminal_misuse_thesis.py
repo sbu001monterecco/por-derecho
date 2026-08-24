@@ -118,7 +118,7 @@ def main() -> int:
         errors.append("assets/site.js: criminal-misuse loader not registered")
     if "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824" not in css:
         errors.append("assets/styles.css: scoped thesis styles missing")
-    for marker in ["pinFirstRead", "hero.nextElementSibling !== section", "observer.observe(main, { childList: true, subtree: true })", "7000, 11000"]:
+    for marker in ["pinFirstRead", "source-funds-notice-section--featured", "const anchor = sourceFunds || hero", "observer.observe(main, { childList: true })", "7000, 11000"]:
         if marker not in loader:
             errors.append(f"scoped loader missing first-read stability control {marker!r}")
     reader = read("assets/calificacion-reader-experience-20260817.js")
