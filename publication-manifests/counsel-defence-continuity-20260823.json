@@ -91,10 +91,15 @@
   },
   "criminal_proceeds_fee_reconciliation_revision": {
     "control_date": "2026-08-24",
-    "state": "LOCAL_VALIDATED_AWAITING_PR",
+    "state": "LIVE_VERIFIED",
     "purpose": "Create a dedicated bilingual former-counsel page, publish the fee mismatch and ACTÚA/operational-value analysis, and state Gil's criminal-sale/proceeds and Cajasiete positions with explicit adjudication and proof boundaries.",
     "evidential_boundary": "The original proforma, acknowledged receipts, rejected fee rebase, AC payment, AC receipt/account/self-payment report, nonconvalidation and ACTÚA/GESVALT methodology conflict are documented. The exact Parrilla debit, predicate crime, recipient knowledge and alleged Cajasiete EUR 1m financing remain unproved or attributed as specified.",
     "branch": "codex/counsel-criminal-proceeds-actua-20260824",
+    "source_head_sha": "64c7bd9f5385dadfdb0b6d4e7c7fcc02f131aeef",
+    "pull_request": 892,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/892",
+    "merge_sha": "48fcf988a96eacca76911bc4b911ce9ed533d7a1",
+    "merged_at_utc": "2026-08-24T01:55:53Z",
     "local_validation": [
       "JSON_PARSE_PASS",
       "XML_PARSE_PASS",
@@ -104,7 +109,25 @@
       "INSOLVENCY_PERIMETER_LANGUAGE_PASS",
       "LOCAL_LINK_RESOLUTION_PASS",
       "DIFF_CHECK_PASS"
-    ]
+    ],
+    "checks": {
+      "status": "ALL_24_SUCCESS",
+      "count": 24
+    },
+    "live_verified_at_utc": "2026-08-24T01:57:49Z",
+    "live_verification": {
+      "method": "cache-busted public-edge HTTP readback",
+      "en_status": 200,
+      "en_sha256": "1039f04efa202d7cf3f22bb15999594dbc1b4798b53e3df61fb5d9906d61d92b",
+      "en_markers": ["Criminal-first hindsight analysis", "€9,000", "Cajasiete verification lane", "downstream application of illicit proceeds", "A1–A8: former lawyers"],
+      "es_status": 200,
+      "es_sha256": "3a07d13044b3616a1684bf33934b98ddf49296cd17363afc899ccefe1ccc1bb6",
+      "es_markers": ["Análisis penal retrospectivo", "9.000 €", "Pista de verificación Cajasiete", "aplicación posterior del producto ilícito", "A1–A8: antiguos abogados"],
+      "actua_en_status": 200,
+      "actua_en_sha256": "535dfb47475e826567b0a77f6612eb13993f125c3a5dcb54bfeda7d4c6fe8eaa",
+      "actua_en_markers": ["wilful and criminal recklessness", "€400,000 disposal", "former-counsel and money-trail analysis"],
+      "stale_source-wholly-unproved_wording_absent": true
+    }
   },
   "expected_routes": {
     "es": [
