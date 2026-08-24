@@ -59,6 +59,7 @@
     "assets/site.js",
     "scripts/validate_repository_preservation.py",
     "scripts/render_ac_community_de_facto_administration.mjs",
+    "scripts/verify_san_telmo_source_stamp_live.py",
     "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md"
   ],
   "required_controls": [
