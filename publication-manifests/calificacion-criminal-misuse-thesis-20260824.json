@@ -9,9 +9,10 @@
   "merge_sha": "8d8111880046ecd5eb4663e063da5cb678b2b7a5",
   "runtime_first_read_fix": {
     "branch": "codex/calificacion-thesis-first-read-20260824",
-    "status": "SOURCE_READY_PENDING_PR",
+    "pull_request": 883,
+    "status": "PR_OPEN",
     "reason": "Live browser inspection found legacy organisers moving the sitewide thesis into collapsed/later content on the homepage and behind unrelated modules on the canonical page.",
-    "required_result": "Exactly one thesis block, kept as the direct sibling after the route hero on canonical, homepage, institutional and compact target routes."
+    "required_result": "Exactly one thesis block in the first-read sequence: directly after the route hero, except immediately after the existing source-of-funds evidence panel where that panel owns the first post-hero slot."
   },
   "expected_routes": {
     "es": [
