@@ -1,6 +1,13 @@
 # CHATGPT START HERE — Project Sun Rock / Por Derecho
 
-> **Current-state and preservation gate (24 August 2026):** first read `AGENTS.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json`, then read `ops/CURRENT_STATE.json` before the historical handovers below. For any five-private-actor, Insolvency Administrator, Magistrate-Judge, homepage, key-direct-route or reader-order work, also read `archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md` and `archive/FIVE_ACTOR_VISIBILITY_REGRESSION_AND_REPAIR_24AUG2026.md`. For Calificación / RPL 2523/2025 work, then read `archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md` and `assets/data/calificacion-rpl2523-evidence-map-v1.json`. Preserve the rule “three appeal instruments for four appellant interests”, the RPL record-only firewall and `not located ≠ nonexistent`.
+> **Current-state and preservation gate (24 August 2026):** fetch `origin/main`, then first read `AGENTS.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json`. Read `ops/CURRENT_STATE.json` as a routing snapshot and compare its recorded baseline SHA with the fetched main SHA; current `origin/main` and the verified live host override a stale operational snapshot. Before the historical handovers below, use the snapshot only for routing. For any five-private-actor, Insolvency Administrator, Magistrate-Judge, homepage, key-direct-route or reader-order work, also read `archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md` and `archive/FIVE_ACTOR_VISIBILITY_REGRESSION_AND_REPAIR_24AUG2026.md`. For Calificación / RPL 2523/2025 work, then read `archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md` and `assets/data/calificacion-rpl2523-evidence-map-v1.json`. Preserve the rule “three appeal instruments for four appellant interests”, the RPL record-only firewall and `not located ≠ nonexistent`.
+
+> **Agent compatibility gate:** read root `AGENTS.md` before repository work and
+> apply `.github/governance/AGENT_PUBLISHING_COMPATIBILITY.md` to governance or
+> enforcement changes. These controls preserve authorised
+> branch/PR/merge/Pages maintenance, keep governance-only changes outside the
+> existing reader-facing/runtime surface, and prevent backup or legacy-cleanup
+> warnings from freezing ordinary safe publication.
 
 This is the root operating entry point for any ChatGPT thread maintaining this repository, Depository or live site.
 
@@ -83,7 +90,7 @@ For high-value evidence, apply a separate custody question as well: **if a conne
 After every merged public-site change, verify the merge commit is on `main`, inspect the latest GitHub Pages build, confirm `built` with no error, test critical routes where possible, then update `archive/DEPLOYMENT_LOG.md`.
 
 ## Security boundary
-Do not change repository visibility, collaborators, branch protection, credentials, tokens, deploy keys or destructive account controls without explicit user approval. Safe documentation, audit, backup planning and reversible branch/PR changes may be performed autonomously.
+Do not change repository visibility, collaborators, branch protection, credentials, tokens, deploy keys or destructive account controls without explicit user approval. Safe documentation, audit, backup planning and reversible local-branch changes may be performed autonomously. Pushes, PR creation, merges and deployments follow `AGENTS.md` PD-GOV-003 and its authority boundaries.
 
 ## Current bootstrap prompt
 
