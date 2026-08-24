@@ -88,6 +88,79 @@ Existing required checks must not be bypassed silently. If an unrelated check is
 flaky or stale, isolate and report it; repair the enforcement design separately
 rather than expanding the publication diff.
 
+### Emergency main-ruleset recovery
+
+The ordinary recovery path remains a small corrective or revert PR from current
+`main`. Never force-push or delete `main`. Where GitHub supports it, keep
+repository-owner/administrator bypass limited to pull requests so an emergency
+does not create a routine direct-push path.
+
+Use that bypass only for a documented P0/P1 incident or a confirmed
+ruleset/required-check malfunction that prevents an urgent, otherwise-valid PR
+from completing. Before use, record the current `main` SHA, the blocked
+rule/check, the reason and the smallest intended change in the PR or incident
+record; include no private material. Keep the emergency PR free of unrelated
+changes and run the Publication integrity gate plus relevant path-specific
+validators locally.
+
+After merge, confirm the ruleset is Active, obtain a normal passing required
+check, verify the exact merge SHA and affected public routes, and close the
+incident with evidence. If the configuration itself interferes with ordinary
+authorised maintenance, restore the captured pre-change ruleset state and test
+the corrected configuration through a PR.
+
+This is an authenticated repository-owner/administrator contingency, not
+standing authority for an agent or future thread. It changes neither repository
+visibility, collaborators, secrets nor Pages configuration, and it does not
+alter the normal express-authority branch → PR → merge → deploy path.
+
+### Main-ruleset activation continuity — 24 August 2026
+
+This is an implementation-status record, not permission for a future thread to
+change account settings. Re-query live GitHub state, current `main` and current
+user authority before acting; never infer enforcement from this document.
+
+The last verified pre-activation state was:
+
+- `main` had advanced to `4b1c0d3f9e2ca90b0b215cfe5d9665c90b7c7c9c`;
+- active ruleset `Protect main` (ruleset `20860148`) targeted the default branch
+  with no exclusions;
+- it restricted deletion, required a PR with zero approvals and all three merge
+  methods allowed, and blocked non-fast-forward/force-push updates;
+- it did not require a status check or conversation resolution; classic branch
+  protection reported required-check enforcement off;
+- the canonical public baseline fingerprint was
+  `8c40d162cc0fac946bffcdce2a97625a5b633c46339f00193e1ff096ead87db8`;
+  and
+- the proven check selector was `publication-integrity`, reported by GitHub
+  Actions (app/integration `15368`), including a successful run on governance PR
+  `#928`.
+
+Ruleset activation was **not completed or verified** in the originating thread
+because the authenticated GitHub settings session was unavailable. Do not claim
+the required check is enforced until the live ruleset and a test PR prove it.
+
+To continue safely in a future authenticated thread:
+
+1. obtain current user authority for the account-setting change, fetch current
+   `main`, inspect the live ruleset and capture its current bypass list;
+2. keep `Protect main` Active and targeted only at the default branch; retain
+   PR-only changes with zero human approvals, all existing merge methods,
+   deletion protection and force-push protection;
+3. add required check `publication-integrity`, bind it to GitHub Actions, require
+   branches to be current before merge, require conversation resolution and,
+   where supported, limit repository-administrator emergency bypass to PRs;
+4. change no repository visibility, collaborators, secrets or Pages setting;
+5. test through a fresh or updated PR: observe the merge blocked while the
+   required check is pending, permitted after it passes, and correctly blocked
+   while the branch is behind; never test by force-pushing or deleting `main`;
+6. if high concurrency produces a demonstrated update/rebuild livelock, relax
+   only the strict-current checkbox first; retain the required PR/check and the
+   deletion/force-push protections; and
+7. if configuration otherwise interferes, restore the captured pre-change
+   state, re-test through a PR, and record the live ruleset, PR, check run/job,
+   exact merge SHA and result before describing the control as enforced.
+
 ## Backup and deletion-safety separation
 
 After a merge, queue a credential-stripped full mirror/bundle and rendered-site
