@@ -41,7 +41,7 @@ Silence, refusal or absence of a public answer is recorded only as **unanswered*
 | Professional indemnity | preservation and notification under applicable cover | protects the availability of an effective remedy | publishing confidential policy or negotiation content |
 | SRA | only an identified regulated person/entity, conduct and cross-border rule | contingent supplementary review | presenting it as the principal Spain civil route or claiming filing/jurisdiction without proof |
 
-The civil and professional-liability strategy is Spain-led. The SRA is secondary and contingent unless a specific regulated person, relevant conduct and applicable jurisdictional rule are established.
+The civil and professional-liability strategy is Spain-led. No UK legal action is being pursued and no UK firm is currently instructed for such proceedings. The SRA is a separate, non-litigation, secondary and contingent question unless a specific regulated person, relevant conduct and applicable jurisdictional rule are established.
 
 ## 4. Legal and publication controls
 

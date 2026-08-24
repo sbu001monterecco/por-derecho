@@ -1,6 +1,7 @@
 # Project Sun Rock / Por Derecho — Media outreach continuation and follow-up state
 
 **Control date:** 23 August 2026  
+**Last status correction:** 24 August 2026
 **Status:** controlling cross-thread continuation pointer for current media campaign
 
 ## Superseding Gmail reconciliation — 24 August 2026
@@ -8,6 +9,38 @@
 Campaign execution state is now controlled by `MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`. A fresh read-only audit located 57 sent copies across 55 threads. Accordingly, later sections of this 23-August snapshot that call Atlántico Hoy, Ramón Betancor, Sandra Tobar, Javi Rodríguez, Janire Alfaya, Daniel Toledo Quer or other reconciled lanes `PREPARED / NOT SENT` are historical and must not be executed.
 
 No substantive editorial response was located. Europa Press supplied an acknowledgement only; four route/delivery failures retain separate controlled classifications. CR-081 and CR-082 prepare, but do not authorise, corrections for Iván Alhambra and Nacho Calle. No outbound operation is authorised.
+
+## 24 August 2026 · UK-route correction and Cuatrecasas media lane
+
+The controlling current instruction supersedes any earlier outreach suggesting that a Sun Rock / Aweswell UK High Court claim was imminent, being finalised or remained a current option:
+
+- no UK legal action is being pursued;
+- no UK firm is currently instructed for such proceedings;
+- the civil and professional-liability work is Spain-led;
+- any SRA question is separate, non-litigation, contingent and not stated as filed; and
+- the Edgeworth matter is an independent partial-overlap comparator only—not a joint case, precedent, pattern finding or prospective Sun Rock / Aweswell UK claim.
+
+Any renewed approach to **The Lawyer** must lead with that correction because the May 2025 thread used now-stale imminent-UK-filing language. Do not reuse or silently carry forward that framing.
+
+### Recipient sequencing from the read-only Gmail and public-role audit
+
+**Best untouched legal/business lanes:** Iberian Lawyer; Law Society Gazette; Global Restructuring Review; Legal Business; and City A.M.
+
+**Warm but history-sensitive:** The Lawyer, subject to the correction above; and Debtwire, whose prior responsive dialogue concerned a separate Intrum/Haya/FTI/NPL topic and is not evidence of interest in the Cuatrecasas matter.
+
+**Recent-contact hold for a near-duplicate:** Cinco Días, Diario de Avisos and Canarias Ahora were contacted on 23 August 2026 on related Sun Park/MYND/concurso material and no substantive reply has yet been located. Do not send a near-duplicate Cuatrecasas package immediately. A later approach requires a genuinely new legal-professional angle and a current history scan.
+
+**Older contact requiring a fresh, narrower package:** Confilegal received a broad January 2025 approach without a located reply. Any new approach must be source-separated, Cuatrecasas-specific and materially narrower.
+
+No target identification, priority, repository entry or prior relationship authorises an email. No draft, send, correction, follow-up or reply is authorised by this section.
+
+### Controlled pitch proposition
+
+> This does not displace allegations concerning the primary adverse actors. It separately asks whether contemporaneous mandate, billing, correspondence and court records support a causal contribution by instructed advisers through acts, omissions, delay, silence or failure to escalate.
+
+For every UK recipient add:
+
+> No UK legal action is being pursued. The separate UK High Court matter is cited only as an independent partial-overlap comparator—not as a joint case, precedent or prospective claim.
 
 ## Mandatory resume sequence
 

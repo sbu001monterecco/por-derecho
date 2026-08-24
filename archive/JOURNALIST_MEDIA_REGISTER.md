@@ -1,6 +1,6 @@
 # Project Sun Rock / Por Derecho — Journalist and Media Register
 
-**Control date:** 23 August 2026  
+**Control date:** 24 August 2026
 **Status:** repository working register  
 **Purpose:** maintain names of journalists, editors and media professionals together with their media organisations for future recipient research, personalised outreach and follow-up.
 
@@ -60,6 +60,17 @@ Do not publish private email addresses, personal telephone numbers, Gmail messag
 | **Frederik Obermaier** | **Paper Trail Media** | Cross-border investigative/public-interest and whistleblower-led investigations | Germany / German-English | 22-Aug out-of-office response; wait appropriate working time before new approach. |
 | **Jochen Eversmeier** | **fvw / TravelTalk** | German travel-industry relevance for FTI/Meeting Point/Club Sei | Germany / German-English | 22-Aug out-of-office through 24-Aug; wait before re-contact. |
 | **Tobias Fuchs** | **BILD** | German national-media relevance | Germany / German | Use only where concise fit exists; was included in 22-Aug wider German correction package. |
+| **Carlos Berbell** | **Confilegal** | Director; Spanish courts, professional duties, insolvency and judicial-document reporting | Spain / Spanish | Strong legal/judicial lane. Keep filed facts, witness-supported material, party allegations and inference separate; provide a fair response route. |
+| **José Miguel Barjola** | **Cinco Días Legal** | Legal and insolvency reporting | Spain / Spanish | Strong fit for concursal/remate chronology, creditor classification and professional-duty questions. Prior outlet contact does not constitute a person-specific current package. |
+| **Patricia Esteban** | **Cinco Días Legal** | Legal-affairs reporting and editorial relevance | Spain / Spanish | Alternative legal lane; select one tailored recipient rather than duplicating the same pitch across the desk. |
+| **Christian Smith** | **The Lawyer** | Litigation Editor; commercial disputes and law-firm risk | UK / English | Strong cross-border legal-business lane. Any renewed approach must state that no Sun Rock/Aweswell UK legal action is being pursued and Edgeworth is comparator-only. |
+| **John Hyde** | **Law Society Gazette** | Legal-affairs reporter; regulation, professional conduct and litigation | UK / English | Fit for a bounded cross-border client-care or SRA-regulatory question. Do not imply regulator jurisdiction or liability before determination. |
+| **Michael Cross** | **Law Society Gazette** | Legal-affairs reporter; courts, regulation and legal profession | UK / English | Alternative Gazette lane; use one recipient per outlet unless the outlet requests wider routing. |
+| **Kyriaki Karadelis** | **Global Restructuring Review** | Editor; global insolvency and restructuring | Europe / English | Strong fit for insolvency/remate governance, creditor recovery and professional-adviser causation supported by primary procedural records. |
+| **Elias Lambrianos** | **Debtwire EMEA** | Managing Editor, EMEA; distressed debt, restructuring and credit | Europe / English | Strong fit only when debt ownership, assignment, valuation and asset-control economics are document-ready. Prior Debtwire dialogue concerned a different NPL topic and is not endorsement of this matter. |
+| **Georgina Stanley** | **Legal Business** | Editorial Director; law-firm management and legal-market risk | UK / English | Fit for mandate governance, complaint handling, billing, client-risk controls and professional-services accountability. |
+| **Simon Hunt** | **City A.M.** | City Editor; corporate, finance and professional-services news | UK / English | Fit for City-facing professional-services risk and documented asset/recovery economics. State expressly that this is not a UK litigation campaign. |
+| **Patrick Whyte** | **Hospitality Investor** | Editor-in-Chief; hospitality investment and transactions | Europe / English | Fit for hotel-asset control, assignment transparency and investor due diligence. Lead with verifiable asset facts, not negligence conclusions. |
 
 ## Maintenance instructions
 

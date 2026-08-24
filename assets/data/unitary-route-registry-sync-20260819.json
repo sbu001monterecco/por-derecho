@@ -55,6 +55,60 @@
   },
   {
     "lang": "en",
+    "path": "en/cuatrecasas-dp748-civil-action/",
+    "title": "Cuatrecasas — DP 748, La Laguna and civil action",
+    "type": "case",
+    "summary": "Separate position on mandate and billing, alleged enabling effect, enforcement, assignee hypothesis, civil route, conduct and SRA.",
+    "tags": ["Cuatrecasas", "DP 748/2026", "ETJ 163/2020", "civil action"],
+    "aliases": ["La Laguna", "remate assignee", "SRA"]
+  },
+  {
+    "lang": "es",
+    "path": "es/cuatrecasas-dp748-accion-civil/",
+    "title": "Cuatrecasas — DP 748, La Laguna y acción civil",
+    "type": "case",
+    "summary": "Posición separada sobre mandato y facturación, posible efecto facilitador, ejecución, hipótesis del cesionario, vía civil, deontología y SRA.",
+    "tags": ["Cuatrecasas", "DP 748/2026", "ETJ 163/2020", "acción civil"],
+    "aliases": ["La Laguna", "cesionario remate", "SRA"]
+  },
+  {
+    "lang": "en",
+    "path": "en/cuatrecasas-critical-gaps/",
+    "title": "Cuatrecasas — critical evidence gaps",
+    "type": "evidence",
+    "summary": "Primary-record closure gates for mandate, billing, protection, handover, ETJ, assignee identity and institutional response.",
+    "tags": ["Cuatrecasas", "evidence gaps", "mandate", "ETJ 163/2020"],
+    "aliases": ["critical gaps", "DMS", "handover", "assignee identity"]
+  },
+  {
+    "lang": "es",
+    "path": "es/cuatrecasas-brechas-criticas/",
+    "title": "Cuatrecasas — brechas probatorias críticas",
+    "type": "evidence",
+    "summary": "Controles de cierre por fuente primaria para mandato, facturación, protección, entrega, ETJ, identidad del cesionario y respuesta institucional.",
+    "tags": ["Cuatrecasas", "brechas probatorias", "mandato", "ETJ 163/2020"],
+    "aliases": ["brechas críticas", "DMS", "handover", "identidad cesionario"]
+  },
+  {
+    "lang": "en",
+    "path": "en/cuatrecasas-edgeworth-comparator/",
+    "title": "Cuatrecasas — Edgeworth / Sun Rock professional-negligence comparator",
+    "type": "case",
+    "summary": "Controlled comparator: Edgeworth allegation and denial, procedural judgment without merits and independent proof; Sun Rock/Aweswell is not pursuing UK legal proceedings.",
+    "tags": ["Cuatrecasas", "Edgeworth", "professional negligence", "comparator"],
+    "aliases": ["BL-2024-000237", "[2025] EWHC 1014 (Ch)", "partial overlap", "2019 decisions"]
+  },
+  {
+    "lang": "es",
+    "path": "es/comparador-cuatrecasas-edgeworth/",
+    "title": "Cuatrecasas — comparador de negligencia profesional Edgeworth / Sun Rock",
+    "type": "case",
+    "summary": "Comparador controlado: alegación y negación Edgeworth, resolución procesal sin fondo y prueba independiente; Sun Rock/Aweswell no persigue una acción judicial británica.",
+    "tags": ["Cuatrecasas", "Edgeworth", "negligencia profesional", "comparador"],
+    "aliases": ["BL-2024-000237", "[2025] EWHC 1014 (Ch)", "solapamiento parcial", "sentencias 2019"]
+  },
+  {
+    "lang": "en",
     "path": "en/community-instrumentalisation/two-competing-governance-records/",
     "title": "Two Competing Governance Records — Community / CEXP 2008–2022",
     "type": "evidence",

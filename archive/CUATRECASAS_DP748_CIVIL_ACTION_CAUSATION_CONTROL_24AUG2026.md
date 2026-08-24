@@ -29,7 +29,9 @@ The controlling counterfactual is a **real and substantial opportunity**, not gu
 | DP 748/2026 | finite procedural-fraud hypothesis in Cambiario/ETJ | not a whole-history professional-negligence case |
 | Civil route | mandate, billing, delivery, breach, restitution/damages, causation | in preparation and under legal review; no filing asserted |
 | ICAM/CCACM | professional-conduct treatment | does not decide crime or damages |
-| SRA | secondary, contingent jurisdiction over an identified regulated person/entity and conduct | Spain remains the principal civil/deontological route; no notification stated as filed and organisation-level status is not overstated |
+| SRA | separate, non-litigation and contingent jurisdiction over an identified regulated person/entity and conduct | no UK court action is being pursued; Spain remains the principal civil/deontological route; no notification stated as filed and organisation-level status is not overstated |
+
+The formerly explored UK legal-action route is closed. Sun Rock / Aweswell is not pursuing UK proceedings and no UK firm is currently instructed for such proceedings. This status does not convert, decide or activate the separate SRA regulatory question.
 
 The controlled current-team correspondence and filed-source index record: complaint on 4 February; expansion on 16 March; provisional dismissal on 24 March; reconsideration/subsidiary appeal; 20 May admission/transfer; an 8 June prosecution report seeking partial allowance because the dismissal's specific reasoning was insufficient while requesting clearer ordering and delimitation; joinder on 15 June; and a synthesis filed on 26 June. The 21 August 2026 Fiscalía Decree is the public procedural source for its recital that the dismissal was ratified on 16 July. The signed 16 July decision and certified complete DP 748 docket remain evidence gaps.
 
@@ -79,3 +81,9 @@ The public routes must not identify current lawyers or procedural representative
 The companion control `archive/CUATRECASAS_MAXIMUM_PERMISSIBLE_INSTITUTIONAL_ACCOUNTABILITY_24AUG2026.md` governs public pressure. It converts the position into document-answerable questions concerning mandate/client mapping, January–June 2018 decisions, DD versions, October 2019 implementation, 2020 handover, the invoice–pagaré–debtor bridge, later recovery decisions and preservation/insurance governance.
 
 Silence or non-response may be recorded only as unanswered; it is not proof of breach, intent, coordination or crime. Public pressure must remain institutional, proportionate and non-personal, preserve the strongest defence, and never expose current-lawyer identities, privileged strategy or private negotiation positions.
+
+## 9. Edgeworth comparator firewall
+
+The companion control `archive/CUATRECASAS_EDGEWORTH_PARTIAL_OVERLAP_CONTROL_24AUG2026.md` governs any reference to `BL-2024-000237` / `[2025] EWHC 1014 (Ch)`. The separate UK matter may be used only to compare professional-liability issue families, the possible relevance of the early-2019 Spanish Supreme Court decision family, lost-opportunity analysis and procedural communication discipline.
+
+It is not evidence of the Sun Rock allegations, a merits precedent, a pattern or propensity finding, a bridge between LLP/S.L.P./other entities, or proof of formal claimant-to-claimant cooperation. Private exploratory comparison remains outside the public source record; the public-safe status is that no executed inter-claimant cooperation, common-interest, funding or witness agreement is established by the located corpus.
