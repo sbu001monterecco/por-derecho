@@ -120,7 +120,7 @@ def main() -> int:
         errors.append("assets/site.js: criminal-misuse loader not registered")
     if "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824" not in css:
         errors.append("assets/styles.css: scoped thesis styles missing")
-    for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const anchor = sourceFunds || hero", "observer.observe(main, { childList: true })", "22000, 30000"]:
+    for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const anchor = sourceFunds || hero", "observer.observe(main, { childList: true })", "const keepWatching = match(featured)", "22000, 30000"]:
         if marker not in loader:
             errors.append(f"scoped loader missing first-read stability control {marker!r}")
     for marker in ["es-institutional", "en-appeal", "es-acosta", "es-guided-calificacion", "sourceFundsCount", "appealFirewall", "20260824c"]:
@@ -131,6 +131,9 @@ def main() -> int:
     reader = read("assets/calificacion-reader-experience-20260817.js")
     if "criminalMisuse = block('[data-calificacion-misuse-thesis]')" not in reader or "gateway,\n        criminalMisuse," not in reader:
         errors.append("Calificación reader order does not keep the thesis in the first-read sequence")
+    audience = read("assets/audience-experience-order-20260823.js")
+    if "const criminalMisuse = main.querySelector('[data-calificacion-misuse-thesis]')" not in audience or "[criminalMisuse, priority, prosecution" not in audience:
+        errors.append("Homepage audience organiser does not protect the thesis in the first-read sequence")
 
     sitemap = read("sitemap-calificacion.xml")
     for route in ["/es/tesis-uso-criminal-procedimiento-calificacion/", "/en/insolvency-classification-criminal-misuse-thesis/"]:
