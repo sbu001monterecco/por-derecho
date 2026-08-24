@@ -1,5 +1,4 @@
 import fs from 'node:fs/promises';
-import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
 
@@ -8,19 +7,19 @@ const executablePath = process.env.PSR_BROWSER_PATH || undefined;
 const outputDir = process.env.PSR_CALIFICACION_THESIS_ARTIFACT_DIR || 'artifacts/calificacion-criminal-misuse-thesis';
 
 const routes = [
-  { key: 'es-canonical', route: '/es/tesis-uso-criminal-procedimiento-calificacion/', variant: 'canonical', anchor: 'hero', pillars: 5, screenshot: true },
-  { key: 'en-canonical', route: '/en/insolvency-classification-criminal-misuse-thesis/', variant: 'canonical', anchor: 'hero', pillars: 5, screenshot: true },
-  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'hero', screenshot: true },
-  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'hero', screenshot: true },
-  { key: 'es-institutional', route: '/es/concurso-36-2012-responsabilidad-institucional/', variant: 'featured', anchor: 'hero', screenshot: true },
-  { key: 'en-institutional', route: '/en/insolvency-36-2012-institutional-accountability/', variant: 'featured', anchor: 'hero', screenshot: true },
-  { key: 'es-appeal', route: '/es/concurso-36-2012-ap-seccion-4/', variant: 'appeal', anchor: 'hero', appeal: true, screenshot: true },
-  { key: 'en-appeal', route: '/en/insolvency-36-2012-ap-section-4/', variant: 'appeal', anchor: 'hero', appeal: true, screenshot: true },
-  { key: 'es-acosta', route: '/es/acosta-matos-perimetro/', variant: 'compact', anchor: 'source-funds', acosta: true, screenshot: true },
-  { key: 'en-acosta', route: '/en/acosta-matos-perimeter/', variant: 'compact', anchor: 'source-funds', acosta: true, screenshot: true },
+  { key: 'es-canonical', route: '/es/tesis-uso-criminal-procedimiento-calificacion/', variant: 'canonical', anchor: 'hero', pillars: 5 },
+  { key: 'en-canonical', route: '/en/insolvency-classification-criminal-misuse-thesis/', variant: 'canonical', anchor: 'hero', pillars: 5 },
+  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'hero' },
+  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'hero' },
+  { key: 'es-institutional', route: '/es/concurso-36-2012-responsabilidad-institucional/', variant: 'featured', anchor: 'hero' },
+  { key: 'en-institutional', route: '/en/insolvency-36-2012-institutional-accountability/', variant: 'featured', anchor: 'hero' },
+  { key: 'es-appeal', route: '/es/concurso-36-2012-ap-seccion-4/', variant: 'appeal', anchor: 'hero', appeal: true },
+  { key: 'en-appeal', route: '/en/insolvency-36-2012-ap-section-4/', variant: 'appeal', anchor: 'hero', appeal: true },
+  { key: 'es-acosta', route: '/es/acosta-matos-perimetro/', variant: 'compact', anchor: 'source-funds', acosta: true },
+  { key: 'en-acosta', route: '/en/acosta-matos-perimeter/', variant: 'compact', anchor: 'source-funds', acosta: true },
   { key: 'es-ac', route: '/es/concurso-36-2012-administrador-concursal/', variant: 'compact', anchor: 'hero' },
   { key: 'en-ac', route: '/en/insolvency-36-2012-insolvency-administrator/', variant: 'compact', anchor: 'hero' },
-  { key: 'es-independence', route: '/es/nota-independencia-judicial-estado-procesal-reserva-acciones/', variant: 'independence-note', anchor: 'hero', screenshot: true },
+  { key: 'es-independence', route: '/es/nota-independencia-judicial-estado-procesal-reserva-acciones/', variant: 'independence-note', anchor: 'hero' },
   { key: 'es-guided-calificacion', route: '/es/calificacion-concurso-36-2012-vidas-paralelas/', variant: 'featured', anchor: 'guided', pillars: 5 },
   { key: 'en-guided-calificacion', route: '/en/insolvency-classification-parallel-lives/', variant: 'featured', anchor: 'guided', pillars: 5 },
 ];
@@ -92,7 +91,6 @@ try {
 
       const passed = failures.length === 0;
       results.push({ key: item.key, url, passed, failures, pageErrors, ...metrics });
-      if (item.screenshot) await page.screenshot({ path: path.join(outputDir, `${item.key}.png`), fullPage: false });
       await page.close();
     }
   }
