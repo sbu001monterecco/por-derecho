@@ -32,6 +32,8 @@ The public identity is **Laura Patricia Acosta Matos**. Do not use “Laura Isab
 - Label documented fact, attributed allegation, inference, official outcome, contrary record and unresolved proof distinctly.
 - Preserve direct allegations strongly and visibly where the controlling source supports them, but never describe guilt or criminal liability as adjudicated when it is not.
 - Keep distinct legal persons, capacities, titles, operators, creditors, property owners, insolvency estates, professional firms, private actors, the Insolvency Administrator and the Magistrate-Judge distinct.
+- Resolve legal-person acronyms through `ops/CANONICAL_ENTITY_NAMES.json` before expanding them. The controlled first reference for LPB is **Luchy Playa Blanca, S.L.U. (LPB)**. Never translate, paraphrase or invent a legal entity's name from an acronym.
+- A different spelling or entity-form suffix may be retained only as an expressly labelled source literal. Do not silently replace historical wording, and do not promote a source literal into the canonical narrative name.
 - Do not publish raw private email bodies, message IDs, unnecessary personal identifiers, privileged advice, unredacted protected records, private tax/fee ledgers, unsent correspondence or live legal strategy.
 
 ## 5. Required change process

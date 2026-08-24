@@ -19,6 +19,7 @@ TRANSCRIPT = ROOT / "evidence/garrigues-la-laguna/SENTENCIA_41_2014_PUBLIC_TRANS
 PUBLIC_COVERAGE = ROOT / "evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md"
 REGISTER = ROOT / "archive/GARRIGUES_LA_LAGUNA_344_2013_EVIDENCE_AND_COMMUNICATIONS_REGISTER_24AUG2026.md"
 MANIFEST = ROOT / "publication-manifests/garrigues-la-laguna-20260824.json"
+CANONICAL_NAMES = ROOT / "ops/CANONICAL_ENTITY_NAMES.json"
 
 
 def fail(message: str) -> None:
@@ -26,13 +27,36 @@ def fail(message: str) -> None:
     raise SystemExit(1)
 
 
-for path in (DATA, ES, EN, TRANSCRIPT, PUBLIC_COVERAGE, REGISTER, MANIFEST):
+for path in (DATA, ES, EN, TRANSCRIPT, PUBLIC_COVERAGE, REGISTER, MANIFEST, CANONICAL_NAMES):
     if not path.is_file():
         fail(f"missing required file: {path.relative_to(ROOT)}")
 
 data = json.loads(DATA.read_text(encoding="utf-8"))
 manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+canonical_names = json.loads(CANONICAL_NAMES.read_text(encoding="utf-8"))
 texts = {path: path.read_text(encoding="utf-8") for path in (ES, EN, TRANSCRIPT, PUBLIC_COVERAGE, REGISTER)}
+
+canonical_records = {record["id"]: record for record in canonical_names["records"]}
+lpb = data["canonical_names"]["lpb"]
+if lpb != {
+    "repository_id": "E003",
+    "canonical_name": "Luchy Playa Blanca, S.L.U.",
+    "first_reference": "Luchy Playa Blanca, S.L.U. (LPB)",
+    "acronym": "LPB",
+    "cif": "B35998582",
+    "context": "Concurso 36/2012 and repository narrative concerning that proceeding",
+}:
+    fail("Garrigues data does not contain the exact controlled LPB identity")
+if canonical_records["E003"]["canonical_name"] != lpb["canonical_name"]:
+    fail("Garrigues LPB name does not match the canonical-name register")
+if data["canonical_names"]["juan_tomas_parrilla"]["canonical_name"] != "Juan Tomás Parrilla Suárez":
+    fail("Juan Tomás Parrilla Suárez canonical name changed")
+if not data["engagement_2012"].get("client_definition_is_source_literal"):
+    fail("engagement client definition is not marked as a source literal")
+if not data["engagement_2012"].get("billing_entity_is_source_literal"):
+    fail("engagement billing entity is not marked as a source literal")
+if data["engagement_2012"].get("canonical_lpb_name") != "Luchy Playa Blanca, S.L.U.":
+    fail("engagement canonical LPB name changed")
 
 if data["proceeding"]["claim_eur"] != 63441.67:
     fail("claim total changed")
@@ -81,6 +105,8 @@ if payment_by_track.get("CLIENT_TO_PARRILLA_INITIAL", 0) + payment_by_track.get(
     fail("Parrilla defence fee legs do not total EUR 2,500")
 
 required_es = [
+    "Luchy Playa Blanca, S.L.U. (LPB)",
+    "CIF B35998582",
     "63.441,67 €",
     "desestimó íntegramente",
     "HAVAVIDA pagó 9.450 € a Garrigues",
@@ -94,6 +120,8 @@ required_es = [
     "no es correcto afirmar que todos los escritos y resoluciones de Parrilla estén ya publicados",
 ]
 required_en = [
+    "Luchy Playa Blanca, S.L.U. (LPB)",
+    "CIF B35998582",
     "€63,441.67",
     "dismissed the claim in full",
     "HAVAVIDA paid €9,450 to Garrigues",
@@ -169,6 +197,7 @@ for marker, path in (
     ("CR-088", ROOT / "archive/CORRECTION_REGISTER.md"),
     ("CR-089", ROOT / "archive/CORRECTION_REGISTER.md"),
     ("CR-090", ROOT / "archive/CORRECTION_REGISTER.md"),
+    ("CR-091", ROOT / "archive/CORRECTION_REGISTER.md"),
 ):
     if marker not in path.read_text(encoding="utf-8"):
         fail(f"{marker} missing from {path.name}")

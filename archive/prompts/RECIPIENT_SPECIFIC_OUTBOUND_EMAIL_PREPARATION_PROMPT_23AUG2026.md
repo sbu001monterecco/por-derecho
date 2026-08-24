@@ -22,6 +22,7 @@ Read:
 - `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`;
 - `archive/CORRECTION_REGISTER.md`;
 - `archive/MISSING_EVIDENCE_REGISTER.md`;
+- `ops/CANONICAL_ENTITY_NAMES.json` whenever a controlled person, company or acronym is named;
 - `archive/JOURNALIST_MEDIA_REGISTER.md` when media is in scope; and
 - every specialist retrieval/source gate relevant to the recipient and propositions in scope.
 
@@ -229,6 +230,7 @@ Ask:
 - Does it imply institutional knowledge equals personal knowledge?
 - Does it imply later benefit proves causation?
 - Does it confuse LPB, hotel exploitation, CEXP/Community, Matkator/third-party property or another legal person?
+- Has every acronym been resolved through the canonical-name register, every personal name checked, and every legal name left untranslated? For LPB, does the first reference read `Luchy Playa Blanca, S.L.U. (LPB)` rather than an invented expansion?
 - Does it overstate FEDER/RIC/public-funding conclusions?
 - Does it overstate `alertador` status or representative capacity?
 - Could the subject/body look like indiscriminate bulk campaigning?

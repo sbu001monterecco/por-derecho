@@ -30,6 +30,8 @@ Before preparing a material outbound communication, read and apply:
 9. `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`; and
 10. **always** `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md` before any send, resend, forward or self-email.
 
+For every person or legal entity named in an outbound package, also apply `ops/CANONICAL_ENTITY_NAMES.json` where a controlled record exists. Resolve an acronym before expanding it; never translate or invent a legal name. The controlled first reference is **Luchy Playa Blanca, S.L.U. (LPB)** and the controlled personal first reference is **Juan Tomás Parrilla Suárez**. Historical variants may be retained only as clearly labelled source literals.
+
 If this protocol conflicts with `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`, the latter controls.
 
 Repository publication authority, evidence-preservation authority, website-update authority, permission to prepare a draft, or an earlier approval of a different email is **not** authority to send the current package.
@@ -54,6 +56,8 @@ At minimum determine:
 - which language, attachments and links are justified for this particular recipient.
 
 Search for evidence adverse to the Project Sun Rock position as deliberately as supporting evidence.
+
+Run a canonical-name check before presenting a draft: verify every person's spelling and every legal entity's exact form against the machine register and the best available official source. If the exact legal name remains unresolved, say so instead of guessing.
 
 For every proposed email, the Gmail portion of this scan is governed by `archive/PRE_SEND_GMAIL_PERSON_OUTLET_HISTORY_GATE_23AUG2026.md`. Search the entire accessible corpus independently for the named person and the outlet/employer/organisation; include names, variants, addresses, domains, relevant colleagues/fallbacks, all header roles, quoted/forwarded content, replies, bounces, redirects and other-channel notifications. Exhaust every continuation token and read relevant threads. Until both halves are complete and the collision is classified:
 

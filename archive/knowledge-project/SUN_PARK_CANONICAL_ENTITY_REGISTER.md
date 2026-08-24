@@ -1,6 +1,6 @@
 # Sun Park canonical legal-entity and institution register
 
-**Control date:** 19 August 2026  
+**Control date:** 24 August 2026
 **Status:** canonical first-saturation register  
 **Rule:** brands, alliances and groups are not silently collapsed into one legal entity.
 
@@ -8,9 +8,9 @@
 |---|---|---|---|---|---|---|
 | E001 | **Comunidad de Propietarios del Complejo Sun Park** | Community | Horizontal-property Community; Community governance, accounts, meetings and litigation | pre-2011 | `LOCKED_CANONICAL` | S1, S2, S3, S4, S7 — 2014 notarial source records CIF H76013184. |
 | E002 | **Comunidad de Explotación Sun Park** | exploitation/operator structure | Historical exploitation community / operational structure | pre-2011 | `LOCKED_CANONICAL` | S1, S13, S12 |
-| E003 | **Luchy Playa Blanca, S.L.U.** | owner/insolvent company | Majority owner; insolvent company in Concurso 36/2012; Community president in relevant periods | 2008 | `LOCKED_CANONICAL` | S1, S3, S6, S7, S12 |
+| E003 | **Luchy Playa Blanca, S.L.U.** | owner/insolvent company | Majority owner; debtor in Concurso 36/2012; Community president in relevant periods | 2008 | `LOCKED_CANONICAL_OFFICIAL` | S1, S3, S6, S7, S12; CIF B35998582 in BOE-B-2012-22189 and BOE-B-2013-26977; BORME entry 91405 records `LUCHY PLAYA BLANCA SOCIEDAD LIMITADA`, unipersonal status and sheet IL 9469. Machine control: `ops/CANONICAL_ENTITY_NAMES.json`. |
 | E004 | **Matkator, S.L.** | owner | Non-insolvent owner of extraconcursal Sun Park units | pre-2018 | `LOCKED_CANONICAL` | S12 |
-| E005 | **Aweswell Limited** | holding/project-side | UK company; former Monterecco Sun Park Limited, same company number | 2011 | `LOCKED_CANONICAL` | S12 |
+| E005 | **Aweswell Limited** | holding/project-side | UK company; former Monterecco Sun Park Limited, same company number | 2011 | `LOCKED_CANONICAL_OFFICIAL` | S12; UK Companies House company no. 07716847 lists Monterecco Sun Park Limited as the previous name from 25-Jul-2011 to 3-Jun-2014. Machine control: `ops/CANONICAL_ENTITY_NAMES.json`. |
 | E006 | **Pink Canary Services, S.L.** | operator/company continuity | Spanish company formerly Monterecco Sun Park, S.L.; operating/lease context | 2012 | `LOCKED_CANONICAL` | S12 |
 | E007 | **Pamanil, S.L.** | Community administration/property services | Community administration/communications platform in historical source family | 2011 (reported appointment); primary documentary role by 2014-04-08 | `LOCKED_MINIMUM_DATE` | S2, S3, S5, S13 — CIF B35864487 in 2015 correspondence; FMMM identified as administrator. 2011 appointment by AAS is a contemporaneous client statement until direct appointment instrument is retrieved. |
 | E008 | **Roque Prieto, S.L.** | owner/Molina-AAS perimeter | Owner of unit 509; represented by AAS; co-claimant in P.O. 562/2014 | 2011-06-22 | `LOCKED_CANONICAL` | S1, S3, S7 |
@@ -58,6 +58,9 @@
 | E050 | **Juzgado de Primera Instancia nº 5 de Arrecife** | court | Court hearing P.O. 213/2015 in 2015 correspondence | 2015 | `LOCKED_CANONICAL` | S6 |
 
 ## Entity-form conflicts requiring corporate verification
+
+- **LPB name lock:** use **Luchy Playa Blanca, S.L.U. (LPB)** on first narrative reference. Do not translate the legal name or expand LPB from memory. `Luchy Playa Blanca, S.L.` and the all-caps BORME denomination may remain only as identified source literals. The cited 2012–2013 official records control the proceeding name; they do not alone establish current 2026 corporate status.
+- **Aweswell / Monterecco:** these are successive names of UK company no. 07716847, not two companies. Use the name applicable to the source date. This continuity does not by itself establish that an LPB liability, payment or authority belonged to Aweswell.
 
 - **Acciones Canarias:** 2011 act says `S.A.`; a later repository list says `S.L.`. Do not choose silently.
 - **José Sánchez Peñate / J.S.P.:** 2011 and 2014 records use different forms. Retrieve corporate history before merging.
