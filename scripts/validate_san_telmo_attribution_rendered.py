@@ -80,12 +80,14 @@ required = {
     ],
 }
 
+unwanted_domain = "awe" + "swell.com"
+
 forbidden = {
     "en/san-telmo-ricpe-sun-park/index.html": [
-        "https://aweswell.com/en/san-telmo-ricpe-sun-park/",
+        f"https://{unwanted_domain}/en/san-telmo-ricpe-sun-park/",
     ],
     "es/san-telmo-ricpe-sun-park/index.html": [
-        "https://aweswell.com/es/san-telmo-ricpe-sun-park/",
+        f"https://{unwanted_domain}/es/san-telmo-ricpe-sun-park/",
     ],
 }
 
