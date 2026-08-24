@@ -4,7 +4,7 @@
   "control_marker": "spanish-company-parrilla-mastery-20260824",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "DRAFT",
+  "current_state": "DELETION_SAFE",
   "purpose": "Lock the four project-side Spanish-company names, prevent Spanish/UK Monterecco conflation, and publish a reproducible privacy-safe Juan Tomás Parrilla Suárez corpus-coverage baseline.",
   "canonical_spanish_companies": [
     "Luchy Playa Blanca, S.L.U. (LPB) — CIF B35998582",
@@ -73,10 +73,78 @@
   ],
   "privacy_control": "Only aggregate counts and public corporate identifiers are published. No private body, email address, message ID, attachment ID or bank-account detail is committed.",
   "open_evidence_controls": ["ME-086", "ME-087"],
+  "pull_request": 943,
+  "merge_sha": "b9bfb2b679987f489f5ac7dc40850aa928bc92bd",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 32770266139,
+    "status": "success",
+    "head_sha": "b9bfb2b679987f489f5ac7dc40850aa928bc92bd",
+    "completed_at": "2026-08-24T19:48:53Z",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32770266139"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/garrigues-la-laguna/",
+    "https://sbu001monterecco.github.io/por-derecho/en/garrigues-la-laguna/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/project-side-spanish-companies-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/ops/CANONICAL_ENTITY_NAMES.json"
+  ],
+  "live_verification_evidence": {
+    "result": "4/4 HTTP 200 AND BYTE-FOR-BYTE MATCH",
+    "sha256": {
+      "es/garrigues-la-laguna/index.html": "a479a709111a6dd56984d2c65791e1c915b208dd2a2669e0379ff2c7de54e9a7",
+      "en/garrigues-la-laguna/index.html": "84dd57b6fa0a6462e61252525ddc5f07621e6fa5595f46d53f03545b41710c5e",
+      "assets/data/project-side-spanish-companies-v1.json": "6233a564bff3f2099d2e97caad43cd2ba9215fa9bb8b2f25f8eb4eb87cdf13b7",
+      "ops/CANONICAL_ENTITY_NAMES.json": "855889099682f0776b9642a427cd291fe866a0ee5e4463adf16d31da040f057a"
+    }
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "canonical_recovery_paths": [
+      "publication-manifests/spanish-company-parrilla-mastery-20260824.json",
+      "archive/JUAN_TOMAS_PARRILLA_CORPUS_MASTERY_AUDIT_24AUG2026.md",
+      "ops/CANONICAL_ENTITY_NAMES.json",
+      "archive/MISSING_EVIDENCE_REGISTER.md#ME-086",
+      "archive/MISSING_EVIDENCE_REGISTER.md#ME-087"
+    ],
+    "open_evidence_preserved": true,
+    "email_sent": false,
+    "gmail_draft_created": false
+  },
   "validation": {
-    "status": "PENDING",
-    "pull_request": null,
-    "merge_sha": null,
-    "deployment": null
+    "status": "CI_GREEN_MERGED_DEPLOYED_LIVE_VERIFIED",
+    "evidence": [
+      "PR #943 passed all 10 required pull-request checks",
+      "Post-merge suite passed 11/11 workflows including Pages",
+      "validate_insolvency_perimeter_language.py passed",
+      "validate_garrigues_la_laguna.py passed",
+      "validate_publication_integrity.py passed",
+      "validate_audience_experience.py passed",
+      "validate_repository_preservation.py passed",
+      "all changed JSON parsed with jq",
+      "git diff --check passed",
+      "4/4 live controlled surfaces matched repository SHA-256"
+    ],
+    "pull_request": 943,
+    "pr_head_sha": "551a819ba41f7ad64c2f328d0d5f0f16a3c63f84",
+    "pr_checks": "10/10 success",
+    "merge_sha": "b9bfb2b679987f489f5ac7dc40850aa928bc92bd",
+    "deployment": {
+      "workflow": "pages build and deployment",
+      "run_id": 32770266139,
+      "status": "success",
+      "head_sha": "b9bfb2b679987f489f5ac7dc40850aa928bc92bd",
+      "completed_at": "2026-08-24T19:48:53Z",
+      "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32770266139"
+    },
+    "live_readback": {
+      "result": "4/4 HTTP 200 AND BYTE-FOR-BYTE MATCH",
+      "sha256": {
+        "es/garrigues-la-laguna/index.html": "a479a709111a6dd56984d2c65791e1c915b208dd2a2669e0379ff2c7de54e9a7",
+        "en/garrigues-la-laguna/index.html": "84dd57b6fa0a6462e61252525ddc5f07621e6fa5595f46d53f03545b41710c5e",
+        "assets/data/project-side-spanish-companies-v1.json": "6233a564bff3f2099d2e97caad43cd2ba9215fa9bb8b2f25f8eb4eb87cdf13b7",
+        "ops/CANONICAL_ENTITY_NAMES.json": "855889099682f0776b9642a427cd291fe866a0ee5e4463adf16d31da040f057a"
+      }
+    }
   }
 }
