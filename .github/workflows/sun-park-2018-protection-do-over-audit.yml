@@ -1,0 +1,47 @@
+name: Sun Park 2018 protection and do-over continuity
+
+on:
+  pull_request:
+    paths:
+      - 'reports/UNITARY_EVIDENCE_DIGEST_24AUG2026.md'
+      - 'reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md'
+      - 'reports/UNITARY_DIGEST_IMPLEMENTATION_INDEX_24AUG2026.md'
+      - 'intelligence/AC_PROTECTION_ACTION_MATRIX_24AUG2026.csv'
+      - 'intelligence/CUATRECASAS_ACTION_FOLLOW_THROUGH_MATRIX_24AUG2026.csv'
+      - 'intelligence/JUAN_TOMAS_PARRILLA_MANDATE_ACTION_MATRIX_24AUG2026.csv'
+      - 'intelligence/SUN_PARK_2018_TRANSACTION_DISAGGREGATION_24AUG2026.csv'
+      - 'ops/SUN_PARK_DO_OVER_BACKLOG_24AUG2026.md'
+      - 'ops/SUN_PARK_DO_OVER_STATUS_24AUG2026.json'
+      - 'es/2018-proteccion-leal-masa/**'
+      - 'en/2018-loyal-protection-estate/**'
+      - 'scripts/audit_sun_park_2018_protection_do_over.py'
+      - '.github/workflows/sun-park-2018-protection-do-over-audit.yml'
+  push:
+    branches:
+      - 'codex/unitary-evidence-digest-20260824'
+  schedule:
+    - cron: '43 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sun-park-2018-protection-do-over-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Run read-only continuity and publication-safety audit
+        run: python3 scripts/audit_sun_park_2018_protection_do_over.py --output-dir artifacts/sun-park-2018-protection-do-over-audit
+      - name: Publish audit summary to the workflow run
+        if: always()
+        run: |
+          cat artifacts/sun-park-2018-protection-do-over-audit/summary.md >> "$GITHUB_STEP_SUMMARY" || true
+          cat artifacts/sun-park-2018-protection-do-over-audit/result.json || true
