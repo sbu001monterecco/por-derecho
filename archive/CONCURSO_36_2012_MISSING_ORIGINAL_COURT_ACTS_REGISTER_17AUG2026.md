@@ -3,6 +3,36 @@
 **Control date:** 17 August 2026  
 **Purpose:** convert every unresolved court/LAJ source into an explicit retrieval target rather than inferring content from later summaries.
 
+## Unitary court-file sweep — 24 August 2026
+
+The earlier requested cutoff is **1 January 2016**, because 2016 precedes the 2017 convenio phase. The controlled sweep now identifies **65 docket items for 2016–2021 plus one connected external complaint**. The machine denominator is `assets/data/concurso36-court-file-v1.json`; the bilingual human digest is under `evidence/insolvency-36-2012/court-file-2016-2021/`.
+
+### Newly consolidated source families
+
+| Family | Located control | Remaining original/completeness gap | Status |
+|---|---|---|---|
+| 2016 definitive texts | AC filing 28-Apr and LPB opposition 16-Jun, both searchable | annexes, receipt/service and exact ruling on every objection | **TEXT LOCATED / DISPOSITION-ANNEX GAP OPEN** |
+| 2017 convenio | 20-Jan and 22-Mar Autos; 19-Apr proposal/viability material; 27-Apr filing; 5-May remuneration Auto; 15-May Promontoria challenge; 6-Nov credit filing; 19-Dec liquidation Auto | admission/challenge rulings, adhesions/oppositions, meeting record and complete route to failure of convenio | **CORE SOURCES LOCATED / COMPLETE CONVENIO DOCKET OPEN** |
+| 2018 plan/appeal | plan; LPB/AC/CAM filings; two distinct 16-Apr Autos; 4-Jun clarification; 15-Jun LAJ act; 26-Jun suspension; appeal briefs; 12-Dec LAJ act | complete annexes, returns, opposition/transmission/finality and implementation | **CORE SOURCE FAMILY LOCATED / SERVICE-ANNEX-FINALITY OPEN** |
+| 2019 AP/non-convalidation | AP order dated 23-Jul (29-Jul filename alias); 24-Oct refusal to validate; connected AC/LPB/Aweswell/CAM filings | complete remittal/finality; deed 2,150 and reversal/title/accounting consequences | **PRIMARY ACTS LOCATED / IMPLEMENTATION GAP OPEN** |
+| 2020 amount-setting | 12-May dismissal plus LPB/AC/CAM/Community submissions | page-faithful OCR of 5-Nov-2019 Community pack and 9-Jun-2020 CAM certificate; ledgers and final amount order | **TEXT MOSTLY LOCATED / TWO SCANS + FINAL AMOUNT OPEN** |
+| 2021 publicity/licitation | 18/25/29-Jan acts; 4-Feb challenges; 19-Feb nullity; two 6-May Autos; 12/18-May acts; two 15-Oct Autos; 27-Oct LAJ act | public-notice returns, third-party complete offer/funds/bond, 18-May recording/minute, service/finality and downstream implementation | **PRIMARY ACT FAMILY LOCATED / HEARING-IMPLEMENTATION OPEN** |
+| Calificación | 21-Jul and 25-Oct AC Article 424 reports plus LAJ transfer located in the scanned corpus | full separate pieza, Fiscalía/party responses, evidence, 2023 hearing and final outcome | **PARTIAL — DO NOT MERGE WITH REALIZATION TRACK** |
+| Connected complaint | 10-Feb-2021 complaint located | receipt, competent authority, investigation and outcome | **EXTERNAL ALLEGATION — NOT A C36 DOCKET ACT** |
+
+### New finite retrieval controls — continuation of canonical queue
+
+| ID | Exact request | Reason | Status |
+|---|---|---|---|
+| `ME-PDFSCAN-032` | Certified chronological Juzgado/LAJ index covering every section/pieza, filing, annex, act, service, appeal, finality event, recording and close-out from 6-Jun-2012 to conclusion. | Establishes the legal denominator against which the 65 located nodes can be tested. | **OPEN — MASTER DENOMINATOR** |
+| `ME-PDFSCAN-033` | Complete 2016 definitive-text pack: all AC annexes, LPB opposition exhibits, receipts, transfers and each resolving act. | Prevents the 2016 starting point from being reconstructed only from the parties' cover filings. | **PARTIAL — TWO CORE FILINGS LOCATED** |
+| `ME-PDFSCAN-034` | Complete convenio file: admission, payment-plan annexes, adhesions/oppositions, Promontoria disposition, creditors' meeting minute/recording/vote or cancellation act, and causal bridge to 19-Dec liquidation. | Tests the proposed no-haircut/one-year route against what creditors and the court actually did. | **PARTIAL — PROPOSAL OCR + CORE AUTOS LOCATED** |
+| `ME-PDFSCAN-035` | Page-faithful OCR/source review of the 5-Nov-2019 AC/Community pack and 9-Jun-2020 CAM interest certificate, plus native underlying Community and loan ledgers and the final judicial amount order. | Separates asserted certificates from the amounts finally set and their accounting basis. | **PARTIAL — TWO BINARIES LOCATED / OCR OPEN** |
+| `ME-PDFSCAN-036` | Full 18-May-2021 licitation record: third-party filed offer, authority, funds, bond attempt/result, service, attendance, minute, recording, evidence rulings and disposition. | Tests the decisive nonappearance/no-bond recital in Order 164/2021. | **PARTIAL — CALLING AND APPROVAL ACTS LOCATED** |
+| `ME-PDFSCAN-037` | Post-approval implementation: both 15-Oct orders and 26-Jan clarifications with filings/service/finality; deed communication within five days; mandamientos/testimonios; finca-level Registry; EUR 400,000 bank trail; taxes/costs; quarterly reports; closure and rendición. | Converts authorization into a provable title/money/accounting chain. | **PARTIAL — JUDICIAL ACTS LOCATED / IMPLEMENTATION OPEN** |
+
+These controls are collision-safe. Where an older `ME-PDFSCAN-*` row already requests the same source, update that older row and mark the newer control `MERGED`, rather than opening a parallel production demand.
+
 ## Batch A pass 2 — P1 items closed from Gmail-controlled court copies
 
 The following items were P1 gaps in closure pass 1 and are **no longer missing-original targets**:
@@ -32,6 +62,15 @@ The following later P1 targets also changed status on 17-Aug-2026:
 | 27-Oct-2021 LAJ Diligencia | signed standalone Drive binary, stable ID `C36-LAJ-2021-10-27-001` | incorporation/transfer of AC filing 7425/2021 | underlying 25-Oct quarterly report remains separate source if not independently held | **PRIMARY LAJ ACT LOCATED** |
 | 26-Jan-2022 clarification family | complete two-page copy `C36-JUD-2022-01-26-001` and complete three-page copy `C36-JUD-2022-01-26-002` | two separate clarification Autos tied to the two 15-Oct-2021 rulings; neither is the original adjudication or a new title-transfer act | applications, responses, exact service log, testimony supplied downstream and certified finality context | **TWO PRIMARY COPIES LOCATED / SERVICE-TESTIMONY CONTEXT PARTIAL** |
 
+## 2020–2021 active-estate source promotion — 23 August 2026
+
+| Act / date | Recovered source | What is now closed | What remains | Status |
+|---|---|---|---|---|
+| 12-May-2020 LPB reposición Auto | exact official electronic binary, custody ID `MAT-005`, SHA-256 `2caa1492433a74c603efedf9662ca1057eda863cadb81474cf05a8b7a5cfbbfa` | two-page signed order; res-judicata treatment; demolition/access requests treated as new/extemporaneous in that procedural vehicle; operative dismissal; the separate three-page Aweswell-favourable same-date copy is also located | underlying applications/oppositions; exact service and finality chain; AP 23-Jul-2019 anchor/finality; certificates, submissions and definitive amount order | **PRIMARY ACT CLOSED / PAIRED ACT LOCATED / PROCEDURAL CONTEXT OPEN** |
+| 24-Feb-2021 Aweswell reposición Auto | exact official electronic binary, custody ID `MAT-008`, SHA-256 `3b02a944ae5becb154bdc2109935d060de80bb9e862f10ab055582696e5ee40f` | four-page signed reasoned order and operative partial allowance limited to motivation while preserving denial of filing 7,299 | 13-Jan Providencia; complete reposición/DIOR; AC/CAM annexes; service/finality where needed; later responsibility/implementation chain | **PRIMARY ACT CLOSED / CONNECTED-SOURCE GAPS OPEN** |
+| 24-Feb-2021 liquidation-extension Auto | distinct two-page official-copy derivative, stable ID `C36-JUD-2021-02-24-002`, SHA-256 `9841c9aa91e2fa0cf49eeff249928b0ac66dc54912853e77b83d9b1b73bbd27d` | separate same-date act granting a one-year extension from 24-Feb-2021; records LPB/Aweswell consent and anticipated delay from nullity actions still described as `a ejercitar` against Bankia | 4-Feb-2020 extension Providencia; AC application and party responses; service/finality; later extensions, actual close-out and the filed Bankia action/outcome, if any | **PRIMARY ACT LOCATED / SOURCE AND IMPLEMENTATION CHAIN PARTIAL** |
+
+Read with `archive/SUN_PARK_ACTIVE_ESTATE_2018_2021_EIGHT_SOURCE_SUPPLEMENT_23AUG2026.md` and the superseding corpus control `archive/SUN_PARK_28_UPLOAD_SOURCE_DIGITISATION_AND_PUBLICATION_CONTROL_23AUG2026.md`. The two 24-Feb-2021 Autos are different acts and must never be merged. The extension Auto does not use the word “swap” and does not establish that any Bankia action had been filed or succeeded. Closing an original-binary gap does not convert a procedural holding into a global finding about ownership, damage, authority or responsibility.
 ## 2023 primary-act closure — exact source/date correction
 
 The following prior P1 “missing original” entries are now closed at primary-source level:
@@ -53,19 +92,30 @@ Full correction: `archive/CALIFICACION_VISTA_PRIMARY_ACT_CORRECTION_31MAR_14JUL2
 
 | Act / date | Type | How existence/content is presently known | What is still missing | Why it matters | Retrieval status |
 |---|---|---|---|---|---|
-| 16-Apr-2018 act family | at least 2 Autos | complete seven-page liquidation-plan approval copy, Drive `1nISEnl4ercRA8BNtZgS2TQngU6zyKbti`, plus separate complete two-page clarification of the **15-Feb-2018** credit-interest Auto, Gmail `1963e7416170ea0b` / Drive `1VBUU_rgzDQ4quXgL0lShZzpLjtftpRTN` | filed annex set, full hash/signature binding where outstanding, notifications, service and appeal/finality context; the earlier-order date is retained unchanged here pending its separate primary-source reconciliation | central sale/liquidation architecture; same-date conflation risk | **ORIGINAL-COPY GAP CLOSED / ANNEX-SERVICE-FINALITY OPEN** |
+| 16-Apr-2018 act family | at least 2 Autos | complete seven-page liquidation-plan approval copy, Drive `1nISEnl4ercRA8BNtZgS2TQngU6zyKbti`, also reconciled to uploaded derivative alias SHA-256 `6a64515f3504762bc6f44747d64d61d9a7ec99e7367d6bd3ae9ade9ebe9eaacf`; separate complete two-page clarification of the **15-Feb-2018** credit-interest Auto, Gmail `1963e7416170ea0b` / Drive `1VBUU_rgzDQ4quXgL0lShZzpLjtftpRTN` | filed annex set, full hash/signature binding where outstanding, notifications, service and appeal/finality context; the earlier-order date is retained unchanged here pending its separate primary-source reconciliation | central sale/liquidation architecture; same-date conflation risk; highlighted markings in the uploaded derivative are editorial, not court emphasis | **ORIGINAL-COPY GAP CLOSED / ANNEX-SERVICE-FINALITY OPEN** |
 | 04-Jun-2018 | Auto | complete authentic three-page copy, Gmail `194a98a11920fefd`, superseding the older two-page derivative | full hash binding, notification/service and downstream implementation evidence | clarifies conditions for competing offers | **ORIGINAL-COPY GAP CLOSED / HASH-SERVICE OPEN** |
 | 15-Jun-2018 | LAJ Diligencia | complete two-page connected copy, Gmail `167c817fdf0b45e0`; Águeda Reyes Almeida identified | exact service/publication returns and proof of performance through every required channel | publication route that later generated reposición | **ORIGINAL-COPY GAP CLOSED / PUBLICATION-SERVICE OPEN** |
 | 12-Dec-2018 | LAJ Diligencia | complete one-page connected copy, Gmail `167c817fdf0b45e0`; Águeda Reyes Almeida identified | exact service, challenges and full relationship to the already executed 28-Nov deed | key bridge between publication and 28-Nov sale / later non-convalidation | **ORIGINAL-COPY GAP CLOSED / SERVICE-CHALLENGE OPEN** |
 | 11-Mar-2019 act family | Diligencia + Providencia / multiple matters | workbook + later 24-Oct Auto references | separate signed originals; exact actor for each operative decision | standing, document production, ob-rem/source access | P1 |
 | 24-Oct-2019 Aweswell-standing act | Auto | complete two-page connected court copy, Gmail `172134c64f5c98dd` | full hash, exact service and underlying AC application | favourable rejection of AC expulsion/nullity request; balance control | **ORIGINAL-COPY GAP CLOSED / HASH-SERVICE-FILING OPEN** |
-| 12-May-2020 act family | 2 Autos | complete two-page LPB-adverse copy, Drive `1N_mZYLyG_gEwpcAdtCXA2acEA3OIF8cg`, plus complete three-page Aweswell-favourable copy, Gmail `172134c64f5c98dd` | underlying applications/oppositions, exact service and finality chain | one LPB-adverse, one Aweswell-favourable; essential anti-cherry-pick control | **TWO ORIGINAL COPIES LOCATED / PROCEDURAL CONTEXT OPEN** |
+| 12-May-2020 act family | 2 Autos | complete two-page LPB-adverse copy, hash-controlled as `MAT-005` / Drive `1N_mZYLyG_gEwpcAdtCXA2acEA3OIF8cg`, plus complete three-page Aweswell-favourable copy, Gmail `172134c64f5c98dd` | underlying applications/oppositions, exact service and finality chain | one LPB-adverse, one Aweswell-favourable; essential anti-cherry-pick control | **TWO ORIGINAL COPIES LOCATED / PROCEDURAL CONTEXT OPEN** |
 | 25-Jan-2021 | Auto | complete four-page connected copy, Drive `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh` | exact publication/service performance, underlying calculations and complete challenge chain | sets publication/offer conditions | **ORIGINAL-COPY GAP CLOSED / PUBLICATION-SERVICE OPEN** |
 | 06-May-2021 act family | 2 Autos | complete four-page confirmation copy, Drive `1G8k7MzfzPx9disqvHirm9DCoiSqeW0P3`, plus complete two-page nullity Auto, Gmail `1796aa406ac83582` | underlying applications/oppositions, exact service and finality context | nullity denial vs confirmation of 25-Jan route | **TWO ORIGINAL COPIES LOCATED / PROCEDURAL CONTEXT OPEN** |
 | 15-Oct-2021 act family | 2 Autos | complete five-page signed copy, Drive `1gB3Q737pIX3tD62VituvM8I67zKjvJ2k`, plus separate complete two-page copy, Drive `1HC4_aBSGitShDGRHpBWrmuYC3L6D4Z8S` | full hash/signature binding for the second copy, service, applications and certified finality context | appeal/finality architecture; prevent same-date conflation | **TWO ORIGINAL COPIES LOCATED / SERVICE-FINALITY OPEN** |
 | 26-Jan-2022 act family | 2 clarification Autos | complete two-page copy, Gmail `17ea1b081fb1b620`, and complete three-page copy, Gmail `17ea1adf8c8ee44a` | applications, responses, service, exact testimony and certified review/finality chain | clarification/finality/testimonio dispute; neither act is the original adjudication | **TWO ORIGINAL COPIES LOCATED / SERVICE-TESTIMONY OPEN** |
 | 25-Jul-2023 | certified Vista minute / official audiovisual index | judgment + supplied media + specialist registers | certified minute, official component index, attendance, evidence rulings, complete official media | Article 24 / witness / record completeness | P1 |
 | 26-Jul-2023 programme disposition | procedural ruling/minute/service chain | 31-Mar primary Diligencia scheduled 26-Jul witnesses; judgment says Vista completed 25-Jul | act/minute/ruling showing how each 26-Jul item was advanced, waived, excluded, not served, unnecessary or otherwise disposed of | central to effective-defence analysis | P1 |
+
+## Certified-denominator rerun — 24 August 2026
+
+| Target | Located evidence | What is closed | What remains | Status |
+|---|---|---|---|---|
+| 15-Jan-2013 Article 75 report | complete searchable 37-page body, Drive `15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc` | report body, section structure, AC's mixed cooperation account, provisional asset/passive figures and stated future-action intentions | certified/filed copy, Annex I, supporting annexes, source-level redacted page-faithful transcript and later action/outcome chain | **REPORT BODY CLOSED / ANNEX-HIERARCHY-OUTCOME OPEN** |
+| 8-Feb-2019 conclusion application | searchable party document, Drive `1ZMMKo2yvHuhg-mOgQ6VEegJSBFNI2ljQ` | internal date and requested relief identified | filed version/receipt, five annexes, AC report, opposition, judicial disposition, service/finality; later 2021 labels must not replace the internal date | **PARTY TEXT LOCATED / DOCKET STATUS OPEN** |
+| 2021–2022 LexNET package queue | 105 unique provider-package filenames in bounded Gmail queries | finite metadata-level acquisition queue: 52 DIOR/diligencia, 41 filing/transfer, 5 Autos, 5 Providencias, 1 Decreto, 1 other | binary deduplication, wrapper/annex separation, page review, stable IDs and bidirectional certified-index reconciliation | **METADATA LOCATED / DOCUMENT-LEVEL RECONCILIATION OPEN** |
+| Statutory whole-docket outputs | RedSARA receipts `REGAGE26e00073341191`, `REGAGE26e00073341382`, `REGAGE26e00073341477`; 20-Aug Exp. Gub. 38/2026 response; appeal receipt `REGAGE26e00074355631`; 21-Aug processing confirmation | coordinated requests evidenced; TSJ supervisory lane answered/archived and directed requests 4–8 to article 234 LOPJ; appeal filed/processing | master piece inventory; article 47.3 signed indexes; article 46.2 act relations; electronic-copy manifest; legacy/non-electronic exception inventory; response from other two lanes; superior appeal outcome; bidirectional reconciliation | **TSJ RESPONSE + APPEAL RECEIPT LOCATED / PRODUCTION OPEN** |
+
+The controlling limitation is unchanged: the located corpus can be complete as a digest of located sources without being the legally complete docket denominator.
 
 ## Retrieval protocol
 
@@ -83,6 +133,6 @@ Search failure is logged as a gap, not as evidence that the act does not exist.
 
 ## Official-index ask
 
-The ultimate closure request remains a certified chronological index/inventory from the court/LAJ covering sections, piezas, resolutions, notifications, service and audiovisual components so that the Por Derecho denominator can be reconciled against the custodian's own index.
+The ultimate closure request is now framed in the native statutory outputs: master section/piece inventory; article 47.3 signed electronic index for the main file and every pieza; article 46.2 official act relation; complete electronic-copy/download manifest; and an inventory of legacy or non-electronic resolutions, notifications, service records, annexes and audiovisual components. The Por Derecho denominator must then be reconciled in both directions against those custodian outputs. Non-production does not establish nonexistence, loss, suppression or alteration.
 
 **Collision-safe correction control `C36-CORR-MISSING-STATUS-20260823`:** a located connected copy closes only the original-copy retrieval label stated above. It does not close authenticity hierarchy, annex completeness, service, appeal/finality, implementation, accounting or the certified whole-docket denominator.

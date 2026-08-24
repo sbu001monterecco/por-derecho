@@ -114,3 +114,57 @@ No specific legacy verifier is declared defective by this register where its com
 6. Consolidate legacy live verifiers without weakening any required public-edge control.
 
 This register is a recoverable handover. It does not depend on the chat thread for its meaning.
+
+## 7. Master email/files scan-request batch queue — active-estate and 28-upload corpus
+
+**Activated:** 23 August 2026  
+**Controlling source registers:** `archive/SUN_PARK_ACTIVE_ESTATE_2018_2021_EIGHT_SOURCE_SUPPLEMENT_23AUG2026.md` and `archive/SUN_PARK_28_UPLOAD_SOURCE_DIGITISATION_AND_PUBLICATION_CONTROL_23AUG2026.md`  
+**Canonical gap rows:** `ME-012`, `ME-047`, `ME-050`, `ME-074`–`ME-082`, plus the cross-referenced existing ME / ME-CAM7J rows.
+
+The complete supplied set has been reconciled as **28 filenames, 26 unique binaries and 25 documentary items**. Five binaries match private custody rows `MAT-005`–`MAT-009`; one CAM print is a source variant; the two 18-page photo PDFs are exact duplicates; and the file labelled JV `1240-2011` is byte-identical to the already controlled JV `1260/2011` initiating pleading. Two different Autos dated 24-Feb-2021 remain separate acts. Do not upload or count duplicates, aliases or variants as independent corroboration.
+
+Run future scans as resumable micro-batches and write results back to the canonical ME row and source supplement. A no-result search is logged; it is not proof of non-existence.
+
+| Batch | Source-completion IDs | Exact focus | Primary search locations / query ladder | Exit condition |
+|---|---|---|---|---|
+| `AE-01` | `ME-PDFSCAN-001`–`004` | 24-Oct-2019 anchor; 4-Nov reposición + blocks; AP 23-Jul-2019; interest/Community certificates and final amounts | exact dates + `36/2012` + `Auto` / `reposición` / `3.079.104,66` / `3.182.000`; Drive, Gmail attachments, counsel/procurador files, court-certified index | signed acts and annex inventory located, hashed and linked, or negative-search log complete |
+| `AE-02` | `ME-PDFSCAN-005`–`008` | Aweswell photographic dossier; Jan/Feb-2021 reposición/DIOR; AC opposition/certificates/reports; CAM `DOCUMENTO NÚMERO UNO` | `7299`, `654/2021`, `690/2021`, `13 enero 2021`, `4 febrero 2021`, `9 febrero 2021`, `15 enero 2019`, `estado masa activa`, `certificación Comunidad`; Gmail/Drive/LexNET/counsel/Community | each filing, receipt and expressly cited annex reconciled |
+| `AE-03` | `ME-PDFSCAN-009`–`011` | CAM 54-unit title; municipal licence/plans/works; finca-photo overlay; access/key/security requests and logs | Registry/deeds, Yaiza licence/project file, CAM/contractor records, Community/security/locksmith files, expert/notary correspondence | date-specific unit/title/licence/access matrix produced or remaining custodian stated |
+| `AE-04` | `ME-PDFSCAN-012`, `ME-075` | native 23-Feb/8-Mar-2021 email, photographic attachment and complete request→response→inspection outcome | Gmail exact subject `autorización para peritos - informe estado de la masa activa de Luchy Hotel Sun Park (36/2012)`; sent/all-mail/Trash; Google Takeout; recipient mailboxes; Drive attachment search | `.eml`/RFC822 + MIME/headers + attachments + later responses/outcome hashed, or bounded negative log |
+| `AE-05` | `ME-PDFSCAN-013`–`014` | RPC publication, offer/auction/due diligence; later responsibility/appeal, restitution, rectification and EUR 400,000 accounting | RPC, Concurso/LexNET, AC data room/accounts, bidder correspondence, deeds/Registry, court/appeal/counsel files | full decision and implementation chain reconciled |
+| `AE-06` | `ME-PDFSCAN-015`–`016`, `ME-076` | original 1-Mar-2018 images/event proof; reconcile CAM pleading variants/receipt/annex | SHA-256 `e66d1c78166595c9f3899063fdf39767339d608d4184f93cd10993f11e051abc` and private exact-alias control; device/photo libraries, Drive/Gmail, DP 1132 exhibits; CAM/LexNET file | originals/EXIF/identity/context and filing treatment located; duplicate/variant relations fixed |
+| `AE-07` | `ME-PDFSCAN-017`–`022` | prior-ten completion: JV 1260; 2014 Fiscalía annexes/outcome; DI 248; May-2019 sequence; complete 2-May order; 1-Aug mixed-bundle components | exact filenames and procedure numbers; court/Fiscalía certified files; LexNET; Gmail/Drive; counsel files; existing repository retrieval aliases | every fragment/bundle separated into source, receipt, opposition, official act and outcome |
+| `AE-08` | `ME-PDFSCAN-024`, `025`, `031` | opening/plan Autos; AC plan and party observations; same-date clarification; every Article-152 report; 2018 deed/payment/accounting chain | `19 diciembre 2017`, `16 abril 2018`, `plan de liquidación`, `informe trimestral`, `protocolo 2150`, `400.000`; Concurso/LexNET, AC/counsel files, Drive/Gmail, notary/bank/Registry | native act family, complete report run and EUR 400,000 implementation/accounting reconciled |
+| `AE-09` | `ME-PDFSCAN-027`, `ME-078` | PO 213/2015 primary judgment, intervention, authority for allanamiento, annexes, appeal/oppositions and result | `213/2015`, `12 noviembre 2018`, `Matkator`, `intervención provocada`, `allanamiento`; JPI 5/AP files, LexNET, Community/counsel records | each quoted act and annex recovered and final appellate disposition/finality established |
+| `AE-10` | `ME-PDFSCAN-026`, `ME-081` | final/signed status and distribution authority for the confidential valuation; instructions, working papers, source valuations and rebuttal/judicial treatment | exact 10-May-2018 title/author/client; Aweswell/LPB/counsel/expert files; Actúa, Gesvalt and Tinsa source names/dates | final/draft status and authority resolved; every figure/source reconciled; confidential material remains private unless separately approved |
+| `AE-11` | `ME-PDFSCAN-029`, `ME-082` | Valencia ORD 1859/2023 parent filing and transaction-level loan/interest/hedge reconciliation | `1859/2023`, `DOCUMENTO 7`, receipt dates/amounts; Valencia court/counsel file, bank statements/contracts/ledger | orphan exhibit linked to its parent and each receipt reconciled without exposing account/tax identifiers |
+| `AE-12` | `ME-PDFSCAN-030`, `ME-080` | liquidation-extension applications, responses, earlier/later extensions, actual close-out and any Bankia/nullity action/outcome | `4 febrero 2020`, `24 febrero 2021`, `prórroga liquidación`, `Bankia`, `nulidad`; Concurso/LexNET, AC/LPB/Aweswell counsel, bank-litigation dockets | every extension and source filing identified; actual Bankia proceeding/result and liquidation endpoint established, or bounded negative log complete |
+
+### Cross-thread execution rule
+
+Any other thread locating one of these items must:
+
+1. preserve the native source before OCR/redaction;
+2. calculate SHA-256 and record filename, bytes, acquisition date, custodian and parent/variant/duplicate relation;
+3. update the controlling `ME-*` status instead of creating a parallel generic gap;
+4. link the source to the relevant pleading/order and record what it establishes and does not establish;
+5. retain personal data, privilege and private binaries outside public Git unless a separate publication gate is approved; and
+6. never claim website publication until the merge SHA, Pages deployment and exact live route have been checked.
+
+## 8. Concurso 36/2012 whole-docket continuation — 24 August 2026
+
+The controlled 2016–2021 sweep supersedes an unstructured “search every email/file” instruction with a finite denominator and prompt:
+
+- inventory: `assets/data/concurso36-court-file-v1.json`;
+- result: **65 located docket items plus one separately typed external complaint**;
+- bilingual digests: `evidence/insolvency-36-2012/court-file-2016-2021/`;
+- continuation prompt: `archive/prompts/CONCURSO_36_2012_COMPLETE_COURT_FILE_CONTINUATION_PROMPT_24AUG2026.md`; and
+- new denominator/closure controls: `ME-PDFSCAN-032`–`037` in `archive/CONCURSO_36_2012_MISSING_ORIGINAL_COURT_ACTS_REGISTER_17AUG2026.md`.
+
+Other threads must begin with the certified-index request, then bind any located email attachment or scan to the stable ID and existing `ME-PDFSCAN-*` row. The 10-Feb-2021 complaint remains outside the Mercantile docket count; calificación remains a separate pieza; source variants and wrong filename dates are not second acts.
+
+### Certified-denominator rerun — 24 August 2026
+
+The next bounded run located the complete searchable body of the 15-Jan-2013 Article 75 report, a candidate conclusion application internally dated 8-Feb-2019 and 105 unique LexNET provider-package filenames in an observed 2021–2022 window. These findings are controlled by `assets/data/concurso36-denominator-gap-v1.json` and `archive/CONCURSO_36_2012_CERTIFIED_DOCKET_DENOMINATOR_GAP_CLOSURE_24AUG2026.md`.
+
+Cross-thread rule: do not inflate `65` to `170`. A provider package can be a notification wrapper, cover, duplicate, annex family or forwarded copy of an existing act. Each package must be inspected, hashed, assigned or rejected as a unique node and reconciled against the master piece inventory, article 47.3 signed indexes, article 46.2 official act relations and legacy/non-electronic exception inventory. The three 15-Aug requests have located RedSARA receipts. Exp. Gub. 38/2026 answered and archived the TSJ supervisory lane on 20-Aug, directing requests 4–8 to article 234 LOPJ without production; the administrative appeal receipt and registry-processing confirmation are located. No superior merits decision or certified production from either remaining lane is located.

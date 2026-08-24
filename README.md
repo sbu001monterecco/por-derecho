@@ -18,13 +18,17 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/es/concurso-36-2012-autos-resoluciones/` — Spanish full-text archive of the 50 located 2024–2026 removal/remuneration records: 25 Judge/Appeal Court/LAJ acts and 25 party filings; a specialist corpus, not the whole file
 - `/en/insolvency-36-2012-orders-decisions/` — English navigation and scope-control counterpart for that complete public-safe specialist corpus
 - `/es/concurso-36-2012-que-ordeno-el-juzgado/` and `/en/concurso-36-2012-what-the-court-ordered/` — bilingual reader of twelve selected critical instruments, their limits, implementation and open proof
-- `/es/concurso-36-2012-columna-judicial/` and `/en/concurso-36-2012-judicial-spine/` — judicial/LAJ state-transition map read together with the denominator-aware whole-record catalogue
+- `/es/concurso-36-2012-columna-judicial/` and `/en/concurso-36-2012-judicial-spine/` — judicial/LAJ state-transition map and public request for the article 47.3 signed per-piece indexes, article 46.2 official act relations and non-electronic exception inventory
+- `/es/concurso-36-2012-masa-activa-2018-2021/` and `/en/insolvency-36-2012-active-estate-2018-2021/` — controlled 2017–2021 active-estate record cross-linked to the whole-file LAJ request
+- `/es/caso-insignia-jv1260-2011-ap89-2014/` and `/en/flagship-case-jv1260-2011-ap89-2014/` — source-controlled JV 1260/AP 89 reconstruction preserving the exact adverse holding and later-use limits
 - `/es/tesis-uso-criminal-procedimiento-calificacion/` and `/en/insolvency-classification-criminal-misuse-thesis/` — canonical five-pillar, actor-specific investigative thesis for the Calificación record, with an express RPL 2523/2025 appeal firewall, contrary evidence and equal-visibility right of reply
 - `/es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/` and `/en/insolvency-administrator-security-request-sun-park-27-february-2018/` — privacy-safe source reader for the 27 February 2018 AC security-meeting request; a party communication, not a court order or proof of implementation
 - `/es/cuatrecasas-dp748-accion-civil/` and `/en/cuatrecasas-dp748-civil-action/` — bilingual, privacy-controlled position separating DP 748/2026, the La Laguna enforcement/assignee hypothesis and the planned civil audit; it includes a Spain-led, document-answerable institutional accountability protocol while keeping any SRA route secondary and jurisdiction-dependent
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
+
+The judicial-spine routes link to a controlled 2016–2021 court-file baseline: 65 located docket items plus one connected external complaint, kept outside the Mercantile docket count. The public evidence layer includes bilingual item-by-item digests, a reviewed redacted OCR derivative of the April-2017 convenio proposal and a public-safe digest of the located 37-page Article 75 report dated 15 January 2013. A bounded denominator refresh also located 105 LexNET provider-package filenames for document-level reconciliation; package count is not docket count. The corpus remains explicitly partial until the master piece inventory, article 47.3 signed electronic indexes, article 46.2 official act relations and legacy/non-electronic exception inventory are produced and reconciled in both directions. Non-production does not establish nonexistence, loss, suppression or alteration.
 
 The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently but do not state guilt as adjudicated. They preserve the 2018 provisional dismissal and appeal result, the insolvency administrator's denial/narrower-authority account, CAM's potentially valid credit/individual-title rights and an act-by-act Articles 446–449 judicial test. `archive/IDENTITY_CONTROL_LAURA_PATRICIA_ACOSTA_MATOS_23AUG2026.md` controls the identity: public output uses Laura Patricia Acosta Matos; mandate, participation and responsibility remain actor-specific questions requiring proof.
 
@@ -36,7 +40,6 @@ The Cuatrecasas DP 748/civil-action pages must not publish the names of current 
 
 Public primary documents are stored under `assets/docs/` or the controlled `evidence/` tree only after provenance, scope and redaction review; publication of a receipt, filing or procedural record does not convert it into a merits finding. The Concurso 36/2012 Autos corpus uses complete redacted Markdown transcriptions plus raster-only decision PDFs, with source hashes and known gaps preserved in its manifest and provenance record.
 
-The denominator-aware `assets/data/concurso36-complete-record-v1.json` catalogue joins the historical forensic index, the 50-record specialist corpus and separately controlled sources without claiming a certified whole-file denominator. Its controlling status is `INVENTORY PARTIAL — CERTIFIED DOCKET OR RECORDS STILL MISSING`; publication can be complete only for the identified public-safe corpus, not for the whole court file.
 
 ### RICPE publication controls
 

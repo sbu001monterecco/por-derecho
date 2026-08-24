@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-08-24",
+  "scope": "Certified-docket denominator gap closure for Concurso ordinario 36/2012, from opening through current/closure status.",
+  "certified_court_laj_index_located": false,
+  "official_relation_of_procedural_acts_located": false,
+  "certified_per_piece_export_located": false,
+  "controlling_limitation": "The principal unresolved limitation is that no signed electronic index under article 47.3 of RDL 6/2023, official relation of procedural acts under article 46.2, or equivalent certified per-piece export for Concurso 36/2012 has been produced to us or located in the corpus. This is therefore the complete digest of the sources currently located—not yet a legally complete docket denominator. Non-production does not establish nonexistence, loss, suppression or alteration.",
+  "access_basis": [
+    {
+      "authority": "RDL 6/2023 articles 46.2 and 47.3-4",
+      "official_url": "https://www.boe.es/eli/es/rdl/2023/12/19/6",
+      "function": "official act relation, signed electronic index and electronic copy"
+    },
+    {
+      "authority": "LOPJ article 234",
+      "official_url": "https://www.boe.es/eli/es/lo/1985/07/01/6/con",
+      "function": "access by parties and persons demonstrating direct legitimate interest"
+    },
+    {
+      "authority": "Regulation 1/2005 articles 4-5",
+      "official_url": "https://www.boe.es/eli/es/a/2005/09/15/%281%29/con",
+      "function": "written access request, decision and review route"
+    }
+  ],
+  "statutory_outputs_requested": [
+    {
+      "output": "master_section_and_piece_inventory",
+      "coverage": "opening through current status or closure",
+      "status": "not_produced_or_located"
+    },
+    {
+      "output": "signed_electronic_index",
+      "legal_anchor": "RDL 6/2023 article 47.3",
+      "coverage": "main file and every section/pieza",
+      "status": "not_produced_or_located"
+    },
+    {
+      "output": "official_relation_of_procedural_acts",
+      "legal_anchor": "RDL 6/2023 article 46.2",
+      "coverage": "acts, resolution dates and status for every section/pieza",
+      "status": "not_produced_or_located"
+    },
+    {
+      "output": "complete_electronic_copy_or_download_manifest",
+      "legal_anchor": "RDL 6/2023 article 47.4 and LOPJ article 234",
+      "coverage": "every accessible electronic component",
+      "status": "not_produced_or_located"
+    },
+    {
+      "output": "legacy_and_non_electronic_exception_inventory",
+      "coverage": "paper, annexes, exhibits, hearing minutes, recordings and components not incorporated in the EJE",
+      "status": "not_produced_or_located"
+    }
+  ],
+  "baseline": {
+    "located_docket_items_2016_2021": 65,
+    "connected_external_complaints_not_counted_as_docket": 1,
+    "searchable_core_items": 63,
+    "scan_review_pending": 2
+  },
+  "refresh": {
+    "drive_searches": 12,
+    "gmail_bounded_queries": 4,
+    "article_75_report": {
+      "id": "C36-AC-2013-01-15-ART75",
+      "date": "2013-01-15",
+      "pages": 37,
+      "status": "located_searchable_body_annexes_open",
+      "locator": "Drive:15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc",
+      "public_digest_es": "evidence/insolvency-36-2012/court-file-2016-2021/ARTICLE75_DIGITISED_DIGEST_ES.md",
+      "public_digest_en": "evidence/insolvency-36-2012/court-file-2016-2021/ARTICLE75_DIGITISED_DIGEST_EN.md",
+      "not_closed": [
+        "certified filing copy and filing receipt",
+        "Annex I creditor list",
+        "supporting inventory and valuation annexes",
+        "source-level redacted page-faithful public transcript"
+      ]
+    },
+    "conclusion_application": {
+      "id": "C36-CAND-2019-02-08-CONCLUSION",
+      "document_date": "2019-02-08",
+      "status": "located_party_text_filing_receipt_unverified",
+      "locator": "Drive:1ZMMKo2yvHuhg-mOgQ6VEegJSBFNI2ljQ",
+      "filename_date_warning": "Later filenames and email circulation refer to 2021; the document text is dated 8 February 2019. It is not counted as a docket act until receipt and disposition are reconciled.",
+      "requested_effect": "Conclusion for asserted disappearance of insolvency, payment/refinancing of creditors, reactivation, cancellation subject to payment and suspension of liquidation while the request was processed.",
+      "open_chain": [
+        "filed version and LexNET receipt",
+        "five annexes including financing and EUR 400,000 guarantee evidence",
+        "AC report",
+        "oppositions",
+        "judicial disposition",
+        "service and finality"
+      ]
+    },
+    "gmail_lexnet_reconciliation_queue": {
+      "provider_package_filenames": 105,
+      "coverage_observed": "2021-06-09 through 2022-11-04",
+      "classification": {
+        "laj_dior_or_diligencia": 52,
+        "filing_or_transfer_packages": 41,
+        "judicial_orders": 5,
+        "providencias": 5,
+        "decrees": 1,
+        "other": 1
+      },
+      "status": "metadata_located_document_level_deduplication_and_merits_review_pending",
+      "warning": "Package filename count is not an act count. Notifications, covers, duplicates, forwarded copies and annex families may concern the same underlying act."
+    },
+    "official_index_requests": [
+      {
+        "recipient_lane": "TSJ Canarias Secretaría de Gobierno",
+        "registration": "REGAGE26e00073341191",
+        "date": "2026-08-15",
+        "status": "answered_2026_08_20_exp_gub_38_2026_archived_and_directed_items_4_8_to_lopj_234_no_index_produced"
+      },
+      {
+        "recipient_lane": "Secretaría de Coordinación Provincial de Las Palmas",
+        "registration": "REGAGE26e00073341382",
+        "date": "2026-08-15",
+        "status": "receipt_located_response_or_production_not_located"
+      },
+      {
+        "recipient_lane": "Secretaría General de la Administración de Justicia",
+        "registration": "REGAGE26e00073341477",
+        "date": "2026-08-15",
+        "status": "receipt_located_response_or_production_not_located"
+      }
+    ],
+    "supervisory_response_and_appeal": {
+      "correct_file_reference": "Exp. Gub. 38/2026",
+      "email_subject_typo": "28/2026",
+      "response_date": "2026-08-20",
+      "response_effect": "Archived the supervisory lane, recorded ATLANTE preservation/traceability for incorporated information and directed requests 4-8 to LOPJ article 234; did not produce the requested index or testimony chains.",
+      "appeal_registration": "REGAGE26e00074355631",
+      "appeal_date": "2026-08-20",
+      "registry_processing_confirmed": "2026-08-21",
+      "superior_merits_decision": "not_located",
+      "publication_boundary": "Appeal filed and registry processing confirmed is not a superior merits admission or outcome."
+    }
+  },
+  "completeness_tests": {
+    "official_outputs_to_repository": "blocked until the signed per-piece index, official act relation and exception inventory are produced",
+    "repository_to_official_outputs": "blocked until the signed per-piece index, official act relation and exception inventory are produced",
+    "located_source_to_digest": "partial; Article 75 body digested and LexNET packages queued",
+    "filing_to_receipt_to_disposition_to_service_to_finality": "partial",
+    "authorization_to_deed_to_registry_to_bank_to_accounts": "partial"
+  },
+  "publication_rules": [
+    "verified record != allegation != inference != adjudicated holding",
+    "filing != receipt != admission != finding != outcome",
+    "package filename count != docket act count",
+    "absence from the located corpus != non-existence",
+    "private originals, signatures, identifiers, addresses, account data and verification codes remain outside public Git"
+  ],
+  "next_closure_event": "Obtain the master piece inventory, article 47.3 signed electronic indexes, article 46.2 act relations and legacy/non-electronic exception inventory; reconcile them against both the 65-node baseline and the 105-package LexNET queue in both directions; then publish corrected counts and gaps."
+}

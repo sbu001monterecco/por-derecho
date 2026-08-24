@@ -1,7 +1,7 @@
 # SUN PARK ACTIVE ESTATE 2018–2021 — EIGHT-SOURCE SUPPLEMENT AND 18-SOURCE DIGITISATION CONTROL
 
-**Date:** 23 August 2026
-**Status:** PUBLIC-SAFE REPOSITORY CONTROL — NO PRIVATE SOURCE BINARIES ADDED
+**Date:** 23 August 2026  
+**Status:** PUBLIC-SAFE REPOSITORY CONTROL — NO PRIVATE SOURCE BINARIES ADDED  
 **Namespace:** `ME-PDFSCAN-*`
 
 ## 1. Purpose and boundary
@@ -102,11 +102,11 @@ Existing general requests remain active, especially `ME-001`, `ME-003`, `ME-005`
 | `ME-PDFSCAN-012` | Native RFC822/Google Takeout export of the complete 23-Feb/8-Mar-2021 thread, full headers/MIME, attachment manifest and original photographic report; later replies, written authority/refusal, videoconference notes, expert/notarial report, instructions, invoices and access outcome. | Authenticates notice and closes the request→response→outcome chain. | `MAT-009`, `ME-006`, `ME-050` | PARTIAL — rendered PDF only |
 | `ME-PDFSCAN-013` | 2-Feb-2021 Registro Público Concursal publication, direct-sale authorisation, improved offer, auction file, bidder access/due diligence, valuation and final signed treatment. | Tests the reasoning that the bidder accepted the asset's condition. | `ME-008`, `ME-011`, `ME-012` | OPEN |
 | `ME-PDFSCAN-014` | Any later appeal preservation or responsibility action against CAM/AC; implementation after non-convalidation, deed/Registry rectification, possession, inventory, remediation and complete EUR 400,000 accounting. | Tests whether the issue was corrected, litigated or economically reconciled. | `ME-008`, `ME-011`, `ME-020`, `ME-050`, `ME-CAM7J-008`, `ME-CAM7J-013` | OPEN |
-| `ME-PDFSCAN-015` | Exact filed/native version of the 1-Mar-2018 photo annex; all 50 underlying photographs/video with EXIF; photographer/compiler statement; identity proof; door condition; witnesses; access/security/police/notarial records; filing receipt and official treatment. | The later compilation and its filename do not prove date, identity, force, authority or legal character. | `ME-042`, `ME-045`, `JDAM_JOAN_CRUZ_SUN_PARK_ACCESS_EVIDENCE_NODE_19AUG2026.md` | PARTIAL — compiled derivative located |
+| `ME-PDFSCAN-015` | Exact filed/native version of the 1-Mar-2018 photo annex; all 50 underlying photographs/video with EXIF; photographer/compiler statement; identity proof; door condition; witnesses; access/security/police/notarial records; filing receipt and official treatment. | The later compilation and its filename do not prove date, identity, force, authority or legal character. | `ME-042`, `ME-045`; private exact-name evidence-node crosswalk retained outside public Git | PARTIAL — compiled derivative located |
 | `ME-PDFSCAN-016` | Filing-stamped/certified source for the CAM opposition, LexNET receipt, annex inventory and cryptographic verification; reconcile `MAT-007` with alternate facsimile `MAT-007-ALT-01`. | Preserves variant provenance without double-counting the pleading. | `MAT-007`, `ME-007` | PARTIAL — two derivatives located |
-| `ME-PDFSCAN-017` | Complete JV 1260/2011 court file: demand annexes, admission/service, 23-Feb-2012 extension annexes and admission order, defence, hearing/audio, evidence, first-instance judgment, AP 89/2014, finality and enforcement/outcome. | Closes the procedural-equivalence and result questions; party pleadings alone do not. | `ME-047` | PARTIAL |
+| `ME-PDFSCAN-017` | Complete JV 1260/2011 court file: demand annexes, admission/service, 23-Feb-2012 extension annexes and admission order, defence, hearing/audio, evidence, first-instance judgment, certified/signed AP 89/2014, finality and enforcement/outcome. | AP 89/2014 and the initiating pleading are now hash-controlled; the mislabelled `1240-2011` upload is an exact alias. The remaining request closes the procedural and implementation chain without extending the eighteen-unit holding. | `ME-047`, `ME-077` | PARTIAL — AP judgment and initiating pleading located; finality/enforcement/annexes open |
 | `ME-PDFSCAN-018` | Complete 2014 Fiscalía complaint package: all exhibits represented only by cover sheets, filing receipt, Fiscalía 39/2014 investigation and archive/outcome, plus DP 332/2014 transmission/use. | The current PDF contains complaint text and exhibit covers, not the exhibits or outcome. | `ME-002`, `ME-003` | PARTIAL |
-| `ME-PDFSCAN-019` | Complete native DI 248/2018 file: complaint/expansions, receipts, ordered and performed diligences, statements, expert/supporting material, 7-May-2019 decree, service and any Article 773 LECrim judicial refiling/outcome. | Prevents an investigative archive from being treated as acquittal or a judicial merits decision. | `ME-001` | PARTIAL |
+| `ME-PDFSCAN-019` | Complete native DI 248/2018 file: complaint/expansions, including the controlled 6/7-Feb-2019 evidentiary submission; every receipt; its three absent native exhibits; ordered and performed diligences; statements; expert/supporting material; 7-May-2019 decree; service; and any Article 773 LECrim judicial refiling/outcome. | The archive expressly discusses the 15-Jan expansion but does not expressly identify the February filing. Receipt/treatment must be proved, and an investigative archive must not be treated as an acquittal or judicial merits decision. | `ME-001`, `ME-079` | PARTIAL — February submission located; receipt/exhibits/treatment open |
 | `ME-PDFSCAN-020` | Complete 2019 non-convalidation/AC sequence: original 7-May judicial decree quoted by the parties, AC filing 1760/19, 13-May Aweswell/LPB responses, ratification/decision, service, appeals and implementation. | Party quotations do not replace the official act or later treatment. | `ME-005`–`ME-008`, `ME-012`, `ME-020` | PARTIAL |
 | `ME-PDFSCAN-021` | Reconcile the one-page 2-May-2018 order fragment in the earlier ten-file set with the complete signed DP 1132 opening/severance order and certified docket. | A fragment without the operative part must not control the order's meaning. | `ME-045`, `MAT-010`, `ME-CAM7J-009` | PARTIAL |
 | `ME-PDFSCAN-022` | Component-level originals for the mixed 1-Aug-2018 bundle: court act, each LexNET receipt, each opposition/party filing, exhibits, service and resulting signed decision. | A mixed packet is neither one complaint nor one merits ruling. | `ME-045` | PARTIAL |
@@ -129,6 +129,29 @@ Before public release, remove unnecessary personal email addresses, telephone nu
 
 Any proposed publication of lawyer correspondence, private email, witness material or faces requires a separate privilege/confidentiality, privacy, safety and source-necessity review.
 
-## 8. Next implementation gate
+## 8. Editorial decision recorded — 23 August 2026
 
-Repository search derivatives and source cards may be prepared immediately. Public raw-PDF links, face images and the final page architecture require an explicit editorial decision. No claim should be made that a GitHub change is live until the deployed URL is checked independently.
+The recommended treatment was approved for draft implementation:
+
+- private preservation masters remain outside public Git;
+- official Autos may receive full redacted substantive transcripts and, after page-level redaction QA, public raster derivatives;
+- opposing party positions must be paired and labelled; email remains a redacted digest; photographs remain limited/blurred pending provenance;
+- the bilingual active-estate dossier may be prepared in the existing draft PR;
+- professional/institutional actors may be named where materially necessary, while private third parties and faces are anonymised; and
+- the PR remains unmerged until final source, redaction, link, parity and rendered-page review.
+
+No public raw-PDF, face image or confidential document was authorised merely by that decision. No claim should be made that a GitHub change is live until the merge SHA, deployment and exact URLs are checked independently.
+
+## 9. Ten-file follow-on and revised corpus denominator
+
+A later ten-file batch changes the denominator and closes/refines several gaps. Across all supplied files there are now **28 filenames, 26 unique binaries and 25 documentary items**. In particular:
+
+- the new filename `Juicio Desahucio por Precario 1240-2011.pdf` is an exact duplicate of `TS-04`; `1240` is a false alias for the JV 1260/2011 initiating pleading;
+- AP Sentencia 89/2014 is now independently hash-controlled and its materially adverse 18-unit holding must be shown;
+- 19-Dec-2017 and 16-Apr-2018 Autos are complete derivative aliases of already controlled official acts;
+- a newly located 16-Jan-2019 party filing supplies a precise fourth-report / 28-Nov deed / EUR 400,000 retrieval bridge but not the official outcome;
+- a second, distinct 24-Feb-2021 Auto grants a one-year liquidation extension and must be controlled separately from `MAT-008`;
+- a confidential unsigned valuation draft overreads what the 16-Apr Auto adopted; and
+- an orphan `DOC 7` consists of 2008 bank/hedge receipts, not Concurso liquidation records.
+
+The controlling follow-on is `archive/SUN_PARK_28_UPLOAD_SOURCE_DIGITISATION_AND_PUBLICATION_CONTROL_23AUG2026.md`, with machine companion `assets/data/sun-park-28-upload-source-manifest-v1.json` and finite requests `ME-PDFSCAN-023`–`031`. The present supplement remains the detailed control for the eight-source/MAT reconciliation.
