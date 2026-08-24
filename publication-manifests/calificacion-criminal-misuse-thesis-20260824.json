@@ -10,9 +10,18 @@
   "runtime_first_read_fix": {
     "branch": "codex/calificacion-thesis-first-read-20260824",
     "pull_request": 883,
-    "status": "PR_OPEN",
+    "status": "MERGED_LIVE_VERIFIED",
+    "merge_sha": "d971f9e189f38850dbc424ed458f30af9db384ab",
     "reason": "Live browser inspection found legacy organisers moving the sitewide thesis into collapsed/later content on the homepage and behind unrelated modules on the canonical page.",
     "required_result": "Exactly one thesis block in the first-read sequence: directly after the route hero, except immediately after the existing source-of-funds evidence panel where that panel owns the first post-hero slot."
+  },
+  "strategic_pinning_fix": {
+    "branch": "codex/calificacion-thesis-strategic-pinning-v2-20260824",
+    "pull_request": 889,
+    "status": "PR_OPEN_SUPERSEDES_884",
+    "superseded_pull_request": 884,
+    "reason": "The broader live-route sweep found the AP appeal, independence note and institutional hub callouts technically visible but several screens below the opening section.",
+    "required_result": "AP, independence-note and institutional callouts remain in the first-read position after all late-loading modules settle; the guided Calificación dossier retains its decision-first order."
   },
   "expected_routes": {
     "es": [
@@ -38,6 +47,7 @@
     "sitemap.xml",
     "sitemap-calificacion.xml",
     "scripts/validate_calificacion_criminal_misuse_thesis.py",
+    "scripts/render_calificacion_criminal_misuse_thesis.mjs",
     ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
     "publication-manifests/calificacion-criminal-misuse-thesis-20260824.json"
   ],

@@ -217,7 +217,8 @@
   const mountPage=()=>{
     const hero=d.querySelector('.dossier-hero, main > .hero, .hero');
     if(!hero)return false;
-    hero.insertAdjacentElement('afterend',build());
+    const thesis=d.querySelector('[data-calificacion-misuse-thesis]');
+    (thesis||hero).insertAdjacentElement('afterend',build());
     return true;
   };
 
