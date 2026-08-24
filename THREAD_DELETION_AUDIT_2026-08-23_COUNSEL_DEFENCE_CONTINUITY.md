@@ -50,6 +50,19 @@ The public page states as an investigative inference that the AC sought to instr
 
 The client-file proposition is separately controlled. SLJ did not file all 4,458 underlying files; it filed the full 179-page inventory and selected material. The LexNET wrapper shows immediate copy-transfer only to Aweswell's procurator. Actual AC/CAM access is open. The client's theft characterisation is not an adjudicated fact; retention authority, necessity, confidentiality, proportionality and prejudice require assessment.
 
+### €400,000 sale / counsel-payment / “false peace” revision — 24 August 2026
+
+- controlling correction: the 31-finca locales/pools sale price was €400,000, not €1,000;
+- AC plan: ACTÚA value for that branch €489,361.96; proposed direct-sale price €400,000;
+- 26 June 2018 order: suspension expressly covered listed mortgaged apartments; AC later reported treating the separate locales/pools branch as outside it; LPB's unitary-plan objection remains a pleaded position;
+- Protocol 2150, 28 November 2018: deed recites sale, cheque/carta de pago and possession;
+- AC report, 20 December 2018: says the cheque became effective, an LPB account was opened and the AC paid itself remuneration;
+- 24 October 2019 / 12 May 2020: nonconvalidation and confirmation; no complete refund/recredit/ledger bridge follows from those orders alone;
+- 1 June 2020 Jiménez report: “peace”, possible complaint withdrawal, assurance of Parrilla/procurator payment, praise of Parrilla and IA/CAM positions;
+- July 2020 AC report: separate €26,750 Parrilla payment entry.
+
+Public wording now identifies Gil/Patricia's **“false peace” / perverse-incentive** thesis: the asset/funds track and counsel-access/payment track are connected as a supported reason for investigation. It expressly does not publish bribery, collusion, impropriety or a €400,000→€26,750 funds link as proved. Exact invoice, authority, purchaser debit, estate credit, AC self-payment, Parrilla payment and post-nonconvalidation ledger remain open.
+
 ### Cuatrecasas
 
 The controlled source set now preserves the mandate as one integrated history:
@@ -88,6 +101,9 @@ The work ledger places Cristo from May 2016 to June 2022. A 25 January 2018 comm
 8. Cristo finding is limited to the identified mandate.
 9. Remaining professionals stay B1, B2, B3… pending verification/publication decision.
 10. No privileged advice or private email body is reproduced.
+11. The sale price is €400,000, not €1,000; the €489,361.96 figure is the plan-reported ACTÚA appraisal for the 31-finca branch.
+12. The apartment suspension, the AC's outside-suspension position, LPB's unitary-plan objection and the later nonconvalidation are kept distinct.
+13. “False peace” and “perverse incentive” are attributed client/investigative characterisations. Bribery, a common source of funds and impropriety of a properly earned fee are not asserted.
 11. The exact pre-contract no-contact sentence has not been independently recovered; it is published as client testimony corroborated by contemporaneous claims-first, anti-intermediation and no-information instructions.
 12. A requested CAM contact is not described as a completed call.
 13. Claimed SLJ hours are not converted into a finding of substantial work, and the Decree 316/2021 no-signed-filing finding remains visible.
