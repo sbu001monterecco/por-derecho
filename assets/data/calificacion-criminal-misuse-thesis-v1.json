@@ -1,0 +1,43 @@
+{
+  "schema": "por-derecho.calificacion-criminal-misuse-thesis.v1",
+  "control_date": "2026-08-24",
+  "proceeding": "Concurso 36/2012 · Sentencia 163/2023 · AP Las Palmas Section 4 · RPL 2523/2025",
+  "status": "SERIOUS_DOCUMENT_BASED_INVESTIGATIVE_THESIS_NOT_ADJUDICATED_CRIMINAL_FACT",
+  "pillars": [
+    {
+      "id": "AC_OVERREACH",
+      "documented": "The complete 47-page Administrator report is located; the first-level DOC1, DOC2 and DOC4-DOC8 set is identified; Judgment 163/2023 rejected or narrowed multiple branches.",
+      "open_proof": "Certified court index, autonomous-DOC3 explanation and proposition-specific personal knowledge matrix."
+    },
+    {
+      "id": "FISCAL_TWO_PAGE_OPINION",
+      "documented": "The complete two-page opinion dated 12 March 2019 requested 15 years' disqualification, damages and deficit liability and contains a facial actor-description defect.",
+      "open_proof": "Underlying source file, drafting history, relied-on material and actor-specific knowledge."
+    },
+    {
+      "id": "DI248_INSTITUTIONAL_CIRCULARITY",
+      "documented": "The Ministerio Fiscal's adverse culpability position was invoked in the 7 May 2019 archive of Gil/Aweswell's complaint against the AC/CAM perimeter.",
+      "open_proof": "Complete DI 248 expediente and diligence ledger; no personal coordination inferred."
+    },
+    {
+      "id": "SELECTED_JUDICIAL_ADOPTION",
+      "documented": "Judgment 163/2023 accepted selected adverse propositions and rejected or narrowed others; identified grounds are under appeal in RPL 2523/2025.",
+      "open_proof": "Certified evidence-before-court matrix, hearing record and current appellate decision/status."
+    },
+    {
+      "id": "POSSIBLE_ACOSTA_MATOS_BENEFIT",
+      "documented": "The controlled record permits investigation of possible direct or indirect benefit.",
+      "open_proof": "Specific asset, decision, causation, harm, benefit, counterfactual and innocent-explanation proof."
+    }
+  ],
+  "proof_boundary": {
+    "criminal_guilt_adjudicated": false,
+    "common_design_proved": false,
+    "personal_coordination_proved": false,
+    "knowing_falsity_globally_proved": false,
+    "purposeful_private_benefit_proved": false,
+    "silence_is_admission": false
+  },
+  "appeal_firewall": "RPL 2523/2025 must be decided only on the procedurally usable record, pleaded grounds, adversarial process and applicable law. The public thesis is not extra-record evidence and seeks no predetermined result.",
+  "right_of_reply": "Substantive source-backed corrections receive equivalent visibility with date, source and scope preserved."
+}
