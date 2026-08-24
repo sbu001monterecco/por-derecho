@@ -1,0 +1,83 @@
+{
+  "publication_id": "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824",
+  "control_marker": "calificacion-criminal-misuse-thesis-20260824",
+  "owner": "Gil Marer / Aweswell",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "REMOTE_SOURCE",
+  "branch": "codex/calificacion-investigative-thesis-20260824",
+  "expected_routes": {
+    "es": [
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html"
+    ],
+    "en": [
+      "en/insolvency-classification-criminal-misuse-thesis/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CALIFICACION_CRIMINAL_MISUSE_INVESTIGATIVE_THESIS_PUBLICATION_CONTROL_24AUG2026.md",
+    "assets/data/calificacion-criminal-misuse-thesis-v1.json",
+    "assets/data/unitary-route-registry-v1.json",
+    "assets/calificacion-criminal-misuse-thesis-20260824.js",
+    "assets/calificacion-reader-experience-20260817.js",
+    "assets/site.js",
+    "assets/styles.css",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+    "en/insolvency-classification-parallel-lives/index.html",
+    "es/concurso-36-2012-ap-seccion-4/index.html",
+    "en/insolvency-36-2012-ap-section-4/index.html",
+    "es/nota-independencia-judicial-estado-procesal-reserva-acciones/index.html",
+    "sitemap.xml",
+    "sitemap-calificacion.xml",
+    "scripts/validate_calificacion_criminal_misuse_thesis.py",
+    ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
+    "publication-manifests/calificacion-criminal-misuse-thesis-20260824.json"
+  ],
+  "required_controls": [
+    "serious document-based investigative thesis",
+    "five-pillar first-read visibility",
+    "actor-by-actor proof matrix",
+    "no adjudicated criminal guilt",
+    "no inference of common design or coordination from aligned benefit",
+    "RPL 2523/2025 appeal firewall",
+    "contrary evidence retained",
+    "right of reply with equal visibility",
+    "silence is not admission",
+    "ES/EN parity",
+    "corrected AC report and hearing-record source status"
+  ],
+  "open_evidence": [
+    "certified court index for the AC report and annex set, including DOC3 status",
+    "complete DI 248 expediente and diligence ledger",
+    "standalone Pink Canary/Patricia opposition annex package",
+    "exact filed LPB appeal and principal receipt",
+    "Gil principal appeal filing receipt",
+    "official hearing acta, court-certified recordings and verifiable transcript",
+    "approximate 39-minute VIDEO02 to VIDEO03 interval explanation",
+    "current RPL 2523/2025 judgment, service and finality status",
+    "actor-specific causation, harm and possible-benefit matrix"
+  ],
+  "publication_safety": {
+    "raw_private_emails_committed": false,
+    "private_hearing_recordings_committed": false,
+    "unnecessary_personal_identifiers_committed": false,
+    "criminal_guilt_stated_as_adjudicated": false,
+    "common_design_stated_as_proved": false,
+    "personal_coordination_stated_as_proved": false,
+    "purposeful_private_benefit_stated_as_proved": false,
+    "contrary_evidence_preserved": true,
+    "appeal_independence_preserved": true,
+    "right_of_reply_preserved": true
+  },
+  "validation": {
+    "status": "LOCAL_PASS_PENDING_CI",
+    "evidence": [
+      "python scripts/validate_calificacion_criminal_misuse_thesis.py",
+      "python scripts/validate_publication_integrity.py",
+      "python scripts/validate_insolvency_perimeter_language.py",
+      "python scripts/validate_mission_critical_repo.py",
+      "node --check on the new scoped module, global loader and Calificación reader-order script",
+      "HTML parser and sitemap XML parse checks"
+    ],
+    "visual_render": "PENDING_REMOTE_BROWSER; local Chromium was unavailable and browser download failed before any external publication"
+  }
+}
