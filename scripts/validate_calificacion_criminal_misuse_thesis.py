@@ -111,19 +111,29 @@ def main() -> int:
     loader = read("assets/calificacion-criminal-misuse-thesis-20260824.js")
     site = read("assets/site.js")
     css = read("assets/styles.css")
+    render = read("scripts/render_calificacion_criminal_misuse_thesis.mjs")
+    workflow = read(".github/workflows/validate-calificacion-criminal-misuse-thesis.yml")
     for marker in ["'/es/'", "'/en/'", "carta-abierta-ministerio-fiscal", "acosta-matos-perimetro", "dataset.calificacionMisuseThesis"]:
         if marker not in loader:
             errors.append(f"scoped loader missing {marker!r}")
-    if "calificacion-criminal-misuse-thesis-20260824.js?v=20260824b" not in site:
+    if "calificacion-criminal-misuse-thesis-20260824.js?v=20260824c" not in site:
         errors.append("assets/site.js: criminal-misuse loader not registered")
     if "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824" not in css:
         errors.append("assets/styles.css: scoped thesis styles missing")
-    for marker in ["pinFirstRead", "source-funds-notice-section--featured", "const anchor = sourceFunds || hero", "observer.observe(main, { childList: true })", "7000, 11000"]:
+    for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const anchor = sourceFunds || hero", "observer.observe(main, { childList: true })", "calificacionMisusePin", "window.setInterval(pin, 1000)", "22000, 30000"]:
         if marker not in loader:
             errors.append(f"scoped loader missing first-read stability control {marker!r}")
+    for marker in ["es-institutional", "en-appeal", "es-acosta", "es-guided-calificacion", "sourceFundsCount", "appealFirewall", "20260824c"]:
+        if marker not in render:
+            errors.append(f"rendered first-read gate missing {marker!r}")
+    if "render_calificacion_criminal_misuse_thesis.mjs" not in workflow or "Upload rendered validation evidence" not in workflow:
+        errors.append("Calificación thesis workflow does not execute and preserve the rendered first-read gate")
     reader = read("assets/calificacion-reader-experience-20260817.js")
     if "criminalMisuse = block('[data-calificacion-misuse-thesis]')" not in reader or "gateway,\n        criminalMisuse," not in reader:
         errors.append("Calificación reader order does not keep the thesis in the first-read sequence")
+    audience = read("assets/audience-experience-order-20260823.js")
+    if "const criminalMisuse = main.querySelector('[data-calificacion-misuse-thesis]')" not in audience or "[criminalMisuse, priority, prosecution" not in audience:
+        errors.append("Homepage audience organiser does not protect the thesis in the first-read sequence")
 
     sitemap = read("sitemap-calificacion.xml")
     for route in ["/es/tesis-uso-criminal-procedimiento-calificacion/", "/en/insolvency-classification-criminal-misuse-thesis/"]:
