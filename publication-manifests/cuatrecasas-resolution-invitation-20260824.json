@@ -3,7 +3,11 @@
   "control_marker": "cuatrecasas-resolution-invitation-20260824",
   "owner": "Gil Marer / Aweswell Limited",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "DRAFT",
+  "current_state": "LIVE_VERIFIED",
+  "branch": "codex/cuatrecasas-resolution-invitation-20260824",
+  "controlling_pr": 945,
+  "merge_sha": "518b9df6eee9c4f27cb6832c16e423033e7943fb",
+  "verified_at": "2026-08-24T21:12:03Z",
   "purpose": "Publish a bilingual, public-safe record that Aweswell opened a structured resolution lane with Cuatrecasas while preserving entity separation, every existing or contemplated accountability route, current-counsel confidentiality and the non-admission/non-waiver boundary.",
   "expected_routes": {
     "es": [
@@ -34,8 +38,31 @@
     "rights_or_limitation_positions_waived": false,
     "silence_treated_as_proof": false
   },
+  "deployment_evidence": [
+    "PR 945 merged to main as 518b9df6eee9c4f27cb6832c16e423033e7943fb after all 9 pull-request workflows passed.",
+    "Pages run 32777923876 completed successfully for the exact merge SHA at 2026-08-24T21:09:49Z.",
+    "All 9 post-merge workflows completed successfully.",
+    "Cache-busted readback returned HTTP 200 and exact repository SHA-256 parity for both bilingual routes."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/#resolution-invitation",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/#invitacion-resolucion"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-24T21:12:03Z",
+    "pull_request": 945,
+    "merge_sha": "518b9df6eee9c4f27cb6832c16e423033e7943fb",
+    "pages_run": 32777923876,
+    "workflow_result": "9/9 pull-request workflows and 9/9 post-merge workflows passed.",
+    "readback_result": "2/2 bilingual routes returned HTTP 200, contained the required anchors and safeguards, and exactly matched the merged repository bytes.",
+    "sha256": {
+      "en/cuatrecasas-sun-park/index.html": "57fd44231c6b7665d8e969635a37427a3da131dc37a69e8e742dba3858c26ba6",
+      "es/cuatrecasas-sun-park/index.html": "d2816f76bac6d5ab5b16cc7e2e8783d1a35ac36be0ea75a39f051a56a0117b56"
+    }
+  },
   "validation": {
-    "status": "LOCAL_PASS",
+    "status": "CI_GREEN_LIVE_VERIFIED",
     "evidence": [
       "scripts/validate_cuatrecasas_resolution_invitation.py",
       "scripts/validate_cuatrecasas_billing_email_sync.py",
@@ -43,7 +70,11 @@
       "scripts/validate_repository_preservation.py",
       "scripts/validate_publication_integrity.py",
       "scripts/validate_audience_experience.py",
-      "git diff --check"
+      "git diff --check",
+      "PR 945: 9/9 pull-request workflows passed",
+      "Merge 518b9df6eee9c4f27cb6832c16e423033e7943fb: 9/9 post-merge workflows passed",
+      "Pages run 32777923876: success for the exact merge SHA",
+      "2/2 bilingual routes matched repository SHA-256"
     ]
   }
 }
