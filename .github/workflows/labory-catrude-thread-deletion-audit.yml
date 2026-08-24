@@ -54,7 +54,7 @@ jobs:
           persist-credentials: false
       - name: Run read-only evidence, deletion-safety and live-route audit
         env:
-          LIVE_MODE: ${{ github.event_name != 'pull_request' }}
+          LIVE_MODE: ${{ github.event_name != 'pull_request' || github.head_ref == 'agent/labory-catrude-live-closeout-20260824' }}
         run: |
           args=(--output-dir artifacts/labory-catrude-deletion-audit)
           if [[ "$LIVE_MODE" == "true" ]]; then
