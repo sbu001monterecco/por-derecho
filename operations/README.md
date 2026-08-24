@@ -22,7 +22,7 @@ Publication state is already controlled through `publication-manifests/`. Operat
 - `MONITORING` — the initial setup/gap is closed but a recurring health check remains necessary.
 - `CLOSED` — the closure test has been met and closure evidence is recorded.
 
-An item being open does **not** fail CI. The operational-integrity validator fails when an item is malformed, unowned, untracked, stale, missing its next action/closure test, contradictory, or falsely marked closed.
+An item being open does **not** fail CI. The operational-integrity validator hard-fails malformed, unowned, untracked, contradictory or falsely closed records, including missing dates, next actions, closure tests or evidence. An elapsed review date is reported prominently as an advisory warning in universal CI; it does not by itself fail an unrelated additive publication.
 
 ## Blocking dimensions
 
@@ -35,13 +35,17 @@ Each item declares whether it blocks:
 
 This prevents a generic phrase such as “open operational items” from being mistaken for “the website is unsafe to publish” or “the originating thread cannot be deleted.”
 
+Blocking dimensions must be applied to the action or truth claim they protect. The registry does not currently encode path-level applicability, so a generic blocking flag must not be converted into a repository-wide publication freeze without a separately scoped decision and evidence.
+
 ## Source hierarchy
 
 The registry is a control index, not self-proving evidence. For each item, verify the linked issue, PR, publication manifest, workflow result, platform setting or repository file before advancing state.
 
 ## Review discipline
 
-Every non-closed item must carry `last_verified_at` and `review_by`. Once `review_by` passes, the repository gate requires the item to be refreshed before unrelated work can merge. This deliberately turns forgotten operational debt into visible repository friction rather than silent drift.
+Every non-closed item must carry `last_verified_at` and `review_by`. The item is current through `review_by`; beginning the following day it is review-due. Universal CI reports review-due items prominently but does not fail an unrelated additive merge. A stale item is a hard stop only for a separately scoped action or current-state claim that actually relies on that item. Refresh status and evidence after a real review; never extend dates as a substitute for verification.
+
+After changing the validator or this policy, run `python3 .github/governance/test_validate_operational_items.py`. The deterministic cases cover the due-day boundary, advisory future-date behaviour and the structural conditions that must remain hard failures. CI wiring for this test remains a separate shadow-mode decision; the existing universal workflow continues to execute the production validator itself.
 
 ## Public website boundary
 

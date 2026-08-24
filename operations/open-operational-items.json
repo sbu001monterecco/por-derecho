@@ -2,7 +2,7 @@
   "registry_version": 1,
   "as_of": "2026-08-22",
   "owner": "Por Derecho / Project Sun Rock",
-  "policy": "Open operational work must be explicit, owned, linked, review-dated and closed only by evidence. Open status is not a CI failure; stale, unowned, untracked or falsely closed status is.",
+  "policy": "Open operational work must be explicit, owned, linked, review-dated and closed only by evidence. Malformed, unowned, untracked, contradictory or falsely closed status is a hard CI failure. Review-due status is an advisory warning in universal CI and becomes a hard stop only for a separately scoped action or current-state claim that actually relies on it.",
   "items": [
     {
       "id": "OPS-2026-001",
