@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -80,12 +81,14 @@ required = {
     ],
 }
 
+unwanted_domain = "awe" + "swell.com"
+
 forbidden = {
     "en/san-telmo-ricpe-sun-park/index.html": [
-        "https://aweswell.com/en/san-telmo-ricpe-sun-park/",
+        f"https://{unwanted_domain}/en/san-telmo-ricpe-sun-park/",
     ],
     "es/san-telmo-ricpe-sun-park/index.html": [
-        "https://aweswell.com/es/san-telmo-ricpe-sun-park/",
+        f"https://{unwanted_domain}/es/san-telmo-ricpe-sun-park/",
     ],
 }
 
@@ -98,6 +101,23 @@ for path, markers in required.items():
     for marker in forbidden.get(path, []):
         if marker in text:
             failures.append(f"{path}: forbidden stale marker remains {marker!r}")
+
+# Keep the unwanted domain out of every tracked file, not only the San Telmo
+# pages that originally carried stale canonical metadata.  The domain string is
+# assembled above so this guard does not need to store the forbidden URL itself.
+tracked_files = subprocess.run(
+    ["git", "ls-files", "-z"],
+    cwd=ROOT,
+    check=True,
+    capture_output=True,
+).stdout.split(b"\0")
+unwanted_domain_bytes = unwanted_domain.encode("ascii")
+for tracked_file in tracked_files:
+    if not tracked_file:
+        continue
+    relative_path = tracked_file.decode("utf-8")
+    if unwanted_domain_bytes in (ROOT / relative_path).read_bytes().lower():
+        failures.append(f"{relative_path}: unwanted domain reference remains")
 
 if failures:
     raise SystemExit("SAN TELMO RENDERED ATTRIBUTION VALIDATION: FAIL\n" + "\n".join(f" - {failure}" for failure in failures))
