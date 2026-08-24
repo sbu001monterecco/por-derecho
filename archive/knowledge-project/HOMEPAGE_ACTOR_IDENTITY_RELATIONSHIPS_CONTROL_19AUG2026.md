@@ -1,15 +1,37 @@
 # Homepage actor identity, relationship and chronology control — 19 Aug 2026
 
+**Official-public-source and allegation-strength reconciliation:** 24 August 2026
+
 ## Canonical identity / relationship rules
 
 These rules are authoritative for future Por Derecho public copy, visual modules and internal prompts unless superseded by stronger primary evidence through the canonical supersession process.
 
-- **Francisco Mario Matos Matas (FMMM)** — husband of **Shaila María Cogolludo Ramos**.
-- **Shaila María Cogolludo Ramos** — wife of **Francisco Mario Matos Matas** and daughter of **Antonio Cogolludo Rojas**.
-- **Antonio Cogolludo Rojas** — father of **Shaila María Cogolludo Ramos**.
+- **Francisco Mario Matos Matas (FMMM)** — project-controlled relationship: husband of **Shaila María Cogolludo Ramos**. The bounded 24-Aug official corporate-source screen did not independently prove kinship; do not describe this as a BORME finding.
+- **Shaila María Cogolludo Ramos** — project-controlled relationships: wife of **Francisco Mario Matos Matas** and daughter of **Antonio Cogolludo Rojas**. Preserve the underlying source class; do not infer either relationship from surname or company association.
+- **Antonio Cogolludo Rojas** — project-controlled relationship: father of **Shaila María Cogolludo Ramos**. The bounded official corporate-source screen did not independently prove kinship.
 - **Asunción Aizpurúa Sánchez** — canonical expansion of `AAS`.
 - **Laura Patricia Acosta Matos** — use full name on first public mention; thereafter `Laura Acosta Matos` or `Laura` is preferred. Do not shorten her to `Patricia` as the default public name.
 - Do **not** use the nickname `Tuco` for Antonio Cogolludo Rojas.
+
+## Official-public-source name and corporate boundary — 24 Aug 2026
+
+### Exact-name locks
+
+- Use **Francisco Mario Matos Matas**, **Antonio Cogolludo Rojas** and **Shaila María Cogolludo Ramos** on first mention.
+- Do not use `Cogoyudo`, `Shayla` or the shorter **Francisco Matos Matas** as if it identified FMMM without an independent identity bridge.
+- Use **ORION RENTAL SOCIMI, S.A.**; do not use `Orion Sosimi Rental`, `Sosimi Rental` or a reordered form.
+- Preserve **AGM CANARY ASSET MANAGEMENT, S.L.**, **PAMALEXSHA SERVICIOS INTEGRALES, S.L.**, **EXPLOTACIONES NOALPA, S.L.** and the BORME legal-name form **SANTA LUCIA REAL ESTATE, S.L.**
+
+### Two-cluster public-source lock
+
+The homepage and shared actor component may show two separate official-public corporate clusters:
+
+1. **FMMM ↔ ORION RENTAL SOCIMI, S.A. / AGM CANARY ASSET MANAGEMENT, S.L. ↔ José Daniel Acosta Matos.** BORME records FMMM and JDAM as Orion directors and AGM power-holders: [Orion](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35), [AGM](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-98-35). CNMV controls the exact [Orion identity/ISIN](https://www.cnmv.es/portal/ancv/isin?isin=ES0105829008&lang=es).
+2. **Antonio / Shaila ↔ Pamalexsha / Noalpa / Santa Lucia Real Estate.** BORME records specified Antonio administrator and Shaila apoderada roles: [Pamalexsha](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35), [Noalpa](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35), [Shaila/Noalpa](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35), [Shaila/Pamalexsha](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35), [Antonio/Santa Lucia](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35). A [Canary Government release](https://www3.gobiernodecanarias.org/noticias/el-gobierno-materializa-la-colaboracion-publico-privada-con-la-calificacion-de-132-inmuebles-protegidos/) describes Shaila as owner of the promoting company in that housing context; attribute that description to the Government rather than to BORME shareholding proof.
+
+The bounded official-source screen did **not** prove one common company containing FMMM and Antonio/Shaila. The homepage must not draw that co-company edge as verified. `Not located` does not mean `nonexistent`.
+
+This public-source boundary does not delete project-controlled Sun Park working relationships, Community records, issuer/company self-description or Gil's allegations. It requires them to remain visibly source-classified. Family, company or professional association does not prove shared criminal purpose.
 
 ## Source-led chronology locks
 
@@ -64,6 +86,7 @@ The controlling visual is **five private actors plus one separate insolvency con
 - He must not be rendered as a sixth private actor or as automatically sharing the five actors' alleged purpose.
 - The visual test is: `knowledge → statutory power/duty → act or omission → patrimonial consequence`.
 - The attributed Project allegation may state that specified acts, omissions, procedural positions or silences enabled or failed to stop the private/economic chain. It may not state collusion, common criminal intent or proved criminal liability without a source or adjudication establishing it.
+- **24-Aug allegation-strength lock:** Gil directly alleges affirmative AC commissions and complete enablement through communications, meetings, the 18-May security/authority route, access/maintenance authorisations, implementation choices, later procedural reliance/adoption and non-reversal, together with operative omissions. The first-read component must not reduce that allegation to silence, passive approval or negligent supervision. Evidence level, lawful narrow-authority defence, provider-excess possibility, contrary record and non-adjudication remain separate and adjacent.
 
 ### Mandatory visual chain
 
@@ -80,6 +103,8 @@ The design may state that the public record describes a broken lock, chains, pad
 ### Judicial-protection layer
 
 The judge and Court are not seventh private actors. A separate strip may attribute the allegation that the chain obtained judicial protection, continuity or later validation instead of being interrupted. Judicial decisions, omissions, competence and safeguards must remain on their own institutional pages with procedural status, sources, reasonable defence and correction rights.
+
+**24-Aug allegation-strength lock:** Gil directly alleges that Judge Alberto López Villarrubia performed affirmative judicial acts that enabled or preserved the result, together with the strongest omission-based prevaricación/refusal/delay allegation. He characterises the combined acts and omissions as sabotage of a funded, viable and successful exit. The independently controlled June record supports a developed and financeable but conditional exit architecture, not completed drawdown or assured success; Daniel Irigoyen's 13-Jun account is a contemporaneous professional report, not a judicial minute; repeated visits require visit-by-visit proof; and the 26-Jun protective suspension is mandatory counterevidence. The homepage must preserve the direct attribution and those proof limits together.
 
 ### Design prohibitions
 

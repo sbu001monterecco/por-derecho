@@ -20,7 +20,7 @@
     if (!wrapper) {
       wrapper = document.createElement('section');
       wrapper.className = 'audience-full-record';
-      wrapper.dataset.audienceFullRecord = '20260823';
+      wrapper.dataset.audienceFullRecord = '20260824';
       wrapper.innerHTML = `<details><summary class="shell"><span>${isEnglish ? 'Continue into the full record' : 'Continuar con el expediente completo'}</span><strong>${isEnglish ? 'Reverse chronology, operating platform, recovery, institutions, future and source register' : 'Cronología inversa, plataforma operativa, recuperación, instituciones, futuro y registro de fuentes'}</strong><em>${isEnglish ? 'Open the complete page' : 'Abrir la página completa'}</em></summary><div data-audience-full-record-content></div></details>`;
     }
     const content = wrapper.querySelector('[data-audience-full-record-content]');
@@ -47,25 +47,28 @@
     if (!main) return;
 
     observer?.disconnect();
+    deduplicate('.ac-dfa-update-section');
     deduplicate('.prosecution-entry-20260821');
-    deduplicate('[data-prosecution-entry-20260821]');
+    deduplicate('[data-prosecution-entry-20260824]');
 
     const isEnglish = document.documentElement.lang === 'en';
     const hero = main.querySelector(':scope > #inicio, :scope > #home, :scope > .hero');
+    const controlling = main.querySelector(':scope > .ac-dfa-update-section');
     const criminalMisuse = main.querySelector('[data-calificacion-misuse-thesis]');
     const priority = main.querySelector(':scope > .priority-band');
-    const prosecution = main.querySelector(':scope > .prosecution-entry-20260821, :scope > [data-prosecution-entry-20260821]');
+    const prosecution = main.querySelector(':scope > .prosecution-entry-20260821, :scope > [data-prosecution-entry-20260824]');
     const summary = document.getElementById(isEnglish ? 'sixty-second-summary' : 'resumen-60-segundos');
     const audiences = document.getElementById('psr-reader-intent');
     const perimeters = document.getElementById(isEnglish ? 'case-perimeters' : 'perimetros-del-caso');
     const sourceFunds = main.querySelector('.source-funds-notice-section');
     const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
-    const coreSections = [hero, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
+    const protectedCriminalSequence = [criminalMisuse, priority, prosecution];
+    const coreSections = [hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
     if (sourceFunds) coreSections.push(sourceFunds);
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
-    for (const section of [criminalMisuse, priority, prosecution, summary, audiences, perimeters]) {
+    for (const section of [controlling, ...protectedCriminalSequence, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
@@ -81,14 +84,15 @@
     }
 
     if (prosecution) {
-      prosecution.dataset.audienceProtectedAttribution = '20260823';
+      prosecution.dataset.audienceProtectedAttribution = '20260824';
       if (prosecution.closest('[data-audience-full-record]')) {
         placeAfter(prosecution, priority || hero);
       }
     }
 
-    main.dataset.audienceOrder = '20260823';
-    main.dataset.expressCriminalAttributionVisible = prosecution ? '20260823' : 'pending';
+    main.dataset.audienceOrder = '20260824';
+    main.dataset.expressCriminalAttributionVisible = prosecution ? '20260824' : 'pending';
+    main.dataset.fiveActorControllingAllegationVisible = controlling ? '20260824' : 'pending';
     main.dataset.sanTelmoAttributionVisible = sanTelmo ? '20260823' : 'pending';
     observer?.observe(main, { childList: true });
     openHashTarget();

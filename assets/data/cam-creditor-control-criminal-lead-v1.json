@@ -1,10 +1,17 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.3",
   "publication_id": "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823",
-  "control_marker": "cam-creditor-control-criminal-lead-20260823",
-  "control_date": "2026-08-23",
+  "control_marker": "cam-creditor-control-criminal-lead-20260824",
+  "control_date": "2026-08-24",
+  "substantive_update_marker": "five-actor-shadow-administration-ac-judicial-acts-omissions-funded-exit-20260824",
+  "update_controls": [
+    "FIVE_ACTOR_SHADOW_DE_FACTO_ADMINISTRATION_DIRECT_ALLEGATION_20260824",
+    "AC_AFFIRMATIVE_COMMISSIONS_ENABLEMENT_AND_OMISSIONS_DIRECT_ALLEGATION_20260824",
+    "JUDICIAL_AFFIRMATIVE_ACTS_OMISSIONS_FUNDED_EXIT_SABOTAGE_DIRECT_ALLEGATION_20260824",
+    "AWESWELL_SPONSOR_PERFORMANCE_COLLATERAL_AND_INSTITUTIONAL_DEPENDENCIES_20260824"
+  ],
   "status": "DRAFT_ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_FINDING",
-  "purpose": "Machine-readable control for Gil Marer / Aweswell's direct actor-specific criminal allegations concerning the 7 June 2018 Sun Park entry, CAM creditor control, de facto administration, insolvency-administrator approval or ratification, and judicial omission. It preserves the attribution at full strength while classifying evidence, contrary material, unresolved proof, adjudication and source literal separately.",
+  "purpose": "Machine-readable control for Gil Marer / Aweswell's direct actor-specific criminal allegations concerning the five named private actors, the 7 June 2018 Sun Park entry, CAM creditor control, shadow or de facto administration, Insolvency Administrator affirmative commission, enablement, approval, ratification and omissions, and judicial affirmative acts and omissions including alleged funded-exit sabotage. It preserves the attribution at full strength while classifying evidence, contrary material, unresolved proof, adjudication and source literal separately.",
   "canonical_source": "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
   "non_dilution_rule": "archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md",
   "public_routes": {
@@ -21,10 +28,50 @@
     "non_dilution_required": true,
     "first_read_prominence_required": true,
     "source_literals_preserved": true,
+    "five_actor_shadow_administration_allegation_preserved": true,
+    "administrator_affirmative_commission_and_omission_allegation_preserved": true,
+    "judicial_acts_omissions_and_funded_exit_sabotage_allegation_preserved": true,
+    "finance_condition_allocation_and_source_status_preserved": true,
     "criminal_guilt_adjudicated": false,
     "collective_guilt_presumed": false,
     "presumption_of_innocence_preserved": true,
     "right_of_reply_preserved": true
+  },
+  "canonical_private_actor_perimeter_20260824": {
+    "marker": "FIVE_ACTOR_SHADOW_DE_FACTO_ADMINISTRATION_DIRECT_ALLEGATION_20260824",
+    "control_rule": "Five private actors are named individually. The Insolvency Administrator and judge remain separate institutional nodes, not sixth and seventh private actors.",
+    "attributed_to": "Gil Marer",
+    "direct_shadow_administration_allegation": "Gil Marer directly alleges that the five named private actors formed or used a shadow or de facto administration and allegedly concealed parallel-control architecture spanning Community authority, debt and voting, access and keys, security, maintenance, works and valuation, insolvency strategy, the funded rescue, operation, income and project benefit.",
+    "criminal_finding": false,
+    "collective_participation_in_every_step_established": false,
+    "shared_criminal_intent_established": false,
+    "actors": [
+      {
+        "id": "ACT-FMMM",
+        "name": "Francisco Mario Matos Matas",
+        "short_name": "FMMM"
+      },
+      {
+        "id": "ACT-ACR",
+        "name": "Antonio Cogolludo Rojas",
+        "short_name": "Antonio Cogolludo"
+      },
+      {
+        "id": "ACT-SMCR",
+        "name": "Shaila María Cogolludo Ramos",
+        "short_name": "Shaila Cogolludo"
+      },
+      {
+        "id": "ACT-JDAM",
+        "name": "José Daniel Acosta Matos",
+        "short_name": "JDAM"
+      },
+      {
+        "id": "ACT-LPAM",
+        "name": "Laura Patricia Acosta Matos",
+        "short_name": "Laura Acosta Matos"
+      }
+    ]
   },
   "allegation_lanes": [
     {
@@ -34,12 +81,15 @@
       "attribution_strength": "DIRECT_CRIMINAL_ALLEGATION",
       "criminal_finding": false,
       "status": "FIRST_ORDER_ACTOR_SPECIFIC_CRIMINAL_ALLEGATION",
+      "marker": "FIVE_ACTOR_SHADOW_DE_FACTO_ADMINISTRATION_DIRECT_ALLEGATION_20260824",
+      "direct_shadow_administration_allegation": "Gil directly alleges that the five named actors formed or used a shadow or de facto administration and allegedly concealed parallel material-control architecture. The allegation is actor-specific but does not establish that every actor performed every step.",
       "actors": [
-        "CAM entity or entities",
         "José Daniel Acosta Matos (JDAM)",
         "Laura Patricia Acosta Matos (LPAM)",
         "Francisco Mario Matos Matas (FMMM)",
         "Antonio Cogolludo Rojas",
+        "Shaila María Cogolludo Ramos",
+        "CAM entity or entities",
         "separately identified Community, service, security and locksmith actors"
       ],
       "documented_basis": [
@@ -63,16 +113,41 @@
     },
     {
       "id": "CAM-LEAD-02",
-      "label": "Insolvency-administrator criminal approval, enablement, ratification or legally equivalent omission",
+      "label": "Insolvency-administrator affirmative commission, enablement, approval, ratification and omissions",
       "attributed": true,
       "attribution_strength": "DIRECT_CRIMINAL_ALLEGATION",
       "criminal_finding": false,
       "status": "FIRST_ORDER_ACTOR_SPECIFIC_CRIMINAL_ALLEGATION",
+      "marker": "AC_AFFIRMATIVE_COMMISSIONS_ENABLEMENT_AND_OMISSIONS_DIRECT_ALLEGATION_20260824",
+      "actor": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "direct_criminal_allegation": "Gil directly alleges affirmative commission and enablement as well as omissions: that the Administrator supplied, advanced, authorised, adopted or ratified the authority and access route, participated through emails and meetings, maintained the result after notice, and failed to protect, recover, account, report or preserve the funded exit.",
+      "affirmative_commissions_and_enablement_alleged": [
+        "used LPB's majority position to request or advance the 18 May Community security and access-authority route",
+        "selected, requested or sought Community ratification for security and authorised identified entries into LPB spaces",
+        "issued or participated in emails, authorisations and meetings used to implement access, supervision or maintenance",
+        "approved, adopted or ratified the access-and-lock result after the event, including the recorded acceptance of broken locks used to execute the authority",
+        "used Community debt, certificate or spreadsheet inputs and advanced procedural or liquidation positions that allegedly maintained the private-control result"
+      ],
+      "omissions_alleged": [
+        "failed to delimit and supervise the authority route",
+        "failed after notice to recover control and protect LPB, CEXP, Matkator and third-party property",
+        "failed to require accounts for access, operation, works, income, value and benefit",
+        "failed to report the full material-control change and consequences accurately to the court",
+        "failed to support, preserve or complete the documented funded exit"
+      ],
+      "funded_exit_sabotage_claim": "Gil directly alleges that the Administrator's affirmative conduct and omissions enabled the 7 June rupture and helped sabotage a developed, multi-route and conditionally closable exit from Concurso 36/2012. Gil alleges that Aweswell performed or could perform sponsor-side and counterparty conditions, while operative blocked dependencies concerned staged collateral preservation and delivery, judicial mortgage authority and an accurate Administrator debt certificate.",
       "documented_basis": [
         "administrator participation in or connection to the 18 May 2018 security-authority chain",
         "administrator denial of the principal lock-takeover instruction",
         "administrator description of a narrower access authorisation",
+        "31 July 2018 statement recording access authorisations, a forced door, another access being closed and acceptance of broken locks used to execute the authority",
+        "contemporaneous emails and reported meetings concerning access, control and the proposed funded exit",
         "later notice and response questions concerning recovery, protection, accounting and court reporting"
+      ],
+      "contrary_evidence": [
+        "the Administrator denied instructing the principal lock takeover and described narrower maintenance or supervision authority",
+        "a lawful preservation and security mandate may have been exceeded without his knowledge",
+        "no current source adjudicates common criminal purpose, criminal enablement or funded-exit sabotage"
       ],
       "evidential_ladder": [
         "lawful narrow mandate exceeded without administrator knowledge",
@@ -91,15 +166,38 @@
     },
     {
       "id": "CAM-LEAD-03",
-      "label": "Judicial omission or omissionary judicial prevarication",
+      "label": "Judicial affirmative acts and omissions, alleged prevarication and funded-exit sabotage",
       "attributed": true,
       "attribution_strength": "DIRECT_GIL_MARER_CRIMINAL_ALLEGATION",
       "criminal_finding": false,
       "status": "DIRECT_ALLEGATION_REQUIRING_EXACT_ACT_AND_STATUTORY_CLASSIFICATION",
+      "marker": "JUDICIAL_AFFIRMATIVE_ACTS_OMISSIONS_FUNDED_EXIT_SABOTAGE_DIRECT_ALLEGATION_20260824",
+      "actor": "Alberto López Villarrubia",
+      "direct_criminal_allegation": "Gil directly alleges the strongest act-and-omission form of judicial prevarication: affirmative resolutions, refusals, procedural directions and maintenance of the procedural course, together with failures to protect, investigate, account and reverse, allegedly enabled the private-control result and sabotaged the funded exit.",
+      "affirmative_acts_alleged": [
+        "issued resolutions, refusals or procedural directions that allegedly preserved or legitimised the private-control result",
+        "maintained a procedural course that allegedly failed to give effect to the funded rescue after being informed of its architecture",
+        "treated or allowed material control, title, rescue and causation issues to remain unresolved in ways Gil alleges were affirmative judicial enablement"
+      ],
+      "omissions_alleged": [
+        "failed to provide timely effective protection against the change of material control",
+        "failed to preserve the operating hotel and the ONA, bridge-finance, bank-finance or sale exit routes",
+        "failed to require a complete account of access, locks, security, works, income, control and the effect on the funded exit",
+        "failed to reverse the private-control result while an effective remedy allegedly remained possible"
+      ],
+      "funded_exit_sabotage_claim": "Gil directly alleges that the judge played a direct enabling role, through affirmative acts and omissions, in sabotaging a developed, multi-route and conditionally closable exit after Daniel Irigoyen reported the coordinated funder, company/shareholder and operator route. Gil alleges that Aweswell performed or could perform sponsor-side and counterparty conditions and that the operative blocked dependencies were collateral preservation and delivery plus court and Administrator outputs; lender, credit and management approvals remained separate conditions.",
       "documented_basis": [
         "complaints, requests and evidence presented to judicial or institutional channels",
         "identifiable resolutions, refusals, delay or omissions alleged to have preserved the private-control result",
+        "Daniel Irigoyen's contemporaneous report of 13 June 2018 meetings with the judge and then the Administrator concerning payment or consignment of liabilities and conclusion of the insolvency proceeding",
+        "signed ONA operating lease and identified Lagune, Ben Oldman and Stoneweg funding or sale materials",
         "later causation and actual-control questions requiring act-by-act reconstruction"
+      ],
+      "contrary_evidence": [
+        "Irigoyen's report is not an official judicial minute and must be checked against the court diary, filings, service, hearings and orders",
+        "the Lagune proposal was indicative and non-binding and other funding routes had conditions requiring satisfaction",
+        "the 26 June 2018 suspension, the 24 October 2019 non-validation and partially favourable aspects of the 2021 order are material contrary or corrective judicial acts",
+        "an adverse, incomplete or delayed ruling does not by itself establish prevarication or sabotage"
       ],
       "mandatory_proof_matrix": [
         "exact judge, court, date and procedural capacity",
@@ -122,6 +220,135 @@
       ]
     }
   ],
+  "funded_exit_control_20260824": {
+    "attributed_to": "Gil Marer",
+    "direct_allegation": "Gil directly alleges that the five-actor private-control architecture, the Administrator's affirmative enablement and omissions, and the judge's affirmative acts and omissions combined to sabotage a developed, multi-route and conditionally closable exit from Concurso 36/2012. Gil alleges that Aweswell performed or could perform all sponsor-side, borrower-side or counterparty conditions within its control, while the operative blocked dependencies concerned preservation and delivery of the staged security package and court or Administrator authority and debt-certificate outputs.",
+    "criminal_finding": false,
+    "documented_components": [
+      "signed ONA hotel operating lease",
+      "Lagune Hospitalidad / Grupo Batipart EUR 26 million indicative non-binding offer with stated equity and a six-week diligence and closing route",
+      "identified Ben Oldman bridge or financing route",
+      "Stoneweg document titled Oferta Vinculante transmitted on 12 June 2018",
+      "Daniel Irigoyen's contemporaneous 13 June report of meetings with the judge and then the Administrator concerning the funder, company/shareholder, operator, payment or consignment and conclusion of the insolvency proceeding",
+      "documented staged-security design separating collateral on closing from LPB mortgage security after exit"
+    ],
+    "contrary_evidence_and_limits": [
+      "Irigoyen's account is not an official judicial minute",
+      "the Lagune proposal was indicative and non-binding and each route retained conditions",
+      "existence of financing materials does not prove unconditional closing or criminal causation",
+      "Gil's sponsor-side performance allegation does not independently prove every condition was satisfied, accepted or waived",
+      "lender, credit, management and board approvals remain distinct from borrower-side performance",
+      "no judgment has established that the private actors, Administrator or judge sabotaged the funded exit"
+    ],
+    "unresolved_bridges": [
+      "native meeting, diary, service and follow-up records",
+      "route-by-route allocation of sponsor-side performance, institutional outputs, collateral delivery and lender-internal approvals",
+      "complete funding mandates, conditions, diligence, authority and proof of funds",
+      "the exact act or omission that defeated each route",
+      "actor-specific knowledge, intent, causation, loss and benefit"
+    ]
+  },
+  "finance_condition_allocation_20260824": {
+    "marker": "AWESWELL_SPONSOR_PERFORMANCE_COLLATERAL_AND_INSTITUTIONAL_DEPENDENCIES_20260824",
+    "status": "ATTRIBUTED_PARTY_POSITION_PLUS_VERIFIED_TRANSACTION_STRUCTURE_NOT_A_CLOSING_OR_CAUSATION_FINDING",
+    "attributed_to": "Gil Marer",
+    "direct_allegation": {
+      "es": "Gil Marer alega directamente que Aweswell cumplió o podía cumplir todas las condiciones de promotor, prestatario o contraparte bajo su control; que las dependencias operativas bloqueadas fueron la preservación y entrega del paquete escalonado de garantías y colateral, la autorización judicial y la certificación exacta de deuda por la Administración Concursal; y que la cadena de cinco actores, Administrador Concursal y juez controló, desplazó o socavó esas dependencias mediante un mecanismo coercitivo alegado de control paralelo o acreedor en posesión que obstruyó la redención y refinanciación.",
+      "en": "Gil Marer directly alleges that Aweswell performed or could perform all sponsor-side, borrower-side or counterparty conditions within its control; that the operative blocked dependencies were preservation and delivery of the staged security and collateral package, judicial authority and an accurate Insolvency Administrator debt certificate; and that the five-actor, Administrator and judge chain controlled, displaced or undermined those dependencies through an alleged coercive parallel-control or lender-in-possession mechanism obstructing redemption and refinancing.",
+      "criminal_finding": false,
+      "causation_adjudicated": false
+    },
+    "condition_classes": {
+      "sponsor_borrower_or_counterparty_side": {
+        "gil_position": "Gil alleges that Aweswell performed or remained able and ready to perform every sponsor-side, borrower-side or counterparty condition within its control.",
+        "documented_conditions": [
+          "satisfactory legal and registry due diligence, including concerning Matkator assets",
+          "an acceptable recent first-class ECO valuation and the agreed LTV",
+          "a duly executed ONA or hotel-operation agreement, satisfactory business plan and required owner-side authority",
+          "evidence of creditor amounts, the amount required to exit and advanced minority-owner negotiations where required",
+          "execution or progressive formalisation of the agreed pre-exit and post-exit security package"
+        ],
+        "boundary": "The current record does not independently establish, route by route, that every sponsor-side or counterparty condition was satisfied, evidenced, accepted or waived."
+      },
+      "court_administrator_and_collateral_dependencies": {
+        "gil_position": "Gil alleges that operative obstruction concerned preservation and delivery of collateral and outputs controlled or undermined across the five-actor, Administrator and judicial chain.",
+        "documented_conditions": [
+          "authorisation from Juzgado de lo Mercantil no. 1 de Las Palmas to grant first-ranking mortgages in favour of VSO",
+          "an Administrator or liquidator letter or certificate confirming that concursal and estate liabilities did not exceed EUR 13.84 million for the VSO route",
+          "judicial or documentary evidence that the amount to be borrowed was sufficient to exit liquidation",
+          "preservation, availability and formalisation of the staged security and collateral package, including post-exit LPB mortgage security",
+          "payment or deposit of sufficient funds into the court account to permit LPB to leave Concurso 36/2012"
+        ],
+        "boundary": "The dependencies are documented; deliberate obstruction by any actor and resulting criminal causation remain attributed allegations, not findings."
+      },
+      "lender_internal_or_third_party": {
+        "documented_conditions": [
+          "VSO management and credit-committee approval",
+          "other lender, credit, management, board or internal approvals applicable to the route",
+          "Lagune board approval, complete due diligence, definitive SPA and clean-title requirements",
+          "lender execution, definitive facility documents, waiver decisions, closing and drawdown"
+        ],
+        "boundary": "These are not borrower-side acts. Completion, waiver or failure must be proved from the relevant lender or third-party record."
+      }
+    },
+    "route_source_status": {
+      "ona_clubotel": {
+        "status": "VERIFIED_PRIMARY_DOCUMENT_PLUS_CONTEMPORANEOUS_OPERATOR_CORRESPONDENCE",
+        "documented": "The signed 6 June 2018 industry lease and addendum name the Sun Park Owners' Community and Clubotel La Dorada, S.L. as legal parties; contemporaneous correspondence describes ONA as intended operator and the contract refers to OnaSystem.",
+        "conditions": [
+          "sufficient funds paid into the Mercantile Court account to permit LPB to leave insolvency",
+          "a favourable Owners' General Meeting resolution authorising the contract"
+        ],
+        "limits": "ONA was the intended operator context, not the funder; ONA and Clubotel are not collapsed, and satisfaction of the conditions or commencement of operation is not established by the instrument alone."
+      },
+      "stoneweg_vso": {
+        "status": "VERIFIED_PRIMARY_CONDITIONAL_INSTRUMENT_PLUS_CONTEMPORANEOUS_CORRESPONDENCE",
+        "documented": "Stoneweg's 12 June email described an Oferta Vinculante; the VSO instrument itself is titled Oferta Vinculante Condicionada and contemplated up to EUR 15.5 million subject to the lower acceptable ECO valuation and a 65 percent LTV ceiling.",
+        "conditions": [
+          "first-ranking mortgages and agreed LTV",
+          "judicial mortgage authority",
+          "Administrator debt certificate capped at EUR 13.84 million for concursal and estate liabilities",
+          "acceptable first-class ECO valuation",
+          "Matkator legal and registry due diligence",
+          "VSO management and credit-committee approval",
+          "other corporate, control and security conditions"
+        ],
+        "limits": "The reviewed copy did not prove final Aweswell acceptance, committee approval, definitive facility, closing or drawdown."
+      },
+      "ben_oldman": {
+        "status": "DOCUMENTED_FROM_SIGNED_PRIMARY_TERM_SHEET_AND_CONTEMPORANEOUS_TRANSMISSION",
+        "documented": "The current canonical source records a separate later Binding Term Sheet dated 1 August 2018 and signed by the lender-side signatory, Aweswell and Matkator, with a later signed extension and staged pre-exit and post-exit security.",
+        "limits": "It remained a conditional term sheet with expiry mechanics, not a definitive facility agreement, proof that every condition was satisfied or waived, closing, or drawdown."
+      },
+      "lagune_elaia": {
+        "status": "DISTINCT_NONBINDING_LOI_AND_SEPARATE_CONDITIONAL_RIGHT_LETTER",
+        "documented": "The controlled record distinguishes a buyer-signed EUR 26 million Lagune Hospitalidad proposal from a separate Aweswell-signed conditional preferred-right letter addressed to Elaia Investment Spain SOCIMI, S.A.",
+        "conditions": [
+          "board approval",
+          "complete due diligence",
+          "definitive SPA",
+          "clean title",
+          "seller acceptance and separate Elaia acceptance"
+        ],
+        "limits": "The Lagune LOI was nonbinding, seller and Elaia acceptance blocks were blank, no binding takeout was located, and the Elaia-route label does not itself prove that Lagune was an Elaia subsidiary."
+      }
+    },
+    "publication_boundaries": [
+      "do not state that one condition alone controlled closing unless a route-specific primary source proves it",
+      "do not convert Gil's sponsor-side performance allegation into independent proof that every condition was satisfied",
+      "do not treat lender, credit, management or board approval as borrower-side performance",
+      "do not state unconditional funding, inevitable closing or adjudicated sabotage",
+      "use the attributed institutional formulation of an alleged coercive parallel-control or lender-in-possession mechanism obstructing redemption or refinancing"
+    ],
+    "unresolved_evidence": [
+      "route-by-route condition ledger",
+      "condition satisfaction, waiver and prevention evidence",
+      "court authority and certified debt-output chronology",
+      "collateral preservation and delivery chronology",
+      "definitive facilities, closing records, drawdown and exact non-completion reason",
+      "actor-specific knowledge, intent, causal contribution and benefit"
+    ]
+  },
   "capacity_convergence": {
     "period": "2017-2022",
     "capacities": [
@@ -335,6 +562,17 @@
     "cam_valid_credit_possible": true,
     "cam_valid_individual_titles_possible": true,
     "later_adjudication_legally_distinct_and_non_retroactive": true,
+    "irigoyen_report_is_not_official_judicial_minute": true,
+    "funding_routes_had_conditions": true,
+    "sponsor_side_performance_complete_for_every_route_independently_proved": false,
+    "all_lender_credit_management_or_board_approvals_proved": false,
+    "single_operational_blocking_condition_proved": false,
+    "judicial_corrective_or_contrary_acts_preserved": [
+      "26 June 2018 suspension",
+      "24 October 2019 non-validation",
+      "partially favourable aspects of the 2021 order"
+    ],
+    "funded_exit_sabotage_adjudicated": false,
     "scope_rule": "Preserve the procedural outcome prominently and compare its exact subject, actors and evidence with the expanded later record; do not recast it as either a conviction, universal merits declaration or reason to suppress the direct attribution."
   },
   "publication_boundaries": {
@@ -344,7 +582,15 @@
     "criminal_guilt_as_established": false,
     "direct_instruction_as_adjudicated_fact": false,
     "administrator_criminal_approval_as_adjudicated_fact": false,
+    "five_actor_shadow_administration_as_adjudicated_fact": false,
+    "administrator_affirmative_commission_or_omission_as_adjudicated_fact": false,
     "judicial_prevarication_as_established": false,
+    "judicial_affirmative_acts_or_omissions_as_adjudicated_prevarication": false,
+    "funded_exit_sabotage_as_adjudicated_fact": false,
+    "all_sponsor_side_conditions_as_independently_verified_fact": false,
+    "single_or_only_closing_condition_as_verified_fact": false,
+    "lender_internal_approval_as_borrower_side_performance": false,
+    "non_institutional_criminal_epithet_as_fact": false,
     "dilute_direct_attribution_to_question_or_lead": false,
     "rewrite_source_literal_as_canonical_identity": false,
     "treat_source_typo_as_separate_actor": false,
@@ -354,6 +600,8 @@
     "treat_later_adjudication_as_retroactive_authority": false,
     "publish_raw_private_evidence": false,
     "preserve_strongest_defences": true,
+    "preserve_20260824_direct_allegations": true,
+    "preserve_finance_condition_allocation_and_route_source_status": true,
     "preserve_right_of_reply": true
   },
   "controlled_sources": [
@@ -364,6 +612,9 @@
     "archive/CALIFICACION_EXTRACONCURSAL_TAKEOVER_BORJA_SECURITY_SOURCE_UPGRADE_16AUG2026.md",
     "archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md",
     "archive/JUDGE_KNOWLEDGE_MATRIX_15AUG2026.md",
+    "archive/ONA_FINANCE_CONDITIONS_STAGED_SECURITY_POSITION_16AUG2026.md",
+    "archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md",
+    "archive/CALIFICACION_A03_COMMERCIAL_NORMALISATION_EXIT_SOURCE_COMPLETION_16AUG2026.md",
     "archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md",

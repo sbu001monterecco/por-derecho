@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260820b';
+  const VERSION = '20260824a';
   // Public-edge source marker: data.acDfaVisibilityStability
   let scheduled = false;
 
@@ -25,12 +25,12 @@
   const stabilise = () => {
     scheduled = false;
     keepOne('[data-ac-dfa-allegation-visibility]', panel => {
-      panel.dataset.acDfaUpdate = '20260820';
-      panel.dataset.acDfaCanonicalStatus = '20260820';
+      panel.dataset.acDfaUpdate = '20260824';
+      panel.dataset.acDfaCanonicalStatus = '20260824';
       panel.dataset.acDfaVisibilityStable = VERSION;
     });
     keepOne('[data-ac-dfa-route-relevance]', panel => {
-      panel.dataset.acDfaCrosslink = '20260820';
+      panel.dataset.acDfaCrosslink = '20260824';
       panel.dataset.acDfaVisibilityStable = VERSION;
     });
     document.documentElement.dataset.acDfaVisibilityStability = VERSION;

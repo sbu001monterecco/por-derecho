@@ -4,7 +4,7 @@
 
   // Preserve and execute the complete pre-highlight site loader unchanged.
   const prior = document.createElement('script');
-  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260820a', current.src).href;
+  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824a', current.src).href;
   prior.async = false;
   prior.setAttribute('data-pre-intervencion-site-loader', 'true');
   document.head.appendChild(prior);
@@ -184,26 +184,26 @@
   }
 })();
 
-/* AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260820 */
+/* AC-COMMUNITY-DE-FACTO-ADMINISTRATION-LOADERS-20260824 */
 (() => {
   const current = document.currentScript;
   if (!current) return;
   const base = new URL('.', current.src);
 
   const baseModule = document.createElement('script');
-  baseModule.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260820b', base).href;
+  baseModule.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260824a', base).href;
   baseModule.async = false;
   baseModule.setAttribute('data-ac-community-de-facto-administration-loader', 'true');
   document.head.appendChild(baseModule);
 
   const visibility = document.createElement('script');
-  visibility.src = new URL('ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260820b', base).href;
+  visibility.src = new URL('ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260824a', base).href;
   visibility.async = false;
   visibility.setAttribute('data-ac-de-facto-knowing-facilitation-visibility-loader', 'true');
   document.head.appendChild(visibility);
 
   const stability = document.createElement('script');
-  stability.src = new URL('ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260820b', base).href;
+  stability.src = new URL('ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260824a', base).href;
   stability.async = false;
   stability.setAttribute('data-ac-de-facto-knowing-facilitation-stability-loader', 'true');
   document.head.appendChild(stability);
@@ -271,20 +271,20 @@
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-sitewide-discovery-nav-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('sitewide-discovery-nav-20260821.js?v=20260823a', current.src).href;
+  module.src = new URL('sitewide-discovery-nav-20260821.js?v=20260824a', current.src).href;
   module.async = false;
-  module.setAttribute('data-sitewide-discovery-nav-loader', '20260822');
+  module.setAttribute('data-sitewide-discovery-nav-loader', '20260824');
   document.head.appendChild(module);
 })();
 
-/* PROSECUTION-PUBLIC-ENTRY-20260821 */
+/* PROSECUTION-PUBLIC-ENTRY-20260824 */
 (() => {
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-prosecution-public-entry-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('prosecution-public-entry-20260821.js?v=20260821a', current.src).href;
+  module.src = new URL('prosecution-public-entry-20260821.js?v=20260824a', current.src).href;
   module.async = false;
-  module.setAttribute('data-prosecution-public-entry-loader', '20260821');
+  module.setAttribute('data-prosecution-public-entry-loader', '20260824');
   document.head.appendChild(module);
 })();
 

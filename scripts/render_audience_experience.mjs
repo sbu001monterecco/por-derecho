@@ -32,6 +32,7 @@ try {
         const main = document.querySelector('main');
         const directChildren = [...(main?.children || [])];
         const index = (selector) => directChildren.indexOf(document.querySelector(selector));
+        const controllingNode = document.querySelector('.ac-dfa-update-section');
         const prosecutionNode = document.querySelector('.prosecution-entry-20260821');
         const summaryNode = document.querySelector(summary);
         const audienceNode = document.querySelector('#psr-reader-intent');
@@ -40,8 +41,12 @@ try {
         const fullRecordNode = document.querySelector('[data-audience-full-record]');
         const fullRecordDetails = fullRecordNode?.querySelector('details');
         const prosecutionText = prosecutionNode?.textContent?.replace(/\s+/g, ' ').trim() || '';
+        const controllingText = controllingNode?.textContent?.replace(/\s+/g, ' ').trim() || '';
         return {
           order: [
+            index('.ac-dfa-update-section'),
+            index('[data-calificacion-misuse-thesis]'),
+            index('.priority-band'),
             index('.prosecution-entry-20260821'),
             index(summary),
             index('#psr-reader-intent'),
@@ -52,6 +57,11 @@ try {
           audienceCards: audienceNode?.querySelectorAll('.psr-intent-card').length || 0,
           perimeterCards: perimeterNode?.querySelectorAll('.audience-perimeter-grid > a').length || 0,
           prosecutionPanels: document.querySelectorAll('.prosecution-entry-20260821').length,
+          controllingPanels: document.querySelectorAll('.ac-dfa-update-section').length,
+          controllingMarker: controllingNode?.querySelector('[data-ac-dfa-update]')?.dataset.acDfaUpdate || '',
+          controllingVisibleBeforeCollapse: Boolean(controllingNode && !fullRecordNode?.contains(controllingNode)),
+          controllingFiveActorTextPresent: ['Francisco Mario Matos Matas','Antonio Cogolludo Rojas','Shaila María Cogolludo Ramos','José Daniel Acosta Matos','Laura Patricia Acosta Matos'].every(name => controllingText.includes(name)),
+          controllingInstitutionalTextPresent: controllingText.includes('Alberto López Villarrubia') && (controllingText.includes('administrador concursal') || controllingText.includes('insolvency administrator')),
           expressAttributionMarker: prosecutionNode?.dataset.expressCriminalAttribution || '',
           protectedAttributionMarker: prosecutionNode?.dataset.audienceProtectedAttribution || '',
           attributionVisibleBeforeCollapse: Boolean(prosecutionNode && !fullRecordNode?.contains(prosecutionNode)),
@@ -62,6 +72,7 @@ try {
           identityVariantPresent: document.body.textContent.includes('Laura Isabel'),
           audienceOrderMarker: main?.dataset.audienceOrder || '',
           mainAttributionMarker: main?.dataset.expressCriminalAttributionVisible || '',
+          mainControllingMarker: main?.dataset.fiveActorControllingAllegationVisible || '',
           chronologyInFullRecord: Boolean(chronologyNode && fullRecordNode?.contains(chronologyNode)),
           fullRecordClosed: Boolean(fullRecordDetails && !fullRecordDetails.open),
           horizontalOverflow: document.documentElement.scrollWidth - width,
@@ -75,16 +86,22 @@ try {
       if (metrics.audienceCards !== 4) failures.push(`${prefix}: expected 4 audience cards, got ${metrics.audienceCards}`);
       if (metrics.perimeterCards !== 5) failures.push(`${prefix}: expected 5 perimeter cards, got ${metrics.perimeterCards}`);
       if (metrics.prosecutionPanels !== 1) failures.push(`${prefix}: expected 1 prosecution panel, got ${metrics.prosecutionPanels}`);
-      if (metrics.expressAttributionMarker !== '20260823') failures.push(`${prefix}: express criminal-attribution marker missing`);
-      if (metrics.protectedAttributionMarker !== '20260823') failures.push(`${prefix}: attribution is not protected by audience ordering`);
+      if (metrics.controllingPanels !== 1) failures.push(`${prefix}: expected 1 controlling five-actor panel, got ${metrics.controllingPanels}`);
+      if (metrics.controllingMarker !== '20260824') failures.push(`${prefix}: controlling five-actor marker missing`);
+      if (!metrics.controllingVisibleBeforeCollapse) failures.push(`${prefix}: controlling five-actor allegation is hidden in collapsed full record`);
+      if (!metrics.controllingFiveActorTextPresent) failures.push(`${prefix}: controlling panel does not name all five private actors`);
+      if (!metrics.controllingInstitutionalTextPresent) failures.push(`${prefix}: controlling panel omits the AC or Judge allegation`);
+      if (metrics.expressAttributionMarker !== '20260824') failures.push(`${prefix}: express criminal-attribution marker missing`);
+      if (metrics.protectedAttributionMarker !== '20260824') failures.push(`${prefix}: attribution is not protected by audience ordering`);
       if (!metrics.attributionVisibleBeforeCollapse) failures.push(`${prefix}: direct attribution is hidden in collapsed full record`);
       if (!metrics.directAttributionTextPresent) failures.push(`${prefix}: direct actor-specific criminal attribution text was diluted or removed`);
       if (!metrics.proofBoundaryPresent) failures.push(`${prefix}: actor-specific proof boundary missing`);
       if (!metrics.nonFindingBoundaryPresent) failures.push(`${prefix}: allegation/not-finding boundary missing`);
       if (!metrics.contraryRecordPresent) failures.push(`${prefix}: strongest contrary procedural record missing from first read`);
       if (metrics.identityVariantPresent) failures.push(`${prefix}: erroneous public identity variant rendered`);
-      if (metrics.audienceOrderMarker !== '20260823') failures.push(`${prefix}: runtime order marker missing`);
-      if (metrics.mainAttributionMarker !== '20260823') failures.push(`${prefix}: main attribution visibility marker missing`);
+      if (metrics.audienceOrderMarker !== '20260824') failures.push(`${prefix}: runtime order marker missing`);
+      if (metrics.mainAttributionMarker !== '20260824') failures.push(`${prefix}: main attribution visibility marker missing`);
+      if (metrics.mainControllingMarker !== '20260824') failures.push(`${prefix}: main controlling-allegation visibility marker missing`);
       if (!metrics.chronologyInFullRecord) failures.push(`${prefix}: chronology was not moved into progressive disclosure`);
       if (!metrics.fullRecordClosed) failures.push(`${prefix}: full record is not collapsed on first load`);
       if (metrics.horizontalOverflow > 2) failures.push(`${prefix}: horizontal overflow ${metrics.horizontalOverflow}px`);
