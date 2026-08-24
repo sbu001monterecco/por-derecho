@@ -526,4 +526,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/"/>
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-edgeworth-comparator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-edgeworth-comparator/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-edgeworth-comparator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/"/>
+  </url>
 </urlset>

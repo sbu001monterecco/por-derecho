@@ -3,17 +3,37 @@
   "control_marker": "cuatrecasas-dp748-civil-action-20260824",
   "owner": "Gil Marer / Aweswell / Matkator",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "REMOTE_SOURCE",
-  "branch": "codex/cuatrecasas-institutional-accountability-20260824",
-  "purpose": "Publish a bilingual, privacy-controlled and Spain-led institutional-accountability position separating the finite DP 748 criminal hypothesis, La Laguna enforcement and assignee evidence ladder, the modular civil mandate-and-billing audit, professional-conduct routes and any secondary jurisdiction-dependent SRA review.",
+  "current_state": "DRAFT",
+  "branch": "codex/cuatrecasas-uk-status-media-20260824",
+  "purpose": "Maintain a bilingual, privacy-controlled and Spain-led institutional-accountability position separating the finite DP 748 criminal hypothesis, La Laguna enforcement and assignee evidence ladder, the modular civil mandate-and-billing audit, professional-conduct routes and any secondary jurisdiction-dependent SRA review; add a public-source Edgeworth comparator that permits only partial issue-level comparison and independent proof, while stating definitively that no UK legal proceedings are being pursued.",
   "expected_routes": {
-    "es": ["es/cuatrecasas-dp748-accion-civil/index.html"],
-    "en": ["en/cuatrecasas-dp748-civil-action/index.html"]
+    "es": [
+      "es/cuatrecasas-dp748-accion-civil/index.html",
+      "es/cuatrecasas-sun-park/index.html",
+      "es/cuatrecasas-brechas-criticas/index.html",
+      "es/comparador-cuatrecasas-edgeworth/index.html",
+      "es/por-que-debe-importar-al-reino-unido/index.html",
+      "es/objetivos-recuperacion-restitucion/index.html",
+      "es/sala-control-caso/index.html"
+    ],
+    "en": [
+      "en/cuatrecasas-dp748-civil-action/index.html",
+      "en/cuatrecasas-sun-park/index.html",
+      "en/cuatrecasas-critical-gaps/index.html",
+      "en/cuatrecasas-edgeworth-comparator/index.html",
+      "en/why-the-uk-should-care/index.html",
+      "en/recovery-restitution-objectives/index.html",
+      "en/case-control-room/index.html"
+    ]
   },
   "expected_source_files": [
     "archive/CUATRECASAS_DP748_CIVIL_ACTION_CAUSATION_CONTROL_24AUG2026.md",
     "archive/CUATRECASAS_MAXIMUM_PERMISSIBLE_INSTITUTIONAL_ACCOUNTABILITY_24AUG2026.md",
+    "archive/CUATRECASAS_EDGEWORTH_PARTIAL_OVERLAP_CONTROL_24AUG2026.md",
+    "assets/data/unitary-route-registry-v1.json",
+    "assets/data/unitary-route-registry-sync-20260819.json",
     "scripts/validate_cuatrecasas_dp748_civil_action.py",
+    ".github/workflows/validate-cuatrecasas-dp748-civil-action.yml",
     "sitemap.xml",
     "sitemap-legal-advisers.xml"
   ],
@@ -23,9 +43,16 @@
     "acosta_connected_assignee_stated_as_proved": false,
     "criminal_and_civil_routes_merged": false,
     "civil_claim_stated_as_filed": false,
+    "uk_legal_action_being_pursued": false,
+    "uk_litigation_firm_currently_instructed": false,
     "sra_notification_stated_as_filed": false,
     "current_legal_team_named_on_routes": false,
     "privileged_advice_published": false,
+    "edgeworth_merits_finding_stated": false,
+    "pattern_or_propensity_inference_stated": false,
+    "group_entity_liability_bridged_by_brand": false,
+    "formal_interclaimant_cooperation_stated": false,
+    "comparator_quantum_imported": false,
     "silence_treated_as_proof": false,
     "personal_or_mass_pressure_authorised": false
   },
