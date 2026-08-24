@@ -38,6 +38,7 @@
     "sitemap.xml",
     "sitemap-calificacion.xml",
     "scripts/validate_calificacion_criminal_misuse_thesis.py",
+    "scripts/render_calificacion_criminal_misuse_thesis.mjs",
     ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
     "publication-manifests/calificacion-criminal-misuse-thesis-20260824.json"
   ],
