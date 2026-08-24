@@ -87,7 +87,7 @@ Implementation can reach 100% while evidential closure remains materially lower.
 
 ## CR-CAL-RET-011 — Do not compress the opposition and appeal instruments
 
-The current source map establishes three opposition instruments: LPB (dated 23-Apr-2019; complete native bundle open), Gil (6-Jun-2019; located 64-page final copy, digitally signed 10-Jun by Joaquín Ruiz de Infante), and the joint PINK/Patricia instrument (23/24-Mar-2021). It establishes a separate Gil appeal and joint PINK/Patricia appeal on 30-Oct-2023. Counsel reported the LPB appeal filed on 2-Nov-2023, but its complete filed instrument/receipt remains missing.
+The current source map establishes three opposition instruments: LPB (dated 23-Apr-2019; complete source set and nine annexes located, with certified reconciliation to the exact filed bundle/index still open), Gil (6-Jun-2019; located 64-page final copy, digitally signed 10-Jun by Joaquín Ruiz de Infante), and the joint PINK/Patricia instrument (23/24-Mar-2021). It establishes a separate Gil appeal and joint PINK/Patricia appeal on 30-Oct-2023. Counsel reported the LPB appeal filed on 2-Nov-2023, but its complete filed instrument/receipt remains missing.
 
 Alas Legal/Betancor preparation, Joaquín's signature and filing/transmission are different evidential events. Aweswell appears in other Concurso acts, including 918/2021 and clarification requests, but no separate Aweswell opposition to the classification or appeal from Judgment 163/2023 is established in the canonical source. Do not write generic “the opposition,” “the Gil and PINK appeals,” or add Aweswell as a Calificación appellant without the exact instrument.
 
@@ -127,3 +127,9 @@ Confirm bidirectional navigation and consequence links. Current live verificatio
 ## CR-CAL-RET-017 — Live reachability is not exact deployment parity
 
 The pre-publication 24-Aug-2026 controlled verifier returned HTTP 200 for all `85/85` monitored surfaces and passed all semantic safeguards, but only `83/85` matched the rebased repository hashes because the ES and EN `ric-private-equity-sun-park` routes differed. That mismatch is now superseded by the authorised PR 903 deployment. The post-merge verifier at `2026-08-24T04:10:36Z` returned `85/85` HTTP 200 and `85/85` exact reviewed-source parity for merge `91334adaa3c82c6b7d4505666188a2d7e98daddb`. This is technical publication proof, not merits verification.
+
+## CR-CAL-RET-018 — Aweswell is the UK company, not an invented Spanish `S.L.`
+
+The party/entity identifier in the Calificación source map is **Aweswell Limited**, UK company no. 07716847 (formerly Monterecco Sun Park Limited). Do not use `Aweswell, S.L.`, and do not conflate it with Pink Canary Services, S.L.U. (formerly the Spanish Monterecco Sun Park, S.L.U.).
+
+The substantive negative-role control is unchanged: no separate Aweswell Limited opposition to the Calificación or appeal from Sentencia 163/2023 is currently identified. `Not identified` remains a bounded corpus result, not proof that no instrument exists.

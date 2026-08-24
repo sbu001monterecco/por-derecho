@@ -1,12 +1,13 @@
 # Calificación / alertador / possible-retaliation unitary closeout
 
-Date: 23 August 2026
+Initial control date: 23 August 2026
+Final deletion audit: 24 August 2026
 
-Current deletion status: **DELETION-SAFE FOR IMPLEMENTATION CONTINUITY — EVIDENCE GAPS REMAIN OPEN**
+Current deletion status: **PENDING FINAL CLOSEOUT — AUDIT PR MERGE AND PUBLIC-DATA READBACK REQUIRED**
 
 ## Preserved analytical state
 
-The repository now preserves, on the working branch:
+The repository now preserves on current `main`:
 
 - the exact 2020→CNMV/AEAT→918/2021→RICPE/CAM filing→25-Jul-2023 hearing→Sentencia 163/2023 sequence;
 - Gil Marer's allegation that the hearing and later punitive treatment should be examined as possible retaliation under Law 2/2023 Articles 35, 36 and 38;
@@ -14,7 +15,7 @@ The repository now preserves, on the working branch:
 - separate institutional-incorporation, personal-knowledge, adverse-act, detriment, causation, independent-ground and contrary-evidence fields;
 - the eight-route interface and non-merger rule;
 - exact opposition/appeal party mapping for LPB, Gil, PINK and Patricia, and the current absence of a separate Aweswell Calificación instrument;
-- a 17-item source-closure queue;
+- a 23-item source-closure queue;
 - an improved execution prompt and mandatory startup/maintenance instructions; and
 - separate implementation and evidential-closure denominators.
 
@@ -62,3 +63,37 @@ It adds:
 The continuation was approved for publication on 24 August. The bilingual Calificación, elEconomista/Madrid and complete-record source pages were merged through PR 903 as `91334adaa3c82c6b7d4505666188a2d7e98daddb`. All 32 PR workflows passed. No email or filing was sent. The 55% evidential-closure boundary remains controlling.
 
 The pre-publication check found `83/85` exact parity. After PR 903 merged, the controlled readback at `2026-08-24T04:10:36Z` resolved all `85/85` monitored URLs, passed every semantic control and matched all `85/85` reviewed source hashes. `ME-CAL-RET-021` and `ME-CAL-RET-023` are therefore closed. The remaining gaps are evidential and procedural, not publication-deployment gaps.
+
+## Final deletion-continuity audit — 24 August 2026
+
+The final audit was run from current `main` at `5bb676a62edbe662e2dadfcc80229de8d195a514`. PR 904 merge `e422e4ddfc6d0015b6d4dd134b5357288ee777c9` is an ancestor of that revision. Later changes modified the bilingual RICPE pages but did not delete or replace this thread's correction register, missing-evidence queue, criminal-first audit, execution prompt, publication manifest, Calificación/elEconomista/complete-record pages or deletion record.
+
+The audit also corrected three continuity defects:
+
+1. the queue count is 23, not the earlier 17;
+2. the complete LPB opposition source set and nine annexes are located, while certification of the exact filed-bundle/index mapping remains open; and
+3. the machine-readable negative-role rows identify **Aweswell Limited**, not the incorrect invented form `Aweswell, S.L.`.
+
+Current-main validation passed:
+
+- repository-preservation gate;
+- publication-integrity gate;
+- audience-experience gate;
+- Calificación criminal-misuse, position/objectives and RPL 2523 evidence-map validators; and
+- Concurso 36/2012 complete-record validator.
+
+No material fact, correction, source-status decision, strategic instruction, publication safeguard, open question, retrieval target or implementation state created in this conversation remains solely in chat. A fresh thread can recover the work from `CHATGPT_START_HERE.md`, this audit, the publication manifest, the Calificación correction/missing-evidence addenda and the 24-Aug execution prompt.
+
+### Private-source and custody boundary
+
+Deletion safety does not authorise deletion of evidence and is not a claim of independent native-evidence backup. Private emails, privileged lawyer communications and unredacted pleadings remain outside public Git. A future thread must re-query connected Gmail/files for:
+
+- Javier Sixto and Carlos Llamas Sanz on DP 1956/2026, any genuinely new evidence and any future reopening step;
+- Joaquín Ruiz de Infante Abella and Alas Legal/Betancor on drafting, signature, transmission and filing provenance; and
+- Javier Romera/elEconomista on the native inbound transmission and accompanying representation, subject to lawful access and publication limits.
+
+`ME-CAL-RET-003`, `004`, `018`, `019`, `020` and `022`, together with the other open rows, remain controlling. No email was sent, no filing was made and no source evidence was deleted in this closeout.
+
+## Provisional verdict
+
+**ELIGIBLE FOR DELETION-SAFE WITH OPEN EVIDENCE** once the audit/correction PR is merged and the corrected public evidence-map JSON is read back from Pages. This prospective verdict closes conversation-dependent implementation continuity only. It does not close the investigation, certify the complete court file, establish retaliation or criminal liability, increase the 55% evidential-closure score, or affect any limitation, appeal, preservation, restitution, regulatory or disciplinary step.
