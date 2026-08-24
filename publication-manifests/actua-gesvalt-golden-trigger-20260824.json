@@ -1,8 +1,10 @@
 {
   "publication_id": "ACTUA-GESVALT-GOLDEN-TRIGGER-20260824",
   "owner": "Gil Marer / Project Sun Rock",
-  "current_state": "DRAFT",
+  "current_state": "LIVE_VERIFIED",
   "date": "2026-08-24",
+  "source_pull_request": 897,
+  "merge_sha": "2b81859306cba1661d03d7dfe10858571dc275a7",
   "languages": ["en", "es"],
   "expected_routes": {
     "en": ["en/actua-gesvalt-2018-valuation-comparison/index.html"],
@@ -52,5 +54,32 @@
     "parrilla_knowledge": "supported client allegation based on cumulative record; no adjudicated criminal finding",
     "email_privacy": "source identifiers and minimum propositions only; no public email bodies"
   },
-  "source_map": "archive/ACTUA_GESVALT_GOLDEN_TRIGGER_SOURCE_MAP_24AUG2026.md"
+  "source_map": "archive/ACTUA_GESVALT_GOLDEN_TRIGGER_SOURCE_MAP_24AUG2026.md",
+  "validation": {
+    "evidence": [
+      "PR 897: all 15 pull-request workflow runs completed successfully, including publication integrity, unitary public shell, audience experience and off-GitHub preservation.",
+      "Local HTML/local-link, sitemap XML, manifest JSON, PDF page-count and SHA-256 controls passed before publication."
+    ]
+  },
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "source_merge_sha": "2b81859306cba1661d03d7dfe10858571dc275a7",
+    "readback_date": "2026-08-24",
+    "result": "Both bilingual routes, the updated counsel route and all five evidence PDFs returned HTTP 200."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/actua-gesvalt-2018-valuation-comparison/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/",
+    "https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/valuations/actua-2018-valuation-material-extract.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/valuations/gesvalt-2018-03-01-market-valuation.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/valuations/gesvalt-2018-06-07-eco-mortgage-valuation.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/valuations/gesvalt-2018-critical-review-of-actua.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/valuations/court-order-2019-10-24-non-convalidation.pdf"
+  ],
+  "live_verification_evidence": [
+    "English marker 'One hotel, four valuation products' and Spanish marker 'Un hotel, cuatro productos de valoración' were read back from the public edge.",
+    "Each of the five public PDF downloads reproduced the SHA-256 recorded in public_evidence."
+  ]
 }
