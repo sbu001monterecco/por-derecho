@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "controlDate": "2026-08-23",
+  "controlDate": "2026-08-24",
   "status": "PUBLIC-SAFE-FORENSIC-SEED-NOT-FRONTEND-READY",
   "canonicalParent": "assets/data/legal-representation-v1.json",
   "humanControl": "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
@@ -57,9 +57,15 @@
     },
     {
       "id": "LRAC-OF-006",
-      "proposition": "The 2018 €400,000 locales/pools transaction, the AC's report of receipt and self-payment, and the 2020 Parrilla fee-assurance/payment sequence are documented records capable of supporting Gil/Patricia's perverse-incentive and 'false peace' investigative thesis when read together.",
-      "status": "SUPPORTED_AS_INVESTIGATIVE_INFERENCE_WITH_MONEY_TRAIL_OPEN",
-      "qualification": "The sale price was €400,000, against a plan-reported ACTÚA figure of €489,361.96. The 2018 AC report says the cheque became effective and the AC paid its own remuneration; the 2019 court order later refused convalidation. A separate 2020 call report records assurance that Parrilla/procurator would be paid, praise of Parrilla and IA/CAM positions, and a July AC report records €26,750 for Parrilla. Bribery, collusion, impropriety and a bank/ledger link from the €400,000 to the €26,750 are not proved."
+      "proposition": "The 2018 €400,000 transaction, the AC's receipt/account/self-payment report, Parrilla's client-funded fee history and the later €26,750 AC payment create a document-based overpayment/duplication and perverse-incentive issue.",
+      "status": "SUPPORTED_FEE_MISMATCH_WITH_BANK_TRACE_OPEN",
+      "qualification": "The original proforma was €40,000 + IGIC. Parrilla later acknowledged €32,250 received, proposed an unaccepted €50,000 final fee and stated €17,750 + IGIC outstanding. The AC paid €25,000 + IGIC (€26,750), €9,000 more at base than that stated balance. The exact recoverable excess requires invoice, tax, costs, authority and ledger reconciliation. The AC reports disclose the €400,000 account/self-payment sequence and later Parrilla payment; Gil confirms the sale money was the only then-available source, but a matching debit is not yet recovered. This is not proof that Parrilla knew of criminal origin."
+    },
+    {
+      "id": "LRAC-OF-007",
+      "proposition": "Gil Marer alleges, with hindsight, that the €400,000 sale was criminal and its consideration illicit proceeds; he asks Fiscalía to investigate the sale, trace the money and assess the resulting effect on defence continuity.",
+      "status": "ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_ADJUDICATED",
+      "qualification": "The record documents the sale, AC receipt/account/self-payment report, later nonconvalidation, ACTÚA methodology warnings, contrary GESVALT material and the Parrilla fee mismatch. It does not adjudicate a predicate offence, criminal proceeds, criminal knowledge by any recipient or the alleged Cajasiete €1m financing."
     }
   ],
   "engagementAssessments": [
@@ -79,9 +85,9 @@
       "acWorkstreamImpact": "C3",
       "exitCausation": "C0-C1",
       "documentedAlternativeCause": "Client-initiated substitution framed contemporaneously as mutual loss of confidence; Parrilla accepted the decision as best for both sides.",
-      "acSpecificFinding": "Protocol 2150 recites a 28 November 2018 €400,000 sale of 31 locales/pools properties to CAM against a plan-reported ACTÚA value of €489,361.96. The AC's 20 December report says the cheque became effective, an LPB account was opened and the AC paid itself remuneration; the 24 October 2019 order later refused convalidation. On 28 May 2020 Parrilla conveyed the AC's wish to speak to incoming counsel despite Patricia's contemporaneously recorded anti-intermediation instruction. Daniel's 1 June call report records 'peace', possible complaint withdrawal, AC assurance that Parrilla/procurator would be paid from proceeding funds, praise of Parrilla and IA/CAM positions. A July AC report records EUR 26,750 for Parrilla. Gil/Patricia characterise the combination as a perverse incentive and false peace used to influence incoming counsel.",
-      "counterEvidence": "The outgoing lawyer expressly accepted the substitution and granted venia. Payment of properly earned counsel/procurator fees from available concurso funds may be ordinary administration. The 2018 report and 2020 payment entry are not a continuous bank trace; bribery, collusion, improper payment and a common source of funds are not proved.",
-      "openQuestion": "Lock the 18 May protective-instruction chain and July payment binary; map the €400,000 purchaser debit, LPB credit, AC self-payment, Parrilla invoice/authority/entry and post-nonconvalidation ledger; do not infer a €400,000-to-€26,750 link from temporal sequence."
+      "acSpecificFinding": "Protocol 2150 recites a 28 November 2018 €400,000 sale of 31 operational properties to CAM against a plan-reported ACTÚA value of €489,361.96. The AC's 20 December report identifies the LPB Santander account, says the cheque became effective and says the AC paid itself remuneration; the 24 October 2019 order later refused convalidation. Parrilla's original proforma was €40,000 + IGIC. On 11 June 2020 he acknowledged €32,250 received, proposed a rejected €50,000 final fee and stated €17,750 + IGIC outstanding. The AC later recorded a EUR 26,750 payment. Gil/Patricia allege overpayment/double dipping and say the assurance/payment formed part of a false peace used to influence incoming counsel.",
+      "counterEvidence": "The outgoing lawyer expressly accepted the client-initiated substitution and granted venia. A properly invoiced and authorised estate payment may be ordinary administration. Exact tax/cost allocation, authority and recoverable excess remain open. The reports disclose the cash sequence and Gil confirms the sale money was the only available source, but the matching Parrilla debit is not yet independently recovered. Receipt does not prove knowledge of criminal origin.",
+      "openQuestion": "Obtain the purchaser debit, LPB account credit, AC self-payment debits, complete Parrilla invoices/IGIC/cost allocation, authority, matching EUR 26,750 debit and post-nonconvalidation ledger; obtain the alleged Cajasiete EUR 1m mortgage deed and current Registry certifications."
     },
     {
       "professional": "Cuatrecasas",
@@ -173,7 +179,7 @@
       "dateWindow": "2018-06-26/2019-10-24",
       "actors": ["Administrador Concursal", "Luchy Playa Blanca", "Acosta Matos"],
       "event": "The mortgaged-apartment realisation was suspended; the AC treated the separate 31-finca locales/pools branch as outside that suspension, executed Protocol 2150 for €400,000, reported the cheque effective and reported paying its own remuneration. The court later refused convalidation of the deed.",
-      "effect": "Created the asset-and-estate-funds background to the later counsel-payment and access sequence, while leaving the complete cash application and post-nonconvalidation reconciliation open.",
+      "effect": "Created the asset-and-estate-funds background to the later counsel-payment and access sequence. The AC's report identifies the account and self-payment; the later EUR 26,750 payment must be reconciled against Parrilla's original EUR 40,000 + IGIC proforma, acknowledged EUR 32,250 receipts and rejected EUR 50,000 proposal.",
       "exitLink": "BACKGROUND_FOR_2020_PERVERSE_INCENTIVE_INFERENCE_ONLY",
       "strongestDefence": "The 26 June suspension was expressly limited to listed mortgaged apartments; the AC took the position that the unencumbered branch could proceed, and the sale branch was later definitively approved in 2021. The 2019 nonconvalidation result does not by itself prove improper personal benefit or later misuse of funds."
     },
@@ -232,7 +238,7 @@
     "ownerSideKnowledgeContinuityLoss": "SUPPORTED_WITH_MIXED_CAUSATION",
     "unpaidFeesAsRecurringAttritionFactor": "STRONGLY_SUPPORTED"
   },
-  "safeCurrentConclusion": "Across several independent legal teams, the record supports treating AC-controlled procedural and authority dependencies as a recurring material influence on owner-side representation. For the 2018 sale and 28 May-5 June 2020 Parrilla-to-Daniel transition, the documented sequence supports Gil/Patricia's investigative inference of a perverse incentive and 'false peace': the AC sought access to incoming counsel through outgoing counsel while offering possible complaint withdrawal, payment assurance, praise and IA/CAM positions. It does not prove bribery, unlawful purpose, collusion, a €400,000-to-€26,750 funds link, a completed CAM call or resignation causation. Each mandate must otherwise be described as an integrated history of accepted or billed scope, IA conduct, professional response or limit, result and later transition. Formal exit reasons remain relevant without deciding prior AC effect or mandate effectiveness. Universal push-away, exclusive-cause and professional-liability findings remain unproved unless specifically adjudicated.",
+  "safeCurrentConclusion": "Across several independent legal teams, the record supports treating AC-controlled procedural, authority and payment dependencies as a recurring material influence on owner-side representation. The 2018 AC report identifies the EUR 400,000 receipt/account and AC self-payment. Parrilla's fee records show a concrete mismatch between the original fee, EUR 32,250 acknowledged receipts, a rejected EUR 50,000 proposal with EUR 17,750 + IGIC stated balance, and the later EUR 26,750 AC payment. Gil/Patricia allege overpayment/double dipping and a perverse-incentive 'false peace'; Gil says the sale money was the only source, while a matching bank debit remains open. Gil's criminal-sale/proceeds conclusion is attributed and not adjudicated. It does not prove a recipient's criminal knowledge, bribery, collusion, a completed CAM call or resignation causation. Each mandate remains an integrated history of scope, IA conduct, professional response, result and transition.",
   "unsafeCurrentConclusion": "Borja pushed successive lawyers away.",
   "publicationGate": {
     "publishAsFrontendClaimNow": false,
@@ -244,7 +250,8 @@
       "Quantify the added work/cost attributable to specific AC acts while testing legitimate alternative explanations.",
       "Separate objective effect, AC knowledge/foreseeability and intent.",
       "Obtain certified access, service and consultation history for fee-account piece 36/2012, piece 11, and do not infer AC/CAM receipt from the LexNET wrapper.",
-      "Obtain the purchaser debit, LPB account credit, complete estate ledger, AC remuneration entries, Parrilla invoice/authority and post-nonconvalidation reconciliation before asserting that the €26,750 came from the €400,000."
+      "Obtain the purchaser debit, LPB account credit, complete estate ledger, AC remuneration debits, Parrilla invoices/IGIC/cost allocation/authority, matching €26,750 debit and post-nonconvalidation reconciliation before describing the trace as independently bank-complete.",
+      "Obtain the Cajasiete mortgage deed and current certified Registry entries before upgrading Gil's approximately €1m financing statement to verified public fact."
     ]
   }
 }

@@ -48,4 +48,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/" />
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/" />
+  </url>
 </urlset>
