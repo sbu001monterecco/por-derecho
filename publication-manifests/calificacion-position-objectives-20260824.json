@@ -1,0 +1,113 @@
+{
+  "publication_id": "CALIFICACION-POSITION-OBJECTIVES-STATUS-PROOF-20260824",
+  "control_marker": "calificacion-position-objectives-20260824",
+  "owner": "Gil Marer / Aweswell",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "PR_OPEN",
+  "branch": "codex/calificacion-position-objectives-20260824",
+  "pull_request": 894,
+  "merge_sha": null,
+  "remote_source_commit": "727472af567de3250d5b68a365a7b422d7e64a20",
+  "expected_routes": {
+    "es": [
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+      "es/concurso-36-2012-ap-seccion-4/index.html"
+    ],
+    "en": [
+      "en/insolvency-classification-criminal-misuse-thesis/index.html",
+      "en/insolvency-36-2012-ap-section-4/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CALIFICACION_POSITION_OBJECTIVES_STATUS_PROOF_CONTROL_24AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "assets/data/calificacion-criminal-misuse-thesis-v1.json",
+    "assets/calificacion-criminal-misuse-thesis-20260824.js",
+    "assets/site.js",
+    "assets/styles.css",
+    "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+    "en/insolvency-classification-criminal-misuse-thesis/index.html",
+    "es/concurso-36-2012-ap-seccion-4/index.html",
+    "en/insolvency-36-2012-ap-section-4/index.html",
+    "scripts/validate_calificacion_position_objectives.py",
+    "scripts/validate_calificacion_criminal_misuse_thesis.py",
+    "scripts/render_calificacion_criminal_misuse_thesis.mjs",
+    ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
+    "publication-manifests/calificacion-position-objectives-20260824.json"
+  ],
+  "canonical_control": "archive/CALIFICACION_POSITION_OBJECTIVES_STATUS_PROOF_CONTROL_24AUG2026.md",
+  "canonical_routes": [
+    "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+    "en/insolvency-classification-criminal-misuse-thesis/index.html"
+  ],
+  "appeal_routes": [
+    "es/concurso-36-2012-ap-seccion-4/index.html",
+    "en/insolvency-36-2012-ap-section-4/index.html"
+  ],
+  "required_controls": [
+    "canonical bilingual position and seven lawful objectives",
+    "transfer of value plus inversion of responsibility plus diversion of scrutiny hypothesis",
+    "five finite proof demands with evidence states",
+    "RPL 2523/2025 status verified through 24 August 2026",
+    "not located does not mean nonexistent",
+    "record-only appeal firewall and no predetermined outcome",
+    "actor-specific proof and legal-person separation",
+    "facial Fiscal defect may be drafting error",
+    "contrary evidence and equal-visibility right of reply",
+    "silence is not admission",
+    "no threats, personal pressure, collective guilt or capture stated as fact"
+  ],
+  "strategic_propagation": {
+    "mechanism": "assets/calificacion-criminal-misuse-thesis-20260824.js",
+    "loader_revision": "20260824d",
+    "position_layer": "one compact Position/Objectives strip within the existing first-read criminal-misuse panel",
+    "full_layer": "canonical ES/EN dossier owns the complete position, objectives, appeal status and proof-demand table"
+  },
+  "appeal_status": {
+    "court": "AP Las Palmas, Sección 4ª",
+    "roll": "RPL 2523/2025",
+    "located_order": "2026-05-11",
+    "scheduled_deliberation_vote_decision": "2026-06-04",
+    "later_merits_ruling_located": false,
+    "service_or_finality_located": false,
+    "corpus_cutoff": "2026-08-24",
+    "finite_next_action": "certified docket/result, signed ruling, service/finality/remedy certification and transmitted-record index"
+  },
+  "publication_safety": {
+    "private_emails_committed": false,
+    "privileged_legal_advice_committed": false,
+    "private_recordings_committed": false,
+    "unnecessary_personal_or_tax_data_committed": false,
+    "criminal_guilt_stated_as_adjudicated": false,
+    "common_design_or_coordination_stated_as_proved": false,
+    "purposeful_private_benefit_stated_as_proved": false,
+    "appeal_pressure_or_threat_language_used": false,
+    "appeal_independence_preserved": true,
+    "right_of_reply_preserved": true
+  },
+  "validation": {
+    "status": "LOCAL_PASS_CI_PENDING",
+    "evidence": [
+      "focused Position/Objectives/status/proof validator passed",
+      "existing criminal-misuse thesis validator passed",
+      "complete Concurso 36/2012 record validator passed",
+      "publication integrity, insolvency-perimeter language and mission-critical repository gates passed",
+      "JavaScript syntax checks passed for the scoped loader, global loader and rendered browser gate",
+      "HTML parser and sitemap XML parser checks passed",
+      "settled 15-route browser render remains a required CI gate"
+    ],
+    "commands": [
+      "python scripts/validate_calificacion_position_objectives.py",
+      "python scripts/validate_calificacion_criminal_misuse_thesis.py",
+      "python scripts/validate_publication_integrity.py",
+      "python scripts/validate_insolvency_perimeter_language.py",
+      "python scripts/validate_mission_critical_repo.py",
+      "node --check assets/calificacion-criminal-misuse-thesis-20260824.js",
+      "node --check assets/site.js",
+      "node --check scripts/render_calificacion_criminal_misuse_thesis.mjs",
+      "HTML parse and sitemap XML parse"
+    ],
+    "live_verification": "PENDING_MERGE_AND_DEPLOYMENT"
+  }
+}

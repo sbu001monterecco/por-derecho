@@ -3,29 +3,86 @@
   "control_date": "2026-08-24",
   "proceeding": "Concurso 36/2012 · Sentencia 163/2023 · AP Las Palmas Section 4 · RPL 2523/2025",
   "status": "SERIOUS_DOCUMENT_BASED_INVESTIGATIVE_THESIS_NOT_ADJUDICATED_CRIMINAL_FACT",
+  "position_and_objectives": {
+    "es": {
+      "position": "Nuestra posición no es que toda resolución adversa sea delictiva. La secuencia documental exige investigar de forma independiente si la pieza de calificación fue utilizada para invertir la atribución de responsabilidad y desviar el escrutinio, incluida la severidad del dictamen fiscal de dos páginas, su motivación individual visible muy limitada y su defecto textual interno sobre la descripción del actor. No se pide a ninguna autoridad que acepte esa conclusión de antemano; se exige la producción capaz de confirmarla, limitarla o descartarla.",
+      "objectives": [
+        "expediente completo y certificado",
+        "resolución independiente y motivada de RPL 2523/2025",
+        "investigación penal actor por actor cuando se alcance el umbral aplicable",
+        "restitución de bienes, derechos, ingresos y posición económica al titular correcto",
+        "reparación no duplicada del daño probado e irreversible",
+        "corrección de registros concursales, civiles, societarios, administrativos, regulatorios, registrales y de financiación pública",
+        "responsabilidad civil, concursal, profesional, disciplinaria, regulatoria, administrativa o penal sólo según prueba primaria y competencia"
+      ]
+    },
+    "en": {
+      "position": "Our position is not that every adverse decision is criminal. The documentary sequence requires an independent investigation into whether the Calificación process was used to invert responsibility and divert scrutiny, including the severity of the two-page Fiscal opinion, its very limited visible individual reasoning and its facial actor-description defect. No institution is asked to accept that conclusion in advance; each is required to produce the records capable of proving, narrowing or disproving it.",
+      "objectives": [
+        "complete certified record",
+        "independent and reasoned determination of RPL 2523/2025",
+        "actor-specific criminal investigation when the applicable evidential threshold is crossed",
+        "restoration of property, rights, income and economic position to the correct claimant",
+        "non-duplicative compensation for proven irreversible harm",
+        "correction of insolvency, civil, corporate, administrative, regulatory, Registry and public-funding records",
+        "civil, insolvency, professional, disciplinary, regulatory, administrative or criminal accountability only according to primary evidence and competence"
+      ]
+    },
+    "controlling_hypothesis": "TRANSFER_OF_VALUE_PLUS_INVERSION_OF_RESPONSIBILITY_PLUS_DIVERSION_OF_SCRUTINY"
+  },
+  "appeal_status": {
+    "court": "Audiencia Provincial de Las Palmas, Sección 4ª",
+    "roll": "RPL 2523/2025",
+    "appeal_type": "CALIFICACION_APPEAL_FROM_JUDGMENT_163_2023",
+    "located_scheduling_order_date": "2026-05-11",
+    "scheduled_deliberation_vote_decision_date": "2026-06-04",
+    "hearing_listed": false,
+    "later_merits_ruling_located": false,
+    "service_or_finality_record_located": false,
+    "corpus_cutoff": "2026-08-24",
+    "inference_limit": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT",
+    "finite_closure": [
+      "current certified docket/status",
+      "signed merits decision or order",
+      "service records",
+      "finality or pending-remedy certification",
+      "certified index of the record transmitted to Section 4"
+    ]
+  },
+  "evidence_state_legend": {
+    "DOCUMENTED": "Primary or procedurally identified record located; scope remains bounded.",
+    "DOCUMENTED_AND_CONTESTED": "Record located, with material contrary evidence, appeal or unresolved interpretation.",
+    "OPEN_HYPOTHESIS": "Capable of finite investigation but not proved.",
+    "NOT_LOCATED": "Absent from the controlled corpus; no inference of nonexistence."
+  },
   "pillars": [
     {
       "id": "AC_OVERREACH",
+      "evidence_state": "DOCUMENTED_AND_CONTESTED",
       "documented": "The complete 47-page Administrator report is located; the first-level DOC1, DOC2 and DOC4-DOC8 set is identified; Judgment 163/2023 rejected or narrowed multiple branches.",
       "open_proof": "Certified court index, autonomous-DOC3 explanation and proposition-specific personal knowledge matrix."
     },
     {
       "id": "FISCAL_TWO_PAGE_OPINION",
+      "evidence_state": "DOCUMENTED_AND_CONTESTED",
       "documented": "The complete two-page opinion dated 12 March 2019 requested 15 years' disqualification, damages and deficit liability and contains a facial actor-description defect.",
-      "open_proof": "Underlying source file, drafting history, relied-on material and actor-specific knowledge."
+      "open_proof": "Underlying source file, drafting history, relied-on material and actor-specific knowledge; the facial defect may be a drafting error and must be clarified."
     },
     {
       "id": "DI248_INSTITUTIONAL_CIRCULARITY",
+      "evidence_state": "DOCUMENTED_AND_CONTESTED",
       "documented": "The Ministerio Fiscal's adverse culpability position was invoked in the 7 May 2019 archive of Gil/Aweswell's complaint against the AC/CAM perimeter.",
       "open_proof": "Complete DI 248 expediente and diligence ledger; no personal coordination inferred."
     },
     {
       "id": "SELECTED_JUDICIAL_ADOPTION",
+      "evidence_state": "DOCUMENTED_AND_CONTESTED",
       "documented": "Judgment 163/2023 accepted selected adverse propositions and rejected or narrowed others; identified grounds are under appeal in RPL 2523/2025.",
       "open_proof": "Certified evidence-before-court matrix, hearing record and current appellate decision/status."
     },
     {
       "id": "POSSIBLE_ACOSTA_MATOS_BENEFIT",
+      "evidence_state": "OPEN_HYPOTHESIS",
       "documented": "The controlled record permits investigation of possible direct or indirect benefit.",
       "open_proof": "Specific asset, decision, causation, harm, benefit, counterfactual and innocent-explanation proof."
     }

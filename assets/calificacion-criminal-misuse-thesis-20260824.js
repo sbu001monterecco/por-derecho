@@ -40,6 +40,38 @@
   ]);
   const match = suffixes => [...suffixes].some(suffix => path.endsWith(suffix));
 
+  const addPositionStrip = (section, isEnglish, appeal = false) => {
+    if (!section || section.querySelector('[data-calificacion-position-objectives]')) return;
+    const strip = document.createElement('div');
+    strip.className = 'cm-position-strip';
+    strip.dataset.calificacionPositionObjectives = appeal ? 'appeal-firewall' : 'compact';
+    const position = document.createElement('div');
+    const positionLabel = document.createElement('strong');
+    positionLabel.textContent = isEnglish ? 'Our position' : 'Nuestra posición';
+    const positionText = document.createElement('span');
+    positionText.textContent = isEnglish
+      ? 'Not every adverse decision is criminal. The documentary sequence requires an independent test of possible responsibility inversion and diversion of scrutiny.'
+      : 'No toda resolución adversa es delictiva. La secuencia documental exige comprobar de forma independiente una posible inversión de responsabilidad y desviación del escrutinio.';
+    position.append(positionLabel, positionText);
+    const objective = document.createElement('div');
+    const objectiveLabel = document.createElement('strong');
+    objectiveLabel.textContent = isEnglish ? (appeal ? 'Appeal boundary' : 'Our objectives') : (appeal ? 'Límite de apelación' : 'Nuestros objetivos');
+    const objectiveText = document.createElement('span');
+    objectiveText.textContent = isEnglish
+      ? (appeal
+        ? 'RPL 2523/2025 must be decided only on its record, pleaded grounds, adversarial process and law; every other action belongs in its proper forum.'
+        : 'Lawful correction, recovery and proportionate accountability: certified records, independent decisions and evidence-led action in the competent forum.')
+      : (appeal
+        ? 'RPL 2523/2025 debe resolverse sólo por sus actuaciones, motivos, contradicción y Derecho; cualquier otra acción corresponde a su foro propio.'
+        : 'Corrección, recuperación y responsabilidad proporcional: expediente certificado, decisiones independientes y actuación probatoria ante el órgano competente.');
+    objective.append(objectiveLabel, objectiveText);
+    strip.append(position, objective);
+    const compactInner = section.querySelector('.cm-thesis-compact-inner > div');
+    const shell = section.querySelector(':scope > .shell');
+    if (compactInner) compactInner.append(strip);
+    else if (shell) shell.append(strip);
+  };
+
   const pinFirstRead = (section, main) => {
     const persistent = match(featured);
     const pin = () => {
@@ -51,7 +83,7 @@
     const observer = new MutationObserver(pin);
     observer.observe(main, { childList: true });
     if (persistent) {
-      main.dataset.calificacionMisusePin = 'persistent-20260824c';
+      main.dataset.calificacionMisusePin = 'persistent-20260824d';
       window.setInterval(pin, 1000);
     }
     [0, 100, 350, 1000, 3000, 7000, 11000, 15000, 22000, 30000].forEach(delay => window.setTimeout(pin, delay));
@@ -67,6 +99,7 @@
   const place = () => {
     const existing = document.querySelector('[data-calificacion-misuse-thesis]');
     if (existing) {
+      if (!match(canonical)) addPositionStrip(existing, document.documentElement.lang === 'en', match(priorityStatic));
       if (!match(canonical) && !match(featured) && !match(priorityStatic)) return;
       const existingMain = document.querySelector('main');
       if (existingMain) pinFirstRead(existing, existingMain);
@@ -118,9 +151,14 @@
       const link = document.createElement('a');
       link.href = href;
       link.textContent = isEnglish ? 'Examine the five-part thesis →' : 'Examinar la tesis en cinco partes →';
-      actions.append(link);
-      shell.append(head, actions);
+      const positionLink = document.createElement('a');
+      positionLink.href = `${href}#${isEnglish ? 'position-objectives' : 'posicion-objetivos'}`;
+      positionLink.textContent = isEnglish ? 'Position and objectives →' : 'Posición y objetivos →';
+      actions.append(link, positionLink);
+      shell.append(head);
       section.append(shell);
+      addPositionStrip(section, isEnglish);
+      shell.append(actions);
     } else {
       const shell = document.createElement('div');
       shell.className = 'shell cm-thesis-compact-inner';
@@ -136,10 +174,11 @@
         : 'Exceso del AC · dictamen fiscal defectuoso de dos páginas · circularidad DI 248 · adopción judicial selectiva · posible beneficio del perímetro Acosta Matos.';
       copy.append(kicker, title, body);
       const link = document.createElement('a');
-      link.href = href;
-      link.textContent = isEnglish ? 'Open the evidence test →' : 'Abrir el test probatorio →';
+      link.href = `${href}#${isEnglish ? 'position-objectives' : 'posicion-objetivos'}`;
+      link.textContent = isEnglish ? 'Open position, objectives and evidence test →' : 'Abrir posición, objetivos y test probatorio →';
       shell.append(copy, link);
       section.append(shell);
+      addPositionStrip(section, isEnglish);
     }
     hero.insertAdjacentElement('afterend', section);
     pinFirstRead(section, main);

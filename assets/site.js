@@ -347,7 +347,7 @@ The executable loader chain for these modules remains in site-pre-intervencion-h
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-calificacion-misuse-thesis-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('calificacion-criminal-misuse-thesis-20260824.js?v=20260824c', current.src).href;
+  module.src = new URL('calificacion-criminal-misuse-thesis-20260824.js?v=20260824d', current.src).href;
   module.async = false;
   module.setAttribute('data-calificacion-misuse-thesis-loader', '20260824');
   document.head.appendChild(module);

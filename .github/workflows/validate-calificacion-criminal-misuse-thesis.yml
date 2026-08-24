@@ -29,8 +29,10 @@ jobs:
           node-version: '22'
       - name: Validate thesis, appeal firewall and source-state corrections
         run: |
+          python scripts/validate_calificacion_position_objectives.py
           python scripts/validate_calificacion_criminal_misuse_thesis.py
           node --check assets/calificacion-criminal-misuse-thesis-20260824.js
+          node --check assets/site.js
           node --check scripts/render_calificacion_criminal_misuse_thesis.mjs
       - name: Use preinstalled Chrome with Playwright
         run: |
