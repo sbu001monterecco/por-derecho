@@ -3,7 +3,9 @@
   "control_marker": "five-actor-accountability-preservation-20260824",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "DRAFT",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_GOVERNANCE_ITEMS",
+  "merge_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
   "baseline_main_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
   "baseline_tree": "0f8efa58f56490c99cc85e3ea30362e547e30e92",
   "source_repair": {
@@ -13,11 +15,17 @@
     "verified_at": "2026-08-24T12:23:03Z"
   },
   "final_guard_release": {
-    "pull_request": null,
-    "merge_sha": null,
-    "pages_workflow_run": null,
-    "verified_at": null,
-    "status": "PENDING"
+    "pull_request": 922,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/922",
+    "source_authorization_commit": "e02172937ce32fbda42654093b4831ab1b3dcd7d",
+    "remote_head_sha": "850ee0909f6eb5914d2ced3a366d5576b28b6768",
+    "merge_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "tree_sha": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+    "pages_workflow_run": 32750603024,
+    "actor_live_workflow_run": 32750605646,
+    "source_of_funds_workflow_run": 32750605643,
+    "verified_at": "2026-08-24T16:27:17.010Z",
+    "status": "LIVE_VERIFIED"
   },
   "expected_routes": {
     "es": [
@@ -75,13 +83,46 @@
     "protected deletion, rename, hide, collapse, abridgement and unlinking require exact express authorization"
   ],
   "validation": {
-    "status": "LOCAL_AND_CI_FINAL_GUARD_PENDING",
+    "status": "CI_GREEN_EXACT_LIVE_VERIFIED",
     "evidence": [
       "PR #919 repair merged as a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
       "GitHub Pages run 32726738047 published the exact repair merge",
       "source and rendered checks verified both homepages and the then-declared direct-route set",
       "the final guard adds the canonical Spanish Magistrate-Judge route, one-change deletion authorization, stable actor IDs, complete linkage/card checks, first-read placement and scheduled live verification",
-      "the final guard also repairs two legacy dossier-hero placement selectors, removes the RICPE post-hero observer conflict, cache-busts those fixes and verifies 500 ms of stable adjacency plus actual lazy-image loading"
+      "the final guard also repairs two legacy dossier-hero placement selectors, removes the RICPE post-hero observer conflict, cache-busts those fixes and verifies 500 ms of stable adjacency plus actual lazy-image loading",
+      "PR #922 head 850ee0909f6eb5914d2ced3a366d5576b28b6768 passed the required source, preservation and rendered checks before merge",
+      "PR #922 merged to main as ed98b0ac634afc34f00a425e9ed67ca58fd77cb8 with exact tree af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+      "GitHub Pages run 32750603024 succeeded for exact head SHA ed98b0ac634afc34f00a425e9ed67ca58fd77cb8 at 2026-08-24T16:24:54Z",
+      "actor live run 32750605646 reached RENDER_VERIFIED at 2026-08-24T16:27:17.010Z with 757 assertions across all seventeen protected surfaces",
+      "source-of-funds run 32750605643 passed on attempt 2 after the same propagation interval"
+    ]
+  },
+  "deployment_evidence": [
+    {
+      "workflow": "pages-build-deployment",
+      "run_id": 32750603024,
+      "result": "success",
+      "head_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+      "completed_at": "2026-08-24T16:24:54Z",
+      "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32750603024"
+    }
+  ],
+  "live_verification_evidence": {
+    "status": "RENDER_VERIFIED",
+    "workflow_run": 32750605646,
+    "workflow_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32750605646",
+    "head_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "verified_at": "2026-08-24T16:27:17.010Z",
+    "protected_surfaces": 17,
+    "render_assertions": 757,
+    "source_verifier_attempt": 8,
+    "result": "17/17 protected surfaces PASS",
+    "verified_structure": [
+      "five separate private-actor cards with stable actor identities",
+      "two distinct institutional cards with separate roles, descriptions, direct allegations and contrary boundaries",
+      "five actor-specific complete five-cell linkage rows",
+      "first-read placement pins remained stable",
+      "approved actor portraits and both evidence images loaded with non-zero natural dimensions"
     ]
   },
   "live_urls": [
@@ -104,9 +145,23 @@
     "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-juzgado-mercantil-1/"
   ],
   "deletion_record": {
-    "status": "PENDING_FINAL_GUARD_MERGE_AND_LIVE_VERIFICATION",
+    "status": "DELETION_SAFE_WITH_OPEN_GOVERNANCE_ITEMS",
+    "earned_at": "2026-08-24T16:27:17.010Z",
     "audit_path": "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md",
     "open_recommendations_path": "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
-    "chat_required_for_future_work": true
+    "content_release_pull_request": 922,
+    "content_release_merge_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "pages_workflow_run": 32750603024,
+    "actor_live_workflow_run": 32750605646,
+    "open_governance_tracking_issues": [
+      355,
+      356
+    ],
+    "open_governance_items_preserved": true,
+    "preservation_lock_remains_active": true,
+    "protected_deletion_or_demotion_authorized": false,
+    "unique_substantive_source_remaining_in_chat": false,
+    "chat_required_for_future_work": false,
+    "meaning": "The actor presentation, institutional-role separation, linkage record, allegations, evidential boundaries, validation, deployment evidence and open governance queue are recoverable outside the originating chat. Deleting the chat does not authorize removal, demotion, abridgement, collapse or unlinking of protected content."
   }
 }

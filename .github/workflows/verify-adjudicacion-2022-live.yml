@@ -10,6 +10,8 @@ on:
       - 'en/corrections-version-control/index.html'
       - 'assets/adjudicacion-provenance-cross-site-20260819.js'
       - 'assets/site.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'scripts/render_adjudicacion_provenance.mjs'
       - 'scripts/validate_public_bidder_anonymisation.py'
       - 'publication-manifests/adjudicacion-2022-reconstruction-2026-08-19.json'
@@ -92,8 +94,22 @@ jobs:
                       "only the bidder's name is anonymised in the public record",
                   ],
               },
-              "loader": {
+              "outer_loader": {
                   "url": f"{base}/assets/site.js?{cache_bust}",
+                  "markers": [
+                      "site-pre-intervencion-highlight-20260820.js?v=20260824e",
+                      "data-pre-intervencion-site-loader",
+                  ],
+              },
+              "loader_wrapper": {
+                  "url": f"{base}/assets/site-pre-intervencion-highlight-20260820.js?{cache_bust}",
+                  "markers": [
+                      "site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e",
+                      "data-pre-fiscalia-eg95-pre-intervencion-loader",
+                  ],
+              },
+              "adjudicacion_loader": {
+                  "url": f"{base}/assets/site-pre-intervencion-highlight-before-eg95-20260823.js?{cache_bust}",
                   "markers": [
                       "adjudicacion-provenance-cross-site-20260819.js?v=20260820a",
                       "data-adjudicacion-provenance-loader",

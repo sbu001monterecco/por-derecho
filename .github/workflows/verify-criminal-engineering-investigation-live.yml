@@ -14,6 +14,7 @@ on:
       - 'en/land-registry-implementation-property-by-property/**'
       - 'assets/site.js'
       - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
       - 'assets/case-information-architecture-20260819.js'
       - 'assets/data/criminal-engineering-investigation-v1.json'
       - 'scripts/render_criminal_engineering_investigation.mjs'
@@ -69,9 +70,14 @@ jobs:
               'case_module': (f'{base}/assets/case-information-architecture-20260819.js?{query}', [
                   'data-case-context-gateway', 'case-issue-register', 'LIVE_VERIFIED =']),
               'outer_loader': (f'{base}/assets/site.js?{query}', [
-                  'site-pre-intervencion-highlight-20260820.js']),
-              'case_loader': (f'{base}/assets/site-pre-intervencion-highlight-20260820.js?{query}', [
-                  'case-information-architecture-20260819.js', 'data-case-information-architecture-loader']),
+                  'site-pre-intervencion-highlight-20260820.js?v=20260824e',
+                  'data-pre-intervencion-site-loader']),
+              'case_loader_wrapper': (f'{base}/assets/site-pre-intervencion-highlight-20260820.js?{query}', [
+                  'site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e',
+                  'data-pre-fiscalia-eg95-pre-intervencion-loader']),
+              'case_loader': (f'{base}/assets/site-pre-intervencion-highlight-before-eg95-20260823.js?{query}', [
+                  'case-information-architecture-20260819.js?v=20260819b',
+                  'data-case-information-architecture-loader']),
               'data': (f'{base}/assets/data/criminal-engineering-investigation-v1.json?{query}', [
                   '"schema_version": "1.1"', '"CE-010"', '"corrections_es"', '"notary_es"', '"registry_es"']),
               'es_corrections': (f'{base}/es/correcciones-control-versiones/?{query}', [
