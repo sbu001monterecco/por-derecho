@@ -2,6 +2,8 @@
 
 **Purpose:** internal audit pointers for the public A1–A8 register. This file records identifiers and the minimum proposition they support. It does not reproduce privileged advice or full email bodies.
 
+**24 August valuation/payment update:** read this map with `ACTUA_GESVALT_GOLDEN_TRIGGER_SOURCE_MAP_24AUG2026.md`, which adds the public PDF checksums, post-non-convalidation persistence bridge, complete located Parrilla instruction-conflict register and the controlled basis for Gil's actual-knowledge/conscious-avoidance allegation.
+
 ## A1 — Juan Tomás Parrilla
 
 | Source | Date | Minimum proposition |
@@ -120,7 +122,7 @@
 | GESVALT full valuation, Drive `1ZVr6lW6PjIBsnLPrzF4-1xi-MWI0H_Tj`; repository ACTÚA/GESVALT research | Treats the 262 fincas as one hotel operation, identifies reception/access/pools as operational components and supplies contrary condition/value analysis. It supports a hotel-wide operational-prejudice inquiry but does not make the standalone legal value of the 31 fincas equal to the €26.4m whole-hotel valuation. |
 | Criminal complaint draft, Drive `1GRIM46jlrIoCzo79l9HNoiu0NzgRmevW` | Preserves Gil's criminal hypothesis under Article 252 concerning the sale and requests investigation of the €400,000 source/account/use. It is a party complaint, not an adjudication. |
 | Gil Marer direct confirmation, 24 August 2026 | Gil states that the sale was criminal in hindsight, that its price is illicit proceeds, that the €400,000 was the only source from which the AC paid himself and Parrilla, and that CAM immediately raised approximately €1m from Cajasiete secured on the acquired premises. The first three propositions are partly corroborated by the AC reports/fee sequence but the exact Parrilla debit is outstanding. No mortgage deed/current Registry certification proving the Cajasiete proposition was located in the finite repository/Drive/Gmail scan, so it remains attributed and open. |
-| Código Penal arts. 127, 252, 301, official BOE | Supplies the legal framework for confiscation, alleged disloyal administration and knowing dealings in criminal proceeds. Receipt alone is not proof of Article 301 knowledge. |
+| Código Penal arts. 127, 252, 301, official BOE | Supplies the legal framework for confiscation, alleged disloyal administration and knowing dealings in criminal proceeds. Gil's allegation of actual knowledge or conscious avoidance is supported cumulatively by the chronology in the 24 August source map; it is not inferred from receipt or professional status alone and remains unadjudicated. |
 
 ## Evidence gates
 
