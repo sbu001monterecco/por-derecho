@@ -19,8 +19,8 @@ Bilingual public website for the Project Sun Rock umbrella platform.
 - `/en/insolvency-36-2012-orders-decisions/` — English navigation and scope-control counterpart for that complete public-safe specialist corpus
 - `/es/concurso-36-2012-que-ordeno-el-juzgado/` and `/en/concurso-36-2012-what-the-court-ordered/` — bilingual reader of twelve selected critical instruments, their limits, implementation and open proof
 - `/es/concurso-36-2012-columna-judicial/` and `/en/concurso-36-2012-judicial-spine/` — judicial/LAJ state-transition map read together with the denominator-aware whole-record catalogue
+- `/es/tesis-uso-criminal-procedimiento-calificacion/` and `/en/insolvency-classification-criminal-misuse-thesis/` — canonical five-pillar, actor-specific investigative thesis for the Calificación record, with an express RPL 2523/2025 appeal firewall, contrary evidence and equal-visibility right of reply
 - `/es/solicitud-seguridad-administracion-concursal-sun-park-27-febrero-2018/` and `/en/insolvency-administrator-security-request-sun-park-27-february-2018/` — privacy-safe source reader for the 27 February 2018 AC security-meeting request; a party communication, not a court order or proof of implementation
-- `/es/cuatrecasas-dp748-accion-civil/` and `/en/cuatrecasas-dp748-civil-action/` — bilingual, privacy-controlled position separating DP 748/2026, the La Laguna enforcement/assignee hypothesis, the planned civil mandate-and-billing audit, ICAM and a jurisdiction-dependent SRA route
 - `/` — language-aware entry point
 
 The site is intentionally static and does not collect submissions, set analytics cookies, or host confidential evidence. Historic Fundación Por Derecho URLs redirect to the relevant section of the new platform.
@@ -30,8 +30,6 @@ The CAM criminal-lead pages state Gil Marer/Aweswell's allegations prominently b
 ## Editorial safeguards
 
 Public content distinguishes documents, facts, allegations, inferences, open questions and official outcomes. Personal data, privileged material, legal strategy and unaudited capital or claim figures must remain outside this repository.
-
-The Cuatrecasas DP 748/civil-action pages must not publish the names of current lawyers or procedural representatives. They preserve principal responsibility allegations against the Acosta Matos perimeter and treat any Cuatrecasas responsibility as separate and potentially cumulative. A connected remate recipient is a client-side leading hypothesis to be tested through court, KYC/AML, funding and beneficial-ownership records; no assignee identity is published as fact without primary proof.
 
 Public primary documents are stored under `assets/docs/` or the controlled `evidence/` tree only after provenance, scope and redaction review; publication of a receipt, filing or procedural record does not convert it into a merits finding. The Concurso 36/2012 Autos corpus uses complete redacted Markdown transcriptions plus raster-only decision PDFs, with source hashes and known gaps preserved in its manifest and provenance record.
 
