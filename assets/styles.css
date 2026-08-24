@@ -2517,3 +2517,77 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 @media print {
   .audience-full-record details > [data-audience-full-record-content] { display: block !important; }
 }
+
+/* CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824 */
+.cm-thesis-section {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2.2rem, 5vw, 4.6rem) 0;
+  color: #fff;
+  background:
+    radial-gradient(circle at 92% 12%, rgba(201, 107, 74, .22), transparent 28rem),
+    linear-gradient(135deg, #101f27 0%, #172d36 62%, #203d45 100%);
+  border-top: .35rem solid #c96b4a;
+  border-bottom: 1px solid rgba(255,255,255,.14);
+}
+.cm-thesis-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .22;
+  background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+}
+.cm-thesis-section .shell { position: relative; z-index: 1; }
+.cm-thesis-head { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(16rem, .65fr); gap: 1.4rem; align-items: end; }
+.cm-thesis-kicker { margin: 0 0 .65rem; color: #f0c5b5; font-size: .72rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.cm-thesis-section h2 { max-width: 18ch; margin: 0; color: #fff; font-size: clamp(2rem, 4.4vw, 4rem); line-height: 1.03; }
+.cm-thesis-lead { max-width: 72ch; margin: 1rem 0 0; color: #edf2f1; font-size: clamp(1rem, 1.7vw, 1.25rem); line-height: 1.58; }
+.cm-thesis-boundary { align-self: stretch; padding: 1rem 1.1rem; color: #f7eeee; background: rgba(7,17,22,.58); border: 1px solid rgba(240,197,181,.45); border-radius: .85rem; }
+.cm-thesis-boundary strong { display: block; margin-bottom: .35rem; color: #fff; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.cm-thesis-boundary span { display: block; font-size: .82rem; line-height: 1.55; }
+.cm-thesis-pillars { counter-reset: cm-pillar; display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: .75rem; margin: 1.4rem 0 0; }
+.cm-thesis-pillar { counter-increment: cm-pillar; min-height: 12.7rem; padding: 1rem; color: #14262e; background: #fff; border: 1px solid rgba(255,255,255,.28); border-radius: .8rem; box-shadow: 0 .8rem 2rem rgba(0,0,0,.14); }
+.cm-thesis-pillar::before { content: "0" counter(cm-pillar); display: block; margin-bottom: 1.35rem; color: #a54f36; font-size: .72rem; font-weight: 900; letter-spacing: .1em; }
+.cm-thesis-pillar strong { display: block; margin-bottom: .55rem; font: 600 1.08rem/1.2 Georgia, serif; }
+.cm-thesis-pillar span { display: block; color: #516168; font-size: .78rem; line-height: 1.5; }
+.cm-thesis-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.35rem; }
+.cm-thesis-actions a { display: inline-flex; align-items: center; min-height: 2.8rem; padding: .65rem .9rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,.52); border-radius: .45rem; font-size: .8rem; font-weight: 900; }
+.cm-thesis-actions a:first-child { color: #14262e; background: #f0c5b5; border-color: #f0c5b5; }
+.cm-thesis-actions a:hover, .cm-thesis-actions a:focus-visible { transform: translateY(-.08rem); box-shadow: 0 .55rem 1.2rem rgba(0,0,0,.18); }
+.cm-thesis-compact { padding: clamp(1.5rem, 3vw, 2.5rem) 0; color: #fff; background: #14262e; border-top: .3rem solid #c96b4a; }
+.cm-thesis-compact .cm-thesis-compact-inner { display: grid; grid-template-columns: minmax(0,1.7fr) minmax(15rem,.55fr); gap: 1.2rem; align-items: center; }
+.cm-thesis-compact h2 { margin: .25rem 0 .55rem; color: #fff; font-size: clamp(1.55rem, 3vw, 2.4rem); }
+.cm-thesis-compact p { margin: 0; color: #dae4e3; line-height: 1.55; }
+.cm-thesis-compact a { justify-self: end; display: inline-flex; padding: .75rem .95rem; color: #14262e; background: #f0c5b5; border-radius: .45rem; text-decoration: none; font-weight: 900; }
+.cm-page .hero { background: linear-gradient(140deg, #101f27, #1d3842); }
+.cm-page .hero h1, .cm-page .hero .lead { color: #fff; }
+.cm-page-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.cm-page-card { padding: 1.15rem; background: #fff; border: 1px solid var(--line); border-top: .3rem solid #c96b4a; border-radius: .75rem; }
+.cm-page-card .cm-label { color: #9a4934; font-size: .68rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+.cm-page-card h3 { margin: .55rem 0 .65rem; }
+.cm-proof-split { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-top: 1rem; }
+.cm-proof-split > article { padding: 1.2rem; border-radius: .75rem; }
+.cm-proof-split .documented { background: #e8f0ed; border-left: .35rem solid #386858; }
+.cm-proof-split .unproved { background: #f6ece8; border-left: .35rem solid #b15c42; }
+.cm-proof-split h3 { margin-top: 0; }
+.cm-test { width: 100%; border-collapse: collapse; background: #fff; }
+.cm-test th, .cm-test td { padding: .75rem; text-align: left; vertical-align: top; border: 1px solid var(--line); }
+.cm-test th { color: #fff; background: #14262e; }
+.cm-ap-firewall { padding: 1.25rem 1.35rem; color: #f3f5f4; background: #14262e; border-left: .45rem solid #d2a74b; border-radius: .75rem; }
+.cm-ap-firewall strong { color: #fff; }
+.cm-reply { padding: 1.1rem 1.2rem; background: #f6f3ec; border: 1px dashed #8d7c67; border-radius: .75rem; }
+
+@media (max-width: 1000px) {
+  .cm-thesis-pillars { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .cm-thesis-pillar:last-child { grid-column: 1 / -1; min-height: auto; }
+}
+@media (max-width: 720px) {
+  .cm-thesis-head, .cm-thesis-compact .cm-thesis-compact-inner, .cm-page-grid, .cm-proof-split { grid-template-columns: 1fr; }
+  .cm-thesis-pillars { grid-template-columns: 1fr; }
+  .cm-thesis-pillar, .cm-thesis-pillar:last-child { grid-column: auto; min-height: auto; }
+  .cm-thesis-pillar::before { margin-bottom: .7rem; }
+  .cm-thesis-compact a { justify-self: start; }
+  .cm-test { font-size: .84rem; }
+}
