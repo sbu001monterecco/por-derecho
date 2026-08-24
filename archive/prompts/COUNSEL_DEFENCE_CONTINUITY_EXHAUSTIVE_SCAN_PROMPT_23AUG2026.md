@@ -29,7 +29,8 @@ Do not treat this list as exhaustive. Unauthorised/unverified names remain B1, B
 - 5–6 June 2019 drafting/revision chain and 26 February–3 March 2020 Alas/Joaquín/ratification threads;
 - AC’s 5 February 2020 Article 215.2 motion; the electronically signed 19–20 February *providencia*; any reconsideration; and the complete later complaint docket;
 - 21 September 2020 Ruiz de Infante and Alas/team withdrawal notices;
-- 22 May 2020 SLJ proposal; 25 May briefing; 28 May–23 June Parrilla/AC/CAM contacts; 23 June SLJ withdrawal and client response;
+- full English/Spanish 22 May 2020 SLJ engagement; 25 May briefing; 28 May–23 June Parrilla/AC/CAM contacts; 23 June SLJ withdrawal and client response;
+- SLJ client-file receipt/retention/return chain; 4 December 2020 fee-piece filing, LexNET wrapper, 179-page inventory and selected annexes; 29 September 2021 Decree 316/2021 and 2 November finality/archive;
 - Cuatrecasas engagement/mandate materials; 2018 and Q1-2019 proformas/time entries; April 2019 classification mandate-boundary chain; April/June IA-CAM, lender-comfort and financed-exit work; July Aweswell-exclusion filings; October results; May 2020 withdrawal/venia;
 - Garrigues May–June 2012 insolvency, Bankia, interim-measures and Community work;
 - Cristo May 2016–June 2022 work ledger; 25 January 2018 AC instruction; DP1041/2017 outcome; February 2020 contemporaneous assessment;
@@ -64,6 +65,11 @@ These controls are not public causation badges. The public account must read as 
 - Do not treat a stated withdrawal reason as an exhaustive characterisation of the earlier mandate, its effectiveness or AC impact.
 - Do not describe client substitution as involuntary withdrawal.
 - Do not infer that non-payment was an AC decision without invoice/request/response proof.
+- Distinguish a lawyer's claimed hours/work from judicially verified procedural output; preserve Decree 316/2021's no-Jiménez/SLJ-signed-filing finding.
+- Treat the client's pre-engagement no-contact statement as attributed testimony unless the exact instruction is recovered; identify which contemporaneous emails corroborate its claims-first, anti-intermediation and no-information substance.
+- Do not convert a proposed CAM call into proof that the call occurred.
+- Do not describe the 4,458 underlying client documents as filed when the court filing contained a 179-page inventory and selected material. Do not infer AC/CAM receipt from LexNET transfer to Aweswell's procurator; obtain access/service/consultation records.
+- “Theft” is a client's legal/factual characterisation unless adjudicated. Test original authority to receive, authority/duty to retain or return, litigation necessity, professional secrecy, confidentiality, proportionality, access and prejudice separately.
 - Do not merge LPB, Gil, Aweswell, Matkator or Pink mandates.
 - Do not treat Kepler–Karst as corporate successor to Alas without corporate proof.
 - Preserve legal privilege and do not publish confidential advice/weaknesses.

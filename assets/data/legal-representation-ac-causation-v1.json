@@ -51,9 +51,9 @@
     },
     {
       "id": "LRAC-OF-005",
-      "proposition": "Direct evidence that Borja deliberately intended to isolate, discourage or push away a lawyer has not been located in the present pass.",
-      "status": "OPEN_NOT_SUPPORTED",
-      "qualification": "Objective impact, knowledge/foreseeability and intent must remain separate propositions."
+      "proposition": "The 28 May-5 June 2020 record supports a document-based investigative inference that Borja deliberately sought access to incoming counsel through outgoing lawyer Juan Tomás Parrilla and then served as the conduit for proposed Acosta Matos contact.",
+      "status": "SUPPORTED_AS_INVESTIGATIVE_INFERENCE_WITH_LIMITS",
+      "qualification": "Parrilla conveyed the AC's contact request despite the client's contemporaneously recorded repeated anti-intermediation instruction; the resulting AC call combined peace/possible complaint withdrawal, assurance that Parrilla/procurator would be paid, praise of Parrilla and IA/CAM positions; CAM's lawyer then reportedly asked the AC to arrange contact. This supports investigation of attempted influence, not an adjudicated finding of unlawful intent, collusion, a completed CAM call or causation of Jiménez's resignation. It is not proof of a universal strategy to push lawyers away."
     }
   ],
   "engagementAssessments": [
@@ -70,12 +70,12 @@
     {
       "professional": "Juan Tomás Parrilla Suárez",
       "clientMatter": "LPB / Concurso 36/2012",
-      "acWorkstreamImpact": "C2",
+      "acWorkstreamImpact": "C3",
       "exitCausation": "C0-C1",
       "documentedAlternativeCause": "Client-initiated substitution framed contemporaneously as mutual loss of confidence; Parrilla accepted the decision as best for both sides.",
-      "acSpecificFinding": "AC involvement is material to the later fee/handover dispute but is not established as the cause of the initial replacement.",
-      "counterEvidence": "The outgoing lawyer expressly accepted the substitution and granted venia.",
-      "openQuestion": "Separate ordinary concursal fee administration from any independently provable interference with handover or successor work."
+      "acSpecificFinding": "On 28 May Parrilla conveyed the AC's wish to speak to incoming counsel despite Patricia's contemporaneously recorded statement that Parrilla had repeatedly been told not to intercede for the AC and to keep dealings in writing. Daniel's 1 June call report records AC assurance that Parrilla and the procurator would be paid from proceeding funds, praise of Parrilla and use of the call to advance IA/CAM positions. A July AC report records a later EUR 26,750 fee payment. The sequence supports investigation of Parrilla as an AC access route; it does not prove collusion, an improper payment or that the AC caused the initial replacement.",
+      "counterEvidence": "The outgoing lawyer expressly accepted the substitution and granted venia. Payment of properly earned counsel/procurator fees from available concurso funds may be ordinary administration; exact entitlement, approval and bank source require the complete fee and accounting record.",
+      "openQuestion": "Lock the 18 May protective-instruction chain and July payment binary; map authority, invoice, approval, accounting entry and bank source; determine whether any money derived from the non-convalidated transaction rather than inferring source from temporal proximity."
     },
     {
       "professional": "Cuatrecasas",
@@ -104,9 +104,11 @@
       "acWorkstreamImpact": "C3",
       "exitCausation": "C1-C2",
       "documentedAlternativeCause": "Formal 23 June 2020 resignation identifies strategy divergence, disagreement over control of legal strategy, and unpaid agreed fees.",
-      "acSpecificFinding": "Direct June 2020 friction with the AC is documented, including concern about work/fee negotiations becoming tied to the position of JT/AC and disagreement over who should channel information/questions to the AC.",
-      "counterEvidence": "The lawyer's formal resignation does not identify Borja as a reason for leaving.",
-      "openQuestion": "Determine whether AC friction materially accelerated a resignation already independently supported by strategy and fee causes."
+      "acSpecificFinding": "The engagement was accepted on 22 May for direct Aweswell instructions, AC removal and assessment of AC/CAM claims. Parrilla conveyed the AC request on 28 May after client warnings against off-record intermediation; Daniel took and reported the 1 June call. The call combined peace/possible complaint withdrawal, assurance of Parrilla/procurator payment, praise of Parrilla and IA/CAM positions. On 5 June Daniel reported that CAM's lawyer asked the AC to arrange contact. This supports the client's attempted-influence inference. It does not prove the CAM call occurred, unlawful intent, collusion or that contact caused withdrawal.",
+      "clientPosition": "Gil/Patricia say an express pre-engagement no-contact instruction was given and describe Daniel's rapid change of tone/position as hostile. Their 23 June email restates that account; 28 May and 5 June emails corroborate claims-first, anti-intermediation and no-information substance without containing the exact alleged pre-contract sentence.",
+      "performanceAndDataRoom": "SLJ claimed 55 hours of review, calls and drafting, but Decree 316/2021 found no Daniel/SLJ-signed procedural filing during the mandate and the alleged court filing unproved. On 4 December 2020 SLJ filed a 179-page inventory identifying the contents of the 4,458-document client file plus selected material. It did not file every underlying file; immediate LexNET transfer is shown only to Aweswell's procurator. Retention, necessity, confidentiality, proportionality and actual adverse-party access remain unresolved.",
+      "counterEvidence": "Daniel challenged several AC positions, disclosed the communications, denied being conditionable and said the AC was losing his manners. His formal resignation does not identify Borja as a reason for leaving and instead identifies strategy, client control and unpaid fees.",
+      "openQuestion": "Determine whether AC contact materially influenced tone, strategy or resignation; obtain the complete SLJ file and response; obtain certified fee-piece access/service/consultation records before alleging the AC or CAM actually received the data-room inventory or selected material."
     },
     {
       "professional": "DWF/RCD team including Bernard Afonso, Jordi Albiol and Joshua Fineman",
@@ -161,6 +163,15 @@
   ],
   "materialEvents": [
     {
+      "id": "LRAC-EVT-2020-000",
+      "dateWindow": "2020-05-28/2020-06-05",
+      "actors": ["Daniel Jiménez García", "Juan Tomás Parrilla Suárez", "Administrador Concursal", "Acosta Matos"],
+      "event": "Outgoing counsel conveyed the AC's request to speak to incoming counsel; the AC call combined peace/possible complaint withdrawal, assurance of outgoing-counsel/procurator payment, praise of outgoing counsel and IA/CAM positions; CAM's lawyer then reportedly asked the AC to arrange contact.",
+      "effect": "Documented access and attempted-influence sequence despite contemporaneous client warnings against off-record intermediation and information disclosure.",
+      "exitLink": "INVESTIGATIVE_INFERENCE_ONLY_CAUSATION_NOT_PROVED",
+      "strongestDefence": "The AC and incoming counsel may legitimately communicate about an active concurso, possible settlement and professional-fee administration; Daniel resisted positions and his later resignation cited independent strategy, client-control and payment grounds."
+    },
+    {
       "id": "LRAC-EVT-2020-001",
       "dateWindow": "2020-06-12/2020-06-23",
       "actors": ["Daniel Jiménez García", "Juan Tomás Parrilla", "Administrador Concursal"],
@@ -168,6 +179,15 @@
       "effect": "Added pressure and professional disagreement; Daniel objected to dependence of his fee position on AC/JT negotiations.",
       "exitLink": "BACKGROUND_CONTRIBUTOR_ONLY_ON_CURRENT_RECORD",
       "strongestDefence": "The AC was managing matters arising within a concurso and enforcing role boundaries; Daniel's formal resignation identifies independent strategy and payment causes."
+    },
+    {
+      "id": "LRAC-EVT-2020-002",
+      "dateWindow": "2020-12-03/2021-11-02",
+      "actors": ["SLJ Abogados", "Aweswell", "Mercantile Court No. 1 Las Palmas"],
+      "event": "In the post-engagement fee proceeding SLJ filed a 179-page inventory extracted from its database and naming the contents of the 4,458-document client file, plus selected client material; Aweswell's fee opposition was upheld and the decision became final.",
+      "effect": "Created a court-record confidentiality and exposure question. The filing did not include every underlying file and the wrapper proves immediate transfer only to Aweswell's procurator.",
+      "exitLink": "POST_ENGAGEMENT_NOT_EXIT_CAUSATION",
+      "strongestDefence": "Counsel may rely on necessary, proportionate material to defend a fee claim and professional conduct cannot be assessed without the complete fee file, applicable secrecy rules and SLJ's explanation; actual AC/CAM access is not proved."
     },
     {
       "id": "LRAC-EVT-2023-001",
@@ -193,11 +213,11 @@
     "recurringExtraProceduralWork": "SUPPORTED",
     "recurringProfessionalConflictWithAC": "SUPPORTED_WITH_LIMITATION",
     "recurringACCausedLawyerExit": "NOT_SUPPORTED_ON_CURRENT_RECORD",
-    "deliberateIsolationOrPushAway": "NOT_SUPPORTED_ON_CURRENT_RECORD",
+    "deliberateIsolationOrPushAway": "LIMITED_2020_TRANSITION_INFLUENCE_INFERENCE_SUPPORTED_NOT_UNIVERSAL_PUSH_AWAY",
     "ownerSideKnowledgeContinuityLoss": "SUPPORTED_WITH_MIXED_CAUSATION",
     "unpaidFeesAsRecurringAttritionFactor": "STRONGLY_SUPPORTED"
   },
-  "safeCurrentConclusion": "Across several independent legal teams, the record supports treating AC-controlled procedural and authority dependencies as a recurring material influence on owner-side representation. Each mandate must be described as an integrated history of billed scope, IA conduct, professional response or limit, result and later transition. Formal exit reasons remain relevant without deciding the prior AC effect or mandate effectiveness. Exclusive-cause, deliberate-intent and professional-liability findings remain unproved unless specifically adjudicated.",
+  "safeCurrentConclusion": "Across several independent legal teams, the record supports treating AC-controlled procedural and authority dependencies as a recurring material influence on owner-side representation. For the 28 May-5 June 2020 Parrilla-to-Daniel transition specifically, the documented sequence supports an investigative inference that the AC sought access to and influence over incoming counsel through outgoing counsel; it does not prove unlawful purpose, collusion, a completed CAM call or resignation causation. Each mandate must otherwise be described as an integrated history of accepted or billed scope, IA conduct, professional response or limit, result and later transition. Formal exit reasons remain relevant without deciding prior AC effect or mandate effectiveness. Universal push-away, exclusive-cause and professional-liability findings remain unproved unless specifically adjudicated.",
   "unsafeCurrentConclusion": "Borja pushed successive lawyers away.",
   "publicationGate": {
     "publishAsFrontendClaimNow": false,
@@ -207,7 +227,8 @@
       "Recover DWF/RCD non-personation decision record.",
       "Complete lawyer-by-lawyer engagement, billing, venia and handover files.",
       "Quantify the added work/cost attributable to specific AC acts while testing legitimate alternative explanations.",
-      "Separate objective effect, AC knowledge/foreseeability and intent."
+      "Separate objective effect, AC knowledge/foreseeability and intent.",
+      "Obtain certified access, service and consultation history for fee-account piece 36/2012, piece 11, and do not infer AC/CAM receipt from the LexNET wrapper."
     ]
   }
 }

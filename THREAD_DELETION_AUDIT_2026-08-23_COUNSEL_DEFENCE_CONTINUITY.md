@@ -35,15 +35,20 @@ The procedural limitation does not erase practical effect. The record shows urge
 
 ### Daniel / Parrilla / AC
 
-- 22 May SLJ proposal contemplated AC removal and possible AC/CAM claims;
-- 28 May–1 June contact sequence through Parrilla and direct call with AC;
-- 5 June CAM contact channel;
+- 22 May bilingual SLJ proposal was accepted and contemplated direct Aweswell instruction, AC removal and possible AC/CAM claims;
+- 28 May Parrilla relayed the AC's contact request; the same chain records the client's repeated anti-intermediation/in-writing instruction to Parrilla and warning to Jiménez;
+- 1 June Jiménez's 17-point call report records proposed peace/possible complaint withdrawal, assurance of Parrilla/procurator payment, praise of Parrilla and IA/CAM positions;
+- 5 June Jiménez said CAM's lawyer had asked the AC to arrange contact. The client instructed claims first and no information; the proposed CAM call is not proved to have occurred;
 - 11 June Jiménez opposition to AC position;
 - 18 June private AC lawyer-to-lawyer email, forwarded by Jiménez with criticism;
 - Jiménez statement that he ended negotiations because Parrilla/AC tried to condition work on fees;
-- 23 June withdrawal and client response recording its asserted no-contact instruction.
+- 23 June withdrawal and client response recording its asserted pre-engagement no-contact instruction;
+- 4 December fee-piece filing of a 179-page inventory naming the 4,458-document client file, plus selected client material;
+- 29 September 2021 Decree 316/2021 finding no Jiménez/SLJ-signed procedural filing during the mandate and the claimed court filing unproved; 2 November finality/archive.
 
-The public page states the client allegation that the AC exploited an opening but also retains Jiménez’s contrary/resisting conduct and his stated withdrawal reasons.
+The public page states as an investigative inference that the AC sought to instrumentalise the outgoing-lawyer transition to influence incoming counsel despite protective client instructions. It also retains Jiménez's contrary/resisting conduct and his stated withdrawal reasons. It does not publish unlawful motive, collusion or resignation causation as proved.
+
+The client-file proposition is separately controlled. SLJ did not file all 4,458 underlying files; it filed the full 179-page inventory and selected material. The LexNET wrapper shows immediate copy-transfer only to Aweswell's procurator. Actual AC/CAM access is open. The client's theft characterisation is not an adjudicated fact; retention authority, necessity, confidentiality, proportionality and prejudice require assessment.
 
 ### Cuatrecasas
 
@@ -83,6 +88,10 @@ The work ledger places Cristo from May 2016 to June 2022. A 25 January 2018 comm
 8. Cristo finding is limited to the identified mandate.
 9. Remaining professionals stay B1, B2, B3… pending verification/publication decision.
 10. No privileged advice or private email body is reproduced.
+11. The exact pre-contract no-contact sentence has not been independently recovered; it is published as client testimony corroborated by contemporaneous claims-first, anti-intermediation and no-information instructions.
+12. A requested CAM contact is not described as a completed call.
+13. Claimed SLJ hours are not converted into a finding of substantial work, and the Decree 316/2021 no-signed-filing finding remains visible.
+14. The 179-page inventory actually filed is not confused with the 4,458 underlying files, and no adverse-party access is inferred without court records.
 
 ## Institutional call
 
@@ -115,6 +124,15 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - English public edge: corresponding Article 215.2 and integrated-mandate markers visible; stale binary withdrawal wording absent; 21 total table rows;
 - verified at `2026-08-23T23:51:15Z` by cloud-browser public-edge readback.
 
+### 24 August responsibility/data-room correction
+
+- corrected the A1/A4 entries, source map, representation genealogy, causation sidecar, human audit, court chronology and correction register;
+- added the exact 28 May–5 June intermediary/influence sequence and strongest contrary evidence;
+- replaced any implication of substantial SLJ work with the claimed-hours/no-signed-filing distinction;
+- separated the 179-page inventory from the 4,458 underlying client files and left actual AC/CAM access open;
+- publication PR: [#885](https://github.com/sbu001monterecco/por-derecho/pull/885), source head `489529af9fe6875ed434293c1fabd6c57e296200`;
+- merge/deployment identifiers and public-edge verification remain pending.
+
 ## Final gate
 
-The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 23 August contextual correction prevents a formal withdrawal reason from being used as a substitute for the full mandate history. The remaining work is evidential completion, not recovery of the reasoning or source map.
+The previously published thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 24 August responsibility/data-room revision is source-complete locally but not yet live-verified. Its remaining substantive gaps are certified fee-piece access/service/consultation history, the native Parrilla payment/source chain and SLJ's response; the reasoning and source map are preserved.
