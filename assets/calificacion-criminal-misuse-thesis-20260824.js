@@ -8,6 +8,7 @@
     return path;
   };
   const path = normalise(location.pathname);
+  const home = new Set(['/es/', '/en/']);
   const featured = new Set([
     '/es/',
     '/en/',
@@ -77,7 +78,7 @@
     const pin = () => {
       const hero = main.querySelector(':scope > section:first-of-type');
       const controlling = main.querySelector(':scope > .ac-dfa-update-section');
-      const detailed = main.querySelector(':scope > section[data-pd-five-ac]');
+      const detailed = match(home) ? main.querySelector(':scope > section[data-pd-five-ac]') : null;
       const sourceFunds = main.querySelector(':scope > .source-funds-notice-section--featured');
       // The five-actor/AC/judicial allegation is the controlling first-read thesis.
       // Keep this legacy Calificacion panel after the locked detailed visual when

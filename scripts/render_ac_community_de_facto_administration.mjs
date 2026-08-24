@@ -24,6 +24,15 @@ async function inspect(name, route, assertions, screenshot, options = {}) {
     const body = await page.locator('body').innerText();
     for (const assertion of assertions) {
       if (assertion.text) record(`${name}: ${assertion.label}`, body.includes(assertion.text), assertion.text);
+      if (assertion.textSelector) {
+        const nodes = page.locator(assertion.textSelector);
+        const count = await nodes.count();
+        const text = count ? await nodes.first().innerText() : '';
+        const normalised = text.replace(/\s+/g, ' ').trim().toLocaleLowerCase();
+        const expected = assertion.includesAll || [];
+        const ok = count === 1 && expected.every((value) => normalised.includes(value.toLocaleLowerCase()));
+        record(`${name}: ${assertion.label}`, ok, `count=${count}; expected=${expected.join(' + ')}`);
+      }
       if (assertion.selector) {
         const count = await page.locator(assertion.selector).count();
         const expected = assertion.exactCount ?? null;
@@ -124,7 +133,7 @@ await inspect('Spanish homepage visibility', '/es/', [
   { label: 'five complete linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
   { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
   { label: 'private actor canonical portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
-  { label: 'Administrator acts and omissions', text: 'Actos afirmativos / comisiones alegadas' },
+  { label: 'Administrator acts and omissions', textSelector: 'section[data-pd-five-ac] [data-institution-card="administrator"]', includesAll: ['Actos afirmativos / comisiones alegadas', 'Omisiones alegadas'] },
   { label: 'Judge linkage named', text: 'Alberto López Villarrubia' }
 ], 'es-home.png', { openProgressive: false });
 
@@ -138,7 +147,7 @@ await inspect('English homepage visibility', '/en/', [
   { label: 'five complete linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
   { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
   { label: 'private actor canonical portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
-  { label: 'Administrator acts and omissions', text: 'Alleged affirmative acts / commissions' },
+  { label: 'Administrator acts and omissions', textSelector: 'section[data-pd-five-ac] [data-institution-card="administrator"]', includesAll: ['Alleged affirmative acts / commissions', 'Alleged omissions'] },
   { label: 'Judge linkage named', text: 'Alberto López Villarrubia' }
 ], 'en-home.png', { openProgressive: false });
 

@@ -253,7 +253,7 @@ def validate_runtime_contract(errors: list[str]) -> None:
     if "audience-experience-order-20260823.js?v=20260824b" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
     for marker in (
-        "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')",
+        "const detailed = match(home) ? main.querySelector(':scope > section[data-pd-five-ac]') : null",
         "const anchor = detailed || controlling || sourceFunds || hero",
     ):
         if marker not in calificacion:

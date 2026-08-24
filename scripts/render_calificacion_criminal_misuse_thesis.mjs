@@ -51,7 +51,7 @@ try {
         const direct = Array.from(main?.children || []);
         const thesis = document.querySelector('[data-calificacion-misuse-thesis]');
         const hero = main?.querySelector(':scope > section:first-of-type');
-        const detailed = main?.querySelector(':scope > section[data-pd-five-ac]');
+        const detailed = spec.key.endsWith('-home') ? main?.querySelector(':scope > section[data-pd-five-ac]') : null;
         const controlling = main?.querySelector(':scope > .ac-dfa-update-section');
         const sourceFunds = main?.querySelector(':scope > .source-funds-notice-section--featured');
         const guided = main?.querySelector(':scope > #calificacion-reader-gateway');
