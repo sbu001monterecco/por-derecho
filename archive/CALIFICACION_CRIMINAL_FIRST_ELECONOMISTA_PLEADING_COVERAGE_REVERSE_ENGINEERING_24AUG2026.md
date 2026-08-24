@@ -2,7 +2,7 @@
 
 **Control date:** 24 August 2026
 
-**Status:** repository analysis plus bilingual P0 implementation; not a judicial finding and not yet a deployment record
+**Status:** repository analysis, bilingual P0 implementation and exact live verification complete through PR 903; not a judicial finding
 
 **Frozen public baseline:** `origin/main` `aff8bb0553753f07a3a80b5f35cd2f483b81e0a8`
 
@@ -18,7 +18,7 @@ The strongest unitary account is not `civil dispute first, criminality later`. I
 4. keep adjudication and proof status separate; and
 5. run civil/concursal restitution, appeal, limitation and preservation in parallel rather than waiting for a criminal outcome.
 
-The Calificación page already carried most of that substantive architecture. The 24-Aug bilingual P0 implementation addresses the identified navigational and denominator weaknesses locally; live publication/readback remains the final gate:
+The Calificación page already carried most of that substantive architecture. The 24-Aug bilingual P0 implementation addressed the identified navigational and denominator weaknesses and is now live-verified:
 
 - the elEconomista/Madrid page now links back to Calificación, RPL 2523/2025 and the complete-record/pleading reader;
 - the complete-record reader now links to the substantive pages explaining the Calificación, media and appellate consequences;
@@ -105,17 +105,17 @@ What remains to close:
 - direct links from each public summary to the relevant consequence page and, if publication is approved, to a public-safe derivative;
 - the certified official docket denominator.
 
-## 6. Live cross-link audit and local closure — 24 August 2026
+## 6. Live cross-link audit and deployment closure — 24 August 2026
 
-The controlled live verifier resolved all `85/85` surfaces with HTTP 200 responses and passed every semantic safeguard. Exact repository-to-live hash parity was `83/85 = 97.6%`: the ES and EN `ric-private-equity-sun-park` routes were reachable but did not match the rebased repository copies. Reachability is therefore `100%`; exact deployment parity is not.
+The pre-publication verifier resolved all `85/85` surfaces with HTTP 200 responses and passed every semantic safeguard, but exact repository-to-live parity was `83/85 = 97.6%`. PR 903 then published the reconciled ES/EN RICPE copies together with the criminal-first update. The post-merge verifier at `2026-08-24T04:10:36Z` returned `85/85` HTTP 200 and `85/85` exact reviewed-source parity.
 
-| Route | Prior live context | Local closure awaiting live readback |
+| Route | Prior live context | Published closure |
 |---|---|---|
 | ES/EN Calificación | elEconomista, RPL 2523/2025, Meeting Point, RIC/incentives/funds and related routes. | Added the complete-record/pleading reader link and explicit criminal-first four-part panel. |
 | ES/EN elEconomista/Madrid | Meeting Point, Acosta Matos, RIC/RICPE and right-of-reply routes. | Added Calificación, RPL 2523/2025 and complete-record backlinks; exact `DP 913/2025 · JI nº 44 Madrid` label; document-scope/effect table. |
 | ES/EN complete-record reader | 50 unique full-text links (`R01–R32`, `F01–F18`) and 25 filing entries. | Added links to Calificación, elEconomista/Madrid and AP Section 4 explaining use/effect. |
 
-The prior live public edge showed the substantive facts, but not a bidirectional consequence graph. The local bilingual changes close that navigation gap; publication and exact live readback remain required before it may be called live.
+The prior live public edge showed the substantive facts, but not a bidirectional consequence graph. PR 903 published the bilingual navigation closure; browser readback confirmed the required markers and reciprocal links on the six critical ES/EN pages.
 
 ## 7. Criminal-first legal controls
 
@@ -126,7 +126,7 @@ The prior live public edge showed the substantive facts, but not a bidirectional
 5. **DP 1956/2026:** provisional dismissal remains the controlling status. A favourable RPL 2523/2025 result could be genuinely new evidence only if it proves a new element; it does not automatically reopen the file.
 6. **Civil protection remains parallel:** criminal-first reader order must not allow limitation, interim preservation, restitution, appeal or asset-accounting work to lapse.
 
-## 8. Immediate ES/EN website changes — implemented locally, live readback pending
+## 8. Immediate ES/EN website changes — implemented and live verified
 
 ### P0 — elEconomista page
 
@@ -163,7 +163,7 @@ Do not add another generated guilt/collusion graphic. The existing media illustr
 ## 10. Completion statement
 
 - **This reverse-engineered scan, prompt revision and repository gap instructions:** `100%` complete for the defined audit deliverable.
-- **Existing local Calificación/retaliation implementation package:** remains `92%` under its prior approved denominator because PR, merge, Pages deployment and exact readback remain outstanding.
+- **Calificación/retaliation publication implementation package:** `100%` under the defined approved-source, bilingual-public, visual, route, control, testing, PR, merge and live-readback denominator.
 - **Weighted evidential closure:** remains `55%`; this is not a probability of legal success.
 - **Identified specialist full-text publication:** `50/50 = 100%`.
 - **Identified specialist party-filing full-text publication:** `25/25 = 100%`.
@@ -172,6 +172,6 @@ Do not add another generated guilt/collusion graphic. The existing media illustr
 - **Calificación asserted-instrument public full-text publication:** `0/6 = 0%`; this is a publication-control state, not proof that public full text is legally required.
 - **Whole official Concurso pleading completeness:** not calculable until the certified docket/index is obtained.
 - **Controlled live URL availability:** `85/85 = 100%` returned HTTP 200.
-- **Exact repository-to-live surface parity:** `83/85 = 97.6%`; the two RICPE ES/EN routes are the current mismatches.
+- **Exact repository-to-live surface parity:** `85/85 = 100%` at `2026-08-24T04:10:36Z`.
 
-The bilingual Calificación, elEconomista/Madrid and complete-record source pages were updated locally under Gil Marer's 24-Aug publication instruction. At this checkpoint no email or filing was sent and no push, PR, merge or deployment had yet occurred.
+The bilingual Calificación, elEconomista/Madrid and complete-record pages were published under Gil Marer's 24-Aug instruction through PR 903, merged as `91334adaa3c82c6b7d4505666188a2d7e98daddb`, after `32/32` PR workflows passed. Exact Pages readback then passed `85/85`. No email or filing was sent.

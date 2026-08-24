@@ -2,9 +2,9 @@
   "publication_id": "CALIFICACION-ALERTADOR-RETALIATION-UNITARY-20260823",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-23",
-  "current_state": "DRAFT",
-  "controlling_pr": null,
-  "merge_sha": null,
+  "current_state": "LIVE_VERIFIED",
+  "controlling_pr": 903,
+  "merge_sha": "91334adaa3c82c6b7d4505666188a2d7e98daddb",
   "subject": "Unitary Calificacion, earlier-reporting, possible-retaliation and connected-proceedings interface",
   "expected_routes": {
     "es": [
@@ -34,7 +34,7 @@
     "archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md"
   ],
   "revision_20260824": {
-    "status": "BILINGUAL_P0_IMPLEMENTED_AND_VALIDATED_PUBLICATION_APPROVED_DEPLOYMENT_PENDING",
+    "status": "MERGED_CI_GREEN_LIVE_VERIFIED",
     "analysis_order": "criminal/investigative first; civil limitation, preservation, restitution and appeal remain parallel",
     "media_control": "Sentencia 163/2023, not Auto; LPB, not whole Sun Park; adverse and appealed; not directly dispositive of most elEconomista pitch propositions",
     "madrid_route": "DP 913/2025 kept separate; later AP disposition unlocated",
@@ -46,9 +46,9 @@
       "calificacion_complete_source_copies": "5/6; LPB opposition filed-bundle/index certification remains open",
       "calificacion_public_full_text": "0/6"
     },
-    "live_link_gap": "closed locally across Calificacion, elEconomista/Madrid, RPL 2523/2025 and complete-record readers; live readback pending",
-    "live_availability": "85/85 HTTP 200",
-    "live_exact_source_parity": "83/85; ES/EN ric-private-equity-sun-park differ from rebased repository"
+    "live_link_gap": "closed and live-verified across Calificacion, elEconomista/Madrid, RPL 2523/2025 and complete-record readers",
+    "live_availability": "85/85 HTTP 200 at 2026-08-24T04:10:36Z",
+    "live_exact_source_parity": "85/85; every monitored public surface matched the reviewed repository source"
   },
   "visual_contract": {
     "causal_chronology_nodes_per_language": 5,
@@ -66,12 +66,12 @@
     "The same hotel/materially overlapping asset perimeter is not an item- or euro-level finding of double or triple funding."
   ],
   "completion": {
-    "implementation_percent": 92,
+    "implementation_percent": 100,
     "implementation_denominator": "approved source, bilingual public, visual, route, control, testing, PR, merge and live-readback tasks",
     "evidential_closure_percent": 55,
     "evidential_denominator": "weighted certified-source closure model in the missing-evidence addendum",
     "legal_success_probability": null,
-    "note": "Implementation remains below 100 until merge and exact live readback. Evidential closure is independent and must not be inflated by publication completion."
+    "note": "The approved publication implementation, PR, merge and exact live readback are complete. Evidential closure remains independent and must not be inflated by publication completion."
   },
   "local_validation": {
     "git_diff_check": "PASS",
@@ -81,8 +81,42 @@
     "obsolete_temporal_wording_count": 0,
     "stale_alertador_cache_query_count": 0
   },
-  "live_verification": {
-    "status": "NOT_YET_CLAIMED"
+  "deployment_evidence": [
+    "PR 903 merged to main as 91334adaa3c82c6b7d4505666188a2d7e98daddb after all 32 pull-request workflow runs passed.",
+    "The GitHub Pages public edge served the merged bilingual Calificacion, elEconomista/Madrid and complete-record markers and reciprocal links.",
+    "The canonical 85-surface verifier returned HTTP 200 and exact reviewed-source SHA-256 parity for every monitored surface."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-rpl-2523-mapa-prueba/",
+    "https://sbu001monterecco.github.io/por-derecho/en/calificacion-rpl-2523-evidence-map/",
+    "https://sbu001monterecco.github.io/por-derecho/es/eleconomista-javier-romera-enero2025/",
+    "https://sbu001monterecco.github.io/por-derecho/en/eleconomista-javier-romera-january2025/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ric-private-equity-sun-park/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-24T04:10:36Z",
+    "pull_request": 903,
+    "merge_sha": "91334adaa3c82c6b7d4505666188a2d7e98daddb",
+    "workflow_result": "32/32 pull-request workflows passed with no failures.",
+    "browser_result": "Six critical ES/EN routes displayed the merged criminal-first, DP 913/2025, pleading-coverage and consequence-link markers.",
+    "integrity_result": "85/85 canonical surfaces returned HTTP 200 and matched the reviewed repository bytes and SHA-256 values; every semantic safeguard passed."
+  },
+  "validation": {
+    "status": "CI_GREEN_LIVE_VERIFIED",
+    "evidence": [
+      "all 32 pull-request workflows passed",
+      "Calificacion criminal-misuse thesis validator passed",
+      "Calificacion position/objectives and RPL 2523 evidence-map validators passed",
+      "complete-record, primary-orders and publication-integrity validators passed",
+      "browser readback passed for the six critical bilingual routes",
+      "canonical 85-surface live exact-parity verifier passed"
+    ]
   },
   "thread_deletion_audit": "docs/deletion-audits/2026-08-23-calificacion-alertador-retaliation-unitary.md"
 }
