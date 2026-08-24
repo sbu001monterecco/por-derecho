@@ -37,6 +37,8 @@ For each recovered source classify separately:
 
 Do not infer intent from omission alone. Do not infer valid complex-wide authority from ownership of individual units alone. Do not convert “not located” into “did not exist.”
 
-## Completion condition
+## Evidential-lane completion condition
 
-This P0 lane is not deletion-eligible until the pre-event communication/authority record, certified 7 June title position and immediate post-event AC response have either been recovered and reconciled or documented through a reproducible exhaustion/custody record.
+This P0 evidential lane remains active and is **not eligible for substantive evidential closeout** until the pre-event communication/authority record, certified 7 June title position and immediate post-event AC response have either been recovered and reconciled or documented through a reproducible exhaustion/custody record.
+
+That is separate from chat-thread deletion. A chat thread may be deleted once its material findings, limits, custody gaps and next actions are durably recorded in the repository. Deleting a thread does not close this P0 lane, erase evidence, withdraw an allegation, or convert a missing document into proof of non-existence.
