@@ -84,6 +84,11 @@ FORBIDDEN_GENERATED_ALIASES = (
     "Luci Playa Blanca",
     "Lucy Playa Blanca",
 )
+FORBIDDEN_HAVA_VIDA_ALIASES = (
+    "Habavida, S.L.",
+    "Habavida Travel & Tourism",
+    "Havidia Travel & Tourism",
+)
 EXPECTED_NAME_RECORDS = {
     "E003": {
         "canonical_name": "Luchy Playa Blanca, S.L.U.",
@@ -92,11 +97,37 @@ EXPECTED_NAME_RECORDS = {
         "registered_denominational_form": "LUCHY PLAYA BLANCA SOCIEDAD LIMITADA",
         "registered_status_descriptor": "Sociedad unipersonal",
     },
+    "E004": {
+        "canonical_name": "Matkator, S.L.U.",
+        "first_reference": "Matkator, S.L.U.",
+        "identifier": {
+            "type": "NIF",
+            "value": "B76621689",
+            "verification_status": "REPOSITORY_RECORDED_PRIMARY_NIF_DOCUMENT_OPEN",
+        },
+    },
     "E005": {
         "canonical_name": "Aweswell Limited",
         "identifier": {"type": "UK company number", "value": "07716847"},
         "former_name": "Monterecco Sun Park Limited",
         "former_name_period": "2011-07-25/2014-06-03",
+    },
+    "E006": {
+        "canonical_name": "Pink Canary Services, S.L.U.",
+        "first_reference": "Pink Canary Services, S.L.U.",
+        "identifier": {"type": "NIF", "value": "B76564517"},
+        "former_name": "Monterecco Sun Park, S.L.U.",
+        "former_name_change_date": None,
+        "former_name_change_date_status": "OPEN_EXACT_REGISTRY_ACT_NOT_LOCATED",
+    },
+    "E051": {
+        "canonical_name": "Hava Vida Travel & Tourism, S.L.U.",
+        "first_reference": "Hava Vida Travel & Tourism, S.L.U.",
+        "identifier": {
+            "type": "NIF",
+            "value": "B76564434",
+            "verification_status": "REPOSITORY_RECORDED_PRIMARY_SPANISH_NIF_DOCUMENT_OPEN",
+        },
     },
     "P-JTPS": {
         "canonical_name": "Juan Tomás Parrilla Suárez",
@@ -110,7 +141,16 @@ REQUIRED_OFFICIAL_URLS = {
         "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-39-35",
         "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-198-35",
     },
+    "E004": {"https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-246-38"},
     "E005": {"https://find-and-update.company-information.service.gov.uk/company/07716847"},
+    "E006": {
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+        "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14965",
+    },
+    "E051": {
+        "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+        "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
+    },
     "P-JTPS": {"https://www.boe.es/buscar/doc.php?id=BOE-B-2010-5683"},
 }
 CANONICAL_NAME_MARKERS = {
@@ -121,6 +161,8 @@ CANONICAL_NAME_MARKERS = {
     ROOT / "CHATGPT_START_HERE.md": (
         "ops/CANONICAL_ENTITY_NAMES.json",
         "Juan Tomás Parrilla Suárez",
+        "Pink Canary Services, S.L.U.",
+        "Hava Vida Travel & Tourism, S.L.U.",
     ),
     ROOT / "archive" / "OUTBOUND_EMAIL_COMMUNICATIONS_PROTOCOL_23AUG2026.md": (
         "Luchy Playa Blanca, S.L.U. (LPB)",
@@ -210,6 +252,12 @@ def validate_name_register(errors: list[str]) -> None:
         if alias.casefold() not in registered_aliases:
             errors.append(f"canonical-name register E003 missing forbidden generated alias {alias!r}")
 
+    hava_vida = records.get("E051", {})
+    hava_aliases = {alias.casefold() for alias in hava_vida.get("forbidden_generated_aliases", [])}
+    for alias in FORBIDDEN_HAVA_VIDA_ALIASES:
+        if alias.casefold() not in hava_aliases:
+            errors.append(f"canonical-name register E051 missing forbidden generated alias {alias!r}")
+
 
 def validate_controlled_names(errors: list[str]) -> None:
     validate_name_register(errors)
@@ -220,6 +268,11 @@ def validate_controlled_names(errors: list[str]) -> None:
             if alias.casefold() in text:
                 errors.append(
                     f"{path.relative_to(ROOT)}: forbidden invented or misspelled LPB name {alias!r}"
+                )
+        for alias in FORBIDDEN_HAVA_VIDA_ALIASES:
+            if alias.casefold() in text:
+                errors.append(
+                    f"{path.relative_to(ROOT)}: forbidden invented Hava Vida legal name {alias!r}"
                 )
 
     for path, markers in CANONICAL_NAME_MARKERS.items():

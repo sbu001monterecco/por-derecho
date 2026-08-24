@@ -101,6 +101,9 @@ if Decimal(str(fee["administrator_reported_payment"]["gross_eur"])) != Decimal("
 payment_by_track = {row["track"]: Decimal(str(row["amount_eur"])) for row in data["payment_tracks"]}
 if payment_by_track.get("HAVAVIDA_TO_GARRIGUES") != Decimal("9450.0"):
     fail("HAVAVIDA→Garrigues track missing or altered")
+payment_rows = {row["track"]: row for row in data["payment_tracks"]}
+if payment_rows["HAVAVIDA_TO_GARRIGUES"].get("payor") != "Hava Vida Travel & Tourism, S.L.U.":
+    fail("Hava Vida canonical payor name missing or altered")
 if payment_by_track.get("CLIENT_TO_PARRILLA_INITIAL", 0) + payment_by_track.get("COSTS_TO_PARRILLA_CREDIT", 0) != Decimal("2500.0"):
     fail("Parrilla defence fee legs do not total EUR 2,500")
 
@@ -109,14 +112,17 @@ required_es = [
     "CIF B35998582",
     "63.441,67 €",
     "desestimó íntegramente",
-    "HAVAVIDA pagó 9.450 € a Garrigues",
-    "No fue un pago a Juan Tomás Parrilla",
+    "Hava Vida Travel &amp; Tourism, S.L.U. pagó 9.450 € a Garrigues",
+    "No fue un pago a Juan Tomás Parrilla Suárez",
     "RECONSTRUCCIÓN SECUNDARIA",
     "51.156,67 € excluidos",
     "64.318,20 €",
     "85.353,06 €",
     "Cuadro contable interno Aweswell",
     "26.750 €",
+    "Cobertura textual conectada verificada: 98,6%",
+    "Pink Canary Services, S.L.U.",
+    "Monterecco Sun Park, S.L.U.",
     "no es correcto afirmar que todos los escritos y resoluciones de Parrilla estén ya publicados",
 ]
 required_en = [
@@ -124,17 +130,25 @@ required_en = [
     "CIF B35998582",
     "€63,441.67",
     "dismissed the claim in full",
-    "HAVAVIDA paid €9,450 to Garrigues",
-    "not a payment to Juan Tomás Parrilla",
+    "Hava Vida Travel &amp; Tourism, S.L.U. paid €9,450 to Garrigues",
+    "not a payment to Juan Tomás Parrilla Suárez",
     "SECONDARY RECONSTRUCTION",
     "€51,156.67 excluded",
     "€64,318.20",
     "€85,353.06",
     "Internal Aweswell accounting schedule",
     "€26,750",
+    "Verified connected-text coverage: 98.6%",
+    "Pink Canary Services, S.L.U.",
+    "Monterecco Sun Park, S.L.U.",
     "it would be inaccurate to say that every Parrilla pleading and decision is already online",
     "Non-certified translation and summary",
 ]
+mastery = data.get("parrilla_connected_corpus_mastery", {})
+if mastery.get("defined_text_units") != 1523 or mastery.get("text_readable_units") != 1502:
+    fail("Parrilla connected-corpus mastery denominator changed")
+if Decimal(str(mastery.get("coverage_percent"))) != Decimal("98.6"):
+    fail("Parrilla connected-corpus mastery percentage changed")
 for marker in required_es:
     if marker not in texts[ES]:
         fail(f"Spanish marker absent: {marker}")

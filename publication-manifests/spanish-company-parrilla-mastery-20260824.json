@@ -1,0 +1,82 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "SPANISH-COMPANY-PARRILLA-MASTERY-20260824",
+  "control_marker": "spanish-company-parrilla-mastery-20260824",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "DRAFT",
+  "purpose": "Lock the four project-side Spanish-company names, prevent Spanish/UK Monterecco conflation, and publish a reproducible privacy-safe Juan Tomás Parrilla Suárez corpus-coverage baseline.",
+  "canonical_spanish_companies": [
+    "Luchy Playa Blanca, S.L.U. (LPB) — CIF B35998582",
+    "Matkator, S.L.U. — NIF B76621689",
+    "Pink Canary Services, S.L.U. — NIF B76564517 — formerly Monterecco Sun Park, S.L.U.",
+    "Hava Vida Travel & Tourism, S.L.U. — NIF B76564434"
+  ],
+  "identity_separations": [
+    "Spanish Monterecco Sun Park, S.L.U. / Pink Canary Services, S.L.U. is not UK company 07716847 / Aweswell Limited.",
+    "Hava Vida Travel & Tourism, S.L.U. is not Havidia LLC or LPB.",
+    "A bare Monterecco ledger descriptor does not establish payer identity or bank account."
+  ],
+  "parrilla_mastery": {
+    "person": "Juan Tomás Parrilla Suárez",
+    "defined_connected_text_units": 1523,
+    "text_readable_units": 1502,
+    "coverage_percent": 98.6,
+    "status": "NOT_100_PERCENT_LEGAL_OR_EVIDENTIAL_MASTERY",
+    "open": [
+      "19 Drive documents need OCR/native review",
+      "2 Gmail records have no body text",
+      "27 direct-set attachments are unsupported by the connector",
+      "1,219 attachments require hash deduplication against Drive",
+      "certified court-file denominators, complete redacted publication and fee/bank proof remain open"
+    ]
+  },
+  "official_sources": [
+    "https://www.boe.es/buscar/doc.php?id=BOE-B-2012-22189",
+    "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-39-35",
+    "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-27-38",
+    "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-246-38",
+    "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2019-14965",
+    "https://find-and-update.company-information.service.gov.uk/company/07716847",
+    "https://find-and-update.company-information.service.gov.uk/company/10762489/officers"
+  ],
+  "affected_routes": [
+    "es/garrigues-la-laguna/",
+    "en/garrigues-la-laguna/",
+    "assets/data/project-side-spanish-companies-v1.json",
+    "ops/CANONICAL_ENTITY_NAMES.json"
+  ],
+  "expected_routes": {
+    "es": ["es/garrigues-la-laguna/index.html"],
+    "en": ["en/garrigues-la-laguna/index.html"]
+  },
+  "expected_source_files": [
+    "ops/CANONICAL_ENTITY_NAMES.json",
+    "assets/data/project-side-spanish-companies-v1.json",
+    "assets/data/garrigues-la-laguna-proceeding-v1.json",
+    "archive/JUAN_TOMAS_PARRILLA_CORPUS_MASTERY_AUDIT_24AUG2026.md"
+  ],
+  "controlled_files": [
+    "AGENTS.md",
+    "CHATGPT_START_HERE.md",
+    "ops/CANONICAL_ENTITY_NAMES.json",
+    "scripts/validate_insolvency_perimeter_language.py",
+    "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+    "archive/knowledge-project/SUN_PARK_CANONICAL_REGISTER.json",
+    "archive/JUAN_TOMAS_PARRILLA_CORPUS_MASTERY_AUDIT_24AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/CORRECTION_REGISTER.md",
+    "assets/data/project-side-spanish-companies-v1.json",
+    "assets/data/garrigues-la-laguna-proceeding-v1.json",
+    "es/garrigues-la-laguna/index.html",
+    "en/garrigues-la-laguna/index.html"
+  ],
+  "privacy_control": "Only aggregate counts and public corporate identifiers are published. No private body, email address, message ID, attachment ID or bank-account detail is committed.",
+  "open_evidence_controls": ["ME-086", "ME-087"],
+  "validation": {
+    "status": "PENDING",
+    "pull_request": null,
+    "merge_sha": null,
+    "deployment": null
+  }
+}

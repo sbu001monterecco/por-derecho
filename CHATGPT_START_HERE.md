@@ -11,6 +11,17 @@
 
 This is the root operating entry point for any ChatGPT thread maintaining this repository, Depository or live site.
 
+## Controlled project-side Spanish-company names
+
+Before expanding an acronym or attributing a payment, asset, instruction or liability, resolve the legal person through `ops/CANONICAL_ENTITY_NAMES.json`. The controlled historical/project-side Spanish-company set is:
+
+- **Luchy Playa Blanca, S.L.U. (LPB)** — CIF B35998582.
+- **Matkator, S.L.U.** — NIF B76621689; `Matkator, S.L.` may appear as a source literal.
+- **Pink Canary Services, S.L.U.** — NIF B76564517; formerly **Monterecco Sun Park, S.L.U.** The exact registry name-change date remains open.
+- **Hava Vida Travel & Tourism, S.L.U.** — NIF B76564434. `HAVAVIDA` / `Habavida` are retrieval aliases, not the legal name.
+
+Never merge Spanish Monterecco/Pink with UK company 07716847 (formerly Monterecco Sun Park Limited, now Aweswell Limited), Hava Vida with Havidia LLC, or any non-LPB company/property with the LPB insolvency estate. These controls do not assert current 2026 corporate, ownership, trading or tax status.
+
 ## Mission
 Treat the repository as institutional memory, the Depository/archive as the evidential and analytical backbone, and the public website as the reader-facing interface. Improve all three without allowing any one chat, person, document or interpretation to become a single point of failure.
 
