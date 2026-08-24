@@ -8,6 +8,8 @@
   "pull_request": 894,
   "merge_sha": "2f5fc3630c62734648d3043fa6cb7644a2bacd62",
   "remote_source_commit": "cbe1896ddbcfa26289a3c44a0edb6d898bba48a8",
+  "verification_pull_request": 896,
+  "verification_branch": "codex/calificacion-position-objectives-live-verification-20260824",
   "expected_routes": {
     "es": [
       "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
