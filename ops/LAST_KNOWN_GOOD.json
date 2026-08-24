@@ -1,25 +1,34 @@
 {
   "schema_version": 1,
-  "release_id": "five-actor-visibility-repair-20260824-pr919",
+  "release_id": "five-actor-preservation-guard-20260824-pr922",
   "state": "LIVE_VERIFIED",
-  "source_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+  "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+  "source_tree": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
   "verification": {
-    "workflow": "PR #919 five-actor visibility repair, exact-SHA Pages deployment and bilingual homepage/direct-route verification",
-    "run_id": "32726738047",
+    "workflow": "PR #922 five-actor preservation guard, exact-SHA Pages deployment and settled-DOM verification of all seventeen protected surfaces",
+    "pull_request": 922,
+    "head_sha": "850ee0909f6eb5914d2ced3a366d5576b28b6768",
+    "pages_run_id": "32750603024",
+    "run_id": "32750605646",
+    "source_of_funds_run_id": "32750605643",
     "artifact_id": null,
     "artifact_digest": null,
-    "verified_at": "2026-08-24T12:23:03Z",
+    "verified_at": "2026-08-24T16:27:17.010Z",
     "checks": [
       "five_actor_static_homepage_source_integrity",
       "five_actor_settled_dom_browser_render",
       "publication_integrity",
       "mission_critical_repository",
-      "audience_experience_417_bilingual_html_pages",
+      "audience_experience_420_bilingual_html_pages",
       "exact_sha_pages_deployment",
       "both_homepages_live",
-      "then_declared_fourteen_direct_actor_routes_live",
-      "canonical_spanish_magistrate_judge_route_assigned_to_final_guard"
+      "fourteen_canonical_direct_actor_routes_live",
+      "preserved_legacy_spanish_court_route_live",
+      "canonical_spanish_magistrate_judge_route_live",
+      "five_private_actor_cards_two_distinct_institutional_cards_five_linkage_rows",
+      "actor_portraits_and_two_evidence_images_loaded",
+      "757_assertions_across_17_protected_surfaces"
     ]
   },
   "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."

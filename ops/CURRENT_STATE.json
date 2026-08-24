@@ -3,11 +3,11 @@
   "as_of": "2026-08-24",
   "purpose": "Single current routing layer. Specialist source controls remain authoritative for proposition-level detail.",
   "repository": {
-    "baseline_main_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
-    "baseline_release": "FIVE_ACTOR_VISIBILITY_REPAIR_PR_919_LIVE_VERIFIED_FINAL_GUARD_PENDING",
+    "baseline_main_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "baseline_release": "FIVE_ACTOR_PRESERVATION_GUARD_PR_922_LIVE_VERIFIED",
     "calificacion_governance_release": "LIVE_VERIFIED",
-    "branch": "main via PR #919; final preservation guard pending",
-    "legacy_status_notice": "ops/PRODUCTION_STATUS.json and ops/LAST_KNOWN_GOOD.json now record the exact live PR #919 actor-visibility repair. The final preservation guard and canonical Spanish Magistrate-Judge route readback must be recorded before the originating thread is deletion-safe.",
+    "branch": "main contains PR #922 final preservation guard and its post-live continuity record",
+    "legacy_status_notice": "ops/PRODUCTION_STATUS.json and ops/LAST_KNOWN_GOOD.json record the exact live PR #922 preservation guard. Both homepages, fourteen canonical direct routes and the preserved legacy Spanish court route passed the final readback; the originating thread is deletion-safe with open governance items.",
     "rollback_rule": "Use a normal revert PR to a positively verified release; never force-push main."
   },
   "website": {
@@ -16,7 +16,7 @@
       "Calificacion criminal-misuse thesis PR 894 plus live verification PR 896",
       "ACTUA-GESVALT comparison PR 897 plus live verification PR 898",
       "Calificacion RPL 2523 evidence governance PR 899; exact merge SHA and eight critical HTML routes live verified",
-      "Five-private-actor plus separate Insolvency Administrator and Magistrate-Judge visibility repair PR 919; exact merge SHA and Pages deployment live verified, with final preservation guard pending"
+      "Five-private-actor plus separate Insolvency Administrator and Magistrate-Judge preservation guard PR 922; exact merge SHA, Pages deployment and 757 settled-DOM assertions across all seventeen protected surfaces live verified"
     ],
     "canonical_calificacion_routes": [
       "es/tesis-uso-criminal-procedimiento-calificacion/",
@@ -28,11 +28,19 @@
     ]
   },
   "five_actor_preservation": {
-    "state": "REPAIRED_LIVE_FINAL_GUARD_PENDING",
+    "state": "DELETION_SAFE_WITH_OPEN_GOVERNANCE_ITEMS",
     "source_repair_pr": 919,
     "source_repair_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
-    "pages_run": "32726738047",
-    "verified_at": "2026-08-24T12:23:03Z",
+    "source_repair_pages_run": "32726738047",
+    "source_repair_verified_at": "2026-08-24T12:23:03Z",
+    "final_guard_pr": 922,
+    "final_guard_head_sha": "850ee0909f6eb5914d2ced3a366d5576b28b6768",
+    "final_guard_merge_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "final_guard_tree_sha": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+    "final_guard_pages_run": "32750603024",
+    "final_guard_live_verification_run": "32750605646",
+    "final_guard_verified_at": "2026-08-24T16:27:17.010Z",
+    "protected_surface_result": "17/17 PASS; 757 rendered assertions",
     "private_actors": [
       "Francisco Mario Matos Matas",
       "Antonio Cogolludo Rojas",

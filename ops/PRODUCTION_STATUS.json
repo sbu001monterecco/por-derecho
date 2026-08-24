@@ -1,24 +1,31 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-24T12:23:03Z",
+  "as_of": "2026-08-24T16:27:17.010Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
-  "exact_live_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+  "main_at_audit": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+  "exact_live_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
   "last_live_verification": {
     "state": "LIVE_VERIFIED",
-    "source_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
-    "workflow_run": "32726738047",
+    "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "source_tree": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+    "pull_request": 922,
+    "pages_workflow_run": "32750603024",
+    "workflow_run": "32750605646",
+    "source_of_funds_workflow_run": "32750605643",
     "artifact_id": null,
     "artifact_digest": null,
-    "verified_at": "2026-08-24T12:23:03Z",
+    "verified_at": "2026-08-24T16:27:17.010Z",
     "verification_scope": [
-      "pr_919_source_and_rendered_actor_visibility_checks_success",
-      "pages_build_and_deployment_run_32726738047_success_for_exact_merge_sha",
+      "pr_922_source_preservation_and_rendered_actor_visibility_checks_success",
+      "pages_build_and_deployment_run_32750603024_success_for_exact_merge_sha",
       "both_es_en_homepages_live_with_five_private_actor_cards_two_separate_institutional_cards_and_five_linkage_rows",
-      "then_declared_fourteen_direct_route_surfaces_live_with_exact_actor_component_markers",
-      "canonical_spanish_magistrate_judge_route_gap_found_by_later_redigest_and_assigned_to_final_guard"
+      "fourteen_canonical_direct_routes_plus_preserved_legacy_spanish_court_route_live",
+      "canonical_spanish_magistrate_judge_route_and_legacy_spanish_court_route_both_protected",
+      "757_rendered_assertions_passed_across_all_seventeen_surfaces",
+      "actor_portraits_and_both_evidence_images_loaded",
+      "source_of_funds_run_32750605643_passed_after_propagation"
     ]
   },
   "branch_protection": {
@@ -41,7 +48,7 @@
   },
   "pages_deployment_mode": {
     "state": "UNCHANGED_AND_LIVE_VERIFIED",
-    "reason": "The functioning Pages delivery path published PR #919 at exact merge SHA a4f8c461058216ed3ec0182896fca2c4bc3c8d9e. Both homepages and the then-declared fourteen direct actor/accountability surfaces passed live readback; the final guard separately closes canonical Spanish Magistrate-Judge route coverage."
+    "reason": "The functioning Pages delivery path published PR #922 at exact merge SHA ed98b0ac634afc34f00a425e9ed67ca58fd77cb8 in run 32750603024. Both homepages, fourteen canonical direct actor/accountability surfaces and the preserved legacy Spanish court route passed 757 settled-DOM assertions in live run 32750605646."
   },
   "mission_critical_hardening": {
     "state": "LIVE_VERIFIED",

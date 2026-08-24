@@ -1,6 +1,6 @@
 # Five-actor visibility and preservation thread — 24 August 2026
 
-**Current verdict:** `PENDING_FINAL_GUARD_MERGE_AND_LIVE_VERIFICATION`
+**Current verdict:** `DELETION_SAFE_WITH_OPEN_GOVERNANCE_ITEMS`
 
 **Scope:** disappearance diagnosis, restoration of five private actors plus the two separate institutional roles, homepage/direct-route permanence, content-loss controls and reader-journey recommendations.
 
@@ -20,6 +20,18 @@ The repair in PR #919 restored static homepage copies and a dynamic presentation
 The final re-digest found one important omission in the original lock: the canonical Spanish Judge route is `es/concurso-36-2012-magistrado-juez/`, while the smaller `es/concurso-36-2012-juzgado-mercantil-1/` route is a legacy surface. The final guard protects and tests both. It does not silently redirect or remove either route.
 
 The first CI pass for the final guard also exposed two older composition defects rather than missing actor content. On the RICPE routes, `asset-recovery-preservation-20260821.js` did not recognise `.dossier-hero` and could prepend its gateway before the real hero; on the takeover routes, `art1535-reserve-pathway-20260819.js` had the same omission for its Article 1535 reserve card. A grouped test selector then treated the prepended generic section as `section:first-of-type`. RICPE also had an older source-of-funds observer competing with the five-actor observer for the same post-hero slot. The final guard corrects the two hero selectors, places the source-of-funds section after the locked actor component, cache-busts both repaired loader chains and resolves the hero in explicit priority order. The render check now proves 500 ms of continuous first-read adjacency and scrolls lazy evidence images into view before requiring non-zero natural dimensions; exact counts, file paths and placement requirements remain unchanged.
+
+## 2A. Final guard, deployment and live-readback evidence
+
+- Authorized source commit: `e02172937ce32fbda42654093b4831ab1b3dcd7d`.
+- PR [#922](https://github.com/sbu001monterecco/por-derecho/pull/922) passed the required source, preservation and rendered checks at final head `850ee0909f6eb5914d2ced3a366d5576b28b6768`.
+- The guard merged to `main` as `ed98b0ac634afc34f00a425e9ed67ca58fd77cb8`, exact tree `af1d15bf6e8418767fdeea80082fbdb15dc2d692`.
+- [GitHub Pages run 32750603024](https://github.com/sbu001monterecco/por-derecho/actions/runs/32750603024) completed successfully at `2026-08-24T16:24:54Z` with head SHA exactly equal to the guard merge.
+- [Actor live run 32750605646](https://github.com/sbu001monterecco/por-derecho/actions/runs/32750605646) reached `RENDER_VERIFIED` at `2026-08-24T16:27:17.010Z`: **757 assertions across all 17 protected surfaces**. It verified five separate actor cards, two distinct institutional cards and role labels, five complete actor-specific five-cell linkage rows, descriptions, direct allegations, contrary boundaries, stable first-read pins, actor portraits and both evidence images.
+- [Source-of-funds run 32750605643](https://github.com/sbu001monterecco/por-derecho/actions/runs/32750605643) also passed on attempt 2 after the same propagation interval. The actor source verifier completed on attempt 8.
+- The exact guard inventory is **2,427 tracked files / 420 bilingual HTML pages / 541 assets / 865 archive files / 167 evidence files**.
+
+The post-merge sweep also exposed two stale **monitor assumptions**, not missing public content. The criminal-engineering and 2022-adjudication live jobs both passed their rendered-DOM and substantive route checks but their raw-source polls still expected final modules directly in an older loader. The executable architecture is now a three-hop chain: `site.js` → `site-pre-intervencion-highlight-20260820.js` → `site-pre-intervencion-highlight-before-eg95-20260823.js` → the final case/adjudication modules. This closeout control release makes both polls verify every exact loader hop and data attribute while retaining the direct-module, route, sitemap, anonymisation, bid and rendered-DOM checks.
 
 ## 3. Durable preservation controls in this package
 
@@ -55,14 +67,10 @@ The highest-value improvements are to derive static and enhanced presentations f
 
 These are durable open governance items, not reasons to retain the chat after the final guard is merged and live-verified.
 
-## 6. Final deletion condition
+## 6. Final deletion-safety determination
 
-This audit may be changed to `DELETION_SAFE_WITH_OPEN_GOVERNANCE_ITEMS` only after:
+Every objective gate is now satisfied: the source is recoverable in public Git, PR #922 passed the required controls, the exact merge SHA was published by Pages, all seventeen protected surfaces passed settled-DOM live readback, and the manifest records the exact PR, head, merge, tree, Pages run, live run and verification time.
 
-1. the final preservation guard is merged to `main`;
-2. required source and rendered checks pass;
-3. GitHub Pages publishes the exact guard release;
-4. all seventeen declared live URLs are read back with the exact protected markers; and
-5. the publication manifest records the PR, merge SHA, workflow run and verification time.
+No unique substantive source, actor description, allegation, image, institutional-role boundary, linkage record, recovery instruction or open recommendation remains only in the originating chat or worktree. The unresolved governance items—required-check enforcement in issue #355 and a fresh independent recovery checkpoint in issue #356—remain durably assigned in `ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md`; they do not require retention of this chat.
 
-Until then, this thread is **not yet declared safe to delete**.
+This thread is therefore **safe to delete with open governance items**. Deleting it does not authorize removal, demotion, abridgement, collapse, relabelling or unlinking of any protected material. The five private actors must remain separate; the court-appointed, judicial-adjacent Insolvency Administrator and the Magistrate-Judge must remain distinct institutional roles; and every allegation must remain separated from an adjudicated finding, contrary material and proof outstanding.
