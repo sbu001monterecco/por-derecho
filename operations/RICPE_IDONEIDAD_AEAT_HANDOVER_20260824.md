@@ -96,15 +96,24 @@ Public pages should ask the competent authorities to answer questions within the
 
 Any verified explanation that reconciles the chronology must be published with equivalent prominence. Maintain a correction log.
 
-## New canonical public pages created 24 August 2026
+## Public-page architecture
+
+Existing canonical Series F/G pages remain authoritative:
+
+- `/es/ricpe-idoneidad-series-f-g/`
+- `/en/ricpe-idoneidad-series-f-g/`
+
+The 24 August implementation adds supplementary, authority-facing public question ledgers rather than replacing that canonical chronology:
 
 - `/es/ricpe-idoneidad-aeat-preguntas/`
 - `/en/ricpe-idoneidad-aeat-public-questions/`
 
-These pages are designed to survive deletion of the originating ChatGPT thread and preserve the operative documentary questions.
+The supplementary pages are designed to make the competence matrix, missing-document list, use-of-funds question and right-of-reply rule visible in one place without fragmenting the underlying Series F/G evidence model.
 
 ## Deletion-audit conclusion
 
 The unique substance introduced in the originating thread is preserved here: Patricia's temporal question, the Series F / Series G authorization test, the public-authority competence matrix, the requested primary documents, the non-accusatory but maximum-transparency publication rule, and the instruction to use existing SAIP/appeal routes before duplicating filings.
 
-A future thread should start from this file and the two public pages, then re-scan current GitHub, Gmail and procedural responses before taking further action.
+The repository already contained a prior 18 August deletion/continuity closeout for the Series F/G issue. This 24 August handover is incremental: it preserves the new instruction that the unresolved questions should be put publicly and explicitly to each competent authority, with maximum transparency and a full correction/right-of-reply mechanism.
+
+A future thread should start from this file, the existing canonical Series F/G pages and the two supplementary public-question pages, then re-scan current GitHub, Gmail and procedural responses before taking further action.
