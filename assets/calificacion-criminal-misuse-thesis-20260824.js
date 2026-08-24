@@ -41,6 +41,7 @@
   const match = suffixes => [...suffixes].some(suffix => path.endsWith(suffix));
 
   const pinFirstRead = (section, main) => {
+    const persistent = match(featured);
     const pin = () => {
       const hero = main.querySelector(':scope > section:first-of-type');
       const sourceFunds = main.querySelector(':scope > .source-funds-notice-section--featured');
@@ -49,6 +50,10 @@
     };
     const observer = new MutationObserver(pin);
     observer.observe(main, { childList: true });
+    if (persistent) {
+      main.dataset.calificacionMisusePin = 'persistent-20260824c';
+      window.setInterval(pin, 1000);
+    }
     [0, 100, 350, 1000, 3000, 7000, 11000, 15000, 22000, 30000].forEach(delay => window.setTimeout(pin, delay));
     window.addEventListener('load', () => {
       pin();
