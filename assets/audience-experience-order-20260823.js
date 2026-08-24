@@ -64,13 +64,13 @@
     const perimeters = document.getElementById(isEnglish ? 'case-perimeters' : 'perimetros-del-caso');
     const sourceFunds = main.querySelector('.source-funds-notice-section');
     const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
-    const protectedCriminalSequence = [detailed, criminalMisuse, priority, prosecution];
+    const protectedCriminalSequence = [criminalMisuse, priority, prosecution];
     const coreSections = [hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
     if (sourceFunds) coreSections.push(sourceFunds);
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
-    for (const section of [controlling, ...protectedCriminalSequence, summary, audiences, perimeters]) {
+    for (const section of [controlling, detailed, ...protectedCriminalSequence, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
