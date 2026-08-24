@@ -367,6 +367,7 @@
       if (!hero) return;
 
       const gateway = ensureGateway();
+      const criminalMisuse = block('[data-calificacion-misuse-thesis]');
       const serial = ensureSerialIndex();
       const evidence = ensureEvidenceMatrix();
       const corrections = ensureCorrections();
@@ -402,6 +403,7 @@
 
       const ordered = [
         gateway,
+        criminalMisuse,
         canonical,
         professional,
         legal,
