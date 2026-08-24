@@ -478,4 +478,40 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-masa-activa-2018-2021/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-masa-activa-2018-2021/"/>
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/actua-gesvalt-2018-valuation-comparison/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/actua-gesvalt-2018-valuation-comparison/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/actua-gesvalt-2018-valuation-comparison/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/comparativa-tasaciones-actua-gesvalt-2018/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/actua-2018-spatial-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/actua-2018-spatial-test/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/actua-2018-spatial-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/actua-2018-prueba-espacial/"/>
+  </url>
 </urlset>

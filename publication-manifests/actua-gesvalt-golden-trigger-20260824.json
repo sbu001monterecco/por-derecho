@@ -1,0 +1,56 @@
+{
+  "publication_id": "ACTUA-GESVALT-GOLDEN-TRIGGER-20260824",
+  "owner": "Gil Marer / Project Sun Rock",
+  "current_state": "DRAFT",
+  "date": "2026-08-24",
+  "languages": ["en", "es"],
+  "expected_routes": {
+    "en": ["en/actua-gesvalt-2018-valuation-comparison/index.html"],
+    "es": ["es/comparativa-tasaciones-actua-gesvalt-2018/index.html"]
+  },
+  "expected_source_files": [
+    "archive/ACTUA_GESVALT_GOLDEN_TRIGGER_SOURCE_MAP_24AUG2026.md",
+    "assets/evidence/valuations/actua-2018-valuation-material-extract.pdf",
+    "assets/evidence/valuations/gesvalt-2018-03-01-market-valuation.pdf",
+    "assets/evidence/valuations/gesvalt-2018-06-07-eco-mortgage-valuation.pdf",
+    "assets/evidence/valuations/gesvalt-2018-critical-review-of-actua.pdf",
+    "assets/evidence/valuations/court-order-2019-10-24-non-convalidation.pdf",
+    "sitemap.xml"
+  ],
+  "public_evidence": [
+    {
+      "path": "assets/evidence/valuations/actua-2018-valuation-material-extract.pdf",
+      "pages": 11,
+      "sha256": "6044e1cba63e2871ca21d7dc74683724a0eab72adc81a29457be433ff8814986",
+      "scope": "exact valuation-material extract; not the 145.6 MB full report"
+    },
+    {
+      "path": "assets/evidence/valuations/gesvalt-2018-03-01-market-valuation.pdf",
+      "pages": 70,
+      "sha256": "1da89775dea338652e9c6ae2f14d31f2436e0dddc0b6199993c9337fba9979e3"
+    },
+    {
+      "path": "assets/evidence/valuations/gesvalt-2018-06-07-eco-mortgage-valuation.pdf",
+      "pages": 118,
+      "sha256": "d786ccd59c131023c872afea57d4e6d674f7ad7e43ec3bf8834e13014aed5347"
+    },
+    {
+      "path": "assets/evidence/valuations/gesvalt-2018-critical-review-of-actua.pdf",
+      "pages": 20,
+      "sha256": "0ca98224702575e69e4507221be121bab57e9137033b87c86cda8c8be0544f63"
+    },
+    {
+      "path": "assets/evidence/valuations/court-order-2019-10-24-non-convalidation.pdf",
+      "pages": 2,
+      "sha256": "3f313f5200b9f67b972c4bf3a4d66911e78d6f18acebe08fa3e4aed863f2589c"
+    }
+  ],
+  "controls": {
+    "golden_trigger": "Gil Marer's forensic/economic characterisation; not a judicial term",
+    "non_convalidation": "does not alone prove completed unwinding, refund, reconveyance or registry cancellation",
+    "valuation_comparison": "different purposes and commissioners; not a direct arithmetic substitution",
+    "parrilla_knowledge": "supported client allegation based on cumulative record; no adjudicated criminal finding",
+    "email_privacy": "source identifiers and minimum propositions only; no public email bodies"
+  },
+  "source_map": "archive/ACTUA_GESVALT_GOLDEN_TRIGGER_SOURCE_MAP_24AUG2026.md"
+}
