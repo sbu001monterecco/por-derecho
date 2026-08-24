@@ -2,6 +2,18 @@
 
 > **Read first:** `ops/CURRENT_STATE.json` is the current machine-readable routing layer for repository baseline, live packages, Calificación / RPL 2523/2025 status, finite gaps and open-PR governance. The 21-August handover below remains historical detail and must not be used to overwrite later verified controls.
 
+## Cuatrecasas billing/email continuation — controlling 24 August route
+
+Before any new Cuatrecasas invoice, mandate, email, collection, La Laguna, professional-liability or litigation-communications work, read:
+
+- `archive/CUATRECASAS_PERIMETER_BILLING_EMAIL_AGENTIC_CONTINUATION_24AUG2026.md`;
+- `archive/SUN_PARK_UNITARY_REVERSE_ENGINEERING_AND_CUATRECASAS_REDIGEST_20AUG2026.md`;
+- `archive/CUATRECASAS_CRITICAL_GAP_CLOSURE_CONTROL_20AUG2026.md`.
+
+The 24 August control requires a 2014-to-present, whole-perimeter invoice-and-email audit that separates client, instructing party, beneficiary, invoiced entity, payer, pagaré issuer, judicial debtor and asset owner. It preserves the corrected Stoneweg/Varia offer-stage record and the integrated Elaia/Lagune route, requires line-level billing-to-deliverable-to-result testing, and keeps private ledgers and current-counsel material outside the public repository.
+
+The litigation-communications campaign may resume at the research, recipient-resolution and drafting stages after the synchronized pages are live. **It may not move to transmission without fresh authorization from Gil Marer covering the exact recipients, exact text, exact links and exact attachments.** Repository publication, a completed draft or earlier campaign authority is not send authority.
+
 # HISTORICAL HANDOVER — 21 AUGUST 2026
 
 **Status:** canonical immediate handover for future ChatGPT threads. Read this file before continuing the Sun Park / Cuatrecasas / La Laguna / current-counsel work.
