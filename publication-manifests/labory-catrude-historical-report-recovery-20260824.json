@@ -1,13 +1,34 @@
 {
-  "schema": "por-derecho.publication-manifest.v1",
-  "id": "labory-catrude-historical-report-recovery-20260824",
+  "publication_id": "LABORY-CATRUDE-HISTORICAL-REPORT-RECOVERY-20260824",
+  "owner": "Gil Marer / Project Sun Rock",
+  "current_state": "PR_OPEN",
   "date": "2026-08-24",
-  "status": "PUBLICATION_READY_SOURCE_CONTROLLED",
-  "position": "Historical target not identified; no adverse attribution made.",
-  "routes": [
-    "es/labory-catrude-antecedente-tecnico-historico/",
-    "en/labory-catrude-historical-technical-antecedent/"
+  "source_pull_request": 933,
+  "languages": ["en", "es"],
+  "expected_routes": {
+    "en": ["en/labory-catrude-historical-technical-antecedent/index.html"],
+    "es": ["es/labory-catrude-antecedente-tecnico-historico/index.html"]
+  },
+  "expected_source_files": [
+    "evidence/sun-park/labory-catrude/README.md",
+    "evidence/sun-park/labory-catrude/archive-register.csv",
+    "evidence/sun-park/labory-catrude/candidate-report-register.csv",
+    "evidence/sun-park/labory-catrude/custody-and-commissioning-matrix.csv",
+    "evidence/sun-park/labory-catrude/chronology.md",
+    "evidence/sun-park/labory-catrude/search-methodology.md",
+    "evidence/sun-park/labory-catrude/REUPLOAD_REQUIRED.md",
+    "evidence/sun-park/labory-catrude/exclusions.md",
+    "ops/LABORY_CATRUDE_RECOVERY_STATUS.json",
+    "ops/LABORY_CATRUDE_RECOVERY_BACKLOG.md",
+    "archive/LABORY_CATRUDE_RECOVERY_CONTINUITY_24AUG2026.md",
+    "assets/data/labory-catrude-historical-report-v1.json",
+    "scripts/audit_labory_catrude_thread_deletion_safety.py",
+    ".github/workflows/labory-catrude-thread-deletion-audit.yml",
+    "docs/deletion-audits/2026-08-24-labory-catrude-thread.md",
+    "sitemap-labory-catrude.xml",
+    "robots.txt"
   ],
+  "position": "Historical target not identified; no adverse attribution made.",
   "public_evidence_prefix": "evidence/sun-park/labory-catrude/",
   "privacy": {
     "gmail_message_ids_published": false,
