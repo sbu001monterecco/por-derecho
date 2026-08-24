@@ -4,8 +4,8 @@
   "control_marker": "lpb-canonical-name-lock-20260824",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "DRAFT",
-  "deletion_status": "NOT_LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_EXISTING_GARRIGUES_OPEN_EVIDENCE",
   "purpose": "Make the verified full LPB name machine-resolvable and prevent invented acronym expansions from returning in repository narrative, public pages or outbound-email preparation.",
   "canonical_records": {
     "LPB": {
@@ -83,8 +83,9 @@
     "gmail_draft_created": false
   },
   "validation": {
-    "status": "LOCAL_GREEN_AWAITING_PR_CI",
+    "status": "CI_GREEN_AND_LIVE_VERIFIED",
     "evidence": [
+      "PR #934 passed all 10 required pull-request checks before merge",
       "validate_insolvency_perimeter_language.py passed",
       "validate_garrigues_la_laguna.py passed",
       "validate_publication_integrity.py passed",
@@ -96,8 +97,52 @@
       "no deletions or renames"
     ]
   },
-  "pull_request": null,
-  "merge_sha": null,
-  "deployment_evidence": null,
-  "live_verification_evidence": null
+  "pull_request": 934,
+  "merge_sha": "45ccc50e071469b6081d0322cb3c2da8773a9eb2",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "exact_merge_run": {
+      "run_id": 32759211869,
+      "head_sha": "45ccc50e071469b6081d0322cb3c2da8773a9eb2",
+      "status": "cancelled",
+      "reason": "Superseded by a non-overlapping main push 18 seconds after the substantive merge; this run is not reported as a successful deployment."
+    },
+    "deployed_successor_run": {
+      "run_id": 32759240836,
+      "status": "success",
+      "head_sha": "556ca9f7af4acf987c67ffc0549de2542b935adb",
+      "parent_sha": "45ccc50e071469b6081d0322cb3c2da8773a9eb2",
+      "completed_at": "2026-08-24T17:54:20Z",
+      "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32759240836",
+      "scope_note": "The successor added four non-overlapping RICPE/AEAT files and retained the complete #934 tree unchanged."
+    }
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/garrigues-la-laguna/",
+    "https://sbu001monterecco.github.io/por-derecho/en/garrigues-la-laguna/",
+    "https://sbu001monterecco.github.io/por-derecho/ops/CANONICAL_ENTITY_NAMES.json"
+  ],
+  "live_verification_evidence": {
+    "verified_at": "2026-08-24T17:55:00Z",
+    "deployed_head_sha": "556ca9f7af4acf987c67ffc0549de2542b935adb",
+    "substantive_merge_sha": "45ccc50e071469b6081d0322cb3c2da8773a9eb2",
+    "exact_sha256": {
+      "es/garrigues-la-laguna/index.html": "f397cedb6ce93f96bf00e3058a0404d202ffc1407dd1bad3e5c890103e521937",
+      "en/garrigues-la-laguna/index.html": "eb22d7a9f5331d5c1d26e3e5b12045e4e9c4e1cef47727736064ddcffd3801c8",
+      "ops/CANONICAL_ENTITY_NAMES.json": "31d1fc1cb0a8b2922ec7229bf23c3d783db5b800567335f792048ad66e28c9b3"
+    },
+    "result": "3/3 HTTP 200 AND BYTE-FOR-BYTE MATCH; ES/EN pages expose the canonical name and CIF markers"
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_EXISTING_GARRIGUES_OPEN_EVIDENCE",
+    "canonical_recovery_paths": [
+      "ops/CANONICAL_ENTITY_NAMES.json",
+      "archive/CORRECTION_REGISTER.md#CR-091",
+      "publication-manifests/lpb-canonical-name-lock-20260824.json"
+    ],
+    "open_evidence_preserved": true,
+    "email_sent": false,
+    "gmail_draft_created": false,
+    "note": "This thread's name correction, official-source basis, anti-regression rule and deployment evidence are recoverable from main. Existing Garrigues/Parrilla invoice, bank and complete-court-file gaps remain open under their prior controls."
+  }
 }
