@@ -59,6 +59,39 @@
     "silence_treated_as_proof": false,
     "personal_or_mass_pressure_authorised": false
   },
+  "deployment_evidence": [
+    "PR 905 merged to main as 44a48d366d662ba20a28e2e82d61506b8deef2cf after all 15 triggered pull-request workflows passed.",
+    "The GitHub Pages public edge served the merged bilingual Edgeworth comparator, DP 748/civil-action, recovery-objectives and why-the-UK-should-care pages.",
+    "Cache-busted readback returned HTTP 200 and exact reviewed-source SHA-256 parity for all 8 changed public routes."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-edgeworth-comparator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/",
+    "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/",
+    "https://sbu001monterecco.github.io/por-derecho/en/recovery-restitution-objectives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/objetivos-recuperacion-restitucion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/why-the-uk-should-care/",
+    "https://sbu001monterecco.github.io/por-derecho/es/por-que-debe-importar-al-reino-unido/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-24T04:43:16Z",
+    "pull_request": 905,
+    "merge_sha": "44a48d366d662ba20a28e2e82d61506b8deef2cf",
+    "workflow_result": "15/15 triggered pull-request workflows passed with no failures.",
+    "readback_result": "8/8 changed bilingual routes returned HTTP 200 and exactly matched the reviewed repository bytes.",
+    "sha256": {
+      "en/cuatrecasas-edgeworth-comparator/": "9ecb06b2ecbc7960c6effad5b2f8b9bd716d139ed7ed6f38daa0381d529b23a0",
+      "es/comparador-cuatrecasas-edgeworth/": "046a793907991317473e8c25911cfc10188feca49aceebbc320a57c4a5ade3c7",
+      "en/cuatrecasas-dp748-civil-action/": "b6574f5fd053bfe125e8c8f7eed7e8716bb604e6f6edddb6f01e2b7c3adf7411",
+      "es/cuatrecasas-dp748-accion-civil/": "b3418ef5ffb6c00553009d839fd3fd6be4b92d9f6fde41d6c64c7e9e8fccd2d1",
+      "en/recovery-restitution-objectives/": "26dc440082f7577241d6d7655a6c020374b2e9e02b863c9cce2ef52f93b221ff",
+      "es/objetivos-recuperacion-restitucion/": "563ed0457d8a89ad91301a46e9e722934284461b2d85c7d3c106506d6eb0d89d",
+      "en/why-the-uk-should-care/": "95450a1ffbb91b6feb569584b9e310ac7cde07f904bb605abf9c58f7cf176fd5",
+      "es/por-que-debe-importar-al-reino-unido/": "427b1ddc0894ea187da4bad7b3f3a42ea4911ac213b5247fdd5cc88a97b7647b"
+    }
+  },
   "validation": {
     "status": "CI_GREEN_LIVE_VERIFIED",
     "evidence": [
