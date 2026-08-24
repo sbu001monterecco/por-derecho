@@ -1,6 +1,27 @@
 {
   "schema": "por-derecho.garrigues-la-laguna.v1",
   "as_of": "2026-08-24",
+  "canonical_names": {
+    "machine_control": "ops/CANONICAL_ENTITY_NAMES.json",
+    "lpb": {
+      "repository_id": "E003",
+      "canonical_name": "Luchy Playa Blanca, S.L.U.",
+      "first_reference": "Luchy Playa Blanca, S.L.U. (LPB)",
+      "acronym": "LPB",
+      "cif": "B35998582",
+      "context": "Concurso 36/2012 and repository narrative concerning that proceeding"
+    },
+    "aweswell": {
+      "repository_id": "E005",
+      "canonical_name": "Aweswell Limited",
+      "company_number": "07716847",
+      "former_name": "Monterecco Sun Park Limited",
+      "former_name_period": "2011-07-25/2014-06-03"
+    },
+    "juan_tomas_parrilla": {
+      "canonical_name": "Juan Tomás Parrilla Suárez"
+    }
+  },
   "proceeding": {
     "court": "Juzgado de Primera Instancia n.º 5 de San Cristóbal de La Laguna",
     "reference": "Procedimiento Ordinario 344/2013",
@@ -24,6 +45,9 @@
     "date": "2012-01-24",
     "client_definition": ["Monterecco Sun Park Limited", "Luchy Playa Blanca, S.L."],
     "billing_entity": "Luchy Playa Blanca, S.L.",
+    "client_definition_is_source_literal": true,
+    "billing_entity_is_source_literal": true,
+    "canonical_lpb_name": "Luchy Playa Blanca, S.L.U.",
     "verified_scope": [
       "court-proceeding identification and review",
       "LPB, Community and CEXP issues",

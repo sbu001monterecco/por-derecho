@@ -1,0 +1,109 @@
+{
+  "schema": "por-derecho.canonical-names.v1",
+  "control_date": "2026-08-24",
+  "scope_note": "These are controlled names for repository narrative and the identified historical/procedural contexts. Historical official sources do not by themselves establish a company's present-day status.",
+  "rules": [
+    "Resolve an acronym through this register before expanding it.",
+    "Do not translate, paraphrase or invent a legal entity's registered or procedural name.",
+    "Use the first_reference form on first narrative mention and the acronym thereafter.",
+    "Preserve a different source spelling or entity-form suffix only when it is clearly labelled as a source literal.",
+    "Do not merge a company, former name, shareholder, client, payer or represented party without a separate source bridge."
+  ],
+  "records": [
+    {
+      "id": "E003",
+      "record_type": "legal_entity",
+      "acronym": "LPB",
+      "canonical_name": "Luchy Playa Blanca, S.L.U.",
+      "first_reference": "Luchy Playa Blanca, S.L.U. (LPB)",
+      "identifier": {
+        "type": "CIF",
+        "value": "B35998582"
+      },
+      "controlled_context": "Concurso 36/2012 and repository narrative concerning that proceeding",
+      "registered_denominational_form": "LUCHY PLAYA BLANCA SOCIEDAD LIMITADA",
+      "registered_status_descriptor": "Sociedad unipersonal",
+      "registry_coordinates": {
+        "volume": 395,
+        "folio": 220,
+        "section": 8,
+        "sheet": "IL 9469"
+      },
+      "do_not_translate_legal_name": true,
+      "source_literal_variants": [
+        "Luchy Playa Blanca, S.L.",
+        "LUCHY PLAYA BLANCA SOCIEDAD LIMITADA"
+      ],
+      "forbidden_generated_aliases": [
+        "Lanzarote Paradise Beach",
+        "Lanzarote Paradise Beach, S.L.",
+        "Lanzarote Playa Blanca",
+        "Luchi Playa Blanca",
+        "Luci Playa Blanca",
+        "Lucy Playa Blanca"
+      ],
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-B-2012-22189",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2012-22189",
+          "proposition": "The 6 June 2012 order declared Concurso 36/2012 for Luchy Playa Blanca, S.L.U., CIF B35998582."
+        },
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-B-2013-26977",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2013-26977",
+          "proposition": "The 2013 court notice again identifies Luchy Playa Blanca, S.L.U., CIF B35998582, in Concurso 36/2012."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-39-35, entry 91405",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-39-35",
+          "proposition": "The registry publication records LUCHY PLAYA BLANCA SOCIEDAD LIMITADA as a sociedad unipersonal on sheet IL 9469."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2012-198-35, entry 418095",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-198-35",
+          "proposition": "The registry publication records Concurso 36/2012 against the same company and registry sheet."
+        }
+      ]
+    },
+    {
+      "id": "E005",
+      "record_type": "legal_entity",
+      "canonical_name": "Aweswell Limited",
+      "first_reference": "Aweswell Limited",
+      "identifier": {
+        "type": "UK company number",
+        "value": "07716847"
+      },
+      "former_name": "Monterecco Sun Park Limited",
+      "former_name_period": "2011-07-25/2014-06-03",
+      "name_continuity_rule": "Aweswell Limited and Monterecco Sun Park Limited are the same UK company under company number 07716847; use the name applicable to the source date.",
+      "official_sources": [
+        {
+          "authority": "UK Companies House",
+          "reference": "Company 07716847",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/07716847",
+          "proposition": "The register identifies AWESWELL LIMITED, company number 07716847, and lists MONTERECCO SUN PARK LIMITED as its previous name through 3 June 2014."
+        }
+      ]
+    },
+    {
+      "id": "P-JTPS",
+      "record_type": "person",
+      "canonical_name": "Juan Tomás Parrilla Suárez",
+      "first_reference": "Juan Tomás Parrilla Suárez",
+      "name_rule": "Retain both accents and both surnames on first reference; a later contextual short reference may use Parrilla.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-B-2010-5683",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2010-5683",
+          "proposition": "The official court notice identifies Juan Tomás Parrilla Suárez by that full name."
+        }
+      ]
+    }
+  ]
+}
