@@ -54,8 +54,8 @@ jobs:
           base = 'https://sbu001monterecco.github.io/por-derecho'
           suffix = f"source={os.environ['SOURCE_SHA'][:12]}&run={os.environ['RUN_ID']}"
           targets = {
-            'es': (f'{base}/es/administracion-de-hecho-comunidad-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260820"','718.663,24','1.145.798,29']),
-            'en': (f'{base}/en/de-facto-administration-community-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260820"','718,663.24','1,145,798.29']),
+            'es': (f'{base}/es/administracion-de-hecho-comunidad-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260824"','718.663,24','1.145.798,29']),
+            'en': (f'{base}/en/de-facto-administration-community-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260824"','718,663.24','1,145,798.29']),
             'base_module': (f'{base}/assets/ac-community-de-facto-administration-20260820.js?{suffix}', ['data-ac-dfa-update','data-ac-dfa-crosslink']),
             'visibility_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-visibility-20260820.js?{suffix}', ['Cinco administradores en la sombra alegados y una habilitación institucional activa','Five alleged shadow administrators and active institutional enablement','paquete de garantías','security package','data-ac-dfa-allegation-visibility','data-ac-dfa-impact-chain','data-ac-dfa-route-relevance']),
             'stability_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-stability-20260820.js?{suffix}', ['panel.dataset.acDfaUpdate','panel.dataset.acDfaCrosslink','panels.slice(1).forEach(removePanel)','data.acDfaVisibilityStability']),
