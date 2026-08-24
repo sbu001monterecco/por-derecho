@@ -1,0 +1,119 @@
+{
+  "schema": "por-derecho.garrigues-la-laguna.v1",
+  "as_of": "2026-08-24",
+  "proceeding": {
+    "court": "Juzgado de Primera Instancia n.º 5 de San Cristóbal de La Laguna",
+    "reference": "Procedimiento Ordinario 344/2013",
+    "decision": "Sentencia 41/2014",
+    "decision_date": "2014-02-18",
+    "claimant": "J&A Garrigues, S.L.P.",
+    "defendants": ["Gil Marer", "Patricia Domínguez Montelongo"],
+    "defence_counsel": "Juan Tomás Parrilla Suárez",
+    "claim_eur": 63441.67,
+    "result": "Claim dismissed in full; first-instance costs imposed on Garrigues"
+  },
+  "source_status": {
+    "judgment": "ORIGINAL_ATTACHMENT_LOCATED_HASHED_AND_PUBLIC_TRANSCRIPTION_CREATED",
+    "claim": "ORIGINAL_NOT_LOCATED_RECONSTRUCTION_FROM_JUDGMENT_ONLY",
+    "defence": "ORIGINAL_NOT_LOCATED_RECONSTRUCTION_FROM_JUDGMENT_ONLY",
+    "communications": "FINITE_LOCATED_CORPUS_SUMMARISED_PRIVATE_BODIES_WITHHELD",
+    "appeal_finality": "NOT_LOCATED"
+  },
+  "judgment_source": {
+    "original_filename": "Sentencia 344-2013.pdf",
+    "pages": 7,
+    "bytes": 319679,
+    "sha256": "1d39af97262c5031a78c6857c96476f605c3e1c397968a0952b755d3d9ac8b2a",
+    "source_class": "Original PDF attachment to a contemporaneous 19 February 2014 email",
+    "public_original": false,
+    "public_derivative": "evidence/garrigues-la-laguna/SENTENCIA_41_2014_PUBLIC_TRANSCRIPTION_ES.md",
+    "redactions": [
+      "court telephone and fax",
+      "NIG and IUP administrative identifiers",
+      "signatures and verification marks"
+    ]
+  },
+  "invoices": [
+    {
+      "invoice": "10015483",
+      "amount_eur": 9450.00,
+      "judgment_treatment": "Separate litigation engagement; not covered by the defendants' guarantee",
+      "2016_insolvency_treatment": "Retained"
+    },
+    {
+      "invoice": "10015502",
+      "amount_eur": 12142.23,
+      "judgment_treatment": "Mixed or predominantly Bankia restructuring work; insufficient task/hour breakdown",
+      "2016_insolvency_treatment": "Excluded following res judicata treatment"
+    },
+    {
+      "invoice": "10015503",
+      "amount_eur": 2835.00,
+      "judgment_treatment": "Tax advice outside the guaranteed engagement",
+      "2016_insolvency_treatment": "Retained"
+    },
+    {
+      "invoice": "10015504",
+      "amount_eur": 8300.25,
+      "judgment_treatment": "Some work evidenced, but no adequate task/hour allocation",
+      "2016_insolvency_treatment": "Excluded following res judicata treatment"
+    },
+    {
+      "invoice": "10015505",
+      "amount_eur": 13183.56,
+      "judgment_treatment": "Some work evidenced, but no adequate task/hour allocation",
+      "2016_insolvency_treatment": "Excluded following res judicata treatment"
+    },
+    {
+      "invoice": "58000002113",
+      "amount_eur": 17530.63,
+      "judgment_treatment": "Mixed or predominantly Bankia restructuring work; insufficient task/hour breakdown",
+      "2016_insolvency_treatment": "Excluded following res judicata treatment"
+    }
+  ],
+  "payment_tracks": [
+    {
+      "track": "HAVAVIDA_TO_GARRIGUES",
+      "amount_eur": 9450.00,
+      "date": "2012-05-17",
+      "payor": "HAVAVIDA T&T, S.L.",
+      "recipient": "Garrigues",
+      "purpose": "Funding described contemporaneously for the separate challenge-of-resolutions/interim-measures litigation",
+      "limit": "Not a payment to Juan Tomás Parrilla; bank account details are withheld"
+    },
+    {
+      "track": "CLIENT_TO_PARRILLA_INITIAL",
+      "amount_eur": 1250.00,
+      "date": "2013-2014, exact date not located",
+      "payor": "Gil Marer and Patricia Domínguez perimeter",
+      "recipient": "Juan Tomás Parrilla Suárez",
+      "purpose": "Initial part of the La Laguna defence fee",
+      "limit": "Contemporaneous bank proof not located"
+    },
+    {
+      "track": "COSTS_TO_PARRILLA_CREDIT",
+      "amount_eur": 1250.00,
+      "date": "After the costs award, exact date not located",
+      "payor": "Costs recovery / application described in 2020 correspondence",
+      "recipient": "Juan Tomás Parrilla Suárez",
+      "purpose": "Second part of the EUR 2,500 case fee, later described as applied against LPB insolvency fees",
+      "limit": "Costs taxation, collection record and bank proof not located"
+    }
+  ],
+  "insolvency_effect": {
+    "excluded_eur": 51156.67,
+    "retained_eur": 12285.00,
+    "source": "23 November 2015 res judicata order and 2016 definitive creditor texts",
+    "limit": "Later insolvency treatment is a separate procedural lane from the 2014 civil judgment"
+  },
+  "open_evidence": [
+    "Original filed claim and all annexes",
+    "Original filed defence and all annexes",
+    "Preliminary-hearing record and 9 October 2013 trial record",
+    "Final witness evidence and any recording",
+    "Costs assessment, approval, collection and application records",
+    "Appeal, service and finality records",
+    "Contemporaneous proof of both EUR 1,250 Parrilla fee legs",
+    "Certified court-file index and certified copies"
+  ]
+}
