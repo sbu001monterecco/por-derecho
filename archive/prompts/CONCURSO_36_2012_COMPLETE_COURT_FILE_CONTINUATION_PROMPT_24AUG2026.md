@@ -15,13 +15,13 @@ The earlier of 2016 or the convenio phase is **1 January 2016**. The controlled 
 - `evidence/insolvency-36-2012/court-file-2016-2021/full-text/C36-CF-2017-04-27-convenio-proposal-ocr-redacted.md`; and
 - `archive/CONCURSO_36_2012_UNITARY_COURT_FILE_RECONSTRUCTION_24AUG2026.md`.
 
-The working denominator is not a certified docket. Do not use “all filings” without the court/LAJ certified index.
+The working denominator is not a certified docket. Do not use “all filings” without the master piece inventory, article 47.3 signed electronic indexes, article 46.2 official act relations and legacy/non-electronic exception inventory.
 
 Use this controlling limitation verbatim in every completeness report:
 
-> The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.
+> The principal unresolved limitation is that no signed electronic index under article 47.3 of RDL 6/2023, official relation of procedural acts under article 46.2, or equivalent certified per-piece export for Concurso 36/2012 has been produced to us or located in the corpus. This is therefore the complete digest of the sources currently located—not yet a legally complete docket denominator. Non-production does not establish nonexistence, loss, suppression or alteration.
 
-The 24-Aug denominator rerun also located: (a) the searchable 37-page body of the 15-Jan-2013 Article 75 report; (b) a candidate conclusion application dated internally 8-Feb-2019 whose later filename/circulation layers say 2021; and (c) 105 unique LexNET provider-package filenames in a bounded 2021–2022 Gmail sweep. Treat the latter as a reconciliation queue, not 105 distinct acts. The three coordinated 15-Aug-2026 official-index requests have RedSARA receipts `REGAGE26e00073341191`, `REGAGE26e00073341382` and `REGAGE26e00073341477`; response/production remains open.
+The 24-Aug denominator rerun also located: (a) the searchable 37-page body of the 15-Jan-2013 Article 75 report; (b) a candidate conclusion application dated internally 8-Feb-2019 whose later filename/circulation layers say 2021; and (c) 105 unique LexNET provider-package filenames in a bounded 2021–2022 Gmail sweep. Treat the latter as a reconciliation queue, not 105 distinct acts. The three coordinated 15-Aug-2026 requests have RedSARA receipts `REGAGE26e00073341191`, `REGAGE26e00073341382` and `REGAGE26e00073341477`. Exp. Gub. 38/2026 answered and archived the TSJ supervisory lane on 20-Aug, directing requests 4–8 to article 234 LOPJ without production. The administrative appeal receipt `REGAGE26e00074355631` and registry-processing confirmation are located; no superior merits decision or production from either remaining request lane is located.
 
 ## Mandatory source logic
 
@@ -59,10 +59,10 @@ Gil Marer's allegation of full criminal instrumentalisation inside and outside C
 
 Build a certified, collision-free chronology from the 6-Jun-2012 opening act through closure. For each court section/pieza, locate:
 
-1. certified index and docket sheet;
+1. master section/piece inventory, article 47.3 signed electronic index and article 46.2 official act relation;
 2. every filing, annex and filing receipt;
 3. every court/LAJ act, service return, clarification, appeal and finality event;
-4. every hearing/appearance minute, recording and component index;
+4. every hearing/appearance minute, recording and component index, plus the legacy/non-electronic exception inventory;
 5. every Article 75/152/424 report and annex;
 6. deed, mandamiento, Registry, bank and accounting implementation; and
 7. closure/rendición de cuentas and any responsibility/calificación outcome.
@@ -128,6 +128,8 @@ Do not change the docket denominator from filenames or message counts. First sep
 Private originals remain outside public Git. Public Git may contain hashes, neutral source cards, redacted page-faithful transcripts, digests and exact gaps. Redact signatures, personal identity numbers, addresses, private contact data, bank/account numbers, verification codes and unrelated third-party data.
 
 Publish official acts only after page-faithful redaction review. Present party filings in balanced cards beside counter-position and official outcome. Preserve Spanish/English semantic parity. Keep the PR draft until rendered desktop/mobile, redaction, link, JSON, HTML, duplicate-ID and parity checks pass.
+
+Keep the bilingual public LAJ/court-office record-closure request visible on the judicial-spine routes and linked from the active-estate routes. It must ask for the native statutory outputs, show each request/response/appeal lane separately, and preserve this boundary: non-production does not establish nonexistence, loss, suppression or alteration. Update a lane only from a located receipt, decision, transmission, production or other primary status record; appeal filing/registry processing is not a superior merits admission or outcome.
 
 ## End-of-run report
 

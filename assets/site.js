@@ -53,6 +53,8 @@
     ['/en/grant-thornton/2024-04/', ['compact', null, 'append']],
     ['/es/actores-partes-abogados-representantes/', ['compact', null, 'append']],
     ['/en/actors-parties-lawyers-representatives/', ['compact', null, 'append']],
+    ['/es/continuidad-defensa-letrados/', ['compact', null, 'append']],
+    ['/en/counsel-defence-continuity/', ['compact', null, 'append']],
     ['/es/san-telmo-ricpe-sun-park/', ['compact', null, 'append']],
     ['/en/san-telmo-ricpe-sun-park/', ['compact', null, 'append']]
   ]);
@@ -334,8 +336,19 @@ The executable loader chain for these modules remains in site-pre-intervencion-h
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-audience-experience-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('audience-experience-order-20260823.js?v=20260823a', current.src).href;
+  module.src = new URL('audience-experience-order-20260823.js?v=20260824a', current.src).href;
   module.async = false;
   module.setAttribute('data-audience-experience-loader', '20260823');
+  document.head.appendChild(module);
+})();
+
+/* CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-calificacion-misuse-thesis-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('calificacion-criminal-misuse-thesis-20260824.js?v=20260824c', current.src).href;
+  module.async = false;
+  module.setAttribute('data-calificacion-misuse-thesis-loader', '20260824');
   document.head.appendChild(module);
 })();

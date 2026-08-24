@@ -167,7 +167,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "text_intro": "Abra cualquier resolución para leerla completa, página por página. La redacción no modifica los antecedentes, fundamentos ni la parte dispositiva.",
             "filings_kicker": "Corpus especialista",
             "filings_h2": "Todos los escritos localizados en estas dos vías",
-            "filings_intro": "Cada enlace abre la transcripción integral redactada, con hash de la fuente y estado de la copia. Una demanda, oposición o recurso registra una posición procesal; no prueba por sí solo sus alegaciones.",
+            "filings_intro": "Cada enlace abre la transcripción integral redactada de las páginas de la copia localizada, con hash y estado de copia. La integridad de la transcripción no prueba que la copia sea oficial, presentada, notificada, admitida, examinada o firme. Una demanda, oposición o recurso registra una posición procesal; no prueba por sí solo sus alegaciones.",
             "removal_h3": "Separación del Administrador Concursal",
             "fees_h3": "Honorarios / responsabilidad civil",
             "gaps_kicker": "Completitud verificable",
@@ -199,7 +199,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
     else:
         meta = {
             "title": "Located judicial and party corpus · Insolvency 36/2012",
-            "description": "Complete redacted specialist removal/fees archive with access to the partial unitary catalogue of currently located decisions, filings, communications and implementation records.",
+            "description": "Public-safe redacted specialist removal/fees archive with access to the partial unitary catalogue of currently located decisions, filings, communications and implementation records.",
             "canonical": "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/",
             "alternate": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/",
             "alternate_lang": "es",
@@ -225,7 +225,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "text_intro": "Open any decision to read the complete Spanish original, page by page. Redaction does not change the background, reasoning or operative part.",
             "filings_kicker": "Specialist corpus",
             "filings_h2": "Every located filing in these two lanes",
-            "filings_intro": "Each link opens the complete redacted Spanish transcript, with source hash and copy status. A claim, defence or appeal records a procedural position; it does not by itself prove its allegations.",
+            "filings_intro": "Each link opens the complete redacted Spanish transcript of the located source-copy pages, with source hash and copy status. Transcript completeness does not establish that a copy is official, filed, served, admitted, examined or final. A claim, defence or appeal records a procedural position; it does not by itself prove its allegations.",
             "removal_h3": "Removal of the Insolvency Administrator",
             "fees_h3": "Remuneration / civil liability",
             "gaps_kicker": "Verifiable completeness",

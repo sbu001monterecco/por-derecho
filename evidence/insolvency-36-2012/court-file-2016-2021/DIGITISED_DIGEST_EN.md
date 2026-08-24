@@ -1,7 +1,7 @@
 # Concurso 36/2012 — digitised digest of the located court file (2016–2021)
 
 **Controlled baseline denominator:** 65 docket items + 1 connected external complaint.  
-**Principal limit:** the certified court/LAJ chronological index is absent. This is the complete digest of the located corpus, not yet a legally complete docket denominator. “Filing” means a party/AC position, not a proved fact.  
+**Principal limit:** no signed electronic index under article 47.3 of RDL 6/2023, official relation of procedural acts under article 46.2, or equivalent certified per-piece export for Concurso 36/2012 has been produced to us or located in the corpus. This is the complete digest of the sources currently located, not yet a legally complete docket denominator. Non-production does not establish nonexistence, loss, suppression or alteration. “Filing” means a party/AC position, not a proved fact.  
 **24-Aug-2026 refresh:** the searchable 37-page body of the 15-Jan-2013 Article 75 report is located; an 8-Feb-2019 conclusion application is located pending receipt/disposition; and 105 unique LexNET provider-package filenames from a bounded 2021–2022 sweep are queued for reconciliation. Package filename ≠ unique judicial act.
 **Detailed source:** `assets/data/concurso36-court-file-v1.json`.
 
@@ -112,4 +112,4 @@
 
 ## Smallest next control
 
-Obtain a certified chronological court/LAJ index and reconcile it in both directions against these 65 nodes and the LexNET queue. Until then, “not located” is a source gap, not proof of non-existence.
+Obtain the master piece inventory, article 47.3 signed per-piece indexes, article 46.2 official act relations and legacy/non-electronic exception inventory, then reconcile them in both directions against these 65 nodes and the LexNET queue. Until then, “not located” is a source gap, not proof of non-existence.

@@ -14,7 +14,7 @@ The certified-denominator rerun then located the complete searchable 37-page bod
 
 This closes the narrative gap between the 2013 foundation, 2016 definitive texts, the unsuccessful 2017 convenio route, liquidation, the 2018 plan/appeal family, the 2019 non-convalidation control and the 2021 licitation/adjudication sequence. It does not close the certified-docket denominator, annex completeness, service/finality, implementation or accounting.
 
-> The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.
+> The principal unresolved limitation is that no signed electronic index under article 47.3 of RDL 6/2023, official relation of procedural acts under article 46.2, or equivalent certified per-piece export for Concurso 36/2012 has been produced to us or located in the corpus. This is therefore the complete digest of the sources currently located—not yet a legally complete docket denominator. Non-production does not establish nonexistence, loss, suppression or alteration.
 
 ## 2. Reverse-engineered procedural route
 
@@ -98,6 +98,6 @@ The website should present the procedural spine, decisive adverse/favourable hol
 8. Complete 18-May-2021 appearance recording/minute, third-party offer, authority, proof of funds, bond evidence, attendance and disposition.
 9. Complete Article 152/424 quarterly-report run, liquidation extensions and closure/rendición de cuentas.
 10. Post-deed court communication, mandamientos, finca-by-finca Registry history, bank trail for EUR 400,000 and final accounting/surplus bridge.
-11. Reconcile the 105 located LexNET provider-package filenames against unique underlying acts, receipts, covers, duplicates, annexes and the certified index; do not use the package count as a docket count.
+11. Reconcile the 105 located LexNET provider-package filenames against unique underlying acts, receipts, covers, duplicates, annexes, the article 47.3 signed per-piece indexes, the article 46.2 act relations and the legacy/non-electronic exception inventory; do not use the package count as a docket count.
 
 These requests continue the existing `ME-PDFSCAN-*` queue; a later thread must update the canonical row, not create a generic duplicate.

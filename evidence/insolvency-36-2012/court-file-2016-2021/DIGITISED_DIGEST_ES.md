@@ -1,7 +1,7 @@
 # Concurso 36/2012 — digest digitalizado del expediente localizado (2016–2021)
 
 **Denominador basal controlado:** 65 elementos del expediente + 1 denuncia externa conectada.  
-**Límite principal:** falta el índice cronológico certificado del Juzgado/LAJ. Este es el digest completo del corpus localizado, no todavía un denominador jurídicamente completo del expediente. “Escrito” significa posición de parte/AC, no hecho probado.  
+**Límite principal:** no se nos ha entregado, ni se ha localizado en el corpus, ningún índice electrónico firmado conforme al artículo 47.3 del RDL 6/2023, relación oficial de actos de trámite conforme al artículo 46.2, ni exportación certificada equivalente por pieza del Concurso 36/2012. Este es el digest completo de las fuentes actualmente localizadas, pero todavía no un denominador jurídicamente completo del expediente. La falta de entrega no acredita inexistencia, pérdida, supresión ni alteración. “Escrito” significa posición de parte/AC, no hecho probado.  
 **Refresco 24-ago-2026:** localizado el cuerpo buscable de 37 páginas del informe AC artículo 75 de 15-ene-2013; localizada una solicitud de conclusión fechada 8-feb-2019 pendiente de recibo/disposición; y puesta en cola la reconciliación de 105 nombres únicos de paquetes LexNET de un barrido acotado 2021–2022. Nombre de paquete ≠ acto judicial único.
 **Fuente de detalle:** `assets/data/concurso36-court-file-v1.json`.
 
@@ -112,4 +112,4 @@
 
 ## Próximo control mínimo
 
-Obtener un índice cronológico certificado del Juzgado/LAJ y reconciliarlo en ambos sentidos contra estos 65 nodos y la cola LexNET. Hasta entonces, “no localizado” significa vacío de fuente, no inexistencia.
+Obtener el inventario maestro de piezas, los índices electrónicos firmados por pieza del artículo 47.3, las relaciones oficiales de actuaciones del artículo 46.2 y el inventario de excepciones heredadas/no electrónicas; después reconciliarlos en ambos sentidos contra estos 65 nodos y la cola LexNET. Hasta entonces, “no localizado” significa vacío de fuente, no inexistencia.

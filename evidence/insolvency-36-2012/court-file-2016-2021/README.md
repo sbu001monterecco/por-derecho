@@ -10,11 +10,11 @@
 
 The requested starting rule was the earlier of the convenio phase or 2016. The controlling cutoff is therefore **1 January 2016**. Earlier material is retained only as a backward foundation: the 6-June-2012 opening order, the January-2013 Article 75 report, the March-2015 liquidation request/opposition and the 24-November-2015 Pink/Monterecco judgment.
 
-This corpus records every 2016–2021 item admitted to the first controlled Drive/Gmail reconciliation that could be tied to Concurso ordinario 36/2012. It is not described as “all filings” in the legal sense because the court/LAJ certified chronological index, every receipt/service return, every annex and the full quarterly-report run remain unavailable.
+This corpus records every 2016–2021 item admitted to the first controlled Drive/Gmail reconciliation that could be tied to Concurso ordinario 36/2012. It is not described as “all filings” in the legal sense because the master piece inventory, article 47.3 signed electronic indexes, article 46.2 official act relations, every receipt/service return, every annex, the legacy/non-electronic exception inventory and the full quarterly-report run remain unavailable.
 
 The 24-August denominator refresh located the searchable 37-page body of the 15-January-2013 Article 75 report, a candidate 8-February-2019 conclusion application whose filing receipt remains unresolved, and 105 unique LexNET provider-package filenames in a bounded 2021–2022 Gmail sweep. Those package filenames are a reconciliation queue, not 105 proved distinct docket acts. See `assets/data/concurso36-denominator-gap-v1.json` and the bilingual Article 75 digests.
 
-> The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.
+> The principal unresolved limitation is that no signed electronic index under article 47.3 of RDL 6/2023, official relation of procedural acts under article 46.2, or equivalent certified per-piece export for Concurso 36/2012 has been produced to us or located in the corpus. This is therefore the complete digest of the sources currently located—not yet a legally complete docket denominator. Non-production does not establish nonexistence, loss, suppression or alteration.
 
 ## What “digitised” means here
 

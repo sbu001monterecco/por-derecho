@@ -1,0 +1,137 @@
+{
+  "publication_id": "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824",
+  "control_marker": "calificacion-criminal-misuse-thesis-20260824",
+  "owner": "Gil Marer / Aweswell",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "LIVE_VERIFIED",
+  "branch": "codex/calificacion-investigative-thesis-20260824",
+  "pull_request": 882,
+  "merge_sha": "8d8111880046ecd5eb4663e063da5cb678b2b7a5",
+  "runtime_first_read_fix": {
+    "branch": "codex/calificacion-thesis-first-read-20260824",
+    "pull_request": 883,
+    "status": "MERGED_LIVE_VERIFIED",
+    "merge_sha": "d971f9e189f38850dbc424ed458f30af9db384ab",
+    "reason": "Live browser inspection found legacy organisers moving the sitewide thesis into collapsed/later content on the homepage and behind unrelated modules on the canonical page.",
+    "required_result": "Exactly one thesis block in the first-read sequence: directly after the route hero, except immediately after the existing source-of-funds evidence panel where that panel owns the first post-hero slot."
+  },
+  "strategic_pinning_fix": {
+    "branch": "codex/calificacion-thesis-strategic-pinning-v2-20260824",
+    "pull_request": 889,
+    "status": "MERGED_LIVE_VERIFIED",
+    "superseded_pull_request": 884,
+    "merge_sha": "a674f461014ab978c8da6023eb1956874dfc4479",
+    "reason": "The broader live-route sweep found the AP appeal, independence note and institutional hub callouts technically visible but several screens below the opening section.",
+    "required_result": "AP, independence-note and institutional callouts remain in the first-read position after all late-loading modules settle; the guided Calificación dossier retains its decision-first order."
+  },
+  "expected_routes": {
+    "es": [
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html"
+    ],
+    "en": [
+      "en/insolvency-classification-criminal-misuse-thesis/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CALIFICACION_CRIMINAL_MISUSE_INVESTIGATIVE_THESIS_PUBLICATION_CONTROL_24AUG2026.md",
+    "assets/data/calificacion-criminal-misuse-thesis-v1.json",
+    "assets/data/unitary-route-registry-v1.json",
+    "assets/calificacion-criminal-misuse-thesis-20260824.js",
+    "assets/calificacion-reader-experience-20260817.js",
+    "assets/site.js",
+    "assets/styles.css",
+    "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+    "en/insolvency-classification-parallel-lives/index.html",
+    "es/concurso-36-2012-ap-seccion-4/index.html",
+    "en/insolvency-36-2012-ap-section-4/index.html",
+    "es/nota-independencia-judicial-estado-procesal-reserva-acciones/index.html",
+    "sitemap.xml",
+    "sitemap-calificacion.xml",
+    "scripts/validate_calificacion_criminal_misuse_thesis.py",
+    "scripts/render_calificacion_criminal_misuse_thesis.mjs",
+    ".github/workflows/validate-calificacion-criminal-misuse-thesis.yml",
+    "publication-manifests/calificacion-criminal-misuse-thesis-20260824.json"
+  ],
+  "required_controls": [
+    "serious document-based investigative thesis",
+    "five-pillar first-read visibility",
+    "actor-by-actor proof matrix",
+    "no adjudicated criminal guilt",
+    "no inference of common design or coordination from aligned benefit",
+    "RPL 2523/2025 appeal firewall",
+    "contrary evidence retained",
+    "right of reply with equal visibility",
+    "silence is not admission",
+    "ES/EN parity",
+    "corrected AC report and hearing-record source status"
+  ],
+  "open_evidence": [
+    "certified court index for the AC report and annex set, including DOC3 status",
+    "complete DI 248 expediente and diligence ledger",
+    "standalone Pink Canary/Patricia opposition annex package",
+    "exact filed LPB appeal and principal receipt",
+    "Gil principal appeal filing receipt",
+    "official hearing acta, court-certified recordings and verifiable transcript",
+    "approximate 39-minute VIDEO02 to VIDEO03 interval explanation",
+    "current RPL 2523/2025 judgment, service and finality status",
+    "actor-specific causation, harm and possible-benefit matrix"
+  ],
+  "publication_safety": {
+    "raw_private_emails_committed": false,
+    "private_hearing_recordings_committed": false,
+    "unnecessary_personal_identifiers_committed": false,
+    "criminal_guilt_stated_as_adjudicated": false,
+    "common_design_stated_as_proved": false,
+    "personal_coordination_stated_as_proved": false,
+    "purposeful_private_benefit_stated_as_proved": false,
+    "contrary_evidence_preserved": true,
+    "appeal_independence_preserved": true,
+    "right_of_reply_preserved": true
+  },
+  "deployment_evidence": [
+    "PR 882 merge 8d8111880046ecd5eb4663e063da5cb678b2b7a5 published the bilingual canonical thesis, five-pillar visual treatment, route callouts, source-state corrections and publication controls.",
+    "PR 883 merge d971f9e189f38850dbc424ed458f30af9db384ab corrected the canonical and homepage first-read placement and the Acosta Matos source-of-funds ordering.",
+    "PR 889 merge a674f461014ab978c8da6023eb1956874dfc4479 pinned the thesis deterministically on strategic routes and added the settled 15-route browser-render gate."
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-responsabilidad-institucional/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-institutional-accountability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-ap-seccion-4/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-ap-section-4/",
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-perimetro/",
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-administrador-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-insolvency-administrator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/nota-independencia-judicial-estado-procesal-reserva-acciones/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-24T01:32:50Z",
+    "pull_request": 889,
+    "validated_head": "4259da530bacbeeb4f74cf612195324da30f29a3",
+    "merge_sha": "a674f461014ab978c8da6023eb1956874dfc4479",
+    "workflow_run_id": 32679768977,
+    "workflow_result": "All 21 pull-request workflows passed, including the dedicated 15-route settled-DOM browser render.",
+    "production_result": "Production serves loader revision 20260824c. All 15 routes contained exactly one visible thesis block in the required first-read sequence, outside collapsed content; canonical and guided routes retained five pillars; the AP routes retained the RPL 2523/2025 appeal firewall; Acosta Matos routes retained source-of-funds, adjudication and case-hub controls."
+  },
+  "validation": {
+    "status": "CI_GREEN_LIVE_VERIFIED",
+    "evidence": [
+      "python scripts/validate_calificacion_criminal_misuse_thesis.py",
+      "python scripts/validate_publication_integrity.py",
+      "python scripts/validate_insolvency_perimeter_language.py",
+      "python scripts/validate_mission_critical_repo.py",
+      "node --check on the new scoped module, global loader and Calificación reader-order script",
+      "HTML parser and sitemap XML parse checks",
+      "21/21 pull-request workflows passed on PR 889",
+      "15-route production cold-render and live-browser first-read sweep"
+    ],
+    "visual_render": "PASS: production serves loader 20260824c; canonical, homepage, institutional, AP appeal, Acosta Matos, administrator, independence-note and guided Calificacion routes passed settled DOM placement checks"
+  }
+}

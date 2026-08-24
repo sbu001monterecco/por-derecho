@@ -1,0 +1,346 @@
+{
+  "publication_id": "COUNSEL-DEFENCE-CONTINUITY-20260823",
+  "control_marker": "counsel-defence-continuity-20260823",
+  "owner": "Gil Marer / Aweswell",
+  "created_at": "2026-08-23T23:17:00Z",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+  "branch": "codex/counsel-impact-nuance-20260823",
+  "original_branch": "codex/counsel-defence-expanded-20260823",
+  "nuance_revision": {
+    "control_date": "2026-08-23",
+    "state": "LIVE_VERIFIED",
+    "purpose": "Replace the public binary causation/withdrawal characterisation with an integrated mandate account and explain the Article 215.2 providencia precisely.",
+    "pull_request": 879,
+    "head_sha": "73ba539f4671c06e066a5d5468172b21a9e6220b",
+    "merge_sha": "7ed8a4469d1f5a46a68f3f2cf55711f99176d97f",
+    "checks": {
+      "status": "ALL_EIGHT_SUCCESS",
+      "run_ids": [32674663023, 32674662974, 32674662998, 32674663003, 32674662991, 32674663008, 32674663002, 32674663009]
+    },
+    "live_verified_at_utc": "2026-08-23T23:51:15Z"
+  },
+  "responsibility_revision": {
+    "control_date": "2026-08-24",
+    "state": "LIVE_VERIFIED",
+    "purpose": "Correct the Parrilla-Daniel-AC responsibility and influence sequence, remove any unsupported characterisation of SLJ work as substantial, record the no-signed-filing fee judgment, and define the later client-file inventory disclosure precisely.",
+    "evidential_boundary": "Attempted influence through outgoing counsel is published as a document-based investigative inference. Unlawful motive, collusion, resignation causation, theft and actual AC/CAM access to the later fee-piece material are not published as proved facts.",
+    "draft_completed_at_utc": "2026-08-24T00:54:17Z",
+    "branch": "codex/counsel-responsibility-daniel-20260824",
+    "source_head_sha": "7ed42ffab839d38b6de8d586d2f69532b34679cb",
+    "pull_request": 885,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/885",
+    "opened_at_utc": "2026-08-24T00:59:38Z",
+    "local_validation": [
+      "JSON_PARSE_PASS",
+      "PUBLICATION_INTEGRITY_PASS",
+      "AUDIENCE_EXPERIENCE_PASS",
+      "DIFF_CHECK_PASS"
+    ],
+    "checks": {
+      "status": "ALL_NINE_SUCCESS",
+      "run_ids": [32678411668, 32678411671, 32678411687, 32678411679, 32678411823, 32678411720, 32678411686, 32678411674, 32678411675]
+    },
+    "merge_sha": "40179d1498debe381b5ac442c8e93610e5cc83d8",
+    "merged_at_utc": "2026-08-24T01:02:19Z",
+    "live_verified_at_utc": "2026-08-24T01:03:25Z",
+    "live_verification": {
+      "method": "cache-busted public-edge HTTP readback",
+      "es_status": 200,
+      "es_sha256": "726cfac5933374c1fe251b6e907c7aa1293d9333ea4bc29678e585b0744fd7ab",
+      "es_markers": ["inventario de 179 páginas", "4.458 documentos", "intentó instrumentalizar", "no acredita que ocurriera"],
+      "es_stale_wording_absent": "abrió después un canal con CAM",
+      "en_status": 200,
+      "en_sha256": "209b438ee6b8a93b6de60102ac61c8afc137e69fd3d32ba74f965bce40fd5910",
+      "en_markers": ["179-page inventory", "4,458-document client file", "sought to instrumentalise", "does not prove that it occurred"],
+      "en_stale_wording_absent": "opened a channel with CAM"
+    }
+  },
+  "sale_peace_revision": {
+    "control_date": "2026-08-24",
+    "state": "LIVE_VERIFIED",
+    "purpose": "Correct the locales/pools sale figure to EUR 400,000 and publish the connected asset-funds and counsel-transition tracks as Gil/Patricia's false-peace/perverse-incentive investigative thesis.",
+    "evidential_boundary": "The 2018 sale, AC receipt/self-payment report, 2020 payment assurance/praise and later EUR 26,750 Parrilla entry are separate documented records. Bribery, collusion, improper payment and a EUR 400,000-to-EUR 26,750 bank/ledger link remain unproved.",
+    "branch": "codex/counsel-sale-peace-incentive-20260824",
+    "draft_completed_at_utc": "2026-08-24T01:18:50Z",
+    "source_head_sha": "db7f447141a927d387d4faae957375ea7ecb5a92",
+    "pull_request": 887,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/887",
+    "merge_sha": "5da2702d6b9f97e03cf7d72e06a162ad64493d2f",
+    "merged_at_utc": "2026-08-24T01:21:00Z",
+    "local_validation": [
+      "JSON_PARSE_PASS",
+      "PUBLICATION_INTEGRITY_PASS",
+      "AUDIENCE_EXPERIENCE_PASS",
+      "DIFF_CHECK_PASS"
+    ],
+    "checks": {
+      "status": "ALL_NINE_SUCCESS",
+      "run_ids": [32679433723, 32679433574, 32679433667, 32679433613, 32679433616, 32679433625, 32679433623, 32679433619, 32679433566]
+    },
+    "live_verified_at_utc": "2026-08-24T01:22:37Z",
+    "live_verification": {
+      "method": "cache-busted public-edge HTTP readback",
+      "es_status": 200,
+      "es_sha256": "c41371642b78a0518c6630b81425dae95a5b7da52784daf9af8147a755a74b30",
+      "es_markers": ["Dos pistas conectadas", "400.000 €", "paz falsa"],
+      "en_status": 200,
+      "en_sha256": "62198cf3efd5feb5acf73023b2c89186b60d77f2424d8ecf6c489210386e2870",
+      "en_markers": ["Two connected tracks", "€400,000", "false peace"]
+    }
+  },
+  "criminal_proceeds_fee_reconciliation_revision": {
+    "control_date": "2026-08-24",
+    "state": "LOCAL_VALIDATED_AWAITING_PR",
+    "purpose": "Create a dedicated bilingual former-counsel page, publish the fee mismatch and ACTÚA/operational-value analysis, and state Gil's criminal-sale/proceeds and Cajasiete positions with explicit adjudication and proof boundaries.",
+    "evidential_boundary": "The original proforma, acknowledged receipts, rejected fee rebase, AC payment, AC receipt/account/self-payment report, nonconvalidation and ACTÚA/GESVALT methodology conflict are documented. The exact Parrilla debit, predicate crime, recipient knowledge and alleged Cajasiete EUR 1m financing remain unproved or attributed as specified.",
+    "branch": "codex/counsel-criminal-proceeds-actua-20260824",
+    "local_validation": [
+      "JSON_PARSE_PASS",
+      "XML_PARSE_PASS",
+      "PUBLICATION_INTEGRITY_PASS",
+      "AUDIENCE_EXPERIENCE_PASS",
+      "MISSION_CRITICAL_REPOSITORY_PASS",
+      "INSOLVENCY_PERIMETER_LANGUAGE_PASS",
+      "LOCAL_LINK_RESOLUTION_PASS",
+      "DIFF_CHECK_PASS"
+    ]
+  },
+  "expected_routes": {
+    "es": [
+      "es/actores-partes-abogados-representantes/index.html",
+      "es/continuidad-defensa-letrados/index.html",
+      "es/actua-2018-prueba-espacial/index.html"
+    ],
+    "en": [
+      "en/actors-parties-lawyers-representatives/index.html",
+      "en/counsel-defence-continuity/index.html",
+      "en/actua-2018-spatial-test/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/COUNSEL_DEFENCE_CONTINUITY_REGISTER_23AUG2026.md",
+    "archive/COUNSEL_DEFENCE_CONTINUITY_SOURCE_MAP_23AUG2026.md",
+    "archive/LEGAL_REPRESENTATION_AC_INTERFERENCE_CAUSATION_AUDIT_19AUG2026.md",
+    "archive/prompts/COUNSEL_DEFENCE_CONTINUITY_EXHAUSTIVE_SCAN_PROMPT_23AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "assets/data/legal-representation-ac-causation-v1.json",
+    "assets/data/legal-representation-v1.json",
+    "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+    "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md",
+    "publication-manifests/counsel-defence-continuity-20260823.json"
+  ],
+  "entries": [
+    "A1",
+    "A2a",
+    "A2b",
+    "A2c",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ],
+  "public_names": [
+    "Juan Tomás Parrilla Suárez",
+    "Armando Betancor Álamo",
+    "José María Betancor Álamo",
+    "Davinia Sánchez de la Cruz",
+    "Joaquín Ruiz de Infante Abella",
+    "Daniel Jiménez García",
+    "Luis Miguel López",
+    "Rosa Gual Tomás",
+    "Iñigo de Luisa Maíz",
+    "Adriana González García",
+    "Pedro Campaña Ávila",
+    "Miguel Méndez",
+    "José María Martínez de Artola",
+    "Zulay Carmen Rodríguez",
+    "Cristo Ayose Suárez Pimentel"
+  ],
+  "public_firms": [
+    "Alas Legal Advisors, S.L.",
+    "Kepler–Karst",
+    "Bufete Ruiz de Infante",
+    "SLJ Abogados",
+    "López Castelo Abogados",
+    "Cuatrecasas",
+    "Garrigues",
+    "Pimentel Servicios Legales"
+  ],
+  "required_controls": [
+    "integrated mandate account",
+    "internal source-status controls not exposed as reductive public causation badges",
+    "formal withdrawal reason is not exhaustive of prior AC effect or mandate performance",
+    "Article 215.2 procedural licence explained without minimising separately documented defence impact",
+    "client allegation attribution",
+    "withdrawal stated reasons retained",
+    "strongest contrary evidence retained",
+    "no privilege publication",
+    "current-firm continuity is not successor liability",
+    "right of correction",
+    "ES/EN parity",
+    "remaining professionals coded B-series",
+    "pre-engagement no-contact instruction identified as client testimony corroborated by contemporaneous sequencing restrictions",
+    "4,458-document client file distinguished from the 179-page inventory actually filed",
+    "actual AC/CAM fee-piece access not inferred from LexNET copy-transfer to Aweswell procurator",
+    "EUR 400,000 sale price controlled; EUR 1,000 excluded",
+    "apartment suspension, AC outside-suspension position, LPB unitary-plan objection and later nonconvalidation kept distinct",
+    "false peace and perverse incentive attributed; bribery and common fund source not asserted",
+    "criminal sale and illicit proceeds are attributed to Gil and not stated as adjudicated",
+    "Parrilla fee mismatch displayed with original fee, acknowledged receipts, rejected rebase and later AC payment",
+    "recipient knowledge not inferred from receipt",
+    "Cajasiete EUR 1m financing remains attributed and open pending deed and Registry certification",
+    "ACTUA methodology defects distinguished from unproved knowledge and criminal purpose"
+  ],
+  "institutional_call": [
+    "Fiscalía",
+    "Ilustre Colegio de Abogados de Las Palmas (ICALPA)"
+  ],
+  "open_evidence": [
+    "certified court copy of the controlled electronically signed Article 215.2 providencia and later complaint docket",
+    "complete opposition authorship/edit history",
+    "LPB counsel payment request-response chain",
+    "complete powers venias and LexNET records",
+    "native 25 January 2018 AC-Cristo instruction and DP1041 docket",
+    "native 18 May 2020 Parrilla instruction and July 2020 AC payment-report binary",
+    "certified fee-piece access service and consultation history",
+    "complete SLJ response and confidentiality necessity proportionality assessment",
+    "B-series identity and mandate verification",
+    "complete EUR 400,000 purchaser-debit-to-estate-credit-to-ledger chain, including AC remuneration, Parrilla invoice/authority/payment and post-nonconvalidation reconciliation"
+  ],
+  "publication_safety": {
+    "raw_private_emails_committed": false,
+    "privileged_advice_committed": false,
+    "unnecessary_personal_identifiers_committed": false,
+    "complaint_filing_or_success_stated_as_proved": false,
+    "client_allegations_stated_as_adjudicated": false,
+    "theft_stated_as_adjudicated": false,
+    "all_4458_files_stated_as_filed": false,
+    "actual_ac_cam_access_stated_as_proved": false,
+    "professional_withdrawal_reasons_preserved": true,
+    "contrary_evidence_preserved": true,
+    "right_of_reply_preserved": true
+  },
+  "pull_request": 876,
+  "merge_sha": "8261cc54bde703c9da69204338adcb631537508a",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
+    "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/",
+    "https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/"
+  ],
+  "live_markers": {
+    "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/": [
+      "A1–A8 · CONTINUIDAD DE LA DEFENSA · CONCURSO 36/2012",
+      "Davinia Sánchez de la Cruz",
+      "Llamamiento institucional",
+      "puerta procesal, no una decisión sobre verdad, culpabilidad o responsabilidad",
+      "motivo formal de retirada es relevante, sin constituir una caracterización completa"
+    ],
+    "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/": [
+      "A1–A8 · CONTINUITY OF THE DEFENCE · CONCURSO 36/2012",
+      "Davinia Sánchez de la Cruz",
+      "Institutional call",
+      "opened a procedural gate; it was not a finding about truth, guilt or liability",
+      "formal withdrawal reason is relevant without being a complete characterisation"
+    ]
+  },
+  "validation": {
+    "status": "CI_GREEN",
+    "evidence": [
+      {
+        "type": "github_actions",
+        "workflow": "Publication integrity gate",
+        "run_id": 32673244320,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate audience experience",
+        "run_id": 32673244310,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate visual asset identity registry",
+        "run_id": 32673244323,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Validate Concurso 36/2012 primary-autos redigest",
+        "run_id": 32673244304,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Public bidder name-only and bid-preservation gate",
+        "run_id": 32673244328,
+        "conclusion": "success"
+      },
+      {
+        "type": "github_actions",
+        "workflow": "Off-GitHub Preservation Snapshot",
+        "run_id": 32673244313,
+        "conclusion": "success"
+      }
+    ]
+  },
+  "deployment_evidence": {
+    "substantive_merge_sha": "8261cc54bde703c9da69204338adcb631537508a",
+    "deployment_url": "https://sbu001monterecco.github.io/por-derecho/",
+    "deployment_status": "success-confirmed-by-public-edge-readback"
+  },
+  "live_verification_evidence": {
+    "method": "cloud-browser public-edge readback",
+    "verified_at_utc": "2026-08-23T23:22:00Z",
+    "status": "PASS_BILINGUAL_MARKERS_AND_STRUCTURE",
+    "es": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
+      "title": "Actores, partes, abogados y representantes — nombres completos | Project Sun Rock",
+      "rows": 18,
+      "markers_passed": true
+    },
+    "en": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/",
+      "title": "Actors, parties, lawyers and representatives — full names | Project Sun Rock",
+      "rows": 18,
+      "markers_passed": true
+    }
+  },
+  "nuance_live_verification_evidence": {
+    "method": "cloud-browser public-edge readback",
+    "verified_at_utc": "2026-08-23T23:51:15Z",
+    "status": "PASS_BILINGUAL_NUANCE_MARKERS_STALE_BINARY_ABSENT",
+    "es": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
+      "title": "Actores, partes, abogados y representantes — nombres completos | Project Sun Rock",
+      "rows": 21,
+      "article_215_2_marker": true,
+      "cuatrecasas_integrated_marker": true,
+      "stale_binary_withdrawal_wording": false
+    },
+    "en": {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/",
+      "title": "Actors, parties, lawyers and representatives — full names | Project Sun Rock",
+      "rows": 21,
+      "article_215_2_marker": true,
+      "cuatrecasas_integrated_marker": true,
+      "stale_binary_withdrawal_wording": false
+    }
+  },
+  "deletion_record": {
+    "path": "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "fresh_thread_can_recover_without_chat": true,
+    "recovery_order": [
+      "archive/COUNSEL_DEFENCE_CONTINUITY_REGISTER_23AUG2026.md",
+      "archive/COUNSEL_DEFENCE_CONTINUITY_SOURCE_MAP_23AUG2026.md",
+      "archive/prompts/COUNSEL_DEFENCE_CONTINUITY_EXHAUSTIVE_SCAN_PROMPT_23AUG2026.md",
+      "publication-manifests/counsel-defence-continuity-20260823.json",
+      "THREAD_DELETION_AUDIT_2026-08-23_COUNSEL_DEFENCE_CONTINUITY.md"
+    ]
+  }
+}

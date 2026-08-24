@@ -14,7 +14,7 @@
 
 ## Copy/paste instruction
 
-> Run the complete Concurso 36/2012 judicial-and-party-record acquisition, digitisation, unitary digest and public-safe publication workflow. Start from current `main`, the live website and the existing 50-record AC removal/remuneration corpus, but do not treat that specialist corpus as the whole insolvency file. Search the connected Gmail, Google Drive, Library/Files and every repository source for all Judge, appellate-court and LAJ acts; every party filing, appeal, opposition, clarification request, exhibit and filing receipt; every official notice, service, hearing record and court communication; and every material party communication that proves notice, authority, instruction, implementation, objection, contradiction, response or silence. Treat all connected-source access as read-only: do not send, reply, forward, file, lodge or self-email anything, and prepare any production request as an unsent draft unless a separate express instruction authorises the exact outbound act. Preserve native originals privately with source IDs and hashes. Create complete page-accounted Spanish transcriptions and public-safe derivatives only after source, privacy, privilege and hidden-data review. Keep judicial holdings, LAJ procedural acts, party allegations, private communications and later interpretation separate. Reconstruct what was requested, what was before the decision-maker, what was ordered, notified, appealed, stayed, finalised, implemented and accounted for. Update the proceedings, correction, missing-evidence, custody and maintenance controls; extend the existing dedicated public archive rather than creating duplicate routes; publish all public-safe judicial decisions and clearly labelled party records only in `PUBLISH_PUBLIC_SAFE` mode; then validate, merge through a dedicated PR, verify the exact GitHub Pages deployment and report the remaining certified-docket gaps. Never claim the file is complete until a certified court index has been reconciled record by record.
+> Run the complete Concurso 36/2012 judicial-and-party-record acquisition, digitisation, unitary digest and public-safe publication workflow. Start from current `main`, the live website and the existing 50-record AC removal/remuneration corpus, but do not treat that specialist corpus as the whole insolvency file. Search the connected Gmail, Google Drive, Library/Files and every repository source for all Judge, appellate-court and LAJ acts; every party filing, appeal, opposition, clarification request, exhibit and filing receipt; every official notice, service, hearing record and court communication; and every material party communication that bears on notice, authority, instruction, implementation, objection, contradiction, response or alleged silence. Never infer silence, knowledge or acquiescence merely because a reply is not located or delivery is shown; apply the negative-evidence test in this prompt. Treat all connected-source access as read-only: do not send, reply, forward, file, lodge or self-email anything, and prepare any production request as an unsent draft unless a separate express instruction authorises the exact outbound act. Preserve native originals privately with source IDs and hashes. Screen and segregate possible privilege before substantive review. Create complete page-accounted Spanish transcriptions and public-safe derivatives only after source, privacy, privilege and hidden-data review. Keep judicial holdings, LAJ procedural acts, party allegations, private communications and later interpretation separate. Reconstruct what was requested, what was before the decision-maker, what was ordered, notified, appealed, stayed, finalised, implemented and accounted for. Update the proceedings, correction, missing-evidence, custody and maintenance controls; extend the existing dedicated public archive rather than creating duplicate routes; publish all located, authenticated, lawfully redistributable public-safe judicial decisions and clearly labelled party records only in `PUBLISH_PUBLIC_SAFE` mode; otherwise publish only a lawful minimised summary, stable private locator and withholding reason. Then validate, merge through a dedicated PR, verify the exact commit-bound GitHub Pages deployment and report the remaining certified-docket gaps. Never claim the file is complete until a certified court index has been reconciled record by record.
 
 The remainder of this document defines what `complete`, `digitised`, `party communication`, `public-safe` and `verified live` mean.
 
@@ -72,12 +72,24 @@ Current baseline, not completion claim:
 - their builders, stable IDs, redaction rules and standing-versus-merits controls must be extended, not replaced.
 - one public-safe searchable derivative and bilingual transcripts are controlled for the 27 February 2018 AC security-meeting request; it is a party communication, not a judicial act, Community resolution or implementation proof.
 
+Frozen gap seed for the current release:
+
+- historical P0 missing complete copies: `E004`, `E053`, `E056`, `E057`, `E058`, `E060`, `E061`, `E062`, `E063`, `E064`, `E065`, `E066`, `E067`, `E068` and `E071`;
+- historical P1 missing complete copies: `E015`, `E026`, `E027`, `E031`, `E034` and `E045`;
+- copy status not independently established: `E019` and `E022`;
+- specialist editable-counsel copies: `R07`, `R08`, `R17`, `R23`, `R24`, `R25`, `R27` and `F08`; and
+- editable-counsel copies without an independent filing receipt in the present corpus: `R07`, `R08`, `R24`, `R25` and `F08`.
+
+Re-evaluate that seed against the current catalogue at the start of every run. A complete redacted transcription proves page/text coverage of the located source copy only; it does not establish that the copy is official, filed, served, admitted, examined, final, implemented or true.
+
 Use these controlling result labels until the certified denominator changes:
 
 - `INVENTORY PARTIAL — CERTIFIED DOCKET OR RECORDS STILL MISSING`; and
 - `PUBLICATION COMPLETE FOR THE IDENTIFIED PUBLIC-SAFE CORPUS — NOT THE WHOLE COURT FILE`.
 
 Date-layer control: the current primary-source record dates the CAM/PH122 creditor-substitution order to **15 February 2018**. An unmerged 21 August reconstruction proposed an 8 February body date and 9/14 February signature layers. Do not publish those earlier layers as facts unless the complete three-page source is directly re-inspected and a distinct authenticated act or metadata layer is recorded separately.
+
+Procedural-status freshness gate: at every run, record the UTC cut-off and conduct a fresh current-source check for RPL 421/2026, combined RPL 3304/2025 plus 3319/2025, the conclusion/termination route, Decanato reference 22 and every other proceeding described as pending. Do not carry a prior `no later decision located` statement forward without a new bounded search and recorded source result.
 
 ## 3. Perimeter: what must be sought
 
@@ -140,6 +152,22 @@ Search for communications involving LPB, Aweswell, the Insolvency Administrator,
 Include emails, letters, burofaxes, LexNET-style notices, messages, meeting records, call memorialisations and cover communications transmitting court documents.
 
 Do not silently treat an unfiled private communication as part of the judicial record. Classify it separately and record whether it was ever filed, served, disclosed, mentioned, relied on or judicially considered.
+
+For every communication, preserve privately where available: the native RFC822/EML object; Message-ID and thread/conversation identifier; authored, sent, delivered, received and opened timestamps with timezone; full sender, `To`, `Cc` and `Bcc` headers; delivery, bounce and read-receipt evidence; attachment names, MIME types, byte counts and parent-child SHA-256 relationships; and the source-system locator. Record `AUTHORED`, `SENT`, `DELIVERED`, `RECEIVED`, `OPENED`, `FILED`, `SERVED` and `REPLIED` as separate evidence states. Do not promote one state into another.
+
+### F. Negative-evidence and silence rule
+
+An unlocated response is not proof of silence; delivery is not proof of reading, knowledge, agreement, ratification or acquiescence. A silence-based proposition may be recorded only when all of the following are separately supported:
+
+1. the relevant source universe and time window are bounded and materially complete;
+2. the exact communication and attachments are authenticated;
+3. delivery to the legally relevant recipient and capacity is proved;
+4. the recipient had a specific duty or objectively meaningful opportunity to respond or act;
+5. the response deadline or reasonable response window is identified;
+6. searches cover replies, forwards, separate threads, calls, filings and later corrective acts; and
+7. contrary or exculpatory communications are reported at the same evidential level.
+
+Otherwise use `NO RESPONSE LOCATED IN THE SEARCHED SOURCES` and state the searched perimeter. Never use `silent`, `ignored`, `approved`, `ratified` or `knew` as a factual finding from a null search alone.
 
 ### E. Implementation evidence
 
@@ -260,6 +288,10 @@ Use these copy/status classes:
 
 Do not call a source `certified`, `filed`, `served`, `examined`, `final` or `complete` unless the record proves that exact status.
 
+### Versioned corpus migration rule
+
+The current `127 / 50 / 12 / 85` counts are a frozen release snapshot, not permanent facts. When a new expected or located record changes a controlled count, do not edit one counter in isolation. Create a versioned catalogue/manifest migration and atomically update the record IDs, denominator/gap register, builders, pages, public target inventory, validators, exact-readback counts and closeout evidence. Preserve the previous dataset and manifest as an immutable historical snapshot. Never overwrite an existing stable ID or retroactively describe the earlier release as complete.
+
 ## 6. Digitisation standard
 
 For every located PDF, image or scan:
@@ -291,9 +323,12 @@ Native originals belong in controlled private custody unless already lawfully pu
 - sealed, restricted or redistribution-prohibited records; or
 - credentials, account tokens or source-system secrets.
 
+Privilege screening occurs at ingestion, before substantive digesting or cross-document inference. Quarantine potentially privileged material, restrict access, and record only non-substantive privilege-log metadata until competent legal review determines confidentiality, ownership, waiver and permitted use. Do not quote, paraphrase, derive allegations from or publish a potentially privileged communication merely because it was found in an accessible account.
+
 Public treatment rules:
 
-- publish complete public-safe text of judicial and LAJ acts where lawful and relevant;
+- publish complete public-safe text of all located, authenticated and lawfully redistributable judicial and LAJ acts where relevant;
+- for a restricted, unsafe, unauthenticated or non-redistributable act, publish only a lawful minimised summary, a stable private-custody locator and the withholding reason;
 - prioritise privacy-safe PDFs for material judicial decisions;
 - publish party filings as complete redacted text where public interest, source status and data minimisation permit;
 - label every party assertion as a party position rather than a finding;
@@ -380,17 +415,18 @@ Do not publish a raw document dump without the procedural relationships and evid
 At minimum, attempt to close and then accurately report:
 
 1. a certified electronic docket/index for every section and material incident of Concurso 36/2012;
-2. every opening, administration, common phase, creditor-text, liquidation-plan, asset-realisation, adjudication, accounting, conclusion and Calificación act;
-3. the complete 2018, 2021 and 2022 judicial/LAJ source families already identified in the definitive-text and implementation registers;
-4. the full January-2022 act family, reconciling 22 January and 26 January without assuming identity;
-5. service, appeal, suspension and finality records for material decisions;
-6. the 1 September 2025 decree, cited March-2025 direction and 20 January 2026 hearing record in the remuneration lane;
-7. current signed merits outcomes in RPL 3304/2025, RPL 3319/2025 and RPL 421/2026;
-8. complete AC accounting, remuneration-extension orders, invoices, estate ledger and final accounts;
-9. the deed/mandamiento/Registry/bank chain implementing judicial acts, including deed 457 and the separate EUR 400,000 route;
-10. complete attachments, filing receipts and independent filed-copy proof for party documents currently held only as editable counsel copies;
-11. the complete DP 1132/2018 and DI 248/2018 files to the extent they were used in or illuminate Concurso 36/2012; and
-12. every material communication proving what the Judge, LAJ, AC, parties and implementation actors received, knew, requested, denied, adopted or left unanswered.
+2. the official reparto/allocation record for the 18 June 2026 AC complaint associated with daily intake reference 22, including NIG, destination organ, admission/status and subsequent acts; preserve reference 24 as a separate judicial-conduct route;
+3. every opening, administration, common phase, creditor-text, liquidation-plan, asset-realisation, adjudication, accounting, conclusion and Calificación act;
+4. the complete 2018, 2021 and 2022 judicial/LAJ source families already identified in the definitive-text and implementation registers;
+5. the full January-2022 act family, reconciling 22 January and 26 January without assuming identity;
+6. service, appeal, suspension and finality records for material decisions;
+7. the 1 September 2025 decree, cited March-2025 direction and 20 January 2026 hearing record in the remuneration lane;
+8. current signed merits outcomes in RPL 3304/2025, RPL 3319/2025 and RPL 421/2026;
+9. complete AC accounting, remuneration-extension orders, invoices, estate ledger and final accounts;
+10. the deed/mandamiento/Registry/bank chain implementing judicial acts, including deed 457 and the separate EUR 400,000 route;
+11. court-stamped/served copies, complete annexes and independent receipts for `R07`, `R08`, `R24`, `R25` and `F08`, while preserving the different limited corroboration recorded for `R17`, `R23` and `R27`;
+12. the complete DP 1132/2018 and DI 248/2018 files to the extent they were used in or illuminate Concurso 36/2012; and
+13. every material communication proving what the Judge, LAJ, AC, parties and implementation actors received, knew, requested, denied, adopted or left unanswered, subject to the negative-evidence rule.
 
 Update existing missing-evidence IDs rather than creating duplicate demands.
 
@@ -455,10 +491,12 @@ In `PUBLISH_PUBLIC_SAFE` mode only:
 3. merge only the reviewed head after required checks pass;
 4. verify the exact merge SHA on current `main`;
 5. require a successful exact-SHA GitHub Pages deployment;
-6. no-cache read back every critical public route, data file and public PDF;
-7. compare live bytes/hashes with repository artifacts;
-8. update `archive/DEPLOYMENT_LOG.md` and the publication manifest; and
-9. run a fresh-thread recovery test before calling the work deletion-safe.
+6. attest through the GitHub Actions API that the successful `pages build and deployment` run has `head_sha` equal to the exact merge SHA;
+7. reject duplicate URL targets before live readback so no source can silently overwrite another in the verifier inventory;
+8. no-cache read back every critical public route, data file and public PDF;
+9. compare live bytes/hashes with repository artifacts;
+10. update `archive/DEPLOYMENT_LOG.md` and the publication manifest; and
+11. run a fresh-thread recovery test before calling the work deletion-safe.
 
 A merge is not proof of deployment. HTTP 200 alone is not proof that the correct revision is live.
 

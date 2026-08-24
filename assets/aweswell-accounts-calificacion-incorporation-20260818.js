@@ -141,7 +141,8 @@
     section.className = `section aw-incorporation${isCompact ? ' aw-compact' : ''}`;
     section.innerHTML = `<div class="shell aw-shell">${isFull ? (isEs ? fullSpanish : fullEnglish) : (isEs ? compactSpanish : compactEnglish)}</div>`;
     const firstSection = Array.from(main.children).find((node) => node.tagName === 'SECTION');
-    if (firstSection) firstSection.insertAdjacentElement('afterend', section);
+    const thesis = main.querySelector('[data-calificacion-misuse-thesis]');
+    if (thesis || firstSection) (thesis || firstSection).insertAdjacentElement('afterend', section);
     else main.prepend(section);
   };
 

@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/" />
   </url>
@@ -26,14 +26,38 @@
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-critical-gaps/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-critical-gaps/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-brechas-criticas/" />
   </url>
   <url>
     <loc>https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-brechas-criticas/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-brechas-criticas/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-critical-gaps/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/" />
   </url>
 </urlset>

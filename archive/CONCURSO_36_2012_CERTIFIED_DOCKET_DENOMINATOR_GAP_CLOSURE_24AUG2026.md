@@ -5,7 +5,7 @@
 
 ## Controlling limitation
 
-> The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.
+> The principal unresolved limitation is that no signed electronic index under article 47.3 of RDL 6/2023, official relation of procedural acts under article 46.2, or equivalent certified per-piece export for Concurso 36/2012 has been produced to us or located in the corpus. This is therefore the complete digest of the sources currently located—not yet a legally complete docket denominator. Non-production does not establish nonexistence, loss, suppression or alteration.
 
 This limitation controls every count and every public completeness statement.
 
@@ -19,7 +19,7 @@ A no-result search is a retrieval gap, not proof of non-existence.
 
 ## Result
 
-1. **Certified denominator:** not located. The three 15-Aug-2026 requests are evidenced by receipts `REGAGE26e00073341191`, `REGAGE26e00073341382` and `REGAGE26e00073341477`; no responding certified index or production was located in this run.
+1. **Certified denominator:** not located. The three 15-Aug-2026 requests are evidenced by receipts `REGAGE26e00073341191`, `REGAGE26e00073341382` and `REGAGE26e00073341477`. On 20-Aug-2026, Exp. Gub. 38/2026 archived the TSJ supervisory lane and directed requests 4–8 to article 234 LOPJ without producing the requested index or testimony chains. An administrative appeal receipt (`REGAGE26e00074355631`) and 21-Aug registry-processing confirmation are located; no superior merits decision is located. No response or certified production from the other two lanes is located.
 2. **Article 75 report:** the complete 37-page searchable body dated 15-Jan-2013 was located. The earlier `open` status is superseded at report-body level. Annexes, filing hierarchy and page-faithful public redaction remain open.
 3. **Conclusion application:** a party document dated 8-Feb-2019 was located. Later filenames/circulation describe it as 2021. Without a filing receipt and disposition it is a candidate docket item, not added to the legal denominator.
 4. **LexNET packages:** the bounded Gmail sweep identified 105 unique provider-package filenames across the observed 9-Jun-2021 to 4-Nov-2022 window: 52 DIOR/diligencia, 41 filing/transfer packages, five Autos, five Providencias, one Decreto and one other package. This is a reconciliation queue, not 105 proved distinct acts.
@@ -29,11 +29,11 @@ A no-result search is a retrieval gap, not proof of non-existence.
 
 ### Official index → repository
 
-Blocked until the certified index is produced. When obtained, every official entry must map to one stable repository ID or an explicit `missing / duplicate / variant / confidential / outside-scope` disposition.
+Blocked until the master piece inventory, signed index for every piece, official act relation and legacy/non-electronic exception inventory are produced. When obtained, every official entry must map to one stable repository ID or an explicit `missing / duplicate / variant / confidential / outside-scope` disposition.
 
 ### Repository → official index
 
-Blocked until the certified index is produced. Every repository node and each of the 105 LexNET packages must map back to an official entry, a party-only draft, an external proceeding, a duplicate/notification copy or an unresolved anomaly.
+Blocked until those official outputs are produced. Every repository node and each of the 105 LexNET packages must map back to an official entry, a party-only draft, an external proceeding, a duplicate/notification copy or an unresolved anomaly.
 
 ## Strongest source-supported criticism
 
@@ -47,10 +47,10 @@ This supports a demand for explanations about value preservation, income, action
 
 ## Remaining denominator categories
 
-1. certified index and docket sheets for every section/pieza;
+1. master section/piece inventory, article 47.3 signed index and article 46.2 act relation for every section/pieza;
 2. each filing plus annex inventory and LexNET receipt;
 3. each judicial/LAJ act, service return, correction, appeal and finality event;
-4. each hearing minute, recording and audiovisual component index;
+4. each hearing minute, recording and audiovisual component index, including a legacy/non-electronic exception inventory;
 5. complete Article 75/152/424 report and annex series;
 6. deed, mandamiento, Registry, bank and accounting implementation;
 7. closure, rendición de cuentas, surplus and calificación outcomes; and
