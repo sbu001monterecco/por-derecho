@@ -5,18 +5,34 @@ on:
     paths:
       - 'evidence/sun-park/labory-catrude/**'
       - 'ops/LABORY_CATRUDE_RECOVERY_**'
-      - 'archive/LABORY_CATRUDE_RECOVERY_CONTINUITY_24AUG2026.md'
+      - 'archive/LABORY_CATRUDE_RECOVERY_**'
       - 'assets/data/labory-catrude-historical-report-v1.json'
       - 'es/labory-catrude-antecedente-tecnico-historico/**'
       - 'en/labory-catrude-historical-technical-antecedent/**'
       - 'publication-manifests/labory-catrude-historical-report-recovery-20260824.json'
       - 'scripts/audit_labory_catrude_thread_deletion_safety.py'
       - '.github/workflows/labory-catrude-thread-deletion-audit.yml'
+      - 'docs/deletion-audits/**labory-catrude**'
       - 'sitemap-labory-catrude.xml'
       - 'robots.txt'
   push:
     branches:
+      - main
       - 'agent/labory-catrude-recovery-20260824'
+      - 'agent/labory-catrude-live-closeout-20260824'
+    paths:
+      - 'evidence/sun-park/labory-catrude/**'
+      - 'ops/LABORY_CATRUDE_RECOVERY_**'
+      - 'archive/LABORY_CATRUDE_RECOVERY_**'
+      - 'assets/data/labory-catrude-historical-report-v1.json'
+      - 'es/labory-catrude-antecedente-tecnico-historico/**'
+      - 'en/labory-catrude-historical-technical-antecedent/**'
+      - 'publication-manifests/labory-catrude-historical-report-recovery-20260824.json'
+      - 'scripts/audit_labory_catrude_thread_deletion_safety.py'
+      - '.github/workflows/labory-catrude-thread-deletion-audit.yml'
+      - 'docs/deletion-audits/**labory-catrude**'
+      - 'sitemap-labory-catrude.xml'
+      - 'robots.txt'
   schedule:
     - cron: '17 */6 * * *'
   workflow_dispatch:
@@ -36,8 +52,15 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Run read-only evidence and deletion-safety audit
-        run: python3 scripts/audit_labory_catrude_thread_deletion_safety.py --output-dir artifacts/labory-catrude-deletion-audit
+      - name: Run read-only evidence, deletion-safety and live-route audit
+        env:
+          LIVE_MODE: ${{ github.event_name != 'pull_request' }}
+        run: |
+          args=(--output-dir artifacts/labory-catrude-deletion-audit)
+          if [[ "$LIVE_MODE" == "true" ]]; then
+            args+=(--live)
+          fi
+          python3 scripts/audit_labory_catrude_thread_deletion_safety.py "${args[@]}"
       - name: Publish audit summary to the workflow run
         if: always()
         run: |
