@@ -72,4 +72,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-edgeworth-comparator/" />
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/garrigues-la-laguna/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/garrigues-la-laguna/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/garrigues-la-laguna/" />
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/garrigues-la-laguna/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/garrigues-la-laguna/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/garrigues-la-laguna/" />
+  </url>
 </urlset>
