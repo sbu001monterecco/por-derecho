@@ -37,7 +37,7 @@ A 20 June 2026 secondary report says an April 2026 costs and case-management con
 Potentially useful overlap is confined to:
 
 1. professional-negligence / breach-of-retainer analytical structure;
-2. the possible relevance of the same family of early-2019 Spanish Supreme Court decisions;
+2. a potentially related early-2019 Spanish Supreme Court issue, without asserting identity with Edgeworth's two Decisions unless the exact judgments and Sun Rock/Aweswell documentary intersection are proved from primary files;
 3. a lost-opportunity causation model; and
 4. the need to identify the precise retainer, entity, advice duty, counterfactual and claimant-specific loss.
 
@@ -114,6 +114,7 @@ The comparator pages must not:
 
 ## 9. Public sources
 
+- Official approved judgment: <https://caselaw.nationalarchives.gov.uk/ewhc/ch/2025/1014>
 - Judgment heading and parties: <https://juristeca.com/uk/chancery-division-of-the-high-court/sentencias/2025/5/bl-2024-000237-2025-ewhc-1014-ch/heading>
 - Allegation and denial: <https://juristeca.com/uk/chancery-division-of-the-high-court/sentencias/2025/5/bl-2024-000237-2025-ewhc-1014-ch/section-1>
 - Retainer: <https://juristeca.com/uk/chancery-division-of-the-high-court/sentencias/2025/5/bl-2024-000237-2025-ewhc-1014-ch/the-retainer>
@@ -122,6 +123,8 @@ The comparator pages must not:
 - Attributed later status: <https://confilegal.com/20260620-edgeworth-cuatrecasas-londres-filtro-preliminar-fase-gestion-procesal/>
 - SRA register: <https://www.sra.org.uk/solicitors-register/>
 - SRA overseas and cross-border practice rules: <https://www.sra.org.uk/solicitors/standards-regulations/overseas-cross-border-practice-rules/>
+
+The National Archives judgment is the primary authority. Juristeca is retained only as a section-level mirror. The Confilegal report remains a secondary source for later procedural status until the sealed order or an equivalent primary court record is added.
 
 ## 10. Right of reply
 

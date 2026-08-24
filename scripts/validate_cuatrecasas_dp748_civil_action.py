@@ -98,6 +98,9 @@ COMPARATOR_ROUTES = {
         "no UK firm is currently instructed for such proceedings",
         "Any SRA consideration is a distinct, secondary and jurisdiction-dependent regulatory question",
         "What we are asking Cuatrecasas to do now",
+        "Project Sun Rock is the wider accountability and recovery project",
+        "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2025/1014",
+        "../cuatrecasas-sun-park/#resolution-invitation",
         "independent proof · open resolution lane",
     ),
     "es/comparador-cuatrecasas-edgeworth/index.html": (
@@ -113,6 +116,9 @@ COMPARATOR_ROUTES = {
         "no tiene actualmente contratado a ningún despacho británico para tales acciones",
         "Cualquier consideración sobre la SRA es una cuestión regulatoria distinta, secundaria y dependiente de jurisdicción",
         "Qué estamos pidiendo ahora a Cuatrecasas",
+        "Project Sun Rock es el proyecto más amplio de rendición de cuentas y recuperación",
+        "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2025/1014",
+        "../cuatrecasas-sun-park/#invitacion-resolucion",
         "prueba independiente · vía abierta para resolver",
     ),
 }
@@ -129,6 +135,32 @@ for rel, markers in COMPARATOR_ROUTES.items():
         errors.append(f"{rel}: controlled current-team identity leaked")
     if text.count("BL-2024-000237") < 2 or text.count("[2025] EWHC 1014 (Ch)") < 2:
         errors.append(f"{rel}: comparator case identity is not repeated in route and source record")
+
+RESOLUTION_ENTRY_ROUTES = {
+    "en/cuatrecasas-edgeworth-comparator/resolution/index.html": (
+        "cuatrecasas-resolution-entry-20260824",
+        "Our objective is resolution, not borrowed accusation",
+        "Project Sun Rock is the wider accountability and recovery project",
+        "../../cuatrecasas-sun-park/#resolution-invitation",
+    ),
+    "es/comparador-cuatrecasas-edgeworth/resolucion/index.html": (
+        "cuatrecasas-resolution-entry-20260824",
+        "Nuestro objetivo es resolver, no importar acusaciones",
+        "Project Sun Rock es el proyecto más amplio de rendición de cuentas y recuperación",
+        "../../cuatrecasas-sun-park/#invitacion-resolucion",
+    ),
+}
+for rel, markers in RESOLUTION_ENTRY_ROUTES.items():
+    path = ROOT / rel
+    if not path.is_file():
+        errors.append(f"missing resolution entry route: {rel}")
+        continue
+    text = path.read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in text:
+            errors.append(f"{rel}: missing resolution-entry marker {marker!r}")
+    if leaks_controlled_identity(text):
+        errors.append(f"{rel}: controlled current-team identity leaked")
 
 UK_STATUS_ROUTES = {
     "en/cuatrecasas-edgeworth-comparator/index.html": (
