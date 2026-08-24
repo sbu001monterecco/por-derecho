@@ -11,7 +11,7 @@ This file makes the 16-Aug-2026 Calificación source refresh impossible to miss 
 
 Any future search, scan, draft, website update or institutional analysis touching one or more of the following terms must read the controlling source refresh before relying on older summaries:
 
-`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `truth inversion` · `inversión de la verdad` · `inversion of agency` · `inversión de agencia` · `diversion of scrutiny` · `desvío del foco` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0057718` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `9 octubre 2026` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
+`calificación culpable` · `Sentencia 163/2023` · `Concurso 36/2012` · `truth inversion` · `inversión de la verdad` · `inversion of agency` · `inversión de agencia` · `diversion of scrutiny` · `desvío del foco` · `Francisco de Borja Rodríguez-Batllori` · `Ricardo de Mosteyrín Sampalo` · `Elena Herrera Rodríguez` · `Emilio Sánchez Ulled` · `Alberto López Villarrubia` · `Pink Canary Services` · `Patricia Domínguez` · `DI 248/2018` · `EG 49/2026` · `RPL 2523/2025` · `convenio 2017` · `plan de viabilidad 2017` · `Aweswell recapitalisation` · `commercial normalisation` · `normalización comercial` · `ONA` · `Clubotel La Dorada` · `Varia Structured Opportunities` · `Stoneweg` · `financed exit` · `Article 176` · `art. 176 LC` · `recovery through adversity` · `recuperación a través de la adversidad` · `non-collaboration` · `falta de colaboración` · `accounting` · `contabilidad` · `€3,032,010.34` · `3.032.010,34` · `elEconomista judgment` · `CaixaBank` · `CAIXABANK, S.A.` · `Aweswell c. CaixaBank` · `1859/2023-9` · `46250-42-1-2023-0049579` · `Juzgado 27 Valencia` · `6 noviembre 2025` · `28 enero 2027` · `€1,124,445.84` · `recuperación bancaria` · `bank recovery` · `testigo propuesto por la parte actora y demandada`.
 
 Read first:
 
@@ -109,9 +109,9 @@ Plans, term sheets, conditional offers, negotiations, forecasts and filed allega
 
 The controlled current proceeding is:
 
-**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0057718, Juzgado de Primera Instancia e Instrucción nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
+**Procedimiento ordinario [ORD] 1859/2023-9, N.I.G. 46250-42-1-2023-0049579, Juzgado de Primera Instancia nº 27 de Valencia, Aweswell Limited c. CAIXABANK, S.A.**
 
-The latest controlled court order fixes trial for **9 October 2026 at 12:00**.
+The original hearing listed for **6 November 2025 at 10:00** did not proceed. The signed diligence dated that day relisted the hearing for **28 January 2027 at 10:00**.
 
 CaixaBank's own 18-Jun-2024 expert report records Aweswell's pleaded prejudice at **€1,124,445.84**. Liability and quantum are contested and no merits judgment has been located. Treat this as a **live, material and potentially substantial recovery claim**, not an adjudicated recovery or guaranteed outcome.
 

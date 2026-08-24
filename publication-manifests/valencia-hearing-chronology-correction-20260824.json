@@ -1,0 +1,83 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "VALENCIA-HEARING-CHRONOLOGY-CORRECTION-20260824",
+  "control_marker": "valencia-hearing-chronology-correction-20260824",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-24T22:07:04Z",
+  "source_base": "87d1689cd1766d564b7248fd94944f80ca00a44d",
+  "current_state": "DRAFT",
+  "purpose": "Replace the unsupported October 2026 Valencia hearing entry with the source-controlled original and relisted hearing chronology, then prevent recurrence.",
+  "controlling_status": {
+    "court": "Juzgado de Primera Instancia nº 27 de Valencia",
+    "proceeding": "1859/2023-9",
+    "nig": "46250-42-1-2023-0049579",
+    "original_hearing": "2025-11-06 10:00 Europe/Madrid — did not proceed",
+    "short_notice": "Opposing expert reported a cancelled flight on the evening before; Aweswell did not oppose because it wished to question him personally.",
+    "relisted_hearing": "2027-01-28 10:00 Europe/Madrid — current verified setting",
+    "case_status": "PENDING_CONTESTED"
+  },
+  "affected_public_routes": [
+    "en/",
+    "es/",
+    "en/caixabank-valencia-claim/",
+    "es/reclamacion-caixabank-valencia/",
+    "en/lender-of-record/",
+    "es/acreedor-de-registro/",
+    "en/updates/",
+    "es/actualizaciones/",
+    "en/updates/feed.xml",
+    "es/actualizaciones/feed.xml",
+    "assets/data/valencia-hearing-status-v1.json"
+  ],
+  "expected_routes": {
+    "es": [
+      "es/index.html",
+      "es/reclamacion-caixabank-valencia/index.html",
+      "es/acreedor-de-registro/index.html",
+      "es/actualizaciones/index.html"
+    ],
+    "en": [
+      "en/index.html",
+      "en/caixabank-valencia-claim/index.html",
+      "en/lender-of-record/index.html",
+      "en/updates/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/valencia-hearing-status-v1.json",
+    "assets/caixabank-borja-witness-context-20260816.js",
+    "en/updates/feed.xml",
+    "es/actualizaciones/feed.xml",
+    "scripts/validate_valencia_hearing_status.py",
+    ".github/workflows/validate-valencia-hearing-status.yml"
+  ],
+  "runtime_and_controls": [
+    "assets/caixabank-borja-witness-context-20260816.js",
+    "scripts/validate_valencia_hearing_status.py",
+    ".github/workflows/validate-valencia-hearing-status.yml",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/VALENCIA_BANKING_CONCURSAL_RECONCILIATION_LEDGER_16AUG2026.md"
+  ],
+  "superseded_entry": "The former October 2026 / 12:00 entry was an unsupported transcription and is not a second postponement.",
+  "inference_boundaries": [
+    "Do not infer tactical delay from the short-notice suspension.",
+    "Do not infer anything about the merits from the suspension or relisting.",
+    "Do not describe a later merits judgment or recovery unless a verified later source supports it."
+  ],
+  "privacy_control": "Only public-safe procedural summaries are committed. Native correspondence, message identifiers, addresses, signatures, verification codes and private strategy remain outside the public repository.",
+  "later_source_rule": "A later signed order or citation controls if it changes the 28 January 2027 setting; update the data record, public pages, correction register and validator together.",
+  "deletions": [],
+  "validation": {
+    "status": "PENDING",
+    "required": [
+      "validate_valencia_hearing_status.py",
+      "validate_repository_preservation.py",
+      "validate_publication_integrity.py",
+      "validate_audience_experience.py",
+      "mission-critical repository validation",
+      "HTML, JSON, JavaScript and Atom syntax checks",
+      "exact-SHA Pages deployment and live readback"
+    ]
+  }
+}

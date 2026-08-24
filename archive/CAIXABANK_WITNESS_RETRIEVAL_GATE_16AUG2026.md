@@ -9,7 +9,7 @@ Any future Project Sun Rock / Por Derecho thread, search pass or drafting task t
 
 - CaixaBank / CAIXABANK, S.A.;
 - Valencia `1859/2023-9`;
-- Juzgado de Primera Instancia e Instrucción nº 27 de Valencia;
+- Juzgado de Primera Instancia nº 27 de Valencia;
 - Francisco de Borja Rodríguez-Batllori Laffitte / Borja;
 - Administrador Concursal as witness / testigo / testifical;
 - wording that “both parties” asked for or proposed the AC;
