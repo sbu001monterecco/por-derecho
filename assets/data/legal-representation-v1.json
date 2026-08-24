@@ -417,6 +417,8 @@
       "documentedActivities": [
         "Long-running LPB/Concurso representation is evidenced from June 2012.",
         "Worked alongside Cuatrecasas and other advisers on 2018 liquidation, registry and ob-rem questions.",
+        "Original fee proforma: EUR 40,000 plus IGIC. Parrilla's 11 June 2020 written account acknowledged EUR 32,250 received from client-perimeter companies, proposed a rejected EUR 50,000 final fee and stated EUR 17,750 plus IGIC outstanding.",
+        "The Insolvency Administrator later recorded payment of EUR 25,000 plus 7% IGIC (EUR 26,750), creating a EUR 9,000 base mismatch even against the rejected fee proposal, subject to invoice, tax, costs and ledger reconciliation.",
         "Was asked to grant venia / be substituted on 31 May 2020."
       ],
       "sourceStatus": "VERIFIED_WITH_LIMITATION",
@@ -424,8 +426,14 @@
       "handoverTo": [
         "LREP-ENG-006"
       ],
+      "clientPositionAndLimits": [
+        "Gil/Patricia allege overpayment/double dipping and say the Administrator used payment assurance and the later payment as part of a false peace designed to influence incoming counsel.",
+        "Gil states the EUR 400,000 sale proceeds were the only then-available source. The Administrator's reports disclose the account/self-payment and later Parrilla payment sequence, but the matching bank debit remains outstanding.",
+        "Gil's criminal-sale/proceeds conclusion is an attributed prosecution thesis. Receipt alone does not prove Parrilla knew of criminal origin; primary responsibility for the challenged authorisation and strategic use of estate funds is alleged against the Administrator."
+      ],
       "openQuestions": [
-        "Locate the original appointment, complete LexNET/court record and final file-transfer inventory."
+        "Locate the original appointment, complete LexNET/court record and final file-transfer inventory.",
+        "Obtain every invoice, IGIC and costs allocation, authority, bank debit and estate-ledger entry sufficient to reconcile the original fee, acknowledged receipts and EUR 26,750 Administrator payment."
       ]
     },
     {

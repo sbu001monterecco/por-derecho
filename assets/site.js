@@ -53,6 +53,8 @@
     ['/en/grant-thornton/2024-04/', ['compact', null, 'append']],
     ['/es/actores-partes-abogados-representantes/', ['compact', null, 'append']],
     ['/en/actors-parties-lawyers-representatives/', ['compact', null, 'append']],
+    ['/es/continuidad-defensa-letrados/', ['compact', null, 'append']],
+    ['/en/counsel-defence-continuity/', ['compact', null, 'append']],
     ['/es/san-telmo-ricpe-sun-park/', ['compact', null, 'append']],
     ['/en/san-telmo-ricpe-sun-park/', ['compact', null, 'append']]
   ]);

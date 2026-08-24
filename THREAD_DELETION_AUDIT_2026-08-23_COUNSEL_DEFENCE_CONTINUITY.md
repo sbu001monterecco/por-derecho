@@ -103,7 +103,7 @@ The work ledger places Cristo from May 2016 to June 2022. A 25 January 2018 comm
 10. No privileged advice or private email body is reproduced.
 11. The sale price is €400,000, not €1,000; the €489,361.96 figure is the plan-reported ACTÚA appraisal for the 31-finca branch.
 12. The apartment suspension, the AC's outside-suspension position, LPB's unitary-plan objection and the later nonconvalidation are kept distinct.
-13. “False peace” and “perverse incentive” are attributed client/investigative characterisations. Bribery, a common source of funds and impropriety of a properly earned fee are not asserted.
+13. “False peace”, “perverse incentive”, overpayment and double dipping are attributed client/investigative characterisations. The underlying fee mismatch is stated numerically; exact restitution, recipient knowledge and criminal liability are not asserted as adjudicated.
 11. The exact pre-contract no-contact sentence has not been independently recovered; it is published as client testimony corroborated by contemporaneous claims-first, anti-intermediation and no-information instructions.
 12. A requested CAM contact is not described as a completed call.
 13. Claimed SLJ hours are not converted into a finding of substantial work, and the Decree 316/2021 no-signed-filing finding remains visible.
@@ -152,6 +152,19 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - Spanish and English public-edge readback returned HTTP 200 with the new attempted-instrumentalisation, 179-page inventory and 4,458-document distinctions visible; the stale completed-CAM-channel wording was absent;
 - live verified at `2026-08-24T01:03:25Z`.
 
+### 24 August criminal-proceeds / fee-reconciliation / ACTÚA revision
+
+- created dedicated bilingual former-counsel routes at `/es/continuidad-defensa-letrados/` and `/en/counsel-defence-continuity/`;
+- locked the AC's 20-Dec-2018 report as Drive `1YKfYMfO-UkK1nX1KqFwAzZ80ShH8sfay`: €400,000 cheque effective, LPB Santander account identified, AC self-payment reported;
+- locked the later report as Drive `1LFmybfTzuxI_Oq8KJvUcuANBxRzeq8NP`: €26,750 Parrilla payment entry;
+- locked the original Parrilla proforma `1eDClfX23lcPjf8-RvAb2Kl8Ecl2NHFWE`, the Aweswell accounting sheet `1GmJeZZB6dUCcBiOtgKQfTukIsybWDyviWw4zO2TKH-8`, the fee-negotiation thread `1725b510d9279e9a` and the internal liquidation schedule `1tbwRLHh_ldNtNFOoojmv6sY3Js4E5MeQWl2VVTHx2A4`;
+- public arithmetic now shows original €40,000 + IGIC fee, €32,250 acknowledged receipts, rejected €50,000 proposal, €17,750 + IGIC stated balance and €26,750 AC payment. The AC paid €9,000 more at base than the stated balance even under the rejected proposal; invoice/tax/cost allocation controls the exact gross excess/restitution;
+- Gil's statements that the sale was criminal and its consideration illicit proceeds are published as his prosecution thesis, not a judgment. The principal challenged authorisation/strategic-use allegation is directed at the AC; Parrilla's knowledge of criminal origin is not inferred from receipt;
+- ACTÚA page now connects the documented access/source/depreciation defects and contrary GESVALT unitary methodology to the €400,000 disposal, while leaving AC knowledge/deliberate disregard/criminal purpose for investigation;
+- Gil's Cajasiete €1m statement is retained as an attributed priority-verification lead. No mortgage deed/current certified Registry entry was located in the finite scan, so it is not upgraded to verified public fact.
+
+Open gates: matching Parrilla debit, invoices/IGIC/cost allocation/authority, complete post-nonconvalidation ledger, and Cajasiete deed/current Registry certifications.
+
 ## Final gate
 
-The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The 24 August responsibility/data-room revision is merged, deployed and live-verified. Its remaining substantive gaps are certified fee-piece access/service/consultation history, the native Parrilla payment/source chain and SLJ's response; the reasoning and source map are preserved.
+The thread remains **DELETION-SAFE WITH OPEN EVIDENCE**. The responsibility/data-room revision is live; the criminal-proceeds/fee-reconciliation revision is source-preserved and awaits its PR/deployment fields. Remaining substantive gaps are certified fee-piece access/service/consultation history, the matching Parrilla bank debit and invoice reconciliation, Cajasiete mortgage/Registry proof and SLJ's response.

@@ -89,12 +89,33 @@
       "en_markers": ["Two connected tracks", "€400,000", "false peace"]
     }
   },
+  "criminal_proceeds_fee_reconciliation_revision": {
+    "control_date": "2026-08-24",
+    "state": "LOCAL_VALIDATED_AWAITING_PR",
+    "purpose": "Create a dedicated bilingual former-counsel page, publish the fee mismatch and ACTÚA/operational-value analysis, and state Gil's criminal-sale/proceeds and Cajasiete positions with explicit adjudication and proof boundaries.",
+    "evidential_boundary": "The original proforma, acknowledged receipts, rejected fee rebase, AC payment, AC receipt/account/self-payment report, nonconvalidation and ACTÚA/GESVALT methodology conflict are documented. The exact Parrilla debit, predicate crime, recipient knowledge and alleged Cajasiete EUR 1m financing remain unproved or attributed as specified.",
+    "branch": "codex/counsel-criminal-proceeds-actua-20260824",
+    "local_validation": [
+      "JSON_PARSE_PASS",
+      "XML_PARSE_PASS",
+      "PUBLICATION_INTEGRITY_PASS",
+      "AUDIENCE_EXPERIENCE_PASS",
+      "MISSION_CRITICAL_REPOSITORY_PASS",
+      "INSOLVENCY_PERIMETER_LANGUAGE_PASS",
+      "LOCAL_LINK_RESOLUTION_PASS",
+      "DIFF_CHECK_PASS"
+    ]
+  },
   "expected_routes": {
     "es": [
-      "es/actores-partes-abogados-representantes/index.html"
+      "es/actores-partes-abogados-representantes/index.html",
+      "es/continuidad-defensa-letrados/index.html",
+      "es/actua-2018-prueba-espacial/index.html"
     ],
     "en": [
-      "en/actors-parties-lawyers-representatives/index.html"
+      "en/actors-parties-lawyers-representatives/index.html",
+      "en/counsel-defence-continuity/index.html",
+      "en/actua-2018-spatial-test/index.html"
     ]
   },
   "expected_source_files": [
@@ -166,7 +187,12 @@
     "actual AC/CAM fee-piece access not inferred from LexNET copy-transfer to Aweswell procurator",
     "EUR 400,000 sale price controlled; EUR 1,000 excluded",
     "apartment suspension, AC outside-suspension position, LPB unitary-plan objection and later nonconvalidation kept distinct",
-    "false peace and perverse incentive attributed; bribery and common fund source not asserted"
+    "false peace and perverse incentive attributed; bribery and common fund source not asserted",
+    "criminal sale and illicit proceeds are attributed to Gil and not stated as adjudicated",
+    "Parrilla fee mismatch displayed with original fee, acknowledged receipts, rejected rebase and later AC payment",
+    "recipient knowledge not inferred from receipt",
+    "Cajasiete EUR 1m financing remains attributed and open pending deed and Registry certification",
+    "ACTUA methodology defects distinguished from unproved knowledge and criminal purpose"
   ],
   "institutional_call": [
     "Fiscalía",
@@ -201,7 +227,9 @@
   "merge_sha": "8261cc54bde703c9da69204338adcb631537508a",
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/",
-    "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/"
+    "https://sbu001monterecco.github.io/por-derecho/en/actors-parties-lawyers-representatives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/continuidad-defensa-letrados/",
+    "https://sbu001monterecco.github.io/por-derecho/en/counsel-defence-continuity/"
   ],
   "live_markers": {
     "https://sbu001monterecco.github.io/por-derecho/es/actores-partes-abogados-representantes/": [
