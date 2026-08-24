@@ -66,12 +66,14 @@ The current scan materially moves the starting point backwards. Garrigues was al
 
 Verified activity includes:
 
+- a dated engagement letter of 24 January 2012 defining Monterecco Sun Park Limited and LPB jointly as the client, with ordinary billing to LPB and separate guarantee provisions;
+- direct Garrigues correspondence by 9 February 2012;
 - JO 1241/2011 (LPB v Comunidad de Propietarios) by 28 March 2012;
 - LPB Article 5 bis / pre-insolvency work in April 2012;
 - Bankia enforcement and scheduled-auction strategy in May 2012;
 - preparation for LPB insolvency and financing/security work through early June 2012.
 
-Core names located include Miguel Méndez Itarte, José María Martínez de Artola, Víctor de la Torre and Zulay Carmen Rodríguez. Further team members appear in the correspondence and remain to be individually scoped.
+Core names located include Antonio Fernández Rodríguez, Víctor de la Torre García, Manuel Sánchez Álvarez, José María Martínez de Artola, Miguel Méndez Itarte, Cristina Bosa Santana and Zulay Carmen Rodríguez. Further team members appear in the correspondence and remain to be individually scoped.
 
 **Important gap:** no 2011 engagement evidence has yet been located in the current scan. The case number JO 1241/2011 does not itself prove the date Garrigues was first retained.
 
@@ -81,8 +83,8 @@ Gil Marer expressly authorises public identification of **Garrigues** and asks t
 
 This is material first-person evidence, but the chronology remains controlled:
 
-- the 1-Feb CEXP–Monterecco notice and 6-Feb LPB–Monterecco contract predate the first presently verified Garrigues activity on 28 March;
-- no current source proves that Garrigues originated or approved those instruments before signature;
+- the 1-Feb CEXP–Monterecco notice and 6-Feb LPB–Monterecco contract postdate the 24-Jan engagement letter; this closes the former date-only exclusion but does not establish which draft or issue Garrigues saw before signature;
+- no current source proves that Garrigues originated, drafted or approved those instruments before signature;
 - May-2012 forwarding of the 27-Apr-2009 Campanario/Molina material proves access to part of the inherited non-adherence dispute by May, not before February;
 - the 11-May-2012 message `1373c2030b7a560e` in thread `1372de1b77e22b82` is powerful contemporaneous evidence that Garrigues then distinguished CEXP from Monterecco and treated the relevant copies as CEXP maintenance copies, but it does not itself prove earlier contract-structure advice; and
 - `Informe Garrigues - LUCHY Nuevo Contrato de Gestión Hotelera 11 Abril 2013.docx` is a priority native retrieval target whose contents must not be inferred from its title.

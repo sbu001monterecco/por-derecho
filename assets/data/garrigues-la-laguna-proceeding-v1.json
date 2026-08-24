@@ -16,8 +16,43 @@
     "judgment": "ORIGINAL_ATTACHMENT_LOCATED_HASHED_AND_PUBLIC_TRANSCRIPTION_CREATED",
     "claim": "ORIGINAL_NOT_LOCATED_RECONSTRUCTION_FROM_JUDGMENT_ONLY",
     "defence": "ORIGINAL_NOT_LOCATED_RECONSTRUCTION_FROM_JUDGMENT_ONLY",
-    "communications": "FINITE_LOCATED_CORPUS_SUMMARISED_PRIVATE_BODIES_WITHHELD",
+    "communications": "BROAD_RETRIEVAL_CORPUS_SUMMARISED_PRIVATE_BODIES_WITHHELD_DOCUMENT_LEVEL_CLASSIFICATION_OPEN",
+    "wider_matter_court_corpus": "PARTIAL_REPOSITORY_AND_PUBLIC_COVERAGE_MATERIAL_GAPS_REMAIN",
     "appeal_finality": "NOT_LOCATED"
+  },
+  "engagement_2012": {
+    "date": "2012-01-24",
+    "client_definition": ["Monterecco Sun Park Limited", "Luchy Playa Blanca, S.L."],
+    "billing_entity": "Luchy Playa Blanca, S.L.",
+    "verified_scope": [
+      "court-proceeding identification and review",
+      "LPB, Community and CEXP issues",
+      "Bankia restructuring and enforcement",
+      "Article 5 bis and insolvency preparation",
+      "financial instruments and possible private funding/security",
+      "corporate, notarial and tax support"
+    ],
+    "identity_limit": "Monterecco Sun Park Limited later became Aweswell Limited. Historical entries are not relabelled as Aweswell or OSWELL 426 payments without a separate source bridge."
+  },
+  "retrieval_audit": {
+    "juan_tomas_union": {
+      "unique_messages": 2090,
+      "unique_threads": 822,
+      "unique_attachments_by_filename_and_size": 2192,
+      "legal_or_court_candidates_before_document_review": 1183
+    },
+    "garrigues_union": {
+      "unique_messages": 1037,
+      "unique_threads": 639,
+      "attachment_occurrences": 3350
+    },
+    "direct_garrigues_headers": {
+      "messages": 178,
+      "threads": 96,
+      "messages_with_attachments": 50,
+      "date_span": "2012-02-09/2019-12-02"
+    },
+    "limit": "Retrieval counts include duplicates, forwards, drafts, wrappers, annexes and false positives; they are not unique authenticated court-document counts."
   },
   "judgment_source": {
     "original_filename": "Sentencia 344-2013.pdf",
@@ -76,6 +111,7 @@
       "track": "HAVAVIDA_TO_GARRIGUES",
       "amount_eur": 9450.00,
       "date": "2012-05-17",
+      "ledger_posting_date": "2012-05-23",
       "payor": "HAVAVIDA T&T, S.L.",
       "recipient": "Garrigues",
       "purpose": "Funding described contemporaneously for the separate challenge-of-resolutions/interim-measures litigation",
@@ -100,6 +136,72 @@
       "limit": "Costs taxation, collection record and bank proof not located"
     }
   ],
+  "june_2012_demand_package": {
+    "gross_total_eur": 64318.20,
+    "court_claim_eur": 63441.67,
+    "difference_eur": 876.53,
+    "bridge": "Difference exactly equals IGIC shown on invoice 10014806; the original claim and annexes remain necessary to establish the legal and tax treatment.",
+    "invoices": [
+      {"invoice": "10014806", "amount_eur": 18407.16},
+      {"invoice": "10015483", "amount_eur": 9450.00},
+      {"invoice": "10015505", "amount_eur": 13183.56},
+      {"invoice": "10015504", "amount_eur": 8300.25},
+      {"invoice": "10015503", "amount_eur": 2835.00},
+      {"invoice": "10015502", "amount_eur": 12142.23}
+    ]
+  },
+  "lpb_vendor_ledger_2012": {
+    "ledger_date": "2013-07-10",
+    "invoice_total_eur": 85353.06,
+    "credits_total_eur": 66945.90,
+    "closing_balance_eur": 18407.16,
+    "invoice_entries": [
+      {"ledger_date_text": "03/01/2012", "invoice": "10014524", "amount_eur": 48045.90},
+      {"ledger_date_text": "04/03/2012", "invoice": "10014806", "amount_eur": 18407.16},
+      {"ledger_date_text": "29/04/2012", "invoice": "10014777", "amount_eur": 9450.00},
+      {"ledger_date_text": "13/06/2012", "invoice": "10015483", "amount_eur": 9450.00}
+    ],
+    "credit_entries": [
+      {"date": "2012-03-13", "amount_eur": 24022.95, "public_descriptor": "BBVA / Monterecco"},
+      {"date": "2012-03-20", "amount_eur": 24022.95, "public_descriptor": "BBVA / Garrigues"},
+      {"date": "2012-03-31", "amount_eur": 9450.00, "public_descriptor": "cash / Monterecco"},
+      {"date": "2012-05-23", "amount_eur": 9450.00, "public_descriptor": "BBVA / HAVAVIDA"}
+    ],
+    "limit": "Client-side vendor ledger, not independent bank proof; no account number is public."
+  },
+  "parrilla_fee_reconciliation": {
+    "original_proforma": {
+      "date": "2012-05-29",
+      "base_eur": 40000.00,
+      "tax": "plus IGIC",
+      "terms": "EUR 20,000 plus IGIC before filing, then five quarterly EUR 4,000 plus IGIC instalments"
+    },
+    "internal_aweswell_accounting": {
+      "entries_eur": [20000.00, 10000.00],
+      "description": "Retrospective internal accounting entries concerning Parrilla within the business perimeter funding LPB work",
+      "limit": "Internal accounting, not independent bank proof or final invoice; the EUR 20,000 entry appears base-only beside Parrilla's stated EUR 21,000 gross receipt and requires IGIC reconciliation."
+    },
+    "acknowledged_receipts_2020_account": [
+      {"date": "2012-05-31", "amount_eur": 21000.00, "description": "third-party/client-perimeter payment stated by Parrilla"},
+      {"date": "exact date not located", "amount_eur": 1250.00, "description": "La Laguna proceeding amount stated by Parrilla"},
+      {"date": "2018-05-29", "amount_eur": 10000.00, "description": "cheque from Gil stated by Parrilla"}
+    ],
+    "acknowledged_total_eur": 32250.00,
+    "rejected_final_proposal_base_eur": 50000.00,
+    "stated_balance_base_eur": 17750.00,
+    "administrator_reported_payment": {"base_eur": 25000.00, "igic_rate": 0.07, "gross_eur": 26750.00},
+    "base_difference_against_stated_balance_eur": 9000.00,
+    "limit": "Final invoice, receipts, exact payer allocation, authority, matching bank debit and complete estate ledger are not located; no final debt, excess or restitution is asserted."
+  },
+  "wider_matter_coverage": [
+    {"reference": "PO 344/2013", "status": "JUDGMENT_PUBLIC_REDACTED_CLAIM_DEFENCE_AND_DOCKET_OPEN"},
+    {"reference": "PO 1241/2011", "status": "IDENTITY_ENGAGEMENT_AND_INVOICE_CAPTURED_COMPLETE_COURT_FILE_NOT_PUBLIC"},
+    {"reference": "Medidas 1355/2011", "status": "IDENTITY_CAPTURED_COMPLETE_COURT_FILE_NOT_PUBLIC"},
+    {"reference": "Concurso 36/2012", "status": "PARTIAL_PUBLIC_DIGESTS_AND_SELECTED_REDACTED_RECORDS_NO_CERTIFIED_COMPLETE_INDEX"},
+    {"reference": "PO 562/2014", "status": "MASTER_REGISTER_CAPTURED_COMPLETE_REDACTED_FILE_NOT_PUBLIC"},
+    {"reference": "PO 213/2015", "status": "MASTER_REGISTER_CAPTURED_COMPLETE_REDACTED_FILE_NOT_PUBLIC"},
+    {"reference": "Rollo 1094/2018", "status": "PARTIAL_REPOSITORY_COVERAGE_COMPLETE_APPEAL_ROLL_NOT_PUBLIC"}
+  ],
   "insolvency_effect": {
     "excluded_eur": 51156.67,
     "retained_eur": 12285.00,
@@ -114,6 +216,8 @@
     "Costs assessment, approval, collection and application records",
     "Appeal, service and finality records",
     "Contemporaneous proof of both EUR 1,250 Parrilla fee legs",
-    "Certified court-file index and certified copies"
+    "Certified court-file index and certified copies",
+    "Complete Parrilla-era wider-matter proceeding inventory and redacted publication set",
+    "Parrilla final invoices, receipts, tax treatment, exact payer allocation, authority and bank/estate ledger"
   ]
 }

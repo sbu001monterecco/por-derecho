@@ -4,6 +4,18 @@
 - **Status:** public-safe evidence control; native/private source bodies remain outside GitHub
 **Canonical public routes:** `/es/garrigues-la-laguna/` and `/en/garrigues-la-laguna/`
 
+## 24 August 2026 wider-matter completeness audit
+
+The Garrigues page now acts as the public gateway for the 2012 Garrigues mandate, the La Laguna fee litigation, the handover into Parrilla's LPB representation and the related payment controls. It does **not** merge legally distinct proceedings.
+
+Finite retrieval results:
+
+- Juan Tomás name/direct-address union: 2,090 unique messages, 822 threads, 2,192 attachments unique by filename and size, and 1,183 legal/court candidates before document-level deduplication and authentication;
+- Garrigues query union: 1,037 unique messages, 639 threads and 3,350 attachment occurrences;
+- actual `@garrigues.com` header set: 178 messages, 96 threads, 50 messages with attachments, spanning 9 February 2012 to 2 December 2019.
+
+These are retrieval counts, not counts of unique court records. They include repeats, forwards, drafts, LexNET wrappers, annexes and false-positive legal candidates. The only safe completeness conclusion is **broad located corpus / partial repository and public coverage / material court-file gaps remain**. The controlled public matrix is `evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md`.
+
 ## Case identity and result
 
 - Court: Juzgado de Primera Instancia n.º 5 de San Cristóbal de La Laguna.
@@ -32,6 +44,10 @@ This proceeding concerns Garrigues's fee/guarantee claim. It is not the separate
 | GLL-COM-003 | 19-20 Feb 2014 | Judgment transmission and proposed follow-up meeting. | Summary only; original judgment is separately controlled as GLL-001. |
 | GLL-COM-004 | 28-30 May 2020 | Fee reconciliation referring to the La Laguna defence. | Public-safe proposition only: EUR 2,500 total fee, EUR 1,250 initially and EUR 1,250 later. |
 | GLL-COM-005 | 11-12 Jun 2020 | Parrilla reconciliation stating one EUR 1,250 La Laguna amount was applied to the LPB insolvency fee account. | Public-safe proposition only; no private email body published. |
+| GLL-ACC-001 | 10 Jul 2013 | LPB vendor ledger for J&A Garrigues covering 2012. | Aggregate invoice/payment arithmetic and source-labelled descriptors only. Native ledger and bank/account details withheld. |
+| GLL-FEE-001 | 29 May 2012 | Parrilla proforma for LPB's insolvency application and conduct: EUR 40,000 plus IGIC. | Public-safe terms only. Native proforma, tax/personal identifiers and bank account withheld. |
+| GLL-FEE-002 | 11 Jun 2020 | Parrilla written reconciliation: EUR 32,250 received, rejected EUR 50,000 plus IGIC proposal, EUR 17,750 plus IGIC stated balance. | Summary only; private correspondence withheld. |
+| GLL-FEE-003 | later report recording Jul 2020 payment | Insolvency Administrator report records EUR 25,000 plus 7% IGIC, EUR 26,750 total, paid for Parrilla professional fees. | Public-safe accounting proposition only; invoice, authority, matching debit and complete estate ledger remain open. |
 
 ## Claim and defence reconstruction rule
 
@@ -54,9 +70,51 @@ Do not use `full claim`, `full defence`, `digitised original`, `complete annexes
 
 The invoice amounts total EUR 63,441.67. Later excluded invoices total EUR 51,156.67; retained invoices total EUR 12,285.00. The later insolvency treatment does not rewrite the 2014 judgment.
 
+### June 2012 demand package versus the later court claim
+
+The 20 June 2012 six-invoice demand package totals **EUR 64,318.20**:
+
+| Invoice | Demand-package amount |
+|---|---:|
+| 10014806 | EUR 18,407.16 |
+| 10015483 | EUR 9,450.00 |
+| 10015505 | EUR 13,183.56 |
+| 10015504 | EUR 8,300.25 |
+| 10015503 | EUR 2,835.00 |
+| 10015502 | EUR 12,142.23 |
+
+The later judgment claim was EUR 63,441.67. The difference is **EUR 876.53**, exactly the IGIC shown on invoice 10014806. The judgment's six-item list instead contains reference `58000002113` for EUR 17,530.63. The bridge is arithmetically exact, but the original claim and annexes are still required before characterising the legal substitution or tax treatment definitively.
+
+### LPB vendor-ledger control
+
+The 10 July 2013 LPB vendor ledger records four 2012 Garrigues invoices totalling **EUR 85,353.06** and four credits/payments totalling **EUR 66,945.90**, leaving **EUR 18,407.16**:
+
+| Posting | Ledger amount | Public-safe descriptor |
+|---|---:|---|
+| Invoice 10014524 | EUR 48,045.90 | Garrigues invoice |
+| Invoice 10014806 | EUR 18,407.16 | Garrigues invoice |
+| Invoice 10014777 | EUR 9,450.00 | Garrigues invoice |
+| Invoice 10015483 | EUR 9,450.00 | Garrigues invoice |
+| 13 Mar 2012 credit | EUR 24,022.95 | descriptor identifies BBVA / Monterecco |
+| 20 Mar 2012 credit | EUR 24,022.95 | descriptor identifies BBVA / Garrigues |
+| 31 Mar 2012 credit | EUR 9,450.00 | descriptor identifies cash / Monterecco |
+| 23 May 2012 credit | EUR 9,450.00 | descriptor identifies BBVA / HAVAVIDA |
+
+The ledger is client-side accounting evidence, not an independent bank statement. The email says the HAVAVIDA transfer occurred on 17 May; the ledger posts it on 23 May. Preserve both as event date and accounting posting date. The source names Monterecco and HAVAVIDA; it must not be retrospectively relabelled as an Aweswell or OSWELL 426 payment without a separate entity-and-bank bridge.
+
+## Parrilla fee and payment reconciliation
+
+1. The 29 May 2012 proforma budgets EUR 40,000 plus IGIC for LPB's insolvency application and conduct: EUR 20,000 plus IGIC before filing, followed by five quarterly EUR 4,000 plus IGIC instalments.
+2. A retrospective Aweswell internal accounting schedule records EUR 20,000 and EUR 10,000 paid concerning Parrilla within the business perimeter funding LPB work. It is internal accounting, not bank proof. The EUR 20,000 entry appears base-only beside Parrilla's stated EUR 21,000 gross receipt; exact IGIC treatment remains open.
+3. Parrilla's 11 June 2020 account says EUR 21,000 was received on 31 May 2012 from a third party in the Gil/Patricia company perimeter, EUR 1,250 was received in the La Laguna proceeding and EUR 10,000 was received by cheque on 29 May 2018: EUR 32,250 total.
+4. The same writing proposed a final fee of EUR 50,000 plus IGIC and stated EUR 17,750 plus IGIC remained. Gil/Patricia rejected the rebase/arrangement on 12 June 2020.
+5. A later Insolvency Administrator report records EUR 25,000 plus 7% IGIC, EUR 26,750 total, paid for Parrilla professional fees. That base payment is EUR 9,000 above Parrilla's own stated base balance even under the rejected proposal.
+
+No final tax invoice, receipt, exact payer allocation, payment authority, matching bank debit or complete estate ledger has been located for this reconciliation. Do not publish a final debt, overpayment or restitution figure until those controls are produced. Keep the LPB insolvency fee, the PO 344/2013 defence fee and the HAVAVIDA-to-Garrigues payment as separate tracks.
+
 ## Payment separation control
 
-1. **HAVAVIDA -> Garrigues:** EUR 9,450 transferred on 17 May 2012 for the separately described challenge-of-resolutions/interim-measures litigation. The contemporaneous communication described HAVAVIDA funding and an intended secured-loan/return arrangement. It was not a payment to Juan Tomás Parrilla.
+1. **HAVAVIDA -> Garrigues:** EUR 9,450 described in contemporaneous correspondence as transferred on 17 May 2012, and posted in the LPB vendor ledger on 23 May 2012, for the separately described challenge-of-resolutions/interim-measures litigation. The communication described HAVAVIDA funding and an intended secured-loan/return arrangement. It was not a payment to Juan Tomás Parrilla.
 2. **Gil/Patricia perimeter -> Juan Tomás Parrilla:** EUR 1,250 initially for the defence of PO 344/2013.
 3. **Costs/application -> Juan Tomás Parrilla:** a further EUR 1,250, described in the 2020 reconciliation as the second part of the EUR 2,500 case fee and as later applied against LPB insolvency fees.
 
@@ -87,6 +145,8 @@ These summaries preserve the evidential propositions without publishing full pri
 7. Bank proof for both EUR 1,250 Parrilla fee legs.
 8. Certified complete 23 November 2015 res judicata order and 2016 definitive creditor texts.
 9. Exact reconciliation between the judgment's internally variant proceeding references and the original separate engagement file.
+10. Final Parrilla tax invoice(s), receipts, IGIC returns, exact payer allocation, authority and bank/estate entries for the 2012, 2018 and 2020 amounts.
+11. Certified index and complete file reconciliation for the Parrilla-era wider-matter proceedings listed in the public coverage matrix.
 
 Absence from the reviewed Gmail/Drive corpus does not prove that any item does not exist.
 
