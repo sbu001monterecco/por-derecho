@@ -164,7 +164,7 @@ def main() -> int:
         errors.append("assets/site.js: criminal-misuse loader not registered")
     if "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824" not in css:
         errors.append("assets/styles.css: scoped thesis styles missing")
-    for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const anchor = controlling || sourceFunds || hero", "observer.observe(main, { childList: true })", "calificacionMisusePin", "window.setInterval(pin, 1000)", "22000, 30000"]:
+    for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')", "const anchor = detailed || controlling || sourceFunds || hero", "observer.observe(main, { childList: true })", "calificacionMisusePin", "window.setInterval(pin, 1000)", "22000, 30000"]:
         if marker not in loader:
             errors.append(f"scoped loader missing first-read stability control {marker!r}")
     for marker in ["es-institutional", "en-appeal", "es-acosta", "es-guided-calificacion", "sourceFundsCount", "appealFirewall", "positionCount", "closureTests", "20260824d"]:

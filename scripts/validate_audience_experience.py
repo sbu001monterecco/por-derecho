@@ -216,6 +216,7 @@ def validate_runtime_contract(errors: list[str]) -> None:
     loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
     prosecution = (ROOT / "assets/prosecution-public-entry-20260821.js").read_text(encoding="utf-8")
     cam_module = (ROOT / "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js").read_text(encoding="utf-8")
+    calificacion = (ROOT / "assets/calificacion-criminal-misuse-thesis-20260824.js").read_text(encoding="utf-8")
     five_actor_module = (ROOT / "assets/homepage-actor-family-pwc-note-20260819.js").read_text(encoding="utf-8")
     five_actor_css = (ROOT / "assets/five-actor-accountability-20260824.css").read_text(encoding="utf-8")
     preservation = (ROOT / "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md").read_text(encoding="utf-8")
@@ -251,6 +252,12 @@ def validate_runtime_contract(errors: list[str]) -> None:
             fail(errors, f"audience runtime missing contract marker: {marker}")
     if "audience-experience-order-20260823.js?v=20260824b" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
+    for marker in (
+        "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')",
+        "const anchor = detailed || controlling || sourceFunds || hero",
+    ):
+        if marker not in calificacion:
+            fail(errors, f"Calificacion first-read pin can race the locked five-actor visual: {marker}")
     for marker, source, label in (
         ("homepage-actor-family-pwc-note-20260819.js?v=20260824c", ricpe_loader, "five-actor component"),
         ("ricpe-identity-correction-20260815.js?v=20260824c", site_base, "RICPE identity loader"),
