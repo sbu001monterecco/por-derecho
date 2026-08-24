@@ -15,10 +15,15 @@ REQUIRED_FILES = [
     "reports/UNITARY_EVIDENCE_DIGEST_24AUG2026.md",
     "reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md",
     "reports/UNITARY_DIGEST_IMPLEMENTATION_INDEX_24AUG2026.md",
+    "reports/UNITARY_EXECUTION_ADDENDUM_24AUG2026.md",
+    "reports/HIGH_PRIORITY_SMALL_AMENDMENTS_24AUG2026.md",
+    "reports/AC_7JUNE2018_KNOWLEDGE_AFFIRMATIVE_ACTION_ENABLEMENT_24AUG2026.md",
     "intelligence/AC_PROTECTION_ACTION_MATRIX_24AUG2026.csv",
+    "intelligence/AC_7JUNE2018_ELEMENT_MATRIX_24AUG2026.csv",
     "intelligence/CUATRECASAS_ACTION_FOLLOW_THROUGH_MATRIX_24AUG2026.csv",
     "intelligence/JUAN_TOMAS_PARRILLA_MANDATE_ACTION_MATRIX_24AUG2026.csv",
     "intelligence/SUN_PARK_2018_TRANSACTION_DISAGGREGATION_24AUG2026.csv",
+    "intelligence/UNITARY_EVIDENCE_PRIORITY_LEDGER_24AUG2026.csv",
     "ops/SUN_PARK_DO_OVER_BACKLOG_24AUG2026.md",
     "ops/SUN_PARK_DO_OVER_STATUS_24AUG2026.json",
     "es/2018-proteccion-leal-masa/index.html",
@@ -27,6 +32,7 @@ REQUIRED_FILES = [
 
 EXPECTED_MATRIX_COUNTS = {
     "intelligence/AC_PROTECTION_ACTION_MATRIX_24AUG2026.csv": 16,
+    "intelligence/AC_7JUNE2018_ELEMENT_MATRIX_24AUG2026.csv": 13,
     "intelligence/CUATRECASAS_ACTION_FOLLOW_THROUGH_MATRIX_24AUG2026.csv": 12,
     "intelligence/JUAN_TOMAS_PARRILLA_MANDATE_ACTION_MATRIX_24AUG2026.csv": 10,
     "intelligence/SUN_PARK_2018_TRANSACTION_DISAGGREGATION_24AUG2026.csv": 14,
@@ -106,12 +112,7 @@ def audit() -> dict[str, Any]:
         except (OSError, csv.Error) as exc:
             add_check(checks, f"matrix readable: {relative_path}", False, str(exc))
             continue
-        add_check(
-            checks,
-            f"matrix row count: {relative_path}",
-            actual_rows >= expected_rows,
-            f"expected at least {expected_rows}; actual={actual_rows}",
-        )
+        add_check(checks, f"matrix row count: {relative_path}", actual_rows >= expected_rows, f"expected at least {expected_rows}; actual={actual_rows}")
 
     report_path = "reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md"
     if (ROOT / report_path).is_file():
@@ -124,6 +125,18 @@ def audit() -> dict[str, Any]:
         ]
         for marker in report_markers:
             add_check(checks, f"report boundary: {marker[:55]}", marker in report, "present" if marker in report else "missing")
+
+    priority_report = ROOT / "reports/AC_7JUNE2018_KNOWLEDGE_AFFIRMATIVE_ACTION_ENABLEMENT_24AUG2026.md"
+    if priority_report.is_file():
+        priority_text = priority_report.read_text(encoding="utf-8")
+        priority_markers = [
+            "knowledge → authority → affirmative act/validation → effect → later follow-through",
+            "does **not yet prove** that the AC instructed the physical acts of 7 June in advance",
+            "Pre-event operational enablement: not yet established",
+            "Intent to enable the takeover: presently an inference, not a fact",
+        ]
+        for marker in priority_markers:
+            add_check(checks, f"7 June evidential boundary: {marker[:55]}", marker in priority_text, "present" if marker in priority_text else "missing")
 
     transaction_path = "intelligence/SUN_PARK_2018_TRANSACTION_DISAGGREGATION_24AUG2026.csv"
     if (ROOT / transaction_path).is_file():
@@ -140,16 +153,16 @@ def audit() -> dict[str, Any]:
 
     public_markers = {
         "es/2018-proteccion-leal-masa/index.html": [
-            "¿Dónde estuvo la protección leal de la masa?",
+            "7 junio 2018: ¿omisión o habilitación afirmativa?",
+            "No prueba todavía que ordenara antes del 7 de junio los actos físicos",
             "Los actores privados no quedan absueltos",
             "Pregunta subsidiaria: ¿dónde estuvieron los abogados?",
-            "La ausencia actual de un documento en el corpus no demuestra que la actuación no existiera",
         ],
         "en/2018-loyal-protection-estate/index.html": [
-            "Where was the loyal protection of the estate?",
+            "7 June 2018: omission—or affirmative enablement?",
+            "It does not yet prove that he instructed the physical acts before 7 June",
             "The private actors are not absolved",
             "Subsidiary question: where were the lawyers?",
-            "does not, by itself, prove breach by the insolvency administrator",
         ],
     }
 
@@ -165,7 +178,7 @@ def audit() -> dict[str, Any]:
 
     passed = all(check["passed"] for check in checks)
     return {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "workstream": "sun-park-2018-protection-and-do-over",
         "passed": passed,
         "check_count": len(checks),
@@ -176,11 +189,7 @@ def audit() -> dict[str, Any]:
 
 def write_outputs(result: dict[str, Any], output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "result.json").write_text(
-        json.dumps(result, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
+    (output_dir / "result.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     summary_lines = [
         "# Sun Park 2018 protection/do-over continuity audit",
         "",
@@ -200,13 +209,8 @@ def write_outputs(result: dict[str, Any], output_dir: Path) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--output-dir",
-        default="artifacts/sun-park-2018-protection-do-over-audit",
-        help="Directory for result.json and summary.md",
-    )
+    parser.add_argument("--output-dir", default="artifacts/sun-park-2018-protection-do-over-audit", help="Directory for result.json and summary.md")
     args = parser.parse_args()
-
     result = audit()
     write_outputs(result, ROOT / args.output_dir)
     print(json.dumps(result, ensure_ascii=False, indent=2))
