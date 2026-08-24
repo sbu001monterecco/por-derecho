@@ -19,7 +19,7 @@ on:
     branches:
       - main
       - 'agent/labory-catrude-recovery-20260824'
-      - 'agent/labory-catrude-live-closeout-20260824'
+      - 'agent/labory-catrude-live-closeout-20260824*'
     paths:
       - 'evidence/sun-park/labory-catrude/**'
       - 'ops/LABORY_CATRUDE_RECOVERY_**'
@@ -54,7 +54,7 @@ jobs:
           persist-credentials: false
       - name: Run read-only evidence, deletion-safety and live-route audit
         env:
-          LIVE_MODE: ${{ github.event_name != 'pull_request' || github.head_ref == 'agent/labory-catrude-live-closeout-20260824' }}
+          LIVE_MODE: ${{ github.event_name != 'pull_request' || startsWith(github.head_ref, 'agent/labory-catrude-live-closeout-20260824') }}
         run: |
           args=(--output-dir artifacts/labory-catrude-deletion-audit)
           if [[ "$LIVE_MODE" == "true" ]]; then
