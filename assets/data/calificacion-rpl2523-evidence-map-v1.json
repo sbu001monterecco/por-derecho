@@ -56,7 +56,7 @@
     },
     {
       "stage": "FIRST_INSTANCE_OPPOSITION",
-      "party_interests": ["Aweswell, S.L."],
+      "party_interests": ["Aweswell Limited"],
       "instrument_count": 0,
       "instrument": "No Calificación opposition identified",
       "evidence_state": "NO_CALIFICACION_INSTRUMENT_IDENTIFIED",
@@ -92,7 +92,7 @@
     },
     {
       "stage": "APPEAL",
-      "party_interests": ["Aweswell, S.L."],
+      "party_interests": ["Aweswell Limited"],
       "instrument_count": 0,
       "instrument": "No appeal identified from Sentencia 163/2023",
       "evidence_state": "NO_CALIFICACION_INSTRUMENT_IDENTIFIED",
