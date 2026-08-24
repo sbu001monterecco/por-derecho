@@ -4,7 +4,29 @@
   "control_marker": "garrigues-la-laguna-20260824",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "DRAFT",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+  "validation": {
+    "status": "CI_GREEN",
+    "evidence": [
+      "PR #931 passed all 10 required checks before merge",
+      "validate_garrigues_la_laguna.py passed",
+      "validate_publication_integrity.py passed",
+      "validate_audience_experience.py passed",
+      "validate_mission_critical_repo.py passed",
+      "validate_repository_preservation.py passed",
+      "validate_insolvency_perimeter_language.py passed"
+    ]
+  },
+  "merge_sha": "a54b0d793e609ff31fdb50a2c55c745a81fd4797",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 32755849881,
+    "status": "success",
+    "head_sha": "a54b0d793e609ff31fdb50a2c55c745a81fd4797",
+    "completed_at": "2026-08-24T17:18:52Z",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32755849881"
+  },
   "date": "2026-08-24",
   "package": "garrigues-la-laguna-po-344-2013",
   "expected_routes": {
@@ -66,5 +88,31 @@
   "open_evidence_id": ["ME-086", "ME-087"],
   "correction_id": ["CR-088", "CR-089", "CR-090"],
   "proceeding_id": "TF-CIV-006",
-  "validator": "scripts/validate_garrigues_la_laguna.py"
+  "validator": "scripts/validate_garrigues_la_laguna.py",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/garrigues-la-laguna/",
+    "https://sbu001monterecco.github.io/por-derecho/en/garrigues-la-laguna/",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md"
+  ],
+  "live_verification_evidence": {
+    "substantive_pull_request": 931,
+    "merge_sha": "a54b0d793e609ff31fdb50a2c55c745a81fd4797",
+    "pages_run_id": 32755849881,
+    "pages_status": "success",
+    "pages_completed_at": "2026-08-24T17:18:52Z",
+    "exact_sha256": {
+      "es/garrigues-la-laguna/index.html": "c6131bb8b3d18e12ff48b60eacdcedd2ff82a8dce5805205a7816979a26b8158",
+      "en/garrigues-la-laguna/index.html": "7075598239b1876e209ac5a7ad7fade8f7c6ae921d7cb75c79776f2b1fd11211",
+      "evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md": "10cc53ed51f982ea4dcbc9adc2146ce9d10e6d6123ed5a380bc7bdb8252ad586"
+    },
+    "result": "3/3 HTTP 200 AND BYTE-FOR-BYTE MATCH"
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "path": "archive/THREAD_DELETION_AUDIT_2026-08-24_GARRIGUES_PARRILLA_COMPLETENESS.md",
+    "open_evidence_preserved": true,
+    "complete_court_file_claim_permitted": false,
+    "email_sent": false,
+    "gmail_draft_created": false
+  }
 }
