@@ -12,7 +12,7 @@ The located judgment, repository and Gmail record support **three first-instance
 
 | Stage | Party interests | Instrument | Evidence status |
 |---|---|---|---|
-| Opposition | LPB | Separate opposition dated 23-Apr-2019 | Sentencia 163/2023, AH 7; Gmail `16a4f71df3edd637` contains a 24-Apr-2019 LexNET receipt and first pleading page. Complete filed pleading/annex set still to recover. |
+| Opposition | LPB | Separate opposition dated 23-Apr-2019 | Complete opposition source set and nine annexes now located; Sentencia 163/2023, AH 7; Gmail `16a4f71df3edd637` contains a 24-Apr-2019 LexNET receipt and first pleading page. Certified reconciliation linking the complete located set to the exact filed bundle/index remains open. |
 | Opposition | Gil Marer | Separate 64-page opposition dated 6-Jun-2019 and digitally signed 10-Jun-2019 | Sentencia, AH 6; Gmail drafting chain `16b28ec4068c45a7` through `16b2ddebf4a0832d`; final signed PDF in Gmail `17086182258dd3f3`. The pleading identifies Joaquín Ruiz de Infante Abella as directing counsel and carries his digital signature. |
 | Opposition | PINK + Patricia | One six-page joint opposition dated 23-Mar-2021 and filed 24-Mar-2021 | Gmail `178692fdd1c427e5`: LexNET Id `202110397349419`, sent 24-Mar-2021 at 15:41:33; principal-document SHA-256 `fd87b9818a84506723ec9ba26a72afe467a59e806d34b8316478bb9b449f24fe`; Sentencia, AH 8. |
 | Opposition | Aweswell | No instrument identified in this section | Aweswell is not listed as an affected person in Sentencia 163/2023. Do not import filings from other Concurso lanes. |
@@ -68,7 +68,7 @@ Do not add Aweswell as a Calificación opponent or appellant. A public update mu
 
 ## Remaining retrieval targets
 
-1. Complete filed LPB opposition and annex set, including the 24-Apr-2019 LexNET entry.
+1. Certified reconciliation linking the complete located LPB opposition source set and nine annexes to the exact bundle filed under the 24-Apr-2019 LexNET entry and the court index.
 2. Actual filed LPB appeal, receipt, entry number, page count and grounds.
 3. Certified docket mapping the three instruments/four appellant interests into RPL 2523/2025.
 4. Certified notification/service records for Sentencia 163/2023 for each affected party.

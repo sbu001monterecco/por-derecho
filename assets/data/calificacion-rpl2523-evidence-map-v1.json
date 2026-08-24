@@ -21,6 +21,7 @@
     "FILED_COPY_AND_RECEIPT_LOCATED": "The filed copy and a corresponding transmission or filing receipt are located.",
     "REPORTED_FILED_SUPPORT_LOCATED": "Contemporaneous communications or later procedural steps support filing, but the principal filed instrument or receipt remains unlocated.",
     "JUDICIAL_DECISION_IDENTIFIES_INSTRUMENT": "A judicial decision records the instrument or party position; the complete filed instrument is not necessarily located.",
+    "COMPLETE_SOURCE_SET_LOCATED": "A complete source set and annexes are located; certification that the set is the exact filed bundle and its docket mapping remain separate questions.",
     "NO_CALIFICACION_INSTRUMENT_IDENTIFIED": "No instrument has been identified in this proceeding; instruments from other proceedings are not imported.",
     "PUBLIC_POST_RECORD_ANALYSIS": "Related public analysis only; not asserted to be in the RPL record.",
     "NOT_LOCATED": "Not present in the controlled corpus; this is not proof of nonexistence."
@@ -31,9 +32,9 @@
       "party_interests": ["Luchy Playa Blanca, S.L.U."],
       "instrument_count": 1,
       "instrument": "Separate opposition dated 23 April 2019",
-      "evidence_state": "JUDICIAL_DECISION_IDENTIFIES_INSTRUMENT",
-      "located_support": "Sentencia 163/2023 AH 7; 24 April 2019 LexNET receipt and first pleading page located in the controlled communications corpus.",
-      "open_gap": "Complete filed pleading and annex set."
+      "evidence_state": "COMPLETE_SOURCE_SET_LOCATED",
+      "located_support": "Complete opposition source set and nine annexes located; Sentencia 163/2023 AH 7; 24 April 2019 LexNET receipt and first pleading page also controlled.",
+      "open_gap": "Certified reconciliation linking the located complete set to the exact filed bundle and court index."
     },
     {
       "stage": "FIRST_INSTANCE_OPPOSITION",

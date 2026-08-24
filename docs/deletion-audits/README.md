@@ -8,3 +8,4 @@ This directory contains durable thread-deletion safety audits. Each audit record
 - [21 August 2026 — CIB technical-partner reply and website discovery-navigation thread](2026-08-21-cib-website-publication-thread.md)
 - [22 August 2026 — PwC / AC refusal image links, reporting-person footer and no-send control](2026-08-22-pwc-ac-refusal-alertador-sitewide-thread.md)
 - [23 August 2026 — CAM creditor-control, direct-instruction, AC-approval and judicial-omission criminal lead](2026-08-23-cam-creditor-control-criminal-lead-thread.md)
+- [23 August 2026 — Calificación, earlier reporting and possible-retaliation unitary interface](2026-08-23-calificacion-alertador-retaliation-unitary.md)

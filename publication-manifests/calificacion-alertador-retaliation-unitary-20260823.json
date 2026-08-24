@@ -1,0 +1,88 @@
+{
+  "publication_id": "CALIFICACION-ALERTADOR-RETALIATION-UNITARY-20260823",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-23",
+  "current_state": "DRAFT",
+  "controlling_pr": null,
+  "merge_sha": null,
+  "subject": "Unitary Calificacion, earlier-reporting, possible-retaliation and connected-proceedings interface",
+  "expected_routes": {
+    "es": [
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/calificacion-rpl-2523-mapa-prueba/index.html",
+      "es/eleconomista-javier-romera-enero2025/index.html",
+      "es/concurso-36-2012-autos-resoluciones/index.html",
+      "es/ric-private-equity-sun-park/index.html"
+    ],
+    "en": [
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/calificacion-rpl-2523-evidence-map/index.html",
+      "en/eleconomista-javier-romera-january2025/index.html",
+      "en/insolvency-36-2012-orders-decisions/index.html",
+      "en/ric-private-equity-sun-park/index.html"
+    ]
+  },
+  "controlling_files": [
+    "archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+    "archive/CALIFICACION_CRIMINAL_FIRST_ELECONOMISTA_PLEADING_COVERAGE_REVERSE_ENGINEERING_24AUG2026.md",
+    "archive/CALIFICACION_OPPOSITIONS_APPEALS_FIVE_PARTY_SOURCE_CONTROL_23AUG2026.md",
+    "archive/prompts/CALIFICACION_ALERTADOR_RETALIATION_UNITARY_EXECUTION_PROMPT_23AUG2026.md",
+    "AUTHOR_REPORTING_PERSON_ALERTADOR_FOOTER_CONTROL_22AUG2026.md",
+    "CHATGPT_START_HERE.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md"
+  ],
+  "revision_20260824": {
+    "status": "BILINGUAL_P0_IMPLEMENTED_AND_VALIDATED_PUBLICATION_APPROVED_DEPLOYMENT_PENDING",
+    "analysis_order": "criminal/investigative first; civil limitation, preservation, restitution and appeal remain parallel",
+    "media_control": "Sentencia 163/2023, not Auto; LPB, not whole Sun Park; adverse and appealed; not directly dispositive of most elEconomista pitch propositions",
+    "madrid_route": "DP 913/2025 kept separate; later AP disposition unlocated",
+    "coverage": {
+      "official_docket_percent": null,
+      "specialist_transcripts": "50/50",
+      "specialist_party_filing_transcripts": "25/25",
+      "calificacion_descriptive_rows": "7/7",
+      "calificacion_complete_source_copies": "5/6; LPB opposition filed-bundle/index certification remains open",
+      "calificacion_public_full_text": "0/6"
+    },
+    "live_link_gap": "closed locally across Calificacion, elEconomista/Madrid, RPL 2523/2025 and complete-record readers; live readback pending",
+    "live_availability": "85/85 HTTP 200",
+    "live_exact_source_parity": "83/85; ES/EN ric-private-equity-sun-park differ from rebased repository"
+  },
+  "visual_contract": {
+    "causal_chronology_nodes_per_language": 5,
+    "law_test_cards_per_language": 6,
+    "connected_route_cards_per_language": 8,
+    "party_instrument_rows_per_language": 7,
+    "boundary": "Visual sequence communicates order and evidential interfaces; it is not proof of knowledge, causation, retaliation, agreement or liability."
+  },
+  "procedural_boundaries": [
+    "RPL 2523/2025 remains distinct from DP 1956/2026, DP 1901/2026, daily reference 24, DI 169/2026/Appeal 286/2026, DI 248/2018 and WB-CAN-005.",
+    "DP 1956/2026 is provisionally dismissed and no filed challenge is established; a favourable later outcome may supply new evidence but does not automatically reopen it.",
+    "No separate Aweswell opposition to Calificacion or appeal from Judgment 163/2023 is established in the canonical source.",
+    "Possible retaliation is Gil Marer's allegation and legal theory, not an adjudicated finding.",
+    "Gil's intended criminal, civil, regulatory and disciplinary remedies and his criticism of Fiscalía Provincial de Las Palmas and its leadership are attributed positions; office alone does not establish personal knowledge, participation or capture.",
+    "The same hotel/materially overlapping asset perimeter is not an item- or euro-level finding of double or triple funding."
+  ],
+  "completion": {
+    "implementation_percent": 92,
+    "implementation_denominator": "approved source, bilingual public, visual, route, control, testing, PR, merge and live-readback tasks",
+    "evidential_closure_percent": 55,
+    "evidential_denominator": "weighted certified-source closure model in the missing-evidence addendum",
+    "legal_success_probability": null,
+    "note": "Implementation remains below 100 until merge and exact live readback. Evidential closure is independent and must not be inflated by publication completion."
+  },
+  "local_validation": {
+    "git_diff_check": "PASS",
+    "javascript_syntax": "PASS",
+    "internal_links_and_fragments": "PASS",
+    "bilingual_structural_parity": "PASS",
+    "obsolete_temporal_wording_count": 0,
+    "stale_alertador_cache_query_count": 0
+  },
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED"
+  },
+  "thread_deletion_audit": "docs/deletion-audits/2026-08-23-calificacion-alertador-retaliation-unitary.md"
+}
