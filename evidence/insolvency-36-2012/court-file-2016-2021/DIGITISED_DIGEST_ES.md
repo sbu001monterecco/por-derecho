@@ -1,7 +1,8 @@
 # Concurso 36/2012 — digest digitalizado del expediente localizado (2016–2021)
 
-**Denominador controlado:** 65 elementos del expediente + 1 denuncia externa conectada.  
-**Límite:** no es un índice judicial certificado. “Escrito” significa posición de parte/AC, no hecho probado.  
+**Denominador basal controlado:** 65 elementos del expediente + 1 denuncia externa conectada.  
+**Límite principal:** falta el índice cronológico certificado del Juzgado/LAJ. Este es el digest completo del corpus localizado, no todavía un denominador jurídicamente completo del expediente. “Escrito” significa posición de parte/AC, no hecho probado.  
+**Refresco 24-ago-2026:** localizado el cuerpo buscable de 37 páginas del informe AC artículo 75 de 15-ene-2013; localizada una solicitud de conclusión fechada 8-feb-2019 pendiente de recibo/disposición; y puesta en cola la reconciliación de 105 nombres únicos de paquetes LexNET de un barrido acotado 2021–2022. Nombre de paquete ≠ acto judicial único.
 **Fuente de detalle:** `assets/data/concurso36-court-file-v1.json`.
 
 ## 2016 — textos definitivos
@@ -103,10 +104,12 @@
 ## Fundamento anterior al corte — no contado en los 65
 
 - Auto de apertura de 6-jun-2012: copia judicial de imagen localizada; OCR público pendiente.
-- Informe AC artículo 75 de enero-2013: informe y anexos completos pendientes.
+- Informe AC artículo 75 de 15-ene-2013: cuerpo íntegro de 37 páginas localizado y <a href="ARTICLE75_DIGITISED_DIGEST_ES.md">digerido de forma pública segura</a>; copia certificada/presentada, Anexo I, soportes y transcripción página a página pendientes.
+- Solicitud de conclusión fechada 8-feb-2019: texto de parte localizado; recibo LexNET, cinco anexos, informe AC, contradicción y resolución pendientes. Las etiquetas/circulación de 2021 no cambian la fecha interna.
+- Cola LexNET 2021–2022: 105 nombres únicos de paquetes de proveedor pendientes de deduplicación, lectura y enlace al índice oficial; no se suman automáticamente a los 65 nodos.
 - Solicitud AC 9-mar-2015 y oposición LPB 30-mar-2015: fuentes localizadas, OCR/completitud parcial.
 - Sentencia Pink/Monterecco 24-nov-2015: resultado materialmente adverso que debe viajar con cualquier crítica posterior; resolvió el arrendamiento por impago, ordenó desalojo de 159 apartamentos, 29 locales y cuatro piscinas y condenó a 2.733.923,64 € más intereses, rentas posteriores y costas.
 
 ## Próximo control mínimo
 
-Obtener un índice cronológico certificado del Juzgado/LAJ y reconciliarlo contra estos 65 nodos. Hasta entonces, “no localizado” significa vacío de fuente, no inexistencia.
+Obtener un índice cronológico certificado del Juzgado/LAJ y reconciliarlo en ambos sentidos contra estos 65 nodos y la cola LexNET. Hasta entonces, “no localizado” significa vacío de fuente, no inexistencia.

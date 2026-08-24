@@ -1,7 +1,8 @@
 # Concurso 36/2012 — digitised digest of the located court file (2016–2021)
 
-**Controlled denominator:** 65 docket items + 1 connected external complaint.  
-**Limit:** this is not a certified court index. “Filing” means a party/AC position, not a proved fact.  
+**Controlled baseline denominator:** 65 docket items + 1 connected external complaint.  
+**Principal limit:** the certified court/LAJ chronological index is absent. This is the complete digest of the located corpus, not yet a legally complete docket denominator. “Filing” means a party/AC position, not a proved fact.  
+**24-Aug-2026 refresh:** the searchable 37-page body of the 15-Jan-2013 Article 75 report is located; an 8-Feb-2019 conclusion application is located pending receipt/disposition; and 105 unique LexNET provider-package filenames from a bounded 2021–2022 sweep are queued for reconciliation. Package filename ≠ unique judicial act.
 **Detailed source:** `assets/data/concurso36-court-file-v1.json`.
 
 ## 2016 — definitive texts
@@ -103,10 +104,12 @@
 ## Pre-cutoff foundation — not counted in the 65
 
 - 6-Jun-2012 opening order: image-only court copy located; public OCR pending.
-- January-2013 AC Article 75 report: complete report and annexes pending.
+- 15-Jan-2013 AC Article 75 report: complete 37-page body located and <a href="ARTICLE75_DIGITISED_DIGEST_EN.md">digested in a public-safe form</a>; certified/filed copy, Annex I, supporting records and page-by-page transcript remain open.
+- Conclusion application dated 8-Feb-2019: party text located; LexNET receipt, five annexes, AC report, contradiction and disposition remain open. Later 2021 filename/circulation labels do not change the internal date.
+- 2021–2022 LexNET queue: 105 unique provider-package filenames await deduplication, review and mapping to the official index; they are not automatically added to the 65 nodes.
 - 9-Mar-2015 AC request and 30-Mar-2015 LPB opposition: sources located, OCR/completeness partial.
 - 24-Nov-2015 Pink/Monterecco judgment: materially adverse result that must accompany later criticism; resolved the lease for non-payment, ordered vacation of 159 apartments, 29 premises and four pools and awarded EUR 2,733,923.64 plus interest, later rent and costs.
 
 ## Smallest next control
 
-Obtain a certified chronological court/LAJ index and reconcile it against these 65 nodes. Until then, “not located” is a source gap, not proof of non-existence.
+Obtain a certified chronological court/LAJ index and reconcile it in both directions against these 65 nodes and the LexNET queue. Until then, “not located” is a source gap, not proof of non-existence.

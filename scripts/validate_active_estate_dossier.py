@@ -40,6 +40,10 @@ COURT_FILE_EN = COURT_FILE_ROOT / "DIGITISED_DIGEST_EN.md"
 CONVENIO_OCR = COURT_FILE_ROOT / "full-text/C36-CF-2017-04-27-convenio-proposal-ocr-redacted.md"
 COURT_FILE_CONTROL = ROOT / "archive/CONCURSO_36_2012_UNITARY_COURT_FILE_RECONSTRUCTION_24AUG2026.md"
 COURT_FILE_PROMPT = ROOT / "archive/prompts/CONCURSO_36_2012_COMPLETE_COURT_FILE_CONTINUATION_PROMPT_24AUG2026.md"
+DENOMINATOR_DATA = ROOT / "assets/data/concurso36-denominator-gap-v1.json"
+DENOMINATOR_CONTROL = ROOT / "archive/CONCURSO_36_2012_CERTIFIED_DOCKET_DENOMINATOR_GAP_CLOSURE_24AUG2026.md"
+ARTICLE75_ES = COURT_FILE_ROOT / "ARTICLE75_DIGITISED_DIGEST_ES.md"
+ARTICLE75_EN = COURT_FILE_ROOT / "ARTICLE75_DIGITISED_DIGEST_EN.md"
 
 SITEMAPS = {
     "sitemap.xml": ROOT / "sitemap.xml",
@@ -221,6 +225,30 @@ if len([record for record in court_records if record.get("date") == "2018-04-16"
 if len([record for record in court_records if record.get("date") == "2021-10-15" and record.get("kind") == "judicial_order"]) != 2:
     errors.append("two distinct 15-Oct-2021 orders are not preserved")
 
+try:
+    denominator = json.loads(read(DENOMINATOR_DATA))
+except Exception as exc:
+    errors.append(f"certified-denominator control invalid JSON: {exc}")
+    denominator = {}
+queue = denominator.get("refresh", {}).get("gmail_lexnet_reconciliation_queue", {})
+classification = queue.get("classification", {})
+if queue.get("provider_package_filenames") != 105 or sum(classification.values()) != 105:
+    errors.append(f"LexNET denominator queue disagrees: {queue}")
+if denominator.get("certified_court_laj_index_located") is not False:
+    errors.append("certified-docket control must remain false until official production")
+if denominator.get("refresh", {}).get("article_75_report", {}).get("pages") != 37:
+    errors.append("Article 75 report page count/status is not controlled")
+article_controls = {
+    ARTICLE75_ES: ("15 de enero de 2013", "37 páginas", "16.752.575,32"),
+    ARTICLE75_EN: ("15 January 2013", "37 searchable pages", "16,752,575.32"),
+    DENOMINATOR_CONTROL: ("15-Jan-2013", "37-page", "105 unique provider-package"),
+}
+for path, markers in article_controls.items():
+    text = read(path)
+    for marker in markers:
+        if marker not in text:
+            errors.append(f"{path.name}: missing Article 75 denominator marker {marker}")
+
 full_root = ROOT / "evidence/insolvency-36-2012/masa-activa-2017-2021/full-text"
 actual = {path.name for path in full_root.glob("*.md")}
 if actual != set(TRANSCRIPTS):
@@ -331,7 +359,7 @@ for path, lang in (
 
 spine_es_text, spine_en_text = read(SPINE_ES), read(SPINE_EN)
 for marker_es, marker_en in (
-    ("65 elementos del expediente", "65-item docket inventory"),
+    ("inventario basal de 65 elementos del expediente", "65-item docket baseline"),
     ("De los textos definitivos al resultado de 2021", "From definitive texts to the 2021 result"),
     ("Alegación atribuida", "Attributed allegation"),
     ("23-jul-2019", "23-Jul-2019"),
@@ -431,7 +459,7 @@ privacy_patterns = {
     "possible 19-digit case identifier": r"\b\d{19}\b",
 }
 missing_tail = read(MISSING).split("| ME-074", 1)[-1]
-public_text = "\n".join(read(path) for path in [ES, EN, SPINE_ES, SPINE_EN, FLAGSHIP_ES, FLAGSHIP_EN, MANIFEST, PROVENANCE, REGISTER, PROMPT, SUPPLEMENT, CROSS_THREAD, COURT_ACTS, AP89, ROUTES, SPINE_DATA, FLAGSHIP_DATA, FLAGSHIP_CONTROL, COURT_FILE_DATA, COURT_FILE_README, COURT_FILE_ES, COURT_FILE_EN, CONVENIO_OCR, COURT_FILE_CONTROL, COURT_FILE_PROMPT, *sorted(full_root.glob("*.md"))]) + "\n" + missing_tail
+public_text = "\n".join(read(path) for path in [ES, EN, SPINE_ES, SPINE_EN, FLAGSHIP_ES, FLAGSHIP_EN, MANIFEST, PROVENANCE, REGISTER, PROMPT, SUPPLEMENT, CROSS_THREAD, COURT_ACTS, AP89, ROUTES, SPINE_DATA, FLAGSHIP_DATA, FLAGSHIP_CONTROL, COURT_FILE_DATA, COURT_FILE_README, COURT_FILE_ES, COURT_FILE_EN, CONVENIO_OCR, COURT_FILE_CONTROL, COURT_FILE_PROMPT, DENOMINATOR_DATA, DENOMINATOR_CONTROL, ARTICLE75_ES, ARTICLE75_EN, *sorted(full_root.glob("*.md"))]) + "\n" + missing_tail
 for label, pattern in privacy_patterns.items():
     if re.search(pattern, public_text, flags=re.I):
         errors.append(f"possible {label} leakage")
@@ -463,6 +491,8 @@ for marker in (
     "full criminal instrumentalisation",
     "ME-PDFSCAN-032",
     "Do not contact courts",
+    "Official index → repository",
+    "not yet a legally complete docket denominator",
 ):
     if marker not in court_prompt and marker not in read(COURT_ACTS):
         errors.append(f"court-file continuation control missing marker: {marker}")

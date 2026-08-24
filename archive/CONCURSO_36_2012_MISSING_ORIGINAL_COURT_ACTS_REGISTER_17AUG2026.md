@@ -106,6 +106,17 @@ Full correction: `archive/CALIFICACION_VISTA_PRIMARY_ACT_CORRECTION_31MAR_14JUL2
 | 25-Jul-2023 | certified Vista minute / official audiovisual index | judgment + supplied media + specialist registers | certified minute, official component index, attendance, evidence rulings, complete official media | Article 24 / witness / record completeness | P1 |
 | 26-Jul-2023 programme disposition | procedural ruling/minute/service chain | 31-Mar primary Diligencia scheduled 26-Jul witnesses; judgment says Vista completed 25-Jul | act/minute/ruling showing how each 26-Jul item was advanced, waived, excluded, not served, unnecessary or otherwise disposed of | central to effective-defence analysis | P1 |
 
+## Certified-denominator rerun — 24 August 2026
+
+| Target | Located evidence | What is closed | What remains | Status |
+|---|---|---|---|---|
+| 15-Jan-2013 Article 75 report | complete searchable 37-page body, Drive `15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc` | report body, section structure, AC's mixed cooperation account, provisional asset/passive figures and stated future-action intentions | certified/filed copy, Annex I, supporting annexes, source-level redacted page-faithful transcript and later action/outcome chain | **REPORT BODY CLOSED / ANNEX-HIERARCHY-OUTCOME OPEN** |
+| 8-Feb-2019 conclusion application | searchable party document, Drive `1ZMMKo2yvHuhg-mOgQ6VEegJSBFNI2ljQ` | internal date and requested relief identified | filed version/receipt, five annexes, AC report, opposition, judicial disposition, service/finality; later 2021 labels must not replace the internal date | **PARTY TEXT LOCATED / DOCKET STATUS OPEN** |
+| 2021–2022 LexNET package queue | 105 unique provider-package filenames in bounded Gmail queries | finite metadata-level acquisition queue: 52 DIOR/diligencia, 41 filing/transfer, 5 Autos, 5 Providencias, 1 Decreto, 1 other | binary deduplication, wrapper/annex separation, page review, stable IDs and bidirectional certified-index reconciliation | **METADATA LOCATED / DOCUMENT-LEVEL RECONCILIATION OPEN** |
+| Certified whole-docket index | RedSARA receipts `REGAGE26e00073341191`, `REGAGE26e00073341382`, `REGAGE26e00073341477` | delivery of coordinated 15-Aug-2026 requests evidenced | response, certified index, copies, negative certifications and reconciliation | **REQUEST RECEIPTS LOCATED / PRODUCTION OPEN** |
+
+The controlling limitation is unchanged: the located corpus can be complete as a digest of located sources without being the legally complete docket denominator.
+
 ## Retrieval protocol
 
 For every remaining P1 item run at least:

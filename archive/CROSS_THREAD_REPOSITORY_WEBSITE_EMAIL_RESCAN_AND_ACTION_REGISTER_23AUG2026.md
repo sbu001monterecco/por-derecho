@@ -162,3 +162,9 @@ The controlled 2016–2021 sweep supersedes an unstructured “search every emai
 - new denominator/closure controls: `ME-PDFSCAN-032`–`037` in `archive/CONCURSO_36_2012_MISSING_ORIGINAL_COURT_ACTS_REGISTER_17AUG2026.md`.
 
 Other threads must begin with the certified-index request, then bind any located email attachment or scan to the stable ID and existing `ME-PDFSCAN-*` row. The 10-Feb-2021 complaint remains outside the Mercantile docket count; calificación remains a separate pieza; source variants and wrong filename dates are not second acts.
+
+### Certified-denominator rerun — 24 August 2026
+
+The next bounded run located the complete searchable body of the 15-Jan-2013 Article 75 report, a candidate conclusion application internally dated 8-Feb-2019 and 105 unique LexNET provider-package filenames in an observed 2021–2022 window. These findings are controlled by `assets/data/concurso36-denominator-gap-v1.json` and `archive/CONCURSO_36_2012_CERTIFIED_DOCKET_DENOMINATOR_GAP_CLOSURE_24AUG2026.md`.
+
+Cross-thread rule: do not inflate `65` to `170`. A provider package can be a notification wrapper, cover, duplicate, annex family or forwarded copy of an existing act. Each package must be inspected, hashed, assigned or rejected as a unique node and reconciled against the certified court/LAJ index. The three 15-Aug requests have located RedSARA receipts; no certified-index production was located in this run.

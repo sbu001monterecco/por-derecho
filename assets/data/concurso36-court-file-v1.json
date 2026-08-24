@@ -5,6 +5,14 @@
   "certified_docket": false,
   "cutoff_rule": {"requested":"earlier of convenio or 2016","applied":"2016-01-01","reason":"2016 precedes the 2017 convenio phase"},
   "counts": {"located_records":66,"docket_items":65,"connected_external_items":1,"judicial_or_laj_acts":24,"party_ac_or_annex_items":41,"primary_text":24,"party_text":38,"ocr_redacted":1,"scan_pending":2},
+  "certified_denominator_refresh": {
+    "date": "2026-08-24",
+    "controlling_limitation": "The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.",
+    "article_75_report": "37-page searchable body located and digested; annexes, certified filing hierarchy and page-faithful public redaction remain open.",
+    "conclusion_application": "Party document dated 2019-02-08 located; later 2021 filename/circulation layers and filing receipt/disposition remain unresolved, so it is not added to the docket count.",
+    "gmail_lexnet_queue": {"provider_package_filenames":105,"observed_period":"2021-06-09/2022-11-04","status":"document-level deduplication and reconciliation pending"},
+    "machine_control": "assets/data/concurso36-denominator-gap-v1.json"
+  },
   "status_definitions": {
     "primary_text": "Official judicial/LAJ act extracted to searchable text and operative effect checked.",
     "party_text": "Party or insolvency-administration filing extracted to searchable text; position only, not a finding.",
@@ -93,10 +101,10 @@
   ],
   "backward_foundation_not_counted": [
     {"id":"C36-JUD-2012-06-06-OPENING","status":"scan_pending","locator":"Gmail:163d0e6f6da5d4ed/attachment:AUTO-Declaracion-Concurso","note":"Opening order located as a nine-page image-only court copy; full public OCR/source review remains."},
-    {"id":"C36-AC-2013-01-ART75","status":"open","note":"January-2013 Article 75 report and complete annexes remain a finite retrieval target."},
+    {"id":"C36-AC-2013-01-ART75","date":"2013-01-15","status":"searchable_body_located","locator":"Drive:15X-qFJIvM78oDE9CdsGjrvVKU5dv6iGc","pages":37,"note":"Complete report body located and digested. Certified/filed copy, Annex I, supporting annexes and page-faithful public redaction remain open.","public_digest_es":"evidence/insolvency-36-2012/court-file-2016-2021/ARTICLE75_DIGITISED_DIGEST_ES.md","public_digest_en":"evidence/insolvency-36-2012/court-file-2016-2021/ARTICLE75_DIGITISED_DIGEST_EN.md"},
     {"id":"C36-FIL-2015-03-09-AC-LIQREQ","status":"scan_pending","locator":"Drive:1QDyr7itz-t0TvQpYl5GAGb_z9s6HnMM_","note":"AC liquidation/suspension request located; scan OCR/review remains."},
     {"id":"C36-FIL-2015-03-30-LPB-OPPOSE","status":"partial_text","locator":"Drive:1dztbBHDXrV0yvWEMW8ubCu7EIl5WnvZp","note":"LPB opposition located with only partial machine text."},
     {"id":"C36-JUD-2015-11-24-PINK-MONTERECCO","status":"primary_text","locator":"Gmail:controlled-copy","note":"Materially adverse judgment resolving the lease for non-payment and ordering vacation of 159 apartments, 29 premises and four pools, with EUR 2,733,923.64 plus interest, later rent and costs."}
   ],
-  "remaining_denominator_gap": "A certified chronological court/LAJ index covering every section/pieza, filing, annex, resolution, receipt, service, appeal, finality event, recording and implementation act from opening to closure."
+  "remaining_denominator_gap": "A certified chronological court/LAJ index covering every section/pieza, filing, annex, resolution, receipt, service, appeal, finality event, recording and implementation act from opening to closure. The 105-package LexNET queue must then be reconciled in both directions against that official index."
 }

@@ -8,9 +8,13 @@
 
 ## 1. Result
 
-The repository previously had a strong 2017–2022 transaction spine and selected full-text orders, but not a single source-controlled reconstruction of the court file from the definitive-text/convenio threshold. The 24-August sweep located and classified a **65-item 2016–2021 docket working denominator**, plus one connected external complaint, five backward-foundation controls and a separate calificación lane. Judicial/LAJ acts, party or insolvency-administration filings, annexes and external complaints are not equivalent evidence.
+The repository previously had a strong 2017–2022 transaction spine and selected full-text orders, but not a single source-controlled reconstruction of the court file from the definitive-text/convenio threshold. The first 24-August sweep located and classified a **65-item 2016–2021 docket working baseline**, plus one connected external complaint, five backward-foundation controls and a separate calificación lane. Judicial/LAJ acts, party or insolvency-administration filings, annexes and external complaints are not equivalent evidence.
 
-This closes the narrative gap between the 2016 definitive texts, the unsuccessful 2017 convenio route, liquidation, the 2018 plan/appeal family, the 2019 non-convalidation control and the 2021 licitation/adjudication sequence. It does not close the certified-docket denominator, annex completeness, service/finality, implementation or accounting.
+The certified-denominator rerun then located the complete searchable 37-page body of the 15-Jan-2013 Article 75 report, a candidate conclusion application dated 8-Feb-2019 and 105 unique LexNET provider-package filenames in a bounded 2021–2022 Gmail sweep. Those packages require document-level deduplication and official-index reconciliation; they are not added mechanically to the baseline count.
+
+This closes the narrative gap between the 2013 foundation, 2016 definitive texts, the unsuccessful 2017 convenio route, liquidation, the 2018 plan/appeal family, the 2019 non-convalidation control and the 2021 licitation/adjudication sequence. It does not close the certified-docket denominator, annex completeness, service/finality, implementation or accounting.
+
+> The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.
 
 ## 2. Reverse-engineered procedural route
 
@@ -55,6 +59,17 @@ This closes the narrative gap between the 2016 definitive texts, the unsuccessfu
 4. The 6-May-2021 orders rejected nullity and reconsideration; the 18-May order approved CAM; the 15-Oct orders rejected later challenges.
 5. A source-led case can criticize reasoning, evidence handling, asymmetry or implementation, but an adverse result is not by itself proof of abuse, knowing judicial participation or criminality.
 
+## 3A. 2013 Article 75 foundation now controlled
+
+The report body is no longer a missing source. It is a mixed and material AC source:
+
+- it criticizes late/missing documentary delivery, yet also records attendance at every requested meeting, cordial/fluid relations and cooperative disposition;
+- it provisionally estimates assets at EUR 16,752,575.32 and insolvency liabilities at EUR 9,469,157.93, while warning that several entries were not fully supported or verified;
+- it delimits LPB's inventory to 159 apartments, 29 premises and four pools after the reported sale of 12 of the 171 originally acquired apartments; and
+- it states intentions to examine rescission/recovery and seek possible criminal-action authority, but does not prove authorization, filing or success.
+
+The strongest use is to demand the later action, income, value-preservation and accounting chain. It must not be overread as a final solvency adjudication or criminal finding.
+
 ## 4. Strongest source-supported criticism
 
 The strongest current criticism is structural and testable:
@@ -74,7 +89,7 @@ The website should present the procedural spine, decisive adverse/favourable hol
 ## 6. Remaining exact gaps
 
 1. Certified chronological court/LAJ index for every section/pieza from 2012 to closure.
-2. Native 2012 opening order and 2013 Article 75 report with annexes and page-faithful OCR.
+2. Native 2012 opening order public OCR; certified/filed 2013 Article 75 copy, Annex I/supporting annexes and page-faithful redacted public transcript. The report body itself is located and digested.
 3. Complete 2015 liquidation-request/opposition decision chain and certified 24-Nov-2015 judgment/service/finality/enforcement record.
 4. Definitive-text annexes, 2016 opposition outcome, and complete 2017 convenio admission/challenge/disposition record.
 5. Every 2018 plan annex, observation, service/publication return, appeal brief/opposition and finality notice.
@@ -83,5 +98,6 @@ The website should present the procedural spine, decisive adverse/favourable hol
 8. Complete 18-May-2021 appearance recording/minute, third-party offer, authority, proof of funds, bond evidence, attendance and disposition.
 9. Complete Article 152/424 quarterly-report run, liquidation extensions and closure/rendición de cuentas.
 10. Post-deed court communication, mandamientos, finca-by-finca Registry history, bank trail for EUR 400,000 and final accounting/surplus bridge.
+11. Reconcile the 105 located LexNET provider-package filenames against unique underlying acts, receipts, covers, duplicates, annexes and the certified index; do not use the package count as a docket count.
 
 These requests continue the existing `ME-PDFSCAN-*` queue; a later thread must update the canonical row, not create a generic duplicate.

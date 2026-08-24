@@ -17,6 +17,12 @@ The earlier of 2016 or the convenio phase is **1 January 2016**. The controlled 
 
 The working denominator is not a certified docket. Do not use “all filings” without the court/LAJ certified index.
 
+Use this controlling limitation verbatim in every completeness report:
+
+> The principal unresolved limitation is the absence of a certified court/LAJ chronological index. Therefore, this is the complete digest of the located corpus—not yet a legally complete docket denominator.
+
+The 24-Aug denominator rerun also located: (a) the searchable 37-page body of the 15-Jan-2013 Article 75 report; (b) a candidate conclusion application dated internally 8-Feb-2019 whose later filename/circulation layers say 2021; and (c) 105 unique LexNET provider-package filenames in a bounded 2021–2022 Gmail sweep. Treat the latter as a reconciliation queue, not 105 distinct acts. The three coordinated 15-Aug-2026 official-index requests have RedSARA receipts `REGAGE26e00073341191`, `REGAGE26e00073341382` and `REGAGE26e00073341477`; response/production remains open.
+
 ## Mandatory source logic
 
 Label every proposition as one of:
@@ -63,12 +69,22 @@ Build a certified, collision-free chronology from the 6-Jun-2012 opening act thr
 
 Run bounded searches in Drive, Gmail, devices, exports and later ChatGPT threads. For email, recover RFC822/Takeout with headers/MIME/attachments rather than a print view. For paper or image PDFs, scan/render every page and OCR page-faithfully. A no-result search must record custodian, query, date range, location, OCR limitations and smallest next request; it is not proof of non-existence.
 
+## Mandatory denominator reconciliation
+
+Run both tests and publish both results:
+
+1. **Official index → repository:** map every certified entry to a stable ID or an explicit `missing / duplicate / variant / confidential / outside-scope` disposition.
+2. **Repository → official index:** map every repository node and every queued LexNET provider package to an official entry, a party-only draft, an external proceeding, a duplicate/notification wrapper or an unresolved anomaly.
+
+Do not change the docket denominator from filenames or message counts. First separate provider cover, notification, filing receipt, underlying filing, annexes and official act; hash binaries and preserve same-day act families.
+
 ## Current finite gaps
 
 ### Opening/common phase (2012–2016)
 
 - Native/certified 6-Jun-2012 opening order, service/publication and page-faithful OCR.
-- Complete January-2013 Article 75 report, inventory, creditor list, valuation annexes and all objections/dispositions.
+- Certified/filed 15-Jan-2013 Article 75 copy, Annex I, inventory/valuation/supporting annexes and all objections/dispositions. The 37-page report body is located and digested; do not mark it wholly missing.
+- 8-Feb-2019 conclusion application: reconcile filed copy/receipt, five annexes, AC report, opposition, disposition, service/finality and the misleading 2021 filename/circulation layer.
 - 9-Mar-2015 AC liquidation/suspension request, 30-Mar opposition, every reply and dispositive act.
 - Certified 24-Nov-2015 Pink/Monterecco judgment, service, finality, enforcement/vacation and accounting consequences.
 - 2016 definitive-text annexes, complete LPB opposition exhibits and the exact judicial response.
@@ -116,6 +132,8 @@ Publish official acts only after page-faithful redaction review. Present party f
 ## End-of-run report
 
 State: sources searched; records located; unique binaries/duplicates/variants; newly digitised pages; adverse and favourable corrections; gaps closed/partial/open; files changed; validation results; branch/PR/SHA; excluded private material; and exact draft/merged/deployed/live status.
+
+Report separate completeness metrics for: certified-index coverage; searchable-page coverage; filing→receipt→disposition→service→finality coverage; hearing/audiovisual coverage; and authorization→deed→Registry→bank→accounts coverage. Never combine these into one unsupported percentage.
 
 Do not contact courts, parties or institutions, send email, merge, deploy, or publish private material without separate authorization.
 
