@@ -52,6 +52,7 @@
 
     const isEnglish = document.documentElement.lang === 'en';
     const hero = main.querySelector(':scope > #inicio, :scope > #home, :scope > .hero');
+    const criminalMisuse = main.querySelector('[data-calificacion-misuse-thesis]');
     const priority = main.querySelector(':scope > .priority-band');
     const prosecution = main.querySelector(':scope > .prosecution-entry-20260821, :scope > [data-prosecution-entry-20260821]');
     const summary = document.getElementById(isEnglish ? 'sixty-second-summary' : 'resumen-60-segundos');
@@ -59,12 +60,12 @@
     const perimeters = document.getElementById(isEnglish ? 'case-perimeters' : 'perimetros-del-caso');
     const sourceFunds = main.querySelector('.source-funds-notice-section');
     const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
-    const coreSections = [hero, priority, prosecution, summary, audiences, perimeters];
+    const coreSections = [hero, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
     if (sourceFunds) coreSections.push(sourceFunds);
     if (sanTelmo) coreSections.push(sanTelmo);
 
-    let anchor = priority || hero;
-    for (const section of [prosecution, summary, audiences, perimeters]) {
+    let anchor = hero;
+    for (const section of [criminalMisuse, priority, prosecution, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
