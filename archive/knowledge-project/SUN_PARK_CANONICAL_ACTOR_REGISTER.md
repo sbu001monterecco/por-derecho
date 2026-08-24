@@ -1,6 +1,7 @@
 # Sun Park canonical actor register
 
 **Control date:** 19 August 2026  
+**Official-public-source identity/corporate reconciliation:** 24 August 2026
 **Status:** canonical first-saturation register; continuing verification required  
 **Rule:** `earliest proved involvement` means **involved no later than that date**. It is not necessarily the true first day.
 
@@ -20,7 +21,7 @@
 - **Lock:** `LOCKED_MINIMUM_DATE`
 - **Minimum date:** Community Administrator by **22 June 2011**.
 - **Later:** administrator/signatory in Pamanil, S.L. source family.
-- **Relationship:** husband of Shaila María Cogolludo Ramos.
+- **Project relationship lock:** husband of Shaila María Cogolludo Ramos. The bounded 24-Aug official corporate-source screen did not independently prove kinship; preserve the underlying project source class and do not present the relationship as a BORME finding.
 - **Public chronology must say:** `Community administrator by 22 Jun 2011`, not merely `2011`.
 
 ### Shaila María Cogolludo Ramos
@@ -29,7 +30,7 @@
 - **Minimum date:** **8 April 2014**.
 - **Source act:** Pamanil email to Community owners, on President Asunción's instructions, signed `Francisco Mario Matos / Shaila Cogolludo / PAMANIL S.L.`
 - **Later continuity:** signed Pamanil communication sending the 26 April 2016 Community notice.
-- **Relationships:** daughter of Antonio Cogolludo Rojas; wife of FMMM.
+- **Project relationship locks:** daughter of Antonio Cogolludo Rojas; wife of FMMM. The bounded 24-Aug official corporate-source screen did not independently prove kinship; preserve the underlying project source class and do not infer relationship from surname or company association.
 - **Former `2017` start:** `SUPERSEDED`.
 
 ### Antonio Cogolludo Rojas
@@ -37,8 +38,32 @@
 - **Lock:** `LOCKED_MINIMUM_DATE`
 - **Minimum date:** **10 April 2014**.
 - **Source act:** represented Cristina Molina Petit at the Community meeting; contemporaneous record places him in the Pamanil/FMMM working perimeter.
-- **Relationship:** father of Shaila María Cogolludo Ramos.
+- **Project relationship lock:** father of Shaila María Cogolludo Ramos. The bounded 24-Aug official corporate-source screen did not independently prove kinship; preserve the underlying project source class and do not present the relationship as a BORME finding.
 - **Former `2018` start:** `SUPERSEDED`.
+
+## Official-public-source identity and corporate boundary — 24 August 2026
+
+This is a bounded official/public-source overlay, not a replacement for the source-specific Sun Park minutes, emails, pleadings or relationship controls above.
+
+### Exact-name locks
+
+- **Francisco Mario Matos Matas** is the canonical FMMM identity. Do not equate him with the separately published shorter name **Francisco Matos Matas** without DNI, Registry continuity or another independent identity bridge.
+- **Antonio Cogolludo Rojas** is the official BORME form. `Cogoyudo` is not an accepted variant.
+- **Shaila María Cogolludo Ramos** is the official BORME form. Do not use `Shayla` or `Cogoyudo`.
+- The exact company name is **ORION RENTAL SOCIMI, S.A.**; do not use `Orion Sosimi Rental`, `Sosimi Rental` or another reordered form.
+
+### Two official corporate clusters
+
+| Cluster | Officially verified public connection | Sources and limit |
+|---|---|---|
+| **A — FMMM / Orion / AGM / JDAM** | BORME records FMMM and José Daniel Acosta Matos as directors of ORION RENTAL SOCIMI, S.A. and later as power-holders of AGM CANARY ASSET MANAGEMENT, S.L. | [Orion appointments](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35); [AGM name/powers](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-98-35); [CNMV Orion identity](https://www.cnmv.es/portal/ancv/isin?isin=ES0105829008&lang=es). These roles do not prove earlier Sun Park coordination or criminality. |
+| **B — Antonio / Shaila / Pamalexsha / Noalpa / Santa Lucia** | BORME records Antonio in administrator roles and Shaila in apoderada roles across Pamalexsha/Noalpa; BORME records Antonio at Santa Lucia Real Estate. A Canary Government release separately describes Shaila as owner of the promoting company in that housing context. | [Pamalexsha formation](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35); [Noalpa formation](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35); [Shaila/Noalpa](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35); [Shaila/Pamalexsha](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35); [Antonio/Santa Lucia](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35); [Government release](https://www3.gobiernodecanarias.org/noticias/el-gobierno-materializa-la-colaboracion-publico-privada-con-la-calificacion-de-132-inmuebles-protegidos/). Attribute the ownership description to the Government; BORME does not prove it. |
+
+### No proved public co-company bridge
+
+The bounded official-source screen did **not** prove a common company containing FMMM and Antonio/Shaila. Do not draw that edge as `OFFICIAL PUBLIC RECORD` without a new primary corporate source. `Not located` does not mean `nonexistent`.
+
+This boundary does not delete internal Sun Park working relationships or Gil Marer's allegations. It requires a visible source-class distinction among official Registry/government facts, issuer/company self-description, project-controlled records, party allegation and inference. Corporate, family or professional association never substitutes for actor-specific proof of instruction, knowledge, intent, contribution or benefit.
 
 ## Complete natural-person register
 

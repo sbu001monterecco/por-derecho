@@ -19,7 +19,7 @@
   // Canonical 5 + AC control-chain design: five private actors remain distinct from
   // the court-appointed Insolvency Administrator, with the 7-Jun-2018 control hinge,
   // eight-stage economic chain, judicial-protection boundary and 2016 PwC notice checkpoint.
-  load('homepage-actor-family-pwc-note-20260819.js?v=20260819d');
+  load('homepage-actor-family-pwc-note-20260819.js?v=20260824a');
 
   // Canonical historical lock notice for the full public people / representatives register.
   load('sun-park-canonical-actor-history-lock-20260819.js?v=20260819a');

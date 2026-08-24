@@ -4,7 +4,7 @@
 
   // Preserve the site's established loader unchanged, but move it behind this thin wrapper.
   const base = document.createElement('script');
-  base.src = new URL('site-base-20260819.js?v=20260819a', current.src).href;
+  base.src = new URL('site-base-20260819.js?v=20260824a', current.src).href;
   base.async = false;
   document.head.appendChild(base);
 
@@ -39,7 +39,7 @@
   // Cross-site source-controlled reconstruction of Community/private functional management,
   // AC authorisation/reliance, mobile Community debt and the definitive-text incident answer.
   const deFactoAdministration = document.createElement('script');
-  deFactoAdministration.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260820b', current.src).href;
+  deFactoAdministration.src = new URL('ac-community-de-facto-administration-20260820.js?v=20260824a', current.src).href;
   deFactoAdministration.async = false;
   deFactoAdministration.setAttribute('data-ac-community-de-facto-loader', 'true');
   document.head.appendChild(deFactoAdministration);
@@ -48,7 +48,7 @@
   // creating a competing narrative, and adds route-specific relevance across governance, AC,
   // material control, liquidation, judicial, implementation and downstream-reliance pages.
   const deFactoVisibility = document.createElement('script');
-  deFactoVisibility.src = new URL('ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260820b', current.src).href;
+  deFactoVisibility.src = new URL('ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260824a', current.src).href;
   deFactoVisibility.async = false;
   deFactoVisibility.setAttribute('data-ac-de-facto-knowing-facilitation-visibility-loader', 'true');
   document.head.appendChild(deFactoVisibility);
@@ -56,7 +56,7 @@
   // Preserve the base-module markers on the upgraded panels and remove any duplicate caused by
   // delayed cross-site reruns. This keeps one canonical allegation panel per relevant route.
   const deFactoVisibilityStability = document.createElement('script');
-  deFactoVisibilityStability.src = new URL('ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260820b', current.src).href;
+  deFactoVisibilityStability.src = new URL('ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260824a', current.src).href;
   deFactoVisibilityStability.async = false;
   deFactoVisibilityStability.setAttribute('data-ac-de-facto-knowing-facilitation-stability-loader', 'true');
   document.head.appendChild(deFactoVisibilityStability);

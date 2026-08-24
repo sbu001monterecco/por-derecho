@@ -38,7 +38,8 @@ MATERIAL_CONTROL_MODULE_REL = "assets/calificacion-2018-creditor-material-contro
 AC_MANIFEST_REL = "publication-manifests/ac-community-de-facto-administration-2026-08-20.json"
 
 PUBLICATION_ID = "CAM-CREDITOR-CONTROL-CRIMINAL-LEAD-20260823"
-CONTROL_MARKER = "cam-creditor-control-criminal-lead-20260823"
+CONTROL_MARKER = "cam-creditor-control-criminal-lead-20260824"
+HISTORICAL_MANIFEST_CONTROL_MARKER = "cam-creditor-control-criminal-lead-20260823"
 EN_ROUTE = "/en/cam-creditor-control-shadow-administration-judicial-omission/"
 ES_ROUTE = "/es/control-acreedor-cam-administracion-hecho-omision-judicial/"
 BASE_URL = "https://sbu001monterecco.github.io/por-derecho"
@@ -112,6 +113,7 @@ es_ac = read(ES_AC_REL)
 en_df = read(EN_DF_REL)
 es_df = read(ES_DF_REL)
 ac_data_text = read(AC_DATA_REL)
+ac_data = load_json(AC_DATA_REL)
 material_control_module = read(MATERIAL_CONTROL_MODULE_REL)
 ac_manifest_text = read(AC_MANIFEST_REL)
 
@@ -210,22 +212,26 @@ require(
     en,
     (
         'lang="en"',
-        'data-express-criminal-attribution="20260823"',
+        'data-express-criminal-attribution="20260824"',
+        "UPDATED 24 AUGUST 2026",
         f'href="{BASE_URL}{EN_ROUTE}"',
         f'hreflang="en" href="{BASE_URL}{EN_ROUTE}"',
         f'hreflang="es" href="{BASE_URL}{ES_ROUTE}"',
         f'hreflang="x-default" href="{BASE_URL}{ES_ROUTE}"',
-        "Gil Marer and Aweswell expressly allege that identified CAM / Acosta Matos and connected private actors",
+        "Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila Cogolludo Ramos, José Daniel Acosta Matos and Laura Patricia Acosta Matos",
         "These are direct criminal allegations supported by a multi-layer evidential corpus. They are not judicial findings.",
         "not merely an investigative question",
         "The attribution is direct.",
         '<span data-source-literal>“Laura Matos”</span>',
         "Source-fidelity rule.",
-        "Gil directly attributes participation and responsibility to <strong>Laura Patricia Acosta Matos</strong>",
+        "actor-specific participation to all five",
+        "participation and responsibility to <strong>Laura Patricia Acosta Matos</strong>",
         "DIRECT CRIMINAL-ATTRIBUTION · PRIVATE INSTRUCTION",
-        "Gil alleges that the insolvency administrator criminally enabled, approved or ratified the 7 June operation",
-        "Gil directly alleges omissionary judicial prevarication.",
+        "criminally enabled, approved or ratified the 7 June operation",
+        "role did not consist only of omissions",
+        "not an adjudicated criminal fact",
         "Provisional dismissal upheld",
+        "Contrary judicial record",
         "Right of reply.",
         "Silence is not admission.",
     ),
@@ -233,7 +239,7 @@ require(
 require_before(
     EN_REL,
     en,
-    "Gil Marer and Aweswell expressly allege that identified CAM / Acosta Matos and connected private actors",
+    "These are direct criminal allegations",
     "Controlling boundary.",
 )
 prohibit(
@@ -251,22 +257,26 @@ require(
     es,
     (
         'lang="es"',
-        'data-express-criminal-attribution="20260823"',
+        'data-express-criminal-attribution="20260824"',
+        "ACTUALIZADO 24 AGOSTO 2026",
         f'href="{BASE_URL}{ES_ROUTE}"',
         f'hreflang="en" href="{BASE_URL}{EN_ROUTE}"',
         f'hreflang="es" href="{BASE_URL}{ES_ROUTE}"',
         f'hreflang="x-default" href="{BASE_URL}{ES_ROUTE}"',
-        "Gil Marer y Aweswell atribuyen directamente a actores identificados de CAM / Acosta Matos",
+        "Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila Cogolludo Ramos, José Daniel Acosta Matos y Laura Patricia Acosta Matos",
         "Son acusaciones penales directas apoyadas en un corpus probatorio de varias capas. No son declaraciones judiciales.",
         "no es una mera pregunta investigativa",
         "La atribución es directa.",
         '<span data-source-literal>«Laura Matos»</span>',
         "Regla de fidelidad de fuente.",
-        "Gil atribuye directamente participación y responsabilidad a <strong>Laura Patricia Acosta Matos</strong>",
+        "participación actor-específica a los cinco",
+        "participación y responsabilidad a <strong>Laura Patricia Acosta Matos</strong>",
         "ATRIBUCIÓN PENAL DIRECTA · INSTRUCCIÓN PRIVADA",
-        "Gil alega que el administrador concursal habilitó, aprobó o ratificó penalmente la operación de 7 de junio",
-        "Gil alega directamente prevaricación judicial por omisión.",
+        "habilitó, aprobó o ratificó penalmente la operación de 7 de junio",
+        "no consistió sólo en omisiones",
+        "no un hecho penal declarado",
         "Archivo provisional confirmado",
+        "Registro judicial contrario",
         "Derecho de respuesta.",
         "El silencio no es admisión.",
     ),
@@ -274,7 +284,7 @@ require(
 require_before(
     ES_REL,
     es,
-    "Gil Marer y Aweswell atribuyen directamente a actores identificados de CAM / Acosta Matos",
+    "Son acusaciones penales directas",
     "Límite rector.",
 )
 prohibit(
@@ -292,12 +302,16 @@ require(
     CAM_MODULE_REL,
     cam_module,
     (
-        'data-cam-criminal-lead="20260823"',
-        "directly allege that identified CAM / Acosta Matos",
-        "atribuyen directamente a actores identificados de CAM / Acosta Matos",
-        "not merely questions or investigative leads",
-        "no meras preguntas ni simples líneas de investigación",
-        "CAM / JDAM / Laura Patricia / FMMM",
+        'data-cam-criminal-lead="20260824"',
+        "five identified private actors",
+        "cinco actores privados identificados",
+        "not merely questions, and not adjudicated findings",
+        "no meras preguntas ni declaraciones judiciales",
+        "FMMM · Antonio · Shaila · JDAM · Laura Patricia",
+        "Affirmative criminal enablement plus omission",
+        "Habilitación penal afirmativa más omisión",
+        "allegedly sabotaging or frustrating a developed, finance-backed exit",
+        "saboteando o frustrando con ello una salida desarrollada y respaldada por financiación",
         "Attribution and source-fidelity control — Laura Patricia Acosta Matos",
         "Control de atribución y fidelidad de fuente — Laura Patricia Acosta Matos",
         "data-source-literal",
@@ -311,7 +325,7 @@ require(
     PROSECUTION_REL,
     prosecution,
     (
-        "dataset.expressCriminalAttribution = '20260823'",
+        "dataset.expressCriminalAttribution = '20260824'",
         "Gil Marer and Aweswell directly allege an organised criminal course",
         "Gil Marer y Aweswell alegan directamente un curso delictivo organizado",
         "not merely a set of questions",
@@ -320,6 +334,12 @@ require(
         "Relación no es responsabilidad; la prueba pendiente no borra la acusación.",
         "José Daniel Acosta Matos",
         "Laura Patricia Acosta Matos",
+        "Francisco Mario Matos Matas",
+        "Antonio Cogolludo Rojas",
+        "Shaila María Cogolludo Ramos",
+        "affirmative enablement through emails, meetings, requests, authorisations, decisions, implementation, adoption and ratification, as well as omissions",
+        "Judge Alberto López Villarrubia",
+        "sabotaging or frustrating a developed, finance-backed exit",
         "provisional dismissal",
         "archivo provisional",
     ),
@@ -329,7 +349,7 @@ require(
     audience_order,
     (
         "const prosecution = main.querySelector",
-        "[hero, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
+        "[hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
         "audienceProtectedAttribution",
         "expressCriminalAttributionVisible",
     ),
@@ -350,7 +370,7 @@ require(
     loader,
     (
         "CAM-DIRECT-INSTRUCTION-SHADOW-ADMIN-JUDICIAL-OMISSION-ROUTE-LOADER-20260823",
-        "cam-direct-instruction-shadow-admin-judicial-omission-20260823.js?v=20260823a",
+        "cam-direct-instruction-shadow-admin-judicial-omission-20260823.js?v=20260824a",
         "data-cam-direct-instruction-loader",
     ),
 )
@@ -429,10 +449,23 @@ for rel, text in ((SITEMAP_REL, sitemap_text), (GENERAL_SITEMAP_REL, general_sit
             errors.append(f"{rel}: CAM alternate map mismatch: {alternates}")
 
 # Machine-readable control.
-if data.get("schema_version") != "1.1":
-    errors.append("dataset schema_version must be 1.1")
+if data.get("schema_version") != "1.3":
+    errors.append("dataset schema_version must be 1.3")
 if data.get("publication_id") != PUBLICATION_ID or data.get("control_marker") != CONTROL_MARKER:
     errors.append("dataset publication identity mismatch")
+if data.get("control_date") != "2026-08-24":
+    errors.append("dataset control date must reflect the 20260824 substantive update")
+update_marker = "five-actor-shadow-administration-ac-judicial-acts-omissions-funded-exit-20260824"
+if data.get("substantive_update_marker") != update_marker:
+    errors.append("dataset 20260824 substantive-update marker mismatch")
+expected_update_controls = {
+    "FIVE_ACTOR_SHADOW_DE_FACTO_ADMINISTRATION_DIRECT_ALLEGATION_20260824",
+    "AC_AFFIRMATIVE_COMMISSIONS_ENABLEMENT_AND_OMISSIONS_DIRECT_ALLEGATION_20260824",
+    "JUDICIAL_AFFIRMATIVE_ACTS_OMISSIONS_FUNDED_EXIT_SABOTAGE_DIRECT_ALLEGATION_20260824",
+    "AWESWELL_SPONSOR_PERFORMANCE_COLLATERAL_AND_INSTITUTIONAL_DEPENDENCIES_20260824",
+}
+if set(data.get("update_controls", [])) != expected_update_controls:
+    errors.append("dataset must contain the four exact 20260824 allegation and finance controls")
 if data.get("status") != "DRAFT_ATTRIBUTED_CRIMINAL_ALLEGATION_NOT_FINDING":
     errors.append("dataset allegation/not-finding status mismatch")
 if data.get("canonical_source") != SOURCE_REL or data.get("non_dilution_rule") != NON_DILUTION_REL:
@@ -447,6 +480,10 @@ expected_position = {
     "non_dilution_required": True,
     "first_read_prominence_required": True,
     "source_literals_preserved": True,
+    "five_actor_shadow_administration_allegation_preserved": True,
+    "administrator_affirmative_commission_and_omission_allegation_preserved": True,
+    "judicial_acts_omissions_and_funded_exit_sabotage_allegation_preserved": True,
+    "finance_condition_allocation_and_source_status_preserved": True,
     "criminal_guilt_adjudicated": False,
     "collective_guilt_presumed": False,
     "presumption_of_innocence_preserved": True,
@@ -455,6 +492,34 @@ expected_position = {
 for key, expected in expected_position.items():
     if position.get(key) != expected:
         errors.append(f"dataset controlling-position mismatch: {key}")
+
+expected_private_actors = [
+    ("ACT-FMMM", "Francisco Mario Matos Matas"),
+    ("ACT-ACR", "Antonio Cogolludo Rojas"),
+    ("ACT-SMCR", "Shaila María Cogolludo Ramos"),
+    ("ACT-JDAM", "José Daniel Acosta Matos"),
+    ("ACT-LPAM", "Laura Patricia Acosta Matos"),
+]
+private_perimeter = data.get("canonical_private_actor_perimeter_20260824", {})
+actual_private_actors = [
+    (actor.get("id"), actor.get("name"))
+    for actor in private_perimeter.get("actors", [])
+    if isinstance(actor, dict)
+]
+if actual_private_actors != expected_private_actors:
+    errors.append("dataset five-private-actor perimeter is missing, reordered or misnamed")
+if private_perimeter.get("marker") != "FIVE_ACTOR_SHADOW_DE_FACTO_ADMINISTRATION_DIRECT_ALLEGATION_20260824":
+    errors.append("dataset five-actor 20260824 marker mismatch")
+if private_perimeter.get("attributed_to") != "Gil Marer":
+    errors.append("dataset five-actor allegation must be attributed to Gil Marer")
+if private_perimeter.get("criminal_finding") is not False:
+    errors.append("dataset five-actor allegation must not be represented as a criminal finding")
+for key in ("collective_participation_in_every_step_established", "shared_criminal_intent_established"):
+    if private_perimeter.get(key) is not False:
+        errors.append(f"dataset five-actor perimeter boundary mismatch: {key}")
+for phrase in ("five named private actors", "shadow or de facto administration", "allegedly concealed parallel-control architecture"):
+    if phrase not in private_perimeter.get("direct_shadow_administration_allegation", ""):
+        errors.append(f"dataset five-actor direct allegation missing required copy: {phrase}")
 
 lanes = data.get("allegation_lanes", [])
 if not isinstance(lanes, list) or {item.get("id") for item in lanes if isinstance(item, dict)} != {"CAM-LEAD-01", "CAM-LEAD-02", "CAM-LEAD-03"}:
@@ -467,6 +532,123 @@ else:
             errors.append(f"{lane.get('id')}: allegation incorrectly represented as finding")
         if not lane.get("unresolved_bridges"):
             errors.append(f"{lane.get('id')}: unresolved proof must remain explicit")
+
+lane_by_id = {lane.get("id"): lane for lane in lanes if isinstance(lane, dict)}
+private_lane = lane_by_id.get("CAM-LEAD-01", {})
+administrator_lane = lane_by_id.get("CAM-LEAD-02", {})
+judge_lane = lane_by_id.get("CAM-LEAD-03", {})
+
+expected_named_actor_mentions = {
+    "José Daniel Acosta Matos (JDAM)",
+    "Laura Patricia Acosta Matos (LPAM)",
+    "Francisco Mario Matos Matas (FMMM)",
+    "Antonio Cogolludo Rojas",
+    "Shaila María Cogolludo Ramos",
+}
+if not expected_named_actor_mentions.issubset(set(private_lane.get("actors", []))):
+    errors.append("CAM-LEAD-01 must name all five controlled private actors")
+if private_lane.get("marker") != "FIVE_ACTOR_SHADOW_DE_FACTO_ADMINISTRATION_DIRECT_ALLEGATION_20260824":
+    errors.append("CAM-LEAD-01 20260824 marker mismatch")
+for phrase in ("five named actors", "shadow or de facto administration", "allegedly concealed parallel material-control architecture"):
+    if phrase not in private_lane.get("direct_shadow_administration_allegation", ""):
+        errors.append(f"CAM-LEAD-01 missing required direct-allegation copy: {phrase}")
+
+if administrator_lane.get("marker") != "AC_AFFIRMATIVE_COMMISSIONS_ENABLEMENT_AND_OMISSIONS_DIRECT_ALLEGATION_20260824":
+    errors.append("CAM-LEAD-02 20260824 marker mismatch")
+if administrator_lane.get("actor") != "Francisco de Borja Rodríguez-Batllori Laffitte":
+    errors.append("CAM-LEAD-02 Administrator identity mismatch")
+for phrase in ("affirmative commission and enablement", "emails and meetings", "failed to protect, recover, account, report or preserve the funded exit"):
+    if phrase not in administrator_lane.get("direct_criminal_allegation", ""):
+        errors.append(f"CAM-LEAD-02 missing required direct-allegation copy: {phrase}")
+for key, minimum in (
+    ("affirmative_commissions_and_enablement_alleged", 5),
+    ("omissions_alleged", 5),
+    ("documented_basis", 6),
+    ("contrary_evidence", 3),
+    ("unresolved_bridges", 6),
+):
+    if len(administrator_lane.get(key, [])) < minimum:
+        errors.append(f"CAM-LEAD-02 20260824 control is too thin: {key}")
+if "conditionally closable exit" not in administrator_lane.get("funded_exit_sabotage_claim", "").lower():
+    errors.append("CAM-LEAD-02 conditional finance-exit allegation is missing")
+
+if judge_lane.get("marker") != "JUDICIAL_AFFIRMATIVE_ACTS_OMISSIONS_FUNDED_EXIT_SABOTAGE_DIRECT_ALLEGATION_20260824":
+    errors.append("CAM-LEAD-03 20260824 marker mismatch")
+if judge_lane.get("actor") != "Alberto López Villarrubia":
+    errors.append("CAM-LEAD-03 judge identity mismatch")
+for phrase in ("strongest act-and-omission form", "affirmative resolutions, refusals, procedural directions", "sabotaged the funded exit"):
+    if phrase not in judge_lane.get("direct_criminal_allegation", ""):
+        errors.append(f"CAM-LEAD-03 missing required direct-allegation copy: {phrase}")
+for key, minimum in (
+    ("affirmative_acts_alleged", 3),
+    ("omissions_alleged", 4),
+    ("documented_basis", 5),
+    ("contrary_evidence", 4),
+    ("unresolved_bridges", 6),
+):
+    if len(judge_lane.get(key, [])) < minimum:
+        errors.append(f"CAM-LEAD-03 20260824 control is too thin: {key}")
+for phrase in ("direct enabling role", "affirmative acts and omissions", "Daniel Irigoyen", "conditionally closable exit"):
+    if phrase not in judge_lane.get("funded_exit_sabotage_claim", ""):
+        errors.append(f"CAM-LEAD-03 funded-exit allegation missing required copy: {phrase}")
+
+funded_exit = data.get("funded_exit_control_20260824", {})
+if funded_exit.get("attributed_to") != "Gil Marer" or funded_exit.get("criminal_finding") is not False:
+    errors.append("funded-exit control must be attributed to Gil and preserved as a non-finding")
+for phrase in ("five-actor private-control architecture", "Administrator's affirmative enablement and omissions", "judge's affirmative acts and omissions", "conditionally closable exit", "performed or could perform all sponsor-side"):
+    if phrase not in funded_exit.get("direct_allegation", ""):
+        errors.append(f"funded-exit control missing required direct-allegation copy: {phrase}")
+if len(funded_exit.get("documented_components", [])) < 5:
+    errors.append("funded-exit control must retain the five documentary components")
+if len(funded_exit.get("contrary_evidence_and_limits", [])) < 4:
+    errors.append("funded-exit control must preserve meaningful contrary evidence and limits")
+if len(funded_exit.get("unresolved_bridges", [])) < 4:
+    errors.append("funded-exit control must preserve unresolved proof")
+
+finance_marker = "AWESWELL_SPONSOR_PERFORMANCE_COLLATERAL_AND_INSTITUTIONAL_DEPENDENCIES_20260824"
+finance = data.get("finance_condition_allocation_20260824", {})
+if finance.get("marker") != finance_marker or finance.get("attributed_to") != "Gil Marer":
+    errors.append("finance-condition control marker or attribution mismatch")
+finance_direct = finance.get("direct_allegation", {})
+if finance_direct.get("criminal_finding") is not False or finance_direct.get("causation_adjudicated") is not False:
+    errors.append("finance-condition allegation must remain a non-finding")
+for phrase in (
+    "performed or could perform all sponsor-side",
+    "staged security and collateral package",
+    "Insolvency Administrator debt certificate",
+    "lender-in-possession mechanism obstructing redemption and refinancing",
+):
+    if phrase not in finance_direct.get("en", ""):
+        errors.append(f"finance-condition allegation missing required copy: {phrase}")
+finance_classes = finance.get("condition_classes", {})
+for key in ("sponsor_borrower_or_counterparty_side", "court_administrator_and_collateral_dependencies", "lender_internal_or_third_party"):
+    if len(finance_classes.get(key, {}).get("documented_conditions", [])) < 4:
+        errors.append(f"finance-condition class is too thin: {key}")
+finance_routes = finance.get("route_source_status", {})
+if set(finance_routes) != {"ona_clubotel", "stoneweg_vso", "ben_oldman", "lagune_elaia"}:
+    errors.append("finance-condition control must preserve ONA, VSO, Ben Oldman and Elaia source status")
+for route in finance_routes.values():
+    if not route.get("status") or not route.get("limits"):
+        errors.append("finance route lacks exact status or limits")
+if len(finance.get("publication_boundaries", [])) < 5 or len(finance.get("unresolved_evidence", [])) < 6:
+    errors.append("finance-condition boundaries or unresolved-evidence ledger is too thin")
+
+# Both machine-readable records must carry the same 20260824 perimeter and institutional identities.
+if ac_data.get("substantive_update_marker") != update_marker:
+    errors.append("AC de-facto dataset is not aligned to the 20260824 substantive marker")
+ac_private = ac_data.get("canonical_private_actor_perimeter_20260824", {})
+ac_private_actors = [
+    (actor.get("id"), actor.get("name"))
+    for actor in ac_private.get("actors", [])
+    if isinstance(actor, dict)
+]
+if ac_private_actors != actual_private_actors:
+    errors.append("CAM and AC datasets disagree on the canonical five-private-actor perimeter")
+ac_institutional = ac_data.get("institutional_attributions_20260824", {})
+if ac_institutional.get("insolvency_administrator", {}).get("actor") != administrator_lane.get("actor"):
+    errors.append("CAM and AC datasets disagree on the Administrator identity")
+if ac_institutional.get("judge", {}).get("actor") != judge_lane.get("actor"):
+    errors.append("CAM and AC datasets disagree on the judge identity")
 
 identity = data.get("identity_control", {})
 expected_identity = {
@@ -501,7 +683,15 @@ for key in (
     "criminal_guilt_as_established",
     "direct_instruction_as_adjudicated_fact",
     "administrator_criminal_approval_as_adjudicated_fact",
+    "five_actor_shadow_administration_as_adjudicated_fact",
+    "administrator_affirmative_commission_or_omission_as_adjudicated_fact",
     "judicial_prevarication_as_established",
+    "judicial_affirmative_acts_or_omissions_as_adjudicated_prevarication",
+    "funded_exit_sabotage_as_adjudicated_fact",
+    "all_sponsor_side_conditions_as_independently_verified_fact",
+    "single_or_only_closing_condition_as_verified_fact",
+    "lender_internal_approval_as_borrower_side_performance",
+    "non_institutional_criminal_epithet_as_fact",
     "dilute_direct_attribution_to_question_or_lead",
     "rewrite_source_literal_as_canonical_identity",
     "treat_source_typo_as_separate_actor",
@@ -518,13 +708,38 @@ for key in (
     "state_direct_attribution_before_caveats",
     "first_read_direct_attribution_required",
     "preserve_strongest_defences",
+    "preserve_20260824_direct_allegations",
+    "preserve_finance_condition_allocation_and_route_source_status",
     "preserve_right_of_reply",
 ):
     if boundaries.get(key) is not True:
         errors.append(f"dataset publication safeguard mismatch: {key}")
 
+contrary = data.get("contrary_record", {})
+for key in (
+    "provisional_dismissal_2018",
+    "appellate_confirmation",
+    "administrator_denied_main_lock_takeover_instruction",
+    "administrator_described_narrower_access_authority",
+    "irigoyen_report_is_not_official_judicial_minute",
+    "funding_routes_had_conditions",
+):
+    if contrary.get(key) is not True:
+        errors.append(f"dataset contrary-record safeguard missing: {key}")
+if contrary.get("funded_exit_sabotage_adjudicated") is not False:
+    errors.append("dataset contrary record must state that funded-exit sabotage is not adjudicated")
+for key in (
+    "sponsor_side_performance_complete_for_every_route_independently_proved",
+    "all_lender_credit_management_or_board_approvals_proved",
+    "single_operational_blocking_condition_proved",
+):
+    if contrary.get(key) is not False:
+        errors.append(f"dataset finance contrary-record boundary missing: {key}")
+if len(contrary.get("judicial_corrective_or_contrary_acts_preserved", [])) < 3:
+    errors.append("dataset must preserve the identified judicial corrective or contrary acts")
+
 # Manifest controls and historical deployment record.
-if manifest.get("publication_id") != PUBLICATION_ID or manifest.get("control_marker") != CONTROL_MARKER:
+if manifest.get("publication_id") != PUBLICATION_ID or manifest.get("control_marker") != HISTORICAL_MANIFEST_CONTROL_MARKER:
     errors.append("manifest publication identity mismatch")
 if manifest.get("expected_routes") != {"en": [EN_REL], "es": [ES_REL]}:
     errors.append("manifest expected route map mismatch")
@@ -598,6 +813,8 @@ for rel, text in ((EN_REL, en), (ES_REL, es), (CAM_MODULE_REL, cam_module), (DAT
             errors.append(f"{rel}: private source identifier exposed: {token}")
     if "Laura Isabel" in text:
         errors.append(f"{rel}: erroneous public identity variant exposed")
+    if rel in (DATA_REL,) and "mafia" in text.lower():
+        errors.append(f"{rel}: non-institutional criminal epithet exposed")
     if "Laura Matos" in text:
         allowed = (
             "data-source-literal" in text

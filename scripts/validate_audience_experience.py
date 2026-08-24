@@ -167,6 +167,7 @@ def validate_runtime_contract(errors: list[str]) -> None:
 
     for marker in (
         "MutationObserver",
+        "deduplicate('.ac-dfa-update-section')",
         "deduplicate('.prosecution-entry-20260821')",
         "sixty-second-summary",
         "resumen-60-segundos",
@@ -176,8 +177,9 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "data-audience-full-record",
         "openHashTarget",
         "const prosecution = main.querySelector",
-        "[hero, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
+        "[hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
         "main.dataset.expressCriminalAttributionVisible",
+        "main.dataset.fiveActorControllingAllegationVisible",
         "audienceProtectedAttribution",
     ):
         if marker not in module:
@@ -186,7 +188,7 @@ def validate_runtime_contract(errors: list[str]) -> None:
         fail(errors, "site.js does not load the audience-order release module")
 
     for marker in (
-        "section.dataset.expressCriminalAttribution = '20260823'",
+        "section.dataset.expressCriminalAttribution = '20260824'",
         "Gil Marer and Aweswell directly allege an organised criminal course",
         "Gil Marer y Aweswell alegan directamente un curso delictivo organizado",
         "not merely a set of questions",
@@ -200,8 +202,12 @@ def validate_runtime_contract(errors: list[str]) -> None:
             fail(errors, f"homepage prosecution module missing non-dilution marker: {marker}")
 
     for marker in (
-        "directly allege that identified CAM / Acosta Matos",
-        "atribuyen directamente a actores identificados de CAM / Acosta Matos",
+        "five identified private actors operated",
+        "cinco actores privados identificados operaron",
+        "Affirmative criminal enablement plus omission",
+        "Habilitación penal afirmativa más omisión",
+        "Judge Alberto López Villarrubia",
+        "Magistrado-Juez Alberto López Villarrubia",
         "data-source-literal",
         "source literal",
         "literal de fuente",
@@ -213,6 +219,9 @@ def validate_runtime_contract(errors: list[str]) -> None:
 
     for marker in (
         "attributionVisibleBeforeCollapse",
+        "controllingVisibleBeforeCollapse",
+        "controllingFiveActorTextPresent",
+        "controllingInstitutionalTextPresent",
         "directAttributionTextPresent",
         "protectedAttributionMarker",
         "contraryRecordPresent",

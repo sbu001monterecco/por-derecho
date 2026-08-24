@@ -171,8 +171,8 @@
   const current = document.currentScript;
   if (!current) return;
   const module = document.createElement('script');
-  module.src = new URL('cam-direct-instruction-shadow-admin-judicial-omission-20260823.js?v=20260823a', current.src).href;
+  module.src = new URL('cam-direct-instruction-shadow-admin-judicial-omission-20260823.js?v=20260824a', current.src).href;
   module.async = false;
-  module.dataset.camDirectInstructionLoader = '20260823';
+  module.dataset.camDirectInstructionLoader = '20260824';
   document.head.appendChild(module);
 })();

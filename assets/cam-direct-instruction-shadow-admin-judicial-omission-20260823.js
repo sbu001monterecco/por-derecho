@@ -1,4 +1,4 @@
-/* CAM DIRECT INSTRUCTION / CREDITOR CONTROL / AC APPROVAL / JUDICIAL OMISSION — 23 AUGUST 2026 */
+/* FIVE-ACTOR SHADOW ADMINISTRATION / AC COMMISSION + OMISSION / JUDICIAL ACT + OMISSION — 24 AUGUST 2026 */
 (() => {
   const normalise = value => {
     let path = value.replace(/\/index\.html$/, '/');
@@ -29,7 +29,7 @@
   if (!routes.some(route => path.endsWith(route))) return;
 
   const render = () => {
-    if (document.querySelector('[data-cam-criminal-lead="20260823"]')) return;
+    if (document.querySelector('[data-cam-criminal-lead="20260824"]')) return;
     const en = path.includes('/en/') || document.documentElement.lang === 'en';
     const prefix = path.includes('/por-derecho/') ? '/por-derecho/' : '/';
     const href = en
@@ -37,18 +37,18 @@
       : `${prefix}es/control-acreedor-cam-administracion-hecho-omision-judicial/`;
     const controlHref = `${prefix}assets/data/cam-nondilution-thread-closeout-v1.json`;
     const c = en ? {
-      eyebrow: 'EXPRESS CRIMINAL ATTRIBUTION · UPDATED 23 AUGUST 2026',
-      title: 'Direct instruction, creditor in possession, de facto administration and institutional omission',
-      lead: 'Gil Marer and Aweswell directly allege that identified CAM / Acosta Matos and connected private actors deliberately instructed, coordinated, authorised, procured, adopted or knowingly implemented the 7 June 2018 physical-control operation; that the insolvency administrator criminally enabled, approved, ratified or failed in a legally equivalent way to prevent or reverse it; and that specified judicial conduct amounted, in Gil’s allegation, to omissionary judicial prevarication. These are direct criminal allegations, not merely questions or investigative leads and not adjudicated findings.',
-      directK: 'Direct criminal allegation 1 · private instruction',
-      directT: 'CAM / JDAM / Laura Patricia / FMMM',
-      directP: 'Gil alleges that secured credit, isolated title and Community/security authority were deliberately converted into whole-hotel physical control. The contemporaneous email source literal describes the CAM lawyer as <span data-source-literal>“Laura Matos”</span>; the repository’s canonical identity is Laura Patricia Acosta Matos, and the different forename in the filed amendment is controlled as a typo. Native mandate, instruction and participation evidence remains a production demand.',
+      eyebrow: 'EXPRESS CRIMINAL ATTRIBUTION · UPDATED 24 AUGUST 2026',
+      title: 'Five alleged shadow administrators, affirmative insolvency enablement and direct judicial-culpability allegation',
+      lead: 'Gil Marer and Aweswell directly allege that five identified private actors operated, by 2018 at the latest, as a coordinated de facto or shadow-administration structure over Luchy Playa Blanca’s patrimonial and business sphere and the integrated hotel platform, through conduct inside the formal insolvency and outside its recorded perimeter; that the insolvency administrator criminally enabled the structure by affirmative acts as well as omissions; and that Judge Alberto López Villarrubia preserved it through specified decisions, refusals, delay and omissions, thereby allegedly sabotaging or frustrating a developed, finance-backed exit. These are the controlling direct criminal allegations—not merely questions, and not adjudicated findings.',
+      directK: 'Direct criminal allegation 1 · private shadow administration',
+      directT: 'FMMM · Antonio · Shaila · JDAM · Laura Patricia',
+      directP: 'Gil directly accuses Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila María Cogolludo Ramos, José Daniel Acosta Matos and Laura Patricia Acosta Matos of coordinating functions across debt and voting, access and security, keys, maintenance, works and valuation, information, finance and exit, operation, income, title and outcome. The contemporaneous email source literal describes the CAM lawyer as <span data-source-literal>“Laura Matos”</span>; the repository’s canonical identity is Laura Patricia Acosta Matos. Function, instruction, knowledge, intent and causation remain actor-specific production demands.',
       acK: 'Direct criminal allegation 2 · insolvency administrator',
-      acT: 'Criminal approval, enablement or ratification',
-      acP: 'Gil directly alleges that the administrator supplied or facilitated the authority route, knowingly tolerated or ratified the result, or failed in a legally equivalent way to prevent or reverse it. The administrator’s denial and narrower-access account remain material contrary evidence. Scope, knowledge, power to act, intent and causation remain decisive proof questions.',
+      acT: 'Affirmative criminal enablement plus omission',
+      acP: 'Gil directly alleges that the administrator supplied and used the authority route through emails, meetings, requests, authorisations, decisions, implementation, adoption and ratification, and also failed to delimit, supervise, restore, reverse and account. The administrator’s denial and narrower-access account remain material contrary evidence. Scope, knowledge, power and duty, intent and causation remain decisive proof questions.',
       judgeK: 'Direct criminal allegation 3 · court',
-      judgeT: 'Omissionary judicial prevarication',
-      judgeP: 'Gil directly alleges that specified resolutions, refusals, delay or omissions knowingly preserved the private-control result. The legal test requires the exact judicial act, evidence before the judge, competence and duty, objective injustice or malicious delay, knowledge, purpose and causation. An adverse or incomplete ruling is not automatically criminal.',
+      judgeT: 'Affirmative judicial acts, omissions and alleged sabotage of the exit',
+      judgeP: 'Gil directly alleges that specified decisions, refusals, evidential closures, delays and omissions by Judge Alberto López Villarrubia knowingly preserved the private-control result and sabotaged or frustrated a developed, multi-route, finance-backed exit. Gil characterises the sequence as knowing judicial prevarication under the legally applicable forms; that is his direct allegation, not an adjudicated finding. The 13 June 2018 Irigoyen report supports one direct judge meeting; further visits remain unproved. Each act requires the evidence then before the judge, competence and duty, objective injustice or malicious delay, knowledge, purpose and causation.',
       identityT: 'Attribution and source-fidelity control — Laura Patricia Acosta Matos',
       identityP: 'Laura Patricia Acosta Matos is the canonical identity and Gil directly attributes actor-specific participation and responsibility to her. Identity, mandate, presence, exact instructions, knowledge, purpose and criminal responsibility remain separate fields. A source literal is preserved as written and is not silently rewritten as the canonical identity.',
       documentedT: 'What is already documented',
@@ -61,18 +61,18 @@
       control: 'Publication control: merged, publicly verified and recoverable without the originating chat. Open evidence remains identified.',
       controlLabel: 'Open the machine-readable closeout record'
     } : {
-      eyebrow: 'ATRIBUCIÓN PENAL EXPRESA · ACTUALIZADO 23 AGOSTO 2026',
-      title: 'Instrucción directa, acreedor en posesión, administración de hecho y omisión institucional',
-      lead: 'Gil Marer y Aweswell atribuyen directamente a actores identificados de CAM / Acosta Matos y del perímetro privado conectado la instrucción, coordinación, autorización, procuración, adopción o ejecución consciente de la operación de control físico de 7 de junio de 2018; al administrador concursal su habilitación, aprobación, ratificación penal u omisión jurídicamente equivalente; y a actuaciones judiciales concretas, según la alegación de Gil, prevaricación judicial por omisión. Son acusaciones penales directas, no meras preguntas ni simples líneas de investigación y no son declaraciones judiciales.',
-      directK: 'Atribución penal directa 1 · instrucción privada',
-      directT: 'CAM / JDAM / Laura Patricia / FMMM',
-      directP: 'Gil alega que crédito garantizado, títulos aislados y autoridad de Comunidad/seguridad se convirtieron deliberadamente en control físico de todo el hotel. El literal de fuente del correo contemporáneo describe a la abogada CAM como <span data-source-literal>“Laura Matos”</span>; la identidad canónica del repositorio es Laura Patricia Acosta Matos y el nombre diferente del escrito presentado se controla como errata. La prueba nativa de mandato, instrucción y participación sigue siendo un requerimiento de producción.',
+      eyebrow: 'ATRIBUCIÓN PENAL EXPRESA · ACTUALIZADO 24 AGOSTO 2026',
+      title: 'Cinco administradores en la sombra alegados, habilitación concursal afirmativa y atribución directa de culpabilidad judicial',
+      lead: 'Gil Marer y Aweswell alegan directamente que cinco actores privados identificados operaron, a más tardar en 2018, como una estructura coordinada de administradores de hecho o en la sombra sobre la esfera patrimonial y empresarial de Luchy Playa Blanca y la plataforma hotelera integrada, mediante conductas dentro del concurso formal y fuera de su perímetro registrado; que el administrador concursal habilitó penalmente la estructura mediante actos afirmativos y omisiones; y que el Magistrado-Juez Alberto López Villarrubia la preservó mediante resoluciones, negativas, demoras y omisiones concretas, saboteando o frustrando con ello una salida desarrollada y respaldada por financiación. Son las acusaciones penales directas rectoras, no meras preguntas ni declaraciones judiciales.',
+      directK: 'Atribución penal directa 1 · administración privada en la sombra',
+      directT: 'FMMM · Antonio · Shaila · JDAM · Laura Patricia',
+      directP: 'Gil acusa directamente a Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila María Cogolludo Ramos, José Daniel Acosta Matos y Laura Patricia Acosta Matos de coordinar funciones sobre deuda y voto, acceso y seguridad, llaves, mantenimiento, obras y valoración, información, financiación y salida, operación, ingresos, título y resultado. El literal de fuente del correo contemporáneo describe a la abogada CAM como <span data-source-literal>“Laura Matos”</span>; la identidad canónica es Laura Patricia Acosta Matos. Función, instrucción, conocimiento, intención y causalidad siguen siendo requerimientos actor-específicos de producción.',
       acK: 'Atribución penal directa 2 · administrador concursal',
-      acT: 'Aprobación, habilitación o ratificación penal',
-      acP: 'Gil alega directamente que el administrador suministró o facilitó la vía de autoridad, toleró o ratificó conscientemente el resultado, o no lo impidió o revirtió de manera jurídicamente equivalente. La negativa del administrador y su explicación de acceso más limitado permanecen como prueba contraria material. Alcance, conocimiento, capacidad, intención y causalidad siguen siendo cuestiones probatorias decisivas.',
+      acT: 'Habilitación penal afirmativa más omisión',
+      acP: 'Gil alega directamente que el administrador suministró y utilizó la vía de autoridad mediante correos, reuniones, peticiones, autorizaciones, decisiones, implementación, adopción y ratificación, y que además omitió delimitar, supervisar, restaurar, revertir y rendir cuentas. La negativa del administrador y su explicación de acceso más limitado permanecen como prueba contraria material. Alcance, conocimiento, poder y deber, intención y causalidad siguen siendo cuestiones probatorias decisivas.',
       judgeK: 'Atribución penal directa 3 · juzgado',
-      judgeT: 'Prevaricación judicial por omisión',
-      judgeP: 'Gil alega directamente que resoluciones, negativas, demoras u omisiones concretas preservaron conscientemente el resultado de control privado. El test exige acto judicial exacto, prueba ante el juez, competencia y deber, injusticia objetiva o demora maliciosa, conocimiento, finalidad y causalidad. Una resolución adversa o incompleta no es automáticamente penal.',
+      judgeT: 'Actos judiciales afirmativos, omisiones y sabotaje alegado de la salida',
+      judgeP: 'Gil alega directamente que resoluciones, negativas, cierres probatorios, demoras y omisiones concretas del Magistrado-Juez Alberto López Villarrubia preservaron conscientemente el control privado y sabotearon o frustraron una salida desarrollada, multivía y respaldada por financiación. Gil califica la secuencia como prevaricación judicial consciente en las modalidades jurídicamente aplicables; es una alegación directa, no una conclusión judicial. El informe Irigoyen de 13 de junio de 2018 sustenta una reunión directa con el juez; otras visitas siguen sin probarse. Cada acto exige prueba entonces ante el juez, competencia y deber, injusticia objetiva o demora maliciosa, conocimiento, finalidad y causalidad.',
       identityT: 'Control de atribución y fidelidad de fuente — Laura Patricia Acosta Matos',
       identityP: 'Laura Patricia Acosta Matos es la identidad canónica y Gil le atribuye directamente participación y responsabilidad actor-específica. Identidad, mandato, presencia, instrucciones exactas, conocimiento, finalidad y responsabilidad penal son campos separados. El literal de una fuente se conserva como fue escrito y no se sustituye silenciosamente por la identidad canónica.',
       documentedT: 'Lo que ya está documentado',
@@ -88,7 +88,7 @@
 
     const section = document.createElement('section');
     section.className = 'section alt cam-criminal-lead';
-    section.dataset.camCriminalLead = '20260823';
+    section.dataset.camCriminalLead = '20260824';
     section.innerHTML = `<div class="shell">
       <header class="camcl-head"><p class="kicker">${c.eyebrow}</p><h2>${c.title}</h2><p class="camcl-lead">${c.lead}</p><span class="camcl-badge">${c.badge}</span><p class="camcl-control">${c.control} <a href="${controlHref}">${c.controlLabel}</a>.</p></header>
       <div class="camcl-grid">
@@ -101,7 +101,7 @@
     </div>`;
 
     const style = document.createElement('style');
-    style.dataset.camCriminalLeadStyle = '20260823';
+    style.dataset.camCriminalLeadStyle = '20260824';
     style.textContent = `
       .cam-criminal-lead{position:relative;overflow:hidden;background:linear-gradient(145deg,#f7f1ed,#edf3f3)}
       .cam-criminal-lead:before{content:"CONTROL";position:absolute;right:-.04em;top:.05em;font-size:clamp(5rem,14vw,12rem);font-weight:900;letter-spacing:-.07em;color:rgba(19,37,45,.035);pointer-events:none}
