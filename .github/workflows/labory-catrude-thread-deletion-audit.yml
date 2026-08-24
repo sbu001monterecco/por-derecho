@@ -1,0 +1,45 @@
+name: Laborý CATRUDE thread deletion safety
+
+on:
+  pull_request:
+    paths:
+      - 'evidence/sun-park/labory-catrude/**'
+      - 'ops/LABORY_CATRUDE_RECOVERY_**'
+      - 'archive/LABORY_CATRUDE_RECOVERY_CONTINUITY_24AUG2026.md'
+      - 'assets/data/labory-catrude-historical-report-v1.json'
+      - 'es/labory-catrude-antecedente-tecnico-historico/**'
+      - 'en/labory-catrude-historical-technical-antecedent/**'
+      - 'publication-manifests/labory-catrude-historical-report-recovery-20260824.json'
+      - 'scripts/audit_labory_catrude_thread_deletion_safety.py'
+      - '.github/workflows/labory-catrude-thread-deletion-audit.yml'
+      - 'sitemap-labory-catrude.xml'
+      - 'robots.txt'
+  push:
+    branches:
+      - 'agent/labory-catrude-recovery-20260824'
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: labory-catrude-deletion-safety-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Run read-only evidence and deletion-safety audit
+        run: python3 scripts/audit_labory_catrude_thread_deletion_safety.py --output-dir artifacts/labory-catrude-deletion-audit
+      - name: Publish audit summary to the workflow run
+        if: always()
+        run: |
+          cat artifacts/labory-catrude-deletion-audit/summary.md >> "$GITHUB_STEP_SUMMARY" || true
+          cat artifacts/labory-catrude-deletion-audit/result.json || true
