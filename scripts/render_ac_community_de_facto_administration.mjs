@@ -24,6 +24,7 @@ async function inspect(name, route, assertions, screenshot, options = {}) {
     const body = await page.locator('body').innerText();
     for (const assertion of assertions) {
       if (assertion.text) record(`${name}: ${assertion.label}`, body.includes(assertion.text), assertion.text);
+      if (assertion.absentText) record(`${name}: ${assertion.label}`, !body.includes(assertion.absentText), assertion.absentText);
       if (assertion.textSelector) {
         const nodes = page.locator(assertion.textSelector);
         const count = await nodes.count();
@@ -46,6 +47,32 @@ async function inspect(name, route, assertions, screenshot, options = {}) {
         let visible = count === expected;
         for (let index = 0; visible && index < count; index += 1) visible = await nodes.nth(index).isVisible();
         record(`${name}: ${assertion.label}`, visible, `count=${count} expected=${expected} visible=${visible}`);
+      }
+      if (assertion.nonEmptySelector) {
+        const result = await page.locator(assertion.nonEmptySelector).evaluateAll(nodes => ({
+          count: nodes.length,
+          nonEmpty: nodes.every(node => (node.textContent || '').trim().length > 0)
+        }));
+        const expected = assertion.exactCount ?? 1;
+        record(`${name}: ${assertion.label}`, result.count === expected && result.nonEmpty, JSON.stringify(result));
+      }
+      if (assertion.eachChildCount) {
+        const result = await page.locator(assertion.eachChildCount.selector).evaluateAll((nodes, childSelector) => ({
+          count: nodes.length,
+          childCounts: nodes.map(node => node.querySelectorAll(childSelector).length)
+        }), assertion.eachChildCount.childSelector);
+        const expectedRows = assertion.eachChildCount.exactCount;
+        const expectedChildren = assertion.eachChildCount.children;
+        const ok = result.count === expectedRows && result.childCounts.every(count => count === expectedChildren);
+        record(`${name}: ${assertion.label}`, ok, JSON.stringify(result));
+      }
+      if (assertion.firstReadAfterHeroSelector) {
+        const result = await page.locator(assertion.firstReadAfterHeroSelector).evaluate(node => {
+          const main = node.closest('main');
+          const hero = main?.querySelector(':scope > .dossier-hero, :scope > .hero, :scope > section:first-of-type');
+          return { direct: node.parentElement === main, immediatelyAfter: hero?.nextElementSibling === node };
+        });
+        record(`${name}: ${assertion.label}`, result.direct && result.immediatelyAfter, JSON.stringify(result));
       }
       if (assertion.outsideCollapsedSelector) {
         const result = await page.locator(assertion.outsideCollapsedSelector).evaluateAll((nodes) => ({
@@ -204,6 +231,7 @@ const lockedDirectRoutes = [
   ['English RICPE detailed presentation', '/en/ric-private-equity-sun-park/', 'ricpe'],
   ['Spanish Administrator detailed presentation', '/es/concurso-36-2012-administrador-concursal/', 'ac'],
   ['English Administrator detailed presentation', '/en/insolvency-36-2012-insolvency-administrator/', 'ac'],
+  ['Spanish canonical Judge detailed presentation', '/es/concurso-36-2012-magistrado-juez/', 'court'],
   ['Spanish Judge detailed presentation', '/es/concurso-36-2012-juzgado-mercantil-1/', 'court'],
   ['English Judge detailed presentation', '/en/insolvency-36-2012-mercantile-court-1/', 'court'],
   ['Spanish takeover detailed presentation', '/es/toma-control-sun-park-7-junio-2018/', 'takeover'],
@@ -213,14 +241,40 @@ const lockedDirectRoutes = [
 ];
 
 for (const [name, route, presentation] of lockedDirectRoutes) {
+  const spanish = route.startsWith('/es/');
+  const pwcGraphic = spanish
+    ? 'pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png'
+    : 'pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png';
   await inspect(name, route, [
     { label: 'locked detailed component', selector: `section[data-pd-five-ac="20260824b"][data-five-actor-front-page-lock="express-authorization-required"][data-key-direct-route-presentation="${presentation}"]`, exactCount: 1 },
     { label: 'detailed component visible', visibleSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+    { label: 'detailed component outside collapsed record', outsideCollapsedSelector: 'section[data-pd-five-ac="20260824b"]', exactCount: 1 },
+    { label: 'detailed component is first after hero', firstReadAfterHeroSelector: 'section[data-pd-five-ac="20260824b"]' },
+    { label: 'direct-route first-read pin', selector: 'section[data-direct-route-first-read-pin="20260824d"]', exactCount: 1 },
     { label: 'five private actor cards', selector: 'section[data-pd-five-ac] [data-private-actor-card]', exactCount: 5 },
-    { label: 'Administrator and Judge cards', selector: 'section[data-pd-five-ac] [data-institution-card]', exactCount: 2 },
+    { label: 'five non-empty private descriptions', nonEmptySelector: 'section[data-pd-five-ac] [data-private-actor-card] .pd-five-ac__copy', exactCount: 5 },
+    ...['fmmm', 'acr', 'smcr', 'jdam', 'lpam'].map(id => ({ label: `private actor id ${id}`, selector: `section[data-pd-five-ac] [data-private-actor-id="${id}"]`, exactCount: 1 })),
+    { label: 'one Administrator card', selector: 'section[data-pd-five-ac] [data-institution-card="administrator"]', exactCount: 1 },
+    { label: 'one Judge card', selector: 'section[data-pd-five-ac] [data-institution-card="judge"]', exactCount: 1 },
+    { label: 'two distinct institutional role labels', nonEmptySelector: 'section[data-pd-five-ac] .pd-five-ac__institution-role', exactCount: 2 },
+    { label: 'two institutional descriptions', nonEmptySelector: 'section[data-pd-five-ac] .pd-five-ac__institution-copy', exactCount: 2 },
+    { label: 'four acts/omissions columns', nonEmptySelector: 'section[data-pd-five-ac] .pd-five-ac__accountability-column', exactCount: 4 },
+    { label: 'two direct institutional allegations', nonEmptySelector: 'section[data-pd-five-ac] .pd-five-ac__institution-allegation', exactCount: 2 },
+    { label: 'two institutional contrary boundaries', nonEmptySelector: 'section[data-pd-five-ac] .pd-five-ac__institution-boundary', exactCount: 2 },
     { label: 'five actor-specific linkage rows', selector: 'section[data-pd-five-ac] [data-linkage-row]', exactCount: 5 },
+    { label: 'five complete five-cell linkage rows', eachChildCount: { selector: 'section[data-pd-five-ac] [data-linkage-row]', childSelector: '.pd-five-ac__linkage-cell', exactCount: 5, children: 5 } },
+    ...['fmmm', 'acr', 'smcr', 'jdam', 'lpam'].map(id => ({ label: `linkage actor id ${id}`, selector: `section[data-pd-five-ac] [data-linkage-actor-id="${id}"]`, exactCount: 1 })),
+    ...['Francisco Mario Matos Matas', 'Antonio Cogolludo Rojas', 'Shaila María Cogolludo Ramos', 'José Daniel Acosta Matos', 'Laura Patricia Acosta Matos', 'Francisco de Borja Rodríguez-Batllori Laffitte', 'Alberto López Villarrubia'].map(person => ({ label: `identity ${person}`, text: person })),
+    { label: 'forbidden Laura identity absent', absentText: 'Laura Isabel' },
     { label: 'Administrator and Judge portraits loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__institution-portrait', exactCount: 2 },
     { label: 'canonical private-actor portrait loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__portrait', exactCount: 1 },
+    { label: 'approved FMMM portrait', selector: 'section[data-pd-five-ac] img[src*="actors/francisco-mario-matos-matas.jpg"]', exactCount: 1 },
+    { label: 'approved Administrator portrait', selector: 'section[data-pd-five-ac] img[src*="actors/francisco-de-borja-rodriguez-batllori.jpg"]', exactCount: 1 },
+    { label: 'approved Judge portrait', selector: 'section[data-pd-five-ac] img[src*="actors/alberto-lopez-villarrubia.jpg"]', exactCount: 1 },
+    { label: 'two evidence visuals loaded', loadedImageSelector: 'section[data-pd-five-ac] .pd-five-ac__evidence-visuals img', exactCount: 2 },
+    { label: 'approved PwC evidence visual', selector: `section[data-pd-five-ac] img[src*="${pwcGraphic}"]`, exactCount: 1 },
+    { label: 'approved family-plan evidence visual', selector: 'section[data-pd-five-ac] img[src*="acosta-matos-family-hotel-plans.jpg"]', exactCount: 1 },
+    { label: 'seven reciprocal dossier links', selector: 'section[data-pd-five-ac] .pd-five-ac__links a', exactCount: 7 },
   ], null, { openProgressive: false });
 }
 

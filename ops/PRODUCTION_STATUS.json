@@ -1,28 +1,24 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-24T03:09:02Z",
+  "as_of": "2026-08-24T12:23:03Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "main_at_audit": "1c4beb6ef66782c186e743d676f436b0db256710",
-  "exact_live_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
+  "main_at_audit": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+  "exact_live_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
   "last_live_verification": {
     "state": "LIVE_VERIFIED",
-    "source_sha": "1c4beb6ef66782c186e743d676f436b0db256710",
-    "workflow_run": "32685412186",
+    "source_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
+    "workflow_run": "32726738047",
     "artifact_id": null,
     "artifact_digest": null,
-    "verified_at": "2026-08-24T03:09:02Z",
+    "verified_at": "2026-08-24T12:23:03Z",
     "verification_scope": [
-      "pr_899_all_19_pull_request_workflows_success",
-      "post_merge_all_21_workflow_runs_success",
-      "pages_build_and_deployment_run_32685412186_success_for_exact_merge_sha",
-      "eight_critical_es_en_html_routes_http_200_and_exact_markers",
-      "both_new_evidence_map_routes_live",
-      "both_static_homepage_thesis_links_live",
-      "both_ap_instrument_tables_live",
-      "both_canonical_publisher_attributions_live",
-      "machine_readable_evidence_map_http_200"
+      "pr_919_source_and_rendered_actor_visibility_checks_success",
+      "pages_build_and_deployment_run_32726738047_success_for_exact_merge_sha",
+      "both_es_en_homepages_live_with_five_private_actor_cards_two_separate_institutional_cards_and_five_linkage_rows",
+      "then_declared_fourteen_direct_route_surfaces_live_with_exact_actor_component_markers",
+      "canonical_spanish_magistrate_judge_route_gap_found_by_later_redigest_and_assigned_to_final_guard"
     ]
   },
   "branch_protection": {
@@ -34,14 +30,18 @@
   "scheduled_production_monitor": "ACTIVE_ON_MAIN",
   "repository_recovery_bundle": "ACTIVE_ON_MAIN_TEST_PENDING",
   "independent_backup": {
-    "state": "OPEN",
+    "state": "CLOSED_EQUIVALENT_CONTROL_AT_20260818_BASELINE_LATEST_RELEASE_CHECKPOINT_OPEN",
     "tracking_issue": 356,
-    "required_secret": "POR_DERECHO_BACKUP_MIRROR_URL",
-    "restore_tested": false
+    "source_sha": "a2bda8b3efc71d84241b599112a5bf64077bf3d1",
+    "workflow_run": "32149002725",
+    "provider": "Google Drive",
+    "readback": "PASS",
+    "restore_tested": true,
+    "latest_verified_release_separately_bundled": false
   },
   "pages_deployment_mode": {
     "state": "UNCHANGED_AND_LIVE_VERIFIED",
-    "reason": "The functioning Pages delivery path published PR #899 at exact merge SHA 1c4beb6ef66782c186e743d676f436b0db256710. Both new evidence maps and six strengthened strategic routes passed post-merge no-cache readback."
+    "reason": "The functioning Pages delivery path published PR #919 at exact merge SHA a4f8c461058216ed3ec0182896fca2c4bc3c8d9e. Both homepages and the then-declared fourteen direct actor/accountability surfaces passed live readback; the final guard separately closes canonical Spanish Magistrate-Judge route coverage."
   },
   "mission_critical_hardening": {
     "state": "LIVE_VERIFIED",
