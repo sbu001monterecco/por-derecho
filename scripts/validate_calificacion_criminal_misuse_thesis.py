@@ -114,10 +114,13 @@ def main() -> int:
     for marker in ["'/es/'", "'/en/'", "carta-abierta-ministerio-fiscal", "acosta-matos-perimetro", "dataset.calificacionMisuseThesis"]:
         if marker not in loader:
             errors.append(f"scoped loader missing {marker!r}")
-    if "calificacion-criminal-misuse-thesis-20260824.js?v=20260824a" not in site:
+    if "calificacion-criminal-misuse-thesis-20260824.js?v=20260824b" not in site:
         errors.append("assets/site.js: criminal-misuse loader not registered")
     if "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824" not in css:
         errors.append("assets/styles.css: scoped thesis styles missing")
+    for marker in ["pinFirstRead", "hero.nextElementSibling !== section", "observer.observe(main, { childList: true, subtree: true })", "7000, 11000"]:
+        if marker not in loader:
+            errors.append(f"scoped loader missing first-read stability control {marker!r}")
     reader = read("assets/calificacion-reader-experience-20260817.js")
     if "criminalMisuse = block('[data-calificacion-misuse-thesis]')" not in reader or "gateway,\n        criminalMisuse," not in reader:
         errors.append("Calificación reader order does not keep the thesis in the first-read sequence")
