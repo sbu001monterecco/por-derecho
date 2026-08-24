@@ -3,7 +3,7 @@
 Initial control date: 23 August 2026
 Final deletion audit: 24 August 2026
 
-Current deletion status: **PENDING FINAL CLOSEOUT — AUDIT PR MERGE AND PUBLIC-DATA READBACK REQUIRED**
+Current deletion status: **DELETION-SAFE WITH OPEN EVIDENCE**
 
 ## Preserved analytical state
 
@@ -74,6 +74,8 @@ The audit also corrected three continuity defects:
 2. the complete LPB opposition source set and nine annexes are located, while certification of the exact filed-bundle/index mapping remains open; and
 3. the machine-readable negative-role rows identify **Aweswell Limited**, not the incorrect invented form `Aweswell, S.L.`.
 
+PR 950 merged those corrections as `fedb86001cbc85942add421e613e4d3f868d1243` after all `7/7` applicable PR checks passed. Exact-merge Pages run `32781145148` succeeded. At `2026-08-24T21:46:18Z`, the public evidence-map JSON returned HTTP 200, SHA-256 `4c0eafedd757e2724092f45f7b63cf9658255b8291863f611f8f99073aadfc73`, matched the reviewed repository bytes and contained the two corrected **Aweswell Limited** negative-role rows.
+
 Current-main validation passed:
 
 - repository-preservation gate;
@@ -94,6 +96,6 @@ Deletion safety does not authorise deletion of evidence and is not a claim of in
 
 `ME-CAL-RET-003`, `004`, `018`, `019`, `020` and `022`, together with the other open rows, remain controlling. No email was sent, no filing was made and no source evidence was deleted in this closeout.
 
-## Provisional verdict
+## Verdict
 
-**ELIGIBLE FOR DELETION-SAFE WITH OPEN EVIDENCE** once the audit/correction PR is merged and the corrected public evidence-map JSON is read back from Pages. This prospective verdict closes conversation-dependent implementation continuity only. It does not close the investigation, certify the complete court file, establish retaliation or criminal liability, increase the 55% evidential-closure score, or affect any limitation, appeal, preservation, restitution, regulatory or disciplinary step.
+**DELETION-SAFE WITH OPEN EVIDENCE.** This verdict closes conversation-dependent implementation continuity only. It does not close the investigation, certify the complete court file, establish retaliation or criminal liability, increase the 55% evidential-closure score, or affect any limitation, appeal, preservation, restitution, regulatory or disciplinary step.
