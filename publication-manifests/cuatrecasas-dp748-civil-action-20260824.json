@@ -3,8 +3,11 @@
   "control_marker": "cuatrecasas-dp748-civil-action-20260824",
   "owner": "Gil Marer / Aweswell / Matkator",
   "created_at": "2026-08-24T00:00:00Z",
-  "current_state": "DRAFT",
+  "current_state": "LIVE_VERIFIED",
   "branch": "codex/cuatrecasas-uk-status-media-20260824",
+  "controlling_pr": 905,
+  "merge_sha": "44a48d366d662ba20a28e2e82d61506b8deef2cf",
+  "verified_at": "2026-08-24T04:43:16Z",
   "purpose": "Maintain a bilingual, privacy-controlled and Spain-led institutional-accountability position separating the finite DP 748 criminal hypothesis, La Laguna enforcement and assignee evidence ladder, the modular civil mandate-and-billing audit, professional-conduct routes and any secondary jurisdiction-dependent SRA review; add a public-source Edgeworth comparator that permits only partial issue-level comparison and independent proof, while stating definitively that no UK legal proceedings are being pursued.",
   "expected_routes": {
     "es": [
@@ -57,14 +60,17 @@
     "personal_or_mass_pressure_authorised": false
   },
   "validation": {
-    "status": "LOCAL_PASS",
+    "status": "CI_GREEN_LIVE_VERIFIED",
     "evidence": [
       "scripts/validate_cuatrecasas_dp748_civil_action.py",
       "scripts/validate_audience_experience.py",
       "scripts/validate_publication_integrity.py",
       "scripts/validate_unitary_criminal_reverse_engineering.py",
       "git diff --check",
-      "JSON and XML parse"
+      "JSON and XML parse",
+      "PR 905: 15/15 triggered pull-request workflows passed",
+      "Merge 44a48d366d662ba20a28e2e82d61506b8deef2cf reached the GitHub Pages public edge",
+      "8/8 changed bilingual public routes matched the reviewed repository bytes and SHA-256 values"
     ]
   }
 }
