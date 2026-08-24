@@ -24,5 +24,46 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
       - name: Validate thesis, appeal firewall and source-state corrections
-        run: python scripts/validate_calificacion_criminal_misuse_thesis.py
+        run: |
+          python scripts/validate_calificacion_criminal_misuse_thesis.py
+          node --check assets/calificacion-criminal-misuse-thesis-20260824.js
+          node --check scripts/render_calificacion_criminal_misuse_thesis.mjs
+      - name: Use preinstalled Chrome with Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          BROWSER_PATH="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$BROWSER_PATH" ]; then
+            echo "No preinstalled Chrome/Chromium found" >&2
+            exit 1
+          fi
+          echo "PSR_BROWSER_PATH=$BROWSER_PATH" >> "$GITHUB_ENV"
+          "$BROWSER_PATH" --version
+      - name: Serve static site at production subpath
+        run: |
+          mkdir -p /tmp/psr-calificacion-thesis/por-derecho
+          cp -a . /tmp/psr-calificacion-thesis/por-derecho/
+          cd /tmp/psr-calificacion-thesis
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-calificacion-thesis-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-calificacion-thesis-http.log
+          exit 1
+      - name: Render strategic first-read placements
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_CALIFICACION_THESIS_ARTIFACT_DIR: artifacts/calificacion-criminal-misuse-thesis
+        run: node scripts/render_calificacion_criminal_misuse_thesis.mjs
+      - name: Upload rendered validation evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: calificacion-criminal-misuse-thesis-render
+          path: artifacts/calificacion-criminal-misuse-thesis
+          if-no-files-found: warn
+          retention-days: 30
