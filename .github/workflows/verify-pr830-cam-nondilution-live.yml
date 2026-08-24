@@ -72,7 +72,7 @@ jobs:
               "english_cam_dossier": (
                   f"{base}/en/cam-creditor-control-shadow-administration-judicial-omission/",
                   [
-                      'data-express-criminal-attribution="20260823"',
+                      'data-express-criminal-attribution="20260824"',
                       "Gil Marer and Aweswell expressly allege",
                       "These are direct criminal allegations supported by a multi-layer evidential corpus. They are not judicial findings.",
                       "The attribution is direct.",
@@ -83,7 +83,7 @@ jobs:
               "spanish_cam_dossier": (
                   f"{base}/es/control-acreedor-cam-administracion-hecho-omision-judicial/",
                   [
-                      'data-express-criminal-attribution="20260823"',
+                      'data-express-criminal-attribution="20260824"',
                       "Gil Marer y Aweswell atribuyen directamente",
                       "Son acusaciones penales directas apoyadas en un corpus probatorio de varias capas. No son declaraciones judiciales.",
                       "La atribución es directa.",
