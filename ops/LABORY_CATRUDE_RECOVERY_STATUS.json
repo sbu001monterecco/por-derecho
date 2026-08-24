@@ -1,0 +1,79 @@
+{
+  "schema": "por-derecho.labory-catrude-recovery-status.v1",
+  "as_of": "2026-08-24",
+  "public_position": "The historical report has not been positively identified.",
+  "target_status": "NOT_IDENTIFIED",
+  "deletion_state": "not eligible",
+  "source_control": {
+    "private_source_material": "Retained outside the public repository; public files use custody aliases and do not publish Gmail message IDs, attachment IDs, email bodies or private addresses.",
+    "source_artifact_sha256": {
+      "deep_scan_package_zip": "155c37a4a1fb6039570ffe186011165cc56dfa9df6439ae33a328d0640b6312b",
+      "deep_scan_report_markdown": "12d8fd7637f65de3d23a4250ef687c1bdcdf12d42ffb643ef1b4b0329c03d7e4",
+      "ranked_unresolved_archives_csv": "3cd910bc6e9b7b5cb47d4131910bf1a5818bfda7d14fee9cc004206018030d33"
+    }
+  },
+  "search_coverage": {
+    "accessible_top_level_zip_archives": 6,
+    "accessible_nested_zip_archives": 6,
+    "archives_opened_total": 12,
+    "files_recursively_extracted": 303,
+    "extracted_bytes": 218438331,
+    "unresolved_metadata_only_archives": 18,
+    "verified_pre_2026_labory_catrude_matches": 0
+  },
+  "past": [
+    {
+      "date": "2016-05-31",
+      "event": "Jonathan Simó / CLS produced an economic analysis of exploitation expenditure and Community-cost coverage.",
+      "status": "identified related report"
+    },
+    {
+      "date": "2016-06-11",
+      "event": "During the accounting meeting, Francisco Mario Matos Matas said an exhaustive audit and a report for the Community president/board would be prepared.",
+      "status": "documented origin/custody lead; not proof of Laborý authorship"
+    },
+    {
+      "date_window": "2018–2019",
+      "event": "Remembered window for the unidentified historical technical antecedent.",
+      "status": "approximate and unverified"
+    },
+    {
+      "date": "2026-03-18",
+      "event": "Two contemporaneous notes recorded questions about a Laborý-linked economic report and possible use in Arrecife or omission from the concurso.",
+      "status": "private finding aid; not public proof of authorship or use"
+    },
+    {
+      "date": "2026-05-26",
+      "event": "The historical antecedent was raised directly with Laborý, requesting confirmation of existence, approximate scope and location.",
+      "status": "question sent; no location confirmation located"
+    }
+  ],
+  "present": {
+    "finding": "No accessible file establishes the report title, author, commissioning lawyer, client, payer, filing or later use.",
+    "strongest_recovery_lane": "GMAIL-ZIP-001 followed by GMAIL-ZIP-002, GMAIL-ZIP-003 and GMAIL-ZIP-004.",
+    "false_lead_correction": "INFORME FAMARA.pdf is not treated as the target."
+  },
+  "future": [
+    "Recover accessible copies of the ranked Gmail-only ZIPs without publishing private identifiers.",
+    "Hash and recursively extract every recovered archive, including nested archives.",
+    "Search text, metadata, signatures, letterheads, invoices, engagement letters and cover correspondence.",
+    "Obtain certified indexes for Concurso 36/2012 and relevant Arrecife proceedings.",
+    "Request a finite right-of-response identification from Laborý and possible custodians.",
+    "Update repository and pages only when the classification changes or a new primary source is recovered."
+  ],
+  "public_routes": {
+    "es": "es/labory-catrude-antecedente-tecnico-historico/",
+    "en": "en/labory-catrude-historical-technical-antecedent/"
+  },
+  "registers": {
+    "archives": "evidence/sun-park/labory-catrude/archive-register.csv",
+    "candidates": "evidence/sun-park/labory-catrude/candidate-report-register.csv",
+    "custody": "evidence/sun-park/labory-catrude/custody-and-commissioning-matrix.csv"
+  },
+  "audit": {
+    "script": "scripts/audit_labory_catrude_thread_deletion_safety.py",
+    "workflow": ".github/workflows/labory-catrude-thread-deletion-audit.yml",
+    "schedule": "17 */6 * * *",
+    "mode": "read-only; never deletes or commits"
+  }
+}

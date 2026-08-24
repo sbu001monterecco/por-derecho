@@ -1,0 +1,53 @@
+{
+  "publication_id": "LABORY-CATRUDE-HISTORICAL-REPORT-RECOVERY-20260824",
+  "owner": "Gil Marer / Project Sun Rock",
+  "current_state": "PR_OPEN",
+  "date": "2026-08-24",
+  "source_pull_request": 933,
+  "languages": ["en", "es"],
+  "expected_routes": {
+    "en": ["en/labory-catrude-historical-technical-antecedent/index.html"],
+    "es": ["es/labory-catrude-antecedente-tecnico-historico/index.html"]
+  },
+  "expected_source_files": [
+    "evidence/sun-park/labory-catrude/README.md",
+    "evidence/sun-park/labory-catrude/archive-register.csv",
+    "evidence/sun-park/labory-catrude/candidate-report-register.csv",
+    "evidence/sun-park/labory-catrude/custody-and-commissioning-matrix.csv",
+    "evidence/sun-park/labory-catrude/chronology.md",
+    "evidence/sun-park/labory-catrude/search-methodology.md",
+    "evidence/sun-park/labory-catrude/REUPLOAD_REQUIRED.md",
+    "evidence/sun-park/labory-catrude/exclusions.md",
+    "ops/LABORY_CATRUDE_RECOVERY_STATUS.json",
+    "ops/LABORY_CATRUDE_RECOVERY_BACKLOG.md",
+    "archive/LABORY_CATRUDE_RECOVERY_CONTINUITY_24AUG2026.md",
+    "assets/data/labory-catrude-historical-report-v1.json",
+    "scripts/audit_labory_catrude_thread_deletion_safety.py",
+    ".github/workflows/labory-catrude-thread-deletion-audit.yml",
+    "docs/deletion-audits/2026-08-24-labory-catrude-thread.md",
+    "sitemap-labory-catrude.xml",
+    "robots.txt"
+  ],
+  "position": "Historical target not identified; no adverse attribution made.",
+  "public_evidence_prefix": "evidence/sun-park/labory-catrude/",
+  "privacy": {
+    "gmail_message_ids_published": false,
+    "gmail_attachment_ids_published": false,
+    "private_email_bodies_published": false,
+    "private_addresses_published": false,
+    "raw_mixed_archives_published": false
+  },
+  "controls": {
+    "status": "ops/LABORY_CATRUDE_RECOVERY_STATUS.json",
+    "continuity": "archive/LABORY_CATRUDE_RECOVERY_CONTINUITY_24AUG2026.md",
+    "audit_script": "scripts/audit_labory_catrude_thread_deletion_safety.py",
+    "audit_workflow": ".github/workflows/labory-catrude-thread-deletion-audit.yml",
+    "sitemap": "sitemap-labory-catrude.xml"
+  },
+  "source_artifact_sha256": {
+    "deep_scan_package_zip": "155c37a4a1fb6039570ffe186011165cc56dfa9df6439ae33a328d0640b6312b",
+    "deep_scan_report_markdown": "12d8fd7637f65de3d23a4250ef687c1bdcdf12d42ffb643ef1b4b0329c03d7e4",
+    "ranked_unresolved_archives_csv": "3cd910bc6e9b7b5cb47d4131910bf1a5818bfda7d14fee9cc004206018030d33"
+  },
+  "deletion_state": "not eligible"
+}
