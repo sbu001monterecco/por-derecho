@@ -48,12 +48,14 @@
 
     observer?.disconnect();
     deduplicate('.ac-dfa-update-section');
+    deduplicate('section[data-pd-five-ac]');
     deduplicate('.prosecution-entry-20260821');
     deduplicate('[data-prosecution-entry-20260824]');
 
     const isEnglish = document.documentElement.lang === 'en';
     const hero = main.querySelector(':scope > #inicio, :scope > #home, :scope > .hero');
     const controlling = main.querySelector(':scope > .ac-dfa-update-section');
+    const detailed = main.querySelector('section[data-pd-five-ac]');
     const criminalMisuse = main.querySelector('[data-calificacion-misuse-thesis]');
     const priority = main.querySelector(':scope > .priority-band');
     const prosecution = main.querySelector(':scope > .prosecution-entry-20260821, :scope > [data-prosecution-entry-20260824]');
@@ -63,12 +65,12 @@
     const sourceFunds = main.querySelector('.source-funds-notice-section');
     const sanTelmo = main.querySelector('section.interview-evidence[data-pd-san-telmo-attribution="20260819"]');
     const protectedCriminalSequence = [criminalMisuse, priority, prosecution];
-    const coreSections = [hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
+    const coreSections = [hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters];
     if (sourceFunds) coreSections.push(sourceFunds);
     if (sanTelmo) coreSections.push(sanTelmo);
 
     let anchor = hero;
-    for (const section of [controlling, ...protectedCriminalSequence, summary, audiences, perimeters]) {
+    for (const section of [controlling, detailed, ...protectedCriminalSequence, summary, audiences, perimeters]) {
       if (section && anchor) {
         placeAfter(section, anchor);
         anchor = section;
@@ -90,9 +92,17 @@
       }
     }
 
+    if (detailed) {
+      detailed.dataset.audienceProtectedFiveActorVisual = '20260824b';
+      if (detailed.closest('[data-audience-full-record]')) {
+        placeAfter(detailed, controlling || hero);
+      }
+    }
+
     main.dataset.audienceOrder = '20260824';
     main.dataset.expressCriminalAttributionVisible = prosecution ? '20260824' : 'pending';
     main.dataset.fiveActorControllingAllegationVisible = controlling ? '20260824' : 'pending';
+    main.dataset.fiveActorVisualVisible = detailed ? '20260824b' : 'pending';
     main.dataset.sanTelmoAttributionVisible = sanTelmo ? '20260823' : 'pending';
     observer?.observe(main, { childList: true });
     openHashTarget();
@@ -110,6 +120,7 @@
     observer = new MutationObserver(schedule);
     observer.observe(main, { childList: true });
     window.addEventListener('hashchange', openHashTarget);
+    document.addEventListener('pd:five-actor-visual-ready', schedule);
     document.addEventListener('pd:san-telmo-attribution-ready', schedule);
     document.addEventListener('click', (event) => {
       const link = event.target.closest('a[href^="#"]');

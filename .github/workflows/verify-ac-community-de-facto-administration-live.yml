@@ -9,8 +9,22 @@ on:
       - 'assets/ac-community-de-facto-administration-20260820.js'
       - 'assets/ac-de-facto-knowing-facilitation-visibility-20260820.js'
       - 'assets/ac-de-facto-knowing-facilitation-stability-20260820.js'
+      - 'assets/homepage-actor-family-pwc-note-20260819.js'
+      - 'assets/five-actor-accountability-20260824.css'
+      - 'assets/audience-experience-order-20260823.js'
+      - 'assets/ricpe-identity-correction-20260815.js'
+      - 'assets/site-base-20260819.js'
+      - 'assets/site-pre-intervencion-highlight-before-eg95-20260823.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
       - 'assets/data/ac-de-facto-knowing-facilitation-visibility-v1.json'
       - 'assets/site.js'
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/administracion-de-hecho-comunidad-ac/index.html'
+      - 'en/de-facto-administration-community-ac/index.html'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/index.html'
+      - 'en/insolvency-36-2012-mercantile-court-1/index.html'
+      - 'archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md'
       - 'sitemap-ac-community-de-facto-administration.xml'
       - 'robots.txt'
       - 'scripts/render_ac_community_de_facto_administration.mjs'
@@ -56,10 +70,15 @@ jobs:
           targets = {
             'es': (f'{base}/es/administracion-de-hecho-comunidad-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260824"','718.663,24','1.145.798,29']),
             'en': (f'{base}/en/de-facto-administration-community-ac/?{suffix}', ['data-ac-community-shadow-control-page="20260824"','718,663.24','1,145,798.29']),
+            'home_es': (f'{base}/es/?{suffix}', ['data-pd-five-ac="20260824b"','data-five-actor-front-page-lock="express-authorization-required"','data-key-direct-route-presentation="front-page"','data-private-actor-card="05"','data-institution-card="administrator"','data-institution-card="judge"','data-linkage-row','Laura Patricia Acosta Matos']),
+            'home_en': (f'{base}/en/?{suffix}', ['data-pd-five-ac="20260824b"','data-five-actor-front-page-lock="express-authorization-required"','data-key-direct-route-presentation="front-page"','data-private-actor-card="05"','data-institution-card="administrator"','data-institution-card="judge"','data-linkage-row','Laura Patricia Acosta Matos']),
             'base_module': (f'{base}/assets/ac-community-de-facto-administration-20260820.js?{suffix}', ['data-ac-dfa-update','data-ac-dfa-crosslink']),
             'visibility_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-visibility-20260820.js?{suffix}', ['Cinco administradores en la sombra alegados y una habilitación institucional activa','Five alleged shadow administrators and active institutional enablement','paquete de garantías','security package','data-ac-dfa-allegation-visibility','data-ac-dfa-impact-chain','data-ac-dfa-route-relevance']),
             'stability_module': (f'{base}/assets/ac-de-facto-knowing-facilitation-stability-20260820.js?{suffix}', ['panel.dataset.acDfaUpdate','panel.dataset.acDfaCrosslink','panels.slice(1).forEach(removePanel)','data.acDfaVisibilityStability']),
-            'loader': (f'{base}/assets/site.js?{suffix}', ['ac-community-de-facto-administration-20260820.js?v=20260824a','ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-visibility-loader','ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-stability-loader']),
+            'five_actor_module': (f'{base}/assets/homepage-actor-family-pwc-note-20260819.js?{suffix}', ["section.dataset.pdFiveAc = '20260824b'","section.dataset.fiveActorFrontPageLock = 'express-authorization-required'",'isCanonical','isCourt','data-private-actor-card','data-institution-card','data-linkage-row','pd:five-actor-visual-ready']),
+            'five_actor_css': (f'{base}/assets/five-actor-accountability-20260824.css?{suffix}', ['.pd-five-ac__cards','.pd-five-ac__institutional-grid','.pd-five-ac__linkage-row']),
+            'audience_order': (f'{base}/assets/audience-experience-order-20260823.js?{suffix}', ["deduplicate('section[data-pd-five-ac]')",'audienceProtectedFiveActorVisual','fiveActorVisualVisible','pd:five-actor-visual-ready']),
+            'loader': (f'{base}/assets/site.js?{suffix}', ['ac-community-de-facto-administration-20260820.js?v=20260824a','ac-de-facto-knowing-facilitation-visibility-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-visibility-loader','ac-de-facto-knowing-facilitation-stability-20260820.js?v=20260824a','data-ac-de-facto-knowing-facilitation-stability-loader','audience-experience-order-20260823.js?v=20260824b']),
             'sitemap': (f'{base}/sitemap-ac-community-de-facto-administration.xml?{suffix}', ['/por-derecho/es/administracion-de-hecho-comunidad-ac/','/por-derecho/en/de-facto-administration-community-ac/']),
             'robots': (f'{base}/robots.txt?{suffix}', ['sitemap-ac-community-de-facto-administration.xml'])
           }

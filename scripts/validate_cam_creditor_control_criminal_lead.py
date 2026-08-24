@@ -349,7 +349,7 @@ require(
     audience_order,
     (
         "const prosecution = main.querySelector",
-        "[hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
+        "[hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
         "audienceProtectedAttribution",
         "expressCriminalAttributionVisible",
     ),

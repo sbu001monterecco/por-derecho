@@ -4,7 +4,7 @@
 
   // Preserve and execute the complete pre-highlight site loader unchanged.
   const prior = document.createElement('script');
-  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824a', current.src).href;
+  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824c', current.src).href;
   prior.async = false;
   prior.setAttribute('data-pre-intervencion-site-loader', 'true');
   document.head.appendChild(prior);
@@ -336,7 +336,7 @@ The executable loader chain for these modules remains in site-pre-intervencion-h
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-audience-experience-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('audience-experience-order-20260823.js?v=20260824a', current.src).href;
+  module.src = new URL('audience-experience-order-20260823.js?v=20260824b', current.src).href;
   module.async = false;
   module.setAttribute('data-audience-experience-loader', '20260823');
   document.head.appendChild(module);

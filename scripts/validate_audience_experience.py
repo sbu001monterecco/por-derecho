@@ -157,17 +157,79 @@ def validate_home(errors: list[str], lang: str) -> None:
         if marker not in text:
             fail(errors, f"{lang}/index.html: missing metadata/stylesheet marker {marker}")
 
+    for marker in (
+        'data-pd-five-ac="20260824b"',
+        'data-five-actor-accountability-static="true"',
+        'data-five-actor-front-page-lock="express-authorization-required"',
+        'data-key-direct-route-presentation="front-page"',
+        'data-pd-five-ac-css="20260824b"',
+        '../assets/actors/francisco-mario-matos-matas.jpg',
+        '../assets/actors/francisco-de-borja-rodriguez-batllori.jpg',
+        '../assets/actors/alberto-lopez-villarrubia.jpg',
+        'Francisco Mario Matos Matas',
+        'Antonio Cogolludo Rojas',
+        'Shaila María Cogolludo Ramos',
+        'José Daniel Acosta Matos',
+        'Laura Patricia Acosta Matos',
+    ):
+        if marker not in text:
+            fail(errors, f"{lang}/index.html: missing static five-actor accountability marker {marker}")
+    for marker, expected in (
+        ('data-private-actor-card=', 5),
+        ('data-institution-card=', 2),
+        ('data-linkage-row', 5),
+    ):
+        count = text.count(marker)
+        if count != expected:
+            fail(errors, f"{lang}/index.html: expected {expected} {marker} markers, got {count}")
+
+
+def validate_key_direct_routes(errors: list[str]) -> None:
+    routes = (
+        "es/administracion-de-hecho-comunidad-ac/index.html",
+        "en/de-facto-administration-community-ac/index.html",
+        "es/pwc-canarias-carlos-saavedra-sun-park/index.html",
+        "en/pwc-canarias-carlos-saavedra-sun-park/index.html",
+        "es/ric-private-equity-sun-park/index.html",
+        "en/ric-private-equity-sun-park/index.html",
+        "es/concurso-36-2012-administrador-concursal/index.html",
+        "en/insolvency-36-2012-insolvency-administrator/index.html",
+        "es/concurso-36-2012-juzgado-mercantil-1/index.html",
+        "en/insolvency-36-2012-mercantile-court-1/index.html",
+        "es/toma-control-sun-park-7-junio-2018/index.html",
+        "en/sun-park-takeover-7-june-2018/index.html",
+        "es/concurso-36-2012-responsabilidad-institucional/index.html",
+        "en/insolvency-36-2012-institutional-accountability/index.html",
+    )
+    for relative in routes:
+        page = ROOT / relative
+        if not page.exists():
+            fail(errors, f"missing locked five-actor direct route: {relative}")
+            continue
+        text = page.read_text(encoding="utf-8")
+        if "site.js?v=20260824c" not in text:
+            fail(errors, f"{relative}: missing cache-busted five-actor direct-route loader")
+
 
 def validate_runtime_contract(errors: list[str]) -> None:
     module = (ROOT / "assets/audience-experience-order-20260823.js").read_text(encoding="utf-8")
     loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
     prosecution = (ROOT / "assets/prosecution-public-entry-20260821.js").read_text(encoding="utf-8")
     cam_module = (ROOT / "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js").read_text(encoding="utf-8")
+    calificacion = (ROOT / "assets/calificacion-criminal-misuse-thesis-20260824.js").read_text(encoding="utf-8")
+    five_actor_module = (ROOT / "assets/homepage-actor-family-pwc-note-20260819.js").read_text(encoding="utf-8")
+    five_actor_css = (ROOT / "assets/five-actor-accountability-20260824.css").read_text(encoding="utf-8")
+    preservation = (ROOT / "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md").read_text(encoding="utf-8")
+    ricpe_loader = (ROOT / "assets/ricpe-identity-correction-20260815.js").read_text(encoding="utf-8")
+    site_base = (ROOT / "assets/site-base-20260819.js").read_text(encoding="utf-8")
+    pre_intervencion = (ROOT / "assets/site-pre-intervencion-highlight-before-eg95-20260823.js").read_text(encoding="utf-8")
+    site_wrapper = (ROOT / "assets/site-pre-intervencion-highlight-20260820.js").read_text(encoding="utf-8")
     renderer = (ROOT / "scripts/render_audience_experience.mjs").read_text(encoding="utf-8")
 
     for marker in (
         "MutationObserver",
         "deduplicate('.ac-dfa-update-section')",
+        "deduplicate('section[data-pd-five-ac]')",
         "deduplicate('.prosecution-entry-20260821')",
         "sixty-second-summary",
         "resumen-60-segundos",
@@ -176,16 +238,71 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "perimetros-del-caso",
         "data-audience-full-record",
         "openHashTarget",
+        "const detailed = main.querySelector('section[data-pd-five-ac]')",
         "const prosecution = main.querySelector",
-        "[hero, controlling, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
+        "[hero, controlling, detailed, criminalMisuse, priority, prosecution, summary, audiences, perimeters]",
         "main.dataset.expressCriminalAttributionVisible",
         "main.dataset.fiveActorControllingAllegationVisible",
+        "main.dataset.fiveActorVisualVisible",
         "audienceProtectedAttribution",
+        "audienceProtectedFiveActorVisual",
+        "pd:five-actor-visual-ready",
     ):
         if marker not in module:
             fail(errors, f"audience runtime missing contract marker: {marker}")
-    if "audience-experience-order-20260823.js?v=20260824a" not in loader:
+    if "audience-experience-order-20260823.js?v=20260824b" not in loader:
         fail(errors, "site.js does not load the audience-order release module")
+    for marker in (
+        "const detailed = match(home) ? main.querySelector(':scope > section[data-pd-five-ac]') : null",
+        "const anchor = detailed || controlling || sourceFunds || hero",
+    ):
+        if marker not in calificacion:
+            fail(errors, f"Calificacion first-read pin can race the locked five-actor visual: {marker}")
+    for marker, source, label in (
+        ("homepage-actor-family-pwc-note-20260819.js?v=20260824c", ricpe_loader, "five-actor component"),
+        ("ricpe-identity-correction-20260815.js?v=20260824c", site_base, "RICPE identity loader"),
+        ("site-base-20260819.js?v=20260824c", pre_intervencion, "site base loader"),
+        ("site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824c", site_wrapper, "pre-intervencion loader"),
+        ("site-pre-intervencion-highlight-20260820.js?v=20260824c", loader, "site wrapper loader"),
+    ):
+        if marker not in source:
+            fail(errors, f"cache-busted direct-route loader chain missing {label}: {marker}")
+
+    for marker in (
+        "section.dataset.pdFiveAc = '20260824b'",
+        "section.dataset.fiveActorFrontPageLock = 'express-authorization-required'",
+        "section.dataset.keyDirectRoutePresentation = isHome ? 'front-page' : contextKey",
+        "isCanonical",
+        "isCourt",
+        "data-private-actor-card",
+        "data-institution-card",
+        "data-linkage-row",
+        "pd:five-actor-visual-ready",
+        "francisco-de-borja-rodriguez-batllori.jpg",
+        "alberto-lopez-villarrubia.jpg",
+        "NO ROW DECLARES GUILT",
+        "NINGUNA FILA DECLARA CULPABILIDAD",
+    ):
+        if marker not in five_actor_module:
+            fail(errors, f"five-actor module missing static/runtime accountability marker: {marker}")
+    for marker in (
+        ".pd-five-ac__cards",
+        ".pd-five-ac__institutional-grid",
+        ".pd-five-ac__institution-portrait",
+        ".pd-five-ac__linkage-row",
+        "@media (max-width: 780px)",
+    ):
+        if marker not in five_actor_css:
+            fail(errors, f"five-actor stylesheet missing responsive marker: {marker}")
+    for marker in (
+        "express-authorization-required",
+        "court-appointed and judicial-adjacent",
+        "Magistrate-Judge exercises judicial power",
+        "Key direct routes",
+        "may not be removed, hidden behind a closed disclosure",
+    ):
+        if marker not in preservation:
+            fail(errors, f"five-actor preservation lock missing instruction marker: {marker}")
 
     for marker in (
         "section.dataset.expressCriminalAttribution = '20260824'",
@@ -226,6 +343,13 @@ def validate_runtime_contract(errors: list[str]) -> None:
         "protectedAttributionMarker",
         "contraryRecordPresent",
         "direct attribution is hidden in collapsed full record",
+        "fiveActorVisualVisibleBeforeCollapse",
+        "fiveActorFrontPageLock",
+        "keyDirectRoutePresentation",
+        "fiveActorCards",
+        "institutionCards",
+        "linkageRows",
+        "institutionPortraitsLoaded",
     ):
         if marker not in renderer:
             fail(errors, f"audience renderer missing non-dilution check: {marker}")
@@ -237,6 +361,7 @@ def main() -> int:
     public_files = validate_identity(errors)
     validate_home(errors, "es")
     validate_home(errors, "en")
+    validate_key_direct_routes(errors)
     validate_runtime_contract(errors)
 
     if errors:
