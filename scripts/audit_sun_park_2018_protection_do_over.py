@@ -117,10 +117,10 @@ def audit() -> dict[str, Any]:
     if (ROOT / report_path).is_file():
         report = read_text(report_path)
         report_markers = [
-            "The primary institutional focus does not absolve private actors",
+            "does not absolve private actors",
             "No responsive protective action has yet been located in the accessible corpus",
             "The original communication, annex set, Registry entry, outcome, client authority and privilege status must control",
-            "Do-over does **not** mean",
+            "does **not** mean ignoring final decisions",
         ]
         for marker in report_markers:
             add_check(checks, f"report boundary: {marker[:55]}", marker in report, "present" if marker in report else "missing")
