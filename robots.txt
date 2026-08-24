@@ -37,3 +37,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-prosecution-evid
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-fiscalia-tenerife.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-concurso36-court-orders.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-judicial-spine.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-labory-catrude.xml
