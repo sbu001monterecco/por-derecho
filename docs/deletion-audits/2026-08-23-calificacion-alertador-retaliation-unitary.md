@@ -2,7 +2,7 @@
 
 Date: 23 August 2026
 
-Current deletion status: **NOT YET DELETION-SAFE — MERGE AND LIVE READBACK PENDING**
+Current deletion status: **DELETION-SAFE FOR IMPLEMENTATION CONTINUITY — EVIDENCE GAPS REMAIN OPEN**
 
 ## Preserved analytical state
 
@@ -24,7 +24,7 @@ The publication may state the party's strong allegation that the accusation pack
 
 ## Current completion state
 
-- Local implementation: **92%** — all approved source and public changes are locally complete and validated; PR, merge, Pages propagation and exact public readback remain.
+- Publication implementation: **100%** — the approved source and public changes were merged through PR 903 and the Pages public edge passed exact readback.
 - Evidential closure: **55%** under the weighted model in `archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md`.
 - Neither number is a probability of legal success.
 
@@ -36,7 +36,7 @@ The publication may state the party's strong allegation that the accusation pack
 4. Communication-by-communication Law 2/2023 Article 2/3/35 qualification and Article 36/38 detriment/causation matrix.
 5. Full AC/Fiscal source and annex corpus plus every independent/exculpatory ground.
 6. Finca/work/invoice/job/euro crosswalk and date-specific Acosta Matos benefit matrix.
-7. Complete filed LPB opposition/appeal instruments and any exact separate Aweswell Calificación instrument, if one exists.
+7. Certified mapping of the located LPB opposition set to the filed bundle/index; complete filed LPB appeal/receipt; and any exact separate Aweswell Calificación instrument, if one exists.
 8. Certified current status/allocation for DP 1956, daily reference 24 and WB-CAN-005.
 9. Actor- and office-specific receipt, duty, act/omission, supervision and contrary-explanation chain for the institutional criticism of Fiscalía Provincial de Las Palmas and its leadership.
 
@@ -44,7 +44,7 @@ The publication may state the party's strong allegation that the accusation pack
 
 No email was sent, forwarded, filed or used as a transfer mechanism in this work. No private email body, privileged advice or unredacted evidential binary was published.
 
-This audit must be updated with PR, merge SHA, Pages run and exact public readback before the thread can be marked deletion-safe for implementation continuity.
+The implementation continuity record is now deletion-safe because the prompt, controls, PR, merge SHA, validations and exact public readback are preserved here and in the publication manifest. This does not close the 55% evidential queue or authorise deletion of source evidence.
 
 ## 24 August criminal-first reverse-engineering continuation
 
@@ -59,6 +59,6 @@ It adds:
 - live identification of missing bidirectional links among Calificación, elEconomista/Madrid, RPL 2523/2025 and the complete-record reader; and
 - explicit instructions not to publish private emails, privileged material or unredacted binaries merely to increase apparent completeness.
 
-The continuation was later approved for publication on 24 August. The bilingual Calificación, elEconomista/Madrid and complete-record source pages were updated locally; no email or filing was sent. PR, merge and live-readback status must be recorded below when completed. The 55% evidential-closure boundary remains controlling.
+The continuation was approved for publication on 24 August. The bilingual Calificación, elEconomista/Madrid and complete-record source pages were merged through PR 903 as `91334adaa3c82c6b7d4505666188a2d7e98daddb`. All 32 PR workflows passed. No email or filing was sent. The 55% evidential-closure boundary remains controlling.
 
-The controlled 24-Aug live check resolved all `85/85` monitored URLs and passed the semantic controls, but exact source parity was `83/85`: the ES/EN RICPE routes differed from the rebased repository. `ME-CAL-RET-023` records that deployment-reconciliation gap. This branch is not deletion-safe until authorised publication and an `85/85` exact readback are recorded.
+The pre-publication check found `83/85` exact parity. After PR 903 merged, the controlled readback at `2026-08-24T04:10:36Z` resolved all `85/85` monitored URLs, passed every semantic control and matched all `85/85` reviewed source hashes. `ME-CAL-RET-021` and `ME-CAL-RET-023` are therefore closed. The remaining gaps are evidential and procedural, not publication-deployment gaps.
