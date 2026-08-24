@@ -56,6 +56,20 @@
       "en_stale_wording_absent": "opened a channel with CAM"
     }
   },
+  "sale_peace_revision": {
+    "control_date": "2026-08-24",
+    "state": "DRAFT_COMPLETE_VALIDATED",
+    "purpose": "Correct the locales/pools sale figure to EUR 400,000 and publish the connected asset-funds and counsel-transition tracks as Gil/Patricia's false-peace/perverse-incentive investigative thesis.",
+    "evidential_boundary": "The 2018 sale, AC receipt/self-payment report, 2020 payment assurance/praise and later EUR 26,750 Parrilla entry are separate documented records. Bribery, collusion, improper payment and a EUR 400,000-to-EUR 26,750 bank/ledger link remain unproved.",
+    "branch": "codex/counsel-sale-peace-incentive-20260824",
+    "draft_completed_at_utc": "2026-08-24T01:18:50Z",
+    "local_validation": [
+      "JSON_PARSE_PASS",
+      "PUBLICATION_INTEGRITY_PASS",
+      "AUDIENCE_EXPERIENCE_PASS",
+      "DIFF_CHECK_PASS"
+    ]
+  },
   "expected_routes": {
     "es": [
       "es/actores-partes-abogados-representantes/index.html"
@@ -130,7 +144,10 @@
     "remaining professionals coded B-series",
     "pre-engagement no-contact instruction identified as client testimony corroborated by contemporaneous sequencing restrictions",
     "4,458-document client file distinguished from the 179-page inventory actually filed",
-    "actual AC/CAM fee-piece access not inferred from LexNET copy-transfer to Aweswell procurator"
+    "actual AC/CAM fee-piece access not inferred from LexNET copy-transfer to Aweswell procurator",
+    "EUR 400,000 sale price controlled; EUR 1,000 excluded",
+    "apartment suspension, AC outside-suspension position, LPB unitary-plan objection and later nonconvalidation kept distinct",
+    "false peace and perverse incentive attributed; bribery and common fund source not asserted"
   ],
   "institutional_call": [
     "Fiscalía",
@@ -145,7 +162,8 @@
     "native 18 May 2020 Parrilla instruction and July 2020 AC payment-report binary",
     "certified fee-piece access service and consultation history",
     "complete SLJ response and confidentiality necessity proportionality assessment",
-    "B-series identity and mandate verification"
+    "B-series identity and mandate verification",
+    "complete EUR 400,000 purchaser-debit-to-estate-credit-to-ledger chain, including AC remuneration, Parrilla invoice/authority/payment and post-nonconvalidation reconciliation"
   ],
   "publication_safety": {
     "raw_private_emails_committed": false,
