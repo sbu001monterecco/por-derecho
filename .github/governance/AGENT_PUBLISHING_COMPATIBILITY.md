@@ -88,6 +88,32 @@ Existing required checks must not be bypassed silently. If an unrelated check is
 flaky or stale, isolate and report it; repair the enforcement design separately
 rather than expanding the publication diff.
 
+### Emergency main-ruleset recovery
+
+The ordinary recovery path remains a small corrective or revert PR from current
+`main`. Never force-push or delete `main`. Where GitHub supports it, keep
+repository-owner/administrator bypass limited to pull requests so an emergency
+does not create a routine direct-push path.
+
+Use that bypass only for a documented P0/P1 incident or a confirmed
+ruleset/required-check malfunction that prevents an urgent, otherwise-valid PR
+from completing. Before use, record the current `main` SHA, the blocked
+rule/check, the reason and the smallest intended change in the PR or incident
+record; include no private material. Keep the emergency PR free of unrelated
+changes and run the Publication integrity gate plus relevant path-specific
+validators locally.
+
+After merge, confirm the ruleset is Active, obtain a normal passing required
+check, verify the exact merge SHA and affected public routes, and close the
+incident with evidence. If the configuration itself interferes with ordinary
+authorised maintenance, restore the captured pre-change ruleset state and test
+the corrected configuration through a PR.
+
+This is an authenticated repository-owner/administrator contingency, not
+standing authority for an agent or future thread. It changes neither repository
+visibility, collaborators, secrets nor Pages configuration, and it does not
+alter the normal express-authority branch → PR → merge → deploy path.
+
 ## Backup and deletion-safety separation
 
 After a merge, queue a credential-stripped full mirror/bundle and rendered-site
