@@ -1,5 +1,7 @@
 # Homepage actor identity, relationship and chronology control — 19 Aug 2026
 
+> **Superseded implementation note — 24 August 2026:** the earlier `5 + AC` display rule is retained below as historical provenance, but it no longer defines the complete public presentation. The controlling publication lock is now **five private actors + one separate court-appointed/judicial-adjacent Insolvency Administrator + one separate Magistrate-Judge**, followed by five actor-specific linkage rows, on both homepages and the protected direct routes. Read `archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json` before editing. This supersession does not erase the identity, relationship, chronology or source-boundary rules below.
+
 **Official-public-source and allegation-strength reconciliation:** 24 August 2026
 
 ## Canonical identity / relationship rules

@@ -4,7 +4,7 @@
 
   // Preserve and execute the complete pre-highlight site loader unchanged.
   const prior = document.createElement('script');
-  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824c', current.src).href;
+  prior.src = new URL('site-pre-intervencion-highlight-20260820.js?v=20260824e', current.src).href;
   prior.async = false;
   prior.setAttribute('data-pre-intervencion-site-loader', 'true');
   document.head.appendChild(prior);
@@ -162,8 +162,13 @@
   if (showEmailGraphics && position === 'after') {
     const pinFeaturedSection = () => {
       const opening = document.querySelector('main > section:first-of-type');
-      if (opening && opening.nextElementSibling !== section) {
-        opening.insertAdjacentElement('afterend', section);
+      const lockedFiveActorSection = document.querySelector('main > section[data-pd-five-ac]');
+      // The five-actor/Administrator/Judge visual is the authorised first read.
+      // Keep this featured documentary notice immediately after it when present,
+      // rather than running two MutationObservers against the same post-hero slot.
+      const anchor = lockedFiveActorSection || opening;
+      if (anchor && anchor.nextElementSibling !== section) {
+        anchor.insertAdjacentElement('afterend', section);
       }
     };
     const placementGuard = new MutationObserver(pinFeaturedSection);
@@ -249,7 +254,7 @@
   const current = document.currentScript;
   if (!current || document.querySelector('script[data-asset-recovery-intervention-loader]')) return;
   const module = document.createElement('script');
-  module.src = new URL('asset-recovery-preservation-20260821.js?v=20260821a', current.src).href;
+  module.src = new URL('asset-recovery-preservation-20260821.js?v=20260824a', current.src).href;
   module.async = false;
   module.setAttribute('data-asset-recovery-intervention-loader', '20260821');
   document.head.appendChild(module);

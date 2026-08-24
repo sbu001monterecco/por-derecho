@@ -100,6 +100,28 @@
       "alt_en": "Francisco Mario Matos Matas",
       "alt_es": "Francisco Mario Matos Matas"
     },
+    "composite.acosta-matos-family-hotel-plans.source-v1": {
+      "subject_type": "object",
+      "canonical_name": "Acosta Matos family / hotel-plans source image",
+      "short_label": "Acosta Matos plans image",
+      "path": "assets/acosta-matos-family-hotel-plans.jpg",
+      "git_blob_sha": "7ccf4d196777b41abfd5e8c55779f9f5dbdb4eb4",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Existing source-labelled repository image reproduced in the El Economista/RICPE context. Gil identifies José Daniel Acosta Matos and Laura Patricia Acosta Matos in the scene and assumes that editorial attribution. No facial-identification inference is performed and the image alone does not prove title, mandate, wrongdoing, knowledge or coordination.",
+      "approved_contexts": [
+        "homepage five-actor component",
+        "protected five-actor direct-route component",
+        "El Economista/RICPE source context"
+      ],
+      "alt_en": "Four people around a table with plans and designs in front of an Acosta Matos logo",
+      "alt_es": "Cuatro personas alrededor de una mesa con planos y diseños ante el logotipo de Acosta Matos",
+      "source_provenance": {
+        "sha256": "aad5ebaffddf8211be21468f5936b6b1a0066c631919a43a06e9886a9061cd37",
+        "dimensions": "770x420",
+        "format": "jpg",
+        "repository_first_commit": "aff8bb0553753f07a3a80b5f35cd2f483b81e0a8"
+      }
+    },
     "place.sun-park-mynd-yaiza.aerial-primary": {
       "subject_type": "place",
       "canonical_name": "Sun Park / MYND Yaiza",

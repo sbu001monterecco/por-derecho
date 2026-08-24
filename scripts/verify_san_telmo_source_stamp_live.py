@@ -25,6 +25,9 @@ TIMEOUT_SECONDS = 25
 SOURCE_ASSET = "/assets/san-telmo-source-stamp-20260819.js"
 LOADER_ASSET = "/assets/ricpe-identity-correction-20260815.js"
 SITE_ASSET = "/assets/site.js"
+SITE_WRAPPER_ASSET = "/assets/site-pre-intervencion-highlight-20260820.js"
+PRE_INTERVENCION_ASSET = "/assets/site-pre-intervencion-highlight-before-eg95-20260823.js"
+SITE_BASE_ASSET = "/assets/site-base-20260819.js"
 BORJA_ASSET = "/assets/actors/francisco-de-borja-rodriguez-batllori.jpg"
 SUN_PARK_ASSET = "/assets/sun-park-mynd-yaiza.jpg"
 
@@ -83,7 +86,10 @@ LOADER_MARKERS = [
     "san-telmo-source-stamp-20260819.js?v=20260819a",
 ]
 
-SITE_MARKERS = ["ricpe-identity-correction-20260815.js"]
+SITE_MARKERS = ["site-pre-intervencion-highlight-20260820.js"]
+SITE_WRAPPER_MARKERS = ["site-pre-intervencion-highlight-before-eg95-20260823.js"]
+PRE_INTERVENCION_MARKERS = ["site-base-20260819.js"]
+SITE_BASE_MARKERS = ["ricpe-identity-correction-20260815.js"]
 
 
 @dataclass
@@ -196,6 +202,21 @@ def verify_once() -> dict[str, object]:
         raise AssertionError(f"site loader: HTTP {site.status}")
     assert_markers("site loader", site.text, SITE_MARKERS)
 
+    site_wrapper = request(BASE + SITE_WRAPPER_ASSET, cache_bust=True)
+    if site_wrapper.status != 200:
+        raise AssertionError(f"site wrapper: HTTP {site_wrapper.status}")
+    assert_markers("site wrapper", site_wrapper.text, SITE_WRAPPER_MARKERS)
+
+    pre_intervencion = request(BASE + PRE_INTERVENCION_ASSET, cache_bust=True)
+    if pre_intervencion.status != 200:
+        raise AssertionError(f"pre-intervencion loader: HTTP {pre_intervencion.status}")
+    assert_markers("pre-intervencion loader", pre_intervencion.text, PRE_INTERVENCION_MARKERS)
+
+    site_base = request(BASE + SITE_BASE_ASSET, cache_bust=True)
+    if site_base.status != 200:
+        raise AssertionError(f"site base: HTTP {site_base.status}")
+    assert_markers("site base", site_base.text, SITE_BASE_MARKERS)
+
     result = {
         "verified_at": datetime.now(timezone.utc).isoformat(),
         "base": BASE,
@@ -215,6 +236,25 @@ def verify_once() -> dict[str, object]:
             "status": site.status,
             "content_type": site.content_type,
             "bytes": len(site.body),
+            "markers": SITE_MARKERS,
+        },
+        "site_wrapper": {
+            "status": site_wrapper.status,
+            "content_type": site_wrapper.content_type,
+            "bytes": len(site_wrapper.body),
+            "markers": SITE_WRAPPER_MARKERS,
+        },
+        "pre_intervencion_loader": {
+            "status": pre_intervencion.status,
+            "content_type": pre_intervencion.content_type,
+            "bytes": len(pre_intervencion.body),
+            "markers": PRE_INTERVENCION_MARKERS,
+        },
+        "site_base": {
+            "status": site_base.status,
+            "content_type": site_base.content_type,
+            "bytes": len(site_base.body),
+            "markers": SITE_BASE_MARKERS,
         },
         "borja": verify_local_asset(BORJA_ASSET, "image/"),
         "sun_park": verify_local_asset(SUN_PARK_ASSET, "image/"),

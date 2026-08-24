@@ -1,6 +1,6 @@
 # CHATGPT START HERE — Project Sun Rock / Por Derecho
 
-> **Current-state gate (24 August 2026):** read `ops/CURRENT_STATE.json` before the historical handovers below. For Calificación / RPL 2523/2025 work, then read `archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md` and `assets/data/calificacion-rpl2523-evidence-map-v1.json`. Preserve the rule “three appeal instruments for four appellant interests”, the RPL record-only firewall and `not located ≠ nonexistent`.
+> **Current-state and preservation gate (24 August 2026):** first read `AGENTS.md` and `ops/REPOSITORY_PRESERVATION_CONTRACT.json`, then read `ops/CURRENT_STATE.json` before the historical handovers below. For any five-private-actor, Insolvency Administrator, Magistrate-Judge, homepage, key-direct-route or reader-order work, also read `archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md` and `archive/FIVE_ACTOR_VISIBILITY_REGRESSION_AND_REPAIR_24AUG2026.md`. For Calificación / RPL 2523/2025 work, then read `archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md` and `assets/data/calificacion-rpl2523-evidence-map-v1.json`. Preserve the rule “three appeal instruments for four appellant interests”, the RPL record-only firewall and `not located ≠ nonexistent`.
 
 This is the root operating entry point for any ChatGPT thread maintaining this repository, Depository or live site.
 
@@ -15,7 +15,7 @@ assemble the current chain and route ownership; then open the primary sources,
 correction/missing-evidence controls and specialist ledgers for the proposition
 being tested.
 
-1. Inspect current `main` before relying on prior chat context.
+1. Fetch and inspect current remote `main` before relying on prior chat context; apply `AGENTS.md` and the machine-readable preservation contract before editing.
 2. Read `archive/CONTINUOUS_MAINTENANCE_MATRIX.md`.
 3. Read `archive/MISSING_EVIDENCE_REGISTER.md` and `archive/CORRECTION_REGISTER.md`.
 4. Read `archive/CHATGPT_PROMPT_LIBRARY.md` and the specialist protocol relevant to the task.
