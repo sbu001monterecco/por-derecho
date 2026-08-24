@@ -1,0 +1,49 @@
+{
+  "publication_id": "CUATRECASAS-RESOLUTION-INVITATION-20260824",
+  "control_marker": "cuatrecasas-resolution-invitation-20260824",
+  "owner": "Gil Marer / Aweswell Limited",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "DRAFT",
+  "purpose": "Publish a bilingual, public-safe record that Aweswell opened a structured resolution lane with Cuatrecasas while preserving entity separation, every existing or contemplated accountability route, current-counsel confidentiality and the non-admission/non-waiver boundary.",
+  "expected_routes": {
+    "es": [
+      "es/cuatrecasas-sun-park/index.html"
+    ],
+    "en": [
+      "en/cuatrecasas-sun-park/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CUATRECASAS_RESOLUTION_INVITATION_PUBLIC_CONTROL_24AUG2026.md",
+    "scripts/validate_cuatrecasas_resolution_invitation.py"
+  ],
+  "public_anchors": {
+    "es": "invitacion-resolucion",
+    "en": "resolution-invitation"
+  },
+  "publication_safety": {
+    "private_email_body_published": false,
+    "private_recipients_or_addresses_published": false,
+    "delivery_provider_identifiers_published": false,
+    "current_counsel_named_on_public_routes": false,
+    "current_counsel_advice_or_planned_filings_published": false,
+    "cuatrecasas_acceptance_or_standstill_asserted": false,
+    "debt_or_liability_admitted": false,
+    "spanish_masc_stated_as_initiated": false,
+    "choice_of_law_or_jurisdiction_made": false,
+    "rights_or_limitation_positions_waived": false,
+    "silence_treated_as_proof": false
+  },
+  "validation": {
+    "status": "LOCAL_PASS",
+    "evidence": [
+      "scripts/validate_cuatrecasas_resolution_invitation.py",
+      "scripts/validate_cuatrecasas_billing_email_sync.py",
+      "scripts/validate_cuatrecasas_dp748_civil_action.py",
+      "scripts/validate_repository_preservation.py",
+      "scripts/validate_publication_integrity.py",
+      "scripts/validate_audience_experience.py",
+      "git diff --check"
+    ]
+  }
+}
