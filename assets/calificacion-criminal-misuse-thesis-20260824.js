@@ -38,10 +38,12 @@
   const pinFirstRead = (section, main) => {
     const pin = () => {
       const hero = main.querySelector(':scope > section:first-of-type');
-      if (hero && hero.nextElementSibling !== section) hero.insertAdjacentElement('afterend', section);
+      const sourceFunds = main.querySelector(':scope > .source-funds-notice-section--featured');
+      const anchor = sourceFunds || hero;
+      if (anchor && anchor.nextElementSibling !== section) anchor.insertAdjacentElement('afterend', section);
     };
     const observer = new MutationObserver(pin);
-    observer.observe(main, { childList: true, subtree: true });
+    observer.observe(main, { childList: true });
     [0, 100, 350, 1000, 3000, 7000, 11000].forEach(delay => window.setTimeout(pin, delay));
     window.addEventListener('load', () => {
       pin();
