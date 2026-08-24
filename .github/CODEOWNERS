@@ -14,6 +14,9 @@
 /docs/deletion-audits/ @sbu001monterecco
 /archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md @sbu001monterecco
 
+# Agent governance and publishing compatibility
+/.github/governance/ @sbu001monterecco
+
 # High-blast-radius public paths
 /assets/site.js @sbu001monterecco
 /assets/styles.css @sbu001monterecco

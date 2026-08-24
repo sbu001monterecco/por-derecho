@@ -31,6 +31,8 @@ The first CI pass for the final guard also exposed two older composition defects
 - [Source-of-funds run 32750605643](https://github.com/sbu001monterecco/por-derecho/actions/runs/32750605643) also passed on attempt 2 after the same propagation interval. The actor source verifier completed on attempt 8.
 - The exact guard inventory is **2,427 tracked files / 420 bilingual HTML pages / 541 assets / 865 archive files / 167 evidence files**.
 
+Before this closeout branch was integrated, PR #923 appended two non-interfering governance files and changed only governance/bootstrap controls. The current integration baseline therefore contains **2,429 tracked files** while retaining the guard's **420 bilingual HTML pages** and every byte of the protected actor presentation. The closeout was merged forward onto that newer baseline; it did not replace it with the older 2,427-file tree.
+
 The post-merge sweep also exposed two stale **monitor assumptions**, not missing public content. The criminal-engineering and 2022-adjudication live jobs both passed their rendered-DOM and substantive route checks but their raw-source polls still expected final modules directly in an older loader. The executable architecture is now a three-hop chain: `site.js` → `site-pre-intervencion-highlight-20260820.js` → `site-pre-intervencion-highlight-before-eg95-20260823.js` → the final case/adjudication modules. This closeout control release makes both polls verify every exact loader hop and data attribute while retaining the direct-module, route, sitemap, anonymisation, bid and rendered-DOM checks.
 
 ## 3. Durable preservation controls in this package
