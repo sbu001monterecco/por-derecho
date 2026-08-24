@@ -8,11 +8,14 @@ If a fresh ChatGPT thread receives that command in the context of Project Sun Ro
 
 Start with:
 
-1. `MEDIA_CAMPAIGN_NEW_THREAD_START.md`
-2. `archive/prompts/NEW_THREAD_RUN_WRITE_LIKE_THE_WIND_MEDIA_CONTINUATION_23AUG2026.md`
-3. `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`
+1. `archive/MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`
+2. `MEDIA_CAMPAIGN_NEW_THREAD_START.md`
+3. `archive/prompts/NEW_THREAD_RUN_WRITE_LIKE_THE_WIND_MEDIA_CONTINUATION_23AUG2026.md`
+4. `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`
 
 Then execute the current next action from source-controlled state.
+
+The 24-August Gmail reconciliation is controlling for campaign execution state. It supersedes the older files wherever they still describe a package as `PREPARED / NOT SENT` even though the sent copy was later located. Two corrective packages are prepared there, but neither is authorised for transmission.
 
 ## Maximum media distribution
 

@@ -4,6 +4,10 @@
 **Status:** maximum-distribution research and preparation control; no-send authority
 **Scope:** connected Gmail, current repository `main`, live Por Derecho routes and current public media sources
 
+## Superseding Gmail reconciliation — 24 August 2026
+
+This file remains a historical research and preparation snapshot. Its unsent/prior-history statements are superseded for execution by `MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md`, after a fresh Gmail audit located 57 sent copies across 55 threads. Do not execute any target from this ranked list without first reconciling the 24-August record and current Gmail. No correction, resend, follow-up, reply or new email is authorised.
+
 ## Result
 
 The refreshed list prioritises named professionals whose current beat matches one of the source-controlled story modules. It also records collision risks found in Gmail so that a new lane is not mistaken for a new outlet or an untouched person.

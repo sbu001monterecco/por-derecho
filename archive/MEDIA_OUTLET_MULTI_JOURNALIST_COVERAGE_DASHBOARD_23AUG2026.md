@@ -8,6 +8,10 @@
 
 This dashboard is private campaign-control material. Do not publish private contact details, Gmail identifiers or inferred delivery/read states on the public website.
 
+## Superseding Gmail reconciliation — 24 August 2026
+
+Read `MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md` first. The table below is retained as a 23-August planning snapshot; its `NOT SENT`, `ACTIVE` and next-action cells are superseded wherever the 24-August Gmail audit located a sent copy. Do not send from this table. The controlling audit found 57 sent copies across 55 threads, no substantive editorial response, one acknowledgement-only event and four separately classified delivery failures. Two corrections are prepared but not authorised.
+
 ## Current outlet coverage
 
 | Outlet | Journalist / editorial lane 1 | Lane 1 state | Journalist / editorial lane 2 | Lane 2 state | Outlet coverage | Next action |

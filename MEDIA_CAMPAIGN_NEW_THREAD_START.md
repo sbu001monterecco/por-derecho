@@ -6,6 +6,14 @@ Use:
 
 Read `RUN_LIKE_THE_WIND.md`, then `archive/MEDIA_OUTREACH_FOLLOWUP_CONTINUATION_STATE_23AUG2026.md`, then the multi-journalist dashboard. Recover state from current `main`, connected Gmail in both directions, the current website and fresh public sources. Do not reconstruct from memory.
 
+## 24-August controlling Gmail reconciliation
+
+Read `archive/MEDIA_OUTREACH_SENT_RECONCILIATION_AND_CORRECTION_READINESS_24AUG2026.md` before any older campaign queue. A fresh read-only audit located 57 sent copies across 55 threads and proved that many 23-August `PREPARED / NOT SENT` labels are stale, including the Atlántico Hoy maximum-distribution set and the Ramón, Sandra, Javi, Janire and Daniel lanes.
+
+No substantive editorial response was located. Europa Press returned an acknowledgement only; four route/delivery failures require their separate controlled classifications. CR-081 and CR-082 preserve exact corrections for the Iván Alhambra factual/funding-layer errors and the Nacho Calle salutation/identity mismatch. Both are `PREPARED / NOT AUTHORISED / NOT SENT`.
+
+Do not execute a recipient from a historical `NOT SENT` label without reconciling it to the 24-August record and current Gmail. No correction, resend, follow-up, reply or new email is authorised by this file or the project trigger.
+
 ## Current CANARIAS7 state
 
 - Silvia Fernández — economics/RIC/business — SENT + VERIFIED / awaiting response.
