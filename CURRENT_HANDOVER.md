@@ -1,4 +1,8 @@
-# CURRENT HANDOVER — 21 AUGUST 2026
+# CURRENT HANDOVER — CURRENT ROUTING NOTE (24 AUGUST 2026)
+
+> **Read first:** `ops/CURRENT_STATE.json` is the current machine-readable routing layer for repository baseline, live packages, Calificación / RPL 2523/2025 status, finite gaps and open-PR governance. The 21-August handover below remains historical detail and must not be used to overwrite later verified controls.
+
+# HISTORICAL HANDOVER — 21 AUGUST 2026
 
 **Status:** canonical immediate handover for future ChatGPT threads. Read this file before continuing the Sun Park / Cuatrecasas / La Laguna / current-counsel work.
 
