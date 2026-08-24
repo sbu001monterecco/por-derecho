@@ -2,7 +2,7 @@
   "publication_id": "CALIFICACION-ALERTADOR-RETALIATION-UNITARY-20260823",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-23",
-  "current_state": "LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
   "controlling_pr": 903,
   "merge_sha": "91334adaa3c82c6b7d4505666188a2d7e98daddb",
   "subject": "Unitary Calificacion, earlier-reporting, possible-retaliation and connected-proceedings interface",
@@ -84,7 +84,9 @@
   "deployment_evidence": [
     "PR 903 merged to main as 91334adaa3c82c6b7d4505666188a2d7e98daddb after all 32 pull-request workflow runs passed.",
     "The GitHub Pages public edge served the merged bilingual Calificacion, elEconomista/Madrid and complete-record markers and reciprocal links.",
-    "The canonical 85-surface verifier returned HTTP 200 and exact reviewed-source SHA-256 parity for every monitored surface."
+    "The canonical 85-surface verifier returned HTTP 200 and exact reviewed-source SHA-256 parity for every monitored surface.",
+    "PR 950 merged the final continuity and legal-person corrections as fedb86001cbc85942add421e613e4d3f868d1243 after 7/7 applicable PR checks passed.",
+    "Exact-merge Pages run 32781145148 succeeded; the corrected public evidence-map JSON matched reviewed source SHA-256 4c0eafedd757e2724092f45f7b63cf9658255b8291863f611f8f99073aadfc73."
   ],
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
@@ -119,13 +121,21 @@
     ]
   },
   "deletion_record": {
-    "status": "PENDING_AUDIT_PR_MERGE_AND_PUBLIC_DATA_READBACK",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
     "audited_at_utc": "2026-08-24T21:38:27Z",
     "audited_base_main_sha": "5bb676a62edbe662e2dadfcc80229de8d195a514",
     "publication_pull_request": 903,
     "publication_merge_sha": "91334adaa3c82c6b7d4505666188a2d7e98daddb",
     "live_closeout_pull_request": 904,
     "live_closeout_merge_sha": "e422e4ddfc6d0015b6d4dd134b5357288ee777c9",
+    "audit_pull_request": 950,
+    "audit_merge_sha": "fedb86001cbc85942add421e613e4d3f868d1243",
+    "audit_pull_request_checks": "7/7 success",
+    "audit_pages_run_id": 32781145148,
+    "audit_pages_status": "success",
+    "audit_public_data_verified_at_utc": "2026-08-24T21:46:18Z",
+    "audit_public_data_sha256": "4c0eafedd757e2724092f45f7b63cf9658255b8291863f611f8f99073aadfc73",
+    "audit_public_data_result": "HTTP 200, byte-for-byte reviewed-source parity and two Aweswell Limited negative-role rows",
     "audit": "docs/deletion-audits/2026-08-23-calificacion-alertador-retaliation-unitary.md",
     "canonical_recovery_paths": [
       "archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
