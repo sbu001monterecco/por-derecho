@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "cuatrecasas-dp748-civil-action-20260824"
+ACCOUNTABILITY_MARKER = "CUATRECASAS-INSTITUTIONAL-ACCOUNTABILITY-20260824"
 
 ROUTES = {
     "es/cuatrecasas-dp748-accion-civil/index.html": [
@@ -19,6 +20,10 @@ ROUTES = {
         "estimación parcial por insuficiencia de la motivación concreta",
         "esta página no afirma que se haya presentado notificación",
         "omite deliberadamente los nombres",
+        ACCOUNTABILITY_MARKER,
+        "Un requerimiento institucional contestable mediante documentos",
+        "registrará únicamente como <em>no contestado</em>",
+        "Vías de responsabilidad con eje en España",
     ],
     "en/cuatrecasas-dp748-civil-action/index.html": [
         MARKER,
@@ -29,6 +34,10 @@ ROUTES = {
         "partial allowance because the dismissal’s specific reasoning was insufficient",
         "this page does not state that a notification has been filed",
         "deliberately omits the names",
+        ACCOUNTABILITY_MARKER,
+        "A document-answerable institutional challenge",
+        "recorded only as <em>unanswered</em>",
+        "Spain-led accountability routes",
     ],
 }
 
@@ -58,6 +67,59 @@ for rel, markers in ROUTES.items():
     for name in FORBIDDEN_CURRENT_TEAM_NAMES:
         if name.casefold() in text.casefold():
             errors.append(f"{rel}: current legal-team identity leaked")
+
+UNITARY_ROUTES = {
+    "en/cuatrecasas-sun-park/index.html": (
+        "real and substantial opportunity",
+        "2017 denominator",
+        "What “proper performance could have avoided this” can responsibly mean",
+    ),
+    "es/cuatrecasas-sun-park/index.html": (
+        "oportunidad real y sustancial",
+        "Denominador 2017",
+        "Qué puede significar responsablemente «una actuación correcta pudo evitarlo»",
+    ),
+}
+for rel, markers in UNITARY_ROUTES.items():
+    text = (ROOT / rel).read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in text:
+            errors.append(f"{rel}: missing unitary causation marker {marker!r}")
+    for name in FORBIDDEN_CURRENT_TEAM_NAMES:
+        if name.casefold() in text.casefold():
+            errors.append(f"{rel}: current legal-team identity leaked")
+
+GAP_ROUTES = {
+    "en/cuatrecasas-critical-gaps/index.html": (
+        "Critical · CG-010",
+        "Silence or non-response is recorded only as unanswered",
+    ),
+    "es/cuatrecasas-brechas-criticas/index.html": (
+        "Crítica · CG-010",
+        "El silencio o falta de respuesta se registra solo como no contestado",
+    ),
+}
+for rel, markers in GAP_ROUTES.items():
+    text = (ROOT / rel).read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in text:
+            errors.append(f"{rel}: missing pressure-control marker {marker!r}")
+    for name in FORBIDDEN_CURRENT_TEAM_NAMES:
+        if name.casefold() in text.casefold():
+            errors.append(f"{rel}: current legal-team identity leaked")
+
+pressure_control = ROOT / "archive/CUATRECASAS_MAXIMUM_PERMISSIBLE_INSTITUTIONAL_ACCOUNTABILITY_24AUG2026.md"
+if not pressure_control.is_file():
+    errors.append("missing institutional-accountability control")
+else:
+    pressure_text = pressure_control.read_text(encoding="utf-8")
+    for marker in (
+        "cuatrecasas-institutional-accountability-20260824",
+        "Silence, refusal or absence of a public answer",
+        "The civil and professional-liability strategy is Spain-led",
+    ):
+        if marker not in pressure_text:
+            errors.append(f"institutional-accountability control missing {marker!r}")
 
 required_shared = (
     "Acosta Matos",
@@ -96,4 +158,4 @@ if errors:
         print(f" - {error}")
     sys.exit(1)
 
-print("CUATRECASAS DP748 / CIVIL ACTION: PASS (2 bilingual routes; privacy lock active)")
+print("CUATRECASAS DP748 / CIVIL ACTION: PASS (6 bilingual accountability routes; privacy lock active)")
