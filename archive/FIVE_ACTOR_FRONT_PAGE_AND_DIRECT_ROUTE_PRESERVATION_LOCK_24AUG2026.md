@@ -43,4 +43,3 @@ The shared direct-route component carries the same authorization lock and identi
 ## Unchanged evidence discipline
 
 This lock controls prominence and continuity, not adjudication. Every publication must continue to distinguish verified fact, attributed allegation, inference, official outcome, contrary evidence and proof outstanding. Relationship or institutional role does not itself establish knowledge, intent, causation, benefit or criminal liability.
-
