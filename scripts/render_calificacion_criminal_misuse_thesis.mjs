@@ -10,10 +10,10 @@ const outputDir = process.env.PSR_CALIFICACION_THESIS_ARTIFACT_DIR || 'artifacts
 const routes = [
   { key: 'es-canonical', route: '/es/tesis-uso-criminal-procedimiento-calificacion/', variant: 'canonical', anchor: 'hero', pillars: 5 },
   { key: 'en-canonical', route: '/en/insolvency-classification-criminal-misuse-thesis/', variant: 'canonical', anchor: 'hero', pillars: 5 },
-  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'hero' },
-  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'hero' },
-  { key: 'es-institutional', route: '/es/concurso-36-2012-responsabilidad-institucional/', variant: 'featured', anchor: 'hero' },
-  { key: 'en-institutional', route: '/en/insolvency-36-2012-institutional-accountability/', variant: 'featured', anchor: 'hero' },
+  { key: 'es-home', route: '/es/', variant: 'featured', anchor: 'hero', persistent: true },
+  { key: 'en-home', route: '/en/', variant: 'featured', anchor: 'hero', persistent: true },
+  { key: 'es-institutional', route: '/es/concurso-36-2012-responsabilidad-institucional/', variant: 'featured', anchor: 'hero', persistent: true },
+  { key: 'en-institutional', route: '/en/insolvency-36-2012-institutional-accountability/', variant: 'featured', anchor: 'hero', persistent: true },
   { key: 'es-appeal', route: '/es/concurso-36-2012-ap-seccion-4/', variant: 'appeal', anchor: 'hero', appeal: true },
   { key: 'en-appeal', route: '/en/insolvency-36-2012-ap-section-4/', variant: 'appeal', anchor: 'hero', appeal: true },
   { key: 'es-acosta', route: '/es/acosta-matos-perimetro/', variant: 'compact', anchor: 'source-funds', acosta: true },
@@ -71,6 +71,7 @@ try {
           sourceFundsCount: document.querySelectorAll('[data-source-of-funds-notice="full"]').length,
           adjudicationCrosslinkCount: document.querySelectorAll('[data-adjudicacion-crosslink]').length,
           caseHubCount: document.querySelectorAll('[data-case-hub-strip]').length,
+          persistentPin: main?.dataset.calificacionMisusePin || '',
         };
       }, item);
 
@@ -84,6 +85,7 @@ try {
       if (!metrics.loaderRevision.includes('20260824c')) failures.push(`loader=${metrics.loaderRevision}`);
       if (item.pillars && metrics.pillars !== item.pillars) failures.push(`pillars=${metrics.pillars}`);
       if (item.appeal && !metrics.appealFirewall) failures.push('appeal firewall missing');
+      if (item.persistent && metrics.persistentPin !== 'persistent-20260824c') failures.push(`persistent pin=${metrics.persistentPin}`);
       if (item.acosta && metrics.sourceFundsCount !== 1) failures.push(`source-funds modules=${metrics.sourceFundsCount}`);
       if (item.acosta && metrics.adjudicationCrosslinkCount !== 1) failures.push(`adjudication crosslinks=${metrics.adjudicationCrosslinkCount}`);
       if (item.acosta && metrics.caseHubCount !== 1) failures.push(`case hubs=${metrics.caseHubCount}`);
