@@ -1075,15 +1075,15 @@ def check_live_closeout_controls(failures: list[str]) -> None:
                 break
     except (SyntaxError, ValueError) as exc:
         failures.append(f"could not parse production smoke inventory: {exc}")
-    require(isinstance(smoke_checks, list) and len(smoke_checks) == 42,
-            "permanent production smoke must contain exactly 42 checks", failures)
+    require(isinstance(smoke_checks, list) and len(smoke_checks) == 47,
+            "permanent production smoke must contain exactly 47 checks", failures)
     if isinstance(smoke_checks, list):
         paths = [item.get("path") for item in smoke_checks if isinstance(item, dict)]
         kinds = [item.get("kind") for item in smoke_checks if isinstance(item, dict)]
-        require(len(paths) == len(set(paths)) == 42,
-                "production smoke route paths must be 42 unique values", failures)
-        require(len(kinds) == len(set(kinds)) == 42,
-                "production smoke kinds must be 42 unique values", failures)
+        require(len(paths) == len(set(paths)) == 47,
+                "production smoke route paths must be 47 unique values", failures)
+        require(len(kinds) == len(set(kinds)) == 47,
+                "production smoke kinds must be 47 unique values", failures)
         expected_canonical = {
             route.removesuffix("index.html")
             for routes in MANIFEST_ROUTES.values()

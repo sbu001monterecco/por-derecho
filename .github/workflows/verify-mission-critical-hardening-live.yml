@@ -6,6 +6,15 @@ on:
     paths:
       - 'deployment-probes/mission-critical-hardening-20260818.json'
       - 'scripts/production_smoke_check.py'
+      - 'scripts/validate_sent_email_link_continuity.py'
+      - 'publication-manifests/sent-email-link-continuity-20260824.json'
+      - '404.html'
+      - 'de/lava-verde-club-sei-meeting-point/**'
+      - 'es/index.html'
+      - 'es/activo-financiacion-sun-park-mynd/**'
+      - 'es/concurso-36-2012-autos-decisiones/**'
+      - 'es/ricpe-hnt-gc836-trazabilidad/**'
+      - 'es/yaiza-obras-trazabilidad/**'
       - '.github/workflows/verify-mission-critical-hardening-live.yml'
       - '.github/workflows/production-smoke-monitor.yml'
       - '.github/workflows/repository-backup-bundle.yml'
@@ -35,11 +44,15 @@ jobs:
         id: verify
         continue-on-error: true
         run: |
+          set -euo pipefail
           python scripts/production_smoke_check.py \
             --attempts 72 \
             --interval 10 \
             --timeout 20 \
             --output artifacts/mission-critical-live/verification.json
+          python scripts/validate_sent_email_link_continuity.py \
+            --live-base-url https://sbu001monterecco.github.io/por-derecho/ \
+            --timeout 20
       - name: Upload live verification evidence
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "publication_id": "SENT-EMAIL-LINK-CONTINUITY-20260824",
+  "current_state": "DRAFT",
+  "owner": "Por Derecho / Project Sun Rock",
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
+  "purpose": "Continuity inventory for Por Derecho links present in Gmail messages sent during the seven-day audit window. Recipient identities, message subjects and message contents are deliberately excluded.",
+  "audit": {
+    "gmail_query": "in:sent newer_than:7d",
+    "run_date_utc": "2026-08-24",
+    "rolling_window_days": 7,
+    "sent_messages_reviewed": 219,
+    "sent_messages_with_public_urls": 137,
+    "unique_public_urls": 135,
+    "unique_domains": 29,
+    "unique_por_derecho_urls": 68,
+    "por_derecho_url_message_occurrences": 426
+  },
+  "authoritative_base_url": "https://sbu001monterecco.github.io/por-derecho/",
+  "routes": [
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/",
+      "route": "",
+      "message_occurrences": 4
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/assets/intervencion-integridad-bienes-protegidos-en.svg",
+      "route": "assets/intervencion-integridad-bienes-protegidos-en.svg",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/assets/intervencion-integridad-bienes-protegidos-es.svg",
+      "route": "assets/intervencion-integridad-bienes-protegidos-es.svg",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/de/lava-verde-club-sei-meeting-point/",
+      "route": "de/lava-verde-club-sei-meeting-point/",
+      "message_occurrences": 1,
+      "canonical_route": "en/lava-verde-club-sei-meeting-point/"
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/",
+      "route": "en/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/#private-actors",
+      "route": "en/#private-actors",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-icam-ccacm-2026/",
+      "route": "en/cuatrecasas-icam-ccacm-2026/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-sun-park/",
+      "route": "en/cuatrecasas-sun-park/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/de-facto-administration-community-ac/",
+      "route": "en/de-facto-administration-community-ac/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/grant-thornton/2024-04/",
+      "route": "en/grant-thornton/2024-04/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/grant-thornton/cuyas-canarias/",
+      "route": "en/grant-thornton/cuyas-canarias/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/institutional-records/",
+      "route": "en/institutional-records/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/lava-verde-club-sei-meeting-point/",
+      "route": "en/lava-verde-club-sei-meeting-point/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/por-derecho/technical-partners/",
+      "route": "en/por-derecho/technical-partners/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/pp1041-single-most-important-production/",
+      "route": "en/pp1041-single-most-important-production/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/private-actors-pep-influence-aforamiento-related-persons/",
+      "route": "en/private-actors-pep-influence-aforamiento-related-persons/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/pwc-canarias-carlos-saavedra-sun-park/",
+      "route": "en/pwc-canarias-carlos-saavedra-sun-park/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/ric-private-equity-sun-park/",
+      "route": "en/ric-private-equity-sun-park/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/ricpe-idoneidad-series-f-g/",
+      "route": "en/ricpe-idoneidad-series-f-g/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/san-telmo-ricpe-sun-park/",
+      "route": "en/san-telmo-ricpe-sun-park/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/en/site-index/",
+      "route": "en/site-index/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/",
+      "route": "es/",
+      "message_occurrences": 5
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/#private-actors",
+      "route": "es/#private-actors",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/54-cam-proveniencia-minorias-relato-publico/",
+      "route": "es/54-cam-proveniencia-minorias-relato-publico/",
+      "message_occurrences": 40
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/",
+      "route": "es/acreedor-de-registro/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/activo-financiacion-sun-park-mynd/",
+      "route": "es/activo-financiacion-sun-park-mynd/",
+      "message_occurrences": 4,
+      "canonical_route": "es/cadena-instrumentalizacion-ric-fondos-incentivos/"
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/actores-privados-pep-influencia-aforamiento-personas-relacionadas/",
+      "route": "es/actores-privados-pep-influencia-aforamiento-personas-relacionadas/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/administracion-de-hecho-comunidad-ac/",
+      "route": "es/administracion-de-hecho-comunidad-ac/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/audiencia-cuentas-canarias/",
+      "route": "es/audiencia-cuentas-canarias/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/cabildo-lanzarote-turismo-trazabilidad/",
+      "route": "es/cabildo-lanzarote-turismo-trazabilidad/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/carta-abierta-lanzarote/",
+      "route": "es/carta-abierta-lanzarote/",
+      "message_occurrences": 14
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-decisiones/",
+      "route": "es/concurso-36-2012-autos-decisiones/",
+      "message_occurrences": 2,
+      "canonical_route": "es/concurso-36-2012-autos-resoluciones/"
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/",
+      "route": "es/concurso-36-2012-autos-resoluciones/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-separacion-ac-honorarios/",
+      "route": "es/concurso-36-2012-separacion-ac-honorarios/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-sun-park/",
+      "route": "es/cuatrecasas-sun-park/",
+      "message_occurrences": 5
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/dp-1901-2026/",
+      "route": "es/dp-1901-2026/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/eleconomista-javier-romera-enero2025/",
+      "route": "es/eleconomista-javier-romera-enero2025/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-evidencia-profesional-pwc-grant-thornton-rsm/",
+      "route": "es/fiscalia-evidencia-profesional-pwc-grant-thornton-rsm/",
+      "message_occurrences": 12
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-tenerife-dp748/",
+      "route": "es/fiscalia-tenerife-dp748/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/fundacion-por-derecho/palacete-por-derecho/",
+      "route": "es/fundacion-por-derecho/palacete-por-derecho/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/grant-thornton/2024-04/",
+      "route": "es/grant-thornton/2024-04/",
+      "message_occurrences": 20
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/grant-thornton/cuyas-canarias/",
+      "route": "es/grant-thornton/cuyas-canarias/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/hosteltur-sun-park-mynd-yaiza/",
+      "route": "es/hosteltur-sun-park-mynd-yaiza/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/",
+      "route": "es/icalpa-mesa-del-ponente/dip-80-2026/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/revision-criminal-institucional/",
+      "route": "es/icalpa-mesa-del-ponente/dip-80-2026/revision-criminal-institucional/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/",
+      "route": "es/ingenieria-forense-criminal-sun-park/",
+      "message_occurrences": 28
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/",
+      "route": "es/ingenieria-inversa-criminal-unitaria/",
+      "message_occurrences": 29
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/intervencion-general-699645-2026/",
+      "route": "es/intervencion-general-699645-2026/",
+      "message_occurrences": 12
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/la-voz-lanzarote-sun-park-mynd-yaiza/",
+      "route": "es/la-voz-lanzarote-sun-park-mynd-yaiza/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/lava-verde-club-sei-meeting-point/",
+      "route": "es/lava-verde-club-sei-meeting-point/",
+      "message_occurrences": 9
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/medios-trazabilidad-relato-publico/",
+      "route": "es/medios-trazabilidad-relato-publico/",
+      "message_occurrences": 12
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/por-derecho/",
+      "route": "es/por-derecho/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/por-derecho/ejecucion-institucional/",
+      "route": "es/por-derecho/ejecucion-institucional/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/por-derecho/gobernanza-e-independencia/",
+      "route": "es/por-derecho/gobernanza-e-independencia/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/por-derecho/palacete/",
+      "route": "es/por-derecho/palacete/",
+      "message_occurrences": 2
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/pp1041-produccion-documental-decisiva/",
+      "route": "es/pp1041-produccion-documental-decisiva/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/pwc-canarias-carlos-saavedra-sun-park/",
+      "route": "es/pwc-canarias-carlos-saavedra-sun-park/",
+      "message_occurrences": 23
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/registros-institucionales/",
+      "route": "es/registros-institucionales/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/reunion-pwc-fmmm-11-junio-2016/",
+      "route": "es/reunion-pwc-fmmm-11-junio-2016/",
+      "message_occurrences": 3
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+      "route": "es/ric-private-equity-sun-park/",
+      "message_occurrences": 4
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/ricpe-hnt-gc836-trazabilidad/",
+      "route": "es/ricpe-hnt-gc836-trazabilidad/",
+      "message_occurrences": 60
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/ricpe-idoneidad-series-f-g/",
+      "route": "es/ricpe-idoneidad-series-f-g/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/rsm/nnr4-1025c2f66/",
+      "route": "es/rsm/nnr4-1025c2f66/",
+      "message_occurrences": 20
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/san-telmo-ricpe-sun-park/",
+      "route": "es/san-telmo-ricpe-sun-park/",
+      "message_occurrences": 28
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+      "route": "es/toma-control-sun-park-7-junio-2018/",
+      "message_occurrences": 17
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/tsj-canarias-exp-gub-38-2026-alzada-presentada/",
+      "route": "es/tsj-canarias-exp-gub-38-2026-alzada-presentada/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/tsj-canarias-exp-gub-38-2026/",
+      "route": "es/tsj-canarias-exp-gub-38-2026/",
+      "message_occurrences": 1
+    },
+    {
+      "url": "https://sbu001monterecco.github.io/por-derecho/es/yaiza-obras-trazabilidad/",
+      "route": "es/yaiza-obras-trazabilidad/",
+      "message_occurrences": 1,
+      "canonical_route": "es/yaiza-trazabilidad-institucional/"
+    }
+  ]
+}

@@ -37,3 +37,5 @@ jobs:
         run: python scripts/validate_operational_items.py
       - name: Validate mission-critical repository invariants
         run: python scripts/validate_mission_critical_repo.py
+      - name: Validate continuity of Por Derecho links already sent by email
+        run: python scripts/validate_sent_email_link_continuity.py
