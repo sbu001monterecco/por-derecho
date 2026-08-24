@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-24",
+  "workstream": "sun-park-2018-protection-and-do-over",
+  "status": "active",
+  "deletion_eligibility": "not_eligible",
+  "publication_status": "branch_and_pr_only",
+  "liability_status": "not_determined",
+  "canonical_question_es": "Dado el conflicto previo de Comunidad/disidentes, los avisos contables y de autoridad de 2016, la entrada y posterior alineación de intereses CAM/Acosta Matos y los hechos de control material y transacción de 2018, ¿qué medidas protectoras concretas adoptó el Administrador Concursal antes, durante y después para proteger a LPB y la masa?",
+  "canonical_question_en": "Given the pre-existing Community/dissident conflict, the 2016 accounting and authority warnings, the entry and later alignment of CAM/Acosta Matos interests, and the 2018 material-control and transaction events, what concrete protective measures did the insolvency administrator take before, during and afterwards to protect LPB and the estate?",
+  "accountability_order": [
+    "direct_private_actor_conduct",
+    "court_appointed_insolvency_administrator_protection_and_accounting",
+    "subsidiary_lawyer_mandate_action_and_follow_through",
+    "present_day_remediation"
+  ],
+  "controlling_boundary": "One physical hotel did not mean one owner, one debtor, one insolvency estate, one operator, one Community, one client or one source of legal authority.",
+  "evidence_controls": {
+    "missing_document_rule": "not_located_is_not_nonexistent",
+    "liability_rule": "no_final_liability_finding_from_this_workstream",
+    "private_material_rule": "no_private_email_body_tokens_personal_data_or_privileged_advice_in_public_files",
+    "transaction_rule": "do_not_merge_distinct_deeds_fincas_locales_registry_events_or_2022_adjudication",
+    "entity_rule": "keep_LPB_Aweswell_Matkator_CEXP_Community_Pink_CAM_and_third_parties_separate",
+    "adverse_evidence_rule": "retain_provisional_dismissals_adverse_outcomes_and_reasonable_defences"
+  },
+  "added_files": [
+    "reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md",
+    "intelligence/AC_PROTECTION_ACTION_MATRIX_24AUG2026.csv",
+    "intelligence/CUATRECASAS_ACTION_FOLLOW_THROUGH_MATRIX_24AUG2026.csv",
+    "intelligence/JUAN_TOMAS_PARRILLA_MANDATE_ACTION_MATRIX_24AUG2026.csv",
+    "intelligence/SUN_PARK_2018_TRANSACTION_DISAGGREGATION_24AUG2026.csv",
+    "ops/SUN_PARK_DO_OVER_BACKLOG_24AUG2026.md",
+    "ops/SUN_PARK_DO_OVER_STATUS_24AUG2026.json",
+    "es/2018-proteccion-leal-masa/index.html",
+    "en/2018-loyal-protection-estate/index.html"
+  ],
+  "priority_sources": [
+    {
+      "id": "SRC-2016-MEETING",
+      "description": "Native 11 June 2016 audio, metadata, Simó/CLS report and clean transcript",
+      "status": "pending_native_control"
+    },
+    {
+      "id": "SRC-2016-BUROFAX",
+      "description": "Complete 12 July 2016 burofax, annex list, delivery proof and AC response",
+      "status": "pending_certified_public_safe_package"
+    },
+    {
+      "id": "SRC-2018-COMMUNITY-ACCESS",
+      "description": "Complete 18 May–7 June Community, security, access, payer and certified statement record",
+      "status": "pending_complete_record"
+    },
+    {
+      "id": "SRC-2018-SUSPENSION",
+      "description": "Certified 26 June 2018 suspension order and asset schedule",
+      "status": "pending_certified_order"
+    },
+    {
+      "id": "SRC-2018-DEEDS",
+      "description": "Every 28 November 2018 deed/transaction, locales lane and alleged 31-finca lane, kept separate",
+      "status": "pending_instrument_disaggregation"
+    },
+    {
+      "id": "SRC-2018-CUAT-REGISTRY",
+      "description": "Original 28 December 2018 Cuatrecasas Registry communication, annexes, filing proof, outcome and follow-through",
+      "status": "pending_privilege_controlled_recovery"
+    },
+    {
+      "id": "SRC-2019-CONVALIDATION",
+      "description": "Complete 20 March 2019 AC filing and certified 24 October 2019 decision with implementation record",
+      "status": "pending_complete_court_record"
+    },
+    {
+      "id": "SRC-2022-REALISATION",
+      "description": "Full licitation, adjudication, AC report, deed, possession, Registry and accounting chain",
+      "status": "pending_certified_accounting_bridge"
+    }
+  ],
+  "matrix_counts": {
+    "ac_items": 16,
+    "cuatrecasas_items": 12,
+    "juan_tomas_items": 10,
+    "transaction_items": 14
+  },
+  "current_completion_estimate_percent": {
+    "unitary_framing": 90,
+    "public_safe_attribution_controls": 92,
+    "ac_protection_analysis": 72,
+    "cuatrecasas_analysis": 76,
+    "juan_tomas_analysis": 35,
+    "2018_transaction_disaggregation": 62,
+    "certified_source_completeness": 38,
+    "estate_accounting_reconstruction": 30,
+    "present_remedy_readiness": 28,
+    "website_integration": 35
+  },
+  "next_actions": [
+    "add_and_validate_bilingual_2018_protection_pages",
+    "cross_link_from_existing_AC_Cuatrecasas_Community_and_7_June_pages_after_HTML_validation",
+    "recover_priority_certified_sources",
+    "complete_estate_credit_proceeds_and_possible_surplus_accounting_bridge",
+    "obtain_former_counsel_mandate_file_invoice_and_handover_records",
+    "prepare_qualified_Spanish_counsel_remedy_and_limitation_map"
+  ]
+}
