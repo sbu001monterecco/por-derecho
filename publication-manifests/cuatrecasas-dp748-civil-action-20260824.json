@@ -1,0 +1,40 @@
+{
+  "publication_id": "CUATRECASAS-DP748-CIVIL-ACTION-20260824",
+  "control_marker": "cuatrecasas-dp748-civil-action-20260824",
+  "owner": "Gil Marer / Aweswell / Matkator",
+  "created_at": "2026-08-24T00:00:00Z",
+  "current_state": "REMOTE_SOURCE",
+  "branch": "codex/cuatrecasas-dp748-civil-causation-20260823",
+  "purpose": "Publish a bilingual, privacy-controlled position separating the finite DP 748 criminal hypothesis, La Laguna enforcement and assignee evidence ladder, the modular civil mandate-and-billing audit, professional-conduct routes and a jurisdiction-dependent SRA review.",
+  "expected_routes": {
+    "es": ["es/cuatrecasas-dp748-accion-civil/index.html"],
+    "en": ["en/cuatrecasas-dp748-civil-action/index.html"]
+  },
+  "expected_source_files": [
+    "archive/CUATRECASAS_DP748_CIVIL_ACTION_CAUSATION_CONTROL_24AUG2026.md",
+    "scripts/validate_cuatrecasas_dp748_civil_action.py",
+    "sitemap.xml",
+    "sitemap-legal-advisers.xml"
+  ],
+  "publication_safety": {
+    "principal_adversaries_exonerated": false,
+    "cuatrecasas_common_plan_stated_as_fact": false,
+    "acosta_connected_assignee_stated_as_proved": false,
+    "criminal_and_civil_routes_merged": false,
+    "civil_claim_stated_as_filed": false,
+    "sra_notification_stated_as_filed": false,
+    "current_legal_team_named_on_routes": false,
+    "privileged_advice_published": false
+  },
+  "validation": {
+    "status": "LOCAL_PASS",
+    "evidence": [
+      "scripts/validate_cuatrecasas_dp748_civil_action.py",
+      "scripts/validate_audience_experience.py",
+      "scripts/validate_publication_integrity.py",
+      "scripts/validate_unitary_criminal_reverse_engineering.py",
+      "git diff --check",
+      "JSON and XML parse"
+    ]
+  }
+}

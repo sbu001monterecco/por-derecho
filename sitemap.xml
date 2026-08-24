@@ -430,4 +430,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/2022-adjudication-documentary-reconstruction/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/adjudicacion-2022-reconstruccion-documental/"/>
   </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/</loc><lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-dp748-civil-action/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/cuatrecasas-dp748-accion-civil/"/>
+  </url>
 </urlset>

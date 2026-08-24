@@ -1,0 +1,57 @@
+name: Validate Cuatrecasas DP 748 civil action
+
+on:
+  pull_request:
+    paths:
+      - 'es/cuatrecasas-dp748-accion-civil/**'
+      - 'en/cuatrecasas-dp748-civil-action/**'
+      - 'es/cuatrecasas-sun-park/**'
+      - 'en/cuatrecasas-sun-park/**'
+      - 'es/cuatrecasas-brechas-criticas/**'
+      - 'en/cuatrecasas-critical-gaps/**'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'archive/CUATRECASAS_DP748_CIVIL_ACTION_CAUSATION_CONTROL_24AUG2026.md'
+      - 'publication-manifests/cuatrecasas-dp748-civil-action-20260824.json'
+      - 'scripts/validate_cuatrecasas_dp748_civil_action.py'
+      - 'sitemap.xml'
+      - 'sitemap-legal-advisers.xml'
+      - 'README.md'
+      - '.github/workflows/validate-cuatrecasas-dp748-civil-action.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/cuatrecasas-dp748-accion-civil/**'
+      - 'en/cuatrecasas-dp748-civil-action/**'
+      - 'es/cuatrecasas-sun-park/**'
+      - 'en/cuatrecasas-sun-park/**'
+      - 'es/cuatrecasas-brechas-criticas/**'
+      - 'en/cuatrecasas-critical-gaps/**'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'archive/CUATRECASAS_DP748_CIVIL_ACTION_CAUSATION_CONTROL_24AUG2026.md'
+      - 'publication-manifests/cuatrecasas-dp748-civil-action-20260824.json'
+      - 'scripts/validate_cuatrecasas_dp748_civil_action.py'
+      - 'sitemap.xml'
+      - 'sitemap-legal-advisers.xml'
+      - 'README.md'
+      - '.github/workflows/validate-cuatrecasas-dp748-civil-action.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Compile validator
+        run: python -B -m py_compile scripts/validate_cuatrecasas_dp748_civil_action.py
+      - name: Validate bilingual routes, language locks and privacy
+        run: python -B scripts/validate_cuatrecasas_dp748_civil_action.py
