@@ -22,10 +22,21 @@
   },
   "responsibility_revision": {
     "control_date": "2026-08-24",
-    "state": "DRAFT",
+    "state": "PR_OPEN",
     "purpose": "Correct the Parrilla-Daniel-AC responsibility and influence sequence, remove any unsupported characterisation of SLJ work as substantial, record the no-signed-filing fee judgment, and define the later client-file inventory disclosure precisely.",
     "evidential_boundary": "Attempted influence through outgoing counsel is published as a document-based investigative inference. Unlawful motive, collusion, resignation causation, theft and actual AC/CAM access to the later fee-piece material are not published as proved facts.",
-    "draft_completed_at_utc": "2026-08-24T00:54:17Z"
+    "draft_completed_at_utc": "2026-08-24T00:54:17Z",
+    "branch": "codex/counsel-responsibility-daniel-20260824",
+    "source_head_sha": "489529af9fe6875ed434293c1fabd6c57e296200",
+    "pull_request": 885,
+    "pull_request_url": "https://github.com/sbu001monterecco/por-derecho/pull/885",
+    "opened_at_utc": "2026-08-24T00:59:38Z",
+    "local_validation": [
+      "JSON_PARSE_PASS",
+      "PUBLICATION_INTEGRITY_PASS",
+      "AUDIENCE_EXPERIENCE_PASS",
+      "DIFF_CHECK_PASS"
+    ]
   },
   "expected_routes": {
     "es": [

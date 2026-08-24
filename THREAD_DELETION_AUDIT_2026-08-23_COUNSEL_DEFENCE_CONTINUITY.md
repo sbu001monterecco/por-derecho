@@ -130,7 +130,8 @@ The public page records Gil Marer’s call for Fiscalía and ICALPA to take noti
 - added the exact 28 May–5 June intermediary/influence sequence and strongest contrary evidence;
 - replaced any implication of substantial SLJ work with the claimed-hours/no-signed-filing distinction;
 - separated the 179-page inventory from the 4,458 underlying client files and left actual AC/CAM access open;
-- publication/deployment identifiers and public-edge verification are pending until this revision is merged and deployed.
+- publication PR: [#885](https://github.com/sbu001monterecco/por-derecho/pull/885), source head `489529af9fe6875ed434293c1fabd6c57e296200`;
+- merge/deployment identifiers and public-edge verification remain pending.
 
 ## Final gate
 
