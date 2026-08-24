@@ -167,7 +167,7 @@ def main() -> int:
     for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')", "const anchor = detailed || controlling || sourceFunds || hero", "observer.observe(main, { childList: true })", "calificacionMisusePin", "window.setInterval(pin, 1000)", "22000, 30000"]:
         if marker not in loader:
             errors.append(f"scoped loader missing first-read stability control {marker!r}")
-    for marker in ["es-institutional", "en-appeal", "es-acosta", "es-guided-calificacion", "sourceFundsCount", "appealFirewall", "positionCount", "closureTests", "20260824d"]:
+    for marker in ["es-institutional", "en-appeal", "es-acosta", "es-guided-calificacion", "const detailed = main?.querySelector(':scope > section[data-pd-five-ac]')", "const anchor = detailed || legacyAnchor", "sourceFundsCount", "appealFirewall", "positionCount", "closureTests", "20260824d"]:
         if marker not in render:
             errors.append(f"rendered first-read gate missing {marker!r}")
     if "render_calificacion_criminal_misuse_thesis.mjs" not in workflow or "Upload rendered validation evidence" not in workflow:

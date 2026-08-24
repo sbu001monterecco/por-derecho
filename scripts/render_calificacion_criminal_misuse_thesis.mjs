@@ -51,9 +51,11 @@ try {
         const direct = Array.from(main?.children || []);
         const thesis = document.querySelector('[data-calificacion-misuse-thesis]');
         const hero = main?.querySelector(':scope > section:first-of-type');
+        const detailed = main?.querySelector(':scope > section[data-pd-five-ac]');
         const sourceFunds = main?.querySelector(':scope > .source-funds-notice-section--featured');
         const guided = main?.querySelector(':scope > #calificacion-reader-gateway');
-        const anchor = spec.anchor === 'source-funds' ? sourceFunds : spec.anchor === 'guided' ? guided : hero;
+        const legacyAnchor = spec.anchor === 'source-funds' ? sourceFunds : spec.anchor === 'guided' ? guided : hero;
+        const anchor = detailed || legacyAnchor;
         const text = thesis?.textContent?.replace(/\s+/g, ' ').trim() || '';
         const style = thesis ? getComputedStyle(thesis) : null;
         const position = document.querySelector('[data-calificacion-position-objectives]');
