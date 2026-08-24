@@ -76,8 +76,12 @@
     const persistent = match(featured);
     const pin = () => {
       const hero = main.querySelector(':scope > section:first-of-type');
+      const controlling = main.querySelector(':scope > .ac-dfa-update-section');
       const sourceFunds = main.querySelector(':scope > .source-funds-notice-section--featured');
-      const anchor = sourceFunds || hero;
+      // The five-actor/AC/judicial allegation is the controlling first-read thesis.
+      // Keep this legacy Calificacion panel immediately after it instead of racing
+      // the audience-order controller for the first position after the hero.
+      const anchor = controlling || sourceFunds || hero;
       if (anchor && anchor.nextElementSibling !== section) anchor.insertAdjacentElement('afterend', section);
     };
     const observer = new MutationObserver(pin);
