@@ -21,6 +21,7 @@
   ],
   "source_data": "assets/data/garrigues-la-laguna-proceeding-v1.json",
   "public_transcription": "evidence/garrigues-la-laguna/SENTENCIA_41_2014_PUBLIC_TRANSCRIPTION_ES.md",
+  "public_wider_matter_coverage_register": "evidence/garrigues-la-laguna/JUAN_TOMAS_PARRILLA_WIDER_MATTER_COVERAGE_REGISTER_ES.md",
   "evidence_register": "archive/GARRIGUES_LA_LAGUNA_344_2013_EVIDENCE_AND_COMMUNICATIONS_REGISTER_24AUG2026.md",
   "judgment": {
     "original_filename": "Sentencia 344-2013.pdf",
@@ -34,8 +35,10 @@
     "judgment": "LOCATED_AND_TRANSCRIBED",
     "claim": "NOT_LOCATED_JUDGMENT_DERIVED_RECONSTRUCTION",
     "defence": "NOT_LOCATED_JUDGMENT_DERIVED_RECONSTRUCTION",
-    "communications": "FINITE_PUBLIC_SAFE_INDEX_PRIVATE_BODIES_WITHHELD",
-    "costs_appeal_finality": "OPEN"
+    "communications": "AUDITED_RETRIEVAL_COUNTS_AND_PUBLIC_SAFE_SUMMARIES_PRIVATE_BODIES_WITHHELD",
+    "wider_matter_parrilla_corpus": "PARTIAL_REPOSITORY_AND_PUBLIC_COVERAGE_MATERIAL_GAPS_REMAIN",
+    "costs_appeal_finality": "OPEN",
+    "parrilla_final_invoices_receipts_and_payment_authority": "OPEN"
   },
   "required_public_propositions": [
     "Garrigues claimed EUR 63,441.67",
@@ -44,7 +47,12 @@
     "HAVAVIDA paid EUR 9,450 to Garrigues, not to Juan Tomás Parrilla",
     "Parrilla defence fee was described as EUR 2,500 in two EUR 1,250 legs",
     "Original claim and defence have not been located",
-    "Later 2016 treatment excluded EUR 51,156.67 and retained EUR 12,285"
+    "Later 2016 treatment excluded EUR 51,156.67 and retained EUR 12,285",
+    "The June 2012 six-invoice demand totalled EUR 64,318.20; the EUR 876.53 difference from the court claim equals invoice 10014806 IGIC",
+    "The LPB vendor ledger records EUR 85,353.06 invoiced, EUR 66,945.90 credits and an EUR 18,407.16 balance",
+    "A retrospective Aweswell internal accounting schedule records EUR 20,000 and EUR 10,000 entries concerning Parrilla, subject to invoice, bank and IGIC reconciliation",
+    "The Parrilla proforma is located, but final invoices, receipts, exact payer allocation and payment authority remain missing",
+    "Not every Parrilla pleading and decision is in the repository and online in redacted form"
   ],
   "prohibited_public_content": [
     "raw private email bodies",
@@ -55,8 +63,8 @@
     "privileged legal advice",
     "unredacted native judgment PDF"
   ],
-  "open_evidence_id": "ME-086",
-  "correction_id": "CR-088",
+  "open_evidence_id": ["ME-086", "ME-087"],
+  "correction_id": ["CR-088", "CR-089", "CR-090"],
   "proceeding_id": "TF-CIV-006",
   "validator": "scripts/validate_garrigues_la_laguna.py"
 }
