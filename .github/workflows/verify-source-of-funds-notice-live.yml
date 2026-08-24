@@ -231,11 +231,15 @@ jobs:
                 if (verifyFeatured && featured.has(target.path)) {
                   const featureState = await page.evaluate(() => {
                     const opening = document.querySelector('main > section:first-of-type');
+                    const lockedFiveActorSection = document.querySelector('main > section[data-pd-five-ac]');
                     const section = document.querySelector('.source-funds-notice-section--featured');
                     const graphics = [...document.querySelectorAll('.source-funds-email-graphic')];
                     const images = graphics.map(node => node.querySelector('img')).filter(Boolean);
+                    const expectedAnchor = lockedFiveActorSection || opening;
                     return {
-                      immediatelyAfterOpening: Boolean(opening && section && opening.nextElementSibling === section),
+                      immediatelyAfterExpectedAnchor: Boolean(expectedAnchor && section && expectedAnchor.nextElementSibling === section),
+                      lockedActorFirstAfterOpening: !lockedFiveActorSection || Boolean(opening && opening.nextElementSibling === lockedFiveActorSection),
+                      expectedAnchor: lockedFiveActorSection ? 'locked-five-actor-section' : 'opening-section',
                       graphicCount: graphics.length,
                       imageStates: images.map(image => ({
                         loading: image.loading,
@@ -248,7 +252,8 @@ jobs:
                       })),
                     };
                   });
-                  if (!featureState.immediatelyAfterOpening) failures.push('featured placement is not immediately after opening section');
+                  if (!featureState.immediatelyAfterExpectedAnchor) failures.push(`featured placement is not immediately after ${featureState.expectedAnchor}`);
+                  if (!featureState.lockedActorFirstAfterOpening) failures.push('locked five-actor section is not immediately after opening section');
                   if (featureState.graphicCount !== 2) failures.push(`featured graphics=${featureState.graphicCount}`);
                   if (featureState.imageStates.length !== 2) failures.push(`featured images=${featureState.imageStates.length}`);
                   for (const image of featureState.imageStates) {
