@@ -14,6 +14,10 @@
     '/es/concurso-36-2012-responsabilidad-institucional/',
     '/en/insolvency-36-2012-institutional-accountability/'
   ]);
+  const canonical = new Set([
+    '/es/tesis-uso-criminal-procedimiento-calificacion/',
+    '/en/insolvency-classification-criminal-misuse-thesis/'
+  ]);
   const compact = new Set([
     '/es/concurso-36-2012-administrador-concursal/',
     '/en/insolvency-36-2012-insolvency-administrator/',
@@ -31,8 +35,31 @@
   ]);
   const match = suffixes => [...suffixes].some(suffix => path.endsWith(suffix));
 
+  const pinFirstRead = (section, main) => {
+    const pin = () => {
+      const hero = main.querySelector(':scope > section:first-of-type');
+      if (hero && hero.nextElementSibling !== section) hero.insertAdjacentElement('afterend', section);
+    };
+    const observer = new MutationObserver(pin);
+    observer.observe(main, { childList: true, subtree: true });
+    [0, 100, 350, 1000, 3000, 7000, 11000].forEach(delay => window.setTimeout(pin, delay));
+    window.addEventListener('load', () => {
+      pin();
+      window.setTimeout(pin, 7000);
+      window.setTimeout(() => observer.disconnect(), 12000);
+    }, { once: true });
+    window.setTimeout(() => observer.disconnect(), 15000);
+    pin();
+  };
+
   const place = () => {
-    if (document.querySelector('[data-calificacion-misuse-thesis]')) return;
+    const existing = document.querySelector('[data-calificacion-misuse-thesis]');
+    if (existing) {
+      if (!match(canonical)) return;
+      const existingMain = document.querySelector('main');
+      if (existingMain) pinFirstRead(existing, existingMain);
+      return;
+    }
     const isFeatured = match(featured);
     if (!isFeatured && !match(compact)) return;
     const main = document.querySelector('main');
@@ -103,6 +130,7 @@
       section.append(shell);
     }
     hero.insertAdjacentElement('afterend', section);
+    pinFirstRead(section, main);
   };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', place, { once: true });
