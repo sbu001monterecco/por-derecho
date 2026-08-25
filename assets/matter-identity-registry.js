@@ -27,10 +27,12 @@
   const prefix=location.pathname.includes('/por-derecho/')?'/por-derecho':'';
   const routeFor=r=>{const route=r.routes&&(r.routes[root.dataset.lang]||r.routes.en||r.routes.es);if(!route)return null;if(/^https?:\/\//i.test(route))return route;return `${prefix}${route.startsWith('/')?route:`/${route}`}`;};
   const actionHub=root.dataset.actionHubUrl?new URL(root.dataset.actionHubUrl,document.baseURI).href:null;
+  const inactiveActionStates=new Set(['CLOSED','COMPLETE','COMPLETED','RESOLVED','CANCELLED','CANCELED']);
+  const isActiveAction=a=>!inactiveActionStates.has(String(a?.status||'OPEN').toUpperCase());
 
   function indexActions(){
     actionsById=new Map();
-    (matrix?.actions||[]).forEach(a=>new Set([...(a.recipients||[]),...(a.actors||[]),...(a.proceedings||[])]).forEach(id=>{
+    (matrix?.actions||[]).filter(isActiveAction).forEach(a=>new Set([...(a.recipients||[]),...(a.actors||[]),...(a.proceedings||[])]).forEach(id=>{
       if(!actionsById.has(id))actionsById.set(id,[]);actionsById.get(id).push(a);
     }));
     actionsById.forEach(list=>list.sort((a,b)=>String(a.priority||'').localeCompare(String(b.priority||''))||String(a.action_id).localeCompare(String(b.action_id))));
