@@ -1,0 +1,64 @@
+name: Tech Platform monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * *'
+  pull_request:
+    paths:
+      - '.github/evidence-intelligence/**'
+      - '.github/workflows/tech-platform-monitor.yml'
+      - '.github/workflows/evidence-intelligence-rpl2523-pilot.yml'
+      - 'assets/data/calificacion-rpl2523-evidence-map-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'archive/CALIFICACION_OPPOSITIONS_APPEALS_FIVE_PARTY_SOURCE_CONTROL_23AUG2026.md'
+      - 'docs/deletion-audits/2026-08-25-tech-platform-evidence-intelligence-thread.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/evidence-intelligence/**'
+      - '.github/workflows/tech-platform-monitor.yml'
+      - '.github/workflows/evidence-intelligence-rpl2523-pilot.yml'
+      - 'assets/data/calificacion-rpl2523-evidence-map-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'archive/CALIFICACION_OPPOSITIONS_APPEALS_FIVE_PARTY_SOURCE_CONTROL_23AUG2026.md'
+      - 'docs/deletion-audits/2026-08-25-tech-platform-evidence-intelligence-thread.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tech-platform-monitor-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v6.1.0
+        with:
+          python-version: '3.11'
+      - name: Validate identity compatibility and public/private boundary
+        run: python .github/evidence-intelligence/scripts/validate_identity_compatibility.py --repo-root .
+      - name: Re-run strict RPL 2523 retrieval proof
+        run: >-
+          python .github/evidence-intelligence/scripts/run_rpl2523_retrieval_pilot.py
+          --repo-root .
+          --output artifacts/tech-platform/rpl2523-retrieval-results.json
+      - name: Produce Tech Platform health report
+        run: >-
+          python .github/evidence-intelligence/scripts/monitor_tech_platform.py
+          --repo-root .
+          --output artifacts/tech-platform/health.json
+      - name: Upload monitor evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: tech-platform-monitor-${{ github.sha }}
+          path: artifacts/tech-platform/
+          if-no-files-found: warn
+          retention-days: 30
