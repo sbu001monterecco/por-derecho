@@ -31,6 +31,18 @@ ALLOWED_STATES = {
 ALLOWED_PRIORITIES = {"P0", "P1", "P2"}
 TASK_ID = re.compile(r"^(P[0-2])(?:-[A-Z]+)+-[0-9]{2}$")
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
+PATH_PREFIXES = (
+    ".github/",
+    "archive/",
+    "assets/",
+    "docs/",
+    "en/",
+    "es/",
+    "ops/",
+    "research/",
+    "scripts/",
+)
+PATH_SUFFIXES = (".csv", ".html", ".js", ".json", ".md", ".txt", ".xml", ".yml", ".yaml")
 REQUIRED_TASK_IDS = {
     "P0-OPS-01",
     "P0-PRIV-01",
@@ -75,6 +87,19 @@ def load_json(path: Path, errors: list[str]) -> dict[str, Any]:
 def require_file(rel: str, errors: list[str]) -> None:
     if not (ROOT / rel).is_file():
         errors.append(f"referenced file does not exist: {rel}")
+
+
+def looks_like_repository_path(value: str) -> bool:
+    """Return True only for a repository locator, not descriptive prose.
+
+    A description may contain a slash (for example, "current ES/EN route
+    inventory") without being a path. Controlled paths use a known prefix,
+    a path-like suffix, or are a root filename already present in the tree.
+    """
+
+    if value.startswith(PATH_PREFIXES) or value.endswith(PATH_SUFFIXES):
+        return True
+    return " " not in value and (ROOT / value).exists()
 
 
 def validate_program(data: dict[str, Any], errors: list[str]) -> None:
@@ -196,11 +221,8 @@ def validate_program(data: dict[str, Any], errors: list[str]) -> None:
                 templates.add(template)
                 require_file(template, errors)
 
-        # Source controls that are repository paths must exist. Descriptive
-        # references such as "PR #1016 compare and patches" are intentionally
-        # allowed and are not treated as paths.
         for control in task.get("source_controls", []):
-            if isinstance(control, str) and "/" in control and not control.startswith("PR #"):
+            if isinstance(control, str) and looks_like_repository_path(control):
                 require_file(control, errors)
 
         prohibited = " ".join(task.get("prohibited_actions", [])).lower()
