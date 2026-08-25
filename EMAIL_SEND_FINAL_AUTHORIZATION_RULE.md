@@ -1,6 +1,6 @@
 # Email send — exact final authorization and no-test-send rule
 
-**Control date:** 23 August 2026  
+**Control date:** 25 August 2026  
 **Status:** CONTROLLING USER-SPECIFIC OUTBOUND-EMAIL HARD STOP
 
 ## 1. Core rule
@@ -142,8 +142,95 @@ A separate 23 August 2026 media-package incident, in which mandatory media attac
 
 `archive/OUTBOUND_MEDIA_CORE_PACKAGE_MANDATORY_RULE_23AUG2026.md`
 
+The 25 August 2026 readiness-without-transmission incident and its corrective state-machine control are preserved in:
+
+`archive/OUTBOUND_EMAIL_NOT_SENT_AFTER_READINESS_INCIDENT_25AUG2026.md`
+
 Do not send an apology, correction, replacement or explanation merely because an incident was discovered. Any corrective communication requires its own exact final authorization.
 
 ## 9. Current repository work
 
 Repository updates, cross-thread rescans and website changes authorize **no email**. All preservation in those packages is repository-only unless the user later approves an exact compliant outbound package under this rule.
+
+## 10. Mandatory operational state machine
+
+Every outbound email action must follow this non-skippable sequence:
+
+`PREPARED → AUTHORIZED → SENT → VERIFIED`
+
+The states mean:
+
+### `PREPARED`
+
+The exact package has been assembled and checked, but no transmission action has occurred.
+
+Phrases such as **“prepare”**, **“ready to send”**, **“confirm readiness”**, **“be prepared to send”**, **“check it”**, **“verify it”** or **“hold it ready”** keep the package in `PREPARED`. They do not authorize transmission even where the phrase also contains the words “to send”.
+
+Every preparation-only response must display prominently:
+
+**SEND STATUS: PREPARED — NOT SENT.**
+
+### `AUTHORIZED`
+
+The user has given a fresh, unambiguous instruction to transmit the exact approved package, such as **“send it now”**, **“forward this now”** or another instruction that clearly performs the action rather than merely asking for readiness.
+
+If the language is genuinely ambiguous, the state remains `PREPARED`; no send action may occur, and the response must say that no transmission occurred.
+
+### `SENT`
+
+The connected mail tool has been invoked exactly once for the authorized package and has returned a positive transmission result with a concrete message or thread reference.
+
+A package is not `SENT` merely because it was described as ready, a draft exists, a send was intended, or a prior assistant said it would be sent.
+
+### `VERIFIED`
+
+The native message has been retrieved from the connected Sent mailbox and compared with the approved package under section 11 below.
+
+No success statement may be made before this state is reached. The assistant must never collapse `SENT` and `VERIFIED` into one unsupported claim.
+
+## 11. Mandatory native sent-message read-back
+
+Immediately after every authorized send, the assistant must retrieve the native sent message using the returned message ID or thread ID. If the send action does not return a usable identifier, it must perform a precise Sent-mail search using the exact recipient, subject and immediate timestamp window.
+
+The read-back must compare the native sent copy against the approved package and verify all of the following:
+
+1. sender account;
+2. every To, Cc and Bcc recipient;
+3. transmission mode: new email, reply, correction, resend, forward, follow-up or self-email;
+4. exact subject;
+5. non-empty body and at least one distinctive expected body marker;
+6. language order and quoted-thread/source-message inclusion where applicable;
+7. sent timestamp;
+8. every required external link;
+9. attachment count;
+10. every attachment filename and, where available, size, version or hash; and
+11. for a forward, preservation of every required original attachment and the correct source message.
+
+A positive send-tool response is necessary but is **not sufficient** for verification.
+
+If any required recipient, body element, link or attachment is missing, altered, duplicated or unexpected, the transmission must be classified:
+
+**SEND STATUS: SENT BUT NOT VERIFIED AS CORRECT.**
+
+A required attachment that is absent from the native sent copy is a failed package even if Gmail accepted the message.
+
+After successful comparison, report a private verification receipt containing, at minimum:
+
+- `SEND STATUS: VERIFIED AS SENT CORRECTLY`;
+- sent timestamp;
+- recipients and recipient classes;
+- subject;
+- transmission mode;
+- attachment count and exact filenames; and
+- the native message/thread reference, kept out of the public repository.
+
+Do not claim delivery, opening, reading, competent routing, acceptance or agreement unless later evidence separately proves that narrower event.
+
+## 12. Failure, mismatch and retry handling
+
+- No automatic or silent retry is permitted after a failed, uncertain or incomplete transmission.
+- First diagnose and report whether the failure occurred before transmission, during the send action, or during native sent-copy verification.
+- Discovery that a prepared package was never sent does not itself authorize a first send.
+- Discovery of a malformed sent package does not authorize a correction, resend or follow-up.
+- A new exact package and fresh final authorization are required for every retry, correction or replacement.
+- The assistant must preserve the distinction between `NOT SENT`, `SENT BUT NOT VERIFIED AS CORRECT`, `VERIFIED AS SENT CORRECTLY`, `BOUNCED`, `AUTOMATED ACKNOWLEDGEMENT`, and any later substantive reply.
