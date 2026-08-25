@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the bilingual David Espejo evidence node and its structured register."""
+"""Validate the bilingual David Espejo evidence node and its discovery routes."""
 from __future__ import annotations
 
 import json
@@ -10,11 +10,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ES = ROOT / "es/david-espejo-perito-forense/index.html"
 EN = ROOT / "en/david-espejo-expert-witness/index.html"
+V1 = ROOT / "assets/data/david-espejo-expert-evidence-v1.json"
 DATA = ROOT / "assets/data/david-espejo-expert-evidence-v2.json"
 SITEMAP = ROOT / "sitemap-david-espejo.xml"
 ROBOTS = ROOT / "robots.txt"
 ES_NOTEBOOK = ROOT / "es/cuaderno-juridico/index.html"
 EN_NOTEBOOK = ROOT / "en/legal-notebook/index.html"
+ES_HOME = ROOT / "es/index.html"
+EN_HOME = ROOT / "en/index.html"
+ES_UPDATES = ROOT / "es/actualizaciones/index.html"
+EN_UPDATES = ROOT / "en/updates/index.html"
+ES_FEED = ROOT / "es/actualizaciones/feed.xml"
+EN_FEED = ROOT / "en/updates/feed.xml"
+ES_UPDATE_ARTICLE = ROOT / "es/actualizaciones/david-espejo-evidencia-pericial/index.html"
+EN_UPDATE_ARTICLE = ROOT / "en/updates/david-espejo-expert-evidence/index.html"
 
 
 def fail(message: str) -> None:
@@ -32,7 +41,24 @@ def forbid(text: str, fragment: str, label: str) -> None:
 
 
 def main() -> int:
-    paths = [ES, EN, DATA, SITEMAP, ROBOTS, ES_NOTEBOOK, EN_NOTEBOOK]
+    paths = [
+        ES,
+        EN,
+        V1,
+        DATA,
+        SITEMAP,
+        ROBOTS,
+        ES_NOTEBOOK,
+        EN_NOTEBOOK,
+        ES_HOME,
+        EN_HOME,
+        ES_UPDATES,
+        EN_UPDATES,
+        ES_FEED,
+        EN_FEED,
+        ES_UPDATE_ARTICLE,
+        EN_UPDATE_ARTICLE,
+    ]
     missing = [str(p.relative_to(ROOT)) for p in paths if not p.exists()]
     if missing:
         fail(f"missing required files: {missing}")
@@ -42,6 +68,15 @@ def main() -> int:
     robots = ROBOTS.read_text(encoding="utf-8")
     es_notebook = ES_NOTEBOOK.read_text(encoding="utf-8")
     en_notebook = EN_NOTEBOOK.read_text(encoding="utf-8")
+    es_home = ES_HOME.read_text(encoding="utf-8")
+    en_home = EN_HOME.read_text(encoding="utf-8")
+    es_updates = ES_UPDATES.read_text(encoding="utf-8")
+    en_updates = EN_UPDATES.read_text(encoding="utf-8")
+    es_feed = ES_FEED.read_text(encoding="utf-8")
+    en_feed = EN_FEED.read_text(encoding="utf-8")
+    es_update_article = ES_UPDATE_ARTICLE.read_text(encoding="utf-8")
+    en_update_article = EN_UPDATE_ARTICLE.read_text(encoding="utf-8")
+    v1 = json.loads(V1.read_text(encoding="utf-8"))
     data = json.loads(DATA.read_text(encoding="utf-8"))
 
     require(es, "Cuatro preguntas que nunca deben fundirse", "Spanish page")
@@ -78,6 +113,10 @@ def main() -> int:
     ]:
         forbid(en.lower(), fragment.lower(), "English page")
 
+    if v1.get("status") != "superseded_read_only":
+        fail("v1 register must be retained as superseded read-only provenance")
+    if v1.get("superseded_by") != "assets/data/david-espejo-expert-evidence-v2.json":
+        fail("v1 register must point to the controlling v2 register")
     if data.get("schema") != "por-derecho.expert-evidence-status.v2":
         fail("structured register schema must be v2")
     if data.get("status") != "controlling_structured_register":
@@ -110,21 +149,36 @@ def main() -> int:
         fail("raw audiovisual arithmetic difference must remain 42 minutes")
     if audiovisual.get("current_status") != "unresolved_not_proof_of_manipulation":
         fail("audiovisual status must remain unresolved, not proof of manipulation")
-
     if len(data.get("open_evidence_tasks", [])) < 6:
         fail("open evidence register must preserve all current recovery tasks")
 
     ET.parse(SITEMAP)
+    ET.parse(ES_FEED)
+    ET.parse(EN_FEED)
     sitemap_text = SITEMAP.read_text(encoding="utf-8")
-    require(sitemap_text, "/es/david-espejo-perito-forense/", "Dedicated sitemap")
-    require(sitemap_text, "/en/david-espejo-expert-witness/", "Dedicated sitemap")
+    for fragment in [
+        "/es/david-espejo-perito-forense/",
+        "/en/david-espejo-expert-witness/",
+        "/es/actualizaciones/david-espejo-evidencia-pericial/",
+        "/en/updates/david-espejo-expert-evidence/",
+    ]:
+        require(sitemap_text, fragment, "Dedicated sitemap")
     require(
         robots,
         "Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-david-espejo.xml",
         "robots.txt",
     )
+
     require(es_notebook, "../david-espejo-perito-forense/", "Spanish legal notebook")
     require(en_notebook, "../david-espejo-expert-witness/", "English legal notebook")
+    require(es_home, "data-david-espejo-home-route=\"20260825\"", "Spanish homepage")
+    require(en_home, "data-david-espejo-home-route=\"20260825\"", "English homepage")
+    require(es_updates, "data-david-espejo-update-card=\"20260825\"", "Spanish updates index")
+    require(en_updates, "data-david-espejo-update-card=\"20260825\"", "English updates index")
+    require(es_feed, "david-espejo-evidencia-pericial", "Spanish Atom feed")
+    require(en_feed, "david-espejo-expert-evidence", "English Atom feed")
+    require(es_update_article, "../../david-espejo-perito-forense/", "Spanish update article")
+    require(en_update_article, "../../david-espejo-expert-witness/", "English update article")
 
     print("David Espejo evidence sync validation passed")
     return 0
