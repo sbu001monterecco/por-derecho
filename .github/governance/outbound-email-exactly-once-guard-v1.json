@@ -1,0 +1,139 @@
+{
+  "id": "PD-EMAIL-EXACTLY-ONCE-V1",
+  "version": 1,
+  "control_date": "2026-08-25",
+  "status": "controlling",
+  "purpose": "Prevent duplicate external email transmission by consuming one authorization before the first outbound mutation and restricting all verification to read-only operations.",
+  "invariants": {
+    "maximum_outbound_mutations_per_authorization": 1,
+    "consume_authorization_before_invocation": true,
+    "lock_on_any_first_attempt_outcome": true,
+    "parallel_outbound_mutations_allowed": false,
+    "verification_must_be_read_only": true,
+    "automatic_retry_allowed": false,
+    "fresh_authorization_required_for_retry_or_correction": true
+  },
+  "states": [
+    "PREPARED",
+    "AUTHORIZED",
+    "TRANSMISSION_ATTEMPTED",
+    "SENT",
+    "OUTCOME_UNKNOWN",
+    "NOT_SENT_CONFIRMED",
+    "VERIFIED"
+  ],
+  "transitions": [
+    {
+      "from": "PREPARED",
+      "to": "AUTHORIZED",
+      "trigger": "fresh exact user authorization"
+    },
+    {
+      "from": "AUTHORIZED",
+      "to": "TRANSMISSION_ATTEMPTED",
+      "trigger": "atomic pre-invocation lock",
+      "effects": {
+        "authorization_consumed": true,
+        "outbound_mutation_count": 1,
+        "mutation_lock": true
+      }
+    },
+    {
+      "from": "TRANSMISSION_ATTEMPTED",
+      "to": "SENT",
+      "trigger": "positive provider result with concrete message or thread identifier"
+    },
+    {
+      "from": "TRANSMISSION_ATTEMPTED",
+      "to": "OUTCOME_UNKNOWN",
+      "trigger": "timeout, error, malformed response or ambiguous provider result"
+    },
+    {
+      "from": "OUTCOME_UNKNOWN",
+      "to": "SENT",
+      "trigger": "read-only Sent-mail evidence locates the native message"
+    },
+    {
+      "from": "OUTCOME_UNKNOWN",
+      "to": "NOT_SENT_CONFIRMED",
+      "trigger": "read-only Sent-mail evidence confirms no corresponding message"
+    },
+    {
+      "from": "SENT",
+      "to": "VERIFIED",
+      "trigger": "native sent-copy package comparison and duplicate-window result equals one"
+    }
+  ],
+  "package_fingerprint_fields": [
+    "sender_account",
+    "normalized_to",
+    "normalized_cc",
+    "normalized_bcc",
+    "transmission_mode",
+    "exact_subject",
+    "normalized_full_body",
+    "ordered_attachment_names",
+    "ordered_attachment_sizes",
+    "ordered_attachment_hashes_where_available",
+    "ordered_external_links",
+    "source_message_or_thread_identifier"
+  ],
+  "pre_send_duplicate_window_seconds": 600,
+  "post_send_duplicate_window_seconds": 600,
+  "read_only_verification_capabilities": [
+    "read_message",
+    "read_thread",
+    "search_sent_mail",
+    "inspect_native_mime",
+    "read_attachment_metadata",
+    "read_attachment_bytes",
+    "search_bounces_and_automated_responses"
+  ],
+  "prohibited_after_first_attempt": [
+    "send",
+    "reply",
+    "forward",
+    "resend",
+    "correction",
+    "follow_up",
+    "schedule_send",
+    "send_draft",
+    "self_email",
+    "any_other_external_mail_mutation"
+  ],
+  "verification_requirements": {
+    "native_message_retrieved": true,
+    "approved_package_compared": true,
+    "sender_checked": true,
+    "all_recipients_checked": true,
+    "mode_checked": true,
+    "subject_checked": true,
+    "body_marker_checked": true,
+    "timestamp_checked": true,
+    "links_checked": true,
+    "attachment_manifest_checked": true,
+    "source_message_checked_for_reply_or_forward": true,
+    "outbound_mutation_count_must_equal": 1,
+    "matching_sent_messages_in_duplicate_window_must_equal": 1
+  },
+  "failure_statuses": [
+    "BLOCKED_EQUIVALENT_MESSAGE_ALREADY_PRESENT",
+    "OUTCOME_UNKNOWN",
+    "NOT_SENT_CONFIRMED",
+    "SENT_BUT_NOT_VERIFIED_AS_CORRECT",
+    "SENT_DUPLICATE",
+    "BOUNCED",
+    "AUTOMATED_ACKNOWLEDGEMENT"
+  ],
+  "privacy": {
+    "public_repository_must_omit": [
+      "recipient_names",
+      "recipient_addresses",
+      "message_identifiers",
+      "subjects",
+      "private_message_bodies",
+      "attachment_contents",
+      "private_package_fingerprints"
+    ]
+  }
+}
