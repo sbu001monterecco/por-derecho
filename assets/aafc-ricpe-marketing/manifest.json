@@ -1,0 +1,80 @@
+{
+  "record": "AAFC / RICPE financial-marketing public-safe image derivatives",
+  "generated": "2026-08-25",
+  "source_webinar": {
+    "filename": "RIC PRIVATE EQUITY WEBINAR 11NOV2020.pdf",
+    "pages": 48,
+    "sha256": "9f17120c9b2c27075a8216a134eca6ce1eb7787b47e6fcb86c79ad899be5d8af",
+    "included_pages": "1, 5–22, 27–48",
+    "excluded_pages": {
+      "2–4": "no material content",
+      "23–26": "later annotations concerning a separate matter, not RICPE/Acosta Matos financial marketing"
+    }
+  },
+  "publication_note": "Images are compressed web-resolution derivatives. Native and full-resolution sources are preserved privately. Publication of a representation does not verify its truth.",
+  "images": {
+    "professional-distribution-and-public-marketing": {
+      "filename": "professional-distribution-and-public-marketing.webp",
+      "mime": "image/webp",
+      "bytes": 39410,
+      "sha256": "1d5d97e1fff1a91ee73fc076a4b53257b386a783e5ac8428d7694dccacc38d8e",
+      "dimensions": [728,1084],
+      "description": "AAFC June 2021 and October 2022 event materials; RICPE Sun Park investor-brochure page; 19 June 2021 public Sun Park representation",
+      "base64_parts": ["professional-distribution-and-public-marketing.part-01.txt","professional-distribution-and-public-marketing.part-02.txt","professional-distribution-and-public-marketing.part-03.txt"]
+    },
+    "marketing-complete-1": {
+      "filename": "marketing-complete-1.webp",
+      "mime": "image/webp",
+      "bytes": 60944,
+      "sha256": "dd9097d91ba2fffdb97ac523239164362cbc05eca4da491da7eb9749632ef338",
+      "dimensions": [340,3596],
+      "description": "RICPE webinar source pages 1 and 5–17",
+      "base64_parts": ["marketing-complete-1.part-01.txt","marketing-complete-1.part-02.txt","marketing-complete-1.part-03.txt","marketing-complete-1.part-04.txt"]
+    },
+    "marketing-complete-2": {
+      "filename": "marketing-complete-2.webp",
+      "mime": "image/webp",
+      "bytes": 51654,
+      "sha256": "526ac87fc86c2f6513a908c8c3ade45e1bb3d833c5c6ac3aedcc7b1029f9839a",
+      "dimensions": [340,3596],
+      "description": "RICPE webinar source pages 18–22 and 27–35",
+      "base64_parts": ["marketing-complete-2.part-01.txt","marketing-complete-2.part-02.txt","marketing-complete-2.part-03.txt"]
+    },
+    "marketing-complete-3": {
+      "filename": "marketing-complete-3.webp",
+      "mime": "image/webp",
+      "bytes": 62160,
+      "sha256": "5f095924f48e49c6e00670a482defb6de3f5300370997bd400278a90ab071592",
+      "dimensions": [340,3339],
+      "description": "RICPE webinar source pages 36–48",
+      "base64_parts": ["marketing-complete-3.part-01.txt","marketing-complete-3.part-02.txt","marketing-complete-3.part-03.txt","marketing-complete-3.part-04.txt"]
+    },
+    "ricpe-certificate-counterpoint": {
+      "filename": "ricpe-certificate-counterpoint.webp",
+      "mime": "image/webp",
+      "bytes": 24112,
+      "sha256": "1a4b97975fcdcb2daf49a51e7ec3e49267a8d3898d86f36a0962b477de537c8c",
+      "dimensions": [728,537],
+      "description": "RICPE certificate dated 20 July 2021, pages 1–2; documentary counterpoint, not marketing",
+      "base64_parts": ["ricpe-certificate-counterpoint.part-01.txt","ricpe-certificate-counterpoint.part-02.txt"]
+    },
+    "san-telmo-client-introduction": {
+      "filename": "san-telmo-client-introduction.webp",
+      "mime": "image/webp",
+      "bytes": 7534,
+      "sha256": "5b193ea284d7c484edf893861970fb9036e0322598db5433c8216a9584f5139f",
+      "dimensions": [728,231],
+      "description": "San Telmo transcript pages 29–30; separate client-introduction lead",
+      "base64_parts": ["san-telmo-client-introduction.part-01.txt"]
+    },
+    "professional-preservation-routes": {
+      "filename": "professional-preservation-routes.webp",
+      "mime": "image/webp",
+      "bytes": 15304,
+      "sha256": "ef2a2ecc9fdad7538777c640bf3a3d912f77eea728b33a84a8f5db5ca4ab8c69",
+      "dimensions": [728,268],
+      "description": "RSM/San Telmo and PwC/Fiscalía custody/preservation visuals; transmission does not equal institutional acceptance",
+      "base64_parts": ["professional-preservation-routes.part-01.txt"]
+    }
+  }
+}
