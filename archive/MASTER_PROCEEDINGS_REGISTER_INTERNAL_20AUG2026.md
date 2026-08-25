@@ -56,7 +56,7 @@ It is deliberately **not** a publication instruction. The public website may dis
 | FIS-GC-004 | **DI 113/2022** | DIRECT / OPEN_REFERENCE | Scope/status incomplete | Locate primary file |
 | FIS-NAT-005 | Anticorrupción — **EG 352/2025** | DIRECT | Native referral/decision missing | Obtain decision-maker, transmitted material and destination |
 | FIS-GC-006 | Fiscalía Provincial Las Palmas — **DI 22/2026** | DIRECT | Archived | Complete file and later joinder treatment |
-| FIS-CAN-007 | Fiscalía de Canarias — **DIP 2/2026** | DIRECT | Archived 6 Mar 2026; later correction material | Complete post-correction treatment and transmission bridge |
+| FIS-CAN-007 | Fiscalía de Canarias — **DIP 2/2026** | DIRECT | Opening recorded 11 Feb; archive decree 6 Mar signed by Juan Manuel González-Casanova Ruiz; notice 9 Mar signed by Ernesto Vieira Morante; later correction material | Complete certified file, separate opening decree and post-correction treatment/transmission bridge |
 | FIS-NAT-008 | Ministerio Fiscal central route — **EG 49/2026** | DIRECT | 3 Jun 2026 decision recorded | Preserve native decision and referral chain |
 | FIS-LZ-009 | Fiscalía AN → Fiscalía Área Arrecife-Lanzarote-Puerto del Rosario — **GUB 86/2026** | DIRECT / referral | Inhibition/referral documented Aug 2026 | Obtain destination file number, assigned fiscal, diligences and outcome |
 

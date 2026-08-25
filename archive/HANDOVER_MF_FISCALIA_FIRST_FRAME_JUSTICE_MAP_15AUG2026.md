@@ -38,9 +38,11 @@ Preferred public wording:
 - **Elena Herrera Rodríguez** — existing record identifies her as signatory of the DI 248/2018 archive decree of 7 May 2019.
 - **Beatriz Sánchez Carreras** — existing record identifies her as electronic signatory of the 16 May 2019 DI 248 notification and later as Fiscal Jefa Provincial in the subsequent decisional chain. Do not conflate notification signature with the earlier substantive decision.
 - **Emilio Jesús Sánchez Ulled** — existing record identifies him as signatory of EG 49/2026, 3 June 2026, Unidad de Delitos contra la Administración Pública.
+- **Juan Manuel González-Casanova Ruiz** — signed the DIP 2/2026 resolution and archive decree on 6 March 2026.
+- **Ernesto Vieira Morante** — signed the DIP 2/2026 notification oficio on 9 March 2026. Do not conflate the notification act with the substantive archive decision.
 - Senior recipients such as **Jaime Serrano-Jover González, María José Osuna Cerezo and Teresa Peramato Martín** must not be classified as substantive Sun Park decision-makers unless personal review/action is proved.
 
-Still to identify from primary records: DI 273/2013 querella signatory; DP 332/2014 fiscal history; calificación fiscal(s); DIP 2/2026 signatory; Anticorrupción decision-maker(s); DP 1901/2026 reporting fiscal; GUB 86/2026 decision-maker; Arrecife destination fiscal(s); relevant Tenerife fiscal(s).
+Still to identify from primary records: DI 273/2013 querella signatory; DP 332/2014 fiscal history; calificación fiscal(s); Anticorrupción decision-maker(s); DP 1901/2026 reporting fiscal; GUB 86/2026 decision-maker; Arrecife destination fiscal(s); relevant Tenerife fiscal(s). For DIP 2/2026 the archive-decree and notification signatories are now identified separately; the complete file and the separate 11 February opening decree remain open.
 
 ## DI 248/2018 — investigative-intensity question
 
@@ -121,7 +123,7 @@ Every public node should identify what it establishes and what it does not estab
 4. Complete certified DI 248/2018 file and actual diligences performed.
 5. Certified DP 1132/2018 including Borja testimony/audiovisual and production orders.
 6. Signed fiscal report in DP 1901/2026 and subsequent judicial resolution.
-7. DIP 2/2026 exact signatory and post-11 March correction treatment.
+7. DIP 2/2026 complete certified file, separate 11 February opening decree and post-11 March correction treatment. The 6 March archive-decree and 9 March notification signatories are now identified and published under `evidence/fiscalia/dip-2-2026/`.
 8. Anticorrupción EG 352/2025 native decision/referral and decision-maker.
 9. GUB 86/2026 destination reference/assigned fiscal/outcome in Arrecife.
 10. Complete CAM→HNT segregation project, inventory and asset/liability schedules.
