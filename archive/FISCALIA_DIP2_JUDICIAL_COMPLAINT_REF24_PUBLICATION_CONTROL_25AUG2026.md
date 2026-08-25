@@ -2,7 +2,7 @@
 
 **Date:** 25 August 2026
 
-**Status:** prior publication merged/deployed/live verified; 25 August EG 112 clarification and institutional-reference update source-prepared and validated, merge/deployment pending
+**Status:** merged, deployed, live verified and deletion-safe with open evidence; 25 August EG 112 clarification and institutional-reference update included
 
 **Authority:** user instruction to digitise and publish the June 2026 judicial complaint and amplification, integrate them with the DIP 2/2026 Fiscalía correspondence, and publish an attributed, evidence-bounded request for independent review.
 
