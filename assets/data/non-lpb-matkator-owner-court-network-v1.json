@@ -1,0 +1,138 @@
+{
+  "schema": "por-derecho.non-lpb-matkator-owner-court-network.v1",
+  "control_id": "PD-SP-OWNER-COURT-NETWORK-001",
+  "control_date": "2026-08-25",
+  "status": "COURT_DERIVED_WITH_PARTY_PLEADING_AND_COMMUNITY_LAYERS",
+  "purpose": "Map the non-LPB/Matkator Sun Park unit-owner, claimant, representation and later-convergence perimeter without treating every minority owner as a claimant, every claimant as a Community officeholder, or every relationship as evidence of concert or wrongdoing.",
+  "governing_boundaries": [
+    "Sentencia 89/2014 is adverse judicial evidence and controls the identity of the seven JV 1260/2011 claimant-owners and the 18-bungalow finding.",
+    "The wider Montelanza/Molina perimeter comes from party pleadings, Community records and later corporate/title material; it is not a judicial finding that every person acted together or committed wrongdoing.",
+    "Ownership, representation, attendance, voting, family relationship and corporate office are different relationships and never substitute for one another.",
+    "The 2022 CAM/Acosta Matos title/project layer cannot be projected backwards as proof of a common plan in 2011.",
+    "LPB, Matkator, CEXP and the Community of Owners remain legally and analytically distinct.",
+    "Additional court-named natural persons not already admitted to the public identity registry remain private candidates pending the person-admission/privacy gate."
+  ],
+  "source_hierarchy": [
+    {"grade":"JUDGMENT","weight":5,"description":"Signed or controlled judicial decision; proves what the court decided and factual findings within its scope."},
+    {"grade":"COURT_RECORD","weight":4,"description":"Court heading, procedural order, filed representation or testimony; proves procedural role or what was stated, subject to scope."},
+    {"grade":"ACTA_OR_PRIMARY_MEETING_RECORD","weight":4,"description":"Community minutes, attendance/power/vote record; subject to authenticity, validity and authority review."},
+    {"grade":"PARTY_PLEADING","weight":2,"description":"Complaint, opposition or appeal; proves a party position, not the truth of the allegation."},
+    {"grade":"ANALYTICAL_RECONCILIATION","weight":1,"description":"Internal ownership/percentage map requiring title, Registry and date reconciliation."}
+  ],
+  "layers": [
+    {
+      "layer_id":"L1_JV1260_AP89_CLAIMANTS",
+      "title_es":"Núcleo judicial confirmado — JV 1260/2011 / AP 89/2014",
+      "title_en":"Judicially confirmed core — JV 1260/2011 / AP 89/2014",
+      "grade":"JUDGMENT",
+      "proposition_es":"La Audiencia Provincial identificó a siete actores como propietarios de 18 bungalows y apelantes en el desahucio por precario.",
+      "proposition_en":"The Provincial Court identified seven claimants as owners of 18 bungalows and appellants in the precario eviction action.",
+      "members":["PD-SP-O-0015","PD-SP-O-0011","PD-SP-O-0012","PD-SP-O-0009","PD-SP-O-0010","PD-SP-P-0025","PD-SP-P-0020"],
+      "counsel":"PD-SP-P-0003",
+      "limits_es":"No demuestra que esos siete fueran todos los propietarios minoritarios del hotel ni que todos los demás integrantes del perímetro Molina fueran parte de este procedimiento.",
+      "limits_en":"It does not establish that these seven were all minority owners in the hotel or that every other Molina-perimeter person was a party to this proceeding."
+    },
+    {
+      "layer_id":"L2_WIDER_MONTELANZA_MOLINA_PLEADING_PERIMETER",
+      "title_es":"Perímetro más amplio Montelanza/Molina — escritos de parte y registros comunitarios",
+      "title_en":"Wider Montelanza/Molina perimeter — party pleadings and Community records",
+      "grade":"PARTY_PLEADING",
+      "members":["PD-SP-O-0014","PD-SP-O-0011","PD-SP-O-0012","PD-SP-O-0013","PD-SP-O-0009","PD-SP-O-0015","PD-SP-O-0010","PD-SP-O-0016","PD-SP-P-0014","PD-SP-P-0015","PD-SP-P-0016","PD-SP-P-0017","PD-SP-P-0018","PD-SP-P-0019","PD-SP-P-0020","PD-SP-P-0021","PD-SP-P-0022","PD-SP-P-0023","PD-SP-P-0024","PD-SP-P-0025"],
+      "proposition_es":"Los escritos de parte de 2014/2019 y la historia comunitaria identifican un conjunto más amplio de propietarios, sociedades y representantes asociados al residual no vendido tras la operación de 2008.",
+      "proposition_en":"Party pleadings from 2014/2019 and the Community history identify a wider set of owners, companies and representatives associated with the residual interests not sold after the 2008 transaction.",
+      "limits_es":"La etiqueta «Familia Molina/minoritarios» es un descriptor de parte. No crea una persona jurídica, una conspiración ni conocimiento compartido.",
+      "limits_en":"The label “Molina family/minority owners” is a party-side descriptor. It does not create a legal person, conspiracy or shared knowledge."
+    },
+    {
+      "layer_id":"L3_2011_COMMUNITY_ORGAN_REPRESENTATION",
+      "title_es":"2011 — órgano, representación y estrategia procesal comunitaria",
+      "title_en":"2011 — Community organ, representation and procedural strategy",
+      "grade":"ACTA_OR_PRIMARY_MEETING_RECORD",
+      "members":["PD-SP-P-0004","PD-SP-P-0029","PD-SP-P-0014","PD-SP-P-0003","PD-SP-P-0009","PD-SP-O-0012"],
+      "proposition_es":"La copia controlada de 2 de febrero de 2011 sitúa a Asunción Aizpurúa como presidenta por Roque Prieto, Ana Jiménez Lort como secretaria, Cristina Molina como tesorera y a Álvaro Campanario con representación múltiple; la cadena de junio añade la administración de FMMM y el mecanismo deuda/voto como cuestión litigiosa.",
+      "proposition_en":"The controlled 2 February 2011 copy places Asunción Aizpurúa as president for Roque Prieto, Ana Jiménez Lort as secretary, Cristina Molina as treasurer and Álvaro Campanario with multiple representation; the June chain adds FMMM administration and the debt/vote mechanism as a disputed issue.",
+      "limits_es":"Validez de poderes, convocatorias, coeficientes, deuda y voto deben probarse por documento original y fecha.",
+      "limits_en":"The validity of powers, notices, coefficients, debt and voting must be proved from original records and dates."
+    },
+    {
+      "layer_id":"L4_2016_MOLINA_REPRESENTATION_CONTINUITY",
+      "title_es":"2016 — continuidad declarada de representación Molina/Comunidad",
+      "title_en":"2016 — stated continuity of Molina/Community representation",
+      "grade":"COURT_RECORD",
+      "members":["PD-SP-P-0005","PD-SP-P-0009","PD-SP-P-0036","PD-SP-P-0037","PD-SP-P-0040","PD-SP-P-0055"],
+      "proposition_es":"La transcripción controlada de la reunión de junio de 2016 identifica a Prieto Puente como abogado de intereses de la familia Molina/Comunidad y a FMMM como administrador representante de esos intereses, frente a profesionales del lado LPB.",
+      "proposition_en":"The controlled June 2016 meeting transcript identifies Prieto Puente as lawyer for Molina-family/Community interests and FMMM as administrator representing those interests, opposite LPB-side professionals.",
+      "limits_es":"La etiqueta usada por la transcripción no sustituye poderes, hoja de encargo ni prueba de quién instruyó cada actuación.",
+      "limits_en":"The transcript label does not replace powers, retainers or evidence of who instructed each act."
+    },
+    {
+      "layer_id":"L5_2017_2018_COMMUNITY_ACCESS",
+      "title_es":"2017–2018 — Comunidad, Pamalexsha, voto, seguridad y acceso",
+      "title_en":"2017–2018 — Community, Pamalexsha, voting, security and access",
+      "grade":"COURT_RECORD",
+      "members":["PD-SP-P-0007","PD-SP-P-0008","PD-SP-P-0009","PD-SP-O-0023","PD-SP-O-0024","PD-SP-O-0007","PD-SP-P-0011","PD-SP-P-0012"],
+      "proposition_es":"Las declaraciones de DP 1132/2018 documentan las funciones que Antonio, Shaila, FMMM y actores CAM dijeron ejercer en la transición de seguridad/acceso; deben compararse con las actas de 18 mayo/5 julio, contratos, pagos, llaves y fincas.",
+      "proposition_en":"DP 1132/2018 statements document the functions Antonio, Shaila, FMMM and CAM actors said they exercised during the security/access transition; they must be tested against the 18 May/5 July minutes, contracts, payments, keys and units.",
+      "limits_es":"Una declaración judicial prueba lo declarado, no automáticamente la legalidad del cargo, la exactitud del relato ni un acuerdo criminal.",
+      "limits_en":"A court statement proves what was stated, not automatically the legality of the office, truth of the account or a criminal agreement."
+    },
+    {
+      "layer_id":"L6_2022_ACOSTA_MATOS_PROJECT_CLUSTER",
+      "title_es":"2022 — concentración Acosta Matos en representación, proyecto y Comunidad",
+      "title_en":"2022 — Acosta Matos concentration in representation, project and Community",
+      "grade":"ACTA_OR_PRIMARY_MEETING_RECORD",
+      "members":["PD-SP-P-0076","PD-SP-P-0012","PD-SP-P-0011","PD-SP-O-0008","PD-SP-O-0007","PD-SP-P-0031","PD-SP-P-0009"],
+      "proposition_es":"El acta de 4 de febrero de 2022 coloca juntos a Javier Acosta Matos por Construcciones Acos-Matos, S.L., Laura Acosta Matos por CAM, S.A., y José/José Daniel Acosta Matos por Proyectos Acosta Matos, S.L.; el proyecto aportado por CAM fue preparado y explicado por José Daniel. Manuel Molina Climent figura presente y pidió explicación del origen de los saldos deudores.",
+      "proposition_en":"The 4 February 2022 minutes place Javier Acosta Matos for Construcciones Acos-Matos, S.L., Laura Acosta Matos for CAM, S.A., and José/José Daniel Acosta Matos for Proyectos Acosta Matos, S.L. together; the CAM project was prepared and explained by José Daniel. Manuel Molina Climent appears present and requested an explanation of the origin of debtor balances.",
+      "limits_es":"Deben cerrarse identidad exacta de sociedades, poderes, voto, fincas y si «José Acosta Matos» es José Daniel. La posterior adjudicación/título no legitima retroactivamente actos anteriores.",
+      "limits_en":"Exact company identity, powers, voting, units and whether “José Acosta Matos” is José Daniel must be closed. Later award/title does not retroactively authorise earlier acts."
+    },
+    {
+      "layer_id":"L7_LATER_ACOSTA_MATOS_FAMILY_BUSINESS",
+      "title_es":"Perímetro familiar/empresarial Acosta Matos posterior — mantener unido, atribuir por acto",
+      "title_en":"Later Acosta Matos family/business perimeter — cluster together, attribute by act",
+      "grade":"COURT_RECORD",
+      "members":["PD-SP-P-0011","PD-SP-P-0012","PD-SP-P-0075","PD-SP-P-0076","PD-SP-O-0007","PD-SP-O-0008","PD-SP-O-0018","PD-SP-O-0019"],
+      "proposition_es":"José Daniel, Laura Patricia, Gerardo Zacarías y Javier se agrupan como personas del perímetro familiar/empresarial Acosta Matos; las fuentes corporativas y comunitarias deben fijar cargo, sociedad, poder y fecha de cada uno. Gerardo Zacarías consta como persona distinta de Gerardo Nicanor Acosta Armas.",
+      "proposition_en":"José Daniel, Laura Patricia, Gerardo Zacarías and Javier are grouped as members of the Acosta Matos family/business perimeter; corporate and Community sources must establish each person's office, company, power and date. Gerardo Zacarías is a different person from Gerardo Nicanor Acosta Armas.",
+      "limits_es":"Parentesco o pertenencia empresarial no transmite conocimiento, intención, aprobación, beneficio ni responsabilidad.",
+      "limits_en":"Family or business membership does not transfer knowledge, intention, approval, benefit or responsibility."
+    }
+  ],
+  "edges": [
+    {"id":"PD-SP-OCN-E001","from":"PD-SP-O-0015","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E002","from":"PD-SP-O-0011","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E003","from":"PD-SP-O-0012","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E004","from":"PD-SP-O-0009","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E005","from":"PD-SP-O-0010","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E006","from":"PD-SP-P-0025","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E007","from":"PD-SP-P-0020","to":"L1_JV1260_AP89_CLAIMANTS","relation":"JUDICIAL_CONFIRMED_CLAIMANT_OWNER","date":"2011-12-23/2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E008","from":"PD-SP-P-0003","to":"L1_JV1260_AP89_CLAIMANTS","relation":"COUNSEL_FOR_SEVEN_APPELLANTS","date":"2014-01-13","grade":"JUDGMENT"},
+    {"id":"PD-SP-OCN-E009","from":"PD-SP-P-0004","to":"PD-SP-O-0012","relation":"REPRESENTED_ROQUE_PRIETO_IN_2011_COMMUNITY_ORGAN","date":"2011-02-02","grade":"ACTA_OR_PRIMARY_MEETING_RECORD"},
+    {"id":"PD-SP-OCN-E010","from":"PD-SP-P-0003","to":"L3_2011_COMMUNITY_ORGAN_REPRESENTATION","relation":"MEETING_SECRETARY_MULTIPLE_REPRESENTATION_AND_PROCEDURAL_STRATEGY","date":"2011-02-02","grade":"ACTA_OR_PRIMARY_MEETING_RECORD"},
+    {"id":"PD-SP-OCN-E011","from":"PD-SP-P-0009","to":"L3_2011_COMMUNITY_ORGAN_REPRESENTATION","relation":"COMMUNITY_ADMINISTRATION_CONTINUITY_ASSERTED","date":"2011-2018","grade":"COURT_RECORD"},
+    {"id":"PD-SP-OCN-E012","from":"PD-SP-P-0005","to":"L4_2016_MOLINA_REPRESENTATION_CONTINUITY","relation":"LAWYER_FOR_MOLINA_FAMILY_INTERESTS_AS_TRANSCRIBED","date":"2016-06-11","grade":"COURT_RECORD"},
+    {"id":"PD-SP-OCN-E013","from":"PD-SP-P-0009","to":"L4_2016_MOLINA_REPRESENTATION_CONTINUITY","relation":"ADMINISTRATOR_REPRESENTING_MOLINA_INTERESTS_AS_TRANSCRIBED","date":"2016-06-11","grade":"COURT_RECORD"},
+    {"id":"PD-SP-OCN-E014","from":"PD-SP-P-0027","to":"L3_2011_COMMUNITY_ORGAN_REPRESENTATION","relation":"SPECIFIC_VOTE_PROPOSITION_IN_COMPLAINANT_RECONSTRUCTION","date":"2011-02-02","grade":"PARTY_PLEADING","limit":"The voting proposition is complainant-side reconstruction, not a judicial finding."},
+    {"id":"PD-SP-OCN-E015","from":"PD-SP-P-0031","to":"L6_2022_ACOSTA_MATOS_PROJECT_CLUSTER","relation":"PRESENT_AND_REQUESTED_EXPLANATION_OF_DEBT_BALANCES","date":"2022-02-04","grade":"ACTA_OR_PRIMARY_MEETING_RECORD","limit":"Requesting an explanation does not mean creating, independently verifying or approving the debt."},
+    {"id":"PD-SP-OCN-E016","from":"PD-SP-P-0076","to":"PD-SP-O-0008","relation":"REPRESENTATIVE_IN_2022_MINUTES","date":"2022-02-04","grade":"ACTA_OR_PRIMARY_MEETING_RECORD"},
+    {"id":"PD-SP-OCN-E017","from":"PD-SP-P-0012","to":"PD-SP-O-0007","relation":"LEGAL_REPRESENTATIVE_IN_2022_MINUTES","date":"2022-02-04","grade":"ACTA_OR_PRIMARY_MEETING_RECORD"},
+    {"id":"PD-SP-OCN-E018","from":"PD-SP-P-0011","to":"L6_2022_ACOSTA_MATOS_PROJECT_CLUSTER","relation":"PROJECT_ARCHITECT_EXPLAINER_AND_REPRESENTATIVE_AS_RECORDED","date":"2022-02-04","grade":"ACTA_OR_PRIMARY_MEETING_RECORD"},
+    {"id":"PD-SP-OCN-E019","from":"PD-SP-P-0075","to":"L7_LATER_ACOSTA_MATOS_FAMILY_BUSINESS","relation":"FAMILY_BUSINESS_AND_LATER_CAM_CORPORATE_OFFICE","date":"2024-02","grade":"COURT_RECORD","limit":"Later corporate office does not prove participation in 2011 or 2018 acts."},
+    {"id":"PD-SP-OCN-E020","from":"PD-SP-P-0076","to":"L7_LATER_ACOSTA_MATOS_FAMILY_BUSINESS","relation":"FAMILY_BUSINESS_AND_2022_REPRESENTATION","date":"2022-02-04+","grade":"ACTA_OR_PRIMARY_MEETING_RECORD","limit":"Family membership does not attribute conduct beyond sourced representation."}
+  ],
+  "pending_private_candidate_policy": {
+    "status":"WITHHELD_FROM_PUBLIC_DATASET_PENDING_PD_SP_IDENTITY_PRIVACY_001",
+    "description_es":"El corpus judicial contiene nombres adicionales todavía no admitidos en el registro público. Se conservan como candidatos privados y sólo se añadirán tras resolver identidad, relevancia, necesidad y nivel de publicación.",
+    "description_en":"The court corpus contains additional names not yet admitted to the public registry. They remain private candidates and will only be added after identity, relevance, necessity and publication level are resolved."
+  },
+  "open_reconciliation": [
+    "Reconcile the seven AP89 claimants' 18 bungalows against finca numbers and 2008 sale/non-sale status.",
+    "Build an owner-by-owner, finca-by-finca schedule for the wider residual non-LPB/Matkator perimeter.",
+    "Reconcile Montelanza, Inversiones Salinetas and other 2011/2018 interests against later CAM acquisitions and dates.",
+    "Authenticate original 2-Feb-2011 and 22-Jun-2011 powers, voting ledgers and debt schedules.",
+    "Obtain certified complete DP 1132/2018 and Rollo 1010/2018 to fix testimony, parties and final procedural outcome.",
+    "Reconcile 4-Feb-2022 represented entities, NIFs, powers, exact units and voting rights, including Construcciones Acos-Matos S.L. versus CAM S.A.",
+    "Keep Matkator units and third-party units outside LPB's insolvency estate unless a specific title says otherwise."
+  ]
+}
