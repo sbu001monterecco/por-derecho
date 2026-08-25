@@ -252,3 +252,17 @@ authority and must never be inferred from repository-only preservation.
 For self-preservation emails, the word “self” creates no exception to
 `EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`: present and obtain fresh approval of
 the exact outbound package before transmission.
+
+For transaction-development communications, verified corporate email is the
+primary substantive channel. Use LinkedIn, WhatsApp, SMS or similar channels
+only for minimal acknowledgement or routing, then redirect to and preserve the
+verified corporate-email thread. Do not conduct substantive calls through an
+unidentified telephone number, an unscheduled inbound call or a social/messaging
+platform.
+
+Arrange substantive discussions through a corporate Google Calendar invitation
+with a generated Google Meet link, resolved attendees and capacities, an agenda,
+confidentiality status and an agreed transcript. Give required notice and obtain
+required consent before transcription. Preserve the invite, attendee record,
+transcript and post-meeting corporate-email summary privately; do not commit
+those native records or identities to Git.
