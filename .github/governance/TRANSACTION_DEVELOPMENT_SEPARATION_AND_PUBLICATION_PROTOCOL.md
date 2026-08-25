@@ -1,8 +1,8 @@
 # Transaction-development separation, custody and publication protocol
 
-**Control date:** 25 August 2026  
-**Status:** governance-only operating policy  
-**Repository visibility:** public; this file contains no native private evidence  
+**Control date:** 25 August 2026
+**Status:** governance-only operating policy
+**Repository visibility:** public; this file contains no native private evidence
 **Pages status:** excluded from the rendered GitHub Pages surface by its `.github/` path
 
 ## Purpose
