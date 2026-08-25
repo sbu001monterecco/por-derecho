@@ -1,10 +1,22 @@
 {
   "schema": "por-derecho.current-state.pointer.v1",
   "as_of": "2026-08-25",
-  "status": "SUPERSEDED_ROUTING_POINTER",
+  "status": "SUPERSEDED_ROUTING_POINTER_WITH_COMPATIBILITY_FIELDS",
   "current_authority": "ops/CURRENT_UNITARY_STATE.json",
   "human_authority": "CURRENT_UNITARY_STATE.md",
   "historical_snapshot": "archive/ops-snapshots/CURRENT_STATE_20260824.json",
   "historical_snapshot_sha": "3410285d94b896c2ebcfaa0d449ffaaac66a6793",
-  "rule": "Fetch current main first. Read the current unitary state. Use the preserved 24-August snapshot only for historical routing and proposition-level source references."
+  "calificacion": {
+    "origin": "Concurso 36/2012 · Seccion de Calificacion",
+    "first_instance_decision": "Sentencia 163/2023",
+    "appeal_court": "Audiencia Provincial de Las Palmas · Seccion 4",
+    "appeal_roll": "RPL 2523/2025",
+    "instrument_count_rule": "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS",
+    "last_located_procedural_record": "Decision signed 11 May 2026 scheduling deliberation, vote and decision for 4 June 2026",
+    "later_merits_decision_located": false,
+    "service_record_located": false,
+    "finality_or_pending_remedy_certificate_located": false,
+    "inference_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT"
+  },
+  "rule": "Fetch current main first. Read the current unitary state. Compatibility fields remain here for existing validators and routes; use the preserved 24-August snapshot only for historical routing and proposition-level source references."
 }
