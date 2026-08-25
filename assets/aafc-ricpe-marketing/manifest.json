@@ -1,0 +1,35 @@
+{
+  "record": "AAFC / RICPE financial-marketing public-safe visual record",
+  "generated": "2026-08-25",
+  "source_webinar": {
+    "filename": "RIC PRIVATE EQUITY WEBINAR 11NOV2020.pdf",
+    "pages": 48,
+    "sha256": "9f17120c9b2c27075a8216a134eca6ce1eb7787b47e6fcb86c79ad899be5d8af",
+    "included_pages": "1, 5–22, 27–48",
+    "excluded_pages": {
+      "2–4": "no material content",
+      "23–26": "later annotations concerning a separate matter, not RICPE/Acosta Matos financial marketing"
+    }
+  },
+  "publication_note": "The two published images are compressed web-resolution composites. Native and full-resolution sources remain preserved privately. Marketing claims remain representations, not verified facts.",
+  "images": {
+    "marketing-complete": {
+      "filename": "aafc-marketing-combined-q15.webp",
+      "mime": "image/webp",
+      "bytes": 72664,
+      "sha256": "1c403133a7096ae44bbca4fa7e21d2a8abdcd1a7e6745ddf8d9b362cda6d3076",
+      "dimensions": [260,8476],
+      "description": "Complete marketing composite: AAFC June 2021 and October 2022 event records, RICPE Sun Park investor-brochure/public representation, and every materially relevant webinar page (1, 5–22, 27–48).",
+      "base64_parts": ["marketing-complete.part-01.txt","marketing-complete.part-02.txt","marketing-complete.part-03.txt","marketing-complete.part-04.txt","marketing-complete.part-05.txt","marketing-complete.part-06.txt","marketing-complete.part-07.txt","marketing-complete.part-08.txt","marketing-complete.part-09.txt","marketing-complete.part-10.txt","marketing-complete.part-11.txt"]
+    },
+    "counterpoints-and-custody": {
+      "filename": "aafc-evidence-combined-q25.webp",
+      "mime": "image/webp",
+      "bytes": 23870,
+      "sha256": "0a15bdfd14048c2e86cc1cbd3ef3ae1e696c5452e8f9bafbab85d5df945c6f4b",
+      "dimensions": [520,764],
+      "description": "Documentary counterpoint and separate evidence: July 2021 RICPE certificate, San Telmo client-introduction transcript, and RSM/PwC/Fiscalía custody visuals.",
+      "base64_parts": ["counterpoints-and-custody.part-01.txt","counterpoints-and-custody.part-02.txt","counterpoints-and-custody.part-03.txt","counterpoints-and-custody.part-04.txt"]
+    }
+  }
+}
