@@ -1,9 +1,10 @@
-# Por Derecho Transparency Phase 1 — authorisation and publication boundary
+# Por Derecho Transparency Phase 1 — authorisation, publication boundary and live closeout
 
 **Control date:** 25 August 2026  
 **Release ID:** `PD-TR-20260825-01`  
 **Authoring base:** `a968c51548db1de57b077f5327fe0d279eaf00bd`  
-**Authorisation:** “Authorise Phase 1 using only the reviewed P0–P3 names and the approved disclosure wording.”
+**Authorisation:** “Authorise Phase 1 using only the reviewed P0–P3 names and the approved disclosure wording.”  
+**State:** `LIVE_VERIFIED`
 
 ## Purpose
 
@@ -58,20 +59,74 @@ Do not publish:
 - No response is treated as an admission.
 - The public contact route is not general case intake, legal advice or a protected reporting channel.
 
-## Technical release gate
+## Authorised release
 
-Before merge:
+PR #1007 was squash-merged as:
 
-- both routes and reciprocal language links must validate;
-- the public JSON must parse;
-- the Por Derecho shared script must expose the Transparency navigation item and homepage gateway;
-- the Foundation sitemap must include both routes;
-- the public package must contain no unreviewed names or private provider locators;
-- existing publication and mission-critical controls must pass.
+```text
+572d17fa74b0653fce25a6300be15a5ad03fe1e7
+```
 
-After merge:
+The release tree is:
 
-- wait for Pages deployment at the exact merge SHA;
-- read back both routes and required markers;
-- record the merge SHA, Pages run and live verification in a closeout update;
-- do not describe Phase 1 as live verified before those steps complete.
+```text
+10975cbdb6e55a206080cfd05753405077da6017
+```
+
+GitHub Pages run `32890471372` completed successfully for that exact merge SHA at `2026-08-25T19:37:12Z`.
+
+The following exact-SHA controls completed successfully:
+
+- dedicated Phase 1 validation: `32890472629`;
+- publication integrity: `32890472646`;
+- audience experience: `32890472637`;
+- private-source, statement and OSINT governance: `32890472867`.
+
+## Public-edge live verification
+
+The read-only live verifier fetched the two public pages, the shared Por Derecho discovery script and the Foundation sitemap from the public GitHub Pages edge.
+
+Successful run:
+
+```text
+workflow run: 32891250275
+workflow head: 8badcdc4fe92628b6ab38f53d457c670dc8effa1
+verified at: 2026-08-25T19:44:42.798818Z
+artifact ID: 9579521244
+artifact digest: sha256:6ae5abb1020a7472ab25cad1b0780bda9491bbf1ac0a6df91b17968ede63c99c
+result: PASS
+```
+
+Verified public resources:
+
+| Resource | Bytes | SHA-256 | Markers |
+|---|---:|---|---:|
+| English Transparency Hub | 19,450 | `f3aa48e947afcaae6cff3c1186718feb5d7e17b5e084d3f050e834475e02adb2` | 9 |
+| Spanish Transparency Hub | 20,484 | `81c318bd0dbbc7707367f337d84d53a0d9e508747ebf0023372de2a167026a81` | 9 |
+| Shared Por Derecho script | 24,575 | `9cb9ebaf014ece7766339dc48df818bdd0ab220515ef7799ce8067f63c118bd9` | 7 |
+| Foundation sitemap | 9,998 | `2be65af22533f8c3846f3bee81764fd2f96074c9b2d548171fe5ce05c1dd5aab` | 2 |
+
+The English and Spanish pages each returned HTTP 200, contained the founder, legal-status, P0–P3, funding-uncertainty and correction markers, and carried reciprocal language URLs.
+
+## Verifier correction preserved
+
+Initial readback run `32891077787` already confirmed that:
+
+- the English public page passed;
+- the Spanish public page passed; and
+- the Foundation sitemap passed.
+
+That run failed only because the checker required literal absolute English and Spanish route strings inside the shared JavaScript, while the script correctly constructs those routes from a language-specific base path. The verifier—not the public pages—was corrected in commit `8badcdc4fe92628b6ab38f53d457c670dc8effa1`. No public disclosure wording, actor name, funding statement or publication boundary changed to make the control pass.
+
+## Continuing limits
+
+`LIVE_VERIFIED` means that the authorised Phase 1 public package was deployed and its controlled markers were read back successfully. It does **not** mean that:
+
+- Por Derecho is a registered foundation;
+- independent governance has been constituted;
+- funding reconciliation is complete;
+- the historical actor census is complete;
+- any new person was approved for public profiling;
+- the methodology has been independently validated or institutionally adopted;
+- the full private evidence corpus is under complete custody; or
+- AI may decide or publish legal conclusions autonomously.
