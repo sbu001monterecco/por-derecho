@@ -6,7 +6,7 @@
 
 **Objeto:** preservar y revisar, con autorización de la titular, el buzón privado que contiene correspondencia material de los periodos relevantes
 
-**Estado actual:** el buzón completo no está conectado ni adquirido; existe una copia parcial reflejada en un buzón contraparte conectado y autorizado
+**Estado actual:** a las 22:49 UTC del 25 de agosto de 2026, Gil Marer comunicó que la titular estaba ejecutando en su propio ChatGPT una recopilación autorizada con Gmail conectado. Se esperaba un posible traslado privado dentro de aproximadamente una hora, pero todavía no se había verificado recepción, cobertura de Drive, exportación nativa, denominador, manifiesto ni reconciliación. Existe además una copia parcial reflejada en un buzón contraparte conectado y autorizado
 
 **Privacidad:** la dirección exacta, cuerpos, asuntos, participantes, identificadores de Google y localizadores de mensajes no se publican en GitHub
 
@@ -95,3 +95,7 @@ Antes de examinar o publicar contenido:
 ## 7. Criterio de cierre y estado actual
 
 `RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD** hasta que la titular autorice y complete Takeout o conecte la cuenta correcta, se verifique el perfil y se reconcilien los denominadores. El corpus reflejado de más de 2.400 mensajes relacionados preserva un punto de partida importante, pero no autoriza la expresión «todos los correos de la declarante».
+
+## 8. Traspaso privado pendiente — 25 de agosto de 2026
+
+El estado operativo y la ventana estimada constan en `RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md`. La estimación temporal no acredita entrega ni resultado. Cuando llegue el correo o un traslado sustitutivo, debe ejecutarse `prompts/RDM_PRIVATE_MAILBOX_INBOUND_EVIDENCE_INGEST_PROMPT_25AUG2026.md`, preservar primero los nativos y metadatos en custodia privada, aplicar revisión de privilegio y actualizar `ME-090` / `ME-MAIL-RDM-001` sin cerrar el déficit salvo reconciliación completa.
