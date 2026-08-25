@@ -2,23 +2,23 @@
 
 **Control:** `PD-UNITARY-STATE-20260825-01`  
 **Prepared:** 25 August 2026  
-**Repository baseline:** `ae22ca42c844813ff73220614ac150cd734d572e`  
+**Repository baseline:** `64a0cdc321a9efaade59f5239f4d74729bf2d772`  
 **Machine-readable authority:** `ops/CURRENT_UNITARY_STATE.json`
 
-This file separates four different questions that had drifted together:
+This file separates four questions that had drifted together:
 
 1. what commit is currently on `main`;
 2. what source commit GitHub Pages has deployed;
 3. what exact public content has been independently read back;
 4. what the evidence and procedural record currently establish.
 
-A successful deployment is not automatically an exact-content verification. A governance-only commit may advance `main` without changing a reader-facing allegation or merits proposition.
+A successful deployment is not automatically an exact-content verification. A governance-only or deletion-closeout commit may advance `main` without changing a reader-facing allegation or merits proposition.
 
 ## Current repository and public state
 
-- Current `main` at preparation: `ae22ca42c844813ff73220614ac150cd734d572e`.
-- That release adds claim-specific prescription, caducity, damages and interim-relief recovery controls; this package preserves those paths and their sitemap declaration.
-- Pages deployment run `32910389340` / #1115 completed successfully against that SHA.
+- Current `main` at preparation: `64a0cdc321a9efaade59f5239f4d74729bf2d772`.
+- The current-main tip is a prescription-recovery deletion-safe closeout and does not create a new public case proposition.
+- Last Pages deployment located in this pass: run `32910389340` / #1115 against `ae22ca42c844813ff73220614ac150cd734d572e`. The later closeout commit did not trigger a newer Pages deployment.
 - Exact-marker public readback for the control-plane changes remains a post-merge requirement.
 - Last positive production-smoke record located in this pass: run `32907717917` against `19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78`.
 - Latest material-update date in the canonical ES/EN update pages: **25 August 2026**.
@@ -69,15 +69,15 @@ LPB alone was the debtor in Concurso 36/2012. Matkator, CEXP, Aweswell, Pink, ot
 
 ## Pull-request discipline
 
-Thirty-five open PRs were reported in the current snapshot. Do not merge stale PRs wholesale.
+Thirty-six open PRs were reported in the current snapshot. Do not merge stale PRs wholesale.
 
-PR #1016 contains a valuable source-graded owner/court-party delta, but it must be rebuilt or extracted on current `main`, preserving the later professional-identity assignments, the priority-actions programme, the prescription/recovery release and all current governance controls.
+PR #1016 contains a valuable source-graded owner/court-party delta, but it must be rebuilt or extracted on current `main`, preserving the professional-identity assignments, the priority-actions programme, the prescription/recovery release and all current governance controls.
 
 See `ops/PR_RECONCILIATION_LEDGER.json`.
 
 ## Supersession
 
-- `ops/CURRENT_STATE.json` is now a routing pointer. Its complete 24-August content is preserved at `archive/ops-snapshots/CURRENT_STATE_20260824.json`.
+- `ops/CURRENT_STATE.json` is now a routing pointer with compatibility fields. Its complete 24-August content is preserved at `archive/ops-snapshots/CURRENT_STATE_20260824.json`.
 - `ops/PRODUCTION_STATUS.json` now distinguishes current deployment from exact public verification. Its PR #922 snapshot is preserved at `archive/ops-snapshots/PRODUCTION_STATUS_20260824.json`.
 
 ## Next implementation sequence

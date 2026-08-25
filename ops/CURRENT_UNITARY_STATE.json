@@ -1,16 +1,16 @@
 {
   "schema": "por-derecho.current-unitary-state.v1",
   "control_id": "PD-UNITARY-STATE-20260825-01",
-  "as_of": "2026-08-25T23:23:00Z",
+  "as_of": "2026-08-25T23:30:00Z",
   "status": "PREPARED_ON_CURRENT_MAIN_PENDING_MERGE_AND_PUBLIC_READBACK",
   "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
   "repository": {
     "repository": "sbu001monterecco/por-derecho",
     "branch": "main",
-    "current_main_sha_at_preparation": "ae22ca42c844813ff73220614ac150cd734d572e",
-    "current_main_commit_class": "prescription, caducity, damages and interim-relief recovery control; preserved by this synchronization",
+    "current_main_sha_at_preparation": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+    "current_main_commit_class": "prescription-recovery deletion-safe closeout; no new public case proposition inferred",
     "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
-    "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only commits may advance main without changing reader-facing case propositions."
+    "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only or deletion-closeout commits may advance main without changing reader-facing case propositions."
   },
   "publication": {
     "public_host": "https://sbu001monterecco.github.io/por-derecho/",
@@ -19,7 +19,8 @@
       "run_id": 32910389340,
       "run_number": 1115,
       "status": "completed",
-      "conclusion": "success"
+      "conclusion": "success",
+      "note": "Current main 64a0cdc is a deletion-closeout release and did not trigger a newer Pages deployment."
     },
     "current_sha_edge_readback": {
       "state": "PENDING_EXACT_MARKER_READBACK_AFTER_THIS_CONTROL_PLANE_MERGES",
@@ -64,8 +65,8 @@
     "Claimant-specific hotel-income, asset-control, counterfactual and no-double-recovery ledger"
   ],
   "pull_requests": {
-    "observed_open_count": 35,
-    "observed_at": "2026-08-25T23:17:00Z",
+    "observed_open_count": 36,
+    "observed_at": "2026-08-25T23:30:00Z",
     "ledger": "ops/PR_RECONCILIATION_LEDGER.json",
     "rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, rerun current controls and close or supersede explicitly."
   },

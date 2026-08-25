@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.pr-reconciliation-ledger.v1",
   "control_id": "PD-PR-RECONCILIATION-20260825-01",
-  "observed_at": "2026-08-25T23:17:00Z",
-  "open_pull_request_count": 35,
+  "observed_at": "2026-08-25T23:30:00Z",
+  "open_pull_request_count": 36,
   "coverage_state": "KEY_WORKSTREAMS_CLASSIFIED_FULL_BACKFILL_OPEN",
   "governing_rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, preserve current controls, rerun current validation and close or supersede explicitly.",
   "states": [
@@ -29,6 +29,12 @@
         "Acosta Matos family/business cluster with actor-specific capacity boundaries",
         "Finite finca, power, vote, NIF and DP 1132/Rollo 1010 evidence programme"
       ]
+    },
+    {
+      "pr": 1033,
+      "title": "Finalize SAFE_TO_DELETE certification for prescription recovery thread",
+      "state": "READY_AFTER_REBASE",
+      "reason": "Closeout-only delta after PR #1032; compare against current main and preserve only the final certification if still unique."
     },
     {
       "pr": 937,
@@ -85,6 +91,18 @@
       "merge_sha": "f9d0a22305431eeb6405b70f3bc30e5ff5bae514",
       "status": "MERGED_TO_MAIN",
       "note": "The executable priority-actions programme is now current-main source and is not an open reconciliation candidate."
+    },
+    {
+      "pr": 1030,
+      "merge_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+      "status": "MERGED_TO_MAIN",
+      "note": "Prescription, caducity, damages and interim-relief recovery controls are current-main source."
+    },
+    {
+      "pr": 1032,
+      "merge_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+      "status": "MERGED_TO_MAIN",
+      "note": "Prescription-recovery deletion audit and closeout records are current-main source."
     }
   ],
   "backfill_actions": [

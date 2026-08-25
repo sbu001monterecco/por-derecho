@@ -1,17 +1,18 @@
 {
   "schema_version": 2,
-  "as_of": "2026-08-25T23:23:00Z",
+  "as_of": "2026-08-25T23:30:00Z",
   "status": "DEPLOYED_BASELINE_WITH_CURRENT_CONTROL_PLANE_PENDING",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "current_main_sha_at_preparation": "ae22ca42c844813ff73220614ac150cd734d572e",
+  "current_main_sha_at_preparation": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
   "last_pages_deployment": {
     "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
     "run_id": 32910389340,
     "run_number": 1115,
     "status": "completed",
-    "conclusion": "success"
+    "conclusion": "success",
+    "note": "Current main 64a0cdc is a deletion-closeout release and did not trigger a newer Pages deployment."
   },
   "exact_public_content_verification": {
     "state": "PENDING_AFTER_CONTROL_PLANE_MERGE",
