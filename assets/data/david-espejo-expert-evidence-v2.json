@@ -1,0 +1,315 @@
+{
+  "schema": "por-derecho.expert-evidence-status.v2",
+  "generated_on": "2026-08-25",
+  "status": "controlling_structured_register",
+  "supersedes": "assets/data/david-espejo-expert-evidence-v1.json",
+  "subject": {
+    "name": "David Espejo Navarro",
+    "firm": "Expert Witness Forensic & Compliance (eXW)",
+    "legal_entity_public_notice": "Four Mirror Advisors, S.L.",
+    "role": "party forensic-economic expert; later testigo-perito in the classification section",
+    "relationship_thesis": "professional_first_not_professional_only",
+    "relationship_note": "The documented professional workstream dates back at least to 2016. Later correspondence also reflects a cordial or professional-networking dimension; that later dimension does not decide authorship, independence, filing or evidential weight."
+  },
+  "scope": [
+    "Concurso 36/2012",
+    "valuation and liquidation",
+    "Owners' Community and CEXP",
+    "financing, swap and pledged deposit",
+    "classification section",
+    "report version and custody control",
+    "hearing access and audiovisual preservation",
+    "connected parallel tracks"
+  ],
+  "status_vocabulary": {
+    "client_contribution": "Material supplied to the expert; not an expert conclusion unless authorship is independently established.",
+    "draft": "The located copy identifies itself as draft or lacks matched final/signature evidence.",
+    "signed_final": "A final or signed version is located.",
+    "transmitted": "Transmission is documented; transmission alone is not court filing.",
+    "selected_as_annex": "Counsel or a pleading identifies the document as an annex to a defined filing.",
+    "court_filed": "A filing receipt, official bundle, docket entry or judicial source confirms incorporation into a defined court file.",
+    "court_cited": "A judicial decision or official hearing record expressly refers to or uses the report.",
+    "author_reported_filed": "The author later recalled that the item was filed; independent court-file confirmation remains required.",
+    "court_confirmed_role": "A court-originating source confirms the person's procedural role.",
+    "unresolved": "The available source set does not support a definitive proposition."
+  },
+  "publication_controls": [
+    "Do not collapse creation, signature, custody, transmission, receipt, annex selection, filing, timeliness and judicial use.",
+    "Do not label an item extemporaneous unless the applicable deadline and actual filing or service date establish lateness.",
+    "Do not describe the court-supplied optical medium as corrupt, defective, manipulated or incomplete on the located record.",
+    "Do not state that Espejo definitely testified without reviewing the filed versions; the precise pre-evidence review position remains unresolved.",
+    "Do not state that all four signed final reports were four separate annexes to LPB's April 2019 opposition.",
+    "Do not state that the two other signed finals were never used or filed elsewhere.",
+    "Do not equate the retrospectively mentioned May economic note with the 10 May valuation draft without an exact document match.",
+    "Do not allege audiovisual manipulation, deletion or incompleteness without originals, metadata, hashes and/or a certified court copy.",
+    "Do not publish private contacts, fees, family information, privileged strategy or complete restricted reports without separate clearance.",
+    "Expert evidence is not adjudication and does not by itself establish misconduct, knowledge, causation, liability or criminal intent."
+  ],
+  "reports": [
+    {
+      "report_id": "DES-2018-05-04-CLIENT-BRIEFING",
+      "date": "2018-05-04",
+      "public_title_es": "Antecedentes dirigidos a David Espejo",
+      "public_title_en": "Background materials addressed to David Espejo",
+      "exact_filename": null,
+      "version_status": "client_contribution",
+      "signature_status": "not_applicable",
+      "custody_status": "client_and_adviser_working_material",
+      "filing_status": "unresolved",
+      "judicial_use": "not_established",
+      "public_limit": "Do not cite as an independent eXW conclusion unless expert authorship is established."
+    },
+    {
+      "report_id": "DES-2018-05-10-VALUATION-LIQUIDATION-DRAFT",
+      "date": "2018-05-10",
+      "public_title_es": "Valoración del complejo y razonabilidad del plan de liquidación",
+      "public_title_en": "Complex valuation and liquidation-plan reasonableness",
+      "exact_filename": "Análisis valoración del Complejo en el ámbito del plan de liquidación del Concurso 2.pdf",
+      "version_status": "draft",
+      "signature_status": "not_matched_to_signed_final",
+      "custody_status": "working_copy_located",
+      "filing_status": "unresolved",
+      "author_later_recollection": "A May economic note appeared not to have been filed.",
+      "exact_match_to_later_recollection": "unresolved",
+      "notice_significance": "Ex-ante evidence that valuation and liquidation objections were being documented before 7 June 2018; it does not itself prove each underlying notice, recipient or receipt."
+    },
+    {
+      "report_id": "DES-2018-06-11-CEXP-RIGHTS",
+      "date": "2018-06-11",
+      "public_title_es": "Nota económica sobre derechos frente a la CEXP",
+      "public_title_en": "Economic note on rights against the CEXP",
+      "exact_filename": "Nota Económica derechos contra la CEXP Def.pdf",
+      "version_status": "signed_final",
+      "signature_status": "signed_final_delivered_2019",
+      "source_discrepancy": "The cover states Concurso Voluntario nº 32/2012; the body and context concern LPB's Concurso 36/2012. Preserve and explain the discrepancy.",
+      "filing_status": "court_filed",
+      "april_2019_annex": "document 3",
+      "judicial_use": "court_cited",
+      "judicial_use_note": "The later judgment identifies and uses the document 3 Espejo opinion in the CEXP/credit analysis.",
+      "source_locators": [
+        "gmail:16a4a411f8c2206c",
+        "gmail:16a4ba1d9bc2fb78",
+        "repository:archive/DAVID_ESPEJO_EXPERT_WITNESS_DEEP_EVIDENCE_RECONSTRUCTION_20AUG2026.md"
+      ]
+    },
+    {
+      "report_id": "DES-2018-07-10-COMMUNITY-DEBT",
+      "date": "2018-07-10",
+      "public_title_es": "Razonabilidad de la deuda de la Comunidad de Propietarios",
+      "public_title_en": "Reasonableness of the Owners' Community debt",
+      "exact_filename": "Análisis de razonabilidad de deuda Def.pdf",
+      "version_status": "signed_final",
+      "signature_status": "signed_final_delivered_2019",
+      "filing_status": "not_separately_annexed_in_located_april_2019_opposition",
+      "other_use_or_filing": "unresolved",
+      "public_limit": "The located opposition does not prove that this report was never filed, used or cited elsewhere.",
+      "source_locators": [
+        "gmail:16a4a411f8c2206c",
+        "gmail:16a4a69a3c17d288",
+        "repository:archive/DAVID_ESPEJO_EXPERT_WITNESS_DEEP_EVIDENCE_RECONSTRUCTION_20AUG2026.md"
+      ]
+    },
+    {
+      "report_id": "DES-2018-SWAP-PLEDGED-DEPOSIT",
+      "date": "2018",
+      "public_title_es": "Vinculación swap, financiación y depósito pignorado",
+      "public_title_en": "Swap, financing and pledged-deposit linkage",
+      "exact_filename": "Vinculación Swap Cobertura vs Financiación Caja de Canarias Sun Park Def..pdf",
+      "version_status": "signed_final",
+      "signature_status": "signed_final_delivered_2019",
+      "filing_status": "court_filed",
+      "april_2019_annex": "document 5",
+      "judicial_use": "court_cited",
+      "judicial_use_note": "The later judgment expressly uses document 5 when analysing the swap and pledged-deposit package and does not uphold culpability on that particular ground.",
+      "source_locators": [
+        "gmail:16a4a411f8c2206c",
+        "gmail:16a4ba1d9bc2fb78",
+        "repository:archive/DAVID_ESPEJO_EXPERT_WITNESS_DEEP_EVIDENCE_RECONSTRUCTION_20AUG2026.md"
+      ]
+    },
+    {
+      "report_id": "DES-2018-GENERAL-ECONOMIC-NOTE",
+      "date": "2018",
+      "public_title_es": "Nota económica general",
+      "public_title_en": "General economic note",
+      "exact_filename": "Nota Económica Def.pdf",
+      "version_status": "signed_final",
+      "signature_status": "signed_final_delivered_2019",
+      "filing_status": "not_separately_annexed_in_located_april_2019_opposition",
+      "other_use_or_filing": "unresolved",
+      "public_limit": "Do not equate this item automatically with every later reference to a May economic note without a version match.",
+      "source_locators": [
+        "gmail:16a4a411f8c2206c",
+        "gmail:16a4a69a3c17d288",
+        "gmail:1898367d3957a002"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "DES-EVT-2016-2017-PROFESSIONAL-WORKSTREAM",
+      "date_range": "2016-2017",
+      "event_type": "professional_relationship",
+      "status": "documented",
+      "proposition": "A professional expert/economic workstream predates the 2018 reports and later networking correspondence.",
+      "limit": "Not a filing index and not proof that the relationship remained exclusively professional at every later point."
+    },
+    {
+      "event_id": "DES-EVT-2019-04-23-FOUR-SIGNED-FINALS",
+      "date": "2019-04-23",
+      "event_type": "signed_final_delivery",
+      "status": "documented",
+      "proposition": "Four signed final reports were delivered to the client/adviser perimeter.",
+      "source_locators": ["gmail:16a4a411f8c2206c", "gmail:16a4a69a3c17d288"]
+    },
+    {
+      "event_id": "DES-EVT-2019-04-23-COUNSEL-SELECTION",
+      "date": "2019-04-23",
+      "event_type": "annex_selection",
+      "status": "documented",
+      "proposition": "Counsel stated that two Espejo reports had been replaced with the signed versions in the working opposition bundle.",
+      "source_locators": ["gmail:16a4ba1d9bc2fb78"]
+    },
+    {
+      "event_id": "DES-EVT-2019-04-23-CLIENT-AUTHORISATION",
+      "date": "2019-04-23",
+      "event_type": "client_instruction",
+      "status": "documented",
+      "proposition": "The client authorised counsel to present the pleading.",
+      "limit": "Client instruction is not itself a filing receipt.",
+      "source_locators": ["gmail:16a4bc7eadcf52e6"]
+    },
+    {
+      "event_id": "DES-EVT-2019-04-24-LPB-OPPOSITION",
+      "date": "2019-04-24",
+      "event_type": "court_filing",
+      "status": "documented_for_annexes_3_and_5",
+      "proposition": "The located LPB opposition used two separate Espejo annexes: document 3 (CEXP rights/credit) and document 5 (swap/pledged deposit).",
+      "limit": "No broader claim is made about use or filing of the other two signed finals elsewhere."
+    },
+    {
+      "event_id": "DES-EVT-2022-2023-COURT-ROLE",
+      "date_range": "2022-03-2023",
+      "event_type": "court_correspondence",
+      "status": "court_confirmed_role",
+      "proposition": "Court correspondence confirms a formal witness-expert participation pathway, including remote-intervention arrangements.",
+      "source_locators": ["gmail:17efc99637c094a4", "gmail:1870d492a640940b"]
+    },
+    {
+      "event_id": "DES-EVT-2023-07-AUTHOR-FILING-RECOLLECTION",
+      "date": "2023-07-23",
+      "event_type": "provenance_clarification",
+      "status": "author_recollection",
+      "proposition": "The May economic note appeared not filed; the June economic note was filed.",
+      "limit": "The exact identity of the May item remains unresolved and neither recollection substitutes for the certified docket.",
+      "source_locators": ["gmail:1898367d3957a002"]
+    },
+    {
+      "event_id": "DES-EVT-2023-07-24-COURT-FILE-ACCESS",
+      "date": "2023-07-24",
+      "event_type": "version_access",
+      "status": "documented_access_barrier",
+      "proposition": "Espejo reported that his copies did not match the versions contributed to the proceeding and that he had not accessed the optical medium because no reader was available.",
+      "not_proved": [
+        "the medium was corrupt",
+        "the medium was defective",
+        "the medium was manipulated",
+        "the medium was incomplete",
+        "Espejo definitely gave evidence without later obtaining access"
+      ],
+      "unresolved": "Whether he obtained and reviewed the exact filed versions before giving evidence."
+    },
+    {
+      "event_id": "DES-EVT-2023-07-25-WITNESS-EXPERT",
+      "date": "2023-07-25",
+      "event_type": "hearing",
+      "status": "judgment_confirmed",
+      "proposition": "The judgment records Espejo as a testigo-perito at the classification hearing."
+    },
+    {
+      "event_id": "DES-EVT-2023-09-28-JUDGMENT-USE",
+      "date": "2023-09-28",
+      "event_type": "judicial_use",
+      "status": "court_cited",
+      "proposition": "The judgment uses document 3 in the CEXP/credit analysis and document 5 in the swap/pledged-deposit analysis; it does not uphold culpability on the latter ground.",
+      "limit": "The overall classification was nevertheless partly culpable on other grounds."
+    },
+    {
+      "event_id": "DES-EVT-2023-07-RECORDING-REVIEW",
+      "date_range": "2023-07-29/2023-07-30",
+      "event_type": "audiovisual_review_request",
+      "status": "documented_missing_attachment_in_one_request",
+      "proposition": "A later request for Espejo to review the hearing recording initially omitted the recording attachment.",
+      "source_locators": ["gmail:189a5946f839d61d"]
+    }
+  ],
+  "audiovisual_control": {
+    "reported_wall_clock_interval_minutes": 158,
+    "reported_combined_file_runtime_minutes": 116,
+    "raw_difference_minutes": 42,
+    "possible_explanation": "A recess may explain some or all of the raw difference.",
+    "current_status": "unresolved_not_proof_of_manipulation",
+    "required_before_stronger_proposition": [
+      "original audiovisual files",
+      "metadata",
+      "cryptographic hashes where available",
+      "certified complete court copy or audiovisual index",
+      "recess and off-record chronology"
+    ]
+  },
+  "open_evidence_tasks": [
+    {
+      "task_id": "DES-OPEN-01",
+      "task": "Establish whether Espejo obtained and reviewed the exact court-file versions before giving evidence.",
+      "priority": "high"
+    },
+    {
+      "task_id": "DES-OPEN-02",
+      "task": "Recover and hash the original 25 July 2023 audiovisual files and compare them with a certified court copy or index.",
+      "priority": "high"
+    },
+    {
+      "task_id": "DES-OPEN-03",
+      "task": "Locate and review the final LPB appeal as regards the 24 July access and recording issue.",
+      "priority": "high"
+    },
+    {
+      "task_id": "DES-OPEN-04",
+      "task": "Complete a report-by-report SHA-256 version, custody, annex, filing and judicial-citation matrix.",
+      "priority": "high"
+    },
+    {
+      "task_id": "DES-OPEN-05",
+      "task": "Authenticate any precise historic VIDISPIR linkage before publication as independently verified.",
+      "priority": "medium"
+    },
+    {
+      "task_id": "DES-OPEN-06",
+      "task": "Move any primary original held only as a working copy into durable source custody.",
+      "priority": "high"
+    }
+  ],
+  "cross_links": {
+    "es": [
+      "/es/david-espejo-perito-forense/",
+      "/es/cuaderno-juridico/",
+      "/es/concurso-36-2012-columna-judicial/",
+      "/es/calificacion-concurso-36-2012-vidas-paralelas/",
+      "/es/fuente-profesional-2018-conocimiento-concursal/",
+      "/es/comparativa-tasaciones-actua-gesvalt-2018/",
+      "/es/comunidad-instrumentalizacion/",
+      "/es/toma-control-sun-park-7-junio-2018/"
+    ],
+    "en": [
+      "/en/david-espejo-expert-witness/",
+      "/en/legal-notebook/",
+      "/en/concurso-36-2012-judicial-spine/",
+      "/en/insolvency-classification-parallel-lives/",
+      "/en/2018-professional-source-insolvency-knowledge/",
+      "/en/actua-gesvalt-2018-valuation-comparison/",
+      "/en/community-instrumentalisation/",
+      "/en/sun-park-takeover-7-june-2018/"
+    ]
+  },
+  "public_page_policy": "Describe sources, provenance and procedural status conservatively. Expert evidence is not a judicial finding and does not by itself establish misconduct, knowledge, causation, liability or criminal intent."
+}

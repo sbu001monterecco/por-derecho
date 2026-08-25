@@ -1,5 +1,9 @@
 {
   "schema": "por-derecho.expert-evidence-status.v1",
+  "status": "superseded_read_only",
+  "superseded_on": "2026-08-25",
+  "superseded_by": "assets/data/david-espejo-expert-evidence-v2.json",
+  "notice": "This historical v1 register is retained for provenance. Use v2 as the controlling structured register.",
   "subject": {
     "name": "David Espejo Navarro",
     "firm": "Expert Witness Forensic & Compliance (eXW)",

@@ -4,8 +4,15 @@
   <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</id>
   <link rel="self" type="application/atom+xml" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
-  <updated>2026-08-25T08:33:01Z</updated>
+  <updated>2026-08-25T18:30:00Z</updated>
   <author><name>Project Sun Rock</name></author>
+    <entry>
+    <title>David Espejo / eXW: matriz de procedencia y uso judicial actualizada</title>
+    <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/david-espejo-evidencia-pericial/</id>
+    <link href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/david-espejo-evidencia-pericial/"/>
+    <updated>2026-08-25T18:30:00Z</updated>
+    <summary>Cuatro informes firmados, dos anexos identificados y una cuestión de versión antes de la vista, con límites probatorios expresos.</summary>
+  </entry>
   <entry>
     <title>Declaración 011 y OSINT: Campanario, Prieto Puente, López Noriega y red societaria</title>
     <id>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/#campanario-osint-declaracion011-25ago</id>
