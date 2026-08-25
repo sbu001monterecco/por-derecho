@@ -48,8 +48,9 @@ MARKERS = {
         "addTransparencyHome",
         "addTransparencyStrip",
         "data-pd-transparency-phase1",
-        "/por-derecho/en/por-derecho/transparency/",
-        "/por-derecho/es/por-derecho/transparencia/",
+        "const base = `/por-derecho/${lang}/por-derecho/`;",
+        "transparency/",
+        "transparencia/",
     ],
     "sitemap": [
         "https://sbu001monterecco.github.io/por-derecho/en/por-derecho/transparency/",
