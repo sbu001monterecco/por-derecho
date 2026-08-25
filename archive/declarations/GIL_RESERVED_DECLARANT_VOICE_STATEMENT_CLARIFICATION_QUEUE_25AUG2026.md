@@ -10,6 +10,8 @@
 
 Esta cola no presupone que una versión sea falsa. Convierte tensiones, ambigüedades y lagunas de autenticación en preguntas finitas bajo el [protocolo de voz a texto](./VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md).
 
+**Autoridad del registro:** esta cola es una interfaz de entrevista y no una segunda fuente de verdad, corrección o cierre. Las tensiones controlantes son RDC-30–RDC-43 del [`registro canónico de contradicciones`](../GIL_RESERVED_DECLARANT_CONTRADICTION_CLARIFICATION_REGISTER_22AUG2026.md), que contiene el crosswalk completo. Los IDs `VQ-P-*` se conservan como alias históricos estables; para nuevas preguntas de la declarante reservada se utilizará `VQ-RD-*` para reducir triangulación innecesaria.
+
 ## A. Aclaraciones a la declarante reservada
 
 | ID | Pregunta neutral y alcance | Fuente o criterio de cierre | Prioridad |

@@ -1324,5 +1324,513 @@
       "partial overlap",
       "2019 decisions"
     ]
+  },
+  {
+    "lang": "es",
+    "path": "es/alvaro-campanario-hernandez/",
+    "title": "Álvaro Campanario Hernández — ficha profesional y cronología",
+    "type": "actor-profile",
+    "summary": "Ficha nominal con rastreo oficial 1995–2009, actuaciones Sun Park documentadas y relato atribuido conciliado.",
+    "tags": [
+      "Campanario",
+      "abogado",
+      "administrador concursal",
+      "2011"
+    ],
+    "aliases": [
+      "Álvaro Campanario",
+      "Alvaro Campanario Hernandez"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/alvaro-campanario-hernandez/",
+    "title": "Álvaro Campanario Hernández — professional profile and chronology",
+    "type": "actor-profile",
+    "summary": "Named profile with the 1995–2009 official trace, documented Sun Park acts and reconciled attributed account.",
+    "tags": [
+      "Campanario",
+      "lawyer",
+      "insolvency administrator",
+      "2011"
+    ],
+    "aliases": [
+      "Álvaro Campanario",
+      "Alvaro Campanario Hernandez"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/juan-carlos-prieto-puente/",
+    "title": "Juan Carlos Prieto Puente — ficha profesional y societaria",
+    "type": "actor-profile",
+    "summary": "Ficha nominal: capacidades documentadas en Sun Park, Millan and Miners y Santa Lucia Real Estate.",
+    "tags": [
+      "Prieto Puente",
+      "abogado",
+      "Comunidad",
+      "Santa Lucia"
+    ],
+    "aliases": [
+      "Juan Carlos Prieto",
+      "Juan Carlos Roque Prieto",
+      "Juan Carlos Esloque Prieto"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/juan-carlos-prieto-puente/",
+    "title": "Juan Carlos Prieto Puente — professional and corporate profile",
+    "type": "actor-profile",
+    "summary": "Named profile: documented Sun Park roles, Millan and Miners and Santa Lucia Real Estate.",
+    "tags": [
+      "Prieto Puente",
+      "lawyer",
+      "Community",
+      "Santa Lucia"
+    ],
+    "aliases": [
+      "Juan Carlos Prieto",
+      "Juan Carlos Roque Prieto",
+      "Juan Carlos Esloque Prieto"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/esteban-lopez-noriega/",
+    "title": "Esteban López Noriega — ficha profesional y cronología",
+    "type": "actor-profile",
+    "summary": "Ficha nominal: acta de 22-jun-2011, litigios y Millan and Miners, con límites de capacidad.",
+    "tags": [
+      "López Noriega",
+      "abogado",
+      "22 junio 2011",
+      "Millan and Miners"
+    ],
+    "aliases": [
+      "Esteban Noriega",
+      "Esteban Noruega",
+      "Esteban Muriega"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/esteban-lopez-noriega/",
+    "title": "Esteban López Noriega — professional profile and chronology",
+    "type": "actor-profile",
+    "summary": "Named profile: 22-Jun-2011 minutes, litigation and Millan and Miners, with role limits.",
+    "tags": [
+      "Lopez Noriega",
+      "lawyer",
+      "22 June 2011",
+      "Millan and Miners"
+    ],
+    "aliases": [
+      "Esteban Noriega",
+      "Esteban Noruega",
+      "Esteban Muriega"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/antonio-cogolludo-rojas/",
+    "title": "Antonio Cogolludo Rojas — ficha comunitaria y societaria",
+    "type": "actor-profile",
+    "summary": "Ficha nominal sobre apariciones comunitarias y cargos oficiales en Pamalexsha, Noalpa y Santa Lucia.",
+    "tags": [
+      "Cogolludo",
+      "presidente",
+      "Pamalexsha",
+      "Noalpa"
+    ],
+    "aliases": [
+      "Antonio Cogolludo"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/antonio-cogolludo-rojas/",
+    "title": "Antonio Cogolludo Rojas — Community and corporate profile",
+    "type": "actor-profile",
+    "summary": "Named profile covering Community appearances and official roles in Pamalexsha, Noalpa and Santa Lucia.",
+    "tags": [
+      "Cogolludo",
+      "president",
+      "Pamalexsha",
+      "Noalpa"
+    ],
+    "aliases": [
+      "Antonio Cogolludo"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/millan-and-miners-slp/",
+    "title": "Millan and Miners, S.L.P. — ficha societaria",
+    "type": "actor-profile",
+    "summary": "Constitución, socios profesionales y administración verificados en BORME; papel Sun Park delimitado.",
+    "tags": [
+      "Millan and Miners",
+      "SLP",
+      "Prieto",
+      "López Noriega"
+    ],
+    "aliases": [
+      "Millen and Miners",
+      "Millennium Miners",
+      "Millán & Miners"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/millan-and-miners-slp/",
+    "title": "Millan and Miners, S.L.P. — corporate profile",
+    "type": "actor-profile",
+    "summary": "BORME-verified formation, professional partners and management; Sun Park role delimited.",
+    "tags": [
+      "Millan and Miners",
+      "SLP",
+      "Prieto",
+      "Lopez Noriega"
+    ],
+    "aliases": [
+      "Millen and Miners",
+      "Millennium Miners",
+      "Millán & Miners"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/pamanil-sl/",
+    "title": "Pamanil, S.L. — ficha comunitaria",
+    "type": "actor-profile",
+    "summary": "Propuesta, ratificación y funciones registradas desde 2011; contrato, autoridad y prestación integral abiertos.",
+    "tags": [
+      "Pamanil",
+      "Comunidad",
+      "2011",
+      "administración"
+    ],
+    "aliases": [
+      "Pamanil SL"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/pamanil-sl/",
+    "title": "Pamanil, S.L. — Community profile",
+    "type": "actor-profile",
+    "summary": "Proposal, ratification and recorded functions from 2011; contract, authority and integrated performance remain open.",
+    "tags": [
+      "Pamanil",
+      "Community",
+      "2011",
+      "administration"
+    ],
+    "aliases": [
+      "Pamanil SL"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/pamalexsha-servicios-integrales-sl/",
+    "title": "Pamalexsha Servicios Integrales, S.L. — ficha societaria y comunitaria",
+    "type": "actor-profile",
+    "summary": "Cargos BORME, presupuesto comunitario de 2016 y límites de una supuesta sucesión desde Pamanil.",
+    "tags": [
+      "Pamalexsha",
+      "Cogolludo",
+      "Comunidad",
+      "2016"
+    ],
+    "aliases": [
+      "Pamalexa",
+      "Pamalexsha Servicios Integrales"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/pamalexsha-servicios-integrales-sl/",
+    "title": "Pamalexsha Servicios Integrales, S.L. — corporate and Community profile",
+    "type": "actor-profile",
+    "summary": "BORME roles, 2016 Community budget and limits on any claimed succession from Pamanil.",
+    "tags": [
+      "Pamalexsha",
+      "Cogolludo",
+      "Community",
+      "2016"
+    ],
+    "aliases": [
+      "Pamalexa",
+      "Pamalexsha Servicios Integrales"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/explotaciones-noalpa-sl/",
+    "title": "Explotaciones Noalpa, S.L. — ficha societaria",
+    "type": "actor-profile",
+    "summary": "Cargos y domicilio societario verificados; vínculos profesionales alegados sometidos a prueba.",
+    "tags": [
+      "Noalpa",
+      "Cogolludo",
+      "Shaila",
+      "BORME"
+    ],
+    "aliases": [
+      "Explotaciones Noepa",
+      "Noalpa"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/explotaciones-noalpa-sl/",
+    "title": "Explotaciones Noalpa, S.L. — corporate profile",
+    "type": "actor-profile",
+    "summary": "Verified officers and registered office; alleged professional links kept subject to proof.",
+    "tags": [
+      "Noalpa",
+      "Cogolludo",
+      "Shaila",
+      "BORME"
+    ],
+    "aliases": [
+      "Explotaciones Noepa",
+      "Noalpa"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/santa-lucia-real-estate-sl/",
+    "title": "Santa Lucia Real Estate, S.L. — ficha societaria",
+    "type": "actor-profile",
+    "summary": "Vínculo societario oficial entre Juan Carlos Prieto Puente y Antonio Cogolludo Rojas desde 2017.",
+    "tags": [
+      "Santa Lucia Real Estate",
+      "Prieto",
+      "Cogolludo",
+      "BORME"
+    ],
+    "aliases": [
+      "Santa Lucía",
+      "Inversiones Santa Lucía"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/santa-lucia-real-estate-sl/",
+    "title": "Santa Lucia Real Estate, S.L. — corporate profile",
+    "type": "actor-profile",
+    "summary": "Official corporate link between Juan Carlos Prieto Puente and Antonio Cogolludo Rojas from 2017.",
+    "tags": [
+      "Santa Lucia Real Estate",
+      "Prieto",
+      "Cogolludo",
+      "BORME"
+    ],
+    "aliases": [
+      "Santa Lucía",
+      "Inversiones Santa Lucía"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/shaila-maria-cogolludo-ramos/",
+    "title": "Shaila María Cogolludo Ramos — ficha comunitaria y societaria",
+    "type": "actor-profile",
+    "summary": "Comunicaciones Pamanil y poderes posteriores en Noalpa y Pamalexsha, sin retroacción ni parentesco inferido.",
+    "tags": [
+      "Shaila Cogolludo",
+      "Pamanil",
+      "Noalpa",
+      "Pamalexsha"
+    ],
+    "aliases": [
+      "Shaila Cogolludo",
+      "Shayla Cogolludo"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/shaila-maria-cogolludo-ramos/",
+    "title": "Shaila María Cogolludo Ramos — Community and corporate profile",
+    "type": "actor-profile",
+    "summary": "Pamanil communications and later Noalpa and Pamalexsha powers, without backdating or inferred kinship.",
+    "tags": [
+      "Shaila Cogolludo",
+      "Pamanil",
+      "Noalpa",
+      "Pamalexsha"
+    ],
+    "aliases": [
+      "Shaila Cogolludo",
+      "Shayla Cogolludo"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/francisco-mario-matos-matas/",
+    "title": "Francisco Mario Matos Matas — ficha comunitaria e identidad",
+    "type": "actor-profile",
+    "summary": "Funciones Comunidad/Pamanil y divergencia oficial MATA/MATAS pendiente de DNI o certificación.",
+    "tags": [
+      "FMMM",
+      "Matos Matas",
+      "Matos Mata",
+      "Pamanil"
+    ],
+    "aliases": [
+      "FMMM",
+      "Francisco Mario Matos Mata"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/francisco-mario-matos-matas/",
+    "title": "Francisco Mario Matos Matas — Community and identity profile",
+    "type": "actor-profile",
+    "summary": "Community/Pamanil functions and the official MATA/MATAS divergence pending ID or certification.",
+    "tags": [
+      "FMMM",
+      "Matos Matas",
+      "Matos Mata",
+      "Pamanil"
+    ],
+    "aliases": [
+      "FMMM",
+      "Francisco Mario Matos Mata"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/francisco-de-borja-rodriguez-batllori-laffitte/",
+    "title": "Francisco de Borja Rodríguez-Batllori Laffitte — ficha concursal",
+    "type": "actor-profile",
+    "summary": "Administrador concursal designado judicialmente en Concurso 36/2012; no actor privado ni juez.",
+    "tags": [
+      "Rodríguez-Batllori",
+      "administrador concursal",
+      "Concurso 36/2012"
+    ],
+    "aliases": [
+      "Francisco de Borja Rodríguez-Batllori"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/francisco-de-borja-rodriguez-batllori-laffitte/",
+    "title": "Francisco de Borja Rodríguez-Batllori Laffitte — insolvency profile",
+    "type": "actor-profile",
+    "summary": "Court-appointed insolvency administrator in Insolvency 36/2012; neither private actor nor judge.",
+    "tags": [
+      "Rodriguez-Batllori",
+      "insolvency administrator",
+      "Insolvency 36/2012"
+    ],
+    "aliases": [
+      "Francisco de Borja Rodríguez-Batllori"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/asuncion-aizpurua-sanchez/",
+    "title": "Asunción Aizpurúa Sánchez — ficha comunitaria",
+    "type": "actor-profile",
+    "summary": "Presidencia y representación según actas Sun Park; coincidencia BOC similar expresamente descartada.",
+    "tags": [
+      "Asunción Aizpurúa",
+      "AAS",
+      "Comunidad",
+      "2011"
+    ],
+    "aliases": [
+      "AAS",
+      "Asunción Aizpurúa"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/asuncion-aizpurua-sanchez/",
+    "title": "Asunción Aizpurúa Sánchez — Community profile",
+    "type": "actor-profile",
+    "summary": "Presidency and representation in Sun Park minutes; similar BOC match expressly rejected.",
+    "tags": [
+      "Asuncion Aizpurua",
+      "AAS",
+      "Community",
+      "2011"
+    ],
+    "aliases": [
+      "AAS",
+      "Asunción Aizpurúa"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/montelanza-monte-lanza-sl/",
+    "title": "Montelanza / MONTE LANZA — ficha histórica",
+    "type": "actor-profile",
+    "summary": "Perímetro Sun Park con grafías BOC/BORME y puente CIF–hoja todavía pendiente.",
+    "tags": [
+      "Montelanza",
+      "Monte Lanza",
+      "Sun Park",
+      "GC1339"
+    ],
+    "aliases": [
+      "Montelanza, S.L.",
+      "MONTE LANZA SOCIEDAD LIMITADA"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/montelanza-monte-lanza-sl/",
+    "title": "Montelanza / MONTE LANZA — historic profile",
+    "type": "actor-profile",
+    "summary": "Sun Park perimeter with BOC/BORME spellings and an outstanding tax-ID/sheet bridge.",
+    "tags": [
+      "Montelanza",
+      "Monte Lanza",
+      "Sun Park",
+      "GC1339"
+    ],
+    "aliases": [
+      "Montelanza, S.L.",
+      "MONTE LANZA SOCIEDAD LIMITADA"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/inversiones-salinetas-sl/",
+    "title": "Inversiones Salinetas, S.L. — ficha de propiedad",
+    "type": "actor-profile",
+    "summary": "Apariciones en actas y representación fechada; identidad pública y título finca por finca abiertos.",
+    "tags": [
+      "Inversiones Salinetas",
+      "Salineras",
+      "local 5",
+      "Antonio Cogolludo"
+    ],
+    "aliases": [
+      "Inversiones Salinetas",
+      "Inversiones Salineras"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/inversiones-salinetas-sl/",
+    "title": "Inversiones Salinetas, S.L. — ownership profile",
+    "type": "actor-profile",
+    "summary": "Appearances in minutes and dated representation; public identity and unit-by-unit title remain open.",
+    "tags": [
+      "Inversiones Salinetas",
+      "Salineras",
+      "premises 5",
+      "Antonio Cogolludo"
+    ],
+    "aliases": [
+      "Inversiones Salinetas",
+      "Inversiones Salineras"
+    ]
   }
 ]

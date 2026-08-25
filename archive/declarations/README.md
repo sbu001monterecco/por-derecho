@@ -10,7 +10,7 @@ Este directorio conserva declaraciones fechadas de personas con conocimiento per
 
 Este repositorio GitHub es público. Por tanto, una persona privada puede estar plenamente identificada en el original nativo, firmado o presentado institucionalmente y, al mismo tiempo, aparecer en esta capa pública mediante un descriptor funcional cuando su nombre no sea necesario para comprender o verificar la proposición publicada.
 
-Para la persona del perímetro personal y empresarial de Gil Marer vinculada a las declaraciones 001–003, utilizar:
+Para la persona del perímetro personal y empresarial de Gil Marer vinculada a las declaraciones 001–005 y 011, utilizar:
 
 - **Testigo del perímetro de Gil Marer — identidad reservada**; o
 - **persona del perímetro personal y empresarial de Gil Marer**.
@@ -45,6 +45,7 @@ Toda nota de voz, audio, dictado, transcripción automática o texto atribuido a
 - registrar por segmento la base de atribución del hablante y no llamar autenticación de voz a una atribución conversacional;
 - separar procedencia, atribución, fidelidad, adopción y veracidad material;
 - no fusionar las voces de Gil Marer, la declarante reservada u otra persona sin adopción individual del texto exacto;
+- mantener el intake en modo de captura, sin analizar, finalizar ni publicar, cuando la persona anuncie más audio o pida esperar; sólo un cierre expreso reanuda el trabajo;
 - no sustituir silenciosamente pausas, dudas, correcciones o versiones materiales;
 - clasificar percepción directa, recuerdo, palabras de terceros, conocimiento documental, inferencia, posición jurídica y cuestión abierta; y
 - ejecutar una revisión de contradicciones y la cola de aclaraciones antes de utilizar públicamente una proposición controvertida.
@@ -65,6 +66,8 @@ La cola activa para Gil y la declarante reservada está en [`GIL_RESERVED_DECLAR
 10. Si una frase material no puede afirmarse responsablemente en el nivel en que está redactada, debe marcarse **`REQUIERE ACLARACIÓN`** o reformularse como recuerdo, manifestación de tercero, conocimiento documental, inferencia o cuestión pendiente. No se inventará certeza para completar una declaración.
 11. La evidencia exculpatoria, las negaciones y las explicaciones alternativas deben preservarse con el mismo rigor que la evidencia adversa.
 12. El número secuencial refleja el **orden de incorporación al archivo**, no necesariamente la fecha del hecho ni la fecha de la declaración fuente.
+13. Cuando el relato se refiera a correos de una cuenta privada, la cuenta, exportación, IDs, cuerpos, asuntos, destinatarios y adjuntos se conservan fuera de GitHub conforme al [`protocolo de adquisición y custodia de buzón privado`](../RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md); la declaración pública sólo usa IDs opacos, agregados o proposiciones aprobadas.
+14. Los nombres, cargos, sociedades y relaciones derivados de una declaración se verifican conforme al [`protocolo OSINT`](../OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md). Un resultado no localizado no prueba ausencia y una relación societaria no transfiere conducta o responsabilidad.
 
 ## Hacer una declaración accionable
 
@@ -101,11 +104,11 @@ Los nombres exactos de originales privados pueden mantenerse en el registro priv
 
 ## Flujo operativo para cualquier hilo
 
-1. Leer `README.md`, `INDEX.md`, `STATEMENT_TEMPLATE.md`, el protocolo de voz a texto cuando corresponda y el control de anonimización.
+1. Leer `README.md`, `INDEX.md`, `STATEMENT_TEMPLATE.md`, el protocolo de voz a texto y el control de anonimización.
 2. Recuperar la fuente completa antes de redactar si está disponible.
 3. Verificar el último número real del archivo y asignar el siguiente.
-4. Convertir el relato en primera persona sin añadir hechos.
-5. Clasificar las proposiciones materiales por fuente y nivel de conocimiento; si hay voz, registrar el segmento, versión, hablante y grado de atribución.
+4. Usar primera persona sólo cuando sea texto fuente literal o cuando el declarante haya revisado/adoptado esa redacción. Si es una síntesis editorial no ratificada, identificarla como **relato editorial derivado de fuente** y no atribuir al declarante una fórmula de veracidad que no haya adoptado.
+5. Clasificar las proposiciones materiales por fuente y nivel de conocimiento; si hay voz, registrar el segmento, versión, hablante, grado de atribución y estado de adopción.
 6. Aplicar la regla de privacidad antes de crear título, índice o filename público.
 7. Marcar `REQUIERE ACLARACIÓN` cuando corresponda sin bloquear el resto de la declaración.
 8. Ejecutar la matriz de contradicción y la cola de aclaraciones; añadir el apéndice operativo cuando existan verificaciones derivadas.

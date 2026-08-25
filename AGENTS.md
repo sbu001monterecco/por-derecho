@@ -234,7 +234,6 @@ exists.
 See `.github/governance/AGENT_PUBLISHING_COMPATIBILITY.md` for the hard/advisory
 matrix and the governance-only acceptance test.
 
-
 ## 7. Transaction-development separation
 
 Prospective financing, investment, acquisition, sale, operating-partner and
@@ -274,3 +273,48 @@ confidentiality status and an agreed transcript. Give required notice and obtain
 required consent before transcription. Preserve the invite, attendee record,
 transcript and post-meeting corporate-email summary privately; do not commit
 those native records or identities to Git.
+
+## 8. Voice statements, private mail and OSINT
+
+The following controls apply to every new voice-to-text account, statement of
+truth/fact, private-mail evidence task and named-person/entity scan:
+
+- Read and apply
+  `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`.
+  If a speaker says that more audio will follow or asks that analysis wait,
+  preserve the intake and do not analyse, finalise or publish until the speaker
+  closes the sequence.
+- Keep each speaker's propositions separately attributed. Relationship,
+  coordination, presence or silence does not create a joint statement. Gil or
+  another person adopts a proposition only by express proposition-specific
+  confirmation.
+- A `Statement of Truth` label records the declarant's documented adoption and
+  honest belief at the stated stage; it is not repository, AI or joint
+  certification of material truth. Distinguish transcription, attribution,
+  review, ratification, signature, oath and institutional filing.
+- Native audio, full working transcripts, private email exports, subjects,
+  sender/recipient lists, provider/message/thread IDs, exact private filenames
+  and custody locators belong in the private evidence manifest/vault. Encoding,
+  compression, an `archive` directory or a `backend` label does not make a
+  tracked Git file private.
+- For a private mailbox, follow
+  `archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`.
+  Never request credentials or forward a mailbox as a substitute for native
+  acquisition. Account connection, preservation, review, filing and public
+  release are separate authorities.
+- For every web/background scan involving a person, entity, role or
+  relationship, follow
+  `archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`.
+  Record exact source/date/capacity and negative-search limits; do not infer
+  guilt, mandate, friendship, family, ownership, conflict or coordination from
+  association alone.
+- Do not silently reconcile contradictions. Classify direct contradiction,
+  material tension, imprecision, omission, single-declarant proposition,
+  incomplete alignment and supersession; direct clarification to the correct
+  speaker and preserve the earlier version.
+- Before public naming or a new private-source derivative, apply the privacy and
+  authority gates in Sections 4 and 6. A request to preserve or update rules is
+  not authority to publish raw private material or intensify a named allegation.
+- Run `python3 scripts/validate_private_source_statement_osint_governance.py
+  --base <revision>` for the complete proposed diff. Its GitHub workflow remains
+  advisory/shadow-mode until expressly promoted under the enforcement rules.

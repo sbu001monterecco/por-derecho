@@ -35,7 +35,7 @@
   ],
   "controlling_status": {
     "declaration_011": "REGISTERED_DERIVED_SOURCE_NOT_SIGNED_NOT_SWORN_NOT_WORD_FOR_WORD_RATIFIED",
-    "mailbox": "PARTIAL_NOT_FULLY_ACQUIRED_2413_MIRRORED_MESSAGES",
+    "mailbox": "PARTIAL_NOT_FULLY_ACQUIRED_COARSE_CONNECTED_SIDE_AGGREGATES_ONLY",
     "osint": "BOUNDED_SOURCE_LED_SCAN_WITH_VERIFIED_ATTRIBUTED_INFERRED_AND_NOT_LOCATED_STATES",
     "thread_continuity": "DELETION_SAFE_WITH_OPEN_EVIDENCE"
   },
@@ -54,7 +54,7 @@
     "No professional, corporate or Community relationship transfers knowledge, intent, control, conflict or responsibility.",
     "A bounded negative OSINT result is not a certificate of nonexistence.",
     "AP 89/2014 remains mandatory contrary evidence within its actual 18-unit scope.",
-    "The 2,413-message figure describes an overlapping mirrored discovery subset, not the complete private mailbox or proof of relevance."
+    "The public mailbox figures are deliberately coarse: more than 2,400 related messages, approximately one thousand with attachments and more than 90% in 2011–2019; they describe an overlapping connected-side discovery subset, not the complete private mailbox or proof of relevance."
   ],
   "privacy_control": "The publication excludes the private email address, message bodies, subjects, participants, provider message/thread identifiers, private locators, native audio and restricted account metadata.",
   "deletions": [],

@@ -22,9 +22,9 @@ Never reverse this hierarchy by treating a ChatGPT summary, public page, screens
 
 The public-safe GitHub repository stores:
 
-- source identifiers;
+- opaque project evidence identifiers, never provider-native private identifiers;
 - evidential classification;
-- retrieval instructions;
+- public-safe source class and bounded re-query question, never private retrieval paths or authentication material;
 - provenance and limitations;
 - correction history;
 - missing-evidence targets;
@@ -46,6 +46,10 @@ Private/restricted evidence should be preserved outside the public repository in
 - later forensic/provider productions.
 
 GitHub should normally hold only the public-safe index to these items, not private or privileged binaries.
+
+For a private mailbox identified by the reserved declarant, apply
+`archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`.
+Its acquisition/preservation authority, review authority and publication authority are separate.
 
 ## Private evidence vault
 
@@ -80,6 +84,8 @@ A derivative must never silently replace the original.
 For each preserved item record, at minimum:
 
 - evidence ID;
+- source-owner authority and scope for acquisition/preservation;
+- separate publication/disclosure authority status;
 - exact original filename;
 - source system;
 - source-native message/document ID;
@@ -135,7 +141,7 @@ For every material proposition, a future reviewer should be able to answer:
 
 Do not put private email exports, private audio, privileged advice, tax records, unnecessary personal data, credentials or redistribution-restricted binaries into the public `por-derecho` repository solely for convenience.
 
-The public repository should instead preserve enough information for recovery, including evidence ID, source system, native source key, custody status, evidential effect and retrieval path.
+The public repository should instead preserve only public-safe recovery information: an opaque project evidence ID, broad source class, custody status, evidential effect and a non-sensitive instruction to re-query the controlled source. Exact native source keys, provider/message/thread IDs, private filenames, subjects, sender/recipient identities and access-bearing retrieval paths belong exclusively in the private custody manifest. This sentence supersedes any older repository instruction that placed those private locators in a public ledger.
 
 A public hash may be recorded when appropriate, but publishing a hash is not mandatory where it would create an unnecessary linkage or security/privacy concern.
 
@@ -154,7 +160,7 @@ The immediate high-value preservation queue for the January-2025 elEconomista tr
 9. **Unseen upstream Outlook message(s)** by which the judicial attachment reached Romera/elEconomista, when lawfully obtained; preserve full RFC822 headers/body/attachments.
 10. **Native CAM/Acosta Matos / Meeting Point communication** capable of authenticating the January response contradiction, if recovered.
 
-The existing evidence ledger and continuity audit already preserve Gmail IDs, Outlook/RFC822 retrieval keys, filenames and open-evidence routes. This protocol adds the custody design; it does not upgrade missing evidence into preserved evidence.
+Some legacy public ledgers contain Gmail IDs, Outlook/RFC822 retrieval keys or filenames. Their existence is remediation debt, not a template for new work. New custody records must keep those values in the private manifest and use opaque project IDs publicly. This protocol adds the custody design; it does not upgrade missing evidence into preserved evidence.
 
 ## Current elEconomista custody status
 
@@ -176,7 +182,7 @@ When custody work is activated, proceed in this order:
 2. create a master evidence manifest template;
 3. export the highest-value native evidence without transformation;
 4. calculate SHA-256 immediately after export;
-5. enter provenance/source-native identifiers and custody metadata;
+5. enter provenance/source-native identifiers and custody metadata in the private manifest, exposing only an opaque project ID in public records;
 6. create read-only/master copies and separate working derivatives;
 7. log every transformation/disclosure event;
 8. cross-reference the public-safe repository ledgers to stable evidence IDs;
@@ -213,7 +219,7 @@ For elEconomista specifically, also read:
 
 ## Reserved-declarant private mailbox and voice corpus — 25-Aug-2026 addendum
 
-The reserved declarant's private mailbox is represented publicly only by source alias `RDM-PRIVATE-MAILBOX-01`. A complete paginated search of the currently authorised corporate mailbox located 2,413 messages sent to or from that source alias, with 2,174 messages in 2012–2018. This is a material preservation lead and mirrored subset, not the complete private mailbox and not proof that every match is relevant.
+The reserved declarant's private mailbox is represented publicly only by source alias `RDM-PRIVATE-MAILBOX-01`. A complete paginated search within the defined query on an authorised connected counterpart mailbox located more than 2,400 related messages; more than 90% fall in 2011–2019. This is a material preservation lead and reflected subset, not the complete private mailbox and not proof that every match is relevant.
 
 Full acquisition requires the account holder's direct authorisation and the workflow in `archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`: native Takeout and/or verified-account API `RAW` export, untouched master, SHA-256 manifest, attachment recovery, label and date-range inventory, error log, cross-mailbox reconciliation, privilege review and public-safe derivatives. Never request or accept a password through chat; never alter mailbox state during acquisition; and never publish the private address, message bodies, subjects, participant list or provider identifiers.
 

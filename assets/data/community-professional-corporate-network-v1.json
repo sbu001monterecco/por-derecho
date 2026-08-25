@@ -1,0 +1,837 @@
+{
+  "schema_version": "1.0.0",
+  "publication_date": "2026-08-25",
+  "title": {
+    "es": "Red profesional, comunitaria y societaria de Sun Park",
+    "en": "Sun Park professional, Community and corporate network"
+  },
+  "scope": {
+    "es": "Quince fichas de identidad conectadas. El conjunto distingue registro oficial, documento interno, relato atribuido, inferencia y prueba pendiente.",
+    "en": "Fifteen connected identity records. The package separates official record, internal record, attributed account, inference and outstanding proof."
+  },
+  "declaration_source": "DECL011",
+  "sources": {
+    "ICALPA1995": {
+      "class": "official",
+      "title": {
+        "es": "ICALPA · El Foro Canario n.º 90 (1995)",
+        "en": "ICALPA · El Foro Canario no. 90 (1995)"
+      },
+      "description": {
+        "es": "El índice oficial y el PDF identifican a Álvaro Campanario Hernández como autor de un estudio de derecho penal.",
+        "en": "The official index and PDF identify Álvaro Campanario Hernández as the author of a criminal-law study."
+      },
+      "url": "https://www.icalpa.es/sites/default/files/DOCUMENTOS/El_Foro_canario/90/90_2.pdf"
+    },
+    "ICALPAINDEX": {
+      "class": "official",
+      "title": {
+        "es": "ICALPA · índice oficial de El Foro Canario",
+        "en": "ICALPA · official El Foro Canario index"
+      },
+      "description": {
+        "es": "Índice por números y años, incluidos los números 94 y 95 de 2000 y el número 99 de 2004.",
+        "en": "Issue-and-year index, including issues 94 and 95 from 2000 and issue 99 from 2004."
+      },
+      "url": "https://www.icalpa.es/biblioteca/el_foro_canario"
+    },
+    "HD2002": {
+      "class": "secondary",
+      "title": {
+        "es": "HD Abogados · perfil profesional publicado en 2013",
+        "en": "HD Abogados · professional profile published in 2013"
+      },
+      "description": {
+        "es": "Una biografía de una tercera persona declara trabajo de recobros en el despacho de Álvaro Campanario Hernández entre 2002 y 2004. Es una fuente secundaria, no un registro oficial del despacho.",
+        "en": "A third party's biography reports debt-recovery work at Álvaro Campanario Hernández's office from 2002 to 2004. It is a secondary source, not an official office record."
+      },
+      "url": "https://hdabogados.blogspot.com/2013/05/poseemos-una-competencia-profesional-y.html"
+    },
+    "ICALPA2004": {
+      "class": "official",
+      "title": {
+        "es": "ICALPA · El Foro Canario n.º 99 (2004)",
+        "en": "ICALPA · El Foro Canario no. 99 (2004)"
+      },
+      "description": {
+        "es": "El catálogo oficial lista el artículo «La conformidad en los juicios rápidos: su dudosa constitucionalidad»; el PDF lo atribuye a Campanario y lo identifica con el primer premio del certamen 2004–2005.",
+        "en": "The official catalogue lists the article ‘Plea agreements in fast-track trials: their doubtful constitutionality’; the PDF attributes it to Campanario and identifies it with the 2004–2005 competition's first prize."
+      },
+      "url": "https://www.icalpa.es/sites/default/files/DOCUMENTOS/El_Foro_canario/99/1_99.pdf"
+    },
+    "BOE2009": {
+      "class": "official",
+      "title": {
+        "es": "BOE-B-2009-13752 · concurso 22/2009",
+        "en": "BOE-B-2009-13752 · insolvency proceeding 22/2009"
+      },
+      "description": {
+        "es": "Edicto publicado el 28-Apr-2009: el auto de 19-Mar-2009 designó al letrado Álvaro Campanario Hernández administrador del concurso de J.A. Santiago e Hijos, S.L.U.",
+        "en": "Notice published on 28-Apr-2009: the order of 19-Mar-2009 appointed lawyer Álvaro Campanario Hernández as insolvency administrator of J.A. Santiago e Hijos, S.L.U."
+      },
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2009-13752"
+    },
+    "BORMEMILLAN2015": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2015-100-35 · MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+        "en": "BORME-A-2015-100-35 · MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL"
+      },
+      "description": {
+        "es": "Constitución; operaciones desde 2-Apr-2014; Juan Carlos Prieto Puente y Esteban López Noriega constan como socios profesionales y administradores mancomunados.",
+        "en": "Incorporation; operations from 2-Apr-2014; Juan Carlos Prieto Puente and Esteban López Noriega are recorded as professional partners and joint administrators."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35"
+    },
+    "BORMEMILLAN2022": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2022-225-35 · cambio de administración de MILLAN AND MINERS",
+        "en": "BORME-A-2022-225-35 · MILLAN AND MINERS administration change"
+      },
+      "description": {
+        "es": "Cese de ambos administradores mancomunados y nombramiento de Juan Carlos Prieto Puente como administrador único, inscrito el 17-Nov-2022.",
+        "en": "Both joint administrators ceased and Juan Carlos Prieto Puente was appointed sole administrator, registered on 17-Nov-2022."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-225-35"
+    },
+    "BORMEPAMANIL2011": {
+      "class": "official",
+      "title": {
+        "es": "BORME-B-2011-132-35 · PAMANIL SOCIEDAD LIMITADA",
+        "en": "BORME-B-2011-132-35 · PAMANIL SOCIEDAD LIMITADA"
+      },
+      "description": {
+        "es": "El depósito oficial de cuentas identifica la persona jurídica PAMANIL SOCIEDAD LIMITADA y enumera ejercicios 2006–2009. No prueba por sí solo un encargo en Sun Park.",
+        "en": "The official accounts filing identifies the legal person PAMANIL SOCIEDAD LIMITADA and lists financial years 2006–2009. It does not itself prove a Sun Park engagement."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-132-35"
+    },
+    "BORMEPAMALEXSHA2013": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2013-196-35 · constitución de PAMALEXSHA SERVICIOS INTEGRALES",
+        "en": "BORME-A-2013-196-35 · incorporation of PAMALEXSHA SERVICIOS INTEGRALES"
+      },
+      "description": {
+        "es": "Operaciones desde 17-Sep-2013 y nombramiento de Antonio Cogolludo Rojas como administrador único.",
+        "en": "Operations from 17-Sep-2013 and appointment of Antonio Cogolludo Rojas as sole administrator."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35"
+    },
+    "BORMEPAMALEXSHA2015": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2015-48-35 · objeto social de PAMALEXSHA",
+        "en": "BORME-A-2015-48-35 · PAMALEXSHA corporate purpose"
+      },
+      "description": {
+        "es": "Modificación del objeto social inscrita el 3-Mar-2015. El texto mercantil no demuestra ejecución efectiva de servicios en Sun Park.",
+        "en": "Corporate-purpose amendment registered on 3-Mar-2015. The company filing does not prove actual performance of services at Sun Park."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-48-35"
+    },
+    "BORMEPAMALEXSHA2026": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2026-140-35 · poder en PAMALEXSHA",
+        "en": "BORME-A-2026-140-35 · power of attorney at PAMALEXSHA"
+      },
+      "description": {
+        "es": "Nombramiento de Shaila María Cogolludo Ramos como apoderada, inscrito el 16-Jul-2026. No debe proyectarse hacia años anteriores.",
+        "en": "Appointment of Shaila María Cogolludo Ramos as attorney-in-fact, registered on 16-Jul-2026. It must not be projected backwards."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35"
+    },
+    "BORMENOALPA2018": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2018-3-35 · constitución de EXPLOTACIONES NOALPA",
+        "en": "BORME-A-2018-3-35 · incorporation of EXPLOTACIONES NOALPA"
+      },
+      "description": {
+        "es": "Operaciones desde 18-Oct-2017; Antonio Cogolludo Rojas consta como administrador único.",
+        "en": "Operations from 18-Oct-2017; Antonio Cogolludo Rojas is recorded as sole administrator."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35"
+    },
+    "BORMENOALPA2022": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2022-3-35 · poder en EXPLOTACIONES NOALPA",
+        "en": "BORME-A-2022-3-35 · power of attorney at EXPLOTACIONES NOALPA"
+      },
+      "description": {
+        "es": "Nombramiento de Shaila María Cogolludo Ramos como apoderada, inscrito el 28-Dec-2021.",
+        "en": "Appointment of Shaila María Cogolludo Ramos as attorney-in-fact, registered on 28-Dec-2021."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35"
+    },
+    "BORMESANTA2018": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2018-27-35 · constitución de SANTA LUCIA REAL ESTATE",
+        "en": "BORME-A-2018-27-35 · incorporation of SANTA LUCIA REAL ESTATE"
+      },
+      "description": {
+        "es": "Operaciones desde 22-Dec-2017; Antonio Cogolludo Rojas, Juan Carlos Prieto Puente y Atilio Alberto Maddonni Citara constan como administradores solidarios.",
+        "en": "Operations from 22-Dec-2017; Antonio Cogolludo Rojas, Juan Carlos Prieto Puente and Atilio Alberto Maddonni Citara are recorded as several administrators."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-27-35"
+    },
+    "BORMESANTA2021": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2021-97-35 · cambios en SANTA LUCIA REAL ESTATE",
+        "en": "BORME-A-2021-97-35 · changes at SANTA LUCIA REAL ESTATE"
+      },
+      "description": {
+        "es": "Cese de los tres administradores solidarios; Antonio pasa a administrador único y Prieto consta como apoderado, inscritos el 18-May-2021.",
+        "en": "The three several administrators ceased; Antonio became sole administrator and Prieto is recorded as attorney-in-fact, registered on 18-May-2021."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35"
+    },
+    "BORMESANTA2025": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2025-138-35 · cese de Antonio en SANTA LUCIA REAL ESTATE",
+        "en": "BORME-A-2025-138-35 · Antonio's cessation at SANTA LUCIA REAL ESTATE"
+      },
+      "description": {
+        "es": "Cese de Antonio Cogolludo Rojas como administrador único y nombramiento de Miguel Ángel García Pérez, inscritos el 15-Jul-2025.",
+        "en": "Antonio Cogolludo Rojas ceased as sole administrator and Miguel Ángel García Pérez was appointed, registered on 15-Jul-2025."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-138-35"
+    },
+    "BORMEFMMMMATA2024": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2024-49-35 · grafía MATA en la hoja GC61036",
+        "en": "BORME-A-2024-49-35 · MATA spelling on sheet GC61036"
+      },
+      "description": {
+        "es": "El acto inscrito el 1-Mar-2024 imprime Francisco Mario Matos Mata. La continuidad de hoja hace plausible una errata, pero el asiento no cierra la identidad sin DNI o historial certificado.",
+        "en": "The act registered on 1-Mar-2024 prints Francisco Mario Matos Mata. Sheet continuity makes a publication error plausible, but the filing does not close identity without a national ID or certified history."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-49-35"
+    },
+    "BORMEFMMMORION2024": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2024-69-35 · ORION RENTAL SOCIMI",
+        "en": "BORME-A-2024-69-35 · ORION RENTAL SOCIMI"
+      },
+      "description": {
+        "es": "Registra a Francisco Mario Matos Matas y José Daniel Acosta Matos como consejeros de ORION RENTAL SOCIMI, S.A. La relación de consejo no prueba coordinación Sun Park ni conocimiento delictivo.",
+        "en": "Records Francisco Mario Matos Matas and José Daniel Acosta Matos as directors of ORION RENTAL SOCIMI, S.A. The board link does not prove Sun Park coordination or criminal knowledge."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35"
+    },
+    "BORMEFMMMAM2024": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2024-98-35 · AGM CANARY ASSET MANAGEMENT",
+        "en": "BORME-A-2024-98-35 · AGM CANARY ASSET MANAGEMENT"
+      },
+      "description": {
+        "es": "Publica el cambio de denominación a AGM CANARY ASSET MANAGEMENT, S.L. y a Francisco Mario Matos Matas entre los apoderados solidarios/mancomunados. El poder no acredita cada acto de gestión ni un propósito histórico.",
+        "en": "Publishes the change of name to AGM CANARY ASSET MANAGEMENT, S.L. and Francisco Mario Matos Matas among the several/joint power-holders. The power does not establish every management act or a historic purpose."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-98-35"
+    },
+    "BOERODRIGUEZ2012": {
+      "class": "official",
+      "title": {
+        "es": "BOE-B-2012-22189 · Concurso 36/2012",
+        "en": "BOE-B-2012-22189 · Insolvency 36/2012"
+      },
+      "description": {
+        "es": "El edicto publica el auto de 6-Jun-2012 que declaró el concurso voluntario de Luchy Playa Blanca, S.L.U. y el nombramiento judicial de Francisco de Borja Rodríguez-Batllori Laffitte como administrador concursal.",
+        "en": "The notice publishes the 6-Jun-2012 order declaring the voluntary insolvency of Luchy Playa Blanca, S.L.U. and the court appointment of Francisco de Borja Rodríguez-Batllori Laffitte as insolvency administrator."
+      },
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-B-2012-22189"
+    },
+    "BORMERODRIGUEZ2012": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2012-198-35 · asiento del Concurso 36/2012",
+        "en": "BORME-A-2012-198-35 · Insolvency 36/2012 filing"
+      },
+      "description": {
+        "es": "El BORME registra el concurso en la hoja de LUCHY PLAYA BLANCA SOCIEDAD LIMITADA. Debe leerse junto con el auto y el edicto para el alcance del nombramiento.",
+        "en": "The BORME records the insolvency on the LUCHY PLAYA BLANCA SOCIEDAD LIMITADA sheet. It must be read with the order and notice for the appointment's scope."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-198-35"
+    },
+    "BOCMONTELANZA2008": {
+      "class": "official",
+      "title": {
+        "es": "BOC 2008/245/033 · Hotel Apartamento Sun Park",
+        "en": "BOC 2008/245/033 · Hotel Apartamento Sun Park"
+      },
+      "description": {
+        "es": "La publicación oficial usa Montelanza, S.L., CIF B35279850, en relación con Hotel Apartamento Sun Park. No cierra por sí sola el puente con la hoja BORME GC1339.",
+        "en": "The official publication uses Montelanza, S.L., CIF B35279850, in connection with Hotel Apartamento Sun Park. It does not itself close the bridge to BORME sheet GC1339."
+      },
+      "url": "https://www.gobiernodecanarias.org/boc/2008/245/033.html"
+    },
+    "BORMEMONTELANZA2015": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2015-205-35 · disolución de MONTE LANZA",
+        "en": "BORME-A-2015-205-35 · dissolution of MONTE LANZA"
+      },
+      "description": {
+        "es": "El BORME publica la disolución de MONTE LANZA SOCIEDAD LIMITADA en la hoja GC1339. La grafía y hoja requieren puente certificado al CIF del BOC.",
+        "en": "BORME publishes the dissolution of MONTE LANZA SOCIEDAD LIMITADA on sheet GC1339. The spelling and sheet require a certified bridge to the BOC tax identifier."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-205-35"
+    },
+    "BORMEMONTELANZA2018": {
+      "class": "official",
+      "title": {
+        "es": "BORME-A-2018-201-35 · extinción de MONTE LANZA",
+        "en": "BORME-A-2018-201-35 · extinction of MONTE LANZA"
+      },
+      "description": {
+        "es": "El BORME publica la extinción de MONTE LANZA SOCIEDAD LIMITADA en la hoja GC1339. No se presenta la entidad como vigente.",
+        "en": "BORME publishes the extinction of MONTE LANZA SOCIEDAD LIMITADA on sheet GC1339. The entity is not presented as current."
+      },
+      "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-201-35"
+    },
+    "INTJV1260": {
+      "class": "internal",
+      "title": {
+        "es": "Control unitario JV 1260/2011 → AP 89/2014",
+        "en": "JV 1260/2011 → AP 89/2014 unitary control"
+      },
+      "description": {
+        "es": "Reconstrucción interna con límites expresos sobre representación, junta de 2-Feb-2011, allanamiento, demanda y apelación.",
+        "en": "Internal reconstruction with express limits concerning representation, the 2-Feb-2011 meeting, submission to claim, pleading and appeal."
+      },
+      "url": "../../archive/JV1260_AP89_UNITARY_REVERSE_ENGINEERING_CAM_CONTINUITY_17AUG2026.md"
+    },
+    "INTPERIMETER": {
+      "class": "internal",
+      "title": {
+        "es": "Perímetro Montelanza / Molina / Comunidad",
+        "en": "Montelanza / Molina / Community perimeter"
+      },
+      "description": {
+        "es": "Control de cronología, representación, facciones y límites entre 2008, 2009, 2011, 2014 y 2015.",
+        "en": "Control for chronology, representation, factions and boundaries across 2008, 2009, 2011, 2014 and 2015."
+      },
+      "url": "../../archive/knowledge-project/SUN_PARK_MONTE_LANZA_MOLINA_COMMUNITY_PERIMETER.md"
+    },
+    "INTACTORS": {
+      "class": "internal",
+      "title": {
+        "es": "Registro canónico de actores Sun Park",
+        "en": "Sun Park canonical actor register"
+      },
+      "description": {
+        "es": "Identidades, primeras fechas documentadas y estados de verificación. Una entrada histórica no sustituye la fuente subyacente.",
+        "en": "Identities, earliest documented dates and verification statuses. A registry entry does not replace the underlying source."
+      },
+      "url": "../../archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md"
+    },
+    "INTPROFESSIONAL": {
+      "class": "internal",
+      "title": {
+        "es": "Registro de asesores y representantes",
+        "en": "Professional advisers and representatives register"
+      },
+      "description": {
+        "es": "Mapa por capacidad, fecha y fuente de abogados, representantes y administradores.",
+        "en": "Capacity-, date- and source-specific map of lawyers, representatives and administrators."
+      },
+      "url": "../../archive/knowledge-project/SUN_PARK_PROFESSIONAL_ADVISERS_REPRESENTATIVES_REGISTER.md"
+    },
+    "INTENTITIES": {
+      "class": "internal",
+      "title": {
+        "es": "Registro canónico de entidades Sun Park",
+        "en": "Sun Park canonical entity register"
+      },
+      "description": {
+        "es": "Control de denominaciones y de separación entre personas jurídicas, con estados provisionales donde falta verificación.",
+        "en": "Control of legal names and separation between legal persons, with provisional status where verification is incomplete."
+      },
+      "url": "../../archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md"
+    },
+    "INTCOMMUNICATIONS": {
+      "class": "internal",
+      "title": {
+        "es": "Registro de comunicaciones Comunidad / Pamanil",
+        "en": "Community / Pamanil communications register"
+      },
+      "description": {
+        "es": "Digestión pública de comunicaciones y prestaciones propuestas o documentadas; preserva la diferencia entre propuesta, acto y ejecución completa.",
+        "en": "Public-safe digest of communications and proposed or documented services; preserves the distinction between proposal, act and complete performance."
+      },
+      "url": "../../archive/SUN_PARK_COMMUNITY_PAMANIL_COMMUNICATIONS_DIGITISATION_REGISTER_22AUG2026.md"
+    },
+    "INTACTA2016": {
+      "class": "internal",
+      "title": {
+        "es": "Mapa digital de la junta de 26-Apr-2016",
+        "en": "26-Apr-2016 meeting digital-source map"
+      },
+      "description": {
+        "es": "Localiza el presupuesto de Pamalexsha para servicios de administración y el expediente documental de la junta.",
+        "en": "Locates Pamalexsha's budget for administration services and the meeting's documentary package."
+      },
+      "url": "../../archive/knowledge-project/SUN_PARK_26APR2016_ACTA_DIGITAL_SOURCE_MAP_19AUG2026.md"
+    },
+    "INTFIVEACTOR": {
+      "class": "internal",
+      "title": {
+        "es": "Control de cinco actores y límites societarios",
+        "en": "Five-actor and corporate-boundary control"
+      },
+      "description": {
+        "es": "Control de fuentes públicas, atribuciones de Gil y prohibición de fabricar puentes societarios o transferir intención por asociación.",
+        "en": "Control of public sources, Gil's attributions and the prohibition on inventing corporate bridges or transferring intent by association."
+      },
+      "url": "../../archive/FIVE_ACTOR_SHADOW_ADMINISTRATION_JUDGE_CULPABILITY_CONTROL_24AUG2026.md"
+    },
+    "INTCONCURSOAUTOS": {
+      "class": "internal",
+      "title": {
+        "es": "Control forense de autos críticos · Concurso 36/2012",
+        "en": "Critical-order forensic control · Insolvency 36/2012"
+      },
+      "description": {
+        "es": "Control primario del auto de declaración de 6-Jun-2012, la apertura de liquidación de 19-Dec-2017 y sus límites de facultades, patrimonio y efecto.",
+        "en": "Primary-document control of the 6-Jun-2012 declaration order, the 19-Dec-2017 opening of liquidation and their limits of powers, estate and effect."
+      },
+      "url": "../../archive/concurso36-primary-autos-21aug2026/FORENSIC_SCAN_CRITICAL_AUTOS_CONCURSO_36_2012_21AUG2026.md"
+    },
+    "INTUNITARYSCAN": {
+      "class": "internal",
+      "title": {
+        "es": "Escaneo unitario Campanario / Comunidad / sociedades",
+        "en": "Campanario / Community / corporate unitary scan"
+      },
+      "description": {
+        "es": "Control de búsquedas oficiales finitas, coincidencias descartadas y puentes de identidad o título que siguen abiertos. Un resultado negativo acotado no prueba inexistencia.",
+        "en": "Control of bounded official searches, discarded matches and identity or title bridges that remain open. A bounded negative result does not prove non-existence."
+      },
+      "url": "../../archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md"
+    },
+    "DECL011": {
+      "class": "attributed",
+      "title": {
+        "es": "Declaración 011 · relato atribuido del perímetro de Gil",
+        "en": "Declaration 011 · attributed account from Gil's perimeter"
+      },
+      "description": {
+        "es": "Nota derivada del dictado recibido el 25-Aug-2026. Es una declaración atribuida sujeta a revisión, corroboración y corrección; no es una resolución ni una certificación independiente de verdad.",
+        "en": "Note derived from dictation received on 25-Aug-2026. It is an attributed statement subject to review, corroboration and correction; it is not a judgment or independent certification of truth."
+      },
+      "url": "../../archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md"
+    }
+  },
+  "nodes": [
+    {
+      "id": "campanario",
+      "kind": "person",
+      "canonical_name": "Álvaro Campanario Hernández",
+      "routes": {"es": "alvaro-campanario-hernandez", "en": "alvaro-campanario-hernandez"},
+      "aliases": ["Alvaro Campanario", "Álvaro Campanario"],
+      "kicker": {"es": "ABOGACÍA · 1995–2014 · SUN PARK", "en": "LEGAL PRACTICE · 1995–2014 · SUN PARK"},
+      "headline": {"es": "Álvaro Campanario Hernández: trayectoria pública y papel documentado en Sun Park", "en": "Álvaro Campanario Hernández: public chronology and documented Sun Park role"},
+      "lead": {"es": "La ficha une una búsqueda histórica acotada con el expediente Sun Park. El registro oficial acredita publicaciones jurídicas en 1995 y 2004 y una designación concursal en 2009; los documentos internos fijan representación y actuación comunitaria desde 2009–2011. Las inferencias sobre motivos, amistades o una futura designación en LPB no están acreditadas.", "en": "This record joins a bounded historical search to the Sun Park file. Official sources establish legal publications in 1995 and 2004 and an insolvency appointment in 2009; internal records establish representation and Community activity from 2009–2011. Inferences about motives, friendships or a prospective LPB appointment are not established."},
+      "lanes": {
+        "verified": {"es": "ICALPA lo identifica como autor en 1995 y 2004; el BOE registra una designación como administrador concursal por auto de 19-Mar-2009. El expediente Sun Park conserva un correo de 27-Apr-2009 y actas/pleitos de 2011–2014.", "en": "ICALPA identifies him as an author in 1995 and 2004; the BOE records an appointment as insolvency administrator by order of 19-Mar-2009. The Sun Park file preserves a 27-Apr-2009 email and meeting/litigation records from 2011–2014."},
+        "attributed": {"es": "La declarante del perímetro de Gil afirma que actuó para propietarios disidentes, negoció una renta fija y fue pieza central de la secuencia de juntas de 2011. También infiere que su actividad concursal pudo relacionarse con una expectativa de designación en LPB.", "en": "The declarant from Gil's perimeter says he acted for dissenting owners, negotiated a fixed rent and was central to the 2011 meeting sequence. She also infers that his insolvency work may have related to an expectation of appointment in LPB."},
+        "open": {"es": "No se ha localizado prueba de que buscara ser administrador concursal de LPB, de amistad con quien fue designado, de engaño consciente al tribunal ni de un acuerdo ilícito. Faltan poderes, hoja completa de cliente, carta de arrendamiento y expediente de apelación.", "en": "No evidence has been located that he sought appointment as LPB's insolvency administrator, was a friend of the appointee, knowingly misled the court or entered an unlawful agreement. Powers, the full client file, the rental letter and the appeal file remain outstanding."}
+      },
+      "timeline": [
+        {"date": "1995", "status": "official", "title": {"es": "Autor en El Foro Canario n.º 90", "en": "Author in El Foro Canario no. 90"}, "body": {"es": "El índice y PDF oficiales publican un estudio de Álvaro Campanario Hernández sobre tráfico de drogas y la Convención de Viena.", "en": "The official index and PDF publish an Álvaro Campanario Hernández study concerning drug trafficking and the Vienna Convention."}, "sources": ["ICALPA1995"]},
+        {"date": "2000", "status": "open", "title": {"es": "Resultado negativo exacto del índice", "en": "Exact negative index result"}, "body": {"es": "La revisión del índice oficial de ICALPA para los números 94 y 95 de 2000 no encuentra su nombre entre los autores listados. Es un resultado negativo limitado a ese índice: no demuestra inactividad profesional ni ausencia de otros documentos en 2000.", "en": "A review of ICALPA's official index for 2000 issues 94 and 95 does not find his name among the listed authors. This is a negative result limited to that index: it does not establish professional inactivity or absence from other 2000 records."}, "sources": ["ICALPAINDEX"]},
+        {"date": "2002–2004", "status": "secondary", "title": {"es": "Referencia secundaria a su despacho", "en": "Secondary reference to his office"}, "body": {"es": "Un perfil profesional de HD Abogados publicado en 2013 afirma que otra letrada trabajó en recuperación y recobros en el despacho Álvaro Campanario Hernández durante ese periodo.", "en": "An HD Abogados professional profile published in 2013 says another lawyer worked in recoveries and collections at the Álvaro Campanario Hernández office during that period."}, "sources": ["HD2002"]},
+        {"date": "2004", "status": "official", "title": {"es": "Artículo y premio jurídico", "en": "Legal article and prize"}, "body": {"es": "ICALPA cataloga en el n.º 99 su trabajo sobre conformidad en juicios rápidos; el PDF lo vincula al primer premio del certamen 2004–2005.", "en": "ICALPA catalogues his work on plea agreements in fast-track trials in no. 99; the PDF links it to the 2004–2005 competition's first prize."}, "sources": ["ICALPA2004"]},
+        {"date": "19 MAR 2009", "status": "official", "title": {"es": "Designación concursal oficial", "en": "Official insolvency appointment"}, "body": {"es": "El auto del concurso 22/2009 lo designó administrador concursal; el edicto se publicó en el BOE el 28-Apr-2009.", "en": "The order in insolvency proceeding 22/2009 appointed him as insolvency administrator; the notice was published in the BOE on 28-Apr-2009."}, "sources": ["BOE2009"]},
+        {"date": "27 APR 2009", "status": "internal", "title": {"es": "Correo Molina / CEXP", "en": "Molina / CEXP email"}, "body": {"es": "El control interno registra un correo suyo que describe a un grupo vinculado a Molina como no interesado en adherirse a CEXP y propone un arrendamiento alternativo de un año. Prueba una posición negociadora, no su ilicitud.", "en": "The internal control records an email from him describing a Molina-linked group as uninterested in joining CEXP and proposing an alternative one-year rental. It proves a negotiating position, not unlawfulness."}, "sources": ["INTPERIMETER"]},
+        {"date": "2 FEB–23 DEC 2011", "status": "internal", "title": {"es": "Junta, representación y demanda", "en": "Meeting, representation and claim"}, "body": {"es": "El acta lo sitúa representando gran parte del futuro perímetro demandante, como secretario de la junta y proponiendo el allanamiento comunitario. Después firmó la demanda JV 1260/2011 y continuó en apelación.", "en": "The minutes place him representing much of the future claimant perimeter, serving as meeting secretary and proposing the Community's submission to the claim. He later signed JV 1260/2011 and continued on appeal."}, "sources": ["INTJV1260"]}
+      ],
+      "corrections": {
+        "es": ["No desapareció documentalmente justo después de las juntas de 2011: firmó la demanda de 23-Dec-2011 y continuó en la apelación.", "La designación concursal oficial localizada es de 19-Mar-2009, anterior a la secuencia comunitaria de 2011; no demuestra por sí sola una estrategia respecto de LPB.", "La ausencia de su nombre en el índice ICALPA de 2000 es solo un resultado de búsqueda acotado."],
+        "en": ["He did not disappear from the documentary record immediately after the 2011 meetings: he signed the 23-Dec-2011 claim and continued on appeal.", "The located official insolvency appointment dates to 19-Mar-2009, before the 2011 Community sequence; it does not itself prove any strategy concerning LPB.", "The absence of his name from ICALPA's 2000 index is only a bounded search result."]
+      },
+      "questions": {
+        "es": ["¿Qué clientes y unidades cubría cada poder entre 2008 y 2012?", "¿Cuál era el texto completo de la propuesta de arrendamiento y quién debía ser arrendatario?", "¿Qué expuso exactamente en la demanda y en la aportación de prueba de apelación?", "¿Existe algún documento, más allá de la inferencia de la declarante, sobre una posible designación en el concurso de LPB?"],
+        "en": ["Which clients and units did each authority cover between 2008 and 2012?", "What was the full rental proposal and who was to be the tenant?", "What exactly did he submit in the claim and in the appellate evidence filing?", "Does any document, beyond the declarant's inference, concern a possible appointment in LPB's insolvency proceeding?"]
+      },
+      "source_ids": ["ICALPA1995", "ICALPAINDEX", "HD2002", "ICALPA2004", "BOE2009", "INTJV1260", "INTPERIMETER", "INTPROFESSIONAL", "DECL011"]
+    },
+    {
+      "id": "prieto",
+      "kind": "person",
+      "canonical_name": "Juan Carlos Prieto Puente",
+      "routes": {"es": "juan-carlos-prieto-puente", "en": "juan-carlos-prieto-puente"},
+      "aliases": ["Juan Carlos Prieto", "Juan Carlos Roque Prieto", "Juan Carlos Esloque Prieto"],
+      "kicker": {"es": "ABOGACÍA · COMUNIDAD · SOCIEDADES", "en": "LEGAL PRACTICE · COMMUNITY · COMPANIES"},
+      "headline": {"es": "Juan Carlos Prieto Puente: funciones jurídicas y cargos mercantiles, fecha por fecha", "en": "Juan Carlos Prieto Puente: legal functions and corporate offices, date by date"},
+      "lead": {"es": "Los documentos internos lo sitúan representando a Asunción Aizpurúa / Roque Prieto en 2014 y como abogado del lado comunitario en fuentes posteriores. El BORME acredita separadamente sus cargos en MILLAN AND MINERS y SANTA LUCIA REAL ESTATE. Esas capas no prueban por sí solas identidad de cliente, conflicto ni propósito común.", "en": "Internal records place him representing Asunción Aizpurúa / Roque Prieto in 2014 and as a Community-side lawyer in later sources. The BORME separately establishes his offices at MILLAN AND MINERS and SANTA LUCIA REAL ESTATE. Those layers do not by themselves prove client identity, conflict or common purpose."},
+      "lanes": {
+        "verified": {"es": "Acta notarial de 10-Apr-2014: representación de AAS / Roque Prieto. BORME: socio profesional y administrador mancomunado de MILLAN AND MINERS; administrador solidario y después apoderado de SANTA LUCIA REAL ESTATE.", "en": "Notarial record of 10-Apr-2014: representation of AAS / Roque Prieto. BORME: professional partner and joint administrator of MILLAN AND MINERS; several administrator and later attorney-in-fact of SANTA LUCIA REAL ESTATE."},
+        "attributed": {"es": "La declarante afirma que, tras Campanario, Prieto y Esteban López Noriega defendieron a propietarios disidentes y a la vez aparecieron como abogados de la Comunidad, lo que ella caracteriza como conflicto de intereses.", "en": "The declarant says that after Campanario, Prieto and Esteban López Noriega acted for dissenting owners while also appearing as Community lawyers, which she characterises as a conflict of interest."},
+        "open": {"es": "Para determinar un conflicto hacen falta hojas de encargo, cliente por asunto, alcance, fechas, consentimiento o dispensa, instrucciones, facturación y escritos procesales. El cargo mercantil posterior no prueba un relevo jurídico en 2011.", "en": "Determining a conflict requires retainers, matter-by-matter client identity, scope, dates, consent or waiver, instructions, billing and pleadings. A later corporate office does not prove a legal handover in 2011."}
+      },
+      "timeline": [
+        {"date": "10 APR 2014", "status": "internal", "title": {"es": "Representación documentada", "en": "Documented representation"}, "body": {"es": "El registro notarial de Comunidad lo identifica representando a Asunción Aizpurúa / Roque Prieto, S.L.", "en": "The Community notarial record identifies him representing Asunción Aizpurúa / Roque Prieto, S.L."}, "sources": ["INTPERIMETER"]},
+        {"date": "2 APR 2014 / 21 MAY 2015", "status": "official", "title": {"es": "MILLAN AND MINERS", "en": "MILLAN AND MINERS"}, "body": {"es": "El BORME registra operaciones desde 2-Apr-2014 y la constitución, con Prieto y López Noriega como socios profesionales y administradores mancomunados, el 21-May-2015.", "en": "The BORME records operations from 2-Apr-2014 and incorporation, with Prieto and López Noriega as professional partners and joint administrators, on 21-May-2015."}, "sources": ["BORMEMILLAN2015"]},
+        {"date": "19 NOV 2015", "status": "internal", "title": {"es": "Abogado del lado comunitario", "en": "Community-side lawyer"}, "body": {"es": "El control del acta lo incluye, junto con López Noriega, entre los abogados del lado de la Comunidad. La etiqueta describe esa fuente concreta, no un mandato universal.", "en": "The minutes control includes him, together with López Noriega, among the Community-side lawyers. The label describes that specific source, not a universal mandate."}, "sources": ["INTPERIMETER"]},
+        {"date": "22 DEC 2017 / 31 JAN 2018", "status": "official", "title": {"es": "SANTA LUCIA REAL ESTATE", "en": "SANTA LUCIA REAL ESTATE"}, "body": {"es": "El BORME lo identifica como uno de tres administradores solidarios en la constitución, junto con Antonio Cogolludo Rojas y Atilio Alberto Maddonni Citara.", "en": "The BORME identifies him as one of three several administrators at incorporation, together with Antonio Cogolludo Rojas and Atilio Alberto Maddonni Citara."}, "sources": ["BORMESANTA2018"]},
+        {"date": "18 MAY 2021", "status": "official", "title": {"es": "Cese y poder", "en": "Cessation and power of attorney"}, "body": {"es": "El BORME registra su cese como administrador solidario y, en acto separado, su nombramiento como apoderado de SANTA LUCIA REAL ESTATE.", "en": "The BORME records his cessation as several administrator and, in a separate act, appointment as attorney-in-fact of SANTA LUCIA REAL ESTATE."}, "sources": ["BORMESANTA2021"]},
+        {"date": "17 NOV 2022", "status": "official", "title": {"es": "Administrador único de MILLAN AND MINERS", "en": "Sole administrator of MILLAN AND MINERS"}, "body": {"es": "El BORME registra el cese de los administradores mancomunados y su nombramiento como administrador único.", "en": "The BORME records the cessation of the joint administrators and his appointment as sole administrator."}, "sources": ["BORMEMILLAN2022"]}
+      ],
+      "corrections": {
+        "es": ["La primera fecha controlada en Sun Park es 10-Apr-2014, no 2012.", "«Roque» y «Esloque» se conservan como variantes de voz/búsqueda, no como parte de su nombre canónico.", "La coincidencia societaria con Antonio en 2018 no demuestra una instrucción conjunta en Sun Park ni una relación directa con NOALPA o PAMALEXSHA."],
+        "en": ["The earliest controlled Sun Park date is 10-Apr-2014, not 2012.", "‘Roque’ and ‘Esloque’ are preserved as voice/search variants, not as part of his canonical name.", "The 2018 corporate overlap with Antonio does not prove a joint Sun Park instruction or a direct relationship with NOALPA or PAMALEXSHA."]
+      },
+      "questions": {"es": ["¿A quién representó en cada junta y procedimiento?", "¿Quién contrató y pagó cada servicio atribuido a la Comunidad?", "¿Existieron consentimiento informado o dispensa respecto de clientes con intereses potencialmente divergentes?"], "en": ["Whom did he represent at each meeting and in each proceeding?", "Who retained and paid for each service attributed to the Community?", "Was there informed consent or a waiver for clients with potentially divergent interests?"]},
+      "source_ids": ["BORMEMILLAN2015", "BORMEMILLAN2022", "BORMESANTA2018", "BORMESANTA2021", "INTPERIMETER", "INTPROFESSIONAL", "DECL011"]
+    },
+    {
+      "id": "noriega",
+      "kind": "person",
+      "canonical_name": "Esteban López Noriega",
+      "routes": {"es": "esteban-lopez-noriega", "en": "esteban-lopez-noriega"},
+      "aliases": ["Esteban Noriega", "Esteban Noruega", "Esteban Muriega"],
+      "kicker": {"es": "ABOGACÍA · COMUNIDAD · MILLAN AND MINERS", "en": "LEGAL PRACTICE · COMMUNITY · MILLAN AND MINERS"},
+      "headline": {"es": "Esteban López Noriega: presencia comunitaria desde 2011 y vínculo profesional oficial", "en": "Esteban López Noriega: Community presence from 2011 and an official professional-company link"},
+      "lead": {"es": "El acta de 22-Jun-2011 ya lo sitúa como abogado invitado por el administrador de la Comunidad. Fuentes posteriores lo presentan como abogado del lado comunitario y el BORME lo vincula profesionalmente con Juan Carlos Prieto Puente en MILLAN AND MINERS. La cronología impide describir su entrada simplemente como posterior a 2012.", "en": "The 22-Jun-2011 minutes already place him as a lawyer invited by the Community administrator. Later sources present him as a Community-side lawyer and the BORME professionally links him with Juan Carlos Prieto Puente in MILLAN AND MINERS. The chronology prevents describing his entry simply as post-2012."},
+      "lanes": {
+        "verified": {"es": "Presencia como abogado invitado el 22-Jun-2011; abogado del lado comunitario en una fuente de 19-Nov-2015; socio profesional y administrador mancomunado de MILLAN AND MINERS hasta el cambio inscrito en 2022.", "en": "Presence as an invited lawyer on 22-Jun-2011; Community-side lawyer in a 19-Nov-2015 source; professional partner and joint administrator of MILLAN AND MINERS until the change registered in 2022."},
+        "attributed": {"es": "La declarante lo identifica, junto con Prieto, como sucesor práctico de Campanario en la defensa de los disidentes y como abogado que también aparecía para la Comunidad.", "en": "The declarant identifies him, together with Prieto, as Campanario's practical successor in acting for the dissenters and as a lawyer who also appeared for the Community."},
+        "open": {"es": "No está probado un traspaso formal de clientes desde Campanario, una relación societaria con NOALPA/PAMALEXSHA/SANTA LUCIA ni un conflicto sin los expedientes de encargo y consentimiento.", "en": "No formal transfer of clients from Campanario, corporate relationship with NOALPA/PAMALEXSHA/SANTA LUCIA, or conflict is established without the engagement and consent files."}
+      },
+      "timeline": [
+        {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Abogado invitado a la junta", "en": "Lawyer invited to the meeting"}, "body": {"es": "El acta lo identifica por nombre y número colegial como abogado presente por invitación del administrador de la Comunidad.", "en": "The minutes identify him by name and bar number as a lawyer present at the invitation of the Community administrator."}, "sources": ["INTPERIMETER"]},
+        {"date": "2 APR 2014 / 21 MAY 2015", "status": "official", "title": {"es": "Socio profesional y administrador", "en": "Professional partner and administrator"}, "body": {"es": "El BORME lo registra junto con Prieto como socio profesional y administrador mancomunado de MILLAN AND MINERS.", "en": "The BORME records him together with Prieto as a professional partner and joint administrator of MILLAN AND MINERS."}, "sources": ["BORMEMILLAN2015"]},
+        {"date": "19 NOV 2015", "status": "internal", "title": {"es": "Fuente comunitaria posterior", "en": "Later Community source"}, "body": {"es": "El control del acta lo sitúa con Prieto entre los abogados del lado comunitario. Debe reconstruirse cliente y alcance para cada asunto.", "en": "The minutes control places him with Prieto among the Community-side lawyers. Client and scope must be reconstructed for each matter."}, "sources": ["INTPERIMETER"]},
+        {"date": "17 NOV 2022", "status": "official", "title": {"es": "Cese societario inscrito", "en": "Registered corporate cessation"}, "body": {"es": "El BORME registra su cese como administrador mancomunado de MILLAN AND MINERS. El asiento no establece por sí solo si continuó o no una relación profesional distinta.", "en": "The BORME records his cessation as joint administrator of MILLAN AND MINERS. The filing does not itself establish whether any separate professional relationship continued."}, "sources": ["BORMEMILLAN2022"]}
+      ],
+      "corrections": {"es": ["Su presencia está documentada el 22-Jun-2011; no puede fijarse su entrada únicamente después de 2012.", "El nombre canónico es Esteban López Noriega; «Noruega» y «Muriega» son variantes del dictado, no identidades alternativas.", "MILLAN AND MINERS acredita un vínculo profesional con Prieto, no una relación automática con todas las sociedades asociadas posteriormente a Prieto o Antonio."], "en": ["His presence is documented on 22-Jun-2011; his entry cannot be placed only after 2012.", "The canonical name is Esteban López Noriega; ‘Noruega’ and ‘Muriega’ are dictation variants, not alternative identities.", "MILLAN AND MINERS establishes a professional link with Prieto, not an automatic relationship with every company later associated with Prieto or Antonio."]},
+      "questions": {"es": ["¿Qué mandato justificó la invitación de 22-Jun-2011?", "¿A qué personas o entidades representó en cada pleito?", "¿Qué expedientes, instrucciones o pagos documentan una eventual doble representación?"], "en": ["What mandate supported the 22-Jun-2011 invitation?", "Which people or entities did he represent in each proceeding?", "Which files, instructions or payments document any dual representation?"]},
+      "source_ids": ["BORMEMILLAN2015", "BORMEMILLAN2022", "INTPERIMETER", "INTPROFESSIONAL", "DECL011"]
+    },
+    {
+      "id": "antonio",
+      "kind": "person",
+      "canonical_name": "Antonio Cogolludo Rojas",
+      "routes": {"es": "antonio-cogolludo-rojas", "en": "antonio-cogolludo-rojas"},
+      "aliases": ["Antonio Cogolludo"],
+      "kicker": {"es": "REPRESENTACIÓN · COMUNIDAD · CARGOS MERCANTILES", "en": "REPRESENTATION · COMMUNITY · CORPORATE OFFICES"},
+      "headline": {"es": "Antonio Cogolludo Rojas: representación en Sun Park y una red societaria posterior", "en": "Antonio Cogolludo Rojas: Sun Park representation and a later corporate network"},
+      "lead": {"es": "El expediente lo sitúa representando a Cristina Molina Petit en la Comunidad desde 10-Apr-2014. Los asientos oficiales lo conectan después con PAMALEXSHA, EXPLOTACIONES NOALPA y SANTA LUCIA REAL ESTATE. Cada cargo es histórico, fechado y limitado: no prueba por asociación un mandato comunitario, titularidad de fincas ni finalidad ilícita.", "en": "The file places him representing Cristina Molina Petit in the Community from 10-Apr-2014. Official filings later connect him with PAMALEXSHA, EXPLOTACIONES NOALPA and SANTA LUCIA REAL ESTATE. Each office is historical, dated and limited: association does not prove a Community mandate, title to units or unlawful purpose."},
+      "lanes": {
+        "verified": {"es": "Representación comunitaria documentada en 2014 y 2015. BORME: administrador único inicial de PAMALEXSHA y NOALPA; administrador solidario y luego único de SANTA LUCIA hasta su cese inscrito en 2025.", "en": "Community representation documented in 2014 and 2015. BORME: initial sole administrator of PAMALEXSHA and NOALPA; several and then sole administrator of SANTA LUCIA until his registered cessation in 2025."},
+        "attributed": {"es": "La declarante afirma que apareció como presidente comunitario sobre la base de un local cuya cadena dominical cuestiona, y vincula sus sociedades a la continuidad Pamanil/Pamalexsha.", "en": "The declarant says he appeared as Community president on the basis of premises whose title chain she disputes, and links his companies to Pamanil/Pamalexsha continuity."},
+        "open": {"es": "Hacen falta notas simples históricas completas, escrituras, poderes, actas de elección, aceptación, contratos y facturación. El vendedor registral posterior no excluye por sí solo una transmisión intermedia.", "en": "Complete historic land-registry extracts, deeds, powers, election minutes, acceptance, contracts and billing are required. A later registered seller does not by itself exclude an intermediate transfer."}
+      },
+      "timeline": [
+        {"date": "17 SEP / 7 OCT 2013", "status": "official", "title": {"es": "Administrador inicial de PAMALEXSHA", "en": "Initial PAMALEXSHA administrator"}, "body": {"es": "La constitución publicada en el BORME registra a Antonio Cogolludo Rojas como administrador único.", "en": "The incorporation published in the BORME records Antonio Cogolludo Rojas as sole administrator."}, "sources": ["BORMEPAMALEXSHA2013"]},
+        {"date": "10 APR 2014", "status": "internal", "title": {"es": "Representación de Cristina Molina Petit", "en": "Representation of Cristina Molina Petit"}, "body": {"es": "El registro notarial de la Comunidad documenta esa representación; la continuidad aparece de nuevo en la fuente de 19-Nov-2015.", "en": "The Community notarial record documents that representation; continuity appears again in the 19-Nov-2015 source."}, "sources": ["INTPERIMETER"]},
+        {"date": "18 OCT / 26 DEC 2017", "status": "official", "title": {"es": "Administrador inicial de NOALPA", "en": "Initial NOALPA administrator"}, "body": {"es": "La constitución de EXPLOTACIONES NOALPA lo identifica como administrador único.", "en": "The incorporation of EXPLOTACIONES NOALPA identifies him as sole administrator."}, "sources": ["BORMENOALPA2018"]},
+        {"date": "22 DEC 2017 / 31 JAN 2018", "status": "official", "title": {"es": "Administrador solidario de SANTA LUCIA", "en": "Several administrator of SANTA LUCIA"}, "body": {"es": "Consta con Prieto y Atilio Alberto Maddonni Citara en la constitución de SANTA LUCIA REAL ESTATE.", "en": "He is recorded with Prieto and Atilio Alberto Maddonni Citara at incorporation of SANTA LUCIA REAL ESTATE."}, "sources": ["BORMESANTA2018"]},
+        {"date": "18 MAY 2021–15 JUL 2025", "status": "official", "title": {"es": "Administrador único y cese", "en": "Sole administrator and cessation"}, "body": {"es": "El BORME registra su paso a administrador único en 2021 y su cese en 2025. No se presenta el cargo como vigente.", "en": "The BORME records his move to sole administrator in 2021 and cessation in 2025. The office is not presented as current."}, "sources": ["BORMESANTA2021", "BORMESANTA2025"]}
+      ],
+      "corrections": {"es": ["Los cargos mercantiles son hechos fechados; no prueban por sí mismos una empresa común con Francisco Mario Matos Matas.", "La cadena Pamanil → Pamalexsha no está acreditada como sucesión jurídica universal.", "La objeción de la declarante sobre la titularidad para ser presidente sigue abierta; una venta posterior por otro titular registral no resuelve por sí sola toda la cadena histórica."], "en": ["The corporate offices are dated facts; they do not themselves prove a common company with Francisco Mario Matos Matas.", "The Pamanil → Pamalexsha chain is not established as universal legal succession.", "The declarant's objection concerning title qualification for the presidency remains open; a later sale by another registered owner does not itself resolve the entire historic chain."]},
+      "questions": {"es": ["¿Qué finca y título sustentaron cada cargo comunitario?", "¿Qué poderes o contratos conectaron sus sociedades con Sun Park?", "¿Qué actos fueron personales y cuáles societarios?"], "en": ["Which unit and title supported each Community office?", "Which powers or contracts connected his companies with Sun Park?", "Which acts were personal and which were corporate?"]},
+      "source_ids": ["BORMEPAMALEXSHA2013", "BORMENOALPA2018", "BORMESANTA2018", "BORMESANTA2021", "BORMESANTA2025", "INTPERIMETER", "INTFIVEACTOR", "DECL011"]
+    },
+    {
+      "id": "millan",
+      "kind": "entity",
+      "canonical_name": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "routes": {"es": "millan-and-miners-slp", "en": "millan-and-miners-slp"},
+      "aliases": ["Millan and Miners, S.L.P.", "Millán & Miners, S.L.P.", "Millen and Miners", "Millennium Miners"],
+      "kicker": {"es": "SOCIEDAD PROFESIONAL · ABOGACÍA", "en": "PROFESSIONAL COMPANY · LEGAL PRACTICE"},
+      "headline": {"es": "MILLAN AND MINERS: identidad mercantil y límites del vínculo con Sun Park", "en": "MILLAN AND MINERS: corporate identity and limits of the Sun Park link"},
+      "lead": {"es": "El BORME fija el nombre registral, la actividad propia de la abogacía y los cargos de Prieto y López Noriega. El expediente Sun Park contiene referencias a ambos abogados, pero una sociedad profesional común no demuestra que cada actuación fuera de la sociedad, ni que la firma representara siempre a la Comunidad o a cada propietario.", "en": "The BORME fixes the registered name, the practice of law and the offices of Prieto and López Noriega. The Sun Park file refers to both lawyers, but a shared professional company does not establish that every act was performed through it or that the firm always represented the Community or every owner."},
+      "lanes": {
+        "verified": {"es": "Operaciones desde 2-Apr-2014; constitución inscrita 21-May-2015; Prieto y López Noriega como socios profesionales y administradores mancomunados. Cambio a Prieto como administrador único en 2022.", "en": "Operations from 2-Apr-2014; incorporation registered 21-May-2015; Prieto and López Noriega as professional partners and joint administrators. Change to Prieto as sole administrator in 2022."},
+        "attributed": {"es": "La declarante usa variantes como «Millennium Miners» y afirma que la firma sirvió a la defensa de disidentes y a la vez al perímetro comunitario.", "en": "The declarant uses variants such as ‘Millennium Miners’ and says the firm served both the dissenters' defence and the Community perimeter."},
+        "open": {"es": "Faltan contratos de servicios, facturas, escritos con membrete, poderes, cliente por asunto y reglas de conflicto/consentimiento. El BORME no prueba esas relaciones jurídicas concretas.", "en": "Service agreements, invoices, letterheaded pleadings, powers, matter-by-matter clients and conflict/consent records remain outstanding. The BORME does not prove those specific legal relationships."}
+      },
+      "timeline": [
+        {"date": "2 APR 2014", "status": "official", "title": {"es": "Inicio de operaciones declarado", "en": "Declared start of operations"}, "body": {"es": "La inscripción de constitución consigna esa fecha y la actividad propia de los abogados.", "en": "The incorporation filing records that date and the practice of law."}, "sources": ["BORMEMILLAN2015"]},
+        {"date": "21 MAY 2015", "status": "official", "title": {"es": "Constitución inscrita", "en": "Incorporation registered"}, "body": {"es": "Prieto y López Noriega constan como socios profesionales y administradores mancomunados.", "en": "Prieto and López Noriega are recorded as professional partners and joint administrators."}, "sources": ["BORMEMILLAN2015"]},
+        {"date": "2015–2017", "status": "internal", "title": {"es": "Referencias en el expediente Sun Park", "en": "References in the Sun Park file"}, "body": {"es": "Los controles internos sitúan a los dos abogados en el lado comunitario y conservan una explicación reenviada de 2017 que menciona la firma. Cada actuación requiere su documento original.", "en": "Internal controls place both lawyers on the Community side and preserve a forwarded 2017 explanation mentioning the firm. Each act requires its original document."}, "sources": ["INTPERIMETER", "INTPROFESSIONAL"]},
+        {"date": "17 NOV 2022", "status": "official", "title": {"es": "Cambio del órgano de administración", "en": "Change in governing body"}, "body": {"es": "Cesan los administradores mancomunados y Prieto pasa a administrador único.", "en": "The joint administrators cease and Prieto becomes sole administrator."}, "sources": ["BORMEMILLAN2022"]}
+      ],
+      "corrections": {"es": ["La denominación oficial localizada es MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL, sin tilde ni ampersand.", "«Millen» y «Millennium Miners» son variantes de dictado/búsqueda, no entidades adicionales.", "La sociedad conecta oficialmente a Prieto y López Noriega; no conecta oficialmente a Campanario, Antonio, Pamanil, Pamalexsha o Noalpa."], "en": ["The located official name is MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL, without an accent or ampersand.", "‘Millen’ and ‘Millennium Miners’ are dictation/search variants, not additional entities.", "The company officially connects Prieto and López Noriega; it does not officially connect Campanario, Antonio, Pamanil, Pamalexsha or Noalpa."]},
+      "questions": {"es": ["¿Qué asuntos Sun Park fueron abiertos a nombre de la sociedad?", "¿Quién era cliente y pagador en cada expediente?", "¿Qué controles de conflicto y consentimiento se aplicaron?"], "en": ["Which Sun Park matters were opened in the company's name?", "Who was the client and payer in each file?", "Which conflict and consent controls were applied?"]},
+      "source_ids": ["BORMEMILLAN2015", "BORMEMILLAN2022", "INTPROFESSIONAL", "INTPERIMETER", "DECL011"]
+    },
+    {
+      "id": "pamanil",
+      "kind": "entity",
+      "canonical_name": "PAMANIL SOCIEDAD LIMITADA",
+      "routes": {"es": "pamanil-sl", "en": "pamanil-sl"},
+      "aliases": ["Pamanil, S.L.", "Pamanil SL"],
+      "kicker": {"es": "ADMINISTRACIÓN DE COMUNIDAD · COMUNICACIONES", "en": "COMMUNITY ADMINISTRATION · COMMUNICATIONS"},
+      "headline": {"es": "PAMANIL: entidad existente y papel documental en la Comunidad Sun Park", "en": "PAMANIL: existing entity and documentary role in the Sun Park Community"},
+      "lead": {"es": "El BORME acredita la existencia diferenciada de PAMANIL SOCIEDAD LIMITADA. El expediente Sun Park refiere su nombramiento en 2011 y documenta comunicaciones y funciones de administración desde 2014. Propuesta, ratificación, comunicación y ejecución completa son estados distintos.", "en": "The BORME establishes the separate existence of PAMANIL SOCIEDAD LIMITADA. The Sun Park file reports its appointment in 2011 and documents communications and administrative functions from 2014. Proposal, ratification, communication and complete performance are distinct states."},
+      "lanes": {
+        "verified": {"es": "Persona jurídica identificada oficialmente; el acta de 22-Jun-2011 registra ratificación de Pamanil y el archivo conserva comunicaciones firmadas en su perímetro desde 8-Apr-2014.", "en": "Officially identified legal person; the 22-Jun-2011 minutes record ratification of Pamanil and the archive preserves communications signed in its perimeter from 8-Apr-2014."},
+        "attributed": {"es": "La declarante afirma que fue presentada como la entidad que tomaría las riendas tras la rescisión de CEXP y que «nunca apareció». Esa expresión es su valoración de la ejecución.", "en": "The declarant says it was presented as the entity that would take over after termination of CEXP and that it ‘never appeared’. That phrase is her assessment of performance."},
+        "open": {"es": "Faltan contrato íntegro, aceptación, alcance, personal, facturas, cuentas bancarias, impuestos, partes de trabajo y expediente de terminación. Los documentos localizados sí impiden afirmar literalmente que no realizó ningún acto.", "en": "The complete contract, acceptance, scope, personnel, invoices, bank accounts, tax records, work logs and termination file remain outstanding. Located documents prevent a literal claim that it performed no act at all."}
+      },
+      "timeline": [
+        {"date": "2006–2009", "status": "official", "title": {"es": "Existencia mercantil diferenciada", "en": "Separate corporate existence"}, "body": {"es": "Un depósito oficial de cuentas publicado en 2011 lista PAMANIL SOCIEDAD LIMITADA para esos ejercicios. No acredita un encargo en Sun Park.", "en": "An official accounts filing published in 2011 lists PAMANIL SOCIEDAD LIMITADA for those financial years. It does not establish a Sun Park engagement."}, "sources": ["BORMEPAMANIL2011"]},
+        {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Ratificación en acta", "en": "Ratification in minutes"}, "body": {"es": "El control del acta registra la ratificación de Pamanil dentro de una junta que también trató deuda, voto, mantenimiento, custodia y litigación. La validez y ejecución se analizan por separado.", "en": "The minutes control records ratification of Pamanil within a meeting that also addressed debt, voting, maintenance, custody and litigation. Validity and performance are analysed separately."}, "sources": ["INTJV1260", "INTCOMMUNICATIONS"]},
+        {"date": "8 APR 2014", "status": "internal", "title": {"es": "Comunicación primaria", "en": "Primary communication"}, "body": {"es": "Una comunicación a comuneros aparece firmada en el perímetro Pamanil por Francisco Mario Matos Matas y Shaila María Cogolludo Ramos, por instrucciones de la presidenta.", "en": "A communication to owners appears signed in the Pamanil perimeter by Francisco Mario Matos Matas and Shaila María Cogolludo Ramos, on the president's instructions."}, "sources": ["INTCOMMUNICATIONS", "INTACTORS"]},
+        {"date": "2016", "status": "internal", "title": {"es": "Aparición de Pamalexsha", "en": "Appearance of Pamalexsha"}, "body": {"es": "El expediente de 26-Apr-2016 contiene un presupuesto de Pamalexsha para administración. Esto apoya una transición funcional en la documentación, no una sucesión jurídica automática.", "en": "The 26-Apr-2016 package contains a Pamalexsha administration budget. This supports a functional transition in the documents, not automatic legal succession."}, "sources": ["INTACTA2016"]}
+      ],
+      "corrections": {"es": ["PAMANIL y PAMALEXSHA son personas jurídicas distintas.", "«No hizo nada» queda corregido: existen propuesta, ratificación, comunicaciones y actos administrativos documentados; la ejecución integral sigue abierta.", "La función documental localizada es administración/servicios comunitarios, no una acreditación suficiente de que fuera explotadora turística única."], "en": ["PAMANIL and PAMALEXSHA are distinct legal persons.", "‘It did nothing’ is corrected: proposal, ratification, communications and administrative acts are documented; complete performance remains open.", "The located documentary function is Community administration/services, not sufficient proof that it was the sole tourist operator."]},
+      "questions": {"es": ["¿Qué contrato fue firmado y por quién?", "¿Qué servicios se ejecutaron, con qué personal y facturación?", "¿Cómo se transfirieron, si se transfirieron, libros, llaves, fondos y obligaciones a Pamalexsha?"], "en": ["What contract was signed, and by whom?", "Which services were performed, with what staff and billing?", "How were books, keys, funds and obligations transferred to Pamalexsha, if they were transferred?"]},
+      "source_ids": ["BORMEPAMANIL2011", "INTJV1260", "INTCOMMUNICATIONS", "INTACTA2016", "INTENTITIES", "DECL011"]
+    },
+    {
+      "id": "pamalexsha",
+      "kind": "entity",
+      "canonical_name": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "routes": {"es": "pamalexsha-servicios-integrales-sl", "en": "pamalexsha-servicios-integrales-sl"},
+      "aliases": ["Pamalexsha Servicios Integrales, S.L.", "Pamalexa", "Pamalexa Servicios Integrales"],
+      "kicker": {"es": "SOCIEDAD · SERVICIOS · COMUNIDAD", "en": "COMPANY · SERVICES · COMMUNITY"},
+      "headline": {"es": "PAMALEXSHA SERVICIOS INTEGRALES: registro mercantil y función comunitaria documentada", "en": "PAMALEXSHA SERVICIOS INTEGRALES: corporate record and documented Community function"},
+      "lead": {"es": "El BORME acredita su constitución en 2013 con Antonio Cogolludo Rojas como administrador único inicial. El expediente Sun Park localiza un presupuesto de administración en 2016 y una función posterior en actas. No se presume que sea la misma entidad que Pamanil ni que heredara universalmente sus derechos u obligaciones.", "en": "The BORME establishes its incorporation in 2013 with Antonio Cogolludo Rojas as initial sole administrator. The Sun Park file locates an administration budget in 2016 and a later role in minutes. It is not presumed to be the same entity as Pamanil or to have universally succeeded to its rights or obligations."},
+      "lanes": {
+        "verified": {"es": "Constitución y administrador inicial inscritos en 2013; objeto social modificado en 2015; presupuesto comunitario localizado en 2016; poder a Shaila María Cogolludo Ramos inscrito en 2026.", "en": "Incorporation and initial administrator registered in 2013; corporate purpose amended in 2015; Community budget located in 2016; power to Shaila María Cogolludo Ramos registered in 2026."},
+        "attributed": {"es": "La declarante la describe como explotadora «de turno» designada por los disidentes y vinculada a Antonio, Shaila y Francisco Mario Matos Matas.", "en": "The declarant describes it as the dissenters' operator ‘of the moment’ and links it with Antonio, Shaila and Francisco Mario Matos Matas."},
+        "open": {"es": "Los documentos localizados apoyan administración/servicios comunitarios, no bastan para acreditar explotación turística de todo el hotel. Faltan contrato, autoridad, facturas, personal, ejecución y una cadena jurídica Pamanil→Pamalexsha.", "en": "Located documents support Community administration/services but do not establish operation of the entire hotel. Contract, authority, invoices, staff, performance and a legal Pamanil→Pamalexsha chain remain outstanding."}
+      },
+      "timeline": [
+        {"date": "17 SEP / 7 OCT 2013", "status": "official", "title": {"es": "Constitución", "en": "Incorporation"}, "body": {"es": "El BORME fija su denominación y registra a Antonio Cogolludo Rojas como administrador único inicial.", "en": "The BORME fixes its name and records Antonio Cogolludo Rojas as initial sole administrator."}, "sources": ["BORMEPAMALEXSHA2013"]},
+        {"date": "3 MAR 2015", "status": "official", "title": {"es": "Cambio de objeto social", "en": "Corporate-purpose change"}, "body": {"es": "El BORME publica una ampliación/modificación de actividades inmobiliarias y de construcción. El objeto permitido no prueba actividad ejecutada.", "en": "The BORME publishes an expansion/amendment of property and construction activities. A permitted corporate purpose does not prove performed activity."}, "sources": ["BORMEPAMALEXSHA2015"]},
+        {"date": "26 APR 2016", "status": "internal", "title": {"es": "Presupuesto de administración", "en": "Administration budget"}, "body": {"es": "El mapa documental de la junta localiza un presupuesto de Pamalexsha para servicios de administración.", "en": "The meeting's documentary map locates a Pamalexsha budget for administration services."}, "sources": ["INTACTA2016"]},
+        {"date": "2016–2022", "status": "internal", "title": {"es": "Continuidad documental de funciones", "en": "Documentary continuity of functions"}, "body": {"es": "Las fuentes comunitarias posteriores la nombran en funciones administrativas/secretariales. Debe probarse acto, mandato y ejecución uno por uno.", "en": "Later Community sources name it in administrative/secretarial functions. Each act, mandate and performance must be proved separately."}, "sources": ["INTCOMMUNICATIONS", "INTENTITIES"]},
+        {"date": "16 JUL 2026", "status": "official", "title": {"es": "Poder a Shaila", "en": "Power to Shaila"}, "body": {"es": "El BORME registra el nombramiento de Shaila María Cogolludo Ramos como apoderada. No se retrotrae a 2016 o 2018.", "en": "The BORME records the appointment of Shaila María Cogolludo Ramos as attorney-in-fact. It is not backdated to 2016 or 2018."}, "sources": ["BORMEPAMALEXSHA2026"]}
+      ],
+      "corrections": {"es": ["La grafía legal es PAMALEXSHA, no «Pamalexa».", "PAMALEXSHA no es PAMANIL; no se ha probado sucesión universal, fusión o cesión total.", "El poder de Shaila es un hecho registrado en 2026 y no acredita por sí solo capacidad en años anteriores."], "en": ["The legal spelling is PAMALEXSHA, not ‘Pamalexa’.", "PAMALEXSHA is not PAMANIL; universal succession, merger or total assignment has not been proved.", "Shaila's power is a fact registered in 2026 and does not itself establish capacity in earlier years."]},
+      "questions": {"es": ["¿Qué contrato comunitario sustituyó, si alguno, a Pamanil?", "¿Qué trabajo, facturación, personal y custodia documental tuvo en Sun Park?", "¿Qué capacidad tenía cada firmante en cada fecha?"], "en": ["What Community contract, if any, replaced Pamanil?", "What work, billing, staff and document custody did it have at Sun Park?", "What capacity did each signatory hold on each date?"]},
+      "source_ids": ["BORMEPAMALEXSHA2013", "BORMEPAMALEXSHA2015", "BORMEPAMALEXSHA2026", "INTACTA2016", "INTCOMMUNICATIONS", "INTENTITIES", "DECL011"]
+    },
+    {
+      "id": "noalpa",
+      "kind": "entity",
+      "canonical_name": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "routes": {"es": "explotaciones-noalpa-sl", "en": "explotaciones-noalpa-sl"},
+      "aliases": ["Explotaciones Noalpa, S.L.", "Explotaciones Noepa", "Noalpa"],
+      "kicker": {"es": "SOCIEDAD · ALOJAMIENTOS TURÍSTICOS", "en": "COMPANY · TOURIST ACCOMMODATION"},
+      "headline": {"es": "EXPLOTACIONES NOALPA: vínculo mercantil con Antonio y límite Sun Park", "en": "EXPLOTACIONES NOALPA: corporate link to Antonio and the Sun Park boundary"},
+      "lead": {"es": "El BORME acredita la constitución de EXPLOTACIONES NOALPA en 2017, con actividades que incluyen alojamientos turísticos y Antonio Cogolludo Rojas como administrador único inicial; en 2021 se inscribió un poder a Shaila María Cogolludo Ramos. No se ha localizado un contrato o actuación primaria de NOALPA en Sun Park.", "en": "The BORME establishes incorporation of EXPLOTACIONES NOALPA in 2017, with activities including tourist accommodation and Antonio Cogolludo Rojas as initial sole administrator; a power to Shaila María Cogolludo Ramos was registered in 2021. No primary NOALPA contract or act at Sun Park has been located."},
+      "lanes": {
+        "verified": {"es": "Persona jurídica constituida con operaciones desde 18-Oct-2017; Antonio como administrador único inicial; poder a Shaila inscrito el 28-Dec-2021.", "en": "Legal person incorporated with operations from 18-Oct-2017; Antonio as initial sole administrator; power to Shaila registered on 28-Dec-2021."},
+        "attributed": {"es": "La declarante menciona «Explotaciones Noepa/Noalpa» dentro de una red posterior que relaciona con Prieto, López Noriega, Antonio, Pamanil y Pamalexsha.", "en": "The declarant mentions ‘Explotaciones Noepa/Noalpa’ within a later network that she connects with Prieto, López Noriega, Antonio, Pamanil and Pamalexsha."},
+        "open": {"es": "La conexión directa con Prieto, López Noriega, MILLAN AND MINERS o Sun Park no está establecida por los asientos localizados. Se requiere contrato, poder, factura, comunicación o actuación concreta.", "en": "A direct connection with Prieto, López Noriega, MILLAN AND MINERS or Sun Park is not established by the located filings. A contract, power, invoice, communication or specific act is required."}
+      },
+      "timeline": [
+        {"date": "18 OCT / 26 DEC 2017", "status": "official", "title": {"es": "Constitución e inicio", "en": "Incorporation and start"}, "body": {"es": "El BORME registra su denominación, objeto —incluidos alojamientos turísticos— y a Antonio Cogolludo Rojas como administrador único.", "en": "The BORME records its name, corporate purpose—including tourist accommodation—and Antonio Cogolludo Rojas as sole administrator."}, "sources": ["BORMENOALPA2018"]},
+        {"date": "28 DEC 2021", "status": "official", "title": {"es": "Poder a Shaila", "en": "Power to Shaila"}, "body": {"es": "Se inscribe a Shaila María Cogolludo Ramos como apoderada.", "en": "Shaila María Cogolludo Ramos is registered as attorney-in-fact."}, "sources": ["BORMENOALPA2022"]},
+        {"date": "25 AUG 2026", "status": "attributed", "title": {"es": "Mención en el relato recibido", "en": "Mention in the received account"}, "body": {"es": "La declarante la integra en una explicación de continuidad profesional y societaria. La publicación conserva la mención como pista atribuida, no como vínculo probado.", "en": "The declarant places it within an account of professional and corporate continuity. The publication preserves the mention as an attributed lead, not a proved connection."}, "sources": ["DECL011"]}
+      ],
+      "corrections": {"es": ["La denominación oficial es EXPLOTACIONES NOALPA, no «Noepa».", "El objeto social de alojamientos turísticos no demuestra explotación de Sun Park.", "La coincidencia de Antonio y Shaila en esta sociedad no incorpora automáticamente a Prieto, López Noriega, Pamanil o Pamalexsha."], "en": ["The official name is EXPLOTACIONES NOALPA, not ‘Noepa’.", "A corporate purpose including tourist accommodation does not establish operation of Sun Park.", "The presence of Antonio and Shaila in this company does not automatically bring in Prieto, López Noriega, Pamanil or Pamalexsha."]},
+      "questions": {"es": ["¿Existe algún contrato, factura o comunicación de NOALPA relativo a Sun Park?", "¿Qué actuación concreta sustenta la conexión alegada con el equipo jurídico?", "¿Cuál fue la capacidad vigente de cada persona en la fecha del acto que se investigue?"], "en": ["Is there any NOALPA contract, invoice or communication concerning Sun Park?", "What specific act supports the alleged connection to the legal team?", "What was each person's effective capacity on the date of the act under investigation?"]},
+      "source_ids": ["BORMENOALPA2018", "BORMENOALPA2022", "INTFIVEACTOR", "DECL011"]
+    },
+    {
+      "id": "santa_lucia",
+      "kind": "entity",
+      "canonical_name": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "routes": {"es": "santa-lucia-real-estate-sl", "en": "santa-lucia-real-estate-sl"},
+      "aliases": ["Santa Lucia Real Estate, S.L.", "Santa Lucía Real Estate", "Inversiones Santa Lucía"],
+      "kicker": {"es": "SOCIEDAD INMOBILIARIA · PUENTE PRIETO–ANTONIO", "en": "PROPERTY COMPANY · PRIETO–ANTONIO BRIDGE"},
+      "headline": {"es": "SANTA LUCIA REAL ESTATE: el puente societario oficial entre Prieto y Antonio", "en": "SANTA LUCIA REAL ESTATE: the official corporate bridge between Prieto and Antonio"},
+      "lead": {"es": "La constitución oficial registra conjuntamente a Juan Carlos Prieto Puente, Antonio Cogolludo Rojas y Atilio Alberto Maddonni Citara como administradores solidarios. Los cambios de 2021 y 2025 permiten fechar y limitar sus cargos. La sociedad no prueba por sí sola una relación con Sun Park, NOALPA, PAMALEXSHA o Esteban López Noriega.", "en": "The official incorporation jointly records Juan Carlos Prieto Puente, Antonio Cogolludo Rojas and Atilio Alberto Maddonni Citara as several administrators. Changes in 2021 and 2025 date and limit their offices. The company does not itself prove a relationship with Sun Park, NOALPA, PAMALEXSHA or Esteban López Noriega."},
+      "lanes": {
+        "verified": {"es": "Operaciones desde 22-Dec-2017; tres administradores solidarios inscritos el 31-Jan-2018; Antonio como único y Prieto como apoderado en 2021; cese de Antonio en 2025.", "en": "Operations from 22-Dec-2017; three several administrators registered on 31-Jan-2018; Antonio as sole administrator and Prieto as attorney-in-fact in 2021; Antonio ceased in 2025."},
+        "attributed": {"es": "La declarante recordó «otra de Santa María/Santa Lucía» como pieza que conectaba al equipo jurídico con Antonio. La identificación correcta se apoya ahora en el BORME.", "en": "The declarant recalled ‘another Santa María/Santa Lucía’ entity as a link between the legal team and Antonio. The correct identification is now grounded in the BORME."},
+        "open": {"es": "No se ha acreditado que esta sociedad recibiera instrucciones, activos, contratos o beneficios vinculados a Sun Park. También falta verificar el estado actual de cada poder más allá de los asientos publicados.", "en": "It has not been established that this company received Sun Park-related instructions, assets, contracts or benefits. The current status of each power beyond the published filings also requires verification."}
+      },
+      "timeline": [
+        {"date": "22 DEC 2017 / 31 JAN 2018", "status": "official", "title": {"es": "Constitución y tres administradores", "en": "Incorporation and three administrators"}, "body": {"es": "El BORME registra a Antonio, Prieto y Atilio Alberto Maddonni Citara como administradores solidarios.", "en": "The BORME records Antonio, Prieto and Atilio Alberto Maddonni Citara as several administrators."}, "sources": ["BORMESANTA2018"]},
+        {"date": "18 MAY 2021", "status": "official", "title": {"es": "Cambio de estructura", "en": "Structural change"}, "body": {"es": "Cesan los tres administradores solidarios; Antonio pasa a administrador único y Prieto es nombrado apoderado en acto separado.", "en": "The three several administrators cease; Antonio becomes sole administrator and Prieto is appointed attorney-in-fact in a separate act."}, "sources": ["BORMESANTA2021"]},
+        {"date": "15 JUL 2025", "status": "official", "title": {"es": "Cese de Antonio", "en": "Antonio's cessation"}, "body": {"es": "El BORME registra su cese y el nombramiento de Miguel Ángel García Pérez como administrador único.", "en": "The BORME records his cessation and the appointment of Miguel Ángel García Pérez as sole administrator."}, "sources": ["BORMESANTA2025"]},
+        {"date": "25 AUG 2026", "status": "attributed", "title": {"es": "Corrección de identificación del dictado", "en": "Dictation identity correction"}, "body": {"es": "La referencia imprecisa de la declarante se confronta con el nombre registral exacto. El vínculo Prieto–Antonio queda acreditado societariamente, no como vínculo Sun Park.", "en": "The declarant's imprecise reference is compared with the exact registered name. The Prieto–Antonio link is established corporately, not as a Sun Park link."}, "sources": ["DECL011", "BORMESANTA2018"]}
+      ],
+      "corrections": {"es": ["La denominación oficial es SANTA LUCIA REAL ESTATE, sin acento en LUCIA; «Santa María» e «Inversiones Santa Lucía» son variantes de recuerdo, no nombres alternativos confirmados.", "El puente oficial Prieto–Antonio consta a través de esta sociedad; Esteban no consta en los asientos localizados.", "Antonio cesó como administrador único en 2025; no se presenta el cargo como vigente."], "en": ["The official name is SANTA LUCIA REAL ESTATE, without an accent in LUCIA; ‘Santa María’ and ‘Inversiones Santa Lucía’ are memory variants, not confirmed alternative names.", "The official Prieto–Antonio bridge is recorded through this company; Esteban does not appear in the located filings.", "Antonio ceased as sole administrator in 2025; the office is not presented as current."]},
+      "questions": {"es": ["¿Tuvo la sociedad algún contrato, activo o comunicación vinculados a Sun Park?", "¿Cuál es el alcance y vigencia del poder de Prieto después de 2021?", "¿Existe algún documento que conecte a Esteban, Pamanil, Pamalexsha o Noalpa con esta sociedad?"], "en": ["Did the company have any Sun Park-related contract, asset or communication?", "What is the scope and current status of Prieto's power after 2021?", "Does any document connect Esteban, Pamanil, Pamalexsha or Noalpa with this company?"]},
+      "source_ids": ["BORMESANTA2018", "BORMESANTA2021", "BORMESANTA2025", "INTFIVEACTOR", "DECL011"]
+    },
+    {
+      "id": "shaila",
+      "kind": "person",
+      "canonical_name": "Shaila María Cogolludo Ramos",
+      "routes": {"es": "shaila-maria-cogolludo-ramos", "en": "shaila-maria-cogolludo-ramos"},
+      "aliases": ["Shaila Cogolludo", "Shaila María Cogolludo"],
+      "kicker": {"es": "COMUNICACIONES · COMUNIDAD · PODERES MERCANTILES", "en": "COMMUNICATIONS · COMMUNITY · CORPORATE POWERS"},
+      "headline": {"es": "Shaila María Cogolludo Ramos: comunicaciones comunitarias y poderes posteriores", "en": "Shaila María Cogolludo Ramos: Community communications and later corporate powers"},
+      "lead": {"es": "Los controles Sun Park la sitúan firmando una comunicación del perímetro Pamanil en 2014. El BORME registra después poderes en EXPLOTACIONES NOALPA en 2021 y PAMALEXSHA en 2026. Ningún poder se retrotrae ni acredita por sí solo actuación en Sun Park; el apellido compartido y las relaciones descritas por fuentes del proyecto no prueban parentesco en el BORME ni transfieren actos, conocimiento, intención o responsabilidad.", "en": "Sun Park controls place her signing a communication within the Pamanil perimeter in 2014. BORME later records powers at EXPLOTACIONES NOALPA in 2021 and PAMALEXSHA in 2026. Neither power is backdated or itself establishes a Sun Park act; the shared surname and relationships described by project sources do not prove kinship in BORME or transfer acts, knowledge, intent or responsibility."},
+      "lanes": {
+        "verified": {"es": "Una comunicación de 8-Apr-2014 aparece firmada en el perímetro Pamanil por Shaila y Francisco Mario Matos Matas. El BORME registra su poder en NOALPA el 28-Dec-2021 y en PAMALEXSHA el 16-Jul-2026.", "en": "An 8-Apr-2014 communication appears signed within the Pamanil perimeter by Shaila and Francisco Mario Matos Matas. BORME records her power at NOALPA on 28-Dec-2021 and at PAMALEXSHA on 16-Jul-2026."},
+        "attributed": {"es": "Fuentes internas del proyecto describen funciones posteriores de administración comunitaria, parentesco con Antonio y relación matrimonial con FMMM. Esas relaciones conservan su clase de fuente: no son hallazgos del BORME ni permiten atribuirle la conducta de otra persona.", "en": "Internal project sources describe later Community-administration functions, kinship with Antonio and a marital relationship with FMMM. Those relationships retain their source class: they are not BORME findings and do not permit another person's conduct to be attributed to her."},
+        "open": {"es": "Faltan el documento primario íntegro de cada función, poderes comunitarios, contrato, aceptación, facturación y cadena de título/cualificación para cada cargo o voto discutido. Tampoco se ha probado una sociedad común con FMMM ni coordinación ilícita.", "en": "The complete primary document for each function, Community powers, contract, acceptance, billing and title/qualification chain for each disputed office or vote remain outstanding. No common company with FMMM or unlawful coordination has been proved either."}
+      },
+      "timeline": [
+        {"date": "8 APR 2014", "status": "internal", "title": {"es": "Comunicación del perímetro Pamanil", "en": "Pamanil-perimeter communication"}, "body": {"es": "El registro de comunicaciones localiza una comunicación a comuneros firmada por Francisco Mario Matos Matas y Shaila María Cogolludo Ramos, por instrucciones de la presidenta.", "en": "The communications register locates a communication to owners signed by Francisco Mario Matos Matas and Shaila María Cogolludo Ramos, on the president's instructions."}, "sources": ["INTCOMMUNICATIONS", "INTACTORS"]},
+        {"date": "APR 2016", "status": "internal", "title": {"es": "Continuidad documental limitada", "en": "Limited documentary continuity"}, "body": {"es": "El registro canónico mantiene una aparición en comunicaciones Comunidad/Pamanil. Esto no prueba por sí solo cargo societario, contrato completo ni facultad para cada acto.", "en": "The canonical register preserves an appearance in Community/Pamanil communications. This does not itself prove a corporate office, complete contract or authority for every act."}, "sources": ["INTACTORS", "INTCOMMUNICATIONS"]},
+        {"date": "28 DEC 2021", "status": "official", "title": {"es": "Poder inscrito en NOALPA", "en": "Registered NOALPA power"}, "body": {"es": "El BORME registra su nombramiento como apoderada de EXPLOTACIONES NOALPA. No establece parentesco ni coordinación delictiva.", "en": "BORME records her appointment as attorney-in-fact of EXPLOTACIONES NOALPA. It establishes neither kinship nor criminal coordination."}, "sources": ["BORMENOALPA2022"]},
+        {"date": "16 JUL 2026", "status": "official", "title": {"es": "Poder inscrito en PAMALEXSHA", "en": "Registered PAMALEXSHA power"}, "body": {"es": "El BORME registra su nombramiento como apoderada. El acto no se proyecta hacia 2014, 2016 o 2018.", "en": "BORME records her appointment as attorney-in-fact. The act is not projected back to 2014, 2016 or 2018."}, "sources": ["BORMEPAMALEXSHA2026"]}
+      ],
+      "corrections": {"es": ["La forma canónica es Shaila María Cogolludo Ramos; no se usan «Shayla» ni «Cogoyudo» como identidades aceptadas.", "El apellido compartido y las relaciones descritas por el proyecto no prueban parentesco en los registros mercantiles; ninguna relación transfiere conducta, conocimiento, intención o responsabilidad.", "Los poderes oficiales de 2021 y 2026 no prueban autoridad anterior ni actuación concreta en Sun Park."], "en": ["The canonical form is Shaila María Cogolludo Ramos; ‘Shayla’ and ‘Cogoyudo’ are not used as accepted identities.", "The shared surname and relationships described by the project do not prove kinship in company filings; no relationship transfers conduct, knowledge, intent or responsibility.", "The official 2021 and 2026 powers do not prove earlier authority or a specific Sun Park act."]},
+      "questions": {"es": ["¿Qué documento primario define cada función comunitaria y su fecha?", "¿Qué finca, título o poder sustentó cada cargo o voto atribuido?", "¿Cuál fue el alcance y vigencia de cada poder mercantil, sin retroacción?"], "en": ["Which primary document defines each Community function and date?", "Which unit, title or power supported each attributed office or vote?", "What was the scope and duration of each corporate power, without backdating?"]},
+      "source_ids": ["BORMENOALPA2022", "BORMEPAMALEXSHA2026", "INTACTORS", "INTCOMMUNICATIONS", "INTFIVEACTOR", "DECL011"]
+    },
+    {
+      "id": "fmmm",
+      "kind": "person",
+      "canonical_name": "Francisco Mario Matos Matas",
+      "routes": {"es": "francisco-mario-matos-matas", "en": "francisco-mario-matos-matas"},
+      "aliases": ["FMMM", "Francisco Mario Matos Mata"],
+      "kicker": {"es": "ADMINISTRACIÓN COMUNITARIA · PAMANIL · IDENTIDAD ABIERTA", "en": "COMMUNITY ADMINISTRATION · PAMANIL · OPEN IDENTITY ISSUE"},
+      "headline": {"es": "Francisco Mario Matos Matas: función comunitaria y cautela MATA/MATAS", "en": "Francisco Mario Matos Matas: Community role and the MATA/MATAS caveat"},
+      "lead": {"es": "El registro interno lo identifica en funciones de administración de la Comunidad/Pamanil desde 2011 y como firmante en 2014. Los asientos BORME de 2024 son ortográficamente inconsistentes: MATA en la hoja GC61036 y MATAS en actos posteriores. La continuidad hace plausible una errata, pero sólo DNI o historial registral certificado puede cerrar el puente; la identidad más corta Francisco Matos Matas permanece separada.", "en": "The internal register identifies him in Community/Pamanil administration functions from 2011 and as a signatory in 2014. The 2024 BORME filings are orthographically inconsistent: MATA on sheet GC61036 and MATAS in later acts. Continuity makes a publication error plausible, but only a national ID or certified Registry history can close the bridge; the shorter identity Francisco Matos Matas remains separate."},
+      "lanes": {
+        "verified": {"es": "Los controles Sun Park lo sitúan como administrador de la Comunidad y de Pamanil desde 22-Jun-2011 y firmante de una comunicación de 8-Apr-2014. El BORME de 2024 imprime MATA en un acto y MATAS al nombrarlo consejero de ORION y apoderado de AGM.", "en": "Sun Park controls place him as administrator of the Community and Pamanil from 22-Jun-2011 and as a signatory to an 8-Apr-2014 communication. BORME in 2024 prints MATA in one act and MATAS when naming him an ORION director and AGM power-holder."},
+        "attributed": {"es": "La declaración recibida describe continuidad funcional Pamanil→Pamalexsha y coordinación comunitaria. Esa reconstrucción no equivale a sucesión jurídica, acuerdo ilícito ni prueba de conocimiento o beneficio.", "en": "The received statement describes Pamanil→Pamalexsha functional continuity and Community coordination. That reconstruction is not legal succession, an unlawful agreement or proof of knowledge or benefit."},
+        "open": {"es": "Faltan DNI o certificado que resuelva MATA/MATAS, contratos y poderes completos de Pamanil/Comunidad/Pamalexsha, y prueba acto por acto. No hay puente oficial localizado a una empresa común con Antonio o Shaila; los cargos de 2024 no prueban coordinación histórica Sun Park.", "en": "A national ID or certificate resolving MATA/MATAS, complete Pamanil/Community/Pamalexsha contracts and powers, and act-by-act proof remain outstanding. No located official bridge establishes a common company with Antonio or Shaila; the 2024 offices do not prove historic Sun Park coordination."}
+      },
+      "timeline": [
+        {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Administración Comunidad/Pamanil", "en": "Community/Pamanil administration"}, "body": {"es": "El registro canónico fija esta fecha mínima para funciones de administración comunitaria y Pamanil. La capacidad de cada acto exige su documento subyacente.", "en": "The canonical register fixes this minimum date for Community and Pamanil administration functions. Capacity for each act requires its underlying document."}, "sources": ["INTACTORS", "INTCOMMUNICATIONS"]},
+        {"date": "8 APR 2014", "status": "internal", "title": {"es": "Comunicación firmada", "en": "Signed communication"}, "body": {"es": "Una comunicación a comuneros aparece firmada en el perímetro Pamanil por FMMM y Shaila, por instrucciones de la presidenta.", "en": "A communication to owners appears signed within the Pamanil perimeter by FMMM and Shaila, on the president's instructions."}, "sources": ["INTCOMMUNICATIONS"]},
+        {"date": "1 MAR 2024", "status": "official", "title": {"es": "Grafía oficial MATA", "en": "Official MATA spelling"}, "body": {"es": "Un acto en la hoja GC61036 imprime Francisco Mario Matos Mata. Es un dato de control de identidad, no una resolución definitiva del conflicto ortográfico.", "en": "An act on sheet GC61036 prints Francisco Mario Matos Mata. This is an identity-control datum, not a definitive resolution of the spelling conflict."}, "sources": ["BORMEFMMMMATA2024"]},
+        {"date": "2024", "status": "official", "title": {"es": "Actos posteriores con MATAS", "en": "Later MATAS acts"}, "body": {"es": "BORME lo registra con MATAS como consejero de ORION RENTAL SOCIMI y entre los apoderados de AGM CANARY ASSET MANAGEMENT. Esos cargos posteriores no prueban hechos Sun Park anteriores.", "en": "BORME records him with MATAS as an ORION RENTAL SOCIMI director and among AGM CANARY ASSET MANAGEMENT power-holders. Those later offices do not prove earlier Sun Park facts."}, "sources": ["BORMEFMMMORION2024", "BORMEFMMMAM2024"]}
+      ],
+      "corrections": {"es": ["Francisco Mario Matos Matas es la identidad canónica del proyecto; MATA/MATAS sigue abierto hasta obtener DNI o historial registral certificado.", "No se equipara con la identidad publicada más corta Francisco Matos Matas sin un puente independiente.", "La asociación societaria de 2024 no prueba coordinación, conocimiento delictivo, beneficio ni propósito histórico en Sun Park."], "en": ["Francisco Mario Matos Matas is the project-canonical identity; MATA/MATAS remains open until a national ID or certified Registry history is obtained.", "He is not equated with the shorter published identity Francisco Matos Matas without an independent bridge.", "The 2024 corporate association does not prove coordination, criminal knowledge, benefit or historic purpose at Sun Park."]},
+      "questions": {"es": ["¿Qué DNI o certificación registral cierra la divergencia MATA/MATAS?", "¿Qué poderes y contratos definieron su función en Comunidad y Pamanil?", "¿Qué documento probaría una sucesión o encargo de Pamalexsha, en vez de mera continuidad funcional?"], "en": ["Which national ID or Registry certificate closes the MATA/MATAS divergence?", "Which powers and contracts defined his Community and Pamanil function?", "Which document would prove a Pamalexsha succession or retainer rather than merely functional continuity?"]},
+      "source_ids": ["BORMEFMMMMATA2024", "BORMEFMMMORION2024", "BORMEFMMMAM2024", "INTACTORS", "INTCOMMUNICATIONS", "INTFIVEACTOR", "DECL011"]
+    },
+    {
+      "id": "rodriguez_batllori",
+      "kind": "person",
+      "canonical_name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "routes": {"es": "francisco-de-borja-rodriguez-batllori-laffitte", "en": "francisco-de-borja-rodriguez-batllori-laffitte"},
+      "aliases": ["Francisco de Borja Rodríguez-Batllori", "Rodríguez-Batllori Laffitte"],
+      "kicker": {"es": "ADMINISTRADOR CONCURSAL · CONCURSO 36/2012", "en": "INSOLVENCY ADMINISTRATOR · INSOLVENCY 36/2012"},
+      "headline": {"es": "Francisco de Borja Rodríguez-Batllori Laffitte: nombramiento judicial y límites", "en": "Francisco de Borja Rodríguez-Batllori Laffitte: court appointment and limits"},
+      "lead": {"es": "El auto de 6-Jun-2012 lo designó judicialmente administrador concursal de Luchy Playa Blanca, S.L.U. en el Concurso 36/2012. Es un profesional judicial-adjacente designado por el tribunal: no es un actor privado de la red comunitaria ni fue el juez. La atribución de amistad o coordinación con Álvaro Campanario carece de prueba independiente localizada.", "en": "The 6-Jun-2012 order court-appointed him as insolvency administrator of Luchy Playa Blanca, S.L.U. in Insolvency 36/2012. He is a court-appointed, judicial-adjacent professional: he is not a private actor in the Community network and was not the judge. The attributed friendship or coordination with Álvaro Campanario lacks located independent proof."},
+      "lanes": {
+        "verified": {"es": "BOE, BORME y el auto primario controlado sitúan el nombramiento el 6-Jun-2012. LPB conservó inicialmente facultades sometidas a intervención; desde la liquidación abierta el 19-Dec-2017, el administrador concursal sustituyó a sus administradores en administración y disposición.", "en": "BOE, BORME and the controlled primary order place the appointment on 6-Jun-2012. LPB initially retained powers subject to intervention; from liquidation opening on 19-Dec-2017, the insolvency administrator substituted for its directors in administration and disposition."},
+        "attributed": {"es": "La declaración recibida atribuye amistad con Campanario y sugiere que el nombramiento hizo que «todo quedara en casa». No existe prueba independiente localizada de amistad, intervención de Campanario en la designación, coordinación, plan o motivo.", "en": "The received statement attributes a friendship with Campanario and suggests that the appointment meant ‘everything stayed in-house’. No located independent evidence establishes friendship, Campanario's intervention in the appointment, coordination, plan or motive."},
+        "open": {"es": "Deben reconstruirse reparto/designación, aceptación, comunicaciones y cada actuación específica desde el expediente judicial completo. Las alegaciones graves posteriores requieren documento primario y resolución propia; el cargo no transmite responsabilidad por asociación.", "en": "Allocation/appointment, acceptance, communications and every specific act must be reconstructed from the complete court file. Later serious allegations require their own primary document and ruling; the office does not transfer responsibility by association."}
+      },
+      "timeline": [
+        {"date": "6 JUN 2012", "status": "official", "title": {"es": "Nombramiento judicial", "en": "Court appointment"}, "body": {"es": "El auto declaró el concurso voluntario de LPB y designó a Rodríguez-Batllori administrador concursal. El edicto y el BORME publicaron el procedimiento.", "en": "The order declared LPB's voluntary insolvency and appointed Rodríguez-Batllori as insolvency administrator. The official notice and BORME published the proceeding."}, "sources": ["BOERODRIGUEZ2012", "BORMERODRIGUEZ2012"]},
+        {"date": "19 DEC 2017", "status": "internal", "title": {"es": "Apertura de liquidación y sustitución", "en": "Liquidation opening and substitution"}, "body": {"es": "El auto controlado suspendió las facultades de LPB y dispuso que el administrador concursal sustituyera a sus administradores para administración y disposición del patrimonio de LPB.", "en": "The controlled order suspended LPB's powers and provided for the insolvency administrator to substitute for its directors in administration and disposition of LPB's estate."}, "sources": ["INTCONCURSOAUTOS"]},
+        {"date": "25 AUG 2026", "status": "attributed", "title": {"es": "Relación Campanario no probada", "en": "Unproved Campanario relationship"}, "body": {"es": "La declaración conserva una asociación personal y una inferencia sobre la designación. Se publican como atribución abierta, no como amistad, coordinación o plan probado.", "en": "The statement preserves a personal association and an inference about the appointment. They are published as open attribution, not as proved friendship, coordination or plan."}, "sources": ["DECL011"]}
+      ],
+      "corrections": {"es": ["Fue administrador concursal designado judicialmente; no es un actor privado de la red comunitaria y no fue el juez del concurso.", "El nombramiento prueba la capacidad procesal fechada, no amistad, coordinación, conocimiento o propósito compartido con Campanario.", "El alcance de sus facultades cambió entre la intervención inicial de 2012 y la sustitución en liquidación desde 19-Dec-2017; no se fusionan ambas fases."], "en": ["He was a court-appointed insolvency administrator; he is not a private actor in the Community network and was not the insolvency judge.", "The appointment proves a dated procedural capacity, not friendship, coordination, knowledge or shared purpose with Campanario.", "The scope of his powers changed between the initial 2012 intervention and substitution in liquidation from 19-Dec-2017; the two phases are not merged."]},
+      "questions": {"es": ["¿Qué constan exactamente el reparto, propuesta, aceptación y toma de posesión?", "¿Existe alguna comunicación primaria que pruebe una relación profesional o personal con Campanario?", "¿Qué actuación concreta, fecha, facultad y resolución corresponde a cada alegación posterior?"], "en": ["What exactly do allocation, proposal, acceptance and assumption-of-office records show?", "Does any primary communication prove a professional or personal relationship with Campanario?", "Which specific act, date, power and ruling corresponds to each later allegation?"]},
+      "source_ids": ["BOERODRIGUEZ2012", "BORMERODRIGUEZ2012", "INTCONCURSOAUTOS", "INTACTORS", "DECL011"]
+    },
+    {
+      "id": "asuncion",
+      "kind": "person",
+      "canonical_name": "Asunción Aizpurúa Sánchez",
+      "routes": {"es": "asuncion-aizpurua-sanchez", "en": "asuncion-aizpurua-sanchez"},
+      "aliases": ["AAS", "Asunción Aizpurúa"],
+      "official_gap": {"es": "No se ha cerrado un puente oficial de identidad; las coincidencias BOC de nombre parecido quedan descartadas.", "en": "No official identity bridge has been closed; similar-name BOC matches are rejected."},
+      "kicker": {"es": "PRESIDENCIA COMUNITARIA · REPRESENTACIÓN · IDENTIDAD CONTROLADA", "en": "COMMUNITY PRESIDENCY · REPRESENTATION · CONTROLLED IDENTITY"},
+      "headline": {"es": "Asunción Aizpurúa Sánchez: presidencia y representación según las actas Sun Park", "en": "Asunción Aizpurúa Sánchez: presidency and representation in the Sun Park minutes"},
+      "lead": {"es": "Las fuentes internas Sun Park registran su nombramiento para presidir la junta de 2-Feb-2011, su elección como presidenta representando a Roque Prieto y su presidencia en la junta de 22-Jun-2011. El resultado BOC para una María Asunción Aizpurúa Sánchez no se enlaza: nombre parecido y región no prueban identidad.", "en": "Internal Sun Park sources record her appointment to chair the 2-Feb-2011 meeting, election as president while representing Roque Prieto and presidency at the 22-Jun-2011 meeting. The BOC result for a María Asunción Aizpurúa Sánchez is not linked: a similar name and region do not prove identity."},
+      "lanes": {
+        "verified": {"es": "Las actas controladas la sitúan como presidenta desde 2-Feb-2011, representando a Roque Prieto, y como presidenta el 22-Jun-2011; fuentes posteriores registran representaciones concretas.", "en": "Controlled minutes place her as president from 2-Feb-2011 while representing Roque Prieto, and as president on 22-Jun-2011; later sources record specific representations."},
+        "attributed": {"es": "La declarante la describe como cabecilla del perímetro disidente. Esa caracterización no sustituye las capacidades y actos fechados ni prueba conocimiento, intención o conducta ilícita.", "en": "The declarant describes her as leading the dissenting perimeter. That characterisation does not replace dated capacities and acts or prove knowledge, intent or unlawful conduct."},
+        "open": {"es": "Faltan poderes completos, título de la entidad representada, acta íntegra y cadena de autoridad para cada decisión. No se promueve ninguna persona de nombre parecido localizada en el BOC.", "en": "Complete powers, title of the represented entity, full minutes and authority chain for each decision remain outstanding. No similar-named person found in BOC is promoted."}
+      },
+      "timeline": [
+        {"date": "2 FEB 2011", "status": "internal", "title": {"es": "Nombramiento y elección en junta", "en": "Meeting appointment and election"}, "body": {"es": "El control del acta registra que fue designada para presidir la reunión y después elegida presidenta representando a Roque Prieto; Campanario actuó como secretario de esa junta.", "en": "The minutes control records that she was appointed to chair the meeting and then elected president while representing Roque Prieto; Campanario served as secretary of that meeting."}, "sources": ["INTJV1260"]},
+        {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Presidenta en la junta", "en": "President at the meeting"}, "body": {"es": "El acta la identifica como presidenta en una reunión que trató deuda, voto, Pamanil, mantenimiento y litigación. El cargo no decide por sí solo la validez jurídica de los acuerdos.", "en": "The minutes identify her as president at a meeting addressing debt, voting, Pamanil, maintenance and litigation. The office does not itself determine the legal validity of the resolutions."}, "sources": ["INTJV1260", "INTPERIMETER"]},
+        {"date": "2014–2015", "status": "internal", "title": {"es": "Representaciones posteriores", "en": "Later representations"}, "body": {"es": "Los controles registran representación por Prieto de AAS/Roque Prieto en 2014 y representaciones concretas ejercidas por AAS en 2015. Cada mandato se mantiene separado.", "en": "Controls record Prieto representing AAS/Roque Prieto in 2014 and specific representations exercised by AAS in 2015. Each mandate remains separate."}, "sources": ["INTPERIMETER"]}
+      ],
+      "corrections": {"es": ["La identidad canónica del expediente es Asunción Aizpurúa Sánchez.", "La coincidencia BOC María Asunción Aizpurúa Sánchez se rechaza como puente: nombre y región no bastan.", "Presidencia, representación y cada voto son capacidades separadas; ninguna prueba por sí sola culpabilidad o acuerdo ilícito."], "en": ["The file's canonical identity is Asunción Aizpurúa Sánchez.", "The BOC match María Asunción Aizpurúa Sánchez is rejected as a bridge: name and region are insufficient.", "Presidency, representation and each vote are separate capacities; none itself proves guilt or an unlawful agreement."]},
+      "questions": {"es": ["¿Qué poder y título sustentaron la representación de Roque Prieto el 2-Feb-2011?", "¿Qué texto íntegro y quórum acompañaron cada acuerdo?", "¿Qué documentos cierran cada representación posterior sin enlazar homónimos?"], "en": ["Which power and title supported representation of Roque Prieto on 2-Feb-2011?", "Which complete text and quorum accompanied each resolution?", "Which documents close each later representation without linking namesakes?"]},
+      "source_ids": ["INTJV1260", "INTPERIMETER", "INTACTORS", "INTUNITARYSCAN"]
+    },
+    {
+      "id": "montelanza",
+      "kind": "entity",
+      "canonical_name": "Montelanza, S.L. / MONTE LANZA SOCIEDAD LIMITADA",
+      "routes": {"es": "montelanza-monte-lanza-sl", "en": "montelanza-monte-lanza-sl"},
+      "aliases": ["Montelanza, S.L.", "MONTE LANZA SOCIEDAD LIMITADA"],
+      "kicker": {"es": "PROPIEDAD/EXPLOTACIÓN HISTÓRICA · PUENTE DE IDENTIDAD ABIERTO", "en": "HISTORIC OWNERSHIP/OPERATION · OPEN IDENTITY BRIDGE"},
+      "headline": {"es": "Montelanza / MONTE LANZA: perímetro Sun Park y puente CIF–hoja pendiente", "en": "Montelanza / MONTE LANZA: Sun Park perimeter and outstanding tax-ID/sheet bridge"},
+      "lead": {"es": "El BOC usa Montelanza, S.L., CIF B35279850, para Hotel Apartamento Sun Park; el BORME usa MONTE LANZA SOCIEDAD LIMITADA, hoja GC1339, al publicar disolución en 2015 y extinción en 2018. El contexto sugiere continuidad, pero no se normalizan las grafías sin certificado que enlace NIF y hoja.", "en": "BOC uses Montelanza, S.L., CIF B35279850, for Hotel Apartamento Sun Park; BORME uses MONTE LANZA SOCIEDAD LIMITADA, sheet GC1339, when publishing dissolution in 2015 and extinction in 2018. Context suggests continuity, but spellings are not normalised without a certificate linking tax ID and sheet."},
+      "lanes": {
+        "verified": {"es": "BOC vincula Montelanza y su CIF con Sun Park. Las actas internas la sitúan como propietaria/entidad y en la explotación histórica. BORME publica disolución y extinción de la grafía separada MONTE LANZA.", "en": "BOC links Montelanza and its tax ID to Sun Park. Internal minutes place it as owner/entity and in historic operation. BORME publishes dissolution and extinction of the separated MONTE LANZA spelling."},
+        "attributed": {"es": "La posición del proyecto atribuye a Montelanza una función de propietaria/explotadora en la raíz del conflicto de 2008. No se presenta como venta de la sociedad, incumplimiento común ni causa única de la insolvencia.", "en": "The project position attributes to Montelanza an owner/operator function at the root of the 2008 dispute. It is not presented as a sale of the company, a common breach or the sole cause of insolvency."},
+        "open": {"es": "Faltan certificado NIF–hoja, contratos históricos, relación finca por finca y expediente completo de transmisión/explotación. No debe confundirse con Construcciones Montelanza 06, S.L.", "en": "A tax-ID/sheet certificate, historic contracts, unit-by-unit schedule and complete transfer/operation file remain outstanding. It must not be confused with Construcciones Montelanza 06, S.L."}
+      },
+      "timeline": [
+        {"date": "2008", "status": "official", "title": {"es": "Nombre BOC y Sun Park", "en": "BOC name and Sun Park"}, "body": {"es": "La publicación oficial identifica Montelanza, S.L., CIF B35279850, en relación con Hotel Apartamento Sun Park.", "en": "The official publication identifies Montelanza, S.L., CIF B35279850, in connection with Hotel Apartamento Sun Park."}, "sources": ["BOCMONTELANZA2008"]},
+        {"date": "2008–2014", "status": "internal", "title": {"es": "Perímetro histórico documentado", "en": "Documented historic perimeter"}, "body": {"es": "Los controles registran cesión de explotación a CEXP en 2008 y apariciones posteriores como entidad/propietaria; no cierran cada finca ni obligación.", "en": "Controls record a transfer of operation to CEXP in 2008 and later appearances as entity/owner; they do not close every unit or obligation."}, "sources": ["INTPERIMETER", "INTJV1260"]},
+        {"date": "2015 / 2018", "status": "official", "title": {"es": "Disolución y extinción de MONTE LANZA", "en": "Dissolution and extinction of MONTE LANZA"}, "body": {"es": "BORME publica los actos en la hoja GC1339. La identidad contextual probable no sustituye el certificado de enlace con el CIF del BOC.", "en": "BORME publishes the acts on sheet GC1339. Probable contextual identity does not replace a certificate linking it to the BOC tax ID."}, "sources": ["BORMEMONTELANZA2015", "BORMEMONTELANZA2018"]}
+      ],
+      "corrections": {"es": ["Montelanza y MONTE LANZA se muestran juntas sólo como identidad contextual probable, no como puente oficial cerrado.", "Se requiere certificado que una CIF B35279850 y hoja GC1339; no confundir con Construcciones Montelanza 06.", "La extinción publicada en 2018 impide presentar la sociedad BORME como vigente."], "en": ["Montelanza and MONTE LANZA are shown together only as probable contextual identity, not a closed official bridge.", "A certificate linking CIF B35279850 and sheet GC1339 is required; do not confuse it with Construcciones Montelanza 06.", "The 2018 published extinction prevents presenting the BORME company as current."]},
+      "questions": {"es": ["¿Qué certificación une CIF B35279850 con hoja GC1339?", "¿Qué fincas y contratos integraban su propiedad y explotación en cada fecha?", "¿Qué se transmitió a CEXP o terceros y qué permaneció separado?"], "en": ["Which certificate links CIF B35279850 to sheet GC1339?", "Which units and contracts formed its ownership and operation at each date?", "What was transferred to CEXP or third parties and what remained separate?"]},
+      "source_ids": ["BOCMONTELANZA2008", "BORMEMONTELANZA2015", "BORMEMONTELANZA2018", "INTPERIMETER", "INTJV1260", "INTENTITIES", "INTUNITARYSCAN"]
+    },
+    {
+      "id": "salinetas",
+      "kind": "entity",
+      "canonical_name": "Inversiones Salinetas, S.L.",
+      "routes": {"es": "inversiones-salinetas-sl", "en": "inversiones-salinetas-sl"},
+      "aliases": ["Inversiones Salinetas", "Inversiones Salineras"],
+      "official_gap": {"es": "La búsqueda oficial pública acotada no cerró identidad mercantil ni cadena de título.", "en": "The bounded official-public search did not close corporate identity or title chain."},
+      "kicker": {"es": "PROPIETARIA EN ACTAS · IDENTIDAD Y TÍTULO ABIERTOS", "en": "OWNER IN MINUTES · OPEN IDENTITY AND TITLE"},
+      "headline": {"es": "Inversiones Salinetas, S.L.: apariciones en actas y cadena registral pendiente", "en": "Inversiones Salinetas, S.L.: appearances in minutes and outstanding Registry chain"},
+      "lead": {"es": "Las actas internas la identifican como propietaria de unidades y locales en 2011 y registran a Antonio Cogolludo Rojas representándola en 2016. La búsqueda oficial pública actual no ha cerrado su forma mercantil, hoja, NIF ni cadena finca por finca; «Inversiones Salineras» se conserva sólo como variante oral/de recuperación.", "en": "Internal minutes identify it as owner of units and premises in 2011 and record Antonio Cogolludo Rojas representing it in 2016. The current official-public search has not closed its corporate form, sheet, tax ID or unit-by-unit chain; ‘Inversiones Salineras’ is retained only as an oral/retrieval variant."},
+      "lanes": {
+        "verified": {"es": "El acta de 22-Jun-2011 la lista con unidades 512–514, 902–905, 562–564 y locales 5 y 6; el mapa de 26-Apr-2016 registra representación por Antonio.", "en": "The 22-Jun-2011 minutes list it with units 512–514, 902–905, 562–564 and premises 5 and 6; the 26-Apr-2016 map records representation by Antonio."},
+        "attributed": {"es": "El relato oral cuestiona la titularidad posterior vinculada al local 5. Esa cuestión se conserva como pista: no prueba por sí sola propietario intermedio, falsedad, conocimiento o venta concreta.", "en": "The oral account disputes later title connected to premises 5. That issue is retained as a lead: it does not itself prove an intermediate owner, falsity, knowledge or a specific sale."},
+        "open": {"es": "Faltan certificado mercantil, notas simples históricas, escrituras y representación completa. Una venta registral posterior por otra parte no resuelve ni descarta por sí sola toda transmisión intermedia.", "en": "A company certificate, historic land-registry extracts, deeds and complete representation remain outstanding. A later registered sale by another party neither resolves nor excludes every intermediate transfer by itself."}
+      },
+      "timeline": [
+        {"date": "22 JUN 2011", "status": "internal", "title": {"es": "Propiedad reflejada en acta", "en": "Ownership reflected in minutes"}, "body": {"es": "El control del acta enumera la entidad y múltiples unidades/locales. Es evidencia del contenido del acta, no certificación registral actual.", "en": "The minutes control lists the entity and multiple units/premises. It is evidence of the minutes' content, not a current Registry certificate."}, "sources": ["INTPERIMETER", "INTENTITIES"]},
+        {"date": "26 APR 2016", "status": "internal", "title": {"es": "Representación por Antonio", "en": "Representation by Antonio"}, "body": {"es": "El mapa documental registra a Antonio Cogolludo Rojas representando a Inversiones Salinetas. No prueba titularidad personal de Antonio ni poder para otra fecha.", "en": "The documentary map records Antonio Cogolludo Rojas representing Inversiones Salinetas. It proves neither Antonio's personal title nor authority on another date."}, "sources": ["INTACTA2016"]},
+        {"date": "25 AUG 2026", "status": "internal", "title": {"es": "Resultado oficial no cerrado", "en": "Unclosed official result"}, "body": {"es": "El escaneo acotado no cerró forma, hoja o cadena de título. Es un resultado negativo limitado, no prueba de inexistencia.", "en": "The bounded scan did not close form, sheet or title chain. This is a limited negative result, not proof of non-existence."}, "sources": ["INTUNITARYSCAN"]}
+      ],
+      "corrections": {"es": ["La forma controlada en las actas es Inversiones Salinetas, S.L.; «Salineras» no es nombre oficial confirmado.", "El registro interno de unidades no sustituye notas simples o escrituras históricas.", "Representación por Antonio no equivale a propiedad, beneficio, conocimiento o autoridad fuera del acto fechado."], "en": ["The form controlled in the minutes is Inversiones Salinetas, S.L.; ‘Salineras’ is not a confirmed official name.", "The internal unit list does not replace historic land-registry extracts or deeds.", "Representation by Antonio is not ownership, benefit, knowledge or authority outside the dated act."]},
+      "questions": {"es": ["¿Qué certificado mercantil fija denominación, NIF y hoja?", "¿Qué escritura y nota simple histórica corresponde a cada unidad y al local 5?", "¿Qué poder sustentó la representación de 26-Apr-2016?"], "en": ["Which company certificate fixes name, tax ID and sheet?", "Which deed and historic land-registry extract corresponds to each unit and premises 5?", "Which power supported the 26-Apr-2016 representation?"]},
+      "source_ids": ["INTPERIMETER", "INTENTITIES", "INTACTA2016", "INTUNITARYSCAN"]
+    }
+  ],
+  "edges": [
+    {"from": "campanario", "to": "pamanil", "period": "2009–2011", "status": "internal", "proposition": {"es": "Campanario actuó en el perímetro de propietarios y gobierno comunitario anterior o coetáneo a la ratificación de Pamanil.", "en": "Campanario acted within the owner and Community-governance perimeter before or alongside Pamanil's ratification."}, "limit": {"es": "No se ha probado cargo, contrato o participación societaria de Campanario en Pamanil.", "en": "No office, contract or corporate participation by Campanario in Pamanil has been proved."}, "sources": ["INTJV1260", "INTCOMMUNICATIONS"]},
+    {"from": "campanario", "to": "prieto", "period": "2011–2014", "status": "attributed", "proposition": {"es": "La declarante describe un relevo práctico de Campanario por Prieto y López Noriega.", "en": "The declarant describes a practical handover from Campanario to Prieto and López Noriega."}, "limit": {"es": "No se ha localizado cesión de expediente, carta de relevo ni instrucción de cliente que pruebe el traspaso.", "en": "No file transfer, succession letter or client instruction proving the handover has been located."}, "sources": ["DECL011", "INTPERIMETER"]},
+    {"from": "campanario", "to": "noriega", "period": "2011–2014", "status": "attributed", "proposition": {"es": "La declarante describe un relevo práctico; ambos aparecen en la cronología de 2011, aunque con funciones documentales distintas.", "en": "The declarant describes a practical handover; both appear in the 2011 chronology, although in different documented functions."}, "limit": {"es": "La presencia de López Noriega en junio de 2011 contradice una sustitución simple iniciada solo después de 2012.", "en": "López Noriega's presence in June 2011 contradicts a simple substitution beginning only after 2012."}, "sources": ["DECL011", "INTPERIMETER"]},
+    {"from": "prieto", "to": "noriega", "period": "2014–2022", "status": "official", "proposition": {"es": "Socios profesionales y administradores mancomunados de MILLAN AND MINERS; ambos cesaron como administradores mancomunados en 2022.", "en": "Professional partners and joint administrators of MILLAN AND MINERS; both ceased as joint administrators in 2022."}, "limit": {"es": "El vínculo societario no identifica automáticamente cliente, asunto, conocimiento o intención.", "en": "The corporate link does not automatically identify client, matter, knowledge or intent."}, "sources": ["BORMEMILLAN2015", "BORMEMILLAN2022"]},
+    {"from": "prieto", "to": "millan", "period": "2014–2022+", "status": "official", "proposition": {"es": "Socio profesional y administrador mancomunado; administrador único desde el cambio inscrito en 2022.", "en": "Professional partner and joint administrator; sole administrator from the change registered in 2022."}, "limit": {"es": "No se afirma vigencia actual más allá del último asiento revisado ni que cada asunto jurídico pasara por la sociedad.", "en": "No current status beyond the latest reviewed filing is asserted, nor that every legal matter ran through the company."}, "sources": ["BORMEMILLAN2015", "BORMEMILLAN2022"]},
+    {"from": "noriega", "to": "millan", "period": "2014–2022", "status": "official", "proposition": {"es": "Socio profesional y administrador mancomunado hasta su cese inscrito en 2022.", "en": "Professional partner and joint administrator until his cessation registered in 2022."}, "limit": {"es": "El asiento no determina si continuó otra relación profesional fuera del órgano de administración.", "en": "The filing does not determine whether another professional relationship continued outside the governing body."}, "sources": ["BORMEMILLAN2015", "BORMEMILLAN2022"]},
+    {"from": "prieto", "to": "santa_lucia", "period": "2017–2021+", "status": "official", "proposition": {"es": "Administrador solidario inicial y apoderado desde el acto inscrito en 2021.", "en": "Initial several administrator and attorney-in-fact from the act registered in 2021."}, "limit": {"es": "El cargo no prueba actividad en Sun Park ni conexión directa con NOALPA o PAMALEXSHA.", "en": "The office does not prove activity at Sun Park or a direct connection with NOALPA or PAMALEXSHA."}, "sources": ["BORMESANTA2018", "BORMESANTA2021"]},
+    {"from": "antonio", "to": "santa_lucia", "period": "2017–2025", "status": "official", "proposition": {"es": "Administrador solidario inicial, administrador único desde 2021 y cese inscrito en 2025.", "en": "Initial several administrator, sole administrator from 2021 and cessation registered in 2025."}, "limit": {"es": "No se presenta como cargo actual ni se atribuye a la sociedad una actuación Sun Park sin documento específico.", "en": "It is not presented as a current office, and no Sun Park act is attributed to the company without a specific document."}, "sources": ["BORMESANTA2018", "BORMESANTA2021", "BORMESANTA2025"]},
+    {"from": "antonio", "to": "pamalexsha", "period": "2013", "status": "official", "proposition": {"es": "Administrador único inicial de PAMALEXSHA según su constitución.", "en": "Initial sole administrator of PAMALEXSHA according to its incorporation."}, "limit": {"es": "La ficha no presume continuidad indefinida ni cargo actual.", "en": "The record does not presume indefinite continuity or a current office."}, "sources": ["BORMEPAMALEXSHA2013"]},
+    {"from": "antonio", "to": "noalpa", "period": "2017", "status": "official", "proposition": {"es": "Administrador único inicial de EXPLOTACIONES NOALPA según su constitución.", "en": "Initial sole administrator of EXPLOTACIONES NOALPA according to its incorporation."}, "limit": {"es": "No se ha localizado vínculo operativo de NOALPA con Sun Park.", "en": "No operational NOALPA link to Sun Park has been located."}, "sources": ["BORMENOALPA2018"]},
+    {"from": "antonio", "to": "pamanil", "period": "2014–2015", "status": "internal", "proposition": {"es": "Los controles Sun Park lo sitúan en el perímetro Comunidad/Pamanil y representando a Cristina Molina Petit.", "en": "Sun Park controls place him within the Community/Pamanil perimeter and representing Cristina Molina Petit."}, "limit": {"es": "No se ha probado cargo societario suyo en PAMANIL.", "en": "No corporate office held by him in PAMANIL has been proved."}, "sources": ["INTPERIMETER", "INTACTORS"]},
+    {"from": "pamanil", "to": "pamalexsha", "period": "2016", "status": "internal", "proposition": {"es": "La documentación comunitaria muestra una transición de etiqueta/prestador y un presupuesto de Pamalexsha.", "en": "Community documents show a provider/label transition and a Pamalexsha budget."}, "limit": {"es": "No se ha probado fusión, sucesión universal, cesión íntegra de contrato, archivos, fondos, llaves u obligaciones.", "en": "No merger, universal succession or complete assignment of contract, files, funds, keys or obligations has been proved."}, "sources": ["INTACTA2016", "INTCOMMUNICATIONS"]},
+    {"from": "noalpa", "to": "pamalexsha", "period": "2017–2026", "status": "official", "proposition": {"es": "Los registros oficiales muestran un perímetro personal común: Antonio en las constituciones y Shaila con poderes inscritos en fechas posteriores.", "en": "Official filings show a shared personal perimeter: Antonio at incorporation and Shaila through powers registered at later dates."}, "limit": {"es": "No prueba grupo societario, dirección unitaria, contrato entre ambas ni finalidad común.", "en": "It does not prove a corporate group, unified direction, a contract between them or common purpose."}, "sources": ["BORMEPAMALEXSHA2013", "BORMEPAMALEXSHA2026", "BORMENOALPA2018", "BORMENOALPA2022"]},
+    {"from": "shaila", "to": "noalpa", "period": "2021+", "status": "official", "proposition": {"es": "Poder de Shaila inscrito el 28-Dec-2021.", "en": "Shaila's power was registered on 28-Dec-2021."}, "limit": {"es": "No prueba autoridad anterior, actuación Sun Park, parentesco ni coordinación.", "en": "It does not prove earlier authority, a Sun Park act, kinship or coordination."}, "sources": ["BORMENOALPA2022"]},
+    {"from": "shaila", "to": "pamalexsha", "period": "2026+", "status": "official", "proposition": {"es": "Poder de Shaila inscrito el 16-Jul-2026.", "en": "Shaila's power was registered on 16-Jul-2026."}, "limit": {"es": "No se retrotrae a 2014, 2016 o 2018.", "en": "It is not backdated to 2014, 2016 or 2018."}, "sources": ["BORMEPAMALEXSHA2026"]},
+    {"from": "shaila", "to": "pamanil", "period": "2014–2016", "status": "internal", "proposition": {"es": "Los controles registran comunicaciones firmadas dentro del perímetro Pamanil/Comunidad.", "en": "Controls record communications signed within the Pamanil/Community perimeter."}, "limit": {"es": "No prueba cargo societario, contrato íntegro ni facultad universal.", "en": "It does not prove a corporate office, complete contract or universal authority."}, "sources": ["INTCOMMUNICATIONS", "INTACTORS"]},
+    {"from": "fmmm", "to": "shaila", "period": "2014–2016", "status": "internal", "proposition": {"es": "Ambos aparecen como firmantes/actores de comunicaciones Comunidad/Pamanil.", "en": "Both appear as signatories/actors in Community/Pamanil communications."}, "limit": {"es": "La aparición conjunta no prueba parentesco, empresa común, conocimiento o intención compartida.", "en": "Joint appearance does not prove kinship, a common company, knowledge or shared intent."}, "sources": ["INTCOMMUNICATIONS", "INTACTORS"]},
+    {"from": "fmmm", "to": "pamanil", "period": "2011–2016", "status": "internal", "proposition": {"es": "Los controles lo sitúan en administración Comunidad/Pamanil y comunicaciones fechadas.", "en": "Controls place him in Community/Pamanil administration and dated communications."}, "limit": {"es": "Cada poder, contrato, actuación y resultado requiere su fuente primaria.", "en": "Each power, contract, act and result requires its primary source."}, "sources": ["INTACTORS", "INTCOMMUNICATIONS"]},
+    {"from": "fmmm", "to": "pamalexsha", "period": "2016+", "status": "internal", "proposition": {"es": "Las fuentes describen continuidad funcional al aparecer Pamalexsha en la administración comunitaria.", "en": "Sources describe functional continuity when Pamalexsha appears in Community administration."}, "limit": {"es": "No prueba cargo societario de FMMM, sucesión jurídica ni finalidad común.", "en": "It does not prove FMMM's corporate office, legal succession or common purpose."}, "sources": ["INTACTA2016", "INTACTORS"]},
+    {"from": "campanario", "to": "rodriguez_batllori", "period": "2012+", "status": "attributed", "proposition": {"es": "La declaración atribuye amistad y relaciona la designación concursal con Campanario.", "en": "The statement attributes friendship and links the insolvency appointment to Campanario."}, "limit": {"es": "No se ha localizado prueba independiente de amistad, intervención, coordinación, plan o motivo.", "en": "No independent proof of friendship, intervention, coordination, plan or motive has been located."}, "sources": ["DECL011", "INTACTORS"]},
+    {"from": "asuncion", "to": "campanario", "period": "2 FEB 2011", "status": "internal", "proposition": {"es": "Aizpurúa presidió y Campanario fue secretario de la junta; después ella fue elegida presidenta.", "en": "Aizpurúa chaired and Campanario served as meeting secretary; she was then elected president."}, "limit": {"es": "Los cargos de reunión no prueban acuerdo ilícito, conocimiento compartido o responsabilidad conjunta.", "en": "Meeting offices do not prove an unlawful agreement, shared knowledge or joint responsibility."}, "sources": ["INTJV1260"]},
+    {"from": "asuncion", "to": "prieto", "period": "2014–2015", "status": "internal", "proposition": {"es": "El registro de 2014 identifica a Prieto representando a AAS/Roque Prieto.", "en": "The 2014 record identifies Prieto representing AAS/Roque Prieto."}, "limit": {"es": "No prueba mandato universal, continuidad indefinida ni conflicto profesional.", "en": "It does not prove a universal retainer, indefinite continuity or professional conflict."}, "sources": ["INTPERIMETER"]},
+    {"from": "asuncion", "to": "pamanil", "period": "2011", "status": "internal", "proposition": {"es": "La junta presidida por Aizpurúa trató y registró la ratificación de Pamanil.", "en": "The meeting chaired by Aizpurúa addressed and recorded Pamanil's ratification."}, "limit": {"es": "No prueba contrato íntegro, prestación completa o validez definitiva.", "en": "It does not prove a complete contract, full performance or final validity."}, "sources": ["INTJV1260", "INTCOMMUNICATIONS"]},
+    {"from": "asuncion", "to": "montelanza", "period": "2011–2015", "status": "internal", "proposition": {"es": "Ambas aparecen en el perímetro comunitario, con Montelanza representada separadamente.", "en": "Both appear in the Community perimeter, with Montelanza separately represented."}, "limit": {"es": "No se atribuye a Aizpurúa representación de Montelanza ni se fusionan sus intereses.", "en": "Aizpurúa is not attributed representation of Montelanza and their interests are not merged."}, "sources": ["INTPERIMETER"]},
+    {"from": "antonio", "to": "salinetas", "period": "26 APR 2016", "status": "internal", "proposition": {"es": "El mapa documental registra a Antonio representando a Inversiones Salinetas.", "en": "The documentary map records Antonio representing Inversiones Salinetas."}, "limit": {"es": "No prueba propiedad personal, poder en otra fecha ni cadena registral.", "en": "It does not prove personal ownership, authority on another date or Registry chain."}, "sources": ["INTACTA2016", "INTPERIMETER"]}
+  ]
+}

@@ -6,9 +6,9 @@ Use this instruction in any thread where a first-person account, testimony, voic
 
 **Turn the account above into a formal Statement of Truth / Declaración de Veracidad for the permanent Por Derecho evidence repository. Treat this as an execution task, not merely a drafting task.**
 
-1. **Recover the complete source first.** Use the current conversation, connected files/library, email or repository material as needed. Do not rely on a partial summary when the underlying account, transcript, audio-derived working transcript, declaration, email or attachment is available.
+1. **Recover the complete source first.** Read `./VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`. Use the current conversation, connected files/library, email or repository material as needed. Do not rely on a partial summary when the underlying account, transcript, audio-derived working transcript, declaration, email or attachment is available. If the speaker says more audio will follow or asks that analysis wait, preserve intake and stop until an express close; silence or interruption is not closure.
 
-2. **Preserve the declarant’s first-person account faithfully.** Do not add facts merely because they fit the theory of the case. Where the declarant is a private person whose identity is reserved in the public repository, preserve the legal identity in the private/native evidence record but use the approved public descriptor in GitHub and website text.
+2. **Preserve the declarant’s account faithfully and label the source mode.** Use first person only for verbatim source wording or text the declarant has reviewed/adopted. For an editorial synthesis that is not personally reviewed, use an attributed or third-person source-derived account and do not attach a first-person truth clause. Do not add facts merely because they fit the theory of the case. Where the declarant is a private person whose identity is reserved in the public repository, preserve the legal identity in the private/native evidence record but use the approved public descriptor in GitHub and website text.
 
 3. **Apply the public privacy rule before naming the file.** Read `../ANONYMISATION_AND_LPAM_NAMING_CONTROL_17AUG2026.md`. For the witness from Gil Marer's personal and business perimeter, use `Witness from Gil Marer's perimeter — identity reserved` / `Testigo del perímetro de Gil Marer — identidad reservada`. Do not expose the legal name in a public filename or index merely for narrative convenience.
 
@@ -22,6 +22,11 @@ Use this instruction in any thread where a first-person account, testimony, voic
    - **(c) knowledge derived from identified documents**;
    - **(d) reasonable inference, concern or working hypothesis**;
    - **(e) a matter requiring verification**.
+
+   Assign a stable proposition ID where the point is material or disputed, and
+   record speaker, source, period, corroboration, contrary evidence, adoption
+   state and closure action. Keep different speakers in different first-person
+   records unless each expressly adopts the same identified proposition.
 
 7. **Do not strengthen allegations beyond the evidence.** Do not silently convert suspicion into fact, corporate conduct into personal conduct, an entity into an individual, later benefit into earlier knowledge, or absence of evidence into evidence of absence.
 
@@ -42,6 +47,8 @@ Use this instruction in any thread where a first-person account, testimony, voic
     - create a privacy-compliant public filename (for an anonymised Gil-perimeter witness: `archive/declarations/NNN_WITNESS_GIL_PERIMETER_TEMA_AAAAMMDD.md`);
     - update `archive/declarations/INDEX.md` in the same change;
     - preserve hashes and REGAGE/RedSARA references where available without unnecessarily exposing private filenames/identifiers;
+    - keep native audio, complete working transcripts, private email bodies/subjects/recipients and provider IDs in the private evidence manifest, never in public Git merely through compression or encoding;
+    - apply `../OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md` before resolving a person's name, company, role or relationship;
     - never overwrite or silently rewrite a material prior declaration: supplement or version it transparently.
 
 14. **Use the protected-branch workflow.** Create or refresh a dedicated branch from current `main`, commit the declaration and index/rule changes, open a pull request, review the diff for evidential overstatement and privacy leakage, and merge when repository permissions and checks permit. After merge, verify the declaration and `INDEX.md` on `main`.

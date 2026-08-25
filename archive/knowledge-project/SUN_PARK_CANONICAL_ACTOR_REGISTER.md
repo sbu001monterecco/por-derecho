@@ -1,9 +1,9 @@
 # Sun Park canonical actor register
 
-**Control date:** 19 August 2026  
+**Control date:** 25 August 2026
 **Official-public-source identity/corporate reconciliation:** 25 August 2026
 **Status:** canonical first-saturation register; continuing verification required  
-**Rule:** `earliest proved involvement` means **involved no later than that date**. It is not necessarily the true first day.
+**Rule:** `earliest proved involvement` means **involved no later than that date**. It is not necessarily the true first day. Where an earlier date proves only external professional activity, the register labels it `professional-public trace` rather than Sun Park involvement.
 
 ## High-priority locked actor records
 
@@ -41,23 +41,36 @@
 - **Project relationship lock:** father of Shaila María Cogolludo Ramos. The bounded 24-Aug official corporate-source screen did not independently prove kinship; preserve the underlying project source class and do not present the relationship as a BORME finding.
 - **Former `2018` start:** `SUPERSEDED`.
 
-## Official-public-source identity and corporate boundary — 24 August 2026
+## Official-public-source identity and corporate boundary — 25 August 2026
 
 This is a bounded official/public-source overlay, not a replacement for the source-specific Sun Park minutes, emails, pleadings or relationship controls above.
 
 ### Exact-name locks
 
-- **Francisco Mario Matos Matas** is the canonical FMMM identity. Do not equate him with the separately published shorter name **Francisco Matos Matas** without DNI, Registry continuity or another independent identity bridge.
+- **Francisco Mario Matos Matas** is the project-canonical FMMM identity. Official BORME is internally inconsistent: a 1-Mar-2024 act on sheet GC61036 prints **Francisco Mario Matos Mata**, while later same-company/related 2024 acts print **Matas**. Same-sheet continuity makes a publication error plausible but does not close it without DNI or a certified history. Do not equate him with the separately published shorter name **Francisco Matos Matas** without an independent identity bridge. [MATA act](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-49-35); [MATAS Orion act](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35); [MATAS AGM act](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-98-35).
 - **Antonio Cogolludo Rojas** is the official BORME form. `Cogoyudo` is not an accepted variant.
 - **Shaila María Cogolludo Ramos** is the official BORME form. Do not use `Shayla` or `Cogoyudo`.
+- **Álvaro Campanario Hernández**, **Juan Carlos Prieto Puente** and **Esteban López Noriega** are the controlled full names. `Juan Carlos Roque Prieto`, `Juan Carlos Esloque Prieto`, `Esteban Muriega` and `Esteban Noruega` are not accepted identities; **Roque Prieto, S.L.** remains a separate legal person.
+- The exact registered firm name is **MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL**. `Millán & Miners`, `Millen and Miners` and `Millennium Miners` are retrieval/source variants, not the registered denomination.
 - The exact company name is **ORION RENTAL SOCIMI, S.A.**; do not use `Orion Sosimi Rental`, `Sosimi Rental` or another reordered form.
 
-### Two official corporate clusters
+### Official corporate clusters
 
 | Cluster | Officially verified public connection | Sources and limit |
 |---|---|---|
 | **A — FMMM / Orion / AGM / JDAM** | BORME records FMMM and José Daniel Acosta Matos as directors of ORION RENTAL SOCIMI, S.A. and later as power-holders of AGM CANARY ASSET MANAGEMENT, S.L. | [Orion appointments](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35); [AGM name/powers](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-98-35); [CNMV Orion identity](https://www.cnmv.es/portal/ancv/isin?isin=ES0105829008&lang=es). These roles do not prove earlier Sun Park coordination or criminality. |
-| **B — Antonio / Shaila / Pamalexsha / Noalpa / Santa Lucia** | BORME records Antonio in administrator roles and Shaila in apoderada roles across Pamalexsha/Noalpa; BORME records Antonio at Santa Lucia Real Estate. A Canary Government release separately describes Shaila as owner of the promoting company in that housing context. | [Pamalexsha formation](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35); [Noalpa formation](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35); [Shaila/Noalpa](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35); [Shaila/Pamalexsha](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35); [Antonio/Santa Lucia](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35); [Government release](https://www3.gobiernodecanarias.org/noticias/el-gobierno-materializa-la-colaboracion-publico-privada-con-la-calificacion-de-132-inmuebles-protegidos/). Attribute the ownership description to the Government; BORME does not prove it. |
+| **B — Antonio / Shaila / Pamalexsha / Noalpa / Santa Lucia** | BORME records Antonio as sole administrator of Pamalexsha from its 2013 formation and of Noalpa from its 2017 formation; Shaila appears later as apoderada of Noalpa (2021 act) and Pamalexsha (2026 act). BORME also records Antonio and Juan Carlos Prieto Puente together as solidary administrators of Santa Lucia Real Estate from its formation, then Antonio as sole administrator and Prieto as apoderado in 2021. A Canary Government release separately describes Shaila as owner of the promoting company in that housing context. | [Pamalexsha formation](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35); [Noalpa formation](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35); [Shaila/Noalpa](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35); [Shaila/Pamalexsha](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35); [Santa Lucia formation](https://www.boe.es/borme/dias/2018/02/07/pdfs/BORME-A-2018-27-35.pdf); [Santa Lucia 2021 changes](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35); [Government release](https://www3.gobiernodecanarias.org/noticias/el-gobierno-materializa-la-colaboracion-publico-privada-con-la-calificacion-de-132-inmuebles-protegidos/). Attribute the ownership description to the Government; BORME does not prove it. The corporate link does not itself establish a Sun Park mandate, conflict or unlawful coordination. |
+| **C — Prieto / López Noriega / Millan and Miners** | The firm began operations on 2 Apr 2014. Its 21-May-2015 incorporation registration names Juan Carlos Prieto Puente and Esteban López Noriega as both professional partners and joint administrators. On 17 Nov 2022 both ceased as joint administrators and Prieto became sole administrator. | [2015 incorporation act](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35); [2022 administration change](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-225-35). The company did not yet exist in 2011; the filing therefore cannot prove that the firm, as a legal person, held any 2011 mandate. |
+
+### Álvaro Campanario Hernández — bounded official chronology and limits
+
+- **1995 — earliest official/professional-public trace located:** ICALPA's *El Foro Canario*, no. 90 (1995), lists an article by Álvaro Campanario Hernández. This proves name/authorship in that professional publication, not a Sun Park role. [ICALPA issue index](https://www.icalpa.es/biblioteca/el_foro_canario_2).
+- **Exact-year 2000 scan:** the bounded exact-name scan of the two ICALPA issues listed for 2000 and the searched official BOE surface located no exact hit. This is a documented search gap, **not** proof that he had no professional activity in 2000.
+- **2004:** ICALPA's no. 99 (2004) lists a second article by the same full name. [ICALPA issue index](https://www.icalpa.es/biblioteca/el_foro_canario).
+- **2009:** official BOE/BORME notices identify him as a lawyer appointed insolvency administrator by resolution of 19 Mar 2009. [BOE court notice](https://www.boe.es/diario_boe/txt.php?id=BOE-B-2009-13752); [BORME registry act](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2009-81-35).
+- **Sun Park-specific role:** the controlled AP 89/2014 judgment identifies him as counsel for the named JV 1260/2011 appellants. That proceeding-specific source does not establish that he represented every dissident owner, the Community, or Pamanil in every matter.
+- **Chronology correction:** the official 2009 appointment prevents wording that he first became an insolvency administrator only after the 2011 Sun Park governance events.
+- **Unproved propositions:** no authoritative public source was located proving friendship with Francisco de Borja Rodríguez-Batllori Laffitte, a formal handover to Prieto/López Noriega, or a motive to cause or anticipate LPB's insolvency. Preserve those propositions only as attributed recollection/allegation or inference pending primary proof.
 
 ### No proved public co-company bridge
 
@@ -73,8 +86,8 @@ This boundary does not delete internal Sun Park working relationships or Gil Mar
 | P002 | **Patricia Isabel Domínguez Montelongo** | owner/project-side principal | Interpreter in 2014 notarial act; Project-side correspondence, evidence custodian and representative | 2011/2012 (exact first documentary date to refine) | `LOCKED_CANONICAL` | S2, S3, S4, S5, S8 |
 | P003 | **Asunción Aizpurúa Sánchez** | Community/owner faction | President of Comunidad de Propietarios Sun Park by 2 Feb 2011; Representative of Roque Prieto, S.L.; Representative of multiple owners at 22 Jun 2011 meeting | 2011-02-02 | `LOCKED_CANONICAL` | S1, S3, S4, S5, S7 |
 | P004 | **Francisco Mario Matos Matas** | Community/Pamanil control | Administrator of the Community by 22 Jun 2011; Administrator of Pamanil, S.L.; Pamanil signatory and Community communications actor | 2011-06-22 | `LOCKED_MINIMUM_DATE` | S1, S2, S5, S10, S11 |
-| P005 | **Antonio Cogolludo Rojas** | Community/Pamanil control | Represented Cristina Molina Petit at 10 Apr 2014 Community meeting; Described contemporaneously as assistant to FMMM in Pamanil, S.L.; Later access/security and business-perimeter roles require act-by-act dating | 2014-04-10 | `LOCKED_MINIMUM_DATE` | S3, S4, S5, S10, S11 |
-| P006 | **Shaila María Cogolludo Ramos** | Community/Pamanil control | Named signatory of Pamanil Community communication on 8 Apr 2014; Continuing Pamanil/Community communications role in Apr 2016; Later Community administration/control role | 2014-04-08 | `LOCKED_MINIMUM_DATE` | S2, S9, S10, S11 |
+| P005 | **Antonio Cogolludo Rojas** | Community/Pamanil control | Represented Cristina Molina Petit at 10 Apr 2014 Community meeting; described contemporaneously as assistant to FMMM in Pamanil, S.L.; official later roles include sole administrator of Pamalexsha and Noalpa and 2018–2021 solidary co-administration of Santa Lucia Real Estate with Juan Carlos Prieto Puente; later access/security roles require act-by-act dating | 2014-04-10 | `LOCKED_MINIMUM_DATE` | S3, S4, S5, S10, S11; official BORME links above |
+| P006 | **Shaila María Cogolludo Ramos** | Community/Pamanil control | Named signatory of Pamanil Community communication on 8 Apr 2014; continuing Pamanil/Community communications role in Apr 2016; later Community administration/control role; official later roles include apoderada of Noalpa by the 28-Dec-2021 act and of Pamalexsha by the 16-Jul-2026 act | 2014-04-08 | `LOCKED_MINIMUM_DATE` | S2, S9, S10, S11; official BORME links above |
 | P007 | **Francisco Molina** | Molina/owner cluster | Owner represented by AAS at 22 Jun 2011 meeting; units 503 and 908 | 2011-06-22 | `PROVISIONAL` | S1 |
 | P008 | **Francisco Luis Molina Molina** | Molina/owner cluster | Owner/faction participant named in 2015 act and 2018 conflict list | 2015-11-19 | `PROVISIONAL` | S4, S11 |
 | P009 | **Miguel Molina** | Molina/owner cluster | Owner represented by AAS at 22 Jun 2011 meeting; unit 911 | 2011-06-22 | `PROVISIONAL` | S1 |
@@ -126,9 +139,9 @@ This boundary does not delete internal Sun Park working relationships or Gil Mar
 | P055 | **Ángeles San Gregorio** | LPB representative | Represented LPB with Juan Rivera/Rivero at 2011 meeting | 2011-06-22 | `LOCKED_MINIMUM_DATE` | S1 |
 | P056 | **Pablo Rivero Correa** | owner representative | Represented José Sánchez Peñate, Montelanza and local owners in 2011 | 2011-06-22 | `LOCKED_MINIMUM_DATE` | S1 |
 | P057 | **Antonio Peñate** | owner/entity representative | Represented J.S.P. and Montelanza at 10 Apr 2014 meeting | 2014-04-10 | `LOCKED_MINIMUM_DATE` | S3 |
-| P058 | **Álvaro Campanario Hernández** | Community/Pamanil-adjacent professional | Named in 2014 act allegations and 2018 conflict list; exact professional role requires source-by-source reconstruction | 2014-08-28 | `PROVISIONAL` | S13, S11 |
-| P059 | **Juan Carlos Prieto Puente** | lawyer/representative | Represented AAS / Roque Prieto at 10 Apr 2014 meeting; Community/Molina-side lawyer in later records | 2014-04-10 | `LOCKED_CANONICAL` | S3, S4, S5, S11 |
-| P060 | **Esteban López Noriega** | lawyer | Lawyer invited by Community administrator at 22 Jun 2011 meeting; Counsel for AAS group by Jul 2015 correspondence | 2011-06-22 | `LOCKED_CANONICAL` | S1, S4, S5, S11 |
+| P058 | **Álvaro Campanario Hernández** | lawyer / Community-adjacent professional | Official/professional-public trace by ICALPA in 1995 and 2004; officially appointed as insolvency administrator in 2009; AP 89/2014 identifies him as counsel for the named JV 1260/2011 appellants; exact client and matter perimeter requires source-by-source reconstruction | 1995 (professional-public trace; not Sun Park involvement) | `LOCKED_CANONICAL` | S13, S11; ICALPA 1995/2004; BOE/BORME 2009; controlled AP 89/2014 |
+| P059 | **Juan Carlos Prieto Puente** | lawyer/representative | Represented AAS / Roque Prieto at 10 Apr 2014 meeting; Community/Molina-side lawyer in later records; professional partner and joint administrator of Millan and Miners on registration, sole administrator from 17 Nov 2022; solidary co-administrator of Santa Lucia Real Estate with Antonio Cogolludo from formation and apoderado from 18 May 2021 | 2014-04-10 | `LOCKED_CANONICAL` | S3, S4, S5, S11; official BORME links above |
+| P060 | **Esteban López Noriega** | lawyer | Officially named as a lawyer insolvency administrator in Dec 2008; lawyer invited by Community administrator at 22 Jun 2011 meeting; counsel for AAS group by Jul 2015 correspondence; professional partner and joint administrator of Millan and Miners on registration, ceasing that administrator role on 17 Nov 2022 | 2008-12 (official professional trace; Sun Park by 2011-06-22) | `LOCKED_CANONICAL` | S1, S4, S5, S11; [BOE 2008](https://www.boe.es/boe/dias/2008/12/31/pdfs/B15479-15480.pdf); official Millan and Miners BORME links above |
 | P061 | **Sandra Renee Holder** | interpreter | Interpreter in 10 Apr 2014 notarial act | 2014-04-10 | `LOCKED_MINIMUM_DATE` | S3 |
 | P062 | **Javier Jiménez Cerrajería** | notary | Notary authorising 10 Apr 2014 act in Yaiza-Playa Blanca | 2014-04-10 | `LOCKED_CANONICAL` | S3 |
 | P063 | **Carmen Martínez Socias** | notary | Notary referenced for LPB incorporation deed of 23 May 2008 | 2008-05-23 | `PROVISIONAL` | S13 |
