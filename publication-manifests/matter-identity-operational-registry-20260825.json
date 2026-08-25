@@ -2,14 +2,22 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "matter-identity-operational-registry-20260825",
   "control_date": "2026-08-25",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
-  "status": "prepared_in_pr",
+  "status": "live_verified",
   "package": "matter-identity-operational-registry",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
   "operational_control_id": "PD-SP-IDENTITY-OPS-001",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
   "linked_execution_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988",
+  "live_verification": {
+    "source_pull_request": 998,
+    "merge_commit": "30887f6db66c31e55aaef43ac5cc355c0d647e3f",
+    "workflow": "Verify operational matter identity registry",
+    "workflow_run_id": 32873813105,
+    "verified_at": "2026-08-25T16:46:21Z",
+    "result": "SUCCESS"
+  },
   "expected_routes": {
     "es": ["es/registro-identidad-materia/index.html"],
     "en": ["en/matter-identity-registry/index.html"]
