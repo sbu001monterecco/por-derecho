@@ -1,0 +1,134 @@
+name: Verify criminal-first institutional action live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/index.html'
+      - 'en/unitary-criminal-hypothesis-2011-present/institutional-action/index.html'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html'
+      - 'en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html'
+      - 'assets/data/criminal-first-institutional-action-matrix-v1.json'
+      - 'archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md'
+      - 'assets/institutional-action.css'
+      - 'assets/criminal-first-action-pressure-20260825.js'
+      - 'assets/intervencion-protected-assets-highlight-20260820.js'
+      - 'sitemap-criminal-first-action.xml'
+      - 'robots.txt'
+      - 'publication-manifests/criminal-first-institutional-action-20260825.json'
+      - '.github/workflows/verify-criminal-first-institutional-action-live.yml'
+  pull_request:
+    paths:
+      - 'es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/index.html'
+      - 'en/unitary-criminal-hypothesis-2011-present/institutional-action/index.html'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html'
+      - 'en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html'
+      - 'assets/data/criminal-first-institutional-action-matrix-v1.json'
+      - 'archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md'
+      - 'assets/institutional-action.css'
+      - 'assets/criminal-first-action-pressure-20260825.js'
+      - 'assets/intervencion-protected-assets-highlight-20260820.js'
+      - 'sitemap-criminal-first-action.xml'
+      - 'robots.txt'
+      - 'publication-manifests/criminal-first-institutional-action-20260825.json'
+      - '.github/workflows/verify-criminal-first-institutional-action-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Validate source package and immutable action IDs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/index.html
+          test -f en/unitary-criminal-hypothesis-2011-present/institutional-action/index.html
+          test -f es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html
+          test -f en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html
+          test -f assets/data/criminal-first-institutional-action-matrix-v1.json
+          test -f archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
+          grep -Fq 'PD-SP-ACTION-2011-CONVERGENCE-001' es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/index.html
+          grep -Fq 'PD-SP-ACTION-2011-CONVERGENCE-001' en/unitary-criminal-hypothesis-2011-present/institutional-action/index.html
+          grep -Fq 'PD-SP-ACT-0001' assets/data/criminal-first-institutional-action-matrix-v1.json
+          grep -Fq 'PD-SP-ACT-0015' assets/data/criminal-first-institutional-action-matrix-v1.json
+          grep -Fq 'PRESERVE' archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
+          grep -Fq 'DISCLOSE' archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
+          grep -Fq 'EXPLAIN' archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
+          grep -Fq 'INVESTIGATE' archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
+          grep -Fq 'RECOVER' archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
+
+      - name: Verify public Pages routes and exact markers
+        if: github.event_name != 'pull_request'
+        env:
+          BASE: https://sbu001monterecco.github.io/por-derecho
+        shell: python
+        run: |
+          import os, time, urllib.request
+
+          base = os.environ['BASE'].rstrip('/')
+          checks = [
+              ('/es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/', ['PD-SP-ACTION-2011-CONVERGENCE-001', 'Preservar. Entregar. Explicar. Investigar. Recuperar.']),
+              ('/en/unitary-criminal-hypothesis-2011-present/institutional-action/', ['PD-SP-ACTION-2011-CONVERGENCE-001', 'Preserve. Disclose. Explain. Investigate. Recover.']),
+              ('/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/', ['Activar preservación e investigación', 'PD-SP-ACTION-2011-CONVERGENCE-001']),
+              ('/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/', ['Activate preservation and investigation', 'PD-SP-ACTION-2011-CONVERGENCE-001']),
+              ('/assets/data/criminal-first-institutional-action-matrix-v1.json', ['PD-SP-ACT-0001', 'PD-SP-ACT-0015']),
+              ('/archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md', ['PRESERVE', 'RECOVER']),
+              ('/sitemap-criminal-first-action.xml', ['accion-institucional', 'institutional-action']),
+              ('/robots.txt', ['sitemap-criminal-first-action.xml']),
+              ('/assets/criminal-first-action-pressure-20260825.js', ['data-criminal-first-action-pressure', 'Open immediate institutional action']),
+              ('/assets/institutional-action.css', ['.ia-pressure', '.ia-table']),
+              ('/assets/intervencion-protected-assets-highlight-20260820.js', ['criminal-first-action-pressure-20260825.js']),
+          ]
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={'User-Agent': 'por-derecho-criminal-first-live-verifier/1'})
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  body = response.read().decode('utf-8', errors='replace')
+                  if response.status != 200:
+                      raise RuntimeError(f'HTTP {response.status}')
+                  return body
+
+          failures = []
+          for path, markers in checks:
+              url = base + path
+              last = None
+              for attempt in range(12):
+                  try:
+                      body = fetch(url)
+                      missing = [marker for marker in markers if marker not in body]
+                      if not missing:
+                          print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers')
+                          break
+                      last = f'missing markers {missing}'
+                  except Exception as exc:
+                      last = str(exc)
+                  time.sleep(10)
+              else:
+                  failures.append(f'{url}: {last}')
+          if failures:
+              raise SystemExit('LIVE VERIFICATION FAILED\n - ' + '\n - '.join(failures))
+
+      - name: Publish verification summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '## Criminal-first institutional action verification'
+            echo
+            echo "- Event: $GITHUB_EVENT_NAME"
+            echo "- SHA: $GITHUB_SHA"
+            echo '- Control: `PD-SP-ACTION-2011-CONVERGENCE-001`'
+            if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
+              echo '- Source package and action IDs verified; public readback is reserved for the post-merge push.'
+            else
+              echo '- Public Spanish/English hubs, convergence pages, matrix, protocol, sitemap, robots and gateway assets verified by exact markers.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
