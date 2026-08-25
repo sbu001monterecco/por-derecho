@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "publication_id": "FISCALIA_DIP2_JUDICIAL_COMPLAINT_EXTENSION_20260825",
   "owner": "Gil Marer / Por Derecho",
-  "current_state": "DRAFT",
-  "status": "LOCAL_VALIDATED",
+  "current_state": "DELETION_SAFE",
+  "status": "LIVE_VERIFIED",
   "authority": "User instruction of 25 August 2026 to publish the complete June judicial complaint and amplification, integrate them with the DIP 2/2026 record, analyse the alleged conduct and publish an attributed request for independent audit",
   "base_sha": "10bc0c2712cdc04f2b6f46034adcc54b1fba209f",
   "branch": "codex/dip2-judge-complaint-20260825",
@@ -84,13 +84,60 @@
     "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
     "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png"
   ],
-  "pull_request": null,
-  "merge_sha": null,
-  "deployment_evidence": null,
-  "live_urls": [],
-  "live_verification_evidence": null,
+  "pull_request": 964,
+  "merge_sha": "3035cff2a8a3c1cbc0ad6443a54af41372e228f7",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 32826806480,
+    "status": "success",
+    "head_sha": "3035cff2a8a3c1cbc0ad6443a54af41372e228f7",
+    "tree_sha": "5ee080d978c091965ca133393942ea24b3ad93e6",
+    "completed_at": "2026-08-25T08:29:23Z",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32826806480"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-dip-2-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/fiscalia-dip-2-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/judicial-governance/decanato-reference-24/public-pdfs/denuncia-magistrado-18jun2026-public-redacted.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/judicial-governance/decanato-reference-24/public-pdfs/ampliacion-denuncia-magistrado-25jun2026-public-redacted.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-EN.png"
+  ],
+  "live_verification_evidence": {
+    "result": "16/16 HTTP 200 AND BYTE-FOR-BYTE MATCH",
+    "verified_at": "2026-08-25T08:34:41Z",
+    "post_merge_workflows": "18/18 completed successfully for the exact merge SHA",
+    "sha256": {
+      "es/fiscalia-dip-2-2026/index.html": "cdddd2364a894fd4e5f36e6b195ea5e4538a5b74a6d0fda996959a784944c53a",
+      "en/fiscalia-dip-2-2026/index.html": "0d937b5d58470ee1ce906b498b4f13dd7f81c73cff09de6a534fa19fbbb6eb6f",
+      "evidence/judicial-governance/decanato-reference-24/public-pdfs/denuncia-magistrado-18jun2026-public-redacted.pdf": "dcc4ebc473d76475ae3dbbae10ea261adea4b1a99efa7e2a650c61338f61eebe",
+      "evidence/judicial-governance/decanato-reference-24/public-pdfs/ampliacion-denuncia-magistrado-25jun2026-public-redacted.pdf": "73bd17df1b2bceb17c33fb1dbdee656a73faf2aaebbb14021bd4fd1c823cb4ed",
+      "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md": "28ab9bbebecb967562610f8b694f7e4eabff7453c96064c119a781ba0d2983bc",
+      "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md": "b93487a039174d5d19e5c7a9f04d104f480080fe047f2bec6e5cecb45a9e942c",
+      "es/index.html": "71b232f1863de4a532ac328577c0af92302064292bfaf8ea23bf95dbc2a03f0a",
+      "en/index.html": "2c03afc5b3513471212a3cd483a5f0154041d49b8a0f166faf2571e16e181747",
+      "es/actualizaciones/index.html": "f70b3fe27897cd26f9079e26acd74f705024923f2dc59ef472016747f9015078",
+      "en/updates/index.html": "06c588d7c66d3364bd19951e10900a6feac55254d7c5c115f36c4abbb8825d4c",
+      "es/actualizaciones/feed.xml": "527d6f612d988b6f8021f3436baf9c2a5812426f450b506729196aa08587d849",
+      "en/updates/feed.xml": "bd49c6e1b26c56cbba9f7d43421980f7485862cbed74d24de72da328724942fa",
+      "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png": "6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf",
+      "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png": "d00d2a5d334bc73bf2c1dd034a8d8341b00c47d9e0a382aff08e1a716d75bc8f",
+      "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png": "f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add",
+      "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-EN.png": "2006db8fdd5684299bd166324ae749f1407f50c90485072ac34254bf73bb0c1f"
+    }
+  },
   "deletion_record": {
-    "status": "NOT_YET_DEPLOYED",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
     "canonical_recovery_paths": [
       "publication-manifests/fiscalia-dip2-judicial-complaint-extension-20260825.json",
       "archive/FISCALIA_DIP2_JUDICIAL_COMPLAINT_REF24_PUBLICATION_CONTROL_25AUG2026.md",
@@ -106,7 +153,7 @@
     "linkedin_post_published": false
   },
   "validation": {
-    "status": "LOCAL_GREEN_PENDING_REMOTE_CI_AND_LIVE_READBACK",
+    "status": "CI_GREEN_MERGED_DEPLOYED_LIVE_VERIFIED",
     "evidence": [
       "repository preservation, publication integrity, audience experience, mission-critical, operational, sent-email-continuity and insolvency-perimeter gates passed locally",
       "public bidder name-only and Concurso 36/2012 primary-autos redigest gates passed after the actor-linkage terminology was normalised",
@@ -114,7 +161,11 @@
       "both public PDFs and both transcriptions reproduced byte for byte on a clean temporary rebuild",
       "all 45 public PDF pages rendered successfully; contact-sheet and signature-page inspection passed",
       "controlled private identifiers and contact strings were absent from PDF extraction and public transcriptions",
-      "six changed HTML pages and both Atom feeds parsed; local targets, duplicate IDs and bilingual dossier structure passed"
+      "six changed HTML pages and both Atom feeds parsed; local targets, duplicate IDs and bilingual dossier structure passed",
+      "PR #964 passed all 16 triggered pull-request workflows after the public bidder name-only correction",
+      "the exact merge SHA passed all 18 triggered post-merge workflows",
+      "Pages run 32826806480 completed successfully for exact merge SHA 3035cff2a8a3c1cbc0ad6443a54af41372e228f7",
+      "sixteen live surfaces returned HTTP 200 and matched repository SHA-256 byte for byte"
     ]
   },
   "required_checks": [
