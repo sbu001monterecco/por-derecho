@@ -1,0 +1,49 @@
+name: Verify Por Derecho Transparency Phase 1 live
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/verify_por_derecho_transparency_phase1_live.py'
+      - '.github/workflows/verify-por-derecho-transparency-phase1-live.yml'
+      - 'assets/data/por-derecho-transparency-phase1-v1.json'
+      - 'archive/POR_DERECHO_TRANSPARENCY_PHASE1_25AUG2026.md'
+  push:
+    branches: [main]
+    paths:
+      - 'en/por-derecho/transparency/**'
+      - 'es/por-derecho/transparencia/**'
+      - 'assets/por-derecho/por-derecho.js'
+      - 'sitemap-por-derecho-foundation.xml'
+      - 'scripts/verify_por_derecho_transparency_phase1_live.py'
+      - '.github/workflows/verify-por-derecho-transparency-phase1-live.yml'
+      - 'assets/data/por-derecho-transparency-phase1-v1.json'
+      - 'archive/POR_DERECHO_TRANSPARENCY_PHASE1_25AUG2026.md'
+
+permissions:
+  contents: read
+
+jobs:
+  live-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v6.1.0
+        with:
+          python-version: '3.11'
+      - name: Verify exact public routes and markers
+        run: >-
+          python scripts/verify_por_derecho_transparency_phase1_live.py
+          --expected-merge-sha 572d17fa74b0653fce25a6300be15a5ad03fe1e7
+          --output artifacts/transparency/phase1-live-readback.json
+      - name: Upload public-edge evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: por-derecho-transparency-phase1-live-${{ github.sha }}
+          path: artifacts/transparency/phase1-live-readback.json
+          if-no-files-found: error
+          retention-days: 90
