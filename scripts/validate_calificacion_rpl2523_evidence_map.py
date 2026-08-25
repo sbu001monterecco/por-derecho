@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+CURRENT_STATE_V2 = "por-derecho.operational-truth.current-state.v2"
 
 
 def read(path: str) -> str:
@@ -63,6 +64,10 @@ def main() -> int:
                 errors.append(f"{path}: current/former counsel name leaked: {prohibited!r}")
 
     data = json.loads(read("assets/data/calificacion-rpl2523-evidence-map-v1.json"))
+    if data.get("schema") != "por-derecho.calificacion-rpl2523-evidence-map.v1":
+        errors.append("evidence map JSON: unexpected schema")
+    if data.get("proceeding", {}).get("appeal_roll") != "RPL 2523/2025":
+        errors.append("evidence map JSON: current Calificación roll missing")
     instruments = data.get("instrument_map", [])
     if len(instruments) != 8:
         errors.append("evidence map JSON: expected eight party/stage records")
@@ -137,11 +142,24 @@ def main() -> int:
         if route not in registered:
             errors.append(f"unitary route registry: missing {route}")
 
+    # Operational truth v2 deliberately no longer stores specialist case facts.
+    # The canonical evidence map above controls the RPL roll and denominator.
+    # Legacy v1 branches retain the historical checks for backwards compatibility.
     current = json.loads(read("ops/CURRENT_STATE.json"))
-    if current.get("calificacion", {}).get("appeal_roll") != "RPL 2523/2025":
-        errors.append("ops/CURRENT_STATE.json: current Calificación roll missing")
-    if current.get("calificacion", {}).get("instrument_count_rule") != "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS":
-        errors.append("ops/CURRENT_STATE.json: appeal denominator rule missing")
+    if current.get("schema") == CURRENT_STATE_V2:
+        if current.get("record_type") != "CURRENT_STATE_CONTRACT_WITH_LAST_OBSERVATION":
+            errors.append("ops/CURRENT_STATE.json: operational truth v2 record type missing")
+        purpose = str(current.get("purpose", ""))
+        if "Specialist source controls remain authoritative" not in purpose:
+            errors.append("ops/CURRENT_STATE.json: specialist-source authority boundary missing")
+        priority_sources = current.get("current_priority_sources")
+        if not isinstance(priority_sources, list) or not priority_sources:
+            errors.append("ops/CURRENT_STATE.json: priority-source routing missing")
+    else:
+        if current.get("calificacion", {}).get("appeal_roll") != "RPL 2523/2025":
+            errors.append("ops/CURRENT_STATE.json: current Calificación roll missing")
+        if current.get("calificacion", {}).get("instrument_count_rule") != "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS":
+            errors.append("ops/CURRENT_STATE.json: appeal denominator rule missing")
 
     if errors:
         print("CALIFICACION RPL2523 EVIDENCE MAP: FAIL")

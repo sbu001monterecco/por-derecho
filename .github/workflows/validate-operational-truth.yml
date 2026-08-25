@@ -1,0 +1,72 @@
+name: Validate operational truth
+
+on:
+  pull_request:
+    paths:
+      - "ops/CURRENT_STATE.json"
+      - "ops/PRODUCTION_STATUS.json"
+      - "ops/LAST_KNOWN_GOOD.json"
+      - "ops/RELEASE_LEDGER.json"
+      - "ops/OPERATIONAL_TRUTH_PROTOCOL.md"
+      - "ops/history/**"
+      - "assets/data/matter-identity-registry-v1*.json"
+      - "assets/data/legal-professionals-register-v1.json"
+      - "scripts/generate_operational_truth.py"
+      - "scripts/validate_operational_truth.py"
+      - ".github/workflows/validate-operational-truth.yml"
+  push:
+    branches: [main]
+    paths:
+      - "ops/CURRENT_STATE.json"
+      - "ops/PRODUCTION_STATUS.json"
+      - "ops/LAST_KNOWN_GOOD.json"
+      - "ops/RELEASE_LEDGER.json"
+      - "ops/OPERATIONAL_TRUTH_PROTOCOL.md"
+      - "ops/history/**"
+      - "assets/data/matter-identity-registry-v1*.json"
+      - "assets/data/legal-professionals-register-v1.json"
+      - "scripts/generate_operational_truth.py"
+      - "scripts/validate_operational_truth.py"
+      - ".github/workflows/validate-operational-truth.yml"
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Validate schemas, ancestry, counts and append-only history
+        run: python scripts/validate_operational_truth.py
+      - name: Generate local operational-truth report
+        run: |
+          python scripts/generate_operational_truth.py --output operational-truth-local.json
+          cat operational-truth-local.json
+      - name: Generate live GitHub operational-truth report
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/generate_operational_truth.py --live --output operational-truth-live.json
+          cat operational-truth-live.json
+      - name: Fail scheduled or manual checks when drift exceeds policy
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/generate_operational_truth.py --live --fail-on-drift

@@ -1,29 +1,36 @@
 {
   "schema": "por-derecho.current-unitary-state.v1",
   "control_id": "PD-UNITARY-STATE-20260825-01",
-  "as_of": "2026-08-25T23:30:00Z",
-  "status": "PREPARED_ON_CURRENT_MAIN_PENDING_MERGE_AND_PUBLIC_READBACK",
-  "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
+  "as_of": "2026-08-25T23:50:30Z",
+  "status": "MERGED_DEPLOYED_PENDING_RECONCILED_EXACT_READBACK",
+  "purpose": "Specialist synchronized routing layer for case, evidence, procedural and reader-facing state. Repository, deployment and rollback truth are controlled separately by ops/CURRENT_STATE.json.",
   "repository": {
     "repository": "sbu001monterecco/por-derecho",
     "branch": "main",
     "current_main_sha_at_preparation": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
-    "current_main_commit_class": "prescription-recovery deletion-safe closeout; no new public case proposition inferred",
+    "source_merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+    "latest_observed_main_sha": "b8e50e3aff924228cdda442e13e87b5656e62551",
+    "operational_truth": "ops/CURRENT_STATE.json",
     "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
-    "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only or deletion-closeout commits may advance main without changing reader-facing case propositions."
+    "current_state_rule": "This file controls specialist case/evidence state. Current repository SHA, deployment and rollback facts are resolved through the operational-truth layer."
   },
   "publication": {
     "public_host": "https://sbu001monterecco.github.io/por-derecho/",
     "last_pages_deployment": {
-      "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
-      "run_id": 32910389340,
-      "run_number": 1115,
+      "sha": "b8e50e3aff924228cdda442e13e87b5656e62551",
+      "run_id": 32912406606,
+      "run_number": 1120,
       "status": "completed",
       "conclusion": "success",
-      "note": "Current main 64a0cdc is a deletion-closeout release and did not trigger a newer Pages deployment."
+      "note": "Later continuity commits did not alter the unitary public surfaces."
     },
     "current_sha_edge_readback": {
-      "state": "PENDING_EXACT_MARKER_READBACK_AFTER_THIS_CONTROL_PLANE_MERGES",
+      "state": "PARTIAL_SUCCESS_FORMAT_SENSITIVE_ASSERTION_FAILED",
+      "workflow_run_id": 32912075152,
+      "source_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+      "passed": ["Spanish identity route","English identity route","Spanish updates route","English updates route","unitary-state JSON HTTP 200","material-updates JSON","unitary sitemap","robots declaration"],
+      "failed": "A whitespace-sensitive substring searched for a pretty-printed total instead of parsing JSON.",
+      "correction": "The reconciled verifier parses JSON and asserts the numeric count structurally.",
       "rule": "A successful Pages deployment is not by itself an exact-content verification."
     },
     "last_positive_production_smoke": {
@@ -38,7 +45,7 @@
     "control_date": "2026-08-25",
     "counts": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
     "archive_backfill": "OPEN",
-    "static_page_parity": "FIXED_BY_THIS_CONTROL_PLANE_PACKAGE",
+    "static_page_parity": "CONTROLLED",
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
   },
   "material_updates": {
@@ -66,7 +73,7 @@
   ],
   "pull_requests": {
     "observed_open_count": 36,
-    "observed_at": "2026-08-25T23:30:00Z",
+    "observed_at": "2026-08-25T23:50:30Z",
     "ledger": "ops/PR_RECONCILIATION_LEDGER.json",
     "rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, rerun current controls and close or supersede explicitly."
   },
@@ -79,14 +86,14 @@
     "prescription_recovery": ["/es/prescripcion-caducidad-danos-medidas-cautelares/","/en/limitation-damages-interim-relief-recovery/"]
   },
   "superseded_snapshots": {
-    "ops/CURRENT_STATE.json": "Historical 24-Aug-2026 routing snapshot; preserved at archive/ops-snapshots/CURRENT_STATE_20260824.json and now points here.",
-    "ops/PRODUCTION_STATUS.json": "Historical PR #922 live-verification snapshot; preserved at archive/ops-snapshots/PRODUCTION_STATUS_20260824.json and now distinguishes deployment from edge readback."
+    "ops/CURRENT_STATE.json": "Historical mixed snapshots are preserved; operational v2 now controls repository/deployment truth.",
+    "ops/PRODUCTION_STATUS.json": "Historical PR #922 production evidence is preserved and remains a rollback anchor."
   },
   "next_actions": [
-    "Merge and publicly verify this unitary control-plane synchronization.",
-    "Rebuild the unique PR #1016 owner/court-party delta on the then-current main without identity collisions.",
+    "Merge the operational-truth reconciliation and run the corrected structural public readback.",
+    "Rebuild the unique PR #1016 owner/court-party delta on current main without identity collisions.",
     "Create the source-proposition register and platform recovery/no-double-counting ledger.",
-    "Add bilingual unitary-status and recovery-denominator reader routes from the canonical data.",
+    "Add bilingual unitary-status and recovery-denominator reader routes from canonical data.",
     "Move core reader facts gradually from stacked runtime loaders into generated static HTML."
   ]
 }

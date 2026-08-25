@@ -1,35 +1,27 @@
 {
-  "schema_version": 1,
+  "schema": "por-derecho.operational-truth.rollback-anchor.v2",
+  "record_type": "HISTORICAL_ROLLBACK_ANCHOR",
   "release_id": "five-actor-preservation-guard-20260824-pr922",
+  "is_current": false,
+  "rollback_eligible": true,
   "state": "LIVE_VERIFIED",
   "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
   "source_tree": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
   "verification": {
-    "workflow": "PR #922 five-actor preservation guard, exact-SHA Pages deployment and settled-DOM verification of all seventeen protected surfaces",
     "pull_request": 922,
     "head_sha": "850ee0909f6eb5914d2ced3a366d5576b28b6768",
-    "pages_run_id": "32750603024",
-    "run_id": "32750605646",
-    "source_of_funds_run_id": "32750605643",
-    "artifact_id": null,
-    "artifact_digest": null,
+    "pages_run_id": 32750603024,
+    "run_id": 32750605646,
+    "source_of_funds_run_id": 32750605643,
     "verified_at": "2026-08-24T16:27:17.010Z",
-    "checks": [
-      "five_actor_static_homepage_source_integrity",
-      "five_actor_settled_dom_browser_render",
-      "publication_integrity",
-      "mission_critical_repository",
-      "audience_experience_420_bilingual_html_pages",
-      "exact_sha_pages_deployment",
-      "both_homepages_live",
-      "fourteen_canonical_direct_actor_routes_live",
-      "preserved_legacy_spanish_court_route_live",
-      "canonical_spanish_magistrate_judge_route_live",
-      "five_private_actor_cards_two_distinct_institutional_cards_five_linkage_rows",
-      "actor_portraits_and_two_evidence_images_loaded",
-      "757_assertions_across_17_protected_surfaces"
-    ]
+    "scope": "Both homepages, fourteen canonical direct routes and the preserved legacy Spanish court route; 757 settled-DOM assertions across seventeen protected surfaces."
+  },
+  "supersession": {
+    "superseded_as_current": true,
+    "current_repository_truth": "Resolve refs/heads/main dynamically.",
+    "current_deployment_truth": "Use ops/PRODUCTION_STATUS.json plus a fresh live query.",
+    "historical_record": "ops/RELEASE_LEDGER.json"
   },
   "rollback_rule": "Use a normal revert PR to this release or another positively verified successor; never force-push main."
 }
