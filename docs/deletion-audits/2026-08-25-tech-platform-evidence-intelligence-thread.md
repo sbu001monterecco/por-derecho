@@ -2,6 +2,9 @@
 
 **Control date:** 25 August 2026  
 **Current-main baseline at audit start:** `6c2fc6d4e68dbda37fad4c311ddd0a4b363796fe`  
+**Closeout PR:** [#994](https://github.com/sbu001monterecco/por-derecho/pull/994)  
+**Closeout merge SHA:** `e1bbc2b8641a28421f7ba97f2deaaabd983717dd`  
+**First post-merge Tech Platform monitor:** run `32870991399` — `SUCCESS`  
 **Current verdict:** `DELETION_SAFE_WITH_OPEN_TECH_PLATFORM_ITEMS`  
 **Operational ledger:** [Issue #993](https://github.com/sbu001monterecco/por-derecho/issues/993)
 
@@ -119,6 +122,8 @@ It re-runs:
 - the seven RPL retrieval evaluations; and
 - platform-health checks for required files, ID authority, custody summary, private/public flags, immutable Action pins, cache-file contamination and custody-readback cadence.
 
+The first pull-request monitor run `32870683808` passed before merge. The first monitor on `main`, run `32870991399`, also passed after merge SHA `e1bbc2b8641a28421f7ba97f2deaaabd983717dd`.
+
 GitHub cannot independently read the private Drive vault from this public workflow. Private readback therefore remains a separate controlled check, with a 30-day cadence recorded in the baseline and Issue #993.
 
 ## 9. Open items
@@ -150,4 +155,4 @@ Deleting the thread does not authorise:
 - automatic changes to legal conclusions; or
 - automatic website publication.
 
-This thread is therefore **safe to delete with open Tech Platform development items**, once the closeout package containing this audit and scheduled monitor is merged and its checks pass.
+PR #994 is merged, the pull-request controls passed, and the first post-merge Tech Platform monitor passed. This thread is therefore **safe to delete with open Tech Platform development items**.
