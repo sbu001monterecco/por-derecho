@@ -24,18 +24,30 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import re
           from pathlib import Path
 
           path = Path('scripts/sync_icam_ccacm_discovery_20260825.py')
           source = path.read_text(encoding='utf-8')
-          source, repaired = re.subn(r"'</\\n\s*'aside>'", "</aside>'", source)
-          if repaired != 2:
-              raise SystemExit(f'expected two literal-newline repairs, found {repaired}')
-          source = source.replace(
-              '        supplement = supplement.replace("\'</aside>\'", "</aside>")\n',
-              '',
+
+          def replace_broken_statement(source: str, phrase: str, replacement: str) -> str:
+              start = source.index(phrase)
+              end = source.index("aside>'", start) + len("aside>'")
+              return source[:start] + replacement + source[end:]
+
+          source = replace_broken_statement(
+              source,
+              "            'Los dos acuses de 25 agosto acreditan recepción solamente; no aceptación, investigación general ni decisión de fondo.",
+              "            'Los dos acuses de 25 agosto acreditan recepción solamente; no aceptación, investigación general ni decisión de fondo.</aside>'",
           )
+          source = replace_broken_statement(
+              source,
+              "            'The two 25 August acknowledgements prove receipt only—not acceptance, a general investigation or a merits decision.",
+              "            'The two 25 August acknowledgements prove receipt only—not acceptance, a general investigation or a merits decision.</aside>'",
+          )
+          source = '\n'.join(
+              line for line in source.splitlines()
+              if 'supplement = supplement.replace' not in line
+          ) + '\n'
           path.write_text(source, encoding='utf-8')
           PY
           python -m py_compile scripts/sync_icam_ccacm_discovery_20260825.py
