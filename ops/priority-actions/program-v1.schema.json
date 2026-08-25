@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbu001monterecco.github.io/por-derecho/ops/priority-actions/program-v1.schema.json",
+  "title": "Por Derecho priority-actions programme v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "programme_id",
+    "prepared_at",
+    "prepared_from_main",
+    "refresh_main_before_execution",
+    "state_machine",
+    "global_controls",
+    "parallelisation",
+    "tasks"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.priority-actions.v1"
+    },
+    "programme_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prepared_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prepared_from_main": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "refresh_main_before_execution": {
+      "const": true
+    },
+    "state_machine": {
+      "type": "array",
+      "minItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "PLANNED",
+          "READY",
+          "IN_PROGRESS",
+          "BLOCKED",
+          "REVIEW",
+          "COMPLETE"
+        ]
+      }
+    },
+    "global_controls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "parallelisation": {
+      "type": "object",
+      "required": [
+        "repository_public_lane",
+        "private_read_only_lane",
+        "same_path_parallel_edits_prohibited"
+      ]
+    },
+    "tasks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "priority",
+          "title",
+          "state",
+          "track",
+          "privacy",
+          "objective",
+          "dependencies",
+          "source_controls",
+          "template",
+          "suggested_branch",
+          "allowed_actions",
+          "prohibited_actions",
+          "expected_outputs",
+          "acceptance_criteria",
+          "authority_gate",
+          "next_action"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^P[0-2]-[A-Z]+-[0-9]{2}$"
+          },
+          "priority": {
+            "enum": [
+              "P0",
+              "P1",
+              "P2"
+            ]
+          },
+          "state": {
+            "enum": [
+              "PLANNED",
+              "READY",
+              "IN_PROGRESS",
+              "BLOCKED",
+              "REVIEW",
+              "COMPLETE"
+            ]
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_controls": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "template": {
+            "type": "string",
+            "pattern": "^ops/priority-actions/templates/"
+          },
+          "allowed_actions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "prohibited_actions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "expected_outputs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "acceptance_criteria": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
