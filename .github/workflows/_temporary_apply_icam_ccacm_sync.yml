@@ -24,28 +24,19 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
+          import re
           from pathlib import Path
 
           path = Path('scripts/sync_icam_ccacm_discovery_20260825.py')
-          lines = path.read_text(encoding='utf-8').splitlines()
-          repaired = []
-          index = 0
-          while index < len(lines):
-              line = lines[index]
-              if (
-                  line.rstrip().endswith(".'</")
-                  and index + 1 < len(lines)
-                  and lines[index + 1].strip() == "'aside>'"
-              ):
-                  repaired.append(line.rsplit("'</", 1)[0] + "</aside>'")
-                  index += 2
-                  continue
-              if 'supplement = supplement.replace("\'</aside>\'", "</aside>")' in line:
-                  index += 1
-                  continue
-              repaired.append(line)
-              index += 1
-          path.write_text('\n'.join(repaired) + '\n', encoding='utf-8')
+          source = path.read_text(encoding='utf-8')
+          source, repaired = re.subn(r"'</\\n\s*'aside>'", "</aside>'", source)
+          if repaired != 2:
+              raise SystemExit(f'expected two literal-newline repairs, found {repaired}')
+          source = source.replace(
+              '        supplement = supplement.replace("\'</aside>\'", "</aside>")\n',
+              '',
+          )
+          path.write_text(source, encoding='utf-8')
           PY
           python -m py_compile scripts/sync_icam_ccacm_discovery_20260825.py
           python scripts/sync_icam_ccacm_discovery_20260825.py --apply
