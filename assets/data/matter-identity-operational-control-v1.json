@@ -1,0 +1,250 @@
+{
+  "schema": "por-derecho.matter-identity-operational-control.v1",
+  "control_id": "PD-SP-IDENTITY-OPS-001",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "control_date": "2026-08-25",
+  "status": "PUBLIC_OPERATIONAL_CONTROL",
+  "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
+  "linked_controls": {
+    "registry": "matter-identity-registry-v1.json",
+    "action_matrix": "criminal-first-institutional-action-matrix-v1.json",
+    "convergence_graph": "acosta-matos-functional-convergence-map-v2.json",
+    "identity_extension_policy": "/.github/evidence-intelligence/id-extension-policy.json",
+    "institutional_action_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988"
+  },
+  "operational_rule": "Every controlled actor, recipient, proceeding and graph node must resolve to one immutable registry ID. Unresolved legal identity, missing public surface and archive-backfill status must remain visible rather than being inferred away.",
+  "coverage_dimensions": [
+    "canonical identity admission",
+    "exact legal-entity resolution",
+    "public-surface coverage",
+    "institutional-action linkage",
+    "convergence-graph linkage",
+    "not-same-as and duplicate controls",
+    "archive backfill",
+    "evidence-object ID extension"
+  ],
+  "resolution_statuses": {
+    "CANONICAL": {
+      "label_es": "Identidad canónica",
+      "label_en": "Canonical identity"
+    },
+    "CONTROLLED_PERIMETER_LABEL_EXACT_ENTITY_MAY_REQUIRE_SOURCE": {
+      "label_es": "Entidad jurídica exacta por cerrar",
+      "label_en": "Exact legal entity still to resolve"
+    },
+    "REFERENCED_LEGAL_FORM_VARIANT_UNRESOLVED": {
+      "label_es": "Variante de forma jurídica no resuelta",
+      "label_en": "Unresolved legal-form variant"
+    }
+  },
+  "exact_identity_queue": [
+    {
+      "id": "PD-SP-O-0003",
+      "priority": "P0",
+      "question_es": "Confirmar razón social, jurisdicción, número registral, historial de nombre y titularidad exacta de Matkator.",
+      "question_en": "Confirm Matkator's exact legal name, jurisdiction, registry number, name history and ownership."
+    },
+    {
+      "id": "PD-SP-O-0008",
+      "priority": "P0",
+      "question_es": "Determinar si la referencia Construcciones Acosta Matos, S.L. corresponde a entidad distinta, error, transformación o variante documental frente a CAM, S.A.",
+      "question_en": "Determine whether Construcciones Acosta Matos, S.L. is a distinct entity, error, transformation or documentary variant of CAM, S.A."
+    },
+    {
+      "id": "PD-SP-O-0033",
+      "priority": "P0",
+      "question_es": "Identificar la entidad jurídica exacta de Ona que emitió, negoció o debía ejecutar el paquete de salida.",
+      "question_en": "Identify the exact Ona legal entity that issued, negotiated or was to execute the exit package."
+    },
+    {
+      "id": "PD-SP-O-0034",
+      "priority": "P0",
+      "question_es": "Identificar la entidad Stoneweg exacta, jurisdicción, vehículo, firmante y capacidad en la oferta de 2018.",
+      "question_en": "Identify the exact Stoneweg entity, jurisdiction, vehicle, signatory and capacity in the 2018 offer."
+    },
+    {
+      "id": "PD-SP-O-0035",
+      "priority": "P0",
+      "question_es": "Identificar la entidad Varia exacta y su relación con Stoneweg, el financiador y la oferta vinculante.",
+      "question_en": "Identify the exact Varia entity and its relationship to Stoneweg, the financing party and the binding offer."
+    },
+    {
+      "id": "PD-SP-O-0036",
+      "priority": "P0",
+      "question_es": "Identificar la sociedad Elaia exacta, jurisdicción, firmante, vehículo y posición en la ruta de compra.",
+      "question_en": "Identify the exact Elaia company, jurisdiction, signatory, vehicle and position in the purchase route."
+    },
+    {
+      "id": "PD-SP-O-0037",
+      "priority": "P0",
+      "question_es": "Resolver Lagune como vehículo, sociedad, marca o contraparte y conciliarlo con Elaia.",
+      "question_en": "Resolve Lagune as vehicle, company, brand or counterparty and reconcile it with Elaia."
+    },
+    {
+      "id": "PD-SP-O-0038",
+      "priority": "P0",
+      "question_es": "Resolver las entidades Meeting Point exactas por fecha, contrato, jurisdicción, operación y eventual preconcurso.",
+      "question_en": "Resolve the exact Meeting Point entities by date, contract, jurisdiction, operation and any pre-insolvency proceeding."
+    },
+    {
+      "id": "PD-SP-O-0043",
+      "priority": "P1",
+      "question_es": "Separar las entidades y marcas PwC/Landwell que aceptaron, facturaron, representaron o intervinieron en cada fecha.",
+      "question_en": "Separate the PwC/Landwell entities and brands that retained, billed, represented or acted at each date."
+    },
+    {
+      "id": "PD-SP-O-0044",
+      "priority": "P1",
+      "question_es": "Identificar la razón social RSM exacta y el alcance temporal de cada encargo o comunicación Sun Park.",
+      "question_en": "Identify the exact RSM legal entity and the temporal scope of each Sun Park mandate or communication."
+    },
+    {
+      "id": "PD-SP-O-0045",
+      "priority": "P1",
+      "question_es": "Identificar la razón social Grant Thornton exacta y los profesionales, encargos y conflictos relacionados.",
+      "question_en": "Identify the exact Grant Thornton legal entity and related professionals, mandates and conflicts."
+    },
+    {
+      "id": "PD-SP-O-0046",
+      "priority": "P1",
+      "question_es": "Identificar la entidad Auren exacta y la fuente que vincula cada intervención al expediente.",
+      "question_en": "Identify the exact Auren entity and the source linking each intervention to the matter."
+    },
+    {
+      "id": "PD-SP-O-0059",
+      "priority": "P1",
+      "question_es": "Fijar la entidad Andbank exacta, sucursal o filial, jurisdicción, mandato y contraparte contractual.",
+      "question_en": "Fix the exact Andbank entity, branch or subsidiary, jurisdiction, mandate and contractual counterparty."
+    },
+    {
+      "id": "PD-SP-O-0060",
+      "priority": "P1",
+      "question_es": "Fijar la entidad Actyus exacta, jurisdicción, función y relación contractual con Andbank y el proyecto.",
+      "question_en": "Fix the exact Actyus entity, jurisdiction, function and contractual relationship with Andbank and the project."
+    }
+  ],
+  "distinction_controls": [
+    {
+      "ids": ["PD-SP-P-0004", "PD-SP-O-0012"],
+      "reason_es": "Asunción Aizpurúa Sánchez no es la sociedad Roque Prieto, S.L.",
+      "reason_en": "Asunción Aizpurúa Sánchez is not Roque Prieto, S.L."
+    },
+    {
+      "ids": ["PD-SP-P-0006", "PD-SP-P-0047"],
+      "reason_es": "Esteban López Noriega no es Luis Miguel López.",
+      "reason_en": "Esteban López Noriega is not Luis Miguel López."
+    },
+    {
+      "ids": ["PD-SP-O-0007", "PD-SP-O-0008"],
+      "reason_es": "CAM, S.A. y la referencia CAM, S.L. no deben fusionarse hasta resolver la forma jurídica.",
+      "reason_en": "CAM, S.A. and the CAM, S.L. reference must not be merged until legal form is resolved."
+    },
+    {
+      "ids": ["PD-SP-O-0022", "PD-SP-O-0023", "PD-SP-O-0024"],
+      "reason_es": "Pamanil, Pamalexsha y Noalpa son entidades distintas aunque existan personas o funciones conectadas.",
+      "reason_en": "Pamanil, Pamalexsha and Noalpa are distinct entities despite connected people or functions."
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "PD-SP-ID-ACT-0001",
+      "priority": "P0",
+      "title_es": "Resolver entidades jurídicas exactas",
+      "title_en": "Resolve exact legal entities",
+      "description_es": "Cerrar o calificar todos los registros de perímetro o forma jurídica todavía abiertos mediante certificados, escrituras, contratos, facturas, registros y firmas.",
+      "description_en": "Close or qualify all perimeter or legal-form records still open using certificates, deeds, contracts, invoices, registries and signatures.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0002",
+      "priority": "P0",
+      "title_es": "Cubrir públicamente las identidades enlazadas a acciones P0",
+      "title_en": "Provide public coverage for P0 action-linked identities",
+      "description_es": "Dar a cada identidad utilizada en PD-SP-ACT-0001–0012 una ficha dedicada, una superficie agregada claramente marcada o una razón documentada para no publicar.",
+      "description_en": "Give every identity used in PD-SP-ACT-0001–0012 a dedicated profile, a clearly marked aggregate surface or a documented reason not to publish.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0003",
+      "priority": "P0",
+      "title_es": "Auditar duplicados y controles not_same_as",
+      "title_en": "Audit duplicates and not_same_as controls",
+      "description_es": "Mantener visibles las colisiones persona/sociedad, variantes de forma jurídica y nombres similares antes de cualquier fusión.",
+      "description_en": "Keep person/company collisions, legal-form variants and similar names visible before any merge.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0004",
+      "priority": "P0",
+      "title_es": "Propagar IDs a las fichas públicas",
+      "title_en": "Propagate IDs to public dossiers",
+      "description_es": "Añadir ID visible y machine-readable a las páginas canónicas sin alterar atribución, prueba o responsabilidad.",
+      "description_en": "Add visible and machine-readable IDs to canonical pages without altering attribution, evidence or responsibility.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0005",
+      "priority": "P1",
+      "title_es": "Backfill de identidad de todo el archivo",
+      "title_en": "Archive-wide identity backfill",
+      "description_es": "Revisar repositorio e índices privados autorizados para localizar nombres, alias, cambios de cargo y entidades todavía no admitidas.",
+      "description_en": "Review the repository and authorised private indexes for names, aliases, office changes and identities not yet admitted.",
+      "status": "CONTINUOUS"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0006",
+      "priority": "P1",
+      "title_es": "Extender IDs a objetos de evidencia",
+      "title_en": "Extend IDs to evidence objects",
+      "description_es": "Implementar fuentes, documentos, materias, eventos, proposiciones, activos, derechos, recuperación, citas, evaluaciones, custodia y ejecuciones de recuperación.",
+      "description_en": "Implement source, document, matter, event, proposition, asset, right, recovery, citation, evaluation, custody and retrieval-run IDs.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0007",
+      "priority": "P1",
+      "title_es": "Enriquecer rutas de instituciones y procedimientos",
+      "title_en": "Enrich institution and proceeding routes",
+      "description_es": "Conectar IDs institucionales y procesales con sus páginas canónicas, registros y estados exactos.",
+      "description_en": "Connect institutional and proceeding IDs to their canonical pages, registers and exact status.",
+      "status": "OPEN"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0008",
+      "priority": "P1",
+      "title_es": "Conciliar registro, grafo y matriz de acciones",
+      "title_en": "Reconcile registry, graph and action matrix",
+      "description_es": "Convertir cualquier ID huérfano, nodo sin identidad o referencia obsoleta en fallo de validación.",
+      "description_en": "Turn every orphan ID, identity-less node or stale reference into a validation failure.",
+      "status": "CONTINUOUS"
+    },
+    {
+      "action_id": "PD-SP-ID-ACT-0009",
+      "priority": "P1",
+      "title_es": "Canal público de corrección de identidad",
+      "title_en": "Public identity-correction channel",
+      "description_es": "Integrar documentos que corrijan nombre, forma jurídica, cargo, fecha, alias o distinción en el mismo ID inmutable.",
+      "description_en": "Integrate documents correcting name, legal form, office, date, alias or distinction into the same immutable ID.",
+      "status": "CONTINUOUS"
+    }
+  ],
+  "extension_namespaces": [
+    {"type": "SOURCE", "pattern": "PD-SP-SRC-####", "purpose_es": "Fuente o contenedor de origen", "purpose_en": "Source or originating container", "status": "POLICY_DEFINED"},
+    {"type": "DOCUMENT", "pattern": "PD-SP-DOC-####", "purpose_es": "Documento individual", "purpose_en": "Individual document", "status": "POLICY_DEFINED"},
+    {"type": "MATTER", "pattern": "PD-SP-MAT-####", "purpose_es": "Materia o submateria", "purpose_en": "Matter or sub-matter", "status": "POLICY_DEFINED"},
+    {"type": "EVENT", "pattern": "PD-SP-EVT-####", "purpose_es": "Evento cronológico", "purpose_en": "Chronological event", "status": "POLICY_DEFINED"},
+    {"type": "PROPOSITION", "pattern": "PD-SP-PROP-####", "purpose_es": "Proposición probatoria", "purpose_en": "Evidentiary proposition", "status": "POLICY_DEFINED"},
+    {"type": "ASSET", "pattern": "PD-SP-ASSET-####", "purpose_es": "Activo o finca controlada", "purpose_en": "Controlled asset or property", "status": "POLICY_DEFINED"},
+    {"type": "RIGHT", "pattern": "PD-SP-RIGHT-####", "purpose_es": "Derecho o facultad", "purpose_en": "Right or entitlement", "status": "POLICY_DEFINED"},
+    {"type": "RECOVERY_OBJECT", "pattern": "PD-SP-REC-####", "purpose_es": "Objeto de recuperación", "purpose_en": "Recovery object", "status": "POLICY_DEFINED"},
+    {"type": "CITATION", "pattern": "PD-SP-CIT-####", "purpose_es": "Cita y localización", "purpose_en": "Citation and locator", "status": "POLICY_DEFINED"},
+    {"type": "EVALUATION", "pattern": "PD-SP-EVAL-####", "purpose_es": "Evaluación o grado", "purpose_en": "Evaluation or grade", "status": "POLICY_DEFINED"},
+    {"type": "CUSTODY_MANIFEST", "pattern": "PD-SP-CUST-####", "purpose_es": "Resumen público de custodia", "purpose_en": "Public custody summary", "status": "POLICY_DEFINED"},
+    {"type": "RETRIEVAL_RUN", "pattern": "PD-SP-RUN-####", "purpose_es": "Ejecución de recuperación", "purpose_en": "Retrieval run", "status": "POLICY_DEFINED"}
+  ],
+  "public_routes": {
+    "es": "/es/registro-identidad-materia/",
+    "en": "/en/matter-identity-registry/"
+  },
+  "future_thread_rule": "Load this operational control together with the canonical registry, action matrix, convergence graph, ID-extension policy and Issues #988/#995. Update existing IDs and action IDs; never create a duplicate identity because a source uses another spelling or legal label."
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "matter-identity-operational-registry-20260825",
+  "control_date": "2026-08-25",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "status": "prepared_in_pr",
+  "package": "matter-identity-operational-registry",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "operational_control_id": "PD-SP-IDENTITY-OPS-001",
+  "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
+  "linked_execution_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988",
+  "expected_routes": {
+    "es": ["es/registro-identidad-materia/index.html"],
+    "en": ["en/matter-identity-registry/index.html"]
+  },
+  "assets": [
+    "assets/matter-identity-registry.css",
+    "assets/matter-identity-registry.js",
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.people.json",
+    "assets/data/matter-identity-registry-v1.organisations.json",
+    "assets/data/matter-identity-registry-v1.structures.json",
+    "assets/data/matter-identity-registry-v1.institutions.json",
+    "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/matter-identity-operational-control-v1.json",
+    "assets/data/criminal-first-institutional-action-matrix-v1.json",
+    "assets/data/acosta-matos-functional-convergence-map-v2.json",
+    "scripts/validate_operational_identity_registry.py",
+    "scripts/render_operational_identity_registry.mjs",
+    "sitemap-matter-identity-operational.xml",
+    ".github/workflows/verify-operational-matter-identity-registry.yml"
+  ],
+  "operational_surfaces": [
+    "P0-linked identity queue",
+    "unresolved exact-legal-identity queue",
+    "missing public-surface queue",
+    "not_same_as distinction queue",
+    "per-record institutional-action links",
+    "per-record convergence graph nodes and edges",
+    "stable ID deep links and copy controls",
+    "filtered JSON and CSV exports",
+    "evidence-intelligence extension namespaces",
+    "persistent identity operations ledger"
+  ],
+  "identity_actions": [
+    "PD-SP-ID-ACT-0001",
+    "PD-SP-ID-ACT-0002",
+    "PD-SP-ID-ACT-0003",
+    "PD-SP-ID-ACT-0004",
+    "PD-SP-ID-ACT-0005",
+    "PD-SP-ID-ACT-0006",
+    "PD-SP-ID-ACT-0007",
+    "PD-SP-ID-ACT-0008",
+    "PD-SP-ID-ACT-0009"
+  ],
+  "publication_boundaries": [
+    "Identity resolution does not transfer knowledge, intention, control, benefit, responsibility or liability.",
+    "A person, organisation, analytical structure, institution and proceeding never share or substitute for the same ID.",
+    "An unresolved brand, group, legal-form variant or perimeter remains open until primary evidence fixes the exact legal identity.",
+    "A missing public profile is a publication-coverage gap, not evidence of uncertain identity or reduced relevance.",
+    "Aliases and source literals resolve to the canonical record without erasing the original wording.",
+    "Protected private-source identifiers and reversible vault locators never become public IDs.",
+    "Corrections and contrary identity evidence update the same immutable ID and remain visible."
+  ],
+  "restart_rule": "Future threads must load the canonical registry, operational control, action matrix, convergence graph, ID-extension policy and Issues #988/#995. New evidence must update existing identity and action IDs rather than create disconnected duplicates.",
+  "post_merge_verification": [
+    "Confirm both bilingual registry routes return 200 and contain PD-SP-IDENTITY-OPS-001.",
+    "Confirm both routes load the canonical registry, operational control, action matrix and graph index.",
+    "Confirm the P0, unresolved, no-public-surface and distinction queues render on desktop and mobile.",
+    "Confirm all registry IDs are unique and every action/graph reference resolves.",
+    "Confirm JavaScript, JSON, stylesheet, sitemap and robots discovery are live.",
+    "Advance the manifest to LIVE_VERIFIED only after exact-marker public readback."
+  ]
+}
