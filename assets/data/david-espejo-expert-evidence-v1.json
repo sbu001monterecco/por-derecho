@@ -1,0 +1,110 @@
+{
+  "schema": "por-derecho.expert-evidence-status.v1",
+  "subject": {
+    "name": "David Espejo Navarro",
+    "firm": "Expert Witness Forensic & Compliance (eXW)",
+    "legal_entity_public_notice": "Four Mirror Advisors, S.L.",
+    "role": "party economic-financial forensic expert; later testigo-perito in the classification section"
+  },
+  "scope": [
+    "Concurso 36/2012",
+    "valuation and liquidation",
+    "Owners' Community / CEXP",
+    "financing and swap",
+    "classification section",
+    "connected parallel tracks"
+  ],
+  "status_vocabulary": {
+    "client_briefing": "Material supplied to or prepared for the expert; not an expert conclusion unless authorship is established.",
+    "draft": "Located copy expressly identifies itself as draft or otherwise lacks final/signature evidence.",
+    "signed": "Signature/final-version evidence is located.",
+    "transmitted": "Evidence of transmission is located; transmission alone does not establish court filing.",
+    "author_reported_filed": "The author later stated that the document was filed; independent docket confirmation remains required.",
+    "court_confirmed_role": "A court-originating source confirms the expert's procedural participation/role.",
+    "court_confirmed_filed": "A filing receipt, certified index, docket entry or judicial source specifically confirms incorporation of the document."
+  },
+  "rules": [
+    "Do not collapse creation, transmission, receipt, filing, timeliness and judicial use into one status.",
+    "Do not label an item extemporaneous unless the applicable deadline and the actual filing/service date establish lateness.",
+    "Not filed is not equivalent to filed late.",
+    "Later discovery is not equivalent to late filing.",
+    "A contemporaneous document can be ex-ante evidence of an issue being documented without proving court notice or receipt.",
+    "Client instructions and briefing material must remain separate from expert-authored conclusions.",
+    "A draft must not be described as final or signed without a matched final copy.",
+    "Filing or reuse in one proceeding/track does not establish filing, knowledge or effect in another.",
+    "Do not publish private contact details, fees, family information, confidential strategy or full reports carrying reliance/distribution restrictions without separate clearance."
+  ],
+  "documents": [
+    {
+      "date": "2018-05-04",
+      "title": "Introduction / background materials addressed to David Espejo",
+      "classification": "client_briefing",
+      "filing_status": "not_established",
+      "notice_significance": "Shows the instruction/input layer for the expert assignment; not an expert conclusion."
+    },
+    {
+      "date": "2018-05-10",
+      "title": "Valuation of the complex and reasonableness of the liquidation plan",
+      "classification": "draft",
+      "filing_status": "requires_exact_document_match; later author recollection says the May economic note appeared not filed",
+      "notice_significance": "Contemporaneous/ex-ante source evidence that valuation/liquidation objections were being documented before 7 June 2018; underlying notice transmission must be independently matched."
+    },
+    {
+      "date": "2018-06-11",
+      "title": "Economic note on rights against the CEXP",
+      "classification": "expert_note",
+      "source_discrepancy": "Cover states Concurso Voluntario nº 32/2012; substance/context concern LPB Concurso 36/2012. Preserve and explain the discrepancy.",
+      "filing_status": "author_reported_filed",
+      "notice_significance": "Potential formal notice once filing receipt/docket incorporation is independently confirmed."
+    },
+    {
+      "date": "2018-07-10",
+      "title": "Reasonableness and economic-financial sense of Owners' Community debt recognised in Concurso 36/2012",
+      "classification": "signed",
+      "filing_status": "document_located; exact docket incorporation and downstream judicial citation remain to be matched",
+      "notice_significance": "Core expert source for the Community/CEXP debt track."
+    },
+    {
+      "date": "2019-04-23",
+      "title": "Transmission of signed expert-work portfolio",
+      "classification": "signed_transmitted_set",
+      "filing_status": "client/counsel transmission does not itself establish court filing",
+      "notice_significance": "Strong version/provenance evidence for multiple expert work products, including financing/swap and related economic analyses."
+    },
+    {
+      "date": "2022-05-23",
+      "title": "Court communication confirming remote intervention pathway",
+      "classification": "court_correspondence",
+      "filing_status": "court_confirmed_role",
+      "notice_significance": "Confirms David Espejo's later procedural role as testigo-perito in the classification section; distinct from filing status of earlier reports."
+    },
+    {
+      "date": "2023-07",
+      "title": "Author clarification on May/June 2018 filing status",
+      "classification": "provenance_correspondence",
+      "filing_status": "May economic note: author-reported apparently not filed; June economic note: author-reported filed",
+      "notice_significance": "Important provenance distinction; neither statement substitutes for the certified docket."
+    }
+  ],
+  "cross_links": {
+    "en": [
+      "/en/david-espejo-expert-witness/",
+      "/en/concurso-36-2012-judicial-spine/",
+      "/en/insolvency-classification-parallel-lives/",
+      "/en/2018-professional-source-insolvency-knowledge/",
+      "/en/actua-gesvalt-2018-valuation-comparison/",
+      "/en/community-instrumentalisation/",
+      "/en/sun-park-takeover-7-june-2018/"
+    ],
+    "es": [
+      "/es/david-espejo-perito-forense/",
+      "/es/concurso-36-2012-columna-judicial/",
+      "/es/calificacion-concurso-36-2012-vidas-paralelas/",
+      "/es/fuente-profesional-2018-conocimiento-concursal/",
+      "/es/comparativa-tasaciones-actua-gesvalt-2018/",
+      "/es/comunidad-instrumentalizacion/",
+      "/es/toma-control-sun-park-7-junio-2018/"
+    ]
+  },
+  "public_page_policy": "Describe source, provenance and procedural status conservatively. Expert evidence is not a judicial finding and does not by itself establish misconduct, knowledge, causation, liability or criminal intent."
+}
