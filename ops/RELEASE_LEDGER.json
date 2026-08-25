@@ -52,7 +52,7 @@
       "pull_request": 1030,
       "state": "DEPLOYED_BUILD_SUCCESS",
       "website_content_changed": true,
-      "current_at_observation": true,
+      "current_at_observation": false,
       "rollback_eligible": false,
       "merged_at": "2026-08-25T23:21:22Z",
       "deployed_at": "2026-08-25T23:23:02Z",
@@ -60,11 +60,31 @@
       "live_verification_run_id": null,
       "scope": "Added claim-specific prescription, caducity, damages, restitution and interim-relief controls with bilingual public routes and structured data.",
       "evidence": [
-        "ops/PRODUCTION_STATUS.json",
         "publication-manifests/prescription-damages-interim-relief-20260826.json",
         "assets/data/prescription-damages-interim-relief-v1.json"
       ],
       "limits": "A successful Pages deployment is recorded; exact independent public-edge content verification remains separate."
+    },
+    {
+      "release_id": "prescription-recovery-closeout-20260825-pr1032",
+      "source_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+      "source_tree_sha": "12a3617fd763370985124d5548190a399bd02f37",
+      "pull_request": 1032,
+      "state": "DEPLOYED_BUILD_SUCCESS",
+      "website_content_changed": false,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "merged_at": "2026-08-25T23:28:15Z",
+      "deployed_at": "2026-08-25T23:28:46Z",
+      "pages_run_id": 32910904143,
+      "live_verification_run_id": null,
+      "scope": "Closed the prescription/recovery thread through a deletion audit, manifest closeout and validation evidence without changing the substantive public recovery routes.",
+      "evidence": [
+        "ops/PRODUCTION_STATUS.json",
+        "docs/deletion-audits/",
+        "publication-manifests/prescription-damages-interim-relief-20260826.json"
+      ],
+      "limits": "A successful Pages deployment is recorded; no separate route-marker verification was added for this closeout SHA."
     }
   ],
   "corrections": []
