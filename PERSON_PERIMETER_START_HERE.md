@@ -21,7 +21,7 @@ The public identity architecture must not use one undifferentiated people list. 
 4. **Institutions and officeholders / Instituciones y cargos**; and
 5. **Witnesses, experts and document custodians / Testigos, peritos y custodios documentales**.
 
-Transaction-development contacts and unresolved private candidates are outside the public legal-matter lists by default.
+Transaction-development contacts use `TRANSACTION_DEVELOPMENT_PRIVATE`; unresolved candidates use `UNRESOLVED_PRIVATE_CANDIDATE`. Both remain outside the public legal-matter lists by default.
 
 ## No automatic assignment
 
