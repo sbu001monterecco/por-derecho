@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-unitary-control-plane.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-digital-identity.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-eleconomista.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-banking-recovery.xml
