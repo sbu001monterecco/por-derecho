@@ -1,0 +1,1308 @@
+{
+  "schema": "por-derecho.legal-professionals-representatives-master-register.part.v1",
+  "register_id": "PD-SP-PROF-REG-001",
+  "type": "PERSON",
+  "records": [
+    {
+      "professional_record_id": "PD-SP-PROF-P-0001",
+      "registry_id": "PD-SP-P-0060",
+      "name": "Javier Sixto-Seijas",
+      "name_variants": [
+        "Javier Sixto",
+        "Javier Sixto Seijas"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "CURRENT_COUNSEL",
+      "evidence_status": "CONFIRMED_CURRENT",
+      "relationship_classification": "OUR_CURRENT_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0001"
+      ],
+      "matter_scope": "Current civil, insolvency, separation/removal, appeals, MASC and related coordination.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Current public registry shortens the name; capacity and client must remain matter-specific.",
+      "source_basis_public_safe": "Current counsel correspondence, filed appeal records and 25 August 2026 counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0002",
+      "registry_id": "PD-SP-P-0061",
+      "name": "Estefanía Sixto Seijas",
+      "name_variants": [
+        "Estefanía",
+        "Estefania Sixto Seijas"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "CURRENT_COUNSEL",
+      "evidence_status": "CONFIRMED_CURRENT",
+      "relationship_classification": "OUR_CURRENT_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0001"
+      ],
+      "matter_scope": "Current civil, insolvency and document-review work.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Current public registry is materially incomplete; no inference beyond documented mandate.",
+      "source_basis_public_safe": "Current counsel correspondence and 25 August 2026 counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0003",
+      "registry_id": "PD-SP-P-0062",
+      "name": "Carlos Llamas Sanz",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "CURRENT_COUNSEL",
+      "evidence_status": "CONFIRMED_CURRENT",
+      "relationship_classification": "OUR_CURRENT_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0002"
+      ],
+      "matter_scope": "Current criminal, ETJ 163/2020 and DP 748/2026 work.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Current role is distinct from procuradora functions and from other counsel.",
+      "source_basis_public_safe": "Filed communications, current correspondence and 25 August 2026 counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0004",
+      "registry_id": null,
+      "name": "Adriana Hernández Díaz",
+      "name_variants": [
+        "Adriana Hernandez Diaz"
+      ],
+      "professional_kind": "PROCURADOR",
+      "track": "CURRENT_PROCURADOR",
+      "evidence_status": "CONFIRMED_CURRENT_PROCEDURAL",
+      "relationship_classification": "OUR_CURRENT_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0003"
+      ],
+      "matter_scope": "Procuradora in DP 748/2026 and ETJ 163/2020; LexNET filing, service, notification and procedural receipt custody.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED_CORRECTION",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Corrects an earlier census label that called her counsel. Do not confuse with Adriana González García.",
+      "source_basis_public_safe": "LexNET filing correspondence, court notices, invoices/provisions and registry certificate.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0005",
+      "registry_id": null,
+      "name": "María Díaz Vecino",
+      "name_variants": [
+        "Maria Diaz Vecino",
+        "María Luisa Díaz Vecino",
+        "María Vecino Díaz"
+      ],
+      "professional_kind": "PROCURADOR",
+      "track": "CURRENT_OR_RECENT_PROCURADOR",
+      "evidence_status": "CONFIRMED_PROFESSIONAL_ROLE_SCOPE_OPEN",
+      "relationship_classification": "OUR_CURRENT_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0004"
+      ],
+      "matter_scope": "Procuradora and procedural follow-up contact in Tenerife/Las Palmas matters; formal personation varies by proceeding.",
+      "identity_status": "OPEN_NAME_VARIANT_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_WITH_LIMITS",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "For the June–July 2026 complaint-follow-up stream she expressly stated she was not yet personada; do not generalise representation.",
+      "source_basis_public_safe": "Direct professional correspondence, signatures and appellate/procedural records.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0006",
+      "registry_id": null,
+      "name": "María del Pilar García Coello",
+      "name_variants": [
+        "Pilar García Coello"
+      ],
+      "professional_kind": "PROCURADOR",
+      "track": "CURRENT_OR_RECENT_PROCURADOR",
+      "evidence_status": "CONFIRMED_CURRENT_PROCEDURAL",
+      "relationship_classification": "OUR_CURRENT_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0005"
+      ],
+      "matter_scope": "Procuradora for LPB in RPL 3304/2025 and related appellate service/custody.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Representation is proceeding- and client-specific.",
+      "source_basis_public_safe": "Appellate record and direct professional correspondence forwarded by current counsel.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0007",
+      "registry_id": "PD-SP-P-0052",
+      "name": "Miguel Méndez Itarte",
+      "name_variants": [
+        "Miguel Méndez",
+        "Miguel Mendez Itarte"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0006"
+      ],
+      "matter_scope": "2012 insolvency, refinancing, enforcement and auction file.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Individual advice and authorship must be fixed to source documents.",
+      "source_basis_public_safe": "Garrigues file reconstruction and 25 August 2026 counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0008",
+      "registry_id": "PD-SP-P-0053",
+      "name": "José María Martínez de Artola",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0006"
+      ],
+      "matter_scope": "2012 Garrigues insolvency/enforcement work.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Historical professional role; no collective attribution to the firm.",
+      "source_basis_public_safe": "Garrigues file reconstruction and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0009",
+      "registry_id": null,
+      "name": "Víctor de la Torre García",
+      "name_variants": [
+        "Victor de la Torre Garcia"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0006"
+      ],
+      "matter_scope": "Historical Garrigues Sun Park/Luchy file.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact document authorship and dates remain to be mapped.",
+      "source_basis_public_safe": "25 August 2026 Spanish counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0010",
+      "registry_id": "PD-SP-P-0054",
+      "name": "Zulay Carmen Rodríguez Cabrera",
+      "name_variants": [
+        "Zulay Carmen Rodríguez",
+        "Zulay Carmen Rodriguez Cabrera"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0006"
+      ],
+      "matter_scope": "Historical Garrigues Sun Park/Luchy file.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Current registry omits Cabrera; exact acts remain document-specific.",
+      "source_basis_public_safe": "Garrigues file reconstruction and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0037",
+      "registry_id": null,
+      "name": "Manuel Sánchez Álvarez",
+      "name_variants": [
+        "Manuel Sanchez Alvarez"
+      ],
+      "professional_kind": "LEGAL_PROFESSIONAL_CANDIDATE",
+      "track": "REVIEW_CANDIDATE",
+      "evidence_status": "SOURCE_HIT_REVIEW",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0006"
+      ],
+      "matter_scope": "Historical Garrigues professional found in closure/query records.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Substantive Sun Park mandate is not established.",
+      "source_basis_public_safe": "Counsel-census query set.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0038",
+      "registry_id": null,
+      "name": "José Ramón Martínez / Martínez Jiménez",
+      "name_variants": [
+        "Jose Ramon Martinez",
+        "José Ramón Martínez Jiménez"
+      ],
+      "professional_kind": "LEGAL_PROFESSIONAL_CANDIDATE",
+      "track": "REVIEW_CANDIDATE",
+      "evidence_status": "SOURCE_HIT_REVIEW",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0006"
+      ],
+      "matter_scope": "Possible 2013–2014 Garrigues/Madrid escalation contact.",
+      "identity_status": "OPEN_IDENTITY_AND_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Exact identity, surname and role remain unresolved.",
+      "source_basis_public_safe": "Counsel-census query set.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0011",
+      "registry_id": "PD-SP-P-0051",
+      "name": "Pedro Campaña Ávila",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Community/civil proceedings including PO 562/2014 and 213/2015; handover.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Proceeding-specific role.",
+      "source_basis_public_safe": "Cuatrecasas matter file and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0012",
+      "registry_id": null,
+      "name": "Mónica Lasquibar Rodríguez",
+      "name_variants": [
+        "Monica Lasquibar Rodriguez"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Community litigation, procedural updates, standing analysis and direct 2018 Luchy correspondence.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "No inference beyond sourced role and communications.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0013",
+      "registry_id": "PD-SP-P-0048",
+      "name": "Rosa Gual Tomás",
+      "name_variants": [
+        "Rosa María Gual Tomàs",
+        "Rosa Gual Tomas"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Aweswell / Concurso 36/2012 representation, termination and handover.",
+      "identity_status": "OPEN_PREFERRED_NAME_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Preserve source variants and exact termination scope.",
+      "source_basis_public_safe": "Court/professional evidence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0014",
+      "registry_id": "PD-SP-P-0049",
+      "name": "Iñigo Jorge de Luisa Maiz",
+      "name_variants": [
+        "Iñigo de Luisa Maíz",
+        "Inigo de Luisa Maiz"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Finance, insolvency, 2018 exit, pagarés and subsequent file work.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Separate scopes, dates and decision authority by matter.",
+      "source_basis_public_safe": "Cuatrecasas matter files, correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0015",
+      "registry_id": "PD-SP-P-0050",
+      "name": "Adriana González García",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "2019 Aweswell/concurso drafting and filing work.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Do not confuse with Adriana Hernández Díaz, procuradora.",
+      "source_basis_public_safe": "Cuatrecasas file and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0016",
+      "registry_id": null,
+      "name": "Pablo Villaseca Rico",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Criminal-file coordination, matter correspondence and file custody.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact authorship and client scope remain source-specific.",
+      "source_basis_public_safe": "Cuatrecasas file/custodian reconstruction and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0017",
+      "registry_id": null,
+      "name": "Luis Álvarez de la Vega Gaztelu",
+      "name_variants": [
+        "Luis Alvarez de la Vega Gaztelu"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Historical Cuatrecasas substantive work in the Sun Park/Aweswell file.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact engagement scope and dates require source mapping.",
+      "source_basis_public_safe": "25 August 2026 counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0018",
+      "registry_id": null,
+      "name": "Cristóbal Cotta",
+      "name_variants": [
+        "Cristobal Cotta"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_NAME_LOCK_OPEN",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Historical Cuatrecasas substantive work.",
+      "identity_status": "OPEN_SPELLING_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_WITH_LIMITS",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact spelling and documentary role must be locked before immutable identity admission.",
+      "source_basis_public_safe": "25 August 2026 counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0019",
+      "registry_id": "PD-SP-P-0055",
+      "name": "Cristo Ayose Suárez Pimentel",
+      "name_variants": [
+        "Cristo Suárez Pimentel",
+        "Cristo Pimentel"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0008"
+      ],
+      "matter_scope": "Retracto, concurso, criminal/procedural and handover work.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Prior instructions, mandate, cessation and handover must remain separated.",
+      "source_basis_public_safe": "Professional correspondence, filed records and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0020",
+      "registry_id": "PD-SP-P-0041",
+      "name": "Juan Tomás Parrilla Suárez",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0009"
+      ],
+      "matter_scope": "Historic insolvency, protection, control and filing work.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Firm/practice identity and periods require exact engagement mapping.",
+      "source_basis_public_safe": "Filed materials, correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0021",
+      "registry_id": "PD-SP-P-0042",
+      "name": "Armando Betancor Álamo",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0010",
+        "PD-SP-PROF-O-0011"
+      ],
+      "matter_scope": "Historical legal work and later continuity/handover.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Alas/Devina entity continuity remains unresolved.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0022",
+      "registry_id": "PD-SP-P-0043",
+      "name": "José María Betancor Álamo",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0010",
+        "PD-SP-PROF-O-0011"
+      ],
+      "matter_scope": "Historical legal/professional work and file continuity.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Alas/Devina entity continuity remains unresolved.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0023",
+      "registry_id": "PD-SP-P-0044",
+      "name": "Davinia Sánchez de la Cruz",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0010",
+        "PD-SP-PROF-O-0011"
+      ],
+      "matter_scope": "Historical legal work and file handover/custody.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Exact firm continuity and matter dates remain open.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0024",
+      "registry_id": "PD-SP-P-0045",
+      "name": "Joaquín Ruiz de Infante Abella",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0012"
+      ],
+      "matter_scope": "Historical legal advice, disputes and file custody.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Actor-specific scope required.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0025",
+      "registry_id": "PD-SP-P-0046",
+      "name": "Daniel Jiménez García",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0013"
+      ],
+      "matter_scope": "Historical criminal/civil and procedural work.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Separate each proceeding, instruction and filing.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0026",
+      "registry_id": null,
+      "name": "Almudena Santafé Blecua",
+      "name_variants": [
+        "Almudena Santafe Blecua"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0013"
+      ],
+      "matter_scope": "Historical SLJ legal work and file continuity.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact matter authorship requires source mapping.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0027",
+      "registry_id": "PD-SP-P-0047",
+      "name": "Luis Miguel López Gómez",
+      "name_variants": [
+        "Luis Miguel López",
+        "Luis Miguel Lopez Gomez"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0014"
+      ],
+      "matter_scope": "Historical legal work and file custody.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Current registry omits Gómez; do not confuse with Esteban López Noriega.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0028",
+      "registry_id": null,
+      "name": "Manuel Gallego Águeda",
+      "name_variants": [
+        "Manuel Gallego Agueda"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_SUBSTANTIVE_COUNSEL",
+      "evidence_status": "CONFIRMED_SUBSTANTIVE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0015"
+      ],
+      "matter_scope": "Historical professional work and legal-file continuity.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact entity, dates and documents require primary engagement confirmation.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0029",
+      "registry_id": null,
+      "name": "Bernardino “Bernard” Afonso",
+      "name_variants": [
+        "Bernardino Afonso",
+        "Bernard Afonso"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_OR_HIGH_CONFIDENCE_COUNSEL",
+      "evidence_status": "HIGH_CONFIDENCE_ROLE_OPEN",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0016"
+      ],
+      "matter_scope": "Historical DWF-RCD/RCD professional continuity and file review.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_WITH_LIMITS",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact retained mandate, entity and dates are not yet locked.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0030",
+      "registry_id": null,
+      "name": "Jordi Albiol",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_OR_HIGH_CONFIDENCE_COUNSEL",
+      "evidence_status": "HIGH_CONFIDENCE_ROLE_OPEN",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0016"
+      ],
+      "matter_scope": "Historical DWF-RCD/RCD professional continuity and file review.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_WITH_LIMITS",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Exact retained mandate, entity and dates are not yet locked.",
+      "source_basis_public_safe": "Professional/custodian register and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0031",
+      "registry_id": "PD-SP-P-0063",
+      "name": "Daniel Irigoyen Fujiwara",
+      "name_variants": [
+        "Daniel Irigoyen"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "FORMER_PROFESSIONAL_OR_ADVISER",
+      "evidence_status": "CONFIRMED_DOCUMENTED_ROLE_CAPACITY_OPEN",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "2018 funded-exit/judicial-meeting communication and related professional advice.",
+      "identity_status": "CANONICAL_CORRECTION_NEEDED",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Do not conflate legal adviser, operator and witness capacities; exact employer/client relationship remains source-specific.",
+      "source_basis_public_safe": "Contemporaneous 13 June 2018 communication and professional register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0032",
+      "registry_id": "PD-SP-P-0035",
+      "name": "Carmen Ramírez de Prada",
+      "name_variants": [],
+      "professional_kind": "LAWYER",
+      "track": "ADVERSE_PARTY_COUNSEL",
+      "evidence_status": "CONFIRMED_PROCEDURAL_ROLE",
+      "relationship_classification": "ADVERSE_PARTY_PROFESSIONAL",
+      "firm_ids": [],
+      "matter_scope": "Counsel for CAM in identified concurso/appellate proceedings.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Representation alone does not make the lawyer an adverse private actor.",
+      "source_basis_public_safe": "Official procedural records.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0033",
+      "registry_id": null,
+      "name": "Juan Antonio Ruiz García",
+      "name_variants": [
+        "Juan Antonio Ruiz Garcia"
+      ],
+      "professional_kind": "LAWYER",
+      "track": "ADVERSE_PARTY_OR_FIRM_REPRESENTATIVE",
+      "evidence_status": "CONFIRMED_RECENT_ROLE",
+      "relationship_classification": "ADVERSE_PARTY_PROFESSIONAL",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Cuatrecasas partner/representative associated with the 2025–2026 MASC response and professional-regulation file.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_WITH_LIMITS",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Record only the signed/received professional role; no attribution of historical matter conduct without proof.",
+      "source_basis_public_safe": "MASC response and professional-regulation correspondence.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0034",
+      "registry_id": null,
+      "name": "Tania Alejandra Domínguez Limiñana",
+      "name_variants": [
+        "Tania Domínguez Limiñana"
+      ],
+      "professional_kind": "PROCURADOR",
+      "track": "HISTORICAL_PROCURADOR",
+      "evidence_status": "CONFIRMED_PROCEDURAL_ROLE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [],
+      "matter_scope": "Aweswell representation in concurso/appellate records and handover coordination.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Client, proceeding and dates remain record-specific.",
+      "source_basis_public_safe": "Appellate/procedural record and professional-custodian register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0035",
+      "registry_id": null,
+      "name": "Manuela Cabrera de la Cruz",
+      "name_variants": [],
+      "professional_kind": "PROCURADOR",
+      "track": "HISTORICAL_PROCURADOR",
+      "evidence_status": "CONFIRMED_PROCEDURAL_ROLE",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [],
+      "matter_scope": "Procedural representation/custody in identified Gil/Patricia criminal matters.",
+      "identity_status": "EXACT",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "limits": "Do not generalise to unrelated proceedings.",
+      "source_basis_public_safe": "Professional-custodian register and procedural files.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0036",
+      "registry_id": "PD-SP-P-0056",
+      "name": "Francisco Javier Pérez Almeida",
+      "name_variants": [
+        "Francisco Javier Pérez Alemán-Almeida",
+        "Francisco Javier Perez Almeida"
+      ],
+      "professional_kind": "PROCURADOR",
+      "track": "HISTORICAL_PROCURADOR",
+      "evidence_status": "CONFIRMED_PROCEDURAL_ROLE_NAME_OPEN",
+      "relationship_classification": "OUR_FORMER_PROFESSIONAL",
+      "firm_ids": [],
+      "matter_scope": "Concurso-related procedural representation linked to historical counsel work.",
+      "identity_status": "OPEN_NAME_VARIANT_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_CONFIRMED",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Current public name and the source form Pérez Alemán-Almeida require primary identity reconciliation.",
+      "source_basis_public_safe": "Professional-custodian register and procedural records.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0039",
+      "registry_id": null,
+      "name": "Juan Andrés Rodríguez",
+      "name_variants": [
+        "Juan Andres Rodriguez"
+      ],
+      "professional_kind": "LEGAL_PROFESSIONAL_CANDIDATE",
+      "track": "REVIEW_CANDIDATE",
+      "evidence_status": "SOURCE_HIT_REVIEW",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0013"
+      ],
+      "matter_scope": "Possible former SLJ lawyer/professional.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Substantive mandate not yet proved.",
+      "source_basis_public_safe": "Counsel census and working professional register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0040",
+      "registry_id": null,
+      "name": "Guillermo Suárez Lacone",
+      "name_variants": [
+        "Guillermo Suarez Lacone"
+      ],
+      "professional_kind": "LEGAL_PROFESSIONAL_CANDIDATE",
+      "track": "REVIEW_CANDIDATE",
+      "evidence_status": "SOURCE_HIT_REVIEW",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [],
+      "matter_scope": "Historical professional/custodian candidate.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Exact practice, mandate and matter role remain open.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0041",
+      "registry_id": null,
+      "name": "Roberto Fernández",
+      "name_variants": [
+        "Roberto Fernandez"
+      ],
+      "professional_kind": "LEGAL_PROFESSIONAL_CANDIDATE",
+      "track": "REVIEW_CANDIDATE",
+      "evidence_status": "SOURCE_HIT_REVIEW",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0020"
+      ],
+      "matter_scope": "Possible historical lawyer associated with Lex Iuris.",
+      "identity_status": "OPEN_IDENTITY_AND_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Exact identity, legal entity and Sun Park mandate remain open.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0042",
+      "registry_id": null,
+      "name": "Álvaro Aulló Pérez",
+      "name_variants": [
+        "Alvaro Aullo Perez"
+      ],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Civil claim/coordination contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Exact substantive mandate and decision authority not established.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0043",
+      "registry_id": null,
+      "name": "Pedro San José",
+      "name_variants": [
+        "Pedro San Jose"
+      ],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Internal/correspondence contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Copied or internal contact is not automatically substantive counsel.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0044",
+      "registry_id": null,
+      "name": "Plácido Molina Serrano",
+      "name_variants": [
+        "Placido Molina Serrano",
+        "Plácido Molina"
+      ],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Billing/claims and engagement contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Role must remain limited to sourced communications.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0045",
+      "registry_id": null,
+      "name": "Juan Francisco Rodríguez Estella",
+      "name_variants": [
+        "Juan Francisco Rodriguez Estella"
+      ],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Copied recipient / professional contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No substantive role inferred from copying alone.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0046",
+      "registry_id": null,
+      "name": "Fedra Valencia",
+      "name_variants": [],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Correspondence contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No substantive role inferred without actor-specific source.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0047",
+      "registry_id": null,
+      "name": "María Megías Falcón",
+      "name_variants": [
+        "Maria Megias Falcon"
+      ],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Communications, billing or procedural-support contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Support/correspondence role is not automatically substantive counsel.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0048",
+      "registry_id": null,
+      "name": "Violeta Afonso Méndez",
+      "name_variants": [
+        "Violeta Afonso Mendez"
+      ],
+      "professional_kind": "FIRM_CONTACT",
+      "track": "ROLE_LIMITED_FIRM_CONTACT",
+      "evidence_status": "ROLE_LIMITED_SOURCE_HIT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0007"
+      ],
+      "matter_scope": "Collections/administrative contact.",
+      "identity_status": "OPEN_CAPACITY_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_ROLE_LIMITED",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Collections or administrative contact is not a substantive matter mandate.",
+      "source_basis_public_safe": "Cuatrecasas correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0049",
+      "registry_id": null,
+      "name": "Jessika Rojano / Rosano",
+      "name_variants": [
+        "Jessika Rojano",
+        "Jessika Rosano"
+      ],
+      "professional_kind": "LEGAL_PROFESSIONAL_OR_CONTACT",
+      "track": "PROFESSIONAL_ADVISER_REVIEW",
+      "evidence_status": "PROFESSIONAL_SOURCE_HIT_ROLE_OPEN",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0017"
+      ],
+      "matter_scope": "Professional/adviser contact in the wider legal-file and handover census.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Do not call retained counsel until engagement and matter-specific work are proved.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0050",
+      "registry_id": null,
+      "name": "Ana Bravo de Laguna",
+      "name_variants": [],
+      "professional_kind": "LEGAL_PROFESSIONAL_OR_CONTACT",
+      "track": "PROFESSIONAL_ADVISER_REVIEW",
+      "evidence_status": "PROFESSIONAL_SOURCE_HIT_ROLE_OPEN",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0017"
+      ],
+      "matter_scope": "Professional/adviser contact in the wider legal-file and handover census.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Do not call retained counsel until engagement and matter-specific work are proved.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0051",
+      "registry_id": null,
+      "name": "Ana Isabel Montesdeoca",
+      "name_variants": [],
+      "professional_kind": "LEGAL_PROFESSIONAL_OR_CONTACT",
+      "track": "PROFESSIONAL_ADVISER_REVIEW",
+      "evidence_status": "PROFESSIONAL_SOURCE_HIT_ROLE_OPEN",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0017"
+      ],
+      "matter_scope": "Professional/adviser contact in the wider legal-file and handover census.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Do not call retained counsel until engagement and matter-specific work are proved.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0052",
+      "registry_id": null,
+      "name": "Marta Esteban Ramos",
+      "name_variants": [],
+      "professional_kind": "LEGAL_PROFESSIONAL_OR_CONTACT",
+      "track": "PROFESSIONAL_ADVISER_REVIEW",
+      "evidence_status": "PROFESSIONAL_SOURCE_HIT_ROLE_OPEN",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0018"
+      ],
+      "matter_scope": "Professional/adviser contact in the wider legal-file and handover census.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Do not call retained counsel until engagement and matter-specific work are proved.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0053",
+      "registry_id": null,
+      "name": "Luis Barber",
+      "name_variants": [],
+      "professional_kind": "LEGAL_PROFESSIONAL_OR_CONTACT",
+      "track": "PROFESSIONAL_ADVISER_REVIEW",
+      "evidence_status": "PROFESSIONAL_SOURCE_HIT_ROLE_OPEN",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0019"
+      ],
+      "matter_scope": "Professional/adviser contact in the wider legal-file and handover census.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "PRIVATE_REVIEW_CANDIDATE",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "Do not call retained counsel until engagement and matter-specific work are proved.",
+      "source_basis_public_safe": "Professional-custodian working register.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0054",
+      "registry_id": null,
+      "name": "Daniel Tienda",
+      "name_variants": [],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0021"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0055",
+      "registry_id": null,
+      "name": "Toni Barios",
+      "name_variants": [],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0021"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0056",
+      "registry_id": null,
+      "name": "José Piñeiro",
+      "name_variants": [
+        "Jose Piñeiro",
+        "José Pineiro"
+      ],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0021"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0057",
+      "registry_id": null,
+      "name": "Esteban Cuyás Caudevilla",
+      "name_variants": [
+        "Esteban Cuyas Caudevilla"
+      ],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0022"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0058",
+      "registry_id": null,
+      "name": "Ignacio Ramos Villar",
+      "name_variants": [],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0021"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0059",
+      "registry_id": null,
+      "name": "Moran Mordechay",
+      "name_variants": [],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0018"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0060",
+      "registry_id": null,
+      "name": "Omer Ben Matityahu",
+      "name_variants": [],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0018"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_record_id": "PD-SP-PROF-P-0061",
+      "registry_id": null,
+      "name": "Asaf Biger",
+      "name_variants": [],
+      "professional_kind": "PROPOSAL_CONTACT",
+      "track": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "evidence_status": "PROPOSAL_OR_PRELIMINARY_CONTACT",
+      "relationship_classification": "UNRESOLVED_PRIVATE_CANDIDATE",
+      "firm_ids": [
+        "PD-SP-PROF-O-0018"
+      ],
+      "matter_scope": "Proposal, consultation, preliminary review or KYC contact.",
+      "identity_status": "OPEN_MANDATE_RECONCILIATION",
+      "census_inclusion_status": "INCLUDED_PROPOSAL_ONLY",
+      "public_profile_status": "NOT_AUTHORIZED_FOR_PUBLIC_PROFILE",
+      "limits": "No executed retainer or substantive Sun Park mandate is established by proposal/contact evidence alone.",
+      "source_basis_public_safe": "Proposal/consultation correspondence and counsel census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    }
+  ]
+}

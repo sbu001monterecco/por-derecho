@@ -1,0 +1,309 @@
+{
+  "schema": "por-derecho.legal-professionals-representatives-master-register.part.v1",
+  "register_id": "PD-SP-PROF-REG-001",
+  "type": "ORGANISATION",
+  "records": [
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0001",
+      "registry_id": null,
+      "name": "Sixto Abogados",
+      "aliases": [],
+      "evidence_status": "CONFIRMED_CURRENT_PRACTICE",
+      "scope": "Current Spanish civil/insolvency counsel practice.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact legal-entity form should be confirmed before promotion to the immutable organisation registry.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0002",
+      "registry_id": null,
+      "name": "Carlos Llamas Legal Compliance",
+      "aliases": [
+        "Carlos Llamas current independent practice"
+      ],
+      "evidence_status": "CONFIRMED_CURRENT_PRACTICE",
+      "scope": "Current independent legal/compliance practice.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Trading or practice name is evidenced; exact legal entity remains open.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0003",
+      "registry_id": null,
+      "name": "Adriana Hernández Díaz — independent procuradora practice",
+      "aliases": [],
+      "evidence_status": "CONFIRMED_CURRENT_PRACTICE",
+      "scope": "Current procuradora practice used in DP 748/2026 and ETJ 163/2020.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact practice entity or trading name is not locked.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0004",
+      "registry_id": null,
+      "name": "Tenerife Procuradores",
+      "aliases": [
+        "Procuradores Tenerife"
+      ],
+      "evidence_status": "CONFIRMED_PROCURADOR_PRACTICE",
+      "scope": "Procurador practice associated with María Díaz Vecino and relevant appellate/filing work.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact represented party and formal personation remain matter-specific.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0005",
+      "registry_id": null,
+      "name": "Despacho de María del Pilar García Coello",
+      "aliases": [
+        "Pilar García Coello practice"
+      ],
+      "evidence_status": "CONFIRMED_PROCURADOR_PRACTICE",
+      "scope": "Procuradora practice evidenced in LPB appellate records.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact legal/trading entity remains open.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0006",
+      "registry_id": "PD-SP-O-0050",
+      "name": "J&A Garrigues, S.L.P.",
+      "aliases": [
+        "Garrigues"
+      ],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "2012 insolvency, refinancing, enforcement and auction file.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Individual authorship and scope remain document-specific.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0007",
+      "registry_id": "PD-SP-O-0049",
+      "name": "Cuatrecasas, Gonçalves Pereira, S.L.P.",
+      "aliases": [
+        "Cuatrecasas"
+      ],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Community, finance, insolvency, 2018 exit, civil, billing and later claims files.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Distinct engagements and internal roles must not be collapsed.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0008",
+      "registry_id": "PD-SP-O-0056",
+      "name": "Pimentel Servicios Legales",
+      "aliases": [],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Retracto, concurso and related historical work.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Mandate and cessation dates remain matter-specific.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0009",
+      "registry_id": null,
+      "name": "Juan Tomás Parrilla — historical practice",
+      "aliases": [
+        "Juan Tomás Parrilla practice"
+      ],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_PRACTICE",
+      "scope": "Historical insolvency, control, protection and filing work.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact firm/trading identity should be locked from engagement records.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0010",
+      "registry_id": "PD-SP-O-0052",
+      "name": "Alas Legal Advisors, S.L.",
+      "aliases": [
+        "Alas Legal"
+      ],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Historical legal work and professional handover/custody.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Do not equate automatically with Devina.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0011",
+      "registry_id": null,
+      "name": "Devina — later professional continuity candidate",
+      "aliases": [
+        "Devina"
+      ],
+      "evidence_status": "CONTINUITY_REVIEW",
+      "scope": "Possible later continuity associated with the Alas Legal professional group.",
+      "identity_status": "OPEN_ENTITY_AND_CONTINUITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Whether this is a successor, renaming, trading name or separate entity remains unresolved.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0012",
+      "registry_id": "PD-SP-O-0054",
+      "name": "Bufete Ruiz de Infante",
+      "aliases": [],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Historical legal advice, disputes and file custody.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Scope remains engagement-specific.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0013",
+      "registry_id": "PD-SP-O-0051",
+      "name": "SLJ Abogados",
+      "aliases": [
+        "SLJ"
+      ],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Historical criminal/civil and procedural work.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Separate each lawyer's role and document authorship.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0014",
+      "registry_id": "PD-SP-O-0055",
+      "name": "López Castelo Abogados",
+      "aliases": [
+        "Lopez Castelo Abogados"
+      ],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Historical legal work associated with Luis Miguel López.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Exact matter scope and entity form remain source-controlled.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0015",
+      "registry_id": null,
+      "name": "Gallego Abogados",
+      "aliases": [],
+      "evidence_status": "CONFIRMED_SUBSTANTIVE_FIRM",
+      "scope": "Historical professional work associated with Manuel Gallego Águeda.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact legal entity and dates require primary engagement confirmation.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0016",
+      "registry_id": null,
+      "name": "DWF-RCD / Rousaud Costas Duran professional perimeter",
+      "aliases": [
+        "DWF-RCD",
+        "RCD",
+        "Rousaud Costas Duran"
+      ],
+      "evidence_status": "HIGH_CONFIDENCE_CONTINUITY_REVIEW",
+      "scope": "Professional continuity associated with Bernardino Afonso and Jordi Albiol.",
+      "identity_status": "OPEN_ENTITY_AND_CONTINUITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact entity, brand chronology and retained mandate remain open.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0017",
+      "registry_id": "PD-SP-O-0053",
+      "name": "Kepler–Karst",
+      "aliases": [
+        "Kepler Karst"
+      ],
+      "evidence_status": "PROFESSIONAL_ADVISER_FIRM",
+      "scope": "Professional/adviser contact and file-custody stream.",
+      "identity_status": "EXACT",
+      "public_profile_status": "LEGACY_PUBLIC_ENTRY_UNDER_AUTHORIZATION_REVIEW",
+      "limits": "Individual substantive mandates require source-by-source proof.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0018",
+      "registry_id": null,
+      "name": "APM Law",
+      "aliases": [],
+      "evidence_status": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "scope": "Proposed/consulted legal team.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "No executed retainer located in the controlled census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0019",
+      "registry_id": null,
+      "name": "Barber Asociados",
+      "aliases": [],
+      "evidence_status": "PROFESSIONAL_REVIEW",
+      "scope": "Professional/adviser contact associated with Luis Barber.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact retained mandate remains open.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0020",
+      "registry_id": null,
+      "name": "Lex Iuris",
+      "aliases": [],
+      "evidence_status": "PROFESSIONAL_REVIEW",
+      "scope": "Possible historical legal practice associated with Roberto Fernández.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Exact entity and Sun Park mandate remain open.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0021",
+      "registry_id": null,
+      "name": "Cases & Lacambra",
+      "aliases": [],
+      "evidence_status": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "scope": "Proposal and consultation contacts.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "No executed retainer established in the controlled census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0022",
+      "registry_id": null,
+      "name": "ONTIER",
+      "aliases": [],
+      "evidence_status": "PROPOSAL_OR_CONSULTATION_ONLY",
+      "scope": "Preliminary/KYC and possible engagement review.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "No executed retainer established in the controlled census.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    },
+    {
+      "professional_organisation_id": "PD-SP-PROF-O-0023",
+      "registry_id": null,
+      "name": "ASG Interconsulting, S.L.",
+      "aliases": [],
+      "evidence_status": "PROFESSIONAL_REVIEW",
+      "scope": "Professional/consulting source in the wider file.",
+      "identity_status": "OPEN_EXACT_LEGAL_ENTITY_RECONCILIATION",
+      "public_profile_status": "CENSUS_ENTRY_NO_PROFILE_AUTHORITY",
+      "limits": "Legal mandate and exact role require verification.",
+      "census_name_publication_status": "AUTHORIZED_FOR_MASTER_CENSUS_ONLY"
+    }
+  ]
+}

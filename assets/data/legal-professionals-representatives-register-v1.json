@@ -1,0 +1,101 @@
+{
+  "schema": "por-derecho.legal-professionals-representatives-master-register.v1",
+  "register_id": "PD-SP-PROF-REG-001",
+  "control_date": "2026-08-25",
+  "source_main_sha": "e33db73c79188c1e47a0bf596d5a7a79df390738",
+  "status": "CONTROLLED_MASTER_CENSUS_COMPLETE_TO_CURRENT_SOURCE_SET",
+  "authority_reference": "GIL-DIRECT-20260825-FULLEST-PROFESSIONAL-LIST",
+  "authority_scope": "Authorizes this fullest public-safe professional census of names, firms, roles, status labels and explicit limits. It does not authorize new immutable matter IDs, separate profile pages, adverse-party classification, allegations, private contact details or publication of private source locators.",
+  "governance": {
+    "perimeter_policy_id": "PD-PERIMETER-GOV-001",
+    "rule": "Legal professionals and representatives remain in a separate professional layer. They are not members of our claimant/ownership perimeter or the adverse private-party perimeter merely because of a mandate or client represented.",
+    "single_undifferentiated_people_list": "PROHIBITED",
+    "public_profile_decisions": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+    "private_contacts_and_native_source_locators": "PROHIBITED_IN_THIS_REGISTER"
+  },
+  "parts": [
+    {
+      "type": "PERSON",
+      "path": "legal-professionals-representatives-register-v1.people.json",
+      "count": 61
+    },
+    {
+      "type": "ORGANISATION",
+      "path": "legal-professionals-representatives-register-v1.organisations.json",
+      "count": 23
+    }
+  ],
+  "counts": {
+    "people_total": 61,
+    "organisations_total": 23,
+    "people_with_matter_registry_id": 21,
+    "organisations_with_matter_registry_id": 8,
+    "current_counsel": 3,
+    "procuradores_total": 6,
+    "former_substantive_or_high_confidence_counsel": 25,
+    "adverse_party_professionals": 2,
+    "role_limited_firm_contacts": 7,
+    "review_candidates": 10,
+    "proposal_or_consultation_only": 8
+  },
+  "track_values": [
+    "ADVERSE_PARTY_COUNSEL",
+    "ADVERSE_PARTY_OR_FIRM_REPRESENTATIVE",
+    "CURRENT_COUNSEL",
+    "CURRENT_OR_RECENT_PROCURADOR",
+    "CURRENT_PROCURADOR",
+    "FORMER_OR_HIGH_CONFIDENCE_COUNSEL",
+    "FORMER_PROFESSIONAL_OR_ADVISER",
+    "FORMER_SUBSTANTIVE_COUNSEL",
+    "HISTORICAL_PROCURADOR",
+    "PROFESSIONAL_ADVISER_REVIEW",
+    "PROPOSAL_OR_CONSULTATION_ONLY",
+    "REVIEW_CANDIDATE",
+    "ROLE_LIMITED_FIRM_CONTACT"
+  ],
+  "professional_kind_values": [
+    "FIRM_CONTACT",
+    "LAWYER",
+    "LEGAL_PROFESSIONAL_CANDIDATE",
+    "LEGAL_PROFESSIONAL_OR_CONTACT",
+    "PROCURADOR",
+    "PROPOSAL_CONTACT"
+  ],
+  "relationship_classification_values": [
+    "OUR_CURRENT_PROFESSIONAL",
+    "OUR_FORMER_PROFESSIONAL",
+    "ADVERSE_PARTY_PROFESSIONAL",
+    "UNRESOLVED_PRIVATE_CANDIDATE"
+  ],
+  "evidence_principles": [
+    "An email address, copied recipient, proposal, invoice or meeting entry does not by itself prove a retained substantive mandate.",
+    "Firm membership does not transfer knowledge, intention, authorship or responsibility.",
+    "A lawyer representing an adverse party is not thereby an adverse private actor.",
+    "A procurador's role, client, proceeding and period must be recorded separately.",
+    "Source-name variants remain visible until exact identity is reconciled.",
+    "No omission from this census proves that a person or firm had no role; archive backfill remains open."
+  ],
+  "specific_corrections": [
+    {
+      "subject": "Adriana Hernández Díaz",
+      "correction": "Classified as procuradora, not counsel.",
+      "status": "CONTROLLED"
+    },
+    {
+      "subject": "María Díaz Vecino",
+      "correction": "Canonical public-safe label retained while María Luisa Díaz Vecino / María Vecino Díaz variants remain open.",
+      "status": "OPEN_VARIANT_RECONCILIATION"
+    },
+    {
+      "subject": "Francisco Javier Pérez Almeida",
+      "correction": "Existing matter ID preserved while Pérez Alemán-Almeida source variant remains open.",
+      "status": "OPEN_VARIANT_RECONCILIATION"
+    }
+  ],
+  "excluded_from_this_professional_layer": [
+    "Judges, fiscales and court-appointed officeholders except where a separate professional cross-reference is expressly required.",
+    "Witnesses, experts and document custodians whose primary classification is not legal professional or procurador.",
+    "Transaction-development contacts without a legal/procurador role."
+  ],
+  "restart_rule": "Future threads must load this register before asserting completeness of lawyers, firms or procuradores. New names enter as review candidates unless the source establishes exact identity, role, client, proceeding and period. Existing matter IDs are reused and never duplicated."
+}

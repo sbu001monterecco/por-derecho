@@ -8,7 +8,7 @@ Before adding, retaining, reclassifying, anonymising, pseudonymising, withdrawin
 1. `AGENTS.md`;
 2. `.github/governance/PERSON_PERIMETER_SEPARATION_AND_PUBLICATION_PROTOCOL.md`;
 3. `.github/governance/person-perimeter-classification-policy-v1.json`;
-4. `.github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md`; and
+4. `.github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md`;
 5. the current immutable identity registry and operational-control files.
 
 ## Mandatory presentation rule
@@ -22,6 +22,17 @@ The public identity architecture must not use one undifferentiated people list. 
 5. **Witnesses, experts and document custodians / Testigos, peritos y custodios documentales**.
 
 Transaction-development contacts use `TRANSACTION_DEVELOPMENT_PRIVATE`; unresolved candidates use `UNRESOLVED_PRIVATE_CANDIDATE`. Both remain outside the public legal-matter lists by default.
+
+## Professional completeness gate
+
+Before claiming that the lawyers, firms or procuradores/as list is complete, load:
+
+- `assets/data/legal-professionals-representatives-register-v1.json`;
+- `assets/data/legal-professionals-representatives-register-v1.people.json`;
+- `assets/data/legal-professionals-representatives-register-v1.organisations.json`; and
+- `archive/LEGAL_PROFESSIONALS_REPRESENTATIVES_MASTER_CENSUS_25AUG2026.md`.
+
+`PD-SP-PROF-REG-001` is the controlled completeness layer. It does not itself create an immutable matter ID, profile-page authority, allegation or principal-perimeter assignment. Proposal-only, copied-recipient, administrative and review-candidate records must retain their limits.
 
 ## No automatic assignment
 
