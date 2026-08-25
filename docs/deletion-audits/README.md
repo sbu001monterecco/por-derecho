@@ -12,3 +12,4 @@ This directory contains durable thread-deletion safety audits. Each audit record
 - [24 August 2026 — five-actor visibility, institutional roles and preservation guard](2026-08-24-five-actor-visibility-preservation-thread.md)
 - [25 August 2026 — unitary repository/site digest and Valencia chronology closeout](2026-08-25-unitary-repository-website-valencia-thread-closeout.md)
 - [25 August 2026 — financing, counsel, outbound email and unitary redigest closeout](2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md)
+- [25 August 2026 — professional register, procurador corrections and repository/site redigest closeout](2026-08-25-professional-register-thread-redigest-closeout.md)
