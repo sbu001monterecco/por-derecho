@@ -97,10 +97,11 @@ def main() -> int:
         require(re.fullmatch(r"[0-9a-f]{40}", state["repository"]["current_main_sha_at_preparation"]), "invalid preparation SHA")
         require(state["identity_registry"]["counts"] == expected, "state identity counts drift")
         require(state["material_updates"]["latest_material_date"] == updates["latest_material_date"], "state/update date drift")
-        require(state["pull_requests"]["observed_open_count"] == 35, "open PR snapshot drift")
+        require(state["pull_requests"]["observed_open_count"] == 36, "open PR snapshot drift")
 
         current_pointer = load_json(ROOT / "ops/CURRENT_STATE.json")
         require(current_pointer.get("current_authority") == "ops/CURRENT_UNITARY_STATE.json", "CURRENT_STATE is not a unitary pointer")
+        require(current_pointer.get("calificacion", {}).get("appeal_roll") == "RPL 2523/2025", "CURRENT_STATE compatibility roll missing")
         production = load_json(ROOT / "ops/PRODUCTION_STATUS.json")
         require(production.get("current_state") == "ops/CURRENT_UNITARY_STATE.json", "PRODUCTION_STATUS does not point to unitary state")
         require(production["exact_public_content_verification"]["state"] == "PENDING_AFTER_CONTROL_PLANE_MERGE", "production verification state overstated")
@@ -108,7 +109,7 @@ def main() -> int:
         require((ROOT / production["historical_snapshot"]).is_file(), "historical PRODUCTION_STATUS snapshot missing")
 
         ledger = load_json(ROOT / "ops/PR_RECONCILIATION_LEDGER.json")
-        require(ledger.get("open_pull_request_count") == 35, "PR ledger count drift")
+        require(ledger.get("open_pull_request_count") == 36, "PR ledger count drift")
         entries = {item["pr"]: item for item in ledger.get("priority_entries", [])}
         require(entries.get(1016, {}).get("state") == "REBUILD_ON_CURRENT_MAIN", "PR #1016 is not controlled")
         require(entries.get(771, {}).get("state") == "EXTRACT_UNIQUE_DELTA", "262-finca PR not controlled")
@@ -119,12 +120,13 @@ def main() -> int:
             "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
             "<lastmod>2026-08-25</lastmod>",
         ])
-        require_markers(ROOT / "robots.txt", ["sitemap-unitary-control-plane.xml"])
+        require_markers(ROOT / "robots.txt", ["sitemap-unitary-control-plane.xml", "sitemap-prescription-recovery.xml"])
         require_markers(ROOT / "CURRENT_UNITARY_STATE.md", ["PD-UNITARY-STATE-20260825-01", "185", "PR #1016"])
 
         manifest = load_json(ROOT / "publication-manifests/unitary-control-plane-sync-20260825.json")
         require(manifest.get("current_state") in {"PR_OPEN", "DEPLOYED", "LIVE_VERIFIED"}, "invalid manifest state")
         require(manifest.get("control_id") == "PD-UNITARY-STATE-20260825-01", "manifest/control mismatch")
+        require(manifest.get("expected_routes", {}).get("es") and manifest.get("expected_routes", {}).get("en"), "manifest expected routes missing")
     except AssertionError as exc:
         print(f"UNITARY CONTROL PLANE: FAIL\n - {exc}", file=sys.stderr)
         return 1
