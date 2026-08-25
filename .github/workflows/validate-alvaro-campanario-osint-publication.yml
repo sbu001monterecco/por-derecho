@@ -1,0 +1,60 @@
+name: Validate Campanario OSINT and Declaration 011 publication
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/validate-alvaro-campanario-osint-publication.yml'
+      - 'es/alvaro-campanario-prieto-puente-lopez-noriega/**'
+      - 'en/alvaro-campanario-prieto-puente-lopez-noriega/**'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'sitemap.xml'
+      - 'archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md'
+      - 'archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md'
+      - 'archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md'
+      - 'archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md'
+      - 'archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md'
+      - 'archive/declarations/GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md'
+      - 'publication-manifests/alvaro-campanario-voice-osint-closeout-20260825.json'
+      - 'scripts/validate_alvaro_campanario_osint_publication.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/validate-alvaro-campanario-osint-publication.yml'
+      - 'es/alvaro-campanario-prieto-puente-lopez-noriega/**'
+      - 'en/alvaro-campanario-prieto-puente-lopez-noriega/**'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'sitemap.xml'
+      - 'archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md'
+      - 'archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md'
+      - 'archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md'
+      - 'archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md'
+      - 'archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md'
+      - 'archive/declarations/GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md'
+      - 'publication-manifests/alvaro-campanario-voice-osint-closeout-20260825.json'
+      - 'scripts/validate_alvaro_campanario_osint_publication.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-campanario-osint-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Validate bilingual routes, discovery, privacy and continuation
+        run: python3 scripts/validate_alvaro_campanario_osint_publication.py
