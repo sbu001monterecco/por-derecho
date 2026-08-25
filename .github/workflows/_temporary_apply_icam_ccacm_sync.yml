@@ -48,6 +48,10 @@ jobs:
               line for line in source.splitlines()
               if 'supplement = supplement.replace' not in line
           ) + '\n'
+          source = source.replace(
+              '        "ICAM ≠ CCACM ≠ ICALPA ≠ ICATF",\n',
+              '        "CCACM es Madrid",\n',
+          )
           path.write_text(source, encoding='utf-8')
           PY
           python -m py_compile scripts/sync_icam_ccacm_discovery_20260825.py
