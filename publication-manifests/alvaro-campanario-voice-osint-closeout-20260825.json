@@ -4,8 +4,10 @@
   "control_marker": "campanario-osint-declaration011-20260825",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-25T08:33:01Z",
-  "source_base": "3035cff2a8a3c1cbc0ad6443a54af41372e228f7",
-  "current_state": "DRAFT",
+  "source_base": "c88fba69d8a0d14dfc55b5a7cad376349e042d21",
+  "current_state": "LIVE_VERIFIED",
+  "publication_pr": 966,
+  "merge_sha": "0886dc4c0804ef24437ce86a5675cd04a264166e",
   "purpose": "Make the already authorised Declaration 011, named-person/company OSINT, voice-statement controls, public-safe mailbox aggregates and finite future actions discoverable through bilingual reader-facing Pages routes, then preserve a deletion-safe cross-thread closeout.",
   "expected_routes": {
     "es": [
@@ -35,7 +37,7 @@
     "declaration_011": "REGISTERED_DERIVED_SOURCE_NOT_SIGNED_NOT_SWORN_NOT_WORD_FOR_WORD_RATIFIED",
     "mailbox": "PARTIAL_NOT_FULLY_ACQUIRED_2413_MIRRORED_MESSAGES",
     "osint": "BOUNDED_SOURCE_LED_SCAN_WITH_VERIFIED_ATTRIBUTED_INFERRED_AND_NOT_LOCATED_STATES",
-    "thread_continuity": "PENDING_MERGE_DEPLOYMENT_LIVE_READBACK_AND_POST_LIVE_CLOSEOUT"
+    "thread_continuity": "LIVE_VERIFIED_POST_LIVE_CLOSEOUT_PENDING_MAIN"
   },
   "future_action_controls": [
     "ME-MAIL-RDM-001",
@@ -56,23 +58,67 @@
   ],
   "privacy_control": "The publication excludes the private email address, message bodies, subjects, participants, provider message/thread identifiers, private locators, native audio and restricted account metadata.",
   "deletions": [],
-  "planned_live_urls": [
+  "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/",
     "https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/",
     "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
     "https://sbu001monterecco.github.io/por-derecho/en/updates/",
     "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
-    "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml"
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap.xml",
+    "https://sbu001monterecco.github.io/por-derecho/archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/declarations/GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md"
   ],
+  "deployment_evidence": {
+    "pages_run_id": 32828389471,
+    "pages_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32828389471",
+    "status": "SUCCESS",
+    "head_sha": "0886dc4c0804ef24437ce86a5675cd04a264166e",
+    "completed_at": "2026-08-25T08:47:18Z"
+  },
+  "live_verification_evidence": {
+    "status": "PASS_14_OF_14_HTTP_200_EXACT_REPOSITORY_BYTES",
+    "verified_on": "2026-08-25",
+    "public_site_sha256": {
+      "es/alvaro-campanario-prieto-puente-lopez-noriega/index.html": "b9a2c43926af42cdcc7b70d0358045c2d579db382e04c7e5b85aeb3d292f67d7",
+      "en/alvaro-campanario-prieto-puente-lopez-noriega/index.html": "17f6aafcd4ab3cfaa207ce53ce71f52685ed3c811e799543cf05db2381ac2555",
+      "es/actualizaciones/index.html": "cd2a6c13efe19b207acca2c903979bd0938776978c98f902b72687d30e088136",
+      "en/updates/index.html": "4386c3987fff1038b580492b050f8fe44df29a0213f45aa12dda66c4abfd5ba8",
+      "es/actualizaciones/feed.xml": "c6a7a64918bfb51d4f7ded7bbc7f9b7cf3cd62c1bf2536dab6a63a131d96b5bc",
+      "en/updates/feed.xml": "7ea3387f4e5ebffd1b20bde8fcf2324acfab17aae2e3748dfeaa2170283ec908",
+      "sitemap.xml": "72d8a41a90c520db36a2320e3edb0fd5864cd3483c70150a329c8551e583e52d",
+      "archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md": "0439b04aa8617be85f5dc9027548341a9b096d88740cf2da9208f3a14061c06f",
+      "archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md": "97841d4397c5e69fbee0e1b93e18aba9afda28130c1ac0f30824e092fbe4d0eb",
+      "archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md": "380703b720f50099f6d2852842a2f46bf4ba96bfac2a8e29c76b06211d1a33a3",
+      "archive/declarations/GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md": "f6268a30e9e80ecb254a9af52dc4ee9d9aa36f6dc06b3e9b673e9932c63690d5",
+      "archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md": "059bd6d34e414a89d3b748a23b197ffb1ea24933d4720faa371022c0d962b17a",
+      "archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md": "15d71625a9308311719a80486a26dec9b340ce4914d931343a984f6898d9c3e2",
+      "archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md": "175277941200f4f2353fcc4792e9f3b4a287455562bd6f8269ba97b2800fc946"
+    }
+  },
+  "cross_thread_closeout": {
+    "status": "PENDING_MAIN",
+    "audit_path": "docs/deletion-audits/2026-08-25-alvaro-campanario-voice-osint-cross-thread-closeout.md",
+    "scope_boundary": "The audit covers all substantive instructions retrievable from preserved context. A still-running parallel chat cannot be observed live; any later unique output requires its own continuity check."
+  },
   "validation": {
-    "status": "LOCAL_PASS_PENDING_REMOTE_CI",
+    "status": "PR_HEAD_18_OF_18_AND_POST_MERGE_18_OF_18_SUCCESS_LIVE_VERIFIED",
     "evidence": [
       "Focused bilingual route, discovery, privacy and eleven-action validator passed locally",
       "Repository preservation gate passed locally",
       "Audience experience validator passed across 434 HTML pages and 4,776 internal links",
       "Mission-critical repository gate passed locally",
       "Agent governance compatibility advisory passed on the current-main base",
-      "Atom feeds, sitemap and manifest parsed successfully"
+      "Atom feeds, sitemap and manifest parsed successfully",
+      "All 18 pull-request-head checks completed successfully for PR 966",
+      "All 18 exact-merge post-merge checks completed successfully for 0886dc4c0804ef24437ce86a5675cd04a264166e",
+      "Pages run 32828389471 completed successfully for the exact merge SHA",
+      "Fourteen of fourteen controlled public surfaces returned HTTP 200 and matched repository bytes"
     ],
     "required": [
       "validate_alvaro_campanario_osint_publication.py",
