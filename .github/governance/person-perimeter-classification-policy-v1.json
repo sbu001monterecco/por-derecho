@@ -1,0 +1,182 @@
+{
+  "schema": "por-derecho.person-perimeter-classification-policy.v1",
+  "policy_id": "PD-PERIMETER-GOV-001",
+  "control_date": "2026-08-25",
+  "status": "GOVERNANCE_APPROVED_PERSON_DECISIONS_PENDING",
+  "authority_boundary": "This policy approves the classification and rendering architecture. It does not authorize an unrecorded person assignment, public naming decision, anonymisation, withdrawal or private-source publication.",
+  "neutral_identity_layer": {
+    "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+    "rule": "The immutable identity registry resolves identity only. It is not public-list or perimeter authority."
+  },
+  "public_list_order": [
+    {
+      "key": "OUR_PERIMETER",
+      "label_es": "Perímetro propio",
+      "label_en": "Our perimeter",
+      "allowed_classifications": ["OUR_CORE", "OUR_REPRESENTED_INTEREST"]
+    },
+    {
+      "key": "ADVERSE_PRIVATE_PERIMETER",
+      "label_es": "Partes privadas adversas e intereses opuestos documentados",
+      "label_en": "Adverse private parties and documented opposing interests",
+      "allowed_classifications": ["ADVERSE_FORMAL_PARTY", "ADVERSE_PRIVATE_FUNCTIONAL_ACTOR"]
+    },
+    {
+      "key": "PROFESSIONALS",
+      "label_es": "Profesionales y representantes",
+      "label_en": "Professionals and representatives",
+      "allowed_classifications": ["OUR_CURRENT_PROFESSIONAL", "OUR_FORMER_PROFESSIONAL", "ADVERSE_PARTY_PROFESSIONAL"]
+    },
+    {
+      "key": "INSTITUTIONS",
+      "label_es": "Instituciones y cargos",
+      "label_en": "Institutions and officeholders",
+      "allowed_classifications": ["INSTITUTIONAL_OFFICEHOLDER"]
+    },
+    {
+      "key": "WITNESSES",
+      "label_es": "Testigos, peritos y custodios documentales",
+      "label_en": "Witnesses, experts and document custodians",
+      "allowed_classifications": ["WITNESS_EXPERT_CUSTODIAN"]
+    }
+  ],
+  "private_only_classes": [
+    "TRANSACTION_DEVELOPMENT_PRIVATE",
+    "UNRESOLVED_PRIVATE_CANDIDATE"
+  ],
+  "classifications": {
+    "OUR_CORE": {
+      "scope": "Claimant, director, declarant, rights-holder or person directly asserting or defending project-side rights.",
+      "is_private_party_perimeter": true
+    },
+    "OUR_REPRESENTED_INTEREST": {
+      "scope": "Entity or interest whose assets, income, control, rights or claimant-specific losses are being protected or recovered.",
+      "is_private_party_perimeter": true
+    },
+    "ADVERSE_FORMAL_PARTY": {
+      "scope": "Private formal opposing party, creditor, purchaser, claimant, owner or governance interest for the stated matter and period.",
+      "is_private_party_perimeter": true
+    },
+    "ADVERSE_PRIVATE_FUNCTIONAL_ACTOR": {
+      "scope": "Private person with a source-supported, dated alleged or documented adverse act concerning governance, control, possession, voting, access, assets, income or implementation.",
+      "is_private_party_perimeter": true
+    },
+    "OUR_CURRENT_PROFESSIONAL": {
+      "scope": "Current professional acting for a project-side client or interest.",
+      "is_private_party_perimeter": false
+    },
+    "OUR_FORMER_PROFESSIONAL": {
+      "scope": "Former professional acting for a project-side client or interest.",
+      "is_private_party_perimeter": false
+    },
+    "ADVERSE_PARTY_PROFESSIONAL": {
+      "scope": "Professional representing or advising an adverse party; representation alone does not make the professional an adverse private actor.",
+      "is_private_party_perimeter": false
+    },
+    "INSTITUTIONAL_OFFICEHOLDER": {
+      "scope": "Judge, judicial officer, fiscal, police, regulator, authority or court-appointed officeholder track.",
+      "is_private_party_perimeter": false
+    },
+    "WITNESS_EXPERT_CUSTODIAN": {
+      "scope": "Person principally relevant as witness, expert, technical professional, contemporaneous recipient or document custodian.",
+      "is_private_party_perimeter": false
+    },
+    "TRANSACTION_DEVELOPMENT_PRIVATE": {
+      "scope": "Prospective investor, buyer, lender, banker, operator, introducer or ordinary commercial counterparty; private by default.",
+      "is_private_party_perimeter": false
+    },
+    "UNRESOLVED_PRIVATE_CANDIDATE": {
+      "scope": "Identity, capacity or legal relevance unresolved; no public person-level display.",
+      "is_private_party_perimeter": false
+    }
+  },
+  "evidence_status_values": [
+    "VERIFIED_CAPACITY",
+    "FORMAL_PARTY",
+    "ATTRIBUTED_ALLEGATION",
+    "CONTESTED",
+    "OPEN_VERIFICATION",
+    "ADJUDICATED"
+  ],
+  "display_modes": [
+    "PRIVATE_ONLY",
+    "PUBLIC_AGGREGATE_ANONYMOUS",
+    "PUBLIC_ROLE_PSEUDONYM",
+    "PUBLIC_PARTIAL_NAME",
+    "PUBLIC_FULL_NAME",
+    "PUBLIC_WITHDRAWN"
+  ],
+  "default_rules": {
+    "newly_discovered_person": "UNRESOLVED_PRIVATE_CANDIDATE",
+    "transaction_contact": "TRANSACTION_DEVELOPMENT_PRIVATE",
+    "blank_or_ambiguous_authorization": "PRIVATE_ONLY",
+    "professional_representation": "CLASSIFY_AS_PROFESSIONAL_UNLESS_SEPARATE_ACTOR_SPECIFIC_BASIS_EXISTS",
+    "institutional_role": "KEEP_SEPARATE_FROM_PRIVATE_ADVERSE_PERIMETER",
+    "witness_or_custodian_role": "KEEP_SEPARATE_FROM_PRIVATE_ADVERSE_PERIMETER",
+    "family_employment_group_or_chronology": "INSUFFICIENT_FOR_PERIMETER_ASSIGNMENT"
+  },
+  "person_authorization_required_fields": [
+    "identity_id_or_private_candidate_id",
+    "exact_private_identity_reference",
+    "organization_and_capacity",
+    "relevant_date_or_period",
+    "legal_or_evidential_proposition",
+    "source_basis",
+    "what_established",
+    "what_not_established",
+    "public_naming_necessity",
+    "privacy_and_reidentification_assessment",
+    "classification",
+    "display_mode",
+    "public_label",
+    "authorization_reference",
+    "authorization_date",
+    "review_status"
+  ],
+  "prohibited_inferences": [
+    "Perimeter membership is not guilt or liability.",
+    "A relationship does not transfer knowledge, intent, control or responsibility.",
+    "A lawyer is not an adverse private actor merely because of the client represented.",
+    "A professional for our side is not part of our ownership or claimant perimeter merely because of the mandate.",
+    "A judge, fiscal or insolvency officeholder is not a private adverse party merely because an act or omission is challenged.",
+    "A witness, expert or custodian is not adverse merely because the evidence may contradict the project.",
+    "Transaction interest, meeting attendance or chronology does not establish either principal perimeter."
+  ],
+  "legacy_controls": {
+    "reuse_immutable_id": false,
+    "history_rewrite_as_privacy_remedy": false,
+    "preserve_private_identity_and_native_evidence": true,
+    "record_residual_git_cache_and_third_party_exposure": true
+  },
+  "current_specific_controls": [
+    {
+      "id": "PD-SP-P-0065",
+      "classification": "TRANSACTION_DEVELOPMENT_PRIVATE",
+      "public_principal_perimeter_eligibility": "NOT_AUTHORIZED",
+      "display_decision": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "reason": "Historic banking or transaction-development contact alone is insufficient for either principal legal perimeter."
+    },
+    {
+      "id": "PD-SP-P-0066",
+      "classification": "TRANSACTION_DEVELOPMENT_PRIVATE",
+      "public_principal_perimeter_eligibility": "NOT_AUTHORIZED",
+      "display_decision": "PENDING_PERSON_SPECIFIC_AUTHORIZATION",
+      "reason": "Historic banking or transaction-development contact alone is insufficient for either principal legal perimeter."
+    }
+  ],
+  "rendering_contract": {
+    "single_undifferentiated_people_list": "PROHIBITED",
+    "principal_perimeters_visibly_separate": true,
+    "professionals_in_separate_section": true,
+    "institutions_in_separate_section": true,
+    "witnesses_in_separate_section": true,
+    "transaction_and_unresolved_people_public_by_default": false,
+    "person_level_publication_requires_authorization": true
+  },
+  "implementation_state": {
+    "governance_rule": "APPROVED",
+    "complete_private_classification_map": "NOT_IN_PUBLIC_REPOSITORY",
+    "person_by_person_authorization_matrix": "PENDING",
+    "public_projection_and_bilingual_rendering": "PENDING_AUTHORIZED_IMPLEMENTATION"
+  }
+}
