@@ -8,9 +8,31 @@
   "owner": "Por Derecho / Project Sun Rock",
   "source_main_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
   "purpose": "Synchronize repository, deployment, verification, identity-denominator, material-update and PR-reconciliation state without changing case merits.",
+  "expected_routes": {
+    "es": [
+      "es/registro-identidad-materia/index.html",
+      "es/actualizaciones/index.html"
+    ],
+    "en": [
+      "en/matter-identity-registry/index.html",
+      "en/updates/index.html"
+    ]
+  },
+  "assets": [
+    "CURRENT_UNITARY_STATE.md",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "ops/CURRENT_STATE.json",
+    "ops/PRODUCTION_STATUS.json",
+    "ops/PR_RECONCILIATION_LEDGER.json",
+    "assets/data/material-updates-v1.json",
+    "sitemap-unitary-control-plane.xml",
+    "scripts/validate_unitary_control_plane.py",
+    ".github/workflows/verify-unitary-control-plane.yml"
+  ],
   "preserved_concurrent_releases": [
     "Priority-actions programme merge f9d0a22305431eeb6405b70f3bc30e5ff5bae514 and clarification 2b4af225818940a6e83136e76cdc246a056096a6",
-    "Prescription, damages and interim-relief recovery release ae22ca42c844813ff73220614ac150cd734d572e"
+    "Prescription, damages and interim-relief recovery release ae22ca42c844813ff73220614ac150cd734d572e",
+    "Prescription recovery deletion-safe closeout 64a0cdc321a9efaade59f5239f4d74729bf2d772 will be incorporated before merge"
   ],
   "changed_surfaces": [
     "CURRENT_UNITARY_STATE.md",
@@ -30,7 +52,14 @@
     "archive/ops-snapshots/CURRENT_STATE_20260824.json",
     "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json"
   ],
-  "identity_denominator": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+  "identity_denominator": {
+    "total": 185,
+    "PERSON": 86,
+    "ORGANISATION": 66,
+    "STRUCTURE": 10,
+    "INSTITUTION": 13,
+    "PROCEEDING": 10
+  },
   "material_update_date": "2026-08-25",
   "publication_boundaries": [
     "This synchronization does not create a new allegation, judicial finding, procedural outcome, claimant right or recovery quantum.",
