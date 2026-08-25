@@ -1,10 +1,14 @@
 # CURRENT PRIORITY ACTIONS HANDOVER — 25 AUGUST 2026
 
-**Prepared from `main`:** `7fedbbbeed6ee7f014ecbeda4565d880ecdbaf65`  
+**Initial drafting baseline recorded by the programme:** `7fedbbbeed6ee7f014ecbeda4565d880ecdbaf65`  
+**Current-main reconciliation baseline:** `4fac6bf1feeb4042fbc40ae22de7dec21c614250`  
+**Programme merge:** `f9d0a22305431eeb6405b70f3bc30e5ff5bae514`  
 **Purpose:** make the priority actions from the latest unitary repository/site redigest executable by this thread or a future authorised thread without reconstructing them from chat.  
 **Controlling programme:** `ops/priority-actions/program-v1.json`  
 **Human runbook:** `ops/priority-actions/README.md`  
 **Future-thread prompt:** `ops/priority-actions/FUTURE_THREAD_EXECUTION_PROMPT.md`
+
+The `prepared_from_main` value in `program-v1.json` preserves the initial drafting baseline. Before publication, the complete 17-file programme was rebuilt as one additive commit on the reconciliation baseline above, preserving concurrent repository work. Every execution pass must still fetch current `main`; none of these SHAs should be assumed current merely because they appear in this handover.
 
 ## Start here
 
