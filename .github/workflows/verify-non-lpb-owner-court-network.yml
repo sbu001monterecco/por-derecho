@@ -1,0 +1,68 @@
+name: Verify non-LPB/Matkator owner court network
+on:
+  pull_request:
+    paths:
+      - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
+      - 'es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/**'
+      - 'en/matter-identity-registry/non-lpb-matkator-owner-network/**'
+      - 'assets/owner-court-network.css'
+      - 'assets/spanish-professional-registry-integration-20260825.js'
+      - 'scripts/validate_non_lpb_owner_court_network.py'
+      - 'sitemap-spanish-professional-register.xml'
+      - '.github/workflows/verify-non-lpb-owner-court-network.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
+      - 'es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/**'
+      - 'en/matter-identity-registry/non-lpb-matkator-owner-network/**'
+      - 'assets/owner-court-network.css'
+      - 'assets/spanish-professional-registry-integration-20260825.js'
+      - 'scripts/validate_non_lpb_owner_court_network.py'
+      - 'sitemap-spanish-professional-register.xml'
+      - '.github/workflows/verify-non-lpb-owner-court-network.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: {persist-credentials: false, fetch-depth: 0}
+      - name: Validate court-derived network
+        run: python3 scripts/validate_non_lpb_owner_court_network.py
+      - name: Verify no private-candidate leakage
+        run: |
+          ! grep -R -E 'Josep Ponsirenas|Oriol Huguet|José Miguel Molina Petit|Anastasio Molina López|Lourdes Moreno' assets/data/non-lpb-matkator-owner-court-network-v1.json es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator en/matter-identity-registry/non-lpb-matkator-owner-network
+      - name: Verify public routes
+        if: github.event_name != 'pull_request'
+        env: {BASE: 'https://sbu001monterecco.github.io/por-derecho'}
+        shell: python
+        run: |
+          import os,time,urllib.request
+          base=os.environ['BASE'].rstrip('/')
+          checks=[
+            ('/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/',['PD-SP-OWNER-COURT-NETWORK-001','Los siete propietarios/demandantes','Celia Guillén Pérez','Manuel Molina Climent']),
+            ('/en/matter-identity-registry/non-lpb-matkator-owner-network/',['PD-SP-OWNER-COURT-NETWORK-001','The seven owners/claimants','Celia Guillén Pérez','Manuel Molina Climent']),
+            ('/assets/data/non-lpb-matkator-owner-court-network-v1.json',['L1_JV1260_AP89_CLAIMANTS','PD-SP-OCN-E020'])]
+          for route,markers in checks:
+            url=base+route; last=''
+            for _ in range(10):
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'por-derecho-owner-court-network-verifier/1'})
+                with urllib.request.urlopen(req,timeout=30) as res: body=res.read().decode('utf-8',errors='replace')
+                missing=[m for m in markers if m not in body]
+                if not missing: print('LIVE VERIFIED',url,len(body)); break
+                last=f'missing {missing}'
+              except Exception as exc:last=str(exc)
+              time.sleep(8)
+            else: raise SystemExit(f'{url}: {last}')
+      - name: Summary
+        if: always()
+        run: |
+          echo '## Non-LPB/Matkator owner court network' >> "$GITHUB_STEP_SUMMARY"
+          echo '- AP89 claimant-owner core remains exactly seven.' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Wider Montelanza/Molina perimeter remains separately graded as pleading/Community evidence.' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Celia Guillén and Manuel Molina Climent have individualised sourced edges.' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Acosta Matos family/business actors are clustered while attribution remains person/entity/date specific.' >> "$GITHUB_STEP_SUMMARY"
