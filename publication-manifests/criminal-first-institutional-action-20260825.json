@@ -2,6 +2,7 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "criminal-first-institutional-action-20260825",
   "control_date": "2026-08-25",
+  "current_state": "PR_OPEN",
   "owner": "Por Derecho / Project Sun Rock",
   "status": "prepared_in_pr",
   "package": "criminal-first-institutional-action",
