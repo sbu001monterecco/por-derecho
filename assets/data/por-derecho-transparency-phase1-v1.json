@@ -1,0 +1,116 @@
+{
+  "schema": "por-derecho.transparency-phase1.v1",
+  "release_id": "PD-TR-20260825-01",
+  "control_date": "2026-08-25",
+  "publication_state": "AUTHORISED_FOR_PUBLICATION_PENDING_MERGE_AND_LIVE_READBACK",
+  "authorisation": "Authorise Phase 1 using only the reviewed P0–P3 names and the approved disclosure wording.",
+  "authoring_base_sha": "a968c51548db1de57b077f5327fe0d279eaf00bd",
+  "routes": {
+    "en": "/en/por-derecho/transparency/",
+    "es": "/es/por-derecho/transparencia/"
+  },
+  "organisational_status": {
+    "status": "INITIATIVE_IN_FORMATION",
+    "registered_foundation_claimed": false,
+    "constituted_independent_governing_body_claimed": false,
+    "institutional_adoption_or_endorsement_claimed": false,
+    "current_public_voice": {
+      "identity_id": "PD-SP-P-0001",
+      "name": "Gil Marer",
+      "role": "FOUNDER_AND_CURRENT_PUBLIC_VOICE"
+    },
+    "additional_current_roles": "UNDER_FACTUAL_RECONCILIATION"
+  },
+  "related_matter_disclosure": {
+    "founder_direct_interest_disclosed": true,
+    "matter": "Sun Park / MYND Yaiza and related proceedings and recovery work",
+    "method_not_validated_by_founder_position": true,
+    "independent_validation_claimed": false
+  },
+  "historical_names_policy": {
+    "identity_authority": "PD-SP-IDENTITY-REGISTRY-001",
+    "public_tiers_permitted": ["P0", "P1", "P2", "P3"],
+    "new_public_actor_profiles_created_by_phase1": 0,
+    "unreviewed_names_permitted": false,
+    "private_source_identity_publication_permitted": false,
+    "completeness_claimed": false,
+    "public_register_en": "/en/matter-identity-registry/",
+    "public_register_es": "/es/registro-identidad-materia/",
+    "inclusion_rule": "A documented historical role or source context does not imply wrongdoing, transferred knowledge, coordination, liability or continuing involvement."
+  },
+  "funding_disclosure": {
+    "consolidated_present_tense_statement": "UNDER_VERIFICATION",
+    "external_donation_claimed": false,
+    "external_grant_claimed": false,
+    "external_sponsorship_claimed": false,
+    "institutional_funding_claimed": false,
+    "financial_independence_claimed": false,
+    "interpretation_rule": "No inference should be drawn from the absence of a completed statement."
+  },
+  "evidence_method": {
+    "required_statuses": [
+      "DOCUMENTED_FACT",
+      "PUBLIC_RECORD_FACT",
+      "OFFICIAL_FINDING",
+      "ATTRIBUTED_STATEMENT",
+      "EVIDENCE_BASED_ANALYSIS",
+      "DISPUTED",
+      "CORRECTED",
+      "NOT_LOCATED",
+      "PRIVATE_SOURCE_PUBLIC_SUMMARY",
+      "NOT_FOR_PUBLICATION"
+    ],
+    "not_located_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT",
+    "retrievability_rule": "RETRIEVABILITY_DOES_NOT_IMPLY_PUBLISHABILITY",
+    "human_publication_decision_required": true
+  },
+  "technology_status": {
+    "implemented": [
+      "IMMUTABLE_IDENTITY_AND_NON_EQUIVALENCE_CONTROLS",
+      "SOURCE_AND_MATTER_BOUNDARY_RULES",
+      "PRIVATE_PUBLIC_EVIDENCE_SEPARATION_MODEL",
+      "BOUNDED_RPL2523_RETRIEVAL_PILOT",
+      "KNOWN_ANSWER_EVALUATIONS",
+      "HUMAN_REVIEWED_PUBLICATION_AND_CORRECTION_CONTROLS",
+      "REPOSITORY_AND_DEPLOYMENT_MONITORING"
+    ],
+    "not_claimed_as_implemented": [
+      "COMPLETE_PRIVATE_EVIDENCE_VAULT_FOR_WHOLE_CORPUS",
+      "GENERAL_PRIVATE_CORPUS_AI_ASSISTANT",
+      "AUTOMATED_LEGAL_DECISION_MAKING",
+      "GUILT_OR_CREDIBILITY_SCORING",
+      "AUTOMATIC_LLM_TO_WEBSITE_PUBLICATION",
+      "REPOSITORY_WIDE_SEMANTIC_RAG",
+      "INSTITUTIONAL_DEPLOYMENT_OR_ADOPTION"
+    ]
+  },
+  "correction_and_reply": {
+    "material_corrections_update_same_record": true,
+    "silence_is_admission": false,
+    "general_case_intake": false,
+    "protected_reporting_channel": false,
+    "en_route": "/en/collaborate/",
+    "es_route": "/es/colabora/"
+  },
+  "protected_categories": [
+    "PRIVATE_EMAILS_AND_FULL_HEADERS",
+    "PRIVILEGED_LEGAL_ADVICE",
+    "ACTIVE_LITIGATION_STRATEGY",
+    "PROTECTED_SOURCE_IDENTITIES",
+    "PRIVATE_VAULT_OR_PROVIDER_LOCATORS",
+    "UNNECESSARY_PERSONAL_DATA",
+    "SECURITY_SENSITIVE_INFORMATION",
+    "UNVERIFIED_ALLEGATIONS"
+  ],
+  "phase1_not_authorised": [
+    "NEW_UNREVIEWED_PUBLIC_NAMES",
+    "NEW_PUBLIC_ACTOR_PROFILES",
+    "PRIVATE_SOURCE_IDENTITIES_OR_LOCATORS",
+    "UNVERIFIED_FUNDING_FIGURES",
+    "UNVERIFIED_CURRENT_ROLES",
+    "COMPLETE_HISTORICAL_CENSUS_CLAIM",
+    "AUTOMATIC_PUBLICATION",
+    "COMPLAINTS_INTAKE",
+    "INSTITUTIONAL_ADOPTION_CLAIM"
+  ]
+}

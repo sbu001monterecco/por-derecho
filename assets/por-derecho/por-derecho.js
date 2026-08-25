@@ -43,6 +43,16 @@
     const anchor = nav.querySelector('.pd-language,.pd-back');
     nav.insertBefore(link, anchor || null);
   }
+  if (nav && !nav.querySelector('a[href*="transparency"],a[href*="transparencia"]')) {
+    const link = document.createElement('a');
+    link.dataset.pdTransparencyLink = 'true';
+    link.href = lang === 'en'
+      ? `${base}transparency/`
+      : `${base}transparencia/`;
+    link.textContent = lang === 'en' ? 'Transparency' : 'Transparencia';
+    const anchor = nav.querySelector('.pd-language,.pd-back');
+    nav.insertBefore(link, anchor || null);
+  }
 
   function ensureStageTwoCss() {
     if (document.querySelector('link[href*="foundation-stage-2.css"]')) return;
@@ -58,6 +68,64 @@
     link.rel = 'stylesheet';
     link.href = '/por-derecho/assets/por-derecho/foundation-stage-3.css';
     document.head.appendChild(link);
+  }
+
+  function addTransparencyHome() {
+    const path = window.location.pathname.replace(/index\.html$/, '');
+    const isHome = path === '/por-derecho/es/por-derecho/' || path === '/por-derecho/en/por-derecho/';
+    if (!isHome || document.querySelector('[data-pd-transparency-phase1]')) return;
+    ensureStageTwoCss();
+    const main = document.querySelector('main');
+    if (!main) return;
+    const originBand = main.querySelector('.pd-origin-band');
+    const section = document.createElement('section');
+    section.className = 'pd-section';
+    section.setAttribute('data-pd-transparency-phase1', '20260825');
+    if (lang === 'en') {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Phase 1 transparency</p><h2>Who speaks, whose interests are involved, what is implemented and what remains unverified.</h2></div><p>Por Derecho now publishes one present-tense transparency gateway without claiming a registered Foundation, independent governance, external funding, institutional adoption or a complete historical actor census.</p></div>
+        <div class="pds2-docs">
+          <article class="pds2-doc"><span class="pds2-state">Current</span><h3>Founder-led</h3><p>Gil Marer is the founder and current public voice. No independent governing body has yet been constituted.</p></article>
+          <article class="pds2-doc"><span class="pds2-state">Disclosed interest</span><h3>Born from Sun Park</h3><p>The founding experience involves direct legal and economic interests. It may generate questions; it cannot validate the answer.</p></article>
+          <article class="pds2-doc"><span class="pds2-state">Controlled names</span><h3>P0–P3 only</h3><p>No new historical profile is created. Public names remain limited to the reviewed immutable identity register.</p></article>
+          <article class="pds2-doc"><span class="pds2-state">Under verification</span><h3>Funding statement</h3><p>Current costs and in-kind support are being reconciled. No external grant, donation, sponsorship or institutional funding is claimed here.</p></article>
+        </div>
+        <div class="pd-actions"><a class="pd-button" href="${base}transparency/">Open the Transparency Hub →</a><a class="pd-button secondary" href="/por-derecho/en/matter-identity-registry/">Review the identity workbench</a></div>
+      </div>`;
+    } else {
+      section.innerHTML = `<div class="pd-shell">
+        <div class="pd-section-head"><div><p class="pd-kicker">Fase 1 de transparencia</p><h2>Quién habla, qué intereses existen, qué está implementado y qué sigue sin verificar.</h2></div><p>Por Derecho publica ahora una puerta de transparencia en tiempo presente sin afirmar Fundación registrada, gobierno independiente, financiación externa, adopción institucional o censo histórico completo.</p></div>
+        <div class="pds2-docs">
+          <article class="pds2-doc"><span class="pds2-state">Actual</span><h3>Dirigido por el fundador</h3><p>Gil Marer es el fundador y la voz pública actual. Todavía no se ha constituido un órgano independiente.</p></article>
+          <article class="pds2-doc"><span class="pds2-state">Interés declarado</span><h3>Nacido de Sun Park</h3><p>La experiencia de origen incluye intereses jurídicos y económicos directos. Puede generar preguntas; no puede validar la respuesta.</p></article>
+          <article class="pds2-doc"><span class="pds2-state">Nombres controlados</span><h3>Solo P0–P3</h3><p>No se crea ninguna ficha histórica nueva. Los nombres públicos siguen limitados al registro inmutable revisado.</p></article>
+          <article class="pds2-doc"><span class="pds2-state">En verificación</span><h3>Declaración de financiación</h3><p>Se están conciliando costes actuales y apoyo en especie. Aquí no se afirma subvención, donación, patrocinio o financiación institucional externa.</p></article>
+        </div>
+        <div class="pd-actions"><a class="pd-button" href="${base}transparencia/">Abrir el Portal de Transparencia →</a><a class="pd-button secondary" href="/por-derecho/es/registro-identidad-materia/">Revisar el banco de identidades</a></div>
+      </div>`;
+    }
+    if (originBand && originBand.nextSibling) main.insertBefore(section, originBand.nextSibling);
+    else if (main.firstElementChild && main.firstElementChild.nextSibling) main.insertBefore(section, main.firstElementChild.nextSibling);
+    else main.appendChild(section);
+  }
+
+  function addTransparencyStrip() {
+    const path = window.location.pathname.replace(/index\.html$/, '');
+    const isHome = path === '/por-derecho/es/por-derecho/' || path === '/por-derecho/en/por-derecho/';
+    const isHub = path.includes('/por-derecho/transparency/') || path.includes('/por-derecho/transparencia/');
+    if (isHome || isHub || document.querySelector('[data-pd-transparency-strip]')) return;
+    ensureStageTwoCss();
+    const main = document.querySelector('main');
+    if (!main) return;
+    const section = document.createElement('section');
+    section.className = 'pd-section alt';
+    section.setAttribute('data-pd-transparency-strip', '20260825');
+    if (lang === 'en') {
+      section.innerHTML = `<div class="pd-shell"><div class="pds2-boundary"><h3>Transparency status</h3><p>Por Derecho remains a founder-led initiative in formation. The founder-related origin, absence of constituted independent governance, P0–P3 public-name gate, human-reviewed AI boundary, funding uncertainty and correction route are disclosed in one place.</p><p><a href="${base}transparency/">Read the current Transparency Hub →</a></p></div></div>`;
+    } else {
+      section.innerHTML = `<div class="pd-shell"><div class="pds2-boundary"><h3>Estado de transparencia</h3><p>Por Derecho sigue siendo una iniciativa en formación dirigida por el fundador. El origen vinculado al fundador, la ausencia de gobierno independiente constituido, la puerta P0–P3 para nombres públicos, el límite de IA bajo revisión humana, la financiación pendiente y la vía de corrección se declaran en un único lugar.</p><p><a href="${base}transparencia/">Leer el Portal de Transparencia actual →</a></p></div></div>`;
+    }
+    main.appendChild(section);
   }
 
   function addFoundationStageTwoHome() {
@@ -176,9 +244,11 @@
     else main.appendChild(section);
   }
 
+  addTransparencyHome();
   addFoundationStageTwoHome();
   addFoundationStageThreeHome();
   addCorrectedMaturityLadder();
+  addTransparencyStrip();
 
   const decisions = document.querySelectorAll('[data-decision]');
   const output = document.querySelector('[data-decision-output]');
