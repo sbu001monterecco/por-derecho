@@ -144,6 +144,19 @@ minimization, source-status language, rights review, current user authority and
 all relevant publication-integrity checks. A legal-dispute publication approval
 does not authorize transaction-pipeline publication, and vice versa.
 
+## Subject-specific continuity records
+
+For future Andbank / Actyus / Israel relationship-development research, drafting
+or follow-up, first read:
+
+- `.github/governance/records/ANDBANK_ACTYUS_ISRAEL_RELATIONSHIP_OUTREACH_CONTINUITY_25AUG2026.md`
+
+That record is a minimized, public-safe continuity derivative only. Re-query the
+private mailbox for the latest correspondence and revalidate current executive
+roles, entity structure and public facts before reuse. It is not authority to
+send an email, disclose transaction material, cross-link to the legal record or
+publish the work on the website.
+
 ## Review states
 
 Use one of:
