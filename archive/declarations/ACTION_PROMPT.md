@@ -48,6 +48,12 @@ Use this instruction in any thread where a first-person account, testimony, voic
 
 15. **Return an execution report.** State declaration number and public filename; public declarant descriptor and subject; whether it is signed, unsigned, ratified or presented; any `REQUIERE ACLARACIÓN` items; hashes or filing references preserved; PR number/merge status; and the next concrete evidential actions.
 
+16. **Apply the voice-to-text protocol whenever an oral source is involved.** Read `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`; record V0–V4 source/version state and S0–S4 speaker-attribution grade; keep speaker boundaries, corrections and missing segments visible; and run the applicable clarification queue. Text attribution is not voice authentication, and one person cannot ratify another person's words.
+
+17. **Run a named-person/entity OSINT check before linking actors.** Apply `archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`; use exact names, dated capacities and direct sources; search contrary material and homonyms; distinguish verified, alleged, inferred and not-located relationships; and never transfer knowledge, intention or liability through association.
+
+18. **Keep private mailboxes and source bodies out of public GitHub.** Use opaque source IDs and aggregate counts only where material. Full mailbox acquisition requires the account holder's authorisation and the custody workflow; do not request a password, publish a private address or treat a mirrored mailbox subset as complete.
+
 ## Non-negotiable integrity rule
 
 **The declaration must be useful without pretending to be stronger than it is.** Preserve serious testimony faithfully, preserve uncertainty faithfully, make both actionable, and do not confuse public anonymisation with alteration of the underlying evidence.

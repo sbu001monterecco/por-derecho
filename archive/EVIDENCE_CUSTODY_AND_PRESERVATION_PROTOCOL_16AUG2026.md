@@ -211,6 +211,14 @@ For elEconomista specifically, also read:
 - CR-020/CR-021/CR-023;
 - ME-028–ME-032 and ME-049.
 
+## Reserved-declarant private mailbox and voice corpus — 25-Aug-2026 addendum
+
+The reserved declarant's private mailbox is represented publicly only by source alias `RDM-PRIVATE-MAILBOX-01`. A complete paginated search of the currently authorised corporate mailbox located 2,413 messages sent to or from that source alias, with 2,174 messages in 2012–2018. This is a material preservation lead and mirrored subset, not the complete private mailbox and not proof that every match is relevant.
+
+Full acquisition requires the account holder's direct authorisation and the workflow in `archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`: native Takeout and/or verified-account API `RAW` export, untouched master, SHA-256 manifest, attachment recovery, label and date-range inventory, error log, cross-mailbox reconciliation, privilege review and public-safe derivatives. Never request or accept a password through chat; never alter mailbox state during acquisition; and never publish the private address, message bodies, subjects, participant list or provider identifiers.
+
+For every voice, dictation or derived declaration, apply `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`. The custody manifest must link V0 native audio through V1–V4 transcript/adoption versions, preserve speaker boundaries and corrections, and record S0–S4 attribution separately from truth or corroboration. Until the native files and hashes are actually preserved, do not represent that custody step as complete.
+
 ## Controlling rule
 
 **Repository memory tells us what evidence exists or is sought. The private custody layer must preserve the native thing itself. Neither layer substitutes for the other.**

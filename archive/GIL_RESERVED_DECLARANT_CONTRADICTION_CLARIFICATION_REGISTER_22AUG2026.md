@@ -88,3 +88,16 @@ Any future thread touching the reserved declarant, Declaration 005, Pink, CEXP, 
 7. ME-047, ME-065, ME-066, ME-068 and ME-069.
 
 The source Declaration 005 remains preserved. Corrections must be added visibly; they must not silently rewrite the original account.
+
+## 8. 25-Aug-2026 continuation — Declaration 011, voice adoption and separate clarification
+
+Declaration 011 adds the Campanario–Prieto Puente–López Noriega–Community/corporate perimeter and is controlled by:
+
+1. `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`;
+2. `archive/declarations/GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md`;
+3. `archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md`; and
+4. `archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md`.
+
+The new continuation does not change the relationship rule in section 1. Gil's identification or instruction to archive supports provenance only; it does not ratify the declarant's exact words. The declarant must separately adopt, correct or reject Declaration 011, and Gil must separately identify which propositions he states from his own knowledge.
+
+The controlling tensions now also include: no direct personal presence at the 2008 or February/June-2011 meetings; the `84.988%` attendance versus `74.90%` approval and `10.01%` opposition/reservation distinction; 2-Feb/22-Jun chronology; Pamanil's documented acts versus unproved integrated performance; Campanario's already-existing 2009 insolvency-administrator role; unproved friendship/motive/formal handoff; capacity overlap versus an unadjudicated professional-conflict conclusion; verified limited corporate links versus prohibited transfer of knowledge or responsibility; and Antonio/Shaila title, power and vote questions that remain open finca by finca.
