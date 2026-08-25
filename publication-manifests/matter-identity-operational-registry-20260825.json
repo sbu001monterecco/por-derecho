@@ -2,14 +2,105 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "matter-identity-operational-registry-20260825",
   "control_date": "2026-08-25",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
-  "status": "prepared_in_pr",
+  "status": "live_verified",
   "package": "matter-identity-operational-registry",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
   "operational_control_id": "PD-SP-IDENTITY-OPS-001",
+  "publication_merge_sha": "30887f6db66c31e55aaef43ac5cc355c0d647e3f",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
   "linked_execution_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-operational-control-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/matter-identity-registry.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/matter-identity-registry.css",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-matter-identity-operational.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt"
+  ],
+  "deployment_evidence": {
+    "pages_run_id": 32873812083,
+    "pages_run_number": 1093,
+    "head_sha": "30887f6db66c31e55aaef43ac5cc355c0d647e3f",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-25T16:45:00Z",
+    "completed_at": "2026-08-25T16:46:20Z"
+  },
+  "live_verification_evidence": {
+    "workflow": ".github/workflows/verify-operational-matter-identity-registry.yml",
+    "workflow_run_id": 32873813105,
+    "workflow_run_number": 4,
+    "job_id": 97886869676,
+    "head_sha": "30887f6db66c31e55aaef43ac5cc355c0d647e3f",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-25T16:45:01Z",
+    "completed_at": "2026-08-25T16:46:21Z",
+    "verified_at": "2026-08-25T16:46:18Z",
+    "checks": [
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+        "bytes": 16441,
+        "markers": ["PD-SP-IDENTITY-OPS-001", "Una identidad. Un ID. Una cadena operativa.", "data-queue-list=\"p0\""]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+        "bytes": 16038,
+        "markers": ["PD-SP-IDENTITY-OPS-001", "One identity. One ID. One operational chain.", "data-queue-list=\"p0\""]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-operational-control-v1.json",
+        "bytes": 14524,
+        "markers": ["PD-SP-ID-ACT-0001", "PD-SP-ID-ACT-0009", "PD-SP-O-0008"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.json",
+        "bytes": 3601,
+        "markers": ["PD-SP-IDENTITY-REGISTRY-001", "\"total\":159"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/matter-identity-registry.js",
+        "bytes": 33440,
+        "markers": ["buildOperationalRecords", "P0_ROUTE_COVERAGE", "exportRecords"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/matter-identity-registry.css",
+        "bytes": 11244,
+        "markers": [".id-workbench", ".id-dialog", ".id-action-grid"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/sitemap-matter-identity-operational.xml",
+        "bytes": 2641,
+        "markers": ["registro-identidad-materia", "matter-identity-registry"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/robots.txt",
+        "bytes": 3361,
+        "markers": ["sitemap-matter-identity-operational.xml"]
+      }
+    ]
+  },
+  "pre_merge_validation": {
+    "registry_ids": 159,
+    "institutional_actions": 15,
+    "graph_nodes": 25,
+    "graph_edges": 37,
+    "exact_identity_queue": 14,
+    "render_cases": ["Spanish desktop", "Spanish mobile", "English desktop", "English mobile"],
+    "render_results": [
+      "all 159 rows loaded",
+      "P0, unresolved, missing-public-surface and distinction queues populated",
+      "unresolved filter returned exactly 14 identities",
+      "P0 filtering and immutable-ID search passed",
+      "actor detail dialog resolved linked action references",
+      "no JavaScript console errors",
+      "no mobile body overflow"
+    ]
+  },
   "expected_routes": {
     "es": ["es/registro-identidad-materia/index.html"],
     "en": ["en/matter-identity-registry/index.html"]
@@ -63,13 +154,6 @@
     "Protected private-source identifiers and reversible vault locators never become public IDs.",
     "Corrections and contrary identity evidence update the same immutable ID and remain visible."
   ],
-  "restart_rule": "Future threads must load the canonical registry, operational control, action matrix, convergence graph, ID-extension policy and Issues #988/#995. New evidence must update existing identity and action IDs rather than create disconnected duplicates.",
-  "post_merge_verification": [
-    "Confirm both bilingual registry routes return 200 and contain PD-SP-IDENTITY-OPS-001.",
-    "Confirm both routes load the canonical registry, operational control, action matrix and graph index.",
-    "Confirm the P0, unresolved, no-public-surface and distinction queues render on desktop and mobile.",
-    "Confirm all registry IDs are unique and every action/graph reference resolves.",
-    "Confirm JavaScript, JSON, stylesheet, sitemap and robots discovery are live.",
-    "Advance the manifest to LIVE_VERIFIED only after exact-marker public readback."
-  ]
+  "restart_rule": "Future threads must load the canonical registry, operational control, action matrix, convergence graph, ID-extension policy, this LIVE_VERIFIED manifest and Issues #988/#995. New evidence must update existing identity and action IDs rather than create disconnected duplicates.",
+  "continuous_verification_rule": "The operational-registry validator and public verifier must rerun whenever a registry part, operational control, action matrix, graph part, bilingual registry route, JavaScript, stylesheet, sitemap, robots declaration, verifier or this manifest changes."
 }
