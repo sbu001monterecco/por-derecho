@@ -6,7 +6,7 @@
 
 **Objeto:** preservar y revisar, con autorización de la titular, el buzón privado que contiene correspondencia material de los periodos relevantes
 
-**Estado actual:** a las 22:49 UTC del 25 de agosto de 2026, Gil Marer comunicó que la titular estaba ejecutando en su propio ChatGPT una recopilación autorizada con Gmail conectado. Se esperaba un posible traslado privado dentro de aproximadamente una hora, pero todavía no se había verificado recepción, cobertura de Drive, exportación nativa, denominador, manifiesto ni reconciliación. Existe además una copia parcial reflejada en un buzón contraparte conectado y autorizado
+**Estado actual:** tras el aviso de las 22:49 UTC del 25 de agosto de 2026, el buzón receptor autenticado verificó aproximadamente a las 23:13 UTC una transmisión de la titular. El mensaje RFC 2822 recibido y un libro-manifiesto fueron preservados y hash-controlados en custodia privada. El libro reconcilia un amplio índice de Gmail, pero no contiene los correos ni adjuntos nativos indexados; Drive no estuvo disponible/conectado y la comparación con el buzón contraparte sigue abierta. Existe además una copia parcial reflejada en un buzón contraparte conectado y autorizado
 
 **Privacidad:** la dirección exacta, cuerpos, asuntos, participantes, identificadores de Google y localizadores de mensajes no se publican en GitHub
 
@@ -94,8 +94,8 @@ Antes de examinar o publicar contenido:
 
 ## 7. Criterio de cierre y estado actual
 
-`RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD** hasta que la titular autorice y complete Takeout o conecte la cuenta correcta, se verifique el perfil y se reconcilien los denominadores. El corpus reflejado de más de 2.400 mensajes relacionados preserva un punto de partida importante, pero no autoriza la expresión «todos los correos de la declarante».
+`RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD**. La transmisión recibida preserva un mensaje nativo y un libro-manifiesto en custodia privada; el libro reconcilia aproximadamente 10,6 mil filas de correo, 9,0 mil filas de adjuntos y 4,3 mil hilos. No entrega los originales subyacentes, no contiene una adquisición de Drive y no prueba la ausencia definitiva indicada por su clasificación de prioridad. El corpus reflejado de más de 2.400 mensajes relacionados preserva un punto de partida contraparte importante, pero tampoco autoriza la expresión «todos los correos de la declarante».
 
-## 8. Traspaso privado pendiente — 25 de agosto de 2026
+## 8. Primer traspaso privado recibido — 25 de agosto de 2026
 
-El estado operativo y la ventana estimada constan en `RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md`. La estimación temporal no acredita entrega ni resultado. Cuando llegue el correo o un traslado sustitutivo, debe ejecutarse `prompts/RDM_PRIVATE_MAILBOX_INBOUND_EVIDENCE_INGEST_PROMPT_25AUG2026.md`, preservar primero los nativos y metadatos en custodia privada, aplicar revisión de privilegio y actualizar `ME-090` / `ME-MAIL-RDM-001` sin cerrar el déficit salvo reconciliación completa.
+El estado operativo y el resultado verificado constan en `RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md`. Se ejecutó `prompts/RDM_PRIVATE_MAILBOX_INBOUND_EVIDENCE_INGEST_PROMPT_25AUG2026.md`: el mensaje y libro recibidos quedaron preservados con metadatos y hashes en privado, y el denominador interno del libro fue reconciliado. La entrega debe clasificarse como **manifiesto/índice**, no como transferencia de los originales descritos. `ME-090` / `ME-MAIL-RDM-001` siguen abiertos hasta la adquisición nativa, Drive, privilegio, deduplicación, comparación contraparte y recuperación independiente. No se realizó respuesta, reenvío, recordatorio, compartición, publicación ni cambio de buzón.

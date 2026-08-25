@@ -61,6 +61,18 @@ The signature page contains signatures on behalf of **Aweswell Limited** and **M
 
 **Next source actions:** bind the pleading to filing/notification metadata; locate the decision on the reposición; reconcile Registry/notary steps, payment of €400,000, estate receipt/application/refund/recredit and the 24-Oct-2019 non-convalidation consequence.
 
+## P0-04 — reserved-declarant mailbox manifest and native-corpus acquisition
+
+**Private retrieval alias:** `RDM-PRIVATE-MAILBOX-01`; exact account, message, filename, provider identifiers, hashes and custody locators remain outside public Git.
+
+**Verified receipt:** one native inbound message and one delivered workbook were preserved and hash-controlled privately on 25-Aug-2026. The nine-tab workbook internally reconciles, at a public-safe aggregate level, approximately 10.6 thousand Gmail evidence rows, 9.0 thousand attachment rows and 4.3 thousand unique threads, with named retrieval signals for the requested Sun Park, Luchy Playa Blanca, Comunidad, former-lawyer and Insolvency Administrator perimeter.
+
+**Controlled significance:** this is a high-value search and retrieval map for a large account-holder corpus and identifies priority material likely absent from the connected counterpart archive. It is not independent corroboration of the indexed propositions and does not establish any person's capacity, knowledge, intent, responsibility or criminality.
+
+**Critical limitations:** the workbook is a manifest, not the indexed native corpus. No underlying native email or attachment package was delivered; Drive was unavailable/not connected; private Gmail links do not confer recipient access; attachment/file hashes were not calculated; the “likely absent” indicator was not compared with Gil's archive; and privilege/confidentiality review remains substantial.
+
+**Next source actions:** complete an account-holder-controlled Takeout and/or verified Gmail API RAW export; acquire retrievable attachments and Google Drive owned/shared/linked files in controlled batches; preserve untouched masters, hashes, errors and revision metadata; reconcile Message-ID/thread/body/attachment hashes and variants against the counterpart corpus; then review privilege, supporting/adverse/contradictory effect and proposition-level relevance before any merits propagation.
+
 ## P1-01 — Montelanza 2008 / 2012 annual-account deposits
 
 **Gmail retrieval:** 20-Aug-2026 private-witness forward with subject `Fwd: cuentas anuales de montelanza - 2008` and annual-account/registry attachments.
@@ -118,11 +130,12 @@ The complementary RICPE/Sun Park/Orion filing has formal REGAGE confirmation in 
 
 ## Public-website decision
 
-None of P0-01 through P0-04 should be published merely because it was located in Gmail:
+None of P0-01 through P0-04 or P1-01 should be published merely because it was located in Gmail:
 
 - P0-01 contains express confidentiality language and incomplete lender-execution evidence;
 - P0-02 requires native-audio/speaker authentication before actor-specific publication;
 - P0-03 is a party pleading whose legal effect depends on subsequent rulings;
+- P0-04 is a manifest/retrieval map whose indexed native corpus and Drive sources were not delivered; and
 - P1-01 requires page-level extraction before adopting the covering interpretation.
 
 The current public website already contains the safer controlling surfaces: 7-Jun-2018 material-control reconstruction, RICPE Series F/G documentary question, Pink/AEAT PO 496/2026 procedural page, current institutional proceedings and PEP/influence/PER due-diligence architecture.
