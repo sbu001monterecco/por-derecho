@@ -1,7 +1,7 @@
 # Sun Park canonical actor register
 
 **Control date:** 19 August 2026  
-**Official-public-source identity/corporate reconciliation:** 24 August 2026
+**Official-public-source identity/corporate reconciliation:** 25 August 2026
 **Status:** canonical first-saturation register; continuing verification required  
 **Rule:** `earliest proved involvement` means **involved no later than that date**. It is not necessarily the true first day.
 
@@ -161,6 +161,7 @@ This boundary does not delete internal Sun Park working relationships or Gil Mar
 | P090 | **Daniel Jiménez** | former lawyer/adviser | Former legal adviser; exact matters and evidence received to be crosswalked | — | `PROVISIONAL` | S12 |
 | P091 | **Eduardo Sánchez** | San Telmo/RICPE professional node | San Telmo partner; stated that the firm introduced clients into the RICPE investment connected to the Acosta Matos/Sun Park project perimeter | 2021-11-30 | `LOCKED_CANONICAL` | S14 |
 | P092 | **Enrique Guerra** | RICPE professional node | Director General of RIC Private Equity; direct counterparty in 30 Nov 2021 San Telmo discussion and participant in RICPE project narrative | 2020 | `LOCKED_CANONICAL` | S14, S15 |
+| P093 | **Carlos Víctor Rubio Faure** | LAJ governance / institutional actor | Letrado de la Administración de Justicia; Secretario de Gobierno del Tribunal Superior de Justicia de Canarias; author/signatory of the Exp. Gub. 38/2026 archive decision and named sender of the 20 Aug 2026 notice and correction | 2024-03-11 in current appointment; act in scope 2026-08-20 | `LOCKED_CANONICAL_OFFICIAL` | BOE-A-2024-4431; official Judiciary source dated 13 Mar 2026; signed Exp. Gub. 38/2026 decision. Attribution is limited to the signed/sent acts and does not transfer knowledge of the whole insolvency file. |
 
 ## Use and maintenance
 

@@ -1,6 +1,6 @@
 # Sun Park canonical legal-entity and institution register
 
-**Control date:** 24 August 2026
+**Control date:** 25 August 2026
 **Status:** canonical first-saturation register  
 **Rule:** brands, alliances and groups are not silently collapsed into one legal entity.
 
@@ -57,6 +57,12 @@
 | E049 | **Juzgado de Primera Instancia nº 2 de Arrecife** | court | Court hearing P.O. 562/2014 in 2015 correspondence | 2014 | `LOCKED_CANONICAL` | S6 |
 | E050 | **Juzgado de Primera Instancia nº 5 de Arrecife** | court | Court hearing P.O. 213/2015 in 2015 correspondence | 2015 | `LOCKED_CANONICAL` | S6 |
 | E051 | **Hava Vida Travel & Tourism, S.L.U.** | project-side company/payer | Separately identified Spanish company and payer in the Garrigues payment record | 2012 | `LOCKED_CANONICAL_OFFICIAL_NAME` | BORME-A-2012-27-38, entry 64020, records incorporation/unipersonality and sheet TF 49735. NIF B76564434 is repository-recorded and appears in the linked Companies House officer record; a current primary Spanish NIF certificate remains open. `HAVAVIDA` is a source/search alias, not the legal name. Never merge with Havidia LLC or LPB. Machine control: `ops/CANONICAL_ENTITY_NAMES.json`. |
+| E052 | **Tribunal Superior de Justicia de Canarias (TSJ Canarias)** | High Court / judicial institution | Institutional court structure within which the Government Secretariat operates | 2026 act in scope | `LOCKED_CANONICAL_OFFICIAL` | LOPJ Article 464; official Judiciary TSJ Canarias sources. The institutional name does not convert a Government Secretariat act into a judicial-chamber merits decision. |
+| E053 | **Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias** | LAJ governance office | Issuing authority for Exp. Gub. 38/2026; received, opened and archived the governmental file | 2026-08-15/2026-08-20 | `LOCKED_CANONICAL_OFFICIAL` | Signed Exp. Gub. 38/2026 decision; BOE-A-2024-4431; LOPJ Articles 463–465. It is not a second judicial instance over Concurso 36/2012. |
+| E054 | **Secretario General de la Administración de Justicia** | national LAJ-governance superior | Statutory superior in the LAJ hierarchy and appeal authority identified in Exp. Gub. 38/2026 | 2026-08-20 | `LOCKED_TITLE_OFFICIAL` | LOPJ Article 463; signed decision; REGAGE26e00074355631. Filing does not prove admission, forwarding or decision. |
+| E055 | **Secretaría de Coordinación Provincial de Las Palmas** | provincial LAJ/service coordination office | Coordinated recipient of the 15 Aug 2026 LAJ/Office filing; territorial coordination link | 2026-08-15 | `LOCKED_REGISTERED_DESTINATION` | REGAGE26e00073341382; LOPJ Articles 466–467. The registered destination does not prove action by every LAJ or a merits determination. |
+| E056 | **Dirección General de Relaciones con la Administración de Justicia del Gobierno de Canarias (DGRAJ)** | regional material/technical justice administration | Officially described manager of territorial judicial electronic infrastructure and ATLANTE environment | 2026 | `LOCKED_CANONICAL_OFFICIAL` | Official Canary justice modernisation page. Infrastructure responsibility does not make the regional executive the author of the TSJ Government Secretary's decision. |
+| E057 | **Consejo General del Poder Judicial (CGPJ)** | constitutional judicial-governance body | Separate judge-governance and discipline lane; DI 169/2026 transmission is a finite CGPJ→TSJ traceability issue | 2026 | `LOCKED_CANONICAL_OFFICIAL` | CGPJ DI 169/2026 decision as described in the signed Exp. Gub. 38/2026 decision and appeal controls. It does not merge judge discipline, LAJ governance, court-office inspection or judicial merits. |
 
 ## Entity-form conflicts requiring corporate verification
 
