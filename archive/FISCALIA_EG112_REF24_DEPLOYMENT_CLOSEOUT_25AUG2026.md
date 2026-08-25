@@ -39,9 +39,9 @@ Pages workflow run `32830560890` used exact head SHA
 - deploy completed at `2026-08-25T09:11:36Z`.
 
 The ancillary `report-build-status` job remained queued when the independent
-readback was performed. That reporting-job state is not represented as the
-deployment result; the build and deploy jobs themselves succeeded and the
-deployed bytes were independently recovered.
+readback began. The complete workflow subsequently reached
+`completed / success` at `2026-08-25T09:16:31Z`. The build and deploy jobs had
+already succeeded and the deployed bytes were independently recovered.
 
 ## Independent live readback
 
