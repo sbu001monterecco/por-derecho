@@ -33,6 +33,14 @@
     "interim_relief": "LECrim arts.589 and 764, CP art.127 octies, LEC arts.721/727/728 and LPH art.18.4 are treated as proportionate asset/evidence/value preservation mechanisms, not automatic consequences of an allegation."
   },
   "validation": {
+    "evidence": [
+      "PR 1030 Publication integrity gate run 32910144301: PASS.",
+      "PR 1030 Off-GitHub Preservation Snapshot run 32910144405: PASS.",
+      "PR 1030 Validate audience experience run 32910144412: PASS.",
+      "PR 1030 Validate unitary public shell run 32910144292: PASS, including syntax, JSON, sitemap and desktop/mobile rendering.",
+      "PR 1030 squash-merged to main at ae22ca42c844813ff73220614ac150cd734d572e.",
+      "PR 1028 was closed without merge after preservation detected stale protected-path state; PR 1030 replaced it against current main."
+    ],
     "publication_integrity": "PASS — PR 1030 final head run 32910144301",
     "off_github_preservation": "PASS — PR 1030 final head run 32910144405",
     "audience_experience": "PASS — PR 1030 final head run 32910144412",
