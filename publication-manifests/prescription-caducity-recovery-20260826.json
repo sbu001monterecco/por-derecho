@@ -1,9 +1,10 @@
 {
   "publication_id": "PRESCRIPTION-CADUCITY-RECOVERY-20260826",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "PR_OPEN",
   "control_date": "2026-08-26",
   "publication_type": "bilingual dedicated legal/recovery dossier plus cross-site preservation module",
+  "controlling_pr": 1028,
   "controlling_proposition": {
     "es": "No hay un único reloj: prescripción penal, prescripción civil, caducidad, responsabilidad del administrador concursal, responsabilidad patrimonial, daños, restitución y cautelares deben analizarse por acción, titular, demandado, trigger y remedio.",
     "en": "There is no single clock: criminal prescription, civil limitation, caducity, insolvency-administrator liability, State liability, damages, restitution and interim relief must be analysed by claim, right-holder, defendant, trigger and remedy."
