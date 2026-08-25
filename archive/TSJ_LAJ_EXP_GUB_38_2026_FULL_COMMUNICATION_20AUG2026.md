@@ -2,7 +2,7 @@
 
 **Full communication and appeal-control record · 20 August 2026**
 
-**Status:** `DOCUMENTED INCOMING DECISION + DOCUMENTED SAME-DAY RESPONSE + ALZADA AVAILABLE / PENDING`
+**Status:** `DOCUMENTED INCOMING DECISION + DOCUMENTED SAME-DAY RESPONSE + DOCUMENTED INSTITUTIONAL FOLLOW-UP + ALZADA FILED / FORWARDING AND DECISION PENDING`
 
 **Public-data boundary:** this repository is public. The substantive incoming and outgoing communications are reproduced, but repeated personal identifiers, direct contact details and address data are omitted. The native Gmail messages, registered filing, signed decision and attachments remain the controlling evidence.
 
@@ -10,7 +10,7 @@
 
 On 20 August 2026 Carlos Víctor Rubio Faure, Secretario de Gobierno del Tribunal Superior de Justicia de Canarias, notified the signed decision resolving the governmental file opened after Gil Marer's 15 August 2026 LAJ / Oficina Judicial submission.
 
-The controlling signed decision is **Exp. Gub. 38/2026**. The notification email subject stated **“EXP. GUB 28/2026”**, while the email body, attachment filename and signed decision stated **38/2026**. The discrepancy is preserved as a finite traceability/correction issue. It is not evidence of bad faith.
+The controlling signed decision is **Exp. Gub. 38/2026**. The notification email subject stated **“EXP. GUB 28/2026”**, while the email body, attachment filename and signed decision stated **38/2026**. In a later same-thread response on 20 August, Rubio Faure expressly confirmed that the correct reference is **38/2026**. The number is therefore corrected; the unexplained subject-line divergence remains preserved as a finite traceability issue and is not evidence of bad faith.
 
 The decision:
 
@@ -23,7 +23,7 @@ The decision:
 - states that the CGPJ DI 169/2026 communication did not appear as received by the Government Secretariat as of the date of decision; and
 - expressly allows a **recurso de alzada before the Secretario General de la Administración de Justicia within one month**.
 
-This is therefore an adverse first-level archive, but not an administratively closed route and not a merits determination that the 2018 or 2021–2022 documentary chains were complete or regular.
+This is therefore an adverse first-level archive, but not an administratively closed route and not a merits determination that the 2018 or 2021–2022 documentary chains were complete or regular. The recurso de alzada was filed on 20 August 2026 as **REGAGE26e00074355631**; admission, forwarding, superior reference and outcome remain pending.
 
 ## 2. Source inventory
 
@@ -47,6 +47,18 @@ This is therefore an adverse first-level archive, but not an administratively cl
 7. Spanish visual exhibit: `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES`.
 8. Spanish visual exhibit: `san-telmo-ricpe-sun-park-stamp-v1-ES`.
 9. Direct public video source at 08:08: `https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s`.
+10. Same-thread institutional follow-up from Carlos Víctor Rubio Faure, 20 August 2026, confirming 38/2026 and reporting that the CGPJ archive agreement was still not recorded as received.
+11. REGAGE appeal receipt, public-safe control recorded in `TSJ_EXP_GUB_38_2026_ALZADA_FILED_REGAGE_CONTROL_20AUG2026.md`.
+
+## 2.1 Verified sender and office boundary
+
+The person and office are now controlled in `TSJC_LAJ_EXP_GUB_38_IDENTITY_CAPACITY_RELATIONSHIP_CONTROL_25AUG2026.md`.
+
+- **Person/signatory:** Carlos Víctor Rubio Faure.
+- **Capacity:** Letrado de la Administración de Justicia and Secretario de Gobierno del Tribunal Superior de Justicia de Canarias.
+- **Issuing office:** Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias.
+- **Technical transmission:** functional Canary justice mailbox and territorial mail infrastructure; raw private headers and direct address remain outside public Git.
+- **Limit:** this is the senior LAJ-governance office in the territory, not the insolvency judge or a judicial chamber ruling on the merits.
 
 ## 3. What the original 15 August filing asked
 

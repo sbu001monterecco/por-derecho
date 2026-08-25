@@ -238,6 +238,129 @@
           "proposition": "The official court notice identifies Juan Tomás Parrilla Suárez by that full name."
         }
       ]
+    },
+    {
+      "id": "P-CVRF",
+      "record_type": "person",
+      "canonical_name": "Carlos Víctor Rubio Faure",
+      "first_reference": "Carlos Víctor Rubio Faure, Secretario de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "source_literal_variants": [
+        "Carlos Victor Rubio Faure",
+        "CARLOS VÍCTOR RUBIO FAURE"
+      ],
+      "name_rule": "Use both surnames and the accented Víctor. The accent-free form may be preserved only as a source literal. Do not treat speech-to-text forms such as 'dubious faure' as a name.",
+      "capacity_rule": "Attribute only acts signed or sent in the identified capacity and period. Do not infer personal knowledge, intention or responsibility from the office relationship.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-A-2024-4431",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4431",
+          "proposition": "The appointment order awards Carlos Víctor Rubio Faure the Government Secretariat of the High Court of Justice of the Canary Islands."
+        },
+        {
+          "authority": "Consejo General del Poder Judicial / Poder Judicial",
+          "reference": "Official TSJ Canarias document dated 13 March 2026",
+          "url": "https://www.poderjudicial.es/stfls/CGPJ/0%20LO%201-2025/TSJ%20CANARIAS/TENERIFE/SANTA%20CRUZ%20DE%20TENERIFE/20260313%20Santa%20Cruz%20de%20Tenerife%20-%20Junta%20Sectorial%20Civil%2C%20Aud.%20Prov.%20de%20Santa%20Cruz%20de%20Tenerife%20%28A%29.pdf",
+          "proposition": "The 2026 official document identifies him as Government Secretary of the TSJ Canarias."
+        }
+      ]
+    },
+    {
+      "id": "I-TSJC",
+      "record_type": "institution",
+      "acronym": "TSJC",
+      "canonical_name": "Tribunal Superior de Justicia de Canarias",
+      "first_reference": "Tribunal Superior de Justicia de Canarias (TSJ Canarias)",
+      "acronym_rule": "Prefer TSJ Canarias in reader-facing text because TSJC can also be ambiguous outside this repository.",
+      "separation_rule": "Do not merge the High Court, its judicial chambers, its Government Chamber and its Government Secretariat into one decision-maker.",
+      "official_sources": [
+        {
+          "authority": "Consejo General del Poder Judicial / Poder Judicial",
+          "reference": "TSJ Canarias portal",
+          "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Canarias/",
+          "proposition": "Official institutional portal for the High Court of Justice of the Canary Islands."
+        }
+      ]
+    },
+    {
+      "id": "I-SG-TSJC",
+      "record_type": "institutional_office",
+      "canonical_name": "Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "first_reference": "Secretaría de Gobierno del Tribunal Superior de Justicia de Canarias",
+      "separation_rule": "This is the LAJ governance/administrative issuing office for Exp. Gub. 38/2026, not a judicial chamber deciding the merits of Concurso 36/2012.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "BOE-A-2024-4431",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4431",
+          "proposition": "The official appointment order identifies the Government Secretariat of the TSJ Canarias as the post awarded to Carlos Víctor Rubio Faure."
+        },
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "LOPJ Articles 463-465",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666#acuatrocientossesentaytres",
+          "proposition": "The LOPJ defines the LAJ hierarchy, Government Secretary post, powers and limits."
+        }
+      ]
+    },
+    {
+      "id": "I-SGAJ",
+      "record_type": "institutional_officeholder",
+      "canonical_name": "Secretario General de la Administración de Justicia",
+      "first_reference": "Secretario General de la Administración de Justicia",
+      "capacity_rule": "Use as the statutory superior officeholder and identified appeal authority. Do not state that a filing has been admitted, forwarded or decided without a primary record.",
+      "official_sources": [
+        {
+          "authority": "Agencia Estatal Boletín Oficial del Estado",
+          "reference": "LOPJ Article 463",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666#acuatrocientossesentaytres",
+          "proposition": "The LOPJ places the Secretary-General at the top of the LAJ governance hierarchy."
+        }
+      ]
+    },
+    {
+      "id": "I-SCP-LP",
+      "record_type": "institutional_office",
+      "canonical_name": "Secretaría de Coordinación Provincial de Las Palmas",
+      "first_reference": "Secretaría de Coordinación Provincial de Las Palmas",
+      "capacity_rule": "Use this form for the registered 15 August 2026 destination; distinguish it from the statutory officeholder title Secretario Coordinador Provincial.",
+      "separation_rule": "Registered destination does not prove incorporation, action by an individual LAJ or a merits conclusion.",
+      "repository_sources": [
+        "archive/TSJC_LAJ_EXP_GUB_38_IDENTITY_CAPACITY_RELATIONSHIP_CONTROL_25AUG2026.md",
+        "archive/TSJ_EXP_GUB_38_2026_ALZADA_FILED_REGAGE_CONTROL_20AUG2026.md"
+      ]
+    },
+    {
+      "id": "I-DGRAJ-CAN",
+      "record_type": "administrative_body",
+      "acronym": "DGRAJ",
+      "canonical_name": "Dirección General de Relaciones con la Administración de Justicia del Gobierno de Canarias",
+      "first_reference": "Dirección General de Relaciones con la Administración de Justicia del Gobierno de Canarias (DGRAJ)",
+      "separation_rule": "Its material and technical justice-infrastructure role does not make it the author of a decision signed by the TSJ Government Secretary.",
+      "official_sources": [
+        {
+          "authority": "Gobierno de Canarias",
+          "reference": "Principales líneas de actuación — modernización de Justicia",
+          "url": "https://www.gobiernodecanarias.org/justicia/modernizacion/Principaleslineasdeactuacion/",
+          "proposition": "The official page describes DGRAJ management of territorial judicial digital infrastructure and the ATLANTE environment."
+        }
+      ]
+    },
+    {
+      "id": "I-CGPJ",
+      "record_type": "constitutional_body",
+      "acronym": "CGPJ",
+      "canonical_name": "Consejo General del Poder Judicial",
+      "first_reference": "Consejo General del Poder Judicial (CGPJ)",
+      "separation_rule": "Keep judicial governance and judge-discipline functions separate from LAJ hierarchy, court-office services, judicial merits and criminal investigation.",
+      "official_sources": [
+        {
+          "authority": "Consejo General del Poder Judicial",
+          "reference": "Official portal",
+          "url": "https://www.poderjudicial.es/",
+          "proposition": "Official institutional source for the Council's constitutional judicial-governance role."
+        }
+      ]
     }
   ]
 }

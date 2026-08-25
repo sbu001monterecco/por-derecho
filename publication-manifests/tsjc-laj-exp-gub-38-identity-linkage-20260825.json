@@ -1,0 +1,62 @@
+{
+  "publication_id": "TSJC-LAJ-EXP-GUB-38-IDENTITY-LINKAGE-20260825",
+  "control_marker": "tsjc-laj-exp-gub-38-identity-linkage-20260825",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-25T00:00:00Z",
+  "baseline_main_sha": "1b80d2ecd83f8c3a96b8153d88a16942eff2e367",
+  "current_state": "DRAFT",
+  "deletion_status": "NOT_DELETION_SAFE_UNTIL_EXACT_SHA_PAGES_READBACK",
+  "scope": "Verify the sender, signatory, LAJ capacity and institutional office for Exp. Gub. 38/2026; correct the 28/38 reference status; link the LAJ hierarchy and separate CGPJ, judicial-merits and Canary technical-infrastructure lanes; improve and preserve the reusable execution prompt.",
+  "expected_routes": {
+    "es": [
+      "es/tsj-canarias-exp-gub-38-2026/index.html",
+      "es/tsj-canarias-exp-gub-38-2026-alzada-presentada/index.html"
+    ],
+    "en": [
+      "en/tsj-canarias-exp-gub-38-2026/index.html",
+      "en/tsj-canarias-exp-gub-38-2026-appeal-filed/index.html"
+    ]
+  },
+  "changed_public_routes": [
+    "es/tsj-canarias-exp-gub-38-2026/index.html",
+    "en/tsj-canarias-exp-gub-38-2026/index.html"
+  ],
+  "expected_source_files": [
+    "archive/TSJC_LAJ_EXP_GUB_38_IDENTITY_CAPACITY_RELATIONSHIP_CONTROL_25AUG2026.md",
+    "archive/TSJ_LAJ_EXP_GUB_38_2026_FULL_COMMUNICATION_20AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_TSJ_EXP_GUB_38_2026_ADDENDUM_20AUG2026.md",
+    "archive/TSJ_EXP_GUB_38_2026_ALZADA_FILED_REGAGE_CONTROL_20AUG2026.md",
+    "archive/prompts/TSJC_LAJ_IDENTITY_ENTITY_LINKAGE_EXECUTION_PROMPT_25AUG2026.md",
+    "archive/knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md",
+    "archive/knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md",
+    "assets/data/tsjc-laj-exp-gub-38-identity-map-v1.json",
+    "ops/CANONICAL_ENTITY_NAMES.json",
+    "docs/deletion-audits/2026-08-25-tsjc-laj-exp-gub-38-identity-linkage.md"
+  ],
+  "required_controls": [
+    "Carlos Víctor Rubio Faure is the exact canonical identity; accent-free and speech-to-text forms remain source/error literals only",
+    "the person, role mailbox, issuing office, signatory and technical infrastructure remain separate",
+    "the official follow-up closes the controlling-number question in favour of 38/2026 without proving bad faith or explaining the subject-line error",
+    "the Government Secretary is an LAJ-governance officeholder, not the insolvency judge or a judicial chamber deciding merits",
+    "the LAJ hierarchy, CGPJ judicial-governance lane, judicial merits and Canary material/technical administration remain separate",
+    "relationship does not transfer knowledge, intention, control, authorship or responsibility",
+    "the appeal is filed, while forwarding, admission, superior reference, review and outcome remain pending",
+    "raw private mail headers, provider message identifiers, direct mailbox addresses and unnecessary personal data remain outside public Git",
+    "Spanish and English pages retain material parity and official source links"
+  ],
+  "validation": {
+    "repository_preservation": "PENDING_FINAL_RUN",
+    "publication_integrity": "PENDING_FINAL_RUN",
+    "audience_experience": "PENDING_FINAL_RUN",
+    "json_validation": "PASS",
+    "diff_check": "PASS",
+    "live_readback": "PENDING_MERGE_AND_PAGES"
+  },
+  "deployment": {
+    "pull_request": null,
+    "merge_sha": null,
+    "pages_run": null,
+    "verified_at": null,
+    "status": "PENDING"
+  }
+}
