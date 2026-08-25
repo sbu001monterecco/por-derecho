@@ -45,20 +45,20 @@ def main() -> int:
         require(len(parts)==187,"canonical registry part total is not 187")
         # The professional roster itself remains fixed and independent of later actor extensions.
         records=reg.get("records",[]); require(len(records)==40,"professional roster must remain 40 records")
-        ids=[r.get("id") for r in records]; require(len(ids)==len(set(ids)),"duplicate professional roster ID")
+        ids=[r.get("identity_id") for r in records]; require(len(ids)==len(set(ids)),"duplicate professional roster ID")
         for rid in ids: require(rid in identities,f"professional roster references unknown identity {rid}")
         require(ALAS_REQUIRED.issubset(set(ids)),"required historic counsel set incomplete")
         require(PROCURADOR_REQUIRED.issubset(set(ids)),"required procurador set incomplete")
         require(NEW_PROFESSIONAL_REQUIRED.issubset(set(identities)),"professional identity extension incomplete")
-        names={r.get("name") for r in records}; require(not (names & PROHIBITED_ROSTER_NAMES),"prohibited or unverified roster name present")
+        names={r.get("public_name") for r in records}; require(not (names & PROHIBITED_ROSTER_NAMES),"prohibited or unverified roster name present")
         org_names={r.get("name") for r in identities.values() if r.get("type")=="ORGANISATION"}; require(REQUIRED_ORGANISATIONS.issubset(org_names),"required professional organisations missing")
         current=[r for r in records if r.get("track")=="CURRENT_COUNSEL"]; require(len(current)==3,"current lawyer count must remain 3")
         current_procuradoras=[r for r in records if r.get("track")=="PROCURADOR_CURRENT"]; require(len(current_procuradoras)==2,"current procuradora count must remain 2")
         for record in records:
-            require(record.get("classification") in ALLOWED_CLASSIFICATIONS,f"invalid classification {record.get('id')}")
-            require(record.get("track") in ALLOWED_TRACKS,f"invalid track {record.get('id')}")
+            require(record.get("classification") in ALLOWED_CLASSIFICATIONS,f"invalid classification {record.get('identity_id')}")
+            require(record.get("track") in ALLOWED_TRACKS,f"invalid track {record.get('identity_id')}")
             if record.get("track","").startswith("PROCURADOR"):
-                role=(record.get("role") or "").casefold(); require("lawyer" not in role and "abogado" not in role,f"procurador track carries lawyer role: {record.get('id')}")
+                role=(record.get("role") or "").casefold(); require("lawyer" not in role and "abogado" not in role,f"procurador track carries lawyer role: {record.get('identity_id')}")
         require(AUTHORIZATION.is_file(),"missing professional-register authorization record")
     except AssertionError as exc:
         print(f"LEGAL PROFESSIONAL REGISTER: FAIL\n - {exc}",file=sys.stderr); return 1
