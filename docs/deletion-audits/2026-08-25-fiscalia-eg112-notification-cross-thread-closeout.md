@@ -4,9 +4,9 @@
 
 **User objective:** preserve, publish and analyse the notification received on 25 August 2026 in the context of DIP 2/2026, EG 112/2026, the 2 and 20 August communications, the separate 18 June judicial complaint and the wider modular Fiscalía routing record.
 
-**Current status:** `SOURCE_PREPARED — LIVE CLOSEOUT PENDING`
+**Current status:** `DELETION_SAFE_WITH_OPEN_EVIDENCE — LIVE VERIFIED`
 
-This status must be replaced with a live-verification result only after the content is merged to `main`, the exact merge SHA is deployed by GitHub Pages and the controlled live routes are read back successfully. A local commit, branch or open pull request is not a live publication.
+The authorised six-file payload prepared as local source commit `322c5df070402460821899298eacfbcb8eaede79` was published through PR [#973](https://github.com/sbu001monterecco/por-derecho/pull/973), merged to `main` as `81ad3f846ec0fe2e64548bc1387ef8c5fdd0837c`, deployed by GitHub Pages run [32833267148](https://github.com/sbu001monterecco/por-derecho/actions/runs/32833267148) and read back from the controlled live routes. The PR and merge record preserve `322c5df0` as source provenance; the connector-created public PR head was `23f5f1673239553b503390ab3e99c0d38fff60c3`. All seven checks on the PR head and all six post-merge validation gates completed successfully.
 
 ## Durable request reconciliation
 
@@ -103,4 +103,21 @@ Before editing, compare current `origin/main`, the latest Pages deployment and t
 
 ## Deletion verdict
 
-Pending publication and live verification. Replace this section with the final PR, merge SHA, Pages run, controlled live-readback ledger and `DELETION_SAFE_WITH_OPEN_EVIDENCE` verdict after deployment. Until then, this source-prepared branch is not sufficient for deletion safety.
+**Verdict:** `DELETION_SAFE_WITH_OPEN_EVIDENCE`.
+
+The notification, redacted public document, page-accounted Spanish transcription, complete English translation, bilingual institutional contradiction analysis, evidential limits, privacy rules, finite next actions and future-thread restart order are now durable on public `main` and the live site. The originating chat may be deleted after this closeout version itself is merged and its live route returns this verdict.
+
+### Controlled deployment ledger
+
+| Control | Verified result |
+|---|---|
+| Authorised local source | `322c5df070402460821899298eacfbcb8eaede79` |
+| Public content PR | [#973](https://github.com/sbu001monterecco/por-derecho/pull/973), six files, merged |
+| Exact deployed `main` SHA | `81ad3f846ec0fe2e64548bc1387ef8c5fdd0837c` |
+| Pages deployment | [Run 32833267148](https://github.com/sbu001monterecco/por-derecho/actions/runs/32833267148), `completed/success` for the exact deployed SHA |
+| Spanish hub readback | `Auditoría de congruencia institucional`, `Objeto real` and `Integridad de la fuente` present; live bytes matched SHA-256 `323b15c8e5444d75e804040e1b2c96f619f8a51fcd528e65eb5a1f1957411bf4` |
+| English hub readback | `Institutional congruence audit`, `Actual object`, `Source integrity` and `Complete English translation` present; live bytes matched SHA-256 `77977c2b78f52805468d08e034c1dbdc7eedf79e1ace1fa5f653ed7e2865c88e` |
+| Translation readback | All three page headings and the controlling wording were present; live bytes matched SHA-256 `faee0700814b3ffbe309d47c2a5a2697833fac72ad2ca21e3d6272c8e78d9ebe` |
+| Public redacted PDF | Pinned repository SHA-256 `fe9111aca4aa4cc82627af6c97a8408e3ed5e3db9e0382a6e302783f281b6783`; native signed source remains outside public Git |
+
+“Deletion safe” is a continuity finding, not a finding that the institutional record is complete. The unresolved referral, source-integrity, certified-index, module-treatment, DIP 2/2026 correction and reference-24 traceability questions remain open exactly as listed above. Future work must start from current remote `main`, this closeout and the latest successful Pages deployment; it must not reconstruct facts from memory or treat the absence of a response as proof of transfer, examination or misconduct.
