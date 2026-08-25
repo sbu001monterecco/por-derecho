@@ -5,7 +5,7 @@
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-25T08:33:01Z",
   "source_base": "c88fba69d8a0d14dfc55b5a7cad376349e042d21",
-  "current_state": "LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
   "publication_pr": 966,
   "merge_sha": "0886dc4c0804ef24437ce86a5675cd04a264166e",
   "purpose": "Make the already authorised Declaration 011, named-person/company OSINT, voice-statement controls, public-safe mailbox aggregates and finite future actions discoverable through bilingual reader-facing Pages routes, then preserve a deletion-safe cross-thread closeout.",
@@ -37,7 +37,7 @@
     "declaration_011": "REGISTERED_DERIVED_SOURCE_NOT_SIGNED_NOT_SWORN_NOT_WORD_FOR_WORD_RATIFIED",
     "mailbox": "PARTIAL_NOT_FULLY_ACQUIRED_2413_MIRRORED_MESSAGES",
     "osint": "BOUNDED_SOURCE_LED_SCAN_WITH_VERIFIED_ATTRIBUTED_INFERRED_AND_NOT_LOCATED_STATES",
-    "thread_continuity": "LIVE_VERIFIED_POST_LIVE_CLOSEOUT_PENDING_MAIN"
+    "thread_continuity": "DELETION_SAFE_WITH_OPEN_EVIDENCE"
   },
   "future_action_controls": [
     "ME-MAIL-RDM-001",
@@ -102,9 +102,34 @@
     }
   },
   "cross_thread_closeout": {
-    "status": "PENDING_MAIN",
+    "status": "MAIN_AND_PAGES_VERIFIED",
     "audit_path": "docs/deletion-audits/2026-08-25-alvaro-campanario-voice-osint-cross-thread-closeout.md",
+    "pull_request": 967,
+    "merge_sha": "02843c4fc2e9e3a473204c5d70ad48260b73814b",
+    "pages_run_id": 32829415063,
+    "pages_run_status": "SUCCESS",
+    "pr_head_checks": "7_OF_7_SUCCESS",
+    "post_merge_checks_including_pages": "7_OF_7_SUCCESS",
     "scope_boundary": "The audit covers all substantive instructions retrievable from preserved context. A still-running parallel chat cannot be observed live; any later unique output requires its own continuity check."
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audit_path": "docs/deletion-audits/2026-08-25-alvaro-campanario-voice-osint-cross-thread-closeout.md",
+    "post_live_closeout_pr": 967,
+    "post_live_closeout_merge_sha": "02843c4fc2e9e3a473204c5d70ad48260b73814b",
+    "post_live_closeout_pages_run_id": 32829415063,
+    "main_verified": true,
+    "pages_verified": true,
+    "chat_required_for_future_work": false,
+    "open_evidence": [
+      "complete lawful account-holder-controlled mailbox acquisition",
+      "native audio, cryptographic hashes, transcription alignment and speaker confirmation",
+      "signature, oath, word-for-word ratification or express adoption of Declaration 011 statements",
+      "historical professional certificates, retainers, handoff records, deeds, title chains and Registry-certified snapshots",
+      "direct proof or contrary evidence for attributed friendship, coordination, conflict, kinship and control propositions"
+    ],
+    "private_source_requery_rule": "Re-query private sources only through lawful, authorised access; do not expose private locators or content and do not convert an unavailable source into a negative finding.",
+    "parallel_thread_rule": "The named parallel chat is safe to delete only if it has produced no later unique instruction, source or result after this audit; otherwise its later delta requires a separate continuity gate."
   },
   "validation": {
     "status": "PR_HEAD_18_OF_18_AND_POST_MERGE_18_OF_18_SUCCESS_LIVE_VERIFIED",
@@ -118,7 +143,9 @@
       "All 18 pull-request-head checks completed successfully for PR 966",
       "All 18 exact-merge post-merge checks completed successfully for 0886dc4c0804ef24437ce86a5675cd04a264166e",
       "Pages run 32828389471 completed successfully for the exact merge SHA",
-      "Fourteen of fourteen controlled public surfaces returned HTTP 200 and matched repository bytes"
+      "Fourteen of fourteen controlled public surfaces returned HTTP 200 and matched repository bytes",
+      "All 7 pull-request-head checks completed successfully for post-live closeout PR 967",
+      "All 7 post-merge checks, including Pages run 32829415063, completed successfully for 02843c4fc2e9e3a473204c5d70ad48260b73814b"
     ],
     "required": [
       "validate_alvaro_campanario_osint_publication.py",
