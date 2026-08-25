@@ -1,0 +1,32 @@
+name: Apply David Espejo discovery patch once
+
+on:
+  push:
+    branches:
+      - codex/david-espejo-evidence-sync-20260825
+    paths:
+      - '.github/workflows/david-espejo-one-off-discovery-patch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/david-espejo-evidence-sync-20260825
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply discovery and feed changes
+        run: python scripts/apply_david_espejo_discovery_patch_once.py
+      - name: Commit one-off results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add David Espejo discovery routes and feed entries [skip ci]"
+          git push origin HEAD:codex/david-espejo-evidence-sync-20260825
