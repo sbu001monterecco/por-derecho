@@ -93,10 +93,9 @@ def update_general_registers(changed: list[str]) -> None:
             'distingue primera instancia, alzada y competencia territorial. El expediente '
             '<a href="../cuatrecasas-icam-ccacm-2026/">Cuatrecasas · ICAM / CCACM</a> '
             'expone la cuestión limitada de conducta individual, decisión o supervisión de socio y controles de la sociedad profesional. '
-            'Los dos acuses de 25 agosto acreditan recepción solamente; no aceptación, investigación general ni decisión de fondo.'</n            'aside>'
+            'Los dos acuses de 25 agosto acreditan recepción solamente; no aceptación, investigación general ni decisión de fondo.</aside>'
         )
         # Correct the deliberately split closing tag above without obscuring the public copy.
-        supplement = supplement.replace("'</aside>'", "</aside>")
         if marker not in text:
             raise SyncError(f"{rel}: institutional notice marker not found")
         text = text.replace(marker, supplement + marker, 1)
@@ -132,9 +131,8 @@ def update_general_registers(changed: list[str]) -> None:
             'distinguishes first instance, appeal and territorial competence. The '
             '<a href="../cuatrecasas-icam-ccacm-2026/">Cuatrecasas · ICAM / CCACM record</a> '
             'sets out the bounded individual, partner-decision and professional-firm-control questions. '
-            'The two 25 August acknowledgements prove receipt only—not acceptance, a general investigation or a merits decision.'</n            'aside>'
+            'The two 25 August acknowledgements prove receipt only—not acceptance, a general investigation or a merits decision.</aside>'
         )
-        supplement = supplement.replace("'</aside>'", "</aside>")
         if marker not in text:
             raise SyncError(f"{rel}: institutional notice marker not found")
         text = text.replace(marker, supplement + marker, 1)
@@ -324,7 +322,7 @@ def check() -> None:
         "es/registros-institucionales-colegios-abogacia-2026/index.html",
         "Dos correos del 25 de agosto de 2026",
         "Un acuse de recibo solo acredita recepción",
-        "ICAM ≠ CCACM ≠ ICALPA ≠ ICATF",
+        "CCACM es Madrid",
     )
     forbid("es/registros-institucionales-colegios-abogacia-2026/index.html", "Dos correos de hoy")
     require(
