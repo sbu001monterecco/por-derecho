@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "publication_id": "FISCALIA_DIP2_JUDICIAL_COMPLAINT_EXTENSION_20260825",
+  "owner": "Gil Marer / Por Derecho",
+  "current_state": "DRAFT",
+  "status": "LOCAL_VALIDATED",
+  "authority": "User instruction of 25 August 2026 to publish the complete June judicial complaint and amplification, integrate them with the DIP 2/2026 record, analyse the alleged conduct and publish an attributed request for independent audit",
+  "base_sha": "10bc0c2712cdc04f2b6f46034adcc54b1fba209f",
+  "branch": "codex/dip2-judge-complaint-20260825",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-dip-2-2026/index.html",
+      "es/index.html",
+      "es/actualizaciones/index.html"
+    ],
+    "en": [
+      "en/fiscalia-dip-2-2026/index.html",
+      "en/index.html",
+      "en/updates/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/judicial-governance/decanato-reference-24/README.md",
+    "evidence/judicial-governance/decanato-reference-24/public-pdfs/denuncia-magistrado-18jun2026-public-redacted.pdf",
+    "evidence/judicial-governance/decanato-reference-24/public-pdfs/ampliacion-denuncia-magistrado-25jun2026-public-redacted.pdf",
+    "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
+    "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
+    "es/actualizaciones/feed.xml",
+    "en/updates/feed.xml",
+    "archive/FISCALIA_DIP2_JUDICIAL_COMPLAINT_REF24_PUBLICATION_CONTROL_25AUG2026.md",
+    "scripts/build_decanato_reference24_public_evidence.py"
+  ],
+  "evidence_ids": [
+    "EVID-2026-DECANATO-REF24-DENUNCIA-001",
+    "EVID-2026-DECANATO-REF24-AMPLIACION-002"
+  ],
+  "public_documents": [
+    {
+      "path": "evidence/judicial-governance/decanato-reference-24/public-pdfs/denuncia-magistrado-18jun2026-public-redacted.pdf",
+      "pages": 31,
+      "sha256": "dcc4ebc473d76475ae3dbbae10ea261adea4b1a99efa7e2a650c61338f61eebe"
+    },
+    {
+      "path": "evidence/judicial-governance/decanato-reference-24/public-pdfs/ampliacion-denuncia-magistrado-25jun2026-public-redacted.pdf",
+      "pages": 14,
+      "sha256": "73bd17df1b2bceb17c33fb1dbdee656a73faf2aaebbb14021bd4fd1c823cb4ed"
+    }
+  ],
+  "full_text": [
+    {
+      "path": "evidence/judicial-governance/decanato-reference-24/full-text/denuncia-magistrado-18jun2026-public-transcription.md",
+      "sha256": "28ab9bbebecb967562610f8b694f7e4eabff7453c96064c119a781ba0d2983bc"
+    },
+    {
+      "path": "evidence/judicial-governance/decanato-reference-24/full-text/ampliacion-denuncia-magistrado-25jun2026-public-transcription.md",
+      "sha256": "b93487a039174d5d19e5c7a9f04d104f480080fe047f2bec6e5cecb45a9e942c"
+    }
+  ],
+  "privacy": {
+    "public_derivative": true,
+    "redactions": [
+      "personal identifier",
+      "direct postal and email contact data",
+      "visual and electronic signatures",
+      "unnecessary electronic-verification locators"
+    ],
+    "substantive_pleading_removed": false,
+    "native_unredacted_committed": false
+  },
+  "route_controls": {
+    "reference_24": "Material daily registry link only; not a NIG, proceeding, allocation number or proof of opening",
+    "onward_route": "No controlled public record establishes allocation, transfer to the TSJC, rejection, opening or closure",
+    "cgpj": "The 26 June CGPJ communication and later joinder to Appeal 286/2026 remain separate from proof of the 18 June complaint's destination"
+  },
+  "claims_controls": {
+    "judicial_pleadings": "Party allegations and requests, not adjudicated findings",
+    "capture_or_neutralisation": "Attributed risk hypothesis and audit request, not proved fact",
+    "canarias7_404": "No inference of pressure, censorship, retraction, accuracy or outcome",
+    "article_24": "Constitutional context for alleged harm, not an adjudicated violation"
+  },
+  "context_images": [
+    "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+    "assets/evidence/email-used-20260822/san-telmo-ricpe-sun-park-stamp-v1-EN.png",
+    "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+    "assets/evidence/email-used-20260822/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-EN.png"
+  ],
+  "pull_request": null,
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_urls": [],
+  "live_verification_evidence": null,
+  "deletion_record": {
+    "status": "NOT_YET_DEPLOYED",
+    "canonical_recovery_paths": [
+      "publication-manifests/fiscalia-dip2-judicial-complaint-extension-20260825.json",
+      "archive/FISCALIA_DIP2_JUDICIAL_COMPLAINT_REF24_PUBLICATION_CONTROL_25AUG2026.md",
+      "evidence/judicial-governance/decanato-reference-24/README.md",
+      "es/fiscalia-dip-2-2026/index.html",
+      "en/fiscalia-dip-2-2026/index.html"
+    ],
+    "open_evidence": "Certified Decanato allocation and destination record; any NIG or resolution; complete TSJC receipt; complete CGPJ assessment and source-to-file bridge",
+    "private_source_rule": "Re-query the controlled native package and stamped photographs; do not reconstruct redacted identifiers or signatures from public Git history",
+    "email_sent": false,
+    "gmail_draft_created": false,
+    "linkedin_post_created": false,
+    "linkedin_post_published": false
+  },
+  "validation": {
+    "status": "LOCAL_GREEN_PENDING_REMOTE_CI_AND_LIVE_READBACK",
+    "evidence": [
+      "repository preservation, publication integrity, audience experience, mission-critical, operational, sent-email-continuity and insolvency-perimeter gates passed locally",
+      "visual-asset registry and rendered San Telmo attribution gates passed",
+      "both public PDFs and both transcriptions reproduced byte for byte on a clean temporary rebuild",
+      "all 45 public PDF pages rendered successfully; contact-sheet and signature-page inspection passed",
+      "controlled private identifiers and contact strings were absent from PDF extraction and public transcriptions",
+      "six changed HTML pages and both Atom feeds parsed; local targets, duplicate IDs and bilingual dossier structure passed"
+    ]
+  },
+  "required_checks": [
+    "python3 scripts/validate_repository_preservation.py",
+    "python3 scripts/validate_publication_integrity.py",
+    "python3 scripts/validate_audience_experience.py",
+    "deterministic evidence rebuild and hash equality",
+    "PDF render, extraction and privacy validation",
+    "ES/EN link, duplicate-ID, responsive-layout and no-overflow checks",
+    "Pages exact-SHA deployment and live readback"
+  ],
+  "open_items": [
+    "certified Decanato allocation/destination record",
+    "any assigned NIG or proceeding number",
+    "proof of TSJC receipt or disposition",
+    "complete CGPJ assessment and joinder bridge",
+    "emails, letters and LinkedIn post after live verification and separate approval"
+  ]
+}
