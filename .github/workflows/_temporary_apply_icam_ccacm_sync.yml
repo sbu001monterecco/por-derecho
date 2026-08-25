@@ -1,0 +1,60 @@
+name: Temporary apply ICAM CCACM website synchronization
+
+on:
+  push:
+    branches:
+      - codex/icam-ccacm-website-sync-25aug2026
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/icam-ccacm-website-sync-25aug2026
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Repair generator source and apply synchronized changes
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/sync_icam_ccacm_discovery_20260825.py')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace(
+              "'Los dos acuses de 25 agosto acreditan recepción solamente; no aceptación, investigación general ni decisión de fondo.'</\n            'aside>'",
+              "'Los dos acuses de 25 agosto acreditan recepción solamente; no aceptación, investigación general ni decisión de fondo.</aside>'",
+          )
+          s = s.replace(
+              "'The two 25 August acknowledgements prove receipt only—not acceptance, a general investigation or a merits decision.'</\n            'aside>'",
+              "'The two 25 August acknowledgements prove receipt only—not acceptance, a general investigation or a merits decision.</aside>'",
+          )
+          p.write_text(s, encoding='utf-8')
+          PY
+          python -m py_compile scripts/sync_icam_ccacm_discovery_20260825.py
+          python scripts/sync_icam_ccacm_discovery_20260825.py --apply
+      - name: Commit generated synchronization
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/sync_icam_ccacm_discovery_20260825.py \
+            es/registros-institucionales-colegios-abogacia-2026/index.html \
+            en/institutional-records-bar-bodies-2026/index.html \
+            es/registros-institucionales/index.html \
+            en/institutional-records/index.html \
+            es/index.html en/index.html sitemap.xml \
+            es/actualizaciones/index.html en/updates/index.html \
+            es/actualizaciones/feed.xml en/updates/feed.xml
+          git commit -m 'Synchronise ICAM CCACM website discovery surfaces'
+          git push origin HEAD:codex/icam-ccacm-website-sync-25aug2026
