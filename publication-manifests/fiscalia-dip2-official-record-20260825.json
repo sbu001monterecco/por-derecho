@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "publication_id": "FISCALIA_DIP2_OFFICIAL_RECORD_20260825",
+  "owner": "Gil Marer / Por Derecho",
+  "current_state": "DRAFT",
+  "status": "PREPARED_NOT_YET_LIVE_VERIFIED",
+  "authority": "User instruction of 25 August 2026 to upload the letters, give them their own page, digitise them and retain them in the repository",
+  "base_sha": "08a6a29ebd2aaa8b9f11f074cb80b6cbfb0b3611",
+  "branch": "codex/dip2-evidence-page-20260825",
+  "expected_routes": {
+    "es": [
+      "es/fiscalia-dip-2-2026/index.html"
+    ],
+    "en": [
+      "en/fiscalia-dip-2-2026/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "evidence/fiscalia/dip-2-2026/README.md",
+    "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf",
+    "evidence/fiscalia/dip-2-2026/public-pdfs/oficio-notificacion-dip-2-2026-09mar2026-public-redacted.pdf",
+    "evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md",
+    "archive/FISCALIA_DIP2_2026_OFFICIAL_RECORD_PUBLICATION_CONTROL_25AUG2026.md",
+    "scripts/build_dip2_public_evidence.py"
+  ],
+  "evidence_ids": [
+    "EVID-2026-FISCALIA-DIP2-DECRETO-002",
+    "EVID-2026-FISCALIA-DIP2-OFICIO-001"
+  ],
+  "public_documents": [
+    "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf",
+    "evidence/fiscalia/dip-2-2026/public-pdfs/oficio-notificacion-dip-2-2026-09mar2026-public-redacted.pdf"
+  ],
+  "full_text": [
+    "evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md",
+    "evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md"
+  ],
+  "privacy": {
+    "public_derivative": true,
+    "redactions": [
+      "direct postal and email contact data",
+      "electronic-verification locator and document code"
+    ],
+    "substantive_text_removed": false,
+    "native_unredacted_committed": false
+  },
+  "required_checks": [
+    "python3 scripts/validate_repository_preservation.py",
+    "python3 scripts/validate_publication_integrity.py",
+    "python3 scripts/validate_audience_experience.py",
+    "PDF render and extraction validation",
+    "ES/EN route and document-link checks",
+    "Pages exact-SHA deployment and live readback"
+  ],
+  "open_items": [
+    "complete certified DIP 2/2026 file",
+    "separate 11 February 2026 opening decree",
+    "post-11 March correction treatment",
+    "emails and LinkedIn post to be prepared only after live verification"
+  ]
+}

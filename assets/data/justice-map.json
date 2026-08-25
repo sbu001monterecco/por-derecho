@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Project Sun Rock — Justice & Institutional Record",
-    "updated": "2026-08-15",
+    "updated": "2026-08-25",
     "publication_rule": "Public facts are limited to source-controlled institutional acts, procedural status and explicitly labelled analytical questions. Presence in the graph does not imply wrongdoing, endorsement or coordination.",
     "statuses": ["DOCUMENTED", "CORROBORATED", "DISPUTED", "ANALYTICAL_QUESTION", "OPEN_EVIDENTIAL_GAP", "SUPERSEDED"]
   },
@@ -17,7 +17,9 @@
   "people": [
     {"id":"elena-herrera-rodriguez","name":"Elena Herrera Rodríguez","role_es":"Fiscal — signataria identificada del decreto de archivo de DI 248/2018 de 7 mayo 2019","role_en":"Prosecutor — identified signatory of the 7 May 2019 DI 248/2018 archive decree","status":"DOCUMENTED"},
     {"id":"beatriz-sanchez-carreras","name":"Beatriz Sánchez Carreras","role_es":"Fiscal — signataria electrónica identificada de la notificación de 16 mayo 2019; posteriormente Fiscal Jefa Provincial","role_en":"Prosecutor — identified electronic signatory of the 16 May 2019 notification; later Provincial Chief Prosecutor","status":"DOCUMENTED"},
-    {"id":"emilio-sanchez-ulled","name":"Emilio Jesús Sánchez Ulled","role_es":"Fiscal — signatario identificado de EG 49/2026, 3 junio 2026","role_en":"Prosecutor — identified signatory of EG 49/2026, 3 June 2026","status":"DOCUMENTED"}
+    {"id":"emilio-sanchez-ulled","name":"Emilio Jesús Sánchez Ulled","role_es":"Fiscal — signatario identificado de EG 49/2026, 3 junio 2026","role_en":"Prosecutor — identified signatory of EG 49/2026, 3 June 2026","status":"DOCUMENTED"},
+    {"id":"juan-manuel-gonzalez-casanova-ruiz","name":"Juan Manuel González-Casanova Ruiz","role_es":"Fiscal — signatario identificado del Decreto de resolución y archivo de DIP 2/2026 de 6 marzo 2026","role_en":"Prosecutor — identified signatory of the 6 March 2026 DIP 2/2026 decision and closure decree","status":"DOCUMENTED"},
+    {"id":"ernesto-vieira-morante","name":"Ernesto Vieira Morante","role_es":"Fiscal — signatario identificado del oficio de notificación de DIP 2/2026 de 9 marzo 2026","role_en":"Prosecutor — identified signatory of the 9 March 2026 DIP 2/2026 notification","status":"DOCUMENTED"}
   ],
   "proceedings": [
     {
@@ -105,13 +107,15 @@
       "institution":"fiscalia-canarias",
       "period":"2026",
       "status":"DISPUTED",
-      "summary_es":"Expediente de Fiscalía de Canarias archivado el 6 marzo 2026. El 11 marzo se comunicó formalmente que existía un recurso de apelación ya documentado, contradiciendo una premisa utilizada en el decreto.",
-      "summary_en":"Canary Islands prosecution file archived on 6 March 2026. On 11 March a formal communication stated that an appeal was already documented, contradicting a premise used in the decree.",
-      "establishes_es":"Una contradicción documental sobre el estado del recurso fue puesta formalmente en conocimiento de la institución.",
-      "establishes_en":"A documentary contradiction concerning appeal status was formally notified to the institution.",
+      "summary_es":"El Decreto de 6 marzo 2026 registra que DIP 2/2026 se incoó el 11 febrero, acuerda el archivo sin cosa juzgada y preserva la vía judicial. El oficio de 9 marzo notificó el archivo. El 11 marzo se comunicó formalmente que existía un recurso de apelación ya documentado, contradiciendo una premisa utilizada en el decreto.",
+      "summary_en":"The 6 March 2026 Decree records that DIP 2/2026 was opened on 11 February, orders closure without res judicata and preserves the judicial route. The 9 March notice communicated the closure. On 11 March a formal communication stated that an appeal was already documented, contradicting a premise used in the decree.",
+      "establishes_es":"Recepción, incoación, archivo y notificación son actos oficiales documentados; la contradicción sobre el estado del recurso fue puesta formalmente en conocimiento de la institución.",
+      "establishes_en":"Receipt, opening, closure and notice are documented official acts; the documentary contradiction concerning appeal status was formally notified to the institution.",
       "does_not_establish_es":"No acredita por sí sola mentira deliberada, mala fe ni que la corrección hubiera debido cambiar necesariamente el resultado jurídico.",
       "does_not_establish_en":"It does not by itself establish a deliberate falsehood, bad faith, or that the correction necessarily required a different legal outcome.",
-      "page_es":"../fiscalia-dip-2-2026/"
+      "people":["juan-manuel-gonzalez-casanova-ruiz","ernesto-vieira-morante"],
+      "page_es":"../fiscalia-dip-2-2026/",
+      "page_en":"../fiscalia-dip-2-2026/"
     },
     {
       "id":"eg-49-2026",
