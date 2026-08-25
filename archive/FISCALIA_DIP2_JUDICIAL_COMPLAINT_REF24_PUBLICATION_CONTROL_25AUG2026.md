@@ -2,7 +2,7 @@
 
 **Date:** 25 August 2026
 
-**Status:** merged, deployed, live verified and deletion-safe with open evidence
+**Status:** prior publication merged/deployed/live verified; 25 August EG 112 clarification and institutional-reference update source-prepared and validated, merge/deployment pending
 
 **Authority:** user instruction to digitise and publish the June 2026 judicial complaint and amplification, integrate them with the DIP 2/2026 Fiscalía correspondence, and publish an attributed, evidence-bounded request for independent review.
 
@@ -29,6 +29,11 @@ The page now contains:
 9. an expressly attributed call by Gil Marer for an independent audit of the Acosta Matos perimeter and the institutional response;
 10. a controlled Canarias7 historical-publication checkpoint; and
 11. the requested San Telmo and PwC contextual images at the bottom, connected to the asserted practical harm and the Article 24 CE effective-protection framework.
+
+The 25 August additive update also includes the public-safe three-page
+clarification decree dated 23 August 2026 in EG 112/2026, its complete
+page-accounted transcription and the separately bounded CGPJ/TSJC references
+to the still-unlocated daily reference no. 24 route.
 
 ## Judicial-complaint evidence
 
@@ -89,6 +94,28 @@ that package only. It does not establish examination or adoption of its
 allegations and does not by itself identify the destination of the 18 June
 complaint. The page keeps DI 169/2026 / Appeal 286/2026 separate from the
 Decanato material reference.
+
+The Promotor's 10 July agreement expressly quotes the contributor's request to
+verify the location, integrity and administrative transmission of `control 24`.
+That is a later institutional reference to the traceability request; it is not a
+NIG, allocation decision or located TSJC destination. The TSJC agreement of 20
+August in Exp. Gub. 38/2026 documents a different CGPJ-to-TSJC receipt gap and
+does not locate the 18 June complaint. The public page states both propositions
+side by side so neither record is made to prove the other.
+
+## EG 112/2026 clarification update
+
+`EVID-2026-FISCALIA-EG112-ACLARACION-003` is the official clarification decree
+dated 23 August 2026 and notified on 25 August 2026. Its public derivative and
+transcription are controlled under `evidence/fiscalia/eg-112-2026/README.md`.
+
+The decree acknowledges the earlier judge-related DIP 2/2026, states that the
+2 and 20 August communications did not allege a new or similar criminal
+irregularity by the Magistrate, maintains EG 112/2026's closure and identifies
+Fiscalía Provincial de Las Palmas de Gran Canaria as the territorially relevant
+office for the newer civil/mercantile matters. Publication of that official
+position does not adopt its characterisation of the underlying disputes as an
+independent factual finding.
 
 ## Claims and safeguards
 
