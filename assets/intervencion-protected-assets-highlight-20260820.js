@@ -59,3 +59,14 @@
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject, {once:true}); else inject();
 })();
+
+/* CRIMINAL-FIRST-ACTION-PRESSURE-20260825 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-criminal-first-action-pressure-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('criminal-first-action-pressure-20260825.js?v=20260825a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-criminal-first-action-pressure-loader', '20260825');
+  document.head.appendChild(module);
+})();
