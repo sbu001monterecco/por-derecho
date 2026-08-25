@@ -4,13 +4,13 @@
 
 **Thread label supplied by the user:** `Alvaro Companario Research`
 
-**Current status:** `LIVE VERIFIED — POST-LIVE CLOSEOUT PENDING MERGE`
+**Current status:** `DELETION_SAFE_WITH_OPEN_EVIDENCE`
 
-## Determination at this checkpoint
+## Final determination
 
-The public-safe package is merged, deployed and independently read back. This closeout is not yet on `main`, so this document does **not** prematurely mark either chat `DELETION_SAFE`.
+The public-safe package is merged, deployed and independently read back. The post-live closeout was merged through PR #967 as `02843c4fc2e9e3a473204c5d70ad48260b73814b`; its exact-SHA Pages run `32829415063` and all applicable post-merge checks completed successfully.
 
-Once this audit, the updated publication manifest and the deployment-log entry are merged to `main`, the preserved scope earns `DELETION_SAFE_WITH_OPEN_EVIDENCE`: future work will be recoverable without this chat, while the unacquired and unratified evidence remains expressly open.
+The preserved scope therefore earns `DELETION_SAFE_WITH_OPEN_EVIDENCE`: future work is recoverable without this chat, while the unacquired and unratified evidence remains expressly open.
 
 ## Cross-thread visibility boundary
 
@@ -38,6 +38,8 @@ GitHub Pages run `32828389471` completed successfully at `2026-08-25T08:47:18Z` 
 
 The PR-head suite passed 18/18 checks and the exact-merge post-merge suite passed 18/18 checks. Cache-busted public readback returned HTTP 200 and exact repository-byte equality for 14/14 controlled surfaces: the two bilingual dossier routes, two updates pages, two feeds, sitemap, unitary scan, Declaration 011, voice protocol, clarification queue, mailbox protocol, OSINT protocol and missing-evidence addendum. The exact SHA-256 ledger is in `publication-manifests/alvaro-campanario-voice-osint-closeout-20260825.json`.
 
+Post-live continuity PR #967 passed 7/7 pull-request-head checks. After merge, 7/7 applicable checks—including Pages run `32829415063`—completed successfully for exact SHA `02843c4fc2e9e3a473204c5d70ad48260b73814b`. This placed the request reconciliation, restart map, privacy result, deployment ledger and open-evidence boundary on `main` and Pages.
+
 ## Live routes
 
 - Spanish: `https://sbu001monterecco.github.io/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/`
@@ -64,6 +66,6 @@ Deletion safety must not be confused with complete evidence custody. The followi
 
 A future agent must begin with this audit and the publication manifest, then read the unitary scan, Declaration 011, voice protocol, clarification queue, mailbox protocol, OSINT protocol and missing-evidence addendum as one controlled package. It must re-query private sources only through lawful, authorised access and must not infer nonexistence from a bounded `not located` result.
 
-## Conditional deletion verdict
+## Deletion verdict
 
-After this closeout is merged and verified on `main`, the preserved scope is `DELETION_SAFE_WITH_OPEN_EVIDENCE`, not evidence-complete. This chat is no longer required to restart the work. The parallel chat is safe to delete only if it has not generated any later unique instruction, source or result; if it remains active or produces a later response, complete a final delta audit there first.
+The preserved scope is `DELETION_SAFE_WITH_OPEN_EVIDENCE`, not evidence-complete. This chat is no longer required to restart the work. The parallel chat is safe to delete only if it has not generated any later unique instruction, source or result; if it remains active or produces a later response, complete a final delta audit there first.
