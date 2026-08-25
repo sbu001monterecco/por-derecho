@@ -2,25 +2,106 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "criminal-first-institutional-action-20260825",
   "control_date": "2026-08-25",
-  "current_state": "DEPLOYED",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
-  "status": "deployed_pending_independent_live_readback",
+  "status": "live_verified",
   "package": "criminal-first-institutional-action",
-  "merge_sha": "21e673b0a2b4d14ffd0c53b2c642084d133e55f8",
+  "merge_sha": "4444296402c9e05c856919c82bffc3874c5e724a",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/institutional-action/",
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/criminal-first-institutional-action-matrix-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-first-action.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt",
+    "https://sbu001monterecco.github.io/por-derecho/assets/criminal-first-action-pressure-20260825.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/institutional-action.css",
+    "https://sbu001monterecco.github.io/por-derecho/assets/intervencion-protected-assets-highlight-20260820.js"
+  ],
   "validation": {
     "evidence": [
-      "All 27 pull-request workflow runs completed successfully at head 27fc3158eb364006bcdf6be974a1d4e71b782bbf.",
-      "Publication integrity, locked homepage order, source governance, identity controls, Community network, AC propagation and bilingual desktop/mobile rendering passed before merge."
+      "All 27 substantive pull-request workflow runs completed successfully for PR #987 at head 27fc3158eb364006bcdf6be974a1d4e71b782bbf.",
+      "Publication integrity, locked homepage order, source governance, identity controls, Community network, AC propagation and bilingual desktop/mobile rendering passed before publication.",
+      "The calibrated permanent verifier passed source validation and independent public HTTP marker readback on main at 4444296402c9e05c856919c82bffc3874c5e724a."
     ]
   },
   "deployment_evidence": {
-    "pages_run_id": 32866827272,
-    "pages_run_number": 1086,
-    "head_sha": "21e673b0a2b4d14ffd0c53b2c642084d133e55f8",
+    "pages_run_id": 32868941806,
+    "pages_run_number": 1089,
+    "head_sha": "4444296402c9e05c856919c82bffc3874c5e724a",
     "status": "completed",
     "conclusion": "success",
-    "completed_at": "2026-08-25T15:37:33Z"
+    "completed_at": "2026-08-25T15:57:57Z"
+  },
+  "live_verification_evidence": {
+    "workflow": ".github/workflows/verify-criminal-first-institutional-action-live.yml",
+    "workflow_run_id": 32868945104,
+    "workflow_run_number": 4,
+    "job_id": 97871036789,
+    "head_sha": "4444296402c9e05c856919c82bffc3874c5e724a",
+    "status": "completed",
+    "conclusion": "success",
+    "verified_at": "2026-08-25T15:57:14Z",
+    "checks": [
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/",
+        "bytes": 18752,
+        "markers": ["PD-SP-ACTION-2011-CONVERGENCE-001", "Preservar. Entregar. Explicar. Investigar. Recuperar."]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/institutional-action/",
+        "bytes": 18278,
+        "markers": ["PD-SP-ACTION-2011-CONVERGENCE-001", "Preserve. Disclose. Explain. Investigate. Recover."]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/",
+        "bytes": 11215,
+        "markers": ["Activar preservación e investigación"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/",
+        "bytes": 10954,
+        "markers": ["Activate preservation and investigation"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/data/criminal-first-institutional-action-matrix-v1.json",
+        "bytes": 14917,
+        "markers": ["PD-SP-ACT-0001", "PD-SP-ACT-0015"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md",
+        "bytes": 8505,
+        "markers": ["PRESERVE", "RECOVER"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-first-action.xml",
+        "bytes": 2987,
+        "markers": ["accion-institucional", "institutional-action"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/robots.txt",
+        "bytes": 3265,
+        "markers": ["sitemap-criminal-first-action.xml"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/criminal-first-action-pressure-20260825.js",
+        "bytes": 8084,
+        "markers": ["data-criminal-first-action-pressure", "Open immediate institutional action"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/institutional-action.css",
+        "bytes": 6234,
+        "markers": [".ia-pressure", ".ia-table"]
+      },
+      {
+        "url": "https://sbu001monterecco.github.io/por-derecho/assets/intervencion-protected-assets-highlight-20260820.js",
+        "bytes": 6564,
+        "markers": ["criminal-first-action-pressure-20260825.js"]
+      }
+    ]
   },
   "expected_routes": {
     "es": [
@@ -38,7 +119,8 @@
     "assets/intervencion-protected-assets-highlight-20260820.js",
     "assets/data/criminal-first-institutional-action-matrix-v1.json",
     "archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md",
-    "sitemap-criminal-first-action.xml"
+    "sitemap-criminal-first-action.xml",
+    ".github/workflows/verify-criminal-first-institutional-action-live.yml"
   ],
   "sitewide_surface": {
     "loader": "assets/intervencion-protected-assets-highlight-20260820.js",
@@ -51,7 +133,8 @@
       "7 June 2018 control dossier",
       "full-name actor register",
       "unitary criminal map and maximum-attribution pages"
-    ]
+    ],
+    "verification": "The gateway loader and component were independently fetched from the public Pages origin by exact markers; the declared homepage and compact-route rendering passed the pre-merge bilingual rendered-experience workflow."
   },
   "action_sequence": ["PRESERVE", "DISCLOSE", "EXPLAIN", "INVESTIGATE", "RECOVER"],
   "action_matrix_id": "PD-SP-ACTION-2011-CONVERGENCE-001",
@@ -63,10 +146,6 @@
     "Adverse and exculpatory evidence must be preserved and displayed with the allegation it affects.",
     "Every named actor and institution is invited to supply corrections and primary contrary evidence."
   ],
-  "restart_rule": "Future threads must load the action protocol, action matrix and Issue #988 with Declarations 012 and 013, the v2 convergence graph and the matter identity registry, then update existing IDs rather than create disconnected requests.",
-  "remaining_live_verification": [
-    "Run an independent public HTTP readback of both action routes and exact markers when an external runner with github.io DNS access is available.",
-    "Verify the sitewide injected gateway on both homepages and all declared compact route families after the deployed asset cache has refreshed.",
-    "Advance this manifest to LIVE_VERIFIED only after recording those readback results."
-  ]
+  "restart_rule": "Future threads must load the action protocol, action matrix, this LIVE_VERIFIED manifest and Issue #988 with Declarations 012 and 013, the v2 convergence graph and the matter identity registry, then update existing IDs rather than create disconnected requests.",
+  "continuous_verification_rule": "The permanent live-verification workflow must rerun whenever a controlled action route, convergence route, structured asset, discovery file, gateway asset or this manifest changes."
 }
