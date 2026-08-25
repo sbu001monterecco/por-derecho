@@ -1,0 +1,117 @@
+name: Verify Spanish professional register
+on:
+  pull_request:
+    paths:
+      - 'es/registro-identidad-materia/abogados-espanoles/**'
+      - 'en/matter-identity-registry/spanish-lawyers/**'
+      - 'assets/data/spanish-counsel-professional-owner-register-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/spanish-professional-register*'
+      - 'assets/intervencion-protected-assets-highlight-20260820.js'
+      - '.github/governance/PERSON_IDENTITY_ADMISSION_PRIVACY_AND_PUBLICATION_RULE.md'
+      - 'scripts/validate_spanish_professional_register.py'
+      - 'scripts/render_spanish_professional_register.mjs'
+      - 'sitemap-spanish-professional-register.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-spanish-professional-register.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/registro-identidad-materia/abogados-espanoles/**'
+      - 'en/matter-identity-registry/spanish-lawyers/**'
+      - 'assets/data/spanish-counsel-professional-owner-register-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/spanish-professional-register*'
+      - 'assets/intervencion-protected-assets-highlight-20260820.js'
+      - '.github/governance/PERSON_IDENTITY_ADMISSION_PRIVACY_AND_PUBLICATION_RULE.md'
+      - 'scripts/validate_spanish_professional_register.py'
+      - 'scripts/render_spanish_professional_register.mjs'
+      - 'sitemap-spanish-professional-register.xml'
+      - 'robots.txt'
+      - '.github/workflows/verify-spanish-professional-register.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: spanish-professional-register-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: {persist-credentials: false, fetch-depth: 0}
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with: {node-version: '22'}
+      - name: Validate structured register
+        run: python3 scripts/validate_spanish_professional_register.py
+      - name: Validate JavaScript
+        run: |
+          node --check assets/spanish-professional-register.js
+          node --check assets/spanish-professional-registry-integration-20260825.js
+          node --check scripts/render_spanish_professional_register.mjs
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve repository
+        run: |
+          mkdir -p /tmp/pd-spr/por-derecho
+          cp -a . /tmp/pd-spr/por-derecho/
+          cd /tmp/pd-spr
+          python3 -m http.server 8000 --bind 127.0.0.1 >/tmp/pd-spr-http.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/por-derecho/es/registro-identidad-materia/abogados-espanoles/ >/dev/null && exit 0; sleep 1; done
+          cat /tmp/pd-spr-http.log; exit 1
+      - name: Render bilingual desktop and mobile pages
+        env:
+          PD_SPR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PD_SPR_SCREENSHOT_DIR: artifacts/spanish-professional-register-20260825
+        run: node scripts/render_spanish_professional_register.mjs
+      - name: Verify public Pages exact markers
+        if: github.event_name != 'pull_request'
+        env: {BASE: 'https://sbu001monterecco.github.io/por-derecho'}
+        shell: python
+        run: |
+          import os,time,urllib.request
+          base=os.environ['BASE'].rstrip('/')
+          checks=[
+            ('/es/registro-identidad-materia/abogados-espanoles/',['PD-SP-SPANISH-PROFESSIONAL-REGISTER-001','Abogados españoles, asesores y participantes','data-spanish-professional-register']),
+            ('/en/matter-identity-registry/spanish-lawyers/',['PD-SP-SPANISH-PROFESSIONAL-REGISTER-001','Spanish lawyers, advisers and matter participants','data-spanish-professional-register']),
+            ('/assets/data/spanish-counsel-professional-owner-register-v1.json',['Javier Sixto-Seijas','Mónica Lasquibar Rodríguez','PD-SP-P-0065','WITHDRAWN_PUBLIC']),
+            ('/assets/data/matter-identity-registry-v1.json',['"total":188','matter-identity-registry-v1.people-spanish-professionals-20260825.json']),
+            ('/assets/spanish-professional-register.js',['renderRecords','hotel_operator_entities']),
+            ('/assets/spanish-professional-registry-integration-20260825.js',['withdrawn-transaction-only','Daniel Irigoyen Fujiwara']),
+            ('/sitemap-spanish-professional-register.xml',['abogados-espanoles','spanish-lawyers']),
+            ('/robots.txt',['sitemap-spanish-professional-register.xml'])]
+          def fetch(url):
+            req=urllib.request.Request(url,headers={'User-Agent':'por-derecho-spanish-professional-verifier/1'})
+            with urllib.request.urlopen(req,timeout=30) as res:return res.read().decode('utf-8',errors='replace')
+          failures=[]
+          for route,markers in checks:
+            url=base+route;last=''
+            for _ in range(12):
+              try:
+                body=fetch(url);missing=[m for m in markers if m not in body]
+                if not missing:print(f'LIVE VERIFIED {url} :: {len(body)} bytes');break
+                last=f'missing {missing}'
+              except Exception as exc:last=str(exc)
+              time.sleep(10)
+            else:failures.append(f'{url}: {last}')
+          if failures:raise SystemExit('LIVE VERIFICATION FAILED\n - '+'\n - '.join(failures))
+      - name: Upload render evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: spanish-professional-register-20260825
+          path: artifacts/spanish-professional-register-20260825
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Summary
+        if: always()
+        run: |
+          echo '## Spanish professional register verification' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Control: `PD-SP-SPANISH-PROFESSIONAL-REGISTER-001`' >> "$GITHUB_STEP_SUMMARY"
+          echo '- UK counsel excluded; proposal-only contacts separated; transaction-only contacts withdrawn from rendered legal display.' >> "$GITHUB_STEP_SUMMARY"
