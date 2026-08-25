@@ -1,0 +1,42 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "criminal-first-institutional-action-20260825",
+  "control_date": "2026-08-25",
+  "owner": "Por Derecho / Project Sun Rock",
+  "status": "prepared_in_pr",
+  "package": "criminal-first-institutional-action",
+  "expected_routes": {
+    "es": [
+      "es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/index.html",
+      "es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html"
+    ],
+    "en": [
+      "en/unitary-criminal-hypothesis-2011-present/institutional-action/index.html",
+      "en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html"
+    ]
+  },
+  "assets": [
+    "assets/institutional-action.css",
+    "assets/data/criminal-first-institutional-action-matrix-v1.json",
+    "archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md",
+    "sitemap-criminal-first-action.xml"
+  ],
+  "action_sequence": ["PRESERVE", "DISCLOSE", "EXPLAIN", "INVESTIGATE", "RECOVER"],
+  "action_matrix_id": "PD-SP-ACTION-2011-CONVERGENCE-001",
+  "publication_boundaries": [
+    "This package publishes allegations, investigable questions and preservation requests, not adjudicated criminal findings.",
+    "No relationship edge automatically transfers knowledge, intention, control or liability.",
+    "Later convergence may corroborate adoption, ratification, knowledge and benefit but cannot by itself prove a 2011 common plan.",
+    "The insolvency administrator remains on a separate officeholder enablement/adoption track unless new evidence proves private-perimeter membership.",
+    "Adverse and exculpatory evidence must be preserved and displayed with the allegation it affects.",
+    "Every named actor and institution is invited to supply corrections and primary contrary evidence."
+  ],
+  "restart_rule": "Future threads must load the action protocol and action matrix with Declarations 012 and 013, the v2 convergence graph and the matter identity registry, then update existing IDs rather than create disconnected requests.",
+  "post_merge_verification": [
+    "Confirm both action routes return 200 and contain PD-SP-ACTION-2011-CONVERGENCE-001.",
+    "Confirm both convergence routes link visibly to the action routes and the action matrix.",
+    "Confirm the CSS, JSON, archive protocol and sitemap return 200.",
+    "Confirm robots.txt declares sitemap-criminal-first-action.xml.",
+    "Confirm Pages build/deployment completed against the merge SHA."
+  ]
+}
