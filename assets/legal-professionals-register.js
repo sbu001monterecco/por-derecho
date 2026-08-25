@@ -7,14 +7,14 @@
     loading:'Cargando registro profesional…', failure:'No se pudo cargar el registro profesional.',
     showing:(n,t)=>`Mostrando ${n} de ${t} profesionales autorizados.`, none:'Sin resultados.',
     firm:'Firma / práctica', role:'Función', status:'Estado de evidencia', scope:'Ámbito documentado', id:'ID inmutable',
-    groups:{CURRENT_COUNSEL:'Abogados actuales',FORMER_COUNSEL:'Abogados anteriores',FORMER_COUNSEL_COLLABORATOR:'Colaboradores jurídicos anteriores',FORMER_COUNSEL_ROLE_REVIEW:'Profesionales anteriores — alcance del mandato en revisión',PROCURADOR_CURRENT:'Procuradora actual',PROCURADOR_FORMER:'Procuradores/as anteriores'},
+    groups:{CURRENT_COUNSEL:'Abogados actuales',FORMER_COUNSEL:'Abogados anteriores',FORMER_COUNSEL_COLLABORATOR:'Colaboradores jurídicos anteriores',FORMER_COUNSEL_ROLE_REVIEW:'Profesionales anteriores — alcance del mandato en revisión',PROCURADOR_CURRENT:'Procuradoras actuales',PROCURADOR_FORMER:'Procuradores/as anteriores'},
     classifications:{OUR_CURRENT_PROFESSIONAL:'Profesional actual de nuestro lado',OUR_FORMER_PROFESSIONAL:'Profesional anterior de nuestro lado'},
     note:'La inclusión en esta lista acredita una función profesional documentada o una conexión profesional expresamente marcada como pendiente de cierre. No convierte al profesional en parte del perímetro de propiedad/reclamación ni transfiere conducta o responsabilidad del cliente.'
   } : {
     loading:'Loading professional register…', failure:'The professional register could not be loaded.',
     showing:(n,t)=>`Showing ${n} of ${t} authorised professionals.`, none:'No results.',
     firm:'Firm / practice', role:'Role', status:'Evidence status', scope:'Documented scope', id:'Immutable ID',
-    groups:{CURRENT_COUNSEL:'Current lawyers',FORMER_COUNSEL:'Former lawyers',FORMER_COUNSEL_COLLABORATOR:'Former legal collaborators',FORMER_COUNSEL_ROLE_REVIEW:'Former professionals — mandate scope under review',PROCURADOR_CURRENT:'Current procuradora',PROCURADOR_FORMER:'Former procuradores'},
+    groups:{CURRENT_COUNSEL:'Current lawyers',FORMER_COUNSEL:'Former lawyers',FORMER_COUNSEL_COLLABORATOR:'Former legal collaborators',FORMER_COUNSEL_ROLE_REVIEW:'Former professionals — mandate scope under review',PROCURADOR_CURRENT:'Current procuradoras',PROCURADOR_FORMER:'Former procuradores'},
     classifications:{OUR_CURRENT_PROFESSIONAL:'Current project-side professional',OUR_FORMER_PROFESSIONAL:'Former project-side professional'},
     note:'Inclusion in this list records a documented professional role or a professional connection expressly marked as awaiting closure. It does not place the professional in the ownership/claimant perimeter and does not transfer client conduct or responsibility.'
   };

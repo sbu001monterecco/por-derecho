@@ -8,6 +8,7 @@
   "rules": [
     "Professional representation does not transfer client knowledge, intent, conduct, control or liability.",
     "Former counsel status is matter- and period-specific.",
+    "Lawyer and procurador functions remain distinct and are classified from the evidenced procedural capacity.",
     "ROLE_REVIEW or MANDATE_SCOPE_OPEN means the professional connection is evidenced but the precise retainer, client or scope still requires source closure.",
     "Proposal-only, administrative and copied-only contacts are not labelled former counsel.",
     "Private email addresses, message IDs and native source locators are never published in this register."
@@ -16,7 +17,7 @@
     {"identity_id":"PD-SP-P-0060","public_name":"Javier Sixto-Seijas","role":"Lawyer","track":"CURRENT_COUNSEL","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"VERIFIED_CAPACITY","firm_ids":["PD-SP-O-0061"],"matter_scope":"Current lead Spanish counsel across active project-side proceedings and recovery work."},
     {"identity_id":"PD-SP-P-0061","public_name":"Estefanía Sixto Seijas","role":"Lawyer","track":"CURRENT_COUNSEL","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"VERIFIED_CAPACITY","firm_ids":["PD-SP-O-0061"],"matter_scope":"Current Spanish counsel team."},
     {"identity_id":"PD-SP-P-0062","public_name":"Carlos Llamas Sanz","role":"Lawyer","track":"CURRENT_COUNSEL","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"VERIFIED_CAPACITY","firm_ids":["PD-SP-O-0062"],"matter_scope":"Current Spanish legal and compliance support."},
-    {"identity_id":"PD-SP-P-0067","public_name":"Adriana Hernández Díaz","role":"Lawyer","track":"CURRENT_COUNSEL","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"VERIFIED_CAPACITY","firm_ids":[],"matter_scope":"Current counsel team; exact practice affiliation is kept separate until source-locked."},
+    {"identity_id":"PD-SP-P-0067","public_name":"Adriana Hernández Díaz","role":"Procuradora","track":"PROCURADOR_CURRENT","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"COURT_RECORD_VERIFIED","firm_ids":[],"matter_scope":"Current procuradora for Matkator in ETJ 163/2020 and the related Juicio Cambiario 1048/2019 personation stream, and procuradora in the documented DP 748/2026 work; capacity remains proceeding-specific."},
 
     {"identity_id":"PD-SP-P-0052","public_name":"Miguel Méndez Itarte","role":"Lawyer","track":"FORMER_COUNSEL","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"CONFIRMED_SUBSTANTIVE","firm_ids":["PD-SP-O-0050"],"matter_scope":"Garrigues restructuring, insolvency and related Sun Park/LPB work."},
     {"identity_id":"PD-SP-P-0053","public_name":"José María Martínez de Artola","role":"Lawyer","track":"FORMER_COUNSEL","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"CONFIRMED_SUBSTANTIVE","firm_ids":["PD-SP-O-0050"],"matter_scope":"Garrigues restructuring and financing work."},
@@ -53,7 +54,7 @@
     {"identity_id":"PD-SP-P-0082","public_name":"Juan Daniel Fajardo Expósito","role":"Lawyer","track":"FORMER_COUNSEL","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"COURT_RECORD_VERIFIED","firm_ids":[],"matter_scope":"Project-side criminal-proceeding representation evidenced in the 2018 Arrecife court record."},
     {"identity_id":"PD-SP-P-0063","public_name":"Daniel Irigoyen Fujiwara","role":"Lawyer / transaction adviser","track":"FORMER_COUNSEL_ROLE_REVIEW","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"ROLE_REVIEW","firm_ids":["PD-SP-O-0066"],"matter_scope":"DPM-related funded-exit strategy, judge/AC meetings and transaction-support work; precise retained client and mandate remain under verification."},
 
-    {"identity_id":"PD-SP-P-0086","public_name":"María Díaz Vecino","role":"Procuradora","track":"PROCURADOR_CURRENT","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"VERIFIED_CAPACITY","firm_ids":[],"matter_scope":"Current procedural representation in Pink/AEAT/Matkator and related current matters, subject to proceeding-specific mapping."},
+    {"identity_id":"PD-SP-P-0086","public_name":"María Díaz Vecino","role":"Procuradora","track":"PROCURADOR_CURRENT","classification":"OUR_CURRENT_PROFESSIONAL","evidence_status":"VERIFIED_CAPACITY_SCOPE_OPEN","firm_ids":[],"matter_scope":"Current or recent procuradora in identified Pink/AEAT/Matkator and related matters. Representation and formal personation are proceeding-specific; no personation is inferred in controls where the record states she had not yet appeared."},
     {"identity_id":"PD-SP-P-0083","public_name":"María del Pilar García Coello","role":"Procuradora","track":"PROCURADOR_FORMER","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"CONFIRMED_FORMER_PROCURADORA","firm_ids":[],"matter_scope":"Former project-side procedural representation; exact client/proceeding periods remain mapped separately."},
     {"identity_id":"PD-SP-P-0084","public_name":"Tania Domínguez Limiñana","role":"Procuradora","track":"PROCURADOR_FORMER","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"CONFIRMED_FORMER_PROCURADORA","firm_ids":[],"matter_scope":"Former procuradora in Concurso 36/2012; precise periods remain proceeding-specific."},
     {"identity_id":"PD-SP-P-0085","public_name":"Manuela Cabrera de la Cruz","role":"Procuradora","track":"PROCURADOR_FORMER","classification":"OUR_FORMER_PROFESSIONAL","evidence_status":"CONFIRMED_FORMER_PROCURADORA","firm_ids":[],"matter_scope":"Former procuradora in project-side criminal matters."},
@@ -61,9 +62,9 @@
   ],
   "counts": {
     "total": 40,
-    "current_counsel": 4,
+    "current_counsel": 3,
     "former_or_review_counsel": 31,
-    "current_procuradores": 1,
+    "current_procuradores": 2,
     "former_procuradores": 4
   }
 }
