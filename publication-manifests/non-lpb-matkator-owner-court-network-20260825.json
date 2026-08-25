@@ -1,0 +1,20 @@
+{
+  "schema":"por-derecho.publication-manifest.v1",
+  "publication_id":"non-lpb-matkator-owner-court-network-20260825",
+  "control_date":"2026-08-25",
+  "current_state":"PR_OPEN",
+  "owner":"Por Derecho / Project Sun Rock",
+  "status":"prepared_in_pr",
+  "package":"non-lpb-matkator-owner-court-network",
+  "control_id":"PD-SP-OWNER-COURT-NETWORK-001",
+  "registry_id":"PD-SP-IDENTITY-REGISTRY-001",
+  "expected_routes":{"es":["es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/index.html"],"en":["en/matter-identity-registry/non-lpb-matkator-owner-network/index.html"]},
+  "identity_extension":{"before_total":185,"after_total":187,"before_people":86,"after_people":88,"new_people":[{"id":"PD-SP-P-0087","name":"Gerardo Zacarías Acosta Matos"},{"id":"PD-SP-P-0088","name":"Javier Acosta Matos"}]},
+  "court_findings":["AP 89/2014 identifies exactly seven claimant/appellant owners and records their ownership of 18 bungalows.","The seven are Acciones Canarias, Muruga, Roque Prieto, Amenem, Tengolf, Miguel Molina Betancor and Francisco Luis Molina Molina.","Álvaro Campanario Hernández acted as lawyer for those seven appellants.","AP 89/2014 is preserved as adverse evidence, including its partial reversal and eviction order against Monterecco in the claimants' apartments."],
+  "separate_non_judgment_layers":["wider Montelanza/Molina party-pleading perimeter","2011 Community organ and representation","2016 stated Molina/Community representation continuity","2017–2018 security/access testimony","2022 Acosta Matos representation/project cluster","later Acosta Matos family/business corporate perimeter"],
+  "specific_person_treatment":[{"id":"PD-SP-P-0027","name":"Celia Guillén Pérez","proposition":"specific voting position in complainant-side 2-Feb-2011 reconstruction","boundary":"party proposition, not judicial finding"},{"id":"PD-SP-P-0031","name":"Manuel Molina Climent","proposition":"present at 4-Feb-2022 meeting and requested explanation of debtor balances","boundary":"requesting explanation is not creating or independently verifying the debt"},{"id":"PD-SP-P-0087","name":"Gerardo Zacarías Acosta Matos","proposition":"later Acosta Matos family/business and corporate perimeter","boundary":"later office does not prove earlier conduct; distinct from Gerardo Nicanor Acosta Armas"},{"id":"PD-SP-P-0088","name":"Javier Acosta Matos","proposition":"2022 representation of Construcciones Acos-Matos, S.L. and family/business perimeter","boundary":"family membership does not expand act-specific attribution"}],
+  "privacy_boundary":"Additional natural persons named in court pleadings but not already admitted to the canonical public identity registry remain private candidates pending person-specific admission and publication review.",
+  "open_p0":["map the AP89 18 bungalows to exact fincas","reconstruct the full 2008 residual non-LPB/Matkator ownership finca by finca","trace later CAM acquisitions from each prior holder","authenticate 2-Feb and 22-Jun-2011 powers, voting and debt schedules","obtain certified complete DP 1132/2018 and Rollo 1010/2018","reconcile every 4-Feb-2022 Acosta Matos entity, NIF, power, finca and voting right"],
+  "assets":["assets/data/matter-identity-registry-v1.acosta-matos-people.json","assets/data/non-lpb-matkator-owner-court-network-v1.json","assets/owner-court-network.css","scripts/validate_non_lpb_owner_court_network.py","scripts/validate_legal_professional_register.py","sitemap-owner-court-network.xml",".github/workflows/verify-non-lpb-owner-court-network.yml"],
+  "post_merge_verification":["Confirm both bilingual routes return 200 and show the seven AP89 claimants, Celia, Manuel and the four-person Acosta Matos block.","Confirm canonical registry total is 187 with 88 people and 66 organisations.","Confirm the professional roster remains 40 and Adriana Hernández Díaz remains classified as procuradora in the separate professional register.","Confirm privacy-gated complaint-only names do not appear in the public owner-network dataset.","Confirm Pages deployment and exact-marker verification, then advance manifest to LIVE_VERIFIED."]
+}
