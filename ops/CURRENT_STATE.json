@@ -20,23 +20,23 @@
   "repository_observation": {
     "repository": "sbu001monterecco/por-derecho",
     "ref": "refs/heads/main",
-    "sha": "2b4af225818940a6e83136e76cdc246a056096a6",
-    "tree_sha": "0cc83b4b117882e5a4acc5a2b49450170072d436",
-    "commit_time": "2026-08-25T23:16:35Z",
-    "observed_at": "2026-08-25T23:18:30Z",
+    "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+    "tree_sha": "adb4a8c4029fc2bd1bef1184612a6969dab9ac1c",
+    "commit_time": "2026-08-25T23:21:21Z",
+    "observed_at": "2026-08-25T23:27:30Z",
     "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
     "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
   },
   "deployment_observation": {
     "status_file": "ops/PRODUCTION_STATUS.json",
-    "last_observed_served_sha": "2b4af225818940a6e83136e76cdc246a056096a6",
-    "last_observed_pages_run_id": 32910036643,
-    "last_observed_at": "2026-08-25T23:17:10Z",
+    "last_observed_served_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+    "last_observed_pages_run_id": 32910389340,
+    "last_observed_at": "2026-08-25T23:23:02Z",
     "verification_level": "DEPLOYMENT_BUILD_SUCCESS"
   },
   "repository_inventory_observation": {
-    "open_pull_requests": 35,
-    "observed_at": "2026-08-25T23:18:30Z",
+    "open_pull_requests": 36,
+    "observed_at": "2026-08-25T23:27:30Z",
     "source": "GitHub search API: repo:sbu001monterecco/por-derecho is:pr is:open",
     "meaning": "Observation only; always re-query before triage or merge decisions."
   },
@@ -74,6 +74,7 @@
     "repository_preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
   },
   "current_priority_sources": [
+    "PRIORITY_ACTIONS_START_HERE.md",
     "docs/deletion-audits/2026-08-25-unitary-repository-website-valencia-thread-closeout.md",
     "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md",
     "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
