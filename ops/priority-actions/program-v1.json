@@ -1,0 +1,521 @@
+{
+  "schema": "por-derecho.priority-actions.v1",
+  "programme_id": "PD-PRIORITY-20260825-01",
+  "prepared_at": "2026-08-25T23:00:00+01:00",
+  "prepared_from_main": "7fedbbbeed6ee7f014ecbeda4565d880ecdbaf65",
+  "refresh_main_before_execution": true,
+  "public_repository_warning": "Every committed path is public. Native private communications, named transaction pipelines, provider locators and unannounced terms remain outside Git.",
+  "state_machine": [
+    "PLANNED",
+    "READY",
+    "IN_PROGRESS",
+    "BLOCKED",
+    "REVIEW",
+    "COMPLETE"
+  ],
+  "completion_rule": "A task may be COMPLETE only when all acceptance criteria are evidenced and the final repository/private-source locator is recorded.",
+  "global_controls": [
+    "AGENTS.md",
+    "CHATGPT_START_HERE.md",
+    "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+    ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
+    "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
+    "EMAIL_SEND_EXACTLY_ONCE_EXECUTION_GUARD.md",
+    "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md"
+  ],
+  "parallelisation": {
+    "repository_public_lane": [
+      "P0-OPS-01",
+      "P0-PRIV-01",
+      "P0-REC-01",
+      "P1-ONA-01",
+      "P1-PR-01",
+      "P1-WEB-01",
+      "P1-RUNTIME-01"
+    ],
+    "private_read_only_lane": [
+      "P0-TX-01",
+      "P0-FIN-01",
+      "P2-TX-WS-01"
+    ],
+    "same_path_parallel_edits_prohibited": true
+  },
+  "tasks": [
+    {
+      "id": "P0-OPS-01",
+      "priority": "P0",
+      "title": "Rebuild operational truth and release-state separation",
+      "state": "READY",
+      "track": "repository-governance",
+      "privacy": "PUBLIC_SAFE",
+      "objective": "Create a release-state register that separates current Git head, exact deployed SHA, last complete whole-site verification and last-known-good rollback anchor.",
+      "dependencies": [],
+      "source_controls": [
+        "ops/CURRENT_STATE.json",
+        "ops/PRODUCTION_STATUS.json",
+        "ops/LAST_KNOWN_GOOD.json",
+        "ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md",
+        "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md"
+      ],
+      "template": "ops/priority-actions/templates/release-state-register.template.json",
+      "suggested_branch": "codex/p0-operational-truth-<date>",
+      "allowed_actions": [
+        "read current main and branch protection",
+        "read deployments and workflow runs",
+        "perform live read-only route verification",
+        "create an append-only release register",
+        "add stale-snapshot notices without erasing historical verified releases"
+      ],
+      "prohibited_actions": [
+        "rewrite LAST_KNOWN_GOOD merely because main advanced",
+        "claim exact live SHA without deployment evidence",
+        "force-push or rewrite history"
+      ],
+      "expected_outputs": [
+        "ops/RELEASE_STATE_REGISTER.json",
+        "ops/RELEASE_STATE_REGISTER.md",
+        "a validator or deterministic check for required fields"
+      ],
+      "acceptance_criteria": [
+        "current main is captured as an observed fact with timestamp",
+        "exact live SHA is evidenced or explicitly UNKNOWN with reason",
+        "last whole-site verification is separate from current head",
+        "last-known-good rollback anchor is preserved",
+        "open PR and draft counts are timestamped",
+        "CURRENT_STATE and PRODUCTION_STATUS no longer masquerade as current if stale",
+        "repository checks pass"
+      ],
+      "authority_gate": "REPOSITORY_READ_WRITE_ONLY",
+      "next_action": "Refresh main and instantiate the release-state template."
+    },
+    {
+      "id": "P0-PRIV-01",
+      "priority": "P0",
+      "title": "Inventory and remediate public/private boundary defects",
+      "state": "READY",
+      "track": "privacy-custody",
+      "privacy": "MIXED",
+      "objective": "Produce a non-destructive inventory of private-source material exposed in public Git and prepare controlled current-tree remediation without losing evidential custody.",
+      "dependencies": [
+        "P0-OPS-01"
+      ],
+      "source_controls": [
+        "AGENTS.md",
+        ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
+        "archive/EVIDENCE_CUSTODY_AND_PRESERVATION_PROTOCOL_16AUG2026.md",
+        "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md"
+      ],
+      "template": "ops/priority-actions/templates/public-private-remediation-inventory.template.csv",
+      "suggested_branch": "codex/p0-public-private-inventory-<date>",
+      "allowed_actions": [
+        "scan current tree read-only",
+        "classify provider IDs, private locators, raw mail content, unsent correspondence and unnecessary identifiers",
+        "confirm private preservation before destructive change",
+        "replace exposed material with public-safe derivatives through focused PRs"
+      ],
+      "prohibited_actions": [
+        "delete the only evidential copy",
+        "claim Git history is erased by deleting a current file",
+        "publish new private detail in the remediation inventory",
+        "perform broad unreviewed archive deletion"
+      ],
+      "expected_outputs": [
+        "ops/privacy-remediation/current-tree-inventory.csv",
+        "docs/privacy-remediation/<date>-plan.md",
+        "focused remediation PRs with path-level preservation records"
+      ],
+      "acceptance_criteria": [
+        "every candidate item has path, pattern, classification, custody state and proposed treatment",
+        "destructive changes have prior private preservation evidence",
+        "public derivatives retain necessary provenance and proof boundaries",
+        "Git-history limitations are stated",
+        "privacy and preservation validators pass"
+      ],
+      "authority_gate": "INVENTORY_ALLOWED_REMEDIATION_REQUIRES_PATH_LEVEL_REVIEW",
+      "next_action": "Run the inventory stage only; do not delete or redact until custody is confirmed."
+    },
+    {
+      "id": "P0-TX-01",
+      "priority": "P0",
+      "title": "Read-only private mailbox re-query for adviser and NDA status",
+      "state": "READY",
+      "track": "private-transaction",
+      "privacy": "PRIVATE_ONLY_WITH_PUBLIC_SAFE_DERIVATIVE",
+      "objective": "Determine the current reply, conflicts/onboarding, engagement, NDA, meeting and requested-document state from the authoritative corporate mailbox.",
+      "dependencies": [],
+      "source_controls": [
+        ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
+        ".github/governance/records/TXD-20260825-02.md",
+        ".github/governance/records/TXD-20260825-03.md",
+        "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
+        "EMAIL_SEND_EXACTLY_ONCE_EXECUTION_GUARD.md"
+      ],
+      "template": "ops/priority-actions/templates/private-mailbox-requery-checklist.md",
+      "suggested_branch": "none for private read; create a branch only for a minimised derivative",
+      "allowed_actions": [
+        "search and read the connected corporate mailbox",
+        "read current threads and attachments",
+        "classify acknowledgement, substantive reply, conflict status, NDA version and meeting state",
+        "record a minimised public-safe continuity update if material"
+      ],
+      "prohibited_actions": [
+        "send, reply, forward, correct or follow up",
+        "infer reading or acceptance from Sent status",
+        "commit recipient addresses, message IDs, private subjects or native bodies",
+        "treat an informal response as conflict clearance or engagement"
+      ],
+      "expected_outputs": [
+        "private current-status note in the authorised source system",
+        "optional minimised TXD continuation record"
+      ],
+      "acceptance_criteria": [
+        "latest relevant threads are read through the current date",
+        "reply state is separated from delivery and automated responses",
+        "conflict, onboarding and engagement states are separately classified",
+        "current NDA version and signatory route are identified or marked not located",
+        "meeting and requested-document state are recorded",
+        "no external communication is performed"
+      ],
+      "authority_gate": "READ_ONLY_PRIVATE_SOURCE",
+      "next_action": "Execute the checklist against the connected mailbox before any further communication."
+    },
+    {
+      "id": "P0-FIN-01",
+      "priority": "P0",
+      "title": "Complete the 2016–2026 financing playbook",
+      "state": "READY",
+      "track": "private-transaction",
+      "privacy": "PRIVATE_DETAIL_PUBLIC_SAFE_METHOD",
+      "objective": "Create one reproducible institution-by-institution financing history, outcome ledger and current shortlist while keeping named pipeline detail outside public Git.",
+      "dependencies": [
+        "P0-TX-01"
+      ],
+      "source_controls": [
+        "research/financing-history-since-2016-wave-map.md",
+        ".github/governance/records/TXD-20260825-02.md",
+        ".github/governance/records/TXD-20260825-03.md",
+        ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md"
+      ],
+      "template": "ops/priority-actions/templates/financing-playbook-public-safe.template.csv",
+      "suggested_branch": "codex/p0-financing-playbook-public-safe-<date>",
+      "allowed_actions": [
+        "search Gmail, Drive and authorised private files",
+        "build a named detailed matrix in a private workspace",
+        "assign opaque public IDs to routes",
+        "score current candidates using documented criteria",
+        "publish only wave-level or opaque public-safe continuity"
+      ],
+      "prohibited_actions": [
+        "publish named current counterparties or contacts without separate authority",
+        "publish unannounced assets, pricing, leverage or negotiation terms",
+        "treat historic terms as current",
+        "treat an NDA, meeting or term sheet as a commitment"
+      ],
+      "expected_outputs": [
+        "private named financing playbook",
+        "private shortlist and source locator map",
+        "public-safe methodology/status derivative if needed"
+      ],
+      "acceptance_criteria": [
+        "all five financing waves are covered",
+        "each credible route has entity, capacity, introduction, product, amount band, security, conditions, stage, outcome and evidence locators",
+        "pause/rejection/expiry reasons are distinguished",
+        "current reactivation priority is evidence-based",
+        "one-principal-group objective is preserved",
+        "public Git contains no live negotiation detail"
+      ],
+      "authority_gate": "PRIVATE_RESEARCH_AND_PUBLIC_SAFE_DERIVATIVE_ONLY",
+      "next_action": "Create the private named matrix, then derive only the minimum repository continuity."
+    },
+    {
+      "id": "P0-REC-01",
+      "priority": "P0",
+      "title": "Materialise the quantitative recovery denominator",
+      "state": "READY",
+      "track": "evidence-recovery",
+      "privacy": "PUBLIC_SAFE_SCHEMA_MIXED_EVIDENCE",
+      "objective": "Build a reproducible ledger linking assets, rights, liabilities, consideration, proceeds, fees, creditor payments, income, surplus, damages and remedies to the correct right-holder without double counting.",
+      "dependencies": [
+        "P0-OPS-01"
+      ],
+      "source_controls": [
+        "ASSET_RECOVERY_AUTHORITY_MATRIX_21AUG2026.json",
+        "archive/MISSING_EVIDENCE_REGISTER.md",
+        "archive/CORRECTION_REGISTER.md",
+        "ops/CANONICAL_ENTITY_NAMES.json",
+        "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md"
+      ],
+      "template": "ops/priority-actions/templates/recovery-denominator.template.csv",
+      "suggested_branch": "codex/p0-recovery-denominator-<date>",
+      "allowed_actions": [
+        "inventory amounts and non-cash rights from primary records",
+        "separate gross, paid, recovered, cost, net and counterfactual values",
+        "assign claimant/right-holder and remedy",
+        "create overlap groups and no-double-counting rules",
+        "mark not-located and disputed values explicitly"
+      ],
+      "prohibited_actions": [
+        "merge different legal persons or estates",
+        "use one valuation as proof of another date or right",
+        "count title, possession, operation, income and damages twice",
+        "fill missing amounts with unsupported estimates"
+      ],
+      "expected_outputs": [
+        "research/recovery-denominator-v1.csv",
+        "research/recovery-denominator-methodology.md",
+        "research/recovery-denominator-source-gap-register.csv"
+      ],
+      "acceptance_criteria": [
+        "each row identifies legal person/right-holder, asset or flow, period, source and evidence status",
+        "definitive credit, consideration, proceeds, fees, creditor payments and surplus are bridged or explicitly unbridged",
+        "income/fruits and counterfactual cash flow are separated",
+        "remedy and defendant/counterparty are identified where supported",
+        "overlap groups prevent double counting",
+        "every unresolved figure has a source-gap entry"
+      ],
+      "authority_gate": "REPOSITORY_EVIDENCE_WORK_WITH_PRIVATE_SOURCE_MINIMISATION",
+      "next_action": "Instantiate the denominator template and populate only source-supported rows."
+    },
+    {
+      "id": "P1-ONA-01",
+      "priority": "P1",
+      "title": "Improve discovery and canonicalisation of the pre-7 June ONA dossier",
+      "state": "READY",
+      "track": "public-site",
+      "privacy": "PUBLIC",
+      "objective": "Register the paired funded-exit routes in discovery controls and verify canonical, hreflang, internal-link and live-route parity without increasing homepage density.",
+      "dependencies": [
+        "P0-OPS-01"
+      ],
+      "source_controls": [
+        "research/pre-7-june-2018-funded-ona-exit-source-map.md",
+        "en/pre-7-june-2018-funded-ona-exit/index.html",
+        "es/salida-financiada-ona-antes-7-junio-2018/index.html",
+        "sitemap.xml",
+        "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
+      ],
+      "template": "ops/priority-actions/templates/ona-discovery-work-order.md",
+      "suggested_branch": "codex/p1-ona-discovery-<date>",
+      "allowed_actions": [
+        "add paired sitemap entries",
+        "verify canonical and hreflang links",
+        "add concise gateways from ONA, 7 June and financial-lives routes",
+        "update discovery/search registers where current architecture requires",
+        "perform direct live readback after merge"
+      ],
+      "prohibited_actions": [
+        "add another large homepage module",
+        "weaken signed/conditional/not-proved distinctions",
+        "publish private transaction files or mailbox content",
+        "break existing sent routes or fragments"
+      ],
+      "expected_outputs": [
+        "updated sitemap/discovery controls",
+        "concise bilingual route gateways",
+        "publication manifest or verification record"
+      ],
+      "acceptance_criteria": [
+        "both routes appear in the sitemap as an ES/EN pair",
+        "canonical and hreflang values are reciprocal and correct",
+        "relevant existing dossiers link to the dedicated pages",
+        "direct routes return HTTP 200 after deployment",
+        "source/live content or expected rendered output is verified",
+        "public wording preserves all proof boundaries"
+      ],
+      "authority_gate": "PUBLIC_REPOSITORY_AND_SITE_MAINTENANCE",
+      "next_action": "Use the work order to identify every discovery surface before editing."
+    },
+    {
+      "id": "P1-PR-01",
+      "priority": "P1",
+      "title": "Rebuild the unique validated delta from PR #1016 on current main",
+      "state": "READY",
+      "track": "repository-reconciliation",
+      "privacy": "PUBLIC_SAFE",
+      "objective": "Preserve useful owner/court-party and AP 89/2014 evidence from the divergent PR without importing stale IDs, regressions or unnecessary validator rewrites.",
+      "dependencies": [
+        "P0-OPS-01"
+      ],
+      "source_controls": [
+        "AGENTS.md",
+        "ops/CANONICAL_ENTITY_NAMES.json",
+        "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+        "current professional-register controls",
+        "PR #1016 compare and patches"
+      ],
+      "template": "ops/priority-actions/templates/pr-triage.template.csv",
+      "suggested_branch": "codex/p1-rebuild-pr1016-delta-<date>",
+      "allowed_actions": [
+        "compare PR #1016 against current main",
+        "inventory each changed file and proposition",
+        "extract unique supported evidence",
+        "rebuild small deltas on current main",
+        "retain adverse and limiting evidence"
+      ],
+      "prohibited_actions": [
+        "merge PR #1016 as-is",
+        "change immutable IDs without migration analysis",
+        "transfer knowledge or liability through association",
+        "delete or replace a current validator without line-by-line necessity and regression tests"
+      ],
+      "expected_outputs": [
+        "ops/pr-triage/PR-1016-delta.csv",
+        "ops/pr-triage/PR-1016-rebuild-plan.md",
+        "one or more focused replacement PRs"
+      ],
+      "acceptance_criteria": [
+        "every original changed file is classified keep/rebuild/reject/superseded",
+        "unique propositions have current source and proof status",
+        "canonical IDs and professional-register protections are preserved",
+        "AP 89/2014 adverse evidence is retained",
+        "current validators pass",
+        "old PR is closed or clearly retained with a preservation explanation after replacement"
+      ],
+      "authority_gate": "REPOSITORY_RECONCILIATION_ONLY",
+      "next_action": "Create the PR triage inventory before changing any public page or registry."
+    },
+    {
+      "id": "P1-WEB-01",
+      "priority": "P1",
+      "title": "Build a six-question reader journey",
+      "state": "READY",
+      "track": "public-site-information-architecture",
+      "privacy": "PUBLIC",
+      "objective": "Make the dense website easier to navigate through route indexes and progressive disclosure while preserving all protected first-read and evidential content.",
+      "dependencies": [
+        "P0-OPS-01",
+        "P1-ONA-01"
+      ],
+      "source_controls": [
+        "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md",
+        "archive/FIVE_ACTOR_FRONT_PAGE_AND_DIRECT_ROUTE_PRESERVATION_LOCK_24AUG2026.md",
+        "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+        "current ES/EN route inventory"
+      ],
+      "template": "ops/priority-actions/templates/reader-journey-route-map.template.csv",
+      "suggested_branch": "codex/p1-reader-journey-<date>",
+      "allowed_actions": [
+        "map existing routes to six reader questions",
+        "create bilingual indexes or concise gateways",
+        "use progressive disclosure outside protected first-read content",
+        "test mobile and direct-route journeys"
+      ],
+      "prohibited_actions": [
+        "remove or hide protected actor/institutional presentation",
+        "delete stable routes or sent-link fragments",
+        "collapse separate legal persons or evidence classes",
+        "add another large undifferentiated homepage module"
+      ],
+      "expected_outputs": [
+        "bilingual route map",
+        "reader-journey design note",
+        "focused navigation/index PR"
+      ],
+      "acceptance_criteria": [
+        "all material routes map to at least one reader question",
+        "ES/EN parity is maintained",
+        "protected first-read content remains prominent",
+        "direct links and fragments remain valid",
+        "mobile and desktop navigation tests pass",
+        "no substantive proposition is silently removed"
+      ],
+      "authority_gate": "PUBLIC_SITE_INFORMATION_ARCHITECTURE",
+      "next_action": "Populate the route map before proposing layout changes."
+    },
+    {
+      "id": "P1-RUNTIME-01",
+      "priority": "P1",
+      "title": "Prepare declarative route/module runtime consolidation",
+      "state": "READY",
+      "track": "site-runtime",
+      "privacy": "PUBLIC",
+      "objective": "Reduce layered loader order and duplication risk through a declarative route/module manifest tested in shadow mode before runtime replacement.",
+      "dependencies": [
+        "P0-OPS-01",
+        "P1-WEB-01"
+      ],
+      "source_controls": [
+        "assets/site.js",
+        "current route-specific loader files",
+        "ops/CRITICAL_PATHS.txt",
+        "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+        "sent-link continuity controls"
+      ],
+      "template": "ops/priority-actions/templates/runtime-module-manifest.template.json",
+      "suggested_branch": "codex/p1-runtime-manifest-shadow-<date>",
+      "allowed_actions": [
+        "inventory route and loader dependencies",
+        "create a declarative manifest",
+        "run shadow comparisons without changing production behaviour",
+        "measure duplicate loads and ordering dependencies",
+        "replace loaders only in a later focused PR after proof"
+      ],
+      "prohibited_actions": [
+        "replace the production loader before shadow parity",
+        "remove route-specific behaviour without tests",
+        "break stable URLs, fragments, assets or sent-link obligations",
+        "combine runtime consolidation with unrelated content rewrites"
+      ],
+      "expected_outputs": [
+        "assets/data/route-module-manifest-v1.json",
+        "runtime shadow-comparison report",
+        "staged migration plan"
+      ],
+      "acceptance_criteria": [
+        "every current loader/module is inventoried",
+        "route conditions and ordering dependencies are explicit",
+        "shadow output matches protected routes and assertions",
+        "no production behaviour changes in the preparation PR",
+        "migration can be reverted through a normal PR"
+      ],
+      "authority_gate": "SHADOW_MODE_PREPARATION",
+      "next_action": "Populate the manifest template from the current loader chain."
+    },
+    {
+      "id": "P2-TX-WS-01",
+      "priority": "P2",
+      "title": "Establish a private transaction-development workspace",
+      "state": "READY",
+      "track": "private-transaction-governance",
+      "privacy": "PRIVATE_ONLY_WITH_PUBLIC_CHARTER",
+      "objective": "Create a controlled private home for named financing, banking, co-investment and adviser work while public Git retains only anonymised governance and continuity.",
+      "dependencies": [
+        "P0-TX-01",
+        "P0-FIN-01"
+      ],
+      "source_controls": [
+        ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
+        ".github/governance/records/TXD-20260825-02.md",
+        ".github/governance/records/TXD-20260825-03.md"
+      ],
+      "template": "ops/priority-actions/templates/private-transaction-workspace-charter.md",
+      "suggested_branch": "codex/p2-private-workspace-public-charter-<date>",
+      "allowed_actions": [
+        "design private folders, access roles, document classes and retention rules",
+        "move named matrices and current documents to authorised private storage",
+        "retain opaque public continuity IDs",
+        "define promotion criteria for any later public announcement"
+      ],
+      "prohibited_actions": [
+        "store native emails or current transaction data in public Git",
+        "cross-link private transaction work to litigation allegations by default",
+        "publish an unannounced transaction or target",
+        "treat public Git as a confidential data room"
+      ],
+      "expected_outputs": [
+        "private workspace and access map",
+        "private document-class and retention policy",
+        "public-safe workspace charter only"
+      ],
+      "acceptance_criteria": [
+        "named counterparties and current terms are confined to private storage",
+        "access and retention are defined",
+        "source/custody locators are stable",
+        "public continuity uses opaque IDs only",
+        "public promotion requires a separate verified announcement decision"
+      ],
+      "authority_gate": "PRIVATE_WORKSPACE_SETUP_NO_EXTERNAL_CONTACT",
+      "next_action": "Use the charter to choose an authorised private storage location and access model."
+    }
+  ]
+}
