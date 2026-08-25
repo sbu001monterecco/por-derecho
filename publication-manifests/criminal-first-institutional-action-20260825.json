@@ -8,6 +8,19 @@
   "package": "criminal-first-institutional-action",
   "merge_sha": "4444296402c9e05c856919c82bffc3874c5e724a",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/institutional-action/",
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/criminal-first-institutional-action-matrix-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-first-action.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt",
+    "https://sbu001monterecco.github.io/por-derecho/assets/criminal-first-action-pressure-20260825.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/institutional-action.css",
+    "https://sbu001monterecco.github.io/por-derecho/assets/intervencion-protected-assets-highlight-20260820.js"
+  ],
   "validation": {
     "evidence": [
       "All 27 substantive pull-request workflow runs completed successfully for PR #987 at head 27fc3158eb364006bcdf6be974a1d4e71b782bbf.",
