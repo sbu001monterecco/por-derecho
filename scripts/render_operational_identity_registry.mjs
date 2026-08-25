@@ -6,6 +6,10 @@ const baseURL = (process.env.PD_ID_BASE_URL || 'http://127.0.0.1:8000/por-derech
 const outputDir = process.env.PD_ID_SCREENSHOT_DIR || 'artifacts/operational-identity-registry-20260825';
 await fs.mkdir(outputDir, { recursive: true });
 
+const registryIndex = JSON.parse(await fs.readFile('assets/data/matter-identity-registry-v1.json', 'utf8'));
+const expectedTotal = Number(registryIndex?.counts?.total);
+if (!(expectedTotal > 0)) throw new Error('Canonical registry does not expose a positive counts.total');
+
 const cases = [
   {
     language: 'es',
@@ -61,10 +65,10 @@ try {
       if (!heading?.includes(testCase.expectedTitle)) throw new Error(`${url}: missing expected heading`);
 
       const total = Number(await page.locator('[data-registry-stat="TOTAL"]').first().textContent());
-      if (total !== 159) throw new Error(`${url}: expected 159 identities, found ${total}`);
+      if (total !== expectedTotal) throw new Error(`${url}: expected ${expectedTotal} identities, found ${total}`);
 
       const initialRows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();
-      if (initialRows !== 159) throw new Error(`${url}: expected 159 rendered rows, found ${initialRows}`);
+      if (initialRows !== expectedTotal) throw new Error(`${url}: expected ${expectedTotal} rendered rows, found ${initialRows}`);
 
       const queueCounts = {};
       for (const queue of ['p0', 'unresolved', 'no-route', 'distinction']) {
@@ -129,4 +133,4 @@ try {
 }
 
 if (failed) process.exit(1);
-console.log(`Operational identity registry rendered successfully: ${metrics.length} cases`);
+console.log(`Operational identity registry rendered successfully: ${metrics.length} cases; ${expectedTotal} canonical identities`);
