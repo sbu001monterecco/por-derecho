@@ -1,0 +1,86 @@
+{
+  "schema": "por-derecho.public-custody-summary.v1",
+  "control_date": "2026-08-25",
+  "custody_manifest_id": "PD-SP-CUST-0001",
+  "proceeding_id": "PD-SP-R-0002",
+  "status": "PRIVATE_NATIVE_CUSTODY_PILOT_COMPLETE_PUBLIC_HASH_SUMMARY",
+  "private_vault": {
+    "implemented_for_this_pilot": true,
+    "not_shared_at_verification": true,
+    "provider_locators_published": false,
+    "native_bodies_committed_to_github": false
+  },
+  "documents": [
+    {
+      "document_id": "PD-SP-DOC-0001",
+      "title": "RPL 2523/2025 providencia scheduling deliberation, vote and decision for 4 June 2026",
+      "proceeding_ids": ["PD-SP-R-0002"],
+      "source_class": "PD_NATIVE_PRIVATE",
+      "sha256": "eed0c82246047e39b45d3ebc0c1f028dde6ae8f88e61441eb56ca2aaf18451a6",
+      "bytes": 476062,
+      "pages": 2,
+      "evidence_state": "SIGNED_COPY_LOCATED",
+      "publication_state": "PRIVATE_NATIVE_PUBLIC_HASH_ONLY",
+      "private_manifest_ref": "PD-SP-CUST-0001",
+      "limitations": [
+        "Hash identity proves byte identity only; certification, record inclusion and any later merits decision remain separate questions."
+      ]
+    },
+    {
+      "document_id": "PD-SP-DOC-0002",
+      "title": "Gil Marer appeal against Sentencia 163/2023",
+      "proceeding_ids": ["PD-SP-R-0002"],
+      "source_class": "PD_NATIVE_PRIVATE",
+      "sha256": "2dc6ff9bdc2c61bd1988aa089932518851df362853b456932e13e6776ad9ae35",
+      "bytes": 442084,
+      "pages": 29,
+      "evidence_state": "SIGNED_COPY_LOCATED",
+      "publication_state": "PRIVATE_NATIVE_PUBLIC_HASH_ONLY",
+      "private_manifest_ref": "PD-SP-CUST-0001",
+      "limitations": [
+        "The principal LexNET transmission receipt remains unlocated; a later deposit filing is not treated as the principal appeal receipt."
+      ]
+    },
+    {
+      "document_id": "PD-SP-DOC-0003",
+      "title": "Joint Pink Canary Services and Patricia Domínguez appeal against Sentencia 163/2023",
+      "proceeding_ids": ["PD-SP-R-0002"],
+      "source_class": "PD_NATIVE_PRIVATE",
+      "sha256": "66f509d4cabffea7f3e05c40a656b3fd7a81aa9cf5ddcba60559c22e271d4df5",
+      "bytes": 353860,
+      "pages": 17,
+      "evidence_state": "FILED_COPY_AND_RECEIPT_LOCATED",
+      "publication_state": "PRIVATE_NATIVE_PUBLIC_HASH_ONLY",
+      "private_manifest_ref": "PD-SP-CUST-0001",
+      "related_document_ids": ["PD-SP-DOC-0004"],
+      "limitations": [
+        "Two independently located 353,860-byte copies are byte-identical to each other.",
+        "The LexNET receipt records the signed filed principal under SHA-256 c40603b3d38fb825256f277321655e274a24d66b3f40c264dd44c708f845df79; the stored returned copy is not represented as byte-identical to that signed LexNET object unless the signed object is separately acquired."
+      ]
+    },
+    {
+      "document_id": "PD-SP-DOC-0004",
+      "title": "LexNET receipt for the joint Pink Canary Services and Patricia Domínguez appeal",
+      "proceeding_ids": ["PD-SP-R-0002"],
+      "source_class": "PD_NATIVE_PRIVATE",
+      "sha256": "4e41bb87e9a51c2a117beb5bf17e36e2fcb101c71fc973a9c0c9b85f34b4f00e",
+      "bytes": 276693,
+      "pages": 2,
+      "evidence_state": "FILED_COPY_AND_RECEIPT_LOCATED",
+      "publication_state": "PRIVATE_NATIVE_PUBLIC_HASH_ONLY",
+      "private_manifest_ref": "PD-SP-CUST-0001",
+      "related_document_ids": ["PD-SP-DOC-0003"],
+      "limitations": [
+        "The receipt records transmission metadata and document hashes; service, certification and appellate docket mapping remain separate questions."
+      ]
+    }
+  ],
+  "verification": {
+    "source_files_sha256_hashed": true,
+    "source_sizes_reconciled_to_private_vault": true,
+    "page_counts_checked": true,
+    "first_pages_rendered_and_visually_inspected": true,
+    "private_manifest_separately_hashed": true,
+    "private_provider_identifiers_excluded_from_public_summary": true
+  }
+}
