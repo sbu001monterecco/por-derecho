@@ -41,3 +41,4 @@ Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-labory-catrude.x
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-criminal-first-action.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-matter-identity-operational.xml
 Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-david-espejo.xml
+Sitemap: https://sbu001monterecco.github.io/por-derecho/sitemap-legal-professionals.xml
