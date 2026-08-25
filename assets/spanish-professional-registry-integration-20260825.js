@@ -6,6 +6,7 @@
   const isEn = document.documentElement.lang === 'en' || /\/en\//.test(path);
   const prefix = path.includes('/por-derecho/') ? '/por-derecho' : '';
   const target = isEn ? `${prefix}/en/matter-identity-registry/spanish-lawyers/` : `${prefix}/es/registro-identidad-materia/abogados-espanoles/`;
+  const ownerNetwork = isEn ? `${prefix}/en/matter-identity-registry/non-lpb-matkator-owner-network/` : `${prefix}/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/`;
   const identityRoute = isEn ? '/en/matter-identity-registry/' : '/es/registro-identidad-materia/';
   const actorRoute = isEn ? '/en/actors-parties-lawyers-representatives/' : '/es/actores-partes-abogados-representantes/';
   const overrides = {
@@ -24,7 +25,7 @@
     const section = document.createElement('section');
     section.dataset.spanishProfessionalRegisterBanner = '20260825';
     section.style.cssText = 'background:#13252d;color:#fff;padding:1.15rem 0;border-bottom:1px solid rgba(255,255,255,.14)';
-    section.innerHTML = `<div class="shell" style="display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap"><div><strong>${isEn?'Spanish counsel and professional register':'Registro de abogados y profesionales españoles'}</strong><div style="font-size:.9rem;line-height:1.45;opacity:.88;margin-top:.2rem">${isEn?'Current and former Spanish counsel, procuradores, advisers, owners and later officers—classified by sourced capacity and attribution boundary.':'Abogados españoles actuales y anteriores, procuradores, asesores, propietarios y cargos posteriores—clasificados por capacidad y límite de atribución.'}</div></div><a href="${target}" style="display:inline-flex;background:#fff;color:#13252d;border-radius:999px;padding:.65rem .88rem;text-decoration:none;font-weight:900">${isEn?'Open classified register →':'Abrir registro clasificado →'}</a></div>`;
+    section.innerHTML = `<div class="shell" style="display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap"><div><strong>${isEn?'Spanish counsel, professionals and court-derived owner network':'Abogados, profesionales y red judicial de propietarios'}</strong><div style="font-size:.9rem;line-height:1.45;opacity:.88;margin-top:.2rem">${isEn?'Current/former Spanish counsel plus the non-LPB/Matkator owner, claimant and representation network—each classified by source and attribution boundary.':'Abogados españoles actuales/anteriores y la red no-LPB/Matkator de propietarios, demandantes y representantes—cada relación clasificada por fuente y límite.'}</div></div><div style="display:flex;gap:.55rem;flex-wrap:wrap"><a href="${target}" style="display:inline-flex;background:#fff;color:#13252d;border-radius:999px;padding:.65rem .88rem;text-decoration:none;font-weight:900">${isEn?'Professionals →':'Profesionales →'}</a><a href="${ownerNetwork}" style="display:inline-flex;border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:999px;padding:.65rem .88rem;text-decoration:none;font-weight:900">${isEn?'Owner/court network →':'Red propietarios/autos →'}</a></div></div>`;
     const first = main.querySelector(':scope > section:first-of-type');
     if (first) first.insertAdjacentElement('afterend',section); else main.prepend(section);
   };
