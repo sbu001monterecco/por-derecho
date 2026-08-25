@@ -130,11 +130,12 @@ The complementary RICPE/Sun Park/Orion filing has formal REGAGE confirmation in 
 
 ## Public-website decision
 
-None of P0-01 through P0-04 should be published merely because it was located in Gmail:
+None of P0-01 through P0-04 or P1-01 should be published merely because it was located in Gmail:
 
 - P0-01 contains express confidentiality language and incomplete lender-execution evidence;
 - P0-02 requires native-audio/speaker authentication before actor-specific publication;
 - P0-03 is a party pleading whose legal effect depends on subsequent rulings;
+- P0-04 is a manifest/retrieval map whose indexed native corpus and Drive sources were not delivered; and
 - P1-01 requires page-level extraction before adopting the covering interpretation.
 
 The current public website already contains the safer controlling surfaces: 7-Jun-2018 material-control reconstruction, RICPE Series F/G documentary question, Pink/AEAT PO 496/2026 procedural page, current institutional proceedings and PEP/influence/PER due-diligence architecture.
