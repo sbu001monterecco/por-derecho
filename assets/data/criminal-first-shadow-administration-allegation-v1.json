@@ -1,0 +1,45 @@
+{
+  "schema": "por-derecho.criminal-first-shadow-administration-allegation.v1",
+  "control_date": "2026-08-25",
+  "source": "archive/declarations/012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md",
+  "status": "attributed_party_position",
+  "core_allegation": "Gil Marer alleges a 2011-originating private-actor mechanism that evolved from Community governance/litigation control into practical influence or control over LPB-related assets and decisions inside and outside Concurso 36/2012, allegedly enabled by acts and omissions of the court-appointed insolvency administrator.",
+  "knowledge_states_for_ac": [
+    {"id":"A","label":"initially deceived","grade":"open"},
+    {"id":"B","label":"reckless or culpable non-inquiry after notice","grade":"attributed_hypothesis"},
+    {"id":"C","label":"actual knowledge","grade":"open_requires_proof"},
+    {"id":"D","label":"deliberate facilitation or concert","grade":"open_highest_threshold"}
+  ],
+  "nodes": [
+    {"id":"n2011a","label":"2-Feb-2011 governance/litigation intervention","lane":"documented"},
+    {"id":"n2011b","label":"22-Jun-2011 debt/vote/authority mechanism","lane":"documented_with_legal_validity_open"},
+    {"id":"nprivate","label":"Private-actor practical control / alleged shadow administration","lane":"attributed_hypothesis"},
+    {"id":"nconcurso","label":"Concurso 36/2012","lane":"official"},
+    {"id":"nac","label":"Rodríguez-Batllori acts / omissions / non-inquiry","lane":"mixed_documented_and_attributed"},
+    {"id":"n2016","label":"2016 notice / knowledge checkpoint","lane":"documented_notice"},
+    {"id":"n2018","label":"2018 access / control / funded-exit sequence","lane":"documented_events_causation_open"},
+    {"id":"ncam","label":"CAM / Acosta Matos convergence","lane":"documented_capacities_causal_meaning_open"},
+    {"id":"njudge","label":"Possible court deception / incomplete picture","lane":"open_requires_exact_representation_and_reliance"},
+    {"id":"ncurrent","label":"Calificación / current criminal-institutional tracks","lane":"official_and_attributed"}
+  ],
+  "edges": [
+    {"from":"n2011a","to":"n2011b","grade":"investigative_causation_not_presumed"},
+    {"from":"n2011b","to":"nprivate","grade":"attributed_hypothesis"},
+    {"from":"nprivate","to":"nconcurso","grade":"chronological_continuity_requires_actor_specific_proof"},
+    {"from":"nconcurso","to":"nac","grade":"official_role_plus_conduct_to_be_mapped"},
+    {"from":"n2016","to":"nac","grade":"notice_relevant_to_later_knowledge"},
+    {"from":"nac","to":"n2018","grade":"causation_and_authority_require_event_specific_proof"},
+    {"from":"n2018","to":"ncam","grade":"capacity_convergence_documented_intent_open"},
+    {"from":"nprivate","to":"njudge","grade":"possible_deception_open"},
+    {"from":"nac","to":"njudge","grade":"possible_omission_or_adoption_open"},
+    {"from":"ncam","to":"ncurrent","grade":"later_consequence_not_backward_proof"}
+  ],
+  "mandatory_boundaries": [
+    "Shadow or de facto administration is an attributed functional allegation unless legally adjudicated.",
+    "Possible deception of the AC and possible actual knowledge are alternative hypotheses until evidence resolves them.",
+    "Recklessness is an attributed legal/factual characterization requiring duty, notice, access to information and failure-to-inquire analysis.",
+    "Possible deception of the court requires exact representation or omission, receipt, material reliance and actor-specific state of mind.",
+    "The umbrella phrase estafa concursal must be decomposed into actual Spanish offence elements; it is not a self-proving offence label.",
+    "No culpability transfers by network association."
+  ]
+}
