@@ -10,14 +10,14 @@
   "status": "prepared_in_pr",
   "expected_routes": {
     "es": [
-      "/es/hipotesis-criminal-unitaria-2011-presente/",
-      "/es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/",
-      "/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/"
+      "es/hipotesis-criminal-unitaria-2011-presente/index.html",
+      "es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/index.html",
+      "es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html"
     ],
     "en": [
-      "/en/unitary-criminal-hypothesis-2011-present/",
-      "/en/unitary-criminal-hypothesis-2011-present/maximal-attribution/",
-      "/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/"
+      "en/unitary-criminal-hypothesis-2011-present/index.html",
+      "en/unitary-criminal-hypothesis-2011-present/maximal-attribution/index.html",
+      "en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html"
     ]
   },
   "canonical_control": "archive/CRIMINAL_FIRST_UNITARY_REVERSE_ENGINEERING_2011_TO_PRESENT_25AUG2026.md",
