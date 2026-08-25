@@ -146,7 +146,7 @@ def main() -> int:
         for path, markers in {
             ROOT / "es" / "profesionales-representantes" / "index.html": ["PD-SP-LEGAL-PROF-001", "Profesionales y representantes", "legal-professionals-register-v1.json"],
             ROOT / "en" / "professionals-representatives" / "index.html": ["PD-SP-LEGAL-PROF-001", "Professionals and representatives", "legal-professionals-register-v1.json"],
-            ROOT / "assets" / "legal-professionals-register.js": ["CURRENT_COUNSEL", "PROCURADOR_FORMER", "MANDATE_SCOPE_OPEN"],
+            ROOT / "assets" / "legal-professionals-register.js": ["CURRENT_COUNSEL", "PROCURADOR_FORMER", "REVIEW|OPEN"],
         }.items():
             if not path.is_file():
                 fail(f"missing public professional surface: {path.relative_to(ROOT)}")
