@@ -29,7 +29,7 @@ ALLOWED_STATES = {
     "COMPLETE",
 }
 ALLOWED_PRIORITIES = {"P0", "P1", "P2"}
-TASK_ID = re.compile(r"^(P[0-2])-[A-Z]+-[0-9]{2}$")
+TASK_ID = re.compile(r"^(P[0-2])(?:-[A-Z]+)+-[0-9]{2}$")
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 REQUIRED_TASK_IDS = {
     "P0-OPS-01",
