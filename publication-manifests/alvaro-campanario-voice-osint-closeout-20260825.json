@@ -1,0 +1,87 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "ALVARO-CAMPANARIO-VOICE-OSINT-CLOSEOUT-20260825",
+  "control_marker": "campanario-osint-declaration011-20260825",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-25T08:33:01Z",
+  "source_base": "3035cff2a8a3c1cbc0ad6443a54af41372e228f7",
+  "current_state": "DRAFT",
+  "purpose": "Make the already authorised Declaration 011, named-person/company OSINT, voice-statement controls, public-safe mailbox aggregates and finite future actions discoverable through bilingual reader-facing Pages routes, then preserve a deletion-safe cross-thread closeout.",
+  "expected_routes": {
+    "es": [
+      "es/alvaro-campanario-prieto-puente-lopez-noriega/index.html",
+      "es/actualizaciones/index.html",
+      "es/actualizaciones/feed.xml"
+    ],
+    "en": [
+      "en/alvaro-campanario-prieto-puente-lopez-noriega/index.html",
+      "en/updates/index.html",
+      "en/updates/feed.xml"
+    ]
+  },
+  "expected_source_files": [
+    "archive/CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_CORPORATE_UNITARY_SCAN_25AUG2026.md",
+    "archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md",
+    "archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md",
+    "archive/declarations/011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md",
+    "archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md",
+    "archive/declarations/GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md",
+    "scripts/validate_alvaro_campanario_osint_publication.py",
+    ".github/workflows/validate-alvaro-campanario-osint-publication.yml",
+    "sitemap.xml"
+  ],
+  "controlling_status": {
+    "declaration_011": "REGISTERED_DERIVED_SOURCE_NOT_SIGNED_NOT_SWORN_NOT_WORD_FOR_WORD_RATIFIED",
+    "mailbox": "PARTIAL_NOT_FULLY_ACQUIRED_2413_MIRRORED_MESSAGES",
+    "osint": "BOUNDED_SOURCE_LED_SCAN_WITH_VERIFIED_ATTRIBUTED_INFERRED_AND_NOT_LOCATED_STATES",
+    "thread_continuity": "PENDING_MERGE_DEPLOYMENT_LIVE_READBACK_AND_POST_LIVE_CLOSEOUT"
+  },
+  "future_action_controls": [
+    "ME-MAIL-RDM-001",
+    "ME-VTT-001",
+    "ME-VTT-002",
+    "ME-VTT-003",
+    "ME-OSINT-001",
+    "VQ-P-001 through VQ-P-010",
+    "VQ-G-001 through VQ-G-008",
+    "Declaration 011 actions 1 through 11"
+  ],
+  "inference_boundaries": [
+    "Declaration 011 is attributed and unratified; it is not a joint statement or a final certification of truth.",
+    "No professional, corporate or Community relationship transfers knowledge, intent, control, conflict or responsibility.",
+    "A bounded negative OSINT result is not a certificate of nonexistence.",
+    "AP 89/2014 remains mandatory contrary evidence within its actual 18-unit scope.",
+    "The 2,413-message figure describes an overlapping mirrored discovery subset, not the complete private mailbox or proof of relevance."
+  ],
+  "privacy_control": "The publication excludes the private email address, message bodies, subjects, participants, provider message/thread identifiers, private locators, native audio and restricted account metadata.",
+  "deletions": [],
+  "planned_live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/",
+    "https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml"
+  ],
+  "validation": {
+    "status": "LOCAL_PASS_PENDING_REMOTE_CI",
+    "evidence": [
+      "Focused bilingual route, discovery, privacy and eleven-action validator passed locally",
+      "Repository preservation gate passed locally",
+      "Audience experience validator passed across 434 HTML pages and 4,776 internal links",
+      "Mission-critical repository gate passed locally",
+      "Agent governance compatibility advisory passed on the current-main base",
+      "Atom feeds, sitemap and manifest parsed successfully"
+    ],
+    "required": [
+      "validate_alvaro_campanario_osint_publication.py",
+      "validate_repository_preservation.py",
+      "validate_publication_integrity.py",
+      "validate_audience_experience.py",
+      "XML parsing and HTML/link inspection",
+      "targeted privacy scan",
+      "exact-SHA Pages deployment and byte-for-byte live readback"
+    ]
+  }
+}

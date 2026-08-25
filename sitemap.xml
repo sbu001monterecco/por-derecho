@@ -47,13 +47,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/about/"/>
   </url>
   <url>
-    <loc>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</loc><lastmod>2026-08-23</lastmod>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/</loc><lastmod>2026-08-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
   </url>
   <url>
-    <loc>https://sbu001monterecco.github.io/por-derecho/en/updates/</loc><lastmod>2026-08-23</lastmod>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/updates/</loc><lastmod>2026-08-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/updates/"/>
@@ -559,5 +559,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/cuatrecasas-edgeworth-comparator/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/comparador-cuatrecasas-edgeworth/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/</loc><lastmod>2026-08-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/</loc><lastmod>2026-08-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/alvaro-campanario-prieto-puente-lopez-noriega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/alvaro-campanario-prieto-puente-lopez-noriega/"/>
   </url>
 </urlset>
