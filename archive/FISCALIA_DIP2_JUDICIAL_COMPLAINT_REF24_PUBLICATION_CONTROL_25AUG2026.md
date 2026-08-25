@@ -2,7 +2,7 @@
 
 **Date:** 25 August 2026
 
-**Status:** locally validated; remote CI, deployment and live readback pending
+**Status:** merged, deployed, live verified and deletion-safe with open evidence
 
 **Authority:** user instruction to digitise and publish the June 2026 judicial complaint and amplification, integrate them with the DIP 2/2026 Fiscalía correspondence, and publish an attributed, evidence-bounded request for independent review.
 
@@ -142,22 +142,37 @@ the recorded public hashes byte for byte.
 ## Communications boundary
 
 No email, letter or LinkedIn post is sent, drafted in an external service or
-published by this step. Those communications are the next proposed workstream
-after exact live deployment verification and require separate recipient and
-send approval.
+published by this step. With exact live deployment now verified, those
+communications are the next proposed workstream and still require separate
+approval of recipients, text, links, attachments and any send or publication.
 
 ## Closeout fields
 
-- Pull request: pending
-- Merge SHA: pending
-- Pages deployment: pending
-- Live readback: pending
-- Current state: `DRAFT / LOCAL_VALIDATED`
+- Pull request: `#964`
+- Merge SHA: `3035cff2a8a3c1cbc0ad6443a54af41372e228f7`
+- Pages deployment: run `32826806480`, success
+- Live readback: `16/16` HTTP 200 and byte-for-byte match
+- Current state: `DELETION_SAFE_WITH_OPEN_EVIDENCE`
 
 Local checks passed repository preservation, publication integrity, audience
 experience, mission-critical controls, operational continuity, public-link and
 bilingual-structure checks. A clean temporary evidence rebuild reproduced both
 PDFs and both transcriptions byte for byte. All 45 public pages rendered; the
 signature redactions and receipt photographs were inspected, and controlled
-private strings were absent from extracted public text. Remote CI and exact live
-readback remain required before closeout.
+private strings were absent from extracted public text. The remote and live
+completion evidence follows.
+
+PR #964 passed all 16 triggered pull-request workflows after replacing the
+protected bidder name with the repository's required third-party formulation.
+It was squash-merged as `3035cff2a8a3c1cbc0ad6443a54af41372e228f7`
+(tree `5ee080d978c091965ca133393942ea24b3ad93e6`). All 18 triggered
+post-merge workflows passed. Pages run `32826806480` deployed the exact merge
+SHA successfully.
+
+Cache-busted live readback at `2026-08-25T08:34:41Z` passed 16 of 16 public
+surfaces with HTTP 200 and byte-for-byte SHA-256 equality: both dossier pages,
+both PDFs, both transcriptions, both home pages, both update pages, both Atom
+feeds and all four requested contextual images. The open-evidence items remain
+the certified Decanato allocation/destination record, any assigned NIG or
+proceeding, proof of TSJC receipt or disposition and the complete CGPJ
+assessment/source-to-file bridge.
