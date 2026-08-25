@@ -7,6 +7,8 @@ on:
       - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
       - 'es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/**'
       - 'en/matter-identity-registry/non-lpb-matkator-owner-network/**'
+      - 'es/jv1260-ap89-continuidad-cam/**'
+      - 'en/jv1260-ap89-cam-continuity/**'
       - 'assets/owner-court-network.css'
       - 'scripts/validate_non_lpb_owner_court_network.py'
       - 'scripts/validate_legal_professional_register.py'
@@ -21,6 +23,8 @@ on:
       - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
       - 'es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/**'
       - 'en/matter-identity-registry/non-lpb-matkator-owner-network/**'
+      - 'es/jv1260-ap89-continuidad-cam/**'
+      - 'en/jv1260-ap89-cam-continuity/**'
       - 'assets/owner-court-network.css'
       - 'scripts/validate_non_lpb_owner_court_network.py'
       - 'scripts/validate_legal_professional_register.py'
@@ -28,7 +32,10 @@ on:
       - 'robots.txt'
       - '.github/workflows/verify-non-lpb-owner-court-network.yml'
   workflow_dispatch:
-permissions: {contents: read}
+
+permissions:
+  contents: read
+
 jobs:
   verify:
     runs-on: ubuntu-latest
