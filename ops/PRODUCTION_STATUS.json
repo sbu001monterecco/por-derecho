@@ -1,27 +1,77 @@
 {
-  "schema_version": 2,
-  "as_of": "2026-08-25T23:30:00Z",
-  "status": "DEPLOYED_BASELINE_WITH_CURRENT_CONTROL_PLANE_PENDING",
+  "schema_version": 1,
+  "as_of": "2026-08-24T16:27:17.010Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "current_main_sha_at_preparation": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
-  "last_pages_deployment": {
+  "main_at_audit": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+  "exact_live_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+  "current_state": "ops/CURRENT_UNITARY_STATE.json",
+  "historical_snapshot": "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json",
+  "historical_snapshot_sha": "8d61887ca22741ba5054a278d169c07e1b968119",
+  "current_main_observed_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+  "current_main_observed_at": "2026-08-25T23:30:00Z",
+  "latest_reader_facing_pages_deployment": {
     "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
     "run_id": 32910389340,
     "run_number": 1115,
     "status": "completed",
     "conclusion": "success",
-    "note": "Current main 64a0cdc is a deletion-closeout release and did not trigger a newer Pages deployment."
+    "note": "The later current-main deletion-closeout commit did not trigger a newer Pages deployment."
   },
   "exact_public_content_verification": {
     "state": "PENDING_AFTER_CONTROL_PLANE_MERGE",
     "last_positive_smoke_sha": "19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78",
     "last_positive_smoke_run": 32907717917,
-    "rule": "Deployment success and exact-content verification are separate states."
+    "rule": "The exact PR #922 live baseline below remains preserved. Current deployment success and exact-content verification are separate states."
   },
-  "current_state": "ops/CURRENT_UNITARY_STATE.json",
-  "historical_snapshot": "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json",
-  "historical_snapshot_sha": "8d61887ca22741ba5054a278d169c07e1b968119",
-  "rollback_rule": "Use a normal revert PR to a positively verified release; never force-push main."
+  "last_live_verification": {
+    "state": "LIVE_VERIFIED",
+    "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+    "source_tree": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+    "pull_request": 922,
+    "pages_workflow_run": "32750603024",
+    "workflow_run": "32750605646",
+    "source_of_funds_workflow_run": "32750605643",
+    "artifact_id": null,
+    "artifact_digest": null,
+    "verified_at": "2026-08-24T16:27:17.010Z",
+    "verification_scope": [
+      "pr_922_source_preservation_and_rendered_actor_visibility_checks_success",
+      "pages_build_and_deployment_run_32750603024_success_for_exact_merge_sha",
+      "both_es_en_homepages_live_with_five_private_actor_cards_two_separate_institutional_cards_and_five_linkage_rows",
+      "fourteen_canonical_direct_routes_plus_preserved_legacy_spanish_court_route_live",
+      "canonical_spanish_magistrate_judge_route_and_legacy_spanish_court_route_both_protected",
+      "757_rendered_assertions_passed_across_all_seventeen_surfaces",
+      "actor_portraits_and_both_evidence_images_loaded",
+      "source_of_funds_run_32750605643_passed_after_propagation"
+    ]
+  },
+  "branch_protection": {
+    "observed": "PROTECTED_FLAG_WITH_ENFORCEMENT_OFF",
+    "required_status_checks": "NOT_ENFORCED",
+    "tracking_issue": 355
+  },
+  "publication_integrity_gate": "ACTIVE_ON_MAIN",
+  "scheduled_production_monitor": "ACTIVE_ON_MAIN",
+  "repository_recovery_bundle": "ACTIVE_ON_MAIN_TEST_PENDING",
+  "independent_backup": {
+    "state": "CLOSED_EQUIVALENT_CONTROL_AT_20260818_BASELINE_LATEST_RELEASE_CHECKPOINT_OPEN",
+    "tracking_issue": 356,
+    "source_sha": "a2bda8b3efc71d84241b599112a5bf64077bf3d1",
+    "workflow_run": "32149002725",
+    "provider": "Google Drive",
+    "readback": "PASS",
+    "restore_tested": true,
+    "latest_verified_release_separately_bundled": false
+  },
+  "pages_deployment_mode": {
+    "state": "UNCHANGED_AND_LIVE_VERIFIED",
+    "reason": "The functioning Pages delivery path published PR #922 at exact merge SHA ed98b0ac634afc34f00a425e9ed67ca58fd77cb8 in run 32750603024. Both homepages, fourteen canonical direct actor/accountability surfaces and the preserved legacy Spanish court route passed 757 settled-DOM assertions in live run 32750605646."
+  },
+  "mission_critical_hardening": {
+    "state": "LIVE_VERIFIED",
+    "merge_sha": "671b0c9026d0c4df188be07f60c137ce825367a0",
+    "pr": 354
+  }
 }
