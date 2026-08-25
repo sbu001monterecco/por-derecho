@@ -18,10 +18,25 @@
   },
   "assets": [
     "assets/institutional-action.css",
+    "assets/criminal-first-action-pressure-20260825.js",
+    "assets/intervencion-protected-assets-highlight-20260820.js",
     "assets/data/criminal-first-institutional-action-matrix-v1.json",
     "archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md",
     "sitemap-criminal-first-action.xml"
   ],
+  "sitewide_surface": {
+    "loader": "assets/intervencion-protected-assets-highlight-20260820.js",
+    "component": "assets/criminal-first-action-pressure-20260825.js",
+    "full_routes": ["/es/", "/en/"],
+    "compact_route_families": [
+      "Community and Community minutes",
+      "Acosta Matos perimeter",
+      "insolvency administrator dossier",
+      "7 June 2018 control dossier",
+      "full-name actor register",
+      "unitary criminal map and maximum-attribution pages"
+    ]
+  },
   "action_sequence": ["PRESERVE", "DISCLOSE", "EXPLAIN", "INVESTIGATE", "RECOVER"],
   "action_matrix_id": "PD-SP-ACTION-2011-CONVERGENCE-001",
   "publication_boundaries": [
@@ -36,7 +51,8 @@
   "post_merge_verification": [
     "Confirm both action routes return 200 and contain PD-SP-ACTION-2011-CONVERGENCE-001.",
     "Confirm both convergence routes link visibly to the action routes and the action matrix.",
-    "Confirm the CSS, JSON, archive protocol and sitemap return 200.",
+    "Confirm the homepage and named compact route families render data-criminal-first-action-pressure.",
+    "Confirm the CSS, JavaScript, JSON, archive protocol and sitemap return 200.",
     "Confirm robots.txt declares sitemap-criminal-first-action.xml.",
     "Confirm Pages build/deployment completed against the merge SHA."
   ]
