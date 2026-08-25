@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parents[2]
 GOVERNANCE_ALLOWLIST = {
     ".github/CODEOWNERS",
     ".github/governance/AGENT_PUBLISHING_COMPATIBILITY.md",
+    ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
+    ".github/governance/records/TXD-PN-20260825-01.md",
     ".github/governance/validate_agent_governance_compatibility.py",
     "AGENTS.md",
     "CHATGPT_START_HERE.md",
@@ -156,7 +158,7 @@ def main() -> int:
     print(" - rendered HTML/runtime/assets/deployment configuration changed: 0")
     print(
         " - intentional public governance/bootstrap changes: "
-        "CHATGPT_START_HERE.md modified; AGENTS.md added"
+        "public-safe governance files only"
     )
     print(" - enforcement mode: manual/advisory")
     return 0

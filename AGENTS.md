@@ -225,3 +225,30 @@ exists.
 
 See `.github/governance/AGENT_PUBLISHING_COMPATIBILITY.md` for the hard/advisory
 matrix and the governance-only acceptance test.
+
+
+## 7. Transaction-development separation
+
+Prospective financing, investment, acquisition, sale, operating-partner and
+other new-transaction activity is presumptively separate from the legal-dispute,
+asset-recovery and public-accountability record.
+
+Before storing or linking such material, read
+`.github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md`.
+Keep native messages, screenshots, identities, private locators, unannounced
+assets and negotiation material outside Git. Where continuity requires a
+repository record, use only a minimized, anonymized derivative under
+`.github/governance/records/`; remember that the repository is public even
+though `.github/` is not rendered by Pages.
+
+Do not cross-link transaction-development material to a legal allegation,
+person, proceeding, evidence map or website route merely because of chronology,
+group affiliation, professional role or interest in an asset. A cross-link
+requires specific sourced materiality, actor-specific analysis, privacy
+minimization, contrary/limiting evidence and express authority for the new
+private-source derivative. Website publication requires separate express
+authority and must never be inferred from repository-only preservation.
+
+For self-preservation emails, the word “self” creates no exception to
+`EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md`: present and obtain fresh approval of
+the exact outbound package before transmission.
