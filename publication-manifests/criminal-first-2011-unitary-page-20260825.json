@@ -1,8 +1,25 @@
 {
   "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "criminal-first-2011-unitary-page-20260825",
   "control_date": "2026-08-25",
+  "current_state": "PR_OPEN",
+  "owner": "Por Derecho / Project Sun Rock",
+  "source_base": "9a7b4ca5d2feaaeef47317b7f51644e1335e3262",
+  "publication_pr": 980,
   "package": "criminal-first-2011-unitary-page",
   "status": "prepared_in_pr",
+  "expected_routes": {
+    "es": [
+      "/es/hipotesis-criminal-unitaria-2011-presente/",
+      "/es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/",
+      "/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/"
+    ],
+    "en": [
+      "/en/unitary-criminal-hypothesis-2011-present/",
+      "/en/unitary-criminal-hypothesis-2011-present/maximal-attribution/",
+      "/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/"
+    ]
+  },
   "canonical_control": "archive/CRIMINAL_FIRST_UNITARY_REVERSE_ENGINEERING_2011_TO_PRESENT_25AUG2026.md",
   "graph_dataset": "assets/data/criminal-first-2011-unitary-graph-v1.json",
   "maximal_attribution": {
