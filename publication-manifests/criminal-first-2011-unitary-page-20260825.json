@@ -5,13 +5,32 @@
   "status": "prepared_in_pr",
   "canonical_control": "archive/CRIMINAL_FIRST_UNITARY_REVERSE_ENGINEERING_2011_TO_PRESENT_25AUG2026.md",
   "graph_dataset": "assets/data/criminal-first-2011-unitary-graph-v1.json",
+  "maximal_attribution": {
+    "declaration": "archive/declarations/012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md",
+    "graph_supplement": "assets/data/criminal-first-shadow-administration-allegation-v1.json",
+    "public_routes": {
+      "es": "es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/index.html",
+      "en": "en/unitary-criminal-hypothesis-2011-present/maximal-attribution/index.html"
+    },
+    "knowledge_states": [
+      "initial deception of insolvency administrator",
+      "attributed reckless/culpable non-inquiry after notice",
+      "actual knowledge requiring proof",
+      "deliberate facilitation/concert requiring highest proof threshold"
+    ]
+  },
   "public_routes": {
     "es": "es/hipotesis-criminal-unitaria-2011-presente/index.html",
     "en": "en/unitary-criminal-hypothesis-2011-present/index.html"
   },
-  "restart_rule": "Future threads analysing alleged criminality from the 2011 Community events should begin from the canonical control and graph dataset, then re-check current repository/live-site deltas before drawing conclusions.",
+  "restart_rule": "Future threads analysing alleged criminality from the 2011 Community events should begin from the canonical control, Declaration 012 and both graph datasets, then re-check current repository/live-site deltas before drawing conclusions.",
   "publication_boundaries": [
     "Allegation is not adjudicated fact.",
+    "Gil's phrase estafa concursal is an attributed umbrella description and must be decomposed into actual Spanish offence elements.",
+    "Shadow/de facto administration is an attributed functional allegation unless legally established actor by actor.",
+    "Possible initial deception of the insolvency administrator and possible actual knowledge are alternative hypotheses until evidence resolves them.",
+    "Recklessness is an attributed characterization requiring duty, notice, access to information and failure-to-inquire analysis.",
+    "Possible deception of the court requires an exact representation or omission, actual receipt, material reliance and actor-specific state of mind.",
     "Campanario's pre-concurso Community/litigation role and prior insolvency practice are documented context; they do not prove a plan to cause LPB insolvency.",
     "Campanario-Rodriguez-Batllori friendship/appointment coordination remains attributed/open unless independently corroborated.",
     "Notice is not knowledge of falsity; knowledge opportunity is not intent; benefit is not concert.",
@@ -33,12 +52,13 @@
       "2018 funded-exit/material-control sequence",
       "CAM/Acosta Matos convergence",
       "calificacion/current proceedings"
-    ]
+    ],
+    "maximal_attribution_visual": "four-state AC knowledge ladder plus shadow/de-facto administration proof matrix and separate possible-court-deception track"
   },
   "follow_on_propagation": [
-    "Add reciprocal links from canonical Community ACTA chronology and actor/proceeding indexes after publication.",
+    "Add reciprocal links from the main criminal-first page to the maximal-attribution subpage and from canonical Community ACTA chronology and actor/proceeding indexes after publication.",
     "Add material-updates entry and sitemap/discovery entries after publication.",
     "Run live readback and link validation after Pages deployment.",
-    "Update the canonical graph when new evidence confirms, limits or refutes an edge."
+    "Update the canonical graph when new evidence confirms, limits or refutes an edge or resolves an AC knowledge state."
   ]
 }
