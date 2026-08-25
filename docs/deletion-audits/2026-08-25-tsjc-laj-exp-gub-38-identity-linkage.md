@@ -1,6 +1,6 @@
 # TSJC / LAJ Exp. Gub. 38/2026 identity-linkage thread — 25 August 2026
 
-**Current verdict:** `NOT_DELETION_SAFE_UNTIL_EXACT_SHA_PAGES_READBACK`
+**Current verdict:** `DELETION_SAFE_WITH_OPEN_EVIDENCE`
 
 ## Scope and result
 
@@ -34,4 +34,10 @@ The complete incorporation/index record, forwarding report, superior reference, 
 
 ## Deletion-safety gate
 
-The substantive source-status decisions are now recoverable from repository files. The thread remains not deletion-safe until the authorised change is merged, the exact merge SHA is deployed by Pages and both affected bilingual routes are read back. After that verification, this record and the publication manifest must be updated with the PR, merge SHA, Pages evidence and final verdict.
+The substantive source-status decisions are recoverable from repository files. PR **#974** merged as `ae02e86d4ff2ba811063e76c2c72975fb15ab394`. GitHub Pages run **32833733184 / #1074** completed successfully for that exact merge revision; its published artifact reports SHA-256 `69a9430e091923472476148eecabdf19714d278eff21bb2d36a0afcc04efee71`.
+
+At `2026-08-25T09:49:39Z`, browser readback of both canonical routes passed the controlled markers for the exact person, issuing office, corrected `38/2026` reference, appeal receipt and Las Palmas LAJ-coordination relationship. The English page renders the final office label as `LAJ corps / Las Palmas Provincial Coordination Secretariat`.
+
+This makes the conversation thread deletion-safe for repository continuity. It does **not** close the appeal, certify the governmental-file index, establish receipt of the CGPJ communication, prove ATLANTE's implementation in this file, or replace lawful preservation of the native mail and signed PDF in their source systems. Those evidence targets remain open and are expressly recoverable from the missing-evidence register and identity/capacity control.
+
+No email or filing was sent or made in this publication step, no source evidence was deleted, and no private mailbox address or provider message identifier was placed in public Git.
