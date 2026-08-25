@@ -19,11 +19,32 @@
       "deliberate facilitation/concert requiring highest proof threshold"
     ]
   },
+  "functional_convergence": {
+    "declaration": "archive/declarations/013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md",
+    "graph_supplement": "assets/data/acosta-matos-functional-convergence-map-v1.json",
+    "public_routes": {
+      "es": "es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html",
+      "en": "en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html"
+    },
+    "controlled_meaning_of_morphed": [
+      "functional succession and convergence",
+      "continuity of representation and Community administration",
+      "accumulation of title, voting, creditor, access and project capacities",
+      "adoption or reliance on earlier Community machinery",
+      "possible transmission of knowledge through continuing actors"
+    ],
+    "evidence_grades": [
+      "DIRECT_DOCUMENTARY",
+      "STRONGLY_SUPPORTED_FUNCTIONAL",
+      "ATTRIBUTED_INFERENCE",
+      "OPEN_NOT_LOCATED"
+    ]
+  },
   "public_routes": {
     "es": "es/hipotesis-criminal-unitaria-2011-presente/index.html",
     "en": "en/unitary-criminal-hypothesis-2011-present/index.html"
   },
-  "restart_rule": "Future threads analysing alleged criminality from the 2011 Community events should begin from the canonical control, Declaration 012 and both graph datasets, then re-check current repository/live-site deltas before drawing conclusions.",
+  "restart_rule": "Future threads analysing alleged criminality from the 2011 Community events should begin from the canonical control, Declarations 012 and 013, and all three graph datasets, then re-check current repository/live-site deltas before drawing conclusions.",
   "publication_boundaries": [
     "Allegation is not adjudicated fact.",
     "Gil's phrase estafa concursal is an attributed umbrella description and must be decomposed into actual Spanish offence elements.",
@@ -31,7 +52,11 @@
     "Possible initial deception of the insolvency administrator and possible actual knowledge are alternative hypotheses until evidence resolves them.",
     "Recklessness is an attributed characterization requiring duty, notice, access to information and failure-to-inquire analysis.",
     "Possible deception of the court requires an exact representation or omission, actual receipt, material reliance and actor-specific state of mind.",
-    "Campanario's pre-concurso Community/litigation role and prior insolvency practice are documented context; they do not prove a plan to cause LPB insolvency.",
+    "Gil's word morphed is preserved as a metaphor for functional convergence; it is not a legal merger, personal identity or automatic transfer of knowledge, intent or liability.",
+    "Multiple direct bridges support a convergence investigation, but not every historic actor has a direct Acosta Matos bridge.",
+    "Campanario's pre-concurso Community/litigation role and prior insolvency practice are documented context; they do not prove a plan to cause LPB insolvency or a direct later Acosta Matos handover.",
+    "The López Noriega-to-Acosta Matos bridge remains indirect through Prieto unless a direct mandate, company or instruction is located.",
+    "Rodríguez-Batllori remains on a separate alleged enablement/adoption track and is not automatically classified as a private member of the Acosta Matos perimeter.",
     "Campanario-Rodriguez-Batllori friendship/appointment coordination remains attributed/open unless independently corroborated.",
     "Notice is not knowledge of falsity; knowledge opportunity is not intent; benefit is not concert.",
     "Later CAM/Acosta Matos convergence must not be projected backwards as proof of a 2011 agreement.",
@@ -53,12 +78,13 @@
       "CAM/Acosta Matos convergence",
       "calificacion/current proceedings"
     ],
-    "maximal_attribution_visual": "four-state AC knowledge ladder plus shadow/de-facto administration proof matrix and separate possible-court-deception track"
+    "maximal_attribution_visual": "four-state AC knowledge ladder plus shadow/de-facto administration proof matrix and separate possible-court-deception track",
+    "functional_convergence_visual": "linked funnel/network from the 2011 claimant and Community perimeter through Pamanil/FMMM/Shaila, Prieto/Antonio corporate bridges, CAM credit-title-security convergence, the JDAM/LPAM axis and later ORION/AGM/RICPE/HNT/MYND layers"
   },
   "follow_on_propagation": [
-    "Add reciprocal links from the main criminal-first page to the maximal-attribution subpage and from canonical Community ACTA chronology and actor/proceeding indexes after publication.",
+    "Add reciprocal links from the main criminal-first page to the maximal-attribution and Acosta Matos convergence subpages and from canonical Community ACTA chronology, Acosta Matos page and actor/proceeding indexes after publication.",
     "Add material-updates entry and sitemap/discovery entries after publication.",
-    "Run live readback and link validation after Pages deployment.",
-    "Update the canonical graph when new evidence confirms, limits or refutes an edge or resolves an AC knowledge state."
+    "Run live readback, SVG interaction and link validation after Pages deployment.",
+    "Update all graphs when new evidence confirms, limits or refutes an edge, resolves an AC knowledge state or closes a direct historic-actor-to-Acosta bridge."
   ]
 }
