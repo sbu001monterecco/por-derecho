@@ -1,5 +1,7 @@
 # Full working transcript preservation — 14 August 2026 voice corpus
 
+> **PRIVACY REMEDIATION NOTICE — 25 August 2026:** this directory is tracked in a public repository. BZip2/Base64 packaging is encoding, not access control, and must not be described as a private or backend vault. No new full private voice transcript may be committed in this form. The existing payload remains preserved pending an expressly authorised, history-aware privacy review; do not decode, quote, republish or use it as a public source merely because it is technically recoverable from Git. The controlling prospective rule is `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`.
+
 **Repository role:** backend evidentiary preservation package  
 **Public witness label:** witness within Gil Marer's personal and business perimeter — identity reserved  
 **Source date:** 14 August 2026  

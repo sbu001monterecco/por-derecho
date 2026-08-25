@@ -91,7 +91,7 @@ El escaneo permite cerrar cuatro resultados y mantener cuatro límites:
 
 ## 7. Publicación y derecho de respuesta
 
-Cualquier futura ficha o paquete público debe presentar con igual disciplina:
+El paquete público enlaza nueve fichas bilingües desde los índices de actores y Comunidad. Cada ficha debe presentar con igual disciplina:
 
 - identidad o razón social exacta;
 - cronología y capacidad por fuente;
@@ -103,21 +103,78 @@ Cualquier futura ficha o paquete público debe presentar con igual disciplina:
 
 La inclusión de una persona o entidad en el mapa no prueba ilicitud, coordinación, conocimiento, beneficio, conflicto profesional ni responsabilidad. Cualquier respuesta documentada debe incorporarse sin borrar la procedencia de esta versión.
 
-## 8. Registro reproducible del escaneo
+## 8. Registro reproducible público del escaneo web ampliado — aplicación parcial
 
-**Base de repositorio:** `origin/main` en `53258d85a843602143eb8f1bb3c15fa4aad47886`, consultado el 25 de agosto de 2026.
+**Estado de aplicación del protocolo:** `PARCIAL`. El 25 de agosto de 2026, Codex realizó bajo instrucción del proyecto una revisión de BOE/BORME, ICALPA, BOC/Gobierno de Canarias y la indexación pública CGPJ/CENDOJ. Se aplicaron los límites sustantivos del [`protocolo OSINT`](./OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md), pero no se registraron hora UTC exacta de inicio/fin, orden completo de cada clic ni contador de páginas. Por ello este documento es un resumen público reproducible a nivel de consulta y fuente, no un log forense íntegro ni una afirmación de cumplimiento total del protocolo.
 
-**Perímetro local:** búsqueda sensible a variantes en `archive/`, `evidence/`, `assets/`, `es/` y `en/`, seguida de lectura de los registros, actas, sentencia y páginas concretas citadas. Familias de consulta:
+### Consultas normalizadas y replicables
 
-- `Álvaro Campanario` / `Campanario Hernández` / `Campanario`;
-- `Juan Carlos Prieto` / `Prieto Puente` / `Esloque Prieto` / `Roque Prieto`;
-- `Esteban López Noriega` / `Esteban Noriega` / `Moriega` / `Muriega`;
-- `Millan and Miners` / `Millán & Miners` / `Millen and Miners`;
-- `Pamanil` / `Pamalexsha` / `Pamalexa`;
-- `Explotaciones Noalpa` / `Noalpa` / `Noepa`;
-- `Santa Lucia Real Estate` / `Santa Lucía` / `Santa María`; y
-- `Antonio Cogolludo Rojas` / `Shaila María Cogolludo Ramos` / `Rodríguez-Batllori`.
+Las búsquedas se ejecutaron mediante variantes exactas/registrales equivalentes a las siguientes cadenas, seguidas de revisión directa de las publicaciones enlazadas:
 
-**Perímetro web:** consultas exactas y por variante, limitadas prioritariamente a `boe.es`/BORME, `icalpa.es`, documentos oficiales enlazados y, para la ventana 2002–2004, una biografía profesional secundaria expresamente identificada como tal. Se realizaron además búsquedas negativas de Campanario en el índice ICALPA 2000 y de las aristas societarias alegadas pero no encontradas.
+| Familia | Consultas normalizadas |
+|---|---|
+| Campanario | `"Álvaro Campanario Hernández" site:icalpa.es`; `"Álvaro Campanario Hernández" site:boe.es`; búsqueda exacta dentro de los PDF ICALPA n.os 94 y 95 (2000) |
+| Prieto / López / despacho | `"Juan Carlos Prieto Puente" site:boe.es`; `"Esteban López Noriega" site:boe.es`; `"MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL" site:boe.es` |
+| Cogolludo / sociedades | `"Antonio Cogolludo Rojas" site:boe.es`; `"Shaila María Cogolludo Ramos" site:boe.es`; nombres exactos `PAMALEXSHA`, `EXPLOTACIONES NOALPA`, `SANTA LUCIA REAL ESTATE` y `PAMANIL` en BOE/BORME |
+| Identidades conflictivas | `"Montelanza" "Sun Park" site:gobiernodecanarias.org/boc`; `"MONTE LANZA SOCIEDAD LIMITADA" site:boe.es`; `"MATOS MATA FRANCISCO MARIO" site:boe.es`; `"MATOS MATAS FRANCISCO MARIO" site:boe.es` |
+| Literales no resueltos | `Henca`, `Multimatrix`, `Noepa`, `Pamalexa`, `Santa María`, `Juan Carlos Esloque/Roque Prieto`, `Esteban Muriega/Noruega` combinados con Canarias, Sun Park y los dominios oficiales anteriores |
 
-**Límites:** no se obtuvo un certificado mercantil vigente completo de cada sociedad, historial colegial completo, expediente profesional, hoja de encargo ni universo cerrado de toda la web. Las aristas `no localizadas` son resultados de este perímetro y fecha; pueden cambiar con nuevas fuentes o certificados.
+Los resultados de índice/OCR son incompletos y los extractos BORME son publicaciones de actos, no certificaciones actuales completas. Las secciones 8–9 registran cada publicación oficial utilizada, el resultado y el límite; las coincidencias meramente nominales no se promovieron a identidad.
+
+### Coincidencias descartadas o mantenidas abiertas
+
+| Literal/coincidencia | Tratamiento y motivo |
+|---|---|
+| María Asunción Aizpurúa Sánchez en BOC | descartada como puente automático: nombre y región no identifican a la persona de las actas Sun Park |
+| `Henca` | abierto: falta razón social, jurisdicción, NIF/hoja o documento que permita escoger entre homónimos |
+| `Multimatrix` | abierto: no se escogió una sociedad pública homónima sin documento de la transacción de 2008 |
+| `M&M`, `Noepa`, `Pamalexa`, `Santa María` y variantes fonéticas de personas | usados como alias de recuperación; sólo se corrigió a una identidad cuando fuente oficial y contexto aportaron el puente indicado en la matriz |
+
+### Siguiente fuente finita por clase de extremo abierto
+
+| Extremo | Fuente capaz de cerrarlo |
+|---|---|
+| identidad/grafía/cargo societario | certificación histórica y vigente del Registro Mercantil; NIF/hoja o DNI bajo acceso y publicación legalmente controlados |
+| mandato, relevo o conflicto profesional | hoja de encargo, poder, venia/terminación, factura, escrito procesal, expediente colegial y posible dispensa por cada asunto |
+| propiedad, representación y voto Sun Park | nota simple y escritura completa, poder, acta y cadena finca por finca |
+| sucesión Pamanil→Pamalexsha→Noalpa | cesión, novación, contrato, acuerdo comunitario, factura, nómina, banco, impuesto y trabajo material |
+| amistad, parentesco, motivo o coordinación | fuente primaria independiente, necesaria y lícitamente obtenida; la asociación societaria o coincidencia temporal no basta |
+
+### Consulta «Campanario alrededor de 2000»
+
+| Corpus finito | Resultado | Límite |
+|---|---|---|
+| ICALPA n.º 90 (1995): [índice](https://www.icalpa.es/biblioteca/el_foro_canario_2) · [PDF](https://www.icalpa.es/sites/default/files/DOCUMENTOS/El_Foro_canario/90/90_2.pdf) | nombre exacto como autor | prueba autoría/publicación, no rol Sun Park |
+| ICALPA n.os 94 y 95 (2000): [PDF 94](https://www.icalpa.es/sites/default/files/DOCUMENTOS/El_Foro_canario/94/94_2000.pdf) · [PDF 95](https://www.icalpa.es/sites/default/files/DOCUMENTOS/El_Foro_canario/95/95_2000.pdf) | sin coincidencia exacta en el índice/nombre revisado | no prueba ausencia profesional ni revisión perfecta de texto no indexado/OCR |
+| ICALPA n.º 99 (2004): [índice](https://www.icalpa.es/biblioteca/el_foro_canario) · [PDF](https://www.icalpa.es/sites/default/files/DOCUMENTOS/El_Foro_canario/99/1_99.pdf) | nombre exacto como autor | nueva baliza profesional, no rol Sun Park |
+| BOE 2009/2010/2011 | nombramientos como abogado administrador concursal: [2009](https://www.boe.es/diario_boe/txt.php?id=BOE-B-2009-13752) · [2010](https://www.boe.es/buscar/doc.php?id=BOE-B-2010-12798) · [2011](https://www.boe.es/diario_boe/txt.php?id=BOE-B-2011-42166) | contradice el inicio sólo posterior a 2011; no prueba motivo, amistad o intervención en LPB |
+
+## 9. Matriz ampliada de todas las personas y entidades centrales nombradas
+
+| Nombre o literal del relato | Identidad/entidad controlada | Resultado OSINT oficial y enlace | Límite obligatorio |
+|---|---|---|---|
+| Álvaro Campanario | **Álvaro Campanario Hernández** | 1995/2004 ICALPA y 2009–2011 BOE, sección 8 | sin hallazgo exacto 2000; no prueba relación Sun Park anterior a 2009, plan concursal o amistad |
+| Juan Carlos Prieto | **Juan Carlos Prieto Puente** | [ICALPA, medalla profesional 2024](https://www.icalpa.es/colegiados/actualidad/jura-o-promesa-de-nuevos-letrados-y-letradas-y-entrega-de-medallas); [Millan and Miners 2015](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35); [Santa Lucia 2018](https://www.boe.es/borme/dias/2018/02/07/pdfs/BORME-A-2018-27-35.pdf) | la medalla no fija fecha exacta de alta; los cargos no prueban mandato/conflicto Sun Park |
+| Esteban Noriega | **Esteban López Noriega** | [BOE 2008, abogado/administrador concursal](https://www.boe.es/boe/dias/2008/12/31/pdfs/B15479-15480.pdf); [Millan and Miners 2015](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35) | no prueba cargo en Pamalexsha/Noalpa/Santa Lucia ni cada cliente Sun Park |
+| Millen/Millennium/Millán & Miners | **MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL** | [constitución/registro 2015](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35); [cambio 2022](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-225-35) | operaciones desde 2-abr-2014; no puede ser titular automático de un mandato 2011 |
+| Antonio Cogolludo | **Antonio Cogolludo Rojas** | [Pamalexsha 2013](https://www.boe.es/borme/dias/2013/10/14/pdfs/BORME-A-2013-196-35.pdf); [Noalpa 2018](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35); [Santa Lucia 2018](https://www.boe.es/borme/dias/2018/02/07/pdfs/BORME-A-2018-27-35.pdf); [cese Santa Lucia 2025](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-138-35) | cargos fechados; no prueban propiedad/voto Sun Park, beneficio o coordinación ilícita |
+| Sheila/Shaila Cogolludo Rojas/Ramos | **Shaila María Cogolludo Ramos** | [poder Noalpa, acto 2021](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35); [poder Pamalexsha, acto 2026](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35) | `Sheila`/`Rojas` no son variantes oficiales localizadas; poder no prueba propiedad, tesorería o parentesco |
+| Pamalexa | **PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA** | [constitución](https://www.boe.es/borme/dias/2013/10/14/pdfs/BORME-A-2013-196-35.pdf); [objeto 2015](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-48-35); [domicilio 2018](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-96-35) | no prueba sucesión de Pamanil, cargo FMMM ni mandato/operación Sun Park |
+| Explotaciones Noepa | **EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA** | [constitución](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35); [poder Shaila](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35) | no prueba vínculo operativo Sun Park o sucesión de Pamanil/Pamalexsha |
+| Santa María / Inversiones Santa Lucía | **SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA** | [constitución/cargos](https://www.boe.es/borme/dias/2018/02/07/pdfs/BORME-A-2018-27-35.pdf); [cambios 2021](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35); [cambio 2025](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-138-35) | vínculo corporativo Prieto–Antonio fechado; poder actual requiere certificado; no prueba mandato/conflicto Sun Park |
+| Pamanil | **PAMANIL SOCIEDAD LIMITADA** | [depósitos 2006–2009](https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-132-35); [depósito 2010](https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-156-35) | sólo confirman forma social/depósitos; no administrador, mandato, trabajo ni sucesión |
+| Francisco Mario Matos Mata/Matas | **Francisco Mario Matos Matas**, con conflicto oficial de grafía | BORME imprime `MATA` en [El Barco de la Garita, 2024](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-49-35) y `MATAS` en [Orion](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-69-35) y [AGM](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2024-98-35) | continuidad de hoja hace plausible errata, pero exige DNI/certificación; no hay puente oficial a Pamanil/Pamalexsha/Noalpa |
+| Francisco de Borja Rodríguez-Batllori | **Francisco de Borja Rodríguez-Batllori Laffitte** | [BOE Concurso 36/2012 y nombramiento](https://www.boe.es/buscar/doc.php?id=BOE-B-2012-22189); [BORME](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-198-35) | prueba nombramiento judicial, no amistad/plan/intervención de Campanario |
+| Luchi | **Luchy Playa Blanca, S.L.U.** | [BOE concurso](https://www.boe.es/buscar/doc.php?id=BOE-B-2012-22189); [BORME 2012](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2012-39-35); [informe concursal 2013](https://www.boe.es/diario_boe/txt.php?id=BOE-B-2013-26977) | razón social exacta; no expandir LPB por traducción o memoria |
+| Montelanza / Monte Lanza | **identidad contextual probable; grafía oficial conflictiva** | BOC usa `Montelanza, S.L.` y CIF en [Hotel Apartamento Sun Park](https://www.gobiernodecanarias.org/boc/2008/245/033.html); BORME usa `MONTE LANZA SOCIEDAD LIMITADA`, hoja GC1339, en [disolución](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-205-35) y [extinción](https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-201-35) | no normalizar silenciosamente; obtener certificado/NIF–hoja que cierre el puente y no confundir con Construcciones Montelanza 06 |
+| Asunción Aizpurúa | **Asunción Aizpurúa Sánchez** en fuentes Sun Park; posible nombre oficial similar no enlazado | BOC contiene una María Asunción Aizpurúa Sánchez en [2010](https://www.gobiernodecanarias.org/boc/archivo/2010/106/pda/020.html) y [2014](https://www.gobiernodecanarias.org/boc/archivo/2014/029/pda/005.html) | nombre/región no bastan para identidad; el rol Sun Park controla sólo por las actas del proyecto hasta obtener puente |
+| Comunidad de Explotación Sun Park (CEXP) | denominación documental del proyecto; no necesariamente sociedad mercantil | sin coincidencia oficial pública relevante en el corpus BOE/BORME/BOC/CGPJ revisado | ausencia BORME no prueba inexistencia; controla AP 89/2014/actas y falta fuente web oficial estable |
+| Comunidad de Propietarios Sun Park | comunidad de propiedad horizontal | rol/capacidades controlados por actas notariales y expedientes del repositorio | no se trata como sociedad mercantil; autoridad y representación son acto por acto |
+| Multimatrix | literal de operación 2008; entidad exacta abierta | no se cerró identidad oficial única en el corpus acotado | no enlazar homónimos ni inferir sociedad/grupo sin jurisdicción, número y documento de transacción |
+| Inversiones Salinetas, Amenem/Tengolf, Acciones Canarias, Muruga y referencias `M&M` | entidades separadas del perímetro propietario | nombres/roles controlados por actas del repositorio; la búsqueda oficial actual no cerró todas las formas, hojas o cadenas de título | no usar `M&M` sin resolver; Acciones Canarias S.A./S.L. y Ten Golf/Tengolf siguen abiertos; se requieren certificados y títulos finca por finca |
+| Construcciones Acosta Matos / CAM | **Construcciones Acosta Matos, S.A.** | entidad separada y controlada en el [registro canónico de entidades](./knowledge-project/SUN_PARK_CANONICAL_ENTITY_REGISTER.md); aparece en la cadena posterior de adquisición/acreedor/promotor, no en la conversación profesional Campanario de 2009 | una transmisión a CAM no identifica por sí sola al propietario intermedio, la autoridad comunitaria, el conocimiento o una coordinación ilícita; falta conciliar cada finca/escritura |
+| Miguel Molina / «familia Molina» | no existe un actor jurídico único llamado `familia Molina`; el expediente distingue **Miguel Molina**, **Miguel Molina Betancor** y otras personas | identidades y roles internos separados en el [registro canónico de actores](./knowledge-project/SUN_PARK_CANONICAL_ACTOR_REGISTER.md) y el [perímetro Montelanza/Molina](./knowledge-project/SUN_PARK_MONTE_LANZA_MOLINA_COMMUNITY_PERIMETER.md) | apellido compartido no prueba parentesco, bloque, voluntad, conocimiento, mandato o responsabilidad colectiva; hace falta puente persona–finca–acto |
+| Henca | literal oral atribuido, entidad exacta no resuelta | no se localizó una coincidencia oficial inequívoca que permita identificar entidad, NIF/hoja o cargo de FMMM en el corpus acotado | no promover el literal a razón social ni atribuir administración; pedir a la declarante denominación, jurisdicción, fecha, documento y número identificador |
+| Hotel San Bartolomé / Sun Park | el literal oral `Hotel San Bartolomé` se trata como posible confusión geográfica; la fuente oficial identifica **Hotel Apartamento Sun Park**, Playa Blanca, Yaiza | [BOC 2008/245/033](https://www.gobiernodecanarias.org/boc/2008/245/033.html) | no crear otra comunidad/hotel ni trasladar actos a San Bartolomé de Tirajana sin documento expreso |
+
+**Resultado global:** se enlaza lo verificado y se registra expresamente lo no localizado o no resuelto. Ningún enlace societario o profesional sustituye la prueba de mandato, propiedad, poder comunitario, conocimiento, intención, conflicto o responsabilidad.

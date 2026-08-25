@@ -22,36 +22,38 @@ Antes de vincular un nombre, registrar:
 - fuente directa, fecha de la fuente, fecha de acceso, página/línea/asiento; y
 - si la fuente acredita un hecho histórico, un estado actual o sólo una alegación.
 
+Una identidad no se cierra por nombre y región solamente. Salvo identificador oficial inequívoco, requiere al menos dos atributos independientes compatibles —por ejemplo nombre completo más fecha/capacidad, hoja registral, colegio, órgano, domicilio profesional o documento del expediente— y ausencia de una contradicción material. Si no se alcanza ese umbral, el estado es **`IDENTIDAD_ABIERTA`** y el literal se conserva sólo como alias de búsqueda.
+
 Las relaciones familiares o íntimas no se infieren por apellidos, domicilio, trabajo o entorno. Sólo se registran si son materialmente necesarias y están acreditadas por una fuente legítima.
 
 ## 3. Jerarquía de fuentes
 
-Preferir, en este orden:
+Preferir, en este orden, y registrar el nivel:
 
-1. resolución, expediente, escritura, asiento o publicación oficial;
-2. registro profesional, regulador o colegio oficial;
-3. documento corporativo o institucional primario;
-4. comunicación contemporánea autenticada;
-5. fuente periodística o académica identificable y contrastada;
-6. web corporativa o biografía interesada;
-7. agregador, red social o fuente abierta no verificada.
+1. `O1` — resolución, expediente, escritura, asiento o publicación oficial;
+2. `O2` — registro profesional, regulador o colegio oficial;
+3. `O3` — documento corporativo o institucional primario;
+4. `O4` — comunicación contemporánea autenticada y lícitamente utilizable;
+5. `O5` — fuente periodística o académica identificable y contrastada; y
+6. `O6` — web corporativa, biografía interesada, agregador, red social u otra fuente abierta no verificada.
 
 Una fuente secundaria puede abrir una línea de búsqueda, pero no desplaza una fuente primaria contraria. Una captura o copia se enlaza a su origen y se preserva con fecha; no se presenta como certificación.
 
 ## 4. Tipos de relación
 
-Cada arista debe etiquetarse y fecharse:
+Cada arista debe etiquetarse y fecharse por **naturaleza**:
 
 - `R1 — societaria/registral`;
 - `R2 — profesional o de mandato`;
 - `R3 — procesal o institucional`;
 - `R4 — comunitaria/propiedad/representación`;
-- `R5 — comunicación o reunión documentada`;
-- `R6 — alegada por una fuente identificada`;
-- `R7 — inferida y pendiente de prueba`; o
-- `R8 — buscada y no localizada en el perímetro finito`.
+- `R5 — comunicación o reunión documentada`.
+
+Por separado se asigna un **estado probatorio**: `OFICIAL_FECHADO`, `DOCUMENTAL_PROYECTO`, `AUTO_DESCRITO`, `ATRIBUIDO`, `INFERIDO`, `NO_LOCALIZADO`, `CONTRADICHO/CORREGIDO` o `IDENTIDAD_ABIERTA`. Naturaleza y estado no se mezclan: una relación profesional puede estar oficialmente fechada, sólo atribuida o no localizada.
 
 Una relación histórica no se describe como actual sin certificado o fuente vigente. Un cargo en una sociedad no prueba intervención en cada asunto de la sociedad. Una relación entre A y B, y otra entre B y C, no prueba relación, comunicación o coordinación entre A y C.
+
+Registrar separadamente persona, entidad, cargo, fecha de inicio/fin, fuente y vigencia. Una firma creada en una fecha posterior no recibe retrospectivamente los mandatos personales anteriores de sus futuros socios sin hoja de encargo, poder, factura, escrito u otro puente contemporáneo.
 
 ## 5. Regla contra la transferencia de responsabilidad
 
@@ -80,7 +82,7 @@ Registrar para cada escaneo:
 - búsquedas de prueba contraria o explicación inocente; y
 - límite del universo revisado.
 
-«No se localizó» significa sólo que no apareció en ese conjunto, consulta y fecha. No equivale a «no existe». Las búsquedas alrededor de un año deben indicar la ventana revisada y no convertir un índice finito en certificado universal de ausencia.
+**`NO LOCALIZADO` no significa inexistencia.** Significa sólo que el extremo no apareció en ese conjunto, consulta y fecha. Las búsquedas alrededor de un año deben indicar la ventana revisada y no convertir un índice finito en certificado universal de ausencia.
 
 ## 7. Publicación y derecho de respuesta
 

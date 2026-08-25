@@ -12,11 +12,21 @@
 
 ## 1. Identificación, fuente y finalidad
 
+**Si el declarante ha revisado o adoptado este tenor:**
 Yo, **[NOMBRE]**, formulo esta declaración para dejar constancia ordenada y fiel de mi conocimiento, recuerdo y entendimiento de hechos relacionados con **[ASUNTO]**.
+
+**Si es una síntesis editorial no revisada/adoptada:**
+Esta versión organiza una fuente atribuida a **[DESCRIPTOR]**. No constituye adopción personal palabra por palabra ni declaración de veracidad del declarante. Utilizar redacción atribuida o tercera persona y eliminar la fórmula `Yo declaro` de la sección 9.
 
 **Fuente personal o documental principal:** [CONVERSACIÓN / AUDIO / CORREO / DOCUMENTOS / EXPERIENCIA DIRECTA].
 
+**Modo de fuente:** [AUDIO NATIVO / TRANSCRIPCIÓN DE PLATAFORMA / TEXTO PRESENTADO COMO DICTADO O NOTA DE VOZ / TEXTO DIRECTO / SÍNTESIS EDITORIAL].
+
 **Estado de adopción:** [REVISADA PERSONALMENTE / DERIVADA DE FUENTE Y NO RATIFICADA SEPARADAMENTE / OTRO].
+
+**Cierre de la secuencia de voz:** [INSTRUCCIÓN/FECHA DE CIERRE / NO APLICA / PENDIENTE].
+
+**Atribución del hablante:** [QUIÉN ATRIBUYE / BASE / NO EQUIVALE A AUTENTICACIÓN BIOMÉTRICA].
 
 ### 1.1 Control de voz, dictado o transcripción, si aplica
 
@@ -25,7 +35,7 @@ Yo, **[NOMBRE]**, formulo esta declaración para dejar constancia ordenada y fie
 - **Fecha/hora/zona de creación, recepción y exportación:** [DATOS]
 - **Segmentos y orden:** [NÚMERO / SECUENCIA / CORTES O FALTANTES]
 - **Fuente nativa V0:** [TIPO / DURACIÓN / BYTES / SHA-256 / PENDIENTE]
-- **Versión utilizada:** V1 literal / V2 trabajo / V3 revisada / V4 firmada-presentada
+- **Versión utilizada:** V1 literal / V2 trabajo / V3 revisada / V4 formal controlada; firma, juramento y presentación se registran por separado
 - **Hablante por segmento y grado:** S0 / S1 / S2 / S3 / S4, con base concreta
 - **Método de transcripción y revisores:** [AUTOMÁTICO / HUMANO / MIXTO]
 - **Pausas, solapamientos, ininteligibles o ediciones:** [DETALLE]
@@ -91,11 +101,11 @@ No inventar certeza. No detener por ello toda la declaración: registrar respons
 |---|---|---|---|---|
 | [Documento] | [fecha] | [fuente] | [alcance] | encontrado / pendiente / parcial |
 
-### 7.1 Matriz de proposiciones, contradicciones y aclaraciones
+## 7A. Matriz de proposiciones materiales
 
-| ID | Proposición | Clase P1–P8 | Fuente/segmento | Corroboración | Prueba contraria o límite | Aclaración / estado |
-|---|---|---|---|---|---|---|
-| [ID] | [texto preciso] | [P1–P8] | [fuente] | [fuente] | [fuente/explicación] | [cerrada / REQUIERE ACLARACIÓN] |
+| ID | Proposición controlada | Clase P1–P8 / conocimiento | Fuente, segmento y hablante | Corroboración | Prueba contraria o límite | Estado de adopción | Aclaración / acción de cierre |
+|---|---|---|---|---|---|---|---|
+| [ST-001] | [texto preciso] | [P1–P8; percepción / recuerdo / tercero / documental / inferencia / jurídica / abierta] | [fuente / segmento / hablante] | [fuente] | [fuente / límite / explicación alternativa] | capturada / transcrita / atribuida / registrada / revisada / ratificada / firmada / jurada / presentada | [cerrada / REQUIERE ACLARACIÓN / acción] |
 
 Las preguntas se dirigirán por separado a cada declarante. Una respuesta o ratificación de otra persona no sustituye la del hablante atribuido.
 
@@ -105,12 +115,18 @@ Esta versión puede utilizarse como [RELATO FECHADO / GUÍA DE INVESTIGACIÓN / 
 
 ## 9. Declaración de veracidad
 
+*Usar únicamente cuando el declarante haya revisado y adoptado esta versión. En una síntesis editorial no ratificada, sustituir este bloque por el bloque de procedencia situado a continuación.*
+
 Declaro que lo expuesto refleja fielmente, según mi leal saber y entender, mi conocimiento y mi recuerdo, y que he indicado cuando una afirmación depende de documentos, manifestaciones de terceros, inferencia o verificación pendiente. Si posteriormente se me exhibe documentación auténtica que precise o contradiga algún extremo, la corrección deberá realizarse expresamente mediante nueva versión o declaración suplementaria, sin alterar silenciosamente la versión anterior.
 
 **[NOMBRE COMPLETO]**  
 **En [LUGAR], a [FECHA].**
 
 Firma, si se realiza: ______________________________
+
+### Bloque alternativo — procedencia editorial no adoptada
+
+> Esta versión fue preparada por **[EDITOR/AGENTE]** a partir de **[FUENTE]** y no ha sido revisada ni adoptada palabra por palabra por el hablante atribuido. Preserva un relato fechado y una guía de investigación; no contiene una declaración personal de veracidad del hablante. La fuente nativa y una posterior versión revisada, si existen, controlan autenticación y tenor exacto.
 
 ## 10. Apéndice operativo — acciones derivadas
 
@@ -126,6 +142,8 @@ Firma, si se realiza: ______________________________
 ## 11. Control de integridad
 
 - Fuente personal/documental: [IDENTIFICAR]
+- Estado del audio nativo: [DISPONIBLE / PENDIENTE / NO EXISTE]
+- Segmentos/duración/formato: [REFERENCIA PRIVADA / PENDIENTE]
 - Archivo(s) fuente y hash(es): [PENDIENTE / REFERENCIA PRIVADA]
 - Capas V0–V4 preservadas: [DETALLE / PENDIENTE / NO APLICA]
 - Grado S0–S4 por segmento material: [DETALLE / PENDIENTE / NO APLICA]

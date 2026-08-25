@@ -1,6 +1,6 @@
 {
   "schema": "por-derecho.canonical-names.v1",
-  "control_date": "2026-08-24",
+  "control_date": "2026-08-25",
   "scope_note": "These are controlled names for repository narrative and the identified historical/procedural contexts. Historical official sources do not by themselves establish a company's present-day status.",
   "rules": [
     "Resolve an acronym through this register before expanding it.",
@@ -172,6 +172,86 @@
       "current_status_rule": "Do not state a current 2026 corporate or tax status without a current registry or tax certificate."
     },
     {
+      "id": "E007",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "Pamanil, S.L.",
+      "first_reference": "Pamanil, S.L.",
+      "registered_denominational_form": "PAMANIL SOCIEDAD LIMITADA",
+      "controlled_context": "Historical Sun Park Community administration/property-services source family",
+      "name_rule": "BORME account-deposit notices confirm the entity name only. Do not infer officers, mandate, performance or succession to Pamalexsha from those notices.",
+      "separation_rule": "Pamanil, S.L. and Pamalexsha Servicios Integrales, Sociedad Limitada are separate legal persons unless an act-specific assignment, novation, succession or other bridge is proved.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-B-2011-132-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-132-35",
+          "proposition": "The official account-deposit list names PAMANIL SOCIEDAD LIMITADA in the Las Palmas registry for historical accounting periods; it does not identify officers."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-B-2011-156-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-B-2011-156-35",
+          "proposition": "The official account-deposit list names PAMANIL SOCIEDAD LIMITADA for the 2010 deposit; it does not prove a Sun Park mandate or performance."
+        }
+      ]
+    },
+    {
+      "id": "E044",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "first_reference": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "registered_denominational_form": "MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL",
+      "operations_start_date": "2014-04-02",
+      "registration_date": "2015-05-21",
+      "registered_object": "La actividad propia de los abogados.",
+      "registry_coordinates": {
+        "volume": 2111,
+        "folio": 194,
+        "section": 8,
+        "sheet": "GC 49668"
+      },
+      "retrieval_aliases_not_legal_names": [
+        "Millán & Miners, S.L.P.",
+        "Millan & Miners, S.L.P.",
+        "Millen and Miners",
+        "Millennium Miners"
+      ],
+      "formation_roles": [
+        {
+          "person": "Esteban López Noriega",
+          "capacities": [
+            "administrador mancomunado",
+            "socio profesional"
+          ]
+        },
+        {
+          "person": "Juan Carlos Prieto Puente",
+          "capacities": [
+            "administrador mancomunado",
+            "socio profesional"
+          ]
+        }
+      ],
+      "later_office_change": "On 17 November 2022 both ceased as joint administrators and Juan Carlos Prieto Puente became sole administrator.",
+      "temporal_rule": "The company did not yet exist in 2011. Do not attribute earlier individual mandates or conduct to the firm without a separate source bridge.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2015-100-35, entry 219204",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2015-100-35",
+          "proposition": "The registry act records the exact denomination, 2 April 2014 operations start, legal-practice object, both professional partners, both joint administrators and sheet GC 49668."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2022-225-35, entry 518760",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-225-35",
+          "proposition": "The registry act records cessation of both joint administrators and appointment of Juan Carlos Prieto Puente as sole administrator on 17 November 2022."
+        }
+      ]
+    },
+    {
       "id": "E051",
       "record_type": "legal_entity",
       "jurisdiction": "Spain",
@@ -221,6 +301,149 @@
           "reference": "Spanish company officer record for company 10762489",
           "url": "https://find-and-update.company-information.service.gov.uk/company/10762489/officers",
           "proposition": "The public officer record identifies HAVA VIDA TRAVEL AND TOURISM SL and company number B76564434; a current Spanish certificate remains the controlling target."
+        }
+      ]
+    },
+    {
+      "id": "E052",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "first_reference": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "registered_denominational_form": "PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA",
+      "operations_start_date": "2013-09-17",
+      "registration_date": "2013-10-07",
+      "registry_coordinates": {
+        "volume": 2065,
+        "folio": 206,
+        "section": 8,
+        "sheet": "GC 47444"
+      },
+      "source_literal_variants": [
+        "Pamalexsha Servicios Integrales, S.L.",
+        "Pamalexsha, S.L."
+      ],
+      "retrieval_aliases_not_legal_names": [
+        "Pamalexa",
+        "Pamalexsha"
+      ],
+      "formation_role": {
+        "person": "Antonio Cogolludo Rojas",
+        "capacity": "administrador único"
+      },
+      "later_office_change": "The 16 July 2026 act names Shaila María Cogolludo Ramos as apoderada.",
+      "separation_rule": "Do not merge this company with Pamanil, S.L. or infer succession, a Sun Park mandate, FMMM corporate office, ownership or lawful hotel-operation authority without separate primary evidence.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2013-196-35, entry 438341",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2013-196-35",
+          "proposition": "The registry act records the exact denomination, 17 September 2013 operations start, Antonio Cogolludo Rojas as sole administrator and sheet GC 47444."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2026-140-35, entry 345817",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-140-35",
+          "proposition": "The registry act records appointment of Shaila María Cogolludo Ramos as apoderada on 16 July 2026."
+        }
+      ]
+    },
+    {
+      "id": "E053",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "first_reference": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "registered_denominational_form": "EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA",
+      "operations_start_date": "2017-10-18",
+      "registration_date": "2017-12-26",
+      "registry_coordinates": {
+        "volume": 2181,
+        "folio": 103,
+        "section": 8,
+        "sheet": "GC 53519"
+      },
+      "retrieval_aliases_not_legal_names": [
+        "Explotaciones Noepa",
+        "Noepa"
+      ],
+      "formation_role": {
+        "person": "Antonio Cogolludo Rojas",
+        "capacity": "administrador único"
+      },
+      "later_office_change": "The 28 December 2021 act names Shaila María Cogolludo Ramos as apoderada.",
+      "separation_rule": "Do not infer succession from Pamanil or Pamalexsha, a Sun Park mandate, ownership, FMMM office or common unlawful purpose from the registered offices alone.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2018-3-35, entry 5482",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2018-3-35",
+          "proposition": "The registry act records the exact denomination, 18 October 2017 operations start, Antonio Cogolludo Rojas as sole administrator and sheet GC 53519."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2022-3-35, entry 5279",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2022-3-35",
+          "proposition": "The registry act records appointment of Shaila María Cogolludo Ramos as apoderada on 28 December 2021."
+        }
+      ]
+    },
+    {
+      "id": "E054",
+      "record_type": "legal_entity",
+      "jurisdiction": "Spain",
+      "canonical_name": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "first_reference": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "registered_denominational_form": "SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA",
+      "operations_start_date": "2017-12-22",
+      "registration_date": "2018-01-31",
+      "registry_coordinates": {
+        "volume": 2183,
+        "folio": 150,
+        "section": 8,
+        "sheet": "GC 53659"
+      },
+      "unresolved_oral_forms_not_aliases": [
+        "Inversiones Santa Lucía",
+        "Santa María"
+      ],
+      "formation_roles": [
+        {
+          "person": "Antonio Cogolludo Rojas",
+          "capacity": "administrador solidario"
+        },
+        {
+          "person": "Juan Carlos Prieto Puente",
+          "capacity": "administrador solidario"
+        },
+        {
+          "person": "Atilio Alberto Maddonni Citara",
+          "capacity": "administrador solidario"
+        }
+      ],
+      "later_office_changes": [
+        "On 18 May 2021 all three solidary administrators ceased, Antonio Cogolludo Rojas became sole administrator and Juan Carlos Prieto Puente became apoderado.",
+        "A July 2025 registry act records Antonio Cogolludo Rojas's cessation as sole administrator and appointment of Miguel Ángel García Pérez; it does not by itself resolve the current status of Prieto's 2021 power."
+      ],
+      "relationship_rule": "The company proves a direct dated Prieto–Antonio corporate link. It does not by itself prove a Sun Park mandate, conflict of interest, knowledge transfer, coordination or wrongdoing.",
+      "official_sources": [
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2018-27-35, entry 61450",
+          "url": "https://www.boe.es/borme/dias/2018/02/07/pdfs/BORME-A-2018-27-35.pdf",
+          "proposition": "The registry act records the exact denomination, 22 December 2017 operations start, the three solidary administrators and sheet GC 53659."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2021-97-35, entries 249637-249638",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35",
+          "proposition": "The registry acts record the 18 May 2021 administrator changes and Prieto's appointment as apoderado."
+        },
+        {
+          "authority": "Boletín Oficial del Registro Mercantil",
+          "reference": "BORME-A-2025-138-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2025-138-35",
+          "proposition": "The later registry act records Antonio Cogolludo Rojas's cessation as sole administrator and a replacement; a certified current extract remains necessary for present-office claims."
         }
       ]
     },

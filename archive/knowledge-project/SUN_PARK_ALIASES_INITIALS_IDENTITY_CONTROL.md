@@ -1,6 +1,6 @@
 # Sun Park aliases, initials and identity-control register
 
-**Control date:** 19 August 2026  
+**Control date:** 25 August 2026
 **Status:** mandatory identity discipline
 
 ## Locked expansions
@@ -23,6 +23,20 @@
 - `Pascual Miguel Molina Clement` — source record identifies this as an error for **Manuel Molina Climent**.
 - `Shaila entered in 2017` — superseded. Her Pamanil/Community communications role is documented by 8 Apr 2014.
 - `Antonio entered in 2018` — superseded. His Community/Pamanil role is documented by 10 Apr 2014.
+
+## Counsel and corporate-network name controls — 25 August 2026
+
+| Source / oral / retrieval form | Canonical treatment | Status / rule |
+|---|---|---|
+| `Juan Carlos Roque Prieto`, `Juan Carlos Esloque Prieto` | **Juan Carlos Prieto Puente** | The personal-name hybrids are superseded. **Roque Prieto, S.L.** is a separate legal person and must not be merged into the lawyer's name. |
+| `Esteban Noriega`, `Esteban Noruega`, `Esteban Muriega` | **Esteban López Noriega** | Use the full official name on first reference. |
+| `Millán & Miners, S.L.P.`, `Millan & Miners`, `Millen and Miners`, `Millennium Miners` | **MILLAN AND MINERS SOCIEDAD LIMITADA PROFESIONAL** | Retrieval/source forms only. The BORME registered denomination uses `MILLAN`, `AND` and the full entity-form words; operations began 2 Apr 2014 and registration data are dated 21 May 2015. |
+| `Pamalexa` | **PAMALEXSHA SERVICIOS INTEGRALES, SOCIEDAD LIMITADA** | Oral/retrieval approximation only. Do not merge with Pamanil, S.L. |
+| `Noepa`, `Explotaciones Noepa` | **EXPLOTACIONES NOALPA, SOCIEDAD LIMITADA** | Superseded oral/retrieval approximation. |
+| `Santa María`, `Inversiones Santa Lucía` | **Unresolved oral approximation; candidate identified as SANTA LUCIA REAL ESTATE, SOCIEDAD LIMITADA** | Do not promote the approximation into an alias or merge it with another company without the source act. The verified Prieto–Antonio company is Santa Lucia Real Estate. |
+| `Sheila Cogolludo Rojas`, `Shaila Cogolludo Rojas`, `Shaila Cogolludo` | **Shaila María Cogolludo Ramos** | Use the full BORME form for identity. A shorter source literal may be quoted only as such. |
+
+**Entity-separation lock:** Pamanil, S.L.; Pamalexsha Servicios Integrales, Sociedad Limitada; Explotaciones Noalpa, Sociedad Limitada; and Santa Lucia Real Estate, Sociedad Limitada are four separate legal persons. Shared people, services, address history or chronology do not prove succession, agency or a common plan.
 
 ## Identity conflicts not yet resolved
 

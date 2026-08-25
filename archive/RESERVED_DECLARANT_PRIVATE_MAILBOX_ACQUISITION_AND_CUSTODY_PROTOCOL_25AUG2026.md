@@ -6,73 +6,44 @@
 
 **Objeto:** preservar y revisar, con autorización de la titular, el buzón privado que contiene correspondencia material de los periodos relevantes
 
-**Estado actual:** el buzón completo no está conectado ni adquirido; existe una copia parcial reflejada en un buzón corporativo autorizado
+**Estado actual:** el buzón completo no está conectado ni adquirido; existe una copia parcial reflejada en un buzón contraparte conectado y autorizado
 
 **Privacidad:** la dirección exacta, cuerpos, asuntos, participantes, identificadores de Google y localizadores de mensajes no se publican en GitHub
 
 ## 1. Hallazgo de preservación
 
-La búsqueda paginada y completa del buzón corporativo actualmente conectado localizó **2.413 mensajes** enviados a o desde `RDM-PRIVATE-MAILBOX-01`. Este resultado demuestra que existe una colección reflejada sustancial y que la cuenta privada probablemente contiene correspondencia clave de los periodos relevantes. **No** demuestra que el buzón corporativo contenga todos los mensajes de la cuenta privada ni que cada coincidencia sea probatoria.
+La declarante reservada indicó que su cuenta privada contiene muchos correos clave de los periodos relevantes. Separadamente, una búsqueda paginada completa **dentro de una consulta definida** del buzón contraparte actualmente conectado localizó **más de 2.400 mensajes relacionados** enviados a o desde `RDM-PRIVATE-MAILBOX-01`; aproximadamente mil contienen adjuntos y más del 90% se concentran en 2011–2019. Estos agregados gruesos demuestran la existencia de una colección reflejada sustancial y justifican preservación prioritaria. **No** demuestran que el lado conectado contenga el buzón completo, que cada coincidencia sea probatoria ni que la afirmación de la declarante sobre relevancia esté corroborada elemento por elemento.
 
-### Distribución temporal de la copia reflejada
-
-| Periodo | Mensajes localizados |
-|---|---:|
-| 2008–2010 | 0 |
-| 2011 | 0 |
-| 2012 | 399 |
-| 2013–2016 | 775 |
-| 2017–2018 | 951 |
-| 2019–2022 | 152 |
-| 2023–2026 | 136 |
-| **Total** | **2.413** |
-
-Los periodos son disjuntos. Los recuentos reflejan mensajes, no hilos ni documentos únicos.
-
-### Búsquedas de descubrimiento dentro de esa copia
-
-| Término/familia | Coincidencias |
-|---|---:|
-| Sun Park | 1.488 |
-| Pink Canary | 68 |
-| Monterecco | 844 |
-| CEXP | 12 |
-| Comunidad | 384 |
-| Pamanil/Pamalexsha | 60 |
-| Concurso | 371 |
-| Bankia | 179 |
-| Garrigues | 161 |
-| Campanario | 14 |
-| Prieto Puente/López Noriega | 26 |
-| Borja/Rodríguez-Batllori | 109 |
-
-Estos recuentos se solapan y son sólo una herramienta de descubrimiento. No son una suma, una medida de relevancia, una conclusión sobre conocimiento ni corroboración independiente.
+Los recuentos exactos por año, término, remitente, destinatario, hilo y adjunto pertenecen exclusivamente al manifiesto privado. Los términos de descubrimiento se solapan y no constituyen una suma, una medida de relevancia, una conclusión sobre conocimiento ni corroboración independiente.
 
 ## 2. Autoridad y límites
 
 La adquisición completa requiere autorización verificable de la titular de `RDM-PRIVATE-MAILBOX-01` o acceso concedido por ella mediante el mecanismo oficial de Google. No se pedirán ni recibirán contraseñas por chat. La autorización de Gil, el acceso a un buzón corporativo o la presencia de mensajes reenviados no sustituyen la autorización de la titular para adquirir su cuenta completa.
 
-Hasta entonces pueden preservarse y analizarse, dentro de la autorización existente, únicamente los mensajes reflejados en el buzón corporativo. No se borrará, moverá, reetiquetará, reenviará, migrará ni marcará correo durante la adquisición.
+Hasta entonces pueden preservarse y analizarse, dentro de la autorización existente, únicamente los mensajes reflejados en el buzón contraparte conectado. No se borrará, moverá, reetiquetará, reenviará, migrará ni marcará correo durante la adquisición.
+
+La autorización para conectar o preservar, la autorización para revisar contenido, la autorización para presentar ante una institución y la **autorización para publicar** son decisiones distintas. La autorización para preservar o revisar no autoriza por sí sola otra de esas actuaciones.
 
 ## 3. Ruta de adquisición preferente
 
 ### A. Exportación nativa completa mediante Google Takeout
 
 1. La titular inicia sesión directamente en su propia cuenta y selecciona sólo Gmail, salvo que autorice otros productos.
-2. Registra fecha/hora/zona, opciones, etiquetas incluidas, formato y método de entrega.
-3. Descarga el archivo desde un equipo controlado; no comparte credenciales.
-4. Conserva el ZIP/TGZ original sin abrir ni modificar como copia maestra.
-5. Calcula SHA-256, tamaño y nombre exacto; crea un manifiesto de cada MBOX y archivo asociado.
+2. Registra fecha/hora/zona, opciones, etiquetas incluidas, formato, método de entrega y todos los volúmenes que genere la exportación.
+3. Descarga los archivos desde un equipo controlado; no comparte credenciales.
+4. Conserva cada ZIP/TGZ original sin abrir ni modificar como copia maestra y crea una copia de trabajo separada.
+5. Calcula SHA-256, tamaño y nombre exacto de cada volumen; crea un manifiesto de cada MBOX y archivo asociado.
 6. Mantiene dos copias controladas en ubicaciones separadas y una copia de trabajo derivada.
 7. Registra las etiquetas Gmail preservadas en cabeceras `X-Gmail-Labels` y cualquier aviso de exclusión o cambio durante la generación.
+8. No ofrece una exportación por fecha si la interfaz no la permite: exporta el conjunto autorizado y aplica el filtro temporal sólo sobre la copia de trabajo.
 
-Google explica el procedimiento y las limitaciones de la exportación en [Descargar tus datos de Google](https://support.google.com/accounts/answer/3024190).
+Google explica el procedimiento y las limitaciones en [Descargar tus datos de Google](https://support.google.com/accounts/answer/3024190) y describe que la exportación de Gmail puede incluir contenido, cabeceras, adjuntos y etiquetas en [Qué datos se exportan de Gmail](https://support.google.com/mail/answer/10016932). Takeout no recupera correo eliminado permanentemente.
 
 ### B. Adquisición por Gmail API o conector autorizado
 
 Después de verificar el perfil de la cuenta correcta:
 
-1. enumerar todas las etiquetas y mensajes, incluyendo `in:anywhere` y correo eliminado todavía recuperable;
+1. enumerar todas las etiquetas y mensajes accesibles, incluyendo spam, papelera y material todavía retenido por el proveedor; no prometer recuperación de correo eliminado permanentemente;
 2. guardar el denominador total y cada identificador en el registro privado;
 3. recuperar cada mensaje en formato `RAW`, que devuelve el mensaje RFC 2822 completo codificado en base64url;
 4. recuperar y hash-controlar adjuntos y cuerpos MIME;
@@ -85,7 +56,7 @@ Referencias oficiales: [Gmail API — users.messages](https://developers.google.
 
 La adquisición no se declara completa hasta comparar:
 
-- total de mensajes y cobertura temporal de Takeout, API y buzón corporativo;
+- total de mensajes y cobertura temporal de Takeout, API y buzón contraparte conectado;
 - `Message-ID` de cabecera, fecha, remitente/destinatario normalizados, tamaño y hash del cuerpo/adjuntos;
 - mensajes enviados, recibidos, archivados, spam, papelera, borradores y etiquetas;
 - cadenas reenviadas o citadas frente al mensaje nativo;
@@ -123,4 +94,4 @@ Antes de examinar o publicar contenido:
 
 ## 7. Criterio de cierre y estado actual
 
-`RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD** hasta que la titular autorice y complete Takeout o conecte la cuenta correcta, se verifique el perfil y se reconcilien los denominadores. Los 2.413 mensajes reflejados preservan un punto de partida importante, especialmente desde 2012, pero no autorizan la expresión «todos los correos de la declarante».
+`RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD** hasta que la titular autorice y complete Takeout o conecte la cuenta correcta, se verifique el perfil y se reconcilien los denominadores. El corpus reflejado de más de 2.400 mensajes relacionados preserva un punto de partida importante, pero no autoriza la expresión «todos los correos de la declarante».

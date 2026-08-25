@@ -22,6 +22,16 @@ Ninguna de esas capas demuestra automáticamente las otras. La atribución de un
 
 Mientras falte esa adopción, la denominación correcta es **declaración registrada derivada de fuente** o **transcripción de trabajo atribuida**, según corresponda.
 
+### 1.1 Regla de pausa y captura exclusiva
+
+Si el hablante anuncia que seguirá con otro audio o pide expresamente que todavía no se analice, el sistema entra en **modo de captura**: conserva el orden y la atribución provisional, pero no analiza, sintetiza, corrige, finaliza ni publica. Una pausa, desconexión o cambio de hablante no equivale a cierre. Sólo una instrucción expresa de cierre o de comienzo del análisis permite reanudar esas tareas.
+
+### 1.2 Ejes independientes y estados de adopción
+
+Cada proposición mantiene cinco ejes ortogonales: versión de fuente `V0–V4`, grado de atribución `S0–S4`, estado de adopción personal, clase `P1–P8` y estado de corroboración. La firma, el juramento, la presentación institucional y la corroboración son hechos separados; ninguno se infiere de otro.
+
+Estados de adopción controlados: **capturada**, **transcrita**, **atribuida**, **registrada**, **revisada**, **ratificada**, **firmada**, **jurada o formalizada**, **presentada**, **suplementada** y **supersedida/corregida**. Deben registrarse con alcance, fecha y medio; una etiqueta global no sustituye la adopción proposición por proposición.
+
 ## 2. Captura mínima antes de redactar
 
 El registro privado de custodia debe conservar, cuando esté disponible:
@@ -49,9 +59,11 @@ Cada fuente de voz debe distinguir, sin sustitución silenciosa:
 | `V1 — transcripción literal` | palabras audibles, dudas, pausas y segmentos ininteligibles | control de fidelidad |
 | `V2 — versión de trabajo corregida` | puntuación, nombres y ordenación editorial identificados | análisis; no adopción automática |
 | `V3 — versión revisada por el declarante` | correcciones aceptadas o formuladas por la persona | adopción documentada, con alcance exacto |
-| `V4 — versión firmada o presentada` | texto firmado o presentado con justificante | versión controlante para tenor y autenticación, sin borrar V0–V3 |
+| `V4 — versión formal controlada` | texto firmado, jurado o presentado, registrando por separado cada acto y justificante | versión controlante para tenor dentro del alcance adoptado, sin borrar V0–V3 ni convertir presentación en corroboración |
 
 Las correcciones de nombre, fecha o cifra deben quedar en una tabla de cambios. Si una versión posterior modifica una proposición material, la anterior se marca **SUPLEMENTADA**, **SUPERSEDIDA** o **CONTRADICHA/CORREGIDA**, pero no se elimina.
+
+La revisión de transcripción debe marcar ininteligibles, solapamientos, autocorrecciones y dudas; comprobar especialmente nombres, negaciones, fechas, cifras, porcentajes y unidades; y separar puntuación editorial de palabras audibles. Un documento localizado después puede corroborar o corregir una proposición, pero no se inserta retrospectivamente dentro de las palabras del hablante.
 
 ## 4. Grado de atribución del hablante
 
@@ -85,6 +97,8 @@ Por separado se registra el estado de contraste: **corroborada**, **parcial**, *
 ## 6. Separación de declarantes
 
 Gil Marer, la Testigo del perímetro de Gil Marer — identidad reservada y cualquier otra persona son voces probatorias separadas.
+
+**No se mezclan voces.** Cada segmento, proposición, corrección y adopción conserva su hablante propio.
 
 - Una persona no adopta las palabras de otra por relación personal, profesional, societaria o procesal.
 - Una instrucción para archivar el relato de otra persona acredita la instrucción, no la verdad material ni la adopción de cada frase.
@@ -137,6 +151,8 @@ El corpus privado puede contener audio, transcripción completa, identidad legal
 - datos de terceros no necesarios; y
 - proporcionalidad entre interés probatorio y exposición pública.
 
+La regla pública es **excluir audio bruto**, transcripciones de trabajo completas, localizadores nativos y metadatos sensibles salvo autorización específica, revisión de privacidad/privilegio y necesidad proporcionada. Codificar o comprimir un archivo no lo vuelve privado.
+
 ## 11. Criterio de cierre
 
 Una declaración de voz está preparada para uso público controlado sólo cuando consten:
@@ -149,5 +165,7 @@ Una declaración de voz está preparada para uso público controlado sólo cuand
 - matriz de corroboración, contradicción y aclaración;
 - revisión de privacidad/privilegio; y
 - enlace a correcciones, declaraciones relacionadas y evidencia primaria.
+
+El entregable mínimo incluye: ficha privada de fuente y custodia; mapa de segmentos y hablantes; transcripción/versiones; matriz de proposiciones con los cinco ejes; tabla de correcciones y contradicciones; decisión de privacidad/privilegio; y derivado público autorizado, si procede. Sin esos controles el material puede preservarse como intake, pero no se presenta como declaración personal de veracidad adoptada.
 
 La [cola de aclaraciones de 25 de agosto de 2026](./GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md) aplica este protocolo al material actualmente conocido de Gil y de la declarante reservada.
