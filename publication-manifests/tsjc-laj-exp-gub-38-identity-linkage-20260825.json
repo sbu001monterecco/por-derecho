@@ -4,8 +4,10 @@
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-25T00:00:00Z",
   "baseline_main_sha": "1b80d2ecd83f8c3a96b8153d88a16942eff2e367",
-  "current_state": "DRAFT",
-  "deletion_status": "NOT_DELETION_SAFE_UNTIL_EXACT_SHA_PAGES_READBACK",
+  "controlling_pr": 974,
+  "merge_sha": "ae02e86d4ff2ba811063e76c2c72975fb15ab394",
+  "current_state": "DELETION_SAFE",
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
   "scope": "Verify the sender, signatory, LAJ capacity and institutional office for Exp. Gub. 38/2026; correct the 28/38 reference status; link the LAJ hierarchy and separate CGPJ, judicial-merits and Canary technical-infrastructure lanes; improve and preserve the reusable execution prompt.",
   "expected_routes": {
     "es": [
@@ -45,18 +47,66 @@
     "Spanish and English pages retain material parity and official source links"
   ],
   "validation": {
-    "repository_preservation": "PENDING_FINAL_RUN",
-    "publication_integrity": "PENDING_FINAL_RUN",
-    "audience_experience": "PENDING_FINAL_RUN",
+    "repository_preservation": "PASS",
+    "publication_integrity": "PASS",
+    "audience_experience": "PASS",
     "json_validation": "PASS",
     "diff_check": "PASS",
-    "live_readback": "PENDING_MERGE_AND_PAGES"
+    "live_readback": "PASS",
+    "evidence": [
+      "Publication integrity passed for the 12-file substantive change and the closeout update.",
+      "Repository preservation passed with 2,555 tracked files and 434 bilingual HTML pages.",
+      "Audience experience passed with 434 HTML pages and 4,792 internal links.",
+      "All eight pull-request workflows completed successfully before merge.",
+      "Live browser readback passed both bilingual routes after exact-SHA Pages deployment."
+    ]
   },
+  "deployment_evidence": [
+    "PR 974 merged to main as ae02e86d4ff2ba811063e76c2c72975fb15ab394 after 8/8 pull-request workflows completed successfully.",
+    "GitHub Pages run 32833733184 / #1074 completed successfully for the exact merge SHA; total duration 29s.",
+    "Live browser readback passed the controlled identity, issuing-office, correction, appeal-receipt and LAJ-coordination markers on both canonical language routes."
+  ],
   "deployment": {
-    "pull_request": null,
-    "merge_sha": null,
-    "pages_run": null,
-    "verified_at": null,
-    "status": "PENDING"
+    "pull_request": 974,
+    "merge_sha": "ae02e86d4ff2ba811063e76c2c72975fb15ab394",
+    "pages_run": 32833733184,
+    "pages_run_number": 1074,
+    "pages_head_sha": "ae02e86d4ff2ba811063e76c2c72975fb15ab394",
+    "pages_status": "success",
+    "pages_duration": "29s",
+    "pages_artifact_sha256": "69a9430e091923472476148eecabdf19714d278eff21bb2d36a0afcc04efee71",
+    "verified_at": "2026-08-25T09:49:39Z",
+    "status": "LIVE_VERIFIED"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/tsj-canarias-exp-gub-38-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/tsj-canarias-exp-gub-38-2026/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-25T09:49:39Z",
+    "pages_workflow_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32833733184",
+    "workflow_result": "GitHub Pages run 32833733184 / #1074 succeeded for the exact merge SHA ae02e86d4ff2ba811063e76c2c72975fb15ab394.",
+    "browser_result": "Both bilingual routes loaded at their canonical URLs. Spanish passed 5/5 controlled identity, office, correction, appeal-receipt and coordination markers. English passed the corresponding 5/5 controls, with the coordination label rendered as LAJ corps / Las Palmas Provincial Coordination Secretariat.",
+    "reviewed_source_sha256": {
+      "es": "cf70af3c75c0d90a7906a2468a6bb1340f9d02469ac1dcfa5399ae569250fbe7",
+      "en": "a80893c6546236c42a21a83f5b45470983b26ffc968a501cd29a7bc437b8ab00",
+      "identity_map": "7fe525a7ba500719a0221a924710fba0e4565d5a753cd8e18370b672ea9aa776"
+    }
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "audited_at_utc": "2026-08-25T09:49:39Z",
+    "publication_pull_request": 974,
+    "publication_merge_sha": "ae02e86d4ff2ba811063e76c2c72975fb15ab394",
+    "pages_run_id": 32833733184,
+    "audit": "docs/deletion-audits/2026-08-25-tsjc-laj-exp-gub-38-identity-linkage.md",
+    "thread_unique_material_remaining": false,
+    "open_evidence_preserved": true,
+    "email_sent": false,
+    "filing_made": false,
+    "source_evidence_deleted": false,
+    "private_source_requery_required": true,
+    "meaning": "The thread's verified identity, capacity, corrected reference, office topology, source boundaries, appeal state, open evidence and reusable prompt are recoverable without chat history. The appeal and evidence-reconciliation work remain open."
   }
 }
