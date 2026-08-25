@@ -40,7 +40,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 8
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -57,6 +57,8 @@ jobs:
           test -f archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
           grep -Fq 'PD-SP-ACTION-2011-CONVERGENCE-001' es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/index.html
           grep -Fq 'PD-SP-ACTION-2011-CONVERGENCE-001' en/unitary-criminal-hypothesis-2011-present/institutional-action/index.html
+          grep -Fq 'Activar preservación e investigación' es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/index.html
+          grep -Fq 'Activate preservation and investigation' en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/index.html
           grep -Fq 'PD-SP-ACT-0001' assets/data/criminal-first-institutional-action-matrix-v1.json
           grep -Fq 'PD-SP-ACT-0015' assets/data/criminal-first-institutional-action-matrix-v1.json
           grep -Fq 'PRESERVE' archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md
@@ -77,8 +79,8 @@ jobs:
           checks = [
               ('/es/hipotesis-criminal-unitaria-2011-presente/accion-institucional/', ['PD-SP-ACTION-2011-CONVERGENCE-001', 'Preservar. Entregar. Explicar. Investigar. Recuperar.']),
               ('/en/unitary-criminal-hypothesis-2011-present/institutional-action/', ['PD-SP-ACTION-2011-CONVERGENCE-001', 'Preserve. Disclose. Explain. Investigate. Recover.']),
-              ('/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/', ['Activar preservación e investigación', 'PD-SP-ACTION-2011-CONVERGENCE-001']),
-              ('/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/', ['Activate preservation and investigation', 'PD-SP-ACTION-2011-CONVERGENCE-001']),
+              ('/es/hipotesis-criminal-unitaria-2011-presente/convergencia-acosta-matos/', ['Activar preservación e investigación']),
+              ('/en/unitary-criminal-hypothesis-2011-present/acosta-matos-convergence/', ['Activate preservation and investigation']),
               ('/assets/data/criminal-first-institutional-action-matrix-v1.json', ['PD-SP-ACT-0001', 'PD-SP-ACT-0015']),
               ('/archive/CRIMINAL_FIRST_INSTITUTIONAL_ACTION_PROTOCOL_25AUG2026.md', ['PRESERVE', 'RECOVER']),
               ('/sitemap-criminal-first-action.xml', ['accion-institucional', 'institutional-action']),
@@ -100,7 +102,7 @@ jobs:
           for path, markers in checks:
               url = base + path
               last = None
-              for attempt in range(12):
+              for attempt in range(8):
                   try:
                       body = fetch(url)
                       missing = [marker for marker in markers if marker not in body]
@@ -110,7 +112,7 @@ jobs:
                       last = f'missing markers {missing}'
                   except Exception as exc:
                       last = str(exc)
-                  time.sleep(10)
+                  time.sleep(5)
               else:
                   failures.append(f'{url}: {last}')
           if failures:
@@ -127,8 +129,8 @@ jobs:
             echo "- SHA: $GITHUB_SHA"
             echo '- Control: `PD-SP-ACTION-2011-CONVERGENCE-001`'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
-              echo '- Source package and action IDs verified; public readback is reserved for the post-merge push.'
+              echo '- Source package, action IDs and visible convergence-action links verified; public readback is reserved for the post-merge push.'
             else
-              echo '- Public Spanish/English hubs, convergence pages, matrix, protocol, sitemap, robots and gateway assets verified by exact markers.'
+              echo '- Public Spanish/English hubs, convergence action links, matrix, protocol, sitemap, robots and gateway assets verified by exact markers.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
