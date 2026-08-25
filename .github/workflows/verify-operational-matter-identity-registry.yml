@@ -11,6 +11,8 @@ on:
       - 'assets/data/matter-identity-operational-control-v1.json'
       - 'assets/data/criminal-first-institutional-action-matrix-v1.json'
       - 'assets/data/acosta-matos-functional-convergence-map-v2*.json'
+      - 'assets/data/spanish-counsel-professional-owner-register-v1.json'
+      - 'assets/spanish-professional-registry*.js'
       - 'scripts/validate_operational_identity_registry.py'
       - 'scripts/render_operational_identity_registry.mjs'
       - 'sitemap-matter-identity-operational.xml'
@@ -28,6 +30,8 @@ on:
       - 'assets/data/matter-identity-operational-control-v1.json'
       - 'assets/data/criminal-first-institutional-action-matrix-v1.json'
       - 'assets/data/acosta-matos-functional-convergence-map-v2*.json'
+      - 'assets/data/spanish-counsel-professional-owner-register-v1.json'
+      - 'assets/spanish-professional-registry*.js'
       - 'scripts/validate_operational_identity_registry.py'
       - 'scripts/render_operational_identity_registry.mjs'
       - 'sitemap-matter-identity-operational.xml'
@@ -65,6 +69,8 @@ jobs:
       - name: Validate JavaScript syntax
         run: |
           node --check assets/matter-identity-registry.js
+          node --check assets/spanish-professional-registry.js
+          node --check assets/spanish-professional-registry-integration-20260825.js
           node --check scripts/render_operational_identity_registry.mjs
 
       - name: Install Playwright Chromium
@@ -98,46 +104,37 @@ jobs:
         shell: python
         run: |
           import os, time, urllib.request
-
           base = os.environ['BASE'].rstrip('/')
           checks = [
               ('/es/registro-identidad-materia/', ['PD-SP-IDENTITY-OPS-001', 'Una identidad. Un ID. Una cadena operativa.', 'data-queue-list="p0"']),
               ('/en/matter-identity-registry/', ['PD-SP-IDENTITY-OPS-001', 'One identity. One ID. One operational chain.', 'data-queue-list="p0"']),
               ('/assets/data/matter-identity-operational-control-v1.json', ['PD-SP-ID-ACT-0001', 'PD-SP-ID-ACT-0009', 'PD-SP-O-0008']),
-              ('/assets/data/matter-identity-registry-v1.json', ['PD-SP-IDENTITY-REGISTRY-001', '"total":159']),
+              ('/assets/data/matter-identity-registry-v1.json', ['PD-SP-IDENTITY-REGISTRY-001', '"total":188']),
               ('/assets/matter-identity-registry.js', ['buildOperationalRecords', 'P0_ROUTE_COVERAGE', 'exportRecords']),
               ('/assets/matter-identity-registry.css', ['.id-workbench', '.id-dialog', '.id-action-grid']),
+              ('/assets/spanish-professional-registry-integration-20260825.js', ['Javier Sixto-Seijas', 'PD-SP-P-0065', 'withdrawn-transaction-only']),
               ('/sitemap-matter-identity-operational.xml', ['registro-identidad-materia', 'matter-identity-registry']),
               ('/robots.txt', ['sitemap-matter-identity-operational.xml']),
           ]
-
           def fetch(url):
-              request = urllib.request.Request(url, headers={'User-Agent': 'por-derecho-operational-identity-verifier/1'})
-              with urllib.request.urlopen(request, timeout=30) as response:
-                  body = response.read().decode('utf-8', errors='replace')
-                  if response.status != 200:
-                      raise RuntimeError(f'HTTP {response.status}')
+              request=urllib.request.Request(url,headers={'User-Agent':'por-derecho-operational-identity-verifier/2'})
+              with urllib.request.urlopen(request,timeout=30) as response:
+                  body=response.read().decode('utf-8',errors='replace')
+                  if response.status!=200: raise RuntimeError(f'HTTP {response.status}')
                   return body
-
-          failures = []
-          for route, markers in checks:
-              url = base + route
-              last = None
+          failures=[]
+          for route,markers in checks:
+              url=base+route; last=None
               for _ in range(12):
                   try:
-                      body = fetch(url)
-                      missing = [marker for marker in markers if marker not in body]
+                      body=fetch(url); missing=[m for m in markers if m not in body]
                       if not missing:
-                          print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers')
-                          break
-                      last = f'missing markers {missing}'
-                  except Exception as exc:
-                      last = str(exc)
+                          print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers'); break
+                      last=f'missing markers {missing}'
+                  except Exception as exc: last=str(exc)
                   time.sleep(10)
-              else:
-                  failures.append(f'{url}: {last}')
-          if failures:
-              raise SystemExit('LIVE VERIFICATION FAILED\n - ' + '\n - '.join(failures))
+              else: failures.append(f'{url}: {last}')
+          if failures: raise SystemExit('LIVE VERIFICATION FAILED\n - '+'\n - '.join(failures))
 
       - name: Upload screenshots and metrics
         if: always()
@@ -157,11 +154,11 @@ jobs:
             echo "- Event: $GITHUB_EVENT_NAME"
             echo "- SHA: $GITHUB_SHA"
             echo '- Registry: `PD-SP-IDENTITY-REGISTRY-001`'
-            echo '- Operational control: `PD-SP-IDENTITY-OPS-001`'
-            echo '- Tracker: Issue #995'
+            echo '- Expanded total: `188` identities'
+            echo '- Spanish professional control: `PD-SP-SPANISH-PROFESSIONAL-REGISTER-001`'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Referential integrity, JavaScript syntax and bilingual desktop/mobile rendering were tested before merge.'
             else
-              echo '- Public Spanish/English pages, JSON controls, JavaScript, stylesheet, sitemap and robots discovery were verified by exact markers.'
+              echo '- Public bilingual registry, integration assets and discovery surfaces were verified by exact markers.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
