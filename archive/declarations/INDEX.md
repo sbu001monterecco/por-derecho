@@ -18,6 +18,11 @@ Registro maestro de declaraciones conservadas en `archive/declarations/`.
 | 008 | 2026-08-22 | Gil Marer | Atribución textual; autorización para identificar a Garrigues y solicitar su testimonio; posición de causa raíz sobre la operación de 2008 y el perímetro asociado, en actos concretos, a Montelanza, S.L. y propietarios vinculados a Molina; límites de prueba y voz | REGISTRADA — confirmación directa escrita; no firmada; 009 controla cualquier formulación incompatible sobre nulidad, llaves, Pamanil y AEAT; recuerdo, incumplimiento y causalidad sujetos a prueba/decisión | [`008_GIL_TEXT_ATTRIBUTION_GARRIGUES_WITNESS_MONTELANZA_MOLINA_ROOT_CAUSE_20260822.md`](./008_GIL_TEXT_ATTRIBUTION_GARRIGUES_WITNESS_MONTELANZA_MOLINA_ROOT_CAUSE_20260822.md) |
 | 009 | 2026-08-22 | Gil Marer | Acusación rectora respecto de Pamanil; cadena expresa `propietarios → Comunidad de Propietarios actuando válidamente → CEXP`; nulidad total *ab initio* del contrato Pink; corrección sobre llaves ante el documento de 22/05/2017; procedencia AEAT e identidad del interlocutor masculino | REGISTRADA — atribución directa escrita; no firmada; «todos los propietarios» no se utiliza como unanimidad documental; acusaciones penales, identidad, nulidad, conocimiento e intención pendientes de prueba/decisión | [`009_GIL_PAMANIL_AEAT_PINK_NULLITY_KEYS_CONTROLLING_CLARIFICATION_20260822.md`](./009_GIL_PAMANIL_AEAT_PINK_NULLITY_KEYS_CONTROLLING_CLARIFICATION_20260822.md) |
 | 010 | 2026-08-22 | Gil Marer | Explicación contextual de presión sobre la declarante reservada sin incapacidad general; responsabilidad separada de Gil; intención no ejecutiva de incorporarse/sustituir en la administración de Pink; nulidad total y posibles objetantes; auditoría de neutralidad AEAT; digitalización pública controlada de comunicaciones y actas | REGISTRADA — atribución directa escrita; no firmada ni jurada; no produce nombramiento o cese societario; presión, nulidad, conflictos y acusaciones sujetos a prueba/decisión | [`010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md`](./010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md) |
+| 011 | 2026-08-25 | Testigo del perímetro de Gil Marer — identidad reservada | Campanario, operación 2008, juntas 2011, Pamanil/Pamalexsha, Prieto Puente, López Noriega, Millan and Miners y perímetro Cogolludo/Noalpa/Santa Lucia | REGISTRADA — derivada de notas de voz/dictado transcrito; no firmada, no jurada y no ratificada palabra por palabra; matriz de corrección y aclaración obligatoria | [`011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md`](./011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md) |
+
+## Control obligatorio de voz y aclaraciones
+
+Toda entrada derivada de audio, dictado o transcripción aplica el [`Protocolo unitario de declaraciones de voz a texto`](./VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md). Para las voces de Gil y de la declarante reservada, la cola actual es [`GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md`](./GIL_RESERVED_DECLARANT_VOICE_STATEMENT_CLARIFICATION_QUEUE_25AUG2026.md). La atribución de un texto no autentica la voz y ninguna persona adopta automáticamente las palabras de otra.
 
 ## Distinción LPAM obligatoria
 
@@ -39,7 +44,7 @@ Cuando proceda, cada entrada o declaración deberá registrar:
 
 ## Regla de numeración
 
-La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. Después de las entradas anteriores, la siguiente declaración disponible es **011**, salvo que otra entrada se incorpore antes.
+La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. Después de las entradas anteriores, la siguiente declaración disponible es **012**, salvo que otra entrada se incorpore antes.
 
 ## Declaraciones accionables
 

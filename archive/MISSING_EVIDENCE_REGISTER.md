@@ -105,3 +105,7 @@ When resolved, record the primary source and propagate the result to every page/
 CAM / 7-Jun-2018 instruction, provider/key, AC-knowledge, judge-by-act, identity and accounting demands continue in `MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md` under collision-safe IDs `ME-CAM7J-001` onward.
 
 Active-estate and related source-completion subrequests continue in `SUN_PARK_ACTIVE_ESTATE_2018_2021_EIGHT_SOURCE_SUPPLEMENT_23AUG2026.md` and `SUN_PARK_28_UPLOAD_SOURCE_DIGITISATION_AND_PUBLICATION_CONTROL_23AUG2026.md` under collision-safe IDs `ME-PDFSCAN-001`–`031`. They are finite production steps within this canonical queue, not a second general missing-evidence register.
+
+## Namespaced continuation — 25 August 2026
+
+Private-mailbox acquisition, voice-source authentication/adoption and named-person/entity OSINT closure continue in `MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md` under collision-safe IDs `ME-MAIL-RDM-001`, `ME-VTT-001`–`003` and `ME-OSINT-001`. The 2,413-message corporate mirror is a partial discovery corpus, not a complete acquisition of the private mailbox.

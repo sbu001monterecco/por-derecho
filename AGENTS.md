@@ -36,6 +36,8 @@ The public identity is **Laura Patricia Acosta Matos**. Do not use “Laura Isab
 - The controlled project-side Spanish-company set is **Luchy Playa Blanca, S.L.U.**, **Matkator, S.L.U.**, **Pink Canary Services, S.L.U.** (formerly **Monterecco Sun Park, S.L.U.**) and **Hava Vida Travel & Tourism, S.L.U.** Never conflate Spanish Monterecco/Pink with UK Monterecco/Aweswell; treat `HAVAVIDA`/`Habavida` only as source/search aliases unless quoting a source.
 - A different spelling or entity-form suffix may be retained only as an expressly labelled source literal. Do not silently replace historical wording, and do not promote a source literal into the canonical narrative name.
 - Do not publish raw private email bodies, message IDs, unnecessary personal identifiers, privileged advice, unredacted protected records, private tax/fee ledgers, unsent correspondence or live legal strategy.
+- For every audio, voice note, dictation or derived transcript, apply `archive/declarations/VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`: keep native source, transcript versions, speaker attribution, personal adoption and truth assessment separate. Do not stitch Gil Marer, the reserved declarant or another person into a joint statement without each person's separate adoption of the exact text.
+- For every named-person or entity relationship, apply `archive/OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md`: use exact names, dated capacities and direct sources; record homonym and finite-search limits; and never transfer knowledge, intent, control or liability through association.
 
 ## 5. Required change process
 
@@ -143,6 +145,12 @@ opaque project source IDs, route URLs and aggregate occurrence counts when the
 task authorises publication. Private locators and native evidence remain in an
 access-controlled source system. A future thread should re-query that system;
 it must not reconstruct private evidence from public Git history or chat memory.
+
+A private mailbox may be acquired only through the account holder's authorised
+official export or connector access. Never request a password, expose the
+address, or describe a mirrored subset as the complete mailbox. Apply
+`archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md`
+to the reserved declarant's private-mail source.
 
 Legacy public material that may breach this boundary is remediation debt. Record
 and repair it deliberately, preserving necessary private evidential copies and

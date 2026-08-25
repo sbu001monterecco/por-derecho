@@ -18,6 +18,21 @@ Yo, **[NOMBRE]**, formulo esta declaración para dejar constancia ordenada y fie
 
 **Estado de adopción:** [REVISADA PERSONALMENTE / DERIVADA DE FUENTE Y NO RATIFICADA SEPARADAMENTE / OTRO].
 
+### 1.1 Control de voz, dictado o transcripción, si aplica
+
+- **Source ID público seguro / localizador privado:** [ID / REFERENCIA PRIVADA]
+- **Aplicación, cuenta/custodio e hilo de origen:** [REFERENCIA PRIVADA]
+- **Fecha/hora/zona de creación, recepción y exportación:** [DATOS]
+- **Segmentos y orden:** [NÚMERO / SECUENCIA / CORTES O FALTANTES]
+- **Fuente nativa V0:** [TIPO / DURACIÓN / BYTES / SHA-256 / PENDIENTE]
+- **Versión utilizada:** V1 literal / V2 trabajo / V3 revisada / V4 firmada-presentada
+- **Hablante por segmento y grado:** S0 / S1 / S2 / S3 / S4, con base concreta
+- **Método de transcripción y revisores:** [AUTOMÁTICO / HUMANO / MIXTO]
+- **Pausas, solapamientos, ininteligibles o ediciones:** [DETALLE]
+- **Adopción exacta por el declarante:** [NINGUNA / PARCIAL / COMPLETA; FECHA Y MEDIO]
+
+Aplicar `VOICE_TO_TEXT_STATEMENT_OF_FACT_AND_TRUTH_PROTOCOL_25AUG2026.md`. La atribución de texto, cuenta o participante no equivale a autenticación biométrica ni prueba la veracidad material. Si intervienen varias personas, cada voz y adopción se registra por separado.
+
 Distingo expresamente entre:
 
 - hechos que conozco por percepción o participación personal directa;
@@ -76,6 +91,14 @@ No inventar certeza. No detener por ello toda la declaración: registrar respons
 |---|---|---|---|---|
 | [Documento] | [fecha] | [fuente] | [alcance] | encontrado / pendiente / parcial |
 
+### 7.1 Matriz de proposiciones, contradicciones y aclaraciones
+
+| ID | Proposición | Clase P1–P8 | Fuente/segmento | Corroboración | Prueba contraria o límite | Aclaración / estado |
+|---|---|---|---|---|---|---|
+| [ID] | [texto preciso] | [P1–P8] | [fuente] | [fuente] | [fuente/explicación] | [cerrada / REQUIERE ACLARACIÓN] |
+
+Las preguntas se dirigirán por separado a cada declarante. Una respuesta o ratificación de otra persona no sustituye la del hablante atribuido.
+
 ## 8. Uso de esta versión
 
 Esta versión puede utilizarse como [RELATO FECHADO / GUÍA DE INVESTIGACIÓN / COMUNICACIÓN INSTITUCIONAL / ÍNDICE DOCUMENTAL / OTRO]. Su estado debe describirse como **[ESTADO]**. No se afirmará que está firmada o ratificada salvo que exista prueba de ello.
@@ -104,6 +127,9 @@ Firma, si se realiza: ______________________________
 
 - Fuente personal/documental: [IDENTIFICAR]
 - Archivo(s) fuente y hash(es): [PENDIENTE / REFERENCIA PRIVADA]
+- Capas V0–V4 preservadas: [DETALLE / PENDIENTE / NO APLICA]
+- Grado S0–S4 por segmento material: [DETALLE / PENDIENTE / NO APLICA]
+- Tabla de correcciones entre versiones: [REFERENCIA / NO APLICA]
 - Estado de revisión/adopción: [PENDIENTE]
 - Nombre del archivo firmado, si existe: [NO EXISTE / PENDIENTE]
 - SHA-256 de la versión firmada: [NO APLICA / PENDIENTE]
@@ -111,3 +137,5 @@ Firma, si se realiza: ______________________________
 - REGAGE/RedSARA: [PENDIENTE / NO APLICA]
 - Destinatario institucional: [PENDIENTE / NO APLICA]
 - Declaración que suplementa/corrige: [NO APLICA / REFERENCIA]
+- Cola de aclaraciones y contradicciones: [REFERENCIA / NINGUNA]
+- Revisión de privacidad/privilegio y derecho de respuesta: [FECHA / ESTADO]
