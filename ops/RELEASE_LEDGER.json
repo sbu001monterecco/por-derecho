@@ -1,0 +1,51 @@
+{
+  "schema": "por-derecho.operational-truth.release-ledger.v1",
+  "record_type": "APPEND_ONLY_RELEASE_LEDGER",
+  "control_date": "2026-08-26",
+  "append_only": true,
+  "coverage": "Seeded with the controlling historical rollback anchor and the latest observed deployment. Earlier release backfill remains open.",
+  "ordering": "Records are chronological by deployed_at or observed_at. Existing release_id entries may be corrected only through an explicit correction object; they must not be silently removed or rewritten.",
+  "releases": [
+    {
+      "release_id": "five-actor-preservation-guard-20260824-pr922",
+      "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
+      "source_tree_sha": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
+      "pull_request": 922,
+      "state": "LIVE_VERIFIED",
+      "website_content_changed": true,
+      "current_at_observation": false,
+      "rollback_eligible": true,
+      "deployed_at": "2026-08-24T16:27:17.010Z",
+      "pages_run_id": 32750603024,
+      "live_verification_run_id": 32750605646,
+      "scope": "Five-private-actor visibility and separate Insolvency Administrator/Magistrate-Judge preservation guard.",
+      "evidence": [
+        "ops/LAST_KNOWN_GOOD.json",
+        "publication-manifests/five-actor-accountability-preservation-20260824.json",
+        "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md"
+      ]
+    },
+    {
+      "release_id": "priority-programme-baseline-clarification-20260825-pr1029",
+      "source_sha": "2b4af225818940a6e83136e76cdc246a056096a6",
+      "source_tree_sha": "0cc83b4b117882e5a4acc5a2b49450170072d436",
+      "pull_request": 1029,
+      "state": "DEPLOYED_BUILD_SUCCESS",
+      "website_content_changed": false,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "merged_at": "2026-08-25T23:16:35Z",
+      "deployed_at": "2026-08-25T23:17:10Z",
+      "pages_run_id": 32910036643,
+      "live_verification_run_id": null,
+      "scope": "Clarified the priority-programme drafting, reconciliation and final-merge baselines; PR #1026 remains in ancestry. No task, website or external-action scope changed.",
+      "evidence": [
+        "ops/PRODUCTION_STATUS.json",
+        "PRIORITY_ACTIONS_START_HERE.md",
+        "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
+      ],
+      "limits": "A successful Pages deployment is recorded; exact route-content verification for this SHA was not separately recorded."
+    }
+  ],
+  "corrections": []
+}
