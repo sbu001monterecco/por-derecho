@@ -1,0 +1,56 @@
+{
+  "publication_id": "PRESCRIPTION-CADUCITY-RECOVERY-20260826",
+  "owner": "Por Derecho / Project Sun Rock",
+  "current_state": "REMOTE_SOURCE",
+  "control_date": "2026-08-26",
+  "publication_type": "bilingual dedicated legal/recovery dossier plus cross-site preservation module",
+  "controlling_proposition": {
+    "es": "No hay un único reloj: prescripción penal, prescripción civil, caducidad, responsabilidad del administrador concursal, responsabilidad patrimonial, daños, restitución y cautelares deben analizarse por acción, titular, demandado, trigger y remedio.",
+    "en": "There is no single clock: criminal prescription, civil limitation, caducity, insolvency-administrator liability, State liability, damages, restitution and interim relief must be analysed by claim, right-holder, defendant, trigger and remedy."
+  },
+  "expected_routes": {
+    "es": ["es/prescripcion-caducidad-danos-medidas-cautelares/index.html"],
+    "en": ["en/limitation-prescription-damages-interim-relief/index.html"]
+  },
+  "expected_source_files": [
+    "archive/PRESCRIPTION_CADUCITY_CRIMINAL_CIVIL_DAMAGES_PRESERVATION_CONTROL_26AUG2026.md",
+    "assets/data/prescription-caducity-recovery-v1.json",
+    "assets/prescription-caducity-recovery-20260826.js",
+    "assets/site-pre-intervencion-highlight-20260820.js",
+    "sitemap-prescription-recovery.xml",
+    "robots.txt"
+  ],
+  "legal_controls": {
+    "criminal_prescription": "CP arts. 131-132. Court-directed proceedings against a sufficiently identified person interrupt under the statutory requirements; a complaint/querella filed before a judicial body can suspend computation for up to six months pending the qualifying judicial resolution. Ordinary prosecutor/police/admin reporting is not described as automatic art.132 interruption.",
+    "civil_prescription": "CC arts. 1964, 1968, 1969 and 1973, with same-facts criminal/civil Supreme Court doctrine applied only where the legal bridge exists.",
+    "caducity": "Article 1535, article 1524, LPH art.18 and other strict periods remain separate from prescription; criminal proceedings do not automatically freeze or revive them.",
+    "ac_liability": "Historical Ley Concursal art.36 / current TRLC arts.94-98 require act-, claimant-, harm- and cessation-specific analysis rather than one global AC expiry date.",
+    "state_liability": "LOPJ arts.292-293 judicial-error / abnormal-functioning routes have separate predicates and special periods and are not merged with personal-criminal hypotheses.",
+    "recovery": "CP arts.109-112, 121-122 and civil/insolvency/State routes are preserved as distinct restitution/damages bases with no double counting.",
+    "interim_relief": "LECrim arts.589 and 764, CP art.127 octies, LEC arts.721/727/728 and LPH art.18.4 are treated as proportionate asset/evidence/value preservation mechanisms, not automatic consequences of an allegation."
+  },
+  "public_prohibitions": [
+    "A Fiscalía complaint automatically stops criminal prescription.",
+    "A criminal case freezes every civil deadline.",
+    "Continuing economic harm proves a continuing/permanent offence.",
+    "All retracto/tanteo rights remain alive because criminal proceedings exist.",
+    "Every insolvency-administrator act has one limitation date.",
+    "A criminal allegation automatically freezes CAM/HNT/MYND assets.",
+    "The whole current hotel value is automatically recoverable on top of every other damages head."
+  ],
+  "p0": [
+    "Private claim-by-claim limitation/caducity ledger",
+    "Criminal judicialisation ledger under CP art.132",
+    "Civil interruption ledger under CC art.1973",
+    "Notification/Registry/demand/finality Day-Zero evidence",
+    "Current counsel validation of each short caducity route",
+    "AC liability clock by act, claimant, harm and cessation status",
+    "LOPJ judicial-error / abnormal-functioning clock map",
+    "Interim-measures matrix for assets, title, income, evidence and traceable value",
+    "No-double-counting quantitative damages denominator"
+  ],
+  "live_verification": {
+    "status": "NOT_YET_CLAIMED",
+    "note": "Repository/source state is distinct from merge, GitHub Pages deployment and independent public-edge verification."
+  }
+}
