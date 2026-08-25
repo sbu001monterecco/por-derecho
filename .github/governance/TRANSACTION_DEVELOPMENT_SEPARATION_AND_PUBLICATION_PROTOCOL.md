@@ -86,17 +86,50 @@ If one condition is missing, keep the item in T or X and do not cross-link it.
 
 ## Communications and meetings
 
+- Use a verified corporate email address as the primary channel for substantive
+  transaction-development communications, document exchange, NDA negotiation,
+  questions, representations, decisions, instructions and follow-up. Preserve
+  the corporate email thread as the controlling communications record.
+- LinkedIn, WhatsApp, SMS and similar personal or social channels may be used
+  only for a minimal acknowledgement, introduction or routing message when
+  reasonably necessary. Redirect the exchange to verified corporate email and
+  confirm by email any material point first received through another channel.
+  Do not negotiate, disclose confidential information, accept instructions or
+  record a material agreement solely through a social or messaging platform.
 - Keep pre-NDA exchanges to administrative matters and the minimum high-level
   information needed to establish prima facie mandate fit.
 - Disclose asset identity, ownership, operating structure, transaction history,
   control route, legal issues, financial information and supporting documents
   only after confidentiality is executed and the receiving vehicle, recipients
   and onward-disclosure perimeter are confirmed.
-- Prefer a written scheduling trail and a video meeting with a generated meeting
-  link. Do not supply or infer a telephone number merely because a counterparty
-  requests a call.
+- Do not conduct a substantive transaction call through an unidentified or
+  unverified telephone number, an unscheduled inbound telephone call, WhatsApp,
+  LinkedIn audio/video or another channel that lacks an adequate corporate
+  attendance and record trail. Do not supply or infer a telephone number merely
+  because a counterparty requests a call.
+- Arrange substantive calls through a corporate Google Calendar invitation with
+  a generated Google Meet link. The invitation must identify the meeting
+  purpose, date and time zone, invited attendees, their known capacities, the
+  applicable entity/vehicle where confirmed, the confidentiality status and a
+  concise agenda.
 - Create a diary invitation only after the attendee identity, email address,
   time zone and time have been resolved or expressly accepted.
+- Use Google Meet transcription for the substantive discussion where the
+  connected account and meeting configuration support it. Before substantive
+  discussion begins, identify everyone present, confirm their capacities and
+  give clear notice that a transcript will be created and preserved. Obtain any
+  consent required by applicable law, policy or the meeting platform. If a
+  transcript cannot lawfully or technically be created, do not proceed with the
+  substantive call unless the user expressly approves a documented alternative.
+- Preserve privately the native calendar invitation and updates, attendee list,
+  transcript, recording or notes locator where applicable, and the related
+  corporate email thread. After the meeting, send a concise corporate-email
+  summary of material points, decisions, reservations, documents requested,
+  owners and deadlines, inviting prompt correction of any inaccuracy.
+- Treat the transcript as a contemporaneous business record, not an infallible
+  verbatim source. Verify material quotations, names, numbers and commitments
+  against the audio/recording where lawfully available or by participant
+  confirmation before relying on them externally.
 - A willingness to meet proves no investment approval, commitment, mandate,
   conflict clearance, NDA acceptance or merits view.
 
