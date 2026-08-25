@@ -1,11 +1,12 @@
 {
   "publication_id": "PRESCRIPTION-CADUCITY-RECOVERY-20260826",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "PR_OPEN",
+  "current_state": "MERGED",
   "control_date": "2026-08-26",
   "publication_type": "bilingual dedicated legal/recovery dossier plus cross-site preservation module",
   "controlling_pr": 1030,
   "superseded_pr": 1028,
+  "merge_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
   "controlling_proposition": {
     "es": "No hay un único reloj: prescripción penal, prescripción civil, caducidad, responsabilidad del administrador concursal, responsabilidad patrimonial, daños, restitución y cautelares deben analizarse por acción, titular, demandado, trigger y remedio.",
     "en": "There is no single clock: criminal prescription, civil limitation, caducity, insolvency-administrator liability, State liability, damages, restitution and interim relief must be analysed by claim, right-holder, defendant, trigger and remedy."
@@ -31,6 +32,13 @@
     "recovery": "CP arts.109-112, 121-122 and civil/insolvency/State routes are preserved as distinct restitution/damages bases with no double counting.",
     "interim_relief": "LECrim arts.589 and 764, CP art.127 octies, LEC arts.721/727/728 and LPH art.18.4 are treated as proportionate asset/evidence/value preservation mechanisms, not automatic consequences of an allegation."
   },
+  "validation": {
+    "publication_integrity": "PASS — PR 1030 final head run 32910144301",
+    "off_github_preservation": "PASS — PR 1030 final head run 32910144405",
+    "audience_experience": "PASS — PR 1030 final head run 32910144412",
+    "syntax_json_sitemap_desktop_mobile": "PASS — unitary public shell run 32910144292",
+    "current_main_safe": "PASS — stale PR 1028 was closed rather than merged; PR 1030 was rebuilt against current main without protected-path deletions"
+  },
   "public_prohibitions": [
     "A Fiscalía complaint automatically stops criminal prescription.",
     "A criminal case freezes every civil deadline.",
@@ -53,6 +61,6 @@
   ],
   "live_verification": {
     "status": "NOT_YET_CLAIMED",
-    "note": "Repository/source state is distinct from merge, GitHub Pages deployment and independent public-edge verification."
+    "note": "Independent public-edge search/readback attempted immediately after merge but the new routes were not yet indexed/resolvable through the available verifier. MERGED and browser-rendered are verified; public-edge LIVE_VERIFIED remains separate."
   }
 }
