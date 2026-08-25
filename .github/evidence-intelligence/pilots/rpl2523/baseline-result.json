@@ -1,0 +1,56 @@
+{
+  "schema": "por-derecho.retrieval-baseline.v1",
+  "control_date": "2026-08-25",
+  "pilot_id": "PD-SP-RUN-0001",
+  "proceeding_id": "PD-SP-R-0002",
+  "implementation": {
+    "pull_request": 990,
+    "merge_sha": "d5e9fd8c65c30a841827dd0ee5487ddc3718bf37",
+    "workflow_run_id": 32868937072,
+    "workflow_conclusion": "success"
+  },
+  "retrieval": {
+    "method": [
+      "mandatory proceeding filter",
+      "exact lexical retrieval",
+      "BM25-style scoring",
+      "controlled synonym expansion",
+      "structured metadata boosts",
+      "source-priority reranking"
+    ],
+    "embeddings": "DEFERRED",
+    "controlled_source_count": 3,
+    "controlled_section_count": 26,
+    "evaluation_count": 7,
+    "pass_count": 7,
+    "fail_count": 0,
+    "status": "PASS"
+  },
+  "custody": {
+    "manifest_id": "PD-SP-CUST-0001",
+    "native_document_count": 4,
+    "private_manifest_present": true,
+    "separate_manifest_checksum_present": true,
+    "last_private_readback": "2026-08-25",
+    "private_readback_cadence_days": 30,
+    "not_shared_at_last_readback": true,
+    "provider_locators_published": false
+  },
+  "durability": {
+    "workflow_artifact_is_canonical": false,
+    "workflow_artifact_retention_days": 30,
+    "canonical_reproducibility_sources": [
+      ".github/evidence-intelligence/pilots/rpl2523/corpus.json",
+      ".github/evidence-intelligence/pilots/rpl2523/queries.json",
+      ".github/evidence-intelligence/scripts/run_rpl2523_retrieval_pilot.py",
+      ".github/evidence-intelligence/scripts/validate_identity_compatibility.py"
+    ]
+  },
+  "limitations": [
+    "Hash identity does not establish truth, authorship, admissibility, certification or official-file inclusion.",
+    "The principal LexNET receipt for Gil Marer's appeal remains unlocated.",
+    "The separately hashed signed LexNET principal for the joint Pink/Patricia appeal has not been acquired as a separately verified native object.",
+    "The private custody pilot covers four documents, not the complete RPL file or the complete Por Derecho corpus.",
+    "A passing retrieval baseline does not establish any legal proposition or merits outcome."
+  ]
+}
