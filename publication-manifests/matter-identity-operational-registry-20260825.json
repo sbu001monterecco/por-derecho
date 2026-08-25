@@ -8,6 +8,7 @@
   "package": "matter-identity-operational-registry",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
   "operational_control_id": "PD-SP-IDENTITY-OPS-001",
+  "merge_sha": "30887f6db66c31e55aaef43ac5cc355c0d647e3f",
   "publication_merge_sha": "30887f6db66c31e55aaef43ac5cc355c0d647e3f",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
   "linked_execution_issue": "https://github.com/sbu001monterecco/por-derecho/issues/988",
@@ -21,6 +22,15 @@
     "https://sbu001monterecco.github.io/por-derecho/sitemap-matter-identity-operational.xml",
     "https://sbu001monterecco.github.io/por-derecho/robots.txt"
   ],
+  "validation": {
+    "evidence": [
+      "Operational-registry referential-integrity validation passed for 159 immutable IDs, 15 institutional actions, 25 identity-linked graph nodes and 37 graph edges, with no orphaned action or graph references.",
+      "The exact-legal-identity queue contains 14 controlled records and the immutable identity-action range PD-SP-ID-ACT-0001 through PD-SP-ID-ACT-0009 is complete.",
+      "Spanish and English desktop/mobile Playwright tests passed: all 159 rows loaded; all four operational queues populated; the unresolved filter returned exactly 14 records; P0 filtering and immutable-ID search/dialog passed; no console errors or mobile overflow were found.",
+      "GitHub Pages deployment run 32873812083, run number 1093, completed successfully against publication merge SHA 30887f6db66c31e55aaef43ac5cc355c0d647e3f.",
+      "Independent public exact-marker verification run 32873813105, job 97886869676, completed successfully for both bilingual registry pages, the operational-control JSON, canonical registry index, application JavaScript, stylesheet, sitemap and robots declaration."
+    ]
+  },
   "deployment_evidence": {
     "pages_run_id": 32873812083,
     "pages_run_number": 1093,
