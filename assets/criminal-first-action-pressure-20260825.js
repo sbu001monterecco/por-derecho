@@ -103,6 +103,13 @@
     if (document.querySelector('[data-criminal-first-action-pressure]')) return;
     const main = document.querySelector('main');
     if (!main) return;
+    if (fullHome) {
+      const lockedFirstRead = main.querySelector(':scope > section[data-pd-five-ac]');
+      if (lockedFirstRead) {
+        lockedFirstRead.insertAdjacentElement('afterend', section);
+        return;
+      }
+    }
     const opening = main.querySelector(':scope > section:first-of-type');
     if (opening) opening.insertAdjacentElement('afterend', section);
     else main.prepend(section);
