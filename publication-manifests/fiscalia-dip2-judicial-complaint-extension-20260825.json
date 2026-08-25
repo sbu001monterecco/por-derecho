@@ -109,6 +109,7 @@
     "status": "LOCAL_GREEN_PENDING_REMOTE_CI_AND_LIVE_READBACK",
     "evidence": [
       "repository preservation, publication integrity, audience experience, mission-critical, operational, sent-email-continuity and insolvency-perimeter gates passed locally",
+      "public bidder name-only and Concurso 36/2012 primary-autos redigest gates passed after the actor-linkage terminology was normalised",
       "visual-asset registry and rendered San Telmo attribution gates passed",
       "both public PDFs and both transcriptions reproduced byte for byte on a clean temporary rebuild",
       "all 45 public PDF pages rendered successfully; contact-sheet and signature-page inspection passed",
