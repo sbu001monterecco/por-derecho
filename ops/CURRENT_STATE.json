@@ -1,130 +1,88 @@
 {
-  "schema": "por-derecho.current-state.v1",
-  "as_of": "2026-08-24",
-  "purpose": "Single current routing layer. Specialist source controls remain authoritative for proposition-level detail.",
-  "repository": {
-    "baseline_main_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
-    "baseline_release": "FIVE_ACTOR_PRESERVATION_GUARD_PR_922_LIVE_VERIFIED",
-    "calificacion_governance_release": "LIVE_VERIFIED",
-    "branch": "main contains PR #922 final preservation guard and its post-live continuity record",
-    "legacy_status_notice": "ops/PRODUCTION_STATUS.json and ops/LAST_KNOWN_GOOD.json record the exact live PR #922 preservation guard. Both homepages, fourteen canonical direct routes and the preserved legacy Spanish court route passed the final readback; the originating thread is deletion-safe with open governance items.",
-    "rollback_rule": "Use a normal revert PR to a positively verified release; never force-push main."
+  "schema": "por-derecho.operational-truth.current-state.v2",
+  "record_type": "CURRENT_STATE_CONTRACT_WITH_LAST_OBSERVATION",
+  "control_date": "2026-08-26",
+  "purpose": "Separate dynamic repository truth, observed deployment truth and historical rollback anchors. Specialist source controls remain authoritative for proposition-level detail.",
+  "authority": {
+    "current_repository_truth": "Resolve refs/heads/main through GitHub or local git at execution time.",
+    "current_deployment_truth": "Resolve the latest successful GitHub Pages run and, where material, verify the public host.",
+    "historical_rollback_truth": "Use ops/LAST_KNOWN_GOOD.json and ops/RELEASE_LEDGER.json; never treat a rollback anchor as current merely because it was once live-verified."
   },
-  "website": {
-    "host": "https://sbu001monterecco.github.io/por-derecho/",
-    "latest_verified_public_packages_at_baseline": [
-      "Calificacion criminal-misuse thesis PR 894 plus live verification PR 896",
-      "ACTUA-GESVALT comparison PR 897 plus live verification PR 898",
-      "Calificacion RPL 2523 evidence governance PR 899; exact merge SHA and eight critical HTML routes live verified",
-      "Five-private-actor plus separate Insolvency Administrator and Magistrate-Judge preservation guard PR 922; exact merge SHA, Pages deployment and 757 settled-DOM assertions across all seventeen protected surfaces live verified"
-    ],
-    "canonical_calificacion_routes": [
-      "es/tesis-uso-criminal-procedimiento-calificacion/",
-      "en/insolvency-classification-criminal-misuse-thesis/",
-      "es/concurso-36-2012-ap-seccion-4/",
-      "en/insolvency-36-2012-ap-section-4/",
-      "es/calificacion-rpl-2523-mapa-prueba/",
-      "en/calificacion-rpl-2523-evidence-map/"
-    ]
+  "freshness_policy": {
+    "static_observation_is_not_current_truth": true,
+    "max_main_ahead_commits_before_refresh": 10,
+    "max_observation_age_hours_before_refresh": 24,
+    "max_open_pr_count_drift_before_refresh": 5,
+    "scheduled_live_check": ".github/workflows/validate-operational-truth.yml",
+    "runtime_generator": "scripts/generate_operational_truth.py",
+    "structural_validator": "scripts/validate_operational_truth.py"
   },
-  "five_actor_preservation": {
-    "state": "DELETION_SAFE_WITH_OPEN_GOVERNANCE_ITEMS",
-    "source_repair_pr": 919,
-    "source_repair_sha": "a4f8c461058216ed3ec0182896fca2c4bc3c8d9e",
-    "source_repair_pages_run": "32726738047",
-    "source_repair_verified_at": "2026-08-24T12:23:03Z",
-    "final_guard_pr": 922,
-    "final_guard_head_sha": "850ee0909f6eb5914d2ced3a366d5576b28b6768",
-    "final_guard_merge_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
-    "final_guard_tree_sha": "af1d15bf6e8418767fdeea80082fbdb15dc2d692",
-    "final_guard_pages_run": "32750603024",
-    "final_guard_live_verification_run": "32750605646",
-    "final_guard_verified_at": "2026-08-24T16:27:17.010Z",
-    "protected_surface_result": "17/17 PASS; 757 rendered assertions",
-    "private_actors": [
-      "Francisco Mario Matos Matas",
-      "Antonio Cogolludo Rojas",
-      "Shaila María Cogolludo Ramos",
-      "José Daniel Acosta Matos",
-      "Laura Patricia Acosta Matos"
-    ],
-    "institutional_roles": [
-      "Francisco de Borja Rodríguez-Batllori Laffitte — court-appointed and judicial-adjacent Insolvency Administrator",
-      "Alberto López Villarrubia — Magistrate-Judge"
-    ],
-    "contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
-    "manifest": "publication-manifests/five-actor-accountability-preservation-20260824.json",
-    "deletion_audit": "docs/deletion-audits/2026-08-24-five-actor-visibility-preservation-thread.md",
-    "open_improvements": "ops/FIVE_ACTOR_PRESERVATION_AND_READER_JOURNEY_BACKLOG.md"
+  "repository_observation": {
+    "repository": "sbu001monterecco/por-derecho",
+    "ref": "refs/heads/main",
+    "sha": "2b4af225818940a6e83136e76cdc246a056096a6",
+    "tree_sha": "0cc83b4b117882e5a4acc5a2b49450170072d436",
+    "commit_time": "2026-08-25T23:16:35Z",
+    "observed_at": "2026-08-25T23:18:30Z",
+    "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
+    "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
   },
-  "calificacion": {
-    "origin": "Concurso 36/2012 · Seccion de Calificacion",
-    "first_instance_decision": "Sentencia 163/2023",
-    "appeal_court": "Audiencia Provincial de Las Palmas · Seccion 4",
-    "appeal_roll": "RPL 2523/2025",
-    "instrument_count_rule": "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS",
-    "last_located_procedural_record": "Decision signed 11 May 2026 scheduling deliberation, vote and decision for 4 June 2026",
-    "later_merits_decision_located": false,
-    "service_record_located": false,
-    "finality_or_pending_remedy_certificate_located": false,
-    "inference_rule": "NOT_LOCATED_DOES_NOT_MEAN_NONEXISTENT",
-    "record_only_firewall": "The appeal is determined only on the procedurally usable RPL record, pleaded grounds, adversarial process and law; public post-record analysis belongs outside that lane unless a lawful transmission bridge is proved.",
-    "five_pillar_status": "SERIOUS_DOCUMENT_BASED_INVESTIGATIVE_THESIS_NOT_ADJUDICATED_CRIMINAL_FACT",
-    "evidence_map": "assets/data/calificacion-rpl2523-evidence-map-v1.json",
-    "controlling_source": "archive/CALIFICACION_RPL2523_EVIDENCE_ADDRESSABILITY_CONTROL_24AUG2026.md"
+  "deployment_observation": {
+    "status_file": "ops/PRODUCTION_STATUS.json",
+    "last_observed_served_sha": "2b4af225818940a6e83136e76cdc246a056096a6",
+    "last_observed_pages_run_id": 32910036643,
+    "last_observed_at": "2026-08-25T23:17:10Z",
+    "verification_level": "DEPLOYMENT_BUILD_SUCCESS"
   },
-  "cuatrecasas": {
-    "status": "SITE_WIDE_SYNC_RELEASE_24AUG2026",
-    "controlling_continuation": "archive/CUATRECASAS_PERIMETER_BILLING_EMAIL_AGENTIC_CONTINUATION_24AUG2026.md",
-    "canonical_routes": [
-      "es/cuatrecasas-sun-park/",
-      "en/cuatrecasas-sun-park/",
-      "es/ona-hotels-salida-concurso-36-2012/",
-      "en/ona-hotels-insolvency-exit-36-2012/",
-      "es/toma-control-sun-park-7-junio-2018/",
-      "en/sun-park-takeover-7-june-2018/"
-    ],
-    "billing_checkpoint": {
-      "located_issued_invoices": 22,
-      "native_invoice_face_total_eur": "327608.32",
-      "firm_2019_table_total_eur": "326608.32",
-      "unpaid_issued_eur": "136830.72",
-      "unissued_or_estimated_eur": "152424.95",
-      "scope": "2014-to-present whole client-service perimeter; legal capacities must remain separate"
+  "repository_inventory_observation": {
+    "open_pull_requests": 35,
+    "observed_at": "2026-08-25T23:18:30Z",
+    "source": "GitHub search API: repo:sbu001monterecco/por-derecho is:pr is:open",
+    "meaning": "Observation only; always re-query before triage or merge decisions."
+  },
+  "corpus": {
+    "identity_registry": {
+      "path": "assets/data/matter-identity-registry-v1.json",
+      "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+      "counts": {
+        "total": 185,
+        "PERSON": 86,
+        "ORGANISATION": 66,
+        "STRUCTURE": 10,
+        "INSTITUTION": 13,
+        "PROCEEDING": 10
+      }
     },
-    "june_2018_lock": "Stoneweg itself issued an Oferta Vinculante Condicionada after the agreed 12 June call and for the 13 June meeting. The offer stage was agreed and closed; transaction completion remained conditional. Elaia/Lagune is one documented EUR 26m route comprising reciprocal package components.",
-    "private_public_firewall": "Line-level timekeeper/disbursement ledgers, private emails, current-counsel material and unsent correspondence remain outside the public repository.",
-    "communications_campaign": {
-      "research_recipient_resolution_and_drafting_may_resume": true,
-      "transmission_authorized": false,
-      "send_gate": "Fresh approval of exact recipients, subject, text, links and attachments is mandatory."
+    "legal_professional_register": {
+      "path": "assets/data/legal-professionals-register-v1.json",
+      "register_id": "PD-SP-LEGAL-PROF-001",
+      "counts": {
+        "total": 40,
+        "current_counsel": 3,
+        "former_or_review_counsel": 31,
+        "current_procuradores": 2,
+        "former_procuradores": 4
+      }
     }
   },
-  "finite_priority_gaps": [
-    "Signed later RPL merits judgment or order",
-    "Service record",
-    "Finality or pending-remedy certification",
-    "Certified appellate docket and transmitted-record index",
-    "Exact LPB appeal and principal receipt",
-    "Gil principal filing receipt",
-    "Oppositions, cross-appeals and Fiscal appellate submissions",
-    "Admission, evidence, transmission and cure orders",
-    "Official hearing acta, certified recording and integrity/provenance record",
-    "Certified whole-file denominator for Concurso 36/2012"
-  ],
-  "open_pull_request_snapshot": {
-    "observed_at": "2026-08-24",
-    "open_count": 31,
-    "draft_count": 19,
-    "non_draft_count": 12,
-    "source": "GitHub public pulls API, first page with per_page=100",
-    "governance_rule": "Do not merge stale PRs wholesale. Rebase or compare each against current main, preserve only unique validated deltas, rerun current controls, then close or supersede explicitly."
+  "operational_controls": {
+    "deployment_status": "ops/PRODUCTION_STATUS.json",
+    "historical_rollback_anchor": "ops/LAST_KNOWN_GOOD.json",
+    "append_only_release_ledger": "ops/RELEASE_LEDGER.json",
+    "historical_snapshots": "ops/history/",
+    "mission_critical_runbook": "ops/GITHUB_MISSION_CRITICAL_RUNBOOK.md",
+    "repository_preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json"
   },
-  "authority_boundaries": {
-    "public_position": "Gil Marer / Por Derecho",
-    "does_not_speak_for_all_appellants": true,
-    "does_not_speak_for_procedural_representatives": true,
-    "email_send_authorized_by_repository_work": false,
-    "current_lawyer_names_on_new_calificacion_pages": false
-  }
+  "current_priority_sources": [
+    "docs/deletion-audits/2026-08-25-unitary-repository-website-valencia-thread-closeout.md",
+    "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md",
+    "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
+  ],
+  "boundaries": [
+    "This file does not certify that the last observation is still the current GitHub state.",
+    "A successful Pages build is not the same as route-specific public-content verification.",
+    "Historical live verification remains valid as historical evidence but does not make that SHA current.",
+    "Open pull requests are candidate deltas, not repository truth.",
+    "No case allegation, procedural status or private-source conclusion is inferred from operational metadata."
+  ]
 }
