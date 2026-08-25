@@ -1,0 +1,2 @@
+item_id,path,line_or_range,pattern_class,description_public_safe,current_public_exposure,authoritative_private_custody,custody_verified_at,classification,proposed_treatment,history_implication,requires_separate_authority,owner,state,evidence_locator_public_safe,notes
+PP-0001,REPLACE/PATH,REPLACE,provider_message_identifier,REPLACE_WITH_MINIMISED_DESCRIPTION,yes,REPLACE_PRIVATE_SYSTEM,UNKNOWN,UNREVIEWED,INVENTORY_ONLY,Deleting current file does not erase Git history,yes,UNASSIGNED,PLANNED,REPLACE,Remove this example row before use
