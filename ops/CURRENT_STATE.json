@@ -20,23 +20,23 @@
   "repository_observation": {
     "repository": "sbu001monterecco/por-derecho",
     "ref": "refs/heads/main",
-    "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
-    "tree_sha": "adb4a8c4029fc2bd1bef1184612a6969dab9ac1c",
-    "commit_time": "2026-08-25T23:21:21Z",
-    "observed_at": "2026-08-25T23:27:30Z",
+    "sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+    "tree_sha": "12a3617fd763370985124d5548190a399bd02f37",
+    "commit_time": "2026-08-25T23:28:15Z",
+    "observed_at": "2026-08-25T23:30:30Z",
     "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
     "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
   },
   "deployment_observation": {
     "status_file": "ops/PRODUCTION_STATUS.json",
-    "last_observed_served_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
-    "last_observed_pages_run_id": 32910389340,
-    "last_observed_at": "2026-08-25T23:23:02Z",
+    "last_observed_served_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+    "last_observed_pages_run_id": 32910904143,
+    "last_observed_at": "2026-08-25T23:28:46Z",
     "verification_level": "DEPLOYMENT_BUILD_SUCCESS"
   },
   "repository_inventory_observation": {
     "open_pull_requests": 36,
-    "observed_at": "2026-08-25T23:27:30Z",
+    "observed_at": "2026-08-25T23:30:30Z",
     "source": "GitHub search API: repo:sbu001monterecco/por-derecho is:pr is:open",
     "meaning": "Observation only; always re-query before triage or merge decisions."
   },
