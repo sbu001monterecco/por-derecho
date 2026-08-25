@@ -1,0 +1,44 @@
+name: Validate matter identity registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/data/matter-identity-registry-v1*.json"
+      - "assets/data/criminal-first-institutional-action-matrix-v1.json"
+      - "assets/matter-identity-registry.js"
+      - "assets/matter-identity-registry.css"
+      - "es/registro-identidad-materia/**"
+      - "en/matter-identity-registry/**"
+      - "scripts/validate_matter_identity_registry.py"
+      - ".github/workflows/validate-matter-identity-registry.yml"
+  pull_request:
+    paths:
+      - "assets/data/matter-identity-registry-v1*.json"
+      - "assets/data/criminal-first-institutional-action-matrix-v1.json"
+      - "assets/matter-identity-registry.js"
+      - "assets/matter-identity-registry.css"
+      - "es/registro-identidad-materia/**"
+      - "en/matter-identity-registry/**"
+      - "scripts/validate_matter_identity_registry.py"
+      - ".github/workflows/validate-matter-identity-registry.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate registry, routes and action references
+        run: python scripts/validate_matter_identity_registry.py
+      - name: Check browser script syntax
+        run: node --check assets/matter-identity-registry.js
