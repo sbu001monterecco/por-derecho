@@ -1,0 +1,44 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "control_date": "2026-08-25",
+  "package": "criminal-first-2011-unitary-page",
+  "status": "prepared_in_pr",
+  "canonical_control": "archive/CRIMINAL_FIRST_UNITARY_REVERSE_ENGINEERING_2011_TO_PRESENT_25AUG2026.md",
+  "graph_dataset": "assets/data/criminal-first-2011-unitary-graph-v1.json",
+  "public_routes": {
+    "es": "es/hipotesis-criminal-unitaria-2011-presente/index.html",
+    "en": "en/unitary-criminal-hypothesis-2011-present/index.html"
+  },
+  "restart_rule": "Future threads analysing alleged criminality from the 2011 Community events should begin from the canonical control and graph dataset, then re-check current repository/live-site deltas before drawing conclusions.",
+  "publication_boundaries": [
+    "Allegation is not adjudicated fact.",
+    "Campanario's pre-concurso Community/litigation role and prior insolvency practice are documented context; they do not prove a plan to cause LPB insolvency.",
+    "Campanario-Rodriguez-Batllori friendship/appointment coordination remains attributed/open unless independently corroborated.",
+    "Notice is not knowledge of falsity; knowledge opportunity is not intent; benefit is not concert.",
+    "Later CAM/Acosta Matos convergence must not be projected backwards as proof of a 2011 agreement.",
+    "Adverse and exculpatory evidence must travel with every criminal hypothesis."
+  ],
+  "visualisation": {
+    "type": "linked_svg_plus_evidence_matrices",
+    "lanes": ["verified", "attributed", "inference", "open"],
+    "open_edge": "Campanario <-> Rodriguez-Batllori",
+    "core_sequence": [
+      "2008-2010 structure",
+      "2009 Campanario Sun Park role / prior insolvency practice",
+      "2-Feb-2011 governance-litigation intervention",
+      "22-Jun-2011 debt-vote-authority mechanism",
+      "JV1260/AP89",
+      "Concurso 36/2012",
+      "2016 notice/knowledge checkpoint",
+      "2018 funded-exit/material-control sequence",
+      "CAM/Acosta Matos convergence",
+      "calificacion/current proceedings"
+    ]
+  },
+  "follow_on_propagation": [
+    "Add reciprocal links from canonical Community ACTA chronology and actor/proceeding indexes after publication.",
+    "Add material-updates entry and sitemap/discovery entries after publication.",
+    "Run live readback and link validation after Pages deployment.",
+    "Update the canonical graph when new evidence confirms, limits or refutes an edge."
+  ]
+}
