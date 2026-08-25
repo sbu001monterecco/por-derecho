@@ -180,9 +180,9 @@ def validate_public_surfaces() -> None:
         ROOT / "assets" / "matter-identity-registry.js": [
             "buildOperationalRecords",
             "P0_ROUTE_COVERAGE",
-            "matter-identity-operational-control-v1.json" if False else "data-operational-url",
+            "operationalUrl",
             "exportRecords",
-            "PD-SP-ID-ACT-",
+            "renderOperationalActions",
         ],
         ROOT / "assets" / "matter-identity-registry.css": [
             ".id-workbench",
