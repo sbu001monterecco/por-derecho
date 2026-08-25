@@ -43,9 +43,11 @@ has received or examined each evidentiary module.
 The accessible page-accounted transcription is:
 
 - `full-text/decreto-aclaracion-eg-112-2026-23ago2026-public-transcription.md`
+- `full-text/decreto-aclaracion-eg-112-2026-23ago2026-english-translation.md`
 
-The Spanish official text controls. The English public page is an analytical
-translation and does not purport to be a certified legal translation.
+The Spanish official text controls. The page-accounted English translation and
+English public page are analytical translations and do not purport to be
+certified legal translations.
 
 ## Hashes and source custody
 
@@ -56,6 +58,7 @@ The native signed source remains outside public Git history.
 | Native signed decree | `3dc2ce45dc02c30edf5b10d017d0d97b9c36351ee84b195d03e7033c3a16aa57` |
 | Public redacted PDF | `fe9111aca4aa4cc82627af6c97a8408e3ed5e3db9e0382a6e302783f281b6783` |
 | Public transcription | `edcbeb9ca68ff33b0dbd8cb4bc9442c30f63d0db1ad570c0c7d72c0222bb919a` |
+| Complete English translation | `faee0700814b3ffbe309d47c2a5a2697833fac72ad2ca21e3d6272c8e78d9ebe` |
 
 ## Redactions and validation
 
