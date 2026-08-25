@@ -70,3 +70,14 @@
   module.setAttribute('data-criminal-first-action-pressure-loader', '20260825');
   document.head.appendChild(module);
 })();
+
+/* SPANISH-PROFESSIONAL-REGISTER-INTEGRATION-20260825 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-spanish-professional-register-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('spanish-professional-registry-integration-20260825.js?v=20260825a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-spanish-professional-register-loader', '20260825');
+  document.head.appendChild(module);
+})();
