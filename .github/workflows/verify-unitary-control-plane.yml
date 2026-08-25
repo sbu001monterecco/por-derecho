@@ -1,0 +1,134 @@
+name: Verify unitary control-plane synchronization
+
+on:
+  pull_request:
+    paths:
+      - 'CURRENT_UNITARY_STATE.md'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'ops/CURRENT_STATE.json'
+      - 'ops/PRODUCTION_STATUS.json'
+      - 'ops/PR_RECONCILIATION_LEDGER.json'
+      - 'assets/data/material-updates-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'es/registro-identidad-materia/index.html'
+      - 'en/matter-identity-registry/index.html'
+      - 'es/actualizaciones/index.html'
+      - 'en/updates/index.html'
+      - 'sitemap-unitary-control-plane.xml'
+      - 'robots.txt'
+      - 'scripts/validate_unitary_control_plane.py'
+      - 'publication-manifests/unitary-control-plane-sync-20260825.json'
+      - '.github/workflows/verify-unitary-control-plane.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'CURRENT_UNITARY_STATE.md'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'ops/CURRENT_STATE.json'
+      - 'ops/PRODUCTION_STATUS.json'
+      - 'ops/PR_RECONCILIATION_LEDGER.json'
+      - 'assets/data/material-updates-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'es/registro-identidad-materia/index.html'
+      - 'en/matter-identity-registry/index.html'
+      - 'es/actualizaciones/index.html'
+      - 'en/updates/index.html'
+      - 'sitemap-unitary-control-plane.xml'
+      - 'robots.txt'
+      - 'scripts/validate_unitary_control_plane.py'
+      - 'publication-manifests/unitary-control-plane-sync-20260825.json'
+      - '.github/workflows/verify-unitary-control-plane.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unitary-control-plane-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Validate synchronized control plane
+        run: python3 scripts/validate_unitary_control_plane.py
+
+      - name: Validate JSON and XML syntax
+        run: |
+          python3 - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          for path in [
+              'ops/CURRENT_UNITARY_STATE.json',
+              'ops/CURRENT_STATE.json',
+              'ops/PRODUCTION_STATUS.json',
+              'ops/PR_RECONCILIATION_LEDGER.json',
+              'assets/data/material-updates-v1.json',
+              'publication-manifests/unitary-control-plane-sync-20260825.json',
+          ]:
+              json.loads(Path(path).read_text(encoding='utf-8'))
+          ET.parse('sitemap-unitary-control-plane.xml')
+          print('JSON/XML syntax: PASS')
+          PY
+
+      - name: Verify public exact markers
+        if: github.event_name != 'pull_request'
+        env:
+          BASE: https://sbu001monterecco.github.io/por-derecho
+        shell: python
+        run: |
+          import os, time, urllib.request
+          base=os.environ['BASE'].rstrip('/')
+          checks=[
+            ('/es/registro-identidad-materia/',['data-static-registry-counts="185-86-66-10-13-10"','data-registry-stat="TOTAL">185','Los <strong>185 IDs</strong>']),
+            ('/en/matter-identity-registry/',['data-static-registry-counts="185-86-66-10-13-10"','data-registry-stat="TOTAL">185','The <strong>185 IDs</strong>']),
+            ('/es/actualizaciones/',['Última actualización material','<strong>25 agosto 2026</strong>']),
+            ('/en/updates/',['Latest material update','<strong>25 August 2026</strong>']),
+            ('/ops/CURRENT_UNITARY_STATE.json',['PD-UNITARY-STATE-20260825-01','"total": 185','PENDING_EXACT_MARKER_READBACK_AFTER_THIS_CONTROL_PLANE_MERGES']),
+            ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','MU-20260825-CONTROL-PLANE-SYNC']),
+            ('/sitemap-unitary-control-plane.xml',['<lastmod>2026-08-25</lastmod>','registro-identidad-materia','matter-identity-registry']),
+            ('/robots.txt',['sitemap-unitary-control-plane.xml'])]
+          def fetch(url):
+            req=urllib.request.Request(url,headers={'User-Agent':'por-derecho-unitary-control-plane-verifier/1'})
+            with urllib.request.urlopen(req,timeout=30) as response:
+              if response.status!=200: raise RuntimeError(f'HTTP {response.status}')
+              return response.read().decode('utf-8',errors='replace')
+          failures=[]
+          for route,markers in checks:
+            url=base+route; last=''
+            for _ in range(12):
+              try:
+                body=fetch(url); missing=[m for m in markers if m not in body]
+                if not missing:
+                  print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers'); break
+                last=f'missing {missing}'
+              except Exception as exc: last=str(exc)
+              time.sleep(10)
+            else: failures.append(f'{url}: {last}')
+          if failures: raise SystemExit('LIVE VERIFICATION FAILED\n - '+'\n - '.join(failures))
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '## Unitary control-plane verification'
+            echo
+            echo "- Event: $GITHUB_EVENT_NAME"
+            echo "- SHA: $GITHUB_SHA"
+            echo '- Control: `PD-UNITARY-STATE-20260825-01`'
+            echo '- Identity denominator: `185 / 86 / 66 / 10 / 13 / 10`'
+            if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
+              echo '- Source parity and syntax verified; public readback is reserved for the post-merge main push.'
+            else
+              echo '- Public ES/EN identity and update routes, state JSON, updates JSON, sitemap and robots were verified by exact markers.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

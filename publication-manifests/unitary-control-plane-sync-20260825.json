@@ -1,0 +1,68 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "unitary-control-plane-sync-20260825",
+  "control_id": "PD-UNITARY-STATE-20260825-01",
+  "control_date": "2026-08-25",
+  "current_state": "PR_OPEN",
+  "status": "prepared_in_pr",
+  "owner": "Por Derecho / Project Sun Rock",
+  "source_main_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+  "purpose": "Synchronize repository, deployment, verification, identity-denominator, material-update and PR-reconciliation state without changing case merits.",
+  "expected_routes": {
+    "es": ["es/registro-identidad-materia/index.html", "es/actualizaciones/index.html"],
+    "en": ["en/matter-identity-registry/index.html", "en/updates/index.html"]
+  },
+  "assets": [
+    "CURRENT_UNITARY_STATE.md",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "ops/CURRENT_STATE.json",
+    "ops/PRODUCTION_STATUS.json",
+    "ops/PR_RECONCILIATION_LEDGER.json",
+    "assets/data/material-updates-v1.json",
+    "sitemap-unitary-control-plane.xml",
+    "scripts/validate_unitary_control_plane.py",
+    ".github/workflows/verify-unitary-control-plane.yml"
+  ],
+  "preserved_concurrent_releases": [
+    "Priority-actions programme merge f9d0a22305431eeb6405b70f3bc30e5ff5bae514 and clarification 2b4af225818940a6e83136e76cdc246a056096a6",
+    "Prescription, damages and interim-relief recovery release ae22ca42c844813ff73220614ac150cd734d572e",
+    "Prescription recovery deletion-safe closeout 64a0cdc321a9efaade59f5239f4d74729bf2d772"
+  ],
+  "changed_surfaces": [
+    "CURRENT_UNITARY_STATE.md",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "ops/CURRENT_STATE.json",
+    "ops/PRODUCTION_STATUS.json",
+    "ops/PR_RECONCILIATION_LEDGER.json",
+    "assets/data/material-updates-v1.json",
+    "es/registro-identidad-materia/index.html",
+    "en/matter-identity-registry/index.html",
+    "sitemap-unitary-control-plane.xml",
+    "robots.txt",
+    "scripts/validate_unitary_control_plane.py",
+    ".github/workflows/verify-unitary-control-plane.yml"
+  ],
+  "historical_snapshots": [
+    "archive/ops-snapshots/CURRENT_STATE_20260824.json",
+    "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json"
+  ],
+  "identity_denominator": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+  "material_update_date": "2026-08-25",
+  "publication_boundaries": [
+    "This synchronization does not create a new allegation, judicial finding, procedural outcome, claimant right or recovery quantum.",
+    "Repository main, Pages deployment and exact public readback are separate states.",
+    "Identity resolves identity only and does not transfer knowledge, intention, control, benefit, responsibility or liability.",
+    "Older state and production files are preserved byte-for-byte as historical snapshots before their public routing names are repointed.",
+    "PR #1016 is not merged stale; its unique source-graded delta is controlled for rebuild on current main.",
+    "The priority-actions, prescription-recovery and deletion-closeout controls from current main are preserved."
+  ],
+  "post_merge_verification": [
+    "Confirm Pages deployment completes against the merge SHA.",
+    "Confirm both identity pages expose 185 / 86 / 66 / 10 / 13 / 10 in source and visible DOM.",
+    "Confirm both update pages expose 25 August 2026 as the latest material date.",
+    "Confirm CURRENT_UNITARY_STATE.json, material-updates-v1.json, the new sitemap and robots declaration return HTTP 200 with exact markers.",
+    "Confirm the prescription-recovery sitemap remains declared.",
+    "Advance this manifest to LIVE_VERIFIED only after independent public readback."
+  ],
+  "next_package": "Rebuild PR #1016 owner/court-party unique delta on the post-merge current main."
+}

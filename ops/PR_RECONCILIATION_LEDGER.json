@@ -1,0 +1,114 @@
+{
+  "schema": "por-derecho.pr-reconciliation-ledger.v1",
+  "control_id": "PD-PR-RECONCILIATION-20260825-01",
+  "observed_at": "2026-08-25T23:30:00Z",
+  "open_pull_request_count": 36,
+  "coverage_state": "KEY_WORKSTREAMS_CLASSIFIED_FULL_BACKFILL_OPEN",
+  "governing_rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, preserve current controls, rerun current validation and close or supersede explicitly.",
+  "states": [
+    "REBUILD_ON_CURRENT_MAIN",
+    "EXTRACT_UNIQUE_DELTA",
+    "READY_AFTER_REBASE",
+    "HOLD_PENDING_EVIDENCE",
+    "HOLD_PENDING_AUTHORITY",
+    "VERIFICATION_ONLY",
+    "SUPERSEDED",
+    "CLOSE_NO_UNIQUE_DELTA"
+  ],
+  "priority_entries": [
+    {
+      "pr": 1016,
+      "title": "Map the non-LPB/Matkator owner and court-party perimeter",
+      "state": "REBUILD_ON_CURRENT_MAIN",
+      "reason": "Contains valuable AP 89/2014, Montelanza/Molina, Celia Guillén, Manuel Molina Climent and Acosta Matos family/business deltas, but its base predates current main and identity allocations must not collide.",
+      "unique_delta": [
+        "Seven JV 1260/2011 claimant-owners and eighteen-bungalow AP 89/2014 core",
+        "Wider residual-owner and Community perimeter kept separately graded",
+        "Individual Celia Guillén voting proposition with party-source limit",
+        "Individual Manuel Molina Climent 2022 debt-explanation proposition",
+        "Acosta Matos family/business cluster with actor-specific capacity boundaries",
+        "Finite finca, power, vote, NIF and DP 1132/Rollo 1010 evidence programme"
+      ]
+    },
+    {
+      "pr": 1033,
+      "title": "Finalize SAFE_TO_DELETE certification for prescription recovery thread",
+      "state": "READY_AFTER_REBASE",
+      "reason": "Closeout-only delta after PR #1032; compare against current main and preserve only the final certification if still unique."
+    },
+    {
+      "pr": 937,
+      "title": "Verify Laborý/CATRUDE live routes and extend scheduled audit",
+      "state": "VERIFICATION_ONLY",
+      "reason": "Read-only specialist live verification; merge only if still unique and compatible with current verification architecture."
+    },
+    {
+      "pr": 804,
+      "title": "Publish redacted 21 April 2016 Sun Park email evidence",
+      "state": "HOLD_PENDING_EVIDENCE",
+      "reason": "Native-message and attachment-binding gaps remain; preserve useful redacted derivative and limits without merging stale site-loader changes."
+    },
+    {
+      "pr": 771,
+      "title": "Add 262-finca journey explorer",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "The finca framework is strategically important, but the branch is stale and must be rebuilt against the canonical identity and recovery denominators."
+    },
+    {
+      "pr": 769,
+      "title": "Orion Rental 2024 disclosure and CNMV audit",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "Preserve the disclosure analysis and source limits; reimplement only deltas not already absorbed by later Orion/RICPE controls."
+    },
+    {
+      "pr": 749,
+      "title": "Publish Concurso 36/2012 primary-auto redigest",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "Primary-order denominator and judicial-spine work remain valuable; do not merge a stale whole-site package."
+    },
+    {
+      "pr": 685,
+      "title": "Add Montelanza 2008 governance-origin reconstruction",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "The 2008 operating/sale baseline is central to the owner-network and recovery denominator; rebuild the source package on current main."
+    },
+    {
+      "pr": 576,
+      "title": "Correct PP1041 withdrawal attribution and publish authority dossier",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "The authority/authenticity/benefit correction is material and should be reconciled with current DP 1041 and AC controls rather than merged wholesale."
+    },
+    {
+      "pr": 196,
+      "title": "Ingest Matkator DP 552→DP 711, ETJ 163 and estate-preservation source set",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "Preserve Matkator's extraconcursal source and proceeding deltas while avoiding duplicate propagation already present in later controls."
+    }
+  ],
+  "integrated_recent_work": [
+    {
+      "pr": 1026,
+      "merge_sha": "f9d0a22305431eeb6405b70f3bc30e5ff5bae514",
+      "status": "MERGED_TO_MAIN",
+      "note": "The executable priority-actions programme is now current-main source and is not an open reconciliation candidate."
+    },
+    {
+      "pr": 1030,
+      "merge_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+      "status": "MERGED_TO_MAIN",
+      "note": "Prescription, caducity, damages and interim-relief recovery controls are current-main source."
+    },
+    {
+      "pr": 1032,
+      "merge_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+      "status": "MERGED_TO_MAIN",
+      "note": "Prescription-recovery deletion audit and closeout records are current-main source."
+    }
+  ],
+  "backfill_actions": [
+    "Enumerate every remaining open PR and assign one controlled state.",
+    "Record base SHA, head SHA, mergeability, draft status, unique files, overlapping current-main paths and superseding release.",
+    "Close or supersede branches with no unique validated delta.",
+    "Do not use open-PR count as a measure of completed or live work."
+  ]
+}

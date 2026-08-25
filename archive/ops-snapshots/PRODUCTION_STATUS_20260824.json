@@ -6,25 +6,6 @@
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
   "main_at_audit": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
   "exact_live_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
-  "current_state": "ops/CURRENT_UNITARY_STATE.json",
-  "historical_snapshot": "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json",
-  "historical_snapshot_sha": "8d61887ca22741ba5054a278d169c07e1b968119",
-  "current_main_observed_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
-  "current_main_observed_at": "2026-08-25T23:30:00Z",
-  "latest_reader_facing_pages_deployment": {
-    "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
-    "run_id": 32910389340,
-    "run_number": 1115,
-    "status": "completed",
-    "conclusion": "success",
-    "note": "The later current-main deletion-closeout commit did not trigger a newer Pages deployment."
-  },
-  "exact_public_content_verification": {
-    "state": "PENDING_AFTER_CONTROL_PLANE_MERGE",
-    "last_positive_smoke_sha": "19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78",
-    "last_positive_smoke_run": 32907717917,
-    "rule": "The exact PR #922 live baseline below remains preserved. Current deployment success and exact-content verification are separate states."
-  },
   "last_live_verification": {
     "state": "LIVE_VERIFIED",
     "source_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",

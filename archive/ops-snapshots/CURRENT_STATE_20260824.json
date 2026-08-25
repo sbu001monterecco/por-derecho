@@ -2,13 +2,6 @@
   "schema": "por-derecho.current-state.v1",
   "as_of": "2026-08-24",
   "purpose": "Single current routing layer. Specialist source controls remain authoritative for proposition-level detail.",
-  "current_authority": "ops/CURRENT_UNITARY_STATE.json",
-  "human_authority": "CURRENT_UNITARY_STATE.md",
-  "historical_snapshot": "archive/ops-snapshots/CURRENT_STATE_20260824.json",
-  "historical_snapshot_sha": "3410285d94b896c2ebcfaa0d449ffaaac66a6793",
-  "current_main_observed_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
-  "current_main_observed_at": "2026-08-25T23:30:00Z",
-  "current_state_note": "The fields below preserve the exact PR #922 and Calificacion compatibility baseline required by existing safeguards. Read ops/CURRENT_UNITARY_STATE.json for the current synchronized repository/deployment/evidence state.",
   "repository": {
     "baseline_main_sha": "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8",
     "baseline_release": "FIVE_ACTOR_PRESERVATION_GUARD_PR_922_LIVE_VERIFIED",

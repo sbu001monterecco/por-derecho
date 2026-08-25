@@ -1,0 +1,79 @@
+{
+  "schema": "por-derecho.material-updates.v1",
+  "control_id": "PD-MATERIAL-UPDATES-001",
+  "control_date": "2026-08-25",
+  "latest_material_date": "2026-08-25",
+  "languages": ["es", "en"],
+  "public_routes": {
+    "es": "/es/actualizaciones/",
+    "en": "/en/updates/"
+  },
+  "rules": [
+    "A material update records what changed, the source class, affected routes and what must not be inferred.",
+    "A repository governance commit is not automatically a material public-case update.",
+    "A successful Pages deployment is not exact-content verification.",
+    "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
+  ],
+  "entries": [
+    {
+      "update_id": "MU-20260825-ICAM-CCACM",
+      "date": "2026-08-25",
+      "type": "INSTITUTIONAL_RECORD_STRENGTHENING",
+      "title_es": "Control institucional ICAM / CCACM fortalecido",
+      "title_en": "ICAM / CCACM institutional control strengthened",
+      "affected_routes": [
+        "/es/cuatrecasas-icam-ccacm-2026/",
+        "/en/cuatrecasas-icam-ccacm-2026/",
+        "/es/registros-institucionales-colegios-abogacia-2026/",
+        "/en/institutional-records-bar-bodies-2026/"
+      ],
+      "source_status": "PUBLIC_REPOSITORY_AND_RECEIPT_STATUS_CONTROL",
+      "what_changed": "The record separates individual conduct, partner decision-making, professional-firm controls and the roles of ICAM, CCACM, ICALPA and ICATF.",
+      "what_did_not_change": "Receipt acknowledgements do not establish acceptance of allegations, a general firm investigation or a final decision."
+    },
+    {
+      "update_id": "MU-20260825-CAMPANARIO-OSINT",
+      "date": "2026-08-25",
+      "type": "NEW_BILINGUAL_DOSSIER",
+      "title_es": "Declaración 011 y red profesional/societaria Campanario–Prieto–Noriega",
+      "title_en": "Declaration 011 and Campanario–Prieto–Noriega professional/corporate network",
+      "affected_routes": [
+        "/es/alvaro-campanario-prieto-puente-lopez-noriega/",
+        "/en/alvaro-campanario-prieto-puente-lopez-noriega/"
+      ],
+      "source_status": "REGISTERED_VOICE_DERIVATIVE_PLUS_BOUNDED_OSINT",
+      "what_changed": "The public record now connects verified corporate capacities and exposes a finite clarification queue.",
+      "what_did_not_change": "A voice-derived declaration is not authenticated audio or a sworn word-for-word statement, and an unlocated edge is not proof of nonexistence."
+    },
+    {
+      "update_id": "MU-20260825-DIP2-JUDICIAL-COMPLAINT",
+      "date": "2026-08-25",
+      "type": "PRIMARY_EVIDENCE_PUBLICATION",
+      "title_es": "Denuncia judicial y ampliación publicadas con trazabilidad separada",
+      "title_en": "Judicial complaint and amplification published with separate traceability",
+      "affected_routes": [
+        "/es/fiscalia-dip-2-2026/",
+        "/en/fiscalia-dip-2-2026/"
+      ],
+      "source_status": "PUBLIC_REDACTED_FILED_COPY_AND_PARTY_ANALYSIS",
+      "what_changed": "The dossier includes page-accounted public copies, transcriptions, hashes and a separate Decanato/CGPJ traceability analysis.",
+      "what_did_not_change": "Daily reference no. 24 is not a NIG, proceeding number, allocation or proof of opening, and the allegations are not findings."
+    },
+    {
+      "update_id": "MU-20260825-CONTROL-PLANE-SYNC",
+      "date": "2026-08-25",
+      "type": "PUBLICATION_CONTROL",
+      "title_es": "Sincronización del estado unitario, denominador de identidades y verificación pública",
+      "title_en": "Unitary-state, identity-denominator and public-verification synchronization",
+      "affected_routes": [
+        "/es/registro-identidad-materia/",
+        "/en/matter-identity-registry/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PREPARED_PENDING_MERGE_AND_LIVE_READBACK",
+      "what_changed": "The canonical 185-identity denominator, current repository/deployment separation and latest-update date are placed under one validation contract.",
+      "what_did_not_change": "No case allegation, judicial result, claimant standing or recovery quantum is changed by the synchronization itself."
+    }
+  ]
+}
