@@ -2,7 +2,7 @@
 
 **Control:** `PD-UNITARY-STATE-20260825-01`  
 **Prepared:** 25 August 2026  
-**Repository baseline:** `2b4af225818940a6e83136e76cdc246a056096a6`  
+**Repository baseline:** `ae22ca42c844813ff73220614ac150cd734d572e`  
 **Machine-readable authority:** `ops/CURRENT_UNITARY_STATE.json`
 
 This file separates four different questions that had drifted together:
@@ -16,9 +16,9 @@ A successful deployment is not automatically an exact-content verification. A go
 
 ## Current repository and public state
 
-- Current `main` at preparation: `2b4af225818940a6e83136e76cdc246a056096a6`.
-- That commit clarifies the priority-actions programme baseline and does not change website case content or external-action scope.
-- Pages deployment run `32910036643` / #1114 completed successfully against that SHA.
+- Current `main` at preparation: `ae22ca42c844813ff73220614ac150cd734d572e`.
+- That release adds claim-specific prescription, caducity, damages and interim-relief recovery controls; this package preserves those paths and their sitemap declaration.
+- Pages deployment run `32910389340` / #1115 completed successfully against that SHA.
 - Exact-marker public readback for the control-plane changes remains a post-merge requirement.
 - Last positive production-smoke record located in this pass: run `32907717917` against `19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78`.
 - Latest material-update date in the canonical ES/EN update pages: **25 August 2026**.
@@ -53,6 +53,7 @@ LPB alone was the debtor in Concurso 36/2012. Matkator, CEXP, Aweswell, Pink, ot
 - **RPL 2523/2025:** the last located signed record scheduled deliberation, vote and decision for 4 June 2026. A later merits decision, service record and finality or pending-remedy certification remain not located in the controlled corpus. `Not located` does not mean nonexistent.
 - **Valencia ORD 1859/2023-9:** the controlled record fixes the hearing for 28 January 2027 at 10:00, subject to any later signed superseding act.
 - **Owner/court network:** AP 89/2014 identifies seven JV 1260/2011 claimant-owners holding eighteen bungalows. That core must remain separate from the wider Montelanza/Molina residual-owner and Community perimeter.
+- **Prescription and recovery:** there is no single limitation clock. Criminal, civil, special-caducity, insolvency-administrator and State/judicial-damages routes require claim-specific dates, acts and counsel review.
 
 ## P0 evidence programme
 
@@ -70,7 +71,7 @@ LPB alone was the debtor in Concurso 36/2012. Matkator, CEXP, Aweswell, Pink, ot
 
 Thirty-five open PRs were reported in the current snapshot. Do not merge stale PRs wholesale.
 
-PR #1016 contains a valuable source-graded owner/court-party delta, but it must be rebuilt or extracted on current `main`, preserving the later professional-identity assignments and all current governance controls.
+PR #1016 contains a valuable source-graded owner/court-party delta, but it must be rebuilt or extracted on current `main`, preserving the later professional-identity assignments, the priority-actions programme, the prescription/recovery release and all current governance controls.
 
 See `ops/PR_RECONCILIATION_LEDGER.json`.
 

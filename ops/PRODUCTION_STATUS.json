@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "as_of": "2026-08-25T23:18:00Z",
+  "as_of": "2026-08-25T23:23:00Z",
   "status": "DEPLOYED_BASELINE_WITH_CURRENT_CONTROL_PLANE_PENDING",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "current_main_sha_at_preparation": "2b4af225818940a6e83136e76cdc246a056096a6",
+  "current_main_sha_at_preparation": "ae22ca42c844813ff73220614ac150cd734d572e",
   "last_pages_deployment": {
-    "sha": "2b4af225818940a6e83136e76cdc246a056096a6",
-    "run_id": 32910036643,
-    "run_number": 1114,
+    "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+    "run_id": 32910389340,
+    "run_number": 1115,
     "status": "completed",
     "conclusion": "success"
   },

@@ -1,23 +1,23 @@
 {
   "schema": "por-derecho.current-unitary-state.v1",
   "control_id": "PD-UNITARY-STATE-20260825-01",
-  "as_of": "2026-08-25T23:18:00Z",
+  "as_of": "2026-08-25T23:23:00Z",
   "status": "PREPARED_ON_CURRENT_MAIN_PENDING_MERGE_AND_PUBLIC_READBACK",
   "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
   "repository": {
     "repository": "sbu001monterecco/por-derecho",
     "branch": "main",
-    "current_main_sha_at_preparation": "2b4af225818940a6e83136e76cdc246a056096a6",
-    "current_main_commit_class": "priority-actions programme clarification; no website case content or external-action scope changed",
+    "current_main_sha_at_preparation": "ae22ca42c844813ff73220614ac150cd734d572e",
+    "current_main_commit_class": "prescription, caducity, damages and interim-relief recovery control; preserved by this synchronization",
     "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
     "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only commits may advance main without changing reader-facing case propositions."
   },
   "publication": {
     "public_host": "https://sbu001monterecco.github.io/por-derecho/",
     "last_pages_deployment": {
-      "sha": "2b4af225818940a6e83136e76cdc246a056096a6",
-      "run_id": 32910036643,
-      "run_number": 1114,
+      "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+      "run_id": 32910389340,
+      "run_number": 1115,
       "status": "completed",
       "conclusion": "success"
     },
@@ -35,14 +35,7 @@
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
     "control_date": "2026-08-25",
-    "counts": {
-      "total": 185,
-      "PERSON": 86,
-      "ORGANISATION": 66,
-      "STRUCTURE": 10,
-      "INSTITUTION": 13,
-      "PROCEEDING": 10
-    },
+    "counts": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
     "archive_backfill": "OPEN",
     "static_page_parity": "FIXED_BY_THIS_CONTROL_PLANE_PACKAGE",
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
@@ -50,14 +43,15 @@
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
     "latest_material_date": "2026-08-25",
-    "languages": ["es", "en"],
-    "public_routes": ["/es/actualizaciones/", "/en/updates/"]
+    "languages": ["es","en"],
+    "public_routes": ["/es/actualizaciones/","/en/updates/"]
   },
   "procedural_checkpoints": {
     "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",
     "calificacion_appeal": "RPL 2523/2025; the last located signed record scheduled deliberation, vote and decision for 4 June 2026. A later merits decision, service record and finality/remedy certificate remain not located in the controlled corpus.",
     "valencia": "ORD 1859/2023-9 is recorded for hearing on 28 January 2027 at 10:00, subject to any later signed superseding act.",
-    "owner_network": "The AP 89/2014 seven-claimant-owner core and the wider Montelanza/Molina perimeter remain separate; PR #1016 contains a unique source-graded delta that must be rebuilt on current main rather than merged stale."
+    "owner_network": "The AP 89/2014 seven-claimant-owner core and the wider Montelanza/Molina perimeter remain separate; PR #1016 contains a unique source-graded delta that must be rebuilt on current main rather than merged stale.",
+    "prescription_recovery": "The current recovery control requires claim-by-claim clocks and prohibits generic assertions that criminal proceedings suspend every civil or caducity period."
   },
   "top_evidence_gaps": [
     "Signed later RPL 2523/2025 merits judgment or order, service record and finality/remedy certification",
@@ -76,11 +70,12 @@
     "rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, rerun current controls and close or supersede explicitly."
   },
   "canonical_routes": {
-    "home": ["/es/", "/en/"],
-    "updates": ["/es/actualizaciones/", "/en/updates/"],
-    "identity": ["/es/registro-identidad-materia/", "/en/matter-identity-registry/"],
-    "calificacion": ["/es/calificacion-rpl-2523-mapa-prueba/", "/en/calificacion-rpl2523-evidence-map/"],
-    "recovery": ["/es/objetivos-recuperacion-restitucion/", "/en/recovery-restitution-objectives/"]
+    "home": ["/es/","/en/"],
+    "updates": ["/es/actualizaciones/","/en/updates/"],
+    "identity": ["/es/registro-identidad-materia/","/en/matter-identity-registry/"],
+    "calificacion": ["/es/calificacion-rpl-2523-mapa-prueba/","/en/calificacion-rpl2523-evidence-map/"],
+    "recovery": ["/es/objetivos-recuperacion-restitucion/","/en/recovery-restitution-objectives/"],
+    "prescription_recovery": ["/es/prescripcion-caducidad-danos-medidas-cautelares/","/en/limitation-damages-interim-relief-recovery/"]
   },
   "superseded_snapshots": {
     "ops/CURRENT_STATE.json": "Historical 24-Aug-2026 routing snapshot; preserved at archive/ops-snapshots/CURRENT_STATE_20260824.json and now points here.",
