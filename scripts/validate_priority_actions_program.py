@@ -204,8 +204,8 @@ def validate_program(data: dict[str, Any], errors: list[str]) -> None:
                 require_file(control, errors)
 
         prohibited = " ".join(task.get("prohibited_actions", [])).lower()
-        if "send" not in prohibited and task_id in {"P0-TX-01", "P2-TX-WS-01"}:
-            errors.append(f"{task_id}: private transaction task must explicitly prohibit sending")
+        if "send" not in prohibited and task_id == "P0-TX-01":
+            errors.append("P0-TX-01: read-only mailbox task must explicitly prohibit sending")
 
     if len(ids) != len(set(ids)):
         errors.append("task IDs must be unique")
