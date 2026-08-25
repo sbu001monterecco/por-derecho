@@ -8,10 +8,24 @@
 
 1. Update the fullest legal-professional list using the controlled counsel census, the complete Alas Legal email review and the procurador census.
 2. All verified legal professionals participating in the Alas working-email set are to be represented in the professional register, including the historical Alas lawyers and the separately evidenced collaborating legal professionals.
-3. Former project-side procuradores are to be represented in the professional register; the current procuradora is also included so the professional list is complete across current/former procedural representation.
+3. Former project-side procuradores are to be represented in the professional register; current procuradoras are also included so the professional list is complete across current/former procedural representation.
 4. **Guillermo Suárez Lacone is expressly excluded from the professional register and must not receive a new immutable person ID through this authorization.**
 5. Administrative Alas staff are not lawyers/procuradores and are not included in the legal-professional register.
 6. Proposal-only and copied-only contacts are not converted into former counsel. Where a professional connection is evidenced but the precise accepted mandate or client remains open, the register must say `ROLE_REVIEW` or `MANDATE_SCOPE_OPEN` instead of overstating retention.
+
+## Post-merge factual correction
+
+The signed court filing in Juicio Cambiario 1048/2019 / ETJ 163/2020 identifies **Adriana Hernández Díaz as Procuradora de los Tribunales** and identifies **Carlos Llamas Sanz separately as abogado**. The professional register therefore classifies `PD-SP-P-0067` as `PROCURADOR_CURRENT`, not `CURRENT_COUNSEL`.
+
+The corrected controlled totals are:
+
+- three current lawyers;
+- 31 former or mandate-review lawyers/legal professionals;
+- two current procuradoras;
+- four former procuradores/as;
+- 40 records in total.
+
+The same correction preserves proceeding-specific limits. It does not generalise Adriana Hernández Díaz’s personation beyond the documented proceedings. It also preserves the source-name variants for María Díaz Vecino and Tania Domínguez Limiñana without silently changing their canonical immutable identities.
 
 ## Perimeter rule
 
