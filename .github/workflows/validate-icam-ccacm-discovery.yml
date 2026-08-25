@@ -1,0 +1,48 @@
+name: Validate ICAM CCACM discovery and parity
+
+on:
+  pull_request:
+    paths:
+      - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/cuatrecasas-icam-ccacm-2026/**'
+      - 'es/registros-institucionales-colegios-abogacia-2026/**'
+      - 'en/institutional-records-bar-bodies-2026/**'
+      - 'es/registros-institucionales/**'
+      - 'en/institutional-records/**'
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'sitemap.xml'
+      - 'scripts/sync_icam_ccacm_discovery_20260825.py'
+      - '.github/workflows/validate-icam-ccacm-discovery.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/cuatrecasas-icam-ccacm-2026/**'
+      - 'en/cuatrecasas-icam-ccacm-2026/**'
+      - 'es/registros-institucionales-colegios-abogacia-2026/**'
+      - 'en/institutional-records-bar-bodies-2026/**'
+      - 'es/registros-institucionales/**'
+      - 'en/institutional-records/**'
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'sitemap.xml'
+      - 'scripts/sync_icam_ccacm_discovery_20260825.py'
+      - '.github/workflows/validate-icam-ccacm-discovery.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate public discovery, bilingual parity and evidential limits
+        run: python scripts/sync_icam_ccacm_discovery_20260825.py --check
