@@ -26,6 +26,8 @@
     "assets/data/matter-identity-operational-control-v1.json",
     "assets/data/criminal-first-institutional-action-matrix-v1.json",
     "assets/data/acosta-matos-functional-convergence-map-v2.json",
+    "scripts/validate_operational_identity_registry.py",
+    "scripts/render_operational_identity_registry.mjs",
     "sitemap-matter-identity-operational.xml",
     ".github/workflows/verify-operational-matter-identity-registry.yml"
   ],
