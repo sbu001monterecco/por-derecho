@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "publication_id": "FISCALIA_DIP2_OFFICIAL_RECORD_20260825",
   "owner": "Gil Marer / Por Derecho",
-  "current_state": "DRAFT",
-  "status": "PREPARED_NOT_YET_LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
+  "status": "LIVE_VERIFIED",
   "authority": "User instruction of 25 August 2026 to upload the letters, give them their own page, digitise them and retain them in the repository",
   "base_sha": "08a6a29ebd2aaa8b9f11f074cb80b6cbfb0b3611",
   "branch": "codex/dip2-evidence-page-20260825",
@@ -44,6 +44,74 @@
     ],
     "substantive_text_removed": false,
     "native_unredacted_committed": false
+  },
+  "pull_request": 959,
+  "merge_sha": "7a4951d7d20ba35ee59109199fa36929077e67f6",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 32821005124,
+    "status": "success",
+    "head_sha": "7a4951d7d20ba35ee59109199fa36929077e67f6",
+    "tree_sha": "8ca9d09a55e4c7965708510cebd4abd674a443fb",
+    "completed_at": "2026-08-25T07:19:43Z",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32821005124"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-dip-2-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/fiscalia-dip-2-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/fiscalia/dip-2-2026/public-pdfs/oficio-notificacion-dip-2-2026-09mar2026-public-redacted.pdf",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md",
+    "https://sbu001monterecco.github.io/por-derecho/evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md"
+  ],
+  "live_verification_evidence": {
+    "result": "6/6 HTTP 200 AND BYTE-FOR-BYTE MATCH; ES/EN LIVE BROWSER LAYOUT VERIFIED",
+    "verified_at": "2026-08-25T07:27:42Z",
+    "sha256": {
+      "es/fiscalia-dip-2-2026/index.html": "8ae6c337f2c800b1150511d400df610d51df497d45fbc7e8e4bf1b6b47284a93",
+      "en/fiscalia-dip-2-2026/index.html": "21d31c57ab082216fb39e94851a7c0ac371ec8682e942afd128749ddf13af581",
+      "evidence/fiscalia/dip-2-2026/public-pdfs/decreto-archivo-dip-2-2026-06mar2026-public-redacted.pdf": "8b3c01b179e3ad88b2b9782f523cfdcd4ac3d450eda756a59c26dd90cfaf1f68",
+      "evidence/fiscalia/dip-2-2026/public-pdfs/oficio-notificacion-dip-2-2026-09mar2026-public-redacted.pdf": "666a778d4e3b3d1e7ded6a3682d102ec85cc230f75bbb0be3d7488397da6a451",
+      "evidence/fiscalia/dip-2-2026/full-text/decreto-archivo-dip-2-2026-06mar2026-public-transcription.md": "3952d0e3a039d037dd32bd12bbd5998238cb63c18b0a9f497da5210d3abe8ccd",
+      "evidence/fiscalia/dip-2-2026/full-text/oficio-notificacion-dip-2-2026-09mar2026-public-transcription.md": "d30088e83382ec7bfd2abadd913112ae42010f32168f77ff103f2c9acc08ea46"
+    },
+    "browser": {
+      "routes_checked": 2,
+      "official_record_cards_per_route": 3,
+      "document_controls_per_route": 4,
+      "horizontal_overflow_pixels": 0,
+      "site_console_errors": 0
+    }
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "canonical_recovery_paths": [
+      "publication-manifests/fiscalia-dip2-official-record-20260825.json",
+      "archive/FISCALIA_DIP2_2026_OFFICIAL_RECORD_PUBLICATION_CONTROL_25AUG2026.md",
+      "evidence/fiscalia/dip-2-2026/README.md",
+      "es/fiscalia-dip-2-2026/index.html",
+      "en/fiscalia-dip-2-2026/index.html"
+    ],
+    "open_evidence": "Obtain the complete certified DIP 2/2026 file, the separate 11 February opening decree and the post-11 March incorporation/correction/reconsideration record.",
+    "private_source_rule": "Re-query the controlled native official PDFs; do not reconstruct contact details or electronic-verification locators from public Git history.",
+    "email_sent": false,
+    "gmail_draft_created": false,
+    "linkedin_post_created": false,
+    "linkedin_post_published": false
+  },
+  "validation": {
+    "status": "CI_GREEN_MERGED_DEPLOYED_LIVE_VERIFIED",
+    "evidence": [
+      "PR #959 passed all 16 triggered pull-request workflows",
+      "the exact merge SHA passed all 16 triggered post-merge workflows",
+      "repository preservation, publication integrity, audience experience, mission-critical, operational, sent-email continuity and insolvency-perimeter gates passed locally",
+      "JSON, CSV, XML, Python, internal-link, duplicate-ID and diff syntax checks passed",
+      "both public PDF derivatives reproduced byte-for-byte on repeated builds and all 11 pages rendered successfully",
+      "privacy extraction checks confirmed that controlled contact and electronic-verification strings are absent",
+      "Pages run 32821005124 completed successfully for exact merge SHA 7a4951d7d20ba35ee59109199fa36929077e67f6",
+      "six public surfaces returned HTTP 200 and matched repository SHA-256 byte for byte",
+      "live Spanish and English browser checks showed three aligned evidence cards, four document controls, loaded fonts and zero horizontal overflow"
+    ]
   },
   "required_checks": [
     "python3 scripts/validate_repository_preservation.py",

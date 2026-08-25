@@ -81,7 +81,26 @@ remain subject to the repository email-send gate.
 
 ## Continuity state
 
-At preparation time the implementation is on branch
-`codex/dip2-evidence-page-20260825`. Merge, Pages deployment, live document
-readback and final deployment logging remain required before the work is
-classified as live or deletion-safe.
+**DELETION-SAFE WITH OPEN EVIDENCE.** PR #959 was squash-merged as
+`7a4951d7d20ba35ee59109199fa36929077e67f6` (tree
+`8ca9d09a55e4c7965708510cebd4abd674a443fb`). The exact merge SHA was deployed
+successfully by Pages run `32821005124`, completed at
+`2026-08-25T07:19:43Z`.
+
+Cache-busted public readback passed six of six controlled surfaces with HTTP
+200 and byte-for-byte SHA-256 equality: both bilingual routes, both public PDF
+derivatives and both page-accounted transcriptions. Live-browser inspection
+confirmed three aligned official-record cards, four working document controls,
+loaded fonts and zero horizontal overflow on each language route.
+
+The deletion-safe classification preserves the following open evidence rather
+than treating absence as proof of nonexistence:
+
+- complete certified DIP 2/2026 file;
+- separate 11 February 2026 opening decree;
+- post-11 March incorporation, correction, reconsideration and hierarchical
+  treatment;
+- any complete transmission bridge into later judicial proceedings.
+
+No email was sent, no Gmail draft was created and no LinkedIn post was prepared
+or published during this publication step.
