@@ -107,6 +107,26 @@ from retaining the removed identifier.
   package, not verification or adoption of its allegations, and does not by
   itself establish the onward destination of the 18 June complaint.
 
+## Later institutional references located on 25 August 2026
+
+- The CGPJ Promotor's agreement dated **10 July 2026** in DI 169/2026 quotes
+  the contributor's request to identify and reconcile two institutional chains
+  converging on the TSJC and to verify the location, integrity and
+  administrative transmission of `control 24`. This proves that the CGPJ
+  received and characterised that traceability request. It supplies no NIG,
+  allocation decision, court-file number or destination for the 18 June
+  complaint.
+- The TSJC Government Secretariat's signed agreement dated **20 August 2026**
+  in Exp. Gub. 38/2026 addresses a separate but related CGPJ-to-TSJC
+  transmission. It says the CGPJ communication was for information only and
+  that receipt of the CGPJ archive agreement was not recorded as of that date.
+  It does not reproduce daily reference 24 and does not establish the
+  complaint's allocation or destination.
+
+The boundary therefore remains unchanged: presentation and later institutional
+traceability requests are documented, while subsequent allocation or TSJC
+destination of daily reference no. 24 remains unlocated.
+
 ## Reproduction
 
 Run `scripts/build_decanato_reference24_public_evidence.py` with the four

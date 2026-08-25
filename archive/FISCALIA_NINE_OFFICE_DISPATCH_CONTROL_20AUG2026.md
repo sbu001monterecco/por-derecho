@@ -44,7 +44,7 @@ Times below are UTC as recorded by Gmail.
 |---:|---|---|---|---|---|
 | 1 | Fiscalía de Área de Arrecife–Lanzarote–Puerto del Rosario | `Exp. Gub. 86/2026 — aportación sobrevenida, módulo aforado separado y preservación PwC/Grant Thornton/RSM` | 21:44:59 | `1a021226e704a80c` | Sent; receiving reference and substantive response pending |
 | 2 | Fiscalía Provincial de Las Palmas / DI 22/2026 | `DI 22/2026 / REGAGE26e00070237051 — módulo aforado separado, fuentes profesionales y coordinación con Arrecife` | 21:48:10 | `1a0212557d961158` | Controlling version sent; custody/association response pending |
-| 3 | Fiscalía Superior de Canarias | `EG 112/2026 — precisión sobre aforamiento, objeto separado y fuentes sobrevenidas` | 21:50:36 | `1a02127902fee3ed` | Controlling version sent; correction/clarification/referral response pending |
+| 3 | Fiscalía Superior de Canarias | `EG 112/2026 — precisión sobre aforamiento, objeto separado y fuentes sobrevenidas` | 21:50:36 | `1a02127902fee3ed` | Clarification decree dated 23 Aug and notified 25 Aug located; closure maintained; newer civil/mercantile matters attributed territorially to Provincial Las Palmas |
 | 4 | Inspección Fiscal, through central FGE channels | `A la atención de la Fiscal de Sala Jefa de la Inspección Fiscal — aforamiento, trazabilidad y fuentes profesionales Sun Park` | 21:54:11 | `1a0212ad91efcb1b` | Sent; registration and transfer to Inspection pending |
 | 5 | Fiscalía General del Estado | `A la Fiscal General del Estado — coordinación central, módulo aforado y expansión profesional/económica Sun Park` | 21:56:16 | `1a0212cc23ebd938` | Sent; central association/coordination response pending |
 | 6 | Secretaría Técnica FGE | `ST 553/2026 / ST 104/2025 — módulo aforado, expansión profesional y solicitud de asociación técnica` | 21:58:16 | `1a0212e97d54d59d` | Sent; technical association and destination response pending |
@@ -122,7 +122,7 @@ Do not describe Anticorruption as having rejected the merits.
 
 A Gmail search located no delivery-status failure for the controlling institutional destinations.
 
-As of this control:
+As of the original 20 August control:
 
 - Anticorruption has sent the signature-cure response described above;
 - no substantive response has been located from the other eight institutional destinations;
@@ -131,6 +131,28 @@ As of this control:
 - the RSM ethics review remains subject to its previously stated later response window.
 
 Silence or an open response period is not evidence of refusal, non-cooperation or culpability.
+
+### Material update located 25 August 2026 - Fiscalía Superior
+
+The official communication received on 25 August attached a signed
+clarification decree dated 23 August 2026 in EG 112/2026. The decree:
+
+- acknowledges that DIP 2/2026 was an earlier criminal investigation concerning
+  alleged prevaricación by the Magistrate and that it ended in provisional
+  archive for want of rational criminal indicia;
+- states that the 2 and 20 August communications did not contain a new or
+  similar criminal allegation against the Magistrate and therefore did not
+  engage Fiscalía Superior's objective competence through an aforado person;
+- maintains the EG 112/2026 closure and declines a new DIP or reopening on that
+  material; and
+- states that territorial competence for the newer civil/mercantile matters
+  would affect Fiscalía Provincial de Las Palmas de Gran Canaria.
+
+This is an adverse procedural response and an express routing statement. It is
+not a finding that every underlying allegation is false, does not locate daily
+reference no. 24 and does not establish whether each separate economic,
+professional, public-funds or preservation module has been transferred to and
+examined by another competent office.
 
 ## 7. Aforado module — controlled position
 
@@ -166,7 +188,7 @@ The genuinely later material is the refined PwC, Grant Thornton and RSM/San Telm
 1. Anticorruption electronic-signature cure and association.
 2. Receiving file/reference from Arrecife.
 3. Provincial association with DI 22/2026 and corpus answer for DP 1901/2026.
-4. Fiscalía Superior response on EG 112/2026 errors, aforamiento and referral.
+4. Record the 23 August EG 112/2026 clarification as the Fiscalía Superior response; obtain traceability for any transfer or association with Fiscalía Provincial de Las Palmas and keep separate modules separate.
 5. Registration/transfer confirmation from Inspection, FGE, Secretaría Técnica and Economic Crimes.
 6. Audiencia Nacional outgoing referral proof and confirmation that the later material reaches Arrecife.
 7. Substantive professional-firm responses or expiry of their stated response windows.
