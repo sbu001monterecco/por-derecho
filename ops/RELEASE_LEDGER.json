@@ -3,7 +3,7 @@
   "record_type": "APPEND_ONLY_RELEASE_LEDGER",
   "control_date": "2026-08-26",
   "append_only": true,
-  "coverage": "Seeded with the controlling historical rollback anchor and the latest observed deployment. Earlier release backfill remains open.",
+  "coverage": "Seeded with the controlling historical rollback anchor and the latest observed deployments. Earlier release backfill remains open.",
   "ordering": "Records are chronological by deployed_at or observed_at. Existing release_id entries may be corrected only through an explicit correction object; they must not be silently removed or rewritten.",
   "releases": [
     {
@@ -32,7 +32,7 @@
       "pull_request": 1029,
       "state": "DEPLOYED_BUILD_SUCCESS",
       "website_content_changed": false,
-      "current_at_observation": true,
+      "current_at_observation": false,
       "rollback_eligible": false,
       "merged_at": "2026-08-25T23:16:35Z",
       "deployed_at": "2026-08-25T23:17:10Z",
@@ -40,11 +40,31 @@
       "live_verification_run_id": null,
       "scope": "Clarified the priority-programme drafting, reconciliation and final-merge baselines; PR #1026 remains in ancestry. No task, website or external-action scope changed.",
       "evidence": [
-        "ops/PRODUCTION_STATUS.json",
         "PRIORITY_ACTIONS_START_HERE.md",
         "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
       ],
       "limits": "A successful Pages deployment is recorded; exact route-content verification for this SHA was not separately recorded."
+    },
+    {
+      "release_id": "prescription-damages-interim-relief-20260825-pr1030",
+      "source_sha": "ae22ca42c844813ff73220614ac150cd734d572e",
+      "source_tree_sha": "adb4a8c4029fc2bd1bef1184612a6969dab9ac1c",
+      "pull_request": 1030,
+      "state": "DEPLOYED_BUILD_SUCCESS",
+      "website_content_changed": true,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "merged_at": "2026-08-25T23:21:22Z",
+      "deployed_at": "2026-08-25T23:23:02Z",
+      "pages_run_id": 32910389340,
+      "live_verification_run_id": null,
+      "scope": "Added claim-specific prescription, caducity, damages, restitution and interim-relief controls with bilingual public routes and structured data.",
+      "evidence": [
+        "ops/PRODUCTION_STATUS.json",
+        "publication-manifests/prescription-damages-interim-relief-20260826.json",
+        "assets/data/prescription-damages-interim-relief-v1.json"
+      ],
+      "limits": "A successful Pages deployment is recorded; exact independent public-edge content verification remains separate."
     }
   ],
   "corrections": []
