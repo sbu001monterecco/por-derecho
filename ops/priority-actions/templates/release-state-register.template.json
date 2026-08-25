@@ -1,0 +1,51 @@
+{
+  "schema": "por-derecho.release-state-register.v1",
+  "generated_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "generated_by": "thread-or-workflow-id",
+  "repository": "sbu001monterecco/por-derecho",
+  "branch": "main",
+  "observations": {
+    "current_main": {
+      "sha": "40_CHAR_SHA",
+      "observed_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "source": "GitHub branches/main API"
+    },
+    "exact_live_deployment": {
+      "sha": "UNKNOWN_OR_40_CHAR_SHA",
+      "deployment_id": "UNKNOWN_OR_ID",
+      "observed_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "evidence": "deployment/workflow/edge locator or reason unknown"
+    },
+    "last_complete_whole_site_verification": {
+      "source_sha": "UNKNOWN_OR_40_CHAR_SHA",
+      "route_count": null,
+      "result": "UNKNOWN_OR_SUMMARY",
+      "verified_at": "UNKNOWN_OR_TIMESTAMP",
+      "evidence": "audit/workflow locator"
+    },
+    "last_known_good_rollback": {
+      "source_sha": "40_CHAR_SHA",
+      "state": "LIVE_VERIFIED",
+      "verified_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "source_file": "ops/LAST_KNOWN_GOOD.json"
+    },
+    "open_pull_requests": {
+      "count": null,
+      "draft_count": null,
+      "observed_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "source": "GitHub search API"
+    }
+  },
+  "derived_state": {
+    "main_equals_exact_live": "UNKNOWN_TRUE_OR_FALSE",
+    "current_main_has_whole_site_verification": "UNKNOWN_TRUE_OR_FALSE",
+    "current_operational_snapshot_stale": "UNKNOWN_TRUE_OR_FALSE",
+    "outstanding_checks": []
+  },
+  "rules": [
+    "Do not infer exact live SHA from current main.",
+    "Do not replace the last-known-good rollback anchor merely because main advanced.",
+    "Record UNKNOWN where evidence is unavailable.",
+    "Every observation requires a timestamp and evidence locator."
+  ]
+}

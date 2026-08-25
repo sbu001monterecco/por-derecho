@@ -1,0 +1,49 @@
+{
+  "schema": "por-derecho.route-module-manifest.v1",
+  "generated_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "baseline_main_sha": "40_CHAR_SHA",
+  "mode": "SHADOW_ONLY",
+  "global_modules": [
+    {
+      "module_id": "site-core",
+      "source_path": "assets/site.js",
+      "load_order": 10,
+      "dependencies": [],
+      "side_effects": [],
+      "protected_behaviour": []
+    }
+  ],
+  "route_rules": [
+    {
+      "rule_id": "ROUTE-0001",
+      "path_pattern": "/en/example/",
+      "language": "en",
+      "modules": [
+        "site-core"
+      ],
+      "required_order": [
+        "site-core"
+      ],
+      "protected_selectors": [],
+      "protected_fragments": [],
+      "sent_link_obligation": false,
+      "current_loader_sources": [],
+      "duplicate_load_risk": "UNKNOWN",
+      "shadow_result": "NOT_RUN"
+    }
+  ],
+  "checks": {
+    "route_count": null,
+    "module_count": null,
+    "duplicate_module_loads": null,
+    "ordering_conflicts": null,
+    "protected_route_assertions": null,
+    "source_live_parity": "NOT_RUN"
+  },
+  "rules": [
+    "This manifest is shadow-only until a separate migration PR is approved.",
+    "Do not remove a current loader before equivalent behaviour is proven.",
+    "Preserve stable routes, fragments, sent links, actor cards, evidence labels and bilingual parity.",
+    "Runtime consolidation must not contain unrelated content rewrites."
+  ]
+}

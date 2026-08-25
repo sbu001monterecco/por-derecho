@@ -1,0 +1,35 @@
+name: Validate priority-actions programme
+
+on:
+  pull_request:
+    paths:
+      - "CURRENT_PRIORITY_ACTIONS_HANDOVER_25AUG2026.md"
+      - "ops/priority-actions/**"
+      - "scripts/validate_priority_actions_program.py"
+      - ".github/workflows/validate-priority-actions-program.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "CURRENT_PRIORITY_ACTIONS_HANDOVER_25AUG2026.md"
+      - "ops/priority-actions/**"
+      - "scripts/validate_priority_actions_program.py"
+      - ".github/workflows/validate-priority-actions-program.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-priority-actions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Validate priority-actions programme
+        run: python3 scripts/validate_priority_actions_program.py
