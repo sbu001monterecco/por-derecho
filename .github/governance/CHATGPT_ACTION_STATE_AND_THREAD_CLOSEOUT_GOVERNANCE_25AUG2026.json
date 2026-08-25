@@ -1,0 +1,142 @@
+{
+  "control_date": "2026-08-25",
+  "status": "repository_wide_companion_control",
+  "governing_sentence": "Report the exact state achieved, the proof for that state, and the next missing transition; never collapse two states into one.",
+  "universal_states": [
+    "DISCOVERED",
+    "ANALYSED",
+    "PROPOSED",
+    "PREPARED",
+    "AUTHORIZED",
+    "EXECUTED",
+    "VERIFIED",
+    "HOLD",
+    "NO_ACTION_REQUIRED",
+    "BLOCKED",
+    "FAILED",
+    "SUPERSEDED"
+  ],
+  "state_invariants": [
+    "PREPARED != AUTHORIZED",
+    "AUTHORIZED != EXECUTED",
+    "EXECUTED != VERIFIED",
+    "PR_OPEN != MERGED",
+    "MERGED != DEPLOYMENT_SUCCEEDED",
+    "DEPLOYMENT_SUCCEEDED != EDGE_VERIFIED",
+    "PREPARED_EMAIL != SENT_EMAIL",
+    "SENT_EMAIL != VERIFIED_SENT_COPY",
+    "RECEIVED != DOCKETED",
+    "DOCKETED != SUBSTANTIVE_DECISION",
+    "EXISTING_PAGE_STRENGTHENED != NEW_PAGE_CREATED",
+    "HOLD != FAILED"
+  ],
+  "action_state_machines": {
+    "repository": [
+      "CURRENT_MAIN_CHECKED",
+      "CHANGE_PREPARED",
+      "COMMITTED_ON_BRANCH",
+      "PR_OPEN",
+      "MERGED",
+      "DEPLOYMENT_SUCCEEDED",
+      "EDGE_VERIFIED"
+    ],
+    "website_page_identity": [
+      "NO_CANONICAL_PAGE_LOCATED",
+      "EXISTING_PAGE_REVIEWED_NO_CHANGE",
+      "EXISTING_PAGE_STRENGTHENED",
+      "NEW_PAGE_CREATED",
+      "ROUTE_REPAIRED_OR_REDIRECTED",
+      "MERGED_NOT_DEPLOYED",
+      "DEPLOYED_NOT_EDGE_VERIFIED",
+      "EDGE_VERIFIED"
+    ],
+    "email": [
+      "PREPARED",
+      "AUTHORIZED",
+      "SENT",
+      "VERIFIED"
+    ],
+    "email_non_transmission": [
+      "HOLD_NOT_SENT",
+      "NO_RESPONSE_REQUIRED_NOT_SENT",
+      "BLOCKED_NOT_SENT",
+      "FAILED_OR_UNCERTAIN_NOT_VERIFIED_AS_SENT"
+    ],
+    "institutional_correspondence": [
+      "SENT",
+      "RECEIVED",
+      "DOCKETED",
+      "PROCEDURAL_ACTION",
+      "SUBSTANTIVE_DECISION"
+    ],
+    "calendar": [
+      "PROPOSED",
+      "AVAILABILITY_CHECKED",
+      "EVENT_CREATED",
+      "INVITATION_SENT",
+      "EVENT_READ_BACK_VERIFIED"
+    ],
+    "filing": [
+      "DRAFTED",
+      "AUTHORIZED",
+      "SUBMITTED",
+      "RECEIPT_VERIFIED",
+      "DOCKETED",
+      "DECIDED"
+    ]
+  },
+  "broad_assent_rule": {
+    "phrases": [
+      "I follow your judgment",
+      "do it now",
+      "proceed with your recommendation"
+    ],
+    "meaning": "execute the latest clearly stated recommended course within the authorised scope",
+    "does_not": [
+      "reverse a HOLD recommendation into a send",
+      "bypass package-specific email authorization",
+      "extend repository authority to email, filing, messaging, financial commitment or account settings",
+      "turn strengthening an existing page into authority to create a duplicate page"
+    ]
+  },
+  "receipt_only_gate": {
+    "default": "NO_RESPONSE_REQUIRED_OR_HOLD",
+    "receipt_does_not_equal": [
+      "admissibility",
+      "agreement",
+      "investigation",
+      "endorsement",
+      "merits_decision"
+    ],
+    "reopen_triggers": [
+      "express_request",
+      "hearing_notice",
+      "procedural_order",
+      "proposal",
+      "resolution",
+      "competence_or_routing_notice_with_action_opportunity",
+      "genuinely_supervening_dated_essential_fact",
+      "material_procedural_correction"
+    ]
+  },
+  "deletion_dimensions": [
+    "THREAD_REASONING_CONTINUITY",
+    "IMPLEMENTATION_STATE_CONTINUITY",
+    "PRIMARY_EVIDENCE_COMPLETENESS",
+    "LIVE_PUBLICATION_VERIFICATION",
+    "COMMUNICATION_VERIFICATION",
+    "CUSTODY_RESILIENCE",
+    "DISASTER_RECOVERY_SAFETY"
+  ],
+  "expired_file_rule": {
+    "does_not_block": "operational deletion safety when decisions, limitations, metadata, retrieval targets and implementation state are canonicalised and exact bytes are not needed",
+    "does_block": "tasks requiring exact bytes, attachment comparison, hashing, forensic examination or verbatim source review until lawful rematerialisation or re-upload"
+  },
+  "completion_record_fields": [
+    "object",
+    "action",
+    "state",
+    "verification",
+    "open_condition"
+  ]
+}
