@@ -1,5 +1,5 @@
 {
-  "schema": "por-derecho-fiscalia-exp-gub-745-action-state/v1",
+  "schema": "por-derecho-fiscalia-exp-gub-745-action-state/v2",
   "control_date": "2026-08-26",
   "expediente": "Exp. Gub. 745/2026",
   "official_outcome": "archived_by_fiscal_inspection_decree",
@@ -9,10 +9,23 @@
     "Decree states no irregularity attributable to a particular prosecutor in a particular matter was specified"
   ],
   "source_comparison": {
-    "specific_proceedings_identified": ["DI 248/2018", "DI 113/2022", "DI 22/2026", "DIP 2/2026", "EG 49/2026", "DP 1901/2026"],
+    "specific_proceedings_identified": [
+      "DI 248/2018",
+      "DI 113/2022",
+      "DI 22/2026",
+      "DIP 2/2026",
+      "EG 49/2026",
+      "DP 1901/2026"
+    ],
     "general_filing_numbered_requests": 20,
     "inspection_specific_numbered_requests": 12,
-    "page_one_scope_blocks": ["DELIMITACIÓN NEGATIVA", "OBJETO EXCLUSIVO", "DAÑO ACTUAL", "ACTUACIÓN POSCONOCIMIENTO", "DECISIÓN SOLICITADA"],
+    "page_one_scope_blocks": [
+      "DELIMITACIÓN NEGATIVA",
+      "OBJETO EXCLUSIVO",
+      "DAÑO ACTUAL",
+      "ACTUACIÓN POSCONOCIMIENTO",
+      "DECISIÓN SOLICITADA"
+    ],
     "subsanacion_requested_in_source": true,
     "controlled_conclusion": "The record supports a specific challenge to the breadth of the lack-of-clarity characterisation and raises an Article 68 cure issue on the Decree's own Article 66 framework; it does not establish bad faith, unlawful intent or a judicially determined procedural violation."
   },
@@ -21,35 +34,101 @@
     "extractable_text": false,
     "rasterised_page_behaviour": true,
     "intent_inferred": false,
-    "requested_follow_up": "native/searchable electronic copy or explanation of notification format"
+    "requested_follow_up": "native/searchable electronic copy, signature/verification information or explanation of notification format",
+    "activation_status": "ACTIVATED_FOR_DRAFTING_AND_TECHNICAL_PRESERVATION"
+  },
+  "activation": {
+    "authority": "Gil Marer instructed immediate full-force consideration, preparation and activation of all compatible options in parallel.",
+    "status": "IMMEDIATE_PARALLEL_PREPARATION_ACTIVATED",
+    "external_actions_performed_by_this_update": {
+      "email_sent": false,
+      "administrative_filing_made": false,
+      "court_filing_made": false
+    },
+    "status_rule": "Preparation or activation is not filing, sending, delivery, receipt, joinder or decision."
+  },
+  "merits_election": {
+    "prepare_now": [
+      "recurso potestativo de reposicion",
+      "direct contentious-administrative review"
+    ],
+    "file_simultaneously": false,
+    "decision_gate": "REQUIRED BEFORE ANY EXTERNAL MERITS FILING",
+    "interaction": "If reconsideration is filed and Article 123.2 Law 39/2015 applies, the contentious appeal must await express resolution or deemed dismissal."
+  },
+  "actions": {
+    "FGE745-A": {
+      "name": "Optional reconsideration",
+      "status": "PREPARE_NOW_MERITS_ELECTION_REQUIRED",
+      "statutory_period": "one month according to the Decree and Law 39/2015",
+      "deadline_control": "verify exact final day and applicable calendars before filing",
+      "external_status": "NOT_FILED"
+    },
+    "FGE745-B": {
+      "name": "Direct contentious-administrative review",
+      "status": "PREPARE_NOW_ALTERNATIVE_MERITS_ROUTE",
+      "forum": "Sala de lo Contencioso-Administrativo del Tribunal Supremo according to the Decree",
+      "statutory_period": "two months according to the Decree and LJCA",
+      "august_control": "verify Article 46 and Article 128 LJCA computation before filing",
+      "external_status": "NOT_FILED"
+    },
+    "FGE745-C": {
+      "name": "Ad cautelam clarification/subsanacion",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_SOURCE_ASSEMBLY",
+      "suspends_merits_deadline": false,
+      "external_status": "NOT_FILED"
+    },
+    "FGE745-D": {
+      "name": "Full-file access and copies",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_SOURCE_ASSEMBLY",
+      "suspends_merits_deadline": false,
+      "external_status": "NOT_FILED"
+    },
+    "FGE745-E": {
+      "name": "Native machine-readable Decree and verification information",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_TECHNICAL_PRESERVATION",
+      "suspends_merits_deadline": false,
+      "external_status": "NOT_SENT"
+    },
+    "FGE745-F": {
+      "name": "Finite evidence preservation",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_CUSTODIAN_MAPPING",
+      "suspends_merits_deadline": false,
+      "external_status": "NOT_SENT"
+    }
+  },
+  "status_vocabulary": [
+    "PREPARE",
+    "READY_FOR_LEGAL_FACTUAL_REVIEW",
+    "AUTHORISED",
+    "FILED_OR_SENT",
+    "DELIVERED",
+    "RECEIVED",
+    "JOINED",
+    "DECIDED",
+    "ESCALATE_OR_CLOSE"
+  ],
+  "same_day_notification_context": {
+    "track": "Government of the Canary Islands transparency/FEDER routing",
+    "file": "16/2026-0825121919",
+    "made_available": "2026-08-26T13:07:45+01:00",
+    "access_recorded": "2026-08-26T14:09:13+01:00",
+    "relationship_to_fge_745": "separate concurrent evidence-development track; not a merits component and not deadline-suspensive",
+    "evidential_limit": "routing/access does not prove an award, payment, use of funds, compliance failure or irregularity"
   },
   "source_sha256": {
     "decree_notified_2026_08_26": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
     "inspection_regage_receipt": "33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97",
     "signed_source_filing": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4"
   },
-  "review_routes": {
-    "reconsideration": {
-      "status": "available_according_to_decree",
-      "statutory_period": "one month",
-      "exclusive_interaction": "If filed, contentious-administrative appeal must await express resolution or deemed dismissal under Article 123.2 Law 39/2015."
-    },
-    "direct_contentious_appeal": {
-      "status": "alternative_to_reconsideration",
-      "forum": "Sala de lo Contencioso-Administrativo del Tribunal Supremo according to the Decree",
-      "statutory_period": "two months",
-      "august_control": "Article 128 LJCA states that August does not run for the ordinary contentious-appeal filing period, subject to its exception."
-    }
-  },
-  "parallel_non_suspensive_lanes": [
-    "ad_cautelam clarification/subsanacion without admitting original confusion",
-    "full-file access and copies",
-    "native machine-readable Decree and signature/verification information",
-    "finite evidence preservation"
+  "public_records": [
+    "FGE_745_IMMEDIATE_PARALLEL_ACTION_ACTIVATION_26AUG2026.md",
+    "FGE_745_PARALLEL_ACTION_DASHBOARD_26AUG2026.json",
+    "INSTITUTIONAL_NOTIFICATIONS_26AUG2026_PARALLEL_CONTROL.md"
   ],
   "public_routes": {
     "es": "/es/fiscalia-inspeccion-exp-gub-745-2026/",
     "en": "/en/public-prosecution-inspection-exp-gub-745-2026/"
   },
-  "privacy": "Native source files are not committed because the repository is public and originals may contain signatures, identifiers or unnecessary personal data."
+  "privacy": "Native source files, private notification identifiers, security credentials, unsent correspondence and privileged strategy remain outside the public repository."
 }
