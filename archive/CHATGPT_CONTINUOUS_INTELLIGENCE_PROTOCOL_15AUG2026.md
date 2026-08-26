@@ -41,7 +41,7 @@ For Drive/Library, begin with semantic search. When a relevant item is found, re
 
 ## Priority proof gaps — keep searching until closed
 
-1. Primary final order of 29 March 2021 in DP 332/2014 and exact ground of dismissal/closure.
+1. Primary disposition supporting the reported 2021 closure of DP 332/2014, its date and exact ground. The 29 March date appears in a later party pleading and must be reconciled with contemporaneous reactivation/resumption communications.
 2. `3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf`: visually inspect the complete primary scan and extract its exact methodology, valuation/rent conclusion, limitations, author and relationship to the original prosecution theory. **Its existence is verified; its substantive conclusion is not yet approved for public assertion.**
 3. Complete certified DI 248/2018 file: requested diligences versus diligences actually performed; evidence before the 7 May 2019 archive; treatment of DP 1132/2018.
 4. Certified DP 1132/2018 testimony/audiovisual and production orders; exact scope of AC-authorised access versus alleged excess.

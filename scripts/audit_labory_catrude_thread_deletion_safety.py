@@ -21,6 +21,10 @@ PUBLIC_PREFIXES = [
     *PAGES,
 ]
 ALLOWED_CLASSIFICATIONS = {"POSSIBLE TARGET", "PROBABLE TARGET", "CONFIRMED TARGET", "RELATED BUT DIFFERENT REPORT", "EXCLUDED", "UNREADABLE / ACCESS PENDING"}
+RECOVERED_INSPECTION_STATES = {
+    "opened_safely_extracted_inventory",
+    "opened_safely_extracted_recursive_inventory",
+}
 FORBIDDEN_PUBLIC_PATTERNS = {
     "gmail_message_id": re.compile(r"\b(?:14|15|16|17|18|19)[0-9a-f]{14}\b", re.I),
     "email_address": re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I),
@@ -58,8 +62,20 @@ def main() -> int:
     if len(rows) != 18: errors.append(f'archive register contains {len(rows)} rows; expected 18')
     expected=[f'GMAIL-ZIP-{i:03d}' for i in range(1,19)]
     if [r.get('archive_id') for r in rows] != expected: errors.append('archive aliases must be complete and ordered GMAIL-ZIP-001 through GMAIL-ZIP-018')
+    recovered=[]; pending=[]
     for r in rows:
-        if r.get('inspection_status') != 'metadata_only_not_opened': errors.append(f"{r.get('archive_id')}: inspection status must remain metadata_only_not_opened until bytes are opened")
+        inspection=r.get('inspection_status')
+        byte_access=r.get('byte_access_status')
+        if inspection == 'metadata_only_not_opened':
+            pending.append(r)
+            if byte_access != 'not_accessible': errors.append(f"{r.get('archive_id')}: unopened row must remain not_accessible")
+        elif inspection in RECOVERED_INSPECTION_STATES:
+            recovered.append(r)
+            if byte_access != 'recovered_and_sha256_verified': errors.append(f"{r.get('archive_id')}: opened row must be recovered_and_sha256_verified")
+            if r.get('priority') != 'completed': errors.append(f"{r.get('archive_id')}: opened row must be marked completed")
+            if not re.search(r'\bSHA-256 [0-9a-f]{64}\b', r.get('next_action','')): errors.append(f"{r.get('archive_id')}: opened row lacks a public SHA-256 custody reference")
+        else:
+            errors.append(f"{r.get('archive_id')}: unsupported inspection status {inspection!r}")
         if r.get('deletion_state') != 'not eligible': errors.append(f"{r.get('archive_id')}: deletion state is not protected")
         for key in ('archive_name','source_date','size_bytes','relevance','next_action'):
             if not r.get(key): errors.append(f"{r.get('archive_id')}: missing {key}")
@@ -95,6 +111,8 @@ def main() -> int:
         'target_status':status.get('target_status'),
         'deletion_state':status.get('deletion_state'),
         'archive_rows':len(rows),
+        'archive_rows_recovered':len(recovered),
+        'archive_rows_pending':len(pending),
         'candidate_rows':len(candidates),
         'errors':errors,
         'warnings':warnings,
@@ -104,7 +122,7 @@ def main() -> int:
     (out/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     md=['# Laborý / CATRUDE thread-deletion audit','',f"**Result:** {result['status']}",f"**Target:** {result['target_status']}",f"**Deletion state:** {result['deletion_state']}",f"**Archive rows:** {len(rows)}",'',result['operational_note']]
     if errors: md += ['', '## Errors', *[f'- {e}' for e in errors]]
-    else: md += ['', '## Determination', '', 'This workstream remains **not eligible** for deletion because the target report is unidentified and 18 ranked archives remain uninspected at byte level.']
+    else: md += ['', '## Determination', '', f"This workstream remains **not eligible** for deletion because the target report is unidentified. {len(pending)} ranked archives remain uninspected at byte level; {len(recovered)} recovered archives are hash-controlled and also remain protected from deletion."]
     (out/'summary.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 1 if errors else 0
