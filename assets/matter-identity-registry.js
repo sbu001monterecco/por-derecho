@@ -525,7 +525,10 @@
     const p0 = records.filter(r => r._p0).sort((a,b)=>b._actions.length-a._actions.length || a.name.localeCompare(b.name,lang));
     renderQueue('p0',p0,(_,r)=>`${r._actions.filter(a=>a.priority==='P0').length} P0`);
 
-    const unresolved = (operational.exact_identity_queue || []).map(item => ({...item,record:records.find(r=>r.id===item.id)})).filter(item=>item.record);
+    const unresolved = [
+      ...(operational.exact_identity_queue || []),
+      ...(operational.proceeding_identity_queue || [])
+    ].map(item => ({...item,record:records.find(r=>r.id===item.id)})).filter(item=>item.record);
     renderQueue('unresolved',unresolved,(item)=>item.priority);
 
     const noRoute = records.filter(r=>!r._route).sort((a,b)=>Number(b._p0)-Number(a._p0) || Number(b._actionLinked)-Number(a._actionLinked) || a.name.localeCompare(b.name,lang));
