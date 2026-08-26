@@ -1,0 +1,37 @@
+{
+  "publication_id": "PD-PUB-ONA-CRIM-20260826-02",
+  "title": "ONA funded-exit fact attribution and criminality propagation",
+  "date": "2026-08-26",
+  "status": "STAGED_FOR_PR",
+  "base_main_at_start": "e6b9711425f4a6b79ccb0002fd7c9ac6dc52354f",
+  "branch": "chatgpt/ona-criminality-propagation-20260826",
+  "public_scope": [
+    "en/ona-hotels-insolvency-exit-36-2012/documented-statements-fact-matrix/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/matriz-manifestaciones-hecho-documentadas/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/clubotel-personation-daniel-irigoyen/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/cuatrecasas-debt-certification-finance/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/index.html"
+  ],
+  "repository_scope": [
+    "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_AND_CRIMINALITY_DIGEST_26AUG2026.md"
+  ],
+  "controlling_boundaries": [
+    "No joint witness statement is fabricated; each participant is attributed only their own documented words, acts or procedural role.",
+    "Gil Marer's criminal inference is separately attributed.",
+    "No adjudicated criminal guilt is asserted.",
+    "Private actors, Insolvency Administrator and Magistrate-Judge remain separate actor lanes.",
+    "Later benefit or control is contextual outcome evidence, not automatic proof of earlier agreement or intent.",
+    "Native private-mail identifiers, raw bodies and signatures are not committed to Git."
+  ],
+  "source_ids": ["ONA-FX-001","ONA-FX-002","ONA-FX-003","ONA-FX-004","ONA-FX-005","ONA-FX-006","ONA-FX-007","ONA-FX-008","ONA-FX-009"],
+  "verification_required": [
+    "refresh current main before PR and merge",
+    "compare complete branch diff",
+    "verify bilingual routes and reciprocal links after Pages deployment"
+  ]
+}
