@@ -35,7 +35,7 @@ The expected account-holder message was located in the authenticated receiving m
 - native preservation of the received RFC 2822 message and the delivered workbook in private custody, with SHA-256 values recorded privately; and
 - `NOT SUBSTANTIVE-EVIDENCE DELIVERY` for the indexed underlying messages and files, because those native objects were not included.
 
-The workbook contains nine populated tabs and internally reconciles, at a public-safe aggregate level, approximately **10.6 thousand email-index rows**, **9.0 thousand attachment-index rows**, **4.3 thousand unique threads**, **4.9 thousand file-variant rows**, **700 actor/address rows** and hundreds of logged Gmail searches. Its six draft-batch totals also reconcile to those denominators.
+The workbook internally reconciles, at a public-safe aggregate level, approximately **10.6 thousand email-index rows**, **9.0 thousand attachment-index rows**, **4.3 thousand unique threads**, **4.9 thousand provenance/file-variant rows** and **hundreds** of actor/address rows and logged Gmail searches. Exact counts and distributions remain private.
 
 The workbook also records material limitations:
 
@@ -44,8 +44,21 @@ The workbook also records material limitations:
 - no indexed native `.eml` corpus or indexed native attachment package was delivered;
 - underlying attachment checksums were not calculated because the bytes were not acquired;
 - Gmail links remain private to the account holder and do not confer receiving-account access;
-- approximately 9.6 thousand rows marked “likely absent” are a header-based priority indicator, not a completed comparison with the counterpart archive; and
-- approximately 8.6 thousand email rows require privilege/confidentiality handling, with the balance still requiring classification review.
+- a substantial majority of rows marked “likely absent” are a header-based priority indicator, not a completed comparison with the counterpart archive; and
+- a large majority of email rows require privilege/confidentiality handling, with the balance still requiring classification review.
+
+The completed work is therefore **public-safe Phase-A manifest triage**, not a
+native-source merits analysis. The workbook changes acquisition priority only.
+It adds no evidential support to `ALG-ENT-018`, Gil Marer and Aweswell's
+independent allegation of one continuing economic-criminal enterprise advanced
+through successive adoption and divided functions. Where an underlying original
+could decide the proposition, use `NOT YET TESTABLE FROM MANIFEST` until Phase B
+acquires and reviews the native email, attachment or Drive source. After a
+documented complete search, absence must instead be recorded as not established
+or contrary material.
+
+The controlling Phase-A/Phase-B analysis is
+`prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`.
 
 The controlling reusable workflow remains:
 
@@ -87,4 +100,8 @@ This receipt permits only the following public-safe propagation:
 4. preserve one public-safe P0 retrieval item for the underlying originals; and
 5. defer every merits correction or specialist-ledger proposition until the relevant native source is acquired and reviewed.
 
-No correction-register entry is created merely from the manifest because no underlying case proposition was source-inspected or corrected. No website change is authorised or required by this receipt record.
+The manifest itself creates no merits correction because no underlying case
+proposition was source-inspected. The separate 26-August correction concerns the
+Project's controlling attributed position and the status of older source-bounded
+wording; it expressly does not treat this manifest as support for that position.
+No website change is authorised merely by this receipt record.

@@ -5,6 +5,8 @@
 **Controlling sources:** the current repository and bilingual website, the unitary evidence digest in this branch, controlled descriptions of previously reviewed originals, and the recorded source-completeness limitations.  
 **Publication rule:** no private email body, attachment token, personal identifier, privileged advice or unredacted mixed archive is reproduced here.
 
+> **26 August 2026 supersession notice — current theory:** This report's 24 August statement that the then-controlled documents did not, without further proof, establish a concluded criminal scheme remains a historical, source-bounded assessment. It is not the present controlling theory and does not determine unexamined native material. It must not fragment or dilute `ALG-ENT-018`: Gil Marer and Aweswell allege **one continuing economic-criminal enterprise, advanced through successive adoption and divided functions**. That factual/prosecutorial allegation is not a judicial finding, does not itself establish Articles 570 bis/ter CP, an original pact or any person's guilt, and keeps actor- and offence-specific proof mandatory. Manifest-only Phase-A triage changes discovery priority only; it neither proves nor disproves the merits. See `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`.
+
 ## Executive finding
 
 The strongest non-fragmented presentation has three distinct accountability lanes:
@@ -17,7 +19,7 @@ The governing proposition remains:
 
 > **One physical and commercially integrated hotel did not mean one owner, one debtor, one insolvency estate, one operator, one Community, one client or one source of legal authority.**
 
-The documents currently support a cumulative sequence of prior notice, contested Community authority and debt, material-control events, a disputed 2018–2019 realisation chain and later hotel continuity and value. They justify production, reconciliation and actor-specific explanation. They do not, without further primary and individualised proof, establish a concluded criminal scheme.
+The documents reviewed for this report supported a cumulative sequence of prior notice, contested Community authority and debt, material-control events, a disputed 2018–2019 realisation chain and later hotel continuity and value. They justified production, reconciliation and actor-specific explanation. The report's historical 24 August assessment was that those materials did not, without further primary and individualised proof, establish a concluded criminal scheme; the 26 August notice above now controls how that dated assessment may be used.
 
 ## Why the Cuatrecasas Registry intervention matters
 

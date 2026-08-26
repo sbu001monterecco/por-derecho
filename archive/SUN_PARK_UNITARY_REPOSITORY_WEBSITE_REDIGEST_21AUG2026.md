@@ -12,6 +12,14 @@ This redigest controls over older narrative summaries where they conflict with a
 later correction, primary source, current handover or current procedural record.
 Specialist ledgers continue to control their own detailed source families.
 
+## 26 August 2026 controlling overlay
+
+**`ALG-ENT-018` now controls:** Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. This is their attributed factual/prosecutorial theory, not a judicial finding. The redigest must preserve one integrated chronology and dependency/value chain while proving every actor, period, act/omission and proposed offence separately.
+
+The formulation does not itself establish an original pact, Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Por Derecho bears the evidential burden; no person must disprove the allegation. Apply historically correct offence elements and keep lead, investigation, accusation/charging, trial and conviction sufficiency distinct.
+
+The received `RDM-PRIVATE-MAILBOX-01` package is a manifest/index only. Public-safe manifest triage changes acquisition priority and adds no evidential support to `ALG-ENT-018`; full private Phase A and native email, attachment and Drive Phase B remain open. Earlier dated conclusions remain source-bounded and non-controlling where superseded, without proving the opposite or deciding unexamined originals. Apply `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` and the 26 August master prompt.
+
 This synthesis also absorbs the 21 August reverse-engineering state register,
 evidence-provenance handover, definitive-text/liquidation implementation gate and
 RICPE/San Telmo/RSM reconciliation. Those specialist controls remain governing

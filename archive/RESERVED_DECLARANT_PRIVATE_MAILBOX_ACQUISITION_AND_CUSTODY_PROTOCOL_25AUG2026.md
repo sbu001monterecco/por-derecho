@@ -6,7 +6,7 @@
 
 **Objeto:** preservar y revisar, con autorización de la titular, el buzón privado que contiene correspondencia material de los periodos relevantes
 
-**Estado actual:** tras el aviso de las 22:49 UTC del 25 de agosto de 2026, el buzón receptor autenticado verificó aproximadamente a las 23:13 UTC una transmisión de la titular. El mensaje RFC 2822 recibido y un libro-manifiesto fueron preservados y hash-controlados en custodia privada. El libro reconcilia un amplio índice de Gmail, pero no contiene los correos ni adjuntos nativos indexados; Drive no estuvo disponible/conectado y la comparación con el buzón contraparte sigue abierta. Existe además una copia parcial reflejada en un buzón contraparte conectado y autorizado
+**Estado actual:** tras el aviso de las 22:49 UTC del 25 de agosto de 2026, el buzón receptor autenticado verificó aproximadamente a las 23:13 UTC una transmisión de la titular. El mensaje RFC 2822 recibido y un libro-manifiesto fueron preservados y hash-controlados en custodia privada. El libro reconcilia un amplio índice de Gmail, pero no contiene los correos ni adjuntos nativos indexados; Drive no estuvo disponible/conectado y la comparación con el buzón contraparte sigue abierta. Existe además una copia parcial reflejada en un buzón contraparte conectado y autorizado. El trabajo completado es **Fase A pública-segura sobre el manifiesto**; la adquisición y análisis de originales es **Fase B abierta**
 
 **Privacidad:** la dirección exacta, cuerpos, asuntos, participantes, identificadores de Google y localizadores de mensajes no se publican en GitHub
 
@@ -94,8 +94,30 @@ Antes de examinar o publicar contenido:
 
 ## 7. Criterio de cierre y estado actual
 
-`RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD**. La transmisión recibida preserva un mensaje nativo y un libro-manifiesto en custodia privada; el libro reconcilia aproximadamente 10,6 mil filas de correo, 9,0 mil filas de adjuntos y 4,3 mil hilos. No entrega los originales subyacentes, no contiene una adquisición de Drive y no prueba la ausencia definitiva indicada por su clasificación de prioridad. El corpus reflejado de más de 2.400 mensajes relacionados preserva un punto de partida contraparte importante, pero tampoco autoriza la expresión «todos los correos de la declarante».
+`RDM-PRIVATE-MAILBOX-01` permanece **PARCIAL / NO ADQUIRIDO EN SU TOTALIDAD**. La transmisión recibida preserva un mensaje nativo y un libro-manifiesto en custodia privada; el libro reconcilia aproximadamente 10,6 mil filas de correo, 9,0 mil filas de adjuntos, 4,3 mil hilos, 4,9 mil filas de procedencia/variantes de archivo y cientos de filas de actores/direcciones y búsquedas registradas. Los recuentos exactos permanecen en privado. No entrega los originales subyacentes, no contiene una adquisición de Drive y no prueba la ausencia definitiva indicada por su clasificación de prioridad. El corpus reflejado de más de 2.400 mensajes relacionados preserva un punto de partida contraparte importante, pero tampoco autoriza la expresión «todos los correos de la declarante».
 
 ## 8. Primer traspaso privado recibido — 25 de agosto de 2026
 
 El estado operativo y el resultado verificado constan en `RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md`. Se ejecutó `prompts/RDM_PRIVATE_MAILBOX_INBOUND_EVIDENCE_INGEST_PROMPT_25AUG2026.md`: el mensaje y libro recibidos quedaron preservados con metadatos y hashes en privado, y el denominador interno del libro fue reconciliado. La entrega debe clasificarse como **manifiesto/índice**, no como transferencia de los originales descritos. `ME-090` / `ME-MAIL-RDM-001` siguen abiertos hasta la adquisición nativa, Drive, privilegio, deduplicación, comparación contraparte y recuperación independiente. No se realizó respuesta, reenvío, recordatorio, compartición, publicación ni cambio de buzón.
+
+## 9. Fase A, Fase B y alegación unitaria
+
+La Fase A sólo permite reconciliar el manifiesto, crear lotes opacos, separar
+riesgo de privilegio y priorizar recuperación. No autentica ni corrobora una
+proposición indexada. Cuando el original decisivo no haya sido adquirido, el
+estado es `NOT YET TESTABLE FROM MANIFEST`. Tras una búsqueda completa y
+documentada, la ausencia debe registrarse como no establecida o como material
+contrario; no puede mantenerse indefinidamente como simple brecha de adquisición.
+
+La alegación `ALG-ENT-018` —una sola empresa continuada de criminalidad económica
+mediante adopción sucesiva y división de funciones— pertenece a Gil Marer y
+Aweswell y existe de forma independiente del libro. No es una conclusión judicial
+ni una calificación automática bajo los artículos 570 bis o 570 ter CP. El
+manifiesto no añade apoyo probatorio a esa alegación. Sólo un original adquirido,
+autenticado, contextualizado y contrastado con evidencia adversa puede cambiar
+una proposición de fondo.
+
+La Fase B y el análisis unitario se ejecutan mediante
+`prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`.
+Los resultados completos, consultas, localizadores, matrices de actores,
+decisiones de privilegio, consejos letrados y estrategia permanecen privados.

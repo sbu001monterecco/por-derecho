@@ -65,13 +65,23 @@ The signature page contains signatures on behalf of **Aweswell Limited** and **M
 
 **Private retrieval alias:** `RDM-PRIVATE-MAILBOX-01`; exact account, message, filename, provider identifiers, hashes and custody locators remain outside public Git.
 
-**Verified receipt:** one native inbound message and one delivered workbook were preserved and hash-controlled privately on 25-Aug-2026. The nine-tab workbook internally reconciles, at a public-safe aggregate level, approximately 10.6 thousand Gmail evidence rows, 9.0 thousand attachment rows and 4.3 thousand unique threads, with named retrieval signals for the requested Sun Park, Luchy Playa Blanca, Comunidad, former-lawyer and Insolvency Administrator perimeter.
+**Verified receipt:** one native inbound message and one delivered workbook were preserved and hash-controlled privately on 25-Aug-2026. The workbook internally reconciles, at a public-safe aggregate level, approximately 10.6 thousand email-index rows, 4.3 thousand threads, 9.0 thousand attachment-index rows, 4.9 thousand provenance/file-variant rows and hundreds of actor/address rows and logged searches. Exact counts, queries and distributions remain private.
 
 **Controlled significance:** this is a high-value search and retrieval map for a large account-holder corpus and identifies priority material likely absent from the connected counterpart archive. It is not independent corroboration of the indexed propositions and does not establish any person's capacity, knowledge, intent, responsibility or criminality.
 
 **Critical limitations:** the workbook is a manifest, not the indexed native corpus. No underlying native email or attachment package was delivered; Drive was unavailable/not connected; private Gmail links do not confer recipient access; attachment/file hashes were not calculated; the “likely absent” indicator was not compared with Gil's archive; and privilege/confidentiality review remains substantial.
 
-**Next source actions:** complete an account-holder-controlled Takeout and/or verified Gmail API RAW export; acquire retrievable attachments and Google Drive owned/shared/linked files in controlled batches; preserve untouched masters, hashes, errors and revision metadata; reconcile Message-ID/thread/body/attachment hashes and variants against the counterpart corpus; then review privilege, supporting/adverse/contradictory effect and proposition-level relevance before any merits propagation.
+**Phase and allegation boundary:** public-safe Phase-A manifest triage is complete;
+native Gmail, attachment and Drive acquisition/review is Phase B and remains open.
+The workbook changes retrieval priority only and adds no evidential support to
+`ALG-ENT-018`, Gil Marer and Aweswell's independent allegation of one continuing
+economic-criminal enterprise advanced through successive adoption and divided
+functions. This is an attributed investigative model, not a finding or automatic
+CP 570 bis/ter classification. Use `NOT YET TESTABLE FROM MANIFEST` where a
+decisive original remains unacquired; after a documented complete search, record
+absence as not established or contrary material.
+
+**Next source actions:** execute `prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`; complete an account-holder-controlled Takeout and/or verified Gmail API RAW export; acquire retrievable attachments and Google Drive owned/shared/linked files in controlled batches; preserve untouched masters, hashes, errors and revision metadata; reconcile Message-ID/thread/body/attachment hashes and variants against the counterpart corpus; then review privilege, supporting/adverse/contradictory effect and proposition-level relevance before any merits propagation.
 
 ## P1-01 — Montelanza 2008 / 2012 annual-account deposits
 

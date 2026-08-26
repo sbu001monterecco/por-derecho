@@ -18,6 +18,14 @@ It supplements, but does not silently replace:
 
 This is a strategy and source-status control. It is not a substitute for evidence and does not convert any allegation into an adjudicated finding of guilt.
 
+## 26 August 2026 current-theory and private-source addendum
+
+**`ALG-ENT-018` now controls:** Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. This is their attributed factual/prosecutorial theory, not a judicial finding. It does not itself establish an original pact, Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Each actor, period, act or omission and proposed offence must satisfy its own historically applicable elements; Por Derecho bears the evidential burden and no person must disprove the allegation.
+
+The received `RDM-PRIVATE-MAILBOX-01` package is a manifest/index only. Public-safe manifest triage does not authenticate or establish any indexed proposition; full private Phase A and native email, attachment and Drive Phase B remain open. The manifest changes acquisition priority and adds no evidential support to `ALG-ENT-018` until relevant originals are lawfully acquired, authenticated, contextualised and tested against contrary material.
+
+Any earlier conclusion in this dated handover or a linked digest is source-bounded and non-controlling where it conflicts with the 26 August overlay. Supersession is not proof of the opposite. Report lead, investigation, accusation/charging, trial and conviction sufficiency separately. Apply the controlling addendum and master prompt at `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` and `archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`.
+
 ## 2. Unitary prosecution allegation
 
 Por Derecho alleges a continuing economic-criminal enterprise advanced through **successive adoption and divided functions**, rather than requiring proof that every participant joined one agreement at the same time.

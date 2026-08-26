@@ -1,7 +1,7 @@
 # ALLEGATIONS RETRIEVAL GATE — Project Sun Rock / Por Derecho
 
 **Date:** 16 August 2026  
-**Updated:** 19 August 2026  
+**Updated:** 26 August 2026
 **Status:** mandatory routing control for allegation-, complaint-, criminal-theory-, accountability- and website-update work.
 
 ## Purpose
@@ -11,12 +11,14 @@ This file exists so a fresh ChatGPT thread does not depend on GitHub code-search
 Whenever a substantive Project Sun Rock / Por Derecho task touches **what has been alleged, what the current theory is, criminal complaints, actor responsibility, DP 1901/2026, DP 1956/2026, Control 21/22/24, the 2023 Audiencia Nacional querella, judicial/AC/private-actor accountability, or public website wording derived from those subjects**, the thread must read and apply:
 
 1. `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md`
-2. **`archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md` whenever DP 1956/2026, Control 22, AC criminal/accounting status, reopening, preservation or downstream website wording is in scope. This 18-Aug overlay controls over the older crosswalk/master-register wording that reported a reform/subsidiary appeal.**
-3. `archive/knowledge-project/SOURCE_DIGEST_AN_DP91_2023_QUERELLA_RESOLUTIONS_16AUG2026.md`
-4. `archive/CORRECTION_REGISTER.md`
-5. `archive/MISSING_EVIDENCE_REGISTER.md`
-6. `archive/SUN_PARK_NONCONVALIDATION_CALIFICACION_OLAF_PINK_CONTINUUM_FIVE_SOURCE_INGEST_17AUG2026.md` when the task touches the 2018 disposal/non-convalidation chain, the 27-Jan-2026 Pink continuum complaint, the 7-Jan-2025 OLAF/public-funds alert or the 6-Jun-2019 Calificación opposition;
-7. the relevant specialist ledger/protocol and current primary source.
+2. **`archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` whenever the task touches the current unitary theory, the reserved declarant mailbox/Drive manifest or whether older evidence digests set the present evidential ceiling. This overlay controls the current attributed proposition `ALG-ENT-018`.**
+3. **`archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md` for any authorised private native-email/Drive analysis. It is a public-safe method template, not a public source corpus and not authority to publish private material.**
+4. **`archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md` whenever DP 1956/2026, Control 22, AC criminal/accounting status, reopening, preservation or downstream website wording is in scope. This 18-Aug overlay controls over the older crosswalk/master-register wording that reported a reform/subsidiary appeal.**
+5. `archive/knowledge-project/SOURCE_DIGEST_AN_DP91_2023_QUERELLA_RESOLUTIONS_16AUG2026.md`
+6. `archive/CORRECTION_REGISTER.md`
+7. `archive/MISSING_EVIDENCE_REGISTER.md`
+8. `archive/SUN_PARK_NONCONVALIDATION_CALIFICACION_OLAF_PINK_CONTINUUM_FIVE_SOURCE_INGEST_17AUG2026.md` when the task touches the 2018 disposal/non-convalidation chain, the 27-Jan-2026 Pink continuum complaint, the 7-Jan-2025 OLAF/public-funds alert or the 6-Jun-2019 Calificación opposition;
+9. the relevant specialist ledger/protocol and current primary source.
 
 ### Mandatory DP 1956/2026 status correction
 
@@ -42,10 +44,10 @@ If the task concerns any of the following:
 
 also open by direct path:
 
-8. `archive/CALIFICACION_EXTRACONCURSAL_FORCE_AUTHORITY_LAUNDERING_ALLEGATION_16AUG2026.md`
-9. `archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
-10. `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md`
-11. `archive/EXTRACONCURSAL_ONGOING_HARM_AUDIT_15AUG2026.md`
+10. `archive/CALIFICACION_EXTRACONCURSAL_FORCE_AUTHORITY_LAUNDERING_ALLEGATION_16AUG2026.md`
+11. `archive/CALIFICACION_2018_CREDITOR_IN_MATERIAL_POSSESSION_CONTROL_LEDGER_16AUG2026.md`
+12. `archive/P19_SUN_PARK_MATERIAL_CONTROL_POSSESSION_CONTINUITY_MEETING_POINT_15AUG2026.md`
+13. `archive/EXTRACONCURSAL_ONGOING_HARM_AUDIT_15AUG2026.md`
 
 The first of those four files is the **current canonical first-person allegation / legal-hypothesis overlay**. It does not supersede CR-018 or turn criminal terminology into adjudicated fact. Its core distinction is:
 
@@ -69,7 +71,20 @@ If the task relies on the 27-Jan-2026 complaint's proposition that Pink was trea
 
 Only after that reconciliation classify the propositions as genuinely contradictory, legally distinguishable or unresolved. Also apply CR-032: Spanish Monterecco Sun Park, S.L. and Pink Canary Services, S.L. are the same Spanish company under a name change, distinct from UK Monterecco/Aweswell.
 
-The crosswalk is the canonical retrieval layer for the evolution from the broad 2023 pleading to the narrower 2026 evidence-led tracks. It does **not** replace primary evidence and it does **not** convert pleaded accusations into facts. The DP1956 correction overlay is controlling where the older crosswalk procedural-status cell conflicts with it.
+The crosswalk is the canonical retrieval layer for the evolution from the broad 2023 pleading through the actor- and offence-specific 2026 evidence method to the current `ALG-ENT-018` position. Gil Marer and Aweswell allege **one continuing economic-criminal enterprise, advanced through successive adoption and divided functions**. The evidence method must therefore be unitary and non-fragmented while proof remains individual and offence-specific. The crosswalk does **not** replace primary evidence and it does **not** convert the allegation into a finding. The DP1956 correction overlay is controlling where the older crosswalk procedural-status cell conflicts with it.
+
+### Mandatory `ALG-ENT-018` boundary
+
+Do not use the 24 August digest sentence that the then-controlled documents did not by themselves establish a concluded criminal scheme as a present controlling conclusion, an evidential ceiling, or a reason to fragment or dilute `ALG-ENT-018`. It remains a dated, source-bounded historical assessment. It did not decide originals that had not been examined. A manifest-only Phase-A triage likewise does not decide the merits.
+
+The current public-safe form must preserve all of the following in the same containing block:
+
+- direct attribution to Gil Marer and Aweswell;
+- `allegation ≠ judicial finding`;
+- one alleged enterprise may involve successive adoption and divided functions without alleging that every actor made the original plan or performed every act;
+- individual and offence-specific proof remains mandatory;
+- the factual expression does not itself establish Articles 570 bis/ter CP, a `delito continuado` or a permanent offence, and does not alter consummation, participation windows or prescription;
+- the mailbox/Drive manifest is independent discovery metadata and adds no evidential support to `ALG-ENT-018` until native originals are acquired, authenticated and adversarially tested.
 
 ## Mandatory search behavior
 
@@ -78,7 +93,7 @@ A future thread must not stop merely because a repository keyword search fails t
 Use the crosswalk and, where relevant, the DP1956 correction overlay, force/authority and five-source ledgers to:
 
 - recover the complete historic allegation families;
-- distinguish historic 2023/2025 allegations from current 2026 investigative hypotheses;
+- distinguish historic 2023/2025 allegations, current offence-specific hypotheses and the active `ALG-ENT-018` attributed case theory;
 - identify which allegations were narrowed, retired or corrected;
 - recover linked proceedings and adverse/procedural outcomes;
 - identify evidence gaps and next retrieval targets;
@@ -86,14 +101,14 @@ Use the crosswalk and, where relevant, the DP1956 correction overlay, force/auth
 - prevent entity-merging, title/control conflation, chronology-to-causation leaps and pleading-as-fact errors;
 - preserve the distinction `LPB estate authority ≠ whole-hotel authority`;
 - separate source-supported de facto material/access/operational control from Gil Marer's allegation of full practical possession and from his criminal characterisation of that possession as illegal/fraudulent/forcible/clandestine;
-- test every asserted AC/Fiscal/Judge/private-actor link separately rather than turning the integrated allegation into proof of a conspiracy;
+- test every asserted AC/Fiscal/Judge/private-actor link separately within the integrated theory rather than treating integration itself as proof of participation or guilt;
 - distinguish notice that an allegation was made from transaction-level proof of the underlying money flow or offence.
 
 ## Search aliases
 
 Treat these as routing aliases into the crosswalk, DP1956 correction overlay, source digest and, where applicable, the force/authority or five-source ledger:
 
-`querella` · `AN 2023` · `Audiencia Nacional` · `DP 91/2023` · `Rollo 120/2024` · `Auto 119/2024` · `Casación 1867/2024` · `DP 1901/2026` · `DP1901` · `Control 21` · `NEXUS 36` · `DP 1956/2026` · `DP1956` · `Control 22` · `sobreseimiento provisional` · `reapertura` · `reopening` · `Control 24` · `Administrador Concursal` · `Borja` · `Acosta Matos` · `CAM` · `PH122` · `Promontoria` · `Community debt` · `Comunidad` · `OB REM` · `400000` · `350000` · `ACTUA` · `Gesvalt` · `RICPE` · `RPE` · `OLAF` · `FTI rescue` · `Meeting Point SEPI` · `triple dipping` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Pink Canary` · `Monterecco Sun Park SL` · `27ENE2026` · `continuum` · `estafa procesal` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting` · `prevaricación` · `administración desleal` · `cohecho` · `organización criminal` · `force` · `forced possession` · `clandestine possession` · `keys` · `security` · `locks` · `extraconcursal` · `overreach` · `authority laundering` · `authority recycling` · `circular self-legitimation` · `instrumentalisation` · `non-convalidation` · `no convalidación` · `24-Oct-2019` · `24-Feb-2021` · `12-May-2021` · `Carlos Saavedra` · `PwC Canarias` · `PwC Tenerife` · `11JUN2016` · `26ABR2016` · `FMMM` · `Francisco Mario Matos Matas` · `Paco Matos` · `Cox` · `Thompson` · `former client` · `information barrier`.
+`querella` · `AN 2023` · `Audiencia Nacional` · `DP 91/2023` · `Rollo 120/2024` · `Auto 119/2024` · `Casación 1867/2024` · `DP 1901/2026` · `DP1901` · `Control 21` · `NEXUS 36` · `DP 1956/2026` · `DP1956` · `Control 22` · `sobreseimiento provisional` · `reapertura` · `reopening` · `Control 24` · `ALG-ENT-018` · `one continuing economic-criminal enterprise` · `successive adoption` · `divided functions` · `empresa continuada de criminalidad económica` · `adopción sucesiva` · `división de funciones` · `Administrador Concursal` · `Borja` · `Acosta Matos` · `CAM` · `PH122` · `Promontoria` · `Community debt` · `Comunidad` · `OB REM` · `400000` · `350000` · `ACTUA` · `Gesvalt` · `RICPE` · `RPE` · `OLAF` · `FTI rescue` · `Meeting Point SEPI` · `triple dipping` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Pink Canary` · `Monterecco Sun Park SL` · `27ENE2026` · `continuum` · `estafa procesal` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting` · `prevaricación` · `administración desleal` · `cohecho` · `organización criminal` · `force` · `forced possession` · `clandestine possession` · `keys` · `security` · `locks` · `extraconcursal` · `overreach` · `authority laundering` · `authority recycling` · `circular self-legitimation` · `instrumentalisation` · `non-convalidation` · `no convalidación` · `24-Oct-2019` · `24-Feb-2021` · `12-May-2021` · `Carlos Saavedra` · `PwC Canarias` · `PwC Tenerife` · `11JUN2016` · `26ABR2016` · `FMMM` · `Francisco Mario Matos Matas` · `Paco Matos` · `Cox` · `Thompson` · `former client` · `information barrier`.
 
 ## Current corrections that must accompany the allegation architecture
 

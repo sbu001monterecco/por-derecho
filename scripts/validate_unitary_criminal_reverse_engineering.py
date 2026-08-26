@@ -14,12 +14,14 @@ errors: list[str] = []
 
 required = {
     "es/ingenieria-inversa-criminal-unitaria/index.html": [
-        "No son irregularidades aisladas",
+        "¿Existió una sola empresa continuada y, en su caso, cómo convirtió crédito y control en título, financiación y explotación?",
+        "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.",
         "Los quince puntos más fuertes",
         MARKER,
     ],
     "en/unitary-criminal-reverse-engineering/index.html": [
-        "These are not isolated irregularities",
+        "Was there one continuing enterprise and, if so, how did it convert credit and control into title, finance and operation?",
+        "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.",
         "The fifteen strongest points",
         MARKER,
     ],

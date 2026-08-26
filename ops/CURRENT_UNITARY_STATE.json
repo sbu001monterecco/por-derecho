@@ -54,6 +54,18 @@
       "conclusion": "success"
     }
   },
+  "pending_material_publication": {
+    "control_id": "PD-UNITARY-STATE-20260826-01",
+    "state": "PREPARED_PENDING_MERGE",
+    "control_date": "2026-08-26",
+    "source_main_sha": "5b1652e00151a3ea2944cd0519cdaf2e04da4453",
+    "publication_manifest": "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json",
+    "position_addendum": "archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
+    "analysis_prompt": "archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
+    "repository_latest_material_date": "2026-08-26",
+    "live_verification": "PENDING_MERGE_DEPLOYMENT_AND_EXACT_EDGE_READBACK",
+    "rule": "Prepared repository material is not LIVE_VERIFIED and does not replace the last independently verified specialist release until the merge SHA is deployed and exact affected-route readback succeeds."
+  },
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
     "control_date": "2026-08-25",
@@ -64,10 +76,12 @@
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
-    "latest_material_date": "2026-08-25",
+    "latest_material_date": "2026-08-26",
+    "repository_latest_material_date": "2026-08-26",
+    "last_live_verified_material_date": "2026-08-25",
     "languages": ["es","en"],
     "public_routes": ["/es/actualizaciones/","/en/updates/"],
-    "public_parity": "LIVE_VERIFIED"
+    "public_parity": "2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING"
   },
   "procedural_checkpoints": {
     "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",

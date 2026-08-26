@@ -1,0 +1,275 @@
+name: Verify unitary enterprise attribution and live parity
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/mapa-probatorio-penal-unitario/**'
+      - 'en/unitary-criminal-evidence-map/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/ingenieria-forense-criminal-sun-park/**'
+      - 'en/sun-park-criminal-engineering-investigation/**'
+      - 'es/registro-unitario/**'
+      - 'en/unitary-record/**'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'assets/prosecution-public-entry-20260821.js'
+      - 'assets/criminal-engineering-investigation-20260819.js'
+      - 'assets/site.js'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'assets/data/material-updates-v1.json'
+      - 'PROSECUTION_PUBLIC_STATE_21AUG2026.json'
+      - 'CHATGPT_START_HERE.md'
+      - 'CURRENT_HANDOVER_PROSECUTION_REVERSE_ENGINEERING_21AUG2026.md'
+      - 'CURRENT_PUBLIC_PROSECUTION_SHARPENING_21AUG2026.md'
+      - 'archive/CHATGPT_PROMPT_LIBRARY.md'
+      - 'archive/COMUNIDAD_UNITARY_REVERSE_ENGINEERING_PROSECUTION_CRIMINAL_LENSES_PROMPT_18AUG2026.md'
+      - 'archive/CRIMINAL_FIRST_UNITARY_REVERSE_ENGINEERING_2011_TO_PRESENT_25AUG2026.md'
+      - 'archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md'
+      - 'archive/POR_DERECHO_UNITARY_CASE_RECONSTRUCTION_MULTIDISCIPLINARY_CRIMINAL_FORENSIC_PROTOCOL_17AUG2026.md'
+      - 'archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md'
+      - 'archive/RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md'
+      - 'archive/RECENT_EMAIL_PRIMARY_SOURCE_INGEST_QUEUE_20AUG2026.md'
+      - 'archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md'
+      - 'archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md'
+      - 'archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md'
+      - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
+      - 'archive/knowledge-project/ALLEGATIONS_RETRIEVAL_GATE_16AUG2026.md'
+      - 'reports/UNITARY_EVIDENCE_DIGEST_24AUG2026.md'
+      - 'reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md'
+      - 'publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'CURRENT_UNITARY_STATE.md'
+      - 'scripts/sync_unitary_enterprise_attribution_20260826.py'
+      - 'scripts/validate_unitary_enterprise_attribution.py'
+      - 'scripts/validate_unitary_control_plane.py'
+      - 'scripts/audit_criminal_engineering_repository.py'
+      - 'scripts/render_audience_experience.mjs'
+      - 'scripts/validate_audience_experience.py'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
+      - 'sitemap*.xml'
+      - '.github/workflows/verify-unitary-enterprise-attribution-live.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/index.html'
+      - 'en/index.html'
+      - 'es/mapa-probatorio-penal-unitario/**'
+      - 'en/unitary-criminal-evidence-map/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/ingenieria-forense-criminal-sun-park/**'
+      - 'en/sun-park-criminal-engineering-investigation/**'
+      - 'es/registro-unitario/**'
+      - 'en/unitary-record/**'
+      - 'es/actualizaciones/**'
+      - 'en/updates/**'
+      - 'assets/prosecution-public-entry-20260821.js'
+      - 'assets/criminal-engineering-investigation-20260819.js'
+      - 'assets/site.js'
+      - 'assets/data/criminal-engineering-investigation-v1.json'
+      - 'assets/data/material-updates-v1.json'
+      - 'PROSECUTION_PUBLIC_STATE_21AUG2026.json'
+      - 'CHATGPT_START_HERE.md'
+      - 'CURRENT_HANDOVER_PROSECUTION_REVERSE_ENGINEERING_21AUG2026.md'
+      - 'CURRENT_PUBLIC_PROSECUTION_SHARPENING_21AUG2026.md'
+      - 'archive/CHATGPT_PROMPT_LIBRARY.md'
+      - 'archive/COMUNIDAD_UNITARY_REVERSE_ENGINEERING_PROSECUTION_CRIMINAL_LENSES_PROMPT_18AUG2026.md'
+      - 'archive/CRIMINAL_FIRST_UNITARY_REVERSE_ENGINEERING_2011_TO_PRESENT_25AUG2026.md'
+      - 'archive/EXPRESS_CRIMINAL_ATTRIBUTION_NON_DILUTION_SOURCE_FIDELITY_RULE_23AUG2026.md'
+      - 'archive/POR_DERECHO_UNITARY_CASE_RECONSTRUCTION_MULTIDISCIPLINARY_CRIMINAL_FORENSIC_PROTOCOL_17AUG2026.md'
+      - 'archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_21AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md'
+      - 'archive/RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md'
+      - 'archive/RECENT_EMAIL_PRIMARY_SOURCE_INGEST_QUEUE_20AUG2026.md'
+      - 'archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md'
+      - 'archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md'
+      - 'archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md'
+      - 'archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md'
+      - 'archive/knowledge-project/ALLEGATIONS_RETRIEVAL_GATE_16AUG2026.md'
+      - 'reports/UNITARY_EVIDENCE_DIGEST_24AUG2026.md'
+      - 'reports/2018_PROTECTION_QUESTION_AND_DO_OVER_24AUG2026.md'
+      - 'publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json'
+      - 'ops/CURRENT_UNITARY_STATE.json'
+      - 'CURRENT_UNITARY_STATE.md'
+      - 'scripts/sync_unitary_enterprise_attribution_20260826.py'
+      - 'scripts/validate_unitary_enterprise_attribution.py'
+      - 'scripts/validate_unitary_control_plane.py'
+      - 'scripts/audit_criminal_engineering_repository.py'
+      - 'scripts/render_audience_experience.mjs'
+      - 'scripts/validate_audience_experience.py'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
+      - 'sitemap*.xml'
+      - '.github/workflows/verify-unitary-enterprise-attribution-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unitary-enterprise-attribution-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-and-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Validate all eighteen real attribution blocks (read only)
+        run: |
+          python3 scripts/sync_unitary_enterprise_attribution_20260826.py
+          git diff --exit-code
+
+      - name: Validate attributed-enterprise and manifest controls
+        run: python3 scripts/validate_unitary_enterprise_attribution.py
+
+      - name: Validate synchronized specialist state
+        run: python3 scripts/validate_unitary_control_plane.py
+
+      - name: Verify deployed exact blocks and machine boundaries
+        if: github.event_name != 'pull_request'
+        env:
+          BASE: https://sbu001monterecco.github.io/por-derecho
+        shell: python
+        run: |
+          import json
+          import os
+          import time
+          import urllib.request
+
+          base = os.environ['BASE'].rstrip('/')
+          en = 'Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.'
+          es = 'Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.'
+          en_time = 'This is only a factual allegation of connection: it does not characterise the conduct as a continuing or permanent offence or alter completion, any participation window or limitation period for any specific offence.'
+          es_time = 'Esta es solo una alegación fáctica de conexión: no califica los hechos como delito continuado o permanente ni altera la consumación, la ventana de participación o la prescripción de ningún delito concreto.'
+          en_boundary = [en, en_time, '570 bis', '570 ter', 'original pact', 'any person’s participation or guilt', 'not a judicial finding']
+          es_boundary = [es, es_time, '570 bis', '570 ter', 'pacto originario', 'la participación de persona alguna ni culpabilidad', 'hallazgo judicial']
+
+          targets = {}
+          for route in (
+              '/en/',
+              '/en/unitary-criminal-evidence-map/',
+              '/en/unitary-criminal-reverse-engineering/',
+              '/en/sun-park-criminal-engineering-investigation/',
+              '/en/unitary-record/',
+              '/en/updates/',
+              '/en/updates/feed.xml',
+          ):
+              targets[route] = en_boundary
+          for route in (
+              '/es/',
+              '/es/mapa-probatorio-penal-unitario/',
+              '/es/ingenieria-inversa-criminal-unitaria/',
+              '/es/ingenieria-forense-criminal-sun-park/',
+              '/es/registro-unitario/',
+              '/es/actualizaciones/',
+              '/es/actualizaciones/feed.xml',
+          ):
+              targets[route] = es_boundary
+          targets['/assets/prosecution-public-entry-20260821.js'] = en_boundary + es_boundary
+          targets['/assets/criminal-engineering-investigation-20260819.js'] = en_boundary + es_boundary
+          targets['/assets/data/material-updates-v1.json'] = ['ALG-ENT-018', '2026-08-26', 'manifest', 'adds no evidential support']
+          targets['/archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md'] = [
+              'ALG-ENT-018', 'one continuing economic-criminal enterprise', 'successive adoption and divided functions',
+              'CP 570 bis', 'CP 570 ter', 'adds **no evidential support to `ALG-ENT-018`**', 'NOT YET TESTABLE FROM MANIFEST',
+          ]
+          targets['/archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md'] = [
+              'MANIFEST-ONLY PHASE A', 'NATIVE PHASE B OPEN', 'ALG-ENT-018', 'NOT YET TESTABLE FROM MANIFEST',
+          ]
+
+          def fetch(route, attempt):
+              url = f"{base}{route}{'&' if '?' in route else '?'}pdue={int(time.time())}-{attempt}"
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      'User-Agent': 'por-derecho-unitary-enterprise-verifier/1.0',
+                      'Cache-Control': 'no-cache',
+                      'Pragma': 'no-cache',
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  if response.status != 200:
+                      raise RuntimeError(f'HTTP {response.status}')
+                  return response.read().decode('utf-8', errors='replace')
+
+          failures = []
+          for route, markers in targets.items():
+              last = ''
+              for attempt in range(1, 19):
+                  try:
+                      body = fetch(route, attempt)
+                      lowered = body.lower()
+                      missing = [marker for marker in markers if marker.lower() not in lowered]
+                      if not missing:
+                          print(f'LIVE VERIFIED {route} :: {len(body.encode("utf-8"))} bytes :: {len(markers)} markers')
+                          break
+                      last = f'missing {missing}'
+                  except Exception as exc:
+                      last = repr(exc)
+                  time.sleep(10)
+              else:
+                  failures.append(f'{route}: {last}')
+
+          state_route = '/ops/CURRENT_UNITARY_STATE.json'
+          manifest_route = '/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json'
+          for route, validator in (
+              (state_route, lambda value: value.get('control_id') == 'PD-UNITARY-STATE-20260825-01'
+               and value.get('status') == 'LIVE_VERIFIED'
+               and value.get('pending_material_publication', {}).get('control_id') == 'PD-UNITARY-STATE-20260826-01'
+               and value.get('pending_material_publication', {}).get('state') == 'PREPARED_PENDING_MERGE'),
+              (manifest_route, lambda value: value.get('control_id') == 'PD-UNITARY-STATE-20260826-01'
+               and value.get('current_state') == 'PREPARED_PENDING_MERGE'
+               and value.get('controlling_allegation', {}).get('independent_of_rdm_manifest') is True
+               and value.get('controlling_allegation', {}).get('rdm_manifest_evidential_support') == 'NONE_UNTIL_RELEVANT_NATIVES_ARE_ACQUIRED_AUTHENTICATED_AND_TESTED'),
+          ):
+              last = ''
+              for attempt in range(1, 19):
+                  try:
+                      value = json.loads(fetch(route, attempt))
+                      if validator(value):
+                          print(f'LIVE VERIFIED {route} :: structured JSON')
+                          break
+                      last = 'structured boundary mismatch'
+                  except Exception as exc:
+                      last = repr(exc)
+                  time.sleep(10)
+              else:
+                  failures.append(f'{route}: {last}')
+
+          if failures:
+              raise SystemExit('UNITARY ENTERPRISE LIVE VERIFICATION FAILED\n - ' + '\n - '.join(failures))
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '## Unitary enterprise attribution verification'
+            echo
+            echo "- Event: $GITHUB_EVENT_NAME"
+            echo "- SHA: $GITHUB_SHA"
+            echo '- Source gate: 18 exact same-block ES/EN attributions, read only.'
+            echo '- Allegation: `ALG-ENT-018`; `ALG-ORG-011` remains retired.'
+            echo '- State boundary: 25-Aug remains LIVE_VERIFIED; 26-Aug is PREPARED_PENDING_MERGE.'
+            if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
+              echo '- Public edge readback is reserved for the post-merge main push.'
+            else
+              echo '- Public ES/EN routes, feeds, runtime assets, controls and structured machine records were read back without cache.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

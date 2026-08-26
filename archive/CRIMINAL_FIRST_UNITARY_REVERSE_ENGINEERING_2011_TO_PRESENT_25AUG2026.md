@@ -4,6 +4,14 @@
 **Status:** CANONICAL INVESTIGATIVE CONTROL — ALLEGATIONS, EVIDENCE GRADES AND OPEN QUESTIONS KEPT SEPARATE  
 **Scope:** 2008–2010 context → 2-Feb-2011 governance/litigation intervention → 22-Jun-2011 debt/vote/authority mechanism → JV 1260/2011 / AP 89/2014 → Concurso 36/2012 → 2016 knowledge checkpoint → 2018 funded-exit / access / material-control sequence → CAM/Acosta Matos convergence → calificación and current criminal/institutional tracks.
 
+## 26 August 2026 controlling addendum
+
+**`ALG-ENT-018` now controls:** Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. It is an attributed factual/prosecutorial theory, not a judicial finding. Reverse engineering must remain unitary forwards and backwards, while proof remains actor-, period-, act/omission- and offence-specific.
+
+Successive adoption does not retroactively create participation under Articles 28–29 CP. The factual enterprise formulation does not itself prove an original pact, Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Apply the offence text in force at the material time and lex mitior where relevant. Por Derecho bears the evidential burden; no person must disprove the allegation. Report lead, investigation, accusation/charging, trial and conviction sufficiency separately.
+
+The received `RDM-PRIVATE-MAILBOX-01` package is a manifest/index, not the native corpus. Public-safe manifest triage changes discovery priority and adds no evidential support to `ALG-ENT-018`; full private Phase A and native email, attachment and Drive Phase B remain open. Earlier dated assessments remain source-bounded historical controls where material, but do not define the present evidential ceiling or prove the opposite. Apply `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` and the 26 August master prompt.
+
 ## Governing rule
 
 The project may describe the 2011 events as an alleged **hijacking / takeover of Community governance** where clearly attributed to Gil Marer or another declarant. It must not present a criminal conspiracy, friendship, corruption, deliberate falsity, fraud, disloyal administration or judicial wrongdoing as established unless the relevant legal and evidentiary elements are actually supported.
