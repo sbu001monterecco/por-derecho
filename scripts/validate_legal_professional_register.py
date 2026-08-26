@@ -92,10 +92,10 @@ def main() -> int:
         if len(identities) != len(parts):
             fail("duplicate immutable identity ID")
         counts = index.get("counts", {})
-        if counts.get("total") != 185 or counts.get("PERSON") != 86 or counts.get("ORGANISATION") != 66:
-            fail("canonical registry counts do not reflect professional extension")
-        if len(parts) != 185:
-            fail("canonical registry part total is not 185")
+        if counts.get("total") != 187 or counts.get("PERSON") != 88 or counts.get("ORGANISATION") != 66:
+            fail("canonical registry counts do not reflect professional extension plus owner-network actors")
+        if len(parts) != 187:
+            fail("canonical registry part total is not 187")
 
         records = reg.get("records", [])
         if len(records) != 40:
@@ -209,14 +209,12 @@ def main() -> int:
             fail("explicitly excluded person appears in professional identity extension")
 
         print("LEGAL PROFESSIONAL REGISTER: PASS")
-        print(" - canonical identities: 185 (86 people; 66 organisations)")
-        print(" - professional roster: 40")
+        print(" - canonical identities: 187 (88 people; 66 organisations)")
+        print(" - professional roster: 40 (unchanged)")
         print(" - current lawyers: 3; former/review lawyers: 31")
         print(" - procuradores/as: 2 current + 4 former")
         print(" - Adriana Hernández Díaz: court-record-verified procuradora")
-        print(" - source-name variants: preserved")
-        print(" - Alas working-professional set: complete")
-        print(" - explicit exclusion: enforced")
+        print(" - owner-network Acosta Matos actors are not reclassified as legal professionals")
         return 0
     except AssertionError as exc:
         print(f"LEGAL PROFESSIONAL REGISTER: FAIL\n - {exc}", file=sys.stderr)
