@@ -125,7 +125,7 @@ def filing_rows(records: list[dict], lane: str, lang: str) -> str:
     for record in (item for item in records if item["lane"] == lane and item["record_class"] == "party"):
         status = html.escape(record["copy_status"])
         rows.append(
-            f'<li><time datetime="{record["date"]}">{format_date(record["date"], lang)}</time>'
+            f'<li id="{record["id"]}"><time datetime="{record["date"]}">{format_date(record["date"], lang)}</time>'
             f'<div><span class="doc-id">{record["id"]}</span><h3>{html.escape(record["title"])}</h3>'
             f'<p>{html.escape(record["actor"])} · {html.escape(record["instrument"])} · {html.escape(record["procedure"])}</p>'
             f'<small>{status}</small></div><div class="actions">{document_links(record, lang)}</div></li>'
@@ -154,6 +154,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "scope": "Regla de alcance",
             "scope_text": "La solicitud de separación y la demanda de honorarios fueron desestimadas en primera instancia por legitimación activa. Las resoluciones localizadas no decidieron el fondo de los siete motivos de separación ni la legalidad material o cuantía de los honorarios. El Auto 223/2026 acumuló las apelaciones de separación; no las resolvió sobre el fondo.",
             "nav_coverage": "Cobertura total",
+            "nav_analysis": "Análisis unitario",
             "nav_decisions": "Decisiones 2024–2026",
             "nav_text": "Texto judicial completo",
             "nav_filings": "Escritos de parte",
@@ -173,10 +174,13 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "gaps_kicker": "Completitud verificable",
             "gaps_h2": "Lo que falta se registra; no se inventa",
             "gaps": [
+                "No se ha obtenido un índice cronológico certificado del expediente completo del Concurso 36/2012; los 50 registros especialistas y el catálogo unitario son inventarios parciales controlados.",
                 "No se localizó como archivo autónomo el Decreto de 1 de septiembre de 2025 ni la diligencia de 17/26 de marzo de 2025 citados en el incidente de aclaración de honorarios.",
                 "No se localizó acta o grabación de la audiencia previa de 20 de enero de 2026.",
                 "No se localizó una resolución firmada posterior que decida el fondo del RPL 421/2026.",
                 "No se localizó una resolución de fondo posterior al Auto 223/2026 en los RPL 3304/2025 y 3319/2025 acumulados.",
+                "Diligencias Preliminares 459/2024 aparece en escritos y sentencia, pero faltan el órgano exacto y su expediente autónomo certificado.",
+                "Falta el puente completo de autos de retribución, prórrogas, facturas, impuestos, intereses, informes trimestrales, cuentas y pagos bancarios.",
             ],
             "method_h3": "Redacción y fidelidad",
             "method": "Se eliminaron cabeceras administrativas repetitivas, contactos, identificadores personales, cuentas y códigos de verificación, metadatos de firma y nombres de profesionales procesales no necesarios. Las omisiones aparecen marcadas. Los desajustes internos de fecha, nombre o cita se conservan y se explican en la ficha del documento.",
@@ -212,6 +216,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "scope": "Controlling scope",
             "scope_text": "The removal application and the remuneration claim were dismissed at first instance on active-standing grounds. The located decisions did not adjudicate the seven substantive removal grounds or the material legality and amount of the remuneration. Order 223/2026 combined the removal appeals; it did not decide their merits.",
             "nav_coverage": "Whole-file coverage",
+            "nav_analysis": "Unitary analysis",
             "nav_decisions": "2024–2026 decisions",
             "nav_text": "Complete court text",
             "nav_filings": "Party filings",
@@ -231,10 +236,13 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "gaps_kicker": "Verifiable completeness",
             "gaps_h2": "Missing material is logged, not invented",
             "gaps": [
+                "A certified chronological index for the complete Insolvency 36/2012 docket has not been obtained; the 50 specialist records and unitary catalogue are controlled partial inventories.",
                 "The 1 September 2025 Decree and the March 2025 procedural direction cited in the remuneration clarification incident were not located as standalone files.",
                 "No minutes or recording of the 20 January 2026 preliminary hearing were located.",
                 "No later signed merits decision in RPL 421/2026 was located.",
                 "No merits decision after Order 223/2026 was located in combined RPL 3304/2025 and 3319/2025.",
+                "Preliminary Proceedings 459/2024 is recited in filings and the judgment, but its exact court and autonomous certified docket remain missing.",
+                "The complete bridge of remuneration orders, extensions, invoices, tax, interest, quarterly reports, accounts and bank payments remains missing.",
             ],
             "method_h3": "Redaction and fidelity",
             "method": "Repeated administrative headers, contact and personal identifiers, bank and verification data, signature metadata and unnecessary procedural-professional names were removed. Omissions are visibly marked. Internal date, name or citation inconsistencies are preserved and explained in each record.",
@@ -272,6 +280,60 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
         f'<a class="button view" href="../../archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv">{meta["coverage_index"]}</a>'
         f'<a class="button pdf" href="{reader}">{meta["coverage_reader"]}</a></p></div></section>'
     )
+    if lang == "es":
+        context = (
+            '<section class="section alt" id="contexto-consecuencias"><div class="shell"><div class="context-strip">'
+            '<p class="kicker">TEXTO ÍNTEGRO → POSICIÓN → CONSECUENCIA</p>'
+            '<h2>Este corpus documenta actos y posiciones; las páginas enlazadas explican su efecto.</h2>'
+            '<p>Las 50 transcripciones especialistas y los 25 escritos de parte de esas dos vías no son todo el expediente oficial ni todo el corpus de Calificación. Lea por separado la calificación de LPB, la apelación RPL 2523/2025 y el uso posterior de Sentencia 163/2023 en el episodio elEconomista/Madrid DP 913/2025.</p>'
+            '<p><a class="button" href="../calificacion-concurso-36-2012-vidas-paralelas/">Calificación · instrumentos y tesis</a>'
+            '<a class="button" href="../concurso-36-2012-ap-seccion-4/">RPL 2523/2025</a>'
+            '<a class="button" href="../eleconomista-javier-romera-enero2025/#madrid-2025-media">elEconomista · DP 913/2025</a></p>'
+            '</div></div></section>'
+        )
+        analysis = (
+            '<section class="section" id="analisis-unitario"><div class="shell"><p class="kicker">RECONSTRUCCIÓN INVERSA · CAEPR · CUANTÍA · VACÍOS</p>'
+            '<h2>Qué prueba este hilo — y qué sigue penalmente sin probar.</h2>'
+            '<p class="intro">La tesis defendible es una cadena de <strong>aviso → respuesta → decisión → recurso</strong>, no una declaración de delito. Los escritos fijan alegaciones y posiciones contrarias; los actos LAJ fijan tramitación; los autos y la sentencia fijan efectos procesales. La separación y los honorarios fueron rechazados en primera instancia por legitimación, sin resolver íntegramente el fondo.</p>'
+            '<div class="method-grid"><article class="method-card"><h3>Valor probatorio real</h3><p>El corpus permite testar, para actos propios del Administrador Concursal: deber o poder confiado → conocimiento verificable → conducta u omisión dentro de capacidad práctica → efecto patrimonial → posible beneficio → intención o explicación inocente.</p></article>'
+            '<article class="method-card"><h3>Contrario que no se oculta</h3><p>R09 añadió una observación limitada de que no apreciaba indicios para separación de oficio en el expediente entonces visto. Es prueba contraria material, aunque no equivale a un juicio probatorio motivo por motivo.</p></article>'
+            '<article class="method-card"><h3>Cuantía</h3><p>Los cuatro componentes alegados suman exactamente <strong>110.956,97 €</strong>. Es aritmética de parte, no pérdida verificada por banco ni cuantía decidida en sentencia. F06 niega extremos de pago y cita extractos/documentos todavía no incorporados autónomamente al corpus público.</p></article>'
+            '<article class="method-card"><h3>Identidad procesal</h3><p>La auditoría CAEPR confirma 13 de 14 instituciones/procedimientos (92,86 %); <strong>^ identifica una coincidencia procesal exacta reconciliada</strong>. Diligencias Preliminares 459/2024 queda sin ^: faltan órgano e índice certificado. DP 1901/2026^ es la vía privada/CAM; DP 1956/2026^ es la vía penal AC/Concurso; la referencia manuscrita 22 no es procedimiento sin reparto.</p></article></div>'
+            '<div class="analysis-links"><a class="button" href="../../archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md">Tesis completa del hilo</a>'
+            '<a class="button view" href="../../archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md">Auditoría CAEPR</a>'
+            '<a class="button pdf" href="../../assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json">Libro cuantitativo JSON</a>'
+            '<a class="button view" href="../../assets/data/concurso36-ac-removal-fees-production-gaps-v1.json">Vacíos de producción JSON</a>'
+            '<a class="button" href="../hipotesis-criminal-unitaria-2011-presente/">Hipótesis penal unitaria</a></div>'
+            '<p class="scope"><strong>Regla de no fusión.</strong> Coincidencia de evidencia no fusiona procedimientos, actores ni efectos jurídicos. Acto civil o concursal adverso ≠ delito; recepción ≠ examen; tramitación ≠ aceptación; asociación ≠ conocimiento o concierto.</p>'
+            '</div></section>'
+        )
+    else:
+        context = (
+            '<section class="section alt" id="context-and-consequences"><div class="shell"><div class="context-strip">'
+            '<p class="kicker">FULL TEXT → POSITION → CONSEQUENCE</p>'
+            '<h2>This corpus documents acts and positions; the linked pages explain their effects.</h2>'
+            '<p>The 50 specialist transcripts and 25 party filings in those two lanes are not the entire official docket or the entire Classification corpus. Read separately LPB\'s classification, RPL 2523/2025 and the later use of Judgment 163/2023 in the elEconomista/Madrid DP 913/2025 episode.</p>'
+            '<p><a class="button" href="../insolvency-classification-parallel-lives/">Classification · instruments and thesis</a>'
+            '<a class="button" href="../insolvency-36-2012-ap-section-4/">RPL 2523/2025</a>'
+            '<a class="button" href="../eleconomista-javier-romera-january2025/#madrid-2025-media">elEconomista · DP 913/2025</a></p>'
+            '</div></div></section>'
+        )
+        analysis = (
+            '<section class="section" id="unitary-analysis"><div class="shell"><p class="kicker">REVERSE ENGINEERING · CAEPR · QUANTUM · GAPS</p>'
+            '<h2>What this thread proves — and what remains criminally unproved.</h2>'
+            '<p class="intro">The defensible thesis is a <strong>notice → response → decision → appeal</strong> chain, not a declaration of crime. Filings establish allegations and contrary positions; LAJ acts establish processing; orders and the judgment establish procedural effects. Removal and remuneration were rejected at first instance on standing without a complete merits determination.</p>'
+            '<div class="method-grid"><article class="method-card"><h3>Actual evidential value</h3><p>The corpus permits testing the Administrator\'s own acts through: entrusted duty or power → verifiable knowledge → act or omission within practical capacity → patrimonial effect → possible benefit → intent or innocent explanation.</p></article>'
+            '<article class="method-card"><h3>Contrary evidence retained</h3><p>R09 added a limited observation that the then-record disclosed no indications for ex-officio removal. It is material contrary evidence, although it is not a ground-by-ground evidentiary trial.</p></article>'
+            '<article class="method-card"><h3>Quantum</h3><p>The four pleaded components add exactly to <strong>EUR 110,956.97</strong>. That is party arithmetic, not a bank-verified loss or judicially decided quantum. F06 disputes payment propositions and cites extracts/documents not autonomously present in the public corpus.</p></article>'
+            '<article class="method-card"><h3>Proceeding identity</h3><p>The CAEPR audit confirms 13 of 14 eligible institutions/proceedings (92.86%); <strong>^ marks a reconciled exact proceeding identity</strong>. Preliminary Proceedings 459/2024 has no ^ because the exact court and certified docket remain missing. DP 1901/2026^ is the private-actor/CAM route; DP 1956/2026^ is the AC/Concurso criminal route; handwritten reference 22 is not a proceeding without allocation proof.</p></article></div>'
+            '<div class="analysis-links"><a class="button" href="../../archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md">Complete thread thesis</a>'
+            '<a class="button view" href="../../archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md">CAEPR audit</a>'
+            '<a class="button pdf" href="../../assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json">Quantitative ledger JSON</a>'
+            '<a class="button view" href="../../assets/data/concurso36-ac-removal-fees-production-gaps-v1.json">Production gaps JSON</a>'
+            '<a class="button" href="../unitary-criminal-hypothesis-2011-present/">Unitary criminal hypothesis</a></div>'
+            '<p class="scope"><strong>Non-merger rule.</strong> Evidentiary overlap does not merge proceedings, actors or legal effects. Adverse civil/insolvency act ≠ crime; receipt ≠ examination; processing ≠ acceptance; association ≠ knowledge or agreement.</p>'
+            '</div></section>'
+        )
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -303,7 +365,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
     .autos-page .decision{{background:#fff;border:1px solid #d4cec3;margin:.8rem 0}}.autos-page .decision summary{{cursor:pointer;display:grid;grid-template-columns:58px 1fr 36px;gap:.8rem;align-items:center;padding:1rem 1.1rem;list-style:none}}.autos-page .decision summary::-webkit-details-marker{{display:none}}.autos-page .decision summary small{{display:block;margin-top:.25rem;color:#637076}}.autos-page .decision-id{{font-weight:900;color:var(--red)}}.autos-page .chevron{{font-size:1.45rem}}.autos-page .decision[open] .chevron{{transform:rotate(45deg)}}
     .autos-page .decision-body{{border-top:1px solid #ddd6ca;padding:1rem}}.autos-page .decision-meta{{background:#f5f8f7;border-left:5px solid var(--green);padding:.85rem 1rem}}.autos-page .source-note{{font-size:.83rem;color:#5f686c;margin-top:1rem}}.autos-page pre{{white-space:pre-wrap;overflow-wrap:anywhere;background:#13272f;color:#edf3f2;padding:1rem;border-radius:8px;max-height:62rem;overflow:auto;font:13px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}}
     .autos-page .filing-grid{{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.6rem}}.autos-page .filing-panel{{background:#fff;padding:1.2rem;border:1px solid #d5cec2}}.autos-page .filing-list{{list-style:none;padding:0;margin:0}}.autos-page .filing-list li{{display:grid;grid-template-columns:110px 1fr auto;gap:.8rem;padding:1rem 0;border-bottom:1px solid #e1dcd2}}.autos-page .filing-list time{{font-size:.78rem;font-weight:900}}.autos-page .filing-list h3{{font-size:1rem;margin:.15rem 0}}.autos-page .filing-list p,.autos-page .filing-list small{{font-size:.82rem;margin:.2rem 0;color:#5d686c}}.autos-page .doc-id{{font-size:.72rem;font-weight:900;color:var(--red)}}
-    .autos-page .method-grid{{display:grid;grid-template-columns:1fr 1fr;gap:1rem}}.autos-page .method-card{{background:#fff;border-left:6px solid var(--gold);padding:1.15rem}}.autos-page .gaps{{line-height:1.6}}.autos-page .back{{display:inline-block;margin-top:1.4rem;font-weight:900}}
+    .autos-page .method-grid{{display:grid;grid-template-columns:1fr 1fr;gap:1rem}}.autos-page .method-card{{background:#fff;border-left:6px solid var(--gold);padding:1.15rem}}.autos-page .gaps{{line-height:1.6}}.autos-page .back{{display:inline-block;margin-top:1.4rem;font-weight:900}}.autos-page .context-strip{{background:var(--navy);color:#fff;padding:1.35rem;border-radius:12px}}.autos-page .context-strip h2{{color:#fff;max-width:none;font-size:clamp(1.45rem,3vw,2.3rem)}}.autos-page .context-strip p{{max-width:75rem}}.autos-page .context-strip .button{{background:#fff;color:var(--navy)!important}}.autos-page .analysis-links{{display:flex;flex-wrap:wrap;gap:.45rem;margin:1.25rem 0}}
     @media(max-width:980px){{.autos-page .key-grid{{grid-template-columns:1fr 1fr}}.autos-page .filing-grid,.autos-page .method-grid{{grid-template-columns:1fr}}}}
     @media(max-width:760px){{.autos-page .hero-grid,.autos-page .key-grid{{grid-template-columns:1fr}}.autos-page .filing-list li{{grid-template-columns:1fr}}.autos-page .decision summary{{grid-template-columns:48px 1fr 26px}}}}
   </style>
@@ -313,8 +375,10 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
 <header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><span class="brand-mark">PD</span><span class="brand-copy"><strong>Por Derecho</strong><small>{meta["brand"]}</small></span></a><nav class="main-nav"><a href="{opposite_digest}">{meta["back"]}</a><a class="language-link" href="{meta["lang_link"]}" lang="{meta["alternate_lang"]}">{meta["lang_text"]}</a></nav></div></header>
 <main id="contenido">
   <section class="hero"><div class="shell"><div class="hero-grid"><div><p class="eyebrow">{meta["eyebrow"]}</p><h1>{meta["h1"]}</h1><p class="lead">{meta["lead"]}</p></div><aside><div class="hero-stat"><strong>{len(records)}</strong><span>{'piezas especialistas digitizadas' if lang == 'es' else 'digitised specialist records'}</span></div><div class="hero-stat"><strong>{court_count}</strong><span>{'actos judiciales / LAJ' if lang == 'es' else 'court / LAJ acts'}</span></div><div class="hero-stat"><strong>{party_count}</strong><span>{'escritos de parte' if lang == 'es' else 'party filings'}</span></div><div class="hero-stat"><strong>23·08·2026</strong><span>{'corte documental' if lang == 'es' else 'record cut-off'}</span></div></aside></div><div class="scope"><strong>{meta["scope"]}:</strong> {meta["scope_text"]}</div></div></section>
-  <nav class="jump" aria-label="{'En esta página' if lang == 'es' else 'On this page'}"><div class="shell"><a href="#cobertura">{meta["nav_coverage"]}</a><a href="#decisiones">{meta["nav_decisions"]}</a><a href="#texto-judicial">{meta["nav_text"]}</a><a href="#escritos">{meta["nav_filings"]}</a><a href="#metodo">{meta["nav_gaps"]}</a></div></nav>
+  <nav class="jump" aria-label="{'En esta página' if lang == 'es' else 'On this page'}"><div class="shell"><a href="#cobertura">{meta["nav_coverage"]}</a><a href="#{'analisis-unitario' if lang == 'es' else 'unitary-analysis'}">{meta["nav_analysis"]}</a><a href="#decisiones">{meta["nav_decisions"]}</a><a href="#texto-judicial">{meta["nav_text"]}</a><a href="#escritos">{meta["nav_filings"]}</a><a href="#metodo">{meta["nav_gaps"]}</a></div></nav>
   {coverage}
+  {context}
+  {analysis}
   <section class="section alt" id="decisiones"><div class="shell"><p class="kicker">{meta["decisions_kicker"]}</p><h2>{meta["decisions_h2"]}</h2><p class="intro">{meta["decisions_intro"]}</p><div class="key-grid">{key_cards(records, lang)}</div><div class="table-wrap"><table><caption>{meta["caption"]}</caption><thead><tr><th scope="col">{meta["th_date"]}</th><th scope="col">{meta["th_issuer"]}</th><th scope="col">{meta["th_doc"]}</th><th scope="col">{meta["th_effect"]}</th><th scope="col">{meta["th_access"]}</th></tr></thead><tbody>{decision_rows(records, lang)}</tbody></table></div></div></section>
   <section class="section" id="texto-judicial"><div class="shell"><p class="kicker">{meta["text_kicker"]}</p><h2>{meta["text_h2"]}</h2><p class="intro">{meta["text_intro"]}</p>{inline_decisions(records, lang)}</div></section>
   <section class="section alt" id="escritos"><div class="shell"><p class="kicker">{meta["filings_kicker"]}</p><h2>{meta["filings_h2"]}</h2><p class="intro">{meta["filings_intro"]}</p><div class="filing-grid"><article class="filing-panel"><h3>{meta["removal_h3"]}</h3><ol class="filing-list">{filing_rows(records, "separacion", lang)}</ol></article><article class="filing-panel"><h3>{meta["fees_h3"]}</h3><ol class="filing-list">{filing_rows(records, "honorarios", lang)}</ol></article></div></div></section>

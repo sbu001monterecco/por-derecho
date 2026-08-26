@@ -183,6 +183,12 @@ def validate_registry() -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
                     isinstance(record["status"], str) and bool(record["status"].strip()),
                     f"{record_id}.status must be a non-empty string",
                 )
+            if "identity_resolution" in record:
+                require(
+                    isinstance(record["identity_resolution"], str)
+                    and bool(record["identity_resolution"].strip()),
+                    f"{record_id}.identity_resolution must be a non-empty string",
+                )
 
             routes = record.get("routes", {})
             require(isinstance(routes, dict), f"{record_id}.routes must be an object")
@@ -398,6 +404,49 @@ def validate_operational_control(records: dict[str, dict[str, Any]]) -> dict[str
         "Exact-identity queue does not match the registry's qualified/unresolved record set",
     )
 
+    resolution_statuses = control.get("resolution_statuses")
+    require(isinstance(resolution_statuses, dict), "resolution_statuses must be an object")
+    require(
+        {"CANONICAL", "CARET_CONFIRMED", "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET"}
+        <= set(resolution_statuses),
+        "Proceeding-resolution status set is incomplete",
+    )
+    for record_id, record in records.items():
+        resolution = record.get("identity_resolution")
+        if resolution:
+            require(
+                resolution in resolution_statuses,
+                f"Unknown identity_resolution for {record_id}: {resolution}",
+            )
+
+    proceeding_queue = control.get("proceeding_identity_queue")
+    require(isinstance(proceeding_queue, list), "proceeding_identity_queue must be an array")
+    proceeding_queue_ids: set[str] = set()
+    for item in proceeding_queue:
+        require(isinstance(item, dict), "Proceeding identity queue item must be an object")
+        record_id = item.get("id", "")
+        require(record_id in records, f"Proceeding identity queue references unknown ID {record_id}")
+        require(
+            records[record_id].get("type") == "PROCEEDING",
+            f"Proceeding identity queue contains non-proceeding ID {record_id}",
+        )
+        require(record_id not in proceeding_queue_ids, f"Duplicate proceeding queue ID {record_id}")
+        require(
+            item.get("priority") in {"P0", "P1", "P2"},
+            f"Unexpected proceeding-identity priority for {record_id}",
+        )
+        proceeding_queue_ids.add(record_id)
+
+    pending_proceeding_ids = {
+        record_id
+        for record_id, record in records.items()
+        if record.get("identity_resolution") not in {None, "CANONICAL", "CARET_CONFIRMED"}
+    }
+    require(
+        proceeding_queue_ids == pending_proceeding_ids,
+        "Proceeding-identity queue does not match the registry's pending proceeding set",
+    )
+
     distinctions = control.get("distinction_controls")
     require(isinstance(distinctions, list), "distinction_controls must be an array")
     for distinction in distinctions:
@@ -521,7 +570,12 @@ def main() -> int:
         print(f"OPERATIONAL IDENTITY REGISTRY: FAIL\n - {exc}", file=sys.stderr)
         return 1
 
-    unresolved = sum(1 for record in records.values() if record.get("status"))
+    unresolved = sum(
+        1
+        for record in records.values()
+        if record.get("status")
+        or record.get("identity_resolution") not in {None, "CANONICAL", "CARET_CONFIRMED"}
+    )
     routed = sum(1 for record in records.values() if record.get("routes"))
     distinction_edges = sum(len(record.get("not_same_as", [])) for record in records.values()) // 2
 
@@ -530,8 +584,9 @@ def main() -> int:
     print(f" - institutional actions: {len(action_ids)}")
     print(f" - graph: {len(graph_ids)} identity-linked nodes, {len(edge_ids)} edges")
     print(f" - exact-identity queue: {len(control.get('exact_identity_queue', []))} records")
+    print(f" - proceeding-identity queue: {len(control.get('proceeding_identity_queue', []))} records")
     print(f" - symmetric non-equivalence controls: {distinction_edges}")
-    print(f" - direct registry routes: {routed}; open-status records: {unresolved}")
+    print(f" - direct registry routes: {routed}; unresolved identity records: {unresolved}")
     return 0
 
 

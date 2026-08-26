@@ -99,10 +99,11 @@
   },
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-08-25",
-    "counts": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+    "control_date": "2026-08-26",
+    "counts": {"total":194,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":15,"PROCEEDING":17},
     "archive_backfill": "OPEN",
-    "static_page_parity": "LIVE_VERIFIED",
+    "static_page_parity": "REPOSITORY_VALIDATED_PUBLIC_DEPLOYMENT_PENDING",
+    "last_live_verified_counts": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
   },
   "material_updates": {

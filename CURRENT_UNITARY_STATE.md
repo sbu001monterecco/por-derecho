@@ -78,11 +78,11 @@ Repository main, Pages deployment and exact public readback remain separately re
 | People | 86 |
 | Organisations | 66 |
 | Structures | 10 |
-| Institutions | 13 |
-| Proceedings | 10 |
-| **Total** | **185** |
+| Institutions | 15 |
+| Proceedings | 17 |
+| **Total** | **194** |
 
-These counts now control in the canonical JSON, both public pages, metadata, JSON-LD and no-JavaScript fallbacks. Archive backfill remains open. Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.
+These counts control in the current repository's canonical JSON, both public pages, metadata, JSON-LD and no-JavaScript fallbacks. The prior 185-ID live readback remains historical deployment evidence until this additive package is merged and independently read back. Archive backfill remains open. Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.
 
 ## Unitary legal and economic rule
 

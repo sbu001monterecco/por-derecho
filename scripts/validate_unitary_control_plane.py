@@ -10,12 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets" / "data"
 EXPECTED = {
-    "total": 185,
+    "total": 194,
     "PERSON": 86,
     "ORGANISATION": 66,
     "STRUCTURE": 10,
-    "INSTITUTION": 13,
-    "PROCEEDING": 10,
+    "INSTITUTION": 15,
+    "PROCEEDING": 17,
 }
 UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260826-01"
 HISTORICAL_CONTROL_ID = "PD-UNITARY-STATE-20260825-01"
@@ -80,12 +80,12 @@ def main() -> int:
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 185 IDs inmutables',
-                'data-static-registry-counts="185-86-66-10-13-10"',
-                'data-registry-stat="TOTAL">185',
+                'content="Registro operativo de 194 IDs inmutables',
+                'data-static-registry-counts="194-86-66-10-15-17"',
+                'data-registry-stat="TOTAL">194',
                 'data-registry-stat="PERSON">86',
                 'data-registry-stat="ORGANISATION">66',
-                '"name":"Total","value":185',
+                '"name":"Total","value":194',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['Los 159 IDs', 'data-registry-stat="TOTAL">159', '159 identidades canónicas'],
@@ -93,12 +93,12 @@ def main() -> int:
         en_identity = require_markers(
             ROOT / "en/matter-identity-registry/index.html",
             [
-                'content="Operational Por Derecho register of 185 immutable IDs',
-                'data-static-registry-counts="185-86-66-10-13-10"',
-                'data-registry-stat="TOTAL">185',
+                'content="Operational Por Derecho register of 194 immutable IDs',
+                'data-static-registry-counts="194-86-66-10-15-17"',
+                'data-registry-stat="TOTAL">194',
                 'data-registry-stat="PERSON">86',
                 'data-registry-stat="ORGANISATION">66',
-                '"name":"Total","value":185',
+                '"name":"Total","value":194',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['The 159 IDs', 'data-registry-stat="TOTAL">159', '159 canonical identities'],
@@ -274,7 +274,6 @@ def main() -> int:
                 "https://sbu001monterecco.github.io/por-derecho/en/updates/",
                 "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
                 "<lastmod>2026-08-26</lastmod>",
-                "<lastmod>2026-08-25</lastmod>",
             ],
         )
         require_markers(
@@ -349,7 +348,7 @@ def main() -> int:
     print("UNITARY CONTROL PLANE: PASS")
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
-    print(" - identity denominator: 185 / 86 / 66 / 10 / 13 / 10")
+    print(" - identity denominator: 194 / 86 / 66 / 10 / 15 / 17")
     print(" - repository latest material date: 2026-08-26")
     print(" - last live-verified material date: 2026-08-26")
     print(" - promoted publication: PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED")

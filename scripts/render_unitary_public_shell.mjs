@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { chromium } from 'playwright';
+
+const playwright = await import(process.env.PSR_PLAYWRIGHT_PATH || 'playwright');
+const { chromium } = playwright;
 
 const base=(process.env.PSR_BASE_URL||'http://127.0.0.1:8000/por-derecho').replace(/\/$/,'');
 const out=process.env.PSR_SCREENSHOT_DIR||'artifacts/unitary-public-shell';
@@ -23,6 +25,10 @@ const routes=[
   {name:'governance-tracks-en',url:'/en/community-instrumentalisation/two-competing-governance-records/',kind:'existing'},
   {name:'governance-tracks-es',url:'/es/comunidad-instrumentalizacion/dos-registros-gobernanza-competidores/',kind:'existing'},
   {name:'ac-en',url:'/en/insolvency-36-2012-insolvency-administrator/',kind:'existing'},
+  {name:'ac-autos-en',url:'/en/insolvency-36-2012-orders-decisions/',kind:'ac-autos',section:'#unitary-analysis',marker:'What this thread proves'},
+  {name:'ac-autos-es',url:'/es/concurso-36-2012-autos-resoluciones/',kind:'ac-autos',section:'#analisis-unitario',marker:'Qué prueba este hilo'},
+  {name:'ac-thread-en',url:'/en/unitary-criminal-hypothesis-2011-present/',kind:'ac-thread',section:'#ac-removal-fees-thread',marker:'A notice-and-contradiction record'},
+  {name:'ac-thread-es',url:'/es/hipotesis-criminal-unitaria-2011-presente/',kind:'ac-thread',section:'#hilo-separacion-honorarios-ac',marker:'Registro de aviso y contradicción'},
   {name:'ricpe-en',url:'/en/ric-private-equity-sun-park/',kind:'existing'},
   {name:'map-es',url:'/es/mapa-forense-sun-park-262-fincas/',kind:'existing'}
 ];
@@ -74,6 +80,20 @@ try{
           await assertSearch(page,'pwc canarias carlos saavedra',/Pwc|PwC.*Canarias|Carlos Saavedra/i,'specialist-sitemap fallback');
         }
         if(route.kind==='existing'||route.kind==='gateway')await page.waitForSelector('.psr-utility-nav',{timeout:15000});
+        if(route.kind==='ac-autos'||route.kind==='ac-thread'){
+          const section=page.locator(route.section);
+          await section.waitFor({state:'attached',timeout:15000});
+          const sectionText=(await section.textContent())||'';
+          if(!sectionText.includes(route.marker))throw new Error(`Missing controlled AC-thread marker: ${route.marker}`);
+          if(!sectionText.includes('110,956.97')&&!sectionText.includes('110.956,97'))throw new Error('Missing pleaded-total boundary');
+          if(!sectionText.includes('13 of 14')&&!sectionText.includes('13 de 14'))throw new Error('Missing CAEPR denominator');
+          if(!sectionText.includes('^'))throw new Error('Missing caret-identity legend');
+          if(route.kind==='ac-autos'){
+            for(const id of ['R01','R09','R30','F01','F13','F17']){
+              if(await page.locator(`#${id}`).count()!==1)throw new Error(`Missing controlled full-text anchor #${id}`);
+            }
+          }
+        }
         const metrics=await page.evaluate(()=>{
           const ids=[...document.querySelectorAll('[id]')].map(el=>el.id).filter(Boolean);
           const duplicates=[...new Set(ids.filter((id,i)=>ids.indexOf(id)!==i))];
@@ -102,7 +122,7 @@ try{
           return {scrollWidth:document.documentElement.scrollWidth,bodyScrollWidth:document.body.scrollWidth,clientWidth:viewportWidth,duplicates,h1:document.querySelectorAll('h1').length,offenders};
         });
         if(metrics.scrollWidth>metrics.clientWidth+3)throw new Error(`Horizontal overflow ${metrics.scrollWidth} > ${metrics.clientWidth}; ${JSON.stringify(metrics.offenders)}`);
-        if((route.kind==='control'||route.kind==='search'||route.kind==='gateway')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
+        if((route.kind==='control'||route.kind==='search'||route.kind==='gateway'||route.kind==='ac-autos'||route.kind==='ac-thread')&&metrics.duplicates.length)throw new Error(`Duplicate IDs: ${metrics.duplicates.join(', ')}`);
         if(metrics.h1<1)throw new Error('Missing H1');
         const shot=path.join(out,`${route.name}-${viewport.name}.png`);
         await page.screenshot({path:shot,fullPage:true});

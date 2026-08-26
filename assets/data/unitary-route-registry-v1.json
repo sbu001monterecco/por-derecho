@@ -236,7 +236,7 @@
     "path": "en/insolvency-36-2012-orders-decisions/",
     "title": "Located judicial and party corpus — Insolvency 36/2012",
     "type": "evidence",
-    "summary": "Public-safe full-text transcripts of the 50 located 2024–2026 removal/remuneration records: 25 Judge, Appeal Court and LAJ acts plus 25 party filings. Transcript completeness does not establish filed-copy authenticity; this is not the whole-file denominator.",
+    "summary": "Public-safe full-text transcripts of the 50 located 2024–2026 removal/remuneration records, plus the non-fragmented thread thesis, CAEPR proceeding map, quantitative ledger, contrary record and finite gaps. This is not the whole-file denominator.",
     "tags": [
       "orders",
       "decisions",
@@ -249,6 +249,9 @@
       "Order 1377/2025",
       "Judgment 4/2026",
       "Order 223/2026",
+      "Preliminary Proceedings 459/2024",
+      "DP 1901/2026",
+      "DP 1956/2026",
       "court responses",
       "administrator removal filings",
       "remuneration claim full text"
@@ -259,7 +262,7 @@
     "path": "es/concurso-36-2012-autos-resoluciones/",
     "title": "Corpus judicial y de parte localizado — Concurso 36/2012",
     "type": "evidence",
-    "summary": "Transcripciones íntegras públicas seguras de los 50 registros localizados de 2024–2026: 25 actos judiciales/LAJ y 25 escritos de parte. La integridad textual no acredita autenticidad de copia presentada; no es el denominador del expediente completo.",
+    "summary": "Transcripciones íntegras públicas seguras de los 50 registros localizados de 2024–2026, más tesis no fragmentada, mapa procesal CAEPR, libro cuantitativo, prueba contraria y vacíos finitos. No es el denominador del expediente completo.",
     "tags": [
       "autos",
       "resoluciones",
@@ -272,6 +275,9 @@
       "Auto 1377/2025",
       "Sentencia 4/2026",
       "Auto 223/2026",
+      "Diligencias Preliminares 459/2024",
+      "DP 1901/2026",
+      "DP 1956/2026",
       "respuestas judiciales",
       "escritos separación AC",
       "demanda honorarios texto íntegro"
@@ -1831,6 +1837,46 @@
     "aliases": [
       "Inversiones Salinetas",
       "Inversiones Salineras"
+    ]
+  },
+  {
+    "lang": "en",
+    "path": "en/unitary-criminal-hypothesis-2011-present/",
+    "title": "Unitary criminal hypothesis — 2011 to present",
+    "type": "analysis",
+    "summary": "Evidence-controlled criminal-first reconstruction with the AC removal/remuneration notice-response-decision-appeal chain integrated as a separate, non-merging specialist layer.",
+    "tags": [
+      "unitary criminal analysis",
+      "reverse engineering",
+      "Concurso 36/2012",
+      "removal",
+      "remuneration",
+      "open evidence"
+    ],
+    "aliases": [
+      "criminal thread thesis",
+      "AC removal fees criminal analysis",
+      "DP 1901 DP 1956 distinction"
+    ]
+  },
+  {
+    "lang": "es",
+    "path": "es/hipotesis-criminal-unitaria-2011-presente/",
+    "title": "Hipótesis penal unitaria — 2011 al presente",
+    "type": "analysis",
+    "summary": "Reconstrucción criminal-first con control de prueba e integración separada, no fusionada, de la cadena aviso-respuesta-decisión-recurso sobre separación y honorarios del AC.",
+    "tags": [
+      "análisis penal unitario",
+      "ingeniería inversa",
+      "Concurso 36/2012",
+      "separación",
+      "honorarios",
+      "prueba abierta"
+    ],
+    "aliases": [
+      "tesis penal del hilo",
+      "análisis penal separación honorarios AC",
+      "distinción DP 1901 DP 1956"
     ]
   }
 ]

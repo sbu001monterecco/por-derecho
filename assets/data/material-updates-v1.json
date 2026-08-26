@@ -16,6 +16,26 @@
   ],
   "entries": [
     {
+      "update_id": "MU-20260826-AC-REMOVAL-FEES-UNITARY",
+      "date": "2026-08-26",
+      "type": "PROCEDURAL_IDENTITY_CORRECTION_AND_UNITARY_ANALYSIS",
+      "title_es": "Separación y honorarios del AC: identidad procesal, cuantía y tesis unificadas",
+      "title_en": "AC removal and remuneration: proceeding identity, quantum and thesis unified",
+      "affected_routes": [
+        "/es/concurso-36-2012-autos-resoluciones/",
+        "/en/insolvency-36-2012-orders-decisions/",
+        "/es/hipotesis-criminal-unitaria-2011-presente/",
+        "/en/unitary-criminal-hypothesis-2011-present/",
+        "/es/registro-identidad-materia/",
+        "/en/matter-identity-registry/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PUBLIC_REDACTED_FULLTEXT_CORPUS_PLUS_PROCEDURAL_IDENTITY_AUDIT",
+      "what_changed": "DP 1901/2026 is corrected as the separate private-actor/CAM route; the removal appeals, fee action, fee appeal, preliminary-disclosure reference and DIP 80/2026 now have separate identities. The site adds a reverse-engineered thread thesis, a four-component EUR 110,956.97 arithmetic ledger, contrary positions and ten finite production gaps. The canonical registry is now 194 identities: 86 people, 66 organisations, 10 structures, 15 institutions and 17 proceedings.",
+      "what_did_not_change": "The two first-instance outcomes remain standing dismissals, not merits findings. The arithmetic total is not a bank-verified loss. DP 1901, DP 1956, DIP 80 and handwritten intake reference 22 remain separate routes or locators; evidentiary overlap does not establish criminal intent, collusion, fee illegality or judicial wrongdoing."
+    },
+    {
       "update_id": "MU-20260826-UNITARY-ATTRIBUTION-RDM-MANIFEST",
       "date": "2026-08-26",
       "type": "ATTRIBUTED_CRIMINAL_THEORY_AND_PRIVATE_MANIFEST_TRIAGE",
