@@ -28,7 +28,16 @@ PRODUCTION_SCHEMA = "por-derecho.operational-truth.production-status.v2"
 ROLLBACK_SCHEMA = "por-derecho.operational-truth.rollback-anchor.v2"
 LEDGER_SCHEMA = "por-derecho.operational-truth.release-ledger.v1"
 UNITARY_SCHEMA = "por-derecho.current-unitary-state.v1"
-UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260825-01"
+UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260826-01"
+PROMOTED_SHA = "77e2ba300af45a953947160af63283a64512e876"
+PROMOTED_TREE_SHA = "4f0ac26c5548ae44c68933306c68165cbb6c973e"
+PAGES_RUN_ID = 32942972472
+PAGES_RUN_NUMBER = 1128
+PAGES_COMPLETED_AT = "2026-08-26T07:29:45Z"
+VERIFIER_RUN_ID = 32942975508
+VERIFIER_RUN_NUMBER = 4
+VERIFIER_JOB_ID = 98097657687
+VERIFIER_COMPLETED_AT = "2026-08-26T07:29:55Z"
 HISTORICAL_PR922_SHA = "ed98b0ac634afc34f00a425e9ed67ca58fd77cb8"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 ALLOWED_OBSERVATION_STATES = {
@@ -176,6 +185,12 @@ def main() -> int:
             observation.get("status") in ALLOWED_OBSERVATION_STATES,
             "repository observation boundary is not explicit",
         )
+        require(observation_sha == PROMOTED_SHA, "repository observation is not the promoted 26-Aug merge")
+        require(tree_sha == PROMOTED_TREE_SHA, "repository observation is not the promoted 26-Aug tree")
+        require(
+            observation.get("observation_phase") == "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
+            "repository observation phase is not post-merge",
+        )
 
         freshness = current.get("freshness_policy") or {}
         for key in (
@@ -257,6 +272,16 @@ def main() -> int:
             "unitary specialist state is not LIVE_VERIFIED",
         )
         require(
+            (unitary.get("repository") or {}).get("current_main_sha_at_preparation")
+            == PROMOTED_SHA,
+            "unitary specialist merge SHA drift",
+        )
+        require(
+            (unitary.get("repository") or {}).get("verified_tree_sha")
+            == PROMOTED_TREE_SHA,
+            "unitary specialist tree SHA drift",
+        )
+        require(
             (unitary.get("identity_registry") or {}).get("counts")
             == identity.get("counts"),
             "unitary identity counts drift from canonical registry",
@@ -273,6 +298,8 @@ def main() -> int:
             "production tree SHA invalid",
         )
         require(git_object_exists(served_sha), "production served SHA absent from checkout history")
+        require(served_sha == PROMOTED_SHA, "production is not serving the promoted 26-Aug merge")
+        require(served_tree == PROMOTED_TREE_SHA, "production is not serving the promoted 26-Aug tree")
         require(
             git("show", "-s", "--format=%T", served_sha) == served_tree,
             "production source tree does not match served commit",
@@ -290,16 +317,19 @@ def main() -> int:
             isinstance(deployment.get("workflow_run_id"), int),
             "Pages workflow run ID must be integer",
         )
+        require(deployment.get("workflow_run_id") == PAGES_RUN_ID, "Pages run ID drift")
+        require(deployment.get("run_number") == PAGES_RUN_NUMBER, "Pages run number drift")
+        require(deployment.get("completed_at") == PAGES_COMPLETED_AT, "Pages completion time drift")
         parse_time(production.get("observed_at"), "PRODUCTION_STATUS.observed_at")
         verification = production.get("verification") or {}
         require(
-            verification.get("state") == "DEPLOYMENT_BUILD_SUCCESS",
-            "production status overclaims or understates deployment",
+            verification.get("state") == "LIVE_VERIFIED",
+            "production status is not live verified for the served SHA",
         )
         require(
             verification.get("current_exact_route_content_verification")
-            == "NOT_RECORDED_FOR_SERVED_SHA",
-            "current served-SHA readback boundary missing",
+            == "LIVE_VERIFIED_FOR_SERVED_SHA",
+            "current served-SHA exact-route readback is not live verified",
         )
         specialist_release = verification.get("latest_live_verified_specialist_release") or {}
         require(
@@ -311,18 +341,38 @@ def main() -> int:
             "specialist release control mismatch",
         )
         require(
-            SHA_RE.fullmatch(str(specialist_release.get("source_publication_sha", "")))
-            is not None,
-            "specialist source SHA invalid",
+            specialist_release.get("source_publication_sha") == PROMOTED_SHA,
+            "specialist source SHA drift",
         )
         require(
-            SHA_RE.fullmatch(str(specialist_release.get("verification_fix_sha", "")))
-            is not None,
-            "specialist verification SHA invalid",
+            specialist_release.get("source_tree_sha") == PROMOTED_TREE_SHA,
+            "specialist source tree drift",
         )
         require(
-            isinstance(specialist_release.get("workflow_run_id"), int),
-            "specialist verification run missing",
+            specialist_release.get("verification_head_sha") == PROMOTED_SHA,
+            "specialist verifier head SHA drift",
+        )
+        for key, expected in {
+            "pages_run_id": PAGES_RUN_ID,
+            "pages_run_number": PAGES_RUN_NUMBER,
+            "workflow_run_id": VERIFIER_RUN_ID,
+            "workflow_run_number": VERIFIER_RUN_NUMBER,
+            "job_id": VERIFIER_JOB_ID,
+            "verified_at": VERIFIER_COMPLETED_AT,
+        }.items():
+            require(
+                specialist_release.get(key) == expected,
+                f"specialist release evidence drift: {key}",
+            )
+        specialist_limits = str(specialist_release.get("limits", ""))
+        for marker in ("not proof", "guilt", "570 bis", "570 ter", "original pact", "evidential support from the Phase-A manifest"):
+            require(
+                marker in specialist_limits,
+                f"specialist publication/evidence boundary missing: {marker}",
+            )
+        require(
+            "verification_fix_sha" not in specialist_release,
+            "post-promotion specialist evidence must not invent a verification-fix commit",
         )
         require(
             (production.get("specialist_state_routing") or {}).get(
@@ -347,9 +397,20 @@ def main() -> int:
             "CURRENT_STATE Pages run does not match PRODUCTION_STATUS",
         )
         require(
-            current_deployment.get("verification_level") == "DEPLOYMENT_BUILD_SUCCESS",
+            current_deployment.get("verification_level")
+            == "LIVE_VERIFIED_FOR_SERVED_SHA",
             "CURRENT_STATE deployment verification level drift",
         )
+        for key, expected in {
+            "last_exact_route_verification_run_id": VERIFIER_RUN_ID,
+            "last_exact_route_verification_run_number": VERIFIER_RUN_NUMBER,
+            "last_exact_route_verification_job_id": VERIFIER_JOB_ID,
+            "last_exact_route_verified_at": VERIFIER_COMPLETED_AT,
+        }.items():
+            require(
+                current_deployment.get(key) == expected,
+                f"CURRENT_STATE exact-route evidence drift: {key}",
+            )
         parse_time(
             current_deployment.get("last_observed_at"),
             "deployment_observation.last_observed_at",
@@ -414,6 +475,21 @@ def main() -> int:
             latest_current.get("source_sha") == served_sha,
             "latest observed ledger release does not match served SHA",
         )
+        require(latest_current.get("source_sha") == PROMOTED_SHA, "latest release is not the promoted merge")
+        require(latest_current.get("source_tree_sha") == PROMOTED_TREE_SHA, "latest release tree drift")
+        require(latest_current.get("state") == "LIVE_VERIFIED", "latest release is not LIVE_VERIFIED")
+        for key, expected in {
+            "pages_run_id": PAGES_RUN_ID,
+            "pages_run_number": PAGES_RUN_NUMBER,
+            "live_verification_run_id": VERIFIER_RUN_ID,
+            "live_verification_run_number": VERIFIER_RUN_NUMBER,
+            "live_verification_job_id": VERIFIER_JOB_ID,
+            "effective_at": VERIFIER_COMPLETED_AT,
+        }.items():
+            require(latest_current.get(key) == expected, f"latest release evidence drift: {key}")
+        latest_limits = str(latest_current.get("limits", ""))
+        for marker in ("not proof", "guilt", "570 bis", "570 ter", "original pact", "evidential support from the Phase-A manifest"):
+            require(marker in latest_limits, f"latest release boundary missing: {marker}")
         require(
             HISTORICAL_PR922_SHA in release_by_sha,
             "rollback anchor absent from ledger",

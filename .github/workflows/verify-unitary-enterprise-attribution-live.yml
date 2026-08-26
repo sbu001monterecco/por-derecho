@@ -229,15 +229,82 @@ jobs:
 
           state_route = '/ops/CURRENT_UNITARY_STATE.json'
           manifest_route = '/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json'
+          merge_sha = '77e2ba300af45a953947160af63283a64512e876'
+          tree_sha = '4f0ac26c5548ae44c68933306c68165cbb6c973e'
+
+          def valid_state(value):
+              repository = value.get('repository', {})
+              material = value.get('material_updates', {})
+              promoted = value.get('promoted_material_publication', {})
+              publication = value.get('publication', {})
+              pages = publication.get('last_pages_deployment', {})
+              readback = publication.get('current_sha_edge_readback', {})
+              return (
+                  value.get('control_id') == 'PD-UNITARY-STATE-20260826-01'
+                  and value.get('status') == 'LIVE_VERIFIED'
+                  and repository.get('source_publication_merge_sha') == merge_sha
+                  and repository.get('verified_tree_sha') == tree_sha
+                  and promoted.get('control_id') == 'PD-UNITARY-STATE-20260826-01'
+                  and promoted.get('state') == 'LIVE_VERIFIED'
+                  and promoted.get('publication_merge_sha') == merge_sha
+                  and promoted.get('publication_tree_sha') == tree_sha
+                  and promoted.get('pages_run_id') == 32942972472
+                  and promoted.get('live_verification_run_id') == 32942975508
+                  and promoted.get('live_verification_job_id') == 98097657687
+                  and material.get('repository_latest_material_date') == '2026-08-26'
+                  and material.get('last_live_verified_material_date') == '2026-08-26'
+                  and material.get('public_parity') == '2026-08-26_LIVE_VERIFIED'
+                  and pages.get('sha') == merge_sha
+                  and pages.get('tree_sha') == tree_sha
+                  and pages.get('run_id') == 32942972472
+                  and pages.get('run_number') == 1128
+                  and pages.get('completed_at') == '2026-08-26T07:29:45Z'
+                  and readback.get('state') == 'LIVE_VERIFIED'
+                  and readback.get('workflow_run_id') == 32942975508
+                  and readback.get('workflow_run_number') == 4
+                  and readback.get('job_id') == 98097657687
+                  and readback.get('head_sha') == merge_sha
+                  and readback.get('tree_sha') == tree_sha
+                  and readback.get('completed_at') == '2026-08-26T07:29:55Z'
+                  and readback.get('verified_url_count') == 21
+                  and len(publication.get('live_urls', [])) == 21
+              )
+
+          def valid_manifest(value):
+              allegation = value.get('controlling_allegation', {})
+              deployment = value.get('deployment_evidence', {})
+              readback = value.get('live_verification_evidence', {})
+              private_source = value.get('private_source', {})
+              return (
+                  value.get('control_id') == 'PD-UNITARY-STATE-20260826-01'
+                  and value.get('current_state') == 'LIVE_VERIFIED'
+                  and value.get('status') == 'live_verified'
+                  and value.get('publication_merge_sha') == merge_sha
+                  and value.get('publication_tree_sha') == tree_sha
+                  and value.get('pages_run_id') == 32942972472
+                  and value.get('live_verification') == 'passed_exact_no_cache'
+                  and deployment.get('pages_run_id') == 32942972472
+                  and deployment.get('pages_run_number') == 1128
+                  and deployment.get('head_sha') == merge_sha
+                  and deployment.get('tree_sha') == tree_sha
+                  and deployment.get('completed_at') == '2026-08-26T07:29:45Z'
+                  and readback.get('workflow_run_id') == 32942975508
+                  and readback.get('workflow_run_number') == 4
+                  and readback.get('job_id') == 98097657687
+                  and readback.get('head_sha') == merge_sha
+                  and readback.get('tree_sha') == tree_sha
+                  and readback.get('completed_at') == '2026-08-26T07:29:55Z'
+                  and readback.get('verified_url_count') == 21
+                  and len(value.get('live_urls', [])) == 21
+                  and allegation.get('not_a_finding') is True
+                  and allegation.get('independent_of_rdm_manifest') is True
+                  and allegation.get('rdm_manifest_evidential_support') == 'NONE_UNTIL_RELEVANT_NATIVES_ARE_ACQUIRED_AUTHENTICATED_AND_TESTED'
+                  and private_source.get('phase_b') == 'NATIVE_EMAIL_ATTACHMENT_AND_DRIVE_ACQUISITION_AND_ANALYSIS_OPEN'
+              )
+
           for route, validator in (
-              (state_route, lambda value: value.get('control_id') == 'PD-UNITARY-STATE-20260825-01'
-               and value.get('status') == 'LIVE_VERIFIED'
-               and value.get('pending_material_publication', {}).get('control_id') == 'PD-UNITARY-STATE-20260826-01'
-               and value.get('pending_material_publication', {}).get('state') == 'PREPARED_PENDING_MERGE'),
-              (manifest_route, lambda value: value.get('control_id') == 'PD-UNITARY-STATE-20260826-01'
-               and value.get('current_state') == 'PREPARED_PENDING_MERGE'
-               and value.get('controlling_allegation', {}).get('independent_of_rdm_manifest') is True
-               and value.get('controlling_allegation', {}).get('rdm_manifest_evidential_support') == 'NONE_UNTIL_RELEVANT_NATIVES_ARE_ACQUIRED_AUTHENTICATED_AND_TESTED'),
+              (state_route, valid_state),
+              (manifest_route, valid_manifest),
           ):
               last = ''
               for attempt in range(1, 19):
@@ -266,7 +333,7 @@ jobs:
             echo "- SHA: $GITHUB_SHA"
             echo '- Source gate: 18 exact same-block ES/EN attributions, read only.'
             echo '- Allegation: `ALG-ENT-018`; `ALG-ORG-011` remains retired.'
-            echo '- State boundary: 25-Aug remains LIVE_VERIFIED; 26-Aug is PREPARED_PENDING_MERGE.'
+            echo '- State: `PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED` at exact merge, Pages run and no-cache verifier evidence.'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Public edge readback is reserved for the post-merge main push.'
             else

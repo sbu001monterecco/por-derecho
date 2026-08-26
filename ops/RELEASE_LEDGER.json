@@ -5,7 +5,7 @@
   "append_only": true,
   "coverage": "Seeded with the controlling rollback anchor and the principal observed releases from 24–26 August 2026. Earlier release backfill remains open.",
   "ordering": "Records are chronological by effective_at. Existing records must not be silently removed or rewritten; corrections are appended below and identify the affected release_id. current_at_observation records that a release was current at its own observation time, so multiple historical entries may retain true; latest_observation_release_id identifies the latest observation.",
-  "latest_observation_release_id": "operational-truth-v2-postmerge-observation-20260826-pr1040",
+  "latest_observation_release_id": "unitary-enterprise-attribution-rdm-manifest-20260826-pr1046",
   "releases": [
     {
       "release_id": "five-actor-preservation-guard-20260824-pr922",
@@ -137,6 +137,25 @@
       "live_verification_run_id": null,
       "scope": "Operational-truth v2 release separating current repository truth, observed deployment truth, historical rollback truth and specialist case/evidence state.",
       "limits": "A successful Pages build is recorded. No exact route-content readback is claimed for this audit-only release."
+    },
+    {
+      "release_id": "unitary-enterprise-attribution-rdm-manifest-20260826-pr1046",
+      "source_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "source_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "pull_request": 1046,
+      "state": "LIVE_VERIFIED",
+      "website_content_changed": true,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "effective_at": "2026-08-26T07:29:55Z",
+      "observed_at": "2026-08-26T07:32:47Z",
+      "pages_run_id": 32942972472,
+      "pages_run_number": 1128,
+      "live_verification_run_id": 32942975508,
+      "live_verification_run_number": 4,
+      "live_verification_job_id": 98097657687,
+      "scope": "Promoted the 26 August attributed unitary-enterprise position, manifest-only Phase-A boundary, bilingual public controls and the Patricia private-source analysis prompt after successful Pages deployment and exact affected-route readback.",
+      "limits": "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest. The historical PR #922 rollback anchor remains separately preserved and eligible."
     }
   ],
   "corrections": [

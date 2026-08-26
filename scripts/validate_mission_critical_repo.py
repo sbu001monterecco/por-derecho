@@ -22,6 +22,16 @@ CURRENT_SCHEMA_V2 = "por-derecho.operational-truth.current-state.v2"
 PRODUCTION_SCHEMA_V2 = "por-derecho.operational-truth.production-status.v2"
 ROLLBACK_SCHEMA_V2 = "por-derecho.operational-truth.rollback-anchor.v2"
 LEDGER_SCHEMA_V1 = "por-derecho.operational-truth.release-ledger.v1"
+UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260826-01"
+PROMOTED_SHA = "77e2ba300af45a953947160af63283a64512e876"
+PROMOTED_TREE_SHA = "4f0ac26c5548ae44c68933306c68165cbb6c973e"
+PAGES_RUN_ID = 32942972472
+PAGES_RUN_NUMBER = 1128
+PAGES_COMPLETED_AT = "2026-08-26T07:29:45Z"
+VERIFIER_RUN_ID = 32942975508
+VERIFIER_RUN_NUMBER = 4
+VERIFIER_JOB_ID = 98097657687
+VERIFIER_COMPLETED_AT = "2026-08-26T07:29:55Z"
 
 REQUIRED_FILES = [
     "AGENTS.md",
@@ -145,8 +155,14 @@ def validate_current_state(data: dict, errors: list[str]) -> None:
         error("ops/CURRENT_STATE.json repository observation SHA invalid", errors)
     if not SHA_RE.fullmatch(str(observation.get("tree_sha", ""))):
         error("ops/CURRENT_STATE.json repository observation tree SHA invalid", errors)
+    if observation.get("sha") != PROMOTED_SHA:
+        error("ops/CURRENT_STATE.json does not observe the promoted 26-Aug merge", errors)
+    if observation.get("tree_sha") != PROMOTED_TREE_SHA:
+        error("ops/CURRENT_STATE.json does not observe the promoted 26-Aug tree", errors)
     if observation.get("status") != "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE":
         error("ops/CURRENT_STATE.json observation boundary is not explicit", errors)
+    if observation.get("observation_phase") != "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED":
+        error("ops/CURRENT_STATE.json post-merge observation phase missing", errors)
     freshness = data.get("freshness_policy") or {}
     if freshness.get("runtime_generator") != "scripts/generate_operational_truth.py":
         error("ops/CURRENT_STATE.json runtime generator path mismatch", errors)
@@ -157,6 +173,23 @@ def validate_current_state(data: dict, errors: list[str]) -> None:
         error("ops/CURRENT_STATE.json specialist-state routing missing", errors)
     if routing.get("expected_status") != "LIVE_VERIFIED":
         error("ops/CURRENT_STATE.json LIVE_VERIFIED specialist expectation missing", errors)
+    if routing.get("expected_control_id") != UNITARY_CONTROL_ID:
+        error("ops/CURRENT_STATE.json promoted specialist control expectation missing", errors)
+    deployment = data.get("deployment_observation") or {}
+    if deployment.get("last_observed_served_sha") != PROMOTED_SHA:
+        error("ops/CURRENT_STATE.json promoted deployment SHA missing", errors)
+    if deployment.get("last_observed_pages_run_id") != PAGES_RUN_ID:
+        error("ops/CURRENT_STATE.json promoted Pages run missing", errors)
+    if deployment.get("verification_level") != "LIVE_VERIFIED_FOR_SERVED_SHA":
+        error("ops/CURRENT_STATE.json exact-route verification level missing", errors)
+    for key, expected in {
+        "last_exact_route_verification_run_id": VERIFIER_RUN_ID,
+        "last_exact_route_verification_run_number": VERIFIER_RUN_NUMBER,
+        "last_exact_route_verification_job_id": VERIFIER_JOB_ID,
+        "last_exact_route_verified_at": VERIFIER_COMPLETED_AT,
+    }.items():
+        if deployment.get(key) != expected:
+            error(f"ops/CURRENT_STATE.json exact-route evidence drift: {key}", errors)
 
 
 def validate_production_status(data: dict, errors: list[str]) -> None:
@@ -181,6 +214,10 @@ def validate_production_status(data: dict, errors: list[str]) -> None:
         for key in ("served_sha", "source_tree_sha"):
             if not SHA_RE.fullmatch(str(data.get(key, ""))):
                 error(f"ops/PRODUCTION_STATUS.json {key} must be a 40-char SHA", errors)
+        if data.get("served_sha") != PROMOTED_SHA:
+            error("ops/PRODUCTION_STATUS.json does not serve the promoted 26-Aug merge", errors)
+        if data.get("source_tree_sha") != PROMOTED_TREE_SHA:
+            error("ops/PRODUCTION_STATUS.json does not serve the promoted 26-Aug tree", errors)
         deployment = data.get("deployment") or {}
         if deployment.get("status") != "completed":
             error("ops/PRODUCTION_STATUS.json deployment must be completed", errors)
@@ -188,17 +225,42 @@ def validate_production_status(data: dict, errors: list[str]) -> None:
             error("ops/PRODUCTION_STATUS.json deployment must have succeeded", errors)
         if not isinstance(deployment.get("workflow_run_id"), int):
             error("ops/PRODUCTION_STATUS.json workflow_run_id must be an integer", errors)
+        for key, expected in {
+            "workflow_run_id": PAGES_RUN_ID,
+            "run_number": PAGES_RUN_NUMBER,
+            "completed_at": PAGES_COMPLETED_AT,
+        }.items():
+            if deployment.get(key) != expected:
+                error(f"ops/PRODUCTION_STATUS.json Pages evidence drift: {key}", errors)
         verification = data.get("verification") or {}
-        if verification.get("state") != "DEPLOYMENT_BUILD_SUCCESS":
-            error("ops/PRODUCTION_STATUS.json v2 must distinguish deployment from readback", errors)
+        if verification.get("state") != "LIVE_VERIFIED":
+            error("ops/PRODUCTION_STATUS.json v2 is not live verified for the served SHA", errors)
         if (
             verification.get("current_exact_route_content_verification")
-            != "NOT_RECORDED_FOR_SERVED_SHA"
+            != "LIVE_VERIFIED_FOR_SERVED_SHA"
         ):
-            error("ops/PRODUCTION_STATUS.json served-SHA readback boundary missing", errors)
+            error("ops/PRODUCTION_STATUS.json served-SHA exact-route readback missing", errors)
         specialist = verification.get("latest_live_verified_specialist_release") or {}
         if specialist.get("state") != "LIVE_VERIFIED":
             error("ops/PRODUCTION_STATUS.json live-verified specialist evidence missing", errors)
+        for key, expected in {
+            "control_id": UNITARY_CONTROL_ID,
+            "source_publication_sha": PROMOTED_SHA,
+            "source_tree_sha": PROMOTED_TREE_SHA,
+            "verification_head_sha": PROMOTED_SHA,
+            "pages_run_id": PAGES_RUN_ID,
+            "pages_run_number": PAGES_RUN_NUMBER,
+            "workflow_run_id": VERIFIER_RUN_ID,
+            "workflow_run_number": VERIFIER_RUN_NUMBER,
+            "job_id": VERIFIER_JOB_ID,
+            "verified_at": VERIFIER_COMPLETED_AT,
+        }.items():
+            if specialist.get(key) != expected:
+                error(f"ops/PRODUCTION_STATUS.json specialist evidence drift: {key}", errors)
+        limits = str(specialist.get("limits", ""))
+        for marker in ("not proof", "guilt", "570 bis", "570 ter", "original pact", "evidential support from the Phase-A manifest"):
+            if marker not in limits:
+                error(f"ops/PRODUCTION_STATUS.json publication/evidence boundary missing: {marker}", errors)
         relationship = data.get("relationship_to_current_state") or {}
         if relationship.get("current_repository_truth_is_dynamic") is not True:
             error("ops/PRODUCTION_STATUS.json must preserve dynamic repository truth", errors)
@@ -273,6 +335,28 @@ def validate_release_ledger(data: dict, errors: list[str]) -> None:
             error(f"ops/RELEASE_LEDGER.json duplicate source_sha: {source_sha}", errors)
         else:
             shas.add(source_sha)
+    latest_id = data.get("latest_observation_release_id")
+    latest = next((release for release in releases if release.get("release_id") == latest_id), None)
+    if latest is None:
+        error("ops/RELEASE_LEDGER.json latest-observation pointer does not resolve", errors)
+        return
+    for key, expected in {
+        "source_sha": PROMOTED_SHA,
+        "source_tree_sha": PROMOTED_TREE_SHA,
+        "state": "LIVE_VERIFIED",
+        "pages_run_id": PAGES_RUN_ID,
+        "pages_run_number": PAGES_RUN_NUMBER,
+        "live_verification_run_id": VERIFIER_RUN_ID,
+        "live_verification_run_number": VERIFIER_RUN_NUMBER,
+        "live_verification_job_id": VERIFIER_JOB_ID,
+        "effective_at": VERIFIER_COMPLETED_AT,
+    }.items():
+        if latest.get(key) != expected:
+            error(f"ops/RELEASE_LEDGER.json latest evidence drift: {key}", errors)
+    limits = str(latest.get("limits", ""))
+    for marker in ("not proof", "guilt", "570 bis", "570 ter", "original pact", "evidential support from the Phase-A manifest"):
+        if marker not in limits:
+            error(f"ops/RELEASE_LEDGER.json publication/evidence boundary missing: {marker}", errors)
 
 
 def validate_operational_files(errors: list[str]) -> None:

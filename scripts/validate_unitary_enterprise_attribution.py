@@ -2,17 +2,23 @@
 """Validate the 26-Aug attributed-enterprise / RDM-manifest control package."""
 from __future__ import annotations
 
-import hashlib
 import json
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTROL_25 = "PD-UNITARY-STATE-20260825-01"
 CONTROL_26 = "PD-UNITARY-STATE-20260826-01"
 SOURCE_MAIN = "5b1652e00151a3ea2944cd0519cdaf2e04da4453"
-PRODUCTION_STATUS_SHA256 = "1a5088a4a5ebafc8dbbb6aa30e5b8459ed4763fa98d4d6b52900b89731c28068"
+MERGE_SHA = "77e2ba300af45a953947160af63283a64512e876"
+TREE_SHA = "4f0ac26c5548ae44c68933306c68165cbb6c973e"
+PAGES_RUN_ID = 32942972472
+PAGES_RUN_NUMBER = 1128
+PAGES_COMPLETED_AT = "2026-08-26T07:29:45Z"
+VERIFIER_RUN_ID = 32942975508
+VERIFIER_RUN_NUMBER = 4
+VERIFIER_JOB_ID = 98097657687
+VERIFIER_COMPLETED_AT = "2026-08-26T07:29:55Z"
 
 MANIFEST = ROOT / "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json"
 ADDENDUM = ROOT / "archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md"
@@ -71,16 +77,48 @@ def main() -> int:
         "publication_id": "unitary-enterprise-rdm-manifest-analysis-20260826",
         "control_id": CONTROL_26,
         "control_date": "2026-08-26",
-        "current_state": "PREPARED_PENDING_MERGE",
-        "status": "prepared_pending_merge",
+        "current_state": "LIVE_VERIFIED",
+        "status": "live_verified",
         "source_main_sha": SOURCE_MAIN,
-        "publication_merge_sha": None,
-        "pages_run_id": None,
-        "live_verification": "pending",
+        "merge_sha": MERGE_SHA,
+        "publication_merge_sha": MERGE_SHA,
+        "publication_tree_sha": TREE_SHA,
+        "pages_run_id": PAGES_RUN_ID,
+        "live_verification": "passed_exact_no_cache",
     }
     for key, expected in expected_manifest.items():
         if manifest.get(key) != expected:
             errors.append(f"manifest {key}: expected {expected!r}, got {manifest.get(key)!r}")
+
+    deployment_evidence = manifest.get("deployment_evidence") or {}
+    for key, expected in {
+        "pages_run_id": PAGES_RUN_ID,
+        "pages_run_number": PAGES_RUN_NUMBER,
+        "head_sha": MERGE_SHA,
+        "tree_sha": TREE_SHA,
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": PAGES_COMPLETED_AT,
+    }.items():
+        if deployment_evidence.get(key) != expected:
+            errors.append(f"manifest deployment evidence mismatch: {key}")
+    verifier_evidence = manifest.get("live_verification_evidence") or {}
+    for key, expected in {
+        "workflow_run_id": VERIFIER_RUN_ID,
+        "workflow_run_number": VERIFIER_RUN_NUMBER,
+        "job_id": VERIFIER_JOB_ID,
+        "head_sha": MERGE_SHA,
+        "tree_sha": TREE_SHA,
+        "source_publication_sha": MERGE_SHA,
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": VERIFIER_COMPLETED_AT,
+        "verified_url_count": 21,
+    }.items():
+        if verifier_evidence.get(key) != expected:
+            errors.append(f"manifest verifier evidence mismatch: {key}")
+    if len(manifest.get("live_urls") or []) != 21:
+        errors.append("manifest must preserve the exact 21-URL verification scope")
 
     allegation = manifest.get("controlling_allegation") or {}
     if allegation.get("id") != "ALG-ENT-018":
@@ -207,44 +245,111 @@ def main() -> int:
             errors.append(f"{relative}: dated-ceiling/non-proof-of-opposite boundary missing")
 
     state = load_object(STATE, errors)
-    if state.get("control_id") != CONTROL_25 or state.get("status") != "LIVE_VERIFIED":
-        errors.append("last live unitary control must remain 25-Aug LIVE_VERIFIED")
-    pending = state.get("pending_material_publication") or {}
+    if state.get("control_id") != CONTROL_26 or state.get("status") != "LIVE_VERIFIED":
+        errors.append("current unitary control must be 26-Aug LIVE_VERIFIED")
+    repository = state.get("repository") or {}
+    for key, expected in {
+        "current_main_sha_at_preparation": MERGE_SHA,
+        "source_publication_merge_sha": MERGE_SHA,
+        "verified_tree_sha": TREE_SHA,
+    }.items():
+        if repository.get(key) != expected:
+            errors.append(f"unitary repository evidence mismatch: {key}")
+    promoted = state.get("promoted_material_publication") or {}
     for key, expected in {
         "control_id": CONTROL_26,
-        "state": "PREPARED_PENDING_MERGE",
+        "state": "LIVE_VERIFIED",
         "source_main_sha": SOURCE_MAIN,
+        "publication_merge_sha": MERGE_SHA,
+        "publication_tree_sha": TREE_SHA,
         "publication_manifest": str(MANIFEST.relative_to(ROOT)),
         "repository_latest_material_date": "2026-08-26",
-        "live_verification": "PENDING_MERGE_DEPLOYMENT_AND_EXACT_EDGE_READBACK",
+        "pages_run_id": PAGES_RUN_ID,
+        "live_verification_run_id": VERIFIER_RUN_ID,
+        "live_verification_job_id": VERIFIER_JOB_ID,
+        "live_verification": "EXACT_SHA_DEPLOYMENT_AND_21_URL_NO_CACHE_READBACK_VERIFIED",
     }.items():
-        if pending.get(key) != expected:
-            errors.append(f"pending unitary state mismatch: {key}")
+        if promoted.get(key) != expected:
+            errors.append(f"promoted unitary state mismatch: {key}")
     material = state.get("material_updates") or {}
     for key, expected in {
         "repository_latest_material_date": "2026-08-26",
-        "last_live_verified_material_date": "2026-08-25",
-        "public_parity": "2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING",
+        "last_live_verified_material_date": "2026-08-26",
+        "public_parity": "2026-08-26_LIVE_VERIFIED",
     }.items():
         if material.get(key) != expected:
-            errors.append(f"unitary material-date split mismatch: {key}")
-    require_markers(
+            errors.append(f"unitary material-date parity mismatch: {key}")
+    publication = state.get("publication") or {}
+    pages = publication.get("last_pages_deployment") or {}
+    for key, expected in {
+        "sha": MERGE_SHA,
+        "tree_sha": TREE_SHA,
+        "run_id": PAGES_RUN_ID,
+        "run_number": PAGES_RUN_NUMBER,
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": PAGES_COMPLETED_AT,
+    }.items():
+        if pages.get(key) != expected:
+            errors.append(f"unitary Pages evidence mismatch: {key}")
+    readback = publication.get("current_sha_edge_readback") or {}
+    for key, expected in {
+        "state": "LIVE_VERIFIED",
+        "workflow_run_id": VERIFIER_RUN_ID,
+        "workflow_run_number": VERIFIER_RUN_NUMBER,
+        "job_id": VERIFIER_JOB_ID,
+        "head_sha": MERGE_SHA,
+        "tree_sha": TREE_SHA,
+        "source_publication_sha": MERGE_SHA,
+        "completed_at": VERIFIER_COMPLETED_AT,
+        "verified_url_count": 21,
+        "conclusion": "success",
+    }.items():
+        if readback.get(key) != expected:
+            errors.append(f"unitary readback evidence mismatch: {key}")
+    if len(publication.get("live_urls") or []) != 21:
+        errors.append("unitary state must preserve the exact 21-URL verification scope")
+    state_md_text = require_markers(
         STATE_MD,
         (
-            CONTROL_25,
-            "LIVE_VERIFIED",
             CONTROL_26,
-            "PREPARED_PENDING_MERGE",
-            "not yet live",
-            "2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING",
+            "LIVE_VERIFIED",
+            MERGE_SHA,
+            TREE_SHA,
+            str(PAGES_RUN_ID),
+            str(VERIFIER_RUN_ID),
+            str(VERIFIER_JOB_ID),
+            "2026-08-26_LIVE_VERIFIED",
         ),
         errors,
     )
+    if "PREPARED_PENDING_MERGE" in state_md_text or "not yet live" in state_md_text.lower():
+        errors.append("CURRENT_UNITARY_STATE.md retains a stale pending-publication statement")
 
-    if not PRODUCTION_STATUS.is_file():
-        errors.append("ops/PRODUCTION_STATUS.json is missing")
-    elif hashlib.sha256(PRODUCTION_STATUS.read_bytes()).hexdigest() != PRODUCTION_STATUS_SHA256:
-        errors.append("ops/PRODUCTION_STATUS.json changed before exact post-merge live verification")
+    production = load_object(PRODUCTION_STATUS, errors)
+    if production.get("served_sha") != MERGE_SHA or production.get("source_tree_sha") != TREE_SHA:
+        errors.append("production status does not identify the exact promoted merge/tree")
+    production_deployment = production.get("deployment") or {}
+    if production_deployment.get("workflow_run_id") != PAGES_RUN_ID:
+        errors.append("production status Pages run does not match promoted evidence")
+    production_verification = production.get("verification") or {}
+    if production_verification.get("state") != "LIVE_VERIFIED":
+        errors.append("production verification state is not LIVE_VERIFIED")
+    if production_verification.get("current_exact_route_content_verification") != "LIVE_VERIFIED_FOR_SERVED_SHA":
+        errors.append("production exact-route content verification is not LIVE_VERIFIED")
+    specialist = production_verification.get("latest_live_verified_specialist_release") or {}
+    for key, expected in {
+        "control_id": CONTROL_26,
+        "source_publication_sha": MERGE_SHA,
+        "source_tree_sha": TREE_SHA,
+        "verification_head_sha": MERGE_SHA,
+        "pages_run_id": PAGES_RUN_ID,
+        "workflow_run_id": VERIFIER_RUN_ID,
+        "job_id": VERIFIER_JOB_ID,
+        "verified_at": VERIFIER_COMPLETED_AT,
+    }.items():
+        if specialist.get(key) != expected:
+            errors.append(f"production specialist evidence mismatch: {key}")
 
     # Public Git must not contain a private account address, locator, filename,
     # private digest or exact row-count object in this package.  The exclusions
@@ -275,8 +380,8 @@ def main() -> int:
     print("UNITARY ENTERPRISE ATTRIBUTION CONTROL: PASS")
     print(" - ALG-ENT-018 active and attributed; ALG-ORG-011 remains retired")
     print(" - manifest-only Phase A separated from native Phase B")
-    print(" - 25-Aug live truth preserved; 26-Aug material remains PREPARED_PENDING_MERGE")
-    print(" - production observation preserved unchanged")
+    print(" - 26-Aug merge, Pages deployment and 21-URL exact readback are LIVE_VERIFIED")
+    print(" - repository and public material dates are in 2026-08-26 parity")
     print(" - no private account address, locator or digest exposed")
     return 0
 

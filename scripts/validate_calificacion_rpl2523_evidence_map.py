@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT_STATE_V2 = "por-derecho.operational-truth.current-state.v2"
-UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260825-01"
+UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260826-01"
 
 
 def read(path: str) -> str:
