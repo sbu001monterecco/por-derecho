@@ -1,10 +1,10 @@
 {
   "schema": "por-derecho.pr-reconciliation-ledger.v1",
   "control_id": "PD-PR-RECONCILIATION-20260825-01",
-  "observed_at": "2026-08-25T23:30:00Z",
+  "observed_at": "2026-08-25T23:56:35Z",
   "open_pull_request_count": 36,
   "coverage_state": "KEY_WORKSTREAMS_CLASSIFIED_FULL_BACKFILL_OPEN",
-  "governing_rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, preserve current controls, rerun current validation and close or supersede explicitly.",
+  "governing_rule": "Do not merge stale or overlapping PRs wholesale. Rebuild or extract unique validated deltas on current main, preserve current controls, rerun current validation and close or supersede explicitly.",
   "states": [
     "REBUILD_ON_CURRENT_MAIN",
     "EXTRACT_UNIQUE_DELTA",
@@ -29,6 +29,12 @@
         "Acosta Matos family/business cluster with actor-specific capacity boundaries",
         "Finite finca, power, vote, NIF and DP 1132/Rollo 1010 evidence programme"
       ]
+    },
+    {
+      "pr": 1036,
+      "title": "Rebuild operational truth into current, deployment and rollback layers",
+      "state": "EXTRACT_UNIQUE_DELTA",
+      "reason": "The verified unitary specialist state from PRs #1031 and #1038 now controls. Preserve only unique operational-truth generator, release-ledger, history-directory and compatibility-validator improvements after comparison with current main; do not overwrite the LIVE_VERIFIED unitary state or duplicate the structured verifier fix."
     },
     {
       "pr": 1033,
@@ -90,7 +96,7 @@
       "pr": 1026,
       "merge_sha": "f9d0a22305431eeb6405b70f3bc30e5ff5bae514",
       "status": "MERGED_TO_MAIN",
-      "note": "The executable priority-actions programme is now current-main source and is not an open reconciliation candidate."
+      "note": "The executable priority-actions programme is current-main source."
     },
     {
       "pr": 1030,
@@ -103,6 +109,18 @@
       "merge_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
       "status": "MERGED_TO_MAIN",
       "note": "Prescription-recovery deletion audit and closeout records are current-main source."
+    },
+    {
+      "pr": 1031,
+      "merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+      "status": "MERGED_AND_LIVE_VERIFIED",
+      "note": "The synchronized unitary state, 185-identity parity, material-update source and PR ledger deployed in Pages run 32912074201."
+    },
+    {
+      "pr": 1038,
+      "merge_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
+      "status": "MERGED_VERIFICATION_FIX",
+      "note": "Structured state-JSON verification replaced the whitespace-sensitive false-negative assertion; main run 32912919872 passed."
     }
   ],
   "backfill_actions": [
