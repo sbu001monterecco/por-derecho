@@ -5,7 +5,7 @@
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-26T11:02:07Z",
   "source_base": "4e551da30c1f2e686769b9842fcf93189a03e470",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "purpose": "Publish the strongest source-controlled attribution to the prosecutor from the 25 July 2023 Calificacion hearing onward while preserving the distinction between Gil Marer's first-hand identification, official institutional attendance and unproved actor-specific knowledge or conduct.",
   "expected_routes": {
     "es": [
@@ -36,8 +36,48 @@
   "attribution_boundary": "The post-hearing knowing-instrumentalisation, Article 36.2 retaliation and private-benefit propositions are expressly attributed allegations, not judicial or prosecutorial findings. Presence and procedural capacity do not automatically establish knowledge, causation, intent, concert or criminal liability.",
   "privacy_control": "Only public-safe source/status summaries are committed. Native audiovisual files, private correspondence, addresses, message identifiers and custody locators remain outside the public repository.",
   "deletions": [],
+  "pull_request": 1057,
+  "merge_sha": "fbdb4c3c324142a66905d3dab9d6519a9d859184",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "run_id": 32961754658,
+    "status": "success",
+    "head_sha": "fbdb4c3c324142a66905d3dab9d6519a9d859184",
+    "completed_at": "2026-08-26T11:08:21Z",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32961754658"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/",
+    "https://sbu001monterecco.github.io/por-derecho/es/calificacion-concurso-36-2012-vidas-paralelas/vista-prueba-testigos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-parallel-lives/hearing-evidence-witnesses/",
+    "https://sbu001monterecco.github.io/por-derecho/es/tesis-uso-criminal-procedimiento-calificacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-classification-criminal-misuse-thesis/",
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/maximal-attribution/"
+  ],
+  "live_verification_evidence": {
+    "result": "8/8 HTTP 200 AND BYTE-FOR-BYTE MATCH",
+    "verified_at": "2026-08-26T11:09:41Z",
+    "sha256": {
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html": "e3231788c6b9a26352e5beae4fbe67d0504b36a15ea71fccd0cad1451ff07cd5",
+      "en/insolvency-classification-parallel-lives/index.html": "4ee97b18fc68b3b29634716ddedcb470660c2b60ee4e8d054f07c84c9e57b408",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/vista-prueba-testigos/index.html": "66d7a3f1ca274ac2b47870a2fa71f372373eec7db89d3816d68f34b6ade967e4",
+      "en/insolvency-classification-parallel-lives/hearing-evidence-witnesses/index.html": "85fbe83c72ef6123ccf80b1eee166528cd82897b029d7d8077cdac9c82fa108a",
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html": "f804a526136d14772c49b0dc039519b166c7769fadaa8884b0051cfa98b8c141",
+      "en/insolvency-classification-criminal-misuse-thesis/index.html": "63ba28f819cde4bdd5908f343ece98935f7de07d6d5f08365db15b7bab0b4cde",
+      "es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/index.html": "2490e2e2ce3015aa41e05fbfcf0cac0b301c23c701b9c943e14aa8b7eafdc104",
+      "en/unitary-criminal-hypothesis-2011-present/maximal-attribution/index.html": "adac8509ca2d25ad65eee95f293027ee6e1c50eafa2b32ab159bc688065547ed"
+    }
+  },
   "validation": {
-    "status": "LOCAL_GATES_PENDING_REMOTE_CI",
+    "status": "CI_GREEN_MERGED_DEPLOYED_LIVE_VERIFIED",
+    "evidence": [
+      "PR #1057 passed 11/11 triggered pull-request workflows.",
+      "Exact-merge Pages run 32961754658 completed successfully for fbdb4c3c324142a66905d3dab9d6519a9d859184.",
+      "Eight bilingual public surfaces returned HTTP 200 and matched the merged files byte for byte.",
+      "Repository preservation, publication integrity, audience experience, Calificacion, private-source governance and unitary attribution controls passed."
+    ],
     "required": [
       "validate_repository_preservation.py",
       "validate_publication_integrity.py",
