@@ -1,1 +1,204 @@
-{"schema":"por-derecho.sun-park-unit-owner-ledger.part.lpb12.v1","control_id":"PD-SP-UNIT-OWNER-LEDGER-001","reconstruction":{"perimeter_id":"PD-SP-PER-LPB-12-001","reported_denominator":12,"confirmed_completed_transfer_count":0,"candidate_slot_count":5,"unresolved_slot_count":7,"status":"RECONSTRUCTION_ACTIVE_NO_COMPLETED_DIRECT_LPB_TRANSFER_CONFIRMED_IN_CURRENT_REVIEW","slots":[{"slot_id":"LPB12-SLOT-01","unit_label":"109","finca_id":"8750","candidate_owner_local_identity_id":"PD-SP-LED-P-0001","status":"CANDIDATE_LEAD_ONLY_DIRECT_LPB_TRANSFER_NOT_ESTABLISHED","basis":["SRC-PRECAM-OWNER-SCHEDULE"],"closure_profile":"DEED_REGISTRY_SELLER_PAYMENT"},{"slot_id":"LPB12-SLOT-02","unit_label":"110","finca_id":"8749","candidate_owner_local_identity_id":"PD-SP-LED-P-0001","status":"CANDIDATE_LEAD_ONLY_DIRECT_LPB_TRANSFER_NOT_ESTABLISHED","basis":["SRC-PRECAM-OWNER-SCHEDULE"],"closure_profile":"DEED_REGISTRY_SELLER_PAYMENT"},{"slot_id":"LPB12-SLOT-03","unit_label":"801","finca_id":"8666","candidate_owner_local_identity_id":"PD-SP-LED-P-0003","status":"CANDIDATE_LEAD_ONLY_2010_OWNER_CONTRACT_NOT_LPB_SALE_PROOF","basis":["SRC-WHITE-EXPLOITATION-2010","SRC-PRECAM-OWNER-SCHEDULE"],"closure_profile":"DEED_REGISTRY_BANK_CHAIN"},{"slot_id":"LPB12-SLOT-04","unit_label":"802","finca_id":"8665","candidate_owner_local_identity_id":"PD-SP-LED-P-0003","status":"CANDIDATE_LEAD_ONLY_2010_OWNER_CONTRACT_NOT_LPB_SALE_PROOF","basis":["SRC-WHITE-EXPLOITATION-2010","SRC-PRECAM-OWNER-SCHEDULE"],"closure_profile":"DEED_REGISTRY_BANK_CHAIN"},{"slot_id":"LPB12-SLOT-05","unit_label":"805","finca_id":"8662","candidate_owner_local_identity_id":"PD-SP-LED-P-0004","status":"CANDIDATE_LEAD_ONLY_2010_OWNER_CONTRACT_NOT_LPB_SALE_PROOF","basis":["SRC-LEE-EXPLOITATION-2010","SRC-PRECAM-OWNER-SCHEDULE"],"closure_profile":"DEED_REGISTRY_BANK_CHAIN"},{"slot_id":"LPB12-SLOT-06","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"},{"slot_id":"LPB12-SLOT-07","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"},{"slot_id":"LPB12-SLOT-08","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"},{"slot_id":"LPB12-SLOT-09","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"},{"slot_id":"LPB12-SLOT-10","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"},{"slot_id":"LPB12-SLOT-11","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"},{"slot_id":"LPB12-SLOT-12","unit_label":null,"finca_id":null,"candidate_owner_local_identity_id":null,"status":"UNRESOLVED_NO_OWNER_OR_UNIT_INVENTED","basis":["SRC-USER-REPORTED-12-DENOMINATOR"],"closure_profile":"FULL_IDENTIFICATION"}],"option_only_leads":[{"unit_label":"907","local_identity_id":"PD-SP-LED-P-0001","source_id":"SRC-BRODERICK-OPTION-2009","status":"OPTION_ONLY_COMPLETION_NOT_ESTABLISHED"},{"unit_label":"908","local_identity_id":"PD-SP-LED-P-0001","source_id":"SRC-BRODERICK-OPTION-2009","status":"OPTION_ONLY_COMPLETION_NOT_ESTABLISHED"}],"boundary":"Candidate slots are investigation leads only. No slot is a confirmed direct LPB conveyance until the deed, Registry history, completion and seller/payment chain are reconciled.","closure_profiles":{"DEED_REGISTRY_SELLER_PAYMENT":["conveyance deed","historic Registry entry","seller identity","completion/payment evidence"],"DEED_REGISTRY_BANK_CHAIN":["conveyance deed","historic Registry entry","seller identity","bank transfer/recovery chain"],"FULL_IDENTIFICATION":["identify unit/finca","identify transferee","conveyance deed","historic Registry entry","seller/payment evidence"]}}}
+{
+  "schema": "por-derecho.sun-park-unit-owner-ledger.part.lpb12.v2",
+  "control_id": "PD-SP-UNIT-OWNER-LEDGER-001",
+  "reconstruction": {
+    "perimeter_id": "PD-SP-PER-LPB-12-001",
+    "reported_denominator": 12,
+    "schedule_reconciled_count": 12,
+    "deed_supported_unit_count": 10,
+    "missing_deed_slot_count": 2,
+    "status": "DENOMINATOR_RECONCILED_10_DEED_SUPPORTED_2_MISSING_DEED_OPEN",
+    "primary_join_key": "finca_registral",
+    "prohibited_join": "INTERNAL_OR_HOTEL_UNIT_NUMBER_ALONE",
+    "why": "Internal/hotel unit numbers conflict between documents and dates; provenance overlap is not verified without a finca-level match or equivalent primary title bridge.",
+    "slots": [
+      {
+        "slot_id": "LPB12-SLOT-01",
+        "sale_schedule_code": "LW",
+        "sale_date": "2009-01-12",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Louise White"],
+        "finca_registral": "8546",
+        "horizontal_number": "50",
+        "legal_apartment_number": "10",
+        "internal_unit_labels": [{"value":"802","source_id":"SRC-LPB-SALE-DEED-WHITE-802-20090112","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-WHITE-802-20090112"],
+        "later_checkpoint": {"date_scope":"2018-06","source_id":"SRC-PRECAM-OWNER-SCHEDULE","reported_owner":"ABANCA","status":"LATER_SOURCE_CHECKPOINT_NOT_TITLE_CHAIN_CLOSURE"},
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-02",
+        "sale_schedule_code": "LW",
+        "sale_date": "2009-01-12",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Louise White"],
+        "finca_registral": "8548",
+        "horizontal_number": "52",
+        "legal_apartment_number": "12",
+        "internal_unit_labels": [{"value":"801","source_id":"SRC-LPB-SALE-DEED-WHITE-801-20090112","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-WHITE-801-20090112"],
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-03",
+        "sale_schedule_code": "AJW",
+        "sale_date": "2009-01-13",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Alison Jane Whent"],
+        "finca_registral": "8616",
+        "horizontal_number": "120",
+        "legal_apartment_number": "80",
+        "internal_unit_labels": [{"value":"301","source_id":"SRC-LPB-SALE-DEED-WHENT-301-20090113","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-WHENT-301-20090113"],
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-04",
+        "sale_schedule_code": "KMB",
+        "sale_date": "2009-03-25",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Kathleen Marie Broderick","James Anthony Broderick"],
+        "finca_registral": "8749",
+        "horizontal_number": "253",
+        "legal_apartment_number": "211",
+        "internal_unit_labels": [{"value":"907","source_id":"SRC-LPB-SALE-DEED-BRODERICK-907-908-20090325","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-BRODERICK-907-908-20090325"],
+        "ap89_overlap_status": "NOT_ESTABLISHED_INTERNAL_LABEL_COLLISION_DO_NOT_JOIN",
+        "warning": "AP89 also contains a pleaded label 907, but no AP89 finca bridge presently proves that it is this finca. A later source also uses internal 907 for finca 8587."
+      },
+      {
+        "slot_id": "LPB12-SLOT-05",
+        "sale_schedule_code": "KMB",
+        "sale_date": "2009-03-25",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Kathleen Marie Broderick","James Anthony Broderick"],
+        "finca_registral": "8750",
+        "horizontal_number": "254",
+        "legal_apartment_number": "212",
+        "internal_unit_labels": [{"value":"908","source_id":"SRC-LPB-SALE-DEED-BRODERICK-907-908-20090325","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-BRODERICK-907-908-20090325"],
+        "ap89_overlap_status": "NOT_ESTABLISHED_INTERNAL_LABEL_ONLY_DO_NOT_JOIN",
+        "warning": "AP89 contains a pleaded label 908, but an exact AP89 finca mapping is still required before any ownership-continuity or perimeter-overlap conclusion."
+      },
+      {
+        "slot_id": "LPB12-SLOT-06",
+        "sale_schedule_code": "FN",
+        "sale_date": "2009-03-25",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Fulvia Nardi"],
+        "finca_registral": "8560",
+        "horizontal_number": "64",
+        "legal_apartment_number": "24",
+        "internal_unit_labels": [
+          {"value":"705","source_id":"SRC-LPB-SALE-DEED-NARDI-20090325","status":"DEED_NATIVE"},
+          {"value":"704","source_id":"SRC-PRECAM-OWNER-SCHEDULE","date_scope":"2018-06","status":"CONFLICTING_LATER_CHECKPOINT"}
+        ],
+        "conflicts": [{"type":"INTERNAL_NUMBER_CONFLICT","status":"OPEN","rule":"Do not silently resolve; finca 8560 is the controlling cross-source key."}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-NARDI-20090325"],
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-07",
+        "sale_schedule_code": "PWK-RD",
+        "sale_date": "2009-04-29",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Peter William Kinnard","Penelope Ann Kinnard"],
+        "finca_registral": "8564",
+        "horizontal_number": "68",
+        "legal_apartment_number": "28",
+        "internal_unit_labels": [{"value":"616","source_id":"SRC-PRECAM-OWNER-SCHEDULE","date_scope":"2018-06","status":"LATER_CHECKPOINT_ONLY_NOT_DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-KINNARD-20090429"],
+        "later_checkpoint": {"date_scope":"2018-06","source_id":"SRC-PRECAM-OWNER-SCHEDULE","reported_owner":"Richard Dougherty","status":"LATER_SOURCE_CHECKPOINT_TRANSFER_DATE_OPEN"},
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-08",
+        "sale_schedule_code": "PP",
+        "sale_date_scope": "2009",
+        "seller_entity_id": "LPB_REPORTED_BY_SALE_SCHEDULE",
+        "buyer_names": [],
+        "finca_registral": null,
+        "status": "SCHEDULE_BACKED_MISSING_DEED_IDENTITY_AND_FINCA_OPEN",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-DEED-INVENTORY-2018"],
+        "prohibited_inference": "Do not expand PP to a named owner from initials alone.",
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-09",
+        "sale_schedule_code": "S+RT",
+        "sale_date_scope": "2009",
+        "seller_entity_id": "LPB_REPORTED_BY_SALE_SCHEDULE",
+        "buyer_names": [],
+        "finca_registral": null,
+        "status": "SCHEDULE_BACKED_MISSING_DEED_IDENTITY_AND_FINCA_OPEN",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-DEED-INVENTORY-2018"],
+        "prohibited_inference": "Do not expand S+RT to named owners from initials alone.",
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-10",
+        "sale_schedule_code": "EJL",
+        "sale_date": "2010-03-11",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Eamon John Lee"],
+        "finca_registral": "8543",
+        "horizontal_number": "47",
+        "legal_apartment_number": "7",
+        "internal_unit_labels": [{"value":"805","source_id":"SRC-LPB-SALE-DEED-LEE-805-20100311","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-LEE-805-20100311"],
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-11",
+        "sale_schedule_code": "TH",
+        "sale_date": "2011-01-31",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Trevor Hillary","Christine Ann Hillary"],
+        "finca_registral": "8578",
+        "horizontal_number": "82",
+        "legal_apartment_number": "42",
+        "internal_unit_labels": [
+          {"value":"603","source_id":"SRC-LPB-SALE-DEED-HILLARY-20110131","status":"DEED_NATIVE"},
+          {"value":"602","source_id":"SRC-PRECAM-OWNER-SCHEDULE","date_scope":"2018-06","status":"CONFLICTING_LATER_CHECKPOINT"}
+        ],
+        "conflicts": [{"type":"INTERNAL_NUMBER_CONFLICT","status":"OPEN","rule":"Do not silently resolve; finca 8578 is the controlling cross-source key."}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-HILLARY-20110131"],
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      },
+      {
+        "slot_id": "LPB12-SLOT-12",
+        "sale_schedule_code": "JRS",
+        "sale_date": "2011-02-04",
+        "seller_entity_id": "LPB",
+        "buyer_names": ["Javier Ruiz Spohr"],
+        "finca_registral": "8603",
+        "horizontal_number": "107",
+        "legal_apartment_number": "67",
+        "internal_unit_labels": [{"value":"314","source_id":"SRC-LPB-SALE-DEED-RUIZ-SPOHR-20110204","status":"DEED_NATIVE"}],
+        "status": "PURPLE_SOLID_DEED_SUPPORTED_DIRECT_LPB_CONVEYANCE",
+        "basis": ["SRC-LPB-SALE-SCHEDULE-2008-2011","SRC-LPB-SALE-DEED-RUIZ-SPOHR-20110204"],
+        "ap89_overlap_status": "NOT_ESTABLISHED"
+      }
+    ],
+    "denominator_check": {
+      "schedule_pattern": "9 units in 2009 + 1 in 2010 + 2 in 2011 = 12",
+      "ownership_percentage_check": [
+        {"year":2008,"lpb_percent":77.600},
+        {"year":2009,"lpb_percent":74.135},
+        {"year":2010,"lpb_percent":73.750},
+        {"year":2011,"lpb_percent":72.980}
+      ],
+      "status": "AGGREGATE_CORROBORATION_ONLY_NOT_TITLE_PROOF"
+    },
+    "boundary": "Ten units are now supported by controlled copies of completed LPB sale deeds. This proves the seller/buyer/property particulars shown in those instruments; it does not by itself close every later Registry chain. PP and S+RT remain deliberately unnamed and finca-open until their missing deeds or equivalent primary title evidence are recovered."
+  }
+}
