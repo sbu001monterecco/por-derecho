@@ -56,7 +56,7 @@
   },
   "recipient_perimeter": {
     "state": "FROZEN_PRIVATE_MANIFEST",
-    "public_summary": "The last user-corrected perimeter restores one German insolvency-side professional alongside the existing legal-adviser route, excludes only the expressly identified Concurso 36/2012 administrator recipient, and retains the previously approved media cohort.",
+    "public_summary": "The last user-corrected perimeter restores one German insolvency-side professional alongside the existing legal-adviser route, excludes only the expressly identified Concurso 36/2012 administrator recipient, and retains the last user-specified media cohort.",
     "exact_names_and_addresses": "PRIVATE_SOURCE_SYSTEM_ONLY",
     "new_recipients_allowed": false,
     "change_invalidates_readiness": true
@@ -111,7 +111,7 @@
       "6f327ef4",
       "9cb1e11b"
     ],
-    "state": "BLOCKED_RECOVERY_UNTIL_REIMPLEMENTED_FROM_CURRENT_MAIN_AND_PRIMARY_SOURCES"
+    "state": "REIMPLEMENTED_ON_PRESERVATION_BRANCH_PENDING_MERGE_DEPLOYMENT_LIVE_READBACK"
   },
   "caepr_caret_state": {
     "result": "PARTIAL_NOT_ALL_IS_CARET",
