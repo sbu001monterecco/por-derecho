@@ -1,27 +1,47 @@
 {
-  "manifest_id": "PD-PUB-ONA-20260826-01",
-  "date": "2026-08-26",
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-PUB-ONA-20260826-01",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-26T13:00:00Z",
+  "source_base": "75cc0a1542a3cb7207f37e27198a4f139d1a64a5",
+  "current_state": "PR_OPEN",
+  "publication_pr": 1061,
+  "purpose": "Publish a bilingual, non-fragmented April 2018–2019 ONA/Clubotel funded-exit evidence spine, connect it to Carlos Sanz, Daniel Irigoyen, Cuatrecasas, Clubotel personation and the ONA security package, and state Gil Marer's alleged criminal continuum through five separate private-actor lanes plus distinct Insolvency Administrator and Magistrate-Judge lanes.",
+  "expected_routes": {
+    "es": [
+      "es/ona-hotels-salida-concurso-36-2012/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/index.html"
+    ],
+    "en": [
+      "en/ona-hotels-insolvency-exit-36-2012/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/clubotel-personation-daniel-irigoyen/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/cuatrecasas-debt-certification-finance/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md",
+    "archive/declarations/GIL_MARER_ONA_FUNDED_EXIT_STATEMENT_OF_FACT_AND_TRUTH_20260826.md",
+    "data/ona-funded-exit-unitary-record.json",
+    "sitemap-ona-funded-exit.xml",
+    "robots.txt"
+  ],
   "scope": "Bilingual unitary ONA/Clubotel funded-exit evidence spine and actor-specific criminal-allegation test",
   "authority": "User instruction to formulate, present, fully link and publish the repository and website update",
-  "base_branch": "main",
   "working_branch": "chatgpt/ona-funded-exit-unitary-criminal-spine-20260826",
-  "source_record": "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md",
-  "declarant_record": "archive/declarations/GIL_MARER_ONA_FUNDED_EXIT_STATEMENT_OF_FACT_AND_TRUTH_20260826.md",
-  "machine_record": "data/ona-funded-exit-unitary-record.json",
-  "public_routes": [
-    "es/ona-hotels-salida-concurso-36-2012/index.html",
-    "en/ona-hotels-insolvency-exit-36-2012/index.html",
-    "es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/index.html",
-    "en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/index.html",
-    "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
-    "en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/index.html",
-    "es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/index.html",
-    "en/ona-hotels-insolvency-exit-36-2012/clubotel-personation-daniel-irigoyen/index.html",
-    "es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/index.html",
-    "en/ona-hotels-insolvency-exit-36-2012/cuatrecasas-debt-certification-finance/index.html",
-    "es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/index.html",
-    "en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/index.html"
-  ],
+  "controlling_status": {
+    "ona_clubotel_role": "DOCUMENTED_OPERATOR_AND_ACQUISITION_PARTICIPANT_WITHIN_COORDINATED_EXIT",
+    "all_creditor_objective": "DOCUMENTED_IN_SEPTEMBER_2018_CONTEMPORANEOUS_CORRESPONDENCE",
+    "personation": "DOCUMENTED_FORMAL_ACQUISITION_AND_INFORMATION_INTEREST",
+    "criminality": "GIL_MARER_ATTRIBUTED_ALLEGATION_NOT_FINAL_FINDING",
+    "joint_adoption": "NONE_EACH_PERSON_ATTRIBUTED_SEPARATELY"
+  },
   "cross_link_targets": [
     "ONA pre-7-June funded-exit dossier",
     "Cuatrecasas Sun Park",
@@ -42,25 +62,16 @@
     "Gil Marer statement and allegation",
     "open proof and contrary-evidence requirements"
   ],
-  "publication_boundaries": {
-    "no_raw_private_email_bodies": true,
-    "no_private_message_ids_or_addresses": true,
-    "no_joint_adoption_by_named_participants": true,
-    "no_adjudicated_criminal_guilt_claim": true,
-    "legal_persons_and_capacities_kept_distinct": true,
-    "actor_specific_knowledge_and_intent_required": true,
-    "right_of_reply_preserved": true
-  },
-  "required_verification": [
-    "compare branch with refreshed main before PR",
-    "review all changed paths for deletion or rename",
-    "validate ES/EN route parity",
-    "validate canonical and hreflang links",
-    "validate internal route targets",
-    "validate sitemap XML",
-    "run repository and publication-integrity workflows available on PR",
-    "verify exact merge SHA deployment and live affected routes"
+  "inference_boundaries": [
+    "The Insolvency Administrator answered Carlos Sanz; the supported criticism is substantive refusal and procedural redirection, not literal silence.",
+    "Clubotel's personation pleading formalised an acquisition and information-access interest; the wider creditor-payment purpose comes from the combined record.",
+    "No named professional or company jointly adopts Gil Marer's criminal allegation merely because their contemporaneous evidence is material.",
+    "No knowledge, intent, control or responsibility transfers through family, corporate, professional or institutional association.",
+    "The ONA and finance routes retained conditions and the public record does not establish final drawdown.",
+    "No criminal conviction or final finding is asserted against any named person."
   ],
+  "privacy_control": "No raw private email bodies, provider identifiers, private addresses, privileged attachments or unnecessary personal data are published. Native evidence remains in the controlled private corpus.",
+  "deletions": [],
   "known_open_evidence": [
     "certified April correspondence exhibits where required",
     "certified post-13-June filing and annexes",
@@ -68,5 +79,15 @@
     "complete Clubotel personation, AC opposition and ruling",
     "condition-by-condition closing ledger",
     "actor-specific knowledge and benefit evidence"
+  ],
+  "required_verification": [
+    "compare branch with refreshed main before merge",
+    "review all changed paths for deletion or rename",
+    "validate ES/EN route parity",
+    "validate canonical and hreflang links",
+    "validate internal route targets",
+    "validate sitemap XML",
+    "run repository and publication-integrity workflows available on PR",
+    "verify exact merge SHA deployment and live affected routes"
   ]
 }
