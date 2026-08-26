@@ -1,0 +1,45 @@
+name: Validate Sun Park unit-owner ledger
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/sun-park-unit-owner-ledger-v1*.json'
+      - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
+      - 'assets/owner-perimeter-tokens.css'
+      - 'scripts/validate_sun_park_unit_owner_ledger.py'
+      - 'archive/SUN_PARK_UNIT_OWNER_LEDGER_PROTOCOL_26AUG2026.md'
+      - 'es/54-cam-proveniencia-minorias-relato-publico/index.html'
+      - 'en/54-cam-provenance-minorities-public-narrative/index.html'
+      - '.github/workflows/validate-sun-park-unit-owner-ledger.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/sun-park-unit-owner-ledger-v1*.json'
+      - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
+      - 'assets/owner-perimeter-tokens.css'
+      - 'scripts/validate_sun_park_unit_owner_ledger.py'
+      - 'archive/SUN_PARK_UNIT_OWNER_LEDGER_PROTOCOL_26AUG2026.md'
+      - 'es/54-cam-proveniencia-minorias-relato-publico/index.html'
+      - 'en/54-cam-provenance-minorities-public-narrative/index.html'
+      - '.github/workflows/validate-sun-park-unit-owner-ledger.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Validate unit-owner ledger
+        run: python3 scripts/validate_sun_park_unit_owner_ledger.py
+      - name: Validate ledger JSON syntax
+        run: |
+          for file in assets/data/sun-park-unit-owner-ledger-v1*.json; do
+            python3 -m json.tool "$file" >/dev/null
+          done
