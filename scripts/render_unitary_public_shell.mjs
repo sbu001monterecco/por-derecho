@@ -50,7 +50,7 @@ try{
       try{
         const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
         if(!response||response.status()>=400)throw new Error(`HTTP ${response?.status()}`);
-        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260823a',null,{timeout:15000});
+        await page.waitForFunction(()=>document.documentElement.dataset.psrUnitaryShellVersion==='20260826a',null,{timeout:15000});
         if(route.kind==='home'){
           const progressiveRecord=page.locator('[data-audience-full-record] > details');
           if(await progressiveRecord.count())await progressiveRecord.evaluate(node=>{node.open=true;});
