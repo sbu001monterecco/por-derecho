@@ -3,11 +3,16 @@
   "publication_id": "ac-removal-fees-unitary-criminal-analysis-20260826",
   "control_id": "PD-AC-REM-FEES-UNITARY-20260826-01",
   "control_date": "2026-08-26",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "prepared",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "repository": "sbu001monterecco/por-derecho",
   "source_main_sha": "048bb4e419a6b36e279e3e7d5792ebafb008cfe5",
+  "merge_sha": "6e2b06de8242e9f98f38d4710399959e8f128224",
+  "publication_merge_sha": "6e2b06de8242e9f98f38d4710399959e8f128224",
+  "publication_tree_sha": "37d7fb9ebf50bb4d0af353ba1796f85a00112ece",
+  "pages_run_id": 33020823527,
+  "live_verification": "BROWSER_AND_NO_CACHE_EDGE_READBACK_PASSED",
   "purpose": "Publish one non-fragmented, reverse-engineered removal/remuneration thread that joins the initiating pleadings, contrary positions, Judge/Appeal Court/LAJ acts, procedural consequences, appeals, criminal relevance and production gaps without merging legally distinct proceedings or converting allegations into findings.",
   "expected_routes": {
     "es": [
@@ -24,6 +29,18 @@
     ]
   },
   "live_urls_to_verify": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/#analisis-unitario",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/#unitary-analysis",
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/#hilo-separacion-honorarios-ac",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/#ac-removal-fees-thread",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/concurso36-ac-removal-fees-production-gaps-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md"
+  ],
+  "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/#analisis-unitario",
     "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/#unitary-analysis",
     "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/#hilo-separacion-honorarios-ac",
@@ -104,6 +121,50 @@
     "desktop/mobile rendered-page inspection",
     "post-merge exact-route and asset readback"
   ],
+  "validation": {
+    "state": "CI_GREEN_AND_PUBLIC_EDGE_VERIFIED",
+    "evidence": [
+      "PR 1086 merged only after 30 distinct current-head workflows completed successfully",
+      "Pages deployment run 33020823527 completed successfully for merge 6e2b06de8242e9f98f38d4710399959e8f128224",
+      "Managed-browser readback opened all six bilingual reader/registry routes at their exact post-navigation URLs",
+      "No-cache HTTP readback returned 200 and the controlled markers for all ten declared public URLs"
+    ]
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "workflow_run_id": 33020823527,
+    "workflow_run_number": 1162,
+    "head_sha": "6e2b06de8242e9f98f38d4710399959e8f128224",
+    "tree_sha": "37d7fb9ebf50bb4d0af353ba1796f85a00112ece",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at": "2026-08-26T22:48:11Z",
+    "html_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33020823527"
+  },
+  "live_verification_evidence": {
+    "state": "LIVE_VERIFIED",
+    "observed_at": "2026-08-26T22:58:56Z",
+    "source_publication_sha": "6e2b06de8242e9f98f38d4710399959e8f128224",
+    "source_tree_sha": "37d7fb9ebf50bb4d0af353ba1796f85a00112ece",
+    "verified_url_count": 10,
+    "browser_route_count": 6,
+    "no_cache_asset_count": 4,
+    "browser_findings": {
+      "bilingual_analysis_sections_visible": true,
+      "bilingual_identity_registry_routes_opened": true,
+      "horizontal_overflow_detected": false,
+      "controlled_source_links_present": true
+    },
+    "edge_findings": {
+      "http_200_for_all_declared_urls": true,
+      "identity_registry_total": 194,
+      "pleaded_total_eur": "110956.97",
+      "pleaded_total_arithmetic_reconciles": true,
+      "bank_verified_total": null,
+      "production_gap_count": 10
+    },
+    "boundary": "Live verification proves publication and controlled-marker parity only; it does not prove allegations, criminal liability, fee unlawfulness, payment, loss, causation or appeal finality."
+  },
   "pre_merge_validation": {
     "state": "STRUCTURAL_LEGAL_PRIVACY_AND_LINK_GATES_PASSED; BROWSER_RENDER_REQUIRED_IN_PR_CI",
     "passed": [
@@ -129,5 +190,5 @@
     "court_or_third_party_filings": "NOT_AUTHORISED",
     "private_source_publication": "NOT_AUTHORISED"
   },
-  "next_gate": "Merge only after all repository validators and bilingual render checks pass; then verify the exact affected routes and data assets at the public edge."
+  "next_gate": "Close the finite production gaps: later signed appellate merits/finality acts, the certified whole-Concurso docket, the complete remuneration/payment bridge, the exact DP 459/2024 identity and the remaining certified criminal/professional records."
 }
