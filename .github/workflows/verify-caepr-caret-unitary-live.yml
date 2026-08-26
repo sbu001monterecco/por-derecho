@@ -1,0 +1,188 @@
+name: Verify CAEPR caret unitary digest live
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/verify-caepr-caret-unitary-live.yml'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'assets/data/matter-identity-registry-v1.json'
+      - 'assets/data/matter-identity-registry-v1.*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-caepr-caret-unitary-live
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify bilingual public caret routes and immutable registry targets
+        run: |
+          mkdir -p artifacts/caepr-caret-live
+          python - <<'PY'
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.request
+
+          BASE = 'https://sbu001monterecco.github.io/por-derecho/'
+          PAGE_CHECKS = [
+              {
+                  'kind': 'en',
+                  'path': 'en/caepr-caret-unitary-digest/',
+                  'markers': [
+                      'PARTIAL — NOT ALL IS^',
+                      'Aweswell Limited^',
+                      'CaixaBank, S.A.^',
+                      'Concurso 36/2012^',
+                      'Matkator, S.L.U.',
+                      'Ona Hotels / ONA',
+                      'Clubotel La Dorada, S.L.',
+                      'PP 1041/2017',
+                      'EH 90/2012',
+                      '../matter-identity-registry/#PD-SP-O-0001',
+                      '../matter-identity-registry/#PD-SP-O-0032',
+                      '../matter-identity-registry/#PD-SP-R-0001',
+                  ],
+              },
+              {
+                  'kind': 'es',
+                  'path': 'es/verificacion-caepr-caret-digest-unitario/',
+                  'markers': [
+                      'PARCIAL — NO TODO ES^',
+                      'Aweswell Limited^',
+                      'CaixaBank, S.A.^',
+                      'Concurso 36/2012^',
+                      'Matkator, S.L.U.',
+                      'Ona Hotels / ONA',
+                      'Clubotel La Dorada, S.L.',
+                      'PP 1041/2017',
+                      'EH 90/2012',
+                      '../registro-identidad-materia/#PD-SP-O-0001',
+                      '../registro-identidad-materia/#PD-SP-O-0032',
+                      '../registro-identidad-materia/#PD-SP-R-0001',
+                  ],
+              },
+          ]
+          CONFIRMED_IDS = [
+              'PD-SP-O-0001','PD-SP-O-0002','PD-SP-O-0006','PD-SP-O-0004',
+              'PD-SP-O-0029','PD-SP-O-0030','PD-SP-O-0021','PD-SP-O-0007',
+              'PD-SP-O-0005','PD-SP-O-0018','PD-SP-O-0032','PD-SP-O-0050',
+              'PD-SP-O-0020','PD-SP-O-0042','PD-SP-P-0011','PD-SP-I-0002',
+              'PD-SP-R-0001','PD-SP-R-0002','PD-SP-R-0007',
+          ]
+
+          def now():
+              return dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00','Z')
+
+          def get(url):
+              req = urllib.request.Request(url, headers={
+                  'User-Agent': 'Por-Derecho-CAEPR-Caret-Live-Verify/1.0',
+                  'Cache-Control': 'no-cache, no-store, max-age=0',
+                  'Pragma': 'no-cache',
+              })
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  body = response.read()
+                  return response.status, body, dict(response.headers)
+
+          last = None
+          for attempt in range(1, 10):
+              pages = []
+              healthy = True
+              for check in PAGE_CHECKS:
+                  url = BASE + check['path'] + f'?verify={os.environ.get("GITHUB_SHA","")}-{attempt}'
+                  item = {'kind':check['kind'],'url':url,'attempt':attempt}
+                  try:
+                      status, body, headers = get(url)
+                      text = body.decode('utf-8', errors='replace')
+                      missing = [m for m in check['markers'] if m not in text]
+                      item.update({
+                          'status': status,
+                          'bytes': len(body),
+                          'sha256': hashlib.sha256(body).hexdigest(),
+                          'missing_markers': missing,
+                          'etag': headers.get('ETag'),
+                          'last_modified': headers.get('Last-Modified'),
+                      })
+                      if status != 200 or len(body) < 2500 or missing:
+                          healthy = False
+                  except Exception as exc:
+                      item['error'] = repr(exc)
+                      healthy = False
+                  pages.append(item)
+
+              registry = {'url': BASE + 'assets/data/matter-identity-registry-v1.json'}
+              parts = {}
+              try:
+                  status, body, headers = get(registry['url'] + f'?verify={attempt}')
+                  index = json.loads(body.decode('utf-8'))
+                  registry.update({'status':status,'bytes':len(body),'registry_id':index.get('registry_id')})
+                  if status != 200 or index.get('registry_id') != 'PD-SP-IDENTITY-REGISTRY-001':
+                      healthy = False
+                  base_url = registry['url'].rsplit('/',1)[0] + '/'
+                  for part in index.get('parts',[]):
+                      purl = base_url + part['path'] + f'?verify={attempt}'
+                      ps, pb, _ = get(purl)
+                      pdata = json.loads(pb.decode('utf-8'))
+                      parts[part['path']] = pdata
+                      if ps != 200:
+                          healthy = False
+                  ids = {r['id'] for pdata in parts.values() for r in pdata.get('records',[])}
+                  missing_ids = [x for x in CONFIRMED_IDS if x not in ids]
+                  registry['missing_confirmed_ids'] = missing_ids
+                  registry['confirmed_id_count'] = len(CONFIRMED_IDS)
+                  if missing_ids:
+                      healthy = False
+              except Exception as exc:
+                  registry['error'] = repr(exc)
+                  healthy = False
+
+              last = {
+                  'checked_at': now(),
+                  'github_sha': os.environ.get('GITHUB_SHA'),
+                  'attempt': attempt,
+                  'healthy': healthy,
+                  'expected_denominator': 24,
+                  'expected_confirmed': 19,
+                  'expected_pending': 5,
+                  'expected_verdict': 'PARTIAL — NOT ALL IS^',
+                  'pages': pages,
+                  'registry': registry,
+              }
+              if healthy:
+                  break
+              if attempt < 9:
+                  time.sleep(10)
+
+          out = 'artifacts/caepr-caret-live/verification.json'
+          with open(out,'w',encoding='utf-8') as fh:
+              json.dump(last, fh, ensure_ascii=False, indent=2)
+          print(json.dumps(last, ensure_ascii=False, indent=2))
+          if not last or not last['healthy']:
+              raise SystemExit(1)
+          PY
+      - name: Upload CAEPR caret live verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: caepr-caret-unitary-live-verification
+          path: artifacts/caepr-caret-live/verification.json
+          if-no-files-found: error
+          retention-days: 30
