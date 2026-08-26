@@ -31,13 +31,13 @@ La notificación documenta la descripción y la remisión administrativa de la s
 - Redactions: private addressee; electronic-verification credential, barcode/QR area and code.
 - Preserved: institutional text; file and registration references; Sun Park/MYND/FEDER wording; signer; date and time.
 
-## Website placement and contextual links
+## Website placement and production URLs
 
 Canonical pages:
 
-- English: `/en/government-canary-islands-transparency-feder-routing-16-2026-0825121919/`
-- Spanish: `/es/gobierno-canarias-transparencia-feder-remision-16-2026-0825121919/`
-- Shared public-safe document viewer: `/evidence/2026-08-26-gobierno-canarias-transparency-feder-sun-park-mynd/document.html`
+- English: `https://sbu001monterecco.github.io/por-derecho/en/government-canary-islands-transparency-feder-routing-16-2026-0825121919/`
+- Spanish: `https://sbu001monterecco.github.io/por-derecho/es/gobierno-canarias-transparencia-feder-remision-16-2026-0825121919/`
+- Shared public-safe document viewer: `https://sbu001monterecco.github.io/por-derecho/evidence/2026-08-26-gobierno-canarias-transparency-feder-sun-park-mynd/document.html`
 
 The canonical pages link the notice to:
 
@@ -49,6 +49,24 @@ The canonical pages link the notice to:
 6. the reverse-engineered Sun Park/MYND actor-event chain;
 7. later public reporting on the Sun Park → MYND Yaiza operation.
 
+A bilingual global cross-link module added on 26 August 2026 displays a source-bounded official-development callout on the principal linked pages. Each callout links to the canonical digest and the redacted viewer and repeats the evidential limit. The module covers the English and Spanish versions of:
+
+- public-authority reconstruction;
+- RIC / Regional Incentives / EU-controls institutionalisation;
+- GC 836/P06;
+- SNCA / EU-funds traceability;
+- Sun Park material-control chronology;
+- reverse-engineering 360 actor/event chain;
+- Hosteltur public-reporting context;
+- La Voz de Lanzarote public-reporting context.
+
+Publication history:
+
+- PR `#1070`: canonical bilingual notice pages and redacted source viewer.
+- PR `#1075`: site-wide contextual cross-links.
+- Cross-link merge commit: `adf48bb1132bb1a998ab4821668d3ea1eae8848d`.
+- GitHub Pages run `32995079358`: completed successfully on 26 August 2026.
+
 ## Email-use rule
 
 For future messages concerning Fiscalía, preservation of evidence, public funding/FEDER, Regional Incentives, institutional scrutiny, Sun Park/MYND or the linked public-authority chronology, the redacted PNG may be added to the evidence bundle under the label:
@@ -56,4 +74,22 @@ For future messages concerning Fiscalía, preservation of evidence, public fundi
 - **EN:** `Government of the Canary Islands — transparency/FEDER routing notice, 26-08-2026 (redacted)`
 - **ES:** `Gobierno de Canarias — notificación de remisión transparencia/FEDER, 26-08-2026 (redactada)`
 
-This is a preparation rule only. No email is to be sent without Gil Marer’s final approval and verification.
+The standing rule remains that no future email is sent without Gil Marer’s final approval and verification. The execution below was made after his express instruction on 26 August 2026 to proceed and send.
+
+## Authorised execution audit — 26 August 2026
+
+The three prosecution updates were sent with the correct GitHub Pages links and all three PNG attachments:
+
+1. **Fiscalía Provincial de Las Palmas**, copied to `fisgub.lpa@justiciaencanarias.org` — Gmail message ID `1a03f25f002ea298`.
+2. **Fiscalía de Área de Arrecife de Lanzarote–Puerto del Rosario** — Gmail message ID `1a03f266013a8b79`.
+3. **Fiscalía de la Audiencia Nacional** — Gmail message ID `1a03f26d17816c4d`.
+
+Attachment set for each prosecution update:
+
+- `pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png`
+- `san-telmo-ricpe-sun-park-stamp-v1-ES.png`
+- `comunicacion-transparencia-16-2026-0825121919-redactada.png`
+
+A focused administrative follow-up was also sent to the official contact address of the **Dirección General de Promoción y Diversificación Económica**, requesting association with the existing transparency file, preservation of the routing trail and a finite documentary response on operation, beneficiary, resolution, eligible expenditure, invoices, payments, funding source, employment, inspection, compliance and any recovery or correction process. Gmail message ID: `1a03f2823478b4ea`. It carried the redacted PDF and PNG.
+
+The three superseded draft messages carrying the old host links and draft warnings were moved to Trash after the corrected messages were sent, preventing accidental duplicate dispatch.
