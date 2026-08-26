@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gobierno de Canarias — transparencia/FEDER — expediente 16/2026-0825121919</title>
+<meta name="robots" content="index,follow">
+<style>
+:root{color-scheme:light;--ink:#13252d;--muted:#53636a;--paper:#fff;--bg:#eef1f1;--line:#ccd4d6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{max-width:1120px;margin:0 auto;padding:1rem}.head{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;margin-bottom:1rem}.head h1{font-size:1.12rem;margin:.1rem 0 .55rem}.head p{margin:.35rem 0;line-height:1.48}.small{font-size:.9rem;color:var(--muted)}.buttons{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.8rem}.buttons a{display:inline-block;border-radius:999px;padding:.58rem .82rem;background:var(--ink);color:#fff;text-decoration:none;font-weight:750}.buttons a.secondary{background:#fff;color:var(--ink);border:1px solid var(--ink)}.paper{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:.5rem;box-shadow:0 12px 32px rgba(19,37,45,.1)}#notice{display:block;width:100%;height:auto;border-radius:8px}.loading{padding:4rem 1rem;text-align:center;color:var(--muted)}.error{padding:1rem;background:#fff3f0;border:1px solid #cc8c80;border-radius:10px;color:#651e16}@media print{body{background:#fff}.head{display:none}.wrap{max-width:none;padding:0}.paper{border:0;box-shadow:none;padding:0}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="head">
+<h1>Gobierno de Canarias — notificación de remisión transparencia/FEDER, 26-08-2026 (redactada)</h1>
+<p><strong>Expediente:</strong> 16/2026-0825121919 · <strong>Hotel Sun Park / MYND Yaiza</strong></p>
+<p class="small">Publicación segura: se han ocultado el destinatario privado y la credencial/código de verificación electrónica. Se conservan el texto institucional, las referencias de expediente y registro, la mención FEDER, la firmante y la fecha.</p>
+<p class="small"><strong>English:</strong> Publication-safe derivative. The private addressee and electronic-verification credential are redacted; institutional wording and control references are preserved.</p>
+<nav class="buttons" aria-label="Document actions"><a id="download" href="#" download="gobierno-canarias-transparencia-feder-16-2026-0825121919-20260826-redactada.png" hidden>Descargar PNG / Download PNG</a><a class="secondary" href="../../en/government-canary-islands-transparency-feder-routing-16-2026-0825121919/">Context in English</a><a class="secondary" href="../../es/gobierno-canarias-transparencia-feder-remision-16-2026-0825121919/">Contexto en español</a></nav>
+</header>
+<section class="paper" aria-live="polite"><div id="status" class="loading">Cargando documento redactado… / Loading redacted document…</div><img id="notice" alt="Notificación redactada del Gobierno de Canarias sobre la solicitud de transparencia relativa a la operación FEDER publicitada en Hotel Sun Park, posteriormente MYND Yaiza" width="1000" height="1415" hidden></section>
+</main>
+<script>
+(() => {
+  const files = Array.from({length:7},(_,i)=>`png-b64/part-${String(i).padStart(2,'0')}.txt`);
+  const status = document.getElementById('status');
+  const image = document.getElementById('notice');
+  const download = document.getElementById('download');
+  Promise.all(files.map(file => fetch(file,{cache:'force-cache'}).then(response => {
+    if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`);
+    return response.text();
+  }))).then(parts => {
+    const base64 = parts.join('').replace(/\s+/g,'');
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i=0;i<binary.length;i++) bytes[i] = binary.charCodeAt(i);
+    const objectUrl = URL.createObjectURL(new Blob([bytes],{type:'image/png'}));
+    image.src = objectUrl;
+    image.hidden = false;
+    download.href = objectUrl;
+    download.hidden = false;
+    status.remove();
+  }).catch(error => {
+    status.className = 'error';
+    status.textContent = `No se pudo cargar el derivado público / The public derivative could not be loaded: ${error.message}`;
+  });
+})();
+</script>
+</body>
+</html>
