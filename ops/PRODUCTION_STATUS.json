@@ -1,48 +1,53 @@
 {
   "schema": "por-derecho.operational-truth.production-status.v2",
   "record_type": "OBSERVED_GITHUB_PAGES_DEPLOYMENT",
-  "observed_at": "2026-08-26T05:50:53Z",
+  "observed_at": "2026-08-26T07:32:47Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-  "served_sha": "35346c34ec15a77d7585122ec08add6bcb16fabc",
-  "source_tree_sha": "c8fb4c201b0cfca50d67bcfaabcf988309eaefa9",
+  "served_sha": "77e2ba300af45a953947160af63283a64512e876",
+  "source_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
   "deployment": {
     "platform": "GitHub Pages",
     "workflow_name": "pages build and deployment",
     "workflow_path": "dynamic/pages/pages-build-deployment",
-    "workflow_run_id": 32915550874,
-    "run_number": 1123,
+    "workflow_run_id": 32942972472,
+    "run_number": 1128,
     "event": "dynamic",
     "status": "completed",
     "conclusion": "success",
-    "created_at": "2026-08-26T00:33:17Z",
-    "completed_at": "2026-08-26T00:33:47Z"
+    "created_at": "2026-08-26T07:28:59Z",
+    "completed_at": "2026-08-26T07:29:45Z"
   },
   "verification": {
-    "state": "DEPLOYMENT_BUILD_SUCCESS",
-    "current_exact_route_content_verification": "NOT_RECORDED_FOR_SERVED_SHA",
+    "state": "LIVE_VERIFIED",
+    "current_exact_route_content_verification": "LIVE_VERIFIED_FOR_SERVED_SHA",
     "latest_live_verified_specialist_release": {
       "state": "LIVE_VERIFIED",
-      "control_id": "PD-UNITARY-STATE-20260825-01",
-      "source_publication_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-      "verification_fix_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
-      "pages_run_id": 32912074201,
-      "workflow_run_id": 32912919872,
-      "job_id": 98010526784,
-      "verified_at": "2026-08-25T23:56:02Z",
+      "control_id": "PD-UNITARY-STATE-20260826-01",
+      "source_publication_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "source_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "verification_head_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "pages_run_id": 32942972472,
+      "pages_run_number": 1128,
+      "workflow_run_id": 32942975508,
+      "workflow_run_number": 4,
+      "job_id": 98097657687,
+      "verified_at": "2026-08-26T07:29:55Z",
       "verification_scope": [
-        "Spanish and English identity routes expose 185 / 86 / 66 / 10 / 13 / 10",
-        "Spanish and English update routes expose 25 August 2026",
-        "CURRENT_UNITARY_STATE.json parses and contains the exact control and denominator",
-        "material-updates JSON, unitary sitemap and robots declaration are live"
-      ]
+        "Spanish and English home, evidence-map, reverse-engineering, criminal-engineering, unitary-record and update routes expose the attributed enterprise model with synchronized legal and evidential limits",
+        "Spanish and English update feeds expose the 26 August 2026 control",
+        "The prosecution and criminal-engineering JavaScript surfaces expose the synchronized allegation and boundary markers",
+        "CURRENT_UNITARY_STATE.json and the 26 August publication manifest parse and expose the promoted control",
+        "The public position addendum and private-analysis prompt routes are readable without publishing Patricia mailbox identifiers, provider IDs, hashes, exact manifest counts or private content"
+      ],
+      "limits": "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest."
     },
-    "meaning": "GitHub recorded a successful Pages build for the served SHA. The specialist unitary release has a separate exact-content verification record; that record is preserved without being misrepresented as a readback of this later served SHA."
+    "meaning": "GitHub recorded a successful Pages build for the served SHA, and the dedicated specialist verifier recorded exact public-route readback for the same SHA. These publication facts do not prove the attributed allegation or any legal or evidential conclusion."
   },
   "specialist_state_routing": {
     "unitary_case_and_evidence_state": "ops/CURRENT_UNITARY_STATE.json",
-    "expected_control_id": "PD-UNITARY-STATE-20260825-01",
+    "expected_control_id": "PD-UNITARY-STATE-20260826-01",
     "expected_status": "LIVE_VERIFIED",
     "rule": "Deployment metadata does not replace specialist case and evidence state."
   },
