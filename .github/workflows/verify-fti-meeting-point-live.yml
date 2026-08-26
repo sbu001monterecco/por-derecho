@@ -6,6 +6,10 @@ on:
     paths:
       - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
       - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
       - '.github/workflows/verify-fti-meeting-point-live.yml'
   workflow_dispatch:
 
@@ -35,10 +39,14 @@ jobs:
           targets={
             'es':(f'{base}/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/?{q}',[
               'CLUB SEI → FTI → INSOLVENCIA → PRECONCURSO → BLUESEA',
-              'Referencia 2024-94', 'Bierbach → Abegg', 'Meeting Point Spain · 357/2024', 'PORTOBELLO', 'BLUESEA']),
+              'Referencia 2024-94', 'Bierbach → Abegg', 'Tres deudores conjuntos',
+              '23 JUL 2024', '31 JUL 2024', 'SEPI autorizó 31 millones',
+              'BLUESEA · 25 millones', 'PORTOBELLO']),
             'en':(f'{base}/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/?{q}',[
               'CLUB SEI → FTI → INSOLVENCY → PRE-INSOLVENCY → BLUESEA',
-              'Reference 2024-94', 'Bierbach → Abegg', 'Meeting Point Spain · 357/2024', 'PORTOBELLO', 'BLUESEA'])}
+              'Reference 2024-94', 'Bierbach → Abegg', 'Three joint debtors',
+              '23 JUL 2024', '31 JUL 2024', 'SEPI authorised €31 million',
+              'BLUESEA · €25 million', 'PORTOBELLO'])}
           def fetch(url):
             req=urllib.request.Request(url,headers={'User-Agent':'Por-Derecho-FTI-MP-live-verifier/1.0','Cache-Control':'no-cache','Pragma':'no-cache'})
             with urllib.request.urlopen(req,timeout=25) as r: return r.status,r.read().decode('utf-8','replace')

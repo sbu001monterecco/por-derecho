@@ -146,6 +146,13 @@ The 25 August 2026 readiness-without-transmission incident and its corrective st
 
 `archive/OUTBOUND_EMAIL_NOT_SENT_AFTER_READINESS_INCIDENT_25AUG2026.md`
 
+The 22–26 August 2026 FTI / Meeting Point sequence is controlled by:
+
+- `ops/FTI_MEETING_POINT_EMAIL_CORRECTION_ACTION_STATE_26AUG2026.json`; and
+- `docs/deletion-audits/2026-08-26-fti-meeting-point-sepi-email-correction-thread.md`.
+
+The original broad transmission carried ten attachments; the two later corrective transmissions carried none. Two FTI-side routes permanently failed for all three transmissions. No resend is located or authorised. The proposed three-attachment replacement remains `PREPARED / HOLD — NOT AUTHORISED`; missing attachments, bounces and this repository record create no send authority.
+
 Do not send an apology, correction, replacement or explanation merely because an incident was discovered. Any corrective communication requires its own exact final authorization.
 
 ## 9. Current repository work
