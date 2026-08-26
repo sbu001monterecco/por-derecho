@@ -99,7 +99,8 @@ jobs:
             ('/es/actualizaciones/',['Última actualización material','<strong>26 agosto 2026</strong>','ALG-ENT-018']),
             ('/en/updates/',['Latest material update','<strong>26 August 2026</strong>','ALG-ENT-018']),
             ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','2026-08-26','ALG-ENT-018']),
-            ('/sitemap-unitary-control-plane.xml',['<lastmod>2026-08-26</lastmod>','<lastmod>2026-08-25</lastmod>','registro-identidad-materia','matter-identity-registry']),
+            # Every route in this focused sitemap now carries the current 26-Aug material date.
+            ('/sitemap-unitary-control-plane.xml',['<lastmod>2026-08-26</lastmod>','registro-identidad-materia','matter-identity-registry']),
             ('/robots.txt',['sitemap-unitary-control-plane.xml'])]
 
           def fetch(url):
