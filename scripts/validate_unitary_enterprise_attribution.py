@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONTROL_25 = "PD-UNITARY-STATE-20260825-01"
 CONTROL_26 = "PD-UNITARY-STATE-20260826-01"
-SOURCE_MAIN = "1be9f023bffcf1e9cd9c4f309a9a2bf45647106c"
+SOURCE_MAIN = "5b1652e00151a3ea2944cd0519cdaf2e04da4453"
 PRODUCTION_STATUS_SHA256 = "1a5088a4a5ebafc8dbbb6aa30e5b8459ed4763fa98d4d6b52900b89731c28068"
 
 MANIFEST = ROOT / "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json"

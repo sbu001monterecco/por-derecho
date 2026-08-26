@@ -58,7 +58,7 @@
     "control_id": "PD-UNITARY-STATE-20260826-01",
     "state": "PREPARED_PENDING_MERGE",
     "control_date": "2026-08-26",
-    "source_main_sha": "1be9f023bffcf1e9cd9c4f309a9a2bf45647106c",
+    "source_main_sha": "5b1652e00151a3ea2944cd0519cdaf2e04da4453",
     "publication_manifest": "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json",
     "position_addendum": "archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
     "analysis_prompt": "archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",

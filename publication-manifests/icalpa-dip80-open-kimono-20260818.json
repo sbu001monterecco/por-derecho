@@ -1,50 +1,129 @@
 {
+  "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "ICALPA-DIP80-OPEN-KIMONO-20260818",
+  "control_date": "2026-08-26",
   "owner": "Por Derecho / Project Sun Rock",
-  "current_state": "BLOCKED_RECOVERY",
-  "controlling_pr": 352,
-  "blocking_reason": "The dedicated completion PR is open and unmerged. Its remote materialisation workflow requires nine encoded payload parts, but the auditable remote branch has not yet materialised the actual 14 route files. Repeated workflow attempts have failed before the hard acceptance validator runs.",
+  "status": "live_verified",
+  "package": "icalpa-dip80-open-kimono-living-casebook",
+  "current_state": "LIVE_VERIFIED",
+  "controlling_pr": 525,
+  "merge_sha": "e81a3ec5e4791b978f69b932c786233e7cf552c4",
+  "controlling_merge_sha": "e81a3ec5e4791b978f69b932c786233e7cf552c4",
+  "publication_boundary": "Independent Por Derecho / Project Sun Rock casebook; not an ICALPA publication or merits finding. Dedicated casebook routes remain noindex,follow,noarchive.",
+  "historical_blocked_state": {
+    "state": "BLOCKED_RECOVERY",
+    "controlling_pr": 352,
+    "reason": "The earlier completion branch had not materialised the reviewable casebook source and its encoded bootstrap was incomplete.",
+    "superseded_by": {
+      "pr": 525,
+      "merge_sha": "e81a3ec5e4791b978f69b932c786233e7cf552c4",
+      "event": "Actual bilingual casebook source was materialised and merged as ordinary Git source on 19 August 2026."
+    },
+    "preservation_rule": "Retain this failed-materialisation history as provenance; it is not current production truth."
+  },
+  "implementation_lineage": [
+    {"event":"CASEBOOK_SOURCE_MERGED","pr":525,"sha":"e81a3ec5e4791b978f69b932c786233e7cf552c4","date":"2026-08-19"},
+    {"event":"SECOND_PAIR_FRAMEWORK_ADDED","sha":"2316635784a89f0e915032d1f60db7ffe8d822ad","date":"2026-08-19"},
+    {"event":"SECOND_PAIR_ACTIVATED_ON_DIP80","sha":"997ca336bd58448178e31b77d28e7b05d70d6089","date":"2026-08-19"},
+    {"event":"PONENTE_VIEW_UPGRADED","sha":"731563ee441ff380c6b5e182413e09c3e1de7431","date":"2026-08-19"},
+    {"event":"PUBLIC_EDGE_VERIFICATION_ADDED","sha":"bf3f59ea5968be5df638209a94ca101363c1311c","date":"2026-08-19"},
+    {"event":"PUBLIC_EDGE_VERIFIED","sha":"fbcb0077e051059fb582465c1fd7e8282814ec23","date":"2026-08-19"},
+    {"event":"LIVE_STATUS_CLOSEOUT_RECORDED","sha":"5580fecc5163676a7bfa56e8ae7a698f4f36d3fa","date":"2026-08-19"}
+  ],
   "expected_routes": {
     "es": [
       "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia-inversa/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-de-decisiones/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba-procedencia/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
       "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos-decisiones-actuaciones/index.html",
-      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html"
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/index.html"
     ],
     "en": [
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/reverse-chronology/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-provenance-atlas/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
       "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/model-decisions/index.html",
-      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html"
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/index.html"
+    ]
+  },
+  "current_routes": {
+    "es": [
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/cronologia/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/arbol-decision/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/atlas-prueba/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/proteccion-urgente/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/modelos/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/aula/index.html",
+      "es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/index.html"
+    ],
+    "en": [
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/chronology/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/decision-tree/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/evidence-atlas/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/urgent-protection/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/models/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/classroom/index.html",
+      "en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/index.html"
     ]
   },
   "expected_source_files": [
-    "assets/dip80-open-kimono.js"
+    "assets/icalpa-dip80-casebook.css",
+    "assets/icalpa-dip80-casebook.js",
+    "assets/data/icalpa-dip-80-2026-casebook.json"
   ],
-  "encoded_bootstrap": {
-    "pattern": "archive/dip80-open-kimono-payload/part-*.b64",
-    "declared_parts": 9,
-    "complete": false,
-    "sha256": "685a0ffcf010c26a871deeaf5ff8dd98610003d377a38ad15f33a4d2b86dc5eb"
+  "current_source_files": [
+    "assets/icalpa-dip80-casebook.css",
+    "assets/icalpa-dip80-casebook.js",
+    "assets/data/icalpa-dip-80-2026-casebook.json"
+  ],
+  "validation": {
+    "evidence": [
+      "PR #525 materialised the bilingual DIP 80 living casebook as ordinary reviewable Git source and the publication-integrity gate passed on merge SHA e81a3ec5e4791b978f69b932c786233e7cf552c4 (run 32296899135).",
+      "GitHub Pages build/deployment run 32296898556 completed successfully for the source implementation merge.",
+      "Later source commits added and activated the Second Pair framework and the Ponente/Rapporteur reader experience without replacing the underlying casebook source.",
+      "Read-only workflow run 32308264245 subsequently verified HTTP 200 and required markers for the bilingual Ponente/Rapporteur routes and their reader-experience assets; the durable verification record was merged at fbcb0077e051059fb582465c1fd7e8282814ec23.",
+      "The current lineage validator checks all declared ES/EN route files, source files, the noindex boundary, the historical supersession chain and the still-open legacy privacy-remediation state."
+    ]
   },
-  "recovery_requirements": [
-    "Recover the complete source payload or original source files from the originating environment before deleting it.",
-    "Commit actual reviewable HTML/JS/data/CSS source to a branch based on current main; do not rely on CI as the only materialisation mechanism.",
-    "Verify all seven ES and seven EN routes exist in Git.",
-    "Run the DIP 80 hard acceptance validator and universal publication integrity gate remotely.",
-    "Merge through a reviewable PR only after CI is green.",
-    "Verify GitHub Pages public URLs and markers after merge.",
-    "Write the final deletion-continuity record only after live verification."
-  ],
+  "deployment_evidence": {
+    "pages_run_id": 32296898556,
+    "pages_run_number": 684,
+    "head_sha": "e81a3ec5e4791b978f69b932c786233e7cf552c4",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-19T20:08:28Z",
+    "completed_at": "2026-08-19T20:08:57Z"
+  },
   "live_urls": [
-    "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/",
-    "https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/"
+    "https://sbu001monterecco.github.io/por-derecho/es/icalpa-mesa-del-ponente/dip-80-2026/manual-vivo/segundo-par-de-ojos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/icalpa-rapporteur-workbench/dip-80-2026/living-casebook/second-pair-of-eyes/"
   ],
-  "notes": "This manifest intentionally records the present blocked state. It supersedes any thread narrative that described the casebook as already merged/live before the complete evidence chain was established."
+  "live_verification_evidence": {
+    "record_commit_sha": "fbcb0077e051059fb582465c1fd7e8282814ec23",
+    "record_path": "archive/ICALPA_DIP80_PONENTE_VIEW_LIVE_VERIFIED_19AUG2026.md",
+    "workflow_run_id": 32308264245,
+    "verified_at": "2026-08-19T22:19:24Z",
+    "status": "completed",
+    "conclusion": "success",
+    "checks": [
+      "Spanish Ponente View returned HTTP 200 with all required markers and noindex,follow,noarchive.",
+      "English Rapporteur View returned HTTP 200 with all required markers and noindex,follow,noarchive.",
+      "Reader-experience CSS and JavaScript assets returned HTTP 200 with expected controls."
+    ]
+  },
+  "privacy_review": {
+    "state": "OPEN_P0_LEGACY_REMEDIATION",
+    "rule": "LIVE_VERIFIED describes publication lineage only; it is not a certification that every legacy page satisfies the later private-source minimisation policy.",
+    "next_action": "Remove or replace provider-specific message identifiers and other unnecessary private-source locators from current public derivatives after preserving authoritative native evidence outside public Git."
+  },
+  "restart_rule": "Future threads must treat PR #352's BLOCKED_RECOVERY state as historical provenance, PR #525 as the source-materialisation merge, and the later live-verification record as the controlling publication lineage. Privacy remediation remains a separate open P0 task.",
+  "notes": "The earlier BLOCKED_RECOVERY record was historically accurate for PR #352 but became stale after PR #525 materialised and merged the actual casebook source. This manifest preserves both states without allowing the failed-materialisation state to masquerade as current production truth."
 }

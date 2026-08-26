@@ -18,7 +18,7 @@ A successful deployment is not automatically an exact-content verification. A go
 
 ## Pending 26 August material — not yet live
 
-`PD-UNITARY-STATE-20260826-01` is a separate, additive publication candidate in state `PREPARED_PENDING_MERGE`, prepared from source main `1be9f023bffcf1e9cd9c4f309a9a2bf45647106c`. It records Gil Marer and Aweswell's current attributed position that the evidence must be tested as **one continuing economic-criminal enterprise advanced through successive adoption and divided functions**, together with the public-safe Phase-A treatment of the reserved declarant mailbox/Drive manifest.
+`PD-UNITARY-STATE-20260826-01` is a separate, additive publication candidate in state `PREPARED_PENDING_MERGE`, prepared from source main `5b1652e00151a3ea2944cd0519cdaf2e04da4453`. It records Gil Marer and Aweswell's current attributed position that the evidence must be tested as **one continuing economic-criminal enterprise advanced through successive adoption and divided functions**, together with the public-safe Phase-A treatment of the reserved declarant mailbox/Drive manifest.
 
 This pending material does **not** replace the last live-verified 25 August control. Its publication manifest is `publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json`. Promotion to `LIVE_VERIFIED` requires a merged commit, successful deployment of that exact source and no-cache readback of every affected Spanish/English route and machine-readable source. Until then:
 
