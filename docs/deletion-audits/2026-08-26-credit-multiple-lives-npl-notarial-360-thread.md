@@ -53,24 +53,24 @@ The public layer uses direct attribution to Gil Marer and Aweswell and places th
 | Action | Current state | Proof |
 |---|---|---|
 | current-main inspection | `VERIFIED` | initial reconstruction anchor `75cc0a1542a3cb7207f37e27198a4f139d1a64a5`; final prepublication base `cfe453e6451781356f66c23401b0753962ae7d33`; Declaration 015 collision identified before editing |
-| canonical statement/control capture | `COMPLETE LOCALLY` | Declaration 016, `ALG-NPL-019`, 360 control, continuation prompt and registers |
-| financial/evidentiary analysis | `COMPLETE LOCALLY — OPEN EVIDENCE PRESERVED` | amount/legal-function ladder, transfer chronology, actor-capacity matrix, historically exact offence-element gates and contrary case |
-| bilingual page reconciliation | `COMPLETE LOCALLY` | nine ES/EN pairs; allegations and essential limits co-located; structural parity verified |
-| validations | `PASSED LOCALLY AFTER CURRENT-MAIN REBASE` | independent legal/editorial and research reviews GO; package, structured-data, preservation, publication-integrity, privacy and site-wide checks passed; 510 HTML pages and 6,662 internal links checked |
-| branch / PR / merge | `AUTHORIZED — PENDING` | branch name and public publication expressly authorized; no merge claim until exact remote evidence is recorded |
-| Pages deployment / live readback | `AUTHORIZED — PENDING` | all changed routes require HTTP success, required-marker checks and repository-file hash equality |
+| canonical statement/control capture | `COMPLETE AND MERGED` | Declaration 016, `ALG-NPL-019`, 360 control, continuation prompt and registers are in merge `3cece6dbb923ba576f154c8fd4c34c0c2570c9df` |
+| financial/evidentiary analysis | `COMPLETE AND MERGED — OPEN EVIDENCE PRESERVED` | amount/legal-function ladder, transfer chronology, actor-capacity matrix, historically exact offence-element gates and contrary case |
+| bilingual page reconciliation | `COMPLETE AND LIVE VERIFIED` | nine ES/EN pairs; allegations and essential limits co-located; structural parity and exact live bytes verified |
+| validations | `PASSED AFTER CURRENT-MAIN REBASE` | independent legal/editorial and research reviews GO; package, structured-data, preservation, publication-integrity, privacy and site-wide checks passed; 510 HTML pages and 6,662 internal links checked |
+| branch / PR / merge | `COMPLETE` | public snapshot `b5a93b95d7cf119f7e744c3e03c2452dff5d6382`; [PR #1067](https://github.com/sbu001monterecco/por-derecho/pull/1067) merged at `3cece6dbb923ba576f154c8fd4c34c0c2570c9df`; exact published tree `f240f8f3715cdcbd0274b1df4defee7dae62407c` |
+| Pages deployment / live readback | `LIVE VERIFIED` | Pages [run 32983373974](https://github.com/sbu001monterecco/por-derecho/actions/runs/32983373974), run number 1145, succeeded at `2026-08-26T14:59:36Z`; 18/18 routes returned HTTP 200 and exact source-byte SHA-256 equality; four changed supporting assets also matched |
 | email or third-party communication | `NO ACTION AUTHORIZED OR REQUIRED` | no email send or draft requested |
 
 ## 6. Deletion-safety dimensions
 
-- `THREAD_REASONING_CONTINUITY`: **PRESERVED LOCALLY** — canonical controls, future-thread prompt, manifest and this audit are complete.
-- `IMPLEMENTATION_STATE_CONTINUITY`: **NOT YET PRESERVED REMOTELY** — requires merged PR and recorded commit/tree identifiers.
+- `THREAD_REASONING_CONTINUITY`: **PRESERVED LOCALLY AND REMOTELY** — canonical controls, future-thread prompt, manifest and this audit are complete.
+- `IMPLEMENTATION_STATE_CONTINUITY`: **PRESERVED REMOTELY** — PR, merge commit, exact tree and route hashes are recorded.
 - `PRIMARY_EVIDENCE_COMPLETENESS`: **OPEN** — transfer economics, source accounting, complete instruments, use/reliance/benefit and single-satisfaction proof remain incomplete.
-- `LIVE_PUBLICATION_VERIFICATION`: **PENDING** — all eighteen route files require deployed readback.
+- `LIVE_PUBLICATION_VERIFICATION`: **COMPLETE** — all eighteen route files returned HTTP 200 and were byte-identical to the reviewed source files; the key CaixaBank and Protocol 457 allegation/non-finding markers were also checked in both languages.
 - `COMMUNICATION_VERIFICATION`: `NO ACTION REQUIRED`; no email action occurred.
 - `CUSTODY_RESILIENCE`: public-safe derivatives only; this audit makes no claim that private native evidence is complete or durably preserved.
 - `DISASTER_RECOVERY_SAFETY`: not assessed; no claim made.
 
 ## 7. Current closeout status
 
-**NOT DELETION-SAFE UNTIL MERGED AND LIVE VERIFIED.** The substantive package, independent validation, PR/merge evidence and exact Pages readback must be completed and recorded before this thread can be deleted without losing implementation state. Open evidence will remain open even after publication; deletion safety will mean continuity of the allegation, analysis, controls and deployment evidence, not proof of the allegations.
+**DELETION-SAFE WITH OPEN EVIDENCE.** The substantive package, independent validation, PR/merge proof and exact GitHub Pages readback are recorded and publicly recoverable without this thread. Deletion safety means continuity of the attributed allegation, analysis, controls and deployment evidence; it does not prove the allegations or close the outstanding evidentiary, procedural, recovery or actor-specific intent questions.
