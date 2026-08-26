@@ -1,0 +1,130 @@
+name: Production ONA funded-exit smoke
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/production-ona-funded-exit-smoke.yml'
+      - 'en/ona-hotels-insolvency-exit-36-2012/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-ona-funded-exit-smoke
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify public ONA funded-exit routes
+        run: |
+          mkdir -p artifacts/production-smoke
+          python - <<'PY'
+          import datetime as dt
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.request
+
+          BASE = 'https://sbu001monterecco.github.io/por-derecho/'
+          CHECKS = [
+              {
+                  'path': 'en/ona-hotels-insolvency-exit-36-2012/documented-statements-fact-matrix/',
+                  'marker': 'What each participant actually said or did in the ONA funded exit',
+                  'kind': 'ona_fact_matrix_en',
+              },
+              {
+                  'path': 'es/ona-hotels-salida-concurso-36-2012/matriz-manifestaciones-hecho-documentadas/',
+                  'marker': 'Qué dijo o hizo realmente cada participante en la salida financiada ONA',
+                  'kind': 'ona_fact_matrix_es',
+              },
+              {
+                  'path': 'en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/',
+                  'marker': 'The ONA exit as evidence of alleged criminality',
+                  'kind': 'ona_criminal_test_en',
+              },
+              {
+                  'path': 'es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/',
+                  'marker': 'La salida ONA como prueba de criminalidad alegada',
+                  'kind': 'ona_criminal_test_es',
+              },
+          ]
+
+          def now():
+              return dt.datetime.now(dt.timezone.utc).isoformat().replace('+00:00', 'Z')
+
+          last = []
+          for attempt in range(1, 9):
+              current = []
+              healthy = True
+              for check in CHECKS:
+                  url = BASE + check['path']
+                  item = {'kind': check['kind'], 'url': url, 'attempt': attempt}
+                  try:
+                      req = urllib.request.Request(url, headers={
+                          'User-Agent': 'Por-Derecho-ONA-Production-Smoke/1.0',
+                          'Cache-Control': 'no-cache, no-store, max-age=0',
+                          'Pragma': 'no-cache',
+                      })
+                      with urllib.request.urlopen(req, timeout=20) as response:
+                          body = response.read()
+                          text = body.decode('utf-8', errors='replace')
+                          item.update({
+                              'status': response.status,
+                              'bytes': len(body),
+                              'sha256': hashlib.sha256(body).hexdigest(),
+                              'marker_present': check['marker'] in text,
+                              'last_modified': response.headers.get('Last-Modified'),
+                              'etag': response.headers.get('ETag'),
+                          })
+                          if response.status != 200 or len(body) < 2000 or not item['marker_present']:
+                              healthy = False
+                  except Exception as exc:
+                      healthy = False
+                      item['error'] = repr(exc)
+                  current.append(item)
+              last = current
+              if healthy:
+                  break
+              if attempt < 8:
+                  time.sleep(10)
+
+          result = {
+              'checked_at': now(),
+              'github_sha': os.environ.get('GITHUB_SHA'),
+              'healthy': all(
+                  item.get('status') == 200
+                  and item.get('bytes', 0) >= 2000
+                  and item.get('marker_present') is True
+                  for item in last
+              ),
+              'routes': last,
+          }
+          out = 'artifacts/production-smoke/ona-funded-exit-latest.json'
+          with open(out, 'w', encoding='utf-8') as fh:
+              json.dump(result, fh, ensure_ascii=False, indent=2)
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          if not result['healthy']:
+              raise SystemExit(1)
+          PY
+      - name: Upload ONA production smoke evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ona-funded-exit-production-smoke
+          path: artifacts/production-smoke/ona-funded-exit-latest.json
+          if-no-files-found: error
+          retention-days: 30
