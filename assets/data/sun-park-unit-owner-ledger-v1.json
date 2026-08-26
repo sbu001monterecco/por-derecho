@@ -1,1 +1,83 @@
-{"schema":"por-derecho.sun-park-unit-owner-ledger.index.v1","control_id":"PD-SP-UNIT-OWNER-LEDGER-001","control_date":"2026-08-26","status":"ACTIVE_PUBLIC_SOURCE_GRADED_RECONSTRUCTION_FULL_PRECAM_SOURCE_DENOMINATOR_COMPILED","classification_control_ref":"assets/data/sun-park-owner-perimeter-classification-v1.json","purpose":"Maintain one non-collapsing, source-graded unit/owner reconstruction in which title, provenance, litigation alignment, representation and later acquisition remain separate temporal edges.","completion_state":{"full_pre_cam_source_denominator":"COMPILED_72_EXACT_PLUS_2_AGGREGATE_ROWS","registry_title_histories":"OPEN","reported_twelve_direct_lpb_disposals":"OPEN_5_CANDIDATE_LEADS_7_UNRESOLVED_0_COMPLETED_TRANSFERS_CONFIRMED","ap89_finca_reconciliation":"OPEN","later_cam_acquisition_mapping":"OPEN_DO_NOT_OVERWRITE_EARLIER_PROVENANCE"},"publication_boundary":{"public_fields":["party name","unit label","finca number where source-supported","dated role","instrument type","source grade","verification status","reconciliation issue"],"excluded_fields":["email","telephone","postal address","passport or identity number","bank-account data","private mailbox identifiers","local evidence paths"],"rule":"No private contact or identity-document data from the underlying schedules/contracts is reproduced."},"governing_rules":["NON_LPB_MATKATOR_OWNER does not mean MONTELANZA_MOLINA_DISSIDENT.","An option to purchase is not a completed sale, conveyance or registered transfer.","A touristic-exploitation cession identifying an owner does not by itself prove who sold the unit.","Representation, voting authority and legal representation do not imply ownership or beneficial interest.","The AP89 litigation-unit map and the later pre-CAM owner schedule remain parallel sources where they diverge; neither silently overwrites the other.","The full pre-CAM source denominator is 72 exact unit/premises rows plus two aggregate LPB rows; it is a derivative schedule and not Registry proof.","The source CONTACTO classification DIRECT or BANCO is not treated as seller, deed or transfer proof.","The reported twelve-unit LPB-transferee denominator is preserved as twelve reconstruction slots, not twelve invented owners.","Colour follows the dated perimeter edge, not a permanent label attached to a person."],"public_routes":{"es":"/es/registro-propietarios-sun-park/","en":"/en/sun-park-owner-register/","parent_context_es":"/es/54-cam-proveniencia-minorias-relato-publico/","parent_context_en":"/en/54-cam-provenance-minorities-public-narrative/"},"source_registry":[{"source_id":"SRC-AP89-UNITARY-EXTRACTION","title":"JV1260/AP89 unitary reverse-engineering control and redacted judgment transcript","type":"JUDGMENT_DERIVED_PUBLIC_CONTROL","repository_refs":["assets/data/jv1260-unitary-reverse-engineering-v1.json","evidence/jv-1260-2011/full-text/AP89-2014-JV1260-sentencia-redacted.md"],"grade":"JUDGMENT_DERIVED","publication":"PUBLIC"},{"source_id":"SRC-PRECAM-OWNER-SCHEDULE","title":"Datos Propietarios Hotel Sun Park May 2008-Feb 2022 — Propietarios Pre-CAM 2008-2017","type":"DERIVATIVE_OWNER_SCHEDULE","grade":"SOURCE_REPORTED_NOT_REGISTRY_PROOF","publication":"SUMMARY_FIELDS_ONLY_NO_CONTACT_DATA"},{"source_id":"SRC-BRODERICK-OPTION-2009","title":"2009 option-to-purchase instrument concerning Sun Park units 907 and 908","type":"PRIVATE_DOCUMENT_PRIMARY","grade":"PRIMARY_CONTRACT","publication":"SUMMARY_ONLY","date_precision":"YEAR_ONLY_EXACT_DAY_MONTH_BLANK_IN_REVIEWED_COPY"},{"source_id":"SRC-WHITE-EXPLOITATION-2010","title":"28-Jan-2010 touristic-exploitation cession for units 801 and 802","type":"PRIVATE_DOCUMENT_PRIMARY","grade":"PRIMARY_CONTRACT","publication":"SUMMARY_ONLY"},{"source_id":"SRC-LEE-EXPLOITATION-2010","title":"11-Mar-2010 touristic-exploitation cession for unit 805","type":"PRIVATE_DOCUMENT_PRIMARY","grade":"PRIMARY_CONTRACT","publication":"SUMMARY_ONLY"},{"source_id":"SRC-USER-REPORTED-12-DENOMINATOR","title":"User reconstruction position that LPB disposed of twelve units after the 2008 acquisition","type":"STATEMENT_OF_POSITION","grade":"REQUIRES_PRIMARY_DEED_REGISTRY_CORROBORATION","publication":"ATTRIBUTED_RECONSTRUCTION_POSITION"}],"local_identities":[{"local_identity_id":"PD-SP-LED-P-0001","name":"Kathleen Marie Broderick","aliases":["Kathleen Broderick"],"canonical_registry_status":"PENDING_IDENTITY_REGISTRY_RECONCILIATION","publication_basis":"Named contracting party in the 2009 option instrument and named owner in the source schedule."},{"local_identity_id":"PD-SP-LED-P-0002","name":"James Anthony Broderick","aliases":[],"canonical_registry_status":"PENDING_IDENTITY_REGISTRY_RECONCILIATION","publication_basis":"Named contracting party in the 2009 option instrument."},{"local_identity_id":"PD-SP-LED-P-0003","name":"Louise White","aliases":[],"canonical_registry_status":"PENDING_IDENTITY_REGISTRY_RECONCILIATION","publication_basis":"Named owner in the 28-Jan-2010 exploitation-cession instrument."},{"local_identity_id":"PD-SP-LED-P-0004","name":"Eamon John Lee","aliases":["Eamon Lee"],"canonical_registry_status":"PENDING_IDENTITY_REGISTRY_RECONCILIATION","publication_basis":"Named owner in the 11-Mar-2010 exploitation-cession instrument."},{"local_identity_id":"PD-SP-LED-P-0005","name":"Uri Omid","aliases":[],"canonical_registry_status":"PENDING_IDENTITY_REGISTRY_RECONCILIATION","publication_basis":"Named LPB administrator/representative in the reviewed instruments."},{"local_identity_id":"PD-SP-LED-P-0006","name":"Lidia Ann Thain","aliases":["Lidia Thain"],"canonical_registry_status":"PENDING_IDENTITY_REGISTRY_RECONCILIATION","publication_basis":"Named representative of Louise White in the 28-Jan-2010 instrument."}],"summary":{"ap89_claimants":7,"ap89_units":18,"pre_cam_comparison_rows":18,"pre_cam_full_source_rows":74,"pre_cam_full_exact_records":72,"pre_cam_full_aggregate_rows":2,"source_schedule_direct_classified_exact_records":62,"source_schedule_bank_classified_exact_records":10,"source_schedule_matkator_reference_rows":5,"source_schedule_duplicate_finca_groups":1,"reported_lpb_transfer_slots":12,"candidate_slots":5,"unresolved_slots":7,"confirmed_completed_direct_lpb_transfers":0,"open_reconciliation_issues":8},"parts":[{"part_id":"AP89","path":"sun-park-unit-owner-ledger-v1.ap89.json","record_count":18},{"part_id":"PRECAM_SCHEDULE","path":"sun-park-unit-owner-ledger-v1.precam-schedule.json","record_count":18},{"part_id":"LPB12","path":"sun-park-unit-owner-ledger-v1.lpb12.json","slot_count":12},{"part_id":"EVENTS","path":"sun-park-unit-owner-ledger-v1.events.json","instrument_event_count":3,"representation_event_count":4},{"part_id":"RECONCILIATION","path":"sun-park-unit-owner-ledger-v1.reconciliation.json","issue_count":8}],"full_pre_cam_denominator_ref":{"manifest_path":"sun-park-unit-owner-ledger-v1.precam-full-denominator.json","data_path":"sun-park-unit-owner-ledger-v1.precam-full-denominator.tsv","status":"FULL_PUBLIC_SAFE_SOURCE_DENOMINATOR_COMPILED_TITLE_RECONCILIATION_OPEN","exact_records":72,"aggregate_rows":2,"total_source_rows":74}}
+{
+  "schema":"por-derecho.sun-park-unit-owner-ledger.index.v2",
+  "control_id":"PD-SP-UNIT-OWNER-LEDGER-001",
+  "control_date":"2026-08-26",
+  "status":"ACTIVE_PUBLIC_SOURCE_GRADED_RECONSTRUCTION_10_OF_12_LPB_TRANSFERS_DEED_SUPPORTED",
+  "classification_control_ref":"assets/data/sun-park-owner-perimeter-classification-v1.json",
+  "purpose":"Maintain one non-collapsing, source-graded unit/owner reconstruction in which title, provenance, litigation alignment, representation and later acquisition remain separate temporal edges.",
+  "completion_state":{
+    "full_pre_cam_source_denominator":"COMPILED_72_EXACT_PLUS_2_AGGREGATE_ROWS",
+    "registry_title_histories":"PARTIAL_ORIGIN_DEEDS_AVAILABLE_LATER_CHAINS_OPEN",
+    "reported_twelve_direct_lpb_disposals":"DENOMINATOR_RECONCILED_10_DEED_SUPPORTED_2_MISSING_DEED_OPEN",
+    "ap89_finca_reconciliation":"OPEN_NO_INTERNAL_NUMBER_ONLY_JOIN_PERMITTED",
+    "later_cam_acquisition_mapping":"OPEN_DO_NOT_OVERWRITE_EARLIER_PROVENANCE"
+  },
+  "publication_boundary":{
+    "public_fields":["party name","unit label","finca number where source-supported","dated role","instrument type","source grade","verification status","reconciliation issue"],
+    "excluded_fields":["email","telephone","postal address","passport or identity number","bank-account data","private mailbox identifiers","local evidence paths"],
+    "rule":"No private contact or identity-document data from the underlying schedules/contracts/deeds is reproduced."
+  },
+  "governing_rules":[
+    "NON_LPB_MATKATOR_OWNER does not mean MONTELANZA_MOLINA_DISSIDENT.",
+    "Finca registral is the primary cross-source property key. Internal/hotel unit number alone must never be used to merge owner chains.",
+    "A completed sale deed supports seller/buyer/property provenance in that instrument but does not automatically close every later Registry chain.",
+    "An option to purchase is not a completed sale unless later completion evidence is separately established.",
+    "A touristic-exploitation cession identifying an owner does not by itself prove who sold the unit; direct-LPB provenance for White and Lee is separately supported by sale deeds.",
+    "Representation, voting authority and legal representation do not imply ownership or beneficial interest.",
+    "The AP89 litigation-unit map and later owner schedules remain parallel sources until exact finca bridges resolve divergences.",
+    "The full pre-CAM source denominator is 72 exact unit/premises rows plus two aggregate LPB rows; it is a derivative schedule and not Registry proof.",
+    "The source CONTACTO classification DIRECT or BANCO is not treated as seller, deed or transfer proof.",
+    "The twelve-unit LPB-transferee denominator is preserved as twelve source-backed schedule slots: ten deed-supported and two missing-deed/open.",
+    "Colour follows the dated perimeter edge, not a permanent label attached to a person."
+  ],
+  "public_routes":{"es":"/es/registro-propietarios-sun-park/","en":"/en/sun-park-owner-register/","parent_context_es":"/es/54-cam-proveniencia-minorias-relato-publico/","parent_context_en":"/en/54-cam-provenance-minorities-public-narrative/"},
+  "source_registry":[
+    {"source_id":"SRC-AP89-UNITARY-EXTRACTION","title":"JV1260/AP89 unitary reverse-engineering control and redacted judgment transcript","type":"JUDGMENT_DERIVED_PUBLIC_CONTROL","repository_refs":["assets/data/jv1260-unitary-reverse-engineering-v1.json","evidence/jv-1260-2011/full-text/AP89-2014-JV1260-sentencia-redacted.md"],"grade":"JUDGMENT_DERIVED","publication":"PUBLIC"},
+    {"source_id":"SRC-PRECAM-OWNER-SCHEDULE","title":"Datos Propietarios Hotel Sun Park May 2008-Feb 2022 — Propietarios Pre-CAM 2008-2017","type":"DERIVATIVE_OWNER_SCHEDULE","grade":"SOURCE_REPORTED_NOT_REGISTRY_PROOF","publication":"SUMMARY_FIELDS_ONLY_NO_CONTACT_DATA"},
+    {"source_id":"SRC-LPB-SALE-SCHEDULE-2008-2011","title":"LPB 2008-2011 exploitation/ownership schedule recording twelve apartment disposals","type":"DERIVATIVE_LPB_SALE_SCHEDULE","grade":"CONTROLLED_DERIVATIVE_SOURCE","publication":"AGGREGATE_AND_PUBLIC_SAFE_CODES_ONLY"},
+    {"source_id":"SRC-LPB-DEED-INVENTORY-2018","title":"2018 LPB deed inventory attaching ten sale-deed files and recording two still missing","type":"PRIVATE_CORRESPONDENCE_EVIDENCE_INVENTORY","grade":"CONTROLLED_SOURCE_INVENTORY","publication":"SUMMARY_ONLY_NO_MAILBOX_METADATA"},
+    {"source_id":"SRC-BRODERICK-OPTION-2009","title":"2009 option-to-purchase instrument concerning Sun Park units 907 and 908","type":"PRIVATE_DOCUMENT_PRIMARY","grade":"PRIMARY_CONTRACT","publication":"SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-WHITE-802-20090112","title":"LPB sale deed to Louise White — finca 8546 / internal 802","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-WHITE-801-20090112","title":"LPB sale deed to Louise White — finca 8548 / internal 801","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-WHENT-301-20090113","title":"LPB sale deed to Alison Jane Whent — finca 8616 / internal 301","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-BRODERICK-907-908-20090325","title":"LPB sale deed to Kathleen Marie Broderick and James Anthony Broderick — fincas 8749 and 8750","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-NARDI-20090325","title":"LPB sale deed to Fulvia Nardi — finca 8560","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-KINNARD-20090429","title":"LPB sale deed to Peter William Kinnard and Penelope Ann Kinnard — finca 8564","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-LEE-805-20100311","title":"LPB sale deed to Eamon John Lee — finca 8543 / internal 805","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-HILLARY-20110131","title":"LPB sale deed to Trevor Hillary and Christine Ann Hillary — finca 8578","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-LPB-SALE-DEED-RUIZ-SPOHR-20110204","title":"LPB sale deed to Javier Ruiz Spohr — finca 8603 / internal 314","type":"PRIVATE_PRIMARY_DEED_COPY","grade":"PRIMARY_CONVEYANCE_INSTRUMENT","publication":"PUBLIC_SAFE_SUMMARY_ONLY"},
+    {"source_id":"SRC-WHITE-EXPLOITATION-2010","title":"28-Jan-2010 touristic-exploitation cession for units 801 and 802","type":"PRIVATE_DOCUMENT_PRIMARY","grade":"PRIMARY_CONTRACT","publication":"SUMMARY_ONLY"},
+    {"source_id":"SRC-LEE-EXPLOITATION-2010","title":"11-Mar-2010 touristic-exploitation cession for unit 805","type":"PRIVATE_DOCUMENT_PRIMARY","grade":"PRIMARY_CONTRACT","publication":"SUMMARY_ONLY"}
+  ],
+  "summary":{
+    "ap89_claimants":7,
+    "ap89_units":18,
+    "ap89_exact_finca_mappings":0,
+    "pre_cam_comparison_rows":18,
+    "pre_cam_full_source_rows":74,
+    "pre_cam_full_exact_records":72,
+    "pre_cam_full_aggregate_rows":2,
+    "source_schedule_direct_classified_exact_records":62,
+    "source_schedule_bank_classified_exact_records":10,
+    "source_schedule_matkator_reference_rows":5,
+    "source_schedule_duplicate_finca_groups":1,
+    "reported_lpb_transfer_slots":12,
+    "schedule_reconciled_lpb_slots":12,
+    "deed_supported_direct_lpb_units":10,
+    "missing_lpb_sale_deeds":2,
+    "open_reconciliation_issues":9
+  },
+  "known_numbering_alerts":[
+    {"finca":"8560","deed_internal":"705","later_schedule_internal":"704","status":"OPEN"},
+    {"finca":"8578","deed_internal":"603","later_schedule_internal":"602","status":"OPEN"},
+    {"internal_label":"907","deed_finca":"8749","later_schedule_finca":"8587","status":"CROSS_FINCA_COLLISION_DO_NOT_JOIN"}
+  ],
+  "parts":[
+    {"part_id":"AP89","path":"sun-park-unit-owner-ledger-v1.ap89.json","record_count":18,"finca_mapping_status":"OPEN"},
+    {"part_id":"PRECAM_SCHEDULE","path":"sun-park-unit-owner-ledger-v1.precam-schedule.json","record_count":18},
+    {"part_id":"LPB12","path":"sun-park-unit-owner-ledger-v1.lpb12.json","slot_count":12,"deed_supported_unit_count":10,"missing_deed_slot_count":2},
+    {"part_id":"EVENTS","path":"sun-park-unit-owner-ledger-v1.events.json","completed_lpb_sale_deed_events":9,"completed_lpb_sale_deed_units":10},
+    {"part_id":"RECONCILIATION","path":"sun-park-unit-owner-ledger-v1.reconciliation.json","issue_count":9}
+  ],
+  "full_pre_cam_denominator_ref":{"manifest_path":"sun-park-unit-owner-ledger-v1.precam-full-denominator.json","data_path":"sun-park-unit-owner-ledger-v1.precam-full-denominator.tsv","status":"FULL_PUBLIC_SAFE_SOURCE_DENOMINATOR_COMPILED_TITLE_RECONCILIATION_OPEN","exact_records":72,"aggregate_rows":2,"total_source_rows":74}
+}
