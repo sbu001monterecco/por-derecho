@@ -166,3 +166,9 @@ The German compatibility route remains a `noindex` redirect to English. It is pr
 Deleting the chat must never be interpreted as withdrawal of allegations or reservations, completion of evidence production, permission to collapse distinct entities/proceedings, proof of delivery or merits review, or authorization to send any email.
 
 **Current final determination:** do not delete the thread yet. Delete only after the merge, Pages deployment and exact live-readback gates above are completed and this audit is promoted accordingly.
+
+## Cross-proceeding Alberto / Meeting Point addendum — 26 August 2026
+
+The thread's later allegation is preserved in the dedicated ES/EN dossier, the finite `^` audit and the authority-submission plan. It expressly alleges that the 24-Oct-2024 register-attributed involvement crossed an already-crossed line after the signed 36/2012 protection/liquidation record. It separately records that the signed 24-Oct original, assignment trail, knowledge, statutory conflict ground, disclosure record, Auren file and SEPI/FASEE disclosures remain production targets. The allegation is not withdrawn by those gaps, and the gaps are not converted into proof.
+
+No email, Gmail draft, resend, forward or authority filing was made or authorised in implementing this addendum.
