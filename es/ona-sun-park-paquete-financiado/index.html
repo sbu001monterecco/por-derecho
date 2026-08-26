@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONA / Sun Park · paquete de salida financiada, garantías y Concurso 36/2012</title>
+  <meta name="description" content="Reconstrucción integrada del paquete ONA de operación, financiación, adquisición, garantías y salida del Concurso 36/2012, sincronizada con la toma material del 7 de junio de 2018 y el perímetro Acosta Matos.">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/site.js" defer></script>
+  <style>
+    :root{--ona:#12bfc5;--ink:#14202b;--soft:#eef8f8;--warn:#8b5e00;--danger:#8a2430;--ok:#16633a;--muted:#5e6871;--line:#d9e2e7}
+    body{background:#f7f9fa;color:var(--ink)}
+    .ona-page{max-width:1180px;margin:0 auto;padding:24px}
+    .crumbs{font-size:.92rem;color:var(--muted);margin:8px 0 18px}
+    .crumbs a{color:inherit}
+    .hero{background:linear-gradient(135deg,#0c3538 0%,#117d82 58%,#15bbc0 100%);color:white;border-radius:22px;padding:40px;box-shadow:0 18px 50px rgba(9,45,48,.18);overflow:hidden;position:relative}
+    .hero:after{content:"ONA";position:absolute;right:-10px;bottom:-48px;font-size:12rem;font-weight:900;opacity:.07;letter-spacing:-.08em}
+    .eyebrow{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;font-weight:800;opacity:.9}
+    .hero h1{font-size:clamp(2.25rem,6vw,4.7rem);line-height:.94;margin:.35em 0 .28em;max-width:880px}
+    .hero p{font-size:1.14rem;max-width:900px;line-height:1.55}
+    .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .hero-badges span{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.11);border-radius:999px;padding:7px 11px;font-size:.85rem}
+    .notice{margin:20px 0;background:white;border-left:5px solid var(--ona);padding:18px 20px;border-radius:10px;box-shadow:0 5px 18px rgba(0,0,0,.05)}
+    .notice strong{display:block;margin-bottom:5px}
+    section{margin:48px 0}
+    section h2{font-size:clamp(1.55rem,3vw,2.2rem);margin-bottom:10px}
+    section>.lede{color:var(--muted);max-width:940px;font-size:1.04rem;line-height:1.65}
+    .legend,.cards,.proof-grid,.sources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-top:20px}
+    .card,.legend-item,.proof-card,.source-card{background:white;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:0 4px 14px rgba(0,0,0,.035)}
+    .legend-item b,.tag{display:inline-block;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:5px 8px;margin-bottom:8px;background:#edf2f5}
+    .tag.fact{background:#e8f7ee;color:var(--ok)} .tag.proc{background:#edf3ff;color:#274b8a}.tag.alleg{background:#fff1e6;color:#8b4d00}.tag.infer{background:#f8edff;color:#6a3282}.tag.gap{background:#f2f3f4;color:#555}.tag.official{background:#e6f4ff;color:#075b95}
+    .identity{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:stretch;margin-top:22px}
+    .identity .brand{background:#102f32;color:white;border-radius:18px;padding:26px}
+    .ona-word{font-size:5rem;font-weight:900;letter-spacing:-.08em;color:var(--ona);line-height:.8}.ona-sub{font-weight:700;letter-spacing:.12em;font-size:.74rem;margin-top:10px}
+    .facts{background:white;border:1px solid var(--line);border-radius:18px;padding:24px}
+    .facts dl{display:grid;grid-template-columns:150px 1fr;gap:10px 16px;margin:0}.facts dt{font-weight:800}.facts dd{margin:0;color:#394550}
+    .org{margin-top:26px;background:#0e171f;color:#f3f7f8;border-radius:20px;padding:26px;overflow:auto}
+    .org-row{display:flex;gap:14px;justify-content:center;align-items:stretch;min-width:850px}.org-row+.org-row{margin-top:24px}.org-node{flex:1;max-width:260px;min-width:180px;background:#172631;border:1px solid #37505e;border-radius:13px;padding:14px}.org-node.primary{border-color:var(--ona);box-shadow:0 0 0 1px var(--ona) inset}.org-node h3{font-size:1rem;margin:0 0 7px}.org-node p{font-size:.84rem;line-height:1.45;color:#c7d2d8;margin:0}.org-arrow{text-align:center;color:#77d6d9;font-size:1.6rem;line-height:1;margin:8px 0}
+    .package{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.package .card h3{margin-top:0}.package .card p{color:#505e67;line-height:1.55}.package .card small{color:#6e7880}
+    .security-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}.step{background:white;border:1px solid var(--line);border-top:4px solid var(--ona);border-radius:13px;padding:16px;position:relative}.step:not(:last-child):after{content:"→";position:absolute;right:-18px;top:44%;font-weight:900;color:#7f919c;z-index:2}.step b{display:block;margin-bottom:6px}.step p{font-size:.9rem;color:#53616b;line-height:1.5}
+    .timeline-wrap{overflow:auto;border-radius:16px;border:1px solid var(--line);background:white;margin-top:22px}.timeline{border-collapse:collapse;width:100%;min-width:1050px}.timeline th,.timeline td{padding:12px 14px;border-bottom:1px solid #e6ecef;vertical-align:top;text-align:left;font-size:.88rem}.timeline thead th{position:sticky;top:0;background:#eef5f6;z-index:1}.timeline th:first-child,.timeline td:first-child{width:115px;font-weight:800}.pivot td{background:#fff1f1!important;border-top:2px solid #b93b48;border-bottom:2px solid #b93b48}.timeline .quiet{color:#7b858c}.timeline strong{color:#1d323f}
+    .matrix{width:100%;border-collapse:collapse;margin-top:20px;background:white;border-radius:14px;overflow:hidden;border:1px solid var(--line)}.matrix th,.matrix td{padding:12px;border-bottom:1px solid #e7ecef;vertical-align:top;text-align:left;font-size:.88rem}.matrix th{background:#f0f5f6}.matrix td:nth-child(4){font-weight:700}
+    .boundary{background:#fff8e8;border:1px solid #ead8a9;border-radius:16px;padding:20px;margin-top:20px}.boundary h3{margin-top:0;color:#6f4b00}.boundary ul{margin-bottom:0}.boundary li+li{margin-top:8px}
+    .visuals{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}.visuals figure{margin:0;background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.visuals img{display:block;width:100%;height:320px;object-fit:cover}.visuals .logo-img{object-fit:contain;background:#fff;padding:44px}.visuals figcaption{padding:12px 15px;font-size:.82rem;color:#5d6971;line-height:1.45}
+    .ledger{width:100%;border-collapse:collapse;margin-top:20px;background:white}.ledger th,.ledger td{border:1px solid #dfe6ea;padding:10px;vertical-align:top;text-align:left;font-size:.86rem}.ledger th{background:#edf4f5}.ledger code{font-size:.79rem;white-space:normal}.nowrap{white-space:nowrap}
+    .proof-card h3,.source-card h3{margin-top:0}.proof-card p,.source-card p{color:#55626c;line-height:1.5}.source-card a{font-weight:800}
+    .closing{background:#111c23;color:white;border-radius:18px;padding:28px}.closing h2{margin-top:0}.closing ol{line-height:1.7}.closing .test{color:#a9e9eb;font-weight:800}
+    @media(max-width:820px){.ona-page{padding:14px}.hero{padding:28px 22px}.identity,.visuals{grid-template-columns:1fr}.package{grid-template-columns:1fr}.security-flow{grid-template-columns:1fr}.step:not(:last-child):after{content:"↓";right:auto;left:48%;bottom:-20px;top:auto}.facts dl{grid-template-columns:1fr}.visuals img{height:230px}}
+  </style>
+</head>
+<body>
+<main class="ona-page">
+  <nav class="crumbs" aria-label="Migas de pan"><a href="../../">Inicio</a> · <a href="../actores-partes-abogados-representantes/">Actores</a> · ONA / Sun Park</nav>
+
+  <header class="hero">
+    <div class="eyebrow">Concurso 36/2012 · Sun Park · reconstrucción transaccional</div>
+    <h1>ONA / SUN PARK<br>el paquete de salida financiada</h1>
+    <p>Reconstrucción unitaria de la operación que estaba en ejecución alrededor de ONA antes y después del 7 de junio de 2018: operador, comprador de respaldo, financiación puente, due diligence, garantías, estrategia de salida judicial y el posible efecto de la ruptura del control material del hotel sobre ese paquete.</p>
+    <div class="hero-badges"><span>ONA / Clubotel</span><span>Elaia / Lagune</span><span>Stoneweg / Varia</span><span>EG / Dentons</span><span>Pledge / Carlos Sanz</span><span>Cuatrecasas</span><span>Concurso 36/2012</span><span>7 JUN 2018</span></div>
+  </header>
+
+  <div class="notice"><strong>Regla de lectura.</strong> Esta página no convierte una denuncia, una cronología llamativa ni una interferencia económica alegada en una condena penal. Separa hechos documentados, actuaciones procesales, relatos contemporáneos, alegaciones, inferencias causales y prueba pendiente. Cuando se habla de “frustración”, “interferencia” o “desvío” del paquete de salida se formula una hipótesis probatoria que debe demostrarse actor por actor.</div>
+
+  <section id="leyenda">
+    <h2>1. Taxonomía probatoria</h2>
+    <p class="lede">La misma arquitectura se usa en toda la página para evitar que el relato sustituya a la prueba.</p>
+    <div class="legend">
+      <div class="legend-item"><b class="tag fact">Hecho documentado</b><div>Contrato, LOI, term sheet, correo contemporáneo, valoración u otro documento primario localizado.</div></div>
+      <div class="legend-item"><b class="tag proc">Actuación procesal / cuenta profesional</b><div>Escrito, resolución o relato contemporáneo de abogado/asesor sobre una actuación ante juez o Administración Concursal.</div></div>
+      <div class="legend-item"><b class="tag alleg">Alegación / relato de parte</b><div>Posición sostenida por LPB, Oswell, Matkator, Gil Marer, Patricia u otro interviniente; no se presenta como hecho adjudicado.</div></div>
+      <div class="legend-item"><b class="tag infer">Inferencia causal</b><div>Hipótesis que conecta un acto con pérdida de acceso, control, valor, garantía, financiación o capacidad de cerrar la salida.</div></div>
+      <div class="legend-item"><b class="tag gap">Prueba pendiente</b><div>Documento o dato necesario para cerrar la cadena: consentimiento, desembolso, conocimiento, intención, beneficio o nexo causal.</div></div>
+      <div class="legend-item"><b class="tag official">Resultado oficial</b><div>Resolución o dato institucional que delimita lo que sí y lo que no fue declarado por una autoridad.</div></div>
+    </div>
+  </section>
+
+  <section id="ona">
+    <h2>2. ONA: identidad corporativa y papel en Sun Park</h2>
+    <p class="lede">ONA debe analizarse simultáneamente como marca/grupo hotelero y a través de cada persona jurídica concreta. La identidad de marca no permite atribuir automáticamente a todas las sociedades del grupo el mismo contrato, deuda, conocimiento o responsabilidad.</p>
+    <div class="identity">
+      <div class="brand">
+        <div class="ona-word">ona</div><div class="ona-sub">HOTELS &amp; APARTMENTS</div>
+        <p style="margin-top:28px;line-height:1.6">El aviso legal vigente de ONA identifica a <strong>CLUBOTEL LA DORADA, S.L.</strong> como titular de onahotels.com y la denomina, a esos efectos, “Ona Hotels &amp; Apartments”. En el expediente Sun Park deben conservarse separados Clubotel, la marca ONA y cualquier otra sociedad ONA que aparezca en cada documento.</p>
+      </div>
+      <div class="facts">
+        <dl>
+          <dt>Sociedad</dt><dd>CLUBOTEL LA DORADA, S.L.</dd>
+          <dt>NIF</dt><dd>B61502035</dd>
+          <dt>Domicilio publicado</dt><dd>C/ Calabria 129, entresuelo, 08015 Barcelona</dd>
+          <dt>Registro</dt><dd>Registro Mercantil de Barcelona, tomo 30.215, folio 64, hoja B-168866</dd>
+          <dt>Marca</dt><dd>Ona Hotels &amp; Apartments</dd>
+          <dt>Interlocutor 2018</dt><dd>Nacho Barrau aparece en la correspondencia transaccional ONA/Sun Park localizada.</dd>
+          <dt>Papel documentado</dt><dd>Operador propuesto; business plan; contrato/paquete operativo; introducción y coordinación con fuentes de capital y comprador potencial.</dd>
+        </dl>
+        <p style="margin:18px 0 0"><a href="https://www.onahotels.com/backoffice/pdf/files/1legal_es.pdf" rel="noopener">Fuente corporativa oficial de ONA →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="organigrama">
+    <h2>3. Organigrama de la operación: ONA en el centro del paquete</h2>
+    <p class="lede">El diagrama muestra funciones documentadas, no una asociación de culpabilidad. Una flecha significa relación transaccional, jurídica o procedimental localizada en la documentación; no significa coautoría.</p>
+    <div class="org" role="img" aria-label="Mapa funcional del paquete de salida financiada ONA Sun Park">
+      <div class="org-row">
+        <div class="org-node primary"><h3>ONA / Clubotel La Dorada</h3><p>Operador propuesto · contrato industrial / anexo · business plan · coordinación comercial.</p></div>
+        <div class="org-node"><h3>Nacho Barrau · ONA</h3><p>Correspondencia transaccional; introducción a Stoneweg; transmisión de la LOI Elaia.</p></div>
+        <div class="org-node"><h3>Carlos Sanz · Pledge Investments</h3><p>Coordinación financiera/transaccional documentada: financiadores, garantías, DD y calendario de salida.</p></div>
+      </div>
+      <div class="org-arrow">↓ &nbsp; paquete operativo + capital + garantías &nbsp; ↓</div>
+      <div class="org-row">
+        <div class="org-node primary"><h3>SUN PARK / perímetro de salida</h3><p>LPB en Concurso 36/2012; Aweswell, Matkator y otros elementos del perímetro aparecen en los workstreams de financiación/garantías. El rol jurídico exacto se fija documento a documento.</p></div>
+      </div>
+      <div class="org-arrow">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↓ &nbsp;&nbsp;&nbsp;&nbsp; ↓ &nbsp;&nbsp;&nbsp;&nbsp; ↓ &nbsp;&nbsp;&nbsp;&nbsp; ↘</div>
+      <div class="org-row">
+        <div class="org-node"><h3>Elaia / Lagune</h3><p>Ruta de adquisición/take-out: propuesta indicativa de €26m con fondos propios, sujeta a aceptación, DD, aprobación y documentación final.</p></div>
+        <div class="org-node"><h3>Stoneweg / Varia</h3><p>Ruta de financiación; reuniones, paquete de garantías y oferta vinculante condicionada de 12 junio 2018.</p></div>
+        <div class="org-node"><h3>EG Real Estate / Dentons</h3><p>Ruta alternativa/competitiva: term sheet, redlines, DD y estructuración de préstamo/seguridad.</p></div>
+        <div class="org-node"><h3>Cuatrecasas</h3><p>Due diligence y trabajo jurídico sobre financiación/garantías; interlocución con prestamistas y asesores.</p></div>
+        <div class="org-node"><h3>Daniel Irigoyen / equipo procesal</h3><p>Workstream de salida judicial y reuniones de junio; sus relatos contemporáneos se distinguen de un acta judicial.</p></div>
+      </div>
+      <div class="org-arrow">↓ &nbsp; debía converger en una salida judicial y una estructura de seguridad ejecutable &nbsp; ↓</div>
+      <div class="org-row">
+        <div class="org-node"><h3>Juzgado Mercantil nº 1</h3><p>Órgano del Concurso 36/2012. Su papel se analiza mediante resoluciones y actuaciones, no por atribución automática de la versión de una parte.</p></div>
+        <div class="org-node"><h3>Administrador Concursal</h3><p>Francisco de Borja Rodríguez-Batllori Laffitte. Sus decisiones y comunicaciones deben fecharse y contrastarse con el expediente.</p></div>
+        <div class="org-node"><h3>Perímetro Acosta Matos</h3><p>Crédito/fincas → control material alegado → RICPE → HNT/MYND. Es una línea separada que se sincroniza con el paquete ONA para probar o refutar interferencia causal.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="paquete">
+    <h2>4. El paquete ONA, por workstream</h2>
+    <p class="lede">La evidencia localizada muestra un paquete multivía. La existencia de varios workstreams simultáneos aumenta la importancia del 6–13 de junio, pero no equivale a decir que el dinero estaba ya incondicionalmente desembolsable el 6 de junio.</p>
+    <div class="package">
+      <article class="card"><span class="tag fact">Operación</span><h3>ONA / Clubotel</h3><p>Contrato de arrendamiento de industria fechado el 6 de junio de 2018, anexo/condiciones y business plans. El objetivo era aportar una plataforma operativa a la salida.</p><small>Prueba clave: contrato + BP + posteriores novación/adenda 2019.</small></article>
+      <article class="card"><span class="tag fact">Take-out</span><h3>Elaia / Lagune · €26m</h3><p>LOI/propuesta indicativa de compra con fondos propios transmitida por ONA. La documentación del repositorio la trata como ruta real de adquisición de respaldo, pero no como compra consumada.</p><small>Pendía aceptación, DD, aprobaciones y SPA/título.</small></article>
+      <article class="card"><span class="tag fact">Financiación</span><h3>Stoneweg / Varia</h3><p>ONA introduce la relación; Cuatrecasas y Pledge trabajan DD y garantías; el 12 de junio llega una “Oferta Vinculante” con condicionantes.</p><small>Debe nombrarse Varia Structured Opportunities SA conforme a la documentación; no presumir relación societaria distinta de la verificada.</small></article>
+      <article class="card"><span class="tag fact">Financiación alternativa</span><h3>EG / Dentons</h3><p>Term sheet y redlines activos, con Dentons en DD y loan/security documentation. Participan Charles Peronnin y equipo EG; Marcell Clark y Julio Parrella aparecen como contactos jurídicos.</p><small>Ruta negociada; no se ha localizado cierre/desembolso definitivo de esa vía en la fecha crítica.</small></article>
+      <article class="card"><span class="tag fact">Coordinación</span><h3>Carlos Sanz / Pledge</h3><p>Los correos muestran coordinación de prestamistas, reuniones, DD, garantías y material que debía utilizarse en el frente judicial. Se describe aquí la función observada, no un cargo que no esté probado por documento.</p></article>
+      <article class="card"><span class="tag proc">Profesionales</span><h3>Cuatrecasas + equipo de salida</h3><p>Iñigo De Luisa, Rosa Gual y otros miembros del equipo aparecen en el workstream de garantías/DD; Daniel Irigoyen aparece en la vía de salida judicial. La página conserva la diferencia entre asesor, abogado, testigo y parte.</p></article>
+    </div>
+  </section>
+
+  <section id="garantias">
+    <h2>5. Arquitectura de garantías y “security package”</h2>
+    <p class="lede">El problema central no es solo quién ofrecía dinero, sino cómo se convertía el valor del hotel y del perímetro societario en garantías aceptables antes y después de la salida del concurso/liquidación.</p>
+    <div class="security-flow">
+      <div class="step"><b>1 · Pre-salida</b><p>Garantías provisionales sobre activos, participaciones, derechos de cobro, garantías corporativas y elementos del contrato operador, según la estructura que pudiera darse mientras subsistían restricciones concursales.</p></div>
+      <div class="step"><b>2 · Fondos / consignación</b><p>Definir importe concursal exigible, fondos suficientes y mecanismo de pago/consignación bajo control del procedimiento.</p></div>
+      <div class="step"><b>3 · Salida</b><p>Obtener el hito judicial que permitiera recuperar capacidad y ejecutar la estructura post-salida. Este es el puente causal que debe probarse, no presumirse.</p></div>
+      <div class="step"><b>4 · Post-salida</b><p>Paquete definitivo, incluida la hipoteca de primer rango contemplada en term sheets posteriores una vez fuera de liquidación, junto a la posible adquisición/take-out.</p></div>
+    </div>
+    <div class="boundary"><h3>Pregunta probatoria central</h3><p>¿Qué derechos, posesión, ingresos, contratos, accesos, fincas o facultades eran necesarios para que las garantías fueran diligenciables y ejecutables, y cuáles de ellos cambiaron materialmente entre el 6 y el 13 de junio? La respuesta exige un mapa activo-por-activo y documento-por-documento.</p></div>
+  </section>
+
+  <section id="timeline">
+    <h2>6. Cronología sincronizada: transacción, concurso y control material</h2>
+    <p class="lede">La utilidad de esta vista es observar simultáneamente cuatro relojes. La coincidencia temporal genera preguntas de causalidad; no demuestra por sí sola conocimiento, intención o coordinación.</p>
+    <div class="timeline-wrap">
+      <table class="timeline">
+        <thead><tr><th>Fecha</th><th>ONA / operación</th><th>Capital / garantías</th><th>Concurso / profesionales</th><th>Control material / perímetro privado</th></tr></thead>
+        <tbody>
+          <tr><td>19 abr 2018</td><td><strong>LOI + business plan ONA</strong> en el paquete localizado.</td><td class="quiet">Estructuración inicial.</td><td>Preparación de salida y DD profesional.</td><td>Debe cotejarse con la situación material y comunitaria entonces vigente.</td></tr>
+          <tr><td>3–21 may</td><td>Workstream operador avanza.</td><td>EG term sheet/redlines y otras vías de capital en negociación.</td><td>DD jurídica/financiera y valoración.</td><td>23 may: inspección Gesvalt, según página de toma de control.</td></tr>
+          <tr><td>28–31 may</td><td>Nacho Barrau introduce/coordina contacto Stoneweg.</td><td>Reunión Stoneweg–Cuatrecasas; se solicita “paquete de garantías”. Elaia/Lagune fecha propuesta indicativa el 30 may.</td><td>Cuatrecasas trabaja DD/seguridad.</td><td>La fotografía material debe compararse con la tasación.</td></tr>
+          <tr><td>1–5 jun</td><td>Negociación del paquete operativo.</td><td>Stoneweg pasa a foco principal; EG queda como ruta paralela.</td><td>Se prepara material para el workstream judicial.</td><td class="quiet">Sin inferencia penal por mera proximidad temporal.</td></tr>
+          <tr><td>6 jun</td><td><strong>Contrato de arrendamiento de industria ONA</strong>; ONA remite la LOI Elaia.</td><td>Paquete contiene operador + comprador/take-out + alternativas de bridge.</td><td>Reunión/estrategia Barcelona y preparación de salida.</td><td>Víspera del punto de ruptura material alegado.</td></tr>
+          <tr class="pivot"><td>7 JUN 2018</td><td><strong>Punto de corte.</strong> El paquete ONA existía documentalmente, aunque condicionado.</td><td>Las garantías y la DD dependían de derechos/activos/control que deben identificarse.</td><td>El concurso seguía abierto; no se ha localizado en la página de toma de control un auto de posesión/desalojo a favor de CAM.</td><td><strong>Ruptura/toma material alegada:</strong> cerraduras, cadenas, seguridad y exclusión. La denuncia penal de 2018 terminó en sobreseimiento provisional confirmado en apelación.</td></tr>
+          <tr><td>8 jun</td><td>ONA y documentos operativos se incluyen en paquete a financiadores.</td><td>Carlos Sanz circula DD, BP, contrato ONA/anexo y LOI Elaia; se prepara opción de bridge.</td><td>Se prepara cita ante el juez para 13 jun.</td><td>Debe medirse si el nuevo estado material afectaba inspección, operación, ingresos o garantías.</td></tr>
+          <tr><td>12 jun</td><td>ONA sigue dentro del paquete.</td><td><strong>Stoneweg/Varia envía oferta vinculante condicionada.</strong> Continúa debate sobre garantías y posible hipoteca.</td><td>Material listo para ser utilizado en la vía judicial.</td><td>La continuidad de la financiación después del 7 jun es importante: evita afirmar que el paquete murió instantáneamente.</td></tr>
+          <tr><td>13 jun</td><td>Daniel Irigoyen relata contemporáneamente presentación de salida con operador/capital.</td><td>Term sheet disponible para la reunión.</td><td>Relato de reunión con juez y posterior contacto con AC; no sustituye a un acta judicial.</td><td>La prueba crítica es qué decisión u omisión concreta impidió, retrasó o condicionó el cierre.</td></tr>
+          <tr><td>20 jul</td><td>Consta en la reconstrucción que ONA comunicó dificultades de acceso/inspección exterior en contexto de conflicto.</td><td>DD y valor dependen de acceso verificable.</td><td>Persistencia del concurso.</td><td>Dato relevante para causalidad; requiere fuente primaria y alcance exacto.</td></tr>
+          <tr><td>ago–oct 2018</td><td>El paquete evoluciona más allá de la vía inicial.</td><td>Term sheet posterior firmado con BORESB/Ben Oldman route; separa security on closing y post-exit. Se prorrogó, pero no se ha localizado desembolso/cierre.</td><td>La incapacidad de completar debe reconstruirse decisión por decisión.</td><td>Comparar con evolución de control, explotación y título.</td></tr>
+          <tr><td>feb–jul 2019</td><td>Novación/adenda ONA y personación ONA en mayo; AC impugna la personación en julio.</td><td>Persistencia de interés/estructura frente a ausencia de cierre probado.</td><td>La personación y oposición son hitos procesales verificables.</td><td>Analizar quién controlaba física y económicamente el hotel durante este periodo.</td></tr>
+          <tr><td>2019–actualidad</td><td>La ruta ONA inicial debe separarse de operadores posteriores.</td><td>Financiación y ayudas posteriores requieren una línea independiente.</td><td>Liquidación, adjudicación y litigios posteriores.</td><td>Perímetro Acosta Matos: RICPE → adjudicación/título → HNT/MYND, según la reconstrucción específica enlazada.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="causalidad">
+    <h2>7. Matriz de posible frustración/interferencia del funded exit</h2>
+    <p class="lede">La tesis debe probar una cadena, no solo una secuencia: <strong>acto → conocimiento → dependencia transaccional → efecto causal → intención (si se alega) → beneficio</strong>. La tabla identifica qué buscar.</p>
+    <table class="matrix">
+      <thead><tr><th>Variable</th><th>Dependencia del paquete ONA</th><th>Mecanismo de afectación a investigar</th><th>Estado</th><th>Prueba decisiva pendiente</th></tr></thead>
+      <tbody>
+        <tr><td>Acceso físico</td><td>Inspección, DD, operador, tasadores y financiadores.</td><td>Impedir o degradar inspección/entrega/operación.</td><td><span class="tag infer">Hipótesis causal</span></td><td>Registros de acceso, comunicaciones, instrucciones y consecuencias concretas.</td></tr>
+        <tr><td>Control operativo</td><td>ONA necesitaba una plataforma explotable y verificable.</td><td>Desplazar la capacidad de ejecutar el contrato industrial o el BP.</td><td><span class="tag infer">Hipótesis causal</span></td><td>Fecha de efectividad contractual, condiciones suspensivas y quién podía entregar la explotación.</td></tr>
+        <tr><td>Ingresos / cashflow</td><td>Valor, servicio de deuda y underwriting.</td><td>Desviar o interrumpir flujos relevantes para el caso de crédito.</td><td><span class="tag gap">Por cuantificar</span></td><td>Cuenta bancaria, PMS, facturación, contratos tour-operador y conciliación por fechas.</td></tr>
+        <tr><td>Garantías</td><td>Bridge dependía de security package pre/post salida.</td><td>Hacer indisponible, incierta o no perfeccionable parte del colateral.</td><td><span class="tag infer">Hipótesis causal</span></td><td>Security checklist versionado + título/posesión/derechos a cada fecha.</td></tr>
+        <tr><td>Salida judicial</td><td>La estructura exigía resolver restricciones concursales y cuantificar pago.</td><td>Retraso, negativa o falta de cauce que impidiera alcanzar la condición de cierre.</td><td><span class="tag proc">Requiere expediente</span></td><td>Solicitud presentada, registro, resoluciones, traslados, audiencia y motivos jurídicos.</td></tr>
+        <tr><td>Elaia / take-out</td><td>La compra por €26m reforzaba salida/repago si llegaba a cierre.</td><td>Pérdida de capacidad de vender, entregar o valorar el activo.</td><td><span class="tag gap">No consumado</span></td><td>Cadena completa LOI→aceptación→DD→board→SPA y razón documentada del no cierre.</td></tr>
+        <tr><td>Conocimiento</td><td>Necesario para atribuir interferencia consciente a un actor.</td><td>Conocer el paquete y actuar pese a ello.</td><td><span class="tag gap">Actor por actor</span></td><td>Correos, reuniones, notificaciones, escritos, metadatos y testimonios contemporáneos.</td></tr>
+        <tr><td>Beneficio posterior</td><td>No prueba por sí mismo causalidad previa.</td><td>Comparar quién terminó controlando, explotando, financiando o titulando el hotel.</td><td><span class="tag infer">Contexto</span></td><td>Cadena registral, contratos, ayudas, financiación, explotación y flujos económicos.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="acosta">
+    <h2>8. Perímetro Acosta Matos: superponer, no fusionar</h2>
+    <p class="lede">La línea Acosta Matos debe estar sincronizada con la operación ONA, pero no debe transformarse en una atribución colectiva. La página específica reconstruye la evolución que se investiga: <strong>crédito/fincas → control material → proyecto RICPE → título/HNT/MYND → financiación/apoyo</strong>.</p>
+    <div class="cards">
+      <article class="card"><span class="tag fact">Antes</span><h3>Crédito, fincas y comunidad</h3><p>Identificar derechos concretos de CAM/JDAM y separarlos de los de LPB, Matkator, comunidad y otros propietarios.</p></article>
+      <article class="card"><span class="tag alleg">7 junio</span><h3>Control material</h3><p>Contrastar la toma/exclusión alegada con título, autorización judicial, posesión, seguridad, cerraduras y capacidad de explotación.</p></article>
+      <article class="card"><span class="tag proc">Después</span><h3>RICPE, adjudicación y explotación</h3><p>Seguir la evolución posterior sin retroproyectar automáticamente al 2018 una intención penal que deba probarse con evidencia contemporánea.</p></article>
+    </div>
+    <p style="margin-top:16px"><a href="../acosta-matos-perimetro/"><strong>Abrir la reconstrucción completa del perímetro Acosta Matos →</strong></a></p>
+  </section>
+
+  <section id="limites">
+    <h2>9. Lo que el expediente permite afirmar — y lo que no</h2>
+    <div class="proof-grid">
+      <article class="proof-card"><h3>✓ Sí está documentado</h3><p>Existía antes/durante junio de 2018 un paquete ONA con contrato/operación, business plan, rutas de adquisición y financiación, DD profesional y diseño de garantías. El trabajo continuó después del 7 de junio y produjo, entre otros hitos, la oferta Stoneweg/Varia de 12 junio.</p></article>
+      <article class="proof-card"><h3>△ Está condicionado</h3><p>La existencia del paquete no equivale a desembolso incondicional ni a una salida judicial ya consumada. Elaia/Lagune seguía sujeta a pasos de transacción; las rutas de bridge tenían condiciones; el security package dependía de hitos concursales y jurídicos.</p></article>
+      <article class="proof-card"><h3>✕ No debe afirmarse sin más</h3><p>No se debe presentar como hecho adjudicado que un actor “robó” el hotel, cometió un delito económico, conspiró o saboteó conscientemente la financiación. Esas son, cuando proceda, alegaciones o hipótesis que necesitan elementos legales y causales específicos.</p></article>
+      <article class="proof-card"><h3>⚖ Resultado penal 2018</h3><p>La propia reconstrucción del sitio registra que la denuncia penal de 2018 relacionada con la toma material terminó en sobreseimiento provisional confirmado en apelación. Ese límite debe mostrarse junto a cualquier hipótesis criminal posterior o ampliada.</p></article>
+    </div>
+  </section>
+
+  <section id="evidencia">
+    <h2>10. Ledger de documentos esenciales</h2>
+    <p class="lede">Índice mínimo para que cada afirmación importante pueda retrotraerse a una pieza concreta. Los adjuntos privados no se reproducen públicamente aquí; se describen de forma mínima para su trazabilidad.</p>
+    <div style="overflow:auto">
+      <table class="ledger">
+        <thead><tr><th>Fecha</th><th>Documento / cadena</th><th>Qué demuestra</th><th>Límite</th></tr></thead>
+        <tbody>
+          <tr><td class="nowrap">19-04-2018</td><td><code>LOI ONA-Sun Park 19ABR2018.pdf</code> + <code>ONA - Sun Park Lanzarote Business Plan 19ABR2018.pdf</code></td><td>Workstream ONA anterior a junio.</td><td>No prueba cierre.</td></tr>
+          <tr><td>30-05-2018</td><td><code>180530 - LOI Sun Park.pdf</code> (Elaia/Lagune, transmitida por ONA)</td><td>Ruta de adquisición/take-out de €26m descrita en el expediente.</td><td>Indicativa/condicionada; no SPA consumado.</td></tr>
+          <tr><td>28–31-05-2018</td><td>Cadenas Stoneweg–ONA–Pledge–Cuatrecasas</td><td>Introducción, reunión DD y solicitud de security package.</td><td>Participación profesional ≠ responsabilidad ulterior.</td></tr>
+          <tr><td>06-06-2018</td><td><code>Contrato Arrendamiento de Industria ONA 6JUN2018.pdf</code></td><td>Componente operativo formalizado dentro del paquete.</td><td>Examinar condiciones/efectividad y capacidad real de entrega.</td></tr>
+          <tr><td>06-06-2018</td><td>Correo ONA remitiendo LOI Elaia</td><td>ONA conectaba operador y comprador potencial dentro del mismo entorno transaccional.</td><td>No demuestra acuerdo entre todos los actores sobre cada término.</td></tr>
+          <tr><td>08-06-2018</td><td>Paquete enviado a financiadores: DD + BP + contrato ONA/anexo + LOI Elaia</td><td>Continuidad inmediata del funded-exit workstream después del 7 junio.</td><td>Debe separarse del éxito final.</td></tr>
+          <tr><td>12-06-2018</td><td><code>2018-06-12 Oferta Vinculante Ptmo. Hipotecario AWESWELL LTD.pdf</code></td><td>Oferta Stoneweg/Varia con condicionantes comentados.</td><td>No equivale a drawdown.</td></tr>
+          <tr><td>13-06-2018</td><td>Correspondencia de Daniel Irigoyen / equipo sobre reunión judicial</td><td>Cuenta profesional contemporánea de la presentación de una salida financiada.</td><td>No es acta judicial ni resolución.</td></tr>
+          <tr><td>ago–oct 2018</td><td>Term sheet firmado de financiación posterior / BORESB route</td><td>Persistencia de estructuras de bridge y distinción garantías “on closing” / “once Company exits liquidation”.</td><td>No se ha localizado prueba de cierre/desembolso final.</td></tr>
+          <tr><td>12-02-2019</td><td><code>Adenda Contrato Arrendamiento Industria 12FEB2019.pdf</code> + BP</td><td>Continuidad/documentación ONA posterior.</td><td>Analizar vigencia y condiciones.</td></tr>
+          <tr><td>03-05-2019</td><td><code>Personación de ONA 3MAY2019.pdf</code></td><td>Entrada procesal de ONA.</td><td>El efecto jurídico depende del escrito y resolución.</td></tr>
+          <tr><td>10-07-2019</td><td><code>Escrito AC impugnando personación ONA 10JUL2019.pdf</code></td><td>Oposición del AC a la personación.</td><td>No atribuye por sí sola ilicitud o motivo impropio.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="imagenes">
+    <h2>11. Contexto visual: marca y activo actual</h2>
+    <p class="lede">Las imágenes son únicamente contexto visual. No prueban identidad histórica de operador, propiedad, posesión ni responsabilidad en 2018.</p>
+    <div class="visuals">
+      <figure><img class="logo-img" src="https://assets.genially.com/s3fs-public/images/Ona%20Hotels%20logo.png?VersionId=I1Fa9hXvNI6gSDk6RAC1PpHPAZkqJBka" alt="Logotipo de ONA Hotels & Apartments"><figcaption>Marca ONA Hotels &amp; Apartments. Imagen de contexto reproducida desde un caso público de Genially sobre ONA; la identidad jurídica se verifica separadamente con el aviso legal oficial de ONA.</figcaption></figure>
+      <figure><img src="https://www.myndhotels.com/uploads/galeriahoteles/20230106_YAIZA_1-290-HDR-Editar_1.jpg" alt="Recepción actual de MYND Yaiza en Playa Blanca"><figcaption>MYND Yaiza, imagen de la galería oficial actual de MYND. Se usa para identificar visualmente el activo/hotel actual, no para demostrar hechos de 2018.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="fuentes">
+    <h2>12. Rutas de prueba y páginas relacionadas</h2>
+    <div class="sources-grid">
+      <article class="source-card"><h3>Salida financiada antes del 7 junio</h3><p>Desglose del estado de cada ruta al corte temporal.</p><a href="../salida-financiada-ona-antes-7-junio-2018/">Abrir →</a></article>
+      <article class="source-card"><h3>ONA y salida del Concurso 36/2012</h3><p>Security package, reuniones y evolución de las rutas de financiación.</p><a href="../ona-hotels-salida-concurso-36-2012/">Abrir →</a></article>
+      <article class="source-card"><h3>Toma material 7 junio 2018</h3><p>Hechos alegados, límites de título/posesión, tasación y resultado penal 2018.</p><a href="../toma-control-sun-park-7-junio-2018/">Abrir →</a></article>
+      <article class="source-card"><h3>Perímetro Acosta Matos</h3><p>Crédito, fincas, control, RICPE, HNT/MYND y líneas de investigación.</p><a href="../acosta-matos-perimetro/">Abrir →</a></article>
+      <article class="source-card"><h3>Actores / abogados / representantes</h3><p>Identidades y regla de no equiparar asesor, testigo, parte y coautor.</p><a href="../actores-partes-abogados-representantes/">Abrir →</a></article>
+      <article class="source-card"><h3>ONA · fuente oficial</h3><p>Identidad pública vigente de CLUBOTEL LA DORADA, S.L. y ONA Hotels &amp; Apartments.</p><a href="https://www.onahotels.com/backoffice/pdf/files/1legal_es.pdf" rel="noopener">Abrir →</a></article>
+    </div>
+  </section>
+
+  <section class="closing" id="test">
+    <h2>13. El test que debe cerrar la investigación</h2>
+    <p>La tesis más fuerte no es “había financiación y alguien la robó”. Es una reconstrucción verificable de cinco pasos:</p>
+    <ol>
+      <li><span class="test">Capacidad:</span> identificar exactamente qué paquete ONA/capital/garantías estaba disponible en cada fecha y bajo qué condiciones.</li>
+      <li><span class="test">Dependencia:</span> demostrar qué derechos, acceso, posesión, ingresos, título o acto judicial necesitaba cada financiador/comprador.</li>
+      <li><span class="test">Interferencia:</span> identificar acto u omisión concreta, actor, autoridad jurídica y cambio objetivo producido.</li>
+      <li><span class="test">Causalidad y conocimiento:</span> demostrar que esa actuación afectó realmente al cierre y, si se alega conducta consciente, que el actor conocía el paquete o sus condiciones.</li>
+      <li><span class="test">Resultado y beneficio:</span> reconciliar qué ocurrió finalmente con el hotel, su negocio, sus títulos, financiación e ingresos, sin usar el resultado posterior como sustituto de la prueba del estado mental anterior.</li>
+    </ol>
+    <p>Ese método permite investigar con máxima intensidad una posible frustración patrimonial o concursal sin presentar como condena lo que todavía debe demostrarse.</p>
+  </section>
+</main>
+</body>
+</html>
