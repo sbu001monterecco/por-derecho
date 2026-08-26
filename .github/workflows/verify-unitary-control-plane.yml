@@ -92,9 +92,10 @@ jobs:
           import json, os, time, urllib.request
 
           base=os.environ['BASE'].rstrip('/')
+          # The 194-ID registry is canonical; the former 185-ID readback is historical evidence only.
           text_checks=[
-            ('/es/registro-identidad-materia/',['data-static-registry-counts="185-86-66-10-13-10"','data-registry-stat="TOTAL">185','Los <strong>185 IDs</strong>']),
-            ('/en/matter-identity-registry/',['data-static-registry-counts="185-86-66-10-13-10"','data-registry-stat="TOTAL">185','The <strong>185 IDs</strong>']),
+            ('/es/registro-identidad-materia/',['data-static-registry-counts="194-86-66-10-15-17"','data-registry-stat="TOTAL">194','Los <strong>194 IDs</strong>']),
+            ('/en/matter-identity-registry/',['data-static-registry-counts="194-86-66-10-15-17"','data-registry-stat="TOTAL">194','The <strong>194 IDs</strong>']),
             ('/es/actualizaciones/',['Última actualización material','<strong>26 agosto 2026</strong>','ALG-ENT-018']),
             ('/en/updates/',['Latest material update','<strong>26 August 2026</strong>','ALG-ENT-018']),
             ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','2026-08-26','ALG-ENT-018']),
@@ -137,7 +138,7 @@ jobs:
               assert state.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert state.get('status')=='LIVE_VERIFIED'
               counts=state.get('identity_registry',{}).get('counts',{})
-              assert counts=={'total':185,'PERSON':86,'ORGANISATION':66,'STRUCTURE':10,'INSTITUTION':13,'PROCEEDING':10}
+              assert counts=={'total':194,'PERSON':86,'ORGANISATION':66,'STRUCTURE':10,'INSTITUTION':15,'PROCEEDING':17}
               repository=state.get('repository',{})
               assert repository.get('source_publication_merge_sha')==merge_sha
               assert repository.get('verified_tree_sha')==tree_sha
@@ -219,7 +220,7 @@ jobs:
             echo "- SHA: $GITHUB_SHA"
             echo '- Control: `PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED`'
             echo '- Evidence: merge `77e2ba300af45a953947160af63283a64512e876`, Pages `32942972472`, verifier `32942975508` / job `98097657687`.'
-            echo '- Identity denominator: `185 / 86 / 66 / 10 / 13 / 10`'
+            echo '- Identity denominator: `194 / 86 / 66 / 10 / 15 / 17`'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Source parity and syntax verified; public readback is reserved for the post-merge main push.'
             else
