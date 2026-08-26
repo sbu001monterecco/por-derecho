@@ -12,9 +12,10 @@
     "unitary_case_and_evidence_state": "ops/CURRENT_UNITARY_STATE.json",
     "unitary_human_state": "CURRENT_UNITARY_STATE.md",
     "expected_control_id": "PD-UNITARY-STATE-20260825-01",
-    "expected_status": "LIVE_VERIFIED",
+    "expected_status": "PREPARED_PENDING_MERGE_AND_LIVE_READBACK",
     "pr_reconciliation_ledger": "ops/PR_RECONCILIATION_LEDGER.json",
     "material_updates": "assets/data/material-updates-v1.json",
+    "owner_network": "assets/data/non-lpb-matkator-owner-court-network-v1.json",
     "rule": "This file controls repository, deployment and rollback truth only. The unitary state controls synchronized case, evidence, procedural and reader-routing facts. Neither layer substitutes for the other."
   },
   "freshness_policy": {
@@ -55,25 +56,17 @@
     "identity_registry": {
       "path": "assets/data/matter-identity-registry-v1.json",
       "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-      "counts": {
-        "total": 185,
-        "PERSON": 86,
-        "ORGANISATION": 66,
-        "STRUCTURE": 10,
-        "INSTITUTION": 13,
-        "PROCEEDING": 10
-      }
+      "counts": {"total":187,"PERSON":88,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10}
+    },
+    "owner_court_network": {
+      "path": "assets/data/non-lpb-matkator-owner-court-network-v1.json",
+      "control_id": "PD-SP-OWNER-COURT-NETWORK-001",
+      "state": "SOURCE_PREPARED_PENDING_PUBLIC_READBACK"
     },
     "legal_professional_register": {
       "path": "assets/data/legal-professionals-register-v1.json",
       "register_id": "PD-SP-LEGAL-PROF-001",
-      "counts": {
-        "total": 40,
-        "current_counsel": 3,
-        "former_or_review_counsel": 31,
-        "current_procuradores": 2,
-        "former_procuradores": 4
-      }
+      "counts": {"total":40,"current_counsel":3,"former_or_review_counsel":31,"current_procuradores":2,"former_procuradores":4}
     }
   },
   "operational_controls": {
@@ -87,8 +80,8 @@
   "current_priority_sources": [
     "PRIORITY_ACTIONS_START_HERE.md",
     "ops/CURRENT_UNITARY_STATE.json",
+    "assets/data/non-lpb-matkator-owner-court-network-v1.json",
     "docs/deletion-audits/2026-08-25-unitary-repository-website-valencia-thread-closeout.md",
-    "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md",
     "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
   ],
   "boundaries": [
