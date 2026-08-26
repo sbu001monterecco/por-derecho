@@ -1,6 +1,6 @@
 # Five-actor preservation and reader-journey backlog
 
-**Control date:** 24 August 2026
+**Control date:** 26 August 2026
 
 **Owner:** Gil Marer / Por Derecho
 
@@ -13,6 +13,15 @@ This file preserves every material recommendation identified by the repository a
 1. Require `scripts/validate_repository_preservation.py` and the publication-integrity gate as required, up-to-date status checks in the GitHub `main` ruleset. CODEOWNERS and workflow files are advisory until repository settings enforce them. Track with issue #355.
 2. After each material publication, create a fresh independent recovery checkpoint for the exact verified release and perform read-back/restore testing. The Google Drive bundle reported for the older `a2bda8…` baseline does not by itself prove an exact recovery copy of the newest release. Track with issue #356 and record the exact source SHA.
 3. Keep the canonical Spanish Judge route `es/concurso-36-2012-magistrado-juez/` and the preserved legacy route `es/concurso-36-2012-juzgado-mercantil-1/` until an exact consolidation or redirect is expressly authorised.
+4. Review and implement a coherent cache-version contract for the shared runtime chain. `assets/share-controls-20260817.js` currently requests `unitary-public-shell-20260818.js?v=20260819a` while the repaired shell reports version `20260826a`; `assets/ricpe-filed-status-20260817.js` requests `optimum-reader-journey-finish-20260818.js?v=20260818a`. Reconcile the validator-pinned chain in one bounded PR and test stale/mixed-cache behaviour before changing broad loader versions.
+
+## P1 — cross-device accountability continuity
+
+1. Obtain a current manual confirmation on a real Android tablet after ordinary cache expiry or refresh: menu opens, exactly one `AC y Juez` / `AC & Judge` control remains after at least ten seconds, survives reload and reaches the exact locale fragment. Record only the browser/version and result needed for reproducibility; do not publish unnecessary device identifiers.
+2. Extend a bounded representative subset beyond viewport-only Chromium. Use genuine touch/device-descriptor settings (`hasTouch`, mobile/tablet user agent and device scale factor where appropriate) and representative Firefox/WebKit runs if CI reliability and duration remain acceptable.
+3. Add a continuous temporal assertion from initial navigation through the delayed optimiser so a transient disappearance between the existing phase snapshots fails the gate.
+4. Keep the current fourteen-profile / fifty-two-combination suite and exact ES/EN accountability assertions as the minimum source baseline until a tested replacement gives equal or stronger protection. Any sharding must retain early, delayed, reload, open-menu, centre-hit and click-fragment coverage.
+5. Treat required-check promotion or ruleset changes as `HOLD / USER AUTHORITY REQUIRED` until the enforcement procedure in `AGENTS.md` has been separately authorised and proven in shadow mode.
 
 ## P1 — one source, static first
 
