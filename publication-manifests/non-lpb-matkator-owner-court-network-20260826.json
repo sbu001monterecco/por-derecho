@@ -1,0 +1,76 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "non-lpb-matkator-owner-court-network-20260826",
+  "control_date": "2026-08-26",
+  "current_state": "PR_OPEN",
+  "status": "prepared_pending_merge_deployment_and_live_readback",
+  "control_id": "PD-SP-OWNER-COURT-NETWORK-001",
+  "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
+  "baseline_main_sha": "5e3b95b286ded297c02302e53ed9d2822b5eca0b",
+  "identity_denominator": {"total":187,"PERSON":88,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+  "expected_routes": {
+    "es": [
+      "es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/index.html",
+      "es/jv1260-ap89-continuidad-cam/index.html",
+      "es/registro-identidad-materia/index.html"
+    ],
+    "en": [
+      "en/matter-identity-registry/non-lpb-matkator-owner-network/index.html",
+      "en/jv1260-ap89-cam-continuity/index.html",
+      "en/matter-identity-registry/index.html"
+    ]
+  },
+  "assets": [
+    "assets/data/non-lpb-matkator-owner-court-network-v1.json",
+    "assets/data/matter-identity-registry-v1.acosta-matos-people.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "scripts/validate_non_lpb_owner_court_network.py",
+    "scripts/validate_unitary_control_plane.py",
+    "scripts/validate_legal_professional_register.py",
+    "sitemap-owner-court-network.xml"
+  ],
+  "court_core": {
+    "proceeding": "JV 1260/2011 / AP 89/2014",
+    "claimant_owner_count": 7,
+    "bungalow_count": 18,
+    "adverse_result_preserved": true,
+    "rule": "The seven claimants are not the entire non-LPB/Matkator owner universe."
+  },
+  "individualised_people": [
+    {"id":"PD-SP-P-0027","name":"Celia Guillén Pérez","boundary":"Specific 2-Feb-2011 voting proposition is a complainant-side reconstruction, not a judicial finding of intent or culpability."},
+    {"id":"PD-SP-P-0031","name":"Manuel Molina Climent","boundary":"4-Feb-2022 request for explanation of debtor balances does not mean he created, independently verified or originally approved the debt."}
+  ],
+  "acosta_matos_cluster": [
+    {"id":"PD-SP-P-0011","name":"José Daniel Acosta Matos"},
+    {"id":"PD-SP-P-0012","name":"Laura Patricia Acosta Matos"},
+    {"id":"PD-SP-P-0087","name":"Gerardo Zacarías Acosta Matos"},
+    {"id":"PD-SP-P-0088","name":"Javier Acosta Matos"}
+  ],
+  "publication_boundaries": [
+    "Ownership, procedural-party status, representation, Community office, family relationship, corporate office and later title are different relations.",
+    "Family/business membership does not transfer knowledge, intention, instruction, benefit or liability.",
+    "The wider Montelanza/Molina perimeter is partly derived from party pleadings and Community records; it is not an adjudicated criminal grouping.",
+    "The 2022 Acosta Matos title/project layer cannot be projected backwards to prove a 2011 common plan or earlier authority.",
+    "LPB, Matkator, CEXP, the Community and third-party units remain legally distinct.",
+    "Additional natural persons found only in unreviewed pleadings remain subject to the person-admission/privacy gate."
+  ],
+  "p0_open_evidence": [
+    "AP89 eighteen-bungalow finca mapping",
+    "2008 residual-owner unit-by-unit reconstruction",
+    "later CAM/Acosta acquisitions with deed/consideration/payment/registration",
+    "2011 original powers/debt/coefficients/voting records",
+    "certified DP 1132/2018 / Rollo 1010/2018 record",
+    "2022 entity/NIF/power/finca/coefficient/vote reconciliation",
+    "71-versus-72 residual-unit discrepancy",
+    "recovery-ledger integration without double counting"
+  ],
+  "post_merge_verification": [
+    "Confirm all four new bilingual routes return 200 with exact markers.",
+    "Confirm identity pages and JSON show 187 total / 88 people / 66 organisations / 10 structures / 13 institutions / 10 proceedings.",
+    "Confirm owner-network JSON contains exactly seven AP89 claimant-owner IDs and the four-person Acosta Matos cluster.",
+    "Confirm legal-professional roster remains exactly 40 and Adriana Hernández Díaz remains classified as a procuradora, not a lawyer.",
+    "Confirm sitemap-owner-court-network.xml is declared in robots.txt.",
+    "Advance this manifest and CURRENT_UNITARY_STATE to LIVE_VERIFIED only after Pages deployment and public exact-marker readback."
+  ],
+  "supersession_rule": "After this current-main rebuild merges and verifies, stale PR #1016 should be closed as superseded rather than merged."
+}
