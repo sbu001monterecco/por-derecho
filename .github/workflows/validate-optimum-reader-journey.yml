@@ -7,6 +7,7 @@ on:
       - 'assets/optimum-reader-journey-finish-20260818.js'
       - 'assets/ricpe-filed-status-20260817.js'
       - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'assets/unitary-public-shell-20260818.js'
       - 'scripts/render_optimum_reader_journey.mjs'
       - 'archive/OPTIMUM_USER_JOURNEY_EXECUTION_PROMPT_18AUG2026.md'
   push:
@@ -16,6 +17,7 @@ on:
       - 'assets/optimum-reader-journey-finish-20260818.js'
       - 'assets/ricpe-filed-status-20260817.js'
       - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'assets/unitary-public-shell-20260818.js'
       - 'scripts/render_optimum_reader_journey.mjs'
       - 'archive/OPTIMUM_USER_JOURNEY_EXECUTION_PROMPT_18AUG2026.md'
 

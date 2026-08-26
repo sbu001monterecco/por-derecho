@@ -242,6 +242,7 @@ try {
         await page.reload({ waitUntil: 'networkidle', timeout: 60_000 });
         state.reloadBeforeOptimiser = await readState();
         await page.waitForTimeout(8_500);
+        await page.mouse.move(0, viewport.height - 1);
         state.reloadAfterOptimiser = await readState();
 
         if (viewport.width <= compactBreakpoint) {
@@ -260,6 +261,8 @@ try {
                 expanded: document.querySelector('.site-header .nav-toggle')?.getAttribute('aria-expanded') === 'true',
                 open: Boolean(nav?.classList.contains('open')),
                 accountabilityVisible: Boolean(accountability && rect && rect.width > 0 && rect.height > 0),
+                accountabilityTargetWidth: Math.round(rect?.width || 0),
+                accountabilityTargetHeight: Math.round(rect?.height || 0),
                 accountabilityWithinViewport: Boolean(
                   rect
                   && rect.left >= -2

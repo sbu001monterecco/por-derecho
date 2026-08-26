@@ -1,7 +1,7 @@
 (()=>{
   'use strict';
   const d=document;
-  const VERSION='20260823a';
+  const VERSION='20260826a';
   if(window.PorDerechoUnitaryShell?.version===VERSION){window.PorDerechoUnitaryShell.init?.();return;}
   const script=d.currentScript;
   const assetBase=script?new URL('.',script.src):new URL('/por-derecho/assets/',location.origin);
@@ -9,9 +9,9 @@
   const lang=((d.documentElement.lang||'').toLowerCase().startsWith('es')||location.pathname.includes('/es/'))?'es':'en';
   const isEs=lang==='es';
   const strings=isEs?{
-    case:'Caso',search:'Buscar',caseLong:'Sala de control',searchLong:'Buscar en el sitio',evidence:'Prueba',institutions:'Instituciones',proceedings:'Procedimientos',updates:'Actualizaciones',about:'Por Derecho',openControl:'Abrir sala de control',gateway:'Una sola puerta para leer el caso como sistema: hechos, prueba, preguntas abiertas, responsables de respuesta y qué podría cambiar la interpretación.',count:n=>`${n} resultado${n===1?'':'s'}`,empty:'No hay coincidencias en el índice controlado. Pruebe un nombre, fecha, procedimiento, finca o importe.'
+    case:'Caso',search:'Buscar',caseLong:'Sala de control',searchLong:'Buscar en el sitio',evidence:'Prueba',institutions:'Instituciones',accountability:'AC y Juez',proceedings:'Procedimientos',updates:'Actualizaciones',about:'Por Derecho',openControl:'Abrir sala de control',gateway:'Una sola puerta para leer el caso como sistema: hechos, prueba, preguntas abiertas, responsables de respuesta y qué podría cambiar la interpretación.',count:n=>`${n} resultado${n===1?'':'s'}`,empty:'No hay coincidencias en el índice controlado. Pruebe un nombre, fecha, procedimiento, finca o importe.'
   }:{
-    case:'Case',search:'Search',caseLong:'Case control room',searchLong:'Search the site',evidence:'Evidence',institutions:'Institutions',proceedings:'Proceedings',updates:'Updates',about:'Por Derecho',openControl:'Open case control room',gateway:'One door into the case as a system: facts, evidence, open questions, answer-holders and what could change the interpretation.',count:n=>`${n} result${n===1?'':'s'}`,empty:'No match in the controlled index. Try a name, date, proceeding, property number or amount.'
+    case:'Case',search:'Search',caseLong:'Case control room',searchLong:'Search the site',evidence:'Evidence',institutions:'Institutions',accountability:'AC & Judge',proceedings:'Proceedings',updates:'Updates',about:'Por Derecho',openControl:'Open case control room',gateway:'One door into the case as a system: facts, evidence, open questions, answer-holders and what could change the interpretation.',count:n=>`${n} result${n===1?'':'s'}`,empty:'No match in the controlled index. Try a name, date, proceeding, property number or amount.'
   };
   const urls={
     control:new URL(isEs?'es/sala-control-caso/':'en/case-control-room/',projectRoot).href,
@@ -42,9 +42,9 @@
   };
   const simplifyHomeNav=()=>{
     if(!isHome())return;
-    const nav=d.querySelector('#main-nav.main-nav,.main-nav#main-nav');if(!nav||nav.dataset.psrConsolidatedNav==='true')return;
+    const nav=d.querySelector('#main-nav.main-nav,.main-nav#main-nav');if(!nav||(nav.dataset.psrConsolidatedNav==='true'&&nav.querySelector('.nav-accountability')))return;
     nav.dataset.psrConsolidatedNav='true';
-    nav.innerHTML=`<a class="psr-nav-primary" href="${urls.control}">${strings.case}</a><a class="psr-nav-evidence" href="#record">${strings.evidence}</a><a class="psr-nav-institutions" href="#institutional-map">${strings.institutions}</a><a href="${urls.proceedings}">${strings.proceedings}</a><a href="${urls.updates}">${strings.updates}</a><a href="${urls.about}">${strings.about}</a><a class="psr-nav-search" href="${urls.search}">${strings.search}</a><a class="language-link" href="${urls.other}" hreflang="${isEs?'en':'es'}">${isEs?'EN':'ES'}</a>`;
+    nav.innerHTML=`<a class="psr-nav-primary" href="${urls.control}">${strings.case}</a><a class="psr-nav-evidence" href="#record">${strings.evidence}</a><a class="psr-nav-institutions" href="#institutional-map">${strings.institutions}</a><a class="nav-accountability" href="${isEs?'#institutional-accountability-12aug':'#institutional-accountability-12aug-en'}">${strings.accountability}</a><a href="${urls.proceedings}">${strings.proceedings}</a><a href="${urls.updates}">${strings.updates}</a><a href="${urls.about}">${strings.about}</a><a class="psr-nav-search" href="${urls.search}">${strings.search}</a><a class="language-link" href="${urls.other}" hreflang="${isEs?'en':'es'}">${isEs?'EN':'ES'}</a>`;
     if(!d.querySelector('.psr-home-control-gateway')){
       const gateway=d.createElement('aside');gateway.className='psr-home-control-gateway';gateway.setAttribute('aria-label',strings.caseLong);
       gateway.innerHTML=`<div class="shell psr-gateway-inner"><p><strong>${strings.caseLong}.</strong> ${strings.gateway}</p><a href="${urls.control}">${strings.openControl} →</a></div>`;
