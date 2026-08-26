@@ -1,0 +1,36 @@
+name: Validate owner perimeter classification
+
+on:
+  pull_request:
+    paths:
+      - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
+      - 'assets/owner-perimeter-tokens.css'
+      - 'archive/SUN_PARK_OWNER_PERIMETER_CLASSIFICATION_PROTOCOL_26AUG2026.md'
+      - 'scripts/validate_owner_perimeter_classification.py'
+      - '.github/workflows/validate-owner-perimeter-classification.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
+      - 'assets/owner-perimeter-tokens.css'
+      - 'archive/SUN_PARK_OWNER_PERIMETER_CLASSIFICATION_PROTOCOL_26AUG2026.md'
+      - 'scripts/validate_owner_perimeter_classification.py'
+      - '.github/workflows/validate-owner-perimeter-classification.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Validate owner perimeter classification
+        run: python3 scripts/validate_owner_perimeter_classification.py
+      - name: Validate JSON syntax
+        run: python3 -m json.tool assets/data/sun-park-owner-perimeter-classification-v1.json >/dev/null

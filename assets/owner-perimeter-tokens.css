@@ -1,0 +1,40 @@
+:root {
+  --pd-perimeter-our-owner: #2563eb;
+  --pd-perimeter-our-advisers: #15803d;
+  --pd-perimeter-mm-core: #b91c1c;
+  --pd-perimeter-mm-wider: #dc2626;
+  --pd-perimeter-other-minority: #b45309;
+  --pd-perimeter-lpb-transferee-12: #7e22ce;
+  --pd-perimeter-later-cam: #c2410c;
+  --pd-perimeter-neutral-open: #64748b;
+}
+
+/*
+ * Semantic perimeter tokens only. Colour never substitutes for the text label,
+ * evidence grade, date or role. A person is not permanently assigned a colour:
+ * the displayed edge/perimeter carries the token, allowing temporal overlaps.
+ */
+[data-perimeter="OUR_OWNER_CONTROL"] { --pd-perimeter-color: var(--pd-perimeter-our-owner); }
+[data-perimeter="OUR_ADVISERS_AND_REPRESENTATIVES"] { --pd-perimeter-color: var(--pd-perimeter-our-advisers); }
+[data-perimeter="MONTELANZA_MOLINA_JUDICIAL_LITIGATION_CORE"] { --pd-perimeter-color: var(--pd-perimeter-mm-core); }
+[data-perimeter="MONTELANZA_MOLINA_WIDER_DISSIDENT_REPRESENTED_PERIMETER"] { --pd-perimeter-color: var(--pd-perimeter-mm-wider); }
+[data-perimeter="OTHER_NON_LPB_MATKATOR_MINORITY_OWNERS"] { --pd-perimeter-color: var(--pd-perimeter-other-minority); }
+[data-perimeter="LPB_POST_ACQUISITION_TRANSFEREE_OWNER_COHORT"] { --pd-perimeter-color: var(--pd-perimeter-lpb-transferee-12); }
+[data-perimeter="LATER_CAM_ACOSTA_MATOS_PERIMETER"] { --pd-perimeter-color: var(--pd-perimeter-later-cam); }
+[data-perimeter="NEUTRAL_OR_OPEN"] { --pd-perimeter-color: var(--pd-perimeter-neutral-open); }
+
+.pd-perimeter-edge,
+.pd-perimeter-chip {
+  border-color: var(--pd-perimeter-color, var(--pd-perimeter-neutral-open));
+}
+
+.pd-perimeter-chip::before {
+  content: "";
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  margin-right: .4rem;
+  border-radius: 999px;
+  background: var(--pd-perimeter-color, var(--pd-perimeter-neutral-open));
+  vertical-align: .02rem;
+}
