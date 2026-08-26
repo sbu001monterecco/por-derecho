@@ -4,8 +4,10 @@
   "control_marker": "caixabank-mortgage-swap-360-20260826",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-26T00:00:00Z",
-  "source_base": "86aa96f31f32164ed17e748da4c54a1541e08ae0",
-  "current_state": "DRAFT",
+  "published_at": "2026-08-26T09:34:00Z",
+  "source_base": "f13147b93d30a19102fb37be4e303c345c0c91b7",
+  "reconciled_main_base": "a7e37cc3ac174ab728ef6b8b6d317b338fbe1b73",
+  "current_state": "DELETION_SAFE",
   "purpose": "Preserve the reserved declarant's attributed mortgage/swap/account/default account, create a unitary actor-specific lender-liability control, and strengthen the dedicated CaixaBank ES/EN pages with arithmetic, grace-scope, successor-allocation and evidence boundaries.",
   "expected_routes": {
     "es": ["es/reclamacion-caixabank-valencia/index.html"],
@@ -13,47 +15,101 @@
   },
   "expected_source_files": [
     "archive/declarations/014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md",
+    "archive/declarations/INDEX.md",
+    "archive/declarations/README.md",
     "archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md",
     "archive/BANKING_ORIGIN_GAP_CLOSURE_LEDGER_16AUG2026.md",
     "archive/CAIXABANK_VALENCIA_PUBLIC_PAGE_CHAIN_CONTROL_16AUG2026.md",
     "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/CHATGPT_PROMPT_LIBRARY.md",
     "archive/prompts/CAIXABANK_MORTGAGE_SWAP_LENDER_LIABILITY_360_PROMPT_26AUG2026.md",
+    "research/lender-of-record-liability/SOURCE-MANIFEST.md",
+    "research/lender-of-record-liability/data/actors.json",
+    "research/lender-of-record-liability/data/instruments.json",
+    "research/lender-of-record-liability/data/knowledge-events.json",
+    "research/lender-of-record-liability/data/manifest.json",
+    "research/lender-of-record-liability/data/proceedings.json",
+    "research/lender-of-record-liability/data/sources.json",
+    "research/lender-of-record-liability/data/transfers.json",
+    "research/lender-of-record-liability/validate.py",
     "scripts/validate_caixabank_mortgage_360.py",
-    "docs/deletion-audits/2026-08-26-caixabank-mortgage-swap-360-thread.md"
+    "docs/deletion-audits/2026-08-26-caixabank-mortgage-swap-360-thread.md",
+    "docs/deletion-audits/README.md",
+    "sitemap-banking-recovery.xml",
+    "assets/caixabank-valencia-claim-navigation-20260816.js",
+    "assets/site-base-20260819.js"
   ],
   "controlling_boundaries": [
     "Gil's instruction proves attribution and preservation direction, not the reserved declarant's word-for-word personal adoption.",
     "Two reported approximately EUR 55,000 sales total approximately EUR 110,000 gross, not EUR 210,000.",
+    "The separate internal LPB ledger records EUR 60,000 and EUR 59,000 (EUR 119,000 gross); neither source layer proves net or freely available cash without native evidence.",
     "Grace is not assumed to cover interest, swap settlements or charges.",
+    "The 8.35% figure is a conditional low-rate illustration, not a constant rate or TAE; the located second-mortgage deed states a 3.717% TAE.",
+    "No current proof establishes secret Banco de España rate foreknowledge or that swap receipts replaced the lender's accounting, capital or reserve duties.",
     "One economic ledger does not create one cause of action or automatic joint/successor liability.",
+    "Corporate succession Caja Insular to BFA to Bankia to CaixaBank remains separate from the later mortgage-asset chain Bankia to SAREB to PH122 to CAM; Haya is a servicer/interlocutor, not a proved holder.",
     "The Valencia claim is pending and contested; liability and quantum are not adjudicated.",
     "No native audio, full transcript, private account identifiers or private correspondence is published."
   ],
   "deletions": [],
-  "pull_request": null,
-  "merge_sha": null,
-  "deployment_evidence": null,
+  "remote_branch": "codex/caixabank-mortgage-360-20260826",
+  "remote_snapshot_commit": "e89256d211330834bbd602ee3ed0445c4a4ba75f",
+  "remote_branch_head": "5b89310d250bc94b882bd45214ca066eb215ee5d",
+  "published_tree_sha": "04f40a4d5eaa7d3b8d2e434022fde3a31af78288",
+  "pull_request": {
+    "number": 1054,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1054",
+    "state": "MERGED"
+  },
+  "merge_sha": "4707ac8bad07c17d0bf47774e7d96f7145e7336b",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "status": "LIVE_VERIFIED",
+    "verification_query": "verify=4707ac8b-final",
+    "es_sha256": "9fc8bb6e3becb3a8f19ecde21042d0f880c7d81e3ea0a0d7afb8e1e747ed8fe7",
+    "en_sha256": "e5610881b24f81d9d8f0aec9ee3594e288fc9da9c7da4bb56cffaf9af8f952ca"
+  },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/reclamacion-caixabank-valencia/",
     "https://sbu001monterecco.github.io/por-derecho/en/caixabank-valencia-claim/"
   ],
-  "live_verification_evidence": null,
+  "live_verification_evidence": [
+    "ES and EN returned HTTP 200.",
+    "Each live route was byte-for-byte identical to its validated repository HTML file.",
+    "ES markers: una sola conciliación 360; El 8,35 % no fue una tasa constante; S1/V2; Caja Insular; BFA; Bankia; CaixaBank; Actualizado el 26 de agosto de 2026.",
+    "EN markers: one 360 reconciliation; 8.35% was not a constant rate; S1/V2; Caja Insular; BFA; Bankia; CaixaBank; Updated 26 August 2026."
+  ],
   "deletion_record": {
-    "status": "NOT_DELETION_SAFE",
-    "reason": "Local validation passed, but public push was blocked by the publication-risk gate pending explicit informed approval for the attributed declaration, named-lender allegations, financial/evidentiary derivatives and public GitHub/Pages destination. No push, PR, merge or deployment occurred.",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "reason": "The authorized package is committed, published through merged PR 1054, deployed and verified bilingually at the exact recorded content hashes. ME-091/ME-092 and other primary-evidence gaps remain open and are not implied complete.",
     "email_sent": false,
     "gmail_draft_created": false
   },
   "validation": {
-    "status": "LOCAL_GREEN_PUBLICATION_BLOCKED",
-    "required": [
+    "status": "PASSED",
+    "evidence": [
+      "CaixaBank 360 and ES/EN parity validator passed.",
+      "Lender structured-data validator passed.",
+      "Valencia chronology, repository preservation, publication integrity, audience experience, private-source/privacy and mission-critical gates passed.",
+      "Both live route files matched the validated repository HTML byte for byte at the recorded SHA-256 values."
+    ],
+    "completed": [
       "scripts/validate_caixabank_mortgage_360.py",
+      "research/lender-of-record-liability/validate.py",
       "scripts/validate_valencia_hearing_status.py",
       "scripts/validate_repository_preservation.py",
       "scripts/validate_publication_integrity.py",
       "scripts/validate_audience_experience.py",
-      "HTML and JSON syntax checks",
-      "exact-SHA Pages deployment and ES/EN live-marker readback"
-    ]
+      "scripts/validate_private_source_statement_osint_governance.py",
+      "scripts/validate_mission_critical_repo.py",
+      "HTML, XML, JavaScript and JSON syntax checks",
+      "git diff --check",
+      "exact-content ES/EN GitHub Pages readback"
+    ],
+    "audience_counts": {
+      "html_pages": 490,
+      "internal_links": 6408,
+      "public_files": 1085
+    }
   }
 }
