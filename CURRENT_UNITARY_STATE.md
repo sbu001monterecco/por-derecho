@@ -1,10 +1,9 @@
 # CURRENT UNITARY STATE — Project Sun Rock / Por Derecho
 
 **Control:** `PD-UNITARY-STATE-20260825-01`  
-**Status:** `LIVE_VERIFIED`  
-**Verified:** 25 August 2026 at 23:56:02 UTC  
-**Publication merge:** `c43e518150e9b8535b8829971d7cd36045c99b5f`  
-**Verification fix/main SHA:** `4088f7ffff80df788137ce91328b11fe3de6b563`  
+**Status:** `PREPARED_PENDING_MERGE_AND_LIVE_READBACK`  
+**Prepared:** 26 August 2026  
+**Current-main baseline at rebuild:** `5e3b95b286ded297c02302e53ed9d2822b5eca0b`  
 **Machine-readable authority:** `ops/CURRENT_UNITARY_STATE.json`
 
 This file separates four questions that had drifted together:
@@ -16,34 +15,27 @@ This file separates four questions that had drifted together:
 
 A successful deployment is not automatically an exact-content verification. A governance-only or deletion-closeout commit may advance `main` without changing a reader-facing allegation or merits proposition.
 
-## Verified repository and public state
+## Last positively verified unitary public state
 
-- PR #1031 merged the synchronized control plane at `c43e518150e9b8535b8829971d7cd36045c99b5f`.
-- GitHub Pages deployment run `32912074201` / #1119 completed successfully against that publication merge.
-- The first readback located every required public route and asset but produced one false negative because it searched for pretty-printed JSON whitespace.
-- PR #1038 replaced that substring test with structured JSON validation and merged at `4088f7ffff80df788137ce91328b11fe3de6b563`.
-- Main-branch verification run `32912919872`, job `98010526784`, completed successfully and verified:
-  - Spanish and English identity routes;
-  - Spanish and English update routes;
-  - the structured unitary-state JSON and complete identity denominator;
-  - the material-updates JSON;
-  - the unitary-control-plane sitemap; and
-  - the robots declaration.
+The prior synchronized unitary control plane was live verified at `4088f7ffff80df788137ce91328b11fe3de6b563` through workflow run `32912919872`. That historical verification remains valid for that release. The present owner/court-party rebuild is a later source candidate and is not called live until merge, Pages deployment and exact-marker readback complete.
 
-Repository main, Pages deployment and exact public readback remain separately recorded facts.
-
-## Canonical identity denominator
+## Canonical identity denominator in this candidate
 
 | Class | Count |
 |---|---:|
-| People | 86 |
+| People | 88 |
 | Organisations | 66 |
 | Structures | 10 |
 | Institutions | 13 |
 | Proceedings | 10 |
-| **Total** | **185** |
+| **Total** | **187** |
 
-These counts now control in the canonical JSON, both public pages, metadata, JSON-LD and no-JavaScript fallbacks. Archive backfill remains open. Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.
+The two new identities are:
+
+- `PD-SP-P-0087` — **Gerardo Zacarías Acosta Matos**;
+- `PD-SP-P-0088` — **Javier Acosta Matos**.
+
+They are added because the owner/court-party reconstruction requires their later corporate/Community capacities to be distinguished from José Daniel Acosta Matos, Laura Patricia Acosta Matos and from Gerardo Nicanor Acosta Armas. Family/business clustering is an analytical navigation aid only; it does not transfer knowledge, intention, instruction, benefit or liability.
 
 ## Unitary legal and economic rule
 
@@ -55,39 +47,69 @@ Every substantive analysis must preserve this chain without collapsing the legal
 
 LPB alone was the debtor in Concurso 36/2012. Matkator, CEXP, Aweswell, Pink, other owners, extraconcursal units and the hotel-wide operation remain separately analysed.
 
+## Owner/court-party network now rebuilt on current main
+
+The stale PR #1016 delta has been reimplemented additively on a branch cut from current `main`, without importing its stale professional-register assumptions.
+
+The controlling new dataset is:
+
+`assets/data/non-lpb-matkator-owner-court-network-v1.json`
+
+It preserves seven distinct layers:
+
+1. **AP 89/2014 / JV 1260/2011:** exactly seven claimant-owners holding eighteen bungalows within that case;
+2. **wider Montelanza/Molina residual-owner perimeter:** separately graded from the AP89 claimants;
+3. **2011 Community organ / representation / debt / voting layer**;
+4. **2016 stated representation-continuity layer**;
+5. **2017–2018 Pamalexsha / security / access / CAM layer**;
+6. **4 February 2022 Acosta Matos project / representation / debtor-balance layer**; and
+7. **later Acosta Matos family/business cluster**, keeping each person and company legally distinct.
+
+The AP89 adverse result is expressly preserved. The seven claimants are not treated as the complete minority-owner universe.
+
+### Individualised propositions
+
+- **Celia Guillén Pérez (`PD-SP-P-0027`)** — the complainant-side reconstruction attributes a specific voting position at the 2 February 2011 meeting. This is a party proposition, not a judicial finding of intention or culpability.
+- **Manuel Molina Climent (`PD-SP-P-0031`)** — the 4 February 2022 minutes place him present and record that, at his request, the origin of debtor balances was explained. Requesting an explanation is not creating, independently verifying or originally approving the debt.
+
 ## Current procedural checkpoints
 
 - **RPL 2523/2025:** the last located signed record scheduled deliberation, vote and decision for 4 June 2026. A later merits decision, service record and finality or pending-remedy certification remain not located in the controlled corpus. `Not located` does not mean nonexistent.
 - **Valencia ORD 1859/2023-9:** the controlled record fixes the hearing for 28 January 2027 at 10:00, subject to any later signed superseding act.
-- **Owner/court network:** AP 89/2014 identifies seven JV 1260/2011 claimant-owners holding eighteen bungalows. That core must remain separate from the wider Montelanza/Molina residual-owner and Community perimeter.
+- **Owner/court network:** AP 89/2014 identifies seven JV 1260/2011 claimant-owners holding eighteen bungalows. That core remains separate from the wider Montelanza/Molina residual-owner and Community perimeter.
 - **Prescription and recovery:** there is no single limitation clock. Criminal, civil, special-caducity, insolvency-administrator and State/judicial-damages routes require claim-specific dates, acts and counsel review.
 
-## P0 evidence and implementation programme
+## Finite P0 evidence programme
 
-1. Rebuild the unique PR #1016 owner/court-party delta on current `main`, not by stale wholesale merge.
-2. Map the AP 89/2014 eighteen bungalows to exact fincas.
-3. Reconstruct the 2008 residual ownership unit by unit and trace later transfers into CAM or other vehicles.
-4. Authenticate the original 2011 powers, debt schedules and voting ledger.
+1. Map the AP 89/2014 eighteen bungalows to exact certified fincas and owners at each material date.
+2. Reconstruct the complete post-2008 residual ownership perimeter unit by unit and preserve any 71-versus-72 source discrepancy instead of forcing a denominator.
+3. Trace every later acquisition by CAM/Acosta Matos or connected vehicles from prior non-LPB/Matkator owners: deed, consideration, payment and registration.
+4. Authenticate the original February and June 2011 powers, attendance, debt schedules, coefficients and voting-entitlement records.
 5. Obtain the complete certified DP 1132/2018 / Rollo 1010/2018 record.
-6. Reconcile every 2022 Acosta Matos company, NIF, power, finca, coefficient and vote.
+6. Reconcile every 4 February 2022 Acosta Matos company, NIF, power, finca, coefficient and vote.
 7. Locate and authenticate the later RPL merits/service/finality record.
 8. Obtain the certified complete Concurso 36/2012 docket and transmitted-record denominator.
 9. Build the reproducible bridge from definitive credit through the EUR 13,168,082.02 threshold/consideration, the EUR 400,000 line, proceeds, fees, creditor payments and any surplus.
 10. Build claimant-specific asset, income, counterfactual, damage, remedy and no-double-recovery schedules.
 
+## Current public candidate routes
+
+- Spanish owner/party network: `/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/`
+- English owner/party network: `/en/matter-identity-registry/non-lpb-matkator-owner-network/`
+- Spanish JV1260/AP89 bridge: `/es/jv1260-ap89-continuidad-cam/`
+- English JV1260/AP89 bridge: `/en/jv1260-ap89-cam-continuity/`
+
+The identity-register pages are synchronized in source to the 187 / 88 / 66 / 10 / 13 / 10 denominator and link directly to the owner network. Public status remains pending until post-merge verification.
+
 ## Pull-request discipline
 
-Thirty-six open PRs were reported in the verified snapshot. Do not merge stale PRs wholesale.
-
-PR #1016 contains a valuable source-graded owner/court-party delta. It must be rebuilt or extracted on current `main`, preserving the professional-identity assignments, the priority-actions programme, prescription/recovery controls, current-counsel privacy, adverse evidence and all current governance controls.
-
-A parallel operational-truth PR is a separate reconciliation candidate and must not substitute for or downgrade this verified specialist state.
+Do not merge stale PRs wholesale. The unique owner/court-party delta from PR #1016 has now been rebuilt on current `main`; after this current-main rebuild merges and verifies, PR #1016 should be closed as superseded.
 
 See `ops/PR_RECONCILIATION_LEDGER.json`.
 
 ## Next implementation sequence
 
-1. Rebuild and publish the owner/court-party network from current `main`.
+1. Merge and live-verify this current-main owner/court-party rebuild; close/supersede stale PR #1016.
 2. Add one source–proposition register and one platform-recovery/no-double-counting ledger.
 3. Publish bilingual unitary-status and recovery-denominator pages from those data.
 4. Migrate core reader facts from stacked runtime correction loaders toward generated static HTML while preserving every existing route and protected first-read section.
