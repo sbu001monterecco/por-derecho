@@ -318,3 +318,91 @@ truth/fact, private-mail evidence task and named-person/entity scan:
 - Run `python3 scripts/validate_private_source_statement_osint_governance.py
   --base <revision>` for the complete proposed diff. Its GitHub workflow remains
   advisory/shadow-mode until expressly promoted under the enforcement rules.
+
+## 9. Canonical Actors, Entities and Proceedings Registry (`CAEPR`)
+
+Read and apply
+`.github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md`
+for every `^` rendering, `all is^` confirmation, caret-coverage audit or change
+to a CAEPR identity/proceeding record.
+
+The existing federated matter-identity system is named the **Canonical Actors,
+Entities and Proceedings Registry (`CAEPR`)**. It is not a replacement register.
+Its controlling components are:
+
+- `assets/data/matter-identity-registry-v1.json` and its person, organisation,
+  professional, structure, institution and proceeding parts;
+- `assets/data/matter-identity-operational-control-v1.json`;
+- `ops/CANONICAL_ENTITY_NAMES.json`; and
+- `archive/PROCEEDINGS_MASTER_REGISTER_PROTOCOL.md` together with
+  `archive/PROCEEDINGS_MASTER_REGISTER.csv`.
+
+Use the literal caret marker **`^`** immediately after a display name or
+proceeding label to mean only:
+
+> this person, entity, institution or proceeding has been positively identified,
+> reconciled to one immutable CAEPR record and cleared of any material unresolved
+> identity collision for the stated context.
+
+Examples: `CaixaBank, S.A.^`, `Francisco de Borja Rodríguez-Batllori Laffitte^`
+and `Concurso 36/2012^`.
+
+The marker confirms canonical identity resolution only. It does **not** certify
+an allegation, role, act, omission, knowledge, intention, relationship,
+participation, liability, current office, procedural status, outcome, finality
+or source authenticity. Those propositions retain their separate evidence and
+status controls.
+
+### Caret eligibility and rendering
+
+- A person or institution is `^`-eligible only when the exact identity meets the
+  repository identity-admission threshold and resolves to one immutable CAEPR ID.
+- An organisation is `^`-eligible only when the exact legal person, or a clearly
+  labelled non-legal perimeter/brand where that is the intended object, is
+  resolved. A record carrying an unresolved exact-entity or legal-form status is
+  not `^`-eligible for an exact-legal-person claim.
+- A proceeding is `^`-eligible only when the organ, reference and legally useful
+  identity are sufficiently established and reconciled with the Proceedings
+  Master Register. A registration receipt, draft, transmission, filename,
+  internal control number or unresolved candidate reference is not upgraded to a
+  proceeding by adding `^`.
+- Conceptual structures, alleged perimeters, events, evidence objects and source
+  literals do not receive `^` unless the text clearly identifies the distinct
+  CAEPR object being marked and that object satisfies its own eligibility rule.
+- Do not alter quotations, official titles, source literals, filenames, search
+  strings, URLs or formal citations by inserting the marker. Put the canonical
+  marked label outside the quotation or source literal where reconciliation is
+  useful.
+- In a table, dossier or narrative, the marker should appear on the first
+  identity-sensitive reference or wherever ambiguity could recur. A visible
+  legend must define `^`; machine-readable surfaces should also carry the
+  immutable CAEPR ID and resolution status rather than relying on punctuation
+  alone.
+- Absence of `^` means only that canonical identification has not been asserted
+  in that presentation. It does not imply that the object is fictitious,
+  unrelated or unidentified in every repository source.
+
+### Prompt command: `confirm all is^`
+
+When Gil Marer writes **`confirm all is^`**, treat it as a verification command,
+not as a requested conclusion. For the expressly stated scope—or, if the prompt
+does not narrow it, the complete current deliverable and every distinct named
+person, entity, institution and proceeding on which it relies—perform all of the
+following:
+
+1. enumerate and deduplicate the in-scope named references;
+2. reconcile names, aliases, former names, spelling variants, capacities and
+   proceeding references to immutable CAEPR IDs;
+3. test every candidate against the applicable caret-eligibility threshold and
+   current correction/source controls;
+4. apply or retain `^` only for eligible resolved objects, without changing the
+   legal or evidential meaning of quoted source text;
+5. report the denominator, the number resolved and marked, and every unresolved,
+   ambiguous, duplicate, stale or missing record; and
+6. refuse an unqualified `all is^` confirmation while any in-scope exception
+   remains.
+
+The required result format is: **scope; unique-reference denominator; `^` count;
+coverage percentage; exceptions with reason and next source needed**. A truthful
+partial result is `PARTIAL — NOT ALL IS^`; complete confirmation is permitted
+only when the exception count is zero. Never add carets merely to reach 100%.
