@@ -1,0 +1,95 @@
+{
+  "schema": "por-derecho-fge-745-parallel-action-dashboard/v1",
+  "control_date": "2026-08-26",
+  "expediente": "Exp. Gub. 745/2026",
+  "activation_authority": "Gil Marer instructed immediate full-force preparation and activation of all compatible options in parallel.",
+  "external_action_boundary": {
+    "email_sent_by_this_update": false,
+    "administrative_filing_made_by_this_update": false,
+    "court_filing_made_by_this_update": false,
+    "status_rule": "Preparation or activation is never evidence of filing, delivery, receipt, joinder or decision."
+  },
+  "merits_election": {
+    "prepare_in_parallel": [
+      "recurso potestativo de reposicion",
+      "direct contentious-administrative review"
+    ],
+    "file_simultaneously": false,
+    "control": "Where Article 123.2 Law 39/2015 applies, filing reconsideration prevents filing the contentious appeal until reconsideration is expressly resolved or deemed dismissed.",
+    "decision_gate": "REQUIRED BEFORE EXTERNAL MERITS FILING"
+  },
+  "actions": [
+    {
+      "id": "FGE745-A",
+      "action": "Optional reconsideration",
+      "status": "PREPARE_NOW_MERITS_ELECTION_REQUIRED",
+      "nominal_period": "one month",
+      "trigger": "notification on 2026-08-26",
+      "deadline_control": "verify exact final day and applicable calendars before filing",
+      "external_filing_status": "NOT_FILED"
+    },
+    {
+      "id": "FGE745-B",
+      "action": "Direct contentious-administrative review",
+      "status": "PREPARE_NOW_ALTERNATIVE_MERITS_ROUTE",
+      "nominal_period": "two months",
+      "trigger": "notification on 2026-08-26",
+      "deadline_control": "verify Article 46 and Article 128 LJCA computation before filing",
+      "external_filing_status": "NOT_FILED"
+    },
+    {
+      "id": "FGE745-C",
+      "action": "Ad cautelam clarification/subsanacion",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_SOURCE_ASSEMBLY",
+      "suspends_merits_deadline": false,
+      "external_filing_status": "NOT_FILED"
+    },
+    {
+      "id": "FGE745-D",
+      "action": "Full-file access and copies",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_SOURCE_ASSEMBLY",
+      "suspends_merits_deadline": false,
+      "external_filing_status": "NOT_FILED"
+    },
+    {
+      "id": "FGE745-E",
+      "action": "Native machine-readable Decree and verification information",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_TECHNICAL_PRESERVATION",
+      "suspends_merits_deadline": false,
+      "external_send_status": "NOT_SENT"
+    },
+    {
+      "id": "FGE745-F",
+      "action": "Finite evidence preservation",
+      "status": "ACTIVATED_FOR_DRAFTING_AND_CUSTODIAN_MAPPING",
+      "suspends_merits_deadline": false,
+      "external_send_status": "NOT_SENT"
+    }
+  ],
+  "status_vocabulary": [
+    "PREPARE",
+    "READY_FOR_LEGAL_FACTUAL_REVIEW",
+    "AUTHORISED",
+    "FILED_OR_SENT",
+    "DELIVERED",
+    "RECEIVED",
+    "JOINED",
+    "DECIDED",
+    "ESCALATE_OR_CLOSE"
+  ],
+  "same_day_notification_context": {
+    "track": "Government of the Canary Islands transparency/FEDER routing",
+    "file": "16/2026-0825121919",
+    "made_available": "2026-08-26T13:07:45+01:00",
+    "access_recorded": "2026-08-26T14:09:13+01:00",
+    "relationship_to_fge_745": "separate concurrent evidence-development track; not a merits component and not deadline-suspensive",
+    "evidential_limit": "routing/access does not prove an award, payment, use of funds, compliance failure or irregularity"
+  },
+  "public_records": [
+    "FGE_745_IMMEDIATE_PARALLEL_ACTION_ACTIVATION_26AUG2026.md",
+    "FISCALIA_INSPECCION_EXP_GUB_745_2026_RESPONSE_AND_ACTIONS_26AUG2026.md",
+    "/es/fiscalia-inspeccion-exp-gub-745-2026/",
+    "/en/public-prosecution-inspection-exp-gub-745-2026/"
+  ],
+  "privacy": "Native sources, private notification identifiers, security credentials, unsent correspondence and privileged strategy remain outside the public repository."
+}
