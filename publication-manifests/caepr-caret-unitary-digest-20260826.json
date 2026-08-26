@@ -1,0 +1,36 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "caepr-caret-unitary-digest-20260826",
+  "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
+  "control_date": "2026-08-26",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "prepared_pending_merge",
+  "owner": "Por Derecho / Project Sun Rock",
+  "expected_routes": {
+    "en": ["en/caepr-caret-unitary-digest/index.html"],
+    "es": ["es/verificacion-caepr-caret-digest-unitario/index.html"]
+  },
+  "source_main_sha": "f130aba11d0dded3a925e206885a7e9b29e70d75",
+  "audit_record": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md",
+  "machine_state": "assets/data/caepr-caret-unitary-digest-v1.json",
+  "sitemap": "sitemap-caepr-caret.xml",
+  "scope_result": {
+    "denominator": 24,
+    "caret_confirmed": 19,
+    "caret_pending": 5,
+    "coverage": "19/24",
+    "verdict": "PARTIAL — NOT ALL IS^"
+  },
+  "boundaries": [
+    "The caret confirms canonical identity resolution for the stated context only.",
+    "No caret proves conduct, role on a date, knowledge, intent, relationship, liability, current status, procedural outcome or source authenticity.",
+    "No unresolved object is marked merely to reach 100 percent coverage.",
+    "Concepts, assets, events, documents, source aliases and generic roles remain outside the eligible denominator."
+  ],
+  "post_merge_requirements": [
+    "Confirm the merge SHA on main.",
+    "Confirm successful GitHub Pages deployment for that SHA.",
+    "Read back both bilingual routes and their linked CAEPR anchors.",
+    "Promote the manifest only after exact public verification."
+  ]
+}
