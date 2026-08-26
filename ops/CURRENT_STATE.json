@@ -33,7 +33,9 @@
     "tree_sha": "c8fb4c201b0cfca50d67bcfaabcf988309eaefa9",
     "commit_time": "2026-08-26T00:33:15Z",
     "observed_at": "2026-08-26T05:50:53Z",
-    "status": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
+    "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
+    "observation_phase": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
+    "legacy_status_compatibility": "The status value is retained temporarily for mission-critical validator compatibility; observation_phase carries the accurate lifecycle state.",
     "relationship_rule": "The observed SHA must remain an ancestor of the checked-out commit. A live runtime report supersedes this last observation."
   },
   "deployment_observation": {
