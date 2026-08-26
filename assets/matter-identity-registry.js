@@ -121,7 +121,10 @@
   function buildOperationalRecords(baseRecords) {
     const byId = new Map(baseRecords.map(record => [record.id, record]));
     const actionMap = new Map();
-    const unresolvedMap = new Map((operational.exact_identity_queue || []).map(item => [item.id, item]));
+    const unresolvedMap = new Map([
+      ...(operational.exact_identity_queue || []),
+      ...(operational.proceeding_identity_queue || [])
+    ].map(item => [item.id, item]));
     const nodeByKey = new Map((graph.nodes || []).map(node => [node.key, node]));
     const graphMap = new Map();
 
@@ -171,8 +174,8 @@
       const graphRoute = graphNode && (graphNode[`route_${lang}`] || graphNode.route_en || graphNode.route_es);
       const route = registryRoute || graphRoute || null;
       const routeSource = registryRoute ? 'registry' : graphRoute ? 'graph' : null;
-      const resolutionKey = record.status || 'CANONICAL';
-      const unresolved = resolutionKey !== 'CANONICAL';
+      const resolutionKey = record.identity_resolution || record.status || 'CANONICAL';
+      const unresolved = !['CANONICAL', 'CARET_CONFIRMED'].includes(resolutionKey);
       const p0 = actions.some(action => action.priority === 'P0');
       const distinction = Boolean(record.not_same_as?.length);
       const openQuestion = unresolvedMap.get(record.id) || null;

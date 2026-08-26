@@ -4,6 +4,8 @@ Control date: **23 August 2026**
 Scope: Concurso ordinario 36/2012 · Francisco de Borja Rodríguez-Batllori Laffitte · Aweswell Limited · LPB
 Status: **controlling repository analysis and public-source gate**
 
+> **26 August 2026 identity and quantitative overlay.** CAEPR `PD-SP-R-0005` is corrected: DP 1901/2026 is the separate private-actor/CAM documentary and admission-control route, not the civil removal/fees track. The civil proceedings now resolve separately as `PD-SP-R-0011`–`PD-SP-R-0016`; Diligencias Preliminares 459/2024 remains partial pending its exact organ and certified docket. DIP 80/2026 resolves as `PD-SP-R-0017`. The pleaded EUR 110,956.97 reconciles arithmetically but is not bank-verified or merits-adjudicated. Controlling additions: `archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md`, `archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md`, `assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json`, and `assets/data/concurso36-ac-removal-fees-production-gaps-v1.json`.
+
 Full-text publication record: `archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md`. The dedicated bilingual Autos/decisions page and 50-record redacted corpus now supply the complete located text of the two civil/insolvency tracks; this digest remains the broader analytical and non-merger control for DP 1901, DP 1956 and intake reference 22.
 
 ## 1. Controlling conclusion

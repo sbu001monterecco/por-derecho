@@ -9,6 +9,8 @@
 - Spanish analytical digest: `es/concurso-36-2012-separacion-ac-honorarios/`
 - English analytical digest: `en/insolvency-36-2012-administrator-removal-fees/`
 
+> **26 August 2026 implementation overlay.** The 50-record specialist corpus remains unchanged. Its procedural identity layer is now reconciled through `PD-SP-R-0011`–`PD-SP-R-0016`, with Diligencias Preliminares 459/2024 expressly left without a caret pending its exact court and certified docket. DP 1901/2026 (`PD-SP-R-0005`) is corrected as the separate private-actor/CAM route, not the removal or remuneration track. See `archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md`, `archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md`, and the quantitative/gap datasets under `assets/data/`.
+
 ## 1. Unitary result
 
 The repository now holds a single, source-addressable corpus of **50 complete redacted transcriptions**: **25 court/LAJ acts** and **25 party filings**. The dedicated public page displays every located Judge, Appeal Court and LAJ decision in full and links all party filings. Ten key decisions also have irreversible, image-only public PDFs.

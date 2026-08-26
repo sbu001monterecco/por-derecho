@@ -1,0 +1,133 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "ac-removal-fees-unitary-criminal-analysis-20260826",
+  "control_id": "PD-AC-REM-FEES-UNITARY-20260826-01",
+  "control_date": "2026-08-26",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "prepared",
+  "owner": "Por Derecho / Project Sun Rock",
+  "repository": "sbu001monterecco/por-derecho",
+  "source_main_sha": "048bb4e419a6b36e279e3e7d5792ebafb008cfe5",
+  "purpose": "Publish one non-fragmented, reverse-engineered removal/remuneration thread that joins the initiating pleadings, contrary positions, Judge/Appeal Court/LAJ acts, procedural consequences, appeals, criminal relevance and production gaps without merging legally distinct proceedings or converting allegations into findings.",
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012-autos-resoluciones/index.html",
+      "es/hipotesis-criminal-unitaria-2011-presente/index.html",
+      "es/registro-identidad-materia/index.html",
+      "es/dp-1956-2026/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012-orders-decisions/index.html",
+      "en/unitary-criminal-hypothesis-2011-present/index.html",
+      "en/matter-identity-registry/index.html",
+      "en/dp-1956-2026/index.html"
+    ]
+  },
+  "live_urls_to_verify": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/#analisis-unitario",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/#unitary-analysis",
+    "https://sbu001monterecco.github.io/por-derecho/es/hipotesis-criminal-unitaria-2011-presente/#hilo-separacion-honorarios-ac",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-hypothesis-2011-present/#ac-removal-fees-thread",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/concurso36-ac-removal-fees-production-gaps-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md"
+  ],
+  "corpus_control": {
+    "public_redacted_records": 50,
+    "court_and_laj_records": 25,
+    "party_filings": 25,
+    "public_redacted_decision_pdfs": 10,
+    "complete_certified_docket": false,
+    "source_originals_published": false,
+    "thread_model": "NOTICE_RESPONSE_DECISION_APPEAL_GAP",
+    "court_merits_boundary": "FIRST_INSTANCE_DISMISSALS_ON_STANDING; REMUNERATION LEGALITY_AND_QUANTUM NOT DECIDED; R09 LIMITED_EX_OFFICIO_NO_INDICATIONS_OBSERVATION RETAINED AS CONTRARY EVIDENCE"
+  },
+  "identity_control": {
+    "registry_total": 194,
+    "institutions": 15,
+    "proceedings": 17,
+    "scoped_caepr_denominator": 14,
+    "caret_confirmed": 13,
+    "pending": 1,
+    "pending_record": "PD-SP-R-0016 — Diligencias Preliminares 459/2024; exact court and certified autonomous docket not located",
+    "corrected_collision": "PD-SP-R-0005 is DP 1901/2026, the private-actor/CAM route; it is not the insolvency-administrator removal/remuneration track"
+  },
+  "quantitative_control": {
+    "pleaded_components_eur": [
+      "65217.76",
+      "9504.77",
+      "31107.46",
+      "5126.98"
+    ],
+    "pleaded_total_eur": "110956.97",
+    "arithmetic_reconciled": true,
+    "bank_verified_loss": false,
+    "judicially_decided_quantum": false
+  },
+  "non_merger_controls": [
+    "Concurso 36/2012, removal, remuneration liability, the removal appeals and the fee appeal retain separate procedural identities and effects.",
+    "DP 1901/2026 is the private-actor/CAM route; DP 1956/2026 is the Administrador Concursal/Concurso criminal route; DIP 80/2026 is professional discipline.",
+    "Handwritten daily intake reference 22 is a receipt locator until allocation evidence proves a proceeding.",
+    "Receipt is not examination; processing is not acceptance; civil or insolvency adversity is not crime; association is not knowledge, intention or agreement."
+  ],
+  "repository_assets": [
+    "archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md",
+    "archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md",
+    "archive/CONCURSO36_AC_REMUNERATION_PAYMENT_LEDGER_26AUG2026.md",
+    "archive/CONCURSO36_AC_REMOVAL_FEES_PRODUCTION_GAPS_26AUG2026.md",
+    "assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json",
+    "assets/data/concurso36-ac-removal-fees-production-gaps-v1.json",
+    "archive/PROCEEDINGS_MASTER_REGISTER.csv",
+    "assets/data/matter-identity-registry-v1.proceedings.json",
+    "assets/data/matter-identity-registry-v1.institutions.json",
+    "assets/data/matter-identity-operational-control-v1.json"
+  ],
+  "publication_boundaries": [
+    "The public corpus consists only of the controlled redacted derivatives already admitted for publication; private source originals, signatures, verification codes, personal identifiers, private contact data and unnecessary third-party data remain excluded.",
+    "The removal and remuneration applications establish party allegations, not adjudicated facts; the Administrator and insurer positions remain attributed and visible.",
+    "The first-instance standing dismissals do not establish that the challenged conduct or remuneration was lawful and do not adjudicate the pleaded EUR 110,956.97 on its merits.",
+    "R09's limited no-indications observation is retained as material contrary evidence and is not rewritten as either a full exoneration or a nullity.",
+    "The criminal thesis is an element-by-element investigative model, not an accusation, finding, or transfer of culpability through institutional or professional association.",
+    "Repository and website publication authority does not authorise email, filing, third-party contact, private-account mutation or publication of restricted evidence."
+  ],
+  "validation_required": [
+    "operational identity registry referential integrity",
+    "Concurso Autos corpus, anchors, quantitative ledger and gap-register integrity",
+    "removal/fees specialist legal-scope and privacy controls",
+    "unitary criminal reverse-engineering and non-merger controls",
+    "unitary control-plane consistency",
+    "repository preservation and publication integrity",
+    "bilingual audience and internal-link validation",
+    "desktop/mobile rendered-page inspection",
+    "post-merge exact-route and asset readback"
+  ],
+  "pre_merge_validation": {
+    "state": "STRUCTURAL_LEGAL_PRIVACY_AND_LINK_GATES_PASSED; BROWSER_RENDER_REQUIRED_IN_PR_CI",
+    "passed": [
+      "operational identity registry — 194 records, 15 open identities, 30 direct routes",
+      "Concurso Autos publication — 50 anchors, ledger arithmetic and ten production gaps",
+      "AC removal/fees specialist publication",
+      "unitary criminal reverse engineering",
+      "unitary control plane",
+      "unitary-enterprise attribution",
+      "Concurso complete-record and primary-Autos redigest",
+      "repository preservation",
+      "publication-manifest schema",
+      "audience experience — 520 HTML pages and 6,870 internal links",
+      "insolvency-perimeter and canonical-name control",
+      "mission-critical repository workflow control",
+      "JavaScript syntax, JSON syntax and diff whitespace"
+    ],
+    "browser_render": "The managed local runtime had no browser executable. The pull-request workflow installs/uses Chrome and now includes all four changed AC/Autos routes at desktop and mobile sizes; merge is barred until it passes."
+  },
+  "authority": {
+    "repository_and_website_publication": "AUTHORISED_BY_USER_IN_THREAD",
+    "emails_or_external_messages": "NOT_AUTHORISED",
+    "court_or_third_party_filings": "NOT_AUTHORISED",
+    "private_source_publication": "NOT_AUTHORISED"
+  },
+  "next_gate": "Merge only after all repository validators and bilingual render checks pass; then verify the exact affected routes and data assets at the public edge."
+}

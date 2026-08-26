@@ -2,7 +2,7 @@
   "schema": "por-derecho.matter-identity-operational-control.v1",
   "control_id": "PD-SP-IDENTITY-OPS-001",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "control_date": "2026-08-25",
+  "control_date": "2026-08-26",
   "status": "PUBLIC_OPERATIONAL_CONTROL",
   "tracker_issue": "https://github.com/sbu001monterecco/por-derecho/issues/995",
   "linked_controls": {
@@ -35,6 +35,14 @@
     "REFERENCED_LEGAL_FORM_VARIANT_UNRESOLVED": {
       "label_es": "Variante de forma jurídica no resuelta",
       "label_en": "Unresolved legal-form variant"
+    },
+    "CARET_CONFIRMED": {
+      "label_es": "Identidad procesal confirmada (^)",
+      "label_en": "Confirmed proceeding identity (^)"
+    },
+    "CARET_PENDING_EXACT_ORGAN_AND_CERTIFIED_DOCKET": {
+      "label_es": "Identidad procesal parcial; órgano e índice certificado pendientes",
+      "label_en": "Partial proceeding identity; exact court and certified docket pending"
     }
   },
   "exact_identity_queue": [
@@ -121,6 +129,23 @@
       "priority": "P1",
       "question_es": "Fijar la entidad Actyus exacta, jurisdicción, función y relación contractual con Andbank y el proyecto.",
       "question_en": "Fix the exact Actyus entity, jurisdiction, function and contractual relationship with Andbank and the project."
+    }
+  ],
+  "proceeding_identity_corrections": [
+    {
+      "id": "PD-SP-R-0005",
+      "state": "CORRECTION_PROPAGATED",
+      "question_es": "Mantener DP 1901/2026 como vía privada/CAM separada; no fusionarla con separación, honorarios, DP 1956/2026 ni la referencia diaria 22.",
+      "question_en": "Keep DP 1901/2026 as the separate private-actor/CAM lane; do not merge it with removal, remuneration, DP 1956/2026 or daily intake reference 22."
+    }
+  ],
+  "proceeding_identity_queue": [
+    {
+      "id": "PD-SP-R-0016",
+      "priority": "P0",
+      "state": "OPEN",
+      "question_es": "Obtener el índice, órgano, resolución de incoación/exhibición, acta de exhibición y cierre certificados de Diligencias Preliminares 459/2024.",
+      "question_en": "Obtain the certified court, docket, opening/exhibition order, exhibition record and closure for Preliminary Proceedings 459/2024."
     }
   ],
   "distinction_controls": [

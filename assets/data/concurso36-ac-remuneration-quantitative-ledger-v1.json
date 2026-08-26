@@ -1,0 +1,153 @@
+{
+  "schema": "por-derecho.concurso36-ac-remuneration-quantitative-ledger.v1",
+  "control_id": "PD-C36-AC-FEE-LEDGER-001",
+  "control_date": "2026-08-26",
+  "scope": "Public-safe quantitative bridge for the remuneration/civil-liability lane associated with Concurso 36/2012.",
+  "rules": [
+    "A pleaded amount is not a verified payment, loss, overpayment or judicial finding.",
+    "The four pleaded components reconcile arithmetically to EUR 110,956.97; legal entitlement, payment, loss, causation and recoverability were not adjudicated on the merits in Judgment 4/2026.",
+    "No bank-verified total is stated until the complete estate ledger, bank statements, invoices, tax records, quarterly reports and every remuneration-extension order are reconciled.",
+    "The statutory reference is the Third Transitional Provision of Law 25/2015, not the Third Additional Provision.",
+    "Contrary positions and missing underlying documents remain visible."
+  ],
+  "summary": {
+    "currency": "EUR",
+    "pleaded_total": 110956.97,
+    "pleaded_components_sum": 110956.97,
+    "arithmetic_reconciles": true,
+    "court_adjudicated_remuneration_merits": false,
+    "bank_verified_total": null,
+    "current_characterisation": "PARTY_PLEADED_AND_DISPUTED"
+  },
+  "entries": [
+    {
+      "id": "PD-C36-AC-FEE-001",
+      "period_or_date": "first six months of liquidation",
+      "category": "monthly_remuneration_rate",
+      "amount_eur": 8152.33,
+      "status": "PARTY_PLEADED_RECITING_AN_UNDERLYING_COURT_BASE",
+      "proposition": "The claim states that the requested liquidation remuneration was EUR 8,152.33 per month for the first six months.",
+      "source": "F01, page 2, paragraph 4",
+      "contrary_or_limit": "The standalone underlying remuneration approval/order is not part of this public specialist corpus.",
+      "needed_proof": "Certified remuneration request and reasoned approval order, with notification and tax treatment."
+    },
+    {
+      "id": "PD-C36-AC-FEE-002",
+      "period_or_date": "subsequent liquidation months",
+      "category": "monthly_remuneration_rate",
+      "amount_eur": 4076.13,
+      "status": "PARTY_PLEADED_RECITING_AN_UNDERLYING_COURT_BASE",
+      "proposition": "The claim states a later requested rate of EUR 4,076.13 per month.",
+      "source": "F01, page 2, paragraph 4",
+      "contrary_or_limit": "Duration, extensions, accrual, invoicing and actual payment cannot be derived from the rate alone.",
+      "needed_proof": "Every post-month-twelve extension order, invoice, tax entry and payment."
+    },
+    {
+      "id": "PD-C36-AC-FEE-003",
+      "period_or_date": "October–December 2019 payments for September–November 2019 accruals",
+      "category": "payment_occurrence",
+      "amount_eur": null,
+      "status": "ADMINISTRATOR_ASSERTED",
+      "proposition": "The Administrator's defence says those three liquidation-remuneration payments were disclosed to the court on 9 January 2020.",
+      "source": "F06, page 3, section 1.2",
+      "contrary_or_limit": "The amounts are not stated in the defence passage; cited Documents 4 and 5 are not autonomous public records in this corpus.",
+      "needed_proof": "Quarterly report, DIOR, invoices, bank debits and estate ledger entries."
+    },
+    {
+      "id": "PD-C36-AC-FEE-004",
+      "period_or_date": "ambiguous June 2020 / June 2021 period",
+      "category": "payment_nonoccurrence",
+      "amount_eur": null,
+      "status": "ADMINISTRATOR_ASSERTED",
+      "proposition": "The Administrator's defence denies payment during the period alleged by the claimant and cites an estate-bank extract.",
+      "source": "F06, page 3, section 1.3",
+      "contrary_or_limit": "The phrase 'during that period' is temporally ambiguous; cited Document 6 is not an autonomous public record in this corpus.",
+      "needed_proof": "Complete, unbroken estate-bank statements and ledger from January 2019 through June 2021."
+    },
+    {
+      "id": "PD-C36-AC-FEE-005",
+      "period_or_date": "2019-01-25",
+      "category": "invoice_or_credit_amount",
+      "amount_eur": 29208.88,
+      "status": "COMMONLY_IDENTIFIED_BUT_LEGALITY_DISPUTED",
+      "proposition": "Both sides identify EUR 29,208.88 as the amount described as interest on common-phase and arrangement remuneration; the Administrator associates it with invoice no. 6.",
+      "source": "F01, pages 2 and 18; F06, pages 3–4",
+      "contrary_or_limit": "The claimant alleges the charge was impermissible; the Administrator says default interest was legally due and disclosed. Neither position was adjudicated on the merits.",
+      "needed_proof": "Invoice no. 6, underlying remuneration orders, due dates, interest calculation, tax entry, bank payment and the 20 March/22 April 2019 report/DIOR chain."
+    },
+    {
+      "id": "PD-C36-AC-FEE-006",
+      "period_or_date": "2022-01-25 and 2022-04-25 quarterly reports",
+      "category": "last_payment_period_conflict",
+      "amount_eur": null,
+      "status": "CLAIMANT_IDENTIFIED_INTERNAL_REPORT_CONFLICT",
+      "proposition": "The claim says one report stated that remuneration accrued from June 2021 was unpaid for lack of treasury, while the next appeared to identify June 2020 as the last paid period.",
+      "source": "F01, page 18, paragraph 75; F08, paragraph 42",
+      "contrary_or_limit": "The two complete native quarterly reports and their accounting schedules are not autonomous public records in this specialist corpus.",
+      "needed_proof": "Complete signed quarterly reports, annexes, service/notification records and reconciliation to the estate ledger and bank statements."
+    },
+    {
+      "id": "PD-C36-AC-FEE-007",
+      "period_or_date": "post-month-twelve liquidation period alleged in the claim",
+      "category": "pleaded_principal_component",
+      "amount_eur": 65217.76,
+      "status": "PARTY_PLEADED_NOT_MERITS_ADJUDICATED",
+      "proposition": "Alleged improper liquidation remuneration, stated as tax-inclusive.",
+      "source": "F01, page 4, paragraph 13",
+      "contrary_or_limit": "The defence disputes proof, timing and payment; Judgment 4/2026 did not decide legality or quantum.",
+      "needed_proof": "Month-by-month accrual, approvals/extensions, invoices, tax treatment, actual payments and limitation analysis."
+    },
+    {
+      "id": "PD-C36-AC-FEE-008",
+      "period_or_date": "claim calculation",
+      "category": "pleaded_interest_component",
+      "amount_eur": 9504.77,
+      "status": "PARTY_PLEADED_NOT_MERITS_ADJUDICATED",
+      "proposition": "Legal interest claimed on the EUR 65,217.76 component.",
+      "source": "F01, page 4, paragraph 13",
+      "contrary_or_limit": "No merits ruling validated the principal, rate, dates or calculation.",
+      "needed_proof": "Calculation schedule, rate source, start/end dates and adjudicated principal."
+    },
+    {
+      "id": "PD-C36-AC-FEE-009",
+      "period_or_date": "claim calculation",
+      "category": "pleaded_interest_invoice_component_including_tax",
+      "amount_eur": 31107.46,
+      "status": "PARTY_PLEADED_NOT_MERITS_ADJUDICATED",
+      "proposition": "Amount claimed for the disputed common-phase and arrangement interest item, corresponding arithmetically to EUR 29,208.88 plus the pleaded tax treatment.",
+      "source": "F01, page 4, paragraph 13; page 18, paragraph 76",
+      "contrary_or_limit": "The Administrator disputes illegality and asserts entitlement and disclosure; the court did not adjudicate the merits.",
+      "needed_proof": "Invoice, tax rate and filing, interest basis, payment, disclosure and underlying due remuneration."
+    },
+    {
+      "id": "PD-C36-AC-FEE-010",
+      "period_or_date": "claim calculation",
+      "category": "pleaded_interest_component",
+      "amount_eur": 5126.98,
+      "status": "PARTY_PLEADED_NOT_MERITS_ADJUDICATED",
+      "proposition": "Further interest claimed on the EUR 31,107.46 component.",
+      "source": "F01, page 4, paragraph 13",
+      "contrary_or_limit": "No merits ruling validated the principal, rate, dates or calculation.",
+      "needed_proof": "Calculation schedule, rate source, start/end dates and adjudicated principal."
+    },
+    {
+      "id": "PD-C36-AC-FEE-011",
+      "period_or_date": "claim total",
+      "category": "pleaded_total",
+      "amount_eur": 110956.97,
+      "status": "ARITHMETICALLY_RECONCILED_PARTY_PLEADING_ONLY",
+      "proposition": "EUR 65,217.76 + EUR 9,504.77 + EUR 31,107.46 + EUR 5,126.98 = EUR 110,956.97.",
+      "source": "F01, page 4, paragraph 13; F03; F13",
+      "contrary_or_limit": "Admission of the action and recital of its amount did not validate loss, payment, liability or recoverability; Judgment 4/2026 dismissed on standing.",
+      "needed_proof": "Complete source ledger and a merits determination by the competent body."
+    }
+  ],
+  "public_sources": {
+    "official_statutory_source": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-8469#dttercera",
+    "F01": "/evidence/insolvency-36-2012/concurso-autos/full-text/F01-demanda-de-responsabilidad-y-reintegro-de-honorarios-a-la-masa-redacted.md",
+    "F03": "/evidence/insolvency-36-2012/concurso-autos/full-text/F03-decreto-de-admision-de-la-demanda-de-honorarios-redacted.md",
+    "F06": "/evidence/insolvency-36-2012/concurso-autos/full-text/F06-contestacion-del-administrador-concursal-a-la-demanda-redacted.md",
+    "F08": "/evidence/insolvency-36-2012/concurso-autos/full-text/F08-alegaciones-de-aweswell-tras-las-contestaciones-redacted.md",
+    "F13": "/evidence/insolvency-36-2012/concurso-autos/full-text/F13-sentencia-4-2026-sobre-la-demanda-de-honorarios-redacted.md"
+  }
+}

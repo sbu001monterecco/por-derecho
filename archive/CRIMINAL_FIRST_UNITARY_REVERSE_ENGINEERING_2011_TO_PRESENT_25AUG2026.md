@@ -12,6 +12,8 @@ Successive adoption does not retroactively create participation under Articles 2
 
 The received `RDM-PRIVATE-MAILBOX-01` package is a manifest/index, not the native corpus. Public-safe manifest triage changes discovery priority and adds no evidential support to `ALG-ENT-018`; full private Phase A and native email, attachment and Drive Phase B remain open. Earlier dated assessments remain source-bounded historical controls where material, but do not define the present evidential ceiling or prove the opposite. Apply `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` and the 26 August master prompt.
 
+**AC removal/fees thread integration.** Apply `archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md` as the controlling specialist layer. The 50-record corpus proves notice, positions, Judge/LAJ procedural treatment and appellate pursuit; it does not itself prove criminal intent, fee illegality, patrimonial loss, judicial wrongdoing or a common plan. DP 1901/2026 is the separate private-actor/CAM route; DP 1956/2026 is the separate AC/Concurso route; handwritten intake reference 22 remains a receipt locator pending reparto. The four pleaded fee components total EUR 110,956.97 arithmetically, but the complete bank/accounting bridge remains open.
+
 ## Governing rule
 
 The project may describe the 2011 events as an alleged **hijacking / takeover of Community governance** where clearly attributed to Gil Marer or another declarant. It must not present a criminal conspiracy, friendship, corruption, deliberate falsity, fraud, disloyal administration or judicial wrongdoing as established unless the relevant legal and evidentiary elements are actually supported.

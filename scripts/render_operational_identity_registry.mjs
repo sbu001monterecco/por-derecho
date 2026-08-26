@@ -1,6 +1,8 @@
-import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+
+const playwright = await import(process.env.PSR_PLAYWRIGHT_PATH || 'playwright');
+const { chromium } = playwright;
 
 const baseURL = (process.env.PD_ID_BASE_URL || 'http://127.0.0.1:8000/por-derecho').replace(/\/$/, '');
 const outputDir = process.env.PD_ID_SCREENSHOT_DIR || 'artifacts/operational-identity-registry-20260825';
@@ -76,11 +78,11 @@ try {
         if (!(value > 0)) throw new Error(`${url}: ${queue} queue is empty`);
         queueCounts[queue] = value;
       }
-      if (queueCounts.unresolved !== 14) throw new Error(`${url}: expected 14 unresolved identities, found ${queueCounts.unresolved}`);
+      if (queueCounts.unresolved !== 15) throw new Error(`${url}: expected 15 unresolved identities, found ${queueCounts.unresolved}`);
 
       await page.locator('[data-operational-filter="UNRESOLVED"]').click();
       const unresolvedRows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();
-      if (unresolvedRows !== 14) throw new Error(`${url}: unresolved filter rendered ${unresolvedRows}, expected 14`);
+      if (unresolvedRows !== 15) throw new Error(`${url}: unresolved filter rendered ${unresolvedRows}, expected 15`);
 
       await page.locator('[data-operational-filter="P0"]').click();
       const p0Rows = await page.locator('tbody[data-registry-body] tr[data-identity-id]').count();

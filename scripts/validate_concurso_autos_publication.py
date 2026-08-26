@@ -24,6 +24,10 @@ EN_PATH = ROOT / "en/insolvency-36-2012-orders-decisions/index.html"
 PROVENANCE_PATH = ROOT / "evidence/insolvency-36-2012/ac-removal-fees/provenance.md"
 UNITARY_PATH = ROOT / "archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md"
 WHOLE_FILE_PROMPT_PATH = ROOT / "archive/prompts/CONCURSO36_COMPLETE_JUDICIAL_PARTY_RECORD_ACQUISITION_DIGITISATION_PUBLICATION_PROMPT_23AUG2026.md"
+LEDGER_PATH = ROOT / "assets/data/concurso36-ac-remuneration-quantitative-ledger-v1.json"
+GAPS_PATH = ROOT / "assets/data/concurso36-ac-removal-fees-production-gaps-v1.json"
+THESIS_PATH = ROOT / "archive/AC_REMOVAL_FEES_REVERSE_ENGINEERED_CRIMINAL_THREAD_THESIS_26AUG2026.md"
+CAEPR_AUDIT_PATH = ROOT / "archive/CAEPR_AC_REMOVAL_FEES_UNITARY_IMPLEMENTATION_AUDIT_26AUG2026.md"
 
 PDF_SPECS = {
     "evidence/insolvency-36-2012/ac-removal-fees/auto-1377-2025-removal-public-redacted.pdf": (3, "a19975991ddf5aceb17f95247d05c7a7cd115bf9cd4ce6e7b3c7f127aeeba5b7"),
@@ -124,6 +128,38 @@ if sum(record.get("lane") == "honorarios" for record in documents) != 18:
 if sum(bool(record.get("public_pdf")) for record in documents) != 10:
     errors.append("manifest: exactly ten records must expose public PDFs")
 
+try:
+    ledger = json.loads(read(LEDGER_PATH))
+except Exception as exc:
+    errors.append(f"quantitative ledger JSON invalid: {exc}")
+    ledger = {"entries": [], "summary": {}}
+if ledger.get("schema") != "por-derecho.concurso36-ac-remuneration-quantitative-ledger.v1":
+    errors.append("quantitative ledger: wrong schema")
+ledger_entries = ledger.get("entries", [])
+if len(ledger_entries) != 11:
+    errors.append(f"quantitative ledger: expected 11 entries, found {len(ledger_entries)}")
+component_ids = {f"PD-C36-AC-FEE-{number:03d}" for number in range(7, 11)}
+component_sum = round(sum(float(item["amount_eur"]) for item in ledger_entries if item.get("id") in component_ids), 2)
+ledger_summary = ledger.get("summary", {})
+if component_sum != 110956.97 or ledger_summary.get("pleaded_total") != 110956.97:
+    errors.append(f"quantitative ledger: pleaded components do not reconcile ({component_sum})")
+if ledger_summary.get("bank_verified_total") is not None:
+    errors.append("quantitative ledger: bank-verified total must remain null")
+if ledger_summary.get("court_adjudicated_remuneration_merits") is not False:
+    errors.append("quantitative ledger: merits boundary must remain false")
+
+try:
+    gaps_payload = json.loads(read(GAPS_PATH))
+except Exception as exc:
+    errors.append(f"production-gap JSON invalid: {exc}")
+    gaps_payload = {"gaps": []}
+if gaps_payload.get("schema") != "por-derecho.concurso36-ac-removal-fees-production-gaps.v1":
+    errors.append("production-gap register: wrong schema")
+gap_ids = {item.get("id") for item in gaps_payload.get("gaps", [])}
+expected_gap_ids = {f"PD-C36-AC-GAP-{number:03d}" for number in range(1, 11)}
+if gap_ids != expected_gap_ids:
+    errors.append("production-gap register: expected ten finite gap IDs")
+
 manifest_hrefs: set[str] = set()
 for record in documents:
     rel = record.get("href", "")
@@ -199,6 +235,9 @@ require(
         "Texto íntegro de Juez, Sala y LAJ",
         "Lo que falta se registra; no se inventa",
         "Derecho de respuesta y corrección",
+        "Qué prueba este hilo — y qué sigue penalmente sin probar",
+        "110.956,97 €",
+        "13 de 14 instituciones/procedimientos",
     ],
 )
 require(
@@ -212,6 +251,9 @@ require(
         "Complete Judge, Appeal Court and LAJ text",
         "Missing material is logged, not invented",
         "Right of response and correction",
+        "What this thread proves — and what remains criminally unproved",
+        "EUR 110,956.97",
+        "13 of 14 eligible institutions/proceedings",
     ],
 )
 
@@ -220,8 +262,8 @@ for path, text in ((ES_PATH, es), (EN_PATH, en)):
     parser.feed(text)
     if parser.details != 25:
         errors.append(f"{path.relative_to(ROOT)}: expected 25 decision details, found {parser.details}")
-    if not {record["id"] for record in court}.issubset(parser.ids):
-        errors.append(f"{path.relative_to(ROOT)}: missing court decision anchors")
+    if not expected_ids.issubset(parser.ids):
+        errors.append(f"{path.relative_to(ROOT)}: missing court or party record anchors")
     transcript_links = {Path(urlsplit(href).path).name for href in parser.hrefs if href.endswith("-redacted.md")}
     if transcript_links != manifest_hrefs:
         errors.append(f"{path.relative_to(ROOT)}: does not link all 50 unique transcripts")
@@ -284,6 +326,29 @@ require(
     ],
 )
 
+require(
+    THESIS_PATH,
+    read(THESIS_PATH),
+    [
+        "## Thesis",
+        "## Reverse-engineered chain",
+        "## Current non-fragmented topology",
+        "Procedural dismissal is not substantive exoneration",
+        "DP 1901/2026 was previously mislabelled",
+    ],
+)
+require(
+    CAEPR_AUDIT_PATH,
+    read(CAEPR_AUDIT_PATH),
+    [
+        "13 of 14 eligible proceeding/institution identities",
+        "92.86%",
+        "PD-SP-R-0016",
+        "No caret",
+        "DP 1901/2026 is primarily the separate private-actor/CAM",
+    ],
+)
+
 for rel, markers in {
     "CHATGPT_START_HERE.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "31. For **any request to obtain"],
     "archive/CHATGPT_PROMPT_LIBRARY.md": [str(WHOLE_FILE_PROMPT_PATH.relative_to(ROOT)), "## P25 — Complete Concurso 36/2012 judicial and party record"],
@@ -341,7 +406,7 @@ else:
         if len(row) != width:
             errors.append(f"PROCEEDINGS_MASTER_REGISTER.csv:{number}: {len(row)} columns; expected {width}")
     joined = "\n".join(",".join(row) for row in rows)
-    for marker in ("GC-APP-007", "GC-CIV-027", "GC-APP-028", "PUBLIC_FULLTEXT_REDACTED_WITH_KEY_PDFS"):
+    for marker in ("GC-APP-007", "GC-CIV-027", "GC-CIV-030", "GC-APP-028", "PD-SP-R-0016", "PUBLIC_FULLTEXT_REDACTED_WITH_KEY_PDFS"):
         if marker not in joined:
             errors.append(f"PROCEEDINGS_MASTER_REGISTER.csv: missing {marker}")
 
