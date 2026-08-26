@@ -10,14 +10,21 @@ on:
       - 'ops/PR_RECONCILIATION_LEDGER.json'
       - 'assets/data/material-updates-v1.json'
       - 'assets/data/matter-identity-registry-v1*.json'
-      - 'es/registro-identidad-materia/index.html'
-      - 'en/matter-identity-registry/index.html'
+      - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/jv1260-ap89-continuidad-cam/**'
+      - 'en/jv1260-ap89-cam-continuity/**'
       - 'es/actualizaciones/index.html'
       - 'en/updates/index.html'
       - 'sitemap-unitary-control-plane.xml'
+      - 'sitemap-owner-court-network.xml'
       - 'robots.txt'
       - 'scripts/validate_unitary_control_plane.py'
+      - 'scripts/validate_non_lpb_owner_court_network.py'
+      - 'scripts/validate_legal_professional_register.py'
       - 'publication-manifests/unitary-control-plane-sync-20260825.json'
+      - 'publication-manifests/non-lpb-matkator-owner-court-network-20260826.json'
       - '.github/workflows/verify-unitary-control-plane.yml'
   push:
     branches: [main]
@@ -29,14 +36,21 @@ on:
       - 'ops/PR_RECONCILIATION_LEDGER.json'
       - 'assets/data/material-updates-v1.json'
       - 'assets/data/matter-identity-registry-v1*.json'
-      - 'es/registro-identidad-materia/index.html'
-      - 'en/matter-identity-registry/index.html'
+      - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/jv1260-ap89-continuidad-cam/**'
+      - 'en/jv1260-ap89-cam-continuity/**'
       - 'es/actualizaciones/index.html'
       - 'en/updates/index.html'
       - 'sitemap-unitary-control-plane.xml'
+      - 'sitemap-owner-court-network.xml'
       - 'robots.txt'
       - 'scripts/validate_unitary_control_plane.py'
+      - 'scripts/validate_non_lpb_owner_court_network.py'
+      - 'scripts/validate_legal_professional_register.py'
       - 'publication-manifests/unitary-control-plane-sync-20260825.json'
+      - 'publication-manifests/non-lpb-matkator-owner-court-network-20260826.json'
       - '.github/workflows/verify-unitary-control-plane.yml'
   workflow_dispatch:
 
@@ -50,7 +64,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 14
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -59,7 +73,10 @@ jobs:
           fetch-depth: 0
 
       - name: Validate synchronized control plane
-        run: python3 scripts/validate_unitary_control_plane.py
+        run: |
+          python3 scripts/validate_unitary_control_plane.py
+          python3 scripts/validate_non_lpb_owner_court_network.py
+          python3 scripts/validate_legal_professional_register.py
 
       - name: Validate JSON and XML syntax
         run: |
@@ -73,10 +90,14 @@ jobs:
               'ops/PRODUCTION_STATUS.json',
               'ops/PR_RECONCILIATION_LEDGER.json',
               'assets/data/material-updates-v1.json',
+              'assets/data/matter-identity-registry-v1.json',
+              'assets/data/non-lpb-matkator-owner-court-network-v1.json',
               'publication-manifests/unitary-control-plane-sync-20260825.json',
+              'publication-manifests/non-lpb-matkator-owner-court-network-20260826.json',
           ]:
               json.loads(Path(path).read_text(encoding='utf-8'))
           ET.parse('sitemap-unitary-control-plane.xml')
+          ET.parse('sitemap-owner-court-network.xml')
           print('JSON/XML syntax: PASS')
           PY
 
@@ -90,16 +111,21 @@ jobs:
 
           base=os.environ['BASE'].rstrip('/')
           text_checks=[
-            ('/es/registro-identidad-materia/',['data-static-registry-counts="185-86-66-10-13-10"','data-registry-stat="TOTAL">185','Los <strong>185 IDs</strong>']),
-            ('/en/matter-identity-registry/',['data-static-registry-counts="185-86-66-10-13-10"','data-registry-stat="TOTAL">185','The <strong>185 IDs</strong>']),
+            ('/es/registro-identidad-materia/',['data-static-registry-counts="187-88-66-10-13-10"','data-registry-stat="TOTAL">187','Los <strong>187 IDs</strong>','perimetro-propietarios-no-lpb-matkator/']),
+            ('/en/matter-identity-registry/',['data-static-registry-counts="187-88-66-10-13-10"','data-registry-stat="TOTAL">187','The <strong>187 IDs</strong>','non-lpb-matkator-owner-network/']),
+            ('/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/',['PD-SP-OWNER-COURT-NETWORK-001','Celia Guillén Pérez','Manuel Molina Climent','Gerardo Zacarías Acosta Matos','Javier Acosta Matos']),
+            ('/en/matter-identity-registry/non-lpb-matkator-owner-network/',['PD-SP-OWNER-COURT-NETWORK-001','Celia Guillén Pérez','Manuel Molina Climent','Gerardo Zacarías Acosta Matos','Javier Acosta Matos']),
+            ('/es/jv1260-ap89-continuidad-cam/',['JV 1260/2011','AP 89/2014','red canónica']),
+            ('/en/jv1260-ap89-cam-continuity/',['JV 1260/2011','AP 89/2014','canonical network']),
             ('/es/actualizaciones/',['Última actualización material','<strong>25 agosto 2026</strong>']),
             ('/en/updates/',['Latest material update','<strong>25 August 2026</strong>']),
+            ('/assets/data/non-lpb-matkator-owner-court-network-v1.json',['PD-SP-OWNER-COURT-NETWORK-001','PD-SP-P-0087','PD-SP-P-0088']),
             ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','MU-20260825-CONTROL-PLANE-SYNC']),
-            ('/sitemap-unitary-control-plane.xml',['<lastmod>2026-08-25</lastmod>','registro-identidad-materia','matter-identity-registry']),
-            ('/robots.txt',['sitemap-unitary-control-plane.xml'])]
+            ('/sitemap-owner-court-network.xml',['perimetro-propietarios-no-lpb-matkator','non-lpb-matkator-owner-network']),
+            ('/robots.txt',['sitemap-unitary-control-plane.xml','sitemap-owner-court-network.xml'])]
 
           def fetch(url):
-            req=urllib.request.Request(url,headers={'User-Agent':'por-derecho-unitary-control-plane-verifier/2'})
+            req=urllib.request.Request(url,headers={'User-Agent':'por-derecho-unitary-control-plane-verifier/3'})
             with urllib.request.urlopen(req,timeout=30) as response:
               if response.status!=200: raise RuntimeError(f'HTTP {response.status}')
               return response.read().decode('utf-8',errors='replace')
@@ -125,13 +151,11 @@ jobs:
               state=json.loads(body)
               assert state.get('control_id')=='PD-UNITARY-STATE-20260825-01'
               counts=state.get('identity_registry',{}).get('counts',{})
-              assert counts=={'total':185,'PERSON':86,'ORGANISATION':66,'STRUCTURE':10,'INSTITUTION':13,'PROCEEDING':10}
-              readback_state=state.get('publication',{}).get('current_sha_edge_readback',{}).get('state')
-              assert readback_state in {
-                'PENDING_EXACT_MARKER_READBACK_AFTER_THIS_CONTROL_PLANE_MERGES',
-                'LIVE_VERIFIED'
-              }
-              print(f'LIVE VERIFIED {state_url} :: structured JSON :: state={readback_state}')
+              assert counts=={'total':187,'PERSON':88,'ORGANISATION':66,'STRUCTURE':10,'INSTITUTION':13,'PROCEEDING':10}
+              assert state.get('status') in {'PREPARED_PENDING_MERGE_AND_LIVE_READBACK','LIVE_VERIFIED'}
+              owner=state.get('canonical_routes',{}).get('owner_network',[])
+              assert len(owner)==2
+              print(f'LIVE VERIFIED {state_url} :: structured JSON :: state={state.get("status")}')
               break
             except Exception as exc:
               last=str(exc); time.sleep(10)
@@ -149,10 +173,11 @@ jobs:
             echo "- Event: $GITHUB_EVENT_NAME"
             echo "- SHA: $GITHUB_SHA"
             echo '- Control: `PD-UNITARY-STATE-20260825-01`'
-            echo '- Identity denominator: `185 / 86 / 66 / 10 / 13 / 10`'
+            echo '- Identity denominator: `187 / 88 / 66 / 10 / 13 / 10`'
+            echo '- Owner network: `PD-SP-OWNER-COURT-NETWORK-001`'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
-              echo '- Source parity and syntax verified; public readback is reserved for the post-merge main push.'
+              echo '- Source parity, owner-network integrity and syntax verified; public readback is reserved for the post-merge main push.'
             else
-              echo '- Public ES/EN identity and update routes, structured state JSON, updates JSON, sitemap and robots were verified.'
+              echo '- Public ES/EN identity, owner-network, JV/AP bridge and update routes plus structured state and sitemaps were verified.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
