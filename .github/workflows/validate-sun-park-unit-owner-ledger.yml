@@ -4,23 +4,33 @@ on:
   pull_request:
     paths:
       - 'assets/data/sun-park-unit-owner-ledger-v1*.json'
+      - 'assets/data/sun-park-unit-owner-ledger-v1.precam-full-denominator.tsv'
       - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
       - 'assets/owner-perimeter-tokens.css'
       - 'scripts/validate_sun_park_unit_owner_ledger.py'
+      - 'scripts/validate_sun_park_full_owner_denominator.py'
       - 'archive/SUN_PARK_UNIT_OWNER_LEDGER_PROTOCOL_26AUG2026.md'
+      - 'archive/SUN_PARK_FULL_PRECAM_OWNER_DENOMINATOR_IMPLEMENTATION_26AUG2026.md'
       - 'es/54-cam-proveniencia-minorias-relato-publico/index.html'
       - 'en/54-cam-provenance-minorities-public-narrative/index.html'
+      - 'es/registro-propietarios-sun-park/index.html'
+      - 'en/sun-park-owner-register/index.html'
       - '.github/workflows/validate-sun-park-unit-owner-ledger.yml'
   push:
     branches: [main]
     paths:
       - 'assets/data/sun-park-unit-owner-ledger-v1*.json'
+      - 'assets/data/sun-park-unit-owner-ledger-v1.precam-full-denominator.tsv'
       - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
       - 'assets/owner-perimeter-tokens.css'
       - 'scripts/validate_sun_park_unit_owner_ledger.py'
+      - 'scripts/validate_sun_park_full_owner_denominator.py'
       - 'archive/SUN_PARK_UNIT_OWNER_LEDGER_PROTOCOL_26AUG2026.md'
+      - 'archive/SUN_PARK_FULL_PRECAM_OWNER_DENOMINATOR_IMPLEMENTATION_26AUG2026.md'
       - 'es/54-cam-proveniencia-minorias-relato-publico/index.html'
       - 'en/54-cam-provenance-minorities-public-narrative/index.html'
+      - 'es/registro-propietarios-sun-park/index.html'
+      - 'en/sun-park-owner-register/index.html'
       - '.github/workflows/validate-sun-park-unit-owner-ledger.yml'
   workflow_dispatch:
 
@@ -38,6 +48,8 @@ jobs:
           persist-credentials: false
       - name: Validate unit-owner ledger
         run: python3 scripts/validate_sun_park_unit_owner_ledger.py
+      - name: Validate full pre-CAM owner denominator
+        run: python3 scripts/validate_sun_park_full_owner_denominator.py
       - name: Validate ledger JSON syntax
         run: |
           for file in assets/data/sun-park-unit-owner-ledger-v1*.json; do
