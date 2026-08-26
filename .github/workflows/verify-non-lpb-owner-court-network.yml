@@ -1,0 +1,89 @@
+name: Verify non-LPB owner court network
+on:
+  pull_request:
+    paths:
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
+      - 'es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/**'
+      - 'en/matter-identity-registry/non-lpb-matkator-owner-network/**'
+      - 'es/jv1260-ap89-continuidad-cam/**'
+      - 'en/jv1260-ap89-cam-continuity/**'
+      - 'assets/owner-court-network.css'
+      - 'scripts/validate_non_lpb_owner_court_network.py'
+      - 'scripts/validate_legal_professional_register.py'
+      - 'sitemap-owner-court-network.xml'
+      - 'robots.txt'
+      - 'publication-manifests/non-lpb-owner-court-network-20260826.json'
+      - '.github/workflows/verify-non-lpb-owner-court-network.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/non-lpb-matkator-owner-court-network-v1.json'
+      - 'es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/**'
+      - 'en/matter-identity-registry/non-lpb-matkator-owner-network/**'
+      - 'es/jv1260-ap89-continuidad-cam/**'
+      - 'en/jv1260-ap89-cam-continuity/**'
+      - 'assets/owner-court-network.css'
+      - 'scripts/validate_non_lpb_owner_court_network.py'
+      - 'scripts/validate_legal_professional_register.py'
+      - 'sitemap-owner-court-network.xml'
+      - 'robots.txt'
+      - 'publication-manifests/non-lpb-owner-court-network-20260826.json'
+      - '.github/workflows/verify-non-lpb-owner-court-network.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with: {persist-credentials: false, fetch-depth: 0}
+      - name: Validate owner and professional identity controls
+        run: |
+          python3 scripts/validate_non_lpb_owner_court_network.py
+          python3 scripts/validate_legal_professional_register.py
+      - name: Check public privacy boundary
+        run: |
+          ! grep -R -E 'Josep Ponsirenas|Oriol Huguet|José Miguel Molina Petit|Anastasio Molina López|Lourdes Moreno' assets/data/non-lpb-matkator-owner-court-network-v1.json es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator en/matter-identity-registry/non-lpb-matkator-owner-network
+      - name: Verify public routes and markers
+        if: github.event_name != 'pull_request'
+        env: {BASE: 'https://sbu001monterecco.github.io/por-derecho'}
+        shell: python
+        run: |
+          import json,os,time,urllib.request
+          base=os.environ['BASE'].rstrip('/')
+          checks=[
+            ('/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/',['PD-SP-OWNER-COURT-NETWORK-001','Los siete actores propietarios','Celia Guillén Pérez','Manuel Molina Climent','Gerardo Zacarías Acosta Matos','Javier Acosta Matos']),
+            ('/en/matter-identity-registry/non-lpb-matkator-owner-network/',['PD-SP-OWNER-COURT-NETWORK-001','The seven actors who owned','Celia Guillén Pérez','Manuel Molina Climent','Gerardo Zacarías Acosta Matos','Javier Acosta Matos']),
+            ('/assets/data/non-lpb-matkator-owner-court-network-v1.json',['L1_JV1260_AP89_CLAIMANTS','PD-SP-OCN-E031','PD-SP-OCN-ACT-006']),
+            ('/assets/data/matter-identity-registry-v1.json',['"total":187','"PERSON":88','matter-identity-registry-v1.acosta-matos-people.json']),
+            ('/sitemap-owner-court-network.xml',['perimetro-propietarios-no-lpb-matkator','non-lpb-matkator-owner-network']),
+            ('/robots.txt',['sitemap-owner-court-network.xml'])]
+          def fetch(url):
+            req=urllib.request.Request(url,headers={'User-Agent':'por-derecho-owner-court-network-verifier/2'})
+            with urllib.request.urlopen(req,timeout=30) as res:
+              if res.status!=200: raise RuntimeError(f'HTTP {res.status}')
+              return res.read().decode('utf-8',errors='replace')
+          failures=[]
+          for route,markers in checks:
+            url=base+route;last=''
+            for _ in range(12):
+              try:
+                body=fetch(url);missing=[m for m in markers if m not in body]
+                if not missing: print('LIVE VERIFIED',url,len(body));break
+                last=f'missing {missing}'
+              except Exception as exc:last=str(exc)
+              time.sleep(8)
+            else:failures.append(f'{url}: {last}')
+          if failures:raise SystemExit('LIVE VERIFICATION FAILED\n - '+'\n - '.join(failures))
+      - name: Summary
+        if: always()
+        run: |
+          echo '## Non-LPB/Matkator owner court network' >> "$GITHUB_STEP_SUMMARY"
+          echo '- AP89 core remains exactly seven claimant-owners of 18 bungalows.' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Wider Montelanza/Molina perimeter remains separately graded.' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Celia Guillén and Manuel Molina Climent have individualised sourced propositions.' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Gerardo Zacarías and Javier Acosta Matos are clustered with the family/business perimeter without transferred attribution.' >> "$GITHUB_STEP_SUMMARY"
