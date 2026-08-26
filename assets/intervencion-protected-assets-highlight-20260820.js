@@ -70,3 +70,14 @@
   module.setAttribute('data-criminal-first-action-pressure-loader', '20260825');
   document.head.appendChild(module);
 })();
+
+/* TRANSPARENCY-FEDER-ROUTING-CROSSLINKS-20260826 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-transparency-feder-routing-crosslinks-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('transparency-feder-routing-crosslinks-20260826.js?v=20260826b', current.src).href;
+  module.async = false;
+  module.setAttribute('data-transparency-feder-routing-crosslinks-loader', '20260826');
+  document.head.appendChild(module);
+})();
