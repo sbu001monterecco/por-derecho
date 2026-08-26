@@ -59,7 +59,7 @@
   load('banking-recovery-publication-20260816.js?v=20260816b');
 
   // Dedicated Valencia banking-recovery page links across lender-of-record, possession/convergence and PH122→CAM chain pages.
-  load('caixabank-valencia-claim-navigation-20260816.js?v=20260816a');
+  load('caixabank-valencia-claim-navigation-20260816.js?v=20260826a');
 
   // Source-controlled CaixaBank→Aweswell adhesion sequence for Borja, propagated to Valencia, lender, AC, Calificación and AP pages.
   load('caixabank-borja-witness-context-20260816.js?v=20260816a');

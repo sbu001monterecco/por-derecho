@@ -131,9 +131,13 @@ def check_refs(rows: list[dict[str, Any]], field: str, valid: set[str | None]) -
 for rows in datasets.values():
     check_refs(rows, "source_refs", source_ids)
     check_refs(rows, "actor_refs", actor_ids)
+    check_refs(rows, "claimant_actor_refs", actor_ids)
+    check_refs(rows, "defendant_actor_refs", actor_ids)
+    check_refs(rows, "related_actor_refs", actor_ids)
     check_refs(rows, "target_actor_refs", actor_ids)
     check_refs(rows, "debtor_actor_refs", actor_ids)
     check_refs(rows, "holder_chain_actor_refs", actor_ids)
+    check_refs(rows, "counterparty_successor_actor_refs", actor_ids)
     check_refs(rows, "instrument_refs", instrument_ids)
     check_refs(rows, "later_conduct_refs", conduct_ids)
     check_refs(rows, "proceeding_refs", proceeding_ids)
@@ -158,6 +162,40 @@ for row in datasets["evidence-gaps.json"]:
         errors.append(f"{row.get('id')}: invalid gap status")
     if not isinstance(row.get("next_action"), str) or not row["next_action"].strip():
         errors.append(f"{row.get('id')}: missing next_action")
+
+
+def by_id(filename: str, rid: str) -> dict[str, Any] | None:
+    return next((row for row in datasets[filename] if row.get("id") == rid), None)
+
+
+for required_actor in ("ACT-ORIGINATING-LENDER", "ACT-BFA", "ACT-BANKIA", "ACT-AWESWELL", "ACT-CAIXABANK"):
+    if required_actor not in actor_ids:
+        errors.append(f"actors.json: missing required banking-chain actor {required_actor}")
+
+valencia = by_id("proceedings.json", "PROC-VALENCIA-1859-2023-9")
+if valencia:
+    if set(refs(valencia, "actor_refs")) != {"ACT-AWESWELL", "ACT-CAIXABANK"}:
+        errors.append("PROC-VALENCIA-1859-2023-9: actor_refs must contain only Aweswell and CaixaBank")
+    if refs(valencia, "claimant_actor_refs") != ["ACT-AWESWELL"]:
+        errors.append("PROC-VALENCIA-1859-2023-9: claimant must be ACT-AWESWELL")
+    if refs(valencia, "defendant_actor_refs") != ["ACT-CAIXABANK"]:
+        errors.append("PROC-VALENCIA-1859-2023-9: defendant must be ACT-CAIXABANK")
+    if valencia.get("nig") != "46250-42-1-2023-0049579":
+        errors.append("PROC-VALENCIA-1859-2023-9: controlled NIG mismatch")
+
+haya = by_id("actors.json", "ACT-HAYA")
+if not haya or "not_established_as_credit_holder_or_assignee" not in haya.get("capacity_limits", []):
+    errors.append("ACT-HAYA: non-holder capacity limit is required")
+for instrument in datasets["instruments.json"]:
+    if "ACT-HAYA" in refs(instrument, "holder_chain_actor_refs"):
+        errors.append(f"{instrument.get('id')}: Haya must not appear as a credit holder")
+for transfer in datasets["transfers.json"]:
+    if transfer.get("transferor_actor_ref") == "ACT-HAYA" or transfer.get("transferee_actor_ref") == "ACT-HAYA":
+        errors.append(f"{transfer.get('id')}: Haya must not be a transfer endpoint")
+
+for required_transfer in ("TR-2011-CAJA-INSULAR-BFA", "TR-2011-BFA-BANKIA", "TR-2021-BANKIA-CAIXABANK"):
+    if by_id("transfers.json", required_transfer) is None:
+        errors.append(f"transfers.json: missing required succession event {required_transfer}")
 
 if errors:
     print("Lender-liability validation FAILED", file=sys.stderr)

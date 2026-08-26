@@ -1,0 +1,59 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "CAIXABANK-MORTGAGE-SWAP-360-20260826",
+  "control_marker": "caixabank-mortgage-swap-360-20260826",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-26T00:00:00Z",
+  "source_base": "86aa96f31f32164ed17e748da4c54a1541e08ae0",
+  "current_state": "DRAFT",
+  "purpose": "Preserve the reserved declarant's attributed mortgage/swap/account/default account, create a unitary actor-specific lender-liability control, and strengthen the dedicated CaixaBank ES/EN pages with arithmetic, grace-scope, successor-allocation and evidence boundaries.",
+  "expected_routes": {
+    "es": ["es/reclamacion-caixabank-valencia/index.html"],
+    "en": ["en/caixabank-valencia-claim/index.html"]
+  },
+  "expected_source_files": [
+    "archive/declarations/014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md",
+    "archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md",
+    "archive/BANKING_ORIGIN_GAP_CLOSURE_LEDGER_16AUG2026.md",
+    "archive/CAIXABANK_VALENCIA_PUBLIC_PAGE_CHAIN_CONTROL_16AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/prompts/CAIXABANK_MORTGAGE_SWAP_LENDER_LIABILITY_360_PROMPT_26AUG2026.md",
+    "scripts/validate_caixabank_mortgage_360.py",
+    "docs/deletion-audits/2026-08-26-caixabank-mortgage-swap-360-thread.md"
+  ],
+  "controlling_boundaries": [
+    "Gil's instruction proves attribution and preservation direction, not the reserved declarant's word-for-word personal adoption.",
+    "Two reported approximately EUR 55,000 sales total approximately EUR 110,000 gross, not EUR 210,000.",
+    "Grace is not assumed to cover interest, swap settlements or charges.",
+    "One economic ledger does not create one cause of action or automatic joint/successor liability.",
+    "The Valencia claim is pending and contested; liability and quantum are not adjudicated.",
+    "No native audio, full transcript, private account identifiers or private correspondence is published."
+  ],
+  "deletions": [],
+  "pull_request": null,
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/reclamacion-caixabank-valencia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/caixabank-valencia-claim/"
+  ],
+  "live_verification_evidence": null,
+  "deletion_record": {
+    "status": "NOT_DELETION_SAFE",
+    "reason": "Local validation passed, but public push was blocked by the publication-risk gate pending explicit informed approval for the attributed declaration, named-lender allegations, financial/evidentiary derivatives and public GitHub/Pages destination. No push, PR, merge or deployment occurred.",
+    "email_sent": false,
+    "gmail_draft_created": false
+  },
+  "validation": {
+    "status": "LOCAL_GREEN_PUBLICATION_BLOCKED",
+    "required": [
+      "scripts/validate_caixabank_mortgage_360.py",
+      "scripts/validate_valencia_hearing_status.py",
+      "scripts/validate_repository_preservation.py",
+      "scripts/validate_publication_integrity.py",
+      "scripts/validate_audience_experience.py",
+      "HTML and JSON syntax checks",
+      "exact-SHA Pages deployment and ES/EN live-marker readback"
+    ]
+  }
+}

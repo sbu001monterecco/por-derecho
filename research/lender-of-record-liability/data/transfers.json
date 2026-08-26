@@ -1,5 +1,37 @@
 [
   {
+    "id": "TR-2011-CAJA-INSULAR-BFA",
+    "transferor_actor_ref": "ACT-ORIGINATING-LENDER",
+    "transferee_actor_ref": "ACT-BFA",
+    "date": "2011-05-23",
+    "date_precision": "day",
+    "date_label": "23 May 2011 registration",
+    "instrument_refs": ["INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K", "INS-SWAP", "INS-PLEDGED-DEPOSIT"],
+    "transfer_type": "banking_business_segregation_by_universal_succession",
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-CNMV-BANKIA-2011-ACCOUNTS"],
+    "consideration_status": "corporate_segregation_recorded",
+    "liability_allocation_status": "specific_LPB_schedule_open",
+    "open_questions": ["Complete segregation deed and schedules", "Specific inclusion and exclusion of LPB instruments and obligations", "Historical statutory-liability analysis"]
+  },
+  {
+    "id": "TR-2011-BFA-BANKIA",
+    "transferor_actor_ref": "ACT-BFA",
+    "transferee_actor_ref": "ACT-BANKIA",
+    "date": "2011-05-23",
+    "date_precision": "day",
+    "date_label": "23 May 2011 registration",
+    "instrument_refs": ["INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K", "INS-SWAP", "INS-PLEDGED-DEPOSIT"],
+    "transfer_type": "banking_business_block_transfer_by_universal_succession",
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-CNMV-BANKIA-2011-ACCOUNTS"],
+    "consideration_status": "corporate_transfer_recorded",
+    "liability_allocation_status": "specific_LPB_schedule_open",
+    "open_questions": ["Complete transfer deed and schedules", "Specific LPB instruments and excluded liabilities"]
+  },
+  {
     "id": "TR-2013-BANKIA-SAREB",
     "transferor_actor_ref": "ACT-BANKIA",
     "transferee_actor_ref": "ACT-SAREB",
@@ -46,6 +78,22 @@
     "consideration_status": "not_publicly_reconciled",
     "liability_allocation_status": "complete_deed_required",
     "open_questions": ["Complete deed and schedules", "Price and payment", "Due diligence and disclosures", "Warranties/indemnities", "Loan-by-loan balance"]
+  },
+  {
+    "id": "TR-2021-BANKIA-CAIXABANK",
+    "transferor_actor_ref": "ACT-BANKIA",
+    "transferee_actor_ref": "ACT-CAIXABANK",
+    "date": "2021-03-26",
+    "date_precision": "day",
+    "date_label": "26 March 2021",
+    "instrument_refs": ["INS-SWAP", "INS-PLEDGED-DEPOSIT"],
+    "transfer_type": "merger_by_absorption_universal_succession",
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-CAIXABANK-BANKIA-MERGER-2021"],
+    "consideration_status": "corporate_merger",
+    "liability_allocation_status": "universal_corporate_succession_verified_underlying_merits_contested",
+    "open_questions": ["Underlying obligation, limitation, causation and quantum", "Earlier Caja/BFA allocation for the specific LPB instruments"]
   },
   {
     "id": "TR-2022-CAM-HNT",

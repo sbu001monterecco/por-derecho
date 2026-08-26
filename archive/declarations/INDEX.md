@@ -21,6 +21,9 @@ Registro maestro de declaraciones conservadas en `archive/declarations/`.
 | 009 | 2026-08-22 | Gil Marer | Acusación rectora respecto de Pamanil; cadena expresa `propietarios → Comunidad de Propietarios actuando válidamente → CEXP`; nulidad total *ab initio* del contrato Pink; corrección sobre llaves ante el documento de 22/05/2017; procedencia AEAT e identidad del interlocutor masculino | REGISTRADA — atribución directa escrita; no firmada; «todos los propietarios» no se utiliza como unanimidad documental; acusaciones penales, identidad, nulidad, conocimiento e intención pendientes de prueba/decisión | [`009_GIL_PAMANIL_AEAT_PINK_NULLITY_KEYS_CONTROLLING_CLARIFICATION_20260822.md`](./009_GIL_PAMANIL_AEAT_PINK_NULLITY_KEYS_CONTROLLING_CLARIFICATION_20260822.md) |
 | 010 | 2026-08-22 | Gil Marer | Explicación contextual de presión sobre la declarante reservada sin incapacidad general; responsabilidad separada de Gil; intención no ejecutiva de incorporarse/sustituir en la administración de Pink; nulidad total y posibles objetantes; auditoría de neutralidad AEAT; digitalización pública controlada de comunicaciones y actas | REGISTRADA — atribución directa escrita; no firmada ni jurada; no produce nombramiento o cese societario; presión, nulidad, conflictos y acusaciones sujetos a prueba/decisión | [`010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md`](./010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md) |
 | 011 | 2026-08-25 | Testigo del perímetro de Gil Marer — identidad reservada | Campanario; operación/CEXP 2008; juntas de febrero y junio de 2011; Pamanil/Pamalexsha; Prieto Puente, López Noriega y Millan and Miners; administración concursal; perímetro Cogolludo/Noalpa/Santa Lucia y cuestiones de título/voto | REGISTRADA — derivada de notas de voz/dictado transcrito; no firmada, no jurada ni ratificada palabra por palabra; relato, documentos, inferencias, correcciones, matriz de aclaración y prueba abierta separados | [`011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md`](./011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md) |
+| 012 | 2026-08-25 | Gil Marer | Teoría máxima atribuida de causalidad criminal, administración de hecho/sombra y posibles estados de conocimiento del Administrador Concursal desde 2011 | REGISTRADA — posición de parte; no es una declaración penal adjudicada y exige prueba acto–actor–conocimiento–causalidad | [`012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md`](./012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md) |
+| 013 | 2026-08-25 | Gil Marer | Alegación de convergencia funcional del perímetro comunitario/profesional de 2011 hacia el posterior perímetro Acosta Matos/CAM/RICPE/HNT-MYND | REGISTRADA — posición de parte con apoyo graduado; no prueba sucesión universal, pacto común ni responsabilidad penal | [`013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md`](./013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md) |
+| 014 | 2026-08-26 | Testigo del perímetro de Gil Marer — identidad reservada | Primera hipoteca, suelo, swap/cobertura, segunda financiación, depósito pignorado, cuentas controladas, ventas de apartamentos, carencia, mora, vencimiento y Ejecución 90/2012 | REGISTRADA — síntesis editorial derivada de fuente y atribuida por Gil; no firmada, no jurada ni ratificada palabra por palabra; corrección 55.000 × 2 = 110.000 y conciliación íntegra pendientes | [`014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md`](./014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md) |
 
 ## Control obligatorio de voz y aclaraciones
 
@@ -28,7 +31,7 @@ Toda entrada derivada de audio, dictado o transcripción aplica el [`Protocolo u
 
 ## Distinción LPAM obligatoria
 
-La declarante de 001–005 y 011 no es **Laura Patricia Acosta Matos (LPAM)**. Cuando LPAM aparezca dentro de una declaración o control, la primera referencia relevante debe usar su nombre completo y acrónimo. No utilizar `Patricia` sola como abreviatura pública.
+La declarante de 001–005, 011 y 014 no es **Laura Patricia Acosta Matos (LPAM)**. Cuando LPAM aparezca dentro de una declaración o control, la primera referencia relevante debe usar su nombre completo y acrónimo. No utilizar `Patricia` sola como abreviatura pública.
 
 ## Campos de integridad y presentación
 
@@ -46,7 +49,7 @@ Cuando proceda, cada entrada o declaración deberá registrar:
 
 ## Regla de numeración
 
-La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. Después de las entradas anteriores, la siguiente declaración disponible es **012**, salvo que otra entrada se incorpore antes.
+La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. Después de las entradas anteriores, la siguiente declaración disponible es **015**, salvo que otra entrada se incorpore antes.
 
 ## Declaraciones accionables
 
