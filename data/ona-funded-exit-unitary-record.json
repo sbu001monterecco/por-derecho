@@ -1,0 +1,126 @@
+{
+  "record_id": "PD-ONA-FX-20260826-01",
+  "updated": "2026-08-26",
+  "languages": ["es", "en"],
+  "matter": {
+    "asset": "Sun Park, Playa Blanca, Lanzarote",
+    "debtor": "Luchy Playa Blanca, S.L.U.",
+    "proceeding": "Concurso 36/2012"
+  },
+  "controlling_proposition": "Clubotel La Dorada, S.L. / ONA was not merely an unrelated third-party bidder. Its proposed operating and acquisition role formed part of a coordinated funded-exit architecture directed at determining the properly payable insolvency amount, funding payment or consignation to recognised creditors, concluding Concurso 36/2012 and restoring professional unitary hotel operation.",
+  "source_classes": [
+    {
+      "id": "ONA-FX-001",
+      "date": "2018-04-19",
+      "type": "transaction_documents",
+      "proposition": "ONA letter of intent, business plan and expansion material existed before 7 June 2018.",
+      "status": "documented_fact"
+    },
+    {
+      "id": "ONA-FX-002",
+      "date_from": "2018-04-26",
+      "date_to": "2018-04-27",
+      "type": "correspondence",
+      "proposition": "Carlos Sanz sought offer terms, the amount to improve and timing from the Insolvency Administrator; the AC declined substantive disclosure and directed formal personacion/court application.",
+      "status": "documented_fact",
+      "limit": "The AC answered; the supported criticism concerns substance and effect, not literal silence."
+    },
+    {
+      "id": "ONA-FX-003",
+      "date": "2018-06-06",
+      "type": "signed_operating_documents",
+      "proposition": "Clubotel/ONA hotel-industry lease and suspensive annex were signed.",
+      "status": "documented_fact",
+      "limit": "Operation remained conditional; ONA was not the exit lender."
+    },
+    {
+      "id": "ONA-FX-004",
+      "date": "2018-06-07",
+      "type": "material_control_event",
+      "proposition": "The project side alleges a material-control takeover impaired access, operation, information, income and security assumptions.",
+      "status": "attributed_allegation"
+    },
+    {
+      "id": "ONA-FX-005",
+      "date_from": "2018-06-12",
+      "date_to": "2018-06-13",
+      "type": "finance_and_professional_account",
+      "proposition": "Stoneweg/Varia conditional binding-offer route was issued and Daniel Irigoyen contemporaneously reported presenting an integrated funded exit to the judge and AC.",
+      "status": "mixed_primary_and_attributed_account",
+      "limit": "The professional account is not certified judicial minutes."
+    },
+    {
+      "id": "ONA-FX-006",
+      "date_from": "2018-09-06",
+      "date_to": "2018-09-26",
+      "type": "coordinated_exit_correspondence",
+      "proposition": "Carlos Sanz, Daniel Irigoyen, Cuatrecasas, Juan Tomas Parrilla and the project side coordinated debt certification and an exit by payment or consignation to all creditors; ONA was within the strategy although omitted from one draft.",
+      "status": "documented_fact_and_attributed_account",
+      "limit": "No final drawdown or satisfaction of every condition is established."
+    },
+    {
+      "id": "ONA-FX-007",
+      "date_from": "2019-05-03",
+      "date_to": "2019-07-02",
+      "type": "court_filing_and_docket",
+      "proposition": "Clubotel La Dorada, represented by Daniel Irigoyen, sought personacion, challenged refusal and appeared in the docket as an interested party.",
+      "status": "documented_fact",
+      "limit": "The formal pleaded interest was acquisition/access to information; the wider funded-exit purpose comes from the combined record."
+    },
+    {
+      "id": "ONA-FX-008",
+      "date": "2019-07-10",
+      "type": "court_filing",
+      "proposition": "The Insolvency Administration opposed or challenged Clubotel's personacion.",
+      "status": "documented_fact",
+      "limit": "The complete pleading and ruling control exact grounds and outcome."
+    },
+    {
+      "id": "ONA-FX-009",
+      "date_from": "2019-01-01",
+      "date_to": "2019-12-31",
+      "type": "transaction_and_legal_continuation",
+      "proposition": "ONA novation work, proposed bank guarantee and Article 176 conclusion workstream continued.",
+      "status": "documented_fact_with_open_completion"
+    }
+  ],
+  "participants": [
+    {"name": "Clubotel La Dorada, S.L.", "group_label": "ONA Hotels & Apartments", "capacity": "intended operator and acquisition participant", "adverse": false},
+    {"name": "Nacho Barrau", "capacity": "ONA transaction interlocutor", "adverse": false},
+    {"name": "Carlos Sanz", "organisation": "Pledge Investments", "capacity": "project co-adviser and finance/transaction coordinator", "adverse": false},
+    {"name": "Daniel Irigoyen Fujiwara", "capacity": "lawyer, court-exit coordinator and later Clubotel counsel", "adverse": false},
+    {"name": "Cuatrecasas", "capacity": "due diligence, debt, security and transaction workstream", "adverse": false},
+    {"name": "Juan Tomas Parrilla Suarez", "capacity": "LPB-side counsel in debt/exit workstream", "adverse": false},
+    {"name": "Francisco de Borja Rodriguez-Batllori Laffitte", "capacity": "court-appointed Insolvency Administrator", "adverse": true, "lane": "institutional"},
+    {"name": "Alberto Lopez Villarrubia", "capacity": "Magistrate-Judge", "adverse": true, "lane": "judicial"},
+    {"name": "Francisco Mario Matos Matas", "capacity": "private actor", "adverse": true, "lane": "private"},
+    {"name": "Antonio Cogolludo Rojas", "capacity": "private actor", "adverse": true, "lane": "private"},
+    {"name": "Shaila Maria Cogolludo Ramos", "capacity": "private actor", "adverse": true, "lane": "private"},
+    {"name": "Jose Daniel Acosta Matos", "capacity": "private actor / creditor and material-control perimeter", "adverse": true, "lane": "private"},
+    {"name": "Laura Patricia Acosta Matos", "capacity": "private actor / corporate perimeter", "adverse": true, "lane": "private"}
+  ],
+  "criminal_hypothesis_test": [
+    "actor-specific act or omission",
+    "capacity and duty",
+    "actual knowledge of the ONA package",
+    "transaction or security dependency affected",
+    "contemporaneous reaction",
+    "measurable impairment",
+    "intent if alleged",
+    "benefit or destination",
+    "contrary explanation",
+    "remaining proof"
+  ],
+  "routes": {
+    "es_hub": "/es/ona-hotels-salida-concurso-36-2012/",
+    "en_hub": "/en/ona-hotels-insolvency-exit-36-2012/",
+    "es_unitary": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+    "en_unitary": "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/"
+  },
+  "boundaries": {
+    "no_joint_adoption": true,
+    "no_final_criminal_finding": true,
+    "native_evidence_private": true,
+    "actor_specific_knowledge_required": true
+  }
+}
