@@ -12,6 +12,17 @@
     "046e23ea73ec80cc0651cb2090973828f368b632"
   ],
   "subject": "Concurso 36/2012 — documentary reconstruction of the 2022 adjudication",
+  "later_correction": {
+    "date": "2026-08-26",
+    "publication_id": "CREDIT-MULTIPLE-LIVES-NPL-NOTARIAL-360-20260826",
+    "state": "LOCAL_VALIDATED__MERGE_AND_CURRENT_PAGES_READBACK_PENDING",
+    "changes": [
+      "Corrected the statement that Protocol 457's six printed components themselves total EUR 13,168,082.02.",
+      "Recorded their exact EUR 13,065,186.68 subtotal and the separately source-supported EUR 102,895.34 first-rank default-interest-to-cap step.",
+      "Kept Protocol 457's 159-finca dacion separate from the EUR 400,000 / 31-finca branch and Mortgage Enforcement 90/2012."
+    ],
+    "provenance_boundary": "The PR/run/live evidence below verifies predecessor publication bytes. Validation and Pages readback for this correction belong to the later publication and must not be inferred from the 19-August run IDs."
+  },
   "expected_routes": {
     "es": [
       "es/adjudicacion-2022-reconstruccion-documental/index.html"
@@ -44,10 +55,10 @@
   ],
   "verified_findings": [
     "The 2018 offer gives an approximate waiver of EUR 5,186,061.79.",
-    "The 2022 deed provides an exact six-component bridge to EUR 13,168,082.02.",
+    "Protocol 457's six printed components total EUR 13,065,186.68; the EUR 102,895.34 first-loan default-interest cap step explains the stated EUR 13,168,082.02 arithmetically, while the legal and closing-account bridge remains open.",
     "The deed describes EUR 13,168,082.02 as debt serving as non-cash consideration.",
     "The 2021 order treats the EUR 400,000 unencumbered-property sale separately from the mortgaged-property adjudication.",
-    "Protocol 457 concerns the 159 mortgaged apartments.",
+    "Protocol 457 concerns the 159 mortgaged apartments, not the separate EUR 400,000 / 31-finca branch and not Mortgage Enforcement 90/2012 satisfaction or cancellation.",
     "EUR 9,052,251.69 is recorded as a 2016 special-privilege credit-classification figure.",
     "A May 2022 registry note still displayed both mortgages.",
     "The exact thread copies and the versions circulated to advisers are non-identical and remain separately preserved.",
@@ -135,7 +146,7 @@
       "PR 509 merged to main at 69216d25aaf2be09b5d334279160d5799f2a75c8.",
       "PR 510 merged the dedicated live verifier and merged-state closeout at 28cd3355e0a39bd5e806ed2800987ce1f8165b85.",
       "PR 511 merged durable public-edge status reporting at 046e23ea73ec80cc0651cb2090973828f368b632.",
-      "The six deed components were independently reconciled to EUR 13,168,082.02 exactly.",
+      "2026-08-26 local correction under CREDIT-MULTIPLE-LIVES-NPL-NOTARIAL-360-20260826: Protocol 457's six printed components reconcile to EUR 13,065,186.68 and the separately source-supported EUR 102,895.34 cap step reaches EUR 13,168,082.02; merge and current Pages validation remain pending in that later publication.",
       "PR 521 adjudication-provenance run 32292641103, job 96196738491: 337 public files scanned, zero stale-language hits and 12 browser assertions passed.",
       "PR 521 publication integrity run 32292641114: success.",
       "PR 521 unitary public-shell run 32292641109: success.",
@@ -152,7 +163,7 @@
     "off_github_preservation": "PASS",
     "repository_merge": "PASS",
     "public_edge": "PASS",
-    "provenance_update_validation": "LIVE_VERIFIED"
+    "provenance_update_validation": "HISTORICAL_LIVE_VERIFIED__2026-08-26_CORRECTION_PENDING"
   },
   "deployment_evidence": [
     "GitHub Pages returned HTTP 200 for the Spanish route, English route and dedicated sitemap in workflow run 32281842085.",

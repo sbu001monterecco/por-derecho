@@ -23,7 +23,13 @@
     "publication": "public_safe",
     "source_refs": ["SRC-SECOND-MORTGAGE-2010", "SRC-LPB-LEDGER-2011", "SRC-BANKIA-BUROFAX-2011", "SRC-BANKIA-EXECUTION-2012", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
     "located_terms": {"principal_eur": 850000, "contract_date": "2010-05-27", "maturity_date": "2024-07-01", "principal_grace_months": 18, "first_principal_instalment": "2012-01-01", "variable_index": "Euribor_12m", "margin_points": 2.0, "floor_percent": 3.5, "tae_percent": 3.717},
-    "open_fields": ["Purpose and drawdown allocation", "Payment settlements", "Linked security and pledged funds", "Balance at each transfer"]
+    "open_fields": ["Purpose and drawdown allocation", "Payment settlements", "Linked security and pledged funds", "Balance at each transfer", "Reconciliation of €839,441 in the 2011/2012 demand and Protocol 870 with €839,411 in the later 2021/Protocol-457 source family"],
+    "amount_function_control": [
+      {"source_ref": "SRC-BANKIA-BUROFAX-2011", "amount_eur": 839441, "function": "capital demanded in outgoing acceleration notice"},
+      {"source_ref": "SRC-BANKIA-EXECUTION-2012", "amount_eur": 839441, "function": "accelerated capital in the located Mortgage Enforcement 90/2012 initiating claim"},
+      {"source_ref": "SRC-PROTOCOL-870-2018", "amount_eur": 839441, "function": "principal component in the 17 May 2018 creditor-side notarial balance act"},
+      {"source_ref": "SRC-PROTOCOL-457-2022", "amount_eur": 839411, "function": "principal component in the 2021/Protocol-457 closing-source family; €30 below the earlier source family"}
+    ]
   },
   {
     "id": "INS-SWAP",
@@ -58,8 +64,54 @@
     "holder_chain_actor_refs": ["ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
-    "open_fields": ["Loan-by-loan reconciliation", "Ordinary/default interest", "Costs", "Corrections", "Sobrante/residual"]
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-DEFINITIVE-CREDIT-2016", "SRC-PH122-BALANCE-CERTIFICATES-2017", "SRC-PROTOCOL-869-2018", "SRC-PROTOCOL-870-2018", "SRC-AUTO-2018-06-04-DEBT-COMPONENTS", "SRC-AUTO-2021-01-25-CAP", "SRC-EDICT-2021-01-29", "SRC-PROTOCOL-457-2022", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "amount_function_control": [
+      {"amount_eur": 9052251.69, "source_refs": ["SRC-DEFINITIVE-CREDIT-2016", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"], "function": "quantified specially privileged credit in the controlled definitive-text/substitution record"},
+      {"amount_eur": 12251446.21, "source_refs": ["SRC-PH122-BALANCE-CERTIFICATES-2017"], "function": "creditor-certified loan balances at 20 October 2017; not assignment price or final closing debt"},
+      {"amount_eur": 13165832.36, "source_refs": ["SRC-PROTOCOL-869-2018", "SRC-PROTOCOL-870-2018"], "function": "combined 17 May 2018 notarial balance acts before later daily-accrual/cap treatment"},
+      {"amount_eur": 13168082.02, "source_refs": ["SRC-AUTO-2021-01-25-CAP", "SRC-EDICT-2021-01-29", "SRC-PROTOCOL-457-2022"], "function": "2021 better-offer mortgage threshold and later debt stated as consideration for the 159-finca dación; identical number, distinct documentary functions"}
+    ],
+    "open_fields": ["Loan-by-loan reconciliation", "Ordinary/default interest", "Costs", "Corrections", "Sobrante/residual", "Legal and closing-account bridge between definitive credit, mortgage responsibility, competitive threshold and extinguished debt"]
+  },
+  {
+    "id": "INS-EH90-SECOND-FACILITY-CLAIM",
+    "name": "Located initiating claim in Mortgage Enforcement 90/2012",
+    "instrument_type": "mortgage_enforcement_claim",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-BANKIA"],
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BANKIA-EXECUTION-2012"],
+    "located_amounts": {"accelerated_principal_eur": 839441, "ordinary_interest_eur": 17236.08, "default_interest_eur": 696.73, "claimed_liquid_amount_eur": 857373.81, "provisional_interest_and_costs_eur": 257000},
+    "scope_control": "The located initiating claim is the second-facility claim. It does not by itself prove that both mortgage facilities were independently enforced in EH90 or establish later satisfaction, cancellation or recovery.",
+    "open_fields": ["Complete EH90 docket and annexes", "All later balance certificates and award/satisfaction acts", "Property schedule and relationship to Concurso 36/2012", "Termination, cancellation and residual balance"]
+  },
+  {
+    "id": "INS-PROTOCOLS-869-870-BALANCES",
+    "name": "17 May 2018 notarial balance acts, Protocols 869 and 870",
+    "instrument_type": "creditor_balance_notarial_acts",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-CAM"],
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-PROTOCOL-869-2018", "SRC-PROTOCOL-870-2018", "SRC-AUTO-2018-06-04-DEBT-COMPONENTS"],
+    "balances": {"protocol_869_eur": 11887314.33, "protocol_870_eur": 1278518.03, "combined_eur": 13165832.36},
+    "scope_control": "The acts authenticate statements and material presented to the notary but expressly derive their balances from CAM-supplied information/accounting. They are not independent audits, the PH122-to-CAM transaction price, or proof of the final 2022 amount legally available for set-off."
+  },
+  {
+    "id": "INS-PROTOCOL-457-DACION",
+    "name": "Protocol 457 — 159-finca dación implementation",
+    "instrument_type": "notarial_dacion_implementation",
+    "debtor_actor_refs": ["ACT-LPB"],
+    "holder_chain_actor_refs": ["ACT-CAM"],
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-AUTO-2021-01-25-CAP", "SRC-EDICT-2021-01-29", "SRC-PROTOCOL-457-2022"],
+    "printed_components_eur": [7792421.02, 967500, 3079104.66, 839411, 72250, 314500],
+    "printed_components_total_eur": 13065186.68,
+    "cap_step_eur": 102895.34,
+    "stated_consideration_eur": 13168082.02,
+    "scope_control": "The arithmetic route to the stated total is explained by the first-loan default-interest movement from €3,079,104.66 to the €3,182,000 cap. The legal/classification, payoff and closing-account bridge remains open. This instrument covers the 159 mortgaged fincas, not the separate €400,000 / 31-finca branch, and is not itself an EH90 satisfaction or cancellation act."
   },
   {
     "id": "INS-SUN-PARK-ECONOMIC-UNIT",

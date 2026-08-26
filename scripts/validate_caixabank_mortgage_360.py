@@ -61,7 +61,7 @@ REQUIRED = {
     ],
     "index": [
         "| 014 | 2026-08-26 |",
-        "siguiente declaración disponible es **015**",
+        "siguiente declaración disponible es **017**",
     ],
     "gaps": ["| ME-092 |", "€60k", "€59k", "119.000 € brutos"],
     "closeout": ["THREAD_REASONING_CONTINUITY", "PRIMARY_EVIDENCE_COMPLETENESS"],

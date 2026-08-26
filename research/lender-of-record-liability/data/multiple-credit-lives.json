@@ -1,0 +1,256 @@
+{
+  "schema": "por-derecho-multiple-credit-lives-v1",
+  "control_date": "2026-08-26",
+  "canonical_allegation_id": "ALG-NPL-019",
+  "attribution": "Gil Marer and Aweswell",
+  "attribution_status": "direct_party_allegation_not_judicial_finding",
+  "purpose": "Keep the original financial package, corporate succession, mortgage-asset transfer, procedural uses, amount functions and satisfaction evidence in one non-fragmented but actor-specific ledger.",
+  "naming_controls": {
+    "holder": "Promontoria Holding 122 B.V.",
+    "abbreviation": "PH122",
+    "rejected_unless_native_source_produced": [
+      "Promotoria Holding",
+      "Promontoria Holding 1112",
+      "PH11"
+    ],
+    "servicer_boundary": "Haya is a servicer/interlocutor in the controlled record, not an established holder or assignee.",
+    "cerberus_boundary": "Cerberus is a sponsor/investment/decision context until ownership, control, mandate, instruction or ratification is proved for the specific act."
+  },
+  "lanes": [
+    {
+      "id": "MCL-LANE-CORPORATE",
+      "name": "Corporate/product succession lane",
+      "chain": [
+        "Caja Insular de Ahorros de Canarias / La Caja de Canarias",
+        "Banco Financiero y de Ahorros, S.A. (BFA)",
+        "Bankia, S.A.",
+        "CaixaBank, S.A."
+      ],
+      "scope": "Origination, product/account administration, swap, pledged funds, default/acceleration and any obligations retained or later succeeded to in the Valencia lane.",
+      "does_not_establish": "That CaixaBank owned the mortgage asset after the Bankia-to-SAREB transfer or that every downstream holder inherited every upstream personal liability."
+    },
+    {
+      "id": "MCL-LANE-ASSET",
+      "name": "Mortgage-credit ownership and enforcement lane",
+      "chain": [
+        "Bankia, S.A.",
+        "Sociedad de Gestión de Activos Procedentes de la Reestructuración Bancaria, S.A. (SAREB)",
+        "Promontoria Holding 122 B.V. (PH122)",
+        "Construcciones Acosta Matos, S.A. (CAM)"
+      ],
+      "scope": "Who held, asserted, assigned or used the mortgage credit and security at each date.",
+      "does_not_establish": "A clean-slate credit, transfer of the swap, transfer of every originator obligation, or criminal liability merely from appearing in the chain."
+    },
+    {
+      "id": "MCL-LANE-PROCEDURAL",
+      "name": "Distinct procedural-use lanes",
+      "chain": [
+        "Mortgage Enforcement 90/2012 in Arrecife",
+        "Concurso 36/2012 in Las Palmas",
+        "Protocol 457 / registry implementation"
+      ],
+      "scope": "The same underlying economic relationship may appear with different legal functions: enforcement claim, insolvency classification, competitive threshold, dación consideration, satisfaction and cancellation.",
+      "does_not_establish": "That every appearance is a new asset or duplicate recovery. Economic duplication requires a one-to-one collection, set-off, satisfaction and residual-balance ledger."
+    }
+  ],
+  "propositions": [
+    {
+      "id": "MCL-ORIGIN-INTEGRATED-PACKAGE",
+      "evidence_status": "contested",
+      "publication": "public_safe",
+      "proposition": "The controlled records identify a first mortgage dated 17 June 2008 for €8.6 million, a €5 million swap dated 17 June 2008, a 27 May 2010 first-mortgage novation, a second mortgage facility of €850,000 dated 27 May 2010 with first principal instalment stated for 1 January 2012, and a pledged-funds component reported at approximately €405,000. Gil Marer and Aweswell allege that these instruments formed one integrated economic package whose later separation obscured causation and balance reconciliation.",
+      "source_refs": [
+        "SRC-NOVATION-FIRST-MORTGAGE-2010",
+        "SRC-SECOND-MORTGAGE-2010",
+        "SRC-CAIXABANK-EXPERT-2024",
+        "SRC-LPB-LEDGER-2011"
+      ],
+      "limit": "The existence of connected instruments does not itself prove that they were legally indivisible, fraudulently split or transferred together. Each instrument's contractual and transfer treatment must be proved."
+    },
+    {
+      "id": "MCL-EH90-LOCATED-CLAIM",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "proposition": "The located EH90 initiating claim is the second-facility claim: €839,441 principal + €17,236.08 ordinary interest + €696.73 default interest = €857,373.81, plus €257,000 provisionally for interest and costs.",
+      "source_refs": [
+        "SRC-BANKIA-EXECUTION-2012"
+      ],
+      "limit": "The located claim does not establish that both mortgage facilities were independently enforced in EH90. The complete docket, later balances, satisfaction and cancellation path remain open."
+    },
+    {
+      "id": "MCL-TRANSFER-SAMPLE-CONTROL",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "proposition": "For sample finca 8751, the Registry records Bankia→SAREB under the 21 December 2012 deed and 24 June 2013 supplemental act, entered 12 July 2013; SAREB→PH122 under the 18 December 2014 deed, Protocol 6851, entered 29 June 2015; and PH122→CAM under the 20 October 2017 deed, Protocol 2248, entered 15 January 2018.",
+      "source_refs": [
+        "SRC-REGISTRY-FINCA-8751-2022"
+      ],
+      "limit": "This is a single-finca sample. It does not prove the complete portfolio schedule, economics, payment, all-finca continuity or final cancellation."
+    },
+    {
+      "id": "MCL-PH122-CAM-INSTRUMENT-CONTROL",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "proposition": "PH122→CAM is identified as a 20 October 2017 assignment under Protocol 2248 before Notary Ana Fernández-Tresguerres García; notice to LPB is recorded on 27 October 2017, the sample registry entry on 15 January 2018 and the controlling holder-substitution order on 15 February 2018.",
+      "source_refs": [
+        "SRC-TRANSFER-2017-10-20-PH122-CAM",
+        "SRC-REGISTRY-FINCA-8751-2022",
+        "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND",
+        "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"
+      ],
+      "limit": "Only a seven-page tail/diligences of an instrument described as fourteen folios is located. The substantive terms, complete schedules, price, payment, warranties, due diligence and AC verification remain open. The 15 February 2018 order is adverse/mixed evidence: it recognised CAM, rejected LPB's Article 1535 position and partly corrected amounts in LPB's favour."
+    },
+    {
+      "id": "MCL-AMOUNT-FUNCTIONS",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "amounts": [
+        {
+          "amount_eur": 9052251.69,
+          "source_refs": [
+            "SRC-DEFINITIVE-CREDIT-2016",
+            "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"
+          ],
+          "function": "quantified specially privileged credit in the controlled definitive-text/substitution record"
+        },
+        {
+          "amount_eur": 12251446.21,
+          "source_refs": [
+            "SRC-PH122-BALANCE-CERTIFICATES-2017"
+          ],
+          "function": "PH122 creditor-certified total at 20 October 2017"
+        },
+        {
+          "amount_eur": 13165832.36,
+          "source_refs": [
+            "SRC-PROTOCOL-869-2018",
+            "SRC-PROTOCOL-870-2018"
+          ],
+          "function": "combined 17 May 2018 notarial balance acts"
+        },
+        {
+          "amount_eur": 13168082.02,
+          "source_refs": [
+            "SRC-AUTO-2021-01-25-CAP",
+            "SRC-EDICT-2021-01-29",
+            "SRC-PROTOCOL-457-2022"
+          ],
+          "function": "2021 better-offer mortgage threshold and later debt stated as consideration for the 159-finca dación"
+        }
+      ],
+      "limit": "These amounts have different sources, dates and legal/economic functions. The sequence is not a single self-proving balance escalation, purchase price, surplus or offence."
+    },
+    {
+      "id": "MCL-PROTOCOL-869",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "arithmetic": {
+        "principal_eur": 7792421.02,
+        "ordinary_interest_eur": 1015788.65,
+        "default_interest_eur": 3079104.66,
+        "total_eur": 11887314.33,
+        "exact": true
+      },
+      "source_refs": [
+        "SRC-PROTOCOL-869-2018"
+      ],
+      "limit": "The notarial act relies on CAM-supplied accounting and is not an independent audit or final closing amount."
+    },
+    {
+      "id": "MCL-PROTOCOL-870",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "arithmetic": {
+        "principal_eur": 839441,
+        "ordinary_interest_eur": 109512.11,
+        "default_interest_eur": 329564.92,
+        "total_eur": 1278518.03,
+        "exact": true
+      },
+      "source_refs": [
+        "SRC-PROTOCOL-870-2018"
+      ],
+      "limit": "There is no internal €30 Protocol-870 arithmetic mismatch. The €30 issue arises because later 2021/Protocol-457 sources use €839,411 principal. The source-system reason for that cross-source movement remains open."
+    },
+    {
+      "id": "MCL-PROTOCOL-457-ARITHMETIC",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "printed_components_eur": [
+        7792421.02,
+        967500,
+        3079104.66,
+        839411,
+        72250,
+        314500
+      ],
+      "printed_components_total_eur": 13065186.68,
+      "default_interest_cap_eur": 3182000,
+      "cap_step_eur": 102895.34,
+      "stated_consideration_eur": 13168082.02,
+      "source_refs": [
+        "SRC-AUTO-2021-01-25-CAP",
+        "SRC-EDICT-2021-01-29",
+        "SRC-PROTOCOL-457-2022"
+      ],
+      "limit": "The €102,895.34 step is arithmetically explained by replacing €3,079,104.66 with the €3,182,000 cap. That does not itself prove the legal classification, final payoff, authority to set off every component, absence of surplus or accuracy of the underlying creditor-source accounting."
+    },
+    {
+      "id": "MCL-SEPARATE-400K-BRANCH",
+      "evidence_status": "verified_primary",
+      "publication": "public_safe",
+      "proposition": "The €400,000 / 31-finca non-mortgaged-property branch is separate from the 159-finca mortgage-credit dación implemented by Protocol 457.",
+      "source_refs": [
+        "SRC-EDICT-2021-01-29",
+        "SRC-PROTOCOL-457-2022"
+      ],
+      "limit": "Do not describe €13,168,082.02 as €12,768,082.02 plus €400,000, do not add €400,000 into Protocol 457's stated consideration, and do not infer payment or lawful final accounting without the separate deed, bank and ledger chain."
+    },
+    {
+      "id": "MCL-ALG-NPL-019",
+      "evidence_status": "documented_party_statement",
+      "publication": "public_safe",
+      "proposition": "Gil Marer and Aweswell allege that components of the original financial package and mortgage credits were separated and given multiple transactional, accounting and procedural lives inside Concurso 36/2012 and outside it in Mortgage Enforcement 90/2012; that the Bankia→SAREB→PH122→CAM chain and associated documents or data may have enabled an inflated or duplicated position to be used as a credit-to-control-to-title instrument; and that false, altered or misleadingly sourced documentary content may have caused detriment to LPB and benefit to later holders or purchasers.",
+      "source_refs": [
+        "SRC-BANKIA-EXECUTION-2012",
+        "SRC-DEFINITIVE-CREDIT-2016",
+        "SRC-PH122-BALANCE-CERTIFICATES-2017",
+        "SRC-PROTOCOL-869-2018",
+        "SRC-PROTOCOL-870-2018",
+        "SRC-PROTOCOL-457-2022"
+      ],
+      "limit": "This is a direct attributed allegation, not a judicial finding. ‘Split credit’, ‘multiple lives’ and ‘NPL fraud’ are forensic descriptions, not standalone offences. A discounted NPL acquisition or recovery above purchase price is not itself fraud. Each alleged false statement, alteration, use, knowledge, reliance, disposition, benefit, harm and actor-specific offence element requires independent proof."
+    },
+    {
+      "id": "MCL-DOCUMENT-FORENSICS-BOUNDARY",
+      "evidence_status": "unknown",
+      "publication": "public_safe",
+      "proposition": "A notarial instrument can be authentic as an instrument while containing a disputed party recital, balance certificate or source-data statement. Challenging the truth, legal effect or provenance of a recital does not by itself establish physical/digital alteration of the deed, false signature, simulated execution, false attribution, notarial knowledge or criminal falsity.",
+      "source_refs": [
+        "SRC-PROTOCOL-869-2018",
+        "SRC-PROTOCOL-870-2018",
+        "SRC-PROTOCOL-457-2022"
+      ],
+      "limit": "The proof matrix must identify the exact document and field, authentic comparator, author, version history, underlying source data, knowledge, use, reliance and patrimonial consequence."
+    },
+    {
+      "id": "MCL-CURRENT-NONFINDINGS",
+      "evidence_status": "unknown",
+      "publication": "public_safe",
+      "proposition": "The current controlled record does not establish a false signature, physical or digital alteration of a notarial original, simulated notarial execution, notarial knowledge of false source data, actor-wide collusion, a common criminal plan, a completed double recovery or the criminal liability of every participant in the credit chain.",
+      "source_refs": [],
+      "limit": "These are current proof boundaries, not findings that the alleged conduct did not occur. They remain subject to the complete native documents, source-system ledgers, court files and actor-specific evidence."
+    }
+  ],
+  "minimum_proof_model": [
+    "exact credit component and source-system ledger",
+    "legal function in each instrument or proceeding",
+    "transfer title, schedule, balance and consideration",
+    "one-to-one payment, set-off, recovery and satisfaction history",
+    "exact allegedly false or altered statement and authentic comparator",
+    "actor, capacity, duty, knowledge and intent where legally required",
+    "use, recipient reliance and patrimonial disposition",
+    "benefit, harm, causation and contrary/exculpatory evidence",
+    "historically applicable offence elements and limitation analysis"
+  ]
+}

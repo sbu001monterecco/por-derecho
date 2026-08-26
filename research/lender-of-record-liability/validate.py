@@ -67,7 +67,24 @@ def load(name: str) -> list[dict[str, Any]]:
     return value
 
 
+def load_object(name: str) -> dict[str, Any]:
+    path = DATA / name
+    if not path.exists():
+        errors.append(f"{name}: missing file")
+        return {}
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        errors.append(f"{name}: invalid JSON: {exc}")
+        return {}
+    if not isinstance(value, dict):
+        errors.append(f"{name}: top-level value must be an object")
+        return {}
+    return value
+
+
 datasets = {name: load(name) for name in ID_PATTERNS}
+multiple_credit_lives = load_object("multiple-credit-lives.json")
 
 all_ids: dict[str, str] = {}
 for filename, rows in datasets.items():
@@ -107,6 +124,49 @@ actor_ids = {row.get("id") for row in datasets["actors.json"] if isinstance(row,
 instrument_ids = {row.get("id") for row in datasets["instruments.json"] if isinstance(row, dict)}
 proceeding_ids = {row.get("id") for row in datasets["proceedings.json"] if isinstance(row, dict)}
 conduct_ids = {row.get("id") for row in datasets["conduct-decisions.json"] if isinstance(row, dict)}
+
+
+def validate_nested_source_refs(value: Any, location: str) -> None:
+    if isinstance(value, dict):
+        for key, nested in value.items():
+            if key == "source_refs":
+                if not isinstance(nested, list) or not all(isinstance(ref, str) for ref in nested):
+                    errors.append(f"{location}: source_refs must be a list of strings")
+                else:
+                    for ref in nested:
+                        if ref not in source_ids:
+                            errors.append(f"{location}: unknown source_refs reference {ref}")
+            else:
+                validate_nested_source_refs(nested, f"{location}.{key}")
+    elif isinstance(value, list):
+        for index, nested in enumerate(value):
+            validate_nested_source_refs(nested, f"{location}[{index}]")
+
+
+propositions = multiple_credit_lives.get("propositions", [])
+if not isinstance(propositions, list):
+    errors.append("multiple-credit-lives.json: propositions must be a list")
+    propositions = []
+multiple_life_ids: set[str] = set()
+for index, proposition in enumerate(propositions):
+    where = f"multiple-credit-lives.json.propositions[{index}]"
+    if not isinstance(proposition, dict):
+        errors.append(f"{where}: proposition must be an object")
+        continue
+    proposition_id = proposition.get("id")
+    if not isinstance(proposition_id, str) or not proposition_id:
+        errors.append(f"{where}: proposition must have a non-empty string id")
+    elif proposition_id in multiple_life_ids:
+        errors.append(f"multiple-credit-lives.json: duplicate proposition id {proposition_id}")
+    else:
+        multiple_life_ids.add(proposition_id)
+    status = proposition.get("evidence_status")
+    if status not in ALLOWED_STATUS:
+        errors.append(f"{where}: invalid evidence_status {status!r}")
+    publication = proposition.get("publication")
+    if publication not in ALLOWED_PUBLICATION:
+        errors.append(f"{where}: invalid publication {publication!r}")
+    validate_nested_source_refs(proposition, where)
 
 
 def refs(row: dict[str, Any], field: str) -> list[str]:
@@ -204,4 +264,5 @@ if errors:
     raise SystemExit(1)
 
 counts = ", ".join(f"{name}={len(rows)}" for name, rows in datasets.items())
+counts += f", multiple-credit-lives.json={len(propositions)} propositions"
 print(f"Lender-liability validation PASSED: {counts}")

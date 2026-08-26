@@ -143,3 +143,21 @@ The banking-origin row must now be read through `archive/CAIXABANK_MORTGAGE_SWAP
 - execution filing: signed 10-Jan, court-received 23-Jan and followed by 1-Feb-2012 order; monthly certificate and complete end state open.
 
 Keep the corporate-liability lane `Caja Insular → BFA → Bankia → CaixaBank` separate from the mortgage-asset lane `Bankia → SAREB → PH122 → CAM`. Haya is a servicer/interlocutor, not a proved holder. Every page must carry the net-difference swap formula, 8.35%-scenario correction, double-floor/no-hard-cap allegation, TAE boundary and the rule that swap receipts did not legally replace bank provisions, capital or minimum reserves.
+
+### Credit multiple lives / NPL / notarised instruments — 26 Aug 2026
+
+| Control object | Canonical owner/state | Mandatory maintenance rule | Open production |
+|---|---|---|---|
+| `ALG-NPL-019` | `BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_BANKING_CRIME_360_CONTROL_26AUG2026.md` + Declaration 016 | preserve Gil Marer/Aweswell attribution and non-finding in the same block; do not turn `NPL fraud`, `split credit` or `multiple lives` into a standalone offence | actor/document/offence proof and strongest countermodels |
+| Entity/capacity | PH122 exact; Haya servicer/interlocutor; Cerberus contextual | never use `Promontoria Holding 1112`, `Promotoria` or `PH11`; never substitute fund/servicer label for legal holder | ownership/control/mandate/instruction/ratification records |
+| Succession lanes | corporate/product `Caja Insular→BFA→Bankia→CaixaBank`; asset `Bankia→SAREB→PH122→CAM` | do not transfer personal/product liability, knowledge, intent or conduct automatically across either lane | complete deeds/schedules, retained/transferred liabilities and actor conduct |
+| Protocol 870 | €839,441 + €109,512.11 + €329,564.92 = €1,278,518.03 | no internal €30-mismatch claim; trace later €839,441→€839,411 source movement | underlying accounting, adjustment/payment/correction source |
+| Protocol 457 | printed subtotal €13,065,186.68; supported €102,895.34 cap step; stated €13,168,082.02 | do not call the delta unexplained/fabricated; distinguish cap/threshold/deed term from final recognised credit and satisfaction | day-by-day calculation, court return, Registry/cancellation, estate accounting/surplus |
+| Proceedings/assets | EH 90 located second-facility claim; Protocol 457 159-finca dación; separate €400,000/31-finca route | never merge, mechanically add or use one as proof that another was satisfied/cancelled | complete EH docket and €400,000 non-convalidation/title/accounting chain |
+| Notarial allegation | instrument-specific falsity schedule | authentic deed/act may record false or disputed party recital without instrument alteration or notarial knowledge; prove exact literal, author, comparator, knowledge, use/effect | complete Protocols 2,248, 869, 870 and 457 source packages plus metadata |
+| Historical criminal-law elements | dated CP 248/250.1.7, 390/392/393, 259–261, 31 bis and 130.2 test in the canonical control | CP 250.1.7 requires judge-error→resulting economically prejudicial decision; private CP 392 excludes mere narrative untruth; CP 259–261 changed on 1-Jul-2015; legal-person liability began 23-Dec-2010 and needs an express offence gate; CP 130.2 neither creates retroactive liability nor transfers natural-person guilt | exact act date, qualifying human actor/offence, legal-person eligibility/channel, listed corporate event and historically applicable text |
+| Single satisfaction | one amount/function/payment/set-off/property-value ledger | no double-recovery or unlawful-enrichment conclusion from transfer discount, face amount or parallel procedure alone | every payment, set-off, transfer, property value, extinguishment, costs, residual and claimant |
+
+**Publication state:** the canonical controls authorize a strong attributed allegation block with exact corrections, non-finding, countermodels and P0 evidence. Public ES/EN page parity and live deployment remain separate implementation facts to verify and log; a repository control is not itself proof of a live route.
+
+**Register owners:** `ME-093` carries the complete production/single-satisfaction gap and `CR-099` blocks wrong entity/capacity, arithmetic, proceeding, asset-branch and notarial-proof formulations.

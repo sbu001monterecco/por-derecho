@@ -68,6 +68,7 @@ La cola activa para Gil y la declarante reservada está en [`GIL_RESERVED_DECLAR
 12. El número secuencial refleja el **orden de incorporación al archivo**, no necesariamente la fecha del hecho ni la fecha de la declaración fuente.
 13. Cuando el relato se refiera a correos de una cuenta privada, la cuenta, exportación, IDs, cuerpos, asuntos, destinatarios y adjuntos se conservan fuera de GitHub conforme al [`protocolo de adquisición y custodia de buzón privado`](../RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md); la declaración pública sólo usa IDs opacos, agregados o proposiciones aprobadas.
 14. Los nombres, cargos, sociedades y relaciones derivados de una declaración se verifican conforme al [`protocolo OSINT`](../OPEN_SOURCE_INTELLIGENCE_NAMED_PERSON_ENTITY_PROTOCOL_25AUG2026.md). Un resultado no localizado no prueba ausencia y una relación societaria no transfiere conducta o responsabilidad.
+15. Una colisión de numeración concurrente se resuelve de forma aditiva: conservar la entrada ya incorporada, asignar el siguiente número disponible a la nueva declaración y registrar la renumeración. Nunca sobrescribir una declaración existente.
 
 ## Hacer una declaración accionable
 
@@ -94,6 +95,9 @@ Entradas actuales:
 - `013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md`
 - `014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md`
 - `015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md`
+- `016_GIL_CREDIT_MULTIPLE_LIVES_NPL_NOTARIAL_ALLEGATION_20260826.md` (**Declaration 016**; renumerada desde la 015 preparada para preservar la 015 Fiscalía ya incorporada)
+
+El siguiente número disponible es **017**, sujeto a comprobar de nuevo el directorio en el momento de incorporar otra declaración.
 
 Los nombres exactos de originales privados pueden mantenerse en el registro privado de integridad, no en el repositorio público cuando revelen identidad innecesaria.
 

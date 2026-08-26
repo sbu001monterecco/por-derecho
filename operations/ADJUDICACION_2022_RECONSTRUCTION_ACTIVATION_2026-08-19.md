@@ -21,13 +21,14 @@ No private email, privileged advice, personal identifier or internal working PDF
 ## Primary findings now verified
 
 1. The 15 January 2018 offer states EUR 7,065,384.42 for the dación and an approximate waiver of EUR 5,186,061.79, not EUR 6,102,697.60.
-2. The 21 February 2022 deed gives an exact six-component bridge to EUR 13,168,082.02 and describes it as debt serving as consideration for the transfer.
-3. The six components are EUR 7,792,421.02, EUR 967,500, EUR 3,182,000, EUR 839,411, EUR 72,250 and EUR 314,500.
+2. The 21 February 2022 Protocol 457 describes EUR 13,168,082.02 as debt serving as consideration for the 159-finca transfer. Its six printed components total EUR 13,065,186.68; the EUR 102,895.34 step to the stated total is arithmetically explained by applying the EUR 3,182,000 first-loan default-interest cap in place of the printed EUR 3,079,104.66 figure.
+3. The closing-source components after that cap step are EUR 7,792,421.02, EUR 967,500, EUR 3,182,000, EUR 839,411, EUR 72,250 and EUR 314,500. Arithmetic explanation does not itself prove final legal classification, payoff or authority to compensate every component.
 4. The 18 May 2021 order separates adjudication of the mortgaged properties from direct sale of the unencumbered properties for EUR 400,000.
 5. Protocol 457 concerns the 159 mortgaged apartments; it does not by itself prove a second transfer of the unencumbered premises.
 6. The 2016 definitive-text figure of EUR 9,052,251.69 is a credit-classification figure and must not automatically be treated as the 2022 payoff amount.
 7. A May 2022 registry note still showed both mortgages, despite the deed requesting cancellation. The register position therefore requires property-by-property historical and current certification.
 8. The Actúa report values the functional unit and component groups but expressly states that its formal purpose/methodology was not an ECO/805/2003 valuation. The legal consequence remains a counsel-validation issue, not an automatic universal-nullity conclusion.
+9. Protocol 457 is not Mortgage Enforcement 90/2012. The EH90 satisfaction/cancellation path and the one-to-one recovery ledger remain separately open.
 
 ## Prior-use warning
 

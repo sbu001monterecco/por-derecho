@@ -27,6 +27,18 @@ This file is the human-readable companion to `data/sources.json`.
 | `SRC-CC-ART-1528` | official law | Assignment and accessory-right framework | verified official | public safe |
 | `SRC-CC-ARTS-1902-1903` | official law | Direct fault and responsibility-for-others framework | verified official | public safe |
 | `SRC-LSC-SEGREGATION-HISTORICAL` | historical law | 2022 temporal-law succession framework | verified official | public safe |
+| `SRC-LAW-9-2012-SAREB-FRAMEWORK` | 2012-11-14 | Statutory SAREB transfer framework; not the specific LPB schedule/economics | verified official | public safe |
+| `SRC-RD-1559-2012-SAREB-FRAMEWORK` | 2012-11-15 | Implementing SAREB framework; not transaction-specific proof | verified official | public safe |
+| `SRC-REGISTRY-FINCA-8751-2022` | 2022-05-06 | Sample finca 8751: Bankia→SAREB, SAREB→PH122 and PH122→CAM registry chain | verified primary for one sample finca only | public-safe derivative |
+| `SRC-LAJ-2015-11-20-PH122-SUBSTITUTION` | 2015-11-20 | Historical court-office trail joining PH122's request to substitute into SAREB's position | docket-derived; signed binary open | public safe |
+| `SRC-PH122-BALANCE-CERTIFICATES-2017` | 2017-10-20 | PH122 states €12,251,446.21 combined loan balance | creditor party certificates; not price/payment/audit | public-safe derivative |
+| `SRC-PROTOCOL-869-2018` | 2018-05-17 | Loan 1: €7,792,421.02 + €1,015,788.65 + €3,079,104.66 = €11,887,314.33 | verified primary; CAM-supplied accounting | public-safe derivative |
+| `SRC-PROTOCOL-870-2018` | 2018-05-17 | Loan 2: €839,441 + €109,512.11 + €329,564.92 = €1,278,518.03 exactly | verified primary; CAM-supplied accounting | public-safe derivative |
+| `SRC-DEFINITIVE-CREDIT-2016` | 2016 | €9,052,251.69 quantified specially privileged total in the controlled definitive-text record | primary derivative; certified complete chain open | public safe |
+| `SRC-AUTO-2018-06-04-DEBT-COMPONENTS` | 2018-06-04 | Uses Protocols 869/870 for then-current better-offer figures | verified primary; not final closing ledger | public safe |
+| `SRC-AUTO-2021-01-25-CAP` | 2021-01-25 | €3,079,104.66→€3,182,000 first-loan default-interest cap step in competitive framework | verified primary | public safe |
+| `SRC-EDICT-2021-01-29` | 2021-01-29 | €13,168,082.02 better-offer mortgage threshold; separate €400,000 branch | verified primary | public safe |
+| `SRC-PROTOCOL-457-2022` | 2022-02-21 | 159-finca dación; six printed components total €13,065,186.68 and cap step reaches stated €13,168,082.02 consideration | verified primary; legal/closing bridge open | public-safe derivative |
 | `SRC-STS-1621-2024-TO-RETRIEVE` | 2024 | Candidate authority on assignee/originator separation | primary copy required | internal only until verified |
 
 ## Source-use rule
@@ -34,3 +46,7 @@ This file is the human-readable companion to `data/sources.json`.
 The existence of an email, filing or demand proves that the communication or allegation was made. It does not automatically prove the legal characterisation or substantive accusation contained in it.
 
 The 15 February 2018 order is carried as a controlling adverse/mixed source. No Article 1535 or assignment theory may be presented without it.
+
+The Registry chain is currently controlled through **finca 8751 as a sample only**. It cannot be promoted into portfolio-wide or all-finca completeness without the deeds, schedules and certified tracts.
+
+Protocol 870 contains no internal €30 arithmetic mismatch: its components total €1,278,518.03 exactly. The open €30 issue is a later **cross-source** movement from €839,441 to €839,411 in the 2021/Protocol-457 source family. Protocol 457's arithmetic cap step is explainable; the legal-classification, payoff and closing-account bridge is not thereby closed.

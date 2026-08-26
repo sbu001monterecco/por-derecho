@@ -171,9 +171,10 @@ Keep monetary functions separate:
 
 - **€9,052,251.69** — privileged-credit figure in the controlled record;
 - **€3,079,104.66** — interest-related / competitive component requiring legal classification;
-- **€12,768,082.02** — amount attributed to credit/dación in the 2022 implementation record;
-- **€400,000** — separate cash-sale component;
-- **€13,168,082.02** — aggregate economic magnitude when the two branches are added.
+- **€13,168,082.02** — amount stated in Protocol 457 as debt serving as consideration for the 159-finca mortgage-credit dación, after the €102,895.34 arithmetic step from €3,079,104.66 to the €3,182,000 cap;
+- **€400,000** — separate 31-finca cash-sale branch, not included in or to be subtracted from Protocol 457's €13,168,082.02.
+
+The six figures printed in Protocol 457 total **€13,065,186.68** before the cap step. This arithmetic explanation does not close the legal/classification or final closing-account bridge. Protocol 457 is also distinct from Mortgage Enforcement 90/2012; it does not by itself prove EH90 satisfaction or cancellation.
 
 Do not allow a figure to migrate automatically between:
 
