@@ -7,6 +7,7 @@ on:
       - 'assets/optimum-reader-journey-finish-20260818.js'
       - 'assets/ricpe-filed-status-20260817.js'
       - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'assets/unitary-public-shell-20260818.js'
       - 'scripts/render_optimum_reader_journey.mjs'
       - 'archive/OPTIMUM_USER_JOURNEY_EXECUTION_PROMPT_18AUG2026.md'
   push:
@@ -16,7 +17,9 @@ on:
       - 'assets/optimum-reader-journey-finish-20260818.js'
       - 'assets/ricpe-filed-status-20260817.js'
       - 'assets/supervisory-practice-entrypoints-20260818.js'
+      - 'assets/unitary-public-shell-20260818.js'
       - 'scripts/render_optimum_reader_journey.mjs'
+      - 'archive/OPTIMUM_USER_JOURNEY_EXECUTION_PROMPT_18AUG2026.md'
 
 permissions:
   contents: read
@@ -28,7 +31,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -60,7 +63,7 @@ jobs:
           done
           cat /tmp/psr-http.log
           exit 1
-      - name: Render and validate desktop/mobile journeys
+      - name: Render and validate cross-device journeys
         env:
           PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
           PSR_SCREENSHOT_DIR: artifacts/optimum-reader-journey
