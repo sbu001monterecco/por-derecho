@@ -130,8 +130,8 @@
     boundary.dataset.mp357CustodyBoundary20260821 = 'true';
     boundary.className = 'editorial-rule';
     boundary.innerHTML = isEn
-      ? `<strong>357/2024 boundary:</strong> the same-address commercial evidence makes the proceeding more relevant as a possible records-custody/disclosure node. It does not prove that those records entered the debtor schedules or Auren workfile, that either judge personally saw Sun Park material, or that the successive judicial names reflect anything improper.`
-      : `<strong>Límite 357/2024:</strong> la evidencia comercial de misma dirección hace más relevante el procedimiento como posible nodo de custodia/revelación documental. No prueba que esos registros entraran en los anexos del deudor o en el archivo de Auren, que cualquiera de los magistrados viera personalmente material Sun Park, ni que la sucesión de nombres judiciales refleje impropiedad alguna.`;
+      ? `<strong>357/2024 boundary:</strong> signed Auto 97/2025 fixes the joint three-debtor chronology and Auren appointment. The same-address commercial evidence makes the proceeding a possible records-custody/disclosure node; it does not prove that Sun Park records entered any debtor schedule or Auren workfile, that either judge personally saw them, or that the earlier register attribution reflects anything improper.`
+      : `<strong>Límite 357/2024:</strong> el Auto 97/2025 firmado fija la cronología conjunta de tres deudores y el nombramiento de Auren. La evidencia comercial de misma dirección hace del procedimiento un posible nodo de custodia/revelación; no prueba que registros Sun Park entraran en anexos de ningún deudor o en el archivo Auren, que los magistrados los vieran personalmente ni que la atribución registral anterior refleje impropiedad.`;
     const sunPark = document.querySelector('#sun-park .shell');
     if (sunPark) sunPark.append(boundary);
   }

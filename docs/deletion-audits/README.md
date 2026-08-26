@@ -16,3 +16,4 @@ This directory contains durable thread-deletion safety audits. Each audit record
 - [26 August 2026 — AC loyalty, four retracto/tanteo tracks, prescription, damages and recovery closeout](2026-08-26-ac-loyalty-retracto-prescription-recovery-thread.md)
 - [26 August 2026 — CaixaBank / Bankia mortgage-swap 360, lender-liability and publication closeout](2026-08-26-caixabank-mortgage-swap-360-thread.md)
 - [26 August 2026 — credit multiple lives, NPL and notarial-document 360 publication thread](2026-08-26-credit-multiple-lives-npl-notarial-360-thread.md)
+- [26 August 2026 — FTI / Meeting Point / Club Sei / SEPI and email-correction continuity](2026-08-26-fti-meeting-point-sepi-email-correction-thread.md)

@@ -1,0 +1,122 @@
+{
+  "schema": "por-derecho.fti-meeting-point-email-correction-action-state.v1",
+  "control_date": "2026-08-26",
+  "repository_base_sha": "16dd443b837f29c94892722a6c80459432b4e992",
+  "classification": "PUBLIC_SAFE_OPERATIONAL_STATE",
+  "overall_state": "PREPARED_HOLD_NOT_AUTHORIZED",
+  "send_authority": {
+    "current_authorization": false,
+    "user_final_verification_completed": false,
+    "rule": "No send, resend, correction, forward or attachment-only follow-up without an immutable complete preview and a separate fresh final authorization; every change voids authorization."
+  },
+  "native_mail_reconciliation": {
+    "source_state": "VERIFIED_FROM_PRIVATE_NATIVE_MAIL",
+    "events": [
+      {
+        "sequence": 1,
+        "type": "original_broad_message",
+        "sent_date": "2026-08-22",
+        "to_count": 1,
+        "cc_count": 27,
+        "bcc_count": 0,
+        "attachment_count": 10,
+        "attachment_classes": [
+          "six German-English-Spanish PNG exhibits",
+          "Club Sei brochure extract",
+          "Auren appointment order",
+          "two SEPI records"
+        ]
+      },
+      {
+        "sequence": 2,
+        "type": "consolidated_bilingual_correction",
+        "sent_date": "2026-08-22",
+        "to_count": 1,
+        "cc_count": 37,
+        "bcc_count": 0,
+        "attachment_count": 0
+      },
+      {
+        "sequence": 3,
+        "type": "recipient_only_correction",
+        "sent_date": "2026-08-22",
+        "to_count": 1,
+        "cc_count": 37,
+        "bcc_count": 0,
+        "attachment_count": 0
+      }
+    ],
+    "attachment_omission_scope": "CORRECTIVE_TRANSMISSIONS_ONLY_NOT_ORIGINAL",
+    "permanent_failure_route_count": 2,
+    "permanent_failure_route_class": "FTI_SIDE_ROUTES",
+    "permanent_failures_affected_all_three_events": true,
+    "delivery_to_other_routes": "UNCONFIRMED_BY_SENT_STATE_ALONE",
+    "no_resend_located": true,
+    "user_authorization_correction": "USER_STATES_TRANSMISSIONS_PRECEDED_FINAL_VERIFICATION_AND_AUTHORIZATION"
+  },
+  "recipient_perimeter": {
+    "state": "FROZEN_PRIVATE_MANIFEST",
+    "public_summary": "The last user-corrected perimeter restores one German insolvency-side professional alongside the existing legal-adviser route, excludes only the expressly identified Concurso 36/2012 administrator recipient, and retains the previously approved media cohort.",
+    "exact_names_and_addresses": "PRIVATE_SOURCE_SYSTEM_ONLY",
+    "new_recipients_allowed": false,
+    "change_invalidates_readiness": true
+  },
+  "held_package": {
+    "state": "PREPARED_HOLD_NOT_AUTHORIZED",
+    "gmail_draft_created": false,
+    "transmission_after_hold": false,
+    "attachment_count": 3,
+    "attachments": [
+      {
+        "filename": "Anlage-1-RICPE-Sun-Park-Rollen-DE.png",
+        "bytes": 244625,
+        "sha256": "987e2801964d6d08bd092b254b24679d1e98b88128694cba3d60db3d0d2ab8ab"
+      },
+      {
+        "filename": "Anlage-2-PwC-Kenntnispunkt-2016-DE.png",
+        "bytes": 285149,
+        "sha256": "0f73aa10fe06374233c66809a22e861130dcce16dd67ee1060b7d63d36889752"
+      },
+      {
+        "filename": "Anlage-3-Meeting-Point-Club-Sei-Lanzarote-Broschuere-2020.pdf",
+        "bytes": 243298,
+        "pages": 4,
+        "sha256": "b52f47ad07b03e23008e130417c64d22368a4ab3b96edf44c3b1ee4168c32a0e",
+        "filename_date_status": "NOT_APPROVED_PROVENANCE_CONFLICT_OPEN"
+      }
+    ],
+    "link_count": 5,
+    "links": [
+      "https://sbu001monterecco.github.io/por-derecho/de/lava-verde-club-sei-meeting-point/",
+      "https://sbu001monterecco.github.io/por-derecho/es/lava-verde-club-sei-meeting-point/",
+      "https://sbu001monterecco.github.io/por-derecho/en/lava-verde-club-sei-meeting-point/",
+      "https://sbu001monterecco.github.io/por-derecho/en/private-investigation-2018-meeting-point/",
+      "https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s"
+    ],
+    "blocking_defects": [
+      "German route currently redirects to English and is not a German dossier",
+      "brochure original-date provenance conflicts with the proposed 2020 filename",
+      "first German PNG must distinguish Eduardo Sanchez's statement from the Enrique Guerra interview context"
+    ]
+  },
+  "integrity": {
+    "current_private_bundle_sha256": "7e6b2a2f9c9a0c2af4d3d4ae5bf15eef5f8dab9a9e1948cac44d47051152f49a",
+    "superseded_reported_bundle_sha256": "486195d36da68ab1217e5ce88426f29a73147b189c1a38c45d032aacf70bda43",
+    "rule": "The superseded hash does not identify the current retrieved ZIP; exact current per-file hashes control the proposed attachments. Recalculate after any change."
+  },
+  "repository_recovery": {
+    "thread_recorded_unreachable_commits": [
+      "d7bc25e5",
+      "971f846b",
+      "6f327ef4",
+      "9cb1e11b"
+    ],
+    "state": "BLOCKED_RECOVERY_UNTIL_REIMPLEMENTED_FROM_CURRENT_MAIN_AND_PRIMARY_SOURCES"
+  },
+  "caepr_caret_state": {
+    "result": "PARTIAL_NOT_ALL_IS_CARET",
+    "reason": "The exact three Spanish debtors, Auren legal person and proceeding 357/2024 are not yet all reconciled to immutable CAEPR records; no caret is forced onto unresolved objects."
+  },
+  "privacy": "Exact recipients, addresses, subjects, private bodies, provider identifiers and native message locators remain in the connected private source system and must not be copied into public Git.",
+  "external_action_authorized": false
+}

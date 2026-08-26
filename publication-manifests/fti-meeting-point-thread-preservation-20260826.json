@@ -1,0 +1,59 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "fti-meeting-point-thread-preservation-20260826",
+  "control_date": "2026-08-26",
+  "baseline_main_sha": "16dd443b837f29c94892722a6c80459432b4e992",
+  "branch": "codex/fti-thread-preservation-20260826",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "status": "validation_and_publication_pending",
+  "purpose": "Preserve the corrected Meeting Point 357/2024 chronology, SEPI amount, attributed Club Sei causation thesis, Romera boundary and exact public-safe email action state before deletion of the originating thread.",
+  "expected_routes": {
+    "en": [
+      "en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html",
+      "en/lava-verde-club-sei-meeting-point/index.html",
+      "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html"
+    ],
+    "es": [
+      "es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html",
+      "es/lava-verde-club-sei-meeting-point/index.html",
+      "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html"
+    ],
+    "de_compatibility": [
+      "de/lava-verde-club-sei-meeting-point/index.html"
+    ]
+  },
+  "control_assets": [
+    "archive/CORRECTION_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md",
+    "intelligence/UNITARY_EVIDENCE_PRIORITY_LEDGER_24AUG2026.csv",
+    "ops/FTI_MEETING_POINT_EMAIL_CORRECTION_ACTION_STATE_26AUG2026.json",
+    "docs/deletion-audits/2026-08-26-fti-meeting-point-sepi-email-correction-thread.md",
+    "EMAIL_SEND_FINAL_AUTHORIZATION_RULE.md",
+    "CHATGPT_START_HERE.md"
+  ],
+  "publication_boundaries": [
+    "Three Spanish debtors and the corrected 23/31-Jul-2024 chronology are fixed by signed Auto 97/2025.",
+    "Meeting Point support is EUR 31m; EUR 56m combines separate Meeting Point and BLUESEA authorisations.",
+    "No present source traces FASEE money into Sun Park or proves public-funds misuse or creditor detriment.",
+    "Control-to-marketing-to-adjudication causation is Gil Marer/Aweswell's attributed allegation and investigative model, not a final criminal finding.",
+    "Romera is a possible witness/source and not an accused participant; the reported CAM statement remains party-recap evidence rather than a native authenticated admission.",
+    "The German route remains an English compatibility redirect and is not a complete German dossier.",
+    "Exact email recipients and private message data stay outside public Git; the replacement package remains PREPARED/HOLD and not authorised.",
+    "CAEPR coverage for the exact FTI/Meeting Point/Auren/357 objects is partial; no caret is forced."
+  ],
+  "required_validation": [
+    "scripts/validate_repository_preservation.py",
+    "scripts/validate_publication_integrity.py",
+    "scripts/validate_audience_experience.py",
+    "scripts/validate_sent_email_link_continuity.py",
+    "scripts/validate_mission_critical_repo.py",
+    "relevant FTI/Meeting Point route and live validators"
+  ],
+  "deployment_evidence": null,
+  "live_verification_evidence": null,
+  "external_email_action_authorized": false,
+  "deletion_status": "NOT_DELETION_SAFE_UNTIL_MERGED_DEPLOYED_AND_LIVE_READ"
+}

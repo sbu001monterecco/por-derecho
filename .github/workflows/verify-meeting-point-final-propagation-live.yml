@@ -6,6 +6,12 @@ on:
     paths:
       - 'assets/traceability-crosslinks-20260821.js'
       - 'assets/site.js'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
       - '.github/workflows/verify-meeting-point-final-propagation-live.yml'
   workflow_dispatch:
 
@@ -41,8 +47,12 @@ jobs:
           const targets = [
             { key: 'lava-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'No'] },
             { key: 'lava-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'do not'] },
-            { key: '357-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['Límite 357/2024', 'Auren', 'impropiedad'] },
-            { key: '357-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['357/2024 boundary', 'Auren', 'improper'] },
+            { key: '357-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['Límite 357/2024', 'tres deudores', 'Auren', 'impropiedad'] },
+            { key: '357-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['357/2024 boundary', 'three-debtor', 'Auren', 'improper'] },
+            { key: 'causation-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Alegación de causalidad penal, no sentencia', 'causaron, condicionaron y facilitaron', 'Límite Romera / versión CAM'] },
+            { key: 'causation-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Criminal-causation allegation, not a judgment', 'caused, conditioned and enabled', 'Romera / CAM statement boundary'] },
+            { key: 'chronology-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['23 JUL 2024', '31 JUL 2024', 'Auto 97/2025'] },
+            { key: 'chronology-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['23 JUL 2024', '31 JUL 2024', 'Auto 97/2025'] },
             { key: 'takeover-es', url: `${base}/es/toma-control-sun-park-7-junio-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] },
             { key: 'takeover-en', url: `${base}/en/sun-park-takeover-7-june-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] }
           ];

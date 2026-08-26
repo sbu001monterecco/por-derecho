@@ -209,20 +209,30 @@ A rescan located the FTI compliance/Bierbach/Rödl responses from June–Decembe
 
 ---
 
-## 7. Spain — Meeting Point Spain 357/2024 is a distinct restructuring/pre-insolvency node
+## 7. Spain — three Meeting Point debtors in 357/2024 form a distinct restructuring/pre-insolvency node
 
-The current public and repository record for **Meeting Point Spain S.L.U. — 357/2024** must remain separate from the German insolvency proceedings.
+Signed **Auto 97/2025** identifies three joint applicants/debtors in proceeding 357/2024:
+
+- **Meeting Point Hotelmanagement (Canaries), S.L.U.**;
+- **Meeting Point Spain, S.L.U.**; and
+- **Meeting Point Investment, S.L.U.**
+
+They and the Spanish proceeding must remain separate from the German insolvency debtors and proceedings.
 
 Controlled chronology:
 
-- **18 September 2024** — initial communication/decree referenced in later Registro Público Concursal material for negotiations under **articles 583 et seq. TRLC**;
-- **24 October 2024** — later registry act extending effects, attributed in the public registry copy to Alberto López Villarrubia;
-- **18 February 2025** — later registry act appointing **Auren** as restructuring expert, attributed in the registry copy to Guillermo Fernández García.
+- **23 July 2024** — all three debtors file the negotiations communication under **articles 583 et seq. TRLC**;
+- **31 July 2024** — a diligence deems the communication made;
+- **18 September 2024** — later decree/effects-stage act referenced in the 24 October material; it is not the initial filing/communication;
+- **24 October 2024** — extension of effects, attributed in three public registry copies to Alberto López Villarrubia;
+- **23 January 2025** — the same three debtors request appointment of **AUREN REESTRUCTURACIONES SLP**; and
+- **18 February 2025** — electronically signed Auto 97/2025, issued by Guillermo Fernández García, appoints Auren for all three debtors.
 
 Judicial-name boundary:
-- registry attribution does not itself prove personal signature;
-- two names in successive registry acts do not establish irregularity;
-- signed originals and reparto/substitution/reassignment records remain the finite verification route.
+- Auto 97/2025 now proves the signatory and procedural background for the 18 February appointment;
+- registry attribution still does not itself prove who personally signed the 24 October original;
+- two names in successive acts do not establish irregularity; and
+- the signed 24 October act and reparto/substitution/reassignment records remain the finite verification route.
 
 Public controlled page:
 - `/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/`
@@ -233,6 +243,29 @@ Public controlled page:
 357/2024 is relevant because debtor schedules, claims, litigation lists, contingency disclosures, communications, expert requests and Auren's work file may establish whether Sun Park / Club Sei records or liabilities existed and how they were treated.
 
 It is **not** proof of concealment, fraudulent restructuring or judicial impropriety.
+
+---
+
+## 7A. SEPI / FASEE — verified amount, separate operations and open source-and-use
+
+SEPI's 27 June 2022 record identifies **EUR 31 million** for Meeting Point Spain and Meeting Point Hotelmanagement (Canaries):
+
+- **EUR 20.7 million participating loan**; and
+- **EUR 10.3 million ordinary loan**.
+
+The reported **EUR 56 million** is the arithmetic aggregate of two separate authorised operations: Meeting Point EUR 31 million plus BLUESEA EUR 25 million. It is not one Meeting Point loan. BLUESEA later renounced its separately authorised support; do not treat that EUR 25 million as drawn Meeting Point finance.
+
+SEPI later reported partial Meeting Point repayments of **EUR 3.09 million** in 2022 and **EUR 5.3 million** in 2023. Subtracting them from EUR 31 million yields only intermediate arithmetic, not a certified current balance: interest, later movements and current account treatment remain unreconciled.
+
+Official sources:
+
+- https://www.sepi.es/es/sala-de-prensa/noticias/el-consejo-de-ministros-autoriza-nuevas-ayudas-con-cargo-al-fondo-de-apoyo
+- https://sepi.es/es/sala-de-prensa/noticias/el-fondo-de-apoyo-la-solvencia-de-empresas-estrategicas-cierra-2023-con-110
+- https://www.sepi.es/sites/default/files/2024-08/FASEE_Cuentas%20anuales_2023.pdf
+
+### Public-funds and creditor boundary
+
+No present record traces FASEE money into Sun Park, proves a Sun Park/Club Sei omission from SEPI or 357/2024, or establishes misuse of public funds or creditor detriment. The finite open package is: loan instruments and conditions; source-and-use; security; monitoring; repayments, interest and current exposure; treatment of litigation/contingencies; Auren and debtor records; and Portobello/BLUESEA due-diligence and handover files.
 
 ---
 
