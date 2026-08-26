@@ -127,33 +127,85 @@ jobs:
             else: failures.append(f'{url}: {last}')
 
           state_url=base+'/ops/CURRENT_UNITARY_STATE.json'
+          merge_sha='77e2ba300af45a953947160af63283a64512e876'
+          tree_sha='4f0ac26c5548ae44c68933306c68165cbb6c973e'
           last=''
           for _ in range(12):
             try:
               body=fetch(state_url)
               state=json.loads(body)
-              assert state.get('control_id')=='PD-UNITARY-STATE-20260825-01'
+              assert state.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert state.get('status')=='LIVE_VERIFIED'
               counts=state.get('identity_registry',{}).get('counts',{})
               assert counts=={'total':185,'PERSON':86,'ORGANISATION':66,'STRUCTURE':10,'INSTITUTION':13,'PROCEEDING':10}
-              pending=state.get('pending_material_publication',{})
-              assert pending.get('control_id')=='PD-UNITARY-STATE-20260826-01'
-              assert pending.get('state')=='PREPARED_PENDING_MERGE'
+              repository=state.get('repository',{})
+              assert repository.get('source_publication_merge_sha')==merge_sha
+              assert repository.get('verified_tree_sha')==tree_sha
+              promoted=state.get('promoted_material_publication',{})
+              assert promoted.get('control_id')=='PD-UNITARY-STATE-20260826-01'
+              assert promoted.get('state')=='LIVE_VERIFIED'
+              assert promoted.get('publication_merge_sha')==merge_sha
+              assert promoted.get('publication_tree_sha')==tree_sha
+              assert promoted.get('pages_run_id')==32942972472
+              assert promoted.get('live_verification_run_id')==32942975508
+              assert promoted.get('live_verification_job_id')==98097657687
               material=state.get('material_updates',{})
               assert material.get('repository_latest_material_date')=='2026-08-26'
-              assert material.get('last_live_verified_material_date')=='2026-08-25'
-              assert material.get('public_parity')=='2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING'
-              readback_state=state.get('publication',{}).get('current_sha_edge_readback',{}).get('state')
-              assert readback_state in {
-                'PENDING_EXACT_MARKER_READBACK_AFTER_THIS_CONTROL_PLANE_MERGES',
-                'LIVE_VERIFIED'
-              }
-              print(f'LIVE VERIFIED {state_url} :: structured JSON :: state={readback_state}')
+              assert material.get('last_live_verified_material_date')=='2026-08-26'
+              assert material.get('public_parity')=='2026-08-26_LIVE_VERIFIED'
+              publication=state.get('publication',{})
+              pages=publication.get('last_pages_deployment',{})
+              assert pages.get('sha')==merge_sha and pages.get('tree_sha')==tree_sha
+              assert pages.get('run_id')==32942972472 and pages.get('run_number')==1128
+              assert pages.get('completed_at')=='2026-08-26T07:29:45Z'
+              readback=publication.get('current_sha_edge_readback',{})
+              assert readback.get('state')=='LIVE_VERIFIED'
+              assert readback.get('workflow_run_id')==32942975508
+              assert readback.get('workflow_run_number')==4
+              assert readback.get('job_id')==98097657687
+              assert readback.get('head_sha')==merge_sha and readback.get('tree_sha')==tree_sha
+              assert readback.get('completed_at')=='2026-08-26T07:29:55Z'
+              assert readback.get('verified_url_count')==21
+              assert len(publication.get('live_urls',[]))==21
+              print(f'LIVE VERIFIED {state_url} :: structured JSON :: state={readback.get("state")}')
               break
             except Exception as exc:
               last=str(exc); time.sleep(10)
           else:
             failures.append(f'{state_url}: structured validation failed: {last}')
+
+          manifest_url=base+'/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json'
+          last=''
+          for _ in range(12):
+            try:
+              manifest=json.loads(fetch(manifest_url))
+              assert manifest.get('control_id')=='PD-UNITARY-STATE-20260826-01'
+              assert manifest.get('current_state')=='LIVE_VERIFIED'
+              assert manifest.get('status')=='live_verified'
+              assert manifest.get('publication_merge_sha')==merge_sha
+              assert manifest.get('publication_tree_sha')==tree_sha
+              assert manifest.get('pages_run_id')==32942972472
+              assert manifest.get('live_verification')=='passed_exact_no_cache'
+              allegation=manifest.get('controlling_allegation',{})
+              assert allegation.get('not_a_finding') is True
+              assert allegation.get('independent_of_rdm_manifest') is True
+              assert allegation.get('rdm_manifest_evidential_support')=='NONE_UNTIL_RELEVANT_NATIVES_ARE_ACQUIRED_AUTHENTICATED_AND_TESTED'
+              private_source=manifest.get('private_source',{})
+              assert private_source.get('phase_b')=='NATIVE_EMAIL_ATTACHMENT_AND_DRIVE_ACQUISITION_AND_ANALYSIS_OPEN'
+              readback=manifest.get('live_verification_evidence',{})
+              assert readback.get('workflow_run_id')==32942975508
+              assert readback.get('workflow_run_number')==4
+              assert readback.get('job_id')==98097657687
+              assert readback.get('head_sha')==merge_sha and readback.get('tree_sha')==tree_sha
+              assert readback.get('completed_at')=='2026-08-26T07:29:55Z'
+              assert readback.get('verified_url_count')==21
+              assert len(manifest.get('live_urls',[]))==21
+              print(f'LIVE VERIFIED {manifest_url} :: structured JSON')
+              break
+            except Exception as exc:
+              last=str(exc); time.sleep(10)
+          else:
+            failures.append(f'{manifest_url}: structured validation failed: {last}')
 
           if failures: raise SystemExit('LIVE VERIFICATION FAILED\n - '+'\n - '.join(failures))
 
@@ -165,12 +217,12 @@ jobs:
             echo
             echo "- Event: $GITHUB_EVENT_NAME"
             echo "- SHA: $GITHUB_SHA"
-            echo '- Control: `PD-UNITARY-STATE-20260825-01`'
-            echo '- Pending material control: `PD-UNITARY-STATE-20260826-01 / PREPARED_PENDING_MERGE`'
+            echo '- Control: `PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED`'
+            echo '- Evidence: merge `77e2ba300af45a953947160af63283a64512e876`, Pages `32942972472`, verifier `32942975508` / job `98097657687`.'
             echo '- Identity denominator: `185 / 86 / 66 / 10 / 13 / 10`'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Source parity and syntax verified; public readback is reserved for the post-merge main push.'
             else
-              echo '- Public ES/EN identity and 26-Aug update routes, structured state JSON (25-Aug live plus 26-Aug pending), updates JSON, sitemap and robots were verified.'
+              echo '- Public ES/EN identity and 26-Aug update routes, promoted state and manifest JSON, updates JSON, sitemap and robots were verified.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"

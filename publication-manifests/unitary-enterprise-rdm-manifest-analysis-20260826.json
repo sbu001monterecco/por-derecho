@@ -3,8 +3,8 @@
   "publication_id": "unitary-enterprise-rdm-manifest-analysis-20260826",
   "control_id": "PD-UNITARY-STATE-20260826-01",
   "control_date": "2026-08-26",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "prepared_pending_merge",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "expected_routes": {
     "es": [
@@ -25,9 +25,99 @@
     ]
   },
   "source_main_sha": "5b1652e00151a3ea2944cd0519cdaf2e04da4453",
-  "publication_merge_sha": null,
-  "pages_run_id": null,
-  "live_verification": "pending",
+  "merge_sha": "77e2ba300af45a953947160af63283a64512e876",
+  "publication_merge_sha": "77e2ba300af45a953947160af63283a64512e876",
+  "publication_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+  "pages_run_id": 32942972472,
+  "live_verification": "passed_exact_no_cache",
+  "promoted_at": "2026-08-26T07:32:47Z",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 32942972472,
+    "pages_run_number": 1128,
+    "head_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at": "2026-08-26T07:29:45Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-evidence-map/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/",
+    "https://sbu001monterecco.github.io/por-derecho/en/unitary-record/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/es/",
+    "https://sbu001monterecco.github.io/por-derecho/es/mapa-probatorio-penal-unitario/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
+    "https://sbu001monterecco.github.io/por-derecho/assets/prosecution-public-entry-20260821.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/material-updates-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_UNITARY_STATE.json",
+    "https://sbu001monterecco.github.io/por-derecho/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json"
+  ],
+  "live_verification_evidence": {
+    "workflow": ".github/workflows/verify-unitary-enterprise-attribution-live.yml",
+    "workflow_run_id": 32942975508,
+    "workflow_run_number": 4,
+    "job_id": 98097657687,
+    "head_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+    "source_publication_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "status": "completed",
+    "conclusion": "success",
+    "completed_at": "2026-08-26T07:29:55Z",
+    "observed_at": "2026-08-26T07:32:47Z",
+    "verified_url_count": 21,
+    "checks": [
+      "seven English reader and feed routes",
+      "seven Spanish reader and feed routes",
+      "two bilingual runtime assets",
+      "material-updates JSON",
+      "position addendum and native-analysis prompt",
+      "structured CURRENT_UNITARY_STATE JSON control",
+      "structured unitary-enterprise publication manifest"
+    ]
+  },
+  "validation": {
+    "evidence": [
+      {
+        "type": "merge",
+        "sha": "77e2ba300af45a953947160af63283a64512e876",
+        "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+        "status": "merged"
+      },
+      {
+        "type": "pages_deployment",
+        "workflow_run_id": 32942972472,
+        "workflow_run_number": 1128,
+        "head_sha": "77e2ba300af45a953947160af63283a64512e876",
+        "completed_at": "2026-08-26T07:29:45Z",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "type": "exact_edge_readback",
+        "workflow_run_id": 32942975508,
+        "workflow_run_number": 4,
+        "job_id": 98097657687,
+        "head_sha": "77e2ba300af45a953947160af63283a64512e876",
+        "completed_at": "2026-08-26T07:29:55Z",
+        "observed_at": "2026-08-26T07:32:47Z",
+        "verified_url_count": 21,
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
   "purpose": "Control the attributed unitary economic-criminal-enterprise position and the public-safe Phase-A analysis of the RDM private-mailbox manifest without treating the manifest as native evidence.",
   "controlling_allegation": {
     "id": "ALG-ENT-018",

@@ -1,10 +1,19 @@
 # CURRENT UNITARY STATE — Project Sun Rock / Por Derecho
 
-**Control:** `PD-UNITARY-STATE-20260825-01`  
-**Status:** `LIVE_VERIFIED`  
-**Verified:** 25 August 2026 at 23:56:02 UTC  
-**Publication merge:** `c43e518150e9b8535b8829971d7cd36045c99b5f`  
-**Verification fix/main SHA:** `4088f7ffff80df788137ce91328b11fe3de6b563`  
+**Control:** `PD-UNITARY-STATE-20260826-01`
+
+**Status:** `LIVE_VERIFIED`
+
+**Verified:** 26 August 2026 at 07:32:47 UTC
+
+**Publication merge:** `77e2ba300af45a953947160af63283a64512e876`
+
+**Publication tree:** `4f0ac26c5548ae44c68933306c68165cbb6c973e`
+
+**Pages:** run `32942972472` / #1128, completed 26 August 2026 at 07:29:45 UTC
+
+**Exact readback:** run `32942975508` / #4, job `98097657687`, completed 26 August 2026 at 07:29:55 UTC
+
 **Machine-readable authority:** `ops/CURRENT_UNITARY_STATE.json`
 
 This file separates four questions that had drifted together:
@@ -16,31 +25,49 @@ This file separates four questions that had drifted together:
 
 A successful deployment is not automatically an exact-content verification. A governance-only or deletion-closeout commit may advance `main` without changing a reader-facing allegation or merits proposition.
 
-## Pending 26 August material — not yet live
+## 26 August material — live verified
 
-`PD-UNITARY-STATE-20260826-01` is a separate, additive publication candidate in state `PREPARED_PENDING_MERGE`, prepared from source main `5b1652e00151a3ea2944cd0519cdaf2e04da4453`. It records Gil Marer and Aweswell's current attributed position that the evidence must be tested as **one continuing economic-criminal enterprise advanced through successive adoption and divided functions**, together with the public-safe Phase-A treatment of the reserved declarant mailbox/Drive manifest.
+`PD-UNITARY-STATE-20260826-01` is now the controlling `LIVE_VERIFIED` specialist release. It was prepared from source main `5b1652e00151a3ea2944cd0519cdaf2e04da4453` and published by merge `77e2ba300af45a953947160af63283a64512e876`, tree `4f0ac26c5548ae44c68933306c68165cbb6c973e`. It records Gil Marer and Aweswell's current attributed position that the evidence must be tested as **one continuing economic-criminal enterprise advanced through successive adoption and divided functions**, together with the public-safe Phase-A treatment of the reserved declarant mailbox/Drive manifest.
 
-This pending material does **not** replace the last live-verified 25 August control. Its publication manifest is `publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json`. Promotion to `LIVE_VERIFIED` requires a merged commit, successful deployment of that exact source and no-cache readback of every affected Spanish/English route and machine-readable source. Until then:
+Pages run `32942972472` / #1128 deployed that exact merge successfully. Dedicated verifier run `32942975508` / #4, job `98097657687`, completed successfully and a no-cache observation at 07:32:47 UTC confirmed all 21 declared public URLs. Therefore:
 
 - repository latest material date: **26 August 2026**;
-- last live-verified material date: **25 August 2026**;
-- public parity: `2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING`.
+- last live-verified material date: **26 August 2026**;
+- public parity: `2026-08-26_LIVE_VERIFIED`.
 
 The 26 August position is an attributed factual/prosecutorial theory. It is not a judgment, does not itself establish a statutory organisation or group under Articles 570 bis/ter CP, does not prove an original pact, does not transfer knowledge or intent, and does not dispense with offence-by-offence, actor-by-actor proof. The manifest is a discovery map only: it neither supports nor establishes `ALG-ENT-018` unless and until native originals are lawfully acquired, authenticated and tested against the contrary record.
 
+### Complete 21-URL no-cache readback set
+
+1. `https://sbu001monterecco.github.io/por-derecho/en/`
+2. `https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-evidence-map/`
+3. `https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/`
+4. `https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/`
+5. `https://sbu001monterecco.github.io/por-derecho/en/unitary-record/`
+6. `https://sbu001monterecco.github.io/por-derecho/en/updates/`
+7. `https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml`
+8. `https://sbu001monterecco.github.io/por-derecho/es/`
+9. `https://sbu001monterecco.github.io/por-derecho/es/mapa-probatorio-penal-unitario/`
+10. `https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/`
+11. `https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/`
+12. `https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/`
+13. `https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/`
+14. `https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml`
+15. `https://sbu001monterecco.github.io/por-derecho/assets/prosecution-public-entry-20260821.js`
+16. `https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js`
+17. `https://sbu001monterecco.github.io/por-derecho/assets/data/material-updates-v1.json`
+18. `https://sbu001monterecco.github.io/por-derecho/archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`
+19. `https://sbu001monterecco.github.io/por-derecho/archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`
+20. `https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_UNITARY_STATE.json`
+21. `https://sbu001monterecco.github.io/por-derecho/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json`
+
 ## Verified repository and public state
 
-- PR #1031 merged the synchronized control plane at `c43e518150e9b8535b8829971d7cd36045c99b5f`.
-- GitHub Pages deployment run `32912074201` / #1119 completed successfully against that publication merge.
-- The first readback located every required public route and asset but produced one false negative because it searched for pretty-printed JSON whitespace.
-- PR #1038 replaced that substring test with structured JSON validation and merged at `4088f7ffff80df788137ce91328b11fe3de6b563`.
-- Main-branch verification run `32912919872`, job `98010526784`, completed successfully and verified:
-  - Spanish and English identity routes;
-  - Spanish and English update routes;
-  - the structured unitary-state JSON and complete identity denominator;
-  - the material-updates JSON;
-  - the unitary-control-plane sitemap; and
-  - the robots declaration.
+- PR #1046 merged the 26 August unitary-enterprise package at `77e2ba300af45a953947160af63283a64512e876`, exact tree `4f0ac26c5548ae44c68933306c68165cbb6c973e`.
+- GitHub Pages deployment run `32942972472` / #1128 completed successfully against that exact publication merge at 07:29:45 UTC.
+- Main-branch verification run `32942975508` / #4, job `98097657687`, completed successfully at 07:29:55 UTC.
+- The 07:32:47 UTC observation records 21/21 no-cache live URLs: fourteen ES/EN reader or feed routes, two bilingual runtime assets, the material-updates JSON, the position addendum, the native-analysis prompt and two structured control records.
+- The prior 25 August control `PD-UNITARY-STATE-20260825-01`, publication merge `c43e518150e9b8535b8829971d7cd36045c99b5f` and verification fix `4088f7ffff80df788137ce91328b11fe3de6b563` remain preserved as historical release evidence.
 
 Repository main, Pages deployment and exact public readback remain separately recorded facts.
 
@@ -99,7 +126,8 @@ See `ops/PR_RECONCILIATION_LEDGER.json`.
 
 ## Next implementation sequence
 
-1. Rebuild and publish the owner/court-party network from current `main`.
-2. Add one source–proposition register and one platform-recovery/no-double-counting ledger.
-3. Publish bilingual unitary-status and recovery-denominator pages from those data.
-4. Migrate core reader facts from stacked runtime correction loaders toward generated static HTML while preserving every existing route and protected first-read section.
+1. Acquire and analyse authorised native email, attachment and Drive batches under the master prompt; do not treat manifest-only rows as evidential support.
+2. Rebuild and publish the owner/court-party network from current `main`.
+3. Add one source–proposition register and one platform-recovery/no-double-counting ledger.
+4. Publish bilingual unitary-status and recovery-denominator pages from those data.
+5. Migrate core reader facts from stacked runtime correction loaders toward generated static HTML while preserving every existing route and protected first-read section.

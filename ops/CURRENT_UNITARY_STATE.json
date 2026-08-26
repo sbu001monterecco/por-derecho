@@ -1,52 +1,77 @@
 {
   "schema": "por-derecho.current-unitary-state.v1",
-  "control_id": "PD-UNITARY-STATE-20260825-01",
-  "as_of": "2026-08-25T23:56:02Z",
+  "control_id": "PD-UNITARY-STATE-20260826-01",
+  "as_of": "2026-08-26T07:32:47Z",
   "status": "LIVE_VERIFIED",
   "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
   "repository": {
     "repository": "sbu001monterecco/por-derecho",
     "branch": "main",
-    "current_main_sha_at_preparation": "4088f7ffff80df788137ce91328b11fe3de6b563",
-    "source_publication_merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-    "verification_fix_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
-    "current_main_commit_class": "verification-only correction; no reader-facing allegation or merits proposition changed",
+    "current_main_sha_at_preparation": "77e2ba300af45a953947160af63283a64512e876",
+    "source_publication_merge_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "verified_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+    "current_main_commit_class": "material publication merge for the attributed unitary-enterprise position and public-safe RDM manifest control",
     "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
     "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only or deletion-closeout commits may advance main without changing reader-facing case propositions."
   },
   "publication": {
     "public_host": "https://sbu001monterecco.github.io/por-derecho/",
     "last_pages_deployment": {
-      "sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-      "run_id": 32912074201,
-      "run_number": 1119,
+      "sha": "77e2ba300af45a953947160af63283a64512e876",
+      "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "run_id": 32942972472,
+      "run_number": 1128,
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-08-25T23:44:01Z",
-      "completed_at": "2026-08-25T23:44:55Z"
+      "completed_at": "2026-08-26T07:29:45Z"
     },
     "current_sha_edge_readback": {
       "state": "LIVE_VERIFIED",
-      "workflow": ".github/workflows/verify-unitary-control-plane.yml",
-      "workflow_run_id": 32912919872,
-      "workflow_run_number": 12,
-      "job_id": 98010526784,
-      "head_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
-      "source_publication_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-      "verified_at": "2026-08-25T23:56:02Z",
+      "workflow": ".github/workflows/verify-unitary-enterprise-attribution-live.yml",
+      "workflow_run_id": 32942975508,
+      "workflow_run_number": 4,
+      "job_id": 98097657687,
+      "head_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+      "source_publication_sha": "77e2ba300af45a953947160af63283a64512e876",
+      "completed_at": "2026-08-26T07:29:55Z",
+      "verified_at": "2026-08-26T07:32:47Z",
+      "verified_url_count": 21,
       "conclusion": "success",
       "scope": [
-        "Spanish identity route exact markers",
-        "English identity route exact markers",
-        "Spanish updates route exact markers",
-        "English updates route exact markers",
-        "structured CURRENT_UNITARY_STATE JSON control and complete 185-identity denominator",
+        "seven English reader and feed routes",
+        "seven Spanish reader and feed routes",
+        "two bilingual runtime assets",
         "material-updates JSON",
-        "unitary-control-plane sitemap",
-        "robots sitemap declaration"
+        "position addendum and native-analysis prompt",
+        "structured CURRENT_UNITARY_STATE JSON control",
+        "structured unitary-enterprise publication manifest"
       ],
       "rule": "Deployment success and exact-content verification remain separate recorded facts."
     },
+    "live_urls": [
+      "https://sbu001monterecco.github.io/por-derecho/en/",
+      "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-evidence-map/",
+      "https://sbu001monterecco.github.io/por-derecho/en/unitary-criminal-reverse-engineering/",
+      "https://sbu001monterecco.github.io/por-derecho/en/sun-park-criminal-engineering-investigation/",
+      "https://sbu001monterecco.github.io/por-derecho/en/unitary-record/",
+      "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+      "https://sbu001monterecco.github.io/por-derecho/en/updates/feed.xml",
+      "https://sbu001monterecco.github.io/por-derecho/es/",
+      "https://sbu001monterecco.github.io/por-derecho/es/mapa-probatorio-penal-unitario/",
+      "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-inversa-criminal-unitaria/",
+      "https://sbu001monterecco.github.io/por-derecho/es/ingenieria-forense-criminal-sun-park/",
+      "https://sbu001monterecco.github.io/por-derecho/es/registro-unitario/",
+      "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+      "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/feed.xml",
+      "https://sbu001monterecco.github.io/por-derecho/assets/prosecution-public-entry-20260821.js",
+      "https://sbu001monterecco.github.io/por-derecho/assets/criminal-engineering-investigation-20260819.js",
+      "https://sbu001monterecco.github.io/por-derecho/assets/data/material-updates-v1.json",
+      "https://sbu001monterecco.github.io/por-derecho/archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
+      "https://sbu001monterecco.github.io/por-derecho/archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
+      "https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_UNITARY_STATE.json",
+      "https://sbu001monterecco.github.io/por-derecho/publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json"
+    ],
     "last_positive_production_smoke": {
       "sha": "19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78",
       "run_id": 32907717917,
@@ -54,17 +79,23 @@
       "conclusion": "success"
     }
   },
-  "pending_material_publication": {
+  "promoted_material_publication": {
     "control_id": "PD-UNITARY-STATE-20260826-01",
-    "state": "PREPARED_PENDING_MERGE",
+    "state": "LIVE_VERIFIED",
     "control_date": "2026-08-26",
     "source_main_sha": "5b1652e00151a3ea2944cd0519cdaf2e04da4453",
+    "publication_merge_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "publication_tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
     "publication_manifest": "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json",
     "position_addendum": "archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
     "analysis_prompt": "archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
     "repository_latest_material_date": "2026-08-26",
-    "live_verification": "PENDING_MERGE_DEPLOYMENT_AND_EXACT_EDGE_READBACK",
-    "rule": "Prepared repository material is not LIVE_VERIFIED and does not replace the last independently verified specialist release until the merge SHA is deployed and exact affected-route readback succeeds."
+    "pages_run_id": 32942972472,
+    "live_verification_run_id": 32942975508,
+    "live_verification_job_id": 98097657687,
+    "live_verification": "EXACT_SHA_DEPLOYMENT_AND_21_URL_NO_CACHE_READBACK_VERIFIED",
+    "observed_at": "2026-08-26T07:32:47Z",
+    "rule": "LIVE_VERIFIED records exact publication and readback only; it does not convert the attributed allegation into a finding or the manifest into native evidence."
   },
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
@@ -78,10 +109,10 @@
     "canonical_source": "assets/data/material-updates-v1.json",
     "latest_material_date": "2026-08-26",
     "repository_latest_material_date": "2026-08-26",
-    "last_live_verified_material_date": "2026-08-25",
+    "last_live_verified_material_date": "2026-08-26",
     "languages": ["es","en"],
     "public_routes": ["/es/actualizaciones/","/en/updates/"],
-    "public_parity": "2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING"
+    "public_parity": "2026-08-26_LIVE_VERIFIED"
   },
   "procedural_checkpoints": {
     "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",
@@ -109,16 +140,22 @@
   "canonical_routes": {
     "home": ["/es/","/en/"],
     "updates": ["/es/actualizaciones/","/en/updates/"],
+    "unitary_evidence_map": ["/es/mapa-probatorio-penal-unitario/","/en/unitary-criminal-evidence-map/"],
+    "unitary_reverse_engineering": ["/es/ingenieria-inversa-criminal-unitaria/","/en/unitary-criminal-reverse-engineering/"],
+    "unitary_criminal_engineering": ["/es/ingenieria-forense-criminal-sun-park/","/en/sun-park-criminal-engineering-investigation/"],
+    "unitary_record": ["/es/registro-unitario/","/en/unitary-record/"],
     "identity": ["/es/registro-identidad-materia/","/en/matter-identity-registry/"],
     "calificacion": ["/es/calificacion-rpl-2523-mapa-prueba/","/en/calificacion-rpl2523-evidence-map/"],
     "recovery": ["/es/objetivos-recuperacion-restitucion/","/en/recovery-restitution-objectives/"],
     "prescription_recovery": ["/es/prescripcion-caducidad-danos-medidas-cautelares/","/en/limitation-damages-interim-relief-recovery/"]
   },
   "superseded_snapshots": {
+    "PD-UNITARY-STATE-20260825-01": "The 25-Aug-2026 specialist release remains preserved as the immediately preceding live-verified control; the 26-Aug-2026 control now governs the unitary-enterprise material.",
     "ops/CURRENT_STATE.json": "Historical 24-Aug-2026 routing snapshot is preserved and the current path points to this synchronized specialist state while retaining compatibility fields.",
     "ops/PRODUCTION_STATUS.json": "The historical PR #922 live baseline remains preserved alongside the later unitary-control-plane deployment and readback evidence."
   },
   "next_actions": [
+    "Acquire and analyse authorised native email, attachment and Drive batches under the master prompt; keep manifest-only propositions unsupported until native authentication and testing.",
     "Rebuild the unique PR #1016 owner/court-party delta on current main without identity collisions.",
     "Create the source-proposition register and platform recovery/no-double-counting ledger.",
     "Add bilingual unitary-status and recovery-denominator reader routes from canonical data.",

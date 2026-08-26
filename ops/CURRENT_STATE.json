@@ -11,7 +11,7 @@
   "specialist_state_routing": {
     "unitary_case_and_evidence_state": "ops/CURRENT_UNITARY_STATE.json",
     "unitary_human_state": "CURRENT_UNITARY_STATE.md",
-    "expected_control_id": "PD-UNITARY-STATE-20260825-01",
+    "expected_control_id": "PD-UNITARY-STATE-20260826-01",
     "expected_status": "LIVE_VERIFIED",
     "pr_reconciliation_ledger": "ops/PR_RECONCILIATION_LEDGER.json",
     "material_updates": "assets/data/material-updates-v1.json",
@@ -29,10 +29,10 @@
   "repository_observation": {
     "repository": "sbu001monterecco/por-derecho",
     "ref": "refs/heads/main",
-    "sha": "35346c34ec15a77d7585122ec08add6bcb16fabc",
-    "tree_sha": "c8fb4c201b0cfca50d67bcfaabcf988309eaefa9",
-    "commit_time": "2026-08-26T00:33:15Z",
-    "observed_at": "2026-08-26T05:50:53Z",
+    "sha": "77e2ba300af45a953947160af63283a64512e876",
+    "tree_sha": "4f0ac26c5548ae44c68933306c68165cbb6c973e",
+    "commit_time": "2026-08-26T07:28:56Z",
+    "observed_at": "2026-08-26T07:32:47Z",
     "status": "BASELINE_OBSERVED_BEFORE_OPERATIONAL_TRUTH_CHANGE",
     "observation_phase": "POST_MERGE_MAIN_AND_DEPLOYMENT_OBSERVED",
     "legacy_status_compatibility": "The status value is retained temporarily for mission-critical validator compatibility; observation_phase carries the accurate lifecycle state.",
@@ -40,10 +40,14 @@
   },
   "deployment_observation": {
     "status_file": "ops/PRODUCTION_STATUS.json",
-    "last_observed_served_sha": "35346c34ec15a77d7585122ec08add6bcb16fabc",
-    "last_observed_pages_run_id": 32915550874,
-    "last_observed_at": "2026-08-26T05:50:53Z",
-    "verification_level": "DEPLOYMENT_BUILD_SUCCESS"
+    "last_observed_served_sha": "77e2ba300af45a953947160af63283a64512e876",
+    "last_observed_pages_run_id": 32942972472,
+    "last_observed_at": "2026-08-26T07:32:47Z",
+    "verification_level": "LIVE_VERIFIED_FOR_SERVED_SHA",
+    "last_exact_route_verification_run_id": 32942975508,
+    "last_exact_route_verification_run_number": 4,
+    "last_exact_route_verification_job_id": 98097657687,
+    "last_exact_route_verified_at": "2026-08-26T07:29:55Z"
   },
   "repository_inventory_observation": {
     "open_pull_requests": 36,
@@ -96,6 +100,7 @@
     "A successful Pages build is not the same as route-specific public-content verification.",
     "Historical live verification remains valid as historical evidence but does not make that SHA current.",
     "Open pull requests are candidate deltas, not repository truth.",
-    "Operational metadata does not establish any case allegation, procedural status or private-source conclusion."
+    "Operational metadata does not establish any case allegation, procedural status or private-source conclusion.",
+    "Publication verification proves only the recorded deployment and public-route markers; it is not proof of the attributed enterprise allegation, any person's guilt, Penal Code articles 570 bis or 570 ter, an original pact, or evidential support from the Phase-A manifest."
   ]
 }
