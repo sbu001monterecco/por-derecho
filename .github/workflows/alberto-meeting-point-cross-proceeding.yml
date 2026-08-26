@@ -1,0 +1,25 @@
+name: Validate Alberto Meeting Point cross-proceeding dossier
+on:
+  pull_request:
+    paths:
+      - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
+      - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md'
+      - 'ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md'
+      - 'scripts/validate_alberto_meeting_point_cross_proceeding.py'
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_alberto_meeting_point_cross_proceeding.py
