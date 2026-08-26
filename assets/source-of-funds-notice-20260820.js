@@ -117,3 +117,55 @@
     }
   });
 })();
+
+/* AAFC-RICPE-EVIDENCE-RECOVERY-LINKS-20260826 */
+(() => {
+  let path = location.pathname.replace(/\/index\.html$/, '/');
+  if (!path.endsWith('/')) path += '/';
+  const isEnglish = document.documentElement.lang === 'en';
+  const isRicpe = path.endsWith('/es/ric-private-equity-sun-park/') || path.endsWith('/en/ric-private-equity-sun-park/');
+  if (!isRicpe || document.querySelector('[data-aafc-ricpe-recovery-links]')) return;
+
+  const base = document.currentScript && document.currentScript.src
+    ? new URL('.', document.currentScript.src)
+    : new URL('/assets/', location.href);
+  const href = rel => new URL(rel, base).href;
+  const section = document.createElement('section');
+  section.className = 'section alt';
+  section.dataset.aafcRicpeRecoveryLinks = '20260826';
+  section.innerHTML = isEnglish ? `
+    <div class="shell">
+      <p class="eyebrow">AAFC · PROFESSIONAL DISTRIBUTION · EVIDENCE RECOVERY</p>
+      <h2>From investor marketing to the records that can prove—or disprove—the distribution chain</h2>
+      <p>The two source-controlled graphics displayed on this RICPE page are the same graphics used in August 2026 professional and prosecutorial preservation routes. Their transmission records custody/delivery; it is not institutional acceptance.</p>
+      <p><strong>Material correction:</strong> RICPE's own public video archive identifies Hotel AC Tenerife as the company's first investment. The San Telmo statement about clients entering RICPE's “first investment” therefore cannot be converted into proof that those clients funded Sun Park without investor→project allocation records.</p>
+      <div class="source-actions">
+        <a href="${href('../en/aafc-ricpe-professional-distribution/')}">AAFC / professional distribution →</a>
+        <a href="${href('../en/ricpe-webinar-11nov2020/')}">11NOV2020 webinar source record →</a>
+        <a href="https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s" target="_blank" rel="noopener">San Telmo / Enrique Guerra from 08:08 →</a>
+        <a href="https://ric.capital/compania/video-corporativo/" target="_blank" rel="noopener">RICPE public video archive →</a>
+        <a href="${href('../en/aafc-ricpe-professional-distribution/#plan')}">Evidence-recovery plan →</a>
+      </div>
+      <p class="sfn__boundary"><strong>Boundary:</strong> AAFC is presently documented as an event/professional-distribution channel, not as a proven paid introducer, investment intermediary or recommender of Sun Park. Silence is not admission.</p>
+    </div>` : `
+    <div class="shell">
+      <p class="eyebrow">AAFC · DISTRIBUCIÓN PROFESIONAL · RECUPERACIÓN DE PRUEBA</p>
+      <h2>Del marketing inversor a los registros que pueden probar —o descartar— la cadena de distribución</h2>
+      <p>Los dos gráficos fuente-controlados mostrados en esta página RICPE son los mismos utilizados en agosto de 2026 en rutas profesionales y del Ministerio Fiscal/Fiscalía de preservación. Su transmisión acredita entrega/custodia, no aceptación institucional.</p>
+      <p><strong>Corrección material:</strong> el propio archivo público de RICPE identifica Hotel AC Tenerife como la primera inversión de la compañía. La declaración de San Telmo sobre clientes en la “primera inversión” no puede convertirse en prueba de financiación de Sun Park sin registros inversor→proyecto.</p>
+      <div class="source-actions">
+        <a href="${href('../es/aafc-ricpe-distribucion-profesional/')}">AAFC / distribución profesional →</a>
+        <a href="${href('../es/ricpe-webinar-11nov2020/')}">Registro webinar 11NOV2020 →</a>
+        <a href="https://www.youtube.com/watch?v=mHn9IJU0qI4&t=488s" target="_blank" rel="noopener">San Telmo / Enrique Guerra desde 08:08 →</a>
+        <a href="https://ric.capital/compania/video-corporativo/" target="_blank" rel="noopener">Archivo público de vídeos RICPE →</a>
+        <a href="${href('../es/aafc-ricpe-distribucion-profesional/#plan')}">Plan de recuperación de prueba →</a>
+      </div>
+      <p class="sfn__boundary"><strong>Frontera:</strong> AAFC está actualmente documentada como canal de eventos/distribución profesional, no como introductor remunerado, intermediario de inversión o recomendador probado de Sun Park. El silencio no es admisión.</p>
+    </div>`;
+
+  const main = document.querySelector('main');
+  if (!main) return;
+  const notice = document.querySelector('.source-funds-notice-section');
+  if (notice) notice.insertAdjacentElement('afterend', section);
+  else main.append(section);
+})();
