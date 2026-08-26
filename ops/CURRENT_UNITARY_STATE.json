@@ -1,65 +1,47 @@
 {
   "schema": "por-derecho.current-unitary-state.v1",
   "control_id": "PD-UNITARY-STATE-20260825-01",
-  "as_of": "2026-08-25T23:56:02Z",
-  "status": "LIVE_VERIFIED",
+  "as_of": "2026-08-26T07:15:00Z",
+  "status": "PREPARED_PENDING_MERGE_AND_LIVE_READBACK",
   "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
   "repository": {
     "repository": "sbu001monterecco/por-derecho",
-    "branch": "main",
-    "current_main_sha_at_preparation": "4088f7ffff80df788137ce91328b11fe3de6b563",
-    "source_publication_merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-    "verification_fix_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
-    "current_main_commit_class": "verification-only correction; no reader-facing allegation or merits proposition changed",
+    "branch": "codex/unitary-owner-network-current-main-20260826",
+    "current_main_sha_at_preparation": "5e3b95b286ded297c02302e53ed9d2822b5eca0b",
+    "candidate_release": "owner/court-party network rebuilt additively on current main",
+    "current_main_commit_class": "current main includes later governance/continuity work; this branch adds source-graded owner-network and identity parity changes",
     "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
     "current_state_rule": "Current fetched main and verified public Pages override older dated snapshots. Governance-only or deletion-closeout commits may advance main without changing reader-facing case propositions."
   },
   "publication": {
     "public_host": "https://sbu001monterecco.github.io/por-derecho/",
-    "last_pages_deployment": {
-      "sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-      "run_id": 32912074201,
-      "run_number": 1119,
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-08-25T23:44:01Z",
-      "completed_at": "2026-08-25T23:44:55Z"
-    },
-    "current_sha_edge_readback": {
-      "state": "LIVE_VERIFIED",
-      "workflow": ".github/workflows/verify-unitary-control-plane.yml",
+    "last_verified_unitary_release": {
+      "sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
       "workflow_run_id": 32912919872,
-      "workflow_run_number": 12,
-      "job_id": 98010526784,
-      "head_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
-      "source_publication_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
-      "verified_at": "2026-08-25T23:56:02Z",
-      "conclusion": "success",
-      "scope": [
-        "Spanish identity route exact markers",
-        "English identity route exact markers",
-        "Spanish updates route exact markers",
-        "English updates route exact markers",
-        "structured CURRENT_UNITARY_STATE JSON control and complete 185-identity denominator",
-        "material-updates JSON",
-        "unitary-control-plane sitemap",
-        "robots sitemap declaration"
-      ],
-      "rule": "Deployment success and exact-content verification remain separate recorded facts."
+      "state": "LIVE_VERIFIED",
+      "verified_at": "2026-08-25T23:56:02Z"
     },
-    "last_positive_production_smoke": {
-      "sha": "19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78",
-      "run_id": 32907717917,
-      "status": "completed",
-      "conclusion": "success"
+    "candidate_owner_network_release": {
+      "state": "PENDING_MERGE_DEPLOYMENT_AND_EXACT_MARKER_READBACK",
+      "routes": [
+        "/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/",
+        "/en/matter-identity-registry/non-lpb-matkator-owner-network/",
+        "/es/jv1260-ap89-continuidad-cam/",
+        "/en/jv1260-ap89-cam-continuity/"
+      ],
+      "structured_data": "/assets/data/non-lpb-matkator-owner-court-network-v1.json"
     }
   },
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-08-25",
-    "counts": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+    "control_date": "2026-08-26",
+    "counts": {"total":187,"PERSON":88,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
     "archive_backfill": "OPEN",
-    "static_page_parity": "LIVE_VERIFIED",
+    "static_page_parity": "SOURCE_SYNCHRONIZED_PENDING_PUBLIC_READBACK",
+    "new_owner_network_ids": {
+      "PD-SP-P-0087": "Gerardo Zacarías Acosta Matos",
+      "PD-SP-P-0088": "Javier Acosta Matos"
+    },
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
   },
   "material_updates": {
@@ -67,13 +49,13 @@
     "latest_material_date": "2026-08-25",
     "languages": ["es","en"],
     "public_routes": ["/es/actualizaciones/","/en/updates/"],
-    "public_parity": "LIVE_VERIFIED"
+    "note": "The owner-network release reorganizes and connects already controlled evidence; the canonical latest-material-evidence date remains 25 August pending a separate material-evidence update."
   },
   "procedural_checkpoints": {
     "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",
     "calificacion_appeal": "RPL 2523/2025; the last located signed record scheduled deliberation, vote and decision for 4 June 2026. A later merits decision, service record and finality/remedy certificate remain not located in the controlled corpus.",
     "valencia": "ORD 1859/2023-9 is recorded for hearing on 28 January 2027 at 10:00, subject to any later signed superseding act.",
-    "owner_network": "The AP 89/2014 seven-claimant-owner core and the wider Montelanza/Molina perimeter remain separate; PR #1016 contains a unique source-graded delta that must be rebuilt on current main rather than merged stale.",
+    "owner_network": "The AP 89/2014 seven-claimant-owner core is now represented separately from the wider Montelanza/Molina residual-owner perimeter; Celia Guillén and Manuel Molina Climent receive individualised propositions and the Acosta Matos family/business cluster keeps actor-specific capacity boundaries.",
     "prescription_recovery": "The current recovery control requires claim-by-claim clocks and prohibits generic assertions that criminal proceedings suspend every civil or caducity period."
   },
   "top_evidence_gaps": [
@@ -83,29 +65,28 @@
     "Original 2011 powers, voting entitlement and debt schedules",
     "Complete certified DP 1132/2018 and Rollo 1010/2018 record",
     "Reconciliation of each 2022 Acosta Matos entity, NIF, power, finca, coefficient and vote",
+    "Resolution of any 71-versus-72 residual-unit schedule discrepancy without forcing a denominator",
     "Reproducible bridge from definitive credit through the EUR 13,168,082.02 threshold/consideration, EUR 400,000 line, proceeds, fees, creditor payments and surplus",
     "Claimant-specific hotel-income, asset-control, counterfactual, damage, remedy and no-double-recovery ledger"
   ],
   "pull_requests": {
-    "observed_open_count": 36,
-    "observed_at": "2026-08-25T23:56:35Z",
     "ledger": "ops/PR_RECONCILIATION_LEDGER.json",
+    "pr_1016": "SUPERSEDE_AFTER_CURRENT_MAIN_REBUILD_MERGES",
     "rule": "Do not merge stale PRs wholesale. Rebuild or extract unique validated deltas on current main, rerun current controls and close or supersede explicitly."
   },
   "canonical_routes": {
     "home": ["/es/","/en/"],
     "updates": ["/es/actualizaciones/","/en/updates/"],
     "identity": ["/es/registro-identidad-materia/","/en/matter-identity-registry/"],
+    "owner_network": ["/es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/","/en/matter-identity-registry/non-lpb-matkator-owner-network/"],
+    "jv1260_ap89": ["/es/jv1260-ap89-continuidad-cam/","/en/jv1260-ap89-cam-continuity/"],
     "calificacion": ["/es/calificacion-rpl-2523-mapa-prueba/","/en/calificacion-rpl2523-evidence-map/"],
     "recovery": ["/es/objetivos-recuperacion-restitucion/","/en/recovery-restitution-objectives/"],
     "prescription_recovery": ["/es/prescripcion-caducidad-danos-medidas-cautelares/","/en/limitation-damages-interim-relief-recovery/"]
   },
-  "superseded_snapshots": {
-    "ops/CURRENT_STATE.json": "Historical 24-Aug-2026 routing snapshot is preserved and the current path points to this synchronized specialist state while retaining compatibility fields.",
-    "ops/PRODUCTION_STATUS.json": "The historical PR #922 live baseline remains preserved alongside the later unitary-control-plane deployment and readback evidence."
-  },
   "next_actions": [
-    "Rebuild the unique PR #1016 owner/court-party delta on current main without identity collisions.",
+    "Merge and live-verify the current-main owner/court-party network rebuild, then close/supersede stale PR #1016.",
+    "Map the AP89 eighteen bungalows and wider residual owner universe to certified fincas and dates.",
     "Create the source-proposition register and platform recovery/no-double-counting ledger.",
     "Add bilingual unitary-status and recovery-denominator reader routes from canonical data.",
     "Move core reader facts gradually from stacked runtime loaders into generated static HTML."
