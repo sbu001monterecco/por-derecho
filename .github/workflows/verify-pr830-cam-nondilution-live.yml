@@ -13,6 +13,7 @@ on:
       - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
       - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
       - 'assets/data/cam-nondilution-thread-closeout-v1.json'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - '.github/workflows/verify-pr830-cam-nondilution-live.yml'
   push:
     branches: [main]
@@ -26,6 +27,7 @@ on:
       - 'assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js'
       - 'assets/data/cam-creditor-control-criminal-lead-v1.json'
       - 'assets/data/cam-nondilution-thread-closeout-v1.json'
+      - 'scripts/validate_cam_creditor_control_criminal_lead.py'
       - '.github/workflows/verify-pr830-cam-nondilution-live.yml'
   workflow_dispatch:
 
@@ -53,7 +55,11 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Validate CAM attribution and source fidelity from checked-out source
+        run: python3 scripts/validate_cam_creditor_control_criminal_lead.py
+
       - name: Verify merged CAM rule on the public edge
+        if: github.event_name != 'pull_request'
         env:
           VERIFY_TRIGGER_SHA: ${{ github.sha }}
         run: |
@@ -128,8 +134,10 @@ jobs:
               "first_read_module": (
                   f"{base}/assets/prosecution-public-entry-20260821.js",
                   [
-                      "Gil Marer and Aweswell directly allege an organised criminal course—not merely a set of questions.",
-                      "Gil Marer y Aweswell alegan directamente un curso delictivo organizado, no una mera serie de preguntas.",
+                      "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.",
+                      "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.",
+                      "This is only a factual allegation of connection: it does not characterise the conduct as a continuing or permanent offence",
+                      "Esta es solo una alegación fáctica de conexión: no califica los hechos como delito continuado o permanente",
                       "Laura Patricia Acosta Matos",
                       "Relationship is not responsibility; missing proof does not erase the allegation.",
                       "Relación no es responsabilidad; la prueba pendiente no borra la acusación.",

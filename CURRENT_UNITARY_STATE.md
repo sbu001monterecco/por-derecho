@@ -16,6 +16,18 @@ This file separates four questions that had drifted together:
 
 A successful deployment is not automatically an exact-content verification. A governance-only or deletion-closeout commit may advance `main` without changing a reader-facing allegation or merits proposition.
 
+## Pending 26 August material — not yet live
+
+`PD-UNITARY-STATE-20260826-01` is a separate, additive publication candidate in state `PREPARED_PENDING_MERGE`, prepared from source main `1be9f023bffcf1e9cd9c4f309a9a2bf45647106c`. It records Gil Marer and Aweswell's current attributed position that the evidence must be tested as **one continuing economic-criminal enterprise advanced through successive adoption and divided functions**, together with the public-safe Phase-A treatment of the reserved declarant mailbox/Drive manifest.
+
+This pending material does **not** replace the last live-verified 25 August control. Its publication manifest is `publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json`. Promotion to `LIVE_VERIFIED` requires a merged commit, successful deployment of that exact source and no-cache readback of every affected Spanish/English route and machine-readable source. Until then:
+
+- repository latest material date: **26 August 2026**;
+- last live-verified material date: **25 August 2026**;
+- public parity: `2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING`.
+
+The 26 August position is an attributed factual/prosecutorial theory. It is not a judgment, does not itself establish a statutory organisation or group under Articles 570 bis/ter CP, does not prove an original pact, does not transfer knowledge or intent, and does not dispense with offence-by-offence, actor-by-actor proof. The manifest is a discovery map only: it neither supports nor establishes `ALG-ENT-018` unless and until native originals are lawfully acquired, authenticated and tested against the contrary record.
+
 ## Verified repository and public state
 
 - PR #1031 merged the synchronized control plane at `c43e518150e9b8535b8829971d7cd36045c99b5f`.

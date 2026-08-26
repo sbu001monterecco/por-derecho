@@ -237,6 +237,7 @@ def validate_runtime_contract(errors: list[str]) -> None:
     module = (ROOT / "assets/audience-experience-order-20260823.js").read_text(encoding="utf-8")
     loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
     prosecution = (ROOT / "assets/prosecution-public-entry-20260821.js").read_text(encoding="utf-8")
+    criminal_engineering = (ROOT / "assets/criminal-engineering-investigation-20260819.js").read_text(encoding="utf-8")
     cam_module = (ROOT / "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js").read_text(encoding="utf-8")
     calificacion = (ROOT / "assets/calificacion-criminal-misuse-thesis-20260824.js").read_text(encoding="utf-8")
     five_actor_module = (ROOT / "assets/homepage-actor-family-pwc-note-20260819.js").read_text(encoding="utf-8")
@@ -328,10 +329,10 @@ def validate_runtime_contract(errors: list[str]) -> None:
 
     for marker in (
         "section.dataset.expressCriminalAttribution = '20260824'",
-        "Gil Marer and Aweswell directly allege an organised criminal course",
-        "Gil Marer y Aweswell alegan directamente un curso delictivo organizado",
-        "not merely a set of questions",
-        "no una mera serie de preguntas",
+        "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.",
+        "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.",
+        "This is only a factual allegation of connection: it does not characterise the conduct as a continuing or permanent offence",
+        "Esta es solo una alegación fáctica de conexión: no califica los hechos como delito continuado o permanente",
         "Relationship is not responsibility; missing proof does not erase the allegation.",
         "Relación no es responsabilidad; la prueba pendiente no borra la acusación.",
         "provisional dismissal",
@@ -339,6 +340,15 @@ def validate_runtime_contract(errors: list[str]) -> None:
     ):
         if marker not in prosecution:
             fail(errors, f"homepage prosecution module missing non-dilution marker: {marker}")
+
+    for marker in (
+        "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.",
+        "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.",
+        "does not characterise the conduct as a continuing or permanent offence",
+        "no califica los hechos como delito continuado o permanente",
+    ):
+        if marker not in criminal_engineering:
+            fail(errors, f"criminal-engineering runtime missing unitary-attribution marker: {marker}")
 
     for marker in (
         "five identified private actors operated",

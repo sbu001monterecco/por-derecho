@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.material-updates.v1",
   "control_id": "PD-MATERIAL-UPDATES-001",
-  "control_date": "2026-08-25",
-  "latest_material_date": "2026-08-25",
+  "control_date": "2026-08-26",
+  "latest_material_date": "2026-08-26",
   "languages": ["es", "en"],
   "public_routes": {
     "es": "/es/actualizaciones/",
@@ -15,6 +15,36 @@
     "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
   ],
   "entries": [
+    {
+      "update_id": "MU-20260826-UNITARY-ATTRIBUTION-RDM-MANIFEST",
+      "date": "2026-08-26",
+      "type": "ATTRIBUTED_CRIMINAL_THEORY_AND_PRIVATE_MANIFEST_TRIAGE",
+      "title_es": "Atribución penal unitaria y análisis de Fase A del manifiesto recibido",
+      "title_en": "Unitary attributed economic-criminal theory and Phase-A analysis of the received manifest",
+      "affected_routes": [
+        "/es/",
+        "/en/",
+        "/es/mapa-probatorio-penal-unitario/",
+        "/en/unitary-criminal-evidence-map/",
+        "/es/ingenieria-inversa-criminal-unitaria/",
+        "/en/unitary-criminal-reverse-engineering/",
+        "/es/ingenieria-forense-criminal-sun-park/",
+        "/en/sun-park-criminal-engineering-investigation/",
+        "/es/registro-unitario/",
+        "/en/unitary-record/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PUBLIC_SAFE_PHASE_A_TRIAGE_OF_PRIVATE_MANIFEST_NOT_NATIVE_CORPUS",
+      "allegation_id": "ALG-ENT-018",
+      "what_changed": "The site now states Gil Marer and Aweswell's one-enterprise allegation expressly, preserves actor/offence-specific proof and temporal limits, and records only coarse public-safe manifest denominators and discovery consequences.",
+      "what_did_not_change": "The allegation is independent and is not inferred from the workbook. The manifest changes discovery priority only and adds no evidential support until native originals are acquired, preserved, authenticated and tested against contrary and exculpatory material. A manifest-only status describes this source track and does not overwrite the overall proposition status from all controlled evidence. The 24 August source-bounded assessment remains historical and non-controlling.",
+      "public_denominators": {
+        "email_index_rows": "approximately 10.6 thousand",
+        "attachment_rows": "approximately 9.0 thousand",
+        "threads": "approximately 4.3 thousand"
+      }
+    },
     {
       "update_id": "MU-20260825-ICAM-CCACM",
       "date": "2026-08-25",

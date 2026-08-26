@@ -7,8 +7,8 @@ const { chromium } = playwright;
 const baseURL = process.env.PSR_BASE_URL || 'http://127.0.0.1:8765';
 const outputDir = process.env.PSR_SCREENSHOT_DIR || 'artifacts/audience-experience-20260823';
 const routes = [
-  { lang: 'es', route: '/es/', summary: '#resumen-60-segundos', perimeters: '#perimetros-del-caso', chronology: '#historia-reconstruida', directText: 'Gil Marer y Aweswell alegan directamente un curso delictivo organizado' },
-  { lang: 'en', route: '/en/', summary: '#sixty-second-summary', perimeters: '#case-perimeters', chronology: '#reverse-engineered-story', directText: 'Gil Marer and Aweswell directly allege an organised criminal course' },
+  { lang: 'es', route: '/es/', summary: '#resumen-60-segundos', perimeters: '#perimetros-del-caso', chronology: '#historia-reconstruida', directText: 'Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.' },
+  { lang: 'en', route: '/en/', summary: '#sixty-second-summary', perimeters: '#case-perimeters', chronology: '#reverse-engineered-story', directText: 'Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.' },
 ];
 const viewports = [
   { name: 'mobile', width: 390, height: 844 },

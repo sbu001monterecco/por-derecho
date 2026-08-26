@@ -3,6 +3,14 @@
 **Branch:** `codex/prosecution-site-sharpening-20260821`  
 **Purpose:** make the public website more prosecutorially legible without making it more accusatory.
 
+## 26 August 2026 controlling overlay
+
+**`ALG-ENT-018` now controls:** Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. This is their attributed factual/prosecutorial theory, not a judicial finding. It does not itself establish an original pact, Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Each actor, period, act or omission and proposed offence must satisfy its own historically applicable elements; Por Derecho bears the evidential burden and no person must disprove the allegation.
+
+The received `RDM-PRIVATE-MAILBOX-01` package is a manifest/index only. Public-safe manifest triage does not authenticate or establish any indexed proposition; full private Phase A and native email, attachment and Drive Phase B remain open. The manifest changes acquisition priority and adds no evidential support to `ALG-ENT-018` until relevant originals are lawfully acquired, authenticated, contextualised and tested against contrary material.
+
+Any earlier formulation in this dated control is source-bounded and non-controlling where it conflicts with the 26 August overlay; that does not prove the opposite. On every affected first-read public block, preserve direct attribution, non-finding status, Articles 570 bis/ter and original-pact boundaries, individual actor/offence proof and the express temporal disclaimer. Report lead, investigation, accusation/charging, trial and conviction sufficiency separately. Apply `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`.
+
 ## 1. Controlling publication rule
 
 The public criminal-law architecture is a source-led investigative framework, not a finding of criminal liability.

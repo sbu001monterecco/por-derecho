@@ -1,0 +1,147 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "unitary-enterprise-rdm-manifest-analysis-20260826",
+  "control_id": "PD-UNITARY-STATE-20260826-01",
+  "control_date": "2026-08-26",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "prepared_pending_merge",
+  "owner": "Por Derecho / Project Sun Rock",
+  "expected_routes": {
+    "es": [
+      "es/index.html",
+      "es/mapa-probatorio-penal-unitario/index.html",
+      "es/ingenieria-inversa-criminal-unitaria/index.html",
+      "es/ingenieria-forense-criminal-sun-park/index.html",
+      "es/registro-unitario/index.html",
+      "es/actualizaciones/index.html"
+    ],
+    "en": [
+      "en/index.html",
+      "en/unitary-criminal-evidence-map/index.html",
+      "en/unitary-criminal-reverse-engineering/index.html",
+      "en/sun-park-criminal-engineering-investigation/index.html",
+      "en/unitary-record/index.html",
+      "en/updates/index.html"
+    ]
+  },
+  "source_main_sha": "1be9f023bffcf1e9cd9c4f309a9a2bf45647106c",
+  "publication_merge_sha": null,
+  "pages_run_id": null,
+  "live_verification": "pending",
+  "purpose": "Control the attributed unitary economic-criminal-enterprise position and the public-safe Phase-A analysis of the RDM private-mailbox manifest without treating the manifest as native evidence.",
+  "controlling_allegation": {
+    "id": "ALG-ENT-018",
+    "english": "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions across changing actors, capacities, instruments and institutional stages.",
+    "spanish": "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones entre actores, capacidades, instrumentos y fases institucionales cambiantes.",
+    "classification": "PARTY_ALLEGATION_AND_PROSECUTORIAL_INVESTIGATIVE_MODEL",
+    "not_a_finding": true,
+    "independent_of_rdm_manifest": true,
+    "rdm_manifest_evidential_support": "NONE_UNTIL_RELEVANT_NATIVES_ARE_ACQUIRED_AUTHENTICATED_AND_TESTED"
+  },
+  "statutory_boundaries": {
+    "criminal_organisation_cp_570_bis": "SEPARATE_ELEMENT_SPECIFIC_QUESTION",
+    "criminal_group_cp_570_ter": "SEPARATE_RESIDUAL_ALTERNATIVE",
+    "retired_autonomous_theory": "ALG-ORG-011",
+    "factual_enterprise_does_not_establish": [
+      "original common pact",
+      "individual participation or guilt",
+      "CP 74 continuing offence",
+      "a permanent offence",
+      "consummation",
+      "participation window",
+      "prescription date"
+    ]
+  },
+  "superseded_as_controlling_synthesis": [
+    "the documents do not yet establish a completed criminal scheme",
+    "the present record does not close the legal elements of one criminal enterprise"
+  ],
+  "supersession_boundary": "The earlier formulations remain dated source-bounded views where historically material; their non-controlling status does not prove the opposite or decide unexamined sources.",
+  "private_source": {
+    "public_alias": "RDM-PRIVATE-MAILBOX-01",
+    "received_package_class": "MANIFEST_WORKBOOK_ONLY",
+    "phase_a": "PUBLIC_SAFE_MANIFEST_TRIAGE_COMPLETE",
+    "phase_b": "NATIVE_EMAIL_ATTACHMENT_AND_DRIVE_ACQUISITION_AND_ANALYSIS_OPEN",
+    "public_safe_approximate_denominators": {
+      "email_index_rows": "approximately 10.6 thousand",
+      "threads": "approximately 4.3 thousand",
+      "attachment_index_rows": "approximately 9.0 thousand",
+      "provenance_or_file_variant_rows": "approximately 4.9 thousand",
+      "actor_or_address_rows": "hundreds",
+      "logged_searches": "hundreds"
+    },
+    "not_delivered": [
+      "indexed native emails",
+      "indexed native attachment bytes",
+      "Google Drive owned/shared/linked corpus",
+      "Google-native exports",
+      "material revision histories",
+      "underlying attachment hashes"
+    ],
+    "temporary_status_for_decisive_unacquired_sources": "NOT YET TESTABLE FROM MANIFEST",
+    "temporary_status_scope": "RDM manifest/native contribution only; assess the overall proposition separately from all controlled evidence",
+    "complete_search_absence_status": "NOT ESTABLISHED AFTER DOCUMENTED COMPLETE SEARCH OR CONTRARY MATERIAL",
+    "private_fields_excluded": [
+      "account address",
+      "message and thread identifiers",
+      "subjects and bodies",
+      "participants and recipient lists",
+      "exact filenames and private hashes",
+      "Gmail and Drive locators",
+      "exact queries, hit counts and distributions",
+      "privileged communications and counsel advice",
+      "personal data and live legal strategy"
+    ]
+  },
+  "analysis_controls": [
+    "forward chronology and backward dependency reconstruction",
+    "successive-adoption and divided-function attribution actor by actor",
+    "native source, custody, authentication, context and contrary-evidence review",
+    "legal-person, proceeding, property, capacity and mental-state separation",
+    "offence-specific temporal elements and lex mitior",
+    "later conduct does not retroactively create CP 28-29 participation",
+    "CP 11 result offence, equivalent omission, specific duty or prior risk, capacity and counterfactual causation",
+    "CP 31 bis offence-specific and temporal legal-person gateway, without importing the post-1-July-2015 wording backwards, with current 31 bis.1(a) and 31 bis.1(b) kept separate, including the latter's serious supervision-failure element, plus the express-gateway limit for CP 129 and CP 31 quinquies boundaries",
+    "CP 250.1.7 manipulation of evidence or analogous procedural fraud kept separate from CP 250.1.2 signature abuse or subtraction/concealment/disablement",
+    "all three CP 251 modes tested, including movable and immovable disposition/encumbrance and the separate simulated-contract route",
+    "CP 257, 258, 258 bis, 259, 260 and 261 kept operationally separate, including prosecution, rectification, insolvency-state and creditor-preference distinctions",
+    "CP 392 and CP 395 incorporate only CP 390.1.1-3, so a private actor's merely untrue narration is not by itself documentary falsity; CP 393 and CP 396 use routes remain separate",
+    "pre-1-July-2015 non-retroactivity of the insolvency-administrator CP 435.4 limb, the 2015-to-2023 CP 432/252-or-253 route and the post-12-January-2023 CP 432, 432 bis and 433 routes kept separate from CP 440",
+    "CP 404 and CP 446-449 actor, mental-state and conduct routes kept separate, including manifest injustice under CP 447 and no invented causal-result element under CP 449",
+    "CP 451's three modes, CP 452 cap and CP 453-454 rules tested exactly, including the no-own-profit limitation only for mode 1 and the listed-predicate or public-function limit for mode 3",
+    "CP 570 bis stability and concerted coordinated task division kept distinct from residual CP 570 ter; the same grouping and period are not cumulatively classified except as alternatives",
+    "private finance, tax, subsidy and public-funding layers kept separate",
+    "Por Derecho assumes the substantiation burden for its assertions; in criminal proceedings the accusing party or parties bear the burden of proving guilt and no person must disprove the allegation or prove innocence",
+    "lead, investigation, accusation, trial and conviction thresholds reported separately"
+  ],
+  "repository_assets": [
+    "archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md",
+    "archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md",
+    "archive/RDM_PRIVATE_MAILBOX_PENDING_INBOUND_CONTROL_25AUG2026.md",
+    "archive/RESERVED_DECLARANT_PRIVATE_MAILBOX_ACQUISITION_AND_CUSTODY_PROTOCOL_25AUG2026.md",
+    "archive/RECENT_EMAIL_PRIMARY_SOURCE_INGEST_QUEUE_20AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/CHATGPT_PROMPT_LIBRARY.md",
+    "CHATGPT_START_HERE.md"
+  ],
+  "publication_boundaries": [
+    "The allegation is attributed to Gil Marer and Aweswell and is not an adjudicated finding.",
+    "Manifest receipt and Phase-A triage do not authenticate, corroborate or establish an indexed proposition.",
+    "The manifest changes acquisition priority only and adds no evidential support to ALG-ENT-018.",
+    "Native sources, exact metadata, exact denominators, privilege material and private strategy remain outside public Git.",
+    "Repository publication authority does not authorise any email, filing, third-party contact or source-account mutation.",
+    "Prepared or merged repository state is not live verification; exact-SHA deployment and no-cache readback are required."
+  ],
+  "validation_required": [
+    "JSON syntax and schema-shape review",
+    "private-source leakage scan",
+    "canonical allegation attribution and statutory-boundary check",
+    "manifest-versus-native evidence-status check",
+    "CP 250.1.7 versus CP 250.1.2 separation check",
+    "repository preservation and publication-integrity validators",
+    "Spanish-English public wording parity",
+    "post-merge exact-SHA Pages deployment and affected-route readback"
+  ],
+  "next_gate": "Acquire and analyse authorised native email, attachment and Drive batches under the master prompt; promote only proposition-level results that survive authentication, privilege, contradiction and offence-element review."
+}

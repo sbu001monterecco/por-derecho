@@ -2,6 +2,7 @@
 
 **Status:** INTERNAL CANONICAL ALLEGATION LEDGER — NOT AUTO-PUBLISHED  
 **Date:** 16 August 2026  
+**Current-theory overlay:** 26 August 2026 — `ALG-ENT-018`
 **Scope:** Sun Park / LPB / CAM-Acosta Matos / Community / AC / adjacent judicial-supervision tracks.  
 **Purpose:** allow future ChatGPT threads, repository searches and evidence scans to understand what has been alleged, how the theory evolved, what is actually verified, and what may safely propagate to the public website.
 
@@ -53,15 +54,17 @@ The AN querella presented a broad, integrated theory: dissident-owner conduct + 
 
 **Classification:** HISTORICAL PARTY THEORY.
 
-### 2026 frame
+### 2026 evidence method and current attributed frame
 
-The 2026 work deliberately decomposes that theory into actor-, duty- and document-specific questions:
+The 2026 work deliberately decomposes the evidence into actor-, duty- and document-specific questions:
 
 - **DP1901:** private actors, exact documents, title/control, Community authority/debt/voting, credit chain, valuation and project representations;
 - **DP1956:** AC entrusted powers, actual knowledge, concrete acts/omissions, patrimonial harm and third-party advantage, with Article 252 CP as the principal hypothesis;
 - **Control 24:** exact judicial acts, record knowledge, supervision and traceability; no inference of prevaricación merely from adverse or difficult procedural outcomes.
 
-**Current instruction:** evidence acquisition and reconciliation first. Do not enlarge the criminal catalogue to reproduce the 2023 pleading unless new primary evidence establishes the statutory elements.
+That decomposition is an evidential method; it is not a fragmentation or retirement of Gil Marer and Aweswell's current case theory. As of 26 August 2026, their controlling attributed position is `ALG-ENT-018`: **one continuing economic-criminal enterprise, advanced through successive adoption and divided functions**. In that factual/prosecutorial theory, different actors may be alleged to have entered at different times, performed different functions, adopted earlier results or preserved later benefits. It does not allege that every actor made the original plan, performed every act or remained involved for the whole period.
+
+**Current instruction:** test the whole alleged enterprise forwards and backwards while proving each actor, episode and proposed offence separately. Evidence acquisition and reconciliation remain mandatory. Do not convert the unitary allegation into a conviction, import one offence's elements into another, infer an original pact, or infer knowledge, intention or participation from relationship, office, chronology or later benefit alone.
 
 ## 5. Thematic crosswalk
 
@@ -279,10 +282,19 @@ Concrete duty/episode matrix:
 **Class:** DOCUMENTARY TESTING / EVIDENCE-BASED INFERENCE once each original is authenticated.  
 **Do not leap to investor fraud without issuer, falsity, knowledge, reliance/market relevance and loss/elements.**
 
+### ALG-ENT-018
+**Proposition:** Gil Marer and Aweswell allege **one continuing economic-criminal enterprise, advanced through successive adoption and divided functions**, connecting the Community/debt/voting machinery, creditor and control transitions, the LPB insolvency perimeter, the 2017–2019 access/realisation sequence, the later adjudication/operation/value chain, and the alleged institutional preservation of the resulting position.
+**Class:** ACTIVE CURRENT PARTY ALLEGATION / FACTUAL AND PROSECUTORIAL CASE THEORY. It is not a judicial finding.
+**Source and independence rule:** the allegation is Gil Marer and Aweswell's expressly adopted position. It is not inferred from, and receives no evidential support merely from, the reserved declarant mailbox/Drive manifest. That manifest changes discovery priority only until native originals are lawfully acquired, authenticated and tested against contrary material.
+**Participation rule:** successive adoption and divided functions do not require an allegation that every actor joined an original pact or performed every step. They also do not retroactively create authorship, participation or complicity under Articles 28–29 CP. For each person and period establish the relevant capacity, actual knowledge, legally relevant intent, concrete contribution or omission, duty where omission is alleged, causal role, benefit/effect, withdrawal or termination, and the strongest innocent explanation. Treat distinct post-offence conduct under its own possible legal route and elements.
+**Offence rule:** the factual expression “continuing enterprise” does not classify any conduct as a `delito continuado`, permanent offence, criminal organisation or criminal group, and does not change consummation, the participation window or prescription for any offence. Apply the offence text in force at the material time, lex mitior where applicable, and offence-specific lead, charging, trial and conviction thresholds.
+**Statutory-structure boundary:** `ALG-ENT-018` is analytically separate from Articles 570 bis and 570 ter CP. A statutory organisation requires its own structural and temporal elements; a criminal group is a residual alternative with its own elements. Do not plead both classifications for the same grouping and period except expressly in the alternative, and do not revive `ALG-ORG-011` merely by using the factual enterprise formulation.
+**Public use:** YES, but only with direct Gil Marer/Aweswell attribution, `allegation ≠ finding`, individual/offence-specific proof, material contrary record, presumption of innocence and the temporal disclaimer above in the same containing block.
+
 ### ALG-ORG-011
 **Proposition:** the Sun Park perimeter constituted a criminal organisation.  
 **Class:** 2023 PARTY ALLEGATION; **SUPERSEDED AS AUTONOMOUS 2026 THEORY** absent new evidence satisfying the statutory elements.  
-**Public use:** NO.
+**Public use:** NO as an established or current autonomous statutory classification. This retirement does not dilute or contradict `ALG-ENT-018`, which is a different factual/prosecutorial proposition.
 
 ### ALG-EU-012
 **Proposition:** EU funds financed the allegedly irregular Sun Park works/project.  
@@ -324,10 +336,10 @@ The following 2023 theories must **not** be auto-carried into current work merel
 - intentional-destruction theory without actor-specific evidence of act, authority and mens rea;
 - investor fraud based solely on later title inconsistencies;
 - EU-funds fraud based on corporate associations;
-- one undifferentiated conspiracy joining Community actors, PH122, CAM, AC, judge, RICPE and later operators;
+- one undifferentiated conspiracy that transfers every act, state of mind or offence to all Community actors, PH122, CAM, the AC, the judge, RICPE and later operators;
 - a single global damages number.
 
-This does **not** mean the historic allegations are erased. They remain searchable as PARTY ALLEGATIONS and source leads.
+This does **not** mean the historic allegations are erased. They remain searchable as PARTY ALLEGATIONS and source leads. Nor does it fragment `ALG-ENT-018`: the current attributed enterprise theory is unitary precisely because it tests alleged continuity, adoption, divided functions and preservation of benefit while refusing automatic collective guilt.
 
 ## 8. Evidence acquisition priorities generated by the crosswalk
 
@@ -347,6 +359,7 @@ This does **not** mean the historic allegations are erased. They remain searchab
 
 ### SAFE TO PROPAGATE AFTER SOURCE CHECK
 
+- `ALG-ENT-018` as Gil Marer and Aweswell's current attributed factual/prosecutorial enterprise theory, with the non-finding, statutory-structure, individual-proof and temporal boundaries in the same block;
 - neutral chronology of the 2023 querella and its DP91/2023 -> Rollo120/2024 -> TS1867/2024 route;
 - exact procedural status of DP1901/2026 and DP1956/2026 once primary orders are obtained;
 - neutral title/corporate chronology supported by registry/notarial originals;
@@ -358,7 +371,7 @@ This does **not** mean the historic allegations are erased. They remain searchab
 ### INTERNAL ONLY / DO NOT AUTO-PUBLISH
 
 - allegations of bribery/cohecho or the EUR350k payment;
-- criminal-organisation allegations;
+- an affirmative Articles 570 bis/ter criminal-organisation/group classification, unless separately supported and expressly framed as an allegation or alternative legal hypothesis;
 - accusations of deliberate fraud, theft, misappropriation, intentional destruction or falsification against named individuals unless and until primary evidence and legally safe editorial treatment justify publication;
 - speculative EU-fund misuse;
 - claims that judges/AC/private actors colluded;
@@ -378,20 +391,22 @@ This does **not** mean the historic allegations are erased. They remain searchab
 When a future thread asks "what have we alleged?", "what is the current theory?", or "what should the website say?":
 
 1. read this crosswalk first;
-2. distinguish **historic 2023 allegation** from **current 2026 investigative hypothesis**;
+2. distinguish **historic 2023 allegation** from the active `ALG-ENT-018` 2026 attributed case theory and from each offence-specific legal hypothesis;
 3. retrieve the relevant primary source before making a specific accusation;
 4. do not merge actors/entities or title/control concepts;
 5. report adverse/procedural outcomes as part of the evidential history;
 6. state important contrary evidence and judicial rejection where it exists;
-7. prefer documentary contradiction and unanswered reconciliation questions to conclusory criminal labels;
-8. treat evidence acquisition, not allegation expansion, as the current priority.
+7. reverse-engineer the alleged enterprise as one chronology and value/control chain, then test adoption, function, capacity, knowledge, intent, act/omission, causation and benefit actor by actor;
+8. treat evidence acquisition and adversarial testing as the route to proving, limiting or rejecting the allegation—not as wording that silently replaces or dilutes it.
 
 ## 11. Search aliases
 
-`AN querella 2023` · `DP91/2023` · `Rollo120/2024` · `Auto119/2024` · `Casacion1867/2024` · `DP1901/2026` · `Control21` · `NEXUS36` · `DP1956/2026` · `Control22` · `Control24` · `Concurso36/2012` · `CAM` · `Acosta Matos` · `PH122` · `Promontoria` · `Community debt` · `OB REM` · `400000` · `350000` · `Actua` · `Gesvalt` · `RICPE` · `RPE` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting`.
+`AN querella 2023` · `DP91/2023` · `Rollo120/2024` · `Auto119/2024` · `Casacion1867/2024` · `DP1901/2026` · `Control21` · `NEXUS36` · `DP1956/2026` · `Control22` · `Control24` · `Concurso36/2012` · `ALG-ENT-018` · `one continuing economic-criminal enterprise` · `successive adoption` · `divided functions` · `empresa continuada de criminalidad económica` · `adopción sucesiva` · `división de funciones` · `CAM` · `Acosta Matos` · `PH122` · `Promontoria` · `Community debt` · `OB REM` · `400000` · `350000` · `Actua` · `Gesvalt` · `RICPE` · `RPE` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting`.
 
 ## 12. Canonical cross-links
 
+- `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`
+- `archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`
 - `archive/knowledge-project/SOURCE_DIGEST_AN_DP91_2023_QUERELLA_RESOLUTIONS_16AUG2026.md`
 - `archive/DP1901_STATUS_RECHECK_15AUG2026.md`
 - `archive/CORRECTION_REGISTER.md`

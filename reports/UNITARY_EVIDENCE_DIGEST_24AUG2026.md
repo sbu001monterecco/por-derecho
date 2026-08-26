@@ -4,6 +4,8 @@
 **Status:** source-controlled evidential review; not a pleading and not a finding of criminal, civil or professional liability.  
 **Scope:** repository, bilingual website, controlled evidence registers, previously extracted archive corpus and identified custody gaps.
 
+> **26 August 2026 supersession notice — current theory:** The sentence below that the documents reviewed on 24 August did not by themselves establish a concluded criminal scheme is preserved as a dated, source-bounded assessment of that then-accessible corpus. It is **not** the current controlling case theory, does not set an evidential ceiling, does not decide originals that had not been examined, and must not be used to fragment or dilute `ALG-ENT-018`. Gil Marer and Aweswell's current attributed position is that the record must be tested as **one continuing economic-criminal enterprise, advanced through successive adoption and divided functions**. That is an allegation, not a judicial finding; every actor and offence still requires separate proof. The public-safe Phase-A manifest triage neither proves nor disproves that allegation and adds no evidential support until native originals are acquired, authenticated and tested against contrary material. See `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`.
+
 ## Executive finding
 
 The matter is strongest when presented as a **cumulative documentary continuity case**, not as a theory dependent on one missing report or one alleged “smoking gun”. The principal supported sequence is:
@@ -16,7 +18,7 @@ The matter is strongest when presented as a **cumulative documentary continuity 
 6. Later operation, refurbishment, corporate structuring, investor material, RIC references and public-incentive materials support continuity, use and value. They do **not**, without more, prove earlier criminal coordination or conscious falsity.
 7. The central unresolved accountability question is whether the estate, hotel income, claims, assets, proceeds, Community debt and possible surplus were independently reconciled, protected and reported at each material stage.
 
-The safest and strongest public formulation is therefore:
+The following was the 24 August source-bounded public formulation and is retained for provenance, subject to the 26 August supersession notice above:
 
 > The documents establish prior notice, contested authority, material-control events, a disputed realisation sequence and later economic continuity. They justify production, reconciliation and actor-specific explanation. They do not by themselves establish a concluded criminal scheme.
 

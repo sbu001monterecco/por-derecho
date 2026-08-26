@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_DIR = ROOT / "publication-manifests"
 ORDER = [
     "DRAFT",
+    "PREPARED_PENDING_MERGE",
     "REMOTE_SOURCE",
     "PR_OPEN",
     "CI_GREEN",

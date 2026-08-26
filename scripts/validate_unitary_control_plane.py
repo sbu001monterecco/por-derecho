@@ -18,7 +18,9 @@ EXPECTED = {
     "PROCEEDING": 10,
 }
 UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260825-01"
+PENDING_CONTROL_ID = "PD-UNITARY-STATE-20260826-01"
 UNITARY_VERIFY_RUN = 32912919872
+SOURCE_MAIN_26 = "1be9f023bffcf1e9cd9c4f309a9a2bf45647106c"
 
 
 def load_json(path: Path):
@@ -97,19 +99,19 @@ def main() -> int:
 
         updates = load_json(DATA / "material-updates-v1.json")
         require(updates.get("control_id") == "PD-MATERIAL-UPDATES-001", "unexpected material-updates control")
-        require(updates.get("latest_material_date") == "2026-08-25", "latest material date mismatch")
-        require(len(updates.get("entries", [])) >= 4, "material update source too small")
+        require(updates.get("latest_material_date") == "2026-08-26", "latest material date mismatch")
+        require(len(updates.get("entries", [])) >= 5, "material update source too small")
         require(
             all(item.get("date") <= updates["latest_material_date"] for item in updates["entries"]),
             "future update date present",
         )
         require_markers(
             ROOT / "es/actualizaciones/index.html",
-            ["Última actualización material", "<strong>25 agosto 2026</strong>"],
+            ["Última actualización material", "<strong>26 agosto 2026</strong>", "ALG-ENT-018"],
         )
         require_markers(
             ROOT / "en/updates/index.html",
-            ["Latest material update", "<strong>25 August 2026</strong>"],
+            ["Latest material update", "<strong>26 August 2026</strong>", "ALG-ENT-018"],
         )
 
         state = load_json(ROOT / "ops/CURRENT_UNITARY_STATE.json")
@@ -122,8 +124,30 @@ def main() -> int:
         )
         require(state["identity_registry"]["counts"] == EXPECTED, "state identity counts drift")
         require(
-            state["material_updates"]["latest_material_date"] == updates["latest_material_date"],
+            state["material_updates"]["repository_latest_material_date"] == updates["latest_material_date"],
             "state/update date drift",
+        )
+        require(state["material_updates"]["latest_material_date"] == "2026-08-26", "compatibility material date drift")
+        require(
+            state["material_updates"]["last_live_verified_material_date"] == "2026-08-25",
+            "last live-verified material date drift",
+        )
+        require(
+            state["material_updates"]["public_parity"] == "2026-08-25_LIVE_VERIFIED_WITH_2026-08-26_PENDING",
+            "repository/live material parity boundary drift",
+        )
+        pending = state.get("pending_material_publication") or {}
+        require(pending.get("control_id") == PENDING_CONTROL_ID, "pending 26-Aug control missing")
+        require(pending.get("state") == "PREPARED_PENDING_MERGE", "pending 26-Aug state overstated")
+        require(pending.get("source_main_sha") == SOURCE_MAIN_26, "pending 26-Aug source-main drift")
+        require(
+            pending.get("publication_manifest")
+            == "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json",
+            "pending 26-Aug publication manifest missing",
+        )
+        require(
+            pending.get("live_verification") == "PENDING_MERGE_DEPLOYMENT_AND_EXACT_EDGE_READBACK",
+            "pending 26-Aug live-verification boundary drift",
         )
         readback = state["publication"]["current_sha_edge_readback"]
         require(readback["state"] == "LIVE_VERIFIED", "state readback is not live verified")
@@ -192,6 +216,7 @@ def main() -> int:
                 "https://sbu001monterecco.github.io/por-derecho/es/",
                 "https://sbu001monterecco.github.io/por-derecho/en/updates/",
                 "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+                "<lastmod>2026-08-26</lastmod>",
                 "<lastmod>2026-08-25</lastmod>",
             ],
         )
@@ -201,7 +226,15 @@ def main() -> int:
         )
         require_markers(
             ROOT / "CURRENT_UNITARY_STATE.md",
-            [UNITARY_CONTROL_ID, "LIVE_VERIFIED", str(UNITARY_VERIFY_RUN), "PR #1016"],
+            [
+                UNITARY_CONTROL_ID,
+                "LIVE_VERIFIED",
+                str(UNITARY_VERIFY_RUN),
+                "PR #1016",
+                PENDING_CONTROL_ID,
+                "PREPARED_PENDING_MERGE",
+                "not yet live",
+            ],
         )
 
         manifest = load_json(ROOT / "publication-manifests/unitary-control-plane-sync-20260825.json")
@@ -217,6 +250,16 @@ def main() -> int:
             and manifest.get("expected_routes", {}).get("en"),
             "manifest expected routes missing",
         )
+
+        pending_manifest = load_json(
+            ROOT / "publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json"
+        )
+        require(pending_manifest.get("control_id") == PENDING_CONTROL_ID, "pending manifest/control mismatch")
+        require(pending_manifest.get("current_state") == "PREPARED_PENDING_MERGE", "pending manifest state overstated")
+        require(pending_manifest.get("status") == "prepared_pending_merge", "pending manifest status mismatch")
+        require(pending_manifest.get("source_main_sha") == SOURCE_MAIN_26, "pending manifest source-main drift")
+        require(pending_manifest.get("publication_merge_sha") is None, "pending manifest claims a merge SHA")
+        require(pending_manifest.get("pages_run_id") is None, "pending manifest claims a Pages run")
     except AssertionError as exc:
         print(f"UNITARY CONTROL PLANE: FAIL\n - {exc}", file=sys.stderr)
         return 1
@@ -225,7 +268,9 @@ def main() -> int:
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
     print(" - identity denominator: 185 / 86 / 66 / 10 / 13 / 10")
-    print(" - latest material date: 2026-08-25")
+    print(" - repository latest material date: 2026-08-26")
+    print(" - last live-verified material date: 2026-08-25")
+    print(" - pending publication: PD-UNITARY-STATE-20260826-01 / PREPARED_PENDING_MERGE")
     print(f" - specialist verifier run: {UNITARY_VERIFY_RUN}")
     print(" - PR #1016 controlled as rebuild-on-current-main")
     return 0

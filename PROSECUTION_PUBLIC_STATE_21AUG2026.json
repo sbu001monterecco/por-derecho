@@ -1,8 +1,51 @@
 {
   "schema": "project-sun-rock-prosecution-public-state/v1",
-  "control_date": "2026-08-21",
+  "control_date": "2026-08-26",
   "status": "PUBLIC-SAFE SOURCE-STATUS CONTROL",
   "purpose": "Provide one machine-readable source for the public criminal-law/evidence architecture without converting allegations, institutional receipt, legal error, relationship, chronology or benefit into findings of criminal liability.",
+  "controlling_attributed_theory": {
+    "allegation_id": "ALG-ENT-018",
+    "es": "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.",
+    "en": "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.",
+    "attributed_theory_not_judicial_finding": true,
+    "does_not_itself_prove": [
+      "a statutory criminal organisation under Criminal Code Article 570 bis",
+      "a statutory criminal group under Criminal Code Article 570 ter",
+      "an original pact",
+      "any individual's participation",
+      "guilt"
+    ],
+    "actor_and_offence_elements_separate": true,
+    "factual_continuity_only": true,
+    "does_not_change": [
+      "whether any specific offence is continuing or permanent",
+      "completion of any specific offence",
+      "any individual's participation window",
+      "limitation periods"
+    ]
+  },
+  "rdm_manifest_phase_a": {
+    "source_class": "PRIVATE MANIFEST OR INDEX; NOT NATIVE EMAIL, ATTACHMENT OR DRIVE CORPUS",
+    "public_status": "PUBLIC-SAFE PHASE-A TRIAGE ONLY",
+    "coarse_denominators": {
+      "email_index_rows": "approximately 10.6 thousand",
+      "attachment_rows": "approximately 9.0 thousand",
+      "threads": "approximately 4.3 thousand"
+    },
+    "allegation_independent_of_manifest": true,
+    "discovery_priority_only": true,
+    "evidential_support_added_to_ALG_ENT_018": false,
+    "support_gate": "Acquire, preserve and authenticate native emails, attachments and Drive originals or versions; link them to actors and acts; then test supporting, contrary and exculpatory material.",
+    "open_native_status": "NOT YET TESTABLE FROM THE MANIFEST",
+    "open_native_status_scope": "This describes the manifest/native contribution only; the overall proposition is assessed separately from all controlled evidence.",
+    "privacy": "No private addresses, queries, provider identifiers, message content, exact private matrices or live strategy are public."
+  },
+  "legal_element_controls": {
+    "article_11": "Omission requires a result offence, a specific legal or contractual duty or prior creation of risk, real capacity to prevent, equivalence to causing the result and counterfactual causal contribution.",
+    "articles_28_29": "Later conduct does not retroactively create authorship or participation in an already completed offence; post-offence liability routes must be tested separately.",
+    "articles_446_449": "Separate a knowingly unjust decision, a manifestly unjust decision through gross negligence or inexcusable ignorance, refusal to adjudicate, and delay deliberately caused for an illegitimate purpose. Identify the competent actor, do not add a causal-result element to Article 449, and keep induced judicial error distinct.",
+    "articles_570bis_570ter": "Article 570 bis stability and coordinated task division are not Article 570 ter requirements. Organisation and residual group are separate statutory alternatives; the factual enterprise thesis does not establish either."
+  },
   "proof_rule": [
     "act",
     "capacity_or_authority",

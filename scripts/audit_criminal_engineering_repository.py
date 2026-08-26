@@ -27,6 +27,8 @@ REQUIRED_MARKERS = {
     CANONICAL["es"]: [
         "ALEGACIÓN CENTRAL DE POR DERECHO",
         "NO HALLAZGO JUDICIAL",
+        "Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.",
+        "no califica los hechos como delito continuado o permanente",
         "Las ocho fases de la presunta ingeniería",
         "LAJ / oficina judicial",
         "Escala de facilitación E0–E7",
@@ -37,6 +39,8 @@ REQUIRED_MARKERS = {
     CANONICAL["en"]: [
         "POR DERECHO CENTRAL ALLEGATION",
         "NOT A JUDICIAL FINDING",
+        "Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.",
+        "does not characterise the conduct as a continuing or permanent offence",
         "The eight phases of the alleged engineering",
         "LAJ / judicial office",
         "E0–E7 enabler ladder",
@@ -47,6 +51,10 @@ REQUIRED_MARKERS = {
     MODULE: [
         "data-criminal-engineering-gateway",
         "allegation, not finding",
+        "una sola empresa continuada de criminalidad económica",
+        "one continuing economic-criminal enterprise",
+        "no califica los hechos como delito continuado o permanente",
+        "does not characterise the conduct as a continuing or permanent offence",
         "authority + knowledge + duty",
     ],
     LOADER: [
@@ -79,6 +87,7 @@ ARCHITECTURE_PATTERNS = {
 }
 
 HIGH_RISK_PATTERNS = {
+    "economic_criminal_enterprise": re.compile(r"empresa continuada de criminalidad econ[oó]mica|continuing economic-criminal enterprise", re.I),
     "criminal_organisation": re.compile(r"organizaci[oó]n criminal|criminal organi[sz]ation", re.I),
     "proven_conspiracy": re.compile(r"conspiraci[oó]n (?:probada|demostrada)|proven conspiracy", re.I),
     "bribery_or_corruption": re.compile(r"soborno|cohecho|bribery|corrupci[oó]n", re.I),

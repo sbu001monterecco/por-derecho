@@ -5,6 +5,14 @@
 **Primary application:** Gil Marer / Aweswell criminal allegations concerning Construcciones Acosta Matos, S.A. or the relevant CAM entity, identified Acosta Matos natural persons, the connected Community-administration/private-actor perimeter, the Insolvency Administrator and specified judicial conduct  
 **Applies to:** repository analysis, public pages, homepage and audience gateways, metadata, datasets, feeds, source maps, summaries, handovers, prompts, corrections, manifests, validators and future AI-generated text
 
+## 26 August 2026 unitary-attribution overlay
+
+This non-dilution rule now includes `ALG-ENT-018`: Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions. The repository must state that position faithfully as an attributed factual/prosecutorial theory and not reduce it to disconnected concerns. It is not a judicial finding.
+
+Non-dilution never means proof inflation. The formulation does not itself establish an original pact, Articles 570 bis/ter CP, individual participation or guilt, a continuing or permanent offence, or any altered consummation, participation window or prescription date. Each actor, period, act/omission and offence requires its own historically applicable elements and contrary-material review. Por Derecho bears the evidential burden; no person must disprove the allegation. Keep lead, investigation, accusation/charging, trial and conviction sufficiency separate.
+
+The `RDM-PRIVATE-MAILBOX-01` workbook is a manifest/index only. Its public-safe Phase-A triage changes acquisition priority and adds no evidential support to `ALG-ENT-018`; full private Phase A and native email, attachment and Drive Phase B remain open. A dated source-bounded conclusion may be superseded as controlling synthesis without proving its opposite. Apply the same-block temporal disclaimer and the controls in `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`.
+
 ## 1. Controlling position
 
 Where Gil Marer or Aweswell has expressly and actor-specifically attributed criminal conduct, the repository must preserve that position as an **express criminal allegation**.
