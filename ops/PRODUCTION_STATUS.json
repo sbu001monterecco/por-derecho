@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-24T16:27:17.010Z",
+  "as_of": "2026-08-25T23:56:02Z",
   "production_repository": "sbu001monterecco/por-derecho",
   "production_branch": "main",
   "public_host": "https://sbu001monterecco.github.io/por-derecho/",
@@ -9,21 +9,34 @@
   "current_state": "ops/CURRENT_UNITARY_STATE.json",
   "historical_snapshot": "archive/ops-snapshots/PRODUCTION_STATUS_20260824.json",
   "historical_snapshot_sha": "8d61887ca22741ba5054a278d169c07e1b968119",
-  "current_main_observed_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
-  "current_main_observed_at": "2026-08-25T23:30:00Z",
+  "current_main_observed_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
+  "current_main_observed_at": "2026-08-25T23:56:02Z",
   "latest_reader_facing_pages_deployment": {
-    "sha": "ae22ca42c844813ff73220614ac150cd734d572e",
-    "run_id": 32910389340,
-    "run_number": 1115,
+    "sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+    "run_id": 32912074201,
+    "run_number": 1119,
     "status": "completed",
     "conclusion": "success",
-    "note": "The later current-main deletion-closeout commit did not trigger a newer Pages deployment."
+    "created_at": "2026-08-25T23:44:01Z",
+    "completed_at": "2026-08-25T23:44:55Z"
   },
   "exact_public_content_verification": {
-    "state": "PENDING_AFTER_CONTROL_PLANE_MERGE",
-    "last_positive_smoke_sha": "19fb3b7a5d502ece5f5359cc6cfe4bdc2f858b78",
-    "last_positive_smoke_run": 32907717917,
-    "rule": "The exact PR #922 live baseline below remains preserved. Current deployment success and exact-content verification are separate states."
+    "state": "LIVE_VERIFIED",
+    "workflow": ".github/workflows/verify-unitary-control-plane.yml",
+    "workflow_run_id": 32912919872,
+    "workflow_run_number": 12,
+    "job_id": 98010526784,
+    "head_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
+    "source_publication_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+    "verified_at": "2026-08-25T23:56:02Z",
+    "conclusion": "success",
+    "verification_scope": [
+      "Spanish and English identity routes expose 185 / 86 / 66 / 10 / 13 / 10",
+      "Spanish and English update routes expose 25 August 2026",
+      "CURRENT_UNITARY_STATE.json parses and contains the exact control and denominator",
+      "material-updates JSON, unitary sitemap and robots declaration are live"
+    ],
+    "rule": "The exact PR #922 baseline below remains preserved. Later deployment and exact-content verification are separately recorded."
   },
   "last_live_verification": {
     "state": "LIVE_VERIFIED",
@@ -66,8 +79,8 @@
     "latest_verified_release_separately_bundled": false
   },
   "pages_deployment_mode": {
-    "state": "UNCHANGED_AND_LIVE_VERIFIED",
-    "reason": "The functioning Pages delivery path published PR #922 at exact merge SHA ed98b0ac634afc34f00a425e9ed67ca58fd77cb8 in run 32750603024. Both homepages, fourteen canonical direct actor/accountability surfaces and the preserved legacy Spanish court route passed 757 settled-DOM assertions in live run 32750605646."
+    "state": "UNITARY_CONTROL_PLANE_LIVE_VERIFIED",
+    "reason": "PR #1031 public surfaces deployed at c43e518150e9b8535b8829971d7cd36045c99b5f in Pages run 32912074201. Structured exact public readback passed in main workflow run 32912919872 after the verification-only fix at 4088f7ffff80df788137ce91328b11fe3de6b563. The prior PR #922 preservation baseline remains a separate rollback anchor."
   },
   "mission_critical_hardening": {
     "state": "LIVE_VERIFIED",
