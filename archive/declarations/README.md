@@ -10,7 +10,7 @@ Este directorio conserva declaraciones fechadas de personas con conocimiento per
 
 Este repositorio GitHub es público. Por tanto, una persona privada puede estar plenamente identificada en el original nativo, firmado o presentado institucionalmente y, al mismo tiempo, aparecer en esta capa pública mediante un descriptor funcional cuando su nombre no sea necesario para comprender o verificar la proposición publicada.
 
-Para la persona del perímetro personal y empresarial de Gil Marer vinculada a las declaraciones 001–005 y 011, utilizar:
+Para la persona del perímetro personal y empresarial de Gil Marer vinculada a las declaraciones 001–005, 011 y 014, utilizar:
 
 - **Testigo del perímetro de Gil Marer — identidad reservada**; o
 - **persona del perímetro personal y empresarial de Gil Marer**.
@@ -90,6 +90,9 @@ Entradas actuales:
 - `005_WITNESS_GIL_PERIMETER_COMMUNITY_CEXP_PINK_AEAT_20260822.md`
 - `006_GIL_CORRECTION_DECLARATION_005_PINK_KEYS_AUTHORITY_20260822.md`–`010_GIL_PRESSURE_CONTEXT_PINK_ADMINISTRATION_NULLITY_AEAT_COMMUNITY_PUBLICATION_20260822.md`
 - `011_WITNESS_GIL_PERIMETER_CAMPANARIO_PRIETO_NORIEGA_COMMUNITY_NETWORK_20260825.md`
+- `012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md`
+- `013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md`
+- `014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md`
 
 Los nombres exactos de originales privados pueden mantenerse en el registro privado de integridad, no en el repositorio público cuando revelen identidad innecesaria.
 

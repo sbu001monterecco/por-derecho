@@ -11,23 +11,54 @@
   },
   {
     "id": "ACT-ORIGINATING-LENDER",
-    "name": "Original Canary lender / predecessor banking perimeter",
+    "name": "Caja Insular de Ahorros de Canarias (La Caja de Canarias)",
     "role": ["originator", "account_administrator", "security_holder_historical"],
-    "relevant_period": {"from": "2008", "to": "2012"},
-    "evidence_status": "contested",
+    "relevant_period": {"from": "2008", "to": "2011"},
+    "evidence_status": "verified_official",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"],
-    "open_questions": ["Native origination, restructuring, SWAP, account and default files.", "Which obligations remained upstream after each transfer."]
+    "source_refs": ["SRC-CNMV-BANKIA-2011-ACCOUNTS", "SRC-CAIXABANK-EXPERT-2024"],
+    "open_questions": ["Complete native 2008 origination and SWAP file.", "Which specific obligations passed through each 2011 segregation."],
+    "naming_limits": ["Do not substitute CajaCanarias or Cajasiete for this legal entity."]
+  },
+  {
+    "id": "ACT-BFA",
+    "name": "Banco Financiero y de Ahorros, S.A. (BFA)",
+    "role": ["intermediate_corporate_successor", "banking_business_transferor_to_Bankia"],
+    "relevant_period": {"from": "2011", "to": "2011"},
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-CNMV-BANKIA-2011-ACCOUNTS"],
+    "open_questions": ["Segregation deeds and schedules identifying the LPB instruments and included/excluded obligations.", "No independent operational misconduct is attributed without evidence."]
   },
   {
     "id": "ACT-BANKIA",
     "name": "Bankia, S.A. historical perimeter",
     "role": ["claimant_in_mortgage_enforcement", "banking_successor_historical"],
-    "relevant_period": {"from": "2011", "to": "2013"},
+    "relevant_period": {"from": "2011", "to": "2021"},
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"],
+    "source_refs": ["SRC-CNMV-BANKIA-2011-ACCOUNTS", "SRC-BANKIA-BUROFAX-2011", "SRC-BANKIA-EXECUTION-2012"],
     "open_questions": ["Exact transfer schedule to SAREB and retained obligations."]
+  },
+  {
+    "id": "ACT-AWESWELL",
+    "name": "Aweswell Limited",
+    "role": ["claimant_in_Valencia_1859_2023_9", "recovery_claimant"],
+    "relevant_period": {"from": "2013", "to": null},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-VALENCIA-DILIGENCE-2025", "SRC-CAIXABANK-EXPERT-2024"],
+    "open_questions": ["Final merits outcome and any adjudicated recovery."]
+  },
+  {
+    "id": "ACT-CAIXABANK",
+    "name": "CAIXABANK, S.A.",
+    "role": ["universal_successor_to_Bankia", "defendant_in_Valencia_1859_2023_9"],
+    "relevant_period": {"from": "2021", "to": null},
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-CAIXABANK-BANKIA-MERGER-2021", "SRC-VALENCIA-DILIGENCE-2025", "SRC-CAIXABANK-EXPERT-2024"],
+    "open_questions": ["Underlying merits, limitation, causal loss and quantum remain contested.", "Specific obligations included in the earlier Caja-to-BFA-to-Bankia chain."]
   },
   {
     "id": "ACT-SAREB",
@@ -57,7 +88,8 @@
     "evidence_status": "verified_primary",
     "publication": "public_safe",
     "source_refs": ["SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-GMAIL-2016-05-18-HAYA-REJECTION", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
-    "open_questions": ["Servicing agreement, powers of attorney, delegated authority and committee instructions.", "Whether particular acts were within mandate or later ratified."]
+    "open_questions": ["Servicing agreement, powers of attorney, delegated authority and committee instructions.", "Whether particular acts were within mandate or later ratified."],
+    "capacity_limits": ["not_established_as_credit_holder_or_assignee", "mandate_and_authority_to_prove"]
   },
   {
     "id": "ACT-CERBERUS-PERIMETER",

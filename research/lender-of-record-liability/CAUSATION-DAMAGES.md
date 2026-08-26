@@ -24,9 +24,13 @@ Do not translate English “remoteness” mechanically. Test:
 
 | Actor | Earliest responsible window to test | Incremental question |
 |---|---|---|
-| originator/Bankia | origination/account/default/enforcement period | what loss followed from its own contract/account/enforcement conduct? |
+| Caja Insular | 2008–2010 origination/product/account architecture | what loss followed from its own contracting, information and account design? |
+| BFA | 2011 intermediate corporate-succession period | which specific obligation passed/was retained and what statutory or instrument-based liability, if any, followed? |
+| Bankia | 2011–2021 servicing/default/enforcement period | what loss followed from its own account, notice, acceleration, enforcement and restructuring conduct? |
+| CaixaBank | legally proved successor/retained-obligation period and own conduct | what obligation followed by law/instrument, what remained elsewhere and what incremental loss followed from CaixaBank's own conduct? |
 | SAREB | period of its actual holding and decisions | what own conduct, if any, added harm beyond inherited position? |
-| PH122/Haya | after documented 2015/2017 knowledge and relevant decisions | what financeable workout or estate value was lost because of an attributable decision? |
+| PH122 | after documented 2015/2017 knowledge and relevant holder decisions | what financeable workout or estate value was lost because of an attributable decision? |
+| Haya | documented servicing/interlocutor period | what own communication or act caused harm, and what principal decision can be attributed only after mandate/instruction proof? |
 | CAM | from 20 Oct 2017 acquisition and later direct notice/conduct | what additional harm followed from acquisition, proposal, valuation, enforcement, possession/title or income conduct? |
 | HNT | from legally effective succession and own conduct | what liability followed the unit and what new harm arose afterwards? |
 
@@ -60,3 +64,7 @@ The defence is expected to rely on:
 - claimant decisions and mitigation.
 
 Each is to be tested, not ignored. The objective is not “one actor caused everything,” but a defensible allocation of incremental harm.
+
+## Mortgage/swap package control — 26 August 2026
+
+Apply `archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md`. One transaction ledger must reconcile the first mortgage, floor, swap, second facility, pledged funds, controlled account circuit, the €110k voice-arithmetic correction against the €119k LPB-ledger sales record, cure/default, acceleration, execution and later credit chain. One economic ledger does not imply one legal cause of action or automatic joint liability.

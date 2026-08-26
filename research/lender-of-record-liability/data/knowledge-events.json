@@ -1,5 +1,29 @@
 [
   {
+    "id": "KN-2011-11-29-BANKIA-ACCELERATION",
+    "date": "2011-11-29",
+    "actor_refs": ["ACT-BANKIA", "ACT-LPB"],
+    "knowledge_topic": "Second-facility interest default and acceleration before first scheduled principal instalment",
+    "directly_establishes": "An outgoing Bankia burofax demanded the full €839,441 capital plus stated interest and default interest before the deed's 1 January 2012 first principal instalment.",
+    "does_not_establish": "Delivery, receipt, correctness of the calculation, validity of acceleration or absence of an interest default.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BANKIA-BUROFAX-2011", "SRC-SECOND-MORTGAGE-2010"],
+    "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2012-01-10-BANKIA-EXECUTION",
+    "date": "2012-01-10",
+    "actor_refs": ["ACT-BANKIA", "ACT-LPB"],
+    "knowledge_topic": "Execution wording, accelerated balance and timing",
+    "directly_establishes": "Bankia's filing alleged unpaid interest and principal amortisation from 7 July 2011 and sought €857,373.81 plus €257,000 provisional; it was signed 10 January and court-received 23 January 2012.",
+    "does_not_establish": "Truth of the default allegations, complete annexed calculation, validity of acceleration or final outcome.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-BANKIA-EXECUTION-2012", "SRC-SECOND-MORTGAGE-2010"],
+    "later_conduct_refs": []
+  },
+  {
     "id": "KN-2015-04-29-HAYA-REFINANCING",
     "date": "2015-04-29",
     "actor_refs": ["ACT-HAYA", "ACT-PH122", "ACT-CERBERUS-PERIMETER"],
