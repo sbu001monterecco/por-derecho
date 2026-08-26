@@ -1,0 +1,72 @@
+{
+  "manifest_id": "PD-PUB-ONA-20260826-01",
+  "date": "2026-08-26",
+  "scope": "Bilingual unitary ONA/Clubotel funded-exit evidence spine and actor-specific criminal-allegation test",
+  "authority": "User instruction to formulate, present, fully link and publish the repository and website update",
+  "base_branch": "main",
+  "working_branch": "chatgpt/ona-funded-exit-unitary-criminal-spine-20260826",
+  "source_record": "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md",
+  "declarant_record": "archive/declarations/GIL_MARER_ONA_FUNDED_EXIT_STATEMENT_OF_FACT_AND_TRUTH_20260826.md",
+  "machine_record": "data/ona-funded-exit-unitary-record.json",
+  "public_routes": [
+    "es/ona-hotels-salida-concurso-36-2012/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/clubotel-personation-daniel-irigoyen/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/cuatrecasas-debt-certification-finance/index.html",
+    "es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/index.html",
+    "en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/index.html"
+  ],
+  "cross_link_targets": [
+    "ONA pre-7-June funded-exit dossier",
+    "Cuatrecasas Sun Park",
+    "Daniel Irigoyen insolvency knowledge",
+    "Insolvency Administrator role and person page",
+    "Magistrate-Judge and judicial spine",
+    "7 June 2018 material-control route",
+    "Acosta Matos perimeter",
+    "five-private-actor dossier",
+    "DP 1901/2026",
+    "unitary criminal hypothesis and evidence map"
+  ],
+  "evidence_classes": [
+    "signed transaction documents",
+    "public-safe derivative of private correspondence",
+    "contemporaneous professional account",
+    "court filing and docket",
+    "Gil Marer statement and allegation",
+    "open proof and contrary-evidence requirements"
+  ],
+  "publication_boundaries": {
+    "no_raw_private_email_bodies": true,
+    "no_private_message_ids_or_addresses": true,
+    "no_joint_adoption_by_named_participants": true,
+    "no_adjudicated_criminal_guilt_claim": true,
+    "legal_persons_and_capacities_kept_distinct": true,
+    "actor_specific_knowledge_and_intent_required": true,
+    "right_of_reply_preserved": true
+  },
+  "required_verification": [
+    "compare branch with refreshed main before PR",
+    "review all changed paths for deletion or rename",
+    "validate ES/EN route parity",
+    "validate canonical and hreflang links",
+    "validate internal route targets",
+    "validate sitemap XML",
+    "run repository and publication-integrity workflows available on PR",
+    "verify exact merge SHA deployment and live affected routes"
+  ],
+  "known_open_evidence": [
+    "certified April correspondence exhibits where required",
+    "certified post-13-June filing and annexes",
+    "reproducible AC debt certificate/update",
+    "complete Clubotel personation, AC opposition and ruling",
+    "condition-by-condition closing ledger",
+    "actor-specific knowledge and benefit evidence"
+  ]
+}
