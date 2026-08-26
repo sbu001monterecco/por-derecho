@@ -1,0 +1,53 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "CALIFICACION-FISCAL-VISTA-MAX-ATTRIBUTION-20260826",
+  "control_marker": "calificacion-fiscal-vista-max-attribution-20260826",
+  "owner": "Gil Marer / Por Derecho",
+  "created_at": "2026-08-26T11:02:07Z",
+  "source_base": "4e551da30c1f2e686769b9842fcf93189a03e470",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "purpose": "Publish the strongest source-controlled attribution to the prosecutor from the 25 July 2023 Calificacion hearing onward while preserving the distinction between Gil Marer's first-hand identification, official institutional attendance and unproved actor-specific knowledge or conduct.",
+  "expected_routes": {
+    "es": [
+      "es/calificacion-concurso-36-2012-vidas-paralelas/index.html",
+      "es/calificacion-concurso-36-2012-vidas-paralelas/vista-prueba-testigos/index.html",
+      "es/tesis-uso-criminal-procedimiento-calificacion/index.html",
+      "es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/index.html"
+    ],
+    "en": [
+      "en/insolvency-classification-parallel-lives/index.html",
+      "en/insolvency-classification-parallel-lives/hearing-evidence-witnesses/index.html",
+      "en/insolvency-classification-criminal-misuse-thesis/index.html",
+      "en/unitary-criminal-hypothesis-2011-present/maximal-attribution/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/declarations/015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md",
+    "archive/CALIFICACION_FISCAL_VISTA_POST_ALERT_MAX_ATTRIBUTION_CONTROL_26AUG2026.md",
+    "archive/CORRECTION_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CALIFICACION_ALERTADOR_RETALIATION_ADDENDUM_23AUG2026.md",
+    "scripts/validate_calificacion_criminal_misuse_thesis.py"
+  ],
+  "evidence_status": {
+    "official": "Judgment 163/2023 records Ministerio Fiscal attendance at the 25 July 2023 hearing without naming the individual prosecutor.",
+    "direct_testimony": "Gil Marer directly and positively identifies Ricardo de Mosteyrín Sampalo as physically present throughout the hearing.",
+    "open": "Official individual identity, exact oral acts, personal receipt and knowledge, adverse act, causation, independent grounds and any separate criminal elements remain to be proved."
+  },
+  "attribution_boundary": "The post-hearing knowing-instrumentalisation, Article 36.2 retaliation and private-benefit propositions are expressly attributed allegations, not judicial or prosecutorial findings. Presence and procedural capacity do not automatically establish knowledge, causation, intent, concert or criminal liability.",
+  "privacy_control": "Only public-safe source/status summaries are committed. Native audiovisual files, private correspondence, addresses, message identifiers and custody locators remain outside the public repository.",
+  "deletions": [],
+  "validation": {
+    "status": "LOCAL_GATES_PENDING_REMOTE_CI",
+    "required": [
+      "validate_repository_preservation.py",
+      "validate_publication_integrity.py",
+      "validate_audience_experience.py",
+      "validate_calificacion_criminal_misuse_thesis.py",
+      "validate_calificacion_position_objectives.py",
+      "validate_calificacion_rpl2523_evidence_map.py",
+      "validate_private_source_statement_osint_governance.py",
+      "HTML parse, duplicate-ID and internal-link checks",
+      "exact-SHA Pages deployment and eight-route byte-for-byte live readback"
+    ]
+  }
+}

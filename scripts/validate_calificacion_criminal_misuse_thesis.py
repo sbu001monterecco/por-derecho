@@ -48,6 +48,70 @@ def main() -> int:
         if marker not in en:
             errors.append(f"{en_path}: missing marker {marker!r}")
 
+    fiscal_hearing_routes = {
+        "es/calificacion-concurso-36-2012-vidas-paralelas/index.html": [
+            "Gil Marer lo identifica directamente como el fiscal presente durante toda la vista",
+            "Vista 2023 · dos capas",
+            "Atribución máxima desde la vista",
+            "posible represalia del artículo 36.2",
+            "Declaración 015",
+            "corroboración oficial individual pendiente",
+        ],
+        "en/insolvency-classification-parallel-lives/index.html": [
+            "Gil Marer directly identifies him as the prosecutor present throughout",
+            "2023 hearing · two layers",
+            "Maximum attribution from the hearing",
+            "possible retaliation under Article 36.2",
+            "Declaration 015",
+            "individual official corroboration remains pending",
+        ],
+        "es/calificacion-concurso-36-2012-vidas-paralelas/vista-prueba-testigos/index.html": [
+            "IDENTIFICACIÓN EN DOS CAPAS",
+            "estuvo físicamente presente durante toda la vista",
+            "identidad oficial individual y actuación exacta pendientes",
+            "Declaración 015",
+        ],
+        "en/insolvency-classification-parallel-lives/hearing-evidence-witnesses/index.html": [
+            "TWO-LAYER IDENTIFICATION",
+            "physically present throughout the hearing",
+            "individual official identity and exact acts pending",
+            "Declaration 015",
+        ],
+        "es/hipotesis-criminal-unitaria-2011-presente/atribucion-maxima/index.html": [
+            'id="fiscal-vista-2023"',
+            "Fiscal desde la vista de 2023: atribución máxima, prueba separada",
+            "posible utilización del órgano fiscal en beneficio del perímetro Acosta Matos",
+            "La presencia no transmite automáticamente conocimiento ni responsabilidad",
+            "Declaración 015",
+        ],
+        "en/unitary-criminal-hypothesis-2011-present/maximal-attribution/index.html": [
+            'id="hearing-prosecutor-2023"',
+            "Prosecutor from the 2023 hearing onward: maximum attribution, separate proof",
+            "possible use of the prosecution office for the benefit of the Acosta Matos perimeter",
+            "Presence does not automatically transfer knowledge or liability",
+            "Declaration 015",
+        ],
+    }
+    for path, markers in fiscal_hearing_routes.items():
+        body = read(path)
+        for marker in markers:
+            if marker not in body:
+                errors.append(f"{path}: missing Fiscal-hearing control {marker!r}")
+
+    declaration = read(
+        "archive/declarations/015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md"
+    )
+    for marker in [
+        "Source mode:",
+        "Adoption status:",
+        "first-hand perception (`P1`)",
+        "not presented as an official court or Fiscalía certification",
+        "official identity corroboration",
+        "any separate criminal elements remain to be proved",
+    ]:
+        if marker not in declaration:
+            errors.append(f"Declaration 015: missing source/status boundary {marker!r}")
+
     if es.count('class="cm-thesis-pillar"') != 5:
         errors.append(f"{es_path}: expected exactly five thesis pillars")
     if en.count('class="cm-thesis-pillar"') != 5:

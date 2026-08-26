@@ -133,3 +133,14 @@ The pre-publication 24-Aug-2026 controlled verifier returned HTTP 200 for all `8
 The party/entity identifier in the Calificación source map is **Aweswell Limited**, UK company no. 07716847 (formerly Monterecco Sun Park Limited). Do not use `Aweswell, S.L.`, and do not conflate it with Pink Canary Services, S.L.U. (formerly the Spanish Monterecco Sun Park, S.L.U.).
 
 The substantive negative-role control is unchanged: no separate Aweswell Limited opposition to the Calificación or appeal from Sentencia 163/2023 is currently identified. `Not identified` remains a bounded corpus result, not proof that no instrument exists.
+
+## CR-CAL-RET-019 — The 2023 prosecutor has two distinct identification layers
+
+Use both layers and do not collapse them:
+
+1. **Official institutional attendance:** Judgment 163/2023 records that the Ministerio Fiscal attended the 25-Jul-2023 hearing, without naming the individual prosecutor.
+2. **Direct first-hand identification:** in Declaration 015, Gil Marer directly and positively identifies Ricardo de Mosteyrín Sampalo as the prosecutor physically present throughout the hearing.
+
+The public site may state Gil's identification firmly as his direct evidence. It must not describe the identity as officially certified until the appearance list, Fiscalía allocation/substitution record or equivalent official source is produced. Presence does not itself prove review of register 918/2021, the exact oral position, causal retaliation, criminal intent or agreement.
+
+The 12-Mar-2019 opinion is the pre-reporting baseline. The maximum actor-specific allegation from the hearing onward is that any proved maintenance, adoption, reaffirmation, use or failure to correct after personal knowledge of the alert chain should be examined as alleged knowing instrumentalisation and possible Article 36.2 retaliation. That is Gil Marer's attributed allegation, not established liability. Article 38.4 remains conditional and rebuttable; any criminal characterisation requires separate offence elements and mental state.

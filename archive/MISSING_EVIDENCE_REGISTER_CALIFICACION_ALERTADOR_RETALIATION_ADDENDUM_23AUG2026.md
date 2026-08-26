@@ -29,6 +29,7 @@
 | ME-CAL-RET-021 | Bidirectional consequence-link closure | Prevents the same evidence from remaining fragmented across otherwise accurate pages | ES/EN links: Calificación ↔ elEconomista/Madrid ↔ RPL 2523/2025 ↔ complete-record reader; links to Meeting Point, RICPE, incentive/FEDER and Acosta pages; validator asserting required routes and anchors | CLOSED / LIVE VERIFIED — PR 903, merge `91334adaa3c82c6b7d4505666188a2d7e98daddb` |
 | ME-CAL-RET-022 | Certified whole-file denominator for pleading completeness | A repository count cannot prove the official court-file denominator | Certified chronological docket/index for every section and incident; reconcile every official entry to the 127-record catalogue and create gap rows for unmatched acts | OPEN / percentage cannot be calculated |
 | ME-CAL-RET-023 | Exact live parity for the bilingual RICPE routes | A reachable page may still differ from the source frozen for legal and publication review | Reconcile the live and repository ES/EN `ric-private-equity-sun-park` files; identify the intended version; obtain an authorised deployment; rerun the 85-surface hash verifier and record the deployed SHA | CLOSED — 85/85 HTTP 200 and exact source parity at 2026-08-24T04:10:36Z; PR 903 / merge `91334adaa3c82c6b7d4505666188a2d7e98daddb` |
+| ME-CAL-RET-024 | Official identity, knowledge and exact acts of the Public Prosecutor at the 25-Jul-2023 hearing | Declaration 015 supplies direct first-hand identification and the Judgment supplies institutional attendance, but neither closes official identity, personal knowledge or the exact adverse act | Certified appearance/minutes; Fiscalía allocation/substitution/attendance record; complete judicial audiovisual master; speaker-attributed transcript and final submissions; register 918/2021 service/access/treatment record; 2019→2023 position comparison; independent-grounds evidence | OPEN — direct identification recorded; official and act-by-act corroboration highest priority |
 
 ## Closure sequence
 
@@ -40,6 +41,7 @@
 6. Use later outputs only through the interfaces in `011`–`014`; do not merge proceedings.
 7. Close `018` and `019`: native media transmission and Madrid appellate status.
 8. Close `020`–`023`: public-text decisions, bidirectional links, certified docket denominator and exact live-version parity.
+9. Close `024` together with `003` and `008`: official Fiscal identity, personal knowledge and exact hearing acts.
 
 ## Completion scoring model
 

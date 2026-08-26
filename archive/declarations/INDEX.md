@@ -24,6 +24,7 @@ Registro maestro de declaraciones conservadas en `archive/declarations/`.
 | 012 | 2026-08-25 | Gil Marer | Teoría máxima atribuida de causalidad criminal, administración de hecho/sombra y posibles estados de conocimiento del Administrador Concursal desde 2011 | REGISTRADA — posición de parte; no es una declaración penal adjudicada y exige prueba acto–actor–conocimiento–causalidad | [`012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md`](./012_GIL_MAXIMAL_ATTRIBUTED_CRIMINAL_CAUSATION_SHADOW_ADMINISTRATION_2011_TO_PRESENT_20260825.md) |
 | 013 | 2026-08-25 | Gil Marer | Alegación de convergencia funcional del perímetro comunitario/profesional de 2011 hacia el posterior perímetro Acosta Matos/CAM/RICPE/HNT-MYND | REGISTRADA — posición de parte con apoyo graduado; no prueba sucesión universal, pacto común ni responsabilidad penal | [`013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md`](./013_GIL_ATTRIBUTED_FUNCTIONAL_CONVERGENCE_INTO_ACOSTA_MATOS_PERIMETER_20260825.md) |
 | 014 | 2026-08-26 | Testigo del perímetro de Gil Marer — identidad reservada | Primera hipoteca, suelo, swap/cobertura, segunda financiación, depósito pignorado, cuentas controladas, ventas de apartamentos, carencia, mora, vencimiento y Ejecución 90/2012 | REGISTRADA — síntesis editorial derivada de fuente y atribuida por Gil; no firmada, no jurada ni ratificada palabra por palabra; corrección 55.000 × 2 = 110.000 y conciliación íntegra pendientes | [`014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md`](./014_WITNESS_GIL_PERIMETER_MORTGAGE_SWAP_ACCOUNTS_EXECUTION_20260826.md) |
+| 015 | 2026-08-26 | Gil Marer | Identificación directa de Ricardo de Mosteyrín Sampalo como fiscal presente durante toda la vista de 25-jul-2023 y atribución máxima posalerta desde la vista en adelante | REGISTRADA — confirmación directa escrita; no firmada ni jurada; la Sentencia confirma asistencia del Ministerio Fiscal sin identificar al fiscal; identidad oficial, conocimiento y actuación exacta pendientes | [`015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md`](./015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md) |
 
 ## Control obligatorio de voz y aclaraciones
 
@@ -49,7 +50,7 @@ Cuando proceda, cada entrada o declaración deberá registrar:
 
 ## Regla de numeración
 
-La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. Después de las entradas anteriores, la siguiente declaración disponible es **015**, salvo que otra entrada se incorpore antes.
+La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. Después de las entradas anteriores, la siguiente declaración disponible es **016**, salvo que otra entrada se incorpore antes.
 
 ## Declaraciones accionables
 
