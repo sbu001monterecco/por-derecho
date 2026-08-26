@@ -126,7 +126,7 @@ Treat this as a retrieval checklist, not a final statement of completeness.
 
 Search and reconcile:
 
-- DP 332/2014 — Juzgado de Instrucción nº 3 de Arrecife; primary final order of 29 March 2021 missing;
+- DP 332/2014 — Juzgado de Instrucción nº 3 de Arrecife; closure is reported in 2021, but the primary disposition, exact date and ground are missing; the later-pleaded 29 March date conflicts with contemporaneous reactivation/resumption communications and requires reconciliation;
 - DP 1132/2018 — Juzgado de Instrucción nº 2 de Arrecife;
 - Auto 804/2018 — appellate treatment of DP 1132/2018; exact roll, panel and complete record required;
 - AP 89/2014 — civil appellate decision concerning units, keys, operation/possession and veil-piercing treatment; exact first-instance court, proceeding and complete judgment required;

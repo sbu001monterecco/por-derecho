@@ -5,10 +5,8 @@ The following archives remain **not opened**. Each public alias maps to a privat
 | Priority | Alias | Archive | Date | Size | Required action |
 |---|---|---|---|---:|---|
 | immediate | GMAIL-ZIP-001 | `8. Informes Periciales.zip` | 2019-08-01 | 16,075,159 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
-| immediate | GMAIL-ZIP-002 | `Fiscalía.zip` | 2020-04-05 | 21,153,250 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
 | immediate | GMAIL-ZIP-003 | `COMUNIDAD.zip` | 2020-06-26 | 23,413,287 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
 | immediate | GMAIL-ZIP-004 | `AC-CAM.zip` | 2020-03-10 | 16,117,010 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
-| high | GMAIL-ZIP-005 | `Ampliación Fiscalía.zip` | 2019-01-10 | 22,692,319 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
 | high | GMAIL-ZIP-006 | `ADMINISTRACION.zip` | 2019-12-07 | 16,681,438 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
 | high | GMAIL-ZIP-007 | `MASA ACTIVA (1).zip` | 2018-11-26 | 16,849,917 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
 | high | GMAIL-ZIP-008 | `MASA ACTIVA (2).zip` | 2018-11-26 | 16,622,075 | Recover accessible bytes, preserve, hash, extract recursively and rescan. |
@@ -31,3 +29,10 @@ The following archives remain **not opened**. Each public alias maps to a privat
 4. Compare filename, date, size and SHA-256 before treating a recovered copy as the same archive.
 
 No archive may be marked searched internally until its bytes have actually been opened.
+
+## Recovered on 26 August 2026
+
+- `GMAIL-ZIP-002` / `Fiscalía.zip` — recovered, SHA-256 verified, safely extracted, nested archive opened and inventoried.
+- `GMAIL-ZIP-005` / `Ampliación Fiscalía.zip` — recovered, SHA-256 verified, safely extracted and inventoried.
+
+Their public recovery and allegation controls are recorded in `archive/FISCALIA_DI273_2013_CAUSAL_ATTRIBUTION_AND_ARCHIVE_RECOVERY_CONTROL_26AUG2026.md`. Native archives and private contents remain outside Git.

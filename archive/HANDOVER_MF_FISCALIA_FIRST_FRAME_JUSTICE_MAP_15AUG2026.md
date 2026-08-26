@@ -18,8 +18,8 @@ Earlier July 2026 Fiscalía handovers began the controlling institutional chrono
 
 - **2011–2012** — pre-concurso Community/minority-owner conflict and litigation: factual prehistory.
 - **18 September 2013** — later records identify an insolvency-administrator complaint/communication to Fiscalía as origin of the criminal route.
-- **27 December 2013** — Fiscalía querella in DI 273/2013 against Gil Marer, Patricia Domínguez and related companies. Reverify the exact signatory from the primary querella before public naming.
-- **2014–2021** — DP 332/2014 in Arrecife. Minority-side entities later participated; the AC expanded allegations on 27 February 2018. Later records refer to sobreseimiento/archive on 29 March 2021, but the primary final order and exact reasoning remain a critical evidential gap.
+- **27 December 2013** — Fiscalía querella in DI 273/2013 against Gil Marer and Patricia Domínguez, signed by **Tomás Fernández de Páiz**. The recovered primary scan supports attribution of that act only; it does not establish motive, total knowledge or wrongdoing.
+- **2014–2021** — DP 332/2014 in Arrecife. Minority-side entities later participated; the AC expanded allegations on 27 February 2018. Later records report closure in 2021, but the primary disposition, exact date and reasoning remain a critical evidential gap. The 29 March date comes from a later party pleading and must be reconciled with contemporaneous reactivation/resumption communications.
 - **2018 role reversal** — while the earlier AC-originated criminal lane remained active, Gil/Aweswell complained against the AC/CAM and related conduct, leading to DI 248/2018.
 - **2019 onward** — DI 248 archive, calificación overlap, DI 113/2022, DI 22/2026, DIP 2/2026, central/specialist routes, DP 1901/2026 and GUB 86/2026.
 
@@ -42,7 +42,7 @@ Preferred public wording:
 - **Ernesto Vieira Morante** — signed the DIP 2/2026 notification oficio on 9 March 2026. Do not conflate the notification act with the substantive archive decision.
 - Senior recipients such as **Jaime Serrano-Jover González, María José Osuna Cerezo and Teresa Peramato Martín** must not be classified as substantive Sun Park decision-makers unless personal review/action is proved.
 
-Still to identify from primary records: DI 273/2013 querella signatory; DP 332/2014 fiscal history; calificación fiscal(s); Anticorrupción decision-maker(s); DP 1901/2026 reporting fiscal; GUB 86/2026 decision-maker; Arrecife destination fiscal(s); relevant Tenerife fiscal(s). For DIP 2/2026 the archive-decree and notification signatories are now identified separately; the complete file and the separate 11 February opening decree remain open.
+Still to identify or reconstruct from primary records: DP 332/2014 fiscal history and final disposition; calificación fiscal(s); Anticorrupción decision-maker(s); DP 1901/2026 reporting fiscal; GUB 86/2026 decision-maker; Arrecife destination fiscal(s); relevant Tenerife fiscal(s). The DI 273/2013 querella signatory is now controlled as Tomás Fernández de Páiz. For DIP 2/2026 the archive-decree and notification signatories are identified separately; the complete file and separate 11 February opening decree remain open.
 
 ## DI 248/2018 — investigative-intensity question
 
@@ -117,7 +117,7 @@ Every public node should identify what it establishes and what it does not estab
 
 ## Priority missing documents / bridges — updated 15 Aug 2026
 
-1. Primary final Auto of 29 March 2021 in DP 332/2014 and exact reasoning.
+1. Primary disposition supporting the reported 2021 closure of DP 332/2014, its date, notice/finality record and exact reasoning; reconcile the later-pleaded 29 March date with contemporaneous reactivation/resumption communications.
 2. **Located in Google Drive:** `3. Pericial Renta Perito Fiscalia - 25ABR2019.pdf` (primary scanned PDF, approx. 5.7 MB). Its existence is verified; the substantive conclusion remains **UNRESOLVED pending complete visual page review** because the file has no usable text layer. Do not publish a conclusion from filename or secondary recollection.
 3. Complete certified DP 332/2014 file and named-fiscal history.
 4. Complete certified DI 248/2018 file and actual diligences performed.
