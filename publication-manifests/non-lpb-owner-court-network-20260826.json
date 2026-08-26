@@ -1,0 +1,82 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "non-lpb-owner-court-network-20260826",
+  "control_id": "PD-SP-OWNER-COURT-NETWORK-001",
+  "control_date": "2026-08-26",
+  "current_state": "PR_OPEN",
+  "status": "prepared_pending_merge_deployment_and_live_verification",
+  "owner": "Por Derecho / Project Sun Rock",
+  "source_main_sha": "e33ca657545169d32b7816d0e213bf021d42cbeb",
+  "replacement_pr": 1040,
+  "superseded_source_pr": 1016,
+  "purpose": "Publish a source-graded court, Community and ownership network for the non-LPB/Matkator Sun Park perimeter while preserving actor-specific attribution and adverse evidence.",
+  "expected_routes": {
+    "es": [
+      "es/registro-identidad-materia/perimetro-propietarios-no-lpb-matkator/index.html",
+      "es/jv1260-ap89-continuidad-cam/index.html",
+      "es/registro-identidad-materia/index.html",
+      "es/actualizaciones/index.html"
+    ],
+    "en": [
+      "en/matter-identity-registry/non-lpb-matkator-owner-network/index.html",
+      "en/jv1260-ap89-cam-continuity/index.html",
+      "en/matter-identity-registry/index.html",
+      "en/updates/index.html"
+    ]
+  },
+  "identity_extension": {
+    "before": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+    "after": {"total":187,"PERSON":88,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+    "new_people": [
+      {"id":"PD-SP-P-0087","name":"Gerardo Zacarías Acosta Matos","not_same_as":["PD-SP-P-0013"]},
+      {"id":"PD-SP-P-0088","name":"Javier Acosta Matos"}
+    ]
+  },
+  "network_denominator": {
+    "ap89_claimant_owners": 7,
+    "ap89_bungalows": 18,
+    "layers": 7,
+    "relationships": 31,
+    "p0_evidence_actions": 6
+  },
+  "assets": [
+    "assets/data/matter-identity-registry-v1.json",
+    "assets/data/matter-identity-registry-v1.acosta-matos-people.json",
+    "assets/data/non-lpb-matkator-owner-court-network-v1.json",
+    "assets/data/material-updates-v1.json",
+    "assets/owner-court-network.css",
+    "scripts/validate_non_lpb_owner_court_network.py",
+    "scripts/validate_legal_professional_register.py",
+    "sitemap-owner-court-network.xml",
+    ".github/workflows/verify-non-lpb-owner-court-network.yml"
+  ],
+  "publication_boundaries": [
+    "AP 89/2014 identifies exactly seven claimant-owners of eighteen bungalows; the wider non-LPB/Matkator owner population is not converted into the claimant group.",
+    "The adverse AP 89/2014 partial reversal and eviction order is preserved.",
+    "The wider Montelanza/Molina perimeter is derived from party pleadings and Community records and remains separately graded.",
+    "Celia Guillén Pérez's voting proposition is a complainant-side reconstruction, not a judicial finding of intent, validity or culpability.",
+    "Manuel Molina Climent's request for an explanation of balances is not debt creation, independent verification or original approval.",
+    "José Daniel, Laura Patricia, Gerardo Zacarías and Javier Acosta Matos are visually grouped while every company, office, power, date, act and benefit remains separately attributed.",
+    "Family, business, professional, representation, ownership and chronological relationships do not transfer knowledge, intention, control, benefit, responsibility or liability.",
+    "The 4 February 2022 ACTA used here is a controlled source copy, not a certified or diligenced minute-book original.",
+    "Additional natural persons located only in pleadings remain outside the public dataset pending person-specific admission and privacy review."
+  ],
+  "post_merge_verification": [
+    "Confirm the four bilingual owner-network and JV1260/AP89 routes return HTTP 200.",
+    "Confirm the Spanish and English identity pages expose 187 / 88 / 66 / 10 / 13 / 10.",
+    "Confirm the owner-network JSON exposes exactly seven claimant-owners, eighteen bungalows, thirty-one relationships and six P0 actions.",
+    "Confirm Celia, Manuel and all four Acosta Matos block names render with the attribution limits.",
+    "Confirm the professional roster remains exactly forty records, with three current lawyers and two current procuradoras.",
+    "Confirm the 26 August material update and owner-network sitemap are live.",
+    "Confirm prohibited transaction-only and unapproved pleading-only names do not appear on the public network routes.",
+    "Advance this manifest and the unitary-state extension to LIVE_VERIFIED only after exact public readback."
+  ],
+  "next_evidence_program": [
+    "Map all eighteen AP89 bungalows to exact fincas.",
+    "Reconstruct the 2008 residual ownership perimeter unit by unit.",
+    "Trace later transfers into CAM or other vehicles.",
+    "Authenticate 2011 powers, debt schedules, coefficients and voting entitlement.",
+    "Obtain complete certified DP 1132/2018 and Rollo 1010/2018.",
+    "Reconcile every 2022 Acosta Matos company, NIF, power, finca, coefficient and vote."
+  ]
+}
