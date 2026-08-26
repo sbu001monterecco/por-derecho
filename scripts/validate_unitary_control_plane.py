@@ -94,9 +94,12 @@ def main() -> int:
 
         state = load_json(ROOT / "ops/CURRENT_UNITARY_STATE.json")
         require(state.get("control_id") == "PD-UNITARY-STATE-20260825-01", "unexpected unitary-state control")
+        require(state.get("status") == "LIVE_VERIFIED", "unitary state is not live verified")
         require(re.fullmatch(r"[0-9a-f]{40}", state["repository"]["current_main_sha_at_preparation"]), "invalid preparation SHA")
         require(state["identity_registry"]["counts"] == expected, "state identity counts drift")
         require(state["material_updates"]["latest_material_date"] == updates["latest_material_date"], "state/update date drift")
+        require(state["publication"]["current_sha_edge_readback"]["state"] == "LIVE_VERIFIED", "state readback is not live verified")
+        require(state["publication"]["current_sha_edge_readback"]["workflow_run_id"] == 32912919872, "unexpected unitary verifier run")
         require(state["pull_requests"]["observed_open_count"] == 36, "open PR snapshot drift")
 
         current_pointer = load_json(ROOT / "ops/CURRENT_STATE.json")
@@ -104,7 +107,8 @@ def main() -> int:
         require(current_pointer.get("calificacion", {}).get("appeal_roll") == "RPL 2523/2025", "CURRENT_STATE compatibility roll missing")
         production = load_json(ROOT / "ops/PRODUCTION_STATUS.json")
         require(production.get("current_state") == "ops/CURRENT_UNITARY_STATE.json", "PRODUCTION_STATUS does not point to unitary state")
-        require(production["exact_public_content_verification"]["state"] == "PENDING_AFTER_CONTROL_PLANE_MERGE", "production verification state overstated")
+        require(production["exact_public_content_verification"]["state"] == "LIVE_VERIFIED", "production verification is not live verified")
+        require(production["exact_public_content_verification"]["workflow_run_id"] == 32912919872, "production verifier run mismatch")
         require((ROOT / current_pointer["historical_snapshot"]).is_file(), "historical CURRENT_STATE snapshot missing")
         require((ROOT / production["historical_snapshot"]).is_file(), "historical PRODUCTION_STATUS snapshot missing")
 
@@ -121,20 +125,23 @@ def main() -> int:
             "<lastmod>2026-08-25</lastmod>",
         ])
         require_markers(ROOT / "robots.txt", ["sitemap-unitary-control-plane.xml", "sitemap-prescription-recovery.xml"])
-        require_markers(ROOT / "CURRENT_UNITARY_STATE.md", ["PD-UNITARY-STATE-20260825-01", "185", "PR #1016"])
+        require_markers(ROOT / "CURRENT_UNITARY_STATE.md", ["PD-UNITARY-STATE-20260825-01", "LIVE_VERIFIED", "32912919872", "PR #1016"])
 
         manifest = load_json(ROOT / "publication-manifests/unitary-control-plane-sync-20260825.json")
-        require(manifest.get("current_state") in {"PR_OPEN", "DEPLOYED", "LIVE_VERIFIED"}, "invalid manifest state")
+        require(manifest.get("current_state") == "LIVE_VERIFIED", "manifest is not live verified")
+        require(manifest.get("status") == "live_verified", "manifest status mismatch")
         require(manifest.get("control_id") == "PD-UNITARY-STATE-20260825-01", "manifest/control mismatch")
+        require(manifest.get("live_verification_evidence", {}).get("workflow_run_id") == 32912919872, "manifest verifier run mismatch")
         require(manifest.get("expected_routes", {}).get("es") and manifest.get("expected_routes", {}).get("en"), "manifest expected routes missing")
     except AssertionError as exc:
         print(f"UNITARY CONTROL PLANE: FAIL\n - {exc}", file=sys.stderr)
         return 1
 
     print("UNITARY CONTROL PLANE: PASS")
+    print(" - status: LIVE_VERIFIED")
     print(" - identity denominator: 185 / 86 / 66 / 10 / 13 / 10")
     print(" - latest material date: 2026-08-25")
-    print(" - current-state and production snapshots separated")
+    print(" - verifier run: 32912919872")
     print(" - PR #1016 controlled as rebuild-on-current-main")
     return 0
 
