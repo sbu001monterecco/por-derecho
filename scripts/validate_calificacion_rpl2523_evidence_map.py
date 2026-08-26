@@ -7,6 +7,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+CURRENT_STATE_V2 = "por-derecho.operational-truth.current-state.v2"
+UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260825-01"
 
 
 def read(path: str) -> str:
@@ -63,13 +65,22 @@ def main() -> int:
                 errors.append(f"{path}: current/former counsel name leaked: {prohibited!r}")
 
     data = json.loads(read("assets/data/calificacion-rpl2523-evidence-map-v1.json"))
+    if data.get("schema") != "por-derecho.calificacion-rpl2523-evidence-map.v1":
+        errors.append("evidence map JSON: unexpected schema")
+    if data.get("proceeding", {}).get("appeal_roll") != "RPL 2523/2025":
+        errors.append("evidence map JSON: current Calificación roll missing")
     instruments = data.get("instrument_map", [])
     if len(instruments) != 8:
         errors.append("evidence map JSON: expected eight party/stage records")
     appeals = [item for item in instruments if item.get("stage") == "APPEAL"]
     if sum(item.get("instrument_count", 0) for item in appeals) != 3:
         errors.append("evidence map JSON: expected three appeal instruments")
-    appeal_interests = {name for item in appeals if item.get("instrument_count") for name in item.get("party_interests", [])}
+    appeal_interests = {
+        name
+        for item in appeals
+        if item.get("instrument_count")
+        for name in item.get("party_interests", [])
+    }
     if len(appeal_interests) != 4:
         errors.append("evidence map JSON: expected four appellant interests")
     if len(data.get("five_pillar_map", [])) != 5:
@@ -79,16 +90,19 @@ def main() -> int:
     if data.get("proceeding", {}).get("later_merits_decision_located") is not False:
         errors.append("evidence map JSON: latest controlled merits state is not preserved")
 
-    for path in [
-        "es/index.html",
-        "en/index.html",
-    ]:
+    for path in ["es/index.html", "en/index.html"]:
         body = read(path)
         if body.count('data-calificacion-misuse-thesis="featured"') != 1:
             errors.append(f"{path}: expected one statically rendered homepage thesis block")
     homepage_markers = {
-        "es/index.html": ["tesis investigativa seria y documental", "calificacion-rpl-2523-mapa-prueba/"],
-        "en/index.html": ["serious, document-based investigative thesis", "calificacion-rpl-2523-evidence-map/"],
+        "es/index.html": [
+            "tesis investigativa seria y documental",
+            "calificacion-rpl-2523-mapa-prueba/",
+        ],
+        "en/index.html": [
+            "serious, document-based investigative thesis",
+            "calificacion-rpl-2523-evidence-map/",
+        ],
     }
     for path, markers in homepage_markers.items():
         body = read(path)
@@ -138,10 +152,30 @@ def main() -> int:
             errors.append(f"unitary route registry: missing {route}")
 
     current = json.loads(read("ops/CURRENT_STATE.json"))
-    if current.get("calificacion", {}).get("appeal_roll") != "RPL 2523/2025":
-        errors.append("ops/CURRENT_STATE.json: current Calificación roll missing")
-    if current.get("calificacion", {}).get("instrument_count_rule") != "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS":
-        errors.append("ops/CURRENT_STATE.json: appeal denominator rule missing")
+    if current.get("schema") == CURRENT_STATE_V2:
+        routing = current.get("specialist_state_routing") or {}
+        if routing.get("unitary_case_and_evidence_state") != "ops/CURRENT_UNITARY_STATE.json":
+            errors.append("ops/CURRENT_STATE.json: unitary specialist routing missing")
+        if routing.get("expected_control_id") != UNITARY_CONTROL_ID:
+            errors.append("ops/CURRENT_STATE.json: unitary control expectation missing")
+        if routing.get("expected_status") != "LIVE_VERIFIED":
+            errors.append("ops/CURRENT_STATE.json: unitary LIVE_VERIFIED expectation missing")
+        unitary = json.loads(read("ops/CURRENT_UNITARY_STATE.json"))
+        if unitary.get("control_id") != UNITARY_CONTROL_ID:
+            errors.append("ops/CURRENT_UNITARY_STATE.json: control ID mismatch")
+        if unitary.get("status") != "LIVE_VERIFIED":
+            errors.append("ops/CURRENT_UNITARY_STATE.json: state is not LIVE_VERIFIED")
+        if "Specialist case" not in str(current.get("purpose", "")):
+            errors.append("ops/CURRENT_STATE.json: specialist-source authority boundary missing")
+    else:
+        # Historical v1 compatibility only. New current truth must use v2 routing.
+        if current.get("calificacion", {}).get("appeal_roll") != "RPL 2523/2025":
+            errors.append("ops/CURRENT_STATE.json: current Calificación roll missing")
+        if (
+            current.get("calificacion", {}).get("instrument_count_rule")
+            != "THREE_APPEAL_INSTRUMENTS_FOUR_APPELLANT_INTERESTS"
+        ):
+            errors.append("ops/CURRENT_STATE.json: appeal denominator rule missing")
 
     if errors:
         print("CALIFICACION RPL2523 EVIDENCE MAP: FAIL")
