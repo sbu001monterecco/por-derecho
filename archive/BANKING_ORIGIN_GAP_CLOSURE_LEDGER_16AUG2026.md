@@ -171,6 +171,16 @@ The official BORME records Monterecco Sun Park SRL under registry sheet **H TF 4
 
 **Date boundary:** 30 September 2013 is presently verified as the date recorded in the signed company book. The original shareholder resolution, notarial deed, Registry presentation, inscription certificate and BORME name-change publication have not yet been located; do not present 30 September as the independently verified registry-publication date.
 
+### BO-012 — attributed mortgage/swap/account package challenge
+
+**Classification:** ATTRIBUTED SOURCE-DERIVED ACCOUNT / PARTY ALLEGATION / TRANSACTION RECONCILIATION OPEN.
+
+Declaration 014 preserves the reserved declarant's attributed account that the first mortgage, floor, swap, approximately €850,000 second facility, approximately €400,000 pledged amount, linked accounts, two reported apartment sales and immediate Bankia enforcement operated as one financial package. Gil directs that the account be preserved and advanced as the declarant's statement of facts, truth and commentary; under the voice protocol this proves Gil's attribution and preservation instruction, not the declarant's word-for-word personal adoption.
+
+The remembered two sales at approximately €55,000 each produce corrected arithmetic of €110,000, not €210,000. A located internal LPB ledger instead records **€60,000 on 31-Jan-2011 and €59,000 on 4-Feb-2011**, €119,000 gross, with €100,584.80 posted against the first facility and €10,559 against the second. The remembered dates/amounts are therefore corrected at the present documentary layer, while deeds, net proceeds and native bank entries remain missing. Located 2010 terms fix first principal on 1-Jan-2012. An outgoing Bankia burofax admitted 29-Nov-2011 nevertheless accelerated €839,441; the filing was signed 10-Jan, court-received 23-Jan and alleged principal non-payment from Jul-2011. Delivery, interest calculation and contractual trigger remain open. The sequence materially strengthens a finite challenge to the acceleration and filing wording, but does not establish no default because interest obligations and legal effect remain contested.
+
+Controlling analysis: `archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md`; missing-evidence denominator: `ME-092`.
+
 ## 3. Corrections locked by this refresh
 
 | ID | Superseded proposition | Controlled proposition |
@@ -186,9 +196,9 @@ The official BORME records Monterecco Sun Park SRL under registry sheet **H TF 4
 
 ## 4. Source-completion queue
 
-1. Original loan, mortgage, novation, floor, swap/cobertura and pledged-funds instruments.
-2. Native 2011 arrears/default notice and complete account ledgers.
-3. Complete Mortgage Execution 90/2012: application, title, debt certificate, liquidation, order, service, opposition, suspension and final procedural record.
+1. Complete native 2008 loan/mortgage and swap confirmation/annexes; consolidate native/certified custody for the located 2010 novation/second deed; obtain precontractual tests/scenarios, valuation and pledge instruments.
+2. Complete bank statements and account authority. The outgoing 29-Nov-2011 burofax is located; delivery/receipt, calculation, cure history and contractual acceleration trigger remain open.
+3. Complete Mortgage Execution 90/2012 around the located application and order: title, monthly debt certificate, service, opposition, suspension, liquidation and final procedural record.
 4. Property-by-property reconciliation of 158 / 159 / 166 counts.
 5. Complete Multimatrix acquisition consideration, payment, financing, valuation, capitalisation, beneficial arrangements, handover file and evidence of how Aweswell Limited's 2014 name change was notified in Spain. Do not treat Monterecco and Aweswell as separate UK legal persons.
 6. Separately controlled privilege review of advice, instructions and the filing-decision chronology.
@@ -199,22 +209,23 @@ The official BORME records Monterecco Sun Park SRL under registry sheet **H TF 4
 11. Duty–knowledge–capacity–causation matrix for each alleged institutional act or omission affecting non-debtors.
 12. Full Companies House name-change package and any contemporaneous internal explanation for selecting the name Aweswell.
 13. Certified historical note for Spanish Registry sheet H TF 49739; original 2013 resolution and notarial deed; Registry presentation and inscription; BORME name-change publication; tax and counterparty notification package. Reconcile each date with the 30-September-2013 company-book entry.
+14. `ME-092`: complete mortgage/swap/second-facility/account/sale-proceeds/default ledger and originator→Bankia→CaixaBank succession allocation.
 
 ## 5. Weighted closure assessment
 
 | Track | Weight | Closure | Reason |
 |---|---:|---:|---|
 | Acquisition/publicity chronology | 8 | 94% | purchase, Spanish publicity, BORME, UK name continuity and Spanish operator-name continuity verified; consideration, finance, beneficial arrangements and exact Spanish name-change inscription remain open |
-| Banking account record | 15 | 35% | 5-Mar figures and viability plan located; native ledgers, default notice, pledged funds and complete instruments absent |
-| Morosidad/acceleration determination | 12 | 25% | cure/global distinction resolved; legal and contractual validity not resolved |
-| Execution file | 12 | 55% | primary auction diligence and schedule recovered; initiating application, certificate, liquidation and full docket open |
+| Banking account record | 15 | 50% | 5-Mar figures, LPB ledger, 2010 deeds and 29-Nov notice located; native bank statements, 2008 package and complete pledge/settlement record absent |
+| Morosidad/acceleration determination | 12 | 45% | cure/global distinction and pre-first-instalment acceleration located; delivery, exact interest default, trigger and legal validity unresolved |
+| Execution file | 12 | 65% | initiating application, order and auction diligence located; monthly certificate, service, opposition, liquidation and end state open |
 | Filing/decision chronology | 10 | 60% | filing sequence and restructuring efforts established; separately controlled privilege review and complete decision file remain open |
 | Direct-market platform | 10 | 70% | February plan plus later business evidence; full native commercial dataset and valuation open |
 | Operator-specific causation | 8 | 25% | negotiations and platform exist; operator-by-operator reasons and loss bridge incomplete |
 | Concursal/value reconciliation | 10 | 30% | key figures and discrepancy identified; reproducible full bridge absent |
 | Extraconcursal perimeter | 8 | 65% | legal separation clear; asset/right/income mapping incomplete |
 | Institutional duty and causation | 7 | 25% | correct methodology fixed; act-by-act source matrix incomplete |
-| **Overall weighted readiness** | **100** | **43%** | both corporate-name identity gaps are closed; the principal liability and quantum gaps remain unchanged |
+| **Overall weighted readiness** | **100** | **47%** | both corporate-name identity gaps and important 2010–2012 derivatives are located; native transaction denominator and principal liability/quantum remain open |
 
 ## 6. Public-impact decision
 

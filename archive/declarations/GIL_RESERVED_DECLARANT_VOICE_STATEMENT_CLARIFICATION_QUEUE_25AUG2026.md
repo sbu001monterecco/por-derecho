@@ -26,6 +26,14 @@ Esta cola no presupone que una versión sea falsa. Convierte tensiones, ambigüe
 | `VQ-P-008` | Si existió presión relacionada con Pink, ¿quién hizo qué, cuándo, mediante qué palabras o conducta y qué efecto tuvo sobre una proposición concreta? | relato separado, fuente contemporánea y alcance de cualquier corrección | crítica |
 | `VQ-P-009` | Sobre AEAT, ¿qué manifestación oyó o realizó personalmente, qué documento vio y qué respuesta o falta de respuesta conoce de primera mano? | diligencias, notificaciones, escritos, acuses y separación entre institución/persona | alta |
 | `VQ-P-010` | ¿Autoriza y controla la adquisición forense de su buzón privado; qué periodos, alias, reenvíos, eliminaciones, etiquetas, cuentas vinculadas y límites de privilegio deben incluirse? | consentimiento verificable, perfil de cuenta, exportación nativa y protocolo de privilegio | crítica |
+| `VQ-RD-011` | ¿Adopta, corrige o rechaza proposición por proposición la Declaración 014 y qué partes proceden de percepción directa, documentos o explicaciones de terceros? | versión revisada de D014, mapa de fuente y tabla de cambios | crítica |
+| `VQ-RD-012` | ¿Cuál era la fecha, importe, entidad y escritura exactos de la primera financiación, del swap y de la segunda financiación? | escrituras, contratos, anexos, confirmaciones y extractos | crítica |
+| `VQ-RD-013` | ¿La carencia terminada en diciembre de 2011 cubría principal, intereses, swap, comisiones o sólo alguno de esos conceptos? | cláusula/novación exacta y cuadro de amortización | crítica |
+| `VQ-RD-014` | ¿Qué dos apartamentos se vendieron, por qué precio bruto/neto, en qué fechas y en qué cuenta se abonó cada importe? | escrituras, liquidaciones, impuestos y extractos con fecha valor | crítica |
+| `VQ-RD-015` | ¿Qué significa exactamente que el banco “controlaba” la cuenta: firma, pignoración, bloqueo, mandato, compensación, barrido automático o práctica operativa? | contratos de cuenta/prenda, firmas, órdenes y asientos | crítica |
+| `VQ-RD-016` | ¿Mantiene la cifra aproximada 450.000 € swap + 400.000 € depósito respecto de la segunda financiación de aproximadamente 850.000 €, o requiere corrección? | drawdown, transferencias, asientos y confirmación separada | alta |
+| `VQ-RD-017` | ¿Qué comunicación concreta recibió sobre mora, vencimiento y ejecución, y qué fecha permite sostener que Bankia actuó al día siguiente o inmediatamente después de la carencia? | aviso de mora, burofax, demanda/Auto, notificación y recuerdo separado | crítica |
+| `VQ-RD-018` | Tras la corrección aritmética 55.000 × 2 = 110.000 €, ¿mantiene que el neto bastaba para cubrir todo lo exigible durante el año y sobre qué cálculo? | presupuesto de deuda mensual, neto de ventas, liquidaciones y pericial | crítica |
 
 ## B. Aclaraciones a Gil Marer
 

@@ -9,7 +9,7 @@
     "relevance": ["default", "acceleration", "amount", "security", "causation_of_defensive_insolvency"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"]
+    "source_refs": ["SRC-BANKIA-EXECUTION-2012", "SRC-BANKIA-BUROFAX-2011", "SRC-REPO-LENDER-PAGE"]
   },
   {
     "id": "PROC-CONCURSO-36-2012",
@@ -40,12 +40,18 @@
     "name": "Ordinary Proceeding 1859/2023-9, Valencia",
     "forum": "civil_banking_financial_product",
     "status": "pending",
-    "actor_refs": ["ACT-LPB", "ACT-ORIGINATING-LENDER"],
+    "actor_refs": ["ACT-AWESWELL", "ACT-CAIXABANK"],
+    "claimant_actor_refs": ["ACT-AWESWELL"],
+    "defendant_actor_refs": ["ACT-CAIXABANK"],
+    "related_actor_refs": ["ACT-LPB", "ACT-ORIGINATING-LENDER", "ACT-BFA", "ACT-BANKIA"],
     "instrument_refs": ["INS-SWAP", "INS-PLEDGED-DEPOSIT", "INS-SECOND-MORTGAGE-850K", "INS-PRINCIPAL-MORTGAGE"],
     "relevance": ["origination", "account_administration", "default", "acceleration", "retained_originator_liability", "causation"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"]
+    "court": "Juzgado de Primera Instancia nº 27 de Valencia",
+    "nig": "46250-42-1-2023-0049579",
+    "next_hearing": "2027-01-28T10:00:00+01:00",
+    "source_refs": ["SRC-VALENCIA-DILIGENCE-2025", "SRC-CAIXABANK-EXPERT-2024", "SRC-REPO-LENDER-PAGE"]
   },
   {
     "id": "PROC-DP-1901-2026",

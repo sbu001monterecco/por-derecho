@@ -4,10 +4,102 @@
     "title": "Banking origin and lender-of-record public record",
     "source_type": "repository_public_page",
     "date": "2026-08-19",
-    "evidence_status": "verified_primary",
+    "evidence_status": "corroborated_inference",
     "availability": "repository",
     "publication": "public_safe",
-    "notes": "Controlled chronology and separation of banking/product and concursal-accounting lanes."
+    "notes": "Repository derivative and routing control, not a primary source; underlying sources control substantive propositions."
+  },
+  {
+    "id": "SRC-CNMV-BANKIA-2011-ACCOUNTS",
+    "title": "Bankia 2011 audited accounts and Caja-to-BFA-to-Bankia integration record",
+    "source_type": "official_regulatory_filing",
+    "date": "2012-05-04",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://www.cnmv.es/AUDITA/2011/14065.pdf",
+    "notes": "Establishes the general corporate banking-business segregation/integration chain; specific LPB schedule remains required."
+  },
+  {
+    "id": "SRC-CAIXABANK-BANKIA-MERGER-2021",
+    "title": "CaixaBank absorption of Bankia by universal succession",
+    "source_type": "official_merger_record",
+    "date": "2021-03-26",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://www.caixabank.com/deployedfiles/caixabank/Documentos/Informacion_Accionistas_Inversores/Informe_CXB_comun_fusion_CAST.pdf",
+    "notes": "Corporate universal succession is verified; underlying merits, limitation, causation and quantum remain contested."
+  },
+  {
+    "id": "SRC-NOVATION-FIRST-MORTGAGE-2010",
+    "title": "27 May 2010 novation of the first mortgage facility",
+    "source_type": "notarial_deed_working_copy",
+    "date": "2010-05-27",
+    "evidence_status": "verified_primary",
+    "availability": "private_working_copy",
+    "publication": "internal_only",
+    "notes": "Supports additional principal grace and the margin increase; certified/native custody remains open."
+  },
+  {
+    "id": "SRC-SECOND-MORTGAGE-2010",
+    "title": "27 May 2010 €850,000 second mortgage deed",
+    "source_type": "notarial_deed_working_copy",
+    "date": "2010-05-27",
+    "evidence_status": "verified_primary",
+    "availability": "private_working_copy",
+    "publication": "internal_only",
+    "notes": "Supports 18 months' principal grace, first principal instalment on 1 January 2012, rate/floor, TAE 3.717% and debit authority."
+  },
+  {
+    "id": "SRC-LPB-LEDGER-2011",
+    "title": "LPB internal 2011 loan, sales, account and pledged-funds ledger",
+    "source_type": "internal_accounting_ledger",
+    "date": "2011-09-30",
+    "evidence_status": "documented_party_statement",
+    "availability": "private_working_copy",
+    "publication": "internal_only",
+    "notes": "Records €119,000 gross apartment sales and internal allocations; it is not the native sale deeds or bank statements."
+  },
+  {
+    "id": "SRC-BANKIA-BUROFAX-2011",
+    "title": "Bankia outgoing default and acceleration burofax admitted 29 November 2011",
+    "source_type": "bank_notice_scan",
+    "date": "2011-11-29",
+    "evidence_status": "verified_primary",
+    "availability": "private_working_copy",
+    "publication": "public_safe",
+    "notes": "Establishes the outgoing demand terms; delivery/receipt, calculation and contractual trigger remain open."
+  },
+  {
+    "id": "SRC-BANKIA-EXECUTION-2012",
+    "title": "Bankia Mortgage Execution 90/2012 initiating claim",
+    "source_type": "court_filing_working_copy",
+    "date": "2012-01-10",
+    "evidence_status": "verified_primary",
+    "availability": "private_working_copy",
+    "publication": "public_safe",
+    "notes": "Signed 10 January, court-received 23 January and followed by 1 February order; filing allegations are not findings and annexes remain incomplete."
+  },
+  {
+    "id": "SRC-CAIXABANK-EXPERT-2024",
+    "title": "CaixaBank PKF Attest expert report in ORD 1859/2023-9",
+    "source_type": "defendant_expert_report",
+    "date": "2024-10-17",
+    "evidence_status": "documented_party_statement",
+    "availability": "private_working_copy",
+    "publication": "public_safe",
+    "notes": "Records contract-derived terms, defence positions and disputed calculations; signed 17 October and court-received 18 October 2024."
+  },
+  {
+    "id": "SRC-VALENCIA-DILIGENCE-2025",
+    "title": "Valencia court diligence relisting ORD 1859/2023-9",
+    "source_type": "signed_court_diligence",
+    "date": "2025-11-06",
+    "evidence_status": "verified_primary",
+    "availability": "private_working_copy",
+    "publication": "public_safe",
+    "notes": "Controls parties, proceeding, NIG and hearing relisted for 28 January 2027 at 10:00."
   },
   {
     "id": "SRC-GMAIL-2015-04-29-HAYA-MERIDIAN",

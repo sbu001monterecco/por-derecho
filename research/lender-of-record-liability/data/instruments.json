@@ -5,9 +5,11 @@
     "instrument_type": "asset_backed_credit",
     "debtor_actor_refs": ["ACT-LPB"],
     "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
+    "counterparty_successor_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BFA", "ACT-BANKIA", "ACT-CAIXABANK"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "source_refs": ["SRC-CAIXABANK-EXPERT-2024", "SRC-NOVATION-FIRST-MORTGAGE-2010", "SRC-REPO-LENDER-PAGE", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "located_terms": {"principal_eur": 8600000, "contract_date": "2008-06-17", "maturity_date": "2024-07-01", "initial_rate_percent": 6.25, "variable_index": "Euribor_12m", "initial_margin_points": 1.5, "floor_percent": 3.5},
     "open_fields": ["Native agreement and amendments", "Complete payment/account ledger", "Acceleration basis", "Balance at each transfer", "Extinction/satisfaction reconciliation"]
   },
   {
@@ -16,10 +18,12 @@
     "instrument_type": "asset_backed_credit",
     "debtor_actor_refs": ["ACT-LPB"],
     "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
-    "evidence_status": "documented_party_statement",
+    "counterparty_successor_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BFA", "ACT-BANKIA", "ACT-CAIXABANK"],
+    "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
-    "open_fields": ["2010 refinancing package", "Payment settlements", "Linked security and pledged funds", "Balance at each transfer"]
+    "source_refs": ["SRC-SECOND-MORTGAGE-2010", "SRC-LPB-LEDGER-2011", "SRC-BANKIA-BUROFAX-2011", "SRC-BANKIA-EXECUTION-2012", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "located_terms": {"principal_eur": 850000, "contract_date": "2010-05-27", "maturity_date": "2024-07-01", "principal_grace_months": 18, "first_principal_instalment": "2012-01-01", "variable_index": "Euribor_12m", "margin_points": 2.0, "floor_percent": 3.5, "tae_percent": 3.717},
+    "open_fields": ["Purpose and drawdown allocation", "Payment settlements", "Linked security and pledged funds", "Balance at each transfer"]
   },
   {
     "id": "INS-SWAP",
@@ -27,9 +31,11 @@
     "instrument_type": "financial_product",
     "debtor_actor_refs": ["ACT-LPB"],
     "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA"],
+    "counterparty_successor_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BFA", "ACT-BANKIA", "ACT-CAIXABANK"],
     "evidence_status": "contested",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "source_refs": ["SRC-CAIXABANK-EXPERT-2024", "SRC-REPO-LENDER-PAGE", "SRC-GMAIL-2017-05-12-CREDITS-PENDING"],
+    "located_terms": {"contract_date": "2008-06-17", "effective_date": "2008-07-07", "maturity_date": "2012-01-07", "notional_eur": 5000000, "settlement_frequency": "quarterly", "bank_leg": "Euribor_3m", "structured_customer_legs_percent": [5.15, 4.85], "upper_barrier_percent": 5.55},
     "open_fields": ["Origination and disclosure", "Connection to refinancing/security package", "Transfer or retention at each stage", "Valencia litigation outcome"]
   },
   {
@@ -38,9 +44,10 @@
     "instrument_type": "accessory_security_or_payment_source",
     "debtor_actor_refs": ["ACT-LPB"],
     "holder_chain_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA"],
+    "counterparty_successor_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BFA", "ACT-BANKIA", "ACT-CAIXABANK"],
     "evidence_status": "contested",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"],
+    "source_refs": ["SRC-CAIXABANK-EXPERT-2024", "SRC-LPB-LEDGER-2011", "SRC-REPO-LENDER-PAGE"],
     "open_fields": ["Amount", "Application", "Release", "Effect on claimed balances"]
   },
   {

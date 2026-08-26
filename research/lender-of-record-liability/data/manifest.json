@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset": "Por Derecho lender-of-record liability architecture",
-  "last_updated": "2026-08-19",
+  "last_updated": "2026-08-26",
   "status_values": [
     "verified_primary",
     "verified_official",
@@ -29,7 +29,9 @@
   ],
   "public_pages": [
     "en/lender-of-record/liability/",
-    "es/acreedor-de-registro/responsabilidad/"
+    "es/acreedor-de-registro/responsabilidad/",
+    "en/caixabank-valencia-claim/",
+    "es/reclamacion-caixabank-valencia/"
   ],
   "principle": "Who knew what, when, in what legal capacity, what did they then do, what did it cause, where can it be used, and what proves each step?"
 }

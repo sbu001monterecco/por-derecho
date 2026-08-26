@@ -4,7 +4,16 @@ This file is the human-readable companion to `data/sources.json`.
 
 | Source ID | Date | Proposition controlled | Status | Publication limit |
 |---|---:|---|---|---|
-| `SRC-REPO-LENDER-PAGE` | 2026-08-19 | Existing public chronology; separate banking and concursal-accounting lanes | verified primary | public safe |
+| `SRC-REPO-LENDER-PAGE` | 2026-08-19 | Existing public chronology; separate banking and concursal-accounting lanes | repository derivative, not primary | public safe |
+| `SRC-CNMV-BANKIA-2011-ACCOUNTS` | 2012-05-04 | Official Caja→BFA→Bankia corporate banking-business chain; specific LPB schedules open | verified official | public safe |
+| `SRC-CAIXABANK-BANKIA-MERGER-2021` | 2021-03-26 | Bankia→CaixaBank merger by universal succession | verified official | public safe |
+| `SRC-NOVATION-FIRST-MORTGAGE-2010` | 2010-05-27 | First-loan grace extension and margin change | primary working copy | internal original; public-safe derivative |
+| `SRC-SECOND-MORTGAGE-2010` | 2010-05-27 | €850k facility, principal grace, first capital date, floor, TAE and debit authority | primary working copy | internal original; public-safe derivative |
+| `SRC-LPB-LEDGER-2011` | 2011-09-30 | Internal sales/account/pledged-fund entries; not native deeds/statements | party accounting record | internal original; public-safe derivative |
+| `SRC-BANKIA-BUROFAX-2011` | 2011-11-29 | Outgoing acceleration demand before first scheduled principal instalment | verified primary as outgoing document; delivery/open merits | public-safe derivative |
+| `SRC-BANKIA-EXECUTION-2012` | 2012-01-10 | Bankia filing wording, balance and signed/received chronology | verified primary as party filing | public-safe derivative |
+| `SRC-CAIXABANK-EXPERT-2024` | 2024-10-17 | Contract terms, defence positions and disputed calculations | defendant expert / party record | public-safe derivative |
+| `SRC-VALENCIA-DILIGENCE-2025` | 2025-11-06 | Exact parties, NIG and 28-Jan-2027 10:00 hearing | verified primary | public-safe procedural derivative |
 | `SRC-GMAIL-2015-04-29-HAYA-MERIDIAN` | 2015-04-29 | PH122 holder reference; refinancing requested after Cerberus discussion | verified primary | internal original; public-safe summary |
 | `SRC-GMAIL-2016-05-18-HAYA-REJECTION` | 2016-05-18 | Haya said the creditor rejected the proposal | verified primary | internal original; public-safe summary |
 | `SRC-GMAIL-2017-05-12-CREDITS-PENDING` | 2017-05-12 | Servicing channel received three-credit and workout architecture | verified primary | internal original; public-safe summary |

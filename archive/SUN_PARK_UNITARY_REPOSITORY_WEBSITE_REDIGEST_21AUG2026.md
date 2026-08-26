@@ -1,5 +1,7 @@
 # Sun Park unitary repository and website redigest - 21 August 2026
 
+> **Banking-origin supplement — 26 August 2026:** `archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md` and Declaration 014 now control the first-mortgage/swap/second-facility/account/sale-proceeds/default issue. The reserved declarant's account remains an attributed, unratified source-derived statement; Gil's instruction proves attribution/preservation, not her word-for-word adoption. Located derivatives now identify the 2008 €8.6m facility/3.5% floor/€5m swap, the 2010 €850k facility/18-month principal grace/€405k pledge and the execution filing received 23-Jan-2012. The filing alleged principal non-payment from Jul-2011 although the first second-facility principal was due 1-Jan-2012; this is a material wording/accounting tension, not automatic invalidity because interest default remains contested. The remembered two approximately €55k Jun–Dec sales are corrected by an internal LPB ledger recording €60k + €59k in Jan/Feb-2011 and stated applications of €100,584.80/€10,559; deeds, net proceeds and native bank entries remain open. One end-to-end ledger and actor-specific analysis across Caja Insular, BFA, Bankia, CaixaBank and later assignees controls under ME-092. Dedicated ES/EN pages carry the strong allegation, exact corrections, pending/contested status and strongest-defence boundaries.
+
 ## Control
 
 - Repository: `sbu001monterecco/por-derecho`
@@ -567,3 +569,14 @@ This addendum elevates the 2017–2022 convergence of CAM's capacities from a ma
 ## 24-Aug-2026 criminal-first / elEconomista / pleading-coverage addendum
 
 `archive/CALIFICACION_CRIMINAL_FIRST_ELECONOMISTA_PLEADING_COVERAGE_REVERSE_ENGINEERING_24AUG2026.md` now controls the reverse-engineered media-collateral-use and public-document coverage layer. Read it with the 24-Aug revision of the existing execution prompt. It requires criminal/offence-neutral analysis ahead of civil presentation while preserving parallel civil limitation/restitution work; exact treatment of Sentencia 163/2023 as an appealed LPB judgment, not an Auto or whole-Sun-Park adjudication; separate Madrid DP 913/2025 status; four named pleading denominators; and bidirectional consequence links among Calificación, elEconomista/Madrid, RPL 2523/2025 and the complete-record reader. It records the present live gap: facts are substantively present, but media and pleading-reader backlinks remain incomplete.
+
+## 26-Aug-2026 controlling addendum — CaixaBank mortgage/swap package
+
+Read Declaration 014, the exact-source private custody record and `archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md` before analysing the banking-origin lane. The current unitary record is:
+
+1. One economic package: 2008 €8.6m mortgage/floor + €5m structured swap; 2010 novation/€850k second facility/€405k pledge; linked accounts; sale receipts; November acceleration; January execution; defensive concurso; later assignments; current Valencia claim.
+2. Separate liability: Caja Insular for its own origination; BFA as intermediate 2011 corporate successor; Bankia for its own account/default/acceleration/execution conduct; CaixaBank as verified universal successor to Bankia and current defendant; later asset holders only for the asset/defences and their own conduct. Haya is a servicer/interlocutor, not a proved holder.
+3. Swap correction: `covered cost ≈ mortgage rate + (customer leg − E3m)`. 8.35% is a zero-E3m illustration under the 4.85% leg, not a constant historical rate. The stronger allegation is floor-plus-swap asymmetry, no hard cap and E12m/E3m/notional/tenor mismatch.
+4. Sales correction: voice arithmetic €110k; LPB ledger €119k gross on 31-Jan/4-Feb with stated loan applications. Neither proves net freely available cash or annual coverage.
+5. Execution tension: first scheduled principal 1-Jan-2012; outgoing acceleration 29-Nov-2011; filing signed 10-Jan/received 23-Jan alleges unpaid principal amortisation from July. Interest default may have been the asserted contractual trigger; delivery, certificate and legal effect remain open.
+6. Provision boundary: impairment/provisions, regulatory capital and minimum reserves were independent bank obligations, not a per-loan cash pot transferred through the swap. Investigate product pricing and internal risk records; do not publish the substitution theory as fact.
