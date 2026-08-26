@@ -3,14 +3,24 @@
   "publication_id": "caepr-caret-unitary-digest-20260826",
   "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
   "control_date": "2026-08-26",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "prepared_pending_merge",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "expected_routes": {
-    "en": ["en/caepr-caret-unitary-digest/index.html"],
-    "es": ["es/verificacion-caepr-caret-digest-unitario/index.html"]
+    "en": [
+      "en/caepr-caret-unitary-digest/index.html"
+    ],
+    "es": [
+      "es/verificacion-caepr-caret-digest-unitario/index.html"
+    ]
   },
   "source_main_sha": "f130aba11d0dded3a925e206885a7e9b29e70d75",
+  "merge_sha": "01a8216f878eb59ec45a9115701e5eca5222826e",
+  "publication_merge_sha": "01a8216f878eb59ec45a9115701e5eca5222826e",
+  "verification_workflow_merge_sha": "cdf3819ffe20a42ada44a3be9b8a0776ff5375f5",
+  "pages_run_id": 33002447617,
+  "live_verification": "passed_exact_no_cache",
+  "promoted_at": "2026-08-26T19:01:35Z",
   "audit_record": "archive/CAEPR_CARET_UNITARY_DIGEST_VERIFICATION_26AUG2026.md",
   "machine_state": "assets/data/caepr-caret-unitary-digest-v1.json",
   "sitemap": "sitemap-caepr-caret.xml",
@@ -19,18 +29,90 @@
     "caret_confirmed": 19,
     "caret_pending": 5,
     "coverage": "19/24",
+    "coverage_percent_exact": "79.16666666666667",
     "verdict": "PARTIAL — NOT ALL IS^"
+  },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33002447617,
+    "pages_run_number": 1157,
+    "head_sha": "01a8216f878eb59ec45a9115701e5eca5222826e",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/caepr-caret-unitary-digest/",
+    "https://sbu001monterecco.github.io/por-derecho/es/verificacion-caepr-caret-digest-unitario/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/caepr-caret-unitary-digest-v1.json"
+  ],
+  "live_verification_evidence": {
+    "workflow": ".github/workflows/verify-caepr-caret-unitary-live.yml",
+    "workflow_run_id": 33002866393,
+    "workflow_run_number": 1,
+    "job_id": 98288916668,
+    "head_sha": "cdf3819ffe20a42ada44a3be9b8a0776ff5375f5",
+    "status": "completed",
+    "conclusion": "success",
+    "verified_url_count": 2,
+    "checks": [
+      "exact English public route with cache-busting",
+      "exact Spanish public route with cache-busting",
+      "19/24 partial-verdict markers",
+      "all five explicit CARET_PENDING exceptions",
+      "representative caret links to immutable registry anchors",
+      "canonical registry identity and all registry parts",
+      "presence of all 19 CARET_CONFIRMED immutable IDs"
+    ],
+    "artifact_id": 9619310070,
+    "artifact_name": "caepr-caret-unitary-live-verification",
+    "artifact_sha256": "c51cf0f2e4b87983233dbfb3b538db2d399a78f7bc64676afc1f9683e1ca65b0",
+    "artifact_expires_at": "2026-09-25T19:01:30Z"
+  },
+  "validation": {
+    "evidence": [
+      {
+        "type": "publication_merge",
+        "pr": 1081,
+        "sha": "01a8216f878eb59ec45a9115701e5eca5222826e",
+        "status": "merged"
+      },
+      {
+        "type": "pages_deployment",
+        "workflow_run_id": 33002447617,
+        "workflow_run_number": 1157,
+        "head_sha": "01a8216f878eb59ec45a9115701e5eca5222826e",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "type": "verification_workflow_merge",
+        "pr": 1082,
+        "sha": "cdf3819ffe20a42ada44a3be9b8a0776ff5375f5",
+        "status": "merged"
+      },
+      {
+        "type": "exact_edge_readback",
+        "workflow_run_id": 33002866393,
+        "workflow_run_number": 1,
+        "job_id": 98288916668,
+        "head_sha": "cdf3819ffe20a42ada44a3be9b8a0776ff5375f5",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
   },
   "boundaries": [
     "The caret confirms canonical identity resolution for the stated context only.",
     "No caret proves conduct, role on a date, knowledge, intent, relationship, liability, current status, procedural outcome or source authenticity.",
     "No unresolved object is marked merely to reach 100 percent coverage.",
-    "Concepts, assets, events, documents, source aliases and generic roles remain outside the eligible denominator."
+    "Concepts, assets, events, documents, source aliases and generic roles remain outside the eligible denominator.",
+    "LIVE_VERIFIED proves publication/readback of the stated identity-control surface; it does not convert any underlying allegation or legal conclusion into a finding."
   ],
-  "post_merge_requirements": [
-    "Confirm the merge SHA on main.",
-    "Confirm successful GitHub Pages deployment for that SHA.",
-    "Read back both bilingual routes and their linked CAEPR anchors.",
-    "Promote the manifest only after exact public verification."
+  "remaining_identity_actions": [
+    "Reconcile PD-SP-O-0003 Matkator to the canonical-name NIF/Registry/BORME control.",
+    "Resolve the exact ONA legal person by instrument/capacity.",
+    "Admit Clubotel La Dorada, S.L. to CAEPR after source/identifier reconciliation.",
+    "Admit PP 1041/2017 as a CAEPR proceeding after court/reference/party reconciliation.",
+    "Admit EH 90/2012 as a CAEPR proceeding after court/reference/party and holder-chain reconciliation."
   ]
 }
