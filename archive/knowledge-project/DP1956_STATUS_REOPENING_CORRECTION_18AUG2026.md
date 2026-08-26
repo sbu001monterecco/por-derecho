@@ -72,7 +72,7 @@ For retrieval and evidence planning, preserve the existing three-cluster structu
 
 1. the 20 March 2019 AC request concerning validation of the 28 November 2018 transaction, read against the later non-validation order and the unresolved restitution/accounting/registry consequences;
 2. the AC report of 25 January 2022 and its annexes;
-3. the 21 February 2022 deed (protocol 334), including the documentary/accounting basis for the stated economic figures, the separate EUR 400,000 component and the final estate-account treatment.
+3. the 21 February 2022 deed (**Protocol 457**), including the documentary/accounting basis for the stated EUR 13,168,082.02 debt consideration, its EUR 13,065,186.68 six-component printed subtotal and EUR 102,895.34 cap step; keep the separate EUR 400,000 / 31-finca branch and Mortgage Enforcement 90/2012 outside that deed unless primary implementation evidence proves a specific bridge.
 
 These are finite documentary targets. They do not authorise a general audit of every act by the insolvency administrator and do not establish criminal liability.
 

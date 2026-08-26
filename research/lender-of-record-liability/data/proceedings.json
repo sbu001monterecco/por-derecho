@@ -5,11 +5,13 @@
     "forum": "civil_enforcement",
     "status": "historical_record_to_complete",
     "actor_refs": ["ACT-BANKIA", "ACT-LPB"],
-    "instrument_refs": ["INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K"],
+    "instrument_refs": ["INS-SECOND-MORTGAGE-850K", "INS-EH90-SECOND-FACILITY-CLAIM"],
     "relevance": ["default", "acceleration", "amount", "security", "causation_of_defensive_insolvency"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-BANKIA-EXECUTION-2012", "SRC-BANKIA-BUROFAX-2011", "SRC-REPO-LENDER-PAGE"]
+    "source_refs": ["SRC-BANKIA-EXECUTION-2012", "SRC-BANKIA-BUROFAX-2011", "SRC-REPO-LENDER-PAGE"],
+    "located_claim": {"liquid_amount_eur": 857373.81, "provisional_interest_and_costs_eur": 257000, "facility_scope": "second mortgage facility"},
+    "limits": ["The located initiating claim is the second-facility claim.", "Do not state that both mortgage facilities were independently enforced in EH90 without the complete docket.", "Later satisfaction, cancellation, recovery and interaction with the Concurso credit remain open."]
   },
   {
     "id": "PROC-CONCURSO-36-2012",
@@ -17,11 +19,20 @@
     "forum": "insolvency",
     "status": "live_multi_issue",
     "actor_refs": ["ACT-LPB", "ACT-INSOLVENCY-ADMIN", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
-    "instrument_refs": ["INS-CONCURSAL-CREDIT", "INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K"],
+    "instrument_refs": ["INS-CONCURSAL-CREDIT", "INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K", "INS-PROTOCOLS-869-870-BALANCES", "INS-PROTOCOL-457-DACION"],
     "relevance": ["credit_recognition", "substitution", "estate_interest", "valuation", "disposition", "surplus", "title"],
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"]
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-DEFINITIVE-CREDIT-2016", "SRC-PH122-BALANCE-CERTIFICATES-2017", "SRC-PROTOCOL-869-2018", "SRC-PROTOCOL-870-2018", "SRC-AUTO-2018-06-04-DEBT-COMPONENTS", "SRC-AUTO-2021-01-25-CAP", "SRC-EDICT-2021-01-29", "SRC-PROTOCOL-457-2022", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "amount_function_controls": [
+      "€9,052,251.69 is the controlled definitive-text/substitution credit-classification total.",
+      "€12,251,446.21 is the PH122 creditor-certificate total at 20 October 2017.",
+      "€13,165,832.36 is the exact combined Protocol-869/870 balance at 17 May 2018.",
+      "€13,168,082.02 first functions as a 2021 better-offer mortgage threshold and later as debt stated to serve as consideration in Protocol 457; numerical identity does not itself close the legal or accounting bridge.",
+      "The €400,000 / 31-finca branch is separate and must not be added to or described as included within Protocol 457's €13,168,082.02.",
+      "Mortgage Enforcement 90/2012 is a separate procedural lane whose satisfaction/cancellation must be reconciled rather than presumed."
+    ],
+    "limits": ["Repeated use of a credit or amount in distinct procedural functions is not itself a second recovery or offence.", "No current primary record establishes a completed double recovery, falsified notarial instrument or collusive common plan."]
   },
   {
     "id": "PROC-DP-1041-2017",

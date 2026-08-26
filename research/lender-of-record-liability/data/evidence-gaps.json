@@ -5,8 +5,8 @@
     "title": "Bankia/originating-lender to SAREB transfer instrument and asset schedule",
     "needed_for": ["credit_genealogy", "retained_originator_obligations", "defences", "amount"],
     "target_actor_refs": ["ACT-BANKIA", "ACT-SAREB"],
-    "status": "open",
-    "next_action": "Locate complete transfer instrument, schedules, linked-product treatment, warranties and liability reservations.",
+    "status": "partial",
+    "next_action": "Use the finca-8751 registry chain only as a sample; locate the complete 21 December 2012 deed, 24 June 2013 supplemental act, Bankia-to-SAREB asset schedule, all-finca match, valuation/economics, linked-product treatment, warranties and liability reservations.",
     "publication": "public_safe"
   },
   {
@@ -15,8 +15,8 @@
     "title": "SAREB to PH122 loans sale and purchase agreement, schedules and allocated price",
     "needed_for": ["Article_1535", "economic_chain", "defences", "servicing"],
     "target_actor_refs": ["ACT-SAREB", "ACT-PH122"],
-    "status": "open",
-    "next_action": "Recover the notarial policy/LSAP, asset schedule, total and allocated price, payment, adjustments, warranties and disclosures.",
+    "status": "partial",
+    "next_action": "Use Protocol 6851 / finca 8751 and the 20 November 2015 substitution-request trail only as partial controls; recover the complete deed/LSAP, asset schedule, total and allocated price, payment, adjustments, warranties, disclosures, signed court act and final substitution chain.",
     "publication": "public_safe"
   },
   {
@@ -36,7 +36,7 @@
     "needed_for": ["price", "payment", "balance", "due_diligence", "warranties", "knowledge"],
     "target_actor_refs": ["ACT-PH122", "ACT-CAM"],
     "status": "partial",
-    "next_action": "Locate complete protocol 2,248, schedules, payment proof, board/committee papers, due diligence, advisers, side agreements and indemnities.",
+    "next_action": "The located copy is only the seven-page tail/diligences of an instrument described as fourteen folios. Locate complete Protocol 2,248, every schedule, price/payment proof, board/committee papers, due diligence, AC verification, advisers, side agreements and indemnities.",
     "publication": "public_safe"
   },
   {
@@ -56,7 +56,57 @@
     "needed_for": ["amount", "causation", "damages", "enrichment", "surplus"],
     "target_actor_refs": ["ACT-ORIGINATING-LENDER", "ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM"],
     "status": "open",
-    "next_action": "Reconcile original principal, interest, SWAP charges, pledged funds, payments, concursal recognition, corrections, assignments, adjudication/dación values, satisfaction and residual balance.",
+    "next_action": "Build one source-and-function ledger from origination through EH90 and Concurso: principal, ordinary/default interest, SWAP charges, pledged funds, payments, €9,052,251.69 recognition, €12,251,446.21 certificates, Protocols 869/870 (€13,165,832.36), the €30 cross-source movement, the Protocol-457 cap step, separate €400,000 branch, satisfaction/cancellation, residual balance and any surplus.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-011",
+    "priority": "P0",
+    "title": "Source-system workpapers behind Protocols 869 and 870",
+    "needed_for": ["balance_provenance", "interest_accrual", "amount", "notarial_recital_testing"],
+    "target_actor_refs": ["ACT-CAM", "ACT-PH122", "ACT-HAYA"],
+    "status": "partial",
+    "next_action": "Obtain the creditor/servicer loan statements, day-by-day calculations, instructions and materials supplied for Protocols 869/870; preserve that Protocol 870 itself sums exactly and treat €839,441→€839,411 as a later cross-source gap.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-012",
+    "priority": "P0",
+    "title": "Document-by-document falsity and inflation allegation proof matrix",
+    "needed_for": ["document_authenticity", "author", "knowledge", "use", "reliance", "benefit", "harm"],
+    "target_actor_refs": ["ACT-PH122", "ACT-HAYA", "ACT-CERBERUS-PERIMETER", "ACT-CAM", "ACT-INSOLVENCY-ADMIN"],
+    "status": "open",
+    "next_action": "For each challenged document identify the exact original, certified/native comparator, allegedly false or altered field, author/editor/signatory, date/version, source data, knowledge and intent evidence, use in each proceeding, recipient reliance, patrimonial disposition, benefit and harm. Do not infer instrument/notary falsity merely because a party recital or amount is disputed.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-013",
+    "priority": "P0",
+    "title": "Complete Mortgage Enforcement 90/2012 satisfaction and cancellation file",
+    "needed_for": ["procedural_life", "enforcement_scope", "double_recovery_test", "cancellation", "residual_balance"],
+    "target_actor_refs": ["ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-CAM", "ACT-LPB"],
+    "status": "partial",
+    "next_action": "Recover the complete EH90 docket, annexes, property schedule, all substitutions, balance certificates, enforcement proceeds, suspension/termination, satisfaction and mortgage-cancellation acts. The located initiating claim is the second-facility claim only.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-014",
+    "priority": "P0",
+    "title": "Protocol 457 legal, payoff and closing-account bridge",
+    "needed_for": ["closing_debt", "classification", "setoff", "dacion", "surplus", "court_return"],
+    "target_actor_refs": ["ACT-CAM", "ACT-INSOLVENCY-ADMIN", "ACT-LPB"],
+    "status": "partial",
+    "next_action": "Obtain the source schedules and legal authority for each component, final payoff, AC closing entry, court receipt within five days, property-by-property cancellation pack and final accounts. Preserve the exact €13,065,186.68 printed-component total, €102,895.34 cap step and separate €400,000 branch.",
+    "publication": "public_safe"
+  },
+  {
+    "id": "GAP-P0-015",
+    "priority": "P0",
+    "title": "One-to-one use, recovery and satisfaction ledger across EH90 and Concurso",
+    "needed_for": ["multiple_lives_test", "double_recovery_test", "NPL_economics", "enrichment", "damages"],
+    "target_actor_refs": ["ACT-BANKIA", "ACT-SAREB", "ACT-PH122", "ACT-HAYA", "ACT-CAM", "ACT-LPB"],
+    "status": "open",
+    "next_action": "Map each loan component, charge, payment, security, procedural assertion, transfer, recovery, credit/set-off and cancellation event once. A repeated procedural appearance is not a duplicate recovery unless the economic ledger shows two uncompensated collections or an uncorrected duplicated balance.",
     "publication": "public_safe"
   },
   {

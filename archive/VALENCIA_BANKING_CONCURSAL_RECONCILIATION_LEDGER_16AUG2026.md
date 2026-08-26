@@ -159,13 +159,15 @@ The final reproducible ledger must connect:
 9. insolvency-recognised credit;
 10. every assignment and consideration;
 11. later enforcement figures;
-12. the €400,000 transaction;
-13. the €12,768,082.02 dación branch;
+12. the separate €400,000 / 31-finca transaction branch;
+13. Protocol 457's €13,168,082.02 stated debt consideration for the 159-finca dación, including the €13,065,186.68 printed-component subtotal and €102,895.34 cap step;
 14. costs and interest;
 15. cancellation and satisfaction;
 16. any residual balance, cash or surplus;
 17. any allocation affecting Matkator or another non-debtor;
 18. the final result of ORD 1859/2023-9 and any restitution/damages actually recovered;
+
+Do not derive Protocol 457's €13,168,082.02 by subtracting or adding the separate €400,000 branch. Keep EH90, Concurso credit classification, competitive threshold, Protocol-457 consideration and Valencia product/originator liability as distinct functions joined only by the underlying source-and-satisfaction ledger.
 19. treatment of any recovery within LPB/Aweswell/estate accounting and net-loss analysis.
 
 ## Evidential boundary

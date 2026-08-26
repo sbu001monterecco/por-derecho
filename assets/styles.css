@@ -2638,3 +2638,24 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   .cm-position-formula { grid-template-columns: 1fr; }
   .cm-test { font-size: .84rem; }
 }
+
+/* CREDIT-MULTIPLE-LIVES-360-20260826 · readable secondary actions on light allegation blocks */
+#vidas-procesales-credito .button.secondary,
+#credit-procedural-lives .button.secondary,
+#vidas-procesales-credito-cadena .button.secondary,
+#credit-procedural-lives-chain .button.secondary {
+  color: #13252d;
+  background: #fff;
+  border: 1px solid #13252d;
+}
+#vidas-procesales-credito .button.secondary:hover,
+#vidas-procesales-credito .button.secondary:focus,
+#credit-procedural-lives .button.secondary:hover,
+#credit-procedural-lives .button.secondary:focus,
+#vidas-procesales-credito-cadena .button.secondary:hover,
+#vidas-procesales-credito-cadena .button.secondary:focus,
+#credit-procedural-lives-chain .button.secondary:hover,
+#credit-procedural-lives-chain .button.secondary:focus {
+  color: #fff;
+  background: #13252d;
+}

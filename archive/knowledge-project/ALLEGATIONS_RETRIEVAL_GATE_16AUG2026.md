@@ -13,6 +13,7 @@ Whenever a substantive Project Sun Rock / Por Derecho task touches **what has be
 1. `archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP1901_DP1956_CONTROL24_16AUG2026.md`
 2. **`archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md` whenever the task touches the current unitary theory, the reserved declarant mailbox/Drive manifest or whether older evidence digests set the present evidential ceiling. This overlay controls the current attributed proposition `ALG-ENT-018`.**
 3. **`archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md` for any authorised private native-email/Drive analysis. It is a public-safe method template, not a public source corpus and not authority to publish private material.**
+3A. **`archive/BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_BANKING_CRIME_360_CONTROL_26AUG2026.md`, Declaration 016 and `archive/prompts/BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_CRIMINAL_360_PROMPT_26AUG2026.md` whenever the task touches alleged split/multiple credit lives, NPL fraud, Bankia→SAREB→PH122→CAM, Protocols 869/870/457, EH 90/2012 versus Concurso use, notarial falsity, amount inflation, unjust enrichment, double recovery or credit→control→title. This route controls `ALG-NPL-019`.**
 4. **`archive/knowledge-project/DP1956_STATUS_REOPENING_CORRECTION_18AUG2026.md` whenever DP 1956/2026, Control 22, AC criminal/accounting status, reopening, preservation or downstream website wording is in scope. This 18-Aug overlay controls over the older crosswalk/master-register wording that reported a reform/subsidiary appeal.**
 5. `archive/knowledge-project/SOURCE_DIGEST_AN_DP91_2023_QUERELLA_RESOLUTIONS_16AUG2026.md`
 6. `archive/CORRECTION_REGISTER.md`
@@ -86,6 +87,24 @@ The current public-safe form must preserve all of the following in the same cont
 - the factual expression does not itself establish Articles 570 bis/ter CP, a `delito continuado` or a permanent offence, and does not alter consummation, participation windows or prescription;
 - the mailbox/Drive manifest is independent discovery metadata and adds no evidential support to `ALG-ENT-018` until native originals are acquired, authenticated and adversarially tested.
 
+### Mandatory `ALG-NPL-019` split-credit/NPL/notarial-document route
+
+`ALG-NPL-019` is a **direct party allegation**, not a finding. For any allegation that the mortgage credits were split, acquired multiple lives, were inflated or falsified, or were used both inside and outside the Concurso, preserve all of the following:
+
+- direct attribution to Gil Marer and Aweswell and `allegation ≠ finding` in the same containing block;
+- exact vehicle **Promontoria Holding 122 B.V. (PH122)**, not `1112`, `Promotoria`, `PH11` or another entity;
+- Haya as servicer/interlocutor, not a proved holder, and Cerberus as context until its exact ownership/control/mandate/instruction/ratification role is proved;
+- corporate/product succession `Caja Insular→BFA→Bankia→CaixaBank` separate from mortgage-asset transfer `Bankia→SAREB→PH122→CAM`;
+- Protocol 870's exact arithmetic and the later €839,441→€839,411 movement;
+- Protocol 457's €13,065,186.68 six-component subtotal plus the source-supported €102,895.34 interest-to-cap step to €13,168,082.02;
+- the located EH 90/2012 second-facility claim, Protocol 457's 159-finca dación and the separate €400,000/31-finca branch as different lanes;
+- claim, recognised credit, mortgage responsibility, secured rank, bid threshold, deed consideration, cash, set-off, extinguishment and property value as different functions;
+- one instrument-specific falsity schedule: an authentic deed may record a disputed or false party recital without proving instrument alteration, false signature or notarial knowledge;
+- one actor-specific capacity, knowledge, act/use, intent, procedural effect, benefit/harm and defence test; and
+- strongest lawful/accounting countermodels plus the complete single-satisfaction ledger.
+
+`NPL fraud`, `split credit` and `multiple lives` are forensic descriptions, not standalone offences. A discounted NPL transfer or recovery above transfer price is not itself fraud or unjust enrichment. Apply the dated statutory locks in the canonical control: CP 250.1.7 requires judicial-evidence manipulation/analogous procedural fraud, judge/tribunal error and a resulting economically prejudicial decision; a private actor's CP 392 route incorporates only CP 390.1.1°–3°, not mere narrative untruth, and CP 393 use is separate; CP 259–261 changed materially on 1-Jul-2015 and retain debtor/purpose limits. CP 31-bis legal-person liability began 23-Dec-2010, requires an express offence-specific gate and cannot be imported generically into CP 290 or 390–393. CP 130.2 applies only after an otherwise applicable legal-person criminal responsibility and the exact listed corporate event; economic continuity is the concealed/apparent-dissolution test, not a substitute for the formal-event or predicate-offence proof. It is not retroactive successor guilt, transfer of natural-person intent or the rule allocating ordinary civil/product liability.
+
 ## Mandatory search behavior
 
 A future thread must not stop merely because a repository keyword search fails to return the crosswalk, the DP1956 correction overlay or the force/authority / five-source ledger. It should open the canonical paths above directly when the subject is relevant. GitHub indexing and semantic retrieval can lag behind a merge; the repository bootstrap rules are therefore the controlling discovery mechanism.
@@ -103,12 +122,13 @@ Use the crosswalk and, where relevant, the DP1956 correction overlay, force/auth
 - separate source-supported de facto material/access/operational control from Gil Marer's allegation of full practical possession and from his criminal characterisation of that possession as illegal/fraudulent/forcible/clandestine;
 - test every asserted AC/Fiscal/Judge/private-actor link separately within the integrated theory rather than treating integration itself as proof of participation or guilt;
 - distinguish notice that an allegation was made from transaction-level proof of the underlying money flow or offence.
+- route the alleged credit-multiple-lives/notarial-falsity theory through `ALG-NPL-019` rather than importing an undifferentiated fraud label into each transfer, deed or proceeding.
 
 ## Search aliases
 
 Treat these as routing aliases into the crosswalk, DP1956 correction overlay, source digest and, where applicable, the force/authority or five-source ledger:
 
-`querella` · `AN 2023` · `Audiencia Nacional` · `DP 91/2023` · `Rollo 120/2024` · `Auto 119/2024` · `Casación 1867/2024` · `DP 1901/2026` · `DP1901` · `Control 21` · `NEXUS 36` · `DP 1956/2026` · `DP1956` · `Control 22` · `sobreseimiento provisional` · `reapertura` · `reopening` · `Control 24` · `ALG-ENT-018` · `one continuing economic-criminal enterprise` · `successive adoption` · `divided functions` · `empresa continuada de criminalidad económica` · `adopción sucesiva` · `división de funciones` · `Administrador Concursal` · `Borja` · `Acosta Matos` · `CAM` · `PH122` · `Promontoria` · `Community debt` · `Comunidad` · `OB REM` · `400000` · `350000` · `ACTUA` · `Gesvalt` · `RICPE` · `RPE` · `OLAF` · `FTI rescue` · `Meeting Point SEPI` · `triple dipping` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Pink Canary` · `Monterecco Sun Park SL` · `27ENE2026` · `continuum` · `estafa procesal` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting` · `prevaricación` · `administración desleal` · `cohecho` · `organización criminal` · `force` · `forced possession` · `clandestine possession` · `keys` · `security` · `locks` · `extraconcursal` · `overreach` · `authority laundering` · `authority recycling` · `circular self-legitimation` · `instrumentalisation` · `non-convalidation` · `no convalidación` · `24-Oct-2019` · `24-Feb-2021` · `12-May-2021` · `Carlos Saavedra` · `PwC Canarias` · `PwC Tenerife` · `11JUN2016` · `26ABR2016` · `FMMM` · `Francisco Mario Matos Matas` · `Paco Matos` · `Cox` · `Thompson` · `former client` · `information barrier`.
+`querella` · `AN 2023` · `Audiencia Nacional` · `DP 91/2023` · `Rollo 120/2024` · `Auto 119/2024` · `Casación 1867/2024` · `DP 1901/2026` · `DP1901` · `Control 21` · `NEXUS 36` · `DP 1956/2026` · `DP1956` · `Control 22` · `sobreseimiento provisional` · `reapertura` · `reopening` · `Control 24` · `ALG-ENT-018` · `ALG-NPL-019` · `NPL fraud` · `split credit` · `multiple credit lives` · `vidas múltiples del crédito` · `Protocol 869` · `Protocol 870` · `Protocol 457` · `EH90/2012` · `notarial falsity` · `debt inflation` · `Bankia SAREB PH122 CAM` · `one continuing economic-criminal enterprise` · `successive adoption` · `divided functions` · `empresa continuada de criminalidad económica` · `adopción sucesiva` · `división de funciones` · `Administrador Concursal` · `Borja` · `Acosta Matos` · `CAM` · `PH122` · `Promontoria` · `Community debt` · `Comunidad` · `OB REM` · `400000` · `350000` · `ACTUA` · `Gesvalt` · `RICPE` · `RPE` · `OLAF` · `FTI rescue` · `Meeting Point SEPI` · `triple dipping` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Pink Canary` · `Monterecco Sun Park SL` · `27ENE2026` · `continuum` · `estafa procesal` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting` · `prevaricación` · `administración desleal` · `cohecho` · `organización criminal` · `force` · `forced possession` · `clandestine possession` · `keys` · `security` · `locks` · `extraconcursal` · `overreach` · `authority laundering` · `authority recycling` · `circular self-legitimation` · `instrumentalisation` · `non-convalidation` · `no convalidación` · `24-Oct-2019` · `24-Feb-2021` · `12-May-2021` · `Carlos Saavedra` · `PwC Canarias` · `PwC Tenerife` · `11JUN2016` · `26ABR2016` · `FMMM` · `Francisco Mario Matos Matas` · `Paco Matos` · `Cox` · `Thompson` · `former client` · `information barrier`.
 
 ## Current corrections that must accompany the allegation architecture
 
@@ -147,6 +167,10 @@ For the force/authority theory, the strongest publication pattern is:
 `DOCUMENTED PERIMETER / CONTROL FACT → GIL MARER'S LEGAL/CRIMINAL ALLEGATION → ELEMENT-BY-ELEMENT TEST → STRONGEST DEFENCE → FINITE PRODUCTION REQUEST`.
 
 For the Pink continuum and OLAF/public-funds theories, the same pattern applies with the additional rule that **a prior complaint/alert is evidence of notice and allegation history, not proof of the underlying offence or money flow**.
+
+For `ALG-NPL-019`, use:
+
+`EXACT ORIGINATING OBLIGATION → TRANSFER/SCHEDULE → AMOUNT AND LEGAL FUNCTION → PROCEEDING-SPECIFIC USE → DOCUMENT/AUTHOR/KNOWLEDGE → DISPOSITION OR EFFECT → BENEFIT/HARM → SATISFACTION/RESIDUAL → STRONGEST COUNTERMODEL → FINITE PRODUCTION`.
 
 ## Continuity test
 

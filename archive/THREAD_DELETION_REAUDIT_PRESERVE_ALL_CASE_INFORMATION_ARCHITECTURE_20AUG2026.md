@@ -124,11 +124,11 @@ The following files and routes collectively preserve the thread’s work:
 The corrections architecture preserves, among other points, the following controlling qualifications:
 
 1. There is no single universal proceeding that automatically produces radical nullity of “everything”.
-2. The EUR 13,168,082.02 figure has an exact six-component calculation, but the legal basis and enforceability of every component still require validation.
+2. Protocol 457's six printed components total EUR 13,065,186.68; the EUR 102,895.34 cap step explains the stated EUR 13,168,082.02 arithmetically, but the legal basis, classification, payoff and enforceability of every component still require validation.
 3. Non-cash debt consideration is a coherent alternative explanation that must be tested rather than excluded by rhetoric.
 4. The offered waiver was approximately EUR 5,186,061.79, not EUR 6,102,697.60.
-5. Protocol 457 concerns the 159 mortgaged properties.
-6. The approximately EUR 400,000 premises line requires its own bank, ledger, deed and Registry reconstruction.
+5. Protocol 457 concerns the 159 mortgaged properties and is not itself an EH90 satisfaction/cancellation instrument.
+6. The approximately EUR 400,000 / 31-finca premises branch is separate from Protocol 457's EUR 13,168,082.02 and requires its own bank, ledger, deed and Registry reconstruction.
 7. EUR 9,052,251.69 is a 2016 classification figure and is not automatically the complete 2022 payoff figure.
 8. A waiver or appraisal does not automatically establish an insolvency surplus or remanente.
 9. Judicial and LAJ conduct must be attributed act by act, with authority, knowledge, duty, act or omission, causation and exculpatory evidence separated.

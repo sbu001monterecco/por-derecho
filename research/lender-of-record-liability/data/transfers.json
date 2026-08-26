@@ -35,33 +35,47 @@
     "id": "TR-2013-BANKIA-SAREB",
     "transferor_actor_ref": "ACT-BANKIA",
     "transferee_actor_ref": "ACT-SAREB",
-    "date": null,
-    "date_precision": "year",
-    "date_label": "2013",
+    "date": "2012-12-21",
+    "date_precision": "day",
+    "date_label": "21 December 2012 deed; 24 June 2013 supplemental act; inscription entered 12 July 2013",
     "instrument_refs": ["INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K", "INS-CONCURSAL-CREDIT"],
-    "transfer_type": "credit_transfer_or_restructuring_transfer",
-    "evidence_status": "missing_primary",
+    "transfer_type": "SAREB_asset_transfer_reflected_in_registry",
+    "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE"],
-    "consideration_status": "unknown",
-    "liability_allocation_status": "unknown",
-    "open_questions": ["Exact deed and asset schedule", "What obligations, defences and personal liabilities remained with the transferor"]
+    "source_refs": ["SRC-REGISTRY-FINCA-8751-2022", "SRC-LAW-9-2012-SAREB-FRAMEWORK", "SRC-RD-1559-2012-SAREB-FRAMEWORK"],
+    "registry_sample": {
+      "finca": "8751",
+      "inscription": 14,
+      "entry_date": "2013-07-12",
+      "supplemental_act_date": "2013-06-24"
+    },
+    "scope_control": "Verified only for the finca-8751 registry sample; portfolio-wide inclusion, complete schedules and economics remain open.",
+    "consideration_status": "specific_LPB_economics_unknown",
+    "liability_allocation_status": "statutory_framework_known_specific_instrument_and_retained_personal_obligations_open",
+    "open_questions": ["Complete 21 December 2012 deed and 24 June 2013 supplemental act", "LPB asset schedule and all-finca matching", "Transfer valuation and allocated economics", "Treatment of the swap, pledged funds, defences and retained personal obligations"]
   },
   {
     "id": "TR-2014-SAREB-PH122",
     "transferor_actor_ref": "ACT-SAREB",
     "transferee_actor_ref": "ACT-PH122",
-    "date": null,
-    "date_precision": "year",
-    "date_label": "2014",
+    "date": "2014-12-18",
+    "date_precision": "day",
+    "date_label": "18 December 2014 deed, Protocol 6851; sample inscription entered 29 June 2015",
     "instrument_refs": ["INS-PRINCIPAL-MORTGAGE", "INS-SECOND-MORTGAGE-850K", "INS-CONCURSAL-CREDIT"],
     "transfer_type": "portfolio_credit_sale",
-    "evidence_status": "missing_primary",
+    "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE"],
+    "source_refs": ["SRC-REGISTRY-FINCA-8751-2022", "SRC-LAJ-2015-11-20-PH122-SUBSTITUTION", "SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE"],
+    "registry_sample": {
+      "finca": "8751",
+      "inscription": 19,
+      "entry_date": "2015-06-29",
+      "protocol": 6851
+    },
+    "scope_control": "Holder transition is verified for the finca-8751 registry sample and corroborated by the 20 November 2015 substitution-request trail; the complete portfolio schedule and economics are unresolved.",
     "consideration_status": "requested_not_reconciled",
     "liability_allocation_status": "unknown",
-    "open_questions": ["Loans sale and purchase agreement", "Asset schedule", "Total and allocated price", "Warranties/disclosures", "Servicing arrangements"]
+    "open_questions": ["Complete Protocol 6851 / loans sale and purchase agreement", "Asset schedule and all-finca matching", "Total and allocated price and payment", "Warranties/disclosures", "Servicing arrangements", "Signed 20 November 2015 act and final substitution/finality chain"]
   },
   {
     "id": "TR-2017-10-20-PH122-CAM",
@@ -74,10 +88,23 @@
     "transfer_type": "mortgage_credit_assignment",
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "source_refs": ["SRC-TRANSFER-2017-10-20-PH122-CAM", "SRC-REGISTRY-FINCA-8751-2022", "SRC-PH122-BALANCE-CERTIFICATES-2017", "SRC-LPB-2017-12-06-DEED-PRICE-DEMAND", "SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION"],
+    "notarial_control": {
+      "protocol": 2248,
+      "notary": "Ana Fernández-Tresguerres García",
+      "located_copy": "seven-page tail/diligences of an instrument described as fourteen folios",
+      "notice_to_LPB": "2017-10-27"
+    },
+    "registry_sample": {
+      "finca": "8751",
+      "inscription": 20,
+      "entry_date": "2018-01-15"
+    },
+    "court_control": "The 15 February 2018 order recognised CAM, rejected LPB's Article 1535 position and partly corrected amounts in LPB's favour; its appeal/finality chain remains open.",
+    "scope_control": "The transfer and sample registry entry are verified. The located seven-page tail does not contain the substantive assignment economics, full schedule or payment proof.",
     "consideration_status": "not_publicly_reconciled",
     "liability_allocation_status": "complete_deed_required",
-    "open_questions": ["Complete deed and schedules", "Price and payment", "Due diligence and disclosures", "Warranties/indemnities", "Loan-by-loan balance"]
+    "open_questions": ["Complete fourteen-folio Protocol 2248 and schedules", "Price and payment", "Due diligence and disclosures", "Warranties/indemnities", "Loan-by-loan balance", "AC verification file", "Appeal and finality chain"]
   },
   {
     "id": "TR-2021-BANKIA-CAIXABANK",

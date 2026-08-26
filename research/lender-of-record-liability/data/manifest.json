@@ -25,7 +25,8 @@
     "knowledge-events.json",
     "conduct-decisions.json",
     "proceedings.json",
-    "evidence-gaps.json"
+    "evidence-gaps.json",
+    "multiple-credit-lives.json"
   ],
   "public_pages": [
     "en/lender-of-record/liability/",
@@ -33,5 +34,5 @@
     "en/caixabank-valencia-claim/",
     "es/reclamacion-caixabank-valencia/"
   ],
-  "principle": "Who knew what, when, in what legal capacity, what did they then do, what did it cause, where can it be used, and what proves each step?"
+  "principle": "Who knew what, when, in what legal capacity, what did they then do, what did it cause, where can it be used, and what proves each step? A repeated amount or credit position must be reconciled by source, date, legal function, proceeding and satisfaction status before it is treated as a second recovery, an inflated debt or an offence."
 }

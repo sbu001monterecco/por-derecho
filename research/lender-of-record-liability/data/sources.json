@@ -232,6 +232,130 @@
     "notes": "Temporal-law verification required; do not substitute current law for the law applicable in 2022."
   },
   {
+    "id": "SRC-LAW-9-2012-SAREB-FRAMEWORK",
+    "title": "Law 9/2012 SAREB asset-transfer framework",
+    "source_type": "official_legislation",
+    "date": "2012-11-14",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14062",
+    "notes": "Establishes the statutory transfer framework and legal effects. It does not identify the LPB loans in a Bankia-to-SAREB schedule or establish transaction economics."
+  },
+  {
+    "id": "SRC-RD-1559-2012-SAREB-FRAMEWORK",
+    "title": "Royal Decree 1559/2012 implementing the SAREB framework",
+    "source_type": "official_legislation",
+    "date": "2012-11-15",
+    "evidence_status": "verified_official",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14118",
+    "notes": "Provides the regulatory setting for asset transfers to SAREB. The specific LPB asset schedule and price remain separate evidence targets."
+  },
+  {
+    "id": "SRC-REGISTRY-FINCA-8751-2022",
+    "title": "Land Registry note for sample finca 8751",
+    "source_type": "registry_note_sample",
+    "date": "2022-05-06",
+    "evidence_status": "verified_primary",
+    "availability": "controlled_public_safe_derivative",
+    "publication": "public_safe",
+    "notes": "For finca 8751 only, records Bankia-to-SAREB inscription 14 entered 12 July 2013 under the 21 December 2012 deed and 24 June 2013 supplemental act; SAREB-to-PH122 inscription 19 entered 29 June 2015 under the 18 December 2014 deed, Protocol 6851; and PH122-to-CAM inscription 20 entered 15 January 2018 under the 20 October 2017 deed, Protocol 2248. It is not proof of portfolio-wide completeness, transfer economics or later cancellation for every finca."
+  },
+  {
+    "id": "SRC-LAJ-2015-11-20-PH122-SUBSTITUTION",
+    "title": "20 November 2015 court-office trail for PH122 substitution request",
+    "source_type": "historical_court_docket_record",
+    "date": "2015-11-20",
+    "evidence_status": "corroborated_inference",
+    "availability": "repository_record_primary_binary_open",
+    "publication": "public_safe",
+    "notes": "The controlled docket record says the court office joined PH122's request to substitute into SAREB's position and gave transfer to the insolvency administration. The signed primary act and final disposition remain to be recovered."
+  },
+  {
+    "id": "SRC-PH122-BALANCE-CERTIFICATES-2017",
+    "title": "PH122 balance certificates dated 20 October 2017",
+    "source_type": "creditor_balance_certificates",
+    "date": "2017-10-20",
+    "evidence_status": "documented_party_statement",
+    "availability": "controlled_working_copy",
+    "publication": "public_safe",
+    "notes": "States €11,061,851.43 for loan 1 and €1,189,594.78 for loan 2, totalling €12,251,446.21. These are creditor-side certificates, not the PH122-to-CAM purchase price, proof of payment, independent audit or final insolvency payoff."
+  },
+  {
+    "id": "SRC-PROTOCOL-869-2018",
+    "title": "Notarial Act Protocol 869, loan-1 balance",
+    "source_type": "notarial_act_working_copy",
+    "date": "2018-05-17",
+    "evidence_status": "verified_primary",
+    "availability": "controlled_working_copy",
+    "publication": "public_safe",
+    "notes": "Records €11,887,314.33 as €7,792,421.02 principal + €1,015,788.65 ordinary interest + €3,079,104.66 default interest, plus stated daily accrual. The act expressly relies on information/accounting supplied by CAM and is not an independent debt audit."
+  },
+  {
+    "id": "SRC-PROTOCOL-870-2018",
+    "title": "Notarial Act Protocol 870, loan-2 balance",
+    "source_type": "notarial_act_working_copy",
+    "date": "2018-05-17",
+    "evidence_status": "verified_primary",
+    "availability": "controlled_working_copy",
+    "publication": "public_safe",
+    "notes": "Records €1,278,518.03 as €839,441.00 principal + €109,512.11 ordinary interest + €329,564.92 default interest, an exact sum, plus stated daily accrual. The act relies on CAM-supplied information/accounting. The later move to €839,411 in the 2021/Protocol-457 source family is a separate €30 cross-source reconciliation gap, not an internal Protocol-870 arithmetic mismatch."
+  },
+  {
+    "id": "SRC-DEFINITIVE-CREDIT-2016",
+    "title": "2016 definitive-text specially privileged credit total",
+    "source_type": "insolvency_definitive_text_control",
+    "date": null,
+    "date_precision": "year",
+    "date_label": "2016",
+    "evidence_status": "verified_primary",
+    "availability": "repository_controlled_derivative",
+    "publication": "public_safe",
+    "notes": "Controls the €9,052,251.69 quantified specially privileged total used in the current record. It is a credit-classification figure, not automatically the later payoff, mortgage-responsibility cap, transaction price or debt extinguished at closing. Certified complete definitive texts and every modification remain P0."
+  },
+  {
+    "id": "SRC-AUTO-2018-06-04-DEBT-COMPONENTS",
+    "title": "4 June 2018 order clarifying competitive debt components",
+    "source_type": "court_order",
+    "date": "2018-06-04",
+    "evidence_status": "verified_primary",
+    "availability": "repository_controlled_primary",
+    "publication": "public_safe",
+    "notes": "Uses the 17 May Protocols 869 and 870 for then-current better-offer figures. It is not a closing order or source-system audit and does not determine the final amount extinguished in 2022."
+  },
+  {
+    "id": "SRC-AUTO-2021-01-25-CAP",
+    "title": "25 January 2021 order on better-offer mortgage components",
+    "source_type": "court_order",
+    "date": "2021-01-25",
+    "evidence_status": "verified_primary",
+    "availability": "repository_controlled_primary",
+    "publication": "public_safe",
+    "notes": "Explains the movement from €3,079,104.66 first-loan default interest to the €3,182,000 mortgage cap for the competitive-improvement framework. It does not alone establish that the threshold was the final legally classified and compensable closing debt."
+  },
+  {
+    "id": "SRC-EDICT-2021-01-29",
+    "title": "29 January 2021 court notice of quantified better-offer conditions",
+    "source_type": "court_notice",
+    "date": "2021-01-29",
+    "evidence_status": "verified_primary",
+    "availability": "repository_controlled_primary",
+    "publication": "public_safe",
+    "notes": "Publishes €13,168,082.02 in mortgage components for the better-offer route and separately states the €400,000 non-mortgaged-property branch and other bidder conditions. It is not a realised price, final account or proof of payment."
+  },
+  {
+    "id": "SRC-PROTOCOL-457-2022",
+    "title": "Notarial deed Protocol 457 implementing the 159-finca dación",
+    "source_type": "notarial_deed_primary_copy",
+    "date": "2022-02-21",
+    "evidence_status": "verified_primary",
+    "availability": "repository_controlled_primary_derivative",
+    "publication": "public_safe",
+    "notes": "Implements the dación of the 159 listed mortgaged LPB fincas and states €13,168,082.02 as debt serving as consideration. Its six printed components total €13,065,186.68; the €102,895.34 step to the stated total is explained arithmetically by replacing €3,079,104.66 with the €3,182,000 cap. The legal/classification and closing-account bridge remains open. The deed does not implement or prove payment of the separate €400,000 / 31-finca branch and does not close Mortgage Enforcement 90/2012 by itself."
+  },
+  {
     "id": "SRC-STS-1621-2024-TO-RETRIEVE",
     "title": "Supreme Court authority concerning assigned credit and residual originator obligations",
     "source_type": "case_law_to_retrieve",

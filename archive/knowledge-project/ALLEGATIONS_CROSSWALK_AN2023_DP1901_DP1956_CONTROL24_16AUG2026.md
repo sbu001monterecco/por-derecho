@@ -3,6 +3,7 @@
 **Status:** INTERNAL CANONICAL ALLEGATION LEDGER — NOT AUTO-PUBLISHED  
 **Date:** 16 August 2026  
 **Current-theory overlay:** 26 August 2026 — `ALG-ENT-018`
+**Credit-multiple-lives overlay:** 26 August 2026 — `ALG-NPL-019`
 **Scope:** Sun Park / LPB / CAM-Acosta Matos / Community / AC / adjacent judicial-supervision tracks.  
 **Purpose:** allow future ChatGPT threads, repository searches and evidence scans to understand what has been alleged, how the theory evolved, what is actually verified, and what may safely propagate to the public website.
 
@@ -102,6 +103,18 @@ That decomposition is an evidential method; it is not a fragmentation or retirem
 **Current status:** MIXED. The existence of distinct figures is documentary; fraudulent inflation or unlawful suppression of retracto remains an allegation/legal hypothesis.
 
 **Do not flatten:** EUR 9.052m recognised credit ≠ asserted EUR 12.251m debt certificate ≠ offer value ≠ adjudication value ≠ cash paid.
+
+#### 26-Aug-2026 `ALG-NPL-019` overlay
+
+Gil Marer and Aweswell now expressly allege that components of the original integrated package acquired multiple transactional and procedural lives inside Concurso 36/2012, outside it in Mortgage Execution 90/2012 and through the Bankia→SAREB→Promontoria Holding 122 B.V.→CAM asset chain. They allege that false, materially inaccurate or inflated data/documents—including party data incorporated into notarised instruments—may have enabled the credit to operate successively as enforcement claim, recognised/privileged credit, control instrument, bid/set-off threshold and credit-to-title mechanism.
+
+**Class:** DIRECT PARTY ALLEGATION / CRIMINAL-FORENSIC MODEL, not a finding. Keep the corporate/product lane `Caja Insular→BFA→Bankia→CaixaBank` separate. Haya is a servicer/interlocutor, not a proved holder; Cerberus remains contextual until exact capacity is proved.
+
+**Arithmetic controls:** Protocol 870 is internally exact: €839,441 + €109,512.11 + €329,564.92 = €1,278,518.03. The €30 issue is the later source movement from €839,441 to €839,411. Protocol 457's six printed components total €13,065,186.68; the source-supported €102,895.34 movement from €3,079,104.66 default interest to the €3,182,000 cap produces €13,168,082.02. The day-by-day calculation, legal-function bridge, satisfaction and surplus remain open.
+
+**Proceeding/asset controls:** the located EH 90/2012 initiating claim concerns the second facility. Protocol 457 implements the 159-finca mortgaged-apartment dación, not EH satisfaction/cancellation. The €400,000 route concerns a separate 31-finca locales/pools branch.
+
+**Document boundary:** an authentic deed can record a disputed or false party recital without proving physical/digital alteration, false signature, simulation or notarial knowledge. Test each exact document, literal, author, comparator, knowledge, use, procedural effect and benefit/harm. `NPL fraud`, `split credit` and `multiple lives` are not standalone offences.
 
 ### 5.4 Valuation
 
@@ -256,6 +269,16 @@ Concrete duty/episode matrix:
 **Class:** VERIFIED/UNRESOLVED MIXED.  
 **Do not infer fraud from numerical difference alone.**
 
+### ALG-NPL-019
+**Proposition:** Gil Marer and Aweswell allege that components of the original integrated banking package acquired multiple transactional and procedural lives inside Concurso 36/2012, outside it in EH 90/2012 and through Bankia→SAREB→PH122→CAM, and that false, materially inaccurate or inflated data/documents may have enabled a credit→control→title benefit.
+**Class:** ACTIVE DIRECT PARTY ALLEGATION / CRIMINAL-FORENSIC INVESTIGATION MODEL — not a judicial finding.
+**Identity/capacity rule:** PH122 is the legal vehicle currently controlled. Haya is a servicer/interlocutor. Cerberus is contextual until a primary ownership, control, mandate, instruction, decision, ratification or benefit bridge is proved.
+**Actor/offence rule:** prove the exact actor, capacity, document/act or omission, date, knowledge, legally required intent, use, court/counterparty reliance, causal disposition, benefit/harm and strongest innocent explanation. `NPL fraud`, `split credit` and `multiple lives` do not themselves identify an offence.
+**Notarial rule:** an authentic notarial act proves the act and recitals, not the independent truth of every party-supplied balance. No current source proves instrument alteration, false signature, notarial knowledge or collusion.
+**Historical statutory rule:** CP 250.1.7 requires manipulation/analogous procedural fraud, judge/tribunal error and a resulting economically prejudicial decision. For a private actor, CP 392 incorporates CP 390.1.1°–3° but not mere narrative untruth; CP 393 knowing use/presentation is separate. Apply pre-/post-1-Jul-2015 CP 259–261 and their debtor/purpose limits. CP 31-bis legal-person liability began 23-Dec-2010 and requires an express offence-specific gate and qualifying human offence; it is not a generic corporate route for CP 290 or 390–393. CP 130.2 preserves/transfers only an otherwise applicable legal-person responsibility in a listed event and never transfers natural-person guilt or creates retroactive liability.
+**Accounting rule:** keep claim, recognised credit, mortgage responsibility, secured rank, better-bid threshold, deed consideration, cash, set-off, extinguishment and property value separate. Use the Protocol 870/€30 and Protocol 457/€102,895.34 corrections.
+**Public use:** YES only with direct Gil Marer/Aweswell attribution, non-finding, exact amount/function boundaries, countermodels and P0 production in the same containing block.
+
 ### ALG-BRIBE-006
 **Proposition:** CAM paid the AC EUR350,000 as a corrupt payment/cohecho.  
 **Class:** HIGH-RISK PARTY ALLEGATION from 2023.  
@@ -348,6 +371,7 @@ This does **not** mean the historic allegations are erased. They remain searchab
 3. **Control24:** obtain official registration/reference, receiving organ, competence treatment and any decision.
 4. **AN DP91/2023:** preserve complete signed Auto 25 Jan 2024, Auto119/2024, TS cassation inadmission and the MF reports/transfer issue if obtainable.
 5. **Credit chain:** complete PH122 -> CAM assignment deed, price, corporate identity, registry and procedural substitution.
+5A. **Credit multiple lives / NPL:** complete the Bankia→SAREB and SAREB→PH122 portfolio schedules/economics; complete Protocol 2,248, Protocols 869/870 and the EH 90/2012 end state; reconcile every amount/function/payment/set-off/property value into one single-satisfaction ledger; build an exact document-falsity schedule and actor matrix under `ALG-NPL-019`.
 6. **2017-2018 control:** authenticate recordings/calls/emails/security instructions and finca perimeter.
 7. **Community:** certified minutes, authority, ownership/voting/proxies, debt certificates, accounts and bank records.
 8. **OB REM EUR400k:** full deed-bank-registry-court-AC accounts reconciliation.
@@ -360,6 +384,7 @@ This does **not** mean the historic allegations are erased. They remain searchab
 ### SAFE TO PROPAGATE AFTER SOURCE CHECK
 
 - `ALG-ENT-018` as Gil Marer and Aweswell's current attributed factual/prosecutorial enterprise theory, with the non-finding, statutory-structure, individual-proof and temporal boundaries in the same block;
+- `ALG-NPL-019` as Gil Marer and Aweswell's attributed multiple-credit-lives/NPL/notarial-document theory, only with the exact PH122/Haya/Cerberus capacities, amount/function corrections, non-finding, countermodels and P0 evidence in the same block;
 - neutral chronology of the 2023 querella and its DP91/2023 -> Rollo120/2024 -> TS1867/2024 route;
 - exact procedural status of DP1901/2026 and DP1956/2026 once primary orders are obtained;
 - neutral title/corporate chronology supported by registry/notarial originals;
@@ -373,6 +398,7 @@ This does **not** mean the historic allegations are erased. They remain searchab
 - allegations of bribery/cohecho or the EUR350k payment;
 - an affirmative Articles 570 bis/ter criminal-organisation/group classification, unless separately supported and expressly framed as an allegation or alternative legal hypothesis;
 - accusations of deliberate fraud, theft, misappropriation, intentional destruction or falsification against named individuals unless and until primary evidence and legally safe editorial treatment justify publication;
+- `ALG-NPL-019` stripped of its direct attribution, non-finding, instrument-specific proof boundary or strongest lawful/accounting countermodels;
 - speculative EU-fund misuse;
 - claims that judges/AC/private actors colluded;
 - the global EUR89.646m/EUR87.692m damages figures except clearly labelled as historic party claims with methodology caveats.
@@ -392,6 +418,7 @@ When a future thread asks "what have we alleged?", "what is the current theory?"
 
 1. read this crosswalk first;
 2. distinguish **historic 2023 allegation** from the active `ALG-ENT-018` 2026 attributed case theory and from each offence-specific legal hypothesis;
+2A. route split-credit/NPL/notarial-document work through `ALG-NPL-019`, Declaration 016 and its 26-Aug control/prompt;
 3. retrieve the relevant primary source before making a specific accusation;
 4. do not merge actors/entities or title/control concepts;
 5. report adverse/procedural outcomes as part of the evidential history;
@@ -401,12 +428,15 @@ When a future thread asks "what have we alleged?", "what is the current theory?"
 
 ## 11. Search aliases
 
-`AN querella 2023` · `DP91/2023` · `Rollo120/2024` · `Auto119/2024` · `Casacion1867/2024` · `DP1901/2026` · `Control21` · `NEXUS36` · `DP1956/2026` · `Control22` · `Control24` · `Concurso36/2012` · `ALG-ENT-018` · `one continuing economic-criminal enterprise` · `successive adoption` · `divided functions` · `empresa continuada de criminalidad económica` · `adopción sucesiva` · `división de funciones` · `CAM` · `Acosta Matos` · `PH122` · `Promontoria` · `Community debt` · `OB REM` · `400000` · `350000` · `Actua` · `Gesvalt` · `RICPE` · `RPE` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting`.
+`AN querella 2023` · `DP91/2023` · `Rollo120/2024` · `Auto119/2024` · `Casacion1867/2024` · `DP1901/2026` · `Control21` · `NEXUS36` · `DP1956/2026` · `Control22` · `Control24` · `Concurso36/2012` · `ALG-ENT-018` · `ALG-NPL-019` · `multiple credit lives` · `vidas múltiples del crédito` · `split credit` · `NPL fraud` · `notarial falsity` · `Protocol 869` · `Protocol 870` · `Protocol 457` · `EH90/2012` · `Bankia SAREB PH122 CAM` · `one continuing economic-criminal enterprise` · `successive adoption` · `divided functions` · `empresa continuada de criminalidad económica` · `adopción sucesiva` · `división de funciones` · `CAM` · `Acosta Matos` · `PH122` · `Promontoria` · `Community debt` · `OB REM` · `400000` · `350000` · `Actua` · `Gesvalt` · `RICPE` · `RPE` · `Sun Park` · `Lava Verde` · `MYND Yaiza` · `Hotel New Trend` · `Matkator` · `material control` · `title chronology` · `financed exit` · `adjudication accounting`.
 
 ## 12. Canonical cross-links
 
 - `archive/POR_DERECHO_UNITARY_CRIMINAL_ENTERPRISE_POSITION_AND_RDM_MANIFEST_ADDENDUM_26AUG2026.md`
 - `archive/prompts/RDM_PRIVATE_MAILBOX_UNITARY_CRIMINAL_ENTERPRISE_ANALYSIS_PROMPT_26AUG2026.md`
+- `archive/BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_BANKING_CRIME_360_CONTROL_26AUG2026.md`
+- `archive/prompts/BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_CRIMINAL_360_PROMPT_26AUG2026.md`
+- `archive/declarations/016_GIL_CREDIT_MULTIPLE_LIVES_NPL_NOTARIAL_ALLEGATION_20260826.md`
 - `archive/knowledge-project/SOURCE_DIGEST_AN_DP91_2023_QUERELLA_RESOLUTIONS_16AUG2026.md`
 - `archive/DP1901_STATUS_RECHECK_15AUG2026.md`
 - `archive/CORRECTION_REGISTER.md`
