@@ -12,11 +12,17 @@
   "later_correction": {
     "date": "2026-08-26",
     "publication_id": "CREDIT-MULTIPLE-LIVES-NPL-NOTARIAL-360-20260826",
-    "state": "LOCAL_VALIDATED__MERGE_AND_CURRENT_PAGES_READBACK_PENDING",
+    "state": "MERGED_AND_LIVE_VERIFIED",
     "historical_live_catalog_sha256": "fc9407913489fe65ea13b44fe7cbfb0d2176162241f20ca2b7051823de5b0867",
     "current_local_catalog_sha256": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
+    "current_live_catalog_sha256": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
+    "publication_pull_request": 1067,
+    "publication_merge_sha": "3cece6dbb923ba576f154c8fd4c34c0c2570c9df",
+    "publication_pages_run_id": 32983373974,
+    "publication_pages_result": "success",
+    "publication_live_verified_at": "2026-08-26T14:59:36Z",
     "change": "Corrected the Protocol 870 arithmetic/source classification in the catalogue and pinned primary-autos derivatives: EUR 839,441 + EUR 109,512.11 + EUR 329,564.92 equals EUR 1,278,518.03 exactly; EUR 839,411 is a later cross-source value producing an open EUR 30 movement.",
-    "provenance_boundary": "The 23-August CI and exact-live run identifiers below verify the predecessor catalogue hash. The current hash was revalidated locally and requires the later publication's merge and Pages evidence."
+    "provenance_boundary": "The 23-August CI and exact-live run identifiers below verify the predecessor catalogue hash. The current hash was independently revalidated, merged in PR 1067 and read back byte-identically after Pages run 32983373974."
   },
   "deployment_evidence": {
     "publication_pull_request": 870,
@@ -188,7 +194,7 @@
     "native RFC822, response/outcome and specialist filing receipts"
   ],
   "validation": {
-    "status": "HISTORICAL_CI_GREEN__CURRENT_CATALOG_LOCAL_VALIDATED_LIVE_PENDING",
+    "status": "HISTORICAL_CI_GREEN__CURRENT_CATALOG_MERGED_AND_LIVE_VERIFIED_PR1067",
     "historical_completed_at_utc": "2026-08-23T22:28:08Z",
     "catalog_sha256": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
     "reviewed_release_files": 115,
@@ -206,11 +212,15 @@
       "validate_mission_critical_repo.py: PASS — 70 workflows",
       "security SHA256SUMS: PASS — six public-safe package artefacts",
       "Python, JavaScript, JSON and XML syntax/parse controls: PASS",
-      "git diff --cached --check: PASS"
+      "git diff --cached --check: PASS",
+      "2026-08-26 correction merged in PR 1067 at 3cece6dbb923ba576f154c8fd4c34c0c2570c9df; Pages run 32983373974 succeeded and current catalogue SHA-256 073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475 matched the live byte stream."
     ]
   },
   "live_verification": {
-    "status": "HISTORICAL_EXACT_SHA_AND_85_SURFACES_VERIFIED__CURRENT_CORRECTION_PENDING",
+    "status": "HISTORICAL_EXACT_SHA_AND_85_SURFACES_VERIFIED__CURRENT_CORRECTION_MERGED_AND_LIVE_VERIFIED_PR1067",
+    "current_correction_merge_sha": "3cece6dbb923ba576f154c8fd4c34c0c2570c9df",
+    "current_correction_pages_run_id": 32983373974,
+    "current_correction_catalog_sha256": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
     "publication_merge_sha": "86708da90a015d128d32ee681587f1ccdd323455",
     "publication_pages_run_id": 32667895000,
     "hotfix_merge_sha": "30a60bc507e76792a565fe599afb0db92665149b",
@@ -260,7 +270,7 @@
     "https://sbu001monterecco.github.io/por-derecho/assets/data/concurso36-autos-fulltext-v1.json"
   ],
   "live_verification_evidence": {
-    "status": "HISTORICAL_EXACT_SHA_AND_BYTE_READBACK_VERIFIED__CURRENT_CORRECTION_PENDING",
+    "status": "HISTORICAL_EXACT_SHA_AND_BYTE_READBACK_VERIFIED__CURRENT_CORRECTION_MERGED_AND_LIVE_VERIFIED_PR1067",
     "bilingual_routes": "18/18",
     "catalogue_records": 127,
     "specialist_records": 50,
@@ -274,6 +284,10 @@
     "exact_surface_result": "85/85 PASS",
     "production_smoke_run_id": 32670629825,
     "production_smoke_result": "42/42 PASS",
+    "current_correction_merge_sha": "3cece6dbb923ba576f154c8fd4c34c0c2570c9df",
+    "current_correction_pages_run_id": 32983373974,
+    "current_correction_pages_result": "success",
+    "current_correction_catalog_sha256": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
     "note": "Deletion safety applies to the identified public-safe corpus and its controls; the certified docket and listed evidence remain open."
   },
   "deletion_record": {

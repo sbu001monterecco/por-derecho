@@ -4,11 +4,11 @@
   "control_marker": "credit-multiple-lives-criminal-360-20260826",
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-26T00:00:00Z",
-  "published_at": null,
+  "published_at": "2026-08-26T14:59:36Z",
   "initial_source_base": "75cc0a1542a3cb7207f37e27198a4f139d1a64a5",
   "source_base": "cfe453e6451781356f66c23401b0753962ae7d33",
   "reconciled_main_base": "cfe453e6451781356f66c23401b0753962ae7d33",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "DELETION_SAFE",
   "purpose": "Preserve Gil Marer and Aweswell's attributed split-credit/NPL/notarial-document allegation as ALG-NPL-019; reconstruct the original financial package and the Bankia-SAREB-PH122-CAM asset lane across Concurso 36/2012 and Arrecife execution; test document, balance, benefit, causation and actor-specific criminal-law propositions; and publish the controlled bilingual result.",
   "authorization": {
     "date": "2026-08-26",
@@ -116,20 +116,49 @@
   ],
   "deletions": [],
   "remote_branch": "codex/credit-multiple-lives-criminal-360-20260826",
-  "remote_snapshot_commit": null,
-  "remote_branch_head": null,
-  "published_tree_sha": null,
+  "remote_snapshot_commit": "b5a93b95d7cf119f7e744c3e03c2452dff5d6382",
+  "remote_branch_head": "b5a93b95d7cf119f7e744c3e03c2452dff5d6382",
+  "published_tree_sha": "f240f8f3715cdcbd0274b1df4defee7dae62407c",
   "pull_request": {
-    "number": null,
-    "url": null,
-    "state": "NOT_OPENED"
+    "number": 1067,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1067",
+    "state": "MERGED"
   },
-  "merge_sha": null,
+  "merge_sha": "3cece6dbb923ba576f154c8fd4c34c0c2570c9df",
   "deployment_evidence": {
     "provider": "GitHub Pages",
-    "status": "NOT_DEPLOYED",
-    "verification_query": null,
-    "route_sha256": {}
+    "status": "LIVE_VERIFIED",
+    "verification_query": "verify=3cece6db-final",
+    "pages_run_id": 32983373974,
+    "pages_run_number": 1145,
+    "pages_run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/32983373974",
+    "completed_at": "2026-08-26T14:59:36Z",
+    "route_sha256": {
+      "es/index.html": "026c31065802188e8d8f482fb20b05a11803365ebd6cc79c4b464ce81ffc5df9",
+      "es/reclamacion-caixabank-valencia/index.html": "fe36a7614398f34e2fd74bb0841a8bae22c7bcb8f67393215266de5b41c534cc",
+      "es/acreedor-de-registro/responsabilidad/index.html": "10ddd6d7d5e4500ed0a40b0b71d0eb3b4c1cb30ccd11b4a29b0afa1cb2961601",
+      "es/perimetro-ph122-cerberus-haya-bankia-externo/index.html": "ca298dd5afb2a49ac25aa5cdb162e906a49201696ed94cb1992389571f36241d",
+      "es/ingenieria-forense-criminal-sun-park/index.html": "436a04366178066ff4e14931cc8fda8358222d2bb04f1d820aee98f785527b04",
+      "es/implementacion-notarial-protocolo-457/index.html": "d50fb7eb2632ba3578e5a1456bc262655bdfbf28af5d4b7b1fa660a04ac8800f",
+      "es/dp-1956-2026/index.html": "fb99bb5131af30502755d1de5168b1d2d1456aee64f4ba926e21fc40a5a65167",
+      "es/actualizaciones/index.html": "4af46d867b122829c50c5d36f3209d091d3b7e35c83fda0a5a826ab4a4d98a02",
+      "es/pacto-comisorio-arquitectura-credito-titulo/index.html": "aae1d86bae20acb69370a35729d7f0b64b57646bb2dc70c5796214d8bce8b900",
+      "en/index.html": "da989769bbc2ced50984e06251edfcd41a8a536685cb5e9a4dad49eab0f9320a",
+      "en/caixabank-valencia-claim/index.html": "df09807112448e51933ec1892a0a632312f1905bd5726a2675a3c6bc939e09a7",
+      "en/lender-of-record/liability/index.html": "49d353a5442aa6027ffc9aeaae60a49e60cdef6b9518e8aae84bb4ab4723f78f",
+      "en/ph122-cerberus-haya-bankia-external-perimeter/index.html": "d78ec13719631e4917b8fc3ef3e8567e5635543782c4dbb8eb7f9fbe0648a988",
+      "en/sun-park-criminal-engineering-investigation/index.html": "3a7c20cd18cd7a4936c5ff3c9e6a9b855c83ae9594faed81c0997fb9465e5fdd",
+      "en/notarial-implementation-protocol-457/index.html": "ef1f6be33e47679212a7bd40d671b6302e82a35fc311bfe69c5ba7bf6b323afc",
+      "en/dp-1956-2026/index.html": "86a55766fd020a5f63a6a2c3b0000ed3c1ab477cffda55e65df562900ee32285",
+      "en/updates/index.html": "703f2be8d14122daae699d4c14c495a34f0e566a30edd8615e991e4904470e1b",
+      "en/pacto-comisorio-credit-to-title-architecture/index.html": "9da4b5cd3f6f88307a0f6c220baf5ed86a66b6d60a3a362f5edf6289625faa9f"
+    },
+    "supporting_asset_sha256": {
+      "assets/data/concurso36-complete-record-v1.json": "073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475",
+      "assets/data/criminal-engineering-investigation-v1.json": "d7dfba908af48c113e7aed7c948ed6f0d8c21c3f6bd4d874546d0c0e49eddf11",
+      "assets/case-information-architecture-20260819.js": "8b9fc6db7e10b5981079b3dfa8661d69ec11f332b791a7c695ff5f7f477eb016",
+      "assets/styles.css": "ba35caae5538ec74a6ee5b0e7f99063dd3242d28676d3f54a69002c222bd042f"
+    }
   },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/",
@@ -151,21 +180,32 @@
     "https://sbu001monterecco.github.io/por-derecho/en/updates/",
     "https://sbu001monterecco.github.io/por-derecho/en/pacto-comisorio-credit-to-title-architecture/"
   ],
-  "live_verification_evidence": [],
+  "live_verification_evidence": [
+    "PR 1067 merged at 3cece6dbb923ba576f154c8fd4c34c0c2570c9df; the merge tree f240f8f3715cdcbd0274b1df4defee7dae62407c exactly equals the independently reviewed publication tree.",
+    "GitHub Pages workflow run 32983373974 (run number 1145) completed successfully at 2026-08-26T14:59:36Z for the exact merge SHA.",
+    "Cache-busted public readback passed all 18/18 controlled Spanish and English routes with HTTP 200 and exact repository SHA-256 equality.",
+    "Spanish and English CaixaBank routes exposed ALG-NPL-019, their credit-procedural-lives anchors and the co-located NO HALLAZGO JUDICIAL / NOT A JUDICIAL FINDING limits.",
+    "Spanish and English Protocol 457 routes exposed the insolvency/Arrecife boundary and the separately controlled EUR 13,065,186.68 and EUR 400,000 figures.",
+    "Four changed supporting data/runtime/style assets were also read back byte-identically, including the 127-record catalogue hash 073c275627ec39326f84121001edcf393a692967cde30180eeefb691317b9475."
+  ],
   "deletion_record": {
-    "status": "NOT_DELETION_SAFE_UNTIL_MERGED_AND_LIVE_VERIFIED",
-    "reason": "The complete local package passed independent legal/editorial, research, privacy, preservation, structured-data, arithmetic and bilingual validation after reconciliation to current main, but still requires public branch push, PR/CI review, merge and exact GitHub Pages readback before implementation state is remotely recoverable without this thread.",
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "reason": "The authorized statement, allegation, unitary 360 analysis, bilingual publication, continuation prompt, manifest, controls, merge identifiers and exact live-readback hashes are publicly recoverable without this thread. Deletion safety records implementation continuity only: transfer economics, source accounting, complete instruments, actor-specific knowledge/use/benefit and single-satisfaction proof remain open, and no allegation is converted into a finding.",
+    "earned_at_utc": "2026-08-26T14:59:36Z",
+    "open_evidence_preserved": true,
     "email_sent": false,
     "gmail_draft_created": false
   },
   "validation": {
-    "status": "LOCAL_PASSED_PENDING_REMOTE_CI_MERGE_AND_LIVE_READBACK",
+    "status": "PASSED__MERGED_AND_LIVE_VERIFIED",
     "evidence": [
       "Independent legal/editorial review: GO after exact CP 250.1.7, CP 390/392/393, pre/post-1-Jul-2015 CP 259-261, CP 31 bis catalogue/date and CP 130.2 succession gates were applied.",
       "Independent research/evidence review: GO; transfer/sample limits, actor capacities, all amount arithmetic and twelve proposition source references verified.",
       "Post-rebase repository-preservation gate passed against current main cfe453e6451781356f66c23401b0753962ae7d33 with 2,871 tracked files and 510 bilingual HTML pages.",
       "Publication-integrity gate passed with all 64 package files inspected.",
-      "Audience experience passed for 510 HTML pages, 6,662 internal links and 1,108 public files."
+      "Audience experience passed for 510 HTML pages, 6,662 internal links and 1,108 public files.",
+      "PR 1067 merged at 3cece6dbb923ba576f154c8fd4c34c0c2570c9df with the exact reviewed tree f240f8f3715cdcbd0274b1df4defee7dae62407c.",
+      "GitHub Pages run 32983373974 succeeded; 18/18 controlled routes and four supporting assets returned HTTP 200 with exact source-byte SHA-256 equality."
     ],
     "completed": [
       "scripts/validate_credit_multiple_lives_360.py",
