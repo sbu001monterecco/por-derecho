@@ -4,8 +4,11 @@
   "owner": "Gil Marer / Por Derecho",
   "created_at": "2026-08-26T13:00:00Z",
   "source_base": "75cc0a1542a3cb7207f37e27198a4f139d1a64a5",
-  "current_state": "PR_OPEN",
+  "current_state": "LIVE_VERIFIED",
   "publication_pr": 1061,
+  "merge_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+  "merge_commit": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+  "deployed_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
   "purpose": "Publish a bilingual, non-fragmented April 2018–2019 ONA/Clubotel funded-exit evidence spine, connect it to Carlos Sanz, Daniel Irigoyen, Cuatrecasas, Clubotel personation and the ONA security package, and state Gil Marer's alleged criminal continuum through five separate private-actor lanes plus distinct Insolvency Administrator and Magistrate-Judge lanes.",
   "expected_routes": {
     "es": [
@@ -80,14 +83,147 @@
     "condition-by-condition closing ledger",
     "actor-specific knowledge and benefit evidence"
   ],
-  "required_verification": [
-    "compare branch with refreshed main before merge",
-    "review all changed paths for deletion or rename",
-    "validate ES/EN route parity",
-    "validate canonical and hreflang links",
-    "validate internal route targets",
-    "validate sitemap XML",
-    "run repository and publication-integrity workflows available on PR",
-    "verify exact merge SHA deployment and live affected routes"
+  "validation": {
+    "status": "CI_GREEN_LIVE_VERIFIED",
+    "evidence": [
+      "PR #1061 completed the relevant publication-integrity, audience-experience, privacy, statement/OSINT, complete-record, Cuatrecasas, lender-liability, criminal-engineering and AC-accountability validation lanes.",
+      "PR #1061 merged without deleting or renaming existing routes or evidence files.",
+      "GitHub Pages run 32973408689 (run 1140) completed successfully for exact merge SHA e2e6671339b0fe6b312089e1306f0988cc25d131.",
+      "The generated GitHub Pages artifact 9608487125 was downloaded and inspected; all nine critical ONA route markers were present."
+    ]
+  },
+  "validation_evidence": [
+    "PR #1061 completed the relevant publication-integrity, audience-experience, privacy, statement/OSINT, complete-record, Cuatrecasas, lender-liability, criminal-engineering and AC-accountability validation lanes.",
+    "PR #1061 merged without deleting or renaming existing routes or evidence files.",
+    "GitHub Pages run 32973408689 (run 1140) completed successfully for exact merge SHA e2e6671339b0fe6b312089e1306f0988cc25d131.",
+    "The generated GitHub Pages artifact 9608487125 was downloaded and inspected; all nine critical ONA route markers were present."
+  ],
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow": "pages build and deployment",
+    "run_id": 32973408689,
+    "run_number": 1140,
+    "status": "success",
+    "head_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+    "artifact_id": 9608487125,
+    "artifact_name": "github-pages",
+    "artifact_digest": "sha256:84ca7aa63f90c09e04aae891917269eeb37467d9e90a2bc8f81f6d7501f2e85f",
+    "verified_at": "2026-08-26T13:27:50Z"
+  },
+  "live_verification_evidence": {
+    "status": "PASS",
+    "verified_at": "2026-08-26T13:27:50Z",
+    "source_merge_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+    "pages_run_id": 32973408689,
+    "pages_run_number": 1140,
+    "artifact_id": 9608487125,
+    "artifact_digest": "sha256:84ca7aa63f90c09e04aae891917269eeb37467d9e90a2bc8f81f6d7501f2e85f",
+    "result": "9/9 critical ONA route markers present in the exact-SHA generated Pages artifact."
+  },
+  "live_verification": {
+    "verified_at": "2026-08-26T13:27:50Z",
+    "provider": "GitHub Pages",
+    "pages_run_id": 32973408689,
+    "pages_run_number": 1140,
+    "pages_conclusion": "success",
+    "source_merge_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+    "artifact_id": 9608487125,
+    "artifact_name": "github-pages",
+    "artifact_digest": "sha256:84ca7aa63f90c09e04aae891917269eeb37467d9e90a2bc8f81f6d7501f2e85f",
+    "artifact_head_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+    "sources": [
+      {
+        "type": "github_pages_workflow",
+        "run_id": 32973408689,
+        "run_number": 1140,
+        "head_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+        "conclusion": "success"
+      },
+      {
+        "type": "github_pages_artifact",
+        "artifact_id": 9608487125,
+        "artifact_name": "github-pages",
+        "head_sha": "e2e6671339b0fe6b312089e1306f0988cc25d131",
+        "digest": "sha256:84ca7aa63f90c09e04aae891917269eeb37467d9e90a2bc8f81f6d7501f2e85f"
+      }
+    ],
+    "routes": [
+      {
+        "path": "es/ona-hotels-salida-concurso-36-2012/index.html",
+        "marker": "ABRIL 2018–2019 · EXPLOTACIÓN + FINANCIACIÓN + SALIDA + PERSONACIÓN",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "en/ona-hotels-insolvency-exit-36-2012/index.html",
+        "marker": "APRIL 2018–2019 · OPERATION + FINANCE + EXIT + PERSONATION",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/index.html",
+        "marker": "ONA/Clubotel no era un postor rival: era una pieza de la salida financiada",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/index.html",
+        "marker": "ONA/Clubotel was not a rival bidder: it was part of the funded exit",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/index.html",
+        "marker": "La salida ONA como prueba de criminalidad alegada",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/index.html",
+        "marker": "The ONA exit as evidence of alleged criminality",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/index.html",
+        "marker": "Carlos Sanz pidió la información necesaria; el AC lo remitió al concurso",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/index.html",
+        "marker": "Clubotel intentó entrar en el concurso para hacer operativa su participación",
+        "status": "verified_in_exact_sha_pages_artifact"
+      },
+      {
+        "path": "es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/index.html",
+        "marker": "Cuatrecasas conocía y trabajaba dentro de la arquitectura ONA",
+        "status": "verified_in_exact_sha_pages_artifact"
+      }
+    ],
+    "artifact_marker_checks": {
+      "checked": 9,
+      "passed": 9,
+      "failed": 0,
+      "markers": [
+        "Spanish canonical ONA hub: ABRIL 2018–2019 · EXPLOTACIÓN + FINANCIACIÓN + SALIDA + PERSONACIÓN",
+        "English canonical ONA hub: APRIL 2018–2019 · OPERATION + FINANCE + EXIT + PERSONATION",
+        "Spanish unitary dossier: ONA/Clubotel no era un postor rival: era una pieza de la salida financiada",
+        "English unitary dossier: ONA/Clubotel was not a rival bidder: it was part of the funded exit",
+        "Spanish criminal matrix: La salida ONA como prueba de criminalidad alegada",
+        "English criminal matrix: The ONA exit as evidence of alleged criminality",
+        "Spanish Carlos/AC dossier marker",
+        "Spanish Clubotel/Daniel dossier marker",
+        "Spanish Cuatrecasas/debt dossier marker"
+      ]
+    },
+    "search_index_note": "Public search-engine snippets may remain stale after deployment and are not the deployment authority; the exact-SHA Pages run and generated artifact are the controlling verification evidence."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/ona-hotels-salida-concurso-36-2012/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ona-hotels-insolvency-exit-36-2012/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ona-hotels-salida-concurso-36-2012/carlos-sanz-administrador-concursal/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ona-hotels-insolvency-exit-36-2012/carlos-sanz-insolvency-administrator/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ona-hotels-salida-concurso-36-2012/clubotel-personacion-daniel-irigoyen/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ona-hotels-insolvency-exit-36-2012/clubotel-personation-daniel-irigoyen/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ona-hotels-salida-concurso-36-2012/cuatrecasas-certificacion-deuda-financiacion/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ona-hotels-insolvency-exit-36-2012/cuatrecasas-debt-certification-finance/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ona-hotels-salida-concurso-36-2012/test-penal-actores-adversos/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ona-hotels-insolvency-exit-36-2012/criminal-test-adverse-actors/"
   ]
 }
