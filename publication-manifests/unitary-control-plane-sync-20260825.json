@@ -3,15 +3,27 @@
   "publication_id": "unitary-control-plane-sync-20260825",
   "control_id": "PD-UNITARY-STATE-20260825-01",
   "control_date": "2026-08-25",
-  "current_state": "PR_OPEN",
-  "status": "prepared_in_pr",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "source_main_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
+  "publication_merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+  "verification_fix_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
   "purpose": "Synchronize repository, deployment, verification, identity-denominator, material-update and PR-reconciliation state without changing case merits.",
   "expected_routes": {
     "es": ["es/registro-identidad-materia/index.html", "es/actualizaciones/index.html"],
     "en": ["en/matter-identity-registry/index.html", "en/updates/index.html"]
   },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/registro-identidad-materia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/matter-identity-registry/",
+    "https://sbu001monterecco.github.io/por-derecho/es/actualizaciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/updates/",
+    "https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_UNITARY_STATE.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/material-updates-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-unitary-control-plane.xml",
+    "https://sbu001monterecco.github.io/por-derecho/robots.txt"
+  ],
   "assets": [
     "CURRENT_UNITARY_STATE.md",
     "ops/CURRENT_UNITARY_STATE.json",
@@ -23,24 +35,40 @@
     "scripts/validate_unitary_control_plane.py",
     ".github/workflows/verify-unitary-control-plane.yml"
   ],
+  "deployment_evidence": {
+    "pages_run_id": 32912074201,
+    "pages_run_number": 1119,
+    "head_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-25T23:44:01Z",
+    "completed_at": "2026-08-25T23:44:55Z"
+  },
+  "live_verification_evidence": {
+    "workflow": ".github/workflows/verify-unitary-control-plane.yml",
+    "workflow_run_id": 32912919872,
+    "workflow_run_number": 12,
+    "job_id": 98010526784,
+    "head_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
+    "source_publication_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+    "status": "completed",
+    "conclusion": "success",
+    "verified_at": "2026-08-25T23:56:02Z",
+    "checks": [
+      "Spanish identity route exact markers",
+      "English identity route exact markers",
+      "Spanish updates route exact markers",
+      "English updates route exact markers",
+      "structured unitary-state JSON control and 185 / 86 / 66 / 10 / 13 / 10 denominator",
+      "material-updates JSON",
+      "unitary-control-plane sitemap",
+      "robots declaration"
+    ]
+  },
   "preserved_concurrent_releases": [
     "Priority-actions programme merge f9d0a22305431eeb6405b70f3bc30e5ff5bae514 and clarification 2b4af225818940a6e83136e76cdc246a056096a6",
     "Prescription, damages and interim-relief recovery release ae22ca42c844813ff73220614ac150cd734d572e",
     "Prescription recovery deletion-safe closeout 64a0cdc321a9efaade59f5239f4d74729bf2d772"
-  ],
-  "changed_surfaces": [
-    "CURRENT_UNITARY_STATE.md",
-    "ops/CURRENT_UNITARY_STATE.json",
-    "ops/CURRENT_STATE.json",
-    "ops/PRODUCTION_STATUS.json",
-    "ops/PR_RECONCILIATION_LEDGER.json",
-    "assets/data/material-updates-v1.json",
-    "es/registro-identidad-materia/index.html",
-    "en/matter-identity-registry/index.html",
-    "sitemap-unitary-control-plane.xml",
-    "robots.txt",
-    "scripts/validate_unitary_control_plane.py",
-    ".github/workflows/verify-unitary-control-plane.yml"
   ],
   "historical_snapshots": [
     "archive/ops-snapshots/CURRENT_STATE_20260824.json",
@@ -49,20 +77,13 @@
   "identity_denominator": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
   "material_update_date": "2026-08-25",
   "publication_boundaries": [
-    "This synchronization does not create a new allegation, judicial finding, procedural outcome, claimant right or recovery quantum.",
-    "Repository main, Pages deployment and exact public readback are separate states.",
+    "This synchronization creates no new allegation, judicial finding, procedural outcome, claimant right or recovery quantum.",
+    "Repository main, Pages deployment and exact public readback remain separate states.",
     "Identity resolves identity only and does not transfer knowledge, intention, control, benefit, responsibility or liability.",
-    "Older state and production files are preserved byte-for-byte as historical snapshots before their public routing names are repointed.",
-    "PR #1016 is not merged stale; its unique source-graded delta is controlled for rebuild on current main.",
+    "Older state and production files remain preserved as historical snapshots and rollback evidence.",
+    "PR #1016 is not merged stale; its unique source-graded delta remains controlled for rebuild on current main.",
     "The priority-actions, prescription-recovery and deletion-closeout controls from current main are preserved."
   ],
-  "post_merge_verification": [
-    "Confirm Pages deployment completes against the merge SHA.",
-    "Confirm both identity pages expose 185 / 86 / 66 / 10 / 13 / 10 in source and visible DOM.",
-    "Confirm both update pages expose 25 August 2026 as the latest material date.",
-    "Confirm CURRENT_UNITARY_STATE.json, material-updates-v1.json, the new sitemap and robots declaration return HTTP 200 with exact markers.",
-    "Confirm the prescription-recovery sitemap remains declared.",
-    "Advance this manifest to LIVE_VERIFIED only after independent public readback."
-  ],
-  "next_package": "Rebuild PR #1016 owner/court-party unique delta on the post-merge current main."
+  "continuous_verification_rule": "The unitary validator and live verifier must rerun whenever the current unitary state, production state, material-update data, identity denominator, bilingual identity/update routes, sitemap, robots declaration, verifier or this manifest changes.",
+  "next_package": "Rebuild PR #1016 owner/court-party unique delta on current main, then add the source-proposition and platform-recovery ledgers."
 }
