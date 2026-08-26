@@ -33,11 +33,13 @@ python scripts/generate_operational_truth.py --live
 
 A deployment can legitimately lag `main`; that difference must be reported rather than hidden.
 
-### 3. Historical rollback truth — append-only
+### 3. Historical rollback and release truth — append-only
 
 `ops/LAST_KNOWN_GOOD.json` is an explicitly historical, positively verified rollback anchor. It is not current merely because it was once live.
 
-`ops/RELEASE_LEDGER.json` is append-only. Existing release entries may not be silently removed or rewritten. Corrections are appended and identify the affected `release_id`.
+`ops/RELEASE_LEDGER.json` is append-only. Existing release entries may not be silently removed or rewritten. Corrections are appended and identify the affected release or field.
+
+`current_at_observation: true` means that a release was current **at the time of that release observation**. Because historical release entries are immutable, more than one historical record may retain that value. `latest_observation_release_id` is the controlling pointer to the latest observed release and must resolve to the Pages SHA in `ops/PRODUCTION_STATUS.json`.
 
 ### 4. Specialist case and evidence truth
 
@@ -60,6 +62,8 @@ Refresh the last observation when any configured threshold is exceeded:
 
 The scheduled/manual workflow fails when drift exceeds policy. A normal push produces a live report but does not falsely rewrite repository state after the merge.
 
+A scheduled drift failure is therefore an action signal, not automatically a validator defect. The response is a narrow post-merge observation refresh, not an increase in thresholds merely to turn the check green.
+
 ## Validation
 
 ```bash
@@ -73,8 +77,9 @@ The validator enforces:
 - identity and professional-register counts;
 - consistency with the LIVE_VERIFIED unitary specialist state;
 - successful observed Pages deployment without overclaiming route verification;
+- agreement between the current-state deployment observation and production status;
 - rollback-anchor inclusion in the append-only ledger;
-- chronological, unique release records;
+- chronological, unique release records and an exact latest-observation pointer;
 - preservation of the former PR #922 snapshots; and
 - append-only protection when a base ledger exists.
 
@@ -84,11 +89,11 @@ The validator enforces:
 2. Query open PR count and the latest successful Pages run for that exact SHA.
 3. Run the live generator and inspect drift.
 4. Update the last-observation fields and append a release record where appropriate.
-5. Never delete or rewrite an existing release-ledger entry.
+5. Never delete or rewrite an existing release-ledger entry; advance `latest_observation_release_id` instead.
 6. Run structural and specialist validators.
 7. Open a narrow PR.
 8. Recheck branch freshness immediately before merge.
-9. After merge, query the new `main` and Pages run; record that later observation in a subsequent controlled update rather than claiming the pre-merge parent SHA remains current.
+9. After merge, query the new `main` and Pages run. If the pre-merge parent observation is outside policy, make a second narrow observation-refresh PR rather than claiming the parent remains current.
 
 ## Boundaries
 

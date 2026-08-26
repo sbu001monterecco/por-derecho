@@ -4,7 +4,8 @@
   "control_date": "2026-08-26",
   "append_only": true,
   "coverage": "Seeded with the controlling rollback anchor and the principal observed releases from 24–26 August 2026. Earlier release backfill remains open.",
-  "ordering": "Records are chronological by effective_at. Existing records must not be silently removed or rewritten; corrections are appended below and identify the affected release_id.",
+  "ordering": "Records are chronological by effective_at. Existing records must not be silently removed or rewritten; corrections are appended below and identify the affected release_id. current_at_observation records that a release was current at its own observation time, so multiple historical entries may retain true; latest_observation_release_id identifies the latest observation.",
+  "latest_observation_release_id": "operational-truth-v2-postmerge-observation-20260826-pr1040",
   "releases": [
     {
       "release_id": "five-actor-preservation-guard-20260824-pr922",
@@ -121,7 +122,29 @@
       "live_verification_run_id": null,
       "scope": "Recorded the unitary control plane as LIVE_VERIFIED and preserved the exact prior readback evidence.",
       "limits": "The served SHA has a successful Pages deployment; its exact route-content readback is not separately recorded."
+    },
+    {
+      "release_id": "operational-truth-v2-postmerge-observation-20260826-pr1040",
+      "source_sha": "35346c34ec15a77d7585122ec08add6bcb16fabc",
+      "source_tree_sha": "c8fb4c201b0cfca50d67bcfaabcf988309eaefa9",
+      "pull_request": 1040,
+      "state": "DEPLOYED_BUILD_SUCCESS",
+      "website_content_changed": false,
+      "current_at_observation": true,
+      "rollback_eligible": false,
+      "effective_at": "2026-08-26T00:33:47Z",
+      "pages_run_id": 32915550874,
+      "live_verification_run_id": null,
+      "scope": "Operational-truth v2 release separating current repository truth, observed deployment truth, historical rollback truth and specialist case/evidence state.",
+      "limits": "A successful Pages build is recorded. No exact route-content readback is claimed for this audit-only release."
     }
   ],
-  "corrections": []
+  "corrections": [
+    {
+      "correction_id": "release-ledger-current-observation-semantics-20260826",
+      "effective_at": "2026-08-26T05:50:53Z",
+      "affected_field": "releases[].current_at_observation",
+      "correction": "The field records that a release was current at its own observation time. Historical true values remain immutable; latest_observation_release_id identifies the latest observed release."
+    }
+  ]
 }
