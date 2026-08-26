@@ -8,6 +8,7 @@
   "owner": "Por Derecho / Project Sun Rock",
   "source_main_sha": "64a0cdc321a9efaade59f5239f4d74729bf2d772",
   "publication_merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+  "merge_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
   "verification_fix_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
   "purpose": "Synchronize repository, deployment, verification, identity-denominator, material-update and PR-reconciliation state without changing case merits.",
   "expected_routes": {
@@ -35,6 +36,27 @@
     "scripts/validate_unitary_control_plane.py",
     ".github/workflows/verify-unitary-control-plane.yml"
   ],
+  "validation": {
+    "evidence": [
+      {
+        "type": "source_validator",
+        "workflow": ".github/workflows/verify-unitary-control-plane.yml",
+        "workflow_run_id": 32912919872,
+        "job_id": 98010526784,
+        "head_sha": "4088f7ffff80df788137ce91328b11fe3de6b563",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "type": "pages_deployment",
+        "workflow": "pages build and deployment",
+        "workflow_run_id": 32912074201,
+        "head_sha": "c43e518150e9b8535b8829971d7cd36045c99b5f",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
   "deployment_evidence": {
     "pages_run_id": 32912074201,
     "pages_run_number": 1119,
