@@ -16,7 +16,7 @@ This protocol corrects four recurring forms of fragmentation:
 1. treating 7 June 2018 as an isolated access incident instead of a possible transfer of effective hotel-wide control;
 2. treating CAM as an outsider that appeared only after acquiring the credit or formal title, without testing its attributed physical presence, access activity and project preparation before 7 June;
 3. treating the pre-existing Monte Lanza/Molina-associated dissident, Community and administration machinery as unrelated history, instead of testing whether CAM knowingly adopted, used, escalated or benefited from mechanisms already operating since 2011 or earlier; and
-4. separating that control history from Lava Verde, Club Sei, Meeting Point/FTI, RICPE, HNT, MYND Yaiza and Meeting Point Spain proceeding 357/2024.
+4. separating that control history from Lava Verde, Club Sei, Meeting Point/FTI, RICPE, HNT, MYND Yaiza and the three-debtor Meeting Point proceeding 357/2024.
 
 This is not a direction to state a conspiracy or automatic succession of liability. It is a direction to test **continuity of mechanism, knowledge, adoption, use, escalation, benefit, disclosure, preservation and non-restitution**.
 
@@ -172,11 +172,11 @@ For every step identify:
 
 Public marketing may be documented while the underlying contractual architecture remains undisclosed. Use **“clandestine”** only for a relationship, instruction or record where concealment from an entitled person or competent process is evidenced—not merely because a public-facing brand or listing was later removed.
 
-### Proposition 5 — Meeting Point Spain 357/2024 is a preservation and disclosure node
+### Proposition 5 — the three-debtor Meeting Point proceeding 357/2024 is a preservation and disclosure node
 
 Ask:
 
-> **Did Meeting Point Spain or another Meeting Point/FTI entity hold Sun Park/Lava Verde/Club Sei contracts, proposals, room inventory, reservations, distribution, revenue, compliance, claim or preservation records, and were any such records or contingent liabilities disclosed, preserved or examined in proceeding 357/2024?**
+> **Did Meeting Point Hotelmanagement (Canaries), Meeting Point Spain, Meeting Point Investment or another Meeting Point/FTI entity hold Sun Park/Lava Verde/Club Sei contracts, proposals, room inventory, reservations, distribution, revenue, compliance, claim or preservation records, and were any such records or contingent liabilities disclosed, preserved or examined in proceeding 357/2024?**
 
 Reconstruct:
 
@@ -184,9 +184,9 @@ Reconstruct:
 - the 2020 contemporaneous allegations and witnesses concerning management, sales and distribution;
 - public Club Sei affiliation and OTA/distribution evidence;
 - FTI/Meeting Point compliance report 2024-94 and June–July 2024 preservation notices;
-- the 18 September 2024 opening/communication in 357/2024;
-- the signed 24 October 2024 act attributed by the Registry to Alberto López Villarrubia;
-- the signed 18 February 2025 act attributed to Guillermo Fernández García;
+- the joint 23 July 2024 filing by the three debtors and 31 July deemed communication recorded in signed Auto 97/2025;
+- the later 18 September 2024 decree/effects-stage act and the 24 October extension notices attributed by the Registry to Alberto López Villarrubia, while the signed 24 October original remains open;
+- the 23 January 2025 Auren request by the same three debtors and the signed 18 February 2025 appointment issued by Guillermo Fernández García;
 - reparto, substitution, reinforcement, reassignment or Registry-correction records;
 - Auren’s appointment, mandate, data requests, report and working-file index;
 - debtor schedules of litigation, contingent claims, records and liabilities;
@@ -321,7 +321,7 @@ At minimum:
 20. **January–February 2022** — two 26-Jan clarification Autos (no new award), testimony/finality, deed and formal-title implementation threshold.
 21. **2022 onward** — HNT, MYND, finance/incentives and continuing benefit/harm.
 22. **June–July 2024** — Meeting Point/FTI compliance notice and preservation requests.
-23. **September 2024–2025** — Meeting Point Spain 357/2024 and the two judicial attributions.
+23. **23–31 July 2024 onward** — the joint three-debtor Meeting Point proceeding 357/2024; the later 18 September and 24 October procedural stages; and the signed 18 February 2025 Auto appointing Auren, while the original signed 24 October act and exact allocation remain open.
 24. **2026** — current criminal, appellate, supervisory and accountability routes.
 
 For each threshold state separately:
@@ -402,7 +402,7 @@ Actively test:
 - clients left for independent operational reasons;
 - pilots/projects occurred only with valid owner consent;
 - Meeting Point Spain was not the contracting entity and held no relevant records;
-- the two judges in 357/2024 resulted from ordinary assignment/substitution/Registry error;
+- the differing judicial attributions in 357/2024 resulted from ordinary assignment, substitution or Registry error;
 - later title and operation did not rely on earlier control.
 
 Record supporting evidence with equal prominence.

@@ -161,7 +161,7 @@ Search and reconcile:
 - the three-level LAJ supervisory chain registered on 15 August 2026;
 - ICALPA DIP 79/2026 and DIP 80/2026;
 - January 2026 Policía Nacional / Guardia Civil registrations, while preserving that an assigned police proceeding or atestado is not yet located in the controlled repository;
-- Meeting Point Spain preconcurso 357/2024, Mercantil nº 3, only as a downstream-operator/judicial-traceability context unless a primary Sun Park asset or transaction bridge is established.
+- Three-debtor Meeting Point proceeding 357/2024, Mercantil nº 3: signed Auto 97/2025 fixes the 23/31-Jul start and 18-Feb Auren appointment; treat it only as a downstream-operator/judicial-traceability context unless a primary Sun Park asset or transaction bridge is established; the signed 24-Oct original/allocation remains open.
 
 ### Tenerife-origin or Tenerife-administered tracks
 

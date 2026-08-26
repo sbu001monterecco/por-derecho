@@ -12,6 +12,10 @@ on:
       - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
       - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
       - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cronologia-control-material-sun-park/**'
+      - 'en/sun-park-material-control-chronology/**'
+      - 'es/cuaderno-juridico/index.html'
+      - 'en/legal-notebook/index.html'
       - '.github/workflows/verify-meeting-point-final-propagation-live.yml'
   workflow_dispatch:
 
@@ -45,6 +49,8 @@ jobs:
           const base = 'https://sbu001monterecco.github.io/por-derecho';
           const sha = process.env.GITHUB_SHA || 'manual';
           const targets = [
+            { key: 'fti-es', url: `${base}/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['SEPI autorizó 31 millones de euros para Meeting Point, no 56 millones.', 'Cuentas anuales FASEE 2023 de SEPI', 'Hotelmanagement 21 millones', 'Meeting Point Spain 10 millones participativos', 'tres deudores'] },
+            { key: 'fti-en', url: `${base}/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['SEPI authorised €31 million for the Meeting Point operation—not €56 million.', 'SEPI FASEE 2023 annual accounts', 'Hotelmanagement €21 million', 'Meeting Point Spain €10 million participating', 'three-debtor'] },
             { key: 'lava-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'No'] },
             { key: 'lava-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'do not'] },
             { key: '357-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['Límite 357/2024', 'tres deudores', 'Auren', 'impropiedad'] },
@@ -53,6 +59,10 @@ jobs:
             { key: 'causation-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Criminal-causation allegation, not a judgment', 'caused, conditioned and enabled', 'Romera / CAM statement boundary'] },
             { key: 'chronology-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['23 JUL 2024', '31 JUL 2024', 'Auto 97/2025'] },
             { key: 'chronology-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['23 JUL 2024', '31 JUL 2024', 'Auto 97/2025'] },
+            { key: 'material-chronology-es', url: `${base}/es/cronologia-control-material-sun-park/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['357/2024: custodia y revelación de tres deudores', '23 julio 2024', 'Auto 97/2025', '24 octubre'] },
+            { key: 'material-chronology-en', url: `${base}/en/sun-park-material-control-chronology/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['357/2024: three-debtor custody and disclosure', '23 July 2024', 'Auto 97/2025', '24 October'] },
+            { key: 'notebook-es', url: `${base}/es/cuaderno-juridico/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Tres deudores. Un procedimiento. Trazabilidad judicial parcialmente resuelta.', 'Auto 97/2025', '24 de octubre'] },
+            { key: 'notebook-en', url: `${base}/en/legal-notebook/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Three debtors. One proceeding. A partly resolved judicial trail.', 'Auto 97/2025', '24 October'] },
             { key: 'takeover-es', url: `${base}/es/toma-control-sun-park-7-junio-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] },
             { key: 'takeover-en', url: `${base}/en/sun-park-takeover-7-june-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] }
           ];

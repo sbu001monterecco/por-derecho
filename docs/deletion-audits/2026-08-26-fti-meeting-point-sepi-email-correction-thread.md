@@ -49,7 +49,7 @@ No email, resend, correction, forward, filing or other person-directed action is
 
 ### Control, marketing and adjudication
 
-Gil Marer and Aweswell allege that disputed control and exclusion did not merely precede the 2022 adjudication: they allegedly disabled hotel operation, income and the funded-exit route; enabled physical project work, pilots and pre-title marketing; and created access, information, valuation and competitive asymmetries that materially caused, conditioned and enabled the later adjudication and downstream benefit.
+Gil Marer alleges, and Project Sun Rock preserves as an investigative model, that disputed control and exclusion did not merely precede the 2022 adjudication: they allegedly disabled hotel operation, income and the funded-exit route; enabled physical project work, pilots and pre-title marketing; and created access, information, valuation and competitive asymmetries that materially caused, conditioned and enabled the later adjudication and downstream benefit.
 
 This is a party allegation and evidence-based investigative model, not a final criminal or judicial finding. Actor-specific knowledge, act/omission, intent and causal effect remain separately provable. Contrary and limiting evidence remains visible: Club Sei was postponed; no opening, completed booking, guest stay, payment, commission or revenue is proved; the exact contract/entity/inventory/authority remain missing; and the 279-room/54-apartment difference requires reconciliation rather than automatic falsity.
 
@@ -96,7 +96,17 @@ No defect, bounce or deletion request authorises transmission. Any later outboun
 
 **PARTIAL — NOT ALL IS^**
 
-The exact three Spanish debtor entities, AUREN REESTRUCTURACIONES SLP and proceeding 357/2024 are not yet all reconciled to immutable CAEPR records. Current perimeter labels cannot be promoted into exact legal-person carets. The website corrections therefore do not force `^` punctuation. Identity-resolution completion remains a separate additive task; absence of a caret does not negate the signed-order identity evidence.
+Bounded caret audit scope: the four exact entities and one proceeding newly material to the corrected 357/2024 account. Unique-reference denominator: **5**. `CARET_CONFIRMED`: **0**. Coverage: **0/5 (0%)**.
+
+`CARET_PENDING` exceptions:
+
+1. Meeting Point Hotelmanagement (Canaries), S.L.U.;
+2. Meeting Point Spain, S.L.U. — including reconciliation with the `Meeting Point Spain, S.L.` source literal in SEPI's accounts;
+3. Meeting Point Investment, S.L.U.;
+4. AUREN REESTRUCTURACIONES SLP; and
+5. proceeding 357/2024 — legacy `GC-CONT-025` exists in the Proceedings Master Register, but no immutable CAEPR mapping is present.
+
+None of these exact objects appears as an admitted immutable record in the current `matter-identity` registry parts or `ops/CANONICAL_ENTITY_NAMES.json`. The website corrections therefore do not force `^` punctuation. Other names on the affected pages are outside this bounded caret run; no page-wide or repository-wide `all is^` claim is made. Identity-resolution completion remains a separate additive task, and absence of a caret does not negate the signed-order identity evidence.
 
 ## Website/repository surfaces updated on the branch
 
@@ -106,6 +116,10 @@ The exact three Spanish debtor entities, AUREN REESTRUCTURACIONES SLP and procee
 - `/es/lava-verde-club-sei-meeting-point/`
 - `/en/legal-notebook/meeting-point-357-2024-judicial-traceability/`
 - `/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/`
+- `/en/sun-park-material-control-chronology/`
+- `/es/cronologia-control-material-sun-park/`
+- `/en/legal-notebook/`
+- `/es/cuaderno-juridico/`
 - dynamic 357/2024 cross-link boundary.
 
 The German compatibility route remains a `noindex` redirect to English. It is preserved to avoid breaking previously transmitted links, but it must not be described as a German dossier.
@@ -132,7 +146,7 @@ The German compatibility route remains a `noindex` redirect to English. It is pr
 5. Push this branch and open a PR only with current publication authority.
 6. Merge only after required checks pass.
 7. Verify the exact merge SHA in the Pages deployment.
-8. Read back the six ES/EN routes and the German compatibility route.
+8. Read back the ten ES/EN routes and the German compatibility route.
 9. Update deployment evidence and this audit from `NOT DELETION-SAFE` to `DELETION-SAFE WITH OPEN EVIDENCE`.
 
 ## Deletion-safety dimensions

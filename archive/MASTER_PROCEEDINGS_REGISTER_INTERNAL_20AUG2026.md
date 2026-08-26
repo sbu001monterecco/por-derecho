@@ -107,7 +107,7 @@ The existing Lanzarote administrative inventory remains incorporated by referenc
 |---|---|---|---|
 | REG-POL-001 | Policía Nacional / Guardia Civil Las Palmas — Jan 2026 submissions | REGISTERED_ONLY | Do not describe as investigations until assigned diligencias/atestado/unit is identified |
 | TECH-001 | 22/000036/7800 / COAGC 2315 | TECHNICAL_REFERENCE_NOT_PROCEEDING | Maintain as technical/project identifier until a professional file is established |
-| CTX-GC-001 | Mercantil nº 3 Las Palmas — Meeting Point Spain **357/2024** | CONTEXTUAL | Keep only as downstream/operator context unless a primary bridge to Sun Park merits is proved |
+| CTX-GC-001 | Mercantil nº 3 Las Palmas — three-debtor Meeting Point **357/2024** | CONTEXTUAL | Signed Auto 97/2025 fixes the joint 23/31-Jul start and 18-Feb Auren appointment; keep as downstream/operator context unless a primary bridge to Sun Park merits is proved; signed 24-Oct original/allocation remains open |
 | CTX-GC-002 | Inparsa / Hoteles Beatriz — **354/2024** and related criminal/prevaricación analysis | COMPARATOR / CONTEXTUAL | Do not import into direct Sun Park proceeding count |
 
 ## Maintenance prompt — mandatory future scan

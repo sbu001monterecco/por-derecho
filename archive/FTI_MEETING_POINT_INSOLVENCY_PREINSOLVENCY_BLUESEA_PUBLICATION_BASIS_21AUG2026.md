@@ -6,13 +6,13 @@
 
 Create a source-controlled public account of the documentary chain linking:
 
-`SUN PARK · C/ JANUBIO 3 → LAVA VERDE → CLUB SEI LANZAROTE / MEETING POINT / FTI → GERMAN FTI/MEETING POINT INSOLVENCIES → SPANISH MEETING POINT 357/2024 (ARTS. 583 ET SEQ. TRLC) → PORTOBELLO / BLUESEA CONTROL CHANGE`
+`SUN PARK · C/ JANUBIO 3 → LAVA VERDE → CLUB SEI LANZAROTE / MEETING POINT / FTI → GERMAN FTI/MEETING POINT INSOLVENCIES → SPANISH THREE-DEBTOR MEETING POINT 357/2024 (ARTS. 583 ET SEQ. TRLC) → PORTOBELLO / BLUESEA CONTROL CHANGE`
 
 The purpose is **maximum evidential pressure without collapsing distinct legal persons or converting notice, investigation, insolvency, restructuring or acquisition into proof of wrongdoing**.
 
 The central question is now a finite records-and-custody question:
 
-> **What Sun Park / Lava Verde / Club Sei contracts, room inventory, booking/distribution data, approvals, communications, invoices, commissions, revenues, compliance files and preservation records existed; which legal person held them; what was reviewed in the FTI insolvency perimeter; what was preserved or disclosed in Meeting Point Spain 357/2024; and what passed through the later Portobello/BLUESEA transaction and integration?**
+> **What Sun Park / Lava Verde / Club Sei contracts, room inventory, booking/distribution data, approvals, communications, invoices, commissions, revenues, compliance files and preservation records existed; which legal person held them; what was reviewed in the FTI insolvency perimeter; what was preserved or disclosed in the three-debtor Meeting Point proceeding 357/2024; and what passed through the later Portobello/BLUESEA transaction and integration?**
 
 ---
 
@@ -248,10 +248,15 @@ It is **not** proof of concealment, fraudulent restructuring or judicial impropr
 
 ## 7A. SEPI / FASEE — verified amount, separate operations and open source-and-use
 
-SEPI's 27 June 2022 record identifies **EUR 31 million** for Meeting Point Spain and Meeting Point Hotelmanagement (Canaries):
+SEPI's 27 June 2022 release identifies **EUR 31 million** for the group-level Meeting Point operation:
 
 - **EUR 20.7 million participating loan**; and
 - **EUR 10.3 million ordinary loan**.
+
+SEPI's 2023 FASEE annual accounts—not the group-level press release—supply the entity allocation (amounts printed in EUR thousands):
+
+- Meeting Point Hotelmanagement (Canaries), S.L.U.: **EUR 10.7 million participating** and **EUR 10.3 million ordinary**; and
+- Meeting Point Spain, S.L. (source literal; Auto 97/2025 separately uses S.L.U.): **EUR 10 million participating**.
 
 The reported **EUR 56 million** is the arithmetic aggregate of two separate authorised operations: Meeting Point EUR 31 million plus BLUESEA EUR 25 million. It is not one Meeting Point loan. BLUESEA later renounced its separately authorised support; do not treat that EUR 25 million as drawn Meeting Point finance.
 
@@ -326,7 +331,7 @@ Use this structure publicly:
 
 ↓
 
-`SPAIN 2024–25 — MEETING POINT SPAIN 357/2024 / ARTS. 583 ET SEQ. / AUREN`
+`SPAIN 2024–25 — THREE MEETING POINT DEBTORS / 357/2024 / ARTS. 583 ET SEQ. / AUREN`
 
 ↓
 
@@ -354,8 +359,10 @@ Use this structure publicly:
 | FINKENHOF | procedural legal representative in German court orders | Spanish investigation role unless separately evidenced |
 | Axel W. Bierbach | FTI administrator; direct 10 July email identifying Abegg as appointed by him for Spanish-entity clarification | acceptance/substantiation of allegations |
 | Georg Abegg / Rödl | Spanish lawyer route identified in direct correspondence; investigation/follow-up meetings recorded | insolvency administrator status; adjudicative finding |
-| Meeting Point Spain S.L.U. | debtor/restructuring perimeter 357/2024; CNMC acquired target | same entity as German Meeting Point debtors |
-| Auren | restructuring expert appointed in 357/2024 per registry material | proof it saw Sun Park records absent workfile evidence |
+| Meeting Point Hotelmanagement (Canaries), S.L.U. | joint debtor/applicant in 357/2024; named FASEE beneficiary in SEPI annual accounts | identity with a German debtor or proven Sun Park counterparty |
+| Meeting Point Spain S.L.U. | joint debtor/applicant in 357/2024; CNMC acquired target | same entity as German Meeting Point debtors |
+| Meeting Point Investment S.L.U. | joint debtor/applicant in 357/2024 | proven Sun Park contract, custody or benefit |
+| Auren | restructuring expert appointed for all three debtors by signed Auto 97/2025 | proof it saw Sun Park records absent workfile evidence |
 | Portobello / BLUESEA | CNMC-recorded acquisition of exclusive control of MPS and subsidiaries; later buyer-side closing acknowledgment | liability for predecessor conduct; receipt of every historical record |
 | Lars Creutzmann | managing-director name in German FTI/Meeting Point court orders; recipient of 3 Jan 2025 Spanish-perimeter preservation notice | personal knowledge of every Sun Park fact without proof |
 
@@ -373,7 +380,7 @@ The public page should demand identifiable categories, not insinuate destruction
 6. FTI compliance file **2024-94**, including intake, triage, document index, investigator instructions, findings/status and closure/transfer record.
 7. MHBK / insolvency data-room and handover records showing what Spanish-entity material was requested, received, preserved or transferred.
 8. Rödl engagement/mandate from Bierbach, requests for documents, interview notes, work product or status communications, subject to applicable privilege/confidentiality rules.
-9. Meeting Point Spain **357/2024** communication and annexes, litigation/contingency schedules, Auren mandate, data requests, report and workpaper index.
+9. Three-debtor Meeting Point **357/2024** communication and annexes, litigation/contingency schedules, Auren mandate, data requests, report and workpaper index.
 10. Portobello/BLUESEA due-diligence schedules, data-room indices and historic-record handover lists relevant to Meeting Point Spain and Club Sei/Lanzarote.
 11. Retention, migration, deletion and backup logs capable of showing whether records were preserved across the 2024–26 handoffs.
 
@@ -391,7 +398,7 @@ The public page should demand identifiable categories, not insinuate destruction
 - distinct German FTI and Meeting Point insolvency proceedings and their named administrators/lawyers/directors.
 - FTI compliance case 2024-94 and a documented administrator-directed Spanish investigation route in July 2024.
 - the 3 January 2025 targeted preservation notice and its recipient/copy perimeter.
-- the separate Meeting Point Spain 357/2024 restructuring/pre-insolvency node.
+- the separate three-debtor Meeting Point 357/2024 restructuring/pre-insolvency node.
 - CNMC authorisation of Portobello/BLUESEA acquisition of exclusive control of Meeting Point Spain and subsidiaries.
 - later buyer-side acknowledgement that the Labranda/Meeting Point Hotels transaction closed.
 
@@ -418,7 +425,7 @@ English:
 
 Cross-link to:
 - Lava Verde → Club Sei → Meeting Point dossier.
-- Meeting Point Spain 357/2024 judicial traceability dossier.
+- three-debtor Meeting Point 357/2024 judicial traceability dossier.
 - 7 June 2018 material-control dossier.
 - FTI/MHBK official insolvency portal and court orders.
 - CNMC C/1549/25.

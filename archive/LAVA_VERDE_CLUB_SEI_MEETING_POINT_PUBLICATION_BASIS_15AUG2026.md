@@ -9,7 +9,7 @@ The public record supports a **pre-title project and commercialisation sequence*
 
 The current controlled proposition is:
 
-> Acosta Matos publicly presents Lava Verde at C/ Janubio 3 as a 279-room project owned by Construcciones Acosta Matos S.A.; public tourism-industry reporting announced Club Sei Lanzarote within Meeting Point Hotels/FTI; an archived February 2020 consumer listing offered Club Sei Lanzarote in Playa Blanca; and a direct supplier communication links Sun Park to Lava Verde and confirms a physical pilot installed before the 2022 LPB adjudication. These facts establish project and commercial preparation before formal LPB title. They do not yet identify the exact Meeting Point contracting entity, lawful authority over all represented rooms, completed bookings, revenue or treatment of the relationship in Meeting Point Spain proceeding 357/2024.
+> Acosta Matos publicly presents Lava Verde at C/ Janubio 3 as a 279-room project owned by Construcciones Acosta Matos S.A.; public tourism-industry reporting announced Club Sei Lanzarote within Meeting Point Hotels/FTI; an archived February 2020 consumer listing offered Club Sei Lanzarote in Playa Blanca; and a direct supplier communication links Sun Park to Lava Verde and confirms a physical pilot installed before the 2022 LPB adjudication. These facts establish project and commercial preparation before formal LPB title. They do not yet identify the exact Meeting Point contracting entity, lawful authority over all represented rooms, completed bookings, revenue or treatment of the relationship in the three-debtor Meeting Point proceeding 357/2024.
 
 ## Public evidence bridge
 
@@ -26,7 +26,7 @@ The current controlled proposition is:
 | LV-09 | Signed Auto, Concurso 36/2012, 24 Feb 2021 | VERIFIED PRIMARY | CAM stated ownership of 54 apartments within mixed LPB/third-party complex; Aweswell alleged works and security-blocked access | whole-hotel CAM title; final liability determination; exact project authority |
 | LV-10 | 2024 FTI/Meeting Point compliance/preservation correspondence | PRIMARY COMMUNICATION / PARTY NOTICE | notice and preservation questions were sent into the FTI/Meeting Point compliance/insolvency perimeter | acceptance of allegations; investigation result; disclosure into 357/2024 |
 | LV-11 | REGAGE26e00003609135 and REGAGE26e00003629560, 15 Jan 2026 | VERIFIED PROCEDURAL | preservation requests concerning Sun Park/Meeting Point/Club Sei were registered as received by Fiscalía Provincial de Las Palmas | opening of investigation; preservation actually executed; merits finding |
-| LV-12 | Public Insolvency Register, Meeting Point Spain 357/2024 | VERIFIED PROCEDURAL / PUBLIC REGISTER | proceeding exists; archived notices attribute 24 Oct 2024 act to Alberto López Villarrubia and 18 Feb 2025 Auren appointment to Guillermo Fernández García | who personally signed without original; reason for succession; Sun Park record in proceeding; impropriety |
+| LV-12 | Signed Auto 97/2025 + Public Insolvency Register, three-debtor Meeting Point 357/2024 | VERIFIED PROCEDURAL / SIGNED ORDER + PUBLIC REGISTER | signed Auto records the three joint debtors, 23-Jul filing, 31-Jul deemed communication, 23-Jan Auren request and Guillermo Fernández García's signed 18-Feb appointment; archived notices attribute the later 24-Oct extension to Alberto López Villarrubia | signed 18-Sep/24-Oct originals and allocation trail; Sun Park record in any debtor/Auren file; impropriety |
 
 ## 279 rooms versus 54 apartments
 
@@ -53,14 +53,14 @@ Do not silently equate:
 
 The exact contracting and custodial entity must come from contracts, correspondence, CRM, booking systems, invoices, debtor schedules and restructuring records.
 
-## Meeting Point Spain 357/2024
+## Three-debtor Meeting Point 357/2024
 
 The correct public relevance is **preservation and disclosure**, not guilt.
 
 Questions:
 
-1. Did Meeting Point Spain hold Sun Park/Lava Verde/Club Sei contracts, proposals, allotments, booking records, invoices, claims or compliance material?
-2. Were any such records or contingent liabilities in the Article 583 communication or related debtor schedules?
+1. Did Meeting Point Hotelmanagement (Canaries), Meeting Point Spain, Meeting Point Investment or another Meeting Point/FTI entity hold Sun Park/Lava Verde/Club Sei contracts, proposals, allotments, booking records, invoices, claims or compliance material?
+2. Were any such records or contingent liabilities in the joint Article 583 communication or any of the three debtor schedules?
 3. What did Auren request, receive, analyse or preserve?
 4. Were the 2024 compliance/preservation materials passed into the Spanish restructuring perimeter?
 5. What record explains the successive judicial attributions?

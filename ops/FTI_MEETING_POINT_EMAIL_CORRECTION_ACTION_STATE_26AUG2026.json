@@ -115,7 +115,18 @@
   },
   "caepr_caret_state": {
     "result": "PARTIAL_NOT_ALL_IS_CARET",
-    "reason": "The exact three Spanish debtors, Auren legal person and proceeding 357/2024 are not yet all reconciled to immutable CAEPR records; no caret is forced onto unresolved objects."
+    "scope": "The four exact entities and one proceeding newly material to the corrected 357/2024 account; other names on the pages are outside this bounded run.",
+    "unique_reference_denominator": 5,
+    "caret_confirmed_count": 0,
+    "coverage_percent": 0,
+    "caret_pending": [
+      "Meeting Point Hotelmanagement (Canaries), S.L.U.",
+      "Meeting Point Spain, S.L.U. — source-form reconciliation with SEPI's Meeting Point Spain, S.L. remains open",
+      "Meeting Point Investment, S.L.U.",
+      "AUREN REESTRUCTURACIONES SLP",
+      "Proceeding 357/2024 — legacy GC-CONT-025 exists, but no immutable CAEPR mapping is present"
+    ],
+    "reason": "None of the five exact objects is admitted to an immutable record in the current matter-identity registry parts or CANONICAL_ENTITY_NAMES; no caret is forced and no page-wide or repository-wide all-is-caret claim is made."
   },
   "privacy": "Exact recipients, addresses, subjects, private bodies, provider identifiers and native message locators remain in the connected private source system and must not be copied into public Git.",
   "external_action_authorized": false
