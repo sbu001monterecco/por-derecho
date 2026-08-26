@@ -7,6 +7,7 @@ on:
       - 'assets/data/sun-park-unit-owner-ledger-v1.precam-full-denominator.tsv'
       - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
       - 'assets/owner-perimeter-tokens.css'
+      - 'assets/sun-park-owner-register.js'
       - 'scripts/validate_sun_park_unit_owner_ledger.py'
       - 'scripts/validate_sun_park_full_owner_denominator.py'
       - 'archive/SUN_PARK_UNIT_OWNER_LEDGER_PROTOCOL_26AUG2026.md'
@@ -23,6 +24,7 @@ on:
       - 'assets/data/sun-park-unit-owner-ledger-v1.precam-full-denominator.tsv'
       - 'assets/data/sun-park-owner-perimeter-classification-v1.json'
       - 'assets/owner-perimeter-tokens.css'
+      - 'assets/sun-park-owner-register.js'
       - 'scripts/validate_sun_park_unit_owner_ledger.py'
       - 'scripts/validate_sun_park_full_owner_denominator.py'
       - 'archive/SUN_PARK_UNIT_OWNER_LEDGER_PROTOCOL_26AUG2026.md'
@@ -50,6 +52,8 @@ jobs:
         run: python3 scripts/validate_sun_park_unit_owner_ledger.py
       - name: Validate full pre-CAM owner denominator
         run: python3 scripts/validate_sun_park_full_owner_denominator.py
+      - name: Validate owner-register JavaScript syntax
+        run: node --check assets/sun-park-owner-register.js
       - name: Validate ledger JSON syntax
         run: |
           for file in assets/data/sun-park-unit-owner-ledger-v1*.json; do
