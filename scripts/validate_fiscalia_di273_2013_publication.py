@@ -23,7 +23,7 @@ CONTROL = ROOT / "archive/FISCALIA_DI273_2013_CAUSAL_ATTRIBUTION_AND_ARCHIVE_REC
 AUDIT = ROOT / "docs/deletion-audits/2026-08-26-fiscalia-di273-2013-causal-attribution.md"
 JUSTICE = ROOT / "assets/data/justice-map.json"
 REGISTER = ROOT / "evidence/sun-park/labory-catrude/archive-register.csv"
-SITEMAPS = (ROOT / "sitemap.xml", ROOT / "sitemap-prosecution-evidence.xml")
+SITEMAPS = (ROOT / "sitemap.xml",)
 
 EXPECTED_PDF_HASH = "5515b4cbedafc7c419f401769926ba1349553eb99abf87df7702354e972462c2"
 NATIVE_HASH = "6531e1cd3677ddcfa600345c38fe69e463b0418b1025f27f0ee231a0817e697e"
