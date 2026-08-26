@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.current-unitary-state.v1",
   "control_id": "PD-UNITARY-STATE-20260826-01",
-  "as_of": "2026-08-26T07:32:47Z",
+  "as_of": "2026-08-26T22:58:56Z",
   "status": "LIVE_VERIFIED",
   "purpose": "Single synchronized routing layer separating repository state, public deployment state, evidence state and open implementation work.",
   "repository": {
@@ -77,6 +77,19 @@
       "run_id": 32907717917,
       "status": "completed",
       "conclusion": "success"
+    },
+    "ac_removal_fees_thread": {
+      "control_id": "PD-AC-REM-FEES-UNITARY-20260826-01",
+      "state": "LIVE_VERIFIED",
+      "publication_merge_sha": "6e2b06de8242e9f98f38d4710399959e8f128224",
+      "publication_tree_sha": "37d7fb9ebf50bb4d0af353ba1796f85a00112ece",
+      "pages_run_id": 33020823527,
+      "pages_run_number": 1162,
+      "pages_conclusion": "success",
+      "verified_at": "2026-08-26T22:58:56Z",
+      "verified_url_count": 10,
+      "manifest": "publication-manifests/ac-removal-fees-unitary-criminal-analysis-20260826.json",
+      "rule": "This specialist publication joins the evidential thread without merging the distinct civil, insolvency, appellate, criminal or disciplinary proceeding identities and without converting allegations or procedural dismissals into merits findings."
     }
   },
   "promoted_material_publication": {
@@ -102,8 +115,8 @@
     "control_date": "2026-08-26",
     "counts": {"total":194,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":15,"PROCEEDING":17},
     "archive_backfill": "OPEN",
-    "static_page_parity": "REPOSITORY_VALIDATED_PUBLIC_DEPLOYMENT_PENDING",
-    "last_live_verified_counts": {"total":185,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":13,"PROCEEDING":10},
+    "static_page_parity": "LIVE_VERIFIED",
+    "last_live_verified_counts": {"total":194,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":15,"PROCEEDING":17},
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
   },
   "material_updates": {

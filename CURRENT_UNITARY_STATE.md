@@ -37,6 +37,12 @@ Pages run `32942972472` / #1128 deployed that exact merge successfully. Dedicate
 
 The 26 August position is an attributed factual/prosecutorial theory. It is not a judgment, does not itself establish a statutory organisation or group under Articles 570 bis/ter CP, does not prove an original pact, does not transfer knowledge or intent, and does not dispense with offence-by-offence, actor-by-actor proof. The manifest is a discovery map only: it neither supports nor establishes `ALG-ENT-018` unless and until native originals are lawfully acquired, authenticated and tested against the contrary record.
 
+### AC removal and remuneration thread — live verified
+
+The additive, non-fragmented Administrador Concursal removal/remuneration thread is live under control `PD-AC-REM-FEES-UNITARY-20260826-01`. PR #1086 published merge `6e2b06de8242e9f98f38d4710399959e8f128224`, tree `37d7fb9ebf50bb4d0af353ba1796f85a00112ece`; Pages run `33020823527` / #1162 completed successfully. Managed-browser checks opened the six exact bilingual reader and registry routes, and no-cache edge readback verified all ten declared pages, data assets and public-safe archive records.
+
+That publication contains 50 redacted specialist records, preserves the 25 court/LAJ versus 25 party-filing split, exposes ten redacted decision PDFs, reconciles the four pleaded components arithmetically to EUR 110,956.97 and records ten finite production gaps. It does not claim that the complete certified Concurso docket has been obtained, that the pleaded total is bank-verified, that fee legality or quantum was adjudicated, or that any criminal responsibility has been established.
+
 ### Complete 21-URL no-cache readback set
 
 1. `https://sbu001monterecco.github.io/por-derecho/en/`
@@ -82,7 +88,7 @@ Repository main, Pages deployment and exact public readback remain separately re
 | Proceedings | 17 |
 | **Total** | **194** |
 
-These counts control in the current repository's canonical JSON, both public pages, metadata, JSON-LD and no-JavaScript fallbacks. The prior 185-ID live readback remains historical deployment evidence until this additive package is merged and independently read back. Archive backfill remains open. Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.
+These counts control in the current repository's canonical JSON, both public pages, metadata, JSON-LD and no-JavaScript fallbacks, and the 194-ID denominator has now been independently read back from the public edge. The prior 185-ID readback remains historical deployment evidence only. Archive backfill remains open. Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.
 
 ## Unitary legal and economic rule
 
