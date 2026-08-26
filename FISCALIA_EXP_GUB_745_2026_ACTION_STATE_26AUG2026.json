@@ -1,8 +1,14 @@
 {
-  "schema": "por-derecho-fiscalia-exp-gub-745-action-state/v1",
+  "schema": "por-derecho-fiscalia-exp-gub-745-action-state/v2",
   "control_date": "2026-08-26",
   "expediente": "Exp. Gub. 745/2026",
   "official_outcome": "archived_by_fiscal_inspection_decree",
+  "notification_reconciliation": {
+    "inbound_notification_today": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "inbound_source": "Fiscalia General del Estado - Inspeccion Fiscal",
+    "separate_same_day_outgoing_track": "Exp. Gub. 86/2026 / FEDER Sun Park-MYND update to Audiencia Nacional",
+    "non_conflation": true
+  },
   "official_reason_summary": [
     "communication characterised as confusa e incoherente",
     "Article 66.1(c) Law 39/2015 invoked",
@@ -12,7 +18,7 @@
     "specific_proceedings_identified": ["DI 248/2018", "DI 113/2022", "DI 22/2026", "DIP 2/2026", "EG 49/2026", "DP 1901/2026"],
     "general_filing_numbered_requests": 20,
     "inspection_specific_numbered_requests": 12,
-    "page_one_scope_blocks": ["DELIMITACIÓN NEGATIVA", "OBJETO EXCLUSIVO", "DAÑO ACTUAL", "ACTUACIÓN POSCONOCIMIENTO", "DECISIÓN SOLICITADA"],
+    "page_one_scope_blocks": ["DELIMITACION NEGATIVA", "OBJETO EXCLUSIVO", "DANO ACTUAL", "ACTUACION POSCONOCIMIENTO", "DECISION SOLICITADA"],
     "subsanacion_requested_in_source": true,
     "controlled_conclusion": "The record supports a specific challenge to the breadth of the lack-of-clarity characterisation and raises an Article 68 cure issue on the Decree's own Article 66 framework; it does not establish bad faith, unlawful intent or a judicially determined procedural violation."
   },
@@ -21,35 +27,66 @@
     "extractable_text": false,
     "rasterised_page_behaviour": true,
     "intent_inferred": false,
-    "requested_follow_up": "native/searchable electronic copy or explanation of notification format"
+    "status": "PRESERVED_NATIVE_PLUS_SEPARATE_OCR_DERIVATIVE",
+    "requested_follow_up": "native/searchable electronic copy, signature/verification information, or explanation of notification format"
   },
   "source_sha256": {
     "decree_notified_2026_08_26": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
     "inspection_regage_receipt": "33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97",
     "signed_source_filing": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4"
   },
-  "review_routes": {
-    "reconsideration": {
-      "status": "available_according_to_decree",
-      "statutory_period": "one month",
-      "exclusive_interaction": "If filed, contentious-administrative appeal must await express resolution or deemed dismissal under Article 123.2 Law 39/2015."
-    },
-    "direct_contentious_appeal": {
-      "status": "alternative_to_reconsideration",
-      "forum": "Sala de lo Contencioso-Administrativo del Tribunal Supremo according to the Decree",
-      "statutory_period": "two months",
-      "august_control": "Article 128 LJCA states that August does not run for the ordinary contentious-appeal filing period, subject to its exception."
-    }
+  "operating_mode": "MAXIMUM_COMPATIBLE_PARALLELISM",
+  "merits_election_gate": {
+    "status": "OPEN",
+    "rule": "Prepare reconsideration and direct contentious review in parallel, but do not file incompatible merits routes simultaneously where Article 123.2 Law 39/2015 applies.",
+    "decision_required_before_filing": true
   },
-  "parallel_non_suspensive_lanes": [
-    "ad_cautelam clarification/subsanacion without admitting original confusion",
-    "full-file access and copies",
-    "native machine-readable Decree and signature/verification information",
-    "finite evidence preservation"
+  "action_lanes": [
+    {
+      "id": "1A",
+      "name": "optional_reconsideration_reposicion",
+      "status": "READYING",
+      "nominal_period": "one month according to Decree",
+      "deadline_exact": "VERIFY_BEFORE_FILING",
+      "key_grounds": ["actual filing structure", "identified proceedings", "actor identification as requested inspection task", "Article 66 to Article 68 cure issue", "specificity of reasons", "revocation/reopening or subsidiarily cure"]
+    },
+    {
+      "id": "1B",
+      "name": "direct_contentious_administrative_review",
+      "status": "READYING_ALTERNATIVE_TO_1A",
+      "nominal_period": "two months according to Decree",
+      "deadline_exact": "VERIFY_ARTICLES_46_AND_128_LJCA_BEFORE_FILING",
+      "key_work": ["reviewability/finality", "standing", "jurisdiction", "August control", "standard of review", "relief", "strongest defence and answer"]
+    },
+    {
+      "id": "2",
+      "name": "ad_cautelam_clarification_subsanacion",
+      "status": "ACTIVATE_NOW_DRAFT_FILE_READY",
+      "suspends_merits_deadline": false,
+      "matrix": "proceeding -> exact act/omission -> date/period -> functional actor to identify -> institutional record -> issue to test -> finite diligence -> custodian"
+    },
+    {
+      "id": "3",
+      "name": "full_file_access_and_native_machine_readable_decree",
+      "status": "ACTIVATE_NOW_DRAFT_FILE_READY",
+      "suspends_merits_deadline": false,
+      "requests": ["complete file/index", "responsible unit", "material considered", "routing/referral/decision trail", "native searchable Decree", "signature/verification information", "format explanation if needed"]
+    },
+    {
+      "id": "4",
+      "name": "evidence_preservation",
+      "status": "ACTIVATE_NOW_DRAFT_FILE_READY",
+      "suspends_merits_deadline": false,
+      "targets": ["identified proceedings", "institutional email and attachments", "headers and metadata", "allocation/reparto", "access/modification logs", "reports/visados/approvals", "archive/referral decisions", "ATLANTE/GEISER/RedSARA traces where relevant"]
+    }
   ],
+  "status_vocabulary": ["READY", "DRAFTING", "FILE-READY", "FILED", "RECEIVED", "CURED", "PENDING DECISION", "ESCALATE", "CLOSED/SUPERSEDED"],
+  "truth_rule": "Never mark FILED or RECEIVED without actual submission or receipt evidence.",
   "public_routes": {
     "es": "/es/fiscalia-inspeccion-exp-gub-745-2026/",
-    "en": "/en/public-prosecution-inspection-exp-gub-745-2026/"
+    "en": "/en/public-prosecution-inspection-exp-gub-745-2026/",
+    "es_parallel_actions": "/es/fiscalia-745-acciones-paralelas/",
+    "en_parallel_actions": "/en/public-prosecution-745-parallel-actions/"
   },
   "privacy": "Native source files are not committed because the repository is public and originals may contain signatures, identifiers or unnecessary personal data."
 }
