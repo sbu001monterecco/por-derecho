@@ -191,7 +191,10 @@ def validate_production_status(data: dict, errors: list[str]) -> None:
         verification = data.get("verification") or {}
         if verification.get("state") != "DEPLOYMENT_BUILD_SUCCESS":
             error("ops/PRODUCTION_STATUS.json v2 must distinguish deployment from readback", errors)
-        if verification.get("current_exact_route_content_verification") != "NOT_RECORDED_FOR_SERVED_SHA":
+        if (
+            verification.get("current_exact_route_content_verification")
+            != "NOT_RECORDED_FOR_SERVED_SHA"
+        ):
             error("ops/PRODUCTION_STATUS.json served-SHA readback boundary missing", errors)
         specialist = verification.get("latest_live_verified_specialist_release") or {}
         if specialist.get("state") != "LIVE_VERIFIED":
@@ -220,6 +223,10 @@ def validate_production_status(data: dict, errors: list[str]) -> None:
 
 
 def validate_rollback(data: dict, errors: list[str]) -> None:
+    verification = data.get("verification") or data.get("last_live_verification") or {}
+    rollback_state = data.get("state") or verification.get("state")
+    source_sha = data.get("source_sha") or verification.get("source_sha")
+
     if data.get("schema") == ROLLBACK_SCHEMA_V2:
         if data.get("record_type") != "HISTORICAL_ROLLBACK_ANCHOR":
             error("ops/LAST_KNOWN_GOOD.json v2 must be a historical rollback anchor", errors)
@@ -227,10 +234,11 @@ def validate_rollback(data: dict, errors: list[str]) -> None:
             error("ops/LAST_KNOWN_GOOD.json v2 must not claim current status", errors)
         if data.get("rollback_eligible") is not True:
             error("ops/LAST_KNOWN_GOOD.json v2 must remain rollback-eligible", errors)
-    if data.get("state") != "LIVE_VERIFIED":
+
+    if rollback_state != "LIVE_VERIFIED":
         error("ops/LAST_KNOWN_GOOD.json must describe a LIVE_VERIFIED release", errors)
-    if not SHA_RE.fullmatch(str(data.get("source_sha", ""))):
-        error("ops/LAST_KNOWN_GOOD.json source_sha must be a 40-char SHA", errors)
+    if not SHA_RE.fullmatch(str(source_sha or "")):
+        error("ops/LAST_KNOWN_GOOD.json resolved source SHA must be a 40-char SHA", errors)
 
 
 def validate_release_ledger(data: dict, errors: list[str]) -> None:
