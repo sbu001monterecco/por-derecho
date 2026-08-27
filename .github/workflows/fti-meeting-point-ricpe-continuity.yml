@@ -179,10 +179,14 @@ jobs:
           import os
           import time
           import urllib.request
+          from pathlib import Path
 
           repository = os.environ['REPOSITORY']
           expected_sha = os.environ['EXPECTED_SHA']
           token = os.environ['GH_TOKEN']
+          evidence_dir = Path('artifacts/fti-meeting-point-ricpe-live')
+          evidence_dir.mkdir(parents=True, exist_ok=True)
+          evidence_path = evidence_dir / 'pages-attestation.json'
           api = (
               f'https://api.github.com/repos/{repository}/actions/runs'
               f'?head_sha={expected_sha}&per_page=100'
@@ -225,25 +229,51 @@ jobs:
                   None,
               )
               if successful:
-                  print(json.dumps({
+                  evidence = {
+                      'schema': 'por-derecho.fti-meeting-point-ricpe-pages-attestation.v1',
                       'state': 'EXACT_PAGES_RUN_ATTESTED',
                       'expected_sha': expected_sha,
                       'pages_run_id': successful.get('id'),
                       'pages_run_number': successful.get('run_number'),
                       'pages_head_sha': successful.get('head_sha'),
                       'pages_url': successful.get('html_url'),
+                      'verifier_workflow': os.environ.get('GITHUB_WORKFLOW'),
+                      'verifier_run_id': int(os.environ['GITHUB_RUN_ID']),
+                      'verifier_run_attempt': int(os.environ['GITHUB_RUN_ATTEMPT']),
+                      'communication_authorized': False,
+                      'filing_authorized': False,
+                      'email_or_filing_action': 'HOLD_NOT_AUTHORISED',
+                      'attested_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
                       'attempt': attempt,
-                  }, sort_keys=True))
+                  }
+                  evidence_path.write_text(
+                      json.dumps(evidence, indent=2, sort_keys=True) + '\n',
+                      encoding='utf-8',
+                  )
+                  print(json.dumps(evidence, sort_keys=True))
                   raise SystemExit(0)
               print(f'Pages attestation attempt {attempt}/48: pending', flush=True)
               if attempt < 48:
                   time.sleep(10)
 
-          print(json.dumps({
+          evidence = {
+              'schema': 'por-derecho.fti-meeting-point-ricpe-pages-attestation.v1',
               'state': 'EXACT_PAGES_RUN_NOT_ATTESTED',
               'expected_sha': expected_sha,
               'last_seen': last_seen,
-          }, sort_keys=True))
+              'verifier_workflow': os.environ.get('GITHUB_WORKFLOW'),
+              'verifier_run_id': int(os.environ['GITHUB_RUN_ID']),
+              'verifier_run_attempt': int(os.environ['GITHUB_RUN_ATTEMPT']),
+              'communication_authorized': False,
+              'filing_authorized': False,
+              'email_or_filing_action': 'HOLD_NOT_AUTHORISED',
+              'attested_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+          }
+          evidence_path.write_text(
+              json.dumps(evidence, indent=2, sort_keys=True) + '\n',
+              encoding='utf-8',
+          )
+          print(json.dumps(evidence, sort_keys=True))
           raise SystemExit(1)
       - name: Read back exact deployed continuity release
         shell: python
@@ -512,6 +542,8 @@ jobs:
               'CI_GREEN',
               'MERGED',
               'DEPLOYED',
+              'LIVE_VERIFIED',
+              'DELETION_SAFE',
           }
           assert deployed_manifest['publication_authorized'] is True
           assert deployed_manifest['communication_authorized'] is False
@@ -524,17 +556,38 @@ jobs:
               for route in expected_hubs.values():
                   assert base + route in sitemap, f'{sitemap_path}: missing {route}'
 
-          print(json.dumps({
-              'state': 'DEPLOYED_READBACK_PASS_CLOSEOUT_REQUIRED',
+          evidence_dir = Path('artifacts/fti-meeting-point-ricpe-live')
+          evidence_dir.mkdir(parents=True, exist_ok=True)
+          pages_attestation = json.loads(
+              (evidence_dir / 'pages-attestation.json').read_text(encoding='utf-8')
+          )
+          sha256_by_route = {
+              path_to_route(path): hashlib.sha256(live_bytes[path]).hexdigest()
+              for path in candidate_paths
+          }
+          closeout = {
+              'schema': 'por-derecho.fti-meeting-point-ricpe-live-closeout.v1',
+              'result': 'PASS_EXACT_BYTES',
+              'state': 'LIVE_VERIFIED',
+              'next_state': 'REPOSITORY_CLOSEOUT_REQUIRED',
               'head_sha': head_sha,
+              'workflow': os.environ.get('GITHUB_WORKFLOW'),
+              'workflow_run_id': int(os.environ['GITHUB_RUN_ID']),
+              'workflow_run_attempt': int(os.environ['GITHUB_RUN_ATTEMPT']),
               'manifest_state': deployed_manifest['current_state'],
+              'pages_deployment': pages_attestation,
               'exact_byte_surfaces': len(candidate_paths),
               'repository_only_expected_files': len(repository_only_expected),
+              'sha256_by_route': sha256_by_route,
               'hubs': 3,
               'graph': '10/12',
               'spine_caret': '39/65',
               'professional_caret': '40/101',
               'actions': 31,
+              'communication_authorized': False,
+              'filing_authorized': False,
+              'email_or_filing_action': 'HOLD_NOT_AUTHORISED',
+              'verified_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
               'monitor': {
                   'heritage_scopes': 3,
                   'entities': 11,
@@ -544,4 +597,17 @@ jobs:
                   'open_gaps': 8,
                   'presentation_lanes': 6,
               },
-          }, sort_keys=True))
+          }
+          (evidence_dir / 'live-closeout.json').write_text(
+              json.dumps(closeout, indent=2, sort_keys=True) + '\n',
+              encoding='utf-8',
+          )
+          print(json.dumps(closeout, sort_keys=True))
+      - name: Upload exact live closeout evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: fti-meeting-point-ricpe-live-closeout-${{ github.run_id }}
+          path: artifacts/fti-meeting-point-ricpe-live/
+          if-no-files-found: error
+          retention-days: 90
