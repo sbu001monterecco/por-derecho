@@ -3,10 +3,15 @@
   "publication_id": "unitary-repository-website-redigest-20260827",
   "control_id": "PD-UNITARY-REDIGEST-20260827-01",
   "control_date": "2026-08-27",
-  "current_state": "PR_OPEN",
-  "status": "pr_open",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "source_base_sha": "8e8e83c5a337846245a942222efbc3120645b1fd",
+  "merge_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+  "publication_merge_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+  "pages_run_id": 33056171865,
+  "live_verification": "passed_exact_no_cache",
+  "promoted_at": "2026-08-27T08:55:54Z",
   "expected_routes": {
     "es": [],
     "en": []
@@ -14,6 +19,7 @@
   "expected_source_files": [
     "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
     "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
+    "archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md",
     "publication-manifests/unitary-repository-website-redigest-20260827.json",
     "scripts/validate_current_reverse_engineered_digest.py",
     ".github/workflows/validate-current-reverse-engineered-digest.yml"
@@ -69,6 +75,81 @@
       "Clubotel, PP1041 and EH90 require current-registry admission"
     ]
   },
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33056171865,
+    "head_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "live_verification_evidence": {
+    "workflow": ".github/workflows/validate-current-reverse-engineered-digest.yml",
+    "workflow_run_id": 33056172746,
+    "job_id": 98463437593,
+    "head_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+    "status": "completed",
+    "conclusion": "success",
+    "verified_url_count": 3,
+    "method": "cache-busted no-cache HTTP 200 and required-marker readback",
+    "checks": [
+      "human digest control ID, unitary rule and 19/24 marker",
+      "machine state control ID, public-safe state and superseded-package marker",
+      "publication manifest identity, control ID and material-date boundary"
+    ]
+  },
+  "validation": {
+    "evidence": [
+      {
+        "type": "pull_request_merge",
+        "pr": 1091,
+        "validated_head_sha": "aedae64483a428ee0947b41cb0e7e48badb60be9",
+        "merge_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+        "status": "merged"
+      },
+      {
+        "type": "dedicated_pr_validation",
+        "workflow_run_id": 33056075127,
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "type": "publication_integrity_gate",
+        "workflow_run_id": 33056075176,
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "type": "pages_deployment",
+        "workflow_run_id": 33056171865,
+        "head_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "type": "exact_edge_readback",
+        "workflow_run_id": 33056172746,
+        "job_id": 98463437593,
+        "head_sha": "0367a3759cf372bce35a3f2c292092e2f06cad25",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "preservation_evidence": {
+    "workflow": ".github/workflows/off-github-preservation.yml",
+    "workflow_run_id": 33056075157,
+    "head_sha": "aedae64483a428ee0947b41cb0e7e48badb60be9",
+    "head_tree_sha": "a1af4bfca9eb6021f7932f01d9ad116408ba24f8",
+    "merge_tree_sha": "a1af4bfca9eb6021f7932f01d9ad116408ba24f8",
+    "tree_matches_merge_tree": true,
+    "status": "completed",
+    "conclusion": "success",
+    "artifact_id": 9639650869,
+    "artifact_name": "por-derecho-off-github-backup-33056075157",
+    "artifact_size_bytes": 225883233,
+    "artifact_sha256": "a65e812d5ffdc36f41dcaee5297a86d02cd12004759d89815c5c0c0f406028a3",
+    "artifact_expires_at": "2026-11-25T08:53:59Z"
+  },
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/CURRENT_REVERSE_ENGINEERED_DIGEST.md",
     "https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
@@ -79,13 +160,8 @@
     "no collective guilt or automatic actor attribution",
     "complaint or pleading is not proof of underlying conduct",
     "later title, operation or benefit does not validate earlier authority",
-    "private or privileged native material is not automatically public"
+    "private or privileged native material is not automatically public",
+    "LIVE_VERIFIED proves publication and exact readback of the stated controls, not the truth of an underlying allegation or legal conclusion"
   ],
-  "post_merge_requirements": [
-    "confirm merge SHA on main",
-    "confirm GitHub Pages deployment for the merge",
-    "confirm workflow validation and exact no-cache public readback success",
-    "run and verify a current-head off-GitHub preservation snapshot",
-    "do not promote to a material public update absent a separate source-supported decision"
-  ]
+  "closeout_record": "archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md"
 }
