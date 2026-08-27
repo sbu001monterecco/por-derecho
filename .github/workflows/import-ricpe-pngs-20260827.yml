@@ -2,6 +2,8 @@ name: Import verified RICPE PNG evidence
 
 on:
   push:
+    branches:
+      - codex/import-ricpe-pngs-20260827
     paths:
       - .github/workflows/import-ricpe-pngs-20260827.yml
 
@@ -12,10 +14,10 @@ jobs:
   import-images:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out main
+      - name: Check out publication branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: codex/import-ricpe-pngs-20260827
           fetch-depth: 0
 
       - name: Download and verify exact source attachments
@@ -32,7 +34,7 @@ jobs:
           echo "04ec7b70e03dfa9d5f70bb3d4532a7dd2c20ef0c32b17a502a80c3ecb10c7c8e  $target/san-telmo-ricpe-sun-park-stamp-v1-ES.png" | sha256sum --check --strict
           echo "b791bb9210efa47d8a3966dd5cb3d2dc8ac0d51bfd7a037fbe8f5ae4ae80e870  $target/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png" | sha256sum --check --strict
 
-      - name: Commit exact PNG binaries
+      - name: Commit exact PNG binaries to the publication branch
         shell: bash
         run: |
           set -euo pipefail
@@ -40,4 +42,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add evidence/ricpe-cnmv/2026-08-27/*.png
           git commit -m "Add exact San Telmo and PwC RICPE evidence PNGs"
-          git push origin HEAD:main
+          git push origin HEAD:codex/import-ricpe-pngs-20260827
