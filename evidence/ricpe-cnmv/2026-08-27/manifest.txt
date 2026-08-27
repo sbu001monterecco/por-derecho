@@ -1,8 +1,16 @@
 PUBLICATION CONTROL - RICPE / CNMV - 27 AUGUST 2026
 
 Public web record:
-- index.html: public evidential landing page.
+- index.html: public evidential landing page, including the two original PNG visuals.
 - resolution.txt: controlled transcription of the communicated resolution and material workflow history.
+- san-telmo-ricpe-sun-park-stamp-v1-ES.png
+  Size: 827315 bytes
+  Dimensions: 1536 x 1024 pixels
+  SHA-256 f50790d29a0dc55521e03693b9023d55241212bbb4fd78977187dbe8bf544add
+- pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png
+  Size: 489983 bytes
+  Dimensions: 1536 x 1024 pixels
+  SHA-256 6b3dfac14865f8bd9cdaf6eda6b610ff67175a96761f9d5ab7a0819b935643bf
 
 Original files preserved and supplied directly to CNMV as separate email attachments:
 - RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf
@@ -21,3 +29,5 @@ Publication limits:
 - Telephone and unnecessary personal data are omitted from the public transcript.
 - The Ithikios certificate is treated as the complete resolution communicated through the channel, not as proof of RICPE's complete internal decision file.
 - "No mostrado al denunciante" is reported as a certified workflow fact, without attributing intent.
+- The two PNGs are composite, argumentative visuals supplied by the reporting person. They document attributed statements, named actors and questions for verification; they do not by themselves establish culpability, liability or intent.
+- The visuals must be read alongside primary documents, responses from identified persons and entities, and potentially exculpatory evidence.
