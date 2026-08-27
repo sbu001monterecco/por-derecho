@@ -81,3 +81,14 @@
   module.setAttribute('data-transparency-feder-routing-crosslinks-loader', '20260826');
   document.head.appendChild(module);
 })();
+
+/* UNITARY-P0-WEBSITE-CORRECTIONS-20260827 */
+(() => {
+  const current = document.currentScript;
+  if (!current || document.querySelector('script[data-unitary-p0-website-corrections-loader]')) return;
+  const module = document.createElement('script');
+  module.src = new URL('unitary-static-source-corrections-20260827.js?v=20260827a', current.src).href;
+  module.async = false;
+  module.setAttribute('data-unitary-p0-website-corrections-loader', '20260827');
+  document.head.appendChild(module);
+})();
