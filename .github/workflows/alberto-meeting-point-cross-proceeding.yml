@@ -479,6 +479,7 @@ jobs:
               'CI_GREEN',
               'MERGED',
               'DEPLOYED',
+              'LIVE_VERIFIED',
           ]
           manifest_state = manifest['current_state']
           assert manifest_state in allowed_states, (
