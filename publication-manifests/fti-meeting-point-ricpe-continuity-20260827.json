@@ -7,9 +7,9 @@
   "status": "release_candidate_not_yet_verified_live",
   "owner": "Por Derecho / Project Sun Rock",
   "remote_main_observed_sha": "f4c186194f34c414e83526a771a9772d62782519",
-  "candidate_branch": "codex/alberto-judicial-title-20260827",
+  "candidate_branch": "codex/fti-meeting-point-ricpe-continuity-20260827",
   "candidate_parent_sha": "f4c186194f34c414e83526a771a9772d62782519",
-  "validated_content_commit_sha": "PENDING_FINAL_VALIDATION_COMMIT",
+  "validated_content_commit_sha": "e8b5c3373178b4cd00b380558bf5c9829626b43f",
   "publication_authorized": true,
   "publication_authorization": {
     "scope_control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
