@@ -1,7 +1,7 @@
 # Continuity and deletion audit — FTI deficit / Club Sei visual-recovery thread
 
 **Control date:** 27 August 2026
-**Current verdict:** `NOT DELETION-SAFE — LIVE CLOSEOUT PENDING`
+**Current verdict:** `DELETION-SAFE WITH OPEN EVIDENCE`
 
 ## Preserved candidate
 
@@ -25,5 +25,23 @@
 4. Read back all six controlled routes and machine files at the exact merge SHA.
 5. Record merge, deployment and route evidence in this audit and the manifest.
 
-Until all five steps are proven, deletion remains unsafe. Technical preservation
-does not authorise any external communication.
+## Closeout evidence
+
+- Isolated privacy PR #1119 merged as `0c0ddad15bf593eb8a13d58ee48f70403f7d2e76`;
+  Pages run 33104111192 succeeded; the live public PDF and page-one image matched
+  their reviewed SHA-256 values.
+- Continuity PR #1120 merged as `a97e6b46fab538b2f6b2391a0957b29b671f49b3`
+  with exact reviewed tree `48d79fab5c2dede179d10e4a0d442bb2c27ec265`;
+  Pages run 33104389805 / #1193 succeeded.
+- Cache-busted public readback matched repository SHA-256 byte-for-byte for all
+  three ES/EN/DE Club Sei dossiers, both FTI/BLUESEA routes and all three machine
+  recovery/caret/source files.
+- The post-merge provenance repair removes raw inline caret markers and refreshes
+  the reviewed first-hop snapshots/counts; its own merge and live-readback evidence
+  is recorded in the final closeout commit.
+- Open evidence remains recoverable in the canonical missing-evidence register;
+  it does not depend on this conversation.
+
+Technical preservation and thread deletion safety do not authorise any external
+communication. Every email, filing, RedSARA/AGE, portal and authority-contact
+action remains `PREPARED / HOLD — NOT AUTHORISED`.

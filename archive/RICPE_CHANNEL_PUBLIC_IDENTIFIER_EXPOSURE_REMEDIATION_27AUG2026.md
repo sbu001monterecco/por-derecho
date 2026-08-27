@@ -54,9 +54,9 @@ The binary-complete privacy correction was published and live-verified before th
 
 No email, filing, authority notification or credential change is authorised by this record. The current-tree/live-route repair does not itself authorise historical Git rewriting.
 
-## Secondary contact-data minimisation candidate
+## Secondary contact-data minimisation release
 
-**State: PUBLICATION AUTHORISED / LIVE VERIFICATION PENDING / SEPARATE RELEASE UNIT.**
+**State: MERGED / DEPLOYED / EXACT-BYTE LIVE VERIFIED / SEPARATE RELEASE UNIT.**
 
 A new page-one inspection established that the already identifier-redacted public
 derivative still displayed the reporting party's telephone number and email
@@ -72,8 +72,9 @@ channel record. The local candidate therefore:
 5. extends the fail-closed validator to reject extractable email addresses or
    international telephone numbers in the public PDF.
 
-The other five public page images are unchanged. The user's 27-Aug-2026
-instruction expressly authorises this separate repository/website release. It
-must be published and verified live before the larger FTI/Club Sei recovery
-candidate. That authority does not include email, filing, RedSARA/AGE, portal or
-authority-contact action.
+The other five public page images are unchanged. PR #1119 merged as
+`0c0ddad15bf593eb8a13d58ee48f70403f7d2e76`; Pages run 33104111192 succeeded.
+No-cache live readback matched the reviewed PDF SHA-256 `8fbb2d3a...c333` and
+page-one SHA-256 `45938505...eb2` before the larger FTI/Club Sei release. That
+authority did not include email, filing, RedSARA/AGE, portal or authority-contact
+action.

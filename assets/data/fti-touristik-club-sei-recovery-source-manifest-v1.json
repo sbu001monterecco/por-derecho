@@ -2,7 +2,7 @@
   "schema": "por-derecho.source-manifest.v1",
   "control_id": "PD-FTI-DEFICIT-CLUB-SEI-SOURCES-20260827-01",
   "control_date": "2026-08-27",
-  "state": "PUBLICATION_AUTHORIZED_LIVE_VERIFICATION_PENDING",
+  "state": "LIVE_VERIFIED",
   "retrieval_languages": ["de", "es", "en"],
   "sources": [
     {

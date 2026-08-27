@@ -2,7 +2,7 @@
 
 **Control date:** 27 August 2026
 **Control ID:** `PD-FTI-DEFICIT-CLUB-SEI-RECOVERY-20260827-01`
-**Repository state:** publication-authorised candidate; live verification pending
+**Repository state:** merged, deployed and exact-byte live verified
 **External action:** `PREPARED / HOLD — NOT AUTHORISED`
 **Nature:** unitary evidential review; no finding of illegality, criminal liability,
 group-wide causation or successor liability
@@ -249,4 +249,5 @@ must be published and verified live before this larger candidate.
 Future work must start with
 `archive/prompts/FTI_TOURISTIK_CLUB_SEI_RECOVERY_RESTART_27AUG2026.md`, the
 focused publication manifest and deletion audit. Current deletion-safety verdict:
-**NOT DELETION-SAFE**.
+**DELETION-SAFE WITH OPEN EVIDENCE**. Open evidence remains controlled in
+ME-049, ME-094, ME-096, ME-097 and ME-098 and does not depend on this thread.

@@ -157,29 +157,29 @@
       "node_id": "AM357-N05",
       "language": "es",
       "route": "/es/lava-verde-club-sei-meeting-point/",
-      "normalized_main_sha256": "d3df76850cae793a642728d2e7fcd49202b8fc543a9adc2aac7b760775e85997",
-      "normalized_characters": 21073
+      "normalized_main_sha256": "1dbfde1fe72be9987fb642eee5f7e388dc340c006d7e800028d0f6a31a339faa",
+      "normalized_characters": 23662
     },
     {
       "node_id": "AM357-N05",
       "language": "en",
       "route": "/en/lava-verde-club-sei-meeting-point/",
-      "normalized_main_sha256": "f47b6efae3fb78284e53272f7217ad92faad3e6fed5156540bf96e87653ba0c3",
-      "normalized_characters": 20361
+      "normalized_main_sha256": "dda65552a40bc451e97cb4ac6882af8d28f3c623c50c3476d0057f29e09bdb7c",
+      "normalized_characters": 22862
     },
     {
       "node_id": "AM357-N06",
       "language": "es",
       "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
-      "normalized_main_sha256": "0a609bf1c63e9ebfdd9cd39fa5a2706c611fb88aa19d9d483aecb1af8999703d",
-      "normalized_characters": 18529
+      "normalized_main_sha256": "6b6ee3398c6e4705465f4c1af876bc2841859c850a893e8b411868f15f786024",
+      "normalized_characters": 18936
     },
     {
       "node_id": "AM357-N06",
       "language": "en",
       "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
-      "normalized_main_sha256": "eead856c712b4463ffffc2676524c1260eda12de446c5ba1ca92139d3514f5b6",
-      "normalized_characters": 17589
+      "normalized_main_sha256": "5d8e98d6f5eeccf6ebc4bda4d2b7254bc65c2e7f1626909f345fa12691da984a",
+      "normalized_characters": 17975
     },
     {
       "node_id": "AM357-N07",
@@ -558,7 +558,7 @@
         "language": "es",
         "route": "/es/lava-verde-club-sei-meeting-point/",
         "normalized_literal": "Ab-in-den-Urlaub",
-        "normalized_occurrence_count": 1
+        "normalized_occurrence_count": 2
       }
     },
     {
@@ -966,7 +966,7 @@
         "language": "es",
         "route": "/es/lava-verde-club-sei-meeting-point/",
         "normalized_literal": "Loveholidays",
-        "normalized_occurrence_count": 6
+        "normalized_occurrence_count": 7
       }
     },
     {
@@ -1134,7 +1134,7 @@
         "language": "es",
         "route": "/es/lava-verde-club-sei-meeting-point/",
         "normalized_literal": "1-2-FLY",
-        "normalized_occurrence_count": 1
+        "normalized_occurrence_count": 2
       }
     },
     {
@@ -1290,7 +1290,7 @@
         "language": "es",
         "route": "/es/lava-verde-club-sei-meeting-point/",
         "normalized_literal": "Travel Weekly",
-        "normalized_occurrence_count": 2
+        "normalized_occurrence_count": 3
       }
     },
     {
@@ -1314,7 +1314,7 @@
         "language": "es",
         "route": "/es/lava-verde-club-sei-meeting-point/",
         "normalized_literal": "Youtravel",
-        "normalized_occurrence_count": 5
+        "normalized_occurrence_count": 7
       }
     },
     {
@@ -1590,7 +1590,7 @@
         "language": "en",
         "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
         "normalized_literal": "SEPI",
-        "normalized_occurrence_count": 12
+        "normalized_occurrence_count": 13
       }
     },
     {
