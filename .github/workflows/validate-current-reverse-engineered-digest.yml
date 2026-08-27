@@ -5,6 +5,7 @@ on:
     paths:
       - 'CURRENT_REVERSE_ENGINEERED_DIGEST.md'
       - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
+      - 'archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md'
       - 'publication-manifests/unitary-repository-website-redigest-20260827.json'
       - 'scripts/validate_current_reverse_engineered_digest.py'
       - '.github/workflows/validate-current-reverse-engineered-digest.yml'
@@ -13,6 +14,7 @@ on:
     paths:
       - 'CURRENT_REVERSE_ENGINEERED_DIGEST.md'
       - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
+      - 'archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md'
       - 'publication-manifests/unitary-repository-website-redigest-20260827.json'
       - 'scripts/validate_current_reverse_engineered_digest.py'
       - '.github/workflows/validate-current-reverse-engineered-digest.yml'
@@ -69,13 +71,19 @@ jobs:
               ]),
               ('/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json', [
                   'PD-UNITARY-REDIGEST-20260827-01',
-                  'REPOSITORY_CONTROLLED_PUBLIC_SAFE',
+                  'LIVE_VERIFIED_PUBLIC_CONTROL',
                   'SUPERSEDED_NOT_MERGEABLE_AS_IS',
               ]),
               ('/publication-manifests/unitary-repository-website-redigest-20260827.json', [
                   'unitary-repository-website-redigest-20260827',
                   'PD-UNITARY-REDIGEST-20260827-01',
+                  'LIVE_VERIFIED',
                   'material_date_change',
+              ]),
+              ('/archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md', [
+                  'LIVE_VERIFIED_PUBLIC_CONTROL',
+                  '0367a3759cf372bce35a3f2c292092e2f06cad25',
+                  'a65e812d5ffdc36f41dcaee5297a86d02cd12004759d89815c5c0c0f406028a3',
               ]),
           ]
 
