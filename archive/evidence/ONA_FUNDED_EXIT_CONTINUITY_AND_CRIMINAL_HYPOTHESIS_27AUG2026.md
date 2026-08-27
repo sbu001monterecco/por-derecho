@@ -73,3 +73,13 @@ This evidence spine should be linked from the ONA funded-exit pages, the 7 June 
 ## 8. Proof still required
 
 Priority source production remains: exact executed ONA/Clubotel agreements and annexes; ONA/Clubotel signatory/legal-person map; exact personación and reposición filings and orders; court-stamped funded-exit submissions; native lender/security packages; access/security logs 6-20 June 2018; lender/buyer explanations for delay/repricing/abandonment; and a quantitative bridge from recognized liabilities to proposed exit funding and closing requirements.
+
+## 9. Continuity audit — 27 August 2026
+
+Publication authority was exercised through PR #1134 and merge commit `c6073a970fe10f32d77c1f538235a7b041983fb6`. The publication package is additive: it created this canonical evidence spine plus bilingual reader hubs at `/es/ona-salida-financiada-continuidad-penal/` and `/en/ona-funded-exit-continuity-criminal-analysis/`; no pre-existing public route or evidential file was deleted or renamed.
+
+The canonical record now preserves the unique reasoning from the originating thread: ONA/Clubotel as part of a coordinated funded-exit architecture rather than merely an unrelated rival bidder; the Carlos Sanz -> Administrador Concursal exchange of 26-27 April 2018; the existence of the ONA architecture before 7 June; the post-7-June debt/financing continuity; Daniel Irigoyen's court/concurso role; Cuatrecasas' documented ONA-reference point; Clubotel's later personación; and the actor-specific criminal-investigation test.
+
+The earlier PR #1133 was superseded because `main` advanced in parallel while the first branch was being prepared. It is not the publication authority. Future threads should start from current `main`, PR #1134 / merge `c6073a970fe10f32d77c1f538235a7b041983fb6`, and this canonical record rather than reconstructing the chain from chat memory.
+
+**Continuity status:** repository-preserved and merged. Live Pages verification remains a separate deployment check; search-engine discovery may lag the actual Pages deployment. Some older conversation uploads have expired, so any future line-by-line re-extraction of those exact uploads requires re-upload; this does not invalidate the repository-preserved derivatives already published.
