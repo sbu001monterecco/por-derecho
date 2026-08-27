@@ -1,6 +1,7 @@
 {
-  "schema": "por-derecho.aweswell-filed-accounts-public-data.v1",
+  "schema": "por-derecho.aweswell-filed-accounts-public-data.v2",
   "publication_date": "2026-08-27",
+  "last_accounting_interpretation_update": "2026-08-27",
   "entity": {
     "canonical_name": "Aweswell Limited",
     "companies_house_name": "AWESWELL LIMITED",
@@ -17,7 +18,13 @@
       "name": "MONTERECCO SUN PARK LIMITED",
       "from": "2011-07-25",
       "to": "2014-06-03"
-    }
+    },
+    "forbidden_generated_name": "Oswell Limited",
+    "search_aliases_only": [
+      "Oswell",
+      "Oswell UK",
+      "Aweswell UK"
+    ]
   },
   "latest_accounts": {
     "made_up_to": "2025-07-31",
@@ -31,7 +38,8 @@
       "internal_pages": 69,
       "sha256": "5cc4f7564f05e836c8a42bcd830f09930cc41dce83a447aac120ac2657fc6dea"
     },
-    "companies_house_document_pages_listed": 70
+    "companies_house_document_pages_listed": 70,
+    "source_preservation_rule": "The supplied PDF is preserved unchanged. Independent technical clarifications are published separately."
   },
   "statement_of_financial_position_gbp": {
     "fixed_asset_underlying_group_asset_interest": 1,
@@ -46,17 +54,138 @@
       "Luchy Playa Blanca, S.L.U. (LPB)",
       "Matkator, S.L. (source literal; repository canonical form: Matkator, S.L.U.)"
     ],
-    "reported_context": "Hotel Sun Park / MYND Yaiza and associated hotel, property, commercial and recovery interests",
-    "valuation_position": "The directors state that the £1 underlying group asset interest is provisional and intended to be updated following forensic revaluation."
+    "reported_context": "Hotel Sun Park / MYND Yaiza and associated hotel, property, commercial, creditor, income and recovery interests",
+    "valuation_position": "The directors describe the £1 underlying group asset interest as symbolic, prudential, provisional and non-valuation-based, and state an intention to update values when fuller evidence and forensic work permit.",
+    "status": "These are filed directors' statements, not Companies House findings, an audit opinion or a judicial determination."
+  },
+  "accounting_interpretation_control": {
+    "canonical_statement": "The £1 reported by Aweswell Limited is the directors' provisional, prudential and non-valuation carrying presentation under constrained reporting conditions. It is not evidence that Sun Park / MYND Yaiza, the hotel business, the group, any property interest, operating income, creditor position, recovery claim or damages claim had a market, fair, recoverable, commercial or patrimonial value of £1 or zero. It is not a waiver, abandonment, admission, estoppel, recovery cap, insolvency finding, culpability finding or judicial determination. Any replacement or expansion of the carrying amount must comply with the applicable asset-specific recognition, control, classification and reliable-measurement requirements and with the higher threshold applicable to contingent recoveries.",
+    "one_pound_is_not": [
+      "market value",
+      "fair value",
+      "recoverable amount",
+      "enterprise value",
+      "hotel value",
+      "damages value",
+      "recovery cap",
+      "waiver",
+      "abandonment",
+      "judicial finding",
+      "Companies House valuation"
+    ],
+    "recognition_path": [
+      {
+        "class": "property_and_business_assets",
+        "rule": "Establish exact reporting-entity title or control, consolidation perimeter, classification and reliable measurement before recognition or revaluation.",
+        "evidence": [
+          "registry and title reconciliation",
+          "transaction documents",
+          "entity-by-entity ledgers",
+          "independent professional valuation",
+          "impairment and derecognition analysis"
+        ]
+      },
+      {
+        "class": "hotel_income",
+        "rule": "Recognise earned, attributable and reliably measurable income in the correct entity and period. Future projected income is not booked wholesale as a present asset.",
+        "evidence": [
+          "hotel revenue and cost records",
+          "operating agreements",
+          "bank and payment records",
+          "account of profits or receivable analysis"
+        ]
+      },
+      {
+        "class": "damages_restitution_and_compensation",
+        "rule": "Do not recognise a contingent asset until inflow is virtually certain; disclose a probable but not virtually certain inflow when practicable. Apply the specific virtually-certain threshold to third-party compensation for impaired, lost or surrendered property.",
+        "evidence": [
+          "binding judgment or award",
+          "executed settlement",
+          "acknowledgment of liability",
+          "expert quantum report",
+          "enforceability and collectability evidence"
+        ]
+      },
+      {
+        "class": "later_accounting",
+        "rule": "Distinguish prior-period error correction, change in estimate, revaluation and recognition in a later period. A later recovery is not automatically a restatement of the 2025 accounts."
+      }
+    ],
+    "incremental_bridge": [
+      "identify right and reporting entity",
+      "establish title or control",
+      "classify the item",
+      "measure reliably",
+      "apply the relevant probability or virtual-certainty threshold",
+      "recognise or disclose in the correct period",
+      "reconcile each increment from the £1 presentation"
+    ]
+  },
+  "technical_citation_clarification": {
+    "filed_document_preserved": true,
+    "issue": "The filed discussion of prudence refers to FRS 102 paragraphs 17.21-17.23.",
+    "clarification": "In the January 2022 edition, paragraphs 17.21-17.23 address useful life and depreciation methods, not the general prudence principle.",
+    "relevant_references": {
+      "prudence": "FRS 102 paragraph 2.9",
+      "recognition_and_reliable_measurement": "FRS 102 paragraphs 2.27-2.32",
+      "consolidation": "FRS 102 Section 9",
+      "investment_property": "FRS 102 Section 16",
+      "property_plant_and_equipment": "FRS 102 Section 17, including 17.4 and 17.15-17.15F",
+      "contingent_assets": "FRS 102 paragraphs 21.13 and 21.16",
+      "errors_and_estimates": "FRS 102 Section 10"
+    },
+    "status": "Independent repository technical note; not an audit opinion and not an amendment of the filed PDF."
+  },
+  "spanish_subsidiary_boundary": {
+    "may_evidence": [
+      "the UK directors' stated group perimeter",
+      "reporting constraints and reservation of rights",
+      "the parent's stated funding, creditor, investor and recovery position"
+    ],
+    "does_not_by_itself": [
+      "formulate LPB's Spanish annual accounts",
+      "approve LPB's Spanish annual accounts",
+      "deposit LPB's Spanish annual accounts",
+      "replace LPB's Spanish annual accounts during liquidation",
+      "determine title, liability, insolvency culpability or recovery quantum in Spain"
+    ]
+  },
+  "third_party_misuse_control": {
+    "test": "A use is materially incomplete or potentially misleading when it converts the £1 carrying presentation into a substantive statement about worth, solvency, ownership, loss, waiver, standing, liability or damages while omitting the provisional and non-valuation qualification.",
+    "unsupported_examples": [
+      "Aweswell valued the hotel at £1",
+      "the group assets were worth zero or £1",
+      "the accounts admit no loss or damages",
+      "the accounts waive title, income or recovery",
+      "the accounts prove LPB had no economic value",
+      "the accounts cap recovery at £1",
+      "Companies House confirmed the hotel value"
+    ],
+    "response_steps": [
+      "preserve the exact statement and source",
+      "cite the complete filing qualification",
+      "distinguish carrying amount, valuation and contingent-claim recognition",
+      "request written correction",
+      "preserve any refusal",
+      "refer material litigation, lending, tax, regulatory or reputational uses to legal and accounting advisers"
+    ],
+    "intent_rule": "Do not attribute bad faith or deliberate misuse without evidence of intent."
   },
   "source_boundaries": [
     "Companies House register facts and filing events are separated from directors' statements within the filing.",
-    "Companies House states that it does not check the accuracy of information filed.",
-    "The £1 statutory presentation is not represented as a market valuation, recovery cap or judicial finding.",
+    "Companies House does not independently verify the asserted Spanish recovery position or values.",
+    "The £1 presentation is not represented as a market valuation, recovery cap or judicial finding.",
+    "Full unencumbered ownership, hotel-income entitlement and damages are recovery positions requiring title, control, quantum and forum-specific proof.",
     "The supplied source copy has 69 internally numbered pages while Companies House lists 70 pages; no cause is inferred."
   ],
   "official_sources": {
     "company_record": "https://find-and-update.company-information.service.gov.uk/company/07716847",
-    "filing_history": "https://find-and-update.company-information.service.gov.uk/company/07716847/filing-history"
+    "filing_history": "https://find-and-update.company-information.service.gov.uk/company/07716847/filing-history",
+    "frs_102": "https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/",
+    "amended_accounts_guidance": "https://www.gov.uk/annual-accounts/corrections-and-amendments"
+  },
+  "repository_controls": {
+    "unitary_digest_prompt": "archive/AWESWELL_UNITARY_ACCOUNTING_DIGEST_PROMPT_27AUG2026.md",
+    "recognition_and_misuse_rule": "archive/AWESWELL_ACCOUNTING_RECOGNITION_AND_MISUSE_RULE_27AUG2026.md"
   }
 }
