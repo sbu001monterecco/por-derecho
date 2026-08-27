@@ -14,4 +14,10 @@
   visuals.async = false;
   visuals.setAttribute('data-ricpe-cnmv-visual-evidence-loader', '20260827');
   document.head.appendChild(visuals);
+
+  const perimeter = document.createElement('script');
+  perimeter.src = new URL('ricpe-perimeter-media-20260827.js?v=20260827a', current.src).href;
+  perimeter.async = false;
+  perimeter.setAttribute('data-ricpe-perimeter-media-loader', '20260827');
+  document.head.appendChild(perimeter);
 })();
