@@ -10,10 +10,44 @@ on:
       - 'ops/PR_RECONCILIATION_LEDGER.json'
       - 'assets/data/material-updates-v1.json'
       - 'assets/data/matter-identity-registry-v1*.json'
-      - 'es/registro-identidad-materia/index.html'
-      - 'en/matter-identity-registry/index.html'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
+      - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'es/concurso-36-2012-magistrado-juez/**'
+      - 'en/insolvency-36-2012-mercantile-court-1/**'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/**'
+      - 'es/concurso-36-2012-masa-activa-2018-2021/**'
+      - 'en/insolvency-36-2012-active-estate-2018-2021/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/**'
+      - 'en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/**'
+      - 'en/unitary-criminal-hypothesis-2011-present/**'
+      - 'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-357-v1.json'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
       - 'es/actualizaciones/index.html'
       - 'en/updates/index.html'
+      - 'sitemap.xml'
+      - 'sitemap-cgpj.xml'
+      - 'sitemap-judicial-spine.xml'
+      - 'sitemap-meeting-point.xml'
       - 'sitemap-unitary-control-plane.xml'
       - 'robots.txt'
       - 'scripts/validate_unitary_control_plane.py'
@@ -30,10 +64,44 @@ on:
       - 'ops/PR_RECONCILIATION_LEDGER.json'
       - 'assets/data/material-updates-v1.json'
       - 'assets/data/matter-identity-registry-v1*.json'
-      - 'es/registro-identidad-materia/index.html'
-      - 'en/matter-identity-registry/index.html'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
+      - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'es/concurso-36-2012-magistrado-juez/**'
+      - 'en/insolvency-36-2012-mercantile-court-1/**'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/**'
+      - 'es/concurso-36-2012-masa-activa-2018-2021/**'
+      - 'en/insolvency-36-2012-active-estate-2018-2021/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/**'
+      - 'en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/**'
+      - 'en/unitary-criminal-hypothesis-2011-present/**'
+      - 'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-357-v1.json'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
       - 'es/actualizaciones/index.html'
       - 'en/updates/index.html'
+      - 'sitemap.xml'
+      - 'sitemap-cgpj.xml'
+      - 'sitemap-judicial-spine.xml'
+      - 'sitemap-meeting-point.xml'
       - 'sitemap-unitary-control-plane.xml'
       - 'robots.txt'
       - 'scripts/validate_unitary_control_plane.py'
@@ -75,16 +143,24 @@ jobs:
               'ops/PRODUCTION_STATUS.json',
               'ops/PR_RECONCILIATION_LEDGER.json',
               'assets/data/material-updates-v1.json',
+              'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json',
+              'assets/data/caepr-caret-alberto-meeting-point-357-v1.json',
+              'assets/data/caepr-caret-unitary-digest-v1.json',
               'publication-manifests/unitary-control-plane-sync-20260825.json',
               'publication-manifests/unitary-enterprise-rdm-manifest-analysis-20260826.json',
           ]:
               json.loads(Path(path).read_text(encoding='utf-8'))
+          ET.parse('sitemap.xml')
+          ET.parse('sitemap-cgpj.xml')
+          ET.parse('sitemap-judicial-spine.xml')
+          ET.parse('sitemap-meeting-point.xml')
           ET.parse('sitemap-unitary-control-plane.xml')
           print('JSON/XML syntax: PASS')
           PY
 
-      - name: Verify public exact markers and structured state
-        if: github.event_name != 'pull_request'
+      - name: Verify preserved historical public snapshot markers
+        id: historical_readback
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           BASE: https://sbu001monterecco.github.io/por-derecho
         shell: python
@@ -92,10 +168,11 @@ jobs:
           import json, os, time, urllib.request
 
           base=os.environ['BASE'].rstrip('/')
-          # The 194-ID registry is canonical; the former 185-ID readback is historical evidence only.
+          # The source/static registry is 204 IDs; this step reads back the
+          # preserved 26-Aug historical promotion and does not attest GITHUB_SHA.
           text_checks=[
-            ('/es/registro-identidad-materia/',['data-static-registry-counts="194-86-66-10-15-17"','data-registry-stat="TOTAL">194','Los <strong>194 IDs</strong>']),
-            ('/en/matter-identity-registry/',['data-static-registry-counts="194-86-66-10-15-17"','data-registry-stat="TOTAL">194','The <strong>194 IDs</strong>']),
+            ('/es/registro-identidad-materia/',['data-static-registry-counts="204-87-71-10-18-18"','data-registry-stat="TOTAL">204','Los <strong>204 IDs</strong>']),
+            ('/en/matter-identity-registry/',['data-static-registry-counts="204-87-71-10-18-18"','data-registry-stat="TOTAL">204','The <strong>204 IDs</strong>']),
             ('/es/actualizaciones/',['Última actualización material','<strong>26 agosto 2026</strong>','ALG-ENT-018']),
             ('/en/updates/',['Latest material update','<strong>26 August 2026</strong>','ALG-ENT-018']),
             ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','2026-08-26','ALG-ENT-018']),
@@ -122,15 +199,15 @@ jobs:
               try:
                 body=fetch(url); missing=[m for m in markers if m not in body]
                 if not missing:
-                  print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers'); break
+                  print(f'HISTORICAL SNAPSHOT MARKERS MATCH {url} :: {len(body)} bytes :: {len(markers)} markers'); break
                 last=f'missing {missing}'
               except Exception as exc: last=str(exc)
               time.sleep(10)
             else: failures.append(f'{url}: {last}')
 
           state_url=base+'/ops/CURRENT_UNITARY_STATE.json'
-          merge_sha='77e2ba300af45a953947160af63283a64512e876'
-          tree_sha='4f0ac26c5548ae44c68933306c68165cbb6c973e'
+          historical_promotion_merge_sha='77e2ba300af45a953947160af63283a64512e876'
+          historical_promotion_tree_sha='4f0ac26c5548ae44c68933306c68165cbb6c973e'
           last=''
           for _ in range(12):
             try:
@@ -139,15 +216,15 @@ jobs:
               assert state.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert state.get('status')=='LIVE_VERIFIED'
               counts=state.get('identity_registry',{}).get('counts',{})
-              assert counts=={'total':194,'PERSON':86,'ORGANISATION':66,'STRUCTURE':10,'INSTITUTION':15,'PROCEEDING':17}
+              assert counts=={'total':204,'PERSON':87,'ORGANISATION':71,'STRUCTURE':10,'INSTITUTION':18,'PROCEEDING':18}
               repository=state.get('repository',{})
-              assert repository.get('source_publication_merge_sha')==merge_sha
-              assert repository.get('verified_tree_sha')==tree_sha
+              assert repository.get('source_publication_merge_sha')==historical_promotion_merge_sha
+              assert repository.get('verified_tree_sha')==historical_promotion_tree_sha
               promoted=state.get('promoted_material_publication',{})
               assert promoted.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert promoted.get('state')=='LIVE_VERIFIED'
-              assert promoted.get('publication_merge_sha')==merge_sha
-              assert promoted.get('publication_tree_sha')==tree_sha
+              assert promoted.get('publication_merge_sha')==historical_promotion_merge_sha
+              assert promoted.get('publication_tree_sha')==historical_promotion_tree_sha
               assert promoted.get('pages_run_id')==32942972472
               assert promoted.get('live_verification_run_id')==32942975508
               assert promoted.get('live_verification_job_id')==98097657687
@@ -157,7 +234,7 @@ jobs:
               assert material.get('public_parity')=='2026-08-26_LIVE_VERIFIED'
               publication=state.get('publication',{})
               pages=publication.get('last_pages_deployment',{})
-              assert pages.get('sha')==merge_sha and pages.get('tree_sha')==tree_sha
+              assert pages.get('sha')==historical_promotion_merge_sha and pages.get('tree_sha')==historical_promotion_tree_sha
               assert pages.get('run_id')==32942972472 and pages.get('run_number')==1128
               assert pages.get('completed_at')=='2026-08-26T07:29:45Z'
               readback=publication.get('current_sha_edge_readback',{})
@@ -165,11 +242,11 @@ jobs:
               assert readback.get('workflow_run_id')==32942975508
               assert readback.get('workflow_run_number')==4
               assert readback.get('job_id')==98097657687
-              assert readback.get('head_sha')==merge_sha and readback.get('tree_sha')==tree_sha
+              assert readback.get('head_sha')==historical_promotion_merge_sha and readback.get('tree_sha')==historical_promotion_tree_sha
               assert readback.get('completed_at')=='2026-08-26T07:29:55Z'
               assert readback.get('verified_url_count')==21
               assert len(publication.get('live_urls',[]))==21
-              print(f'LIVE VERIFIED {state_url} :: structured JSON :: state={readback.get("state")}')
+              print(f'HISTORICAL SNAPSHOT STRUCTURE MATCHES {state_url}')
               break
             except Exception as exc:
               last=str(exc); time.sleep(10)
@@ -184,8 +261,8 @@ jobs:
               assert manifest.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert manifest.get('current_state')=='LIVE_VERIFIED'
               assert manifest.get('status')=='live_verified'
-              assert manifest.get('publication_merge_sha')==merge_sha
-              assert manifest.get('publication_tree_sha')==tree_sha
+              assert manifest.get('publication_merge_sha')==historical_promotion_merge_sha
+              assert manifest.get('publication_tree_sha')==historical_promotion_tree_sha
               assert manifest.get('pages_run_id')==32942972472
               assert manifest.get('live_verification')=='passed_exact_no_cache'
               allegation=manifest.get('controlling_allegation',{})
@@ -198,11 +275,11 @@ jobs:
               assert readback.get('workflow_run_id')==32942975508
               assert readback.get('workflow_run_number')==4
               assert readback.get('job_id')==98097657687
-              assert readback.get('head_sha')==merge_sha and readback.get('tree_sha')==tree_sha
+              assert readback.get('head_sha')==historical_promotion_merge_sha and readback.get('tree_sha')==historical_promotion_tree_sha
               assert readback.get('completed_at')=='2026-08-26T07:29:55Z'
               assert readback.get('verified_url_count')==21
               assert len(manifest.get('live_urls',[]))==21
-              print(f'LIVE VERIFIED {manifest_url} :: structured JSON')
+              print(f'HISTORICAL SNAPSHOT STRUCTURE MATCHES {manifest_url}')
               break
             except Exception as exc:
               last=str(exc); time.sleep(10)
@@ -213,18 +290,22 @@ jobs:
 
       - name: Summary
         if: always()
+        env:
+          HISTORICAL_READBACK_OUTCOME: ${{ steps.historical_readback.outcome }}
         run: |
           {
             echo '## Unitary control-plane verification'
             echo
-            echo "- Event: $GITHUB_EVENT_NAME"
-            echo "- SHA: $GITHUB_SHA"
-            echo '- Control: `PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED`'
-            echo '- Evidence: merge `77e2ba300af45a953947160af63283a64512e876`, Pages `32942972472`, verifier `32942975508` / job `98097657687`.'
-            echo '- Identity denominator: `194 / 86 / 66 / 10 / 15 / 17`'
+            echo "- Validation event: $GITHUB_EVENT_NAME"
+            echo "- Validation checkout SHA: $GITHUB_SHA (not attested here as the deployed Pages SHA)"
+            echo '- Historical snapshot control: `PD-UNITARY-STATE-20260826-01`.'
+            echo '- Preserved historical evidence: merge `77e2ba300af45a953947160af63283a64512e876`, Pages `32942972472`, verifier `32942975508` / job `98097657687`.'
+            echo '- Identity source/static denominator: `204 / 87 / 71 / 10 / 18 / 18`; prior live snapshot: `194 / 86 / 66 / 10 / 15 / 17`.'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
-              echo '- Source parity and syntax verified; public readback is reserved for the post-merge main push.'
+              echo '- Source parity and syntax verified; no public deployment attestation was run.'
+            elif [ "$GITHUB_EVENT_NAME" = 'push' ] && [ "$GITHUB_REF" = 'refs/heads/main' ] && [ "$HISTORICAL_READBACK_OUTCOME" = 'success' ]; then
+              echo '- The preserved historical snapshot was read back; this does not attest the current checkout SHA and is not a current-publication closeout.'
             else
-              echo '- Public ES/EN identity and 26-Aug update routes, promoted state and manifest JSON, updates JSON, sitemap and robots were verified.'
+              echo '- No public readback was completed; this run makes no deployed-state claim.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"

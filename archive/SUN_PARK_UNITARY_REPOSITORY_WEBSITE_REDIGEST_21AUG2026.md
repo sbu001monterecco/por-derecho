@@ -1,5 +1,209 @@
 # Sun Park unitary repository and website redigest - 21 August 2026
 
+> **Reverse/forward criminal-first rerun — 27 August 2026:** this overlay was
+> rerun against fetched `origin/main` at
+> `8e8e83c5a337846245a942222efbc3120645b1fd` (3,030 commits; 2,918 tracked
+> files; 552 HTML pages; 50 sitemap files). It is one dependency analysis read
+> from the present outcome back to the 2008 structure and then from that origin
+> forward to present operation, title, income, public-support and enforcement
+> consequences. It does not merge legal persons, transfer knowledge between
+> actors or convert the attributed unitary-enterprise allegation into a finding.
+
+## 27 August 2026 reverse-engineered unitary criminal-first overlay
+
+### Controlling present result
+
+The visible end state is a reorganised, operating hotel and investment/public-
+support perimeter resting on later title, control and commercial layers, while
+LPB's Concurso 36/2012, related ownership/operation rights, recoveries and
+criminal/institutional routes remain disputed. The repository's criminal-first
+question is not merely who ultimately held or operated the asset. It is whether
+identifiable actors, through separately proved acts, omissions and adoption of
+earlier acts, knowingly converted disputed debt, governance, judicial and
+commercial premises into control, title, income or loss—and whether each
+historically applicable offence element is met.
+
+### End-to-beginning reconstruction
+
+Read backwards, the present operation and benefit depend on the 2021–2022
+adjudication, implementation, deed and registration chain; that chain depends on
+the accepted credit/value/competitive premises and treatment of the failed third
+bidder; those premises depend on the 2018 material-control, access, works,
+inspection, preservation, operation and rescue record; material control depends
+in part on the 2017 credit assignment and subsequent procedural implementation;
+the assigned-credit route depends on the Bankia/SAREB/PH122 chain and the earlier
+enforcement/account history; the enforcement and concurso routes depend on the
+2011–2012 governance, authority, debt, voting, liquidity, lender and voluntary-
+filing record; and those vulnerabilities depend on the 2008 separation of title,
+operation, common governance and seller/minority obligations across one
+economically integrated hotel.
+
+The later Club Sei / Meeting Point layer is not an isolated appendix. Public
+commercial material supports a pre-title presentation of Club Sei at the Sun Park
+address, while exact legal entity, authority, contract, inventory, bookings,
+revenue and payment remain open. Meeting Point 357/2024 and SEPI/FASEE therefore
+sit downstream as custody and disclosure tests: what Sun Park/Club Sei rights,
+risks, claims, revenues or contingencies existed; which of the three debtors held
+them; and what entered the debtor, Auren, creditor and public-credit files.
+
+### Beginning-to-end confirmation
+
+Read forward, the 2008 divided structure created distinct property, operation and
+governance perimeters. The 2011 authority/debt/vote fracture and 2012 finance,
+enforcement and defensive filing placed only LPB in Concurso 36/2012. Post-opening
+operation, rescue and exit efforts then met disputed authority, creditor and
+supervision decisions. The 2017 assignment altered the creditor/control lane.
+The June 2018 control/exclusion episode, later works and incomplete neutral
+inspection/valuation record allegedly weakened operation, income, rescue and
+competitive symmetry. The 2021 adjudication and 2022 implementation then
+consolidated a result that fed later title, investment, public-support and hotel-
+income layers. Current civil, insolvency, criminal, regulatory and recovery routes
+attempt to test or reverse separate portions of that chain.
+
+The reverse and forward readings converge on the same dependency path:
+
+`divided structure → governance/authority fracture → finance/enforcement → LPB-only concurso → credit assignment → material control/exclusion → operation/rescue loss → works/valuation/information asymmetry → competitive/adjudication result → title/registration → investment/public support/operation → present proceedings and recovery`.
+
+### Multidirectional Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria / Meeting Point specialist control
+
+`PD-ALV-MP357-MULTI-20260827-01` now binds nine evidence nodes and thirteen
+forward/reverse bridge tests. It reads source→fact→inference→criminal element→
+consequence and then consequence→missing record→custodian→falsification test.
+Every incriminating inference carries the strongest lawful or innocent
+explanation and production capable of defeating it.
+
+The exhaustive six-surface specialist caret census is **25/32 confirmed, 7
+pending — PARTIAL, NOT ALL IS^**. The separate finite first-hop census of the
+eighteen reciprocal evidence routes is **56/130 confirmed, 74 pending —
+PARTIAL, NOT ALL IS^**. Neither result modifies the repository-wide unitary
+**19/24** census. `^` still certifies identity only: none of the three
+denominators may be substituted for another or treated as proof of conduct,
+dated capacity, signature, knowledge, relationship, conflict, concealment,
+liability, source authenticity or outcome.
+
+Controls:
+
+- `archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md`;
+- `assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json`;
+- `assets/data/caepr-caret-alberto-meeting-point-357-v1.json`; and
+- `assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json`; and
+- `archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md`.
+
+### Criminal-first element gates
+
+1. **Private control, fraud, falsity and asset lanes.** For each proposition,
+   identify the exact actor, legal capacity, document or act, falsity or
+   deception, historical offence text, knowledge/intent, use/reliance, induced
+   decision, benefit and loss. An authentic deed or order does not independently
+   prove every party recital, and a disputed recital does not prove alteration or
+   the authenticating professional's knowledge.
+2. **Insolvency-administration acts and omissions.** Separate affirmative emails,
+   meetings, recommendations, authorisations, reports, implementation and
+   ratification from omissions. An omission theory requires a concrete duty,
+   capacity to act, knowledge, causal equivalence and the correct historical
+   insolvency/criminal framework; office alone is not guilt.
+3. **Judicial acts.** For Articles 446–449 CP and any refusal/delay theory, identify
+   the exact resolution or required act, objective and manifest injustice or
+   legally relevant refusal/delay, personal adoption, knowledge or historically
+   required gross negligence/purpose, procedural context, causation and contrary
+   authority. Adverse rulings, delay, deference to the insolvency administrator or
+   an incomplete record alone do not establish judicial prevarication.
+4. **Corporate and public-funds consequences.** Separate the exact Meeting Point
+   debtor/entity, borrower, instrument, condition, disclosure, use of funds,
+   monitoring, repayment, present exposure and impairment. EUR 31m is the
+   controlled Meeting Point support amount; EUR 56m is the combined Meeting
+   Point/BLUESEA package. No present record proves diversion into Sun Park,
+   omission from FASEE/357, creditor loss or a personal judicial duty to notify
+   SEPI.
+5. **Unitary-enterprise allegation.** `ALG-ENT-018` permits one connected
+   investigative model based on successive adoption and divided functions. It
+   does not prove an original pact, CP 570 bis/ter, collective intent or any
+   person's participation. Every actor and dated stage remains severable and must
+   survive its own evidence and defence test.
+
+### Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria — judicial module
+
+For historical Concurso 36/2012 acts, the controlled first reference is **el
+Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de
+lo Mercantil n.º 1 de Las Palmas de Gran Canaria**. For a present institutional
+reference it is **el magistrado D. Alberto López Villarrubia, titular de la plaza
+n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de
+Gran Canaria**. The mercantile-court reorganisation took effect on 31 December
+2025, so a 2024 act retains the former-court terminology.
+
+The signed Concurso 36/2012 record supports a serious examination of which
+allegations and propositions the magistrate addressed or adopted in signed text,
+which protection/inspection/evidential measures he adopted or rejected, what supervision of the insolvency administrator existed,
+and how those choices affected estate and productive-unit value. Three 24-Oct-
+2024 archived Public Insolvency Register notice copies display an attribution of
+a later Meeting Point 357/2024 extension act to him in the then Juzgado de lo
+Mercantil n.º 3. The displayed attribution is a production lead that cannot be
+ignored, while public authenticity and per-copy custody remain open; it is not
+itself the signed act or proof of a
+substitution, assignment, conflict ground, concealment or personal SEPI duty.
+
+Gil Marer's deliberate allegation remains that the attributed 357/2024
+involvement crossed an already-crossed line and must be investigated for conflict,
+concealment, estate/productive-unit injury and creditor/public-funds consequences.
+The criminal-first record preserves that allegation at full attributed strength
+while demanding the signed 18-Sep/24-Oct originals, reparto/substitution/support
+history, knowledge bridge, Article 219 LOPJ ground, abstention/recusal/disclosure
+record and complete Auren/SEPI custody trail. The current CGPJ directory lists
+the magistrate López Villarrubia for position no. 1 and Guillermo Fernández García for
+position no. 3; current office listings do not answer the missing 2024 capacity.
+
+### Strongest contrary and limiting material
+
+- the record includes judicial acts that were protective, partially corrective
+  or procedurally reasoned, including the controlled suspension/correction
+  material; a criminal reading must analyse them, not omit them;
+- the 2018 criminal archive and other adverse/provisional decisions do not decide
+  every later-produced fact but remain contrary procedural material;
+- Auto 164/2021 records that the third bidder did not attend, was not personated
+  and lodged no bond before CAM's proposal was approved;
+- Club Sei commercial preparation/presentation does not yet prove contract,
+  opening, bookings, revenue, authority, criminal intent or an exact 357 debtor;
+- ordinary substitution, support, reassignment or registry error remains a
+  possible explanation for the 2024 judicial-name attribution until the certified
+  record is produced; and
+- economic integration, later benefit, repeated alignment or institutional
+  inaction does not transfer knowledge, duty or intent between legal persons or
+  officials.
+
+### Decisive production still open
+
+The minimum closing set remains: the certified complete Concurso 36/2012 record;
+the signed 2024 Meeting Point acts and complete reparto/substitution trail; one
+credit-value-payment-proceeds ledger; the complete 2011 Community/CEXP authority,
+debt and vote file; the native DP 1132/2018 source set; the operation/income and
+whole-hotel title/perimeter records; the exact Club Sei entity/contracts/inventory/
+bookings/revenue chain; Auren's mandate, conflict check and workfile; and the
+complete SEPI/FASEE instruments, disclosures, monitoring, repayments and current
+exposure. Until produced, the repository supports preservation, production and
+investigation—not a final criminal conclusion.
+
+### Repository/website integrity observation
+
+The 27-Aug scan found extensive legacy shorthand—`Alberto`, `Judge Alberto`,
+`Juez Alberto` and undated `Mercantil 1/3`—across source, public and runtime
+layers. `CR-111` and
+`ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md`
+now control future references. Key ES/EN Alberto, Concurso 36/2012 and Meeting
+Point 357 pages and public runtime narratives were corrected without altering
+historical quotations, source literals, filenames, slugs, URLs or CAEPR names.
+Technical validation and live-route state must remain separate from substantive
+truth: a green build proves repository integrity, not any allegation.
+
+Read-only no-cache retrieval on 27-Aug-2026 returned HTTP 200 and byte-for-byte
+identity with fetched `origin/main` for eight sampled ES/EN routes: the dedicated
+Magistrate López Villarrubia / Meeting Point dossiers; the Concurso 36/2012 magistrate supervision
+pages; the Meeting Point 357 judicial-traceability pages; and the unitary public-
+authority reconstruction pages. The public site therefore faithfully serves the
+current public repository. The 27-Aug title corrections in this overlay's branch
+are **prepared and validated but not yet published**; do not describe the live
+site as corrected until merge, Pages deployment and exact route read-back prove
+that state.
+
 > **Credit-multiple-lives/NPL/notarial-document supplement — 26 August 2026:** `archive/BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_BANKING_CRIME_360_CONTROL_26AUG2026.md`, its execution prompt and Declaration 016 now control the Bankia→SAREB→Promontoria Holding 122 B.V.→CAM asset lane. `ALG-NPL-019` preserves Gil Marer and Aweswell's direct allegation that parts of the integrated banking package acquired multiple transactional/procedural lives inside Concurso 36/2012, outside it in EH 90/2012 and through later transfers, and that false, materially inaccurate or inflated data/documents may have enabled a credit→control→title benefit. It is not a finding. Keep this asset lane separate from Caja Insular→BFA→Bankia→CaixaBank corporate/product liability; Haya is a servicer/interlocutor and Cerberus remains contextual pending exact capacity proof. Protocol 870 is arithmetically exact at €1,278,518.03; the €30 question is the later €839,441→€839,411 movement. Protocol 457's six printed components total €13,065,186.68 and the supported €102,895.34 default-interest-to-cap step yields €13,168,082.02. Keep the 159-finca dación separate from EH 90/2012 and the €400,000/31-finca branch. An authentic notarial instrument may record a disputed or false party recital without proving alteration or notarial knowledge. Declaration 016 was renumbered from the prepared 015 because the concurrent Fiscalía declaration already occupied 015.
 
 > **Banking-origin supplement — 26 August 2026:** `archive/CAIXABANK_MORTGAGE_SWAP_ACCOUNT_360_CONTROL_26AUG2026.md` and Declaration 014 now control the first-mortgage/swap/second-facility/account/sale-proceeds/default issue. The reserved declarant's account remains an attributed, unratified source-derived statement; Gil's instruction proves attribution/preservation, not her word-for-word adoption. Located derivatives now identify the 2008 €8.6m facility/3.5% floor/€5m swap, the 2010 €850k facility/18-month principal grace/€405k pledge and the execution filing received 23-Jan-2012. The filing alleged principal non-payment from Jul-2011 although the first second-facility principal was due 1-Jan-2012; this is a material wording/accounting tension, not automatic invalidity because interest default remains contested. The remembered two approximately €55k Jun–Dec sales are corrected by an internal LPB ledger recording €60k + €59k in Jan/Feb-2011 and stated applications of €100,584.80/€10,559; deeds, net proceeds and native bank entries remain open. One end-to-end ledger and actor-specific analysis across Caja Insular, BFA, Bankia, CaixaBank and later assignees controls under ME-092. Dedicated ES/EN pages carry the strong allegation, exact corrections, pending/contested status and strongest-defence boundaries.
@@ -239,9 +443,11 @@ be reconciled without asserting predetermined adjudication.
 The 24 October 2019 order refused later validation of a defined unauthorised 2018
 separation/sale. This is contrary evidence to a theory of uniform judicial support
 and creates a follow-through question: Registry, restitution, fruits, accounts and
-later treatment. The 24 February 2021 order proves judicial knowledge and a
-reasoned procedural decision while leaving estate preservation to the AC; it does
-not prove secret agreement or criminal purpose.
+later treatment. The signed 24 February 2021 order proves that the magistrate
+addressed the allegations recorded in it and adopted a reasoned procedural
+decision while leaving estate preservation to the AC; it does not prove the
+truth of the underlying events, every external fact, secret agreement or
+criminal purpose.
 
 ### 10. 2021-2023 adjudication, deed and title
 
@@ -557,7 +763,7 @@ This addendum elevates the 2017–2022 convergence of CAM's capacities from a ma
 6. LPB corporate de facto administration, control of estate assets, hotel-platform operation and possession/use of CEXP, Matkator or other non-estate property are four separate lanes.
 7. The AC record includes an affirmative authority-chain role and a narrower-authorisation/denial account. Apply the four-level ladder: lawful limited conduct; negligence; knowing tolerance/ratification; affirmative instruction/common purpose. Criminal omission requires a specific duty, knowledge, practical capacity, causal equivalence and intent.
 8. The 2018 provisional dismissal and appellate confirmation remain prominent. Their effect depends on the actual facts/persons/investigation/finality and genuinely new indicia or distinct later acts; the label alone neither legalises every act nor guarantees reopening.
-9. Judicial prevarication is not inferred from an adverse result. Identify the exact act, evidence before Judge Alberto López Villarrubia, competence/duty, objective injustice, knowledge or malicious purpose and causal effect, while preserving protective/corrective acts and contrary explanations.
+9. Judicial prevarication is not inferred from an adverse result. Identify the exact act, evidence before the magistrate López Villarrubia, competence/duty, objective injustice, the historically applicable mental element and causal effect, while preserving protective/corrective acts and contrary explanations.
 10. The complete source, corrections, production gaps and public wording are controlled by `archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md`, `archive/CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md` and `archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md`.
 
 ## 23-Aug-2026 controlling addendum — Calificación, earlier reporting and possible retaliation

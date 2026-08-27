@@ -1,0 +1,585 @@
+{
+  "schema": "por-derecho.alberto-meeting-point-multidirectional-evidence.v1",
+  "control_id": "PD-ALV-MP357-MULTI-20260827-01",
+  "control_date": "2026-08-27",
+  "status": "REPOSITORY_CONTROLLED_PUBLIC_SAFE",
+  "analysis_order": [
+    "CRIMINAL_FIRST",
+    "INSOLVENCY",
+    "CIVIL_RECOVERY",
+    "INSTITUTIONAL_PUBLIC_FUNDS"
+  ],
+  "scope_separation": {
+    "unitary_caret_scope": {
+      "control_id": "PD-UNITARY-REDIGEST-20260827-01",
+      "confirmed": 19,
+      "pending": 5,
+      "denominator": 24,
+      "changed_by_this_module": false
+    },
+    "specialist_caret_scope": {
+      "control_id": "PD-ALV-MP357-CARET-20260827-01",
+      "confirmed": 25,
+      "pending": 7,
+      "denominator": 32,
+      "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS"
+    },
+    "first_hop_caret_scope": {
+      "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
+      "confirmed": 56,
+      "pending": 74,
+      "denominator": 130,
+      "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
+      "changed_by_this_module": true
+    }
+  },
+  "hub_routes": {
+    "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
+    "en": "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
+  },
+  "public_render_sha256": {
+    "algorithm": "sha256(normalized six-field row joined by newline in declared field order)",
+    "field_order": [
+      "source-supported-fact",
+      "supported-investigative-inference",
+      "criminal-first-element-gate",
+      "strongest-counterevidence",
+      "falsification-production-target",
+      "reciprocal-links"
+    ],
+    "es": {
+      "AM357-N01": "c36af840e16804bc00c55f66ca5853f9684400e4277eea506802b67cabf5e3a4",
+      "AM357-N02": "0657997a9893edadd06fc3dec1407ad95c21ebd575443aeaf5270c03aa6629bf",
+      "AM357-N03": "79fec73f66d8d1cbc53c98c1fabaa9b429bc51e92abf9165148a6b0efb4c85e2",
+      "AM357-N04": "5d229d17af41180e29e7844d930b684274682925e3cce959fdd38c55cfff7942",
+      "AM357-N05": "21438b77b19981f3717762435681037a953fc6af6f9b40aedaa1c1016b7668f5",
+      "AM357-N06": "f28a47ca70e5eba8c7713a2684a638135a4830839ebc5ddfdd19637b05f5c00a",
+      "AM357-N07": "4b064fa145e0fdf1163cfe5483efae9ed4f4e40780df7dceacf34ef2e825e28a",
+      "AM357-N08": "d2e25d69fe4a8d71be4f804325f288ffea5e074aac28b7605872881430bc9994",
+      "AM357-N09": "8012fad229eb09b6613ab6b9fb9c8b2749c6ea884e8f49cff0cebd721c08475a"
+    },
+    "en": {
+      "AM357-N01": "64cddcd9625597b5be4fd9f1a7acd19c143688fd5338222013c2b2d0ebdd9d9c",
+      "AM357-N02": "a5019aff527865bc36285bedcb8bc92ac5a5d6fb67e90c0b6a560c27f69d8e4a",
+      "AM357-N03": "f885d1168f9db732b605ce15dac5721578485dd0bf5c4da7639c305b91a187f8",
+      "AM357-N04": "ef265cbb4be86b442bd5e5e8779a23cd6d5b2c38e72b85a80bca842e78ec94aa",
+      "AM357-N05": "398c322f24aa0f4f16e03dbeb531f9beab2f123ac1af2dd503afff58a4854ed0",
+      "AM357-N06": "47462b2436f838508cfd6cd0fd60ae4ac1923a2269739f9bc76340c2a5b0047f",
+      "AM357-N07": "23d61a2e650f3e6de6930243180205f16d82e11da805ba08eabf859b326acbec",
+      "AM357-N08": "13def271a3a77a8465051cf9a5a5e0c9a038d98062fd4bcbade169684a42ebf6",
+      "AM357-N09": "5c5ed82a80a35e21ece7d2e11e1b5b74ec843e9649e3fd93f4c7eedb4c17fcb2"
+    }
+  },
+  "nodes": [
+    {
+      "node_id": "AM357-N01",
+      "period": "2012-2021",
+      "title": {"es": "Actor, capacidad y supervisión judicial", "en": "Actor, capacity and judicial supervision"},
+      "primary_routes": {"es": "/es/concurso-36-2012-magistrado-juez/#ledger", "en": "/en/insolvency-36-2012-mercantile-court-1/#ledger"},
+      "evidence": {
+        "source_refs": ["C36-JUD-2012-06-06-001", "C36-JUD-2018-04-16-001", "C36-JUD-2020-05-12-001", "C36-JUD-2021-02-24-001", "C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001"],
+        "attributed_statement_refs": [],
+        "adverse_procedural_refs": ["C36-JUD-2018-06-26-001", "C36-JUD-2019-10-24-001", "C36-JUD-2019-10-24-002"],
+        "control_refs": [],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-012", "archive/MISSING_EVIDENCE_REGISTER.md#ME-058"],
+        "integrity_refs": [],
+        "external_sources": ["https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a446", "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a447"],
+        "source_registers": ["archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md", "archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "El magistrado López Villarrubia firmó actos de apertura y decisiones posteriores sobre alegaciones de obras, acceso, inspección, pericial, conservación y liquidación en Concurso 36/2012; LPB era la única concursada.",
+        "en": "Magistrate López Villarrubia signed the opening act and later decisions addressing works, access, inspection, expert, conservation and liquidation allegations in Insolvency 36/2012; LPB alone was the debtor."
+      },
+      "supported_investigative_inference": {
+        "es": "Fija actor, capacidad, fechas y aviso documentado de alegaciones concretas en actos firmados; permite comprobar si la supervisión dejó un déficit probatorio material.",
+        "en": "It fixes actor, capacity, dates and documented notice of specific allegations in signed acts, and permits testing whether supervision left a material evidential deficit."
+      },
+      "criminal_first_element_gate": {
+        "es": "Una hipótesis de prevaricación u omisión exige resolución o deber exacto, adopción personal, injusticia objetiva o manifiesta, elemento subjetivo histórico aplicable, capacidad y causalidad.",
+        "en": "A judicial misconduct or omission theory requires an exact decision or duty, personal adoption, objective or manifest injustice, the historically applicable mental element, capacity and causation."
+      },
+      "strongest_counterevidence": {
+        "es": "La suspensión de 26-jun-2018, la negativa de convalidación de 24-oct-2019, la conservación de la legitimación de Aweswell, la corrección parcial de motivación, los Autos motivados, la función conservativa de la AC y las vías de recurso son la contraprueba judicial más fuerte.",
+        "en": "The 26-Jun-2018 suspension, 24-Oct-2019 refusal of convalidation, preservation of Aweswell's standing, partial correction of deficient reasoning, reasoned orders, the administrator's conservation role and remedial routes are the strongest judicial counterrecord."
+      },
+      "falsification_production_target": {
+        "es": "Expediente certificado completo y matriz acto–petición–prueba disponible–conocimiento–deber–recurso–resultado.",
+        "en": "Complete certified file and an act–request–available evidence–knowledge–duty–appeal–result matrix."
+      },
+      "upstream": [],
+      "downstream": ["AM357-N02", "AM357-N07"]
+    },
+    {
+      "node_id": "AM357-N02",
+      "period": "2018-2021",
+      "title": {"es": "Masa activa, unidad productiva e inspección neutral", "en": "Active estate, productive unit and neutral inspection"},
+      "primary_routes": {"es": "/es/concurso-36-2012-masa-activa-2018-2021/#contradiccion", "en": "/en/insolvency-36-2012-active-estate-2018-2021/#contradiction"},
+      "evidence": {
+        "source_refs": ["C36-JUD-2018-04-16-001", "C36-JUD-2020-05-12-001", "C36-JUD-2021-02-24-001"],
+        "attributed_statement_refs": [],
+        "adverse_procedural_refs": ["C36-JUD-2018-06-26-001", "C36-JUD-2019-10-24-001", "C36-JUD-2019-10-24-002"],
+        "control_refs": [],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-074", "archive/MISSING_EVIDENCE_REGISTER.md#ME-075"],
+        "integrity_refs": [],
+        "external_sources": [],
+        "source_registers": ["archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md", "archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "La arquitectura de liquidación distinguió bienes LPB y ajenos y contempló publicidad/mejora; los Autos de 2020/2021 registran alegaciones de demolición, acceso y obras, rechazan inspección/pericial y remiten conservación a la AC.",
+        "en": "The liquidation architecture distinguished LPB assets from third-party assets and contemplated publicity/improvement; the 2020/2021 orders record demolition, access and works allegations, refuse inspection/expert evidence and place conservation with the administrator."
+      },
+      "supported_investigative_inference": {
+        "es": "Permite investigar si la falta de línea base finca–foto–daño–valor afectó conservación, valoración, competencia y recuperación de la capa operativa.",
+        "en": "It supports investigating whether the missing property–photo–damage–value baseline affected conservation, valuation, competition and recovery of the operating layer."
+      },
+      "criminal_first_element_gate": {
+        "es": "La ineficacia o el error no equivalen a delito; una omisión penal necesita deber concreto, conocimiento, capacidad real, equivalencia causal y dolo cuando proceda.",
+        "en": "Ineffectiveness or error is not crime; a criminal omission needs a concrete duty, knowledge, practical capacity, causal equivalence and intent where required."
+      },
+      "strongest_counterevidence": {
+        "es": "La suspensión de 26-jun-2018, la negativa de convalidación de 24-oct-2019, la conservación de la legitimación de Aweswell, la corrección parcial de motivación, la titularidad mixta, la competencia conservativa de la AC y las vías de recurso son la contraprueba judicial más fuerte.",
+        "en": "The 26-Jun-2018 suspension, 24-Oct-2019 refusal of convalidation, preservation of Aweswell's standing, partial correction of deficient reasoning, mixed ownership, the administrator's conservation role and remedial routes are the strongest judicial counterrecord."
+      },
+      "falsification_production_target": {
+        "es": "Mapa finca–interior–propietario–obra–daño–valor; solicitudes y respuestas de AC; pericial; cuentas; activos, contratos, ingresos y goodwill de la unidad productiva.",
+        "en": "Property–interior–owner–works–damage–value map; administrator requests/responses; expert evidence; accounts; and productive-unit assets, contracts, income and goodwill."
+      },
+      "upstream": ["AM357-N01"],
+      "downstream": ["AM357-N03", "AM357-N04"]
+    },
+    {
+      "node_id": "AM357-N03",
+      "period": "2018-06",
+      "title": {"es": "Control material y exclusión de 7 de junio", "en": "7 June material control and exclusion"},
+      "primary_routes": {"es": "/es/toma-control-sun-park-7-junio-2018/#hechos-7-junio", "en": "/en/sun-park-takeover-7-june-2018/#events-of-7-june"},
+      "evidence": {
+        "source_refs": ["OA-07", "OA-09", "OA-10", "OA-11", "OA-12"],
+        "attributed_statement_refs": ["J7-09", "J7-10"],
+        "adverse_procedural_refs": ["LZ-JUD-003", "LZ-APP-004"],
+        "control_refs": [],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-044", "archive/MISSING_EVIDENCE_REGISTER.md#ME-045", "archive/MISSING_EVIDENCE_REGISTER.md#ME-046", "archive/MISSING_EVIDENCE_REGISTER.md#ME-048", "archive/MISSING_EVIDENCE_REGISTER.md#ME-050", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-003", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-004", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-005", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-006", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-009", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-010", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-012", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-013", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-014"],
+        "integrity_refs": [],
+        "external_sources": [],
+        "source_registers": ["archive/SUN_PARK_PRE_7JUN2018_ONSITE_APPROACHES_EVIDENCE_REGISTER_20AUG2026.md", "archive/SUN_PARK_7JUN2018_RUNUP_SOURCE_INGEST_17AUG2026.md", "archive/SUN_PARK_COMUNIDAD_PROCEEDINGS_REGISTER_CANARY_ISLANDS_15AUG2026.md", "archive/MISSING_EVIDENCE_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md"]
+      },
+      "source_supported_fact": {
+        "es": "El registro preserva una operación material disputada de control/exclusión y una cadena de autoridad incompleta; los carriles de Comunidad, AC y CAM siguen separados.",
+        "en": "The record preserves a disputed material control/exclusion operation and an incomplete authority chain; Community, administrator and CAM lanes remain separate."
+      },
+      "supported_investigative_inference": {
+        "es": "La restricción o pérdida de acceso y capacidad operativa alegada y documentada por fuentes de distinto rango puede ser un puente causal hacia obras, asimetría informativa, desactivación del rescate y comercialización posterior.",
+        "en": "The restriction or loss of access and operating capacity alleged and recorded by sources of differing rank may be a causal bridge to works, information asymmetry, rescue disablement and later marketing."
+      },
+      "criminal_first_element_gate": {
+        "es": "Debe identificarse quién ordenó, autorizó, ejecutó, conoció o ratificó cada acto y quién tenía un deber jurídico concreto y capacidad real para impedirlo, con autoridad, dolo, beneficio y perjuicio propios.",
+        "en": "The inquiry must identify who ordered, authorised, carried out, knew or ratified each act and who had a concrete legal duty and practical capacity to prevent it, with actor-specific authority, intent, benefit and harm."
+      },
+      "strongest_counterevidence": {
+        "es": "Existen explicaciones de seguridad, conservación y gestión limitada; el archivo penal provisional y el Auto 804/2018 son material procesal adverso. El expediente no prueba una orden directa concreta ni un propósito criminal común.",
+        "en": "Security, conservation and limited-management explanations exist; the provisional criminal archive and Order 804/2018 are adverse procedural material. The record does not prove a specific direct instruction or common criminal purpose."
+      },
+      "falsification_production_target": {
+        "es": "Órdenes, contratos de seguridad, comunicaciones, registros de acceso, llaves, inventarios, autoridad de Comunidad/CEXP/AC y trazado persona–acto–hora.",
+        "en": "Instructions, security contracts, communications, access logs, keys, inventories, Community/CEXP/administrator authority and a person–act–time trace."
+      },
+      "upstream": ["AM357-N02", "AM357-N08"],
+      "downstream": ["AM357-N04", "AM357-N05"]
+    },
+    {
+      "node_id": "AM357-N04",
+      "period": "2021-2022",
+      "title": {"es": "Selección, adjudicación, título y contabilidad", "en": "Selection, adjudication, title and accounting"},
+      "primary_routes": {"es": "/es/adjudicacion-2022-reconstruccion-documental/", "en": "/en/2022-adjudication-documentary-reconstruction/"},
+      "evidence": {
+        "source_refs": ["C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001"],
+        "attributed_statement_refs": [],
+        "adverse_procedural_refs": ["C36-JUD-2018-06-26-001", "C36-JUD-2019-10-24-001"],
+        "control_refs": [],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-008", "archive/MISSING_EVIDENCE_REGISTER.md#ME-011", "archive/MISSING_EVIDENCE_REGISTER.md#ME-012"],
+        "integrity_refs": [],
+        "external_sources": ["https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a250", "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a446", "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a447"],
+        "source_registers": ["archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md", "archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "El tercer postor no compareció, no estaba personado y no depositó fianza; se aprobó la propuesta de CAM. Título, crédito, compensación, valor, pago y contabilidad son funciones distintas.",
+        "en": "The third bidder did not attend, was not personated and lodged no bond; CAM's proposal was approved. Title, credit, set-off, value, payment and accounting are distinct functions."
+      },
+      "supported_investigative_inference": {
+        "es": "Es un nodo procesal documentado en el camino hacia la adjudicación; permite comprobar si el déficit previo de acceso, información o valoración condicionó la competencia y el resultado.",
+        "en": "This is a documented procedural node on the path toward adjudication; it permits testing whether earlier access, information or valuation deficits conditioned competition and result."
+      },
+      "criminal_first_element_gate": {
+        "es": "Fraude procesal requiere engaño concreto, autor, conocimiento, uso, error judicial, disposición, beneficio y perjuicio; la atribución judicial exige sus elementos separados.",
+        "en": "Procedural fraud requires a specific deception, author, knowledge, use, judicial error, disposition, benefit and harm; judicial attribution requires its separate elements."
+      },
+      "strongest_counterevidence": {
+        "es": "Incumplimiento documentado del postor, condiciones competitivas aprobadas y actos protectores/suspensivos previos pueden sostener una explicación procesal lícita.",
+        "en": "The bidder's documented default, approved competitive conditions and earlier protective/suspensive acts may support a lawful procedural explanation."
+      },
+      "falsification_production_target": {
+        "es": "Acta/grabación, oferta y fianza, anexos de activos, crédito–valor–pago–compensación–remanente, escritura, Registro de la Propiedad y asientos contables.",
+        "en": "Hearing record, bid and bond, asset annexes, credit–value–payment–set-off–surplus ledger, deed, Land Registry and accounting entries."
+      },
+      "upstream": ["AM357-N02", "AM357-N03", "AM357-N05"],
+      "downstream": ["AM357-N09"]
+    },
+    {
+      "node_id": "AM357-N05",
+      "period": "2018-2022",
+      "title": {"es": "Club Sei: proyecto y comercialización antes del título", "en": "Club Sei: project and marketing before title"},
+      "primary_routes": {"es": "/es/lava-verde-club-sei-meeting-point/#cadena", "en": "/en/lava-verde-club-sei-meeting-point/#chain"},
+      "evidence": {
+        "source_refs": ["LV-01", "LV-02", "LV-03", "LV-04", "LV-05", "LV-08", "LV-09"],
+        "attributed_statement_refs": ["LV-06", "LV-07"],
+        "adverse_procedural_refs": [],
+        "control_refs": ["CR-023"],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-049"],
+        "integrity_refs": [],
+        "external_sources": [],
+        "source_registers": ["archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md", "archive/CORRECTION_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "Fuentes públicas y de proveedores apoyan preparación, piloto y presentación pre-título de Club Sei en la dirección de Sun Park; la persona jurídica, contrato, autoridad, reservas e ingresos exactos no están identificados.",
+        "en": "Public and supplier sources support pre-title Club Sei preparation, pilot work and presentation at the Sun Park address; the exact legal person, contract, authority, bookings and revenue are not identified."
+      },
+      "supported_investigative_inference": {
+        "es": "Permite probar o refutar si un actor del perímetro Meeting Point/FTI obtuvo autoridad, información, oportunidad comercial, beneficio o custodia vinculados al activo antes del título.",
+        "en": "It permits proving or disproving whether a Meeting Point/FTI-perimeter actor obtained authority, information, commercial opportunity, benefit or custody linked to the asset before title."
+      },
+      "criminal_first_element_gate": {
+        "es": "Cualquier explotación no autorizada, fraude o lesión concursal exige persona jurídica exacta, acto, autoridad, conocimiento, dolo, ingreso/beneficio y pérdida de masa o tercero.",
+        "en": "Any unauthorised exploitation, fraud or estate-injury theory requires the exact legal person, act, authority, knowledge, intent, revenue/benefit and estate or third-party loss."
+      },
+      "strongest_counterevidence": {
+        "es": "Aplazamiento COVID; marketing y pilotos no prueban apertura, reservas, ingresos, autoridad de todo el hotel, contrato ni delito.",
+        "en": "COVID postponement; marketing and pilots do not prove opening, bookings, revenue, whole-hotel authority, contract or crime."
+      },
+      "falsification_production_target": {
+        "es": "Persona jurídica/NIF, contratos, inventario de habitaciones/fincas, autoridad, PMS/OTA, reservas, facturas, comisiones, pagos y comunicaciones con CAM/AC.",
+        "en": "Legal person/NIF, contracts, room/property inventory, authority, PMS/OTA, bookings, invoices, commissions, payments and CAM/administrator communications."
+      },
+      "upstream": ["AM357-N03"],
+      "downstream": ["AM357-N04", "AM357-N06", "AM357-N07"]
+    },
+    {
+      "node_id": "AM357-N06",
+      "period": "2022-present",
+      "title": {"es": "SEPI/FASEE: crédito público, revelación y pérdida", "en": "SEPI/FASEE: public credit, disclosure and loss"},
+      "primary_routes": {"es": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#sepi", "en": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#sepi"},
+      "evidence": {
+        "source_refs": [],
+        "attributed_statement_refs": [],
+        "adverse_procedural_refs": [],
+        "control_refs": ["CR-101"],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-049"],
+        "integrity_refs": [],
+        "external_sources": ["https://www.sepi.es/es/sala-de-prensa/noticias/el-consejo-de-ministros-autoriza-nuevas-ayudas-con-cargo-al-fondo-de-apoyo", "https://www.sepi.es/sites/default/files/2024-08/FASEE_Cuentas%20anuales_2023.pdf"],
+        "source_registers": ["archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md", "archive/CORRECTION_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "SEPI documenta EUR 31m para Meeting Point: EUR 20,7m participativo y EUR 10,3m ordinario; las cuentas FASEE aportan asignaciones por entidad.",
+        "en": "SEPI documents EUR 31m for Meeting Point: EUR 20.7m participating and EUR 10.3m ordinary; FASEE accounts provide entity allocations."
+      },
+      "supported_investigative_inference": {
+        "es": "Si existían derechos, riesgos o contingencias materiales Sun Park/Club Sei, nace una prueba de revelación, seguimiento, custodia y posible impacto de crédito público.",
+        "en": "If material Sun Park/Club Sei rights, risks or contingencies existed, a disclosure, monitoring, custody and possible public-credit impact test arises."
+      },
+      "criminal_first_element_gate": {
+        "es": "Falsedad, omisión o uso indebido requieren declarante/obligado, deber, materialidad, conocimiento, confianza, aplicación de fondos y pérdida cuantificada; no es automáticamente fraude de subvenciones.",
+        "en": "Falsehood, omission or misuse require a declarant/obligor, duty, materiality, knowledge, reliance, use of funds and quantified loss; this is not automatically subsidy fraud."
+      },
+      "strongest_counterevidence": {
+        "es": "No hay trazado actual a Sun Park, omisión probada, deterioro, perjuicio ni deber personal judicial de aviso a SEPI.",
+        "en": "There is no current tracing into Sun Park, proved omission, impairment, harm or personal judicial duty to notify SEPI."
+      },
+      "falsification_production_target": {
+        "es": "Instrumentos, garantías, origen/uso, disclosures, seguimiento, repagos, intereses, exposición y deterioro; expedientes del deudor, SEPI y Auren.",
+        "en": "Instruments, security, source/use, disclosures, monitoring, repayments, interest, exposure and impairment; debtor, SEPI and Auren files."
+      },
+      "upstream": ["AM357-N05"],
+      "downstream": ["AM357-N07"]
+    },
+    {
+      "node_id": "AM357-N07",
+      "period": "2024-2025",
+      "title": {"es": "Meeting Point 357/2024: atribución, reparto y archivo Auren", "en": "Meeting Point 357/2024: attribution, allocation and Auren file"},
+      "primary_routes": {"es": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/#registro", "en": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/#register"},
+      "evidence": {
+        "source_refs": ["GC-CONT-025", "LV-12"],
+        "attributed_statement_refs": [],
+        "adverse_procedural_refs": [],
+        "control_refs": ["CR-100", "CR-108", "CR-109"],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-049"],
+        "integrity_refs": [],
+        "external_sources": ["https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a446", "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444#a447", "https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666#a219"],
+        "source_registers": ["archive/SUN_PARK_COMUNIDAD_PROCEEDINGS_REGISTER_CANARY_ISLANDS_15AUG2026.md", "archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md", "archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md", "archive/CORRECTION_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "Los controles de fuente del repositorio registran tres copias archivadas de anuncios de 24-oct que atribuyen la prórroga al Magistrado-Juez López Villarrubia; Auto 97/2025 firmado por Guillermo Fernández García acredita tres deudores, cronología 23/31-jul, petición Auren 23-ene y nombramiento 18-feb.",
+        "en": "Repository source controls record three archived copies of 24-Oct notices attributing the extension to Magistrate-Judge López Villarrubia; Auto 97/2025 signed by Guillermo Fernández García establishes three debtors, the 23/31-Jul chronology, 23-Jan Auren request and 18-Feb appointment."
+      },
+      "supported_investigative_inference": {
+        "es": "Activa producción seria sobre firma, reparto, conocimiento, posible causa del art. 219 y contenido/custodia de 357/Auren; no cierra ninguna de esas proposiciones.",
+        "en": "It triggers serious production on signature, allocation, knowledge, any Article 219 ground and 357/Auren content/custody; it closes none of those propositions."
+      },
+      "criminal_first_element_gate": {
+        "es": "CP 446 exige adopción personal, injusticia objetiva/manifiesta, conocimiento o dolo y causalidad; CP 447 exige, según la norma temporal aplicable, imprudencia grave o ignorancia inexcusable. El art. 219 es una prueba procesal separada, no delito por sí mismo. Una teoría de ocultación exige delito y deber exactos, actor, dato conocido, omisión material, elemento subjetivo y efecto.",
+        "en": "CP 446 requires personal adoption, objective/manifest injustice, knowledge or intent and causation; CP 447 requires, under the applicable historical text, gross negligence or inexcusable ignorance. Article 219 is a separate procedural test, not itself an offence. A concealment theory requires an exact offence and duty, actor, known fact, material omission, mental element and effect."
+      },
+      "strongest_counterevidence": {
+        "es": "Sustitución ordinaria, refuerzo, reasignación, corrección o error registral podrían explicar los nombres; no se ha probado una causa legal de abstención.",
+        "en": "Ordinary substitution, support, reassignment, correction or registry error could explain the names; no statutory recusal ground is proved."
+      },
+      "falsification_production_target": {
+        "es": "Originales 18-sep/24-oct, metadatos, reparto/sustitución/refuerzo/corrección, abstención/recusación/revelación, comunicación completa y anexos, mandato, conflicto, solicitudes, recibos, informes y papeles Auren.",
+        "en": "18-Sep/24-Oct originals, metadata, allocation/substitution/support/correction, abstention/recusal/disclosure, complete communication and annexes, and Auren mandate, conflict check, requests, receipts, reports and workpapers."
+      },
+      "upstream": ["AM357-N01", "AM357-N05", "AM357-N06"],
+      "downstream": ["AM357-N09"]
+    },
+    {
+      "node_id": "AM357-N08",
+      "period": "2018-2019",
+      "title": {"es": "Salida financiada ONA y contrafactual competitivo", "en": "ONA funded exit and competitive counterfactual"},
+      "primary_routes": {"es": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/", "en": "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/"},
+      "evidence": {
+        "source_refs": ["ONA-FX-001", "ONA-FX-002", "ONA-FX-003", "ONA-FX-005", "ONA-FX-006", "ONA-FX-007", "ONA-FX-008", "ONA-FX-009"],
+        "attributed_statement_refs": ["ONA-FX-004"],
+        "adverse_procedural_refs": [],
+        "control_refs": ["PD-ONA-FX-20260826-01"],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-084", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md#ME-CAM7J-007"],
+        "integrity_refs": [],
+        "external_sources": [],
+        "source_registers": ["archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md", "archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md", "archive/MISSING_EVIDENCE_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md"]
+      },
+      "source_supported_fact": {
+        "es": "El expediente documenta una arquitectura propuesta de salida financiada ONA–Clubotel–Aweswell/LPB, con actores profesionales y sujeta a condiciones, garantías, aprobación y desembolso aún incompletos.",
+        "en": "The record documents a proposed ONA–Clubotel–Aweswell/LPB funded-exit architecture with professional actors, subject to still-incomplete conditions, security, approval and drawdown."
+      },
+      "supported_investigative_inference": {
+        "es": "Proporciona un contrafactual para medir si control/exclusión, pérdida operativa y decisiones posteriores impidieron una arquitectura financiada que habría debido superar sus condiciones, y si afectaron valor o competencia.",
+        "en": "It provides a counterfactual for measuring whether control/exclusion, operating loss and later decisions prevented a proposed financed architecture that still had to satisfy its conditions, and whether value or competition was affected."
+      },
+      "criminal_first_element_gate": {
+        "es": "El fracaso de una negociación no prueba interferencia criminal; exige condiciones cumplibles, autoridad, conocimiento, acto causal, finalidad, beneficio y pérdida cuantificada.",
+        "en": "Failure of a negotiation does not prove criminal interference; it requires feasible conditions, authority, knowledge, a causal act, purpose, benefit and quantified loss."
+      },
+      "strongest_counterevidence": {
+        "es": "Faltan cierre, garantía y condiciones completas; la operación podía fracasar por razones comerciales o jurídicas independientes.",
+        "en": "Closing, security and complete conditions are missing; the transaction could have failed for independent commercial or legal reasons."
+      },
+      "falsification_production_target": {
+        "es": "Term sheet, financiación, garantías, autorizaciones, condiciones precedentes, cronología de cierre/ruptura y comunicaciones con AC, tribunal, acreedores y postores.",
+        "en": "Term sheet, financing, security, authority, conditions precedent, closing/break chronology and communications with administrator, court, creditors and bidders."
+      },
+      "upstream": [],
+      "downstream": ["AM357-N03"]
+    },
+    {
+      "node_id": "AM357-N09",
+      "period": "2012-present",
+      "title": {"es": "Resultado observable, beneficio, perjuicio y respuesta institucional", "en": "Observable result, benefit, harm and institutional response"},
+      "primary_routes": {"es": "/es/reconstruccion-unitaria-autoridades-publicas/", "en": "/en/public-authority-unitary-case-reconstruction/"},
+      "evidence": {
+        "source_refs": ["C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001", "18ab89a1775e61b3", "LV-12"],
+        "attributed_statement_refs": [],
+        "adverse_procedural_refs": [],
+        "control_refs": ["CR-101"],
+        "missing_evidence_refs": ["archive/MISSING_EVIDENCE_REGISTER.md#ME-008", "archive/MISSING_EVIDENCE_REGISTER.md#ME-011", "archive/MISSING_EVIDENCE_REGISTER.md#ME-012", "archive/MISSING_EVIDENCE_REGISTER.md#ME-049", "archive/MISSING_EVIDENCE_REGISTER.md#ME-058"],
+        "integrity_refs": [],
+        "external_sources": ["https://www.sepi.es/es/sala-de-prensa/noticias/el-consejo-de-ministros-autoriza-nuevas-ayudas-con-cargo-al-fondo-de-apoyo", "https://www.sepi.es/sites/default/files/2024-08/FASEE_Cuentas%20anuales_2023.pdf"],
+        "source_registers": ["archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md", "archive/CAM_2022_ADJUDICATION_TRANSACTION_IDENTITY_AND_CONSIDERATION_CONTROL_19AUG2026.md", "archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md", "archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md", "archive/CORRECTION_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER.md"]
+      },
+      "source_supported_fact": {
+        "es": "La transacción notarial de 2022 y los registros oficiales de apoyo público y estados procesales son observables en carriles jurídicos separados. No están acreditados aquí el título beneficiario actual exacto, el operador jurídico actual, la cuantía o destinatario de ingresos ni las distribuciones.",
+        "en": "The 2022 notarial transaction and official public-support and procedural-state records are observable in separate legal lanes. This module does not establish exact current beneficial title, the current legal operator, income amount or recipient, or distributions."
+      },
+      "supported_investigative_inference": {
+        "es": "Permite reconstruir hacia atrás quién se benefició, qué activo/derecho cambió, qué registro debía existir y qué causalidad o pérdida puede medirse; no convierte el resultado en prueba retroactiva de delito.",
+        "en": "It permits backward reconstruction of who benefited, what asset/right changed, what record should exist and what causation or loss can be measured; it does not turn the result into retrospective proof of crime."
+      },
+      "criminal_first_element_gate": {
+        "es": "Debe probarse delito por delito y actor por actor: acto/omisión, deber/autoridad, conocimiento/dolo, nexo, beneficio, perjudicado, cuantía y ausencia de doble recuperación.",
+        "en": "Proof must remain offence-by-offence and actor-by-actor: act/omission, duty/authority, knowledge/intent, nexus, benefit, injured party, quantum and no double recovery."
+      },
+      "strongest_counterevidence": {
+        "es": "La adjudicación pudo ser lícita; el incumplimiento documentado del postor, las decisiones motivadas y la falta de puentes documentales siguen siendo explicaciones y límites reales.",
+        "en": "The adjudication may have been lawful; the bidder's documented default, reasoned decisions and missing documentary bridges remain real explanations and limits."
+      },
+      "falsification_production_target": {
+        "es": "Cadena de título/beneficiario, capex, ingresos, financiación, distribuciones, reclamante–finca–pérdida–remedio, decisiones institucionales completas y contrafactual de valor.",
+        "en": "Title/beneficial-owner chain, capex, income, financing, distributions, claimant–property–loss–remedy ledger, complete institutional decisions and value counterfactual."
+      },
+      "upstream": ["AM357-N04", "AM357-N07"],
+      "downstream": []
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "AM357-E01",
+      "from": "AM357-N01",
+      "to": "AM357-N02",
+      "evidence_lane": "judicial-supervision-to-estate-preservation",
+      "support_level": "DOCUMENTED_PROCEDURAL_NODES_BRIDGE_UNPROVED",
+      "source_refs": ["C36-JUD-2018-04-16-001", "C36-JUD-2020-05-12-001", "C36-JUD-2021-02-24-001"],
+      "forward_inference": "Did documented notice of the stated allegations and the chosen evidential measures affect preservation and valuation?",
+      "reverse_falsification": "Would the complete estate and inspection record show effective protection or no causal effect?",
+      "strongest_contrary_evidence": "The suspension, refusal of convalidation, reasoned later orders, administrator conservation role and available remedies support a lawful-supervision explanation.",
+      "confirm_or_falsify_production": "Produce the certified docket and a dated act-request-evidence-knowledge-duty-remedy-result matrix, including every inspection and conservation request and response."
+    },
+    {
+      "edge_id": "AM357-E02",
+      "from": "AM357-N02",
+      "to": "AM357-N03",
+      "evidence_lane": "estate-perimeter-to-material-control",
+      "support_level": "MIXED_PROCEDURAL_AND_ATTRIBUTED_RECORD_BRIDGE_UNPROVED",
+      "source_refs": ["C36-JUD-2021-02-24-001", "OA-07", "OA-09", "LZ-JUD-003"],
+      "forward_inference": "Did unresolved ownership, access and conservation conditions enable the disputed control change?",
+      "reverse_falsification": "Do authority, access and inventory records establish a limited lawful operation with no estate displacement?",
+      "strongest_contrary_evidence": "Mixed ownership, the administrator's conservation competence, security explanations and the adverse provisional criminal archive may explain the control measures without estate displacement.",
+      "confirm_or_falsify_production": "Produce the property-by-property ownership and inventory baseline, administrator authority, security mandate, access logs, keys record and person-act-time chronology."
+    },
+    {
+      "edge_id": "AM357-E03",
+      "from": "AM357-N08",
+      "to": "AM357-N03",
+      "evidence_lane": "funded-exit-to-control",
+      "support_level": "CONDITIONAL_COUNTERFACTUAL_BRIDGE_UNPROVED",
+      "source_refs": ["ONA-FX-001", "ONA-FX-003", "ONA-FX-006", "OA-09"],
+      "forward_inference": "Did control/exclusion interrupt the proposed funded-exit route, and could that route have satisfied its outstanding conditions?",
+      "reverse_falsification": "Do finance and condition-precedent records show the proposed route independently could not have completed?",
+      "strongest_contrary_evidence": "No closing, security perfection, satisfied conditions precedent or drawdown is established; independent commercial or legal failure remains a complete alternative explanation.",
+      "confirm_or_falsify_production": "Produce the term sheet, committed-funds proof, security package, conditions-precedent ledger, authority approvals and event-level closing or break chronology."
+    },
+    {
+      "edge_id": "AM357-E04",
+      "from": "AM357-N02",
+      "to": "AM357-N04",
+      "evidence_lane": "valuation-to-adjudication",
+      "support_level": "DOCUMENTED_PROCEDURAL_NODES_BRIDGE_UNPROVED",
+      "source_refs": ["C36-JUD-2020-05-12-001", "C36-JUD-2021-02-24-001", "C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001"],
+      "forward_inference": "Did any neutral-evidence deficit materially condition bidding or valuation?",
+      "reverse_falsification": "Would the complete bid and valuation file show equal information and no outcome effect?",
+      "strongest_contrary_evidence": "The approved competitive conditions, the third bidder's non-appearance and missing bond, and the absence of a bidder inspection request may explain the result without a valuation distortion.",
+      "confirm_or_falsify_production": "Produce the complete valuation and bidder data rooms, access parity record, inspection requests, asset schedules, all bids and bonds, hearing record and valuation-to-result comparison."
+    },
+    {
+      "edge_id": "AM357-E05",
+      "from": "AM357-N03",
+      "to": "AM357-N05",
+      "evidence_lane": "control-to-commercialisation",
+      "support_level": "MIXED_PUBLIC_AND_ATTRIBUTED_RECORD_BRIDGE_UNPROVED",
+      "source_refs": ["OA-09", "OA-10", "LV-01", "LV-03", "LV-08"],
+      "forward_inference": "Did material control supply access, information or opportunity for Club Sei?",
+      "reverse_falsification": "Do contracts, access records and supplier files show independent lawful authority and no use of disputed assets?",
+      "strongest_contrary_evidence": "Security or limited-management explanations, COVID postponement, and the absence of proved bookings, revenue or a whole-site operating contract may sever the alleged bridge.",
+      "confirm_or_falsify_production": "Produce dated access and key records, the exact Club Sei legal entity and NIF, supplier instructions, property and room schedules, authority contracts, PMS or OTA records, invoices and payments."
+    },
+    {
+      "edge_id": "AM357-E06",
+      "from": "AM357-N05",
+      "to": "AM357-N04",
+      "evidence_lane": "pre-title-commercialisation-to-adjudication",
+      "support_level": "MIXED_PUBLIC_AND_PROCEDURAL_RECORD_BRIDGE_UNPROVED",
+      "source_refs": ["LV-01", "LV-02", "LV-08", "C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001"],
+      "forward_inference": "Did any proved pre-title Club Sei access, information, commercial positioning or benefit materially condition competition or adjudication?",
+      "reverse_falsification": "Do dated contracts, property schedules, title and bid records eliminate the alleged pre-title causal bridge or show no outcome effect?",
+      "strongest_contrary_evidence": "Public presentation and pilot work do not establish operation, bookings, revenue, bidder advantage or influence on the adjudication; documented bidder default offers an independent explanation.",
+      "confirm_or_falsify_production": "Produce the dated Club Sei contract-authority-revenue file alongside the title, property schedule, bidder information sets, bids, bonds and decision record to test temporal and outcome causation."
+    },
+    {
+      "edge_id": "AM357-E07",
+      "from": "AM357-N05",
+      "to": "AM357-N06",
+      "evidence_lane": "commercial-rights-to-public-credit",
+      "support_level": "PUBLIC_AND_OFFICIAL_CONTEXT_BRIDGE_UNPROVED",
+      "source_refs": ["LV-08", "LV-09", "CR-101", "https://www.sepi.es/sites/default/files/2024-08/FASEE_Cuentas%20anuales_2023.pdf"],
+      "forward_inference": "Were material Club Sei/Sun Park rights, risks or contingencies relevant to FASEE disclosure or monitoring?",
+      "reverse_falsification": "Do loan and disclosure files show no relevant item, no duty or full disclosure?",
+      "strongest_contrary_evidence": "The current record neither identifies a debtor-owned Club Sei right nor proves a disclosure duty, omission, reliance, impairment or public loss.",
+      "confirm_or_falsify_production": "Produce entity-specific FASEE applications, representations, security and monitoring files together with Sun Park or Club Sei contracts, rights, risks, contingencies and source-and-use records."
+    },
+    {
+      "edge_id": "AM357-E08",
+      "from": "AM357-N05",
+      "to": "AM357-N07",
+      "evidence_lane": "club-sei-to-three-debtor-file",
+      "support_level": "PUBLIC_AND_ARCHIVED_CONTEXT_BRIDGE_UNPROVED",
+      "source_refs": ["LV-08", "LV-09", "LV-12", "GC-CONT-025", "CR-100"],
+      "forward_inference": "Did any exact 357 debtor hold a Club Sei/Sun Park contract, asset, claim, contingency or record?",
+      "reverse_falsification": "Do complete debtor schedules and Auren workpapers show no such connection or responsibility?",
+      "strongest_contrary_evidence": "The exact contracting entity remains unidentified, and neither public marketing nor the three-debtor proceeding proves that any debtor owned a Club Sei or Sun Park asset, claim or liability.",
+      "confirm_or_falsify_production": "Produce each debtor's complete asset, contract, claim and contingency schedules, intercompany records, Club Sei entity documents and the corresponding Auren intake and verification workpapers."
+    },
+    {
+      "edge_id": "AM357-E09",
+      "from": "AM357-N01",
+      "to": "AM357-N07",
+      "evidence_lane": "cross-proceeding-judicial-attribution",
+      "support_level": "SIGNED_ACTS_AND_REGISTER_ATTRIBUTION_BRIDGE_UNPROVED",
+      "source_refs": ["C36-JUD-2012-06-06-001", "C36-JUD-2021-02-24-001", "LV-12", "GC-CONT-025", "CR-108"],
+      "forward_inference": "Was the 24-Oct attribution a signed act, substitution, support, reassignment, correction or registry error, and what knowledge was material?",
+      "reverse_falsification": "Do the original and allocation records establish ordinary assignment, no Article 219 ground and no relevant cross-file knowledge?",
+      "strongest_contrary_evidence": "Ordinary substitution, support, reassignment, correction or registry error remain open, and the controlled record proves neither a signed 24 October act nor an Article 219 conflict ground.",
+      "confirm_or_falsify_production": "Produce the signed 18 September and 24 October originals, Public Insolvency Register metadata and custody, reparto and substitution records, and any abstention, recusal or disclosure file."
+    },
+    {
+      "edge_id": "AM357-E10",
+      "from": "AM357-N06",
+      "to": "AM357-N07",
+      "evidence_lane": "public-credit-to-restructuring",
+      "support_level": "OFFICIAL_PUBLIC_CREDIT_AND_SIGNED_PROCEDURAL_CONTEXT_BRIDGE_UNPROVED",
+      "source_refs": ["CR-101", "https://www.sepi.es/es/sala-de-prensa/noticias/el-consejo-de-ministros-autoriza-nuevas-ayudas-con-cargo-al-fondo-de-apoyo", "GC-CONT-025", "CR-100"],
+      "forward_inference": "How were FASEE claims, conditions, security and disclosures treated in 357/2024?",
+      "reverse_falsification": "Do the complete communication and SEPI file show accurate treatment and no creditor/public loss?",
+      "strongest_contrary_evidence": "The official EUR 31 million support record and the later three-debtor proceeding do not by themselves establish inaccurate treatment, omitted security, reliance, impairment or loss.",
+      "confirm_or_falsify_production": "Produce the complete 357/2024 communication and annexes, creditor and security schedules, Auren workfile, SEPI monitoring and repayment files, and final restructuring treatment by exact debtor."
+    },
+    {
+      "edge_id": "AM357-E11",
+      "from": "AM357-N07",
+      "to": "AM357-N09",
+      "evidence_lane": "restructuring-to-institutional-consequence",
+      "support_level": "PROCEDURAL_CONTEXT_TO_OUTCOME_BRIDGE_UNPROVED",
+      "source_refs": ["GC-CONT-025", "LV-12", "CR-100", "CR-101", "18ab89a1775e61b3"],
+      "forward_inference": "Did any proven omission or conflict affect creditor or public-funds outcomes?",
+      "reverse_falsification": "Do final restructuring, monitoring and outcome records show no material omission, reliance or loss?",
+      "strongest_contrary_evidence": "No omission, statutory conflict, institutional reliance, altered restructuring result, creditor shortfall or public-funds loss is presently established.",
+      "confirm_or_falsify_production": "Produce final restructuring decisions and creditor outcomes, SEPI exposure and recovery records, any conflict decision, counterfactual treatment and claimant-specific quantum analysis."
+    },
+    {
+      "edge_id": "AM357-E12",
+      "from": "AM357-N04",
+      "to": "AM357-N09",
+      "evidence_lane": "title-to-benefit-loss",
+      "support_level": "DOCUMENTED_TRANSACTION_CONTEXT_TO_OUTCOME_BRIDGE_UNPROVED",
+      "source_refs": ["C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001", "18ab89a1775e61b3"],
+      "forward_inference": "What benefit, estate loss and claimant-specific damage followed from adjudication and later operation?",
+      "reverse_falsification": "Does the title, payment, capex, income and distribution ledger support lawful value and no recoverable loss?",
+      "strongest_contrary_evidence": "The adjudication may have been lawful, the bidder default is documented, and the current record does not establish current beneficial ownership, income recipients, distributions or recoverable loss.",
+      "confirm_or_falsify_production": "Produce the deed and registration chain, credit-value-payment-set-off-surplus accounting, beneficial ownership, capex, operator, income and distribution ledgers, and claimant-by-claimant loss analysis."
+    },
+    {
+      "edge_id": "AM357-E13",
+      "from": "AM357-N03",
+      "to": "AM357-N04",
+      "evidence_lane": "material-control-to-adjudication",
+      "support_level": "MIXED_CONTROL_AND_PROCEDURAL_RECORD_BRIDGE_UNPROVED",
+      "source_refs": ["OA-09", "OA-10", "LZ-JUD-003", "C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001"],
+      "forward_inference": "Did any proved control or exclusion materially condition access, information, valuation, rescue capacity, bidding or adjudication?",
+      "reverse_falsification": "Do complete access, valuation, rescue and bid records show equal conditions, no displacement and no outcome effect?",
+      "strongest_contrary_evidence": "Security and conservation explanations, adverse procedural material, approved competitive conditions and the third bidder's default may independently account for the events and result.",
+      "confirm_or_falsify_production": "Produce the complete access, authority, rescue, valuation and bidder-information chronology, all bids and bonds, hearing record and a counterfactual test of outcome with and without the alleged exclusion."
+    }
+  ],
+  "boundaries": [
+    "The matrix is an investigative inference graph, not a judicial or criminal finding.",
+    "Every forward inference is paired with a reverse falsification route and the strongest lawful or innocent explanation.",
+    "Economic unity does not merge legal persons, titles, debts, estates, acts, knowledge, intent or liability.",
+    "A later benefit or current operation does not retroactively prove an earlier offence.",
+    "No current evidence establishes knowing judicial injustice, an improper relationship, a statutory Article 219 ground or a personal judicial duty to notify SEPI.",
+    "For AM357-N07, public Git preserves aggregate source controls but not the signed Auto 97/2025 binary or a reproducible per-copy full-hash custody manifest for the three notices; do not claim public-binary integrity closure.",
+    "The ONA relationship to the 7 June event is carried as a separate attributed/counterfactual lane in AM357-N08 and edge AM357-E03, not as an affirmative AM357-N03 fact.",
+    "Daily Decanato reference no. 24 is a presentation locator, not a formal NIG or proceeding."
+  ]
+}

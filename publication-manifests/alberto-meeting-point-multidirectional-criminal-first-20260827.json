@@ -1,0 +1,150 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "alberto-meeting-point-multidirectional-criminal-first-20260827",
+  "control_id": "PD-ALV-MP357-MULTI-20260827-01",
+  "control_date": "2026-08-27",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "release_candidate_not_yet_verified_live",
+  "owner": "Por Derecho / Project Sun Rock",
+  "remote_main_observed_sha": "f4c186194f34c414e83526a771a9772d62782519",
+  "candidate_parent_sha": "f4c186194f34c414e83526a771a9772d62782519",
+  "publication_authorized": true,
+  "publication_authorization": {
+    "scope_control_id": "PD-ALV-MP357-MULTI-20260827-01",
+    "repository_and_website_only": true,
+    "email_authorized": false,
+    "filing_authorized": false,
+    "user_instruction": "Publish the isolated RICPE privacy hotfix now; after verified live, publish the complete continuity candidate. This does not authorize any email or filing. Interlink the multidirectional evidence, apply the criminal-first lens alongside the other lenses, and run the full finite caret census.",
+    "recorded_at": "2026-08-27T13:36:24Z"
+  },
+  "communication_authorized": false,
+  "email_or_filing_action": "HOLD_NOT_AUTHORISED",
+  "analysis_order": [
+    "CRIMINAL_FIRST",
+    "INSOLVENCY",
+    "CIVIL_RECOVERY",
+    "INSTITUTIONAL_PUBLIC_FUNDS"
+  ],
+  "unitary_caret_scope": {
+    "control_id": "PD-UNITARY-REDIGEST-20260827-01",
+    "confirmed": 19,
+    "pending": 5,
+    "denominator": 24,
+    "changed_by_this_module": false
+  },
+  "specialist_caret_scope": {
+    "control_id": "PD-ALV-MP357-CARET-20260827-01",
+    "confirmed": 25,
+    "pending": 7,
+    "suspended": 0,
+    "denominator": 32,
+    "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS",
+    "identity_only": true
+  },
+  "first_hop_caret_scope": {
+    "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
+    "confirmed": 56,
+    "pending": 74,
+    "suspended": 0,
+    "denominator": 130,
+    "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
+    "identity_only": true
+  },
+  "multidirectional_evidence": {
+    "nodes": 9,
+    "forward_reverse_bridge_tests": 13,
+    "primary_source_routes": 18,
+    "required_fields_per_node": [
+      "source_supported_fact",
+      "supported_investigative_inference",
+      "criminal_first_element_gate",
+      "strongest_counterevidence",
+      "falsification_production_target",
+      "reciprocal_links"
+    ]
+  },
+  "hub_routes": {
+    "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
+    "en": "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
+  },
+  "expected_routes": {
+    "es": [
+      "es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/index.html",
+      "es/concurso-36-2012-magistrado-juez/index.html",
+      "es/concurso-36-2012-masa-activa-2018-2021/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/adjudicacion-2022-reconstruccion-documental/index.html",
+      "es/lava-verde-club-sei-meeting-point/index.html",
+      "es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html",
+      "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/index.html",
+      "es/reconstruccion-unitaria-autoridades-publicas/index.html"
+    ],
+    "en": [
+      "en/alberto-lopez-villarrubia-meeting-point-357-active-estate/index.html",
+      "en/insolvency-36-2012-mercantile-court-1/index.html",
+      "en/insolvency-36-2012-active-estate-2018-2021/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/2022-adjudication-documentary-reconstruction/index.html",
+      "en/lava-verde-club-sei-meeting-point/index.html",
+      "en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html",
+      "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/index.html",
+      "en/public-authority-unitary-case-reconstruction/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md",
+    "archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md",
+    "archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md",
+    "archive/CAM_2022_ADJUDICATION_TRANSACTION_IDENTITY_AND_CONSIDERATION_CONTROL_19AUG2026.md",
+    "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-357-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+    "assets/data/caepr-caret-unitary-digest-v1.json",
+    "assets/data/matter-identity-registry-v1.json",
+    "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
+    "ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md",
+    "archive/prompts/ALBERTO_MEETING_POINT_MULTIDIRECTIONAL_CRIMINAL_FIRST_UPDATE_PROMPT_27AUG2026.md",
+    "scripts/validate_alberto_meeting_point_cross_proceeding.py",
+    "scripts/validate_alberto_meeting_point_first_hop_caret.py",
+    "scripts/validate_current_reverse_engineered_digest.py",
+    "scripts/verify_current_reverse_engineered_digest_live.py",
+    ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+    ".github/workflows/validate-current-reverse-engineered-digest.yml"
+  ],
+  "validation": {
+    "specialist_structure": "passed_local",
+    "first_hop_caret": "passed_local",
+    "identity_registry": "passed_local",
+    "current_digest": "passed_local",
+    "unitary_control_plane": "passed_local",
+    "legal_professional_register": "passed_local",
+    "operational_truth": "passed_local",
+    "full_repository_gate": "passed_local",
+    "live_readback": "not_run_pending_authorised_publication"
+  },
+  "publication_sequence": [
+    "complete local validation",
+    "present exact candidate commit and diff",
+    "bind the existing repository-and-website-only publication authorization",
+    "push candidate branch",
+    "open pull request and require green checks",
+    "merge exact reviewed head",
+    "wait for Pages deployment",
+    "read back both hubs, nine route pairs and machine controls",
+    "write a separate live closeout"
+  ],
+  "boundaries": [
+    "This module applies a criminal-first investigative order; it does not make a criminal finding.",
+    "A caret resolves identity only and does not prove conduct, dated capacity, knowledge, intent, conflict, concealment, liability, source authenticity or outcome.",
+    "The 24 October 2024 register attribution does not prove personal signature, substitution, allocation or a statutory recusal ground.",
+    "The three exact Meeting Point debtors are not thereby identified as the Club Sei contracting entity.",
+    "The EUR 31 million SEPI/FASEE support does not establish tracing into Sun Park, omission, impairment or a personal judicial disclosure duty.",
+    "The full six-surface caret census is 25/32 with seven pending objects; no ALL IS^ claim is permitted for this specialist scope.",
+    "The full eighteen-route first-hop caret census is 56/130 with 74 pending objects; it is separate from both the six-surface 25/32 result and the repository-wide 19/24 result.",
+    "Public Git contains aggregate controls for the three archived 24-Oct notice copies, but not a reproducible per-copy full-hash custody manifest or the signed Auto 97/2025 binary.",
+    "Repository and website publication of the exact complete continuity candidate is authorized; no email, resend, forward, AGE/RedSARA notice, portal submission or filing is authorized."
+  ]
+}

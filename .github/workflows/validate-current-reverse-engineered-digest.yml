@@ -5,22 +5,111 @@ on:
     paths:
       - 'CURRENT_REVERSE_ENGINEERED_DIGEST.md'
       - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
+      - 'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-357-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+      - 'archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md'
+      - 'archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md'
+      - 'archive/prompts/ALBERTO_MEETING_POINT_MULTIDIRECTIONAL_CRIMINAL_FIRST_UPDATE_PROMPT_27AUG2026.md'
+      - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
+      - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'es/concurso-36-2012-magistrado-juez/**'
+      - 'en/insolvency-36-2012-mercantile-court-1/**'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/**'
+      - 'es/concurso-36-2012-masa-activa-2018-2021/**'
+      - 'en/insolvency-36-2012-active-estate-2018-2021/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/**'
+      - 'en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/**'
+      - 'en/unitary-criminal-hypothesis-2011-present/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'sitemap.xml'
+      - 'sitemap-cgpj.xml'
+      - 'sitemap-judicial-spine.xml'
+      - 'sitemap-meeting-point.xml'
+      - 'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
       - 'archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md'
       - 'publication-manifests/unitary-repository-website-redigest-20260827.json'
       - 'scripts/validate_current_reverse_engineered_digest.py'
+      - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
+      - 'scripts/verify_current_reverse_engineered_digest_live.py'
       - '.github/workflows/validate-current-reverse-engineered-digest.yml'
   push:
     branches: [main]
     paths:
       - 'CURRENT_REVERSE_ENGINEERED_DIGEST.md'
       - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
+      - 'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-357-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+      - 'archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md'
+      - 'archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md'
+      - 'archive/prompts/ALBERTO_MEETING_POINT_MULTIDIRECTIONAL_CRIMINAL_FIRST_UPDATE_PROMPT_27AUG2026.md'
+      - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
+      - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'es/concurso-36-2012-magistrado-juez/**'
+      - 'en/insolvency-36-2012-mercantile-court-1/**'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/**'
+      - 'es/concurso-36-2012-masa-activa-2018-2021/**'
+      - 'en/insolvency-36-2012-active-estate-2018-2021/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/**'
+      - 'en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/**'
+      - 'en/unitary-criminal-hypothesis-2011-present/**'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'sitemap.xml'
+      - 'sitemap-cgpj.xml'
+      - 'sitemap-judicial-spine.xml'
+      - 'sitemap-meeting-point.xml'
+      - 'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
       - 'archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md'
       - 'publication-manifests/unitary-repository-website-redigest-20260827.json'
       - 'scripts/validate_current_reverse_engineered_digest.py'
+      - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
+      - 'scripts/verify_current_reverse_engineered_digest_live.py'
       - '.github/workflows/validate-current-reverse-engineered-digest.yml'
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
 
 jobs:
@@ -33,6 +122,8 @@ jobs:
           persist-credentials: false
       - name: Validate digest controls
         run: python3 scripts/validate_current_reverse_engineered_digest.py
+      - name: Validate first-hop rendered caret provenance
+        run: python3 scripts/validate_alberto_meeting_point_first_hop_caret.py
       - name: Validate JSON syntax
         run: |
           python3 - <<'PY'
@@ -40,87 +131,43 @@ jobs:
           from pathlib import Path
           for path in [
               'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json',
+              'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json',
+              'assets/data/caepr-caret-alberto-meeting-point-357-v1.json',
+              'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json',
+              'assets/data/caepr-caret-unitary-digest-v1.json',
+              'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json',
               'publication-manifests/unitary-repository-website-redigest-20260827.json',
           ]:
               json.loads(Path(path).read_text(encoding='utf-8'))
           print('JSON syntax: PASS')
           PY
 
-  verify-live:
+      - name: Compile exact live verifier
+        run: python3 -B -m py_compile scripts/verify_current_reverse_engineered_digest_live.py
+
+  verify-exact-live:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: validate
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
-    env:
-      BASE: https://sbu001monterecco.github.io/por-derecho
+    timeout-minutes: 20
     steps:
-      - name: Verify exact public controls with cache busting
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Attest exact Pages SHA and compare controlled live bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          python3 - <<'PY'
-          import json
-          import os
-          import time
-          import urllib.request
-
-          base = os.environ['BASE'].rstrip('/')
-          checks = [
-              ('/CURRENT_REVERSE_ENGINEERED_DIGEST.md', [
-                  'PD-UNITARY-REDIGEST-20260827-01',
-                  'Sun Park was one economically integrated hotel platform',
-                  '19 / 24 confirmed',
-              ]),
-              ('/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json', [
-                  'PD-UNITARY-REDIGEST-20260827-01',
-                  'LIVE_VERIFIED_PUBLIC_CONTROL',
-                  'SUPERSEDED_NOT_MERGEABLE_AS_IS',
-              ]),
-              ('/publication-manifests/unitary-repository-website-redigest-20260827.json', [
-                  'unitary-repository-website-redigest-20260827',
-                  'PD-UNITARY-REDIGEST-20260827-01',
-                  'LIVE_VERIFIED',
-                  'material_date_change',
-              ]),
-              ('/archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md', [
-                  'LIVE_VERIFIED_PUBLIC_CONTROL',
-                  '0367a3759cf372bce35a3f2c292092e2f06cad25',
-                  'a65e812d5ffdc36f41dcaee5297a86d02cd12004759d89815c5c0c0f406028a3',
-              ]),
-          ]
-
-          def fetch(url: str) -> str:
-              separator = '&' if '?' in url else '?'
-              request = urllib.request.Request(
-                  f'{url}{separator}unitary_redigest={int(time.time())}',
-                  headers={
-                      'User-Agent': 'por-derecho-current-redigest-verifier/1',
-                      'Cache-Control': 'no-cache',
-                      'Pragma': 'no-cache',
-                  },
-              )
-              with urllib.request.urlopen(request, timeout=30) as response:
-                  if response.status != 200:
-                      raise RuntimeError(f'HTTP {response.status}')
-                  return response.read().decode('utf-8', errors='replace')
-
-          failures = []
-          for route, markers in checks:
-              url = base + route
-              last = ''
-              for _ in range(18):
-                  try:
-                      body = fetch(url)
-                      missing = [marker for marker in markers if marker not in body]
-                      if not missing:
-                          print(f'LIVE VERIFIED {url} :: {len(body)} bytes :: {len(markers)} markers')
-                          break
-                      last = f'missing {missing}'
-                  except Exception as exc:
-                      last = str(exc)
-                  time.sleep(10)
-              else:
-                  failures.append(f'{url}: {last}')
-
-          if failures:
-              raise SystemExit('LIVE VERIFICATION FAILED\n - ' + '\n - '.join(failures))
-          print(json.dumps({'state': 'LIVE_VERIFIED', 'verified_routes': len(checks)}))
-          PY
+          python3 scripts/verify_current_reverse_engineered_digest_live.py \
+            --expected-sha "${GITHUB_SHA}" \
+            --repository "${GITHUB_REPOSITORY}" \
+            --closeout-output artifacts/current-reverse-engineered-digest/deployment-readback-closeout.json
+      - name: Upload separate deployment/readback closeout control
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: current-reverse-engineered-digest-closeout-${{ github.run_id }}
+          path: artifacts/current-reverse-engineered-digest/deployment-readback-closeout.json
+          if-no-files-found: error
+          retention-days: 30

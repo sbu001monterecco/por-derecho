@@ -1,0 +1,163 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "fti-meeting-point-ricpe-continuity-20260827",
+  "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+  "control_date": "2026-08-27",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "release_candidate_not_yet_verified_live",
+  "owner": "Por Derecho / Project Sun Rock",
+  "remote_main_observed_sha": "f4c186194f34c414e83526a771a9772d62782519",
+  "candidate_branch": "codex/alberto-judicial-title-20260827",
+  "candidate_parent_sha": "f4c186194f34c414e83526a771a9772d62782519",
+  "validated_content_commit_sha": "PENDING_FINAL_VALIDATION_COMMIT",
+  "publication_authorized": true,
+  "publication_authorization": {
+    "scope_control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "repository_and_website_only": true,
+    "email_authorized": false,
+    "filing_authorized": false,
+    "user_instruction": "Publish the isolated RICPE privacy hotfix; after verified live, publish the complete interlinked FTI / Meeting Point / RICPE continuity candidate. Preserve the unitary non-fragmented criminal-first digest alongside the other lenses, the multidirectional evidence and inference tests, the full finite caret scopes, all pending Germany/Spain/EU proceedings and future actions, and a continuous public-source watch for buyers, owners, operators, managers, advisers, financiers and other capital participants in former FTI Touristik / Meeting Point assets in the Canary Islands or Spain. This authorises repository and website publication only; it does not authorise any email, filing, RedSARA/AGE notification, portal submission or authority contact.",
+    "recorded_at": "2026-08-27T13:36:24Z"
+  },
+  "communication_authorized": false,
+  "email_or_filing_action": "HOLD_NOT_AUTHORISED",
+  "release_units": [
+    {
+      "id": "URGENT-PRIVACY-HOTFIX",
+      "priority": 0,
+      "state": "LIVE_VERIFIED",
+      "purpose": "Remove the exact RICPE/Ithikios communication code from current public files and require zero-exposure validation.",
+      "files": [
+        "evidence/ricpe-cnmv/2026-08-27/resolution.txt",
+        "CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md",
+        "archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md",
+        "archive/RICPE_CHANNEL_PUBLIC_IDENTIFIER_EXPOSURE_REMEDIATION_27AUG2026.md",
+        "scripts/validate_ricpe_channel_identifier_privacy.py",
+        ".github/workflows/ricpe-channel-identifier-privacy.yml"
+      ],
+      "merge_sha": "c42996115b66f7ae6b98e651ee8e9c72818e824b",
+      "pages_run_id": 33076508182,
+      "pages_conclusion": "success",
+      "verification": "Public redacted PDF and six derived images matched the reviewed binaries; superseded PDF and six superseded image paths returned 404; controlled text retained only the approved one-way fingerprint.",
+      "boundary": "Current-tree and live-route correction does not erase historical Git/cache exposure; do not publish the secret in the incident record."
+    },
+    {
+      "id": "SUBSTANTIVE-CONTINUITY-RELEASE",
+      "priority": 1,
+      "state": "PREPARED_AUTHORISED_NOT_LIVE",
+      "purpose": "Publish the criminal-first digest, multidirectional causal graph, both finite caret censuses, the 31-action ledger with complete 18-file/proceeding mapping, continuity audit, bounded transaction monitor and ES/EN/DE interlinked hubs."
+    }
+  ],
+  "hub_routes": {
+    "es": "/es/fti-meeting-point-ricpe-alertador-continuidad/",
+    "en": "/en/fti-meeting-point-ricpe-whistleblower-continuity/",
+    "de": "/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/"
+  },
+  "caret_scope": {
+    "control_id": "PD-FTI-MP-RICPE-CARET-20260827-01",
+    "confirmed": 39,
+    "pending": 26,
+    "suspended": 0,
+    "denominator": 65,
+    "verdict": "FULL_FINITE_CONTINUITY_SPINE_CENSUS_PARTIAL_NOT_ALL_IS",
+    "identity_only": true,
+    "separate_from": ["25/32 specialist", "56/130 first-hop", "19/24 repository-wide unitary"]
+  },
+  "professional_institutional_caret_scope": {
+    "control_id": "PD-FTI-MP-PROF-INST-CARET-20260827-01",
+    "confirmed": 40,
+    "pending": 61,
+    "suspended": 0,
+    "denominator": 101,
+    "verdict": "FULL_ROLE_SELECTED_CENSUS_PARTIAL_NOT_ALL_IS",
+    "identity_only": true,
+    "scope_boundary": "Thirteen frozen professional/institutional source surfaces; excludes hotel-by-hotel and newly discovered transaction-counterparty objects unless separately admitted."
+  },
+  "causal_graph": {
+    "nodes": 10,
+    "edges": 12,
+    "required_edge_fields": ["support", "forward_inference", "reverse_test", "counterevidence", "production"]
+  },
+  "action_register": {
+    "actions": 31,
+    "package_definitions": 12,
+    "mapped_proceeding_files": 18,
+    "external_action_authorized": false
+  },
+  "asset_transaction_monitor": {
+    "control_id": "PD-FTI-MP-ASSET-TX-MONITOR-20260827-01",
+    "register_id": "PD-FTI-MP-ASSET-TX-REGISTER-20260827-01",
+    "heritage_scopes": 3,
+    "controlled_entity_objects": 11,
+    "public_sources": 12,
+    "baseline_events": 2,
+    "open_coverage_gaps": 8,
+    "cadence": "17 */6 * * *",
+    "automatic_promotion": false,
+    "external_action_authorized": false
+  },
+  "expected_source_files": [
+    "archive/prompts/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_CONTINUITY_PROMPT_27AUG2026.md",
+    "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md",
+    "archive/RICPE_27AUG2026_RESOLVER_IDENTITY_ACCESS_CONTROL_NPL_CONTINUUM_ADDENDUM.md",
+    "assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json",
+    "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json",
+    "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json",
+    "assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+    "assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json",
+    "assets/data/fti-meeting-point-canary-capital-control-watch-v1.json",
+    "assets/fti-meeting-point-canary-capital-control-watch-20260827.css",
+    "assets/fti-meeting-point-canary-capital-control-watch-20260827.js",
+    "ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json",
+    "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json",
+    "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.md",
+    "docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md",
+    "assets/fti-meeting-point-ricpe-continuity-20260827.js",
+    "scripts/validate_fti_meeting_point_ricpe_continuity.py",
+    "scripts/monitor_fti_meeting_point_asset_transactions.py",
+    "scripts/validate_fti_meeting_point_asset_transaction_monitor.py",
+    "scripts/validate_fti_meeting_point_professional_institutional_caret.py",
+    "scripts/render_fti_meeting_point_ricpe_continuity.mjs",
+    ".github/workflows/fti-meeting-point-ricpe-continuity.yml",
+    ".github/workflows/monitor-fti-meeting-point-asset-transactions.yml"
+  ],
+  "expected_routes": {
+    "es": ["es/fti-meeting-point-ricpe-alertador-continuidad/index.html"],
+    "en": ["en/fti-meeting-point-ricpe-whistleblower-continuity/index.html"],
+    "de": ["de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html"]
+  },
+  "validation": {
+    "dedicated_structure_privacy_caret_action_gate": "passed_local",
+    "binary_privacy_gate": "passed_live_and_final_local_revalidation",
+    "professional_institutional_caret_gate": "passed_local",
+    "asset_transaction_monitor_gate": "passed_local",
+    "json_syntax": "passed_local",
+    "xml_syntax": "passed_local",
+    "repository_preservation": "passed_local",
+    "publication_integrity": "passed_local",
+    "audience_experience": "passed_local",
+    "identity_registry": "passed_local",
+    "sent_link_continuity": "passed_local",
+    "mission_critical": "passed_local",
+    "live_readback": "not_run_pending_authorised_publication"
+  },
+  "publication_sequence": [
+    "review exact local diff",
+    "commit candidate",
+    "bind the existing repository-and-website-only publication authorization",
+    "retain the already live-verified isolated privacy hotfix as the baseline",
+    "push substantive candidate and open PR",
+    "require green checks",
+    "merge exact reviewed head",
+    "verify exact-SHA Pages deployment",
+    "read back ES/EN/DE hubs, machine controls, reciprocal links and formerly leaking files",
+    "write live closeout and promote deletion audit"
+  ],
+  "boundaries": [
+    "Criminal-first is analytical order, not a criminal finding.",
+    "The Acosta Matos/RICPE instrumental-business-causation proposition is Gil Marer's attributed, falsifiable allegation; wider causation and quantified loss are not proved.",
+    "The RICPE workflow history proves the recorded states, not deliberate concealment or non-receipt by a particular constituency.",
+    "A caret resolves identity only.",
+    "Repository and website publication of the exact continuity candidate is authorized; no email, resend, AGE/RedSARA notice, portal submission, filing or other external communication is authorized."
+  ]
+}

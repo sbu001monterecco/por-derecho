@@ -1,0 +1,542 @@
+name: Validate FTI Meeting Point RICPE continuity
+
+on:
+  pull_request:
+    paths:
+      - 'es/fti-meeting-point-ricpe-alertador-continuidad/**'
+      - 'en/fti-meeting-point-ricpe-whistleblower-continuity/**'
+      - 'de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/**'
+      - 'assets/styles.css'
+      - 'assets/site.js'
+      - 'assets/fti-meeting-point-ricpe-continuity-20260827.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'assets/ricpe-cnmv-closure-update-20260827.js'
+      - 'assets/ricpe-resolver-access-control-20260827.js'
+      - 'assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json'
+      - 'assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json'
+      - 'assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
+      - 'assets/data/fti-meeting-point-canary-capital-control-watch-v1.json'
+      - 'assets/fti-meeting-point-canary-capital-control-watch-20260827.css'
+      - 'assets/fti-meeting-point-canary-capital-control-watch-20260827.js'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json'
+      - 'ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.*'
+      - 'ops/FTI_MEETING_POINT_EMAIL_CORRECTION_ACTION_STATE_26AUG2026.json'
+      - 'archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md'
+      - 'archive/RICPE_27AUG2026_RESOLVER_IDENTITY_ACCESS_CONTROL_NPL_CONTINUUM_ADDENDUM.md'
+      - 'archive/prompts/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_CONTINUITY_PROMPT_27AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md'
+      - 'docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md'
+      - 'evidence/ricpe-cnmv/2026-08-27/resolution.txt'
+      - 'CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md'
+      - 'archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md'
+      - 'es/lava-verde-club-sei-meeting-point/index.html'
+      - 'en/lava-verde-club-sei-meeting-point/index.html'
+      - 'sitemap.xml'
+      - 'sitemap-meeting-point.xml'
+      - 'publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json'
+      - 'scripts/validate_fti_meeting_point_ricpe_continuity.py'
+      - 'scripts/monitor_fti_meeting_point_asset_transactions.py'
+      - 'scripts/validate_fti_meeting_point_asset_transaction_monitor.py'
+      - 'scripts/validate_fti_meeting_point_professional_institutional_caret.py'
+      - 'scripts/render_fti_meeting_point_ricpe_continuity.mjs'
+      - '.github/workflows/monitor-fti-meeting-point-asset-transactions.yml'
+      - '.github/workflows/fti-meeting-point-ricpe-continuity.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'es/fti-meeting-point-ricpe-alertador-continuidad/**'
+      - 'en/fti-meeting-point-ricpe-whistleblower-continuity/**'
+      - 'de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/**'
+      - 'assets/styles.css'
+      - 'assets/site.js'
+      - 'assets/fti-meeting-point-ricpe-continuity-20260827.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'assets/ricpe-cnmv-closure-update-20260827.js'
+      - 'assets/ricpe-resolver-access-control-20260827.js'
+      - 'assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json'
+      - 'assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json'
+      - 'assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
+      - 'assets/data/fti-meeting-point-canary-capital-control-watch-v1.json'
+      - 'assets/fti-meeting-point-canary-capital-control-watch-20260827.css'
+      - 'assets/fti-meeting-point-canary-capital-control-watch-20260827.js'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json'
+      - 'ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.*'
+      - 'ops/FTI_MEETING_POINT_EMAIL_CORRECTION_ACTION_STATE_26AUG2026.json'
+      - 'archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md'
+      - 'archive/RICPE_27AUG2026_RESOLVER_IDENTITY_ACCESS_CONTROL_NPL_CONTINUUM_ADDENDUM.md'
+      - 'archive/prompts/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_CONTINUITY_PROMPT_27AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md'
+      - 'docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md'
+      - 'evidence/ricpe-cnmv/2026-08-27/resolution.txt'
+      - 'CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md'
+      - 'archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md'
+      - 'es/lava-verde-club-sei-meeting-point/index.html'
+      - 'en/lava-verde-club-sei-meeting-point/index.html'
+      - 'sitemap.xml'
+      - 'sitemap-meeting-point.xml'
+      - 'publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json'
+      - 'scripts/validate_fti_meeting_point_ricpe_continuity.py'
+      - 'scripts/monitor_fti_meeting_point_asset_transactions.py'
+      - 'scripts/validate_fti_meeting_point_asset_transaction_monitor.py'
+      - 'scripts/validate_fti_meeting_point_professional_institutional_caret.py'
+      - 'scripts/render_fti_meeting_point_ricpe_continuity.mjs'
+      - '.github/workflows/monitor-fti-meeting-point-asset-transactions.yml'
+      - '.github/workflows/fti-meeting-point-ricpe-continuity.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: /tmp/pd-fti-meeting-point-playwright
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22.20.0'
+      - name: Validate continuity, privacy, caret, graph and actions
+        run: python3 scripts/validate_fti_meeting_point_ricpe_continuity.py
+      - name: Compile validators and check rendered-test JavaScript
+        run: |
+          python3 -B -m py_compile \
+            scripts/validate_fti_meeting_point_ricpe_continuity.py \
+            scripts/validate_fti_meeting_point_asset_transaction_monitor.py \
+            scripts/validate_fti_meeting_point_professional_institutional_caret.py
+          node --check assets/fti-meeting-point-canary-capital-control-watch-20260827.js
+          node --check scripts/render_fti_meeting_point_ricpe_continuity.mjs
+      - name: Install pinned Playwright and Chromium
+        run: |
+          timeout 2m npm install --no-save --package-lock=false playwright@1.50.1
+          test "$(node -p "require('playwright/package.json').version")" = "1.50.1"
+          timeout 8m npx --no-install playwright install --with-deps chromium
+      - name: Serve the checkout at the production subpath
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory "$(dirname "$GITHUB_WORKSPACE")" > /tmp/pd-fti-meeting-point-http.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent --show-error http://127.0.0.1:8765/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/ > /dev/null; then
+              exit 0
+            fi
+            sleep 0.5
+          done
+          cat /tmp/pd-fti-meeting-point-http.log
+          exit 1
+      - name: Render ES EN DE continuity and monitoring views
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8765/por-derecho
+          PSR_SCREENSHOT_DIR: artifacts/fti-meeting-point-ricpe-render
+        run: node scripts/render_fti_meeting_point_ricpe_continuity.mjs
+      - name: Upload rendered verification
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: fti-meeting-point-ricpe-render-${{ github.run_id }}
+          path: artifacts/fti-meeting-point-ricpe-render/
+          if-no-files-found: warn
+          retention-days: 14
+
+  verify-live:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      BASE: https://sbu001monterecco.github.io/por-derecho
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Attest successful Pages deployment for the exact pushed SHA
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        shell: python
+        run: |
+          import json
+          import os
+          import time
+          import urllib.request
+
+          repository = os.environ['REPOSITORY']
+          expected_sha = os.environ['EXPECTED_SHA']
+          token = os.environ['GH_TOKEN']
+          api = (
+              f'https://api.github.com/repos/{repository}/actions/runs'
+              f'?head_sha={expected_sha}&per_page=100'
+          )
+          last_seen = []
+          for attempt in range(1, 49):
+              request = urllib.request.Request(
+                  api,
+                  headers={
+                      'Accept': 'application/vnd.github+json',
+                      'Authorization': f'Bearer {token}',
+                      'X-GitHub-Api-Version': '2022-11-28',
+                      'User-Agent': 'por-derecho-fti-mp-ricpe-pages-attestation/1',
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=25) as response:
+                  payload = json.load(response)
+              candidates = [
+                  run for run in payload.get('workflow_runs', [])
+                  if run.get('name') == 'pages build and deployment'
+                  and run.get('path') == 'dynamic/pages/pages-build-deployment'
+                  and run.get('head_sha') == expected_sha
+              ]
+              last_seen = [
+                  {
+                      'id': run.get('id'),
+                      'head_sha': run.get('head_sha'),
+                      'status': run.get('status'),
+                      'conclusion': run.get('conclusion'),
+                      'html_url': run.get('html_url'),
+                  }
+                  for run in candidates
+              ]
+              successful = next(
+                  (
+                      run for run in candidates
+                      if run.get('status') == 'completed'
+                      and run.get('conclusion') == 'success'
+                  ),
+                  None,
+              )
+              if successful:
+                  print(json.dumps({
+                      'state': 'EXACT_PAGES_RUN_ATTESTED',
+                      'expected_sha': expected_sha,
+                      'pages_run_id': successful.get('id'),
+                      'pages_run_number': successful.get('run_number'),
+                      'pages_head_sha': successful.get('head_sha'),
+                      'pages_url': successful.get('html_url'),
+                      'attempt': attempt,
+                  }, sort_keys=True))
+                  raise SystemExit(0)
+              print(f'Pages attestation attempt {attempt}/48: pending', flush=True)
+              if attempt < 48:
+                  time.sleep(10)
+
+          print(json.dumps({
+              'state': 'EXACT_PAGES_RUN_NOT_ATTESTED',
+              'expected_sha': expected_sha,
+              'last_seen': last_seen,
+          }, sort_keys=True))
+          raise SystemExit(1)
+      - name: Read back exact deployed continuity release
+        shell: python
+        run: |
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.request
+          from pathlib import Path
+
+          base = os.environ['BASE'].rstrip('/')
+          head_sha = os.environ['GITHUB_SHA']
+          workspace = Path(os.environ['GITHUB_WORKSPACE']).resolve()
+          manifest_path = 'publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json'
+          manifest = json.loads((workspace / manifest_path).read_text(encoding='utf-8'))
+
+          expected_hubs = {
+              'es': '/es/fti-meeting-point-ricpe-alertador-continuidad/',
+              'en': '/en/fti-meeting-point-ricpe-whistleblower-continuity/',
+              'de': '/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/',
+          }
+          assert manifest['hub_routes'] == expected_hubs
+
+          expected_source_files = manifest.get('expected_source_files', [])
+          assert expected_source_files
+          repository_only_expected = [
+              path for path in expected_source_files
+              if path.startswith('.github/')
+          ]
+          published_expected = [
+              path for path in expected_source_files
+              if not path.startswith('.github/')
+          ]
+          expected_route_paths = [
+              path
+              for language in ('es', 'en', 'de')
+              for path in manifest.get('expected_routes', {}).get(language, [])
+          ]
+          mandatory_paths = [
+              'es/fti-meeting-point-ricpe-alertador-continuidad/index.html',
+              'en/fti-meeting-point-ricpe-whistleblower-continuity/index.html',
+              'de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html',
+              'assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json',
+              'assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json',
+              'assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json',
+              'ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json',
+              'ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.md',
+              'ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json',
+              'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json',
+              'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json',
+              'assets/data/fti-meeting-point-canary-capital-control-watch-v1.json',
+              'assets/fti-meeting-point-canary-capital-control-watch-20260827.js',
+              'assets/fti-meeting-point-canary-capital-control-watch-20260827.css',
+              'assets/site.js',
+              'assets/site-pre-intervencion-highlight-20260820.js',
+              'assets/fti-meeting-point-ricpe-continuity-20260827.js',
+              'assets/ricpe-cnmv-closure-update-20260827.js',
+              'assets/ricpe-resolver-access-control-20260827.js',
+              'assets/styles.css',
+              manifest_path,
+              'sitemap.xml',
+              'sitemap-meeting-point.xml',
+              'evidence/ricpe-cnmv/2026-08-27/index.html',
+              'evidence/ricpe-cnmv/2026-08-27/resolution.txt',
+          ]
+          candidate_paths = list(dict.fromkeys(
+              expected_route_paths + published_expected + mandatory_paths
+          ))
+          assert set(mandatory_paths).issubset(candidate_paths)
+
+          all_repository_paths = list(dict.fromkeys(
+              candidate_paths + repository_only_expected
+          ))
+          local_bytes = {}
+          for path in all_repository_paths:
+              resolved = (workspace / path).resolve()
+              if resolved != workspace and workspace not in resolved.parents:
+                  raise AssertionError(f'candidate escapes checkout: {path}')
+              if not resolved.is_file():
+                  raise AssertionError(f'missing candidate file: {path}')
+              if path in candidate_paths:
+                  local_bytes[path] = resolved.read_bytes()
+
+          def path_to_route(path):
+              if path.endswith('/index.html'):
+                  return '/' + path[:-len('index.html')]
+              return '/' + path
+
+          def fetch_bytes(path):
+              route = path_to_route(path)
+              separator = '&' if '?' in route else '?'
+              url = f'{base}{route}{separator}fti_mp_ricpe_live={head_sha}-{time.time_ns()}'
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      'User-Agent': 'por-derecho-fti-mp-ricpe-live-readback/1',
+                      'Cache-Control': 'no-cache',
+                      'Pragma': 'no-cache',
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  if response.status != 200:
+                      raise RuntimeError(f'{path}: HTTP {response.status}')
+                  return response.read()
+
+          live_bytes = {}
+          last_mismatches = []
+          for attempt in range(1, 49):
+              current = {}
+              mismatches = []
+              for path in candidate_paths:
+                  try:
+                      remote = fetch_bytes(path)
+                      current[path] = remote
+                  except Exception as exc:
+                      mismatches.append({'path': path, 'error': str(exc)})
+                      continue
+                  local = local_bytes[path]
+                  if remote != local:
+                      mismatches.append({
+                          'path': path,
+                          'local_sha256': hashlib.sha256(local).hexdigest(),
+                          'live_sha256': hashlib.sha256(remote).hexdigest(),
+                      })
+              if not mismatches:
+                  live_bytes = current
+                  break
+              last_mismatches = mismatches
+              print(
+                  f'Exact-byte readback attempt {attempt}/48: '
+                  f'{len(mismatches)} mismatch(es)',
+                  flush=True,
+              )
+              if attempt < 48:
+                  time.sleep(10)
+          else:
+              raise SystemExit(
+                  'DEPLOYED READBACK FAILED: exact-byte mismatch after '
+                  f'Pages attestation: {json.dumps(last_mismatches, sort_keys=True)}'
+              )
+
+          def text(path):
+              return live_bytes[path].decode('utf-8', errors='strict')
+
+          def data(path):
+              return json.loads(text(path))
+
+          action_markers = {
+              'es': '31 ACCIONES CONTROLADAS',
+              'en': '31 CONTROLLED ACTIONS',
+              'de': '31 KONTROLLIERTE MASSNAHMEN',
+          }
+          for language, route in expected_hubs.items():
+              path = route.lstrip('/') + 'index.html'
+              page = text(path)
+              assert 'data-fmr-control="PD-FTI-MP-RICPE-CONTINUITY-20260827-01"' in page
+              assert f'data-fmr-language="{language}"' in page
+              assert page.count('data-causal-node="FMR-N') == 10
+              assert action_markers[language] in page
+              assert 'fti-meeting-point-ricpe-causal-evidence-v1.json' in page
+              assert 'caepr-caret-fti-meeting-point-ricpe-continuity-v1.json' in page
+              assert 'caepr-caret-fti-meeting-point-professional-institutional-v1.json' in page
+              assert 'FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json' in page
+              assert 'fti-meeting-point-canary-capital-control-watch-v1.json' in page
+              assert 'fti-meeting-point-canary-capital-control-watch-20260827.js' in page
+              assert 'fti-meeting-point-canary-capital-control-watch-20260827.css' in page
+              assert 'HOLD' in page
+
+          graph = data('assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json')
+          assert graph['control_id'] == 'PD-FTI-MP-RICPE-CONTINUITY-20260827-01'
+          assert graph['analysis_order'][0] == 'CRIMINAL_FIRST'
+          assert len(graph['nodes']) == 10
+          assert len(graph['edges']) == 12
+          for edge in graph['edges']:
+              assert all(
+                  edge.get(field)
+                  for field in (
+                      'support',
+                      'forward_inference',
+                      'reverse_test',
+                      'counterevidence',
+                      'production',
+                  )
+              )
+
+          spine_caret = data('assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json')
+          assert spine_caret['control_id'] == 'PD-FTI-MP-RICPE-CARET-20260827-01'
+          assert {
+              key: spine_caret['counts'][key]
+              for key in ('eligible', 'confirmed', 'pending', 'suspended')
+          } == {
+              'eligible': 65,
+              'confirmed': 39,
+              'pending': 26,
+              'suspended': 0,
+          }
+
+          professional_caret = data('assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json')
+          assert professional_caret['control_id'] == 'PD-FTI-MP-PROF-INST-CARET-20260827-01'
+          assert {
+              key: professional_caret['counts'][key]
+              for key in ('eligible', 'confirmed', 'pending', 'suspended')
+          } == {
+              'eligible': 101,
+              'confirmed': 40,
+              'pending': 61,
+              'suspended': 0,
+          }
+
+          actions = data('ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json')
+          assert actions['control_id'] == 'PD-FTI-MP-RICPE-ACTIONS-20260827-01'
+          assert actions['external_action_authorized'] is False
+          assert [item['id'] for item in actions['actions']] == [
+              f'MPA-{index:03d}' for index in range(1, 32)
+          ]
+          assert len(actions['package_definitions']) == 12
+          assert len(actions['proceeding_file_mapping']) == 18
+          action_markdown = text('ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.md')
+          assert 'MPA-031' in action_markdown
+          assert 'HOLD' in action_markdown
+
+          monitor_control = data('ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json')
+          assert monitor_control['control_id'] == 'PD-FTI-MP-ASSET-TX-MONITOR-20260827-01'
+          assert monitor_control['external_action_authorized'] is False
+          monitor_register = data('assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json')
+          assert monitor_register['control_id'] == 'PD-FTI-MP-ASSET-TX-REGISTER-20260827-01'
+          assert len(monitor_register['heritage_scopes']) == 3
+          assert len(monitor_register['known_entities']) == 11
+          assert len(monitor_register['sources']) == 12
+          assert len(monitor_register['official_source_lanes']) == 11
+          assert len(monitor_register['events']) == 2
+          assert len(monitor_register['coverage_gaps']) == 8
+          monitor_schema = data('assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json')
+          assert monitor_schema['$id'].endswith(
+              '/assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
+          )
+          watch = data('assets/data/fti-meeting-point-canary-capital-control-watch-v1.json')
+          assert watch['view_role'] == 'LOCALISED_DERIVED_PRESENTATION_NOT_AN_EVENT_OR_SOURCE_REGISTER'
+          assert watch['canonical_register']['control_id'] == monitor_register['control_id']
+          assert len(watch['presentation_lanes']) == 6
+          watch_js = text('assets/fti-meeting-point-canary-capital-control-watch-20260827.js')
+          assert 'canonical_register' in watch_js
+          assert 'presentation_lanes' in watch_js
+          assert 'fm-watch__error' in watch_js
+          watch_css = text('assets/fti-meeting-point-canary-capital-control-watch-20260827.css')
+          assert '.fm-watch__table' in watch_css
+
+          site_loader = text('assets/site.js')
+          pre_loader = text('assets/site-pre-intervencion-highlight-20260820.js')
+          closure_loader = text('assets/ricpe-cnmv-closure-update-20260827.js')
+          continuity_loader = text('assets/fti-meeting-point-ricpe-continuity-20260827.js')
+          assert 'site-pre-intervencion-highlight-20260820.js' in site_loader
+          assert 'ricpe-cnmv-closure-update-20260827.js' in pre_loader
+          assert 'fti-meeting-point-ricpe-continuity-20260827.js' in pre_loader
+          assert 'ricpe-resolver-access-control-20260827.js' in closure_loader
+          assert '/es/fti-meeting-point-ricpe-alertador-continuidad/' in continuity_loader
+          assert '/en/fti-meeting-point-ricpe-whistleblower-continuity/' in continuity_loader
+
+          deployed_manifest = data(manifest_path)
+          assert deployed_manifest['control_id'] == 'PD-FTI-MP-RICPE-CONTINUITY-20260827-01'
+          assert deployed_manifest['current_state'] in {
+              'PREPARED_PENDING_MERGE',
+              'REMOTE_SOURCE',
+              'PR_OPEN',
+              'CI_GREEN',
+              'MERGED',
+              'DEPLOYED',
+          }
+          assert deployed_manifest['publication_authorized'] is True
+          assert deployed_manifest['communication_authorized'] is False
+          assert deployed_manifest['email_or_filing_action'] == 'HOLD_NOT_AUTHORISED'
+          assert deployed_manifest['action_register']['actions'] == 31
+          assert deployed_manifest['asset_transaction_monitor']['open_coverage_gaps'] == 8
+
+          for sitemap_path in ('sitemap.xml', 'sitemap-meeting-point.xml'):
+              sitemap = text(sitemap_path)
+              for route in expected_hubs.values():
+                  assert base + route in sitemap, f'{sitemap_path}: missing {route}'
+
+          print(json.dumps({
+              'state': 'DEPLOYED_READBACK_PASS_CLOSEOUT_REQUIRED',
+              'head_sha': head_sha,
+              'manifest_state': deployed_manifest['current_state'],
+              'exact_byte_surfaces': len(candidate_paths),
+              'repository_only_expected_files': len(repository_only_expected),
+              'hubs': 3,
+              'graph': '10/12',
+              'spine_caret': '39/65',
+              'professional_caret': '40/101',
+              'actions': 31,
+              'monitor': {
+                  'heritage_scopes': 3,
+                  'entities': 11,
+                  'automated_safe_sources': 12,
+                  'official_source_lanes': 11,
+                  'events': 2,
+                  'open_gaps': 8,
+                  'presentation_lanes': 6,
+              },
+          }, sort_keys=True))

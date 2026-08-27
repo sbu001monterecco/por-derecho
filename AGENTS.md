@@ -21,7 +21,8 @@ Unless Gil Marer later gives specific express authorization, both homepages and 
 
 1. five separate private-actor cards for Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila María Cogolludo Ramos, José Daniel Acosta Matos and Laura Patricia Acosta Matos;
 2. immediately below, Francisco de Borja Rodríguez-Batllori Laffitte as the court-appointed, judicial-adjacent Insolvency Administrator—not a private actor and not the judge;
-3. Alberto López Villarrubia separately as Magistrate-Judge exercising judicial power;
+3. Alberto López Villarrubia separately and with the date-correct judicial title
+   defined below, as the magistrate exercising judicial power;
 4. five actor-specific linkage rows addressing alleged acts/commissions and omissions, evidence, contrary record and proof boundaries; and
 5. the source-controlled images already assigned to Francisco Mario Matos Matas, the Insolvency Administrator and the Magistrate-Judge. Do not fabricate portraits for people without a verified repository asset.
 
@@ -30,6 +31,20 @@ The public identity is **Laura Patricia Acosta Matos**. Do not use “Laura Isab
 ## 4. Evidence and publication boundaries
 
 - Label documented fact, attributed allegation, inference, official outcome, contrary record and unresolved proof distinctly.
+- Apply `archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md`
+  whenever Alberto López Villarrubia is in scope. For an act before 31 December
+  2025 use, on first narrative reference, **“el Ilmo. Sr. D. Alberto López
+  Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las
+  Palmas de Gran Canaria”** (or the materially equivalent English historical
+  title). For a current reference use **“el magistrado D. Alberto López
+  Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del
+  Tribunal de Instancia de Las Palmas de Gran Canaria”**. A pre-reorganisation
+  act attributed to the former Juzgado de lo Mercantil n.º 3 is not described as
+  a proved substitution, signature or temporary capacity unless the signed act
+  and allocation/substitution record establish it. After first reference use
+  “el magistrado López Villarrubia,” not bare “Alberto,” “Juez Alberto,”
+  “Judge Alberto” or “Magistrado Alberto.” Preserve exact quotations, source
+  literals, filenames, URLs and historical institutional names as such.
 - Preserve direct allegations strongly and visibly where the controlling source supports them, but never describe guilt or criminal liability as adjudicated when it is not.
 - Keep distinct legal persons, capacities, titles, operators, creditors, property owners, insolvency estates, professional firms, private actors, the Insolvency Administrator and the Magistrate-Judge distinct.
 - Resolve legal-person acronyms through `ops/CANONICAL_ENTITY_NAMES.json` before expanding them. The controlled first reference for LPB is **Luchy Playa Blanca, S.L.U. (LPB)**. Never translate, paraphrase or invent a legal entity's name from an acronym.

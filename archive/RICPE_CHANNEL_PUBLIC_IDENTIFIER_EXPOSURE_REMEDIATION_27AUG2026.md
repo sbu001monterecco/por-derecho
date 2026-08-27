@@ -3,7 +3,7 @@
 **Date:** 27 August 2026
 
 **Priority:** P0 privacy hotfix
-**Current state:** text correction merged; binary follow-up prepared locally and not yet deployed
+**Current state:** binary-complete correction merged and verified live
 
 ## Incident
 
@@ -21,7 +21,7 @@ The first release replaced the exact identifier in:
 2. `CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md`; and
 3. `archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md`.
 
-The follow-up release:
+The follow-up release, merged at `c42996115b66f7ae6b98e651ee8e9c72818e824b` and deployed successfully by Pages run `33076508182`:
 
 1. removes the unredacted PDF and its six old public render paths from the current tree;
 2. publishes an honestly labelled PDF derivative with the private identifier redacted;
@@ -32,16 +32,24 @@ The follow-up release:
 
 The only permitted public correlation value remains the approved SHA-256 fingerprint. `scripts/validate_ricpe_channel_identifier_privacy.py` now normalises UUID case, scans all current-tree text, rejects the known unsafe PDF/image hashes, requires the obsolete public paths to be absent, extracts and scans the redacted PDF text, and locks every public derivative to its reviewed hash.
 
-## Limits and required closeout
+## Live closeout and remaining limits
+
+Cache-busted public readback established:
+
+- the new redacted PDF returned HTTP 200 and matched the reviewed binary;
+- all six redacted page images returned HTTP 200 and matched the reviewed binaries;
+- the superseded PDF and all six superseded image paths returned HTTP 404;
+- the three controlled text routes retained the approved one-way fingerprint and no prohibited exact-code label; and
+- page-one visual inspection showed the identifier masked by the public redaction label.
 
 - Correcting current HEAD does not remove prior bytes from Git history, mirrors, caches or previous deployments.
 - The exact identifier must not be copied into a commit message, pull-request body, issue, action log or deletion audit.
 - The separate channel access credential has not been published or inspected by this remediation. The platform owner should determine whether the identifier had any access function and whether the separate credential should be rotated.
-- A successful merge is not enough. No-cache live readback must establish that the three text files contain the approved fingerprint label; the obsolete PDF/image URLs are absent; the new PDF and all six images match the reviewed redacted binaries; and PDF extraction and page-one visual inspection show no protected identifier.
+- Future public-tree changes remain subject to the unconditional binary-aware privacy validator and no-cache regression readback where the protected surfaces change.
 - Historical remediation must not rewrite shared Git history without a separately reviewed necessity, recovery and coordination plan.
 
-## Release order
+## Release order completed
 
-Publish this binary-complete privacy correction before the larger FTI/Meeting Point/RICPE merits update so that the wider review cannot delay removal of current public exposure.
+The binary-complete privacy correction was published and live-verified before the larger FTI/Meeting Point/RICPE continuity candidate, so substantive review did not delay removal of current public exposure.
 
-No email, filing, push, merge, deployment or credential change is authorised by this record.
+No email, filing, authority notification or credential change is authorised by this record. The current-tree/live-route repair does not itself authorise historical Git rewriting.

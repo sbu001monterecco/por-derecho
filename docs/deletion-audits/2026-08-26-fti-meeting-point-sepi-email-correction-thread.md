@@ -4,14 +4,14 @@
 
 **Repository baseline:** `16dd443b837f29c94892722a6c80459432b4e992`
 
-**Working branch:** `codex/fti-thread-preservation-20260826`
+**Historical working branch:** `codex/fti-thread-preservation-20260826`
 **Scope:** repository, website and action-state preservation for this thread's Meeting Point/Club Sei causation, 357/2024, SEPI/FASEE, elEconomista evidential-boundary and 22-August outbound-email correction work.
 
 ## Current determination
 
-**THREAD STATUS: NOT DELETION-SAFE UNTIL THIS PRESERVATION BRANCH IS MERGED, DEPLOYED AND READ BACK.**
+**HISTORICAL CLOSEOUT: THE 26-AUG PRESERVATION BRANCH WAS MERGED, DEPLOYED AND READ BACK. CURRENT 27-AUG CONTINUITY STATUS IS CONTROLLED BY THE ADDENDUM BELOW AND THE NEW THREAD AUDIT.**
 
-The material reasoning and implementation state are now represented in a clean review branch. A local branch is not current `main`, and website source is not the live website. Promote this verdict to **DELETION-SAFE WITH OPEN EVIDENCE** only after branch publication, review, merge, successful Pages deployment and exact live read-back of the affected routes.
+PR #1084 was merged at `6face6554c4214e68e74a9b9b6bce36e41aedb3f`; the connected Alberto/Meeting Point publication was merged in PR #1085 at `048bb4e419a6b36e279e3e7d5792ebafb008cfe5`. Deployment and live readback were recorded. That closes the historical branch/publication gate for the 26-Aug scope only. It does not make later evidence or a later conversation deletion-safe.
 
 No email, resend, correction, forward, filing or other person-directed action is part of this closeout.
 
@@ -94,7 +94,7 @@ No defect, bounce or deletion request authorises transmission. Any later outboun
 
 ## CAEPR / `^` result for this scope
 
-**PARTIAL — NOT ALL IS^**
+**HISTORICAL SNAPSHOT — SUPERSEDED BY THE FINITE 25/32, 56/130, 19/24 AND 39/65 CONTROLS DESCRIBED IN THE 27-AUG ADDENDUM.**
 
 Bounded caret audit scope: the four exact entities and one proceeding newly material to the corrected 357/2024 account. Unique-reference denominator: **5**. `CARET_CONFIRMED`: **0**. Coverage: **0/5 (0%)**.
 
@@ -165,10 +165,32 @@ The German compatibility route remains a `noindex` redirect to English. It is pr
 
 Deleting the chat must never be interpreted as withdrawal of allegations or reservations, completion of evidence production, permission to collapse distinct entities/proceedings, proof of delivery or merits review, or authorization to send any email.
 
-**Current final determination:** do not delete the thread yet. Delete only after the merge, Pages deployment and exact live-readback gates above are completed and this audit is promoted accordingly.
+**Historical final determination:** the required merge/deployment/readback later occurred. Use the dated addendum and newest thread audit for current deletion safety.
 
 ## Cross-proceeding Alberto / Meeting Point addendum — 26 August 2026
 
 The thread's later allegation is preserved in the dedicated ES/EN dossier, the finite `^` audit and the authority-submission plan. It expressly alleges that the 24-Oct-2024 register-attributed involvement crossed an already-crossed line after the signed 36/2012 protection/liquidation record. It separately records that the signed 24-Oct original, assignment trail, knowledge, statutory conflict ground, disclosure record, Auren file and SEPI/FASEE disclosures remain production targets. The allegation is not withdrawn by those gaps, and the gaps are not converted into proof.
 
 No email, Gmail draft, resend, forward or authority filing was made or authorised in implementing this addendum.
+
+## 27-Aug-2026 FTI / Meeting Point / RICPE continuity addendum
+
+The historical 26-Aug scope is preserved, but the current thread is again **NOT DELETION-SAFE**. New material now includes:
+
+- the RICPE Ethics Channel's certified `No mostrado al denunciante` workflow state and 27-Aug inadmission/archive without internal investigation;
+- two later CNMV extensions, including a five-attachment package, with receipt/linkage/review still open;
+- a current live privacy defect involving an exact channel identifier, redacted only in the local candidate;
+- the attributed Acosta Matos/RICPE instrumental-causation model and its required business-effect evidence;
+- a 27-action Germany/Spain/EU ledger covering emails, AGE/RedSARA, judicial, insolvency, corporate, criminal, supervisory, whistleblower and conditional EU routes;
+- a new finite continuity-spine `^` census of 39/65, kept separate from 25/32, 56/130 and 19/24; and
+- ES/EN/DE continuity pages and reciprocal-link/security validators that are not yet published.
+
+The new controlling records are:
+
+1. `archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md`;
+2. `assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json`;
+3. `assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json`;
+4. `ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json`; and
+5. `docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md`.
+
+No completed communication creates continuing authority. Every future email, resend, AGE/RedSARA notice, portal submission or filing remains `HOLD — NOT AUTHORISED` pending an immutable full preview and a separate exact authorization.

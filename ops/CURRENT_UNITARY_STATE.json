@@ -110,13 +110,80 @@
     "observed_at": "2026-08-26T07:32:47Z",
     "rule": "LIVE_VERIFIED records exact publication and readback only; it does not convert the attributed allegation into a finding or the manifest into native evidence."
   },
+  "specialist_continuity_candidates": [
+    {
+      "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+      "state": "PREPARED_PENDING_MERGE",
+      "relation_to_current_state": "ADDITIVE_CANDIDATE_DOES_NOT_REWRITE_HISTORICAL_LIVE_SOURCE_BASE",
+      "analysis_order": "CRIMINAL_FIRST_ALONGSIDE_INSOLVENCY_CORPORATE_CIVIL_PUBLIC_FUNDS_AND_WHISTLEBLOWER_LENSES",
+      "restart_controls": {
+        "digest": "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md",
+        "action_register": "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json",
+        "deletion_audit": "docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md",
+        "publication_manifest": "publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json",
+        "monitor_control": "ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json",
+        "monitor_register": "assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+        "continuity_caret": "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json",
+        "professional_institutional_caret": "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
+      },
+      "caret_scopes": {
+        "continuity_spine": {"confirmed":39,"pending":26,"suspended":0,"denominator":65},
+        "professional_institutional": {"confirmed":40,"pending":61,"suspended":0,"denominator":101},
+        "identity_only": true,
+        "scopes_remain_separate": true
+      },
+      "action_state": {
+        "actions": 31,
+        "package_definitions": 12,
+        "mapped_proceeding_files": 18,
+        "external_action_authorized": false
+      },
+      "asset_transaction_monitor": {
+        "heritage_scopes": 3,
+        "entity_objects": 11,
+        "automated_safe_public_sources": 12,
+        "baseline_events": 2,
+        "open_gaps": 8,
+        "coverage": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
+        "automatic_public_promotion": false
+      },
+      "judicial_title_rule": {
+        "historical_own_court_reference": "el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+        "current_reference": "el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "former_court_3_boundary": "The 24-Oct-2024 notices establish only the Public Insolvency Register attribution displayed in them; signature, substitution or allocation, capacity, knowledge, conflict and disclosure remain open."
+      },
+      "ricpe_resolver_boundary": "The outward resolution names no individual resolver. The Ithikios / DIGITAL PRODUCTS DEVELOPMENT SL certificate or platform signature identifies the provider perimeter, not the human or RICPE organ that decided, configured, accessed or routed the case.",
+      "authorization_boundary": {
+        "repository_and_website_publication_authorized": true,
+        "email_authorized": false,
+        "filing_authorized": false,
+        "notice_authorized": false,
+        "portal_submission_authorized": false,
+        "authority_contact_authorized": false
+      }
+    }
+  ],
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-08-26",
-    "counts": {"total":194,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":15,"PROCEEDING":17},
+    "control_date": "2026-08-27",
+    "counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
     "archive_backfill": "OPEN",
-    "static_page_parity": "LIVE_VERIFIED",
+    "static_page_parity": "SOURCE_AND_STATIC_CANDIDATE_ALIGNED_PUBLIC_READBACK_PENDING",
     "last_live_verified_counts": {"total":194,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":15,"PROCEEDING":17},
+    "candidate_control": "PD-ALV-MP357-CARET-20260827-01",
+    "candidate_controls": [
+      "PD-ALV-MP357-CARET-20260827-01",
+      "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
+      "PD-FTI-MP-RICPE-CARET-20260827-01",
+      "PD-FTI-MP-PROF-INST-CARET-20260827-01"
+    ],
+    "separate_caret_scopes": {
+      "unitary": {"confirmed":19,"pending":5,"denominator":24},
+      "specialist_six_surface": {"confirmed":25,"pending":7,"denominator":32},
+      "specialist_first_hop": {"confirmed":56,"pending":74,"denominator":130},
+      "fti_continuity_spine": {"confirmed":39,"pending":26,"denominator":65},
+      "fti_professional_institutional": {"confirmed":40,"pending":61,"denominator":101}
+    },
     "governing_boundary": "Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability."
   },
   "material_updates": {

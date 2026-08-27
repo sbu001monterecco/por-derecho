@@ -10,12 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "assets" / "data"
 EXPECTED = {
-    "total": 194,
-    "PERSON": 86,
-    "ORGANISATION": 66,
+    "total": 204,
+    "PERSON": 87,
+    "ORGANISATION": 71,
     "STRUCTURE": 10,
-    "INSTITUTION": 15,
-    "PROCEEDING": 17,
+    "INSTITUTION": 18,
+    "PROCEEDING": 18,
 }
 UNITARY_CONTROL_ID = "PD-UNITARY-STATE-20260826-01"
 HISTORICAL_CONTROL_ID = "PD-UNITARY-STATE-20260825-01"
@@ -80,12 +80,12 @@ def main() -> int:
         es_identity = require_markers(
             ROOT / "es/registro-identidad-materia/index.html",
             [
-                'content="Registro operativo de 194 IDs inmutables',
-                'data-static-registry-counts="194-86-66-10-15-17"',
-                'data-registry-stat="TOTAL">194',
-                'data-registry-stat="PERSON">86',
-                'data-registry-stat="ORGANISATION">66',
-                '"name":"Total","value":194',
+                'content="Registro operativo de 204 IDs inmutables',
+                'data-static-registry-counts="204-87-71-10-18-18"',
+                'data-registry-stat="TOTAL">204',
+                'data-registry-stat="PERSON">87',
+                'data-registry-stat="ORGANISATION">71',
+                '"name":"Total","value":204',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['Los 159 IDs', 'data-registry-stat="TOTAL">159', '159 identidades canónicas'],
@@ -93,12 +93,12 @@ def main() -> int:
         en_identity = require_markers(
             ROOT / "en/matter-identity-registry/index.html",
             [
-                'content="Operational Por Derecho register of 194 immutable IDs',
-                'data-static-registry-counts="194-86-66-10-15-17"',
-                'data-registry-stat="TOTAL">194',
-                'data-registry-stat="PERSON">86',
-                'data-registry-stat="ORGANISATION">66',
-                '"name":"Total","value":194',
+                'content="Operational Por Derecho register of 204 immutable IDs',
+                'data-static-registry-counts="204-87-71-10-18-18"',
+                'data-registry-stat="TOTAL">204',
+                'data-registry-stat="PERSON">87',
+                'data-registry-stat="ORGANISATION">71',
+                '"name":"Total","value":204',
                 '../../ops/CURRENT_UNITARY_STATE.json',
             ],
             ['The 159 IDs', 'data-registry-stat="TOTAL">159', '159 canonical identities'],
@@ -348,7 +348,8 @@ def main() -> int:
     print("UNITARY CONTROL PLANE: PASS")
     print(" - specialist status: LIVE_VERIFIED")
     print(" - operational repository/deployment state remains separate")
-    print(" - identity denominator: 194 / 86 / 66 / 10 / 15 / 17")
+    print(" - source/static identity denominator: 204 / 87 / 71 / 10 / 18 / 18")
+    print(" - last live-verified identity snapshot remains 194 / 86 / 66 / 10 / 15 / 17")
     print(" - repository latest material date: 2026-08-26")
     print(" - last live-verified material date: 2026-08-26")
     print(" - promoted publication: PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED")
