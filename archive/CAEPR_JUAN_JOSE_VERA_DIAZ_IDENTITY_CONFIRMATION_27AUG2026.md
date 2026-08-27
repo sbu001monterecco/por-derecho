@@ -1,7 +1,7 @@
 # CAEPR^ CONFIRMATION — JUAN JOSÉ VERA DÍAZ
 
 **Control date:** 27 August 2026  
-**Status:** CARET_CONFIRMED for person identity in the CAIC ↔ FTI / Meeting Point context  
+**Status:** CARET_CONFIRMED for Juan José Vera Díaz person identity; CAIC is identity-corroboration context only, not a substantive matter actor  
 **Immutable CAEPR ID:** `PD-SP-P-0088`
 
 ## Confirmation
@@ -37,9 +37,16 @@ This implementation boundary does not change the identity verdict: the one-objec
 
 ## Correction of the earlier continuity control
 
-The earlier March-2018 continuity control treated the CAIC identity bridge as unresolved. That was a conservative temporary state and is superseded for **person identity** by this record.
+The earlier March-2018 continuity control treated the CAIC identity bridge as unresolved. That conservative temporary identity state is superseded for **person identity** by this record.
 
-The LinkedIn screenshot line **“Community of Madrid, Spain”** is treated as a geographic profile-location string, not as evidence that Juan José Vera Díaz worked for, held office in, or was employed by the Comunidad de Madrid. No public-employment inference is made.
+The LinkedIn profile material also displayed **`CAIC`** and the location string **“Community of Madrid, Spain”**. Those are profile metadata and are **not substantive facts relevant to the Sun Park / Meeting Point matter**. In particular:
+
+- `Community of Madrid, Spain` is treated only as LinkedIn geographic location metadata;
+- it has no evidential or investigative relevance to this matter absent a separate independent source establishing a specific material connection;
+- it must not be used to infer employment by, office in, influence through, or any institutional relationship with the Comunidad de Madrid;
+- `CAIC` may be used only as an external identity-corroboration source for continuity of the person; it is not thereby made part of the matter's actor, causation, institutional or liability perimeter.
+
+If the LinkedIn screenshot is reproduced or transcribed, those strings may be preserved as source-literal profile metadata, but they must not be promoted into the substantive matter analysis.
 
 ## What is confirmed
 
@@ -61,4 +68,8 @@ Identity confirmation does not establish:
 
 ## Future-thread rule
 
-Any new thread involving Vera / Meeting Point / FTI / Labranda / CAIC / Sun Park / Lava Verde / Club Sei / CAM must resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0088`)** while keeping date-specific capacities, legal entities, conduct, relationships, source authenticity and evidential propositions separately proved. It must also treat `PD-SP-P-0088` as reserved and must not allocate that ID to another person while master-index backfill remains open.
+Any new thread involving Vera / Meeting Point / FTI / Labranda / Sun Park / Lava Verde / Club Sei / CAM must resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0088`)** while keeping date-specific capacities, legal entities, conduct, relationships, source authenticity and evidential propositions separately proved.
+
+CAIC and the LinkedIn `Community of Madrid, Spain` location string are **not substantive matter lanes**. CAIC is retained only where useful for person-identity corroboration; the Comunidad de Madrid location metadata should otherwise be ignored in matter analysis unless later independent evidence makes it specifically material.
+
+The ID `PD-SP-P-0088` remains reserved and must not be allocated to another person while master-index backfill remains open.
