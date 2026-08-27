@@ -1,0 +1,62 @@
+{
+  "schema": "por-derecho.caepr-caret-scope.v1",
+  "control_id": "PD-CAEPR-VERA-20260827-01",
+  "control_date": "2026-08-27",
+  "scope": "Juan José Vera Díaz person identity across CAIC ↔ FTI / Meeting Point continuity",
+  "registry_layer": "FEDERATED_SPECIALIST_CAEPR_IDENTITY_CONTROL",
+  "master_index_backfill": "OPEN_COORDINATED_BASELINE_REFRESH_REQUIRED",
+  "result": "ALL IS^ — VERIFIED FOR THE STATED SCOPE",
+  "denominator": 1,
+  "confirmed": 1,
+  "pending": 0,
+  "suspended": 0,
+  "coverage_percent": 100,
+  "records": [
+    {
+      "display": "Juan José Vera Díaz^",
+      "caepr_id": "PD-SP-P-0088",
+      "object_type": "PERSON",
+      "state": "CARET_CONFIRMED",
+      "identity_context": "CAIC ↔ FTI / Meeting Point person continuity",
+      "sources": [
+        {
+          "type": "OFFICIAL_MUNICIPAL_RECORD",
+          "date": "2017-04-07",
+          "source": "Ayuntamiento de Pájara",
+          "url": "https://www.pajara.es/wp-content/uploads/2017/12/04072017.pdf",
+          "supports": "Juan José Vera Díaz acting in the name and representation of Meeting Point Jandía Investment, S.L."
+        },
+        {
+          "type": "OFFICIAL_MERCANTILE_RECORD",
+          "date": "2021-05-25",
+          "source": "BORME-A-2021-97-35",
+          "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-97-35",
+          "supports": "Juan José Vera Díaz recorded in Meeting Point Spain, S.L.; corrected designation Secretario del Consejo"
+        },
+        {
+          "type": "INDEPENDENT_PROFESSIONAL_LISTING",
+          "source": "Unidad Editorial",
+          "url": "https://www.unidadeditorial.es/noticia.aspx?id=4592",
+          "supports": "Juan José Vera Díaz listed with FTI Group / Meeting Point Spain"
+        },
+        {
+          "type": "CURRENT_SELF_PUBLISHED_BIOGRAPHY",
+          "source": "CAIC",
+          "url": "https://www.caic.es/",
+          "supports": "Juan José Vera Díaz identified as founder/CEO with prior FTI Group senior-finance career in Munich"
+        }
+      ],
+      "boundaries": [
+        "Identity confirmation does not prove conduct, relationship, knowledge, liability, project participation or source authenticity.",
+        "Date-specific capacity and exact represented legal entity remain source-specific.",
+        "The LinkedIn profile string ‘Community of Madrid, Spain’ is treated as geographic location, not evidence of public employment or office.",
+        "PD-SP-P-0088 is reserved by this specialist federated control; the 204-object master-index snapshot remains unchanged until a coordinated registry/count/live-baseline refresh is performed."
+      ]
+    }
+  ],
+  "exceptions": [],
+  "non_applicable": [
+    "Sun Park, Lava Verde and Club Sei are assets/project labels rather than person identity objects in this one-object caret audit.",
+    "The 5 March 2018 LinkedIn screenshots remain a separate evidence-authentication question; the caret confirms the person identity, not the screenshots' native-source custody."
+  ]
+}
