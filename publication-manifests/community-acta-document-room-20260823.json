@@ -2,7 +2,7 @@
   "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260827-V2",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-27",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "repository": "sbu001monterecco/por-derecho",
   "source_branch": "codex/full-acta-digitisation-20260827",
   "supersedes": {
@@ -75,7 +75,20 @@
     "post-merge GitHub Pages readback"
   ],
   "publication_closeout": {
-    "status": "PENDING_PR_MERGE_AND_LIVE_READBACK",
+    "status": "LIVE_VERIFIED",
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1139",
+    "merge_sha": "06b8d7ac025b605ae0a677b85cb22ed0531a29c6",
+    "verified_at_utc": "2026-08-27T23:03:30Z",
+    "live_readback": {
+      "bilingual_event_routes_http_200": "40/40",
+      "document_room_routes_http_200": "2/2",
+      "redacted_source_facsimiles_http_200": "17/17",
+      "first_source_page_images_http_200": "17/17",
+      "machine_lineage_index_http_200": true,
+      "rendered_route_viewport_checks": "16/16",
+      "distinct_rendered_perimeter_colour_pairs": 6
+    },
+    "inherited_non_acta_ci_boundary": "Four English ONA links and two Alberto/Meeting Point snapshots fail on the unchanged base; PR #1139 records the separation.",
     "deployment_record": "archive/DEPLOYMENT_LOG.md"
   }
 }
