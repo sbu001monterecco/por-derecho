@@ -1,0 +1,23 @@
+{
+  "schema": "por-derecho.canonical-name-correction.v1",
+  "control_date": "2026-08-27",
+  "status": "ACTIVE_REPOSITORY_WIDE",
+  "canonical_entity_record": "ops/CANONICAL_ENTITY_NAMES.json#E005",
+  "entity": {
+    "canonical_name": "Aweswell Limited",
+    "jurisdiction": "United Kingdom",
+    "company_number": "07716847",
+    "former_name": "Monterecco Sun Park Limited"
+  },
+  "forbidden_generated_aliases": [
+    "Oswell Limited"
+  ],
+  "rules": [
+    "Use Aweswell Limited for the current UK company.",
+    "Use Monterecco Sun Park Limited only for the historical source-date context or faithful source quotation.",
+    "Do not generate, normalize, infer, substitute or use Oswell Limited as the name of Aweswell Limited.",
+    "If Oswell Limited occurs literally in a source, preserve it only as an expressly labelled source literal or source error where evidential fidelity requires it.",
+    "Correct unqualified generated references to Oswell Limited that intend the user's UK company before publication or reliance.",
+    "Never conflate UK company 07716847 with Pink Canary Services, S.L.U., formerly Monterecco Sun Park, S.L.U., or another Spanish project-side legal person."
+  ]
+}
