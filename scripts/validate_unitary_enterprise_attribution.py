@@ -323,8 +323,19 @@ def main() -> int:
         ),
         errors,
     )
-    if "PREPARED_PENDING_MERGE" in state_md_text or "not yet live" in state_md_text.lower():
-        errors.append("CURRENT_UNITARY_STATE.md retains a stale pending-publication statement")
+    # A later, expressly separate specialist module may legitimately be at a
+    # pre-merge lifecycle state.  The regression guard applies to the
+    # controlling 26-August unitary-enterprise release above that additive
+    # section, not to every independently lifecycle-controlled module recorded
+    # in the same restart file.
+    controlling_state_text = state_md_text.split(
+        "### FTI Touristik / Meeting Point / RICPE continuity", 1
+    )[0]
+    if (
+        "PREPARED_PENDING_MERGE" in controlling_state_text
+        or "not yet live" in controlling_state_text.lower()
+    ):
+        errors.append("CURRENT_UNITARY_STATE.md retains a stale pending-publication statement for the controlling unitary-enterprise release")
 
     production = load_object(PRODUCTION_STATUS, errors)
     if production.get("served_sha") != MERGE_SHA or production.get("source_tree_sha") != TREE_SHA:
