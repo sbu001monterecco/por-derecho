@@ -1,0 +1,23 @@
+PUBLICATION CONTROL - RICPE / CNMV - 27 AUGUST 2026
+
+Public web record:
+- index.html: public evidential landing page.
+- resolution.txt: controlled transcription of the communicated resolution and material workflow history.
+
+Original files preserved and supplied directly to CNMV as separate email attachments:
+- RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf
+  SHA-256 db9979715cac4aeb8ded81a998227cfd894144dcd0a50fe81d4b1369904c9bb4
+- RICPE_Comunicacion_Formal_Canal_Etico_17AGO2026_Firmada.pdf
+  SHA-256 b455075ceda7841471ef5f4ebfbb784ccd00357439aa8bf282e736fe4757832c
+- RICPE_Certificacion_Enrique_Guerra_20JUL2021.pdf
+  SHA-256 7c746d998780775542a5fe5265f02622f42b290918003f03ee20c8f367759bf8
+- CAM_Escrito_Aporta_Certificacion_RICPE_21JUL2021.pdf
+  SHA-256 76f5ba3210b9a78d641c318f60d214025c6231b99fe77734933f90da6ed3c8b9
+- CNMV_Indice_Anexos_RICPE_27AGO2026.txt
+  SHA-256 78d363ca757775a7c1cd420f98ec1399ba29bcdd0be16f6f8ea49cfb84d1bc88
+
+Publication limits:
+- The secret Canal Etico password is not published.
+- Telephone and unnecessary personal data are omitted from the public transcript.
+- The Ithikios certificate is treated as the complete resolution communicated through the channel, not as proof of RICPE's complete internal decision file.
+- "No mostrado al denunciante" is reported as a certified workflow fact, without attributing intent.

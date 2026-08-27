@@ -1,26 +1,18 @@
+/* COMPATIBILITY-WRAPPER-20260827: preserve the complete prior loader, then add RICPE/CNMV closure state. */
 (() => {
   const current = document.currentScript;
   if (!current) return;
+  const base = new URL('.', current.src);
 
-  // Preserve and execute the complete established pre-Intervención loader unchanged.
   const prior = document.createElement('script');
-  prior.src = new URL('site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e', current.src).href;
+  prior.src = new URL('site-pre-intervencion-highlight-original-20260827.js?v=20260827a', base).href;
   prior.async = false;
-  prior.setAttribute('data-pre-fiscalia-eg95-pre-intervencion-loader', '20260823');
+  prior.setAttribute('data-site-pre-intervencion-original-loader', '20260827');
   document.head.appendChild(prior);
 
-  // Add the source-controlled Fiscalía Tenerife EG 95/2026 propagation layer.
-  const eg95 = document.createElement('script');
-  eg95.src = new URL('fiscalia-eg95-propagation-20260823.js?v=20260823a', current.src).href;
-  eg95.async = false;
-  eg95.setAttribute('data-fiscalia-eg95-propagation-loader', '20260823');
-  document.head.appendChild(eg95);
-
-  // Claim-specific limitation/prescription/caducity, damages, restitution and interim-relief control.
-  // This is deliberately independent from the criminal module: it prevents a blanket “criminal case freezes everything” rule.
-  const prescriptionRecovery = document.createElement('script');
-  prescriptionRecovery.src = new URL('prescription-caducity-recovery-20260826.js?v=20260826a', current.src).href;
-  prescriptionRecovery.async = false;
-  prescriptionRecovery.setAttribute('data-prescription-caducity-recovery-loader', '20260826');
-  document.head.appendChild(prescriptionRecovery);
+  const closure = document.createElement('script');
+  closure.src = new URL('ricpe-cnmv-closure-update-20260827.js?v=20260827a', base).href;
+  closure.async = false;
+  closure.setAttribute('data-ricpe-cnmv-closure-loader', '20260827');
+  document.head.appendChild(closure);
 })();
