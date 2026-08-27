@@ -1,0 +1,263 @@
+{
+  "schema": "por-derecho.source-manifest.v1",
+  "control_id": "PD-FTI-DEFICIT-CLUB-SEI-SOURCES-20260827-01",
+  "control_date": "2026-08-27",
+  "state": "PUBLICATION_AUTHORIZED_LIVE_VERIFICATION_PENDING",
+  "retrieval_languages": ["de", "es", "en"],
+  "sources": [
+    {
+      "id": "SRC-FTI-PORTAL-20260415",
+      "date": "2026-04-15",
+      "language": "de",
+      "publisher": "FTI insolvency procedure portal",
+      "url": "https://fti-inso.de/info",
+      "class": "OFFICIAL_PROCEDURE_PORTAL",
+      "status": "VERIFIED_CURRENT_PORTAL_STATE",
+      "supports": "FTI Touristik opening date, Bierbach appointment and portal update date; separate debtor/administrator list.",
+      "ceiling": "Finite portal review located no final distribution or closure notice; absence from the reviewed portal is not proof that no other official record exists."
+    },
+    {
+      "id": "SRC-MHBK-EQS-20250527",
+      "date": "2025-05-27",
+      "language": "de",
+      "publisher": "Müller-Heydenreich Bierbach & Kollegen / EQS",
+      "url": "https://www.eqs-news.com/news/corporate/insolvenzverfahren-fti-touristik-gmbh/6fec299e-a963-4624-b978-f342a5fd11de",
+      "class": "ADMINISTRATOR_RELEASE",
+      "status": "VERIFIED_ATTRIBUTED_ADMINISTRATOR_REPORT",
+      "supports": "Almost EUR 980m filed claims, more than 73,000 creditors, multi-year review/realisations, end-of-procedure payment, very-low expected quota and no current Masseunzulänglichkeit.",
+      "ceiling": "No final admitted-claim denominator, net realisations, exact quota or final deficit."
+    },
+    {
+      "id": "SRC-DRSF-20250528",
+      "date": "2025-05-28",
+      "language": "de",
+      "publisher": "Deutscher Reisesicherungsfonds",
+      "url": "https://drsf.reise/pressemeldungen/fti-insolvenz-drsf-zieht-vorlaeufige-schlussbilanz/",
+      "class": "STATUTORY_FUND_RELEASE",
+      "status": "VERIFIED_ATTRIBUTED_DRSF_REPORT",
+      "supports": "About 172,000 processed/paid claims, about EUR 245m paid, residual complex cases and access routes through end-2027.",
+      "ceiling": "Not proof that every payment used public money or of a federal-backstop draw."
+    },
+    {
+      "id": "SRC-BUNDESTAG-20250205",
+      "date": "2025-02-05",
+      "language": "de",
+      "publisher": "Deutscher Bundestag",
+      "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1043098",
+      "class": "PARLIAMENTARY_MATERIAL",
+      "status": "VERIFIED_OFFICIAL_REPORTING",
+      "supports": "Combined FTI Touristik/BigXtra estimated damage EUR 332.2m, securities EUR 217.4m and fund-asset burden EUR 114.8m.",
+      "ceiling": "Combined fund model; not FTI Touristik's insolvency deficit and not a final state-budget loss."
+    },
+    {
+      "id": "SRC-RSG-7",
+      "date": "2026-08-27",
+      "language": "de",
+      "publisher": "Bundesministerium der Justiz / Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/rsg/__7.html",
+      "class": "OFFICIAL_STATUTE",
+      "status": "VERIFIED_LEGAL_FUNDING_MODEL",
+      "supports": "Travel-operator fees and fund target-capital framework.",
+      "ceiling": "Statutory funding architecture does not establish transaction-level source of any particular reimbursement."
+    },
+    {
+      "id": "SRC-RSG-22",
+      "date": "2026-08-27",
+      "language": "de",
+      "publisher": "Bundesministerium der Justiz / Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/rsg/__22.html",
+      "class": "OFFICIAL_STATUTE",
+      "status": "VERIFIED_TEMPORARY_BACKSTOP_FRAMEWORK",
+      "supports": "Temporary federal backstop for fund financing under defined conditions.",
+      "ceiling": "Does not prove an actual draw, amount, loss or non-repayment."
+    },
+    {
+      "id": "SRC-BMF-WSF-202410",
+      "date": "2024-10-01",
+      "language": "de",
+      "publisher": "Bundesministerium der Finanzen",
+      "url": "https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2024/10/Inhalte/Kapitel-3-Analysen/3-4-zwischenbilanz-wsf.html",
+      "class": "OFFICIAL_GOVERNMENT_REPORT",
+      "status": "VERIFIED_WSF_CONTEXT",
+      "supports": "FTI was among WSF-supported companies entering insolvency; recoveries may arise from securities and insolvency.",
+      "ceiling": "Does not fix final FTI recovery or write-off."
+    },
+    {
+      "id": "SRC-HANDELSBLATT-20240604",
+      "date": "2024-06-04",
+      "language": "de",
+      "publisher": "Handelsblatt",
+      "url": "https://www.handelsblatt.com/politik/deutschland/fti-insolvenz-regierung-rechnet-mit-510-millionen-euro-schaden/100042545.html",
+      "class": "CONTEMPORANEOUS_MEDIA_REPORT",
+      "status": "ATTRIBUTED_EARLY_GOVERNMENT_ESTIMATE",
+      "supports": "Reported EUR 603m WSF support, EUR 93m repaid and early estimated exposure of about EUR 510m.",
+      "ceiling": "Not final net public loss; securities, insolvency recoveries, interest, carrying value and write-off remain open."
+    },
+    {
+      "id": "SRC-CNMC-C1549-20250423",
+      "date": "2025-04-23",
+      "language": "es",
+      "publisher": "Comisión Nacional de los Mercados y la Competencia",
+      "url": "https://www.cnmc.es/expedientes/c154925",
+      "class": "OFFICIAL_COMPETITION_PROCEEDING",
+      "status": "VERIFIED",
+      "supports": "C/1549/25, exclusive-control acquisition, Gestora Blue Sea Partner, S.A. as acquirer, Meeting Point Spain, S.L. - Unipersonal as target, first-phase authorisation.",
+      "ceiling": "Authorisation is not the signed homologation order or complete closing/allocation record."
+    },
+    {
+      "id": "SRC-HOSTELTUR-20260217",
+      "date": "2026-02-17",
+      "language": "es",
+      "publisher": "Hosteltur",
+      "url": "https://www.hosteltur.com/",
+      "class": "BUSINESS_MEDIA_REPORT",
+      "status": "CORROBORATED_MEDIA_REPORTING",
+      "supports": "Reported homologation, acquisition, Canary Islands management and bank/SEPI debt treatment.",
+      "ceiling": "No signed plan, order, closing instrument or exact allocation; do not import inconsistent support figures."
+    },
+    {
+      "id": "SRC-ELCONFIDENCIAL-20260217",
+      "date": "2026-02-17",
+      "language": "es",
+      "publisher": "El Confidencial",
+      "url": "https://www.elconfidencial.com/",
+      "class": "BUSINESS_MEDIA_REPORT",
+      "status": "CORROBORATED_MEDIA_REPORTING",
+      "supports": "Reported homologation/acquisition and restructuring treatment.",
+      "ceiling": "Searchable reporting does not replace signed judicial and closing records."
+    },
+    {
+      "id": "SRC-FTICONSULTING-SPAIN-202602",
+      "date": "2026-02-17",
+      "language": "es",
+      "publisher": "FTI Consulting Spain",
+      "url": "https://www.linkedin.com/company/fti-consulting/",
+      "class": "PUBLIC_PROFESSIONAL_STATEMENT",
+      "status": "CORROBORATED_PROFESSIONAL_REPORTING",
+      "supports": "Public adviser statement concerning the Meeting Point restructuring/acquisition and adviser role.",
+      "ceiling": "FTI Consulting is distinct from FTI Touristik; professional reporting is not the judicial order or closing set."
+    },
+    {
+      "id": "SRC-PORTOBELLO-BLUESEA-20260114",
+      "date": "2026-01-14",
+      "language": "es",
+      "publisher": "Portobello Capital / BLUESEA Hotels",
+      "url": "https://www.portobellocapital.es/",
+      "class": "BUYER_SIDE_CORPORATE_STATEMENT",
+      "status": "VERIFIED_ATTRIBUTED_BUYER_ACKNOWLEDGMENT",
+      "supports": "Buyer-side statement that the Labranda/Meeting Point Hotels transaction had recently closed and included 15 Canary properties.",
+      "ceiling": "Does not supply signed closing date, consideration, liabilities or exact assets/contracts."
+    },
+    {
+      "id": "SRC-TRAVELWEEKLY-20190201",
+      "date": "2019-02-01",
+      "language": "en",
+      "publisher": "Travel Weekly",
+      "url": "https://travelweekly.co.uk/news/youtravel-parent-creates-club-sei-hotel-brand",
+      "class": "CONTEMPORANEOUS_TRADE_REPORT",
+      "status": "ANNOUNCED_WHOLESALE_ROUTE",
+      "supports": "Meeting Point Hotels/FTI planned Club Sei Lanzarote and UK-agent sales through Youtravel.",
+      "ceiling": "No inventory, signed supplier agreement, accepted booking, payment, commission, revenue or opening."
+    },
+    {
+      "id": "SRC-TOURISTIK-AKTUELL-20201027",
+      "date": "2020-10-27",
+      "language": "de",
+      "publisher": "Touristik Aktuell",
+      "url": "https://www.touristik-aktuell.de/hotels/fti-verschiebt-einfuehrung-von-club-sei/",
+      "class": "CONTEMPORANEOUS_TRADE_REPORT",
+      "status": "MANDATORY_CONTRARY_EVIDENCE",
+      "supports": "FTI postponed Club Sei implementation because of COVID-19 and supplied no new implementation date.",
+      "ceiling": "Does not erase the earlier public offers; prevents an operation/opening inference."
+    },
+    {
+      "id": "SRC-CAM-LAVA-VERDE",
+      "date": "2026-08-27",
+      "language": "es",
+      "publisher": "Construcciones Acosta Matos, S.A.",
+      "url": "https://www.acostamatos.com/oficina_tecnica/hotel-lava-verde/",
+      "class": "PUBLIC_CORPORATE_ASSERTION",
+      "status": "SOURCED_CORPORATE_PRESENTATION",
+      "supports": "Hotel Lava Verde, C/ Janubio 3, 279 rooms and CAM owner field.",
+      "ceiling": "Not conclusive whole-site historical title, possession, unit authority or operating contract."
+    },
+    {
+      "id": "SRC-COMPANIES-HOUSE-YOUTRAVEL",
+      "date": "2026-08-27",
+      "language": "en",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05952761",
+      "class": "OFFICIAL_COMPANY_REGISTER",
+      "status": "VERIFIED_CURRENT_COMPANY_IDENTITY",
+      "supports": "YOUTRAVEL.COM LIMITED, company number 05952761.",
+      "ceiling": "Does not identify the exact 2019 Club Sei platform or contracting entity."
+    },
+    {
+      "id": "SRC-YOUTRAVEL-CURRENT-TERMS",
+      "date": "2026-08-27",
+      "language": "en",
+      "publisher": "Youtravel",
+      "url": "https://www.youtravel.com/",
+      "class": "CURRENT_COMMERCIAL_TERMS",
+      "status": "CURRENT_ONLY_NO_BACK_PROJECTION",
+      "supports": "Current terms identify Meeting Point Youtravel Tourism L.L.C. in the present commercial perimeter.",
+      "ceiling": "Must not be back-projected to the 2019 wholesale announcement."
+    },
+    {
+      "id": "SRC-LOCAL-1-2-FLY-20191125",
+      "date": "2019-11-25",
+      "language": "de",
+      "publisher": "1-2-FLY archived capture",
+      "path": "assets/evidence/club-sei-1-2-fly-2019.svg",
+      "wrapper_sha256": "ac4e4a91d7a541df816599d3449a0fe1a4e18a5e74c2c649d6e1ae9c33dc494b",
+      "embedded_sha256": "f0fe58104521cd78665b5bb72d51ab5544f1177b16c527a9af9310d0484f3d62",
+      "class": "CONTROLLED_ARCHIVED_RETAIL_CAPTURE",
+      "status": "VISUALLY_VERIFIED_PUBLIC_FACING_INTERFACE",
+      "ceiling": "No availability, booking, payment, revenue, stay or exact operator identity."
+    },
+    {
+      "id": "SRC-LOCAL-AIDU-20191125",
+      "date": "2019-11-25",
+      "language": "de",
+      "publisher": "Ab-in-den-Urlaub archived capture",
+      "path": "assets/evidence/club-sei-ab-in-den-urlaub-2019.svg",
+      "wrapper_sha256": "0fd57cf5fdf71cd9845ba9c00c1f5af4d4b01c26bd9a07189c9cab40760107f7",
+      "embedded_sha256": "e3adc096623c5b2049352efa7dd2a77bb261b59795ae77bf5b4e4b7e56466207",
+      "class": "CONTROLLED_ARCHIVED_RETAIL_CAPTURE",
+      "status": "VISUALLY_VERIFIED_PUBLIC_FACING_OFFER",
+      "ceiling": "Visible address/price/control only; no inventory, booking, payment, revenue or exact operator identity."
+    },
+    {
+      "id": "SRC-LOCAL-LOVEHOLIDAYS-20200121",
+      "date": "2020-01-21",
+      "language": "en",
+      "publisher": "Loveholidays archived capture",
+      "path": "assets/evidence/club-sei-loveholidays-2020.svg",
+      "wrapper_sha256": "dd2a1a0a106688125fd67bdd2fff60d5231698f43ce53911dc703fc98dfaa806",
+      "embedded_sha256": "0f357de12edb6f6999e4028c0d06094f9b124418d0c3179ed4b6242b6b73ce63",
+      "class": "CONTROLLED_ARCHIVED_RETAIL_CAPTURE",
+      "status": "VISUALLY_VERIFIED_PUBLIC_FACING_OFFER",
+      "ceiling": "No accepted booking, payment, revenue, guest stay, opening or exact 2020 operator identity."
+    },
+    {
+      "id": "SRC-LOCAL-MP-BROCHURE-2019",
+      "date": "2019-10-11",
+      "language": "en",
+      "publisher": "Meeting Point Hotels / Meeting Point International presentation panel",
+      "path": "assets/evidence/club-sei-meeting-point-brochure-2019.svg",
+      "wrapper_sha256": "efd66285bccc4033fb22425504ee7ebaaa15d1e112d2edb07ba8b2468a77a3b0",
+      "embedded_sha256": "29b097bd8c13338f2b01d160126af91db915314a7af3334cc17e3d359cac516e",
+      "class": "CONTROLLED_ARCHIVED_CORPORATE_PRESENTATION",
+      "status": "VISUALLY_VERIFIED_PRESENTATION_PANEL",
+      "ceiling": "No exact contracting entity, title, inventory authority or opening."
+    }
+  ],
+  "source_count": 22,
+  "governance": {
+    "current_terms_not_back_projected": true,
+    "media_not_upgraded_to_signed_closing": true,
+    "contrary_evidence_mandatory": true,
+    "external_action_authorized": false,
+    "publication_authorized": false
+  }
+}
