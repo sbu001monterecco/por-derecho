@@ -1,0 +1,99 @@
+name: Validate ACTA digitisation and meeting lineage
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'evidence/community/actas/**'
+      - 'assets/docs/community-actas/**'
+      - 'assets/docs/community-actas-source/**'
+      - 'assets/evidence/community-actas/**'
+      - 'assets/evidence/community-actas-source/**'
+      - 'assets/acta-document-room-20260822.*'
+      - 'es/comunidad-instrumentalizacion/sala-documental-actas/**'
+      - 'en/community-instrumentalisation/acta-document-room/**'
+      - 'es/comunidad-instrumentalizacion/actas-2011-2022/**'
+      - 'en/community-instrumentalisation/minutes-2011-2022/**'
+      - 'scripts/build_acta_meeting_lineage.py'
+      - 'scripts/validate_acta_meeting_lineage.py'
+      - 'scripts/render_acta_meeting_lineage.mjs'
+      - 'sitemap.xml'
+      - '.github/workflows/validate-acta-meeting-lineage.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/community/actas/**'
+      - 'assets/docs/community-actas/**'
+      - 'assets/docs/community-actas-source/**'
+      - 'assets/evidence/community-actas/**'
+      - 'assets/evidence/community-actas-source/**'
+      - 'assets/acta-document-room-20260822.*'
+      - 'es/comunidad-instrumentalizacion/sala-documental-actas/**'
+      - 'en/community-instrumentalisation/acta-document-room/**'
+      - 'scripts/build_acta_meeting_lineage.py'
+      - 'scripts/validate_acta_meeting_lineage.py'
+      - 'scripts/render_acta_meeting_lineage.mjs'
+      - 'sitemap.xml'
+      - '.github/workflows/validate-acta-meeting-lineage.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: acta-meeting-lineage-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-and-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Rebuild and require an exact tree
+        run: |
+          python3 scripts/build_acta_meeting_lineage.py
+          git diff --exit-code
+      - name: Validate lineage, packages and privacy
+        run: |
+          python3 scripts/validate_acta_meeting_lineage.py
+          python3 evidence/community/actas/build_public_packages.py validate --skip-render
+          node --check assets/acta-document-room-20260822.js
+          node --check scripts/render_acta_meeting_lineage.mjs
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Serve the repository at its production subpath
+        run: |
+          mkdir -p /tmp/psr-site/por-derecho
+          cp -a . /tmp/psr-site/por-derecho/
+          cd /tmp/psr-site
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/psr-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/psr-http.log
+          exit 1
+      - name: Render representative lanes on desktop and mobile
+        env:
+          PSR_BASE_URL: http://127.0.0.1:8000/por-derecho
+          PSR_SCREENSHOT_DIR: artifacts/acta-meeting-lineage
+        run: node scripts/render_acta_meeting_lineage.mjs
+      - name: Upload visual evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: acta-meeting-lineage-render
+          path: artifacts/acta-meeting-lineage
+          if-no-files-found: warn
+          retention-days: 14
