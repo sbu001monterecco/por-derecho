@@ -20,4 +20,10 @@
   perimeter.async = false;
   perimeter.setAttribute('data-ricpe-perimeter-media-loader', '20260827');
   document.head.appendChild(perimeter);
+
+  const access = document.createElement('script');
+  access.src = new URL('ricpe-resolver-access-control-20260827.js?v=20260827a', current.src).href;
+  access.async = false;
+  access.setAttribute('data-ricpe-resolver-access-loader', '20260827');
+  document.head.appendChild(access);
 })();
