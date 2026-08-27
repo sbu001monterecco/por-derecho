@@ -1,0 +1,16 @@
+{
+  "authorization_id": "PD-AUTH-GERMAN-CLUB-SEI-SMOKE-REPAIR-20260827-01",
+  "change_id": "PD-GERMAN-CLUB-SEI-SMOKE-REPAIR-20260827-01",
+  "base_sha": "9d19ed64ef03d6a14a19d952324ebd36514de5ad",
+  "status": "EXPLICIT_USER_AUTHORIZATION",
+  "authorized_by": "Gil Marer",
+  "authorized_on": "2026-08-27",
+  "reason": "Replace the retired German compatibility-route smoke markers with markers for the genuine live German FTI/Club Sei recovery dossier. No email, filing, RedSARA/AGE, portal or authority contact is authorized.",
+  "paths": [
+    "scripts/production_smoke_check.py"
+  ],
+  "publication_authorized": true,
+  "email_authorized": false,
+  "filing_authorized": false,
+  "external_contact_authorized": false
+}
