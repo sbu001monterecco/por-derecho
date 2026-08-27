@@ -1,6 +1,6 @@
 RICPE CANAL ETICO - RESOLUCION COMUNICADA Y CIERRE CERTIFICADO
 Fecha del certificado: 27 de agosto de 2026
-Comunicación: 83d17ee8-b8b4-4171-840a-be954794a1aa
+Correlación pública (SHA-256 del código privado): e53bda34973e530520bde39648768a1e32a358d8984294b21258789faebe6a24
 Intermediario certificador: ITHIKIOS - DIGITAL PRODUCTS DEVELOPMENT SL
 
 AVISO DE PUBLICACION

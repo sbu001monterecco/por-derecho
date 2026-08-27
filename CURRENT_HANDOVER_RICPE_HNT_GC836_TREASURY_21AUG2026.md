@@ -151,7 +151,7 @@ Receipt is acknowledged, but admission remains pending an accepted electronic-si
 
 - PwC, Grant Thornton and RSM already received recent supplementary evidence in their existing institutional threads/files. Respect their existing response windows and do not send another broad duplicate.
 - A later narrow update may use the actual signed Resolution 90/2026 package once recovered and verified. The cover should state that the order is supplied as a primary source and that no conclusion beyond its express terms is attributed to it.
-- The Ithikios/RICPE system notified additional information for communication `83d17ee8-b8b4-4171-840a-be954794a1aa`. The portal content must be opened, exported or otherwise preserved before RICPE's current position is characterised or another broad escalation is considered.
+- The Ithikios/RICPE system notified additional information for the communication identified publicly only by the one-way SHA-256 fingerprint `e53bda34973e530520bde39648768a1e32a358d8984294b21258789faebe6a24`. The exact communication/access code remains private. The portal content must be opened, exported or otherwise preserved before RICPE's current position is characterised or another broad escalation is considered.
 
 ## Narrow actor-perimeter continuity
 

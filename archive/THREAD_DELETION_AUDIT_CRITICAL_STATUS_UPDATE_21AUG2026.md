@@ -54,7 +54,7 @@ Receipt is acknowledged, but admission remains pending an accepted electronic-si
 
 ### RICPE ethics channel
 
-An Ithikios notification states that additional information is available for communication `83d17ee8-b8b4-4171-840a-be954794a1aa`. The portal content has not yet been reviewed in this thread. It must be opened and preserved before the channel response is characterised or another broad escalation is made.
+An Ithikios notification states that additional information is available for the communication identified publicly only by the one-way SHA-256 fingerprint `e53bda34973e530520bde39648768a1e32a358d8984294b21258789faebe6a24`. The exact communication/access code remains private. The portal content had not yet been reviewed in that earlier thread; the later 27-Aug-2026 certificate now controls the visible closure state and must not be confused with the complete internal decision file.
 
 ## Critical implementation package
 

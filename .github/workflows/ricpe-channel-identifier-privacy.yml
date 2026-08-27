@@ -1,0 +1,35 @@
+name: Validate RICPE channel identifier privacy
+
+on:
+  pull_request:
+    paths:
+      - 'evidence/ricpe-cnmv/2026-08-27/resolution.txt'
+      - 'CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md'
+      - 'archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md'
+      - 'archive/RICPE_CHANNEL_PUBLIC_IDENTIFIER_EXPOSURE_REMEDIATION_27AUG2026.md'
+      - 'scripts/validate_ricpe_channel_identifier_privacy.py'
+      - '.github/workflows/ricpe-channel-identifier-privacy.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'evidence/ricpe-cnmv/2026-08-27/resolution.txt'
+      - 'CURRENT_HANDOVER_RICPE_HNT_GC836_TREASURY_21AUG2026.md'
+      - 'archive/THREAD_DELETION_AUDIT_CRITICAL_STATUS_UPDATE_21AUG2026.md'
+      - 'archive/RICPE_CHANNEL_PUBLIC_IDENTIFIER_EXPOSURE_REMEDIATION_27AUG2026.md'
+      - 'scripts/validate_ricpe_channel_identifier_privacy.py'
+      - '.github/workflows/ricpe-channel-identifier-privacy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Enforce privacy-safe channel correlation
+        run: python3 scripts/validate_ricpe_channel_identifier_privacy.py
