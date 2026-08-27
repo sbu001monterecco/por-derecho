@@ -36,7 +36,7 @@ require(start, "PD-UNITARY-STATE-20260826-01", "CURRENT_START_HERE.md")
 
 require(operational, "PD-CURRENT-OPERATIONAL-ROUTER-20260827-01", "CURRENT_OPERATIONAL_STATE_27AUG2026.md")
 require(operational, "not a promise that a checked-in SHA remains the live head forever", "CURRENT_OPERATIONAL_STATE_27AUG2026.md")
-require(operational, "HISTORICAL", "CURRENT_OPERATIONAL_STATE_27AUG2026.md")
+require(operational, "historical release evidence", "CURRENT_OPERATIONAL_STATE_27AUG2026.md")
 require(operational, "san-telmo-ricpe-sun-park-stamp-v1-ES.png", "CURRENT_OPERATIONAL_STATE_27AUG2026.md")
 require(operational, "pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png", "CURRENT_OPERATIONAL_STATE_27AUG2026.md")
 
