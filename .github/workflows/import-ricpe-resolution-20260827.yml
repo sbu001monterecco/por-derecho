@@ -32,8 +32,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq poppler-utils
+          if ! command -v pdftoppm >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq poppler-utils
+          fi
           target="evidence/ricpe-cnmv/2026-08-27"
           pdftoppm -jpeg -r 110 -jpegopt quality=82,progressive=y,optimize=y \
             "$target/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf" \
@@ -43,9 +45,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          branch='codex/ricpe-full-resolution-questions-20260827'
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin "$branch"
+          git rebase "origin/$branch"
           git add evidence/ricpe-cnmv/2026-08-27/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf evidence/ricpe-cnmv/2026-08-27/resolution-pages
           git rm .github/workflows/import-ricpe-resolution-20260827.yml
           git commit -m 'Add full RICPE resolution PDF and six page images'
-          git push origin HEAD:codex/ricpe-full-resolution-questions-20260827
+          git push origin HEAD:"$branch"
