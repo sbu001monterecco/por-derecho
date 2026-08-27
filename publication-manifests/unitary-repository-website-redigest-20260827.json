@@ -1,0 +1,87 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "unitary-repository-website-redigest-20260827",
+  "control_id": "PD-UNITARY-REDIGEST-20260827-01",
+  "control_date": "2026-08-27",
+  "current_state": "REPOSITORY_CONTROLLED",
+  "status": "repository_controlled",
+  "owner": "Por Derecho / Project Sun Rock",
+  "source_base_sha": "8e8e83c5a337846245a942222efbc3120645b1fd",
+  "expected_source_files": [
+    "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
+    "publication-manifests/unitary-repository-website-redigest-20260827.json",
+    "scripts/validate_current_reverse_engineered_digest.py",
+    ".github/workflows/validate-current-reverse-engineered-digest.yml"
+  ],
+  "public_safe": true,
+  "reader_facing_material_update": false,
+  "material_date_change": false,
+  "reason_no_material_date_change": "This is a repository/website reverse-engineering and operational continuity control; it does not add a new merits allegation, procedural result or quantified recovery.",
+  "source_observations": {
+    "main_sha": "8e8e83c5a337846245a942222efbc3120645b1fd",
+    "tree_sha": "272e522a4171b9cd68a9eb62e7f27012a7d2a584",
+    "observed_at": "2026-08-27T08:28:06Z",
+    "pages": {
+      "run_id": 33023553238,
+      "run_number": 1165,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "unitary_verifier": {
+      "run_id": 33023553789,
+      "job_id": 98359487655,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "production_smoke": {
+      "run_id": 33023881311,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "open_pull_requests": 33,
+    "required_status_check_enforcement": "off"
+  },
+  "identity_registry": {
+    "total": 194,
+    "PERSON": 86,
+    "ORGANISATION": 66,
+    "STRUCTURE": 10,
+    "INSTITUTION": 15,
+    "PROCEEDING": 17,
+    "archive_backfill": "OPEN"
+  },
+  "caret_scope": {
+    "current_live_state": "PARTIAL_NOT_ALL_IS",
+    "confirmed": 19,
+    "denominator": 24,
+    "pending": 5,
+    "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
+    "reasons": [
+      "prepared against earlier 16dd443 repository state",
+      "current canonical denominator is 194",
+      "proceeding IDs R-0011 through R-0017 are occupied",
+      "Matkator and ONA exact-entity reconciliation remains open",
+      "Clubotel, PP1041 and EH90 require current-registry admission"
+    ]
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "https://sbu001monterecco.github.io/por-derecho/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
+    "https://sbu001monterecco.github.io/por-derecho/publication-manifests/unitary-repository-website-redigest-20260827.json"
+  ],
+  "boundaries": [
+    "analytical control, not a finding",
+    "no collective guilt or automatic actor attribution",
+    "complaint or pleading is not proof of underlying conduct",
+    "later title, operation or benefit does not validate earlier authority",
+    "private or privileged native material is not automatically public"
+  ],
+  "post_merge_requirements": [
+    "confirm merge SHA on main",
+    "confirm GitHub Pages deployment for the merge",
+    "confirm workflow validation and exact no-cache public readback success",
+    "run and verify a current-head off-GitHub preservation snapshot",
+    "do not promote to a material public update absent a separate source-supported decision"
+  ]
+}
