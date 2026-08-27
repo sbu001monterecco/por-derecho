@@ -1,11 +1,11 @@
-# ALBERTO LÓPEZ VILLARRUBIA — SIGNED ACTS / KNOWLEDGE REGISTER
+# Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria — signed acts / knowledge register
 
 **Control date:** 17 August 2026  
 **Status:** `ACTOR-SPECIFIC REGISTER — PRIMARY PROMOTION PASS 2 / PUBLIC NAMED PAGE NOT YET DECLARED COMPLETE`
 
 ## 1. Governing rule
 
-This file contains only acts or knowledge propositions that can be tied specifically to Alberto López Villarrubia at an appropriate evidential level.
+This file contains only acts or knowledge propositions that can be tied specifically to the magistrate López Villarrubia at an appropriate evidential level.
 
 Do not import an act merely because it occurred in Juzgado de lo Mercantil nº1.
 
@@ -19,27 +19,29 @@ Knowledge grades:
 
 ## 2. Current actor-specific anchors
 
-| Date | Act / event | Alberto-specific basis | Knowledge grade | What is safe to say | What is not yet safe to say |
+| Date | Act / event | Magistrate-specific basis | Knowledge grade | What is safe to say | What is not yet safe to say |
 |---|---|---|---|---|---|
-| **06-Jun-2012** | **Auto nº158/2012 declaring LPB in voluntary concurso** | Recovered complete nine-page court copy; final page expressly states that Alberto López Villarrubia agrees and signs the Auto. SHA-256 `04b0454f773e9d74ccd847d09f3e24a9be6b8f4431f6954baebc8ffa586f7139`. | **1** | He personally signed the opening Auto declaring the voluntary concurso, preserving LPB's management/disposition subject to AC intervention, appointing **Francisco de Borja Rodríguez-Batllori Laffitte**, opening the common phase and ordering publicity/registry measures. | The opening Auto does not prove knowledge in 2012 of later 2017–2023 conduct, title disputes, works, financing or control events. |
+| **06-Jun-2012** | **Auto nº158/2012 declaring LPB in voluntary concurso** | Recovered complete nine-page court copy; final page expressly states that Magistrate-Judge López Villarrubia of the then Commercial Court No. 1 of Las Palmas de Gran Canaria agrees and signs the Auto. SHA-256 `04b0454f773e9d74ccd847d09f3e24a9be6b8f4431f6954baebc8ffa586f7139`. | **1** | He personally signed the opening Auto declaring the voluntary concurso, preserving LPB's management/disposition subject to AC intervention, appointing **Francisco de Borja Rodríguez-Batllori Laffitte**, opening the common phase and ordering publicity/registry measures. | The opening Auto does not prove knowledge in 2012 of later 2017–2023 conduct, title disputes, works, financing or control events. |
 | **22-Mar-2017** | **Auto ending common phase / opening convenio** | Complete two-page court copy expressly identifies `DON/ÑA ALBERTO LÓPEZ VILLARRUBIA Magistrado Juez`; notification 27-Mar-2017. | **1** | He personally ended the common phase, opened the convenio phase/section five and called the creditors' meeting for 28-Jun-2017. | This act does not itself establish responsibility for later failure of convenio or opening of liquidation. |
 | **05-May-2017** | **Auto fixing definitive AC remuneration** | Complete two-page court copy expressly states `Así lo dispone, manda y firma DON ALBERTO LOPEZ VILLARRUBIA`; notification 10-May-2017. | **1** | He personally fixed AC remuneration at €81,522.37 for the common phase and €8,152.23/month for the convenio phase. | The remuneration order is not a finding that every later AC act was correct or incorrect. |
-| 26-Jun-2018 | Auto suspending realisation of identified fincas | Complete two-page court copy expressly states Alberto signed it. | **1** | He signed the judicial suspension; the act records LPB's appeal against the 16-Apr liquidation-plan Auto, grants suspension for enumerated fincas and leaves other pronouncements unchanged. | It does not establish knowledge of every external title/control/funding fact affecting the whole mixed-ownership complex. |
+| **16-Apr-2018** | **Auto approving the liquidation plan with qualifications (`C36-JUD-2018-04-16-001`)** | Complete seven-page primary electronic court copy identifies Magistrate-Judge López Villarrubia; canonical clean-copy SHA-256 `2de1527a738658252f81fd3e402622f677280aaed735e5ef117d44c4a06dcd05`; notified 20-Apr-2018. | **1** | He personally approved the plan with the recorded qualifications: an asset-specific 159-apartment dación route, a separate 31-finca €400,000 route, exclusion of property belonging to others and publicity/better-offer conditions. | The act does not prove the accuracy of a valuation, fulfilment of every condition, completeness of the filed annex set, later implementation, service/finality or criminal purpose. |
+| **16-Apr-2018** | **Separate Auto clarifying specially privileged interest (`C36-JUD-2018-04-16-002`)** | Complete two-page primary electronic court copy identifies Magistrate-Judge López Villarrubia; SHA-256 `4748ad85af54dac606104e8f93cd71299cfd5878fc32be0bf1d4f236325e59ff`; notified 20-Apr-2018. | **1** | He personally clarified that the relevant interest component could increase only up to the maxima agreed in the mortgage deeds. | It does not establish actual accrual, the final recognised/compensable credit, closing payoff, the disputed date of the earlier holder ruling or criminal purpose. |
+| 26-Jun-2018 | Auto suspending realisation of identified fincas | Complete two-page court copy expressly states that Magistrate-Judge López Villarrubia signed it. | **1** | He signed the judicial suspension; the act records LPB's appeal against the 16-Apr liquidation-plan Auto, grants suspension for enumerated fincas and leaves other pronouncements unchanged. | It does not establish knowledge of every external title/control/funding fact affecting the whole mixed-ownership complex. |
 | 24-Oct-2019 | Auto refusing convalidation of 28-Nov-2018 desvinculación/sale | Standalone primary binary is located; later CGPJ annex reproduces substantive pages 1,4,5. Exact signature-page capture remains to be bound. | **1 subject to final signature-page binding** | The court refused convalidation, left the 12-Dec-2018 Diligencia without effect and described the earlier partial suspension as erroneous. | The refusal does not prove criminality, intentional favouritism or knowledge of every downstream use. |
-| **24-Feb-2021** | **Auto resolving Aweswell reposición against 13-Jan-2021 Providencia** | Complete four-page electronic court copy expressly names Alberto. | **1** | He partially upheld Aweswell's challenge because the original motivation was too brief, substituted fuller reasoning, recorded competing positions about works/debris/access and maintained refusal of judicial inspection/pericial. | Party allegations recited in the act are not automatically judicial findings. |
-| **12-May-2021** | **Providencia opening licitación** | Complete two-page electronic court copy identifies Alberto. | **1** | He personally opened licitación for enumerated LPB fincas, including locals and pools/solaria, fixed 18-May-2021 and set the third-party bidder's bond at €735,694.02. | This alone does not prove reconciliation of every contractual, registry, possession, accounting or disclosure issue. |
-| 08-Jul-2021 | Providencia requiring detailed AC liquidation report | Historical docket source reproduces an act headed for Alberto; standalone primary binary still to be promoted. | 1 once primary copy is bound | Discovered text requires detailed liquidation reporting and warns of potential responsibility for failure to report. | Workbook text alone is not yet the public canonical source. |
+| **24-Feb-2021** | **Auto resolving Aweswell reposición against 13-Jan-2021 Providencia** | Complete four-page electronic court copy expressly names Magistrate-Judge López Villarrubia. | **1** | He partially upheld Aweswell's challenge because the original motivation was too brief, substituted fuller reasoning, recorded competing positions about works/debris/access and maintained refusal of judicial inspection/pericial. | Party allegations recited in the act are not automatically judicial findings. |
+| **12-May-2021** | **Providencia opening licitación** | Complete two-page electronic court copy identifies Magistrate-Judge López Villarrubia. | **1** | He personally opened licitación for enumerated LPB fincas, including locals and pools/solaria, fixed 18-May-2021 and set the third-party bidder's bond at €735,694.02. | This alone does not prove reconciliation of every contractual, registry, possession, accounting or disclosure issue. |
+| 08-Jul-2021 | Providencia requiring detailed AC liquidation report | Historical docket source reproduces an act headed for Magistrate-Judge López Villarrubia; standalone primary binary still to be promoted. | 1 once primary copy is bound | Discovered text requires detailed liquidation reporting and warns of potential responsibility for failure to report. | Workbook text alone is not yet the public canonical source. |
 | 25-Jul-2023 | Calificación Vista | Sentencia 163/2023 records the Vista occurred; audiovisual record exists; full verified transcript pending. | 2 only for future verified passages | Verified statements demonstrably made in his presence can support a `heard` proposition. | Heard ≠ accepted, remembered, personally reviewed or knowingly ignored. |
-| 28-Sep-2023 | Sentencia 163/2023 | Signed judgment identifies Alberto as Magistrado-Juez. | **1** | He signed and owns the judicial reasoning/operative outcome of the first-instance Calificación judgment. | It is not a criminal conviction and remains materially adverse under appeal; no final appellate outcome should be invented. |
+| 28-Sep-2023 | Sentencia 163/2023 | Signed judgment identifies Magistrate-Judge López Villarrubia in that capacity. | **1** | He signed and owns the judicial reasoning/operative outcome of the first-instance Calificación judgment. | It is not a criminal conviction and remains materially adverse under appeal; no final appellate outcome should be invented. |
 
 ## 3. Batch A attribution correction — mandatory
 
-Two early transition Autos previously left actor-unresolved are now primary-resolved **against Alberto attribution**:
+Two early transition Autos previously left actor-unresolved are now primary-resolved **against attribution to Magistrate-Judge López Villarrubia**:
 
 - `C36-JUD-2017-01-20-001` — Auto modifying definitive texts: **Juan Avello Formoso**, notified 26-Jan-2017.
 - `C36-JUD-2017-12-19-001` — Auto opening liquidation: **Juan Avello Formoso**, authentic electronic copy also identifying LAJ **Eduardo José Rebollo Sanz**, notified 26-Dec-2017.
 
-These acts belong in the institutional Concurso chronology but **must not be placed in Alberto's personally signed-act chronology**. This correction is a material fairness control.
+These acts belong in the institutional Concurso chronology but **must not be placed in the chronology of acts personally signed by Magistrate López Villarrubia**. This correction is a material fairness control.
 
 **Collision-safe correction control `C36-CORR-OPENING-AC-20260823`:** the 6-Jun-2012 operative part appoints Francisco de Borja Rodríguez-Batllori Laffitte as insolvency administrator. Fernando de León Marrero must not be substituted for that opening appointment. This does not determine any later acceptance, replacement or continuity issue.
 
@@ -53,7 +55,6 @@ The following remain deliberately excluded or provisional pending primary signat
 - 23-Nov-2015 Garrigues Auto;
 - 24-Nov-2015 Sentencia 268/2015;
 - 01-Apr-2016 Garrigues incident Sentencia;
-- exact 16-Apr-2018 judicial acts are now located and separated by subject; actor-specific signature/source binding in this register remains to be completed;
 - 11-Mar-2019 Providencia;
 - 24-Oct-2019 Aweswell-standing Auto is located; actor-specific signature/source binding in this register remains to be completed;
 - 13-Jan-2021 Providencia as standalone primary copy;
@@ -67,7 +68,14 @@ The following remain deliberately excluded or provisional pending primary signat
 
 ## 5. Named-page readiness decision — 17 Aug 2026
 
-**Decision:** continue building the evidential infrastructure; **do not yet publish the dedicated Alberto page as a completed accountability dossier**.
+**Decision:** continue building the evidential infrastructure; **do not yet publish the dedicated Magistrate López Villarrubia page as a completed accountability dossier**.
+
+**Dated supersession — 27 Aug 2026:** this was the controlling 17-Aug gate, but
+it no longer describes publication state. A bounded bilingual cross-proceeding
+dossier has since been published and then rebuilt as
+`PD-ALV-MP357-MULTI-20260827-01`. It does **not** claim a complete-accountability
+docket. The missing originals, favourable/adverse balance, date-capacity limits,
+counterevidence and falsification targets below remain controlling limitations.
 
 Batch A improves both traceability and fairness: it adds three personally signed early acts (2012 opening, 22-Mar-2017 convenio, 05-May-2017 remuneration) while affirmatively excluding the Juan Avello 20-Jan and 19-Dec-2017 acts.
 

@@ -1,0 +1,384 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbu001monterecco.github.io/por-derecho/assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json",
+  "title": "FTI / Meeting Point Canary Islands and Spain asset-transaction register",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "control_id",
+    "control_date",
+    "public_safe",
+    "scope",
+    "field_contract",
+    "term_dictionary",
+    "known_entities",
+    "heritage_scopes",
+    "sources",
+    "official_source_lanes",
+    "events",
+    "coverage_gaps"
+  ],
+  "properties": {
+    "schema": {
+      "const": "por-derecho.fti-meeting-point-canary-spain-asset-transaction-register.v1"
+    },
+    "control_id": {
+      "const": "PD-FTI-MP-ASSET-TX-REGISTER-20260827-01"
+    },
+    "control_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "public_safe": {
+      "const": true
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "geography",
+        "heritage_rule",
+        "purpose",
+        "coverage_status",
+        "exclusions"
+      ],
+      "properties": {
+        "geography": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "CANARY_ISLANDS",
+              "SPAIN"
+            ]
+          }
+        },
+        "heritage_rule": {
+          "type": "string",
+          "minLength": 40
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 40
+        },
+        "coverage_status": {
+          "type": "string",
+          "pattern": "^BOUNDED_MONITOR_NOT_COMPREHENSIVE:"
+        },
+        "exclusions": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "field_contract": {
+      "type": "object",
+      "required": [
+        "entity",
+        "asset",
+        "capacity",
+        "date",
+        "source",
+        "evidence_state",
+        "change_detection"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "entity": {"type": "string", "minLength": 20},
+        "asset": {"type": "string", "minLength": 20},
+        "capacity": {"type": "string", "minLength": 20},
+        "date": {"type": "string", "minLength": 20},
+        "source": {"type": "string", "minLength": 20},
+        "evidence_state": {"type": "string", "minLength": 20},
+        "change_detection": {"type": "string", "minLength": 20}
+      }
+    },
+    "term_dictionary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transaction_terms", "geography_terms"],
+      "properties": {
+        "transaction_terms": {
+          "type": "array",
+          "minItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["term_id", "capacity_or_type", "aliases"],
+            "properties": {
+              "term_id": {"type": "string", "pattern": "^FTI-TX-TERM-[0-9]{3}$"},
+              "capacity_or_type": {"type": "string"},
+              "aliases": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+            }
+          }
+        },
+        "geography_terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "known_entities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    },
+    "heritage_scopes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/heritageScope"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "official_source_lanes": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/officialSourceLane"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    },
+    "coverage_gaps": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "gap_id",
+          "question",
+          "needed_source",
+          "status"
+        ],
+        "properties": {
+          "gap_id": {"type": "string", "pattern": "^FTI-TX-GAP-[0-9]{3}$"},
+          "question": {"type": "string", "minLength": 20},
+          "needed_source": {"type": "string", "minLength": 20},
+          "status": {"const": "OPEN"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entity_id",
+        "display_name",
+        "entity_kind",
+        "caepr_state",
+        "aliases",
+        "identity_boundary"
+      ],
+      "properties": {
+        "entity_id": {"type": "string", "pattern": "^FTI-TX-ENT-[0-9]{3}$"},
+        "display_name": {"type": "string", "minLength": 2},
+        "entity_kind": {"enum": ["LEGAL_PERSON", "BRAND_OR_COMMERCIAL_PERIMETER", "PUBLIC_INSTITUTION", "PROFESSIONAL_PERIMETER"]},
+        "caepr_state": {"enum": ["CARET_CONFIRMED", "CARET_PENDING", "PERIMETER_RECORD_NOT_EXACT_LEGAL_PERSON"]},
+        "caepr_id": {"type": "string", "pattern": "^PD-SP-[A-Z]-[0-9]{4}$"},
+        "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "identity_boundary": {"type": "string", "minLength": 20},
+        "next_identity_source_needed": {"type": "string", "minLength": 20}
+      }
+    },
+    "heritageScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "heritage_scope_id",
+        "label",
+        "geography",
+        "asset_precision_state",
+        "historic_fti_meeting_point_link",
+        "heritage_source_state",
+        "source_refs",
+        "source_gap_refs",
+        "included_object_ids",
+        "does_not_establish"
+      ],
+      "properties": {
+        "heritage_scope_id": {"type": "string", "pattern": "^FTI-TX-SCOPE-[0-9]{3}$"},
+        "label": {"type": "string", "minLength": 4},
+        "geography": {"enum": ["CANARY_ISLANDS", "SPAIN"]},
+        "asset_precision_state": {"enum": ["EXACT_ASSET", "BOUNDED_PORTFOLIO_ASSETS_NOT_ITEMISED", "LEGAL_ENTITY_WITH_ASSET_SCHEDULE_OPEN", "BRAND_PROJECT_RELATIONSHIP_ONLY"]},
+        "historic_fti_meeting_point_link": {"type": "string", "minLength": 20},
+        "heritage_source_state": {"enum": ["CONFIGURED_PUBLIC_SOURCE_REFS", "OPEN_PRIMARY_SOURCE_NOT_CONFIGURED"]},
+        "source_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "source_gap_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "included_object_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "does_not_establish": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "title",
+        "url",
+        "priority",
+        "access_lane",
+        "source_type",
+        "enabled",
+        "change_review_policy",
+        "heritage_scope_ids",
+        "entity_ids",
+        "transaction_term_ids",
+        "source_boundary"
+      ],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^FTI-TX-SRC-[0-9]{3}$"},
+        "title": {"type": "string", "minLength": 4},
+        "url": {"type": "string", "pattern": "^https://"},
+        "priority": {"enum": ["P1_OFFICIAL", "P2_PARTY_OR_FIDUCIARY", "P3_INDEPENDENT_TRADE", "P4_DISCOVERY"]},
+        "access_lane": {"const": "AUTOMATED_SAFE"},
+        "source_type": {"enum": ["HTML", "PDF", "RSS"]},
+        "enabled": {"type": "boolean"},
+        "required": {"type": "boolean"},
+        "change_review_policy": {"enum": ["ANY_CHANGE", "ENTITY_AND_TRANSACTION_TERM", "DISCOVERY_ONLY"]},
+        "heritage_scope_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "entity_ids": {"type": "array", "items": {"type": "string"}},
+        "transaction_term_ids": {"type": "array", "items": {"type": "string"}},
+        "source_boundary": {"type": "string", "minLength": 20},
+        "request_headers": {"type": "object", "maxProperties": 0, "additionalProperties": false}
+      }
+    },
+    "officialSourceLane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "label",
+        "jurisdictions",
+        "access_lane",
+        "coverage_state",
+        "configured_source_refs",
+        "gap_refs",
+        "boundary"
+      ],
+      "properties": {
+        "lane_id": {"type": "string", "pattern": "^FTI-TX-LANE-[0-9]{3}$"},
+        "label": {"type": "string", "minLength": 4},
+        "jurisdictions": {"type": "array", "minItems": 1, "items": {"enum": ["CANARY_ISLANDS", "SPAIN", "GERMANY", "EUROPEAN_UNION"]}, "uniqueItems": true},
+        "access_lane": {"enum": ["AUTOMATED_SAFE", "MANUAL_PUBLIC", "PAID_OR_RESTRICTED"]},
+        "coverage_state": {"enum": ["CONFIGURED_SAFE_DISCOVERY", "OPEN_GAP_NOT_AUTOMATED"]},
+        "configured_source_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "gap_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "boundary": {"type": "string", "minLength": 40}
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id",
+        "heritage_scope_id",
+        "asset",
+        "entities_and_capacities",
+        "transaction_type",
+        "transaction_state",
+        "transaction_date",
+        "source_refs",
+        "evidence_state",
+        "proves",
+        "does_not_prove",
+        "contrary_or_limiting_evidence",
+        "change_detection",
+        "public_safety"
+      ],
+      "properties": {
+        "event_id": {"type": "string", "pattern": "^FTI-TX-EVT-[0-9]{4}$"},
+        "heritage_scope_id": {"type": "string"},
+        "asset": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["asset_id", "display_name", "geography", "precision_state"],
+          "properties": {
+            "asset_id": {"type": "string"},
+            "display_name": {"type": "string"},
+            "geography": {"enum": ["CANARY_ISLANDS", "SPAIN"]},
+            "precision_state": {"enum": ["EXACT_ASSET", "BOUNDED_PORTFOLIO_ASSETS_NOT_ITEMISED", "LEGAL_ENTITY_WITH_ASSET_SCHEDULE_OPEN", "BRAND_PROJECT_RELATIONSHIP_ONLY"]}
+          }
+        },
+        "entities_and_capacities": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["entity_id", "capacity", "capacity_source_refs", "capacity_boundary"],
+            "properties": {
+              "entity_id": {"type": "string"},
+              "capacity": {"type": "string"},
+              "capacity_source_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+              "capacity_boundary": {"type": "string", "minLength": 20}
+            }
+          }
+        },
+        "transaction_type": {"type": "string"},
+        "transaction_state": {"type": "string"},
+        "transaction_date": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "precision", "meaning"],
+          "properties": {
+            "value": {"type": ["string", "null"]},
+            "precision": {"enum": ["DAY", "MONTH", "YEAR", "BEFORE_OR_BY_SOURCE_DATE", "UNKNOWN"]},
+            "meaning": {"type": "string", "minLength": 10}
+          }
+        },
+        "source_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "evidence_state": {"type": "string"},
+        "proves": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "does_not_prove": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "contrary_or_limiting_evidence": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "change_detection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["monitored_source_ids", "last_human_review_date", "next_review_trigger", "automatic_promotion"],
+          "properties": {
+            "monitored_source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+            "last_human_review_date": {"type": "string", "format": "date"},
+            "next_review_trigger": {"type": "string", "minLength": 20},
+            "automatic_promotion": {"const": false}
+          }
+        },
+        "public_safety": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["classification", "contains_private_source", "contains_unannounced_transaction", "website_publication_authorized"],
+          "properties": {
+            "classification": {"const": "TX-0_PUBLIC"},
+            "contains_private_source": {"const": false},
+            "contains_unannounced_transaction": {"const": false},
+            "website_publication_authorized": {"const": false}
+          }
+        }
+      }
+    }
+  }
+}

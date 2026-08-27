@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.fti-meeting-point-email-correction-action-state.v1",
   "control_date": "2026-08-26",
-  "repository_base_sha": "16dd443b837f29c94892722a6c80459432b4e992",
+  "repository_base_sha": "f4c186194f34c414e83526a771a9772d62782519",
   "classification": "PUBLIC_SAFE_OPERATIONAL_STATE",
   "overall_state": "PREPARED_HOLD_NOT_AUTHORIZED",
   "send_authority": {
@@ -111,22 +111,60 @@
       "6f327ef4",
       "9cb1e11b"
     ],
-    "state": "REIMPLEMENTED_ON_PRESERVATION_BRANCH_PENDING_MERGE_DEPLOYMENT_LIVE_READBACK"
+    "state": "REIMPLEMENTED_MERGED_DEPLOYED_AND_LIVE_READBACK_RECORDED",
+    "preservation_merge": {
+      "pull_request": 1084,
+      "merge_sha": "6face6554c4214e68e74a9b9b6bce36e41aedb3f"
+    },
+    "cross_proceeding_publication": {
+      "pull_request": 1085,
+      "merge_sha": "048bb4e419a6b36e279e3e7d5792ebafb008cfe5"
+    },
+    "current_new_continuity_work": "PUBLICATION_AUTHORISED_REPOSITORY_WEBSITE_ONLY__NOT_YET_PUSHED_MERGED_DEPLOYED_OR_LIVE_VERIFIED__EMAIL_AND_FILING_HOLD"
   },
   "caepr_caret_state": {
     "result": "PARTIAL_NOT_ALL_IS_CARET",
-    "scope": "The four exact entities and one proceeding newly material to the corrected 357/2024 account; other names on the pages are outside this bounded run.",
-    "unique_reference_denominator": 5,
-    "caret_confirmed_count": 0,
-    "coverage_percent": 0,
-    "caret_pending": [
-      "Meeting Point Hotelmanagement (Canaries), S.L.U.",
-      "Meeting Point Spain, S.L.U. — source-form reconciliation with SEPI's Meeting Point Spain, S.L. remains open",
-      "Meeting Point Investment, S.L.U.",
-      "AUREN REESTRUCTURACIONES SLP",
-      "Proceeding 357/2024 — legacy GC-CONT-025 exists, but no immutable CAEPR mapping is present"
+    "scope_rule": "Do not merge separate denominators. A caret resolves identity only and never proves conduct, dated capacity, knowledge, intent, conflict, concealment, causation, liability or outcome.",
+    "scopes": [
+      {
+        "control_id": "PD-ALV-MP357-CARET-20260827-01",
+        "scope": "Six-surface Alberto/Meeting Point specialist module",
+        "denominator": 32,
+        "confirmed": 25,
+        "pending": 7
+      },
+      {
+        "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
+        "scope": "Eighteen-route first-hop network",
+        "denominator": 130,
+        "confirmed": 56,
+        "pending": 74
+      },
+      {
+        "control_id": "PD-UNITARY-REDIGEST-20260827-01",
+        "scope": "Repository-wide unitary digest",
+        "denominator": 24,
+        "confirmed": 19,
+        "pending": 5
+      },
+      {
+        "control_id": "PD-FTI-MP-RICPE-CARET-20260827-01",
+        "scope": "New FTI/Meeting Point/RICPE continuity spine candidate",
+        "denominator": 65,
+        "confirmed": 39,
+        "pending": 26,
+        "publication_state": "LOCAL_CANDIDATE_NOT_LIVE"
+      },
+      {
+        "control_id": "PD-FTI-MP-PROF-INST-CARET-20260827-01",
+        "scope": "Role-selected thirteen-surface Germany/Spain/EU professional and institutional census",
+        "denominator": 101,
+        "confirmed": 40,
+        "pending": 61,
+        "publication_state": "PUBLICATION_AUTHORISED_REPOSITORY_WEBSITE_ONLY__NOT_LIVE"
+      }
     ],
-    "reason": "None of the five exact objects is admitted to an immutable record in the current matter-identity registry parts or CANONICAL_ENTITY_NAMES; no caret is forced and no page-wide or repository-wide all-is-caret claim is made."
+    "reason": "All five finite censuses are complete for their declared scopes and remain partial because each contains pending objects; no ALL IS^ claim is permitted. The 101-object role-selected census excludes hotel-by-hotel and newly discovered transaction-counterparty objects unless separately admitted."
   },
   "privacy": "Exact recipients, addresses, subjects, private bodies, provider identifiers and native message locators remain in the connected private source system and must not be copied into public Git.",
   "external_action_authorized": false

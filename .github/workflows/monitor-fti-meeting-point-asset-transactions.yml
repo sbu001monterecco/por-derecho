@@ -1,0 +1,140 @@
+name: Monitor FTI Meeting Point asset transactions
+
+on:
+  workflow_dispatch:
+    inputs:
+      acknowledgement:
+        description: 'Exact pending review boundary as SOURCE_ID=SHA256; never an event or external-action authorization'
+        required: false
+        type: string
+      acknowledgement_reason:
+        description: 'Public-safe human review reason for the exact pending fingerprint'
+        required: false
+        type: string
+  schedule:
+    - cron: '17 */6 * * *'
+  pull_request:
+    paths:
+      - 'ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
+      - 'scripts/monitor_fti_meeting_point_asset_transactions.py'
+      - 'scripts/validate_fti_meeting_point_asset_transaction_monitor.py'
+      - '.github/workflows/monitor-fti-meeting-point-asset-transactions.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json'
+      - 'assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json'
+      - 'scripts/monitor_fti_meeting_point_asset_transactions.py'
+      - 'scripts/validate_fti_meeting_point_asset_transaction_monitor.py'
+      - '.github/workflows/monitor-fti-meeting-point-asset-transactions.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fti-meeting-point-asset-transactions-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Validate monitor configuration and safeguards
+        run: python scripts/validate_fti_meeting_point_asset_transaction_monitor.py
+
+      - name: Restore preceding public-source fingerprint state
+        if: github.event_name != 'pull_request'
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
+        with:
+          path: |
+            artifacts/fti-meeting-point-asset-transaction-monitor/state.json
+            artifacts/fti-meeting-point-asset-transaction-monitor/history.jsonl
+          key: fti-meeting-point-asset-transaction-state-v2-${{ github.run_id }}
+          restore-keys: |
+            fti-meeting-point-asset-transaction-state-v2-
+
+      - name: Check configured public sources
+        id: monitor_sources
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        env:
+          FTI_TX_MONITOR_ACKNOWLEDGEMENT: ${{ inputs.acknowledgement }}
+          FTI_TX_MONITOR_ACKNOWLEDGEMENT_REASON: ${{ inputs.acknowledgement_reason }}
+        run: >-
+          python scripts/monitor_fti_meeting_point_asset_transactions.py
+          --repo-root .
+          --state-in artifacts/fti-meeting-point-asset-transaction-monitor/state.json
+          --state-out artifacts/fti-meeting-point-asset-transaction-monitor/state.json
+          --report artifacts/fti-meeting-point-asset-transaction-monitor/report.json
+          --summary artifacts/fti-meeting-point-asset-transaction-monitor/summary.md
+          --pending-output artifacts/fti-meeting-point-asset-transaction-monitor/pending.json
+          --incident artifacts/fti-meeting-point-asset-transaction-monitor/incident.json
+          --history artifacts/fti-meeting-point-asset-transaction-monitor/history.jsonl
+          --timeout 20
+          --max-bytes 25000000
+          --workers 4
+
+      - name: Add public-safe monitor summary
+        if: github.event_name != 'pull_request' && always()
+        run: |
+          if [ -f artifacts/fti-meeting-point-asset-transaction-monitor/summary.md ]; then
+            sed -n '1,240p' artifacts/fti-meeting-point-asset-transaction-monitor/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Save next public-source fingerprint state
+        if: github.event_name != 'pull_request' && always()
+        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
+        with:
+          path: |
+            artifacts/fti-meeting-point-asset-transaction-monitor/state.json
+            artifacts/fti-meeting-point-asset-transaction-monitor/history.jsonl
+          key: fti-meeting-point-asset-transaction-state-v2-${{ github.run_id }}
+
+      - name: Upload public-safe monitor evidence
+        if: github.event_name != 'pull_request' && always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: fti-meeting-point-asset-transaction-monitor-${{ github.run_id }}
+          path: artifacts/fti-meeting-point-asset-transaction-monitor/
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Enforce required-source and sticky-review result after preservation
+        if: github.event_name != 'pull_request' && always()
+        env:
+          MONITOR_STEP_OUTCOME: ${{ steps.monitor_sources.outcome }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+          from pathlib import Path
+
+          report_path = Path("artifacts/fti-meeting-point-asset-transaction-monitor/report.json")
+          if not report_path.is_file():
+              print("::error::Monitor produced no public-safe report")
+              raise SystemExit(1)
+          report = json.loads(report_path.read_text(encoding="utf-8"))
+          required = report.get("required_source_failures", [])
+          pending = int(report.get("counts", {}).get("pending_changes", 0))
+          if required:
+              print(f"::error::Required public sources unavailable: {', '.join(required)}")
+          if pending:
+              print(f"::warning::{pending} sticky source-review window(s) require explicit human review and exact-fingerprint acknowledgement")
+          if required or pending or os.environ.get("MONITOR_STEP_OUTCOME") != "success":
+              raise SystemExit(1)
+          PY

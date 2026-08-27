@@ -88,7 +88,7 @@
   load('lpam-cgpj169-calificacion-unitary-20260817.js?v=20260817a');
 
   // Calificacion: current appellate status and first-person accountability opening, followed by a 90-second
-  // professional evidence gateway and the user-approved strong-form Judge Alberto accusation.
+  // professional evidence gateway and the user-approved strong-form Magistrate-Judge allegation.
   load('calificacion-opening-accountability-20260816.js?v=20260816b', () => {
     load('calificacion-professional-read-20260816.js?v=20260816a');
     load('judge-alberto-approved-accusation-20260816.js?v=20260816a');

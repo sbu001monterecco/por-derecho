@@ -20,7 +20,7 @@ Primary signed judicial source located in connected Drive:
 
 - `19. Auto Publicidad Subasta 25ENE2021.pdf`
 - Drive ID `1tw06dh4A_RIeWQxlOJW27eRBEUjhZ3Gh`
-- signed electronically by Magistrado-Juez **Alberto López Villarrubia** on 25-Jan-2021.
+- signed electronically by **Magistrate-Judge Alberto López Villarrubia of the then Commercial Court No. 1 of Las Palmas de Gran Canaria**, on 25-Jan-2021.
 
 The Auto records that the **23-Jul-2019 Audiencia Provincial** decision had fixed the better-posture components as follows:
 
@@ -411,6 +411,6 @@ P1:
 
 ## 17. Public-safe formulation
 
-> **A signed 25-Jan-2021 Auto and the 29-Jan court-office Edicto reconstruct the better-posture threshold: the mortgage components total €13.168m, with a separate €400,000 non-mortgaged-asset component and separate community/tax obligations. The Auto also explains the €102,895.34 movement in first-rank default interest as continued daily accrual from the 2019 AP figure to the €3.182m mortgage cap. An 8-Feb-2021 Ottawa document proposes €14.8m for the identified finca package. Later party reconstructions state that the 21-Feb-2022 deed used €13.168m as a `valor de contraprestación`; the deed itself remains the priority source needed to reconcile judicial authorisation, competitive process, notarial implementation, Registry effects and any surplus.**
+> **A signed 25-Jan-2021 Auto and the 29-Jan court-office Edicto reconstruct the better-posture threshold: the mortgage components total €13.168m, with a separate €400,000 non-mortgaged-asset component and separate community/tax obligations. The Auto also explains the €102,895.34 movement in first-rank default interest as continued daily accrual from the 2019 AP figure to the €3.182m mortgage cap. An 8-Feb-2021 Ottawa document proposes €14.8m for the identified finca package. The recovered and reviewed 76-page primary public deed 457 of 21-Feb-2022 states €13,168,082.02 as `valor de contraprestación`. That located deed does not by itself close the separate chain of judicial authorisation, competitive process, treatment of the €400,000 component, court return/mandamiento, finca-by-finca Registry effects, accounting or any surplus.**
 
 Do not publish `€13.568m deed price`, `fabricated interest`, `double sale`, `double counting`, `fraud`, `misappropriation` or `nullity` as fact unless the required primary chain supports the specific proposition.

@@ -43,6 +43,49 @@ The additive, non-fragmented Administrador Concursal removal/remuneration thread
 
 That publication contains 50 redacted specialist records, preserves the 25 court/LAJ versus 25 party-filing split, exposes ten redacted decision PDFs, reconciles the four pleaded components arithmetically to EUR 110,956.97 and records ten finite production gaps. It does not claim that the complete certified Concurso docket has been obtained, that the pleaded total is bank-verified, that fee legality or quantum was adjudicated, or that any criminal responsibility has been established.
 
+### FTI Touristik / Meeting Point / RICPE continuity — additive candidate, not yet live verified
+
+`PD-FTI-MP-RICPE-CONTINUITY-20260827-01` is a separate specialist release at
+`PREPARED_PENDING_MERGE`. It adds a criminal-first, multidirectional continuity
+digest, a future-action map and a bounded Canary/Spain former-asset transaction
+monitor. It does not replace this file's historical 26-August live publication
+or imply that the candidate has been merged, deployed or read back.
+
+Its restart controls are:
+
+- digest: `archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md`;
+- action register: `ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json`;
+- deletion audit: `docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md`;
+- publication manifest: `publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json`;
+- monitor control/register: `ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json` and `assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json`;
+- caret controls: `assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json` and `assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json`.
+
+The **39/65** continuity-spine result and the **40/101** role-selected
+professional/institutional result are separate identity-only scopes; both are
+`PARTIAL — NOT ALL IS^`. They do not merge with the existing 25/32, 56/130 or
+19/24 denominators and prove no conduct or liability. The action register has
+**31 actions, 12 package definitions and 18 mapped proceeding/file objects**.
+The bounded monitor has **3 heritage scopes, 11 known entity objects, 12
+automated-safe public sources, 2 baseline events and 8 open gaps**. A source
+change requires human verification and does not automatically establish or
+publish a buyer, manager, capital participant, transfer or wrongdoing.
+
+For historical own-court acts use **el Ilmo. Sr. D. Alberto López Villarrubia,
+Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de
+Gran Canaria**; for current references use **el magistrado D. Alberto López
+Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del
+Tribunal de Instancia de Las Palmas de Gran Canaria**. The 24-Oct-2024
+former-Court-No.-3 material is a Public Insolvency Register attribution only:
+signature, substitution/allocation, capacity, knowledge, conflict and disclosure
+remain open. The outward RICPE resolution names no individual resolver; the
+Ithikios / DIGITAL PRODUCTS DEVELOPMENT SL signature authenticates the provider
+perimeter only, not the human or RICPE organ that decided, configured, accessed
+or routed the case.
+
+No email, resend, forwarding, RedSARA/AGE or other notice, portal submission,
+court filing, authority contact or other external action is authorised by this
+repository/website publication candidate.
+
 ### Complete 21-URL no-cache readback set
 
 1. `https://sbu001monterecco.github.io/por-derecho/en/`
@@ -79,16 +122,32 @@ Repository main, Pages deployment and exact public readback remain separately re
 
 ## Canonical identity denominator
 
+The 27-August Magistrate López Villarrubia / Meeting Point specialist candidate admits ten additional
+immutable records. Source JSON and static registry pages are synchronized at
+204. The last exact public-edge readback remains the earlier 194-record snapshot
+until this candidate is separately published and read back.
+
 | Class | Count |
 |---|---:|
-| People | 86 |
-| Organisations | 66 |
+| People | 87 |
+| Organisations | 71 |
 | Structures | 10 |
-| Institutions | 15 |
-| Proceedings | 17 |
-| **Total** | **194** |
+| Institutions | 18 |
+| Proceedings | 18 |
+| **Total** | **204** |
 
-These counts control in the current repository's canonical JSON, both public pages, metadata, JSON-LD and no-JavaScript fallbacks, and the 194-ID denominator has now been independently read back from the public edge. The prior 185-ID readback remains historical deployment evidence only. Archive backfill remains open. Identity resolves identity only; it does not transfer knowledge, intention, control, benefit, responsibility or liability.
+These counts control in the candidate repository's canonical JSON, both public
+pages, metadata, JSON-LD and no-JavaScript fallbacks. They are not yet a claim of
+live public parity. The 194-ID and prior 185-ID readbacks remain historical
+deployment evidence. Archive backfill remains open. Identity resolves identity
+only; it does not transfer knowledge, intention, control, benefit,
+responsibility or liability.
+
+The identity counts do not merge three distinct caret scopes. The repository-
+wide unitary control remains 19/24; the six-surface Magistrate-Judge López
+Villarrubia / Meeting Point control is 25/32; and the full eighteen-route
+first-hop evidence corpus is 56/130. Each remains **PARTIAL — NOT ALL IS^** and
+each keeps its own pending queue.
 
 ## Unitary legal and economic rule
 

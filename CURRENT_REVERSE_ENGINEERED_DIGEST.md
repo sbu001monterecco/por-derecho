@@ -188,7 +188,10 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 - The unitary record already uses the correct “read forward; test backward” method.
 - The criminal reverse-engineering page separates attributed theory from judicial finding and exposes contrary proof requirements.
-- The current public identity denominator is 194 and has exact public-marker verification.
+- The last live-verified public identity denominator is 194. The 27-August
+  Magistrate López Villarrubia / Meeting Point specialist candidate admits ten additional immutable
+  records, producing a source/static denominator of 204; public parity for 204
+  remains pending the separate publication cycle.
 - The 26-August AC removal/remuneration package and other specialist routes use redacted source/status controls rather than silently converting pleadings into findings.
 - Current exact-main Pages deployment, control-plane verification and production smoke are green.
 
@@ -211,13 +214,132 @@ The live finite unitary caret digest on current `main` remains:
 
 A previously prepared local 24/24 package was based on the earlier `16dd443...` repository state. It is **not mergeable as-is** because:
 
-- the canonical registry is now 194, not the package's earlier denominator;
+- the source-base registry was 194 and the separately controlled Magistrate López Villarrubia / Meeting
+  Point candidate now advances it to 204; neither state matches the stale
+  package's assumptions;
 - proceeding IDs `PD-SP-R-0011` through `PD-SP-R-0017` are now occupied;
 - Matkator and ONA remain controlled perimeter labels requiring current-source reconciliation;
 - Clubotel La Dorada is not yet admitted as a separate current-registry organisation;
 - PP 1041 and EH 90 are not yet admitted as current-registry proceedings.
 
-Future closure must rebase on current `main`, preserve immutable IDs, complete the full census and allocate only non-conflicting IDs. No repository or public page may state `ALL IS^` until that current-main closure has merged and been exactly read back.
+Future closure must rebase on current `main`, preserve immutable IDs, complete the full census and allocate only non-conflicting IDs. No repository or public page may make an unqualified or repository-wide `ALL IS^` claim for this 24-object unitary census until that current-main closure has merged and been exactly read back.
+
+### Separate specialist scope — Magistrate-Judge Alberto López Villarrubia of the then Commercial Court No. 1 of Las Palmas de Gran Canaria / Meeting Point 357/2024
+
+`PD-ALV-MP357-MULTI-20260827-01` is a separate criminal-first,
+multidirectional evidence module. It does not add to, subtract from or close the
+repository-wide 19/24 census above.
+
+Its exhaustive specialist census is **25/32 confirmed, 7 pending — PARTIAL,
+NOT ALL IS^**. The 32-object denominator covers every identity-eligible named
+person, organisation or controlled entity perimeter, institution and proceeding
+appearing across the paired hubs, machine matrix, human matrix, specialist audit
+and authority plan. Ten non-colliding immutable identities were admitted and the
+existing `PD-SP-O-0038` was reused expressly as the Meeting Point Hotels
+commercial perimeter—not as an exact Club Sei contracting entity. A caret
+continues to prove identity only; unresolved FTI, ONA and Clubotel legal-person
+perimeters, three authority labels and Alzada 286/2026 remain visibly pending.
+
+That six-surface denominator is now supplemented—not replaced—by a completed
+first-hop corpus scan of the eighteen reciprocal primary evidence routes. After
+deduplicating faithful ES/EN pairs without following deeper links, the full
+route-body denominator is **130: 27 people, 64 organisations or expressly
+controlled perimeters, 25 institutions or sub-organs and 14 proceedings**.
+The result is **56 confirmed, 74 pending, 0 suspended — PARTIAL, NOT ALL IS^**
+(43.076923…%). It overlaps 31 core objects and adds 99; every pending object has
+an exact source-completion target. It does not change the core 25/32 result or
+the repository-wide 19/24 result. Object-level confirmation does not authorise
+a caret on an unresolved shorthand or source literal.
+
+The module reads every bridge in two directions:
+
+`source → verified fact → permissible inference → criminal element → consequence`
+
+and
+
+`consequence → causal bridge → missing record → custodian → falsification test`.
+
+Each of nine nodes carries the strongest lawful or innocent explanation beside
+the incriminating inference. The signed 36/2012 acts prove dated authorship or
+adoption of their text and record the stated allegations; three archived
+24-Oct-2024 notice copies document the register attribution displayed in them.
+Public authenticity and custody remain open. Neither lane proves a signed
+24-Oct act, substitution, a statutory
+conflict, concealment, knowing judicial injustice, a personal judicial SEPI duty
+or causal public/creditor loss.
+
+Controls:
+
+- human matrix: `archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md`;
+- machine matrix: `assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json`;
+- exhaustive specialist caret control: `assets/data/caepr-caret-alberto-meeting-point-357-v1.json`;
+- exhaustive first-hop evidence-corpus caret control: `assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json`;
+- separate unitary caret control: `assets/data/caepr-caret-unitary-digest-v1.json`;
+- candidate publication manifest: `publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json`;
+- full caret audit: `archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md`;
+- Spanish dossier: `/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/`;
+- English dossier: `/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/`.
+
+### Separate specialist continuity candidate — FTI Touristik / Meeting Point / RICPE / Canary and Spain asset watch
+
+`PD-FTI-MP-RICPE-CONTINUITY-20260827-01` is an additive, criminal-first,
+non-fragmented continuity module. Its state is `PREPARED_PENDING_MERGE`. It
+does not rewrite the immutable `8e8e83c5...` historical source-base snapshot or
+claim that the candidate has already been merged, deployed or read back live.
+
+The module keeps two new identity-only censuses separate from one another and
+from the 25/32, 56/130 and repository-wide 19/24 scopes above:
+
+- continuity spine: **39/65 confirmed, 26 pending, 0 suspended — PARTIAL, NOT ALL IS^**;
+- role-selected Germany/Spain/EU professional and institutional census:
+  **40/101 confirmed, 61 pending, 0 suspended — PARTIAL, NOT ALL IS^**.
+
+Neither caret proves role, act, authority, knowledge, intent, relationship,
+conflict, concealment, causation, funding use, benefit, loss, liability or
+outcome. The 101-object census is frozen to thirteen professional/institutional
+surfaces and does not silently absorb hotel-by-hotel or newly discovered buyer,
+operator, manager, financier or transaction-counterparty objects.
+
+The controlled future-action state is **31 actions, 12 package definitions and
+18 exactly mapped proceeding/file objects**. Every external action remains
+closed. Repository and website publication authority does not authorise email,
+resend, forwarding, RedSARA/AGE or other notice, portal submission, court
+filing, authority contact or any other external communication.
+
+The bounded former-asset monitor records **3 heritage scopes, 11 known entity
+objects, 12 automated-safe public sources, 2 baseline events and 8 open gaps**.
+It watches only identified public-source lanes in the Canary Islands and Spain.
+It is not comprehensive and cannot, without source-specific verification,
+establish a buyer, seller, owner, operator, manager, financier, adviser,
+transfer, current status or wrongdoing. A detected change enters human review;
+it is not automatically promoted to the evidence register, CAEPR or website.
+
+Two production boundaries control the criminal-first analysis:
+
+1. Historical own-court references use **el Ilmo. Sr. D. Alberto López
+   Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de
+   Las Palmas de Gran Canaria**. Current references use **el magistrado D.
+   Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo
+   Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria**. The
+   three 24-Oct-2024 former-Court-No.-3 notices prove only the Public Insolvency
+   Register attribution displayed in them; the signed act, substitution or
+   allocation, capacity, knowledge, conflict and disclosure remain open.
+2. The outward RICPE resolution names no individual resolver. The Ithikios /
+   DIGITAL PRODUCTS DEVELOPMENT SL certificate or platform signature
+   authenticates the provider perimeter only; it does not identify the human or
+   RICPE organ that decided, configured, accessed or routed the case, prove
+   Board circulation, or resolve conflict.
+
+Controls:
+
+- unitary digest: `archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md`;
+- action register: `ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json`;
+- deletion audit: `docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md`;
+- publication manifest: `publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json`;
+- continuity caret: `assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json`;
+- professional/institutional caret: `assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json`;
+- asset-monitor control: `ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json`;
+- asset-monitor register: `assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json`.
 
 ## 7. Priority implementation sequence
 
@@ -229,7 +351,9 @@ Future closure must rebase on current `main`, preserve immutable IDs, complete t
 4. Build the claimant/finca/income/remedy/no-double-recovery ledger.
 5. Obtain the certified RPL 2523/2025 and complete Concurso 36/2012 denominators.
 6. Obtain the CEXP succession and 7-June authority records.
-7. Reconcile the 24-object CAEPR caret scope against the current 194-ID registry.
+7. Reconcile the separate 24-object CAEPR caret scope against the current
+   204-ID source/static registry; do not treat the Magistrate López Villarrubia / Meeting Point
+   specialist 25/32 partial census as changing the five unitary pending objects.
 8. Reconcile/close stale PRs by verified delta, not wholesale merge.
 
 ### P1

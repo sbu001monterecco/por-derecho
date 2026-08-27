@@ -1,0 +1,1931 @@
+{
+  "schema": "por-derecho.caepr-caret-first-hop-finite-scope.v1",
+  "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
+  "control_date": "2026-08-27",
+  "status": "PARTIAL_NOT_ALL_IS",
+  "scope": "Visible rendered body text of the eighteen reciprocal primary routes assigned to AM357-N01 through AM357-N09, deduplicating faithful Spanish and English equivalents and stopping at the first hop.",
+  "scope_rule": "Do not follow deeper links. Count every distinct named identity-eligible person, organisation or controlled perimeter, institution or separately named sub-organ, and formal proceeding appearing in the eighteen route bodies. A shorthand remains pending when it cannot safely inherit an admitted identity. A perimeter caret confirms only that perimeter, never an exact legal person, contracting role, act or liability.",
+  "route_scope": [
+    {"node_id":"AM357-N01","es":"/es/concurso-36-2012-magistrado-juez/","en":"/en/insolvency-36-2012-mercantile-court-1/"},
+    {"node_id":"AM357-N02","es":"/es/concurso-36-2012-masa-activa-2018-2021/","en":"/en/insolvency-36-2012-active-estate-2018-2021/"},
+    {"node_id":"AM357-N03","es":"/es/toma-control-sun-park-7-junio-2018/","en":"/en/sun-park-takeover-7-june-2018/"},
+    {"node_id":"AM357-N04","es":"/es/adjudicacion-2022-reconstruccion-documental/","en":"/en/2022-adjudication-documentary-reconstruction/"},
+    {"node_id":"AM357-N05","es":"/es/lava-verde-club-sei-meeting-point/","en":"/en/lava-verde-club-sei-meeting-point/"},
+    {"node_id":"AM357-N06","es":"/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/","en":"/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/"},
+    {"node_id":"AM357-N07","es":"/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/","en":"/en/legal-notebook/meeting-point-357-2024-judicial-traceability/"},
+    {"node_id":"AM357-N08","es":"/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/","en":"/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/"},
+    {"node_id":"AM357-N09","es":"/es/reconstruccion-unitaria-autoridades-publicas/","en":"/en/public-authority-unitary-case-reconstruction/"}
+  ],
+  "inclusion_rules": [
+    "Use rendered body text only; head metadata, navigation, footers and href-only targets do not create eligible objects.",
+    "Deduplicate a faithful Spanish and English rendering of the same object into one census record.",
+    "Retain InteriHOTEL Canarias as a named publisher/event perimeter, CGPJ Permanent Commission and CGPJ Inspection as separately named sub-organs, and Policía Judicial as a named institutional function; these four conservative inclusions fix the denominator at 130.",
+    "Treat a separately named legal person, commercial or professional perimeter, institution sub-organ, and proceeding as its own object unless an exact admitted alias establishes identity.",
+    "Count a current CAEPR structure or perimeter record as confirmed only when the displayed object is expressly the same structure or perimeter; no exact-legal-person inference follows."
+  ],
+  "exclusion_rules": [
+    "Exclude deeper linked-route bodies and objects appearing only in a URL, slug or link target.",
+    "Exclude source quotations and names appearing only inside quoted source text.",
+    "Exclude filenames, document and order titles, evidence exhibits, statutes and provisions, dates, amounts and citation identifiers.",
+    "Exclude asset, project, platform, publication-control and event labels unless the route body separately presents the label as an organisation or controlled perimeter.",
+    "Exclude generic roles such as judge, insolvency administrator, creditor, bidder, witness, police officer or prosecutor unless a distinct institution, sub-organ, person or proceeding is named."
+  ],
+  "core_32_overlap": {
+    "core_control_id": "PD-ALV-MP357-CARET-20260827-01",
+    "core_denominator": 32,
+    "visible_in_first_hop": 31,
+    "confirmed": 25,
+    "pending": 6,
+    "absent_from_first_hop": ["Tribunal de Cuentas"],
+    "additions_beyond_core": 99,
+    "rule": "The six-surface 25/32 audit remains a separate scope and must not be relabelled exhaustive for the eighteen-route first-hop network."
+  },
+  "unitary_scope_reference": {
+    "confirmed": 19,
+    "pending": 5,
+    "suspended": 0,
+    "denominator": 24,
+    "changed_by_this_control": false,
+    "rule": "The repository-wide 19/24 unitary census is separate and is neither replaced nor closed by this first-hop control."
+  },
+  "counts": {
+    "eligible": 130,
+    "confirmed": 56,
+    "pending": 74,
+    "suspended": 0,
+    "coverage_percent": 43.07692307692308,
+    "by_type": {
+      "PERSON": {"eligible":27,"confirmed":12,"pending":15,"suspended":0},
+      "ORGANISATION_OR_PERIMETER": {"eligible":64,"confirmed":28,"pending":36,"suspended":0},
+      "INSTITUTION_OR_SUBORGAN": {"eligible":25,"confirmed":11,"pending":14,"suspended":0},
+      "PROCEEDING": {"eligible":14,"confirmed":5,"pending":9,"suspended":0}
+    }
+  },
+  "verdict": "FULL FIRST-HOP CENSUS COMPLETE; 56/130 CARET_CONFIRMED; 74 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^",
+  "invariants": [
+    "A caret confirms identity reconciliation only.",
+    "A caret does not prove conduct, date-specific capacity, signature, allocation, substitution, knowledge, intent, relationship, conflict, concealment, causation, harm, benefit, liability, source authenticity or outcome.",
+    "A confirmed perimeter never transfers its caret to an exact legal person or proves that the perimeter contracted, controlled, paid, received, knew or benefited.",
+    "A pending object receives no caret.",
+    "Every route occurrence must independently match the admitted canonical name or alias; object-level confirmation does not cure an unresolved shorthand occurrence.",
+    "No ALL IS^ claim is permitted while any of the 130 objects remains pending or suspended."
+  ],
+  "collision_guards": [
+    "ACTÚA valuation perimeter is not Actyus PD-SP-O-0060.",
+    "Owners’ Community PD-SP-O-0005 is not CEXP PD-SP-O-0006, and bare Community resolves to neither without context.",
+    "ONA is not Clubotel La Dorada, S.L.",
+    "Meeting Point Hotels commercial perimeter is not any of the three Spanish 357/2024 debtors and is not either German Meeting Point company.",
+    "BLUESEA commercial perimeter is not Gestora Blue Sea Partner, S.A.",
+    "Auren generic professional perimeter PD-SP-O-0046 is not AUREN REESTRUCTURACIONES SLP PD-SP-O-0070.",
+    "Audiencia Provincial Section 4 PD-SP-I-0014 is not the unverified appellate organ for Auto 804/2018.",
+    "CGPJ parent identity does not transfer conduct to its Permanent Commission or Inspection.",
+    "General Fiscalía PD-SP-I-0002 does not identify the Fiscalía Provincial de Las Palmas or a particular receiving unit.",
+    "Carlos Sanz is not Carlos Llamas Sanz PD-SP-P-0062, and bare Carlos does not identify Carlos Saavedra PD-SP-P-0036."
+  ],
+  "occurrence_guards": [
+    {"display":"Carlos","object_key":"CARLOS_PWC","required_state":"CARET_PENDING","rendering_policy":"NO_INLINE_CARET_UNTIL_OCCURRENCE_RECONCILED","rule":"No caret until the full PwC-linked personal identity is established from a signature or official record."},
+    {"display":"José D.","object_key":"JOSE_DANIEL_ACOSTA_MATOS","required_state":"CARET_CONFIRMED","rendering_policy":"NO_INLINE_CARET_UNTIL_OCCURRENCE_RECONCILED","rule":"Expand to José Daniel Acosta Matos or admit the exact shorthand alias before applying PD-SP-P-0011."},
+    {"display":"Irigoyen","object_key":"DANIEL_IRIGOYEN","required_state":"CARET_CONFIRMED","rendering_policy":"NO_INLINE_CARET_UNTIL_OCCURRENCE_RECONCILED","rule":"Use PD-SP-P-0063 only where the occurrence is linked to the full Daniel Irigoyen identity by the route context or an admitted alias."},
+    {"display":"Laura Acosta Matos","object_key":"LAURA_PATRICIA_ACOSTA_MATOS","required_state":"CARET_CONFIRMED","rendering_policy":"NO_INLINE_CARET_UNTIL_OCCURRENCE_RECONCILED","rule":"Use PD-SP-P-0012 only after the route occurrence is reconciled to Laura Patricia Acosta Matos; family or company context alone is insufficient."},
+    {"display":"Community / Comunidad","object_key":"BARE_COMMUNITY","required_state":"CARET_PENDING","rendering_policy":"NO_INLINE_CARET_UNTIL_OCCURRENCE_RECONCILED","rule":"No caret until the occurrence specifies Owners’ Community or CEXP."}
+  ],
+  "rendered_occurrence_control": {
+  "schema": "por-derecho.rendered-route-occurrence-provenance.v1",
+  "mapping_granularity": "DEDUPLICATED_OBJECT_WITH_FROZEN_ROUTE_SURFACES_AND_ONE_EXACT_BODY_ANCHOR",
+  "rendered_scope": "The normalized visible text inside each <main> element only. Head metadata, header navigation, footers, scripts, styles, templates, noscript, hidden and aria-hidden content are excluded.",
+  "human_audit_assertion": "Every identity-eligible rendered occurrence in the frozen eighteen-surface first-hop corpus is assigned to exactly one of the 130 deduplicated object keys and therefore inherits that record's CARET_CONFIRMED or CARET_PENDING state. Repetitions and faithful ES/EN translations are not new objects.",
+  "machine_attestation_limit": "The validator proves the exact eighteen normalized <main> snapshots and one exact rendered body anchor for every deduplicated object. It does not pretend that automated string matching can replace the human semantic decision about entity eligibility, aliases, quotations or perimeter boundaries.",
+  "inline_rendering_policy": "NO_INLINE_CARETS_ON_FIRST_HOP_SOURCE_ROUTES. This census records identity state; it does not add a caret to a shorthand, source literal or any route occurrence.",
+  "route_snapshots": [
+    {
+      "node_id": "AM357-N01",
+      "language": "es",
+      "route": "/es/concurso-36-2012-magistrado-juez/",
+      "normalized_main_sha256": "1cdce03df5b05409c39f6a7967aaefe9637b9468e2ae4e218cf84e7869f22ce3",
+      "normalized_characters": 8147
+    },
+    {
+      "node_id": "AM357-N01",
+      "language": "en",
+      "route": "/en/insolvency-36-2012-mercantile-court-1/",
+      "normalized_main_sha256": "ce7f6e563a305836af940efd9f4fed107e011a303e3e0aa23a85b66471688f22",
+      "normalized_characters": 8010
+    },
+    {
+      "node_id": "AM357-N02",
+      "language": "es",
+      "route": "/es/concurso-36-2012-masa-activa-2018-2021/",
+      "normalized_main_sha256": "fa09bc0bfd59960dcde937bfa8c01e2db6c106b1c133aba4911a3a6095594852",
+      "normalized_characters": 8431
+    },
+    {
+      "node_id": "AM357-N02",
+      "language": "en",
+      "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
+      "normalized_main_sha256": "03391b50eaa682d305e792151ee3c46fb78c44e825bca02356547b528592b997",
+      "normalized_characters": 8007
+    },
+    {
+      "node_id": "AM357-N03",
+      "language": "es",
+      "route": "/es/toma-control-sun-park-7-junio-2018/",
+      "normalized_main_sha256": "0487ab62e74a3f56a929d3204129714258a80665090730f841dd79e91ea9eb46",
+      "normalized_characters": 27928
+    },
+    {
+      "node_id": "AM357-N03",
+      "language": "en",
+      "route": "/en/sun-park-takeover-7-june-2018/",
+      "normalized_main_sha256": "9a25a35a842613f4a715548f919de1403bac2301b647455f9fd000cab5936c6f",
+      "normalized_characters": 26684
+    },
+    {
+      "node_id": "AM357-N04",
+      "language": "es",
+      "route": "/es/adjudicacion-2022-reconstruccion-documental/",
+      "normalized_main_sha256": "7900652b866c1bf33db6e44e5029cc05055889eb1286049f27d046983cc62f4f",
+      "normalized_characters": 16909
+    },
+    {
+      "node_id": "AM357-N04",
+      "language": "en",
+      "route": "/en/2022-adjudication-documentary-reconstruction/",
+      "normalized_main_sha256": "38c6c8584bfe9b5379f42f8f038d720fc3ad8396217d257f0137fe7bac09f6e1",
+      "normalized_characters": 15976
+    },
+    {
+      "node_id": "AM357-N05",
+      "language": "es",
+      "route": "/es/lava-verde-club-sei-meeting-point/",
+      "normalized_main_sha256": "d3df76850cae793a642728d2e7fcd49202b8fc543a9adc2aac7b760775e85997",
+      "normalized_characters": 21073
+    },
+    {
+      "node_id": "AM357-N05",
+      "language": "en",
+      "route": "/en/lava-verde-club-sei-meeting-point/",
+      "normalized_main_sha256": "f47b6efae3fb78284e53272f7217ad92faad3e6fed5156540bf96e87653ba0c3",
+      "normalized_characters": 20361
+    },
+    {
+      "node_id": "AM357-N06",
+      "language": "es",
+      "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+      "normalized_main_sha256": "0a609bf1c63e9ebfdd9cd39fa5a2706c611fb88aa19d9d483aecb1af8999703d",
+      "normalized_characters": 18529
+    },
+    {
+      "node_id": "AM357-N06",
+      "language": "en",
+      "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+      "normalized_main_sha256": "eead856c712b4463ffffc2676524c1260eda12de446c5ba1ca92139d3514f5b6",
+      "normalized_characters": 17589
+    },
+    {
+      "node_id": "AM357-N07",
+      "language": "es",
+      "route": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+      "normalized_main_sha256": "3eb89ef85343097f43ce3629b1561050c23194c3d40028ad8c7cee6f4c360fbb",
+      "normalized_characters": 9569
+    },
+    {
+      "node_id": "AM357-N07",
+      "language": "en",
+      "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+      "normalized_main_sha256": "ef84288e088621fd1bbcc0e7524621656c403bbe515015d7d5560404edc31965",
+      "normalized_characters": 9131
+    },
+    {
+      "node_id": "AM357-N08",
+      "language": "es",
+      "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+      "normalized_main_sha256": "cd23876ae49817fa3e645a61301f2d6ad1290d7d744479d375cf06cfb61291cd",
+      "normalized_characters": 8916
+    },
+    {
+      "node_id": "AM357-N08",
+      "language": "en",
+      "route": "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/",
+      "normalized_main_sha256": "621797a1537481af2b0e73f0191780d386e44004ca2a37098418cd3aeef835c5",
+      "normalized_characters": 8383
+    },
+    {
+      "node_id": "AM357-N09",
+      "language": "es",
+      "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+      "normalized_main_sha256": "b957d28b494bd10b8d1823358303c8609d7b8cdb1e6577db70c99ee042fba6f4",
+      "normalized_characters": 15086
+    },
+    {
+      "node_id": "AM357-N09",
+      "language": "en",
+      "route": "/en/public-authority-unitary-case-reconstruction/",
+      "normalized_main_sha256": "72490dc1c48ad2565cb46cc6eb0eba959a9ec20c99a2c82ca1d06e84255bd183",
+      "normalized_characters": 14622
+    }
+  ],
+  "record_provenance": [
+    {
+      "ordinal": 1,
+      "object_key": "AGUEDA_REYES_ALMEIDA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "es",
+        "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+        "normalized_literal": "Águeda Reyes Almeida",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 2,
+      "object_key": "ANTONIO_COGOLLUDO_ROJAS",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Antonio Cogolludo Rojas",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 3,
+      "object_key": "ATILANO_JESUS_SASTRE_HERNANDEZ",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Atilano Jesús Sastre Hernández",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 4,
+      "object_key": "AXEL_W_BIERBACH",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Axel W. Bierbach",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 5,
+      "object_key": "FRANCISCO_DE_BORJA_RODRIGUEZ_BATLLORI_LAFFITTE",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Francisco de Borja Rodríguez-Batllori Laffitte",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 6,
+      "object_key": "CARLOS_PWC",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "es",
+        "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+        "normalized_literal": "PwC/Carlos",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 7,
+      "object_key": "CARLOS_SANZ",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Carlos Sanz",
+        "normalized_occurrence_count": 6
+      }
+    },
+    {
+      "ordinal": 8,
+      "object_key": "DANIEL_IRIGOYEN",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Daniel Irigoyen",
+        "normalized_occurrence_count": 7
+      }
+    },
+    {
+      "ordinal": 9,
+      "object_key": "FRANCISCO_MARIO_MATOS_MATAS",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Francisco Mario Matos Matas",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 10,
+      "object_key": "GEORG_ABEGG",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Georg Abegg",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 11,
+      "object_key": "GIL_MARER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Gil Marer",
+        "normalized_occurrence_count": 7
+      }
+    },
+    {
+      "ordinal": 12,
+      "object_key": "GUILLERMO_FERNANDEZ_GARCIA",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Guillermo Fernández García",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 13,
+      "object_key": "JAVIER_ROMERA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Javier Romera",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 14,
+      "object_key": "JOSE_DANIEL_ACOSTA_MATOS",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "José Daniel Acosta Matos",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 15,
+      "object_key": "JUAN_TOMAS_PARRILLA_SUAREZ",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Juan Tomás Parrilla",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 16,
+      "object_key": "ALBERTO_LOPEZ_VILLARRUBIA",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "es",
+        "route": "/es/concurso-36-2012-magistrado-juez/",
+        "normalized_literal": "Alberto López Villarrubia",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 17,
+      "object_key": "JULIE_CLIFFE_JONES",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Julie Cliffe-Jones",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 18,
+      "object_key": "KARL_MARKGRAF",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Karl Markgraf",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 19,
+      "object_key": "LARS_CREUTZMANN",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Lars Creutzmann",
+        "normalized_occurrence_count": 6
+      }
+    },
+    {
+      "ordinal": 20,
+      "object_key": "LAURA_PATRICIA_ACOSTA_MATOS",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Laura Patricia Acosta Matos",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 21,
+      "object_key": "MIKE_CLIFFE_JONES",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Mike and Julie Cliffe-Jones",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 22,
+      "object_key": "NACHO_BARRAU",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Nacho Barrau",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 23,
+      "object_key": "OLIVER_SCHARTL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Oliver Schartl",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 24,
+      "object_key": "PATRICIA_AYALA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Patricia Ayala",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 25,
+      "object_key": "PATRICIA_DOMINGUEZ",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Patricia Domínguez",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 26,
+      "object_key": "SABINE_DORN",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Sabine Dorn",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 27,
+      "object_key": "SHAILA_MARIA_COGOLLUDO_RAMOS",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Shaila María Cogolludo Ramos",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 28,
+      "object_key": "AB_IN_DEN_URLAUB",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Ab-in-den-Urlaub",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 29,
+      "object_key": "ACOSTA_MATOS_PROJECT_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Acosta Matos project",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 30,
+      "object_key": "ACTUA_VALUATION_PERIMETER",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N02",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
+        "normalized_literal": "Actúa's figures",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 31,
+      "object_key": "AUREN_REESTRUCTURACIONES",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "AUREN REESTRUCTURACIONES SLP",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 32,
+      "object_key": "AUREN_GENERIC_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "en",
+        "route": "/en/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Auren’s acceptance and mandate",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 33,
+      "object_key": "AWESWELL",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "en",
+        "route": "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/",
+        "normalized_literal": "Aweswell perimeter",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 34,
+      "object_key": "BANKIA",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N02",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
+        "normalized_literal": "Bankia",
+        "normalized_occurrence_count": 5
+      }
+    },
+    {
+      "ordinal": 35,
+      "object_key": "BARE_COMMUNITY",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "Community/exploitation",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 36,
+      "object_key": "BLUESEA_COMMERCIAL_PERIMETER",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "BLUESEA control acquisition",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 37,
+      "object_key": "CAM_SA",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "en",
+        "route": "/en/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Construcciones Acosta Matos S.A.",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 38,
+      "object_key": "CAMEL_TRAVEL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Camel Travel",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 39,
+      "object_key": "CEXP",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "CEXP",
+        "normalized_occurrence_count": 20
+      }
+    },
+    {
+      "ordinal": 40,
+      "object_key": "CLUB_SEI",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N02",
+        "language": "es",
+        "route": "/es/concurso-36-2012-masa-activa-2018-2021/",
+        "normalized_literal": "Club Sei",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 41,
+      "object_key": "CLUBOTEL_LA_DORADA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Clubotel",
+        "normalized_occurrence_count": 12
+      }
+    },
+    {
+      "ordinal": 42,
+      "object_key": "CUATRECASAS",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Cuatrecasas",
+        "normalized_occurrence_count": 6
+      }
+    },
+    {
+      "ordinal": 43,
+      "object_key": "EL_CORTE_INGLES_EMPRESAS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "El Corte Inglés Empresas",
+        "normalized_occurrence_count": 5
+      }
+    },
+    {
+      "ordinal": 44,
+      "object_key": "ELAIA_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Elaia",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 45,
+      "object_key": "ELECONOMISTA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "elEconomista",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 46,
+      "object_key": "ESSENTHIA_CANARY_ISLANDS_CONTRACT_FFE",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Essenthia",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 47,
+      "object_key": "FASEE",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "FASEE",
+        "normalized_occurrence_count": 5
+      }
+    },
+    {
+      "ordinal": 48,
+      "object_key": "FEDER_ERDF_FUND_PERIMETER",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "es",
+        "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+        "normalized_literal": "FEDER",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 49,
+      "object_key": "FINKENHOF_RECHTSANWALTE",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "FINKENHOF Rechtsanwälte",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 50,
+      "object_key": "FTI_BROAD_GROUP_COMPLIANCE_PERIMETER",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "en",
+        "route": "/en/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "FTI group",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 51,
+      "object_key": "FTI_CONSULTING",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N07",
+        "language": "es",
+        "route": "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+        "normalized_literal": "FTI Consulting",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 52,
+      "object_key": "FTI_TOURISTIK_GMBH",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "FTI Touristik GmbH",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 53,
+      "object_key": "GESTORA_BLUE_SEA_PARTNER",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Gestora Blue Sea Partner, S.A.",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 54,
+      "object_key": "GESVALT",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Gesvalt",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 55,
+      "object_key": "HOTEL_NEW_TREND",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "HNT",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 56,
+      "object_key": "INMOTURISMO",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Inmoturismo",
+        "normalized_occurrence_count": 6
+      }
+    },
+    {
+      "ordinal": 57,
+      "object_key": "INPARSA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Inparsa",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 58,
+      "object_key": "INTERIHOTEL_CANARIAS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "InteriHOTEL Canarias",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 59,
+      "object_key": "LABRANDA_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Labranda",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 60,
+      "object_key": "LAGUNE_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Lagune",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 61,
+      "object_key": "LANZAROTE_INFORMATION",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Lanzarote Information",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 62,
+      "object_key": "LOVEHOLIDAYS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Loveholidays",
+        "normalized_occurrence_count": 6
+      }
+    },
+    {
+      "ordinal": 63,
+      "object_key": "LPB",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "en",
+        "route": "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/",
+        "normalized_literal": "LPB",
+        "normalized_occurrence_count": 5
+      }
+    },
+    {
+      "ordinal": 64,
+      "object_key": "MATKATOR",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "es",
+        "route": "/es/concurso-36-2012-magistrado-juez/",
+        "normalized_literal": "Matkator",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 65,
+      "object_key": "MHBK",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "MHBK",
+        "normalized_occurrence_count": 6
+      }
+    },
+    {
+      "ordinal": 66,
+      "object_key": "MOLINA_DISSIDENT_PERIMETER",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Molina",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 67,
+      "object_key": "MONTELANZA",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Montelanza",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 68,
+      "object_key": "MP_HOTELMANAGEMENT_CANARIES",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Meeting Point Hotelmanagement",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 69,
+      "object_key": "MP_HOTELMANAGEMENT_HOLDING_GMBH",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Meeting Point Hotelmanagement Holding GmbH",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 70,
+      "object_key": "MEETING_POINT_COMMERCIAL_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Meeting Point Hotels",
+        "normalized_occurrence_count": 9
+      }
+    },
+    {
+      "ordinal": 71,
+      "object_key": "MEETING_POINT_INTERNATIONAL_GMBH",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Meeting Point International GmbH",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 72,
+      "object_key": "MP_INVESTMENT",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Meeting Point Investment, S.L.U.",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 73,
+      "object_key": "MP_SPAIN",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Meeting Point Spain, S.L.U.",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 74,
+      "object_key": "MYND_YAIZA_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "MYND Yaiza",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 75,
+      "object_key": "ONA_FUNDED_EXIT_ACTOR",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "en",
+        "route": "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/",
+        "normalized_literal": "Clubotel La Dorada, S.L./ONA",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 76,
+      "object_key": "ONE_TWO_FLY",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "1-2-FLY",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 77,
+      "object_key": "OWNERS_COMMUNITY",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Owners’ Community",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 78,
+      "object_key": "PINK_CANARY_SERVICES",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Monterecco/Pink",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 79,
+      "object_key": "PLEDGE_INVESTMENTS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N08",
+        "language": "es",
+        "route": "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/",
+        "normalized_literal": "Pledge Investments",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 80,
+      "object_key": "PORTOBELLO_CAPITAL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Portobello Capital, S.L.",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 81,
+      "object_key": "PWC_CANARIAS_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "PwC source family",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 82,
+      "object_key": "RICPE",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "RICPE",
+        "normalized_occurrence_count": 8
+      }
+    },
+    {
+      "ordinal": 83,
+      "object_key": "RODL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Rödl",
+        "normalized_occurrence_count": 7
+      }
+    },
+    {
+      "ordinal": 84,
+      "object_key": "SONNENKLAR_TV",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "sonnenklar.TV",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 85,
+      "object_key": "STONEWEG_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Stoneweg",
+        "normalized_occurrence_count": 4
+      }
+    },
+    {
+      "ordinal": 86,
+      "object_key": "SUNCANARIAS_GESTION_MARKETING",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Suncanarias Gestión y Marketing, S.L.",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 87,
+      "object_key": "TOURINEWS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Tourinews",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 88,
+      "object_key": "TOURISTIK_AKTUELL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Touristik Aktuell",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 89,
+      "object_key": "TRAVEL_WEEKLY",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Travel Weekly",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 90,
+      "object_key": "VARIA_PERIMETER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N02",
+        "language": "es",
+        "route": "/es/concurso-36-2012-masa-activa-2018-2021/",
+        "normalized_literal": "Varia",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 91,
+      "object_key": "YOUTRAVEL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Youtravel",
+        "normalized_occurrence_count": 5
+      }
+    },
+    {
+      "ordinal": 92,
+      "object_key": "AEAT",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "AEAT",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 93,
+      "object_key": "AHK_SPAIN",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N07",
+        "language": "en",
+        "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+        "normalized_literal": "German-Spanish Chamber",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 94,
+      "object_key": "AMTSGERICHT_MUNCHEN",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "es",
+        "route": "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+        "normalized_literal": "Amtsgericht München",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 95,
+      "object_key": "AP_LAS_PALMAS_SECTION_4",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N04",
+        "language": "es",
+        "route": "/es/adjudicacion-2022-reconstruccion-documental/",
+        "normalized_literal": "Audiencia Provincial",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 96,
+      "object_key": "AUTO_804_APPELLATE_ORGAN",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "en",
+        "route": "/en/sun-park-takeover-7-june-2018/",
+        "normalized_literal": "Order 804/2018",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 97,
+      "object_key": "AYUNTAMIENTO_YAIZA",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "es",
+        "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+        "normalized_literal": "Ayuntamiento de Yaiza",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 98,
+      "object_key": "CABILDO_LANZAROTE",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "es",
+        "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+        "normalized_literal": "Cabildo de Lanzarote",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 99,
+      "object_key": "CGPJ",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "CGPJ",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 100,
+      "object_key": "CGPJ_INSPECTION",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "Permanent Commission/Inspection",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 101,
+      "object_key": "CGPJ_PERMANENT_COMMISSION",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "Permanent Commission/Inspection",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 102,
+      "object_key": "CNMC",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "CNMC",
+        "normalized_occurrence_count": 11
+      }
+    },
+    {
+      "ordinal": 103,
+      "object_key": "CNMV",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "CNMV",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 104,
+      "object_key": "COURT_POSITION_1",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "then Commercial Court No. 1 of Las Palmas de Gran Canaria",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 105,
+      "object_key": "COURT_POSITION_3",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N07",
+        "language": "en",
+        "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+        "normalized_literal": "then Commercial Court No. 3",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 106,
+      "object_key": "DECANATO_LAS_PALMAS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "es",
+        "route": "/es/concurso-36-2012-magistrado-juez/",
+        "normalized_literal": "Decanato",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 107,
+      "object_key": "PUBLIC_PROSECUTION_SERVICE",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "es",
+        "route": "/es/concurso-36-2012-magistrado-juez/",
+        "normalized_literal": "Fiscalía/TSJ",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 108,
+      "object_key": "FISCALIA_PROVINCIAL_LAS_PALMAS",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N05",
+        "language": "es",
+        "route": "/es/lava-verde-club-sei-meeting-point/",
+        "normalized_literal": "Fiscalía Provincial de Las Palmas",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 109,
+      "object_key": "GUARDIA_CIVIL",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "Guardia Civil",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 110,
+      "object_key": "MUNICH_POLICE_K71",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "Munich Police K71",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 111,
+      "object_key": "MUNICH_PROSECUTOR_OFFICE",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "Munich prosecutor",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 112,
+      "object_key": "POLICIA_JUDICIAL",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "Judicial Police",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 113,
+      "object_key": "PUBLIC_INSOLVENCY_REGISTER",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N07",
+        "language": "en",
+        "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+        "normalized_literal": "Public Insolvency Register",
+        "normalized_occurrence_count": 3
+      }
+    },
+    {
+      "ordinal": 114,
+      "object_key": "SEPI",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "SEPI",
+        "normalized_occurrence_count": 12
+      }
+    },
+    {
+      "ordinal": 115,
+      "object_key": "SNCA",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "en",
+        "route": "/en/public-authority-unitary-case-reconstruction/",
+        "normalized_literal": "SNCA",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 116,
+      "object_key": "COMPETENT_TSJ_ROUTE",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "TSJ",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 117,
+      "object_key": "CGPJ_ALZADA_286_2026",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "appeal 286/2026",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 118,
+      "object_key": "CNMC_C_1549_25",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "C/1549/25",
+        "normalized_occurrence_count": 5
+      }
+    },
+    {
+      "ordinal": 119,
+      "object_key": "CONCURSO_36_2012",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "es",
+        "route": "/es/concurso-36-2012-magistrado-juez/",
+        "normalized_literal": "Concurso 36/2012",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 120,
+      "object_key": "DI_169_2026",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "DI 169/2026",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 121,
+      "object_key": "DP_1132_2018",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N03",
+        "language": "es",
+        "route": "/es/toma-control-sun-park-7-junio-2018/",
+        "normalized_literal": "DP 1132/2018",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 122,
+      "object_key": "DP_1901_2026",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N09",
+        "language": "es",
+        "route": "/es/reconstruccion-unitaria-autoridades-publicas/",
+        "normalized_literal": "DP 1901/2026",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 123,
+      "object_key": "DP_1956_2026",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N01",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-mercantile-court-1/",
+        "normalized_literal": "DP 1956/2026",
+        "normalized_occurrence_count": 2
+      }
+    },
+    {
+      "ordinal": 124,
+      "object_key": "FTI_TOURISTIK_INSOLVENCY_1500_IN_1758_24",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "1500 IN 1758/24",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 125,
+      "object_key": "INPARSA_354_2024",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N07",
+        "language": "en",
+        "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+        "normalized_literal": "354/2024",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 126,
+      "object_key": "JV_1260_2011_AP_89_2014",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N02",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
+        "normalized_literal": "JV 1260/2011",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 127,
+      "object_key": "MEETING_POINT_357_2024",
+      "state": "CARET_CONFIRMED",
+      "proof_occurrence": {
+        "node_id": "AM357-N07",
+        "language": "en",
+        "route": "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+        "normalized_literal": "357/2024",
+        "normalized_occurrence_count": 9
+      }
+    },
+    {
+      "ordinal": 128,
+      "object_key": "MP_HOTELMANAGEMENT_HOLDING_INSOLVENCY_1500_IN_10107_24",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "1500 IN 10107/24",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 129,
+      "object_key": "MP_INTERNATIONAL_INSOLVENCY_1500_IN_10126_24",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N06",
+        "language": "en",
+        "route": "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+        "normalized_literal": "1500 IN 10126/24",
+        "normalized_occurrence_count": 1
+      }
+    },
+    {
+      "ordinal": 130,
+      "object_key": "PO_213_2015",
+      "state": "CARET_PENDING",
+      "proof_occurrence": {
+        "node_id": "AM357-N02",
+        "language": "en",
+        "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
+        "normalized_literal": "PO 213/2015",
+        "normalized_occurrence_count": 1
+      }
+    }
+  ],
+  "explicit_occurrence_exclusions": [
+    "Names appearing only in a source quotation are excluded by the census rule and are not silently assigned a caret.",
+    "Names appearing only in head metadata, header navigation, footer text or href targets are outside the rendered <main> scope.",
+    "Generic roles, document titles, exhibits, statutes, dates, amounts and citation identifiers remain excluded unless separately enumerated as an eligible named object.",
+    "A repeated occurrence or faithful translation is mapped to the same object key; it is not a second census object."
+  ]
+},
+  "records": [
+    {"ordinal":1,"object_key":"AGUEDA_REYES_ALMEIDA","label":"Águeda Reyes Almeida","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"The signed diligence or another native official record stating Águeda Reyes Almeida’s full name and date-specific capacity."},
+    {"ordinal":2,"object_key":"ANTONIO_COGOLLUDO_ROJAS","label":"Antonio Cogolludo Rojas","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0007","boundary":"Identity only; role, authority, knowledge and acts remain source- and date-specific."},
+    {"ordinal":3,"object_key":"ATILANO_JESUS_SASTRE_HERNANDEZ","label":"Atilano Jesús Sastre Hernández","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official directory entry or signed native act stating the full name, office and date-specific capacity of Atilano Jesús Sastre Hernández."},
+    {"ordinal":4,"object_key":"AXEL_W_BIERBACH","label":"Axel W. Bierbach","type":"PERSON","state":"CARET_PENDING","boundary":"Named professional; no current immutable CAEPR person record is admitted.","next_source_needed":"An official professional-register, firm-profile or signed appointment record stating Axel W. Bierbach’s full legal name and capacity."},
+    {"ordinal":5,"object_key":"FRANCISCO_DE_BORJA_RODRIGUEZ_BATLLORI_LAFFITTE","label":"Francisco de Borja Rodríguez-Batllori Laffitte","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0010","boundary":"Identity only; insolvency-administrator acts remain separate from judicial and party acts."},
+    {"ordinal":6,"object_key":"CARLOS_PWC","label":"Carlos — PwC-linked person","type":"PERSON","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-P-0036","boundary":"A first name and PwC context do not establish Carlos Saavedra Rodríguez del Palacio or any other Carlos.","next_source_needed":"The underlying PwC email, report or engagement signature block stating the person’s complete name, professional entity and capacity."},
+    {"ordinal":7,"object_key":"CARLOS_SANZ","label":"Carlos Sanz / Carlos Sanz Rodríguez","type":"PERSON","state":"CARET_PENDING","boundary":"Repository context supplies a partial or expanded name but no admitted immutable identity; he is not Carlos Llamas Sanz PD-SP-P-0062.","next_source_needed":"A signed term sheet, company record or official professional source stating Carlos Sanz’s complete legal name and transaction capacity."},
+    {"ordinal":8,"object_key":"DANIEL_IRIGOYEN","label":"Daniel Irigoyen","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0063","boundary":"Identity only; a surname-only occurrence must satisfy the occurrence guard before receiving a caret."},
+    {"ordinal":9,"object_key":"FRANCISCO_MARIO_MATOS_MATAS","label":"Francisco Mario Matos Matas","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0009","boundary":"Identity only; conduct, authority and benefit require act-specific evidence."},
+    {"ordinal":10,"object_key":"GEORG_ABEGG","label":"Georg Abegg","type":"PERSON","state":"CARET_PENDING","boundary":"Named professional; no current immutable CAEPR person record is admitted.","next_source_needed":"An official firm profile, professional-register entry or signed engagement record stating Georg Abegg’s full identity and capacity."},
+    {"ordinal":11,"object_key":"GIL_MARER","label":"Gil Marer","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0001","boundary":"Identity only; statements and criminal allegations remain attributed and are not converted into findings."},
+    {"ordinal":12,"object_key":"GUILLERMO_FERNANDEZ_GARCIA","label":"Guillermo Fernández García","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0087","boundary":"Identity only; signed Auto 97/2025 and current position are separately sourced and prove nothing about the 24-Oct-2024 attribution."},
+    {"ordinal":13,"object_key":"JAVIER_ROMERA","label":"Javier Romera","type":"PERSON","state":"CARET_PENDING","boundary":"Named journalist or source-custody candidate; no current immutable CAEPR person record is admitted.","next_source_needed":"The original byline page, publisher masthead or employer record tying Javier Romera’s full identity to the cited publication and date."},
+    {"ordinal":14,"object_key":"JOSE_DANIEL_ACOSTA_MATOS","label":"José Daniel Acosta Matos","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0011","boundary":"Identity only; the abbreviated display José D. must be expanded or admitted before a caret is shown at that occurrence."},
+    {"ordinal":15,"object_key":"JUAN_TOMAS_PARRILLA_SUAREZ","label":"Juan Tomás Parrilla Suárez","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0041","boundary":"Identity only; role and acts remain source- and date-specific."},
+    {"ordinal":16,"object_key":"ALBERTO_LOPEZ_VILLARRUBIA","label":"Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0057","boundary":"Identity and separately sourced dated titles only; not proof that he signed, was allocated, substituted in, knew, concealed, conflicted or offended in the 24-Oct-2024 matter."},
+    {"ordinal":17,"object_key":"JULIE_CLIFFE_JONES","label":"Julie Cliffe-Jones","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official company, professional or signed transaction record stating Julie Cliffe-Jones’s full identity and capacity."},
+    {"ordinal":18,"object_key":"KARL_MARKGRAF","label":"Karl Markgraf","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official company, professional or signed transaction record stating Karl Markgraf’s full identity and capacity."},
+    {"ordinal":19,"object_key":"LARS_CREUTZMANN","label":"Lars Creutzmann","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official company, professional or signed insolvency record stating Lars Creutzmann’s full identity and capacity."},
+    {"ordinal":20,"object_key":"LAURA_PATRICIA_ACOSTA_MATOS","label":"Laura Patricia Acosta Matos / Laura Acosta Matos","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0012","boundary":"Identity only; the shorter route occurrence requires contextual reconciliation and does not prove functional direction, contracting or benefit."},
+    {"ordinal":21,"object_key":"MIKE_CLIFFE_JONES","label":"Mike Cliffe-Jones","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official company, professional or signed transaction record stating Mike Cliffe-Jones’s full legal identity and capacity."},
+    {"ordinal":22,"object_key":"NACHO_BARRAU","label":"Nacho Barrau","type":"PERSON","state":"CARET_PENDING","boundary":"Informal given name may not be the legal name; no current immutable CAEPR person record is admitted.","next_source_needed":"An official byline, professional profile or signed record stating the complete legal name, employer and relevant capacity of Nacho Barrau."},
+    {"ordinal":23,"object_key":"OLIVER_SCHARTL","label":"Oliver Schartl","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official company, professional or signed insolvency record stating Oliver Schartl’s full identity and capacity."},
+    {"ordinal":24,"object_key":"PATRICIA_AYALA","label":"Patricia Ayala","type":"PERSON","state":"CARET_PENDING","boundary":"Named professional; no current immutable CAEPR person record is admitted.","next_source_needed":"An official firm profile, professional-register entry or signed engagement record stating Patricia Ayala’s full identity and capacity."},
+    {"ordinal":25,"object_key":"PATRICIA_DOMINGUEZ","label":"Patricia Domínguez","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0002","boundary":"Identity only; statements, knowledge and conduct remain source-specific."},
+    {"ordinal":26,"object_key":"SABINE_DORN","label":"Sabine Dorn","type":"PERSON","state":"CARET_PENDING","boundary":"Named person; no current immutable CAEPR person record is admitted.","next_source_needed":"An official company, professional or signed insolvency record stating Sabine Dorn’s full identity and capacity."},
+    {"ordinal":27,"object_key":"SHAILA_MARIA_COGOLLUDO_RAMOS","label":"Shaila María Cogolludo Ramos","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0008","boundary":"Identity only; role, authority, knowledge and acts remain source- and date-specific."},
+
+    {"ordinal":28,"object_key":"AB_IN_DEN_URLAUB","label":"Ab-in-den-Urlaub","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named travel platform or brand; exact operating legal person is not admitted.","next_source_needed":"The dated legal notice, domain ownership record or booking terms naming the exact Ab-in-den-Urlaub operating legal person and registration identifier."},
+    {"ordinal":29,"object_key":"ACOSTA_MATOS_PROJECT_PERIMETER","label":"Acosta Matos project/perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-S-0006","boundary":"Controlled structure/perimeter identity only; it does not inherit CAM PD-SP-O-0007 or identify any exact person, company, act or liability."},
+    {"ordinal":30,"object_key":"ACTUA_VALUATION_PERIMETER","label":"ACTÚA valuation perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Exact legal entity is unresolved and ACTÚA must not be mapped to Actyus PD-SP-O-0060.","next_source_needed":"The signed valuation, engagement letter or invoice stating ACTÚA’s complete legal name, tax identifier, registry details and role."},
+    {"ordinal":31,"object_key":"AUREN_REESTRUCTURACIONES","label":"AUREN REESTRUCTURACIONES SLP","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0070","boundary":"Exact expert entity in Auto 97/2025; mandate, knowledge, conflicts and work remain evidence-specific."},
+    {"ordinal":32,"object_key":"AUREN_GENERIC_PERIMETER","label":"Auren professional perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0046","boundary":"Generic professional perimeter only; it is not AUREN REESTRUCTURACIONES SLP and proves no engagement or conduct."},
+    {"ordinal":33,"object_key":"AWESWELL","label":"Aweswell Limited","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0001","boundary":"Identity only; funding, standing, conditions and performance remain instrument-specific."},
+    {"ordinal":34,"object_key":"BANKIA","label":"Bankia, S.A.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0029","boundary":"Identity only; account, security, succession, notice and transaction propositions require their own records."},
+    {"ordinal":35,"object_key":"BARE_COMMUNITY","label":"Community / Comunidad — unspecified","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","candidate_caepr_ids":["PD-SP-O-0005","PD-SP-O-0006"],"boundary":"The shorthand does not distinguish the Owners’ Community from CEXP and cannot inherit either caret.","next_source_needed":"The complete sentence and underlying signed instrument naming either Comunidad de Propietarios Sun Park or Comunidad de Explotación Sun Park with its identifier and date-specific role."},
+    {"ordinal":36,"object_key":"BLUESEA_COMMERCIAL_PERIMETER","label":"BLUESEA commercial perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Commercial brand/perimeter is unresolved and is not Gestora Blue Sea Partner, S.A. by inference.","next_source_needed":"The relevant transaction agreement, CNMC filing or corporate record naming the exact BLUESEA-side legal person and registration identifier."},
+    {"ordinal":37,"object_key":"CAM_SA","label":"Construcciones Acosta Matos, S.A.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0007","boundary":"Exact entity identity; do not merge with Acosta Matos people, projects, other company forms or capacities."},
+    {"ordinal":38,"object_key":"CAMEL_TRAVEL","label":"Camel Travel","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named travel brand or platform; exact operating legal person is unresolved.","next_source_needed":"The dated legal notice, booking terms or company registry entry naming Camel Travel’s operating legal person and registration identifier."},
+    {"ordinal":39,"object_key":"CEXP","label":"Comunidad de Explotación Sun Park / CEXP","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0006","boundary":"Identity only; not the Owners’ Community and not proof of authority, succession, operation or liability."},
+    {"ordinal":40,"object_key":"CLUB_SEI","label":"Club Sei","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0040","boundary":"Brand/project perimeter only; not a legal person, contract, authority, booking, revenue, payment, benefit or offence."},
+    {"ordinal":41,"object_key":"CLUBOTEL_LA_DORADA","label":"Clubotel / intended Clubotel La Dorada, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"No admitted exact legal-person identity; Clubotel and ONA are not interchangeable.","next_source_needed":"An official company extract or signed funded-exit instrument establishing Clubotel La Dorada’s exact legal name, registration identifier and transaction capacity."},
+    {"ordinal":42,"object_key":"CUATRECASAS","label":"Cuatrecasas","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0049","boundary":"Admitted professional entity identity; engagement, client, instructions, knowledge and work remain instrument-specific."},
+    {"ordinal":43,"object_key":"EL_CORTE_INGLES_EMPRESAS","label":"El Corte Inglés Empresas","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Commercial label does not establish the exact operating or contracting legal person.","next_source_needed":"The dated legal notice, contract, invoice or company record naming the exact El Corte Inglés Empresas legal person and registration identifier."},
+    {"ordinal":44,"object_key":"ELAIA_PERIMETER","label":"Elaia","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0036","boundary":"Controlled perimeter identity only; exact legal person, funding role, conditions, conduct and liability remain open."},
+    {"ordinal":45,"object_key":"ELECONOMISTA","label":"elEconomista","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Publisher label is named but its exact legal operator in the cited publication context is not admitted.","next_source_needed":"The dated publisher masthead, legal notice or domain record naming the legal operator of elEconomista for the cited article."},
+    {"ordinal":46,"object_key":"ESSENTHIA_CANARY_ISLANDS_CONTRACT_FFE","label":"Essenthia / Canary Islands Contract & FF&E","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Trading or project label does not establish an exact legal person or contractual role.","next_source_needed":"The signed contract, invoice or registry extract naming the complete Essenthia legal entity, identifier and Club Sei-related role."},
+    {"ordinal":47,"object_key":"FASEE","label":"Fondo de Apoyo a la Solvencia de Empresas Estratégicas / FASEE","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0071","boundary":"Fund identity only; facility allocation, use, monitoring, balance, omission and loss require separate records."},
+    {"ordinal":48,"object_key":"FEDER_ERDF_FUND_PERIMETER","label":"FEDER / ERDF fund perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"The generic fund label does not identify the programme, operation, managing authority or beneficiary instrument.","next_source_needed":"The official EU or managing-authority grant decision identifying the exact FEDER programme, operation code, beneficiary, amount and responsible authority."},
+    {"ordinal":49,"object_key":"FINKENHOF_RECHTSANWALTE","label":"FINKENHOF Rechtsanwälte","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Professional label is named but no exact admitted legal or partnership identity is present.","next_source_needed":"The firm’s official legal notice or professional-register entry stating its complete registered name, seat and identifier."},
+    {"ordinal":50,"object_key":"FTI_BROAD_GROUP_COMPLIANCE_PERIMETER","label":"FTI group / compliance perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0039","boundary":"PD-SP-O-0039 is FTI Touristik, not the broader group or every compliance route; no caret transfer is allowed.","next_source_needed":"The original addressed communication, legal notice or corporate record naming the exact FTI group legal entity responsible for the stated compliance function."},
+    {"ordinal":51,"object_key":"FTI_CONSULTING","label":"FTI Consulting","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0047","boundary":"Organisation identity only; mandate, client, scope, knowledge and work product remain separately sourced."},
+    {"ordinal":52,"object_key":"FTI_TOURISTIK_GMBH","label":"FTI Touristik GmbH","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0039","boundary":"The current CAEPR record omits the GmbH legal suffix and does not yet close the exact German legal-person tie.","next_source_needed":"The signed German insolvency opening order and Handelsregister extract tying FTI Touristik GmbH’s complete name, registered number and proceeding role to this occurrence."},
+    {"ordinal":53,"object_key":"GESTORA_BLUE_SEA_PARTNER","label":"Gestora Blue Sea Partner, S.A.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named legal-person candidate has no admitted immutable CAEPR record and is separate from the BLUESEA brand.","next_source_needed":"A Mercantile Registry extract and the CNMC or transaction instrument stating Gestora Blue Sea Partner, S.A.’s identifier and role."},
+    {"ordinal":54,"object_key":"GESVALT","label":"Gesvalt","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Professional or valuation label does not establish the exact engaged legal person.","next_source_needed":"The signed valuation engagement, report signature page or company extract naming the exact Gesvalt legal entity, identifier and mandate."},
+    {"ordinal":55,"object_key":"HOTEL_NEW_TREND","label":"Hotel New Trend, S.L. / HNT","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0018","boundary":"Exact entity identity only; title, operation, transaction, payment and benefit remain instrument-specific."},
+    {"ordinal":56,"object_key":"INMOTURISMO","label":"Inmoturismo","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named commercial or corporate label lacks an admitted exact legal-person identity.","next_source_needed":"The company registry extract, legal notice or signed instrument stating Inmoturismo’s complete legal name, identifier and capacity."},
+    {"ordinal":57,"object_key":"INPARSA","label":"Inparsa","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named entity or perimeter lacks an admitted exact legal-person record and proceeding-party tie.","next_source_needed":"The company registry extract and signed act in proceeding 354/2024 naming Inparsa’s complete legal name, identifier and party capacity."},
+    {"ordinal":58,"object_key":"INTERIHOTEL_CANARIAS","label":"InteriHOTEL Canarias","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Conservatively counted as a named publisher/event perimeter; it may be an event label rather than a legal person.","next_source_needed":"The dated event or publication legal notice naming the organiser, publisher or operating legal person behind InteriHOTEL Canarias."},
+    {"ordinal":59,"object_key":"LABRANDA_PERIMETER","label":"Labranda","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0041","boundary":"Brand/perimeter identity only; exact hotel operator, contract, revenue, control and liability remain open."},
+    {"ordinal":60,"object_key":"LAGUNE_PERIMETER","label":"Lagune","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0037","boundary":"Controlled perimeter identity only; exact legal person, funding role, conditions, conduct and liability remain open."},
+    {"ordinal":61,"object_key":"LANZAROTE_INFORMATION","label":"Lanzarote Information","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Publisher or platform label is named but its exact legal operator is not admitted.","next_source_needed":"The dated site masthead, legal notice or domain record naming Lanzarote Information’s legal operator and identifier."},
+    {"ordinal":62,"object_key":"LOVEHOLIDAYS","label":"Loveholidays","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Travel platform or brand does not establish the exact operating legal person for the relevant date.","next_source_needed":"The dated booking terms, legal notice or company record naming the exact Loveholidays operating legal person and registration identifier."},
+    {"ordinal":63,"object_key":"LPB","label":"Luchy Playa Blanca, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0002","boundary":"LPB alone was the debtor in Concurso 36/2012; third-party units, rights and actors are not merged into the estate."},
+    {"ordinal":64,"object_key":"MATKATOR","label":"Matkator","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0003","boundary":"A current perimeter record exists, but its stale exact-entity status is not reconciled to the canonical NIF and registry material.","next_source_needed":"Reconcile the existing canonical Matkator, S.L.U. NIF B76621689 and Mercantile Registry/BORME source to PD-SP-O-0003 and update the admitted exact legal name."},
+    {"ordinal":65,"object_key":"MHBK","label":"MHBK","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Acronym alone does not establish the full legal person or professional entity.","next_source_needed":"The source document’s signature or legal notice expanding MHBK to its complete registered name, seat and registration identifier."},
+    {"ordinal":66,"object_key":"MOLINA_DISSIDENT_PERIMETER","label":"Molina-linked dissident perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Descriptive actor perimeter is not an exact legal person and cannot inherit any family member’s identity.","next_source_needed":"The signed pleading, minutes or corporate record naming each exact person or legal vehicle included in the Molina-linked perimeter and its date-specific role."},
+    {"ordinal":67,"object_key":"MONTELANZA","label":"Montelanza, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0014","boundary":"Exact entity identity only; property, operation, payment, knowledge and liability remain separately sourced."},
+    {"ordinal":68,"object_key":"MP_HOTELMANAGEMENT_CANARIES","label":"Meeting Point Hotelmanagement (Canaries), S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0067","boundary":"Exact debtor in signed Auto 97/2025; identity does not establish it as Club Sei contracting party or beneficiary."},
+    {"ordinal":69,"object_key":"MP_HOTELMANAGEMENT_HOLDING_GMBH","label":"Meeting Point Hotelmanagement Holding GmbH","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Exact German legal person and insolvency role are not admitted to CAEPR.","next_source_needed":"The signed opening order for 1500 IN 10107/24 and Handelsregister extract stating the company’s complete name, number, seat and proceeding role."},
+    {"ordinal":70,"object_key":"MEETING_POINT_COMMERCIAL_PERIMETER","label":"Meeting Point Hotels / unsuffixed Meeting Point International commercial perimeter","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0038","boundary":"Commercial perimeter only; not an exact legal person, the Club Sei contracting entity, a German debtor or any Spanish 357/2024 debtor."},
+    {"ordinal":71,"object_key":"MEETING_POINT_INTERNATIONAL_GMBH","label":"Meeting Point International GmbH","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"The exact German company cannot inherit the commercial-perimeter caret PD-SP-O-0038.","next_source_needed":"The signed opening order for 1500 IN 10126/24 and Handelsregister extract stating the company’s complete name, number, seat and proceeding role."},
+    {"ordinal":72,"object_key":"MP_INVESTMENT","label":"Meeting Point Investment, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0069","boundary":"Exact debtor in signed Auto 97/2025; identity does not establish it as Club Sei contracting party or beneficiary."},
+    {"ordinal":73,"object_key":"MP_SPAIN","label":"Meeting Point Spain, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0068","boundary":"Exact debtor in signed Auto 97/2025; identity does not establish it as Club Sei contracting party or beneficiary."},
+    {"ordinal":74,"object_key":"MYND_YAIZA_PERIMETER","label":"MYND Yaiza","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0042","boundary":"Brand/project perimeter identity only; exact operator, owner, contract, funding, revenue and liability remain open."},
+    {"ordinal":75,"object_key":"ONA_FUNDED_EXIT_ACTOR","label":"ONA / Ona Hotels funded-exit actor","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0033","boundary":"Current record is a controlled perimeter with the exact legal entity and transaction capacity still open; it is not Clubotel.","next_source_needed":"The signed funded-exit term sheet, agreement or corporate extract naming the exact ONA-side legal person, registration identifier and transaction role."},
+    {"ordinal":76,"object_key":"ONE_TWO_FLY","label":"1-2-FLY","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Travel brand or platform does not establish the exact operating legal person.","next_source_needed":"The dated legal notice, booking terms or corporate record naming the exact 1-2-FLY operating legal person and registration identifier."},
+    {"ordinal":77,"object_key":"OWNERS_COMMUNITY","label":"Comunidad de Propietarios Sun Park / Sun Park Owners’ Community","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0005","boundary":"Identity only; not CEXP, and authority, membership, acts and legal effect remain instrument- and date-specific."},
+    {"ordinal":78,"object_key":"PINK_CANARY_SERVICES","label":"Pink Canary Services, S.L.U. / Monterecco Sun Park, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0004","boundary":"Admitted exact-name/alias perimeter; date-specific company name, status, ownership, acts and liability require their own sources."},
+    {"ordinal":79,"object_key":"PLEDGE_INVESTMENTS","label":"Pledge Investments","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named investment perimeter lacks an admitted exact legal-person identity and transaction role.","next_source_needed":"A company registry extract and signed funded-exit instrument naming Pledge Investments’ complete legal name, identifier and role."},
+    {"ordinal":80,"object_key":"PORTOBELLO_CAPITAL","label":"Portobello Capital, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named legal-person candidate lacks an admitted immutable CAEPR record and transaction-capacity tie.","next_source_needed":"A Mercantile Registry extract and CNMC or signed transaction instrument stating Portobello Capital, S.L.’s identifier and role."},
+    {"ordinal":81,"object_key":"PWC_CANARIAS_PERIMETER","label":"PricewaterhouseCoopers professional perimeter — Canarias","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0043","boundary":"Professional perimeter only; exact engagement entity, individual author, instructions, knowledge and report conclusions remain open."},
+    {"ordinal":82,"object_key":"RICPE","label":"RIC Private Equity Investment Partners SCR, S.A. / RICPE","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0020","boundary":"Exact entity identity only; investment role, authority, payment, control and benefit remain instrument-specific."},
+    {"ordinal":83,"object_key":"RODL","label":"Rödl","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Professional brand does not establish the exact engaged Rödl legal entity or office.","next_source_needed":"The official firm imprint, engagement letter or signed correspondence naming the complete Rödl legal entity, seat, identifier and mandate."},
+    {"ordinal":84,"object_key":"SONNENKLAR_TV","label":"sonnenklar.TV","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Media or sales brand does not establish its exact legal operator for the cited date.","next_source_needed":"The dated broadcaster or platform legal notice and corporate record naming sonnenklar.TV’s operating legal person and identifier."},
+    {"ordinal":85,"object_key":"STONEWEG_PERIMETER","label":"Stoneweg","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0034","boundary":"Controlled perimeter identity only; exact legal person, funding role, conditions, conduct and liability remain open."},
+    {"ordinal":86,"object_key":"SUNCANARIAS_GESTION_MARKETING","label":"Suncanarias Gestión y Marketing, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named legal-person candidate lacks an admitted immutable CAEPR record.","next_source_needed":"A Mercantile Registry extract and signed contract or invoice stating Suncanarias Gestión y Marketing, S.L.’s identifier and relevant role."},
+    {"ordinal":87,"object_key":"TOURINEWS","label":"Tourinews","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Publisher label does not establish the exact legal operator for the cited publication.","next_source_needed":"The dated masthead, legal notice or domain ownership record naming Tourinews’ legal publisher and registration identifier."},
+    {"ordinal":88,"object_key":"TOURISTIK_AKTUELL","label":"Touristik Aktuell","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Publisher label does not establish the exact legal operator for the cited publication.","next_source_needed":"The dated imprint or publisher record naming Touristik Aktuell’s legal operator and registration identifier."},
+    {"ordinal":89,"object_key":"TRAVEL_WEEKLY","label":"Travel Weekly","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Shared publication name does not identify the exact edition or legal publisher.","next_source_needed":"The cited article’s dated masthead or legal notice identifying the exact Travel Weekly edition, publisher and legal operator."},
+    {"ordinal":90,"object_key":"VARIA_PERIMETER","label":"Varia","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0035","boundary":"Controlled perimeter identity only; exact legal person, funding role, conditions, conduct and liability remain open."},
+    {"ordinal":91,"object_key":"YOUTRAVEL","label":"Youtravel","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Travel brand or platform does not establish the exact operating legal person.","next_source_needed":"The dated legal notice, booking terms or corporate record naming Youtravel’s exact operating legal person and registration identifier."},
+
+    {"ordinal":92,"object_key":"AEAT","label":"Agencia Estatal de Administración Tributaria / AEAT","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0006","boundary":"Institution identity only; file, notice, decision, knowledge and merits remain record-specific."},
+    {"ordinal":93,"object_key":"AHK_SPAIN","label":"German-Spanish Chamber / AHK Spain","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named chamber perimeter lacks an admitted exact institutional or legal identity.","next_source_needed":"The chamber’s official directory or legal notice stating its complete Spanish and German name, legal form, seat and identifier."},
+    {"ordinal":94,"object_key":"AMTSGERICHT_MUNCHEN","label":"Amtsgericht München","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named German court has no admitted immutable CAEPR institution record in this matter.","next_source_needed":"The official Bavarian court directory entry and a signed proceeding act identifying Amtsgericht München as the competent court."},
+    {"ordinal":95,"object_key":"AP_LAS_PALMAS_SECTION_4","label":"Audiencia Provincial de Las Palmas — Sección Cuarta","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0014","boundary":"Identity applies only to the admitted Section-4 matter and must not be transferred to the unverified appellate organ for Auto 804/2018."},
+    {"ordinal":96,"object_key":"AUTO_804_APPELLATE_ORGAN","label":"exact appellate organ for Auto 804/2018","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"The route does not establish the exact chamber; PD-SP-I-0014 must not be used by proximity or court-family inference.","next_source_needed":"The signed cover, complete appellate roll or panel page for Auto 804/2018 stating the exact Audiencia Provincial section and members."},
+    {"ordinal":97,"object_key":"AYUNTAMIENTO_YAIZA","label":"Ayuntamiento de Yaiza","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0009","boundary":"Institution identity only; department, competence, act, notice and merits remain source-specific."},
+    {"ordinal":98,"object_key":"CABILDO_LANZAROTE","label":"Cabildo de Lanzarote","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0010","boundary":"Institution identity only; department, competence, act, notice and merits remain source-specific."},
+    {"ordinal":99,"object_key":"CGPJ","label":"Consejo General del Poder Judicial / CGPJ","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0005","boundary":"Parent institution identity only; it does not transfer conduct, receipt, knowledge or decision to a sub-organ."},
+    {"ordinal":100,"object_key":"CGPJ_INSPECTION","label":"CGPJ Inspection","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Conservatively counted as a separately named sub-organ; it cannot inherit the parent CGPJ caret for conduct or capacity.","next_source_needed":"The official CGPJ organisation chart or signed file act naming the Inspection body, its formal designation, competence and role in the relevant matter."},
+    {"ordinal":101,"object_key":"CGPJ_PERMANENT_COMMISSION","label":"CGPJ Permanent Commission","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Conservatively counted as a separately named decision-making sub-organ; parent identity does not establish its participation.","next_source_needed":"The official CGPJ organisation record or signed resolution naming the Permanent Commission, its competence, members or deciding role in the relevant file."},
+    {"ordinal":102,"object_key":"CNMC","label":"Comisión Nacional de los Mercados y la Competencia / CNMC","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named institution lacks an admitted immutable CAEPR institution record in this census.","next_source_needed":"The official CNMC directory or signed C/1549/25 decision identifying the institution, competent chamber and file."},
+    {"ordinal":103,"object_key":"CNMV","label":"Comisión Nacional del Mercado de Valores / CNMV","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named institution lacks an admitted immutable CAEPR institution record in this census.","next_source_needed":"The official CNMV directory or signed filing/decision identifying the institution, competent unit and relevant record."},
+    {"ordinal":104,"object_key":"COURT_POSITION_1","label":"former Commercial Court No. 1 / current commercial position No. 1","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0001","boundary":"Same institutional position across reorganisation; historical and current titles are date-bound and do not prove the handler of every act."},
+    {"ordinal":105,"object_key":"COURT_POSITION_3","label":"former Commercial Court No. 3 / current commercial position No. 3","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0016","boundary":"Organ identity does not identify the magistrate handling a particular act or prove allocation, substitution or support."},
+    {"ordinal":106,"object_key":"DECANATO_LAS_PALMAS","label":"Decanato de los Juzgados de Las Palmas","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named receiving office lacks an admitted exact CAEPR institution or sub-organ record.","next_source_needed":"The current official court directory and native filing receipt naming the Decanato de los Juzgados de Las Palmas and its receiving competence."},
+    {"ordinal":107,"object_key":"PUBLIC_PROSECUTION_SERVICE","label":"Ministerio Fiscal / general Fiscalía","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0002","boundary":"General institution identity only; no transfer to a territorial office, unit, prosecutor, filing, decision or merits position."},
+    {"ordinal":108,"object_key":"FISCALIA_PROVINCIAL_LAS_PALMAS","label":"Fiscalía Provincial de Las Palmas","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-I-0002","boundary":"The general Fiscalía record does not resolve the territorial office or competent receiving unit.","next_source_needed":"The current official prosecution-office directory and a native acknowledgement or docket record identifying the Fiscalía Provincial de Las Palmas and competent unit."},
+    {"ordinal":109,"object_key":"GUARDIA_CIVIL","label":"Guardia Civil","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0008","boundary":"Institution identity only; exact unit, officer, receipt, investigation, knowledge and act remain source-specific."},
+    {"ordinal":110,"object_key":"MUNICH_POLICE_K71","label":"Munich Police K71","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named foreign police unit has no admitted immutable institution or unit identity.","next_source_needed":"The original police acknowledgement, official Munich police directory or case record stating the K71 unit’s formal name, authority and file reference."},
+    {"ordinal":111,"object_key":"MUNICH_PROSECUTOR_OFFICE","label":"exact Munich prosecutor office","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"The body text does not resolve Staatsanwaltschaft München I versus München II or a competent unit.","next_source_needed":"The original prosecutor acknowledgement, file cover or official directory entry stating the exact Munich prosecutor office, unit and reference."},
+    {"ordinal":112,"object_key":"POLICIA_JUDICIAL","label":"Policía Judicial","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Conservatively counted as a named institutional function; the exact force, unit and authority are unresolved.","next_source_needed":"A signed referral, receipt or official directory entry naming the exact Policía Judicial force, territorial unit and relevant competence."},
+    {"ordinal":113,"object_key":"PUBLIC_INSOLVENCY_REGISTER","label":"Registro Público Concursal","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0018","boundary":"Registry-service identity only; not notice authenticity, completeness, custody, signatory, allocation or legal effect."},
+    {"ordinal":114,"object_key":"SEPI","label":"Sociedad Estatal de Participaciones Industriales / SEPI","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0017","boundary":"Institution identity only; no inference about funding use, monitoring, disclosure, reliance, omission or loss."},
+    {"ordinal":115,"object_key":"SNCA","label":"Sistema Nacional de Coordinación Antifraude / SNCA","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Acronym and functional label do not yet resolve the exact IGAE/SNCA office and receiving competence.","next_source_needed":"The official IGAE/SNCA directory, constitutive record or filing guidance naming the exact office, competence and submission route."},
+    {"ordinal":116,"object_key":"COMPETENT_TSJ_ROUTE","label":"competent Tribunal Superior de Justicia route","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-I-0004","boundary":"PD-SP-I-0004 identifies TSJC generally; the exact territorial chamber, competence and filing route remain unresolved.","next_source_needed":"The current official competence rule, TSJC directory and filing guidance identifying the exact chamber or organ competent for the contemplated route."},
+
+    {"ordinal":117,"object_key":"CGPJ_ALZADA_286_2026","label":"CGPJ Alzada 286/2026","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named administrative appeal or file has no admitted immutable CAEPR proceeding ID and no merits outcome is established.","next_source_needed":"An official acknowledgement, docket entry or signed resolution bearing Alzada 286/2026, the deciding organ and current procedural status."},
+    {"ordinal":118,"object_key":"CNMC_C_1549_25","label":"CNMC C/1549/25","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named competition file has no admitted immutable CAEPR proceeding record; scope and finality remain open.","next_source_needed":"The official CNMC C/1549/25 decision or docket page stating the file class, parties, deciding chamber, date, outcome and finality."},
+    {"ordinal":119,"object_key":"CONCURSO_36_2012","label":"Concurso 36/2012 — Luchy Playa Blanca, S.L.","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0001","boundary":"LPB-only insolvency proceeding; separate persons, third-party assets, appeals, criminal files and later pre-insolvency proceedings do not merge into it."},
+    {"ordinal":120,"object_key":"DI_169_2026","label":"DI 169/2026","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Acronym/reference alone does not establish the exact proceeding class, court, parties or current status.","next_source_needed":"The signed opening act or certified docket for DI 169/2026 stating the full proceeding class, court, NIG, parties and current status."},
+    {"ordinal":121,"object_key":"DP_1132_2018","label":"DP 1132/2018","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named preliminary proceeding has no admitted immutable CAEPR record and its complete procedural chain is unresolved.","next_source_needed":"The signed opening, archive and any appeal acts plus a certified docket stating the competent court, NIG, parties and status of DP 1132/2018."},
+    {"ordinal":122,"object_key":"DP_1901_2026","label":"DP 1901/2026","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0005","boundary":"Separate private-actor/CAM documentary and admission-control route; it is not DP 1956/2026, Concurso 36/2012 or a receipt reference."},
+    {"ordinal":123,"object_key":"DP_1956_2026","label":"DP 1956/2026","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0004","boundary":"Separate insolvency-administrator/Concurso criminal route; identity does not establish admission, merits, offence or outcome."},
+    {"ordinal":124,"object_key":"FTI_TOURISTIK_INSOLVENCY_1500_IN_1758_24","label":"FTI Touristik insolvency 1500 IN 1758/24","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named German insolvency has no admitted immutable CAEPR proceeding record or closed debtor/status tie.","next_source_needed":"The signed Amtsgericht München opening or current-status order for 1500 IN 1758/24 identifying the exact debtor, court, administrator and status."},
+    {"ordinal":125,"object_key":"INPARSA_354_2024","label":"Inparsa 354/2024","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Reference and party shorthand do not establish the exact proceeding class, organ, parties or status.","next_source_needed":"A signed act or certified docket for 354/2024 stating the full proceeding class, court, NIG, exact Inparsa party and current status."},
+    {"ordinal":126,"object_key":"JV_1260_2011_AP_89_2014","label":"JV 1260/2011 / AP 89/2014","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0007","boundary":"Admitted instance/appeal family; the two stages retain distinct acts, parties, effects and dates and do not merge with Concurso 36/2012."},
+    {"ordinal":127,"object_key":"MEETING_POINT_357_2024","label":"Meeting Point 357/2024","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0018","boundary":"Joint three-debtor communication; not either German FTI/Meeting Point insolvency and not Concurso 36/2012."},
+    {"ordinal":128,"object_key":"MP_HOTELMANAGEMENT_HOLDING_INSOLVENCY_1500_IN_10107_24","label":"Meeting Point Hotelmanagement Holding insolvency 1500 IN 10107/24","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named German insolvency has no admitted immutable CAEPR proceeding record or closed debtor/status tie.","next_source_needed":"The signed Amtsgericht München opening or current-status order for 1500 IN 10107/24 identifying the exact debtor, court, administrator and status."},
+    {"ordinal":129,"object_key":"MP_INTERNATIONAL_INSOLVENCY_1500_IN_10126_24","label":"Meeting Point International insolvency 1500 IN 10126/24","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named German insolvency has no admitted immutable CAEPR proceeding record or closed debtor/status tie.","next_source_needed":"The signed Amtsgericht München opening or current-status order for 1500 IN 10126/24 identifying the exact debtor, court, administrator and status."},
+    {"ordinal":130,"object_key":"PO_213_2015","label":"PO 213/2015","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Acronym/reference alone does not establish the exact proceeding class, court, parties or current status.","next_source_needed":"The signed opening or merits act and certified docket for PO 213/2015 stating the full class, court, NIG, parties, disposition and status."}
+  ]
+}

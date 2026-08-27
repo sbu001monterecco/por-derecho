@@ -1,0 +1,383 @@
+{
+  "schema": "por-derecho.fti-meeting-point-ricpe-crossborder-action-register.v1",
+  "control_id": "PD-FTI-MP-RICPE-ACTIONS-20260827-01",
+  "control_date": "2026-08-27",
+  "scope": "Completed and future FTI Touristik / Meeting Point / Club Sei / RICPE actions in Germany, Spain and European routes",
+  "external_action_authorized": false,
+  "default_future_state": "PREPARED_HOLD_NOT_AUTHORISED",
+  "authorization_rule": "Every email, resend, portal submission, AGE/RedSARA notice, court filing or authority notification requires one immutable preview of recipient or formal route, subject, full body, language order, every attachment filename/size/SHA-256 and every link, followed by a separate exact authorization. Any change voids authorization.",
+  "status_vocabulary": [
+    "COMPLETED_VERIFIED",
+    "SENT_RECEIPT_OR_REVIEW_PENDING",
+    "PREPARED_HOLD_NOT_AUTHORISED",
+    "BLOCKED_ROUTE_OR_IDENTITY",
+    "CONDITIONAL_EVIDENCE_THRESHOLD",
+    "SUPERSEDED_NO_ACTION"
+  ],
+  "actions": [
+    {
+      "id": "MPA-001",
+      "jurisdiction": "GERMANY",
+      "lane": "CORPORATE_COMPLIANCE",
+      "target": "FTI compliance file 2024-94",
+      "status": "COMPLETED_VERIFIED",
+      "completed_state": "Intake reference, call, stated review and stated insolvency-administrator handoff are documented.",
+      "pending_objective": "Obtain the complete intake, triage, mandate, evidence index, interviews, findings, closure and transfer record.",
+      "package": "GER-INS-CUSTODY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-002",
+      "jurisdiction": "GERMANY",
+      "lane": "INSOLVENCY",
+      "target": "FTI Touristik GmbH — 1500 IN 1758/24",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Verify standing, deadlines and the official court/administrator route; request debtor-specific preservation, data-room and Spanish-entity handover records.",
+      "attachments": ["chronology", "source-and-gap matrix", "Club Sei evidence index", "hash manifest"],
+      "links": ["/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/", "/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/"],
+      "package": "GER-INS-CUSTODY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-003",
+      "jurisdiction": "GERMANY",
+      "lane": "INSOLVENCY",
+      "target": "Meeting Point International GmbH — 1500 IN 10126/24",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Obtain the debtor-specific custody, contract, disclosure, impairment and handover record; do not merge it with the other German debtors.",
+      "package": "GER-INS-CUSTODY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-004",
+      "jurisdiction": "GERMANY",
+      "lane": "INSOLVENCY",
+      "target": "Meeting Point Hotelmanagement Holding GmbH — 1500 IN 10107/24",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Obtain the debtor-specific custody, management, Spanish-subsidiary and handover record; do not infer group-wide receipt.",
+      "package": "GER-INS-CUSTODY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-005",
+      "jurisdiction": "GERMANY",
+      "lane": "INSOLVENCY_CUSTODY",
+      "target": "Axel W. Bierbach / Georg Abegg / Rödl Spanish-review route",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "completed_state": "Bierbach's appointment statement and Rödl's 18-July meeting/document request are documented.",
+      "pending_objective": "Produce mandate, conflicts, work status, requests, collected data, findings, closure and administrator handoff.",
+      "package": "GER-INS-CUSTODY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-006",
+      "jurisdiction": "GERMANY",
+      "lane": "INSOLVENCY_CUSTODY",
+      "target": "Oliver Schartl / two Meeting Point debtor files",
+      "status": "BLOCKED_ROUTE_OR_IDENTITY",
+      "pending_objective": "Verify the current formal production route and request separate custody indices for each debtor.",
+      "package": "GER-INS-CUSTODY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-007",
+      "jurisdiction": "GERMANY",
+      "lane": "PROCEDURAL_COUNSEL",
+      "target": "FINKENHOF Rechtsanwälte",
+      "status": "BLOCKED_ROUTE_OR_IDENTITY",
+      "pending_objective": "Confirm only its court-order procedural role and whether it is a lawful records route; do not substitute it for an administrator or Rödl.",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-008",
+      "jurisdiction": "GERMANY",
+      "lane": "CRIMINAL_PRESERVATION",
+      "target": "Competent Munich prosecution office and Police K71",
+      "status": "SENT_RECEIPT_OR_REVIEW_PENDING",
+      "completed_state": "The 3-January-2025 preservation transmission named the prosecution/police perimeter.",
+      "pending_objective": "Obtain the exact competent office, file reference, receipt, routing, preservation and disposition; do not resend by broad email.",
+      "package": "CRIMINAL-PRESERVATION",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-009",
+      "jurisdiction": "GERMANY",
+      "lane": "PUBLIC_INFORMATION",
+      "target": "Genuine German-language dossier",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Publish and no-cache verify the German causal/action page; preserve the older Club-Sei German redirect as a compatibility route only.",
+      "links": ["/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/"],
+      "external_authority": false
+    },
+    {
+      "id": "MPA-010",
+      "jurisdiction": "SPAIN",
+      "lane": "INSOLVENCY_36_2012",
+      "target": "Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria — plaza n.º 1",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Request the active-estate, productive-unit, protection, inspection, implementation and accounting record in Concurso 36/2012.",
+      "attachments": ["signed-act ledger", "request-to-implementation matrix", "Club Sei causal bridge", "production schedule"],
+      "package": "ESP-C36-ESTATE",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-011",
+      "jurisdiction": "SPAIN",
+      "lane": "PREINSOLVENCY_357_2024",
+      "target": "Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria — plaza n.º 3",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Obtain the complete three-debtor file, signed September/October acts, assignment/substitution trail, disclosure record and court-controlled Auren production.",
+      "attachments": ["Auto 97/2025 derivative", "three-debtor chronology", "registry-attribution boundary", "production schedule"],
+      "package": "ESP-357-AUREN",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-012",
+      "jurisdiction": "SPAIN",
+      "lane": "RESTRUCTURING_EXPERT",
+      "target": "AUREN REESTRUCTURACIONES SLP",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Seek mandate, conflicts, requests, data-room index, report, workpapers, Sun Park/Club Sei treatment and preservation through the court-controlled route first.",
+      "package": "ESP-357-AUREN",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-013",
+      "jurisdiction": "SPAIN",
+      "lane": "PUBLIC_CREDIT_AGE_REDSARA",
+      "target": "SEPI / FASEE through a verified DIR3 recipient",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Request agreements, conditions, security, source-and-use, monitoring, disclosures, repayments, current exposure, impairment and treatment of Sun Park/Club Sei contingencies.",
+      "attachments": ["EUR 31m/56m correction sheet", "three-debtor crosswalk", "causal evidence matrix", "finite production schedule", "hash manifest"],
+      "links": ["/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/", "/es/fti-meeting-point-ricpe-alertador-continuidad/"],
+      "package": "ESP-SEPI-PUBLIC-CREDIT",
+      "external_authority": false,
+      "precondition": "Verify current DIR3 unit, register competence and whether the filing belongs in an existing or new AGE record."
+    },
+    {
+      "id": "MPA-014",
+      "jurisdiction": "SPAIN",
+      "lane": "CRIMINAL_PRESERVATION_AGE_REDSARA",
+      "target": "Fiscalía Provincial de Las Palmas / competent unit",
+      "status": "SENT_RECEIPT_OR_REVIEW_PENDING",
+      "completed_state": "Three 15-January-2026 AGE/RedSARA preservation submissions are recorded: REGAGE26e00003492334, REGAGE26e00003609135 and REGAGE26e00003629560.",
+      "pending_objective": "Obtain office/unit assignment, joinder, preservation and action state; link all three registrations without treating registration as opening or merits review.",
+      "package": "CRIMINAL-PRESERVATION",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-015",
+      "jurisdiction": "SPAIN",
+      "lane": "JUDICIAL_GOVERNANCE",
+      "target": "CGPJ — Alzada 286/2026",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "pending_objective": "Submit only genuinely new material concerning allocation, functioning, impartiality or production; do not ask CGPJ to reverse judicial merits.",
+      "package": "CRIMINAL-PRESERVATION",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-016",
+      "jurisdiction": "SPAIN",
+      "lane": "JUDICIAL_CRIMINAL",
+      "target": "Competent Fiscalía / TSJ route for an actor-specific judicial module",
+      "status": "BLOCKED_ROUTE_OR_IDENTITY",
+      "pending_objective": "Confirm competence and threshold; preserve the correct historic Magistrate-Judge title and do not infer signature, substitution, conflict or concealment from registry attribution alone.",
+      "package": "CRIMINAL-PRESERVATION",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-017",
+      "jurisdiction": "SPAIN",
+      "lane": "COMPETITION_AND_TRANSACTION",
+      "target": "CNMC — C/1549/25 / Portobello-BLUESEA-MPS",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Request the public-safe decision basis and, through competent procedural routes, the relevant due-diligence, disclosure, historic-record handover and retention treatment.",
+      "package": "CORPORATE-RIGHT-OF-REPLY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-018",
+      "jurisdiction": "SPAIN",
+      "lane": "CORPORATE_CUSTODY",
+      "target": "Portobello / BLUESEA / MPS",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "pending_objective": "Issue a narrow right-of-reply and preservation request for historic Club Sei/Sun Park contracts, data-room disclosures, liabilities, records migration and current custodian; no successor guilt inference.",
+      "package": "CORPORATE-RIGHT-OF-REPLY",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-019",
+      "jurisdiction": "SPAIN",
+      "lane": "RICPE_INTERNAL_CHANNEL",
+      "target": "RICPE Ethics Channel / Ithikios",
+      "status": "COMPLETED_VERIFIED",
+      "completed_state": "Receipt, acceptance, assignment, the certified document-request workflow state and 27-August inadmission/archive without internal investigation are preserved.",
+      "pending_objective": "Produce the native case export, access/visibility/notification logs, assignment chain, conflict controls, Board routing, preservation decisions and exact reviewed-document inventory.",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-020",
+      "jurisdiction": "SPAIN",
+      "lane": "CNMV_EXTERNAL_ALERT",
+      "target": "CNMV — linked RICPE communication",
+      "status": "SENT_RECEIPT_OR_REVIEW_PENDING",
+      "completed_state": "The 20-August communication was acknowledged; two 27-August extensions were sent, the latter with five attachments.",
+      "pending_objective": "Obtain confirmation that both extensions were received, linked, preserved, assigned and substantively reviewed.",
+      "package": "RICPE-CNMV-FOLLOW-UP",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-021",
+      "jurisdiction": "SPAIN",
+      "lane": "WHISTLEBLOWER_EXTERNAL_CHANNEL",
+      "target": "Autoridad Independiente de Protección del Informante / competent external channel",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "pending_objective": "Obtain route-specific legal assessment of Law 2/2023 scope, professional-context nexus, admissibility and protection before reporting alleged obstruction or ineffective internal treatment.",
+      "package": "RICPE-ALERTADOR",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-022",
+      "jurisdiction": "SPAIN",
+      "lane": "PUBLIC_ACCOUNTABILITY",
+      "target": "Tribunal de Cuentas",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "pending_objective": "Use only if a specific, quantified public-funds loss, accounting liability nexus and competent route are established.",
+      "package": "ESP-SEPI-PUBLIC-CREDIT",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-023",
+      "jurisdiction": "EUROPEAN_UNION",
+      "lane": "EU_FINANCIAL_INTERESTS",
+      "target": "OLAF",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "completed_state": "A 7-January-2025 notification is recorded; receipt, routing, action and transaction tracing remain open.",
+      "pending_objective": "Do not duplicate; supplement only with a new concrete EU-funds nexus, transaction trace or concealment/preservation fact.",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-024",
+      "jurisdiction": "EUROPEAN_UNION",
+      "lane": "EU_CRIMINAL",
+      "target": "European Public Prosecutor's Office",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "pending_objective": "Act only after identifying an actor-specific offence affecting EU financial interests and the competent territorial/delegated route.",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-025",
+      "jurisdiction": "EUROPEAN_UNION",
+      "lane": "STATE_AID_OR_EU_FUNDS",
+      "target": "European Commission / exact managing or supervisory authority",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "pending_objective": "Act only after identifying the exact instrument and a concrete misrepresentation, misuse, unreported contingency or incompatibility.",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-026",
+      "jurisdiction": "CROSS_BORDER",
+      "lane": "EMAIL_CORRECTION",
+      "target": "Held FTI/Meeting Point corrective package",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "completed_state": "Original message had ten attachments; two later corrections had none; two FTI-side routes failed permanently; no resend is evidenced.",
+      "pending_objective": "Rebuild only after resolving the German-route, brochure-date and German-PNG attribution defects; show a complete immutable package and obtain a separate send instruction.",
+      "package": "HELD-EMAIL-REPLACEMENT",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-027",
+      "jurisdiction": "CROSS_BORDER",
+      "lane": "SECURITY_REMEDIATION",
+      "target": "Public RICPE/Ithikios identifier exposure",
+      "status": "COMPLETED_VERIFIED",
+      "completed_state": "The binary-complete privacy remediation was merged at c42996115b66f7ae6b98e651ee8e9c72818e824b and verified after the successful Pages deployment: the public redacted PDF and six derived images matched the reviewed files, all seven superseded public paths returned 404, and the three controlled text routes retained only the approved one-way public fingerprint.",
+      "pending_objective": "Separately assess access-credential rotation and historical Git/cache risk without reproducing the private identifier or treating current-tree removal as history erasure.",
+      "package": "PUBLICATION-HOTFIX",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-028",
+      "jurisdiction": "CROSS_BORDER",
+      "lane": "PUBLIC_SOURCE_MONITORING",
+      "target": "Former FTI Touristik / Meeting Point Canary Islands and Spain asset, control, management and capital watch",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "completed_state": "A public-source-only four-times-daily monitor is prepared and locally validated with three bounded heritage scopes, eleven controlled entity objects, twelve configured sources, two baseline events and eight open coverage gaps.",
+      "pending_objective": "Publish and activate the read-only workflow; human-review every change signal before any transaction-register event, caret, website update, contact, notification, email or filing. Absence from monitored sources is not proof that no transaction exists.",
+      "links": [
+        "/es/fti-meeting-point-ricpe-alertador-continuidad/",
+        "/en/fti-meeting-point-ricpe-whistleblower-continuity/",
+        "/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/"
+      ],
+      "package": "ASSET-TRANSACTION-MONITORING",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-029",
+      "jurisdiction": "SPAIN",
+      "lane": "CRIMINAL_PROCEEDING_AC_CONCURSO",
+      "target": "DP 1956/2026 — separate Insolvency Administrator / Concurso criminal route",
+      "status": "CONDITIONAL_EVIDENCE_THRESHOLD",
+      "completed_state": "A provisional dismissal communicated on 21 July 2026 is recorded. It is not an acquittal, a final merits exoneration or proof that a draft challenge was filed.",
+      "pending_objective": "Obtain the signed dismissal act, complete docket, service/finality and current status; evaluate any competent reopening or challenge route only on qualifying new evidence and a separately authorised exact filing.",
+      "package": "CRIMINAL-PRESERVATION",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-030",
+      "jurisdiction": "SPAIN",
+      "lane": "REGIONAL_INCENTIVES_PUBLIC_SUPPORT",
+      "target": "Regional-incentives file GC/836/P06",
+      "status": "PREPARED_HOLD_NOT_AUTHORISED",
+      "completed_state": "The controlled public record identifies the project file and published investment, subsidy and jobs figures; it does not establish payment, final eligible expenditure, compliance, recovery or an exact EU-funds share.",
+      "pending_objective": "Verify the exact custodian and obtain the complete application, declarations of other aid/finance, award, eligible-cost, payment, jobs, inspection, closure and any FEDER/cofinancing record while keeping private RICPE/HNT finance, RIC, regional incentives and EU funds separate.",
+      "package": "ESP-RICPE-GC836-PUBLIC-SUPPORT",
+      "external_authority": false
+    },
+    {
+      "id": "MPA-031",
+      "jurisdiction": "SPAIN",
+      "lane": "TRANSPARENCY_PUBLIC_SUPPORT",
+      "target": "Transparency request 502395 concerning GC/836/P06",
+      "status": "SENT_RECEIPT_OR_REVIEW_PENDING",
+      "completed_state": "The request/file reference is documented and identifies selected GC/836/P06 material; it is not the complete substantive regional-incentives file.",
+      "pending_objective": "Reconcile the official request, linked appeal or decision, service, current status, production inventory and relationship to the complete GC/836/P06 file before any further notice or appeal.",
+      "package": "ESP-RICPE-GC836-PUBLIC-SUPPORT",
+      "external_authority": false
+    }
+  ],
+  "proceeding_file_mapping": [
+    {"object_key":"CONCURSO_36_2012","action_ids":["MPA-010"],"boundary":"Concurso identity and estate-production route only."},
+    {"object_key":"MEETING_POINT_357_2024","action_ids":["MPA-011","MPA-012"],"boundary":"Three-debtor pre-insolvency file and court-controlled expert production."},
+    {"object_key":"DP_1956_2026","action_ids":["MPA-029"],"boundary":"Separate AC/Concurso criminal route; not 357/2024 or a German insolvency."},
+    {"object_key":"FTI_COMPLIANCE_2024_94","action_ids":["MPA-001"],"boundary":"Corporate compliance file, not a court proceeding."},
+    {"object_key":"FTI_INSOLVENCY_1500_IN_1758_24","action_ids":["MPA-002"],"boundary":"Exact German debtor/proceeding remains separately identity-pending."},
+    {"object_key":"MP_INTERNATIONAL_INSOLVENCY_1500_IN_10126_24","action_ids":["MPA-003"],"boundary":"Exact German debtor/proceeding remains separately identity-pending."},
+    {"object_key":"MP_HOLDING_INSOLVENCY_1500_IN_10107_24","action_ids":["MPA-004"],"boundary":"Exact German debtor/proceeding remains separately identity-pending."},
+    {"object_key":"CNMC_C_1549_25","action_ids":["MPA-017"],"boundary":"Competition-control file; not proof of every asset or closing stage."},
+    {"object_key":"CGPJ_ALZADA_286_2026","action_ids":["MPA-015"],"boundary":"Judicial-governance appeal; not a merits-reversal route."},
+    {"object_key":"REGAGE_15JAN_03492334","action_ids":["MPA-014"],"boundary":"Registration locator; not proof of opening, joinder or review."},
+    {"object_key":"REGAGE_15JAN_03609135","action_ids":["MPA-014"],"boundary":"Registration locator; not proof of opening, joinder or review."},
+    {"object_key":"REGAGE_15JAN_03629560","action_ids":["MPA-014"],"boundary":"Registration locator; not proof of opening, joinder or review."},
+    {"object_key":"RICPE_ETHICS_CLOSURE","action_ids":["MPA-019"],"boundary":"Channel communication/closure file; named resolver and native routing remain open."},
+    {"object_key":"CNMV_RICPE_LINKED_PACKAGE","action_ids":["MPA-020"],"boundary":"Transmission/extension package; linkage, assignment and merits review remain open."},
+    {"object_key":"GC_836_P06","action_ids":["MPA-030"],"boundary":"Regional-incentives file; not automatically a FEDER operation."},
+    {"object_key":"TRANSPARENCY_502395","action_ids":["MPA-031"],"boundary":"Transparency request/file; not the complete substantive GC/836/P06 record."},
+    {"object_key":"OLAF_7JAN_NOTICE","action_ids":["MPA-023"],"boundary":"Recorded notice; receipt, routing, action and transaction tracing remain open."},
+    {"object_key":"SEPI_FASEE_MEETING_POINT_OPERATION_FILE","action_ids":["MPA-013"],"boundary":"EUR 31 million support-operation file; current exposure/use/loss remain open."}
+  ],
+  "package_definitions": {
+    "GER-INS-CUSTODY": "Separate debtor-specific German court/administrator preservation and production packages.",
+    "ESP-357-AUREN": "Three-debtor 357/2024 court-controlled chronology, allocation and Auren production package.",
+    "ESP-C36-ESTATE": "Concurso 36/2012 active-estate, productive-unit, implementation and accounting package.",
+    "ESP-SEPI-PUBLIC-CREDIT": "SEPI/FASEE public-credit, disclosure, monitoring and current-exposure package.",
+    "CRIMINAL-PRESERVATION": "Actor-specific criminal preservation/routing package with competence and non-duplication controls.",
+    "CORPORATE-RIGHT-OF-REPLY": "Narrow non-accusatory custody, disclosure and right-of-reply package.",
+    "RICPE-CNMV-FOLLOW-UP": "Receipt, joinder, preservation, assignment and review-status request for the 27-August extensions.",
+    "RICPE-ALERTADOR": "Law 2/2023 scope/protection and native channel-audit package.",
+    "HELD-EMAIL-REPLACEMENT": "Three-attachment, five-link corrective package subject to full preview and fresh authorization.",
+    "PUBLICATION-HOTFIX": "Current-tree redaction, regression test and live zero-exposure verification.",
+    "ASSET-TRANSACTION-MONITORING": "Public-source change detection for bounded former FTI/Meeting Point assets, legal persons, control, management and capital roles in the Canary Islands and Spain; all promotion remains human-reviewed and separately authorised.",
+    "ESP-RICPE-GC836-PUBLIC-SUPPORT": "Regional-incentive, transparency, RIC/FEDER separation, payment/compliance and current-status production for GC/836/P06 and request 502395."
+  }
+}

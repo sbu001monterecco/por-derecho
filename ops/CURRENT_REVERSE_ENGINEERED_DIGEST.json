@@ -61,13 +61,22 @@
     }
   },
   "identity_registry": {
-    "total": 194,
-    "PERSON": 86,
-    "ORGANISATION": 66,
+    "total": 204,
+    "PERSON": 87,
+    "ORGANISATION": 71,
     "STRUCTURE": 10,
-    "INSTITUTION": 15,
-    "PROCEEDING": 17,
-    "archive_backfill": "OPEN"
+    "INSTITUTION": 18,
+    "PROCEEDING": 18,
+    "archive_backfill": "OPEN",
+    "candidate_state": "SOURCE_AND_STATIC_SURFACES_UPDATED_PUBLICATION_PENDING",
+    "last_live_verified_counts": {
+      "total": 194,
+      "PERSON": 86,
+      "ORGANISATION": 66,
+      "STRUCTURE": 10,
+      "INSTITUTION": 15,
+      "PROCEEDING": 17
+    }
   },
   "controlling_rule": "Sun Park was one economically integrated hotel platform but not one legal person, title, operator, debt, insolvency estate or claimant.",
   "causal_chain": [
@@ -95,7 +104,7 @@
       "source-before-conclusion",
       "economic unity with legal-perimeter separation",
       "adverse and contrary evidence controls",
-      "194-identity public denominator",
+      "194-identity last-live denominator with a separate 204-identity publication candidate",
       "exact-main Pages, verifier and production-smoke success"
     ],
     "risks": [
@@ -107,6 +116,8 @@
     ]
   },
   "caret_scope": {
+    "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
+    "control_file": "assets/data/caepr-caret-unitary-digest-v1.json",
     "current_live_state": "PARTIAL_NOT_ALL_IS",
     "confirmed": 19,
     "denominator": 24,
@@ -114,12 +125,128 @@
     "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
     "reasons": [
       "prepared against earlier 16dd443 repository state",
-      "current canonical denominator is 194",
+      "the last live-verified denominator is 194 while the current source/static candidate is 204",
       "proceeding IDs R-0011 through R-0017 are occupied",
       "Matkator and ONA exact-entity reconciliation remains open",
       "Clubotel, PP1041 and EH90 require current-registry admission"
     ]
   },
+  "specialist_modules": [
+    {
+      "module_id": "PD-ALV-MP357-MULTI-20260827-01",
+      "scope": "Magistrate-Judge Alberto López Villarrubia of the then Commercial Court No. 1 of Las Palmas de Gran Canaria / Concurso 36/2012 / Club Sei / Meeting Point 357/2024",
+      "analysis_order": [
+        "CRIMINAL_FIRST",
+        "INSOLVENCY",
+        "CIVIL_RECOVERY",
+        "INSTITUTIONAL_PUBLIC_FUNDS"
+      ],
+      "human_matrix": "archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md",
+    "machine_matrix": "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
+    "caret_control": "assets/data/caepr-caret-alberto-meeting-point-357-v1.json",
+    "first_hop_caret_control": "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+      "publication_manifest": "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
+      "caret_scope_type": "SEPARATE_SPECIALIST_EXHAUSTIVE_CENSUS",
+    "caret_scope": {
+        "confirmed": 25,
+        "pending": 7,
+        "suspended": 0,
+        "denominator": 32,
+      "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS"
+    },
+    "first_hop_caret_scope": {
+      "confirmed": 56,
+      "pending": 74,
+      "suspended": 0,
+      "denominator": 130,
+      "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"
+    },
+      "unitary_caret_scope_unchanged": true,
+      "public_routes": {
+        "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
+        "en": "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
+      },
+      "publication_state": "PREPARED_PENDING_MERGE"
+    },
+    {
+      "module_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+      "scope": "FTI Touristik / Meeting Point / Club Sei / RICPE whistleblower continuity, cross-border actions and former-asset transaction monitoring in the Canary Islands and Spain",
+      "module_relation": "ADDITIVE_SPECIALIST_CANDIDATE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE",
+      "analysis_order": [
+        "CRIMINAL_FIRST",
+        "INSOLVENCY",
+        "CORPORATE_TRANSACTION_AND_CAPITAL",
+        "CIVIL_RECOVERY",
+        "INSTITUTIONAL_PUBLIC_FUNDS",
+        "WHISTLEBLOWER_AND_DATA_GOVERNANCE"
+      ],
+      "digest": "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md",
+      "action_register": "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json",
+      "deletion_audit": "docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md",
+      "publication_manifest": "publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json",
+      "caret_controls": {
+        "continuity_spine": {
+          "control_file": "assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json",
+          "confirmed": 39,
+          "pending": 26,
+          "suspended": 0,
+          "denominator": 65,
+          "verdict": "FULL_FINITE_CONTINUITY_SPINE_CENSUS_PARTIAL_NOT_ALL_IS"
+        },
+        "professional_institutional": {
+          "control_file": "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json",
+          "confirmed": 40,
+          "pending": 61,
+          "suspended": 0,
+          "denominator": 101,
+          "verdict": "FULL_ROLE_SELECTED_CENSUS_PARTIAL_NOT_ALL_IS",
+          "scope_boundary": "Thirteen frozen professional/institutional source surfaces; hotel-by-hotel and newly discovered transaction-counterparty objects require separate admission."
+        },
+        "identity_only": true,
+        "scopes_remain_separate": true
+      },
+      "action_state": {
+        "actions": 31,
+        "package_definitions": 12,
+        "mapped_proceeding_files": 18,
+        "external_action_authorized": false
+      },
+      "asset_transaction_monitor": {
+        "control": "ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json",
+        "register": "assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+        "schema": "assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json",
+        "script": "scripts/monitor_fti_meeting_point_asset_transactions.py",
+        "workflow": ".github/workflows/monitor-fti-meeting-point-asset-transactions.yml",
+        "heritage_scopes": 3,
+        "entity_objects": 11,
+        "automated_safe_public_sources": 12,
+        "baseline_events": 2,
+        "open_gaps": 8,
+        "coverage": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
+        "automatic_public_promotion": false
+      },
+      "judicial_title_control": {
+        "control": "archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md",
+        "historical_own_court_reference": "el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
+        "current_reference": "el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria",
+        "former_court_3_boundary": "The three 24-Oct-2024 notices prove only the Public Insolvency Register attribution displayed in them; signature, substitution or allocation, capacity, knowledge, conflict and disclosure remain open pending the signed act and assignment trail."
+      },
+      "ricpe_resolver_boundary": {
+        "named_individual_resolver": false,
+        "provider_perimeter": "Ithikios / DIGITAL PRODUCTS DEVELOPMENT SL",
+        "rule": "The certificate or platform signature identifies the provider perimeter, not the human or RICPE organ that decided, configured, accessed or routed the case, circulated it to the Board or addressed conflict."
+      },
+      "external_action_authority": {
+        "repository_and_website_publication_authorized": true,
+        "email_authorized": false,
+        "filing_authorized": false,
+        "notice_authorized": false,
+        "portal_submission_authorized": false,
+        "authority_contact_authorized": false
+      },
+      "publication_state": "PREPARED_PENDING_MERGE"
+    }
+  ],
   "priority_sequence": [
     "single-satisfaction credit ledger",
     "certified PP1041 authority/authorship file",

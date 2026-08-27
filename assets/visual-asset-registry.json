@@ -81,7 +81,7 @@
     "person.alberto-lopez-villarrubia.primary": {
       "subject_type": "person",
       "canonical_name": "Alberto López Villarrubia",
-      "short_label": "Magistrado Alberto López Villarrubia",
+      "short_label": "Magistrado D. Alberto López Villarrubia",
       "path": "assets/actors/alberto-lopez-villarrubia.jpg",
       "git_blob_sha": "52487a2fb01b2df6b231938668c9f858544fecc5",
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",

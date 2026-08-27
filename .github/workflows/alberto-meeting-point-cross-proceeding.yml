@@ -1,15 +1,144 @@
-name: Validate Alberto Meeting Point cross-proceeding dossier
+name: Validate Magistrate López Villarrubia / Meeting Point cross-proceeding dossier
 on:
   pull_request:
     paths:
       - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
       - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'es/concurso-36-2012-magistrado-juez/**'
+      - 'en/insolvency-36-2012-mercantile-court-1/**'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/**'
+      - 'es/concurso-36-2012-masa-activa-2018-2021/**'
+      - 'en/insolvency-36-2012-active-estate-2018-2021/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/**'
+      - 'en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/**'
+      - 'en/unitary-criminal-hypothesis-2011-present/**'
       - 'archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md'
+      - 'archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md'
+      - 'archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md'
+      - 'archive/prompts/ALBERTO_MEETING_POINT_MULTIDIRECTIONAL_CRIMINAL_FIRST_UPDATE_PROMPT_27AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md'
+      - 'archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/SUN_PARK_PRE_7JUN2018_ONSITE_APPROACHES_EVIDENCE_REGISTER_20AUG2026.md'
+      - 'archive/SUN_PARK_7JUN2018_RUNUP_SOURCE_INGEST_17AUG2026.md'
+      - 'archive/SUN_PARK_COMUNIDAD_PROCEEDINGS_REGISTER_CANARY_ISLANDS_15AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md'
+      - 'archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md'
+      - 'archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md'
+      - 'archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md'
+      - 'archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md'
+      - 'archive/CAM_2022_ADJUDICATION_TRANSACTION_IDENTITY_AND_CONSIDERATION_CONTROL_19AUG2026.md'
+      - 'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-357-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'sitemap.xml'
+      - 'sitemap-cgpj.xml'
+      - 'sitemap-judicial-spine.xml'
+      - 'sitemap-meeting-point.xml'
+      - 'CURRENT_REVERSE_ENGINEERED_DIGEST.md'
+      - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
       - 'ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md'
+      - 'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
       - 'scripts/validate_alberto_meeting_point_cross_proceeding.py'
+      - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
+      - 'scripts/validate_current_reverse_engineered_digest.py'
+      - 'scripts/validate_operational_identity_registry.py'
+      - 'scripts/verify_current_reverse_engineered_digest_live.py'
+      - '.github/workflows/validate-current-reverse-engineered-digest.yml'
+      - '.github/workflows/alberto-meeting-point-cross-proceeding.yml'
   push:
     branches: [main]
+    paths:
+      - 'es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/**'
+      - 'en/alberto-lopez-villarrubia-meeting-point-357-active-estate/**'
+      - 'es/concurso-36-2012-magistrado-juez/**'
+      - 'en/insolvency-36-2012-mercantile-court-1/**'
+      - 'es/concurso-36-2012-juzgado-mercantil-1/**'
+      - 'es/concurso-36-2012-masa-activa-2018-2021/**'
+      - 'en/insolvency-36-2012-active-estate-2018-2021/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/lava-verde-club-sei-meeting-point/**'
+      - 'en/lava-verde-club-sei-meeting-point/**'
+      - 'es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/**'
+      - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
+      - 'es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/**'
+      - 'en/legal-notebook/meeting-point-357-2024-judicial-traceability/**'
+      - 'es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/**'
+      - 'en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/**'
+      - 'es/reconstruccion-unitaria-autoridades-publicas/**'
+      - 'en/public-authority-unitary-case-reconstruction/**'
+      - 'es/registro-identidad-materia/**'
+      - 'en/matter-identity-registry/**'
+      - 'es/verificacion-caepr-caret-digest-unitario/**'
+      - 'en/caepr-caret-unitary-digest/**'
+      - 'es/ingenieria-inversa-criminal-unitaria/**'
+      - 'en/unitary-criminal-reverse-engineering/**'
+      - 'es/hipotesis-criminal-unitaria-2011-presente/**'
+      - 'en/unitary-criminal-hypothesis-2011-present/**'
+      - 'archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md'
+      - 'archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md'
+      - 'archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md'
+      - 'archive/prompts/ALBERTO_MEETING_POINT_MULTIDIRECTIONAL_CRIMINAL_FIRST_UPDATE_PROMPT_27AUG2026.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/CONCURSO_36_2012_JUDICIAL_LAJ_ACTS_MASTER_REGISTER_17AUG2026.md'
+      - 'archive/CONCURSO_36_2012_CANONICAL_COURT_BINARY_REGISTER_17AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/SUN_PARK_PRE_7JUN2018_ONSITE_APPROACHES_EVIDENCE_REGISTER_20AUG2026.md'
+      - 'archive/SUN_PARK_7JUN2018_RUNUP_SOURCE_INGEST_17AUG2026.md'
+      - 'archive/SUN_PARK_COMUNIDAD_PROCEEDINGS_REGISTER_CANARY_ISLANDS_15AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md'
+      - 'archive/LAVA_VERDE_CLUB_SEI_MEETING_POINT_PUBLICATION_BASIS_15AUG2026.md'
+      - 'archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md'
+      - 'archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md'
+      - 'archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md'
+      - 'archive/CAM_2022_ADJUDICATION_TRANSACTION_IDENTITY_AND_CONSIDERATION_CONTROL_19AUG2026.md'
+      - 'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-357-v1.json'
+      - 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'assets/data/matter-identity-registry-v1*.json'
+      - 'sitemap.xml'
+      - 'sitemap-cgpj.xml'
+      - 'sitemap-judicial-spine.xml'
+      - 'sitemap-meeting-point.xml'
+      - 'CURRENT_REVERSE_ENGINEERED_DIGEST.md'
+      - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
+      - 'ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md'
+      - 'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
+      - 'scripts/validate_alberto_meeting_point_cross_proceeding.py'
+      - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
+      - 'scripts/validate_current_reverse_engineered_digest.py'
+      - 'scripts/validate_operational_identity_registry.py'
+      - 'scripts/verify_current_reverse_engineered_digest_live.py'
+      - '.github/workflows/validate-current-reverse-engineered-digest.yml'
+      - '.github/workflows/alberto-meeting-point-cross-proceeding.yml'
 permissions:
+  actions: read
   contents: read
 jobs:
   validate:
@@ -22,4 +151,571 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - run: python scripts/validate_alberto_meeting_point_cross_proceeding.py
+      - name: Validate specialist graph and finite caret census
+        run: python scripts/validate_alberto_meeting_point_cross_proceeding.py
+      - name: Validate first-hop rendered caret provenance
+        run: python scripts/validate_alberto_meeting_point_first_hop_caret.py
+      - name: Validate canonical identity registry
+        run: python scripts/validate_operational_identity_registry.py
+      - name: Validate scope separation in the current digest
+        run: python scripts/validate_current_reverse_engineered_digest.py
+
+  verify-live:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      BASE: https://sbu001monterecco.github.io/por-derecho
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Attest successful Pages deployment for the exact pushed SHA
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        shell: python
+        run: |
+          import json
+          import os
+          import time
+          import urllib.request
+
+          repository = os.environ['REPOSITORY']
+          expected_sha = os.environ['EXPECTED_SHA']
+          token = os.environ['GH_TOKEN']
+          api = (
+              f'https://api.github.com/repos/{repository}/actions/runs'
+              f'?head_sha={expected_sha}&per_page=100'
+          )
+          last_seen = []
+          for attempt in range(1, 49):
+              request = urllib.request.Request(
+                  api,
+                  headers={
+                      'Accept': 'application/vnd.github+json',
+                      'Authorization': f'Bearer {token}',
+                      'X-GitHub-Api-Version': '2022-11-28',
+                      'User-Agent': 'por-derecho-am357-pages-attestation/2',
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=25) as response:
+                  payload = json.load(response)
+              candidates = [
+                  run for run in payload.get('workflow_runs', [])
+                  if run.get('name') == 'pages build and deployment'
+                  and run.get('path') == 'dynamic/pages/pages-build-deployment'
+                  and run.get('head_sha') == expected_sha
+              ]
+              last_seen = [
+                  {
+                      'id': run.get('id'),
+                      'head_sha': run.get('head_sha'),
+                      'status': run.get('status'),
+                      'conclusion': run.get('conclusion'),
+                      'html_url': run.get('html_url'),
+                  }
+                  for run in candidates
+              ]
+              successful = next(
+                  (
+                      run for run in candidates
+                      if run.get('status') == 'completed'
+                      and run.get('conclusion') == 'success'
+                  ),
+                  None,
+              )
+              if successful:
+                  print(json.dumps({
+                      'state': 'EXACT_PAGES_RUN_ATTESTED',
+                      'expected_sha': expected_sha,
+                      'pages_run_id': successful.get('id'),
+                      'pages_run_number': successful.get('run_number'),
+                      'pages_head_sha': successful.get('head_sha'),
+                      'pages_url': successful.get('html_url'),
+                      'attempt': attempt,
+                  }, sort_keys=True))
+                  raise SystemExit(0)
+              print(f'Pages attestation attempt {attempt}/48: pending', flush=True)
+              if attempt < 48:
+                  time.sleep(10)
+
+          print(json.dumps({
+              'state': 'EXACT_PAGES_RUN_NOT_ATTESTED',
+              'expected_sha': expected_sha,
+              'last_seen': last_seen,
+          }, sort_keys=True))
+          raise SystemExit(1)
+      - name: Read back exact deployed cross-proceeding graph
+        shell: python
+        run: |
+          import hashlib
+          import json
+          import os
+          import time
+          import urllib.request
+          from pathlib import Path
+          from html.parser import HTMLParser
+          from urllib.parse import urljoin
+
+          base = os.environ['BASE'].rstrip('/')
+          head_sha = os.environ['GITHUB_SHA']
+          workspace = Path(os.environ['GITHUB_WORKSPACE']).resolve()
+
+          class DocumentParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.anchors = []
+                  self.ids = set()
+                  self.links = []
+                  self.meta = []
+
+              def handle_starttag(self, tag, attrs):
+                  item = dict(attrs)
+                  if item.get('id'):
+                      self.ids.add(item['id'])
+                  if tag == 'a' and item.get('href'):
+                      self.anchors.append(item['href'])
+                  elif tag == 'link':
+                      self.links.append(item)
+                  elif tag == 'meta':
+                      self.meta.append(item)
+
+          def fetch_bytes(route):
+              separator = '&' if '?' in route else '?'
+              url = f'{base}{route}{separator}am357_live={head_sha}-{time.time_ns()}'
+              request = urllib.request.Request(
+                  url,
+                  headers={
+                      'User-Agent': 'por-derecho-am357-live-readback/1',
+                      'Cache-Control': 'no-cache',
+                      'Pragma': 'no-cache',
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  if response.status != 200:
+                      raise RuntimeError(f'{route}: HTTP {response.status}')
+                  return response.read()
+
+          hubs = {
+              'es': '/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/',
+              'en': '/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/',
+          }
+          source_routes = {
+              'es': [
+                  '/es/concurso-36-2012-magistrado-juez/#ledger',
+                  '/es/concurso-36-2012-masa-activa-2018-2021/#contradiccion',
+                  '/es/toma-control-sun-park-7-junio-2018/#hechos-7-junio',
+                  '/es/adjudicacion-2022-reconstruccion-documental/',
+                  '/es/lava-verde-club-sei-meeting-point/#cadena',
+                  '/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#sepi',
+                  '/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/#registro',
+                  '/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/',
+                  '/es/reconstruccion-unitaria-autoridades-publicas/',
+              ],
+              'en': [
+                  '/en/insolvency-36-2012-mercantile-court-1/#ledger',
+                  '/en/insolvency-36-2012-active-estate-2018-2021/#contradiction',
+                  '/en/sun-park-takeover-7-june-2018/#events-of-7-june',
+                  '/en/2022-adjudication-documentary-reconstruction/',
+                  '/en/lava-verde-club-sei-meeting-point/#chain',
+                  '/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#sepi',
+                  '/en/legal-notebook/meeting-point-357-2024-judicial-traceability/#register',
+                  '/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/',
+                  '/en/public-authority-unitary-case-reconstruction/',
+              ],
+          }
+          support_routes = [
+              '/es/registro-identidad-materia/',
+              '/es/verificacion-caepr-caret-digest-unitario/',
+              '/es/ingenieria-inversa-criminal-unitaria/',
+              '/es/hipotesis-criminal-unitaria-2011-presente/',
+              '/en/matter-identity-registry/',
+              '/en/caepr-caret-unitary-digest/',
+              '/en/unitary-criminal-reverse-engineering/',
+              '/en/unitary-criminal-hypothesis-2011-present/',
+          ]
+          legacy_route = '/es/concurso-36-2012-juzgado-mercantil-1/'
+          matrix_route = '/assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json'
+          manifest_route = '/publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
+
+          def route_to_path(route):
+              clean = route.split('#', 1)[0].split('?', 1)[0].lstrip('/')
+              return clean + 'index.html' if clean.endswith('/') else clean
+
+          candidate_paths = [
+              route_to_path(route)
+              for route in (
+                  list(hubs.values())
+                  + [
+                      route.split('#', 1)[0]
+                      for language in ('es', 'en')
+                      for route in source_routes[language]
+                  ]
+                  + support_routes
+                  + [legacy_route]
+              )
+          ]
+          candidate_paths += [
+              'assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json',
+              'assets/data/caepr-caret-alberto-meeting-point-357-v1.json',
+              'assets/data/caepr-caret-unitary-digest-v1.json',
+              'assets/data/matter-identity-registry-v1.json',
+              'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json',
+              'CURRENT_REVERSE_ENGINEERED_DIGEST.md',
+              'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json',
+              'sitemap.xml',
+              'sitemap-cgpj.xml',
+              'sitemap-judicial-spine.xml',
+              'sitemap-meeting-point.xml',
+          ]
+          first_hop_path = 'assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'
+          if (workspace / first_hop_path).is_file():
+              candidate_paths.append(first_hop_path)
+          assert len(source_routes['es']) + len(source_routes['en']) == 18
+          assert len(support_routes) == 8
+          assert len(candidate_paths) == len(set(candidate_paths))
+
+          def path_to_route(path):
+              if path.endswith('/index.html'):
+                  return '/' + path[:-len('index.html')]
+              return '/' + path
+
+          local_bytes = {}
+          for path in candidate_paths:
+              resolved = (workspace / path).resolve()
+              if workspace not in resolved.parents:
+                  raise AssertionError(f'candidate escapes checkout: {path}')
+              if not resolved.is_file():
+                  raise AssertionError(f'missing candidate file: {path}')
+              local_bytes[path] = resolved.read_bytes()
+
+          live_bytes = {}
+          last_mismatches = []
+          for attempt in range(1, 49):
+              current = {}
+              mismatches = []
+              for path in candidate_paths:
+                  route = path_to_route(path)
+                  try:
+                      remote = fetch_bytes(route)
+                      current[route] = remote
+                  except Exception as exc:
+                      mismatches.append({'path': path, 'error': str(exc)})
+                      continue
+                  local = local_bytes[path]
+                  if remote != local:
+                      mismatches.append({
+                          'path': path,
+                          'local_sha256': hashlib.sha256(local).hexdigest(),
+                          'live_sha256': hashlib.sha256(remote).hexdigest(),
+                      })
+              if not mismatches:
+                  live_bytes = current
+                  break
+              last_mismatches = mismatches
+              print(
+                  f'Exact-byte readback attempt {attempt}/48: '
+                  f'{len(mismatches)} mismatch(es)',
+                  flush=True,
+              )
+              if attempt < 48:
+                  time.sleep(10)
+          else:
+              raise SystemExit(
+                  'LIVE RELEASE GATE FAILED: exact-byte mismatch after '
+                  f'Pages attestation: {json.dumps(last_mismatches, sort_keys=True)}'
+              )
+
+          bodies = {
+              route: payload.decode('utf-8', errors='strict')
+              for route, payload in live_bytes.items()
+          }
+
+          def body(route):
+              clean = route.split('#', 1)[0]
+              return bodies[clean]
+
+          def document(route):
+              parser = DocumentParser()
+              parser.feed(body(route))
+              return parser
+
+          def absolute_links(route):
+              page_url = base + route
+              return {urljoin(page_url, href) for href in document(route).anchors}
+
+          def require_link(source, target):
+              expected = base + target
+              if expected not in absolute_links(source):
+                  raise AssertionError(f'{source}: missing exact link {target}')
+
+          candidate = json.loads(body(matrix_route))
+          specialist = candidate['scope_separation']['specialist_caret_scope']
+          unitary = candidate['scope_separation']['unitary_caret_scope']
+          assert specialist == {
+              'control_id': 'PD-ALV-MP357-CARET-20260827-01',
+              'confirmed': 25,
+              'pending': 7,
+              'denominator': 32,
+              'verdict': 'FULL_CENSUS_PARTIAL_NOT_ALL_IS',
+          }
+          assert unitary == {
+              'control_id': 'PD-UNITARY-REDIGEST-20260827-01',
+              'confirmed': 19,
+              'pending': 5,
+              'denominator': 24,
+              'changed_by_this_module': False,
+          }
+
+          manifest = json.loads(body(manifest_route))
+          allowed_states = [
+              'PREPARED_PENDING_MERGE',
+              'REMOTE_SOURCE',
+              'PR_OPEN',
+              'CI_GREEN',
+              'MERGED',
+              'DEPLOYED',
+          ]
+          manifest_state = manifest['current_state']
+          assert manifest_state in allowed_states, (
+              f'manifest state is not publication-authorised: {manifest_state!r}'
+          )
+          assert manifest['publication_authorized'] is True
+          assert manifest['communication_authorized'] is False
+          assert manifest['email_or_filing_action'] == 'HOLD_NOT_AUTHORISED'
+          assert manifest['control_id'] == 'PD-ALV-MP357-MULTI-20260827-01'
+          assert manifest['first_hop_caret_scope'] == {
+              'control_id': 'PD-ALV-MP357-FIRST-HOP-CARET-20260827-01',
+              'confirmed': 56,
+              'pending': 74,
+              'suspended': 0,
+              'denominator': 130,
+              'verdict': 'FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS',
+              'identity_only': True,
+          }
+
+          assert candidate['control_id'] == 'PD-ALV-MP357-MULTI-20260827-01'
+          assert candidate['status'] == 'REPOSITORY_CONTROLLED_PUBLIC_SAFE'
+          assert candidate['hub_routes'] == hubs
+
+          nodes = candidate['nodes']
+          assert [node['node_id'] for node in nodes] == [f'AM357-N{i:02d}' for i in range(1, 10)]
+          expected_topology = [
+              ('AM357-E01', 'AM357-N01', 'AM357-N02', 'judicial-supervision-to-estate-preservation'),
+              ('AM357-E02', 'AM357-N02', 'AM357-N03', 'estate-perimeter-to-material-control'),
+              ('AM357-E03', 'AM357-N08', 'AM357-N03', 'funded-exit-to-control'),
+              ('AM357-E04', 'AM357-N02', 'AM357-N04', 'valuation-to-adjudication'),
+              ('AM357-E05', 'AM357-N03', 'AM357-N05', 'control-to-commercialisation'),
+              ('AM357-E06', 'AM357-N05', 'AM357-N04', 'pre-title-commercialisation-to-adjudication'),
+              ('AM357-E07', 'AM357-N05', 'AM357-N06', 'commercial-rights-to-public-credit'),
+              ('AM357-E08', 'AM357-N05', 'AM357-N07', 'club-sei-to-three-debtor-file'),
+              ('AM357-E09', 'AM357-N01', 'AM357-N07', 'cross-proceeding-judicial-attribution'),
+              ('AM357-E10', 'AM357-N06', 'AM357-N07', 'public-credit-to-restructuring'),
+              ('AM357-E11', 'AM357-N07', 'AM357-N09', 'restructuring-to-institutional-consequence'),
+              ('AM357-E12', 'AM357-N04', 'AM357-N09', 'title-to-benefit-loss'),
+              ('AM357-E13', 'AM357-N03', 'AM357-N04', 'material-control-to-adjudication'),
+          ]
+          actual_topology = [
+              (
+                  edge['edge_id'],
+                  edge['from'],
+                  edge['to'],
+                  edge['evidence_lane'],
+              )
+              for edge in candidate['edges']
+          ]
+          assert actual_topology == expected_topology
+          for language in ('es', 'en'):
+              hub = hubs[language]
+              hub_body = body(hub)
+              for marker in (
+                  'PD-ALV-MP357-MULTI-20260827-01',
+                  '25/32',
+                  '56/130',
+                  '19/24',
+              ):
+                  assert marker in hub_body, f'{hub}: missing {marker}'
+              hub_document = document(hub)
+              assert hub_document.ids.issuperset(
+                  {f'am357-n{index:02d}' for index in range(1, 10)}
+              ), f'{hub}: incomplete AM357 node anchors'
+              for index, source in enumerate(source_routes[language], 1):
+                  assert nodes[index - 1]['primary_routes'][language] == source
+                  require_link(hub, source)
+                  source_page = source.split('#', 1)[0]
+                  require_link(source_page, f'{hub}#am357-n{index:02d}')
+
+          caret = json.loads(body('/assets/data/caepr-caret-alberto-meeting-point-357-v1.json'))
+          assert caret['control_id'] == 'PD-ALV-MP357-CARET-20260827-01'
+          assert caret['counts']['eligible'] == 32
+          assert caret['counts']['confirmed'] == 25
+          assert caret['counts']['pending'] == 7
+          assert caret['verdict'] == 'FULL CENSUS COMPLETE; 25/32 CARET_CONFIRMED; 7 CARET_PENDING; PARTIAL — NOT ALL IS^'
+          assert caret['unitary_scope_reference'] == {
+              'control_id': 'PD-UNITARY-REDIGEST-20260827-01',
+              'confirmed': 19,
+              'pending': 5,
+              'denominator': 24,
+              'changed_by_this_module': False,
+          }
+
+          assert first_hop_path in candidate_paths
+          first_hop = json.loads(body('/assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json'))
+          assert first_hop['control_id'] == 'PD-ALV-MP357-FIRST-HOP-CARET-20260827-01'
+          assert first_hop['counts']['eligible'] == 130
+          assert first_hop['counts']['confirmed'] == 56
+          assert first_hop['counts']['pending'] == 74
+          assert first_hop['counts']['suspended'] == 0
+          assert len(first_hop['records']) == 130
+          assert sum(record['state'] == 'CARET_CONFIRMED' for record in first_hop['records']) == 56
+          assert sum(record['state'] == 'CARET_PENDING' for record in first_hop['records']) == 74
+          assert all(record.get('next_source_needed') for record in first_hop['records'] if record['state'] == 'CARET_PENDING')
+          assert first_hop['verdict'] == 'FULL FIRST-HOP CENSUS COMPLETE; 56/130 CARET_CONFIRMED; 74 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^'
+
+          unitary_caret = json.loads(body('/assets/data/caepr-caret-unitary-digest-v1.json'))
+          assert unitary_caret['control_id'] == 'PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01'
+          assert unitary_caret['result']['denominator'] == 24
+          assert unitary_caret['result']['confirmed'] == 19
+          assert unitary_caret['result']['pending'] == 5
+          assert unitary_caret['result']['coverage_fraction'] == '19/24'
+
+          registry = json.loads(body('/assets/data/matter-identity-registry-v1.json'))
+          assert registry['counts'] == {
+              'total': 204,
+              'PERSON': 87,
+              'ORGANISATION': 71,
+              'STRUCTURE': 10,
+              'INSTITUTION': 18,
+              'PROCEEDING': 18,
+          }
+          for route, language_marker in (
+              ('/es/registro-identidad-materia/', 'Los <strong>204 IDs</strong>'),
+              ('/en/matter-identity-registry/', 'The <strong>204 IDs</strong>'),
+          ):
+              registry_body = body(route)
+              assert 'data-static-registry-counts="204-87-71-10-18-18"' in registry_body
+              assert 'data-registry-stat="TOTAL">204' in registry_body
+              assert language_marker in registry_body
+
+          lateral_edges = [
+              ('/es/concurso-36-2012-magistrado-juez/', '/es/concurso-36-2012-masa-activa-2018-2021/#contradiccion'),
+              ('/es/concurso-36-2012-masa-activa-2018-2021/', '/es/concurso-36-2012-magistrado-juez/#ledger'),
+              ('/es/concurso-36-2012-masa-activa-2018-2021/', '/es/lava-verde-club-sei-meeting-point/#cadena'),
+              ('/es/lava-verde-club-sei-meeting-point/', '/es/concurso-36-2012-masa-activa-2018-2021/#contradiccion'),
+              ('/es/lava-verde-club-sei-meeting-point/', '/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#sepi'),
+              ('/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/', '/es/lava-verde-club-sei-meeting-point/'),
+              ('/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/', '/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/'),
+              ('/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/', '/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/#sepi'),
+              ('/es/reconstruccion-unitaria-autoridades-publicas/', '/es/ingenieria-inversa-criminal-unitaria/'),
+              ('/es/ingenieria-inversa-criminal-unitaria/', '/es/reconstruccion-unitaria-autoridades-publicas/#sala-limpia'),
+              ('/es/ingenieria-inversa-criminal-unitaria/', '/es/hipotesis-criminal-unitaria-2011-presente/'),
+              ('/es/hipotesis-criminal-unitaria-2011-presente/', '/es/ingenieria-inversa-criminal-unitaria/'),
+              ('/es/registro-identidad-materia/', '/es/verificacion-caepr-caret-digest-unitario/'),
+              ('/es/verificacion-caepr-caret-digest-unitario/', '/es/registro-identidad-materia/'),
+              ('/es/ingenieria-inversa-criminal-unitaria/', '/es/verificacion-caepr-caret-digest-unitario/'),
+              ('/es/verificacion-caepr-caret-digest-unitario/', '/es/ingenieria-inversa-criminal-unitaria/'),
+              ('/en/insolvency-36-2012-mercantile-court-1/', '/en/insolvency-36-2012-active-estate-2018-2021/#contradiction'),
+              ('/en/insolvency-36-2012-active-estate-2018-2021/', '/en/insolvency-36-2012-mercantile-court-1/#ledger'),
+              ('/en/insolvency-36-2012-active-estate-2018-2021/', '/en/lava-verde-club-sei-meeting-point/#chain'),
+              ('/en/lava-verde-club-sei-meeting-point/', '/en/insolvency-36-2012-active-estate-2018-2021/#contradiction'),
+              ('/en/lava-verde-club-sei-meeting-point/', '/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#sepi'),
+              ('/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/', '/en/lava-verde-club-sei-meeting-point/'),
+              ('/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/', '/en/legal-notebook/meeting-point-357-2024-judicial-traceability/'),
+              ('/en/legal-notebook/meeting-point-357-2024-judicial-traceability/', '/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/#sepi'),
+              ('/en/public-authority-unitary-case-reconstruction/', '/en/unitary-criminal-reverse-engineering/'),
+              ('/en/unitary-criminal-reverse-engineering/', '/en/public-authority-unitary-case-reconstruction/#clean-room'),
+              ('/en/unitary-criminal-reverse-engineering/', '/en/unitary-criminal-hypothesis-2011-present/'),
+              ('/en/unitary-criminal-hypothesis-2011-present/', '/en/unitary-criminal-reverse-engineering/'),
+              ('/en/matter-identity-registry/', '/en/caepr-caret-unitary-digest/'),
+              ('/en/caepr-caret-unitary-digest/', '/en/matter-identity-registry/'),
+              ('/en/unitary-criminal-reverse-engineering/', '/en/caepr-caret-unitary-digest/'),
+              ('/en/caepr-caret-unitary-digest/', '/en/unitary-criminal-reverse-engineering/'),
+          ]
+          for source, target in lateral_edges:
+              require_link(source, target)
+
+          supporting_hub_edges = [
+              ('/es/registro-identidad-materia/', f"{hubs['es']}#caret"),
+              ('/es/verificacion-caepr-caret-digest-unitario/', f"{hubs['es']}#caret"),
+              ('/es/ingenieria-inversa-criminal-unitaria/', f"{hubs['es']}#matriz-penal"),
+              ('/es/hipotesis-criminal-unitaria-2011-presente/', f"{hubs['es']}#matriz-penal"),
+              ('/en/matter-identity-registry/', f"{hubs['en']}#caret"),
+              ('/en/caepr-caret-unitary-digest/', f"{hubs['en']}#caret"),
+              ('/en/unitary-criminal-reverse-engineering/', f"{hubs['en']}#criminal-matrix"),
+              ('/en/unitary-criminal-hypothesis-2011-present/', f"{hubs['en']}#criminal-matrix"),
+          ]
+          for source, target in supporting_hub_edges:
+              require_link(source, target)
+
+          legacy = document(legacy_route)
+          assert any(
+              item.get('rel') == 'canonical'
+              and item.get('href') == base + '/es/concurso-36-2012-magistrado-juez/'
+              for item in legacy.links
+          )
+          assert any(
+              item.get('name') == 'robots' and item.get('content') == 'noindex,follow'
+              for item in legacy.meta
+          )
+          assert 'Puente de ruta histórica' in body(legacy_route)
+          require_link(legacy_route, '/es/concurso-36-2012-magistrado-juez/')
+
+          sitemap_checks = {
+              '/sitemap.xml': [hubs['es'], hubs['en']],
+              '/sitemap-cgpj.xml': [
+                  '/es/concurso-36-2012-magistrado-juez/',
+                  '/en/insolvency-36-2012-mercantile-court-1/',
+              ],
+              '/sitemap-judicial-spine.xml': [hubs['es'], hubs['en']],
+              '/sitemap-meeting-point.xml': [hubs['es'], hubs['en']],
+          }
+          for route, required_routes in sitemap_checks.items():
+              sitemap_body = body(route)
+              for required in required_routes:
+                  assert base + required in sitemap_body, f'{route}: missing {required}'
+
+          current_digest = body('/CURRENT_REVERSE_ENGINEERED_DIGEST.md')
+          assert 'PD-ALV-MP357-MULTI-20260827-01' in current_digest
+          assert '25/32' in current_digest
+          current_digest_control = json.loads(body('/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'))
+          assert current_digest_control['control_id'] == 'PD-UNITARY-REDIGEST-20260827-01'
+          modules = {
+              module['module_id']: module
+              for module in current_digest_control['specialist_modules']
+          }
+          assert 'PD-ALV-MP357-MULTI-20260827-01' in modules
+          assert modules['PD-ALV-MP357-MULTI-20260827-01']['caret_scope'] == {
+              'confirmed': 25,
+              'pending': 7,
+              'suspended': 0,
+              'denominator': 32,
+              'verdict': 'FULL_CENSUS_PARTIAL_NOT_ALL_IS',
+          }
+          assert modules['PD-ALV-MP357-MULTI-20260827-01']['first_hop_caret_scope'] == {
+              'confirmed': 56,
+              'pending': 74,
+              'suspended': 0,
+              'denominator': 130,
+              'verdict': 'FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS',
+          }
+
+          print(json.dumps({
+              'state': 'DEPLOYED_READBACK_PASS_CLOSEOUT_REQUIRED',
+              'head_sha': head_sha,
+              'manifest_state': manifest_state,
+              'exact_byte_surfaces': len(candidate_paths),
+              'hubs': 2,
+              'source_backlinks': 18,
+              'lateral_links': len(lateral_edges),
+              'supporting_hub_links': len(supporting_hub_edges),
+              'graph_edges': len(expected_topology),
+              'first_hop_control_included': first_hop_path in candidate_paths,
+              'specialist_caret': '25/32',
+              'first_hop_caret': '56/130',
+              'unitary_caret': '19/24',
+              'identity_source_static': 204,
+          }, sort_keys=True))

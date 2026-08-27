@@ -31,4 +31,12 @@
   ricpeCnmvClosure.async = false;
   ricpeCnmvClosure.setAttribute('data-ricpe-cnmv-closure-loader', '20260827');
   document.head.appendChild(ricpeCnmvClosure);
+
+  // Add reciprocal discovery between the FTI/Meeting Point and RICPE/CNMV
+  // evidence lanes. This is route-scoped and never performs an external act.
+  const ftiMeetingPointRicpe = document.createElement('script');
+  ftiMeetingPointRicpe.src = new URL('fti-meeting-point-ricpe-continuity-20260827.js?v=20260827a', current.src).href;
+  ftiMeetingPointRicpe.async = false;
+  ftiMeetingPointRicpe.setAttribute('data-fti-meeting-point-ricpe-loader', '20260827');
+  document.head.appendChild(ftiMeetingPointRicpe);
 })();

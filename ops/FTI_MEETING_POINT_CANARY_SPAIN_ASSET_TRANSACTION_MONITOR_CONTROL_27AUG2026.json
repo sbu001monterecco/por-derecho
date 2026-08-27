@@ -1,0 +1,243 @@
+{
+  "schema": "por-derecho.fti-meeting-point-asset-transaction-monitor-control.v1",
+  "control_id": "PD-FTI-MP-ASSET-TX-MONITOR-20260827-01",
+  "control_date": "2026-08-27",
+  "status": "ACTIVE_PUBLIC_SOURCE_MONITOR_CONFIGURATION",
+  "scope": {
+    "objective": "Detect public-source changes that may identify a buyer, owner, seller, operator, manager, franchisor, franchisee, lessor, lessee, lender, borrower, investor, fund manager, security taker, refinancer, restructuring acquirer, asset manager, adviser or other capital participant in a former FTI Touristik / Meeting Point hotel, hotel-management company, business, brand or related asset in the Canary Islands or elsewhere in Spain.",
+    "geographies": [
+      "CANARY_ISLANDS",
+      "SPAIN"
+    ],
+    "heritage_test": "An item is in scope only when a public source identifies a specific asset, legal person, portfolio or right and supplies a documented FTI Touristik / Meeting Point historic link. Branding, chronology, geography, group membership or a similar hotel name alone does not satisfy this test.",
+    "prospective_transaction_development_excluded": true,
+    "private_source_ingestion_excluded": true,
+    "website_auto_publication_excluded": true
+  },
+  "public_repository_warning": "Every configured source, term and output field is public. Native messages, private locators, unannounced assets, negotiations, pricing, identities obtained only from private channels and provider metadata must not enter this monitor.",
+  "separation_protocol": ".github/governance/TRANSACTION_DEVELOPMENT_SEPARATION_AND_PUBLICATION_PROTOCOL.md",
+  "identity_protocol": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
+  "register_path": "assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json",
+  "schema_path": "assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json",
+  "monitor_script": "scripts/monitor_fti_meeting_point_asset_transactions.py",
+  "validator_script": "scripts/validate_fti_meeting_point_asset_transaction_monitor.py",
+  "workflow_path": ".github/workflows/monitor-fti-meeting-point-asset-transactions.yml",
+  "cadence": {
+    "schedule": "17 */6 * * *",
+    "interpretation": "Four public-source checks per day. GitHub schedules may be delayed; this is monitoring, not a real-time guarantee.",
+    "manual_dispatch": true,
+    "state_continuity": "A metadata-only GitHub Actions cache supplies the acknowledged baseline, last-observed fingerprints, sticky pending-review queue and bounded public-safe history. Each run also uploads state, pending queue, incident, history, report and summary artifacts for 90 days.",
+    "no_state_rule": "When no prior state is available, establish a baseline and emit BASELINE_ESTABLISHED; do not characterize the first observation as a change.",
+    "durability_boundary": "The repository token remains contents-read only. Workflow conclusion, run summary and 90-day artifact form the durable incident available within that authority; cache and artifacts can be evicted or expire and are not an indefinite evidentiary archive. Loss of prior state must be reported as a fresh baseline, never as proof that no intervening change occurred."
+  },
+  "coverage_boundary": {
+    "status": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
+    "configured_heritage_scopes": 3,
+    "configured_public_sources": 12,
+    "configured_official_source_lanes": 11,
+    "configured_open_gaps": 8,
+    "unknown_counterparty_extraction": false,
+    "statement": "This monitor watches a finite source set and controlled aliases. It does not comprehensively discover every former FTI/Meeting Point asset, new counterparty, new CNMC case, mercantile/property/security filing or non-public transaction in Spain or the Canary Islands."
+  },
+  "source_access_lanes": [
+    {
+      "code": "AUTOMATED_SAFE",
+      "automated_fetch_permitted": true,
+      "meaning": "Finite public HTTPS pages, PDFs or RSS feeds reviewed for unattended metadata-only retrieval without authentication, cookies, CAPTCHA circumvention or session scraping."
+    },
+    {
+      "code": "MANUAL_PUBLIC",
+      "automated_fetch_permitted": false,
+      "meaning": "Public official search or record lane requiring a human query, identifier selection, terms/robots review or document-level reconciliation before a source can be onboarded."
+    },
+    {
+      "code": "PAID_OR_RESTRICTED",
+      "automated_fetch_permitted": false,
+      "meaning": "Fee, authentication, session, legitimate-interest, privacy or access-condition lane. The monitor never fetches it automatically or attempts to bypass access controls."
+    }
+  ],
+  "access_safeguards": {
+    "automated_lane_only": "AUTOMATED_SAFE",
+    "prohibited_request_headers": [
+      "Authorization",
+      "Cookie",
+      "Proxy-Authorization"
+    ],
+    "credentials_and_authentication_prohibited": true,
+    "captcha_or_session_circumvention_prohibited": true,
+    "restricted_or_legitimate_interest_source_auto_fetch_prohibited": true,
+    "onboarding_rule": "A new public source requires explicit access-lane classification, proposition boundary, heritage/entity/term references, validator coverage and human review before unattended use."
+  },
+  "source_priority": [
+    {
+      "code": "P1_OFFICIAL",
+      "rank": 1,
+      "meaning": "Official court, insolvency publication, public register, regulator, competition authority, public-funds authority or filed statutory record.",
+      "permitted_effect": "May confirm only the formal identity, act and procedural or transaction state that the official source expressly records.",
+      "guard": "An official record does not by itself prove funding, completion, beneficial ownership, operational control, disclosure, knowledge, causation, wrongdoing or liability unless it expressly records that proposition."
+    },
+    {
+      "code": "P2_PARTY_OR_FIDUCIARY",
+      "rank": 2,
+      "meaning": "Public statement by an identified transaction party, insolvency practitioner, administrator, adviser or asset/operator website.",
+      "permitted_effect": "Confirms that the identified publisher made the dated statement; a completion statement may be recorded as COUNTERPARTY_ANNOUNCED until independently corroborated.",
+      "guard": "Self-description does not resolve every legal person, asset, capacity, date, consideration, funding source, liability or historic-record handoff."
+    },
+    {
+      "code": "P3_INDEPENDENT_TRADE",
+      "rank": 3,
+      "meaning": "Established trade publication, chamber or independently edited business source.",
+      "permitted_effect": "Discovery and corroboration only unless the report reproduces and links a controlling primary source.",
+      "guard": "Do not convert reported negotiations, rescue, management, ownership or closing into a verified transaction without the underlying instrument or higher-priority source."
+    },
+    {
+      "code": "P4_DISCOVERY",
+      "rank": 4,
+      "meaning": "Search/RSS result, aggregator, repost, directory or other discovery source.",
+      "permitted_effect": "Creates a review lead only.",
+      "guard": "Never creates a register event, a caret, an allegation, a named capacity or a publication-ready proposition without independent verification."
+    }
+  ],
+  "capacity_vocabulary": [
+    "BUYER",
+    "OWNER",
+    "SELLER",
+    "OPERATOR",
+    "MANAGER",
+    "FRANCHISOR",
+    "FRANCHISEE",
+    "LESSOR",
+    "LESSEE",
+    "LENDER",
+    "BORROWER",
+    "INVESTOR",
+    "FUND_MANAGER",
+    "SECURITY_TAKER",
+    "REFINANCER",
+    "RESTRUCTURING_ACQUIRER",
+    "ASSET_MANAGER",
+    "TRANSACTION_ADVISER",
+    "INSOLVENCY_ADMINISTRATOR",
+    "OTHER_CAPITAL_ROLE"
+  ],
+  "transaction_type_vocabulary": [
+    "SHARE_ACQUISITION",
+    "ASSET_ACQUISITION",
+    "CONTROL_ACQUISITION",
+    "HOTEL_MANAGEMENT",
+    "HOTEL_OPERATION",
+    "FRANCHISE",
+    "LEASE",
+    "LOAN_OR_CREDIT",
+    "SECURITY_OR_CHARGE",
+    "EQUITY_INVESTMENT",
+    "FUND_INVESTMENT",
+    "REFINANCING",
+    "RESTRUCTURING",
+    "INSOLVENCY_SALE",
+    "JOINT_VENTURE",
+    "SALE_AND_LEASEBACK",
+    "OTHER_CAPITAL_TRANSACTION"
+  ],
+  "transaction_state_vocabulary": [
+    "DISCOVERY_LEAD_ONLY",
+    "REPORTED_NEGOTIATION",
+    "NOTIFIED",
+    "AUTHORISED",
+    "SIGNED",
+    "CLOSED_COUNTERPARTY_ANNOUNCED",
+    "CLOSED_INDEPENDENTLY_CORROBORATED",
+    "FUNDED",
+    "OPERATIONAL_CAPACITY_CONFIRMED",
+    "REFINANCED",
+    "DIVESTED",
+    "TERMINATED_OR_NOT_COMPLETED",
+    "UNKNOWN"
+  ],
+  "evidence_state_vocabulary": [
+    "OFFICIAL_REGISTER_CONFIRMED",
+    "OFFICIAL_DECISION_CONFIRMED",
+    "COUNTERPARTY_ANNOUNCED",
+    "MULTISOURCE_CORROBORATED",
+    "SINGLE_PUBLIC_SOURCE",
+    "CHANGE_SIGNAL_UNREVIEWED",
+    "IDENTITY_PENDING",
+    "CONTRADICTED_OR_SUPERSEDED",
+    "NO_EVENT_FOUND"
+  ],
+  "change_state_vocabulary": [
+    "BASELINE_ESTABLISHED",
+    "UNCHANGED",
+    "CONTENT_CHANGED_REVIEW_REQUIRED",
+    "POTENTIAL_TRANSACTION_CHANGE_REVIEW_REQUIRED",
+    "CONTENT_CHANGED_NO_JOINT_SCOPE_MATCH",
+    "PENDING_ACKNOWLEDGEMENT",
+    "FETCH_ERROR",
+    "SOURCE_DISABLED"
+  ],
+  "event_required_fields": [
+    "event_id",
+    "heritage_scope_id",
+    "asset",
+    "entities_and_capacities",
+    "transaction_type",
+    "transaction_state",
+    "transaction_date",
+    "source_refs",
+    "evidence_state",
+    "proves",
+    "does_not_prove",
+    "contrary_or_limiting_evidence",
+    "change_detection",
+    "public_safety"
+  ],
+  "non_inference_guards": [
+    "A source-content change is a review signal, not evidence that a transaction occurred.",
+    "A name and a transaction verb on the same page do not prove that the named actor held the stated capacity.",
+    "A buyer of shares is not automatically the owner of each hotel asset, and an owner is not automatically the operator or manager.",
+    "A brand, group or commercial perimeter is not an exact legal person.",
+    "Labranda^ confirms the canonical brand object only; it does not prove the owner, operator, manager, franchisor, contracting entity or transaction participant for any hotel.",
+    "The pending BLUESEA commercial perimeter is distinct from Gestora Blue Sea Partner, S.A.; a BLUESEA Hotels presentation does not itself resolve the broader perimeter or an exact owner/operator legal person.",
+    "A portfolio-level transaction does not identify every included hotel, company, contract, right, liability or record.",
+    "Notification, authorisation, signing, closing, funding, title transfer and operational handover are separate states.",
+    "Acquisition does not transfer predecessor knowledge, intention, conduct, guilt or liability automatically.",
+    "An adviser, lawyer, insolvency administrator or lender is not a buyer, controller or beneficiary unless a source establishes that separate capacity.",
+    "A successor's receipt of every historic FTI/Meeting Point or Club Sei record is not presumed.",
+    "Chronology, geography, shared branding, a professional relationship or economic benefit alone does not prove coordination, concealment, causation or criminal responsibility.",
+    "A CAEPR caret confirms identity only; it does not confirm capacity, transaction participation, knowledge, conduct or liability.",
+    "Absence from monitored public sources is not proof that no transaction exists."
+  ],
+  "promotion_rules": {
+    "automatic_register_event_creation": false,
+    "automatic_caret_assignment": false,
+    "automatic_website_update": false,
+    "automatic_external_notification": false,
+    "human_review_required": true,
+    "minimum_for_new_event": [
+      "specific asset or bounded portfolio",
+      "specific legal entity or clearly labelled unresolved perimeter",
+      "specific capacity",
+      "date with precision state",
+      "public source and priority",
+      "transaction and evidence state",
+      "proves / does-not-prove / contrary-or-limiting fields",
+      "CAEPR resolution state",
+      "public-safety review"
+    ]
+  },
+  "pending_review_and_acknowledgement": {
+    "sticky_rule": "Each source has at most one sticky review window. It remains pending across later runs and reversion; a new distinct review-required fingerprint updates the exact latest fingerprint and a rolling SHA-256 chain without advancing the acknowledged baseline. The window remains until its exact latest source/fingerprint is explicitly acknowledged.",
+    "bounded_queue_model": "ONE_STICKY_REVIEW_WINDOW_PER_SOURCE",
+    "bounded_compaction_boundary": "A further distinct fingerprint before review does not create an unbounded queue entry: the source window preserves its exact first/latest fingerprints, a distinct-fingerprint count and a rolling SHA-256 chain, while the bounded history records each run's public-safe window state. Intermediate source bodies are never retained. This compaction is reported, not treated as review or acknowledgement.",
+    "automatic_acknowledgement": false,
+    "acknowledgement_inputs": [
+      "exact source ID",
+      "exact 64-character pending SHA-256 fingerprint",
+      "non-empty public-safe review reason"
+    ],
+    "acknowledgement_effect": "Acknowledgement removes only the source review window whose exact latest fingerprint matches and adopts that fingerprint as the source's reviewed baseline. It creates no transaction event, caret, finding, publication or external action. A different current observation immediately opens a new window.",
+    "schedule_cannot_acknowledge": true
+  },
+  "external_action_authorized": false,
+  "external_action_boundary": "This monitor authorizes no email, filing, portal submission, contact, notification, investment approach, negotiation, commitment or financial act."
+}
