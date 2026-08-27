@@ -61,7 +61,7 @@
       card3Title: 'Rejected and archived',
       card3Body: 'The Responsible Officer recorded rejection and closure without opening an internal investigation, while leaving open reconsideration if new concrete evidence is supplied.',
       boundary: '<strong>Evidence boundary:</strong> “Not shown to the reporting person” is a certified workflow fact, not proof of intent. The relevant questions are who set that state, whether the requested document was already held and reviewed, what “immediately available documentation” meant, and what was preserved before closure.',
-      state: 'CNMV extension state: a linked documentary extension was sent on 27 August 2026 in the existing supervisory thread to the two core infringement-reporting channels. Receipt, incorporation and substantive examination remain pending primary confirmation.',
+      state: 'CNMV extension state: the complete five-attachment documentary package was sent on 27 August 2026 in the existing supervisory thread to the five-address CNMV distribution previously used on 20 August. It followed an initial linked notice to the two core infringement-reporting channels. Receipt, incorporation and substantive examination remain pending primary confirmation.',
       evidenceLink: 'Open certified public record',
       otherLink: isCnmv ? 'Open the RICPE dossier' : 'Open the CNMV gateway',
       sourceLink: 'Read the controlled resolution transcript',
@@ -77,7 +77,7 @@
       card3Title: 'Inadmisión y archivo',
       card3Body: 'El Responsable del Sistema acordó inadmisión y archivo sin abrir investigación interna, dejando abierta una eventual valoración ante nueva evidencia concreta.',
       boundary: '<strong>Límite probatorio:</strong> “No mostrado al denunciante” es un hecho certificado del flujo, no prueba de intención. Las preguntas son quién configuró ese estado, si el documento pedido ya obraba y fue examinado, qué significó “documentación inmediatamente disponible” y qué se preservó antes del cierre.',
-      state: 'Estado ampliación CNMV: el 27 de agosto de 2026 se remitió una ampliación documental enlazada dentro del hilo supervisor existente a los dos canales centrales de comunicación de infracciones. La recepción, incorporación y revisión de fondo quedan pendientes de confirmación primaria.',
+      state: 'Estado ampliación CNMV: el 27 de agosto de 2026 se remitió, dentro del hilo supervisor existente, el paquete documental completo de cinco anexos a la distribución CNMV de cinco direcciones ya utilizada el 20 de agosto. Le precedió un aviso enlazado a los dos canales centrales de comunicación de infracciones. La recepción, incorporación y revisión de fondo quedan pendientes de confirmación primaria.',
       evidenceLink: 'Abrir registro público certificado',
       otherLink: isCnmv ? 'Abrir dossier RICPE' : 'Abrir puerta CNMV',
       sourceLink: 'Leer transcripción controlada de la resolución',
@@ -125,7 +125,7 @@
       const strip = document.querySelector('.status-strip');
       if (strip) {
         const last = strip.lastElementChild;
-        if (last) last.innerHTML = `<span>27 ${isEnglish ? 'Aug' : 'ago'} 2026</span><strong>${isEnglish ? 'RICPE closure · CNMV extension sent' : 'Cierre RICPE · ampliación CNMV remitida'}</strong>`;
+        if (last) last.innerHTML = `<span>27 ${isEnglish ? 'Aug' : 'ago'} 2026</span><strong>${isEnglish ? 'RICPE closure · full CNMV package sent' : 'Cierre RICPE · paquete CNMV completo remitido'}</strong>`;
       }
       const grid = document.querySelector('#revision-7-minutos .cnmv-grid');
       if (grid && !grid.querySelector('[data-closure-card-20260827]')) {
@@ -133,8 +133,8 @@
         card.className = 'cnmv-card';
         card.dataset.closureCard20260827 = 'true';
         card.innerHTML = isEnglish
-          ? '<span class="ok-status official">7 · 27 Aug 2026</span><h3>Certified closure</h3><p>RICPE rejected and archived the communication without opening an internal investigation. The Ithikios record exposes a request for the 20 July 2021 certificate marked “Not shown to the reporting person”. A linked extension was sent to CNMV on 27 August.</p>'
-          : '<span class="ok-status official">7 · 27 ago 2026</span><h3>Cierre certificado</h3><p>RICPE inadmitió y archivó la comunicación sin abrir investigación interna. El registro Ithikios muestra una petición de la certificación de 20 julio 2021 marcada “No mostrado al denunciante”. El 27 de agosto se remitió a la CNMV una ampliación enlazada.</p>';
+          ? '<span class="ok-status official">7 · 27 Aug 2026</span><h3>Certified closure</h3><p>RICPE rejected and archived the communication without opening an internal investigation. The Ithikios record exposes a request for the 20 July 2021 certificate marked “Not shown to the reporting person”. A linked notice and then the complete five-attachment package were sent to the five-address CNMV distribution on 27 August.</p>'
+          : '<span class="ok-status official">7 · 27 ago 2026</span><h3>Cierre certificado</h3><p>RICPE inadmitió y archivó la comunicación sin abrir investigación interna. El registro Ithikios muestra una petición de la certificación de 20 julio 2021 marcada “No mostrado al denunciante”. El 27 de agosto se remitieron un aviso enlazado y después el paquete completo de cinco anexos a la distribución CNMV de cinco direcciones.</p>';
         grid.append(card);
       }
     }
