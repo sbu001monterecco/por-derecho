@@ -31,7 +31,7 @@ This is one action ledger, not permission to send or file. It preserves complete
 | MPA-006 | Oliver Schartl | Administrator for two distinct Meeting Point files | Verify route; seek a separate custody index for each debtor. |
 | MPA-007 | FINKENHOF | Procedural-counsel role appears in the orders | Verify whether it is a lawful record route; never substitute it for administrator/Rödl. |
 | MPA-008 | Munich prosecution / Police K71 | 3-Jan-2025 transmission perimeter documented | Obtain exact office, reference, routing, preservation and disposition; no broad resend. |
-| MPA-009 | German public dossier | Older Club-Sei path is an English redirect | Publish and verify the genuine German continuity page. |
+| MPA-009 | German public dossier | **Completed and verified:** the genuine German continuity page was published through PR #1111, merged at `41a8250ffdcd27e820bbc89b8238fb98ba23a6db`, deployed by successful Pages run `33083261099` and included in the 34-surface exact live readback run `33083264897` (artifact `9651057259`). | Preserve the older Club-Sei path as a compatibility redirect and repeat exact verification after any change; web publication authorises no email or filing. |
 
 ## Spain
 
@@ -66,7 +66,9 @@ This is one action ledger, not permission to send or file. It preserves complete
 
 | ID | Control | Current fact | Next controlled action |
 |---|---|---|---|
-| MPA-028 | Former FTI/Meeting Point Canary/Spain asset, control, management and capital watch | A public-source-only four-times-daily monitor is prepared with 3 heritage scopes, 11 controlled entity objects, 12 sources, 2 bounded baseline events and 8 open coverage gaps. | Publish and activate the read-only workflow; human-review every change signal before any register, caret, website or external-action proposal. |
+| MPA-028 | Former FTI/Meeting Point Canary/Spain asset, control, management and capital watch | **Completed and verified:** published in PR #1111 and active. First main run `33083264530` passed at `2026-08-27T14:37:51+00:00`, fetched 12/12 sources with 0 errors and 0 review/pending windows, and established a fresh baseline only. Artifact `9651009448`: `sha256:e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98`. No transaction event was created from the baseline. | Continue bounded observation; human-review every later signal before any register event, caret, website change or external-action proposal. A baseline and monitored-source silence do not prove that no transaction occurred. |
+
+Activation and publication evidence for MPA-009 and MPA-028 is repository/website evidence only. It changes neither the held corrective-email state nor any external-action flag; MPA-026 remains `PREPARED_HOLD_NOT_AUTHORISED`.
 
 ## Complete proceeding/file mapping for this continuity scope
 

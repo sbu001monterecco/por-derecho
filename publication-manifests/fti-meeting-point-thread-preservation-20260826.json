@@ -4,9 +4,10 @@
   "control_date": "2026-08-26",
   "baseline_main_sha": "16dd443b837f29c94892722a6c80459432b4e992",
   "branch": "codex/fti-thread-preservation-20260826",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
-  "status": "validation_and_publication_pending",
+  "status": "historical_preservation_closed_and_superseded",
+  "merge_sha": "6face6554c4214e68e74a9b9b6bce36e41aedb3f",
   "purpose": "Preserve the corrected Meeting Point 357/2024 chronology, SEPI amount, attributed Club Sei causation thesis, Romera boundary and exact public-safe email action state before deletion of the originating thread.",
   "expected_routes": {
     "en": [
@@ -56,8 +57,52 @@
     "scripts/validate_mission_critical_repo.py",
     "relevant FTI/Meeting Point route and live validators"
   ],
-  "deployment_evidence": null,
-  "live_verification_evidence": null,
+  "validation": {
+    "evidence": [
+      "Historical PR #1084 merged as 6face6554c4214e68e74a9b9b6bce36e41aedb3f after the repository preservation, publication, audience, privacy, link-continuity and mission-critical checks recorded in the dated audit.",
+      "The historical routes were deployed and read back; the exact earlier Pages run identifiers were not reconstructed in this manifest.",
+      "The superseding 27-August control was independently deployed and exact-byte verified under PR #1111 and verifier run 33083264897."
+    ]
+  },
+  "deployment_evidence": {
+    "historical_pull_request": 1084,
+    "merge_sha": "6face6554c4214e68e74a9b9b6bce36e41aedb3f",
+    "connected_pull_request": 1085,
+    "connected_merge_sha": "048bb4e419a6b36e279e3e7d5792ebafb008cfe5",
+    "state": "HISTORICAL_SCOPE_MERGED_DEPLOYED_AND_READ_BACK",
+    "boundary": "The exact historical Pages run identifiers are not reconstructed in this manifest; the dated audit records the completed deployment/readback."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+    "https://sbu001monterecco.github.io/por-derecho/en/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/en/legal-notebook/meeting-point-357-2024-judicial-traceability/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-material-control-chronology/",
+    "https://sbu001monterecco.github.io/por-derecho/en/legal-notebook/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+    "https://sbu001monterecco.github.io/por-derecho/es/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cronologia-control-material-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuaderno-juridico/",
+    "https://sbu001monterecco.github.io/por-derecho/de/lava-verde-club-sei-meeting-point/"
+  ],
+  "live_verification_evidence": {
+    "result": "HISTORICAL_SCOPE_CLOSED",
+    "current_superseding_control": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "current_pull_request": 1111,
+    "current_merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "current_merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+    "current_pages_run_id": 33083261099,
+    "current_pages_run_number": 1184,
+    "current_fti_verifier_run_id": 33083264897,
+    "current_fti_closeout_artifact_id": 9651057259
+  },
+  "supersession": {
+    "state": "SUPERSEDED_BY_ADDITIVE_LIVE_CONTINUITY_CONTROL",
+    "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "manifest": "publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json",
+    "deletion_audit": "docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md",
+    "relation": "The 27-August release is additive and does not erase this historical preservation record."
+  },
   "external_email_action_authorized": false,
-  "deletion_status": "NOT_DELETION_SAFE_UNTIL_MERGED_DEPLOYED_AND_LIVE_READ"
+  "deletion_status": "HISTORICAL_SCOPE_CLOSED__CURRENT_27AUG_AUDIT_GOVERNS"
 }

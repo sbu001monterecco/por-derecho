@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.fti-meeting-point-email-correction-action-state.v1",
   "control_date": "2026-08-26",
-  "repository_base_sha": "f4c186194f34c414e83526a771a9772d62782519",
+  "repository_base_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
   "classification": "PUBLIC_SAFE_OPERATIONAL_STATE",
   "overall_state": "PREPARED_HOLD_NOT_AUTHORIZED",
   "send_authority": {
@@ -120,7 +120,20 @@
       "pull_request": 1085,
       "merge_sha": "048bb4e419a6b36e279e3e7d5792ebafb008cfe5"
     },
-    "current_new_continuity_work": "PUBLICATION_AUTHORISED_REPOSITORY_WEBSITE_ONLY__NOT_YET_PUSHED_MERGED_DEPLOYED_OR_LIVE_VERIFIED__EMAIL_AND_FILING_HOLD"
+    "current_new_continuity_work": "MERGED_DEPLOYED_AND_LIVE_VERIFIED_REPOSITORY_WEBSITE_ONLY__EMAIL_AND_FILING_HOLD",
+    "current_continuity_publication": {
+      "pull_request": 1111,
+      "pull_request_head_sha": "677906e303ad91cc436803d8d47e410deefbbd6f",
+      "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+      "pages_run_id": 33083261099,
+      "pages_conclusion": "success",
+      "exact_live_readback_run_id": 33083264897,
+      "exact_live_readback_artifact_id": 9651057259,
+      "exact_live_readback_surface_count": 34,
+      "repository_and_website_only": true,
+      "email_authorized": false,
+      "filing_authorized": false
+    }
   },
   "caepr_caret_state": {
     "result": "PARTIAL_NOT_ALL_IS_CARET",
@@ -153,7 +166,7 @@
         "denominator": 65,
         "confirmed": 39,
         "pending": 26,
-        "publication_state": "LOCAL_CANDIDATE_NOT_LIVE"
+        "publication_state": "LIVE_VERIFIED"
       },
       {
         "control_id": "PD-FTI-MP-PROF-INST-CARET-20260827-01",
@@ -161,7 +174,7 @@
         "denominator": 101,
         "confirmed": 40,
         "pending": 61,
-        "publication_state": "PUBLICATION_AUTHORISED_REPOSITORY_WEBSITE_ONLY__NOT_LIVE"
+        "publication_state": "LIVE_VERIFIED"
       }
     ],
     "reason": "All five finite censuses are complete for their declared scopes and remain partial because each contains pending objects; no ALL IS^ claim is permitted. The 101-object role-selected census excludes hotel-by-hotel and newly discovered transaction-counterparty objects unless separately admitted."

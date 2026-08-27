@@ -97,7 +97,7 @@ required_markers = [
     "40/101 confirmed",
     "31 actions, 12 package definitions",
     "3 heritage scopes, 11 known entity",
-    "PREPARED_PENDING_MERGE",
+    "DELETION_SAFE",
     "Ithikios /",
     "DIGITAL PRODUCTS DEVELOPMENT SL",
     "ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json",
@@ -136,7 +136,7 @@ assert state["source_base"]["main_sha"] == "8e8e83c5a337846245a942222efbc3120645
 for key, value in CURRENT_IDENTITY_COUNTS.items():
     assert state["identity_registry"][key] == value
 assert state["identity_registry"]["archive_backfill"] == "OPEN"
-assert state["identity_registry"]["last_live_verified_counts"] == HISTORICAL_LIVE_IDENTITY
+assert state["identity_registry"]["last_live_verified_counts"] == CURRENT_IDENTITY_COUNTS
 assert registry["counts"] == CURRENT_IDENTITY_COUNTS
 assert state["caret_scope"]["control_id"] == unitary_caret["control_id"]
 assert state["caret_scope"]["control_file"] == "assets/data/caepr-caret-unitary-digest-v1.json"
@@ -158,11 +158,11 @@ assert state["source_base"]["required_status_check_enforcement"] == "off"
 # the independently controlled repository-wide 19/24 unitary census.
 modules = {item["module_id"]: item for item in state["specialist_modules"]}
 
-# The 27-August FTI / Meeting Point / RICPE release is an additive specialist
-# candidate. It must be restartable without changing the historical source-base
-# snapshot or opening any email, filing, notice or authority-contact channel.
+# The 27-August FTI / Meeting Point / RICPE release is additive. It must remain
+# restartable without changing the historical source-base snapshot or opening
+# any email, filing, notice or authority-contact channel.
 fti = modules["PD-FTI-MP-RICPE-CONTINUITY-20260827-01"]
-assert fti["module_relation"] == "ADDITIVE_SPECIALIST_CANDIDATE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE"
+assert fti["module_relation"] == "ADDITIVE_SPECIALIST_RELEASE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE"
 assert fti["analysis_order"][0] == "CRIMINAL_FIRST"
 assert fti["digest"] == "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md"
 assert fti["action_register"] == "ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json"
@@ -275,7 +275,7 @@ for authority_key, expected in {
     assert fti["external_action_authority"][authority_key] is expected
 
 assert fti_manifest["control_id"] == fti["module_id"]
-assert fti_manifest["current_state"] == "PREPARED_PENDING_MERGE"
+assert fti_manifest["current_state"] in {"LIVE_VERIFIED", "DELETION_SAFE"}
 assert fti["publication_state"] == fti_manifest["current_state"]
 assert fti_manifest["publication_authorized"] is True
 assert fti_manifest["communication_authorized"] is False
@@ -283,6 +283,28 @@ assert fti_manifest["email_or_filing_action"] == "HOLD_NOT_AUTHORISED"
 assert fti_manifest["publication_authorization"]["repository_and_website_only"] is True
 assert fti_manifest["publication_authorization"]["email_authorized"] is False
 assert fti_manifest["publication_authorization"]["filing_authorized"] is False
+assert is_full_sha(fti_manifest.get("merge_sha"))
+assert fti_manifest["deployment_evidence"]["workflow"] == "pages build and deployment"
+assert fti_manifest["deployment_evidence"]["conclusion"] == "success"
+assert fti_manifest["deployment_evidence"]["head_sha"] == fti_manifest["merge_sha"]
+assert fti_manifest["live_readback"]["result"] == "PASS_EXACT_BYTES"
+assert fti_manifest["live_readback"]["head_sha"] == fti_manifest["merge_sha"]
+assert len(fti_manifest["live_readback"]["sha256_by_route"]) == 34
+fti_closeout = fti_manifest["closeout_control"]
+assert fti_closeout["kind"] == "SEPARATE_WORKFLOW_ARTIFACT"
+assert fti_closeout["result"] == "LIVE_VERIFIED"
+assert fti_closeout["head_sha"] == fti_manifest["merge_sha"]
+assert fti_closeout["workflow_run_id"] == 33083264897
+assert fti_closeout["artifact_id"] == 9651057259
+for key in (
+    "communication_authorized",
+    "email_authorized",
+    "filing_authorized",
+    "red_sara_age_notification_authorized",
+    "portal_submission_authorized",
+    "authority_contact_authorized",
+):
+    assert fti_closeout[key] is False
 assert fti_manifest["caret_scope"] == {
     "control_id": "PD-FTI-MP-RICPE-CARET-20260827-01",
     **expected_fti_continuity_scope,
@@ -321,6 +343,31 @@ for key, expected in expected_monitor_counts.items():
 assert unitary_fti["judicial_title_rule"]["historical_own_court_reference"] == historical_title
 assert unitary_fti["judicial_title_rule"]["current_reference"] == current_title
 assert unitary_fti["authorization_boundary"] == fti["external_action_authority"]
+
+additive = state["additive_publication_evidence"]
+assert additive["relation_to_source_base"] == "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE"
+assert additive["pull_request"] == 1111
+assert additive["validated_pr_head"] == "677906e303ad91cc436803d8d47e410deefbbd6f"
+assert additive["merge_sha"] == "41a8250ffdcd27e820bbc89b8238fb98ba23a6db"
+assert additive["merge_tree_sha"] == "0f2b75347de048d449160a69d087b592bd51b35c"
+assert additive["pages"] == {
+    "run_id": 33083261099,
+    "run_number": 1184,
+    "status": "completed",
+    "conclusion": "success",
+}
+assert additive["current_digest_closeout"]["workflow_run_id"] == 33083264830
+assert additive["current_digest_closeout"]["artifact_id"] == 9651039104
+assert additive["current_digest_closeout"]["exact_route_count"] == 43
+assert additive["current_digest_closeout"]["identity_registry_parity"] == 204
+assert additive["fti_live_closeout"]["workflow_run_id"] == 33083264897
+assert additive["fti_live_closeout"]["artifact_id"] == 9651057259
+assert additive["asset_transaction_monitor"]["workflow_run_id"] == 33083264530
+assert additive["asset_transaction_monitor"]["artifact_id"] == 9651009448
+assert additive["asset_transaction_monitor"]["sources_fetched"] == 12
+assert additive["asset_transaction_monitor"]["fetch_errors"] == 0
+assert additive["asset_transaction_monitor"]["review_signals"] == 0
+assert all(value is False for value in additive["external_action_authority"].values())
 
 specialist = modules["PD-ALV-MP357-MULTI-20260827-01"]
 assert specialist["caret_scope"] == {
@@ -512,12 +559,12 @@ print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
 print(" - source/static identity denominator: 204 / 87 / 71 / 10 / 18 / 18")
-print(" - last live-verified identity snapshot: 194 / 86 / 66 / 10 / 15 / 17")
+print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
 print(" - caret scope: 19/24; old 24/24 package superseded")
 print(" - separate Magistrate López Villarrubia / Meeting Point scope: 25/32 partial; unitary scope unchanged")
 print(" - first-hop Magistrate López Villarrubia / Meeting Point evidence corpus: 56/130 partial")
-print(" - Magistrate López Villarrubia publication candidate:", alberto_lifecycle, "/ lifecycle-controlled; communication and filing remain closed")
-print(" - FTI / Meeting Point / RICPE continuity candidate: 39/65 partial; professional/institutional scope: 40/101 partial")
+print(" - Magistrate López Villarrubia publication:", alberto_lifecycle, "/ lifecycle-controlled; communication and filing remain closed")
+print(" - FTI / Meeting Point / RICPE live continuity: 39/65 partial; professional/institutional scope: 40/101 partial")
 print(" - FTI future-action state: 31 actions / 12 packages / 18 proceeding-file mappings; external action closed")
 print(" - FTI bounded asset monitor: 3 heritage scopes / 11 entities / 12 sources / 2 baseline events / 8 gaps")
 print(" - historical unitary lifecycle:", historical_manifest["current_state"])

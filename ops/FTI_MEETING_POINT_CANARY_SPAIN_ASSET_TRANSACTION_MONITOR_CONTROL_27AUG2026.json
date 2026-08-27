@@ -2,7 +2,37 @@
   "schema": "por-derecho.fti-meeting-point-asset-transaction-monitor-control.v1",
   "control_id": "PD-FTI-MP-ASSET-TX-MONITOR-20260827-01",
   "control_date": "2026-08-27",
-  "status": "ACTIVE_PUBLIC_SOURCE_MONITOR_CONFIGURATION",
+  "status": "ACTIVE_VERIFIED_PUBLIC_SOURCE_MONITOR",
+  "activation_evidence": {
+    "publication": {
+      "pull_request": 1111,
+      "pull_request_head_sha": "677906e303ad91cc436803d8d47e410deefbbd6f",
+      "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+      "pages_run_id": 33083261099,
+      "pages_conclusion": "success",
+      "exact_live_readback_run_id": 33083264897,
+      "exact_live_readback_artifact_id": 9651057259,
+      "exact_live_readback_result": "PASS_EXACT_BYTES",
+      "exact_live_readback_surface_count": 34
+    },
+    "first_main_monitor_run": {
+      "workflow_run_id": 33083264530,
+      "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+      "completed_at": "2026-08-27T14:37:51+00:00",
+      "result": "PASS",
+      "configured_sources": 12,
+      "fetched_sources": 12,
+      "fetch_errors": 0,
+      "review_required_windows": 0,
+      "pending_review_windows": 0,
+      "state": "FRESH_BASELINE_ESTABLISHED_ONLY",
+      "baseline_only": true,
+      "transaction_event_created": false,
+      "artifact_id": 9651009448,
+      "artifact_digest": "sha256:e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98"
+    },
+    "boundary": "Activation proves that the bounded public-source workflow ran successfully against all twelve configured sources and established its initial state. It does not prove that no transaction occurred before the baseline, outside the configured source set or through a non-public route; it creates no transaction event, caret, website proposition or external action."
+  },
   "scope": {
     "objective": "Detect public-source changes that may identify a buyer, owner, seller, operator, manager, franchisor, franchisee, lessor, lessee, lender, borrower, investor, fund manager, security taker, refinancer, restructuring acquirer, asset manager, adviser or other capital participant in a former FTI Touristik / Meeting Point hotel, hotel-management company, business, brand or related asset in the Canary Islands or elsewhere in Spain.",
     "geographies": [

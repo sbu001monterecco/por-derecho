@@ -4,8 +4,9 @@
 
 **Date:** 27 August 2026
 
-**Public baseline scanned:** `origin/main` at `f4c186194f34c414e83526a771a9772d62782519`
-**Candidate state:** repository-and-website publication expressly authorised and prepared locally; not yet pushed, merged or deployed; no email, AGE/RedSARA notice, portal submission or filing is authorised
+**Pre-release public baseline scanned:** `origin/main` at `f4c186194f34c414e83526a771a9772d62782519`
+
+**Live release:** PR [#1111](https://github.com/sbu001monterecco/por-derecho/pull/1111), reviewed head `677906e303ad91cc436803d8d47e410deefbbd6f`, merge `41a8250ffdcd27e820bbc89b8238fb98ba23a6db`, tree `0f2b75347de048d449160a69d087b592bd51b35c`; repository/website publication complete and verified; no email, AGE/RedSARA notice, portal submission, filing or authority contact is authorised
 
 ## One connected result
 
@@ -17,11 +18,11 @@ The chain is evidentially real because each node is supported by a separate sour
 
 ## Repository and whole-site state
 
-The current public baseline contains 2,973 tracked files and 565 HTML files. Static HTML contains target material across a large but uneven surface: Meeting Point appears on 35 routes; Club Sei on 21; Acosta Matos on 186; RICPE on 187; SEPI on 6; Auren on 12; and 357/2024 on 22.
+The pre-release public baseline contained 2,973 tracked files and 565 HTML files. Its static HTML contained target material across a large but uneven surface: Meeting Point appeared on 35 routes; Club Sei on 21; Acosta Matos on 186; RICPE on 187; SEPI on 6; Auren on 12; and 357/2024 on 22.
 
 No-cache readback established that the isolated binary-complete RICPE privacy hotfix is live at merge `c42996115b66f7ae6b98e651ee8e9c72818e824b`: the public redacted PDF and all six derived page images matched the reviewed binaries, and the superseded PDF plus six superseded image paths returned HTTP 404. The current site therefore no longer exposes the protected identifier through the controlled text, PDF or image surfaces. Historical Git/cache exposure and any separate access-credential response remain distinct open security questions. The remaining problem is substantive integration and continuity, not an unresolved current-tree privacy blocker.
 
-The present public chain already documents:
+That pre-release public chain already documented:
 
 - CAM's Lava Verde presentation at C/ Janubio 3 and a 279-room claim;
 - Meeting Point/FTI's Club Sei public-commercial presentation and a 315-room same-address offer;
@@ -32,7 +33,15 @@ The present public chain already documents:
 - CNMC C/1549/25 and the later Portobello/BLUESEA control handoff; and
 - the 27-August RICPE channel closure and later CNMV extension package.
 
-But those subjects are far more richly published in the Acosta Matos/RICPE corpus than in the FTI/Meeting Point corpus. The FTI pages have weak inbound discovery; the FTI hub has no direct route to the canonical RICPE dossier; the RICPE hub has no direct link to the FTI hub; the latest evidence page is runtime-discovered, absent from sitemaps and lacks a static inbound link; and the German Club Sei route is only an English redirect.
+The live continuity release corrects the material integration defects in that baseline: it publishes interlinked ES/EN/DE hubs, reciprocal FTI/RICPE discovery, static inbound navigation, sitemap coverage, the typed graph, the two new finite caret scopes, the cross-border action state and the bounded transaction watch. The older German Club Sei route remains an English redirect and must still not be described as a standalone German dossier; the new German continuity hub is a genuine German page.
+
+## Exact publication and readback outcome
+
+PR #1111 merged only reviewed head `677906e303ad91cc436803d8d47e410deefbbd6f`. The resulting merge `41a8250ffdcd27e820bbc89b8238fb98ba23a6db` has tree `0f2b75347de048d449160a69d087b592bd51b35c`.
+
+GitHub Pages run `33083261099` (run no. 1184) completed successfully for that exact merge. Dedicated FTI verifier run `33083264897` then passed **34/34** exact no-cache route comparisons. Closeout artifact `9651057259` has digest `sha256:6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e`.
+
+The first public-source monitor run `33083264530` also passed from a fresh baseline: **12/12 sources checked, 0 errors and 0 review signals**. Artifact `9651009448` preserves that bounded execution result. Zero review signals do not prove absence of a transaction or complete register coverage.
 
 ## Criminal-first causal test
 
@@ -80,6 +89,12 @@ The internal closure supplies a new independent reason to consider a lawful exte
 
 CNMV acknowledged the 20-August communication. Two 27-August follow-ups were then sent; the complete one contained five attachments. No located later evidence yet proves receipt, linkage, preservation, assignment or substantive review of those two extensions. It would be inaccurate to say the material was hidden from every authority because CNMV transmission and public availability are documented.
 
+## Alberto López Villarrubia: title and former Court No. 3 boundary
+
+For historic acts in his own court, the accurate controlled reference is **el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria**. Under the reorganised structure, the accurate current reference is **el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria**.
+
+The 24-Oct-2024 former Court No. 3 record remains a registry attribution only. It does not by itself prove that he signed the act, the assignment/substitution route, the capacity in which he acted, actual knowledge, a statutory conflict, an abstention/recusal or disclosure duty, disclosure to SEPI, or concealment. Those missing originals and allocation/conflict records are production targets, not gaps that can be converted into findings.
+
 ## Completed immediate security correction
 
 The live public source had exposed the exact RICPE/Ithikios communication identifier in controlled text and binary surfaces, contrary to the repository's own privacy controls. The isolated two-stage remediation now replaces the public PDF and all six page images with honestly labelled redacted derivatives, removes the seven superseded public paths, retains only the approved one-way public fingerprint in the controlled text, and enforces exact safe/unsafe binary hashes plus PDF text extraction in an unconditional workflow.
@@ -118,11 +133,11 @@ The census includes people, exact legal persons and commercial perimeters, insol
 
 ## Continuous Canary/Spain asset, management and capital watch
 
-The candidate establishes a bounded public-source monitor for who publicly appears to buy, own, sell, operate, manage, franchise, lease, lend to, borrow through, invest in, refinance, take security over, restructure, advise on or otherwise participate with capital in a former FTI Touristik/Meeting Point hotel, hotel-management company, business, brand, portfolio, right or related asset in the Canary Islands or elsewhere in Spain.
+The live release establishes a bounded public-source monitor for who publicly appears to buy, own, sell, operate, manage, franchise, lease, lend to, borrow through, invest in, refinance, take security over, restructure, advise on or otherwise participate with capital in a former FTI Touristik/Meeting Point hotel, hotel-management company, business, brand, portfolio, right or related asset in the Canary Islands or elsewhere in Spain.
 
 The machine register has three heritage scopes, eleven controlled entity objects, twelve configured public sources, two bounded baseline events and eight open coverage gaps. It checks public sources four times daily, but GitHub scheduling is not a real-time guarantee. Restricted Spanish and German registers remain manual evidence lanes; corporate statements and press are leads unless a controlling source independently establishes the precise entity, asset, capacity, date and transaction state.
 
-The monitor emits only a public-source change signal. It cannot create a transaction event, assign a caret, update the website, contact anyone or generate an external notification automatically. Buyer is not owner; owner is not operator or manager; adviser is not buyer/controller/beneficiary; notification, authorisation, signing, closing, funding, title and operational handover are separate states; and acquisition does not transfer predecessor knowledge, intent, conduct, guilt or liability.
+The first main-branch run `33083264530` passed a fresh baseline across 12/12 sources with 0 errors and 0 review signals; artifact `9651009448` preserves that bounded result. The monitor emits only a public-source change signal. It cannot create a transaction event, assign a caret, update the website, contact anyone or generate an external notification automatically. Buyer is not owner; owner is not operator or manager; adviser is not buyer/controller/beneficiary; notification, authorisation, signing, closing, funding, title and operational handover are separate states; and acquisition does not transfer predecessor knowledge, intent, conduct, guilt or liability.
 
 ## Cross-border action state
 
@@ -142,13 +157,13 @@ OLAF supplementation is conditional on a new concrete EU-funds nexus or transact
 
 Every future email, RedSARA notice, court filing, portal submission and authority notification remains `PREPARED / HOLD — NOT AUTHORISED`. Completed sends remain completed facts, never continuing authority. Website-publication authority cannot authorize an email or filing.
 
-## Repository continuity defects corrected by the candidate
+## Repository continuity defects corrected by the live release
 
-The candidate:
+The live release:
 
 1. incorporates the completed binary-complete privacy remediation and its live zero-exposure state;
 2. records the latest RICPE closure/CNMV state and its evidential boundary;
-3. updates the stale FTI thread/action state from “pending merge” to the already merged/deployed PR #1084/#1085 history while keeping this new work not-live;
+3. updates the stale FTI thread/action state from “pending merge” to the merged/deployed PR #1084/#1085 history and records the live PR #1111 release;
 4. replaces the obsolete 0/5 `^` snapshot with the current separate finite scopes;
 5. corrects the Club Sei/Fiscalía record to include all three 15-Jan-2026 registrations;
 6. adds one typed multidirectional causal graph, one full 65-object `^` census and one cross-border action register;
@@ -158,16 +173,18 @@ The candidate:
 10. adds the separate 101-object Germany/Spain/EU professional-and-institutional `^` census; and
 11. adds the bounded public-source asset/control/management/capital monitor and ES/EN/DE derived watch view.
 
-## Immediate publication proposal
+## Publication closeout and remaining work
 
-The isolated privacy unit is complete and verified live. The authorised remaining unit is the substantive continuity release: the criminal-first digest, causal graph, 31-action register and eighteen-file/proceeding map, both finite `^` censuses, canonical corrections/gaps, bounded asset/control/management/capital monitor, ES/EN/DE hubs, reciprocal links, sitemaps, continuity audit and validators.
+The isolated privacy unit and the substantive continuity release are both complete and verified live. The published unit includes the criminal-first digest, causal graph, 31-action register and eighteen-file/proceeding map, both new finite `^` censuses, canonical corrections/gaps, bounded asset/control/management/capital monitor, ES/EN/DE hubs, reciprocal links, sitemaps, continuity audit and validators.
 
-Publish the exact reviewed branch through PR and green CI, merge only the reviewed head, verify the Pages deployment for the exact merge SHA, and no-cache read back the three hubs plus their machine controls. This repository/website authority does not authorise an email, AGE/RedSARA notice, portal submission, court filing or other external communication.
+The open work is evidential and operational: obtain the missing primary records, advance carets only from controlling identity sources, examine historical Git/cache exposure and any credential response without reproducing the protected identifier, maintain the bounded public-source watch, and pursue off-provider disaster recovery if separately authorised. Disaster recovery is **not claimed** by this closeout.
+
+Deleting the thread supplies no authority for an email, resend, forward, AGE/RedSARA notification, portal submission, court filing or authority contact. Each remains `PREPARED / HOLD — NOT AUTHORISED` unless separately and exactly authorised.
 
 ## Current conclusion
 
-The site is technically coherent but substantively under-integrated for the FTI/Meeting Point/RICPE chain. The local Acosta Matos/RICPE perimeter is proved instrumental to reconstruction of the local project and commercial history and supports a serious falsifiable business-impairment hypothesis. It is not yet proved to have caused the wider Meeting Point/FTI corporate collapse.
+The site is technically coherent and the FTI/Meeting Point/RICPE continuity layer is now integrated and exact-route verified live. The local Acosta Matos/RICPE perimeter is proved instrumental to reconstruction of the local project and commercial history and supports a serious falsifiable business-impairment hypothesis. It is not yet proved to have caused the wider Meeting Point/FTI corporate collapse.
 
 The RICPE channel record supports urgent independent production and an additional lawful-alertador rationale, but deliberate hiding remains an allegation. The live privacy defect has been remediated; historical Git/cache and credential questions remain separate.
 
-This thread is **not deletion-safe** until the substantive records are independently validated, published, deployed, no-cache read back and the continuity audit is promoted. No email, filing or authority notification is authorised by this digest.
+The thread is **DELETION-SAFE WITH OPEN EVIDENCE** because its material reasoning, boundaries, action state, identity scopes, monitoring controls and restart set are recoverable from the merged repository and verified live website. Primary evidence remains open; all five caret scopes remain partial and separate at **39/65, 40/101, 25/32, 56/130 and 19/24**; historical cache/credential risk remains open; and disaster recovery is not claimed. No email, resend, forward, filing, RedSARA/AGE notification, portal submission or authority contact is authorised by this digest or by deletion of the thread.

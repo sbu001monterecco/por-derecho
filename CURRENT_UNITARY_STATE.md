@@ -43,13 +43,17 @@ The additive, non-fragmented Administrador Concursal removal/remuneration thread
 
 That publication contains 50 redacted specialist records, preserves the 25 court/LAJ versus 25 party-filing split, exposes ten redacted decision PDFs, reconciles the four pleaded components arithmetically to EUR 110,956.97 and records ten finite production gaps. It does not claim that the complete certified Concurso docket has been obtained, that the pleaded total is bank-verified, that fee legality or quantum was adjudicated, or that any criminal responsibility has been established.
 
-### FTI Touristik / Meeting Point / RICPE continuity — additive candidate, not yet live verified
+### FTI Touristik / Meeting Point / RICPE continuity — additive live release
 
 `PD-FTI-MP-RICPE-CONTINUITY-20260827-01` is a separate specialist release at
-`PREPARED_PENDING_MERGE`. It adds a criminal-first, multidirectional continuity
-digest, a future-action map and a bounded Canary/Spain former-asset transaction
-monitor. It does not replace this file's historical 26-August live publication
-or imply that the candidate has been merged, deployed or read back.
+`DELETION_SAFE` with open evidence. PR #1111 published reviewed head
+`677906e303ad91cc436803d8d47e410deefbbd6f` as merge
+`41a8250ffdcd27e820bbc89b8238fb98ba23a6db`, tree
+`0f2b75347de048d449160a69d087b592bd51b35c`. Pages run `33083261099` / #1184
+succeeded for that exact merge. Current-digest verifier run `33083264830`
+passed 43 exact routes with 204-record registry parity, while the dedicated FTI
+verifier run `33083264897` passed 34 exact surfaces. This additive publication
+does not replace or rewrite this file's historical 26-August source release.
 
 Its restart controls are:
 
@@ -69,6 +73,9 @@ The bounded monitor has **3 heritage scopes, 11 known entity objects, 12
 automated-safe public sources, 2 baseline events and 8 open gaps**. A source
 change requires human verification and does not automatically establish or
 publish a buyer, manager, capital participant, transfer or wrongdoing.
+Its first live execution, run `33083264530`, passed from a fresh 12/12-source
+baseline with 0 errors and 0 review signals. With no prior state available, that
+result cannot prove the absence of an intervening change or transaction.
 
 For historical own-court acts use **el Ilmo. Sr. D. Alberto López Villarrubia,
 Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de
@@ -84,7 +91,7 @@ or routed the case.
 
 No email, resend, forwarding, RedSARA/AGE or other notice, portal submission,
 court filing, authority contact or other external action is authorised by this
-repository/website publication candidate.
+repository/website publication.
 
 ### Complete 21-URL no-cache readback set
 
@@ -122,10 +129,10 @@ Repository main, Pages deployment and exact public readback remain separately re
 
 ## Canonical identity denominator
 
-The 27-August Magistrate López Villarrubia / Meeting Point specialist candidate admits ten additional
-immutable records. Source JSON and static registry pages are synchronized at
-204. The last exact public-edge readback remains the earlier 194-record snapshot
-until this candidate is separately published and read back.
+The 27-August Magistrate López Villarrubia / Meeting Point specialist release
+admitted ten additional immutable records. Source JSON, static registry pages
+and the exact public-edge readback are synchronized at 204. The earlier
+194-record snapshot remains historical deployment evidence.
 
 | Class | Count |
 |---|---:|
@@ -136,10 +143,9 @@ until this candidate is separately published and read back.
 | Proceedings | 18 |
 | **Total** | **204** |
 
-These counts control in the candidate repository's canonical JSON, both public
-pages, metadata, JSON-LD and no-JavaScript fallbacks. They are not yet a claim of
-live public parity. The 194-ID and prior 185-ID readbacks remain historical
-deployment evidence. Archive backfill remains open. Identity resolves identity
+These counts control in the canonical JSON, both public pages, metadata, JSON-LD
+and no-JavaScript fallbacks, and are live-verified. The 194-ID and prior 185-ID
+readbacks remain historical deployment evidence. Archive backfill remains open. Identity resolves identity
 only; it does not transfer knowledge, intention, control, benefit,
 responsibility or liability.
 

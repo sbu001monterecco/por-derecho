@@ -59,6 +59,25 @@ try {
       }
       const metrics = await page.evaluate(({width, language}) => {
         const bodyText = document.body.textContent || '';
+        const overflowCandidates = [...document.querySelectorAll('body *')]
+          .map((element) => {
+            const rect = element.getBoundingClientRect();
+            const className = typeof element.className === 'string'
+              ? element.className.trim().split(/\s+/).filter(Boolean).slice(0, 2).join('.')
+              : '';
+            const selector = element.id
+              ? `${element.tagName.toLowerCase()}#${element.id}`
+              : `${element.tagName.toLowerCase()}${className ? `.${className}` : ''}`;
+            return {
+              selector,
+              left: Math.round(rect.left),
+              right: Math.round(rect.right),
+              width: Math.round(rect.width),
+            };
+          })
+          .filter((item) => item.left < -2 || item.right > width + 2)
+          .sort((a, b) => (b.right - width) - (a.right - width))
+          .slice(0, 8);
         const actionMarkers = {
           es: '31 ACCIONES CONTROLADAS',
           en: '31 CONTROLLED ACTIONS',
@@ -84,7 +103,13 @@ try {
           channelCards: document.querySelectorAll(`#${channelId} .proof-grid .card`).length,
           multidirectionalLinks: document.querySelectorAll(`#${linkId} .link-grid a`).length,
           hold: bodyText.includes('HOLD'),
-          horizontalOverflow: document.documentElement.scrollWidth - width,
+          documentScrollWidth: document.documentElement.scrollWidth,
+          bodyScrollWidth: document.body.scrollWidth,
+          horizontalOverflow: Math.max(
+            document.documentElement.scrollWidth,
+            document.body.scrollWidth,
+          ) - width,
+          overflowCandidates,
           deCnmvControlLink: language !== 'de' || Boolean(document.querySelector('#kanal a[href*="/en/cnmv-ricpe-verification/"]')),
           deRegageParity: language !== 'de' || [
             'REGAGE26e00003492334',
@@ -114,7 +139,12 @@ try {
       if (metrics.channelCards !== 3) failures.push(`${prefix}: expected three channel evidence-state cards, got ${metrics.channelCards}`);
       if (metrics.multidirectionalLinks !== 6) failures.push(`${prefix}: expected six multidirectional links, got ${metrics.multidirectionalLinks}`);
       if (!metrics.hold) failures.push(`${prefix}: external-action hold missing`);
-      if (metrics.horizontalOverflow > 2) failures.push(`${prefix}: horizontal overflow ${metrics.horizontalOverflow}px`);
+      if (metrics.horizontalOverflow > 2) {
+        failures.push(
+          `${prefix}: horizontal overflow ${metrics.horizontalOverflow}px; `
+          + `candidates=${JSON.stringify(metrics.overflowCandidates)}`,
+        );
+      }
       if (!metrics.deCnmvControlLink) failures.push(`${prefix}: German CNMV control backlink missing`);
       if (!metrics.deRegageParity) failures.push(`${prefix}: German REGAGE identifiers/limitation parity missing`);
       if (!metrics.deControlledHistoricTitle) failures.push(`${prefix}: German page lacks exact controlled Spanish historic title`);

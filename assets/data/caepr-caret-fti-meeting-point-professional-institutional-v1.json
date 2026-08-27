@@ -8,9 +8,9 @@
   "snapshot_note": "The hashes freeze the thirteen-surface audit snapshot. S08-S10 also attest the exact current integrated ES/EN/DE continuity-page bytes and are enforced by the focused validator. A later page revision requires recomputing those three fingerprints and rerunning the validator; it does not expand this role-selected denominator.",
   "source_surfaces": [
     {"id":"S01","path":"archive/FTI_MEETING_POINT_INSOLVENCY_PREINSOLVENCY_BLUESEA_PUBLICATION_BASIS_21AUG2026.md","sha256":"cdb695cfabe8b4bcd75d01fabf110bf373b93b9d0be8d8279b4b12067e5e0b71"},
-    {"id":"S02","path":"archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md","sha256":"6c366ca49cd41e1601ccdf0b3edfe56ddb098dd676352f29f8703091e8c522e7"},
-    {"id":"S03","path":"ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.md","sha256":"5d1e3bc1712573fea0235769765432baddc81c22efeed24d9f8bbc564a7a0b38"},
-    {"id":"S04","path":"ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json","sha256":"6bbe34b0fdd931bca029ece79559aaeb0a8d6f82acd7e73bad8efaf2e636b4be"},
+    {"id":"S02","path":"archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md","sha256":"d3603c6b151920e7bf6a4f5049b9bcba8980cffae778a03bf6a06eff2a7f7bbd"},
+    {"id":"S03","path":"ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.md","sha256":"4937782a6841d063a892eb7880ba4a8fdd9d212e176c74b6bc084f39433360b9"},
+    {"id":"S04","path":"ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json","sha256":"d37584196101cd6b021f336e2efb37b1d672c884513c62ae0df7ddbff89999f6"},
     {"id":"S05","path":"ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md","sha256":"332084fd802015dd7e76612adf5866436e8410f47116502f2211b9df50fbf2a0"},
     {"id":"S06","path":"es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html","sha256":"813b6b219779aa3022affcae15ab79dfd52991697ac0bb7b12dc8062edf12145"},
     {"id":"S07","path":"en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html","sha256":"5d9cd7991f53617ca18d66ce9f645ef6194575a36d9d7edf48837d03515a2085"},

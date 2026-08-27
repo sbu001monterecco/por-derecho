@@ -4,20 +4,25 @@
 
 **Date:** 27 August 2026
 
-**Public baseline:** `f4c186194f34c414e83526a771a9772d62782519`
+**Pre-release public baseline:** `f4c186194f34c414e83526a771a9772d62782519`
 
-**Candidate branch at audit start:** `codex/alberto-judicial-title-20260827`
-**Current determination:** **NOT DELETION-SAFE**
+**Published release:** PR [#1111](https://github.com/sbu001monterecco/por-derecho/pull/1111), reviewed head `677906e303ad91cc436803d8d47e410deefbbd6f`, merge `41a8250ffdcd27e820bbc89b8238fb98ba23a6db`, tree `0f2b75347de048d449160a69d087b592bd51b35c`
+
+**Current determination:** **DELETION-SAFE WITH OPEN EVIDENCE**
 
 **Live binary-complete privacy-hotfix merge:** `c42996115b66f7ae6b98e651ee8e9c72818e824b`
 
-**Substantive candidate:** authorised for repository/website publication; exact final head and merge SHA to be recorded after CI and merge
+**Substantive release:** merged, deployed and exact-route verified live; no email, filing or authority-contact authority was granted or exercised
 
-## Why the thread is not yet safe to delete
+## Why the thread is now safe to delete
 
-The material state is represented in the candidate files, but the substantive package has not yet completed final commit review, remote preservation, merge, Pages deployment or exact no-cache live readback. The separate binary privacy remediation is already merged and verified live. Deleting the conversation before substantive publication closeout would remove the easiest recovery path for the newest allegation boundaries, action state, expanded identity census and monitoring design.
+The material reasoning, attribution limits, action state, expanded identity censuses, monitoring controls and restart pointers are now preserved in the merged repository and deployed website. GitHub Pages run `33083261099` (run no. 1184) completed successfully for the exact merge SHA. The dedicated FTI verifier run `33083264897` then passed exact no-cache byte equality on **34/34 routes** and preserved closeout artifact `9651057259` with digest `sha256:6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e`.
 
-## Material state preserved in the candidate
+The first public-source transaction-monitor run `33083264530` also passed from a fresh baseline: **12/12 sources checked, 0 errors and 0 review signals**. Artifact `9651009448` preserves that bounded result. A zero-signal run proves neither absence of a transaction nor exhaustive register coverage.
+
+Deletion-safety means continuity can be recovered without this chat. It does not mean the primary-evidence gaps are closed, that the allegations are judicial findings, that every object is careted, or that off-provider disaster recovery has been proved.
+
+## Material state preserved in the live release
 
 ### Unitary reasoning
 
@@ -33,6 +38,12 @@ The material state is represented in the candidate files, but the substantive pa
 - Deliberate concealment, obstruction and non-receipt by a named Board member/shareholder/investor/authority remain allegations, not certified facts.
 - The internal closure supplies an additional reason to assess a lawful external alertador route; Law 2/2023 scope and protection remain person-, information-, subject- and route-specific.
 - CNMV acknowledged the 20-Aug communication. Two 27-Aug extensions were sent, the latter with five attachments. Later receipt, linkage, preservation, assignment and merits review remain open.
+
+### Alberto López Villarrubia title and allocation boundary
+
+- For his historic own-court acts, the controlled title is **el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria**.
+- Under the reorganised current structure, the controlled title is **el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria**.
+- The 24-Oct-2024 former Court No. 3 material is a register attribution only. It does not itself prove signature, assignment or substitution, the capacity in which he acted, knowledge, a statutory conflict, abstention/recusal, disclosure or concealment.
 
 ### Security incident and completed current-tree remediation
 
@@ -59,13 +70,13 @@ The denominators are separate and complete only for their declared scopes. All r
 ### Continuous transaction-monitor state
 
 - Three bounded heritage scopes, eleven controlled entity objects, twelve public sources, two baseline events and eight open coverage gaps are preserved in the canonical machine register.
-- The scheduled workflow checks public sources four times daily but is not a real-time guarantee and cannot create a finding, event, caret, website update, email, filing, contact or notification automatically.
+- The scheduled workflow checks public sources four times daily but is not a real-time guarantee and cannot create a finding, event, caret, website update, email, filing, contact or notification automatically. Its first main-branch run `33083264530` passed a fresh 12/12-source baseline with 0 errors and 0 review signals; artifact `9651009448` is the bounded execution record.
 - Owner, buyer, seller, operator, manager, franchisor, franchisee, lessor, lessee, lender, borrower, investor, fund manager, security taker, refinancer, restructuring acquirer, asset manager, adviser and insolvency administrator remain distinct capacities.
 - Restricted register work remains manual. Absence from monitored public sources does not prove absence of a transaction.
 
 ### Historical correction
 
-The old FTI deletion audit and email action state incorrectly remained at a pre-merge branch state and obsolete 0/5 caret snapshot. The candidate records that PR #1084 merged at `6face6554c4214e68e74a9b9b6bce36e41aedb3f` and PR #1085 at `048bb4e419a6b36e279e3e7d5792ebafb008cfe5`, while preserving this new 27-Aug work as not live.
+The old FTI deletion audit and email action state incorrectly remained at a pre-merge branch state and obsolete 0/5 caret snapshot. The live release records that PR #1084 merged at `6face6554c4214e68e74a9b9b6bce36e41aedb3f`, PR #1085 at `048bb4e419a6b36e279e3e7d5792ebafb008cfe5`, and this 27-Aug continuity release at `41a8250ffdcd27e820bbc89b8238fb98ba23a6db`.
 
 The Club Sei publication basis and ES/EN pages now include all three 15-Jan-2026 Fiscalía registrations: `REGAGE26e00003492334`, `REGAGE26e00003609135` and `REGAGE26e00003629560`. Registration does not prove opening, joinder, preservation or merits review.
 
@@ -88,33 +99,31 @@ The Club Sei publication basis and ES/EN pages now include all three 15-Jan-2026
 
 ## Deletion dimensions
 
-| Dimension | Current result | Promotion requirement |
+| Dimension | Current result | Evidence / residual boundary |
 |---|---|---|
-| Thread reasoning continuity | PASS in local commit `84552373…` | remote preservation and final readback |
-| Implementation-state continuity | PARTIAL | push/PR/merge/deploy/readback |
-| Evidence/proposition boundaries | PASS in candidate | validator and public readback |
-| Cross-border action continuity | PASS in candidate | machine JSON validation |
-| Full finite `^` continuity | PASS in candidate | 65-record and 101-record validators |
-| Continuous asset/management/capital monitoring | PREPARED | merge, scheduled-workflow activation and first public-safe run |
+| Thread reasoning continuity | PASS | merged restart set and live exact-route readback |
+| Implementation-state continuity | PASS | PR #1111, exact head/merge/tree, Pages and verifier evidence recorded |
+| Evidence/proposition boundaries | PASS | dedicated validator and 34/34 public readback passed |
+| Cross-border action continuity | PASS | machine JSON validation passed; every external action remains unauthorised |
+| Full finite `^` continuity | PASS for declared finite scopes | all five denominators remain separate and partial |
+| Continuous asset/management/capital monitoring | ACTIVE / BOUNDED | first fresh 12/12 run passed; restricted/manual coverage remains open |
 | Security remediation | PASS current tree/live | historical Git/cache and credential assessment remain separate |
-| Public route parity/interlinking | PREPARED | Pages exact-SHA deployment and ES/EN/DE readback |
+| Public route parity/interlinking | PASS | exact-SHA Pages deployment and 34/34 route readback |
 | Email/filing authority safety | PASS | remain false until separate exact authorization |
-| Primary-evidence completeness | OPEN | ME-049/ME-094/ME-095; does not block reasoning continuity |
-| Disaster recovery | NOT YET CLAIMED | remote/off-provider preservation and closeout record |
+| Primary-evidence completeness | OPEN | ME-049/ME-094/ME-095/ME-096; does not block reasoning continuity |
+| Disaster recovery | NOT CLAIMED | remote GitHub preservation exists; off-provider recovery has not been proved |
 
-## Promotion sequence
+## Exact publication closeout
 
-1. Keep the already verified isolated privacy hotfix as the public baseline.
-2. Review and commit the exact substantive candidate under the existing repository/website publication authority.
-3. Push/open the substantive PR without extending authority to email or filing.
-4. Require green privacy, identity, both caret, causal-graph, action-state, transaction-monitor, repository, audience, link and mission-critical checks.
-5. Merge only the exact reviewed head.
-6. Verify Pages deployment at the exact merge SHA and the first public-safe monitor run.
-7. No-cache read back the three hubs, machine controls, derived watch view and inbound-link module.
-8. Record merge SHA, Pages run and readback evidence here; only then promote to `DELETION-SAFE WITH OPEN EVIDENCE`.
+1. PR #1111 merged only the reviewed head `677906e303ad91cc436803d8d47e410deefbbd6f`.
+2. The resulting merge/tree pair is `41a8250ffdcd27e820bbc89b8238fb98ba23a6db` / `0f2b75347de048d449160a69d087b592bd51b35c`.
+3. Pages run `33083261099` (no. 1184) succeeded for that exact merge.
+4. FTI verifier run `33083264897` passed 34/34 exact no-cache route comparisons; closeout artifact `9651057259` has digest `sha256:6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e`.
+5. Monitor run `33083264530` passed its fresh baseline at 12/12 sources, 0 errors and 0 review signals; artifact `9651009448` preserves the result.
+6. The isolated RICPE privacy hotfix remains separately live-verified at `c42996115b66f7ae6b98e651ee8e9c72818e824b`.
 
 ## Deletion rule
 
-Deleting this chat must never be interpreted as withdrawal of allegations, proof of concealment, proof of causation, completion of evidence production, permission to merge distinct persons/entities/proceedings, waiver of correction or right of reply, or authorization to send/file/publish.
+Deleting this chat must never be interpreted as withdrawal of allegations, proof of concealment, proof of causation, completion of evidence production, permission to merge distinct persons/entities/proceedings, waiver of correction or right of reply, or authorization for any email, resend, forward, filing, RedSARA/AGE notification, portal submission or authority contact.
 
-**Final current verdict: NOT DELETION-SAFE.** No email, filing, push, merge or deployment was made in this audit.
+**Final current verdict: DELETION-SAFE WITH OPEN EVIDENCE.** The repository/website publication is complete and verified. No email, resend, forward, filing, RedSARA/AGE notification, portal submission or authority contact was made or authorised by this audit or by deletion of the thread.

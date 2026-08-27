@@ -20,6 +20,12 @@ At the start of this digest:
 
 These are operational observations, not merits findings. The specialist `LIVE_VERIFIED` release at `77e2ba300af45a953947160af63283a64512e876` remains the controlling evidence/publication snapshot for the 26-August unitary-enterprise package; it is not the current Git head.
 
+### Additive 27-August publication closeout
+
+The immutable source-base snapshot above remains historical. It was not rewritten by the later specialist release. PR #1111 published reviewed head `677906e303ad91cc436803d8d47e410deefbbd6f` as merge `41a8250ffdcd27e820bbc89b8238fb98ba23a6db`, tree `0f2b75347de048d449160a69d087b592bd51b35c`. Pages run `33083261099` / #1184 succeeded for that exact merge. Current-digest verifier run `33083264830` then passed exact-byte readback on 43 routes and 204-record registry parity; artifact `9651039104` is `sha256:7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead`. The dedicated FTI verifier run `33083264897` separately passed its 34-surface scope. Monitor run `33083264530` established a fresh 12/12-source baseline with 0 fetch errors and 0 review signals; it proves neither absence of a transaction nor absence of an intervening change.
+
+This is an **additive live release**. It does not change the historical source-base SHA, collapse any caret scope, close primary-evidence gaps, create a criminal finding, or authorise an email, filing, RedSARA/AGE notice, portal submission or authority contact.
+
 ## 2. Controlling unitary rule
 
 > **Sun Park was one economically integrated hotel platform, but it was never one legal person, one title, one operator, one debt, one insolvency estate or one claimant.**
@@ -188,10 +194,9 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 - The unitary record already uses the correct “read forward; test backward” method.
 - The criminal reverse-engineering page separates attributed theory from judicial finding and exposes contrary proof requirements.
-- The last live-verified public identity denominator is 194. The 27-August
-  Magistrate López Villarrubia / Meeting Point specialist candidate admits ten additional immutable
-  records, producing a source/static denominator of 204; public parity for 204
-  remains pending the separate publication cycle.
+- The current live-verified public identity denominator is **204**: 87 people,
+  71 organisations, 10 structures, 18 institutions and 18 proceedings. The
+  earlier 194-record exact readback remains historical deployment evidence.
 - The 26-August AC removal/remuneration package and other specialist routes use redacted source/status controls rather than silently converting pleadings into findings.
 - Current exact-main Pages deployment, control-plane verification and production smoke are green.
 
@@ -215,7 +220,7 @@ The live finite unitary caret digest on current `main` remains:
 A previously prepared local 24/24 package was based on the earlier `16dd443...` repository state. It is **not mergeable as-is** because:
 
 - the source-base registry was 194 and the separately controlled Magistrate López Villarrubia / Meeting
-  Point candidate now advances it to 204; neither state matches the stale
+  Point release advanced the live-verified registry to 204; neither state matches the stale
   package's assumptions;
 - proceeding IDs `PD-SP-R-0011` through `PD-SP-R-0017` are now occupied;
 - Matkator and ONA remain controlled perimeter labels requiring current-source reconciliation;
@@ -275,17 +280,18 @@ Controls:
 - exhaustive specialist caret control: `assets/data/caepr-caret-alberto-meeting-point-357-v1.json`;
 - exhaustive first-hop evidence-corpus caret control: `assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json`;
 - separate unitary caret control: `assets/data/caepr-caret-unitary-digest-v1.json`;
-- candidate publication manifest: `publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json`;
+- live publication manifest: `publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json`;
 - full caret audit: `archive/ALBERTO_MEETING_POINT_357_CROSS_PROCEEDING_CARET_AUDIT_26AUG2026.md`;
 - Spanish dossier: `/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/`;
 - English dossier: `/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/`.
 
-### Separate specialist continuity candidate — FTI Touristik / Meeting Point / RICPE / Canary and Spain asset watch
+### Separate live specialist continuity release — FTI Touristik / Meeting Point / RICPE / Canary and Spain asset watch
 
 `PD-FTI-MP-RICPE-CONTINUITY-20260827-01` is an additive, criminal-first,
-non-fragmented continuity module. Its state is `PREPARED_PENDING_MERGE`. It
-does not rewrite the immutable `8e8e83c5...` historical source-base snapshot or
-claim that the candidate has already been merged, deployed or read back live.
+non-fragmented continuity module. Its state is `DELETION_SAFE` with open
+evidence after PR #1111, exact-SHA Pages deployment and dedicated live
+readback. It does not rewrite the immutable `8e8e83c5...` historical
+source-base snapshot.
 
 The module keeps two new identity-only censuses separate from one another and
 from the 25/32, 56/130 and repository-wide 19/24 scopes above:
@@ -313,6 +319,9 @@ It is not comprehensive and cannot, without source-specific verification,
 establish a buyer, seller, owner, operator, manager, financier, adviser,
 transfer, current status or wrongdoing. A detected change enters human review;
 it is not automatically promoted to the evidence register, CAEPR or website.
+Its first main-branch execution, run `33083264530`, passed from a fresh baseline
+at 12/12 sources with 0 errors and 0 review signals. Because no prior state was
+available, this baseline cannot prove that no intervening source change occurred.
 
 Two production boundaries control the criminal-first analysis:
 

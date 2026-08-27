@@ -3,13 +3,21 @@
   "publication_id": "fti-meeting-point-ricpe-continuity-20260827",
   "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
   "control_date": "2026-08-27",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "release_candidate_not_yet_verified_live",
+  "current_state": "DELETION_SAFE",
+  "status": "deletion_safe_live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "remote_main_observed_sha": "f4c186194f34c414e83526a771a9772d62782519",
   "candidate_branch": "codex/fti-meeting-point-ricpe-continuity-20260827",
   "candidate_parent_sha": "f4c186194f34c414e83526a771a9772d62782519",
-  "validated_content_commit_sha": "bd7330dcd498e7bf563b1f3e60ab3f59eecadc49",
+  "validated_content_commit_sha": "677906e303ad91cc436803d8d47e410deefbbd6f",
+  "pull_request": {
+    "number": 1111,
+    "url": "https://github.com/sbu001monterecco/por-derecho/pull/1111",
+    "state": "MERGED",
+    "final_head_sha": "677906e303ad91cc436803d8d47e410deefbbd6f"
+  },
+  "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+  "published_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
   "publication_authorized": true,
   "publication_authorization": {
     "scope_control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
@@ -44,8 +52,17 @@
     {
       "id": "SUBSTANTIVE-CONTINUITY-RELEASE",
       "priority": 1,
-      "state": "PREPARED_AUTHORISED_NOT_LIVE",
-      "purpose": "Publish the criminal-first digest, multidirectional causal graph, both finite caret censuses, the 31-action ledger with complete 18-file/proceeding mapping, continuity audit, bounded transaction monitor and ES/EN/DE interlinked hubs."
+      "state": "LIVE_VERIFIED",
+      "purpose": "Publish the criminal-first digest, multidirectional causal graph, both finite caret censuses, the 31-action ledger with complete 18-file/proceeding mapping, continuity audit, bounded transaction monitor and ES/EN/DE interlinked hubs.",
+      "pull_request": 1111,
+      "validated_head_sha": "677906e303ad91cc436803d8d47e410deefbbd6f",
+      "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+      "published_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+      "pages_run_id": 33083261099,
+      "pages_run_number": 1184,
+      "pages_conclusion": "success",
+      "exact_byte_surfaces": 34,
+      "verified_at": "2026-08-27T14:39:13Z"
     }
   ],
   "hub_routes": {
@@ -94,7 +111,19 @@
     "open_coverage_gaps": 8,
     "cadence": "17 */6 * * *",
     "automatic_promotion": false,
-    "external_action_authorized": false
+    "external_action_authorized": false,
+    "first_live_run": {
+      "workflow_run_id": 33083264530,
+      "artifact_id": 9651009448,
+      "artifact_sha256": "e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98",
+      "result": "PASS_12_OF_12_BASELINE",
+      "source_results": 12,
+      "errors": 0,
+      "review_items": 0,
+      "pending_items": 0,
+      "automatic_promotion": false,
+      "external_action_authorized": false
+    }
   },
   "expected_source_files": [
     "archive/prompts/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_CONTINUITY_PROMPT_27AUG2026.md",
@@ -127,10 +156,16 @@
     "de": ["de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html"]
   },
   "validation": {
-    "dedicated_structure_privacy_caret_action_gate": "passed_local",
+    "evidence": [
+      "PR #1111 final head 677906e303ad91cc436803d8d47e410deefbbd6f passed the dedicated continuity, professional/institutional caret, asset-monitor, privacy, repository-preservation, audience, link and mission-critical gates.",
+      "GitHub Pages run 33083261099 deployed merge 41a8250ffdcd27e820bbc89b8238fb98ba23a6db successfully.",
+      "Matter-specific verifier run 33083264897 matched all 34 declared public surfaces to the reviewed repository bytes; its closeout artifact is identified below.",
+      "The first bounded asset/control/management/capital monitor run 33083264530 fetched 12/12 configured public sources with zero errors; it established a fresh baseline only."
+    ],
+    "dedicated_structure_privacy_caret_action_gate": "passed_local_and_pr_head",
     "binary_privacy_gate": "passed_live_and_final_local_revalidation",
-    "professional_institutional_caret_gate": "passed_local",
-    "asset_transaction_monitor_gate": "passed_local",
+    "professional_institutional_caret_gate": "passed_local_and_pr_head",
+    "asset_transaction_monitor_gate": "passed_local_pr_head_and_first_live_run",
     "json_syntax": "passed_local",
     "xml_syntax": "passed_local",
     "repository_preservation": "passed_local",
@@ -138,26 +173,136 @@
     "audience_experience": "passed_local",
     "identity_registry": "passed_local",
     "sent_link_continuity": "passed_local",
-    "mission_critical": "passed_local",
-    "live_readback": "not_run_pending_authorised_publication"
+    "mission_critical": "passed_local_and_pr_head",
+    "live_readback": "passed_34_of_34_exact_bytes"
   },
-  "publication_sequence": [
-    "review exact local diff",
-    "commit candidate",
-    "bind the existing repository-and-website-only publication authorization",
-    "retain the already live-verified isolated privacy hotfix as the baseline",
-    "push substantive candidate and open PR",
-    "require green checks",
-    "merge exact reviewed head",
-    "verify exact-SHA Pages deployment",
-    "read back ES/EN/DE hubs, machine controls, reciprocal links and formerly leaking files",
-    "write live closeout and promote deletion audit"
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow": "pages build and deployment",
+    "conclusion": "success",
+    "run_id": 33083261099,
+    "run_number": 1184,
+    "run_url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33083261099",
+    "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+    "attested_at": "2026-08-27T14:39:12Z"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/fti-meeting-point-ricpe-alertador-continuidad/",
+    "https://sbu001monterecco.github.io/por-derecho/en/fti-meeting-point-ricpe-whistleblower-continuity/",
+    "https://sbu001monterecco.github.io/por-derecho/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/"
+  ],
+  "live_readback": {
+    "schema": "por-derecho.fti-meeting-point-ricpe-live-closeout.v1",
+    "result": "PASS_EXACT_BYTES",
+    "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "verified_at": "2026-08-27T14:39:13Z",
+    "exact_byte_surfaces": 34,
+    "sha256_by_route": {
+      "/archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md": "ad60b2048ea53a5c52ef3315f298506eed8c9c6d4f539d0e34b5dc4b24705a35",
+      "/archive/RICPE_27AUG2026_RESOLVER_IDENTITY_ACCESS_CONTROL_NPL_CONTINUUM_ADDENDUM.md": "f93714c3d6286cf36908051277632d168f629bc903e4a79785c85661ce2ed172",
+      "/archive/prompts/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_CONTINUITY_PROMPT_27AUG2026.md": "cbcdb40d0d47c2a0e7c0048ac81aa984585dccd0e34ca132ba3a5e5f8a6216dc",
+      "/assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json": "b91c4cbf31ac8f47705f802d670b96bd536df1a32c4d3de3d429bc2b1d23d065",
+      "/assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json": "4e182a65a53ec4d3872b8dd6aec8f99cdcbd701f08926245fdd7b6d67ddecc7c",
+      "/assets/data/fti-meeting-point-canary-capital-control-watch-v1.json": "52ae97b2d16b8075ef860aa81448bd2980c305b79c63dcb41f16a36d7b3cbfea",
+      "/assets/data/fti-meeting-point-canary-spain-asset-transaction-monitor-schema-v1.json": "84e2b139974409c93fe36662c27924e009daed7eb1ada13ab45cd0a253aa99b8",
+      "/assets/data/fti-meeting-point-canary-spain-asset-transaction-register-v1.json": "14f4b6255524de32c73538fcdf5cf9b07115370f3cee8e6a1a1ad9ce0bddda71",
+      "/assets/data/fti-meeting-point-ricpe-causal-evidence-v1.json": "1b6d6403f1a373bedb78e1b4c4cc0ff2e8d5b00167bb029bf2ec5a8cba25dfc1",
+      "/assets/fti-meeting-point-canary-capital-control-watch-20260827.css": "b97ef7ebbb92a9dab6e495d788fd896335ca2e861e637e50ecf55f7c63950dd0",
+      "/assets/fti-meeting-point-canary-capital-control-watch-20260827.js": "ef0f5201650592553f38ccbea8eb52389851de581d8ff2dbe06a888028a36d06",
+      "/assets/fti-meeting-point-ricpe-continuity-20260827.js": "4a74e7e6a64b5758b8fe9d2b2ed2e8b1b91372fcd7b278da8d79e465a19383aa",
+      "/assets/ricpe-cnmv-closure-update-20260827.js": "042360bcfc6658b53362debcdf8e4b678d1d970b94da46e0550784c5f7ddf3e8",
+      "/assets/ricpe-resolver-access-control-20260827.js": "7eaa2785ef162a25d2a541b752a392884ec2b951963229d54731cc61f8968069",
+      "/assets/site-pre-intervencion-highlight-20260820.js": "67c0a4c09eac1d4a764a6ceea5cbc3297f1ac0cc9954926acbb3f0d3b3de6487",
+      "/assets/site.js": "d728550e02711236610cc85caead0b1f1e8aded3e25882a61347347138e189c3",
+      "/assets/styles.css": "ba35caae5538ec74a6ee5b0e7f99063dd3242d28676d3f54a69002c222bd042f",
+      "/de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/": "3b61aa2ad105efd858f231af47acc6f0fba36eef822f6ed916da59690f14a2a8",
+      "/docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md": "a9e4a7fcd80610e750a1d7796dc8c116581daa1e98206e1a56c0ebb4c30b2160",
+      "/en/fti-meeting-point-ricpe-whistleblower-continuity/": "3cec24cad4b911a7d59f8ffc01067812699685c7226400cfc407700cf79bd262",
+      "/es/fti-meeting-point-ricpe-alertador-continuidad/": "28256544ffcfebad8f3685d4f4fb910fa8fa30b7ec3c328e393bef61bec3bb5b",
+      "/evidence/ricpe-cnmv/2026-08-27/": "491f550c8efad39f3cec99a3b99d200404462388557243dbe5997939a0bfff7d",
+      "/evidence/ricpe-cnmv/2026-08-27/resolution.txt": "39ddf346483f31f08b76ce9247697a7be4dc27c633937484c2f94602148c87a7",
+      "/ops/FTI_MEETING_POINT_CANARY_SPAIN_ASSET_TRANSACTION_MONITOR_CONTROL_27AUG2026.json": "669a3fa397fdd139c65257979421d4f6e72a867697ca573620d2c0b1434d9c27",
+      "/ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.json": "3a9190074057d547046cbf98b0de599e97c758c10f74df33d2cffd967d975d22",
+      "/ops/FTI_MEETING_POINT_RICPE_CROSSBORDER_ACTION_REGISTER_27AUG2026.md": "34b2793e17b6d5af627b3210792e463d8ac836b1740ae001d7640a349bfc4420",
+      "/publication-manifests/fti-meeting-point-ricpe-continuity-20260827.json": "17aff71198baaf6f04f67649acf2706921498551b84765a4505e34bc80aab1e4",
+      "/scripts/monitor_fti_meeting_point_asset_transactions.py": "7e1f435bde852edb82838d9a2bf82bd7192ad76eafc111d1a380c3090d83f05a",
+      "/scripts/render_fti_meeting_point_ricpe_continuity.mjs": "b77fb6bb0db42472fbf41f1e25d689615aba0af1630bf7b1b8e426ae79f8e00b",
+      "/scripts/validate_fti_meeting_point_asset_transaction_monitor.py": "ef3c40231f1ffbb381fc342b1472949d76e43c4b1cbca6a27c81d26dcbd199a9",
+      "/scripts/validate_fti_meeting_point_professional_institutional_caret.py": "4a0d661c9e03f4830e5c2f5bb1f2ce54e76add6d98d605e7f2d28a1ad55130de",
+      "/scripts/validate_fti_meeting_point_ricpe_continuity.py": "08971b84758593ec71edb447fa1b847a3a7f86c77684fff0ce9e9eb017ed5061",
+      "/sitemap-meeting-point.xml": "47ac099a83cf95468968636883b2b6eb7d31db2ebeed184d1c7ca3c10e136654",
+      "/sitemap.xml": "4542bf9c2c2bab68719b57301abbacea1a7333a6c076e7132c1ec9e7ef5cfc29"
+    }
+  },
+  "live_verification_evidence": {
+    "result": "PASS_EXACT_BYTES",
+    "verified_merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "pages_run_id": 33083261099,
+    "workflow_run_id": 33083264897,
+    "artifact_id": 9651057259,
+    "artifact_name": "fti-meeting-point-ricpe-live-closeout-33083264897",
+    "artifact_sha256": "6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e",
+    "verified_at": "2026-08-27T14:39:13Z",
+    "exact_byte_surfaces": 34,
+    "boundary": "Live verification proves publication parity only. The monitor's first successful run is a fresh baseline and does not prove that no transaction occurred."
+  },
+  "closeout_control": {
+    "kind": "SEPARATE_WORKFLOW_ARTIFACT",
+    "result": "LIVE_VERIFIED",
+    "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "workflow": "Validate FTI Meeting Point RICPE continuity",
+    "workflow_run_id": 33083264897,
+    "workflow_run_attempt": 1,
+    "artifact_id": 9651057259,
+    "artifact_sha256": "6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e",
+    "verified_at": "2026-08-27T14:39:13Z",
+    "communication_authorized": false,
+    "email_authorized": false,
+    "filing_authorized": false,
+    "red_sara_age_notification_authorized": false,
+    "portal_submission_authorized": false,
+    "authority_contact_authorized": false,
+    "email_or_filing_action": "HOLD_NOT_AUTHORISED"
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "reason": "The exact PR 1111 head was merged, its tree was deployed by the exact successful Pages run, 34 controlled public surfaces matched the reviewed repository bytes, and the first bounded monitor run passed 12/12 sources with no errors, review items or pending items. The canonical restart set preserves the unitary reasoning, corrections, finite caret scopes, action state, monitor controls and all continuing authority boundaries.",
+    "main_verified": true,
+    "pages_verified": true,
+    "chat_required_for_future_work": false,
+    "disaster_recovery": false,
+    "disaster_recovery_claimed": false,
+    "open_evidence": [
+      "ME-049: complete Sun Park / Lava Verde / Club Sei / Meeting Point contracting, authority, commercial-data, restructuring, public-credit and transaction-custody record",
+      "ME-094: complete delivery, routing, preservation and substantive-response record for the 22-Aug-2026 FTI/Meeting Point notice sequence",
+      "ME-095: complete native RICPE/Ithikios closure, governance-routing, preservation and CNMV-extension treatment record",
+      "ME-096: durable review and source-completion record for the former FTI/Meeting Point Canary/Spain asset, control, management and capital watch",
+      "Historical Git/cache exposure of the formerly published private identifier and separate access-credential rotation/verification remain open security questions."
+    ],
+    "email_sent_in_closeout": false,
+    "gmail_draft_created_in_closeout": false,
+    "filing_made_in_closeout": false,
+    "authority_contacted_in_closeout": false,
+    "continuing_rule": "No email, resend, forward, AGE/RedSARA notification, portal submission, filing or authority contact is authorized. Any future outbound action requires an immutable complete preview and a new separate exact authorization."
+  },
+  "publication_history": [
+    "exact local diff reviewed",
+    "substantive candidate committed",
+    "repository-and-website-only publication authorization bound",
+    "already live-verified isolated privacy hotfix retained as the baseline",
+    "substantive candidate published and PR #1111 opened",
+    "required checks completed",
+    "exact reviewed head merged",
+    "exact-SHA Pages deployment verified",
+    "ES/EN/DE hubs, machine controls, reciprocal links and formerly leaking files read back",
+    "live closeout recorded and deletion audit promoted"
   ],
   "boundaries": [
     "Criminal-first is analytical order, not a criminal finding.",
     "The Acosta Matos/RICPE instrumental-business-causation proposition is Gil Marer's attributed, falsifiable allegation; wider causation and quantified loss are not proved.",
     "The RICPE workflow history proves the recorded states, not deliberate concealment or non-receipt by a particular constituency.",
     "A caret resolves identity only.",
-    "Repository and website publication of the exact continuity candidate is authorized; no email, resend, AGE/RedSARA notice, portal submission, filing or other external communication is authorized."
+    "Repository and website publication of the exact continuity package was authorized and completed; no email, resend, AGE/RedSARA notice, portal submission, filing or other external communication was or is authorized."
   ]
 }

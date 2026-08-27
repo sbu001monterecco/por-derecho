@@ -966,7 +966,10 @@ if rank >= ALLOWED_LIFECYCLE.index("DEPLOYED"):
     check(deployment.get("head_sha") == manifest.get("merge_sha"), f"{state} Pages head SHA does not equal merge SHA")
 
 if rank >= ALLOWED_LIFECYCLE.index("LIVE_VERIFIED"):
-    expected_hub_urls = {language: "https://sbu001monterecco.github.io/por-derecho" + route for language, route in (manifest.get("hub_routes") or {}).items()}
+    expected_hub_urls = [
+        "https://sbu001monterecco.github.io/por-derecho" + route
+        for route in (manifest.get("hub_routes") or {}).values()
+    ]
     check(manifest.get("live_urls") == expected_hub_urls, f"{state} live URL set is not the exact bilingual hub set")
     readback = manifest.get("live_readback") or {}
     check(isinstance(readback, dict), f"{state} live_readback must be a structured object")
