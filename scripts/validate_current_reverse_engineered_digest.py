@@ -54,7 +54,14 @@ assert state["source_base"]["open_pull_requests"] == 33
 assert state["source_base"]["required_status_check_enforcement"] == "off"
 
 assert manifest["control_id"] == state["control_id"]
-assert manifest["current_state"] in {"REPOSITORY_CONTROLLED", "LIVE_VERIFIED"}
+assert manifest["current_state"] in {
+    "PR_OPEN",
+    "CI_GREEN",
+    "MERGED",
+    "DEPLOYED",
+    "LIVE_VERIFIED",
+}
+assert manifest["expected_routes"] == {"es": [], "en": []}
 assert manifest["reader_facing_material_update"] is False
 assert manifest["material_date_change"] is False
 assert manifest["identity_registry"] == state["identity_registry"]
