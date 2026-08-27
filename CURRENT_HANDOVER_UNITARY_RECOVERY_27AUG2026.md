@@ -1,21 +1,23 @@
 # CURRENT HANDOVER — UNITARY RECOVERY REDIGEST — 27 AUGUST 2026
 
 **Status:** controlling cross-track handover for new ChatGPT threads and repository maintenance.  
-**Baseline inspected:** `e241598c21045861cbe158ccecd7538f16ad20c9`.  
+**Historical baseline inspected for this handover:** `e241598c21045861cbe158ccecd7538f16ad20c9`.  
+**Current routing gate:** `CURRENT_START_HERE.md` → `CURRENT_OPERATIONAL_STATE_27AUG2026.md` → `ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json`.  
 **Full redigest:** `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_27AUG2026.md`.
 
-This handover supersedes the 21-Aug cross-track handover for startup ordering, while preserving every narrower specialist control, correction register, evidence register and primary-source boundary that post-dates or qualifies it.
+This handover supersedes the 21-Aug cross-track handover for startup ordering, while preserving every narrower specialist control, correction register, evidence register and primary-source boundary that post-dates or qualifies it. Its recorded baseline is historical evidence of the scan boundary; it is not a substitute for resolving the current Git head.
 
 ## Startup rule
 
 For unitary, non-fragmented, reverse-engineered, criminal-first, recovery, repository/website or cross-actor work:
 
 1. resolve current `main` dynamically;
-2. read `AGENTS.md`, `CHATGPT_START_HERE.md`, `ops/REPOSITORY_PRESERVATION_CONTRACT.json` and `ops/CURRENT_STATE.json`;
-3. treat any checked-in operational observation as historical if current `main` or route-specific live verification is newer;
-4. read `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_27AUG2026.md`;
-5. read `archive/CORRECTION_REGISTER.md`, `archive/MISSING_EVIDENCE_REGISTER.md`, `archive/CONTINUOUS_MAINTENANCE_MATRIX.md` and the specialist controls named by `CHATGPT_START_HERE.md`;
-6. use primary sources to decide exact propositions.
+2. read `CURRENT_START_HERE.md`, `CURRENT_OPERATIONAL_STATE_27AUG2026.md` and `ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json`;
+3. read `AGENTS.md`, `CHATGPT_START_HERE.md`, `ops/REPOSITORY_PRESERVATION_CONTRACT.json` and `ops/CURRENT_STATE.json`;
+4. treat any checked-in operational observation as historical if current `main` or route-specific live verification is newer;
+5. read `archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_27AUG2026.md`;
+6. read `archive/CORRECTION_REGISTER.md`, `archive/MISSING_EVIDENCE_REGISTER.md`, `archive/CONTINUOUS_MAINTENANCE_MATRIX.md` and the specialist controls named by `CHATGPT_START_HERE.md`;
+7. use primary sources to decide exact propositions.
 
 ## Mission
 
@@ -64,8 +66,10 @@ Prefer finite documentary production demands and quantitative denominators to st
 
 ## State-management note
 
-At this redigest the repository `main` baseline was `e241598c21045861cbe158ccecd7538f16ad20c9`, materially newer than the last observation stored in `ops/CURRENT_STATE.json`. The operational contract already declares current `main` and live route verification superior to stale observations. Future maintenance should regenerate the operational-truth files through their prescribed generator/workflow; do not manually falsify an observed historical SHA merely to appear current.
+The historical redigest baseline for this handover was `e241598c21045861cbe158ccecd7538f16ad20c9`, materially newer than the observation then stored in `ops/CURRENT_STATE.json`. The current routing gate now makes the precedence explicit: dynamically resolved `main` and route-specific live verification override stale checked-in observations. Regenerate operational-truth files through their prescribed generator/workflow; do not manually falsify an observed historical SHA merely to appear current.
+
+`CURRENT_UNITARY_STATE.md` and `ops/CURRENT_UNITARY_STATE.json` retain the 26-August control ID `PD-UNITARY-STATE-20260826-01` as immutable historical release evidence. For startup routing, use `CURRENT_OPERATIONAL_STATE_27AUG2026.md` instead.
 
 ## Deletion/continuity rule
 
-This handover and the 27-Aug redigest are sufficient to recover the cross-track reasoning architecture without this chat once merged. Native private evidence remains in its controlled source system and must be re-read when exact source content matters.
+This handover, the current operational router and the 27-Aug redigest are sufficient to recover the cross-track reasoning architecture without this chat once merged. Native private evidence remains in its controlled source system and must be re-read when exact source content matters.
