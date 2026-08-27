@@ -9,7 +9,7 @@
   "remote_main_observed_sha": "f4c186194f34c414e83526a771a9772d62782519",
   "candidate_branch": "codex/fti-meeting-point-ricpe-continuity-20260827",
   "candidate_parent_sha": "f4c186194f34c414e83526a771a9772d62782519",
-  "validated_content_commit_sha": "9bae93a57c6e1798843ea592a4a8fd5d5276e510",
+  "validated_content_commit_sha": "bd7330dcd498e7bf563b1f3e60ab3f59eecadc49",
   "publication_authorized": true,
   "publication_authorization": {
     "scope_control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
