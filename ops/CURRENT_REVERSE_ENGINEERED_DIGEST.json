@@ -1,0 +1,111 @@
+{
+  "schema": "por-derecho.current-reverse-engineered-digest.v1",
+  "control_id": "PD-UNITARY-REDIGEST-20260827-01",
+  "control_date": "2026-08-27",
+  "status": "REPOSITORY_CONTROLLED_PUBLIC_SAFE",
+  "scope": "unitary non-fragmented reverse-engineered repository and website digest",
+  "source_base": {
+    "main_sha": "8e8e83c5a337846245a942222efbc3120645b1fd",
+    "tree_sha": "272e522a4171b9cd68a9eb62e7f27012a7d2a584",
+    "observed_at": "2026-08-27T08:28:06Z",
+    "pages": {
+      "run_id": 33023553238,
+      "run_number": 1165,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "unitary_verifier": {
+      "run_id": 33023553789,
+      "job_id": 98359487655,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "production_smoke": {
+      "run_id": 33023881311,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "open_pull_requests": 33,
+    "required_status_check_enforcement": "off"
+  },
+  "identity_registry": {
+    "total": 194,
+    "PERSON": 86,
+    "ORGANISATION": 66,
+    "STRUCTURE": 10,
+    "INSTITUTION": 15,
+    "PROCEEDING": 17,
+    "archive_backfill": "OPEN"
+  },
+  "controlling_rule": "Sun Park was one economically integrated hotel platform but not one legal person, title, operator, debt, insolvency estate or claimant.",
+  "causal_chain": [
+    "2008 property and operating structure",
+    "2011 debt-vote-governance fracture",
+    "2011-2012 CEXP compliance, banking acceleration and LPB-only concurso",
+    "2013-2017 servicing, workout, assignment and PP1041 information route",
+    "2018 funded exit and material-control conversion",
+    "2019-2022 valuation, debt-function, Community authority and title",
+    "2022-present CAM-HNT-investment-MYND operation and benefit",
+    "current proceedings, claimant-specific recovery and no-double-recovery"
+  ],
+  "p0_bridges": [
+    "bank obligation to valid default and acceleration",
+    "CEXP maintenance-key compliance to any other-entity possession inference",
+    "Community/CEXP to lawful exploitation succession",
+    "PH122/CAM credit to consideration, satisfaction and title",
+    "PP1041 authority, authorship, conflict and estate interest",
+    "ONA/Clubotel funded-exit conditions to exact failure and loss",
+    "security/preservation authority to 7-June material-control acts",
+    "finca/claimant/income/loss to remedy and no-double-recovery"
+  ],
+  "website": {
+    "strengths": [
+      "source-before-conclusion",
+      "economic unity with legal-perimeter separation",
+      "adverse and contrary evidence controls",
+      "194-identity public denominator",
+      "exact-main Pages, verifier and production-smoke success"
+    ],
+    "risks": [
+      "static-runtime correction divergence",
+      "search-crawl lag",
+      "specialist-publication versus current-head chronology drift",
+      "33 open PRs and stale candidate states",
+      "required status checks not enforced"
+    ]
+  },
+  "caret_scope": {
+    "current_live_state": "PARTIAL_NOT_ALL_IS",
+    "confirmed": 19,
+    "denominator": 24,
+    "pending": 5,
+    "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
+    "reasons": [
+      "prepared against earlier 16dd443 repository state",
+      "current canonical denominator is 194",
+      "proceeding IDs R-0011 through R-0017 are occupied",
+      "Matkator and ONA exact-entity reconciliation remains open",
+      "Clubotel, PP1041 and EH90 require current-registry admission"
+    ]
+  },
+  "priority_sequence": [
+    "single-satisfaction credit ledger",
+    "certified PP1041 authority/authorship file",
+    "ONA/Clubotel closing and causation model",
+    "claimant-finca-income-remedy ledger",
+    "certified RPL2523 and Concurso36 denominators",
+    "CEXP succession and 7-June authority records",
+    "current-main CAEPR 24-object reconciliation",
+    "stale PR delta reconciliation",
+    "static source migration and required-check enforcement",
+    "fresh current-head off-GitHub preservation"
+  ],
+  "boundaries": [
+    "analytical control, not a finding",
+    "no collective guilt or automatic actor attribution",
+    "complaint or pleading is not proof of underlying conduct",
+    "later title, operation or benefit does not validate earlier authority",
+    "private or privileged native material is not automatically public"
+  ],
+  "human_record": "CURRENT_REVERSE_ENGINEERED_DIGEST.md"
+}
