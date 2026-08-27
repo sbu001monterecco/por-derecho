@@ -59,7 +59,10 @@ jobs:
         with:
           node-version: '22'
       - name: Install ACTA validation dependencies
-        run: python3 -m pip install --disable-pip-version-check pillow pypdf reportlab
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          python3 -m pip install --disable-pip-version-check pillow pypdf reportlab
       - name: Rebuild and require an exact tree
         run: |
           python3 scripts/build_acta_meeting_lineage.py
