@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "PD-PUB-FTI-CLUB-SEI-RECOVERY-20260827-01",
-  "current_state": "DRAFT",
+  "current_state": "DELETION_SAFE",
   "owner": "Por Derecho / Project Sun Rock",
   "base_sha": "0c0ddad15bf593eb8a13d58ee48f70403f7d2e76",
   "publication_authorized": true,
@@ -14,5 +14,23 @@
     "evidence": ["evidence/ricpe-cnmv/2026-08-27/index.html"]
   },
   "required_controls": ["CR-115", "CR-116", "CR-117", "CR-118", "ME-097", "ME-098", "44 eligible / 11 confirmed / 33 pending / 0 suspended", "no email or filing authority"],
-  "live": {"merge_sha": null, "pages_run": null, "verified_at": null, "verdict": "PENDING"}
+  "validation": {"evidence": ["All applicable local preservation, publication, RICPE privacy, first-hop provenance, FTI closeout, sent-link, audience, OSINT/private-source, unitary-control and mission-critical gates pass after the reviewed provenance repair.", "GitHub Pages run 33104389805 / #1193 succeeded for the substantive merge."]},
+  "merge_sha": "a97e6b46fab538b2f6b2391a0957b29b671f49b3",
+  "deployment_evidence": {"pages_run_id": 33104389805, "pages_run_number": 1193, "conclusion": "success", "exact_merge_sha": "a97e6b46fab538b2f6b2391a0957b29b671f49b3"},
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/en/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/de/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/",
+    "https://sbu001monterecco.github.io/por-derecho/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/caepr-caret-fti-touristik-club-sei-recovery-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/fti-touristik-club-sei-creditor-recovery-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/fti-touristik-club-sei-recovery-source-manifest-v1.json"
+  ],
+  "live_verification_evidence": {"result": "8_OF_8_EXACT_BYTES_MATCHED", "verified_at": "2026-08-27T18:39:32Z", "boundary": "Open evidence remains open; live verification is publication proof, not merits proof."},
+  "deletion_record": "docs/deletion-audits/2026-08-27-fti-deficit-club-sei-visual-thread-closeout.md",
+  "live": {"pull_request": 1120, "merge_sha": "a97e6b46fab538b2f6b2391a0957b29b671f49b3", "tree_sha": "48d79fab5c2dede179d10e4a0d442bb2c27ec265", "pages_run": 33104389805, "pages_run_number": 1193, "pages_conclusion": "success", "verified_at": "2026-08-27T18:39:32Z", "exact_byte_routes": 8, "verdict": "LIVE_VERIFIED"},
+  "privacy_release": {"pull_request": 1119, "merge_sha": "0c0ddad15bf593eb8a13d58ee48f70403f7d2e76", "pages_run": 33104111192, "pdf_sha256": "8fbb2d3a6779715d41c206b83e1721f681a1a1ac6c64189d31c84f1b6465c333", "page_1_sha256": "45938505f61bb48acda22b032ae4f37e378a716caa849861621f79edde92ceb2", "verdict": "LIVE_VERIFIED"},
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+  "external_email_or_filing_authorized": false
 }

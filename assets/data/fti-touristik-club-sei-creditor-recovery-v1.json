@@ -2,7 +2,7 @@
   "schema": "por-derecho.fti-club-sei-creditor-recovery.v1",
   "control_id": "PD-FTI-DEFICIT-CLUB-SEI-DATA-20260827-01",
   "control_date": "2026-08-27",
-  "state": "PUBLICATION_AUTHORIZED_LIVE_VERIFICATION_PENDING",
+  "state": "LIVE_VERIFIED",
   "authority": {
     "publication_authorized": true,
     "email_authorized": false,

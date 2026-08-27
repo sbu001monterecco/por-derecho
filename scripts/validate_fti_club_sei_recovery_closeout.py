@@ -9,8 +9,8 @@ def require(path, needles):
     for needle in needles:
         assert needle in text, f"{path}: missing {needle!r}"
 
-require("es/lava-verde-club-sei-meeting-point/index.html", ["id=\"fti-recuperacion\"", "casi 980 M EUR", "Auditoría ^", "Deutsch"])
-require("en/lava-verde-club-sei-meeting-point/index.html", ["id=\"fti-recovery\"", "almost EUR 980m", "^ audit", "Deutsch"])
+require("es/lava-verde-club-sei-meeting-point/index.html", ["id=\"fti-recuperacion\"", "casi 980 M EUR", "Auditoría de identidad", "Deutsch"])
+require("en/lava-verde-club-sei-meeting-point/index.html", ["id=\"fti-recovery\"", "almost EUR 980m", "Identity audit", "Deutsch"])
 require("de/lava-verde-club-sei-meeting-point/index.html", ["fast 980 Mio. EUR", "Großhandel", "Criminal-first", "Keine E-Mail"])
 require("archive/CORRECTION_REGISTER.md", ["| CR-115 |", "| CR-116 |", "| CR-117 |", "| CR-118 |"])
 require("archive/MISSING_EVIDENCE_REGISTER.md", ["| ME-097 |", "| ME-098 |"])
