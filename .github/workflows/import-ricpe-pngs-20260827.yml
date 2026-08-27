@@ -1,0 +1,43 @@
+name: Import verified RICPE PNG evidence
+
+on:
+  push:
+    paths:
+      - .github/workflows/import-ricpe-pngs-20260827.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download and verify exact source attachments
+        shell: bash
+        env:
+          SAN_TELMO_URL: "https://sdmntprindiasocentral.oaiusercontent.com/files/00000000-25c8-8211-82c8-db3391018cea/raw?se=2026-08-27T11%3A55%3A09Z&sp=r&sv=2026-02-06&sr=b&scid=b499bb21-e815-5474-a58f-587958cb93c0&skoid=a63e6f05-dc2f-4fa5-b0e3-b1cb9c0893bb&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-27T04%3A07%3A02Z&ske=2026-08-28T04%3A07%3A02Z&sks=b&skv=2026-02-06&sig=Nqo/k15IupRGu9pRX6Dx/0oiT7uBp4x34D2B42GCkAE%3D"
+          PWC_URL: "https://sdmntprukwest.oaiusercontent.com/files/00000000-59a4-8243-8a01-72661cea1e40/raw?se=2026-08-27T11%3A55%3A18Z&sp=r&sv=2026-02-06&sr=b&scid=7af26048-57b7-550a-ab4a-88798c656af8&skoid=a63e6f05-dc2f-4fa5-b0e3-b1cb9c0893bb&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-27T09%3A27%3A22Z&ske=2026-08-28T09%3A27%3A22Z&sks=b&skv=2026-02-06&sig=K2qaYTWWg0vR5CVn3eNtzLze23G8Plo%2BDo2JfkbLBcs%3D"
+        run: |
+          set -euo pipefail
+          target="evidence/ricpe-cnmv/2026-08-27"
+          mkdir -p "$target"
+          curl --fail --location --retry 3 --retry-delay 1 "$SAN_TELMO_URL" --output "$target/san-telmo-ricpe-sun-park-stamp-v1-ES.png"
+          curl --fail --location --retry 3 --retry-delay 1 "$PWC_URL" --output "$target/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png"
+          echo "04ec7b70e03dfa9d5f70bb3d4532a7dd2c20ef0c32b17a502a80c3ecb10c7c8e  $target/san-telmo-ricpe-sun-park-stamp-v1-ES.png" | sha256sum --check --strict
+          echo "b791bb9210efa47d8a3966dd5cb3d2dc8ac0d51bfd7a037fbe8f5ae4ae80e870  $target/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png" | sha256sum --check --strict
+
+      - name: Commit exact PNG binaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence/ricpe-cnmv/2026-08-27/*.png
+          git commit -m "Add exact San Telmo and PwC RICPE evidence PNGs"
+          git push origin HEAD:main
