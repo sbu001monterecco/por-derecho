@@ -1,0 +1,98 @@
+{
+  "schema": "por-derecho.current-operational-router.v1",
+  "control_id": "PD-CURRENT-OPERATIONAL-ROUTER-20260827-01",
+  "control_date": "2026-08-27",
+  "status": "CURRENT_ROUTING_POINTER",
+  "dynamic_resolution_required": true,
+  "rule": "Resolve current main and current deployment state before treating any checked-in SHA as current. Recorded SHAs are audit anchors or historical release evidence.",
+  "repository": {
+    "name": "sbu001monterecco/por-derecho",
+    "branch": "main",
+    "audit_baseline_before_router": {
+      "sha": "bf36a946e79acdc09827b80e96a58624881d6af0",
+      "tree_sha": "cfa339c78c1c33f558e22c825338e8c875b7eb1f",
+      "commit_title": "Update German Club Sei smoke markers (#1123)"
+    },
+    "required_status_check_enforcement_observed": "off",
+    "enforcement_boundary": "Do not bypass repository gates merely because branch metadata technically permits it."
+  },
+  "publication_audit_baseline": {
+    "pages": {
+      "run_id": 33105472530,
+      "run_number": 1195,
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "bf36a946e79acdc09827b80e96a58624881d6af0"
+    },
+    "publication_integrity": {
+      "run_id": 33105473777,
+      "run_number": 2011,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "other_inspected_gates": [
+      "RICPE channel identifier privacy",
+      "private-source statement and OSINT governance"
+    ],
+    "other_inspected_gate_state": "green_at_audit_boundary"
+  },
+  "routing": {
+    "start_here": "CURRENT_START_HERE.md",
+    "operational_state": "CURRENT_OPERATIONAL_STATE_27AUG2026.md",
+    "unitary_handover": "CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md",
+    "action_router": "CURRENT_ACTIONS_360_START_HERE_27AUG2026.md",
+    "action_register": "ops/UNITARY_360_ACTION_REGISTER_27AUG2026.json",
+    "reverse_engineered_digest": "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
+    "full_redigest": "archive/SUN_PARK_UNITARY_REPOSITORY_WEBSITE_REDIGEST_27AUG2026.md",
+    "continuity_closeout": "docs/deletion-audits/2026-08-27-final-thread-360-action-continuity-closeout.md",
+    "preservation_contract": "ops/REPOSITORY_PRESERVATION_CONTRACT.json",
+    "legacy_root_agent_entry": "CHATGPT_START_HERE.md"
+  },
+  "historical_release_preservation": {
+    "control_id": "PD-UNITARY-STATE-20260826-01",
+    "human_file": "CURRENT_UNITARY_STATE.md",
+    "machine_file": "ops/CURRENT_UNITARY_STATE.json",
+    "routing_status": "HISTORICAL_RELEASE_NOT_CURRENT_ROUTING_HEADER",
+    "rule": "Preserve the 26-August release SHAs and observations as historical evidence; do not rewrite them into later SHAs."
+  },
+  "ricpe_cnmv_visual_evidence": {
+    "status": "PRESERVED_AND_RENDERED_AT_AUDIT_BOUNDARY",
+    "san_telmo_png": "evidence/ricpe-cnmv/2026-08-27/san-telmo-ricpe-sun-park-stamp-v1-ES.png",
+    "pwc_five_actors_png": "evidence/ricpe-cnmv/2026-08-27/pwc-five-actors-plus-ac-2016-knowledge-checkpoint-ES.png",
+    "renderer": "assets/ricpe-cnmv-visual-evidence-20260827.js",
+    "closure_loader": "assets/ricpe-cnmv-closure-update-20260827.js",
+    "root_loader": "assets/site-pre-intervencion-highlight-20260820.js",
+    "canonical_routes": [
+      "/es/ric-private-equity-sun-park/",
+      "/en/ric-private-equity-sun-park/",
+      "/es/cnmv-ricpe-verificacion/",
+      "/en/cnmv-ricpe-verification/"
+    ],
+    "evidence_boundary": "Composite argumentative visuals supplied by the reporting person; they document attributed statements, named actors and questions for verification and do not by themselves establish culpability, liability or intent."
+  },
+  "continuity": {
+    "final_360_state": "DELETION_SAFE_WITH_OPEN_ACTIONS_AND_OPEN_PRIMARY_EVIDENCE",
+    "thread_unique_reasoning_risk": "NONE_IDENTIFIED_OUTSIDE_CONTROLLED_CONTINUITY_SET",
+    "current_restart_ambiguity_closed": "historical_26_aug_header_no_longer_controls_routing",
+    "specialist_releases_remain_additive": true,
+    "caret_scopes_remain_separate": true
+  },
+  "unitary_rule": "Economic unity may be analysed without collapsing separate legal persons, titles, estates, operators, rights, knowledge states, losses or remedies.",
+  "method": "proposition -> evidence -> dependency -> contrary evidence -> missing primary record -> consequence if produced -> revisable conclusion",
+  "known_engineering_risks": [
+    "runtime overlay dependence for some material public corrections",
+    "search-engine/cache lag",
+    "stale/open PR fragmentation",
+    "required-status-check enforcement observed off",
+    "operational snapshots age and must be regenerated rather than falsified"
+  ],
+  "external_action_authority": {
+    "repository_website_maintenance": true,
+    "email": false,
+    "filing": false,
+    "portal_submission": false,
+    "red_sara_age_notice": false,
+    "authority_contact": false,
+    "rule": "An exact external act requires separate explicit authorisation and any marked procedural/counsel review."
+  }
+}
