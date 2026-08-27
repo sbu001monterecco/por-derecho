@@ -3,10 +3,14 @@
   "publication_id": "unitary-repository-website-redigest-20260827",
   "control_id": "PD-UNITARY-REDIGEST-20260827-01",
   "control_date": "2026-08-27",
-  "current_state": "REPOSITORY_CONTROLLED",
-  "status": "repository_controlled",
+  "current_state": "PR_OPEN",
+  "status": "pr_open",
   "owner": "Por Derecho / Project Sun Rock",
   "source_base_sha": "8e8e83c5a337846245a942222efbc3120645b1fd",
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
   "expected_source_files": [
     "CURRENT_REVERSE_ENGINEERED_DIGEST.md",
     "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
