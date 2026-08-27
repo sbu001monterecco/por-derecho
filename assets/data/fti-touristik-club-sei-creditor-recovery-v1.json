@@ -1,0 +1,334 @@
+{
+  "schema": "por-derecho.fti-club-sei-creditor-recovery.v1",
+  "control_id": "PD-FTI-DEFICIT-CLUB-SEI-DATA-20260827-01",
+  "control_date": "2026-08-27",
+  "state": "PUBLICATION_AUTHORIZED_LIVE_VERIFICATION_PENDING",
+  "authority": {
+    "publication_authorized": true,
+    "email_authorized": false,
+    "filing_authorized": false,
+    "external_contact_authorized": false,
+    "default_action_state": "PREPARED_HOLD_NOT_AUTHORISED"
+  },
+  "fti_touristik_procedure": {
+    "debtor": "FTI Touristik GmbH",
+    "court": "Amtsgericht München",
+    "file": "1500 IN 1758/24",
+    "opened": "2024-09-01",
+    "administrator": "Axel W. Bierbach",
+    "portal_last_updated": "2026-04-15",
+    "portal_state": "OPEN_LISTING_NO_OFFICIAL_FINAL_DISTRIBUTION_OR_CLOSURE_LOCATED_IN_FINITE_REVIEW",
+    "source_refs": ["SRC-FTI-PORTAL-20260415"]
+  },
+  "creditor_deficiency": {
+    "as_of": "2025-05-27",
+    "filed_claims_eur": {
+      "qualifier": "ALMOST",
+      "value": 980000000,
+      "final_admitted_denominator": null
+    },
+    "creditors": {
+      "qualifier": "MORE_THAN",
+      "value": 73000
+    },
+    "claims_review_and_realisations": "EXPECTED_TO_CONTINUE_FOR_SEVERAL_YEARS",
+    "distribution_timing": "ONLY_AT_END_OF_PROCEDURE",
+    "anticipated_quota": "VERY_LOW",
+    "exact_quota": null,
+    "masseunzulaenglichkeit_currently_reported": false,
+    "interpretation": "ESTATE_COST_SUFFICIENCY_NOT_ORDINARY_CREDITOR_FULL_PAYMENT",
+    "ordinary_creditor_deficiency": "STRONG_EVIDENCE_BASED_INFERENCE",
+    "unresolved": [
+      "final admitted-claim denominator",
+      "net realisations",
+      "estate costs and priority liabilities",
+      "avoidance and claim recoveries",
+      "final quota",
+      "final deficit"
+    ],
+    "source_refs": ["SRC-MHBK-EQS-20250527"]
+  },
+  "creditor_public_funds_matrix": [
+    {
+      "id": "CPF-01",
+      "layer": "FTI_TOURISTIK_ORDINARY_CREDITORS",
+      "gross_or_reported_amount_eur": 980000000,
+      "qualifier": "ALMOST_FILED_CLAIMS",
+      "beneficiary_or_burden": "More than 73,000 filed-creditor perimeter",
+      "current_status": "VERY_LOW_QUOTA_EXPECTED_NO_EXACT_QUOTA",
+      "not_equivalent_to": ["final admitted claims", "final deficit", "group-wide pooled debt"],
+      "source_refs": ["SRC-MHBK-EQS-20250527"]
+    },
+    {
+      "id": "CPF-02",
+      "layer": "DRSF_REIMBURSEMENTS",
+      "gross_or_reported_amount_eur": 245000000,
+      "qualifier": "ABOUT_PAID",
+      "processed_paid_claims": 172000,
+      "routes_open_through": "2027-12-31",
+      "current_status": "RESIDUAL_COMPLEX_CASES_REMAIN",
+      "not_equivalent_to": ["taxpayer money", "FTI Touristik estate distribution", "final fund loss"],
+      "source_refs": ["SRC-DRSF-20250528", "SRC-RSG-7", "SRC-RSG-22"]
+    },
+    {
+      "id": "CPF-03",
+      "layer": "DRSF_COMBINED_FTI_BIGXTRA_MODEL",
+      "estimated_damage_eur": 332200000,
+      "securities_eur": 217400000,
+      "fund_asset_burden_eur": 114800000,
+      "current_status": "PARLIAMENTARY_REPORTED_ESTIMATE",
+      "not_equivalent_to": ["FTI Touristik-only loss", "state-budget draw", "final public loss"],
+      "source_refs": ["SRC-BUNDESTAG-20250205"]
+    },
+    {
+      "id": "CPF-04",
+      "layer": "WSF_FTI_PUBLIC_CREDIT",
+      "support_eur": 603000000,
+      "repaid_eur": 93000000,
+      "early_estimated_exposure_eur": 510000000,
+      "current_status": "EARLY_ESTIMATE_NOT_FINAL_NET_PUBLIC_LOSS",
+      "required_reconciliation": [
+        "security realisations",
+        "insolvency recoveries",
+        "interest",
+        "current carrying value",
+        "final write-off"
+      ],
+      "source_refs": ["SRC-HANDELSBLATT-20240604", "SRC-BMF-WSF-202410"]
+    },
+    {
+      "id": "CPF-05",
+      "layer": "SEPI_FASEE_MEETING_POINT",
+      "authorized_eur": 31000000,
+      "current_status": "SEPARATE_SPANISH_PUBLIC_CREDIT_OPERATION",
+      "not_equivalent_to": ["BLUESEA separate EUR 25m authorisation", "Sun Park funding", "proved public loss"],
+      "source_refs": []
+    }
+  ],
+  "club_sei_distribution_matrix": [
+    {
+      "id": "DIST-01",
+      "channel": "YOUTRAVEL_WHOLESALE_AGENT_ROUTE",
+      "date": "2019-02-01",
+      "evidence": "Trade report that UK agents would be able to sell the planned resorts through Youtravel.",
+      "status": "ANNOUNCED_WHOLESALE_DISTRIBUTION",
+      "ceiling": "No inventory, supplier agreement, accepted booking, payment, commission, revenue or opening.",
+      "source_refs": ["SRC-TRAVELWEEKLY-20190201"]
+    },
+    {
+      "id": "DIST-02",
+      "channel": "MEETING_POINT_BROCHURE",
+      "date": "2019-10-11",
+      "evidence": "Club Sei Lanzarote, Playa Blanca, all-inclusive, 315 rooms and Meeting Point International presentation panel.",
+      "status": "PUBLIC_CORPORATE_PRESENTATION",
+      "ceiling": "No exact contracting entity, title, inventory authority or operation.",
+      "source_refs": ["SRC-LOCAL-MP-BROCHURE-2019"]
+    },
+    {
+      "id": "DIST-03",
+      "channel": "1-2-FLY",
+      "date": "2019-11-25",
+      "evidence": "Club Sei Lanzarote with hotel and flight-plus-hotel controls.",
+      "status": "LIVE_PUBLIC_FACING_RETAIL_INTERFACE",
+      "ceiling": "No availability, accepted booking, payment, commission, revenue, guest stay or exact operator identity.",
+      "source_refs": ["SRC-LOCAL-1-2-FLY-20191125"]
+    },
+    {
+      "id": "DIST-04",
+      "channel": "AB_IN_DEN_URLAUB",
+      "date": "2019-11-25",
+      "evidence": "Club Sei Lanzarote, C/ Janubio 3 and visible EUR 155 per-person price with offer controls.",
+      "status": "LIVE_PUBLIC_FACING_RETAIL_OFFER",
+      "ceiling": "No loaded inventory, accepted booking, payment, revenue or exact 2019 operator identity.",
+      "source_refs": ["SRC-LOCAL-AIDU-20191125"]
+    },
+    {
+      "id": "DIST-05",
+      "channel": "LOVEHOLIDAYS",
+      "date": "2020-01-21",
+      "evidence": "Club Sei Lanzarote, Playa Blanca, hotel-only from GBP 137/night and price/availability/secure-booking controls.",
+      "status": "LIVE_PUBLIC_FACING_RETAIL_OFFER",
+      "ceiling": "No accepted booking, guest stay, payment, revenue, opening or exact 2020 operator identity.",
+      "source_refs": ["SRC-LOCAL-LOVEHOLIDAYS-20200121"]
+    },
+    {
+      "id": "DIST-06",
+      "channel": "CLUB_SEI_IMPLEMENTATION",
+      "date": "2020-10-27",
+      "evidence": "FTI postponed implementation because of COVID-19 and supplied no new date.",
+      "status": "MANDATORY_CONTRARY_EVIDENCE",
+      "ceiling": "Does not erase earlier announcements or interfaces; prevents an opening/operation inference.",
+      "source_refs": ["SRC-TOURISTIK-AKTUELL-20201027"]
+    }
+  ],
+  "controlled_distribution_conclusion": "ANNOUNCED_WHOLESALE_DISTRIBUTION_PLUS_CONTEMPORANEOUSLY_LIVE_PUBLIC_FACING_RETAIL_OFFER_BOOKING_INTERFACES",
+  "distribution_prohibited_inferences": [
+    "loaded or available inventory",
+    "completed or accepted booking",
+    "payment or revenue",
+    "guest stay",
+    "hotel opening or operation",
+    "commission or management fee",
+    "title, possession or authority over every apartment",
+    "valid management agreement",
+    "illegality or criminal responsibility"
+  ],
+  "meeting_point_bluesea_state": {
+    "verified": {
+      "proceeding": "C/1549/25 - BLUE SEA / MPS",
+      "transaction": "exclusive-control acquisition",
+      "acquirer": "Gestora Blue Sea Partner, S.A.",
+      "target": "Meeting Point Spain, S.L. - Unipersonal",
+      "authorized": "2025-04-23",
+      "source_refs": ["SRC-CNMC-C1549-20250423"]
+    },
+    "corroborated_media_professional_reporting": {
+      "claims": [
+        "judicial homologation reported",
+        "Spanish Meeting Point business acquired by BlueSea reported",
+        "BlueSea management of Canary Islands hotel business reported",
+        "bank and SEPI debt treatment reported"
+      ],
+      "source_refs": ["SRC-HOSTELTUR-20260217", "SRC-ELCONFIDENCIAL-20260217", "SRC-FTICONSULTING-SPAIN-202602", "SRC-PORTOBELLO-BLUESEA-20260114"]
+    },
+    "unresolved": [
+      "signed homologation order",
+      "plan and annexes",
+      "closing instruments and effective date",
+      "exact shares, assets and contracts acquired",
+      "consideration and financing",
+      "liabilities assumed",
+      "creditor-class treatment",
+      "SEPI/FASEE treatment",
+      "data-room and records handover",
+      "appeal or challenge"
+    ]
+  },
+  "entity_proceeding_separation": [
+    {"object":"FTI Touristik GmbH","jurisdiction":"DE","file":"1500 IN 1758/24","administrator":"Axel W. Bierbach","pooling_prohibited_with":["BigXtra Touristik GmbH","Meeting Point legal persons"]},
+    {"object":"BigXtra Touristik GmbH","jurisdiction":"DE","file":"1500 IN 1801/24","administrator":"Axel W. Bierbach","pooling_prohibited_with":["FTI Touristik GmbH","DRSF combined model"]},
+    {"object":"Meeting Point International GmbH","jurisdiction":"DE","file":"1500 IN 10126/24","administrator":"Oliver Schartl","pooling_prohibited_with":["Spanish Meeting Point debtors"]},
+    {"object":"Meeting Point Hotelmanagement Holding GmbH","jurisdiction":"DE","file":"1500 IN 10107/24","administrator":"Oliver Schartl","pooling_prohibited_with":["foreign operating/management companies"]},
+    {"object":"Meeting Point Hotelmanagement (Canaries), S.L.U.","jurisdiction":"ES","file":"357/2024","administrator":null,"pooling_prohibited_with":["Meeting Point Spain, S.L.U.","German Meeting Point debtors"]},
+    {"object":"Meeting Point Spain, S.L.U.","jurisdiction":"ES","file":"357/2024 and CNMC C/1549/25 target","administrator":null,"pooling_prohibited_with":["Meeting Point brand","German Meeting Point debtors"]},
+    {"object":"Meeting Point Investment, S.L.U.","jurisdiction":"ES","file":"357/2024","administrator":null,"pooling_prohibited_with":["other two Spanish debtors"]},
+    {"object":"Meeting Point 357/2024","jurisdiction":"ES","file":"357/2024","administrator":null,"pooling_prohibited_with":["all German insolvencies"]},
+    {"object":"CNMC C/1549/25","jurisdiction":"ES","file":"C/1549/25","administrator":null,"pooling_prohibited_with":["signed homologation order","complete closing record"]}
+  ],
+  "lava_verde_reconciliation": {
+    "corporate_presentation_rooms": 279,
+    "club_sei_presentation_rooms": 315,
+    "mixed_complex_fincas": 262,
+    "cam_apartment_holding_claim": "REQUIRES_DATE_AND_SOURCE_SPECIFIC_RECONCILIATION",
+    "required_bridge": "ROOM_TO_FINCA_TO_OWNER_AT_DATE_TO_ACCESS_AUTHORITY_TO_PROJECT_INCLUSION_TO_OPERATING_DISTRIBUTION_AUTHORITY_TO_LATER_TITLE",
+    "corporate_assertion_not_title_proof": true
+  },
+  "eu_travel": {
+    "status": "UNRESOLVED_ALIAS_OR_TRANSCRIPTION",
+    "repository_exact_occurrences": 0,
+    "silent_conversion_to_youtravel_prohibited": true,
+    "separate_tests": [
+      "Youtravel brand/commercial perimeter",
+      "YOUTRAVEL.COM LIMITED company no. 05952761",
+      "Meeting Point Youtravel Tourism L.L.C.",
+      "exact 2019 platform and contracting entity",
+      "genuinely distinct EU Travel entity",
+      "original voice/text source"
+    ],
+    "current_terms_back_projection_prohibited": true
+  },
+  "causal_recovery_matrix": [
+    {
+      "candidate": "CONTRACTUAL_MANAGEMENT_OR_DISTRIBUTION_RIGHT",
+      "support": ["planned Meeting Point/FTI brand route", "supplier/project evidence"],
+      "contrary": ["project may have remained preparatory", "another legal person may have contracted", "COVID postponement"],
+      "ceiling": "NO_EXECUTED_CONTRACT_PROVED",
+      "missing": ["contract", "mandate", "approvals", "termination", "authority"],
+      "custodians": ["CAM", "exact Meeting Point entity", "German debtor files", "357/2024"],
+      "possible_remedy": "contract claim, damages or declaratory relief only if standing, causation and limitation are proved"
+    },
+    {
+      "candidate": "INVENTORY_OR_ALLOTMENT",
+      "support": ["retail interfaces", "315-room presentation"],
+      "contrary": ["interfaces may have been placeholders", "279/315/262-finca perimeter conflict", "COVID postponement"],
+      "ceiling": "NO_LOADED_OR_AVAILABLE_INVENTORY_PROVED",
+      "missing": ["room-finca mapping", "allotments", "rate/availability loads", "booking logs"],
+      "custodians": ["PMS/CRS/channel operators", "distributors", "Meeting Point/FTI entities"],
+      "possible_remedy": "preservation, accounting, contractual or restitution route if a right and loss are proved"
+    },
+    {
+      "candidate": "RECEIVABLE_COMMISSION_OR_FEE",
+      "support": ["commercial distribution architecture"],
+      "contrary": ["no completed booking or service proved"],
+      "ceiling": "NO_QUANTIFIED_RECEIVABLE",
+      "missing": ["invoice", "ledger", "settlement", "bank/payment record", "contracting entity"],
+      "custodians": ["exact contracting entity", "retailers", "administrator/estate"],
+      "possible_remedy": "proof of claim, collection or damages if legally available"
+    },
+    {
+      "candidate": "BOOKING_OR_CUSTOMER_DATA",
+      "support": ["price, availability and secure-booking controls"],
+      "contrary": ["interface may have held no accepted record"],
+      "ceiling": "NO_CUSTOMER_RECORD_OR_TRANSFER_PROVED",
+      "missing": ["booking logs", "CRM", "payment", "cancellation", "data handover"],
+      "custodians": ["retail platforms", "Meeting Point/FTI", "administrator", "DRSF interfaces"],
+      "possible_remedy": "lawful preservation, production and estate/data recovery"
+    },
+    {
+      "candidate": "RECOVERABLE_EXPENDITURE_OR_IMPAIRMENT",
+      "support": ["pilot/work/project preparation evidence"],
+      "contrary": ["payer and capitalization may be different", "lawful write-off possible"],
+      "ceiling": "NO_PAYER_ASSET_OR_IMPAIRMENT_ENTRY_PROVED",
+      "missing": ["orders", "invoices", "capitalization", "impairment schedules", "insurance"],
+      "custodians": ["CAM", "suppliers", "Meeting Point entities", "auditors"],
+      "possible_remedy": "restitution, damages, avoidance or accounting correction if proved"
+    },
+    {
+      "candidate": "PROFESSIONAL_DIRECTOR_OR_INSURANCE_CLAIM",
+      "support": ["2024 notice/investigation and later custody handoffs"],
+      "contrary": ["notice does not prove validity, breach, causation or loss"],
+      "ceiling": "INVESTIGATIVE_LEAD_ONLY",
+      "missing": ["duty", "knowledge", "decision", "causation", "limitation", "policy"],
+      "custodians": ["administrators", "advisers", "357/2024", "insurers"],
+      "possible_remedy": "production, tolling analysis or claim/insurance notice only after separate authority"
+    },
+    {
+      "candidate": "AVOIDANCE_RESTITUTION_OR_ESTATE_CLAIM",
+      "support": ["large ordinary-creditor deficiency increases recovery significance"],
+      "contrary": ["FTI group insolvency may be wholly unrelated to Sun Park"],
+      "ceiling": "NO_TRANSFER_VALUE_OR_ESTATE_OWNERSHIP_BRIDGE",
+      "missing": ["transaction", "valuation", "estate ownership", "standing", "limitation"],
+      "custodians": ["exact German or Spanish estate", "competent court"],
+      "possible_remedy": "avoidance, restitution or estate recovery only if every element is proved"
+    },
+    {
+      "candidate": "PUBLIC_CREDIT_RECOVERY",
+      "support": ["WSF and FASEE public-credit layers"],
+      "contrary": ["no Sun Park trace", "no actual DRSF federal-backstop draw proved"],
+      "ceiling": "NO_QUANTIFIED_SUN_PARK_OR_FINAL_PUBLIC_LOSS",
+      "missing": ["source/use", "security", "recovery", "write-off", "disclosure"],
+      "custodians": ["BMF/WSF", "SEPI/FASEE", "DRSF", "exact debtors"],
+      "possible_remedy": "public-credit recovery/accountability through a competent route only if proved and separately authorized"
+    }
+  ],
+  "party_allegation": {
+    "attributed_to": "Gil Marer",
+    "proposition": "Local control, exclusion, project works and pre-title marketing materially impaired or displaced the Meeting Point/Club Sei local business opportunity and affected value, disclosure and creditor/public-funds interests.",
+    "classification": "PARTY_ALLEGATION_AND_EVIDENCE_BASED_INVESTIGATIVE_MODEL",
+    "group_wide_insolvency_causation_proved": false,
+    "transaction_level_causation_and_loss_proved": false
+  },
+  "criminal_first_chain": [
+    "actor/capacity",
+    "act or omission",
+    "duty/authority",
+    "knowledge/intent",
+    "exact asset/right",
+    "correct entity/estate",
+    "causal impairment",
+    "creditor/public-funds loss",
+    "standing/jurisdiction/limitation",
+    "remedy"
+  ],
+  "source_manifest": "assets/data/fti-touristik-club-sei-recovery-source-manifest-v1.json"
+}

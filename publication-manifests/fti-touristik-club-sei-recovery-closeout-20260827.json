@@ -1,0 +1,18 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-PUB-FTI-CLUB-SEI-RECOVERY-20260827-01",
+  "current_state": "DRAFT",
+  "owner": "Por Derecho / Project Sun Rock",
+  "base_sha": "0c0ddad15bf593eb8a13d58ee48f70403f7d2e76",
+  "publication_authorized": true,
+  "external_communications_authorized": false,
+  "release_order": ["RICPE_CONTACT_MINIMIZATION", "FTI_CLUB_SEI_CONTINUITY_CANDIDATE", "LIVE_CLOSEOUT_RECORD"],
+  "expected_routes": {
+    "es": ["es/lava-verde-club-sei-meeting-point/index.html", "es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html"],
+    "en": ["en/lava-verde-club-sei-meeting-point/index.html", "en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html"],
+    "de": ["de/lava-verde-club-sei-meeting-point/index.html"],
+    "evidence": ["evidence/ricpe-cnmv/2026-08-27/index.html"]
+  },
+  "required_controls": ["CR-115", "CR-116", "CR-117", "CR-118", "ME-097", "ME-098", "44 eligible / 11 confirmed / 33 pending / 0 suspended", "no email or filing authority"],
+  "live": {"merge_sha": null, "pages_run": null, "verified_at": null, "verdict": "PENDING"}
+}
