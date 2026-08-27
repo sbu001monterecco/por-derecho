@@ -1,8 +1,13 @@
 PUBLICATION CONTROL - RICPE / CNMV - 27 AUGUST 2026
 
 Public web record:
-- index.html: public evidential landing page, including the two original PNG visuals.
+- index.html: public evidential landing page, including the full six-page resolution viewer, download link, summary, alertador questions and the two original PNG visuals.
 - resolution.txt: controlled transcription of the communicated resolution and material workflow history.
+- RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf
+  Original Ithikios certificate downloaded by the reporting person and supplied to CNMV.
+  SHA-256 db9979715cac4aeb8ded81a998227cfd894144dcd0a50fe81d4b1369904c9bb4
+- resolution-pages/page-1.jpg through resolution-pages/page-6.jpg
+  Derivative page renders generated directly from the above PDF for on-page visual reading. The PDF remains the controlling original.
 - san-telmo-ricpe-sun-park-stamp-v1-ES.png
   Size: 827315 bytes
   Dimensions: 1536 x 1024 pixels
@@ -26,8 +31,9 @@ Original files preserved and supplied directly to CNMV as separate email attachm
 
 Publication limits:
 - The secret Canal Etico password is not published.
-- Telephone and unnecessary personal data are omitted from the public transcript.
+- The full Ithikios certificate is now public at the reporting person's express instruction; it contains contact details that form part of the certificate itself.
 - The Ithikios certificate is treated as the complete resolution communicated through the channel, not as proof of RICPE's complete internal decision file.
 - "No mostrado al denunciante" is reported as a certified workflow fact, without attributing intent.
+- Questions directed to RICPE, its Board, founders/shareholders, investors and CNMV are expressly presented as questions requiring evidence, not as findings that any person knew, was reckless, concealed information or incurred liability.
 - The two PNGs are composite, argumentative visuals supplied by the reporting person. They document attributed statements, named actors and questions for verification; they do not by themselves establish culpability, liability or intent.
-- The visuals must be read alongside primary documents, responses from identified persons and entities, and potentially exculpatory evidence.
+- All material should be read alongside primary documents, responses from identified persons and entities, and potentially exculpatory evidence.
