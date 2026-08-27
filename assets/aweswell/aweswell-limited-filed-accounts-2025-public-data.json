@@ -1,0 +1,62 @@
+{
+  "schema": "por-derecho.aweswell-filed-accounts-public-data.v1",
+  "publication_date": "2026-08-27",
+  "entity": {
+    "canonical_name": "Aweswell Limited",
+    "companies_house_name": "AWESWELL LIMITED",
+    "company_number": "07716847",
+    "jurisdiction": "England and Wales",
+    "company_status": "active",
+    "company_type": "private limited company",
+    "incorporated": "2011-07-25",
+    "sic": {
+      "code": "70100",
+      "description": "Activities of head offices"
+    },
+    "former_name": {
+      "name": "MONTERECCO SUN PARK LIMITED",
+      "from": "2011-07-25",
+      "to": "2014-06-03"
+    }
+  },
+  "latest_accounts": {
+    "made_up_to": "2025-07-31",
+    "filed_at_companies_house": "2026-05-17",
+    "companies_house_description": "Total exemption full accounts made up to 31 July 2025",
+    "internal_title": "Consolidated Provisional Group Statutory Accounts for the year ended 31 July 2025",
+    "board_approval_stated": "2026-04-20",
+    "digital_signature_date_stated": "2026-04-30",
+    "supplied_source_copy": {
+      "format": "text-searchable PDF",
+      "internal_pages": 69,
+      "sha256": "5cc4f7564f05e836c8a42bcd830f09930cc41dce83a447aac120ac2657fc6dea"
+    },
+    "companies_house_document_pages_listed": 70
+  },
+  "statement_of_financial_position_gbp": {
+    "fixed_asset_underlying_group_asset_interest": 1,
+    "current_assets": 0,
+    "net_assets": 1,
+    "called_up_share_capital": 1,
+    "retained_earnings": 0,
+    "shareholders_funds": 1
+  },
+  "directors_statements_attributed": {
+    "reported_parent_and_sole_shareholder_of": [
+      "Luchy Playa Blanca, S.L.U. (LPB)",
+      "Matkator, S.L. (source literal; repository canonical form: Matkator, S.L.U.)"
+    ],
+    "reported_context": "Hotel Sun Park / MYND Yaiza and associated hotel, property, commercial and recovery interests",
+    "valuation_position": "The directors state that the £1 underlying group asset interest is provisional and intended to be updated following forensic revaluation."
+  },
+  "source_boundaries": [
+    "Companies House register facts and filing events are separated from directors' statements within the filing.",
+    "Companies House states that it does not check the accuracy of information filed.",
+    "The £1 statutory presentation is not represented as a market valuation, recovery cap or judicial finding.",
+    "The supplied source copy has 69 internally numbered pages while Companies House lists 70 pages; no cause is inferred."
+  ],
+  "official_sources": {
+    "company_record": "https://find-and-update.company-information.service.gov.uk/company/07716847",
+    "filing_history": "https://find-and-update.company-information.service.gov.uk/company/07716847/filing-history"
+  }
+}
