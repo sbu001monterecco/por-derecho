@@ -82,4 +82,23 @@ The canonical record now preserves the unique reasoning from the originating thr
 
 The earlier PR #1133 was superseded because `main` advanced in parallel while the first branch was being prepared. It is not the publication authority. Future threads should start from current `main`, PR #1134 / merge `c6073a970fe10f32d77c1f538235a7b041983fb6`, and this canonical record rather than reconstructing the chain from chat memory.
 
-**Continuity status:** repository-preserved and merged. Live Pages verification remains a separate deployment check; search-engine discovery may lag the actual Pages deployment. Some older conversation uploads have expired, so any future line-by-line re-extraction of those exact uploads requires re-upload; this does not invalidate the repository-preserved derivatives already published.
+**Continuity status:** repository-preserved, merged and successfully deployed through GitHub Pages at merge `80b70cd0776e3067b1d4a7d912db4ab31d922e8c`. Search-engine discovery may lag actual deployment. Some older conversation uploads have expired, so any future line-by-line re-extraction of those exact uploads requires re-upload; this does not invalidate the repository-preserved derivatives already published.
+
+## 10. Reader-level visualization and deliberate-sabotage hypothesis — 27 August 2026
+
+The bilingual public hubs were strengthened with a visual sequence built around four dates/stages: **26-27 April 2018 Carlos Sanz -> AC; 6 June ONA architecture materially developed; 7 June material-control event; September 2018-2019 funded-exit continuation and Clubotel personación.** The visual deliberately places 6 June and 7 June adjacent so readers can understand the temporal relationship without being told that proximity alone proves causation.
+
+The strongest public-safe criminal formulation is now:
+
+> Once a materially developed funded exit existed, specific private acts and institutional acts or omissions may have been used — with knowledge of the transaction and its critical dependencies — to deliberately frustrate, weaken or increase the cost of that exit, impair access, diligence, possession, operational continuity or procedural certainty, and preserve or shift practical advantage toward the adverse perimeter. This is a criminal-investigation hypothesis, not an adjudicated finding.
+
+The attribution rule is intentionally asymmetric and evidence-led:
+
+- **Laura Acosta Matos:** the existing 7 June dossier records sworn judicial testimony attributing operational instructions during the material takeover to her. This supports a direct factual attribution to the execution chain according to that witness, but does not by itself prove criminal intent or full knowledge of the ONA funded exit.
+- **José Daniel Acosta Matos:** the same witness stated that he was not present that day. The physical execution of 7 June therefore should not be attributed to him without additional evidence. Knowledge, prior instructions, coordination, later role and benefit remain separate investigative questions.
+- **Administrador Concursal:** the evidential chain includes the April Carlos Sanz approach and the separate security/access and later lock/access material preserved in the 7 June dossier. The criminal question is whether any specific act or omission knowingly and intentionally facilitated an excess of authority or unlawful private advantage. Formal redirection, negligence or a disputed insolvency decision alone are not enough.
+- **Magistrate-Judge:** the analysis remains decision-by-decision and omission-by-omission. No located possession order for CAM over the whole hotel is identified in the reviewed 7 June record. Any sabotage-related criminal attribution requires proof of duty, knowledge, causation and legally relevant mens rea; adverse rulings or later benefit alone are insufficient.
+- **Community / security / material executors:** contracts, orders, logs, CCTV, keys and communications are the priority bridge for identifying who converted preservation or limited-access authority into material control, if that occurred, and under whose instructions.
+- **ONA / Clubotel, Carlos Sanz and Daniel Irigoyen:** treated primarily as transaction-side evidence sources and potential witnesses to financing, closing conditions, access dependencies, communications, impairment and continuity, not as sabotage actors merely because they participated in the transaction.
+
+The public visualization also contains a counterfactual fork: the documented route (debt quantification -> financing -> payment/consignation -> exit) versus the observed post-7-June route. It labels the former expressly as a **counterfactual to be tested, not a proven outcome**. The operative sabotage test remains: **act/omission -> knowledge -> duty/dependency -> causal effect -> intent -> benefit/effect -> contrary evidence -> proof gap.**
