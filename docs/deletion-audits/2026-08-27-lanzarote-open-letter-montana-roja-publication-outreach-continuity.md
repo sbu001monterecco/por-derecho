@@ -90,12 +90,7 @@ Two new constructive institutional communications were sent after the public Pag
 
 ### Cabildo de Lanzarote
 
-Controlling delivery used the previously verified working distribution:
-
-- To: `presidente@cabildodelanzarote.com`
-- Cc: `presidencia@cabildodelanzarote.com`
-- Cc: `registro@cabildodelanzarote.com`
-- Cc: `atencioninformacionciudadana@cabildodelanzarote.com`
+Controlling delivery used the previously verified working distribution. The primary recipient was `presidente@cabildodelanzarote.com`, with copies to `presidencia@cabildodelanzarote.com`, `registro@cabildodelanzarote.com` and `atencioninformacionciudadana@cabildodelanzarote.com`.
 
 The message:
 
@@ -110,10 +105,7 @@ The previously failed historical address `ordenacionturistica@cabildodelanzarote
 
 ### Ayuntamiento de Yaiza
 
-Controlling delivery used the previously verified working distribution:
-
-- To: `alcaldia@ayuntamientodeyaiza.es`
-- Cc: `ofitec@ayuntamientodeyaiza.es`
+Controlling delivery used the previously verified working distribution. The primary recipient was `alcaldia@ayuntamientodeyaiza.es`, with a copy to `ofitec@ayuntamientodeyaiza.es`.
 
 The message:
 
