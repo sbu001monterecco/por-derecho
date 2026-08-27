@@ -67,7 +67,7 @@ The controlling machine index is `evidence/community/actas/meeting-lineage-index
 
 ## Continuity/deletion conclusion
 
-The conversation becomes deletion-safe for **continuity** only after this package is merged, the live GitHub Pages routes are read back, the deployment log is updated and the final merge SHA is recorded. The private custody archive is already independently preserved and hash-controlled.
+The package was merged through PR [#1139](https://github.com/sbu001monterecco/por-derecho/pull/1139) at `06b8d7ac025b605ae0a677b85cb22ed0531a29c6`. The 40 bilingual event routes, 17 source facsimiles, representative source images, document-room routes and machine lineage index were read back from GitHub Pages. The deployment log and manifest record the result. The private custody archive is independently preserved and hash-controlled.
 
 Even after that closeout, “deletion-safe” will not mean:
 
@@ -77,4 +77,4 @@ Even after that closeout, “deletion-safe” will not mean:
 - a received copy is authentic, valid or legally effective; or
 - the perimeter classification proves conspiracy, fraud, criminality or guilt.
 
-Until merge and live readback: **NOT deletion-safe yet.**
+Result: **SAFE TO DELETE FOR CONTINUITY.** The missing-source, certification, authenticity, legal-effect and inherited non-ACTA site-quality gaps listed above remain open and must not be described as closed.

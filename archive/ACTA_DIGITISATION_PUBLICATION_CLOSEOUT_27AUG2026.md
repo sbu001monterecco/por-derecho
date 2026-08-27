@@ -2,7 +2,7 @@
 
 ## Result
 
-All **17 located ACTA control-copy families** are processed into public-safe digitisation packages and prepared for publication. The generated layer contains:
+All **17 located ACTA control-copy families** are processed into public-safe digitisation packages, merged through PR [#1139](https://github.com/sbu001monterecco/por-derecho/pull/1139) at `06b8d7ac025b605ae0a677b85cb22ed0531a29c6`, and live-verified on GitHub Pages. The generated layer contains:
 
 - **246** represented source pages;
 - **17** raster-only, irreversibly redacted source facsimile PDFs;
@@ -74,8 +74,20 @@ The release gate requires:
 6. repository preservation, publication-integrity, audience and production checks; and
 7. merge plus live GitHub Pages readback.
 
-The deployment record and final merge/readback result are appended to `archive/DEPLOYMENT_LOG.md` after publication.
+The deployment record and final merge/readback result are appended to `archive/DEPLOYMENT_LOG.md`.
+
+## Live verification
+
+At `2026-08-27T23:03:30Z`:
+
+- all **40/40** bilingual event routes returned HTTP 200;
+- both bilingual document-room routes and the machine lineage index returned HTTP 200;
+- all **17/17** redacted source facsimile PDFs and all **17/17** first source-page images returned HTTP 200;
+- representative project, Montelanza/Molina–Pamanil and Acosta Matos pages exposed the expected rendered perimeter token, full published OCR and source gallery; and
+- the dedicated CI workflow passed deterministic rebuild, package/privacy validation and **16** desktop/mobile rendered checks with six distinct perimeter colour pairs.
+
+The broader audience validator still reports four inherited English ONA links and two inherited Alberto/Meeting Point snapshot drifts in paths not modified by this ACTA release. Those pre-existing defects are recorded in PR #1139 and do not alter the ACTA package, interlink or live-readback result.
 
 ## Continuity/deletion rule
 
-After merge, live readback and private custody preservation are recorded, this thread is safe to delete **for continuity purposes**: a future thread can recover the current state, scripts, manifests, public packages, variants and open evidence. That conclusion is not a claim that every historical ACTA/annex exists or that the OCR is evidentially certified.
+Merge, live readback and private custody preservation are now recorded. This thread is **safe to delete for continuity purposes**: a future thread can recover the current state, scripts, manifests, public packages, variants and open evidence. That conclusion is not a claim that every historical ACTA/annex exists or that the OCR is evidentially certified.
