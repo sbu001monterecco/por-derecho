@@ -1,0 +1,44 @@
+name: Validate current operational router
+
+on:
+  pull_request:
+    paths:
+      - 'CURRENT_START_HERE.md'
+      - 'CURRENT_OPERATIONAL_STATE_27AUG2026.md'
+      - 'CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md'
+      - 'CURRENT_UNITARY_STATE.md'
+      - 'ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json'
+      - 'assets/ricpe-cnmv-visual-evidence-20260827.js'
+      - 'assets/ricpe-cnmv-closure-update-20260827.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'evidence/ricpe-cnmv/2026-08-27/*.png'
+      - 'scripts/validate_current_operational_router.py'
+      - '.github/workflows/validate-current-operational-router.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'CURRENT_START_HERE.md'
+      - 'CURRENT_OPERATIONAL_STATE_27AUG2026.md'
+      - 'CURRENT_HANDOVER_UNITARY_RECOVERY_27AUG2026.md'
+      - 'CURRENT_UNITARY_STATE.md'
+      - 'ops/CURRENT_OPERATIONAL_STATE_27AUG2026.json'
+      - 'assets/ricpe-cnmv-visual-evidence-20260827.js'
+      - 'assets/ricpe-cnmv-closure-update-20260827.js'
+      - 'assets/site-pre-intervencion-highlight-20260820.js'
+      - 'evidence/ricpe-cnmv/2026-08-27/*.png'
+      - 'scripts/validate_current_operational_router.py'
+      - '.github/workflows/validate-current-operational-router.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate current operational router continuity
+        run: python scripts/validate_current_operational_router.py
