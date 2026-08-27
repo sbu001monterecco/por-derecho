@@ -102,3 +102,32 @@ The attribution rule is intentionally asymmetric and evidence-led:
 - **ONA / Clubotel, Carlos Sanz and Daniel Irigoyen:** treated primarily as transaction-side evidence sources and potential witnesses to financing, closing conditions, access dependencies, communications, impairment and continuity, not as sabotage actors merely because they participated in the transaction.
 
 The public visualization also contains a counterfactual fork: the documented route (debt quantification -> financing -> payment/consignation -> exit) versus the observed post-7-June route. It labels the former expressly as a **counterfactual to be tested, not a proven outcome**. The operative sabotage test remains: **act/omission -> knowledge -> duty/dependency -> causal effect -> intent -> benefit/effect -> contrary evidence -> proof gap.**
+
+## 11. Institutional protection and prosecution bridge — 27 August 2026
+
+A second reader layer now joins the private-actor and funded-exit evidence to the institutional-response question. The public chain is:
+
+**private perimeter / material acts -> Administrador Concursal -> concurso court -> Ministerio Fiscal / Judicial Police -> later title, finance, refurbishment and operation.**
+
+This is not a theory that institutional silence proves complicity. It is an audit rule: once notice, possible protective or investigative capacity, and a material downstream outcome coexist, the response of each institution should be reconstructable from documents.
+
+The controlling questions are:
+
+1. **Private actors:** what did each person prepare, order, execute, adopt, ratify or benefit from; what did that person know about ONA, title/possession limits and transaction dependencies?
+2. **Administrador Concursal:** what did he know, authorise, protect, correct or leave uncorrected; how did the native scope of any security/access mandate compare with execution; what did he do to preserve estate value and competing exit routes?
+3. **Court:** what was brought to the court, what protective measures were legally available and requested, what was decided, refused, delayed or left unresolved, and what causal effect—if any—followed?
+4. **Ministerio Fiscal / Judicial Police:** what evidence was actually acquired, preserved and tested; which actor-specific hypotheses were investigated or rejected; what evidential universe supported closure, referral or later action?
+5. **Later economic outcome:** what title, finance, public support, refurbishment, operation, income and value accrued to each legal entity; later benefit is an investigative indicator, never retroactive proof of criminal intent.
+
+The Montelanza/Molina -> Community -> CAM/Acosta Matos lineage is framed as **functional, patrimonial and governance continuity to reconstruct**, not inherited criminal liability. Each bridge requires its own corporate, title, communications and capacity proof.
+
+The 2018 provisional criminal dismissal and its confirmation on appeal remain mandatory contrary evidence. The institutional ledger therefore asks not why prosecutors failed to accuse, but what concrete investigative steps were taken to prove or disprove instructions, excess of authority, knowledge of the funded exit, causation, communications, flows, benefit and possible institutional misconduct.
+
+New public routes:
+
+- ES: `/es/ona-salida-financiada-continuidad-penal/proteccion-institucional/`
+- EN: `/en/ona-funded-exit-continuity-criminal-analysis/institutional-protection/`
+
+The common audit test is now:
+
+**act/omission -> knowledge -> capacity/duty -> institutional response -> causation -> intent -> contrary evidence -> proof gap.**
