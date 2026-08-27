@@ -23,12 +23,4 @@
   prescriptionRecovery.async = false;
   prescriptionRecovery.setAttribute('data-prescription-caducity-recovery-loader', '20260826');
   document.head.appendChild(prescriptionRecovery);
-
-  // Add the dated RICPE/CNMV Ethics Channel closure layer. The layer is route-scoped
-  // and exits without changing any page outside the four canonical RICPE/CNMV routes.
-  const ricpeCnmvClosure = document.createElement('script');
-  ricpeCnmvClosure.src = new URL('ricpe-cnmv-closure-update-20260827.js?v=20260827a', current.src).href;
-  ricpeCnmvClosure.async = false;
-  ricpeCnmvClosure.setAttribute('data-ricpe-cnmv-closure-loader', '20260827');
-  document.head.appendChild(ricpeCnmvClosure);
 })();
