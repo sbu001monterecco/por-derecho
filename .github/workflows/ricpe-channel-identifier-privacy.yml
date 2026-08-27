@@ -17,5 +17,9 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+      - name: Install PDF text inspection dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends poppler-utils
       - name: Enforce privacy-safe channel correlation
         run: python3 scripts/validate_ricpe_channel_identifier_privacy.py
