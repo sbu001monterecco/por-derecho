@@ -137,26 +137,23 @@ The German compatibility route remains a `noindex` redirect to English. It is pr
 - actor-specific causal proof and the complete adjudication/competition file;
 - native authentication of the reported CAM commercialisation statement.
 
-## Required publication and deletion gates
+## Historical publication and deletion gates — completed
 
-1. Rebase/reconcile against fresh current `origin/main` if it moves.
-2. Run repository preservation, publication integrity, audience experience, sent-link continuity and mission-critical validation.
-3. Run relevant FTI/Meeting Point source and route checks.
-4. Review exact diff for ES/EN parity, privacy and allegation/non-finding adjacency.
-5. Push this branch and open a PR only with current publication authority.
-6. Merge only after required checks pass.
-7. Verify the exact merge SHA in the Pages deployment.
-8. Read back the ten ES/EN routes and the German compatibility route.
-9. Update deployment evidence and this audit from `NOT DELETION-SAFE` to `DELETION-SAFE WITH OPEN EVIDENCE`.
+The 26-August preservation branch was merged by PR #1084 at
+`6face6554c4214e68e74a9b9b6bce36e41aedb3f`; the connected Magistrate López
+Villarrubia / Meeting Point publication followed in PR #1085 at
+`048bb4e419a6b36e279e3e7d5792ebafb008cfe5`. The later 27-August additive
+release and audit now control current continuity. This section is preserved as
+history and no longer describes a pending branch.
 
 ## Deletion-safety dimensions
 
 | Dimension | Current result |
 | --- | --- |
-| `THREAD_REASONING_CONTINUITY` | Preserved on this branch |
-| `IMPLEMENTATION_STATE_CONTINUITY` | Preserved on this branch |
+| `THREAD_REASONING_CONTINUITY` | PASS historically; superseding 27-Aug audit controls |
+| `IMPLEMENTATION_STATE_CONTINUITY` | PASS historically; PR #1084/#1085 merged |
 | `PRIMARY_EVIDENCE_COMPLETENESS` | Open under ME-049/ME-094 |
-| `LIVE_PUBLICATION_VERIFICATION` | Not yet performed for this branch |
+| `LIVE_PUBLICATION_VERIFICATION` | Completed for the historical scope; exact run IDs are not reconstructed here |
 | `COMMUNICATION_VERIFICATION` | Historical three-send state reconciled; replacement remains HOLD |
 | `CUSTODY_RESILIENCE` | Private native sources and controlled bundle remain outside public Git; provider-independent redundancy remains to be assessed |
 | `DISASTER_RECOVERY_SAFETY` | Not claimed |
@@ -173,17 +170,31 @@ The thread's later allegation is preserved in the dedicated ES/EN dossier, the f
 
 No email, Gmail draft, resend, forward or authority filing was made or authorised in implementing this addendum.
 
-## 27-Aug-2026 FTI / Meeting Point / RICPE continuity addendum
+## 27-Aug-2026 FTI / Meeting Point / RICPE continuity supersession
 
-The historical 26-Aug scope is preserved, but the current thread is again **NOT DELETION-SAFE**. New material now includes:
+The historical 26-Aug scope remains preserved. The later continuity release is
+now **DELETION-SAFE WITH OPEN EVIDENCE** under
+`docs/deletion-audits/2026-08-27-fti-meeting-point-ricpe-continuity-thread.md`.
+The new material includes:
 
 - the RICPE Ethics Channel's certified `No mostrado al denunciante` workflow state and 27-Aug inadmission/archive without internal investigation;
 - two later CNMV extensions, including a five-attachment package, with receipt/linkage/review still open;
-- a current live privacy defect involving an exact channel identifier, redacted only in the local candidate;
+- a privacy defect involving an exact channel identifier, remediated in the current tree and verified live while historical Git/cache exposure remains a separate open security boundary;
 - the attributed Acosta Matos/RICPE instrumental-causation model and its required business-effect evidence;
-- a 27-action Germany/Spain/EU ledger covering emails, AGE/RedSARA, judicial, insolvency, corporate, criminal, supervisory, whistleblower and conditional EU routes;
+- a 31-action Germany/Spain/EU ledger covering emails, AGE/RedSARA, judicial, insolvency, corporate, criminal, supervisory, whistleblower and conditional EU routes;
 - a new finite continuity-spine `^` census of 39/65, kept separate from 25/32, 56/130 and 19/24; and
-- ES/EN/DE continuity pages and reciprocal-link/security validators that are not yet published.
+- ES/EN/DE continuity pages and reciprocal-link/security validators published and exactly read back.
+
+PR #1111 published reviewed head
+`677906e303ad91cc436803d8d47e410deefbbd6f` as merge
+`41a8250ffdcd27e820bbc89b8238fb98ba23a6db`, tree
+`0f2b75347de048d449160a69d087b592bd51b35c`. Pages run `33083261099` / #1184
+succeeded. FTI verifier run `33083264897` preserved artifact `9651057259`;
+current-digest verifier run `33083264830` preserved 43-route/204-record parity in
+artifact `9651039104` (`sha256:7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead`).
+Monitor run `33083264530` passed a fresh 12/12-source baseline with 0 errors and
+0 review signals; artifact `9651009448` preserves that bounded result. A fresh
+baseline is not proof of no intervening change or transaction.
 
 The new controlling records are:
 

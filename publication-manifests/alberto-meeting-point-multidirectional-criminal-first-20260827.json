@@ -3,11 +3,14 @@
   "publication_id": "alberto-meeting-point-multidirectional-criminal-first-20260827",
   "control_id": "PD-ALV-MP357-MULTI-20260827-01",
   "control_date": "2026-08-27",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "release_candidate_not_yet_verified_live",
+  "current_state": "LIVE_VERIFIED",
+  "status": "live_verified",
   "owner": "Por Derecho / Project Sun Rock",
   "remote_main_observed_sha": "f4c186194f34c414e83526a771a9772d62782519",
   "candidate_parent_sha": "f4c186194f34c414e83526a771a9772d62782519",
+  "validated_content_commit": "677906e303ad91cc436803d8d47e410deefbbd6f",
+  "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+  "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
   "publication_authorized": true,
   "publication_authorization": {
     "scope_control_id": "PD-ALV-MP357-MULTI-20260827-01",
@@ -115,6 +118,11 @@
     ".github/workflows/validate-current-reverse-engineered-digest.yml"
   ],
   "validation": {
+    "evidence": [
+      "PR #1111 final head 677906e303ad91cc436803d8d47e410deefbbd6f passed the applicable repository, cross-proceeding, first-hop caret, identity, privacy and mission-critical gates concerning el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria for historical own-court acts and el magistrado D. Alberto López Villarrubia, titular de la plaza n.º 1 de la Sección de lo Mercantil del Tribunal de Instancia de Las Palmas de Gran Canaria for current references.",
+      "GitHub Pages run 33083261099 deployed merge 41a8250ffdcd27e820bbc89b8238fb98ba23a6db successfully.",
+      "Current-digest verifier run 33083264830 matched 43 declared public surfaces to the reviewed repository bytes and confirmed 204-record identity-registry parity."
+    ],
     "specialist_structure": "passed_local",
     "first_hop_caret": "passed_local",
     "identity_registry": "passed_local",
@@ -123,19 +131,107 @@
     "legal_professional_register": "passed_local",
     "operational_truth": "passed_local",
     "full_repository_gate": "passed_local",
-    "live_readback": "not_run_pending_authorised_publication"
+    "live_readback": "passed_exact_43_route_readback"
   },
-  "publication_sequence": [
-    "complete local validation",
-    "present exact candidate commit and diff",
-    "bind the existing repository-and-website-only publication authorization",
-    "push candidate branch",
-    "open pull request and require green checks",
-    "merge exact reviewed head",
-    "wait for Pages deployment",
-    "read back both hubs, nine route pairs and machine controls",
-    "write a separate live closeout"
+  "publication_history": [
+    "local validation completed",
+    "exact candidate commit and diff reviewed",
+    "repository-and-website-only publication authorization bound",
+    "candidate branch published",
+    "pull request opened and required checks completed",
+    "exact reviewed head merged",
+    "exact-SHA Pages deployment completed",
+    "both hubs, nine route pairs and machine controls read back",
+    "separate live closeout artifact written"
   ],
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow": "pages build and deployment",
+    "conclusion": "success",
+    "run_id": 33083261099,
+    "run_number": 1184,
+    "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
+    "https://sbu001monterecco.github.io/por-derecho/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
+  ],
+  "live_readback": {
+    "result": "PASS_EXACT_BYTES",
+    "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "workflow_run_id": 33083264830,
+    "surface_count": 43,
+    "identity_registry_parity": 204,
+    "sha256_by_route": {
+      "/CURRENT_REVERSE_ENGINEERED_DIGEST.md": "6a5f9c6a41241d0225247c1fc120659710b574e7d48663f86dc1f64724e49f5d",
+      "/archive/CURRENT_REVERSE_ENGINEERED_DIGEST_LIVE_CLOSEOUT_27AUG2026.md": "e8bd9f25ec50087a0108cc832018f0008aeae8c4b2c5a4de24a6e87d114a681c",
+      "/assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json": "375043e3484feb4c36b131a184f9bdb150cf2056a15c8a769a1794ba1bda8b01",
+      "/assets/data/caepr-caret-alberto-meeting-point-357-v1.json": "8d58ba7458e0ca324d8f5151d7d14e6cf061ee4735fcd41eda0274350e620213",
+      "/assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json": "2e0f1fc1d913bed24be9083d91f6ea0ba320d52dee81430d388608731f606bdb",
+      "/assets/data/caepr-caret-unitary-digest-v1.json": "45008dfb41644e7955c199e981aeb61be29b5edca85e1f8c6590de3f6359865b",
+      "/assets/data/matter-identity-registry-v1.json": "0feff1a5e5fe4834ef208bb67f668b482f7df6c2b2c09439d9381dfc0def741c",
+      "/en/2022-adjudication-documentary-reconstruction/": "deeb7f18f4d9102e088149338714283539720b99e8c57eaaa3d945348fcd6d00",
+      "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/": "9ba2cc40f8a3540d692a3846617db15243aeb845542f746373566b14748d678f",
+      "/en/caepr-caret-unitary-digest/": "f080b37c372d8a4f2937987440994d5c61574fbcc1d396937c71b1a68357524e",
+      "/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/": "5d9cd7991f53617ca18d66ce9f645ef6194575a36d9d7edf48837d03515a2085",
+      "/en/insolvency-36-2012-active-estate-2018-2021/": "7878086c98b2b80de493f8342ae91f638dcbd3c47e065d0c852a31d9c7c3fab7",
+      "/en/insolvency-36-2012-mercantile-court-1/": "cd47cc69d761ca1d32f141ba56880095da89e02f3dff78e9e933a389bd808abe",
+      "/en/lava-verde-club-sei-meeting-point/": "30c89b44d4e435b9cdf6307b1fb6bbf7204af71e53b4f3e25dfd2ad610339d06",
+      "/en/legal-notebook/meeting-point-357-2024-judicial-traceability/": "f0327443acbb8d5e9ea30d2e010f07aef9bcbf9c150974bd4c5e1aec3e6ff38c",
+      "/en/matter-identity-registry/": "49aa1c08f7f652cb0125d4c14719d2351bbbb6305fe5c6f3dc30107f1fcb7024",
+      "/en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/": "042dfd67da880a28dfb641acd4e9f19eebab86fb968540a0a4918e20d50cb01e",
+      "/en/public-authority-unitary-case-reconstruction/": "5557d6da90fbc226069f640d469eda0489685096e73d0f10a739ebaff58c8192",
+      "/en/sun-park-takeover-7-june-2018/": "53ca67afbf6ec146f5f242f5855ea178aea4ba2bed429c7c0ee8cd1950c8c2b4",
+      "/en/unitary-criminal-hypothesis-2011-present/": "e45443b182e43ea0aa527fa12bcf560230bebb4ea0e43d3c269d40d3f39b76ee",
+      "/en/unitary-criminal-reverse-engineering/": "2e643b9064db75119fa0976453410904c3e9dc9a72ba6e2225740dc36b270795",
+      "/es/adjudicacion-2022-reconstruccion-documental/": "f39853f39324d5e6f35334fe44db02078bf9705a39c3bf37253f7b6745f5fe40",
+      "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/": "6e817f300935a78d006e87668f0c7ab004b738278ce0149cfe34f700d650acec",
+      "/es/concurso-36-2012-juzgado-mercantil-1/": "5fa11ea56306ff42dd5b99ad828d75d38e761def0731539c920881fc7e8cedaf",
+      "/es/concurso-36-2012-magistrado-juez/": "d8c94e1d58d8dffb3de5a67bf122c36f22cefa436ba644c125b47d0994454306",
+      "/es/concurso-36-2012-masa-activa-2018-2021/": "0dd9e7097ad7bbb53fa4e952a3a4a7cbb84214f992c7eaa1f0a714ba38ade2f1",
+      "/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/": "9866c7f9987b09a21bde8e51e0c90317965055fb564968720df6233773c73de0",
+      "/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/": "813b6b219779aa3022affcae15ab79dfd52991697ac0bb7b12dc8062edf12145",
+      "/es/hipotesis-criminal-unitaria-2011-presente/": "0b33fc17c096c6f5822e881de9bb45694d649bfadda4096530450e8469134b76",
+      "/es/ingenieria-inversa-criminal-unitaria/": "3dcbe404fca47c653c907861cd0d3f4c31a0210ed5d5483256c88dc725724169",
+      "/es/lava-verde-club-sei-meeting-point/": "2abe17b6eed7e2aab5ccb3a9f7bc83d15054991e25200a22f91f3209a2f097b0",
+      "/es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/": "08f6bfa926df45ceca87bac8530a32280b5b8ff018361630eeeac6ecd1b42c20",
+      "/es/reconstruccion-unitaria-autoridades-publicas/": "728d04f3b4c32457c6a866dd17ea4a80e3d29684148399ccbf4ba7293948cf5e",
+      "/es/registro-identidad-materia/": "5673a9cc3eef2f60b2dedde1ec3aa56b02a77b887d578e7f0451ece597bd63a5",
+      "/es/toma-control-sun-park-7-junio-2018/": "793484dde5d2ff665a1fdb361a7bdd5814eb6b5c7c9fedf967be39c33a2e61e8",
+      "/es/verificacion-caepr-caret-digest-unitario/": "2f23425bdff815ca82d817b2ccee795189d25a1b028c1161f817b36fbf74a8fa",
+      "/ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json": "4de3845380719f4a4d9002d24594969d64a62d26fdf8ec665d6bdf6a58aa5d28",
+      "/publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json": "72c28e56c64a8d999a791292efb2c771ea80ed65cbcc558b5551e20278d4c62c",
+      "/publication-manifests/unitary-repository-website-redigest-20260827.json": "8b730ebc825db0dcb4caa94c8a639415abc1bcea5d88957eae815839f999ef59",
+      "/sitemap-cgpj.xml": "eae9857c767c0a43c7baae60dc9fcdb4500a7f91eca79a4d1b12841db2db5c2a",
+      "/sitemap-judicial-spine.xml": "2ef35ba042f00daa09f9bdf3b22c53fef871706079da535b558f45e33ddd2960",
+      "/sitemap-meeting-point.xml": "47ac099a83cf95468968636883b2b6eb7d31db2ebeed184d1c7ca3c10e136654",
+      "/sitemap.xml": "4542bf9c2c2bab68719b57301abbacea1a7333a6c076e7132c1ec9e7ef5cfc29"
+    }
+  },
+  "live_verification_evidence": {
+    "result": "PASS_EXACT_BYTES",
+    "verified_merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "pages_run_id": 33083261099,
+    "workflow_run_id": 33083264830,
+    "artifact_id": 9651039104,
+    "artifact_name": "current-reverse-engineered-digest-closeout-33083264830",
+    "artifact_sha256": "7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead",
+    "surface_count": 43,
+    "identity_registry_parity": 204,
+    "boundary": "Live verification proves publication parity only; it does not prove any allegation, criminal responsibility, personal signature, allocation, conflict, concealment or loss."
+  },
+  "closeout_control": {
+    "kind": "SEPARATE_WORKFLOW_ARTIFACT",
+    "result": "LIVE_VERIFIED",
+    "head_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "workflow_run_id": 33083264830,
+    "artifact_id": 9651039104,
+    "artifact_name": "current-reverse-engineered-digest-closeout-33083264830",
+    "artifact_sha256": "7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead",
+    "communication_authorized": false,
+    "filing_authorized": false
+  },
   "boundaries": [
     "This module applies a criminal-first investigative order; it does not make a criminal finding.",
     "A caret resolves identity only and does not prove conduct, dated capacity, knowledge, intent, conflict, concealment, liability, source authenticity or outcome.",
@@ -145,6 +241,6 @@
     "The full six-surface caret census is 25/32 with seven pending objects; no ALL IS^ claim is permitted for this specialist scope.",
     "The full eighteen-route first-hop caret census is 56/130 with 74 pending objects; it is separate from both the six-surface 25/32 result and the repository-wide 19/24 result.",
     "Public Git contains aggregate controls for the three archived 24-Oct notice copies, but not a reproducible per-copy full-hash custody manifest or the signed Auto 97/2025 binary.",
-    "Repository and website publication of the exact complete continuity candidate is authorized; no email, resend, forward, AGE/RedSARA notice, portal submission or filing is authorized."
+    "Repository and website publication of the exact complete continuity package was authorized and completed; no email, resend, forward, AGE/RedSARA notice, portal submission or filing was or is authorized."
   ]
 }

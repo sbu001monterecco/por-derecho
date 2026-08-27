@@ -110,11 +110,46 @@
     "observed_at": "2026-08-26T07:32:47Z",
     "rule": "LIVE_VERIFIED records exact publication and readback only; it does not convert the attributed allegation into a finding or the manifest into native evidence."
   },
+  "latest_additive_publication": {
+    "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "state": "DELETION_SAFE",
+    "relation_to_promoted_material_publication": "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_26AUG_SOURCE_BASE",
+    "pull_request": 1111,
+    "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+    "publication_merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "publication_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+    "pages_run_id": 33083261099,
+    "pages_run_number": 1184,
+    "current_digest_verification": {
+      "workflow_run_id": 33083264830,
+      "artifact_id": 9651039104,
+      "artifact_name": "current-reverse-engineered-digest-closeout-33083264830",
+      "artifact_sha256": "7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead",
+      "exact_route_count": 43,
+      "identity_registry_parity": 204,
+      "result": "PASS_EXACT_BYTES"
+    },
+    "fti_verification": {
+      "workflow_run_id": 33083264897,
+      "artifact_id": 9651057259,
+      "artifact_name": "fti-meeting-point-ricpe-live-closeout-33083264897",
+      "artifact_sha256": "6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e",
+      "exact_surface_count": 34,
+      "result": "PASS_EXACT_BYTES"
+    },
+    "external_action_authority": {
+      "email_authorized": false,
+      "filing_authorized": false,
+      "red_sara_age_notification_authorized": false,
+      "portal_submission_authorized": false,
+      "authority_contact_authorized": false
+    }
+  },
   "specialist_continuity_candidates": [
     {
       "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
-      "state": "PREPARED_PENDING_MERGE",
-      "relation_to_current_state": "ADDITIVE_CANDIDATE_DOES_NOT_REWRITE_HISTORICAL_LIVE_SOURCE_BASE",
+      "state": "DELETION_SAFE",
+      "relation_to_current_state": "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_LIVE_SOURCE_BASE",
       "analysis_order": "CRIMINAL_FIRST_ALONGSIDE_INSOLVENCY_CORPORATE_CIVIL_PUBLIC_FUNDS_AND_WHISTLEBLOWER_LENSES",
       "restart_controls": {
         "digest": "archive/FTI_MEETING_POINT_RICPE_UNITARY_CRIMINAL_FIRST_DIGEST_27AUG2026.md",
@@ -145,7 +180,18 @@
         "baseline_events": 2,
         "open_gaps": 8,
         "coverage": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
-        "automatic_public_promotion": false
+        "automatic_public_promotion": false,
+        "latest_execution": {
+          "workflow_run_id": 33083264530,
+          "artifact_id": 9651009448,
+          "artifact_name": "fti-meeting-point-asset-transaction-monitor-33083264530",
+          "artifact_sha256": "e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98",
+          "status": "PASS_FRESH_BASELINE",
+          "sources_fetched": 12,
+          "fetch_errors": 0,
+          "review_signals": 0,
+          "boundary": "NO_PRIOR_STATE_FRESH_BASELINE_NOT_PROOF_OF_NO_INTERVENING_CHANGE"
+        }
       },
       "judicial_title_rule": {
         "historical_own_court_reference": "el Ilmo. Sr. D. Alberto López Villarrubia, Magistrado-Juez del entonces Juzgado de lo Mercantil n.º 1 de Las Palmas de Gran Canaria",
@@ -153,6 +199,17 @@
         "former_court_3_boundary": "The 24-Oct-2024 notices establish only the Public Insolvency Register attribution displayed in them; signature, substitution or allocation, capacity, knowledge, conflict and disclosure remain open."
       },
       "ricpe_resolver_boundary": "The outward resolution names no individual resolver. The Ithikios / DIGITAL PRODUCTS DEVELOPMENT SL certificate or platform signature identifies the provider perimeter, not the human or RICPE organ that decided, configured, accessed or routed the case.",
+      "publication_evidence": {
+        "pull_request": 1111,
+        "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+        "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+        "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+        "pages_run_id": 33083261099,
+        "pages_run_number": 1184,
+        "live_verifier_run_id": 33083264897,
+        "live_closeout_artifact_id": 9651057259,
+        "result": "PASS_EXACT_BYTES"
+      },
       "authorization_boundary": {
         "repository_and_website_publication_authorized": true,
         "email_authorized": false,
@@ -168,8 +225,8 @@
     "control_date": "2026-08-27",
     "counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
     "archive_backfill": "OPEN",
-    "static_page_parity": "SOURCE_AND_STATIC_CANDIDATE_ALIGNED_PUBLIC_READBACK_PENDING",
-    "last_live_verified_counts": {"total":194,"PERSON":86,"ORGANISATION":66,"STRUCTURE":10,"INSTITUTION":15,"PROCEEDING":17},
+    "static_page_parity": "SOURCE_STATIC_AND_PUBLIC_EXACT_READBACK_ALIGNED",
+    "last_live_verified_counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
     "candidate_control": "PD-ALV-MP357-CARET-20260827-01",
     "candidate_controls": [
       "PD-ALV-MP357-CARET-20260827-01",

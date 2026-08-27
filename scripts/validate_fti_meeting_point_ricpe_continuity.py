@@ -353,10 +353,10 @@ def validate_integration() -> None:
             check(isinstance(deployment.get("run_id"), int) and deployment.get("run_id", 0) > 0, f"{state} deployment run id missing")
             check(deployment.get("head_sha") == manifest.get("merge_sha"), f"{state} deployment SHA differs from merge SHA")
         if rank >= LIFECYCLE.index("LIVE_VERIFIED"):
-            expected_urls = {
-                language: "https://sbu001monterecco.github.io/por-derecho" + route
-                for language, route in manifest.get("hub_routes", {}).items()
-            }
+            expected_urls = [
+                "https://sbu001monterecco.github.io/por-derecho" + route
+                for route in manifest.get("hub_routes", {}).values()
+            ]
             check(manifest.get("live_urls") == expected_urls, f"{state} live hub URL set mismatch")
             readback = manifest.get("live_readback", {})
             check(readback.get("result") == "PASS_EXACT_BYTES", f"{state} live readback is not an exact-byte pass")

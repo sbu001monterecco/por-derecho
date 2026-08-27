@@ -60,6 +60,55 @@
       "conclusion": "success"
     }
   },
+  "additive_publication_evidence": {
+    "control_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
+    "relation_to_source_base": "ADDITIVE_RELEASE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE",
+    "pull_request": 1111,
+    "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+    "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+    "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+    "pages": {
+      "run_id": 33083261099,
+      "run_number": 1184,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "current_digest_closeout": {
+      "workflow_run_id": 33083264830,
+      "artifact_id": 9651039104,
+      "artifact_name": "current-reverse-engineered-digest-closeout-33083264830",
+      "artifact_sha256": "7fe597bc46d371a6e20b7c79525b66dc9f630cb2b4328d12a675ebd5d6f4bead",
+      "result": "PASS_EXACT_BYTES",
+      "exact_route_count": 43,
+      "identity_registry_parity": 204
+    },
+    "fti_live_closeout": {
+      "workflow_run_id": 33083264897,
+      "artifact_id": 9651057259,
+      "artifact_name": "fti-meeting-point-ricpe-live-closeout-33083264897",
+      "artifact_sha256": "6be6ce6c96a5c0d347f869dc7d418db39a19ede6a65fb8493e78e7d4bb51284e",
+      "result": "PASS_EXACT_BYTES",
+      "exact_surface_count": 34
+    },
+    "asset_transaction_monitor": {
+      "workflow_run_id": 33083264530,
+      "artifact_id": 9651009448,
+      "artifact_name": "fti-meeting-point-asset-transaction-monitor-33083264530",
+      "artifact_sha256": "e46dfb57876af42258678886ef294e102d49f3a29e3e76f086c9e575b865bc98",
+      "result": "PASS_FRESH_BASELINE",
+      "sources_fetched": 12,
+      "fetch_errors": 0,
+      "review_signals": 0,
+      "boundary": "NO_PRIOR_STATE_FRESH_BASELINE_NOT_PROOF_OF_NO_INTERVENING_CHANGE"
+    },
+    "external_action_authority": {
+      "email_authorized": false,
+      "filing_authorized": false,
+      "red_sara_age_notification_authorized": false,
+      "portal_submission_authorized": false,
+      "authority_contact_authorized": false
+    }
+  },
   "identity_registry": {
     "total": 204,
     "PERSON": 87,
@@ -68,14 +117,14 @@
     "INSTITUTION": 18,
     "PROCEEDING": 18,
     "archive_backfill": "OPEN",
-    "candidate_state": "SOURCE_AND_STATIC_SURFACES_UPDATED_PUBLICATION_PENDING",
+    "candidate_state": "SOURCE_STATIC_AND_PUBLIC_EXACT_READBACK_ALIGNED",
     "last_live_verified_counts": {
-      "total": 194,
-      "PERSON": 86,
-      "ORGANISATION": 66,
+      "total": 204,
+      "PERSON": 87,
+      "ORGANISATION": 71,
       "STRUCTURE": 10,
-      "INSTITUTION": 15,
-      "PROCEEDING": 17
+      "INSTITUTION": 18,
+      "PROCEEDING": 18
     }
   },
   "controlling_rule": "Sun Park was one economically integrated hotel platform but not one legal person, title, operator, debt, insolvency estate or claimant.",
@@ -104,7 +153,7 @@
       "source-before-conclusion",
       "economic unity with legal-perimeter separation",
       "adverse and contrary evidence controls",
-      "194-identity last-live denominator with a separate 204-identity publication candidate",
+      "204-identity exact live-readback parity with the earlier 194 snapshot preserved historically",
       "exact-main Pages, verifier and production-smoke success"
     ],
     "risks": [
@@ -125,7 +174,7 @@
     "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
     "reasons": [
       "prepared against earlier 16dd443 repository state",
-      "the last live-verified denominator is 194 while the current source/static candidate is 204",
+      "the now live-verified 204-record denominator differs from the stale package assumptions",
       "proceeding IDs R-0011 through R-0017 are occupied",
       "Matkator and ONA exact-entity reconciliation remains open",
       "Clubotel, PP1041 and EH90 require current-registry admission"
@@ -166,12 +215,12 @@
         "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
         "en": "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
       },
-      "publication_state": "PREPARED_PENDING_MERGE"
+      "publication_state": "LIVE_VERIFIED"
     },
     {
       "module_id": "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
       "scope": "FTI Touristik / Meeting Point / Club Sei / RICPE whistleblower continuity, cross-border actions and former-asset transaction monitoring in the Canary Islands and Spain",
-      "module_relation": "ADDITIVE_SPECIALIST_CANDIDATE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE",
+      "module_relation": "ADDITIVE_SPECIALIST_RELEASE_DOES_NOT_REWRITE_HISTORICAL_SOURCE_BASE",
       "analysis_order": [
         "CRIMINAL_FIRST",
         "INSOLVENCY",
@@ -223,7 +272,16 @@
         "baseline_events": 2,
         "open_gaps": 8,
         "coverage": "BOUNDED_MONITOR_NOT_COMPREHENSIVE",
-        "automatic_public_promotion": false
+        "automatic_public_promotion": false,
+        "latest_execution": {
+          "workflow_run_id": 33083264530,
+          "artifact_id": 9651009448,
+          "status": "PASS_FRESH_BASELINE",
+          "sources_fetched": 12,
+          "fetch_errors": 0,
+          "review_signals": 0,
+          "boundary": "NO_PRIOR_STATE_FRESH_BASELINE_NOT_PROOF_OF_NO_INTERVENING_CHANGE"
+        }
       },
       "judicial_title_control": {
         "control": "archive/ALBERTO_LOPEZ_VILLARRUBIA_JUDICIAL_TITLE_AND_COURT_REORGANISATION_CONTROL_27AUG2026.md",
@@ -244,7 +302,18 @@
         "portal_submission_authorized": false,
         "authority_contact_authorized": false
       },
-      "publication_state": "PREPARED_PENDING_MERGE"
+      "publication_evidence": {
+        "pull_request": 1111,
+        "validated_pr_head": "677906e303ad91cc436803d8d47e410deefbbd6f",
+        "merge_sha": "41a8250ffdcd27e820bbc89b8238fb98ba23a6db",
+        "merge_tree_sha": "0f2b75347de048d449160a69d087b592bd51b35c",
+        "pages_run_id": 33083261099,
+        "pages_run_number": 1184,
+        "live_verifier_run_id": 33083264897,
+        "live_closeout_artifact_id": 9651057259,
+        "result": "PASS_EXACT_BYTES"
+      },
+      "publication_state": "DELETION_SAFE"
     }
   ],
   "priority_sequence": [
