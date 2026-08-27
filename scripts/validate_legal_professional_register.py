@@ -92,10 +92,10 @@ def main() -> int:
         if len(identities) != len(parts):
             fail("duplicate immutable identity ID")
         counts = index.get("counts", {})
-        if counts.get("total") != 204 or counts.get("PERSON") != 87 or counts.get("ORGANISATION") != 71:
-            fail("canonical registry counts do not reflect professional extension")
-        if len(parts) != 204:
-            fail("canonical registry part total is not 204")
+        if counts.get("total") != 205 or counts.get("PERSON") != 88 or counts.get("ORGANISATION") != 71:
+            fail("canonical registry counts do not reflect professional extension and Vera identity admission")
+        if len(parts) != 205:
+            fail("canonical registry part total is not 205")
 
         records = reg.get("records", [])
         if len(records) != 40:
@@ -209,7 +209,7 @@ def main() -> int:
             fail("explicitly excluded person appears in professional identity extension")
 
         print("LEGAL PROFESSIONAL REGISTER: PASS")
-        print(" - canonical identities: 204 (87 people; 71 organisations)")
+        print(" - canonical identities: 205 (88 people; 71 organisations)")
         print(" - professional roster: 40")
         print(" - current lawyers: 3; former/review lawyers: 31")
         print(" - procuradores/as: 2 current + 4 former")
