@@ -1,0 +1,28 @@
+{
+  "authorization_id": "PD-AUTH-RICPE-BINARY-PRIVACY-20260827-01",
+  "change_id": "PD-RICPE-BINARY-PRIVACY-20260827-01",
+  "base_sha": "b23c0bb81c33a7396efb96cee059255b82ea7936",
+  "status": "EXPLICIT_USER_AUTHORIZATION",
+  "authorized_by": "Gil Marer",
+  "authorized_on": "2026-08-27",
+  "reason": "Complete the expressly authorised isolated RICPE privacy hotfix by removing the public PDF and rendered image paths that still expose the private communication identifier and replacing them with clearly labelled redacted public derivatives; the unredacted original is retained under private custody.",
+  "paths": [
+    "evidence/ricpe-cnmv/2026-08-27/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026.pdf",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages/page-1.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages/page-2.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages/page-3.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages/page-4.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages/page-5.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages/page-6.jpg"
+  ],
+  "replacement_paths": [
+    "evidence/ricpe-cnmv/2026-08-27/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026_PUBLICO_REDACTADO.pdf",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-1.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-2.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-3.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-4.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-5.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-6.jpg"
+  ],
+  "external_communications_authorized": false
+}
