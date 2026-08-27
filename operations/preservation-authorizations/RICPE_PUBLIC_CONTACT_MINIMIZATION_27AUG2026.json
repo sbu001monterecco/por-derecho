@@ -1,0 +1,23 @@
+{
+  "authorization_id": "PD-AUTH-RICPE-CONTACT-MINIMIZATION-20260827-01",
+  "change_id": "PD-RICPE-CONTACT-MINIMIZATION-20260827-01",
+  "base_sha": "a2ac5dcef6d2b90b6cacb586e042343dc17f9fe6",
+  "status": "EXPLICIT_USER_AUTHORIZATION",
+  "authorized_by": "Gil Marer",
+  "authorized_on": "2026-08-27",
+  "reason": "Publish and live-verify the isolated RICPE/Ithikios privacy hotfix before the complete FTI/Club Sei continuity candidate. This authority does not extend to email, filing, RedSARA/AGE, portals or authority contact.",
+  "paths": [
+    "archive/RICPE_CHANNEL_PUBLIC_IDENTIFIER_EXPOSURE_REMEDIATION_27AUG2026.md",
+    "evidence/ricpe-cnmv/2026-08-27/RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026_PUBLICO_REDACTADO.pdf",
+    "evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-1.jpg",
+    "evidence/ricpe-cnmv/2026-08-27/index.html",
+    "evidence/ricpe-cnmv/2026-08-27/manifest.txt",
+    "scripts/build_ricpe_public_contact_minimization.py",
+    "scripts/validate_ricpe_channel_identifier_privacy.py"
+  ],
+  "preservation_boundary": "The complete unredacted source remains under private custody. No source binary or credential is added to public Git.",
+  "release_order": "PUBLISH_AND_LIVE_VERIFY_BEFORE_LARGER_FTI_CLUB_SEI_CANDIDATE_IF_SEPARATELY_AUTHORIZED",
+  "publication_authorized": true,
+  "external_communications_authorized": false,
+  "filing_authorized": false
+}

@@ -53,3 +53,27 @@ Cache-busted public readback established:
 The binary-complete privacy correction was published and live-verified before the larger FTI/Meeting Point/RICPE continuity candidate, so substantive review did not delay removal of current public exposure.
 
 No email, filing, authority notification or credential change is authorised by this record. The current-tree/live-route repair does not itself authorise historical Git rewriting.
+
+## Secondary contact-data minimisation candidate
+
+**State: PUBLICATION AUTHORISED / LIVE VERIFICATION PENDING / SEPARATE RELEASE UNIT.**
+
+A new page-one inspection established that the already identifier-redacted public
+derivative still displayed the reporting party's telephone number and email
+address. Those contact details are not necessary to understand or attribute the
+channel record. The local candidate therefore:
+
+1. applies true PDF redactions to both contact rows, so the removed values are not
+   merely covered visually or retained in extractable text;
+2. preserves the reporting-party name for attribution;
+3. regenerates the public page-one JPEG from the minimized derivative;
+4. updates the public evidence page and manifest without describing the full
+   private source as published; and
+5. extends the fail-closed validator to reject extractable email addresses or
+   international telephone numbers in the public PDF.
+
+The other five public page images are unchanged. The user's 27-Aug-2026
+instruction expressly authorises this separate repository/website release. It
+must be published and verified live before the larger FTI/Club Sei recovery
+candidate. That authority does not include email, filing, RedSARA/AGE, portal or
+authority-contact action.
