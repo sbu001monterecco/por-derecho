@@ -7,17 +7,18 @@
 
 ---
 
-## 0. 22-Aug-2026 source-completion control
+## 0. 27-Aug-2026 source-completion control
 
 For current ACTA source variants, full-text/public-artifact status, notices, meetings, emails, implementation and downstream reliance, read first:
 
 - `evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md`;
 - `evidence/community/actas/public-index.json`; and
-- `archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md`.
+- `evidence/community/actas/source-family-reconciliation-v2.json`; and
+- `archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_27AUG2026.md`.
 
-Those controls add the recovered 15/25-Jul and 17-Dec-2008 and 28-May-2009 families, exact later source hashes and the public document-room completion state. They also resolve the apparent 26-Apr-2016 Drive-ID discrepancy: IDs `1YMnEVDQj7r1E2aWgWL2Ne9b5gYP6ZRbd` and `1H10Rco79BHeO-qmnwbpeVpm7UXRqdIUb` are byte-identical 77-page, 27,329,507-byte PDFs with SHA-256 `68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec`. The separate 24-page/Gmail and other variants remain distinct.
+Those controls now record 17 digitised control-copy families and correct the 2016 discrepancy: two distinct 77-page binaries (`68ff554b…` and `549dae8c…`) are render/text equivalent, not byte-identical; the 24-, 47- and 50-page packages remain partial variants. The 10-Aug-2012 ACTA is located, while its two referenced annexes and the standalone 20-Nov-2018 ACTA remain unlocated.
 
-An initial public text-edition PDF or its WEBP preview is a derivative, not a source facsimile, original or certified copy. No `full record` or deletion-safe description is permitted until the newer audit passes.
+A public OCR/text edition and a raster-only redacted source facsimile are different derivatives. Neither is the native source, official book or certified copy. Current deletion continuity is controlled by the 27-Aug closeout plus merge, deployment and private-custody records.
 
 ---
 

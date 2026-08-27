@@ -1,59 +1,76 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "SP-ACTA-2014-08-28-CEXP",
   "slug": "2014-08-28-cexp",
   "date": "2014-08-28",
-  "body": "Comunidad de Explotación (CEXP)",
+  "body": "CEXP",
   "meeting_type": "extraordinary",
   "language": "es",
-  "status": "located-package-partial",
+  "status": "located-package-digitised-public",
   "complete_public_text": false,
   "privacy_level": "public-redacted",
-  "artifact_kind": "public-redacted-text-edition",
-  "redacted_facsimile_available": false,
-  "source_page_images_available": false,
-  "native_page_count": null,
-  "native_page_count_status": "not-established-from-certified-native",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "native_page_count": 3,
+  "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 3,
   "public_pdf_page_count": 4,
   "source": {
-    "filename": "ACTA Comunidad de Explotación (CEXP) - 2014-08-28.pdf",
+    "filename": "copia digital de trabajo",
+    "bytes": 104006,
+    "sha256": "e0b9c621ff560bf714b79d225f943a74f3b5b7bb83929b1d07725ded78952ac5",
     "pages": 3,
-    "bytes": 90821,
-    "sha256": "a510106ec8c8a860ffff50575843139afffb5c2313d218edf99eb410ab56e3d2",
-    "variant_note_es": "Exportación PDF de tres páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.",
-    "variant_note_en": "Three-page PDF export of a working document. Address, identifier, nominal attendance, unit details and signatures are removed. Extracted text is not certified and has not been manually checked line by line.",
-    "additional_known_variants": [],
-    "native_publication": false
+    "variant_note_es": "Instrumento CEXP de tres páginas; no es un acta de la Comunidad de Propietarios.",
+    "variant_note_en": "Three-page CEXP instrument; it is not Owners' Community minutes.",
+    "native_publication": false,
+    "variants_recorded": 1
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2014-08-28-cexp/transcript-es.md",
     "provenance": "evidence/community/actas/2014-08-28-cexp/provenance.md",
     "redaction_log": "evidence/community/actas/2014-08-28-cexp/redaction-log.md",
     "pdf": "assets/docs/community-actas/2014-08-28-cexp-public-redacted-es.pdf",
-    "pdf_sha256": "e42f7f8c0678e36c06d415ea1f6871d2639378f90cc6726d7bed25012a2d4d6a",
+    "pdf_sha256": "f944ae707e346bfee10540d09c3614dd74e65654f68cea84776b18e22a0d7e6b",
     "pdf_pages": 4,
     "preview_pages": [
-      "assets/evidence/community-actas/2014-08-28-cexp/page-001.webp",
-      "assets/evidence/community-actas/2014-08-28-cexp/page-002.webp",
-      "assets/evidence/community-actas/2014-08-28-cexp/page-003.webp",
-      "assets/evidence/community-actas/2014-08-28-cexp/page-004.webp"
+      "assets/evidence/community-actas/2014-08-28-cexp/page-001.jpg",
+      "assets/evidence/community-actas/2014-08-28-cexp/page-002.jpg",
+      "assets/evidence/community-actas/2014-08-28-cexp/page-003.jpg",
+      "assets/evidence/community-actas/2014-08-28-cexp/page-004.jpg"
     ],
-    "preview_count": 4
+    "preview_count": 4,
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2014-08-28-cexp-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "5f5d02d96a953b913174b6cb20ec5d7ad1857b53587ef066a4455a8cae7ddc67",
+    "redacted_source_facsimile_pages": 3,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2014-08-28-cexp/page-001.jpg",
+      "assets/evidence/community-actas-source/2014-08-28-cexp/page-002.jpg",
+      "assets/evidence/community-actas-source/2014-08-28-cexp/page-003.jpg"
+    ],
+    "source_preview_count": 3
   },
   "quality_control": {
     "source_page_count_verified": true,
     "pdf_reopened": true,
     "all_pdf_pages_rendered": true,
-    "privacy_scan": "pass",
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
     "ocr_not_certified": true,
     "manual_source_line_verification": false,
-    "visual_pdf_sample_review": false
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false
   },
   "redaction_categories": [
-    "bloque-nominal-o-deuda",
-    "identificador-contacto-domicilio",
-    "nombre-personal"
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
   ],
-  "created": "2026-08-23"
+  "created": "2026-08-27",
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false
 }

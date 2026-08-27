@@ -1,61 +1,78 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "SP-ACTA-2008-07-25",
   "slug": "2008-07-25",
   "date": "2008-07-25",
   "body": "Comunidad de Propietarios",
   "meeting_type": "extraordinary",
   "language": "es",
-  "status": "located-package-partial",
+  "status": "located-package-digitised-public",
   "complete_public_text": false,
   "privacy_level": "public-redacted",
-  "artifact_kind": "public-redacted-text-edition",
-  "redacted_facsimile_available": false,
-  "source_page_images_available": false,
-  "native_page_count": null,
-  "native_page_count_status": "not-established-from-certified-native",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "native_page_count": 4,
+  "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 4,
   "public_pdf_page_count": 5,
   "source": {
-    "filename": "ACTA Comunidad de Propietarios - 2008-07-25.pdf",
-    "pages": 4,
+    "filename": "copia digital de trabajo",
     "bytes": 2280925,
     "sha256": "4939ffc2f5fada285918fac2a2b5f757d129121623c1fa4040992984c2ba6c38",
-    "variant_note_es": "Copia de trabajo de cuatro páginas recuperada de un adjunto de correo; la última página contiene la relación nominal y firmas. OCR no certificado y sin cotejo manual línea por línea.",
-    "variant_note_en": "Four-page working copy recovered from an email attachment; the final page contains the nominal attendance and signature record. OCR is not certified and has not been manually checked line by line.",
-    "additional_known_variants": [],
-    "native_publication": false
+    "pages": 4,
+    "variant_note_es": "Copia de cuatro páginas; la variante de tres páginas es parcial.",
+    "variant_note_en": "Four-page copy; the three-page variant is partial.",
+    "native_publication": false,
+    "variants_recorded": 1
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2008-07-25/transcript-es.md",
     "provenance": "evidence/community/actas/2008-07-25/provenance.md",
     "redaction_log": "evidence/community/actas/2008-07-25/redaction-log.md",
     "pdf": "assets/docs/community-actas/2008-07-25-public-redacted-es.pdf",
-    "pdf_sha256": "cc5c5252d48671032c390a695107cc2d780a141df017ae5b0969d823cbccef58",
+    "pdf_sha256": "80295507923beaf72512a06b70d89ef45e0d47addd08fe49611e730d16ae03a1",
     "pdf_pages": 5,
     "preview_pages": [
-      "assets/evidence/community-actas/2008-07-25/page-001.webp",
-      "assets/evidence/community-actas/2008-07-25/page-002.webp",
-      "assets/evidence/community-actas/2008-07-25/page-003.webp",
-      "assets/evidence/community-actas/2008-07-25/page-004.webp",
-      "assets/evidence/community-actas/2008-07-25/page-005.webp"
+      "assets/evidence/community-actas/2008-07-25/page-001.jpg",
+      "assets/evidence/community-actas/2008-07-25/page-002.jpg",
+      "assets/evidence/community-actas/2008-07-25/page-003.jpg",
+      "assets/evidence/community-actas/2008-07-25/page-004.jpg",
+      "assets/evidence/community-actas/2008-07-25/page-005.jpg"
     ],
-    "preview_count": 5
+    "preview_count": 5,
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2008-07-25-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "67658df8261a5ec53be5c2cff1fcc6e6c556e5acaf787c7eb205cc4752f7b22b",
+    "redacted_source_facsimile_pages": 4,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2008-07-25/page-001.jpg",
+      "assets/evidence/community-actas-source/2008-07-25/page-002.jpg",
+      "assets/evidence/community-actas-source/2008-07-25/page-003.jpg",
+      "assets/evidence/community-actas-source/2008-07-25/page-004.jpg"
+    ],
+    "source_preview_count": 4
   },
   "quality_control": {
     "source_page_count_verified": true,
     "pdf_reopened": true,
     "all_pdf_pages_rendered": true,
-    "privacy_scan": "pass",
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
     "ocr_not_certified": true,
     "manual_source_line_verification": false,
-    "visual_pdf_sample_review": false
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false
   },
   "redaction_categories": [
-    "bloque-nominal-o-deuda",
-    "identificador-contacto-domicilio",
-    "nombre-personal",
-    "relacion-nominal-finca-deuda-voto-firma"
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
   ],
-  "created": "2026-08-23"
+  "created": "2026-08-27",
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false
 }

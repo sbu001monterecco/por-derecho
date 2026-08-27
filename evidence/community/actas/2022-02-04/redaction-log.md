@@ -1,23 +1,20 @@
-# Registro de redacciones - SP-ACTA-2022-02-04
+# Registro de redacciones - 2022-02-04
 
-La edición pública nunca altera la copia privada. Cada marcador indica el alcance y la categoría de la omisión.
+La fuente privada no se altera. La copia pública es rasterizada y todas las redacciones están quemadas; no existe capa de texto oculta en el facsímil.
 
-| Página fuente | Alcance | Categoría | Motivo |
-|---:|---|---|---|
-| 1 | partial-page | `attendance-signature-list` | Lista de asistentes y bloque de firma/identificación digital. |
-| 1 | line-or-token | `firma-sello` | Regla transversal de privacidad aplicada al OCR. |
-| 2 | partial-page | `attendance-and-vote-lists` | Representaciones, fincas concretas y voto individual. |
-| 2 | line-or-token | `identificador-en-linea` | Regla transversal de privacidad aplicada al OCR. |
-| 3 | line-or-token | `identificador-en-linea` | Regla transversal de privacidad aplicada al OCR. |
-| 3 | line-or-token | `identificadores-contacto-domicilio-firma` | Regla transversal de privacidad aplicada al OCR. |
-| 4 | line-or-token | `firma-sello` | Regla transversal de privacidad aplicada al OCR. |
-| 4 | line-or-token | `identificador-en-linea` | Regla transversal de privacidad aplicada al OCR. |
-| 4 | line-or-token | `identificadores-contacto-domicilio-firma` | Regla transversal de privacidad aplicada al OCR. |
-| 5 | full-page | `tabla-propietarios-deuda-derrama` | Relación por propietario/finca, coeficiente, deuda o cuota. |
-| 6 | full-page | `tabla-propietarios-derrama` | Reparto individual de derrama por propietario/finca. |
-| 7 | line-or-token | `identificador-en-linea` | Regla transversal de privacidad aplicada al OCR. |
-| 7 | line-or-token | `identificadores-contacto-domicilio-firma` | Regla transversal de privacidad aplicada al OCR. |
+| Página fuente | Alcance | Motivo |
+|---:|---|---|
+| 1 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 2 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 3 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 4 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 5 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 6 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 7 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
 
-## Categorías transversales
+## Control de calidad
 
-Se eliminan DNI/NIE/NIF/CIF, firmas y sellos, domicilios, teléfonos, correos, cuentas/IBAN, datos de contacto, filas privadas por propietario/finca/deuda, datos bancarios y material jurídico potencialmente privilegiado. Se conservan fechas, orden del día, estructura, porcentajes agregados, resoluciones narrativas y actores institucionales o societarios cuando son necesarios para comprender el documento.
+- Todas las páginas de la copia fuente están contabilizadas: `true`
+- Facsímil raster sin texto oculto: `true`
+- OCR certificado línea por línea: `false`
+- Fuente privada publicada: `false`

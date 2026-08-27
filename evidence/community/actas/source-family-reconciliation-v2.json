@@ -1,0 +1,427 @@
+{
+  "schema_version": "2.0",
+  "generated": "2026-08-27",
+  "scope": "Public-safe source-family reconciliation for every located ACTA copy.",
+  "families": [
+    {
+      "slug": "2008-04-29",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 2484558,
+        "sha256": "733b0cb9a1cc4aa84c82e58267b44a3166caa4e4cac09fff9eb3d43f5efc6897",
+        "pages": 5
+      },
+      "variant_note_es": "Copia de cinco páginas; la hoja notarial final y las listas nominales se reservan por privacidad.",
+      "variant_note_en": "Five-page copy; the final notarial sheet and nominal lists are withheld for privacy.",
+      "additional_variants": [
+        {
+          "filename": "2008-04-29-alt.pdf",
+          "bytes": 2583237,
+          "sha256": "a0224f685d5b41ff5554cb80c7d96ecfc6c6534b40f457634743165f1cc55433",
+          "pages": 5,
+          "relationship_es": "Escaneo alternativo de cinco páginas; mismo orden general, diferencias de captura.",
+          "relationship_en": "Alternate five-page scan; same general sequence, capture differences."
+        }
+      ]
+    },
+    {
+      "slug": "2008-07-15",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 5747820,
+        "sha256": "613a1e4980b000c1ff7fac634da065837499b71f8bb215d976fe39c9029e6aa5",
+        "pages": 9
+      },
+      "variant_note_es": "Copia de nueve páginas recuperada de una transmisión posterior; la variante de seis páginas es parcial.",
+      "variant_note_en": "Nine-page copy recovered from a later transmission; the six-page variant is partial.",
+      "additional_variants": [
+        {
+          "filename": "2008-07-15-drive.pdf",
+          "bytes": 178515,
+          "sha256": "e031e53a8003aa7ce1638af9d220295952a666af19f294af8a04d0609eb77cd1",
+          "pages": 6,
+          "relationship_es": "Variante parcial de seis páginas.",
+          "relationship_en": "Partial six-page variant."
+        }
+      ]
+    },
+    {
+      "slug": "2008-07-25",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 2280925,
+        "sha256": "4939ffc2f5fada285918fac2a2b5f757d129121623c1fa4040992984c2ba6c38",
+        "pages": 4
+      },
+      "variant_note_es": "Copia de cuatro páginas; la variante de tres páginas es parcial.",
+      "variant_note_en": "Four-page copy; the three-page variant is partial.",
+      "additional_variants": [
+        {
+          "filename": "2008-07-25-drive.pdf",
+          "bytes": 1114466,
+          "sha256": "a735bd736756018fd690326011b095fc9ed43720b0d1ff26233ef65061d36c62",
+          "pages": 3,
+          "relationship_es": "Variante parcial de tres páginas.",
+          "relationship_en": "Partial three-page variant."
+        }
+      ]
+    },
+    {
+      "slug": "2008-12-17",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 4069135,
+        "sha256": "45e4f63eda59a71b2eff9b44a55e88c1dae41b56d64d9a8f9aedfacaf00353db",
+        "pages": 10
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": []
+    },
+    {
+      "slug": "2009-05-28",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 7682134,
+        "sha256": "1ec959c04c3b5f307eb6d2b5f96a7530fad8498f14fd89dbfb7ccf46a6ae9b1d",
+        "pages": 13
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": []
+    },
+    {
+      "slug": "2011-02-02",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 1370512,
+        "sha256": "7c8e0d2342c27aa079ead16961d0c3a0ccca27e46e8fee2ee458087805965600",
+        "pages": 6
+      },
+      "variant_note_es": "Se adopta la copia de seis páginas con secuencia coherente; otras dos variantes quedan identificadas.",
+      "variant_note_en": "The coherent six-page sequence is used; two other variants remain identified.",
+      "additional_variants": [
+        {
+          "filename": "2011-02-02-variant-2136388.pdf",
+          "bytes": 2136388,
+          "sha256": "bf85e363335c3eed9f64a2689161728ffa2b320e13c5f10d65b08bf315256b60",
+          "pages": 6,
+          "relationship_es": "Escaneo alternativo de seis páginas.",
+          "relationship_en": "Alternate six-page scan."
+        },
+        {
+          "filename": "7. ACTA 02 FEB 2011.pdf",
+          "bytes": 3018487,
+          "sha256": "612a9b835ff63f501592734212dd5569350ed6b6d7f5a705ba06bc73f311b195",
+          "pages": 6,
+          "relationship_es": "Copia transmitida de seis páginas con orden de páginas distinto; se conserva como variante, no como sustituto silencioso.",
+          "relationship_en": "Transmitted six-page copy with a different page order; retained as a variant, not silently substituted."
+        }
+      ]
+    },
+    {
+      "slug": "2011-06-22",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 4549723,
+        "sha256": "299b86730ec9703649ae8269adb60098a11dcf48bee570978769317f4afbf21c",
+        "pages": 16
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": [
+        {
+          "filename": "2011-06-22-variant-4551801.pdf",
+          "bytes": 4551801,
+          "sha256": "2e30ad64047b10a79d12de9c5eee0202f31e9b0c14ed26de14e57767d21c896a",
+          "pages": 16,
+          "relationship_es": "Binario distinto, páginas renderizadas equivalentes a la copia controlante.",
+          "relationship_en": "Different binary, rendered pages equivalent to the controlling copy."
+        },
+        {
+          "filename": "2011-06-22-variant-2750336.pdf",
+          "bytes": 2750336,
+          "sha256": "037ad9b32d0f04941187c385fd662766b7a80b2c22983283d880f08c18913f2c",
+          "pages": 16,
+          "relationship_es": "Variante de dieciséis páginas con orden y anotaciones diferentes.",
+          "relationship_en": "Sixteen-page variant with different order and annotations."
+        }
+      ]
+    },
+    {
+      "slug": "2012-08-10",
+      "controlling_copy": {
+        "filename": "ACTA nativa DOCX de cuatro páginas",
+        "bytes": 24597,
+        "sha256": "b978bd03ca4a8138f9d1a704cb4717f9cbfb1a090632b6f7dbb33c25b9c4871d",
+        "pages": 4
+      },
+      "variant_note_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación; siguen sin localizarse el escrito del presidente y la objeción anunciados como anexos.",
+      "variant_note_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote; the president's statement and announced objection annex remain unlocated.",
+      "additional_variants": [
+        {
+          "filename": "2012-08-10-drive-source.pdf",
+          "bytes": 345778,
+          "sha256": "d9ee034878d352efdb5a5bccd63d6f4f84f9a77f840cc993741dcf9046806705",
+          "pages": 5,
+          "relationship_es": "Intervención/declaración de cinco páginas; fuente relacionada, no sustituto del ACTA.",
+          "relationship_en": "Five-page speech/statement; related source, not a substitute for the ACTA."
+        },
+        {
+          "filename": "20120809194034781_0001.pdf",
+          "bytes": 41809,
+          "sha256": "0e96dc1fe776766bad737a8172db258740f795cf83c5d344650365711ed5d981",
+          "pages": 1,
+          "relationship_es": "Poder de una página asociado a la convocatoria; documento separado.",
+          "relationship_en": "One-page proxy associated with the notice; separate document."
+        }
+      ]
+    },
+    {
+      "slug": "2014-08-28-cexp",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 104006,
+        "sha256": "e0b9c621ff560bf714b79d225f943a74f3b5b7bb83929b1d07725ded78952ac5",
+        "pages": 3
+      },
+      "variant_note_es": "Instrumento CEXP de tres páginas; no es un acta de la Comunidad de Propietarios.",
+      "variant_note_en": "Three-page CEXP instrument; it is not Owners' Community minutes.",
+      "additional_variants": [
+        {
+          "filename": "2014-08-28-cexp-source.pdf",
+          "bytes": 90821,
+          "sha256": "51d3a15dcfe1ed227e52b60c8926932cef1350b6a9f454f457e7c627ba02c326",
+          "pages": 3,
+          "relationship_es": "Segunda conversión PDF del mismo instrumento CEXP.",
+          "relationship_en": "Second PDF conversion of the same CEXP instrument."
+        }
+      ]
+    },
+    {
+      "slug": "2014-08-28-cp",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 212122,
+        "sha256": "4bbeb687681d48cb20c7ae7b9a331b071a6802e0bafb6bd999ccf48c97c739f2",
+        "pages": 21
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": []
+    },
+    {
+      "slug": "2015-11-19",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 15552345,
+        "sha256": "d67f88c7243e84e1ceb89ecd0ef14dd4c199449d9fc6053282ddb7fc14b49c65",
+        "pages": 38
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": [
+        {
+          "filename": "2015-11-19-request-source.pdf",
+          "bytes": 16880851,
+          "sha256": "a9d926553304d4efffeb1070e72728a3b8f37cd67d7f27a5540ec333b0f20a73",
+          "pages": 38,
+          "relationship_es": "Misma familia de 38 páginas con anotaciones manuscritas; no se sustituye por la copia limpia.",
+          "relationship_en": "Same 38-page family with handwritten annotations; not silently substituted for the clean copy."
+        },
+        {
+          "filename": "DOCS-#9481385-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015.PDF",
+          "bytes": 922046,
+          "sha256": "69fd5cb5ab6cdc845eb60b6305a9c3a6260b860220116ac1f35a6b40b5248406",
+          "pages": 4,
+          "relationship_es": "Extracto procesal de cuatro páginas; documento separado.",
+          "relationship_en": "Four-page procedural extract; separate document."
+        },
+        {
+          "filename": "DOCS-#9481468-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015_-_Bandama.PDF",
+          "bytes": 928338,
+          "sha256": "e8d063655b354d80e109be2188f97710b8d08de0d76cc925ebd0bd0729cbace2",
+          "pages": 4,
+          "relationship_es": "Segundo extracto procesal de cuatro páginas; documento separado.",
+          "relationship_en": "Second four-page procedural extract; separate document."
+        }
+      ]
+    },
+    {
+      "slug": "2016-04-26",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 27329507,
+        "sha256": "68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec",
+        "pages": 77
+      },
+      "variant_note_es": "La familia controlante contiene 77 páginas. Sus dos binarios son visual y textualmente equivalentes; los paquetes de 24, 47 y 50 páginas son parciales. Las páginas 14-77 son anexos reservados íntegramente en la copia pública.",
+      "variant_note_en": "The controlling family contains 77 pages. Its two binaries are visually and textually equivalent; the 24-, 47- and 50-page packages are partial. Pages 14-77 are annexes wholly withheld in the public copy.",
+      "additional_variants": [
+        {
+          "filename": "2016-04-26-77p-family-b.pdf",
+          "bytes": 27376529,
+          "sha256": "549dae8c527062789a2aed31e7e5c6a8e795ffef1ba73a3080cf93f2f25ee411",
+          "pages": 77,
+          "relationship_es": "Binario distinto de 77 páginas, equivalente página a página en render y texto extraído.",
+          "relationship_en": "Different 77-page binary, page-by-page equivalent in rendering and extracted text."
+        },
+        {
+          "filename": "ACTA 2016 - 26 ABR.pdf",
+          "bytes": 15647958,
+          "sha256": "c6f7b841da14628b284ce6ea55eaaecb0169250f29b508c4dc4f6bdd898382b3",
+          "pages": 50,
+          "relationship_es": "Paquete parcial de 50 páginas.",
+          "relationship_en": "Partial 50-page package."
+        },
+        {
+          "filename": "Acta Junta Abril 2016.pdf",
+          "bytes": 11116875,
+          "sha256": "03d0ff3516570dff1c1d9bd468ec25cc94a3acf0a73ebeb5ef6470e32fcf0b01",
+          "pages": 47,
+          "relationship_es": "Paquete parcial de 47 páginas.",
+          "relationship_en": "Partial 47-page package."
+        },
+        {
+          "filename": "2016-04-26-24p-drive.pdf",
+          "bytes": 13849921,
+          "sha256": "d084dfe4adddbb1ea67cfd7e14edddfda1f95986690114e096de4d137df52a61",
+          "pages": 24,
+          "relationship_es": "Paquete parcial de 24 páginas usado por la edición pública anterior.",
+          "relationship_en": "Partial 24-page package used by the earlier public edition."
+        },
+        {
+          "filename": "CONVOCATORIA ABRIL 2016.pdf",
+          "bytes": 775653,
+          "sha256": "764e7b63a8507c4ca942032b39ee7838c4f3b32dedae1fd0161f093784a09bb9",
+          "pages": 2,
+          "relationship_es": "Convocatoria separada de dos páginas.",
+          "relationship_en": "Separate two-page notice."
+        }
+      ]
+    },
+    {
+      "slug": "2017-04-07-cexp",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 84535,
+        "sha256": "da872ab6f5d4dd810342a3d24772e9bce42db37572f82afb2c743fd44b3f7f23",
+        "pages": 2
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": []
+    },
+    {
+      "slug": "2017-06-12",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 20197835,
+        "sha256": "6fa45194f642aee51228a6a7d78bc4a7ae9386930eb831e0606712ba24a5694d",
+        "pages": 13
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": []
+    },
+    {
+      "slug": "2018-05-18",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 4004030,
+        "sha256": "15466aae53413c686c5e0a53b37007b174a2cb7fe9e55a8a7e3e8180b218e961",
+        "pages": 9
+      },
+      "variant_note_es": "Copia de nueve páginas autenticada por el archivo ACTAS.zip; las variantes de ocho páginas son parciales.",
+      "variant_note_en": "Nine-page copy authenticated through ACTAS.zip; the eight-page variants are partial.",
+      "additional_variants": [
+        {
+          "filename": "2018-05-18-package.pdf",
+          "bytes": 3164526,
+          "sha256": "a903182722f729e62c009f138af6945be2525021ddfbdbf0809f03331f135d95",
+          "pages": 9,
+          "relationship_es": "Segunda conversión/paquete de nueve páginas.",
+          "relationship_en": "Second nine-page conversion/package."
+        },
+        {
+          "filename": "2018-05-18-source.pdf",
+          "bytes": 586113,
+          "sha256": "2a91b321f801edf38599224473b5909f96743d51d8aaa8b9f94d104dcaaa2bc3",
+          "pages": 8,
+          "relationship_es": "Variante parcial de ocho páginas con texto extraíble.",
+          "relationship_en": "Partial eight-page variant with extractable text."
+        },
+        {
+          "filename": "2018-05-18-alt.pdf",
+          "bytes": 761953,
+          "sha256": "ce7c1dee0470f620c3f335ee90866b5e546745971678ce7b0d3c0c18c0d3f72d",
+          "pages": 8,
+          "relationship_es": "Variante parcial alternativa de ocho páginas.",
+          "relationship_en": "Alternate partial eight-page variant."
+        }
+      ]
+    },
+    {
+      "slug": "2018-07-05",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 632354,
+        "sha256": "c7c31a13ab1d0fece4147a08f4467d8ee8f12c00f31dde121c2b3a416135f4f2",
+        "pages": 9
+      },
+      "variant_note_es": "Copia exacta de nueve páginas recuperada de ACTAS.zip; el segundo binario renderiza idénticamente.",
+      "variant_note_en": "Exact nine-page copy recovered from ACTAS.zip; the second binary renders identically.",
+      "additional_variants": [
+        {
+          "filename": "2018-07-05-variant-b.pdf",
+          "bytes": 627779,
+          "sha256": "3b718d66d379c1649433af42aac7afce0677292f911f1c5b485fc33561fe9ce1",
+          "pages": 9,
+          "relationship_es": "Binario distinto; las nueve páginas renderizan de forma idéntica.",
+          "relationship_en": "Different binary; all nine pages render identically."
+        },
+        {
+          "filename": "CONVOCATORIA SUN PARK 5-7-18.pdf",
+          "bytes": 249858,
+          "sha256": "2a31ed88e9f8d3d7c0b3528a25f23071e36cc081d9af0d172b54b25d464665ea",
+          "pages": 1,
+          "relationship_es": "Convocatoria separada de una página.",
+          "relationship_en": "Separate one-page notice."
+        }
+      ]
+    },
+    {
+      "slug": "2022-02-04",
+      "controlling_copy": {
+        "filename": "copia digital de trabajo",
+        "bytes": 3369527,
+        "sha256": "bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e",
+        "pages": 7
+      },
+      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+      "additional_variants": [
+        {
+          "filename": "ACTA de CDAD (reconocimiento coste arreglar daños 4.5mEUR) 04FEB2022.pdf",
+          "bytes": 3492026,
+          "sha256": "d13092e82da4197daad0e935a99c9e95d36fb2b8737a011237f8dd367fec82ed",
+          "pages": 7,
+          "relationship_es": "Binario alternativo de siete páginas con resaltados visibles.",
+          "relationship_en": "Alternate seven-page binary with visible highlighting."
+        }
+      ]
+    }
+  ],
+  "known_unlocated_sources": [
+    {
+      "date": "2012-08-10",
+      "description_es": "Escrito del presidente y objeción anunciados como anexos del ACTA.",
+      "description_en": "President's statement and objection announced as annexes to the minutes."
+    },
+    {
+      "date": "2018-11-20",
+      "description_es": "ACTA mencionada posteriormente en 2022; original autónomo no localizado.",
+      "description_en": "Minutes later recited in 2022; standalone original not located."
+    }
+  ]
+}

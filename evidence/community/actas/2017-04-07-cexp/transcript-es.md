@@ -1,23 +1,20 @@
 # Junta General de la Comunidad de Explotación - 7 abril 2017
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2017-04-07-CEXP`
-- Fecha de reunión atribuida: `2017-04-07`
-- Órgano: Comunidad de Explotación (CEXP)
-- Copia utilizada: `ACTA Comunidad de Explotación (CEXP) - 2017-04-07.pdf`
+- Fecha atribuida: `2017-04-07`
+- Órgano: CEXP
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 2
-- SHA-256 de la copia privada utilizada: `e2612c11bb243893492b4a490c37ccdada270a8400d5764e8e309a674c95736f`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `da872ab6f5d4dd810342a3d24772e9bce42db37572f82afb2c743fd44b3f7f23`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Exportación PDF de dos páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 2
 

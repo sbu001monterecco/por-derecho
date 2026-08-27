@@ -1,23 +1,26 @@
-# Registro de redacciones - SP-ACTA-2009-05-28
+# Registro de redacciones - 2009-05-28
 
-## Regla de publicación
+La fuente privada no se altera. La copia pública es rasterizada y todas las redacciones están quemadas; no existe capa de texto oculta en el facsímil.
 
-Se conserva la posición de cada página fuente, sustituyendo mediante marcadores expresos las capas no aptas para publicación. La edición pública no reconstruye firmas, listados nominales, domicilios, datos de contacto, identificadores, datos bancarios ni tablas privadas por propietario, finca, deuda o voto.
-
-## Categorías aplicadas
-
-- `bloque-nominal-o-deuda`
-- `finca-individual`
-- `identificador-contacto-domicilio`
-- `nombre-personal`
-- `relacion-nominal-finca-deuda-voto-firma`
+| Página fuente | Alcance | Motivo |
+|---:|---|---|
+| 1 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 2 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 3 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 4 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 5 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 6 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 7 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 8 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 9 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 10 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 11 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 12 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 13 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
 
 ## Control de calidad
 
-- OCR o extracción no certificado: `true`
-- Cotejo manual línea por línea: `false`
-- Texto público completo: `false`
-- Facsímil público de fuente: `false`
-- Imágenes públicas de páginas fuente: `false`
-
-Una redacción puede abarcar una página completa cuando separar texto sustantivo de datos privados no puede hacerse con seguridad a partir de la copia de trabajo.
+- Todas las páginas de la copia fuente están contabilizadas: `true`
+- Facsímil raster sin texto oculto: `true`
+- OCR certificado línea por línea: `false`
+- Fuente privada publicada: `false`

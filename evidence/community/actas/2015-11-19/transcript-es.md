@@ -1,21 +1,20 @@
 # Junta General Extraordinaria de la Comunidad - 19 noviembre 2015
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2015-11-19`
-- Fecha de reunión atribuida: `2015-11-19`
+- Fecha atribuida: `2015-11-19`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA JUNTA EXTRAORDINARIA NOV-15.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 38
-- SHA-256 de la copia privada utilizada: `d67f88c7243e84e1ceb89ecd0ef14dd4c199449d9fc6053282ddb7fc14b49c65`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `d67f88c7243e84e1ceb89ecd0ef14dd4c199449d9fc6053282ddb7fc14b49c65`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Conserva todas las páginas de la copia utilizada, pero reemplaza mediante marcadores explícitos los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, tablas privadas por propietario/finca/deuda y material potencialmente privilegiado o reservado.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-**Control de variante:** Copia local de 38 páginas. El correo de procedencia enumera dos variantes DOCS diferentes; su relación con esta copia no está resuelta.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 38
 

@@ -1,73 +1,88 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "SP-ACTA-2008-07-15",
   "slug": "2008-07-15",
   "date": "2008-07-15",
   "body": "Comunidad de Propietarios",
   "meeting_type": "extraordinary",
   "language": "es",
-  "status": "located-package-partial",
+  "status": "located-package-digitised-public",
   "complete_public_text": false,
   "privacy_level": "public-redacted",
-  "artifact_kind": "public-redacted-text-edition",
-  "redacted_facsimile_available": false,
-  "source_page_images_available": false,
-  "native_page_count": null,
-  "native_page_count_status": "not-established-from-certified-native",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "native_page_count": 9,
+  "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 9,
   "public_pdf_page_count": 10,
   "source": {
-    "filename": "ACTA Comunidad de Propietarios - 2008-07-15.pdf",
-    "pages": 9,
+    "filename": "copia digital de trabajo",
     "bytes": 5747820,
     "sha256": "613a1e4980b000c1ff7fac634da065837499b71f8bb215d976fe39c9029e6aa5",
-    "variant_note_es": "Copia de trabajo de nueve páginas recuperada de un adjunto de correo. Existe una variante Drive de seis páginas no reconciliada. OCR no certificado y sin cotejo manual línea por línea.",
-    "variant_note_en": "Nine-page working copy recovered from an email attachment. A separate six-page Drive variant has not been reconciled. OCR is not certified and has not been manually checked line by line.",
-    "additional_known_variants": [
-      {
-        "pages": 6,
-        "sha256": "e031e53a8003aa7ce1638af9d220295952a666af19f294af8a04d0609eb77cd1",
-        "note": "Separate Drive working variant; relationship unresolved."
-      }
-    ],
-    "native_publication": false
+    "pages": 9,
+    "variant_note_es": "Copia de nueve páginas recuperada de una transmisión posterior; la variante de seis páginas es parcial.",
+    "variant_note_en": "Nine-page copy recovered from a later transmission; the six-page variant is partial.",
+    "native_publication": false,
+    "variants_recorded": 1
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2008-07-15/transcript-es.md",
     "provenance": "evidence/community/actas/2008-07-15/provenance.md",
     "redaction_log": "evidence/community/actas/2008-07-15/redaction-log.md",
     "pdf": "assets/docs/community-actas/2008-07-15-public-redacted-es.pdf",
-    "pdf_sha256": "3498c64f9b63c4f5f2a8a522f6fc1cc9f2b0d1a9eca5c20caefe5318874e48bc",
+    "pdf_sha256": "b8f62d51ae826853393290fed548187cd8040c7a1943040c5a8a206554b82e6d",
     "pdf_pages": 10,
     "preview_pages": [
-      "assets/evidence/community-actas/2008-07-15/page-001.webp",
-      "assets/evidence/community-actas/2008-07-15/page-002.webp",
-      "assets/evidence/community-actas/2008-07-15/page-003.webp",
-      "assets/evidence/community-actas/2008-07-15/page-004.webp",
-      "assets/evidence/community-actas/2008-07-15/page-005.webp",
-      "assets/evidence/community-actas/2008-07-15/page-006.webp",
-      "assets/evidence/community-actas/2008-07-15/page-007.webp",
-      "assets/evidence/community-actas/2008-07-15/page-008.webp",
-      "assets/evidence/community-actas/2008-07-15/page-009.webp",
-      "assets/evidence/community-actas/2008-07-15/page-010.webp"
+      "assets/evidence/community-actas/2008-07-15/page-001.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-002.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-003.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-004.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-005.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-006.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-007.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-008.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-009.jpg",
+      "assets/evidence/community-actas/2008-07-15/page-010.jpg"
     ],
-    "preview_count": 10
+    "preview_count": 10,
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2008-07-15-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "76e136eecc910d738918225040529abcb5eb6319860223df128307f606a931f4",
+    "redacted_source_facsimile_pages": 9,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2008-07-15/page-001.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-002.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-003.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-004.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-005.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-006.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-007.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-008.jpg",
+      "assets/evidence/community-actas-source/2008-07-15/page-009.jpg"
+    ],
+    "source_preview_count": 9
   },
   "quality_control": {
     "source_page_count_verified": true,
     "pdf_reopened": true,
     "all_pdf_pages_rendered": true,
-    "privacy_scan": "pass",
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
     "ocr_not_certified": true,
     "manual_source_line_verification": false,
-    "visual_pdf_sample_review": false
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false
   },
   "redaction_categories": [
-    "bloque-nominal-o-deuda",
-    "firma-sello",
-    "identificador-contacto-domicilio",
-    "nombre-personal",
-    "relacion-nominal-finca-deuda-voto-firma"
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
   ],
-  "created": "2026-08-23"
+  "created": "2026-08-27",
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false
 }

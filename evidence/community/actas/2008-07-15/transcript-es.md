@@ -1,23 +1,20 @@
 # Junta General Extraordinaria de la Comunidad - 15 julio 2008
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2008-07-15`
-- Fecha de reunión atribuida: `2008-07-15`
+- Fecha atribuida: `2008-07-15`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2008-07-15.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 9
-- SHA-256 de la copia privada utilizada: `613a1e4980b000c1ff7fac634da065837499b71f8bb215d976fe39c9029e6aa5`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `613a1e4980b000c1ff7fac634da065837499b71f8bb215d976fe39c9029e6aa5`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Copia de trabajo de nueve páginas recuperada de un adjunto de correo. Existe una variante Drive de seis páginas no reconciliada. OCR no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Copia de nueve páginas recuperada de una transmisión posterior; la variante de seis páginas es parcial.
 
 ## Página fuente 1 de 9
 

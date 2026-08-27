@@ -1,21 +1,20 @@
 # Junta General Extraordinaria de la Comunidad - 22 junio 2011
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2011-06-22`
-- Fecha de reunión atribuida: `2011-06-22`
+- Fecha atribuida: `2011-06-22`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `7. ACTA 22 JUN 2011.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 16
-- SHA-256 de la copia privada utilizada: `299b86730ec9703649ae8269adb60098a11dcf48bee570978769317f4afbf21c`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `299b86730ec9703649ae8269adb60098a11dcf48bee570978769317f4afbf21c`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Conserva todas las páginas de la copia utilizada, pero reemplaza mediante marcadores explícitos los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, tablas privadas por propietario/finca/deuda y material potencialmente privilegiado o reservado.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-**Control de variante:** Esta edición parte de la copia de 4.549.723 bytes. No se ha reconciliado byte a byte con la copia Drive de 4.551.801 bytes ni con otra derivada PDF24 localizada.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 16
 

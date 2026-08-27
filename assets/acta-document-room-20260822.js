@@ -22,6 +22,7 @@
     en: {
       status: {
         'located-package-complete-public': 'Complete public-safe package',
+        'located-package-digitised-public': 'Located copy digitised and posted',
         'located-package-partial': 'Located · public package partial',
         'referenced-original-not-located': 'Referenced · original not located',
         'no-acta-located': 'No ACTA located',
@@ -31,7 +32,16 @@
       availability: { transcript: 'Public-safe text', pdf: 'Text-edition PDF', images: 'Rendered edition pages', facsimile: 'Redacted source facsimile', sourceImages: 'Redacted source-page images', integrity: 'Integrity record', sourcePages: 'Received source', publicPages: 'Public text edition' },
       available: 'Available', pending: 'Pending', pages: n => `${n} page${n === 1 ? '' : 's'}`,
       verificationPending: 'Available · line verification pending',
-      actions: { source: 'Source-language transcript', translation: 'English reading', pdf: 'Public text-edition PDF', manifest: 'Integrity manifest', provenance: 'Source provenance', redactions: 'Redaction log', previews: 'Show rendered edition pages', hide: 'Hide rendered edition pages' },
+      actions: { detail: 'Open complete event page', source: 'Source-language transcript', translation: 'English reading', pdf: 'Public text-edition PDF', facsimile: 'Redacted source facsimile', manifest: 'Integrity manifest', provenance: 'Source provenance', redactions: 'Redaction log', previews: 'Show rendered edition pages', sourcePreviews: 'Show redacted source pages', hide: 'Hide pages' },
+      perimeter: {
+        pre_sale_montelanza: 'Montelanza · pre-sale',
+        project_lpb_aweswell_gil: 'Project · Multimatrix/LPB → Aweswell/LPB–Gil',
+        adverse_montelanza_molina: 'Alleged adverse · Montelanza/Molina–Pamanil',
+        adverse_acosta_matos: 'Alleged adverse · Acosta Matos/CAM',
+        mixed_or_contested: 'Mixed or contested',
+        unresolved: 'Unresolved'
+      },
+      attributionBoundary: 'Documentary/editorial lane—not a finding of validity, joint conduct, fraud or guilt.',
       shown: (shown, total) => `${shown} of ${total} records shown`,
       empty: 'No record matches this search and filter.',
       image: (title, page) => `${title}, rendered page ${page} of the public-safe text edition`,
@@ -42,6 +52,7 @@
     es: {
       status: {
         'located-package-complete-public': 'Paquete público seguro completo',
+        'located-package-digitised-public': 'Copia localizada digitalizada y publicada',
         'located-package-partial': 'Localizada · paquete público parcial',
         'referenced-original-not-located': 'Referenciada · original no localizado',
         'no-acta-located': 'No se localizó ACTA',
@@ -51,7 +62,16 @@
       availability: { transcript: 'Texto público seguro', pdf: 'PDF de edición textual', images: 'Páginas de la edición textual', facsimile: 'Facsímil fuente expurgado', sourceImages: 'Imágenes fuente expurgadas', integrity: 'Registro de integridad', sourcePages: 'Fuente recibida', publicPages: 'Edición textual pública' },
       available: 'Disponible', pending: 'Pendiente', pages: n => `${n} página${n === 1 ? '' : 's'}`,
       verificationPending: 'Disponible · cotejo línea por línea pendiente',
-      actions: { source: 'Transcripción en lengua fuente', translation: 'Lectura en inglés', pdf: 'PDF de edición textual pública', manifest: 'Manifiesto de integridad', provenance: 'Procedencia de fuente', redactions: 'Registro de expurgación', previews: 'Mostrar páginas de la edición textual', hide: 'Ocultar páginas de la edición textual' },
+      actions: { detail: 'Abrir página completa del evento', source: 'Transcripción en lengua fuente', translation: 'Lectura en inglés', pdf: 'PDF de edición textual pública', facsimile: 'Facsímil fuente expurgado', manifest: 'Manifiesto de integridad', provenance: 'Procedencia de fuente', redactions: 'Registro de expurgación', previews: 'Mostrar páginas de la edición textual', sourcePreviews: 'Mostrar páginas fuente expurgadas', hide: 'Ocultar páginas' },
+      perimeter: {
+        pre_sale_montelanza: 'Montelanza · pre-venta',
+        project_lpb_aweswell_gil: 'Proyecto · Multimatrix/LPB → Aweswell/LPB–Gil',
+        adverse_montelanza_molina: 'Adverso alegado · Montelanza/Molina–Pamanil',
+        adverse_acosta_matos: 'Adverso alegado · Acosta Matos/CAM',
+        mixed_or_contested: 'Mixto o controvertido',
+        unresolved: 'No resuelto'
+      },
+      attributionBoundary: 'Carril documental/editorial; no es hallazgo de validez, actuación conjunta, fraude o culpabilidad.',
       shown: (shown, total) => `${shown} de ${total} registros visibles`,
       empty: 'Ningún registro coincide con la búsqueda y el filtro.',
       image: (title, page) => `${title}, página ${page} de la edición textual pública segura`,
@@ -83,9 +103,9 @@
     ['SP-ACTA-2011-06-22', '2011-06-22', 'owners', 'located-package-partial', '22 June 2011', '22 junio 2011',
       'Located 16-page source. The earlier public material is a structured redacted digest, not a complete line-by-line transcription; byte variants and the full publication package remain under reconciliation.',
       'Fuente de 16 páginas localizada. El material público anterior es una síntesis estructurada y expurgada, no una transcripción íntegra línea por línea; siguen conciliándose variantes y el paquete completo.'],
-    ['SP-ACTA-2012-08-10', '2012-08-10', 'reference', 'referenced-original-not-located', '10 August 2012 · ACTA not located', '10 agosto 2012 · ACTA no localizada',
-      'A contemporaneous meeting statement/speech, notice and related communications are located; no signed ACTA has been located. Those non-ACTA sources cannot substitute for minutes.',
-      'Se localizaron una declaración/intervención contemporánea, convocatoria y comunicaciones relacionadas; no se localizó ACTA firmada. Esas fuentes no ACTA no sustituyen el acta.'],
+    ['SP-ACTA-2012-08-10', '2012-08-10', 'reference', 'located-package-partial', '10 August 2012 · located ACTA copy', '10 agosto 2012 · copia ACTA localizada',
+      'A four-page native DOCX ACTA and a related five-page PDF family are now located. The ACTA records that no resolution was put to a vote. Its referenced president statement and objection annexes remain unlocated.',
+      'Se han localizado un ACTA DOCX nativa de cuatro páginas y una familia PDF relacionada de cinco páginas. El ACTA consigna que no se sometió acuerdo a votación. Siguen sin localizarse sus anexos referenciados de declaración y objeción de presidencia.'],
     ['SP-ACTA-2014-04-10', '2014-04-10', 'owners', 'located-package-partial', '10 April 2014', '10 abril 2014',
       'Contested notarial Community record; public-safe image/text package and later procedural reconciliation remain open.',
       'Registro notarial comunitario controvertido; quedan abiertos el paquete público seguro y la conciliación procesal posterior.'],
@@ -99,8 +119,8 @@
       'Located 38-page source family. Two named variants remain unresolved; any public edition must preserve that qualification.',
       'Familia fuente de 38 páginas localizada. Persisten dos variantes nominales sin conciliar; la edición pública debe reflejarlo.'],
     ['SP-ACTA-2016-04-26', '2016-04-26', 'owners', 'located-package-partial', '26 April 2016', '26 abril 2016',
-      'Two Drive aliases of the 77-page master are now binary-reconciled as identical. A separate 24-page public text/source set and the complete public-package controls still require reconciliation.',
-      'Dos alias de Drive del máster de 77 páginas ya están conciliados como binariamente idénticos. El conjunto público fuente/texto de 24 páginas y los controles del paquete íntegro siguen por conciliar.'],
+      'The controlling 77-page family is digitised. Two distinct 77-page binaries are render- and text-equivalent; 24-, 47- and 50-page packages remain separately identified as partial variants.',
+      'La familia de control de 77 páginas está digitalizada. Dos binarios distintos de 77 páginas son equivalentes en renderizado y texto; los paquetes de 24, 47 y 50 páginas permanecen identificados por separado como variantes parciales.'],
     ['SP-MEETING-2016-06-11', '2016-06-11', 'event', 'non-acta-event', '11 June 2016 · Las Palmas working meeting', '11 junio 2016 · reunión de trabajo en Las Palmas',
       'Recorded working meeting. It is not an Owners’ Community or CEXP ACTA and must not be inserted into either minutes book.',
       'Reunión de trabajo grabada. No es ACTA de la Comunidad ni de CEXP y no debe incorporarse a ninguno de esos libros.'],
@@ -114,8 +134,8 @@
       'The located copy reports 86.715% represented and presents 0.385% as vote-qualified. The 0.385% remains a source-recorded figure, not independently verified ownership arithmetic; titles, proxies and denominator still require finca-by-finca reconciliation.',
       'La copia localizada consigna 86,715% representado y presenta 0,385% con voto. El 0,385% sigue siendo una cifra del documento, no aritmética dominical verificada de forma independiente; faltan títulos, poderes y denominador finca por finca.'],
     ['SP-ACTA-2018-07-05', '2018-07-05', 'owners', 'located-package-partial', '5 July 2018', '5 julio 2018',
-      'A file attributed to the minutes is located; literal reading against the original, annexes and any audio remains pending.',
-      'Se localizó un fichero atribuido al acta; queda pendiente la lectura literal contra original, anexos y eventual audio.'],
+      'The located nine-page control copy is digitised and posted. A distinct binary variant is visually equivalent; manual line certification, annexes and any audio remain open.',
+      'La copia de control localizada de nueve páginas está digitalizada y publicada. Una variante binaria distinta es visualmente equivalente; siguen abiertos la certificación manual línea por línea, anexos y eventual audio.'],
     ['SP-RECITAL-2018-11-20', '2018-11-20', 'reference', 'referenced-original-not-located', '20 November 2018 · later recital', '20 noviembre 2018 · mención posterior',
       'The 2022 minutes refer to this meeting. That later recital does not substitute for the unlocated original minutes.',
       'El acta de 2022 menciona esta junta. Esa referencia posterior no sustituye el original no localizado.'],
@@ -129,7 +149,7 @@
   }));
 
   const allowedStates = new Set([
-    'located-package-complete-public', 'located-package-partial',
+    'located-package-complete-public', 'located-package-digitised-public', 'located-package-partial',
     'referenced-original-not-located', 'no-acta-located', 'non-acta-event'
   ]);
 
@@ -162,13 +182,21 @@
       transcript_es: incoming.transcript_es || incoming.transcript_path || publicArtifacts.transcript_es || base.transcript_es,
       transcript_en: incoming.transcript_en || base.transcript_en,
       public_pdf: incoming.public_pdf || incoming.public_pdf_path || publicArtifacts.pdf || base.public_pdf,
+      redacted_source_facsimile: incoming.redacted_source_facsimile || publicArtifacts.redacted_source_facsimile || base.redacted_source_facsimile,
       manifest: incoming.manifest || incoming.manifest_path || base.manifest,
       provenance: incoming.provenance || incoming.provenance_path || publicArtifacts.provenance || base.provenance,
       redaction_log: incoming.redaction_log || incoming.redaction_log_path || publicArtifacts.redaction_log || base.redaction_log,
       source_page_count: incoming.source_variant_page_count || incoming.source_pages || incoming.source_page_count || incoming.page_count || base.source_page_count,
       page_count: previewCount || incoming.page_count || base.page_count,
       preview_pages: Array.isArray(previews) ? previews : [],
+      source_preview_pages: Array.isArray(incoming.source_preview_pages || publicArtifacts.source_preview_pages) ? (incoming.source_preview_pages || publicArtifacts.source_preview_pages) : [],
       source_sha256: incoming.source_sha256 || incoming.source_hash_sha256 || (incoming.source && incoming.source.sha256) || base.source_sha256,
+      detail_page_es: incoming.detail_page_es || base.detail_page_es,
+      detail_page_en: incoming.detail_page_en || base.detail_page_en,
+      perimeter: incoming.perimeter || base.perimeter || 'unresolved',
+      attribution_status: incoming.attribution_status || base.attribution_status,
+      phase_es: incoming.phase_es || base.phase_es,
+      phase_en: incoming.phase_en || base.phase_en,
       complete_public_text: incoming.complete_public_text === true,
       status: allowedStates.has(incoming.status) ? incoming.status : (base.status || 'located-package-partial')
     };
@@ -184,9 +212,18 @@
 
   const textFor = (event, key) => event[`${key}_${locale}`] || event[key] || event[`${key}_es`] || event[`${key}_en`] || '';
   const previewList = event => Array.isArray(event.preview_pages) ? event.preview_pages.filter(page => typeof page === 'string' || (page && typeof page.url === 'string')) : [];
+  const sourcePreviewList = event => Array.isArray(event.source_preview_pages) ? event.source_preview_pages.filter(page => typeof page === 'string' || (page && typeof page.url === 'string')) : [];
 
   function gatedState(event) {
     const requested = allowedStates.has(event.status) ? event.status : 'located-package-partial';
+    if (requested === 'located-package-digitised-public') {
+      const sourcePreviews = sourcePreviewList(event);
+      const sourcePageCount = Number(event.source_page_count || event.source_variant_page_count);
+      const coherentSourcePages = Number.isInteger(sourcePageCount) && sourcePageCount > 0 && sourcePreviews.length === sourcePageCount;
+      const digitised = event.digitisation_complete_for_located_copy === true && Boolean(event.transcript_source || event.transcript_es || event.transcript);
+      const facsimile = event.redacted_facsimile_available === true && Boolean(safeUrl(event.redacted_source_facsimile));
+      return digitised && facsimile && event.source_page_images_available === true && coherentSourcePages ? requested : 'located-package-partial';
+    }
     if (requested !== 'located-package-complete-public') return requested;
     const previews = previewList(event);
     const pageCount = Number(event.page_count);
@@ -199,6 +236,7 @@
 
   function statusClass(state) {
     if (state === 'located-package-complete-public') return 'complete';
+    if (state === 'located-package-digitised-public') return 'complete';
     if (state === 'located-package-partial') return 'partial';
     if (state === 'non-acta-event') return 'event';
     return 'missing';
@@ -229,7 +267,8 @@
     const article = element('article', 'acta-record');
     article.dataset.state = state;
     article.dataset.body = event.body || 'owners';
-    article.dataset.search = [event.id, event.date, textFor(event, 'title'), textFor(event, 'notes'), copy.body[event.body]].join(' ').toLowerCase();
+    article.dataset.perimeter = event.perimeter || 'unresolved';
+    article.dataset.search = [event.id, event.date, textFor(event, 'title'), textFor(event, 'notes'), textFor(event, 'phase'), copy.body[event.body], copy.perimeter[event.perimeter]].join(' ').toLowerCase();
 
     const head = element('header', 'acta-record-head');
     const heading = element('div');
@@ -242,20 +281,32 @@
 
     const body = element('div', 'acta-record-body');
     const narrative = element('div');
+    const perimeter = element('div', 'acta-perimeter-ribbon');
+    perimeter.dataset.perimeter = event.perimeter || 'unresolved';
+    perimeter.append(
+      element('strong', '', copy.perimeter[event.perimeter] || copy.perimeter.unresolved),
+      element('span', '', textFor(event, 'phase') || copy.attributionBoundary)
+    );
+    narrative.append(perimeter);
     narrative.append(element('p', 'acta-record-summary', textFor(event, 'notes')));
 
+    const detailPage = safeUrl(locale === 'es' ? event.detail_page_es : event.detail_page_en);
     const sourceTranscript = safeUrl(event.transcript_source || event.transcript_es || event.transcript);
     const translation = safeUrl(event.transcript_en);
     const publicPdf = safeUrl(event.public_pdf);
+    const sourceFacsimile = safeUrl(event.redacted_source_facsimile);
     const manifest = safeUrl(event.manifest);
     const provenance = safeUrl(event.provenance);
     const redactionLog = safeUrl(event.redaction_log);
     const previews = previewList(event);
+    const sourcePreviews = sourcePreviewList(event);
     const pageCount = Number(event.page_count);
     const actions = element('div', 'acta-room-actions');
+    if (detailPage) actions.append(actionLink(copy.actions.detail, detailPage));
     if (sourceTranscript) actions.append(actionLink(copy.actions.source, sourceTranscript));
     if (locale === 'en' && translation && translation !== sourceTranscript) actions.append(actionLink(copy.actions.translation, translation, true));
     if (publicPdf) actions.append(actionLink(copy.actions.pdf, publicPdf, true));
+    if (sourceFacsimile) actions.append(actionLink(copy.actions.facsimile, sourceFacsimile, true));
     if (manifest) actions.append(actionLink(copy.actions.manifest, manifest, true));
     if (provenance) actions.append(actionLink(copy.actions.provenance, provenance, true));
     if (redactionLog) actions.append(actionLink(copy.actions.redactions, redactionLog, true));
@@ -268,8 +319,8 @@
       availabilityRow(copy.availability.transcript, transcriptStatus),
       availabilityRow(copy.availability.pdf, publicPdf ? copy.available : copy.pending),
       availabilityRow(copy.availability.images, previews.length ? copy.pages(previews.length) : copy.pending),
-      availabilityRow(copy.availability.facsimile, event.redacted_facsimile_available === true ? copy.available : copy.pending),
-      availabilityRow(copy.availability.sourceImages, event.source_page_images_available === true ? copy.available : copy.pending),
+      availabilityRow(copy.availability.facsimile, sourceFacsimile ? copy.available : copy.pending),
+      availabilityRow(copy.availability.sourceImages, sourcePreviews.length ? copy.pages(sourcePreviews.length) : copy.pending),
       availabilityRow(copy.availability.integrity, manifest || event.source_sha256 ? copy.available : copy.pending)
     );
     const sourcePageCount = Number(event.source_page_count);
@@ -315,6 +366,40 @@
       previewWrap.append(toggle, grid);
       article.append(previewWrap);
     }
+    if (sourcePreviews.length) {
+      const previewWrap = element('div', 'acta-preview-wrap');
+      const toggle = element('button', 'acta-room-toggle', copy.actions.sourcePreviews);
+      toggle.type = 'button';
+      toggle.setAttribute('aria-expanded', 'false');
+      const grid = element('div', 'acta-preview-grid');
+      grid.hidden = true;
+      const gridId = `source-previews-${String(event.id).toLowerCase().replace(/[^a-z0-9-]/g, '-')}`;
+      grid.id = gridId;
+      toggle.setAttribute('aria-controls', gridId);
+      sourcePreviews.forEach((item, index) => {
+        const rawUrl = typeof item === 'string' ? item : item.url;
+        const href = safeUrl(rawUrl);
+        if (!href) return;
+        const page = typeof item === 'object' && item.page ? item.page : index + 1;
+        const link = element('a', 'acta-preview');
+        link.href = href;
+        const image = document.createElement('img');
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.alt = `${textFor(event, 'title') || event.id}, ${copy.availability.sourceImages}, ${copy.page(page)}`;
+        image.src = href;
+        link.append(image, element('span', '', copy.page(page)));
+        grid.append(link);
+      });
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        toggle.textContent = expanded ? copy.actions.sourcePreviews : copy.actions.hide;
+        grid.hidden = expanded;
+      });
+      previewWrap.append(toggle, grid);
+      article.append(previewWrap);
+    }
     return article;
   }
 
@@ -325,12 +410,13 @@
     const selected = filter.value;
     const visible = events.filter(event => {
       const state = gatedState(event);
-      const haystack = [event.id, event.date, textFor(event, 'title'), textFor(event, 'notes'), copy.body[event.body]].join(' ').toLowerCase();
+      const haystack = [event.id, event.date, textFor(event, 'title'), textFor(event, 'notes'), textFor(event, 'phase'), copy.body[event.body], copy.perimeter[event.perimeter]].join(' ').toLowerCase();
       const matchesText = !needle || haystack.includes(needle);
       let matchesFilter = selected === 'all';
       if (selected === 'owners' || selected === 'cexp' || selected === 'event' || selected === 'reference') matchesFilter = event.body === selected;
-      if (selected === 'complete') matchesFilter = state === 'located-package-complete-public';
-      if (selected === 'open') matchesFilter = state !== 'located-package-complete-public';
+      if (selected.startsWith('perimeter:')) matchesFilter = event.perimeter === selected.slice('perimeter:'.length);
+      if (selected === 'complete') matchesFilter = state === 'located-package-complete-public' || state === 'located-package-digitised-public';
+      if (selected === 'open') matchesFilter = state !== 'located-package-complete-public' && state !== 'located-package-digitised-public';
       return matchesText && matchesFilter;
     });
 
@@ -341,9 +427,9 @@
 
     const states = events.map(gatedState);
     stats.total.textContent = String(events.length);
-    stats.complete.textContent = String(states.filter(state => state === 'located-package-complete-public').length);
+    stats.complete.textContent = String(states.filter(state => state === 'located-package-complete-public' || state === 'located-package-digitised-public').length);
     stats.partial.textContent = String(states.filter(state => state === 'located-package-partial').length);
-    stats.open.textContent = String(states.filter(state => state !== 'located-package-complete-public').length);
+    stats.open.textContent = String(states.filter(state => state !== 'located-package-complete-public' && state !== 'located-package-digitised-public').length);
   }
 
   search.addEventListener('input', render);

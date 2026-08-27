@@ -1,21 +1,18 @@
-# Procedencia - SP-ACTA-2014-08-28-CEXP
+# Procedencia pública - 2014-08-28-cexp
 
-## Identificación
+## Fuente de control
 
-- Fecha atribuida: `2014-08-28`
-- Órgano atribuido: Comunidad de Explotación (CEXP)
-- Nombre descriptivo de la copia: `ACTA Comunidad de Explotación (CEXP) - 2014-08-28.pdf`
-- Páginas de la variante utilizada: `3`
-- Tamaño: `90821` bytes
-- SHA-256: `a510106ec8c8a860ffff50575843139afffb5c2313d218edf99eb410ab56e3d2`
-- Estado: `located-package-partial`
+- Tipo: `PDF`
+- Páginas: `3`
+- Bytes: `104006`
+- SHA-256: `e0b9c621ff560bf714b79d225f943a74f3b5b7bb83929b1d07725ded78952ac5`
+- Custodia: fuente nativa preservada fuera del repositorio público.
+- Publicación: sólo texto OCR redactado, facsímil raster redactado e imágenes WEBP redactadas.
 
-## Cadena de publicación
+## Relación de variantes
 
-La fuente permanece en custodia privada. El repositorio publica únicamente una edición textual pública y redactada derivada de OCR o extracción. El PDF público y sus WEBP son representaciones de esa edición textual; **no son facsímiles ni imágenes de las páginas fuente**.
+- `51d3a15dcfe1ed227e52b60c8926932cef1350b6a9f454f457e7c627ba02c326` — Segunda conversión PDF del mismo instrumento CEXP.
 
 ## Límites
 
-Exportación PDF de tres páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.
-
-No se afirma autenticidad, certificación, integridad del libro de actas, identidad con otra variante ni exactitud pericial del OCR. El hash identifica solo la copia privada utilizada para esta derivación.
+El hash identifica los bytes recibidos, no acredita por sí solo un original oficial, una copia certificada, la validez de la junta ni una cadena de custodia forense ininterrumpida. El OCR no ha sido certificado línea por línea.

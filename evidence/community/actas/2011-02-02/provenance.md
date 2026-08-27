@@ -1,21 +1,19 @@
-# Procedencia - SP-ACTA-2011-02-02
+# Procedencia pública - 2011-02-02
 
-## Identificación
+## Fuente de control
 
-- Fecha atribuida: `2011-02-02`
-- Órgano atribuido: Comunidad de Propietarios
-- Nombre descriptivo de la copia: `ACTA Comunidad de Propietarios - 2011-02-02.pdf`
-- Páginas de la variante utilizada: `6`
-- Tamaño: `1370512` bytes
+- Tipo: `PDF`
+- Páginas: `6`
+- Bytes: `1370512`
 - SHA-256: `7c8e0d2342c27aa079ead16961d0c3a0ccca27e46e8fee2ee458087805965600`
-- Estado: `located-package-partial`
+- Custodia: fuente nativa preservada fuera del repositorio público.
+- Publicación: sólo texto OCR redactado, facsímil raster redactado e imágenes WEBP redactadas.
 
-## Cadena de publicación
+## Relación de variantes
 
-La fuente permanece en custodia privada. El repositorio publica únicamente una edición textual pública y redactada derivada de OCR o extracción. El PDF público y sus WEBP son representaciones de esa edición textual; **no son facsímiles ni imágenes de las páginas fuente**.
+- `bf85e363335c3eed9f64a2689161728ffa2b320e13c5f10d65b08bf315256b60` — Escaneo alternativo de seis páginas.
+- `612a9b835ff63f501592734212dd5569350ed6b6d7f5a705ba06bc73f311b195` — Copia transmitida de seis páginas con orden de páginas distinto; se conserva como variante, no como sustituto silencioso.
 
 ## Límites
 
-Copia Drive de seis páginas. Una página no aporta texto extraíble y otra contiene la relación nominal y representaciones. OCR o texto extraído no certificado y sin cotejo manual línea por línea.
-
-No se afirma autenticidad, certificación, integridad del libro de actas, identidad con otra variante ni exactitud pericial del OCR. El hash identifica solo la copia privada utilizada para esta derivación.
+El hash identifica los bytes recibidos, no acredita por sí solo un original oficial, una copia certificada, la validez de la junta ni una cadena de custodia forense ininterrumpida. El OCR no ha sido certificado línea por línea.

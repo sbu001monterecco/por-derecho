@@ -1,23 +1,20 @@
 # Junta General de la Comunidad de Explotación - 28 agosto 2014
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2014-08-28-CEXP`
-- Fecha de reunión atribuida: `2014-08-28`
-- Órgano: Comunidad de Explotación (CEXP)
-- Copia utilizada: `ACTA Comunidad de Explotación (CEXP) - 2014-08-28.pdf`
+- Fecha atribuida: `2014-08-28`
+- Órgano: CEXP
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 3
-- SHA-256 de la copia privada utilizada: `a510106ec8c8a860ffff50575843139afffb5c2313d218edf99eb410ab56e3d2`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `e0b9c621ff560bf714b79d225f943a74f3b5b7bb83929b1d07725ded78952ac5`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Exportación PDF de tres páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Instrumento CEXP de tres páginas; no es un acta de la Comunidad de Propietarios.
 
 ## Página fuente 1 de 3
 

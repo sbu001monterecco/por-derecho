@@ -1,23 +1,20 @@
 # Junta General Ordinaria de la Comunidad - 28 mayo 2009
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2009-05-28`
-- Fecha de reunión atribuida: `2009-05-28`
+- Fecha atribuida: `2009-05-28`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2009-05-28.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 13
-- SHA-256 de la copia privada utilizada: `1ec959c04c3b5f307eb6d2b5f96a7530fad8498f14fd89dbfb7ccf46a6ae9b1d`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `1ec959c04c3b5f307eb6d2b5f96a7530fad8498f14fd89dbfb7ccf46a6ae9b1d`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Copia de trabajo de trece páginas recuperada de un adjunto de correo. Se preservan acuerdos y partidas agregadas; se retiran anexos de deuda y reparto por propietario o finca. OCR no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 13
 

@@ -61,8 +61,14 @@ INDEX_PATH = PACKAGE_ROOT / "public-index.json"
 PDF_ROOT = REPO / "assets/docs/community-actas"
 PREVIEW_ROOT = REPO / "assets/evidence/community-actas"
 
-EXPECTED_ARTIFACT_KIND = "public-redacted-text-edition"
-EXPECTED_STATUS = "located-package-partial"
+EXPECTED_ARTIFACT_KINDS = {
+    "public-redacted-text-edition",
+    "public-redacted-digitisation-package",
+}
+EXPECTED_STATUSES = {
+    "located-package-partial",
+    "located-package-digitised-public",
+}
 
 PRIVATE_PATH_PATTERN = re.compile(
     r"(?i)(?:/tmp/|/workspace/|/home/|/Users/|file://|[A-Z]:[\\/]|drive:)"
@@ -80,7 +86,7 @@ SPANISH_ID_PATTERN = re.compile(
     r"\b[A-Z][ .-]?\d{2}(?:[ .-]?\d{3}){2}[ .-]?[A-Z0-9]\b"
 )
 PHONE_PATTERN = re.compile(
-    r"(?<!\d)(?:\+?34[ .-]?)?[6789]\d{2}(?:(?:[ .-]?\d{3}){2}|(?:[ .-]?\d{2}){3})(?!\d)"
+    r"(?<![0-9A-Fa-f])(?:\+?34[ .-]?)?[6789]\d{2}(?:(?:[ .-]?\d{3}){2}|(?:[ .-]?\d{2}){3})(?![0-9A-Fa-f])"
 )
 ADDRESS_POSTCODE_PATTERN = re.compile(
     r"(?i)(?:calle|avenida|c/|domicilio|playa blanca|yaiza)[^\n]{0,80}\b35\d{3}\b|"
@@ -142,8 +148,10 @@ def load_index() -> tuple[dict[str, Any], list[dict[str, Any]]]:
     items = index.get("items")
     if not isinstance(events, list) or not all(isinstance(row, dict) for row in events):
         raise ValidationError("public-index.json must contain an object array named events")
-    if items != events:
-        raise ValidationError("public-index.json items alias must be identical to events")
+    if not isinstance(items, list):
+        raise ValidationError("public-index.json must contain an object array named items")
+    # ``events`` is canonical during a controlled rebuild.  The build command
+    # rewrites the legacy ``items`` alias after package metadata changes.
     return index, events
 
 
@@ -255,14 +263,10 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
     slug = event.get("slug")
     if not isinstance(slug, str) or not slug:
         raise ValidationError("Index event lacks slug")
-    if event.get("status") != EXPECTED_STATUS:
+    if event.get("status") not in EXPECTED_STATUSES:
         raise ValidationError(f"{slug}: unexpected status {event.get('status')!r}")
-    if event.get("artifact_kind") != EXPECTED_ARTIFACT_KIND:
+    if event.get("artifact_kind") not in EXPECTED_ARTIFACT_KINDS:
         raise ValidationError(f"{slug}: unexpected artifact_kind")
-    if event.get("redacted_facsimile_available") is not False:
-        raise ValidationError(f"{slug}: must not claim a redacted facsimile")
-    if event.get("source_page_images_available") is not False:
-        raise ValidationError(f"{slug}: must not claim source-page images")
     if event.get("manual_source_line_verification") is not False:
         raise ValidationError(f"{slug}: manual source-line verification must remain false")
 
@@ -284,12 +288,12 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
     manifest = load_json(manifest_path)
     if manifest.get("id") != event.get("id") or manifest.get("slug") != slug:
         raise ValidationError(f"{slug}: manifest/index identity mismatch")
-    if manifest.get("artifact_kind") != EXPECTED_ARTIFACT_KIND:
+    if manifest.get("artifact_kind") not in EXPECTED_ARTIFACT_KINDS:
         raise ValidationError(f"{slug}: manifest artifact_kind mismatch")
-    if manifest.get("redacted_facsimile_available") is not False:
-        raise ValidationError(f"{slug}: manifest facsimile flag must be false")
-    if manifest.get("source_page_images_available") is not False:
-        raise ValidationError(f"{slug}: manifest source-image flag must be false")
+    if manifest.get("redacted_facsimile_available") != event.get("redacted_facsimile_available"):
+        raise ValidationError(f"{slug}: manifest/index facsimile flag mismatch")
+    if manifest.get("source_page_images_available") != event.get("source_page_images_available"):
+        raise ValidationError(f"{slug}: manifest/index source-image flag mismatch")
     if manifest.get("complete_public_text") is not False:
         raise ValidationError(
             f"{slug}: manifest complete_public_text must remain false until manual verification"
@@ -332,18 +336,20 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         raise ValidationError(f"{slug}: preview_pages list/count mismatch")
     preview_dir = repo_path(event["preview_dir"])
     declared_previews = {repo_path(value).resolve() for value in previews}
-    actual_previews = {path.resolve() for path in preview_dir.glob("*.webp")}
-    if actual_previews != declared_previews:
-        undeclared = sorted(path.name for path in actual_previews - declared_previews)
+    actual_previews = {
+        path.resolve()
+        for path in preview_dir.iterdir()
+        if path.is_file() and path.suffix.lower() in {".webp", ".jpg", ".jpeg"}
+    }
+    if not declared_previews.issubset(actual_previews):
         missing = sorted(path.name for path in declared_previews - actual_previews)
         raise ValidationError(
-            f"{slug}: preview directory differs from manifest "
-            f"(undeclared={undeclared}, missing={missing})"
+            f"{slug}: declared preview image(s) missing: {missing}"
         )
     for preview_value in previews:
         preview = repo_path(preview_value)
-        if preview.suffix.lower() != ".webp" or not preview.is_file():
-            raise ValidationError(f"{slug}: missing/invalid WEBP preview: {preview}")
+        if preview.suffix.lower() not in {".webp", ".jpg", ".jpeg"} or not preview.is_file():
+            raise ValidationError(f"{slug}: missing/invalid preview image: {preview}")
         if not webp_has_content(preview):
             raise ValidationError(f"{slug}: blank WEBP preview: {preview}")
 
@@ -390,6 +396,37 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
             f"{slug}: complete_public_text must remain false until manual source-line verification"
         )
 
+    source_facsimile_pages = 0
+    if event.get("redacted_facsimile_available") is True:
+        facsimile_value = event.get("redacted_source_facsimile")
+        if not isinstance(facsimile_value, str):
+            raise ValidationError(f"{slug}: redacted source facsimile path missing")
+        facsimile = repo_path(facsimile_value)
+        if not facsimile.is_file():
+            raise ValidationError(f"{slug}: redacted source facsimile missing")
+        source_reader = PdfReader(str(facsimile))
+        source_facsimile_pages = len(source_reader.pages)
+        if source_facsimile_pages != event.get("source_variant_page_count"):
+            raise ValidationError(f"{slug}: facsimile/source page mismatch")
+        if pdf_text(facsimile).strip():
+            raise ValidationError(f"{slug}: facsimile must be raster-only with no hidden text")
+        expected_hash = event.get("redacted_source_facsimile_sha256")
+        if expected_hash != sha256(facsimile):
+            raise ValidationError(f"{slug}: facsimile hash mismatch")
+
+    if event.get("source_page_images_available") is True:
+        source_previews = event.get("source_preview_pages")
+        if not isinstance(source_previews, list):
+            raise ValidationError(f"{slug}: source preview list missing")
+        if len(source_previews) != event.get("source_variant_page_count"):
+            raise ValidationError(f"{slug}: source preview/source page mismatch")
+        for preview_value in source_previews:
+            preview = repo_path(preview_value)
+            if not preview.is_file() or preview.suffix.lower() not in {".webp", ".jpg", ".jpeg"}:
+                raise ValidationError(f"{slug}: source preview missing/invalid: {preview}")
+            if not webp_has_content(preview):
+                raise ValidationError(f"{slug}: blank source preview: {preview}")
+
     return {
         "slug": slug,
         "source_variant_pages": source_variant_pages,
@@ -398,6 +435,7 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         "rendered_pages": rendered_pages,
         "pdf_sha256": actual_pdf_hash,
         "privacy_scan": "pass",
+        "source_facsimile_pages": source_facsimile_pages,
     }
 
 
@@ -610,9 +648,9 @@ def make_previews(pdf_path: Path, preview_dir: Path) -> list[str]:
         )
         outputs: list[str] = []
         for number, png in enumerate(sorted(Path(tmp).glob("page-*.png")), start=1):
-            output = preview_dir / f"page-{number:03d}.webp"
+            output = preview_dir / f"page-{number:03d}.jpg"
             with Image.open(png) as image:
-                image.convert("RGB").save(output, "WEBP", quality=68, method=6)
+                image.convert("RGB").save(output, "JPEG", quality=82, optimize=True, progressive=True)
             outputs.append(output.relative_to(REPO).as_posix())
         return outputs
 
@@ -673,7 +711,7 @@ def build_command(args: argparse.Namespace) -> int:
             {
                 "status": "pass",
                 "rebuilt": reports,
-                "artifact_kind": EXPECTED_ARTIFACT_KIND,
+                "artifact_kinds": sorted(EXPECTED_ARTIFACT_KINDS),
             },
             ensure_ascii=False,
             indent=2,

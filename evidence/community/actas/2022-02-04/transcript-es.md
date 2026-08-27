@@ -1,21 +1,20 @@
 # Junta General Extraordinaria de la Comunidad - 4 febrero 2022
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2022-02-04`
-- Fecha de reunión atribuida: `2022-02-04`
+- Fecha atribuida: `2022-02-04`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA JUN EXTRA FEB22-31032022110911.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 7
-- SHA-256 de la copia privada utilizada: `bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Conserva todas las páginas de la copia utilizada, pero reemplaza mediante marcadores explícitos los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, tablas privadas por propietario/finca/deuda y material potencialmente privilegiado o reservado.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-**Control de variante:** Esta edición parte de la copia de 3.369.527 bytes. Existe otra copia de siete páginas y 3.015.343 bytes; la relación entre ambas permanece sin reconciliar.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 7
 

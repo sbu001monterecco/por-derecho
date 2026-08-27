@@ -1,74 +1,84 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "SP-ACTA-2022-02-04",
   "slug": "2022-02-04",
   "date": "2022-02-04",
   "body": "Comunidad de Propietarios",
   "meeting_type": "extraordinary",
   "language": "es",
-  "status": "located-package-partial",
+  "status": "located-package-digitised-public",
   "privacy_level": "public-redacted",
-  "artifact_kind": "public-redacted-text-edition",
-  "redacted_facsimile_available": false,
-  "source_page_images_available": false,
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
   "complete_public_text": false,
-  "native_page_count": null,
-  "native_page_count_status": "not-established-from-certified-native",
+  "native_page_count": 7,
+  "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 7,
   "public_pdf_page_count": 8,
   "source": {
-    "filename": "ACTA JUN EXTRA FEB22-31032022110911.pdf",
-    "pages": 7,
+    "filename": "copia digital de trabajo",
     "bytes": 3369527,
     "sha256": "bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e",
-    "variant_note_es": "Esta edición parte de la copia de 3.369.527 bytes. Existe otra copia de siete páginas y 3.015.343 bytes; la relación entre ambas permanece sin reconciliar.",
-    "variant_note_en": "This edition uses the 3,369,527-byte copy. Another seven-page, 3,015,343-byte copy exists; their relationship remains unreconciled.",
-    "additional_known_variants": [
-      {
-        "filename": "ACTA Cdad Sun Park 4FEB2022.pdf",
-        "sha256": "56355a84eadbbd2cc085d650c20bc56560b1006992fcf6f462ecc5d6875b39e0",
-        "bytes": 3015343,
-        "pages": 7
-      }
-    ],
-    "native_publication": false
+    "pages": 7,
+    "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+    "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+    "native_publication": false,
+    "variants_recorded": 1
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2022-02-04/transcript-es.md",
     "provenance": "evidence/community/actas/2022-02-04/provenance.md",
     "redaction_log": "evidence/community/actas/2022-02-04/redaction-log.md",
     "pdf": "assets/docs/community-actas/2022-02-04-public-redacted-es.pdf",
-    "pdf_sha256": "245e63e9ad3ce28bdcaf6ab6868a37164936d5a977e3340ac604253fd88b1c87",
+    "pdf_sha256": "81db4fac3ae47d4231dc36bc2beaf27f5463f0d8860a30e314f84dfce1bffc43",
     "pdf_pages": 8,
     "preview_pages": [
-      "assets/evidence/community-actas/2022-02-04/page-001.webp",
-      "assets/evidence/community-actas/2022-02-04/page-002.webp",
-      "assets/evidence/community-actas/2022-02-04/page-003.webp",
-      "assets/evidence/community-actas/2022-02-04/page-004.webp",
-      "assets/evidence/community-actas/2022-02-04/page-005.webp",
-      "assets/evidence/community-actas/2022-02-04/page-006.webp",
-      "assets/evidence/community-actas/2022-02-04/page-007.webp",
-      "assets/evidence/community-actas/2022-02-04/page-008.webp"
+      "assets/evidence/community-actas/2022-02-04/page-001.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-002.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-003.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-004.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-005.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-006.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-007.jpg",
+      "assets/evidence/community-actas/2022-02-04/page-008.jpg"
     ],
-    "preview_count": 8
+    "preview_count": 8,
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2022-02-04-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "607b185074f149572a124a7cee79bb5c72ec12f9a8bbf4a512ec2695ba1ec051",
+    "redacted_source_facsimile_pages": 7,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2022-02-04/page-001.jpg",
+      "assets/evidence/community-actas-source/2022-02-04/page-002.jpg",
+      "assets/evidence/community-actas-source/2022-02-04/page-003.jpg",
+      "assets/evidence/community-actas-source/2022-02-04/page-004.jpg",
+      "assets/evidence/community-actas-source/2022-02-04/page-005.jpg",
+      "assets/evidence/community-actas-source/2022-02-04/page-006.jpg",
+      "assets/evidence/community-actas-source/2022-02-04/page-007.jpg"
+    ],
+    "source_preview_count": 7
   },
   "quality_control": {
     "source_page_count_verified": true,
     "pdf_reopened": true,
     "all_pdf_pages_rendered": true,
-    "privacy_scan": "pass",
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
     "ocr_not_certified": true,
     "manual_source_line_verification": false,
-    "visual_pdf_sample_review": true
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false
   },
   "redaction_categories": [
-    "attendance-and-vote-lists",
-    "attendance-signature-list",
-    "firma-sello",
-    "identificador-en-linea",
-    "identificadores-contacto-domicilio-firma",
-    "tabla-propietarios-derrama",
-    "tabla-propietarios-deuda-derrama"
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
   ],
-  "created": "2026-08-23"
+  "created": "2026-08-27",
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false
 }

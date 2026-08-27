@@ -1,21 +1,20 @@
 # Junta General Extraordinaria de Propietarios - 29 abril 2008
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2008-04-29`
-- Fecha de reunión atribuida: `2008-04-29`
+- Fecha atribuida: `2008-04-29`
 - Órgano: Propietarios / capa de formación de CEXP
-- Copia utilizada: `ACTA 2008 - 29 ABR (constitución CEXP por venta del Hotel).pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 5
-- SHA-256 de la copia privada utilizada: `733b0cb9a1cc4aa84c82e58267b44a3166caa4e4cac09fff9eb3d43f5efc6897`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `733b0cb9a1cc4aa84c82e58267b44a3166caa4e4cac09fff9eb3d43f5efc6897`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Conserva todas las páginas de la copia utilizada, pero reemplaza mediante marcadores explícitos los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, tablas privadas por propietario/finca/deuda y material potencialmente privilegiado o reservado.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-**Control de variante:** Copia de trabajo de cinco páginas; no es el libro diligenciado ni una copia certificada. La quinta página es una hoja notarial de legitimación/autenticación con nombres, identificadores, firmas, sello y serie, íntegramente retirada de la edición pública por privacidad.
+**Control de variante:** Copia de cinco páginas; la hoja notarial final y las listas nominales se reservan por privacidad.
 
 ## Página fuente 1 de 5
 
