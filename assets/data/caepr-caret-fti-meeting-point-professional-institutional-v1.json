@@ -14,9 +14,9 @@
     {"id":"S05","path":"ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md","sha256":"332084fd802015dd7e76612adf5866436e8410f47116502f2211b9df50fbf2a0"},
     {"id":"S06","path":"es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html","sha256":"813b6b219779aa3022affcae15ab79dfd52991697ac0bb7b12dc8062edf12145"},
     {"id":"S07","path":"en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html","sha256":"5d9cd7991f53617ca18d66ce9f645ef6194575a36d9d7edf48837d03515a2085"},
-    {"id":"S08","path":"es/fti-meeting-point-ricpe-alertador-continuidad/index.html","sha256":"91f8899ddea44aec9b2fcfb36c494f144f58ed0877d8f0a282b4b99b25e88c1d"},
-    {"id":"S09","path":"en/fti-meeting-point-ricpe-whistleblower-continuity/index.html","sha256":"3add7741893f13641d73fc7516003ccba75851caa32ff71052f5029902728125"},
-    {"id":"S10","path":"de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html","sha256":"d6cc058a618c8753b23fc6a0e51cb19e8d77130a3884c92b7b25343ae883ca83"},
+    {"id":"S08","path":"es/fti-meeting-point-ricpe-alertador-continuidad/index.html","sha256":"28256544ffcfebad8f3685d4f4fb910fa8fa30b7ec3c328e393bef61bec3bb5b"},
+    {"id":"S09","path":"en/fti-meeting-point-ricpe-whistleblower-continuity/index.html","sha256":"3cec24cad4b911a7d59f8ffc01067812699685c7226400cfc407700cf79bd262"},
+    {"id":"S10","path":"de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html","sha256":"3b61aa2ad105efd858f231af47acc6f0fba36eef822f6ed916da59690f14a2a8"},
     {"id":"S11","path":"assets/data/caepr-caret-fti-meeting-point-ricpe-continuity-v1.json","sha256":"4e182a65a53ec4d3872b8dd6aec8f99cdcbd701f08926245fdd7b6d67ddecc7c"},
     {"id":"S12","path":"es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/index.html","sha256":"6e817f300935a78d006e87668f0c7ab004b738278ce0149cfe34f700d650acec"},
     {"id":"S13","path":"en/alberto-lopez-villarrubia-meeting-point-357-active-estate/index.html","sha256":"9ba2cc40f8a3540d692a3846617db15243aeb845542f746373566b14748d678f"}

@@ -20,13 +20,13 @@ CHECKS = [
     {
         "path": "es/ingenieria-inversa-criminal-unitaria/",
         "kind": "unitary_criminal_es",
-        "markers": [MARKER, "No son irregularidades aisladas", "Los quince puntos más fuertes"],
+        "markers": [MARKER, "¿Existió una sola empresa continuada", "Los quince puntos más fuertes"],
         "min_bytes": 5000,
     },
     {
         "path": "en/unitary-criminal-reverse-engineering/",
         "kind": "unitary_criminal_en",
-        "markers": [MARKER, "These are not isolated irregularities", "The fifteen strongest points"],
+        "markers": [MARKER, "Was there one continuing enterprise", "The fifteen strongest points"],
         "min_bytes": 5000,
     },
     {
