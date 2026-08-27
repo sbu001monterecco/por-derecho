@@ -1,18 +1,29 @@
-# Registro de redacciones - SP-ACTA-2011-06-22
+# Registro de redacciones - 2011-06-22
 
-La edición pública nunca altera la copia privada. Cada marcador indica el alcance y la categoría de la omisión.
+La fuente privada no se altera. La copia pública es rasterizada y todas las redacciones están quemadas; no existe capa de texto oculta en el facsímil.
 
-| Página fuente | Alcance | Categoría | Motivo |
-|---:|---|---|---|
-| 2 | partial-page | `attendance-list` | Lista de asistentes y propiedades al final de la página. |
-| 3 | full-page | `lista-asistentes-propiedades` | Relaciones nominales de representaciones, fincas y coeficientes. |
-| 4 | line-or-token | `firma-sello` | Regla transversal de privacidad aplicada al OCR. |
-| 10 | line-or-token | `identificadores-contacto-domicilio-firma` | Regla transversal de privacidad aplicada al OCR. |
-| 13 | partial-page | `tabla-propietarios-deuda` | Comienzo de tabla nominal de propietario/finca/fecha/saldo; se conserva la explicación narrativa y se retiran las filas individualizadas. |
-| 14 | full-page | `tabla-propietarios-deuda` | Tabla de propietario/finca/saldo; datos financieros individuales. |
-| 15 | full-page | `tabla-propietarios-deuda` | Continuación de tabla de propietario/finca/saldo. |
-| 16 | full-page | `tabla-propietarios-deuda` | Continuación de tabla de propietario/finca/saldo y datos individuales. |
+| Página fuente | Alcance | Motivo |
+|---:|---|---|
+| 1 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 2 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 3 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 4 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 5 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 6 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 7 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 8 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 9 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 10 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 11 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 12 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 13 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 14 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 15 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 16 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
 
-## Categorías transversales
+## Control de calidad
 
-Se eliminan DNI/NIE/NIF/CIF, firmas y sellos, domicilios, teléfonos, correos, cuentas/IBAN, datos de contacto, filas privadas por propietario/finca/deuda, datos bancarios y material jurídico potencialmente privilegiado. Se conservan fechas, orden del día, estructura, porcentajes agregados, resoluciones narrativas y actores institucionales o societarios cuando son necesarios para comprender el documento.
+- Todas las páginas de la copia fuente están contabilizadas: `true`
+- Facsímil raster sin texto oculto: `true`
+- OCR certificado línea por línea: `false`
+- Fuente privada publicada: `false`

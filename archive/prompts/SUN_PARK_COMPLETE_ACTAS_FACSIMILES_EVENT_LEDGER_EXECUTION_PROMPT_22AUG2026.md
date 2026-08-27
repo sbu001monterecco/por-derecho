@@ -160,7 +160,7 @@ Process every row in the ledger's complete-publication matrix, including:
 - 10-Aug-2012 or any correctly dated precursor/original;
 - 10-Apr and both separate 28-Aug-2014 records;
 - all 19-Nov-2015 variants;
-- the complete 77-page 26-Apr-2016 source/annex corpus, preserving the resolved byte-identical Drive aliases and distinguishing the binary hash from the extraction hash;
+- the complete 77-page 26-Apr-2016 source/annex corpus, preserving both distinct render/text-equivalent 77-page binaries and distinguishing them from the 24-, 47- and 50-page partial packages;
 - 7-Apr and 12-Jun-2017;
 - 18-May and 5-Jul-2018 plus the referenced 20-Nov-2018 source;
 - negative search for 2019–2021; and

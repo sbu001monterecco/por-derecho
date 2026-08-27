@@ -1,23 +1,22 @@
 # Junta General Ordinaria de la Comunidad - 26 abril 2016
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2016-04-26`
-- Fecha de reunión atribuida: `2016-04-26`
+- Fecha atribuida: `2016-04-26`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA 2016 - 26 ABR.pdf (variante local de 24 páginas)`
-- Páginas fuente: 24
-- SHA-256 de la copia privada utilizada: `d084dfe4adddbb1ea67cfd7e14edddfda1f95986690114e096de4d137df52a61`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- Fuente de control: `copia digital de trabajo`
+- Páginas fuente: 77
+- SHA-256 de la fuente privada: `68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Conserva todas las páginas de la copia utilizada, pero reemplaza mediante marcadores explícitos los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, tablas privadas por propietario/finca/deuda y material potencialmente privilegiado o reservado.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-**Control de variante:** La copia local tiene 24 páginas y no está reconciliada con el maestro separado de 77 páginas (SHA-256 68ff...2dec) ni con su extracción registrada (SHA-256 4ba8...63fd). No debe presentarse como sustituto del maestro de 77 páginas.
+**Control de variante:** La familia controlante contiene 77 páginas. Sus dos binarios son visual y textualmente equivalentes; los paquetes de 24, 47 y 50 páginas son parciales. Las páginas 14-77 son anexos reservados íntegramente en la copia pública.
 
-## Página fuente 1 de 24
+## Página fuente 1 de 77
 
 ACTA DE LA JUNTA GENERAL ORDINARIA
 DE LA COMUNIDAD DE PROPIETARIOS SUN PARK
@@ -71,7 +70,7 @@ pleitos a favor de abogado y procurador.
 penalización por demora de un 15% anual por cuotas impagadas o más de
 3Q0.0G€ de duda.
 
-## Página fuente 2 de 24
+## Página fuente 2 de 77
 
 13. -Ratificación de las cuentas bancarias existentes y nombramientos de ias
 personas autorizadas en las mismas.
@@ -97,7 +96,7 @@ representados que asisten a la reunión:
 
 [INICIO DE LISTA DE ASISTENTES, FINCAS Y COEFICIENTES REDACTADO]
 
-## Página fuente 3 de 24
+## Página fuente 3 de 77
 
 [REPRESENTACIONES, FINCAS Y LISTA NOMINAL DE VOTO REDACTADAS]
 
@@ -118,7 +117,7 @@ Toma ia palabra el administrador Francisco Matos Matas y da lectura de ios
 propietarios presentes y representados además de los que tienen derecho a voto, todo ello
 según la relación que encabeza esta acta.
 
-## Página fuente 4 de 24
+## Página fuente 4 de 77
 
 03.- Lectura dei acta de la junta anterior (Noviembre 2015).
 
@@ -177,7 +176,7 @@ procesal de la LUCHY PLAYA BLANCA S.L.U., ante la Audiencia Provincial, esta soc
 
 4
 
-## Página fuente 5 de 24
+## Página fuente 5 de 77
 
 m
 
@@ -234,7 +233,7 @@ para poner a disposición de cualquier propietario, como es nuestro deber, docum
 necesaria sobre los ingresos y pagos del periodo de nuestro mandato, y por supuesto con
 todas las facturas y justificantes de todos los apuntes.
 
-## Página fuente 6 de 24
+## Página fuente 6 de 77
 
 Por lo cual proponemos no aprobar las cuentas de los ejercicios del 2010 al 2015,
 ambos inclusive puesto que no tenemos toda la información requerida para este asunto ya
@@ -291,7 +290,7 @@ Thompson Simón Peter, que no están de acuerdo y quieren que conste en este act
 
 6
 
-## Página fuente 7 de 24
+## Página fuente 7 de 77
 
 8.-Propuesta y aprobación, si procede, de los presupuestos de ingresos y
 gastos del ejercicio 2016 con sus correspondientes cuotas comunitarias.
@@ -349,7 +348,7 @@ propietarios Luchy Playa Blanca S.L.U., Víctor y Juan Carlos Fernández Cox, Ma
 
 7
 
-## Página fuente 8 de 24
+## Página fuente 8 de 77
 
 Palacios Fernández y Thompson Simón Peter, que no están de acuerdo y quieren que
 conste en este acta.
@@ -405,7 +404,7 @@ a iodc aquel con el que no se llegue a acuerdo de pago, y que deba más de 300,0
 
 8
 
-## Página fuente 9 de 24
+## Página fuente 9 de 77
 
 más cuotas comunitarias, io que se aprueba por unanimidad de los presentes con
 derecho a voto.
@@ -464,7 +463,7 @@ intención es obrar en todo momento con responsabilidad y sobre todo amparándos
 
 9
 
-## Página fuente 10 de 24
+## Página fuente 10 de 77
 
 dictado por !a administración y ia justicia, para velar por ios intereses de toda la comunidad
 y no de algún propietario en concreto.
@@ -521,7 +520,7 @@ Thompson Simón Peter, que no están de acuerdo y quieren que conste en este
 
 10
 
-## Página fuente 11 de 24
+## Página fuente 11 de 77
 
 16.-Informe relativo a la problemática existe con las diferentes denuncias ante
 los Organismos Oficiales y demandas judiciales interpuestas contra el comunero
@@ -579,7 +578,7 @@ de los presentes con derecho a voto.
 
 11
 
-## Página fuente 12 de 24
+## Página fuente 12 de 77
 
 Se hace constar por los señores representantes de los propietarios Luchy Playa
 Blanca S.L.U., Víctor y Juan Carlos Fernández Cox, Mariano Palacios Fernández y
@@ -624,7 +623,7 @@ La Presidenta El Secretario
 
 12
 
-## Página fuente 13 de 24
+## Página fuente 13 de 77
 
 En Las Palmas a ó de abril de 2016
 
@@ -671,90 +670,258 @@ Presidenta de la Común
 
 [DATO DE CONTACTO Y REFERENCIA PERSONAL REDACTADO]
 
-## Página fuente 14 de 24
+## Página fuente 14 de 77
 
-[CONTENIDO REDACTADO - TABLA PROPIETARIOS DEUDA]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 14 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Listado de recibos/deudas por finca; datos financieros individuales.
+## Página fuente 15 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 15 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 15 de 24
+## Página fuente 16 de 77
 
-[CONTENIDO REDACTADO - TABLA PROPIETARIOS DEUDA]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 16 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Listado de recibos/deudas por finca; datos financieros individuales.
+## Página fuente 17 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 17 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 16 de 24
+## Página fuente 18 de 77
 
-[CONTENIDO REDACTADO - TABLA PROPIETARIOS DEUDA]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 18 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Listado de recibos/deudas por finca; datos financieros individuales.
+## Página fuente 19 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 19 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 17 de 24
+## Página fuente 20 de 77
 
-[CONTENIDO REDACTADO - TABLA PROPIETARIOS DEUDA]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 20 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Listado de recibos/deudas por finca; datos financieros individuales.
+## Página fuente 21 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 21 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 18 de 24
+## Página fuente 22 de 77
 
-[CONTENIDO REDACTADO - TABLA PROPIETARIOS DEUDA]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 22 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Listado de recibos/deudas por finca; datos financieros individuales.
+## Página fuente 23 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 23 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 19 de 24
+## Página fuente 24 de 77
 
-[CONTENIDO REDACTADO - TABLA PROPIETARIOS DEUDA]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 24 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Listado de recibos/deudas por finca; datos financieros individuales.
+## Página fuente 25 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 25 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 20 de 24
+## Página fuente 26 de 77
 
-[CONTENIDO REDACTADO - EXTRACTO BANCARIO]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 26 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Extracto bancario con cuenta, movimientos, contrapartes e importes identificables.
+## Página fuente 27 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 27 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 21 de 24
+## Página fuente 28 de 77
 
-[CONTENIDO REDACTADO - EXTRACTO BANCARIO]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 28 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Extracto bancario con cuenta, movimientos, contrapartes e importes identificables.
+## Página fuente 29 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 29 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 22 de 24
+## Página fuente 30 de 77
 
-[CONTENIDO REDACTADO - EXTRACTO BANCARIO]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 30 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Extracto bancario con cuenta, movimientos, contrapartes e importes identificables.
+## Página fuente 31 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 31 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 23 de 24
+## Página fuente 32 de 77
 
-[CONTENIDO REDACTADO - EXTRACTO BANCARIO]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 32 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Extracto bancario con cuenta, movimientos, contrapartes e importes identificables.
+## Página fuente 33 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 33 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-## Página fuente 24 de 24
+## Página fuente 34 de 77
 
-[CONTENIDO REDACTADO - EXTRACTO BANCARIO]
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 34 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-Objeto de la página: Extracto bancario con cuenta, movimientos, contrapartes e importes identificables.
+## Página fuente 35 de 77
 
-La página permanece contabilizada y secuenciada. Su imagen y texto íntegros se conservan únicamente en la copia privada de procedencia.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 35 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 36 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 36 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 37 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 37 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 38 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 38 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 39 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 39 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 40 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 40 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 41 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 41 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 42 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 42 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 43 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 43 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 44 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 44 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 45 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 45 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 46 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 46 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 47 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 47 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 48 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 48 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 49 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 49 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 50 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 50 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 51 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 51 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 52 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 52 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 53 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 53 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 54 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 54 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 55 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 55 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 56 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 56 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 57 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 57 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 58 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 58 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 59 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 59 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 60 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 60 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 61 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 61 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 62 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 62 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 63 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 63 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 64 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 64 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 65 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 65 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 66 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 66 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 67 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 67 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 68 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 68 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 69 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 69 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 70 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 70 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 71 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 71 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 72 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 72 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 73 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 73 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 74 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 74 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 75 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 75 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 76 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 76 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
+
+## Página fuente 77 de 77
+
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 77 de 77 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]

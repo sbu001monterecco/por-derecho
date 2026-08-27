@@ -5,7 +5,7 @@
 **Unredacted extraction SHA-256:** `4ba8b77315b0dca9dc735e13f08a80b82b73dd080921f2a9d73583013e2563fd`  
 **Status:** public evidential edition; not the evidential master and not a finding that any resolution was valid or invalid.
 
-> **22-Aug-2026 companion package and limit:** the document room now includes a [page-sequenced Spanish public-redacted OCR edition of a located 24-page variant](actas/2016-04-26/transcript-es.md), with a public text-edition PDF and WEBP previews. It does **not** replace or complete the separate 77-page master. Drive IDs `1YMnEVD…` and `1H10Rco…` have been verified as byte-identical aliases of that 77-page master (SHA-256 `68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec`). The generated previews are not native ACTA images or a source facsimile.
+> **27-Aug-2026 v2 correction and limit:** the document room now represents the controlling 77-page family with a [page-sequenced Spanish public-redacted OCR edition](actas/2016-04-26/transcript-es.md), a rendered text-edition PDF, raster-only redacted source facsimile and redacted source-page gallery. Two distinct 77-page binaries (SHA-256 `68ff554b…` and `549dae8c…`) are render- and text-equivalent, not byte-identical. The 24-, 47- and 50-page packages remain separately preserved as partial variants. OCR is not manually source-line certified; the public facsimile is not the native ACTA or a certified copy.
 
 ## Redaction / publication rule
 

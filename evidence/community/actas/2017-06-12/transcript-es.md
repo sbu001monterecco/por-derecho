@@ -1,23 +1,20 @@
 # Junta General Ordinaria de la Comunidad - 12 junio 2017
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2017-06-12`
-- Fecha de reunión atribuida: `2017-06-12`
+- Fecha atribuida: `2017-06-12`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2017-06-12.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 13
-- SHA-256 de la copia privada utilizada: `6fa45194f642aee51228a6a7d78bc4a7ae9386930eb831e0606712ba24a5694d`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `6fa45194f642aee51228a6a7d78bc4a7ae9386930eb831e0606712ba24a5694d`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Copia Drive de trece páginas. Se preservan orden del día, acuerdos y presupuestos agregados; se retiran listas nominales y tablas de deuda o finca. OCR no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 13
 

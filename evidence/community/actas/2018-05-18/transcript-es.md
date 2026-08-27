@@ -1,343 +1,330 @@
 # Junta General Ordinaria de la Comunidad - 18 mayo 2018
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2018-05-18`
-- Fecha de reunión atribuida: `2018-05-18`
+- Fecha atribuida: `2018-05-18`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2018-05-18.pdf`
-- Páginas fuente: 8
-- SHA-256 de la copia privada utilizada: `2a91b321f801edf38599224473b5909f96743d51d8aaa8b9f94d104dcaaa2bc3`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- Fuente de control: `copia digital de trabajo`
+- Páginas fuente: 9
+- SHA-256 de la fuente privada: `15466aae53413c686c5e0a53b37007b174a2cb7fe9e55a8a7e3e8180b218e961`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
+**Control de variante:** Copia de nueve páginas autenticada por el archivo ACTAS.zip; las variantes de ocho páginas son parciales.
 
-**Control de variante:** Copia Drive de ocho páginas. Se preservan orden del día, acuerdos y presupuestos agregados; se retiran listas nominales, identificadores y tabla individual de deuda. Texto extraído no certificado y sin cotejo manual línea por línea.
+## Página fuente 1 de 9
 
-## Página fuente 1 de 8
+} | S adeay “BA y f
+| DE eye LA JUNTA GENERAL ORDINARIA Me |
+NIDAD DE PROPIETARIOS SUN PARK |
+de, ce ce te ye a eral Siendo las 12.30 horas del Viernes 18 de Mayo
+copropietarios cuya ramemertincue te eure General Ordinaria, asistiendo los
+. seguidamente, con expresién de los Gusierian a de participacion se relacionan
+del pago de sus obligaciones comunitarias. n derecho a voto por estar al corriente
+Antes de dar comienzo a la asamblea, el administrador informa a los
+presentes:
+6 3
+i- Informa el administrador que se encuentra presente en la junta el
+abogado de la comunidad, 0. Juan Carlos Prieto Puente. |
+a - Bienvenida y saludos de la presidente ——s
+a de asistencia y quérum. Lectura del numero de propietarios con derecho
+aa - Informe de gestién del presidente y del administrador de la Comunidad
+. Presentaci6n y aprobacion. si procede, de las cuentas del ejercicio 2017
+i me Propuesta y aprobacidn. si procede, de ia eleccion de presidente y junta rectora.
+S - Propuesta y aprobacién. si procede, de la eleccién de Administrador de la Comunidad
+> Propuesta y aprobacion dei presupuesto de ingresos y gastos del ejercicio 2018 con sus
+correspcndientes cuotas comunitarias
+| B°.- ipeetee de la morosidad con la Comunidad y de las actuaciones llevadas a cabo hasta
+la fecha
+Fijacion y liquidacion de los saldos d@udores de los propietarios morosos al momento de la
+celebracién de la junta. y autorizacion para la elaboracién de las certificaciones
+4 correspondientes al estado de los saldos deudores
+9°.- Votacién y aprobacién. si procede, para instar reclamacion judicial a los propietarios
+morosos por cuotas impagadas y autorizacion al presidente y al administrador para que uno
+cualquiera de ellos. indistintamente, pueda representar a la Comunidad en estos
+| procedimientos y otorgue poder para pleitos a favor de abogado y procurador.
+“0°. Ratificacién de las cuentas bancarias existentes y nombramiento de las personas
+eutorizadas en las mismas. « ; 4
+11°95 A peticion del comunero LUCHY PLAYA BLANCA S.L.U., [estudio y en su_caso
+‘comunidad para el control del acceso al complejo de personas-np autorizadas con le
+_evitar el deterioro y uso indebido de jas zonas-comunes-y prival - _
+12°-Exposicion, estudio de solucion ‘a finalizar los siguientes
+[ procedimientos judiciales en los qi
+- Juicio Ordinario 562/2014 dei J en la que es
+parte actora la Comunidad de P. tte demanda |
+| LUCHY PLAYA BLANCA S.L.U
+-Juicio Ordinario 213/2015 del J en la que es
+parte actora DONA MARIA CRIS COMUNIDAD
+DE PROPIETARIOS SUN PARK. |
+- 43°.- Ruegos y preguntas.
+Scanned by CamScanner
 
-ACTA DE LA JU N TA G ENERAL ORDINARIA
+## Página fuente 2 de 9
 
- i DE LA CO M UNIDAD DE PRO PIETARIO S SUN PARK
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 2 de 9 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
- En Las Palmas de Gr^an Canaria, siendo las 12.30 horas del Viernes 18 de Mayo
- de 2018, se da por constituida dicha Junta General Ordinaria, asistiendo los
- copropietarios cuya representación, coeficiente de participación se relacionan
- seguidam ente, con expresión de los que tenían derecho a voto por estar al corriente
- del pago de sus obligaciones comunitarias.
- *
- A n tes de dar comienzo a ia asamblea, e! adm inistrador inform a a los
- presentes;
- í° - Inform a et adm inistrador que se encuentra presente en ia ju n ta e i
- abogado de ia comunidad, 0. [NOMBRE DE PERSONA REDACTADO].
+## Página fuente 3 de 9
 
- O RDEN DEL DÍA
- T3.- Bienvenida y saludos de la presidente.
- I* 2°.- Com probación de asistencia y quorum. Lectura del núm ero de propietarios con derecho
- a voto.
+yg
+.o rons LU
+o4.: Prosontacién y apro ees Ss
+zo1t Macien_y_sprohacién, 91 procedo, de las cuentas del olercicio >
+En cuanto a este punto el adm .
+y gastos que se eni nen a gato toma la palabra para ex
+LoRtsenttay Goose ese, ee ance, os We Ss nS
+[LÍNEA CON IDENTIFICADOR, CONTACTO, DOMICILIO O FINCA REDACTADA]
+05.-P. - /
+rectora, ¥ aPrebacién, si procede, de la eleccién de presidente y junta
+Se propone |
+iostaerentes tis gs apie ie aa que venian desempefiando
+reto:
+Secrcironbee Antonio Cogolludo Rojas
+Tesorera: Dona ‘Shalin Conn administrador de la comunidad.
+No presentandose ninguna otra c.
+por unanimidad de los presentes poeple votacién siendo aprobada
+06.- Fe afi
+la Comunidad 2 ¥ sprobacion si procede de la eleccién de Administrador de
+~
+Toma la palabra el presidenté A P ‘
+e i Para explicar que la condicién que él puso para
+ie a ed cargo es que siguiese como administrador D. Francisco Matos, ya que
+entiende que conoce perfectamente los pormenores de la comunidad y a todos los
+propietarios
+No objetando nada. los presentes se pasa a votacién aprobandose por
+unanimidad de fos presentes con derecho a voto.
+“_ 07.-Propuesta y aprobacién del presupuesto de ingresos y gastos del
+# jercicio 2018 con sus correspondientes cuotas comunitarias.
+Toma la palabra el administrador para explicar la propuesta de presupuesto
+enviada con la convocatoria del acta y que se adjunta a la misma.
+Basicamente es un presupuesto acorde a la realidad de la comunidad,
+resupuestando los servicios que se pueden dar a los pro jietarios dadas las
+circunstancias atipicas en las que nos encontramos tal como se planted en la ultima
+junta del 2.017 y cuyas condiciones no han variado desde entonces.
+Por todo ello las cuotas comunitarias seguirian como hasta el momento.
+Se pasa a votacién este punto del orden del dia y se aprueba por
+unanimidad de los presentes con derecho a voto.
+08.- Informe de la morosidad_con la_ comunidad de las actuaciones
+llevadas a cabo hasta la fecha. . \
+Fijacion y liquidacion de los saldos deudores de los pro ietarios morosos 8
+momento de la celebracién de la junta, y autorizacion para la elaboracion de las
+certificaciones correspondientes al estado de los saldos deudores. ;
+= =-lumta a este acta informe de la morosidad y se fijan los saldos deudores, asi
+. --dinntag tal,y como se envio con \a presente
+—> oe
+=S= ——_________
+= —SS=——E_> SS
+‘ === =
+— ae LL __,,;, ———___.
+Scanned by CamScanner
 
- 3°.- Informé de gestión del presidente y del adm inistrador de la Comunidad.
- 4 o- Presentación y aprobación, si procede, de las cuentas del ejercicio 2017.
- 1 5 ° .- Propuesta y aprobación, si procede, de ia elección de presidente y junta rectora.
- 6°.- Propuesta y aprobación, si procede, de la elección de A dm inistrador de la Comunidad.
- 7°.- Propuesta y aprobación del presupuesto de ingresos y gastos del ejercicio 2018 con sus
- correspondientes cuotas com unitarias.
- j| j 3o - Informe de la morosidad con la Comunidad y de las actuaciones llevadas a cabo hasta
- ¡ la fecha.
- Fijación y liquidación de los saldos d a d o re s de los propietarios m orosos ai mom ento de la
-; celebración de la junta, y autorización para la elaboración de las certificaciones
-: f§ correspondientes al estado de los saldos deudores..
-• 9°.- Votación y aprobación, si procede, para instar reclam ación judicial a ios propietarios
- m orosos por cuotas impagadas y autorización a! presidente y al adm inistrador para que uno
- ( cualquiera de ellos, indistintam ente, pueda representar a la Com unidad en estos
- procedim ientos y otorgue poder para pleitos a favor de abogado y procurador.
- 10°.- Ratificación de las cuentas bancarias existentes y nom bram iento de las personas
- autorizadas en las mismas.*-
- 11°$ A petición del com unero LUCHY PLAYA BLANCA S .L U .. (estudio v en su caso
- < adapción si procede de! acuerdo de contratar un servicio de seguridad p or parte de la
- com unidad para el control del acceso al com plejo de personas no autorizadas y con ello
-1 evitar el deterioro y uso indebido de.las.zcm a¿ com uees^-p:Ltaijv:asf "
- 12°TExpos¡cion, estudio de soluciones y aprobación si procede para finalizar tos siguientes
- f procedim ientos judiciales en los que es parte la com unidad de propietarios:
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
- parte actora la Com unidad de Propietarios Sun Park y Roque Prieto S.L. y parte dem anda
- I LUCHY PLAYA BLANCA S.L.U. sobre im pugnación convocatoria Junta.
+## Página fuente 4 de 9
 
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
-[LÍNEA REDACTADA - NOMBRE O REFERENCIA PERSONAL]
- DE PRO PIETARIO S SUN PARK, sobre im pugnación de actas.
+Se p. —
+4 aareehe vero” meecion iy, we @Prueba por un
+f- 09.- Votacion SRI IGS ce ilosipressranetcom
+ropietari Aprobatidn, si _
+leit ET los, indisti
+Bleltos a favor de abogado y procuraiior recedimientos y otorque poder tac \
+Toma ia palabra e| .
+ce la deud administrador, y senal
+certificacion : reclamacign tee a continuacian FigdG: ello ar he cteeane eee
+Estos copropietarios son los siguientes “ees :
+= ;
+y = PROPIETARIO COEF. anton \
+’ Total ABANCA PARTIC. =e
+Tota! AMENEN. S.L. + TENGOLF -4.727 53)
+Total CAIMI, CARLOS VICENTE 242 19 \
+Tots! COGOLLUDO ROJAS, ANTONIO
+Total CONSTRUCCIO -4308,05)
+Total DOUGHERTY PIS OVECTOS ACOSTA MATOS S.A. 73.714 25}
+Total FERNANDEZ COX, JUAN 4.307. 35|
+(Total FERNAND
+eae Pez COX, VICTOR / SIMPSON, TAMERA JANE 3.570 5
+[Total GUILLEN PEREZ, CELIA/ GONZALEZ GARCIA. 74755)
+2 . GERVASIO MAI Bcf? Sst
+Total INVERSIONES SALINETAS. S.L. eaioseasl
+7275
+Total LUCHY PLAYA BLANCA, S.LU. aaoserail
+Total MEDIR MONTAL, JUAN Sarat
+[Total MOLINA CLIMENT, MANUEL Tareas
+|Totai MOLINA MARRERO, JOSE LUIS 714.242,58
+. [Total NARDI, FLUVIA/ REZA HAMID
+[Total PALACIOS FERNANDEZ, MARIANO “3.78755
+'Total PILBEAM. PHILIP EDWARD / PILBEAM, MAVIS 0,385% “8747 55
+\Total SARES
+|Total TAYLOR, JONATHAN GEORGE 2
+Total THOMPSON, SIMON PETER
+Total VAN DER HORST. DANIEL
+Total WESLEY. CHRISTOPHER / FOLLOWELL, G
+A continuacion se propone a los presentes que se autorice al Sr. Presiden’
+su caso al Administrador a fin de instar reclamacion contra los citados prop
+morosos. otorgando los poderes necesarios para ello, de conformidad
+propuesto en el enunciado de este punto del orden del dia. Sometido a vot
+aprueba por unanimidad de los presentes con derecho a voto.
+10.-Ratificacién de las cuentas bancarias existentes y nombramien
+personas autorizadas en las mismas.
+ay Se propone mantener las cuentas existentes y conocidas hasta el me
+, . * * H \ co
+con de Bankia y Caixa, y nombrar a parte de la junta directiva actual
+— -nadas. dichos directivos autorizados son:
+tm Si ey U
+Scanned by CamScanner
 
-## Página fuente 2 de 8
+## Página fuente 5 de 9
 
-[PÁGINA PÚBLICAMENTE REDACTADA - RELACIÓN NOMINAL, REPRESENTACIONES, FINCAS, CUOTAS, DEUDAS, VOTOS INDIVIDUALIZADOS O FIRMAS. LA PÁGINA FUENTE PERMANECE CONTABILIZADA EN LA COPIA PRIVADA.]
+~—=
+Don Antonio Cogolludo Rojas c. Se BE
+Don Shaila Cogolludo R ©n DLN. n° 14.581.024-.
+Senses jo Ramos con D.N.I. n® 786.503.1000 cos
+u » S@ acord6 que si por raz . 4m
+por parte del presidente ab; ‘Ones de operatividad i .
+Colas es erlen autoreetee Boece cuentas en dherancscnnge ee
+Sin otro particular
+unanimidad de los Bresenios Con Heree nanan este punto aprobéndose por
+11.- A peticis
+caso adopride sel comunero LUCHY PLAYA BLANCA S.L.U., estudio y en su
+parte de la comme rocede del acuerdo de contratar un servicio de sequridad por
+autorizadas ores ela pest el control del acceso al complejo de personas no
+privativas oe evitar el deterioro y uso indebido de las zonas comunes y
+_ BLANCA SEG a la peticion realizada por el representante legal de LUCHY PLAYA
+é juntavel wise actual Liquidador D. Borja Rodriguez- Batllori Laffitte, se trae a esta
+granipréoc 0 punto del orden del dia. Por parte del mismo, se pone de relieve la
+tras de Ca existente al tener conocimiento de la presencia y ocupacion, entre
+ademas | nas de sus propiedades por parte de personas desconocidas, destacando
+t terier @ posible responsabilidad que la propia comunidad de propietarios podria
+aut Si NO toma cartas en el asunto y procede a controlar el acceso de personas no
+‘orizadas al complejo que continuan deteriorando las zonas comunes asi como las
+privativas.
+| x
+En este sentido. tomasla palabra el Sr. Administrador y se recuerda que se
+continua sin realizar la OCA en su dia encargada a un ingeniero y que no se realiz6
+porque un copropietario viene impidiendo de forma sistematica la entrada al complejo
+a los demas Se recuerda que la Comunidad ha sido requerida nuevamente por la :
+Consejeria de Industria al respecto, por lo que no puede demorarse mas la
+realizacion de las acciones oportunas. Por todo ello se propone, en consonancia por
+. lo solicitado por el propietario mayoritario, que la Comunidad se haga cargo del i
+a control de accéso de personas al complejo, mediante la contratacion, al menos de :
+forma transitoria. de una empresa de seguridad que vele por los intereses de la
+comunidad y son en definitivita los de todos los copropietarios. Se pone de manifiesto i
+que es necesario, para proceder al pago de dicho servicio, que los copropietarios 4
+asistentes traten de ponerse al dia en los pagos a la comunidad, antes de iniciar :
+acciones tendentes al cobro de las deudas, asumiendo los presentes, que se i
+intentara siempre dentro de sus posibilidades. 4
+Se propone la votacién de la autorizacion a la comunidad, a través de su j
+Presidente, para la contratacion de una empresa de seguridad a fin de proceda al
+control del acceso al complejo por parte de personas no autorizadas y evitando cor i
+ello el deterioro y uso indebido de las zonas comunes y privativas, que vele adema: :
+por la seguridad dentro del mismo, facultando expresamente al Presidente de | i
+Comunidad para que proceda a la suscripcién del correspondiente contrato ¢
+prestacién del tal servicio, con una empresa homologada y siempre que el impo' i
+del mismo no sea superior a los 8.500 euros mensuales. ;
+. i
+Sometido a votacién, se acuerda por unanimidad de los presentes con derect
+, i
+voto. i i |
+a \\1 j
+~ = a ws
+SS of i i
+= q
+Scanned by CamScanner
 
-## Página fuente 3 de 8
+## Página fuente 6 de 9
 
--,0 j.
+a
+uye
+12.Exposicion, estudio _de_soluciones y aprobacién si procede para ~ aE
+Inalizar_los_siquientes procedimientos judiciales en los que es. parte la ;
+comunidad de propietarios: ! ta \
+=_Juicio Ordinario 562/2014 del Juzgado de Primera instancia n° 2 de
+acrecife.-en la que es parte actora la Comunidad de Propletaries Sum Park y
+Rogue Pricto S.L. y parte demanda LUCHY PLAYA BEAMS Sa Users
+impugnacion convocatoria Junta. . AU_sebre
+-uicio Ordinario 213/2015 del Juz. lado db Pri rreci J
+1 °
+gemandada la COMUNIDAD DE PROPIETARIOS SUN PARK, sobre impugnacion
+F fone la palabra el abogado de la comunidad D. Juan Carlos Prieto para explicar
+el estado de estos procedimientos. En concreto el primero de ellos, es la comunidad
+quien impugné la convocatoria de junta efectuada, de forma ilegal, a nuestro 1
+entender. por Parte de LUCHY PLAYA BLANCA S.L.U.. Este procedimiento
+actualmente esta suspendido a la espera de la resolucién del procedimiento siguiente
+En cuanto al segundo de los procedimientos, se trata del Juicio Ordinario
+213/2015 del Juzgado de Primera Instancia n° 5 de Arrecife. El mismo, tiene su origen
 
- 04 - Presentación y aprobación, si procede, de las cuentas del ejercicio
- 2017,
+en una demanda interpuesta por la copropietaria DONA CRISTINA MOLINA PETIT
 
- En cuanto a este punto el administrador toma ia palabra para explicar los ingresos
- y gastos que se entregan en forma de extracto bancario, que se envió junto a la
- convocatoria y que se adjunta a este acta. *
- Se pasa a votación, aprobándose por'unanimidad de los presentes con
- derecho a voto.
+contra e! acta en la que se proclamé presidente LUCHI PLAYA BLANCA SAU. y
 
- 05,-Propuesta y aprobación, sí procede, de la elección de presidente v ¡unta
- rectora.
+Cuya convocatoria esta también impugnada por la propia comunidad de propietarios |
 
- Se propone la continuación de los mismas personas que venían desempeñando
-los diferentes cargos de la junta directiva, en concreto:
+Actualmente esta Comunidad de Propietarios esta en rebeldia, ya que la personacion
 
- Presidente: [NOMBRE/REFERENCIA PERSONAL REDACTADA]: D. [NOMBRE DE PERSONA REDACTADO], como administrador de ia comunidad.
- Tesorera: [NOMBRE/REFERENCIA PERSONAL REDACTADA] otra candidatura se pasa a votación siendo aprobada
- por unanimidad de ios presentes, con derecho a voto.
+realizada en su dia por LUCH\se tuvo por no efectuada, careciendo de legitimacion
 
- 06.- Propuesta y aprobación si procede de la elección de Administrador de
- la Comunidad,
+dicho copropietario para continyar con su tramitacién. '
 
- Toma ia palabra el presidenté para explicar que la condición que él puso para
- cubrir ese cargo es que siguiese como administrador D. [NOMBRE DE PERSONA REDACTADO], ya que
- entiende que conoce perfectamente ios pormenores de ia comunidad y a todos los
- propietarios.
- No objetando nada, los presentes se pasa a votación aprobándose por
- unanimidad de ios presentes con derecho a voto.
-
- 07. -Propuesta y aprobación dei presupuesto de ingresos y gastos dei
-# *eíercicio 2018 con sus correspondientes cuotas comunitarias.
-
- Toma ia palabra el administrador para explicar ía propuesta de presupuesto
- enviada con ia convocatoria del acta y que se adjunta a la misma.
- Básicamente es un presupuesto acorde a la realidad de la comunidad,
- presupuestando los servicios que se pueden dar a los propietarios dadas las
- circunstancias aíípicas en las que nos encontramos tal como se planteó en la última
- junta del 2.017 y cuyas condiciones no han variado desde entonces.
- Por todo ello las cuotas comunitarias seguirían como hasta el momento.
-
- Se pasa a votación este punto del orden del día y se aprueba por
- unanimidad de los presentes con derecho a voto.
-
- 08. - Informe de la morosidad con la comunidad y de las actuaciones
- llevadas a cabo hasta la fecha.
- Fijación v liquidación de los saldos deudores de los propietarios morosos al
- momento de la celebración de la junta, v autorización para la elaboración de las
- certificaciones correspondientes al estado de los saldos deudores.
-Se adjunta informe de la morosidad y se fijan los saldos deudores, así
-como se envió con la convocatoria.
-
-## Página fuente 4 de 8
-
-Se pasa a votación y se aprueba por unanimidad de los presentes mm
- derecho voto.
-
- 09 - Votación v aprobación, si procede, para instar reclamación judicial ato s
- propietarios morosos por cuotas impaqadas y autorización ai presidente y a!
- administrador para que uno cualquiera de ellos, indistintamente, pueda
- representar a la comunidad en estos procedimientos y otorgue poder para
- pleitos a favor de abogado v procurador.
- *
- Toma la palabra el administrador, y Señala los propietarios morosos y el importe
- de la deuda que se establece a continuación, todo ello a los efectos de su
- certificación y reclamación.
-
-[CONTENIDO RESTANTE DE LA PÁGINA REDACTADO - LISTA NOMINAL/DEUDA/FINCA/FIRMA]
-
-## Página fuente 5 de 8
-
-[RESIDUO GRÁFICO OCR OMITIDO]
-
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
- 4
- a <t»
-
- A su vez, se acordó que si por razones de operatividad se considerase oportuno
- por parte del presidente abrir una o varias cuentas en diferentes entidades barcarias,
- también estarían autorizados para ello.
-
- Sin otro particular se pasa a votación este punto aprobándose por
- unanimidad de los presentes con derecho a voto.
-
- 11.- A petición del comunero LUCHY PLAYA BLANCA S.L.U., estudio v en su
- caso adopción si procede del acuerdo de contratar un servicio de seguridad por
- parte de la comunidad para el control del acceso al complejo de personas no
- autorizadas v con ello evitar el deterioro y uso indebido de las zonas comunes y
- privativas
-
- Atendiendo a la petición realizada por el representante legal de LUCHY PLAYA
- BLANCA S.L.U, actual Liquidador D, [NOMBRE DE PERSONA REDACTADO], se trae a esta
- junta ei citado punto de! orden del dia. Por parte del mismo, se pone de relieve la
- gran preocupación existente, ai tener conocimiento de ¡a presencia y ocupación, entre
- otras de varias de sus propiedades ppr parte de personas desconocidas, destacando
- además la posible responsabilidad que la propia comunidad de propietarios podría
- tener sí no toma cartas en ei asunto, y procede a contratar el acceso de personas no
- autorizadas al complejo que continúan deteriorando las zonas comunes así como las
- privativas.
-
- En este sentido, tomadla paíabra el Sr, Administrador y se recuerda que se
- continúa sin realizar ¡a OCA en su día encargada a un Ingeniero y que no se realizó
- porque un copropietario viene impidiendo de forma sistemática la entrada a! complejo
- a los demás. Se recuerda que la Comunidad ha sido requerida nuevamente por la
- Consejería de Industria ai respecto, por io que no puede demorarse más la
- realización de las acciones oportunas. Por todo ello se propone, en consonancia por
- lo solicitado por el propietario mayoritario, que la Comunidad se haga cargo dei
- control de accéso de personas al complejo, mediante la contratación, al menos de
- forma transitoria, de una empresa de seguridad que vele por los intereses de la
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
- que es necesario, para proceder al pago de dicho servicio, que los copropietarios
- asistentes traten de ponerse al día en ios pagos a ia comunidad, antes de iniciar
- acciones tendentes ai cobro de ¡as deudas, asumiendo los presentes, que se
- intentará siempre dentro de sus posibilidades.
-
- Se propone la votación de la autorización a la comunidad, a través de su
- Presidente, para ia contratación de una empresa de seguridad a fin de proceda al
- control del acceso al complejo por parte de personas no autorizadas y evitando cor
- ello el deterioro y uso indebido de las zonas comunes y privativas, que vele ademé?
-1 por ia seguridad dentro del mismo, facultando expresamente al Presidente de I
- Comunidad para que proceda a la suscripción del correspondiente contrato c
- prestación del tal servicio, con una empresa homologada y siempre que el impo?
- del mismo no sea superior a los 8.500 euros mensuales.
-
-I Sometido a votación, se acuerda por unanimidad de ios presentes con derect
-
-## Página fuente 6 de 8
-
-12.-Exposición, estudio de soluciones y aprobación si procede para
-finalizar los siguientes procedimientos judiciales en los que es parte la
-comunidad de propietarios;
- - Juicio Ordinario 562/2014 del Juzgado de Primera instancia n° 2 de
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
-Roque Prieto S.L. v parte demanda LUCHY PLAYA BLANCA S.L.U. sobre
-impugnación convocatoria Junta. *
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
-en la que es parte actora [NOMBRE/REFERENCIA PERSONAL REDACTADA]1T y parte
-demandada la COMUNIDAD DE PROPIETARIOS SUN PARK. sobre impugnación
-de actas.
-
- Toma la palabra el abogado de la comunidad D. [NOMBRE DE PERSONA REDACTADO] para explicar
-el estado de estos procedimientos. En concreto eí primero de ellos, es la comunidad
-quien impugnó la convocatoria de junta efectuada, de forma ilegal, a nuestro
-entender, por parte de LUCHY PLAYA BLANCA S.L.U.. Este procedimiento
-actualmente está suspendido a la espera de la resolución del procedimiento siguiente.
-
- En cuanto al segundo de los procedimientos, se trata del Juicio Ordinario
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
-[LÍNEA REDACTADA - NOMBRE O REFERENCIA PERSONAL]
-contra el acta en la que se proclamó presidente LUCHI PLAYA BLANCA S.LU., y
-cuya convocatoria está también Impugnada por fa propia comunidad de propietarios.
-Actualmente esta Comunidad de Propietarios está en rebeldía, ya que la personación
-realizada en su día por LUCHY^se tuvo por no efectuada, careciendo de legitimación
-dicho copropietario para continuar con su tramitación.
-
- Dado el tiempo transcurrido y la nula incidencia que actualmente tendrá su
+Dado el tiempo transcurrido y la nula incidencia que actualmente tendra su
 resultado en la comunidad se propone llegar a un acuerdo con la copropietaria
-demandante y allanarse a la demanda sin imposición de costas a esta Comunidad de
-[LÍNEA REDACTADA - IDENTIFICADOR, CONTACTO O DOMICILIO]
+demandante y allanarse a la demanda sin imposicion de costas a esta Comunidad de
+Propietarios. Se pone de manifiesto que por parte de la Sra. Molina esta
 absolutamente de acuerdo con dicho acuerdo.
- •r
 
- Por otro lado, con la finalización de este procedimiento se pondría fin al primero,
-por perdida sobrevenida del objeto dej procedimiento.
+Por otro lado, con la finalizacién de este procedimiento se pondria fin al primero.
+por perdida sobrevenida del objeto del procedimiento.
 
- Se somete a votación la transacción judicial en el sentido indicado, facuftando ai
-Presidente para su personación en autos y su formulación, ío cual es Aprobado por
-unanimidad de ios presentes con derecho a voto.
+Se somete a votacion la transaccidn judicial en el sentido indicado, facuttando al
+Presidente para su personacion en autos y su formulacion, lo cual es Aprobado por
+unanimidad de los presentes con derecho a voto.
 
- 13.-Ruegos y preguntas.
+13.-Ruegos y preguntas.
+No hay ni ruegos ni preguntas.
+Sin otro particular se levanta la sesion siendo las 13.45 horas.
+V° Be v° Be
+EI Presid . El Secret ministrador
+4
+V°B° . .
+_ 7alexsha SArvicios Inte
+Scanned by CamScanner
 
- No hay ni ruegos ni preguntas.
+## Página fuente 7 de 9
 
- Sin otro particular se levanta la sesión siendo ¡as 13.45 horas.
- yo Bo
-[FIRMA O DILIGENCIA DE FIRMA REDACTADA]
- El Presidí El Secret¡ ministrador
+a og ND
+P /4 ; as
+A MUNIDAD DE PROPIETARIO!
+co SSUN PARK
+esos = PRESUPUESTO 2037 |REALIZADO|
+Ray a0 DE DEUDAS EJERCICIOS ANTERIORES (SIN PODER a
+Wp oes comunenos zon
+— TOTAL INGRESOS NETOS
+CUOTA POR BUNGALO ANO (0,385%) 267,18 267,18
+CUOTA POR BUNGALO MES (0,385%) 22,26 22,26
+IGASTOS ORDINARIOS
+SERVICIOS PROFESIONALES DE ADMINISTRACION [13.3536 | 13.353.60 |
+MANTENIMIENTO, JARDIN Y LIMPIEZA (SIN PODER DETALLAR) [000 | 0.00
+PRIMAS DE SEGUROS : [—a00000 | 9.00_|
+SEVICIOS BANCARIOS [25000 | 8236
+LUZ ZONAS COMUNES (SIN PODER DETALLAR) [000 | 0.00
+AGUA ZONAS COMUNES (SIN PODER DETALLAR) [000 | 0.0 _|
+ATENAS COLECTIVAS (SIN PODER DETALLAR) L900 | __0.00_|
+GASTOS VARIOS E IMPREVISTOS 6.000,00 | 5831.42 _ |
+COMUNIDAD PAPAGAYO URBANIZADORA 43.200,00 Le
+SISTEMA CONTRAINCENDIOS (SIN PODER DEJALLAR) eae
+SERVICIOS PROFESIONALES DE ADMINISTRACION ¥ PROCURADORES 3,000,00
+TOTAL GASTOS ORDINARIOS 69.803,16
+TOTAL INGRESOS NETOS 70.000,00 [ 16.432,70 |
+waar Ta |
+196,34 5.834,68
+RESULTADO TOTAL
+a
+Scanned by CamScanner
 
- V °B °
- .taYsha ^ v ic io s Integrales SL.
+## Página fuente 8 de 9
 
-## Página fuente 7 de 8
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 8 de 9 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]
 
-4$
+## Página fuente 9 de 9
 
- COMUNIDAD DE PROPIETARIOS SUN PARK PRESUPUESTO 2017
-
- 0$ P R ES U P U E S TO 2017 R EALIZAD O
- R0 DE DEUDAS EJERCICIOS ANTERIORES (SIN PODER DETALLAR) 0,00 0,00
- vS COMUNEROS 2017 70.000,00 16.432,70
- T O T A L IN G R ESO S N E TO S 70.000,00 16.432,70
-
- CUO TA POR BUNGALÓ AÑO (0,385%) 267,18 267,18
- C U O TA POR BUNGALÓ MES (0,385%) 22,26 22,26
-
- ,STOS ORDINARIOS PRESUPUESTO 2017 REALIZADO
- SERVICIOS PROFESIONALES DE ADMINISTRACIÓN 13.353,16 13.353.60
- IANTEN1MIENTO, JARDIN Y LIMPIEZA (SIN PODER DETALLAR) 0,00 0,00
-'RIMAS DE SEGUROS 4.000,00 0,00
-SEVICIOS BANCARIOS 250,00 8236
-LUZ ZONAS COMUNES (SIN PODER DETALLAR) 0,00 0,00
-A G U A ZONAS COM UNES (SIN PODER DETALLAR) 0,00 0,00
-ATENAS COLECTIVAS (SIN PODER DETALLAR) 0,00 0,00
-GASTOS VARIOS E IMPREVISTOS 6.000,00 5831,42
-CO M U N ID AD PAPAGAYO URBANIZA DORA ^ 43.200,00 0,00
-SISTEMA CÓNTRAINCENDIOS (SIN PODER DETALLAR) 0,00 0,00
-SERVICIOS PROFESIONALES DE ADMINISTRACION Y PROCURADORES 3.000,00 3.000,00
- TOTAL GASTOS ORDINARIOS 69.803,16 22.267,38
-
-TOTAL INGRESOS NETOS 70.000,00 16.432,70
-
-|OTAL GASTOS ORDINARIOS 69.803,16 22267,38
-
-RESULTADO TOTAL 196,84 | 5.834,68
-
-## Página fuente 8 de 8
-
-%
-
- .OMUNIDAD PE PROPIETARIOS SUN PARK j PRESUPUESTO 2018"
- I
- >s P R E S U P U E S TO 2 01 8
-
- JO DE DEUDAS EJERCICIOS ANTERIORES (SIN PODER DETALLAR) 0,00
- ,S COMUNEROS 2018 70.002,10
- T O T A L IN G R E S O S N E T O S 7 0 .0 0 2 ,1 0 l
-
- CUOTA POR BUNGALÓ AÑO (0,385%) 267,18 267,18
- 1
- CUOTA POR BUNGALÓ MES (0,385%) 22,26 22,26
-
- ASTOS ORDINARIOS PRESUPUESTO 2018
--ERVICIOS PROFESIONALES DE ADMINISTRACIÓN 13.353,60
-MANTENIMIENTO, JARDIN Y LIMPIEZA (SIN PODER DETALLAR) 0,00
-PRIMAS DE SEGUROS 4.000,00
-i ..JIGOS BANCARIOS 250,00
-LUZ ZONAS COMUNES (SIN PODER DETALLAR) 0,00
-AGUA ZONAS COMUNES (SIN PODER DETALLAR) 0,00 I
-ANTENAS COLECTIVAS (SIN PODER DETALLAR) 0,00
-GASTOS VARIOS E IMPREVISTOS 6.000,00
- I
-COMUNIDAD PAPAGAYO URBANIZADORA^ 43.200,00
-SISTEMA CONTRA1NCENDIOS ¡SIN PODER DETALLAR) 0,00
-SERVICIOS PROFESIONALES DE ADMINISTRACION Y PROCURADORES 3.000,00
- TOTAL GASTOS ORDINARIOS 69.803,60 1
-
-TOTAL INGRESOS NETOS | 70.000,00
-
-TOTAL GASTOS ORDINARIOS j 69.803,16
-
-RESULTADO TOTAL 1 198,94
-
-SALDO DE BANCOS 23/05/17 i 5.869,51
-
-FONDO DE RESERVA 5% } 3.500,00
-OBSERVACIONES: Anta la imposibilidad de acceder al complejo la presidenta, administrador y
-propietarios, por impedimento de luchy Playa Blanca, hay partidas sin poder detallar. Dicho
-conflicto se encuentra en los juzgados correspondientes a espera de resolución.
-El administrador hace constar en este presupuesto que las previsiones de cobro de cuotas solo va
-a ser de un 25% aproximadamente, por lo que no se podrá dar cumplimiento a este prespuesto si
-el propietario mayoritario (Luchy Playa Banca S.L) que respresenta aproximadamente un 72% no
-hace frente a sus cuotas como ha estado haciendo hasts el momento.
+[PÁGINA PÚBLICA ÍNTEGRAMENTE REDACTADA. La página fuente 9 de 9 permanece contabilizada y preservada privadamente. Contiene una relación nominal, datos por propietario/finca/deuda/voto, datos bancarios, firmas o un anexo reservado que no puede publicarse con seguridad.]

@@ -1,23 +1,20 @@
 # Junta General Extraordinaria de la Comunidad - 25 julio 2008
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2008-07-25`
-- Fecha de reunión atribuida: `2008-07-25`
+- Fecha atribuida: `2008-07-25`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2008-07-25.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 4
-- SHA-256 de la copia privada utilizada: `4939ffc2f5fada285918fac2a2b5f757d129121623c1fa4040992984c2ba6c38`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `4939ffc2f5fada285918fac2a2b5f757d129121623c1fa4040992984c2ba6c38`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Copia de trabajo de cuatro páginas recuperada de un adjunto de correo; la última página contiene la relación nominal y firmas. OCR no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Copia de cuatro páginas; la variante de tres páginas es parcial.
 
 ## Página fuente 1 de 4
 

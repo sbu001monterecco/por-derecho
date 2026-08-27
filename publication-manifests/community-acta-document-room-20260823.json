@@ -1,129 +1,81 @@
 {
-  "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260823",
+  "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260827-V2",
   "owner": "Por Derecho / Project Sun Rock",
-  "control_date": "2026-08-23",
-  "current_state": "LIVE_VERIFIED",
-  "publication_control": {
-    "repository": "sbu001monterecco/por-derecho",
-    "source_branch": "control/full-actas-event-record-20260822",
+  "control_date": "2026-08-27",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "repository": "sbu001monterecco/por-derecho",
+  "source_branch": "codex/full-acta-digitisation-20260827",
+  "supersedes": {
+    "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260823",
     "controlling_pr": "https://github.com/sbu001monterecco/por-derecho/pull/811",
-    "base_sha": "05f9b10a4275feeb05c17cffeaa0bb34354490df",
-    "content_commit_sha": "ea036563fb1e97c8d11e7e99d681cc526d24a61d",
-    "content_tree_sha": "2d719e974bdb1f6d1e3e7f37d889071f57af4637",
     "merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
-    "pages_workflow_run": 32608569055,
-    "pages_status": "success",
-    "publication_closeout_pr": "https://github.com/sbu001monterecco/por-derecho/pull/813"
+    "reason": "The earlier layer contained 15 OCR-only partial packages, no source facsimiles and no source-page galleries."
   },
-  "merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
-  "deployment_evidence": {
-    "provider": "GitHub Pages",
-    "workflow_run_id": 32608569055,
-    "status": "success",
-    "exact_merge_sha": "5acefbd376133ed7154d21309e4682aab94266a8",
-    "post_merge_workflows": "7/7 success"
-  },
-  "live_urls": [
-    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/",
-    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
-    "https://sbu001monterecco.github.io/por-derecho/evidence/community/actas/public-index.json",
-    "https://sbu001monterecco.github.io/por-derecho/assets/docs/community-actas/2011-06-22-public-redacted-es.pdf",
-    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2011-06-22/page-014.webp",
-    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2016-04-26/page-014.webp"
-  ],
-  "live_verification_evidence": [
-    "All eight downloaded public artifacts matched the repository SHA-256 values.",
-    "The public index returned 15 partial packages, 179 represented source-variant pages, 209 PDF edition pages and 209 previews; every completion/manual/facsimile/source-image flag remained false.",
-    "The stale 2011-06-22 page-018.webp derivative returned HTTP 404.",
-    "LIVE_VERIFIED applies only to publication of the disclosed partial derivative layer; it does not satisfy the separate thread-deletion audit."
-  ],
-  "subject": "Bilingual Sun Park ACTA document room, public-safe OCR text editions and event/source continuity controls",
+  "subject": "Bilingual ACTA document room with public-safe OCR, redacted source facsimiles, source-page galleries, provenance and source-family reconciliation",
   "expected_routes": {
-    "es": [
-      "es/comunidad-instrumentalizacion/sala-documental-actas/index.html"
-    ],
-    "en": [
-      "en/community-instrumentalisation/acta-document-room/index.html"
-    ]
+    "es": ["es/comunidad-instrumentalizacion/sala-documental-actas/index.html"],
+    "en": ["en/community-instrumentalisation/acta-document-room/index.html"],
+    "individual_event_pages_es": 20,
+    "individual_event_pages_en": 20,
+    "route_control": "evidence/community/actas/meeting-lineage-index-v1.json"
   },
   "expected_source_files": [
-    "evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md",
     "evidence/community/actas/public-index.json",
+    "evidence/community/actas/meeting-lineage-index-v1.json",
+    "evidence/community/actas/source-family-reconciliation-v2.json",
+    "evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md",
+    "scripts/digitise_all_actas.py",
     "evidence/community/actas/build_public_packages.py",
-    "archive/prompts/SUN_PARK_COMPLETE_ACTAS_FACSIMILES_EVENT_LEDGER_EXECUTION_PROMPT_22AUG2026.md",
-    "archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md",
-    "assets/acta-document-room-20260822.css",
     "assets/acta-document-room-20260822.js",
-    "sitemap-community-governance.xml",
-    "sitemap.xml"
+    "archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_27AUG2026.md",
+    "archive/ACTA_MEETING_PERIMETER_CONTINUITY_AUDIT_27AUG2026.md",
+    "scripts/build_acta_meeting_lineage.py",
+    "scripts/validate_acta_meeting_lineage.py"
   ],
   "package_state": {
-    "indexed_partial_packages": 15,
-    "received_source_variant_pages_represented": 179,
-    "public_text_edition_pdfs": 15,
-    "rendered_public_text_edition_pages": 209,
+    "located_control_copy_families": 17,
+    "digitised_and_posted_packages": 17,
+    "source_pages_represented": 246,
+    "redacted_source_facsimiles": 17,
+    "redacted_source_page_images": 246,
+    "ocr_text_packages": 17,
+    "rendered_text_edition_pdfs": 17,
+    "rendered_text_edition_pages": 279,
+    "controlled_meeting_acta_events": 20,
+    "bilingual_individual_event_pages": 40,
+    "embedded_full_public_ocr_pages": 17,
+    "perimeter_classes": 6,
     "complete_public_text_packages": 0,
     "manually_source_line_verified_packages": 0,
-    "redacted_source_facsimiles": 0,
-    "redacted_source_page_image_sets": 0,
-    "artifact_kind": "public-redacted OCR-assisted text editions, not source facsimiles"
+    "artifact_kind": "public-redacted digitisation packages; native sources remain private"
   },
   "publication_boundary": [
-    "Every package is located-package-partial with complete_public_text and manual_source_line_verification set false.",
-    "The PDF and WEBP artifacts are rendered text-edition derivatives, not native ACTA pages, official originals, certified copies or source facsimiles.",
-    "The image-only 5 July 2018 source remains located but unpackaged because reliable OCR/manual transcription is pending.",
-    "The referenced 10 August 2012 and 20 November 2018 originals remain unlocated in the finite searched universe.",
-    "Personal identifiers, signatures, private contact and bank data, owner-level financial rows, tax-reserved material and privileged advice are excluded from the public packages."
+    "Digitised and posted means the located control copy has OCR text, rendered text-edition PDF/pages, a raster-only irreversibly redacted source facsimile, redacted source-page images and a manifest.",
+    "It does not mean that OCR is certified, that the received copy is an official minute book or certified original, or that every source variant and annex has been found.",
+    "Every package retains complete_public_text=false and manual_source_line_verification=false.",
+    "Documented convener/body is separate from attributed perimeter. Adverse-lane labels are Gil Marer's attributed position, not findings of joint conduct, fraud, criminal purpose or guilt; project-side lineage does not attribute pre-entry acts to Gil.",
+    "The standalone 20 November 2018 ACTA remains unlocated.",
+    "The president statement and objection annexes referenced by the located 10 August 2012 ACTA remain unlocated.",
+    "Unredacted native sources, signatures, personal identifiers, banking data and private owner details remain outside the public repository."
   ],
-  "validation": {
-    "evidence": [
-      "Local package validator passed for 15 manifests, 15 PDFs and 209 WEBP previews: file existence, non-zero decoding, page-count parity, public derivative hashes, PDF render and automated privacy patterns.",
-      "Selected public text-edition pages were visually sampled across 2008, 2009, 2011, 2014, 2015, 2016, 2018 and 2022; this cross-year sample does not mark every per-package visual_pdf_sample_review gate complete.",
-      "Automated validation does not replace manual line-by-line comparison with each received source page."
-    ]
-  },
-  "open_evidence": [
-    "manual source-line verification for every represented page and annex",
-    "irreversibly redacted source-derived facsimiles and source-page images with hidden-text tests",
-    "complete native preservation manifests and independent custody copies",
-    "source-family and annex reconciliation, including the 24-page and 77-page 26 April 2016 records",
-    "reliable transcription/package for the image-only 5 July 2018 copy",
-    "originals for the referenced 10 August 2012 and 20 November 2018 meetings",
-    "complete notice, proxy, implementation, challenge and downstream-reliance chain",
-    "fresh-thread recovery test"
+  "resolved_corrections": [
+    "The 10 August 2012 ACTA is located as a four-page native DOCX, with a related PDF family; it records that no resolution was put to a vote.",
+    "The 5 July 2018 nine-page control copy is digitised and posted; a distinct binary variant is visually equivalent.",
+    "The 26 April 2016 control package now represents the full 77-page family. Two distinct 77-page binaries are render- and text-equivalent; 24-, 47- and 50-page partial packages remain separately recorded.",
+    "Legacy WEBP text-edition previews remain available at their historical URLs; new text and source galleries use validated JPEG images."
   ],
-  "thread_deletion_audit": {
-    "status": "FAIL — NOT SAFE TO DELETE",
-    "audit_path": "archive/THREAD_DELETION_CONTINUITY_AUDIT_FULL_ACTAS_EVENTS_PUBLICATION_22AUG2026.md",
-    "reason": "Publication of an indexed partial OCR layer does not satisfy native preservation, complete manual transcription, source-facsimile, event-chain or fresh-thread recovery gates."
-  },
-  "live_verification": {
-    "status": "PASS_FOR_PARTIAL_PUBLICATION",
-    "verified_at_utc": "2026-08-23",
-    "post_merge_checks": "7/7 success for merge SHA 5acefbd376133ed7154d21309e4682aab94266a8",
-    "public_urls": [
-      "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/",
-      "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
-      "https://sbu001monterecco.github.io/por-derecho/evidence/community/actas/public-index.json",
-      "https://sbu001monterecco.github.io/por-derecho/assets/docs/community-actas/2011-06-22-public-redacted-es.pdf",
-      "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2011-06-22/page-014.webp",
-      "https://sbu001monterecco.github.io/por-derecho/assets/evidence/community-actas/2016-04-26/page-014.webp"
-    ],
-    "exact_public_hashes": {
-      "en_document_room": "5aca80c95b8a6b86cd5bf15e15b2d239314c288af8c56d99a307adcd73eca6ac",
-      "es_document_room": "02315e70a8f82f3d300efebeb6a4b506a7675fd568b982066aaa30d7de80c35a",
-      "public_index": "bfc3d3e78c95161438736faa17fa91d3efb122f3ff27d52fe2bb636230ae83db",
-      "acta_2011_pdf": "989fd3e0a0d7030055a96c71b00a4370b5ff849032e115d8b0a7ecaed63921d4",
-      "acta_2011_page_014": "33ccc791649e16894953fb9d25bc1d81995aa6673f84b5eadc557fb431f227cf",
-      "acta_2016_page_014": "f0e85df71a42bc60bb570334f7b330bd059574c5e46b388fcf0e66782d8ca753",
-      "document_room_js": "ad3414404323a71a07cfdc3a31e588c356803806d8fc5a8a0d763f26e7b68294",
-      "document_room_css": "c10f3ab10227c667ff7156e240948b18b4282b324f565623342025ea7c4b6ece"
-    },
-    "readback": [
-      "All eight downloaded public artifacts matched the repository SHA-256 values.",
-      "The public index returned 15 partial packages, 179 represented source-variant pages, 209 PDF edition pages and 209 previews; every completion/manual/facsimile/source-image flag remained false.",
-      "The stale 2011-06-22 page-018.webp derivative returned HTTP 404.",
-      "Live verification proves publication of the disclosed partial derivative layer only; it does not complete the open-evidence or thread-deletion gates."
-    ]
+  "validation_requirements": [
+    "all package manifests, file hashes and page counts",
+    "raster-only facsimiles with empty extracted text",
+    "image decode and zero-byte rejection",
+    "automated privacy-pattern scans",
+    "visual review of the redaction-sensitive pages",
+    "20-event/40-page meeting-lineage, local-link, chronology and sitemap validation",
+    "repository publication, preservation, audience and production gates",
+    "post-merge GitHub Pages readback"
+  ],
+  "publication_closeout": {
+    "status": "PENDING_PR_MERGE_AND_LIVE_READBACK",
+    "deployment_record": "archive/DEPLOYMENT_LOG.md"
   }
 }

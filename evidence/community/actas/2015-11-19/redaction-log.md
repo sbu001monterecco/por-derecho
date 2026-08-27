@@ -1,47 +1,51 @@
-# Registro de redacciones - SP-ACTA-2015-11-19
+# Registro de redacciones - 2015-11-19
 
-La edición pública nunca altera la copia privada. Cada marcador indica el alcance y la categoría de la omisión.
+La fuente privada no se altera. La copia pública es rasterizada y todas las redacciones están quemadas; no existe capa de texto oculta en el facsímil.
 
-| Página fuente | Alcance | Categoría | Motivo |
-|---:|---|---|---|
-| 2 | full-page | `lista-asistentes-propiedades` | Relación nominal de asistentes, representaciones, fincas y coeficientes. |
-| 3 | partial-page | `voting-owner-list` | Lista nominal de titulares, fincas y coeficientes habilitados para votar. |
-| 3 | line-or-token | `firma-sello` | Regla transversal de privacidad aplicada al OCR. |
-| 6 | line-or-token | `firma-sello` | Regla transversal de privacidad aplicada al OCR. |
-| 7 | full-page | `no-ocr-text` | No se recuperó texto OCR útil. |
-| 8 | line-or-token | `firma-sello` | Regla transversal de privacidad aplicada al OCR. |
-| 8 | line-or-token | `identificadores-contacto-domicilio-firma` | Regla transversal de privacidad aplicada al OCR. |
-| 9 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 10 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 11 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 12 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 13 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 14 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 15 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 16 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 17 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 18 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 19 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 20 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 21 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 22 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 23 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 24 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 25 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 26 | full-page | `tabla-privada-financiera` | Listado de recibos, propietarios, fincas, coeficientes, cuotas o saldos individuales. |
-| 27 | full-page | `factura-datos-fiscales` | Factura de seguridad con datos fiscales, domicilios, contacto y firma. |
-| 28 | full-page | `certificado-deuda-tercero` | Certificado/anexo financiero de tercero con datos identificativos y económicos. |
-| 29 | full-page | `anexo-judicial-identificativo` | Anexo judicial; se reserva la copia íntegra para preservar datos de partes, domicilios, firmas y procedimiento. |
-| 30 | full-page | `anexo-judicial-identificativo` | Anexo judicial; se reserva la copia íntegra para preservar datos de partes, domicilios, firmas y procedimiento. |
-| 31 | full-page | `anexo-judicial-identificativo` | Anexo judicial; se reserva la copia íntegra para preservar datos de partes, domicilios, firmas y procedimiento. |
-| 32 | full-page | `anexo-judicial-identificativo` | Anexo judicial; se reserva la copia íntegra para preservar datos de partes, domicilios, firmas y procedimiento. |
-| 33 | full-page | `anexo-judicial-identificativo` | Anexo judicial; se reserva la copia íntegra para preservar datos de partes, domicilios, firmas y procedimiento. |
-| 34 | full-page | `anexo-judicial-identificativo` | Anexo judicial; se reserva la copia íntegra para preservar datos de partes, domicilios, firmas y procedimiento. |
-| 35 | full-page | `comunicacion-legal-potencialmente-privilegiada` | Comunicación jurídica/burofax y justificante; contenido y metadatos reservados a revisión de privilegio y privacidad. |
-| 36 | full-page | `comunicacion-legal-potencialmente-privilegiada` | Comunicación jurídica/burofax y justificante; contenido y metadatos reservados a revisión de privilegio y privacidad. |
-| 37 | full-page | `comunicacion-legal-potencialmente-privilegiada` | Comunicación jurídica/burofax y justificante; contenido y metadatos reservados a revisión de privilegio y privacidad. |
-| 38 | full-page | `comunicacion-legal-potencialmente-privilegiada` | Comunicación jurídica/burofax y justificante; contenido y metadatos reservados a revisión de privilegio y privacidad. |
+| Página fuente | Alcance | Motivo |
+|---:|---|---|
+| 1 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 2 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 3 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 4 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 5 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 6 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 7 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 8 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 9 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 10 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 11 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 12 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 13 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 14 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 15 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 16 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 17 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 18 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 19 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 20 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 21 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 22 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 23 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 24 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 25 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 26 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 27 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 28 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 29 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 30 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 31 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 32 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 33 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 34 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 35 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 36 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 37 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
+| 38 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |
 
-## Categorías transversales
+## Control de calidad
 
-Se eliminan DNI/NIE/NIF/CIF, firmas y sellos, domicilios, teléfonos, correos, cuentas/IBAN, datos de contacto, filas privadas por propietario/finca/deuda, datos bancarios y material jurídico potencialmente privilegiado. Se conservan fechas, orden del día, estructura, porcentajes agregados, resoluciones narrativas y actores institucionales o societarios cuando son necesarios para comprender el documento.
+- Todas las páginas de la copia fuente están contabilizadas: `true`
+- Facsímil raster sin texto oculto: `true`
+- OCR certificado línea por línea: `false`
+- Fuente privada publicada: `false`

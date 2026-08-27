@@ -1,23 +1,20 @@
 # Junta General Extraordinaria de la Comunidad de Propietarios - 28 agosto 2014
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2014-08-28-CP`
-- Fecha de reunión atribuida: `2014-08-28`
+- Fecha atribuida: `2014-08-28`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2014-08-28.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 21
-- SHA-256 de la copia privada utilizada: `4bbeb687681d48cb20c7ae7b9a331b071a6802e0bafb6bd999ccf48c97c739f2`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `4bbeb687681d48cb20c7ae7b9a331b071a6802e0bafb6bd999ccf48c97c739f2`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Copia PDF de veintiuna páginas. Se retiran listas de propietarios, deuda, votos individualizados y firmas. El contenido restante incluye alegaciones controvertidas de la propia copia y no se adopta como hecho. Texto extraído no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Copia localizada; no es el libro diligenciado ni una copia certificada.
 
 ## Página fuente 1 de 21
 

@@ -1,5 +1,7 @@
 # Thread deletion continuity audit — complete ACTAs, facsimiles and event capture
 
+> **Superseded for current digitisation state on 27-Aug-2026:** this document records the pre-v2 failure state. Current package facts and the deletion-safety rule are controlled by `archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_27AUG2026.md`, `evidence/community/actas/public-index.json` and the post-publication deployment entry. The open certification/missing-source points below remain useful, but the statements that no source facsimiles existed and that the 10-Aug-2012 ACTA was unlocated are no longer current.
+
 **Checkpoint:** 22 August 2026
 
 **Package reconciliation:** 23 August 2026

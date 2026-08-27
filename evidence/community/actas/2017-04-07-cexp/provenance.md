@@ -1,21 +1,18 @@
-# Procedencia - SP-ACTA-2017-04-07-CEXP
+# Procedencia pública - 2017-04-07-cexp
 
-## Identificación
+## Fuente de control
 
-- Fecha atribuida: `2017-04-07`
-- Órgano atribuido: Comunidad de Explotación (CEXP)
-- Nombre descriptivo de la copia: `ACTA Comunidad de Explotación (CEXP) - 2017-04-07.pdf`
-- Páginas de la variante utilizada: `2`
-- Tamaño: `84535` bytes
-- SHA-256: `e2612c11bb243893492b4a490c37ccdada270a8400d5764e8e309a674c95736f`
-- Estado: `located-package-partial`
+- Tipo: `PDF`
+- Páginas: `2`
+- Bytes: `84535`
+- SHA-256: `da872ab6f5d4dd810342a3d24772e9bce42db37572f82afb2c743fd44b3f7f23`
+- Custodia: fuente nativa preservada fuera del repositorio público.
+- Publicación: sólo texto OCR redactado, facsímil raster redactado e imágenes WEBP redactadas.
 
-## Cadena de publicación
+## Relación de variantes
 
-La fuente permanece en custodia privada. El repositorio publica únicamente una edición textual pública y redactada derivada de OCR o extracción. El PDF público y sus WEBP son representaciones de esa edición textual; **no son facsímiles ni imágenes de las páginas fuente**.
+- No se ha materializado otra variante en la custodia actual.
 
 ## Límites
 
-Exportación PDF de dos páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.
-
-No se afirma autenticidad, certificación, integridad del libro de actas, identidad con otra variante ni exactitud pericial del OCR. El hash identifica solo la copia privada utilizada para esta derivación.
+El hash identifica los bytes recibidos, no acredita por sí solo un original oficial, una copia certificada, la validez de la junta ni una cadena de custodia forense ininterrumpida. El OCR no ha sido certificado línea por línea.

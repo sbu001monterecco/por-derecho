@@ -43,41 +43,50 @@
     <section class="acta-room-hero">
       <div class="shell acta-room-hero-grid">
         <div>
-          <p class="eyebrow">Sala pública de fuentes · actualizada 23 agosto 2026</p>
-          <h1>Textos, ficheros y estado de imágenes fuente, con cada brecha visible.</h1>
-          <p class="lead">Esta sala separa lo localizado de lo que supera el control de paquete público íntegro. Permite buscar actas, abrir las ediciones textuales públicas seguras disponibles y comprobar si existen facsímiles e imágenes fuente expurgadas o siguen pendientes.</p>
+          <p class="eyebrow">Sala pública de fuentes · actualizada 27 agosto 2026</p>
+          <h1>Diecisiete familias ACTA localizadas están digitalizadas y publicadas, con cada brecha restante visible.</h1>
+          <p class="lead">Para cada copia de control localizada, esta sala ofrece texto público secuenciado por página, PDF de edición textual, facsímil fuente irreversiblemente expurgado e imágenes fuente redactadas. Las capas permanecen separadas para que el OCR nunca se presente como transcripción certificada ni una copia recibida como libro oficial.</p>
           <div class="actions"><a class="button" href="#registros">Buscar registros</a><a class="button secondary" href="../actas-2011-2022/">Leer la cronología probatoria</a></div>
         </div>
         <aside class="acta-room-rule" aria-label="Regla de publicación">
-          <strong>Edición pública, no el original</strong>
-          <span>Los PDF y miniaturas actualmente indexados son ediciones textuales públicas renderizadas, no fotografías ni facsímiles de las páginas ACTA nativas. La disponibilidad de facsímiles fuente se informa por separado. Nada se presenta como libro oficial o copia certificada.</span>
+          <strong>Copia digitalizada, no original certificado</strong>
+          <span>Cada registro distingue la edición OCR/textual del facsímil y la galería de imágenes fuente generados por separado. Estos últimos son derivados sólo raster, irreversiblemente expurgados, de una copia de control localizada. Nada se presenta como libro diligenciado o copia certificada.</span>
         </aside>
       </div>
     </section>
 
     <section class="section" id="registros">
-      <div class="shell" data-acta-room data-manifest="../../../evidence/community/actas/public-index.json" data-repo-root="../../../">
+      <div class="shell" data-acta-room data-manifest="../../../evidence/community/actas/meeting-lineage-index-v1.json" data-repo-root="../../../">
         <div class="section-head">
           <div><p class="kicker">Registro de familias fuente ACTA</p><h2>Localizado, parcial, referenciado y ausente son estados distintos.</h2></div>
-          <p>El índice público controla este registro. Una ficha solo puede decir «paquete público seguro completo» cuando existen texto íntegro, PDF/páginas de edición textual, facsímil/imágenes fuente expurgadas y manifiesto de integridad.</p>
+          <p>El índice público controla este registro. «Digitalizada y publicada» significa que existen las cuatro capas públicas de la copia de control localizada; no significa que el OCR esté certificado línea por línea, que cada variante histórica sea auténtica o que se hayan localizado todos los anexos referenciados.</p>
         </div>
 
-        <div class="acta-room-boundary" role="note"><strong>Corrección de 22 junio 2011:</strong> el material público anterior sigue siendo una síntesis estructurada y expurgada. Ahora existe además una edición textual pública OCR secuenciada por página, pero todavía no es una transcripción verificada manualmente línea por línea ni un facsímil fuente. Por ello la ficha sigue parcial.</div>
+        <div class="acta-room-boundary" role="note"><strong>Estado actual de publicación:</strong> están publicados 17 familias ACTA localizadas, 246 páginas fuente, 17 facsímiles fuente expurgados sólo raster y 246 imágenes fuente redactadas. Cada familia incluye además paquete textual OCR secuenciado y PDF de edición textual. El OCR no está certificado ni verificado manualmente línea por línea. Siguen sin localizarse el ACTA autónoma de 20 noviembre 2018 y los anexos de declaración/objeción de presidencia mencionados en el ACTA localizada de 10 agosto 2012.</div>
+
+        <div class="acta-perimeter-legend" aria-label="Leyenda de perímetros de reuniones">
+          <div class="acta-perimeter-chip" data-perimeter="pre_sale_montelanza"><strong>Montelanza · pre-venta</strong><span>Anterior a la transacción de activos de junio de 2008.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="project_lpb_aweswell_gil"><strong>Proyecto · Multimatrix/LPB → Aweswell/LPB–Gil</strong><span>Sucesión del proyecto según fecha; no atribuye a Gil actos anteriores a su entrada.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="adverse_montelanza_molina"><strong>Adverso alegado · Montelanza/Molina–Pamanil</strong><span>Alineación atribuida por Gil; actos y cargos se acreditan individualmente.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="adverse_acosta_matos"><strong>Adverso alegado · Acosta Matos/CAM</strong><span>Fase posterior atribuida; no es hallazgo de actuación conjunta o culpabilidad.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="mixed_or_contested"><strong>Mixto / controvertido</strong><span>Asistencia cruzada o convocante no resuelto.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="unresolved"><strong>No resuelto</strong><span>No se fuerza clasificación sin fuente primaria suficiente.</span></div>
+        </div>
 
         <div class="acta-room-controls" role="search" aria-label="Filtrar registros ACTA">
           <div class="acta-room-field"><label for="acta-search-es">Buscar fecha, ID o asunto</label><input id="acta-search-es" type="search" data-acta-search placeholder="Por ejemplo: 2016, CEXP, 18 mayo…" autocomplete="off"></div>
-          <div class="acta-room-field"><label for="acta-filter-es">Tipo o estado del registro</label><select id="acta-filter-es" data-acta-filter><option value="all">Todos los registros</option><option value="owners">Comunidad de Propietarios</option><option value="cexp">CEXP</option><option value="event">Evento no ACTA</option><option value="reference">Referencia posterior</option><option value="complete">Paquetes públicos completos</option><option value="open">Registros parciales / abiertos</option></select></div>
+          <div class="acta-room-field"><label for="acta-filter-es">Tipo, estado o perímetro</label><select id="acta-filter-es" data-acta-filter><option value="all">Todos los registros</option><option value="owners">Comunidad de Propietarios</option><option value="cexp">CEXP</option><option value="event">Evento no ACTA</option><option value="reference">Referencia posterior</option><option value="complete">Paquetes públicos digitalizados</option><option value="open">Registros ausentes / no resueltos</option><option value="perimeter:pre_sale_montelanza">Montelanza · pre-venta</option><option value="perimeter:project_lpb_aweswell_gil">Proyecto · LPB/Aweswell/Gil</option><option value="perimeter:adverse_montelanza_molina">Adverso alegado · Montelanza/Molina</option><option value="perimeter:adverse_acosta_matos">Adverso alegado · Acosta Matos/CAM</option><option value="perimeter:mixed_or_contested">Mixto / controvertido</option><option value="perimeter:unresolved">No resuelto</option></select></div>
           <p class="acta-room-count" data-acta-count aria-live="polite">Cargando registros…</p>
         </div>
 
         <div class="acta-room-stats" aria-label="Resumen del estado de publicación">
           <div class="acta-room-stat"><span>Eventos indexados</span><strong data-stat-total>—</strong></div>
-          <div class="acta-room-stat"><span>Paquetes públicos completos</span><strong data-stat-complete>—</strong></div>
-          <div class="acta-room-stat"><span>Localizados pero parciales</span><strong data-stat-partial>—</strong></div>
-          <div class="acta-room-stat"><span>Todos los estados abiertos</span><strong data-stat-open>—</strong></div>
+          <div class="acta-room-stat"><span>Paquetes públicos digitalizados</span><strong data-stat-complete>—</strong></div>
+          <div class="acta-room-stat"><span>Localizados sin digitalizar</span><strong data-stat-partial>—</strong></div>
+          <div class="acta-room-stat"><span>Ausentes / no resueltos</span><strong data-stat-open>—</strong></div>
         </div>
 
-        <noscript><p class="acta-room-noscript">Se necesita JavaScript para las fichas buscables. El <a href="../../../evidence/community/actas/public-index.json">índice público de ACTAS</a> y la <a href="../actas-2011-2022/">cronología legible</a> siguen disponibles directamente.</p></noscript>
+        <noscript><p class="acta-room-noscript">Se necesita JavaScript para las fichas buscables. El <a href="../../../evidence/community/actas/meeting-lineage-index-v1.json">índice público de linaje de reuniones</a> y la <a href="../actas-2011-2022/">cronología legible</a> siguen disponibles directamente.</p></noscript>
         <div class="acta-room-list" data-acta-list aria-live="polite"></div>
       </div>
     </section>

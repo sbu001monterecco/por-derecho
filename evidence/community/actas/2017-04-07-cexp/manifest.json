@@ -1,58 +1,74 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "SP-ACTA-2017-04-07-CEXP",
   "slug": "2017-04-07-cexp",
   "date": "2017-04-07",
-  "body": "Comunidad de Explotación (CEXP)",
+  "body": "CEXP",
   "meeting_type": "extraordinary",
   "language": "es",
-  "status": "located-package-partial",
+  "status": "located-package-digitised-public",
   "complete_public_text": false,
   "privacy_level": "public-redacted",
-  "artifact_kind": "public-redacted-text-edition",
-  "redacted_facsimile_available": false,
-  "source_page_images_available": false,
-  "native_page_count": null,
-  "native_page_count_status": "not-established-from-certified-native",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "native_page_count": 2,
+  "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 2,
   "public_pdf_page_count": 3,
   "source": {
-    "filename": "ACTA Comunidad de Explotación (CEXP) - 2017-04-07.pdf",
-    "pages": 2,
+    "filename": "copia digital de trabajo",
     "bytes": 84535,
-    "sha256": "e2612c11bb243893492b4a490c37ccdada270a8400d5764e8e309a674c95736f",
-    "variant_note_es": "Exportación PDF de dos páginas de un documento de trabajo. Se retiran domicilio, identificador, relación nominal, unidades y firmas. Texto extraído no certificado y sin cotejo manual línea por línea.",
-    "variant_note_en": "Two-page PDF export of a working document. Address, identifier, nominal attendance, unit details and signatures are removed. Extracted text is not certified and has not been manually checked line by line.",
-    "additional_known_variants": [],
-    "native_publication": false
+    "sha256": "da872ab6f5d4dd810342a3d24772e9bce42db37572f82afb2c743fd44b3f7f23",
+    "pages": 2,
+    "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
+    "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+    "native_publication": false,
+    "variants_recorded": 0
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2017-04-07-cexp/transcript-es.md",
     "provenance": "evidence/community/actas/2017-04-07-cexp/provenance.md",
     "redaction_log": "evidence/community/actas/2017-04-07-cexp/redaction-log.md",
     "pdf": "assets/docs/community-actas/2017-04-07-cexp-public-redacted-es.pdf",
-    "pdf_sha256": "ebb8aaf0c1f98ded37c72e70edb8f891b6b0f71dba89040f6557f539ccc3694d",
+    "pdf_sha256": "1384531d35c5b907dfa38a599931502cfdce75efb641a85825e884a98a2f2d16",
     "pdf_pages": 3,
     "preview_pages": [
-      "assets/evidence/community-actas/2017-04-07-cexp/page-001.webp",
-      "assets/evidence/community-actas/2017-04-07-cexp/page-002.webp",
-      "assets/evidence/community-actas/2017-04-07-cexp/page-003.webp"
+      "assets/evidence/community-actas/2017-04-07-cexp/page-001.jpg",
+      "assets/evidence/community-actas/2017-04-07-cexp/page-002.jpg",
+      "assets/evidence/community-actas/2017-04-07-cexp/page-003.jpg"
     ],
-    "preview_count": 3
+    "preview_count": 3,
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2017-04-07-cexp-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "dc685f8af425d9e1bfb7fad77dc8544dc678e92e2f0fd357e043066d17896ac5",
+    "redacted_source_facsimile_pages": 2,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2017-04-07-cexp/page-001.jpg",
+      "assets/evidence/community-actas-source/2017-04-07-cexp/page-002.jpg"
+    ],
+    "source_preview_count": 2
   },
   "quality_control": {
     "source_page_count_verified": true,
     "pdf_reopened": true,
     "all_pdf_pages_rendered": true,
-    "privacy_scan": "pass",
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
     "ocr_not_certified": true,
     "manual_source_line_verification": false,
-    "visual_pdf_sample_review": false
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false
   },
   "redaction_categories": [
-    "identificador-contacto-domicilio",
-    "lista-asistentes-representaciones",
-    "nombre-personal"
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
   ],
-  "created": "2026-08-23"
+  "created": "2026-08-27",
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false
 }

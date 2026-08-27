@@ -43,41 +43,50 @@
     <section class="acta-room-hero">
       <div class="shell acta-room-hero-grid">
         <div>
-          <p class="eyebrow">Public source room · updated 23 August 2026</p>
-          <h1>ACTA texts, files and source-image status—with every gap visible.</h1>
-          <p class="lead">This room separates what has been located from what has passed the complete public-package test. Search meeting records, open the available public-safe text editions, and see whether redacted source facsimiles and source-page images exist or remain pending.</p>
+          <p class="eyebrow">Public source room · updated 27 August 2026</p>
+          <h1>Seventeen located ACTA families are digitised and posted—with every remaining gap visible.</h1>
+          <p class="lead">For every located control copy, this room now provides page-sequenced public text, a rendered text-edition PDF, an irreversibly redacted source facsimile and redacted source-page images. The layers remain separate so that OCR is never presented as certified transcription and a received copy is never presented as the official minutes book.</p>
           <div class="actions"><a class="button" href="#records">Search the records</a><a class="button secondary" href="../minutes-2011-2022/">Read the evidential chronology</a></div>
         </div>
         <aside class="acta-room-rule" aria-label="Publication rule">
-          <strong>Public edition—not the original</strong>
-          <span>The currently indexed PDFs and thumbnails are rendered public text editions, not photographs or facsimiles of the native ACTA pages. Source-facsimile availability is reported separately. Nothing here is presented as the official diligenced book or a certified copy.</span>
+          <strong>Digitised copy—not a certified original</strong>
+          <span>Each record distinguishes the OCR/text edition from the separately generated source-page facsimile and image gallery. The latter are raster-only, irreversibly redacted derivatives of a located control copy. Nothing here is presented as the official diligenced book or a certified copy.</span>
         </aside>
       </div>
     </section>
 
     <section class="section" id="records">
-      <div class="shell" data-acta-room data-manifest="../../../evidence/community/actas/public-index.json" data-repo-root="../../../">
+      <div class="shell" data-acta-room data-manifest="../../../evidence/community/actas/meeting-lineage-index-v1.json" data-repo-root="../../../">
         <div class="section-head">
           <div><p class="kicker">ACTA source-family register</p><h2>Located, partial, referenced and absent are different states.</h2></div>
-          <p>The register is controlled by the public index. A card can say “complete public-safe package” only when its full public text, rendered text-edition PDF/pages, redacted source facsimile/source-page images and integrity manifest are all present.</p>
+          <p>The public index controls this register. “Digitised and posted” means all four public layers exist for the located control copy; it does not mean the OCR was manually certified line by line, every historical variant is authentic, or every referenced annex has been found.</p>
         </div>
 
-        <div class="acta-room-boundary" role="note"><strong>22 June 2011 correction:</strong> the earlier public material remains a structured redacted digest. A separate page-sequenced, OCR-assisted public text edition is now available below, but it is not yet a manually verified line-by-line transcription or source facsimile. The card therefore remains partial.</div>
+        <div class="acta-room-boundary" role="note"><strong>Current publication state:</strong> 17 located ACTA families, 246 source pages, 17 raster-only redacted source facsimiles and 246 redacted source images are posted. Each family also has a page-sequenced OCR text package and rendered text-edition PDF. OCR remains uncertified and not manually verified line by line. The standalone 20 November 2018 ACTA and the president's statement/objection annexes mentioned in the located 10 August 2012 ACTA remain unlocated.</div>
+
+        <div class="acta-perimeter-legend" aria-label="Meeting perimeter legend">
+          <div class="acta-perimeter-chip" data-perimeter="pre_sale_montelanza"><strong>Montelanza · pre-sale</strong><span>Before the June 2008 asset transaction.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="project_lpb_aweswell_gil"><strong>Project · Multimatrix/LPB → Aweswell/LPB–Gil</strong><span>Date-specific project succession; it does not attribute pre-entry acts to Gil.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="adverse_montelanza_molina"><strong>Alleged adverse · Montelanza/Molina–Pamanil</strong><span>Gil's attributed alignment; acts and offices remain individually sourced.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="adverse_acosta_matos"><strong>Alleged adverse · Acosta Matos/CAM</strong><span>Later attributed phase; not a finding of joint action or guilt.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="mixed_or_contested"><strong>Mixed / contested</strong><span>Cross-perimeter attendance or unresolved convener.</span></div>
+          <div class="acta-perimeter-chip" data-perimeter="unresolved"><strong>Unresolved</strong><span>No classification is forced where the primary source is insufficient.</span></div>
+        </div>
 
         <div class="acta-room-controls" role="search" aria-label="Filter ACTA records">
           <div class="acta-room-field"><label for="acta-search-en">Search date, ID or subject</label><input id="acta-search-en" type="search" data-acta-search placeholder="For example: 2016, CEXP, 18 May…" autocomplete="off"></div>
-          <div class="acta-room-field"><label for="acta-filter-en">Record type or status</label><select id="acta-filter-en" data-acta-filter><option value="all">All records</option><option value="owners">Owners’ Community</option><option value="cexp">CEXP</option><option value="event">Non-ACTA event</option><option value="reference">Later reference</option><option value="complete">Complete public packages</option><option value="open">Partial / open records</option></select></div>
+          <div class="acta-room-field"><label for="acta-filter-en">Record type, status or perimeter</label><select id="acta-filter-en" data-acta-filter><option value="all">All records</option><option value="owners">Owners’ Community</option><option value="cexp">CEXP</option><option value="event">Non-ACTA event</option><option value="reference">Later reference</option><option value="complete">Digitised public packages</option><option value="open">Missing / unresolved records</option><option value="perimeter:pre_sale_montelanza">Montelanza · pre-sale</option><option value="perimeter:project_lpb_aweswell_gil">Project · LPB/Aweswell/Gil</option><option value="perimeter:adverse_montelanza_molina">Alleged adverse · Montelanza/Molina</option><option value="perimeter:adverse_acosta_matos">Alleged adverse · Acosta Matos/CAM</option><option value="perimeter:mixed_or_contested">Mixed / contested</option><option value="perimeter:unresolved">Unresolved</option></select></div>
           <p class="acta-room-count" data-acta-count aria-live="polite">Loading records…</p>
         </div>
 
         <div class="acta-room-stats" aria-label="Publication status summary">
           <div class="acta-room-stat"><span>Indexed events</span><strong data-stat-total>—</strong></div>
-          <div class="acta-room-stat"><span>Complete public packages</span><strong data-stat-complete>—</strong></div>
-          <div class="acta-room-stat"><span>Located but partial</span><strong data-stat-partial>—</strong></div>
-          <div class="acta-room-stat"><span>All open states</span><strong data-stat-open>—</strong></div>
+          <div class="acta-room-stat"><span>Digitised public packages</span><strong data-stat-complete>—</strong></div>
+          <div class="acta-room-stat"><span>Located but not digitised</span><strong data-stat-partial>—</strong></div>
+          <div class="acta-room-stat"><span>Missing / unresolved</span><strong data-stat-open>—</strong></div>
         </div>
 
-        <noscript><p class="acta-room-noscript">JavaScript is needed for the searchable cards. The underlying <a href="../../../evidence/community/actas/public-index.json">public ACTA index</a> and the <a href="../minutes-2011-2022/">human-readable chronology</a> remain directly available.</p></noscript>
+        <noscript><p class="acta-room-noscript">JavaScript is needed for the searchable cards. The underlying <a href="../../../evidence/community/actas/meeting-lineage-index-v1.json">public meeting-lineage index</a> and the <a href="../minutes-2011-2022/">human-readable chronology</a> remain directly available.</p></noscript>
         <div class="acta-room-list" data-acta-list aria-live="polite"></div>
       </div>
     </section>

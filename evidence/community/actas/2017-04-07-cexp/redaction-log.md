@@ -1,21 +1,15 @@
-# Registro de redacciones - SP-ACTA-2017-04-07-CEXP
+# Registro de redacciones - 2017-04-07-cexp
 
-## Regla de publicación
+La fuente privada no se altera. La copia pública es rasterizada y todas las redacciones están quemadas; no existe capa de texto oculta en el facsímil.
 
-Se conserva la posición de cada página fuente, sustituyendo mediante marcadores expresos las capas no aptas para publicación. La edición pública no reconstruye firmas, listados nominales, domicilios, datos de contacto, identificadores, datos bancarios ni tablas privadas por propietario, finca, deuda o voto.
-
-## Categorías aplicadas
-
-- `identificador-contacto-domicilio`
-- `lista-asistentes-representaciones`
-- `nombre-personal`
+| Página fuente | Alcance | Motivo |
+|---:|---|---|
+| 1 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 2 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
 
 ## Control de calidad
 
-- OCR o extracción no certificado: `true`
-- Cotejo manual línea por línea: `false`
-- Texto público completo: `false`
-- Facsímil público de fuente: `false`
-- Imágenes públicas de páginas fuente: `false`
-
-Una redacción puede abarcar una página completa cuando separar texto sustantivo de datos privados no puede hacerse con seguridad a partir de la copia de trabajo.
+- Todas las páginas de la copia fuente están contabilizadas: `true`
+- Facsímil raster sin texto oculto: `true`
+- OCR certificado línea por línea: `false`
+- Fuente privada publicada: `false`

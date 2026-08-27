@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.0",
+  "id": "SP-ACTA-2012-08-10",
+  "slug": "2012-08-10",
+  "date": "2012-08-10",
+  "body": "Comunidad de Propietarios",
+  "meeting_type": "ordinary",
+  "language": "es",
+  "status": "located-package-digitised-public",
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "complete_public_text": false,
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false,
+  "native_page_count": 4,
+  "native_page_count_status": "verified-for-located-control-copy",
+  "source_variant_page_count": 4,
+  "source": {
+    "filename": "ACTA nativa DOCX de cuatro páginas",
+    "bytes": 24597,
+    "sha256": "b978bd03ca4a8138f9d1a704cb4717f9cbfb1a090632b6f7dbb33c25b9c4871d",
+    "pages": 4,
+    "variant_note_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación; siguen sin localizarse el escrito del presidente y la objeción anunciados como anexos.",
+    "variant_note_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote; the president's statement and announced objection annex remain unlocated.",
+    "native_publication": false,
+    "variants_recorded": 2
+  },
+  "redaction_categories": [
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
+  ],
+  "created": "2026-08-27",
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2012-08-10/transcript-es.md",
+    "provenance": "evidence/community/actas/2012-08-10/provenance.md",
+    "redaction_log": "evidence/community/actas/2012-08-10/redaction-log.md",
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2012-08-10-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "fa33f58a2c8af49e3aaad7c42fe30c40758082ab775fabcf389d498bf85c9b5d",
+    "redacted_source_facsimile_pages": 4,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2012-08-10/page-001.jpg",
+      "assets/evidence/community-actas-source/2012-08-10/page-002.jpg",
+      "assets/evidence/community-actas-source/2012-08-10/page-003.jpg",
+      "assets/evidence/community-actas-source/2012-08-10/page-004.jpg"
+    ],
+    "source_preview_count": 4,
+    "pdf_sha256": "dc6c622e189ca5562ce1d8967b887427bee5c66a30f6d37ddb99703c850366ee",
+    "pdf_pages": 5,
+    "preview_pages": [
+      "assets/evidence/community-actas/2012-08-10/page-001.jpg",
+      "assets/evidence/community-actas/2012-08-10/page-002.jpg",
+      "assets/evidence/community-actas/2012-08-10/page-003.jpg",
+      "assets/evidence/community-actas/2012-08-10/page-004.jpg",
+      "assets/evidence/community-actas/2012-08-10/page-005.jpg"
+    ],
+    "preview_count": 5,
+    "pdf": "assets/docs/community-actas/2012-08-10-public-redacted-es.pdf"
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false,
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true
+  },
+  "public_pdf_page_count": 5
+}

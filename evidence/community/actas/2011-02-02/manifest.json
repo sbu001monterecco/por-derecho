@@ -1,63 +1,82 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "SP-ACTA-2011-02-02",
   "slug": "2011-02-02",
   "date": "2011-02-02",
   "body": "Comunidad de Propietarios",
   "meeting_type": "ordinary",
   "language": "es",
-  "status": "located-package-partial",
+  "status": "located-package-digitised-public",
   "complete_public_text": false,
   "privacy_level": "public-redacted",
-  "artifact_kind": "public-redacted-text-edition",
-  "redacted_facsimile_available": false,
-  "source_page_images_available": false,
-  "native_page_count": null,
-  "native_page_count_status": "not-established-from-certified-native",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "native_page_count": 6,
+  "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 6,
   "public_pdf_page_count": 7,
   "source": {
-    "filename": "ACTA Comunidad de Propietarios - 2011-02-02.pdf",
-    "pages": 6,
+    "filename": "copia digital de trabajo",
     "bytes": 1370512,
     "sha256": "7c8e0d2342c27aa079ead16961d0c3a0ccca27e46e8fee2ee458087805965600",
-    "variant_note_es": "Copia Drive de seis páginas. Una página no aporta texto extraíble y otra contiene la relación nominal y representaciones. OCR o texto extraído no certificado y sin cotejo manual línea por línea.",
-    "variant_note_en": "Six-page Drive copy. One page has no usable extracted text and another contains the nominal attendance and representation list. OCR or extracted text is not certified and has not been manually checked line by line.",
-    "additional_known_variants": [],
-    "native_publication": false
+    "pages": 6,
+    "variant_note_es": "Se adopta la copia de seis páginas con secuencia coherente; otras dos variantes quedan identificadas.",
+    "variant_note_en": "The coherent six-page sequence is used; two other variants remain identified.",
+    "native_publication": false,
+    "variants_recorded": 2
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2011-02-02/transcript-es.md",
     "provenance": "evidence/community/actas/2011-02-02/provenance.md",
     "redaction_log": "evidence/community/actas/2011-02-02/redaction-log.md",
     "pdf": "assets/docs/community-actas/2011-02-02-public-redacted-es.pdf",
-    "pdf_sha256": "2ee8fff1f1954b702cd808238bca9777524558534601311568d25e863e7adeae",
+    "pdf_sha256": "caa234f2ffcbb50f635b40bb2e26ae21dbe0f90b77443e80f6cbf42329696d3e",
     "pdf_pages": 7,
     "preview_pages": [
-      "assets/evidence/community-actas/2011-02-02/page-001.webp",
-      "assets/evidence/community-actas/2011-02-02/page-002.webp",
-      "assets/evidence/community-actas/2011-02-02/page-003.webp",
-      "assets/evidence/community-actas/2011-02-02/page-004.webp",
-      "assets/evidence/community-actas/2011-02-02/page-005.webp",
-      "assets/evidence/community-actas/2011-02-02/page-006.webp",
-      "assets/evidence/community-actas/2011-02-02/page-007.webp"
+      "assets/evidence/community-actas/2011-02-02/page-001.jpg",
+      "assets/evidence/community-actas/2011-02-02/page-002.jpg",
+      "assets/evidence/community-actas/2011-02-02/page-003.jpg",
+      "assets/evidence/community-actas/2011-02-02/page-004.jpg",
+      "assets/evidence/community-actas/2011-02-02/page-005.jpg",
+      "assets/evidence/community-actas/2011-02-02/page-006.jpg",
+      "assets/evidence/community-actas/2011-02-02/page-007.jpg"
     ],
-    "preview_count": 7
+    "preview_count": 7,
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2011-02-02-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "a5208dc85665de31a6722b62a36b024a98d06b23bc14b2afc3a822b30d4c09c2",
+    "redacted_source_facsimile_pages": 6,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2011-02-02/page-001.jpg",
+      "assets/evidence/community-actas-source/2011-02-02/page-002.jpg",
+      "assets/evidence/community-actas-source/2011-02-02/page-003.jpg",
+      "assets/evidence/community-actas-source/2011-02-02/page-004.jpg",
+      "assets/evidence/community-actas-source/2011-02-02/page-005.jpg",
+      "assets/evidence/community-actas-source/2011-02-02/page-006.jpg"
+    ],
+    "source_preview_count": 6
   },
   "quality_control": {
     "source_page_count_verified": true,
     "pdf_reopened": true,
     "all_pdf_pages_rendered": true,
-    "privacy_scan": "pass",
+    "privacy_scan": "automated-pass-plus-contact-sheet-review-pass",
     "ocr_not_certified": true,
     "manual_source_line_verification": false,
-    "visual_pdf_sample_review": false
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false
   },
   "redaction_categories": [
-    "bloque-nominal-o-deuda",
-    "finca-individual",
-    "nombre-personal",
-    "relacion-nominal-finca-deuda-voto-firma"
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
   ],
-  "created": "2026-08-23"
+  "created": "2026-08-27",
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false
 }

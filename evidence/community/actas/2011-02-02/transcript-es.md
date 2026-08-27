@@ -1,23 +1,20 @@
 # Junta General Ordinaria de la Comunidad - 2 febrero 2011
 
-**Edición pública redactada, OCR-asistida y secuenciada por página fuente.**
+**Digitalización pública redactada, OCR-asistida y secuenciada por cada página de la copia localizada.**
 
 - ID: `SP-ACTA-2011-02-02`
-- Fecha de reunión atribuida: `2011-02-02`
+- Fecha atribuida: `2011-02-02`
 - Órgano: Comunidad de Propietarios
-- Copia utilizada: `ACTA Comunidad de Propietarios - 2011-02-02.pdf`
+- Fuente de control: `copia digital de trabajo`
 - Páginas fuente: 6
-- SHA-256 de la copia privada utilizada: `7c8e0d2342c27aa079ead16961d0c3a0ccca27e46e8fee2ee458087805965600`
-- Idioma de la fuente: español
-- Estado: copia localizada / paquete público parcial
+- SHA-256 de la fuente privada: `7c8e0d2342c27aa079ead16961d0c3a0ccca27e46e8fee2ee458087805965600`
+- Estado: copia localizada digitalizada y publicada con redacciones irreversibles
 
 ## Advertencia de uso
 
-Esta es una transcripción de lectura pública derivada de OCR o extracción de texto. No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. Las páginas se mantienen en la secuencia de la copia utilizada, pero los datos personales, firmas, domicilios, contactos, identificadores, cuentas bancarias, relaciones por propietario, finca, deuda o voto y material potencialmente privilegiado o reservado se sustituyen por marcadores explícitos.
+No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-No se adopta como hecho ninguna alegación contenida en la fuente. `complete_public_text` permanece en `false` porque no existe cotejo manual línea por línea con el original.
-
-**Control de variante:** Copia Drive de seis páginas. Una página no aporta texto extraíble y otra contiene la relación nominal y representaciones. OCR o texto extraído no certificado y sin cotejo manual línea por línea.
+**Control de variante:** Se adopta la copia de seis páginas con secuencia coherente; otras dos variantes quedan identificadas.
 
 ## Página fuente 1 de 6
 
