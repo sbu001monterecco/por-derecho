@@ -18,6 +18,8 @@ UUID_RE = re.compile(
     r"[89ab][0-9a-f]{3}-[0-9a-f]{12}(?![0-9a-f])",
     re.IGNORECASE,
 )
+EMAIL_RE = re.compile(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.IGNORECASE)
+PHONE_RE = re.compile(r"\+[0-9][0-9 ()-]{8,}[0-9]")
 
 TEXT_REQUIRED = [
     Path("evidence/ricpe-cnmv/2026-08-27/resolution.txt"),
@@ -29,8 +31,8 @@ PUBLIC_PDF = Path(
     "RICPE_Canal_Etico_Certificado_Resolucion_27AGO2026_PUBLICO_REDACTADO.pdf"
 )
 PUBLIC_ARTIFACTS = {
-    PUBLIC_PDF: "1571939659af5df4891157958ebfc041748768d96a70bdf45aa6c3e247c65470",
-    Path("evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-1.jpg"): "a93c14b5b0259e845023967d943f7ae91b34e9b3e8e44370fa940fe01a7c64ed",
+    PUBLIC_PDF: "8fbb2d3a6779715d41c206b83e1721f681a1a1ac6c64189d31c84f1b6465c333",
+    Path("evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-1.jpg"): "45938505f61bb48acda22b032ae4f37e378a716caa849861621f79edde92ceb2",
     Path("evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-2.jpg"): "952d2860c98c2be5dd132d089f62040c103387b174eb402785d169474639b0bc",
     Path("evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-3.jpg"): "1060eae25e58f889126a39821a0754aaf7bc04bafb7998824f2b60c30785f9bc",
     Path("evidence/ricpe-cnmv/2026-08-27/resolution-pages-public-redacted/page-4.jpg"): "3bcf8bd19c4fdfb7483c639cc6cb2b8b25849f9c324d22c5d931133b4f278af2",
@@ -130,6 +132,10 @@ elif (ROOT / PUBLIC_PDF).is_file():
             errors.append("private RICPE communication identifier remains in public PDF")
         if "ID PRIVADO REDACTADO" not in result.stdout:
             errors.append("public PDF lacks the visible private-ID redaction label")
+        if EMAIL_RE.search(result.stdout) or PHONE_RE.search(result.stdout):
+            errors.append("personal contact data remains extractable from public PDF")
+        if result.stdout.count("DATO PERSONAL REDACTADO") != 2:
+            errors.append("public PDF lacks both contact-data minimisation labels")
 
 resolution = (ROOT / TEXT_REQUIRED[0]).read_text(encoding="utf-8")
 if "Correlación pública (SHA-256 del código privado)" not in resolution:
@@ -140,8 +146,14 @@ if "Código de comunicación:" in resolution:
 index = (ROOT / "evidence/ricpe-cnmv/2026-08-27/index.html").read_text(
     encoding="utf-8"
 )
-if PUBLIC_PDF.name not in index or "identificador privado redactado" not in index:
-    errors.append("public evidence page does not identify and link the redacted derivative")
+if (
+    PUBLIC_PDF.name not in index
+    or "identificador privado" not in index
+    or "datos personales de contacto redactados" not in index
+):
+    errors.append(
+        "public evidence page does not identify the ID- and contact-minimised derivative"
+    )
 
 if errors:
     print("RICPE CHANNEL IDENTIFIER PRIVACY: FAIL", file=sys.stderr)
@@ -154,3 +166,4 @@ print("- approved fingerprint present in all three controlled text files")
 print("- obsolete unredacted PDF/image paths absent from the current tree")
 print("- redacted PDF and six public renders match their controlled hashes")
 print("- current-tree text and extracted public-PDF text contain no protected identifier")
+print("- extracted public-PDF text contains no email address or international phone number")
