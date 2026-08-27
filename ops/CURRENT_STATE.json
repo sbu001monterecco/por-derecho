@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.operational-truth.current-state.v2",
   "record_type": "CURRENT_STATE_CONTRACT_WITH_LAST_OBSERVATION",
-  "control_date": "2026-08-26",
+  "control_date": "2026-08-27",
   "purpose": "Authoritative routing for repository, deployment and rollback state. Specialist case, evidence, procedural and reader-facing facts remain authoritative in their own controlled state files.",
   "authority": {
     "current_repository_truth": "Resolve refs/heads/main dynamically through GitHub or local git at execution time.",
@@ -60,8 +60,8 @@
       "path": "assets/data/matter-identity-registry-v1.json",
       "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
       "counts": {
-        "total": 204,
-        "PERSON": 87,
+        "total": 205,
+        "PERSON": 88,
         "ORGANISATION": 71,
         "STRUCTURE": 10,
         "INSTITUTION": 18,
@@ -91,12 +91,22 @@
   "current_priority_sources": [
     "PRIORITY_ACTIONS_START_HERE.md",
     "ops/CURRENT_UNITARY_STATE.json",
+    "archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md",
     "archive/JUAN_JOSE_VERA_MEETING_POINT_MARCH_2018_CONTINUITY_CONTROL_27AUG2026.md",
     "docs/deletion-audits/2026-08-27-vera-meeting-point-march-2018-continuity-audit.md",
     "docs/deletion-audits/2026-08-25-unitary-repository-website-valencia-thread-closeout.md",
     "docs/deletion-audits/2026-08-25-financing-counsel-email-and-unitary-redigest-closeout.md",
     "docs/deletion-audits/2026-08-25-professional-register-thread-redigest-closeout.md"
   ],
+  "identity_overrides": {
+    "juan_jose_vera_diaz": {
+      "caepr_id": "PD-SP-P-0088",
+      "state": "CARET_CONFIRMED",
+      "scope": "CAIC ↔ FTI / Meeting Point person identity continuity",
+      "control": "archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md",
+      "rule": "New threads use Juan José Vera Díaz^ for the person identity while proving date-specific capacity, exact legal entity, conduct, relationships and source authenticity separately. The LinkedIn profile string ‘Community of Madrid, Spain’ is location, not evidence of public employment."
+    }
+  },
   "boundaries": [
     "This checked-in observation is not permanent current truth.",
     "A successful Pages build is not the same as route-specific public-content verification.",
