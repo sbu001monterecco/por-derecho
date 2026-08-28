@@ -1,14 +1,14 @@
 # Current Legal and Professional Advisers — Classification Control
 
 **Control date:** 28 August 2026  
-**Purpose:** Canonical classification record for the Por Derecho / Project Sun Rock repository and public website. This file is intended to prevent current, historical, prospective or approved advisers from being accidentally classified as adverse parties merely because their names or firms appear in litigation, correspondence, evidence or third-party materials.
+**Purpose:** Canonical classification record for the Por Derecho / Project Sun Rock repository and public website. This file is intended to prevent current, historical, prospective or pre-approved advisers from being accidentally classified as adverse parties merely because their names or firms appear in litigation, correspondence, evidence or third-party materials.
 
 ## Mandatory classification rule
 
 Every lawyer, law firm, procurador or professional adviser must be assigned an explicit role/status before public presentation or actor-matrix classification. The approved status vocabulary is:
 
 1. `OUR CURRENT ADVISER`
-2. `OUR APPROVED LEGAL ADVISER — NO LIVE MANDATE IMPLIED`
+2. `OUR PRE-APPROVED LEGAL ADVISER — NO LIVE MANDATE IMPLIED`
 3. `OUR HISTORICAL ADVISER`
 4. `PROSPECTIVE / ENGAGEMENT STATUS TO BE CONFIRMED`
 5. `THIRD-PARTY LAWYER / PROFESSIONAL`
@@ -54,19 +54,23 @@ No person or firm may be moved into `ADVERSE-PARTY LAWYER / PROFESSIONAL` merely
 - **Role:** Adviser within the group's legal perimeter in matters evidenced by correspondence. Recent correspondence concerns review and re-ordering of outstanding matters.
 - **Safeguard:** Do not classify as adverse merely because his name occurs in legacy litigation or older case materials.
 
-## Fieldfisher — firm-level approved adviser classification
+## Fieldfisher — firm-level pre-approved adviser classification
 
 ### Fieldfisher Spain and Fieldfisher UK
 
-- **Status:** `OUR APPROVED LEGAL ADVISER — NO LIVE MANDATE IMPLIED`
-- **Public presentation:** **Fieldfisher — Approved Legal Adviser to the Group***
-- **Geographic scope:** Spain and United Kingdom.
-- **Named-lawyer public rule:** **Do not publicly list specific Fieldfisher lawyers.** Public website references should be at firm level only unless the Group later expressly authorises individual attribution.
+- **Status:** `OUR PRE-APPROVED LEGAL ADVISER — NO LIVE MANDATE IMPLIED`
+- **Public presentation:** **Fieldfisher — Pre-Approved Legal Adviser to the Group***
+- **Geographic emphasis:** Spain and United Kingdom within Fieldfisher's wider international network.
+- **Meaning:** The Group, an affiliate and/or one or more Group principals have previously completed relevant client-acceptance, KYC and/or onboarding processes with Fieldfisher. The history may also include a prior assignment, proposed assignment, pre-assignment or engagement discussion, depending on the entity and matter. The status records that a new or renewed engagement may be possible.
+- **Fresh-clearance boundary:** Pre-approved status does **not** waive or prejudge any fresh conflict check, client/matter acceptance, KYC refresh, engagement-letter process or other internal clearance the relevant Fieldfisher office or legal entity may require before taking a new instruction.
+- **No-live-mandate boundary:** Pre-approved status does **not** mean that Fieldfisher currently has a live mandate, is presently instructed on any particular matter, or is carrying out an active legal workstream for the Group.
+- **Network precision:** Do not imply that every Fieldfisher office or legal entity worldwide has independently completed the same onboarding. Public wording should emphasise the Group's pre-approved relationship particularly with the UK and Spanish businesses within Fieldfisher's international platform.
+- **Named-lawyer public rule:** **Do not publicly list specific Fieldfisher lawyers** unless the Group later expressly authorises individual attribution.
 - **Repository rule:** Individual lawyer names may be retained in the repository record where necessary to preserve correspondence provenance, chronology, conflict-check history, introductions or professional-contact continuity. Their presence in the repository does not itself establish a live retainer, live instruction or active workstream.
 
 ### Required public asterisk
 
-> ***Approved Legal Adviser** denotes a law firm approved by the Group as part of its legal-adviser perimeter. It does **not** by itself mean that the firm has a live current mandate, is presently instructed on a matter, or is carrying out an active legal workstream at the date of publication.*
+> ***Pre-Approved Legal Adviser** denotes a law firm with which the Group, an affiliate and/or one or more Group principals have previously completed relevant client-acceptance, KYC and/or onboarding processes and where a new or renewed engagement may be possible. It does **not** mean that the firm has a live current mandate, is presently instructed on a matter, or has completed any fresh matter-specific conflict, acceptance, KYC-refresh or engagement process that may be required before a new instruction is accepted.*
 
 This qualification must travel with any public-facing Fieldfisher reference unless the surrounding text already makes the same limitation unmistakably clear.
 
@@ -74,12 +78,12 @@ This qualification must travel with any public-facing Fieldfisher reference unle
 
 Recommended public adviser entry:
 
-**Fieldfisher — Approved Legal Adviser to the Group***  
-Spain and United Kingdom.
+**Fieldfisher — Pre-Approved Legal Adviser to the Group***  
+International platform; relationship emphasis: Spain and United Kingdom.
 
-***Approved Legal Adviser** denotes a firm approved by the Group as part of its legal-adviser perimeter. It does not by itself mean that the firm has a live current mandate, is presently instructed on a matter, or is carrying out an active legal workstream at the date of publication.*
+***Pre-Approved Legal Adviser** records prior relevant client acceptance/KYC/onboarding and present potential for a new or renewed engagement. It does not by itself mean a live mandate and does not replace any fresh matter-specific conflict, client acceptance, KYC-refresh or engagement process required before a new instruction.*
 
-Do not display individual Fieldfisher lawyer names on the public adviser page.
+Do not display individual Fieldfisher lawyer names on the public adviser page unless later expressly authorised.
 
 ## Actor-map / evidence-graph safeguard
 
@@ -89,13 +93,15 @@ For Fieldfisher use:
 
 ```yaml
 entity: Fieldfisher
-relationship_to_group: OUR APPROVED LEGAL ADVISER — NO LIVE MANDATE IMPLIED
-jurisdictions:
+relationship_to_group: OUR PRE-APPROVED LEGAL ADVISER — NO LIVE MANDATE IMPLIED
+jurisdictions_emphasised:
   - Spain
   - United Kingdom
 public_named_individuals: false
 live_mandate_implied: false
 active_workstream_implied: false
+fresh_conflict_clearance_may_be_required: true
+fresh_client_acceptance_may_be_required: true
 public_footnote_required: true
 ```
 
