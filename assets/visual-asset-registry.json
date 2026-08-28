@@ -100,6 +100,74 @@
       "alt_en": "Francisco Mario Matos Matas",
       "alt_es": "Francisco Mario Matos Matas"
     },
+    "person.fernando-aguiar-acosta.primary": {
+      "subject_type": "person",
+      "canonical_name": "Fernando Aguiar Acosta",
+      "short_label": "Fernando Aguiar Acosta / proposed witness",
+      "roles": [
+        "Proposed fact / records-custody witness",
+        "Public-profile sequence: RIC Private Equity, Belagua/ACHM and Colliers"
+      ],
+      "path": "assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+      "git_blob_sha": "79ed3679f0ca570301997ec93b4ccc2f62c2e1b5",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Public LinkedIn profile image retrieved from and matched to the exact named profile URL for Fernando Aguiar Acosta on 28 August 2026. Identity is attributed by that named profile and exact URL; no facial-recognition inference was performed.",
+      "approved_contexts": [
+        "Acosta Matos family page provisional witness lane",
+        "IREA / RICPE / Colliers continuity dossier",
+        "RICPE genealogy cross-link",
+        "proposed witness and records-preservation materials"
+      ],
+      "alt_en": "Public LinkedIn profile photograph attributed by the named profile to Fernando Aguiar Acosta",
+      "alt_es": "Fotografía del perfil público de LinkedIn atribuida por el perfil nominal a Fernando Aguiar Acosta",
+      "do_not_confuse_with": [
+        "person.laura-aguiar-acosta.primary"
+      ],
+      "source_provenance": {
+        "source_page": "https://www.linkedin.com/in/fernando-aguiar-acosta-894679235/",
+        "capture_date": "2026-08-28",
+        "captured_at": "2026-08-28T20:04:22.700Z",
+        "sha256": "7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466",
+        "dimensions": "800x800",
+        "format": "png",
+        "profile_match_basis": "Exact named public profile header and URL"
+      },
+      "storage_mode": "repository-byte-locked"
+    },
+    "person.laura-aguiar-acosta.primary": {
+      "subject_type": "person",
+      "canonical_name": "Laura Aguiar Acosta",
+      "short_label": "Laura Aguiar Acosta / proposed witness",
+      "roles": [
+        "Proposed fact / records-custody witness",
+        "Canarian Hospitality placement naming MYND Yaiza and Radisson Blu Lanzarote"
+      ],
+      "path": "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+      "git_blob_sha": "313b8adcaa2a9b718f6c1c707c881e59d8dcd9e7",
+      "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
+      "identity_basis": "Public LinkedIn profile image retrieved from and matched to the exact named profile URL for Laura Aguiar Acosta on 28 August 2026. Identity is attributed by that named profile and exact URL; no facial-recognition inference was performed.",
+      "approved_contexts": [
+        "Acosta Matos family page provisional witness lane",
+        "IREA / RICPE / Colliers continuity dossier",
+        "RICPE genealogy cross-link",
+        "proposed witness and records-preservation materials"
+      ],
+      "alt_en": "Public LinkedIn profile photograph attributed by the named profile to Laura Aguiar Acosta",
+      "alt_es": "Fotografía del perfil público de LinkedIn atribuida por el perfil nominal a Laura Aguiar Acosta",
+      "do_not_confuse_with": [
+        "person.fernando-aguiar-acosta.primary"
+      ],
+      "source_provenance": {
+        "source_page": "https://www.linkedin.com/in/laura-aguiar-acosta/",
+        "capture_date": "2026-08-28",
+        "captured_at": "2026-08-28T20:04:23.748Z",
+        "sha256": "d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e",
+        "dimensions": "800x800",
+        "format": "jpg",
+        "profile_match_basis": "Exact named public profile header and URL"
+      },
+      "storage_mode": "repository-byte-locked"
+    },
     "composite.acosta-matos-family-hotel-plans.source-v1": {
       "subject_type": "object",
       "canonical_name": "Acosta Matos family / hotel-plans source image",
@@ -137,8 +205,8 @@
         "San Telmo / RICPE same-asset visualization",
         "documents and email exports"
       ],
-      "alt_en": "Aerial view of the Sun Park hotel complex, currently MYND Yaiza",
-      "alt_es": "Vista aérea del complejo hotelero Sun Park, actualmente MYND Yaiza"
+      "alt_en": "Aerial view of the Sun Park hotel complex, currently marketed as MYND Yaiza",
+      "alt_es": "Vista aérea del complejo hotelero Sun Park, actualmente comercializado como MYND Yaiza"
     },
     "composite.san-telmo-ricpe-sun-park-stamp-v1": {
       "subject_type": "object",

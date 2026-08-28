@@ -1,8 +1,8 @@
 # Acosta Matos family page — visual, identity and profile control
 
 **Control date:** 28 August 2026  
-**Scope:** Gerardo Nicanor Acosta Armas; Javier, Laura Patricia, José Daniel and Gerardo Zacarías Acosta Matos; bilingual family pages  
-**Public pages:** `es/familia-acosta-matos/index.html` and `en/acosta-matos-family/index.html`  
+**Scope:** Gerardo Nicanor Acosta Armas; Javier, Laura Patricia, José Daniel and Gerardo Zacarías Acosta Matos; separate provisional Fernando and Laura Aguiar Acosta proposed-witness lane; bilingual family pages
+**Public pages:** `es/acosta-matos-familia/index.html` and `en/acosta-matos-family/index.html`
 **Status:** `SOURCE-ATTRIBUTED VISUAL REGISTER / NO FACIAL-RECOGNITION DETERMINATION / ACTOR-SPECIFIC CONDUCT OPEN`
 
 ## 1. Controlled identities
@@ -54,11 +54,25 @@ Forbes Women presents Laura Acosta as a Gran Canaria businesswoman and lawyer sp
 
 This profile proves what Forbes published. It does not substitute company-by-company BORME verification of office, duration, mandate, act, knowledge, benefit or responsibility. The family pages therefore preserve it as an attributed public profile and separately link the 2-February-2024 BORME entry for Grupo Patrimonial Acosta Matos, S.L.
 
-## 4. Death and patrimonial-harm control
+## 4. Fernando and Laura Aguiar Acosta — separate provisional witness lane
+
+The confirmed family denominator remains the founder plus four children above. Gil Marer identifies **Fernando Aguiar Acosta** (`PD-SP-P-0088`) and **Laura Aguiar Acosta** (`PD-SP-P-0095`) as siblings and provisionally links them to the Acosta Matos family perimeter. No primary or reliable public source located on 28 August 2026 independently verifies either family proposition. The bilingual tree therefore places them outside the confirmed denominator and renders the relationship edges in dashed amber.
+
+Source-attributed, byte-locked profile assets:
+
+- Fernando: `assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png`; SHA-256 `7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466`; exact named profile <https://www.linkedin.com/in/fernando-aguiar-acosta-894679235/>.
+- Laura: `assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg`; SHA-256 `d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e`; exact named profile <https://www.linkedin.com/in/laura-aguiar-acosta/>.
+- Laura experience exhibit: `assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg`; SHA-256 `f6581bfa4d804c6d6fb3de654e9faa09f3781c2ac3fff2f123162209363e2964`.
+
+The Laura exhibit directly reports Canarian Hospitality work with the controllers of MYND Yaiza and Radisson Blu Lanzarote, internal-expense controls and legal-department hotel purchase/management processes. Official corporate sources separately connect both hotels to RICPE financing and Canarian management. The controlled physical-asset wording is **Sun Park, currently marketed as MYND Yaiza**; RICPE's source page uses “former Sun Park”. Neither profile establishes direct Laura employment at RICPE, family status, IREA/Colliers/Meridian knowledge, coordination, wrongdoing or liability.
+
+Both persons are classified only as proposed fact / records-custody witnesses, not adverse actors. The repository does not contact or summon them.
+
+## 5. Death and patrimonial-harm control
 
 Gerardo Nicanor Acosta Armas's death does not transfer personal criminal responsibility to descendants. It also does not erase historical acts, communications, source records, causation evidence, assets, benefits, succession questions or alleged patrimonial harm that may remain relevant through legally available civil, patrimonial, restitutionary or actor-specific routes. The exact civil date of death remains open pending a primary or equivalent reliable source; public reporting establishes March 2024.
 
-## 5. Publication limits
+## 6. Publication limits
 
 1. Do not present arrow labels as automated identification.
 2. Do not move acts or culpability between the founder and the four children by family relationship.
@@ -66,3 +80,6 @@ Gerardo Nicanor Acosta Armas's death does not transfer personal criminal respons
 4. Do not conflate Laura Patricia Acosta Matos with Patricia Domínguez.
 5. Preserve source attributions and correction routes beside the images.
 6. If external image hosting changes, localise an authorised/source-preserving copy and update the manifest without silently replacing the photograph.
+7. Keep the Aguiar Acosta pair outside the confirmed five-person denominator until competent evidence resolves the attributed family relationships.
+8. Use solid burgundy only for documented professional facts and dashed amber for the attributed/unverified sibling and wider family edges.
+9. Use profile images by exact named source attribution, never by facial-recognition inference.

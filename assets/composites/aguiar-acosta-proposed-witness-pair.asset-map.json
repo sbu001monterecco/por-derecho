@@ -1,0 +1,28 @@
+{
+  "visual_id": "aguiar-acosta-proposed-witness-pair",
+  "title": "Aguiar Acosta proposed fact / records-custody witness pair",
+  "control_date": "2026-08-28",
+  "publication_status": "READY",
+  "slots": {
+    "left_profile_fernando_aguiar_acosta": "person.fernando-aguiar-acosta.primary",
+    "right_profile_laura_aguiar_acosta": "person.laura-aguiar-acosta.primary"
+  },
+  "slot_rules": {
+    "left_profile_fernando_aguiar_acosta": "Must use the exact source-attributed Fernando Aguiar Acosta profile asset.",
+    "right_profile_laura_aguiar_acosta": "Must use the exact source-attributed Laura Aguiar Acosta profile asset. Must not be substituted with Laura Patricia Acosta Matos or another person."
+  },
+  "relationship_visual_code": {
+    "documented_professional_facts": "SOLID_BURGUNDY",
+    "alleged_sibling_and_family_edges": "DASHED_AMBER"
+  },
+  "relationship_status": "ALLEGED_FERNANDO_LAURA_SIBLING_RELATIONSHIP_UNVERIFIED",
+  "attributed_to": "Gil Marer",
+  "boundary": "The component identifies two proposed fact / records-custody witnesses, not adverse actors. It must not present kinship, Acosta Matos family membership, direct Laura employment by RICPE, knowledge, coordination, wrongdoing or liability as established.",
+  "experience_exhibit": {
+    "path": "assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg",
+    "sha256": "f6581bfa4d804c6d6fb3de654e9faa09f3781c2ac3fff2f123162209363e2964",
+    "dimensions": "691x1536",
+    "source_status": "USER_SUPPLIED_LINKEDIN_EXPERIENCE_CAPTURE",
+    "finding": "CANARIAN_HOSPITALITY_PLACEMENT_NAMING_MYND_YAIZA_AND_RADISSON_BLU_LANZAROTE; DIRECT_RICPE_EMPLOYMENT_NOT_SHOWN"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "publication_id": "PD-SP-AGUIAR-ACOSTA-WITNESS-PAIR-20260828-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-28",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PUBLICATION_AUTHORISED_LOCAL_VALIDATION_PASSED",
+  "purpose": "Publish a bilingual, source-controlled proposed-witness pair and provisional family-tree lane for Fernando Aguiar Acosta and Laura Aguiar Acosta, integrating Laura's Sun Park/MYND Yaiza and Radisson Blu Lanzarote experience evidence with the existing IREA/RICPE/ACHM/Colliers continuity audit.",
+  "identity_control": {
+    "fernando": {"caepr_id":"PD-SP-P-0088","name":"Fernando Aguiar Acosta","asset_id":"person.fernando-aguiar-acosta.primary"},
+    "laura": {"caepr_id":"PD-SP-P-0095","name":"Laura Aguiar Acosta","asset_id":"person.laura-aguiar-acosta.primary"},
+    "finite_continuity_result": "20/20 CARET_CONFIRMED",
+    "caret_boundary": "A caret resolves identity only; it does not prove employment, kinship, knowledge, intent, coordination, control, wrongdoing or liability."
+  },
+  "visual_evidence": {
+    "fernando_profile": {
+      "path": "assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+      "sha256": "7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466",
+      "dimensions": "800x800",
+      "source": "https://www.linkedin.com/in/fernando-aguiar-acosta-894679235/"
+    },
+    "laura_profile": {
+      "path": "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+      "sha256": "d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e",
+      "dimensions": "800x800",
+      "source": "https://www.linkedin.com/in/laura-aguiar-acosta/"
+    },
+    "laura_experience_exhibit": {
+      "path": "assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg",
+      "sha256": "f6581bfa4d804c6d6fb3de654e9faa09f3781c2ac3fff2f123162209363e2964",
+      "dimensions": "691x1536",
+      "source_status": "USER_SUPPLIED_NATIVE_BYTES"
+    },
+    "identity_method": "Exact named public profile and URL attribution; no facial-recognition inference."
+  },
+  "documented_links": [
+    "Fernando public-profile sequence: Grupo Acosta Matos, RIC Private Equity, Belagua/ACHM, Colliers",
+    "Laura public-profile placement: Canarian Hospitality, July-August 2024",
+    "Laura work description: MYND Yaiza and Radisson Blu Lanzarote controllers, internal-expense controls and legal-department hotel purchase/management processes",
+    "RICPE project pages: both hotels RICPE-financed and Canarian-managed",
+    "Canarian Hospitality launch notice: Grupo Acosta Matos financial/strategic backing"
+  ],
+  "nomenclature_control": {
+    "project_narrative_en": "Sun Park, currently marketed as MYND Yaiza",
+    "project_narrative_es": "Sun Park, actualmente comercializado como MYND Yaiza",
+    "source_literal": "RICPE uses the former/antiguo Sun Park formulation; preserve it only as an attributed source description."
+  },
+  "relationship_control": {
+    "status": "ALLEGED_FERNANDO_LAURA_SIBLING_RELATIONSHIP_UNVERIFIED",
+    "attributed_to": "Gil Marer",
+    "visual_code": "DASHED_AMBER",
+    "family_denominator_rule": "Fernando and Laura remain outside the confirmed five-person family denominator until competent evidence proves or excludes the asserted relationships."
+  },
+  "witness_control": {
+    "status": "PROPOSED_FACT_RECORDS_CUSTODY_WITNESS_PAIR_NOT_ADVERSE_ACTORS",
+    "contact_authorised": false,
+    "summons_authorised": false,
+    "filing_authorised": false,
+    "boundary": "The public record proposes bounded witness and preservation questions. It does not contact or summon either person and does not attribute misconduct or liability."
+  },
+  "expected_routes": {
+    "en": [
+      "en/acosta-matos-family/index.html",
+      "en/acosta-matos-perimeter/index.html",
+      "en/irea-colliers-meridian-sun-park/index.html",
+      "en/ric-private-equity-sun-park/index.html"
+    ],
+    "es": [
+      "es/acosta-matos-familia/index.html",
+      "es/acosta-matos-perimetro/index.html",
+      "es/irea-colliers-meridian-sun-park/index.html",
+      "es/ric-private-equity-sun-park/index.html"
+    ]
+  },
+  "route_anchors": {
+    "family_en": "/en/acosta-matos-family/#aguiar-acosta-proposed-witness-pair",
+    "family_es": "/es/acosta-matos-familia/#aguiar-acosta-proposed-witness-pair",
+    "acosta_en": "/en/acosta-matos-perimeter/#aguiar-acosta-proposed-witness-pair",
+    "acosta_es": "/es/acosta-matos-perimetro/#aguiar-acosta-proposed-witness-pair",
+    "unitary_en": "/en/irea-colliers-meridian-sun-park/",
+    "unitary_es": "/es/irea-colliers-meridian-sun-park/",
+    "ricpe_genealogy_en": "/en/ric-private-equity-sun-park/#aguiar-acosta-proposed-witness-pair",
+    "ricpe_genealogy_es": "/es/ric-private-equity-sun-park/#aguiar-acosta-proposed-witness-pair"
+  },
+  "supporting_files": [
+    "assets/data/irea-colliers-meridian-sun-park-unitary-v1.json",
+    "assets/visual-asset-registry.json",
+    "assets/composites/aguiar-acosta-proposed-witness-pair.asset-map.json",
+    "evidence/osint/2026-08-28-irea-colliers-meridian-fernando-aguiar-acosta.md",
+    "docs/deletion-audits/2026-08-28-achm-ac-hotel-tenerife-continuity.md",
+    "sitemap-acosta-matos-family.xml"
+  ],
+  "validation": {
+    "local": "PASS",
+    "pull_request": null,
+    "validated_head": null,
+    "merge_sha": null,
+    "pages_run_id": null,
+    "live_readback": "PENDING"
+  }
+}

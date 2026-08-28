@@ -208,8 +208,69 @@
     "evidence_status": "documented_party_statement",
     "availability": "public_web_minimized_capture",
     "publication": "public_safe",
-    "url": "https://es.linkedin.com/in/fernando-aguiar-acosta-894679235",
-    "notes": "Reports RIC Private Equity in Las Palmas de Gran Canaria from June to July 2024 and a summer-2026 Colliers Madrid Debt Advisory internship. Parentage, Acosta Matos family membership, Meridian work, legacy-record access and LPB knowledge are not established."
+    "url": "https://www.linkedin.com/in/fernando-aguiar-acosta-894679235/",
+    "notes": "Reports RIC Private Equity in Las Palmas de Gran Canaria from June to July 2024 and a summer-2026 Colliers Madrid Debt Advisory internship. The exact named public profile image is repository-preserved at assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png (800x800 PNG; SHA-256 7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466). Parentage, Acosta Matos family membership, Meridian work, legacy-record access and LPB knowledge are not established."
+  },
+  {
+    "id": "SRC-LINKEDIN-LAURA-AGUIAR-ACOSTA-2026",
+    "title": "Laura Aguiar Acosta public professional profile and visible experience panel",
+    "source_type": "public_professional_profile_statement",
+    "date": null,
+    "date_precision": "retrieval_date",
+    "date_label": "observed 28 August 2026",
+    "evidence_status": "documented_party_statement",
+    "availability": "public_web_minimized_capture",
+    "publication": "public_safe",
+    "url": "https://www.linkedin.com/in/laura-aguiar-acosta/",
+    "notes": "The current visible experience panel lists Deloitte, Canarian Hospitality (July-August 2024) and EY. The Canarian entry describes work with MYND Yaiza and Radisson Blu Lanzarote controllers, internal-expense controls and the legal department in hotel purchase and management processes. It does not show direct RIC Private Equity employment. The user-supplied native experience capture is repository-preserved at assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg (691x1536 JPEG; SHA-256 f6581bfa4d804c6d6fb3de654e9faa09f3781c2ac3fff2f123162209363e2964). The exact named public profile image is separately preserved at assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg (800x800 JPEG; SHA-256 d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e)."
+  },
+  {
+    "id": "SRC-MAEC-LAURA-AGUIAR-ACOSTA-IE-2023",
+    "title": "Spanish Foreign Ministry training-placement resolution naming Laura Aguiar Acosta (IE University)",
+    "source_type": "official_training_placement_resolution",
+    "date": null,
+    "date_precision": "placement_range",
+    "date_label": "1 February-31 May 2023",
+    "evidence_status": "verified_official",
+    "availability": "official_public_pdf",
+    "publication": "public_safe_minimized",
+    "url": "https://www.uned.es/universidad/inicio/dam/jcr:9bcddd3f-48b1-4588-91e0-1e744e03e47a/EXTERIOR-RESOLUCION%20TITULARES%20PR%C3%81CTICAS%202%C2%BA%20CUATRIMESTRE.pdf",
+    "notes": "Page 1 independently matches the exact name and IE University attribute used for identity admission. The public derivative does not reproduce the source's masked personal identifier."
+  },
+  {
+    "id": "SRC-RICPE-MYND-YAIZA-CANARIAN",
+    "title": "RIC Private Equity — Hotel MYND Yaiza project page",
+    "source_type": "corporate_project_page",
+    "date": null,
+    "date_precision": "current_page_captured_2026-08-28",
+    "evidence_status": "documented_corporate_statement",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "url": "https://ric.capital/hotel-mynd-yaiza/",
+    "notes": "States that MYND Yaiza opened after rehabilitation and transformation of what the source calls the former Sun Park apartments, identifies Canarian Hospitality as manager and reports RIC Private Equity financing. Project Sun Rock's narrative nomenclature is 'Sun Park, currently marketed as MYND Yaiza'. The source does not establish that Laura Aguiar Acosta was employed by RICPE or knew historical Sun Park, IREA or Meridian records."
+  },
+  {
+    "id": "SRC-RICPE-RADISSON-BLU-LANZAROTE-CANARIAN",
+    "title": "RIC Private Equity — Hotel Radisson Blu Lanzarote project page",
+    "source_type": "corporate_project_page",
+    "date": null,
+    "date_precision": "current_page_captured_2026-08-28",
+    "evidence_status": "documented_corporate_statement",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "url": "https://ric.capital/hotel-radisson-blu-lanzarote/",
+    "notes": "Identifies Canarian Hospitality management, RIC Private Equity financing and Construcciones Acosta Matos refurbishment. It supplies an entity-and-financing bridge for the hotel named in Laura's profile, not direct RICPE employment or personal knowledge of financing decisions."
+  },
+  {
+    "id": "SRC-CANARIAN-HOSPITALITY-ACOSTA-MATOS-BACKING-2021",
+    "title": "Canarian Hospitality launch notice — Grupo Acosta Matos backing and majority ownership",
+    "source_type": "official_corporate_notice",
+    "date": "2021-07-20",
+    "evidence_status": "documented_corporate_statement",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "url": "https://canarianhospitality.com/en/nace-la-gestora-turistica-canarian-hospitality-con-acosta-matos-de-apoyo-estrategico-2/",
+    "notes": "States that Grupo Acosta Matos supplied financial and strategic backing and was majority shareholder of Canarian Hospitality. This establishes a corporate perimeter bridge; it does not establish Laura's exact kinship, placement instructions, knowledge, coordination, wrongdoing or liability."
   },
   {
     "id": "SRC-GMAIL-IREA-SUNPARK-2017",
@@ -494,5 +555,52 @@
     "availability": "official_copy_required",
     "publication": "internal_only",
     "notes": "Retrieve official judgment, ROJ/ECLI and exact holdings before pleading or publishing a case-specific proposition."
+  },
+  {
+    "id": "SRC-AEAT-CANARIAS-AC-HOTEL-TENERIFE-2020",
+    "title": "AEAT Canarias report INF 90-24 / REF 0025DKH1 — AC Tenerife Hotel RIC and management architecture",
+    "source_type": "official_tax_administration_report",
+    "date": "2020-03-03",
+    "evidence_status": "verified_official",
+    "availability": "official_copy_on_project_site_with_verification_code",
+    "publication": "public_safe",
+    "public_url": "https://ric.capital/cms/uploads/INFORME_AEAT.pdf",
+    "notes": "Identifies Hotel Project Tenerife, NIF B76337070, equal CAM/Belagua participation, Edificio Maya ownership and lease, financing, AC Hotels by Marriott exploitation and the 22-Feb-2018 ACHM Spain Management contract. Authenticity code 09Ob-5Wcy4oXVztbz8uCgf4VrCgusMF79. The report says BELAGUA 2013 SL; current official BORME uses S.A., so the source-form discrepancy is retained."
+  },
+  {
+    "id": "SRC-RICPE-AC-HOTEL-TENERIFE-PROJECT",
+    "title": "RIC Private Equity — Hotel AC Tenerife project page",
+    "source_type": "corporate_project_page",
+    "date": null,
+    "date_precision": "current_page_captured_2026-08-28",
+    "evidence_status": "documented_corporate_statement",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://ric.capital/inversion-hotel-ac-tenerife/",
+    "notes": "Describes Belagua and Acosta Matos as the two shareholders, Hotel Project Tenerife as operator and ACHM Spain Management as management operator; does not prove Fernando Aguiar Acosta worked on the project."
+  },
+  {
+    "id": "SRC-ACHM-AC-HOTEL-TENERIFE-PORTFOLIO",
+    "title": "ACHM Hotels by Marriott — AC Hotels portfolio listing for AC Hotel Tenerife",
+    "source_type": "corporate_portfolio_page",
+    "date": null,
+    "date_precision": "current_page_captured_2026-08-28",
+    "evidence_status": "documented_corporate_statement",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://achmhotels.com/marca/ac-hotels-by-marriott/",
+    "notes": "Current ACHM portfolio lists AC Hotel Tenerife; a portfolio listing does not identify individual staff assigned to the hotel."
+  },
+  {
+    "id": "SRC-MARRIOTT-AC-HOTEL-TENERIFE",
+    "title": "Marriott — AC Hotel Tenerife current hotel page",
+    "source_type": "brand_hotel_page",
+    "date": null,
+    "date_precision": "current_page_captured_2026-08-28",
+    "evidence_status": "documented_corporate_statement",
+    "availability": "official_public_source",
+    "publication": "public_safe",
+    "public_url": "https://www.marriott.com/es/hotels/tfnac-ac-hotel-tenerife/overview/",
+    "notes": "Confirms the establishment at Calle Candelaria 31 in Edificio Maya and the current AC Hotels by Marriott presentation; it does not determine current title or every contracting entity."
   }
 ]

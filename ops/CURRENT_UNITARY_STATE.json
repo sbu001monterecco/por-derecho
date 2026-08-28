@@ -223,7 +223,7 @@
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
     "control_date": "2026-08-28",
-    "counts": {"total":221,"PERSON":94,"ORGANISATION":76,"STRUCTURE":10,"INSTITUTION":22,"PROCEEDING":19},
+    "counts": {"total":226,"PERSON":95,"ORGANISATION":79,"STRUCTURE":11,"INSTITUTION":22,"PROCEEDING":19},
     "archive_backfill": "OPEN",
     "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
@@ -247,15 +247,22 @@
     "canonical_source": "assets/data/material-updates-v1.json",
     "latest_material_date": "2026-08-28",
     "repository_latest_material_date": "2026-08-28",
-    "last_live_verified_material_date": "2026-08-26",
+    "last_live_verified_material_date": "2026-08-28",
     "languages": ["es","en"],
     "public_routes": ["/es/actualizaciones/","/en/updates/"],
-    "public_parity": "REPOSITORY_2026-08-28_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-26",
-    "pending_publication": {
+    "public_parity": "2026-08-28_LIVE_VERIFIED",
+    "latest_live_verified_publication": {
       "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
-      "state": "PREPARED_PENDING_MERGE",
+      "state": "LIVE_VERIFIED",
       "pull_request": 1167,
-      "branch": "codex/pink-aeat-diligencia-6apr2022-20260828",
+      "validated_head": "a743767c566dd28afca66150849d18da7baabcc2",
+      "publication_merge_sha": "949405e4cec2fd6d959662dd0fc6f27cfdc45f19",
+      "publication_tree_sha": "84cffb1bd24d0a28ebd3c5ec947d065f14b05026",
+      "pages_run_id": 33204179559,
+      "pages_run_number": 1239,
+      "pages_completed_at": "2026-08-28T19:32:17Z",
+      "live_verified_at": "2026-08-28T19:46:16Z",
+      "verified_url_count": 33,
       "manifest": "publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json"
     }
   },

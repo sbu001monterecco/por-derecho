@@ -60,10 +60,10 @@
       "path": "assets/data/matter-identity-registry-v1.json",
       "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
       "counts": {
-        "total": 221,
-        "PERSON": 94,
-        "ORGANISATION": 76,
-        "STRUCTURE": 10,
+        "total": 226,
+        "PERSON": 95,
+        "ORGANISATION": 79,
+        "STRUCTURE": 11,
         "INSTITUTION": 22,
         "PROCEEDING": 19
       },

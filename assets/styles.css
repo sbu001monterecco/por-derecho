@@ -2702,3 +2702,93 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
 .lender-record-page .continuity-card.unverified .number {
   color: #8c5727;
 }
+
+/* AGUIAR-ACOSTA-PROPOSED-WITNESS-PAIR-20260828 · evidence-led portraits and unverified family edge */
+.aguiar-pair-panel {
+  margin: 1.25rem 0;
+  padding: 1.15rem;
+  background: #f8f5ee;
+  border: 1px solid rgba(19,37,45,.16);
+  border-radius: 18px;
+}
+.aguiar-pair-panel h3 { margin-top: 0; }
+.aguiar-witness-pair {
+  display: grid;
+  grid-template-columns: minmax(220px,1fr) minmax(150px,.64fr) minmax(220px,1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+.aguiar-profile-card {
+  display: grid;
+  grid-template-columns: 112px minmax(0,1fr);
+  gap: .9rem;
+  align-items: center;
+  padding: .9rem;
+  background: #fff;
+  border: 1px solid rgba(19,37,45,.16);
+  border-top: 5px solid #6f2724;
+  border-radius: 15px;
+}
+.aguiar-profile-card img {
+  width: 112px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(19,37,45,.2);
+}
+.aguiar-profile-card h3,
+.aguiar-profile-card h4 { margin: 0 0 .25rem; }
+.aguiar-profile-card p { margin: .3rem 0; font-size: .88rem; }
+.aguiar-sibling-edge {
+  display: grid;
+  place-content: center;
+  padding: .9rem;
+  text-align: center;
+  color: #6d4b15;
+  background: #fffaf0;
+  border: 3px dashed #b27736;
+  border-radius: 15px;
+  font-size: .82rem;
+  font-weight: 800;
+}
+.aguiar-tree-root {
+  max-width: 540px;
+  margin: 0 auto 1rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  background: #13252d;
+  color: #fff;
+  border-radius: 12px;
+}
+.aguiar-tree-branch {
+  width: 0;
+  height: 2.3rem;
+  margin: 0 auto;
+  border-left: 3px dashed #b27736;
+}
+.aguiar-evidence-exhibit {
+  display: grid;
+  grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr);
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+.aguiar-evidence-exhibit img {
+  display: block;
+  width: min(100%,420px);
+  max-height: 620px;
+  object-fit: contain;
+  object-position: top;
+  background: #fff;
+  border: 1px solid rgba(19,37,45,.16);
+  border-radius: 14px;
+}
+@media (max-width: 900px) {
+  .aguiar-witness-pair,
+  .aguiar-evidence-exhibit { grid-template-columns: 1fr; }
+  .aguiar-sibling-edge { min-height: 110px; }
+}
+@media (max-width: 520px) {
+  .aguiar-profile-card { grid-template-columns: 86px minmax(0,1fr); }
+  .aguiar-profile-card img { width: 86px; }
+}

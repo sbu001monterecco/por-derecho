@@ -31,17 +31,23 @@ A successful deployment is not automatically an exact-content verification. A go
 
 Pages run `32942972472` / #1128 deployed that exact merge successfully. Dedicated verifier run `32942975508` / #4, job `98097657687`, completed successfully and a no-cache observation at 07:32:47 UTC confirmed all 21 declared public URLs. Therefore:
 
-- repository latest material date: **28 August 2026** (additive candidate; see below);
-- last live-verified material date: **26 August 2026**;
-- public parity: `REPOSITORY_2026-08-28_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-26`;
+- repository latest material date: **28 August 2026**;
+- last live-verified material date: **28 August 2026**;
+- public parity: `2026-08-28_LIVE_VERIFIED`;
 - historical promoted-release parity: `2026-08-26_LIVE_VERIFIED`.
 
 The 26 August position is an attributed factual/prosecutorial theory. It is not a judgment, does not itself establish a statutory organisation or group under Articles 570 bis/ter CP, does not prove an original pact, does not transfer knowledge or intent, and does not dispense with offence-by-offence, actor-by-actor proof. The manifest is a discovery map only: it neither supports nor establishes `ALG-ENT-018` unless and until native originals are lawfully acquired, authenticated and tested against the contrary record.
 
-### AEAT / Pink diligence — prepared publication candidate
+### AEAT / Pink diligence — live verified
 
 `PD-SP-AEAT-PINK-DILIGENCE-20260828-01` is the current additive material
-candidate in PR #1167. Its manifest is
+release. PR #1167 reviewed head
+`a743767c566dd28afca66150849d18da7baabcc2` and merged it as
+`949405e4cec2fd6d959662dd0fc6f27cfdc45f19`, tree
+`84cffb1bd24d0a28ebd3c5ec947d065f14b05026`. Pages run `33204179559` /
+#1239 deployed that exact merge successfully. At 19:46:16 UTC, 33 declared
+production resources were read without cache and were byte-identical to the
+merged source. Its manifest is
 `publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json`.
 The package publishes a controlled derivative of the complete five-page
 Customs Surveillance diligence formalised on 6 April 2022, with Spanish
@@ -51,7 +57,7 @@ from identified or unidentified interlocutors and from later party inference.
 The source cannot have initiated the 2020 inspection or the supplementary
 action ordered before the March 2022 visit; whether and how it influenced the
 later assessment remains an open question for the complete inspection file.
-The candidate publishes no counsel draft, advice email, private filename or
+The release publishes no counsel draft, advice email, private filename or
 live procedural strategy.
 
 ### AC removal and remuneration thread — live verified

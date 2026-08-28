@@ -165,19 +165,41 @@ jobs:
           BASE: https://sbu001monterecco.github.io/por-derecho
         shell: python
         run: |
-          import json, os, time, urllib.request
+          import datetime, json, os, time, urllib.request
+          from pathlib import Path
 
           base=os.environ['BASE'].rstrip('/')
-          # Mutable Pages routes carry the current 214-ID registry. Structured
-          # controls separately retain the 204-ID historical denominator and
-          # the immutable 26-Aug promotion evidence.
+          source_updates=json.loads(Path('assets/data/material-updates-v1.json').read_text(encoding='utf-8'))
+          source_state=json.loads(Path('ops/CURRENT_UNITARY_STATE.json').read_text(encoding='utf-8'))
+          current_material_date=source_updates.get('latest_material_date')
+          try:
+            current_date=datetime.date.fromisoformat(current_material_date)
+          except (TypeError, ValueError) as exc:
+            raise SystemExit(f'Canonical latest_material_date is missing or malformed: {exc}')
+          current_entries=[entry for entry in source_updates.get('entries',[]) if entry.get('date')==current_material_date]
+          if not current_entries or not current_entries[0].get('update_id'):
+            raise SystemExit('Canonical material-update entry is missing for latest_material_date')
+          current_update_id=current_entries[0]['update_id']
+          months_en=['January','February','March','April','May','June','July','August','September','October','November','December']
+          months_es=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+          current_en=f'{current_date.day} {months_en[current_date.month-1]} {current_date.year}'
+          current_es=f'{current_date.day} {months_es[current_date.month-1]} {current_date.year}'
+          expected_public_parity=f'{current_material_date}_LIVE_VERIFIED'
+          current_counts=source_state.get('identity_registry',{}).get('counts',{})
+          count_keys=['total','PERSON','ORGANISATION','STRUCTURE','INSTITUTION','PROCEEDING']
+          if set(current_counts) != set(count_keys) or not all(isinstance(current_counts[key],int) for key in count_keys):
+            raise SystemExit('Canonical current identity-registry counts are missing or malformed')
+          count_signature='-'.join(str(current_counts[key]) for key in count_keys)
+          # Mutable Pages routes carry the source-declared current registry.
+          # Structured controls separately retain the 204-ID historical
+          # denominator and the immutable 26-Aug promotion evidence.
           text_checks=[
-            ('/es/registro-identidad-materia/',['data-static-registry-counts="214-94-74-10-18-18"','data-registry-stat="TOTAL">214','Los <strong>214 IDs</strong>']),
-            ('/en/matter-identity-registry/',['data-static-registry-counts="214-94-74-10-18-18"','data-registry-stat="TOTAL">214','The <strong>214 IDs</strong>']),
-            ('/es/actualizaciones/',['Última actualización material','<strong>26 agosto 2026</strong>','ALG-ENT-018']),
-            ('/en/updates/',['Latest material update','<strong>26 August 2026</strong>','ALG-ENT-018']),
-            ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','2026-08-26','ALG-ENT-018']),
-            # Every route in this focused sitemap now carries the current 26-Aug material date.
+            ('/es/registro-identidad-materia/',[f'data-static-registry-counts="{count_signature}"',f'data-registry-stat="TOTAL">{current_counts["total"]}',f'Los <strong>{current_counts["total"]} IDs</strong>']),
+            ('/en/matter-identity-registry/',[f'data-static-registry-counts="{count_signature}"',f'data-registry-stat="TOTAL">{current_counts["total"]}',f'The <strong>{current_counts["total"]} IDs</strong>']),
+            ('/es/actualizaciones/',['Última actualización material',f'<strong>{current_es}</strong>','ALG-ENT-018']),
+            ('/en/updates/',['Latest material update',f'<strong>{current_en}</strong>','ALG-ENT-018']),
+            ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001',current_material_date,current_update_id,'ALG-ENT-018']),
+            # This focused sitemap preserves the 26-Aug lastmod of its unchanged route set.
             ('/sitemap-unitary-control-plane.xml',['<lastmod>2026-08-26</lastmod>','registro-identidad-materia','matter-identity-registry']),
             ('/robots.txt',['sitemap-unitary-control-plane.xml'])]
 
@@ -217,7 +239,7 @@ jobs:
               assert state.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert state.get('status')=='LIVE_VERIFIED'
               counts=state.get('identity_registry',{}).get('counts',{})
-              assert counts=={'total':214,'PERSON':94,'ORGANISATION':74,'STRUCTURE':10,'INSTITUTION':18,'PROCEEDING':18}
+              assert counts==current_counts
               assert state.get('identity_registry',{}).get('last_live_verified_counts')=={'total':204,'PERSON':87,'ORGANISATION':71,'STRUCTURE':10,'INSTITUTION':18,'PROCEEDING':18}
               repository=state.get('repository',{})
               assert repository.get('source_publication_merge_sha')==historical_promotion_merge_sha
@@ -231,9 +253,10 @@ jobs:
               assert promoted.get('live_verification_run_id')==32942975508
               assert promoted.get('live_verification_job_id')==98097657687
               material=state.get('material_updates',{})
-              assert material.get('repository_latest_material_date')=='2026-08-26'
-              assert material.get('last_live_verified_material_date')=='2026-08-26'
-              assert material.get('public_parity')=='2026-08-26_LIVE_VERIFIED'
+              assert material.get('latest_material_date')==current_material_date
+              assert material.get('repository_latest_material_date')==current_material_date
+              assert material.get('last_live_verified_material_date')==current_material_date
+              assert material.get('public_parity')==expected_public_parity
               publication=state.get('publication',{})
               pages=publication.get('last_pages_deployment',{})
               assert pages.get('sha')==historical_promotion_merge_sha and pages.get('tree_sha')==historical_promotion_tree_sha
@@ -302,7 +325,8 @@ jobs:
             echo "- Validation checkout SHA: $GITHUB_SHA (not attested here as the deployed Pages SHA)"
             echo '- Historical snapshot control: `PD-UNITARY-STATE-20260826-01`.'
             echo '- Preserved historical evidence: merge `77e2ba300af45a953947160af63283a64512e876`, Pages `32942972472`, verifier `32942975508` / job `98097657687`.'
-            echo '- Current identity denominator: `214 / 94 / 74 / 10 / 18 / 18`; preserved historical denominator: `204 / 87 / 71 / 10 / 18 / 18`.'
+            echo '- Current material-date assertions are derived from `assets/data/material-updates-v1.json`; historical 26-Aug publication anchors remain exact and immutable.'
+            echo '- Current identity denominator is derived from `ops/CURRENT_UNITARY_STATE.json`; preserved historical denominator: `204 / 87 / 71 / 10 / 18 / 18`.'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Source parity and syntax verified; no public deployment attestation was run.'
             elif [ "$GITHUB_EVENT_NAME" = 'push' ] && [ "$GITHUB_REF" = 'refs/heads/main' ] && [ "$HISTORICAL_READBACK_OUTCOME" = 'success' ]; then
