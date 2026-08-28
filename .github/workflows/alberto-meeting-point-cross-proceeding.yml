@@ -586,21 +586,26 @@ jobs:
 
           registry = json.loads(body('/assets/data/matter-identity-registry-v1.json'))
           assert registry['counts'] == {
-              'total': 204,
-              'PERSON': 87,
-              'ORGANISATION': 71,
+              'total': 214,
+              'PERSON': 94,
+              'ORGANISATION': 74,
               'STRUCTURE': 10,
               'INSTITUTION': 18,
               'PROCEEDING': 18,
           }
           for route, language_marker in (
-              ('/es/registro-identidad-materia/', 'Los <strong>204 IDs</strong>'),
-              ('/en/matter-identity-registry/', 'The <strong>204 IDs</strong>'),
+              ('/es/registro-identidad-materia/', 'Los <strong>214 IDs</strong>'),
+              ('/en/matter-identity-registry/', 'The <strong>214 IDs</strong>'),
           ):
               registry_body = body(route)
-              assert 'data-static-registry-counts="204-87-71-10-18-18"' in registry_body
-              assert 'data-registry-stat="TOTAL">204' in registry_body
+              assert 'data-static-registry-counts="214-94-74-10-18-18"' in registry_body
+              assert 'data-registry-stat="TOTAL">214' in registry_body
               assert language_marker in registry_body
+
+          # The specialist manifest records its own exact historical release at
+          # 204 records. That immutable snapshot must not be reused as the
+          # current live-registry denominator after additive CAEPR publication.
+          assert manifest['live_verification_evidence']['identity_registry_parity'] == 204
 
           lateral_edges = [
               ('/es/concurso-36-2012-magistrado-juez/', '/es/concurso-36-2012-masa-activa-2018-2021/#contradiccion'),
@@ -718,5 +723,6 @@ jobs:
               'specialist_caret': '25/32',
               'first_hop_caret': '56/130',
               'unitary_caret': '19/24',
-              'identity_source_static': 204,
+              'identity_source_current': 214,
+              'specialist_historical_identity_snapshot': 204,
           }, sort_keys=True))

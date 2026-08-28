@@ -90,6 +90,7 @@
     "scripts/build_acta_meeting_lineage.py",
     "scripts/validate_post7june_2022_deliberate_exclusion.py",
     "scripts/render_post7june_2022_omnidirectional_map.mjs",
+    ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
     "archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md",
     "archive/CORRECTION_REGISTER.md",
     "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md"
@@ -149,6 +150,39 @@
       "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json": "caaabc0b48431ef7c191687959fb2c2a7cff038ece8cfb894cb5a0add053d7bc",
       "assets/data/matter-identity-registry-v1.people.json": "a05a95fe00a199e62ec415fc5f78558bb9b0b0cc4c871bc5c723b8b0547c7fc8",
       "assets/data/matter-identity-registry-v1.organisations.json": "4c6340e03418e0ee769364d011de58b524b825a0011e902802c97e885a67fe15"
+    }
+  },
+  "governance_closeout": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1147",
+    "pull_request_head_sha": "2984c52a3c69da1c40015ecba66a05c0129d74e1",
+    "pull_request_tree_sha": "8d60f3d96a35e9214d25af15bf367c01796fd7de",
+    "pull_request_checks": "PASS_16_OF_16",
+    "merge_sha": "4f807502fc52f46fc80f369ba58decd4c25af733",
+    "pages_workflow_run_id": 33170196929,
+    "pages_workflow_run_number": 1218,
+    "pages_conclusion": "success",
+    "public_edge_readback": {
+      "status": "PASS_15_OF_15_HTTP_200_EXACT_REPOSITORY_BYTES",
+      "cache_key": "4f807502fc52f46fc80f369ba58decd4c25af733",
+      "scope": "seven changed governance/control files plus the four bilingual routes and four controlling assets",
+      "changed_file_sha256": {
+        "CHATGPT_START_HERE.md": "44832416b9ab28524cad70f8eb27684d0eff14622adb9e7547e2b70dae826cf6",
+        "archive/CONTINUOUS_MAINTENANCE_MATRIX.md": "1425b4fd31f481a532a614baa22b283815df0ecff67c287b4bcdf2543475d78d",
+        "archive/CORRECTION_REGISTER.md": "adf678f6109c841392146b667aa36c02d51ac97ffa84325a0f259f29b7c99b2a",
+        "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md": "a07f9e3ab3538c0ec22d89bf5492249e6c5f99291b53324ec978b502f2838df7",
+        "docs/deletion-audits/2026-08-28-post-7june-2018-to-2022-continuing-harm.md": "949c6376433ac5534337ac36b9a4f15d8eab730b630fcbb8fe34abe24b90ca6c",
+        "publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json": "2b998f1905cb1ce8812cd0dfaed48517ebf6a078697e06cbcb8dfb4ccc6d7bc4",
+        "scripts/validate_post7june_2022_deliberate_exclusion.py": "c12f682806189e55924c114e0d702883a48971e4e1cfd40ce419e57a03da043c"
+      }
+    },
+    "post_merge_workflow_followup": {
+      "failed_run_id": 33170197823,
+      "failed_job_id": 98845268722,
+      "failed_step": "Read back exact deployed cross-proceeding graph",
+      "cause": "The push-only inline verifier reused the specialist package's immutable historical 204/87/71/10/18/18 release snapshot as the current live registry after the additive source registry reached 214/94/74/10/18/18.",
+      "remediation_rule": "Assert the current 214/94/74/10/18/18 registry and public markers while separately retaining the specialist manifest's historical identity_registry_parity value of 204.",
+      "verbatim_readback_reproduction": "PASS_41_EXACT_BYTE_SURFACES_CURRENT_214_HISTORICAL_204_18_SOURCE_BACKLINKS_32_LATERAL_LINKS_8_SUPPORTING_LINKS_13_GRAPH_EDGES",
+      "closure_requirement": "The corrected workflow must pass on a later exact main-merge SHA; no workflow failure changes the independently verified 15/15 Pages byte parity."
     }
   },
   "publication_result": {

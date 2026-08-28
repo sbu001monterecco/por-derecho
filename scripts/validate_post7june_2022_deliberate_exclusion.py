@@ -23,6 +23,7 @@ THOMPSON_AUDIT = ROOT / "docs/deletion-audits/2026-08-28-thompson-post-meeting-a
 OMNI_AUDIT = ROOT / "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md"
 OMNI_CSS = ROOT / "assets/post7-2022-omnidirectional-map-20260828.css"
 OMNI_MANIFEST = ROOT / "publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json"
+ALBERTO_LIVE_WORKFLOW = ROOT / ".github/workflows/alberto-meeting-point-cross-proceeding.yml"
 
 
 def load_json(path: Path) -> dict:
@@ -203,6 +204,15 @@ def main() -> int:
         "content: \"⇄\"",
         "@media (max-width: 620px)",
     ])
+    require_markers(ALBERTO_LIVE_WORKFLOW, [
+        "'total': 214",
+        "'PERSON': 94",
+        "'ORGANISATION': 74",
+        "data-static-registry-counts=\"214-94-74-10-18-18\"",
+        "identity_registry_parity'] == 204",
+        "'identity_source_current': 214",
+        "'specialist_historical_identity_snapshot': 204",
+    ])
     omni_manifest = load_json(OMNI_MANIFEST)
     require(
         omni_manifest["state"]
@@ -226,6 +236,16 @@ def main() -> int:
     readback = omni_manifest["publication_result"]["live_readback"]["results"]
     require(len(readback) == 8, "exact live-readback denominator must remain eight")
     require(all(item["status"] == 200 and item["parity"] == "EXACT" for item in readback), "live-readback parity drift")
+    governance = omni_manifest["governance_closeout"]
+    require(governance["pull_request"].endswith("/1147"), "governance closeout PR drift")
+    require(governance["merge_sha"] == "4f807502fc52f46fc80f369ba58decd4c25af733", "governance closeout merge SHA drift")
+    require(governance["pages_workflow_run_id"] == 33170196929, "governance closeout Pages run drift")
+    require(governance["public_edge_readback"]["status"] == "PASS_15_OF_15_HTTP_200_EXACT_REPOSITORY_BYTES", "governance public-edge result drift")
+    followup = governance["post_merge_workflow_followup"]
+    require(followup["failed_run_id"] == 33170197823, "push-only workflow failure run drift")
+    require("current 214/94/74/10/18/18 registry" in followup["remediation_rule"], "current-registry remediation missing")
+    require("historical identity_registry_parity value of 204" in followup["remediation_rule"], "historical specialist snapshot boundary missing")
+    require(followup["verbatim_readback_reproduction"].startswith("PASS_41_EXACT_BYTE_SURFACES"), "corrected live-verifier reproduction missing")
     require(all(omni_manifest["external_actions"][key] is True for key in ("push", "pull_request", "merge", "deployment", "live_readback")), "publication action closeout incomplete")
     require(omni_manifest["external_actions"]["filing_or_contact"] is False, "filing/contact boundary drift")
 
