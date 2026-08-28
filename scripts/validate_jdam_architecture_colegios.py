@@ -24,6 +24,10 @@ checks = {
         "Registration, receipt, internal transfer or dispatch does not prove"
     ],
     "assets/site.js": [
+        "site-pre-treasury-154-hq-20260828.js?v=20260828a",
+        "data-pre-treasury-154-site-loader",
+    ],
+    "assets/site-pre-intervencion-highlight-before-eg95-20260823.js": [
         "jdam-architecture-colegios-20260820.js",
         "playa-blanca-concept-home-20260820.js",
         "palacete-san-bernardo-historica-marco.webp"

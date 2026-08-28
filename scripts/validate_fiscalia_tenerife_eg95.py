@@ -30,6 +30,10 @@ checks = {
         "no rechaza expresamente",
     ],
     "assets/site.js": [
+        "site-pre-treasury-154-hq-20260828.js?v=20260828a",
+        "data-pre-treasury-154-site-loader",
+    ],
+    "assets/site-pre-treasury-154-hq-20260828.js": [
         "site-pre-intervencion-highlight-20260820.js",
         "jdam-architecture-colegios-20260820.js",
         "playa-blanca-concept-home-20260820.js",
