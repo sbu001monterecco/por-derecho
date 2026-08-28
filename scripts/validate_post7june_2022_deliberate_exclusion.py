@@ -191,7 +191,9 @@ def main() -> int:
         "formal protection architecture",
         "not a standalone offence",
         "de facto administrator",
-        "LOCAL_PREPARED_NOT_PUBLISHED",
+        "LIVE_VERIFIED",
+        "PR #1146",
+        "#1217",
     ])
     require_markers(OMNI_CSS, [
         ".omni-acta-map",
@@ -215,6 +217,17 @@ def main() -> int:
     require(omni_manifest["visual_model"]["incoming_tracks"] == 4, "manifest incoming-track count mismatch")
     require(omni_manifest["visual_model"]["hub_stages"] == 6, "manifest hub-stage count mismatch")
     require(omni_manifest["visual_model"]["outgoing_tracks"] == 4, "manifest outgoing-track count mismatch")
+    require(omni_manifest["current_state"] == "LIVE_VERIFIED", "omnidirectional closeout is not live verified")
+    require(omni_manifest["merge_sha"] == "faea6677f3a4df30eeefa92916d77a09826a0bab", "publication merge SHA drift")
+    require(omni_manifest["validation"]["pull_request_checks"] == "PASS_36_OF_36", "PR check denominator drift")
+    require(omni_manifest["validation"]["acta_workflow_run_id"] == 33168858619, "ACTA workflow evidence drift")
+    require(omni_manifest["deployment_evidence"]["workflow_run_id"] == 33169202514, "Pages run evidence drift")
+    require(len(omni_manifest["live_urls"]) == 8, "live URL denominator must remain eight")
+    readback = omni_manifest["publication_result"]["live_readback"]["results"]
+    require(len(readback) == 8, "exact live-readback denominator must remain eight")
+    require(all(item["status"] == 200 and item["parity"] == "EXACT" for item in readback), "live-readback parity drift")
+    require(all(omni_manifest["external_actions"][key] is True for key in ("push", "pull_request", "merge", "deployment", "live_readback")), "publication action closeout incomplete")
+    require(omni_manifest["external_actions"]["filing_or_contact"] is False, "filing/contact boundary drift")
 
     bilingual_pages = {
         ROOT / "es/toma-control-sun-park-7-junio-2018/index.html": [

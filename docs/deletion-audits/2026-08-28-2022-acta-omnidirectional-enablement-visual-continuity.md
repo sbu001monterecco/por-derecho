@@ -8,11 +8,11 @@
 
 **Source base:** `origin/main` at `dbd4ec90bda426c61c55e60fb1aa56362abac3cd`
 
-**State:** `LOCAL_PREPARED_NOT_PUBLISHED`
+**State:** `LIVE_VERIFIED`
 
-**Publication transition:** Gil Marer subsequently instructed “Publish” on 28 August 2026. The push→PR→merge→Pages chain is authorised and pending; the current state is controlled by `publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json`.
+**Publication transition:** Gil Marer instructed “Publish” on 28 August 2026. PR [#1146](https://github.com/sbu001monterecco/por-derecho/pull/1146) passed 36/36 checks, merged as `faea6677f3a4df30eeefa92916d77a09826a0bab`, and GitHub Pages run `33169202514` / #1217 completed successfully. Cache-busted live readback then matched the exact merge tree byte for byte for all four routes and four controlling assets.
 
-**External-action boundary:** repository/site publication is now authorised; filing, notice, email, interview and all other third-party contact remain unauthorised. No external action had been performed when this transition was recorded.
+**External-action boundary:** repository/site publication was authorised and completed. Filing, notice, email, interview and all other third-party contact remain unauthorised and were not performed.
 
 ## 1. Material instruction preserved
 
@@ -96,18 +96,18 @@ Source, structure, content and link validation completed locally and is recorded
 - the four affected routes contain no duplicate IDs, exactly eight nodes, six process stages and three terminology panels; every local path and fragment resolves; and the responsive CSS braces and 980/620px breakpoints pass structural preflight; and
 - the browser render runner passes JavaScript syntax control and is configured to test all four routes at desktop, tablet and mobile widths, including node/stage/term counts and horizontal-overflow detection.
 
-The final browser execution is an environment gap, not a passed test: the local runtime contains the Playwright library but no browser executable, and the permitted network path did not deliver the browser binary. The runner remains reproducible at `scripts/render_post7june_2022_omnidirectional_map.mjs`; no screenshot or pixel-level render success is claimed.
+The local runtime contained the Playwright library but no browser executable, so local browser execution remained an environment gap. The reproducible runner at `scripts/render_post7june_2022_omnidirectional_map.mjs` was therefore executed in GitHub Actions instead.
 
-Following the publication instruction, `.github/workflows/validate-acta-meeting-lineage.yml` now installs Playwright Chromium and runs the dedicated 12-view render matrix in CI. That rendered check must pass before merge; its result must replace this local environment gap in the controlling publication manifest.
+Following the publication instruction, `.github/workflows/validate-acta-meeting-lineage.yml` installed Playwright Chromium and completed the dedicated four-route × three-viewport render matrix. Workflow run `33168858619` / #9 succeeded and produced the 12 controlled screenshots. PR #1146 passed 36/36 checks before merge.
 
-No successful local check changes the state from `LOCAL_PREPARED_NOT_PUBLISHED`. Live publication and live readback are not claimed.
+GitHub Pages run `33169202514` / #1217 deployed the exact merge SHA. Cache-busted HTTP readback returned 200 and exact byte parity for the four bilingual HTML routes, the visual CSS, the post-7-June structured dataset, and both affected identity registries. The exact eight SHA-256 values are controlled in `publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json`.
 
 ## 8. Open evidence and restart instruction
 
 ME-099 and ME-100 remain controlling. The priority package is the native call/invitation, correct owner and statutory-address sources, versioned dispatch/service/fallback records, complete attendee/power/vote/conflict schedule, diligenced ACTA and distribution ledger, native Thompson/upstream chain, debt/title/coefficient/cost ledgers, project and board files, deed/segregation inventories, and instrument-by-instrument funding applications, invoices, jobs, disclosures, payments and audits.
 
-On restart, read the canonical report, structured data, CR-119–CR-124, ME-099–ME-100, Declaration 017, this audit and the publication manifest before changing the visual or its conclusions. Preserve actor-specific status, the 2018 dismissal/appeal, LPB/Matkator separation and all lawful alternatives.
+On restart, read the canonical report, structured data, CR-119–CR-126, ME-099–ME-100, Declaration 017, this audit and the publication manifest before changing the visual or its conclusions. Preserve actor-specific status, the 2018 dismissal/appeal, LPB/Matkator separation and all lawful alternatives.
 
 ## 9. Deletion-continuity conclusion
 
-The user's new framing, its evidentiary limits, terminology corrections, visual structure, route propagation, open proof and non-publication state are recoverable from the repository without this conversation. The thread is deletion-safe on the local branch, subject to the separately tracked native-evidence custody gaps.
+The user's framing, its evidentiary limits, terminology corrections, visual structure, route propagation, open proof and exact live-publication state are recoverable from the repository without this conversation. The package is live and deletion-safe, subject to the separately tracked native-evidence custody gaps. Publication does not convert an allegation or inference into a finding and does not close ME-099 or ME-100.
