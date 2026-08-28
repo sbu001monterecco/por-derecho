@@ -350,6 +350,16 @@ def main() -> int:
     require("both featured evidence images" in interlink_result["post_merge_monitor_followup"]["hardening"], "image-ready monitor hardening missing")
     require("current 214/94/74/10/18/18" in interlink_result["unitary_control_plane_followup"]["hardening"], "current registry monitor hardening missing")
     require("last_live_verified_counts" in interlink_result["unitary_control_plane_followup"]["hardening"], "historical registry boundary missing")
+    final_monitor = interlink_result["final_closeout_monitor_followup"]
+    require(final_monitor["pull_request_conclusion"] == "success", "final monitor PR evidence drift")
+    require("immediately after its selected" in final_monitor["monitor_separation"], "source-funds anchor boundary missing")
+    require("dedicated five-actor workflow alone" in final_monitor["monitor_separation"], "five-actor monitor separation missing")
+    governance = interlink_manifest["governance_closeout"]
+    require(governance["pull_request"].endswith("/1150"), "interlink governance PR drift")
+    require(governance["pull_request_checks"] == "PASS_18_OF_18", "interlink governance check denominator drift")
+    require(governance["merge_sha"] == "b533dbfd6c4883885957b8dedee8fe8a1e1feb4e", "interlink governance merge SHA drift")
+    require(governance["pages_workflow_run_id"] == 33177638207, "interlink governance Pages run drift")
+    require(governance["public_edge_readback"]["status"] == "PASS_29_OF_29_HTTP_200_EXACT_REPOSITORY_BYTES", "interlink governance readback drift")
     require(all(interlink_manifest["external_actions"][key] is True for key in ("push", "pull_request", "merge", "deployment", "live_readback")), "interlink publication action closeout incomplete")
     require(interlink_manifest["external_actions"]["filing_or_contact"] is False, "interlink filing/contact boundary drift")
 

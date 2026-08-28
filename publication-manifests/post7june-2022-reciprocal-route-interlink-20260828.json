@@ -89,12 +89,14 @@
     "source_of_funds_pr_run_id": 33176045444,
     "source_of_funds_pr_run_number": 155,
     "source_of_funds_pr_conclusion": "success",
-    "legacy_featured_dom_monitor": "WAIT_FOR_STABLE_FIVE_ACTOR_THEN_SOURCE_FUNDS_ORDER_AND_TWO_COMPLETE_1800_X_1200_IMAGES",
+    "legacy_featured_dom_monitor": "WAIT_FOR_SOURCE_FUNDS_AFTER_ITS_EXPECTED_ANCHOR_AND_TWO_COMPLETE_1800_X_1200_IMAGES; FIVE_ACTOR_TO_HERO_ORDER_REMAINS_A_SEPARATE_MONITOR",
     "evidence": [
       "PR #1149 passed 27/27 workflows on exact head 0c2da0f306509ca46bb3de80e916eaecc4058d97.",
       "Dedicated ACTA/interlink workflow run 33176045501 / #16 passed the 30 route/viewport browser matrix.",
       "GitHub Pages run 33176302160 / #1220 deployed exact merge 5aaa0b6f1b343789a2d8618c6ba5ac0bedaf9a9e successfully.",
-      "Cache-busted public-edge readback matched all 26 checked resources byte for byte."
+      "Cache-busted public-edge readback matched all 26 checked resources byte for byte.",
+      "Governance PR #1150 passed 18/18 scoped checks, including both corrected monitors and the repeated 30 route/viewport browser matrix.",
+      "Governance merge b533dbfd6c4883885957b8dedee8fe8a1e1feb4e deployed through Pages run 33177638207 / #1221; final cache-busted readback matched 29/29 public resources byte for byte."
     ]
   },
   "merge_sha": "5aaa0b6f1b343789a2d8618c6ba5ac0bedaf9a9e",
@@ -197,6 +199,40 @@
       "observed_failure": "A historical-snapshot verifier incorrectly required the preserved 204-ID denominator on mutable current registry routes and in the current identity_registry.counts object after the public register had advanced additively to 214 IDs.",
       "hardening": "Verify the current 214/94/74/10/18/18 Pages markers and current counts while separately requiring the preserved last_live_verified_counts value of 204/87/71/10/18/18 and the immutable 26-August promotion anchors.",
       "evidentiary_effect": "None. This reconciles current and historical state without transferring identity, knowledge, intent, conduct, control, benefit or liability."
+    },
+    "final_closeout_monitor_followup": {
+      "pull_request_run_id": 33177352451,
+      "pull_request_run_number": 157,
+      "pull_request_conclusion": "success",
+      "merge_run_id": 33177639566,
+      "merge_run_number": 158,
+      "attempt_1": "One English featured page exceeded the 45-second image-readiness window.",
+      "attempt_2": "All source-of-funds content and images passed; only the unrelated five-actor-to-hero position assertion failed on two RICPE pages while the source-of-funds section remained immediately after its expected anchor.",
+      "monitor_separation": "The source-of-funds workflow enforces one notice root, the notice immediately after its selected five-actor-or-opening anchor, two complete 1800 x 1200 images, exact graphic identity, heading, icon and route links. The dedicated five-actor workflow alone enforces the five-actor visual's relation to the hero.",
+      "image_timeout": "90000_MS",
+      "public_content_effect": "NONE"
+    }
+  },
+  "governance_closeout": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1150",
+    "pull_request_head_sha": "ee6094c0dd53a6c7926781c368d4d7b7263416e1",
+    "pull_request_tree_sha": "1e98196a528a58acac78ec4fa0ab766622390706",
+    "pull_request_checks": "PASS_18_OF_18",
+    "merge_sha": "b533dbfd6c4883885957b8dedee8fe8a1e1feb4e",
+    "merge_tree_sha": "1e98196a528a58acac78ec4fa0ab766622390706",
+    "pages_workflow_run_id": 33177638207,
+    "pages_workflow_run_number": 1221,
+    "pages_conclusion": "success",
+    "public_edge_readback": {
+      "status": "PASS_29_OF_29_HTTP_200_EXACT_REPOSITORY_BYTES",
+      "cache_key": "b533dbfd6c4883885957b8dedee8fe8a1e1feb4e",
+      "scope": "The 22 bilingual route files, four controlling style/data/manifest resources and three public governance/control files.",
+      "governance_sha256": {
+        "publication-manifests/post7june-2022-reciprocal-route-interlink-20260828.json": "3f4352d0fc3d43ba0430fee0f51d62be8600064f21ffd14cc00846d513a07507",
+        "scripts/validate_post7june_2022_deliberate_exclusion.py": "754d42ec0c0425cad2c94a8e48e60137b2ef068644eb88aef07d420bebf11203",
+        "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md": "19597a30f91988e9b175ceffa6fa20a4ffb2ff26777c8f50b18b7bbe1c88def1",
+        "archive/CORRECTION_REGISTER.md": "731304e094ce3cb20a86a6ba59d1bf3d81f648eac3e3c3acee043ac09533ddc5"
+      }
     }
   },
   "external_actions": {
