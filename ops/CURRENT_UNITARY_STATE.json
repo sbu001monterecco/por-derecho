@@ -222,10 +222,10 @@
   ],
   "identity_registry": {
     "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-    "control_date": "2026-08-27",
-    "counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
+    "control_date": "2026-08-28",
+    "counts": {"total":214,"PERSON":94,"ORGANISATION":74,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
     "archive_backfill": "OPEN",
-    "static_page_parity": "SOURCE_STATIC_AND_PUBLIC_EXACT_READBACK_ALIGNED",
+    "static_page_parity": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {"total":204,"PERSON":87,"ORGANISATION":71,"STRUCTURE":10,"INSTITUTION":18,"PROCEEDING":18},
     "candidate_control": "PD-ALV-MP357-CARET-20260827-01",
     "candidate_controls": [

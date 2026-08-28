@@ -168,6 +168,11 @@
       "ids": ["PD-SP-O-0022", "PD-SP-O-0023", "PD-SP-O-0024"],
       "reason_es": "Pamanil, Pamalexsha y Noalpa son entidades distintas aunque existan personas o funciones conectadas.",
       "reason_en": "Pamanil, Pamalexsha and Noalpa are distinct entities despite connected people or functions."
+    },
+    {
+      "ids": ["PD-SP-P-0013", "PD-SP-P-0094"],
+      "reason_es": "Gerardo Nicanor Acosta Armas, padre/fundador, no es Gerardo Zacarías Acosta Matos, hijo y uno de los cuatro hermanos identificados por Gil en la imagen.",
+      "reason_en": "Gerardo Nicanor Acosta Armas, the father/founder, is not Gerardo Zacarías Acosta Matos, the son/sibling in the four-sibling image attribution."
     }
   ],
   "actions": [

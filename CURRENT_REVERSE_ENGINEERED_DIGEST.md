@@ -194,9 +194,14 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 - The unitary record already uses the correct “read forward; test backward” method.
 - The criminal reverse-engineering page separates attributed theory from judicial finding and exposes contrary proof requirements.
-- The current live-verified public identity denominator is **204**: 87 people,
-  71 organisations, 10 structures, 18 institutions and 18 proceedings. The
-  earlier 194-record exact readback remains historical deployment evidence.
+- The current combined source/static identity denominator is **214**: 94 people,
+  74 organisations, 10 structures, 18 institutions and 18 proceedings. Fetched
+  origin/main `a9e394a893251ba393ae37ead58be82987666820` contains 210 objects; the
+  204-record and earlier 194-record exact public readbacks remain historical deployment evidence. The
+  additive local identity changes include Construcciones Acos-Matos, S.L.^, the
+  coordinated master-index backfill of Juan José Vera Díaz^ at his reserved
+  `PD-SP-P-0092`, Javier Acosta Matos^ at `PD-SP-P-0093`, and Gerardo Zacarías
+  Acosta Matos^ at `PD-SP-P-0094`; their carets confirm identity only.
 - The 26-August AC removal/remuneration package and other specialist routes use redacted source/status controls rather than silently converting pleadings into findings.
 - Current exact-main Pages deployment, control-plane verification and production smoke are green.
 
@@ -219,13 +224,13 @@ The live finite unitary caret digest on current `main` remains:
 
 A previously prepared local 24/24 package was based on the earlier `16dd443...` repository state. It is **not mergeable as-is** because:
 
-- the source-base registry was 194 and the separately controlled Magistrate López Villarrubia / Meeting
-  Point release advanced the live-verified registry to 204; neither state matches the stale
-  package's assumptions;
+- the source-base registry was 194, the separately controlled Magistrate López Villarrubia / Meeting
+  Point release advanced the then-live-verified registry to 204, fetched origin/main later reached
+  210, and the present combined source/static registry is 214; none of those states validates the stale package's assumptions;
 - proceeding IDs `PD-SP-R-0011` through `PD-SP-R-0017` are now occupied;
 - Matkator and ONA remain controlled perimeter labels requiring current-source reconciliation;
 - Clubotel La Dorada is not yet admitted as a separate current-registry organisation;
-- PP 1041 and EH 90 are not yet admitted as current-registry proceedings.
+- PP 1041 and EH 94 are not yet admitted as current-registry proceedings.
 
 Future closure must rebase on current `main`, preserve immutable IDs, complete the full census and allocate only non-conflicting IDs. No repository or public page may make an unqualified or repository-wide `ALL IS^` claim for this 24-object unitary census until that current-main closure has merged and been exactly read back.
 
@@ -361,7 +366,7 @@ Controls:
 5. Obtain the certified RPL 2523/2025 and complete Concurso 36/2012 denominators.
 6. Obtain the CEXP succession and 7-June authority records.
 7. Reconcile the separate 24-object CAEPR caret scope against the current
-   204-ID source/static registry; do not treat the Magistrate López Villarrubia / Meeting Point
+   214-ID source/static registry; do not treat the Magistrate López Villarrubia / Meeting Point
    specialist 25/32 partial census as changing the five unitary pending objects.
 8. Reconcile/close stale PRs by verified delta, not wholesale merge.
 

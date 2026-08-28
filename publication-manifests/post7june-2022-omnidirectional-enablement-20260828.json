@@ -1,0 +1,120 @@
+{
+  "publication_id": "PD-SP-ACTA-OMNI-20260828-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-28",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "AUTHORIZED_FOR_PUSH_PR_MERGE_PAGES",
+  "branch": "codex/post-7jun2018-2022-360-20260828",
+  "base_sha": "dbd4ec90bda426c61c55e60fb1aa56362abac3cd",
+  "upstream_reconciliation": {
+    "fetched_origin_main_sha": "a9e394a893251ba393ae37ead58be82987666820",
+    "upstream_pull_request": 1145,
+    "rule": "Preserve published origin/main IDs; renumber only the unpublished package; transfer no facts between identities.",
+    "people": {
+      "PD-SP-P-0088": "Fernando Aguiar Acosta",
+      "PD-SP-P-0089": "Laura Hernando",
+      "PD-SP-P-0090": "Miguel Vázquez",
+      "PD-SP-P-0091": "Fernando Banderas Monis",
+      "PD-SP-P-0092": "Juan José Vera Díaz",
+      "PD-SP-P-0093": "Javier Acosta Matos",
+      "PD-SP-P-0094": "Gerardo Zacarías Acosta Matos"
+    },
+    "organisations": {
+      "PD-SP-O-0072": "IREA Corporate Finance, S.L.",
+      "PD-SP-O-0073": "Colliers International Spain, S.L.",
+      "PD-SP-O-0074": "Construcciones Acos-Matos, S.L."
+    },
+    "combined_counts": {
+      "total": 214,
+      "PERSON": 94,
+      "ORGANISATION": 74,
+      "STRUCTURE": 10,
+      "INSTITUTION": 18,
+      "PROCEEDING": 18
+    },
+    "correction_record": "CR-125"
+  },
+  "subject": "Bilingual omnidirectional visual and evidence control for the alleged 4-February-2022 meeting/ACTA enabling episode",
+  "attribution": "Gil Marer and Aweswell allege that preparation, selective exclusion, meeting, resolutions, ACTA construction, lack of direct Community communication and later use formed one enabling episode in a longer post-7-June-2018 sequence.",
+  "publication_authorization": {
+    "date": "2026-08-28",
+    "instruction": "Publish",
+    "scope": "Current post-7-June-2018 through 4-February-2022 branch package, including the omnidirectional ACTA visual, bilingual routes, canonical controls, push, pull request, merge and GitHub Pages verification."
+  },
+  "routes": [
+    "en/sun-park-takeover-7-june-2018/index.html",
+    "es/toma-control-sun-park-7-junio-2018/index.html",
+    "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html",
+    "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html"
+  ],
+  "expected_routes": {
+    "es": [
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html"
+    ],
+    "en": [
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html"
+    ]
+  },
+  "visual_model": {
+    "incoming_tracks": 4,
+    "hub_stages": 6,
+    "outgoing_tracks": 4,
+    "connector_meaning": "Bridge to prove in both directions; never a finding of agreement, intent, causation, offence or collective guilt.",
+    "statuses": [
+      "documented",
+      "attributed",
+      "inference",
+      "open",
+      "contrary"
+    ]
+  },
+  "terminology_controls": {
+    "hotel_mobbing": "Gil/Aweswell-attributed umbrella label, not a standalone offence.",
+    "judicial_safeguards": "LPB assets formally subject to insolvency-administration and judicial-supervision safeguards, whose practical effectiveness is disputed; formal protection architecture, not a guaranteed outcome. Matkator remained outside it.",
+    "de_facto_administrator": "Discrete functional control may justify inquiry; full status requires the date-specific legal test and is not established by influence, office, family relationship or benefit alone."
+  },
+  "mandatory_boundaries": [
+    "The located ACTA is not the native invitation, complete service ledger, diligenced book or proof of deliberate exclusion.",
+    "Gil reports no invitation or pre-meeting knowledge and no direct Community ACTA communication, followed by indirect post-meeting Thompson forwarding; the native route remains open.",
+    "The known and attended 26-April-2016 meeting prevents a universal concealed-meeting formulation.",
+    "LPB was inside Concurso 36/2012; Matkator and its property were outside LPB's estate.",
+    "The 2018 provisional dismissal and appellate confirmation remain mandatory adverse evidence.",
+    "Valid common/necessary works may lawfully be allocated by coefficient while CAM bears only an additional four-star upgrade.",
+    "RICPE/RIC, regional incentives, FEDER, Community contributions and operating revenue remain separate legal and accounting lives."
+  ],
+  "expected_source_files": [
+    "assets/post7-2022-omnidirectional-map-20260828.css",
+    "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+    "scripts/build_acta_meeting_lineage.py",
+    "scripts/validate_post7june_2022_deliberate_exclusion.py",
+    "scripts/render_post7june_2022_omnidirectional_map.mjs",
+    "archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md"
+  ],
+  "validation": {
+    "state": "LOCAL_SOURCE_VALIDATION_PASS_BROWSER_RENDER_PENDING_CI",
+    "json": "PASS_WITH_DUPLICATE_KEY_CONTROL",
+    "generator": "PASS_20_EVENTS_40_PAGES",
+    "dedicated_control": "PASS_4_IN_6_STAGE_4_OUT_AND_TERMINOLOGY_LOCKS",
+    "acta_lineage_and_local_links": "PASS_20_EVENTS_40_PAGES_17_FULL_SOURCE_FAMILIES",
+    "publication_integrity": "PASS_74_MANIFESTS",
+    "audience_experience": "PASS_588_HTML_PAGES_8599_INTERNAL_LINKS_1767_PUBLIC_FILES",
+    "four_route_static_preflight": "PASS_NO_DUPLICATE_IDS_8_NODES_6_STAGES_3_TERMS_LINK_TARGETS_AND_FRAGMENTS_RESOLVED_CSS_BRACES_AND_BREAKPOINTS_PRESENT",
+    "render_runner_syntax": "PASS",
+    "browser_routes": 4,
+    "browser_viewports_per_route": 3,
+    "browser_render": "PENDING_GITHUB_ACTIONS_VALIDATE_ACTA_MEETING_LINEAGE",
+    "browser_render_claimed": false
+  },
+  "external_actions": {
+    "push": false,
+    "pull_request": false,
+    "merge": false,
+    "deployment": false,
+    "live_readback": false,
+    "filing_or_contact": false
+  }
+}

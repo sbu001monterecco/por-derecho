@@ -19,6 +19,7 @@ Colour belongs to the displayed perimeter edge, not permanently to a person.
 - Direct LPB completed transfers confirmed in the present review: zero.
 - Candidate leads in the twelve-slot reconstruction: five.
 - Deliberately unresolved slots: seven.
+- Additional attributed lead not yet assigned to a reconstruction slot: Gil identifies Thompson bungalow 708 / property 8,557 as one of the twelve LPB/Multimatrix disposals. The 9-Jul-2019 controlled record described formalisation as pending; assignment to a slot and completed-transfer status require deed, completion/payment and historic Registry proof.
 
 ## Source hierarchy and non-overwrite rule
 
@@ -47,6 +48,7 @@ A later or higher-ranked source may explain an earlier conflict, but the earlier
 - A 2009 LPB option concerning 907/908 names the Brodericks, but exercise and conveyance are not established; later sources attribute those units to others.
 - 2010 exploitation instruments identify Louise White as owner of 801/802 and Eamon John Lee as owner of 805; later schedule rows report bank ownership. The transfer/enforcement chain remains open.
 - The exact Multimatrix/Multimetrics and any later Osborne endpoint is not encoded from recollection.
+- The Thompson 708/8,557 lead remains an attributed/document-led production target rather than a silently completed transfer. Representation, relationship and the later ACTA relay do not prove conveyance or registered title.
 
 ## P0 closure sequence
 

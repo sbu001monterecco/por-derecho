@@ -107,10 +107,11 @@
       "path": "assets/acosta-matos-family-hotel-plans.jpg",
       "git_blob_sha": "7ccf4d196777b41abfd5e8c55779f9f5dbdb4eb4",
       "identity_status": "LOCKED_CANONICAL_REPOSITORY_ASSET",
-      "identity_basis": "Existing source-labelled repository image reproduced in the El Economista/RICPE context. Gil identifies José Daniel Acosta Matos and Laura Patricia Acosta Matos in the scene and assumes that editorial attribution. No facial-identification inference is performed and the image alone does not prove title, mandate, wrongdoing, knowledge or coordination.",
+      "identity_basis": "Existing source-labelled repository image reproduced in the El Economista/RICPE context. Gil identifies the people left-to-right as Javier Acosta Matos (younger person at far left), Laura Patricia Acosta Matos (standing), José Daniel Acosta Matos (second from right), and Gerardo Zacarías Acosta Matos (bearded person at far right), and assumes that editorial attribution. No facial-identification inference is performed. Corporate records corroborate the nominal four-sibling governance perimeter, not the pixels. The image alone does not prove that the plans concern Sun Park, capture date, title, mandate, invitation knowledge, agreement, wrongdoing or coordination.",
       "approved_contexts": [
         "homepage five-actor component",
         "protected five-actor direct-route component",
+        "post-7-June-2018 to 4-February-2022 continuity analysis",
         "El Economista/RICPE source context"
       ],
       "alt_en": "Four people around a table with plans and designs in front of an Acosta Matos logo",

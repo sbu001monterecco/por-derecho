@@ -40,7 +40,7 @@ The continuity record does not reproduce raw private LinkedIn messages, exact pr
 
 The earlier audit state **“CAIC ↔ Meeting Point identity reconciliation: OPEN”** is superseded.
 
-The person is now registered as **Juan José Vera Díaz^ — `PD-SP-P-0088` — `CARET_CONFIRMED`** for the CAIC ↔ FTI / Meeting Point person-identity context. The confirmation is based on multiple compatible attributes across official Pájara and BORME records, independent professional listings and the current CAIC biography.
+The person is now registered as **Juan José Vera Díaz^ — `PD-SP-P-0092` — `CARET_CONFIRMED`** for the CAIC ↔ FTI / Meeting Point person-identity context. The confirmation is based on multiple compatible attributes across official Pájara and BORME records, independent professional listings and the current CAIC biography.
 
 The LinkedIn line **“Community of Madrid, Spain”** is treated as geographic profile location, not evidence of public employment or office.
 
@@ -54,7 +54,7 @@ The caret confirms identity only. It does not establish date-specific capacity, 
 | Source separation | CAPTURED |
 | Propagation-gap diagnosis | CAPTURED |
 | Future-thread restart route | CAPTURED |
-| Juan José Vera Díaz person identity | CARET_CONFIRMED — `PD-SP-P-0088` |
+| Juan José Vera Díaz person identity | CARET_CONFIRMED — `PD-SP-P-0092` |
 | Native March screenshot re-verification | OPEN |
 | Exact date-specific capacities / represented entity | SOURCE-SPECIFIC / OPEN WHERE NOT PROVED |
 | Actual deletion proved | NO |
@@ -66,7 +66,7 @@ A future thread touching Vera / Meeting Point / Sun Park / Labranda / Club Sei /
 
 1. fetch current `main`;
 2. read `AGENTS.md`, `ops/REPOSITORY_PRESERVATION_CONTRACT.json` and `ops/CURRENT_STATE.json`;
-3. resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0088`)**;
+3. resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0092`)**;
 4. read `archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md` and `archive/JUAN_JOSE_VERA_MEETING_POINT_MARCH_2018_CONTINUITY_CONTROL_27AUG2026.md`;
 5. read the existing FTI / Meeting Point / RICPE continuity controls already routed by `CHATGPT_START_HERE.md`;
 6. re-query the authorised private-source system if a stronger factual proposition is needed;

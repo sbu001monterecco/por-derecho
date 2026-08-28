@@ -5,7 +5,7 @@ La fuente privada no se altera. La copia pública es rasterizada y todas las red
 | Página fuente | Alcance | Motivo |
 |---:|---|---|
 | 1 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
-| 2 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
+| 2 | selectivo + pie de firma | Se conservan las tres representaciones societarias visibles de Javier Acosta Matos, Laura Acosta Matos y José Acosta Matos; se expurgan el resto de filas nominales, fincas, identificadores, contactos, firmas y datos privados. |
 | 3 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
 | 4 | selectivo + pie de firma | Identificadores, contactos, fincas, filas individuales y firmas detectadas; se conserva el texto sustantivo visible. |
 | 5 | página completa | Lista nominal, tabla individual, dato bancario, firma o anexo reservado. |

@@ -110,14 +110,14 @@
     }
   },
   "identity_registry": {
-    "total": 204,
-    "PERSON": 87,
-    "ORGANISATION": 71,
+    "total": 214,
+    "PERSON": 94,
+    "ORGANISATION": 74,
     "STRUCTURE": 10,
     "INSTITUTION": 18,
     "PROCEEDING": 18,
     "archive_backfill": "OPEN",
-    "candidate_state": "SOURCE_STATIC_AND_PUBLIC_EXACT_READBACK_ALIGNED",
+    "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {
       "total": 204,
       "PERSON": 87,
@@ -153,7 +153,7 @@
       "source-before-conclusion",
       "economic unity with legal-perimeter separation",
       "adverse and contrary evidence controls",
-      "204-identity exact live-readback parity with the earlier 194 snapshot preserved historically",
+      "214-identity local source/static parity; 204-identity exact live readback and the earlier 194 snapshot preserved historically",
       "exact-main Pages, verifier and production-smoke success"
     ],
     "risks": [
@@ -174,7 +174,7 @@
     "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
     "reasons": [
       "prepared against earlier 16dd443 repository state",
-      "the now live-verified 204-record denominator differs from the stale package assumptions",
+      "the local 214-record denominator and last live-verified 204-record denominator both differ from the stale package assumptions",
       "proceeding IDs R-0011 through R-0017 are occupied",
       "Matkator and ONA exact-entity reconciliation remains open",
       "Clubotel, PP1041 and EH90 require current-registry admission"

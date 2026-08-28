@@ -3,8 +3,8 @@
   "control_id": "PD-CAEPR-VERA-20260827-01",
   "control_date": "2026-08-27",
   "scope": "Juan José Vera Díaz person identity across CAIC ↔ FTI / Meeting Point continuity",
-  "registry_layer": "FEDERATED_SPECIALIST_CAEPR_IDENTITY_CONTROL",
-  "master_index_backfill": "OPEN_COORDINATED_BASELINE_REFRESH_REQUIRED",
+  "registry_layer": "FEDERATED_SPECIALIST_CAEPR_IDENTITY_CONTROL_AND_MASTER_BACKFILL",
+  "master_index_backfill": "COMPLETED_IN_214_OBJECT_COMBINED_LOCAL_MASTER_ON_2026-08-28",
   "result": "ALL IS^ — VERIFIED FOR THE STATED SCOPE",
   "denominator": 1,
   "confirmed": 1,
@@ -14,7 +14,7 @@
   "records": [
     {
       "display": "Juan José Vera Díaz^",
-      "caepr_id": "PD-SP-P-0088",
+      "caepr_id": "PD-SP-P-0092",
       "object_type": "PERSON",
       "state": "CARET_CONFIRMED",
       "identity_context": "CAIC ↔ FTI / Meeting Point person continuity",
@@ -50,10 +50,17 @@
         "Identity confirmation does not prove conduct, relationship, knowledge, liability, project participation or source authenticity.",
         "Date-specific capacity and exact represented legal entity remain source-specific.",
         "The LinkedIn profile string ‘Community of Madrid, Spain’ is treated as geographic location, not evidence of public employment or office.",
-        "PD-SP-P-0088 is reserved by this specialist federated control; the 204-object master-index snapshot remains unchanged until a coordinated registry/count/live-baseline refresh is performed."
+        "PD-SP-P-0092 is preserved for Juan José Vera Díaz in the coordinated 214-object / 94-person local master index. Fetched origin/main a9e394a contained 210 objects before this package was additively reconciled; the earlier 204-object exact public readback remains historical and is not an allocation ceiling."
       ]
     }
   ],
+  "master_backfill_control": {
+    "date": "2026-08-28",
+    "local_master_total": 214,
+    "local_master_people": 94,
+    "collision_resolution": "Origin/main allocations are preserved at PD-SP-P-0088 through PD-SP-P-0091; PD-SP-P-0092 remains Juan José Vera Díaz; Javier Acosta Matos is PD-SP-P-0093; Gerardo Zacarías Acosta Matos is PD-SP-P-0094. No facts transfer between records.",
+    "live_boundary": "Combined package publication is authorised; CI, merge, deployment and exact public readback remain separately evidenced."
+  },
   "exceptions": [],
   "non_applicable": [
     "Sun Park, Lava Verde and Club Sei are assets/project labels rather than person identity objects in this one-object caret audit.",

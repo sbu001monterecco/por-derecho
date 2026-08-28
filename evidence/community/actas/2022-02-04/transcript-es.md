@@ -57,7 +57,15 @@ representados que asisten a la reunion:
 
 ## Página fuente 2 de 7
 
-[REPRESENTACIONES Y LISTA NOMINAL DE PROPIETARIOS/FINCAS CON DERECHO A VOTO REDACTADAS]
+REPRESENTADOS:
+
+Don Javier Acosta Matos en representación de Construcciones Acos-Matos, S.L.
+
+Doña Laura Acosta Matos como legal representante de Construcciones Acosta Matos, S.A.
+
+Don José Acosta Matos como legal representante de Proyectos Acosta Matos, S.L.
+
+[RESTANTE LISTA NOMINAL DE PROPIETARIOS/FINCAS, FIRMAS Y DATOS PRIVADOS REDACTADOS]
 
 Coeficiente agregado de participación presente o representada que consta en la página: 20,993%.
 

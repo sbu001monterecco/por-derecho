@@ -101,15 +101,15 @@
       "node_id": "AM357-N01",
       "language": "es",
       "route": "/es/concurso-36-2012-magistrado-juez/",
-      "normalized_main_sha256": "1cdce03df5b05409c39f6a7967aaefe9637b9468e2ae4e218cf84e7869f22ce3",
-      "normalized_characters": 8147
+      "normalized_main_sha256": "59a9ea6ffbc1fbee06e27b1edf88bb7cadeacd99b2a80bcfdce8590f30cd7492",
+      "normalized_characters": 10354
     },
     {
       "node_id": "AM357-N01",
       "language": "en",
       "route": "/en/insolvency-36-2012-mercantile-court-1/",
-      "normalized_main_sha256": "ce7f6e563a305836af940efd9f4fed107e011a303e3e0aa23a85b66471688f22",
-      "normalized_characters": 8010
+      "normalized_main_sha256": "b650712a2e38d3808fdfade515dd213af075e2207599b0fc083bef577ea50895",
+      "normalized_characters": 10130
     },
     {
       "node_id": "AM357-N02",
@@ -129,15 +129,15 @@
       "node_id": "AM357-N03",
       "language": "es",
       "route": "/es/toma-control-sun-park-7-junio-2018/",
-      "normalized_main_sha256": "0487ab62e74a3f56a929d3204129714258a80665090730f841dd79e91ea9eb46",
-      "normalized_characters": 27928
+      "normalized_main_sha256": "16d06a3be1d18f36fb906e08ed943a86ea11d8f191212caa70102dbf659a8edd",
+      "normalized_characters": 53098
     },
     {
       "node_id": "AM357-N03",
       "language": "en",
       "route": "/en/sun-park-takeover-7-june-2018/",
-      "normalized_main_sha256": "9a25a35a842613f4a715548f919de1403bac2301b647455f9fd000cab5936c6f",
-      "normalized_characters": 26684
+      "normalized_main_sha256": "e12698f103130360cdb91a6a0989bc5440b8ea120acbf18ab4622147b997f953",
+      "normalized_characters": 50633
     },
     {
       "node_id": "AM357-N04",
@@ -282,7 +282,7 @@
         "language": "es",
         "route": "/es/toma-control-sun-park-7-junio-2018/",
         "normalized_literal": "Francisco de Borja Rodríguez-Batllori Laffitte",
-        "normalized_occurrence_count": 1
+        "normalized_occurrence_count": 2
       }
     },
     {
@@ -354,7 +354,7 @@
         "language": "es",
         "route": "/es/toma-control-sun-park-7-junio-2018/",
         "normalized_literal": "Gil Marer",
-        "normalized_occurrence_count": 7
+        "normalized_occurrence_count": 9
       }
     },
     {
@@ -390,7 +390,7 @@
         "language": "es",
         "route": "/es/toma-control-sun-park-7-junio-2018/",
         "normalized_literal": "José Daniel Acosta Matos",
-        "normalized_occurrence_count": 1
+        "normalized_occurrence_count": 3
       }
     },
     {
@@ -570,7 +570,7 @@
         "language": "en",
         "route": "/en/sun-park-takeover-7-june-2018/",
         "normalized_literal": "Acosta Matos project",
-        "normalized_occurrence_count": 1
+        "normalized_occurrence_count": 2
       }
     },
     {
@@ -882,7 +882,7 @@
         "language": "en",
         "route": "/en/sun-park-takeover-7-june-2018/",
         "normalized_literal": "HNT",
-        "normalized_occurrence_count": 2
+        "normalized_occurrence_count": 11
       }
     },
     {
