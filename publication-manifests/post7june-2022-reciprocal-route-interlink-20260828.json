@@ -59,6 +59,7 @@
     "scripts/render_post7june_2022_omnidirectional_map.mjs",
     "scripts/validate_post7june_2022_deliberate_exclusion.py",
     ".github/workflows/validate-acta-meeting-lineage.yml",
+    ".github/workflows/verify-source-of-funds-notice-live.yml",
     "assets/styles.css",
     "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
     "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
@@ -77,7 +78,8 @@
     "html_static_preflight": "PASS_22_OF_22_ROUTES_NO_DUPLICATE_IDS",
     "audience_experience": "PASS_588_HTML_PAGES_8671_INTERNAL_LINKS_1768_PUBLIC_FILES",
     "publication_integrity": "PASS_75_MANIFESTS",
-    "browser_execution": "PENDING_PR_CI_CHROMIUM"
+    "browser_execution": "PENDING_PR_CI_CHROMIUM",
+    "legacy_featured_dom_monitor": "WAIT_FOR_STABLE_FIVE_ACTOR_THEN_SOURCE_FUNDS_ORDER"
   },
   "publication_result": null,
   "external_actions": {
