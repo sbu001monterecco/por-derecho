@@ -229,15 +229,15 @@ jobs:
                 const rootCount = await page.locator('[data-source-of-funds-notice]').count();
                 if (rootCount !== 1) failures.push(`notice roots=${rootCount}`);
                 if (verifyFeatured && featured.has(target.path)) {
+                  // This monitor owns the notice-to-anchor relationship. The
+                  // dedicated five-actor workflow owns the anchor-to-hero order.
                   await page.waitForFunction(() => {
                     const opening = document.querySelector('main > section:first-of-type');
                     const lockedFiveActorSection = document.querySelector('main > section[data-pd-five-ac]');
                     const section = document.querySelector('.source-funds-notice-section--featured');
                     const expectedAnchor = lockedFiveActorSection || opening;
                     return Boolean(
-                      opening
-                      && (!lockedFiveActorSection || opening.nextElementSibling === lockedFiveActorSection)
-                      && expectedAnchor
+                      expectedAnchor
                       && section
                       && expectedAnchor.nextElementSibling === section
                     );
@@ -251,7 +251,7 @@ jobs:
                       && image.naturalWidth === 1800
                       && image.naturalHeight === 1200
                     ));
-                  }, null, { timeout: 45000 });
+                  }, null, { timeout: 90000 });
                   const featureState = await page.evaluate(() => {
                     const opening = document.querySelector('main > section:first-of-type');
                     const lockedFiveActorSection = document.querySelector('main > section[data-pd-five-ac]');
@@ -261,7 +261,6 @@ jobs:
                     const expectedAnchor = lockedFiveActorSection || opening;
                     return {
                       immediatelyAfterExpectedAnchor: Boolean(expectedAnchor && section && expectedAnchor.nextElementSibling === section),
-                      lockedActorFirstAfterOpening: !lockedFiveActorSection || Boolean(opening && opening.nextElementSibling === lockedFiveActorSection),
                       expectedAnchor: lockedFiveActorSection ? 'locked-five-actor-section' : 'opening-section',
                       graphicCount: graphics.length,
                       imageStates: images.map(image => ({
@@ -276,7 +275,6 @@ jobs:
                     };
                   });
                   if (!featureState.immediatelyAfterExpectedAnchor) failures.push(`featured placement is not immediately after ${featureState.expectedAnchor}`);
-                  if (!featureState.lockedActorFirstAfterOpening) failures.push('locked five-actor section is not immediately after opening section');
                   if (featureState.graphicCount !== 2) failures.push(`featured graphics=${featureState.graphicCount}`);
                   if (featureState.imageStates.length !== 2) failures.push(`featured images=${featureState.imageStates.length}`);
                   for (const image of featureState.imageStates) {

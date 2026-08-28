@@ -119,13 +119,17 @@ The first post-deployment run of the unchanged source-of-funds live monitor samp
 
 The same merge exposed a second pre-existing monitor inconsistency: the unitary control-plane readback required the preserved historical 204-ID denominator on the mutable current registry pages and in the current `identity_registry.counts`, although the additive public register had already advanced to 214 IDs. The corrected control now tests current `214/94/74/10/18/18` markers and counts while separately retaining `last_live_verified_counts` at `204/87/71/10/18/18` and the immutable 26-August promotion anchors. This is a current-versus-historical state correction; it transfers no evidence or attribution between identities.
 
+Governance closeout PR [#1150](https://github.com/sbu001monterecco/por-derecho/pull/1150) passed 18/18 scoped workflows, including both corrected monitors and the repeated 30 route/viewport browser matrix. It merged as `b533dbfd6c4883885957b8dedee8fe8a1e1feb4e`; Pages run `33177638207` / #1221 succeeded; and the final public-edge audit matched 29/29 exact bytes across the 22 bilingual routes, four controlling style/data/manifest resources and three public governance/control files.
+
+The #1221 push run then exposed a boundary error inside the source-of-funds monitor itself. Its source-of-funds assertions passed on PR #1150. On the merge run, one first attempt exceeded the image window; on retry, all source-of-funds content and images passed, but an unrelated assertion about the five-actor visual's position relative to the hero failed while the source-of-funds section remained immediately after its selected anchor. The controls are now separated: this workflow owns the notice root, notice-to-anchor relationship, two complete 1800 × 1200 images, exact graphic identity, heading, icon and route links; the dedicated five-actor workflow alone owns the five-actor-to-hero order. The image-readiness window is 90 seconds. No public content or evidence proposition changes.
+
 Repository and GitHub Pages publication were authorised and completed. Filing, notice, email, interview, demand and all other third-party contact remain unauthorised and were not performed.
 
 ## 8. Open evidence and restart instruction
 
 ME-099 and ME-100 remain controlling. The priority package is the native call/invitation, correct owner and statutory-address sources, versioned dispatch/service/fallback records, complete attendee/power/vote/conflict schedule, diligenced ACTA and distribution ledger, native Thompson/upstream chain, debt/title/coefficient/cost ledgers, project and board files, deed/segregation inventories, and instrument-by-instrument funding applications, invoices, jobs, disclosures, payments and audits.
 
-On restart, read the canonical report, structured data, CR-119–CR-126, ME-099–ME-100, Declaration 017, this audit and the publication manifest before changing the visual or its conclusions. Preserve actor-specific status, the 2018 dismissal/appeal, LPB/Matkator separation and all lawful alternatives.
+On restart, read the canonical report, structured data, CR-119–CR-127, ME-099–ME-100, Declaration 017, this audit and the publication manifest before changing the visual or its conclusions. Preserve actor-specific status, the 2018 dismissal/appeal, LPB/Matkator separation and all lawful alternatives.
 
 ## 9. Deletion-continuity conclusion
 
