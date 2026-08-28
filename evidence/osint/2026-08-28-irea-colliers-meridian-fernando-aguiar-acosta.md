@@ -10,6 +10,8 @@
 2. Colliers announced on 27 February 2018 that it acquired a controlling interest in IREA and combined IREA with its existing Spanish operations.
 3. A public LinkedIn profile for Fernando Aguiar Acosta states that he joined Colliers in Madrid as a summer 2026 Debt Advisory intern.
 
+The public profile material reviewed does not expose a verifiable immediately preceding employer or role. No previous role is therefore attributed in this capture.
+
 ## Sources preserved
 
 - SAREB: <https://www.sareb.es/en/sareb-completes-institutional-transactions-valued-closed-to-e850-million/>
@@ -22,6 +24,7 @@
 - **Established public fact:** IREA and Cuatrecasas held the stated professional-adviser roles on the Meridian sale.
 - **Established public fact:** IREA entered the Colliers Spain corporate platform in 2018 through the announced controlling-interest acquisition and operational combination.
 - **Public profile statement:** Fernando Aguiar Acosta reports a 2026 Colliers Debt Advisory internship.
+- **Previous-role limit:** the immediately preceding employer or role is not verifiable from the public profile material reviewed and is not asserted.
 - **Unresolved:** whether Fernando Aguiar Acosta is related to José Daniel Acosta Matos, Laura Patricia Acosta Matos or another member of that family.
 - **Not established:** that Fernando participated in Meridian, accessed legacy IREA records, knew of LPB/Sun Park, or carried information between Colliers and the Acosta Matos perimeter.
 - **Not established:** the LPB-specific material reviewed by IREA or Cuatrecasas, team overlap, conflict, information transfer, wrongdoing or liability.
