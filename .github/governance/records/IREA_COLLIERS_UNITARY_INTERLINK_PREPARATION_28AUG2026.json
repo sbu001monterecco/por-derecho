@@ -1,0 +1,30 @@
+{
+  "record_id": "PD-IREA-COLLIERS-PREP-20260828-01",
+  "decision_date": "2026-08-28",
+  "baseline": "origin/main@f20e86c53b1c579f8adfe01646869b91504bb11d",
+  "branch": "codex/irea-colliers-continuity-remediation-20260828",
+  "validated_content_commit_sha": "d4622253fbc1619f25d95160fa2d8b9cca9e562f",
+  "action_state": "REMOTE_SOURCE_NOT_MERGED_NOT_LIVE",
+  "publication_authority": "GRANTED_FOR_EXACT_REPOSITORY_WEBSITE_BRANCH_PR_MERGE_PAGES_CHAIN",
+  "publication_authority_text": "ensure all the above is preserved in repository and web pages. Confirm continuity safe.",
+  "communication_authority": "NOT_GRANTED; NO EMAIL FILING WITNESS CONTACT OR OTHER THIRD_PARTY ACTION",
+  "canonical_routes": [
+    "/en/irea-colliers-meridian-sun-park/",
+    "/es/irea-colliers-meridian-sun-park/"
+  ],
+  "placement_decision": "Dedicated secondary evidence dossier reciprocally linked from lender/holder, PH122/Haya, Cuatrecasas, RICPE and Acosta Matos pages; no homepage-hero placement while the Meridian asset schedule and proposed family relationship remain unresolved.",
+  "capacity_control": "IREA was not the lender, credit holder or servicer. It was SAREB's named financial adviser on Meridian and separately a prospective Sun Park/LPB debt adviser. Colliers is the post-2018 corporate-continuity and potential records-custody route to confirm.",
+  "current_corroboration": "A 29 July 2026 financial-media report names Fernando Aguiar on a Colliers team advising an unrelated EUR 43.5 million hotel-secured financing. This corroborates hotel-debt team participation only.",
+  "relationship_visual_code": "SOLID_BURGUNDY marks the documented RICPE professional sequence; DASHED_AMBER marks the provisional, unverified Acosta Matos family hypothesis. Text labels accompany both colors.",
+  "duplicate_anchor_remediation": "The earlier duplicate Fernando Aguiar witness panel was removed in both canonical languages. Exactly one witness anchor and one relationship map remain per page, enforced by the specialist validator.",
+  "witness_control": "Fernando Aguiar Acosta is a proposed fact/custody witness, not an adverse actor. No family relationship, relevant project knowledge, legacy-record access, transfer, coordination, wrongdoing or liability is established.",
+  "identity_control": "PD-IREA-RICPE-COLLIERS-CARET-20260828-01; 13/13 CARET_CONFIRMED; identity only",
+  "private_source_boundary": "Native private messages and attachments remain outside Git; only minimized propositions and opaque source classes are stored.",
+  "required_closeout": [
+    "obtain express push/PR/merge/publication authority",
+    "push and merge exact reviewed commit",
+    "verify Pages workflow for exact merge SHA",
+    "perform bilingual live readback and reciprocal-link audit",
+    "update this action state and deletion-safety verdict"
+  ]
+}

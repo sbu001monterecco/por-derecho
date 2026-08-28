@@ -1,0 +1,45 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "irea-colliers-unitary-interlink-20260828",
+  "control_id": "PD-IREA-COLLIERS-UNITARY-20260828-01",
+  "control_date": "2026-08-28",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "validated_local_candidate_authorized_for_repository_and_website_publication_not_live",
+  "owner": "Por Derecho / Project Sun Rock",
+  "remote_main_observed_sha": "f20e86c53b1c579f8adfe01646869b91504bb11d",
+  "candidate_branch": "codex/irea-colliers-continuity-remediation-20260828",
+  "candidate_parent_sha": "f20e86c53b1c579f8adfe01646869b91504bb11d",
+  "validated_content_commit_sha": "d4622253fbc1619f25d95160fa2d8b9cca9e562f",
+  "publication_authorized": true,
+  "publication_authority_text": "ensure all the above is preserved in repository and web pages. Confirm continuity safe.",
+  "communication_authorized": false,
+  "email_or_filing_action": "HOLD_NOT_AUTHORISED",
+  "placement": "Dedicated bilingual secondary evidence dossier; no homepage-hero placement while Meridian asset inclusion and proposed family relationship remain unresolved.",
+  "relationship_visual_code": "SOLID_BURGUNDY documented RICPE professional edge; DASHED_AMBER provisional/unverified Acosta Matos family-hypothesis edge; both text-labelled and non-liability-bearing.",
+  "expected_routes": {
+    "es": ["es/irea-colliers-meridian-sun-park/index.html"],
+    "en": ["en/irea-colliers-meridian-sun-park/index.html"]
+  },
+  "expected_source_files": [
+    "assets/data/irea-colliers-meridian-sun-park-unitary-v1.json",
+    "evidence/osint/2026-08-28-irea-colliers-meridian-fernando-aguiar-acosta.md",
+    "assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json",
+    "docs/deletion-audits/2026-08-28-irea-colliers-unitary-interlink-thread.md",
+    "scripts/validate_irea_ricpe_colliers_continuity.py"
+  ],
+  "validation": {
+    "evidence": [
+      "Remote publication-branch content commit d4622253fbc1619f25d95160fa2d8b9cca9e562f passed the specialist relationship-code, unique-anchor, audience/link and OSINT/privacy gates.",
+      "The complete current-base candidate passed publication integrity across 26 changed files, repository preservation across 3,730 tracked files, audience validation across 598 HTML pages and 8,789 internal links, operational truth, current digest, unitary control, unitary criminal, mission-critical, legal-register, identity-registry, person-perimeter and sent-link continuity gates.",
+      "Sitemap XML and all edited JSON files parsed successfully; reciprocal links and exactly one bilingual Fernando witness anchor/relationship map are enforced by the specialist validator."
+    ]
+  },
+  "required_closeout": [
+    "express repository/website publication authority",
+    "push and pull request",
+    "CI success on exact reviewed head",
+    "merge and Pages deployment",
+    "bilingual live readback and reciprocal-link verification",
+    "publication-manifest and deletion-audit state update"
+  ]
+}
