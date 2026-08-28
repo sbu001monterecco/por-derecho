@@ -89,7 +89,7 @@ REQUIRED = {
         "€13,065,186.68",
         "€102,895.34",
     ],
-    "declaration_index": ["| 016 | 2026-08-26 |", "siguiente declaración disponible es **017**"],
+    "declaration_index": ["| 016 | 2026-08-26 |"],
     "declaration_readme": ["Declaration 016", "016_GIL_CREDIT_MULTIPLE_LIVES_NPL_NOTARIAL_ALLEGATION_20260826.md"],
     "start": ["ALG-NPL-019", "BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_BANKING_CRIME_360_CONTROL_26AUG2026.md"],
     "prompt_library": ["ALG-NPL-019", "BANKIA_SAREB_PH122_CAM_CREDIT_MULTIPLE_LIVES_CRIMINAL_360_PROMPT_26AUG2026.md"],
@@ -189,6 +189,24 @@ def main() -> None:
         for marker in markers:
             if marker not in content:
                 failures.append(f"{FILES[key].relative_to(ROOT)} missing marker: {marker}")
+
+    declaration_numbers = sorted(
+        int(path.name[:3])
+        for path in (ROOT / "archive/declarations").glob("[0-9][0-9][0-9]_*.md")
+    )
+    if not declaration_numbers:
+        failures.append("declaration register contains no numbered declarations")
+    else:
+        expected_next = max(declaration_numbers) + 1
+        next_markers = re.findall(
+            r"siguiente declaración disponible es \*\*(\d{3})\*\*",
+            cache.get("declaration_index", ""),
+        )
+        if next_markers != [f"{expected_next:03d}"]:
+            failures.append(
+                "declaration index next-number marker is not dynamically current: "
+                f"actual={next_markers}, expected={[f'{expected_next:03d}']}"
+            )
 
     parsed_pages: dict[str, tuple[str, PageParser]] = {}
     for es_rel, en_rel in PAIR_SPECS:

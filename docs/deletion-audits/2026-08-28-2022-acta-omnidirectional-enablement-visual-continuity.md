@@ -123,13 +123,19 @@ Governance closeout PR [#1150](https://github.com/sbu001monterecco/por-derecho/p
 
 The #1221 push run then exposed a boundary error inside the source-of-funds monitor itself. Its source-of-funds assertions passed on PR #1150. On the merge run, one first attempt exceeded the image window; on retry, all source-of-funds content and images passed, but an unrelated assertion about the five-actor visual's position relative to the hero failed while the source-of-funds section remained immediately after its selected anchor. The controls are now separated: this workflow owns the notice root, notice-to-anchor relationship, two complete 1800 × 1200 images, exact graphic identity, heading, icon and route links; the dedicated five-actor workflow alone owns the five-actor-to-hero order. The image-readiness window is 90 seconds. No public content or evidence proposition changes.
 
+### 7.2 Final monitor-separation closeout
+
+PR [#1151](https://github.com/sbu001monterecco/por-derecho/pull/1151) completed the monitor separation on exact head `57acefe8bb111cb08773a0588b5bb29bc8b0b1f1` and tree `912360b889860fc756adbdfc3a7688c57ff4b519`. All 17/17 pull-request workflows passed. It merged as `79a0c0ed75e19e4f093cf47ba7d4ad6e72b9a693`; Pages run `33178497557` / #1222 succeeded. The exact-merge source-of-funds run `33178498441` / #160 and ACTA/interlink run `33178498476` / #21 both succeeded. The controlled final readback remained 29/29 HTTP 200 exact repository bytes. This closes the monitor issue without changing public evidence content.
+
+A later repository continuity pass found a separate navigation defect in the older AM357 endpoint-to-endpoint layer: 52 conceptual root routes had been copied into 18 HTML pages, so the browser could leave the `/por-derecho` project prefix. The targets and fragments themselves existed. CR-128 and `2026-08-28-post7june-link-and-closeout-remediation.md` control the project-safe rendering correction; they do not reopen or weaken this 2018–2022 evidentiary analysis.
+
 Repository and GitHub Pages publication were authorised and completed. Filing, notice, email, interview, demand and all other third-party contact remain unauthorised and were not performed.
 
 ## 8. Open evidence and restart instruction
 
 ME-099 and ME-100 remain controlling. The priority package is the native call/invitation, correct owner and statutory-address sources, versioned dispatch/service/fallback records, complete attendee/power/vote/conflict schedule, diligenced ACTA and distribution ledger, native Thompson/upstream chain, debt/title/coefficient/cost ledgers, project and board files, deed/segregation inventories, and instrument-by-instrument funding applications, invoices, jobs, disclosures, payments and audits.
 
-On restart, read the canonical report, structured data, CR-119–CR-127, ME-099–ME-100, Declaration 017, this audit and the publication manifest before changing the visual or its conclusions. Preserve actor-specific status, the 2018 dismissal/appeal, LPB/Matkator separation and all lawful alternatives.
+On restart, read the canonical report, structured data, CR-119–CR-128, ME-099–ME-100, Declaration 017, this audit, the link-remediation audit and both publication manifests before changing the visual, interlinks or conclusions. Preserve actor-specific status, the 2018 dismissal/appeal, LPB/Matkator separation and all lawful alternatives.
 
 ## 9. Deletion-continuity conclusion
 

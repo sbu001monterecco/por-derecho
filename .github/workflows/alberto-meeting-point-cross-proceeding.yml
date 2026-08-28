@@ -61,6 +61,10 @@ on:
       - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
       - 'ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md'
       - 'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
+      - 'publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json'
+      - 'docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md'
+      - 'archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md'
+      - 'scripts/build_alberto_meeting_point_project_links.py'
       - 'scripts/validate_alberto_meeting_point_cross_proceeding.py'
       - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
       - 'scripts/validate_current_reverse_engineered_digest.py'
@@ -130,6 +134,10 @@ on:
       - 'ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json'
       - 'ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md'
       - 'publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json'
+      - 'publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json'
+      - 'docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md'
+      - 'archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md'
+      - 'scripts/build_alberto_meeting_point_project_links.py'
       - 'scripts/validate_alberto_meeting_point_cross_proceeding.py'
       - 'scripts/validate_alberto_meeting_point_first_hop_caret.py'
       - 'scripts/validate_current_reverse_engineered_digest.py'
@@ -151,6 +159,8 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
+      - name: Verify deterministic project-safe reciprocal links
+        run: python scripts/build_alberto_meeting_point_project_links.py --check
       - name: Validate specialist graph and finite caret census
         run: python scripts/validate_alberto_meeting_point_cross_proceeding.py
       - name: Validate first-hop rendered caret provenance
