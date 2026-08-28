@@ -6,6 +6,8 @@
 **Repository visibility:** public; this record contains no native private email, recipient address, provider locator, WhatsApp text, family detail or unannounced asset-specific term  
 **Rendered website:** prohibited by default; `.github/` is outside the current Pages surface
 
+> **Current conflicts / onboarding reading notice — 28 August 2026:** This is a dated, public-safe historical continuity derivative. It is **not** the current matter-opening counterparty list, is **not** a complete conflicts universe, does **not** establish a live legal or financial mandate, and must not be used to infer that any named organisation is a current client, adverse party, target or committed counterparty. For any new professional engagement, the exact current client, affiliates, counterparties and related parties must be supplied confidentially through the professional firm's matter-opening channel. See `/en/advisers/conflicts/` or `/es/asesores/conflictos/` for the public professional-onboarding reader.
+
 ## Purpose
 
 Preserve the strategic proposition, drafting corrections and operational takeaways needed for future Israel-facing emails concerning a possible long-term relationship between Aweswell, Actyus and Andbank Group.
