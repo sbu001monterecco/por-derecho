@@ -1,0 +1,27 @@
+{
+  "record_id": "PD-PERSON-PUB-20260828-01",
+  "decision_date": "2026-08-28",
+  "authority": "Gil Marer",
+  "authority_text": "add; capture evidence; add Colliers as continuity of IREA",
+  "identity": {
+    "public_name": "Fernando Aguiar Acosta",
+    "aliases": [],
+    "immutable_candidate_id": "PD-SP-P-CAND-20260828-FAA"
+  },
+  "organization_capacity_period": "Colliers Madrid; summer 2026 Debt Advisory intern, as stated by the public LinkedIn profile",
+  "proposition": "Current public professional-profile observation shown separately from the 2014 Project Meridian transaction and the 2018 IREA-Colliers corporate continuity.",
+  "source_basis": [
+    "SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026",
+    "SRC-COLLIERS-IREA-ACQUISITION-2018",
+    "SRC-SAREB-MERIDIAN-2014"
+  ],
+  "establishes": "The profile states a 2026 Colliers Debt Advisory internship; Colliers is the documented post-2018 corporate continuity of IREA.",
+  "does_not_establish": "Parentage, Acosta Matos family membership, work on Meridian, access to legacy records, LPB knowledge, information transfer, intent, control, wrongdoing or responsibility.",
+  "necessity_and_proportionality": "Full public name and professional profile URL are necessary to avoid confusing this younger professional with José Daniel Acosta Matos. No portrait, private identifier or private-account content is reproduced.",
+  "privacy_assessment": "Public professional information only; residual association risk controlled through prominent non-inference and unresolved-relationship language.",
+  "public_category": "Professionals and representatives — current third-party professional observation; not classified in either principal private-party perimeter.",
+  "display_mode": "PUBLIC_FULL_NAME",
+  "public_label": "Fernando Aguiar Acosta — Colliers Debt Advisory intern (summer 2026); possible Acosta-family relationship unverified",
+  "authorization_reference": "Current authenticated ChatGPT thread, 28 August 2026",
+  "review_status": "open to correction, parentage verification and withdrawal review"
+}

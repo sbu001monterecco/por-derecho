@@ -142,6 +142,43 @@
     "notes": "Establishes the request and its stated basis, not the correctness of the Article 1535 characterisation."
   },
   {
+    "id": "SRC-SAREB-MERIDIAN-2014",
+    "title": "SAREB public notice of the Project Meridian hotel-loan sale",
+    "source_type": "official_corporate_transaction_notice",
+    "date": null,
+    "date_precision": "month",
+    "date_label": "December 2014",
+    "evidence_status": "verified_official",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://www.sareb.es/en/sareb-completes-institutional-transactions-valued-closed-to-e850-million/",
+    "notes": "Identifies a EUR 133 million portfolio secured by 26 hotel properties and names IREA as financial adviser and Cuatrecasas, Gonçalves Pereira as legal adviser. It does not establish which LPB-level material either team reviewed."
+  },
+  {
+    "id": "SRC-COLLIERS-IREA-ACQUISITION-2018",
+    "title": "Colliers announcement of controlling-interest acquisition and combination with IREA",
+    "source_type": "official_corporate_notice",
+    "date": "2018-02-27",
+    "evidence_status": "verified_official",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://corporate.colliers.com/news/news-details/2018/Colliers-International-creates-top-tier-player-in-Spain-02-27-2018/default.aspx",
+    "notes": "Establishes post-2018 corporate continuity. It does not attribute IREA's 2014 acts retroactively to Colliers or prove custody of a particular LPB record."
+  },
+  {
+    "id": "SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026",
+    "title": "Fernando Aguiar Acosta public professional profile",
+    "source_type": "public_professional_profile_statement",
+    "date": null,
+    "date_precision": "retrieval_date",
+    "date_label": "retrieved 28 August 2026",
+    "evidence_status": "documented_party_statement",
+    "availability": "public_web_minimized_capture",
+    "publication": "public_safe",
+    "url": "https://es.linkedin.com/in/fernando-aguiar-acosta-894679235",
+    "notes": "Reports a summer-2026 Colliers Madrid Debt Advisory internship. Parentage, Acosta Matos family membership, Meridian work, legacy-record access and LPB knowledge are not established."
+  },
+  {
     "id": "SRC-TRANSFER-2017-10-20-PH122-CAM",
     "title": "PH122-to-CAM mortgage-credit assignment identified as 20 October 2017",
     "source_type": "notarial_transfer_identified_in_later_records",
