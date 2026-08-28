@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "PD-AM357-PROJECT-SAFE-LINK-REMEDIATION-20260828-01",
   "control_date": "2026-08-28",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "owner": "Por Derecho / Project Sun Rock",
   "branch": "codex/post7june-continuity-remediation-20260828",
   "base_sha": "95e1de83e29c0edfe2490c3395bfb5c25b3c8f2b",
@@ -50,7 +50,9 @@
     "docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md",
     "publication-manifests/post7june-2022-reciprocal-route-interlink-20260828.json",
     "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
-    "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json"
+    "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json",
+    ".github/workflows/verify-meeting-point-final-propagation-live.yml",
+    "archive/DEPLOYMENT_LOG.md"
   ],
   "link_contract": {
     "matrix_nodes": 9,
@@ -61,14 +63,65 @@
     "conceptual_route_policy": "MATRIX_ROOT_ROUTES_RETAINED_FOR_RESOLUTION_COMPARISON"
   },
   "validation": {
-    "status": "LOCAL_PASS_PENDING_REMOTE_CI",
+    "status": "FIRST_PUBLICATION_REMOTE_PASS_MONITOR_CORRECTION_LOCAL_PASS_PENDING_REMOTE_CI",
     "evidence": [
       "Deterministic builder rendered and then verified 52/52 project-safe reciprocal links across 18 endpoint pages.",
       "AM357 specialist validation passed 9 nodes, 13 direct bridges, both endpoints and both languages with a 52-link relative-href census.",
       "Credit multiple-lives and CaixaBank mortgage/swap validators passed with the next declaration number derived from the repository register.",
       "No root-absolute /en or /es href remained in the bilingual public HTML corpus after the render.",
-      "No evidentiary proposition, actor assignment, identity, legal track or funding track changed."
+      "No evidentiary proposition, actor assignment, identity, legal track or funding track changed.",
+      "PR #1157 passed 23/23 checks; its exact merge published successfully and 30/30 changed public resources matched the merged bytes.",
+      "The public link traversal passed 52/52 relative href, project-prefix, route and fragment checks.",
+      "The corrected monitor's six stable static-section selectors passed 20/20 local marker checks; YAML parsed successfully."
     ]
+  },
+  "first_publication": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1157",
+    "pull_request_head_sha": "d59e79f99bdc5d31f49daf67d704af72425f7d4f",
+    "pull_request_tree_sha": "823ea339e53fddbd39acee80eeb43e3174214cdc",
+    "pull_request_checks": "PASS_23_OF_23",
+    "merge_sha": "85a3d733d7cec204eae873d04ea5f2f6699ae010",
+    "merge_tree_sha": "823ea339e53fddbd39acee80eeb43e3174214cdc",
+    "pages_run_id": 33186562852,
+    "pages_run_number": 1229,
+    "pages_conclusion": "success",
+    "public_readback": "PASS_30_OF_30_HTTP_200_EXACT_MERGE_BYTES",
+    "public_link_traversal": "PASS_52_OF_52_RELATIVE_PROJECT_SAFE_EXACT_ROUTE_AND_FRAGMENT"
+  },
+  "merge_sha": "85a3d733d7cec204eae873d04ea5f2f6699ae010",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "run_id": 33186562852,
+    "run_number": 1229,
+    "conclusion": "success",
+    "exact_merge_sha": true
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/es/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/en/lava-verde-club-sei-meeting-point/",
+    "https://sbu001monterecco.github.io/por-derecho/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/",
+    "https://sbu001monterecco.github.io/por-derecho/en/legal-notebook/meeting-point-357-2024-judicial-traceability/"
+  ],
+  "live_verification_evidence": [
+    "30/30 changed public resources returned HTTP 200 and matched the exact merge bytes.",
+    "52/52 AM357 endpoint links were relative, retained the /por-derecho project prefix, reached the exact peer route and resolved to an existing fragment.",
+    "Pages run 33186562852 / #1229 succeeded for exact merge 85a3d733d7cec204eae873d04ea5f2f6699ae010.",
+    "The remaining CR-129 item is a monitor-contract correction and does not reverse the exact public-content or link verification."
+  ],
+  "bounded_monitor_incident": {
+    "workflow": "Verify Meeting Point final propagation live",
+    "run_id": 33186564318,
+    "run_number": 36,
+    "job_id": 98900970170,
+    "conclusion": "cancelled_at_job_timeout",
+    "passing_contracts": "FTI_ES_EN_CAUSATION_ES_EN_CHRONOLOGY_ES_EN_MATERIAL_CHRONOLOGY_ES_EN_NOTEBOOK_ES_EN",
+    "failing_contracts": "OPTIONAL_RUNTIME_DUPLICATE_SELECTORS_FOR_LAVA_357_AND_TAKEOVER_ES_EN",
+    "classification": "LEGACY_MONITOR_CONTRACT_DEFECT_NOT_CONTENT_EVIDENCE_OR_NAVIGATION_REGRESSION",
+    "correction": "Use authoritative static route sections, add takeover route triggers, use domcontentloaded and bounded retries.",
+    "correction_branch": "codex/am357-live-closeout-20260828",
+    "correction_state": "LOCAL_PASS_PENDING_PR_MERGE_AND_EXACT_MERGE_LIVE_RUN"
   },
   "historical_package_closeout": {
     "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1151",
