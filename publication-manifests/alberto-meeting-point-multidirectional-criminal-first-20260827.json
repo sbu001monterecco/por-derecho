@@ -30,24 +30,26 @@
   ],
   "unitary_caret_scope": {
     "control_id": "PD-UNITARY-REDIGEST-20260827-01",
-    "confirmed": 19,
-    "pending": 5,
+    "confirmed": 21,
+    "pending": 3,
     "denominator": 24,
-    "changed_by_this_module": false
+    "changed_by_this_module": true
   },
   "specialist_caret_scope": {
     "control_id": "PD-ALV-MP357-CARET-20260827-01",
-    "confirmed": 25,
-    "pending": 7,
+    "confirmed": 31,
+    "pending": 0,
     "suspended": 0,
-    "denominator": 32,
-    "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS",
+    "denominator": 31,
+    "occurrence_rows": 32,
+    "confirmed_occurrence_rows": 32,
+    "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE",
     "identity_only": true
   },
   "first_hop_caret_scope": {
     "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
-    "confirmed": 56,
-    "pending": 74,
+    "confirmed": 61,
+    "pending": 69,
     "suspended": 0,
     "denominator": 130,
     "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
@@ -241,8 +243,8 @@
     "The 24 October 2024 register attribution does not prove personal signature, substitution, allocation or a statutory recusal ground.",
     "The three exact Meeting Point debtors are not thereby identified as the Club Sei contracting entity.",
     "The EUR 31 million SEPI/FASEE support does not establish tracing into Sun Park, omission, impairment or a personal judicial disclosure duty.",
-    "The full six-surface caret census is 25/32 with seven pending objects; no ALL IS^ claim is permitted for this specialist scope.",
-    "The full eighteen-route first-hop caret census is 56/130 with 74 pending objects; it is separate from both the six-surface 25/32 result and the repository-wide 19/24 result.",
+    "The full six-surface caret census is closed at 31/31 unique identities and 32/32 occurrence rows, with zero pending; ALL IS^ applies only to this specialist scope and only as identity resolution.",
+    "The full eighteen-route first-hop caret census is 61/130 with 69 pending objects; it is separate from both the specialist all-is result and the repository-wide 21/24 result.",
     "Public Git contains aggregate controls for the three archived 24-Oct notice copies, but not a reproducible per-copy full-hash custody manifest or the signed Auto 97/2025 binary.",
     "Repository and website publication of the exact complete continuity package was authorized and completed; no email, resend, forward, AGE/RedSARA notice, portal submission or filing was or is authorized."
   ]

@@ -20,16 +20,17 @@ had a statutory conflict, concealed information, knowingly issued an unjust
 decision, owed SEPI a personal disclosure duty or caused creditor/public loss.
 
 The exhaustive specialist caret census across the two hubs, machine matrix,
-human matrix, specialist audit and authority plan is **25/32 — 7 pending —
-PARTIAL, NOT ALL IS^**. The repository-wide unitary census remains separately
-**19/24 — PARTIAL, NOT ALL IS^**. A caret resolves identity only.
+human matrix, specialist audit and authority plan is **31/31 unique identities
+and 32/32 occurrence rows confirmed, zero pending — ALL IS^ for that stated
+scope**. The repository-wide unitary census remains separately **21/24 —
+PARTIAL, NOT ALL IS^**. A caret resolves identity only.
 
 The linked first-hop evidence corpus is separately exhaustive across the
-eighteen reciprocal primary routes: **56/130 confirmed, 74 pending — PARTIAL,
+eighteen reciprocal primary routes: **61/130 confirmed, 69 pending — PARTIAL,
 NOT ALL IS^**. Its 130-object denominator is 27 people, 64 organisations or
 expressly controlled perimeters, 25 institutions or sub-organs and 14
-proceedings. It neither replaces the six-surface 25/32 result nor changes the
-repository-wide 19/24 result. The complete object and source-needed queue is
+proceedings. It neither replaces the specialist all-is result nor changes the
+repository-wide 21/24 result. The complete object and source-needed queue is
 `assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json`.
 
 ## Multidirectional map

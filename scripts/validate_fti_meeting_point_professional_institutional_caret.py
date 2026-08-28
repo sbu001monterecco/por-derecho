@@ -16,14 +16,14 @@ PATH = ROOT / "assets/data/caepr-caret-fti-meeting-point-professional-institutio
 CONTROL_ID = "PD-FTI-MP-PROF-INST-CARET-20260827-01"
 EXPECTED_VERDICT = (
     "FINITE ROLE-SELECTED 13-SURFACE PROFESSIONAL-INSTITUTIONAL CENSUS COMPLETE; "
-    "40/101 CARET_CONFIRMED; 61 CARET_PENDING; 0 CARET_SUSPENDED; "
+    "43/101 CARET_CONFIRMED; 58 CARET_PENDING; 0 CARET_SUSPENDED; "
     "PARTIAL — NOT ALL IS^"
 )
 EXPECTED_COUNTS = {
     "PERSON": (19, 8, 11),
     "ORGANISATION_OR_STRUCTURE": (40, 22, 18),
-    "INSTITUTION_OR_SUBORGAN": (24, 7, 17),
-    "PROCEEDING_OR_FILE": (18, 3, 15),
+    "INSTITUTION_OR_SUBORGAN": (24, 9, 15),
+    "PROCEEDING_OR_FILE": (18, 4, 14),
 }
 EXPECTED_SEPARATE = {
     "PD-FTI-MP-RICPE-CARET-20260827-01": 65,
@@ -36,40 +36,40 @@ PAGE_RULES = {
         "path": "es/fti-meeting-point-ricpe-alertador-continuidad/index.html",
         "required": (
             "31 ACCIONES CONTROLADAS · NINGUNA AUTORIZADA POR ESTA PÁGINA",
-            "Censo finito de alcance seleccionado: 40 de 101 confirmados; 61 pendientes.",
+            "Censo finito de alcance seleccionado: 43 de 101 confirmados; 58 pendientes.",
             "trece superficies fuente controladas enumeradas en el censo",
             "No incluye el registro o la vista transaccional canónicos añadidos posteriormente",
             "ni pretende enumerar hotel por hotel, nuevos compradores, operadores, gestores, financiadores u otras contrapartes",
             "Los cuatro denominadores heredados y el quinto denominador ampliado de 101 objetos se mantienen separados",
-            "Abrir los 101 registros — 40 confirmados / 61 pendientes →",
+            "Abrir los 101 registros — 43 confirmados / 58 pendientes →",
         ),
     },
     "S09": {
         "path": "en/fti-meeting-point-ricpe-whistleblower-continuity/index.html",
         "required": (
             "31 CONTROLLED ACTIONS · NONE AUTHORISED BY THIS PAGE",
-            "Finite role-selected census: 40 of 101 confirmed; 61 pending.",
+            "Finite role-selected census: 43 of 101 confirmed; 58 pending.",
             "thirteen controlled source surfaces enumerated in the census",
             "It does not include the canonical transaction register or watch view added later",
             "it does not purport to enumerate hotel-by-hotel assets, new buyers, operators, managers, financiers or other counterparties",
             "The four legacy denominators and the fifth expanded 101-object denominator remain separate",
-            "Open all 101 records — 40 confirmed / 61 pending →",
+            "Open all 101 records — 43 confirmed / 58 pending →",
         ),
     },
     "S10": {
         "path": "de/fti-meeting-point-ricpe-hinweisgeber-kontinuitaet/index.html",
         "required": (
-            "Endlicher, rollenbezogener Zensus: 40 von 101 bestätigt; 61 offen.",
+            "Endlicher, rollenbezogener Zensus: 43 von 101 bestätigt; 58 offen.",
             "dreizehn im Zensus aufgeführten kontrollierten Quellflächen",
             "Das später hinzugefügte kanonische Transaktionsregister und die Monitoringansicht sind nicht enthalten",
             "einzelne Hotels, neue Käufer, Betreiber, Manager, Finanzierer oder andere Gegenparteien vollständig aufzuführen",
             "Die vier bisherigen Nenner und der fünfte erweiterte Nenner mit 101 Objekten bleiben getrennt",
-            "Alle 101 Datensätze öffnen — 40 bestätigt / 61 offen →",
+            "Alle 101 Datensätze öffnen — 43 bestätigt / 58 offen →",
         ),
     },
 }
 CENSUS_HREF = "../../assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json"
-PAGE_COUNT_MARKERS = ("<td>8/19</td>", "<td>22/40</td>", "<td>7/24</td>", "<td>3/18</td>")
+PAGE_COUNT_MARKERS = ("<td>8/19</td>", "<td>22/40</td>", "<td>9/24</td>", "<td>4/18</td>")
 REQUIRED_KEYS = {
     # Named people and office-holders in the German/Spanish chain.
     "MARK_SELLMANN",
@@ -231,13 +231,13 @@ def validate() -> None:
     check(REQUIRED_KEYS <= set(keys), f"required objects missing: {sorted(REQUIRED_KEYS - set(keys))}")
 
     states = Counter(r.get("state") for r in records)
-    check(states == Counter({"CARET_CONFIRMED": 40, "CARET_PENDING": 61}), f"state split wrong: {states}")
+    check(states == Counter({"CARET_CONFIRMED": 43, "CARET_PENDING": 58}), f"state split wrong: {states}")
     declared = data.get("counts", {})
     check(declared.get("eligible") == 101, "declared eligible count mismatch")
-    check(declared.get("confirmed") == 40, "declared confirmed count mismatch")
-    check(declared.get("pending") == 61, "declared pending count mismatch")
+    check(declared.get("confirmed") == 43, "declared confirmed count mismatch")
+    check(declared.get("pending") == 58, "declared pending count mismatch")
     check(declared.get("suspended") == 0, "declared suspended count mismatch")
-    check(declared.get("coverage_percent") == 39.6, "coverage percentage mismatch")
+    check(declared.get("coverage_percent") == 42.57425742574257, "coverage percentage mismatch")
 
     registry = registry_records()
     allowed_registry_types = {
@@ -328,6 +328,6 @@ if errors:
 
 print("FTI / Meeting Point professional-institutional caret validation: PASS")
 print("- finite 101-object Germany/Spain/EU professional and authority census")
-print("- 40 confirmed; 61 pending; 0 suspended; partial — not all is caret")
+print("- 43 confirmed; 58 pending; 0 suspended; partial — not all is caret")
 print("- exact-entity collision guards and identity-only boundary enforced")
 print("- every pending object has a finite source need")

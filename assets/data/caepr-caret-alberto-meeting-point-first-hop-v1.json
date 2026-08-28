@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.caepr-caret-first-hop-finite-scope.v1",
   "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
-  "control_date": "2026-08-27",
+  "control_date": "2026-08-28",
   "status": "PARTIAL_NOT_ALL_IS",
   "scope": "Visible rendered body text of the eighteen reciprocal primary routes assigned to AM357-N01 through AM357-N09, deduplicating faithful Spanish and English equivalents and stopping at the first hop.",
   "scope_rule": "Do not follow deeper links. Count every distinct named identity-eligible person, organisation or controlled perimeter, institution or separately named sub-organ, and formal proceeding appearing in the eighteen route bodies. A shorthand remains pending when it cannot safely inherit an admitted identity. A perimeter caret confirms only that perimeter, never an exact legal person, contracting role, act or liability.",
@@ -34,34 +34,34 @@
     "core_control_id": "PD-ALV-MP357-CARET-20260827-01",
     "core_denominator": 32,
     "visible_in_first_hop": 31,
-    "confirmed": 25,
-    "pending": 6,
+    "confirmed": 30,
+    "pending": 1,
     "absent_from_first_hop": ["Tribunal de Cuentas"],
     "additions_beyond_core": 99,
-    "rule": "The six-surface 25/32 audit remains a separate scope and must not be relabelled exhaustive for the eighteen-route first-hop network."
+    "rule": "The six-surface audit is now closed at 31/31 unique identities and 32/32 occurrence rows. This overlap counts only the 31 core objects visible in the first-hop route bodies; its one residual role/label distinction must not be relabelled as an unresolved principal-scope identity."
   },
   "unitary_scope_reference": {
-    "confirmed": 19,
-    "pending": 5,
+    "confirmed": 21,
+    "pending": 3,
     "suspended": 0,
     "denominator": 24,
-    "changed_by_this_control": false,
-    "rule": "The repository-wide 19/24 unitary census is separate and is neither replaced nor closed by this first-hop control."
+    "changed_by_this_control": true,
+    "rule": "The repository-wide 21/24 unitary census is separate and remains partial with three explicit exceptions; it is neither replaced nor closed by this first-hop control."
   },
   "counts": {
     "eligible": 130,
-    "confirmed": 56,
-    "pending": 74,
+    "confirmed": 61,
+    "pending": 69,
     "suspended": 0,
-    "coverage_percent": 43.07692307692308,
+    "coverage_percent": 46.92307692307692,
     "by_type": {
       "PERSON": {"eligible":27,"confirmed":12,"pending":15,"suspended":0},
-      "ORGANISATION_OR_PERIMETER": {"eligible":64,"confirmed":28,"pending":36,"suspended":0},
-      "INSTITUTION_OR_SUBORGAN": {"eligible":25,"confirmed":11,"pending":14,"suspended":0},
-      "PROCEEDING": {"eligible":14,"confirmed":5,"pending":9,"suspended":0}
+      "ORGANISATION_OR_PERIMETER": {"eligible":64,"confirmed":30,"pending":34,"suspended":0},
+      "INSTITUTION_OR_SUBORGAN": {"eligible":25,"confirmed":13,"pending":12,"suspended":0},
+      "PROCEEDING": {"eligible":14,"confirmed":6,"pending":8,"suspended":0}
     }
   },
-  "verdict": "FULL FIRST-HOP CENSUS COMPLETE; 56/130 CARET_CONFIRMED; 74 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^",
+  "verdict": "FULL FIRST-HOP CENSUS COMPLETE; 61/130 CARET_CONFIRMED; 69 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^",
   "invariants": [
     "A caret confirms identity reconciliation only.",
     "A caret does not prove conduct, date-specific capacity, signature, allocation, substitution, knowledge, intent, relationship, conflict, concealment, causation, harm, benefit, liability, source authenticity or outcome.",
@@ -73,13 +73,13 @@
   "collision_guards": [
     "ACTÚA valuation perimeter is not Actyus PD-SP-O-0060.",
     "Owners’ Community PD-SP-O-0005 is not CEXP PD-SP-O-0006, and bare Community resolves to neither without context.",
-    "ONA is not Clubotel La Dorada, S.L.",
+    "The wider ONA commercial perimeter is not Clubotel La Dorada, S.L.; PD-SP-O-0075 resolves only the exact ONA-side legal person for the 6 June 2018 funded-exit operating instrument.",
     "Meeting Point Hotels commercial perimeter is not any of the three Spanish 357/2024 debtors and is not either German Meeting Point company.",
     "BLUESEA commercial perimeter is not Gestora Blue Sea Partner, S.A.",
     "Auren generic professional perimeter PD-SP-O-0046 is not AUREN REESTRUCTURACIONES SLP PD-SP-O-0070.",
     "Audiencia Provincial Section 4 PD-SP-I-0014 is not the unverified appellate organ for Auto 804/2018.",
     "CGPJ parent identity does not transfer conduct to its Permanent Commission or Inspection.",
-    "General Fiscalía PD-SP-I-0002 does not identify the Fiscalía Provincial de Las Palmas or a particular receiving unit.",
+    "General Fiscalía PD-SP-I-0002 is distinct from Fiscalía Provincial de Las Palmas PD-SP-I-0020 and its Registro General PD-SP-I-0021; none identifies a prosecutor or specialist section.",
     "Carlos Sanz is not Carlos Llamas Sanz PD-SP-P-0062, and bare Carlos does not identify Carlos Saavedra PD-SP-P-0036."
   ],
   "occurrence_guards": [
@@ -708,7 +708,7 @@
     {
       "ordinal": 41,
       "object_key": "CLUBOTEL_LA_DORADA",
-      "state": "CARET_PENDING",
+      "state": "CARET_CONFIRMED",
       "proof_occurrence": {
         "node_id": "AM357-N08",
         "language": "es",
@@ -1116,7 +1116,7 @@
     {
       "ordinal": 75,
       "object_key": "ONA_FUNDED_EXIT_ACTOR",
-      "state": "CARET_PENDING",
+      "state": "CARET_CONFIRMED",
       "proof_occurrence": {
         "node_id": "AM357-N08",
         "language": "en",
@@ -1512,7 +1512,7 @@
     {
       "ordinal": 108,
       "object_key": "FISCALIA_PROVINCIAL_LAS_PALMAS",
-      "state": "CARET_PENDING",
+      "state": "CARET_CONFIRMED",
       "proof_occurrence": {
         "node_id": "AM357-N05",
         "language": "es",
@@ -1608,7 +1608,7 @@
     {
       "ordinal": 116,
       "object_key": "COMPETENT_TSJ_ROUTE",
-      "state": "CARET_PENDING",
+      "state": "CARET_CONFIRMED",
       "proof_occurrence": {
         "node_id": "AM357-N01",
         "language": "en",
@@ -1620,7 +1620,7 @@
     {
       "ordinal": 117,
       "object_key": "CGPJ_ALZADA_286_2026",
-      "state": "CARET_PENDING",
+      "state": "CARET_CONFIRMED",
       "proof_occurrence": {
         "node_id": "AM357-N01",
         "language": "en",
@@ -1835,7 +1835,7 @@
     {"ordinal":38,"object_key":"CAMEL_TRAVEL","label":"Camel Travel","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Named travel brand or platform; exact operating legal person is unresolved.","next_source_needed":"The dated legal notice, booking terms or company registry entry naming Camel Travel’s operating legal person and registration identifier."},
     {"ordinal":39,"object_key":"CEXP","label":"Comunidad de Explotación Sun Park / CEXP","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0006","boundary":"Identity only; not the Owners’ Community and not proof of authority, succession, operation or liability."},
     {"ordinal":40,"object_key":"CLUB_SEI","label":"Club Sei","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0040","boundary":"Brand/project perimeter only; not a legal person, contract, authority, booking, revenue, payment, benefit or offence."},
-    {"ordinal":41,"object_key":"CLUBOTEL_LA_DORADA","label":"Clubotel / intended Clubotel La Dorada, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"No admitted exact legal-person identity; Clubotel and ONA are not interchangeable.","next_source_needed":"An official company extract or signed funded-exit instrument establishing Clubotel La Dorada’s exact legal name, registration identifier and transaction capacity."},
+    {"ordinal":41,"object_key":"CLUBOTEL_LA_DORADA","label":"Clubotel La Dorada, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0075","boundary":"Exact legal-person identity and instrument-specific capacity only; the wider ONA commercial perimeter and every ONA act do not collapse into Clubotel."},
     {"ordinal":42,"object_key":"CUATRECASAS","label":"Cuatrecasas","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0049","boundary":"Admitted professional entity identity; engagement, client, instructions, knowledge and work remain instrument-specific."},
     {"ordinal":43,"object_key":"EL_CORTE_INGLES_EMPRESAS","label":"El Corte Inglés Empresas","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Commercial label does not establish the exact operating or contracting legal person.","next_source_needed":"The dated legal notice, contract, invoice or company record naming the exact El Corte Inglés Empresas legal person and registration identifier."},
     {"ordinal":44,"object_key":"ELAIA_PERIMETER","label":"Elaia","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0036","boundary":"Controlled perimeter identity only; exact legal person, funding role, conditions, conduct and liability remain open."},
@@ -1869,7 +1869,7 @@
     {"ordinal":72,"object_key":"MP_INVESTMENT","label":"Meeting Point Investment, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0069","boundary":"Exact debtor in signed Auto 97/2025; identity does not establish it as Club Sei contracting party or beneficiary."},
     {"ordinal":73,"object_key":"MP_SPAIN","label":"Meeting Point Spain, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0068","boundary":"Exact debtor in signed Auto 97/2025; identity does not establish it as Club Sei contracting party or beneficiary."},
     {"ordinal":74,"object_key":"MYND_YAIZA_PERIMETER","label":"MYND Yaiza","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0042","boundary":"Brand/project perimeter identity only; exact operator, owner, contract, funding, revenue and liability remain open."},
-    {"ordinal":75,"object_key":"ONA_FUNDED_EXIT_ACTOR","label":"ONA / Ona Hotels funded-exit actor","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0033","boundary":"Current record is a controlled perimeter with the exact legal entity and transaction capacity still open; it is not Clubotel.","next_source_needed":"The signed funded-exit term sheet, agreement or corporate extract naming the exact ONA-side legal person, registration identifier and transaction role."},
+    {"ordinal":75,"object_key":"ONA_FUNDED_EXIT_ACTOR","label":"ONA-side funded-exit actor — Clubotel La Dorada, S.L.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0075","deduplicates_identity_with":"CLUBOTEL_LA_DORADA","boundary":"Resolved only for the signed 6 June 2018 operating instrument. ONA Hotels remains a distinct commercial perimeter and no broader act, knowledge, benefit or liability follows."},
     {"ordinal":76,"object_key":"ONE_TWO_FLY","label":"1-2-FLY","type":"ORGANISATION_OR_PERIMETER","state":"CARET_PENDING","boundary":"Travel brand or platform does not establish the exact operating legal person.","next_source_needed":"The dated legal notice, booking terms or corporate record naming the exact 1-2-FLY operating legal person and registration identifier."},
     {"ordinal":77,"object_key":"OWNERS_COMMUNITY","label":"Comunidad de Propietarios Sun Park / Sun Park Owners’ Community","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0005","boundary":"Identity only; not CEXP, and authority, membership, acts and legal effect remain instrument- and date-specific."},
     {"ordinal":78,"object_key":"PINK_CANARY_SERVICES","label":"Pink Canary Services, S.L.U. / Monterecco Sun Park, S.L.U.","type":"ORGANISATION_OR_PERIMETER","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0004","boundary":"Admitted exact-name/alias perimeter; date-specific company name, status, ownership, acts and liability require their own sources."},
@@ -1903,7 +1903,7 @@
     {"ordinal":105,"object_key":"COURT_POSITION_3","label":"former Commercial Court No. 3 / current commercial position No. 3","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0016","boundary":"Organ identity does not identify the magistrate handling a particular act or prove allocation, substitution or support."},
     {"ordinal":106,"object_key":"DECANATO_LAS_PALMAS","label":"Decanato de los Juzgados de Las Palmas","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named receiving office lacks an admitted exact CAEPR institution or sub-organ record.","next_source_needed":"The current official court directory and native filing receipt naming the Decanato de los Juzgados de Las Palmas and its receiving competence."},
     {"ordinal":107,"object_key":"PUBLIC_PROSECUTION_SERVICE","label":"Ministerio Fiscal / general Fiscalía","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0002","boundary":"General institution identity only; no transfer to a territorial office, unit, prosecutor, filing, decision or merits position."},
-    {"ordinal":108,"object_key":"FISCALIA_PROVINCIAL_LAS_PALMAS","label":"Fiscalía Provincial de Las Palmas","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-I-0002","boundary":"The general Fiscalía record does not resolve the territorial office or competent receiving unit.","next_source_needed":"The current official prosecution-office directory and a native acknowledgement or docket record identifying the Fiscalía Provincial de Las Palmas and competent unit."},
+    {"ordinal":108,"object_key":"FISCALIA_PROVINCIAL_LAS_PALMAS","label":"Fiscalía Provincial de Las Palmas","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0020","receiving_unit_caepr_id":"PD-SP-I-0021","boundary":"Territorial office and its Registro General receiving unit are resolved. No assigned prosecutor, specialist section, opening, joinder, investigation, merits review or outcome is established."},
     {"ordinal":109,"object_key":"GUARDIA_CIVIL","label":"Guardia Civil","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0008","boundary":"Institution identity only; exact unit, officer, receipt, investigation, knowledge and act remain source-specific."},
     {"ordinal":110,"object_key":"MUNICH_POLICE_K71","label":"Munich Police K71","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Named foreign police unit has no admitted immutable institution or unit identity.","next_source_needed":"The original police acknowledgement, official Munich police directory or case record stating the K71 unit’s formal name, authority and file reference."},
     {"ordinal":111,"object_key":"MUNICH_PROSECUTOR_OFFICE","label":"exact Munich prosecutor office","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"The body text does not resolve Staatsanwaltschaft München I versus München II or a competent unit.","next_source_needed":"The original prosecutor acknowledgement, file cover or official directory entry stating the exact Munich prosecutor office, unit and reference."},
@@ -1911,9 +1911,9 @@
     {"ordinal":113,"object_key":"PUBLIC_INSOLVENCY_REGISTER","label":"Registro Público Concursal","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0018","boundary":"Registry-service identity only; not notice authenticity, completeness, custody, signatory, allocation or legal effect."},
     {"ordinal":114,"object_key":"SEPI","label":"Sociedad Estatal de Participaciones Industriales / SEPI","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0017","boundary":"Institution identity only; no inference about funding use, monitoring, disclosure, reliance, omission or loss."},
     {"ordinal":115,"object_key":"SNCA","label":"Sistema Nacional de Coordinación Antifraude / SNCA","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","boundary":"Acronym and functional label do not yet resolve the exact IGAE/SNCA office and receiving competence.","next_source_needed":"The official IGAE/SNCA directory, constitutive record or filing guidance naming the exact office, competence and submission route."},
-    {"ordinal":116,"object_key":"COMPETENT_TSJ_ROUTE","label":"competent Tribunal Superior de Justicia route","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-I-0004","boundary":"PD-SP-I-0004 identifies TSJC generally; the exact territorial chamber, competence and filing route remain unresolved.","next_source_needed":"The current official competence rule, TSJC directory and filing guidance identifying the exact chamber or organ competent for the contemplated route."},
+    {"ordinal":116,"object_key":"COMPETENT_TSJ_ROUTE","label":"Sala de lo Civil y Penal del Tribunal Superior de Justicia de Canarias — sede Las Palmas de Gran Canaria","type":"INSTITUTION_OR_SUBORGAN","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0019","boundary":"Exact institutional route for the LOPJ article 73.3(b) complaint/querella class; no admissibility, allocation, panel, merits or outcome is established."},
 
-    {"ordinal":117,"object_key":"CGPJ_ALZADA_286_2026","label":"CGPJ Alzada 286/2026","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named administrative appeal or file has no admitted immutable CAEPR proceeding ID and no merits outcome is established.","next_source_needed":"An official acknowledgement, docket entry or signed resolution bearing Alzada 286/2026, the deciding organ and current procedural status."},
+    {"ordinal":117,"object_key":"CGPJ_ALZADA_286_2026","label":"Recurso de Alzada 286/2026 — CGPJ","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0019","boundary":"Identity, handling organ and en-trámite status confirmed on 21 August 2026; no merits determination, responsibility or outcome is established."},
     {"ordinal":118,"object_key":"CNMC_C_1549_25","label":"CNMC C/1549/25","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Named competition file has no admitted immutable CAEPR proceeding record; scope and finality remain open.","next_source_needed":"The official CNMC C/1549/25 decision or docket page stating the file class, parties, deciding chamber, date, outcome and finality."},
     {"ordinal":119,"object_key":"CONCURSO_36_2012","label":"Concurso 36/2012 — Luchy Playa Blanca, S.L.","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0001","boundary":"LPB-only insolvency proceeding; separate persons, third-party assets, appeals, criminal files and later pre-insolvency proceedings do not merge into it."},
     {"ordinal":120,"object_key":"DI_169_2026","label":"DI 169/2026","type":"PROCEEDING","state":"CARET_PENDING","boundary":"Acronym/reference alone does not establish the exact proceeding class, court, parties or current status.","next_source_needed":"The signed opening act or certified docket for DI 169/2026 stating the full proceeding class, court, NIG, parties and current status."},

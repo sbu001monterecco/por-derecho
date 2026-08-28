@@ -28,12 +28,12 @@ UNITARY_CARET = ROOT / "assets" / "data" / "caepr-caret-unitary-digest-v1.json"
 REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
 
 CURRENT_IDENTITY_COUNTS = {
-    "total": 214,
+    "total": 221,
     "PERSON": 94,
-    "ORGANISATION": 74,
+    "ORGANISATION": 76,
     "STRUCTURE": 10,
-    "INSTITUTION": 18,
-    "PROCEEDING": 18,
+    "INSTITUTION": 22,
+    "PROCEEDING": 19,
 }
 
 LAST_LIVE_IDENTITY_COUNTS = {
@@ -87,23 +87,22 @@ required_markers = [
     "PD-UNITARY-REDIGEST-20260827-01",
     "Sun Park was one economically integrated hotel platform",
     "PP 1041 is the cleanest finite production demand",
-    "19 / 24 confirmed",
+    "21 / 24 confirmed",
     "superseded",
     "33 pull requests",
     "required-status-check enforcement was off",
     "CEXP succession",
     "single-satisfaction credit ledger",
     "PD-ALV-MP357-MULTI-20260827-01",
-    "25/32 confirmed",
-    "7 pending",
-    "56 confirmed, 74 pending",
+    "31/31 unique identities",
+    "61 confirmed, 69 pending",
     "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
     "does not add to, subtract from or close",
     "assets/data/caepr-caret-unitary-digest-v1.json",
     "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
     "PD-FTI-MP-RICPE-CONTINUITY-20260827-01",
     "39/65 confirmed",
-    "40/101 confirmed",
+    "43/101 confirmed",
     "31 actions, 12 package definitions",
     "3 heritage scopes, 11 known entity",
     "DELETION_SAFE",
@@ -149,16 +148,16 @@ assert state["identity_registry"]["last_live_verified_counts"] == LAST_LIVE_IDEN
 assert registry["counts"] == CURRENT_IDENTITY_COUNTS
 assert state["caret_scope"]["control_id"] == unitary_caret["control_id"]
 assert state["caret_scope"]["control_file"] == "assets/data/caepr-caret-unitary-digest-v1.json"
-assert state["caret_scope"]["confirmed"] == 19
+assert state["caret_scope"]["confirmed"] == 21
 assert state["caret_scope"]["denominator"] == 24
-assert state["caret_scope"]["pending"] == 5
+assert state["caret_scope"]["pending"] == 3
 assert unitary_caret["result"]["confirmed"] == state["caret_scope"]["confirmed"]
 assert unitary_caret["result"]["denominator"] == state["caret_scope"]["denominator"]
 assert unitary_caret["result"]["pending"] == state["caret_scope"]["pending"]
 assert unitary_caret["result"]["suspended"] == 0
 assert unitary_caret["result"]["verdict"] == "PARTIAL_NOT_ALL_IS_CARET"
-assert len(unitary_caret["confirmed_objects"]) == 19
-assert len(unitary_caret["exceptions"]) == 5
+assert len(unitary_caret["confirmed_objects"]) == 20
+assert len(unitary_caret["exceptions"]) == 3
 assert state["caret_scope"]["old_local_24_of_24_package"] == "SUPERSEDED_NOT_MERGEABLE_AS_IS"
 assert state["source_base"]["open_pull_requests"] == 33
 assert state["source_base"]["required_status_check_enforcement"] == "off"
@@ -201,8 +200,8 @@ expected_fti_continuity_scope = {
     "verdict": "FULL_FINITE_CONTINUITY_SPINE_CENSUS_PARTIAL_NOT_ALL_IS",
 }
 expected_fti_professional_scope = {
-    "confirmed": 40,
-    "pending": 61,
+    "confirmed": 43,
+    "pending": 58,
     "suspended": 0,
     "denominator": 101,
     "verdict": "FULL_ROLE_SELECTED_CENSUS_PARTIAL_NOT_ALL_IS",
@@ -224,9 +223,9 @@ assert fti_continuity_caret["counts"]["pending"] == 26
 assert fti_continuity_caret["counts"]["suspended"] == 0
 assert len(fti_continuity_caret["records"]) == 65
 assert fti_professional_caret["control_id"] == "PD-FTI-MP-PROF-INST-CARET-20260827-01"
-assert fti_professional_caret["counts"]["confirmed"] == 40
+assert fti_professional_caret["counts"]["confirmed"] == 43
 assert fti_professional_caret["counts"]["eligible"] == 101
-assert fti_professional_caret["counts"]["pending"] == 61
+assert fti_professional_caret["counts"]["pending"] == 58
 assert fti_professional_caret["counts"]["suspended"] == 0
 assert len(fti_professional_caret["records"]) == 101
 
@@ -319,9 +318,9 @@ assert fti_manifest["caret_scope"] == {
     **expected_fti_continuity_scope,
     "identity_only": True,
     "separate_from": [
-        "25/32 specialist",
-        "56/130 first-hop",
-        "19/24 repository-wide unitary",
+        "31/31 unique and 32/32 occurrence-row specialist all-is scope",
+        "61/130 first-hop",
+        "21/24 repository-wide unitary",
     ],
 }
 assert {
@@ -344,7 +343,7 @@ assert unitary_fti["caret_scopes"]["continuity_spine"] == {
     "confirmed": 39, "pending": 26, "suspended": 0, "denominator": 65
 }
 assert unitary_fti["caret_scopes"]["professional_institutional"] == {
-    "confirmed": 40, "pending": 61, "suspended": 0, "denominator": 101
+    "confirmed": 43, "pending": 58, "suspended": 0, "denominator": 101
 }
 assert unitary_fti["action_state"] == expected_action_state
 for key, expected in expected_monitor_counts.items():
@@ -380,18 +379,20 @@ assert all(value is False for value in additive["external_action_authority"].val
 
 specialist = modules["PD-ALV-MP357-MULTI-20260827-01"]
 assert specialist["caret_scope"] == {
-    "confirmed": 25,
-    "pending": 7,
+    "confirmed": 31,
+    "pending": 0,
     "suspended": 0,
-    "denominator": 32,
-    "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS",
+    "denominator": 31,
+    "occurrence_rows": 32,
+    "confirmed_occurrence_rows": 32,
+    "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE",
 }
-assert specialist["unitary_caret_scope_unchanged"] is True
+assert specialist["unitary_caret_scope_unchanged"] is False
 assert specialist["caret_control"] == "assets/data/caepr-caret-alberto-meeting-point-357-v1.json"
 assert specialist["first_hop_caret_control"] == "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json"
 assert specialist["first_hop_caret_scope"] == {
-    "confirmed": 56,
-    "pending": 74,
+    "confirmed": 61,
+    "pending": 69,
     "suspended": 0,
     "denominator": 130,
     "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
@@ -400,45 +401,48 @@ assert specialist["publication_manifest"] == "publication-manifests/alberto-meet
 assert matrix["control_id"] == specialist["module_id"]
 assert matrix["scope_separation"]["unitary_caret_scope"] == {
     "control_id": "PD-UNITARY-REDIGEST-20260827-01",
-    "confirmed": 19,
-    "pending": 5,
+    "confirmed": 21,
+    "pending": 3,
     "denominator": 24,
-    "changed_by_this_module": False,
+    "changed_by_this_module": True,
 }
 assert matrix["scope_separation"]["specialist_caret_scope"] == {
     "control_id": "PD-ALV-MP357-CARET-20260827-01",
-    "confirmed": 25,
-    "pending": 7,
-    "denominator": 32,
-    "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS",
+    "confirmed": 31,
+    "pending": 0,
+    "denominator": 31,
+    "occurrence_rows": 32,
+    "confirmed_occurrence_rows": 32,
+    "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE",
 }
 assert matrix["scope_separation"]["first_hop_caret_scope"] == {
     "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
-    "confirmed": 56,
-    "pending": 74,
+    "confirmed": 61,
+    "pending": 69,
     "denominator": 130,
     "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
     "changed_by_this_module": True,
 }
 assert specialist_caret["control_id"] == "PD-ALV-MP357-CARET-20260827-01"
-assert specialist_caret["counts"]["confirmed"] == 25
-assert specialist_caret["counts"]["eligible"] == 32
-assert specialist_caret["counts"]["pending"] == 7
+assert specialist_caret["counts"]["confirmed"] == 31
+assert specialist_caret["counts"]["eligible"] == 31
+assert specialist_caret["counts"]["confirmed_occurrence_rows"] == 32
+assert specialist_caret["counts"]["pending"] == 0
 assert specialist_caret["counts"]["suspended"] == 0
 assert len(specialist_caret["records"]) == 32
-assert sum(record["state"] == "CARET_CONFIRMED" for record in specialist_caret["records"]) == 25
-assert sum(record["state"] == "CARET_PENDING" for record in specialist_caret["records"]) == 7
-assert specialist_caret["verdict"] == "FULL CENSUS COMPLETE; 25/32 CARET_CONFIRMED; 7 CARET_PENDING; PARTIAL — NOT ALL IS^"
+assert sum(record["state"] == "CARET_CONFIRMED" for record in specialist_caret["records"]) == 32
+assert sum(record["state"] == "CARET_PENDING" for record in specialist_caret["records"]) == 0
+assert specialist_caret["verdict"] == "ALL IS^ — VERIFIED FOR THE STATED SIX-SURFACE SCOPE; 31/31 UNIQUE IDENTITIES AND 32/32 OCCURRENCE ROWS CARET_CONFIRMED; 0 PENDING"
 assert first_hop_caret["control_id"] == "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01"
 assert first_hop_caret["counts"]["eligible"] == 130
-assert first_hop_caret["counts"]["confirmed"] == 56
-assert first_hop_caret["counts"]["pending"] == 74
+assert first_hop_caret["counts"]["confirmed"] == 61
+assert first_hop_caret["counts"]["pending"] == 69
 assert first_hop_caret["counts"]["suspended"] == 0
 assert len(first_hop_caret["records"]) == 130
-assert sum(record["state"] == "CARET_CONFIRMED" for record in first_hop_caret["records"]) == 56
-assert sum(record["state"] == "CARET_PENDING" for record in first_hop_caret["records"]) == 74
+assert sum(record["state"] == "CARET_CONFIRMED" for record in first_hop_caret["records"]) == 61
+assert sum(record["state"] == "CARET_PENDING" for record in first_hop_caret["records"]) == 69
 assert all(record.get("next_source_needed") for record in first_hop_caret["records"] if record["state"] == "CARET_PENDING")
-assert first_hop_caret["verdict"] == "FULL FIRST-HOP CENSUS COMPLETE; 56/130 CARET_CONFIRMED; 74 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^"
+assert first_hop_caret["verdict"] == "FULL FIRST-HOP CENSUS COMPLETE; 61/130 CARET_CONFIRMED; 69 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^"
 
 # Bind the separate Magistrate López Villarrubia candidate without treating a
 # locally valid DRAFT or an authorised pre-live release state as LIVE_VERIFIED,
@@ -507,17 +511,19 @@ if os.environ.get("GITHUB_ACTIONS") == "true" and os.environ.get("GITHUB_EVENT_N
 assert alberto_manifest["unitary_caret_scope"] == matrix["scope_separation"]["unitary_caret_scope"]
 assert alberto_manifest["specialist_caret_scope"] == {
     "control_id": "PD-ALV-MP357-CARET-20260827-01",
-    "confirmed": 25,
-    "pending": 7,
+    "confirmed": 31,
+    "pending": 0,
     "suspended": 0,
-    "denominator": 32,
-    "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS",
+    "denominator": 31,
+    "occurrence_rows": 32,
+    "confirmed_occurrence_rows": 32,
+    "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE",
     "identity_only": True,
 }
 assert alberto_manifest["first_hop_caret_scope"] == {
     "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
-    "confirmed": 56,
-    "pending": 74,
+    "confirmed": 61,
+    "pending": 69,
     "suspended": 0,
     "denominator": 130,
     "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
@@ -544,7 +550,7 @@ assert historical_manifest["material_date_change"] is False
 # PR #1091's manifest is a historical live snapshot. It must not be rewritten
 # to imply that its earlier deployment verified the new 204-record candidate.
 assert historical_manifest["identity_registry"] == {**HISTORICAL_LIVE_IDENTITY, "archive_backfill": "OPEN"}
-for key in ("current_live_state", "confirmed", "denominator", "pending", "old_local_24_of_24_package"):
+for key in ("current_live_state", "denominator", "old_local_24_of_24_package"):
     assert historical_manifest["caret_scope"][key] == state["caret_scope"][key]
 assert len(historical_manifest["live_urls"]) == 3
 
@@ -567,13 +573,13 @@ if historical_manifest["current_state"] == "LIVE_VERIFIED":
 print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
-print(" - source/static identity denominator: 214 / 94 / 74 / 10 / 18 / 18")
+print(" - source/static identity denominator: 221 / 94 / 76 / 10 / 22 / 19")
 print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
-print(" - caret scope: 19/24; old 24/24 package superseded")
-print(" - separate Magistrate López Villarrubia / Meeting Point scope: 25/32 partial; unitary scope unchanged")
-print(" - first-hop Magistrate López Villarrubia / Meeting Point evidence corpus: 56/130 partial")
+print(" - caret scope: 21/24; old 24/24 package superseded")
+print(" - separate Magistrate López Villarrubia / Meeting Point scope: 31/31 unique and 32/32 rows; all-is for stated scope")
+print(" - first-hop Magistrate López Villarrubia / Meeting Point evidence corpus: 61/130 partial")
 print(" - Magistrate López Villarrubia publication:", alberto_lifecycle, "/ lifecycle-controlled; communication and filing remain closed")
-print(" - FTI / Meeting Point / RICPE live continuity: 39/65 partial; professional/institutional scope: 40/101 partial")
+print(" - FTI / Meeting Point / RICPE live continuity: 39/65 partial; professional/institutional scope: 43/101 partial")
 print(" - FTI future-action state: 31 actions / 12 packages / 18 proceeding-file mappings; external action closed")
 print(" - FTI bounded asset monitor: 3 heritage scopes / 11 entities / 12 sources / 2 baseline events / 8 gaps")
 print(" - historical unitary lifecycle:", historical_manifest["current_state"])
