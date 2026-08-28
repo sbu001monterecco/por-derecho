@@ -6,3 +6,9 @@ tmp/
 CUATRECASAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
 CUATRECASAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv
 CUATRECASAS_BILLING_ACCOUNT_AND_EXPLANATION_DRAFT_*.md
+
+# Legal-adviser intake / work product — quarantine outside Git; never publish.
+.private-legal/
+.lawyer-work-product/
+private/legal-adviser/
+tmp/legal-adviser/
