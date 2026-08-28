@@ -2,7 +2,7 @@
 
 **Control date:** 28 August 2026
 **Source date:** visit 22 March 2022; diligence signed/formalised 6 April 2022
-**Status:** `COMPLETE RECEIVED COPY CONTROLLED / PUBLIC DERIVATIVE PREPARED / ATTRIBUTION AND NON-INFERENCE LOCKED`
+**Status:** `LIVE_VERIFIED / COMPLETE RECEIVED COPY CONTROLLED / ATTRIBUTION AND NON-INFERENCE LOCKED / OPEN EVIDENCE`
 
 ## 1. Controlled source
 
@@ -91,3 +91,15 @@ Publication is not filing, service, notice to the Court or incorporation into an
 5. Entity × period × unit × function × account × revenue operating matrix for 2017–2018.
 6. DEHú, certificate, NIF-revocation, attempted-access, office-visit and alternative-service chronology.
 7. Certified `PO 496/2026` docket and proof of alignment with the 29 September 2025 express inadmissibility act.
+
+## 7. Publication evidence
+
+PR #1167 completed with 51 successful checks, 5 checks skipped by design and
+no failures. Reviewed head `a743767c566dd28afca66150849d18da7baabcc2`
+merged as `949405e4cec2fd6d959662dd0fc6f27cfdc45f19`, tree
+`84cffb1bd24d0a28ebd3c5ec947d065f14b05026`, at 19:30:37 UTC. GitHub Pages
+run `33204179559` / #1239 completed successfully for that exact merge at
+19:32:17 UTC. At 19:46:16 UTC, 33 declared production resources were fetched
+without cache and compared by SHA-256; all 33 were byte-identical to the merged
+source. This publication evidence does not alter the evidentiary limits or
+authorise filing, service, email, witness contact or institutional submission.
