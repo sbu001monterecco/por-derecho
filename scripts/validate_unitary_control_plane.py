@@ -38,6 +38,7 @@ UNITARY_VERIFY_RUN = 32942975508
 UNITARY_VERIFY_RUN_NUMBER = 4
 UNITARY_VERIFY_JOB = 98097657687
 UNITARY_VERIFY_COMPLETED_AT = "2026-08-26T07:29:55Z"
+REPOSITORY_LATEST_MATERIAL_DATE = "2026-08-28"
 
 
 def load_json(path: Path):
@@ -116,7 +117,10 @@ def main() -> int:
 
         updates = load_json(DATA / "material-updates-v1.json")
         require(updates.get("control_id") == "PD-MATERIAL-UPDATES-001", "unexpected material-updates control")
-        require(updates.get("latest_material_date") == "2026-08-26", "latest material date mismatch")
+        require(
+            updates.get("latest_material_date") == REPOSITORY_LATEST_MATERIAL_DATE,
+            "latest material date mismatch",
+        )
         require(len(updates.get("entries", [])) >= 5, "material update source too small")
         require(
             all(item.get("date") <= updates["latest_material_date"] for item in updates["entries"]),
@@ -124,11 +128,11 @@ def main() -> int:
         )
         require_markers(
             ROOT / "es/actualizaciones/index.html",
-            ["Última actualización material", "<strong>26 agosto 2026</strong>", "ALG-ENT-018"],
+            ["Última actualización material", "<strong>28 agosto 2026</strong>", "ALG-ENT-018"],
         )
         require_markers(
             ROOT / "en/updates/index.html",
-            ["Latest material update", "<strong>26 August 2026</strong>", "ALG-ENT-018"],
+            ["Latest material update", "<strong>28 August 2026</strong>", "ALG-ENT-018"],
         )
 
         state = load_json(ROOT / "ops/CURRENT_UNITARY_STATE.json")
@@ -145,19 +149,31 @@ def main() -> int:
             == LAST_LIVE_IDENTITY_COUNTS,
             "state last-live identity counts drift",
         )
+        material = state["material_updates"]
+        repository_latest = material.get("repository_latest_material_date")
+        last_live = material.get("last_live_verified_material_date")
+        require(repository_latest == updates["latest_material_date"], "state/update date drift")
+        require(material.get("latest_material_date") == repository_latest, "compatibility material date drift")
         require(
-            state["material_updates"]["repository_latest_material_date"] == updates["latest_material_date"],
-            "state/update date drift",
+            isinstance(last_live, str) and last_live <= repository_latest,
+            "last live-verified material date exceeds repository material date",
         )
-        require(state["material_updates"]["latest_material_date"] == "2026-08-26", "compatibility material date drift")
-        require(
-            state["material_updates"]["last_live_verified_material_date"] == "2026-08-26",
-            "last live-verified material date drift",
+        expected_parity = (
+            f"{repository_latest}_LIVE_VERIFIED"
+            if last_live == repository_latest
+            else f"REPOSITORY_{repository_latest}_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_{last_live}"
         )
         require(
-            state["material_updates"]["public_parity"] == "2026-08-26_LIVE_VERIFIED",
+            material.get("public_parity") == expected_parity,
             "repository/live material parity boundary drift",
         )
+        if last_live != repository_latest:
+            pending = material.get("pending_publication") or {}
+            require(
+                pending.get("control_id") == "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
+                "pending AEAT/Pink material control missing",
+            )
+            require(pending.get("state") == "PREPARED_PENDING_MERGE", "pending material state drift")
         repository = state.get("repository") or {}
         require(repository.get("current_main_sha_at_preparation") == MERGE_SHA, "unitary merge SHA drift")
         require(repository.get("source_publication_merge_sha") == MERGE_SHA, "publication merge SHA drift")
@@ -364,8 +380,9 @@ def main() -> int:
     print(" - source/static identity denominator: 221 / 94 / 76 / 10 / 22 / 19")
     print(" - latest live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
     print(" - promoted 26-Aug unitary snapshot remains 194 / 86 / 66 / 10 / 15 / 17")
-    print(" - repository latest material date: 2026-08-26")
-    print(" - last live-verified material date: 2026-08-26")
+    print(f" - repository latest material date: {repository_latest}")
+    print(f" - last live-verified material date: {last_live}")
+    print(f" - repository/public material parity: {expected_parity}")
     print(" - promoted publication: PD-UNITARY-STATE-20260826-01 / LIVE_VERIFIED")
     print(f" - specialist verifier run: {UNITARY_VERIFY_RUN}")
     print(" - PR #1016 controlled as rebuild-on-current-main")

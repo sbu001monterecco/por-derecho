@@ -27,6 +27,7 @@ CROSSWALK = ROOT / "archive/knowledge-project/ALLEGATIONS_CROSSWALK_AN2023_DP190
 RETRIEVAL = ROOT / "archive/knowledge-project/ALLEGATIONS_RETRIEVAL_GATE_16AUG2026.md"
 STATE = ROOT / "ops/CURRENT_UNITARY_STATE.json"
 STATE_MD = ROOT / "CURRENT_UNITARY_STATE.md"
+MATERIAL_UPDATES = ROOT / "assets/data/material-updates-v1.json"
 PRODUCTION_STATUS = ROOT / "ops/PRODUCTION_STATUS.json"
 CURRENT_CONTROL_DOCS = (
     "CURRENT_HANDOVER_PROSECUTION_REVERSE_ENGINEERING_21AUG2026.md",
@@ -271,14 +272,24 @@ def main() -> int:
     }.items():
         if promoted.get(key) != expected:
             errors.append(f"promoted unitary state mismatch: {key}")
+    material_updates = load_object(MATERIAL_UPDATES, errors)
     material = state.get("material_updates") or {}
-    for key, expected in {
-        "repository_latest_material_date": "2026-08-26",
-        "last_live_verified_material_date": "2026-08-26",
-        "public_parity": "2026-08-26_LIVE_VERIFIED",
-    }.items():
-        if material.get(key) != expected:
-            errors.append(f"unitary material-date parity mismatch: {key}")
+    repository_latest = material.get("repository_latest_material_date")
+    last_live = material.get("last_live_verified_material_date")
+    if repository_latest != material_updates.get("latest_material_date"):
+        errors.append("unitary material-date parity mismatch: repository_latest_material_date")
+    if material.get("latest_material_date") != repository_latest:
+        errors.append("unitary material-date parity mismatch: latest_material_date")
+    if not isinstance(last_live, str) or not isinstance(repository_latest, str) or last_live > repository_latest:
+        errors.append("unitary material-date parity mismatch: last_live_verified_material_date")
+    else:
+        expected_parity = (
+            f"{repository_latest}_LIVE_VERIFIED"
+            if last_live == repository_latest
+            else f"REPOSITORY_{repository_latest}_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_{last_live}"
+        )
+        if material.get("public_parity") != expected_parity:
+            errors.append("unitary material-date parity mismatch: public_parity")
     publication = state.get("publication") or {}
     pages = publication.get("last_pages_deployment") or {}
     for key, expected in {
@@ -328,9 +339,12 @@ def main() -> int:
     # controlling 26-August unitary-enterprise release above that additive
     # section, not to every independently lifecycle-controlled module recorded
     # in the same restart file.
-    controlling_state_text = state_md_text.split(
-        "### FTI Touristik / Meeting Point / RICPE continuity", 1
-    )[0]
+    controlling_state_text = state_md_text
+    if "## 26 August material — live verified" in controlling_state_text:
+        controlling_state_text = controlling_state_text.split(
+            "## 26 August material — live verified", 1
+        )[1]
+    controlling_state_text = controlling_state_text.split("\n### ", 1)[0]
     if (
         "PREPARED_PENDING_MERGE" in controlling_state_text
         or "not yet live" in controlling_state_text.lower()
@@ -392,7 +406,9 @@ def main() -> int:
     print(" - ALG-ENT-018 active and attributed; ALG-ORG-011 remains retired")
     print(" - manifest-only Phase A separated from native Phase B")
     print(" - 26-Aug merge, Pages deployment and 21-URL exact readback are LIVE_VERIFIED")
-    print(" - repository and public material dates are in 2026-08-26 parity")
+    print(f" - repository latest material date: {repository_latest}")
+    print(f" - last live-verified material date: {last_live}")
+    print(f" - repository/public material parity: {material.get('public_parity')}")
     print(" - no private account address, locator or digest exposed")
     return 0
 

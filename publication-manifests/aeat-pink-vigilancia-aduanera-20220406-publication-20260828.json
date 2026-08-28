@@ -1,0 +1,70 @@
+{
+  "publication_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-28",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "PREPARED_PENDING_MERGE",
+  "purpose": "Publish a controlled bilingual digest and public-safe derivative of the complete received 6 April 2022 AEAT Customs Surveillance diligence, while separating observations, attributed statements, inference, legal argument and open evidence.",
+  "source": {
+    "description": "Five-page received AEAT Customs Surveillance diligence concerning the 22 March 2022 Sun Park visit, formalised 6 April 2022",
+    "page_count": 5,
+    "native_sha256": "b6ffc7cf29928a41bac7a466d16e513cc5e2f1c8d8db5069ae86ba64e117bb16",
+    "received_annotations": 54,
+    "annotation_note": "Twenty-seven highlight annotations and twenty-seven associated pop-ups were present in the received copy and excluded from the public derivative as later editorial material."
+  },
+  "public_derivative": {
+    "path": "evidence/aeat/pink/2022-04-06-vigilancia-aduanera/public-pdfs/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022-public-redacted.pdf",
+    "sha256": "1698a0800c477b526c3b1f1f5ca8ab55fc07a1248a0cc112fe2d42f175dbf2c9",
+    "preview_sha256": "b321db0392cf9f5bda97bc4f629f018a127c368881a43d26b716be95d5d25843",
+    "page_count": 5,
+    "format": "raster PDF",
+    "render_dpi": 140,
+    "jpeg_quality": 70,
+    "excluded": [
+      "personal and company contact identifiers not necessary to understand the source",
+      "signatures",
+      "later highlight and pop-up annotations",
+      "hidden text and form data"
+    ]
+  },
+  "expected_routes": {
+    "es": [
+      "es/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/index.html",
+      "es/pink-canary-aeat-audiencia-nacional/index.html",
+      "es/pink-canary-aeat-496-2026/index.html"
+    ],
+    "en": [
+      "en/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/index.html",
+      "en/pink-canary-aeat-national-court/index.html",
+      "en/pink-canary-aeat-496-2026/index.html"
+    ]
+  },
+  "structured_source": "assets/data/aeat-pink-vigilancia-aduanera-2022-04-06-v1.json",
+  "supporting_files": [
+    "scripts/build_aeat_pink_diligence_public_evidence.py",
+    "scripts/build_post7june_route_interlinks.py",
+    "scripts/render_post7june_2022_omnidirectional_map.mjs",
+    "evidence/aeat/pink/2022-04-06-vigilancia-aduanera/README.md",
+    "evidence/aeat/pink/2022-04-06-vigilancia-aduanera/redaction-log.md",
+    "evidence/aeat/pink/2022-04-06-vigilancia-aduanera/full-text/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022-public-transcription.md",
+    "evidence/aeat/pink/2022-04-06-vigilancia-aduanera/full-text/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022-english-translation.md",
+    "assets/data/material-updates-v1.json",
+    "ops/CURRENT_UNITARY_STATE.json",
+    "archive/AEAT_PINK_VIGILANCIA_ADUANERA_DILIGENCE_PUBLICATION_CONTROL_28AUG2026.md",
+    "docs/deletion-audits/2026-08-28-aeat-pink-vigilancia-aduanera-publication.md"
+  ],
+  "non_inference_rules": [
+    "The diligence proves that observations and statements were recorded; it does not itself prove the truth of attributed statements.",
+    "The male corporate interlocutor is unnamed; identifying him as José Daniel Acosta Matos remains Gil Marer's allegation or hypothesis.",
+    "The March and April 2022 source could not have originated the July 2020 inspection selection or the already ordered March 2022 complement.",
+    "Residual or auxiliary Pink functions do not automatically prove comprehensive operation, legal substitution or receipt of all hotel income.",
+    "Publication is not filing, service or incorporation into a judicial or administrative record."
+  ],
+  "privacy_rule": "Counsel drafts, advice emails, filenames and live procedural strategy remain outside the public repository.",
+  "validation": {
+    "local": "PENDING",
+    "pull_request_checks": "PENDING",
+    "pages": "PENDING",
+    "live_readback": "PENDING"
+  }
+}

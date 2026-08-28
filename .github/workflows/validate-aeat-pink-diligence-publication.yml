@@ -1,0 +1,85 @@
+name: Validate AEAT Pink diligence publication
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'archive/AEAT_PINK_VIGILANCIA_ADUANERA_DILIGENCE_PUBLICATION_CONTROL_28AUG2026.md'
+      - 'archive/CONTINUOUS_MAINTENANCE_MATRIX.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'assets/data/aeat-pink-vigilancia-aduanera-2022-04-06-v1.json'
+      - 'evidence/aeat/pink/2022-04-06-vigilancia-aduanera/**'
+      - 'en/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/**'
+      - 'es/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/**'
+      - 'en/evidence/aeat-pink-496-2026-allegations/**'
+      - 'es/evidencia/aeat-pink-496-2026-alegaciones/**'
+      - 'en/pink-canary-aeat-national-court/**'
+      - 'es/pink-canary-aeat-audiencia-nacional/**'
+      - 'en/pink-canary-aeat-496-2026/**'
+      - 'es/pink-canary-aeat-496-2026/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/community-instrumentalisation/minutes-2011-2022/**'
+      - 'es/comunidad-instrumentalizacion/actas-2011-2022/**'
+      - 'en/updates/**'
+      - 'es/actualizaciones/**'
+      - 'publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'sitemap-community-governance.xml'
+      - 'sitemap-pink-aeat.xml'
+      - 'scripts/build_aeat_pink_diligence_public_evidence.py'
+      - 'scripts/validate_aeat_pink_diligence_publication.py'
+      - '.github/workflows/validate-aeat-pink-diligence-publication.yml'
+  pull_request:
+    paths:
+      - 'archive/AEAT_PINK_VIGILANCIA_ADUANERA_DILIGENCE_PUBLICATION_CONTROL_28AUG2026.md'
+      - 'archive/CONTINUOUS_MAINTENANCE_MATRIX.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'assets/data/aeat-pink-vigilancia-aduanera-2022-04-06-v1.json'
+      - 'evidence/aeat/pink/2022-04-06-vigilancia-aduanera/**'
+      - 'en/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/**'
+      - 'es/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/**'
+      - 'en/evidence/aeat-pink-496-2026-allegations/**'
+      - 'es/evidencia/aeat-pink-496-2026-alegaciones/**'
+      - 'en/pink-canary-aeat-national-court/**'
+      - 'es/pink-canary-aeat-audiencia-nacional/**'
+      - 'en/pink-canary-aeat-496-2026/**'
+      - 'es/pink-canary-aeat-496-2026/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/2022-adjudication-documentary-reconstruction/**'
+      - 'es/adjudicacion-2022-reconstruccion-documental/**'
+      - 'en/community-instrumentalisation/minutes-2011-2022/**'
+      - 'es/comunidad-instrumentalizacion/actas-2011-2022/**'
+      - 'en/updates/**'
+      - 'es/actualizaciones/**'
+      - 'publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'sitemap-community-governance.xml'
+      - 'sitemap-pink-aeat.xml'
+      - 'scripts/build_aeat_pink_diligence_public_evidence.py'
+      - 'scripts/validate_aeat_pink_diligence_publication.py'
+      - '.github/workflows/validate-aeat-pink-diligence-publication.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Validate source, hashes, bilingual pages, interlinks and confidentiality boundary
+        run: python scripts/validate_aeat_pink_diligence_publication.py

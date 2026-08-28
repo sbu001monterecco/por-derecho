@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "control_date": "2026-08-28",
+  "evidence_id": "EVID-AEAT-PINK-VA-20220406-001",
+  "title": {
+    "es": "Diligencia de constancia de hechos de Vigilancia Aduanera sobre Sun Park",
+    "en": "Customs Surveillance record-of-facts diligence concerning Sun Park"
+  },
+  "source": {
+    "face_date": "2022-04-06",
+    "underlying_visit_date": "2022-03-22",
+    "issuing_office_literal": "Agencia Tributaria - Administracion de Aduanas de Lanzarote",
+    "page_count": 5,
+    "native_sha256": "b6ffc7cf29928a41bac7a466d16e513cc5e2f1c8d8db5069ae86ba64e117bb16",
+    "native_public": false,
+    "public_pdf_sha256": "1698a0800c477b526c3b1f1f5ca8ab55fc07a1248a0cc112fe2d42f175dbf2c9",
+    "received_copy_status": "OFFICIAL_RECORD_COPY_ON_ITS_FACE__ORIGIN_CERTIFICATION_NOT_INDEPENDENTLY_REPRODUCED",
+    "editorial_annotations_removed": {
+      "highlight_annotations": 27,
+      "popup_objects": 27,
+      "reason": "Later editorial highlighting must not be presented as part of the 6 April 2022 AEAT issue."
+    }
+  },
+  "canonical_objects": [
+    {
+      "caepr_id": "PD-SP-O-0004",
+      "label": "Pink Canary Services, S.L.U.",
+      "source_literal": "Monterecco Sun Park S.L.",
+      "relationship": "former legal name referenced in the recited tourism history"
+    },
+    {
+      "caepr_id": "PD-SP-O-0002",
+      "label": "Luchy Playa Blanca, S.L.U.",
+      "source_literal": "Luchy Playa Blanca SLU",
+      "relationship": "company identified on page 2 as owner of common areas and 159 apartments according to Laura Acosta Matos"
+    },
+    {
+      "caepr_id": "PD-SP-P-0001",
+      "label": "Gil Marer",
+      "relationship": "natural person whom the source incorrectly describes on page 1 as a company name"
+    },
+    {
+      "caepr_id": "PD-SP-P-0012",
+      "label": "Laura Patricia Acosta Matos",
+      "source_literal": "Laura Acosta Matos",
+      "relationship": "expressly named source on page 2; the full canonical forename is collateral identity control, not source wording"
+    },
+    {
+      "caepr_id": "PD-SP-R-0001",
+      "label": "Concurso 36/2012",
+      "relationship": "insolvency proceeding referred to without number in the diligence"
+    },
+    {
+      "caepr_id": "PD-SP-R-0009",
+      "label": "AEAT / Pink Canary Services proceeding",
+      "relationship": "later judicial-review context in which provenance and operator attribution are material"
+    }
+  ],
+  "events": [
+    {
+      "date": "2020-07-29",
+      "event": "Pink entered the inspection plan.",
+      "status": "ESTABLISHED_FROM_SEPARATE_AEAT_RECORD",
+      "relevance": "Predates the located Acosta-channel diligence."
+    },
+    {
+      "date": "2020-11-30/2020-12-02",
+      "event": "Inspection commenced.",
+      "status": "ESTABLISHED_FROM_SEPARATE_AEAT_RECORD",
+      "relevance": "The 2022 diligence could not have initiated the inspection."
+    },
+    {
+      "date": "2022-03-04/2022-03-15",
+      "event": "Supplementary action ordered/notified.",
+      "status": "ESTABLISHED_FROM_SEPARATE_AEAT_RECORD",
+      "relevance": "Predates the 22 March visit and 6 April diligence."
+    },
+    {
+      "date": "2022-03-22",
+      "event": "Vigilancia Aduanera visit to Sun Park; works and public closure recorded; photographs taken.",
+      "status": "DIRECT_OFFICIAL_OBSERVATION_RECORDED"
+    },
+    {
+      "date": "2022-04-06",
+      "event": "Diligence drawn up in Arrecife.",
+      "status": "OFFICIAL_RECORD_COPY"
+    }
+  ],
+  "propositions": [
+    {
+      "id": "VA-001",
+      "proposition": "The complex was undergoing works and closed to the public on 22 March 2022.",
+      "source_actor": "Vigilancia Aduanera officers",
+      "classification": "DIRECT_DOCUMENTED_OBSERVATION",
+      "limit": "Does not prove the 2017-2018 operating position."
+    },
+    {
+      "id": "VA-002",
+      "proposition": "An Acosta Matos business-channel contact said that 159 apartments had recently been judicially awarded after a 2017 credit purchase.",
+      "source_actor": "unnamed male corporate interlocutor",
+      "classification": "RECORDED_THIRD_PARTY_STATEMENT",
+      "limit": "No deed, property schedule or interlocutor identity is annexed."
+    },
+    {
+      "id": "VA-003",
+      "proposition": "The same channel asserted 2017-2018 Booking advertising, tourist complaints, threats and denied access.",
+      "source_actor": "unnamed male corporate interlocutor",
+      "classification": "RECORDED_ALLEGATION",
+      "limit": "No Booking record, police complaint, witness statement or adjudication is annexed."
+    },
+    {
+      "id": "VA-004",
+      "proposition": "The diligence recites a Cabildo tourism history from 1991 through a 2014 change to the Owners' Community.",
+      "source_actor": "diligence recital of an unappended Cabildo certificate",
+      "classification": "RECORDED_OFFICIAL_HISTORY_REQUIRING_UNDERLYING_CERTIFICATE",
+      "limit": "Registration is not by itself proof of actual income receipt or comprehensive operation."
+    },
+    {
+      "id": "VA-005",
+      "proposition": "Laura Acosta Matos asserted that the 2014 change lacked consent and that Gil Marer continued operating the complex until at least 2018.",
+      "source_actor": "Laura Acosta Matos",
+      "classification": "NAMED_RECORDED_STATEMENT",
+      "limit": "Accuracy, legal capacity, entity attribution, period, revenue and independent corroboration remain open."
+    },
+    {
+      "id": "VA-006",
+      "proposition": "The source literal refers to a company called GIL MARER.",
+      "source_actor": "unnamed male corporate interlocutor as recorded",
+      "classification": "DEMONSTRABLE_ENTITY_PERSON_CONFLATION",
+      "limit": "Gil Marer is a natural person; Luchy Playa Blanca, S.L.U. is separately named as the company owning the 159 units."
+    }
+  ],
+  "procedural_use": {
+    "permitted": [
+      "prove that the identified observations and statements were recorded",
+      "test source identity, provenance, independent verification and later AEAT reliance",
+      "test entity/function/unit/period/revenue attribution in the Pink dispute",
+      "identify the underlying Cabildo certificate, police records, Booking data, title schedules and financial records for production"
+    ],
+    "not_permitted_without_further_evidence": [
+      "state that the unnamed male was Jose Daniel Acosta Matos",
+      "state that every recorded allegation was true or knowingly false",
+      "state that the diligence initiated the 2020 inspection or the March 2022 supplementary action",
+      "state that Pink was or was not the comprehensive taxable operator solely from this diligence",
+      "state criminal intent, retaliation, institutional capture or causal tax effect as established"
+    ]
+  },
+  "public_routes": {
+    "es": "/es/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/",
+    "en": "/en/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/"
+  }
+}
