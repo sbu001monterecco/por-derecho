@@ -47,4 +47,14 @@ Rebuild the public evidence with `scripts/build_aeat_pink_diligence_public_evide
 
 ## Publication status
 
-`PREPARED_FOR_VALIDATION_AND_PUBLICATION` — exact pull-request, merge, Pages and public-readback evidence must be appended only after those events occur.
+`DELETION_SAFE_WITH_OPEN_EVIDENCE / LIVE_VERIFIED` — PR #1167 passed 51
+checks with five intentional skips and no failures. Reviewed head
+`a743767c566dd28afca66150849d18da7baabcc2` merged as
+`949405e4cec2fd6d959662dd0fc6f27cfdc45f19`, tree
+`84cffb1bd24d0a28ebd3c5ec947d065f14b05026`. Pages run `33204179559` /
+#1239 completed successfully, and a no-cache readback matched 33/33 declared
+public paths byte for byte. Deletion safety means that this publication and its
+limits can be reconstructed from current `main`; it does not close the
+inspection-file, reliance, operation, notification or other acquisition gaps
+listed above and does not authorise filing, service, email or third-party
+contact.

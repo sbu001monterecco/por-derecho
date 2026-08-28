@@ -2,7 +2,7 @@
 
 **Control date:** 28 August 2026
 **Source date:** visit 22 March 2022; diligence signed/formalised 6 April 2022
-**Status:** `COMPLETE RECEIVED COPY CONTROLLED / PUBLIC DERIVATIVE PREPARED / ATTRIBUTION AND NON-INFERENCE LOCKED`
+**Status:** `LIVE_VERIFIED / COMPLETE RECEIVED COPY CONTROLLED / ATTRIBUTION AND NON-INFERENCE LOCKED`
 
 ## 1. Controlled source
 
@@ -75,6 +75,12 @@ No public text may describe this diligence as the sole cause of the inspection o
 Public PDF SHA-256:
 
 `1698a0800c477b526c3b1f1f5ca8ab55fc07a1248a0cc112fe2d42f175dbf2c9`
+
+Publication evidence: PR #1167; reviewed head
+`a743767c566dd28afca66150849d18da7baabcc2`; merge
+`949405e4cec2fd6d959662dd0fc6f27cfdc45f19`; tree
+`84cffb1bd24d0a28ebd3c5ec947d065f14b05026`; Pages run `33204179559` /
+#1239 successful; 33/33 no-cache public paths matched the merged bytes.
 
 ## 5. Privacy and litigation boundary
 
