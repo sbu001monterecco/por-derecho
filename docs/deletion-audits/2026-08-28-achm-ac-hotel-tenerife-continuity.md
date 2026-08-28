@@ -3,8 +3,8 @@
 **Audit date:** 28 August 2026
 **Fetched baseline:** `origin/main@306d130f` (reconciled after the contemporaneous family chronology and portrait update)
 **Working branch:** `codex/achm-hotel-continuity-20260828`
-**Publication state:** `PUBLICATION AUTHORISED — VALIDATION / PR / PAGES VERIFICATION PENDING`
-**Thread verdict:** `CONTINUITY_PRESERVED_WITH_PROFILE_IMAGES_FAMILY_TREE_SUN_PARK_MYND_RADISSON_AND_OPEN_KINSHIP_EVIDENCE`
+**Publication state:** `LIVE VERIFIED — PR #1170 / MERGE 8593181d / PAGES #1248 / 16-OF-16 EXACT READBACK`
+**Thread verdict:** `DELETION_SAFE_WITH_PROFILE_IMAGES_FAMILY_TREE_SUN_PARK_MYND_RADISSON_AND_OPEN_KINSHIP_EVIDENCE`
 
 ## Durable finding
 
@@ -107,7 +107,7 @@ The canonical IREA/Colliers dossier contains a dedicated `#achm-ac-hotel-tenerif
 
 The current request expressly authorises making the repository and website update live. That authority is limited to the normal branch → PR → merge → GitHub Pages publication chain. It does not authorise witness contact, email, filing, summons or any other third-party communication.
 
-No live claim may be recorded until the merged commit and its GitHub Pages deployment are independently verified. Source validation, rendered checks and exact live readback remain hard gates.
+PR #1170 merged as `8593181dd5594514fa306d7b6be4bf728908fa18`. GitHub Pages run `33209594654` / #1248 successfully deployed descendant main `9d9ea2c4c19116395eb9c3f7feb2465e60d74814`. A no-cache production audit returned HTTP 200 and exact SHA-256 parity for all 16 controlled resources: ten bilingual family/perimeter/unitary/RICPE pages, both profile photographs, Laura's native experience exhibit, the unitary data record, the visual registry and the shared stylesheet.
 
 ## Continuity verdict
 
@@ -124,7 +124,7 @@ No live claim may be recorded until the merged commit and its GitHub Pages deplo
 - `FAMILY_PAGE_AND_TREE: BILINGUAL_PAIRED_WITNESS_LANE_WITH_DASHED_UNVERIFIED_EDGES`
 - `FAMILY_RELATIONSHIPS_INCLUDING_LAURA_FERNANDO_SIBLING_ASSERTION: UNVERIFIED`
 - `CAEPR_FINITE_SCOPE: 20/20 CARET_CONFIRMED`
-- `REPOSITORY_LOCAL_CONTINUITY: VALIDATION_PENDING`
-- `PUBLICATION/LIVE_CONTINUITY: AUTHORISED_PENDING_VERIFICATION`
+- `REPOSITORY_LOCAL_CONTINUITY: VALIDATED_AND_MERGED`
+- `PUBLICATION/LIVE_CONTINUITY: LIVE_VERIFIED_16_OF_16_EXACT_BYTES`
 
-The thread is resumable without re-deriving the hotel relationship. Deletion safety remains conditional on preserving this local branch or publishing an authorised successor package.
+The thread is resumable without re-deriving the hotel relationship. Its material findings, qualifications, images, hashes, routes, source distinctions and open evidence are reconstructable from merged repository source and the live website. Deletion safety does not prove the alleged family relationships, project-specific knowledge, wrongdoing or liability and does not authorise witness contact.

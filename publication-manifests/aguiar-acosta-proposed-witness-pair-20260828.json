@@ -2,8 +2,10 @@
   "publication_id": "PD-SP-AGUIAR-ACOSTA-WITNESS-PAIR-20260828-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-28",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "PUBLICATION_AUTHORISED_LOCAL_VALIDATION_PASSED",
+  "current_state": "DELETION_SAFE",
+  "state": "DELETION_SAFE_LIVE_VERIFIED_WITH_OPEN_KINSHIP_EVIDENCE",
+  "controlling_pr": 1170,
+  "merge_sha": "8593181dd5594514fa306d7b6be4bf728908fa18",
   "purpose": "Publish a bilingual, source-controlled proposed-witness pair and provisional family-tree lane for Fernando Aguiar Acosta and Laura Aguiar Acosta, integrating Laura's Sun Park/MYND Yaiza and Radisson Blu Lanzarote experience evidence with the existing IREA/RICPE/ACHM/Colliers continuity audit.",
   "identity_control": {
     "fernando": {"caepr_id":"PD-SP-P-0088","name":"Fernando Aguiar Acosta","asset_id":"person.fernando-aguiar-acosta.primary"},
@@ -89,12 +91,62 @@
     "docs/deletion-audits/2026-08-28-achm-ac-hotel-tenerife-continuity.md",
     "sitemap-acosta-matos-family.xml"
   ],
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "run_id": 33209594654,
+    "run_number": 1248,
+    "conclusion": "success",
+    "deployed_head_sha": "9d9ea2c4c19116395eb9c3f7feb2465e60d74814",
+    "ancestry_control": "The deployed head is a descendant of merge 8593181dd5594514fa306d7b6be4bf728908fa18."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-family/",
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-familia/",
+    "https://sbu001monterecco.github.io/por-derecho/en/acosta-matos-perimeter/",
+    "https://sbu001monterecco.github.io/por-derecho/es/acosta-matos-perimetro/",
+    "https://sbu001monterecco.github.io/por-derecho/en/irea-colliers-meridian-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ric-private-equity-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/en/ricpe-documentary-accountability/",
+    "https://sbu001monterecco.github.io/por-derecho/es/ricpe-responsabilidad-documental/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+    "https://sbu001monterecco.github.io/por-derecho/assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+    "https://sbu001monterecco.github.io/por-derecho/assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/irea-colliers-meridian-sun-park-unitary-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/visual-asset-registry.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/styles.css"
+  ],
+  "live_verification_evidence": {
+    "verified_at": "2026-08-28T20:51:30Z",
+    "method": "No-cache HTTP 200 retrieval and SHA-256 comparison against repository source bytes",
+    "result": "16/16 HTTP_200_EXACT_SHA256_MATCH",
+    "profile_and_exhibit_result": "3/3 EXACT_SHA256_MATCH",
+    "family_page_result": "2/2 EXACT_SHA256_MATCH",
+    "interlinked_page_result": "8/8 EXACT_SHA256_MATCH",
+    "data_and_style_result": "3/3 EXACT_SHA256_MATCH"
+  },
   "validation": {
     "local": "PASS",
-    "pull_request": null,
-    "validated_head": null,
-    "merge_sha": null,
-    "pages_run_id": null,
-    "live_readback": "PENDING"
+    "pull_request": 1170,
+    "validated_head": "c94d72bf8a4497724ce93cd9e92dbff058e6de92",
+    "merge_sha": "8593181dd5594514fa306d7b6be4bf728908fa18",
+    "pages_run_id": 33209594654,
+    "evidence": [
+      "Specialist IREA/RICPE/Colliers continuity validator passed",
+      "Visual asset registry validator passed",
+      "Publication integrity validator passed",
+      "Audience experience and internal-link validator passed",
+      "Repository preservation validator passed"
+    ],
+    "live_readback": "16/16 HTTP_200_EXACT_SHA256_MATCH"
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_KINSHIP_AND_RECORDS_EVIDENCE",
+    "continuity_source": "docs/deletion-audits/2026-08-28-achm-ac-hotel-tenerife-continuity.md",
+    "restart_source": "CHATGPT_START_HERE.md",
+    "open_evidence_preserved": true,
+    "communication_performed": false,
+    "witness_contact_authorised": false
   }
 }
