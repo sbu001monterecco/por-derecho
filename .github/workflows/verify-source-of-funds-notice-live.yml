@@ -242,6 +242,16 @@ jobs:
                       && expectedAnchor.nextElementSibling === section
                     );
                   }, null, { timeout: 45000 });
+                  await page.waitForFunction(() => {
+                    const images = [...document.querySelectorAll(
+                      '.source-funds-notice-section--featured .source-funds-email-graphic img'
+                    )];
+                    return images.length === 2 && images.every(image => (
+                      image.complete
+                      && image.naturalWidth === 1800
+                      && image.naturalHeight === 1200
+                    ));
+                  }, null, { timeout: 45000 });
                   const featureState = await page.evaluate(() => {
                     const opening = document.querySelector('main > section:first-of-type');
                     const lockedFiveActorSection = document.querySelector('main > section[data-pd-five-ac]');

@@ -334,9 +334,23 @@ def main() -> int:
 
     interlink_manifest = load_json(INTERLINK_MANIFEST)
     require(interlink_manifest["parent_control_id"] == case["control_id"], "interlink parent control drift")
-    require(interlink_manifest["state"] == "AUTHORIZED_FOR_PUBLICATION", "interlink pre-publication state drift")
+    require(interlink_manifest["state"] == "LIVE_VERIFIED", "interlink publication state drift")
+    require(interlink_manifest["current_state"] == "LIVE_VERIFIED", "interlink closeout is not live verified")
     require(interlink_manifest["junction_contract"]["destinations_per_core_page"] == 12, "interlink manifest core denominator drift")
     require(interlink_manifest["junction_contract"]["bilingual_satellite_pages"] == 18, "interlink manifest satellite denominator drift")
+    require(interlink_manifest["validation"]["pull_request_checks"] == "PASS_27_OF_27", "interlink PR check denominator drift")
+    require(interlink_manifest["validation"]["browser_execution"] == "PASS_30_ROUTE_VIEWPORT_CHECKS", "interlink browser evidence drift")
+    interlink_result = interlink_manifest["publication_result"]
+    require(interlink_result["pull_request"].endswith("/1149"), "interlink publication PR drift")
+    require(interlink_result["merge_sha"] == "5aaa0b6f1b343789a2d8618c6ba5ac0bedaf9a9e", "interlink merge SHA drift")
+    require(interlink_result["pages_workflow_run_id"] == 33176302160, "interlink Pages run drift")
+    interlink_readback = interlink_result["live_readback"]
+    require(interlink_readback["status"] == "PASS_26_OF_26_HTTP_200_EXACT_REPOSITORY_BYTES", "interlink live-readback result drift")
+    require(len(interlink_readback["sha256"]) == 26, "interlink exact-byte denominator must remain 26")
+    require("both featured evidence images" in interlink_result["post_merge_monitor_followup"]["hardening"], "image-ready monitor hardening missing")
+    require("current 214/94/74/10/18/18" in interlink_result["unitary_control_plane_followup"]["hardening"], "current registry monitor hardening missing")
+    require("last_live_verified_counts" in interlink_result["unitary_control_plane_followup"]["hardening"], "historical registry boundary missing")
+    require(all(interlink_manifest["external_actions"][key] is True for key in ("push", "pull_request", "merge", "deployment", "live_readback")), "interlink publication action closeout incomplete")
     require(interlink_manifest["external_actions"]["filing_or_contact"] is False, "interlink filing/contact boundary drift")
 
     bilingual_pages = {

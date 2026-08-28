@@ -158,7 +158,7 @@ jobs:
           print('JSON/XML syntax: PASS')
           PY
 
-      - name: Verify preserved historical public snapshot markers
+      - name: Verify current public markers and preserved historical anchors
         id: historical_readback
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
@@ -168,11 +168,12 @@ jobs:
           import json, os, time, urllib.request
 
           base=os.environ['BASE'].rstrip('/')
-          # The source/static registry is 204 IDs; this step reads back the
-          # preserved 26-Aug historical promotion and does not attest GITHUB_SHA.
+          # Mutable Pages routes carry the current 214-ID registry. Structured
+          # controls separately retain the 204-ID historical denominator and
+          # the immutable 26-Aug promotion evidence.
           text_checks=[
-            ('/es/registro-identidad-materia/',['data-static-registry-counts="204-87-71-10-18-18"','data-registry-stat="TOTAL">204','Los <strong>204 IDs</strong>']),
-            ('/en/matter-identity-registry/',['data-static-registry-counts="204-87-71-10-18-18"','data-registry-stat="TOTAL">204','The <strong>204 IDs</strong>']),
+            ('/es/registro-identidad-materia/',['data-static-registry-counts="214-94-74-10-18-18"','data-registry-stat="TOTAL">214','Los <strong>214 IDs</strong>']),
+            ('/en/matter-identity-registry/',['data-static-registry-counts="214-94-74-10-18-18"','data-registry-stat="TOTAL">214','The <strong>214 IDs</strong>']),
             ('/es/actualizaciones/',['Última actualización material','<strong>26 agosto 2026</strong>','ALG-ENT-018']),
             ('/en/updates/',['Latest material update','<strong>26 August 2026</strong>','ALG-ENT-018']),
             ('/assets/data/material-updates-v1.json',['PD-MATERIAL-UPDATES-001','2026-08-26','ALG-ENT-018']),
@@ -199,7 +200,7 @@ jobs:
               try:
                 body=fetch(url); missing=[m for m in markers if m not in body]
                 if not missing:
-                  print(f'HISTORICAL SNAPSHOT MARKERS MATCH {url} :: {len(body)} bytes :: {len(markers)} markers'); break
+                  print(f'CURRENT PUBLIC MARKERS MATCH {url} :: {len(body)} bytes :: {len(markers)} markers'); break
                 last=f'missing {missing}'
               except Exception as exc: last=str(exc)
               time.sleep(10)
@@ -216,7 +217,8 @@ jobs:
               assert state.get('control_id')=='PD-UNITARY-STATE-20260826-01'
               assert state.get('status')=='LIVE_VERIFIED'
               counts=state.get('identity_registry',{}).get('counts',{})
-              assert counts=={'total':204,'PERSON':87,'ORGANISATION':71,'STRUCTURE':10,'INSTITUTION':18,'PROCEEDING':18}
+              assert counts=={'total':214,'PERSON':94,'ORGANISATION':74,'STRUCTURE':10,'INSTITUTION':18,'PROCEEDING':18}
+              assert state.get('identity_registry',{}).get('last_live_verified_counts')=={'total':204,'PERSON':87,'ORGANISATION':71,'STRUCTURE':10,'INSTITUTION':18,'PROCEEDING':18}
               repository=state.get('repository',{})
               assert repository.get('source_publication_merge_sha')==historical_promotion_merge_sha
               assert repository.get('verified_tree_sha')==historical_promotion_tree_sha
@@ -246,7 +248,7 @@ jobs:
               assert readback.get('completed_at')=='2026-08-26T07:29:55Z'
               assert readback.get('verified_url_count')==21
               assert len(publication.get('live_urls',[]))==21
-              print(f'HISTORICAL SNAPSHOT STRUCTURE MATCHES {state_url}')
+              print(f'CURRENT REGISTRY AND HISTORICAL SNAPSHOT STRUCTURE MATCH {state_url}')
               break
             except Exception as exc:
               last=str(exc); time.sleep(10)
@@ -300,11 +302,11 @@ jobs:
             echo "- Validation checkout SHA: $GITHUB_SHA (not attested here as the deployed Pages SHA)"
             echo '- Historical snapshot control: `PD-UNITARY-STATE-20260826-01`.'
             echo '- Preserved historical evidence: merge `77e2ba300af45a953947160af63283a64512e876`, Pages `32942972472`, verifier `32942975508` / job `98097657687`.'
-            echo '- Identity source/static denominator: `204 / 87 / 71 / 10 / 18 / 18`; prior live snapshot: `194 / 86 / 66 / 10 / 15 / 17`.'
+            echo '- Current identity denominator: `214 / 94 / 74 / 10 / 18 / 18`; preserved historical denominator: `204 / 87 / 71 / 10 / 18 / 18`.'
             if [ "$GITHUB_EVENT_NAME" = 'pull_request' ]; then
               echo '- Source parity and syntax verified; no public deployment attestation was run.'
             elif [ "$GITHUB_EVENT_NAME" = 'push' ] && [ "$GITHUB_REF" = 'refs/heads/main' ] && [ "$HISTORICAL_READBACK_OUTCOME" = 'success' ]; then
-              echo '- The preserved historical snapshot was read back; this does not attest the current checkout SHA and is not a current-publication closeout.'
+              echo '- Current public markers and the preserved historical anchors were read back; this does not attest the current checkout SHA and is not a current-publication closeout.'
             else
               echo '- No public readback was completed; this run makes no deployed-state claim.'
             fi
