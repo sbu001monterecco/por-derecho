@@ -115,57 +115,57 @@
       "node_id": "AM357-N02",
       "language": "es",
       "route": "/es/concurso-36-2012-masa-activa-2018-2021/",
-      "normalized_main_sha256": "fa09bc0bfd59960dcde937bfa8c01e2db6c106b1c133aba4911a3a6095594852",
-      "normalized_characters": 8431
+      "normalized_main_sha256": "3b93b0704bad0cfb798c96589ead4f46fd8290521558d3f9d6ef0eaa80bb330c",
+      "normalized_characters": 8556
     },
     {
       "node_id": "AM357-N02",
       "language": "en",
       "route": "/en/insolvency-36-2012-active-estate-2018-2021/",
-      "normalized_main_sha256": "03391b50eaa682d305e792151ee3c46fb78c44e825bca02356547b528592b997",
-      "normalized_characters": 8007
+      "normalized_main_sha256": "55050dad29962a6db49a255cefb1764ba232e8fbaa5eea454d2ac5051682c3bc",
+      "normalized_characters": 8122
     },
     {
       "node_id": "AM357-N03",
       "language": "es",
       "route": "/es/toma-control-sun-park-7-junio-2018/",
-      "normalized_main_sha256": "16d06a3be1d18f36fb906e08ed943a86ea11d8f191212caa70102dbf659a8edd",
-      "normalized_characters": 53098
+      "normalized_main_sha256": "527ffa60037be9f4efcda610f21395667d7e2cc12aa6585062637552cb3798d5",
+      "normalized_characters": 53212
     },
     {
       "node_id": "AM357-N03",
       "language": "en",
       "route": "/en/sun-park-takeover-7-june-2018/",
-      "normalized_main_sha256": "e12698f103130360cdb91a6a0989bc5440b8ea120acbf18ab4622147b997f953",
-      "normalized_characters": 50633
+      "normalized_main_sha256": "37fd89544e0af19399d29f061ac9e29b41905aabe37cfe84df7d3bf161fd55fd",
+      "normalized_characters": 50735
     },
     {
       "node_id": "AM357-N04",
       "language": "es",
       "route": "/es/adjudicacion-2022-reconstruccion-documental/",
-      "normalized_main_sha256": "7900652b866c1bf33db6e44e5029cc05055889eb1286049f27d046983cc62f4f",
-      "normalized_characters": 16909
+      "normalized_main_sha256": "4fd56f6925c3f38b766c510f3d504469e720d83c32b973bd2041e0bbe5bd40a0",
+      "normalized_characters": 17034
     },
     {
       "node_id": "AM357-N04",
       "language": "en",
       "route": "/en/2022-adjudication-documentary-reconstruction/",
-      "normalized_main_sha256": "38c6c8584bfe9b5379f42f8f038d720fc3ad8396217d257f0137fe7bac09f6e1",
-      "normalized_characters": 15976
+      "normalized_main_sha256": "68e30130415e0bfea42dca162bab30cae495c59b626499ad78d8ce78e1277205",
+      "normalized_characters": 16091
     },
     {
       "node_id": "AM357-N05",
       "language": "es",
       "route": "/es/lava-verde-club-sei-meeting-point/",
-      "normalized_main_sha256": "1dbfde1fe72be9987fb642eee5f7e388dc340c006d7e800028d0f6a31a339faa",
-      "normalized_characters": 23662
+      "normalized_main_sha256": "55491005d2eb3158786c01279e941e33f91ff992fc6b7499919ac77f54e99509",
+      "normalized_characters": 23787
     },
     {
       "node_id": "AM357-N05",
       "language": "en",
       "route": "/en/lava-verde-club-sei-meeting-point/",
-      "normalized_main_sha256": "dda65552a40bc451e97cb4ac6882af8d28f3c623c50c3476d0057f29e09bdb7c",
-      "normalized_characters": 22862
+      "normalized_main_sha256": "e1c11b09495084bb0871456b97c05d342c50be7bc439ebdb5346d5526e92cdb7",
+      "normalized_characters": 22977
     },
     {
       "node_id": "AM357-N06",
@@ -1146,7 +1146,7 @@
         "language": "en",
         "route": "/en/sun-park-takeover-7-june-2018/",
         "normalized_literal": "Owners’ Community",
-        "normalized_occurrence_count": 2
+        "normalized_occurrence_count": 3
       }
     },
     {

@@ -307,6 +307,18 @@ def omnidirectional_enablement_map(locale: str) -> str:
         "es/toma-control-sun-park-7-junio-2018/"
         if es else "en/sun-park-takeover-7-june-2018/"
     )
+    meeting = root_href(
+        "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/"
+        if es else "en/community-instrumentalisation/acta-document-room/2022-02-04/"
+    )
+    community = root_href(
+        "es/comunidad-instrumentalizacion/"
+        if es else "en/community-instrumentalisation/"
+    )
+    acosta = root_href(
+        "es/acosta-matos-perimetro/"
+        if es else "en/acosta-matos-perimeter/"
+    )
     de_facto = root_href(
         "es/administracion-de-hecho-comunidad-ac/"
         if es else "en/de-facto-administration-community-ac/"
@@ -330,6 +342,10 @@ def omnidirectional_enablement_map(locale: str) -> str:
     multiple = root_href(
         "es/mismo-hotel-multiples-vidas-financieras/"
         if es else "en/same-hotel-multiple-financial-lives/"
+    )
+    club_sei = root_href(
+        "es/lava-verde-club-sei-meeting-point/"
+        if es else "en/lava-verde-club-sei-meeting-point/"
     )
     court = root_href(
         "es/concurso-36-2012-magistrado-juez/"
@@ -361,7 +377,7 @@ def omnidirectional_enablement_map(locale: str) -> str:
 <article class="omni-term"><h4>¿Activos «protegidos por el juzgado»?</h4><p>La fórmula rigurosa es: <strong>activos de LPB formalmente sometidos a salvaguardas de administración concursal y supervisión judicial, cuya eficacia práctica se discute</strong>. Es arquitectura de protección, no garantía de resultado. Matkator permanecía fuera.</p><p><a href="{h(court)}">Auditar supervisión y respuesta →</a></p></article>
 <article class="omni-term"><h4>Administrador de hecho no significa influencia</h4><p>El registro apoya investigar control de hecho de funciones discretas. La calificación jurídica respecto de LPB exige gestión autónoma estable o influencia decisiva habitual, instrucciones seguidas, continuidad, conocimiento, beneficio y el estándar vigente en cada fecha.</p><p><a href="{h(de_facto)}">Aplicar el test funcional →</a></p></article>
 </div>
-<nav class="omni-map-links" aria-label="Rutas de auditoría conectadas"><a href="{h(takeover)}#actores-2018-2022">Actores y prueba individual</a><a href="{h(ona)}">ONA y salida financiada</a><a href="{h(estate)}">Masa activa</a><a href="{h(de_facto)}">Gestión de hecho</a><a href="{h(adjudication)}">Escritura 457</a><a href="{h(funding)}">RICPE / incentivo / FEDER</a><a href="{h(data)}">Modelo estructurado</a></nav>
+<nav class="omni-map-links" data-post7-evidence-junction="PD-SP-POST7J-20260828-01" aria-label="Nudo probatorio recíproco 2018–2022"><a data-post7-route="takeover" href="{h(takeover)}#actores-2018-2022">7 junio y actores</a><a data-post7-route="meeting" href="{h(meeting)}#lectura-unitaria-2018-2022">Junta / ACTA de 4 febrero</a><a data-post7-route="community" href="{h(community)}">Comunidad de Propietarios</a><a data-post7-route="acosta" href="{h(acosta)}">Perímetro Acosta Matos</a><a data-post7-route="ona" href="{h(ona)}">ONA y salida financiada</a><a data-post7-route="estate" href="{h(estate)}">Masa activa</a><a data-post7-route="de-facto" href="{h(de_facto)}">Gestión de hecho</a><a data-post7-route="club-sei" href="{h(club_sei)}">Club Sei / proyecto pre-título</a><a data-post7-route="deed" href="{h(adjudication)}">Escritura 457</a><a data-post7-route="funding" href="{h(funding)}">RICPE / incentivo / FEDER</a><a data-post7-route="financial-lives" href="{h(multiple)}">Vidas financieras</a><a data-post7-route="data" href="{h(data)}">Modelo estructurado</a></nav>
 </section>'''
 
     return f'''<section class="omni-acta-map" id="omnidirectional-4feb2022-map" aria-labelledby="omnidirectional-4feb2022-title">
@@ -387,7 +403,7 @@ def omnidirectional_enablement_map(locale: str) -> str:
 <article class="omni-term"><h4>Were the assets “court-protected”?</h4><p>The accurate phrase is: <strong>LPB assets formally subject to insolvency-administration and judicial-supervision safeguards, whose practical effectiveness is disputed</strong>. That is a protection architecture, not a guarantee of outcome. Matkator remained outside it.</p><p><a href="{h(court)}">Audit supervision and response →</a></p></article>
 <article class="omni-term"><h4>De facto administrator does not mean influence</h4><p>The record supports inquiry into de facto control of discrete functions. Legal status in relation to LPB requires stable autonomous management or habitual decisive influence, instructions followed, continuity, knowledge, benefit and the date-specific standard.</p><p><a href="{h(de_facto)}">Apply the functional test →</a></p></article>
 </div>
-<nav class="omni-map-links" aria-label="Connected audit routes"><a href="{h(takeover)}#actors-2018-2022">Actors and individual proof</a><a href="{h(ona)}">ONA funded exit</a><a href="{h(estate)}">Active estate</a><a href="{h(de_facto)}">De facto control</a><a href="{h(adjudication)}">Deed 457</a><a href="{h(funding)}">RICPE / incentive / FEDER</a><a href="{h(data)}">Structured model</a></nav>
+<nav class="omni-map-links" data-post7-evidence-junction="PD-SP-POST7J-20260828-01" aria-label="Reciprocal 2018–2022 evidence junction"><a data-post7-route="takeover" href="{h(takeover)}#actors-2018-2022">7 June and actors</a><a data-post7-route="meeting" href="{h(meeting)}#unitary-reading-2018-2022">4 February meeting / ACTA</a><a data-post7-route="community" href="{h(community)}">Owners’ Community</a><a data-post7-route="acosta" href="{h(acosta)}">Acosta Matos perimeter</a><a data-post7-route="ona" href="{h(ona)}">ONA funded exit</a><a data-post7-route="estate" href="{h(estate)}">Active estate</a><a data-post7-route="de-facto" href="{h(de_facto)}">De facto control</a><a data-post7-route="club-sei" href="{h(club_sei)}">Club Sei / pre-title project</a><a data-post7-route="deed" href="{h(adjudication)}">Deed 457</a><a data-post7-route="funding" href="{h(funding)}">RICPE / incentive / FEDER</a><a data-post7-route="financial-lives" href="{h(multiple)}">Financial lives</a><a data-post7-route="data" href="{h(data)}">Structured model</a></nav>
 </section>'''
 
 

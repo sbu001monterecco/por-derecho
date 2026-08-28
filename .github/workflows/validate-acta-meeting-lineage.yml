@@ -10,6 +10,7 @@ on:
       - 'assets/evidence/community-actas/**'
       - 'assets/evidence/community-actas-source/**'
       - 'assets/acta-document-room-20260822.*'
+      - 'assets/styles.css'
       - 'assets/post7-2022-omnidirectional-map-20260828.css'
       - 'assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json'
       - 'es/comunidad-instrumentalizacion/sala-documental-actas/**'
@@ -19,6 +20,7 @@ on:
       - 'es/comunidad-instrumentalizacion/actas-2011-2022/**'
       - 'en/community-instrumentalisation/minutes-2011-2022/**'
       - 'scripts/build_acta_meeting_lineage.py'
+      - 'scripts/build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
       - 'scripts/render_acta_meeting_lineage.mjs'
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
@@ -34,6 +36,7 @@ on:
       - 'assets/evidence/community-actas/**'
       - 'assets/evidence/community-actas-source/**'
       - 'assets/acta-document-room-20260822.*'
+      - 'assets/styles.css'
       - 'assets/post7-2022-omnidirectional-map-20260828.css'
       - 'assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json'
       - 'es/comunidad-instrumentalizacion/sala-documental-actas/**'
@@ -41,6 +44,7 @@ on:
       - 'es/toma-control-sun-park-7-junio-2018/**'
       - 'en/sun-park-takeover-7-june-2018/**'
       - 'scripts/build_acta_meeting_lineage.py'
+      - 'scripts/build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
       - 'scripts/render_acta_meeting_lineage.mjs'
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
@@ -78,6 +82,7 @@ jobs:
       - name: Rebuild and require an exact tree
         run: |
           python3 scripts/build_acta_meeting_lineage.py
+          python3 scripts/build_post7june_route_interlinks.py
           git diff --exit-code
       - name: Validate lineage, packages and privacy
         run: |
