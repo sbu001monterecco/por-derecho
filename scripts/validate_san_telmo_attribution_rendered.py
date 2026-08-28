@@ -6,6 +6,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 required = {
     "assets/site.js": [
+        "site-pre-treasury-154-hq-20260828.js?v=20260828a",
+        "data-pre-treasury-154-site-loader",
+    ],
+    "assets/site-pre-treasury-154-hq-20260828.js": [
         "san-telmo-attribution-correction-20260819.js?v=20260819a",
         "data-san-telmo-attribution-loader",
     ],

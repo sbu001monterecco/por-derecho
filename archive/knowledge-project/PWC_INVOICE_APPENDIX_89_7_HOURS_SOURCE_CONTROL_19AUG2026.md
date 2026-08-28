@@ -7,7 +7,7 @@
 ## Primary source
 
 Gmail parent message: `SP-PRV-LCTR-GM-BEFBD2173022D1EB5EF9`
-From: `SP-PRV-LCTR-EM-AEAF303BC8FC11F55F33`
+**Recorded sender token:** `SP-PRV-LCTR-EM-AEAF303BC8FC11F55F33`
 Subject: `Invoice PwC`  
 Attachment: `ANEXO FRA. MATKATOR FACTURA MAYO 2016.pdf`  
 Companion attachment: `frmFNPDFTaxInvoice 36117713 - June 14_2016.pdf`

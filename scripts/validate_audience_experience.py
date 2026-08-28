@@ -235,7 +235,8 @@ def validate_key_direct_routes(errors: list[str]) -> None:
 
 def validate_runtime_contract(errors: list[str]) -> None:
     module = (ROOT / "assets/audience-experience-order-20260823.js").read_text(encoding="utf-8")
-    loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
+    root_loader = (ROOT / "assets/site.js").read_text(encoding="utf-8")
+    loader = (ROOT / "assets/site-pre-treasury-154-hq-20260828.js").read_text(encoding="utf-8")
     prosecution = (ROOT / "assets/prosecution-public-entry-20260821.js").read_text(encoding="utf-8")
     criminal_engineering = (ROOT / "assets/criminal-engineering-investigation-20260819.js").read_text(encoding="utf-8")
     cam_module = (ROOT / "assets/cam-direct-instruction-shadow-admin-judicial-omission-20260823.js").read_text(encoding="utf-8")
@@ -273,8 +274,10 @@ def validate_runtime_contract(errors: list[str]) -> None:
     ):
         if marker not in module:
             fail(errors, f"audience runtime missing contract marker: {marker}")
+    if "site-pre-treasury-154-hq-20260828.js?v=20260828a" not in root_loader:
+        fail(errors, "site.js does not load the delegated pre-Treasury site release")
     if "audience-experience-order-20260823.js?v=20260824b" not in loader:
-        fail(errors, "site.js does not load the audience-order release module")
+        fail(errors, "delegated site release does not load the audience-order module")
     for marker in (
         "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')",
         "const anchor = detailed || controlling || sourceFunds || hero",
@@ -286,7 +289,7 @@ def validate_runtime_contract(errors: list[str]) -> None:
         ("ricpe-identity-correction-20260815.js?v=20260824d", site_base, "RICPE identity loader"),
         ("site-base-20260819.js?v=20260824e", pre_intervencion, "site base loader"),
         ("site-pre-intervencion-highlight-before-eg95-20260823.js?v=20260824e", site_wrapper, "pre-intervencion loader"),
-        ("site-pre-intervencion-highlight-20260820.js?v=20260824e", loader, "site wrapper loader"),
+        ("site-pre-intervencion-highlight-20260820.js?v=20260824e", loader, "delegated site wrapper loader"),
     ):
         if marker not in source:
             fail(errors, f"cache-busted direct-route loader chain missing {label}: {marker}")

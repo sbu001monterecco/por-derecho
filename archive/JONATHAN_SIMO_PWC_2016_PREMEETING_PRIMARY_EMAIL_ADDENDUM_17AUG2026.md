@@ -16,7 +16,7 @@ This materially strengthens the source basis for a future Jonathan Simó page wh
 
 Sender: `Jonathan Simó CLS Consultoría <SP-PRV-LCTR-EM-7F3299CE205634A990D4>`
 Recipient: `SP-PRV-LCTR-EM-A4E1A0C00F1313B3456F`
-CC: `SP-PRV-LCTR-EM-725F73804AD842E5A7CE`
+**Recorded copied-recipient token:** `SP-PRV-LCTR-EM-725F73804AD842E5A7CE`
 
 Jonathan writes:
 
