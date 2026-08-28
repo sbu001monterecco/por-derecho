@@ -15,6 +15,7 @@ Knowledge is recorded as an evidential chronology, not as a conclusion of bad fa
 | 2022 segregation | CAM/HNT | transfer of Sun Park economic unit by universal succession | official notice | liability schedule not established | HNT's acquired liabilities and own later conduct |
 | Jun–Jul 2024 | Fernando Aguiar Acosta / RICPE | reported professional role | public professional profile | does not prove family relationship or Sun Park/HNT/MYND exposure | duties, supervisors, assignments and systems access |
 | Summer 2026 | Fernando Aguiar Acosta / Colliers Debt Advisory | reported internship | public professional profile | does not prove access to IREA/Meridian records or knowledge transfer | recruitment route, team, projects, systems access and preservation |
+| 29 Jul 2026 | Fernando Aguiar Acosta / Colliers hotel-finance team | publicly reported participation in unrelated €43.5m financing secured by two four-star hotels | business-financial media naming the team | corroborates hotel-debt team participation, not Sun Park/Meridian exposure, legacy-record access, family relationship or wrongdoing | own assignments, systems access and preservation only |
 
 ## Attribution tests
 
