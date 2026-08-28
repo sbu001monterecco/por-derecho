@@ -130,22 +130,29 @@ Repository main, Pages deployment and exact public readback remain separately re
 ## Canonical identity denominator
 
 The 27-August Magistrate López Villarrubia / Meeting Point specialist release
-admitted ten additional immutable records. Source JSON, static registry pages
-and the exact public-edge readback are synchronized at 204. The earlier
-194-record snapshot remains historical deployment evidence.
+admitted ten additional immutable records and was exactly read back at 204.
+The present local 28-August Community/LPH continuity candidate adds
+Construcciones Acos-Matos, S.L.^, preserves the previously reserved Juan José
+Vera Díaz^ ID in the master index, and adds the distinct Javier Acosta Matos^
+and Gerardo Zacarías Acosta Matos^ person records. This produces a local
+source/static denominator of 208. That 208-record state is **not yet
+live-verified**. The 204- and earlier
+194-record snapshots remain historical deployment evidence.
 
 | Class | Count |
 |---|---:|
-| People | 87 |
-| Organisations | 71 |
+| People | 90 |
+| Organisations | 72 |
 | Structures | 10 |
 | Institutions | 18 |
 | Proceedings | 18 |
-| **Total** | **204** |
+| **Total** | **208** |
 
-These counts control in the canonical JSON, both public pages, metadata, JSON-LD
-and no-JavaScript fallbacks, and are live-verified. The 194-ID and prior 185-ID
-readbacks remain historical deployment evidence. Archive backfill remains open. Identity resolves identity
+These counts control in the local canonical JSON, both static public pages,
+metadata, JSON-LD and no-JavaScript fallbacks. They require later authorised
+publication and exact readback before they can be called live-verified. The
+204-ID, 194-ID and prior 185-ID readbacks remain historical deployment evidence.
+Archive backfill remains open. Identity resolves identity
 only; it does not transfer knowledge, intention, control, benefit,
 responsibility or liability.
 

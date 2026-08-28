@@ -10,7 +10,7 @@ A separate **5 March 2018 LinkedIn direct-message exchange** concerning Sun Park
 
 The reviewed screenshots record a direct commercial approach to a LinkedIn profile labelled **Juan José Vera Díaz**. In the exchange, the respondent presented himself as able to evaluate or negotiate hotel leases, management arrangements or acquisitions in the Canary Islands, described himself as president of the board of the relevant Canary Islands companies, supplied a Meeting Point Spain corporate-domain contact address, requested evidence of authority before receiving price and commercial terms, and proposed an NDA. Gil Marer then identified **Aweswell Ltd / Hotel Sun Park, Playa Blanca** as the NDA counterparty. Follow-up LinkedIn messages continued later in March 2018.
 
-The person identity is now reconciled in CAEPR as **Juan José Vera Díaz^ (`PD-SP-P-0088`)** for the CAIC ↔ FTI / Meeting Point context. The identity confirmation is controlled separately in `archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md`.
+The person identity is now reconciled in CAEPR as **Juan José Vera Díaz^ (`PD-SP-P-0092`)** for the CAIC ↔ FTI / Meeting Point context. The identity confirmation is controlled separately in `archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md`.
 
 This is a **primary contemporaneous communication lane** for the narrow proposition that a direct Sun Park/Aweswell commercial contact with Juan José Vera Díaz^ using a Meeting Point Spain corporate-domain address existed by 5 March 2018, subject to the separate native-screenshot authentication boundary.
 
@@ -20,7 +20,7 @@ It does **not**, without additional evidence, establish unlawful participation, 
 
 Future threads must keep the following evidence families distinct:
 
-1. **5 March 2018 LinkedIn screenshots** — direct contemporaneous commercial communication; primary source for the narrow contact/knowledge proposition above. The person label resolves to **Juan José Vera Díaz^ (`PD-SP-P-0088`)**; the screenshots themselves still require native-source re-verification if a stronger proposition is sought.
+1. **5 March 2018 LinkedIn screenshots** — direct contemporaneous commercial communication; primary source for the narrow contact/knowledge proposition above. The person label resolves to **Juan José Vera Díaz^ (`PD-SP-P-0092`)**; the screenshots themselves still require native-source re-verification if a stronger proposition is sought.
 2. **8 May 2018 private-investigator report** — separate investigative/intelligence material already represented publicly in anonymised form. It is not the March LinkedIn evidence and must not be used as a substitute for it.
 3. **25 February 2019 OneDrive filename / memory metadata** — a later filename-based investigative lead only. A filename does not authenticate the people shown, the capture date, office, relationship, project role, friendship or wrongdoing.
 4. **12 June 2020 contemporaneous email memorialisation** — a same-day written record by Gil Marer / Patricia Domínguez of what Enrique Delia Conde was reported to have said about CAM and Juan José Vera Díaz / Meeting Point. It is a contemporaneous testimonial lead and potential corroboration route, but it is not a signed statement by Enrique and not direct evidence from Vera.
@@ -49,7 +49,7 @@ The earlier uploaded screenshots are no longer directly loadable in the current 
 
 ## 5. CAEPR / caret (`^`) boundary
 
-**Juan José Vera Díaz^ (`PD-SP-P-0088`) is CARET_CONFIRMED for person identity in the CAIC ↔ FTI / Meeting Point context.**
+**Juan José Vera Díaz^ (`PD-SP-P-0092`) is CARET_CONFIRMED for person identity in the CAIC ↔ FTI / Meeting Point context.**
 
 The confirmation satisfies the repository person threshold through multiple compatible public attributes: official Ayuntamiento de Pájara Meeting Point representation in 2017, official BORME Meeting Point Spain corporate record in 2021, independent FTI / Meeting Point professional listings, and the current CAIC biography's FTI career continuity.
 
@@ -63,7 +63,7 @@ Where a chat uses `^` informally to mean "the material above", do not automatica
 
 For any future thread involving **Juan José Vera Díaz, Meeting Point, Labranda, Sun Park, Aweswell, pre-7-June-2018 access/project preparation, Lava Verde, Club Sei, CAM, FTI, CAIC or the Meeting Point Spain 357/2024 lane**:
 
-1. resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0088`)**;
+1. resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0092`)**;
 2. read this control and `archive/CAEPR_JUAN_JOSE_VERA_DIAZ_IDENTITY_CONFIRMATION_27AUG2026.md` before drawing chronology or role conclusions;
 3. preserve the 5-Mar / 8-May / 25-Feb-2019 / 12-Jun-2020 source separation;
 4. treat the March evidence as direct commercial contact, not as proof of later wrongdoing;
@@ -90,7 +90,7 @@ For any future thread involving **Juan José Vera Díaz, Meeting Point, Labranda
 
 **Reasoning continuity:** CAPTURED.  
 **Canonical routing:** CAPTURED by this control.  
-**Juan José Vera Díaz identity:** CARET_CONFIRMED — `PD-SP-P-0088`.  
+**Juan José Vera Díaz identity:** CARET_CONFIRMED — `PD-SP-P-0092`.
 **Native March screenshot custody/re-verification:** OPEN.  
 **Exact date-specific Meeting Point/FTI/CAIC capacities:** SOURCE-SPECIFIC / KEEP SEPARATE.  
 **Actual deletion established:** NO.  

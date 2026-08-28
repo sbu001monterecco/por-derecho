@@ -16,7 +16,7 @@
   "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 7,
   "public_pdf_page_count": 8,
-  "source": {
+    "source": {
     "filename": "copia digital de trabajo",
     "bytes": 3369527,
     "sha256": "bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e",
@@ -24,14 +24,24 @@
     "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
     "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
     "native_publication": false,
-    "variants_recorded": 1
-  },
+        "variants_recorded": 1
+    },
+    "acquisition_provenance": {
+        "attributed_source": "Gil Marer direct statement dated 2026-08-28 / Declaration 017",
+        "route": "No invitation or pre-meeting knowledge; indirect post-meeting ACTA forwarding by the Thompson family; no direct Community ACTA communication received.",
+        "status": "ATTRIBUTED_DIRECT_ACCOUNT_NATIVE_FORWARDING_MESSAGE_NOT_YET_CONTROLLED",
+        "native_forwarding_message": "OPEN_OUTSIDE_PUBLIC_REPOSITORY",
+        "exact_timestamp_and_timezone": "OPEN",
+        "upstream_distribution_to_thompson": "OPEN",
+        "attachment_to_controlled_copy_hash_bridge": "OPEN",
+        "boundary": "The route does not by itself prove the lawful recipient, statutory service failure, deliberate exclusion or criminal intent. The controlled binary is not yet asserted to be the exact native forwarded attachment."
+    },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2022-02-04/transcript-es.md",
     "provenance": "evidence/community/actas/2022-02-04/provenance.md",
     "redaction_log": "evidence/community/actas/2022-02-04/redaction-log.md",
     "pdf": "assets/docs/community-actas/2022-02-04-public-redacted-es.pdf",
-    "pdf_sha256": "81db4fac3ae47d4231dc36bc2beaf27f5463f0d8860a30e314f84dfce1bffc43",
+    "pdf_sha256": "45b8d97751feed506640af0da20d298f61ac3b721f98ca0d79a803e5c47239f0",
     "pdf_pages": 8,
     "preview_pages": [
       "assets/evidence/community-actas/2022-02-04/page-001.jpg",

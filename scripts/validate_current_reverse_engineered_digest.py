@@ -28,6 +28,15 @@ UNITARY_CARET = ROOT / "assets" / "data" / "caepr-caret-unitary-digest-v1.json"
 REGISTRY = ROOT / "assets" / "data" / "matter-identity-registry-v1.json"
 
 CURRENT_IDENTITY_COUNTS = {
+    "total": 214,
+    "PERSON": 94,
+    "ORGANISATION": 74,
+    "STRUCTURE": 10,
+    "INSTITUTION": 18,
+    "PROCEEDING": 18,
+}
+
+LAST_LIVE_IDENTITY_COUNTS = {
     "total": 204,
     "PERSON": 87,
     "ORGANISATION": 71,
@@ -136,7 +145,7 @@ assert state["source_base"]["main_sha"] == "8e8e83c5a337846245a942222efbc3120645
 for key, value in CURRENT_IDENTITY_COUNTS.items():
     assert state["identity_registry"][key] == value
 assert state["identity_registry"]["archive_backfill"] == "OPEN"
-assert state["identity_registry"]["last_live_verified_counts"] == CURRENT_IDENTITY_COUNTS
+assert state["identity_registry"]["last_live_verified_counts"] == LAST_LIVE_IDENTITY_COUNTS
 assert registry["counts"] == CURRENT_IDENTITY_COUNTS
 assert state["caret_scope"]["control_id"] == unitary_caret["control_id"]
 assert state["caret_scope"]["control_file"] == "assets/data/caepr-caret-unitary-digest-v1.json"
@@ -558,7 +567,7 @@ if historical_manifest["current_state"] == "LIVE_VERIFIED":
 print("CURRENT REVERSE-ENGINEERED DIGEST: PASS")
 print(" - control:", state["control_id"])
 print(" - source base:", state["source_base"]["main_sha"])
-print(" - source/static identity denominator: 204 / 87 / 71 / 10 / 18 / 18")
+print(" - source/static identity denominator: 214 / 94 / 74 / 10 / 18 / 18")
 print(" - current live-verified identity snapshot: 204 / 87 / 71 / 10 / 18 / 18")
 print(" - caret scope: 19/24; old 24/24 package superseded")
 print(" - separate Magistrate López Villarrubia / Meeting Point scope: 25/32 partial; unitary scope unchanged")

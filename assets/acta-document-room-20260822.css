@@ -199,6 +199,53 @@
 .acta-convener p,
 .acta-basis p { margin: 0; }
 
+.acta-analysis-stats {
+  display: grid;
+  gap: .85rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1.25rem 0;
+}
+
+.acta-analysis-stats article,
+.acta-two-basket article {
+  background: #fff;
+  border: 1px solid #d5dfda;
+  border-radius: .85rem;
+  padding: 1rem;
+}
+
+.acta-analysis-stats span,
+.acta-analysis-stats strong { display: block; }
+.acta-analysis-stats span { color: #64757a; font-size: .72rem; font-weight: 750; letter-spacing: .055em; text-transform: uppercase; }
+.acta-analysis-stats strong { color: #173840; font-size: 1.35rem; margin: .25rem 0 .45rem; }
+.acta-analysis-stats p { color: #41565d; font-size: .84rem; line-height: 1.5; margin: 0; }
+
+.acta-two-basket {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.25rem 0;
+}
+
+.acta-two-basket article:first-child { border-top: .3rem solid #27734d; }
+.acta-two-basket article:last-child { border-top: .3rem solid #9a493f; }
+.acta-two-basket h3 { color: #173840; font-size: 1.12rem; margin: 0 0 .55rem; }
+.acta-two-basket p { margin: 0; }
+.acta-actor-table small { color: #607178; }
+
+.acta-criminal-boundary {
+  background: #fff8e5;
+  border: 1px solid #e3c978;
+  border-left: .35rem solid #a87318;
+  border-radius: .8rem;
+  color: #3d3017;
+  line-height: 1.6;
+  margin: 1.25rem 0;
+  padding: 1rem 1.15rem;
+}
+
+.acta-criminal-boundary strong { color: #6c480b; }
+
 .acta-full-ocr {
   background: #f8faf9;
   border: 1px solid #d8e1dc;
@@ -410,6 +457,8 @@
   .acta-room-hero-grid,
   .acta-event-hero-grid,
   .acta-fact-grid,
+  .acta-analysis-stats,
+  .acta-two-basket,
   .acta-record-body { grid-template-columns: 1fr; }
   .acta-room-controls { grid-template-columns: 1fr 1fr; position: static; }
   .acta-room-count { justify-content: start; }

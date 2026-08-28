@@ -1,0 +1,831 @@
+{
+  "schema_version": "1.0",
+  "control_id": "PD-SP-POST7J-20260828-01",
+  "generated": "2026-08-28",
+  "status": "canonical-unitary-analysis-not-a-judicial-finding",
+  "public_owner": {
+    "es": "es/toma-control-sun-park-7-junio-2018/index.html",
+    "en": "en/sun-park-takeover-7-june-2018/index.html"
+  },
+  "execution_prompt": "archive/prompts/SUN_PARK_POST7JUNE_2018_TO_2022_DELIBERATE_EXCLUSION_UNITARY_CRIMINAL_REVERSE_ENGINEERING_PROMPT_28AUG2026.md",
+  "attributed_theory": "Gil Marer states that no invitation or pre-meeting knowledge of the 4-February-2022 meeting reached his relevant perimeter and that no direct Community ACTA communication was received; he states that the Thompson family forwarded the ACTA indirectly only after the meeting. Gil and Aweswell allege that later actors separately adopted or extended a post-7-June-2018 control mechanism across insolvency-estate and non-estate rights and deliberately concealed the meeting until it was held. Every actor, act, offence element, knowledge state, causal contribution and defence remains separate; the native forwarding route and intentional non-notice are not established by the current ACTA copy.",
+  "not_arithmetic_rule": "The case is not proved by adding the Community works budget, RICPE/RIC finance, eligible investment, subsidy, FEDER support or revenue. The test is whether materially overlapping units, works, invoices, jobs, authority and value were knowingly reused, inconsistently described, insufficiently disclosed or claimed across separate legal tracks, and whether a specific false act caused a patrimonial or public-funds decision.",
+  "caepr_scope_audit": {
+    "scope": "Combined four-sibling published-image set plus Javier Acosta Matos / Construcciones Acos-Matos, S.L. / Comunidad de Propietarios Sun Park meeting triad; Javier overlaps both subscopes",
+    "denominator": 6,
+    "confirmed": 6,
+    "coverage_percent": 100,
+    "result": "ALL IS^ — VERIFIED FOR THIS SIX-OBJECT COMBINED SCOPE ONLY",
+    "legend": "Caret confirms canonical identity only; it does not establish capacity, conduct, knowledge, intention, coordination, benefit or liability.",
+    "subscopes": [
+      {
+        "scope": "4-February meeting triad",
+        "denominator": 3,
+        "confirmed": 3
+      },
+      {
+        "scope": "published-image sibling set",
+        "denominator": 4,
+        "confirmed": 4,
+        "position_boundary": "Positions in the image are Gil Marer's express attribution, not a facial-recognition or caret conclusion."
+      }
+    ],
+    "objects": [
+      {
+        "display": "José Daniel Acosta Matos^",
+        "caepr_id": "PD-SP-P-0011",
+        "state": "CARET_CONFIRMED"
+      },
+      {
+        "display": "Laura Patricia Acosta Matos^",
+        "caepr_id": "PD-SP-P-0012",
+        "state": "CARET_CONFIRMED"
+      },
+      {
+        "display": "Javier Acosta Matos^",
+        "caepr_id": "PD-SP-P-0093",
+        "state": "CARET_CONFIRMED"
+      },
+      {
+        "display": "Gerardo Zacarías Acosta Matos^",
+        "caepr_id": "PD-SP-P-0094",
+        "state": "CARET_CONFIRMED"
+      },
+      {
+        "display": "Construcciones Acos-Matos, S.L.^",
+        "caepr_id": "PD-SP-O-0074",
+        "state": "CARET_CONFIRMED"
+      },
+      {
+        "display": "Comunidad de Propietarios Sun Park^",
+        "caepr_id": "PD-SP-O-0005",
+        "state": "CARET_CONFIRMED"
+      }
+    ]
+  },
+  "boundaries": [
+    "A continuing consequence is not automatically a continuing offence.",
+    "Luchy Playa Blanca, S.L.U. was the debtor in Concurso 36/2012; Matkator, S.L.U. and third-party property were outside LPB's estate.",
+    "De facto material, access and operational control is source-supported; whole-hotel legal possession by CAM was not judicially delivered.",
+    "The 2018 provisional dismissal and appellate confirmation are mandatory adverse procedural evidence.",
+    "Later title does not retroactively validate earlier control, works, debt, voting or extraconcursal acts.",
+    "A 20.993% attendance figure and publicly visible non-LPB/non-Matkator representatives do not prove deliberate non-notice or concealment.",
+    "The repository presently contains the located seven-page ACTA copy, not the native 4-February convocation/invitation and owner-by-owner service package.",
+    "Gil's corrected account is no direct invitation or ACTA communication followed by indirect post-meeting Thompson forwarding; it is not a claim that the ACTA was never obtained, and the native forward/upstream distribution remain open.",
+    "The alleged pattern from at least 2016 applies to particular meetings or attempts and must be tested event by event; the known and attended 26-April-2016 meeting prevents a universal concealment formulation.",
+    "A procedurally defective call or failed service does not by itself prove criminal intent; attribution requires an identified actor, knowledge, purpose, use and legally relevant effect.",
+    "The published four-sibling image is a preservation and knowledge-inquiry lead; it does not by itself prove Sun Park content, the photograph date, notice knowledge, agreement or an offence.",
+    "RICPE/RIC, regional incentives, FEDER and owner contributions are separate legal and accounting tracks; blended finance can be lawful.",
+    "‘Hotel mobbing’ is Gil/Aweswell's attributed umbrella label, not a standalone offence; every episode requires its own historical offence elements and actor-specific proof.",
+    "LPB assets were formally subject to insolvency-administration and judicial-supervision safeguards whose practical effectiveness is disputed; this is a protection architecture, not a guarantee. Matkator remained outside it.",
+    "De facto administrator or shadow-director status is not established by influence, office, kinship or benefit alone; discrete functional control and the full date-specific legal test must remain separate."
+  ],
+  "canonical_propositions": [
+    {
+      "id": "AUTH-2018-001",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "The 18 May 2018 Owners' Community minutes record an LPB/insolvency-administration-linked security and access proposal but do not facially transfer whole-hotel possession to CAM."
+    },
+    {
+      "id": "OWN-2018-001",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "Concurso 36/2012 concerned LPB and did not absorb the entire mixed-ownership Sun Park hotel, Matkator property or every operating right."
+    },
+    {
+      "id": "FUND-2018-001",
+      "status": "STRONGLY_SUPPORTED",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "The ONA-centred operating and financed-exit architecture was integrated and developed; completion, condition satisfaction and precise non-closing causation remain open."
+    },
+    {
+      "id": "ACTA-2022-001",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "A located seven-page copy records a 4 February 2022 Owners' Community meeting approving the sole CAM/JDAM project, licence actions, common works and unitary operation; it is not the diligenced original or a certified copy."
+    },
+    {
+      "id": "VOTE-2022-001",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "The 4 February 2022 copy records 20.993% present or represented; complete notice, ownership, powers, proxy, vote, abstention and conflict validity remain open."
+    },
+    {
+      "id": "DEBT-2022-001",
+      "status": "VERIFIED_WITH_LIMITATION",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "The controlled owner-annex reading attributes EUR 1,199,729.12 Community debt and EUR 3,260,416.81 of the works levy to LPB; root-of-debt and enforceability remain open."
+    },
+    {
+      "id": "OWN-2022-001",
+      "status": "CONTESTED",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "The meeting calls CAM the principal interested majority owner while the controlled allocation still uses LPB's 72.976% coefficient, creating an ownership-date and authority contradiction requiring reconciliation."
+    },
+    {
+      "id": "NOTICE-2022-001",
+      "status": "PARTY_ALLEGATION_OPEN",
+      "publication_status": "PUBLIC-READY-WITH-ATTRIBUTION-AND-QUALIFICATION",
+      "proposition": "Gil Marer states that no invitation or pre-meeting knowledge reached his relevant perimeter and alleges that call design, selective or omitted service, concealment until after the meeting, resolutions, ACTA construction, no direct communication and later use formed one deliberate exclusion sequence directed against LPB/Matkator/Aweswell-side interests. The located ACTA proves what was recorded as a decision instrument; the current repository lacks the native invitation/service package and does not yet establish the lawful recipient, service failure, identified human act or intent."
+    },
+    {
+      "id": "RECEIPT-2022-001",
+      "status": "DIRECT_GIL_ACCOUNT_NATIVE_ROUTE_OPEN",
+      "publication_status": "PUBLIC-READY-WITH-ATTRIBUTION-AND-QUALIFICATION",
+      "proposition": "Gil Marer states that the Thompson family forwarded the ACTA to his perimeter only after the meeting. This corrects any claim that the ACTA was never obtained: the controlled allegation is no direct Community communication followed by indirect third-party receipt. Native message, exact time, upstream distribution and attachment hash comparison remain open."
+    },
+    {
+      "id": "IMAGE-2021-001",
+      "status": "ATTRIBUTED_IDENTIFICATION_WITH_STRICT_LIMIT",
+      "publication_status": "PUBLIC-READY-WITH-ATTRIBUTION-AND-QUALIFICATION",
+      "proposition": "Gil Marer identifies the published image left-to-right as Javier, Laura Patricia, José Daniel and Gerardo Zacarías Acosta Matos. Independent corporate records corroborate that the four named people occupied governance roles in the relevant corporate perimeter, but do not identify the pixels. The image supports preservation and prior-knowledge inquiry, not a finding of deliberate exclusion, agreement or criminality."
+    },
+    {
+      "id": "FUNDING-2022-001",
+      "status": "MULTITRACK-RECONCILIATION-OPEN",
+      "publication_status": "PUBLIC-READY-WITH-QUALIFICATION",
+      "proposition": "Community cost allocation, RICPE/RIC finance, regional incentives, FEDER and current operation are separate legal tracks. Their evidentiary significance depends on unit/work/invoice/job/authority overlap and disclosure, not arithmetic aggregation."
+    }
+  ],
+  "omnidirectional_enablement_map": {
+    "status": "ATTRIBUTED_PROSECUTION_THEORY_WITH_DOCUMENTED_NODES_AND_OPEN_CAUSAL_BRIDGES",
+    "attribution": "Gil Marer and Aweswell allege that preparation, selective exclusion, meeting, resolutions, ACTA construction, lack of direct Community communication and later use formed one enabling episode in a longer post-7-June-2018 sequence.",
+    "connector_rule": "Every connector is a bridge to prove in both directions: fact to use/effect, and result back to the document, custodian and natural person expected to explain it. A connector does not establish agreement, intent, causation, offence or collective guilt.",
+    "incoming_tracks": [
+      {
+        "id": "IN-MATERIAL-CONTROL",
+        "label": "Material control and attributed hotel mobbing",
+        "status": "PARTY_ALLEGATION_WITH_DOCUMENTED_COMPONENTS",
+        "test": "Access/security, guest and operational displacement, cashflow, damage or works, ONA exit frustration and reduced defensive capacity from 2018."
+      },
+      {
+        "id": "IN-PROPERTY-PERIMETERS",
+        "label": "LPB inside insolvency; Matkator outside",
+        "status": "DOCUMENTED_WITH_UNIT_LEVEL_EFFECT_OPEN",
+        "test": "Keep insolvency-estate authority, extraconcursal title, unit-by-unit possession, consent, works and income separate."
+      },
+      {
+        "id": "IN-COMMUNITY-FUNCTIONS",
+        "label": "Allegedly captured Community and de facto functional control",
+        "status": "DOCUMENTED_FUNCTIONS_LEGAL_CHARACTERISATION_OPEN",
+        "test": "Map debt, vote, notice, security, access, maintenance, banking and custody to natural persons, dates, instructions and benefit."
+      },
+      {
+        "id": "IN-PRE-TITLE-PROJECT",
+        "label": "Project and finance preparation before full LPB title",
+        "status": "DOCUMENTED_LEADS_KNOWLEDGE_BRIDGE_OPEN",
+        "test": "Produce pilots, plans, image provenance, RICPE files, board packs and source communications without treating them as proof of notice knowledge."
+      }
+    ],
+    "hub_sequence": [
+      "prepare project, title, owner/coefficient, debt and budget materials",
+      "design the call, agenda, first/second call and lawful-recipient list",
+      "serve or omit notice and record returns, noticeboard, powers, conflicts and attendance",
+      "resolve debt, levy, CAM project, licences, banking and unitary operation",
+      "construct and close the ACTA, recitals, majority, votes, signatures and book entry",
+      "communicate directly, withhold, circulate through Thompson or use in certificates, litigation, title, works and finance"
+    ],
+    "outgoing_tracks": [
+      {
+        "id": "OUT-LPH-PROCEDURE",
+        "label": "LPH and procedural portability",
+        "status": "SERVICE_AND_USE_CHAIN_OPEN",
+        "test": "Trace notice, debt/vote, absent-owner assent, ACTA communication, challenge time, certificate, collection and litigation use."
+      },
+      {
+        "id": "OUT-INSOLVENCY-DEED",
+        "label": "Procedural or insolvency fraud hypothesis and deed no. 457",
+        "status": "TEMPORAL_LINK_DOCUMENTED_CAUSATION_OPEN",
+        "test": "Identify a materially false or omitted proposition, actor, use, induced error or decision, harm, benefit and the precise seventeen-day causal bridge."
+      },
+      {
+        "id": "OUT-FUNDING",
+        "label": "RICPE/RIC, regional incentive and FEDER",
+        "status": "SEPARATE_TRACKS_CROSSWALK_OPEN",
+        "test": "Cross-match property, works, invoices, jobs, title/authority representations, other support, payments, certifications and beneficiary; never add heterogeneous amounts as proof."
+      },
+      {
+        "id": "OUT-BENEFIT",
+        "label": "CAM to HNT to MYND value and benefit",
+        "status": "TRACEABLE_ECONOMIC_SUCCESSION_LIABILITY_SEPARATE",
+        "test": "Trace assets, liabilities, works, operation, revenue and distributions without automatically transferring intent, corporate crime or successor guilt."
+      }
+    ],
+    "hotel_mobbing_boundary": "Attributed umbrella description only, not an autonomous criminal offence. Each alleged act must separately satisfy the applicable historical offence and participation elements.",
+    "judicial_safeguards_language": "LPB assets formally subject to insolvency-administration and judicial-supervision safeguards, whose practical effectiveness is disputed. This is a protection architecture, not a guaranteed outcome; Matkator remained outside it.",
+    "de_facto_administrator_boundary": "The record supports inquiry into control of discrete functions. Full de facto administrator or shadow-director characterisation requires stable autonomous management or habitual decisive influence, instructions followed, continuity, knowledge, capacity, benefit and the date-specific legal test.",
+    "lawful_alternative": "Valid common or necessary works may lawfully be allocated by coefficient while CAM bears only the additional four-star upgrade; valid blended finance, title timing, stale records, delegation, independent advice and service error remain alternatives to test."
+  },
+  "meeting_2022_02_04": {
+    "source_id": "SP-ACTA-2022-02-04",
+    "date": "2022-02-04",
+    "days_before_deed_457": 17,
+    "present_or_represented_percent": 20.993,
+    "total_necessary_common_works_eur": 4467793.26,
+    "publicly_visible_corporate_representations": [
+      {
+        "representative_source_literal": "Javier Acosta Matos",
+        "controlled_name": "Javier Acosta Matos",
+        "display_name": "Javier Acosta Matos^",
+        "caepr_id": "PD-SP-P-0093",
+        "caret_state": "CARET_CONFIRMED",
+        "entity": "Construcciones Acos-Matos, S.L.",
+        "entity_display": "Construcciones Acos-Matos, S.L.^",
+        "entity_caepr_id": "PD-SP-O-0074",
+        "entity_caret_state": "CARET_CONFIRMED"
+      },
+      {
+        "representative_source_literal": "Laura Acosta Matos",
+        "controlled_name": "Laura Patricia Acosta Matos",
+        "entity": "Construcciones Acosta Matos, S.A."
+      },
+      {
+        "representative_source_literal": "José Acosta Matos",
+        "controlled_name": "José Daniel Acosta Matos",
+        "entity": "Proyectos Acosta Matos, S.L."
+      }
+    ],
+    "attendance_boundary": "These are the three corporate representations retained on public source page 2; the remaining nominal attendee list is redacted and complete notice, powers, proxies, voting rights, abstentions and conflicts remain open.",
+    "lpb": {
+      "coefficient_percent": 72.976,
+      "community_debt_eur": 1199729.12,
+      "works_levy_eur": 3260416.81,
+      "combined_arithmetic_eur": 4460145.93,
+      "combined_arithmetic_boundary": "Arithmetic sum only; not a finding of enforceable debt, double recovery or valid cost allocation."
+    },
+    "matkator": {
+      "coefficient_percent": 0.77,
+      "derived_works_levy_eur": 34402.01,
+      "derivation": "4467793.26 * 0.00770",
+      "boundary": "Derived arithmetic; verify against the withheld owner-level annex before evidential use."
+    },
+    "two_cost_baskets": [
+      {
+        "basket": "necessary_common_works",
+        "stated_treatment": "Community levy allocated owner by owner; payment terms to be studied case by case."
+      },
+      {
+        "basket": "additional_four_star_conversion",
+        "stated_treatment": "CAM offered to undertake the additional conversion at its own cost."
+      }
+    ],
+    "historical_lph_control": {
+      "text_as_of": "2022-02-04",
+      "boe_consolidation": "Modification published 2021-10-06",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1960-10906&p=20211006&tn=0",
+      "article_tests": [
+        {
+          "articles": "3, 5, 7",
+          "test": "private title, common-right quota and unit-by-unit authority/works perimeter"
+        },
+        {
+          "articles": "9.1.e, h, i",
+          "test": "valid general expense plus statutory address, delivery attempt, fallback notice and title-change notice"
+        },
+        {
+          "articles": "10",
+          "test": "whether works were genuinely mandatory common conservation/safety/habitability works rather than private-unit or sponsor upgrade"
+        },
+        {
+          "articles": "13, 14, 20",
+          "test": "valid organs, Community competence, administrator custody and implementation authority"
+        },
+        {
+          "articles": "15.2, 16, 17",
+          "test": "debt-based vote deprivation, call/agenda/service, first or second call and item-specific majority/consent"
+        },
+        {
+          "articles": "17.8, 18, 19",
+          "test": "duly cited absent-owner treatment, later ACTA communication, dissent, challenge timing, signatures and five-year custody"
+        },
+        {
+          "articles": "21",
+          "test": "root debt, approved liquidation, notification, certificate, monitorio use and single-satisfaction account"
+        }
+      ],
+      "attendance_boundary": "20.993% is not automatically invalid because a second call can proceed without first-call quorum; the applicable majority depends on the legal character of each resolution. Unanimity among attendees is not automatically unanimity of all owners."
+    },
+    "post_meeting_indirect_receipt": {
+      "source": "Declaration 017 / direct Gil Marer statement dated 2026-08-28",
+      "status": "DIRECT_ATTRIBUTED_ACCOUNT_NATIVE_FORWARDING_ROUTE_NOT_YET_CONTROLLED",
+      "before_meeting": {
+        "invitation_or_direct_notice_received": false,
+        "meeting_known_to_relevant_gil_aweswell_perimeter": false,
+        "evidential_status": "Gil Marer direct account; lawful-recipient and service proof open"
+      },
+      "after_meeting": {
+        "acta_obtained": true,
+        "route": "indirect forwarding by the Thompson family",
+        "direct_community_communication_received": false,
+        "exact_time": null,
+        "native_message_status": "OPEN",
+        "upstream_distribution_status": "OPEN",
+        "attachment_hash_bridge_status": "OPEN"
+      },
+      "thompson_context": {
+        "relationship": "Gil states that he and the Thompson family remained in contact and had a good relationship; this explains the relay but proves no alignment, knowledge or wrongdoing.",
+        "unit_lead": "bungalow 708 / registered property 8,557",
+        "one_of_twelve_position": "Gil attributes this unit to the reported twelve LPB/Multimatrix disposals.",
+        "title_boundary": "The controlled 9-Jul-2019 record described formalisation as pending; direct conveyance, completion/payment and historic Registry title remain open."
+      },
+      "forensic_significance": [
+        "can date actual knowledge after the meeting and therefore after the attendance/vote opportunity",
+        "separates third-party discovery from direct Community statutory communication",
+        "can identify the circulated ACTA version and become a selective-distribution comparator if the native/upstream chain is authenticated",
+        "does not by itself prove lawful recipient, omission, intent or criminality"
+      ],
+      "pattern_since_2016": {
+        "attribution": "Gil Marer",
+        "allegation": "Certain other meetings or attempted meetings were exclusionary and their existence was deliberately kept from his perimeter from at least 2016.",
+        "scope_boundary": "Event-specific allegation, not every meeting from 2016 onward.",
+        "mandatory_limiting_evidence": "The 26-April-2016 Owners' Community meeting was known to and attended by the LPB/related side.",
+        "decisive_test": "meeting-by-meeting convener, lawful recipient, address, invitation/service, actual-knowledge timing, attendance/proxy, direct/indirect ACTA receipt, challenge, later use, actor and innocent-explanation matrix",
+        "preliminary_event_matrix": [
+          {
+            "event_id": "SP-ACTA-2016-04-26",
+            "classification": "KNOWN_OR_PARTICIPATED_COUNTEREXAMPLE",
+            "current_conclusion": "15-20 April notice chain separately registered; LPB-side objections and Thompson/PwC representation appear; this event cannot support a universal concealment claim."
+          },
+          {
+            "event_id": "SP-MEETING-2016-06-11",
+            "classification": "NON_ORGAN_WORKING_MEETING",
+            "current_conclusion": "Mixed professional working session, not Community or CEXP minutes; do not count it as a concealed organ meeting."
+          },
+          {
+            "event_id": "SP-ACTA-2017-04-07-CEXP",
+            "classification": "KNOWN_PROJECT_SIDE_CEXP_EVENT",
+            "current_conclusion": "LPB, Matkator and Thompson representation through Gil in the separate CEXP lane; not Owners' Community notice proof."
+          },
+          {
+            "event_id": "SP-ACTA-2017-06-12",
+            "classification": "NOTICE_AND_ACTUAL_KNOWLEDGE_OPEN",
+            "current_conclusion": "Located adverse-lane ACTA; invitation, service, Gil/Aweswell actual-knowledge date and ACTA route remain open."
+          },
+          {
+            "event_id": "SP-ACTA-2018-05-18",
+            "classification": "NOTICE_AND_ACTUAL_KNOWLEDGE_OPEN",
+            "current_conclusion": "Security/access proposal linked to LPB/insolvency-administrator requests shows institutional linkage, not service to Gil/Aweswell."
+          },
+          {
+            "event_id": "SP-ACTA-2018-07-05",
+            "classification": "NOTICE_AND_ACTUAL_KNOWLEDGE_OPEN",
+            "current_conclusion": "Source reference to Gil's complaint does not prove invitation, attendance or direct ACTA receipt."
+          },
+          {
+            "event_id": "SP-RECITAL-2018-11-20",
+            "classification": "RECITAL_ONLY_EVENT_UNPROVED",
+            "current_conclusion": "No independent notice or minutes located; formal event, notice, attendance and wording remain unproved."
+          },
+          {
+            "event_id": "SP-ACTA-2022-02-04",
+            "classification": "DIRECT_ATTRIBUTED_NO_PREKNOWLEDGE_INDIRECT_POST_MEETING_RECEIPT",
+            "current_conclusion": "Gil states no invitation/pre-meeting knowledge and indirect Thompson forwarding afterward; native service/forwarding proof and intent remain open."
+          }
+        ],
+        "matrix_boundary": "One direct attributed non-knowledge example, known/participated counterexamples, open notice routes and one recital-only event support production but do not yet prove a repeated criminal method."
+      }
+    },
+    "deliberate_non_notice_hypothesis": {
+      "attribution": "Gil Marer and Aweswell",
+      "allegation": "The relevant LPB/Matkator/Aweswell-side interests were intentionally kept unaware of the meeting until after it was held, no direct Community ACTA communication was received, and indirect Thompson forwarding occurred only afterward, allegedly preventing attendance, voting, timely dissent, evidence preservation and resistance to implementation.",
+      "status": "SERIOUS_FALSIFIABLE_PARTY_ALLEGATION_NOT_ESTABLISHED",
+      "confirmed": [
+        "located copy records 20.993% present or represented",
+        "three public corporate representations are not LPB or Matkator",
+        "remaining nominal attendee list is publicly redacted"
+      ],
+      "not_confirmed": [
+        "complete absence of LPB or Matkator from the unredacted attendee/proxy list",
+        "identity of the legally correct notice recipient for each unit-owning entity",
+        "failure of statutory service",
+        "failure of direct Community communication of the closed ACTA",
+        "native Thompson forwarding route, exact post-meeting actual-knowledge time and upstream distribution",
+        "intent to conceal or prevent challenge"
+      ],
+      "entity_boundaries": {
+        "LPB": "unit owner/debtor inside Concurso 36/2012; identify the insolvency representative and statutory notice address",
+        "Matkator": "separate extraconcursal unit owner with its own notice, vote, challenge and remedy route",
+        "Aweswell": "shareholder/cross-border interest; shareholding alone is not direct LPH owner status",
+        "Gil_Marer": "fact source and capacity-specific rights holder where proved; prior management alone does not establish 2022 LPB representation"
+      },
+      "decisive_ledger": "owner -> units/quotas -> statutory address -> issuer -> method/time -> delivery/return/fallback -> call -> debt warning -> representative/power -> attendance/vote -> ACTA sent/receipt/dissent -> challenge -> enforcement/use"
+    },
+    "deliberate_exclusion_proof_model": {
+      "question": "What can, does and could prove deliberate exclusion?",
+      "does_now": [
+        "The located ACTA proves that a meeting was recorded for 4 February 2022 with 20.993% present or represented and records resolutions on debt, the sole CAM/JDAM project, common works, licences and unitary operation.",
+        "Its visible company representatives are Javier Acosta Matos for Construcciones Acos-Matos, Laura Acosta Matos for CAM and José Acosta Matos for Proyectos Acosta Matos; the remaining public attendee names are redacted.",
+        "The timing is 17 days before deed 457 of 21 February 2022, and the ACTA is therefore capable of being tested as an implementation instrument rather than treated as an isolated arithmetic record.",
+        "Separately from the ACTA, Gil Marer's direct account states no invitation or pre-meeting knowledge and indirect Thompson-family forwarding of the ACTA only after the meeting; the native relay evidence remains open."
+      ],
+      "does_not_now": [
+        "The ACTA is not the native invitation, owner address list, service certificate, returned-mail record, fallback-notice record or post-meeting ACTA delivery ledger.",
+        "The redacted public attendee list cannot exclude an LPB or Matkator proxy.",
+        "Low attendance, aligned visible attendance, an irregularity, lack of direct communication or third-party receipt alone cannot identify the human decision-maker or prove criminal intent."
+      ],
+      "capable_of_proving_intent_when_convergent": [
+        "proof of the legally correct LPB and Matkator notice recipients and statutory addresses known to the convener or administrator",
+        "native owner-list versions, mail merge, email headers, postal certificates, delivery/return records and notice-board fallback demonstrating selective service or deliberate omission",
+        "instructions, messages, minutes or admissions showing a purpose to prevent attendance, dissent, challenge, evidence preservation or resistance",
+        "false or knowingly incomplete notice and attendance recitals, altered owner/proxy data or retrospective ACTA construction",
+        "selective or absent direct distribution of the closed ACTA, authenticated Thompson forwarding/upstream distribution and later use before the affected interests could attend, dissent or challenge effectively",
+        "rapid, coordinated downstream use in debt, licence, works, title, finance, subsidy or unitary-operation steps consistent with the disclosed purpose",
+        "absence of a credible innocent explanation after testing wrong-address, insolvency-representation, delegated-service and administrative-error alternatives"
+      ],
+      "unitary_sequence": [
+        "pre-existing project, title, works and finance knowledge",
+        "call design and selection of recipient list, agenda, date and service route",
+        "service, selective service or omission",
+        "meeting attendance, powers, conflicts and votes",
+        "resolutions reallocating authority, debt, costs, licences and operation",
+        "ACTA drafting, recitals, signatures, closing, direct distribution or non-distribution, third-party relay and actual-knowledge timing",
+        "later use in enforcement, works, title, financing, public-aid, operating or benefit channels"
+      ],
+      "criminal_boundary": "If actor-specific knowledge, purpose, false representation or abuse of entrusted power and a legally relevant patrimonial, procedural or public-funds effect are proved, the sequence may support offence analysis. A civil/LPH defect, association, surname, office or numerical coincidence does not itself establish a crime. No future fact can be guaranteed to prove intent; the issue is whether the convergent package excludes innocent failure to the applicable standard."
+    },
+    "ownership_cost_fork": {
+      "recorded_tension": "The ACTA describes CAM as the principal interested majority owner while the controlled annex still allocates LPB a 72.976% coefficient, EUR 1,199,729.12 Community debt and EUR 3,260,416.81 of the stated works levy.",
+      "if_cam_was_not_yet_majority": "Test whether the premise, sponsorship, authority, conflicts and representations were premature or materially inaccurate before deed 457.",
+      "if_cam_was_already_majority_or_economically_controlled_the_units": "Reconcile why LPB remained the dominant coefficient/debt/levy bearer, who held title on the accrual and resolution dates, and whether control, benefit and cost were intentionally separated.",
+      "matkator_boundary": "Matkator was outside LPB's concurso; any de facto control, debt, levy, works, title or use affecting its units requires a separate source and authority chain.",
+      "not_arithmetic": "The question is not whether figures add up. It is who lawfully owned, controlled, benefited from and was charged for each unit, work and period, under what disclosure and authority."
+    },
+    "strongest_lawful_explanation": "Valid necessary common works may be allocated under lawful Community rules and coefficients while a sponsor pays only incremental upgrades.",
+    "adverse_hypothesis": "The project side may have used disputed authority, debt and voting machinery to shift enabling project costs onto owners already deprived of practical use or income immediately before formal title consolidation.",
+    "decision_records_needed": [
+      "diligenced original and native signatures",
+      "first/second-call notice, agenda, owner-by-owner service/return/fallback and post-meeting ACTA communication",
+      "native Thompson forwarding message, exact timestamp/time zone, upstream distribution, attachment hash comparison and separate source statement",
+      "meeting-by-meeting 2016-2022 notice, actual-knowledge, attendance and ACTA-receipt matrix, preserving the known 26-April-2016 attendance counterexample",
+      "title and coefficient schedule",
+      "attendance, powers and proxies",
+      "vote qualification, abstentions and conflicts",
+      "complete owner debt and levy annexes",
+      "independent common-versus-private/four-star cost allocation",
+      "tender, contract, invoices, payment and related-party margin",
+      "bank mandates and implementation ledger",
+      "Javier Acosta Matos power, vote, board-information, conflict, ACTA distribution and contrary non-participation records"
+    ]
+  },
+  "funding_tracks": [
+    {
+      "track": "owners_community_works_budget_and_levy",
+      "controlled_amount_eur": 4467793.26,
+      "legal_object": "stated necessary/common one-star works budget allocated owner by owner",
+      "not_equivalent_to": "cash received by CAM/HNT, RIC finance, eligible investment or subsidy",
+      "open": "owner billing/payment, contractor, invoices, works and common/private/four-star split"
+    },
+    {
+      "track": "ricpe_ric_hnt_finance",
+      "prospectus_total_eur": 6570713.56,
+      "controlled_audited_reconstruction_eur": 6573703.1,
+      "source_difference_eur": 2989.54,
+      "legal_object": "private investment and RIC materialisation/finance, not an EU grant",
+      "boundary": "The source difference is a reconciliation target, not evidence of wrongdoing.",
+      "open": "Series F/G contracts, RIC allocations, approvals, drawdowns, recipient accounts, use and repayment"
+    },
+    {
+      "track": "ric_tax_and_project_idoneity",
+      "legal_object": "RIC materialisation and tax/project suitability procedure",
+      "boundary": "Separate from regional incentives and FEDER.",
+      "open": "applications, reports, conditions, investor allocations, substitutions, monitoring and corrections"
+    },
+    {
+      "track": "regional_incentives_gc_836_p06",
+      "beneficiary": "Hotel New Trend, S.L.U.",
+      "eligible_project_investment_eur": 11469714.0,
+      "published_subsidy_eur": 3440914.2,
+      "jobs_commitment": 60,
+      "legal_object": "regional/national public incentive award and conditions",
+      "open": "complete decision, eligible costs, other-aid declarations, payment, jobs, audits and recovery"
+    },
+    {
+      "track": "feder",
+      "controlled_anchor": "MYND permanent plaque expressly identifies FEDER",
+      "legal_object": "EU co-financing/control layer",
+      "open": "programme, operation ID, co-financing rate, decision, cost declarations, payment claims, audits and recovery"
+    },
+    {
+      "track": "cam_hnt_mynd_operation",
+      "controlled_anchor": "2022 CAM-to-HNT economic-unit segregation and later MYND operation",
+      "legal_object": "asset/liability transfer, operating value, revenue and benefit trace",
+      "open": "exact units/rights/liabilities, operator contracts, revenue, EBITDA, refinance and distributions"
+    }
+  ],
+  "multiple_financial_lives_test": [
+    "false title, availability or authority representation",
+    "same invoice, quantity, work or payment claimed or charged twice without lawful disclosure/adjustment",
+    "same jobs or FTE output reused under incompatible commitments",
+    "required other-aid, finance, related-party or revenue disclosure omitted",
+    "LPB insolvency or Matkator/third-party perimeter concealed",
+    "conflict or condition bypassed without valid waiver or abstention",
+    "specific false application, certificate, invoice, progress, job, title, judicial or Community document knowingly used",
+    "quantifiable benefit causally traced with legitimate investment, repayment and no-double-recovery deductions"
+  ],
+  "events": [
+    {
+      "date": "2018-06-07",
+      "event": "material_access_operational_control_threshold",
+      "status": "source-supported-with-scope-and-authorship-gaps"
+    },
+    {
+      "date": "2018-06-08/2018-06-20",
+      "event": "ona_funded_exit_continues_under_access_constraint",
+      "status": "integrated-package-supported-causation-open"
+    },
+    {
+      "date": "2018-07-05",
+      "event": "post-event-owners-community-minutes",
+      "status": "located-digitised-copy"
+    },
+    {
+      "date": "2018-11-20",
+      "event": "comprehensive-refurbishment-study-meeting",
+      "status": "later-recital-only-original-not-located"
+    },
+    {
+      "date": "2019-10-24",
+      "event": "non-validation-of-separate-31-property-branch",
+      "status": "signed-order-located-implementation-open"
+    },
+    {
+      "date": "2020-12-18/2021-02-24",
+      "event": "estate-preservation-works-access-and-inspection-dispute",
+      "status": "party-application-counterposition-and-signed-order-located"
+    },
+    {
+      "date": "2021-05-18/2021-10-15",
+      "event": "cam-proposal-approved-and-confirmed",
+      "status": "signed-orders-located-complete-competition-and-implementation-open"
+    },
+    {
+      "date": "2021-07-20/2021-07-21",
+      "event": "ricpe-54-cam-190-lpb-18-third-party-property-record",
+      "status": "controlled-certified-source-not-a-2018-title-schedule"
+    },
+    {
+      "date": "2022-01-26",
+      "event": "clarifying-orders",
+      "status": "signed-orders-located"
+    },
+    {
+      "date": "2022-02-04",
+      "event": "owners-community-project-debt-levy-and-unitary-operation-meeting",
+      "status": "located-copy-not-diligenced-or-certified"
+    },
+    {
+      "date": "2022-02-21",
+      "event": "deed-457-lpb-property-perimeter-to-cam",
+      "status": "primary-deed-located-downstream-registry-accounting-open"
+    },
+    {
+      "date": "2022-later",
+      "event": "cam-to-hnt-economic-unit-segregation",
+      "status": "corporate-source-controlled-exact-assets-liabilities-and-knowledge-open"
+    }
+  ],
+  "javier_acosta_matos": {
+    "display": "Javier Acosta Matos^",
+    "caepr_id": "PD-SP-P-0093",
+    "caret_state": "CARET_CONFIRMED",
+    "identity_boundary": "Identity resolution does not establish meeting power, vote, knowledge, intention, participation, benefit or liability.",
+    "documented_roles": [
+      {
+        "date": "2009-02-05",
+        "role": "director and delegated director of Construcciones Acos-Matos, S.L.",
+        "source": "BORME-A-2009-32-35, entry 84648"
+      },
+      {
+        "date": "2020-08-07",
+        "role": "appointed/reappointed director of Construcciones Acosta Matos, S.A.",
+        "source": "BORME-A-2020-157-35, entry 269436"
+      },
+      {
+        "date": "2021-08-05",
+        "role": "appointed director of Canarian Hospitality, S.L.",
+        "source": "BORME-A-2021-156-35, entry 383950"
+      },
+      {
+        "date": "2022-02-04",
+        "role": "ACTA source literal says representative of Construcciones Acos-Matos, S.L.",
+        "source": "SP-ACTA-2022-02-04, source page 2"
+      }
+    ],
+    "present_procedural_classification": "material witness and document custodian",
+    "reclassification_gate": "Potential investigated-person status requires objective indications tying his own act, knowledge and intent to a candidate offence; a witness must not be used to bypass suspect rights.",
+    "open_tests": [
+      "exact meeting power and corporate authority",
+      "represented units, coefficient and voting rights",
+      "actual vote or abstention on each item",
+      "meeting and ACTA notice knowledge",
+      "project, insolvency, title, budget, RICPE/RIC, incentive and FEDER information received",
+      "LPB/Matkator knowledge and any non-notice role",
+      "conflict, related-party interest and economic benefit",
+      "post-meeting ACTA, certificate, payment and implementation custody/use",
+      "contrary evidence of non-receipt, non-participation, abstention or lawful reliance"
+    ]
+  },
+  "four_sibling_image": {
+    "asset": "assets/acosta-matos-family-hotel-plans.jpg",
+    "mime_type": "image/jpeg",
+    "dimensions_px": "770x420",
+    "sha256": "aad5ebaffddf8211be21468f5936b6b1a0066c631919a43a06e9886a9061cd37",
+    "publication_ceiling": "no later than 2021-02-10 in the controlled RIC Equity / Acosta Matos hotel-renovation source context",
+    "position_source": "Gil Marer express attribution; not facial recognition and not established by the caret",
+    "left_to_right": [
+      {
+        "position": "far left, younger man",
+        "display": "Javier Acosta Matos^",
+        "caepr_id": "PD-SP-P-0093"
+      },
+      {
+        "position": "standing",
+        "display": "Laura Patricia Acosta Matos^",
+        "caepr_id": "PD-SP-P-0012"
+      },
+      {
+        "position": "second from right",
+        "display": "José Daniel Acosta Matos^",
+        "caepr_id": "PD-SP-P-0011"
+      },
+      {
+        "position": "far right, bearded man",
+        "display": "Gerardo Zacarías Acosta Matos^",
+        "caepr_id": "PD-SP-P-0094"
+      }
+    ],
+    "independent_corroboration_boundary": "Official BORME records independently place the four named siblings in the relevant corporate-governance perimeter; they do not identify the image's faces or pixels.",
+    "significance": "Supports targeted preservation and inquiry into project knowledge, document custody and communication channels before the 4-February-2022 meeting.",
+    "does_not_prove": [
+      "that the pictured plans concern Sun Park",
+      "the date the photograph was taken",
+      "who created, opened or understood a pictured document",
+      "knowledge or control of the 4-February invitation",
+      "deliberate exclusion, agreement, common purpose or criminality"
+    ],
+    "keystone_production": "Original and derivative files, EXIF/XMP/IPTC metadata, photographer/editor and publication records, laptop files, pictured plans, document version histories and linked board/project packs."
+  },
+  "actors": [
+    {
+      "name": "Francisco Mario Matos Matas",
+      "capacity": "Community/Pamanil-Pamalexsha administrator continuity; 2022 secretary-administrator/bank lane",
+      "open_test": "debt, vote, custody, notice, bank, security, works-payment, instructions, knowledge and benefit"
+    },
+    {
+      "name": "Antonio Cogolludo Rojas",
+      "capacity": "2018 Community president/security implementation lane",
+      "open_test": "authority, security instructions, payer, spatial reach, post-event ratification and handoff"
+    },
+    {
+      "name": "Shaila María Cogolludo Ramos",
+      "capacity": "treasurer/vote/access-rule and Pamalexsha-linked work lane",
+      "open_test": "accounting, vote, bank, access implementation, knowledge and benefit"
+    },
+    {
+      "name": "José Daniel Acosta Matos",
+      "capacity": "project/RICPE actor; 4 February 2022 chair and project author/explainer",
+      "open_test": "title, project instructions, conflict/abstention, fees, licences, operation and benefit"
+    },
+    {
+      "name": "Laura Patricia Acosta Matos",
+      "capacity": "CAM representative; witness-attributed 7-June operative instruction; 2022 representative",
+      "open_test": "mandate, exact instructions, security/contractor links, vote, title information and intent"
+    },
+    {
+      "name": "Javier Acosta Matos",
+      "display": "Javier Acosta Matos^",
+      "caepr_id": "PD-SP-P-0093",
+      "capacity": "BORME-identified CAM director in 2020 and Canarian Hospitality director in 2021; visible 4 February 2022 representative of Construcciones Acos-Matos, S.L.^",
+      "open_test": "meeting power, title/coefficient, actual vote, notice/ACTA knowledge, project/board information, conflict, records and economic interest",
+      "not_proved": "2018 role, actual vote, knowledge of non-notice, shared purpose or criminal participation from offices or attendance alone"
+    },
+    {
+      "name": "Gerardo Zacarías Acosta Matos",
+      "display": "Gerardo Zacarías Acosta Matos^",
+      "caepr_id": "PD-SP-P-0094",
+      "capacity": "BORME-identified member of the four-sibling corporate-governance perimeter; Gil-attributed bearded person at the far right of the published pre-meeting image",
+      "open_test": "original-image and project-file custody, Sun Park linkage, pre-meeting project/notice knowledge, communications, board information, implementation role, conflict and benefit",
+      "not_proved": "4-February attendance, notice control, agreement, shared purpose or criminal participation from corporate office or attributed image presence alone"
+    },
+    {
+      "name": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "capacity": "Insolvency Administrator for LPB",
+      "open_test": "act-specific duty, notice, capacity, response, estate protection, report to court and extraconcursal boundary"
+    },
+    {
+      "name": "Alberto López Villarrubia",
+      "capacity": "Magistrate-Judge Alberto López Villarrubia of the then Commercial Court No. 1 of Las Palmas de Gran Canaria for the historical acts",
+      "open_test": "exact record, competence, resolution or required act, objective legal basis, personal knowledge, causation and historically applicable judicial-offence elements"
+    },
+    {
+      "name": "Construcciones Acosta Matos, S.A.",
+      "capacity": "defined-unit owner, creditor, project supplier/sponsor, award beneficiary and later segregating company",
+      "open_test": "natural-person route, corporate benefit, controls, unit-vs-whole-hotel acts, project margin and CP 31 bis gate"
+    },
+    {
+      "name": "Hotel New Trend, S.L.U.",
+      "capacity": "later 2022 economic-unit beneficiary",
+      "open_test": "assets, liabilities, litigation, knowledge, own conduct, finance and benefit; no automatic successor guilt"
+    }
+  ],
+  "criminal_hypotheses": [
+    {
+      "route": "coercion_usurpation_damage_unauthorised_use",
+      "status": "investigative-lead",
+      "missing": "authorship, exact right and space, authority, force, damage and intent"
+    },
+    {
+      "route": "cp251_disposition_without_authority",
+      "status": "investigative-lead",
+      "missing": "exact asset or right, asserted power, known absence, recipient, disposition, consideration and loss"
+    },
+    {
+      "route": "cp252_disloyal_administration",
+      "status": "investigative-lead",
+      "missing": "entrusted power, excess, patrimonial harm, intent and correct victim"
+    },
+    {
+      "route": "historical_cp248_250_1_7_procedural_fraud",
+      "status": "open",
+      "missing": "deception, court receipt and reliance, judicial error, patrimonial decision, loss and intent"
+    },
+    {
+      "route": "historical_cp257_261_insolvency_or_frustration",
+      "status": "open",
+      "missing": "exact asset or right, act date, actor capacity, prejudice, intent and historically applicable text"
+    },
+    {
+      "route": "documentary_or_accounting_falsity_and_use",
+      "status": "open",
+      "missing": "document category, objective falsity, author, knowledge, use and effect"
+    },
+    {
+      "route": "community_debt_vote_cost_shift",
+      "status": "high-priority-factual-test",
+      "missing": "root of debt, authority, title, notice, vote, conflicts, cost classification, implementation and benefit"
+    },
+    {
+      "route": "deliberate_non_notice_and_acta_withholding",
+      "status": "attributed-high-priority-factual-test-not-established",
+      "missing": "lawful recipient, statutory address, convocation/service/return/fallback, complete attendee/proxy list, direct ACTA communication, native Thompson forwarding/upstream distribution and exact actual-knowledge time, event-specific 2016-2022 pattern, identified human act, knowledge, intent, use and patrimonial effect"
+    },
+    {
+      "route": "public_or_eu_funds_false_application_or_certification",
+      "status": "open-candidate-characterisation-not-an-arithmetic-inference",
+      "missing": "exact programme/beneficiary, applicable historical offence and threshold, objectively false statement or omitted required disclosure, author, knowledge, grant/payment reliance, overlapping cost/job/use and benefit"
+    },
+    {
+      "route": "insolvency_administrator_act_or_omission",
+      "status": "open-actor-specific-test",
+      "missing": "specific duty, actual knowledge, practical capacity, causal equivalence, mental element and counterfactual"
+    },
+    {
+      "route": "judicial_cp446_449",
+      "status": "open-actor-specific-test",
+      "missing": "exact resolution or required act, historically applicable element, objective and manifest injustice, personal knowledge or purpose and complete record"
+    },
+    {
+      "route": "corporate_liability_and_successor_continuity",
+      "status": "open",
+      "missing": "eligible predicate, qualifying natural person, corporate benefit, controls, dates and own successor conduct"
+    }
+  ],
+  "keystone_evidence": [
+    "Complete 4 February 2022 meeting book, first/second-call convocation, owner-by-owner notice/service/return/fallback, post-meeting ACTA communication, proxies, title/coefficient/vote/conflict and owner debt/levy package.",
+    "Native Thompson-family forwarding and upstream ACTA transmission with exact timestamp/time zone, headers/metadata, attachment hash comparison, separate source account and a 2016-2022 event-by-event concealed-meeting matrix.",
+    "Deed, completion/payment and historic Registry chain for Thompson bungalow 708 / property 8,557 before confirming the asserted one-of-twelve direct LPB/Multimatrix transfer.",
+    "Independent common/private/one-star/four-star quantity survey and actual invoice/payment ledger.",
+    "Finca-by-finca title, possession, access, works, use and income map for 2018-2022.",
+    "PMS, booking, guest, staff, supplier, utility, bank and tax operation ledger.",
+    "Complete ONA and finance conditions, funds, submission, decision and non-closing ledger.",
+    "Complete AC/court preservation, valuation, competition, deed, Registry and final-account implementation record.",
+    "Complete CAM/HNT/RICPE/RIC/incentive/FEDER unit/work/invoice/job/declaration/certification source-and-use and benefit account without arithmetic aggregation or double counting.",
+    "Complete CEXP succession/dissolution and owner-by-owner exploitation mandates.",
+    "Javier Acosta Matos^ meeting power/vote, CAM/Canarian Hospitality/Acos-Matos board packs, conflicts, communications, ACTA custody/use and contrary non-participation record.",
+    "Original four-sibling image and derivatives, metadata, publication/photographer records, laptop files, pictured plans, version histories and linked project/board packs, preserving Gil's positional attribution separately from independent proof."
+  ],
+  "source_refs": [
+    "evidence/community/actas/2022-02-04/manifest.json",
+    "evidence/community/actas/2022-02-04/transcript-es.md",
+    "evidence/community/actas/2022-02-04/provenance.md",
+    "archive/CAM_2018_EXTRACONCURSAL_TAKEOVER_RETRIEVAL_GATE_16AUG2026.md",
+    "archive/CAM_2017_2018_DIRECT_INSTRUCTION_LENDER_POSSESSION_SHADOW_ADMINISTRATION_JUDICIAL_OMISSION_LEAD_23AUG2026.md",
+    "archive/MATKATOR_DP552_ETJ163_MASA_ACTIVA_SOURCE_DIGEST_16AUG2026.md",
+    "archive/ONA_COMMERCIAL_EXIT_RETRIEVAL_GATE_16AUG2026.md",
+    "archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md",
+    "archive/CEXP_GOVERNANCE_CONTRADICTION_COMMUNITY_TO_HNT_21AUG2026.md",
+    "archive/SUN_PARK_ACTA_AUTHORITY_LEGITIMACY_VISUAL_CONTROL_17AUG2026.md",
+    "archive/POR_DERECHO_UNITARY_CASE_RECONSTRUCTION_MULTIDISCIPLINARY_CRIMINAL_FORENSIC_PROTOCOL_17AUG2026.md",
+    "archive/CAEPR_JAVIER_ACOSTA_MATOS_COMMUNITY_2022_IDENTITY_ROLE_CONTROL_28AUG2026.md",
+    "archive/declarations/017_GIL_THOMPSON_POST_MEETING_ACTA_FORWARDING_AND_CONCEALED_MEETINGS_20260828.md",
+    "archive/prompts/SUN_PARK_POST7JUNE_2018_TO_2022_DELIBERATE_EXCLUSION_UNITARY_CRIMINAL_REVERSE_ENGINEERING_PROMPT_28AUG2026.md",
+    "assets/acosta-matos-family-hotel-plans.jpg",
+    "archive/SUN_PARK_SAME_ASSET_MULTIPLE_FINANCIAL_LIVES_CONTROL_CHAIN_16AUG2026.md",
+    "archive/INSTITUTIONALISATION_CHAIN_RIC_EU_REGIONAL_15AUG2026.md",
+    "BORME-A-2009-32-35, entry 84648",
+    "BORME-A-2020-157-35, entry 269436",
+    "BORME-A-2021-156-35, entry 383950",
+    "BOE-A-1960-10906 historical consolidation modified 2021-10-06"
+  ]
+}

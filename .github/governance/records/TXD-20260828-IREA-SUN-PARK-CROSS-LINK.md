@@ -1,7 +1,7 @@
 # IREA 2017 Sun Park / LPB legal-matter cross-link decision
 
-**Control date:** 28 August 2026  
-**Decision:** authorised, minimized, purpose-specific public cross-link  
+**Control date:** 28 August 2026
+**Decision:** authorised, minimized, purpose-specific public cross-link
 **Authority:** current authenticated instruction to scan historical emails and media, capture evidence, add the result to the page and interlink IREA/Colliers, RICPE and the proposed witness
 
 ## Bounded proposition admitted to the legal-matter record

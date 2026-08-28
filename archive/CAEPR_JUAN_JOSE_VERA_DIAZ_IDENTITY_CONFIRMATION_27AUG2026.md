@@ -2,7 +2,7 @@
 
 **Control date:** 27 August 2026  
 **Status:** CARET_CONFIRMED for Juan José Vera Díaz person identity; CAIC is identity-corroboration context only, not a substantive matter actor  
-**Immutable CAEPR ID:** `PD-SP-P-0088`
+**Immutable CAEPR ID:** `PD-SP-P-0092`
 
 ## Confirmation
 
@@ -29,9 +29,9 @@ The exact full name, repeated Meeting Point / FTI corporate history, Canary Isla
 
 ## Federated-registry implementation
 
-CAEPR is expressly a **federated** identity system. This identity is therefore admitted and reserved in the specialist machine-readable control `assets/data/caepr-caret-juan-jose-vera-v1.json` as **`PD-SP-P-0088`**.
+CAEPR is expressly a **federated** identity system. This identity is therefore admitted and reserved in the specialist machine-readable control `assets/data/caepr-caret-juan-jose-vera-v1.json` as **`PD-SP-P-0092`**.
 
-The existing 204-object master-index snapshot is intentionally not rewritten in this narrow continuity package because its counts are synchronized with several historical live-verification and specialist-control baselines. A coordinated master-index/count/live-baseline refresh remains open. Until that refresh, **`PD-SP-P-0088` is reserved and must not be reused** by another thread or identity record.
+That statement described the narrow 27-August package at the time it was made. On 28 August 2026, the coordinated local master-index/count refresh was completed and then additively reconciled with fetched origin/main `a9e394a893251ba393ae37ead58be82987666820`: the combined master contains **214 objects / 94 people** and preserves **`PD-SP-P-0092` for Juan José Vera Díaz^**. Javier Acosta Matos^ is separately assigned `PD-SP-P-0093`, and Gerardo Zacarías Acosta Matos^ is separately assigned `PD-SP-P-0094`. Origin/main's already-published `PD-SP-P-0088`–`0091` assignments remain untouched. No facts transfer among those records. The earlier 204-object exact public readback remains historical; CI, merge, deployment and new exact readback are separately controlled.
 
 This implementation boundary does not change the identity verdict: the one-object specialist scope is **1/1 CARET_CONFIRMED — ALL IS^ for the stated identity scope**.
 
@@ -50,7 +50,7 @@ If the LinkedIn screenshot is reproduced or transcribed, those strings may be pr
 
 ## What is confirmed
 
-- **Juan José Vera Díaz^ = `PD-SP-P-0088`.**
+- **Juan José Vera Díaz^ = `PD-SP-P-0092`.**
 - The person identified in the official 2017 Meeting Point Jandía Investment representation record and the official 2021 Meeting Point Spain corporate record is reconciled to the same person identity represented by the current CAIC biography's FTI / Meeting Point career continuity.
 - The 5 March 2018 LinkedIn evidence lane can therefore use **Juan José Vera Díaz^** as the canonical person label, subject to the separate native-source authentication boundary for the screenshots themselves.
 
@@ -68,8 +68,8 @@ Identity confirmation does not establish:
 
 ## Future-thread rule
 
-Any new thread involving Vera / Meeting Point / FTI / Labranda / Sun Park / Lava Verde / Club Sei / CAM must resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0088`)** while keeping date-specific capacities, legal entities, conduct, relationships, source authenticity and evidential propositions separately proved.
+Any new thread involving Vera / Meeting Point / FTI / Labranda / Sun Park / Lava Verde / Club Sei / CAM must resolve the person as **Juan José Vera Díaz^ (`PD-SP-P-0092`)** while keeping date-specific capacities, legal entities, conduct, relationships, source authenticity and evidential propositions separately proved.
 
 CAIC and the LinkedIn `Community of Madrid, Spain` location string are **not substantive matter lanes**. CAIC is retained only where useful for person-identity corroboration; the Comunidad de Madrid location metadata should otherwise be ignored in matter analysis unless later independent evidence makes it specifically material.
 
-The ID `PD-SP-P-0088` remains reserved and must not be allocated to another person while master-index backfill remains open.
+The ID `PD-SP-P-0092` remains permanently allocated to Juan José Vera Díaz^ in the coordinated local master and must not be assigned to another person.

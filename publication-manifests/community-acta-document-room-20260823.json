@@ -90,5 +90,26 @@
     },
     "inherited_non_acta_ci_boundary": "Four English ONA links and two Alberto/Meeting Point snapshots fail on the unchanged base; PR #1139 records the separation.",
     "deployment_record": "archive/DEPLOYMENT_LOG.md"
+  },
+  "validation": {
+    "status": "PASSED",
+    "evidence": [
+      "archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_27AUG2026.md#validation-gate",
+      ".github/workflows/validate-acta-meeting-lineage.yml",
+      "scripts/validate_acta_meeting_lineage.py"
+    ]
+  },
+  "merge_sha": "06b8d7ac025b605ae0a677b85cb22ed0531a29c6",
+  "deployment_evidence": "archive/DEPLOYMENT_LOG.md",
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/"
+  ],
+  "live_verification_evidence": {
+    "verified_at_utc": "2026-08-27T23:03:30Z",
+    "record": "archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_27AUG2026.md#live-verification",
+    "deployment_record": "archive/DEPLOYMENT_LOG.md",
+    "bilingual_event_routes_http_200": "40/40",
+    "document_room_routes_http_200": "2/2"
   }
 }

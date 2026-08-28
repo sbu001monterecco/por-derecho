@@ -1,0 +1,109 @@
+# Javier Acosta Matos, the four-sibling image and 4-February-2022 Community-role control
+
+**Control date:** 28 August 2026
+**Control ID:** `PD-SP-JAM-20260828-01`
+**Status:** `CARET_CONFIRMED FOR THE SIX-OBJECT COMBINED SCOPE / IMAGE POSITIONS ATTRIBUTED / CONDUCT AND CAPACITY OPEN`
+**Read with:** `PD-SP-POST7J-20260828-01`, `SP-ACTA-2022-02-04`, CR-119/CR-120/CR-121/CR-122 and ME-099
+
+## 1. Caret legend and finite result
+
+`^` confirms only that the displayed person or organisation has been resolved to the stated immutable CAEPR record and cleared of a material identity collision for this context. It does **not** establish meeting power, title, vote, knowledge, intention, coordination, participation, benefit, wrongdoing or liability.
+
+| Object in scope | CAEPR ID | Result |
+|---|---|---|
+| José Daniel Acosta Matos^ | `PD-SP-P-0011` | `CARET_CONFIRMED` |
+| Laura Patricia Acosta Matos^ | `PD-SP-P-0012` | `CARET_CONFIRMED` |
+| Javier Acosta Matos^ | `PD-SP-P-0093` | `CARET_CONFIRMED` |
+| Gerardo Zacarías Acosta Matos^ | `PD-SP-P-0094` | `CARET_CONFIRMED` |
+| Construcciones Acos-Matos, S.L.^ | `PD-SP-O-0074` | `CARET_CONFIRMED` |
+| Comunidad de Propietarios Sun Park^ | `PD-SP-O-0005` | `CARET_CONFIRMED` |
+
+**Combined scope:** the four siblings Gil identifies in the published image, plus Javier's represented company and the Owners' Community used in the 4-February-2022 analysis.
+**Denominator:** 6 unique eligible objects — four people and two organisations.
+**Confirmed and correctly marked:** 6.
+**Coverage:** `6 / 6 = 100%`.
+**Exceptions:** none for identity; the capacity and conduct questions below remain outside caret meaning.
+**Non-applicable:** “captured Community”, “Acosta Matos perimeter”, the meeting, ACTA, alleged plan and alleged criminality are concepts/events/propositions, not caret-eligible objects.
+
+Two overlapping finite subscopes remain visible rather than being arithmetically conflated:
+
+- **4-February meeting triad:** Javier / represented company / Community = `3 / 3`.
+- **Published-image sibling set:** José Daniel / Laura Patricia / Javier / Gerardo Zacarías = `4 / 4`.
+
+Because Javier belongs to both subscopes, the combined denominator is six, not seven. This is an identity-control count only.
+
+**ALL IS^ — VERIFIED FOR THIS SIX-OBJECT COMBINED SCOPE ONLY.** This is not a page-wide or repository-wide `all is^` result.
+
+## 2. Identity resolution and collision control
+
+The full name and corporate setting are supported by compatible official and case-record attributes:
+
+1. **BORME-A-2009-32-35, entry 84648** identifies `ACOSTA MATOS JAVIER` as director and delegated director of **Construcciones Acos-Matos Sociedad Limitada**, Registry sheet `GC 17613`.
+2. **BORME-A-2020-157-35, entry 269436** records him among the directors appointed to **Construcciones Acosta Matos, S.A. (CAM)**.
+3. **BORME-A-2021-156-35, entry 383950** records him among the directors appointed to **Canarian Hospitality, S.L.**
+4. **SP-ACTA-2022-02-04, source page 2** names `Don Javier Acosta Matos en representación de Construcciones Acos-Matos, S.L.` at the Owners' Community meeting.
+5. The cited BORME materials independently place José Daniel, Laura Patricia, Javier and Gerardo Zacarías Acosta Matos in the relevant corporate-governance perimeter. They do not identify any face or pixel in the website image.
+
+Official links:
+
+- <https://www.boe.es/diario_borme/txt.php?id=BORME-A-2009-32-35>
+- <https://www.boe.es/diario_borme/txt.php?id=BORME-A-2020-157-35>
+- <https://www.boe.es/diario_borme/txt.php?id=BORME-A-2021-156-35>
+
+The identity is therefore sufficiently resolved. **Construcciones Acos-Matos, S.L.^ is a distinct legal person** and must not be normalised into CAM, S.A. or the unresolved `Construcciones Acosta Matos, S.L.` reference merely because the names and people overlap.
+
+The immutable-ID collision is also resolved: `PD-SP-P-0092` remains assigned to **Juan José Vera Díaz^**; Javier is `PD-SP-P-0093`; and Gerardo Zacarías is `PD-SP-P-0094`. Gerardo Zacarías must not be conflated with his father, **Gerardo Nicanor Acosta Armas^** (`PD-SP-P-0013`). No facts move between those records.
+
+## 3. The image: attributed positions, significance and ceiling
+
+Gil Marer positively identifies the people in `assets/acosta-matos-family-hotel-plans.jpg`, from left to right, as:
+
+1. **Javier Acosta Matos^** — the younger man at the far left;
+2. **Laura Patricia Acosta Matos^** — standing;
+3. **José Daniel Acosta Matos^** — second from the right; and
+4. **Gerardo Zacarías Acosta Matos^** — the bearded man at the far right.
+
+That positional identification is an **express Gil attribution**, not a facial-recognition conclusion and not something established by the caret. The image's controlled file fingerprint is SHA-256 `aad5ebaffddf8211be21468f5936b6b1a0066c631919a43a06e9886a9061cd37` (JPEG, 770 × 420). Its website source context supplies a publication ceiling no later than 10 February 2021 in an Acosta Matos hotel-renovation/RIC Equity context.
+
+The image is significant because it supports a targeted inquiry into pre-meeting project knowledge, shared records and custodians across the four-sibling governance perimeter. If the original file, metadata, pictured plans, laptop materials or contemporaneous board packs reliably tie the scene to Sun Park before 4 February 2022, they could materially corroborate prior project knowledge and help identify who controlled the invitation, owner-list, financing, works and implementation records.
+
+The image alone does **not** prove that the plans concern Sun Park, the date the photograph was taken, who created or read the documents, knowledge of the 4-February invitation, deliberate exclusion, agreement, a common criminal purpose or any offence. Its proper present function is source-direction and preservation, not guilt attribution.
+
+## 4. Evidentiary significance — stronger than attendance, weaker than participation
+
+The combined sources make Javier Acosta Matos^ a material evidence holder. They place the same identified person in dated corporate-governance positions within the CAM/Canarian Hospitality project perimeter before the ACTA and then place him at the meeting for another exact group company. This supports targeted investigation of:
+
+- what project, ownership, insolvency, debt, works and finance information reached each board;
+- what meeting pack, owner list, debt schedule, project, budget and notice records he received;
+- his exact written power for Construcciones Acos-Matos, S.L.^;
+- the units and coefficient represented, whether the company had voting rights and whether he actually voted on each item;
+- any conflict, abstention, related-party interest or expected project benefit;
+- what he knew about LPB, Matkator, their practical exclusion and the notice or non-notice route;
+- his communications with José Daniel Acosta Matos, Laura Patricia Acosta Matos, CAM, Canarian Hospitality, Pamalexsha, the president, secretary-administrator, contractor and advisers; and
+- what ACTA or implementation records he received, approved, corrected, transmitted or retained after the meeting.
+
+It does **not** prove that he attended the 7-June-2018 event, authored the 2022 project, convened the meeting, controlled notice, knew anyone was unaware, voted, falsified a record or shared an unlawful purpose. Nor does Gerardo Zacarías's attributed presence in the earlier published image prove that he attended or acted at the 4-February meeting.
+
+## 5. Witness or investigated person
+
+On the current evidence, the proportionate procedural starting point is **material witness and document custodian**, with an express prohibition on using witness status to bypass the rights of a person against whom objective criminal indications emerge.
+
+Reclassification as an investigated person requires a concrete bridge to his own conduct: for example, proof that he knowingly exercised a vote without authority, procured or used a materially false debt/notice/cost record, intentionally helped exclude an entitled owner, concealed the ACTA to prevent challenge, or used the resolutions to obtain a patrimonial act or benefit. Corporate office, surname, group proximity and attendance alone do not meet that threshold. The competent prosecutor or court determines procedural status and must provide the corresponding rights.
+
+The same controlled starting point applies to Gerardo Zacarías for the image/corporate-record track: potential witness and custodian first, unless actor-specific evidence connects him to notice control, a false recital, concealment, implementation or benefit. The present ACTA does not record him as a 4-February attendee.
+
+## 6. Preservation and first examination package
+
+Before any accusatory classification, preserve and obtain:
+
+1. his ACTA representation document and every company/Community power in force on 4 February 2022;
+2. complete meeting notice, service, attendee, vote and ACTA-distribution records;
+3. CAM, Canarian Hospitality and Acos-Matos board packs/minutes concerning Sun Park from 2019–2022;
+4. emails, messages, calendars and document metadata tied to the project, owner list, debt, works budget, RICPE/RIC, incentive and FEDER applications;
+5. conflict, abstention, related-party, contractor, payment and beneficiary records;
+6. the original published-image file and all derivatives, EXIF/XMP/IPTC metadata, publication records, photographer/editor testimony, the laptop files, pictured plans, document versions and linked board or project packs; and
+7. contrary material showing lack of receipt, non-participation, lawful reliance, abstention or independent professional advice.
+
+## 7. Controlling conclusion
+
+Javier Acosta Matos^ is evidentially identified and must not be omitted from the 2022 actor matrix. Gerardo Zacarías Acosta Matos^ is now separately controlled as the sibling Gil identifies at the far right of the published image and must not be conflated with Gerardo Nicanor Acosta Armas^. The four-sibling image, corporate records and ACTA justify focused knowledge, custody, mandate, vote, conflict and implementation examination. They do not justify presenting either Javier or Gerardo Zacarías as part of proved “criminality of a captured Community”. The controlled formulation is that **Gil Marer and Aweswell allege instrumentalisation or capture of Comunidad de Propietarios Sun Park^; each person's possible contribution remains a falsifiable, actor-specific investigative question.**

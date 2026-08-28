@@ -186,7 +186,7 @@
       {
         src: asset('acosta-matos-family-hotel-plans.jpg'),
         alt: 'Cuatro personas alrededor de una mesa con planos y diseños ante el logotipo de Acosta Matos',
-        caption: 'Imagen reproducida por El Economista/RICPE. Gil identifica a José Daniel y Laura Patricia en la escena y asume esa atribución editorial; la imagen no prueba por sí sola título, mandato, delito o coordinación.'
+        caption: 'Imagen reproducida por El Economista/RICPE. Gil identifica, de izquierda a derecha, a Javier, Laura Patricia, José Daniel y Gerardo Zacarías Acosta Matos, y asume esa atribución editorial. No es identificación facial automatizada; la imagen sola no prueba que los planos sean Sun Park, conocimiento de la convocatoria, concierto ni delito.'
       }
     ],
     hingeK: '7 JUN 2018 · BISAGRA DE CONTROL MATERIAL',
@@ -363,7 +363,7 @@
       {
         src: asset('acosta-matos-family-hotel-plans.jpg'),
         alt: 'Four people around a table with plans and designs in front of an Acosta Matos logo',
-        caption: 'Image reproduced by El Economista/RICPE. Gil identifies José Daniel and Laura Patricia in the scene and assumes that editorial attribution; the image alone does not prove title, mandate, wrongdoing or coordination.'
+        caption: 'Image reproduced by El Economista/RICPE. Gil identifies, left to right, Javier, Laura Patricia, José Daniel and Gerardo Zacarías Acosta Matos, and assumes that editorial attribution. This is not automated facial identification; the image alone does not prove the plans concern Sun Park, invitation knowledge, agreement or wrongdoing.'
       }
     ],
     hingeK: '7 JUN 2018 · MATERIAL-CONTROL HINGE',
