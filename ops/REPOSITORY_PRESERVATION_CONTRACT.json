@@ -51,6 +51,18 @@
     "authorization_must_be_new_in_same_change": true,
     "authorization_must_match_base_sha": true
   },
+  "legal_adviser_material_firewall": {
+    "controlling_policy": ".github/governance/LEGAL_ADVISER_DRAFT_PRIVILEGE_PUBLICATION_FIREWALL_28AUG2026.md",
+    "machine_policy": ".github/governance/legal-adviser-publication-firewall-v1.json",
+    "default_action": "QUARANTINE_DO_NOT_PUBLISH",
+    "applies_to_entire_public_repository_and_pages": true,
+    "analytical_use_allowed": true,
+    "lawyer_created_work_product_publication_allowed": false,
+    "wrapper_source_separation_required": true,
+    "independent_source_required_for_derived_public_proposition": true,
+    "filed_version_must_be_verified": true,
+    "uncertain_status_action": "QUARANTINE_DO_NOT_PUBLISH"
+  },
   "five_actor_front_page_lock": {
     "authorization_marker": "express-authorization-required",
     "component_marker": "20260824b",
@@ -150,6 +162,8 @@
     "Laura Patricia Acosta Matos is the only permitted public narrative identity; source literals must remain expressly marked.",
     "No fabricated portrait may replace a missing verified source asset.",
     "Spanish and English routes must remain materially equivalent.",
-    "Contrary evidence, corrections, right of reply and unresolved proof remain visible."
+    "Contrary evidence, corrections, right of reply and unresolved proof remain visible.",
+    "Lawyer emails, advice, drafts, mark-ups and strategy are internal work product; a later filed version must be separately verified before publication.",
+    "A lawyer's covering email and annotations remain private even where an independently existing court, authority, third-party or public attachment is publication-eligible."
   ]
 }
