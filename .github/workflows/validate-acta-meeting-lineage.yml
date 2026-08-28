@@ -29,6 +29,7 @@ on:
       - 'scripts/acta_ricpe_event_records.py'
       - 'scripts/build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
+      - 'scripts/verify_acta_live_readback.mjs'
       - 'scripts/remediate_acta_public_locators.py'
       - 'scripts/test_remediate_acta_public_locators.py'
       - 'scripts/render_acta_meeting_lineage.mjs'
@@ -67,6 +68,7 @@ on:
       - 'scripts/acta_ricpe_event_records.py'
       - 'scripts/build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
+      - 'scripts/verify_acta_live_readback.mjs'
       - 'scripts/remediate_acta_public_locators.py'
       - 'scripts/test_remediate_acta_public_locators.py'
       - 'scripts/render_acta_meeting_lineage.mjs'
@@ -141,6 +143,7 @@ jobs:
           python3 evidence/community/actas/build_public_packages.py validate --skip-render
           node --check assets/acta-document-room-20260822.js
           node --check scripts/render_acta_meeting_lineage.mjs
+          node --check scripts/verify_acta_live_readback.mjs
           node --check scripts/render_post7june_2022_omnidirectional_map.mjs
       - name: Install Playwright Chromium
         run: |
@@ -173,5 +176,47 @@ jobs:
           path: |
             artifacts/acta-meeting-lineage
             artifacts/post7-2022-omnidirectional-map
+          if-no-files-found: warn
+          retention-days: 14
+
+  live-readback:
+    if: github.event_name == 'push'
+    needs: source-and-render
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.50.1
+          npx playwright install --with-deps chromium
+      - name: Wait for exact Pages propagation
+        env:
+          PSR_BASE_URL: https://sbu001monterecco.github.io/por-derecho
+        run: |
+          for attempt in $(seq 1 24); do
+            if node scripts/verify_acta_live_readback.mjs; then
+              echo "Exact 158-resource live readback passed on attempt ${attempt}."
+              exit 0
+            fi
+            if [ "$attempt" -lt 24 ]; then sleep 30; fi
+          done
+          exit 1
+      - name: Render all live ACTA routes at desktop and mobile viewports
+        env:
+          PSR_BASE_URL: https://sbu001monterecco.github.io/por-derecho
+          PSR_SCREENSHOT_DIR: artifacts/acta-live-readback
+        run: node scripts/render_acta_meeting_lineage.mjs
+      - name: Upload live visual evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: acta-live-readback
+          path: artifacts/acta-live-readback
           if-no-files-found: warn
           retention-days: 14

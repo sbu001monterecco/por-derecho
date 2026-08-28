@@ -1,29 +1,29 @@
 # ACTA digitisation and publication closeout — 28 August 2026
 
-## Status at record creation
+## Publication status
 
-This is the pre-merge closeout record for the 28-Aug-2026 ACTA, meeting and communications continuity release. It supersedes the corpus counts and open-evidence status in the 27-Aug-2026 closeout without rewriting that historical record.
+This is the live-verified closeout record for the 28-Aug-2026 ACTA, meeting and communications continuity release. It supersedes the corpus counts and open-evidence status in the 27-Aug-2026 closeout without rewriting that historical record.
 
 | Control | Value |
 |---|---:|
 | Initial task-base `main` SHA | `f20e86c53b1c579f8adfe01646869b91504bb11d` |
 | Final integrated PR-base `main` SHA | `c456bc48dadd4dbaf5eac913b840083f1e0d9bc2` |
-| Publication pull request | **PENDING** |
-| Publication merge SHA | **PENDING** |
-| Exact GitHub Pages deployment run | **PENDING** |
-| Live-site readback | **PENDING** |
+| Publication pull request | [#1182](https://github.com/sbu001monterecco/por-derecho/pull/1182); reviewed head `24b7f47aee83df5e2981a0505443361ddfeb99ab`; 42 required successes + 3 conditional skips; zero failures |
+| Publication merge SHA | `67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f`; tree `f53bdb61323bc137f1f52f1810a3bc6e70c63345` |
+| Exact GitHub Pages deployment run | [33217481784 / #1253](https://github.com/sbu001monterecco/por-derecho/actions/runs/33217481784) — completed/success on the exact merge SHA |
+| Live-site readback | **PASS 158/158 exact SHA-256 at `2026-08-28T22:41:05Z`; 96/96 desktop/mobile checks on the identical reviewed tree; 6/6 distinct perimeter colour pairs** |
 
-Nothing in this record represents a pending value as completed. Until the reviewed pull request is merged, the exact merged commit is deployed, and the live routes and assets are read back, this remains a publication candidate rather than a live-publication certificate.
+The reviewed publication is merged, deployed and read back. Publication completion does not close the historical, annex, variant, transcription, authenticity, legal-validity or custody-resilience gaps listed below.
 
 ## Prior publication reconciliation
 
 - PR [#1139](https://github.com/sbu001monterecco/por-derecho/pull/1139) merged at `06b8d7ac025b605ae0a677b85cb22ed0531a29c6`. Its exact Pages run `33124598726` succeeded, but six other workflow conclusions were failures. It is therefore accurate to record the ACTA Pages deployment as successful, not to describe the entire PR check set as all-green.
 - PR [#1140](https://github.com/sbu001monterecco/por-derecho/pull/1140) merged at exact commit `298a1141662c278db9413d9e282469c36ca52ad8`; its exact Pages run `33125127220` completed successfully. Nine of ten checks were green and publication-integrity failed. Later repair PRs restored the relevant validation baseline. The 28-Aug candidate began from task base `f20e86c53b1c579f8adfe01646869b91504bb11d` and was integrated onto final PR base `c456bc48dadd4dbaf5eac913b840083f1e0d9bc2` (after an earlier validated integration on `8f7e002001370fc006bb019eb3078603c2a5ee4d`); neither historical merge is treated as the present candidate in isolation.
-- Those historical merge/deployment facts do not satisfy the pending publication gate for this expanded 23-event candidate, which contains 19 located ACTA/minutes families plus one non-ACTA notice package.
+- Those historical merge/deployment facts did not by themselves satisfy the publication gate for the expanded 23-event release. That distinct gate is now closed through PR #1182, exact merge `67b144e6…`, Pages run `33217481784` and the 158/158 live readback.
 
 ## Controlled result
 
-The candidate preserves the previous 20-event/17-family corpus, adds the newly located 15-Jul-2008 17:00 CEXP meeting as a separate event and the full 10-Apr-2014 protocol 422B package as a located ACTA family, and adds two separately controlled RIC Private Equity Investment Partners (`RICPE`) event records without treating a notice as minutes. The controlled layer now contains:
+The publication preserves the previous 20-event/17-family corpus, adds the newly located 15-Jul-2008 17:00 CEXP meeting as a separate event and the full 10-Apr-2014 protocol 422B package as a located ACTA family, and adds two separately controlled RIC Private Equity Investment Partners (`RICPE`) event records without treating a notice as minutes. The controlled layer now contains:
 
 - **23** controlled events;
 - **46** bilingual individual event pages;
@@ -217,7 +217,7 @@ This is the complete release-level list. A hash match establishes byte identity;
 
 ## Validation and deployment gate
 
-The candidate is not closed until all of the following are recorded against the exact publication commit:
+The publication gate was closed against the exact publication commit as follows:
 
 1. deterministic source and public-package rebuilds produce no unexplained drift;
 2. all 20 manifests pass page-count, byte/hash, raster-only, privacy and non-empty-image checks;
@@ -229,19 +229,19 @@ The candidate is not closed until all of the following are recorded against the 
 8. the exact merge SHA is matched to a successful Pages deployment; and
 9. all 46 event pages, all 40 PDFs and representative images are read back from the live site.
 
-Publication pull request, merge SHA, Pages run and live readback are **PENDING** in this pre-merge record.
+All nine gates passed. PR #1182 merged only after 42 required checks succeeded and three conditional checks skipped; no required check failed. ACTA renderer run `33216999958` passed the 96 route/viewport checks and six distinct perimeter colour pairs on reviewed head `24b7f47…`; the reviewed head and merge share tree `f53bdb6…`. Pages run `33217481784` then deployed exact merge `67b144e…`, and deterministic live readback passed 158/158 resources.
 
 ## Live verification
 
-The exact publication PR/head, merge SHA, matching or explicitly identified descendant Pages run, deployment head, 158-resource exact-byte readback and 96 desktop/mobile route/viewport results are **PENDING**. This section is the stable machine-linked location for those facts; it must not be converted to a live certificate until the deployed bytes are matched to the verified source-controlled commit.
+PR [#1182](https://github.com/sbu001monterecco/por-derecho/pull/1182) merged reviewed head `24b7f47aee83df5e2981a0505443361ddfeb99ab` as `67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f`; both resolve to tree `f53bdb61323bc137f1f52f1810a3bc6e70c63345`. Exact Pages run [33217481784 / #1253](https://github.com/sbu001monterecco/por-derecho/actions/runs/33217481784) completed successfully for that merge. At `2026-08-28T22:41:05Z`, `scripts/verify_acta_live_readback.mjs` obtained HTTP 200, nonzero expected media types and exact source SHA-256 equality for **158/158** controls: 46 event pages, two rooms, 20 text PDFs, 20 source facsimiles, 20 package manifests, 20 first text JPEGs, 20 first source JPEGs and ten global controls. The reviewed ACTA renderer passed **96/96** desktop/mobile route checks and **6/6** distinct perimeter colour pairs on the identical tree; representative Spanish live-browser inspection also rendered the deployed document room and 28-August corpus without a publication error.
 
 ## Six-part completion and deletion-safety conclusion
 
-1. **All located control copies digitised and published:** **DIGITISED IN THE CANDIDATE; LIVE PUBLICATION PENDING.** All 19 located ACTA/minutes control families and the one located non-ACTA RICPE notice have generated public-safe packages in the working tree. This record does not claim they are live until PR, merge, deployment and readback values replace `PENDING`.
+1. **All located control copies digitised and published:** **YES, IN PUBLIC-SAFE FORM.** All 19 located ACTA/minutes control families and the one located non-ACTA RICPE notice package are live. Native sources remain private, and all 20 packages retain `complete_public_text: false` and `manual_source_line_verification: false`.
 2. **Every historical ACTA located:** **NO.** The standalone 20-Nov-2018 ACTA, the primary 29-Dec-2021 RICPE meeting/resolution records, any minutes/outcome from the scheduled 11/12-Mar-2022 RICPE meeting, and potentially other historical sources/annexes remain unlocated. The finite search cannot establish non-existence.
 3. **OCR manually certified:** **NO.** All 20 packages have `manual_source_line_verification: false`. The three full-page-redacted packages expose no source OCR publicly; their separate private automated OCR custody covers 166/166 pages but uses an English-language fallback and is expressly uncertified.
 4. **Source authenticity established:** **NO.** Controlled hashes establish integrity of received copies only; official books/originals, authorship, signatures, provenance and variant relationships remain partly open.
 5. **Legal validity established:** **NO.** Occurrence, power to convene, notice, quorum, voting entitlement, resolution wording, validity, implementation, later reliance, knowledge, intent, causation, benefit and legal characterization remain separate questions.
-6. **Continuity safe for deletion:** **NO — PENDING PUBLICATION CLOSEOUT.** Owner-only custody has been checksum-verified and read back, but deletion is not safe until the reviewed PR is merged, the exact commit is successfully deployed and read back, all release checks are green, and the deployment/manifest records are updated. Even after those gates, only the originating chat/transient work context may be considered for deletion. Native sources, private custody archives, locator controls, evidence records and backups are not authorised for deletion; provider-independent second-copy restoration remains open. `Safe for deletion` must never be restated as evidential deletion authority, historical completeness, certified OCR, authenticity, legal validity or disaster-recovery safety.
+6. **Continuity safe for deletion:** **YES ONLY FOR THE ORIGINATING CHAT/TRANSIENT WORK CONTEXT.** The reviewed merge, exact Pages deployment, live readback and source-controlled closeout evidence are complete. Native sources, private custody archives, locator controls, evidence records and backups are **not** authorised for deletion; provider-independent second-copy restoration remains open. `Safe for deletion` must never be restated as evidential deletion authority, historical completeness, certified OCR, authenticity, legal validity or disaster-recovery safety.
 
-Acceptable final formulation after those gates pass: **“All located ACTA/minutes families and the located non-ACTA RICPE notice package are fully digitised and published in public-safe form, with remaining historical, annex, variant, transcription, authenticity, legal-validity and custody-resilience gaps explicitly preserved.”** The formulation **“all ACTAs complete”** is not supported.
+Final formulation: **“All located ACTA/minutes families and the located non-ACTA RICPE notice package are fully digitised and published in public-safe form, with remaining historical, annex, variant, transcription, authenticity, legal-validity and custody-resilience gaps explicitly preserved.”** The formulation **“all ACTAs complete”** is not supported.

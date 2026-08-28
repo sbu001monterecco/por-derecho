@@ -2,9 +2,10 @@
   "publication_id": "COMMUNITY-ACTA-DOCUMENT-ROOM-20260828-V3",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-28",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "LIVE_VERIFIED",
   "repository": "sbu001monterecco/por-derecho",
   "source_branch": "codex/acta-complete-continuity-20260828",
+  "closeout_branch": "codex/acta-live-closeout-20260828",
   "initial_task_base_main_sha": "f20e86c53b1c579f8adfe01646869b91504bb11d",
   "final_integrated_pr_base_main_sha": "c456bc48dadd4dbaf5eac913b840083f1e0d9bc2",
   "supersedes": {
@@ -56,6 +57,7 @@
     "scripts/remediate_acta_public_locators.py",
     "scripts/test_remediate_acta_public_locators.py",
     "scripts/validate_acta_meeting_lineage.py",
+    "scripts/verify_acta_live_readback.mjs",
     ".github/governance/test_acta_private_source_map.py",
     ".github/workflows/validate-acta-meeting-lineage.yml"
   ],
@@ -97,7 +99,7 @@
     "artifact_kind": "public-redacted digitisation packages; native sources remain private"
   },
   "publication_boundary": [
-    "Digitised and prepared for publication means every located control copy has a rendered public text-edition PDF/pages, a raster-only irreversibly redacted source facsimile, redacted source-page images and a manifest. Seventeen packages contain privacy-checked redacted OCR; the three fully withheld packages contain page-sequenced redaction markers backed by separately controlled private automated OCR custody. Live publication remains pending until reviewed merge, deployment and readback.",
+    "Digitised and published means every located control copy has a live rendered public text-edition PDF/pages, a raster-only irreversibly redacted source facsimile, redacted source-page images and a manifest. Seventeen packages contain privacy-checked redacted OCR; the three fully withheld packages contain page-sequenced redaction markers backed by separately controlled private automated OCR custody. The 158-resource exact-byte readback passed against the reviewed publication tree.",
     "It does not mean that OCR is certified, that the received copy is an official minute book or certified original, or that every source variant and annex has been found.",
     "Every package retains complete_public_text=false and manual_source_line_verification=false.",
     "Documented convener/body is separate from attributed perimeter. Adverse-lane labels are Gil Marer's attributed position, not findings of joint conduct, fraud, criminal purpose or guilt; project-side lineage does not attribute pre-entry acts to Gil.",
@@ -124,12 +126,12 @@
     "source_custody_queue": "archive/SUN_PARK_ACTA_SOURCE_CUSTODY_RECONCILIATION_28AUG2026.md#12-exact-open-evidence-and-custody-queue"
   },
   "six_part_conclusion": {
-    "all_located_control_copies_digitised_and_published": "DIGITISED_AND_PREPARED; LIVE_PUBLICATION_PENDING",
+    "all_located_control_copies_digitised_and_published": "YES; ALL 20 LOCATED CONTROL PACKAGES LIVE IN PUBLIC-SAFE FORM",
     "every_historical_acta_located": false,
     "ocr_manually_certified": false,
     "source_authenticity_established": false,
     "legal_validity_established": false,
-    "continuity_safe_for_deletion": "NO; PENDING REVIEWED MERGE, MATCHING PAGES DEPLOYMENT AND LIVE READBACK"
+    "continuity_safe_for_deletion": "YES ONLY FOR THE ORIGINATING CHAT/TRANSIENT WORK CONTEXT; NO AUTHORITY TO DELETE NATIVE SOURCES, PRIVATE CUSTODY, LOCATOR CONTROLS, EVIDENCE OR BACKUPS"
   },
   "validation_requirements": [
     "all package manifests, file hashes and page counts",
@@ -179,65 +181,65 @@
     }
   },
   "publication_closeout": {
-    "status": "PENDING_REVIEWED_PULL_REQUEST",
-    "pull_request": null,
-    "reviewed_head_sha": null,
-    "merge_sha": null,
-    "pages_run_id": null,
-    "pages_run_number": null,
-    "pages_head_sha": null,
-    "verified_at_utc": null,
+    "status": "PUBLICATION_MERGED_DEPLOYED_AND_LIVE_VERIFIED",
+    "pull_request": 1182,
+    "reviewed_head_sha": "24b7f47aee83df5e2981a0505443361ddfeb99ab",
+    "merge_sha": "67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f",
+    "pages_run_id": 33217481784,
+    "pages_run_number": 1253,
+    "pages_head_sha": "67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f",
+    "verified_at_utc": "2026-08-28T22:41:05Z",
     "live_readback": {
       "verification_method": "HTTP 200, nonzero response, expected media type and exact SHA-256 parity with the verified deployed commit",
       "controlled_urls_total": 158,
-      "controlled_urls_exact_sha256": "PENDING",
-      "bilingual_event_routes_exact_sha256": "PENDING_0_OF_46",
-      "document_room_routes_exact_sha256": "PENDING_0_OF_2",
-      "redacted_source_facsimiles_exact_sha256": "PENDING_0_OF_20",
-      "text_edition_pdfs_exact_sha256": "PENDING_0_OF_20",
-      "package_manifests_exact_sha256": "PENDING_0_OF_20",
-      "first_source_page_images_exact_sha256": "PENDING_0_OF_20",
-      "first_text_page_images_exact_sha256": "PENDING_0_OF_20",
-      "global_controls_exact_sha256": "PENDING_0_OF_10",
-      "canonical_hreflang_sitemap_exact_source_parity": "PENDING",
-      "rendered_route_viewport_checks": "PENDING_0_OF_96",
-      "distinct_rendered_perimeter_colour_pairs": "PENDING_0_OF_6"
+      "controlled_urls_exact_sha256": "PASS_158_OF_158",
+      "bilingual_event_routes_exact_sha256": "PASS_46_OF_46",
+      "document_room_routes_exact_sha256": "PASS_2_OF_2",
+      "redacted_source_facsimiles_exact_sha256": "PASS_20_OF_20",
+      "text_edition_pdfs_exact_sha256": "PASS_20_OF_20",
+      "package_manifests_exact_sha256": "PASS_20_OF_20",
+      "first_source_page_images_exact_sha256": "PASS_20_OF_20",
+      "first_text_page_images_exact_sha256": "PASS_20_OF_20",
+      "global_controls_exact_sha256": "PASS_10_OF_10",
+      "canonical_hreflang_sitemap_exact_source_parity": "PASS",
+      "rendered_route_viewport_checks": "PASS_96_OF_96_ON_IDENTICAL_REVIEWED_TREE_WITH_LIVE_BYTE_PARITY",
+      "distinct_rendered_perimeter_colour_pairs": "PASS_6_OF_6"
     },
     "inherited_non_acta_ci_boundary": "Historical PR #1139 recorded six unrelated workflow failures; the present publication must merge only after every required check on its own head is green.",
     "deployment_record": "archive/DEPLOYMENT_LOG.md"
   },
   "validation": {
-    "status": "PENDING_FINAL_VALIDATION",
+    "status": "PASS_PUBLICATION_MERGE_DEPLOYMENT_AND_LIVE_READBACK",
     "evidence": [
       "archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md#validation-and-deployment-gate",
       ".github/workflows/validate-acta-meeting-lineage.yml",
       "scripts/validate_acta_meeting_lineage.py"
     ]
   },
-  "merge_sha": null,
+  "merge_sha": "67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f",
   "deployment_evidence": "archive/DEPLOYMENT_LOG.md",
   "live_urls": [
     "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/",
     "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/"
   ],
   "live_verification_evidence": {
-    "verified_at_utc": null,
-    "verified_commit_sha": null,
-    "pages_run_id": null,
-    "pages_run_number": null,
-    "pages_head_sha": null,
+    "verified_at_utc": "2026-08-28T22:41:05Z",
+    "verified_commit_sha": "67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f",
+    "pages_run_id": 33217481784,
+    "pages_run_number": 1253,
+    "pages_head_sha": "67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f",
     "record": "archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md#live-verification",
     "deployment_record": "archive/DEPLOYMENT_LOG.md",
-    "exact_readback_controlled_urls": "PENDING_0_OF_158",
-    "bilingual_event_routes_exact_sha256": "PENDING_0_OF_46",
-    "document_room_routes_exact_sha256": "PENDING_0_OF_2",
-    "text_edition_pdfs_exact_sha256": "PENDING_0_OF_20",
-    "redacted_source_facsimiles_exact_sha256": "PENDING_0_OF_20",
-    "package_manifests_exact_sha256": "PENDING_0_OF_20",
-    "representative_text_images_exact_sha256": "PENDING_0_OF_20",
-    "representative_source_images_exact_sha256": "PENDING_0_OF_20",
-    "global_controls_exact_sha256": "PENDING_0_OF_10",
-    "rendered_route_viewport_checks": "PENDING_0_OF_96",
-    "perimeter_colour_pairs": "PENDING_0_OF_6"
+    "exact_readback_controlled_urls": "PASS_158_OF_158",
+    "bilingual_event_routes_exact_sha256": "PASS_46_OF_46",
+    "document_room_routes_exact_sha256": "PASS_2_OF_2",
+    "text_edition_pdfs_exact_sha256": "PASS_20_OF_20",
+    "redacted_source_facsimiles_exact_sha256": "PASS_20_OF_20",
+    "package_manifests_exact_sha256": "PASS_20_OF_20",
+    "representative_text_images_exact_sha256": "PASS_20_OF_20",
+    "representative_source_images_exact_sha256": "PASS_20_OF_20",
+    "global_controls_exact_sha256": "PASS_10_OF_10",
+    "rendered_route_viewport_checks": "PASS_96_OF_96_ON_IDENTICAL_REVIEWED_TREE_WITH_LIVE_BYTE_PARITY",
+    "perimeter_colour_pairs": "PASS_6_OF_6"
   }
 }
