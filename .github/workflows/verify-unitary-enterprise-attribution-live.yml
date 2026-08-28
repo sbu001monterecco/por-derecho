@@ -155,6 +155,12 @@ jobs:
           import urllib.request
 
           base = os.environ['BASE'].rstrip('/')
+          with open('assets/data/material-updates-v1.json', encoding='utf-8') as stream:
+              source_material_updates = json.load(stream)
+          expected_material_date = source_material_updates.get('latest_material_date')
+          if not isinstance(expected_material_date, str) or len(expected_material_date) != 10:
+              raise SystemExit('Canonical latest_material_date is missing or malformed')
+          expected_public_parity = f'{expected_material_date}_LIVE_VERIFIED'
           en = 'Gil Marer and Aweswell allege one continuing economic-criminal enterprise, advanced through successive adoption and divided functions.'
           es = 'Gil Marer y Aweswell alegan una sola empresa continuada de criminalidad económica, desarrollada mediante adopción sucesiva y división de funciones.'
           en_time = 'This is only a factual allegation of connection: it does not characterise the conduct as a continuing or permanent offence or alter completion, any participation window or limitation period for any specific offence.'
@@ -251,9 +257,10 @@ jobs:
                   and promoted.get('pages_run_id') == 32942972472
                   and promoted.get('live_verification_run_id') == 32942975508
                   and promoted.get('live_verification_job_id') == 98097657687
-                  and material.get('repository_latest_material_date') == '2026-08-26'
-                  and material.get('last_live_verified_material_date') == '2026-08-26'
-                  and material.get('public_parity') == '2026-08-26_LIVE_VERIFIED'
+                  and material.get('latest_material_date') == expected_material_date
+                  and material.get('repository_latest_material_date') == expected_material_date
+                  and material.get('last_live_verified_material_date') == expected_material_date
+                  and material.get('public_parity') == expected_public_parity
                   and pages.get('sha') == merge_sha
                   and pages.get('tree_sha') == tree_sha
                   and pages.get('run_id') == 32942972472
