@@ -5,7 +5,7 @@
   "current_state": "PREPARED_PENDING_MERGE",
   "owner": "Por Derecho / Project Sun Rock",
   "branch": "codex/post7june-continuity-remediation-20260828",
-  "base_sha": "178d3d290c760279beb5537317902265e049ba2b",
+  "base_sha": "95e1de83e29c0edfe2490c3395bfb5c25b3c8f2b",
   "purpose": "Repair all 52 AM357 reciprocal endpoint links so GitHub Project Pages retains the /por-derecho prefix; preserve the final post-7-June/2022 publication closeout; remove two stale declaration-number validator assumptions.",
   "authorization": {
     "user_instruction": "Use best judgement. Take action. Update repository and website/pages, where needed. Confirm it is safe to delete this thread.",
