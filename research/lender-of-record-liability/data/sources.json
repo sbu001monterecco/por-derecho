@@ -176,7 +176,65 @@
     "availability": "public_web_minimized_capture",
     "publication": "public_safe",
     "url": "https://es.linkedin.com/in/fernando-aguiar-acosta-894679235",
-    "notes": "Reports a summer-2026 Colliers Madrid Debt Advisory internship. Parentage, Acosta Matos family membership, Meridian work, legacy-record access and LPB knowledge are not established."
+    "notes": "Reports RIC Private Equity in Las Palmas de Gran Canaria from June to July 2024 and a summer-2026 Colliers Madrid Debt Advisory internship. Parentage, Acosta Matos family membership, Meridian work, legacy-record access and LPB knowledge are not established."
+  },
+  {
+    "id": "SRC-GMAIL-IREA-SUNPARK-2017",
+    "title": "September 2017 IREA-Sun Park/LPB advisory correspondence — minimized derivative",
+    "source_type": "authenticated_email_series_with_attachments",
+    "date": null,
+    "date_precision": "range",
+    "date_label": "7-25 September 2017",
+    "evidence_status": "verified_primary",
+    "availability": "connected_mailbox_native_private",
+    "publication": "public_safe",
+    "notes": "Establishes an executed confidentiality instrument, IREA receipt and review of detailed Sun Park/LPB materials, meetings with Laura Hernando, Miguel Vázquez and Fernando Banderas, Cuatrecasas coordination and a proposed debt-raising advisory scope. No message ID, address, subject, body or attachment is public. A final executed mandate, lender contact and completed financing were not located in the finite scan."
+  },
+  {
+    "id": "SRC-BORME-IREA-COLLIERS-MERGER-2018",
+    "title": "BORME notice of IREA-Colliers Spain merger and name change",
+    "source_type": "official_company_registry_notice",
+    "date": "2018-06-15",
+    "evidence_status": "verified_official",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://boe.es/diario_borme/txt.php?id=BORME-C-2018-5506",
+    "notes": "Records IREA Corporate Finance, S.L. as absorbing company, Colliers International Spain, S.L. as absorbed company, universal succession of the absorbed company's assets and IREA's subsequent adoption of the Colliers International Spain name."
+  },
+  {
+    "id": "SRC-CINCODIAS-IREA-COLLIERS-2018",
+    "title": "Cinco Días report on Colliers acquisition and integration of IREA",
+    "source_type": "business_financial_media",
+    "date": "2018-02-27",
+    "evidence_status": "corroborated_inference",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://cincodias.elpais.com/cincodias/2018/02/27/companias/1519739753_329751.html",
+    "notes": "Independently corroborates the acquisition and integration and identifies Miguel Vázquez and Laura Hernando as leaders of the combined hotel-services line."
+  },
+  {
+    "id": "SRC-OBSERVATORIO-IREA-HOTELS-2017",
+    "title": "2017 sector report on IREA Hotels leadership and advisory work",
+    "source_type": "sector_media",
+    "date": "2017-03-07",
+    "evidence_status": "corroborated_inference",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://observatorioinmobiliario.es/noticias/organizaciones/irea-nombra-a-laura-hernando-nueva-socia-de-la-firma/",
+    "notes": "Identifies Laura Hernando and Miguel Vázquez as leaders of IREA's Hotels Division and describes hotel-portfolio, debt, financing and restructuring advisory work."
+  },
+  {
+    "id": "SRC-HIP-FERNANDO-BANDERAS",
+    "title": "HIP professional biography for Fernando Banderas Monis",
+    "source_type": "public_professional_biography",
+    "date": null,
+    "date_precision": "retrieval_date",
+    "date_label": "retrieved 28 August 2026",
+    "evidence_status": "documented_party_statement",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://hipartners.com/en/company/team/fernando-banderas",
+    "notes": "Identifies Fernando Banderas Monis and states that he was previously Director in Hotels Corporate Finance at Colliers, formerly IREA, with debt-advisory, hotel-NPL and restructuring experience."
   },
   {
     "id": "SRC-TRANSFER-2017-10-20-PH122-CAM",

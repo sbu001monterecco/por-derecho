@@ -106,5 +106,45 @@
     "publication": "public_safe",
     "source_refs": ["SRC-BORME-2022-CAM-HNT-SEGREGATION"],
     "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2017-09-IREA-SUNPARK-REVIEW",
+    "date": "2017-09-20",
+    "actor_refs": ["ACT-AWESWELL", "ACT-LPB", "ACT-IREA", "ACT-LAURA-HERNANDO", "ACT-MIGUEL-VAZQUEZ", "ACT-FERNANDO-BANDERAS"],
+    "knowledge_topic": "Sun Park/LPB transaction, valuation, Cerberus/Promontoria-secured debt and proposed debt raising",
+    "directly_establishes": "After confidentiality, IREA received and reviewed detailed materials, held meetings, coordinated with Cuatrecasas and proposed a defined debt-advisory scope.",
+    "does_not_establish": "A final executed mandate, completed lender outreach, financing, later Colliers custody, conflict, misuse or wrongdoing.",
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-IREA-SUNPARK-2017"],
+    "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2024-06-FERNANDO-RICPE",
+    "date": null,
+    "date_precision": "range",
+    "date_label": "June-July 2024",
+    "actor_refs": ["ACT-RICPE", "ACT-FERNANDO-AGUIAR-ACOSTA"],
+    "knowledge_topic": "Reported RIC Private Equity professional role",
+    "directly_establishes": "The public profile reports a June-July 2024 role at RIC Private Equity in Las Palmas de Gran Canaria.",
+    "does_not_establish": "Family relationship, Sun Park/HNT/MYND exposure, project knowledge, information transfer or wrongdoing.",
+    "evidence_status": "documented_party_statement",
+    "publication": "public_safe",
+    "source_refs": ["SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026"],
+    "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2026-FERNANDO-COLLIERS",
+    "date": null,
+    "date_precision": "season",
+    "date_label": "summer 2026",
+    "actor_refs": ["ACT-COLLIERS-SPAIN", "ACT-FERNANDO-AGUIAR-ACOSTA"],
+    "knowledge_topic": "Reported Colliers Madrid Debt Advisory internship",
+    "directly_establishes": "The public profile reports a summer-2026 Colliers Debt Advisory internship.",
+    "does_not_establish": "Access to legacy IREA/Meridian records, Sun Park knowledge, family relationship, coordination or wrongdoing.",
+    "evidence_status": "documented_party_statement",
+    "publication": "public_safe",
+    "source_refs": ["SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026"],
+    "later_conduct_refs": []
   }
 ]

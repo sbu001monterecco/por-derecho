@@ -1,32 +1,64 @@
-# IREA / Colliers / Project Meridian public-source capture
+# IREA / Colliers / Meridian / Sun Park / RICPE continuity audit
 
 **Capture date:** 28 August 2026  
-**Status:** public-source derivative; no private account data or profile image retained  
-**Scope:** corporate/advisory continuity and a separate current professional-profile observation
+**Status:** public-safe evidence derivative; native private messages remain outside Git
+**Scope:** finite media, corporate, regulatory, public-professional-profile and authenticated-mailbox audit
 
-## Documented propositions
+## Corrected conclusion
 
-1. SAREB's public transaction notice describes Project Meridian as a EUR 133 million loan portfolio secured by 26 hotel-sector properties and identifies IREA as financial adviser and Cuatrecasas, Gonçalves Pereira as legal adviser.
-2. Colliers announced on 27 February 2018 that it acquired a controlling interest in IREA and combined IREA with its existing Spanish operations.
-3. A public LinkedIn profile for Fernando Aguiar Acosta states that he joined Colliers in Madrid as a summer 2026 Debt Advisory intern.
+The audit produces two different evidence tracks that must not be collapsed.
 
-The public profile material reviewed does not expose a verifiable immediately preceding employer or role. No previous role is therefore attributed in this capture.
+1. **IREA–Sun Park/LPB, September 2017.** Authenticated historical correspondence establishes a signed confidentiality instrument, delivery and review of detailed Sun Park/LPB valuation and restructuring material, meetings with the IREA Hotels team, coordination with Cuatrecasas and a written proposal for IREA to advise on debt raising. The record reviewed does not yet establish an executed final engagement letter, completed financing mandate, lender introductions, success fee, later file transfer or misuse.
+2. **Fernando Aguiar Acosta, 2024–2026.** His public LinkedIn profile records RIC Private Equity in Las Palmas de Gran Canaria for June–July 2024 and a Colliers Madrid Debt Advisory internship in summer 2026. This is a documented professional sequence. It does not establish a family relationship, work on Sun Park or Meridian, access to legacy IREA records, coordination, wrongdoing or liability.
 
-## Sources preserved
+## Identity correction
 
-- SAREB: <https://www.sareb.es/en/sareb-completes-institutional-transactions-valued-closed-to-e850-million/>
-- Colliers corporate notice: <https://corporate.colliers.com/news/news-details/2018/Colliers-International-creates-top-tier-player-in-Spain-02-27-2018/default.aspx>
-- Fernando Aguiar Acosta public LinkedIn profile: <https://es.linkedin.com/in/fernando-aguiar-acosta-894679235>
-- Contemporaneous transaction corroboration: <https://costarfinance.wordpress.com/2014/12/30/sareb-confirms-winners-of-projects-meridian-agatha-olivia-corona-and-nears-sale-of-kaplan-in-e850m-sale-flurry/>
+The professional identified in the public 2024–2026 sequence is **Fernando Aguiar Acosta**, not “Fernando Acosta Matos”. The Fernando identified in IREA's September 2017 Sun Park correspondence is **Fernando Banderas Monis**, then in IREA Hotels. These are different people and are controlled as `PD-SP-P-0088` and `PD-SP-P-0091` respectively.
 
-## Classification and limits
+## Authenticated-mailbox findings — minimized derivative
 
-- **Established public fact:** IREA and Cuatrecasas held the stated professional-adviser roles on the Meridian sale.
-- **Established public fact:** IREA entered the Colliers Spain corporate platform in 2018 through the announced controlling-interest acquisition and operational combination.
-- **Public profile statement:** Fernando Aguiar Acosta reports a 2026 Colliers Debt Advisory internship.
-- **Previous-role limit:** the immediately preceding employer or role is not verifiable from the public profile material reviewed and is not asserted.
-- **Unresolved:** whether Fernando Aguiar Acosta is related to José Daniel Acosta Matos, Laura Patricia Acosta Matos or another member of that family.
-- **Not established:** that Fernando participated in Meridian, accessed legacy IREA records, knew of LPB/Sun Park, or carried information between Colliers and the Acosta Matos perimeter.
-- **Not established:** the LPB-specific material reviewed by IREA or Cuatrecasas, team overlap, conflict, information transfer, wrongdoing or liability.
+The finite review of relevant September 2017 correspondence supports the following chronology without publishing message IDs, addresses, subjects, bodies or attachments:
 
-The public presentation uses a solid link for the documented IREA-to-Colliers corporate continuity and a dashed/unverified label for the possible family relationship. Association does not transfer knowledge, intent, control or responsibility.
+| Date | Opaque source class | Proposition established | Limit |
+|---|---|---|---|
+| 7 September 2017 | `PSRC-IREA-2017-01` | An executed confidentiality instrument was sent by IREA. | Does not establish a completed advisory mandate. |
+| 8 September 2017 | `PSRC-IREA-2017-02` | IREA received a Sun Park/LPB project package including valuation material. | Receipt does not prove acceptance of every figure or representation. |
+| 13–15 September 2017 | `PSRC-IREA-2017-03` | IREA arranged meetings with Laura Hernando, Miguel Vázquez and Fernando Banderas; the correspondence states that Miguel Vázquez and Fernando Banderas had been involved in Meridian. IREA then sought deeper knowledge of the transaction and coordinated next steps with Cuatrecasas. | The record does not identify every Meridian workstream or prove that LPB was in the 2014 IREA data room. |
+| 18 September 2017 | `PSRC-IREA-2017-04` | IREA received a detailed bridge-finance package for Sun Park/LPB, including the proposed acquisition of the Cerberus/Promontoria-secured debt and an exit from insolvency. | The proposal's figures and legal characterisations remain party statements requiring source-by-source testing. |
+| 20–25 September 2017 | `PSRC-IREA-2017-05` | IREA stated that it had reviewed the submitted information, spoken with Cuatrecasas and believed it could advise on debt raising; it set out structuring, marketing, lender, due-diligence, negotiation and coordination services and continued the review meetings. | No executed final mandate, lender contact, financing close or success fee was located in this finite scan. |
+
+## Public and official corroboration
+
+- SAREB's transaction notice identifies Project Meridian as a EUR 133 million portfolio secured by 26 hotel properties and names IREA as financial adviser and Cuatrecasas as legal adviser: <https://www.sareb.es/en/sareb-completes-institutional-transactions-valued-closed-to-e850-million/>
+- Colliers announced its controlling-interest acquisition and combination with IREA on 27 February 2018: <https://corporate.colliers.com/news/news-details/2018/Colliers-International-creates-top-tier-player-in-Spain-02-27-2018/default.aspx>
+- The official BORME notice records the June 2018 merger: IREA Corporate Finance, S.L. absorbed Colliers International Spain, S.L., acquired the latter's assets by universal succession and then adopted its name: <https://boe.es/diario_borme/txt.php?id=BORME-C-2018-5506>
+- Cinco Días independently reported the acquisition, integration and hotel leadership continuity through Miguel Vázquez and Laura Hernando: <https://cincodias.elpais.com/cincodias/2018/02/27/companias/1519739753_329751.html>
+- A 2017 sector report identifies Laura Hernando and Miguel Vázquez as the leaders of IREA's Hotels Division and describes its hotel-debt and financing work: <https://observatorioinmobiliario.es/noticias/organizaciones/irea-nombra-a-laura-hernando-nueva-socia-de-la-firma/>
+- Fernando Banderas Monis's current HIP biography states that he was previously Director in Hotels Corporate Finance at Colliers, formerly IREA, working across debt advisory, hotel NPL portfolios and restructuring: <https://hipartners.com/en/company/team/fernando-banderas>
+- Fernando Aguiar Acosta public professional profile: <https://es.linkedin.com/in/fernando-aguiar-acosta-894679235>
+- RIC Private Equity public company profile: <https://es.linkedin.com/company/ric-private-equity>
+
+## Evidence classification
+
+- **Direct evidence:** the September 2017 correspondence directly establishes IREA's receipt, review, meetings, Cuatrecasas coordination and proposed Sun Park/LPB debt-advisory scope.
+- **Direct public-profile evidence:** Fernando Aguiar Acosta's profile directly establishes the reported RIC Private Equity and Colliers roles.
+- **Official corporate continuity:** the BORME record establishes the legal merger and name-change mechanism; the Colliers notice and business media establish the operational integration.
+- **Circumstantial lead only:** the RICPE→Fernando Aguiar Acosta→Colliers sequence is relevant to preservation and interview questions, but does not prove Sun Park/Meridian knowledge, information transfer, intent or wrongdoing.
+- **Unresolved relationship:** no located primary or reliable public source proves that Fernando Aguiar Acosta is a son, nephew or other relative of José Daniel Acosta Matos, Laura Patricia Acosta Matos or another Acosta Matos family member.
+
+## Proposed witness / records-custodian lane
+
+Fernando Aguiar Acosta is classified as a **proposed witness or records-custodian interview candidate**, not an adverse actor. A lawful request or examination should be limited to his own knowledge of:
+
+1. his June–July 2024 RIC Private Equity duties, supervisors and project exposure;
+2. whether Sun Park, Hotel New Trend, MYND, Series F/G or related investment material was within that exposure;
+3. his summer 2026 Colliers Debt Advisory duties, recruitment route, team assignments and systems access;
+4. whether he saw or was briefed on any legacy IREA, Meridian, SAREB, Promontoria/Cerberus or LPB material;
+5. the accuracy of the proposed family relationship, which is not publicly asserted as fact; and
+6. preservation of relevant professional records within lawful scope.
+
+The repository does not purport to issue a summons or contact him. Any formal witness call must use the competent legal process. His evidence may confirm or refute the working hypothesis.
+
+## CAEPR / `^` result
+
+The finite identity presentation is controlled in [`caepr-caret-irea-ricpe-colliers-continuity-v1.json`](../../assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json). All 13 identity-eligible objects are resolved (`13/13 CARET_CONFIRMED`). Project Meridian, Sun Park and the alleged family relationship are not identity candidates; the relationship remains expressly unverified. A caret resolves identity only and does not establish relationship, knowledge, intent, control or liability.

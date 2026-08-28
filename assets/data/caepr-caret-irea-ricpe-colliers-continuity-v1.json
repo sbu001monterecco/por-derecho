@@ -1,0 +1,35 @@
+{
+  "schema": "por-derecho.caepr-caret-finite-presentation.v1",
+  "control_id": "PD-IREA-RICPE-COLLIERS-CARET-20260828-01",
+  "control_date": "2026-08-28",
+  "scope": "Identity-eligible people and organisations in the IREA-Meridian-Sun Park and Fernando Aguiar Acosta RICPE-Colliers continuity presentation",
+  "legend": "^ means exact identity resolved. It does not prove a relationship, knowledge, intent, control, wrongdoing or liability.",
+  "records": [
+    {"object_key":"AWESWELL","label":"Aweswell Limited","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0001"},
+    {"object_key":"LPB","label":"Luchy Playa Blanca, S.L.U.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0002"},
+    {"object_key":"SAREB","label":"Sociedad de Gestión de Activos Procedentes de la Reestructuración Bancaria, S.A.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0030"},
+    {"object_key":"PH122","label":"Promontoria Holding 122 B.V.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0021"},
+    {"object_key":"CUATRECASAS","label":"Cuatrecasas, Gonçalves Pereira, S.L.P.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0049"},
+    {"object_key":"IREA","label":"IREA Corporate Finance, S.L.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0072"},
+    {"object_key":"COLLIERS_SPAIN","label":"Colliers International Spain, S.L.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0073"},
+    {"object_key":"RICPE","label":"RIC Private Equity Investment Partners SCR, S.A.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0020"},
+    {"object_key":"JOSE_DANIEL_ACOSTA_MATOS","label":"José Daniel Acosta Matos","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0011"},
+    {"object_key":"FERNANDO_AGUIAR_ACOSTA","label":"Fernando Aguiar Acosta","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0088"},
+    {"object_key":"LAURA_HERNANDO","label":"Laura Hernando","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0089"},
+    {"object_key":"MIGUEL_VAZQUEZ","label":"Miguel Vázquez","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0090"},
+    {"object_key":"FERNANDO_BANDERAS_MONIS","label":"Fernando Banderas Monis","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0091"}
+  ],
+  "counts": {
+    "denominator": 13,
+    "CARET_CONFIRMED": 13,
+    "CARET_PENDING": 0,
+    "CARET_SUSPENDED": 0,
+    "coverage_percent": 100
+  },
+  "non_identity_exceptions": [
+    {"label":"Project Meridian","classification":"PROJECT_LABEL_NOT_CARET_ELIGIBLE"},
+    {"label":"Sun Park / Hotel Sun Park","classification":"ASSET_LABEL_NOT_CARET_ELIGIBLE"},
+    {"label":"Fernando Aguiar Acosta ↔ Acosta Matos family","classification":"RELATIONSHIP_NOT_IDENTITY; UNVERIFIED"}
+  ],
+  "verdict": "FINITE IDENTITY CENSUS COMPLETE; 13/13 CARET_CONFIRMED; RELATIONSHIP HYPOTHESIS REMAINS UNVERIFIED"
+}

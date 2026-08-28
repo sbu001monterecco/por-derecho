@@ -19,17 +19,19 @@ Separate legal personality remains the starting rule. Forensic perimeter treatme
 - Cerberus as the investment/decision context expressly invoked in the correspondence;
 - Bankia as a separately routed upstream/originator and residual-credit lane.
 
-## Project Meridian professional-adviser layer
+## Project Meridian and 2017 Sun Park professional-adviser layer
 
-SAREB's public transaction notice identifies **IREA Corporate Finance, S.L.** as financial adviser and **Cuatrecasas, Gonçalves Pereira** as legal adviser on the EUR 133 million Project Meridian hotel-loan sale. Colliers' 27 February 2018 announcement documents its acquisition of a controlling interest in IREA and combination of the Spanish operations.
+SAREB's public transaction notice identifies **IREA Corporate Finance, S.L.** as financial adviser and **Cuatrecasas, Gonçalves Pereira** as legal adviser on the EUR 133 million Project Meridian hotel-loan sale. Colliers' 27 February 2018 announcement documents its acquisition of a controlling interest in IREA and combination of the Spanish operations. The official June-2018 BORME notice gives the legal mechanism: IREA absorbed Colliers International Spain by universal succession and then adopted the Colliers name.
 
 The controlled continuity is therefore:
 
-`SAREB → IREA financial advice (2014) → IREA corporate continuity within Colliers Spain (from 2018)`
+`SAREB → IREA financial advice (2014) → IREA Sun Park/LPB review and proposed debt-advisory scope (September 2017) → legal and operational continuity under Colliers Spain (2018)`
 
-This does not establish that Colliers advised on Meridian in 2014, that either adviser reviewed LPB-level material, or that a current Colliers employee inherited or accessed historical Meridian information. Those questions require the engagement scopes, team lists, data-room index, asset-level workpapers, information barriers and custody/retention records.
+The September 2017 correspondence is direct evidence of LPB-level review in that later process: executed confidentiality, delivery and review of Sun Park/LPB valuation and restructuring materials, meetings, Cuatrecasas coordination and a proposed IREA debt-raising advisory scope. It names **Laura Hernando**, **Miguel Vázquez** and **Fernando Banderas Monis**; the correspondence states that Vázquez and Banderas had been involved in Meridian. It does not establish that LPB was inside the 2014 Meridian data room, that a final Sun Park engagement was executed, that lender outreach or financing occurred, or that the later Colliers platform retained a particular file.
 
-A separately captured 2026 public LinkedIn profile states that **Fernando Aguiar Acosta** joined Colliers Madrid as a summer Debt Advisory intern. The possible relationship to the Acosta Matos family is unresolved. Surname proximity is a lead only; it transfers no family status, historic involvement, knowledge, intent, control or responsibility.
+A separately captured public LinkedIn profile records **Fernando Aguiar Acosta** at RIC Private Equity in June–July 2024 and at Colliers Madrid as a summer 2026 Debt Advisory intern. This sequence is directly documented as professional history. It is circumstantial only as to any Sun Park/Meridian continuity hypothesis. The possible relationship to the Acosta Matos family remains unresolved; surname proximity transfers no family status, historic involvement, knowledge, intent, control or responsibility.
+
+The two Fernandos must not be confused. **Fernando Banderas Monis** is the IREA professional in the 2017 correspondence. **Fernando Aguiar Acosta** is the younger professional in the 2024–2026 RICPE→Colliers profile sequence.
 
 The perimeter is therefore one **decision-and-attribution workstream**, not one presumed legal person.
 
