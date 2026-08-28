@@ -113,9 +113,9 @@ The new continuity-spine scope is finite and exhaustive for its own hubs, graph,
 
 This scope is separate from:
 
-- the López Villarrubia / Meeting Point specialist module: **25/32**;
-- the eighteen-route first-hop census: **56/130**; and
-- the repository-wide unitary census: **19/24**.
+- the López Villarrubia / Meeting Point specialist module: **31/31 unique identities and 32/32 occurrence rows — ALL IS^ for its stated scope**;
+- the eighteen-route first-hop census: **61/130**; and
+- the repository-wide unitary census: **21/24**.
 
 A caret reconciles identity only. It proves no dated role, act, authority, knowledge, intent, relationship, conflict, concealment, causation, funding use, benefit, loss, liability or outcome. Key pending objects include the exact two German Meeting Point entities, exact FTI Touristik GmbH, the three German proceedings, CNMV, CNMC, Ithikios/provider identity, the RICPE System Responsible, BLUESEA/Portobello exact entities and the RICPE closure file as a canonical proceeding object.
 
@@ -187,4 +187,4 @@ The site is technically coherent and the FTI/Meeting Point/RICPE continuity laye
 
 The RICPE channel record supports urgent independent production and an additional lawful-alertador rationale, but deliberate hiding remains an allegation. The live privacy defect has been remediated; historical Git/cache and credential questions remain separate.
 
-The thread is **DELETION-SAFE WITH OPEN EVIDENCE** because its material reasoning, boundaries, action state, identity scopes, monitoring controls and restart set are recoverable from the merged repository and verified live website. Primary evidence remains open; all five caret scopes remain partial and separate at **39/65, 40/101, 25/32, 56/130 and 19/24**; historical cache/credential risk remains open; and disaster recovery is not claimed. No email, resend, forward, filing, RedSARA/AGE notification, portal submission or authority contact is authorised by this digest or by deletion of the thread.
+The thread is **DELETION-SAFE WITH OPEN EVIDENCE** because its material reasoning, boundaries, action state, identity scopes, monitoring controls and restart set are recoverable from the merged repository and verified live website. Primary evidence remains open; the caret scopes remain separate at **39/65, 43/101, specialist 31/31 unique identities and 32/32 occurrence rows, 61/130 and 21/24**. Only the stated specialist scope is `ALL IS^`; historical cache/credential risk remains open; and disaster recovery is not claimed. No email, resend, forward, filing, RedSARA/AGE notification, portal submission or authority contact is authorised by this digest or by deletion of the thread.

@@ -4,7 +4,16 @@
 **Full rerun:** 27 August 2026
 **Machine control:** `assets/data/caepr-caret-alberto-meeting-point-357-v1.json`
 **Scope:** the two ES/EN hubs, machine matrix, human matrix, this specialist audit and authority plan
-**Status:** `PUBLIC-SAFE / EXHAUSTIVE SIX-SURFACE SCOPE / PARTIAL — NOT ALL IS^`
+**Status at original rerun:** `PUBLIC-SAFE / EXHAUSTIVE SIX-SURFACE SCOPE / PARTIAL — NOT ALL IS^`
+
+> **Superseding closure — 28 August 2026.** The seven-item exception queue
+> below is retained as historical audit evidence but is no longer current. The
+> six unique identities represented by those seven role rows are now admitted,
+> producing **31/31 unique identities and 32/32 occurrence rows confirmed, zero
+> pending — ALL IS^ for this stated six-surface scope**. See
+> `archive/ALBERTO_MEETING_POINT_357_SEVEN_CARET_CLOSURE_28AUG2026.md` and the
+> current machine control. Identity confirmation does not prove conduct,
+> liability, jurisdictional acceptance, merits or outcome.
 
 For the disputed 24 October 2024 item, the controlled description is **an act
 attributed in the register to Magistrate-Judge D. Alberto López Villarrubia in

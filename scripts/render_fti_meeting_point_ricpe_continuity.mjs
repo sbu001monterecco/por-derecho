@@ -98,7 +98,7 @@ try {
           canonicalMonitorLink: Boolean(document.querySelector('a[href*="fti-meeting-point-canary-spain-asset-transaction-register-v1.json"]')),
           monitorRows: document.querySelectorAll('[data-fmr-watch] [data-watch-id]').length,
           monitorError: Boolean(document.querySelector('[data-fmr-watch] .fm-watch__error')),
-          professionalCaretCounts: /40\s+(?:de|of|von)\s+101/i.test(bodyText) && /61\s+(?:pendientes|pending|offen)/i.test(bodyText),
+          professionalCaretCounts: /43\s+(?:de|of|von)\s+101/i.test(bodyText) && /58\s+(?:pendientes|pending|offen)/i.test(bodyText),
           actionCount: bodyText.includes(actionMarkers[language]),
           channelCards: document.querySelectorAll(`#${channelId} .proof-grid .card`).length,
           multidirectionalLinks: document.querySelectorAll(`#${linkId} .link-grid a`).length,
@@ -134,7 +134,7 @@ try {
       if (!metrics.graphLink || !metrics.caretLink || !metrics.professionalCaretLink || !metrics.actionLink) failures.push(`${prefix}: machine-control links incomplete`);
       if (!metrics.derivedMonitorLink || !metrics.canonicalMonitorLink) failures.push(`${prefix}: derived/canonical monitor links incomplete`);
       if (metrics.monitorRows !== 6 || metrics.monitorError) failures.push(`${prefix}: expected six error-free monitor rows, got ${metrics.monitorRows}`);
-      if (!metrics.professionalCaretCounts) failures.push(`${prefix}: expanded 40/101 and 61-pending caret state missing`);
+      if (!metrics.professionalCaretCounts) failures.push(`${prefix}: expanded 43/101 and 58-pending caret state missing`);
       if (!metrics.actionCount) failures.push(`${prefix}: 31-action marker missing`);
       if (metrics.channelCards !== 3) failures.push(`${prefix}: expected three channel evidence-state cards, got ${metrics.channelCards}`);
       if (metrics.multidirectionalLinks !== 6) failures.push(`${prefix}: expected six multidirectional links, got ${metrics.multidirectionalLinks}`);

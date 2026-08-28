@@ -1,19 +1,19 @@
 {
   "schema": "por-derecho.caepr-caret-scope.v1",
   "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
-  "control_date": "2026-08-26",
+  "control_date": "2026-08-28",
   "scope": "Immediately preceding unitary non-fragmented reverse-engineered digest and the distinct named eligible CAEPR objects on which it materially relied.",
   "protocol": ".github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md",
   "registry_id": "PD-SP-IDENTITY-REGISTRY-001",
-  "baseline_sha": "f130aba11d0dded3a925e206885a7e9b29e70d75",
+  "baseline_sha": "6f406db2c6c4eb6cf69fc3ce4e6fab0b3de7052a",
   "result": {
     "verdict": "PARTIAL_NOT_ALL_IS_CARET",
     "denominator": 24,
-    "confirmed": 19,
-    "pending": 5,
+    "confirmed": 21,
+    "pending": 3,
     "suspended": 0,
-    "coverage_fraction": "19/24",
-    "coverage_percent_exact": "79.16666666666667",
+    "coverage_fraction": "21/24",
+    "coverage_percent_exact": "87.5",
     "counts_by_type": {
       "PERSON": 1,
       "ORGANISATION": 17,
@@ -37,6 +37,7 @@
     {"id":"PD-SP-O-0050","type":"ORGANISATION","name":"J&A Garrigues, S.L.P.","state":"CARET_CONFIRMED"},
     {"id":"PD-SP-O-0020","type":"ORGANISATION","name":"RIC Private Equity Investment Partners SCR, S.A.","state":"CARET_CONFIRMED"},
     {"id":"PD-SP-O-0042","type":"ORGANISATION","name":"MYND Yaiza","state":"CARET_CONFIRMED","identity_boundary":"Confirmed as the named brand/project registry object; this is not a legal-person attribution."},
+    {"id":"PD-SP-O-0075","type":"ORGANISATION","name":"Clubotel La Dorada, S.L.","aliases_in_scope":["exact ONA-side legal person for the 6 June 2018 funded-exit operating instrument"],"state":"CARET_CONFIRMED","identity_boundary":"This resolves the Clubotel legal person and that instrument-specific ONA-side role only. It does not collapse the wider ONA Hotels commercial perimeter into Clubotel or attribute every ONA act to this company."},
     {"id":"PD-SP-P-0011","type":"PERSON","name":"José Daniel Acosta Matos","state":"CARET_CONFIRMED","identity_boundary":"Identity confirmation does not establish the presidency/capacity proposition on any date."},
     {"id":"PD-SP-I-0002","type":"INSTITUTION","name":"Ministerio Fiscal / Fiscalía","state":"CARET_CONFIRMED","identity_boundary":"Confirmed at the general institution level only; territorial office, unit and prosecutor remain separate identity questions."},
     {"id":"PD-SP-R-0001","type":"PROCEEDING","name":"Concurso 36/2012 — Luchy Playa Blanca, S.L.","display_alias":"Concurso 36/2012","state":"CARET_CONFIRMED"},
@@ -51,22 +52,6 @@
       "state":"CARET_PENDING",
       "reason":"The federated registry record still carries an exact-entity-open status even though ops/CANONICAL_ENTITY_NAMES.json records Matkator, S.L.U., NIF B76621689, sheet TF 52875 and a BORME source.",
       "next_step":"Reconcile PD-SP-O-0003 and the operational exact-identity queue to the canonical-name control, then rerun this scope."
-    },
-    {
-      "candidate":"Ona Hotels / ONA",
-      "existing_id":"PD-SP-O-0033",
-      "type":"ORGANISATION",
-      "state":"CARET_PENDING",
-      "reason":"Current CAEPR record is expressly a controlled perimeter label with the exact legal entity open.",
-      "next_step":"Identify the exact ONA legal person for each relevant 2018 instrument/mandate."
-    },
-    {
-      "candidate":"Clubotel La Dorada, S.L.",
-      "existing_id":null,
-      "type":"ORGANISATION",
-      "state":"CARET_PENDING",
-      "reason":"The funded-exit source spine uses this exact legal name but the current 185-object CAEPR does not contain an immutable organisation record.",
-      "next_step":"Admit the legal person after source/identifier reconciliation and link its ONA/Clubotel capacities without collapsing distinct entities."
     },
     {
       "candidate":"PP 1041/2017",

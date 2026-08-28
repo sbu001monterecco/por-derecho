@@ -216,20 +216,20 @@ The complete certified Concurso 36/2012 file, current RPL 2523/2025 status, PP 1
 
 ## 6. CAEPR caret correction
 
-The live finite unitary caret digest on current `main` remains:
+The finite unitary caret digest after the 28-August principal-scope closure is:
 
-- **19 / 24 confirmed**;
-- **5 pending**;
+- **21 / 24 confirmed**;
+- **3 pending**;
 - verdict: `PARTIAL — NOT ALL IS^`.
 
 A previously prepared local 24/24 package was based on the earlier `16dd443...` repository state. It is **not mergeable as-is** because:
 
 - the source-base registry was 194, the separately controlled Magistrate López Villarrubia / Meeting
   Point release advanced the then-live-verified registry to 204, fetched origin/main later reached
-  210, and the present combined source/static registry is 214; none of those states validates the stale package's assumptions;
+  210, and the present combined source/static registry is 221; none of those states validates the stale package's assumptions;
 - proceeding IDs `PD-SP-R-0011` through `PD-SP-R-0017` are now occupied;
-- Matkator and ONA remain controlled perimeter labels requiring current-source reconciliation;
-- Clubotel La Dorada is not yet admitted as a separate current-registry organisation;
+- Matkator remains a registry-state reconciliation exception;
+- Clubotel La Dorada is admitted at `PD-SP-O-0075` and resolves the instrument-specific ONA-side role without collapsing the wider ONA perimeter;
 - PP 1041 and EH 94 are not yet admitted as current-registry proceedings.
 
 Future closure must rebase on current `main`, preserve immutable IDs, complete the full census and allocate only non-conflicting IDs. No repository or public page may make an unqualified or repository-wide `ALL IS^` claim for this 24-object unitary census until that current-main closure has merged and been exactly read back.
@@ -238,27 +238,29 @@ Future closure must rebase on current `main`, preserve immutable IDs, complete t
 
 `PD-ALV-MP357-MULTI-20260827-01` is a separate criminal-first,
 multidirectional evidence module. It does not add to, subtract from or close the
-repository-wide 19/24 census above.
+repository-wide 21/24 census above.
 
-Its exhaustive specialist census is **25/32 confirmed, 7 pending — PARTIAL,
-NOT ALL IS^**. The 32-object denominator covers every identity-eligible named
+Its exhaustive specialist census is **31/31 unique identities and 32/32
+occurrence rows confirmed, zero pending — ALL IS^ for this stated scope**. The
+32-row denominator covers every identity-eligible named
 person, organisation or controlled entity perimeter, institution and proceeding
 appearing across the paired hubs, machine matrix, human matrix, specialist audit
 and authority plan. Ten non-colliding immutable identities were admitted and the
 existing `PD-SP-O-0038` was reused expressly as the Meeting Point Hotels
 commercial perimeter—not as an exact Club Sei contracting entity. A caret
-continues to prove identity only; unresolved FTI, ONA and Clubotel legal-person
-perimeters, three authority labels and Alzada 286/2026 remain visibly pending.
+continues to prove identity only. Meeting Point Hotelmanagement Holding GmbH,
+instrument-specific Clubotel/ONA, the TSJ chamber, Fiscalía office/registry,
+Tribunal de Cuentas and Alzada 286/2026 are now resolved with express limits.
 
 That six-surface denominator is now supplemented—not replaced—by a completed
 first-hop corpus scan of the eighteen reciprocal primary evidence routes. After
 deduplicating faithful ES/EN pairs without following deeper links, the full
 route-body denominator is **130: 27 people, 64 organisations or expressly
 controlled perimeters, 25 institutions or sub-organs and 14 proceedings**.
-The result is **56 confirmed, 74 pending, 0 suspended — PARTIAL, NOT ALL IS^**
-(43.076923…%). It overlaps 31 core objects and adds 99; every pending object has
-an exact source-completion target. It does not change the core 25/32 result or
-the repository-wide 19/24 result. Object-level confirmation does not authorise
+The result is **61 confirmed, 69 pending, 0 suspended — PARTIAL, NOT ALL IS^**
+(46.923076…%). It overlaps 31 core objects and adds 99; every pending object has
+an exact source-completion target. It does not change the specialist all-is
+scope or the repository-wide 21/24 result. Object-level confirmation does not authorise
 a caret on an unresolved shorthand or source literal.
 
 The module reads every bridge in two directions:
@@ -299,11 +301,11 @@ readback. It does not rewrite the immutable `8e8e83c5...` historical
 source-base snapshot.
 
 The module keeps two new identity-only censuses separate from one another and
-from the 25/32, 56/130 and repository-wide 19/24 scopes above:
+from the 32/32 occurrence-row specialist, 61/130 and repository-wide 21/24 scopes above:
 
 - continuity spine: **39/65 confirmed, 26 pending, 0 suspended — PARTIAL, NOT ALL IS^**;
 - role-selected Germany/Spain/EU professional and institutional census:
-  **40/101 confirmed, 61 pending, 0 suspended — PARTIAL, NOT ALL IS^**.
+  **43/101 confirmed, 58 pending, 0 suspended — PARTIAL, NOT ALL IS^**.
 
 Neither caret proves role, act, authority, knowledge, intent, relationship,
 conflict, concealment, causation, funding use, benefit, loss, liability or
@@ -366,8 +368,8 @@ Controls:
 5. Obtain the certified RPL 2523/2025 and complete Concurso 36/2012 denominators.
 6. Obtain the CEXP succession and 7-June authority records.
 7. Reconcile the separate 24-object CAEPR caret scope against the current
-   214-ID source/static registry; do not treat the Magistrate López Villarrubia / Meeting Point
-   specialist 25/32 partial census as changing the five unitary pending objects.
+   221-ID source/static registry; keep the Magistrate López Villarrubia / Meeting Point
+   specialist all-is scope separate from the three unitary pending objects.
 8. Reconcile/close stale PRs by verified delta, not wholesale merge.
 
 ### P1

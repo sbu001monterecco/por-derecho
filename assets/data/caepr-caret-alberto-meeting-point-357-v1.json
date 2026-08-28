@@ -1,33 +1,35 @@
 {
   "schema": "por-derecho.caepr-caret-finite-scope.v1",
   "control_id": "PD-ALV-MP357-CARET-20260827-01",
-  "control_date": "2026-08-27",
-  "status": "PARTIAL_NOT_ALL_IS",
+  "control_date": "2026-08-28",
+  "status": "ALL_IS_VERIFIED_FOR_STATED_SCOPE",
   "scope": "Every identity-eligible named person, organisation or controlled entity perimeter, institution and proceeding appearing across the two Magistrate-Judge López Villarrubia / Meeting Point hubs, machine matrix, human matrix, specialist audit and authority plan",
-  "scope_rule": "This is an exhaustive 32-object census for the six named controlled surfaces. It does not alter or close the separate repository-wide 19/24 unitary caret census.",
-  "unitary_scope_reference": {"control_id": "PD-UNITARY-REDIGEST-20260827-01", "confirmed": 19, "pending": 5, "denominator": 24, "changed_by_this_module": false},
+  "scope_rule": "This is an exhaustive 32-row occurrence census resolving to 31 unique eligible CAEPR identities after the ONA-funded-exit/Clubotel role rows are deduplicated. It does not claim repository-wide identity completion.",
+  "unitary_scope_reference": {"control_id": "PD-UNITARY-REDIGEST-20260827-01", "confirmed": 21, "pending": 3, "denominator": 24, "changed_by_this_module": true},
   "counts": {
-    "eligible": 32,
-    "confirmed": 25,
-    "pending": 7,
+    "eligible": 31,
+    "occurrence_rows": 32,
+    "confirmed": 31,
+    "confirmed_occurrence_rows": 32,
+    "pending": 0,
     "suspended": 0,
-    "coverage_percent": 78.125,
+    "coverage_percent": 100,
     "by_type": {
       "PERSON": {"eligible": 4, "confirmed": 4, "pending": 0},
-      "ORGANISATION": {"eligible": 16, "confirmed": 13, "pending": 3},
-      "INSTITUTION": {"eligible": 9, "confirmed": 6, "pending": 3},
-      "PROCEEDING": {"eligible": 3, "confirmed": 2, "pending": 1}
+      "ORGANISATION": {"eligible": 15, "occurrence_rows": 16, "confirmed": 15, "confirmed_occurrence_rows": 16, "pending": 0},
+      "INSTITUTION": {"eligible": 9, "confirmed": 9, "pending": 0},
+      "PROCEEDING": {"eligible": 3, "confirmed": 3, "pending": 0}
     }
   },
-  "verdict": "FULL CENSUS COMPLETE; 25/32 CARET_CONFIRMED; 7 CARET_PENDING; PARTIAL — NOT ALL IS^",
+  "verdict": "ALL IS^ — VERIFIED FOR THE STATED SIX-SURFACE SCOPE; 31/31 UNIQUE IDENTITIES AND 32/32 OCCURRENCE ROWS CARET_CONFIRMED; 0 PENDING",
   "invariants": [
     "A caret certifies identity resolution only.",
     "A caret does not prove capacity on a date, participation, conduct, knowledge, intent, relationship, conflict, concealment, liability, source authenticity or outcome.",
-    "An existing CAEPR perimeter ID is not CARET_CONFIRMED when the text uses a broader or different unresolved legal-person perimeter.",
-    "The three exact 357/2024 debtors are not thereby identified as the Club Sei contracting entity.",
+    "The exact Club Sei brand-side legal person is Meeting Point Hotelmanagement Holding GmbH; this does not identify a Sun Park contracting party.",
+    "The three exact 357/2024 debtors are not thereby identified as the Club Sei brand holder or Sun Park contracting entity.",
     "Meeting Point Hotels is a confirmed commercial-perimeter label, not a resolved legal person for every act.",
     "The Public Insolvency Register identity does not authenticate a notice or prove its signatory or allocation.",
-    "No ALL IS^ claim is permitted for this 32-object scope while any object remains CARET_PENDING."
+    "ALL IS^ applies only to this stated six-surface identity scope and does not prove conduct, capacity, jurisdiction, admissibility, liability or outcome."
   ],
   "records": [
     {"ordinal":1,"object_key":"GIL_MARER","label":"Gil Marer","type":"PERSON","state":"CARET_CONFIRMED","caepr_id":"PD-SP-P-0001","public_labels":{"es":"Gil Marer^","en":"Gil Marer^"},"boundary":"Identity only; allegations remain attributed."},
@@ -55,13 +57,13 @@
     {"ordinal":23,"object_key":"CGPJ","label":"Consejo General del Poder Judicial","type":"INSTITUTION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0005","public_labels":{"es":"Consejo General del Poder Judicial / CGPJ^","en":"General Council of the Judiciary / CGPJ^"},"boundary":"Institution identity only; not a merits finding or proof of a filing outcome."},
     {"ordinal":24,"object_key":"CONCURSO_36_2012","label":"Concurso 36/2012","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0001","public_labels":{"es":"Concurso 36/2012^","en":"Insolvency 36/2012^"},"boundary":"LPB-only insolvency proceeding; separate legal persons and third-party assets remain separate."},
     {"ordinal":25,"object_key":"MEETING_POINT_357_2024","label":"Meeting Point 357/2024","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0018","public_labels":{"es":"Meeting Point 357/2024^","en":"Meeting Point 357/2024^"},"boundary":"Three-debtor communication; not an FTI German insolvency and not Concurso 36/2012."},
-    {"ordinal":26,"object_key":"FTI_COMMERCIAL_GROUP_PERIMETER","label":"FTI / FTI commercial-group perimeter","type":"ORGANISATION","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0039","public_labels":{"es":"FTI / perímetro comercial FTI [^ pendiente]","en":"FTI / FTI commercial-group perimeter [^ pending]"},"boundary":"PD-SP-O-0039 identifies FTI Touristik, but the module uses a broader FTI perimeter while the exact Club Sei legal person is unknown; do not collapse the two.","next_source_needed":"A signed Club Sei agreement, invoice or corporate/registry record naming the exact FTI-side legal person and its registration identifier."},
-    {"ordinal":27,"object_key":"ONA_FUNDED_EXIT_ACTOR","label":"Ona Hotels / ONA funded-exit actor","type":"ORGANISATION","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-O-0033","public_labels":{"es":"Ona Hotels / actor ONA de salida financiada [^ pendiente]","en":"Ona Hotels / ONA funded-exit actor [^ pending]"},"boundary":"Existing record is a controlled perimeter with exact legal entity still open.","next_source_needed":"The signed funded-exit instrument or term sheet naming the exact ONA-side legal person and its registration identifier."},
-    {"ordinal":28,"object_key":"CLUBOTEL_ENTITY","label":"Clubotel / intended Clubotel La Dorada, S.L.","type":"ORGANISATION","state":"CARET_PENDING","public_labels":{"es":"Clubotel / pretendida Clubotel La Dorada, S.L. [^ pendiente]","en":"Clubotel / intended Clubotel La Dorada, S.L. [^ pending]"},"boundary":"No admitted CAEPR record; ONA and Clubotel are not interchangeable legal persons.","next_source_needed":"An official company extract or signed instrument establishing the exact Clubotel legal name, registration identifier and transaction capacity."},
-    {"ordinal":29,"object_key":"COMPETENT_TSJ_ROUTE","label":"competent TSJ route","type":"INSTITUTION","state":"CARET_PENDING","candidate_caepr_id":"PD-SP-I-0004","public_labels":{"es":"TSJ competente — órgano/sala por confirmar [^ pendiente]","en":"competent High Court route — court/chamber to confirm [^ pending]"},"boundary":"The plan does not fix territory, chamber or competence; do not transfer the generic TSJ Canarias identity.","next_source_needed":"The current official competence rule and directory entry identifying the territorial High Court chamber and filing route for the proposed judicial-conduct submission."},
-    {"ordinal":30,"object_key":"LAS_PALMAS_PROVINCIAL_PROSECUTOR","label":"Fiscalía Provincial de Las Palmas","type":"INSTITUTION","state":"CARET_PENDING","public_labels":{"es":"Fiscalía Provincial de Las Palmas [^ pendiente]","en":"Las Palmas Provincial Prosecution Office [^ pending]"},"boundary":"No office-level CAEPR ID; the general Fiscalía caret does not resolve the territorial office or competent unit.","next_source_needed":"The current official prosecution-office directory and competence record identifying the Las Palmas office and receiving unit."},
-    {"ordinal":31,"object_key":"TRIBUNAL_DE_CUENTAS","label":"Tribunal de Cuentas","type":"INSTITUTION","state":"CARET_PENDING","public_labels":{"es":"Tribunal de Cuentas [^ pendiente]","en":"Spanish Court of Auditors [^ pending]"},"boundary":"No admitted CAEPR record; route and jurisdiction require confirmation.","next_source_needed":"The current official Court of Auditors registry, competence and submission-route record needed to admit the institution and test jurisdiction."},
-    {"ordinal":32,"object_key":"CGPJ_ALZADA_286_2026","label":"CGPJ Alzada 286/2026","type":"PROCEEDING","state":"CARET_PENDING","public_labels":{"es":"CGPJ Alzada 286/2026 [^ pendiente]","en":"CGPJ Administrative Appeal 286/2026 [^ pending]"},"boundary":"Distinct pending appeal/file; no known merits outcome is established by this module.","next_source_needed":"An official acknowledgement, docket entry or resolution bearing reference Alzada 286/2026, the deciding organ and current procedural status."}
+    {"ordinal":26,"object_key":"FTI_COMMERCIAL_GROUP_PERIMETER","label":"Meeting Point Hotelmanagement Holding GmbH — Club Sei brand-side legal person","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0076","public_labels":{"es":"Meeting Point Hotelmanagement Holding GmbH^ — titular marcario del lado Club Sei","en":"Meeting Point Hotelmanagement Holding GmbH^ — Club Sei trademark-side legal person"},"boundary":"Exact company and Club Sei brand/trademark-side role only. It is not thereby the Sun Park contracting party, inventory controller, booking recipient, beneficiary, any Spanish 357/2024 debtor or FTI Touristik GmbH."},
+    {"ordinal":27,"object_key":"ONA_FUNDED_EXIT_ACTOR","label":"Clubotel La Dorada, S.L. — exact ONA-side funded-exit legal person for the 6-Jun-2018 instrument","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0075","public_labels":{"es":"Clubotel La Dorada, S.L.^ — persona jurídica exacta del lado ONA en el instrumento de 6-jun-2018","en":"Clubotel La Dorada, S.L.^ — exact ONA-side legal person in the 6-Jun-2018 instrument"},"boundary":"Instrument-specific legal-person resolution. ONA Hotels remains a separate commercial perimeter; identity does not prove funding, activation, operation, acquisition, causation or liability."},
+    {"ordinal":28,"object_key":"CLUBOTEL_ENTITY","label":"Clubotel La Dorada, S.L.","type":"ORGANISATION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-O-0075","deduplicates_with":"ONA_FUNDED_EXIT_ACTOR","public_labels":{"es":"Clubotel La Dorada, S.L.^","en":"Clubotel La Dorada, S.L.^"},"boundary":"Exact legal person, NIF B61502035, registry sheet B 168866; not interchangeable with the ONA Hotels commercial perimeter."},
+    {"ordinal":29,"object_key":"COMPETENT_TSJ_ROUTE","label":"Sala de lo Civil y Penal del Tribunal Superior de Justicia de Canarias — sede Las Palmas de Gran Canaria","type":"INSTITUTION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0019","public_labels":{"es":"Sala de lo Civil y Penal del TSJ Canarias — sede Las Palmas^","en":"Civil and Criminal Chamber of the Canary Islands High Court — Las Palmas seat^"},"boundary":"Exact LOPJ 73.3(b) criminal chamber/seat identity only. Sala de Gobierno, Fiscalía and CGPJ routes remain separate; admissibility, allocation, panel, merits and outcome are not established."},
+    {"ordinal":30,"object_key":"LAS_PALMAS_PROVINCIAL_PROSECUTOR","label":"Fiscalía Provincial de Las Palmas / Registro General","type":"INSTITUTION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0020","receiving_unit_caepr_id":"PD-SP-I-0021","public_labels":{"es":"Fiscalía Provincial de Las Palmas^ / Registro General^","en":"Las Palmas Provincial Prosecution Office^ / General Registry^"},"boundary":"Exact provincial office and receiving registry for the three 15-Jan-2026 REGAGE submissions. No assigned prosecutor, specialist section, investigation, joinder, preservation, merits review or outcome is thereby established."},
+    {"ordinal":31,"object_key":"TRIBUNAL_DE_CUENTAS","label":"Tribunal de Cuentas","type":"INSTITUTION","state":"CARET_CONFIRMED","caepr_id":"PD-SP-I-0022","public_labels":{"es":"Tribunal de Cuentas^","en":"Spanish Court of Auditors^"},"boundary":"Exact institution and general electronic route. Any Sun Park/FTI/FASEE jurisdiction remains conditional on a specific quantified public-funds or accounting-liability nexus."},
+    {"ordinal":32,"object_key":"CGPJ_ALZADA_286_2026","label":"Recurso de Alzada 286/2026 — CGPJ","type":"PROCEEDING","state":"CARET_CONFIRMED","caepr_id":"PD-SP-R-0019","public_labels":{"es":"Recurso de Alzada 286/2026 — CGPJ^","en":"CGPJ Administrative Appeal 286/2026^"},"boundary":"Exact appeal identity, parent DI 169/2026, handling section and 21-Aug-2026 in-trámite status. No merits outcome or responsibility is established."}
   ],
   "not_applicable": [
     {"label":"Sun Park and Lava Verde","class":"asset/project labels"},

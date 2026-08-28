@@ -78,12 +78,12 @@
     "denominator": 65,
     "verdict": "FULL_FINITE_CONTINUITY_SPINE_CENSUS_PARTIAL_NOT_ALL_IS",
     "identity_only": true,
-    "separate_from": ["25/32 specialist", "56/130 first-hop", "19/24 repository-wide unitary"]
+    "separate_from": ["31/31 unique and 32/32 occurrence-row specialist all-is scope", "61/130 first-hop", "21/24 repository-wide unitary"]
   },
   "professional_institutional_caret_scope": {
     "control_id": "PD-FTI-MP-PROF-INST-CARET-20260827-01",
-    "confirmed": 40,
-    "pending": 61,
+    "confirmed": 43,
+    "pending": 58,
     "suspended": 0,
     "denominator": 101,
     "verdict": "FULL_ROLE_SELECTED_CENSUS_PARTIAL_NOT_ALL_IS",

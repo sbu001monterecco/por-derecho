@@ -198,8 +198,8 @@ def validate_professional_institutional_caret() -> None:
     counts = data.get("counts", {})
     check(
         (counts.get("eligible"), counts.get("confirmed"), counts.get("pending"), counts.get("suspended"))
-        == (101, 40, 61, 0),
-        "professional caret count split is not 101/40/61/0",
+        == (101, 43, 58, 0),
+        "professional caret count split is not 101/43/58/0",
     )
     check("PARTIAL — NOT ALL IS^" in str(data.get("verdict", "")), "professional caret verdict missing")
 
@@ -285,9 +285,9 @@ def validate_pages() -> None:
         check(f'data-fmr-language="{language}"' in text, f"{language} page lacks language marker")
         check(len(re.findall(r'data-causal-node="FMR-N\d{2}"', text)) == 10, f"{language} page lacks ten causal nodes")
         check("39/65" in text or "39 of 65" in text or "39 von 65" in text, f"{language} page lacks 39/65 caret result")
-        check("40/101" in text or "40 of 101" in text or "40 von 101" in text or "40 de 101" in text, f"{language} page lacks 40/101 professional caret result")
+        check("43/101" in text or "43 of 101" in text or "43 von 101" in text or "43 de 101" in text, f"{language} page lacks 43/101 professional caret result")
         check("31" in text and ("ACCIONES CONTROLADAS" in text or "CONTROLLED ACTIONS" in text or "KONTROLLIERTE MASSNAHMEN" in text), f"{language} page lacks 31-action marker")
-        check("56/130" in text and "25/32" in text and "19/24" in text, f"{language} page merges or omits separate caret scopes")
+        check("61/130" in text and "31/31" in text and "32/32" in text and "21/24" in text, f"{language} page merges or omits separate caret scopes")
         check("HOLD" in text, f"{language} page lacks external-action hold")
         check("fti-meeting-point-ricpe-causal-evidence-v1.json" in text, f"{language} page lacks graph link")
         check("caepr-caret-fti-meeting-point-ricpe-continuity-v1.json" in text, f"{language} page lacks caret link")
@@ -395,7 +395,7 @@ print("FTI / Meeting Point / RICPE continuity validation: PASS")
 print("- privacy-safe RICPE correlation and zero exact-code exposure")
 print("- 10-node / 12-edge multidirectional criminal-first graph")
 print("- full finite caret census: 39/65 confirmed; 26 pending; partial")
-print("- professional/institutional caret census: 40/101 confirmed; 61 pending; partial")
+print("- professional/institutional caret census: 43/101 confirmed; 58 pending; partial")
 print("- public-source asset transaction monitor: 3 scopes; 12 sources; no automatic promotion")
 print("- 31 cross-border actions and full 18-file/proceeding mapping; all external authority false")
 print("- ES/EN/DE hubs, reciprocal loader, sitemaps and canonical registers")
