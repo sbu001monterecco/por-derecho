@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "PD-CHATBOT-MEDIA-DESK-20260828-01",
   "control_date": "2026-08-28",
-  "current_state": "REMOTE_SOURCE",
+  "current_state": "DELETION_SAFE",
   "owner": "Por Derecho / Project Sun Rock",
   "base_sha": "e6e4d94bfc504b0e79d73d054ff754e6d4f9275c",
   "publication_authorized": true,
@@ -45,7 +45,12 @@
       "python3 scripts/validate_audience_experience.py",
       "git diff --check"
     ],
-    "evidence": []
+    "evidence": [
+      "PR #1166 reviewed head 5ef954f93fa4e6707a9e2ce16834a6385f5f841f completed all 10 triggered workflows successfully.",
+      "Publication integrity gate run 33201978239 / #2141 completed successfully on the reviewed head.",
+      "Off-GitHub Preservation Snapshot run 33201978242 / #1226 completed successfully on the reviewed head.",
+      "Local specialist, repository-preservation, publication-integrity, audience-experience and git diff checks passed against base e6e4d94bfc504b0e79d73d054ff754e6d4f9275c."
+    ]
   },
   "boundaries": [
     "Recovery is an objective, not a forecast.",
@@ -55,6 +60,35 @@
     "No email, publication, filing, authority contact, product deployment, credential creation or billing change is authorised by this record.",
     "The prior executable source was not recovered; this package preserves a reconstructible specification, not a working application."
   ],
+  "merge_sha": "30d99da0ddc21f9e1897bb22b9cce09da808395b",
+  "deployment_evidence": {
+    "workflow": "pages build and deployment",
+    "pages_run_id": 33202212390,
+    "pages_run_number": 1236,
+    "head_sha": "30d99da0ddc21f9e1897bb22b9cce09da808395b",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/CHATBOT_MEDIA_INQUIRY_DESK_CONTROL_28AUG2026.md",
+    "https://sbu001monterecco.github.io/por-derecho/docs/deletion-audits/2026-08-28-chatbot-media-inquiry-desk-thread-closeout.md",
+    "https://sbu001monterecco.github.io/por-derecho/publication-manifests/chatbot-media-inquiry-desk-continuity-20260828.json",
+    "https://sbu001monterecco.github.io/por-derecho/scripts/validate_chatbot_media_inquiry_desk_continuity.py",
+    "https://sbu001monterecco.github.io/por-derecho/CHATGPT_START_HERE.md"
+  ],
+  "live_verification_evidence": {
+    "verified_at": "2026-08-28T19:07:40Z",
+    "source_merge_sha": "30d99da0ddc21f9e1897bb22b9cce09da808395b",
+    "result": "5_OF_5_EXACT_BYTES_MATCHED",
+    "sha256": {
+      "CHATBOT_MEDIA_INQUIRY_DESK_CONTROL_28AUG2026.md": "c574574c9e68b2fff482685a7619900322bf529b657dd4fdec76c485e58be44b",
+      "docs/deletion-audits/2026-08-28-chatbot-media-inquiry-desk-thread-closeout.md": "32207a92124365d4ff87afe93a06f9b1bcb527db89ae822f5d08338b5510be75",
+      "publication-manifests/chatbot-media-inquiry-desk-continuity-20260828.json": "7bcfdff57afa635c4db3b7226d09dc330a0f5d1b0c717833467830bc505eae93",
+      "scripts/validate_chatbot_media_inquiry_desk_continuity.py": "e5b598d6b47ff91ba6c509a1ed4ef0a3560207e4bc56726e94dbbc2cfe81f512",
+      "CHATGPT_START_HERE.md": "681952fb37183a2b88ebb2c449cae6a94e2277cfcaa3eee2da287be159bd6775"
+    },
+    "boundary": "This verifies public retrieval of the source-preservation merge. The closeout PR changes state/evidence records only; it does not release an executable chatbot."
+  },
   "deletion_record": "docs/deletion-audits/2026-08-28-chatbot-media-inquiry-desk-thread-closeout.md",
-  "target_deletion_status": "DELETION_SAFE_WITH_OPEN_IMPLEMENTATION"
+  "deletion_status": "DELETION_SAFE_WITH_OPEN_IMPLEMENTATION"
 }

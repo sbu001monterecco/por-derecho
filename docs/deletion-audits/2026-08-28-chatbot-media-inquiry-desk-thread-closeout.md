@@ -6,7 +6,7 @@
 
 **Initial package state:** `REMOTE_SOURCE` after remote branch preservation
 
-**Target verdict after merge/live readback:** `DELETION-SAFE WITH OPEN IMPLEMENTATION`
+**Current verdict:** `DELETION-SAFE WITH OPEN IMPLEMENTATION`
 
 ## Scope preserved
 
@@ -94,3 +94,28 @@ git diff --check
    email release or public Q&A publication.
 
 Open items do not depend on the originating conversation for their definition.
+
+## Closeout evidence
+
+- Source and review: PR [#1166](https://github.com/sbu001monterecco/por-derecho/pull/1166), reviewed head
+  `5ef954f93fa4e6707a9e2ce16834a6385f5f841f`, five changed files,
+  732 additions and zero deletions.
+- Base reconciliation: the reviewed head incorporated current base
+  `e6e4d94bfc504b0e79d73d054ff754e6d4f9275c` and preserved the intervening
+  seven-caret closure.
+- CI: all 10 triggered PR workflows completed successfully. Publication
+  integrity was run `33201978239` / `#2141`; the off-GitHub preservation
+  snapshot was run `33201978242` / `#1226`.
+- Merge: PR #1166 merged to `main` as
+  `30d99da0ddc21f9e1897bb22b9cce09da808395b`.
+- Deployment: Pages run `33202212390` / `#1236` completed successfully for that
+  exact merge SHA.
+- Independent readback at `2026-08-28T19:07:40Z`: all five continuity files
+  returned exact repository bytes. The SHA-256 values are recorded in
+  `publication-manifests/chatbot-media-inquiry-desk-continuity-20260828.json`.
+
+The conclusion is deliberately qualified. The thread is deletion-safe because
+the governing decisions, limitations, authority boundaries and reconstruction
+path no longer depend on chat. The product remains unimplemented after loss of
+the earlier transient prototype and is therefore **open implementation**, not a
+working, deployed or production-ready chatbot.
