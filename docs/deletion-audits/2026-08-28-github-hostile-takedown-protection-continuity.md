@@ -8,8 +8,8 @@ repository-visible protection controls. This is not a merits finding about any
 adverse party, a prediction that a complaint or attack will occur, or evidence
 that any identified person has attempted to interfere with the publication.
 
-**Continuity verdict after merge and independent source readback:**
-`DELETION-SAFE WITH OPEN EVIDENCE`.
+**Current continuity verdict:** `DELETION-SAFE WITH OPEN EVIDENCE — MERGED,
+DEPLOYED AND LIVE VERIFIED`.
 
 **Whole-system verdict:** `DISASTER_RECOVERY_SAFE` is **not claimed**.
 
@@ -175,13 +175,46 @@ A future thread should:
 5. report changes as facts with timestamps, without converting an earlier open
    recommendation into a completed safeguard.
 
+## Publication and closeout evidence
+
+- Source PR:
+  [#1174](https://github.com/sbu001monterecco/por-derecho/pull/1174),
+  reconciled head `dd2f45d16b475f4d82b5a86cb58cbd1cbcbf76ba`.
+- PR validation: all nine triggered workflows completed successfully, including
+  publication integrity, private-source/OSINT governance and the preservation
+  snapshot workflow. The latter remains a GitHub-hosted artifact and does not
+  change the independent-backup limitation stated above.
+- Merge: PR #1174 merged to `main` as
+  `2b2d24562a082a311601451736e50fb32d12df60`.
+- Post-merge validation: all nine workflows associated with the exact merge
+  completed successfully.
+- Deployment: Pages run
+  [33208771146 / #1244](https://github.com/sbu001monterecco/por-derecho/actions/runs/33208771146)
+  completed successfully for the exact merge SHA.
+- GitHub source readback: the continuity record, deletion-audit index and
+  security-audit pointer were fetched at the merge ref with blob SHAs
+  `02c81d39c51e47af038bacc74d392a934985a2ff`,
+  `37299e4c831e20e0ef7bdb27feef272c1c2fdcad` and
+  `5e4fc2817f5dd6eefa2bfc9745c1efb7fcc0956a`.
+- Public-host readback at `2026-08-28T20:37:00Z`: all three Markdown files
+  returned HTTP 200 as `text/markdown` and were byte-identical to the merged
+  repository files. Their SHA-256 values were respectively
+  `a2f1af46bfdb51d44788a36813028b957b0b2010a0eefa6d3f77b759bcc5750a`,
+  `306f872abd84262fda5f6a2971b30d85808b018d0e5e0930eef59e6060818172`
+  and `8923a43fa785c4a38ef67a30b892e28313a52a3cb7a2879c35e50b5d95ae9f27`.
+
+This evidence closes the conditions that were expressed prospectively in the
+first source-controlled version of this record. It proves continuity and live
+publication of the closeout package; it does not close any separately listed
+resilience control.
+
 ## Final continuity conclusion
 
-Once this record and its deletion-audit index entry are merged to current
-`main`, independently read back and supported by passing repository checks, the
-originating protection-review conversation is **DELETION-SAFE WITH OPEN
+The record and its deletion-audit index entry are merged to `main`, independently
+read back and supported by passing repository checks. The originating
+protection-review conversation is therefore **DELETION-SAFE WITH OPEN
 EVIDENCE**. Its deletion will not erase a material finding, decision,
-qualification, authority boundary or restart instruction.
+qualification, authority boundary, completion proof or restart instruction.
 
 That conclusion is deliberately narrower than whole-system safety. The single
 account, required-check, current independent-backup, public/private split,
