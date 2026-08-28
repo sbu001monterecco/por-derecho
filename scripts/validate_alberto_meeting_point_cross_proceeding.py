@@ -125,10 +125,10 @@ EXPECTED_CARET_TYPE_COUNTS = {
     "PROCEEDING": {"eligible": 3, "confirmed": 3, "pending": 0},
 }
 EXPECTED_REGISTRY_COUNTS = {
-    "total": 221,
-    "PERSON": 94,
-    "ORGANISATION": 76,
-    "STRUCTURE": 10,
+    "total": 226,
+    "PERSON": 95,
+    "ORGANISATION": 79,
+    "STRUCTURE": 11,
     "INSTITUTION": 22,
     "PROCEEDING": 19,
 }
@@ -232,7 +232,7 @@ EXPECTED_EVIDENCE = {
         "source_registers": fs("archive/evidence/ONA_FUNDED_EXIT_UNITARY_FACT_RECORD_20260826.md", "archive/ONA_COMMERCIAL_EXIT_OPERATIONAL_NORMALISATION_PACKAGE_2018_16AUG2026.md", "archive/MISSING_EVIDENCE_REGISTER.md", "archive/MISSING_EVIDENCE_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md"),
     },
     "AM357-N09": {
-        "source_refs": fs("C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001", "18ab89a1775e61b3", "LV-12"),
+        "source_refs": fs("C36-JUD-2021-05-12-001", "C36-JUD-2021-05-18-001", "SP-PRV-LCTR-GM-DB9D2197E93B05C8AF7B", "LV-12"),
         "control_refs": fs("CR-101"),
         "missing_evidence_refs": fs("archive/MISSING_EVIDENCE_REGISTER.md#ME-008", "archive/MISSING_EVIDENCE_REGISTER.md#ME-011", "archive/MISSING_EVIDENCE_REGISTER.md#ME-012", "archive/MISSING_EVIDENCE_REGISTER.md#ME-049", "archive/MISSING_EVIDENCE_REGISTER.md#ME-058"),
         "external_sources": fs(SEPI_RELEASE, SEPI_ACCOUNTS),
@@ -649,7 +649,7 @@ for record in records:
 
 caret_unitary_ref = caret.get("unitary_scope_reference") or {}
 check(caret_unitary_ref == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 21, "pending": 3, "denominator": 24, "changed_by_this_module": True}, "specialist caret unitary-scope reference drift")
-check(registry.get("counts") == EXPECTED_REGISTRY_COUNTS, "canonical source registry counts do not equal 221/94/76/10/22/19")
+check(registry.get("counts") == EXPECTED_REGISTRY_COUNTS, "canonical source registry counts do not equal 226/95/79/11/22/19")
 
 registry_records: dict[str, dict] = {}
 registry_seen: list[str] = []
@@ -1083,7 +1083,7 @@ check("31/31 unique identities" in current_digest_md and "61 confirmed, 69 pendi
 
 digest_identity = current_digest.get("identity_registry") or {}
 digest_caret = current_digest.get("caret_scope") or {}
-check({key: digest_identity.get(key) for key in EXPECTED_REGISTRY_COUNTS} == EXPECTED_REGISTRY_COUNTS, "current digest source/static identity registry is not 221/94/76/10/22/19")
+check({key: digest_identity.get(key) for key in EXPECTED_REGISTRY_COUNTS} == EXPECTED_REGISTRY_COUNTS, "current digest source/static identity registry is not 226/95/79/11/22/19")
 check((digest_caret.get("confirmed"), digest_caret.get("denominator"), digest_caret.get("pending")) == (21, 24, 3), "current digest unitary caret scope is not 21/24/3")
 check(digest_caret.get("control_id") == CANONICAL_UNITARY_CARET_CONTROL_ID, "current digest unitary caret control ID drift")
 digest_modules = {module.get("module_id"): module for module in current_digest.get("specialist_modules", []) if isinstance(module, dict)}
@@ -1190,5 +1190,5 @@ print(" - first-hop evidence-corpus caret census: 61/130 confirmed; 69 pending; 
 print(" - repository-wide unitary caret census: separately 21/24; 3 pending")
 print(" - graph: 9 bilingual six-field nodes; 13 direct forward/reverse bridges")
 print(" - primary backlinks: 18/18 contained; direct incident reciprocity: 26/26 per language; legacy lateral topology: 8/8 per language")
-print(" - canonical source registry: 221 / 94 / 76 / 10 / 22 / 19; prior exact-live snapshot remains historical")
+print(" - canonical source registry: 226 / 95 / 79 / 11 / 22 / 19; prior exact-live snapshot remains historical")
 print(f" - candidate publication state: {state}; communication and filing remain HOLD")

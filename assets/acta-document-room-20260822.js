@@ -18,6 +18,15 @@
     open: room.querySelector('[data-stat-open]')
   };
 
+  const perimeterMeta = {
+    pre_sale_montelanza: { code: 'A', primaryLane: 'A' },
+    project_lpb_aweswell_gil: { code: 'B', primaryLane: 'B' },
+    adverse_montelanza_molina: { code: 'C1', primaryLane: 'C' },
+    adverse_acosta_matos: { code: 'C2', primaryLane: 'C' },
+    mixed_or_contested: { code: 'D-MIXED', primaryLane: 'D' },
+    unresolved: { code: 'D-OPEN', primaryLane: 'D' }
+  };
+
   const copy = {
     en: {
       status: {
@@ -28,7 +37,7 @@
         'no-acta-located': 'No ACTA located',
         'non-acta-event': 'Separate event · not an ACTA'
       },
-      body: { owners: 'Owners’ Community', cexp: 'CEXP', event: 'Working event', reference: 'Later recital' },
+      body: { owners: 'Owners’ Community', cexp: 'CEXP', corporate: 'Corporate shareholders', event: 'Working event', reference: 'Later recital' },
       availability: { transcript: 'Public-safe text', pdf: 'Text-edition PDF', images: 'Rendered edition pages', facsimile: 'Redacted source facsimile', sourceImages: 'Redacted source-page images', integrity: 'Integrity record', sourcePages: 'Received source', publicPages: 'Public text edition' },
       available: 'Available', pending: 'Pending', pages: n => `${n} page${n === 1 ? '' : 's'}`,
       verificationPending: 'Available · line verification pending',
@@ -36,7 +45,7 @@
       perimeter: {
         pre_sale_montelanza: 'Montelanza · pre-sale',
         project_lpb_aweswell_gil: 'Project · Multimatrix/LPB → Aweswell/LPB–Gil',
-        adverse_montelanza_molina: 'Alleged adverse · Montelanza/Molina–Pamanil',
+        adverse_montelanza_molina: 'Attributed adverse · AAS → FMMM / Cogolludo / Pamanil',
         adverse_acosta_matos: 'Alleged adverse · Acosta Matos/CAM',
         mixed_or_contested: 'Mixed or contested',
         unresolved: 'Unresolved'
@@ -44,6 +53,8 @@
       attributionBoundary: 'Documentary/editorial lane—not a finding of validity, joint conduct, fraud or guilt.',
       shown: (shown, total) => `${shown} of ${total} records shown`,
       empty: 'No record matches this search and filter.',
+      indexUnavailable: 'The public ACTA index could not be loaded. No evidential records are displayed.',
+      indexUnavailableCount: 'Public ACTA index unavailable · no records displayed',
       image: (title, page) => `${title}, rendered page ${page} of the public-safe text edition`,
       page: page => `Page ${page}`,
       integrityNote: 'A repository hash identifies a received digital copy; it is not proof of an official certified original or an uninterrupted forensic chain of custody.',
@@ -58,7 +69,7 @@
         'no-acta-located': 'No se localizó ACTA',
         'non-acta-event': 'Evento separado · no es ACTA'
       },
-      body: { owners: 'Comunidad de Propietarios', cexp: 'CEXP', event: 'Reunión de trabajo', reference: 'Mención posterior' },
+      body: { owners: 'Comunidad de Propietarios', cexp: 'CEXP', corporate: 'Accionistas societarios', event: 'Reunión de trabajo', reference: 'Mención posterior' },
       availability: { transcript: 'Texto público seguro', pdf: 'PDF de edición textual', images: 'Páginas de la edición textual', facsimile: 'Facsímil fuente expurgado', sourceImages: 'Imágenes fuente expurgadas', integrity: 'Registro de integridad', sourcePages: 'Fuente recibida', publicPages: 'Edición textual pública' },
       available: 'Disponible', pending: 'Pendiente', pages: n => `${n} página${n === 1 ? '' : 's'}`,
       verificationPending: 'Disponible · cotejo línea por línea pendiente',
@@ -66,7 +77,7 @@
       perimeter: {
         pre_sale_montelanza: 'Montelanza · pre-venta',
         project_lpb_aweswell_gil: 'Proyecto · Multimatrix/LPB → Aweswell/LPB–Gil',
-        adverse_montelanza_molina: 'Adverso alegado · Montelanza/Molina–Pamanil',
+        adverse_montelanza_molina: 'Adverso atribuido · AAS → FMMM / Cogolludo / Pamanil',
         adverse_acosta_matos: 'Adverso alegado · Acosta Matos/CAM',
         mixed_or_contested: 'Mixto o controvertido',
         unresolved: 'No resuelto'
@@ -74,6 +85,8 @@
       attributionBoundary: 'Carril documental/editorial; no es hallazgo de validez, actuación conjunta, fraude o culpabilidad.',
       shown: (shown, total) => `${shown} de ${total} registros visibles`,
       empty: 'Ningún registro coincide con la búsqueda y el filtro.',
+      indexUnavailable: 'No se pudo cargar el índice público de ACTA. No se muestra ningún registro probatorio.',
+      indexUnavailableCount: 'Índice público de ACTA no disponible · no se muestran registros',
       image: (title, page) => `${title}, página ${page} de la edición textual pública segura`,
       page: page => `Página ${page}`,
       integrityNote: 'Un hash del repositorio identifica una copia digital recibida; no acredita un original oficial certificado ni una cadena de custodia forense ininterrumpida.',
@@ -81,85 +94,19 @@
     }
   }[locale];
 
-  const fallbackEvents = [
-    ['SP-ACTA-2008-04-29', '2008-04-29', 'owners', 'located-package-partial', '29 April 2008', '29 abril 2008',
-      'Located five-page Community source. Public extraction and source-variant reconciliation remain open.',
-      'Fuente comunitaria de cinco páginas localizada. Siguen pendientes la extracción pública y la conciliación de variantes.'],
-    ['SP-ACTA-2008-07-15', '2008-07-15', 'owners', 'located-package-partial', '15 July 2008', '15 julio 2008',
-      'Located Community source; public-safe transcription, page images and annex reconciliation remain open.',
-      'Fuente comunitaria localizada; siguen pendientes la transcripción pública segura, imágenes y conciliación de anexos.'],
-    ['SP-ACTA-2008-07-25', '2008-07-25', 'owners', 'located-package-partial', '25 July 2008', '25 julio 2008',
-      'Located four-page Gmail source family. Full locator/hash, authentication and public-package controls remain open.',
-      'Familia fuente de cuatro páginas localizada en Gmail. Siguen abiertos el localizador/hash íntegro, autenticación y controles del paquete público.'],
-    ['SP-ACTA-2008-12-17', '2008-12-17', 'owners', 'located-package-partial', '17 December 2008', '17 diciembre 2008',
-      'Located ten-page ACTA source. Authentication, source-family reconciliation and the complete public-safe package remain open.',
-      'Fuente ACTA de diez páginas localizada. Siguen abiertas autenticación, conciliación de familia fuente y paquete público seguro íntegro.'],
-    ['SP-ACTA-2009-05-28', '2009-05-28', 'owners', 'located-package-partial', '28 May 2009', '28 mayo 2009',
-      'Located Community source; a complete public-safe package has not yet passed the publication gate.',
-      'Fuente comunitaria localizada; el paquete público seguro íntegro aún no ha superado el control de publicación.'],
-    ['SP-ACTA-2011-02-02', '2011-02-02', 'owners', 'located-package-partial', '2 February 2011', '2 febrero 2011',
-      'Located threshold minutes concerning Community offices and the stated boundary with hotel operation.',
-      'Acta umbral localizada sobre cargos comunitarios y el límite consignado respecto de la explotación hotelera.'],
-    ['SP-ACTA-2011-06-22', '2011-06-22', 'owners', 'located-package-partial', '22 June 2011', '22 junio 2011',
-      'Located 16-page source. The earlier public material is a structured redacted digest, not a complete line-by-line transcription; byte variants and the full publication package remain under reconciliation.',
-      'Fuente de 16 páginas localizada. El material público anterior es una síntesis estructurada y expurgada, no una transcripción íntegra línea por línea; siguen conciliándose variantes y el paquete completo.'],
-    ['SP-ACTA-2012-08-10', '2012-08-10', 'reference', 'located-package-partial', '10 August 2012 · located ACTA copy', '10 agosto 2012 · copia ACTA localizada',
-      'A four-page native DOCX ACTA and a related five-page PDF family are now located. The ACTA records that no resolution was put to a vote. Its referenced president statement and objection annexes remain unlocated.',
-      'Se han localizado un ACTA DOCX nativa de cuatro páginas y una familia PDF relacionada de cinco páginas. El ACTA consigna que no se sometió acuerdo a votación. Siguen sin localizarse sus anexos referenciados de declaración y objeción de presidencia.'],
-    ['SP-ACTA-2014-04-10', '2014-04-10', 'owners', 'located-package-partial', '10 April 2014', '10 abril 2014',
-      'Contested notarial Community record; public-safe image/text package and later procedural reconciliation remain open.',
-      'Registro notarial comunitario controvertido; quedan abiertos el paquete público seguro y la conciliación procesal posterior.'],
-    ['SP-ACTA-2014-08-28-CP', '2014-08-28', 'owners', 'located-package-partial', '28 August 2014 · Owners’ Community', '28 agosto 2014 · Comunidad de Propietarios',
-      'Located Community record. It must remain separate from the CEXP record of the same date.',
-      'Registro comunitario localizado. Debe permanecer separado del acta CEXP de la misma fecha.'],
-    ['SP-ACTA-2014-08-28-CEXP', '2014-08-28', 'cexp', 'located-package-partial', '28 August 2014 · CEXP', '28 agosto 2014 · CEXP',
-      'Located signed CEXP record. It is not Owners’ Community minutes and does not by itself prove effective operation or possession.',
-      'Acta CEXP firmada localizada. No es acta de la Comunidad ni prueba por sí sola explotación o posesión efectiva.'],
-    ['SP-ACTA-2015-11-19', '2015-11-19', 'owners', 'located-package-partial', '19 November 2015', '19 noviembre 2015',
-      'Located 38-page source family. Two named variants remain unresolved; any public edition must preserve that qualification.',
-      'Familia fuente de 38 páginas localizada. Persisten dos variantes nominales sin conciliar; la edición pública debe reflejarlo.'],
-    ['SP-ACTA-2016-04-26', '2016-04-26', 'owners', 'located-package-partial', '26 April 2016', '26 abril 2016',
-      'The controlling 77-page family is digitised. Two distinct 77-page binaries are render- and text-equivalent; 24-, 47- and 50-page packages remain separately identified as partial variants.',
-      'La familia de control de 77 páginas está digitalizada. Dos binarios distintos de 77 páginas son equivalentes en renderizado y texto; los paquetes de 24, 47 y 50 páginas permanecen identificados por separado como variantes parciales.'],
-    ['SP-MEETING-2016-06-11', '2016-06-11', 'event', 'non-acta-event', '11 June 2016 · Las Palmas working meeting', '11 junio 2016 · reunión de trabajo en Las Palmas',
-      'Recorded working meeting. It is not an Owners’ Community or CEXP ACTA and must not be inserted into either minutes book.',
-      'Reunión de trabajo grabada. No es ACTA de la Comunidad ni de CEXP y no debe incorporarse a ninguno de esos libros.'],
-    ['SP-ACTA-2017-04-07-CEXP', '2017-04-07', 'cexp', 'located-package-partial', '7 April 2017 · CEXP', '7 abril 2017 · CEXP',
-      'Located signed CEXP governance record; public-safe package completion remains open.',
-      'Registro firmado de gobernanza CEXP localizado; queda pendiente completar el paquete público seguro.'],
-    ['SP-ACTA-2017-06-12', '2017-06-12', 'owners', 'located-package-partial', '12 June 2017 · Owners’ Community', '12 junio 2017 · Comunidad de Propietarios',
-      'Located Community minutes. Final annex, audio and later-email reconciliation remain open.',
-      'Acta comunitaria localizada. Queda por conciliar anexos, audio y un correo profesional posterior.'],
-    ['SP-ACTA-2018-05-18', '2018-05-18', 'owners', 'located-package-partial', '18 May 2018', '18 mayo 2018',
-      'The located copy reports 86.715% represented and presents 0.385% as vote-qualified. The 0.385% remains a source-recorded figure, not independently verified ownership arithmetic; titles, proxies and denominator still require finca-by-finca reconciliation.',
-      'La copia localizada consigna 86,715% representado y presenta 0,385% con voto. El 0,385% sigue siendo una cifra del documento, no aritmética dominical verificada de forma independiente; faltan títulos, poderes y denominador finca por finca.'],
-    ['SP-ACTA-2018-07-05', '2018-07-05', 'owners', 'located-package-partial', '5 July 2018', '5 julio 2018',
-      'The located nine-page control copy is digitised and posted. A distinct binary variant is visually equivalent; manual line certification, annexes and any audio remain open.',
-      'La copia de control localizada de nueve páginas está digitalizada y publicada. Una variante binaria distinta es visualmente equivalente; siguen abiertos la certificación manual línea por línea, anexos y eventual audio.'],
-    ['SP-RECITAL-2018-11-20', '2018-11-20', 'reference', 'referenced-original-not-located', '20 November 2018 · later recital', '20 noviembre 2018 · mención posterior',
-      'The 2022 minutes refer to this meeting. That later recital does not substitute for the unlocated original minutes.',
-      'El acta de 2022 menciona esta junta. Esa referencia posterior no sustituye el original no localizado.'],
-    ['SP-ACTA-2022-02-04', '2022-02-04', 'owners', 'located-package-partial', '4 February 2022', '4 febrero 2022',
-      'A seven-page source is located as one of two known variants. The relationship between variants and the annexed project figures remains unresolved.',
-      'Se localizó una fuente de siete páginas como una de dos variantes conocidas. Sigue sin resolverse su relación y las cifras del proyecto anexo.']
-  ].map(row => ({
-    id: row[0], date: row[1], body: row[2], status: row[3],
-    title_en: row[4], title_es: row[5], notes_en: row[6], notes_es: row[7],
-    complete_public_text: false, preview_pages: []
-  }));
-
   const allowedStates = new Set([
     'located-package-complete-public', 'located-package-digitised-public', 'located-package-partial',
     'referenced-original-not-located', 'no-acta-located', 'non-acta-event'
   ]);
 
-  function normaliseBody(value, fallback = 'owners') {
-    if (['owners', 'cexp', 'event', 'reference'].includes(value)) return value;
+  function normaliseBody(value, defaultBody = 'owners') {
+    if (['owners', 'cexp', 'corporate', 'event', 'reference'].includes(value)) return value;
     const source = String(value || '').toLowerCase();
+    if (source.includes('corporate') || source.includes('shareholder') || source.includes('accionista')) return 'corporate';
     if (source.includes('working') || source.includes('trabajo')) return 'event';
     if (source.includes('recital') || source.includes('mención') || source.includes('refer')) return 'reference';
     if (source.includes('cexp') && !source.includes('propietarios')) return 'cexp';
-    return fallback;
+    return defaultBody;
   }
 
   function normaliseIndexEvent(incoming, base = {}) {
@@ -170,6 +117,8 @@
     if ((!Array.isArray(previews) || !previews.length) && incoming.preview_dir && Number.isInteger(previewCount) && previewCount > 0) {
       previews = Array.from({ length: previewCount }, (_, index) => `${String(incoming.preview_dir).replace(/\/$/, '')}/page-${String(index + 1).padStart(3, '0')}.webp`);
     }
+    const perimeter = incoming.perimeter || base.perimeter || 'unresolved';
+    const meta = perimeterMeta[perimeter] || perimeterMeta.unresolved;
     return {
       ...base,
       ...incoming,
@@ -193,7 +142,9 @@
       source_sha256: incoming.source_sha256 || incoming.source_hash_sha256 || (incoming.source && incoming.source.sha256) || base.source_sha256,
       detail_page_es: incoming.detail_page_es || base.detail_page_es,
       detail_page_en: incoming.detail_page_en || base.detail_page_en,
-      perimeter: incoming.perimeter || base.perimeter || 'unresolved',
+      perimeter,
+      perimeter_code: incoming.perimeter_code || base.perimeter_code || meta.code,
+      primary_lane: incoming.primary_lane || base.primary_lane || meta.primaryLane,
       attribution_status: incoming.attribution_status || base.attribution_status,
       phase_es: incoming.phase_es || base.phase_es,
       phase_en: incoming.phase_en || base.phase_en,
@@ -264,11 +215,17 @@
 
   function renderRecord(event) {
     const state = gatedState(event);
+    const perimeterKey = perimeterMeta[event.perimeter] ? event.perimeter : 'unresolved';
+    const metaForPerimeter = perimeterMeta[perimeterKey];
+    const perimeterCode = event.perimeter_code || metaForPerimeter.code;
+    const primaryLane = event.primary_lane || metaForPerimeter.primaryLane;
     const article = element('article', 'acta-record');
     article.dataset.state = state;
     article.dataset.body = event.body || 'owners';
-    article.dataset.perimeter = event.perimeter || 'unresolved';
-    article.dataset.search = [event.id, event.date, textFor(event, 'title'), textFor(event, 'notes'), textFor(event, 'phase'), copy.body[event.body], copy.perimeter[event.perimeter]].join(' ').toLowerCase();
+    article.dataset.perimeter = perimeterKey;
+    article.dataset.perimeterCode = perimeterCode;
+    article.dataset.primaryLane = primaryLane;
+    article.dataset.search = [event.id, event.date, perimeterCode, primaryLane, textFor(event, 'title'), textFor(event, 'notes'), textFor(event, 'phase'), copy.body[event.body], copy.perimeter[perimeterKey]].join(' ').toLowerCase();
 
     const head = element('header', 'acta-record-head');
     const heading = element('div');
@@ -282,9 +239,16 @@
     const body = element('div', 'acta-record-body');
     const narrative = element('div');
     const perimeter = element('div', 'acta-perimeter-ribbon');
-    perimeter.dataset.perimeter = event.perimeter || 'unresolved';
+    perimeter.dataset.perimeter = perimeterKey;
+    perimeter.dataset.perimeterCode = perimeterCode;
+    perimeter.dataset.primaryLane = primaryLane;
+    const perimeterHeading = element('strong');
+    perimeterHeading.append(
+      element('span', 'acta-perimeter-code', perimeterCode),
+      document.createTextNode(copy.perimeter[perimeterKey] || copy.perimeter.unresolved)
+    );
     perimeter.append(
-      element('strong', '', copy.perimeter[event.perimeter] || copy.perimeter.unresolved),
+      perimeterHeading,
       element('span', '', textFor(event, 'phase') || copy.attributionBoundary)
     );
     narrative.append(perimeter);
@@ -403,17 +367,38 @@
     return article;
   }
 
-  let events = fallbackEvents;
+  let events = [];
+  let indexState = 'loading';
+
+  function renderIndexUnavailable() {
+    events = [];
+    indexState = 'unavailable';
+    room.dataset.manifestState = 'unavailable';
+    list.replaceChildren();
+    const message = element('p', 'acta-room-empty', copy.indexUnavailable);
+    message.setAttribute('role', 'alert');
+    list.append(message);
+    resultCount.textContent = copy.indexUnavailableCount;
+    Object.values(stats).forEach(stat => { stat.textContent = '—'; });
+    search.disabled = true;
+    filter.disabled = true;
+  }
 
   function render() {
+    if (indexState === 'unavailable') {
+      renderIndexUnavailable();
+      return;
+    }
+    if (indexState !== 'ready') return;
     const needle = search.value.trim().toLowerCase();
     const selected = filter.value;
     const visible = events.filter(event => {
       const state = gatedState(event);
-      const haystack = [event.id, event.date, textFor(event, 'title'), textFor(event, 'notes'), textFor(event, 'phase'), copy.body[event.body], copy.perimeter[event.perimeter]].join(' ').toLowerCase();
+      const meta = perimeterMeta[event.perimeter] || perimeterMeta.unresolved;
+      const haystack = [event.id, event.date, event.perimeter_code || meta.code, event.primary_lane || meta.primaryLane, textFor(event, 'title'), textFor(event, 'notes'), textFor(event, 'phase'), copy.body[event.body], copy.perimeter[event.perimeter]].join(' ').toLowerCase();
       const matchesText = !needle || haystack.includes(needle);
       let matchesFilter = selected === 'all';
-      if (selected === 'owners' || selected === 'cexp' || selected === 'event' || selected === 'reference') matchesFilter = event.body === selected;
+      if (selected === 'owners' || selected === 'cexp' || selected === 'corporate' || selected === 'event' || selected === 'reference') matchesFilter = event.body === selected;
       if (selected.startsWith('perimeter:')) matchesFilter = event.perimeter === selected.slice('perimeter:'.length);
       if (selected === 'complete') matchesFilter = state === 'located-package-complete-public' || state === 'located-package-digitised-public';
       if (selected === 'open') matchesFilter = state !== 'located-package-complete-public' && state !== 'located-package-digitised-public';
@@ -436,7 +421,9 @@
   filter.addEventListener('change', render);
   const initialQuery = new URLSearchParams(window.location.search).get('q');
   if (initialQuery) search.value = initialQuery;
-  render();
+  const c1Option = filter.querySelector('option[value="perimeter:adverse_montelanza_molina"]');
+  if (c1Option) c1Option.textContent = copy.perimeter.adverse_montelanza_molina;
+  room.dataset.manifestState = 'loading';
 
   if (manifestUrl) {
     fetch(manifestUrl, { cache: 'no-store' })
@@ -445,21 +432,20 @@
         return response.json();
       })
       .then(data => {
-        const supplied = Array.isArray(data) ? data : (data.events || data.items);
-        if (!Array.isArray(supplied) || !supplied.length) throw new Error('empty manifest');
-        const suppliedById = new Map(supplied.filter(event => event && event.id).map(event => [event.id, event]));
-        const merged = fallbackEvents.map(base => {
-          const incoming = suppliedById.get(base.id);
-          if (!incoming) return base;
-          suppliedById.delete(base.id);
-          return normaliseIndexEvent(incoming, base);
-        });
-        suppliedById.forEach(incoming => merged.push(normaliseIndexEvent(incoming)));
-        events = merged.map(event => ({ ...event, status: gatedState(event) }));
+        const supplied = Array.isArray(data) ? data : data.events;
+        if (!Array.isArray(supplied) || !supplied.length) throw new Error('empty public index');
+        if (supplied.some(event => !event || typeof event !== 'object' || Array.isArray(event) || typeof event.id !== 'string' || !event.id.trim())) {
+          throw new Error('invalid public index event');
+        }
+        const suppliedIds = new Set(supplied.map(event => event.id));
+        if (suppliedIds.size !== supplied.length) throw new Error('duplicate public index event');
+        events = supplied.map(incoming => normaliseIndexEvent(incoming));
+        indexState = 'ready';
+        room.dataset.manifestState = 'ready';
+        search.disabled = false;
+        filter.disabled = false;
         render();
       })
-      .catch(() => {
-        room.dataset.manifestState = 'fallback';
-      });
-  }
+      .catch(renderIndexUnavailable);
+  } else renderIndexUnavailable();
 })();

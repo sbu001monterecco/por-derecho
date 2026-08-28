@@ -22,10 +22,48 @@
     "bytes": 24597,
     "sha256": "b978bd03ca4a8138f9d1a704cb4717f9cbfb1a090632b6f7dbb33c25b9c4871d",
     "pages": 4,
-    "variant_note_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación; siguen sin localizarse el escrito del presidente y la objeción anunciados como anexos.",
-    "variant_note_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote; the president's statement and announced objection annex remain unlocated.",
+    "variant_note_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación. La declaración del presidente de cinco páginas está localizada como fuente separada y también incorporada al paquete notarial 422B; el escrito de objeción anunciado sigue sin localizarse.",
+    "variant_note_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote. The five-page president's statement is located as a separate source and is also incorporated in notarial package 422B; the announced objection writing remains unlocated.",
     "native_publication": false,
-    "variants_recorded": 2
+    "variants_recorded": 2,
+    "source_document_id": "SP-SRC-ACTA-2012-08-10",
+    "legacy_id_aliases": [],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "2012-08-10-drive-source.pdf",
+        "bytes": 345778,
+        "sha256": "d9ee034878d352efdb5a5bccd63d6f4f84f9a77f840cc993741dcf9046806705",
+        "pages": 5,
+        "relationship_es": "Intervención/declaración de cinco páginas; fuente relacionada, no sustituto del ACTA.",
+        "relationship_en": "Five-page speech/statement; related source, not a substitute for the ACTA.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-STATEMENT-2012-08-10-5P",
+        "relationship_kind": "related-statement",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2012-08-10-STATEMENT-01"
+        ]
+      },
+      {
+        "filename": "20120809194034781_0001.pdf",
+        "bytes": 41809,
+        "sha256": "0e96dc1fe776766bad737a8172db258740f795cf83c5d344650365711ed5d981",
+        "pages": 1,
+        "relationship_es": "Poder de una página asociado a la convocatoria; documento separado.",
+        "relationship_en": "One-page proxy associated with the notice; separate document.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-PROXY-2012-08-10-1P",
+        "relationship_kind": "related-proxy",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2012-08-10-PROXY-01"
+        ]
+      }
+    ]
   },
   "redaction_categories": [
     "identifiers-and-contact",
@@ -49,7 +87,7 @@
       "assets/evidence/community-actas-source/2012-08-10/page-004.jpg"
     ],
     "source_preview_count": 4,
-    "pdf_sha256": "dc6c622e189ca5562ce1d8967b887427bee5c66a30f6d37ddb99703c850366ee",
+    "pdf_sha256": "53492a42ec11c1e4f20c8ae683f9f5673c1589b3baa57858b03ae02283203467",
     "pdf_pages": 5,
     "preview_pages": [
       "assets/evidence/community-actas/2012-08-10/page-001.jpg",
@@ -59,7 +97,29 @@
       "assets/evidence/community-actas/2012-08-10/page-005.jpg"
     ],
     "preview_count": 5,
-    "pdf": "assets/docs/community-actas/2012-08-10-public-redacted-es.pdf"
+    "pdf": "assets/docs/community-actas/2012-08-10-public-redacted-es.pdf",
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2012-08-10/page-001.jpg",
+        "sha256": "e076bb1b07f7be7e54b3544e39d954b040b2febc1c271beaacfff7eac5623920"
+      },
+      {
+        "path": "assets/evidence/community-actas/2012-08-10/page-002.jpg",
+        "sha256": "2afffcc6ae65fea48480277ba8366dfeef70cfc59759d9affbbca216e0da4cc9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2012-08-10/page-003.jpg",
+        "sha256": "080b718a94736bb3577005f6ab59df602484e88e189265a8761d27dd97646e00"
+      },
+      {
+        "path": "assets/evidence/community-actas/2012-08-10/page-004.jpg",
+        "sha256": "2468332b33d143666f8392ba61ec3aefc2f3b40297069f45eea4bc0cd35996ac"
+      },
+      {
+        "path": "assets/evidence/community-actas/2012-08-10/page-005.jpg",
+        "sha256": "23a1f1de96a1e01bfd55d94f4781a880a402cc7487d82c3a9fbbac6dfdcce681"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -72,7 +132,11 @@
     "visual_pdf_sample_review": true,
     "visual_source_redaction_review": true,
     "pdf_reopened": true,
-    "all_pdf_pages_rendered": true
+    "all_pdf_pages_rendered": true,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "public_pdf_page_count": 5
 }

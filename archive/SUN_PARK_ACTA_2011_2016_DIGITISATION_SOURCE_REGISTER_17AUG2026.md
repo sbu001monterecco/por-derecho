@@ -16,7 +16,7 @@ This is **digitisation by source indexing + readable text recovery + evidential 
 
 ### A. 22-Jun-2011 ACTA + 2011 judgment context
 
-**Gmail thread:** `1540ce64bb1cb313` — subject `Re: Informe legal` — 12/13-Apr-2016.  
+**Gmail thread:** `SP-PRV-LCTR-GM-F32AE7CE7E932F13D15A` — subject `Re: Informe legal` — 12/13-Apr-2016.
 **Source status:** DIRECT EMAIL + ATTACHMENT METADATA; body fully readable through Gmail connector.  
 **Attachments identified:**
 
@@ -29,7 +29,7 @@ This is **digitisation by source indexing + readable text recovery + evidential 
 
 ### B. November-2015 ACTA + April-2016 meeting notice / invitation package
 
-**Gmail message:** `155270de97a23680` — subject `Luchy 2 de 4 - documentación del juicio pendiente que afecta el crédito de la comunidad en el concurso` — 6-Jun-2016.  
+**Gmail message:** `SP-PRV-LCTR-GM-899B3EE795AF312F3D29` — subject `Luchy 2 de 4 - documentación del juicio pendiente que afecta el crédito de la comunidad en el concurso` — 6-Jun-2016.
 **Attachments identified:**
 
 - `DOCS-#9481385-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015.PDF`;
@@ -37,7 +37,7 @@ This is **digitisation by source indexing + readable text recovery + evidential 
 - two delivery-copy PDFs of burofaxes to Asunción Aizpurúa dated 18-Nov-2015;
 - litigation and impugnation material including the large `Demanda Impugnación junta 2014.pdf` family.
 
-**Gmail message/thread:** `1541a132422e7102` / `154291cb9c1dab86` — subject `URGENTE: informe y análisis de la situación - acta de noviembre 2015 y convocatoria de junta 26 de abril 2016` — 15–20-Apr-2016.  
+**Gmail message/thread:** `SP-PRV-LCTR-GM-DE24AC20A898935126CD` / `SP-PRV-LCTR-GM-44001C238EE0A9519AE0` — subject `URGENTE: informe y análisis de la situación - acta de noviembre 2015 y convocatoria de junta 26 de abril 2016` — 15–20-Apr-2016.
 **Direct readable content:** the 15-Apr communication records receipt at Sun Park of notifications from Pamanil concerning the November-2015 ACTA and the convocation of a meeting for **26-Apr-2016 at Princesa Yaiza**. It states that copies were attached across two emails because of size. The PwC reply on 18-Apr-2016 expressly asks for detailed accounting proof and asks whether the claim impugning the **22-Jun-2011 Community resolution** is available.
 
 **Additional attachment family in 15-Apr message:** `informe-análisis legal - deuda comunidad 2016.pdf/.docx` plus multiple contemporaneous JPG images, likely photographed pages/notifications. These require image-by-image identification before any assumption that every image is an ACTA page.
@@ -46,7 +46,7 @@ This is **digitisation by source indexing + readable text recovery + evidential 
 
 ### B2. 21-Apr-2016 AC refusal to authorise an LPB/Luchy PwC engagement
 
-**Gmail forwarded copy:** `1a0294bdf7a986f8` — original quoted subject `Re: CONVOCATORIA SUN PARK` — original quoted reply dated 21-Apr-2016 at 09:47; forwarded to the connected mailbox on 22-Aug-2026.
+**Gmail forwarded copy:** `SP-PRV-LCTR-GM-387CC2EC3CF5D0A1B466` — original quoted subject `Re: CONVOCATORIA SUN PARK` — original quoted reply dated 21-Apr-2016 at 09:47; forwarded to the connected mailbox on 22-Aug-2026.
 
 **Dedicated source record:** `archive/BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md`.
 
@@ -58,7 +58,7 @@ Borja Rodríguez-Batllori states that Gil did not require AC permission merely t
 
 ### C. 2016 accounting / source-demand communications
 
-**Gmail thread:** `154291cb9c1dab86`, especially messages `154304f5105cf3a1`, `15432cf387d0942c`, `15432d8b5ed87cb6`.  
+**Gmail thread:** `SP-PRV-LCTR-GM-44001C238EE0A9519AE0`, especially messages `SP-PRV-LCTR-GM-BC30AFA9E30662E05FA1`, `SP-PRV-LCTR-GM-6195BF0EEFE1CF757F54`, `SP-PRV-LCTR-GM-DA3F4BFFDB8493178A94`.
 **Source status:** DIRECT CONTEMPORANEOUS EMAILS.
 
 The thread records a specific proposed source-production list to the Community/Pamanil side, including:
@@ -77,7 +77,7 @@ Jonathan Simó's direct reply states that the requested material could be reques
 
 ### D. June-2016 Community-debt / AC escalation / planned burofax
 
-**Gmail thread:** `15544ecc55644ae9` — subject `Reunión con el AC` — 12-Jun-2016.  
+**Gmail thread:** `SP-PRV-LCTR-GM-ECF108BBD0275817621E` — subject `Reunión con el AC` — 12-Jun-2016.
 **Participants include:** Summers Villages/Sun Park and Cristo A. Suárez Pimentel.  
 **Classification:** PRIVATE / LEGALLY PRIVILEGED OR POTENTIALLY PRIVILEGED. DO NOT PUBLISH FULL BODY OR QUOTE LEGAL ADVICE WITHOUT PRIVILEGE REVIEW.
 
@@ -95,7 +95,7 @@ The thread also shows Cristo commenting on the legal framing and expressly discu
 
 ### E. June-2016 transmission to concursal lawyer + supporting court/ACTA corpus
 
-**Gmail messages:** `155270b982a28996`, `155270de97a23680`, `155270eec5a104b1` — 6-Jun-2016.  
+**Gmail messages:** `SP-PRV-LCTR-GM-D9E5CD4FE1B9979DC5D7`, `SP-PRV-LCTR-GM-899B3EE795AF312F3D29`, `SP-PRV-LCTR-GM-E2D454C5080D7EAD6C8C` — 6-Jun-2016.
 **Source status:** DIRECT SENT EMAILS + extensive attachment metadata.
 
 These emails transmit a large package to Juan Tomás Parrilla concerning the litigation affecting the Community credit in the concurso. The attachment family includes:
@@ -111,7 +111,7 @@ These emails transmit a large package to Juan Tomás Parrilla concerning the lit
 
 ### F. 2016 meeting/debt analysis after 26-Apr meeting
 
-**Gmail messages:** `1553c7d8436c9a0d` / `1553f05644a46549` — 10–11-Jun-2016 — subject `Deuda de Comunidad según Junta del 26 de Abril de 2016`.  
+**Gmail messages:** `SP-PRV-LCTR-GM-D71B0F191ADC1A25AB51` / `SP-PRV-LCTR-GM-B6DFE6A6F397A2570857` — 10–11-Jun-2016 — subject `Deuda de Comunidad según Junta del 26 de Abril de 2016`.
 **Attachments:**
 
 - `Análisis Gastos de la Cdad Explotación v3.docx`;
@@ -121,7 +121,7 @@ These emails transmit a large package to Juan Tomás Parrilla concerning the lit
 
 ### G. AC meeting scheduling evidence
 
-**Gmail messages:** `155770bc9a786fba` and related thread `15571b5b4be8e72b` — 22-Jun-2016.  
+**Gmail messages:** `SP-PRV-LCTR-GM-DE155A2B8D07E064FCB1` and related thread `SP-PRV-LCTR-GM-F00065EDDD5570CBD290` — 22-Jun-2016.
 **Direct metadata/snippet:** Juan Tomás reports having received a response from Borja concerning proposed meeting dates.  
 **Significance:** supports the existence of an active effort to arrange direct AC engagement after the June source/analysis work. Read the full thread before relying on exact dates or who attended.
 
@@ -129,10 +129,10 @@ These emails transmit a large package to Juan Tomás Parrilla concerning the lit
 
 Drive searches on 17-Aug-2026 located relevant later analytical and source bundles, including:
 
-- `Informe_Forense_Maestro_Participacion_Indirecta_Comunidad_Sun_Park_Concurso_36_2012_15JUL2026.pdf` — Drive ID `1w-UUZab0qqkNpJGOhszhq7v6f4RrV19o`;
-- `02A_Anexo_Analitico_Documental_Comunidad_CAM_AC_16JUN2026.docx` — Drive ID `1jnT4Jiib1tuhur0GNAkpgzwgB4bX5nkx`;
-- `Guión - ProcConcursal - íntegro y cronológico.xlsx` — Drive ID `1TR9WDd7BaBSkeFfPqRrqeh96aTpu5rLG`;
-- `PREGUNTAS Y RESPONSABILIDADES AC - 31 Julio 2018` — Drive ID `1GugPA78Z0bMengSq_wTJHnA7BgaZsRZ2F0xAzuRkDQw`.
+- `Informe_Forense_Maestro_Participacion_Indirecta_Comunidad_Sun_Park_Concurso_36_2012_15JUL2026.pdf` — Drive ID `SP-PRV-LCTR-GD-4482AA5D4899FE50043D`;
+- `02A_Anexo_Analitico_Documental_Comunidad_CAM_AC_16JUN2026.docx` — Drive ID `SP-PRV-LCTR-GD-71CD06AA14FFA5081774`;
+- `Guión - ProcConcursal - íntegro y cronológico.xlsx` — Drive ID `SP-PRV-LCTR-GD-BD368AB01ABBD22287F3`;
+- `PREGUNTAS Y RESPONSABILIDADES AC - 31 Julio 2018` — Drive ID `SP-PRV-LCTR-GD-3441801BAAD3E93B6BE2`.
 
 These are useful retrieval maps and later analytical sources, but they do not substitute for the native 2011/2015/2016 ACTAS, notices, emails and delivery records.
 
@@ -181,7 +181,7 @@ Do not describe identified Gmail attachments as `vault-preserved` merely because
 2. Locate the Feb-2011 meeting/ACTA said in the April-2016 email to be the presidency threshold.
 3. Locate original notice/agenda for the 22-Jun-2011 meeting and ownership/coefficient schedule.
 4. Fully extract both 19-Nov-2015 ACTA variants and determine why two versions exist.
-5. Recover the complete 26-Apr-2016 convocation/agenda/notification package from the 15-Apr emails/images, including the substantive document mentioned in Gil's 21-Apr 00:21 email but absent from Gmail forward `1a0294bdf7a986f8`.
+5. Recover the complete 26-Apr-2016 convocation/agenda/notification package from the 15-Apr emails/images, including the substantive document mentioned in Gil's 21-Apr 00:21 email but absent from Gmail forward `SP-PRV-LCTR-GM-387CC2EC3CF5D0A1B466`.
 6. Locate the native/original 21-Apr-2016 Borja email with complete RFC 822 headers and determine whether any later AC consent or refusal followed fuller PwC scope/fee disclosure.
 7. Locate and extract the signed ACTA of 26-Apr-2016 and any subsequent certification/debt schedule.
 8. Extract `Análisis Gastos de la Cdad Explotación v3.docx` and `Propuesta de Deuda Comunidad - Junta Abril 2016 (2).xlsx`.

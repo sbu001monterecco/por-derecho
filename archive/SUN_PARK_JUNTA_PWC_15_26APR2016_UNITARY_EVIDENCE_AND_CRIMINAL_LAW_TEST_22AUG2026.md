@@ -8,7 +8,7 @@
 
 The repository now supports a continuous 15→20→21→26 April 2016 sequence:
 
-1. **15 April:** Patricia recorded that several Pamanil notices concerning the November 2015 minutes and the 26 April meeting reached the complex that day. Photographs had been forwarded internally from `maintenance@sunparkliving.com` to `reservations@sunparkliving.com`. She sent the notice package and her debt/legal analysis to Carlos Saavedra, Miguel Hernández and Elena Santos at PwC.
+1. **15 April:** Patricia recorded that several Pamanil notices concerning the November 2015 minutes and the 26 April meeting reached the complex that day. Photographs had been forwarded internally from `SP-PRV-LCTR-EM-D8BDB2325561AA8943F2` to `SP-PRV-LCTR-EM-DA818071ADF5EFE288E1`. She sent the notice package and her debt/legal analysis to Carlos Saavedra, Miguel Hernández and Elena Santos at PwC.
 2. **20 April:** Carlos Saavedra confirmed in writing that he, Miguel Hernández and Elena Santos would go to Lanzarote the following Tuesday, following Gil’s request of the previous day. Gil asked whether a notary had been found.
 3. **21 April:** Borja Rodríguez-Batllori said Gil could attend but asserted he could not vote because of Community arrears; refused PwC’s engagement; asked Carlos, Miguel and Elena not to provide services without his express consent; cited liquidity, estate-credit, necessity and fee concerns; and asserted priority for his own court-approved fees.
 4. **26 April:** the Community meeting took place. Its notice, arrears list, debt basis, authorities, attendees, minutes, resolutions and later procedural use remain the required comparison set.
@@ -19,11 +19,11 @@ This establishes the **change of position and attempted participation**. It does
 
 | Gmail message ID | Date | Evidential proposition |
 |---|---:|---|
-| `1541a151da1f1751` | 15 Apr 2016 | Patricia says this was “the other email with the rest of what arrived today”; includes forwarded photographs from maintenance to reservations. |
-| `1541a132422e7102` | 15 Apr 2016 | Full PwC-facing email: notices arrived “today”; report and photographs sent to Carlos/Miguel/Elena; proposed that Parrilla, Borja and PwC attend. |
-| `154291cb9c1dab86` | 18 Apr 2016 | Miguel/PwC replies that the accounting demonstration is “absolutely essential” and requests the prior challenge claim. |
-| `15432e003fed8f5e` | 20 Apr 2016 | Carlos confirms that Carlos, Elena and Miguel will travel to Lanzarote; Gil asks about a notary. |
-| `1a0294bdf7a986f8` | 21 Apr 2016 original quoted in 2026 forward | Borja refuses PwC’s engagement, warns named PwC professionals not to act without consent and asserts no voting due to arrears. |
+| `SP-PRV-LCTR-GM-785054F6FB956BE7C761` | 15 Apr 2016 | Patricia says this was “the other email with the rest of what arrived today”; includes forwarded photographs from maintenance to reservations. |
+| `SP-PRV-LCTR-GM-DE24AC20A898935126CD` | 15 Apr 2016 | Full PwC-facing email: notices arrived “today”; report and photographs sent to Carlos/Miguel/Elena; proposed that Parrilla, Borja and PwC attend. |
+| `SP-PRV-LCTR-GM-44001C238EE0A9519AE0` | 18 Apr 2016 | Miguel/PwC replies that the accounting demonstration is “absolutely essential” and requests the prior challenge claim. |
+| `SP-PRV-LCTR-GM-A086307A96549C429EF9` | 20 Apr 2016 | Carlos confirms that Carlos, Elena and Miguel will travel to Lanzarote; Gil asks about a notary. |
+| `SP-PRV-LCTR-GM-387CC2EC3CF5D0A1B466` | 21 Apr 2016 original quoted in 2026 forward | Borja refuses PwC’s engagement, warns named PwC professionals not to act without consent and asserts no voting due to arrears. |
 
 Gmail IDs are locator metadata, not public URLs and not substitutes for a forensic export.
 

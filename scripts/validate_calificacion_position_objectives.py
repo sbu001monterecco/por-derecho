@@ -134,13 +134,15 @@ def main() -> int:
     require(errors, all(item.get("evidence_state") for item in ledger.get("pillars", [])), "machine ledger: every pillar needs an evidence state")
 
     loader = read("assets/calificacion-criminal-misuse-thesis-20260824.js")
-    site = read("assets/site.js")
+    root_site = read("assets/site.js")
+    site = read("assets/site-pre-treasury-154-hq-20260828.js")
     css = read("assets/styles.css")
     render = read("scripts/render_calificacion_criminal_misuse_thesis.mjs")
     workflow = read(".github/workflows/validate-calificacion-criminal-misuse-thesis.yml")
     for marker in ["addPositionStrip", "calificacionPositionObjectives", "Our position", "Nuestra posición", "Appeal boundary", "Límite de apelación", "persistent-20260824d"]:
         require(errors, marker in loader, f"scoped loader: missing {marker!r}")
-    require(errors, "calificacion-criminal-misuse-thesis-20260824.js?v=20260824d" in site, "site loader: revision 20260824d missing")
+    require(errors, "site-pre-treasury-154-hq-20260828.js?v=20260828a" in root_site, "root site loader: delegated pre-Treasury release missing")
+    require(errors, "calificacion-criminal-misuse-thesis-20260824.js?v=20260824d" in site, "delegated site loader: revision 20260824d missing")
     for marker in ["CALIFICACION-POSITION-OBJECTIVES-20260824", ".cm-position-objectives", ".cm-rpl-status", ".cm-closure-table", ".cm-evidence-state--open"]:
         require(errors, marker in css, f"styles: missing {marker!r}")
     for marker in ["positionCount", "positionVisible", "closureTests", "rplStatusVisible", "20260824d"]:

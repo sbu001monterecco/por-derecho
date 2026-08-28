@@ -90,7 +90,7 @@ The escalation email should therefore ask for preservation + independent review 
 
 ### 19 July 2016 — client instruction / party statement
 
-Gmail message ID: `15604d09907844f5`  
+Gmail message ID: `SP-PRV-LCTR-GM-A197876D666FD9119E7E`
 To: Miguel Hernández Lorenzo  
 CC: Carlos Saavedra; Elena Santos Ramos.
 
@@ -100,7 +100,7 @@ The client-side email states that the previous month they had already said in wr
 
 ### 20 July 2016 — PwC response
 
-Gmail message ID: `156081f7cd2393ae`.
+Gmail message ID: `SP-PRV-LCTR-GM-EB8F275560A7768F2997`.
 
 Miguel responded, copying Carlos and Elena, that PwC had not understood the prior email to mean the client wished to cease the contemplated challenge by the named private owners.
 
@@ -110,9 +110,9 @@ Miguel responded, copying Carlos and Elena, that PwC had not understood the prio
 
 Gmail thread IDs/messages:
 
-- `1571d483ee786129` — 12-Sep-2016 client asks Miguel/Carlos to resend or recreate the report concerning PwC's conversation with the insolvency administrator about tour-operator/new exploitation-contract proposals and to include any emails.
-- `1571df0ed3811768` — Miguel replies that after speaking with the AC no email/report with details was made because the telephone discussion was general and no emails were exchanged with him in that episode.
-- `1571fff6156e8783` — client asks PwC to put in writing what was discussed, what PwC explained, what the AC answered and what follow-up was left open.
+- `SP-PRV-LCTR-GM-3F980F2014C8F431D150` — 12-Sep-2016 client asks Miguel/Carlos to resend or recreate the report concerning PwC's conversation with the insolvency administrator about tour-operator/new exploitation-contract proposals and to include any emails.
+- `SP-PRV-LCTR-GM-F1C5EEDC37C03C4F958A` — Miguel replies that after speaking with the AC no email/report with details was made because the telephone discussion was general and no emails were exchanged with him in that episode.
+- `SP-PRV-LCTR-GM-DBA0B35C39070CAC3545` — client asks PwC to put in writing what was discussed, what PwC explained, what the AC answered and what follow-up was left open.
 
 **Control:** do not conflate this September episode with the separate June requests for an `informe para el AC`. The presently recovered thread confirms a PwC↔AC telephone contact and an explicit client request for a written memorialisation. Whether PwC later produced that requested memorialisation remains an **EVIDENCE GAP** unless a later source is located.
 

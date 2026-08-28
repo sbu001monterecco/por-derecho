@@ -16,7 +16,7 @@
   "native_page_count_status": "verified-for-located-control-copy",
   "source_variant_page_count": 7,
   "public_pdf_page_count": 8,
-    "source": {
+  "source": {
     "filename": "copia digital de trabajo",
     "bytes": 3369527,
     "sha256": "bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e",
@@ -24,24 +24,63 @@
     "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
     "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
     "native_publication": false,
-        "variants_recorded": 1
-    },
-    "acquisition_provenance": {
-        "attributed_source": "Gil Marer direct statement dated 2026-08-28 / Declaration 017",
-        "route": "No invitation or pre-meeting knowledge; indirect post-meeting ACTA forwarding by the Thompson family; no direct Community ACTA communication received.",
-        "status": "ATTRIBUTED_DIRECT_ACCOUNT_NATIVE_FORWARDING_MESSAGE_NOT_YET_CONTROLLED",
-        "native_forwarding_message": "OPEN_OUTSIDE_PUBLIC_REPOSITORY",
-        "exact_timestamp_and_timezone": "OPEN",
-        "upstream_distribution_to_thompson": "OPEN",
-        "attachment_to_controlled_copy_hash_bridge": "OPEN",
-        "boundary": "The route does not by itself prove the lawful recipient, statutory service failure, deliberate exclusion or criminal intent. The controlled binary is not yet asserted to be the exact native forwarded attachment."
-    },
+    "variants_recorded": 2,
+    "source_document_id": "SP-SRC-ACTA-2022-02-04",
+    "legacy_id_aliases": [],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "ACTA de CDAD (reconocimiento coste arreglar daños 4.5mEUR) 04FEB2022.pdf",
+        "bytes": 3492026,
+        "sha256": "d13092e82da4197daad0e935a99c9e95d36fb2b8737a011237f8dd367fec82ed",
+        "pages": 7,
+        "relationship_es": "Binario alternativo de siete páginas con resaltados visibles.",
+        "relationship_en": "Alternate seven-page binary with visible highlighting.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2022-02-04-ALT-3492026",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2022-02-04-NATIVE-VARIANT-01"
+        ]
+      },
+      {
+        "bytes": 3015343,
+        "sha256": "56355a84eadbbd2cc085d650c20bc56560b1006992fcf6f462ecc5d6875b39e0",
+        "pages": 7,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2022-02-04-ALT",
+        "relationship_kind": "native-variant",
+        "relationship_es": "Tercer binario nativo conocido de siete páginas, controlado por tamaño y SHA-256; no está presente localmente y su relación material con las otras copias sigue sin resolverse.",
+        "relationship_en": "Third known seven-page native binary, controlled by size and SHA-256; it is not present locally and its material relationship to the other copies remains unresolved.",
+        "classification_status": "relationship-unresolved",
+        "classification_note_es": "Variante conocida por metadatos de control; nombre nativo y relación exacta no establecidos.",
+        "classification_note_en": "Variant known by control metadata; native filename and exact relationship are not established.",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2022-02-04-NATIVE-VARIANT-02"
+        ]
+      }
+    ]
+  },
+  "acquisition_provenance": {
+    "attributed_source": "Gil Marer direct statement dated 2026-08-28 / Declaration 017",
+    "route": "No invitation or pre-meeting knowledge; indirect post-meeting ACTA forwarding by the Thompson family; no direct Community ACTA communication received.",
+    "status": "ATTRIBUTED_DIRECT_ACCOUNT_NATIVE_FORWARDING_MESSAGE_NOT_YET_CONTROLLED",
+    "native_forwarding_message": "OPEN_OUTSIDE_PUBLIC_REPOSITORY",
+    "exact_timestamp_and_timezone": "OPEN",
+    "upstream_distribution_to_thompson": "OPEN",
+    "attachment_to_controlled_copy_hash_bridge": "OPEN",
+    "boundary": "The route does not by itself prove the lawful recipient, statutory service failure, deliberate exclusion or criminal intent. The controlled binary is not yet asserted to be the exact native forwarded attachment."
+  },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2022-02-04/transcript-es.md",
     "provenance": "evidence/community/actas/2022-02-04/provenance.md",
     "redaction_log": "evidence/community/actas/2022-02-04/redaction-log.md",
     "pdf": "assets/docs/community-actas/2022-02-04-public-redacted-es.pdf",
-    "pdf_sha256": "45b8d97751feed506640af0da20d298f61ac3b721f98ca0d79a803e5c47239f0",
+    "pdf_sha256": "907b8a04fb5cc5748177d3ade9f3a874377f32119616c6b9bbdced81aba49531",
     "pdf_pages": 8,
     "preview_pages": [
       "assets/evidence/community-actas/2022-02-04/page-001.jpg",
@@ -66,7 +105,41 @@
       "assets/evidence/community-actas-source/2022-02-04/page-006.jpg",
       "assets/evidence/community-actas-source/2022-02-04/page-007.jpg"
     ],
-    "source_preview_count": 7
+    "source_preview_count": 7,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-001.jpg",
+        "sha256": "ed6beb96291dd14cbea56386b65e64959cf78df05cbcd6078acbefe5b5e070e5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-002.jpg",
+        "sha256": "826429c348e9cce7b1c7545aa5df81fed15ad8bdf5f410a32784a547ec31831e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-003.jpg",
+        "sha256": "b70c2cc1f5d7c7f0727cdf6cf78fd48db5216d886c86b9bb04f3a6c06c7266b8"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-004.jpg",
+        "sha256": "78c340ce22582c04548f2a45e2e3779573935ca2db478e69811631c5292e558f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-005.jpg",
+        "sha256": "e6bc2850b2441eec24f793ec3e6df3065b0e978b36a04712e6ee8822abb35e8c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-006.jpg",
+        "sha256": "00b3b5c94401ed595249074e47d4e6e29cd4e4ee2c5fa0e4a21675918307a1fe"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-007.jpg",
+        "sha256": "67c964da74af2a02fe3a408998d79c67b5d2e0cac96b302b3018bf2e8bae5697"
+      },
+      {
+        "path": "assets/evidence/community-actas/2022-02-04/page-008.jpg",
+        "sha256": "c3d06b26e75ba5c36388700ba0d92dd072f16e37040c1e0b1792fda3001d6512"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -79,7 +152,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

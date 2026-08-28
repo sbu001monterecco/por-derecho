@@ -1,15 +1,34 @@
 {
   "schema_version": "2.0",
-  "generated": "2026-08-27",
-  "scope": "Public-safe source-family reconciliation for every located ACTA copy.",
+  "generated": "2026-08-28",
+  "scope": "Public-safe source-package reconciliation for 20 controlled packages: 19 located ACTA/minutes families and one non-ACTA RICPE notice-and-agenda package. A notice does not prove meeting occurrence, quorum, votes or outcome.",
+  "controlled_source_packages": 20,
+  "located_acta_or_minutes_families": 19,
+  "located_non_acta_source_packages": 1,
+  "canonical_source_variant_records": 50,
+  "single_file_records_with_record_level_sha256": 49,
+  "multi_file_group_records_with_component_sha256": 1,
   "families": [
     {
       "slug": "2008-04-29",
+      "event_id": "SP-ACTA-2008-04-29",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 2484558,
         "sha256": "733b0cb9a1cc4aa84c82e58267b44a3166caa4e4cac09fff9eb3d43f5efc6897",
-        "pages": 5
+        "pages": 5,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-04-29-B",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2008-04-29"
+        ]
       },
       "variant_note_es": "Copia de cinco páginas; la hoja notarial final y las listas nominales se reservan por privacidad.",
       "variant_note_en": "Five-page copy; the final notarial sheet and nominal lists are withheld for privacy.",
@@ -20,17 +39,49 @@
           "sha256": "a0224f685d5b41ff5554cb80c7d96ecfc6c6534b40f457634743165f1cc55433",
           "pages": 5,
           "relationship_es": "Escaneo alternativo de cinco páginas; mismo orden general, diferencias de captura.",
-          "relationship_en": "Alternate five-page scan; same general sequence, capture differences."
+          "relationship_en": "Alternate five-page scan; same general sequence, capture differences.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2008-04-29-CAPTURE-02",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2008-04-29-VARIANT-01"
+          ]
+        },
+        {
+          "bytes": 1085328,
+          "sha256": "7c70b45a14459fdda32f9150008bd26662c051b77da8189d6f7720b20de5ab8e",
+          "pages": 5,
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2008-04-29-CAPTURE-03",
+          "relationship_kind": "same-instrument-capture-variant",
+          "relationship_es": "Tercera captura de cinco páginas, visualmente cotejada página por página: mismo instrumento, texto, orden y disposición de firmas/autenticación; binario y captura distintos.",
+          "relationship_en": "Third five-page capture, visually compared page by page: same instrument, text, order and signature/authentication arrangement; distinct binary/capture.",
+          "classification_status": "classified",
+          "legacy_id_aliases": []
         }
       ]
     },
     {
       "slug": "2008-07-15",
+      "event_id": "SP-ACTA-2008-07-15",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 5747820,
         "sha256": "613a1e4980b000c1ff7fac634da065837499b71f8bb215d976fe39c9029e6aa5",
-        "pages": 9
+        "pages": 9,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-07-15",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia de nueve páginas recuperada de una transmisión posterior; la variante de seis páginas es parcial.",
       "variant_note_en": "Nine-page copy recovered from a later transmission; the six-page variant is partial.",
@@ -41,17 +92,59 @@
           "sha256": "e031e53a8003aa7ce1638af9d220295952a666af19f294af8a04d0609eb77cd1",
           "pages": 6,
           "relationship_es": "Variante parcial de seis páginas.",
-          "relationship_en": "Partial six-page variant."
+          "relationship_en": "Partial six-page variant.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2008-07-15-PARTIAL-6P",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2008-07-15-VARIANT-01"
+          ]
         }
       ]
     },
     {
+      "slug": "2008-07-15-cexp",
+      "event_id": "SP-ACTA-2008-07-15-CEXP",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
+      "controlling_copy": {
+        "filename": "copia CEXP de seis páginas de la reunión universal de las 17:00",
+        "bytes": 252353,
+        "sha256": "06b61e5c4b1a125a3412585f606a53b3bcc5dafcad840aedd6b41aa9a1ebffda",
+        "pages": 6,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-07-15-CEXP-17H",
+        "legacy_id_aliases": [],
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy"
+      },
+      "variant_note_es": "Fuente CEXP distinta de seis páginas para la reunión universal de las 17:00. No se confunde con la junta de la Comunidad de Propietarios de las 12:00. La imagen y el texto públicos quedan íntegramente redactados por defecto hasta completar la revisión de privacidad página por página.",
+      "variant_note_en": "Distinct six-page CEXP source for the 17:00 universal meeting. It is not conflated with the 12:00 Owners' Community meeting. Public image and text remain fully redacted by default until page-by-page privacy review is complete.",
+      "additional_variants": []
+    },
+    {
       "slug": "2008-07-25",
+      "event_id": "SP-ACTA-2008-07-25",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 2280925,
         "sha256": "4939ffc2f5fada285918fac2a2b5f757d129121623c1fa4040992984c2ba6c38",
-        "pages": 4
+        "pages": 4,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-07-25",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia de cuatro páginas; la variante de tres páginas es parcial.",
       "variant_note_en": "Four-page copy; the three-page variant is partial.",
@@ -62,17 +155,36 @@
           "sha256": "a735bd736756018fd690326011b095fc9ed43720b0d1ff26233ef65061d36c62",
           "pages": 3,
           "relationship_es": "Variante parcial de tres páginas.",
-          "relationship_en": "Partial three-page variant."
+          "relationship_en": "Partial three-page variant.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2008-07-25-PARTIAL-3P",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2008-07-25-VARIANT-01"
+          ]
         }
       ]
     },
     {
       "slug": "2008-12-17",
+      "event_id": "SP-ACTA-2008-12-17",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 4069135,
         "sha256": "45e4f63eda59a71b2eff9b44a55e88c1dae41b56d64d9a8f9aedfacaf00353db",
-        "pages": 10
+        "pages": 10,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-12-17",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -80,11 +192,22 @@
     },
     {
       "slug": "2009-05-28",
+      "event_id": "SP-ACTA-2009-05-28",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 7682134,
         "sha256": "1ec959c04c3b5f307eb6d2b5f96a7530fad8498f14fd89dbfb7ccf46a6ae9b1d",
-        "pages": 13
+        "pages": 13,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2009-05-28",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -92,11 +215,24 @@
     },
     {
       "slug": "2011-02-02",
+      "event_id": "SP-ACTA-2011-02-02",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 1370512,
         "sha256": "7c8e0d2342c27aa079ead16961d0c3a0ccca27e46e8fee2ee458087805965600",
-        "pages": 6
+        "pages": 6,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2011-02-02-A",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2011-02-02"
+        ]
       },
       "variant_note_es": "Se adopta la copia de seis páginas con secuencia coherente; otras dos variantes quedan identificadas.",
       "variant_note_en": "The coherent six-page sequence is used; two other variants remain identified.",
@@ -107,7 +243,15 @@
           "sha256": "bf85e363335c3eed9f64a2689161728ffa2b320e13c5f10d65b08bf315256b60",
           "pages": 6,
           "relationship_es": "Escaneo alternativo de seis páginas.",
-          "relationship_en": "Alternate six-page scan."
+          "relationship_en": "Alternate six-page scan.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2011-02-02-C",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2011-02-02-VARIANT-01"
+          ]
         },
         {
           "filename": "7. ACTA 02 FEB 2011.pdf",
@@ -115,17 +259,38 @@
           "sha256": "612a9b835ff63f501592734212dd5569350ed6b6d7f5a705ba06bc73f311b195",
           "pages": 6,
           "relationship_es": "Copia transmitida de seis páginas con orden de páginas distinto; se conserva como variante, no como sustituto silencioso.",
-          "relationship_en": "Transmitted six-page copy with a different page order; retained as a variant, not silently substituted."
+          "relationship_en": "Transmitted six-page copy with a different page order; retained as a variant, not silently substituted.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2011-02-02-B",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2011-02-02-VARIANT-02"
+          ]
         }
       ]
     },
     {
       "slug": "2011-06-22",
+      "event_id": "SP-ACTA-2011-06-22",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 4549723,
         "sha256": "299b86730ec9703649ae8269adb60098a11dcf48bee570978769317f4afbf21c",
-        "pages": 16
+        "pages": 16,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2011-06-22-B",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2011-06-22"
+        ]
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -136,7 +301,15 @@
           "sha256": "2e30ad64047b10a79d12de9c5eee0202f31e9b0c14ed26de14e57767d21c896a",
           "pages": 16,
           "relationship_es": "Binario distinto, páginas renderizadas equivalentes a la copia controlante.",
-          "relationship_en": "Different binary, rendered pages equivalent to the controlling copy."
+          "relationship_en": "Different binary, rendered pages equivalent to the controlling copy.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2011-06-22-A",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2011-06-22-VARIANT-01"
+          ]
         },
         {
           "filename": "2011-06-22-variant-2750336.pdf",
@@ -144,20 +317,39 @@
           "sha256": "037ad9b32d0f04941187c385fd662766b7a80b2c22983283d880f08c18913f2c",
           "pages": 16,
           "relationship_es": "Variante de dieciséis páginas con orden y anotaciones diferentes.",
-          "relationship_en": "Sixteen-page variant with different order and annotations."
+          "relationship_en": "Sixteen-page variant with different order and annotations.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2011-06-22-D-PDF24",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2011-06-22-VARIANT-02"
+          ]
         }
       ]
     },
     {
       "slug": "2012-08-10",
+      "event_id": "SP-ACTA-2012-08-10",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "ACTA nativa DOCX de cuatro páginas",
         "bytes": 24597,
         "sha256": "b978bd03ca4a8138f9d1a704cb4717f9cbfb1a090632b6f7dbb33c25b9c4871d",
-        "pages": 4
+        "pages": 4,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2012-08-10",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
-      "variant_note_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación; siguen sin localizarse el escrito del presidente y la objeción anunciados como anexos.",
-      "variant_note_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote; the president's statement and announced objection annex remain unlocated.",
+      "variant_note_es": "ACTA DOCX de cuatro páginas localizada en tres cadenas de correo. Consigna que no se sometió ningún acuerdo a votación. La declaración del presidente de cinco páginas está localizada como fuente separada y también incorporada al paquete notarial 422B; el escrito de objeción anunciado sigue sin localizarse.",
+      "variant_note_en": "Four-page DOCX minutes located in three email chains. They state that no resolution was put to a vote. The five-page president's statement is located as a separate source and is also incorporated in notarial package 422B; the announced objection writing remains unlocated.",
       "additional_variants": [
         {
           "filename": "2012-08-10-drive-source.pdf",
@@ -165,7 +357,15 @@
           "sha256": "d9ee034878d352efdb5a5bccd63d6f4f84f9a77f840cc993741dcf9046806705",
           "pages": 5,
           "relationship_es": "Intervención/declaración de cinco páginas; fuente relacionada, no sustituto del ACTA.",
-          "relationship_en": "Five-page speech/statement; related source, not a substitute for the ACTA."
+          "relationship_en": "Five-page speech/statement; related source, not a substitute for the ACTA.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-STATEMENT-2012-08-10-5P",
+          "relationship_kind": "related-statement",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2012-08-10-STATEMENT-01"
+          ]
         },
         {
           "filename": "20120809194034781_0001.pdf",
@@ -173,38 +373,169 @@
           "sha256": "0e96dc1fe776766bad737a8172db258740f795cf83c5d344650365711ed5d981",
           "pages": 1,
           "relationship_es": "Poder de una página asociado a la convocatoria; documento separado.",
-          "relationship_en": "One-page proxy associated with the notice; separate document."
+          "relationship_en": "One-page proxy associated with the notice; separate document.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-PROXY-2012-08-10-1P",
+          "relationship_kind": "related-proxy",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2012-08-10-PROXY-01"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "2014-04-10",
+      "event_id": "SP-ACTA-2014-04-10",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
+      "controlling_copy": {
+        "filename": "paquete PDF nativo de 155 páginas (frontera ACTA/anexos pendiente)",
+        "bytes": 4730410,
+        "sha256": "12fcefd550f69462613e91aec49ac32b69cf3c2351463a751363c663f37af32b",
+        "pages": 155,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2014-04-10",
+        "legacy_id_aliases": [],
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "54-page-notarial-act-plus-100-incorporated-pages-plus-simple-copy-certification"
+      },
+      "variant_note_es": "Paquete notarial 422B de 155 páginas: 54 páginas/28 folios del ACTA DE PRESENCIA, 100 páginas incorporadas y certificación de copia simple. Incluye aviso, poderes, asistencia/voto, objeciones, deuda, la declaración presidencial de 2012, circulación/retención, ACTA de 2012, cuentas y presupuesto. La objeción escrita de 2012 y la variante mecanografiada completa siguen abiertas. La autenticidad, circulación original y validez no se establecen; todas las páginas públicas quedan íntegramente redactadas.",
+      "variant_note_en": "The 155-page 422B notarial package comprises 54 pages/28 folios of the ACTA DE PRESENCIA, 100 incorporated pages and a simple-copy certification. It includes notice, proxies, attendance/voting, objections, debt, the 2012 president's statement, circulation/withholding, 2012 minutes, accounts and budget. The 2012 objection writing and complete typed version remain open. Authenticity, original circulation and validity are not established; every public page is fully redacted.",
+      "additional_variants": [
+        {
+          "bytes": 1823140,
+          "pages": 3,
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2014-04-16-TYPED-6P-PARTIAL",
+          "relationship_kind": "materially-distinct-typed-minutes-partial",
+          "relationship_es": "Variante ACTA mecanografiada de seis páginas, fechada en pie el 16 de abril; sólo se han localizado sus páginas 1, 5 y 6 como PNG. Difiere materialmente en horarios, porcentajes, función notarial y acuerdos bancarios/administrativos.",
+          "relationship_en": "Six-page typed minutes version footer-dated 16 April; only pages 1, 5 and 6 are located as PNGs. It differs materially on times, percentages, the notary's role and banking/administrator resolutions.",
+          "classification_status": "partial-pages-1-5-6-only",
+          "classification_note_es": "PNG p1: 651.003 bytes / 8ccd619b…; p5: 718.590 / a907da8e…; p6: 453.547 / cdd2cd49…. El PDF nativo completo y las páginas 2–4 siguen sin localizarse.",
+          "classification_note_en": "PNG p1: 651,003 bytes / 8ccd619b…; p5: 718,590 / a907da8e…; p6: 453,547 / cdd2cd49…. The complete native PDF and pages 2–4 remain unlocated.",
+          "component_files": [
+            {
+              "page": 1,
+              "bytes": 651003,
+              "sha256": "8ccd619b3bdb0d7b34876ff446b678e8ba3ea8f937e379c1ae6d9a58ee636c4f"
+            },
+            {
+              "page": 5,
+              "bytes": 718590,
+              "sha256": "a907da8eaaf64fdae3e206c96fc63d4b6c8e5c1d547a30d3afe1df6bc3d24e23"
+            },
+            {
+              "page": 6,
+              "bytes": 453547,
+              "sha256": "cdd2cd4942fdf2df9d4d4f75374ccc342c3308a4b660f19e2d646fa53bb985f3"
+            }
+          ],
+          "record_level_sha256": null,
+          "record_level_hash_status": "multi-file-group; use component_files SHA-256 values",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2014-04-10-TYPED-VARIANT-PARTIAL"
+          ]
+        },
+        {
+          "bytes": 132823,
+          "sha256": "80473a7499af3c1ac30763e9bdef7555d9358752e99dd6373ddabe230abe57ae",
+          "pages": 6,
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-NOTARIAL-RESPONSE-2014",
+          "relationship_kind": "related-notarial-response",
+          "relationship_es": "Respuesta notarial separada de seis páginas; comunicación de parte, no ACTA ni sustituto del protocolo 422B.",
+          "relationship_en": "Separate six-page notarial response; a party communication, not minutes and not a substitute for protocol 422B.",
+          "classification_status": "related-source-not-controlling",
+          "classification_note_es": "Metadatos verificados desde la copia de custodia; permanece separado del ACTA y del protocolo 422B.",
+          "classification_note_en": "Metadata verified from the custody copy; it remains separate from the minutes and protocol 422B.",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2014-04-10-NOTARIAL-RESPONSE"
+          ]
         }
       ]
     },
     {
       "slug": "2014-08-28-cexp",
+      "event_id": "SP-ACTA-2014-08-28-CEXP",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 104006,
         "sha256": "e0b9c621ff560bf714b79d225f943a74f3b5b7bb83929b1d07725ded78952ac5",
-        "pages": 3
+        "pages": 3,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP-PUBLIC-CONTROL",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2014-08-28-cexp"
+        ]
       },
-      "variant_note_es": "Instrumento CEXP de tres páginas; no es un acta de la Comunidad de Propietarios.",
-      "variant_note_en": "Three-page CEXP instrument; it is not Owners' Community minutes.",
+      "variant_note_es": "Instrumento CEXP de tres páginas; el control público de 104.006 bytes, la conversión de 90.821 bytes y el export Drive registrado de 90.821 bytes son binarios distintos. No es un acta de la Comunidad de Propietarios.",
+      "variant_note_en": "Three-page CEXP instrument; the 104,006-byte public control, 90,821-byte conversion and registered 90,821-byte Drive export are distinct binaries. It is not Owners' Community minutes.",
       "additional_variants": [
         {
           "filename": "2014-08-28-cexp-source.pdf",
           "bytes": 90821,
           "sha256": "51d3a15dcfe1ed227e52b60c8926932cef1350b6a9f454f457e7c627ba02c326",
           "pages": 3,
-          "relationship_es": "Segunda conversión PDF del mismo instrumento CEXP.",
-          "relationship_en": "Second PDF conversion of the same CEXP instrument."
+          "relationship_es": "Segunda conversión PDF del mismo instrumento CEXP; binario de 90.821 bytes distinto del export de Drive registrado.",
+          "relationship_en": "Second PDF conversion of the same CEXP instrument; a 90,821-byte binary distinct from the registered Drive export.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP-PDF-CONVERSION-02",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2014-08-28-cexp-VARIANT-01"
+          ]
+        },
+        {
+          "bytes": 90821,
+          "sha256": "a510106ec8c8a860ffff50575843139afffb5c2313d218edf99eb410ab56e3d2",
+          "pages": 3,
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP",
+          "legacy_id_aliases": [],
+          "relationship_kind": "registered-drive-export-distinct-binary",
+          "relationship_es": "Export PDF de Drive registrado por separado; comparte tamaño con otra conversión, pero no SHA-256.",
+          "relationship_en": "Separately registered Drive PDF export; it shares a byte count with another conversion, but not its SHA-256.",
+          "classification_status": "classified"
         }
       ]
     },
     {
       "slug": "2014-08-28-cp",
+      "event_id": "SP-ACTA-2014-08-28-CP",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 212122,
         "sha256": "4bbeb687681d48cb20c7ae7b9a331b071a6802e0bafb6bd999ccf48c97c739f2",
-        "pages": 21
+        "pages": 21,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2014-08-28-COM",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2014-08-28-cp"
+        ]
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -212,11 +543,24 @@
     },
     {
       "slug": "2015-11-19",
+      "event_id": "SP-ACTA-2015-11-19",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 15552345,
         "sha256": "d67f88c7243e84e1ceb89ecd0ef14dd4c199449d9fc6053282ddb7fc14b49c65",
-        "pages": 38
+        "pages": 38,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2015-11-19-C",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2015-11-19"
+        ]
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -227,7 +571,15 @@
           "sha256": "a9d926553304d4efffeb1070e72728a3b8f37cd67d7f27a5540ec333b0f20a73",
           "pages": 38,
           "relationship_es": "Misma familia de 38 páginas con anotaciones manuscritas; no se sustituye por la copia limpia.",
-          "relationship_en": "Same 38-page family with handwritten annotations; not silently substituted for the clean copy."
+          "relationship_en": "Same 38-page family with handwritten annotations; not silently substituted for the clean copy.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2015-11-19-D-ANNOTATED-38P",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2015-11-19-VARIANT-01"
+          ]
         },
         {
           "filename": "DOCS-#9481385-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015.PDF",
@@ -235,7 +587,17 @@
           "sha256": "69fd5cb5ab6cdc845eb60b6305a9c3a6260b860220116ac1f35a6b40b5248406",
           "pages": 4,
           "relationship_es": "Extracto procesal de cuatro páginas; documento separado.",
-          "relationship_en": "Four-page procedural extract; separate document."
+          "relationship_en": "Four-page procedural extract; separate document.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2015-11-19-A",
+          "relationship_kind": "related-procedural-extract",
+          "classification_status": "unresolved-conflict",
+          "classification_note_es": "La clasificación exacta y la relación procesal permanecen no resueltas/en conflicto; no se trata como variante del ACTA.",
+          "classification_note_en": "The exact classification and procedural relationship remain unresolved/in conflict; it is not treated as a minutes variant.",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2015-11-19-PROCEDURAL-EXTRACT-01"
+          ]
         },
         {
           "filename": "DOCS-#9481468-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015_-_Bandama.PDF",
@@ -243,17 +605,40 @@
           "sha256": "e8d063655b354d80e109be2188f97710b8d08de0d76cc925ebd0bd0729cbace2",
           "pages": 4,
           "relationship_es": "Segundo extracto procesal de cuatro páginas; documento separado.",
-          "relationship_en": "Second four-page procedural extract; separate document."
+          "relationship_en": "Second four-page procedural extract; separate document.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2015-11-19-B",
+          "relationship_kind": "related-procedural-extract",
+          "classification_status": "unresolved-conflict",
+          "classification_note_es": "La clasificación exacta y la relación procesal permanecen no resueltas/en conflicto; no se trata como variante del ACTA.",
+          "classification_note_en": "The exact classification and procedural relationship remain unresolved/in conflict; it is not treated as a minutes variant.",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2015-11-19-PROCEDURAL-EXTRACT-02"
+          ]
         }
       ]
     },
     {
       "slug": "2016-04-26",
+      "event_id": "SP-ACTA-2016-04-26",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 27329507,
         "sha256": "68ff554b86d94645b79dfed7d24006e807f50e53d30eb92d2de4e41c208a2dec",
-        "pages": 77
+        "pages": 77,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2016-04-26-A",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2016-04-26"
+        ]
       },
       "variant_note_es": "La familia controlante contiene 77 páginas. Sus dos binarios son visual y textualmente equivalentes; los paquetes de 24, 47 y 50 páginas son parciales. Las páginas 14-77 son anexos reservados íntegramente en la copia pública.",
       "variant_note_en": "The controlling family contains 77 pages. Its two binaries are visually and textually equivalent; the 24-, 47- and 50-page packages are partial. Pages 14-77 are annexes wholly withheld in the public copy.",
@@ -264,7 +649,15 @@
           "sha256": "549dae8c527062789a2aed31e7e5c6a8e795ffef1ba73a3080cf93f2f25ee411",
           "pages": 77,
           "relationship_es": "Binario distinto de 77 páginas, equivalente página a página en render y texto extraído.",
-          "relationship_en": "Different 77-page binary, page-by-page equivalent in rendering and extracted text."
+          "relationship_en": "Different 77-page binary, page-by-page equivalent in rendering and extracted text.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2016-04-26-B",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2016-04-26-VARIANT-01"
+          ]
         },
         {
           "filename": "ACTA 2016 - 26 ABR.pdf",
@@ -272,7 +665,15 @@
           "sha256": "c6f7b841da14628b284ce6ea55eaaecb0169250f29b508c4dc4f6bdd898382b3",
           "pages": 50,
           "relationship_es": "Paquete parcial de 50 páginas.",
-          "relationship_en": "Partial 50-page package."
+          "relationship_en": "Partial 50-page package.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2016-04-26-C-50P",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2016-04-26-VARIANT-02"
+          ]
         },
         {
           "filename": "Acta Junta Abril 2016.pdf",
@@ -280,7 +681,15 @@
           "sha256": "03d0ff3516570dff1c1d9bd468ec25cc94a3acf0a73ebeb5ef6470e32fcf0b01",
           "pages": 47,
           "relationship_es": "Paquete parcial de 47 páginas.",
-          "relationship_en": "Partial 47-page package."
+          "relationship_en": "Partial 47-page package.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2016-04-26-C-47P",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2016-04-26-VARIANT-03"
+          ]
         },
         {
           "filename": "2016-04-26-24p-drive.pdf",
@@ -288,7 +697,15 @@
           "sha256": "d084dfe4adddbb1ea67cfd7e14edddfda1f95986690114e096de4d137df52a61",
           "pages": 24,
           "relationship_es": "Paquete parcial de 24 páginas usado por la edición pública anterior.",
-          "relationship_en": "Partial 24-page package used by the earlier public edition."
+          "relationship_en": "Partial 24-page package used by the earlier public edition.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2016-04-26-C",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2016-04-26-VARIANT-04"
+          ]
         },
         {
           "filename": "CONVOCATORIA ABRIL 2016.pdf",
@@ -296,29 +713,73 @@
           "sha256": "764e7b63a8507c4ca942032b39ee7838c4f3b32dedae1fd0161f093784a09bb9",
           "pages": 2,
           "relationship_es": "Convocatoria separada de dos páginas.",
-          "relationship_en": "Separate two-page notice."
+          "relationship_en": "Separate two-page notice.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2016-04-26-NOTICE-01",
+          "relationship_kind": "related-notice",
+          "classification_status": "classified",
+          "legacy_id_aliases": []
         }
       ]
     },
     {
       "slug": "2017-04-07-cexp",
+      "event_id": "SP-ACTA-2017-04-07-CEXP",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 84535,
         "sha256": "da872ab6f5d4dd810342a3d24772e9bce42db37572f82afb2c743fd44b3f7f23",
-        "pages": 2
+        "pages": 2,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2017-04-07-CEXP-PUBLIC-CONTROL",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2017-04-07-cexp"
+        ]
       },
-      "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
-      "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
-      "additional_variants": []
+      "variant_note_es": "El control público y el export Drive registrado tienen 84.535 bytes, pero SHA-256 distintos; se conservan como binarios separados.",
+      "variant_note_en": "The public control and registered Drive export are each 84,535 bytes but have different SHA-256 values; they remain separate binaries.",
+      "additional_variants": [
+        {
+          "bytes": 84535,
+          "sha256": "e2612c11bb243893492b4a490c37ccdada270a8400d5764e8e309a674c95736f",
+          "pages": 2,
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2017-04-07-CEXP",
+          "legacy_id_aliases": [],
+          "relationship_kind": "registered-drive-export-distinct-binary",
+          "relationship_es": "Export PDF de Drive registrado por separado; mismo tamaño, SHA-256 distinto del control público.",
+          "relationship_en": "Separately registered Drive PDF export; same byte count, different SHA-256 from the public control.",
+          "classification_status": "classified"
+        }
+      ]
     },
     {
       "slug": "2017-06-12",
+      "event_id": "SP-ACTA-2017-06-12",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 20197835,
         "sha256": "6fa45194f642aee51228a6a7d78bc4a7ae9386930eb831e0606712ba24a5694d",
-        "pages": 13
+        "pages": 13,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2017-06-12",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -326,14 +787,27 @@
     },
     {
       "slug": "2018-05-18",
+      "event_id": "SP-ACTA-2018-05-18",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 4004030,
         "sha256": "15466aae53413c686c5e0a53b37007b174a2cb7fe9e55a8a7e3e8180b218e961",
-        "pages": 9
+        "pages": 9,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-05-18-B",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2018-05-18"
+        ]
       },
-      "variant_note_es": "Copia de nueve páginas autenticada por el archivo ACTAS.zip; las variantes de ocho páginas son parciales.",
-      "variant_note_en": "Nine-page copy authenticated through ACTAS.zip; the eight-page variants are partial.",
+      "variant_note_es": "Control de nueve páginas recuperado y controlado desde ACTAS.zip; la autenticidad permanece abierta. La segunda copia de nueve páginas y las dos variantes parciales de ocho páginas conservan IDs, tamaños y SHA-256 separados.",
+      "variant_note_en": "Nine-page control recovered and controlled from ACTAS.zip; authenticity remains open. The second nine-page copy and two partial eight-page variants retain separate IDs, byte counts and SHA-256 values.",
       "additional_variants": [
         {
           "filename": "2018-05-18-package.pdf",
@@ -341,7 +815,15 @@
           "sha256": "a903182722f729e62c009f138af6945be2525021ddfbdbf0809f03331f135d95",
           "pages": 9,
           "relationship_es": "Segunda conversión/paquete de nueve páginas.",
-          "relationship_en": "Second nine-page conversion/package."
+          "relationship_en": "Second nine-page conversion/package.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2018-05-18-B-ALT",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2018-05-18-VARIANT-01"
+          ]
         },
         {
           "filename": "2018-05-18-source.pdf",
@@ -349,7 +831,15 @@
           "sha256": "2a91b321f801edf38599224473b5909f96743d51d8aaa8b9f94d104dcaaa2bc3",
           "pages": 8,
           "relationship_es": "Variante parcial de ocho páginas con texto extraíble.",
-          "relationship_en": "Partial eight-page variant with extractable text."
+          "relationship_en": "Partial eight-page variant with extractable text.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2018-05-18-A",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2018-05-18-VARIANT-02"
+          ]
         },
         {
           "filename": "2018-05-18-alt.pdf",
@@ -357,17 +847,36 @@
           "sha256": "ce7c1dee0470f620c3f335ee90866b5e546745971678ce7b0d3c0c18c0d3f72d",
           "pages": 8,
           "relationship_es": "Variante parcial alternativa de ocho páginas.",
-          "relationship_en": "Alternate partial eight-page variant."
+          "relationship_en": "Alternate partial eight-page variant.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2018-05-18-C",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2018-05-18-VARIANT-03"
+          ]
         }
       ]
     },
     {
       "slug": "2018-07-05",
+      "event_id": "SP-ACTA-2018-07-05",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 632354,
         "sha256": "c7c31a13ab1d0fece4147a08f4467d8ee8f12c00f31dde121c2b3a416135f4f2",
-        "pages": 9
+        "pages": 9,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-07-05",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia exacta de nueve páginas recuperada de ACTAS.zip; el segundo binario renderiza idénticamente.",
       "variant_note_en": "Exact nine-page copy recovered from ACTAS.zip; the second binary renders identically.",
@@ -378,7 +887,15 @@
           "sha256": "3b718d66d379c1649433af42aac7afce0677292f911f1c5b485fc33561fe9ce1",
           "pages": 9,
           "relationship_es": "Binario distinto; las nueve páginas renderizan de forma idéntica.",
-          "relationship_en": "Different binary; all nine pages render identically."
+          "relationship_en": "Different binary; all nine pages render identically.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2018-07-05-ALT",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2018-07-05-VARIANT-01"
+          ]
         },
         {
           "filename": "CONVOCATORIA SUN PARK 5-7-18.pdf",
@@ -386,17 +903,34 @@
           "sha256": "2a31ed88e9f8d3d7c0b3528a25f23071e36cc081d9af0d172b54b25d464665ea",
           "pages": 1,
           "relationship_es": "Convocatoria separada de una página.",
-          "relationship_en": "Separate one-page notice."
+          "relationship_en": "Separate one-page notice.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2018-07-05-NOTICE-01",
+          "relationship_kind": "related-notice",
+          "classification_status": "classified",
+          "legacy_id_aliases": []
         }
       ]
     },
     {
       "slug": "2022-02-04",
+      "event_id": "SP-ACTA-2022-02-04",
+      "document_type": "acta-or-minutes",
+      "source_package_kind": "acta-or-minutes-family",
+      "counts_as_located_acta_family": true,
       "controlling_copy": {
         "filename": "copia digital de trabajo",
         "bytes": 3369527,
         "sha256": "bcde60e1bc42bdc6448eb28f1258894746f717a44a342927269549c06ec0666e",
-        "pages": 7
+        "pages": 7,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2022-02-04",
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "controlling-copy",
+        "legacy_id_aliases": []
       },
       "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
       "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
@@ -407,21 +941,102 @@
           "sha256": "d13092e82da4197daad0e935a99c9e95d36fb2b8737a011237f8dd367fec82ed",
           "pages": 7,
           "relationship_es": "Binario alternativo de siete páginas con resaltados visibles.",
-          "relationship_en": "Alternate seven-page binary with visible highlighting."
+          "relationship_en": "Alternate seven-page binary with visible highlighting.",
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2022-02-04-ALT-3492026",
+          "relationship_kind": "native-variant",
+          "classification_status": "classified",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2022-02-04-NATIVE-VARIANT-01"
+          ]
+        },
+        {
+          "bytes": 3015343,
+          "sha256": "56355a84eadbbd2cc085d650c20bc56560b1006992fcf6f462ecc5d6875b39e0",
+          "pages": 7,
+          "local_source_status": "not-evaluated-unselected",
+          "metadata_status": "carried-forward-from-existing-public-reconciliation",
+          "source_document_id": "SP-SRC-ACTA-2022-02-04-ALT",
+          "relationship_kind": "native-variant",
+          "relationship_es": "Tercer binario nativo conocido de siete páginas, controlado por tamaño y SHA-256; no está presente localmente y su relación material con las otras copias sigue sin resolverse.",
+          "relationship_en": "Third known seven-page native binary, controlled by size and SHA-256; it is not present locally and its material relationship to the other copies remains unresolved.",
+          "classification_status": "relationship-unresolved",
+          "classification_note_es": "Variante conocida por metadatos de control; nombre nativo y relación exacta no establecidos.",
+          "classification_note_en": "Variant known by control metadata; native filename and exact relationship are not established.",
+          "legacy_id_aliases": [
+            "SP-SRC-ACTA-2022-02-04-NATIVE-VARIANT-02"
+          ]
         }
       ]
+    },
+    {
+      "slug": "2022-03-11-ricpe-shareholder-notice",
+      "event_id": "SP-MEETING-2022-03-11-RICPE",
+      "document_type": "shareholder-meeting-notice-and-agenda",
+      "source_package_kind": "non-acta-notice-and-agenda",
+      "counts_as_located_acta_family": false,
+      "controlling_copy": {
+        "filename": "convocatoria y orden del día RICPE de cinco páginas",
+        "bytes": 191251,
+        "sha256": "3858b928d4eee8a4f5e9b21f5452c9e58cbbfbd22debccb38bfe3dd07db303c4",
+        "pages": 5,
+        "local_source_status": "present",
+        "metadata_status": "computed-from-current-run",
+        "source_document_id": "SP-SRC-NOTICE-RICPE-2022-02-11-5P",
+        "legacy_id_aliases": [],
+        "relationship_kind": "controlling-copy",
+        "classification_status": "controlling-copy-for-public-package",
+        "source_page_scope": "five-page-shareholder-notice-and-agenda"
+      },
+    "variant_note_es": "El documento recibido de cinco páginas está fechado el 11 de febrero de 2022 y atribuye al Consejo de RIC Private Equity Investment Partners, S.C.R., S.A., por medio de su secretario, una convocatoria propuesta para primera convocatoria el 11 de marzo y segunda el 12 de marzo. Registra texto de convocatoria y orden del día, pero no prueba autoría, emisión efectiva, servicio o conocimiento del destinatario. No es un ACTA: la celebración, el cuórum, las votaciones y el resultado no están probados. La mención de un acuerdo de accionistas de 29 de diciembre de 2021 es una referencia posterior; sus registros primarios siguen sin localizarse.",
+    "variant_note_en": "The received five-page document is dated 11 February 2022 and attributes to the Board of RIC Private Equity Investment Partners, S.C.R., S.A., through its secretary, a proposed first call on 11 March and second call on 12 March. It records notice and agenda wording but does not prove authorship, actual issuance, service or recipient knowledge. This is not minutes: occurrence, quorum, votes and outcome are unproved. The reference to a 29 December 2021 shareholder resolution is a later recital; its primary records remain unlocated.",
+      "additional_variants": [],
+      "document_issue_date": "2022-02-11",
+      "scheduled_meeting_first_call": "2022-03-11",
+      "scheduled_meeting_second_call": "2022-03-12",
+      "documented_meeting_status": {
+        "notice_and_agenda_located": true,
+        "meeting_occurrence_proved": false,
+        "quorum_proved": false,
+        "votes_proved": false,
+        "outcome_proved": false,
+        "minutes_or_outcome_record_located": false
+      },
+      "referenced_prior_resolution": {
+        "date": "2021-12-29",
+        "evidence_status": "later-recital-in-notice",
+        "primary_records_located": false
+      }
     }
   ],
   "known_unlocated_sources": [
     {
+      "unlocated_source_key": "2012-08-10-written-objection",
       "date": "2012-08-10",
-      "description_es": "Escrito del presidente y objeción anunciados como anexos del ACTA.",
-      "description_en": "President's statement and objection announced as annexes to the minutes."
+      "continuity_evidence_record_id": "SP-SRC-OBJECTION-2012-08-10",
+      "description_es": "Escrito de objeción anunciado en el ACTA; la declaración del presidente se ha localizado por separado.",
+      "description_en": "Written objection announced in the minutes; the president's statement has been located separately.",
+      "counts_as_unlocated_acta_original": false,
+      "counts_as_unlocated_meeting_or_minutes_original": false
     },
     {
+      "unlocated_source_key": "2018-11-20-standalone-acta",
       "date": "2018-11-20",
-      "description_es": "ACTA mencionada posteriormente en 2022; original autónomo no localizado.",
-      "description_en": "Minutes later recited in 2022; standalone original not located."
+      "continuity_evidence_record_id": "SP-SRC-RECITAL-2018-11-20",
+      "description_es": "ACTA mencionada posteriormente en 2022; fuente autónoma no localizada.",
+      "description_en": "Minutes later recited in 2022; standalone source not located.",
+      "counts_as_unlocated_acta_original": true,
+      "counts_as_unlocated_meeting_or_minutes_original": true
+    },
+    {
+      "unlocated_source_key": "2021-12-29-ricpe-primary-meeting-records",
+      "date": "2021-12-29",
+      "continuity_evidence_record_id": "SP-SRC-RICPE-2021-12-29-PRIMARY-UNLOCATED",
+      "description_es": "Junta y acuerdo societario mencionados en la convocatoria posterior de RICPE; convocatoria, ACTA, lista, votos y acuerdo primarios no localizados.",
+      "description_en": "Corporate meeting and resolution recited in the later RICPE notice; primary notice, minutes, list, votes and resolution unlocated.",
+      "counts_as_unlocated_acta_original": false,
+      "counts_as_unlocated_meeting_or_minutes_original": true
     }
   ]
 }

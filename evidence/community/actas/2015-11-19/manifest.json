@@ -24,14 +24,74 @@
     "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
     "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
     "native_publication": false,
-    "variants_recorded": 3
+    "variants_recorded": 3,
+    "source_document_id": "SP-SRC-ACTA-2015-11-19-C",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2015-11-19"
+    ],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 3,
+    "additional_source_documents": [
+      {
+        "filename": "2015-11-19-request-source.pdf",
+        "bytes": 16880851,
+        "sha256": "a9d926553304d4efffeb1070e72728a3b8f37cd67d7f27a5540ec333b0f20a73",
+        "pages": 38,
+        "relationship_es": "Misma familia de 38 páginas con anotaciones manuscritas; no se sustituye por la copia limpia.",
+        "relationship_en": "Same 38-page family with handwritten annotations; not silently substituted for the clean copy.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2015-11-19-D-ANNOTATED-38P",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2015-11-19-VARIANT-01"
+        ]
+      },
+      {
+        "filename": "DOCS-#9481385-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015.PDF",
+        "bytes": 922046,
+        "sha256": "69fd5cb5ab6cdc845eb60b6305a9c3a6260b860220116ac1f35a6b40b5248406",
+        "pages": 4,
+        "relationship_es": "Extracto procesal de cuatro páginas; documento separado.",
+        "relationship_en": "Four-page procedural extract; separate document.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2015-11-19-A",
+        "relationship_kind": "related-procedural-extract",
+        "classification_status": "unresolved-conflict",
+        "classification_note_es": "La clasificación exacta y la relación procesal permanecen no resueltas/en conflicto; no se trata como variante del ACTA.",
+        "classification_note_en": "The exact classification and procedural relationship remain unresolved/in conflict; it is not treated as a minutes variant.",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2015-11-19-PROCEDURAL-EXTRACT-01"
+        ]
+      },
+      {
+        "filename": "DOCS-#9481468-v2-Luchy_Playa_Blanca__S_L__-_Complejo_Sun_Park_-_Junta_General_Extraordinaria_19_11_2015_-_Bandama.PDF",
+        "bytes": 928338,
+        "sha256": "e8d063655b354d80e109be2188f97710b8d08de0d76cc925ebd0bd0729cbace2",
+        "pages": 4,
+        "relationship_es": "Segundo extracto procesal de cuatro páginas; documento separado.",
+        "relationship_en": "Second four-page procedural extract; separate document.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2015-11-19-B",
+        "relationship_kind": "related-procedural-extract",
+        "classification_status": "unresolved-conflict",
+        "classification_note_es": "La clasificación exacta y la relación procesal permanecen no resueltas/en conflicto; no se trata como variante del ACTA.",
+        "classification_note_en": "The exact classification and procedural relationship remain unresolved/in conflict; it is not treated as a minutes variant.",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2015-11-19-PROCEDURAL-EXTRACT-02"
+        ]
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2015-11-19/transcript-es.md",
     "provenance": "evidence/community/actas/2015-11-19/provenance.md",
     "redaction_log": "evidence/community/actas/2015-11-19/redaction-log.md",
     "pdf": "assets/docs/community-actas/2015-11-19-public-redacted-es.pdf",
-    "pdf_sha256": "7013337d676062f5aab347db4c3b5c9f53949d39f1c13356a2f3d920323aad1e",
+    "pdf_sha256": "84e9301cb1c1914896a295ad3529c026981f2fa37c5af5948b2d4ec832fec0d9",
     "pdf_pages": 40,
     "preview_pages": [
       "assets/evidence/community-actas/2015-11-19/page-001.jpg",
@@ -119,7 +179,169 @@
       "assets/evidence/community-actas-source/2015-11-19/page-037.jpg",
       "assets/evidence/community-actas-source/2015-11-19/page-038.jpg"
     ],
-    "source_preview_count": 38
+    "source_preview_count": 38,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-001.jpg",
+        "sha256": "49ac2a21f363519e25ef619a697bebdc3e55891266a716a8cce30b0c52b149a5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-002.jpg",
+        "sha256": "93a064c6bb9fc16dee93bcdb812fa8b108df1e13f574f68840b947a12535265d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-003.jpg",
+        "sha256": "1dc08cc25b0f67cf517ec3c15ba8bec146230216beee5c5ca49dfcb422e51adf"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-004.jpg",
+        "sha256": "cbb71b1434a0e528438843ca24d492ecb2bca6ed24bab80eab7970ed59cb6706"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-005.jpg",
+        "sha256": "d9d2f6af78be3ed1529528d5611e25b5ce2367ccfd2c35242b30b9d4ee59e880"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-006.jpg",
+        "sha256": "80d17bc3d3ea4cf163264f7e4f062c3bbf737615fc5a37855b99f41fb4bdcad7"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-007.jpg",
+        "sha256": "8fea25c984c6386aed87afd7c61b8ac92300ca0db280c61f8670a72022eefc4e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-008.jpg",
+        "sha256": "23ec72f9c75aa2f2dacb0a749e355a4e5f8079fb8d5141a7d8140de1593d72b5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-009.jpg",
+        "sha256": "2be183999324b7d80ccf234a376be93e338f877718c31405f8cc9a8be47e10e3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-010.jpg",
+        "sha256": "1581d0e78288a6ec57cbf45b2f44d1e50ec813d25888473c8f71c61aef1978b6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-011.jpg",
+        "sha256": "28803f9850623a1a8a5955a906226bf0badce0aed4dde18a28f1cf9c13d533bb"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-012.jpg",
+        "sha256": "dfee06039b2e5da7659ce56a6c1c28198b0e114f56e22285d1d05836a89d2e29"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-013.jpg",
+        "sha256": "5c8af8f7cf660b43e7a23aaec163c811286a219863455572e7a32e6f86f448b5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-014.jpg",
+        "sha256": "ad01aa1057b8a965510c6af734c199f52539a56aa2b351741c0604d86d5ff57e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-015.jpg",
+        "sha256": "235dd2395f4b673f6b7ea16f51d7a4902d654328f22777b51f1fa4d70f5be517"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-016.jpg",
+        "sha256": "cf5a4675f0ecec77d83f654484d812d67e8b5c1b4642517c77979717c1811bd3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-017.jpg",
+        "sha256": "f38fd523492bff9ba9e6a6672af6283bf61dd0e9e23ae2ff30ff36047c105ce6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-018.jpg",
+        "sha256": "d690ca862acd99801c775c087b369c13ceefcaf110aa01f6e6cfba0faed5bfa5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-019.jpg",
+        "sha256": "b4eddb6398709529495f2ab77802ba3595722f6c51914814cc3149a93dd3e920"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-020.jpg",
+        "sha256": "323dbe30525cd22e0b1dcb60d036b6b055db48b9762764dee80efddea529f4a7"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-021.jpg",
+        "sha256": "7508a7a9e88889237ae304ce7521a9ca18085e1e4a91babdeb6e782cf2814ca1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-022.jpg",
+        "sha256": "54f51dea7feec1fa21269ae8a5df5978a1db283a81326d9429ab639d0d7af86b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-023.jpg",
+        "sha256": "9d643bfb418c3dd5c65cf21f7b8442cbe3a591225c6559430944c6a922883c6e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-024.jpg",
+        "sha256": "bbdcd33b581d0a2a4e097b99bb30757d3c8b8b125fdc55071ea5db5a01318d53"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-025.jpg",
+        "sha256": "87234424d22b7b0083bb2c1078b6bb2e2cfa4c33383bba7db686534e00d3128a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-026.jpg",
+        "sha256": "158e8a81405951da7489d4ed4799882a631d78778f0509db936f9d5ee2f10181"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-027.jpg",
+        "sha256": "78faab3e12d5a5cd133677f20ed2e47343657cb90ec1afb0bb7df375dfca9441"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-028.jpg",
+        "sha256": "4be9feacbd836b03c81b873c0d8314be9b56df1e49e19af2de0b9f441d48662e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-029.jpg",
+        "sha256": "2e95438d3775ef6ec2c270e1dc9caef13441a685ca32b1c7315bdf85fbb32328"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-030.jpg",
+        "sha256": "cd0bddf8c64906f7db7d92efe9d919eecbbe9d0484f9e276318c2f120c6d3e88"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-031.jpg",
+        "sha256": "5bec86b372912a151c92c20b4301e419141c6155744cc743d7e953f22e881a9d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-032.jpg",
+        "sha256": "020ef23bb7d2091367adde57dc20653061dfa8361eea22036fa4d8fc4312dfbb"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-033.jpg",
+        "sha256": "ed0e08dbbe359d06e4457e80db4ba5343adbb4ff783a7faf54114e76cb30fdb6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-034.jpg",
+        "sha256": "0b82d42db2cf310bc240f17b0adc2eed8985c3bf91e3b152daed098052dee9c9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-035.jpg",
+        "sha256": "4d37e3500db4052ff38a1910d881f8e33ae88d055bf7e9e39addc40058863bfd"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-036.jpg",
+        "sha256": "68655f06eb477a09a842dbd923e94c0ef4c9d7f522076222b835b06bd11e29dc"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-037.jpg",
+        "sha256": "458cfbb41dceb66807910481078fef1b866df440f01c24ea313bb8964c329473"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-038.jpg",
+        "sha256": "781970aaf73c06ecad234696e413e8f697bbeeccd8fee643e410bbeca8ef875a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-039.jpg",
+        "sha256": "26f7de5d5909bddb123bc8d6647553d924ac4b7e3dd6ea99a824dd90be00005a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2015-11-19/page-040.jpg",
+        "sha256": "f0254f4b55d5a5b3ab5739d48c2eab03d49f317369fe07dd25eacf3b5ece04eb"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -132,7 +354,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

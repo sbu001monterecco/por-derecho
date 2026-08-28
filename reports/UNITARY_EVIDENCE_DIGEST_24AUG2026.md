@@ -62,7 +62,7 @@ This separation is the single most important analytical control across the websi
 
 **Website use:** Present as the structural starting point, with a visual separating hotel unity from title fragmentation.
 
-### 2. Jonathan Simó/CLS economic analysis and the 11 June 2016 meeting
+### 2. Jonathan Simó/CLS economic analysis and the 10 June 2016 meeting
 
 **Support:** The controlled record identifies an economic analysis of 2008–2015 accounts and expenditure, separating hotel-operation costs from maintenance/common expenditure. The recorded meeting placed the Community debt, voting consequences, payments and supporting accounting before PwC personnel, Jonathan Simó, Francisco Mario Matos Matas and Juan Carlos Prieto Puente.
 
@@ -205,7 +205,7 @@ This separation is the single most important analytical control across the websi
    > Downstream title, operation, financing or incentives do not retroactively determine the legality, authority or knowledge attached to earlier acts.
 
 9. On the Laborý page, add direct links to:
-   - the 11 June 2016 knowledge checkpoint;
+   - the 10 June 2016 knowledge checkpoint (later derivative transcript labelled `11JUN2016`);
    - the Community debt page;
    - the AC notice page;
    - the archive recovery register;
@@ -224,7 +224,7 @@ This separation is the single most important analytical control across the websi
 
 12. Publish redacted, hash-identified versions of controlling originals wherever lawful:
    - 1987 statutes and 2008 exploitation instruments;
-   - 11 June 2016 audio custody record and clean transcript;
+   - 10 June 2016 native-audio custody/authentication record, clean transcript and attendee/capacity map, preserving the later `11JUN2016` derivative label;
    - 12 July 2016 burofax and proof of receipt;
    - 18 May 2018 Community record;
    - certified DP 1132/2018 statements and orders;
@@ -254,7 +254,7 @@ This separation is the single most important analytical control across the websi
 ## Immediate evidence-completion order
 
 1. Certified/redacted 12 July 2016 burofax package.
-2. Native 11 June 2016 audio, metadata and clean transcript.
+2. Native 10 June 2016 audio, metadata, authentication, clean transcript and attendee/capacity map; preserve `11JUN2016` as the later derivative label.
 3. Complete DP 1132/2018 and DI 248/2018 certified records.
 4. Original 18 May 2018 Community record, authority, security contract, invoices and payer.
 5. 26 June 2018 suspension order, 28 November deed, registry notes, payment and ledger entries.

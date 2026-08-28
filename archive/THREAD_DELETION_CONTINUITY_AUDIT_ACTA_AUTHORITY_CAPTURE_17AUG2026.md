@@ -38,7 +38,7 @@ No duplicate missing-evidence queue has been created.
 
 ### A. 22-Jun-2011 ACTA located as a native Gmail attachment
 
-Gmail thread `1540ce64bb1cb313`, April-2016, contains attachment metadata for:
+Gmail thread `SP-PRV-LCTR-GM-F32AE7CE7E932F13D15A`, April-2016, contains attachment metadata for:
 
 - `7. ACTA 22 JUN 2011.pdf` — 4,549,723 bytes;
 - `SENTENCIA ASUNCION y CIA MAR2011.pdf` — 4,069,760 bytes.
@@ -47,9 +47,9 @@ The readable email body shows that the June-2011 ACTA was already being treated 
 
 ### B. November-2015 ACTA variants + April-2016 convocation chain located
 
-Gmail message `155270de97a23680` identifies two distinct 19-Nov-2015 ACTA PDFs, including a `Bandama` variant, plus 18-Nov-2015 burofax delivery copies and litigation materials.
+Gmail message `SP-PRV-LCTR-GM-899B3EE795AF312F3D29` identifies two distinct 19-Nov-2015 ACTA PDFs, including a `Bandama` variant, plus 18-Nov-2015 burofax delivery copies and litigation materials.
 
-The 15–20-Apr-2016 Gmail sequence `1541a132422e7102` / `154291cb9c1dab86` records receipt at Sun Park of Pamanil notifications concerning the November-2015 ACTA and a convocation for a **26-Apr-2016 meeting at Princesa Yaiza**. The same sequence includes a debt/legal analysis document and multiple contemporaneous JPGs that require image-by-image identification.
+The 15–20-Apr-2016 Gmail sequence `SP-PRV-LCTR-GM-DE24AC20A898935126CD` / `SP-PRV-LCTR-GM-44001C238EE0A9519AE0` records receipt at Sun Park of Pamanil notifications concerning the November-2015 ACTA and a convocation for a **26-Apr-2016 meeting at Princesa Yaiza**. The same sequence includes a debt/legal analysis document and multiple contemporaneous JPGs that require image-by-image identification.
 
 This creates a recoverable invitation→meeting→ACTA/source chain that was not explicit in the previous audit.
 
@@ -61,7 +61,7 @@ This is important institutional-memory evidence because it shows that the source
 
 ### D. June-2016 AC escalation and burofax-planning thread located
 
-Gmail thread `15544ecc55644ae9`, subject `Reunión con el AC`, documents a contemporaneous plan to place the disputed Community debt/authority issue before the Administrador Concursal, seek a meeting with the AC and advisers, request documentary/audit verification and prepare a written burofax/warning.
+Gmail thread `SP-PRV-LCTR-GM-ECF108BBD0275817621E`, subject `Reunión con el AC`, documents a contemporaneous plan to place the disputed Community debt/authority issue before the Administrador Concursal, seek a meeting with the AC and advisers, request documentary/audit verification and prepare a written burofax/warning.
 
 The thread includes legal advice from Cristo Suárez Pimentel and is **PRIVATE / PRIVILEGED OR POTENTIALLY PRIVILEGED**. The public repository stores only source metadata and narrow evidential consequences. Full bodies/quotations must not be published without deliberate privilege review.
 
@@ -69,13 +69,13 @@ The thread includes legal advice from Cristo Suárez Pimentel and is **PRIVATE /
 
 ### E. June-2016 transmission of the Community-credit litigation corpus to concursal counsel located
 
-Gmail messages `155270b982a28996`, `155270de97a23680`, `155270eec5a104b1` show extensive source packages being transmitted to Juan Tomás Parrilla in relation to litigation affecting the Community credit in the concurso.
+Gmail messages `SP-PRV-LCTR-GM-D9E5CD4FE1B9979DC5D7`, `SP-PRV-LCTR-GM-899B3EE795AF312F3D29`, `SP-PRV-LCTR-GM-E2D454C5080D7EAD6C8C` show extensive source packages being transmitted to Juan Tomás Parrilla in relation to litigation affecting the Community credit in the concurso.
 
 This supports a verified transmission into the concursal-lawyer workstream. It does **not** prove the AC personally received/read each attachment; AC receipt/knowledge must be bridged separately.
 
 ### F. Post-26-Apr-2016 debt-analysis files located
 
-Messages `1553c7d8436c9a0d` / `1553f05644a46549` identify:
+Messages `SP-PRV-LCTR-GM-D71B0F191ADC1A25AB51` / `SP-PRV-LCTR-GM-B6DFE6A6F397A2570857` identify:
 
 - `Análisis Gastos de la Cdad Explotación v3.docx`;
 - `Propuesta de Deuda Comunidad - Junta Abril 2016 (2).xlsx`.
@@ -84,7 +84,7 @@ These establish a contemporaneous analytical workstream after the 26-Apr-2016 me
 
 ### G. AC meeting-scheduling bridge located
 
-The June-2016 thread `15571b5b4be8e72b`, including message `155770bc9a786fba`, records Juan Tomás reporting a response from Borja concerning proposed meeting dates. Exact date/attendance/content require full thread review before substantive reliance.
+The June-2016 thread `SP-PRV-LCTR-GM-F00065EDDD5570CBD290`, including message `SP-PRV-LCTR-GM-DE155A2B8D07E064FCB1`, records Juan Tomás reporting a response from Borja concerning proposed meeting dates. Exact date/attendance/content require full thread review before substantive reliance.
 
 ## 4. Full-digitisation status
 

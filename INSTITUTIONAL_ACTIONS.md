@@ -127,14 +127,14 @@ Among the materials reviewed to date, CEXP is the only entity for which both a p
 
 ### Source controls
 
-- [29 April 2008 owners’ resolution](https://drive.google.com/file/d/1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe/view)
+- [29 April 2008 owners’ resolution](en/community-instrumentalisation/acta-document-room/2008-04-29/)
 - [1987 Owners' Statutes and 2008 CEXP instruments — controlled public edition](evidence/community/OWNER_STATUTES_1987_CEXP_2008_PUBLIC_DIGITAL_EDITION.md) — primary source digitised and indexed; unredacted image masters remain protected pending privacy, provenance and signature review
 - 1 February 2012 CEXP–Monterecco notice — primary source reviewed; no unredacted public link pending privacy review
-- [4 June 2014 filing GE-014212/2014](https://drive.google.com/file/d/1w1QgRE1sMtKU1NrjaCoxaVlVbJwlH0kR/view)
-- [Cabildo Resolution 2026-2735 / file 614/2026](https://drive.google.com/file/d/1A-RV2JyliHimx4duPpJFur03ECTDpcip/view)
-- [Order 804/2018](https://drive.google.com/file/d/1Q7uDAQ0B4Oa_cc5tUPo-xxACAM51fJ5v/view)
+- [4 June 2014 filing GE-014212/2014](en/cabildo-lanzarote-tourism-traceability/)
+- [Cabildo Resolution 2026-2735 / file 614/2026](en/cabildo-lanzarote-tourism-traceability/)
+- [Order 804/2018](en/ric-private-equity-sun-park/#order-804-2018-pink-cessation)
 
-Source-access note (20 August 2026): anonymous access to the Order 804/2018 Drive locator was not verified. Treat it as an access-controlled custody pointer pending a redacted public copy; do not infer that the underlying source is lost.
+Source-access note (updated 28 August 2026): the control copy of Order 804/2018 remains in private custody. The local link above leads to source-bounded public analysis, not a source facsimile. An anonymous public copy has not been verified; do not infer that the underlying source is lost.
 
 Calculate any statutory remedy date from confirmed receipt by the competent organ, not from RedSARA upload alone.
 

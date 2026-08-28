@@ -15,7 +15,11 @@ SLEEP_SECONDS = 10
 TIMEOUT_SECONDS = 25
 
 REQUIRED = {
-    "/assets/site.js": ["san-telmo-attribution-correction-20260819.js?v=20260819a"],
+    "/assets/site.js": ["site-pre-treasury-154-hq-20260828.js?v=20260828a"],
+    "/assets/site-pre-treasury-154-hq-20260828.js": [
+        "san-telmo-attribution-correction-20260819.js?v=20260819a",
+        "data-san-telmo-attribution-loader",
+    ],
     "/assets/san-telmo-attribution-correction-20260819.js": [
         "Speaker correction.",
         "Corrección de atribución.",

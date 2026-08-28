@@ -14,7 +14,7 @@
 
 No es el original, el libro diligenciado, una copia certificada ni una transcripción pericial. El texto cubre secuencialmente todas las páginas de la copia de control, pero el OCR no ha sido certificado línea por línea. Los datos personales, firmas, domicilios, contactos, identificadores, cuentas, tablas por propietario/finca/deuda/voto y anexos reservados se sustituyen por marcadores expresos.
 
-**Control de variante:** Copia de nueve páginas autenticada por el archivo ACTAS.zip; las variantes de ocho páginas son parciales.
+**Control de variante:** Control de nueve páginas recuperado y controlado desde ACTAS.zip; la autenticidad permanece abierta. La segunda copia de nueve páginas y las dos variantes parciales de ocho páginas conservan IDs, tamaños y SHA-256 separados.
 
 ## Página fuente 1 de 9
 

@@ -148,8 +148,8 @@ The earlier generated draft that placed Eduardo's portrait under Borja's name re
 
 ### RSM Spain
 
-- Gmail message ID: `1a01c69e346ddb77`
-- Thread ID: `19e98bb01c8e74e9`
+- Gmail message ID: `SP-PRV-LCTR-GM-069145229B0B00D1702D`
+- Thread ID: `SP-PRV-LCTR-GM-C6A719E44365E7998A67`
 - Subject: `Re: Seguimiento y solicitud de actualización – expediente NNR4-1025C2F66`
 - Principal recipient: Francisco J. Remiro Hernández / RSM Spain Ethics & Independence.
 - Gmail-recorded timestamp: `2026-08-19T23:44:56`
@@ -159,8 +159,8 @@ The earlier generated draft that placed Eduardo's portrait under Borja's name re
 
 ### Grant Thornton / file 2024_04
 
-- Gmail message ID: `1a01c815265a9301`
-- Thread ID: `195d8a4fc0633ea8`
+- Gmail message ID: `SP-PRV-LCTR-GM-7739C5BFCC744E558D5D`
+- Thread ID: `SP-PRV-LCTR-GM-312360C7FFB6588544CD`
 - Subject: `Re: Further to Previous Communications – Updated Evidence & Legal Contact (file number 2024_04)`
 - Principal recipients: GTIL contact and Grant Thornton Spain Canal Ético; the existing GT Spain institutional CC list was preserved.
 - Gmail-recorded timestamp: `2026-08-20T00:10:32`
@@ -172,8 +172,8 @@ The earlier generated draft that placed Eduardo's portrait under Borja's name re
 
 ### PwC Spain / PwC Global–UK Legal & Risk escalation
 
-- Gmail message ID: `1a01c9b85f5d56c5`
-- Thread ID: `17812aeb5d3492c1`
+- Gmail message ID: `SP-PRV-LCTR-GM-1CBF695F7B0BFF7943CC`
+- Thread ID: `SP-PRV-LCTR-GM-C1CEF35ADBC2E3530D42`
 - Subject: `Re: Aweswell Limited/Sun Rock / Hotel SUN PARK Lanzarote`
 - Principal recipients: PwC Spain institutional recipients; PwC Global/UK Legal & Risk and Carlos Saavedra were retained in CC.
 - Gmail-recorded timestamp: `2026-08-20T00:39:08`
@@ -276,9 +276,9 @@ It does remain a required publication correction and must not be forgotten.
 
 Three accidental test emails were sent only to reserved `example.com` placeholder addresses and moved to Trash:
 
-- `1a01c6a1f3af5861` — `invalid@example.com`
-- `1a01c6abeb8855c6` — `invalid2@example.com`
-- `1a01c6b41459a2e1` — `invalid3@example.com`
+- `SP-PRV-LCTR-GM-B138FD3742CA4A2C7CAA` — `invalid@example.com`
+- `SP-PRV-LCTR-GM-8F1D198EC4CD5230883D` — `invalid2@example.com`
+- `SP-PRV-LCTR-GM-C3CC889B16A00ECA7CD2` — `invalid3@example.com`
 
 They reached no real recipient. Associated delivery-failure notices remain in the mailbox. They may be removed later as ordinary mailbox housekeeping, but they do not affect the RSM/GT/PwC communications.
 

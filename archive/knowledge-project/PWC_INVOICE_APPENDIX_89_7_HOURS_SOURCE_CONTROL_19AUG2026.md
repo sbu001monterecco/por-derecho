@@ -6,8 +6,8 @@
 
 ## Primary source
 
-Gmail parent message: `1554e9a6643a7984`  
-From: `maria_eugenia.fernandez.bravo@es.pwc.com`  
+Gmail parent message: `SP-PRV-LCTR-GM-BEFBD2173022D1EB5EF9`
+**Recorded sender token:** `SP-PRV-LCTR-EM-AEAF303BC8FC11F55F33`
 Subject: `Invoice PwC`  
 Attachment: `ANEXO FRA. MATKATOR FACTURA MAYO 2016.pdf`  
 Companion attachment: `frmFNPDFTaxInvoice 36117713 - June 14_2016.pdf`
@@ -83,7 +83,7 @@ Entries:
 
 ## Direct 21-Apr email cross-check
 
-Gmail forwarded copy `1a0294bdf7a986f8` preserves Borja Rodríguez-Batllori's 21-Apr-2016 reply directly copying Carlos Saavedra, Miguel Hernández and Elena Santos. Borja refuses to authorise Luchy/LPB contracting the PwC lawyers on the information then supplied and asks them not to provide Luchy services without his express consent, citing treasury, estate-credit, necessity and fee-information concerns.
+Gmail forwarded copy `SP-PRV-LCTR-GM-387CC2EC3CF5D0A1B466` preserves Borja Rodríguez-Batllori's 21-Apr-2016 reply directly copying Carlos Saavedra, Miguel Hernández and Elena Santos. Borja refuses to authorise Luchy/LPB contracting the PwC lawyers on the information then supplied and asks them not to provide Luchy services without his express consent, citing treasury, estate-credit, necessity and fee-information concerns.
 
 This is a material cross-check on the appendix's 21-Apr strategy/preparation entries and 26-Apr attendance entries. It does **not** establish that PwC generated an unauthorised estate credit. The appendix's Matkator client terminology and the ACTA's named private-owner representation may identify a different/non-estate mandate, but the engagement letter, payer, scope and any later AC consent remain controlling. See `archive/BORJA_PWC_SUN_PARK_JUNTA_21APR2016_PRIMARY_EMAIL_RECORD_22AUG2026.md`.
 

@@ -15,10 +15,27 @@ import json
 import re
 from pathlib import Path
 
+from acta_capacity_sequence_annotations import (
+    ADVERSE_SEQUENCE_MODEL,
+    annotation_for_event,
+    validate_controlled_event_ids,
+)
+from acta_document_localization import (
+    localize_document_value,
+    localization_status,
+    validate_scalar_coverage,
+)
+from acta_event_actor_routes import (
+    ROUTE_INFERENCE_BOUNDARY,
+    actor_route_gaps_for_event,
+    actor_routes_for_event,
+)
+
 
 REPO = Path(__file__).resolve().parents[1]
 INDEX = REPO / "evidence/community/actas/public-index.json"
 LINEAGE = REPO / "evidence/community/actas/meeting-lineage-index-v1.json"
+CONTINUITY = REPO / "evidence/community/actas/event-family-continuity-v1.json"
 BASE_URL = "https://sbu001monterecco.github.io/por-derecho"
 
 
@@ -43,7 +60,20 @@ EVENTS = [
         "basis_es": "La fecha es posterior al acuerdo de activos de junio de 2008, pero la fuente pública no permite asignar con seguridad la convocatoria al perímetro Multimatrix/LPB ni al perímetro histórico Montelanza.",
         "basis_en": "The date follows the June 2008 asset agreement, but the public source does not safely assign the call to either the Multimatrix/LPB lane or the historical Montelanza lane.",
         "phase_es": "Transición 2008 · atribución abierta", "phase_en": "2008 transition · attribution open",
-        "related": ["SP-ACTA-2008-04-29", "SP-ACTA-2008-07-25"],
+        "related": ["SP-ACTA-2008-04-29", "SP-ACTA-2008-07-15-CEXP", "SP-ACTA-2008-07-25"],
+    },
+    {
+        "id": "SP-ACTA-2008-07-15-CEXP", "slug": "2008-07-15-cexp", "date": "2008-07-15", "record_type": "acta",
+        "body": "cexp", "title_es": "15 julio 2008 · reunión universal CEXP de las 17:00", "title_en": "15 July 2008 · 17:00 universal CEXP meeting",
+        "perimeter": "mixed_or_contested", "attribution_status": "separate universal CEXP meeting documented; convener unresolved", "confidence": "high-event/body; medium-capacities; unresolved-convener",
+        "convener_es": "La fuente documenta la constitución universal de CEXP entre las 17:00 y 17:30, separada de la junta comunitaria de las 12:00. LPB y Montelanza comparecen mediante representantes y se elige a Uri Omid presidente de la reunión/CEXP; no se nombra un convocante separado y no se infiere que presidencia equivalga a convocatoria.",
+        "convener_en": "The source documents CEXP's universal constitution from 17:00 to 17:30, separate from the 12:00 Community meeting. LPB and Montelanza appear through representatives and Uri Omid is elected chair/CEXP president; no separate convener is named and chairmanship is not treated as notice authority.",
+        "basis_es": "Es una transición postventa con comparecencia y firma de Montelanza y LPB, seguida de presidencia LPB. Esa participación cruzada impide forzar el evento al carril A o B y no resuelve por sí sola convocatoria, autoridad o validez.",
+        "basis_en": "This is a post-sale transition attended and signed by both Montelanza and LPB, followed by LPB taking the presidency. That cross-lane participation prevents forcing the event into A or B and does not itself establish notice authority or validity.",
+        "phase_es": "Transición 2008 · CEXP · atribución abierta", "phase_en": "2008 transition · CEXP · attribution open",
+        "notes_es": "Nueva familia fuente: tres páginas españolas y tres de traducción jurada inglesa, todas visualmente revisadas. No es variante del ACTA comunitaria de las 12:00. El control público de custodia acredita OCR automatizado privado no certificado para 6/6 páginas: todas las imágenes decodifican, no están en blanco y ninguna página produjo cero caracteres. Las imágenes públicas quedan íntegramente expurgadas y no publican ese OCR. Siguen abiertos el cotejo de redacción con imagen, la verificación manual línea por línea, original/libro, distribución, autenticidad y efecto jurídico. Se conserva como error literal la fecha «29 abril 1008» de la traducción.",
+        "notes_en": "New source family: three Spanish pages plus three pages of sworn English translation, all visually reviewed. It is not a variant of the 12:00 Community minutes. The public-safe custody control records uncertified private automated OCR for 6/6 pages: every image decodes and is nonblank, and no page produced zero characters. The wholly redacted public images do not publish that OCR. Wording-to-image comparison, manual line-by-line verification, original/book, distribution, authenticity and legal effect remain open. The translation's literal '29 April 1008' date is retained as a source error.",
+        "related": ["SP-ACTA-2008-07-15", "SP-ACTA-2008-07-25"],
     },
     {
         "id": "SP-ACTA-2008-07-25", "slug": "2008-07-25", "date": "2008-07-25", "record_type": "acta",
@@ -54,7 +84,7 @@ EVENTS = [
         "basis_es": "Registro posterior a la adquisición de activos en la fase Multimatrix/LPB. Se incluye en la sucesión del proyecto que después pasa a Aweswell/LPB; Gil no se presenta como director de esta reunión de 2008.",
         "basis_en": "Post-acquisition record from the Multimatrix/LPB phase. It is placed in the project succession later led through Aweswell/LPB; Gil is not presented as directing this 2008 meeting.",
         "phase_es": "Multimatrix/LPB · fase posterior a la compra", "phase_en": "Multimatrix/LPB · post-acquisition phase",
-        "related": ["SP-ACTA-2008-07-15", "SP-ACTA-2009-05-28"],
+        "related": ["SP-ACTA-2008-07-15", "SP-ACTA-2008-07-15-CEXP", "SP-ACTA-2009-05-28"],
     },
     {
         "id": "SP-ACTA-2008-12-17", "slug": "2008-12-17", "date": "2008-12-17", "record_type": "acta",
@@ -84,9 +114,9 @@ EVENTS = [
         "perimeter": "adverse_montelanza_molina", "attribution_status": "Gil attribution supported by office/representation record", "confidence": "medium",
         "convener_es": "La copia registra ausencia de presidente y secretario al inicio y elección de nuevos cargos durante la propia reunión; la convocatoria fuente completa permanece abierta.",
         "convener_en": "The copy records the chair and secretary absent at the outset and new officeholders elected during the meeting; the complete source notice remains open.",
-        "basis_es": "Gil atribuye este cambio a la consolidación del perímetro adverso Montelanza/Molina–Comunidad. La fuente prueba el cambio de cargos y posiciones expresadas, no una finalidad ilícita ni una actuación conjunta de todos los propietarios.",
-        "basis_en": "Gil attributes this change to consolidation of the adverse Montelanza/Molina–Community lane. The source proves office changes and recorded positions, not an unlawful purpose or joint conduct by all owners.",
-        "phase_es": "Perímetro adverso alegado · Montelanza/Molina–Comunidad", "phase_en": "Alleged adverse perimeter · Montelanza/Molina–Community",
+        "basis_es": "Gil atribuye este cambio al primer nodo AAS de su teoría del perímetro adverso. La fuente prueba el cambio de cargos y posiciones expresadas, no una finalidad ilícita ni una actuación conjunta de todos los propietarios.",
+        "basis_en": "Gil attributes this change to the AAS opening node of his adverse-perimeter theory. The source proves office changes and recorded positions, not an unlawful purpose or joint conduct by all owners.",
+        "phase_es": "Perímetro adverso alegado · nodo AAS", "phase_en": "Alleged adverse perimeter · AAS node",
         "related": ["SP-ACTA-2009-05-28", "SP-ACTA-2011-06-22"],
     },
     {
@@ -95,9 +125,9 @@ EVENTS = [
         "perimeter": "adverse_montelanza_molina", "attribution_status": "Gil attribution; meeting roles documented", "confidence": "high",
         "convener_es": "El ACTA consigna convocatoria por la presidenta y actuación de Francisco Mario Matos Matas como administrador.",
         "convener_en": "The minutes record notice by the chair and Francisco Mario Matos Matas acting as administrator.",
-        "basis_es": "Nodo documental central del perímetro Comunidad/Pamanil que Gil vincula con Montelanza/Molina: deuda, exclusión de voto, administración, litigios y propuesta Pamanil. La vinculación y criminalidad siguen siendo alegaciones a probar acto por acto.",
-        "basis_en": "Central document node in the Community/Pamanil lane Gil associates with Montelanza/Molina: debt, voting exclusion, administration, litigation and the Pamanil proposal. Alignment and criminality remain allegations requiring act-by-act proof.",
-        "phase_es": "Perímetro adverso alegado · Montelanza/Molina–Pamanil", "phase_en": "Alleged adverse perimeter · Montelanza/Molina–Pamanil",
+        "basis_es": "Nodo documental de transición AAS → FMMM/Pamanil dentro de la teoría atribuida por Gil: deuda, exclusión de voto, administración, litigios y propuesta Pamanil. Cogolludo, FMMM, AAS y Pamanil conservan identidades separadas; la alineación y criminalidad siguen siendo alegaciones a probar acto por acto.",
+        "basis_en": "Documentary transition node AAS → FMMM/Pamanil within Gil's attributed theory: debt, voting exclusion, administration, litigation and the Pamanil proposal. Cogolludo, FMMM, AAS and Pamanil retain separate identities; alignment and criminality remain allegations requiring act-by-act proof.",
+        "phase_es": "Perímetro adverso alegado · transición AAS → FMMM/Cogolludo/Pamanil", "phase_en": "Alleged adverse perimeter · AAS → FMMM/Cogolludo/Pamanil transition",
         "related": ["SP-ACTA-2011-02-02", "SP-ACTA-2012-08-10"],
     },
     {
@@ -112,16 +142,16 @@ EVENTS = [
         "related": ["SP-ACTA-2011-06-22", "SP-ACTA-2014-04-10"],
     },
     {
-        "id": "SP-ACTA-2014-04-10", "slug": "2014-04-10", "date": "2014-04-10", "record_type": "acta-source-gap",
-        "body": "owners", "status": "located-package-partial", "title_es": "10 abril 2014 · junta competidora LPB/Gil", "title_en": "10 April 2014 · competing LPB/Gil meeting",
-        "perimeter": "project_lpb_aweswell_gil", "attribution_status": "documented through controlled dossier; source package incomplete", "confidence": "high",
-        "convener_es": "El registro controlado identifica una convocatoria/junta promovida por LPB/Gil y un acta notarial; el paquete primario público íntegro sigue pendiente.",
-        "convener_en": "The controlled record identifies an LPB/Gil-promoted call/meeting and a notarial record; the complete public primary package remains pending.",
+        "id": "SP-ACTA-2014-04-10", "slug": "2014-04-10", "date": "2014-04-10", "record_type": "notarial-act-and-meeting-record",
+        "body": "owners", "title_es": "10 abril 2014 · junta competidora LPB/Gil", "title_en": "10 April 2014 · competing LPB/Gil meeting",
+        "perimeter": "project_lpb_aweswell_gil", "attribution_status": "located notarial record; promotion attributed in controlled dossier; validity contested", "confidence": "high-source; contested-effect",
+        "convener_es": "El ACTA DE PRESENCIA y la convocatoria incorporada documentan a LPB representada por Gil Marer como convocante, en las capacidades que allí reivindica. Esto prueba quién llamó y la capacidad declarada, no autoridad, validez, servicio correcto o aceptación por los asistentes.",
+        "convener_en": "The ACTA DE PRESENCIA and incorporated notice document LPB represented by Gil Marer as convener in the capacities asserted there. That proves who called and the stated capacity, not authority, validity, proper service or acceptance by attendees.",
         "basis_es": "Carril de gobernanza alternativo LPB/Gil. La suspensión cautelar posterior en PO 562/2014 y las impugnaciones deben acompañar cualquier uso de esta reunión.",
         "basis_en": "Alternative LPB/Gil governance lane. The later interim suspension in PO 562/2014 and challenges must accompany any use of this meeting.",
         "phase_es": "Aweswell/LPB · liderazgo de Gil · impugnada", "phase_en": "Aweswell/LPB · Gil-led · challenged",
-        "notes_es": "Existe una fuente notarial controlada, pero este lote no contiene todavía un paquete público completo de OCR, facsímil y páginas.",
-        "notes_en": "A controlled notarial source exists, but this release does not yet contain its complete public OCR, facsimile and page package.",
+        "notes_es": "Fuente privada localizada: ACTA DE PRESENCIA notarial de 155 páginas (28 folios sellados, 100 páginas incorporadas y certificación de copia simple), recuperada en dos portadores posteriores byte-idénticos. Incluye aviso, poderes, asistencia/voto, objeciones, deuda, declaración presidencial de 2012, circulación/retención, ACTA 2012, cuentas y presupuesto. El control público de custodia acredita OCR automatizado privado no certificado para 155/155 páginas: todas las imágenes decodifican, no están en blanco y ninguna página produjo cero caracteres. La edición pública solo contiene marcadores de redacción integral, no ese OCR. Siguen abiertos el cotejo de redacción con imagen, la verificación manual línea por línea, la objeción escrita de 2012 y la variante mecanografiada completa.",
+        "notes_en": "Located private source: a 155-page notarial ACTA DE PRESENCIA (28 stamped folios, 100 incorporated pages and simple-copy certification), recovered in two later byte-identical carriers. It includes notice, proxies, attendance/voting, objections, debt, the 2012 president's statement, circulation/withholding, 2012 minutes, accounts and budget. The public-safe custody control records uncertified private automated OCR for 155/155 pages: every image decodes and is nonblank, and no page produced zero characters. The public edition contains only full-redaction markers, not that OCR. Wording-to-image comparison, manual line-by-line verification, the 2012 objection writing and the complete typed version remain open.",
         "related": ["SP-ACTA-2012-08-10", "SP-ACTA-2014-08-28-CP"],
     },
     {
@@ -152,9 +182,9 @@ EVENTS = [
         "perimeter": "adverse_montelanza_molina", "attribution_status": "Gil attribution; officeholders documented", "confidence": "high",
         "convener_es": "El ACTA identifica a Asunción Aizpurúa Sánchez como presidenta y a Francisco Matos Matas como administrador; registra seguridad contratada a propuesta de la presidenta.",
         "convener_en": "The minutes identify Asunción Aizpurúa Sánchez as chair and Francisco Matos Matas as administrator; they record security hired at the chair's proposal.",
-        "basis_es": "Pertenece al carril Comunidad/Pamanil que Gil atribuye al perímetro adverso Montelanza/Molina. La presencia y objeciones de Gil/LPB no convierten la reunión en una reunión promovida por su perímetro.",
-        "basis_en": "It belongs to the Community/Pamanil lane Gil attributes to the adverse Montelanza/Molina perimeter. Gil/LPB's attendance and objections do not make it a meeting promoted by his perimeter.",
-        "phase_es": "Perímetro adverso alegado · Montelanza/Molina–Pamanil", "phase_en": "Alleged adverse perimeter · Montelanza/Molina–Pamanil",
+        "basis_es": "Pertenece a la fase AAS/FMMM/Cogolludo/Pamanil que Gil atribuye al perímetro adverso. Cada actor y capacidad se mantiene separado. La presencia y objeciones de Gil/LPB no convierten la reunión en una reunión promovida por su perímetro.",
+        "basis_en": "It belongs to the AAS/FMMM/Cogolludo/Pamanil phase Gil attributes to the adverse perimeter. Every actor and capacity remains separate. Gil/LPB's attendance and objections do not make it a meeting promoted by his perimeter.",
+        "phase_es": "Perímetro adverso alegado · AAS/FMMM/Cogolludo/Pamanil", "phase_en": "Alleged adverse perimeter · AAS/FMMM/Cogolludo/Pamanil",
         "related": ["SP-ACTA-2014-08-28-CP", "SP-ACTA-2016-04-26"],
     },
     {
@@ -163,22 +193,25 @@ EVENTS = [
         "perimeter": "adverse_montelanza_molina", "attribution_status": "Gil attribution; officeholders documented", "confidence": "high",
         "convener_es": "El ACTA identifica a Asunción Aizpurúa Sánchez como presidenta y a Francisco Matos Matas como administrador; la cadena de convocatoria de 15–20 abril está registrada por separado.",
         "convener_en": "The minutes identify Asunción Aizpurúa Sánchez as chair and Francisco Matos Matas as administrator; the 15–20 April notice chain is separately registered.",
-        "basis_es": "Carril Comunidad/Pamanil atribuido por Gil al perímetro adverso Montelanza/Molina. El acta contiene la versión de ese órgano, el historial litigioso y las objeciones LPB; no adjudica criminalidad.",
-        "basis_en": "Community/Pamanil lane attributed by Gil to the adverse Montelanza/Molina perimeter. The minutes contain that body's account, litigation history and LPB objections; they do not adjudicate criminality.",
-        "phase_es": "Perímetro adverso alegado · Montelanza/Molina–Pamanil", "phase_en": "Alleged adverse perimeter · Montelanza/Molina–Pamanil",
-        "related": ["SP-ACTA-2015-11-19", "SP-MEETING-2016-06-11", "SP-ACTA-2017-06-12"],
+        "basis_es": "Carril AAS/FMMM/Cogolludo/Pamanil atribuido por Gil al perímetro adverso. El acta contiene la versión de ese órgano, el historial litigioso y las objeciones LPB; mantiene separados actores y capacidades y no adjudica criminalidad.",
+        "basis_en": "AAS/FMMM/Cogolludo/Pamanil lane attributed by Gil to the adverse perimeter. The minutes contain that body's account, litigation history and LPB objections; they keep actors and capacities separate and do not adjudicate criminality.",
+        "phase_es": "Perímetro adverso alegado · AAS/FMMM/Cogolludo/Pamanil", "phase_en": "Alleged adverse perimeter · AAS/FMMM/Cogolludo/Pamanil",
+        "related": ["SP-ACTA-2015-11-19", "SP-MEETING-2016-06-10", "SP-ACTA-2017-06-12"],
     },
     {
-        "id": "SP-MEETING-2016-06-11", "slug": "2016-06-11-working-meeting", "date": "2016-06-11", "record_type": "working-meeting",
-        "body": "event", "status": "non-acta-event", "title_es": "11 junio 2016 · reunión profesional de trabajo", "title_en": "11 June 2016 · professional working meeting",
-        "perimeter": "mixed_or_contested", "attribution_status": "mixed attendance; initiator/capacities incomplete", "confidence": "medium",
-        "convener_es": "Reunión de trabajo del carril LPB/asesores con participación o interlocución del administrador comunitario; convocante, asistentes y capacidades requieren cierre desde audio y correos.",
-        "convener_en": "A working meeting in the LPB/adviser lane involving or addressing the Community administrator; convener, attendees and capacities require closure from the audio and emails.",
-        "basis_es": "No es ACTA ni reunión de órgano. La asistencia cruza los dos perímetros y por ello se marca mixta, sin convertir conocimiento profesional en alineación o responsabilidad.",
-        "basis_en": "It is neither minutes nor an organ meeting. Attendance crosses the two perimeters, so it is marked mixed without turning professional knowledge into alignment or responsibility.",
-        "phase_es": "Reunión mixta · LPB/asesores y Comunidad", "phase_en": "Mixed meeting · LPB/advisers and Community",
-        "notes_es": "Grabación de trabajo registrada. No pertenece al libro de actas de la Comunidad ni al de CEXP; el audio/transcripción aprobada y el mapa de capacidades siguen pendientes.",
-        "notes_en": "Recorded working session. It belongs in neither the Owners' Community nor CEXP minutes book; native audio/approved transcript and the capacity map remain pending.",
+        "id": "SP-MEETING-2016-06-10", "legacy_id_aliases": ["SP-MEETING-2016-06-11"],
+        "slug": "2016-06-11-working-meeting", "date": "2016-06-10", "record_type": "working-meeting",
+        "body": "event", "status": "non-acta-event", "title_es": "10 junio 2016 · reunión profesional de trabajo", "title_en": "10 June 2016 · professional working meeting",
+        "perimeter": "mixed_or_contested", "attribution_status": "PwC arrangement documented; mixed attendance and capacity map incomplete", "confidence": "high-date; medium-capacity",
+        "convener_es": "Los correos contemporáneos documentan la organización por PwC para el viernes 10 de junio de 2016. El iniciador último y la capacidad exacta de cada asistente requieren cierre.",
+        "convener_en": "Contemporaneous correspondence documents PwC's arrangement for Friday 10 June 2016. The ultimate initiator and each attendee's exact capacity remain open.",
+        "basis_es": "No es ACTA ni reunión de órgano. La asistencia cruza perímetros y se marca mixta. Correos de programación, el mensaje de esa noche sobre la «reunión de hoy» y los nombres AMR 10JUN2016 fijan el 10 de junio; las etiquetas 11JUN2016 son derivados posteriores conservados como historia de versión.",
+        "basis_en": "It is neither minutes nor an organ meeting. Attendance crosses perimeters, so it is marked mixed. Scheduling mail, that evening's reference to 'today's meeting' and the 10JUN2016 AMR names fix 10 June; 11JUN2016 labels are later derivatives retained as version history.",
+        "phase_es": "Reunión mixta · LPB/asesores y Comunidad · ruta heredada 11-Jun", "phase_en": "Mixed meeting · LPB/advisers and Community · legacy 11-Jun route",
+        "notes_es": "Se han localizado privadamente dos grabaciones AMR tituladas 10JUN2016 y derivados posteriores etiquetados 11JUN2016. No pertenecen a los libros de ACTAS de la Comunidad o CEXP. Quedan pendientes autenticación, cotejo del audio, mapa de asistentes/capacidades y revisión de privacidad/confidencialidad.",
+        "notes_en": "Two privately held AMR recordings titled 10JUN2016 and later derivatives labelled 11JUN2016 have been located. They belong in neither the Owners' Community nor CEXP minutes books. Authentication, audio comparison, attendee/capacity mapping and privacy/confidentiality review remain open.",
+        "supplemental_route_es": "es/comunidad-instrumentalizacion/transcripcion-2016/",
+        "supplemental_route_en": "en/community-instrumentalisation/2016-transcript/",
         "related": ["SP-ACTA-2016-04-26", "SP-ACTA-2017-04-07-CEXP"],
     },
     {
@@ -198,9 +231,9 @@ EVENTS = [
         "perimeter": "adverse_montelanza_molina", "attribution_status": "Gil attribution; continuity documented", "confidence": "high",
         "convener_es": "El ACTA registra presidencia, administrador, abogados/asesores comunitarios y elección de cargos; los nombres privados expurgados se conservan en la fuente de custodia.",
         "convener_en": "The minutes record the chair, administrator, Community lawyers/advisers and office elections; redacted private names remain in the custody source.",
-        "basis_es": "Continuidad del carril Comunidad/Pamanil que Gil atribuye al perímetro Montelanza/Molina antes de la fase Acosta Matos.",
-        "basis_en": "Continuation of the Community/Pamanil lane Gil attributes to the Montelanza/Molina perimeter before the Acosta Matos phase.",
-        "phase_es": "Perímetro adverso alegado · Montelanza/Molina–Pamanil", "phase_en": "Alleged adverse perimeter · Montelanza/Molina–Pamanil",
+        "basis_es": "Continuidad del nodo FMMM/Cogolludo/Pamanil que Gil atribuye al perímetro adverso antes de la transición Acosta Matos/CAM. Los actores y cargos no se fusionan.",
+        "basis_en": "Continuation of the FMMM/Cogolludo/Pamanil node Gil attributes to the adverse perimeter before the Acosta Matos/CAM transition. Actors and offices are not merged.",
+        "phase_es": "Perímetro adverso alegado · FMMM/Cogolludo/Pamanil", "phase_en": "Alleged adverse perimeter · FMMM/Cogolludo/Pamanil",
         "related": ["SP-ACTA-2016-04-26", "SP-ACTA-2018-05-18"],
     },
     {
@@ -236,7 +269,20 @@ EVENTS = [
         "phase_es": "Atribución no resuelta · sólo mención de 2022", "phase_en": "Unresolved attribution · 2022 recital only",
         "notes_es": "El original independiente sigue sin localizarse. Esta página evita que la mención posterior se convierta silenciosamente en ACTA.",
         "notes_en": "The independent original remains unlocated. This page prevents a later recital from silently becoming minutes.",
-        "related": ["SP-ACTA-2018-05-18", "SP-ACTA-2018-07-05", "SP-ACTA-2022-02-04"],
+        "related": ["SP-ACTA-2018-05-18", "SP-ACTA-2018-07-05", "SP-RECITAL-2021-12-29-RICPE", "SP-ACTA-2022-02-04"],
+    },
+    {
+        "id": "SP-RECITAL-2021-12-29-RICPE", "slug": "2021-12-29-ricpe-recital", "date": "2021-12-29", "record_type": "later-recital",
+        "body": "corporate", "status": "referenced-primary-records-not-located", "title_es": "29 diciembre 2021 · junta RICPE mencionada posteriormente", "title_en": "29 December 2021 · later-recited RICPE shareholders' meeting",
+        "perimeter": "unresolved", "attribution_status": "later recital only; primary corporate records unlocated", "confidence": "low",
+        "convener_es": "La mención posterior atribuye el evento a una junta de accionistas de RICPE, pero no se han localizado convocatoria, ACTA, lista, votos ni texto de acuerdo primarios. No se atribuye un convocante.",
+        "convener_en": "The later recital attributes the event to a RICPE shareholders' meeting, but no primary notice, minutes, attendance list, votes or resolution text have been located. No convener is assigned.",
+        "basis_es": "RICPE es una persona jurídica societaria distinta de la Comunidad de Propietarios, CAM y cada persona del perímetro Acosta Matos. La mención de una operación de capital no prueba que la junta ocurriera ni que adoptara un acuerdo válido.",
+        "basis_en": "RICPE is a corporate legal person distinct from the Owners' Community, CAM and every person in the Acosta Matos perimeter. A recital of a capital transaction does not prove that the meeting occurred or validly adopted a resolution.",
+        "phase_es": "RICPE societaria · atribución abierta · sólo mención posterior", "phase_en": "Corporate RICPE · attribution open · later recital only",
+        "notes_es": "Permanecen sin localizar la convocatoria, el orden del día, el ACTA, la lista de accionistas/coeficientes, los poderes, los votos y el texto primario del acuerdo de capital. Ausencia no significa inexistencia.",
+        "notes_en": "The notice, agenda, minutes, shareholder/holding list, proxies, votes and primary capital-resolution text remain unlocated. Absence does not mean nonexistence.",
+        "related": ["SP-RECITAL-2018-11-20", "SP-MEETING-2022-03-11-RICPE", "SP-ACTA-2022-02-04"],
     },
     {
         "id": "SP-ACTA-2022-02-04", "slug": "2022-02-04", "date": "2022-02-04", "record_type": "acta",
@@ -249,42 +295,69 @@ EVENTS = [
         "phase_es": "Perímetro adverso alegado · fase Acosta Matos/CAM", "phase_en": "Alleged adverse perimeter · Acosta Matos/CAM phase",
         "notes_es": "Gil declara que no recibió invitación ni conocimiento previo y que la familia Thompson reenvió el ACTA sólo después de la junta. No hubo comunicación directa comunitaria según su relato; mensaje nativo, hora, cadena anterior y cotejo hash siguen abiertos.",
         "notes_en": "Gil states that no invitation or pre-meeting knowledge reached his perimeter and that the Thompson family forwarded the ACTA only after the meeting. He reports no direct Community communication; the native message, time, upstream chain and hash comparison remain open.",
-        "related": ["SP-ACTA-2018-07-05", "SP-RECITAL-2018-11-20"],
+        "related": ["SP-ACTA-2018-07-05", "SP-RECITAL-2018-11-20", "SP-RECITAL-2021-12-29-RICPE", "SP-MEETING-2022-03-11-RICPE"],
+    },
+    {
+        "id": "SP-MEETING-2022-03-11-RICPE", "slug": "2022-03-11-ricpe", "date": "2022-03-11–2022-03-12", "record_type": "corporate-meeting-notice-not-acta",
+        "body": "corporate", "title_es": "11/12 marzo 2022 · junta extraordinaria RICPE convocada", "title_en": "11/12 March 2022 · scheduled RICPE extraordinary shareholders' meeting",
+        "perimeter": "mixed_or_contested", "attribution_status": "five-page notice/agenda located; meeting occurrence and outcome unproved", "confidence": "high-notice; unresolved-occurrence-and-outcome",
+        "convener_es": "El documento recibido de cinco páginas está fechado el 11 febrero 2022 y atribuye al consejo de administración de RICPE, por medio de su secretario, una convocatoria propuesta para una junta extraordinaria prevista el 11/12 marzo. Prueba el texto recibido y la capacidad que éste declara, no autoría, emisión efectiva, servicio, conocimiento del destinatario, celebración, cuórum, voto, acuerdo o validez.",
+        "convener_en": "The received five-page document is dated 11 February 2022 and attributes to RICPE's board, through its secretary, a proposed call for an extraordinary meeting scheduled for 11/12 March. It proves the received wording and the capacity it states, not authorship, actual issuance, service, recipient knowledge, occurrence, quorum, voting, resolution or validity.",
+        "basis_es": "Evento societario RICPE, jurídicamente distinto de la Comunidad de Propietarios, CAM y sus personas relacionadas. Se usa D-MIXED para evitar trasladar sin prueba los carriles comunitarios al órgano societario.",
+        "basis_en": "A RICPE corporate event, juridically distinct from the Owners' Community, CAM and their related persons. D-MIXED prevents Community lanes from being transferred to the corporate organ without evidence.",
+        "phase_es": "RICPE societaria · convocatoria localizada · resultado abierto", "phase_en": "Corporate RICPE · notice located · outcome open",
+        "notes_es": "La fuente localizada es una convocatoria/orden del día de cinco páginas, no un ACTA. Siguen sin probarse celebración, asistencia, poderes, cuórum, votos, acuerdos, ACTA, circulación y ejecución.",
+        "notes_en": "The located source is a five-page notice/agenda, not minutes. Occurrence, attendance, proxies, quorum, votes, resolutions, minutes, circulation and implementation remain unproved.",
+        "related": ["SP-RECITAL-2021-12-29-RICPE", "SP-ACTA-2022-02-04"],
     },
 ]
 
 
 PERIMETERS = {
     "pre_sale_montelanza": {
+        "code": "A", "primary_lane": "A",
         "label_es": "Montelanza · pre-venta", "label_en": "Montelanza · pre-sale",
         "definition_es": "Registro anterior a la transacción de activos anunciada en junio de 2008.",
         "definition_en": "Record predating the asset transaction reported for June 2008.",
     },
     "project_lpb_aweswell_gil": {
+        "code": "B", "primary_lane": "B",
         "label_es": "Proyecto · Multimatrix/LPB → Aweswell/LPB–Gil", "label_en": "Project · Multimatrix/LPB → Aweswell/LPB–Gil",
         "definition_es": "Sucesión del lado del proyecto. La etiqueta no atribuye a Gil actos anteriores a su entrada documentada.",
         "definition_en": "Project-side succession. The label does not attribute acts to Gil before his documented entry.",
     },
     "adverse_montelanza_molina": {
-        "label_es": "Adverso alegado · Montelanza/Molina–Pamanil", "label_en": "Alleged adverse · Montelanza/Molina–Pamanil",
-        "definition_es": "Alineación atribuida por Gil; los cargos, representaciones y actos concretos se prueban por separado.",
-        "definition_en": "Alignment attributed by Gil; specific offices, representations and acts are proved separately.",
+        "code": "C1", "primary_lane": "C",
+        "label_es": "Adverso alegado · AAS → FMMM/Cogolludo/Pamanil", "label_en": "Alleged adverse · AAS → FMMM/Cogolludo/Pamanil",
+        "definition_es": "Primera secuencia atribuida por Gil: AAS → FMMM/Cogolludo/Pamanil. Cada persona, sociedad, cargo, representación y acto se prueba por separado; no es un hallazgo de culpabilidad.",
+        "definition_en": "First sequence attributed by Gil: AAS → FMMM/Cogolludo/Pamanil. Every person, company, office, representation and act is proved separately; this is not a finding of guilt.",
     },
     "adverse_acosta_matos": {
+        "code": "C2", "primary_lane": "C",
         "label_es": "Adverso alegado · Acosta Matos/CAM", "label_en": "Alleged adverse · Acosta Matos/CAM",
         "definition_es": "Fase posterior atribuida por Gil; no es una declaración judicial de actuación conjunta o culpabilidad.",
         "definition_en": "Later phase attributed by Gil; not a judicial finding of joint conduct or guilt.",
     },
     "mixed_or_contested": {
+        "code": "D-MIXED", "primary_lane": "D",
         "label_es": "Mixto o controvertido", "label_en": "Mixed or contested",
         "definition_es": "La fuente cruza perímetros o no permite resolver el convocante/alineación con seguridad.",
         "definition_en": "The source crosses perimeters or does not safely resolve convener/alignment.",
     },
     "unresolved": {
+        "code": "D-OPEN", "primary_lane": "D",
         "label_es": "No resuelto", "label_en": "Unresolved",
         "definition_es": "Fuente o atribución insuficiente; no se fuerza una clasificación.",
         "definition_en": "Insufficient source or attribution; no classification is forced.",
     },
+}
+
+BODY_LABELS = {
+    "owners": {"es": "Comunidad de Propietarios", "en": "Owners' Community"},
+    "cexp": {"es": "CEXP", "en": "CEXP"},
+    "event": {"es": "Evento profesional no ACTA", "en": "Professional non-ACTA event"},
+    "reference": {"es": "Mención posterior", "en": "Later recital"},
+    "corporate": {"es": "Accionistas societarios", "en": "Corporate shareholders"},
 }
 
 
@@ -486,14 +559,432 @@ def special_analysis(event: dict, locale: str) -> str:
 </div></section>'''
 
 
-def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> str:
+def localized(value: object, locale: str) -> object:
+    """Return a bilingual value while accepting legacy scalar data."""
+    if isinstance(value, dict) and ("es" in value or "en" in value):
+        return value.get(locale) or value.get("es") or value.get("en") or "—"
+    return value
+
+
+def display_value(value: object, locale: str) -> str:
+    value = localized(value, locale)
+    if value is None or value == "":
+        return "—"
+    if isinstance(value, list):
+        return "; ".join(str(localized(item, locale)) for item in value) or "—"
+    if isinstance(value, dict):
+        return "; ".join(
+            f"{key}: {display_value(item, locale)}" for key, item in value.items()
+        ) or "—"
+    return str(value)
+
+
+def perimeter_badge(perimeter_key: str, locale: str) -> str:
+    perimeter = PERIMETERS[perimeter_key]
+    label = perimeter["label_es" if locale == "es" else "label_en"]
+    return (
+        f'<span class="acta-lane-badge" data-perimeter="{h(perimeter_key)}" '
+        f'data-primary-lane="{h(perimeter["primary_lane"])}">'
+        f'<b>{h(perimeter["code"])}</b><span>{h(label)}</span></span>'
+    )
+
+
+def lineage_fact_grid(event: dict, locale: str) -> str:
+    es = locale == "es"
+    facts = [
+        ("Fecha / rango documentado" if es else "Documented date / range", event.get("documented_date_or_range", event.get("date"))),
+        ("Tipo documental" if es else "Document type", event.get("document_type", event.get("record_type"))),
+        ("Emisor / remitente" if es else "Issuer / sender", event.get("issuer_sender")),
+        ("Capacidad declarada" if es else "Stated capacity", event.get("stated_capacity")),
+        ("Destinatarios" if es else "Recipients", event.get("recipients")),
+        ("Órgano, si existe" if es else "Meeting body, if any", event.get("meeting_body_if_any", event.get("body"))),
+        ("Convocante documentado" if es else "Documented convener", event.get("documented_convener")),
+        ("Fuente / procedencia" if es else "Source / provenance", event.get("source_provenance_status")),
+        ("Estado público / privado" if es else "Public / private status", event.get("public_private_status")),
+    ]
+    return '<div class="acta-lineage-facts">' + "".join(
+        f'<article><span>{h(label)}</span><strong>{h(display_value(value, locale))}</strong></article>'
+        for label, value in facts
+    ) + "</div>"
+
+
+def capacity_sequence_controls(event: dict, locale: str) -> str:
+    """Surface mandate-level capacity and attributed-sequence controls."""
+    es = locale == "es"
+    capacity = event["patricia_dominguez_capacity"]
+    sequence = event["adverse_sequence_stage"]
+    roles = capacity.get("documented_roles", [])
+    role_text = (
+        "; ".join(display_value(role, locale) for role in roles)
+        if roles
+        else ("Ninguna capacidad específica documentada" if es else "No documented event-specific capacity")
+    )
+    sequence_nodes = sequence.get("sequence_node_codes", [])
+    nodes_text = " → ".join(sequence_nodes) if sequence_nodes else ("No aplicable" if es else "Not applicable")
+    identity = capacity.get("identity_control", {})
+    return (
+        f'<div class="acta-capacity-sequence" id="controles-capacidad-secuencia" '
+        f'data-patricia-capacity="{h(capacity["status_code"])}" '
+        f'data-adverse-sequence-stage="{h(sequence["stage_code"])}" '
+        f'data-adverse-sequence-applicability="{h(sequence["applicability_code"])}">'
+        f'<div class="section-head"><div><p class="kicker">'
+        f'{"Capacidad y secuencia atribuidas" if es else "Capacity and attributed sequence"}</p>'
+        f'<h2>{"Mandatos separados; transiciones visibles." if es else "Separate mandates; visible transitions."}</h2></div>'
+        f'<p>{h(display_value(sequence.get("boundary"), locale))}</p></div>'
+        f'<div class="acta-lineage-facts">'
+        f'<article class="acta-patricia-capacity-control"><span>'
+        f'{"Capacidad de Patricia Domínguez en este evento" if es else "Patricia Domínguez capacity in this event"}</span>'
+        f'<strong>{h(display_value(capacity.get("summary"), locale))}</strong>'
+        f'<p>{h(role_text)}</p><small>{h(display_value(capacity.get("source_basis"), locale))}</small></article>'
+        f'<article class="acta-adverse-sequence-control"><span>'
+        f'{"Etapa de la secuencia adversa atribuida" if es else "Attributed adverse-sequence stage"}</span>'
+        f'<strong>{h(display_value(sequence.get("summary"), locale))}</strong>'
+        f'<p><code>{h(sequence["stage_code"])}</code> · {h(nodes_text)}</p></article>'
+        f'</div><p class="source-note"><strong>{"Control de identidad" if es else "Identity control"}:</strong> '
+        f'{h(display_value(identity, locale))} '
+        f'<strong>{"Límite de inferencia" if es else "Inference boundary"}:</strong> '
+        f'{h(display_value(capacity.get("inference_boundary"), locale))}</p></div>'
+    )
+
+
+def continuity_table(event: dict, locale: str) -> str:
+    es = locale == "es"
+    labels = {
+        "before": ("Antes", "Before"),
+        "knowledge": ("Conocimiento", "Knowledge"),
+        "notice_service": ("Aviso y notificación", "Notice and service"),
+        "omitted_excluded_allegation": ("Omisión o exclusión alegada", "Omitted / excluded allegation"),
+        "convener": ("Convocante", "Convener"),
+        "body": ("Órgano", "Body"),
+        "attendance_representation": ("Asistencia y representación", "Attendance and representation"),
+        "resolutions_proposed_voted": ("Propuestas y votación", "Proposals and voting"),
+        "objections": ("Objeciones y reservas", "Objections and reservations"),
+        "minutes_versions": ("ACTA y versiones", "Minutes and versions"),
+        "circulation_receipt_withholding": ("Circulación, recepción o retención", "Circulation, receipt or withholding"),
+        "implementation": ("Ejecución o no ejecución", "Implementation or non-implementation"),
+        "later_reliance": ("Uso posterior", "Later reliance"),
+        "contradictions": ("Prueba contradictoria", "Contradictory evidence"),
+        "unproved": ("No probado", "Unproved"),
+    }
+    audit = event.get("continuity_audit", {})
+    rows = "".join(
+        f'<tr><th scope="row">{h(labels[key][0 if es else 1])}</th><td>{h(display_value(audit.get(key), locale))}</td></tr>'
+        for key in labels
+    )
+    return (
+        f'<section class="section alt" id="auditoria-continuidad"><div class="shell acta-event-narrow">'
+        f'<div class="section-head"><div><p class="kicker">{"Auditoría evento por evento" if es else "Event-by-event audit"}</p>'
+        f'<h2>{"Qué ocurrió, qué se comunicó y qué sigue abierto." if es else "What happened, what was communicated and what remains open."}</h2></div>'
+        f'<p>{"Ocurrencia, autoridad, quórum, voto, validez, ejecución, conocimiento, intención, causalidad y caracterización permanecen separados." if es else "Occurrence, authority, quorum, voting, validity, implementation, knowledge, intent, causation and legal characterisation remain separate."}</p></div>'
+        f'<div class="acta-continuity-wrap"><table class="acta-continuity-table"><tbody>{rows}</tbody></table></div>'
+        f'</div></section>'
+    )
+
+
+def stable_anchor_map(events: list[dict], locale: str) -> dict[str, dict[str, str]]:
+    """Map every event/document ID to one localized stable route and fragment."""
+    es = locale == "es"
+    anchors: dict[str, dict[str, str]] = {}
+    for event in events:
+        event_id = event["id"]
+        event_route = event["detail_page_es" if es else "detail_page_en"]
+        event_perimeter = PERIMETERS[event["perimeter"]]
+        anchors[event_id] = {
+            "href": root_href(f"{event_route}#ficha"),
+            "label": f'{"Evento relacionado" if es else "Related event"} {event_id} · {title_for(event, locale)}',
+            "target_kind": "event-family",
+            "target_perimeter": event["perimeter"],
+            "target_primary_lane": event_perimeter["primary_lane"],
+            "target_perimeter_code": event_perimeter["code"],
+            "target_perimeter_label": event_perimeter["label_es" if es else "label_en"],
+        }
+        for document in event.get("documents", []):
+            stable_id = document["stable_id"]
+            routes = document.get("bilingual_event_routes", {})
+            route = routes.get(locale)
+            if not route:
+                raise RuntimeError(f"Document {stable_id} lacks {locale} stable route")
+            document_perimeter_key = document.get("perimeter", "unresolved")
+            document_perimeter = PERIMETERS.get(
+                document_perimeter_key,
+                PERIMETERS["unresolved"],
+            )
+            candidate = {
+                "href": root_href(f"{route}#{stable_id}"),
+                "label": (
+                    f'{"Documento relacionado" if es else "Related document"} '
+                    f'{stable_id} · {display_value(document.get("documented_date_or_range"), locale)}'
+                ),
+                "target_kind": "document-record",
+                "target_perimeter": document_perimeter_key,
+                "target_primary_lane": document_perimeter["primary_lane"],
+                "target_perimeter_code": document_perimeter["code"],
+                "target_perimeter_label": document_perimeter[
+                    "label_es" if es else "label_en"
+                ],
+            }
+            existing = anchors.get(stable_id)
+            if existing and existing != candidate:
+                raise RuntimeError(f"Document {stable_id} has conflicting stable anchors")
+            anchors[stable_id] = candidate
+    return anchors
+
+
+def document_appearance_records(
+    source_document: dict,
+    families: dict[str, dict],
+) -> tuple[dict[str, str], list[dict]]:
+    """Return one canonical anchor plus every event-family appearance."""
+    stable_id = source_document["stable_id"]
+    source_routes = source_document.get("bilingual_event_routes", {})
+    if set(source_routes) != {"es", "en"}:
+        raise RuntimeError(f"Document {stable_id} lacks canonical bilingual routes")
+    stable_pages = {
+        locale: f"{source_routes[locale]}#{stable_id}" for locale in ("es", "en")
+    }
+    records: list[dict] = []
+    canonical_events: list[str] = []
+    for event_family_id in source_document.get("event_family_ids", []):
+        family = families.get(event_family_id)
+        if family is None:
+            raise RuntimeError(f"Document {stable_id} names unknown family {event_family_id}")
+        routes = family.get("bilingual_event_routes", {})
+        canonical = all(routes.get(locale) == source_routes[locale] for locale in ("es", "en"))
+        if canonical:
+            canonical_events.append(event_family_id)
+        fragment = stable_id if canonical else f"appearance-{stable_id}"
+        records.append({
+            "event_family_id": event_family_id,
+            "page_disposition": (
+                "canonical-event-family-stable-anchor"
+                if canonical
+                else "secondary-event-family-linked-appearance"
+            ),
+            "fragment": fragment,
+            "es": f'{routes["es"]}#{fragment}',
+            "en": f'{routes["en"]}#{fragment}',
+        })
+    if len(canonical_events) != 1:
+        raise RuntimeError(
+            f"Document {stable_id} must resolve to exactly one canonical event route; "
+            f"found {canonical_events}"
+        )
+    return stable_pages, records
+
+
+def document_chain(event: dict, locale: str, anchor_map: dict[str, dict[str, str]]) -> str:
+    es = locale == "es"
+    stage_labels = {
+        "pre_meeting": ("Pre-ACTA / preparación", "Pre-ACTA / preparation"),
+        "meeting_record": ("Reunión / ACTA", "Meeting / ACTA"),
+        "annex_objection": ("Anexo / objeción", "Annex / objection"),
+        "post_circulation": ("Circulación posterior", "Post-meeting circulation"),
+        "implementation": ("Ejecución", "Implementation"),
+        "later_reliance": ("Uso posterior", "Later reliance"),
+    }
+    cards = []
+    for document in event.get("documents", []):
+        perimeter_key = document.get("perimeter", event["perimeter"])
+        perimeter = PERIMETERS.get(perimeter_key, PERIMETERS["unresolved"])
+        relationships = document.get("relationship_to_other_documents_or_event", {})
+        related_ids = relationships.get("related_document_ids", []) if isinstance(relationships, dict) else []
+        issues = document.get("unresolved_evidential_issues", [])
+        page_reason = document.get("no_page_reason") or document.get("no_standalone_page_reason")
+        page_note = (
+            display_value(page_reason, locale)
+            if page_reason
+            else ("Esta ancla de la página familiar es la entrada bilingüe estable del documento; no se duplica en una ruta autónoma porque su procedencia, estado público/privado y relaciones se controlan aquí dentro de la misma familia del evento."
+                  if es else "This event-family anchor is the document’s stable bilingual entry; it is not duplicated at a standalone route because provenance, public/private state and relationships are controlled here within the same event family.")
+        )
+        localized_fields = [
+            ("issuer_sender", "Emisor / remitente" if es else "Issuer / sender"),
+            ("stated_capacity", "Capacidad" if es else "Capacity"),
+            ("recipients", "Destinatarios" if es else "Recipients"),
+        ]
+        detail_parts = []
+        for field, label in localized_fields:
+            raw_value = document.get(field)
+            value = localize_document_value(raw_value, locale, field)
+            detail_parts.append(
+                f'<div data-source-document-id="{h(document.get("stable_id"))}" '
+                f'data-card-field="{h(field)}" '
+                f'data-localization-status="{h(localization_status(raw_value, field))}" '
+                f'data-localized-value="{h(display_value(value, locale))}">'
+                f'<dt>{h(label)}</dt><dd>{h(display_value(value, locale))}</dd></div>'
+            )
+        body_raw = document.get("meeting_body_if_any")
+        convener_raw = document.get("documented_convener")
+        body_value = localize_document_value(body_raw, locale, "meeting_body_if_any")
+        convener_value = localize_document_value(convener_raw, locale, "documented_convener")
+        detail_parts.append(
+            f'<div data-source-document-id="{h(document.get("stable_id"))}" '
+            f'data-card-field="meeting_body_if_any" '
+            f'data-localization-status="{h(localization_status(body_raw, "meeting_body_if_any"))}" '
+            f'data-localized-value="{h(display_value(body_value, locale))}">'
+            f'<dt>{"Órgano / convocante" if es else "Body / convener"}</dt>'
+            f'<dd><span data-source-document-id="{h(document.get("stable_id"))}" '
+            f'data-card-field="documented_convener" '
+            f'data-localization-status="{h(localization_status(convener_raw, "documented_convener"))}" '
+            f'data-localized-value="{h(display_value(convener_value, locale))}">'
+            f'{h(display_value(body_value, locale))} · {h(display_value(convener_value, locale))}</span></dd></div>'
+        )
+        other_localized_fields = [
+            ("source_provenance_status", "Procedencia" if es else "Provenance", document.get("source_provenance_status")),
+            ("public_private_status", "Público / privado" if es else "Public / private", document.get("public_private_status")),
+            ("unresolved_evidential_issues", "Cuestiones abiertas" if es else "Open issues", issues),
+            ("no_page_reason", "Página / motivo" if es else "Page / reason", page_reason or document.get("no_standalone_page_reason")),
+        ]
+        for field, label, raw_value in other_localized_fields:
+            value = localize_document_value(raw_value, locale, field)
+            detail_parts.append(
+                f'<div data-source-document-id="{h(document.get("stable_id"))}" '
+                f'data-card-field="{h(field)}" '
+                f'data-localization-status="{h(localization_status(raw_value, field))}" '
+                f'data-localized-value="{h(display_value(value, locale))}">'
+                f'<dt>{h(label)}</dt><dd>{h(display_value(value, locale))}</dd></div>'
+            )
+        relation_links = []
+        for related_id in related_ids:
+            target = anchor_map.get(related_id)
+            if target is None:
+                raise RuntimeError(
+                    f"Document {document.get('stable_id')} has unmapped relationship {related_id}"
+                )
+            relation_links.append(
+                f'<li class="acta-related-marker acta-document-relation-marker" '
+                f'data-source-document-id="{h(document.get("stable_id"))}" '
+                f'data-related-document-id="{h(related_id)}" '
+                f'data-perimeter="{h(target["target_perimeter"])}" '
+                f'data-primary-lane="{h(target["target_primary_lane"])}" '
+                f'data-perimeter-code="{h(target["target_perimeter_code"])}">'
+                f'<span class="acta-lane-badge acta-document-relation-badge" '
+                f'data-source-document-id="{h(document.get("stable_id"))}" '
+                f'data-related-document-id="{h(related_id)}" '
+                f'data-perimeter="{h(target["target_perimeter"])}" '
+                f'data-primary-lane="{h(target["target_primary_lane"])}" '
+                f'data-perimeter-code="{h(target["target_perimeter_code"])}" '
+                f'aria-label="{h(target["target_perimeter_code"] + " " + target["target_perimeter_label"])}">'
+                f'<b>{h(target["target_perimeter_code"])}</b>'
+                f'<span>{h(target["target_perimeter_label"])}</span></span>'
+                f'<a class="acta-document-relation" '
+                f'data-source-document-id="{h(document.get("stable_id"))}" '
+                f'data-related-document-id="{h(related_id)}" '
+                f'data-related-target-kind="{h(target["target_kind"])}" '
+                f'data-perimeter="{h(target["target_perimeter"])}" '
+                f'data-primary-lane="{h(target["target_primary_lane"])}" '
+                f'data-perimeter-code="{h(target["target_perimeter_code"])}" '
+                f'data-perimeter-label="{h(target["target_perimeter_label"])}" '
+                f'data-related-label-locale="{h(locale)}" aria-label="{h(target["label"])}" '
+                f'href="{h(target["href"])}">{h(target["label"])}</a></li>'
+            )
+        relations = (
+            f'<ul class="acta-document-relations">{"".join(relation_links)}</ul>'
+            if relation_links
+            else ("—")
+        )
+        detail_parts.append(
+            f'<div><dt>{"Relaciones" if es else "Relationships"}</dt><dd>{relations}</dd></div>'
+        )
+        detail = "".join(detail_parts)
+        stable_id = document.get("stable_id", "SP-DOC-UNRESOLVED")
+        stage = document.get("relationship_stage", "meeting_record")
+        document_type_raw = document.get("document_type")
+        document_type = localize_document_value(
+            document_type_raw,
+            locale,
+            "document_type",
+        )
+        disposition = document["page_disposition"]
+        appearance_fragment = document["current_appearance_fragment"]
+        canonical_page = document["stable_bilingual_page"][locale]
+        canonical_link = ""
+        if disposition == "secondary-event-family-linked-appearance":
+            canonical_link = (
+                f'<p class="acta-canonical-document-link"><a '
+                f'data-canonical-document-id="{h(stable_id)}" '
+                f'data-canonical-label-locale="{h(locale)}" '
+                f'href="{h(root_href(canonical_page))}">'
+                f'{"Abrir la entrada canónica del documento" if es else "Open the canonical document entry"} →</a></p>'
+            )
+        cards.append(
+            f'<article class="acta-document-card" id="{h(appearance_fragment)}" data-document-id="{h(stable_id)}" '
+            f'data-perimeter="{h(perimeter_key)}" data-primary-lane="{h(perimeter["primary_lane"])}" '
+            f'data-relationship-stage="{h(stage)}" data-page-disposition="{h(disposition)}" '
+            f'data-stable-bilingual-page="{h(canonical_page)}" data-localization-locale="{h(locale)}">'
+            f'<header>{perimeter_badge(perimeter_key, locale)}<span class="acta-document-stage">{h(stage_labels.get(stage, (stage, stage))[0 if es else 1])}</span></header>'
+            f'<p class="acta-document-id">{h(stable_id)}</p>'
+            f'<h3>{h(display_value(document.get("documented_date_or_range"), locale))} · '
+            f'<span data-source-document-id="{h(stable_id)}" data-card-field="document_type" '
+            f'data-localization-status="{h(localization_status(document_type_raw, "document_type"))}" '
+            f'data-localized-value="{h(display_value(document_type, locale))}">'
+            f'{h(display_value(document_type, locale))}</span></h3>'
+            f'{canonical_link}<dl>{detail}</dl></article>'
+        )
+    return (
+        f'<section class="section" id="cadena-documental"><div class="shell">'
+        f'<div class="section-head"><div><p class="kicker">{"Familia documental" if es else "Document family"}</p>'
+        f'<h2>{"Cada aviso, ACTA, anexo, circulación, ejecución y uso conserva su propio ID." if es else "Every notice, ACTA, annex, circulation, implementation and reliance keeps its own ID."}</h2></div>'
+        f'<p>{"Una entrada no convierte un correo en ACTA ni la recepción en autoridad, validez o intención." if es else "An entry does not turn an email into minutes or receipt into authority, validity or intent."}</p></div>'
+        f'<div class="acta-document-chain">{"".join(cards)}</div></div></section>'
+    )
+
+
+def actor_links(event: dict, locale: str) -> str:
+    es = locale == "es"
+    items = []
+    for actor in event.get("actor_entity_routes", []):
+        actor_key = actor["actor_key"]
+        status = actor["relationship_status_code"]
+        label = actor["label"][locale]
+        route = actor["routes"][locale]
+        items.append(
+            f'<li data-actor-key="{h(actor_key)}" '
+            f'data-relationship-status="{h(status)}">'
+            f'<a class="acta-actor-entity-link" data-actor-key="{h(actor_key)}" '
+            f'data-relationship-status="{h(status)}" data-actor-link-locale="{h(locale)}" '
+            f'aria-label="{h(label)}" href="{h(root_href(route))}">{h(label)}</a></li>'
+        )
+    empty_note = (
+        "No hay una ruta individual de actor o entidad que la fuente de este evento permita enlazar sin inferencia."
+        if es
+        else "No individual actor/entity route can be linked from this event's source without inference."
+    )
+    listing = f'<ul class="acta-related">{"".join(items)}</ul>' if items else f'<p>{h(empty_note)}</p>'
+    gaps = "".join(
+        f'<li class="acta-actor-route-gap" data-actor-route-gap="{h(gap["subject_code"])}">'
+        f'<strong>{h(gap["subject_code"])}</strong> · {h(gap["reason"][locale])}</li>'
+        for gap in event.get("actor_entity_route_gaps", [])
+    )
+    gap_block = (
+        f'<h3>{"Rutas no producidas" if es else "Routes not produced"}</h3>'
+        f'<ul class="acta-related acta-route-gaps">{gaps}</ul>'
+        if gaps else ""
+    )
+    return (
+        f'<section class="section alt" id="actores-relacionados"><div class="shell acta-event-narrow">'
+        f'<h2>{"Actores y entidades relacionados" if es else "Related actors and entities"}</h2>'
+        f'{listing}{gap_block}<p class="acta-route-inference-boundary">{h(ROUTE_INFERENCE_BOUNDARY[locale])}</p>'
+        f'</div></section>'
+    )
+
+
+def event_page(
+    event: dict,
+    locale: str,
+    all_events: list[dict],
+    index: int,
+    anchor_map: dict[str, dict[str, str]],
+) -> str:
     es = locale == "es"
     title = title_for(event, locale)
     perimeter = PERIMETERS[event["perimeter"]]
     detail_other = event["detail_page_en" if es else "detail_page_es"]
     transcript = event.get("transcript_path") or event.get("transcript_source")
     source_images = event.get("source_preview_pages", [])
+    marker_only_text = event.get("public_text_mode") == "full-page-redaction-markers"
     notes = event.get("notes_es" if es else "notes_en", "")
+    primary_lane = perimeter["primary_lane"]
+    perimeter_code = perimeter["code"]
     full_text = ""
     if transcript and (REPO / transcript).is_file():
         full_text = (REPO / transcript).read_text(encoding="utf-8")
@@ -506,7 +997,12 @@ def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> 
         )
     actions = []
     labels = {
-        "transcript": "Abrir Markdown OCR" if es else "Open OCR Markdown",
+        "transcript": (
+            "Abrir registro Markdown de redacción" if marker_only_text and es
+            else "Open Markdown redaction record" if marker_only_text
+            else "Abrir texto público redactado" if es
+            else "Open public redacted text"
+        ),
         "pdf": "PDF de edición textual" if es else "Text-edition PDF",
         "facsimile": "Facsímil fuente expurgado" if es else "Redacted source facsimile",
         "manifest": "Manifiesto de integridad" if es else "Integrity manifest",
@@ -523,6 +1019,16 @@ def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> 
     ):
         if event.get(key):
             actions.append(f'<a class="button secondary" href="{h(root_href(event[key]))}">{h(label)}</a>')
+    supplemental = event.get("supplemental_route_es" if es else "supplemental_route_en")
+    if supplemental:
+        actions.append(
+            f'<a class="button secondary" href="{h(root_href(supplemental))}">'
+            f'{"Abrir transcripción pública relacionada" if es else "Open related public transcript"}</a>'
+        )
+    actions.extend([
+        f'<a class="button secondary" href="{h(root_href("evidence/community/actas/event-family-continuity-v1.json"))}">{"Índice máquina de continuidad" if es else "Machine continuity index"}</a>',
+        f'<a class="button secondary" href="{h(root_href("evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md"))}">{"Registro fuente y comunicaciones" if es else "Source and communications register"}</a>',
+    ])
 
     gallery = ""
     if source_images:
@@ -544,13 +1050,22 @@ def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> 
 
     text_section = ""
     if full_text:
-        text_section = (
-            f'<section class="section" id="texto-ocr"><div class="shell acta-event-narrow">'
-            f'<div class="section-head"><div><p class="kicker">{"Texto fuente completo publicado" if es else "Full published source text"}</p>'
-            f'<h2>{"OCR secuenciado por página, con redacciones visibles." if es else "Page-sequenced OCR with visible redactions."}</h2></div>'
-            f'<p>{"No es transcripción pericial ni cotejo línea por línea. Los marcadores conservan la posición de material reservado o ilegible; una grafía OCR incompatible con una entidad jurídica controlada se normaliza y se marca." if es else "This is not an expert transcription or line-by-line certification. Markers preserve withheld or illegible material; an OCR spelling incompatible with a controlled legal entity is normalised and marked."}</p></div>'
-            f'<pre class="acta-full-ocr" lang="es">{h(full_text)}</pre></div></section>'
-        )
+        if marker_only_text:
+            text_section = (
+                f'<section class="section" id="texto-ocr"><div class="shell acta-event-narrow">'
+                f'<div class="section-head"><div><p class="kicker">{"Registro público de redacción" if es else "Public redaction record"}</p>'
+                f'<h2>{"Marcadores secuenciados por página; no es OCR público del contenido oculto." if es else "Page-sequenced markers; this is not public OCR of the withheld content."}</h2></div>'
+                f'<p>{"El OCR y la revisión de la fuente permanecen en la custodia privada. Esta edición pública sólo demuestra el orden y la contabilización de cada página; no publica ni certifica su texto." if es else "Source OCR and review remain in private custody. This public edition demonstrates only page order and accounting; it neither publishes nor certifies the source text."}</p></div>'
+                f'<pre class="acta-full-ocr acta-redaction-record" lang="es">{h(full_text)}</pre></div></section>'
+            )
+        else:
+            text_section = (
+                f'<section class="section" id="texto-ocr"><div class="shell acta-event-narrow">'
+                f'<div class="section-head"><div><p class="kicker">{"Texto fuente público redactado" if es else "Public redacted source text"}</p>'
+                f'<h2>{"OCR secuenciado por página, con redacciones visibles." if es else "Page-sequenced OCR with visible redactions."}</h2></div>'
+                f'<p>{"No es transcripción pericial ni cotejo línea por línea. Los marcadores conservan la posición de material reservado o ilegible; una grafía OCR incompatible con una entidad jurídica controlada se normaliza y se marca." if es else "This is not an expert transcription or line-by-line certification. Markers preserve withheld or illegible material; an OCR spelling incompatible with a controlled legal entity is normalised and marked."}</p></div>'
+                f'<pre class="acta-full-ocr" lang="es">{h(full_text)}</pre></div></section>'
+            )
     else:
         text_section = (
             f'<section class="section" id="texto-ocr"><div class="shell acta-event-narrow"><div class="acta-source-gap">'
@@ -564,7 +1079,12 @@ def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> 
     for event_id in event.get("related", []):
         item = by_id.get(event_id)
         if item:
-            related.append(f'<li><a href="{h(root_href(item["detail_page_es" if es else "detail_page_en"]))}">{h(title_for(item, locale))}</a></li>')
+            related.append(
+                f'<li class="acta-related-marker" data-perimeter="{h(item["perimeter"])}" '
+                f'data-primary-lane="{h(PERIMETERS[item["perimeter"]]["primary_lane"])}">'
+                f'{perimeter_badge(item["perimeter"], locale)}'
+                f'<a href="{h(root_href(item["detail_page_es" if es else "detail_page_en"]))}">{h(title_for(item, locale))}</a></li>'
+            )
     previous = all_events[index - 1] if index > 0 else None
     following = all_events[index + 1] if index + 1 < len(all_events) else None
     nav_links = []
@@ -578,6 +1098,10 @@ def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> 
     room = "es/comunidad-instrumentalizacion/sala-documental-actas/" if es else "en/community-instrumentalisation/acta-document-room/"
     chronology = "es/comunidad-instrumentalizacion/actas-2011-2022/" if es else "en/community-instrumentalisation/minutes-2011-2022/"
     lang_label = "English" if es else "Español"
+    source_nav = (
+        f'<a href="#paginas-fuente">{"Páginas" if es else "Pages"}</a>'
+        if source_images else ""
+    )
     classification = perimeter["label_es" if es else "label_en"]
     definition = perimeter["definition_es" if es else "definition_en"]
     status_label = {
@@ -585,25 +1109,48 @@ def event_page(event: dict, locale: str, all_events: list[dict], index: int) -> 
         "record": "Registro" if es else "Record",
     }
     analysis = special_analysis(event, locale)
+    lineage_facts = lineage_fact_grid(event, locale)
+    capacity_sequence = capacity_sequence_controls(event, locale)
+    chain = document_chain(event, locale, anchor_map)
+    audit = continuity_table(event, locale)
+    actors = actor_links(event, locale)
     omni_stylesheet = (
         '<link rel="stylesheet" href="../../../../assets/post7-2022-omnidirectional-map-20260828.css">'
         if event.get("id") == "SP-ACTA-2022-02-04"
         else ""
     )
+    if full_text and marker_only_text:
+        meta_description = (
+            "Página individual de ACTA/reunión con perímetro, convocante, marcadores públicos de redacción secuenciados por página, facsímil expurgado e interconexiones probatorias."
+            if es
+            else "Individual ACTA/meeting page with perimeter, convener, page-sequenced public redaction markers, redacted facsimile and evidence links."
+        )
+    elif full_text:
+        meta_description = (
+            "Página individual de ACTA/reunión con perímetro, convocante, texto fuente público redactado y secuenciado por página, facsímil expurgado e interconexiones probatorias."
+            if es
+            else "Individual ACTA/meeting page with perimeter, convener, page-sequenced public redacted source text, redacted facsimile and evidence links."
+        )
+    else:
+        meta_description = (
+            "Página individual de evento con perímetro, convocante, estado explícito de carencia de fuente e interconexiones probatorias."
+            if es
+            else "Individual event page with perimeter, convener, explicit source-gap status and evidence links."
+        )
     return f'''<!doctype html>
 <html lang="{locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{h(title)} | {"Sala documental ACTAS Sun Park" if es else "Sun Park ACTA document room"}</title>
-<meta name="description" content="{h(("Página individual de ACTA/reunión con perímetro, convocante, OCR completo, facsímil e interconexiones probatorias." if es else "Individual ACTA/meeting page with perimeter, convener, full OCR, facsimile and evidence links."))}">
-<link rel="canonical" href="{h(canonical)}"><link rel="alternate" hreflang="{locale}" href="{h(canonical)}"><link rel="alternate" hreflang="{'en' if es else 'es'}" href="{h(other_url)}">
+<meta name="description" content="{h(meta_description)}">
+<link rel="canonical" href="{h(canonical)}"><link rel="alternate" hreflang="{locale}" href="{h(canonical)}"><link rel="alternate" hreflang="{'en' if es else 'es'}" href="{h(other_url)}"><link rel="alternate" hreflang="x-default" href="{h(BASE_URL + '/' + event['detail_page_es'].removesuffix('index.html'))}">
 <link rel="stylesheet" href="../../../../assets/styles.css"><link rel="stylesheet" href="../../../../assets/acta-document-room-20260822.css">{omni_stylesheet}<script src="../../../../assets/site.js" defer></script></head>
-<body class="dossier-page acta-event-page" data-perimeter="{h(event['perimeter'])}"><a class="skip-link" href="#ficha">{"Saltar a la ficha" if es else "Skip to record"}</a>
-<header class="site-header"><div class="shell header-inner"><a class="brand" href="{h(root_href(room))}"><span class="brand-mark">SR</span><span class="brand-copy"><strong>Project Sun Rock</strong><small>{"Sala ACTAS" if es else "ACTA room"}</small></span></a><nav class="main-nav"><a href="{h(root_href(room))}">{"Todas las reuniones" if es else "All meetings"}</a><a href="{h(root_href(chronology))}">{"Cronología" if es else "Chronology"}</a><a href="#texto-ocr">OCR</a><a href="#paginas-fuente">{"Páginas" if es else "Pages"}</a><a class="language-link" href="{h(root_href(detail_other))}">{lang_label}</a></nav></div></header>
-<main><section class="acta-event-hero"><div class="shell acta-event-hero-grid"><div><p class="eyebrow">{h(event['id'])} · {h(event['date'])}</p><h1>{h(title)}</h1><p class="lead">{h(event['phase_es' if es else 'phase_en'])}</p><div class="acta-perimeter-ribbon" data-perimeter="{h(event['perimeter'])}"><strong>{h(classification)}</strong><span>{h(definition)}</span></div></div><aside class="acta-room-rule"><strong>{"Regla de atribución" if es else "Attribution rule"}</strong><span>{"El color distingue carriles documentales. No acredita por sí solo convocatoria, validez, actuación conjunta, fraude o culpabilidad." if es else "Colour distinguishes documentary lanes. It does not itself prove convocation, validity, joint conduct, fraud or guilt."}</span></aside></div></section>
-<section class="section" id="ficha"><div class="shell acta-event-narrow"><div class="acta-fact-grid"><article><span>{"Órgano / tipo" if es else "Body / type"}</span><strong>{h(event.get('body', '—'))} · {h(event.get('record_type', '—'))}</strong></article><article><span>{"Estado de atribución" if es else "Attribution status"}</span><strong>{h(event['attribution_status'])} · {h(event['confidence'])}</strong></article></div><article class="acta-convener"><h2>{"Quién convocó o generó el registro" if es else "Who called or generated the record"}</h2><p>{h(event['convener_es' if es else 'convener_en'])}</p></article><article class="acta-basis"><h2>{"Base de la clasificación" if es else "Classification basis"}</h2><p>{h(event['basis_es' if es else 'basis_en'])}</p></article><div class="actions">{''.join(actions)}</div><p class="source-note"><strong>{"Límite" if es else "Boundary"}:</strong> {h(notes)}</p></div></section>
-{analysis}{text_section}{gallery}
+<body class="dossier-page acta-event-page" data-perimeter="{h(event['perimeter'])}" data-primary-lane="{h(primary_lane)}" data-patricia-capacity="{h(event['patricia_dominguez_capacity']['status_code'])}" data-adverse-sequence-stage="{h(event['adverse_sequence_stage']['stage_code'])}"><a class="skip-link" href="#ficha">{"Saltar a la ficha" if es else "Skip to record"}</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="{h(root_href(room))}"><span class="brand-mark">SR</span><span class="brand-copy"><strong>Project Sun Rock</strong><small>{"Sala ACTAS" if es else "ACTA room"}</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">{"Abrir navegación" if es else "Open navigation"}</span></button><nav class="main-nav" id="main-nav"><a href="{h(root_href(room))}">{"Todas las reuniones" if es else "All meetings"}</a><a href="{h(root_href(chronology))}">{"Cronología" if es else "Chronology"}</a><a href="#cadena-documental">{"Cadena" if es else "Chain"}</a><a href="#texto-ocr">{"Texto / estado" if es else "Text / status"}</a>{source_nav}<a class="language-link" href="{h(root_href(detail_other))}">{lang_label}</a></nav></div></header>
+<main><section class="acta-event-hero"><div class="shell acta-event-hero-grid"><div><p class="eyebrow">{h(event['id'])} · {h(event['date'])}</p><h1>{h(title)}</h1><p class="lead">{h(event['phase_es' if es else 'phase_en'])}</p><div class="acta-perimeter-ribbon" data-perimeter="{h(event['perimeter'])}" data-primary-lane="{h(primary_lane)}"><strong><span class="acta-perimeter-code">{h(perimeter_code)}</span> {h(classification)}</strong><span>{h(definition)}</span></div></div><aside class="acta-room-rule"><strong>{"Regla de atribución" if es else "Attribution rule"}</strong><span>{"El color distingue carriles documentales. No acredita por sí solo convocatoria, validez, actuación conjunta, fraude o culpabilidad." if es else "Colour distinguishes documentary lanes. It does not itself prove convocation, validity, joint conduct, fraud or guilt."}</span></aside></div></section>
+<section class="section" id="ficha"><div class="shell acta-event-narrow"><div class="acta-fact-grid"><article><span>{"Órgano / tipo" if es else "Body / type"}</span><strong>{h(event.get('body', '—'))} · {h(event.get('record_type', '—'))}</strong></article><article><span>{"Estado de atribución" if es else "Attribution status"}</span><strong>{h(event['attribution_status'])} · {h(event['confidence'])}</strong></article></div>{lineage_facts}{capacity_sequence}<article class="acta-convener"><h2>{"Quién convocó o generó el registro" if es else "Who called or generated the record"}</h2><p>{h(event['convener_es' if es else 'convener_en'])}</p></article><article class="acta-basis"><h2>{"Base de la clasificación" if es else "Classification basis"}</h2><p>{h(event['basis_es' if es else 'basis_en'])}</p></article><div class="actions">{''.join(actions)}</div><p class="source-note"><strong>{"Límite" if es else "Boundary"}:</strong> {h(notes)}</p></div></section>
+{chain}{audit}{analysis}{text_section}{gallery}{actors}
 <section class="section" id="interlinks"><div class="shell acta-event-narrow"><div class="section-head"><div><p class="kicker">{"Continuidad" if es else "Continuity"}</p><h2>{"Registros relacionados y navegación temporal." if es else "Related records and chronological navigation."}</h2></div></div><ul class="acta-related">{''.join(related)}</ul><nav class="acta-prev-next" aria-label="{"ACTAS anterior y siguiente" if es else "Previous and next ACTA"}">{''.join(nav_links)}</nav><p><a href="{h(root_href(room))}">← {"Volver a la sala documental completa" if es else "Return to the complete document room"}</a></p></div></section></main>
 <aside class="disclaimer"><div class="shell"><p><strong>{"Aviso" if es else "Notice"}:</strong> {"La publicación acredita el contenido de una copia localizada, no la verdad, validez, ejecución ni intención delictiva. Las alineaciones adversas son atribuciones de Gil Marer salvo que se indique un hecho documental concreto." if es else "Publication establishes what a located copy records, not truth, validity, implementation or criminal intent. Adverse alignment is attributed to Gil Marer unless a specific documentary fact is stated."}</p></div></aside>
-<footer class="site-footer"><div class="shell"><p>Project Sun Rock · {"registro ACTAS y reuniones" if es else "ACTA and meeting register"} · 27 August 2026</p></div></footer></body></html>'''
+<footer class="site-footer"><div class="shell"><p>Project Sun Rock · {"registro ACTAS y reuniones" if es else "ACTA and meeting register"} · 28 August 2026</p></div></footer></body></html>'''
 
 
 def update_sitemap(events: list[dict]) -> None:
@@ -620,7 +1167,7 @@ def update_sitemap(events: list[dict]) -> None:
                 continue
             additions.append(
                 "  <url>\n"
-                f"    <loc>{url}</loc><lastmod>2026-08-27</lastmod>\n"
+                f"    <loc>{url}</loc><lastmod>2026-08-28</lastmod>\n"
                 f"    <xhtml:link rel=\"alternate\" hreflang=\"es\" href=\"{es_url}\"/>\n"
                 f"    <xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"{en_url}\"/>\n"
                 f"    <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{es_url}\"/>\n"
@@ -647,7 +1194,7 @@ def update_chronology(events: list[dict], locale: str) -> None:
         label = PERIMETERS[event["perimeter"]]["label_es" if es else "label_en"]
         cards.append(
             f'<article class="acta-perimeter-chip" data-perimeter="{h(event["perimeter"])}">'
-            f'<strong>{h(event["date"])} · {h(title_for(event, locale))}</strong>'
+            f'<strong><span class="acta-perimeter-code">{h(PERIMETERS[event["perimeter"]]["code"])}</span> {h(event["date"])} · {h(title_for(event, locale))}</strong>'
             f'<span>{h(label)} · <a href="{h("../../../" + route)}">{"abrir ficha completa" if es else "open complete record"} →</a></span></article>'
         )
     block = (
@@ -669,33 +1216,114 @@ def update_chronology(events: list[dict], locale: str) -> None:
 
 def main() -> None:
     public = json.loads(INDEX.read_text(encoding="utf-8"))
+    continuity = json.loads(CONTINUITY.read_text(encoding="utf-8"))
     public_by_id = {event["id"]: event for event in public["events"]}
+    families = {event["stable_id"]: event for event in continuity["event_families"]}
+    continuity_documents = continuity["documents"]
+    localization_errors = validate_scalar_coverage(continuity_documents)
+    if localization_errors:
+        raise RuntimeError("\n".join(localization_errors))
+    validate_controlled_event_ids([event["id"] for event in EVENTS])
     merged: list[dict] = []
     for order, configured in enumerate(EVENTS, 1):
         event = dict(public_by_id.get(configured["id"], {}))
         event.update(configured)
+        family = families.get(configured["id"])
+        if family is None:
+            raise RuntimeError(f"Continuity register lacks event family {configured['id']}")
+        for field in (
+            "stable_id", "legacy_id_aliases", "documented_date_or_range",
+            "document_type", "issuer_sender", "stated_capacity", "recipients",
+            "meeting_body_if_any", "documented_convener", "perimeter_code",
+            "source_provenance_status", "public_private_status",
+            "relationship_to_other_documents_or_events",
+            "unresolved_evidential_issues", "no_page_reason",
+            "document_record_ids", "continuity_audit",
+        ):
+            event[field] = family[field]
+        controlled_annotation = annotation_for_event(configured["id"])
+        for field, value in controlled_annotation.items():
+            if field in family and family[field] != value:
+                raise RuntimeError(
+                    f"Continuity annotation drift for {configured['id']}: {field}"
+                )
+            event[field] = value
+        event["primary_lane"] = PERIMETERS[event["perimeter"]]["primary_lane"]
+        event["actor_entity_routes"] = actor_routes_for_event(configured["id"])
+        event["actor_entity_route_gaps"] = actor_route_gaps_for_event(configured["id"])
         event["order"] = order
         event["detail_page_es"] = f"es/comunidad-instrumentalizacion/sala-documental-actas/{event['slug']}/index.html"
         event["detail_page_en"] = f"en/community-instrumentalisation/acta-document-room/{event['slug']}/index.html"
+        event["documents"] = []
+        for source_document in continuity_documents:
+            if configured["id"] not in source_document.get("event_family_ids", []):
+                continue
+            document = dict(source_document)
+            stable_id = document["stable_id"]
+            if document.get("relationship_stage") == "pre_meeting_notice":
+                document["relationship_stage_source"] = "pre_meeting_notice"
+                document["relationship_stage"] = "pre_meeting"
+            stable_pages, appearances = document_appearance_records(
+                source_document,
+                families,
+            )
+            current_appearance = next(
+                appearance
+                for appearance in appearances
+                if appearance["event_family_id"] == configured["id"]
+            )
+            document["stable_bilingual_page"] = stable_pages
+            document["appears_on_event_routes"] = appearances
+            document["page_disposition"] = current_appearance["page_disposition"]
+            document["current_appearance_page"] = {
+                locale: current_appearance[locale] for locale in ("es", "en")
+            }
+            document["current_appearance_fragment"] = current_appearance["fragment"]
+            document["no_standalone_page_reason"] = document.get("no_page_reason") or {
+                "es": (
+                    "La entrada canónica o la aparición secundaria enlazada evita duplicar una ruta "
+                    "autónoma y mantiene procedencia, estado público/privado y relaciones dentro "
+                    "de las familias documentales del evento."
+                ),
+                "en": (
+                    "The canonical entry or linked secondary appearance avoids duplicating a "
+                    "standalone route and keeps provenance, public/private state and relationships "
+                    "within the event document families."
+                ),
+            }
+            event["documents"].append(document)
         event["notes_es"] = configured.get("notes_es") or event.get("source_variant_note_es") or event.get("notes_es", "")
         event["notes_en"] = configured.get("notes_en") or event.get("source_variant_note_en") or event.get("notes_en", "")
         merged.append(event)
 
     payload = {
-        "schema_version": "1.0",
-        "generated": "2026-08-27",
-        "scope": "Twenty controlled ACTA/meeting events with separate convener, body, attributed perimeter, confidence, full public-artifact links and bilingual event pages.",
+        "schema_version": "2.0",
+        "generated": "2026-08-28",
+        "scope": f"Preserved and extended {len(merged)}-event ACTA/meeting core with document-level pre-ACTA, ACTA, annex, circulation, implementation and reliance records; separate convener, body, attributed perimeter, public/private state, unresolved issues, public-artifact links and bilingual event entries.",
         "classification_boundary": "Perimeter colour is an editorial/documentary attribution. It is not proof of validity, joint action, criminality or guilt.",
+        "completeness_boundary": continuity["completeness_boundary"],
+        "continuity_source": CONTINUITY.relative_to(REPO).as_posix(),
+        "controlled_event_family_count": len(merged),
+        "source_communication_document_count": len(continuity_documents),
+        "primary_lane_counts": {
+            lane: sum(event["primary_lane"] == lane for event in merged)
+            for lane in ("A", "B", "C", "D")
+        },
         "perimeters": PERIMETERS,
+        "adverse_sequence_model": ADVERSE_SEQUENCE_MODEL,
         "events": merged,
     }
     LINEAGE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    anchor_maps = {locale: stable_anchor_map(merged, locale) for locale in ("es", "en")}
     for index, event in enumerate(merged):
         for locale, key in (("es", "detail_page_es"), ("en", "detail_page_en")):
             target = REPO / event[key]
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(event_page(event, locale, merged, index), encoding="utf-8")
+            target.write_text(
+                event_page(event, locale, merged, index, anchor_maps[locale]),
+                encoding="utf-8",
+            )
     update_chronology(merged, "es")
     update_chronology(merged, "en")
     update_sitemap(merged)

@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'assets/audience-experience-order-20260823.js'
       - 'assets/source-of-funds-notice-20260820.css'
       - 'assets/source-of-funds-notice-20260820.js'
@@ -23,6 +24,7 @@ on:
     branches: [main]
     paths:
       - 'assets/site.js'
+      - 'assets/site-pre-treasury-154-hq-20260828.js'
       - 'assets/audience-experience-order-20260823.js'
       - 'assets/source-of-funds-notice-20260820.css'
       - 'assets/source-of-funds-notice-20260820.js'
@@ -81,6 +83,10 @@ jobs:
                   'Right of response, correction and documentation',
               ]),
               'loader': (f'{base}/assets/site.js?{q}', [
+                  'site-pre-treasury-154-hq-20260828.js?v=20260828a',
+                  'data-pre-treasury-154-site-loader',
+              ]),
+              'delegated_loader': (f'{base}/assets/site-pre-treasury-154-hq-20260828.js?{q}', [
                   'SOURCE-OF-FUNDS-NOTICE-20260820',
                   'source-of-funds-notice-20260820.js',
                   '/es/pwc-canarias-carlos-saavedra-sun-park/',

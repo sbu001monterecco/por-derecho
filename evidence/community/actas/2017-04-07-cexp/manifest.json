@@ -21,17 +21,38 @@
     "bytes": 84535,
     "sha256": "da872ab6f5d4dd810342a3d24772e9bce42db37572f82afb2c743fd44b3f7f23",
     "pages": 2,
-    "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
-    "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
+    "source_document_id": "SP-SRC-ACTA-2017-04-07-CEXP-PUBLIC-CONTROL",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2017-04-07-cexp"
+    ],
+    "source_page_scope": "controlling-copy",
+    "variant_note_es": "El control público y el export Drive registrado tienen 84.535 bytes, pero SHA-256 distintos; se conservan como binarios separados.",
+    "variant_note_en": "The public control and registered Drive export are each 84,535 bytes but have different SHA-256 values; they remain separate binaries.",
     "native_publication": false,
-    "variants_recorded": 0
+    "variants_recorded": 1,
+    "additional_source_documents_recorded": 1,
+    "additional_source_documents": [
+      {
+        "bytes": 84535,
+        "sha256": "e2612c11bb243893492b4a490c37ccdada270a8400d5764e8e309a674c95736f",
+        "pages": 2,
+        "local_source_status": "missing-local",
+        "metadata_status": "known-by-controlled-hash-and-size",
+        "source_document_id": "SP-SRC-ACTA-2017-04-07-CEXP",
+        "legacy_id_aliases": [],
+        "relationship_kind": "registered-drive-export-distinct-binary",
+        "relationship_es": "Export PDF de Drive registrado por separado; mismo tamaño, SHA-256 distinto del control público.",
+        "relationship_en": "Separately registered Drive PDF export; same byte count, different SHA-256 from the public control.",
+        "classification_status": "classified"
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2017-04-07-cexp/transcript-es.md",
     "provenance": "evidence/community/actas/2017-04-07-cexp/provenance.md",
     "redaction_log": "evidence/community/actas/2017-04-07-cexp/redaction-log.md",
     "pdf": "assets/docs/community-actas/2017-04-07-cexp-public-redacted-es.pdf",
-    "pdf_sha256": "1384531d35c5b907dfa38a599931502cfdce75efb641a85825e884a98a2f2d16",
+    "pdf_sha256": "ddccb5dd653ddd7b2096dba34777e478ca29b3273518e4a2292a31613aaea23d",
     "pdf_pages": 3,
     "preview_pages": [
       "assets/evidence/community-actas/2017-04-07-cexp/page-001.jpg",
@@ -46,7 +67,21 @@
       "assets/evidence/community-actas-source/2017-04-07-cexp/page-001.jpg",
       "assets/evidence/community-actas-source/2017-04-07-cexp/page-002.jpg"
     ],
-    "source_preview_count": 2
+    "source_preview_count": 2,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2017-04-07-cexp/page-001.jpg",
+        "sha256": "73ab8ce0bdabdc6af5d94e58d1416da9ad985205617b2e5072fa401cd02f76fb"
+      },
+      {
+        "path": "assets/evidence/community-actas/2017-04-07-cexp/page-002.jpg",
+        "sha256": "3c40948a90051f03bf1ad8df6b41fb05133f981896d00968f9258b22408a7767"
+      },
+      {
+        "path": "assets/evidence/community-actas/2017-04-07-cexp/page-003.jpg",
+        "sha256": "b57af04c1c23b1fb41e9491f3e729696265626633ad26a111faaf26e48542351"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -59,7 +94,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

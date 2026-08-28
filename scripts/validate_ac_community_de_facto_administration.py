@@ -53,11 +53,13 @@ en = read("en/de-facto-administration-community-ac/index.html")
 module = read("assets/ac-community-de-facto-administration-20260820.js")
 visibility = read("assets/ac-de-facto-knowing-facilitation-visibility-20260820.js")
 stability = read("assets/ac-de-facto-knowing-facilitation-stability-20260820.js")
-site = read("assets/site.js")
+root_site = read("assets/site.js")
+site = read("assets/site-pre-treasury-154-hq-20260828.js")
 robots = read("robots.txt")
 sitemap = read("sitemap-ac-community-de-facto-administration.xml")
 
 checks = [
+    ("site-pre-treasury-154-hq-20260828.js?v=20260828a", root_site, "delegated pre-Treasury release"),
     ('data-ac-community-shadow-control-page="20260824"', es, "Spanish 20260824 marker"),
     ('data-ac-community-shadow-control-page="20260824"', en, "English 20260824 marker"),
     ("Francisco Mario Matos Matas, Antonio Cogolludo Rojas, Shaila María Cogolludo Ramos, José Daniel Acosta Matos y Laura Patricia Acosta Matos", es, "Spanish five-actor perimeter"),

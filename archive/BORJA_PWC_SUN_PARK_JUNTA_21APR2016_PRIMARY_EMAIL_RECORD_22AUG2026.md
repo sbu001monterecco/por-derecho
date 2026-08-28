@@ -10,7 +10,7 @@
 
 ## 1. Source and custody
 
-**Located Gmail message:** `1a0294bdf7a986f8`
+**Located private-custody locator token:** `SP-PRV-LCTR-GM-387CC2EC3CF5D0A1B466`
 
 **Forwarding subject:** `Fwd: CONVOCATORIA SUN PARK`
 

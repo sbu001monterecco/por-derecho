@@ -217,15 +217,18 @@ def main() -> int:
                 errors.append(f"{path}: stale source-status wording remains: {phrase!r}")
 
     loader = read("assets/calificacion-criminal-misuse-thesis-20260824.js")
-    site = read("assets/site.js")
+    root_site = read("assets/site.js")
+    site = read("assets/site-pre-treasury-154-hq-20260828.js")
     css = read("assets/styles.css")
     render = read("scripts/render_calificacion_criminal_misuse_thesis.mjs")
     workflow = read(".github/workflows/validate-calificacion-criminal-misuse-thesis.yml")
     for marker in ["'/es/'", "'/en/'", "carta-abierta-ministerio-fiscal", "acosta-matos-perimetro", "dataset.calificacionMisuseThesis"]:
         if marker not in loader:
             errors.append(f"scoped loader missing {marker!r}")
+    if "site-pre-treasury-154-hq-20260828.js?v=20260828a" not in root_site:
+        errors.append("assets/site.js: delegated pre-Treasury release not registered")
     if "calificacion-criminal-misuse-thesis-20260824.js?v=20260824d" not in site:
-        errors.append("assets/site.js: criminal-misuse loader not registered")
+        errors.append("delegated site release: criminal-misuse loader not registered")
     if "CALIFICACION-CRIMINAL-MISUSE-THESIS-20260824" not in css:
         errors.append("assets/styles.css: scoped thesis styles missing")
     for marker in ["priorityStatic", "concurso-36-2012-ap-seccion-4", "nota-independencia-judicial-estado-procesal-reserva-acciones", "pinFirstRead", "source-funds-notice-section--featured", "const detailed = main.querySelector(':scope > section[data-pd-five-ac]')", "const anchor = detailed || controlling || sourceFunds || hero", "observer.observe(main, { childList: true })", "calificacionMisusePin", "window.setInterval(pin, 1000)", "22000, 30000"]:

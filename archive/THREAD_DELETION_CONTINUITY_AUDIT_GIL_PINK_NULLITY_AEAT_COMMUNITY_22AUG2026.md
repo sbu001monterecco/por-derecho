@@ -40,9 +40,9 @@ Publish controlled redacted minutes and metadata/source indexes. Do not publish 
 
 ## Latest source locators
 
-- 22-Jun-2011 act: Drive `1k6zmHh59XbkhWWqqY0VEC_vLKLhNy0Az`; SHA-256 `2e30ad64047b10a79d12de9c5eee0202f31e9b0c14ed26de14e57767d21c896a`.
-- 26-Apr-2016 act: Drive `1H10Rco79BHeO-qmnwbpeVpm7UXRqdIUb`; unredacted extraction SHA-256 `4ba8b77315b0dca9dc735e13f08a80b82b73dd080921f2a9d73583013e2563fd`.
-- Contract in AC demand: Drive `1H0SDRVMI6lPb3jZR0kJLPQJcrtjPalUE`.
-- Sentencia 268/2015: Drive `1Z1jTedQVbNjTRYM9sxreavLWBlIVavy2`.
-- AP 89/2014: Drive `1hnZxJUl4jwDCsaM59cAH775YGJCT4fCM`.
-- Pamanil 2016 folder: Drive `1DafuccdSNssfGb7CNAJIYZs33dEFu9jx`.
+- 22-Jun-2011 act: Drive `SP-PRV-LCTR-GD-F1CB8F07FBE47EAFA256`; SHA-256 `2e30ad64047b10a79d12de9c5eee0202f31e9b0c14ed26de14e57767d21c896a`.
+- 26-Apr-2016 act: Drive `SP-PRV-LCTR-GD-81EE648B370E58644BAF`; unredacted extraction SHA-256 `4ba8b77315b0dca9dc735e13f08a80b82b73dd080921f2a9d73583013e2563fd`.
+- Contract in AC demand: Drive `SP-PRV-LCTR-GD-36E5555CF49F74B1BE00`.
+- Sentencia 268/2015: Drive `SP-PRV-LCTR-GD-620E8ED3211CE19AF5F7`.
+- AP 89/2014: Drive `SP-PRV-LCTR-GD-F7E74F1344BFD90C4050`.
+- Pamanil 2016 folder: Drive `SP-PRV-LCTR-GD-B5442D58A57FD5CF38E5`.

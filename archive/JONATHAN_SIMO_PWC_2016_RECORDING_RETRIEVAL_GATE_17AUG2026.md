@@ -27,21 +27,21 @@ Do not rewrite that proposition as independently proved by the later email trail
 
 ### 3.2 Independently documented 2021 digital-custody/transcription chain
 
-**VERIFIED PRIMARY FACT:** Gmail records dated **17 March 2021** show Happy Scribe processing at least two source AMR files through the account associated with `sbu001@monterecco.com` / Gil Marer:
+**VERIFIED PRIMARY FACT:** Gmail records dated **17 March 2021** show Happy Scribe processing at least two source AMR files through the account associated with `SP-PRV-LCTR-EM-32928901D5492501562E` / Gil Marer:
 
 1. `Grabacion Reunión PwC Simo y Cristo on CDAD (1 - hablan de Borja y cuotas cero hasta 2011) 10JUN2016.amr`
 2. `Grabacion Reunión PwC Simo y Cristo on CDAD (2) 10JUN2016.amr`
 
 The same account received Happy Scribe account/top-up/billing communications that day.
 
-**VERIFIED PRIMARY FACT:** on **24 March 2021**, `sbu001@monterecco.com` sent Cristo Pimentel an email with subject `documento en pdf de grabación 2016 con CDAD`, attaching a PDF derivative titled `Grabacion Reunión PwC Simo y Cristo on Prieto Puente y Matos Matas 11JUN2016.pdf`.
+**VERIFIED PRIMARY FACT:** on **24 March 2021**, `SP-PRV-LCTR-EM-32928901D5492501562E` sent Cristo Pimentel an email with subject `documento en pdf de grabación 2016 con CDAD`, attaching a PDF derivative titled `Grabacion Reunión PwC Simo y Cristo on Prieto Puente y Matos Matas 11JUN2016.pdf`.
 
 **VERIFIED DRIVE DERIVATIVES:** Google Drive contains, among others:
 
-- `Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (HAPPYSCRIBE 1) 11JUN2016` — Google Doc ID `1cw4LOVbWvSehlMuah5BfCUwOWRRs0934PZryM41i5pE`, created 24-Mar-2021;
-- `Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (1) 11JUN2016.pdf` — Drive ID `1bKmXc60sO3fdHv1CuE1fgRuF8fv9BNbP`, created 23-Jun-2021;
-- a further Google-Doc derivative, ID `1eCmHIoB_OS1hM4GlhUQG7isPmQjbNwKgp-DsglLDwSI`;
-- Drive folder `Otter to Happyscribe`, ID `1A9cY5T2BOwAjkYT-3IuJN5A3CVxEvKWi`.
+- `Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (HAPPYSCRIBE 1) 11JUN2016` — Google Doc ID `SP-PRV-LCTR-GD-57D4661439C25F624CC0`, created 24-Mar-2021;
+- `Grabacion Reunión PwC Simo y Cristo con Prieto Puente y Matos Matas (1) 11JUN2016.pdf` — Drive ID `SP-PRV-LCTR-GD-014031C630471470CFBE`, created 23-Jun-2021;
+- a further Google-Doc derivative, ID `SP-PRV-LCTR-GD-F02B7DFC102414C22724`;
+- Drive folder `Otter to Happyscribe`, ID `SP-PRV-LCTR-GD-B4E30E485C4F21B4542D`.
 
 ### 3.3 Date discrepancy
 
@@ -73,18 +73,18 @@ The email is important because it was written immediately after the meeting and 
 
 **VERIFIED PRIMARY CORRESPONDENCE:** an original email chain dated **18 July 2012**, later forwarded and preserved in Gmail under subject `Fwd: ATENCION SANDRA/JONATHAN`, was addressed to:
 
-- `Fiscal CLS Consultoria <fiscal@clsconsultoria.com>`; and
-- `Jsimo <jsimo@clsconsultoria.com>`.
+- `Fiscal CLS Consultoria <SP-PRV-LCTR-EM-9176D6B9E2CC87ED734A>`; and
+- `Jsimo <SP-PRV-LCTR-EM-7F3299CE205634A990D4>`.
 
-Patricia/Gil forwarded to Sandra/Jonathan a same-day message from **Rafael Franco (`rfranco@crvconsultores.com`)**, on the AC side, stating in substance that annual accounts to be formulated were to be supervised by the Administración Concursal before signature/review; fiscal models had to be presented on time after draft review; and the fiscal/accounting adviser could contact him directly.
+Patricia/Gil forwarded to Sandra/Jonathan a same-day message from **Rafael Franco (`SP-PRV-LCTR-EM-59D5A6C2EDFD0EA37956`)**, on the AC side, stating in substance that annual accounts to be formulated were to be supervised by the Administración Concursal before signature/review; fiscal models had to be presented on time after draft review; and the fiscal/accounting adviser could contact him directly.
 
 **Significance:** this independently verifies Jonathan's professional involvement with LPB's accounting by July 2012 and a direct operational communication route between the LPB/CLS accounting advisers and the AC team. It must be kept separate from later litigation-preparation material.
 
-**Retrieval anchor:** Gmail message ID `19b4c283662d712a`; embedded original dated 18-Jul-2012.
+**Retrieval anchor:** Gmail message ID `SP-PRV-LCTR-GM-1F566C1DDABAB790B882`; embedded original dated 18-Jul-2012.
 
 ### 5.2 Calificación witness-preparation source
 
-**VERIFIED DOCUMENT EXISTENCE:** Google Drive contains `TESTIGOS Y PREGUNTAS CALIFICACION`, document ID `1mqcV_bjAf4E-gTAQ7BuNPYZenfXZwkTt9radVB4mOZ4`.
+**VERIFIED DOCUMENT EXISTENCE:** Google Drive contains `TESTIGOS Y PREGUNTAS CALIFICACION`, document ID `SP-PRV-LCTR-GD-E0DE327BA8F488E341CC`.
 
 It expressly identifies:
 

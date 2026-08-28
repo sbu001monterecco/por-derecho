@@ -4,6 +4,8 @@
 **Status:** `CANONICAL SPECIALIST CONTROL — PRIMARY 25-JAN AUTO + 29-JAN EDICTO + OTTAWA OFFER + 18-MAY/15-OCT/26-JAN JUDICIAL FAMILY + DEED 457 LOCATED / IMPLEMENTATION OPEN`
 **Scope:** 2018 offer → 2019 appellate/publicity rules → Jan-2021 calculation/publicity → Ottawa better posture → 2021 definitive authorisation → Jan/Feb-2022 finality/testimonios → 21-Feb-2022 deed → Registry/accounting/surplus.
 
+**Opaque private-custody cross-reference:** `SP-PRV-LCTR-GM-DB9D2197E93B05C8AF7B`. It preserves source-graph continuity only; it does not establish content, authenticity, authorship, receipt, knowledge or legal effect.
+
 ## 1. Controlling question
 
 The correct investigation is not `find one magic price`. It is:

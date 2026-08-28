@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'evidence/community/actas/**'
+      - 'evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md'
       - 'assets/docs/community-actas/**'
       - 'assets/docs/community-actas-source/**'
       - 'assets/evidence/community-actas/**'
@@ -20,17 +21,31 @@ on:
       - 'es/comunidad-instrumentalizacion/actas-2011-2022/**'
       - 'en/community-instrumentalisation/minutes-2011-2022/**'
       - 'scripts/build_acta_meeting_lineage.py'
+      - 'scripts/digitise_all_actas.py'
+      - 'scripts/build_private_acta_ocr_custody.py'
+      - 'scripts/acta_capacity_sequence_annotations.py'
+      - 'scripts/acta_document_localization.py'
+      - 'scripts/acta_event_actor_routes.py'
+      - 'scripts/acta_ricpe_event_records.py'
       - 'scripts/build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
+      - 'scripts/remediate_acta_public_locators.py'
+      - 'scripts/test_remediate_acta_public_locators.py'
       - 'scripts/render_acta_meeting_lineage.mjs'
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
       - 'scripts/validate_post7june_2022_deliberate_exclusion.py'
+      - 'publication-manifests/community-acta-document-room-20260823.json'
+      - 'archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md'
+      - 'archive/ACTA_MEETING_PERIMETER_CONTINUITY_AUDIT_28AUG2026.md'
+      - 'archive/SUN_PARK_ACTA_SOURCE_CUSTODY_RECONCILIATION_28AUG2026.md'
+      - '.github/governance/test_acta_private_source_map.py'
       - 'sitemap.xml'
       - '.github/workflows/validate-acta-meeting-lineage.yml'
   push:
     branches: [main]
     paths:
       - 'evidence/community/actas/**'
+      - 'evidence/community/COMMUNITY_AUTHORITY_EVENTS_EMAILS_MEETINGS_ACTAS_PUBLIC_REGISTER.md'
       - 'assets/docs/community-actas/**'
       - 'assets/docs/community-actas-source/**'
       - 'assets/evidence/community-actas/**'
@@ -44,11 +59,24 @@ on:
       - 'es/toma-control-sun-park-7-junio-2018/**'
       - 'en/sun-park-takeover-7-june-2018/**'
       - 'scripts/build_acta_meeting_lineage.py'
+      - 'scripts/digitise_all_actas.py'
+      - 'scripts/build_private_acta_ocr_custody.py'
+      - 'scripts/acta_capacity_sequence_annotations.py'
+      - 'scripts/acta_document_localization.py'
+      - 'scripts/acta_event_actor_routes.py'
+      - 'scripts/acta_ricpe_event_records.py'
       - 'scripts/build_post7june_route_interlinks.py'
       - 'scripts/validate_acta_meeting_lineage.py'
+      - 'scripts/remediate_acta_public_locators.py'
+      - 'scripts/test_remediate_acta_public_locators.py'
       - 'scripts/render_acta_meeting_lineage.mjs'
       - 'scripts/render_post7june_2022_omnidirectional_map.mjs'
       - 'scripts/validate_post7june_2022_deliberate_exclusion.py'
+      - 'publication-manifests/community-acta-document-room-20260823.json'
+      - 'archive/ACTA_DIGITISATION_PUBLICATION_CLOSEOUT_28AUG2026.md'
+      - 'archive/ACTA_MEETING_PERIMETER_CONTINUITY_AUDIT_28AUG2026.md'
+      - 'archive/SUN_PARK_ACTA_SOURCE_CUSTODY_RECONCILIATION_28AUG2026.md'
+      - '.github/governance/test_acta_private_source_map.py'
       - 'sitemap.xml'
       - '.github/workflows/validate-acta-meeting-lineage.yml'
 
@@ -61,7 +89,7 @@ concurrency:
 
 jobs:
   source-and-render:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -76,18 +104,40 @@ jobs:
           node-version: '22'
       - name: Install ACTA validation dependencies
         run: |
+          # Poppler is used only for temporary independent validation renders;
+          # source-controlled preview bytes come from the pinned PyMuPDF build.
           sudo apt-get update
           sudo apt-get install -y poppler-utils
-          python3 -m pip install --disable-pip-version-check pillow pypdf reportlab
+          python3 -m pip install --disable-pip-version-check \
+            Pillow==12.3.0 \
+            pypdf==6.10.0 \
+            reportlab==4.4.9 \
+            PyMuPDF==1.26.6
       - name: Rebuild and require an exact tree
         run: |
+          python3 evidence/community/actas/build_public_packages.py build --all
           python3 scripts/build_acta_meeting_lineage.py
           python3 scripts/build_post7june_route_interlinks.py
           git diff --exit-code
       - name: Validate lineage, packages and privacy
         run: |
+          test ! -e artifacts/acta-source-contact-sheets
+          python3 -m py_compile \
+            scripts/acta_capacity_sequence_annotations.py \
+            scripts/acta_document_localization.py \
+            scripts/acta_event_actor_routes.py \
+            scripts/acta_ricpe_event_records.py \
+            scripts/build_private_acta_ocr_custody.py \
+            scripts/digitise_all_actas.py \
+            scripts/remediate_acta_public_locators.py
+          python3 .github/governance/test_acta_private_source_map.py
+          python3 scripts/acta_ricpe_event_records.py --check
+          python3 -m unittest scripts.test_remediate_acta_public_locators
           python3 scripts/validate_acta_meeting_lineage.py
+          python3 scripts/remediate_acta_public_locators.py --check
           python3 scripts/validate_post7june_2022_deliberate_exclusion.py
+          # The rebuild above already performs rendered validation for every package.
+          # Avoid rendering the full corpus twice while retaining all other checks.
           python3 evidence/community/actas/build_public_packages.py validate --skip-render
           node --check assets/acta-document-room-20260822.js
           node --check scripts/render_acta_meeting_lineage.mjs

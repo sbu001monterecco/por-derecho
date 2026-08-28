@@ -107,7 +107,7 @@ Common physical hotel reality does not erase legal-person or title boundaries.
 
 **Body:** owners / CEXP formation layer  
 **Status:** PRIMARY SOURCE LOCATED; current public page records source-derived figures requiring continued primary-document control  
-**Drive:** `1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe`  
+**Drive:** `SP-PRV-LCTR-GD-C5CE20DD0F9B3D5C8D3F`
 **Filename:** `2. ACTA 2008 - 29 ABR (constitución CEXP por venta del Hotel).pdf`
 
 **Current controlled public summary:** 84.988% present/represented; owners representing 74.90% approved creation of CEXP, its statutes and authority to contract with Montelanza, while 10.01% opposed or reserved decision.
@@ -122,7 +122,7 @@ Common physical hotel reality does not erase legal-person or title boundaries.
 
 **Body:** CEXP / Montelanza contractual layer  
 **Status:** VERIFIED PRIMARY DOCUMENT / source text previously read  
-**Drive:** `1CEJLnY3r5kM_WBk6YWiZjIalNlCfeToA`  
+**Drive:** `SP-PRV-LCTR-GD-461B8270D75E47138421`
 **Filename:** `2. Contrato cesión explotación y estatutos de CEXP MAY2008.pdf`
 
 **Critical correction:** Article 1 of the located statutes describes the participating owners as constituting a **“comunidad civil”** for exploitation.
@@ -250,7 +250,7 @@ Do not call the ACTA fake, criminal or fabricated as an established fact absent 
 
 **Body:** Comunidad de Propietarios  
 **Status:** VERIFIED PRIMARY DOCUMENT  
-**Drive:** `1YMnEVDQj7r1E2aWgWL2Ne9b5gYP6ZRbd`  
+**Drive:** `SP-PRV-LCTR-GD-E3841881D3C98242AFC7`
 **Filename:** `ACTA 2016 - 26 ABR.pdf`
 
 **Verified content from fetched primary copy:**
@@ -273,7 +273,7 @@ Do not call the ACTA fake, criminal or fabricated as an established fact absent 
 ### SP-MEETING-2016-06-11 — recorded PwC / FMMM / advisers working meeting
 
 **Status:** RECORDED WORKING MEETING, NOT AN ACTA  
-**Current live Drive evidence register:** `1qwQb4_Utxarwqu39IESKhe4pHSDpau2l_NKjprPz0v8` (`POR DERECHO — 11JUN2016 / Jonathan Simó / PwC — LIVE Evidence Register`).
+**Current live Drive evidence register:** `SP-PRV-LCTR-GD-CAF7F160AA173FDFDEF7` (`POR DERECHO — 11JUN2016 / Jonathan Simó / PwC — LIVE Evidence Register`).
 
 **Significance:** knowledge/technical-contrast bridge about operation, expenses, fees, debt, source records and figures entering the concurso. Keep separate from the 26-Apr ACTA and from adjudicated findings.
 
@@ -303,7 +303,7 @@ Do not call the ACTA fake, criminal or fabricated as an established fact absent 
 
 **Body:** Comunidad de Propietarios  
 **Status:** VERIFIED PRIMARY DOCUMENT  
-**Drive primary:** `16j_xD-lvEbtR-_23_8nIS2bOkRn4SFr8`  
+**Drive primary:** `SP-PRV-LCTR-GD-A5B7216821A81A06E183`
 **Filename as stored:** `20. ACTA Junta Propietarios TOMA DE POSESIÓN 18MAY2018.pdf`.
 
 **Filename caution:** `TOMA DE POSESIÓN` is secondary file labelling. It is not the legal effect of the ACTA and must not be quoted as an institutional finding.

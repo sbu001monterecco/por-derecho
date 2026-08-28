@@ -293,6 +293,7 @@ def validate_added_material(statuses: dict[str, str], added: dict[str, list[tupl
         rf"(?:{provider_context}.{{0,40}}\b{provider_value}\b|\b{provider_value}\b.{{0,40}}{provider_context})",
         re.I,
     )
+    public_safe_locator = re.compile(r"\bSP-PRV-LCTR-[A-Z]{2}-[0-9A-F]{20}\b", re.I)
     raw_header = re.compile(
         r"^\s*(?:>|[-*]\s*)?(?:from|to|cc|bcc|reply-to|message-id|in-reply-to|references|authentication-results|dkim-signature|received):\s+\S+",
         re.I,
@@ -333,7 +334,8 @@ def validate_added_material(statuses: dict[str, str], added: dict[str, list[tupl
                 fail(f"authentication URL or credential-like material added at {path}:{number}")
             if gmail_url.search(line):
                 fail(f"Gmail access URL added at {path}:{number}")
-            if provider_id.search(line) or number in table_provider_ids:
+            public_safe_line = public_safe_locator.sub("[PUBLIC-SAFE-LOCATOR]", line)
+            if provider_id.search(public_safe_line) or number in table_provider_ids:
                 fail(f"provider/message identifier added at {path}:{number}")
             if data_url.search(line):
                 fail(f"base64 data URL added at {path}:{number}")

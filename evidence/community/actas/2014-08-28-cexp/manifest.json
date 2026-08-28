@@ -21,17 +21,54 @@
     "bytes": 104006,
     "sha256": "e0b9c621ff560bf714b79d225f943a74f3b5b7bb83929b1d07725ded78952ac5",
     "pages": 3,
-    "variant_note_es": "Instrumento CEXP de tres páginas; no es un acta de la Comunidad de Propietarios.",
-    "variant_note_en": "Three-page CEXP instrument; it is not Owners' Community minutes.",
+    "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP-PUBLIC-CONTROL",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2014-08-28-cexp"
+    ],
+    "source_page_scope": "controlling-copy",
+    "variant_note_es": "Instrumento CEXP de tres páginas; el control público de 104.006 bytes, la conversión de 90.821 bytes y el export Drive registrado de 90.821 bytes son binarios distintos. No es un acta de la Comunidad de Propietarios.",
+    "variant_note_en": "Three-page CEXP instrument; the 104,006-byte public control, 90,821-byte conversion and registered 90,821-byte Drive export are distinct binaries. It is not Owners' Community minutes.",
     "native_publication": false,
-    "variants_recorded": 1
+    "variants_recorded": 2,
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "2014-08-28-cexp-source.pdf",
+        "bytes": 90821,
+        "sha256": "51d3a15dcfe1ed227e52b60c8926932cef1350b6a9f454f457e7c627ba02c326",
+        "pages": 3,
+        "relationship_es": "Segunda conversión PDF del mismo instrumento CEXP; binario de 90.821 bytes distinto del export de Drive registrado.",
+        "relationship_en": "Second PDF conversion of the same CEXP instrument; a 90,821-byte binary distinct from the registered Drive export.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP-PDF-CONVERSION-02",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2014-08-28-cexp-VARIANT-01"
+        ]
+      },
+      {
+        "bytes": 90821,
+        "sha256": "a510106ec8c8a860ffff50575843139afffb5c2313d218edf99eb410ab56e3d2",
+        "pages": 3,
+        "local_source_status": "missing-local",
+        "metadata_status": "known-by-controlled-hash-and-size",
+        "source_document_id": "SP-SRC-ACTA-2014-08-28-CEXP",
+        "legacy_id_aliases": [],
+        "relationship_kind": "registered-drive-export-distinct-binary",
+        "relationship_es": "Export PDF de Drive registrado por separado; comparte tamaño con otra conversión, pero no SHA-256.",
+        "relationship_en": "Separately registered Drive PDF export; it shares a byte count with another conversion, but not its SHA-256.",
+        "classification_status": "classified"
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2014-08-28-cexp/transcript-es.md",
     "provenance": "evidence/community/actas/2014-08-28-cexp/provenance.md",
     "redaction_log": "evidence/community/actas/2014-08-28-cexp/redaction-log.md",
     "pdf": "assets/docs/community-actas/2014-08-28-cexp-public-redacted-es.pdf",
-    "pdf_sha256": "f944ae707e346bfee10540d09c3614dd74e65654f68cea84776b18e22a0d7e6b",
+    "pdf_sha256": "8df2c7d3b7e8346fbfeb1d7d247841a2eac0d9f0a862526f6e3adf1f50382d1a",
     "pdf_pages": 4,
     "preview_pages": [
       "assets/evidence/community-actas/2014-08-28-cexp/page-001.jpg",
@@ -48,7 +85,25 @@
       "assets/evidence/community-actas-source/2014-08-28-cexp/page-002.jpg",
       "assets/evidence/community-actas-source/2014-08-28-cexp/page-003.jpg"
     ],
-    "source_preview_count": 3
+    "source_preview_count": 3,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2014-08-28-cexp/page-001.jpg",
+        "sha256": "deb1dd43fe0883931a5a14e95df9c5079a8daeba34c2ee42cc9a268101df0a42"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-08-28-cexp/page-002.jpg",
+        "sha256": "3bb153235d1e369c4122cfb980894c95be46dbfc9039d3db45cdca8b82665b89"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-08-28-cexp/page-003.jpg",
+        "sha256": "db2b707adbd5a98a6e61de8cbda24f7dd82ace299e6ff18c457820c43a550c47"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-08-28-cexp/page-004.jpg",
+        "sha256": "e04c0c3a73ed43e4641a024ca4c1b353766ef7548bf0c53c193030365609a638"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -61,7 +116,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",
