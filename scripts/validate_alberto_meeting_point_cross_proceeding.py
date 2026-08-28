@@ -116,6 +116,14 @@ EXPECTED_CARET_TYPE_COUNTS = {
     "PROCEEDING": {"eligible": 3, "confirmed": 2, "pending": 1},
 }
 EXPECTED_REGISTRY_COUNTS = {
+    "total": 214,
+    "PERSON": 94,
+    "ORGANISATION": 74,
+    "STRUCTURE": 10,
+    "INSTITUTION": 18,
+    "PROCEEDING": 18,
+}
+EXPECTED_SPECIALIST_LIVE_REGISTRY_COUNTS = {
     "total": 204,
     "PERSON": 87,
     "ORGANISATION": 71,
@@ -632,7 +640,7 @@ for record in records:
 
 caret_unitary_ref = caret.get("unitary_scope_reference") or {}
 check(caret_unitary_ref == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 19, "pending": 5, "denominator": 24, "changed_by_this_module": False}, "specialist caret unitary-scope reference drift")
-check(registry.get("counts") == EXPECTED_REGISTRY_COUNTS, "canonical registry counts do not equal 204/87/71/10/18/18")
+check(registry.get("counts") == EXPECTED_REGISTRY_COUNTS, "canonical source registry counts do not equal 214/94/74/10/18/18")
 
 registry_records: dict[str, dict] = {}
 registry_seen: list[str] = []
@@ -1055,7 +1063,7 @@ check("25/32 confirmed, 7 pending" in current_digest_md and "56 confirmed, 74 pe
 
 digest_identity = current_digest.get("identity_registry") or {}
 digest_caret = current_digest.get("caret_scope") or {}
-check({key: digest_identity.get(key) for key in EXPECTED_REGISTRY_COUNTS} == EXPECTED_REGISTRY_COUNTS, "current digest source/static identity registry is not 204/87/71/10/18/18")
+check({key: digest_identity.get(key) for key in EXPECTED_REGISTRY_COUNTS} == EXPECTED_REGISTRY_COUNTS, "current digest source/static identity registry is not 214/94/74/10/18/18")
 check((digest_caret.get("confirmed"), digest_caret.get("denominator"), digest_caret.get("pending")) == (19, 24, 5), "current digest unitary caret scope is not 19/24/5")
 check(digest_caret.get("control_id") == CANONICAL_UNITARY_CARET_CONTROL_ID, "current digest unitary caret control ID drift")
 digest_modules = {module.get("module_id"): module for module in current_digest.get("specialist_modules", []) if isinstance(module, dict)}
@@ -1065,7 +1073,7 @@ check(digest_specialist.get("first_hop_caret_scope") == {"confirmed": 56, "pendi
 if rank < ALLOWED_LIFECYCLE.index("LIVE_VERIFIED"):
     check((digest_identity.get("last_live_verified_counts") or {}).get("total") in {194, 204}, "pre-live candidate digest lacks an explicit prior live denominator")
 else:
-    check(digest_identity.get("last_live_verified_counts") == EXPECTED_REGISTRY_COUNTS, "LIVE_VERIFIED candidate digest has not advanced live registry counts to 204")
+    check(digest_identity.get("last_live_verified_counts") == EXPECTED_SPECIALIST_LIVE_REGISTRY_COUNTS, "specialist LIVE_VERIFIED snapshot no longer preserves its exact 204-record readback")
 
 # Judicial title and court-reorganisation controls.
 title_control_text = TITLE_CONTROL_PATH.read_text(encoding="utf-8")
@@ -1162,5 +1170,5 @@ print(" - first-hop evidence-corpus caret census: 56/130 confirmed; 74 pending; 
 print(" - repository-wide unitary caret census: separately unchanged at 19/24; 5 pending")
 print(" - graph: 9 bilingual six-field nodes; 13 direct forward/reverse bridges")
 print(" - primary backlinks: 18/18 contained; direct incident reciprocity: 26/26 per language; legacy lateral topology: 8/8 per language")
-print(" - canonical registry: 204 / 87 / 71 / 10 / 18 / 18")
+print(" - canonical source registry: 214 / 94 / 74 / 10 / 18 / 18; specialist exact-live snapshot remains 204 / 87 / 71 / 10 / 18 / 18")
 print(f" - candidate publication state: {state}; communication and filing remain HOLD")

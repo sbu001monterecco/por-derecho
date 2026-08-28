@@ -225,7 +225,7 @@ def main() -> int:
             "prueba-exclusion-deliberada",
             "reenvio-acta-thompson",
             "imagen-cuatro-hermanos-acosta-matos",
-            "Gerardo Zacarías Acosta Matos^",
+            "Gerardo Zacarías Acosta Matos</strong><br><small><code>PD-SP-P-0094</code> · identidad confirmada en CAEPR",
             "Prompt forense reproducible",
         ],
         ROOT / "en/sun-park-takeover-7-june-2018/index.html": [
@@ -236,7 +236,7 @@ def main() -> int:
             "deliberate-exclusion-proof",
             "thompson-acta-relay",
             "acosta-matos-four-sibling-image",
-            "Gerardo Zacarías Acosta Matos^",
+            "Gerardo Zacarías Acosta Matos</strong><br><small><code>PD-SP-P-0094</code> · CAEPR-confirmed identity",
             "Reproducible forensic prompt",
         ],
         ROOT / "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html": [
