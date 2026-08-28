@@ -6,6 +6,7 @@
 |---|---|---|
 | Corporate/product succession | Caja Insular de Ahorros de Canarias / La Caja de Canarias → BFA → Bankia → CaixaBank | Which origination, account, swap, pledged-funds, acceleration and personal obligations were retained or succeeded to? |
 | Mortgage-asset ownership | Bankia → SAREB → Promontoria Holding 122 B.V. (PH122) → CAM | Who held or asserted the mortgage credit and security at each date, with what balance, schedule, economics and defences? |
+| Project Meridian adviser continuity | SAREB → IREA financial advice (2014); IREA → Colliers Spain corporate continuity (2018) | What LPB-level material, if any, did the IREA and Cuatrecasas transaction teams review, and what engagement, conflict, information-barrier and retention records survive? |
 
 CaixaBank's corporate succession from Bankia does not mean that CaixaBank held the mortgage asset after the SAREB transfer. Equally, the downstream mortgage asset was not a newly invented credit: its lawful amount and defences depend on the originating record. Haya is not a holder. Cerberus remains a sponsor/investment/decision context until a specific ownership, control, mandate, instruction or ratification link is proved.
 

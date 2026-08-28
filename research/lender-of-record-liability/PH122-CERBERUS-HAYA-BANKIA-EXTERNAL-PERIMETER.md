@@ -19,6 +19,18 @@ Separate legal personality remains the starting rule. Forensic perimeter treatme
 - Cerberus as the investment/decision context expressly invoked in the correspondence;
 - Bankia as a separately routed upstream/originator and residual-credit lane.
 
+## Project Meridian professional-adviser layer
+
+SAREB's public transaction notice identifies **IREA Corporate Finance, S.L.** as financial adviser and **Cuatrecasas, Gonçalves Pereira** as legal adviser on the EUR 133 million Project Meridian hotel-loan sale. Colliers' 27 February 2018 announcement documents its acquisition of a controlling interest in IREA and combination of the Spanish operations.
+
+The controlled continuity is therefore:
+
+`SAREB → IREA financial advice (2014) → IREA corporate continuity within Colliers Spain (from 2018)`
+
+This does not establish that Colliers advised on Meridian in 2014, that either adviser reviewed LPB-level material, or that a current Colliers employee inherited or accessed historical Meridian information. Those questions require the engagement scopes, team lists, data-room index, asset-level workpapers, information barriers and custody/retention records.
+
+A separately captured 2026 public LinkedIn profile states that **Fernando Aguiar Acosta** joined Colliers Madrid as a summer Debt Advisory intern. The possible relationship to the Acosta Matos family is unresolved. Surname proximity is a lead only; it transfers no family status, historic involvement, knowledge, intent, control or responsibility.
+
 The perimeter is therefore one **decision-and-attribution workstream**, not one presumed legal person.
 
 ## Primary correspondence chronology

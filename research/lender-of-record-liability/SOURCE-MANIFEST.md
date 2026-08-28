@@ -18,6 +18,9 @@ This file is the human-readable companion to `data/sources.json`.
 | `SRC-GMAIL-2016-05-18-HAYA-REJECTION` | 2016-05-18 | Haya said the creditor rejected the proposal | verified primary | internal original; public-safe summary |
 | `SRC-GMAIL-2017-05-12-CREDITS-PENDING` | 2017-05-12 | Servicing channel received three-credit and workout architecture | verified primary | internal original; public-safe summary |
 | `SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE` | 2017-05-03 | LPB sought SAREB→PH122 agreement and price | verified primary | public-safe filing summary |
+| `SRC-SAREB-MERIDIAN-2014` | 2014-12 | SAREB identifies the EUR 133m/26-hotel Meridian portfolio and IREA/Cuatrecasas financial/legal advisory roles | verified official public notice | public-safe; does not prove LPB-level review |
+| `SRC-COLLIERS-IREA-ACQUISITION-2018` | 2018-02-27 | Colliers acquired a controlling interest in IREA and combined Spanish operations | verified official corporate notice | public-safe; corporate continuity, not retroactive conduct attribution |
+| `SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026` | retrieved 2026-08-28 | Public profile reports summer-2026 Colliers Madrid Debt Advisory internship | public professional-profile statement | public-safe minimized derivative; family relationship and historic knowledge unresolved |
 | `SRC-TRANSFER-2017-10-20-PH122-CAM` | 2017-10-20 | Assignment existence/date; complete economics still missing | verified primary / partial | public safe |
 | `SRC-LPB-2017-12-06-DEED-PRICE-DEMAND` | 2017-12-06 | Formal demand for deed, price and payment data | verified primary | public safe |
 | `SRC-COURT-2018-02-15-CREDITOR-SUBSTITUTION` | 2018-02-15 | CAM recognised; Article 1535 position rejected; amounts partly corrected | verified primary; adverse/mixed | public safe |

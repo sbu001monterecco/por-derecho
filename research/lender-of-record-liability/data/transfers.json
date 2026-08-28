@@ -65,7 +65,7 @@
     "transfer_type": "portfolio_credit_sale",
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REGISTRY-FINCA-8751-2022", "SRC-LAJ-2015-11-20-PH122-SUBSTITUTION", "SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE"],
+    "source_refs": ["SRC-REGISTRY-FINCA-8751-2022", "SRC-LAJ-2015-11-20-PH122-SUBSTITUTION", "SRC-GMAIL-2015-04-29-HAYA-MERIDIAN", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE", "SRC-SAREB-MERIDIAN-2014"],
     "registry_sample": {
       "finca": "8751",
       "inscription": 19,

@@ -67,8 +67,30 @@
     "relevant_period": {"from": "2013", "to": "2014"},
     "evidence_status": "verified_primary",
     "publication": "public_safe",
-    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE"],
+    "source_refs": ["SRC-REPO-LENDER-PAGE", "SRC-LEXNET-2017-05-03-PRELIMINARY-DILIGENCE", "SRC-SAREB-MERIDIAN-2014"],
     "open_questions": ["Complete Bankia-to-SAREB and SAREB-to-PH122 schedules, warranties and price allocation."]
+  },
+  {
+    "id": "ACT-IREA",
+    "name": "IREA Corporate Finance, S.L.",
+    "role": ["project_meridian_financial_adviser"],
+    "relevant_period": {"from": "2014", "to": "2018-02-27"},
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-SAREB-MERIDIAN-2014", "SRC-COLLIERS-IREA-ACQUISITION-2018"],
+    "open_questions": ["Engagement scope, team, data-room access, LPB-level workpapers and retention/custody chain."],
+    "capacity_limits": ["professional_adviser_not_credit_holder", "LPB_specific_review_not_established"]
+  },
+  {
+    "id": "ACT-COLLIERS-SPAIN",
+    "name": "Colliers International Spain",
+    "role": ["post_2018_corporate_continuity_of_IREA", "potential_current_records_custodian_to_confirm"],
+    "relevant_period": {"from": "2018-02-27", "to": null},
+    "evidence_status": "verified_official",
+    "publication": "public_safe",
+    "source_refs": ["SRC-COLLIERS-IREA-ACQUISITION-2018"],
+    "open_questions": ["Whether particular Meridian/LPB records, personnel or retention obligations passed into current Colliers custody."],
+    "capacity_limits": ["not_retroactively_labelled_as_2014_Meridian_adviser", "no_automatic_knowledge_or_liability_attribution"]
   },
   {
     "id": "ACT-PH122",

@@ -2659,3 +2659,19 @@ h1 { max-width: 14ch; margin: 0; font-size: clamp(3rem, 7vw, 6.6rem); font-weigh
   color: #fff;
   background: #13252d;
 }
+.lender-record-page #meridian-adviser-continuity,
+.lender-record-page #continuidad-asesores-meridian {
+  margin: 1.5rem 0 2rem;
+}
+
+.lender-record-page .continuity-card.documented {
+  border-top: 4px solid #2f7d68;
+}
+
+.lender-record-page .continuity-card.unverified {
+  border-top: 4px dashed #b27736;
+}
+
+.lender-record-page .continuity-card.unverified .number {
+  color: #8c5727;
+}
