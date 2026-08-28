@@ -73,13 +73,13 @@
   {
     "id": "ACT-IREA",
     "name": "IREA Corporate Finance, S.L.",
-    "role": ["project_meridian_financial_adviser"],
+    "role": ["project_meridian_financial_adviser", "prospective_sun_park_lpb_debt_adviser_2017"],
     "relevant_period": {"from": "2014", "to": "2018-02-27"},
     "evidence_status": "verified_official",
     "publication": "public_safe",
-    "source_refs": ["SRC-SAREB-MERIDIAN-2014", "SRC-COLLIERS-IREA-ACQUISITION-2018"],
-    "open_questions": ["Engagement scope, team, data-room access, LPB-level workpapers and retention/custody chain."],
-    "capacity_limits": ["professional_adviser_not_credit_holder", "LPB_specific_review_not_established"]
+    "source_refs": ["SRC-SAREB-MERIDIAN-2014", "SRC-GMAIL-IREA-SUNPARK-2017", "SRC-COLLIERS-IREA-ACQUISITION-2018", "SRC-BORME-IREA-COLLIERS-MERGER-2018"],
+    "open_questions": ["2014 Meridian engagement scope, team and data-room index.", "Executed final 2017 Sun Park engagement, lender outreach, workpapers and fee outcome.", "Retention/custody chain into Colliers."],
+    "capacity_limits": ["professional_adviser_not_credit_holder", "2014_LPB_specific_review_not_established", "2017_final_mandate_and_completion_not_established"]
   },
   {
     "id": "ACT-COLLIERS-SPAIN",
@@ -88,9 +88,64 @@
     "relevant_period": {"from": "2018-02-27", "to": null},
     "evidence_status": "verified_official",
     "publication": "public_safe",
-    "source_refs": ["SRC-COLLIERS-IREA-ACQUISITION-2018"],
+    "source_refs": ["SRC-COLLIERS-IREA-ACQUISITION-2018", "SRC-BORME-IREA-COLLIERS-MERGER-2018", "SRC-CINCODIAS-IREA-COLLIERS-2018"],
     "open_questions": ["Whether particular Meridian/LPB records, personnel or retention obligations passed into current Colliers custody."],
     "capacity_limits": ["not_retroactively_labelled_as_2014_Meridian_adviser", "no_automatic_knowledge_or_liability_attribution"]
+  },
+  {
+    "id": "ACT-RICPE",
+    "name": "RIC Private Equity Investment Partners SCR, S.A.",
+    "role": ["sun_park_investment_control_perimeter", "fernando_aguiar_acosta_reported_2024_employer"],
+    "relevant_period": {"from": "2019", "to": null},
+    "evidence_status": "documented_party_statement",
+    "publication": "public_safe",
+    "source_refs": ["SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026"],
+    "open_questions": ["Fernando Aguiar Acosta's exact 2024 supervisors, assignments, systems access and exposure to Sun Park/HNT/MYND material."],
+    "capacity_limits": ["employment_sequence_does_not_prove_family_relationship_or_wrongdoing"]
+  },
+  {
+    "id": "ACT-FERNANDO-AGUIAR-ACOSTA",
+    "name": "Fernando Aguiar Acosta",
+    "role": ["reported_RICPE_role_June_July_2024", "Colliers_Debt_Advisory_intern_summer_2026", "proposed_witness_or_records_custodian"],
+    "relevant_period": {"from": "2024-06", "to": "2026"},
+    "evidence_status": "documented_party_statement",
+    "publication": "public_safe",
+    "source_refs": ["SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026"],
+    "open_questions": ["Exact duties, supervisors, assignments and systems access at RICPE and Colliers.", "Whether he had any Sun Park, HNT, MYND, Meridian or legacy IREA exposure.", "Whether the proposed Acosta Matos family relationship is accurate."],
+    "capacity_limits": ["not_an_adverse_actor", "family_relationship_unverified", "no_project_knowledge_or_wrongdoing_established"]
+  },
+  {
+    "id": "ACT-LAURA-HERNANDO",
+    "name": "Laura Hernando",
+    "role": ["IREA_Hotels_professional_2017", "Sun_Park_advisory_correspondence_participant"],
+    "relevant_period": {"from": "2017", "to": null},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-IREA-SUNPARK-2017", "SRC-OBSERVATORIO-IREA-HOTELS-2017", "SRC-CINCODIAS-IREA-COLLIERS-2018"],
+    "open_questions": ["Complete Sun Park scope, workpapers, approvals, lender outreach and retention/custody."],
+    "capacity_limits": ["professional_participation_does_not_establish_wrongdoing"]
+  },
+  {
+    "id": "ACT-MIGUEL-VAZQUEZ",
+    "name": "Miguel Vázquez",
+    "role": ["IREA_Hotels_partner_2017", "reported_Meridian_participant", "Sun_Park_advisory_meeting_participant"],
+    "relevant_period": {"from": "2014", "to": "2023"},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-IREA-SUNPARK-2017", "SRC-OBSERVATORIO-IREA-HOTELS-2017", "SRC-CINCODIAS-IREA-COLLIERS-2018"],
+    "open_questions": ["His exact Meridian and Sun Park workstreams, materials reviewed, decisions and retained records."],
+    "capacity_limits": ["professional_participation_does_not_establish_wrongdoing"]
+  },
+  {
+    "id": "ACT-FERNANDO-BANDERAS",
+    "name": "Fernando Banderas Monis",
+    "role": ["IREA_Hotels_professional_2017", "reported_Meridian_participant", "Sun_Park_advisory_meeting_participant"],
+    "relevant_period": {"from": "2014", "to": null},
+    "evidence_status": "verified_primary",
+    "publication": "public_safe",
+    "source_refs": ["SRC-GMAIL-IREA-SUNPARK-2017", "SRC-HIP-FERNANDO-BANDERAS"],
+    "open_questions": ["His exact Meridian and Sun Park workstreams, materials reviewed, decisions and retained records."],
+    "capacity_limits": ["not_Fernando_Aguiar_Acosta", "professional_participation_does_not_establish_wrongdoing"]
   },
   {
     "id": "ACT-PH122",
