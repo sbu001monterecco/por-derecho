@@ -2,7 +2,7 @@
   "schema": "por-derecho.publication-manifest.v1",
   "publication_id": "PD-AM357-PROJECT-SAFE-LINK-REMEDIATION-20260828-01",
   "control_date": "2026-08-28",
-  "current_state": "LIVE_VERIFIED",
+  "current_state": "DELETION_SAFE",
   "owner": "Por Derecho / Project Sun Rock",
   "branch": "codex/post7june-continuity-remediation-20260828",
   "base_sha": "95e1de83e29c0edfe2490c3395bfb5c25b3c8f2b",
@@ -52,7 +52,8 @@
     "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
     "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json",
     ".github/workflows/verify-meeting-point-final-propagation-live.yml",
-    "archive/DEPLOYMENT_LOG.md"
+    "archive/DEPLOYMENT_LOG.md",
+    "CHATGPT_START_HERE.md"
   ],
   "link_contract": {
     "matrix_nodes": 9,
@@ -63,7 +64,7 @@
     "conceptual_route_policy": "MATRIX_ROOT_ROUTES_RETAINED_FOR_RESOLUTION_COMPARISON"
   },
   "validation": {
-    "status": "FIRST_PUBLICATION_REMOTE_PASS_MONITOR_CORRECTION_LOCAL_PASS_PENDING_REMOTE_CI",
+    "status": "FULL_PASS_FIRST_PUBLICATION_AND_MONITOR_CORRECTION",
     "evidence": [
       "Deterministic builder rendered and then verified 52/52 project-safe reciprocal links across 18 endpoint pages.",
       "AM357 specialist validation passed 9 nodes, 13 direct bridges, both endpoints and both languages with a 52-link relative-href census.",
@@ -72,7 +73,11 @@
       "No evidentiary proposition, actor assignment, identity, legal track or funding track changed.",
       "PR #1157 passed 23/23 checks; its exact merge published successfully and 30/30 changed public resources matched the merged bytes.",
       "The public link traversal passed 52/52 relative href, project-prefix, route and fragment checks.",
-      "The corrected monitor's six stable static-section selectors passed 20/20 local marker checks; YAML parsed successfully."
+      "The corrected monitor's six stable static-section selectors passed 20/20 local marker checks; YAML parsed successfully.",
+      "PR #1159 passed 14/14 pull-request workflows on exact tree e437e4cc2bfdad2eebb6c323f566ee18cf650db1.",
+      "All 15 exact-merge workflows succeeded, including Pages and the corrected rendered monitor.",
+      "Monitor run 33188094793 / #37 passed all 16/16 ES/EN route contracts on attempt 1.",
+      "The four non-workflow files changed by PR #1159 returned HTTP 200 and matched the exact merge bytes."
     ]
   },
   "first_publication": {
@@ -88,11 +93,11 @@
     "public_readback": "PASS_30_OF_30_HTTP_200_EXACT_MERGE_BYTES",
     "public_link_traversal": "PASS_52_OF_52_RELATIVE_PROJECT_SAFE_EXACT_ROUTE_AND_FRAGMENT"
   },
-  "merge_sha": "85a3d733d7cec204eae873d04ea5f2f6699ae010",
+  "merge_sha": "3180dc881bc6a139b3e6dc3088ec10b922049d8c",
   "deployment_evidence": {
     "provider": "GitHub Pages",
-    "run_id": 33186562852,
-    "run_number": 1229,
+    "run_id": 33188093160,
+    "run_number": 1230,
     "conclusion": "success",
     "exact_merge_sha": true
   },
@@ -108,7 +113,9 @@
     "30/30 changed public resources returned HTTP 200 and matched the exact merge bytes.",
     "52/52 AM357 endpoint links were relative, retained the /por-derecho project prefix, reached the exact peer route and resolved to an existing fragment.",
     "Pages run 33186562852 / #1229 succeeded for exact merge 85a3d733d7cec204eae873d04ea5f2f6699ae010.",
-    "The remaining CR-129 item is a monitor-contract correction and does not reverse the exact public-content or link verification."
+    "Monitor-correction Pages run 33188093160 / #1230 succeeded for exact merge 3180dc881bc6a139b3e6dc3088ec10b922049d8c.",
+    "Corrected rendered-monitor run 33188094793 / #37 passed all 16/16 ES/EN route contracts on attempt 1.",
+    "All four non-workflow PR #1159 resources returned HTTP 200 and exact merge bytes."
   ],
   "bounded_monitor_incident": {
     "workflow": "Verify Meeting Point final propagation live",
@@ -121,7 +128,32 @@
     "classification": "LEGACY_MONITOR_CONTRACT_DEFECT_NOT_CONTENT_EVIDENCE_OR_NAVIGATION_REGRESSION",
     "correction": "Use authoritative static route sections, add takeover route triggers, use domcontentloaded and bounded retries.",
     "correction_branch": "codex/am357-live-closeout-20260828",
-    "correction_state": "LOCAL_PASS_PENDING_PR_MERGE_AND_EXACT_MERGE_LIVE_RUN"
+    "correction_state": "LIVE_VERIFIED_RUN_33188094793_PASS_16_OF_16_ON_ATTEMPT_1"
+  },
+  "monitor_correction_publication": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1159",
+    "pull_request_head_sha": "ecb856de9b633be182c4047845f3ff5995fb979b",
+    "pull_request_tree_sha": "e437e4cc2bfdad2eebb6c323f566ee18cf650db1",
+    "pull_request_checks": "PASS_14_OF_14",
+    "merge_sha": "3180dc881bc6a139b3e6dc3088ec10b922049d8c",
+    "merge_tree_sha": "e437e4cc2bfdad2eebb6c323f566ee18cf650db1",
+    "exact_merge_workflows": "PASS_15_OF_15",
+    "pages_run_id": 33188093160,
+    "pages_run_number": 1230,
+    "pages_conclusion": "success",
+    "rendered_monitor_run_id": 33188094793,
+    "rendered_monitor_run_number": 37,
+    "rendered_monitor_job_id": 98906229050,
+    "rendered_monitor_result": "PASS_16_OF_16_ATTEMPT_1",
+    "public_readback": {
+      "result": "PASS_4_OF_4_HTTP_200_EXACT_MERGE_BYTES",
+      "sha256": {
+        "archive/CORRECTION_REGISTER.md": "97fd4000ecd1c1fb03fea9b72fe6d7bdbbe4bc8f0e50c62e90195f9d362ec9c6",
+        "archive/DEPLOYMENT_LOG.md": "faf015e9ccdaf5463927877f265f4ad554b36b203da77b58466aeaddd61ba0f8",
+        "docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md": "cde42b373f13c5001cd13fceab44a73793d6177dc8979ec00a8a8b48face0c08",
+        "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json": "a7130424ea5fc24cbd5d5d07e732a5183da15a10e5e6ec78c48c741e9560d360"
+      }
+    }
   },
   "historical_package_closeout": {
     "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1151",
@@ -143,6 +175,34 @@
     "ME-099",
     "ME-100"
   ],
+  "deletion_record": {
+    "certified_at": "2026-08-28T16:06:24Z",
+    "decision": "SAFE_TO_DELETE_ORIGINATING_CHAT_THREAD",
+    "basis": [
+      "The substantive unitary analysis, public routes, structured data, source boundaries and contrary evidence are committed and live.",
+      "The 52-link project-path defect is repaired and live-verified route by route and fragment by fragment.",
+      "The legacy monitor defect is corrected and passed all 16 rendered route contracts on the exact merge.",
+      "The deletion audit, correction register, deployment log, publication manifest and top-level restart instructions preserve continuity outside chat."
+    ],
+    "open_evidence_preserved": [
+      "ME-099",
+      "ME-100"
+    ],
+    "boundaries": [
+      "Deletion-safe does not mean the allegations are adjudicated or that every primary record has been obtained.",
+      "It is not an independent disaster-recovery or private-evidence-backup certification.",
+      "No email, filing, service, witness contact or third-party contact was authorised or performed."
+    ],
+    "restart_order": [
+      "CHATGPT_START_HERE.md",
+      "docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md",
+      "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json",
+      "archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md",
+      "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+      "archive/declarations/017_GIL_THOMPSON_POST_MEETING_ACTA_FORWARDING_AND_CONCEALED_MEETINGS_20260828.md",
+      "archive/MISSING_EVIDENCE_REGISTER.md (ME-099 and ME-100 rows)"
+    ]
+  },
   "external_actions": {
     "repository_and_website_publication_authorized": true,
     "email_or_filing_authorized": false,

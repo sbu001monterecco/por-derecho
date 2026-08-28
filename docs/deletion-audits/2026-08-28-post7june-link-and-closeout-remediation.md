@@ -65,10 +65,16 @@ Of 28 exact-merge workflows, 27 succeeded. Legacy run `33186564318` / #36, “Ve
 
 CR-129 replaces those transient duplicate-card selectors with the corresponding authoritative static sections (`#evidencia-visual` / `#visual-evidence`, `#sun-park`, and `#proyecto-antes-del-titulo` / `#project-before-title`), adds both takeover routes to the trigger scope, uses `domcontentloaded`, and limits retries so a failure exits deterministically rather than being cancelled by the job timeout. The revised six-selector local contract passed 20/20 markers across six unique sections. The change alters no published proposition or evidentiary status.
 
-Until the corrected live monitor succeeds on an exact merge and the manifest records that result, the implementation remains recoverable but this remediation thread is not yet certified for deletion.
+## 8. Monitor-correction publication and deletion decision
 
-## 8. Restart and deletion gate
+The monitor correction and first-publication record were reviewed in [PR #1159](https://github.com/sbu001monterecco/por-derecho/pull/1159). All 14/14 pull-request workflows passed on head `ecb856de9b633be182c4047845f3ff5995fb979b` and exact tree `e437e4cc2bfdad2eebb6c323f566ee18cf650db1`. It merged as `3180dc881bc6a139b3e6dc3088ec10b922049d8c`, retaining that exact tree.
+
+All **15/15 exact-merge workflows** succeeded. Pages run `33188093160` / #1230 deployed the exact merge. Corrected rendered-monitor run `33188094793` / #37, job `98906229050`, passed **16/16 ES/EN route contracts on attempt 1**, including each Lava Verde, 357/2024 and takeover replacement selector. No-cache readback then passed **4/4** non-workflow PR #1159 resources with HTTP 200 and exact merge bytes.
+
+The continuity state is therefore `DELETION_SAFE` with ME-099 and ME-100 still explicitly open. This means the task can be reconstructed from the repository and verified live without this conversation. It does not mean the underlying allegations have been adjudicated, that the missing native service/forwarding evidence has been obtained, or that private evidence has received independent disaster-recovery certification. No email, filing, service, witness contact or other third-party contact was authorised or performed.
+
+## 9. Restart and deletion gate
 
 On restart, read this audit, CR-128, the remediation manifest, the original 2022 ACTA continuity audit, the canonical post-7-June report, its structured dataset, Declaration 017 and ME-099–ME-100. Re-run the builder in `--check` mode before editing any of the 18 endpoint pages. Keep the matrix's root routes conceptual and public hrefs project-safe and relative.
 
-Thread deletion is safe only after the remediation manifest records the monitor-correction PR head/tree, merge, successful exact-merge monitor and Pages deployment, final live readback and the unchanged no-contact boundary.
+Thread deletion is safe. The durable restart order is `CHATGPT_START_HERE.md` → this audit → the remediation manifest → the canonical post-7-June report and structured dataset → Declaration 017 → ME-099–ME-100. Before changing any AM357 endpoint, re-run the deterministic builder with `--check` and keep the matrix's root routes conceptual while public hrefs remain relative and project-safe.
