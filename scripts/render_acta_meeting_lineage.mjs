@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { chromium } from 'playwright';
+const { chromium } = await import(process.env.PSR_PLAYWRIGHT_MODULE || 'playwright');
 
 const base = (process.env.PSR_BASE_URL || 'http://127.0.0.1:8000/por-derecho').replace(/\/$/, '');
 const out = process.env.PSR_SCREENSHOT_DIR || 'artifacts/acta-meeting-lineage';

@@ -15,12 +15,12 @@ This audit supersedes the 27-Aug-2026 event count and gap status without rewriti
 |---|---:|
 | Initial task-base `main` SHA | `f20e86c53b1c579f8adfe01646869b91504bb11d` |
 | Final integrated PR-base `main` SHA | `c456bc48dadd4dbaf5eac913b840083f1e0d9bc2` |
-| Publication pull request | **PENDING** |
-| Publication merge SHA | **PENDING** |
-| Exact Pages run | **PENDING** |
-| Live readback | **PENDING** |
+| Publication pull request | [#1182](https://github.com/sbu001monterecco/por-derecho/pull/1182); reviewed head `24b7f47aee83df5e2981a0505443361ddfeb99ab`; required suite 42 success + 3 conditional skips + 0 failures |
+| Publication merge SHA | `67b144e6fd1d2312f8d4ab1830c28eb17eca8d5f`; tree `f53bdb61323bc137f1f52f1810a3bc6e70c63345` |
+| Exact Pages run | [33217481784 / #1253](https://github.com/sbu001monterecco/por-derecho/actions/runs/33217481784) — completed/success |
+| Live readback | **PASS 158/158 exact source SHA-256 at `2026-08-28T22:41:05Z`; 96/96 desktop/mobile checks on the identical reviewed tree; 6/6 distinct perimeter colour pairs** |
 
-The continuity layer controls **23 events**, **46 language-specific bilingual event pages** and **19 located ACTA/minutes source families**. A twentieth controlled package is the separately classified, non-ACTA RICPE notice/agenda. The public package layer therefore represents **412 source pages**, **448 text-edition pages**, **20 redacted source facsimiles**, **20 text-edition PDFs** and **860 current JPEG page images** (412 source-gallery images plus 448 text-edition previews). The superseded historical layer retains **209 WEBP previews** and is not added to the current-package count. Publication remains pending until the exact merge and live deployment are verified.
+The continuity layer controls **23 events**, **46 language-specific bilingual event pages** and **19 located ACTA/minutes source families**. A twentieth controlled package is the separately classified, non-ACTA RICPE notice/agenda. The public package layer therefore represents **412 source pages**, **448 text-edition pages**, **20 redacted source facsimiles**, **20 text-edition PDFs** and **860 current JPEG page images** (412 source-gallery images plus 448 text-edition previews). The superseded historical layer retains **209 WEBP previews** and is not added to the current-package count. The exact merge and live deployment are verified; the open evidence below remains open.
 
 ## Classification and evidential discipline
 
@@ -347,15 +347,15 @@ No connector carrier, duplicate or contact sheet is miscounted as a separate his
 
 ## Publication verification gate
 
-The candidate requires deterministic rebuild, all **20** package/privacy/hash/image checks, all **23-event/46-route** bilingual and fragment checks, six-subtype colour/accessibility checks, desktop/mobile renders, reviewed PR, green required checks, exact merge SHA, successful matching Pages run, and live readback of 46 event pages, **40 PDFs**, all package indexes and representative images. The candidate controls 412 source pages, 448 text-edition pages, 20 facsimiles, 20 text PDFs and 860 current JPEGs; the 209 legacy WEBPs remain a separately identified superseded layer. PR, merge, Pages and live readback are **PENDING**.
+The deterministic rebuild and all **20** package/privacy/hash/image checks passed. All **23-event/46-route** bilingual, canonical, hreflang, fragment and sitemap checks passed. The six-subtype colour/accessibility system passed **6/6** distinct rendered colour-pair controls, and the reviewed identical tree passed **96/96** desktop/mobile route/viewport checks. PR #1182 merged with all required checks green; exact Pages run `33217481784` succeeded on merge `67b144e…`; live readback passed **158/158**, including all 46 event pages, **40 PDFs**, 20 package manifests, 40 representative images, two rooms and ten global controls.
 
 ## Six-part deletion-safety conclusion
 
-1. **All located control copies digitised and published:** **DIGITISED IN THE CANDIDATE; LIVE PUBLICATION PENDING.** All 19 located ACTA/minutes families and the one located non-ACTA RICPE notice/agenda have generated packages, but this pre-merge audit cannot certify live publication.
+1. **All located control copies digitised and published:** **YES, IN PUBLIC-SAFE FORM.** All 19 located ACTA/minutes families and the one located non-ACTA RICPE notice/agenda package are live; native files remain private and no complete-text or certified-OCR claim is made.
 2. **Every historical ACTA located:** **NO.** The 20-Nov-2018 standalone ACTA, the primary 29-Dec-2021 RICPE records, any minutes/outcome for 11/12-Mar-2022 and potentially other sources/annexes remain unlocated.
 3. **OCR manually certified:** **NO.** No package is line-by-line certified. Fully redacted sources expose no OCR publicly; their separate private automated OCR custody covers 166/166 pages but is expressly uncertified.
 4. **Source authenticity established:** **NO.** Hashes prove integrity of received binaries, not official origin, authorship, truth or signature authority.
 5. **Legal validity established:** **NO.** Meeting occurrence, call authority, notice, quorum, voting entitlement, resolution wording, validity, implementation, reliance, knowledge, intent, causation, benefit and legal characterization remain separate and partly open.
-6. **Continuity safe for deletion:** **NO — PENDING PUBLICATION CLOSEOUT.** Owner-only custody is checksum-verified and read back, but continuity is not deletion-safe until the reviewed release is merged, the exact commit is deployed/read back, checks are green and deployment/manifest records are updated. A later `safe for deletion` conclusion may cover only deletion of the originating chat/transient work context; it cannot authorise deletion of native sources, private custody archives, locator controls, evidence records or backups, and it cannot mean every ACTA located, OCR certified, authenticity proved, legal validity established or provider-independent disaster-recovery safety.
+6. **Continuity safe for deletion:** **YES ONLY FOR THE ORIGINATING CHAT/TRANSIENT WORK CONTEXT.** The reviewed publication, exact deployment and live readback are complete. This does not authorise deletion of native sources, private custody archives, locator controls, evidence records or backups, and it does not mean every ACTA located, OCR certified, authenticity proved, legal validity established or provider-independent disaster-recovery safety.
 
-Permissible final conclusion after the publication gate passes: **all located ACTA/minutes families and the located non-ACTA RICPE notice package are fully digitised and published in public-safe form, with remaining historical, annex, variant, transcription, authenticity, legal-validity and custody-resilience gaps explicitly preserved.** “All ACTAs complete” remains unsupported.
+Final conclusion: **all located ACTA/minutes families and the located non-ACTA RICPE notice package are fully digitised and published in public-safe form, with remaining historical, annex, variant, transcription, authenticity, legal-validity and custody-resilience gaps explicitly preserved.** “All ACTAs complete” remains unsupported.
