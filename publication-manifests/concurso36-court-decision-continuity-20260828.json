@@ -4,10 +4,12 @@
   "control_id": "PD-C36-DECISION-CONTINUITY-20260828-01",
   "owner": "Por Derecho / Project Sun Rock",
   "created_at": "2026-08-28T00:00:00Z",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "local_candidate_not_published",
+  "current_state": "DELETION_SAFE",
+  "status": "deletion_safe_with_open_evidence",
   "base_sha_at_start": "298a1141662c278db9413d9e282469c36ca52ad8",
-  "branch": "codex/concurso36-decision-continuity-20260828",
+  "branch": "codex/concurso36-decision-continuity-closeout-20260828",
+  "remote_source_sha": "c70c9278c7cae978a8bc293a62f86eabba7bc4e5",
+  "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1141",
   "purpose": "Prepare a bounded, public-safe 2014–2026 continuity audit for the decisions and Insolvency Administration reports in Concurso 36/2012 while preserving separate proceedings, same-date instruments and open filing, report, service, appeal, finality, accounting and implementation nodes.",
   "expected_routes": {
     "es": [
@@ -42,6 +44,7 @@
     "archive/CORRECTION_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
     "archive/CONTINUOUS_MAINTENANCE_MATRIX_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+    "archive/DEPLOYMENT_LOG.md",
     "docs/deletion-audits/2026-08-28-concurso36-decision-continuity.md",
     "docs/deletion-audits/README.md",
     "scripts/build_concurso_autos_pages.py",
@@ -109,16 +112,16 @@
   ],
   "authority": {
     "local_repository_preparation": true,
-    "push": false,
-    "pull_request": false,
-    "merge": false,
-    "deploy": false,
+    "push": true,
+    "pull_request": true,
+    "merge": true,
+    "deploy": true,
     "email": false,
     "filing": false,
     "authority_contact": false
   },
   "validation": {
-    "status": "PASSED_LOCAL_VALIDATION",
+    "status": "CI_GREEN",
     "evidence": [
       {
         "command": "python -B scripts/validate_concurso36_decision_continuity.py",
@@ -154,8 +157,83 @@
       "validate_audience_experience.py: four pre-existing broken links on unrelated English routes"
     ]
   },
-  "merge_sha": null,
-  "deployment_evidence": null,
-  "live_urls": [],
-  "live_verification_evidence": null
+  "ci_evidence": {
+    "targeted_release_status": "GREEN",
+    "pull_request_runs": {
+      "decision_continuity": 33151589104,
+      "primary_autos": 33151589020,
+      "complete_record": 33151588999,
+      "autos_full_text_and_pdf": 33151588961,
+      "private_source_statement_osint": 33151588923,
+      "complete_record_live_verifier": 33151589031
+    },
+    "exact_merge_runs": {
+      "decision_continuity": 33151672856,
+      "primary_autos": 33151672879,
+      "complete_record": 33151672924,
+      "autos_publication": 33151672886,
+      "ac_removal_publication": 33151672976,
+      "private_source_governance": 33151672991,
+      "production_smoke": 33151672927,
+      "unitary_control_plane": 33151672938
+    },
+    "inherited_failures_outside_release_scope": [
+      "Audience experience: four unrelated English ONA links",
+      "Publication integrity: pre-existing community-acta-document-room-20260823 lifecycle manifest"
+    ]
+  },
+  "merge_sha": "0aae9d90873233d773c18b569a042ee2b75dd13d",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 33151671584,
+    "workflow_run_sequence": 1212,
+    "head_sha": "0aae9d90873233d773c18b569a042ee2b75dd13d",
+    "conclusion": "success",
+    "url": "https://github.com/sbu001monterecco/por-derecho/actions/runs/33151671584"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-autos-resoluciones/",
+    "https://sbu001monterecco.github.io/por-derecho/en/insolvency-36-2012-orders-decisions/"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS",
+    "method": "public-edge bilingual route and exact artifact HTTP readback",
+    "routes": {
+      "es": {
+        "status": 200,
+        "anchor": "continuidad-2014-2026",
+        "anchor_present": true,
+        "release_counts_present": [51, 28]
+      },
+      "en": {
+        "status": 200,
+        "anchor": "continuity-2014-2026",
+        "anchor_present": true,
+        "release_counts_present": [51, 28]
+      }
+    },
+    "artifacts": {
+      "assets/data/concurso36-decision-continuity-2014-2026-v1.json": {
+        "status": 200,
+        "bytes": 87188,
+        "content_type": "application/json"
+      },
+      "assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx": {
+        "status": 200,
+        "bytes": 27730,
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      "assets/data/concurso36-decision-continuity-assessment-2014-2026.docx": {
+        "status": 200,
+        "bytes": 45075,
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      },
+      "assets/data/concurso36-decision-continuity-assessment-2014-2026.pdf": {
+        "status": 200,
+        "bytes": 218936,
+        "content_type": "application/pdf"
+      }
+    }
+  },
+  "deletion_record": "docs/deletion-audits/2026-08-28-concurso36-decision-continuity.md"
 }
