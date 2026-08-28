@@ -161,3 +161,7 @@ Keep the corporate-liability lane `Caja Insular → BFA → Bankia → CaixaBank
 **Publication state:** the canonical controls authorize a strong attributed allegation block with exact corrections, non-finding, countermodels and P0 evidence. Public ES/EN page parity and live deployment remain separate implementation facts to verify and log; a repository control is not itself proof of a live route.
 
 **Register owners:** `ME-093` carries the complete production/single-satisfaction gap and `CR-099` blocks wrong entity/capacity, arithmetic, proceeding, asset-branch and notarial-proof formulations.
+
+### Concurso 36/2012 decision continuity — 28 Aug 2026
+
+The coordinated maintenance rules for the 2014–2026 decision-family audit continue in `CONTINUOUS_MAINTENANCE_MATRIX_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md` under control `PD-C36-DECISION-CONTINUITY-20260828-01`. Update the canonical JSON, review XLSX, bilingual route anchors, audit narrative, missing-evidence/correction controls and validator together; preserve stable IDs, separate same-date instruments and the boundary between a located decision copy and its still-open filing, service, review, finality and implementation family.

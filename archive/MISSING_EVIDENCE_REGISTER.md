@@ -120,3 +120,7 @@ Active-estate and related source-completion subrequests continue in `SUN_PARK_AC
 ## Namespaced continuation — 25 August 2026
 
 Private-mailbox acquisition, voice-source authentication/adoption and named-person/entity OSINT closure continue in `MISSING_EVIDENCE_REGISTER_VOICE_OSINT_MAILBOX_ADDENDUM_25AUG2026.md` under collision-safe IDs `ME-MAIL-RDM-001`, `ME-VTT-001`–`003` and `ME-OSINT-001`. The authorised connected-side corpus of more than 2,400 related messages is a partial discovery set, not a complete acquisition of the private mailbox.
+
+## Namespaced continuation — 28 August 2026
+
+Concurso 36/2012 decision-family gaps from 2014 through 2026 continue in `MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md` under control `PD-C36-DECISION-CONTINUITY-20260828-01`. Treat that addendum as a namespaced extension of this canonical register: the certified denominator, 2014–2016 originals, unresolved references, current appeals and final accounts/conclusion family remain open, and an unlocated record is not treated as nonexistent.

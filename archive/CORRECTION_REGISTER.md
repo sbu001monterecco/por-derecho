@@ -130,3 +130,7 @@ When a correction changes a public proposition, update: (1) public page(s), (2) 
 ## Namespaced continuation — 23 August 2026
 
 CAM / 7-Jun-2018 direct-instruction, creditor-control, AC-approval/omission and judicial-prevarication corrections continue in `CORRECTION_REGISTER_CAM_7JUNE_CRIMINAL_LEAD_ADDENDUM_23AUG2026.md` under collision-safe IDs `CR-CAM7J-001` onward.
+
+## Namespaced continuation — 28 August 2026
+
+Concurso 36/2012 decision-continuity corrections continue in `CORRECTION_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md` under control `PD-C36-DECISION-CONTINUITY-20260828-01`. Treat that addendum as a namespaced extension of this canonical register: preserve AP 89/2014 as a separate contextual lane, the restored 2017 anchors, the controlling 15-Feb-2018 date, distinct same-date instruments and the stated appeal/merits boundaries without silently rewriting earlier source layers.
