@@ -166,6 +166,39 @@
     "notes": "Establishes post-2018 corporate continuity. It does not attribute IREA's 2014 acts retroactively to Colliers or prove custody of a particular LPB record."
   },
   {
+    "id": "SRC-COLLIERS-MIGUEL-SUCCESSION-2023",
+    "title": "Colliers Spain management-succession notice",
+    "source_type": "official_corporate_notice",
+    "date": "2023-02-09",
+    "evidence_status": "verified_official",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://www.colliers.com/en-es/news/colliers-anuncia-cambios-en-su-cupula-directiva-en-espanha",
+    "notes": "Records that Miguel Vázquez left management but continued on the Advisory Board and that Laura Hernando led Hotels while Miguel Martinez led Debt Advisory. It does not prove custody or continuing knowledge of any Meridian or LPB file."
+  },
+  {
+    "id": "SRC-COLLIERS-LAURA-CEO-2026",
+    "title": "Colliers appointment of Laura Hernando as CEO Iberia",
+    "source_type": "official_corporate_notice",
+    "date": "2026-02-24",
+    "evidence_status": "verified_official",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://www.colliers.com/en-es/news/colliers-nombra-a-laura-hernando-ceo-de-iberia",
+    "notes": "Records Laura Hernando's CEO Iberia appointment, continued Managing Director Hotels role and entry into Colliers through the 2018 IREA acquisition. It does not prove her personal custody or knowledge of any Meridian or LPB file."
+  },
+  {
+    "id": "SRC-FINANCECOMMUNITY-FERNANDO-HOTEL-FINANCE-2026",
+    "title": "Financecommunity report naming Fernando Aguiar on a Colliers hotel-finance team",
+    "source_type": "business_financial_media",
+    "date": "2026-07-29",
+    "evidence_status": "corroborated_inference",
+    "availability": "public_web",
+    "publication": "public_safe",
+    "url": "https://financecommunity.es/colliers-financiacion-hotelera-43-5-millones-arena-investors-oppo-invest/",
+    "notes": "Names Fernando Aguiar on the Colliers team advising Arena Investors and Oppo Invest on an unrelated EUR 43.5 million alternative financing secured by two four-star hotels totalling 375 rooms. This corroborates hotel-debt team participation; it does not establish Sun Park/Meridian exposure, legacy-record access, family relationship or wrongdoing."
+  },
+  {
     "id": "SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026",
     "title": "Fernando Aguiar Acosta public professional profile",
     "source_type": "public_professional_profile_statement",

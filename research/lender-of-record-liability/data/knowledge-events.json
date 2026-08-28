@@ -146,5 +146,17 @@
     "publication": "public_safe",
     "source_refs": ["SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026"],
     "later_conduct_refs": []
+  },
+  {
+    "id": "KN-2026-07-FERNANDO-COLLIERS-HOTEL-FINANCE-TEAM",
+    "date": "2026-07-29",
+    "actor_refs": ["ACT-COLLIERS-SPAIN", "ACT-FERNANDO-AGUIAR-ACOSTA"],
+    "knowledge_topic": "Publicly reported participation on an unrelated Colliers hotel-finance transaction team",
+    "directly_establishes": "A financial-media report names Fernando Aguiar on the Colliers team advising an EUR 43.5 million alternative financing secured by two four-star hotels totalling 375 rooms.",
+    "does_not_establish": "Sun Park or Meridian exposure, legacy IREA record access, information transfer, Acosta Matos family relationship, coordination or wrongdoing.",
+    "evidence_status": "corroborated_inference",
+    "publication": "public_safe",
+    "source_refs": ["SRC-FINANCECOMMUNITY-FERNANDO-HOTEL-FINANCE-2026"],
+    "later_conduct_refs": []
   }
 ]

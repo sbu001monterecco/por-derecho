@@ -283,16 +283,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/collaborate/"/>
   </url>
   <url>
-    <loc>https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/</loc><lastmod>2026-08-14</lastmod>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/</loc><lastmod>2026-08-28</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/"/>
   </url>
   <url>
-    <loc>https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/</loc><lastmod>2026-08-14</lastmod>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/</loc><lastmod>2026-08-28</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/acreedor-de-registro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/en/lender-of-record/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/en/irea-colliers-meridian-sun-park/</loc><lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/irea-colliers-meridian-sun-park/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/"/>
+  </url>
+  <url>
+    <loc>https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/</loc><lastmod>2026-08-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sbu001monterecco.github.io/por-derecho/en/irea-colliers-meridian-sun-park/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/"/>
   </url>
   <url><loc>https://sbu001monterecco.github.io/por-derecho/es/aviso-procedencia-fondos-servicios-profesionales/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://sbu001monterecco.github.io/por-derecho/en/source-of-funds-professional-services-notice/</loc><lastmod>2026-08-20</lastmod></url>

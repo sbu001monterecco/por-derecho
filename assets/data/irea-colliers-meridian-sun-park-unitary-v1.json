@@ -1,0 +1,95 @@
+{
+  "schema": "por-derecho.irea-colliers-meridian-sun-park-unitary.v1",
+  "control_id": "PD-IREA-COLLIERS-UNITARY-20260828-01",
+  "control_date": "2026-08-28",
+  "status": "PUBLIC_SAFE_DERIVATIVE_PREPARED",
+  "core_finding": "IREA was not the lender or credit holder. It was SAREB's named financial adviser on Project Meridian in 2014 and separately a prospective Sun Park/LPB debt adviser in September 2017. Colliers is the post-2018 corporate-continuity and potential current records-custody route to confirm.",
+  "capacity_lanes": [
+    {
+      "lane": "credit_holder",
+      "sequence": ["Bankia", "SAREB", "Promontoria Holding 122 B.V.", "Construcciones Acosta Matos, S.A."],
+      "limit": "The transfer instruments, schedules and economics control the exact content of each step."
+    },
+    {
+      "lane": "servicing_interlocutor",
+      "sequence": ["Haya Real Estate"],
+      "limit": "Receipt and communication are documented; holder or final decision capacity is not."
+    },
+    {
+      "lane": "transaction_adviser_and_custody",
+      "sequence": ["IREA Corporate Finance, S.L.", "Colliers International Spain, S.L."],
+      "limit": "Corporate continuity does not automatically establish custody, shared knowledge, wrongdoing or liability."
+    },
+    {
+      "lane": "legal_adviser",
+      "sequence": ["Cuatrecasas, Gonçalves Pereira, S.L.P."],
+      "limit": "The parallel Meridian mandates do not alone prove asset-level overlap, information sharing or conflict."
+    }
+  ],
+  "chronology": [
+    {"date_label":"December 2014","event":"SAREB publicly named IREA as financial adviser and Cuatrecasas as legal adviser on the EUR 133 million, 26-hotel Project Meridian portfolio.","evidence_status":"verified_official","limit":"The published notice does not identify the asset schedule or LPB-level review."},
+    {"date_label":"7-25 September 2017","event":"Authenticated correspondence establishes IREA receipt and review of detailed Sun Park/LPB materials, meetings, Cuatrecasas coordination and a proposed debt-advisory scope.","evidence_status":"verified_primary","limit":"No final engagement, lender outreach, financing close, success fee, later file transfer or misuse was located."},
+    {"date_label":"20 October 2017","event":"The recorded PH122-to-CAM credit assignment occurred about one month after the IREA review.","evidence_status":"verified_primary","limit":"Timing does not prove IREA knowledge, participation or communication with CAM."},
+    {"date_label":"27 February-15 June 2018","event":"Colliers announced the acquisition/integration; the BORME records IREA as absorbent company and the later Colliers name.","evidence_status":"verified_official","limit":"Corporate continuity does not prove custody of a particular historical file."},
+    {"date_label":"June-July 2024 to summer 2026","event":"Fernando Aguiar Acosta's public profile reports RIC Private Equity followed by Colliers Debt Advisory; a July 2026 financial-media report names Fernando Aguiar on an unrelated hotel-finance transaction team.","evidence_status":"corroborated_public_profile_sequence","limit":"No family relationship, Sun Park/Meridian exposure, legacy-record access, transfer, coordination or wrongdoing is established."}
+  ],
+  "people": [
+    {"caepr_id":"PD-SP-P-0090","name":"Miguel Vázquez","supported_role":"reported Meridian participant and 2017 Sun Park advisory meeting participant; Colliers Advisory Board after 2023","limit":"Exact workstreams, LPB material reviewed and current custody are open."},
+    {"caepr_id":"PD-SP-P-0091","name":"Fernando Banderas Monis","supported_role":"reported Meridian participant and 2017 Sun Park review participant","limit":"Distinct from Fernando Aguiar Acosta; exact scope and custody are open."},
+    {"caepr_id":"PD-SP-P-0089","name":"Laura Hernando","supported_role":"2017 Sun Park participant/coordinator; Colliers CEO Iberia and Managing Director Hotels in 2026","limit":"The reviewed correspondence does not expressly identify her as a Meridian participant."},
+    {"caepr_id":"PD-SP-P-0088","name":"Fernando Aguiar Acosta","supported_role":"reported RICPE 2024 role; Colliers Debt Advisory 2026; publicly corroborated unrelated hotel-finance team participation; proposed fact/custody witness","limit":"Not an adverse actor. Family relationship and relevant project knowledge are unverified."}
+  ],
+  "relationship_presentation": {
+    "subject_caepr_id": "PD-SP-P-0088",
+    "documented_professional_edge": {
+      "from_caepr_id": "PD-SP-O-0020",
+      "status": "DOCUMENTED_PROFESSIONAL_SEQUENCE",
+      "visual_code": "SOLID_BURGUNDY"
+    },
+    "provisional_family_edge": {
+      "to": "Acosta Matos family perimeter",
+      "status": "PROVISIONAL_UNVERIFIED_FAMILY_HYPOTHESIS",
+      "visual_code": "DASHED_AMBER",
+      "not_established": ["family relationship", "knowledge", "intent", "control", "wrongdoing", "liability"]
+    }
+  },
+  "finite_production": [
+    "2014 Meridian engagement, team and data-room indices",
+    "Project Meridian asset schedule and asset-level work product",
+    "conflict searches and information-barrier records",
+    "September 2017 Sun Park matter opening, engagement drafts, workpapers and lender log",
+    "invoice, fee, closure and destruction/retention records",
+    "2018 systems migration, legal-hold and current records-custody records"
+  ],
+  "web_routes": {
+    "canonical_en": "/en/irea-colliers-meridian-sun-park/",
+    "canonical_es": "/es/irea-colliers-meridian-sun-park/",
+    "required_backlinks": [
+      "/en/lender-of-record/",
+      "/es/acreedor-de-registro/",
+      "/en/ph122-cerberus-haya-bankia-external-perimeter/",
+      "/es/perimetro-ph122-cerberus-haya-bankia-externo/",
+      "/en/cuatrecasas-sun-park/",
+      "/es/cuatrecasas-sun-park/",
+      "/en/ricpe-documentary-accountability/",
+      "/es/ricpe-responsabilidad-documental/",
+      "/en/acosta-matos-perimeter/",
+      "/es/acosta-matos-perimetro/"
+    ]
+  },
+  "source_refs": [
+    "SRC-SAREB-MERIDIAN-2014",
+    "SRC-GMAIL-IREA-SUNPARK-2017",
+    "SRC-COLLIERS-IREA-ACQUISITION-2018",
+    "SRC-BORME-IREA-COLLIERS-MERGER-2018",
+    "SRC-COLLIERS-MIGUEL-SUCCESSION-2023",
+    "SRC-COLLIERS-LAURA-CEO-2026",
+    "SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026",
+    "SRC-FINANCECOMMUNITY-FERNANDO-HOTEL-FINANCE-2026"
+  ],
+  "identity_control": {
+    "control_id": "PD-IREA-RICPE-COLLIERS-CARET-20260828-01",
+    "result": "13/13 CARET_CONFIRMED",
+    "legend": "A caret resolves exact identity only; it does not prove relationship, knowledge, intent, control, wrongdoing or liability."
+  }
+}
