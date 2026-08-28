@@ -1,0 +1,98 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-AM357-PROJECT-SAFE-LINK-REMEDIATION-20260828-01",
+  "control_date": "2026-08-28",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "branch": "codex/post7june-continuity-remediation-20260828",
+  "base_sha": "95e1de83e29c0edfe2490c3395bfb5c25b3c8f2b",
+  "purpose": "Repair all 52 AM357 reciprocal endpoint links so GitHub Project Pages retains the /por-derecho prefix; preserve the final post-7-June/2022 publication closeout; remove two stale declaration-number validator assumptions.",
+  "authorization": {
+    "user_instruction": "Use best judgement. Take action. Update repository and website/pages, where needed. Confirm it is safe to delete this thread.",
+    "repository_and_website_publication": true,
+    "push_pull_request_merge_and_pages": true,
+    "email_filing_service_or_contact": false
+  },
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012-magistrado-juez/index.html",
+      "es/concurso-36-2012-masa-activa-2018-2021/index.html",
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/adjudicacion-2022-reconstruccion-documental/index.html",
+      "es/lava-verde-club-sei-meeting-point/index.html",
+      "es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/index.html",
+      "es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/expediente-unitario-abril-2018-octubre-2019/index.html",
+      "es/reconstruccion-unitaria-autoridades-publicas/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012-mercantile-court-1/index.html",
+      "en/insolvency-36-2012-active-estate-2018-2021/index.html",
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/2022-adjudication-documentary-reconstruction/index.html",
+      "en/lava-verde-club-sei-meeting-point/index.html",
+      "en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/index.html",
+      "en/legal-notebook/meeting-point-357-2024-judicial-traceability/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/unitary-record-april-2018-october-2019/index.html",
+      "en/public-authority-unitary-case-reconstruction/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json",
+    "scripts/build_alberto_meeting_point_project_links.py",
+    "scripts/validate_alberto_meeting_point_cross_proceeding.py",
+    "scripts/validate_caixabank_mortgage_360.py",
+    "scripts/validate_credit_multiple_lives_360.py",
+    ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
+    "archive/SUN_PARK_POST_7JUNE_2018_TO_4FEB2022_CONTINUING_HARM_CRIMINAL_FIRST_REVERSE_ENGINEERING_28AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md",
+    "docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md",
+    "publication-manifests/post7june-2022-reciprocal-route-interlink-20260828.json",
+    "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
+    "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json"
+  ],
+  "link_contract": {
+    "matrix_nodes": 9,
+    "matrix_edges": 13,
+    "languages": 2,
+    "endpoint_occurrences": 52,
+    "html_href_policy": "RELATIVE_PROJECT_SAFE_ONLY",
+    "conceptual_route_policy": "MATRIX_ROOT_ROUTES_RETAINED_FOR_RESOLUTION_COMPARISON"
+  },
+  "validation": {
+    "status": "LOCAL_PASS_PENDING_REMOTE_CI",
+    "evidence": [
+      "Deterministic builder rendered and then verified 52/52 project-safe reciprocal links across 18 endpoint pages.",
+      "AM357 specialist validation passed 9 nodes, 13 direct bridges, both endpoints and both languages with a 52-link relative-href census.",
+      "Credit multiple-lives and CaixaBank mortgage/swap validators passed with the next declaration number derived from the repository register.",
+      "No root-absolute /en or /es href remained in the bilingual public HTML corpus after the render.",
+      "No evidentiary proposition, actor assignment, identity, legal track or funding track changed."
+    ]
+  },
+  "historical_package_closeout": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1151",
+    "pull_request_head_sha": "57acefe8bb111cb08773a0588b5bb29bc8b0b1f1",
+    "pull_request_tree_sha": "912360b889860fc756adbdfc3a7688c57ff4b519",
+    "pull_request_checks": "PASS_17_OF_17",
+    "merge_sha": "79a0c0ed75e19e4f093cf47ba7d4ad6e72b9a693",
+    "pages_run_id": 33178497557,
+    "pages_run_number": 1222,
+    "pages_conclusion": "success",
+    "source_of_funds_run_id": 33178498441,
+    "source_of_funds_run_number": 160,
+    "acta_interlink_run_id": 33178498476,
+    "acta_interlink_run_number": 21,
+    "public_readback": "PASS_29_OF_29_HTTP_200_EXACT_REPOSITORY_BYTES"
+  },
+  "evidentiary_effect": "NONE_NAVIGATION_AND_VALIDATOR_CONTROL_PLANE_ONLY",
+  "open_evidence": [
+    "ME-099",
+    "ME-100"
+  ],
+  "external_actions": {
+    "repository_and_website_publication_authorized": true,
+    "email_or_filing_authorized": false,
+    "witness_or_third_party_contact_authorized": false
+  }
+}

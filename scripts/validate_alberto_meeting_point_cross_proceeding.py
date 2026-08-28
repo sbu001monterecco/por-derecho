@@ -864,6 +864,7 @@ edge_endpoint_occurrences: dict[str, dict[str, set[str]]] = {
     "es": defaultdict(set),
     "en": defaultdict(set),
 }
+project_safe_edge_href_count = 0
 for node_id in NODE_IDS:
     incident = {
         edge_id: (target if source == node_id else source)
@@ -888,10 +889,21 @@ for node_id in NODE_IDS:
             peer = incident.get(edge_id)
             check(anchor.attrs.get("data-am357-edge-peer") == peer, f"{node_id} {language} {edge_id} peer marker drift")
             if peer:
+                raw_href = anchor.attrs.get("href", "")
+                parsed_href = urlsplit(raw_href)
+                check(
+                    bool(raw_href)
+                    and not raw_href.startswith(("/", "//"))
+                    and not parsed_href.scheme
+                    and not parsed_href.netloc,
+                    f"{node_id} {language} {edge_id} href is not project-safe relative navigation: {raw_href!r}",
+                )
+                project_safe_edge_href_count += 1
                 expected_peer_route = node_map[peer]["primary_routes"][language]
-                resolved, _, _ = check_local_target(anchor.attrs.get("href", ""), f"{node_id} {language} {edge_id} reciprocal target", source_route)
+                resolved, _, _ = check_local_target(raw_href, f"{node_id} {language} {edge_id} reciprocal target", source_route)
                 check(resolved == expected_peer_route, f"{node_id} {language} {edge_id} does not link directly to {peer}: {resolved}")
                 edge_endpoint_occurrences[language][edge_id].add(node_id)
+check(project_safe_edge_href_count == 52, f"project-safe reciprocal href census is {project_safe_edge_href_count}, expected 52")
 for language in ("es", "en"):
     check(set(edge_endpoint_occurrences[language]) == set(EXPECTED_EDGE_ENDPOINTS), f"{language} reciprocal edge census is not all 13 edges")
     for edge_id, endpoints in EXPECTED_EDGE_ENDPOINTS.items():

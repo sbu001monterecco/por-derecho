@@ -110,12 +110,15 @@
     "ops/CURRENT_REVERSE_ENGINEERED_DIGEST.json",
     "ops/ALBERTO_MEETING_POINT_357_AUTHORITY_SUBMISSION_PLAN_26AUG2026.md",
     "archive/prompts/ALBERTO_MEETING_POINT_MULTIDIRECTIONAL_CRIMINAL_FIRST_UPDATE_PROMPT_27AUG2026.md",
+    "scripts/build_alberto_meeting_point_project_links.py",
     "scripts/validate_alberto_meeting_point_cross_proceeding.py",
     "scripts/validate_alberto_meeting_point_first_hop_caret.py",
     "scripts/validate_current_reverse_engineered_digest.py",
     "scripts/verify_current_reverse_engineered_digest_live.py",
     ".github/workflows/alberto-meeting-point-cross-proceeding.yml",
-    ".github/workflows/validate-current-reverse-engineered-digest.yml"
+    ".github/workflows/validate-current-reverse-engineered-digest.yml",
+    "docs/deletion-audits/2026-08-28-post7june-link-and-closeout-remediation.md",
+    "publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json"
   ],
   "validation": {
     "evidence": [

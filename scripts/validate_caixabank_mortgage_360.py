@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -61,7 +62,6 @@ REQUIRED = {
     ],
     "index": [
         "| 014 | 2026-08-26 |",
-        "siguiente declaración disponible es **017**",
     ],
     "gaps": ["| ME-092 |", "€60k", "€59k", "119.000 € brutos"],
     "closeout": ["THREAD_REASONING_CONTINUITY", "PRIMARY_EVIDENCE_COMPLETENESS"],
@@ -83,6 +83,24 @@ def main() -> None:
         for marker in REQUIRED[key]:
             if marker not in text:
                 failures.append(f"{path.relative_to(ROOT)} missing marker: {marker}")
+
+    declaration_numbers = sorted(
+        int(path.name[:3])
+        for path in (ROOT / "archive/declarations").glob("[0-9][0-9][0-9]_*.md")
+    )
+    if not declaration_numbers:
+        failures.append("declaration register contains no numbered declarations")
+    elif FILES["index"].is_file():
+        expected_next = max(declaration_numbers) + 1
+        next_markers = re.findall(
+            r"siguiente declaración disponible es \*\*(\d{3})\*\*",
+            FILES["index"].read_text(encoding="utf-8"),
+        )
+        if next_markers != [f"{expected_next:03d}"]:
+            failures.append(
+                "declaration index next-number marker is not dynamically current: "
+                f"actual={next_markers}, expected={[f'{expected_next:03d}']}"
+            )
 
     es = FILES["es"].read_text(encoding="utf-8") if FILES["es"].is_file() else ""
     en = FILES["en"].read_text(encoding="utf-8") if FILES["en"].is_file() else ""
