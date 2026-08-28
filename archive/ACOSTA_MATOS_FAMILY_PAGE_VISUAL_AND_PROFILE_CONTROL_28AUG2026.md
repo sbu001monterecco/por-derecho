@@ -4,6 +4,7 @@
 **Scope:** Gerardo Nicanor Acosta Armas; Javier, Laura Patricia, José Daniel and Gerardo Zacarías Acosta Matos; separate provisional Fernando and Laura Aguiar Acosta proposed-witness lane; bilingual family pages
 **Public pages:** `es/acosta-matos-familia/index.html` and `en/acosta-matos-family/index.html`
 **Status:** `SOURCE-ATTRIBUTED VISUAL REGISTER / NO FACIAL-RECOGNITION DETERMINATION / ACTOR-SPECIFIC CONDUCT OPEN`
+**Publication:** `LIVE VERIFIED / PR #1170 / MERGE 8593181d / PAGES #1248 / 16-OF-16 EXACT READ-BACK`
 
 ## 1. Controlled identities
 
