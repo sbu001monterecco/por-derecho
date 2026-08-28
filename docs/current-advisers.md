@@ -30,6 +30,15 @@ Specific Fieldfisher lawyers are not listed publicly unless the Group later expr
 
 \* **Important qualification:** inclusion as a pre-approved legal adviser does **not** mean that Fieldfisher has a live current mandate, is presently instructed on any particular matter, or is carrying out an active legal workstream for the Group. It also does not waive or prejudge any fresh conflict check, client/matter acceptance, KYC refresh, engagement-letter process or other internal clearance that may be required before a new instruction is accepted.
 
+### Professional onboarding / conflicts reader
+
+For a law-firm compliance, conflicts or client-acceptance team, use the bounded reader before opening the wider evidentiary site:
+
+- English: `https://sbu001monterecco.github.io/por-derecho/en/advisers/conflicts/`
+- Spanish: `https://sbu001monterecco.github.io/por-derecho/es/asesores/conflictos/`
+
+The reader identifies the legal-capacity boundaries, links the principal public conflict-relevant proceedings and makes explicit that the current confidential new-matter counterparty/affiliate list and regulated KYC/AML materials must be supplied through the firm's private matter-opening channel. It is not itself a conflicts report, KYC certificate or client-acceptance decision.
+
 ## Financial advisers
 
 To be added as current or pre-approved appointments are confirmed.
