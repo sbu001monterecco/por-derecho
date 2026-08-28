@@ -1,0 +1,60 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "PD-CHATBOT-MEDIA-DESK-20260828-01",
+  "control_date": "2026-08-28",
+  "current_state": "REMOTE_SOURCE",
+  "owner": "Por Derecho / Project Sun Rock",
+  "base_sha": "e6e4d94bfc504b0e79d73d054ff754e6d4f9275c",
+  "publication_authorized": true,
+  "reader_facing_product_release": false,
+  "external_communications_authorized": false,
+  "api_credential_or_billing_change_authorized": false,
+  "expected_routes": {
+    "es": [],
+    "en": []
+  },
+  "expected_source_files": [
+    "CHATGPT_START_HERE.md",
+    "CHATBOT_MEDIA_INQUIRY_DESK_CONTROL_28AUG2026.md",
+    "docs/deletion-audits/2026-08-28-chatbot-media-inquiry-desk-thread-closeout.md",
+    "publication-manifests/chatbot-media-inquiry-desk-continuity-20260828.json",
+    "scripts/validate_chatbot_media_inquiry_desk_continuity.py"
+  ],
+  "control_scope": [
+    "controlled journalist-first media inquiry desk",
+    "owner-only typed and voice Stage-0 reconstruction",
+    "repository-compiled approved public corpus",
+    "fixed evidence-status and contrary-record answer contract",
+    "recovery objective without litigation prediction",
+    "human editorial approval and three separate release permissions",
+    "privacy, credential and external-action boundaries"
+  ],
+  "implementation_state": {
+    "exact_prior_prototype": "NOT_RECOVERED",
+    "requirements": "PRESERVED_FOR_RECONSTRUCTION",
+    "application_deployed": false,
+    "phone_accessible_link": false,
+    "current_api_access_and_quota": "MUST_BE_RETESTED",
+    "credential_in_repository": false
+  },
+  "validation": {
+    "commands": [
+      "python3 scripts/validate_chatbot_media_inquiry_desk_continuity.py",
+      "python3 scripts/validate_repository_preservation.py",
+      "python3 scripts/validate_publication_integrity.py",
+      "python3 scripts/validate_audience_experience.py",
+      "git diff --check"
+    ],
+    "evidence": []
+  },
+  "boundaries": [
+    "Recovery is an objective, not a forecast.",
+    "Present hotel operation is not a final determination of every title, asset, income, authority, accounting or damages issue.",
+    "Judicial-independence concerns are attributed concerns, not established findings of bias.",
+    "No single proceeding determines every claimant, asset, loss or remedy.",
+    "No email, publication, filing, authority contact, product deployment, credential creation or billing change is authorised by this record.",
+    "The prior executable source was not recovered; this package preserves a reconstructible specification, not a working application."
+  ],
+  "deletion_record": "docs/deletion-audits/2026-08-28-chatbot-media-inquiry-desk-thread-closeout.md",
+  "target_deletion_status": "DELETION_SAFE_WITH_OPEN_IMPLEMENTATION"
+}
