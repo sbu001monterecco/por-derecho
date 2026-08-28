@@ -3,9 +3,10 @@
 
 This script deliberately contains no native-source or private filesystem paths.
 The versioned, public-redacted ``transcript-es.md`` files are the build inputs for
-the public text-edition PDFs and WEBP previews.  An optional private source map may
-be supplied at validation time to verify source hashes and page counts without
-copying or persisting those paths.
+the public text-edition PDFs and current JPEG previews.  Legacy WEBP previews may
+remain in their existing directories as separate derivatives.  An optional
+private source map may be supplied at validation time to verify source hashes and
+page counts without copying or persisting those paths.
 
 Examples::
 
@@ -19,22 +20,45 @@ Examples::
 ``build`` rewrites public PDFs/previews and synchronises their hashes/counts in
 the package manifests and public index.  ``validate`` is read-only with respect to
 the repository and renders PDFs only inside a temporary directory.
+
+The private source map remains a JSON object keyed by package slug.  A PDF may
+retain the legacy string value.  A typed PDF or DOCX control uses this shape::
+
+    {
+      "2012-08-10": {
+        "path": "/private/native-control.docx",
+        "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "page_count_method": "recorded-deterministic-docx-to-pdf",
+        "page_count": 4
+      }
+    }
+
+For DOCX, ``temporary-libreoffice-docx-to-pdf`` privately converts into an
+isolated temporary directory and counts the resulting PDF.  ``page_count`` is
+optional for that method and, when supplied, is independently checked.  Neither
+the native source nor the temporary PDF is written into the repository.
+The source-map file and every mapped native source must resolve outside the
+repository; private absolute paths are never included in validation errors.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
+import os
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import zipfile
 from pathlib import Path
 from typing import Any, Iterable
 
-from PIL import Image, ImageChops
+import fitz
+from PIL import Image, ImageChops, ImageStat
 from pypdf import PdfReader
 from reportlab import rl_config
 from reportlab.lib import colors
@@ -68,6 +92,53 @@ EXPECTED_ARTIFACT_KINDS = {
 EXPECTED_STATUSES = {
     "located-package-partial",
     "located-package-digitised-public",
+}
+
+PDF_MEDIA_TYPE = "application/pdf"
+DOCX_MEDIA_TYPE = (
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+)
+PDF_PAGE_COUNT_METHOD = "pdf-page-tree"
+DOCX_RECORDED_PAGE_COUNT_METHOD = "recorded-deterministic-docx-to-pdf"
+DOCX_TEMPORARY_PAGE_COUNT_METHOD = "temporary-libreoffice-docx-to-pdf"
+PRIVATE_SOURCE_MAP_FIELDS = {
+    "path",
+    "media_type",
+    "page_count_method",
+    "page_count",
+}
+PYMUPDF_VERSION = "1.26.6"
+PUBLIC_TEXT_MODE_REDACTED_OCR = "redacted-ocr-text"
+PUBLIC_TEXT_MODE_MARKERS = "full-page-redaction-markers"
+PUBLIC_TEXT_MODES = {
+    PUBLIC_TEXT_MODE_REDACTED_OCR,
+    PUBLIC_TEXT_MODE_MARKERS,
+}
+PDF_PUBLIC_TEXT_COPY = {
+    PUBLIC_TEXT_MODE_REDACTED_OCR: {
+        "subtitle": "Edición pública redactada · texto asistido por OCR no certificado",
+        "subject": "ACTA public redacted OCR-assisted text edition; not certified",
+        "boundary": (
+            "No es el original, el libro diligenciado, una copia certificada ni una "
+            "transcripción pericial. El texto público está asistido por OCR y no ha "
+            "sido certificado ni cotejado línea por línea. Todas las páginas de la "
+            "copia usada están secuenciadas; los datos privados y reservados se "
+            "sustituyen por marcadores expresos."
+        ),
+    },
+    PUBLIC_TEXT_MODE_MARKERS: {
+        "subtitle": (
+            "Edición pública secuenciada por páginas con marcadores de expurgación · "
+            "sin OCR público"
+        ),
+        "subject": "ACTA public page-sequenced redaction-marker edition; no public OCR",
+        "boundary": (
+            "No es el original, el libro diligenciado, una copia certificada ni una "
+            "transcripción pericial. Esta edición conserva la secuencia de páginas "
+            "mediante marcadores expresos de expurgación. No contiene OCR público ni "
+            "una transcripción pública del texto fuente."
+        ),
+    },
 }
 
 PRIVATE_PATH_PATTERN = re.compile(
@@ -206,13 +277,157 @@ def privacy_failures(text: str) -> list[str]:
     return [label for label, pattern in tests.items() if pattern.search(text)]
 
 
-def webp_has_content(path: Path) -> bool:
+def validate_public_image(path: Path, *, require_current_jpeg: bool = True) -> str:
+    """Reject blank/corrupt images and private metadata; return SHA-256."""
+
+    if require_current_jpeg and path.suffix.lower() not in {".jpg", ".jpeg"}:
+        raise ValidationError(
+            f"Current declared preview must be JPEG (legacy WEBP stays separate): {path}"
+        )
     with Image.open(path) as image:
+        if require_current_jpeg and image.format != "JPEG":
+            raise ValidationError(f"JPEG suffix/format mismatch: {path}")
         image.verify()
     with Image.open(path) as image:
-        gray = image.convert("L")
-        inverted = ImageChops.invert(gray)
-        return inverted.getbbox() is not None
+        if image.getexif():
+            raise ValidationError(f"Public image contains EXIF metadata: {path}")
+        sensitive_metadata = {
+            key
+            for key in image.info
+            if key.lower() in {
+                "exif", "xmp", "xml", "photoshop", "iptc", "comment",
+                "description", "author", "copyright", "icc_profile",
+            }
+        }
+        if sensitive_metadata:
+            raise ValidationError(
+                f"Public image contains disallowed metadata {sorted(sensitive_metadata)}: {path}"
+            )
+        if ImageChops.invert(image.convert("L")).getbbox() is None:
+            raise ValidationError(f"Blank public image: {path}")
+    return sha256(path)
+
+
+def normalise_hash_records(
+    value: Any,
+    *,
+    label: str,
+) -> list[dict[str, str]] | None:
+    if value is None:
+        return None
+    if not isinstance(value, list):
+        raise ValidationError(f"{label}: image hash records must be a list")
+    records: list[dict[str, str]] = []
+    for row in value:
+        if (
+            not isinstance(row, dict)
+            or not isinstance(row.get("path"), str)
+            or not re.fullmatch(r"[0-9a-f]{64}", str(row.get("sha256", "")))
+        ):
+            raise ValidationError(f"{label}: invalid image hash record {row!r}")
+        records.append({"path": row["path"], "sha256": row["sha256"]})
+    return records
+
+
+def verify_image_hash_records(
+    slug: str,
+    label: str,
+    actual: list[dict[str, str]],
+    event_value: Any,
+    manifest_value: Any,
+) -> str:
+    event_records = normalise_hash_records(event_value, label=f"{slug}/{label}/index")
+    manifest_records = normalise_hash_records(
+        manifest_value,
+        label=f"{slug}/{label}/manifest",
+    )
+    if event_records is None and manifest_records is None:
+        # Backward-compatible validation for packages created before per-image
+        # hash records were introduced: every current JPEG is still hashed and
+        # reported deterministically during this read-only validation.
+        return "computed-current-jpegs-legacy-unpinned"
+    if event_records is None or manifest_records is None:
+        raise ValidationError(f"{slug}: {label} hash records must agree in index and manifest")
+    if event_records != manifest_records:
+        raise ValidationError(f"{slug}: {label} index/manifest hash records differ")
+    if event_records != actual:
+        raise ValidationError(f"{slug}: {label} JPEG hash mismatch")
+    return "declared-hashes-match"
+
+
+def validate_pdf_metadata(path: Path, reader: PdfReader) -> None:
+    metadata = reader.metadata or {}
+    public_metadata = "\n".join(
+        f"{key}: {value}"
+        for key, value in metadata.items()
+        if value is not None
+    )
+    failures = privacy_failures(public_metadata)
+    if failures:
+        raise ValidationError(f"{path}: PDF metadata privacy scan failed: {failures}")
+
+
+def validate_facsimile_source_equivalence(
+    slug: str,
+    facsimile: Path,
+    source_images: list[Path],
+) -> int:
+    """Verify each raster facsimile page embeds and renders its declared JPEG.
+
+    The embedded raster is compared page-for-page with the source-page JPEG.
+    Poppler then renders every facsimile page in a temporary directory, proving
+    that the PDF page sequence is renderable and non-empty.  No generated file
+    is written back to the repository.
+    """
+
+    reader = PdfReader(str(facsimile))
+    if len(reader.pages) != len(source_images):
+        raise ValidationError(f"{slug}: facsimile/source-image count mismatch")
+    for number, (page, source_path) in enumerate(
+        zip(reader.pages, source_images, strict=True),
+        start=1,
+    ):
+        embedded = list(page.images)
+        if len(embedded) != 1:
+            raise ValidationError(
+                f"{slug}: facsimile page {number} must contain exactly one raster image"
+            )
+        with Image.open(io.BytesIO(embedded[0].data)) as facsimile_image:
+            embedded_rgb = facsimile_image.convert("RGB")
+        with Image.open(source_path) as source_image:
+            source_rgb = source_image.convert("RGB")
+        if embedded_rgb.size != source_rgb.size:
+            raise ValidationError(
+                f"{slug}: facsimile page {number} raster dimensions differ from source JPEG"
+            )
+        difference = ImageChops.difference(embedded_rgb, source_rgb)
+        rms = max(ImageStat.Stat(difference).rms)
+        if rms > 2.0:
+            raise ValidationError(
+                f"{slug}: facsimile page {number} raster differs from source JPEG "
+                f"(RMS {rms:.3f})"
+            )
+
+    with tempfile.TemporaryDirectory(prefix=f"acta-facsimile-validate-{slug}-") as tmp:
+        prefix = Path(tmp) / "page"
+        subprocess.run(
+            ["pdftoppm", "-png", "-r", "72", str(facsimile), str(prefix)],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+        )
+        rendered = sorted(Path(tmp).glob("page-*.png"))
+        if len(rendered) != len(source_images):
+            raise ValidationError(f"{slug}: facsimile render page count mismatch")
+        for number, page in enumerate(rendered, start=1):
+            with Image.open(page) as image:
+                image.verify()
+            with Image.open(page) as image:
+                if ImageChops.invert(image.convert("L")).getbbox() is None:
+                    raise ValidationError(
+                        f"{slug}: blank rendered facsimile page {number}"
+                    )
+    return len(source_images)
 
 
 def pdf_text(path: Path) -> str:
@@ -225,13 +440,265 @@ def pdf_text(path: Path) -> str:
     return result.stdout
 
 
+def resolve_private_path_outside_repository(
+    path: Path,
+    *,
+    label: str,
+    slug: str | None = None,
+) -> Path:
+    """Resolve a private control path and enforce the public Git boundary."""
+
+    diagnostic = f"{slug}: {label}" if slug else label
+    try:
+        resolved = path.resolve()
+    except OSError as exc:
+        raise ValidationError(f"{diagnostic} cannot be resolved") from exc
+    try:
+        resolved.relative_to(REPO.resolve())
+    except ValueError:
+        return resolved
+    raise ValidationError(f"{diagnostic} must remain outside the repository")
+
+
+def derive_source_media_type(source_path: Path) -> str:
+    """Return the controlled media type for a supported private source."""
+
+    suffix = source_path.suffix.lower()
+    if suffix == ".pdf":
+        return PDF_MEDIA_TYPE
+    if suffix == ".docx":
+        return DOCX_MEDIA_TYPE
+    raise ValidationError(
+        f"Unsupported private source extension: {suffix or '(none)'}"
+    )
+
+
+def normalise_private_source_entry(slug: str, value: Any) -> dict[str, Any]:
+    """Validate and normalise one private source-map entry.
+
+    A legacy string remains valid and is interpreted from its extension.  The
+    structured form makes the native media type and page-count evidence
+    explicit.  DOCX page counts either come from a recorded deterministic
+    conversion control or from a private, temporary LibreOffice conversion.
+    """
+
+    if isinstance(value, str):
+        row: dict[str, Any] = {"path": value}
+    elif isinstance(value, dict):
+        row = dict(value)
+        unknown = sorted(set(row) - PRIVATE_SOURCE_MAP_FIELDS)
+        if unknown:
+            raise ValidationError(
+                f"{slug}: unsupported private source-map field(s): {unknown}"
+            )
+    else:
+        raise ValidationError(
+            f"{slug}: private source-map entry must be a path string or object"
+        )
+
+    raw_path = row.get("path")
+    if not isinstance(raw_path, str) or not raw_path.strip() or "\x00" in raw_path:
+        raise ValidationError(f"{slug}: private source-map path must be a non-empty string")
+    source_path = resolve_private_path_outside_repository(
+        Path(raw_path).expanduser(),
+        label="private native source",
+        slug=slug,
+    )
+    derived_media_type = derive_source_media_type(source_path)
+
+    supplied_media_type = row.get("media_type")
+    if supplied_media_type is None:
+        media_type = derived_media_type
+    elif not isinstance(supplied_media_type, str):
+        raise ValidationError(f"{slug}: media_type must be a string")
+    elif supplied_media_type != derived_media_type:
+        raise ValidationError(
+            f"{slug}: media_type {supplied_media_type!r} does not match "
+            f"{source_path.suffix.lower()!r} source"
+        )
+    else:
+        media_type = supplied_media_type
+
+    supplied_method = row.get("page_count_method")
+    if supplied_method is not None and not isinstance(supplied_method, str):
+        raise ValidationError(f"{slug}: page_count_method must be a string")
+    if media_type == PDF_MEDIA_TYPE:
+        page_count_method = supplied_method or PDF_PAGE_COUNT_METHOD
+        allowed_methods = {PDF_PAGE_COUNT_METHOD}
+    else:
+        page_count_method = supplied_method or DOCX_TEMPORARY_PAGE_COUNT_METHOD
+        allowed_methods = {
+            DOCX_RECORDED_PAGE_COUNT_METHOD,
+            DOCX_TEMPORARY_PAGE_COUNT_METHOD,
+        }
+    if page_count_method not in allowed_methods:
+        raise ValidationError(
+            f"{slug}: page_count_method {page_count_method!r} is invalid for "
+            f"{media_type}"
+        )
+
+    page_count = row.get("page_count")
+    if page_count is not None and (
+        isinstance(page_count, bool) or not isinstance(page_count, int) or page_count < 1
+    ):
+        raise ValidationError(f"{slug}: page_count must be a positive integer")
+    if (
+        page_count_method == DOCX_RECORDED_PAGE_COUNT_METHOD
+        and page_count is None
+    ):
+        raise ValidationError(
+            f"{slug}: {DOCX_RECORDED_PAGE_COUNT_METHOD!r} requires page_count"
+        )
+
+    return {
+        "path": source_path,
+        "media_type": media_type,
+        "page_count_method": page_count_method,
+        "page_count": page_count,
+    }
+
+
+def count_pdf_pages(path: Path, *, slug: str) -> int:
+    try:
+        page_count = len(PdfReader(str(path)).pages)
+    except Exception as exc:
+        raise ValidationError(f"{slug}: private PDF cannot be parsed") from exc
+    if page_count < 1:
+        raise ValidationError(f"{slug}: private PDF contains no pages")
+    return page_count
+
+
+def validate_docx_container(path: Path, *, slug: str) -> None:
+    """Reject a corrupt/non-DOCX ZIP before invoking the private converter."""
+
+    try:
+        with zipfile.ZipFile(path) as archive:
+            names = set(archive.namelist())
+            if not {"[Content_Types].xml", "word/document.xml"}.issubset(names):
+                raise ValidationError(
+                    f"{slug}: private DOCX lacks required Open XML members"
+                )
+            if len(names) > 10_000:
+                raise ValidationError(f"{slug}: private DOCX has too many ZIP members")
+            expanded_bytes = sum(info.file_size for info in archive.infolist())
+            if expanded_bytes > 512 * 1024 * 1024:
+                raise ValidationError(
+                    f"{slug}: private DOCX expanded size exceeds the safety limit"
+                )
+            corrupt_member = archive.testzip()
+            if corrupt_member is not None:
+                raise ValidationError(f"{slug}: private DOCX contains a corrupt ZIP member")
+    except (OSError, zipfile.BadZipFile, zipfile.LargeZipFile) as exc:
+        raise ValidationError(f"{slug}: private DOCX container is invalid") from exc
+
+
+def count_docx_pages_with_libreoffice(path: Path, *, slug: str) -> int:
+    """Convert a private DOCX only in an isolated temporary directory."""
+
+    validate_docx_container(path, slug=slug)
+    converter = shutil.which("soffice") or shutil.which("libreoffice")
+    if converter is None:
+        raise ValidationError(
+            f"{slug}: LibreOffice is required for temporary DOCX page counting; "
+            f"use {DOCX_RECORDED_PAGE_COUNT_METHOD!r} with a controlled page_count "
+            "when conversion has already been recorded"
+        )
+
+    with tempfile.TemporaryDirectory(prefix=f"acta-private-docx-{slug}-") as tmp:
+        temporary_root = Path(tmp).resolve()
+        try:
+            temporary_root.relative_to(REPO.resolve())
+        except ValueError:
+            pass
+        else:
+            raise ValidationError(
+                f"{slug}: refusing private DOCX conversion inside the repository"
+            )
+        output_dir = temporary_root / "output"
+        profile_dir = temporary_root / "profile"
+        output_dir.mkdir(mode=0o700)
+        profile_dir.mkdir(mode=0o700)
+        environment = os.environ.copy()
+        environment.update(
+            {
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "SAL_USE_VCLPLUGIN": "svp",
+            }
+        )
+        command = [
+            converter,
+            "--headless",
+            "--nologo",
+            "--nodefault",
+            "--nolockcheck",
+            "--nofirststartwizard",
+            f"-env:UserInstallation={profile_dir.as_uri()}",
+            "--convert-to",
+            "pdf:writer_pdf_Export",
+            "--outdir",
+            str(output_dir),
+            str(path),
+        ]
+        try:
+            result = subprocess.run(
+                command,
+                check=False,
+                capture_output=True,
+                text=True,
+                timeout=180,
+                env=environment,
+            )
+        except subprocess.TimeoutExpired as exc:
+            raise ValidationError(f"{slug}: private DOCX conversion timed out") from exc
+        except OSError as exc:
+            raise ValidationError(
+                f"{slug}: private DOCX converter could not be started"
+            ) from exc
+        converted = sorted(output_dir.glob("*.pdf"))
+        if result.returncode != 0 or len(converted) != 1:
+            raise ValidationError(
+                f"{slug}: private DOCX conversion did not produce exactly one PDF"
+            )
+        return count_pdf_pages(converted[0], slug=slug)
+
+
+def private_source_page_count(entry: dict[str, Any], *, slug: str) -> int:
+    media_type = entry["media_type"]
+    method = entry["page_count_method"]
+    source_path = entry["path"]
+    recorded_count = entry["page_count"]
+
+    if media_type == PDF_MEDIA_TYPE:
+        actual_pages = count_pdf_pages(source_path, slug=slug)
+    elif method == DOCX_RECORDED_PAGE_COUNT_METHOD:
+        validate_docx_container(source_path, slug=slug)
+        actual_pages = recorded_count
+    else:
+        actual_pages = count_docx_pages_with_libreoffice(source_path, slug=slug)
+
+    if recorded_count is not None and recorded_count != actual_pages:
+        raise ValidationError(
+            f"{slug}: private source counted pages {actual_pages} != "
+            f"source-map page_count {recorded_count}"
+        )
+    return actual_pages
+
+
 def validate_private_source_map(
     source_map_path: Path | None,
     events: list[dict[str, Any]],
 ) -> list[str]:
     if source_map_path is None:
         return []
-    source_map = load_json(source_map_path)
+    source_map_path = resolve_private_path_outside_repository(
+        source_map_path,
+        label="private source map",
+    )
+    try:
+        source_map = load_json(source_map_path)
+    except ValidationError as exc:
+        raise ValidationError("private source map cannot be read or parsed") from exc
     messages: list[str] = []
     for event in events:
         slug = event["slug"]
@@ -239,24 +706,101 @@ def validate_private_source_map(
         if value is None:
             messages.append(f"{slug}: private source not supplied; skipped")
             continue
-        source_path = Path(value).expanduser()
+        entry = normalise_private_source_entry(slug, value)
+        source_path = entry["path"]
         if not source_path.is_file():
-            raise ValidationError(f"{slug}: private source does not exist: {source_path}")
+            raise ValidationError(f"{slug}: private native source does not exist")
         manifest = load_json(repo_path(event["manifest"]))
         expected_hash = manifest["source"]["sha256"]
         expected_pages = manifest["source_variant_page_count"]
-        actual_hash = sha256(source_path)
-        actual_pages = len(PdfReader(str(source_path)).pages)
+        try:
+            actual_hash = sha256(source_path)
+        except OSError as exc:
+            raise ValidationError(f"{slug}: private native source cannot be read") from exc
         if actual_hash != expected_hash:
             raise ValidationError(
                 f"{slug}: private source hash mismatch: {actual_hash} != {expected_hash}"
             )
+        actual_pages = private_source_page_count(entry, slug=slug)
         if actual_pages != expected_pages:
             raise ValidationError(
                 f"{slug}: private source page mismatch: {actual_pages} != {expected_pages}"
             )
-        messages.append(f"{slug}: private source hash/pages verified")
+        messages.append(
+            f"{slug}: private source hash/pages verified "
+            f"({entry['media_type']}; {entry['page_count_method']})"
+        )
     return messages
+
+
+def controlled_public_text_mode(
+    event: dict[str, Any],
+    manifest: dict[str, Any],
+) -> str:
+    """Resolve and cross-check the public text mode for PDF labelling."""
+
+    slug = str(event.get("slug") or manifest.get("slug") or "unknown-package")
+    declared_modes = [
+        value
+        for value in (
+            event.get("public_text_mode"),
+            manifest.get("public_text_mode"),
+        )
+        if value is not None
+    ]
+    for mode in declared_modes:
+        if mode not in PUBLIC_TEXT_MODES:
+            raise ValidationError(f"{slug}: unsupported public_text_mode {mode!r}")
+    if len(set(declared_modes)) > 1:
+        raise ValidationError(f"{slug}: manifest/index public_text_mode mismatch")
+
+    if declared_modes:
+        mode = declared_modes[0]
+    elif manifest.get("quality_control", {}).get("ocr_not_certified") is True:
+        # Historical redacted-OCR packages predate the explicit mode field.
+        # Marker-only mode is never inferred from this legacy control.
+        mode = PUBLIC_TEXT_MODE_REDACTED_OCR
+    else:
+        raise ValidationError(f"{slug}: controlled public_text_mode is missing")
+
+    expected_public_ocr = mode == PUBLIC_TEXT_MODE_REDACTED_OCR
+    for label, container in (("index", event), ("manifest", manifest)):
+        if "public_ocr_available" in container and (
+            container["public_ocr_available"] is not expected_public_ocr
+        ):
+            raise ValidationError(
+                f"{slug}: {label} public_ocr_available conflicts with public_text_mode"
+            )
+    return mode
+
+
+def public_text_pdf_copy(
+    event: dict[str, Any],
+    manifest: dict[str, Any],
+) -> tuple[str, dict[str, str]]:
+    mode = controlled_public_text_mode(event, manifest)
+    return mode, PDF_PUBLIC_TEXT_COPY[mode]
+
+
+def validate_pdf_public_text_boundary(
+    slug: str,
+    extracted_text: str,
+    mode: str,
+) -> None:
+    compact = re.sub(r"\s+", " ", extracted_text).strip()
+    expected = PDF_PUBLIC_TEXT_COPY[mode]
+    for field in ("subtitle", "boundary"):
+        if expected[field] not in compact:
+            raise ValidationError(
+                f"{slug}: public PDF lacks the controlled {mode} {field}"
+            )
+    other_mode = (
+        PUBLIC_TEXT_MODE_MARKERS
+        if mode == PUBLIC_TEXT_MODE_REDACTED_OCR
+        else PUBLIC_TEXT_MODE_REDACTED_OCR
+    )
+    if PDF_PUBLIC_TEXT_COPY[other_mode]["subtitle"] in compact:
+        raise ValidationError(f"{slug}: public PDF contains a conflicting text-mode label")
 
 
 def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]:
@@ -298,6 +842,7 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         raise ValidationError(
             f"{slug}: manifest complete_public_text must remain false until manual verification"
         )
+    public_text_mode, public_text_copy = public_text_pdf_copy(event, manifest)
 
     _, transcript_pages, transcript_total = parse_transcript(transcript_path)
     source_variant_pages = event.get("source_variant_page_count")
@@ -320,6 +865,9 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         raise ValidationError(f"{slug}: public Markdown privacy scan failed: {privacy}")
 
     reader = PdfReader(str(public_pdf))
+    validate_pdf_metadata(public_pdf, reader)
+    if str((reader.metadata or {}).get("/Subject", "")) != public_text_copy["subject"]:
+        raise ValidationError(f"{slug}: public PDF subject conflicts with public_text_mode")
     pdf_pages = len(reader.pages)
     expected_pdf_pages = event.get("public_pdf_page_count")
     expected_previews = event.get("preview_count")
@@ -346,12 +894,32 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         raise ValidationError(
             f"{slug}: declared preview image(s) missing: {missing}"
         )
+    current_jpegs = {
+        path.resolve()
+        for path in preview_dir.iterdir()
+        if path.is_file() and path.suffix.lower() in {".jpg", ".jpeg"}
+    }
+    if current_jpegs != declared_previews:
+        unexpected = sorted(path.name for path in current_jpegs - declared_previews)
+        raise ValidationError(
+            f"{slug}: unlisted current JPEG preview(s): {unexpected}"
+        )
+    preview_hashes: list[dict[str, str]] = []
     for preview_value in previews:
         preview = repo_path(preview_value)
-        if preview.suffix.lower() not in {".webp", ".jpg", ".jpeg"} or not preview.is_file():
+        if not preview.is_file():
             raise ValidationError(f"{slug}: missing/invalid preview image: {preview}")
-        if not webp_has_content(preview):
-            raise ValidationError(f"{slug}: blank WEBP preview: {preview}")
+        preview_hashes.append({
+            "path": preview_value,
+            "sha256": validate_public_image(preview, require_current_jpeg=True),
+        })
+    preview_hash_status = verify_image_hash_records(
+        slug,
+        "preview",
+        preview_hashes,
+        event.get("preview_sha256"),
+        manifest["public_artifacts"].get("preview_sha256"),
+    )
 
     actual_pdf_hash = sha256(public_pdf)
     if event.get("public_pdf_sha256") != actual_pdf_hash:
@@ -367,6 +935,7 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
     privacy = privacy_failures(extracted)
     if privacy:
         raise ValidationError(f"{slug}: public PDF privacy scan failed: {privacy}")
+    validate_pdf_public_text_boundary(slug, extracted, public_text_mode)
 
     rendered_pages = 0
     if render:
@@ -397,6 +966,7 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         )
 
     source_facsimile_pages = 0
+    facsimile: Path | None = None
     if event.get("redacted_facsimile_available") is True:
         facsimile_value = event.get("redacted_source_facsimile")
         if not isinstance(facsimile_value, str):
@@ -405,6 +975,7 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         if not facsimile.is_file():
             raise ValidationError(f"{slug}: redacted source facsimile missing")
         source_reader = PdfReader(str(facsimile))
+        validate_pdf_metadata(facsimile, source_reader)
         source_facsimile_pages = len(source_reader.pages)
         if source_facsimile_pages != event.get("source_variant_page_count"):
             raise ValidationError(f"{slug}: facsimile/source page mismatch")
@@ -413,19 +984,66 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         expected_hash = event.get("redacted_source_facsimile_sha256")
         if expected_hash != sha256(facsimile):
             raise ValidationError(f"{slug}: facsimile hash mismatch")
+        manifest_facsimile_hash = manifest["public_artifacts"].get(
+            "redacted_source_facsimile_sha256"
+        )
+        if manifest_facsimile_hash != expected_hash:
+            raise ValidationError(f"{slug}: manifest/index facsimile hash mismatch")
 
+    source_hashes: list[dict[str, str]] = []
+    source_image_paths: list[Path] = []
+    source_hash_status = "not-applicable"
+    facsimile_equivalent_pages = 0
     if event.get("source_page_images_available") is True:
         source_previews = event.get("source_preview_pages")
         if not isinstance(source_previews, list):
             raise ValidationError(f"{slug}: source preview list missing")
         if len(source_previews) != event.get("source_variant_page_count"):
             raise ValidationError(f"{slug}: source preview/source page mismatch")
+        source_preview_dir_value = event.get("source_preview_dir")
+        if not isinstance(source_preview_dir_value, str):
+            raise ValidationError(f"{slug}: source preview directory missing")
+        source_preview_dir = repo_path(source_preview_dir_value)
+        if not source_preview_dir.is_dir():
+            raise ValidationError(f"{slug}: source preview directory missing")
+        declared_source_images = {
+            repo_path(value).resolve()
+            for value in source_previews
+        }
+        current_source_jpegs = {
+            path.resolve()
+            for path in source_preview_dir.iterdir()
+            if path.is_file() and path.suffix.lower() in {".jpg", ".jpeg"}
+        }
+        if current_source_jpegs != declared_source_images:
+            unexpected = sorted(
+                path.name for path in current_source_jpegs - declared_source_images
+            )
+            raise ValidationError(
+                f"{slug}: unlisted current source JPEG(s): {unexpected}"
+            )
         for preview_value in source_previews:
             preview = repo_path(preview_value)
-            if not preview.is_file() or preview.suffix.lower() not in {".webp", ".jpg", ".jpeg"}:
+            if not preview.is_file():
                 raise ValidationError(f"{slug}: source preview missing/invalid: {preview}")
-            if not webp_has_content(preview):
-                raise ValidationError(f"{slug}: blank source preview: {preview}")
+            source_image_paths.append(preview)
+            source_hashes.append({
+                "path": preview_value,
+                "sha256": validate_public_image(preview, require_current_jpeg=True),
+            })
+        source_hash_status = verify_image_hash_records(
+            slug,
+            "source-preview",
+            source_hashes,
+            event.get("source_preview_sha256"),
+            manifest["public_artifacts"].get("source_preview_sha256"),
+        )
+        if facsimile is not None:
+            facsimile_equivalent_pages = validate_facsimile_source_equivalence(
+                slug,
+                facsimile,
+                source_image_paths,
+            )
 
     return {
         "slug": slug,
@@ -436,6 +1054,11 @@ def validate_event(event: dict[str, Any], render: bool = True) -> dict[str, Any]
         "pdf_sha256": actual_pdf_hash,
         "privacy_scan": "pass",
         "source_facsimile_pages": source_facsimile_pages,
+        "preview_jpeg_hashes": preview_hash_status,
+        "source_preview_jpeg_hashes": source_hash_status,
+        "facsimile_source_equivalent_pages": facsimile_equivalent_pages,
+        "public_image_metadata_scan": "pass",
+        "public_text_mode": public_text_mode,
     }
 
 
@@ -548,6 +1171,7 @@ def make_pdf(
     )
 
     source = manifest["source"]
+    _, mode_copy = public_text_pdf_copy(event, manifest)
     doc = SimpleDocTemplate(
         str(out_pdf),
         pagesize=A4,
@@ -557,11 +1181,11 @@ def make_pdf(
         bottomMargin=17 * mm,
         title=f"{event['id']} - edición pública redactada",
         author="Project Sun Rock",
-        subject="ACTA public redacted text edition",
+        subject=mode_copy["subject"],
     )
     story = [
         Paragraph(event["title_es"], title),
-        Paragraph("Edición pública redactada y OCR-asistida", subtitle),
+        Paragraph(mode_copy["subtitle"], subtitle),
         Spacer(1, 4 * mm),
         Table(
             [
@@ -590,13 +1214,7 @@ def make_pdf(
         ),
         Spacer(1, 5 * mm),
         Paragraph("Advertencia", h2),
-        Paragraph(
-            "No es el original, el libro diligenciado, una copia certificada ni una "
-            "transcripción pericial. Todas las páginas de la copia usada están "
-            "secuenciadas; los datos privados y reservados se sustituyen por "
-            "marcadores expresos.",
-            body,
-        ),
+        Paragraph(mode_copy["boundary"], body),
         Paragraph(f"Control de variante: {source['variant_note_es']}", small),
         PageBreak(),
     ]
@@ -630,29 +1248,52 @@ def make_pdf(
 
 
 def make_previews(pdf_path: Path, preview_dir: Path) -> list[str]:
+    if fitz.VersionBind != PYMUPDF_VERSION:
+        raise ValidationError(
+            f"Pinned PyMuPDF {PYMUPDF_VERSION} is required for deterministic "
+            f"preview rendering; found {fitz.VersionBind}"
+        )
     preview_dir = preview_dir.resolve()
     try:
         preview_dir.relative_to(PREVIEW_ROOT.resolve())
     except ValueError as exc:
         raise ValidationError(f"Refusing preview output outside expected root: {preview_dir}") from exc
-    if preview_dir.exists():
-        shutil.rmtree(preview_dir)
-    preview_dir.mkdir(parents=True)
-    with tempfile.TemporaryDirectory(prefix="acta-public-preview-") as tmp:
-        prefix = Path(tmp) / "page"
-        subprocess.run(
-            ["pdftoppm", "-png", "-r", "105", str(pdf_path), str(prefix)],
-            check=True,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
-        )
+    preview_dir.mkdir(parents=True, exist_ok=True)
+    # Current JPEG previews are deterministically replaced, while the legacy
+    # WEBP derivatives remain as separately identified historical outputs.
+    # Removing the directory here would silently reduce the published corpus.
+    for existing in preview_dir.iterdir():
+        if existing.is_file() and existing.suffix.lower() in {".jpg", ".jpeg"}:
+            existing.unlink()
+    matrix = fitz.Matrix(105 / 72, 105 / 72)
+    try:
+        document = fitz.open(pdf_path)
+    except Exception as exc:
+        raise ValidationError(f"Cannot open generated PDF for previews: {pdf_path}") from exc
+    try:
         outputs: list[str] = []
-        for number, png in enumerate(sorted(Path(tmp).glob("page-*.png")), start=1):
+        for number, page in enumerate(document, start=1):
             output = preview_dir / f"page-{number:03d}.jpg"
-            with Image.open(png) as image:
-                image.convert("RGB").save(output, "JPEG", quality=82, optimize=True, progressive=True)
+            pixmap = page.get_pixmap(
+                matrix=matrix,
+                colorspace=fitz.csRGB,
+                alpha=False,
+                annots=True,
+            )
+            current = Image.frombytes(
+                "RGB",
+                (pixmap.width, pixmap.height),
+                pixmap.samples,
+            )
+            try:
+                current.info.clear()
+                current.save(output, "JPEG", quality=82, optimize=True, progressive=True)
+            finally:
+                current.close()
             outputs.append(output.relative_to(REPO).as_posix())
         return outputs
+    finally:
+        document.close()
 
 
 def build_event(event: dict[str, Any]) -> dict[str, Any]:
@@ -672,6 +1313,10 @@ def build_event(event: dict[str, Any]) -> dict[str, Any]:
     previews = make_previews(output_pdf, preview_dir)
     if len(previews) != pdf_count:
         raise ValidationError(f"{slug}: preview render count mismatch after build")
+    preview_hashes = [
+        {"path": value, "sha256": sha256(repo_path(value))}
+        for value in previews
+    ]
 
     pdf_hash = sha256(output_pdf)
     manifest["public_pdf_page_count"] = pdf_count
@@ -679,8 +1324,13 @@ def build_event(event: dict[str, Any]) -> dict[str, Any]:
     manifest["public_artifacts"]["pdf_pages"] = pdf_count
     manifest["public_artifacts"]["preview_pages"] = previews
     manifest["public_artifacts"]["preview_count"] = len(previews)
+    manifest["public_artifacts"]["preview_sha256"] = preview_hashes
     manifest["quality_control"]["pdf_reopened"] = True
     manifest["quality_control"]["all_pdf_pages_rendered"] = True
+    manifest["quality_control"]["preview_hashes_recorded"] = True
+    manifest["quality_control"]["preview_current_format"] = "JPEG"
+    manifest["quality_control"]["legacy_webp_derivatives_separate"] = True
+    manifest["quality_control"]["public_pdf_deterministic_invariant"] = True
     write_json(manifest_path, manifest)
 
     event["public_pdf_sha256"] = pdf_hash
@@ -688,6 +1338,7 @@ def build_event(event: dict[str, Any]) -> dict[str, Any]:
     event["page_count"] = pdf_count
     event["preview_pages"] = previews
     event["preview_count"] = len(previews)
+    event["preview_sha256"] = preview_hashes
     return event
 
 
@@ -729,7 +1380,10 @@ def parser() -> argparse.ArgumentParser:
     validate.add_argument(
         "--source-map",
         type=Path,
-        help="Optional private JSON object mapping slug to source-PDF path; never persisted",
+        help=(
+            "Optional private JSON object mapping slug to a PDF/DOCX path or typed "
+            "source-control object; never persisted"
+        ),
     )
     validate.add_argument(
         "--skip-render",

@@ -28,8 +28,8 @@ That distinction is controlling. The evidence is strongest when used to challeng
 
 The 2012 Gmail record directly places Jonathan Simó/CLS inside the accounting/documentation process immediately after the opening of Concurso 36/2012:
 
-- **16-Jul-2012:** Borja Rodríguez-Batllori writes to Gil Marer and Rafael Franco, copying `Jsimo <jsimo@clsconsultoria.com>`, requesting the documentation listed in the intervention minute, the 2011 annual accounts and documentation concerning the prior hotel operator. This is direct evidence that Jonathan was included in the AC-facing accounting/document stream.
-- **18-Jul-2012:** Gil forwards the AC/auditor position to `fiscal@clsconsultoria.com` and `jsimo@clsconsultoria.com`, stating that the accounts had to be supervised before signature and that copies needed to be sent. The contemporaneous chain therefore records professional accounting preparation subject to AC/auditor supervision rather than an absence of an accounting function.
+- **16-Jul-2012:** Borja Rodríguez-Batllori writes to Gil Marer and Rafael Franco, copying `Jsimo <SP-PRV-LCTR-EM-7F3299CE205634A990D4>`, requesting the documentation listed in the intervention minute, the 2011 annual accounts and documentation concerning the prior hotel operator. This is direct evidence that Jonathan was included in the AC-facing accounting/document stream.
+- **18-Jul-2012:** Gil forwards the AC/auditor position to `SP-PRV-LCTR-EM-9176D6B9E2CC87ED734A` and `SP-PRV-LCTR-EM-7F3299CE205634A990D4`, stating that the accounts had to be supervised before signature and that copies needed to be sent. The contemporaneous chain therefore records professional accounting preparation subject to AC/auditor supervision rather than an absence of an accounting function.
 - **23-Jul-2012 source family:** current connected records identify Jonathan in the CLS professional context as **Director Fiscal & Consultoría**, corresponding with Rafael Franco/CRV around LPB tax/accounting transmission. The exact native source should remain part of the private-source retrieval route.
 - **11-Dec-2012:** Gil sends `Documentación Sun Park` to Borja and Juan Tomás, copying Rafael Franco and Jonathan Simó, with accounting/Community material and an explanation disputing how operator payments/services and supplies had been treated.
 
@@ -360,21 +360,21 @@ Use primary emails and signed/final reports only. Do not quote 2023 witness test
 
 ### Gmail
 
-- `16-Jul-2012` Borja → Gil/Rafael Franco, cc Jonathan Simó (`19b4c276a11355f7` in current connected retrieval family).
-- `18-Jul-2012` Gil → CLS/Jonathan re AC/auditor supervision (`19b4c283662d712a`).
-- `11-Dec-2012` `Documentación Sun Park` → Borja, cc Jonathan (`19ee21ff5ffb26da`).
-- `19-Mar-2019` Aweswell → Cuatrecasas, document-request / `Docs entregados AC 2012.zip` (`1699742081d4d100`).
-- `22-Apr-2019` `Documentación soporte - también copiada en dropbox` (`16a46d4b6cf69e0a`).
-- `23-Apr-2019` Parrilla: two Espejo reports replaced with signed versions (`16a4ba1d9bc2fb78`).
-- `21-Nov-2018` David Espejo `Relación de documentos realizados` (`167387f02c03fa0d`).
-- `21-Nov-2018` David Espejo `Relación de facturas` (`167387e193e3d23d`).
-- `12-Jul-2018` Espejo CEXP-credit / economic-note continuation (`1648ef74c8721232`).
-- `9–19 Jul-2018` debt/interest/resolution team (`1647c291acd5aa4b`, `16481afbd4d48b7b`, `164b15f84c9f7432`).
+- `16-Jul-2012` Borja → Gil/Rafael Franco, cc Jonathan Simó (`SP-PRV-LCTR-GM-2EA10C112045123E1C3F` in current connected retrieval family).
+- `18-Jul-2012` Gil → CLS/Jonathan re AC/auditor supervision (`SP-PRV-LCTR-GM-1F566C1DDABAB790B882`).
+- `11-Dec-2012` `Documentación Sun Park` → Borja, cc Jonathan (`SP-PRV-LCTR-GM-48E46BC8AD15335897D7`).
+- `19-Mar-2019` Aweswell → Cuatrecasas, document-request / `Docs entregados AC 2012.zip` (`SP-PRV-LCTR-GM-1D872A71CCF3705286D6`).
+- `22-Apr-2019` `Documentación soporte - también copiada en dropbox` (`SP-PRV-LCTR-GM-7F9E6338D33250AA4D1B`).
+- `23-Apr-2019` Parrilla: two Espejo reports replaced with signed versions (`SP-PRV-LCTR-GM-2118818281DDBD94055B`).
+- `21-Nov-2018` David Espejo `Relación de documentos realizados` (`SP-PRV-LCTR-GM-9E523B11E03A40FC8977`).
+- `21-Nov-2018` David Espejo `Relación de facturas` (`SP-PRV-LCTR-GM-191616BECD8B38E204EB`).
+- `12-Jul-2018` Espejo CEXP-credit / economic-note continuation (`SP-PRV-LCTR-GM-E04EEE9A196FA67B8DCB`).
+- `9–19 Jul-2018` debt/interest/resolution team (`SP-PRV-LCTR-GM-AEB7DA5851B17E1780E1`, `SP-PRV-LCTR-GM-C9EC2E75CE5EE00C9004`, `SP-PRV-LCTR-GM-724665CBDA090043ECAA`).
 
 ### Google Drive
 
-- `Análisis de la razonabilidad y sentido económico-financiero de la deuda...` source family (`1uCVmzAoH9qg04EJWikiY6eSqxTAf-LyH`).
-- `Nota Económica` 16-May-2018 (`1J0kwyxZe8luAdkKaLLPq9Gs8znNHwkEk`).
+- `Análisis de la razonabilidad y sentido económico-financiero de la deuda...` source family (`SP-PRV-LCTR-GD-45163FFF04F26A11B545`).
+- `Nota Económica` 16-May-2018 (`SP-PRV-LCTR-GD-DD2502BF424FA524F625`).
 - `Razonabilidad de la Valoración del Complejo y el Plan de Liquidación...` 10-May-2018 draft source (`1h__7bAFKihxBw-I2ik3M1Z6NRCeOQXR4`).
 - 2019 opposition source family: `Demanda Oposición Calificación GM - 06JUN2019.pdf`, `JRI - Escrito oposición informe calificación - 06JUN2019.pdf` and Google Docs drafting/final variants.
 - `20231012 Apelacion calificacion GIL.docx` source family.

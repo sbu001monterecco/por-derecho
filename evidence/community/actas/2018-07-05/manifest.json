@@ -25,7 +25,43 @@
     "variant_note_es": "Copia exacta de nueve páginas recuperada de ACTAS.zip; el segundo binario renderiza idénticamente.",
     "variant_note_en": "Exact nine-page copy recovered from ACTAS.zip; the second binary renders identically.",
     "native_publication": false,
-    "variants_recorded": 2
+    "variants_recorded": 2,
+    "source_document_id": "SP-SRC-ACTA-2018-07-05",
+    "legacy_id_aliases": [],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "2018-07-05-variant-b.pdf",
+        "bytes": 627779,
+        "sha256": "3b718d66d379c1649433af42aac7afce0677292f911f1c5b485fc33561fe9ce1",
+        "pages": 9,
+        "relationship_es": "Binario distinto; las nueve páginas renderizan de forma idéntica.",
+        "relationship_en": "Different binary; all nine pages render identically.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-07-05-ALT",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2018-07-05-VARIANT-01"
+        ]
+      },
+      {
+        "filename": "CONVOCATORIA SUN PARK 5-7-18.pdf",
+        "bytes": 249858,
+        "sha256": "2a31ed88e9f8d3d7c0b3528a25f23071e36cc081d9af0d172b54b25d464665ea",
+        "pages": 1,
+        "relationship_es": "Convocatoria separada de una página.",
+        "relationship_en": "Separate one-page notice.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-07-05-NOTICE-01",
+        "relationship_kind": "related-notice",
+        "classification_status": "classified",
+        "legacy_id_aliases": []
+      }
+    ]
   },
   "redaction_categories": [
     "identifiers-and-contact",
@@ -54,7 +90,7 @@
       "assets/evidence/community-actas-source/2018-07-05/page-009.jpg"
     ],
     "source_preview_count": 9,
-    "pdf_sha256": "b66e681d4af3e85515e36ac8d065425177c0f5078c3c5c0524907c019de2781d",
+    "pdf_sha256": "b4487a1f4486c8e347ca3835147b3daaee6d1f8b827226ae88f8765c620696d4",
     "pdf_pages": 11,
     "preview_pages": [
       "assets/evidence/community-actas/2018-07-05/page-001.jpg",
@@ -70,7 +106,53 @@
       "assets/evidence/community-actas/2018-07-05/page-011.jpg"
     ],
     "preview_count": 11,
-    "pdf": "assets/docs/community-actas/2018-07-05-public-redacted-es.pdf"
+    "pdf": "assets/docs/community-actas/2018-07-05-public-redacted-es.pdf",
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-001.jpg",
+        "sha256": "8247b517e84d909fc1ede8f7d33f94316c18d7047283ead9668b19912ab6f402"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-002.jpg",
+        "sha256": "bf2b4b2cd3f90b3ed11ac66606eb6197a47302596abfa1a1fe6e868ac6649bb3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-003.jpg",
+        "sha256": "d32a214aef785c0fb3232974829854976f92104b808022665d98074beed31a74"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-004.jpg",
+        "sha256": "510f29a56bd0c41eb13f8c1562f489ca4182a35066e52d1cd3f0a0836ce0594c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-005.jpg",
+        "sha256": "b32c1bd52ed844213ec6e08a89d1c11b097c8b61568729994e6a63031acdc1c2"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-006.jpg",
+        "sha256": "69eefd3f06e4f7fe6d31e791d84cd64070659843866f296faa49812a4fffe929"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-007.jpg",
+        "sha256": "ced304251bc9be66d58b61b69c5f282e8ee1a9256626f39b3974782f974a6e56"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-008.jpg",
+        "sha256": "662a2e1ea920978fc33c4fc0156a7963f55a273203a8dfc7331e55a1d093bdbe"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-009.jpg",
+        "sha256": "d5b5da5b2592e8e267954c8faf77e9a45bb2672ee975053b130a61b94c63c905"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-010.jpg",
+        "sha256": "fb012812188455c500f7f77da9d21a7fdf8192332275ea74c084299074b676d7"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-07-05/page-011.jpg",
+        "sha256": "6cd6e712eed7b7d200b8b929318d90d88da66e86ac7a318e0c002aeb8b79641e"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -83,7 +165,11 @@
     "visual_pdf_sample_review": true,
     "visual_source_redaction_review": true,
     "pdf_reopened": true,
-    "all_pdf_pages_rendered": true
+    "all_pdf_pages_rendered": true,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "public_pdf_page_count": 11
 }

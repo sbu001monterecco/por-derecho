@@ -24,14 +24,36 @@
     "variant_note_es": "Copia de cuatro páginas; la variante de tres páginas es parcial.",
     "variant_note_en": "Four-page copy; the three-page variant is partial.",
     "native_publication": false,
-    "variants_recorded": 1
+    "variants_recorded": 1,
+    "source_document_id": "SP-SRC-ACTA-2008-07-25",
+    "legacy_id_aliases": [],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 1,
+    "additional_source_documents": [
+      {
+        "filename": "2008-07-25-drive.pdf",
+        "bytes": 1114466,
+        "sha256": "a735bd736756018fd690326011b095fc9ed43720b0d1ff26233ef65061d36c62",
+        "pages": 3,
+        "relationship_es": "Variante parcial de tres páginas.",
+        "relationship_en": "Partial three-page variant.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-07-25-PARTIAL-3P",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2008-07-25-VARIANT-01"
+        ]
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2008-07-25/transcript-es.md",
     "provenance": "evidence/community/actas/2008-07-25/provenance.md",
     "redaction_log": "evidence/community/actas/2008-07-25/redaction-log.md",
     "pdf": "assets/docs/community-actas/2008-07-25-public-redacted-es.pdf",
-    "pdf_sha256": "80295507923beaf72512a06b70d89ef45e0d47addd08fe49611e730d16ae03a1",
+    "pdf_sha256": "74f228b21a17bd836b159fa7b9235b18c972e040f1662bfbb05fe88096228852",
     "pdf_pages": 5,
     "preview_pages": [
       "assets/evidence/community-actas/2008-07-25/page-001.jpg",
@@ -50,7 +72,29 @@
       "assets/evidence/community-actas-source/2008-07-25/page-003.jpg",
       "assets/evidence/community-actas-source/2008-07-25/page-004.jpg"
     ],
-    "source_preview_count": 4
+    "source_preview_count": 4,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2008-07-25/page-001.jpg",
+        "sha256": "4764ffac8fcc36a99b3bdc3e7f743ee74f4d3cf8121c6105feb2e863ab5f788b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-25/page-002.jpg",
+        "sha256": "42434ab35e5def8010c34599d814cfb5a45730118cbdafe0c583c7568dee2c50"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-25/page-003.jpg",
+        "sha256": "23009ddf7b4487655f51cd770a9a6d326ca6ca48b91b5b06253718a5ffee1a64"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-25/page-004.jpg",
+        "sha256": "e96b1635d7d82d3d41ef762d6e865eab3f215048310b261f94d2f10b8f496a41"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-25/page-005.jpg",
+        "sha256": "210e1b09807af4f7877fa83dcaea2fed597c0f84863cbb10b8c127463d5a08ad"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -63,7 +107,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

@@ -21,17 +21,73 @@
     "bytes": 4004030,
     "sha256": "15466aae53413c686c5e0a53b37007b174a2cb7fe9e55a8a7e3e8180b218e961",
     "pages": 9,
-    "variant_note_es": "Copia de nueve páginas autenticada por el archivo ACTAS.zip; las variantes de ocho páginas son parciales.",
-    "variant_note_en": "Nine-page copy authenticated through ACTAS.zip; the eight-page variants are partial.",
+    "source_document_id": "SP-SRC-ACTA-2018-05-18-B",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2018-05-18"
+    ],
+    "source_page_scope": "controlling-copy",
+    "variant_note_es": "Control de nueve páginas recuperado y controlado desde ACTAS.zip; la autenticidad permanece abierta. La segunda copia de nueve páginas y las dos variantes parciales de ocho páginas conservan IDs, tamaños y SHA-256 separados.",
+    "variant_note_en": "Nine-page control recovered and controlled from ACTAS.zip; authenticity remains open. The second nine-page copy and two partial eight-page variants retain separate IDs, byte counts and SHA-256 values.",
     "native_publication": false,
-    "variants_recorded": 3
+    "variants_recorded": 3,
+    "additional_source_documents_recorded": 3,
+    "additional_source_documents": [
+      {
+        "filename": "2018-05-18-package.pdf",
+        "bytes": 3164526,
+        "sha256": "a903182722f729e62c009f138af6945be2525021ddfbdbf0809f03331f135d95",
+        "pages": 9,
+        "relationship_es": "Segunda conversión/paquete de nueve páginas.",
+        "relationship_en": "Second nine-page conversion/package.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-05-18-B-ALT",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2018-05-18-VARIANT-01"
+        ]
+      },
+      {
+        "filename": "2018-05-18-source.pdf",
+        "bytes": 586113,
+        "sha256": "2a91b321f801edf38599224473b5909f96743d51d8aaa8b9f94d104dcaaa2bc3",
+        "pages": 8,
+        "relationship_es": "Variante parcial de ocho páginas con texto extraíble.",
+        "relationship_en": "Partial eight-page variant with extractable text.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-05-18-A",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2018-05-18-VARIANT-02"
+        ]
+      },
+      {
+        "filename": "2018-05-18-alt.pdf",
+        "bytes": 761953,
+        "sha256": "ce7c1dee0470f620c3f335ee90866b5e546745971678ce7b0d3c0c18c0d3f72d",
+        "pages": 8,
+        "relationship_es": "Variante parcial alternativa de ocho páginas.",
+        "relationship_en": "Alternate partial eight-page variant.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2018-05-18-C",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2018-05-18-VARIANT-03"
+        ]
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2018-05-18/transcript-es.md",
     "provenance": "evidence/community/actas/2018-05-18/provenance.md",
     "redaction_log": "evidence/community/actas/2018-05-18/redaction-log.md",
     "pdf": "assets/docs/community-actas/2018-05-18-public-redacted-es.pdf",
-    "pdf_sha256": "ede52180cd0357ed169a3ed981b13cae9f8cf9090c54b8b3e6e48def5777cf4d",
+    "pdf_sha256": "2833e86a21b983b57de187522ac93432bbc1f571823bde3d1c03b361913eb308",
     "pdf_pages": 10,
     "preview_pages": [
       "assets/evidence/community-actas/2018-05-18/page-001.jpg",
@@ -60,7 +116,49 @@
       "assets/evidence/community-actas-source/2018-05-18/page-008.jpg",
       "assets/evidence/community-actas-source/2018-05-18/page-009.jpg"
     ],
-    "source_preview_count": 9
+    "source_preview_count": 9,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-001.jpg",
+        "sha256": "8183e9fcac25fbf0df9d2c91241fb09ccc1556d23e636f4ea1787b7466c2e340"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-002.jpg",
+        "sha256": "e8cee843b88f4f5c27071dfa5f6760f7120eceb386276b438c0504342e8eb4d4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-003.jpg",
+        "sha256": "d32a214aef785c0fb3232974829854976f92104b808022665d98074beed31a74"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-004.jpg",
+        "sha256": "5339607acd880250010b6421a46d02629aec2a611fb52a0e88d9469ee0ae15ef"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-005.jpg",
+        "sha256": "a79df9c1801ae7938a617672233543a1390f3468e5b27c2c6965bbdbe20ee6a1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-006.jpg",
+        "sha256": "941d04538003d0b32a23bea5778722c5101d7804ef8ec98dae57ca96a5b4190f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-007.jpg",
+        "sha256": "a03d84449aa34e68b3b66ed5b9adc2e439a69430632f8580c38fe2e2ffc1d37b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-008.jpg",
+        "sha256": "6179c1d20fc1a776c22e86566841cf53e314692a8ab4b581807bf3ab3cce4d98"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-009.jpg",
+        "sha256": "50b03c9f20ea4393692696f42122c264b240a414f748e9b3c3da4e0af681e3ae"
+      },
+      {
+        "path": "assets/evidence/community-actas/2018-05-18/page-010.jpg",
+        "sha256": "8dd2e7b913033ad6b4b52c327841f6c491b7abbfbace3ef26a9fb36cf62d0c70"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -73,7 +171,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

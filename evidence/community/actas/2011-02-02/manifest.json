@@ -24,14 +24,54 @@
     "variant_note_es": "Se adopta la copia de seis páginas con secuencia coherente; otras dos variantes quedan identificadas.",
     "variant_note_en": "The coherent six-page sequence is used; two other variants remain identified.",
     "native_publication": false,
-    "variants_recorded": 2
+    "variants_recorded": 2,
+    "source_document_id": "SP-SRC-ACTA-2011-02-02-A",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2011-02-02"
+    ],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "2011-02-02-variant-2136388.pdf",
+        "bytes": 2136388,
+        "sha256": "bf85e363335c3eed9f64a2689161728ffa2b320e13c5f10d65b08bf315256b60",
+        "pages": 6,
+        "relationship_es": "Escaneo alternativo de seis páginas.",
+        "relationship_en": "Alternate six-page scan.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2011-02-02-C",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2011-02-02-VARIANT-01"
+        ]
+      },
+      {
+        "filename": "7. ACTA 02 FEB 2011.pdf",
+        "bytes": 3018487,
+        "sha256": "612a9b835ff63f501592734212dd5569350ed6b6d7f5a705ba06bc73f311b195",
+        "pages": 6,
+        "relationship_es": "Copia transmitida de seis páginas con orden de páginas distinto; se conserva como variante, no como sustituto silencioso.",
+        "relationship_en": "Transmitted six-page copy with a different page order; retained as a variant, not silently substituted.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2011-02-02-B",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2011-02-02-VARIANT-02"
+        ]
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2011-02-02/transcript-es.md",
     "provenance": "evidence/community/actas/2011-02-02/provenance.md",
     "redaction_log": "evidence/community/actas/2011-02-02/redaction-log.md",
     "pdf": "assets/docs/community-actas/2011-02-02-public-redacted-es.pdf",
-    "pdf_sha256": "caa234f2ffcbb50f635b40bb2e26ae21dbe0f90b77443e80f6cbf42329696d3e",
+    "pdf_sha256": "2a46b98f54be383a7dada475cb683dcac422be2fd1b1d47f89d6a6c8a69e0da2",
     "pdf_pages": 7,
     "preview_pages": [
       "assets/evidence/community-actas/2011-02-02/page-001.jpg",
@@ -54,7 +94,37 @@
       "assets/evidence/community-actas-source/2011-02-02/page-005.jpg",
       "assets/evidence/community-actas-source/2011-02-02/page-006.jpg"
     ],
-    "source_preview_count": 6
+    "source_preview_count": 6,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-001.jpg",
+        "sha256": "bcdb3a5558bf2432b9d8a379fea2d6c09d5d697417f17e19d67699de88721548"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-002.jpg",
+        "sha256": "7048ad418d536ce49a4683462b3b2316e5ab6f3aff25d37ef5b522ef43f897ef"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-003.jpg",
+        "sha256": "c9c8a74b7c16a905eaba6f57cd795fa85b5ea2e2e1039a7a094eb4d78bc32dfc"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-004.jpg",
+        "sha256": "032c4d076b6e17017929316616c6e0a7798fe4d9a78a0a5e0a8ce51e9692db07"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-005.jpg",
+        "sha256": "58da28bd0731ba82735560e944eb6dca0a0aebcb1e796bf58ed4b9a793061a5c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-006.jpg",
+        "sha256": "07edcbe4850f77c8590940efbf7b154a2c5a2bd93a06556ed716db7dc554fa9c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-02-02/page-007.jpg",
+        "sha256": "6cc0d5e9d50635a0c03a418d0afde2b633e938670512f349199a94045735a161"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -67,7 +137,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

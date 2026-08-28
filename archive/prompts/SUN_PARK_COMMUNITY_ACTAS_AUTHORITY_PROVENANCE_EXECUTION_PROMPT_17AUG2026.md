@@ -124,8 +124,8 @@ The article does not prove finca-by-finca completion or seller-specific breach.
 
 At minimum locate/re-read:
 
-- 29-Apr-2008 ACTA — Drive `1Ups4s_2TcHyCByxSiK-WIx-ieEdciVbe`;
-- May-2008 exploitation cession/statutes — Drive `1CEJLnY3r5kM_WBk6YWiZjIalNlCfeToA`;
+- 29-Apr-2008 ACTA — Drive `SP-PRV-LCTR-GD-C5CE20DD0F9B3D5C8D3F`;
+- May-2008 exploitation cession/statutes — Drive `SP-PRV-LCTR-GD-461B8270D75E47138421`;
 - 25-Jul-2008 ACTA/arrangement and annexes;
 - ownership/unit/seller schedules;
 - individual conveyances/commitments where relevant.
@@ -209,7 +209,7 @@ For 19-Nov-2015 and 26-Apr-2016, make the ownership/attendance-voting divergence
 
 Primary 26-Apr-2016 Drive source:
 
-`1YMnEVDQj7r1E2aWgWL2Ne9b5gYP6ZRbd`
+`SP-PRV-LCTR-GD-E3841881D3C98242AFC7`
 
 The currently verified primary copy records:
 
@@ -229,7 +229,7 @@ Recover/reconcile the 2017 CEXP and Owners’ Community ACTAs.
 
 Primary 18-May-2018 source located:
 
-Drive `16j_xD-lvEbtR-_23_8nIS2bOkRn4SFr8`.
+Drive `SP-PRV-LCTR-GD-A5B7216821A81A06E183`.
 
 Use the ACTA text rather than the secondary filename label.
 

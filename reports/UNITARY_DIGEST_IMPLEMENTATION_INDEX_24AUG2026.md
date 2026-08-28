@@ -113,7 +113,7 @@ This is a production and explanation request, not a finding of breach, collusion
 
 ## Priority evidence still required
 
-1. Native 11 June 2016 audio, clean transcript and Simó/CLS package.
+1. Native 10 June 2016 audio, authentication, clean transcript, attendee/capacity map and Simó/CLS package; retain `11JUN2016` as the later derivative label.
 2. Complete 12 July 2016 burofax, annexes, delivery and AC response.
 3. Certified 18 May–7 June 2018 Community/security/access record.
 4. Certified 26 June 2018 suspension order and asset schedule.

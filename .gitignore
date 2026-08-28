@@ -2,6 +2,9 @@ __pycache__/
 *.py[cod]
 tmp/
 
+# ACTA visual-review contact sheets are review derivatives, never publication assets.
+/artifacts/acta-source-contact-sheets/
+
 # Cuatrecasas private working artifacts — never publish from this repository.
 CUATRECASAS_TIMECARD_TRANSCRIPTION_WORKING_*.csv
 CUATRECASAS_DISBURSEMENT_TRANSCRIPTION_WORKING_*.csv

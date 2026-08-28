@@ -1,0 +1,159 @@
+{
+  "schema_version": "2.0",
+  "id": "SP-ACTA-2008-07-15-CEXP",
+  "slug": "2008-07-15-cexp",
+  "date": "2008-07-15",
+  "body": "CEXP",
+  "meeting_type": "universal",
+  "language": "es",
+  "status": "located-package-digitised-public",
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "complete_public_text": false,
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false,
+  "native_page_count": 6,
+  "native_page_count_status": "verified-for-located-control-copy",
+  "source_variant_page_count": 6,
+  "source": {
+    "filename": "copia CEXP de seis páginas de la reunión universal de las 17:00",
+    "bytes": 252353,
+    "sha256": "06b61e5c4b1a125a3412585f606a53b3bcc5dafcad840aedd6b41aa9a1ebffda",
+    "pages": 6,
+    "source_document_id": "SP-SRC-ACTA-2008-07-15-CEXP-17H",
+    "legacy_id_aliases": [],
+    "source_page_scope": "controlling-copy",
+    "variant_note_es": "Fuente CEXP distinta de seis páginas para la reunión universal de las 17:00. No se confunde con la junta de la Comunidad de Propietarios de las 12:00. La imagen y el texto públicos quedan íntegramente redactados por defecto hasta completar la revisión de privacidad página por página.",
+    "variant_note_en": "Distinct six-page CEXP source for the 17:00 universal meeting. It is not conflated with the 12:00 Owners' Community meeting. Public image and text remain fully redacted by default until page-by-page privacy review is complete.",
+    "native_publication": false,
+    "variants_recorded": 0,
+    "additional_source_documents_recorded": 0,
+    "additional_source_documents": []
+  },
+  "redaction_categories": [
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
+  ],
+  "created": "2026-08-28",
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2008-07-15-cexp/transcript-es.md",
+    "provenance": "evidence/community/actas/2008-07-15-cexp/provenance.md",
+    "redaction_log": "evidence/community/actas/2008-07-15-cexp/redaction-log.md",
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2008-07-15-cexp-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "618afab966923d5bb48b2aaae89cf58974efbb4bc359ad18bf5b61a5fffe559b",
+    "redacted_source_facsimile_pages": 6,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2008-07-15-cexp/page-001.jpg",
+      "assets/evidence/community-actas-source/2008-07-15-cexp/page-002.jpg",
+      "assets/evidence/community-actas-source/2008-07-15-cexp/page-003.jpg",
+      "assets/evidence/community-actas-source/2008-07-15-cexp/page-004.jpg",
+      "assets/evidence/community-actas-source/2008-07-15-cexp/page-005.jpg",
+      "assets/evidence/community-actas-source/2008-07-15-cexp/page-006.jpg"
+    ],
+    "source_preview_count": 6,
+    "source_preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas-source/2008-07-15-cexp/page-001.jpg",
+        "sha256": "0e5ba154ac293f222e4c7c1e4de0b9734a42284d22e594b853b62f34eb95f303"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2008-07-15-cexp/page-002.jpg",
+        "sha256": "283b99ece5ce12d20b40f7543504ad3e1cb70c30ad36abbd72f023a46e4ab8b7"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2008-07-15-cexp/page-003.jpg",
+        "sha256": "74454020fa8fb5078e2483f97a7826f9b880b014238e779765d2a3f91ec3a5e7"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2008-07-15-cexp/page-004.jpg",
+        "sha256": "2f08f28102023bdaa684ed0883202ff06cb5a2d19b7cdb8476ff0ca329ce24cf"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2008-07-15-cexp/page-005.jpg",
+        "sha256": "9e37f8557b262cb106a19b28a6cdaba05f48105ef721e6094c7f04de8512c897"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2008-07-15-cexp/page-006.jpg",
+        "sha256": "1f33c2eecbd9f14f0d40e4006d4b261e7e84737eda3973b783e888477b984e17"
+      }
+    ],
+    "pdf": "assets/docs/community-actas/2008-07-15-cexp-public-redacted-es.pdf",
+    "pdf_sha256": "097afe47adae433021152f70005ef29a3d393f35056d4cecce6c37a4f9459465",
+    "pdf_pages": 7,
+    "preview_pages": [
+      "assets/evidence/community-actas/2008-07-15-cexp/page-001.jpg",
+      "assets/evidence/community-actas/2008-07-15-cexp/page-002.jpg",
+      "assets/evidence/community-actas/2008-07-15-cexp/page-003.jpg",
+      "assets/evidence/community-actas/2008-07-15-cexp/page-004.jpg",
+      "assets/evidence/community-actas/2008-07-15-cexp/page-005.jpg",
+      "assets/evidence/community-actas/2008-07-15-cexp/page-006.jpg",
+      "assets/evidence/community-actas/2008-07-15-cexp/page-007.jpg"
+    ],
+    "preview_count": 7,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-001.jpg",
+        "sha256": "2eff1438f2bf65f0a5bf36ca197b1d05e58cbab9d24ef6afd06fea8dea12e4ec"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-002.jpg",
+        "sha256": "fa5a409442ed191c0df46f091908f95e884c01b11936f8bd695f474755ab5473"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-003.jpg",
+        "sha256": "578766a8415a232437d091f1494f5078bf5c33ea91d540bb65026ca4f2a7d01c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-004.jpg",
+        "sha256": "77d4008fe92ed9afe7395b91b49fdb33983637063560779900608b7bafe66c45"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-005.jpg",
+        "sha256": "f19ed2bae9479085a7826af9d98a677807126cf06a450642f1d4fd3c0b68308e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-006.jpg",
+        "sha256": "3f3a5d4f7a62ee3bd748a5aaed5ff90be47e316517b2a01ad53fa3ea8ff7c08b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-07-15-cexp/page-007.jpg",
+        "sha256": "7c08b3f6b1afed3b4bef545a6b47dbff9481f07f1e37dc4cfb591b12dd7cc07e"
+      }
+    ]
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false,
+    "privacy_scan": "automated-pass-plus-recorded-visual-review-pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "source_preview_hashes_recorded": true,
+    "source_image_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "facsimile_deterministic_invariant": true,
+    "ocr_language": "eng",
+    "ocr_language_selection": "spa-unavailable-eng-fallback",
+    "ocr_certified": false,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "public_pdf_deterministic_invariant": true,
+    "visual_review_attestation_required": true
+  },
+  "public_pdf_page_count": 7,
+  "document_type": "acta-or-minutes",
+  "source_package_kind": "acta-or-minutes-family",
+  "counts_as_located_acta_family": true,
+  "public_text_mode": "full-page-redaction-markers",
+  "public_ocr_available": false
+}

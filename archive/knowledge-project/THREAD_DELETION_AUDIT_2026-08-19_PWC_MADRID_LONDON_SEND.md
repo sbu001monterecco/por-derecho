@@ -57,15 +57,15 @@ Preservation, senior response ownership/independence, CNMV contact in either dir
 Preserved through PR #444 and `PWC_FINAL_ONE_SEND_RECIPIENT_CONTROL_19AUG2026.md`:
 
 **TO**
-- Pablo Fernández Guerra — `pablo.fernandez.guerra@pwc.com`
-- Carlos del Cubo Ruiz — `carlos.del.cubo@pwc.com`
+- Pablo Fernández Guerra — `SP-PRV-LCTR-EM-9395CE800DD47D1F7542`
+- Carlos del Cubo Ruiz — `SP-PRV-LCTR-EM-E79D7EB547C4A00E4476`
 
 **CC**
-- Alison Statham — `alison.l.statham@pwc.com`
-- Gilly Lord — `gillian.lord@pwc.com`
-- Gonzalo Sánchez Martínez — `gonzalo.sanchez@es.pwc.com`
-- Marco Amitrano — `marco.amitrano@pwc.com`
-- Carlos Saavedra Rodríguez del Palacio — `carlos.saavedra@es.pwc.com` — notice only
+- Alison Statham — `SP-PRV-LCTR-EM-F7A24DA244AC7EDB85D3`
+- Gilly Lord — `SP-PRV-LCTR-EM-447168791F11126942CE`
+- Gonzalo Sánchez Martínez — `SP-PRV-LCTR-EM-447D6A4B10395CC6720F`
+- Marco Amitrano — `SP-PRV-LCTR-EM-8EF71F5CD8870DF7561A`
+- Carlos Saavedra Rodríguez del Palacio — `SP-PRV-LCTR-EM-599802EE1063E5D40240` — notice only
 
 Danielle Perfect was not used because no sufficiently authoritative direct email address had been independently confirmed.
 
@@ -77,8 +77,8 @@ The final transmission did **not** create a fresh Gmail thread.
 
 The source scan established that the best continuity message was Pablo Fernández Guerra's 30 March 2021 incoming message in the substantive thread:
 
-- message ID: `17882349c2c48668`
-- thread ID: `17812aeb5d3492c1`
+- message ID: `SP-PRV-LCTR-GM-2E517B56225348A1B81E`
+- thread ID: `SP-PRV-LCTR-GM-C1CEF35ADBC2E3530D42`
 - subject: **Re: Aweswell Limited/Sun Rock / Hotel SUN PARK Lanzarote**
 - Pablo as sender and Carlos del Cubo already copied;
 - underlying chain records the prior PwC Spain Legal/Madrid engagement and March 2021 call history.
@@ -87,13 +87,13 @@ The historic subject was deliberately retained. **FORMAL INSTITUTIONAL ESCALATIO
 
 ## 3. Actual send preserved
 
-The final communication was sent successfully from `sbu001@monterecco.com`.
+The final communication was sent successfully from `SP-PRV-LCTR-EM-32928901D5492501562E`.
 
 Gmail definitive transmission controls:
 
-- sent message ID: `1a0182b119c3886f`
-- thread ID: `17812aeb5d3492c1`
-- reply target: `17882349c2c48668`
+- sent message ID: `SP-PRV-LCTR-GM-70F415DDB7FEBECE0FC5`
+- thread ID: `SP-PRV-LCTR-GM-C1CEF35ADBC2E3530D42`
+- reply target: `SP-PRV-LCTR-GM-2E517B56225348A1B81E`
 - subject: **Re: Aweswell Limited/Sun Rock / Hotel SUN PARK Lanzarote**
 - recipients exactly as listed above;
 - no BCC;
@@ -110,7 +110,7 @@ A read-back of the Sent message confirmed the actual recipient block and message
 
 The controlling records after transmission are:
 
-1. Gmail sent message `1a0182b119c3886f`;
+1. Gmail sent message `SP-PRV-LCTR-GM-70F415DDB7FEBECE0FC5`;
 2. `PWC_INSTITUTIONAL_ESCALATION_SENT_RECORD_19AUG2026.md`;
 3. `PWC_FINAL_ONE_SEND_RECIPIENT_CONTROL_19AUG2026.md` as updated to SENT / EXECUTED.
 

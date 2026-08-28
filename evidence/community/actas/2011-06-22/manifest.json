@@ -24,14 +24,54 @@
     "variant_note_es": "Copia localizada; no es el libro diligenciado ni una copia certificada.",
     "variant_note_en": "Located copy; not the diligenced minutes book or a certified copy.",
     "native_publication": false,
-    "variants_recorded": 2
+    "variants_recorded": 2,
+    "source_document_id": "SP-SRC-ACTA-2011-06-22-B",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2011-06-22"
+    ],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "2011-06-22-variant-4551801.pdf",
+        "bytes": 4551801,
+        "sha256": "2e30ad64047b10a79d12de9c5eee0202f31e9b0c14ed26de14e57767d21c896a",
+        "pages": 16,
+        "relationship_es": "Binario distinto, páginas renderizadas equivalentes a la copia controlante.",
+        "relationship_en": "Different binary, rendered pages equivalent to the controlling copy.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2011-06-22-A",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2011-06-22-VARIANT-01"
+        ]
+      },
+      {
+        "filename": "2011-06-22-variant-2750336.pdf",
+        "bytes": 2750336,
+        "sha256": "037ad9b32d0f04941187c385fd662766b7a80b2c22983283d880f08c18913f2c",
+        "pages": 16,
+        "relationship_es": "Variante de dieciséis páginas con orden y anotaciones diferentes.",
+        "relationship_en": "Sixteen-page variant with different order and annotations.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2011-06-22-D-PDF24",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2011-06-22-VARIANT-02"
+        ]
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2011-06-22/transcript-es.md",
     "provenance": "evidence/community/actas/2011-06-22/provenance.md",
     "redaction_log": "evidence/community/actas/2011-06-22/redaction-log.md",
     "pdf": "assets/docs/community-actas/2011-06-22-public-redacted-es.pdf",
-    "pdf_sha256": "7c8cf6ba24cd327056c13e47de7e495460a13ffb13fc638064c4c4968e1ffcab",
+    "pdf_sha256": "96878f4dc6c5bf595743922bd84117144ab3c19cf44ecc1708d329a16969849a",
     "pdf_pages": 17,
     "preview_pages": [
       "assets/evidence/community-actas/2011-06-22/page-001.jpg",
@@ -74,7 +114,77 @@
       "assets/evidence/community-actas-source/2011-06-22/page-015.jpg",
       "assets/evidence/community-actas-source/2011-06-22/page-016.jpg"
     ],
-    "source_preview_count": 16
+    "source_preview_count": 16,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-001.jpg",
+        "sha256": "f7730f27180d7d20cdcd35d20c0993b1a51e5dd0154c0940630dc21a7ac0fa5a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-002.jpg",
+        "sha256": "99ef85a9fbd96018ed2f6a30859950c7d804a6bfa56aafeee62b381491f96e44"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-003.jpg",
+        "sha256": "bed88ac2203a34ee76e362b79631a09ee24db3cb82a23548defd203dd54c8915"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-004.jpg",
+        "sha256": "ebe7dcde7e43f7e41f51b51fb5634649b4f4f24d642801ad46edb3085f95fd07"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-005.jpg",
+        "sha256": "c54d248b2c6ba0fbb43dd48b2f9960c1286a170486c1bdc0546279c6ac621c3a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-006.jpg",
+        "sha256": "6254229b6d3f1613835e7dd3e66f5b791d1e312d94917b2f118ce5a4403b9ab9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-007.jpg",
+        "sha256": "962b72c2ac41f10a4f1af6b7014e50f4b2e36f8b3479399313c9b789b64c31ab"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-008.jpg",
+        "sha256": "6226e05aebdf6285f49a3f3240544a93b7ddc85c64b88a9ee25e220c0604d0fb"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-009.jpg",
+        "sha256": "f5a61eff41bb0c5b1e833b2b6098e8d8d9565dec2faef6505dd97e98b6928f5d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-010.jpg",
+        "sha256": "a92d03c7c5cb02edaa9f4f55dfe47fa53f8e016e860569898fcede9ee61bca54"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-011.jpg",
+        "sha256": "092f6d3e1fe044b4cbc23708aeb9174829bc1e97e1c631a5975ba1e884a62d8e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-012.jpg",
+        "sha256": "eafbbb0d8b98d62867e31baff1f034af3bd2c4b42849a11f16fadc866495427e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-013.jpg",
+        "sha256": "34589dd7100d76cad79fe892302349f569f08166e354ba0526817aef2d43937b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-014.jpg",
+        "sha256": "29446a5dc5e469c20b1873df45d7e18f6a051a04374231944c0ea0fdc0426836"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-015.jpg",
+        "sha256": "71cdb966b4a103fb5c9b0394c247f61ca8e42ba0bcb3582214bc936b8172de3c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-016.jpg",
+        "sha256": "fb0535f4bf0be785ef7b54d47c918dda33feb48356b76ab8cb310771da6fe7c2"
+      },
+      {
+        "path": "assets/evidence/community-actas/2011-06-22/page-017.jpg",
+        "sha256": "283114d15b75f9b2343bd1c9de85f76ffae8dce9a5aa05cc7445ba98e40f8d2a"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -87,7 +197,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

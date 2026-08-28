@@ -8,8 +8,8 @@
 A targeted connected-Google-Drive search after the PR #319 deployment located the exact file:
 
 - **Title:** `ACTA 22 JUNIO 2011.pdf`
-- **Drive file ID:** `1k6zmHh59XbkhWWqqY0VEC_vLKLhNy0Az`
-- **Drive URL:** `https://drive.google.com/file/d/1k6zmHh59XbkhWWqqY0VEC_vLKLhNy0Az/view?usp=drivesdk`
+- **Drive file ID:** `SP-PRV-LCTR-GD-F1CB8F07FBE47EAFA256`
+- **Drive URL:** `SP-PRV-LCTR-GD-F1CB8F07FBE47EAFA256`
 - **Drive-created timestamp shown by connector:** `2021-02-03T22:34:21.945Z`
 - **Drive-modified timestamp shown by connector:** `2021-02-03T22:34:21.945Z`
 
@@ -53,7 +53,7 @@ Do not substitute a 2026 pleading or forensic report for the 2022 primary ACTA.
 
 ## 4. Deletion-continuity consequence — superseded for the expanded full-ACTA mandate
 
-This late retrieval result must survive deletion of the originating chat. A fresh thread should no longer waste time re-discovering the 22-Jun-2011 Drive locator; it should use ID `1k6zmHh59XbkhWWqqY0VEC_vLKLhNy0Az` and focus on authenticating/completing the surrounding source package.
+This late retrieval result must survive deletion of the originating chat. A fresh thread should no longer waste time re-discovering the 22-Jun-2011 Drive locator; it should use ID `SP-PRV-LCTR-GD-F1CB8F07FBE47EAFA256` and focus on authenticating/completing the surrounding source package.
 
 The former conclusion **DELETION-SAFE WITH OPEN EVIDENCE** applied only to the narrower source-locator update completed on 17-Aug-2026. It is superseded for the later request to publish full public-safe ACTA text, ACTA files/images and a complete linked event record.
 

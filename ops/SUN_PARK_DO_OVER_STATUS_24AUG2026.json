@@ -41,7 +41,7 @@
   "priority_sources": [
     {
       "id": "SRC-2016-MEETING",
-      "description": "Native 11 June 2016 audio, metadata, Simó/CLS report and clean transcript",
+      "description": "Native 10 June 2016 audio, metadata, Simó/CLS report and clean transcript; preserve the later 11JUN2016 derivative label as version history",
       "status": "pending_native_control"
     },
     {

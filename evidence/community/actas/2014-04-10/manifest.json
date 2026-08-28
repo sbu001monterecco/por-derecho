@@ -1,0 +1,1704 @@
+{
+  "schema_version": "2.0",
+  "id": "SP-ACTA-2014-04-10",
+  "slug": "2014-04-10",
+  "date": "2014-04-10",
+  "body": "Comunidad de Propietarios",
+  "meeting_type": "ordinary",
+  "language": "es",
+  "status": "located-package-digitised-public",
+  "privacy_level": "public-redacted",
+  "artifact_kind": "public-redacted-digitisation-package",
+  "redacted_facsimile_available": true,
+  "source_page_images_available": true,
+  "complete_public_text": false,
+  "digitisation_complete_for_located_copy": true,
+  "manual_source_line_verification": false,
+  "native_page_count": 155,
+  "native_page_count_status": "verified-for-located-control-copy",
+  "source_variant_page_count": 155,
+  "source": {
+    "filename": "paquete PDF nativo de 155 páginas (frontera ACTA/anexos pendiente)",
+    "bytes": 4730410,
+    "sha256": "12fcefd550f69462613e91aec49ac32b69cf3c2351463a751363c663f37af32b",
+    "pages": 155,
+    "source_document_id": "SP-SRC-ACTA-2014-04-10",
+    "legacy_id_aliases": [],
+    "source_page_scope": "54-page-notarial-act-plus-100-incorporated-pages-plus-simple-copy-certification",
+    "variant_note_es": "Paquete notarial 422B de 155 páginas: 54 páginas/28 folios del ACTA DE PRESENCIA, 100 páginas incorporadas y certificación de copia simple. Incluye aviso, poderes, asistencia/voto, objeciones, deuda, la declaración presidencial de 2012, circulación/retención, ACTA de 2012, cuentas y presupuesto. La objeción escrita de 2012 y la variante mecanografiada completa siguen abiertas. La autenticidad, circulación original y validez no se establecen; todas las páginas públicas quedan íntegramente redactadas.",
+    "variant_note_en": "The 155-page 422B notarial package comprises 54 pages/28 folios of the ACTA DE PRESENCIA, 100 incorporated pages and a simple-copy certification. It includes notice, proxies, attendance/voting, objections, debt, the 2012 president's statement, circulation/withholding, 2012 minutes, accounts and budget. The 2012 objection writing and complete typed version remain open. Authenticity, original circulation and validity are not established; every public page is fully redacted.",
+    "native_publication": false,
+    "variants_recorded": 2,
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "bytes": 1823140,
+        "pages": 3,
+        "local_source_status": "missing-local",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2014-04-16-TYPED-6P-PARTIAL",
+        "relationship_kind": "materially-distinct-typed-minutes-partial",
+        "relationship_es": "Variante ACTA mecanografiada de seis páginas, fechada en pie el 16 de abril; sólo se han localizado sus páginas 1, 5 y 6 como PNG. Difiere materialmente en horarios, porcentajes, función notarial y acuerdos bancarios/administrativos.",
+        "relationship_en": "Six-page typed minutes version footer-dated 16 April; only pages 1, 5 and 6 are located as PNGs. It differs materially on times, percentages, the notary's role and banking/administrator resolutions.",
+        "classification_status": "partial-pages-1-5-6-only",
+        "classification_note_es": "PNG p1: 651.003 bytes / 8ccd619b…; p5: 718.590 / a907da8e…; p6: 453.547 / cdd2cd49…. El PDF nativo completo y las páginas 2–4 siguen sin localizarse.",
+        "classification_note_en": "PNG p1: 651,003 bytes / 8ccd619b…; p5: 718,590 / a907da8e…; p6: 453,547 / cdd2cd49…. The complete native PDF and pages 2–4 remain unlocated.",
+        "component_files": [
+          {
+            "page": 1,
+            "bytes": 651003,
+            "sha256": "8ccd619b3bdb0d7b34876ff446b678e8ba3ea8f937e379c1ae6d9a58ee636c4f"
+          },
+          {
+            "page": 5,
+            "bytes": 718590,
+            "sha256": "a907da8eaaf64fdae3e206c96fc63d4b6c8e5c1d547a30d3afe1df6bc3d24e23"
+          },
+          {
+            "page": 6,
+            "bytes": 453547,
+            "sha256": "cdd2cd4942fdf2df9d4d4f75374ccc342c3308a4b660f19e2d646fa53bb985f3"
+          }
+        ],
+        "record_level_sha256": null,
+        "record_level_hash_status": "multi-file-group; use component_files SHA-256 values",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2014-04-10-TYPED-VARIANT-PARTIAL"
+        ]
+      },
+      {
+        "bytes": 132823,
+        "sha256": "80473a7499af3c1ac30763e9bdef7555d9358752e99dd6373ddabe230abe57ae",
+        "pages": 6,
+        "local_source_status": "missing-local",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-NOTARIAL-RESPONSE-2014",
+        "relationship_kind": "related-notarial-response",
+        "relationship_es": "Respuesta notarial separada de seis páginas; comunicación de parte, no ACTA ni sustituto del protocolo 422B.",
+        "relationship_en": "Separate six-page notarial response; a party communication, not minutes and not a substitute for protocol 422B.",
+        "classification_status": "related-source-not-controlling",
+        "classification_note_es": "Metadatos verificados desde la copia de custodia; permanece separado del ACTA y del protocolo 422B.",
+        "classification_note_en": "Metadata verified from the custody copy; it remains separate from the minutes and protocol 422B.",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2014-04-10-NOTARIAL-RESPONSE"
+        ]
+      }
+    ],
+    "acquisition_note_es": "Dos portadores profesionales posteriores (septiembre de 2014 y diciembre de 2015) contienen copias byte-idénticas. No prueban la circulación original; mensajes, sobres y cuerpos profesionales permanecen privados. El objeto Drive compartido en junio de 2014 ya no es accesible y su identidad binaria no puede cotejarse.",
+    "acquisition_note_en": "Two later professional carriers (September 2014 and December 2015) contain byte-identical copies. They do not prove original circulation; professional messages, envelopes and bodies remain private. The Drive object shared in June 2014 is no longer accessible, so its binary identity cannot be compared."
+  },
+  "redaction_categories": [
+    "identifiers-and-contact",
+    "signatures",
+    "owner-unit-vote-and-debt",
+    "banking-data",
+    "reserved-annexes"
+  ],
+  "created": "2026-08-28",
+  "public_artifacts": {
+    "transcript_es": "evidence/community/actas/2014-04-10/transcript-es.md",
+    "provenance": "evidence/community/actas/2014-04-10/provenance.md",
+    "redaction_log": "evidence/community/actas/2014-04-10/redaction-log.md",
+    "redacted_source_facsimile": "assets/docs/community-actas-source/2014-04-10-source-redacted-facsimile-es.pdf",
+    "redacted_source_facsimile_sha256": "85d8ea3ec0cfaeb622c53061c033523e9d4735d613ab706ad810c0a4c2ce55c7",
+    "redacted_source_facsimile_pages": 155,
+    "source_preview_pages": [
+      "assets/evidence/community-actas-source/2014-04-10/page-001.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-002.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-003.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-004.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-005.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-006.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-007.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-008.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-009.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-010.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-011.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-012.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-013.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-014.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-015.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-016.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-017.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-018.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-019.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-020.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-021.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-022.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-023.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-024.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-025.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-026.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-027.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-028.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-029.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-030.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-031.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-032.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-033.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-034.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-035.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-036.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-037.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-038.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-039.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-040.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-041.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-042.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-043.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-044.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-045.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-046.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-047.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-048.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-049.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-050.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-051.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-052.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-053.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-054.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-055.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-056.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-057.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-058.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-059.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-060.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-061.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-062.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-063.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-064.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-065.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-066.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-067.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-068.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-069.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-070.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-071.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-072.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-073.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-074.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-075.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-076.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-077.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-078.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-079.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-080.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-081.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-082.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-083.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-084.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-085.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-086.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-087.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-088.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-089.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-090.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-091.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-092.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-093.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-094.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-095.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-096.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-097.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-098.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-099.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-100.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-101.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-102.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-103.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-104.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-105.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-106.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-107.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-108.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-109.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-110.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-111.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-112.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-113.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-114.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-115.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-116.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-117.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-118.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-119.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-120.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-121.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-122.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-123.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-124.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-125.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-126.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-127.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-128.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-129.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-130.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-131.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-132.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-133.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-134.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-135.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-136.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-137.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-138.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-139.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-140.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-141.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-142.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-143.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-144.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-145.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-146.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-147.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-148.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-149.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-150.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-151.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-152.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-153.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-154.jpg",
+      "assets/evidence/community-actas-source/2014-04-10/page-155.jpg"
+    ],
+    "source_preview_count": 155,
+    "source_preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-001.jpg",
+        "sha256": "c497b39350f6ee097a2def1476376ffa40fd7cec738460ce6cc5b4ecb00ab3e8"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-002.jpg",
+        "sha256": "f2a9989aa8838bd36fd3bc8ddb4631d59adbe56b07090179d3a734b93810a51a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-003.jpg",
+        "sha256": "556344a6e73d46dc72a1b3c48543a6bc792695bb20e6ca476b1728e617a1b689"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-004.jpg",
+        "sha256": "0845b70d81e45fd72db07838087b6a3f2caa1ca717f448af7c8a43441e03f416"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-005.jpg",
+        "sha256": "22e61589c0291a4dc945d538bf9296f1645aaea18f8953be1e3e8011c01aad4f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-006.jpg",
+        "sha256": "3b2584aad226c4872873d0258c1062efb0a43d5dc21a096e093f999ded3edd64"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-007.jpg",
+        "sha256": "bae47a8b9108c0307ab77e65bb5d576d016bf0581db996119c2979ac2b38dba6"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-008.jpg",
+        "sha256": "8a5a6145738ef60207e466e5d2c9ea969d6035132b681d775d683a7f378a1181"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-009.jpg",
+        "sha256": "0aefa39882ee334d00046f04fec4acfa4420010915751f27ff07a4f4277cf74f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-010.jpg",
+        "sha256": "aaf1a25995c6b60ab8fd5ae5db5e18196cf9c3e31582ca30c021fb5354f6b00a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-011.jpg",
+        "sha256": "dc14ffce693f715d76323a68d7b9a4c568ed6eec07bcf91970fff9511949de06"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-012.jpg",
+        "sha256": "071e16dc5a8df4fde13250c062823d6bf9eb8a1b81164ea5da3718e7325212de"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-013.jpg",
+        "sha256": "b52dbc32a0a2f806364daf0934f048d78ace003c41451aeb43160d2a84eec5ca"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-014.jpg",
+        "sha256": "58ebedf316574ec32d6325704e38240555cef55ba78f7dfac6d784831fff0899"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-015.jpg",
+        "sha256": "b3a7ffa8761135de6ff192d44c6c3585f5268af498a0cb27e53bcb490fac6298"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-016.jpg",
+        "sha256": "1787f34a9efa6c7a73e9a56c12907b9c737a6894dd97ab378df0d03fc5f19d58"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-017.jpg",
+        "sha256": "cbcfc7dea961e714d75cfc03bc8c37aae95f4044fe412bbd25c2d42af7265ac6"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-018.jpg",
+        "sha256": "a200a1a3f7b92f160615aeb4e34242f65f36bbb20294eb7fb7e88c43e647f4ea"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-019.jpg",
+        "sha256": "dce9750fcaac06addfdb681255d8a470065bd44538e72e9f82e886fb055e1071"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-020.jpg",
+        "sha256": "5cdea5f1d5683d1dc01c162fea11a95d6a675b5f98271142e725e3f6a065196f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-021.jpg",
+        "sha256": "87847f82657d5800321e54d1b323285075c35e0243172561f6fabf80cbf955bf"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-022.jpg",
+        "sha256": "f37d6141ccbe4d4eaf76a11fa26447d383b11b48d072be44380e857ba7e4f00a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-023.jpg",
+        "sha256": "6305ca597e8b54a9958f05ddf72d7838d3efe5ea93f4700abc88081a53444758"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-024.jpg",
+        "sha256": "4378ecf664b86dcdb8fe9e2b47b3adb9fc860422f34be1c2beb47332838414a5"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-025.jpg",
+        "sha256": "f687c96ecd3259bf97600ee05c0547c018eff548172a580a9587eae8dea5d158"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-026.jpg",
+        "sha256": "18d521ddf9838a6857aa2bafbd924b3c6162b4368070fe3e6f2a50bd9df101ff"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-027.jpg",
+        "sha256": "b7d5e511bafa8acf07f8084aadf1d961fae51102bc9371039308c1f37a35b383"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-028.jpg",
+        "sha256": "be375dec12aa1eca83a4ea5e563e0a3f6cd488d74f299d43e3774d899f11f62f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-029.jpg",
+        "sha256": "8ed4efb0171b2ece4405119db8ae437246fa57e74a7a61f44f578eed447224f3"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-030.jpg",
+        "sha256": "d3bd351122d15232ec4a2c3e1fb28afb363bf1a11f946133e5b2adc1a32c1c67"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-031.jpg",
+        "sha256": "a676270c895e084a59831ea5d177abe9f525dce6fb57c0a68dcd2cf29196d3b2"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-032.jpg",
+        "sha256": "6293da371c4e4a35679b29e7bab555e2edefad3cecdb083bbe57c612a8629c8f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-033.jpg",
+        "sha256": "2425f589fccf67b52136cdc3c88a59e6d2d148a8b25c3d9b1c47df9d4dd8ec67"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-034.jpg",
+        "sha256": "bbc9b706feff16c3a08bf79fa9c622e800fa07c17aeefce2f1e30c9b355b099e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-035.jpg",
+        "sha256": "83c0efe5ff65280beba0f80112935616f692481181d5f3e0ca5fc981595006ef"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-036.jpg",
+        "sha256": "09cb5c35fb3dde578cbef99b267aad3b450336953d38b89eb69325be7e746392"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-037.jpg",
+        "sha256": "f1f7f6d56a31342c0af587ca26efbe46c0208db2a7fb234322a04f83e4a3576e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-038.jpg",
+        "sha256": "33c4db72cc7bfa25166c200eeebdb19d13499ac6c132d06a67ad769969b16bea"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-039.jpg",
+        "sha256": "9ccf734644681fdede24d8ad6759729dc9fd141ec19e8f6fd30b069554757eac"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-040.jpg",
+        "sha256": "7c264e34aba0bcee24ed1a7b8109fe65a6a6f1148059eba8848a4372dd3021f8"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-041.jpg",
+        "sha256": "d24589bd8e240bf46de276725833bae9612325dd2a45d0a20025a29786b78963"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-042.jpg",
+        "sha256": "eeb041f66db35258badf121d66ee86bf202d250ba1b391cb02b64654dce733b9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-043.jpg",
+        "sha256": "81b482871f3e17f1265e8ac6de41de2fa5f3ae87d220208f7190595d1b452c09"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-044.jpg",
+        "sha256": "e5d3757c043802a10a5b975c3b4fcc9d2eff131a6372b14af9659a651be68aa8"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-045.jpg",
+        "sha256": "3fc7e34c4025d310b18a8664c90f048fd5237d474d8a5f362f1c5a1799e9fd47"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-046.jpg",
+        "sha256": "3ef1c543aa6d74f6ed511165ef48343ec50557daf955236dda3d6054da81899b"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-047.jpg",
+        "sha256": "7a422703b41c6766125511862729c893c8adcc6a4f65d514f0ee7e600234e449"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-048.jpg",
+        "sha256": "d1c0d0c25cc5b4b82d843789cfe876dc1efcd4539773bc6f615a95de48e8994c"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-049.jpg",
+        "sha256": "081d3824c6deee0cb5517c8070709bf1a31a5993f6f7e842795faf0eec0cc4b0"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-050.jpg",
+        "sha256": "98fbcc6f937b79b2042e849b401bf07d08f937fc13857f8b06495d385273bb25"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-051.jpg",
+        "sha256": "d2f30d8e636e8812069ddb9c40ea2c77e46798d5b4c540853c38c24d9dd9b239"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-052.jpg",
+        "sha256": "52bfb313746e3a4991ea6ebe7aa1d3369cd75c296e879e0a8203c82303c72479"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-053.jpg",
+        "sha256": "7d2f00c25f0d197e0b108a55a53c7f84c6efbd0aa827486f1905a6423a65db57"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-054.jpg",
+        "sha256": "b51979715bbd630541e8d77b004ad380092fd58524ac806aab8512880c2548f9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-055.jpg",
+        "sha256": "a88706f856d97a8dac78a5cbe0329257653bc4b81c49baa45b12acc825363501"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-056.jpg",
+        "sha256": "135686e86c84f51b6443aa0ba47e3da235bc1a144d5de36f5667c21f3b0b7cab"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-057.jpg",
+        "sha256": "9108a51aaa97fde8a81f1d3c363eae6f5066bd540a22af2cf27bc72d5b9df3a1"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-058.jpg",
+        "sha256": "6a5fa120a8c4811af40bc5ea60da614d530948eaca26c0e0e8f778a4b434f3fc"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-059.jpg",
+        "sha256": "c256a8272f103a13f9fa0a32e974323d91d96b80b34e1f196fccfc85a9d319c8"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-060.jpg",
+        "sha256": "ba2abe5095bec49ad72a3471724c2cef42575e2807dcd2c94aad0e1e145c190b"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-061.jpg",
+        "sha256": "a40d1482e554ed5cc5fb022d22c7a00769f7018b0c56c1f446752fde8446027c"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-062.jpg",
+        "sha256": "bfc6fb8c34bdc5b4cfc9495b7225fc0983e7c07f9b18b08f4a06b60d963d8fc8"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-063.jpg",
+        "sha256": "2478ce2a5ff92ed980c962a563fc9f99857b6d161fde9a8c10e32612f2957a41"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-064.jpg",
+        "sha256": "86aa0d44797fa8354b38db64589d5970ea981bff05fc2eab4d2e49d178232247"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-065.jpg",
+        "sha256": "31f6762e3b5298a0fdfb9f6145f7acfb2f50a747c91e0d79dd228ab2afa95cdd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-066.jpg",
+        "sha256": "8ccc7cf193b974d1efc9b6842af167b852151ffc8b7300c989effd9d4e4826fd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-067.jpg",
+        "sha256": "969f866c2a281125b4d0300d0700a5a2c0e04f384a803de2ae28826b0cd6882f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-068.jpg",
+        "sha256": "e6c5972cf5fdb14465bc33882e04a52c3573fc6fbcd9f8fa0a0bfface9efdd14"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-069.jpg",
+        "sha256": "73211a9d0944b72f1fdda11898f3d550ec1b4b8917dec2b55cb22d4e8bdbb114"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-070.jpg",
+        "sha256": "a71720331bcda82e46fc0e94f8fb3b214375b07a1a9304b6d8e7b14e0dc70170"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-071.jpg",
+        "sha256": "6f2aaf85cba246a340784e4512c67f59087b47da9c169f932b1efbc425ce288a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-072.jpg",
+        "sha256": "659b48535513786c8f66c9b76db0f074427011abf4e6033bb6d399003c639a10"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-073.jpg",
+        "sha256": "05a3aed8258ec5c874bec4c019bd351fe0592e6649e741d27e0503387bb7d7ae"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-074.jpg",
+        "sha256": "939729dacff4e5565c3285f223999182dc083638ea8abaa964c219a8e96468ca"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-075.jpg",
+        "sha256": "ce8ef1d23f13fed5bcc2fed1aab6c5e4a023fd4b9188cee8706f2f6ab7b98bb5"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-076.jpg",
+        "sha256": "c49cfff5afac9b3a62da0e52d502c32fb69f8b539241e818af2d21233255e7e9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-077.jpg",
+        "sha256": "0ec22e5c670a1860e0907d7025fb8a6b84f7d1c1b4fd519b08cec470750ff618"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-078.jpg",
+        "sha256": "a33d2e12764afc9cb8a243efb0bd25ba26b7c95528eef9f0de404ce99393e0d3"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-079.jpg",
+        "sha256": "e0310ff9b7254bd8518b09c4d53422e5c3fea7d7161f9b13de7c13e3c9d02d91"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-080.jpg",
+        "sha256": "e52efdb876bcf4de1984a69dfe2dfa1adeb9c023ba98e6502e0d39d667da90dd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-081.jpg",
+        "sha256": "7e86a1a9e045a7960cda9ddb88ce44fd3c8ae880bab6b519cc700a9508c64fc9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-082.jpg",
+        "sha256": "415d31ed068f0a662aa7d9efc049969798e431ab83dfc7dc30768f2f03348774"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-083.jpg",
+        "sha256": "5fd95e87ee5e837abe7e355fc955ea62571f36c87c7f002e317b93446d1f4fb6"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-084.jpg",
+        "sha256": "3b6df1aef55857523af77133acb77927c61f772a938d95239a61934deec84090"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-085.jpg",
+        "sha256": "3cfd9ef1f2632d713c5a970e92e57e6460bd24ac9b0548a5b16c0ffaeedb6efd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-086.jpg",
+        "sha256": "d059bf23646a37bfca131fa5618ceafbe175e34f867229abebae3b22620abf3c"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-087.jpg",
+        "sha256": "ec7818087529f8199fca524ac8d464f5eef45a961cc2d7fc73bf9fb53a8a82c7"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-088.jpg",
+        "sha256": "506a3211cfff1295b357a9c33187b7e778a15fadadd4340203c0a955fedb802e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-089.jpg",
+        "sha256": "eec876e4c97bbb52612345b26d8dda382f61a943bc6c4a68deecec2d002e78e7"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-090.jpg",
+        "sha256": "fd876b0563e9e7ff990e1e9fc99142e75259ca0465cecd410e88fff56585c778"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-091.jpg",
+        "sha256": "f86ee2ac7e4f449a187cfdba2019ef824f396a1f24448362afc8bf7f8b805177"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-092.jpg",
+        "sha256": "a6ee063e332ff2704d1431cae33a40aa872a88786d876f34a7940c84b58193bd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-093.jpg",
+        "sha256": "5e814344bed9dffe902b6e54d5d9661a81732bb9b8f6fb650bd9974e58140434"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-094.jpg",
+        "sha256": "a5590f43f7ca94ce490fc08c545100952da79d5a0d9490fd74927ce86649d52e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-095.jpg",
+        "sha256": "963ba78865432c7d51073c3634419d8fa57295e4f87f711ba5e78bbab34110d9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-096.jpg",
+        "sha256": "a67e44c8402e516ba7322ce9ae86bc17e10652e882195ed4bc66f339adca26ae"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-097.jpg",
+        "sha256": "926bc7d0d0cf16ab7d5f7daad451fa8924fe1296b2190e8b52c9513561723e9f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-098.jpg",
+        "sha256": "8ca423ddb9e517b4a2f60c00c235438ca48a15f4acfebce496bd653fa45aa05f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-099.jpg",
+        "sha256": "d59726eacb6574c01b926c84508e314965a3144d8eab391f762b33cb44062100"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-100.jpg",
+        "sha256": "a56a5e0bebbcbb030986e1846df06469aa2946be9f4cbe69988c7a8b8db1ea31"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-101.jpg",
+        "sha256": "072eddf87474dbfbb841d0df7b78f9b5d82a1b9bb31befbb4668f9f9da7445da"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-102.jpg",
+        "sha256": "cd0f1715d3dab4e218a116745c31d00bfe45309fcc10bc7a4ddeb71746cfc1f9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-103.jpg",
+        "sha256": "a419eaf6a90c539c2f74d0f5a956c7ce94b0e7c8995a8defa79f1eca9e9e6acf"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-104.jpg",
+        "sha256": "f0c775dda7345e711b5161c99d792423eeb2485c3ec7d0fb314b57ccba19a748"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-105.jpg",
+        "sha256": "8639b4a8bf46839cd710a4714e1b0cb775f603aaff37863c251f0206fd7cd87e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-106.jpg",
+        "sha256": "2202280f215f1914d5aaa0c1a30c224300096d93fe715d43ebc88c289488355e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-107.jpg",
+        "sha256": "57e632fb1969634170128a83c1e61b28661f2d3b91aeadaae24b9bf8465a2119"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-108.jpg",
+        "sha256": "c938d6c187686764e741a1a47fc2cee28e1e4f7175a2268546643e0f6dd08d88"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-109.jpg",
+        "sha256": "c500b6490b01731c85eb2b0dfbea0320de28b8496e7bcab71003be97c80672d6"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-110.jpg",
+        "sha256": "87b10b4f00c5be180be404b7f18b243b326206eb13f8e33f8a831505d048e8bd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-111.jpg",
+        "sha256": "acb82ab9c699627884c2d69cf5bd13548661e1c6438f3b76406247695d5afc29"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-112.jpg",
+        "sha256": "7bd6a6674034560bd0e7080634ac87cb3211b4eba9a0a613e9034256630b542f"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-113.jpg",
+        "sha256": "3d45d8aaf83d6088e71c2fc0c9184bb0897714f600b600dda45983ffba7b1769"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-114.jpg",
+        "sha256": "73011f5ed8efbb3102f42f6cac798e5323bcb96a7532ef391ebfdd01eb64f505"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-115.jpg",
+        "sha256": "638acab60d81cb3e8045075c8322a398c4843de0f16225601016116a9847c6aa"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-116.jpg",
+        "sha256": "910b0c27efada2389a35aeaae1fc82b74cf547118bd93355c2db7dc0a9520932"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-117.jpg",
+        "sha256": "9a5f363d65f2c0d4b2ebf1fa3a18a9a0eb87b3dbaf5a938a31a531adbb18631b"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-118.jpg",
+        "sha256": "dc7307d0b0d6164c9680cbbe5ff1b83533bee7150660c956822ca66c53248565"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-119.jpg",
+        "sha256": "b3ea0979bb68c44942c8891fcb5e0330adf4e18b841aff4fc43e70b218df7365"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-120.jpg",
+        "sha256": "85c41872c0248ef67264fcf764863fb5276c09e5063666f28137831a8b546564"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-121.jpg",
+        "sha256": "2f6d4c9aba62bc7f13e7ea9a6363e90124d0be72779bafeb29f7b154665ff2b4"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-122.jpg",
+        "sha256": "0ffbd5bb637fa9d72c89b3bf1eb4d713c68df8331af2e63b665eeb5857098b92"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-123.jpg",
+        "sha256": "603edb79039c0b8505566bc7a80fb8639b3fcd809b6f49ae86c2c86847769cf0"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-124.jpg",
+        "sha256": "48634e437e51b43d9436315323a80ee4a6ef6e6b2142130e217c1c933b4514a3"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-125.jpg",
+        "sha256": "83352e75517d70276275f05b5262a5d277cafa9aead26883f169bb5803ef5012"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-126.jpg",
+        "sha256": "9e1407612b76a6f89b6d75792dc32f6985724c062acab4d8f4f1aa4a40f65da4"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-127.jpg",
+        "sha256": "d2374659ee1fe8b3c496a7209d9d090e9d951db3b26dd767ded754d9809d499d"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-128.jpg",
+        "sha256": "ba91760ba29a260238cbcd4e2be14b226e82a0d400990211d0371ee2d915d228"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-129.jpg",
+        "sha256": "c28ea92766f655ed2eaa9ca47d602a1468c155ab21cd8460f1d6a1b9930b56fb"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-130.jpg",
+        "sha256": "18cc83b9bb21053129db1686994538aa6c7256fb292620e8bed84ced5fbec758"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-131.jpg",
+        "sha256": "6642b405d7ca22360abb08352b5099b6dbe5196b6db42ca986da7ebf6a0e0367"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-132.jpg",
+        "sha256": "707a66063f1a37d3548d518096507a9d587e41a765040765f660f3a035ba5598"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-133.jpg",
+        "sha256": "22e4a900e6afb2adbbc34015dfc961b251883203ac734c403e64075f6f0bcbf9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-134.jpg",
+        "sha256": "8003cfcd20b050a7511ec4abdbda71cb36e0fb7868da9e872c39d742e865bc3a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-135.jpg",
+        "sha256": "49ad84394cffc8c610055df07edf159d2d73bf1f6e47ce518338cef4574c90d9"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-136.jpg",
+        "sha256": "9ade31734eb3972f728fe30f09ee539132ded5942c2b5e23ad33331ae58a7b62"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-137.jpg",
+        "sha256": "dc661a3599b91271e7246985e413bb9e05ee61bcae5c931da96d1587f2ded3d1"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-138.jpg",
+        "sha256": "2349145ed6753b2ce62149159ab6ff1d9ed4a89aeffd96c19194a316e5925471"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-139.jpg",
+        "sha256": "f0f8e51d475baec4b6b7f86ac1808903fedd583e6a204716cf8faf2ebf6dbbd8"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-140.jpg",
+        "sha256": "3ae4f24f209f2e4e77d18e951f1bc92c054d7d9ed30945b830383126cb8a3480"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-141.jpg",
+        "sha256": "2af514d3836742f2cd8808a5a4daeb94db99c15a64d200aa497f8d46c9d556fb"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-142.jpg",
+        "sha256": "0ca813bc54aa8fdc7e0dfe993ae3b69b91219f7a329a3de23683749f53ef172e"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-143.jpg",
+        "sha256": "5fcc18aa3751a6febd7ba9545503bc7eab6344cc73f678b49178e8bcd680fbda"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-144.jpg",
+        "sha256": "b5aa0c8f1a8eb6d768bd8d8f263e9ed0daad4aeb74849115441d8eb14a17544a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-145.jpg",
+        "sha256": "ee84fc1e676f876cb8a17eada2fe715c66c23ef6bf41eb1963f4b547f46a8466"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-146.jpg",
+        "sha256": "58b3f72805ded5d5ef4a7ec49fc97d3818b6cc5cc754f656a6ab842614e4d78a"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-147.jpg",
+        "sha256": "17adda53dab4dac20715278a33f1b1b21ce548b18e92f68f92f1fbea688fe930"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-148.jpg",
+        "sha256": "6bae0f133ed366e623d177930c260e712ba81a5f34e92b1b7cf13edae42333da"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-149.jpg",
+        "sha256": "c3618db32f56c5ae879c35a78721b930ba48f084e9733937b08ad775e230a5f4"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-150.jpg",
+        "sha256": "7d177e7f360fbd3b205b82e280de28eba64d1454036dcc77c6ba6bf99806cdf2"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-151.jpg",
+        "sha256": "a7671581e6d08af9c7c8a0b0f09e1784214fb8b2636ac57c02c0fcba3ab4196c"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-152.jpg",
+        "sha256": "32541d88543dc43009e74803e2cfa9e0493f4eaedfdf7dc50e624c07575281bd"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-153.jpg",
+        "sha256": "df07bdf943ff8ea0526710d3c088ab266a4d6b9f9ba5d1e260ed09c01510df63"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-154.jpg",
+        "sha256": "edd2a02b7160b95e152179263e53f3757c6bfa6976c905ea7e77fc9d0de4e394"
+      },
+      {
+        "path": "assets/evidence/community-actas-source/2014-04-10/page-155.jpg",
+        "sha256": "325e6f77e457f95babdf60a91a5f37e92d8915ad473d0db1f643c88eda38fd03"
+      }
+    ],
+    "pdf": "assets/docs/community-actas/2014-04-10-public-redacted-es.pdf",
+    "pdf_sha256": "111d23a3ecfa1167d8b8ea4fe347772734afa7240a8c3e87e4f460b4c038a554",
+    "pdf_pages": 156,
+    "preview_pages": [
+      "assets/evidence/community-actas/2014-04-10/page-001.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-002.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-003.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-004.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-005.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-006.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-007.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-008.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-009.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-010.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-011.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-012.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-013.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-014.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-015.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-016.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-017.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-018.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-019.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-020.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-021.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-022.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-023.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-024.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-025.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-026.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-027.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-028.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-029.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-030.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-031.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-032.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-033.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-034.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-035.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-036.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-037.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-038.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-039.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-040.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-041.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-042.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-043.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-044.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-045.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-046.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-047.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-048.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-049.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-050.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-051.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-052.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-053.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-054.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-055.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-056.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-057.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-058.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-059.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-060.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-061.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-062.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-063.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-064.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-065.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-066.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-067.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-068.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-069.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-070.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-071.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-072.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-073.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-074.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-075.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-076.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-077.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-078.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-079.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-080.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-081.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-082.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-083.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-084.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-085.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-086.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-087.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-088.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-089.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-090.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-091.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-092.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-093.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-094.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-095.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-096.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-097.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-098.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-099.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-100.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-101.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-102.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-103.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-104.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-105.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-106.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-107.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-108.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-109.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-110.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-111.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-112.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-113.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-114.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-115.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-116.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-117.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-118.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-119.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-120.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-121.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-122.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-123.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-124.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-125.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-126.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-127.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-128.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-129.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-130.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-131.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-132.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-133.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-134.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-135.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-136.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-137.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-138.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-139.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-140.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-141.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-142.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-143.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-144.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-145.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-146.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-147.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-148.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-149.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-150.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-151.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-152.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-153.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-154.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-155.jpg",
+      "assets/evidence/community-actas/2014-04-10/page-156.jpg"
+    ],
+    "preview_count": 156,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-001.jpg",
+        "sha256": "6b1ac03c804852698121f212da83aabfba82ea4d5e2c05ccd968125159520807"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-002.jpg",
+        "sha256": "55e2c42dc770bce52368a62e8a94341c9619b706e1ad113b308977d14d2bda12"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-003.jpg",
+        "sha256": "3d701306080151739cb6037c63567a22593ea94468c1b81aab4d56a0f3fa7186"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-004.jpg",
+        "sha256": "4085e43616f62646eb52cda4d30de055eba83c159629b5b2562276993a96d9f4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-005.jpg",
+        "sha256": "f0db9e13d57ebc35020ba5f2e48e033b3b1a558f3416799f3581cdc26f174ecd"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-006.jpg",
+        "sha256": "0467a8707dc652d8bb5dfb676d28c4dff91e50cd516b7f0c82198f7329e092f2"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-007.jpg",
+        "sha256": "d14a9b3e449474f10fcb46411b25ec1d65d28a2802ba6cde854776f255265b5c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-008.jpg",
+        "sha256": "ce46c21dec13800e3d418e2fa1ae7cc57e59e231326b360e02418742825a6990"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-009.jpg",
+        "sha256": "484c39db4a90afef6a766a490282753386168ff4bab55925287bbb6d72d8ab6b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-010.jpg",
+        "sha256": "82ffe1a77a6932551cc341c88414c7549ff628740cb661b4dfc9bb46f1b02e70"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-011.jpg",
+        "sha256": "2090a5b4c8e0ccdd97b57478195483d166c555b7bfc74efbcb484fb91c76802f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-012.jpg",
+        "sha256": "fa7b7f2c834f31292de286dd7e4d4c885d1a7a700a3c3578198789f30bbd1800"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-013.jpg",
+        "sha256": "f6ec0d602ccb84d6f6b60e34877e2439b03b63cc3a4229871af26e35848ad634"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-014.jpg",
+        "sha256": "3c0fdad93a114364fa5273f69eeb7bfafcaaad785525cd7b06d549774af0a6c3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-015.jpg",
+        "sha256": "162d38f31a4b44a288efae507d526a0d2df97e4eabd0fa521a8b0a7433968f3f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-016.jpg",
+        "sha256": "2ce3a4b11716b4d33880fe74db5f821b495de1d868bac9bbda896a305350d37e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-017.jpg",
+        "sha256": "e3d8f28e933c9570228566ac188f8f7e8364caada7c486be2b1c4548430a404b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-018.jpg",
+        "sha256": "4afb6376c61cfff6004f0b910b87e0e2e84d188b134f2974991fe453759adc64"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-019.jpg",
+        "sha256": "e717d1305095d8f7a6c4dfa647f7a70986edd05921cef5fc8bd41acb8c9b9a72"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-020.jpg",
+        "sha256": "8d658b759058aa0197c64b03f62f20b6fda3a5608f6cee7b6c871fad0fb3719d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-021.jpg",
+        "sha256": "3084ede000458f45f6a70f1b3b004c91b9ca328f9936a669997c2cb0777dcb35"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-022.jpg",
+        "sha256": "41a1a75a8d2829eae49a2f71deb02aed88d117ddffbc317ad7cc24a2a046f162"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-023.jpg",
+        "sha256": "bb14136d33cf7bc340f70246d5feac427cdbab6b2a6e26270690faf4849582b4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-024.jpg",
+        "sha256": "a92b0ef0f38afa35e7a8539f3d44e1f185a41a058ddf4a01f989fff2fa66bf86"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-025.jpg",
+        "sha256": "948ba445949c75609a73ee209f3dd2fc9354266dcfe4a050f171f6162bb42f6d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-026.jpg",
+        "sha256": "0453cbfb425bc10ac61098bdb144bd991d31ecaf32c294ce7fb5ce7cd0e3327d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-027.jpg",
+        "sha256": "708ae635abb169313f6f0ad487b585ed5cd28dac9c6965e8f12b36c2c5c39e54"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-028.jpg",
+        "sha256": "5baccc86adf02fa501da1af5a75777458bba2d51fed65023d04b75fc7c6a1ece"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-029.jpg",
+        "sha256": "ca79237ef9066cac2e7fbf240a7f2841dc5784c7d66106b736bbedf8c331b805"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-030.jpg",
+        "sha256": "133cf44c098433e9998cb6f5babafc1b6416a161e6dfcfbfdfbcb8b405068a43"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-031.jpg",
+        "sha256": "cc11204102f3afe9d4153332f37f2f38c8be028a320e40c3ff155379261460ab"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-032.jpg",
+        "sha256": "47a7518c2a7013dab6ef821c2f543d25aaf8a69a45d36a725d7600cb5937c99e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-033.jpg",
+        "sha256": "956adbc44d5eb2d1f04883a3b197041b15d0f7e02f9b54098e9e3614e77f4dc1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-034.jpg",
+        "sha256": "801b4e7e52f8860f3237970a4dc9122ab189d18395e3c99d3253f537b8555e56"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-035.jpg",
+        "sha256": "52f1a044bfbbd885e20df5a799208216338dfefba54e1159e6bd4c6299656764"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-036.jpg",
+        "sha256": "7dcd80595c247d2268f68c3d3a68d1a728a045837530785888a1102ba7807d36"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-037.jpg",
+        "sha256": "14cc735d9ac8dff9f113b26a5cecbbb104276dc74b1130c4ec95dfe7f250dae4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-038.jpg",
+        "sha256": "e36db07b4f4d5b6cbcc3610934273fd47fb24f58780f1a3510308cdbc2f690cd"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-039.jpg",
+        "sha256": "703261ea2ef81393cb9ea88386b62d7800d919b825d1a4cbe8aa2e7e64f6c200"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-040.jpg",
+        "sha256": "757bd16b3e52a7a7b22b0998b0d3e23498832db938511641c7a7aa51b4de005d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-041.jpg",
+        "sha256": "5a18b90f2414ea73245bec3eb85495de7388158baec0e9532a6b34004feafc91"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-042.jpg",
+        "sha256": "c9120283d879749665d62fa9b8c9030d982ff7a531875cf0e1eac862359a3cf2"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-043.jpg",
+        "sha256": "89434d6128854ffa14876d7128b6f38219ef5493a0a46f29985245cd90da82b0"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-044.jpg",
+        "sha256": "5e0e2bdf79d974cbadc4ee560146ce88b34c6350730a422dfab0503cc9d2400c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-045.jpg",
+        "sha256": "1467dafc103747b2e86d8918b724d6356f054d9a9f2d90ab79a91cd5234d3f7c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-046.jpg",
+        "sha256": "1c931b4e75254ed56fff75eeab37d49ba01eada5dc9f3692d0c8bc60d82b237f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-047.jpg",
+        "sha256": "bc6863aaa4e7c4b576cb2986364c3788ed9966e01ff42adfaf72fce8c5804365"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-048.jpg",
+        "sha256": "df612c4fd7f1328473a6c27c360f513d2ee8bbc413e1144418d9e26585e7d37f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-049.jpg",
+        "sha256": "c2399a9c5188ed16a0bf5ad4b6a654b3581f554557a547b9b333669dce15fd6c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-050.jpg",
+        "sha256": "62d4badec4ffed7fbdefd6d4da46ca6e75d5343696b2f3ba4138707c61082230"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-051.jpg",
+        "sha256": "928f6404842112e57fe694c3099608c5a36c436b3a8f313c68601f05a95070c9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-052.jpg",
+        "sha256": "7e430af419107e5bdc2d02f72960a8ad172653c60a1ff3a1887d08d68afd8e1c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-053.jpg",
+        "sha256": "61540996931a4315e6cf14b41f6da6258153742f4e83a2018778958bc2187638"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-054.jpg",
+        "sha256": "0c960a3bcc864c3d9397f4d21020f854848ae06f87bd0ddb841d0545f807c333"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-055.jpg",
+        "sha256": "67f83c6e450f68f814ae10c0201ab6b960887750d6aef4ce3775cef33130e058"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-056.jpg",
+        "sha256": "dcb8dd0aefe6ddf629bb57c3d3b87c726971138b60a4d913c6b3f755f14f3002"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-057.jpg",
+        "sha256": "82dd0403a9cdab755dc05ffb2b6cbc58dc28ffe306588547887dd07f2d2ebec4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-058.jpg",
+        "sha256": "4814fe82621c2c0e85d4de7d61fcc7e3bb4b0ae720724d1e9638fe001ba3eeea"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-059.jpg",
+        "sha256": "997aa67b98cb8e8052bab8a6ee8a0f880efda5ab2feee68c39107a7ff191dbbd"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-060.jpg",
+        "sha256": "dcee918c142f26a35dafcf4e2bc81c73c8756c523ef6b7c68acfecc72f8e8063"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-061.jpg",
+        "sha256": "9197efb1f8211affa1635e256007cad3e640901ee5dbd43e75c3870a8a345195"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-062.jpg",
+        "sha256": "ace26a1ad4f36f2de2750a12c3ff05c5a6f56776b2dbeffc99536caa6f28f7f8"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-063.jpg",
+        "sha256": "b75c036e534c11abfffb2f56292ca2fd5baeb7b0c6b81339f804c2e08a9956e6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-064.jpg",
+        "sha256": "0efce5f7724d2f69b9638d167d4acfe768b2214742bde92cd4ecbd7cabf0f4b3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-065.jpg",
+        "sha256": "cd3534b381a3f6dc0b2a5b097fb804a3bb8f7511b4c7b8fa80d58c38a2a322ea"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-066.jpg",
+        "sha256": "cf3bccadf211009a82b4f6c1c2546fb7b05b69dd110e2b20fc7570852750c142"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-067.jpg",
+        "sha256": "0892b44578c28b15c9cd5abc973244e889e3ce03668d23b4650ab2f7a9dd0be5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-068.jpg",
+        "sha256": "35aded26d6ae4d54ed4c5b0aa93186db9822f8a9461901e4147290e89952ab8b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-069.jpg",
+        "sha256": "4bb2295e79f7e5101a8438cd1b3060ec0e20c03860424cb04ff4c60bb818eafd"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-070.jpg",
+        "sha256": "b504a3eeef2c64e0d5375cbfb82f12b26ed1d9984ca0a062cb1d12baafcd2b5b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-071.jpg",
+        "sha256": "cfc549eb746c485df1d3822779a52d75d59ff545686387f0578b704370f31d86"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-072.jpg",
+        "sha256": "be6cf09e9a483dbdaca98dda4c249c25805a61db7482874bbe571a35e7ce4994"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-073.jpg",
+        "sha256": "5d0f5cced4a59438cdd30613ab33c84f02419afc43d80ee2983fbb1662fb664a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-074.jpg",
+        "sha256": "ad0ba81748141a1338c89ed9803b8ba82a0424ec6a9e9d92176383230857095f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-075.jpg",
+        "sha256": "1d03ffcce54197c6d4694641971cb2ea1ae0c13a10b11ffd581da9c9e12ef567"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-076.jpg",
+        "sha256": "decb0ff670dbb2af6ff00460b81ebd5f53240cfe06adcfe77cfbe5d0d4aed515"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-077.jpg",
+        "sha256": "94748c7914dda14926578ab1c9dc417dd1c58d6416e5db5b6f3e4ecbd63ddbfe"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-078.jpg",
+        "sha256": "6129349ba44a7fef15ce36443fe9ab87ddf79f54192f5e0135898d14410921e7"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-079.jpg",
+        "sha256": "cba5044182853754a4257c5e262111a9e0984af61d121ec22c53ab9ae7d7e52d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-080.jpg",
+        "sha256": "823e9d095a68dd342e4391c6d202f44d56f5300ec161435af14aa43fb3269f64"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-081.jpg",
+        "sha256": "6e0c45cb11697ee0af7919cd710531dd4c0343dccbe79b354efda5ead97a6e93"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-082.jpg",
+        "sha256": "ec346d3c10e85ec31000bbcb527a4b194709dbc2b373c2397b87314e95deafe9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-083.jpg",
+        "sha256": "676e506d310a9ad673ccf5a1c1d3a046af751e43a64c911cf6af32abadd11469"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-084.jpg",
+        "sha256": "ac70cda55a6dfb48403cff0e3da27e699d165dcf8ee00f09434445219d7a6b8a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-085.jpg",
+        "sha256": "04929973d78ea7c1657daa8f04f4c31c90ad842d2ec25adc8dd7f8ddae5a5cbb"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-086.jpg",
+        "sha256": "3a50d0b8ebac9ddb4dcc0f047c5ec8903fcbb612957499bde2aba6224960a823"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-087.jpg",
+        "sha256": "333b92a92c3918adfda45a1e24b013e8bf434f615062679540a89cd09b160cf4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-088.jpg",
+        "sha256": "c877fd0cc969a5380528bf36f31f5fba69272af4233405e5815867f502541312"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-089.jpg",
+        "sha256": "99281d59b98cb4d5a04d98e3c55b8352e88c2baa750f5208be731032cea1d922"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-090.jpg",
+        "sha256": "57590b5908388488527be0d52be1ddf5866436f7d2a6d739e4aa3c61d47f6597"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-091.jpg",
+        "sha256": "153f4c952fd1c9c1be2f6beb655432df84ed59ee130c3772b008b75949a9521d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-092.jpg",
+        "sha256": "d7bf1b11f58fc7b7d81e254455d2aeccae7ef6502eb2f25155329431b65243f4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-093.jpg",
+        "sha256": "d0f5150aab0a9972af67168d8e3c4363ac31da1e69fd08df219aabe5434d8518"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-094.jpg",
+        "sha256": "496a3a408a96780f2731494c25c633748d717f32654e805aced8f4cd079270fb"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-095.jpg",
+        "sha256": "364947e2b244d1f76f74d56fbed35df9b399f8a5bd0b534119b1079414809b2d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-096.jpg",
+        "sha256": "70867ac093c0559140740076c922b4b5bd5fd7beee1410d7784f0106fb3c000b"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-097.jpg",
+        "sha256": "b91a955c51d36582d1b3df32396fe0ef43b2b4b916b7ab7b5cdd2df159f3c9aa"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-098.jpg",
+        "sha256": "af2ac943e639f500a71217f85101992dae1bc6c63c08da282e8542debf2549dc"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-099.jpg",
+        "sha256": "fb83c9df972b5c77466813a73f7a98683b3a3014fe86d14f00b1ffcfc86d821e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-100.jpg",
+        "sha256": "0315df04cfb943cfa9c1ca5a2e0654f9669fcb53a9b7e248d3f9f6864b3751a6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-101.jpg",
+        "sha256": "3d36755543c8eb0f015171ccf563bcec0a6544bc1afe0106b325412c353d70d8"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-102.jpg",
+        "sha256": "9cbf76717ca097d68933381d7ff0327de4aa02ef44e8fed8c7179b7c5c1a88e0"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-103.jpg",
+        "sha256": "4a1da2c7a2c65012fceb4bd6924af84193197e255b67b35ec0c69b68fdd2d618"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-104.jpg",
+        "sha256": "248b2b07625ae175c3f1b35e49404c85274e8d6774793a28ef66fb7e89b612bf"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-105.jpg",
+        "sha256": "35096319b3f6a0e2029d3fd5e100d0cfc11cd2394b1cf83819337a6176a4b0da"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-106.jpg",
+        "sha256": "6f0562470cada689967139a86bdbddafec1a0ca658772d5798931681df3c440e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-107.jpg",
+        "sha256": "27dd608c02c1e504fdc51925a6c2b8a60b68207fd7b216f6faa3d8386376338c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-108.jpg",
+        "sha256": "aa2ee316f0ae063e0190ebc84c7759f7881482adaf95b6128cc032cad8956e35"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-109.jpg",
+        "sha256": "e6d0fe7b09fc2da9faf67e0575af817fca35e0eebd271a731b6752cef7122398"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-110.jpg",
+        "sha256": "468eecfcaf8b86d7457a9d6e26746babcb199bc3bbee408336a6f1b58fd4025f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-111.jpg",
+        "sha256": "7b347415a6fa087f99ee0d91553e1f04c513e4e2635fb1436374f7c7afed825e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-112.jpg",
+        "sha256": "d0d727950a9ec88903b062f70692ecc3590a9088fc8bf3e8ad513dc7e1d1bb16"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-113.jpg",
+        "sha256": "857a6be614708c8aabfce9f98de2e287d567db2f2e869d542bc34d20234c152f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-114.jpg",
+        "sha256": "76eb2030c32d2b512132d4bff9adfe524f686128f7a22fea0311182f10d1ac80"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-115.jpg",
+        "sha256": "ef1f6e704627d38b7ef9bb21191799852d2550117b7429ecac55cfd964d90ab1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-116.jpg",
+        "sha256": "a05930053407904c4154d1d8cc596cc225c56a0e2331e164253657275b7c76e1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-117.jpg",
+        "sha256": "3beeff2410cd06cf1dd542ff95156e05a4dfe773bd21c10f200c4a17a149fa74"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-118.jpg",
+        "sha256": "8d07a3cf6994a402047d293e266c844d5fe041d03d469ddd9b2beea106ebc509"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-119.jpg",
+        "sha256": "2f23ebaed69d54587c6a402faaf23969f5f019ab4f94297d48030a91b4e7c446"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-120.jpg",
+        "sha256": "34cba748a1c18d6cc57d5520b0d83f1e2c856d810a4d379488462bec2a2259c6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-121.jpg",
+        "sha256": "fa36e8dc49493e5cc711cd9bac7e4a903e5b397fdcf50ad54e4d3de617ca055f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-122.jpg",
+        "sha256": "849038cabffb573f9f170709abe1611f6c86ea7a4f9bbe2b3d543851864cf4c8"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-123.jpg",
+        "sha256": "6e1e04eb7045cc888e32b22a9e4b703e3b9fd4708483872bef47799e018dd4be"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-124.jpg",
+        "sha256": "d8707ac14fad07d649719e4445f30d87ff15b6bef8e9234adfb4312ba1b8b8f9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-125.jpg",
+        "sha256": "0ce52c7827e1fb487a6594e475b03919330c18af19f9f44a90da40ccb073f3c4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-126.jpg",
+        "sha256": "92fa6d9dd41d35dca650034a6d98d5fa2b3192b4a54a38d1411fca9fa2974cdc"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-127.jpg",
+        "sha256": "b8a3f76b752555e142d8d2ed022e725f9d22ebefe01ca79cae2fd8e79f2016f4"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-128.jpg",
+        "sha256": "f0d7898d117854c88de69490ea31446277ede14a59de2ca535d836c8ef468489"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-129.jpg",
+        "sha256": "d4fa0c5e38276389136568435e9c085ffd8f3609626b8aa0d2ae26421a0becd9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-130.jpg",
+        "sha256": "db039f82c65e9f3c0663b2d021a9baf3ea63231ea0ab98c57b652c01a48cd724"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-131.jpg",
+        "sha256": "c14d26f96375538b1671f9942703967935b7f7a2ee3ee90a07cd1d38b1f3d7d1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-132.jpg",
+        "sha256": "f7ea8454e1306ecf694e0090f960bf1f320d9772c1b3d642e24ae82da3205c1e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-133.jpg",
+        "sha256": "8c76fe89f488b46f2d1c124c031ed2f3b615a70616dac2f9d78eb382bc39c3e2"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-134.jpg",
+        "sha256": "17af3870af218c7718ee41e1f0011aae1d4271eb3f6d93f0130e9c0e91e9309c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-135.jpg",
+        "sha256": "318bfe357746edd77795fb7e662ed1cf25cb0e91cf9e1d66325bdee866fdb05a"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-136.jpg",
+        "sha256": "694fb928428f832f49758f2ede8ae5b8f8a2c4579e5963fb520f3a23bf0835aa"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-137.jpg",
+        "sha256": "563547bc8137473ab0b4d50e5dd5e467c8ceb01a8ba12b38132e83a36f222a19"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-138.jpg",
+        "sha256": "23a813322b2b42f9ac5795027890e24f80749781ee8fad27a8723ad6a0637ec3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-139.jpg",
+        "sha256": "415fe59457dc0e50f0f00cfbc53539657ae5e23f33e5fe381c51235f9725b4ab"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-140.jpg",
+        "sha256": "7c1baf06b32c785d65f322549331ec9dcede94e310f36da7ffbe1c2c78bb1231"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-141.jpg",
+        "sha256": "f6ae90e5a182c511e1acc9d3668e3d741419b878dc51d2cb2ca254dbe047c41f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-142.jpg",
+        "sha256": "5e99de91b2059bb0393271f622d2d9b2901531636fd3104b8d6b13221c20276e"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-143.jpg",
+        "sha256": "e4445afeb6c80a0304f2ee2a655453d967d7754ceec7d8053b42148b84b10e58"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-144.jpg",
+        "sha256": "5db2595cfb024d1412bb0897158f66362fb695b56b8852c03e1fd1b7fa25c4f1"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-145.jpg",
+        "sha256": "20824d5ec0fb0e4803ff8dbcdc2e6234be05cfacf4999367eca23fd535b36a67"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-146.jpg",
+        "sha256": "11e6b66e4e2019a686732e2d51cea194357057f6b2df85eedf67e31c67b037aa"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-147.jpg",
+        "sha256": "3cdd31b78313110666c2d53055377977e000c426778bde1fb711a5c23549d563"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-148.jpg",
+        "sha256": "97e72b3e6010e46db04a2c6839aabc930fa2b34d1539e270e9968378f8e5d994"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-149.jpg",
+        "sha256": "60bbd87e0555f1bd1a25fa9220a95361931f40df8976a26519eef622bbc082f5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-150.jpg",
+        "sha256": "fe487eb8ca25e20d463316fe12a06d2e81786aae0cbecaf30e8dcbdbd6e6fb49"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-151.jpg",
+        "sha256": "245078a4f75e0091f98639a3299e42c83d7da78e65a7b149593f790ae263199f"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-152.jpg",
+        "sha256": "8222bb3ea9a0bf80d87e409429f3120348f5202c2e09c62bbe65fa081fbd42b9"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-153.jpg",
+        "sha256": "76fe9b6d38f9d3f381cdf76139b8014f87fee65e4cbe48a9cb6702ddd1276e3d"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-154.jpg",
+        "sha256": "9b998acda13b7cc89131665accece2066bee11944d5c0695f2b16edbdd9bc9a2"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-155.jpg",
+        "sha256": "de52e30f8e6cb497d4da0b22045b9801b206e6b9bc48d6594b6d275bc2d86205"
+      },
+      {
+        "path": "assets/evidence/community-actas/2014-04-10/page-156.jpg",
+        "sha256": "e905e4d1c30a41b1030b0500b07a3c0aec982eae80bf1be5f4c10b4a6f7b552b"
+      }
+    ]
+  },
+  "quality_control": {
+    "source_page_count_verified": true,
+    "facsimile_reopened": true,
+    "all_source_pages_rendered": true,
+    "facsimile_hidden_text": false,
+    "privacy_scan": "automated-pass-plus-recorded-visual-review-pass",
+    "ocr_not_certified": true,
+    "manual_source_line_verification": false,
+    "visual_pdf_sample_review": true,
+    "visual_source_redaction_review": true,
+    "source_preview_hashes_recorded": true,
+    "source_image_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "facsimile_deterministic_invariant": true,
+    "ocr_language": "eng",
+    "ocr_language_selection": "spa-unavailable-eng-fallback",
+    "ocr_certified": false,
+    "pdf_reopened": true,
+    "all_pdf_pages_rendered": true,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "public_pdf_deterministic_invariant": true,
+    "visual_review_attestation_required": true
+  },
+  "public_pdf_page_count": 156,
+  "document_type": "acta-or-minutes",
+  "source_package_kind": "acta-or-minutes-family",
+  "counts_as_located_acta_family": true,
+  "public_text_mode": "full-page-redaction-markers",
+  "public_ocr_available": false
+}

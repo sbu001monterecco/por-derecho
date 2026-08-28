@@ -148,27 +148,27 @@
   ],
   "gmail_locators": [
     {
-      "message_id": "1541a151da1f1751",
+      "public_message_token": "SP-PRV-LCTR-GM-785054F6FB956BE7C761",
       "date": "2016-04-15",
       "role": "remainder of notice material received that day and internally forwarded photographs"
     },
     {
-      "message_id": "1541a132422e7102",
+      "public_message_token": "SP-PRV-LCTR-GM-DE24AC20A898935126CD",
       "date": "2016-04-15",
       "role": "PwC-facing notice package, analysis and proposed attendance"
     },
     {
-      "message_id": "154291cb9c1dab86",
+      "public_message_token": "SP-PRV-LCTR-GM-44001C238EE0A9519AE0",
       "date": "2016-04-18",
       "role": "PwC accounting-demonstration and prior-claim request"
     },
     {
-      "message_id": "15432e003fed8f5e",
+      "public_message_token": "SP-PRV-LCTR-GM-A086307A96549C429EF9",
       "date": "2016-04-20",
       "role": "PwC travel confirmation and notary question"
     },
     {
-      "message_id": "1a0294bdf7a986f8",
+      "public_message_token": "SP-PRV-LCTR-GM-387CC2EC3CF5D0A1B466",
       "date": "2016-04-21",
       "role": "2026 forward preserving quoted 2016 AC refusal, no-service instruction and voting position"
     }

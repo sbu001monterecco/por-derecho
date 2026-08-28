@@ -383,7 +383,8 @@
             "current_conclusion": "15-20 April notice chain separately registered; LPB-side objections and Thompson/PwC representation appear; this event cannot support a universal concealment claim."
           },
           {
-            "event_id": "SP-MEETING-2016-06-11",
+            "event_id": "SP-MEETING-2016-06-10",
+            "legacy_event_id_aliases": ["SP-MEETING-2016-06-11"],
             "classification": "NON_ORGAN_WORKING_MEETING",
             "current_conclusion": "Mixed professional working session, not Community or CEXP minutes; do not count it as a concealed organ meeting."
           },

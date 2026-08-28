@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-08-28",
+  "classification": "PUBLIC_SAFE_PRIVATE_CUSTODY_CONTROL",
+  "scope": "Machine control for the separately preserved private automated OCR derivatives that back the three fully withheld public marker-only packages. It contains no OCR text, native page image, provider identifier or private locator.",
+  "packages": [
+    {
+      "slug": "2008-07-15-cexp",
+      "source": {
+        "bytes": 252353,
+        "pages": 6,
+        "sha256": "06b61e5c4b1a125a3412585f606a53b3bcc5dafcad840aedd6b41aa9a1ebffda"
+      },
+      "ocr": {
+        "engine": "tesseract 5.3.4",
+        "requested_language": "spa",
+        "effective_language": "eng",
+        "language_fallback": true,
+        "mode": "automated-ocr-uncertified",
+        "page_association_verified": true,
+        "page_order_verified": true,
+        "rendered_image_count": 6,
+        "ocr_text_count": 6,
+        "pages_with_zero_ocr_characters": [],
+        "all_page_images_decode": true,
+        "all_page_images_nonblank": true,
+        "manual_line_by_line_verification": false,
+        "source_authenticity_established": false
+      },
+      "private_control_hashes": {
+        "manifest_sha256": "4dfddba414f10b93c8645086fc51c812adca43ba4440c53f49cc29de7a17225d",
+        "package_inventory_sha256": "10a66cb3d8e16b08b607d445e69b136e01f7661b447892826b40b9bc4d839794",
+        "inventory_controlled_files_excluding_inventory_itself": 14,
+        "inventory_controlled_bytes_excluding_inventory_itself": 2681661
+      }
+    },
+    {
+      "slug": "2014-04-10",
+      "source": {
+        "bytes": 4730410,
+        "pages": 155,
+        "sha256": "12fcefd550f69462613e91aec49ac32b69cf3c2351463a751363c663f37af32b"
+      },
+      "ocr": {
+        "engine": "tesseract 5.3.4",
+        "requested_language": "spa",
+        "effective_language": "eng",
+        "language_fallback": true,
+        "mode": "automated-ocr-uncertified",
+        "page_association_verified": true,
+        "page_order_verified": true,
+        "rendered_image_count": 155,
+        "ocr_text_count": 155,
+        "pages_with_zero_ocr_characters": [],
+        "all_page_images_decode": true,
+        "all_page_images_nonblank": true,
+        "manual_line_by_line_verification": false,
+        "source_authenticity_established": false
+      },
+      "private_control_hashes": {
+        "manifest_sha256": "9b844aa847a6279aa621b7edcf35040d50f0f5cf6cb92c7044c3715b60f68a5a",
+        "package_inventory_sha256": "c82096c2bc8d7a5808f07b3f5c43d1d4a4ba75ce5a0adfb6d0c25a4a538f3ca3",
+        "inventory_controlled_files_excluding_inventory_itself": 312,
+        "inventory_controlled_bytes_excluding_inventory_itself": 43522100
+      }
+    },
+    {
+      "slug": "2022-03-11-ricpe-shareholder-notice",
+      "source": {
+        "bytes": 191251,
+        "pages": 5,
+        "sha256": "3858b928d4eee8a4f5e9b21f5452c9e58cbbfbd22debccb38bfe3dd07db303c4"
+      },
+      "ocr": {
+        "engine": "tesseract 5.3.4",
+        "requested_language": "spa",
+        "effective_language": "eng",
+        "language_fallback": true,
+        "mode": "automated-ocr-uncertified",
+        "page_association_verified": true,
+        "page_order_verified": true,
+        "rendered_image_count": 5,
+        "ocr_text_count": 5,
+        "pages_with_zero_ocr_characters": [],
+        "all_page_images_decode": true,
+        "all_page_images_nonblank": true,
+        "manual_line_by_line_verification": false,
+        "source_authenticity_established": false
+      },
+      "private_control_hashes": {
+        "manifest_sha256": "eca6a3ed88ec60848b422e1f0494c50455aa4781e56aca1b4faca6b6b900ba40",
+        "package_inventory_sha256": "b37d3afbd0ec578bfb196511036b8e5836c638f8d7b74a8cda4d7de5c18b1098",
+        "inventory_controlled_files_excluding_inventory_itself": 12,
+        "inventory_controlled_bytes_excluding_inventory_itself": 3498364
+      }
+    }
+  ],
+  "custody_archive": {
+    "format": "deterministic tar.gz",
+    "bytes": 40592332,
+    "entries": 351,
+    "sha256": "d9752bec6c53813a9f27fb18356168908b1123954fe04af9cdbcee18ebfdadcf",
+    "supersedes_archive_sha256": "473a4b620d31a97e9ab03504e599297df69da976c6401974ea77788c3fce3088",
+    "private_file_count": 341,
+    "private_file_bytes_before_archive": 49755756,
+    "storage_status": "owner-only external custody; shared=false; provider identifiers withheld"
+  },
+  "boundaries": {
+    "public_text_mode": "The three public packages contain page-sequenced redaction markers, not OCR of the withheld content.",
+    "ocr_comparison": "Page/image association, order, image decode, nonblank state and nonzero OCR output were checked automatically. Wording was not manually compared line by line.",
+    "language": "Spanish OCR language data was unavailable in the controlled runtime, so the effective engine language was English. This is recorded as a quality limitation and prevents any certification claim.",
+    "completeness": "This control establishes private automated OCR custody for 166 located source pages. It does not establish historical completeness, source authenticity, official-book identity or legal validity."
+  }
+}

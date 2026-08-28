@@ -93,7 +93,7 @@ The primary quantified 12 July 2016 notice to the insolvency administrator is lo
 
 - The primary 15 May 2012 auction schedule contains **158 properties**; 159 and the contemporaneous Garrigues figure 166 are distinct measurements pending a finca crosswalk.
 - **SUPERSEDED/INCORRECT:** Revision 2 promoted an October 2026 / 12:00 setting. The signed 6-Nov-2025 diligence instead relists Valencia PO 1859/2023 for **28 January 2027 at 10:00** after the original hearing that day did not proceed. CR-093 controls.
-- The former AP 16/2014 reference for Drive `1hnZxJUl4jwDCsaM59cAH775YGJCT4fCM` / SHA-256 `1bce9ad…` is superseded: the controlled source is AP **89/2014**, Rollo **793/2012**. CR-066 prevents reintroduction of the duplicate/misidentified case.
+- The former AP 16/2014 reference for Drive `SP-PRV-LCTR-GD-F7E74F1344BFD90C4050` / SHA-256 `1bce9ad…` is superseded: the controlled source is AP **89/2014**, Rollo **793/2012**. CR-066 prevents reintroduction of the duplicate/misidentified case.
 - Adverse judgments, DI 248/2018 and innocent explanations remain part of the required red-team analysis; convergence does not prove coordination, knowledge or criminal purpose.
 
 ## 5. Cabildo / tourism register / Yaiza action

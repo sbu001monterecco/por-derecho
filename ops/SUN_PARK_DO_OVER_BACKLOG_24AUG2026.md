@@ -34,7 +34,7 @@ The subsidiary professional question is whether each lawyer’s identified actio
 
 | ID | Task | Owner | Required source/output | Completion test | Status |
 |---|---|---|---|---|---|
-| DO-P1-01 | Recover native 11 June 2016 audio and clean transcript | Evidence custodian | Native audio, metadata, checksum, speaker-controlled transcript | Transcript reconciled to audio; editorial annotations segregated | Pending |
+| DO-P1-01 | Recover and authenticate native 10 June 2016 audio and clean transcript; retain `11JUN2016` as the later derivative label | Evidence custodian | Native audio, metadata, checksum, speaker-controlled transcript and attendee/capacity map | Transcript reconciled to audio; speakers, attendance and capacities separately controlled; editorial annotations segregated | Pending |
 | DO-P1-02 | Recover certified 12 July 2016 burofax package | Legal/evidence | Original, annexes, delivery proof, AC diary/filing entry and response | Exact notice and response chronology reproducible | Pending |
 | DO-P1-03 | Recover complete 18 May–7 June 2018 record | Spanish counsel/evidence | Minutes, notices, authority, security contract, invoices, payer, access logs, locksmith instructions, inventories and certified statements | Person-by-person and asset-by-asset account possible | Pending |
 | DO-P1-04 | Recover certified 26 June 2018 suspension order | Spanish counsel | Complete order, schedule, service and modifications | Scope mapped finca and act by finca and act | Pending |

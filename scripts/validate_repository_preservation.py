@@ -299,7 +299,8 @@ def validate_five_actor_lock(contract: dict, errors: list[str]) -> None:
     placement_contract = {
         "assets/asset-recovery-preservation-20260821.js": ":scope > .dossier-hero",
         "assets/art1535-reserve-pathway-20260819.js": "main > .dossier-hero",
-        "assets/site.js": "asset-recovery-preservation-20260821.js?v=20260824a",
+        "assets/site.js": "site-pre-treasury-154-hq-20260828.js?v=20260828a",
+        "assets/site-pre-treasury-154-hq-20260828.js": "asset-recovery-preservation-20260821.js?v=20260824a",
         "assets/cam-favourable-pattern-20260819.js": "art1535-reserve-pathway-20260819.js?v=20260824a",
         "assets/site-base-20260819.js": "cam-favourable-pattern-20260819.js?v=20260824a",
         "scripts/render_ac_community_de_facto_administration.mjs": "window.__pdFirstReadStableSince",

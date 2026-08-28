@@ -71,7 +71,7 @@ The pattern cannot be inferred merely from the 2022 event. Each meeting or attem
 
 The 26-April-2016 meeting was known and attended by the LPB/related side. It disproves a universal formulation that every meeting from 2016 was concealed. It does not disprove concealment of particular other meetings. Repetition becomes materially probative only if common custodians, correct known addresses, selective methods, false recitals, concealment or downstream use are source-connected event by event.
 
-The current preliminary matrix controls eight events: 26-Apr-2016, 11-Jun-2016, 7-Apr-2017 CEXP, 12-Jun-2017, 18-May-2018, 5-Jul-2018, the recital-only 20-Nov-2018 event and 4-Feb-2022. It presently yields one direct attributed no-preknowledge example, known/participated counterexamples, unresolved notice routes and one unproved recital-only event—not a proved repeated criminal method.
+The current preliminary matrix controls eight events: 26-Apr-2016, the 10-Jun-2016 non-organ working meeting (legacy derivative label `11JUN2016`), 7-Apr-2017 CEXP, 12-Jun-2017, 18-May-2018, 5-Jul-2018, the recital-only 20-Nov-2018 event and 4-Feb-2022. It presently yields one direct attributed no-preknowledge example, known/participated counterexamples, unresolved notice routes and one unproved recital-only event—not a proved repeated criminal method.
 
 ## 6. Controlled repository changes
 

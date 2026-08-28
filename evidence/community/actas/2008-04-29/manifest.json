@@ -24,14 +24,51 @@
     "variant_note_es": "Copia de cinco páginas; la hoja notarial final y las listas nominales se reservan por privacidad.",
     "variant_note_en": "Five-page copy; the final notarial sheet and nominal lists are withheld for privacy.",
     "native_publication": false,
-    "variants_recorded": 1
+    "variants_recorded": 2,
+    "source_document_id": "SP-SRC-ACTA-2008-04-29-B",
+    "legacy_id_aliases": [
+      "SP-SRC-ACTA-2008-04-29"
+    ],
+    "source_page_scope": "controlling-copy",
+    "additional_source_documents_recorded": 2,
+    "additional_source_documents": [
+      {
+        "filename": "2008-04-29-alt.pdf",
+        "bytes": 2583237,
+        "sha256": "a0224f685d5b41ff5554cb80c7d96ecfc6c6534b40f457634743165f1cc55433",
+        "pages": 5,
+        "relationship_es": "Escaneo alternativo de cinco páginas; mismo orden general, diferencias de captura.",
+        "relationship_en": "Alternate five-page scan; same general sequence, capture differences.",
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-04-29-CAPTURE-02",
+        "relationship_kind": "native-variant",
+        "classification_status": "classified",
+        "legacy_id_aliases": [
+          "SP-SRC-ACTA-2008-04-29-VARIANT-01"
+        ]
+      },
+      {
+        "bytes": 1085328,
+        "sha256": "7c70b45a14459fdda32f9150008bd26662c051b77da8189d6f7720b20de5ab8e",
+        "pages": 5,
+        "local_source_status": "not-evaluated-unselected",
+        "metadata_status": "carried-forward-from-existing-public-reconciliation",
+        "source_document_id": "SP-SRC-ACTA-2008-04-29-CAPTURE-03",
+        "relationship_kind": "same-instrument-capture-variant",
+        "relationship_es": "Tercera captura de cinco páginas, visualmente cotejada página por página: mismo instrumento, texto, orden y disposición de firmas/autenticación; binario y captura distintos.",
+        "relationship_en": "Third five-page capture, visually compared page by page: same instrument, text, order and signature/authentication arrangement; distinct binary/capture.",
+        "classification_status": "classified",
+        "legacy_id_aliases": []
+      }
+    ]
   },
   "public_artifacts": {
     "transcript_es": "evidence/community/actas/2008-04-29/transcript-es.md",
     "provenance": "evidence/community/actas/2008-04-29/provenance.md",
     "redaction_log": "evidence/community/actas/2008-04-29/redaction-log.md",
     "pdf": "assets/docs/community-actas/2008-04-29-public-redacted-es.pdf",
-    "pdf_sha256": "d94acc22302f8587404f7c22938467f37bc1f00a88d3d8833bee0906d2e69cf0",
+    "pdf_sha256": "f6ba72d52ae29c621b0ab92b20a5025d04775f8d95d4ab91fecab2eccc8687b8",
     "pdf_pages": 6,
     "preview_pages": [
       "assets/evidence/community-actas/2008-04-29/page-001.jpg",
@@ -52,7 +89,33 @@
       "assets/evidence/community-actas-source/2008-04-29/page-004.jpg",
       "assets/evidence/community-actas-source/2008-04-29/page-005.jpg"
     ],
-    "source_preview_count": 5
+    "source_preview_count": 5,
+    "preview_sha256": [
+      {
+        "path": "assets/evidence/community-actas/2008-04-29/page-001.jpg",
+        "sha256": "edf4f1c89e9a00d35c2b5b9576da47a47dc2a9fe5e0ad0925d0d21f5f33437e6"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-04-29/page-002.jpg",
+        "sha256": "940e1553f7489751c6e92e7938d038261c574657af3933419daf62042f5e63f3"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-04-29/page-003.jpg",
+        "sha256": "51737ee331aba77f04570885cd95aa68410ad87b171f491edc386d634dcc3fa5"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-04-29/page-004.jpg",
+        "sha256": "2bc4910709fac22632680122f9999ed8f6b0218a3c7bd467f4490350501e83fd"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-04-29/page-005.jpg",
+        "sha256": "7a22611115e0e26d28018c76c552793a82d28a26ccbd507721b659215c39ed3c"
+      },
+      {
+        "path": "assets/evidence/community-actas/2008-04-29/page-006.jpg",
+        "sha256": "686f860f46e81789a78f1cbb265c7cb554597580052225fe25da365b0b9b4413"
+      }
+    ]
   },
   "quality_control": {
     "source_page_count_verified": true,
@@ -65,7 +128,11 @@
     "visual_source_redaction_review": true,
     "facsimile_reopened": true,
     "all_source_pages_rendered": true,
-    "facsimile_hidden_text": false
+    "facsimile_hidden_text": false,
+    "preview_hashes_recorded": true,
+    "preview_current_format": "JPEG",
+    "legacy_webp_derivatives_separate": true,
+    "public_pdf_deterministic_invariant": true
   },
   "redaction_categories": [
     "identifiers-and-contact",

@@ -5,29 +5,29 @@
 
 ## Transmission event
 
-The final PwC institutional escalation was sent from the authenticated Gmail account `sbu001@monterecco.com` on 19 August 2026 as a threaded reply to Pablo Fernández Guerra's 30 March 2021 message.
+The final PwC institutional escalation was sent from the authenticated Gmail account `SP-PRV-LCTR-EM-32928901D5492501562E` on 19 August 2026 as a threaded reply to Pablo Fernández Guerra's 30 March 2021 message.
 
 - historic subject: **Re: Aweswell Limited/Sun Rock / Hotel SUN PARK Lanzarote**
 - first line: **FORMAL INSTITUTIONAL ESCALATION — 19 August 2026**
-- reply target Gmail message ID: `17882349c2c48668`
-- Gmail thread ID: `17812aeb5d3492c1`
-- final sent Gmail message ID: `1a0182b119c3886f`
+- reply target Gmail message ID: `SP-PRV-LCTR-GM-2E517B56225348A1B81E`
+- Gmail thread ID: `SP-PRV-LCTR-GM-C1CEF35ADBC2E3530D42`
+- final sent Gmail message ID: `SP-PRV-LCTR-GM-70F415DDB7FEBECE0FC5`
 - attachment count: zero
 
 ## Recipients actually used
 
 ### TO
 
-- Pablo Fernández Guerra — `pablo.fernandez.guerra@pwc.com`
-- Carlos del Cubo Ruiz — `carlos.del.cubo@pwc.com`
+- Pablo Fernández Guerra — `SP-PRV-LCTR-EM-9395CE800DD47D1F7542`
+- Carlos del Cubo Ruiz — `SP-PRV-LCTR-EM-E79D7EB547C4A00E4476`
 
 ### CC
 
-- Alison Statham — `alison.l.statham@pwc.com`
-- Gilly Lord — `gillian.lord@pwc.com`
-- Gonzalo Sánchez Martínez — `gonzalo.sanchez@es.pwc.com`
-- Marco Amitrano — `marco.amitrano@pwc.com`
-- Carlos Saavedra Rodríguez del Palacio — `carlos.saavedra@es.pwc.com` — notice only
+- Alison Statham — `SP-PRV-LCTR-EM-F7A24DA244AC7EDB85D3`
+- Gilly Lord — `SP-PRV-LCTR-EM-447168791F11126942CE`
+- Gonzalo Sánchez Martínez — `SP-PRV-LCTR-EM-447D6A4B10395CC6720F`
+- Marco Amitrano — `SP-PRV-LCTR-EM-8EF71F5CD8870DF7561A`
+- Carlos Saavedra Rodríguez del Palacio — `SP-PRV-LCTR-EM-599802EE1063E5D40240` — notice only
 
 No BCC recipients were used.
 

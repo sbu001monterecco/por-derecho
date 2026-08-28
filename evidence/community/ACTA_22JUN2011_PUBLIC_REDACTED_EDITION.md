@@ -1,7 +1,7 @@
 # Sun Park — Acta 22 June 2011 · structured public redacted digest
 
 **Source meeting:** Extraordinary General Meeting, 22 June 2011  
-**Private evidential master:** 16-page scanned PDF preserved from connected Drive source `1k6zmHh59XbkhWWqqY0VEC_vLKLhNy0Az` (opaque chain-of-custody locator; not a public-download URL; access remains authorization-dependent)  
+**Private evidential master:** 16-page scanned PDF preserved from connected Drive source `SP-PRV-LCTR-GD-F1CB8F07FBE47EAFA256` (opaque chain-of-custody locator; not a public-download URL; access remains authorization-dependent)
 **Unredacted PDF SHA-256:** `2e30ad64047b10a79d12de9c5eee0202f31e9b0c14ed26de14e57767d21c896a`  
 **File size / metadata:** 4,551,801 bytes; PDF 1.3; Producer `Mac OS X 10.6.8 Quartz PDFContext`; creation metadata 16 March 2012; later modification metadata 4 February 2021  
 **Status:** structured editorial digest of the complete source with privacy redactions; not a line-by-line transcription, the evidential master, a certified copy or a finding that any resolution was lawful, valid, false or criminal.
