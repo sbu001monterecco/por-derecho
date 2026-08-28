@@ -31,20 +31,105 @@
     {"date_label":"7-25 September 2017","event":"Authenticated correspondence establishes IREA receipt and review of detailed Sun Park/LPB materials, meetings, Cuatrecasas coordination and a proposed debt-advisory scope.","evidence_status":"verified_primary","limit":"No final engagement, lender outreach, financing close, success fee, later file transfer or misuse was located."},
     {"date_label":"20 October 2017","event":"The recorded PH122-to-CAM credit assignment occurred about one month after the IREA review.","evidence_status":"verified_primary","limit":"Timing does not prove IREA knowledge, participation or communication with CAM."},
     {"date_label":"27 February-15 June 2018","event":"Colliers announced the acquisition/integration; the BORME records IREA as absorbent company and the later Colliers name.","evidence_status":"verified_official","limit":"Corporate continuity does not prove custody of a particular historical file."},
-    {"date_label":"June-July 2024 to summer 2026","event":"Fernando Aguiar Acosta's public profile reports RIC Private Equity followed by Colliers Debt Advisory; a July 2026 financial-media report names Fernando Aguiar on an unrelated hotel-finance transaction team.","evidence_status":"corroborated_public_profile_sequence","limit":"No family relationship, Sun Park/Meridian exposure, legacy-record access, transfer, coordination or wrongdoing is established."}
+    {"date_label":"22 February 2018 to 15 March 2021","event":"The official AEAT report records the ACHM management contract, Hotel Project Tenerife lease/operator architecture and RICPE financing for AC Hotel Tenerife; RICPE records opening on 15 March 2021.","evidence_status":"verified_official_and_corporate","limit":"This separate Tenerife hotel project does not establish any Meridian or Sun Park link."},
+    {"date_label":"May 2023 to summer 2026","event":"Fernando Aguiar Acosta's public profile reports Grupo Acosta Matos, RIC Private Equity, Belagua/ACHM hotel legal advisory and Colliers Debt Advisory in sequence; a July 2026 financial-media report names Fernando Aguiar on an unrelated hotel-finance transaction team.","evidence_status":"corroborated_public_profile_sequence","limit":"No family relationship, personal AC Hotel Tenerife assignment, Sun Park/Meridian exposure, legacy-record access, transfer, coordination or wrongdoing is established."},
+    {"date_label":"July-August 2024","event":"Laura Aguiar Acosta's current public profile reports a Canarian Hospitality internship involving the controllers of MYND Yaiza and Radisson Blu Lanzarote, internal-expense controls and collaboration with the legal department. RICPE's own project pages identify both hotels as RICPE-financed and connect MYND Yaiza to the physical Sun Park asset.","evidence_status":"documented_public_profile_plus_corporate_project_pages","limit":"Her visible résumé does not show direct RIC Private Equity employment. It does not establish historical Meridian knowledge, IREA/Colliers contact, information transfer, coordination, wrongdoing or liability."}
   ],
   "people": [
     {"caepr_id":"PD-SP-P-0090","name":"Miguel Vázquez","supported_role":"reported Meridian participant and 2017 Sun Park advisory meeting participant; Colliers Advisory Board after 2023","limit":"Exact workstreams, LPB material reviewed and current custody are open."},
     {"caepr_id":"PD-SP-P-0091","name":"Fernando Banderas Monis","supported_role":"reported Meridian participant and 2017 Sun Park review participant","limit":"Distinct from Fernando Aguiar Acosta; exact scope and custody are open."},
     {"caepr_id":"PD-SP-P-0089","name":"Laura Hernando","supported_role":"2017 Sun Park participant/coordinator; Colliers CEO Iberia and Managing Director Hotels in 2026","limit":"The reviewed correspondence does not expressly identify her as a Meridian participant."},
-    {"caepr_id":"PD-SP-P-0088","name":"Fernando Aguiar Acosta","supported_role":"reported RICPE 2024 role; Colliers Debt Advisory 2026; publicly corroborated unrelated hotel-finance team participation; proposed fact/custody witness","limit":"Not an adverse actor. Family relationship and relevant project knowledge are unverified."}
+    {"caepr_id":"PD-SP-P-0088","name":"Fernando Aguiar Acosta","supported_role":"reported Grupo Acosta Matos 2023, RICPE 2024, Belagua/ACHM 2025 and Colliers Debt Advisory 2026 sequence; publicly corroborated unrelated hotel-finance team participation; proposed fact/custody witness","limit":"Not an adverse actor. Family relationship, personal AC Hotel Tenerife assignment and relevant project knowledge are unverified."},
+    {"caepr_id":"PD-SP-P-0095","name":"Laura Aguiar Acosta","supported_role":"current public profile reports a July-August 2024 Canarian Hospitality internship involving MYND Yaiza and Radisson Blu Lanzarote controllers, internal-expense controls and legal-department collaboration; proposed fact/records-custody witness","limit":"Not an adverse actor. Direct RICPE employment is not shown; the alleged sibling relationship with Fernando Aguiar Acosta is attributed and unverified; no Meridian, IREA or Colliers knowledge is established."}
   ],
+  "public_profile_capture": {
+    "capture_id": "PD-LI-FAG-EXP-20260828-01",
+    "source_url": "https://es.linkedin.com/in/fernando-aguiar-acosta-894679235",
+    "captured_at": "2026-08-28T18:48:10Z",
+    "media_type": "image/jpeg",
+    "pixel_dimensions": {"width":1363,"height":936},
+    "byte_length": 155447,
+    "sha256": "b9bd97a3a49c35ec230fae8170e1e521fa161ab4afe0a196027192e785f07dd9",
+    "visible_scope": ["Colliers Debt Advisory 2026", "ACHM Hotels by Marriott / Belagua 2013 legal advisory 2025", "RIC Private Equity 2024", "Grupo Acosta Matos 2023"],
+    "integrity_status": "UNALTERED_CAPTURE_CONTEXTUALLY_TRANSCRIBED",
+    "public_handling": "FINGERPRINT_DIMENSIONS_SOURCE_SCOPE_AND_TRANSCRIPTION_PRESERVED; RAW_SCREENSHOT_NOT_EMBEDDED_BECAUSE_IT_CONTAINS_UNRELATED_THIRD_PARTY_LINKEDIN_SIDEBAR_IMAGERY_AND_PLATFORM_CONTENT"
+  },
+  "laura_public_profile_capture": {
+    "capture_id": "PD-LI-LAA-EXP-20260828-02",
+    "source_url": "https://www.linkedin.com/in/laura-aguiar-acosta/details/experience/",
+    "captured_at": "2026-08-28T20:45:00Z",
+    "repository_path": "assets/evidence/aguiar-acosta/laura-aguiar-acosta-linkedin-experience-user-supplied-20260828.jpg",
+    "media_type": "image/jpeg",
+    "pixel_dimensions": {"width":691,"height":1536},
+    "byte_length": 203341,
+    "sha256": "f6581bfa4d804c6d6fb3de654e9faa09f3781c2ac3fff2f123162209363e2964",
+    "visible_scope": ["Deloitte Audit Junior, September 2025-present", "Canarian Hospitality hotel-management internship, July-August 2024", "MYND Yaiza and Radisson Blu Lanzarote controllers", "internal-expense controls and legal-department hotel purchase/management processes", "EY audit internship, September-December 2023"],
+    "finding": "DIRECT_RICPE_EMPLOYMENT_NOT_SHOWN; DOCUMENTED_CANARIAN_HOSPITALITY_PLACEMENT",
+    "integrity_status": "USER_SUPPLIED_NATIVE_BYTES_REPOSITORY_PRESERVED_SHA256_LOCKED",
+    "public_handling": "PUBLIC_EXPERIENCE_EXHIBIT_EMBEDDED_ON_BILINGUAL_FAMILY_PAGE; PHONE_STATUS_AND_PLATFORM_CHROME_VISIBLE; NO_UNRELATED_THIRD_PARTY_PROFILE_SIDEBAR"
+  },
+  "profile_portraits": {
+    "fernando_aguiar_acosta": {
+      "asset_id": "person.fernando-aguiar-acosta.primary",
+      "repository_path": "assets/actors/fernando-aguiar-acosta--linkedin-profile--20260828.png",
+      "source_url": "https://www.linkedin.com/in/fernando-aguiar-acosta-894679235/",
+      "pixel_dimensions": {"width":800,"height":800},
+      "byte_length": 285058,
+      "sha256": "7b3ce8c4cb0f047991595eb3e4de6cb9d85d18919c8f42cc0e45d9b35ceac466",
+      "identity_basis": "Exact named public LinkedIn profile and URL; no facial-recognition inference"
+    },
+    "laura_aguiar_acosta": {
+      "asset_id": "person.laura-aguiar-acosta.primary",
+      "repository_path": "assets/actors/laura-aguiar-acosta--linkedin-profile--20260828.jpg",
+      "source_url": "https://www.linkedin.com/in/laura-aguiar-acosta/",
+      "pixel_dimensions": {"width":800,"height":800},
+      "byte_length": 119874,
+      "sha256": "d2438087f18b9f9e210bb9b196208b6bee4ee8b4ee7533f3aa0740236354c04e",
+      "identity_basis": "Exact named public LinkedIn profile and URL; no facial-recognition inference"
+    }
+  },
+  "nomenclature_control": {
+    "physical_asset_en": "Sun Park, currently marketed as MYND Yaiza",
+    "physical_asset_es": "Sun Park, actualmente comercializado como MYND Yaiza",
+    "source_literal_en": "former Sun Park",
+    "source_literal_es": "antiguo Sun Park",
+    "rule": "Use the physical-asset formulation in Project Sun Rock narrative; preserve the former/antiguo formulation only when explicitly attributed to RICPE's source page."
+  },
+  "cv_sequence_interpretation": {
+    "score": "4/4 PUBLIC-PROFILE PLACEMENTS DOCUMENTED",
+    "documented_placements": 4,
+    "placement_denominator": 4,
+    "placements": ["Grupo Acosta Matos 2023", "RIC Private Equity 2024", "Belagua 2013 / ACHM Hotels 2025", "Colliers Debt Advisory 2026"],
+    "attributed_checkers_hypothesis": {
+      "attributed_to": "Gil Marer",
+      "status": "ATTRIBUTED_INVESTIGATIVE_HYPOTHESIS_NOT_ESTABLISHED_FACT",
+      "formulation": "Possible family pawn or plant across the Acosta Matos/RICPE, ACHM and Colliers perimeter",
+      "permitted_use": "Targeted witness questions and preservation of recruitment, reporting-line, assignment, system-access and communication records"
+    },
+    "proof_counters": {
+      "family_relationship_established": "0/1",
+      "coordinated_placement_established": "0/1",
+      "personal_knowledge_wrongdoing_or_liability_proved": 0
+    }
+  },
+  "adjacent_hotel_architecture": {
+    "establishment_caepr_id": "PD-SP-S-0011",
+    "historic_property_owner_caepr_id": "PD-SP-O-0007",
+    "joint_vehicle_caepr_id": "PD-SP-O-0079",
+    "joint_vehicle_reported_shareholders": ["PD-SP-O-0007", "PD-SP-O-0078"],
+    "management_operator_caepr_id": "PD-SP-O-0077",
+    "reported_financing": {"partner_equity_eur":3500000,"caixabank_loan_eur":1000000,"ricpe_loan_eur":2000000},
+    "management_contract_date": "2018-02-22",
+    "evidence_status": "VERIFIED_OFFICIAL_REPORT_PLUS_CORPORATE_CORROBORATION",
+    "personal_link_limit": "Fernando Aguiar Acosta's 2025 Belagua/ACHM role is an organisational overlap and witness/custody lead; it does not prove personal work on AC Hotel Tenerife, project knowledge, records access, transfer, wrongdoing or liability."
+  },
   "relationship_presentation": {
     "subject_caepr_id": "PD-SP-P-0088",
     "documented_professional_edge": {
       "from_caepr_id": "PD-SP-O-0020",
       "status": "DOCUMENTED_PROFESSIONAL_SEQUENCE",
-      "visual_code": "SOLID_BURGUNDY"
+      "visual_code": "SOLID_BURGUNDY",
+      "continuation_via_caepr_ids": ["PD-SP-O-0078", "PD-SP-O-0077", "PD-SP-O-0073"]
     },
     "provisional_family_edge": {
       "to": "Acosta Matos family perimeter",
@@ -52,6 +137,33 @@
       "visual_code": "DASHED_AMBER",
       "not_established": ["family relationship", "knowledge", "intent", "control", "wrongdoing", "liability"]
     }
+  },
+  "laura_witness_presentation": {
+    "subject_caepr_id": "PD-SP-P-0095",
+    "classification": "PROPOSED_FACT_AND_RECORDS_CUSTODY_WITNESS_NOT_ADVERSE_ACTOR",
+    "documented_professional_edge": {
+      "to_caepr_id": "PD-SP-O-0019",
+      "status": "DOCUMENTED_PROFESSIONAL_PLACEMENT",
+      "visual_code": "SOLID_BURGUNDY",
+      "period": "July-August 2024"
+    },
+    "documented_asset_financing_chain": {
+      "sequence": ["Sun Park, currently marketed as MYND Yaiza", "Radisson Blu Lanzarote", "PD-SP-O-0020"],
+      "status": "DOCUMENTED_RICPE_FINANCED_ASSET_EXPOSURE",
+      "limit": "This is an indirect asset-financing association, not direct RICPE employment."
+    },
+    "direct_ricpe_employment": {
+      "shown": false,
+      "status": "DIRECT_RICPE_EMPLOYMENT_NOT_SHOWN"
+    },
+    "alleged_sibling_edge": {
+      "to_caepr_id": "PD-SP-P-0088",
+      "attributed_to": "Gil Marer",
+      "status": "ALLEGED_FERNANDO_LAURA_SIBLING_RELATIONSHIP_UNVERIFIED",
+      "visual_code": "DASHED_AMBER"
+    },
+    "excluded_edges": ["IREA", "Colliers", "Project Meridian"],
+    "witness_scope": ["own recruitment and supervisors", "own duties and assignments", "systems and records used", "internal-expense controls", "legal-department interactions", "MYND Yaiza and Radisson Blu Lanzarote work", "any exposure to RICPE-funded project records", "accuracy of the alleged sibling relationship"]
   },
   "finite_production": [
     "2014 Meridian engagement, team and data-room indices",
@@ -74,7 +186,11 @@
       "/en/ricpe-documentary-accountability/",
       "/es/ricpe-responsabilidad-documental/",
       "/en/acosta-matos-perimeter/",
-      "/es/acosta-matos-perimetro/"
+      "/es/acosta-matos-perimetro/",
+      "/en/acosta-matos-family/",
+      "/es/acosta-matos-familia/",
+      "/en/ric-private-equity-sun-park/",
+      "/es/ric-private-equity-sun-park/"
     ]
   },
   "source_refs": [
@@ -85,11 +201,20 @@
     "SRC-COLLIERS-MIGUEL-SUCCESSION-2023",
     "SRC-COLLIERS-LAURA-CEO-2026",
     "SRC-LINKEDIN-FERNANDO-AGUIAR-ACOSTA-2026",
-    "SRC-FINANCECOMMUNITY-FERNANDO-HOTEL-FINANCE-2026"
+    "SRC-FINANCECOMMUNITY-FERNANDO-HOTEL-FINANCE-2026",
+    "SRC-AEAT-CANARIAS-AC-HOTEL-TENERIFE-2020",
+    "SRC-RICPE-AC-HOTEL-TENERIFE-PROJECT",
+    "SRC-ACHM-AC-HOTEL-TENERIFE-PORTFOLIO",
+    "SRC-MARRIOTT-AC-HOTEL-TENERIFE",
+    "SRC-LINKEDIN-LAURA-AGUIAR-ACOSTA-2026",
+    "SRC-MAEC-LAURA-AGUIAR-ACOSTA-IE-2023",
+    "SRC-RICPE-MYND-YAIZA-CANARIAN",
+    "SRC-RICPE-RADISSON-BLU-LANZAROTE-CANARIAN",
+    "SRC-CANARIAN-HOSPITALITY-ACOSTA-MATOS-BACKING-2021"
   ],
   "identity_control": {
     "control_id": "PD-IREA-RICPE-COLLIERS-CARET-20260828-01",
-    "result": "13/13 CARET_CONFIRMED",
+    "result": "20/20 CARET_CONFIRMED",
     "legend": "A caret resolves exact identity only; it does not prove relationship, knowledge, intent, control, wrongdoing or liability."
   }
 }

@@ -20,5 +20,6 @@ This directory contains durable thread-deletion safety audits. Each audit record
 - [27 August 2026 — FTI / Meeting Point / RICPE unitary continuity, actions, caret and monitor closeout](2026-08-27-fti-meeting-point-ricpe-continuity-thread.md)
 - [28 August 2026 — Concurso 36/2012 court-decision continuity, 2014–2026](2026-08-28-concurso36-decision-continuity.md)
 - [28 August 2026 — post-7-June / 2022 AM357 link and publication-closeout remediation](2026-08-28-post7june-link-and-closeout-remediation.md)
+- [28 August 2026 — ACHM / AC Hotel Tenerife / Fernando and Laura Aguiar Acosta continuity](2026-08-28-achm-ac-hotel-tenerife-continuity.md)
 - [28 August 2026 — ACTA and BBC provenance continuity closeout](2026-08-28-acta-bbc-continuity-closeout.md)
 - [28 August 2026 — GitHub, website and hostile-takedown protection continuity](2026-08-28-github-hostile-takedown-protection-continuity.md)
