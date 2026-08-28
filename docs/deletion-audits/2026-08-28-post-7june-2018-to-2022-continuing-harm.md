@@ -91,7 +91,7 @@ The native 4-Feb-2022 source remains outside public Git. The public repository c
 
 ## 8. Restart instruction
 
-Read `CHATGPT_START_HERE.md`, then the four controlling files in section 2, `docs/deletion-audits/2026-08-28-community-lph-funding-javier-continuity.md`, the canonical bilingual 7-June routes and the bilingual 4-Feb-2022 ACTA pages. Resume with ME-099. Do not re-open the two-basket correction, merge LPB with Matkator, call later attendance or image presence guilt, or treat derived arithmetic as an annex transcription. Preserve the native-invitation gap, the call→meeting→ACTA→later-use proof model, the title/cost fork and the corrected `P-0088`/`P-0089`/`P-0090` identities.
+Read `CHATGPT_START_HERE.md`, then the four controlling files in section 2, `docs/deletion-audits/2026-08-28-community-lph-funding-javier-continuity.md`, the canonical bilingual 7-June routes and the bilingual 4-Feb-2022 ACTA pages. Resume with ME-099. Do not re-open the two-basket correction, merge LPB with Matkator, call later attendance or image presence guilt, or treat derived arithmetic as an annex transcription. Preserve the native-invitation gap, the call→meeting→ACTA→later-use proof model, the title/cost fork, and the corrected `P-0092`/`P-0093`/`P-0094` and `O-0074` identities under CR-125.
 
 ## 9. Deletion-continuity decision
 

@@ -2,8 +2,8 @@
   "publication_id": "PD-SP-ACTA-OMNI-20260828-01",
   "owner": "Por Derecho / Project Sun Rock",
   "control_date": "2026-08-28",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "state": "AUTHORIZED_FOR_PUSH_PR_MERGE_PAGES",
+  "current_state": "LIVE_VERIFIED",
+  "state": "LIVE_VERIFIED",
   "branch": "codex/post-7jun2018-2022-360-20260828",
   "base_sha": "dbd4ec90bda426c61c55e60fb1aa56362abac3cd",
   "upstream_reconciliation": {
@@ -95,7 +95,7 @@
     "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md"
   ],
   "validation": {
-    "state": "LOCAL_SOURCE_VALIDATION_PASS_BROWSER_RENDER_PENDING_CI",
+    "state": "PR_CI_AND_BROWSER_RENDER_PASS",
     "json": "PASS_WITH_DUPLICATE_KEY_CONTROL",
     "generator": "PASS_20_EVENTS_40_PAGES",
     "dedicated_control": "PASS_4_IN_6_STAGE_4_OUT_AND_TERMINOLOGY_LOCKS",
@@ -106,15 +106,120 @@
     "render_runner_syntax": "PASS",
     "browser_routes": 4,
     "browser_viewports_per_route": 3,
-    "browser_render": "PENDING_GITHUB_ACTIONS_VALIDATE_ACTA_MEETING_LINEAGE",
-    "browser_render_claimed": false
+    "pull_request_checks": "PASS_36_OF_36",
+    "evidence": [
+      "PR #1146 completed 36/36 required checks before merge.",
+      "Dedicated ACTA workflow run 33168858619 / #9 completed successfully with the four-route × three-viewport render matrix."
+    ],
+    "acta_workflow_run_id": 33168858619,
+    "acta_workflow_run_number": 9,
+    "acta_workflow_conclusion": "success",
+    "browser_render": "PASS_4_ROUTES_X_3_VIEWPORTS_12_SCREENSHOTS",
+    "browser_render_claimed": true
+  },
+  "merge_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab",
+  "deployment_evidence": {
+    "provider": "GitHub Pages",
+    "workflow_run_id": 33169202514,
+    "workflow_run_number": 1217,
+    "status": "success",
+    "exact_merge_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab"
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/sun-park-takeover-7-june-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/es/toma-control-sun-park-7-junio-2018/",
+    "https://sbu001monterecco.github.io/por-derecho/en/community-instrumentalisation/acta-document-room/2022-02-04/",
+    "https://sbu001monterecco.github.io/por-derecho/es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/post7-2022-omnidirectional-map-20260828.css",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.people.json",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/matter-identity-registry-v1.organisations.json"
+  ],
+  "live_verification_evidence": {
+    "status": "PASS_8_OF_8_HTTP_200_EXACT_REPOSITORY_BYTES",
+    "verified_on": "2026-08-28",
+    "source_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab",
+    "method": "cache-busted public-edge response compared byte-for-byte with the exact merge tree",
+    "sha256": {
+      "en/sun-park-takeover-7-june-2018/index.html": "79a0869b7c65e7e0a18a1587986723c9a6d0e890120f80acb82be34919331661",
+      "es/toma-control-sun-park-7-junio-2018/index.html": "e8583270f90f63d11ea205db486f8562b45108adc8c0cb9a81e631c91e33283c",
+      "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html": "8fceec7197e299328f9a39cab5bf6aff4b4c7841d07daa84a74a4c25279bf820",
+      "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html": "db2aee94b47412b5f1825ca96a28bc27f1982e825bc7245bac9415c06c5fcecd",
+      "assets/post7-2022-omnidirectional-map-20260828.css": "e90918718ea98d337720bd67d1faf4b48275b3f7046ccc773a95628d461066f7",
+      "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json": "caaabc0b48431ef7c191687959fb2c2a7cff038ece8cfb894cb5a0add053d7bc",
+      "assets/data/matter-identity-registry-v1.people.json": "a05a95fe00a199e62ec415fc5f78558bb9b0b0cc4c871bc5c723b8b0547c7fc8",
+      "assets/data/matter-identity-registry-v1.organisations.json": "4c6340e03418e0ee769364d011de58b524b825a0011e902802c97e885a67fe15"
+    }
+  },
+  "publication_result": {
+    "pull_request": "https://github.com/sbu001monterecco/por-derecho/pull/1146",
+    "pull_request_head_sha": "0c5f2c69f61f45c3f6a6b9c7ddff22fa13349138",
+    "pull_request_tree_sha": "5b3989f0f029e18c18a1775036e6afd6a65da366",
+    "merge_sha": "faea6677f3a4df30eeefa92916d77a09826a0bab",
+    "pages_workflow_run_id": 33169202514,
+    "pages_workflow_run_number": 1217,
+    "pages_conclusion": "success",
+    "live_readback": {
+      "base_url": "https://sbu001monterecco.github.io/por-derecho/",
+      "method": "cache-busted HTTP 200 response compared byte-for-byte with the exact merge tree",
+      "results": [
+        {
+          "path": "en/sun-park-takeover-7-june-2018/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "79a0869b7c65e7e0a18a1587986723c9a6d0e890120f80acb82be34919331661"
+        },
+        {
+          "path": "es/toma-control-sun-park-7-junio-2018/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "e8583270f90f63d11ea205db486f8562b45108adc8c0cb9a81e631c91e33283c"
+        },
+        {
+          "path": "en/community-instrumentalisation/acta-document-room/2022-02-04/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "8fceec7197e299328f9a39cab5bf6aff4b4c7841d07daa84a74a4c25279bf820"
+        },
+        {
+          "path": "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "db2aee94b47412b5f1825ca96a28bc27f1982e825bc7245bac9415c06c5fcecd"
+        },
+        {
+          "path": "assets/post7-2022-omnidirectional-map-20260828.css",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "e90918718ea98d337720bd67d1faf4b48275b3f7046ccc773a95628d461066f7"
+        },
+        {
+          "path": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "caaabc0b48431ef7c191687959fb2c2a7cff038ece8cfb894cb5a0add053d7bc"
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.people.json",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "a05a95fe00a199e62ec415fc5f78558bb9b0cc4c871bc5c723b8b0547c7fc8"
+        },
+        {
+          "path": "assets/data/matter-identity-registry-v1.organisations.json",
+          "status": 200,
+          "parity": "EXACT",
+          "sha256": "4c6340e03418e0ee769364d011de58b524b825a0011e902802c97e885a67fe15"
+        }
+      ]
+    }
   },
   "external_actions": {
-    "push": false,
-    "pull_request": false,
-    "merge": false,
-    "deployment": false,
-    "live_readback": false,
+    "push": true,
+    "pull_request": true,
+    "merge": true,
+    "deployment": true,
+    "live_readback": true,
     "filing_or_contact": false
   }
 }
