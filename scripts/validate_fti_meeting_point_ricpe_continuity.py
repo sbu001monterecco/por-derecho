@@ -287,7 +287,7 @@ def validate_pages() -> None:
         check("39/65" in text or "39 of 65" in text or "39 von 65" in text, f"{language} page lacks 39/65 caret result")
         check("43/101" in text or "43 of 101" in text or "43 von 101" in text or "43 de 101" in text, f"{language} page lacks 43/101 professional caret result")
         check("31" in text and ("ACCIONES CONTROLADAS" in text or "CONTROLLED ACTIONS" in text or "KONTROLLIERTE MASSNAHMEN" in text), f"{language} page lacks 31-action marker")
-        check("56/130" in text and "25/32" in text and "19/24" in text, f"{language} page merges or omits separate caret scopes")
+        check("61/130" in text and "31/31" in text and "32/32" in text and "21/24" in text, f"{language} page merges or omits separate caret scopes")
         check("HOLD" in text, f"{language} page lacks external-action hold")
         check("fti-meeting-point-ricpe-causal-evidence-v1.json" in text, f"{language} page lacks graph link")
         check("caepr-caret-fti-meeting-point-ricpe-continuity-v1.json" in text, f"{language} page lacks caret link")
