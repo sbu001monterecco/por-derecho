@@ -1,0 +1,161 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "publication_id": "concurso36-court-decision-continuity-20260828",
+  "control_id": "PD-C36-DECISION-CONTINUITY-20260828-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "created_at": "2026-08-28T00:00:00Z",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "status": "local_candidate_not_published",
+  "base_sha_at_start": "298a1141662c278db9413d9e282469c36ca52ad8",
+  "branch": "codex/concurso36-decision-continuity-20260828",
+  "purpose": "Prepare a bounded, public-safe 2014–2026 continuity audit for the decisions and Insolvency Administration reports in Concurso 36/2012 while preserving separate proceedings, same-date instruments and open filing, report, service, appeal, finality, accounting and implementation nodes.",
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012-autos-resoluciones/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012-orders-decisions/index.html"
+    ]
+  },
+  "expected_anchors": {
+    "es": "continuidad-2014-2026",
+    "en": "continuity-2014-2026"
+  },
+  "expected_source_files": [
+    "publication-manifests/concurso36-court-decision-continuity-20260828.json",
+    "assets/data/concurso36-decision-continuity-2014-2026-v1.json",
+    "assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx",
+    "assets/data/concurso36-decision-continuity-assessment-2014-2026.docx",
+    "assets/data/concurso36-decision-continuity-assessment-2014-2026.pdf",
+    "assets/data/concurso36-autos-fulltext-v1.json",
+    "assets/data/concurso36-complete-record-v1.json",
+    "assets/data/concurso36-court-file-v1.json",
+    "assets/data/caepr-caret-unitary-digest-v1.json",
+    "assets/data/unitary-route-registry-v1.json",
+    "archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md",
+    "archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md",
+    "archive/CONCURSO36_COMPLETE_RECORD_EXECUTION_DIGEST_23AUG2026.md",
+    "archive/CONCURSO_36_2012_UNITARY_COURT_FILE_RECONSTRUCTION_24AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+    "archive/CORRECTION_REGISTER.md",
+    "archive/CORRECTION_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX.md",
+    "archive/CONTINUOUS_MAINTENANCE_MATRIX_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+    "docs/deletion-audits/2026-08-28-concurso36-decision-continuity.md",
+    "docs/deletion-audits/README.md",
+    "scripts/build_concurso_autos_pages.py",
+    "scripts/build_concurso_autos_fulltext.py",
+    "scripts/build_concurso36_complete_record.py",
+    "scripts/build_concurso36_decision_continuity_workbook.mjs",
+    "scripts/build_concurso36_decision_continuity_report.py",
+    "scripts/validate_concurso_autos_publication.py",
+    "scripts/validate_concurso36_complete_record.py",
+    "scripts/validate_concurso36_decision_continuity.py",
+    "scripts/validate_concurso36_primary_autos_redigest.py",
+    ".github/workflows/validate-concurso36-decision-continuity.yml",
+    "sitemap.xml",
+    "sitemap-concurso36-court-orders.xml",
+    "es/concurso-36-2012-autos-resoluciones/index.html",
+    "en/insolvency-36-2012-orders-decisions/index.html"
+  ],
+  "controlled_result": {
+    "status": "PARTIAL — CERTIFIED DENOMINATOR AND DECISION FAMILIES STILL OPEN",
+    "audited_rows": 51,
+    "core_primary_decisions_controlled": 28,
+    "earlier_in_case_anchor_decisions_controlled": 4,
+    "connected_or_contextual_primary_decisions_controlled": 2,
+    "controlled_court_office_acts": 2,
+    "unresolved_or_partial_family_rows": 15,
+    "certified_docket_obtained": false,
+    "official_denominator": null
+  },
+  "ac_report_continuity": {
+    "status": "PARTIAL_SERIES__CERTIFIED_DENOMINATOR_NOT_OBTAINED",
+    "controlled_report_texts": 5,
+    "court_receipts_without_underlying_report": 2,
+    "open_later_or_final_report_families": 1,
+    "complete_report_series_obtained": false
+  },
+  "privacy_controls": {
+    "private_email_or_drive_locators_published": false,
+    "exact_private_filenames_published": false,
+    "unredacted_source_copies_published": false,
+    "verification_codes_or_personal_contact_data_published": false,
+    "public_safe_stable_ids_only": true,
+    "legacy_locator_debt_outside_release_scope": true
+  },
+  "evidential_boundaries": [
+    "A controlled decision copy closes only the decision-copy node.",
+    "A controlled Insolvency Administration report text closes only that report-text node, not its annex, bank, accounting, challenge, ruling or finality nodes.",
+    "Same-date decisions remain distinct instruments.",
+    "Judgment 89/2014 remains in a separate civil lane and outside the in-docket core count.",
+    "The controlled date for C36-E007 remains 15 February 2018; recital/body and signature date layers require direct reinspection, without inferring a distinct 8 February act.",
+    "The 13 January 2022 reference remains unconfirmed and does not replace either 26 January Auto.",
+    "Standing dismissals and appeal accumulation do not determine the unexamined merits.",
+    "Not located in the controlled corpus does not mean nonexistent."
+  ],
+  "open_evidence": [
+    "certified chronological court/LAJ denominator from 1 January 2014 through conclusion",
+    "signed 2014–2016 originals and assignment of references 204/14, 677/14, 2418/14 and 5599/2015",
+    "direct reinspection of all date layers in C36-E007",
+    "complete 25/27 October 2021 filing, report, notification and decision family",
+    "underlying reports identified by receipts 7425/2021 and 5367/2022",
+    "resolution of the 13 January 2022 date/identity conflict",
+    "complete 2022–2023 complaint, nullity and Constitutional Court review families",
+    "merits, service and finality in the current appeals",
+    "certified AC-report and annex index through every later report, final report and final accounts",
+    "final accounts, objections, approval/refusal, finality and conclusion order"
+  ],
+  "authority": {
+    "local_repository_preparation": true,
+    "push": false,
+    "pull_request": false,
+    "merge": false,
+    "deploy": false,
+    "email": false,
+    "filing": false,
+    "authority_contact": false
+  },
+  "validation": {
+    "status": "PASSED_LOCAL_VALIDATION",
+    "evidence": [
+      {
+        "command": "python -B scripts/validate_concurso36_decision_continuity.py",
+        "result": "PASS"
+      },
+      {
+        "command": "python -B scripts/validate_concurso36_primary_autos_redigest.py",
+        "result": "PASS — 11 pinned public-derivative hashes, 12 canonical register entries, bilingual discovery and date/effect rules"
+      },
+      {
+        "command": "python -B scripts/validate_concurso36_complete_record.py",
+        "result": "PASS — 127 canonical records, 8 source-copy links, 12 controlled gaps, privacy/hash and bilingual-link controls"
+      },
+      {
+        "command": "python -B scripts/validate_concurso_autos_publication.py",
+        "result": "PASS — 50 transcripts and ten pinned evidential PDFs; additional public-safe report downloads allowed"
+      },
+      {
+        "command": "python -B scripts/validate_repository_preservation.py",
+        "result": "PASS"
+      },
+      {
+        "command": "python -B scripts/validate_private_source_statement_osint_governance.py --base origin/main",
+        "result": "PASS"
+      },
+      {
+        "command": "DOCX accessibility, section, table-geometry and PDF visual-render checks",
+        "result": "PASS — 0 high/medium/low accessibility findings; 5 rendered PDF pages inspected"
+      }
+    ],
+    "known_inherited_baseline_failures": [
+      "validate_publication_integrity.py: unrelated community-acta-document-room-20260823 lifecycle evidence is incomplete",
+      "validate_audience_experience.py: four pre-existing broken links on unrelated English routes"
+    ]
+  },
+  "merge_sha": null,
+  "deployment_evidence": null,
+  "live_urls": [],
+  "live_verification_evidence": null
+}

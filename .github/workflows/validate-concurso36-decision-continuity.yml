@@ -1,0 +1,125 @@
+name: Validate Concurso 36/2012 decision continuity
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/validate-concurso36-decision-continuity.yml'
+      - 'archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md'
+      - 'archive/*CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md'
+      - 'archive/CONCURSO36_COMPLETE_RECORD_EXECUTION_DIGEST_23AUG2026.md'
+      - 'archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md'
+      - 'archive/CONCURSO_36_2012_UNITARY_COURT_FILE_RECONSTRUCTION_24AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/CONTINUOUS_MAINTENANCE_MATRIX.md'
+      - 'archive/concurso36-primary-autos-21aug2026/**'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-court-file-v1.json'
+      - 'assets/data/concurso36-decision-continuity-2014-2026-v1.json'
+      - 'assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx'
+      - 'assets/data/concurso36-decision-continuity-assessment-2014-2026.docx'
+      - 'assets/data/concurso36-decision-continuity-assessment-2014-2026.pdf'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'docs/deletion-audits/2026-08-28-concurso36-decision-continuity.md'
+      - 'docs/deletion-audits/README.md'
+      - 'publication-manifests/concurso36-court-decision-continuity-20260828.json'
+      - 'scripts/build_concurso36_complete_record.py'
+      - 'scripts/build_concurso_autos_fulltext.py'
+      - 'scripts/build_concurso_autos_pages.py'
+      - 'scripts/build_concurso36_decision_continuity_report.py'
+      - 'scripts/build_concurso36_decision_continuity_workbook.mjs'
+      - 'scripts/validate_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_decision_continuity.py'
+      - 'scripts/validate_concurso36_primary_autos_redigest.py'
+      - 'scripts/validate_concurso_autos_publication.py'
+      - 'sitemap.xml'
+      - 'sitemap-concurso36-court-orders.xml'
+      - 'evidence/insolvency-36-2012/concurso-autos/full-text/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/validate-concurso36-decision-continuity.yml'
+      - 'archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md'
+      - 'archive/*CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md'
+      - 'archive/CONCURSO36_COMPLETE_RECORD_EXECUTION_DIGEST_23AUG2026.md'
+      - 'archive/CONCURSO36_AUTOS_FULLTEXT_UNITARY_RECORD_23AUG2026.md'
+      - 'archive/CONCURSO_36_2012_UNITARY_COURT_FILE_RECONSTRUCTION_24AUG2026.md'
+      - 'archive/MISSING_EVIDENCE_REGISTER.md'
+      - 'archive/CORRECTION_REGISTER.md'
+      - 'archive/CONTINUOUS_MAINTENANCE_MATRIX.md'
+      - 'archive/concurso36-primary-autos-21aug2026/**'
+      - 'assets/data/caepr-caret-unitary-digest-v1.json'
+      - 'assets/data/concurso36-autos-fulltext-v1.json'
+      - 'assets/data/concurso36-complete-record-v1.json'
+      - 'assets/data/concurso36-court-file-v1.json'
+      - 'assets/data/concurso36-decision-continuity-2014-2026-v1.json'
+      - 'assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx'
+      - 'assets/data/concurso36-decision-continuity-assessment-2014-2026.docx'
+      - 'assets/data/concurso36-decision-continuity-assessment-2014-2026.pdf'
+      - 'assets/data/unitary-route-registry-v1.json'
+      - 'docs/deletion-audits/2026-08-28-concurso36-decision-continuity.md'
+      - 'docs/deletion-audits/README.md'
+      - 'publication-manifests/concurso36-court-decision-continuity-20260828.json'
+      - 'scripts/build_concurso36_complete_record.py'
+      - 'scripts/build_concurso_autos_fulltext.py'
+      - 'scripts/build_concurso_autos_pages.py'
+      - 'scripts/build_concurso36_decision_continuity_report.py'
+      - 'scripts/build_concurso36_decision_continuity_workbook.mjs'
+      - 'scripts/validate_concurso36_complete_record.py'
+      - 'scripts/validate_concurso36_decision_continuity.py'
+      - 'scripts/validate_concurso36_primary_autos_redigest.py'
+      - 'scripts/validate_concurso_autos_publication.py'
+      - 'sitemap.xml'
+      - 'sitemap-concurso36-court-orders.xml'
+      - 'evidence/insolvency-36-2012/concurso-autos/full-text/**'
+      - 'es/concurso-36-2012-autos-resoluciones/**'
+      - 'en/insolvency-36-2012-orders-decisions/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-concurso36-decision-continuity-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  decision-continuity-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Compile continuity builders and validators
+        run: >-
+          python -B -m py_compile
+          scripts/build_concurso36_complete_record.py
+          scripts/build_concurso36_decision_continuity_report.py
+          scripts/build_concurso_autos_fulltext.py
+          scripts/build_concurso_autos_pages.py
+          scripts/validate_concurso36_complete_record.py
+          scripts/validate_concurso_autos_publication.py
+          scripts/validate_concurso36_primary_autos_redigest.py
+          scripts/validate_concurso36_decision_continuity.py
+      - name: Check continuity workbook builder syntax
+        run: node --check scripts/build_concurso36_decision_continuity_workbook.mjs
+      - name: Rebuild canonical bilingual decision pages
+        run: python -B scripts/build_concurso_autos_pages.py
+      - name: Require deterministic generated pages
+        run: git diff --exit-code -- es/concurso-36-2012-autos-resoluciones/index.html en/insolvency-36-2012-orders-decisions/index.html
+      - name: Re-verify canonical whole-record source
+        run: python -B scripts/validate_concurso36_complete_record.py
+      - name: Re-verify controlling primary-orders date and effect rules
+        run: python -B scripts/validate_concurso36_primary_autos_redigest.py
+      - name: Validate continuity counts, chronology, privacy and lifecycle
+        run: python -B scripts/validate_concurso36_decision_continuity.py

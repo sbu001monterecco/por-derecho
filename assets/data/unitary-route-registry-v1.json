@@ -236,14 +236,17 @@
     "path": "en/insolvency-36-2012-orders-decisions/",
     "title": "Located judicial and party corpus — Insolvency 36/2012",
     "type": "evidence",
-    "summary": "Public-safe full-text transcripts of the 50 located 2024–2026 removal/remuneration records, plus the non-fragmented thread thesis, CAEPR proceeding map, quantitative ledger, contrary record and finite gaps. This is not the whole-file denominator.",
+    "summary": "Public-safe 2014–2026 decision-continuity audit alongside full-text transcripts of the 50 located 2024–2026 removal/remuneration records, plus the non-fragmented thread thesis, CAEPR proceeding map, quantitative ledger, contrary record and finite gaps. This is not the whole-file denominator.",
     "tags": [
       "orders",
       "decisions",
       "LAJ",
       "full text",
       "Concurso 36/2012",
-      "specialist corpus"
+      "specialist corpus",
+      "2014–2026 continuity",
+      "decision families",
+      "court-file audit"
     ],
     "aliases": [
       "Order 1377/2025",
@@ -254,7 +257,12 @@
       "DP 1956/2026",
       "court responses",
       "administrator removal filings",
-      "remuneration claim full text"
+      "remuneration claim full text",
+      "2014–2026 decision continuity audit",
+      "Insolvency 36/2012 decision families",
+      "22 March 2017 composition-stage order",
+      "5 May 2017 insolvency administrator remuneration order",
+      "same-date court orders"
     ]
   },
   {
@@ -262,14 +270,17 @@
     "path": "es/concurso-36-2012-autos-resoluciones/",
     "title": "Corpus judicial y de parte localizado — Concurso 36/2012",
     "type": "evidence",
-    "summary": "Transcripciones íntegras públicas seguras de los 50 registros localizados de 2024–2026, más tesis no fragmentada, mapa procesal CAEPR, libro cuantitativo, prueba contraria y vacíos finitos. No es el denominador del expediente completo.",
+    "summary": "Auditoría pública segura de continuidad de resoluciones 2014–2026 junto con las transcripciones íntegras de los 50 registros especialistas localizados de 2024–2026, más tesis no fragmentada, mapa procesal CAEPR, libro cuantitativo, prueba contraria y vacíos finitos. No es el denominador del expediente completo.",
     "tags": [
       "autos",
       "resoluciones",
       "LAJ",
       "texto íntegro",
       "Concurso 36/2012",
-      "corpus especialista"
+      "corpus especialista",
+      "continuidad 2014–2026",
+      "familias de resoluciones",
+      "auditoría del expediente judicial"
     ],
     "aliases": [
       "Auto 1377/2025",
@@ -280,7 +291,12 @@
       "DP 1956/2026",
       "respuestas judiciales",
       "escritos separación AC",
-      "demanda honorarios texto íntegro"
+      "demanda honorarios texto íntegro",
+      "auditoría continuidad resoluciones 2014–2026",
+      "familias de resoluciones Concurso 36/2012",
+      "Auto 22 marzo 2017 apertura convenio",
+      "Auto 5 mayo 2017 retribución administración concursal",
+      "Autos judiciales de igual fecha"
     ]
   },
   {

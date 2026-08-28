@@ -7,6 +7,7 @@ import argparse
 import html
 import json
 import re
+from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -14,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "assets/data/concurso36-autos-fulltext-v1.json"
 COMPLETE_CATALOG = ROOT / "assets/data/concurso36-complete-record-v1.json"
+DECISION_CONTINUITY = ROOT / "assets/data/concurso36-decision-continuity-2014-2026-v1.json"
 TEXT_ROOT = ROOT / "evidence/insolvency-36-2012/concurso-autos/full-text"
 ES_OUTPUT = ROOT / "es/concurso-36-2012-autos-resoluciones/index.html"
 EN_OUTPUT = ROOT / "en/insolvency-36-2012-orders-decisions/index.html"
@@ -31,6 +33,91 @@ def format_date(value: str, lang: str) -> str:
     if lang == "es":
         return f"{parsed.day} {months[lang][parsed.month - 1]} {parsed.year}"
     return f"{parsed.day} {months[lang][parsed.month - 1]} {parsed.year}"
+
+
+def sequence_marker(sequence: int) -> str:
+    """Return a stable A, B, ... marker for same-date instruments."""
+    if sequence < 1:
+        raise ValueError("same_date_sequence must be a positive integer")
+    marker = ""
+    while sequence:
+        sequence, remainder = divmod(sequence - 1, 26)
+        marker = chr(65 + remainder) + marker
+    return marker
+
+
+def continuity_date_html(row: dict, lang: str, date_counts: Counter[str]) -> str:
+    """Render a localized display date while preserving date-confidence limits."""
+    status = row["date_status"]
+    sort_date = row["sort_date"]
+    labels = {
+        "es": {
+            "exact": "Fecha exacta",
+            "reported_date": "Fecha referida; original pendiente",
+            "aggregate_earliest_date": "Fecha más antigua de la familia agrupada",
+            "year_only_sort_key": "Clave anual de ordenación",
+            "undated_future_endpoint": "Etapa futura sin fecha",
+        },
+        "en": {
+            "exact": "Exact date",
+            "reported_date": "Reported date; original pending",
+            "aggregate_earliest_date": "Earliest date in grouped family",
+            "year_only_sort_key": "Year-only sort key",
+            "undated_future_endpoint": "Undated future stage",
+        },
+    }
+    if status not in labels[lang]:
+        raise ValueError(f"unknown continuity date_status: {status}")
+
+    if status == "undated_future_endpoint":
+        display = "Etapa final" if lang == "es" else "Final stage"
+        date_markup = html.escape(display)
+    elif status == "year_only_sort_key":
+        year = sort_date[:4]
+        date_markup = f'<time datetime="{html.escape(year)}">{html.escape(year)}</time>'
+    else:
+        display = format_date(sort_date, lang)
+        if date_counts[sort_date] > 1:
+            display += f" · {sequence_marker(int(row['same_date_sequence']))}"
+        date_markup = f'<time datetime="{html.escape(sort_date)}">{html.escape(display)}</time>'
+
+    return f'<strong>{date_markup}</strong><small class="audit-date-status">{html.escape(labels[lang][status])}</small>'
+
+
+def continuity_date_layer_notes(row: dict, rows: list[dict], lang: str) -> list[str]:
+    """Return applicable primary-date controls, including cited alternate layers."""
+    searchable = " ".join((row[f"family_{lang}"], row[f"gap_{lang}"])).lower()
+    notes = []
+    for control_row in rows:
+        conflict = control_row.get("date_layer_conflict")
+        if not conflict:
+            continue
+
+        alternate = date.fromisoformat(conflict["primary_body_or_recital_date"])
+        if lang == "es":
+            alternate_forms = {
+                f"{alternate.day:02d}/{alternate.month:02d}/{alternate.year}",
+                f"{alternate.day}/{alternate.month}/{alternate.year}",
+                format_date(alternate.isoformat(), lang),
+            }
+        else:
+            alternate_forms = {format_date(alternate.isoformat(), lang)}
+
+        if control_row is row or any(form.lower() in searchable for form in alternate_forms):
+            if lang == "es":
+                short_control = (
+                    f"{alternate.day:02d}/{alternate.month:02d}/{alternate.year} "
+                    "pendiente de reinspección primaria directa."
+                )
+            else:
+                short_control = (
+                    f"{format_date(alternate.isoformat(), lang)} "
+                    "pending direct re-inspection of the primary layers."
+                )
+            note = f'{short_control} {conflict[f"note_{lang}"]}'
+            if note not in notes:
+                notes.append(note)
+    return notes
 
 
 def repo_link(path: str) -> str:
@@ -133,7 +220,174 @@ def filing_rows(records: list[dict], lane: str, lang: str) -> str:
     return "".join(rows)
 
 
-def render(records: list[dict], catalog: dict, lang: str) -> str:
+def decision_continuity_section(audit: dict, lang: str) -> str:
+    result = audit["result"]
+    rows = audit["rows"]
+    if len(rows) != result["audited_rows"]:
+        raise ValueError("decision-continuity row count does not match the declared audit count")
+    count_checks = {
+        "core_primary_decisions_controlled": sum(bool(row.get("core_controlled_decision")) for row in rows),
+        "earlier_in_case_anchor_decisions_controlled": sum(bool(row.get("earlier_in_case_anchor")) for row in rows),
+        "connected_or_contextual_primary_decisions_controlled": sum(bool(row.get("contextual_control")) for row in rows),
+        "controlled_court_office_acts": sum(bool(row.get("controlled_court_office_act")) for row in rows),
+        "unresolved_or_partial_family_rows": sum(row.get("classification") == "unresolved_or_partial_family" for row in rows),
+    }
+    for key, derived in count_checks.items():
+        if derived != result[key]:
+            raise ValueError(f"decision-continuity {key} count does not match the declared audit count")
+
+    sort_keys = [(row["sort_date"], int(row["same_date_sequence"])) for row in rows]
+    if sort_keys != sorted(sort_keys):
+        raise ValueError("decision-continuity rows are not in chronological sequence")
+
+    status_labels = audit["status_labels"]
+    public_access_labels = audit["public_access_labels"]
+    controlled_states = {"PRIMARY_COPY_CONTROLLED", "CONTEXTUAL_PRIMARY_COPY_CONTROLLED"}
+    court_office_state = "COURT_OFFICE_COPY_CONTROLLED_FAMILY_INCOMPLETE"
+    date_counts = Counter(row["sort_date"] for row in rows)
+    row_html = []
+    for row in rows:
+        state = row["coverage_state"]
+        if state in controlled_states:
+            state_class = "controlled"
+        elif state == court_office_state:
+            state_class = "located"
+        else:
+            state_class = "open"
+        family = row[f"family_{lang}"]
+        gap = row[f"gap_{lang}"]
+        date_layer_notes = continuity_date_layer_notes(row, rows, lang)
+        gap_detail = html.escape(gap)
+        if date_layer_notes:
+            note_label = "Control de capas de fecha" if lang == "es" else "Date-layer control"
+            gap_detail += "".join(
+                f'<small class="audit-date-control"><strong>{note_label}:</strong> {html.escape(note)}</small>'
+                for note in date_layer_notes
+            )
+        proceeding = row[f"proceeding_{lang}"]
+        ids = ", ".join(row["canonical_record_ids"]) or ("Sin ID canónico" if lang == "es" else "No canonical ID")
+        access_status = row["public_access_status"]
+        if access_status not in public_access_labels:
+            raise ValueError(f"unknown public access status: {access_status}")
+        access_label = public_access_labels[access_status][lang]
+        public_href = ""
+        if row.get("public_anchor"):
+            public_href = f'#{row["public_anchor"]}'
+        else:
+            public_href = row.get(f"public_href_{lang}", "")
+
+        action_labels = {
+            "es": {
+                "PUBLIC_FULL_TEXT": "Ver texto íntegro",
+                "SEPARATE_PUBLIC_ROUTE": "Abrir vía separada",
+                "ANALYTICAL_INDEX_ONLY__CONTROLLED_COPY_NOT_PUBLICLY_POSTED": "Abrir índice analítico",
+                "PUBLIC_ANALYTICAL_INDEX_ONLY": "Abrir índice analítico",
+            },
+            "en": {
+                "PUBLIC_FULL_TEXT": "View full text",
+                "SEPARATE_PUBLIC_ROUTE": "Open separate route",
+                "ANALYTICAL_INDEX_ONLY__CONTROLLED_COPY_NOT_PUBLICLY_POSTED": "Open analytical index",
+                "PUBLIC_ANALYTICAL_INDEX_ONLY": "Open analytical index",
+            },
+        }
+        access_class = (
+            "available"
+            if access_status in {"PUBLIC_FULL_TEXT", "SEPARATE_PUBLIC_ROUTE"}
+            else "index"
+            if access_status in {"ANALYTICAL_INDEX_ONLY__CONTROLLED_COPY_NOT_PUBLICLY_POSTED", "PUBLIC_ANALYTICAL_INDEX_ONLY"}
+            else "unavailable"
+        )
+        access = f'<span class="audit-access {access_class}">{html.escape(access_label)}</span>'
+        if public_href:
+            action_label = action_labels[lang].get(access_status, "Abrir referencia" if lang == "es" else "Open reference")
+            access += f'<a class="button view" href="{html.escape(public_href)}">{html.escape(action_label)}</a>'
+
+        row_html.append(
+            "<tr>"
+            f'<td>{continuity_date_html(row, lang, date_counts)}<small>{html.escape(row["id"])}</small></td>'
+            f'<td>{html.escape(family)}<small>{html.escape(proceeding)}</small></td>'
+            f'<td><span class="audit-status {state_class}">{html.escape(status_labels[state][lang])}</span>'
+            f'<small>{html.escape(ids)}</small></td>'
+            f'<td>{gap_detail}</td>'
+            f'<td>{access}</td>'
+            "</tr>"
+        )
+
+    if lang == "es":
+        content = {
+            "id": "continuidad-2014-2026",
+            "kicker": "AUDITORÍA DE CONTINUIDAD · 2014–2026",
+            "h2": "Una cronología visible, sin convertir inventario en certificado",
+            "intro": "La auditoría une las decisiones antes repartidas entre el expediente 2016–2021, el lector de autos críticos, la Calificación y el corpus especialista. Distingue copia primaria, notificación oficial y referencia todavía abierta. AP 89/2014 y ORD 641/2024 permanecen como vías separadas de contexto.",
+            "caption": f'{result["audited_rows"]} filas de control; las decisiones de igual fecha no se fusionan',
+            "th_period": "Fecha / ID",
+            "th_family": "Resolución / vía",
+            "th_status": "Estado de copia",
+            "th_gap": "Vacío familiar pendiente",
+            "th_access": "Acceso público",
+            "result": "Resultado",
+            "result_status": "PARCIAL — SIGUEN ABIERTOS EL DENOMINADOR CERTIFICADO Y FAMILIAS DE RESOLUCIONES",
+            "result_text": (
+                f'{result["core_primary_decisions_controlled"]} decisiones primarias del eje 2018–2026 controladas · '
+                f'{result["earlier_in_case_anchor_decisions_controlled"]} anclas internas anteriores · '
+                f'{result["connected_or_contextual_primary_decisions_controlled"]} decisiones conexas/contextuales · '
+                f'{result["controlled_court_office_acts"]} actos de oficina judicial controlados · '
+                f'{result["unresolved_or_partial_family_rows"]} filas abiertas o parciales.'
+            ),
+            "boundary": "La copia de una resolución cierra sólo el nodo de la resolución. No cierra escritos, notificación, recurso, firmeza ni ejecución/contabilidad.",
+            "data": "Abrir JSON público",
+            "workbook": "Descargar matriz XLSX",
+            "report_docx": "Descargar informe DOCX",
+            "report_pdf": "Descargar informe PDF",
+            "audit": "Leer auditoría y solicitud de producción",
+        }
+    else:
+        content = {
+            "id": "continuity-2014-2026",
+            "kicker": "CONTINUITY AUDIT · 2014–2026",
+            "h2": "One visible chronology, without turning an inventory into a certificate",
+            "intro": "The audit joins decisions previously split across the 2016–2021 court-file record, critical-orders reader, Classification record and specialist corpus. It distinguishes a controlled primary copy, an official notification and a still-open reference. AP 89/2014 and ORD 641/2024 remain separate contextual lanes.",
+            "caption": f'{result["audited_rows"]} control rows; same-date decisions are not merged',
+            "th_period": "Date / ID",
+            "th_family": "Decision / lane",
+            "th_status": "Copy status",
+            "th_gap": "Remaining family gap",
+            "th_access": "Public access",
+            "result": "Result",
+            "result_status": result["status"],
+            "result_text": (
+                f'{result["core_primary_decisions_controlled"]} controlled primary decisions in the 2018–2026 spine · '
+                f'{result["earlier_in_case_anchor_decisions_controlled"]} earlier in-case anchors · '
+                f'{result["connected_or_contextual_primary_decisions_controlled"]} connected/contextual decisions · '
+                f'{result["controlled_court_office_acts"]} controlled court-office acts · '
+                f'{result["unresolved_or_partial_family_rows"]} open or partial rows.'
+            ),
+            "boundary": "A decision copy closes only the decision node. It does not close filings, service, review, finality or implementation/accounting.",
+            "data": "Open public JSON",
+            "workbook": "Download XLSX matrix",
+            "report_docx": "Download DOCX report",
+            "report_pdf": "Download PDF report",
+            "audit": "Read the audit and production request",
+        }
+
+    return (
+        f'<section class="section alt" id="{content["id"]}"><div class="shell">'
+        f'<p class="kicker">{content["kicker"]}</p><h2>{content["h2"]}</h2><p class="intro">{content["intro"]}</p>'
+        f'<div class="audit-summary"><article><span>{result["core_primary_decisions_controlled"]}</span><strong>{content["result"]}</strong><p>{content["result_text"]}</p></article>'
+        f'<article><span>∅</span><strong>{html.escape(content["result_status"])}</strong><p>{content["boundary"]}</p></article></div>'
+        f'<p><a class="button" href="../../assets/data/concurso36-decision-continuity-2014-2026-v1.json">{content["data"]}</a>'
+        f'<a class="button pdf" href="../../assets/data/concurso36-decision-continuity-2014-2026-v1.xlsx">{content["workbook"]}</a>'
+        f'<a class="button text" href="../../assets/data/concurso36-decision-continuity-assessment-2014-2026.docx">{content["report_docx"]}</a>'
+        f'<a class="button pdf" href="../../assets/data/concurso36-decision-continuity-assessment-2014-2026.pdf">{content["report_pdf"]}</a>'
+        f'<a class="button view" href="../../archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md">{content["audit"]}</a></p>'
+        f'<div class="table-wrap"><table class="audit-table"><caption>{content["caption"]}</caption><thead><tr>'
+        f'<th scope="col">{content["th_period"]}</th><th scope="col">{content["th_family"]}</th>'
+        f'<th scope="col">{content["th_status"]}</th><th scope="col">{content["th_gap"]}</th><th scope="col">{content["th_access"]}</th>'
+        f'</tr></thead><tbody>{"".join(row_html)}</tbody></table></div></div></section>'
+    )
+
+
+def render(records: list[dict], catalog: dict, audit: dict, lang: str) -> str:
     court_count = sum(record["record_class"] == "court" for record in records)
     party_count = len(records) - court_count
     catalog_counts = catalog["counts"]
@@ -154,6 +408,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "scope": "Regla de alcance",
             "scope_text": "La solicitud de separación y la demanda de honorarios fueron desestimadas en primera instancia por legitimación activa. Las resoluciones localizadas no decidieron el fondo de los siete motivos de separación ni la legalidad material o cuantía de los honorarios. El Auto 223/2026 acumuló las apelaciones de separación; no las resolvió sobre el fondo.",
             "nav_coverage": "Cobertura total",
+            "nav_continuity": "Continuidad 2014–2026",
             "nav_analysis": "Análisis unitario",
             "nav_decisions": "Decisiones 2024–2026",
             "nav_text": "Texto judicial completo",
@@ -216,6 +471,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
             "scope": "Controlling scope",
             "scope_text": "The removal application and the remuneration claim were dismissed at first instance on active-standing grounds. The located decisions did not adjudicate the seven substantive removal grounds or the material legality and amount of the remuneration. Order 223/2026 combined the removal appeals; it did not decide their merits.",
             "nav_coverage": "Whole-file coverage",
+            "nav_continuity": "2014–2026 continuity",
             "nav_analysis": "Unitary analysis",
             "nav_decisions": "2024–2026 decisions",
             "nav_text": "Complete court text",
@@ -280,6 +536,7 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
         f'<a class="button view" href="../../archive/concurso36-primary-autos-21aug2026/FORENSIC_EVIDENCE_INDEX_CONCURSO_36_2012_21AUG2026.csv">{meta["coverage_index"]}</a>'
         f'<a class="button pdf" href="{reader}">{meta["coverage_reader"]}</a></p></div></section>'
     )
+    continuity = decision_continuity_section(audit, lang)
     if lang == "es":
         context = (
             '<section class="section alt" id="contexto-consecuencias"><div class="shell"><div class="context-strip">'
@@ -366,7 +623,9 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
     .autos-page .decision-body{{border-top:1px solid #ddd6ca;padding:1rem}}.autos-page .decision-meta{{background:#f5f8f7;border-left:5px solid var(--green);padding:.85rem 1rem}}.autos-page .source-note{{font-size:.83rem;color:#5f686c;margin-top:1rem}}.autos-page pre{{white-space:pre-wrap;overflow-wrap:anywhere;background:#13272f;color:#edf3f2;padding:1rem;border-radius:8px;max-height:62rem;overflow:auto;font:13px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}}
     .autos-page .filing-grid{{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.6rem}}.autos-page .filing-panel{{background:#fff;padding:1.2rem;border:1px solid #d5cec2}}.autos-page .filing-list{{list-style:none;padding:0;margin:0}}.autos-page .filing-list li{{display:grid;grid-template-columns:110px 1fr auto;gap:.8rem;padding:1rem 0;border-bottom:1px solid #e1dcd2}}.autos-page .filing-list time{{font-size:.78rem;font-weight:900}}.autos-page .filing-list h3{{font-size:1rem;margin:.15rem 0}}.autos-page .filing-list p,.autos-page .filing-list small{{font-size:.82rem;margin:.2rem 0;color:#5d686c}}.autos-page .doc-id{{font-size:.72rem;font-weight:900;color:var(--red)}}
     .autos-page .method-grid{{display:grid;grid-template-columns:1fr 1fr;gap:1rem}}.autos-page .method-card{{background:#fff;border-left:6px solid var(--gold);padding:1.15rem}}.autos-page .gaps{{line-height:1.6}}.autos-page .back{{display:inline-block;margin-top:1.4rem;font-weight:900}}.autos-page .context-strip{{background:var(--navy);color:#fff;padding:1.35rem;border-radius:12px}}.autos-page .context-strip h2{{color:#fff;max-width:none;font-size:clamp(1.45rem,3vw,2.3rem)}}.autos-page .context-strip p{{max-width:75rem}}.autos-page .context-strip .button{{background:#fff;color:var(--navy)!important}}.autos-page .analysis-links{{display:flex;flex-wrap:wrap;gap:.45rem;margin:1.25rem 0}}
-    @media(max-width:980px){{.autos-page .key-grid{{grid-template-columns:1fr 1fr}}.autos-page .filing-grid,.autos-page .method-grid{{grid-template-columns:1fr}}}}
+    .autos-page .audit-summary{{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}}.autos-page .audit-summary article{{background:#fff;border-top:5px solid var(--gold);padding:1rem 1.15rem}}.autos-page .audit-summary span{{display:block;font-size:2rem;font-weight:900;color:var(--red)}}.autos-page .audit-summary strong{{display:block;margin:.25rem 0}}.autos-page .audit-summary p{{margin:.35rem 0 0}}
+    .autos-page .audit-table{{min-width:1260px}}.autos-page .audit-table th:nth-child(1){{width:13%}}.autos-page .audit-table th:nth-child(2){{width:24%}}.autos-page .audit-table th:nth-child(3){{width:18%}}.autos-page .audit-table th:nth-child(4){{width:29%}}.autos-page .audit-table th:nth-child(5){{width:16%}}.autos-page .audit-status,.autos-page .audit-access{{display:inline-block;border-radius:999px;padding:.25rem .55rem;font-size:.72rem;font-weight:900}}.autos-page .audit-status.controlled,.autos-page .audit-access.available{{background:#dceee6;color:#245b49}}.autos-page .audit-status.located,.autos-page .audit-access.index{{background:#fff0d8;color:#7f541b}}.autos-page .audit-status.open,.autos-page .audit-access.unavailable{{background:#f6deda;color:#7d2924}}.autos-page .audit-table .button{{margin-top:.55rem}}.autos-page .audit-date-status{{font-style:italic}}.autos-page .audit-date-control{{border-left:3px solid var(--gold);padding-left:.55rem}}
+    @media(max-width:980px){{.autos-page .key-grid{{grid-template-columns:1fr 1fr}}.autos-page .filing-grid,.autos-page .method-grid,.autos-page .audit-summary{{grid-template-columns:1fr}}}}
     @media(max-width:760px){{.autos-page .hero-grid,.autos-page .key-grid{{grid-template-columns:1fr}}.autos-page .filing-list li{{grid-template-columns:1fr}}.autos-page .decision summary{{grid-template-columns:48px 1fr 26px}}}}
   </style>
 </head>
@@ -374,9 +633,10 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
 <a class="skip-link" href="#contenido">{'Saltar al contenido' if lang == 'es' else 'Skip to content'}</a>
 <header class="site-header"><div class="shell header-inner"><a class="brand" href="../"><span class="brand-mark">PD</span><span class="brand-copy"><strong>Por Derecho</strong><small>{meta["brand"]}</small></span></a><nav class="main-nav"><a href="{opposite_digest}">{meta["back"]}</a><a class="language-link" href="{meta["lang_link"]}" lang="{meta["alternate_lang"]}">{meta["lang_text"]}</a></nav></div></header>
 <main id="contenido">
-  <section class="hero"><div class="shell"><div class="hero-grid"><div><p class="eyebrow">{meta["eyebrow"]}</p><h1>{meta["h1"]}</h1><p class="lead">{meta["lead"]}</p></div><aside><div class="hero-stat"><strong>{len(records)}</strong><span>{'piezas especialistas digitizadas' if lang == 'es' else 'digitised specialist records'}</span></div><div class="hero-stat"><strong>{court_count}</strong><span>{'actos judiciales / LAJ' if lang == 'es' else 'court / LAJ acts'}</span></div><div class="hero-stat"><strong>{party_count}</strong><span>{'escritos de parte' if lang == 'es' else 'party filings'}</span></div><div class="hero-stat"><strong>23·08·2026</strong><span>{'corte documental' if lang == 'es' else 'record cut-off'}</span></div></aside></div><div class="scope"><strong>{meta["scope"]}:</strong> {meta["scope_text"]}</div></div></section>
-  <nav class="jump" aria-label="{'En esta página' if lang == 'es' else 'On this page'}"><div class="shell"><a href="#cobertura">{meta["nav_coverage"]}</a><a href="#{'analisis-unitario' if lang == 'es' else 'unitary-analysis'}">{meta["nav_analysis"]}</a><a href="#decisiones">{meta["nav_decisions"]}</a><a href="#texto-judicial">{meta["nav_text"]}</a><a href="#escritos">{meta["nav_filings"]}</a><a href="#metodo">{meta["nav_gaps"]}</a></div></nav>
+  <section class="hero"><div class="shell"><div class="hero-grid"><div><p class="eyebrow">{meta["eyebrow"]}</p><h1>{meta["h1"]}</h1><p class="lead">{meta["lead"]}</p></div><aside><div class="hero-stat"><strong>{len(records)}</strong><span>{'piezas especialistas digitizadas' if lang == 'es' else 'digitised specialist records'}</span></div><div class="hero-stat"><strong>{court_count}</strong><span>{'actos judiciales / LAJ' if lang == 'es' else 'court / LAJ acts'}</span></div><div class="hero-stat"><strong>{party_count}</strong><span>{'escritos de parte' if lang == 'es' else 'party filings'}</span></div><div class="hero-stat"><strong>23·08·2026</strong><span>{'corte del corpus especialista' if lang == 'es' else 'specialist corpus cut-off'}</span></div></aside></div><div class="scope"><strong>{meta["scope"]}:</strong> {meta["scope_text"]}</div></div></section>
+  <nav class="jump" aria-label="{'En esta página' if lang == 'es' else 'On this page'}"><div class="shell"><a href="#cobertura">{meta["nav_coverage"]}</a><a href="#{'continuidad-2014-2026' if lang == 'es' else 'continuity-2014-2026'}">{meta["nav_continuity"]}</a><a href="#{'analisis-unitario' if lang == 'es' else 'unitary-analysis'}">{meta["nav_analysis"]}</a><a href="#decisiones">{meta["nav_decisions"]}</a><a href="#texto-judicial">{meta["nav_text"]}</a><a href="#escritos">{meta["nav_filings"]}</a><a href="#metodo">{meta["nav_gaps"]}</a></div></nav>
   {coverage}
+  {continuity}
   {context}
   {analysis}
   <section class="section alt" id="decisiones"><div class="shell"><p class="kicker">{meta["decisions_kicker"]}</p><h2>{meta["decisions_h2"]}</h2><p class="intro">{meta["decisions_intro"]}</p><div class="key-grid">{key_cards(records, lang)}</div><div class="table-wrap"><table><caption>{meta["caption"]}</caption><thead><tr><th scope="col">{meta["th_date"]}</th><th scope="col">{meta["th_issuer"]}</th><th scope="col">{meta["th_doc"]}</th><th scope="col">{meta["th_effect"]}</th><th scope="col">{meta["th_access"]}</th></tr></thead><tbody>{decision_rows(records, lang)}</tbody></table></div></div></section>
@@ -385,6 +645,20 @@ def render(records: list[dict], catalog: dict, lang: str) -> str:
   <section class="section" id="metodo"><div class="shell"><p class="kicker">{meta["gaps_kicker"]}</p><h2>{meta["gaps_h2"]}</h2><ul class="gaps">{gaps}</ul><div class="method-grid"><article class="method-card"><h3>{meta["method_h3"]}</h3><p>{meta["method"]}</p></article><article class="method-card"><h3>{meta["reply_h3"]}</h3><p>{meta["reply"]}</p></article></div><a class="back" href="{opposite_digest}">← {meta["back"]}</a></div></section>
 </main>
 <footer class="site-footer"><div class="shell"><p>Por Derecho · Project Sun Rock · {'Archivo judicial controlado' if lang == 'es' else 'Controlled judicial archive'}</p></div></footer>
+<script>
+  (() => {{
+    const openHashTarget = () => {{
+      if (!window.location.hash) return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const target = document.getElementById(id);
+      if (!target) return;
+      const disclosure = target.matches('details') ? target : target.closest('details');
+      if (disclosure) disclosure.open = true;
+    }};
+    document.addEventListener('DOMContentLoaded', openHashTarget);
+    window.addEventListener('hashchange', openHashTarget);
+  }})();
+</script>
 </body>
 </html>
 '''
@@ -396,10 +670,11 @@ def main() -> None:
     args = parser.parse_args()
     payload = json.loads(args.manifest.read_text(encoding="utf-8"))
     catalog = json.loads(COMPLETE_CATALOG.read_text(encoding="utf-8"))
+    audit = json.loads(DECISION_CONTINUITY.read_text(encoding="utf-8"))
     records = payload["documents"]
     for output, lang in ((ES_OUTPUT, "es"), (EN_OUTPUT, "en")):
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(render(records, catalog, lang), encoding="utf-8")
+        output.write_text(render(records, catalog, audit, lang), encoding="utf-8")
         print(output.relative_to(ROOT))
 
 

@@ -267,9 +267,27 @@ for path, text in ((ES_PATH, es), (EN_PATH, en)):
     transcript_links = {Path(urlsplit(href).path).name for href in parser.hrefs if href.endswith("-redacted.md")}
     if transcript_links != manifest_hrefs:
         errors.append(f"{path.relative_to(ROOT)}: does not link all 50 unique transcripts")
-    pdf_links = {href for href in parser.hrefs if href.endswith(".pdf")}
-    if len(pdf_links) != 10:
-        errors.append(f"{path.relative_to(ROOT)}: expected 10 unique public-PDF links, found {len(pdf_links)}")
+    # The route may also offer public-safe audit/report downloads.  Keep this
+    # legacy gate scoped to the ten pinned evidential PDFs instead of treating
+    # every PDF link on the page as one of those source copies.
+    evidence_pdf_targets: set[str] = set()
+    for href in {value for value in parser.hrefs if urlsplit(value).path.endswith(".pdf")}:
+        parts = urlsplit(href)
+        if parts.scheme or parts.netloc:
+            continue
+        target = (path.parent / unquote(parts.path)).resolve()
+        try:
+            relative_target = target.relative_to(ROOT).as_posix()
+        except ValueError:
+            continue
+        if relative_target in PDF_SPECS:
+            evidence_pdf_targets.add(relative_target)
+    if evidence_pdf_targets != set(PDF_SPECS):
+        errors.append(
+            f"{path.relative_to(ROOT)}: evidential public-PDF set mismatch; "
+            f"missing={sorted(set(PDF_SPECS) - evidence_pdf_targets)}, "
+            f"extra={sorted(evidence_pdf_targets - set(PDF_SPECS))}"
+        )
     for href in parser.hrefs:
         parts = urlsplit(href)
         if parts.scheme or parts.netloc or href.startswith("#"):
