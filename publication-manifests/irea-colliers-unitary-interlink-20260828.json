@@ -3,13 +3,15 @@
   "publication_id": "irea-colliers-unitary-interlink-20260828",
   "control_id": "PD-IREA-COLLIERS-UNITARY-20260828-01",
   "control_date": "2026-08-28",
-  "current_state": "PREPARED_PENDING_MERGE",
-  "status": "validated_local_candidate_authorized_for_repository_and_website_publication_not_live",
+  "current_state": "DELETION_SAFE",
+  "status": "merged_live_verified_deletion_safe_with_open_evidence",
   "owner": "Por Derecho / Project Sun Rock",
   "remote_main_observed_sha": "f20e86c53b1c579f8adfe01646869b91504bb11d",
   "candidate_branch": "codex/irea-colliers-continuity-remediation-20260828",
   "candidate_parent_sha": "f20e86c53b1c579f8adfe01646869b91504bb11d",
   "validated_content_commit_sha": "d4622253fbc1619f25d95160fa2d8b9cca9e562f",
+  "pull_request": 1161,
+  "merge_sha": "da2e2c1311d94daa545d3c870081f2e6031e2ec5",
   "publication_authorized": true,
   "publication_authority_text": "ensure all the above is preserved in repository and web pages. Confirm continuity safe.",
   "communication_authorized": false,
@@ -34,12 +36,66 @@
       "Sitemap XML and all edited JSON files parsed successfully; reciprocal links and exactly one bilingual Fernando witness anchor/relationship map are enforced by the specialist validator."
     ]
   },
+  "publication_closeout": {
+    "pull_request": 1161,
+    "reviewed_head_sha": "1a93b2e83fb7acd6836d1e372ac4a7b14f72cffd",
+    "ci_result": "31_OF_31_PULL_REQUEST_WORKFLOWS_SUCCESS",
+    "merge_sha": "da2e2c1311d94daa545d3c870081f2e6031e2ec5",
+    "live_readback_utc": "2026-08-28T18:02:28Z",
+    "live_routes": {
+      "en": "https://sbu001monterecco.github.io/por-derecho/en/irea-colliers-meridian-sun-park/",
+      "es": "https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/"
+    },
+    "byte_parity": "14_OF_14_CONTROLLED_PUBLIC_SURFACES_MATCHED_MERGED_SOURCE",
+    "canonical_sha256": {
+      "en": "784a1e7a8d66503ae07a7aa1b4460f39c87f1e1c831135529794fa83d7274cba",
+      "es": "8b624e52ec93f79522f7c4fcdc4a1ec61d9264156dc5c0f37e4e9f09e176447e",
+      "unitary_data": "b424cbbbb7fe5cfce4938f7855439594cbca71f4d4ea67f2d277e945c785f5e3",
+      "sitemap": "94a3dbb4779b014e8ef7f70cf40162691edce90cc69fbf5b5d121d368464c4aa"
+    },
+    "deletion_safety": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "scope_limit": "Continuity-safe means the publication, reasoning, evidence boundaries and open questions are recoverable without this chat. It does not prove the proposed family relationship, project knowledge, custody, coordination, wrongdoing or liability."
+  },
+  "deployment_evidence": {
+    "source_merge_sha": "da2e2c1311d94daa545d3c870081f2e6031e2ec5",
+    "verified_at": "2026-08-28T18:02:28Z",
+    "result": "GitHub Pages returned the exact merged bytes for 14/14 controlled public surfaces."
+  },
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/irea-colliers-meridian-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/es/irea-colliers-meridian-sun-park/",
+    "https://sbu001monterecco.github.io/por-derecho/assets/data/irea-colliers-meridian-sun-park-unitary-v1.json"
+  ],
+  "live_verification_evidence": {
+    "verified_at": "2026-08-28T18:02:28Z",
+    "merge_sha": "da2e2c1311d94daa545d3c870081f2e6031e2ec5",
+    "result": "14/14 canonical, reciprocal, data and sitemap surfaces returned HTTP 200 and matched merged-source SHA-256 bytes.",
+    "canonical_sha256": {
+      "en": "784a1e7a8d66503ae07a7aa1b4460f39c87f1e1c831135529794fa83d7274cba",
+      "es": "8b624e52ec93f79522f7c4fcdc4a1ec61d9264156dc5c0f37e4e9f09e176447e",
+      "unitary_data": "b424cbbbb7fe5cfce4938f7855439594cbca71f4d4ea67f2d277e945c785f5e3",
+      "sitemap": "94a3dbb4779b014e8ef7f70cf40162691edce90cc69fbf5b5d121d368464c4aa"
+    }
+  },
+  "deletion_record": {
+    "status": "DELETION_SAFE_WITH_OPEN_EVIDENCE",
+    "canonical_recovery_paths": [
+      "evidence/osint/2026-08-28-irea-colliers-meridian-fernando-aguiar-acosta.md",
+      "assets/data/irea-colliers-meridian-sun-park-unitary-v1.json",
+      "assets/data/caepr-caret-irea-ricpe-colliers-continuity-v1.json",
+      "docs/deletion-audits/2026-08-28-irea-colliers-unitary-interlink-thread.md",
+      "publication-manifests/irea-colliers-unitary-interlink-20260828.json"
+    ],
+    "open_evidence_preserved": true,
+    "communication_authorized": false,
+    "note": "The publication and continuity reasoning are recoverable without this chat. Family relationship, project knowledge, custody, coordination, wrongdoing and liability remain expressly open or unproved."
+  },
   "required_closeout": [
-    "express repository/website publication authority",
-    "push and pull request",
-    "CI success on exact reviewed head",
-    "merge and Pages deployment",
-    "bilingual live readback and reciprocal-link verification",
-    "publication-manifest and deletion-audit state update"
+    "COMPLETE: express repository/website publication authority",
+    "COMPLETE: push and pull request 1161",
+    "COMPLETE: 31/31 CI success on exact reviewed head 1a93b2e83fb7acd6836d1e372ac4a7b14f72cffd",
+    "COMPLETE: merge da2e2c1311d94daa545d3c870081f2e6031e2ec5 and Pages propagation",
+    "COMPLETE: bilingual live readback and 14/14 controlled-surface byte parity",
+    "COMPLETE: publication-manifest and deletion-audit closeout update"
   ]
 }

@@ -8,8 +8,8 @@
 
 **Validated content commit:** `d4622253fbc1619f25d95160fa2d8b9cca9e562f`
 
-**Publication state:** `REMOTE_SOURCE / AUTHORISED / NOT MERGED / NOT LIVE`
-**Overall deletion-safety verdict:** `NOT DELETION-SAFE UNTIL MERGED AND LIVE-VERIFIED`
+**Publication state:** `PR 1161 MERGED / LIVE VERIFIED / 14 OF 14 CONTROLLED PUBLIC SURFACES BYTE-IDENTICAL`
+**Overall deletion-safety verdict:** `DELETION_SAFE_WITH_OPEN_EVIDENCE`
 
 ## 1. Thread request reconstructed
 
@@ -86,7 +86,9 @@ The 28-August rerun identified two consecutive Fernando Aguiar witness panels ca
 
 No source, page, allegation, correction, control or identity record was deleted, renamed or unlinked. Private message identifiers, addresses, subjects, bodies, attachment names and provider locators remain outside Git.
 
-The current-base candidate passed publication integrity across 26 changed files; repository preservation across 3,730 tracked files; audience/link validation across 598 HTML pages and 8,789 internal links; the private-source/OSINT gate; the dedicated IREA/Colliers and unique-anchor gate; and the operational-truth, current-digest, unitary-control, unitary-criminal, mission-critical, legal-register, identity-registry, person-perimeter, current-router and sent-link gates. Sitemap XML and every edited JSON object parsed successfully. Four unrelated operational-item reviews remain due as warnings; they do not change this additive package's result. No merge, deployment or live claim follows from a local pass.
+The candidate passed publication integrity across 26 changed files; repository preservation across 3,730 tracked files; audience/link validation across 598 HTML pages and 8,789 internal links; the private-source/OSINT gate; the dedicated IREA/Colliers and unique-anchor gate; and the operational-truth, current-digest, unitary-control, unitary-criminal, mission-critical, legal-register, identity-registry, person-perimeter, current-router and sent-link gates. Sitemap XML and every edited JSON object parsed successfully. Four unrelated operational-item reviews remain due as warnings; they do not change this additive package's result.
+
+PR [#1161](https://github.com/sbu001monterecco/por-derecho/pull/1161) reviewed exact head `1a93b2e83fb7acd6836d1e372ac4a7b14f72cffd`; all 31 pull-request workflows completed successfully. It merged as `da2e2c1311d94daa545d3c870081f2e6031e2ec5`. At `2026-08-28T18:02:28Z`, direct public-edge readback returned HTTP 200 for both canonical routes. The two canonical pages, ten reciprocal backlink pages, unitary data object and sitemap all matched the merged repository bytes: `14/14` controlled public surfaces. Canonical SHA-256 values were English `784a1e7a8d66503ae07a7aa1b4460f39c87f1e1c831135529794fa83d7274cba`, Spanish `8b624e52ec93f79522f7c4fcdc4a1ec61d9264156dc5c0f37e4e9f09e176447e`, unitary data `b424cbbbb7fe5cfce4938f7855439594cbca71f4d4ea67f2d277e945c785f5e3` and sitemap `94a3dbb4779b014e8ef7f70cf40162691edce90cc69fbf5b5d121d368464c4aa`.
 
 ## 7. Finite production and rerun instructions
 
@@ -107,8 +109,8 @@ Rerun `python3 scripts/validate_irea_ricpe_colliers_continuity.py` plus reposito
 - `THREAD_REASONING_CONTINUITY: PASS`
 - `EVIDENCE_BOUNDARY_CONTINUITY: PASS`
 - `REMOTE_SOURCE_CONTINUITY: PASS — CONTENT COMMIT d4622253fbc1619f25d95160fa2d8b9cca9e562f`
-- `CURRENT_MAIN_CONTINUITY: FAIL — BRANCH NOT MERGED`
-- `LIVE_PUBLICATION_CONTINUITY: PENDING — AUTHORISED / NOT YET VERIFIED`
-- `THREAD_DELETION_SAFE: NO`
+- `CURRENT_MAIN_CONTINUITY: PASS — PR 1161 / MERGE da2e2c1311d94daa545d3c870081f2e6031e2ec5`
+- `LIVE_PUBLICATION_CONTINUITY: PASS — 14/14 CONTROLLED SURFACES SOURCE-BYTE IDENTICAL`
+- `THREAD_DELETION_SAFE: YES — WITH OPEN EVIDENCE`
 
-The thread must not be deleted as operationally complete until the validated branch is merged and both bilingual routes and reciprocal links are verified live. The preserved records above are sufficient to resume without re-deriving the substantive analysis.
+The preserved records are sufficient to resume without re-deriving the substantive analysis. `DELETION_SAFE_WITH_OPEN_EVIDENCE` is a continuity result, not a merits finding: it does not prove the proposed family relationship, Sun Park/Meridian knowledge, legacy-record custody, coordination, economic crime, wrongdoing or liability. Email, filing, witness contact and other third-party communication remain unauthorised and were not performed.

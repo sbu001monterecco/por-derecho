@@ -4,7 +4,7 @@
   "baseline": "origin/main@f20e86c53b1c579f8adfe01646869b91504bb11d",
   "branch": "codex/irea-colliers-continuity-remediation-20260828",
   "validated_content_commit_sha": "d4622253fbc1619f25d95160fa2d8b9cca9e562f",
-  "action_state": "REMOTE_SOURCE_NOT_MERGED_NOT_LIVE",
+  "action_state": "LIVE_VERIFIED_DELETION_SAFE_WITH_OPEN_EVIDENCE",
   "publication_authority": "GRANTED_FOR_EXACT_REPOSITORY_WEBSITE_BRANCH_PR_MERGE_PAGES_CHAIN",
   "publication_authority_text": "ensure all the above is preserved in repository and web pages. Confirm continuity safe.",
   "communication_authority": "NOT_GRANTED; NO EMAIL FILING WITNESS CONTACT OR OTHER THIRD_PARTY ACTION",
@@ -20,11 +20,20 @@
   "witness_control": "Fernando Aguiar Acosta is a proposed fact/custody witness, not an adverse actor. No family relationship, relevant project knowledge, legacy-record access, transfer, coordination, wrongdoing or liability is established.",
   "identity_control": "PD-IREA-RICPE-COLLIERS-CARET-20260828-01; 13/13 CARET_CONFIRMED; identity only",
   "private_source_boundary": "Native private messages and attachments remain outside Git; only minimized propositions and opaque source classes are stored.",
+  "publication_closeout": {
+    "pull_request": 1161,
+    "reviewed_head_sha": "1a93b2e83fb7acd6836d1e372ac4a7b14f72cffd",
+    "ci_result": "31_OF_31_SUCCESS",
+    "merge_sha": "da2e2c1311d94daa545d3c870081f2e6031e2ec5",
+    "live_readback_utc": "2026-08-28T18:02:28Z",
+    "controlled_public_surfaces": "14_OF_14_SOURCE_BYTE_MATCH",
+    "canonical_routes": "BOTH_HTTP_200_AND_SOURCE_BYTE_IDENTICAL"
+  },
   "required_closeout": [
-    "obtain express push/PR/merge/publication authority",
-    "push and merge exact reviewed commit",
-    "verify Pages workflow for exact merge SHA",
-    "perform bilingual live readback and reciprocal-link audit",
-    "update this action state and deletion-safety verdict"
+    "COMPLETE: express push/PR/merge/publication authority",
+    "COMPLETE: exact reviewed head merged by PR 1161",
+    "COMPLETE: merged source da2e2c1311d94daa545d3c870081f2e6031e2ec5 propagated to Pages",
+    "COMPLETE: bilingual live readback and 14/14 reciprocal-surface byte audit",
+    "COMPLETE: action state and deletion-safety verdict updated"
   ]
 }
