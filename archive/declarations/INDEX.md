@@ -27,6 +27,7 @@ Registro maestro de declaraciones conservadas en `archive/declarations/`.
 | 015 | 2026-08-26 | Gil Marer | Identificación directa de Ricardo de Mosteyrín Sampalo como fiscal presente durante toda la vista de 25-jul-2023 y atribución máxima posalerta desde la vista en adelante | REGISTRADA — confirmación directa escrita; no firmada ni jurada; la Sentencia confirma asistencia del Ministerio Fiscal sin identificar al fiscal; identidad oficial, conocimiento y actuación exacta pendientes | [`015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md`](./015_GIL_DIRECT_IDENTIFICATION_FISCAL_VISTA_25JUL2023_POST_ALERT_ATTRIBUTION_20260826.md) |
 | 016 | 2026-08-26 | Gil Marer | Alegación sobre las «vidas múltiples» del crédito, NPL, Bankia→SAREB→PH122→CAM, uso dentro/fuera del Concurso, documentos notariales, importes y crédito→control→título | REGISTRADA — posición directa escrita y publicación autorizada; no firmada ni jurada; fraude, falsedad, doble recuperación, conocimiento, intención y responsabilidad permanecen sujetos a prueba actor/documento por actor/documento; renumerada desde la 015 preparada para no sobrescribir la 015 Fiscalía ya incorporada | [`016_GIL_CREDIT_MULTIPLE_LIVES_NPL_NOTARIAL_ALLEGATION_20260826.md`](./016_GIL_CREDIT_MULTIPLE_LIVES_NPL_NOTARIAL_ALLEGATION_20260826.md) |
 | 017 | 2026-08-28 | Gil Marer | No recepción de convocatoria/conocimiento previo de la junta de 4-Feb-2022; recepción indirecta posterior del ACTA por reenvío de la familia Thompson; alegación de ocultación de ciertas reuniones desde al menos 2016 | REGISTRADA — confirmación directa escrita; no firmada ni jurada; corrige «ACTA nunca recibida» por «sin comunicación directa, recepción indirecta posjunta»; correo nativo, hora, cadena de distribución, título Thompson e intención permanecen abiertos | [`017_GIL_THOMPSON_POST_MEETING_ACTA_FORWARDING_AND_CONCEALED_MEETINGS_20260828.md`](./017_GIL_THOMPSON_POST_MEETING_ACTA_FORWARDING_AND_CONCEALED_MEETINGS_20260828.md) |
+| 018 | 2026-08-28 | Patricia Domínguez — relato atribuido por Gil Marer; adopción directa pendiente | Primer encuentro con José Daniel Acosta Matos en la oficina Acosta Matos de Las Palmas, con Cristo Suárez Pimentel como acompañante; explicación atribuida sobre origen de la intervención, petición de propietarios disidentes amigos del padre, objetivo de apartar a LPB y reunificar/reconstruir el hotel; control de efectos de la muerte sobre investigación histórica y vías patrimoniales | REGISTRADA COMO INTAKE ATRIBUIDO `S1` — no es grabación literal, no firmada ni jurada, no adoptada aún directamente por Patricia y no corroborada independientemente; fecha exacta, participantes, tenor, identidades de disidentes y documentos permanecen abiertos | [`018_PATRICIA_DOMINGUEZ_ACOSTA_MATOS_FIRST_OFFICE_MEETING_ATTRIBUTED_RECOLLECTION_20260828.md`](./018_PATRICIA_DOMINGUEZ_ACOSTA_MATOS_FIRST_OFFICE_MEETING_ATTRIBUTED_RECOLLECTION_20260828.md) |
 
 ## Control obligatorio de voz y aclaraciones
 
@@ -35,6 +36,8 @@ Toda entrada derivada de audio, dictado o transcripción aplica el [`Protocolo u
 ## Distinción LPAM obligatoria
 
 La declarante de 001–005, 011 y 014 no es **Laura Patricia Acosta Matos (LPAM)**. Cuando LPAM aparezca dentro de una declaración o control, la primera referencia relevante debe usar su nombre completo y acrónimo. No utilizar `Patricia` sola como abreviatura pública.
+
+**Declaración 018:** Patricia Domínguez es también una persona distinta de Laura Patricia Acosta Matos. En 018 debe utilizarse `Patricia Domínguez` y nunca `Patricia` sola cuando exista riesgo de confusión. Su relato está atribuido por Gil y pendiente de adopción personal directa.
 
 ## Campos de integridad y presentación
 
@@ -52,7 +55,7 @@ Cuando proceda, cada entrada o declaración deberá registrar:
 
 ## Regla de numeración
 
-La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. La declaración hipotecaria/NPL preparada inicialmente como 015 fue renumerada a 016 porque una incorporación concurrente ya había ocupado legítimamente el número 015; no se sobrescribe ni renumera la entrada existente. Después de las entradas anteriores, la siguiente declaración disponible es **018**, salvo que otra entrada se incorpore antes.
+La numeración es correlativa por **orden de incorporación al archivo**, no por fecha del hecho ni por la fecha de la declaración fuente. La declaración hipotecaria/NPL preparada inicialmente como 015 fue renumerada a 016 porque una incorporación concurrente ya había ocupado legítimamente el número 015; no se sobrescribe ni renumera la entrada existente. Después de las entradas anteriores, la siguiente declaración disponible es **019**, salvo que otra entrada se incorpore antes.
 
 ## Declaraciones accionables
 
