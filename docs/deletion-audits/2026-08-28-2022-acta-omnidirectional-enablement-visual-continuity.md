@@ -109,6 +109,18 @@ Following the publication instruction, `.github/workflows/validate-acta-meeting-
 
 GitHub Pages run `33169202514` / #1217 deployed the exact merge SHA. Cache-busted HTTP readback returned 200 and exact byte parity for the four bilingual HTML routes, the visual CSS, the post-7-June structured dataset, and both affected identity registries. The exact eight SHA-256 values are controlled in `publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json`.
 
+### 7.1 Reciprocal interlink publication closeout
+
+The later “Publish and interlink” instruction was completed through PR [#1149](https://github.com/sbu001monterecco/por-derecho/pull/1149). Its exact two-commit head `0c2da0f306509ca46bb3de80e916eaecc4058d97` and tree `6070f88864555a527af99865a53ec9c09378f797` passed 27/27 pull-request workflows. Dedicated ACTA/interlink run `33176045501` / #16 passed the deterministic `4 core × 12 destinations` and `18 satellite pages × 2 core backlinks` contract and all 30 browser route/viewport checks. The legacy source-of-funds monitor also passed on the PR head in run `33176045444` / #155.
+
+PR #1149 merged as `5aaa0b6f1b343789a2d8618c6ba5ac0bedaf9a9e`. GitHub Pages run `33176302160` / #1220 deployed that exact merge successfully. A cache-busted public-edge audit then matched the exact merge-tree bytes for all 22 bilingual route files plus the stylesheet, structured post-7-June dataset, frozen first-hop snapshot and interlink publication manifest: **26/26 HTTP 200 exact-byte matches**. The controlling SHA-256 map is preserved in `publication-manifests/post7june-2022-reciprocal-route-interlink-20260828.json`.
+
+The first post-deployment run of the unchanged source-of-funds live monitor sampled two 1800 × 1200 Spanish evidence images while they were still downloading. Both image URLs independently returned HTTP 200 and complete bodies; the affected 26-resource publication readback remained exact. The monitor now waits for both images to report `complete` with the exact natural dimensions before evaluating them. This is a browser-readiness correction, not a change to any evidence proposition.
+
+The same merge exposed a second pre-existing monitor inconsistency: the unitary control-plane readback required the preserved historical 204-ID denominator on the mutable current registry pages and in the current `identity_registry.counts`, although the additive public register had already advanced to 214 IDs. The corrected control now tests current `214/94/74/10/18/18` markers and counts while separately retaining `last_live_verified_counts` at `204/87/71/10/18/18` and the immutable 26-August promotion anchors. This is a current-versus-historical state correction; it transfers no evidence or attribution between identities.
+
+Repository and GitHub Pages publication were authorised and completed. Filing, notice, email, interview, demand and all other third-party contact remain unauthorised and were not performed.
+
 ## 8. Open evidence and restart instruction
 
 ME-099 and ME-100 remain controlling. The priority package is the native call/invitation, correct owner and statutory-address sources, versioned dispatch/service/fallback records, complete attendee/power/vote/conflict schedule, diligenced ACTA and distribution ledger, native Thompson/upstream chain, debt/title/coefficient/cost ledgers, project and board files, deed/segregation inventories, and instrument-by-instrument funding applications, invoices, jobs, disclosures, payments and audits.
@@ -117,4 +129,4 @@ On restart, read the canonical report, structured data, CR-119–CR-126, ME-099�
 
 ## 9. Deletion-continuity conclusion
 
-The user's framing, its evidentiary limits, terminology corrections, visual structure, route propagation, open proof and exact live-publication state are recoverable from the repository without this conversation. The package is live and deletion-safe, subject to the separately tracked native-evidence custody gaps. Publication does not convert an allegation or inference into a finding and does not close ME-099 or ME-100.
+The user's framing, its evidentiary limits, terminology corrections, visual structure, reciprocal route propagation, open proof and exact live-publication state are recoverable from the repository without this conversation. The visual package and its 4×12 / 18×2 bilingual interlink layer are live and deletion-safe, subject to the separately tracked native-evidence custody gaps. Publication does not convert an allegation or inference into a finding and does not close ME-099 or ME-100.
