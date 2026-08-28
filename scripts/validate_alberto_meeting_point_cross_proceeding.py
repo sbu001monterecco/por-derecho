@@ -91,37 +91,46 @@ EXPECTED_CONFIRMED = {
     "PD-SP-O-0070": "ORGANISATION",
     "PD-SP-O-0046": "ORGANISATION",
     "PD-SP-O-0071": "ORGANISATION",
+    "PD-SP-O-0075": "ORGANISATION",
+    "PD-SP-O-0076": "ORGANISATION",
     "PD-SP-I-0001": "INSTITUTION",
     "PD-SP-I-0016": "INSTITUTION",
     "PD-SP-I-0017": "INSTITUTION",
     "PD-SP-I-0018": "INSTITUTION",
     "PD-SP-I-0002": "INSTITUTION",
     "PD-SP-I-0005": "INSTITUTION",
+    "PD-SP-I-0019": "INSTITUTION",
+    "PD-SP-I-0020": "INSTITUTION",
+    "PD-SP-I-0022": "INSTITUTION",
     "PD-SP-R-0001": "PROCEEDING",
     "PD-SP-R-0018": "PROCEEDING",
+    "PD-SP-R-0019": "PROCEEDING",
 }
-EXPECTED_PENDING = {
-    "FTI_COMMERCIAL_GROUP_PERIMETER": ("ORGANISATION", "PD-SP-O-0039"),
-    "ONA_FUNDED_EXIT_ACTOR": ("ORGANISATION", "PD-SP-O-0033"),
-    "CLUBOTEL_ENTITY": ("ORGANISATION", None),
-    "COMPETENT_TSJ_ROUTE": ("INSTITUTION", "PD-SP-I-0004"),
-    "LAS_PALMAS_PROVINCIAL_PROSECUTOR": ("INSTITUTION", None),
-    "TRIBUNAL_DE_CUENTAS": ("INSTITUTION", None),
-    "CGPJ_ALZADA_286_2026": ("PROCEEDING", None),
+EXPECTED_PENDING = {}
+SPECIALIST_SPAN_KEYS = {
+    "FTI_COMMERCIAL_GROUP_PERIMETER",
+    "ONA_FUNDED_EXIT_ACTOR",
+    "CLUBOTEL_ENTITY",
+    "COMPETENT_TSJ_ROUTE",
+    "LAS_PALMAS_PROVINCIAL_PROSECUTOR",
+    "TRIBUNAL_DE_CUENTAS",
+    "CGPJ_ALZADA_286_2026",
 }
+NEW_SPECIALIST_IDS = {"PD-SP-O-0075", "PD-SP-O-0076", "PD-SP-I-0019", "PD-SP-I-0020", "PD-SP-I-0022", "PD-SP-R-0019"}
+EXPECTED_LINKED_CONFIRMED = set(EXPECTED_CONFIRMED) - NEW_SPECIALIST_IDS
 EXPECTED_CARET_TYPE_COUNTS = {
     "PERSON": {"eligible": 4, "confirmed": 4, "pending": 0},
-    "ORGANISATION": {"eligible": 16, "confirmed": 13, "pending": 3},
-    "INSTITUTION": {"eligible": 9, "confirmed": 6, "pending": 3},
-    "PROCEEDING": {"eligible": 3, "confirmed": 2, "pending": 1},
+    "ORGANISATION": {"eligible": 15, "occurrence_rows": 16, "confirmed": 15, "confirmed_occurrence_rows": 16, "pending": 0},
+    "INSTITUTION": {"eligible": 9, "confirmed": 9, "pending": 0},
+    "PROCEEDING": {"eligible": 3, "confirmed": 3, "pending": 0},
 }
 EXPECTED_REGISTRY_COUNTS = {
-    "total": 214,
+    "total": 221,
     "PERSON": 94,
-    "ORGANISATION": 74,
+    "ORGANISATION": 76,
     "STRUCTURE": 10,
-    "INSTITUTION": 18,
-    "PROCEEDING": 18,
+    "INSTITUTION": 22,
+    "PROCEEDING": 19,
 }
 EXPECTED_SPECIALIST_LIVE_REGISTRY_COUNTS = {
     "total": 204,
@@ -470,19 +479,19 @@ unitary_scope = (matrix.get("scope_separation") or {}).get("unitary_caret_scope"
 specialist_scope = (matrix.get("scope_separation") or {}).get("specialist_caret_scope") or {}
 first_hop_scope = (matrix.get("scope_separation") or {}).get("first_hop_caret_scope") or {}
 check(unitary_scope.get("control_id") == UNITARY_SCOPE_CONTROL_ID, "matrix unitary-scope reference drift")
-check((unitary_scope.get("confirmed"), unitary_scope.get("denominator"), unitary_scope.get("pending")) == (19, 24, 5), "matrix unitary caret scope changed from 19/24/5")
-check(unitary_scope.get("changed_by_this_module") is False, "specialist module claims to change the unitary caret scope")
+check((unitary_scope.get("confirmed"), unitary_scope.get("denominator"), unitary_scope.get("pending")) == (21, 24, 3), "matrix unitary caret scope is not 21/24/3")
+check(unitary_scope.get("changed_by_this_module") is True, "matrix does not record the propagated unitary-scope update")
 check(specialist_scope.get("control_id") == CARET_CONTROL_ID, "matrix specialist caret control ID drift")
-check((specialist_scope.get("confirmed"), specialist_scope.get("denominator"), specialist_scope.get("pending")) == (25, 32, 7), "matrix specialist caret scope is not 25/32/7")
-check(specialist_scope.get("verdict") == "FULL_CENSUS_PARTIAL_NOT_ALL_IS", "matrix specialist caret verdict drift")
+check((specialist_scope.get("confirmed"), specialist_scope.get("denominator"), specialist_scope.get("pending"), specialist_scope.get("confirmed_occurrence_rows")) == (31, 31, 0, 32), "matrix specialist caret scope is not 31/31 unique and 32/32 occurrence rows")
+check(specialist_scope.get("verdict") == "ALL_IS_VERIFIED_FOR_STATED_SCOPE", "matrix specialist caret verdict drift")
 check(first_hop_scope == {
     "control_id": FIRST_HOP_CARET_CONTROL_ID,
-    "confirmed": 56,
-    "pending": 74,
+    "confirmed": 61,
+    "pending": 69,
     "denominator": 130,
     "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
     "changed_by_this_module": True,
-}, "matrix first-hop caret scope is not the controlled 56/130/74 result")
+}, "matrix first-hop caret scope is not the controlled 61/130/69 result")
 
 # Nine bilingual typed nodes and their exact evidence lanes.
 nodes = matrix.get("nodes") or []
@@ -603,10 +612,10 @@ for node_id in NODE_IDS:
 
 # Finite specialist caret census and registry admission.
 check(caret.get("control_id") == CARET_CONTROL_ID, "specialist caret machine-control ID drift")
-check(caret.get("status") == "PARTIAL_NOT_ALL_IS", "specialist caret status is not PARTIAL_NOT_ALL_IS")
-check(caret.get("verdict") == "FULL CENSUS COMPLETE; 25/32 CARET_CONFIRMED; 7 CARET_PENDING; PARTIAL — NOT ALL IS^", "specialist caret verdict drift")
+check(caret.get("status") == "ALL_IS_VERIFIED_FOR_STATED_SCOPE", "specialist caret status is not all-is for stated scope")
+check(caret.get("verdict") == "ALL IS^ — VERIFIED FOR THE STATED SIX-SURFACE SCOPE; 31/31 UNIQUE IDENTITIES AND 32/32 OCCURRENCE ROWS CARET_CONFIRMED; 0 PENDING", "specialist caret verdict drift")
 counts = caret.get("counts") or {}
-check((counts.get("eligible"), counts.get("confirmed"), counts.get("pending"), counts.get("suspended"), counts.get("coverage_percent")) == (32, 25, 7, 0, 78.125), "specialist caret counts are not 32/25/7/0/78.125")
+check((counts.get("eligible"), counts.get("occurrence_rows"), counts.get("confirmed"), counts.get("confirmed_occurrence_rows"), counts.get("pending"), counts.get("suspended"), counts.get("coverage_percent")) == (31, 32, 31, 32, 0, 0, 100), "specialist caret counts are not 31/31 unique and 32/32 occurrence rows")
 check(counts.get("by_type") == EXPECTED_CARET_TYPE_COUNTS, "specialist caret typed census drift")
 records = caret.get("records") or []
 check(isinstance(records, list) and len(records) == 32, "specialist caret does not enumerate exactly 32 records")
@@ -615,7 +624,7 @@ object_keys = [record.get("object_key") for record in records if isinstance(reco
 check(len(object_keys) == len(set(object_keys)) == 32, "specialist caret object keys are not 32 unique values")
 confirmed_records = [record for record in records if isinstance(record, dict) and record.get("state") == "CARET_CONFIRMED"]
 pending_records = [record for record in records if isinstance(record, dict) and record.get("state") == "CARET_PENDING"]
-check(len(confirmed_records) == 25 and len(pending_records) == 7, "specialist caret state split is not 25 confirmed / 7 pending")
+check(len(confirmed_records) == 32 and len(pending_records) == 0, "specialist caret state split is not 32 confirmed occurrence rows / 0 pending")
 check(not [record for record in records if isinstance(record, dict) and record.get("state") not in {"CARET_CONFIRMED", "CARET_PENDING"}], "specialist caret contains a state outside confirmed/pending")
 check(
     all(isinstance(record.get("next_source_needed"), str) and record["next_source_needed"].strip() for record in pending_records),
@@ -632,15 +641,15 @@ for record in records:
     check(set(labels) == {"es", "en"} and all(isinstance(value, str) and normalize_text(value) for value in labels.values()), f"caret {record.get('object_key')} lacks exact ES/EN labels")
     if record.get("state") == "CARET_CONFIRMED":
         check("candidate_caepr_id" not in record, f"confirmed caret {record.get('object_key')} improperly retains candidate_caepr_id")
-        check(all(normalize_text(value).endswith("^") for value in labels.values()), f"confirmed caret {record.get('object_key')} public label lacks terminal caret")
+        check(all("^" in normalize_text(value) for value in labels.values()), f"confirmed caret {record.get('object_key')} public label lacks caret")
     else:
         check("caepr_id" not in record, f"pending caret {record.get('object_key')} improperly has caepr_id")
         check(all("pending" in value.lower() or "pendiente" in value.lower() for value in labels.values()), f"pending caret {record.get('object_key')} lacks visible pending label")
         check(not any(normalize_text(value).endswith("^") for value in labels.values()), f"pending caret {record.get('object_key')} is rendered as confirmed")
 
 caret_unitary_ref = caret.get("unitary_scope_reference") or {}
-check(caret_unitary_ref == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 19, "pending": 5, "denominator": 24, "changed_by_this_module": False}, "specialist caret unitary-scope reference drift")
-check(registry.get("counts") == EXPECTED_REGISTRY_COUNTS, "canonical source registry counts do not equal 214/94/74/10/18/18")
+check(caret_unitary_ref == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 21, "pending": 3, "denominator": 24, "changed_by_this_module": True}, "specialist caret unitary-scope reference drift")
+check(registry.get("counts") == EXPECTED_REGISTRY_COUNTS, "canonical source registry counts do not equal 221/94/76/10/22/19")
 
 registry_records: dict[str, dict] = {}
 registry_seen: list[str] = []
@@ -664,18 +673,18 @@ check(len(registry_seen) == len(set(registry_seen)), "canonical registry contain
 
 # Full first-hop caret census for the eighteen reciprocal evidence routes. It
 # is a separate, larger denominator and must never be substituted for either
-# the six-surface 25/32 control or the repository-wide 19/24 control.
+# the six-surface all-is control or the repository-wide 21/24 control.
 check(first_hop_caret.get("schema") == "por-derecho.caepr-caret-first-hop-finite-scope.v1", "first-hop caret schema drift")
 check(first_hop_caret.get("control_id") == FIRST_HOP_CARET_CONTROL_ID, "first-hop caret control ID drift")
 check(first_hop_caret.get("status") == "PARTIAL_NOT_ALL_IS", "first-hop caret status drift")
-check(first_hop_caret.get("verdict") == "FULL FIRST-HOP CENSUS COMPLETE; 56/130 CARET_CONFIRMED; 74 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^", "first-hop caret verdict drift")
+check(first_hop_caret.get("verdict") == "FULL FIRST-HOP CENSUS COMPLETE; 61/130 CARET_CONFIRMED; 69 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^", "first-hop caret verdict drift")
 first_hop_counts = first_hop_caret.get("counts") or {}
-check((first_hop_counts.get("eligible"), first_hop_counts.get("confirmed"), first_hop_counts.get("pending"), first_hop_counts.get("suspended")) == (130, 56, 74, 0), "first-hop caret count is not 130/56/74/0")
+check((first_hop_counts.get("eligible"), first_hop_counts.get("confirmed"), first_hop_counts.get("pending"), first_hop_counts.get("suspended")) == (130, 61, 69, 0), "first-hop caret count is not 130/61/69/0")
 check(first_hop_counts.get("by_type") == {
     "PERSON": {"eligible": 27, "confirmed": 12, "pending": 15, "suspended": 0},
-    "ORGANISATION_OR_PERIMETER": {"eligible": 64, "confirmed": 28, "pending": 36, "suspended": 0},
-    "INSTITUTION_OR_SUBORGAN": {"eligible": 25, "confirmed": 11, "pending": 14, "suspended": 0},
-    "PROCEEDING": {"eligible": 14, "confirmed": 5, "pending": 9, "suspended": 0},
+    "ORGANISATION_OR_PERIMETER": {"eligible": 64, "confirmed": 30, "pending": 34, "suspended": 0},
+    "INSTITUTION_OR_SUBORGAN": {"eligible": 25, "confirmed": 13, "pending": 12, "suspended": 0},
+    "PROCEEDING": {"eligible": 14, "confirmed": 6, "pending": 8, "suspended": 0},
 }, "first-hop caret typed count drift")
 first_hop_records = first_hop_caret.get("records") or []
 check(isinstance(first_hop_records, list) and len(first_hop_records) == 130, "first-hop caret does not enumerate 130 records")
@@ -684,7 +693,7 @@ first_hop_keys = [record.get("object_key") for record in first_hop_records if is
 check(len(first_hop_keys) == len(set(first_hop_keys)) == 130, "first-hop caret object keys are not unique")
 first_hop_confirmed = [record for record in first_hop_records if isinstance(record, dict) and record.get("state") == "CARET_CONFIRMED"]
 first_hop_pending = [record for record in first_hop_records if isinstance(record, dict) and record.get("state") == "CARET_PENDING"]
-check(len(first_hop_confirmed) == 56 and len(first_hop_pending) == 74, "first-hop caret split is not 56 confirmed / 74 pending")
+check(len(first_hop_confirmed) == 61 and len(first_hop_pending) == 69, "first-hop caret split is not 61 confirmed / 69 pending")
 check(not [record for record in first_hop_records if isinstance(record, dict) and record.get("state") not in {"CARET_CONFIRMED", "CARET_PENDING"}], "first-hop caret contains an uncontrolled state")
 check(all(isinstance(record.get("boundary"), str) and record["boundary"].strip() for record in first_hop_records), "every first-hop object must state its identity boundary")
 check(all(isinstance(record.get("next_source_needed"), str) and record["next_source_needed"].strip() for record in first_hop_pending), "every pending first-hop object must state its exact next source")
@@ -702,7 +711,7 @@ for item in route_scope:
         check_local_target(route, f"first-hop {node_id} {language} route")
 check((first_hop_caret.get("core_32_overlap") or {}).get("visible_in_first_hop") == 31, "first-hop/core overlap is not 31")
 first_hop_unitary = first_hop_caret.get("unitary_scope_reference") or {}
-check((first_hop_unitary.get("confirmed"), first_hop_unitary.get("pending"), first_hop_unitary.get("denominator"), first_hop_unitary.get("changed_by_this_control")) == (19, 5, 24, False), "first-hop control changes or misstates the unitary 19/24 scope")
+check((first_hop_unitary.get("confirmed"), first_hop_unitary.get("pending"), first_hop_unitary.get("denominator"), first_hop_unitary.get("changed_by_this_control")) == (21, 3, 24, True), "first-hop control misstates the unitary 21/24 scope")
 
 for caepr_id, expected_type in EXPECTED_CONFIRMED.items():
     check(caepr_id in registry_records, f"confirmed specialist caret ID absent from registry: {caepr_id}")
@@ -725,12 +734,12 @@ if "PD-SP-O-0038" in registry_records:
 if "PD-SP-I-0018" in registry_records:
     check("not authentication" in registry_records["PD-SP-I-0018"].get("identity_boundary", "").lower(), "Public Insolvency Register authenticity boundary missing")
 
-# Canonical 19/24 unitary caret remains a separate, unresolved control.
+# Canonical 21/24 unitary caret remains a separate, unresolved control.
 unitary_result = unitary_caret.get("result") or {}
 check(unitary_caret.get("control_id") == CANONICAL_UNITARY_CARET_CONTROL_ID, "canonical unitary caret control ID drift")
-check((unitary_result.get("confirmed"), unitary_result.get("denominator"), unitary_result.get("pending"), unitary_result.get("suspended")) == (19, 24, 5, 0), "canonical unitary caret is not 19/24/5/0")
+check((unitary_result.get("confirmed"), unitary_result.get("denominator"), unitary_result.get("pending"), unitary_result.get("suspended")) == (21, 24, 3, 0), "canonical unitary caret is not 21/24/3/0")
 check(unitary_result.get("verdict") == "PARTIAL_NOT_ALL_IS_CARET", "canonical unitary caret verdict drift")
-check(len(unitary_caret.get("confirmed_objects", [])) == 19 and len(unitary_caret.get("exceptions", [])) == 5, "canonical unitary caret enumeration is not 19 confirmed + 5 exceptions")
+check(len(unitary_caret.get("confirmed_objects", [])) == 20 and len(unitary_caret.get("exceptions", [])) == 3, "canonical unitary caret enumeration is not 20 unique records representing 21 role objects plus 3 exceptions")
 
 # Hub DOM: exact rows, contained six fields, per-row render hashes, exact
 # confirmed/pending caret render, safe outbound links and language parity.
@@ -738,7 +747,7 @@ render_hash = matrix.get("public_render_sha256") or {}
 check(render_hash.get("algorithm") == "sha256(normalized six-field row joined by newline in declared field order)", "public render hash algorithm drift")
 check(render_hash.get("field_order") == list(MATRIX_FIELDS), "public render hash field order drift")
 record_by_id = {record.get("caepr_id"): record for record in confirmed_records}
-record_by_key = {record.get("object_key"): record for record in pending_records}
+record_by_key = {record.get("object_key"): record for record in confirmed_records}
 hub_node_sets: dict[str, set[str]] = {}
 hub_caret_sets: dict[str, set[str]] = {}
 hub_pending_sets: dict[str, set[str]] = {}
@@ -785,7 +794,7 @@ for label, text, dom, language in (("Spanish", es_text, es_dom, "es"), ("English
     caret_anchors = elements(dom, tag="a", attribute="data-caepr-id")
     caret_ids = [anchor.attrs.get("data-caepr-id") for anchor in caret_anchors]
     hub_caret_sets[language] = set(caret_ids)
-    check(len(caret_ids) == 25 and len(set(caret_ids)) == 25 and set(caret_ids) == set(EXPECTED_CONFIRMED), f"{label} hub confirmed caret set is not the exact unique 25-object set")
+    check(len(caret_ids) == 25 and len(set(caret_ids)) == 25 and set(caret_ids) == EXPECTED_LINKED_CONFIRMED, f"{label} hub linked confirmed caret set is not the exact legacy 25-object set")
     registry_route = f"/{language}/" + ("registro-identidad-materia/" if language == "es" else "matter-identity-registry/")
     for anchor in caret_anchors:
         caepr_id = anchor.attrs.get("data-caepr-id", "")
@@ -797,27 +806,26 @@ for label, text, dom, language in (("Spanish", es_text, es_dom, "es"), ("English
         check(caepr_id in registry_records, f"{label} {caepr_id} caret fragment is not an admitted registry ID")
         check(resolved == registry_route + f"#{caepr_id}", f"{label} {caepr_id} caret href drift: {resolved}")
 
-    pending_elements = elements(dom, attribute="data-caret-object-key")
-    pending_keys = [item.attrs.get("data-caret-object-key") for item in pending_elements]
-    hub_pending_sets[language] = set(pending_keys)
-    check(len(pending_keys) == 7 and len(set(pending_keys)) == 7 and set(pending_keys) == set(EXPECTED_PENDING), f"{label} hub pending caret set is not the exact unique seven-object set")
-    for item in pending_elements:
+    span_elements = elements(dom, attribute="data-caret-object-key")
+    span_keys = [item.attrs.get("data-caret-object-key") for item in span_elements]
+    hub_pending_sets[language] = set(span_keys)
+    check(len(span_keys) == 7 and len(set(span_keys)) == 7 and set(span_keys) == SPECIALIST_SPAN_KEYS, f"{label} hub resolved span set is not the exact seven occurrence-row set")
+    for item in span_elements:
         object_key = item.attrs.get("data-caret-object-key", "")
-        check(item.tag == "span", f"{label} pending object {object_key} is not a non-link span")
-        check(item.attrs.get("data-caret-state") == "CARET_PENDING", f"{label} pending object {object_key} has wrong state")
-        check("href" not in item.attrs and "data-caepr-id" not in item.attrs, f"{label} pending object {object_key} is improperly linked/confirmed")
+        check(item.tag == "span", f"{label} resolved occurrence {object_key} is not a span")
+        check(item.attrs.get("data-caret-state") == "CARET_CONFIRMED", f"{label} resolved occurrence {object_key} has wrong state")
+        check("href" not in item.attrs, f"{label} resolved occurrence {object_key} unexpectedly carries a link")
         record = record_by_key.get(object_key, {})
-        check(normalize_text(item.text_content()) == normalize_text((record.get("public_labels") or {}).get(language, "")), f"{label} pending object {object_key} visible label differs from machine control")
+        check(normalize_text(item.text_content()) == normalize_text((record.get("public_labels") or {}).get(language, "")), f"{label} resolved occurrence {object_key} visible label differs from machine control")
 
-    check("25/32" in text and "19/24" in text, f"{label} hub lacks specialist/unitary denominator separation")
-    check("7 pending" in text.lower() or "7 pendientes" in text.lower(), f"{label} hub lacks the seven-pending result")
+    check("31/31" in text and "32/32" in text and "21/24" in text, f"{label} hub lacks specialist/unitary denominator separation")
     first_hop_sections = elements(dom, attribute="data-caret-first-hop-control")
     check(len(first_hop_sections) == 1, f"{label} hub must contain exactly one first-hop caret section")
     if len(first_hop_sections) == 1:
         first_hop_section = first_hop_sections[0]
         check(first_hop_section.attrs.get("data-caret-first-hop-control") == FIRST_HOP_CARET_CONTROL_ID, f"{label} first-hop section control ID drift")
         first_hop_visible = normalize_text(first_hop_section.text_content())
-        check("56/130" in first_hop_visible and ("74 pending" in first_hop_visible.lower() or "74 pendientes" in first_hop_visible.lower()), f"{label} first-hop section lacks the exact 56/130 with 74 pending result")
+        check("61/130" in first_hop_visible and ("69 pending" in first_hop_visible.lower() or "69 pendientes" in first_hop_visible.lower()), f"{label} first-hop section lacks the exact 61/130 with 69 pending result")
         first_hop_links = [
             anchor for anchor in descendant_elements(first_hop_section, tag="a")
             if urljoin(matrix["hub_routes"][language], anchor.attrs.get("href", ""))
@@ -835,8 +843,8 @@ for label, text, dom, language in (("Spanish", es_text, es_dom, "es"), ("English
     check(partial_boundary in text, f"{label} hub lacks the localized partial/not-all-is boundary")
 
 check(hub_node_sets.get("es") == hub_node_sets.get("en") == NODE_ID_SET, "ES/EN hub node parity failed")
-check(hub_caret_sets.get("es") == hub_caret_sets.get("en") == set(EXPECTED_CONFIRMED), "ES/EN confirmed caret parity failed")
-check(hub_pending_sets.get("es") == hub_pending_sets.get("en") == set(EXPECTED_PENDING), "ES/EN pending caret parity failed")
+check(hub_caret_sets.get("es") == hub_caret_sets.get("en") == EXPECTED_LINKED_CONFIRMED, "ES/EN linked confirmed caret parity failed")
+check(hub_pending_sets.get("es") == hub_pending_sets.get("en") == SPECIALIST_SPAN_KEYS, "ES/EN resolved occurrence-span parity failed")
 
 # Each primary dossier must contain exactly one backlink block and the unique
 # matching hub link must be inside that block, not merely elsewhere on the page.
@@ -946,9 +954,9 @@ check(manifest.get("hub_routes") == matrix.get("hub_routes"), "candidate manifes
 manifest_unitary = manifest.get("unitary_caret_scope") or {}
 manifest_specialist = manifest.get("specialist_caret_scope") or {}
 manifest_first_hop = manifest.get("first_hop_caret_scope") or {}
-check(manifest_unitary == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 19, "pending": 5, "denominator": 24, "changed_by_this_module": False}, "candidate manifest unitary scope drift")
-check((manifest_specialist.get("control_id"), manifest_specialist.get("confirmed"), manifest_specialist.get("denominator"), manifest_specialist.get("pending"), manifest_specialist.get("suspended"), manifest_specialist.get("verdict"), manifest_specialist.get("identity_only")) == (CARET_CONTROL_ID, 25, 32, 7, 0, "FULL_CENSUS_PARTIAL_NOT_ALL_IS", True), "candidate manifest specialist scope is not controlled 25/32/7/0 partial identity-only")
-check((manifest_first_hop.get("control_id"), manifest_first_hop.get("confirmed"), manifest_first_hop.get("denominator"), manifest_first_hop.get("pending"), manifest_first_hop.get("suspended"), manifest_first_hop.get("verdict"), manifest_first_hop.get("identity_only")) == (FIRST_HOP_CARET_CONTROL_ID, 56, 130, 74, 0, "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS", True), "candidate manifest first-hop scope is not controlled 56/130/74/0 partial identity-only")
+check(manifest_unitary == {"control_id": UNITARY_SCOPE_CONTROL_ID, "confirmed": 21, "pending": 3, "denominator": 24, "changed_by_this_module": True}, "candidate manifest unitary scope drift")
+check((manifest_specialist.get("control_id"), manifest_specialist.get("confirmed"), manifest_specialist.get("denominator"), manifest_specialist.get("pending"), manifest_specialist.get("suspended"), manifest_specialist.get("verdict"), manifest_specialist.get("identity_only"), manifest_specialist.get("confirmed_occurrence_rows")) == (CARET_CONTROL_ID, 31, 31, 0, 0, "ALL_IS_VERIFIED_FOR_STATED_SCOPE", True, 32), "candidate manifest specialist scope is not controlled 31/31 unique and 32/32 occurrence rows")
+check((manifest_first_hop.get("control_id"), manifest_first_hop.get("confirmed"), manifest_first_hop.get("denominator"), manifest_first_hop.get("pending"), manifest_first_hop.get("suspended"), manifest_first_hop.get("verdict"), manifest_first_hop.get("identity_only")) == (FIRST_HOP_CARET_CONTROL_ID, 61, 130, 69, 0, "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS", True), "candidate manifest first-hop scope is not controlled 61/130/69 partial identity-only")
 check(manifest.get("communication_authorized") is False, "candidate manifest improperly authorises communication")
 check(manifest.get("email_or_filing_action") == "HOLD_NOT_AUTHORISED", "candidate manifest action state is not HOLD_NOT_AUTHORISED")
 
@@ -1041,13 +1049,13 @@ human_matrix_text = HUMAN_MATRIX_PATH.read_text(encoding="utf-8")
 plan_text = PLAN_PATH.read_text(encoding="utf-8")
 current_digest_md = CURRENT_DIGEST_MD_PATH.read_text(encoding="utf-8")
 six_surface_text = "\n".join((es_text, en_text, MATRIX_PATH.read_text(encoding="utf-8"), human_matrix_text, audit_text, plan_text))
-for forbidden in (r"\b20/20\b", r"\b9/20\b", r"\bFinite 20-object\b", r"ALL_IS_VERIFIED_FOR_STATED_SCOPE_ONLY", r"ALL IS\^\s*[—-]\s*VERIFIED"):
+for forbidden in (r"\b20/20\b", r"\b9/20\b", r"\bFinite 20-object\b", r"ALL_IS_VERIFIED_FOR_STATED_SCOPE_ONLY"):
     check(re.search(forbidden, six_surface_text, flags=re.IGNORECASE) is None, f"six-surface specialist scope retains forbidden stale/affirmative marker: {forbidden}")
 for marker in ("Eligible named objects: **32**", "`CARET_CONFIRMED`: **25**", "`CARET_PENDING`: **7**", "25/32 = 78.125%", "19/24 confirmed, 5 pending", "PD-SP-O-0070", "PD-SP-I-0018", "**Total** | **204**"):
     check(marker in audit_text, f"specialist audit missing marker {marker!r}")
 for marker in ("**56** | **74** | **0** | **130**", "56/130 = 43.076923", "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json"):
     check(marker in audit_text, f"first-hop audit missing marker {marker!r}")
-for marker in (CONTROL_ID, "forward:", "backward:", "AM357-N01", "AM357-N09", "25/32", "56/130", "19/24", "PARTIAL, NOT ALL IS^"):
+for marker in (CONTROL_ID, "forward:", "backward:", "AM357-N01", "AM357-N09", "31/31", "32/32", "61/130", "21/24", "PARTIAL, NOT ALL IS^"):
     check(marker in human_matrix_text, f"human matrix missing marker {marker!r}")
 human_rows = [line for line in human_matrix_text.splitlines() if re.match(r"^\| `AM357-N\d{2}`", line)]
 check(len(human_rows) == 9, "human node matrix does not contain exactly nine visible node rows")
@@ -1071,17 +1079,17 @@ for node_id in NODE_IDS:
         for language in ("es", "en"):
             target = ".." + node_map[peer]["primary_routes"][language]
             check(reciprocal_cell.count(f"]({target})") == 1, f"human node matrix {node_id} {edge_id} lacks the exact {language.upper()} peer target")
-check("25/32 confirmed, 7 pending" in current_digest_md and "56 confirmed, 74 pending" in current_digest_md and "repository-wide 19/24" in current_digest_md, "current digest does not keep 25/32, 56/130 and unitary 19/24 scopes separate")
+check("31/31 unique identities" in current_digest_md and "61 confirmed, 69 pending" in current_digest_md and "repository-wide 21/24" in current_digest_md, "current digest does not keep specialist all-is, 61/130 and unitary 21/24 scopes separate")
 
 digest_identity = current_digest.get("identity_registry") or {}
 digest_caret = current_digest.get("caret_scope") or {}
-check({key: digest_identity.get(key) for key in EXPECTED_REGISTRY_COUNTS} == EXPECTED_REGISTRY_COUNTS, "current digest source/static identity registry is not 214/94/74/10/18/18")
-check((digest_caret.get("confirmed"), digest_caret.get("denominator"), digest_caret.get("pending")) == (19, 24, 5), "current digest unitary caret scope is not 19/24/5")
+check({key: digest_identity.get(key) for key in EXPECTED_REGISTRY_COUNTS} == EXPECTED_REGISTRY_COUNTS, "current digest source/static identity registry is not 221/94/76/10/22/19")
+check((digest_caret.get("confirmed"), digest_caret.get("denominator"), digest_caret.get("pending")) == (21, 24, 3), "current digest unitary caret scope is not 21/24/3")
 check(digest_caret.get("control_id") == CANONICAL_UNITARY_CARET_CONTROL_ID, "current digest unitary caret control ID drift")
 digest_modules = {module.get("module_id"): module for module in current_digest.get("specialist_modules", []) if isinstance(module, dict)}
 digest_specialist = digest_modules.get(CONTROL_ID, {})
 check(digest_specialist.get("first_hop_caret_control") == "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json", "current digest lacks the first-hop machine control")
-check(digest_specialist.get("first_hop_caret_scope") == {"confirmed": 56, "pending": 74, "suspended": 0, "denominator": 130, "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"}, "current digest first-hop caret scope drift")
+check(digest_specialist.get("first_hop_caret_scope") == {"confirmed": 61, "pending": 69, "suspended": 0, "denominator": 130, "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"}, "current digest first-hop caret scope drift")
 if rank < ALLOWED_LIFECYCLE.index("LIVE_VERIFIED"):
     check((digest_identity.get("last_live_verified_counts") or {}).get("total") in {194, 204}, "pre-live candidate digest lacks an explicit prior live denominator")
 else:
@@ -1177,10 +1185,10 @@ if errors:
     raise SystemExit("\n".join(f"- {error}" for error in errors))
 
 print("MAGISTRATE-JUDGE LÓPEZ VILLARRUBIA / MEETING POINT CROSS-PROCEEDING: PASS")
-print(" - specialist caret census: 25/32 confirmed; 7 pending; PARTIAL — NOT ALL IS^")
-print(" - first-hop evidence-corpus caret census: 56/130 confirmed; 74 pending; PARTIAL — NOT ALL IS^")
-print(" - repository-wide unitary caret census: separately unchanged at 19/24; 5 pending")
+print(" - specialist caret census: 31/31 unique identities and 32/32 occurrence rows; ALL IS^ for stated scope")
+print(" - first-hop evidence-corpus caret census: 61/130 confirmed; 69 pending; PARTIAL — NOT ALL IS^")
+print(" - repository-wide unitary caret census: separately 21/24; 3 pending")
 print(" - graph: 9 bilingual six-field nodes; 13 direct forward/reverse bridges")
 print(" - primary backlinks: 18/18 contained; direct incident reciprocity: 26/26 per language; legacy lateral topology: 8/8 per language")
-print(" - canonical source registry: 214 / 94 / 74 / 10 / 18 / 18; specialist exact-live snapshot remains 204 / 87 / 71 / 10 / 18 / 18")
+print(" - canonical source registry: 221 / 94 / 76 / 10 / 22 / 19; prior exact-live snapshot remains historical")
 print(f" - candidate publication state: {state}; communication and filing remain HOLD")

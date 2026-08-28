@@ -1,5 +1,13 @@
 # CAEPR `^` verification — unitary digest scope
 
+> **Superseding rerun — 28 August 2026.** Clubotel La Dorada, S.L.
+> (`PD-SP-O-0075`) now resolves both the exact legal person and the
+> instrument-specific ONA-side role for the signed 6 June 2018 operating
+> instrument. The current result is **21/24 confirmed, three pending, 87.5% —
+> PARTIAL, NOT ALL IS^**. The historical 19/24 result and five-item queue below
+> are retained to preserve audit lineage. Current machine control:
+> `assets/data/caepr-caret-unitary-digest-v1.json`.
+
 **Control date:** 26 August 2026  
 **Scope:** the immediately preceding unitary, non-fragmented reverse-engineered digest and the distinct named people, organisations, institutions and proceedings on which that deliverable materially relied.  
 **Protocol:** `.github/governance/CAEPR_CARET_IDENTITY_AND_ALL_IS_VERIFICATION_PROTOCOL_26AUG2026.md`  

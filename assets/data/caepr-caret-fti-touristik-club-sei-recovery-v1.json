@@ -83,10 +83,10 @@
   ],
   "separate_from": [
     {"control_id":"PD-FTI-MP-RICPE-CARET-20260827-01","result":"39/65 confirmed; 26 pending"},
-    {"control_id":"PD-FTI-MP-PROF-INST-CARET-20260827-01","result":"40/101 confirmed; 61 pending"},
-    {"control_id":"PD-ALV-MP357-CARET-20260827-01","result":"25/32 confirmed; 7 pending"},
-    {"control_id":"PD-ALV-MP357-FIRST-HOP-CARET-20260827-01","result":"56/130 confirmed; 74 pending"},
-    {"control_id":"PD-UNITARY-REDIGEST-20260827-01","result":"19/24 confirmed; 5 pending"}
+    {"control_id":"PD-FTI-MP-PROF-INST-CARET-20260827-01","result":"43/101 confirmed; 58 pending"},
+    {"control_id":"PD-ALV-MP357-CARET-20260827-01","result":"31/31 unique identities and 32/32 occurrence rows confirmed; 0 pending; ALL IS^ for stated scope"},
+    {"control_id":"PD-ALV-MP357-FIRST-HOP-CARET-20260827-01","result":"61/130 confirmed; 69 pending"},
+    {"control_id":"PD-UNITARY-REDIGEST-20260827-01","result":"21/24 confirmed; 3 pending"}
   ],
   "all_is_claim_permitted": false
 }

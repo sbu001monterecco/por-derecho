@@ -63,7 +63,7 @@ Do not automatically attach the two earlier German PNGs, full brochure, private 
 - [Dedicated English cross-proceeding page](https://sbu001monterecco.github.io/por-derecho/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/)
 - [Multidirectional criminal-first matrix](https://sbu001monterecco.github.io/por-derecho/archive/ALBERTO_MEETING_POINT_357_MULTIDIRECTIONAL_CRIMINAL_FIRST_MATRIX_27AUG2026.md)
 - [Machine evidence graph](https://sbu001monterecco.github.io/por-derecho/assets/data/alberto-meeting-point-357-multidirectional-evidence-v1.json)
-- [Exhaustive 32-object ^ control — 25 confirmed, 7 pending](https://sbu001monterecco.github.io/por-derecho/assets/data/caepr-caret-alberto-meeting-point-357-v1.json)
+- [Exhaustive six-surface ^ control — 31/31 unique identities and 32/32 occurrence rows confirmed, 0 pending](https://sbu001monterecco.github.io/por-derecho/assets/data/caepr-caret-alberto-meeting-point-357-v1.json)
 - [Exhaustive 130-object first-hop ^ control — 56 confirmed, 74 pending](https://sbu001monterecco.github.io/por-derecho/assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json)
 - [Concurso 36/2012 active estate](https://sbu001monterecco.github.io/por-derecho/es/concurso-36-2012-masa-activa-2018-2021/)
 - [357/2024 judicial traceability](https://sbu001monterecco.github.io/por-derecho/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/)

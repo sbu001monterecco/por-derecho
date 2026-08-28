@@ -12,22 +12,24 @@
   "scope_separation": {
     "unitary_caret_scope": {
       "control_id": "PD-UNITARY-REDIGEST-20260827-01",
-      "confirmed": 19,
-      "pending": 5,
+      "confirmed": 21,
+      "pending": 3,
       "denominator": 24,
-      "changed_by_this_module": false
+      "changed_by_this_module": true
     },
     "specialist_caret_scope": {
       "control_id": "PD-ALV-MP357-CARET-20260827-01",
-      "confirmed": 25,
-      "pending": 7,
-      "denominator": 32,
-      "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS"
+      "confirmed": 31,
+      "pending": 0,
+      "denominator": 31,
+      "occurrence_rows": 32,
+      "confirmed_occurrence_rows": 32,
+      "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE"
     },
     "first_hop_caret_scope": {
       "control_id": "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01",
-      "confirmed": 56,
-      "pending": 74,
+      "confirmed": 61,
+      "pending": 69,
       "denominator": 130,
       "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS",
       "changed_by_this_module": true

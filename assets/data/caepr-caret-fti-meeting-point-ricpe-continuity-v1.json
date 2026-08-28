@@ -20,9 +20,9 @@
   },
   "verdict": "FULL FINITE CONTINUITY-SPINE CENSUS COMPLETE; 39/65 CARET_CONFIRMED; 26 CARET_PENDING; 0 CARET_SUSPENDED; PARTIAL — NOT ALL IS^",
   "separate_existing_scopes": [
-    {"control_id":"PD-ALV-MP357-CARET-20260827-01","result":"25/32 confirmed; 7 pending"},
-    {"control_id":"PD-ALV-MP357-FIRST-HOP-CARET-20260827-01","result":"56/130 confirmed; 74 pending"},
-    {"control_id":"PD-UNITARY-REDIGEST-20260827-01","result":"19/24 confirmed; 5 pending"}
+    {"control_id":"PD-ALV-MP357-CARET-20260827-01","result":"31/31 unique identities and 32/32 occurrence rows confirmed; 0 pending; ALL IS^ for stated scope"},
+    {"control_id":"PD-ALV-MP357-FIRST-HOP-CARET-20260827-01","result":"61/130 confirmed; 69 pending"},
+    {"control_id":"PD-UNITARY-REDIGEST-20260827-01","result":"21/24 confirmed; 3 pending"}
   ],
   "invariants": [
     "A caret confirms identity reconciliation only.",

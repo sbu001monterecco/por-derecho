@@ -26,9 +26,9 @@ CONTROL_ID = "PD-ALV-MP357-FIRST-HOP-CARET-20260827-01"
 NODE_IDS = {f"AM357-N{number:02d}" for number in range(1, 10)}
 EXPECTED_TYPE_COUNTS = {
     "PERSON": {"eligible": 27, "confirmed": 12, "pending": 15, "suspended": 0},
-    "ORGANISATION_OR_PERIMETER": {"eligible": 64, "confirmed": 28, "pending": 36, "suspended": 0},
-    "INSTITUTION_OR_SUBORGAN": {"eligible": 25, "confirmed": 11, "pending": 14, "suspended": 0},
-    "PROCEEDING": {"eligible": 14, "confirmed": 5, "pending": 9, "suspended": 0},
+    "ORGANISATION_OR_PERIMETER": {"eligible": 64, "confirmed": 30, "pending": 34, "suspended": 0},
+    "INSTITUTION_OR_SUBORGAN": {"eligible": 25, "confirmed": 13, "pending": 12, "suspended": 0},
+    "PROCEEDING": {"eligible": 14, "confirmed": 6, "pending": 8, "suspended": 0},
 }
 EXPECTED_GUARDS = {
     "Carlos": ("CARLOS_PWC", "CARET_PENDING"),
@@ -109,8 +109,8 @@ check(payload.get("control_id") == CONTROL_ID, "first-hop control ID drift")
 check(payload.get("status") == "PARTIAL_NOT_ALL_IS", "first-hop status is not partial")
 check(
     (counts.get("eligible"), counts.get("confirmed"), counts.get("pending"), counts.get("suspended"))
-    == (130, 56, 74, 0),
-    "first-hop count is not 130/56/74/0",
+    == (130, 61, 69, 0),
+    "first-hop count is not 130/61/69/0",
 )
 check(counts.get("by_type") == EXPECTED_TYPE_COUNTS, "first-hop type counts drift")
 check(isinstance(records, list) and len(records) == 130, "first-hop records are not exactly 130")
@@ -119,7 +119,7 @@ check([item.get("ordinal") for item in records] == list(range(1, 131)), "record 
 record_by_key = {item.get("object_key"): item for item in records if isinstance(item, dict)}
 check(len(record_by_key) == 130 and None not in record_by_key, "record keys are not 130 unique values")
 state_counts = Counter(item.get("state") for item in records if isinstance(item, dict))
-check(state_counts == Counter({"CARET_PENDING": 74, "CARET_CONFIRMED": 56}), "record state split drift")
+check(state_counts == Counter({"CARET_PENDING": 69, "CARET_CONFIRMED": 61}), "record state split drift")
 for item in records:
     if not isinstance(item, dict):
         continue
@@ -231,5 +231,5 @@ if errors:
     raise SystemExit(1)
 
 print("PASS: first-hop rendered occurrence provenance is frozen and auditable")
-print("PASS: 18 rendered <main> surfaces; 130 proof anchors; 56 confirmed / 74 pending")
+print("PASS: 18 rendered <main> surfaces; 130 proof anchors; 61 confirmed / 69 pending")
 print("PASS: occurrence guards map to object/state and no inline caret is rendered")

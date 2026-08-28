@@ -110,12 +110,12 @@
     }
   },
   "identity_registry": {
-    "total": 214,
+    "total": 221,
     "PERSON": 94,
-    "ORGANISATION": 74,
+    "ORGANISATION": 76,
     "STRUCTURE": 10,
-    "INSTITUTION": 18,
-    "PROCEEDING": 18,
+    "INSTITUTION": 22,
+    "PROCEEDING": 19,
     "archive_backfill": "OPEN",
     "candidate_state": "LOCAL_SOURCE_STATIC_CANDIDATE_NOT_YET_LIVE_VERIFIED",
     "last_live_verified_counts": {
@@ -168,16 +168,16 @@
     "control_id": "PD-CAEPR-CARET-UNITARY-DIGEST-20260826-01",
     "control_file": "assets/data/caepr-caret-unitary-digest-v1.json",
     "current_live_state": "PARTIAL_NOT_ALL_IS",
-    "confirmed": 19,
+    "confirmed": 21,
     "denominator": 24,
-    "pending": 5,
+    "pending": 3,
     "old_local_24_of_24_package": "SUPERSEDED_NOT_MERGEABLE_AS_IS",
     "reasons": [
       "prepared against earlier 16dd443 repository state",
       "the local 214-record denominator and last live-verified 204-record denominator both differ from the stale package assumptions",
       "proceeding IDs R-0011 through R-0017 are occupied",
-      "Matkator and ONA exact-entity reconciliation remains open",
-      "Clubotel, PP1041 and EH90 require current-registry admission"
+      "Matkator registry-state reconciliation remains open",
+      "PP1041 and EH90 require current-registry admission; the instrument-specific ONA/Clubotel identity is closed"
     ]
   },
   "specialist_modules": [
@@ -197,20 +197,22 @@
       "publication_manifest": "publication-manifests/alberto-meeting-point-multidirectional-criminal-first-20260827.json",
       "caret_scope_type": "SEPARATE_SPECIALIST_EXHAUSTIVE_CENSUS",
     "caret_scope": {
-        "confirmed": 25,
-        "pending": 7,
+        "confirmed": 31,
+        "pending": 0,
         "suspended": 0,
-        "denominator": 32,
-      "verdict": "FULL_CENSUS_PARTIAL_NOT_ALL_IS"
+        "denominator": 31,
+        "occurrence_rows": 32,
+        "confirmed_occurrence_rows": 32,
+        "verdict": "ALL_IS_VERIFIED_FOR_STATED_SCOPE"
     },
     "first_hop_caret_scope": {
-      "confirmed": 56,
-      "pending": 74,
+        "confirmed": 61,
+        "pending": 69,
       "suspended": 0,
       "denominator": 130,
       "verdict": "FULL_FIRST_HOP_CENSUS_PARTIAL_NOT_ALL_IS"
     },
-      "unitary_caret_scope_unchanged": true,
+      "unitary_caret_scope_unchanged": false,
       "public_routes": {
         "es": "/es/alberto-lopez-villarrubia-meeting-point-357-masa-activa/",
         "en": "/en/alberto-lopez-villarrubia-meeting-point-357-active-estate/"
@@ -244,8 +246,8 @@
         },
         "professional_institutional": {
           "control_file": "assets/data/caepr-caret-fti-meeting-point-professional-institutional-v1.json",
-          "confirmed": 40,
-          "pending": 61,
+          "confirmed": 43,
+          "pending": 58,
           "suspended": 0,
           "denominator": 101,
           "verdict": "FULL_ROLE_SELECTED_CENSUS_PARTIAL_NOT_ALL_IS",
