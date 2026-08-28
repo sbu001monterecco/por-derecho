@@ -3,7 +3,7 @@
 **Date:** 28 August 2026  
 **Scope:** exact resolution and publication of the seven former
 Alberto/Meeting Point principal-scope caret objects  
-**State before publication:** `CONTINUITY_CAPTURED / LIVE VERIFICATION PENDING`
+**Final state:** `DELETION_SAFE / MERGED_AND_LIVE_VERIFIED`
 
 ## Captured decisions
 
@@ -36,7 +36,24 @@ Alberto/Meeting Point principal-scope caret objects
 
 ## Deletion gate
 
-This thread becomes deletion-safe only after the change is merged, the Pages
-deployment succeeds and exact live readback confirms the updated public routes
-and machine controls. Until then, repository continuity is captured but the
-public continuity claim remains pending.
+The change was merged by PR
+[#1165](https://github.com/sbu001monterecco/por-derecho/pull/1165) as commit
+`e6e4d94bfc504b0e79d73d054ff754e6d4f9275c`. All 21 required PR checks passed.
+
+After merge, current `origin/main` was refreshed to
+`30d99da0ddc21f9e1897bb22b9cce09da808395b` (a later, unrelated continuity
+merge). No file in the seven-caret public change set differs between the PR
+#1165 merge and that current tip.
+
+On 28 August 2026, an exact production readback fetched all 20 affected public
+files from `https://sbu001monterecco.github.io/por-derecho/`: 11 machine-readable
+JSON controls and nine rendered ES/EN/DE pages. Every request returned HTTP 200
+and every live SHA-256 digest matched the corresponding byte sequence in current
+`main`. This proves that the complete seven-caret public change tree is present
+on the production host; it does not prove any allegation, act, intention,
+liability, merits decision or institutional acceptance.
+
+No unique reasoning, correction, source, limitation, recovery instruction or
+unfinished implementation remains solely in the originating thread. The
+repository and public deployment now contain the restart set and its boundaries.
+The originating thread is therefore safe to delete for continuity purposes.
