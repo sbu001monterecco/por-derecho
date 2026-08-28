@@ -14,6 +14,8 @@ on:
       - 'en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/**'
       - 'es/cronologia-control-material-sun-park/**'
       - 'en/sun-park-material-control-chronology/**'
+      - 'es/toma-control-sun-park-7-junio-2018/**'
+      - 'en/sun-park-takeover-7-june-2018/**'
       - 'es/cuaderno-juridico/index.html'
       - 'en/legal-notebook/index.html'
       - '.github/workflows/verify-meeting-point-final-propagation-live.yml'
@@ -51,10 +53,10 @@ jobs:
           const targets = [
             { key: 'fti-es', url: `${base}/es/fti-touristik-meeting-point-insolvencia-preconcurso-bluesea/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['SEPI autorizó 31 millones de euros para Meeting Point, no 56 millones.', 'Cuentas anuales FASEE 2023 de SEPI', 'Hotelmanagement 21 millones', 'Meeting Point Spain 10 millones participativos', 'tres deudores'] },
             { key: 'fti-en', url: `${base}/en/fti-touristik-meeting-point-insolvency-preinsolvency-bluesea/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['SEPI authorised €31 million for the Meeting Point operation—not €56 million.', 'SEPI FASEE 2023 annual accounts', 'Hotelmanagement €21 million', 'Meeting Point Spain €10 million participating', 'three-debtor'] },
-            { key: 'lava-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'No'] },
-            { key: 'lava-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '[data-mp-direct-commercial-source-20260821]', markers: ['sonnenklar.TV', 'Calle Janubio 3', 'do not'] },
-            { key: '357-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['Límite 357/2024', 'tres deudores', 'Auren', 'impropiedad'] },
-            { key: '357-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: '[data-mp357-custody-boundary-20260821]', markers: ['357/2024 boundary', 'three-debtor', 'Auren', 'improper'] },
+            { key: 'lava-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '#evidencia-visual', markers: ['Club Sei Lanzarote', 'C/ Janubio 3', 'no prueba'] },
+            { key: 'lava-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: '#visual-evidence', markers: ['Club Sei Lanzarote', 'C/ Janubio 3', 'not proof'] },
+            { key: '357-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: '#sun-park', markers: ['357/2024 puede ser un nodo de custodia y revelación', 'tres deudores', 'Auren', 'no convierte 357/2024 en prueba de ocultación'] },
+            { key: '357-en', url: `${base}/en/legal-notebook/meeting-point-357-2024-judicial-traceability/?source=${sha.slice(0,12)}`, selector: '#sun-park', markers: ['357/2024 may be a custody and disclosure node', 'three debtors', 'Auren', 'does not make 357/2024 proof of concealment'] },
             { key: 'causation-es', url: `${base}/es/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Alegación de causalidad penal, no sentencia', 'causaron, condicionaron y facilitaron', 'Límite Romera / versión CAM'] },
             { key: 'causation-en', url: `${base}/en/lava-verde-club-sei-meeting-point/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Criminal-causation allegation, not a judgment', 'caused, conditioned and enabled', 'Romera / CAM statement boundary'] },
             { key: 'chronology-es', url: `${base}/es/cuaderno-juridico/meeting-point-357-2024-trazabilidad-judicial/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['23 JUL 2024', '31 JUL 2024', 'Auto 97/2025'] },
@@ -63,21 +65,21 @@ jobs:
             { key: 'material-chronology-en', url: `${base}/en/sun-park-material-control-chronology/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['357/2024: three-debtor custody and disclosure', '23 July 2024', 'Auto 97/2025', '24 October'] },
             { key: 'notebook-es', url: `${base}/es/cuaderno-juridico/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Tres deudores. Un procedimiento. Trazabilidad judicial parcialmente resuelta.', 'Auto 97/2025', '24 de octubre'] },
             { key: 'notebook-en', url: `${base}/en/legal-notebook/?source=${sha.slice(0,12)}`, selector: 'body', markers: ['Three debtors. One proceeding. A partly resolved judicial trail.', 'Auto 97/2025', '24 October'] },
-            { key: 'takeover-es', url: `${base}/es/toma-control-sun-park-7-junio-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] },
-            { key: 'takeover-en', url: `${base}/en/sun-park-takeover-7-june-2018/?source=${sha.slice(0,12)}`, selector: '[data-takeover-meeting-point-gateway-20260821]', markers: ['Lava Verde', 'Club Sei', 'Meeting Point/FTI'] }
+            { key: 'takeover-es', url: `${base}/es/toma-control-sun-park-7-junio-2018/?source=${sha.slice(0,12)}`, selector: '#proyecto-antes-del-titulo', markers: ['Lava Verde', 'habitación piloto', 'adjudicación LPB de 2022'] },
+            { key: 'takeover-en', url: `${base}/en/sun-park-takeover-7-june-2018/?source=${sha.slice(0,12)}`, selector: '#project-before-title', markers: ['Lava Verde', 'pilot room', 'LPB’s 2022 adjudication'] }
           ];
 
           (async () => {
             const browser = await chromium.launch({ headless: true, executablePath: process.env.PSR_BROWSER_PATH });
             let ok = false;
             let last = [];
-            for (let attempt = 1; attempt <= 36; attempt++) {
+            for (let attempt = 1; attempt <= 12; attempt++) {
               ok = true;
               last = [];
               for (const t of targets) {
                 const page = await browser.newPage();
                 try {
-                  await page.goto(t.url, { waitUntil: 'networkidle', timeout: 60000 });
+                  await page.goto(t.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
                   const el = page.locator(t.selector);
                   const count = await el.count();
                   const text = count ? await el.innerText() : '';

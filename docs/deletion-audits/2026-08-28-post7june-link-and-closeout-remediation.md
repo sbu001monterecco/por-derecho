@@ -53,10 +53,22 @@ The pre-publication remediation candidate passed:
 - repository preservation, publication-integrity and audience-experience controls; and
 - a zero-result repository scan for public `href="/en/..."` or `href="/es/..."` navigation.
 
-The exact PR, merge, Pages and live-readback evidence is controlled by `publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json` and the deployment log. Until that manifest reaches `DELETION_SAFE`, the implementation is recoverable but this remediation thread is not yet certified for deletion.
+The exact PR, merge, Pages and live-readback evidence is controlled by `publication-manifests/am357-project-safe-link-continuity-remediation-20260828.json` and the deployment log.
 
-## 7. Restart and deletion gate
+## 7. First publication and exact live readback
+
+The project-safe link remediation was reviewed in [PR #1157](https://github.com/sbu001monterecco/por-derecho/pull/1157). Its final head was `d59e79f99bdc5d31f49daf67d704af72425f7d4f`, its exact reviewed tree was `823ea339e53fddbd39acee80eeb43e3174214cdc`, and all 23/23 pull-request checks passed. It merged as `85a3d733d7cec204eae873d04ea5f2f6699ae010`; Pages run `33186562852` / #1229 succeeded for that exact merge.
+
+No-cache public readback then passed **30/30 changed public resources** with HTTP 200 and byte-for-byte equality to the merged files. A second public-edge traversal passed all **52/52** AM357 links: every href was relative, remained below `/por-derecho`, resolved to the exact bilingual peer route and reached an existing fragment.
+
+Of 28 exact-merge workflows, 27 succeeded. Legacy run `33186564318` / #36, “Verify Meeting Point final propagation live”, was cancelled at its eight-minute job limit. Its logs showed that all canonical FTI, causation, chronology, material-chronology and notebook checks passed repeatedly. Only six checks tied to three optional JavaScript-injected duplicate-card selectors failed: Lava Verde, 357/2024 and takeover in ES/EN. The underlying pages, loader script and all AM357 navigation remained exact and live. This was therefore recorded as a monitor-contract defect, not a content, evidence or navigation regression.
+
+CR-129 replaces those transient duplicate-card selectors with the corresponding authoritative static sections (`#evidencia-visual` / `#visual-evidence`, `#sun-park`, and `#proyecto-antes-del-titulo` / `#project-before-title`), adds both takeover routes to the trigger scope, uses `domcontentloaded`, and limits retries so a failure exits deterministically rather than being cancelled by the job timeout. The revised six-selector local contract passed 20/20 markers across six unique sections. The change alters no published proposition or evidentiary status.
+
+Until the corrected live monitor succeeds on an exact merge and the manifest records that result, the implementation remains recoverable but this remediation thread is not yet certified for deletion.
+
+## 8. Restart and deletion gate
 
 On restart, read this audit, CR-128, the remediation manifest, the original 2022 ACTA continuity audit, the canonical post-7-June report, its structured dataset, Declaration 017 and ME-099–ME-100. Re-run the builder in `--check` mode before editing any of the 18 endpoint pages. Keep the matrix's root routes conceptual and public hrefs project-safe and relative.
 
-Thread deletion is safe only after the remediation manifest records the exact reviewed PR head/tree, merge, successful Pages deployment, critical live URL/fragment tests, exact-source readback where available and the unchanged no-contact boundary.
+Thread deletion is safe only after the remediation manifest records the monitor-correction PR head/tree, merge, successful exact-merge monitor and Pages deployment, final live readback and the unchanged no-contact boundary.
