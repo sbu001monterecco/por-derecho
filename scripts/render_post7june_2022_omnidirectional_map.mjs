@@ -150,6 +150,10 @@ try {
           linkCount: bar.querySelectorAll('a[href]').length,
           takeoverLinks: bar.querySelectorAll('[data-post7-core="takeover"]').length,
           meetingLinks: bar.querySelectorAll('[data-post7-core="meeting"]').length,
+          aeatLinks: bar.querySelectorAll(
+            'a[href*="/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/"], ' +
+            'a[href*="/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/"]'
+          ).length,
           visible: Boolean(bar.getClientRects().length),
           barOverflow: bar.scrollWidth - bar.clientWidth,
           documentOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
@@ -160,8 +164,10 @@ try {
         errors.push('reciprocal bar metrics unavailable');
       } else {
         if (metrics.routeId !== metrics.expectedRouteId) errors.push(`route ID ${metrics.routeId} != ${metrics.expectedRouteId}`);
-        if (metrics.linkCount !== 2) errors.push(`backlinks ${metrics.linkCount} != 2`);
+        const expectedLinks = routeId === 'deed' ? 3 : 2;
+        if (metrics.linkCount !== expectedLinks) errors.push(`backlinks ${metrics.linkCount} != ${expectedLinks}`);
         if (metrics.takeoverLinks !== 1 || metrics.meetingLinks !== 1) errors.push('core backlink identity mismatch');
+        if (metrics.aeatLinks !== (routeId === 'deed' ? 1 : 0)) errors.push('AEAT diligence backlink identity mismatch');
         if (!metrics.visible) errors.push('reciprocal bar is not rendered');
         if (metrics.barOverflow > 2) errors.push(`bar horizontal overflow ${metrics.barOverflow}px`);
         if (metrics.documentOverflow > 2) errors.push(`document horizontal overflow ${metrics.documentOverflow}px`);

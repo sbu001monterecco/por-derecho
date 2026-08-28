@@ -46,6 +46,8 @@ The primary administrative/judicial record controls the following chronology:
 - 2026: Audiencia Nacional `PO 496/2026`, Section 7, remains pending;
 - 6-Jul-2026: Order 426/2026 denied interim suspension; it did not decide the tax merits.
 
+**28-Aug-2026 source addendum:** the complete received five-page 6-Apr-2022 Customs Surveillance diligence is now controlled through `archive/AEAT_PINK_VIGILANCIA_ADUANERA_DILIGENCE_PUBLICATION_CONTROL_28AUG2026.md`, the bilingual public evidence rooms and `assets/data/aeat-pink-vigilancia-aduanera-2022-04-06-v1.json`. It proves the visit observations and that attributed statements were recorded. It does not prove statement truth, the unnamed male's identity, comprehensive Pink operation/income, falsity, criminality or decisive AEAT reliance. The Cabildo certificate referred to in the diligence is not annexed.
+
 The judicial record initially treated the challenged administrative state as presumed silence. The State later produced the 29-Sep-2025 express inadmissibility act. The reviewed record does not yet establish that Pink formally expanded or adapted its judicial claim to that express act. This procedural alignment must be checked rather than assumed.
 
 This lane concerns the legality and procedural effects of public tax acts.

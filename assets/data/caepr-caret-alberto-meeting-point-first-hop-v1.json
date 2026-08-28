@@ -129,29 +129,29 @@
       "node_id": "AM357-N03",
       "language": "es",
       "route": "/es/toma-control-sun-park-7-junio-2018/",
-      "normalized_main_sha256": "527ffa60037be9f4efcda610f21395667d7e2cc12aa6585062637552cb3798d5",
-      "normalized_characters": 53212
+      "normalized_main_sha256": "e05911bf2a03b62326bb8d72835d39d652fa8b388018b4b932befa57f1e9b018",
+      "normalized_characters": 53259
     },
     {
       "node_id": "AM357-N03",
       "language": "en",
       "route": "/en/sun-park-takeover-7-june-2018/",
-      "normalized_main_sha256": "37fd89544e0af19399d29f061ac9e29b41905aabe37cfe84df7d3bf161fd55fd",
-      "normalized_characters": 50735
+      "normalized_main_sha256": "6752021f708d01bf01fe4e9d90d978f0e3e1f0f649ed748209d5046132799b4f",
+      "normalized_characters": 50782
     },
     {
       "node_id": "AM357-N04",
       "language": "es",
       "route": "/es/adjudicacion-2022-reconstruccion-documental/",
-      "normalized_main_sha256": "4fd56f6925c3f38b766c510f3d504469e720d83c32b973bd2041e0bbe5bd40a0",
-      "normalized_characters": 17034
+      "normalized_main_sha256": "bf18f29e18af695825cb2c510b8afa2407ba19e1b67a50dd4066a6cc58918362",
+      "normalized_characters": 17076
     },
     {
       "node_id": "AM357-N04",
       "language": "en",
       "route": "/en/2022-adjudication-documentary-reconstruction/",
-      "normalized_main_sha256": "68e30130415e0bfea42dca162bab30cae495c59b626499ad78d8ce78e1277205",
-      "normalized_characters": 16091
+      "normalized_main_sha256": "3dc9d90444c22ddaafca265b5e46bd30e891b2752b69d332f247bb8808b4f391",
+      "normalized_characters": 16133
     },
     {
       "node_id": "AM357-N05",

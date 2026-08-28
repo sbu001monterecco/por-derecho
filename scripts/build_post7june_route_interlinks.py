@@ -40,6 +40,12 @@ ROUTES = {
 
 def backlink(locale: str, route_id: str) -> str:
     if locale == "es":
+        aeat_link = (
+            '<a href="../evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/">'
+            'Diligencia AEAT · visita y obras 22 marzo</a>'
+            if route_id == "deed"
+            else ""
+        )
         return (
             f'{BEGIN}<nav class="shell post7-evidence-backlink" '
             f'data-post7-evidence-backlink="{CONTROL_ID}" data-post7-route-id="{route_id}" '
@@ -49,9 +55,16 @@ def backlink(locale: str, route_id: str) -> str:
             '#mapa-omnidireccional-4feb2022">7 junio 2018 → mapa 2022</a>'
             '<a data-post7-core="meeting" href="../comunidad-instrumentalizacion/'
             'sala-documental-actas/2022-02-04/#lectura-unitaria-2018-2022">'
-            'Junta / ACTA de 4 febrero 2022</a></nav>'
+            'Junta / ACTA de 4 febrero 2022</a>'
+            f'{aeat_link}</nav>'
             f'{END}'
         )
+    aeat_link = (
+        '<a href="../evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/">'
+        'AEAT diligence · 22 March visit and works</a>'
+        if route_id == "deed"
+        else ""
+    )
     return (
         f'{BEGIN}<nav class="shell post7-evidence-backlink" '
         f'data-post7-evidence-backlink="{CONTROL_ID}" data-post7-route-id="{route_id}" '
@@ -61,7 +74,8 @@ def backlink(locale: str, route_id: str) -> str:
         '#omnidirectional-4feb2022-map">7 June 2018 → 2022 map</a>'
         '<a data-post7-core="meeting" href="../community-instrumentalisation/'
         'acta-document-room/2022-02-04/#unitary-reading-2018-2022">'
-        '4 February 2022 meeting / ACTA</a></nav>'
+        '4 February 2022 meeting / ACTA</a>'
+        f'{aeat_link}</nav>'
         f'{END}'
     )
 

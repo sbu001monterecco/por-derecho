@@ -1,8 +1,8 @@
 {
   "schema": "por-derecho.material-updates.v1",
   "control_id": "PD-MATERIAL-UPDATES-001",
-  "control_date": "2026-08-26",
-  "latest_material_date": "2026-08-26",
+  "control_date": "2026-08-28",
+  "latest_material_date": "2026-08-28",
   "languages": ["es", "en"],
   "public_routes": {
     "es": "/es/actualizaciones/",
@@ -15,6 +15,30 @@
     "The homepage, ES/EN updates pages, feed, state controls and sitemap metadata must use the same latest material date."
   ],
   "entries": [
+    {
+      "update_id": "MU-20260828-AEAT-PINK-DILIGENCE",
+      "date": "2026-08-28",
+      "type": "PRIMARY_EVIDENCE_PUBLICATION_AND_FACTUAL_PREMISE_CONTROL",
+      "title_es": "Diligencia AEAT / Pink: fuente completa, traducción y límites probatorios",
+      "title_en": "AEAT / Pink diligence: complete source, translation and evidential limits",
+      "affected_routes": [
+        "/es/evidencia/diligencia-aeat-vigilancia-aduanera-sun-park-6abril2022/",
+        "/en/evidence/aeat-customs-surveillance-sun-park-diligence-6april2022/",
+        "/es/pink-canary-aeat-audiencia-nacional/",
+        "/en/pink-canary-aeat-national-court/",
+        "/es/pink-canary-aeat-496-2026/",
+        "/en/pink-canary-aeat-496-2026/",
+        "/es/toma-control-sun-park-7-junio-2018/",
+        "/en/sun-park-takeover-7-june-2018/",
+        "/es/adjudicacion-2022-reconstruccion-documental/",
+        "/en/2022-adjudication-documentary-reconstruction/",
+        "/es/actualizaciones/",
+        "/en/updates/"
+      ],
+      "source_status": "PUBLIC_REDACTED_COMPLETE_FIVE_PAGE_DILIGENCE_WITH_TRANSCRIPTION_TRANSLATION_AND_PROPOSITION_MATRIX",
+      "what_changed": "The complete five-page diligence formalised on 6 April 2022 is published through a controlled public derivative, Spanish transcription, English translation and proposition-level matrix. The bilingual Pink/AEAT, 7 June 2018 and 2022 adjudication routes now link the source while separating direct observation, recorded statement, party allegation, inference and unresolved evidence.",
+      "what_did_not_change": "The source does not itself prove the truth of attributed statements, identify the unnamed male interlocutor, establish comprehensive Pink operation or income in 2017–2018, prove legal substitution of the Operating Community, establish criminality or retaliation, or show that the diligence initiated the inspection. The 2020 inspection and March 2022 supplementary action pre-date the visit; later reliance remains an open file-based question."
+    },
     {
       "update_id": "MU-20260826-AC-REMOVAL-FEES-UNITARY",
       "date": "2026-08-26",

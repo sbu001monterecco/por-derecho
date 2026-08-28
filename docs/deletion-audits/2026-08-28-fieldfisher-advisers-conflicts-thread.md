@@ -80,9 +80,11 @@ The current Pink / AEAT public procedural record is linked through:
 - `/en/evidence/aeat-pink-496-2026-allegations/`
 - `/es/evidencia/aeat-pink-496-2026-alegaciones/`
 
-The tax-linked source is `002_Ampliacion_Resolucion_Expresa.docx`. It is not to be conflated with the separate Aweswell/LPB insolvency document `ES07 - 13 - Alegaciones oposicion Impugnacion AW.docx`.
-
-Because the tax working draft is dated 1 September 2026 while the control date is 28 August 2026, the website correctly treats it as a draft / working procedural record unless and until filing is independently confirmed.
+The two compatibility routes above must not reproduce or identify lawyer emails,
+advice, filenames, unfiled pleadings, comments or live strategy. They now point
+readers to the independently controlled public procedural record for PO 496/2026
+and to public-safe primary administrative evidence. A future filing is published
+only after its filing and public-release status are independently established.
 
 ## 5. Family-office / governance benchmark
 

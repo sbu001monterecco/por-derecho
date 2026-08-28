@@ -198,12 +198,12 @@ def main() -> int:
     require("PD-SP-P-0093" in actors and "PD-SP-P-0094" in actors, "Javier/Gerardo actor rows missing")
 
     require(registry["counts"] == {
-        "total": 214,
+        "total": 221,
         "PERSON": 94,
-        "ORGANISATION": 74,
+        "ORGANISATION": 76,
         "STRUCTURE": 10,
-        "INSTITUTION": 18,
-        "PROCEEDING": 18,
+        "INSTITUTION": 22,
+        "PROCEEDING": 19,
     }, "master registry counts mismatch")
     by_id = {item["id"]: item for item in people}
     expected_people = {

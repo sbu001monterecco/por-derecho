@@ -245,12 +245,19 @@
   },
   "material_updates": {
     "canonical_source": "assets/data/material-updates-v1.json",
-    "latest_material_date": "2026-08-26",
-    "repository_latest_material_date": "2026-08-26",
+    "latest_material_date": "2026-08-28",
+    "repository_latest_material_date": "2026-08-28",
     "last_live_verified_material_date": "2026-08-26",
     "languages": ["es","en"],
     "public_routes": ["/es/actualizaciones/","/en/updates/"],
-    "public_parity": "2026-08-26_LIVE_VERIFIED"
+    "public_parity": "REPOSITORY_2026-08-28_PENDING_PUBLICATION_LAST_LIVE_VERIFIED_2026-08-26",
+    "pending_publication": {
+      "control_id": "PD-SP-AEAT-PINK-DILIGENCE-20260828-01",
+      "state": "PREPARED_PENDING_MERGE",
+      "pull_request": 1167,
+      "branch": "codex/pink-aeat-diligencia-6apr2022-20260828",
+      "manifest": "publication-manifests/aeat-pink-vigilancia-aduanera-20220406-publication-20260828.json"
+    }
   },
   "procedural_checkpoints": {
     "concurso": "Concurso 36/2012; LPB is the sole debtor and the proceeding does not absorb Matkator, CEXP, Aweswell, other owners or the whole hotel by association.",

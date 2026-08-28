@@ -90,15 +90,15 @@ Do **not** state that:
 
 ## 5. Current Spain / AEAT link
 
-The current Sixto Abogados correspondence of 28 August 2026 includes a draft titled `002_Ampliacion_Resolucion_Expresa.docx`. It identifies:
+The public judicial record identifies Pink Canary Services, S.L.U.,
+Procedimiento Ordinario 496/2026 and the Audiencia Nacional,
+Contentious-Administrative Chamber, Section 7. The reviewed interim order of
+6 July 2026 addressed suspension only and did not determine the tax merits.
 
-- Pink Canary Services, S.L.;
-- Procedimiento Ordinario 496/2026;
-- Audiencia Nacional, Sala de lo Contencioso-Administrativo, Sección 7ª;
-- a pending contentious-administrative challenge involving AEAT;
-- a proposed enlargement of the appeal to AEAT's express resolution of 29 September 2025.
-
-The draft itself is dated **1 September 2026**, which is after the present date of this benchmark. Therefore the website must identify it as a **draft / working procedural record unless filing is later independently confirmed**.
+Lawyer emails, advice, filenames, unfiled pleadings, comments and live strategy
+are outside this public benchmark. A filing may be added only after filing and
+public-release status are independently verified from the court record or an
+authorised public source.
 
 Public routes created in this branch:
 
