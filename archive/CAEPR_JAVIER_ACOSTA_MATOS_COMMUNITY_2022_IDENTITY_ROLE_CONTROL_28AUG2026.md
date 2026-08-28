@@ -54,6 +54,44 @@ The identity is therefore sufficiently resolved. **Construcciones Acos-Matos, S.
 
 The immutable-ID collision is also resolved: `PD-SP-P-0092` remains assigned to **Juan José Vera Díaz^**; Javier is `PD-SP-P-0093`; and Gerardo Zacarías is `PD-SP-P-0094`. Gerardo Zacarías must not be conflated with his father, **Gerardo Nicanor Acosta Armas^** (`PD-SP-P-0013`). No facts move between those records.
 
+## 2A. Family-generation and corporate-transition chronology
+
+The following chronology is controlled alongside the identity records so that a cessation, resignation, reappointment, governance restructure or company extinction is not flattened into one undifferentiated "exit" date.
+
+| Person | Company / perimeter | Date | Controlled event type | Controlled meaning |
+|---|---|---:|---|---|
+| Gerardo Nicanor Acosta Armas^ | Construcciones Acos-Matos / CAM predecessor governance | 5 Feb 2009 | `GOVERNANCE_RESTRUCTURE` | Ceased as sole administrator when governance moved to a board; remained within governance as president. This was not a substantive exit. |
+| José Daniel Acosta Matos^ | Construcciones Acos-Matos / CAM predecessor governance | 5 Feb 2009 | `BOARD_ENTRY` | Entered the board as vice-president. |
+| Laura Patricia Acosta Matos^ | Construcciones Acos-Matos / CAM predecessor governance | 5 Feb 2009 | `BOARD_ENTRY` | Entered the board as secretary. |
+| Javier Acosta Matos^ | Construcciones Acos-Matos / CAM predecessor governance | 5 Feb 2009 | `BOARD_ENTRY` | Entered the board and was appointed delegated director. |
+| Gerardo Zacarías Acosta Matos^ | Construcciones Acos-Matos / CAM predecessor governance | 5 Feb 2009 | `BOARD_ENTRY` | Entered the board. |
+| Gerardo Nicanor Acosta Armas^ | Construcciones Acosta Matos, S.A. | 7 Aug 2020 | `TRUE_GOVERNANCE_EXIT` | Ceased as director and president and was not reappointed in the same registered act. This is the strongest official generational handover anchor located to date. |
+| José Daniel Acosta Matos^ | Construcciones Acosta Matos, S.A. | 7 Aug 2020 | `FORMAL_CESSATION_WITH_IMMEDIATE_REAPPOINTMENT` | Formal cessation was followed by immediate reappointment as director and elevation to president. Not a substantive exit. |
+| Laura Patricia Acosta Matos^ | Construcciones Acosta Matos, S.A. | 7 Aug 2020 | `FORMAL_CESSATION_WITH_IMMEDIATE_REAPPOINTMENT` | Formal cessation was followed by immediate reappointment as director, secretary and delegated director. Not a substantive exit. |
+| Javier Acosta Matos^ | Construcciones Acosta Matos, S.A. | 7 Aug 2020 | `FORMAL_CESSATION_WITH_IMMEDIATE_REAPPOINTMENT` | Formal cessation was followed by immediate reappointment as director. Not a substantive exit. |
+| Gerardo Zacarías Acosta Matos^ | Construcciones Acosta Matos, S.A. | 7 Aug 2020 | `FORMAL_CESSATION_WITH_IMMEDIATE_REAPPOINTMENT` | Formal cessation was followed by immediate reappointment as director and appointment as vice-president. Not a substantive exit. |
+| Laura Patricia Acosta Matos^ | Canarian Hospitality, S.L. | 5 Aug 2021 | `GOVERNANCE_RESTRUCTURE` | Ceased as sole administrator but continued in governance through appointment to the board as director and secretary. Not a substantive departure from the company. |
+| José Daniel / Laura Patricia / Javier / Gerardo Zacarías Acosta Matos^ | Construcciones Acosta Matos, S.A. | 2 Feb 2024 | `COMPANY_EXTINCTION` | The S.A. legal person was dissolved/extinguished through demerger/escisión. This ends offices in that legal person by extinction and must not be described as four individual resignations. |
+| Gerardo Nicanor Acosta Armas^ | family / founder generation | March 2024 | `DEATH_PUBLICLY_REPORTED` | Canary media reported his death during the weekend of 9–10 March 2024, with publication on 10 March 2024. The exact civil-registry date of death remains unverified and must not be stated more precisely without a primary or equivalent reliable source. |
+| José Daniel Acosta Matos^ | Grupo Acosta Matos | by Feb 2023, media reporting presidency since 2012 | `SUCCESSION_CONTEXT` | Public business-media coverage identifies José Daniel as president before his father's death, so the presidency transition materially predates March 2024. This is context, not a substitute for act-specific company-registry records. |
+
+### Event-type rule
+
+Use these controlled categories in future actor and timeline work:
+
+- `TRUE_GOVERNANCE_EXIT` — person actually leaves the governing body and is not contemporaneously reappointed.
+- `FORMAL_CESSATION_WITH_IMMEDIATE_REAPPOINTMENT` — registry mechanics change the appointment but continuity remains.
+- `GOVERNANCE_RESTRUCTURE` — office changes while the person remains in company governance.
+- `COMPANY_EXTINCTION` — the legal person ceases; do not rewrite this as an individual resignation.
+- `DEATH_PUBLICLY_REPORTED` — public reporting establishes death, but exact civil date remains controlled separately unless independently verified.
+
+### Source-status controls
+
+- BORME entries control company-office events and should outrank media shorthand on resignation/removal dates.
+- The March 2024 death date is presently source-bounded to public media reporting; exact date remains open pending obituary, civil-registry or equivalent primary confirmation.
+- The 7-Aug-2020 act is the principal verified generational-control transition in CAM governance located to date: Gerardo Nicanor leaves the board/presidency while José Daniel becomes president, Gerardo Zacarías vice-president, Laura Patricia secretary/delegated director, and Javier remains a director.
+- Do not move knowledge, intent, responsibility or liability between generations merely from family relationship, succession chronology, board membership or office changes.
+
 ## 3. The image: attributed positions, significance and ceiling
 
 Gil Marer positively identifies the people in `assets/acosta-matos-family-hotel-plans.jpg`, from left to right, as:
