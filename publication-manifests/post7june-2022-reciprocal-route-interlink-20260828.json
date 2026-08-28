@@ -1,0 +1,91 @@
+{
+  "publication_id": "PD-SP-POST7J-INTERLINK-20260828-01",
+  "owner": "Por Derecho / Project Sun Rock",
+  "parent_control_id": "PD-SP-POST7J-20260828-01",
+  "control_date": "2026-08-28",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "state": "AUTHORIZED_FOR_PUBLICATION",
+  "instruction": "Publish and interlink",
+  "branch": "codex/post7june-2022-interlink-20260828",
+  "base_sha": "66d5fec4b7e9bf8dabc95322624593c3184c0930",
+  "purpose": "Turn the existing omnidirectional theory into reciprocal, bilingual public navigation without merging legal persons, proceedings, funding instruments or proof standards.",
+  "junction_contract": {
+    "core_pages": 4,
+    "destinations_per_core_page": 12,
+    "satellite_tracks": 9,
+    "bilingual_satellite_pages": 18,
+    "core_backlinks_per_satellite_page": 2,
+    "structured_source": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json#omnidirectional_enablement_map.reciprocal_route_junction",
+    "boundary": "A link routes a proposition or evidence bridge for testing; it does not prove agreement, intent, causation, an offence or liability."
+  },
+  "core_routes": [
+    "en/sun-park-takeover-7-june-2018/index.html",
+    "es/toma-control-sun-park-7-junio-2018/index.html",
+    "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html",
+    "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html"
+  ],
+  "expected_routes": {
+    "en": [
+      "en/sun-park-takeover-7-june-2018/index.html",
+      "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html",
+      "en/community-instrumentalisation/index.html",
+      "en/acosta-matos-perimeter/index.html",
+      "en/insolvency-36-2012-active-estate-2018-2021/index.html",
+      "en/ona-hotels-insolvency-exit-36-2012/index.html",
+      "en/de-facto-administration-community-ac/index.html",
+      "en/2022-adjudication-documentary-reconstruction/index.html",
+      "en/ricpe-hnt-gc836-traceability/index.html",
+      "en/lava-verde-club-sei-meeting-point/index.html",
+      "en/same-hotel-multiple-financial-lives/index.html"
+    ],
+    "es": [
+      "es/toma-control-sun-park-7-junio-2018/index.html",
+      "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html",
+      "es/comunidad-instrumentalizacion/index.html",
+      "es/acosta-matos-perimetro/index.html",
+      "es/concurso-36-2012-masa-activa-2018-2021/index.html",
+      "es/ona-hotels-salida-concurso-36-2012/index.html",
+      "es/administracion-de-hecho-comunidad-ac/index.html",
+      "es/adjudicacion-2022-reconstruccion-documental/index.html",
+      "es/ricpe-hnt-gc836-trazabilidad/index.html",
+      "es/lava-verde-club-sei-meeting-point/index.html",
+      "es/mismo-hotel-multiples-vidas-financieras/index.html"
+    ]
+  },
+  "satellite_route_source": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json#/omnidirectional_enablement_map/reciprocal_route_junction/satellite_routes",
+  "expected_source_files": [
+    "scripts/build_acta_meeting_lineage.py",
+    "scripts/build_post7june_route_interlinks.py",
+    "scripts/render_post7june_2022_omnidirectional_map.mjs",
+    "scripts/validate_post7june_2022_deliberate_exclusion.py",
+    ".github/workflows/validate-acta-meeting-lineage.yml",
+    "assets/styles.css",
+    "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+    "assets/data/caepr-caret-alberto-meeting-point-first-hop-v1.json",
+    "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md",
+    "archive/CORRECTION_REGISTER.md"
+  ],
+  "validation": {
+    "local": "PASS_18_REPOSITORY_CONTROLS_PLUS_JSON_YAML_SYNTAX_AND_DETERMINISTIC_BUILD",
+    "pull_request_checks": "PENDING",
+    "core_browser_routes": 4,
+    "core_viewports_per_route": 3,
+    "satellite_browser_routes": 18,
+    "satellite_viewports_per_route": 1,
+    "browser_result_expected": "PASS_30_ROUTE_VIEWPORT_CHECKS",
+    "reciprocal_link_contract": "PASS_4_CORE_X_12_DESTINATIONS_AND_18_SATELLITE_X_2_BACKLINKS",
+    "html_static_preflight": "PASS_22_OF_22_ROUTES_NO_DUPLICATE_IDS",
+    "audience_experience": "PASS_588_HTML_PAGES_8671_INTERNAL_LINKS_1768_PUBLIC_FILES",
+    "publication_integrity": "PASS_75_MANIFESTS",
+    "browser_execution": "PENDING_PR_CI_CHROMIUM"
+  },
+  "publication_result": null,
+  "external_actions": {
+    "push": false,
+    "pull_request": false,
+    "merge": false,
+    "deployment": false,
+    "live_readback": false,
+    "filing_or_contact": false
+  }
+}

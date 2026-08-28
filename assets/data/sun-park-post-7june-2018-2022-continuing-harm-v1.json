@@ -215,7 +215,42 @@
     "hotel_mobbing_boundary": "Attributed umbrella description only, not an autonomous criminal offence. Each alleged act must separately satisfy the applicable historical offence and participation elements.",
     "judicial_safeguards_language": "LPB assets formally subject to insolvency-administration and judicial-supervision safeguards, whose practical effectiveness is disputed. This is a protection architecture, not a guaranteed outcome; Matkator remained outside it.",
     "de_facto_administrator_boundary": "The record supports inquiry into control of discrete functions. Full de facto administrator or shadow-director characterisation requires stable autonomous management or habitual decisive influence, instructions followed, continuity, knowledge, capacity, benefit and the date-specific legal test.",
-    "lawful_alternative": "Valid common or necessary works may lawfully be allocated by coefficient while CAM bears only the additional four-star upgrade; valid blended finance, title timing, stale records, delegation, independent advice and service error remain alternatives to test."
+    "lawful_alternative": "Valid common or necessary works may lawfully be allocated by coefficient while CAM bears only the additional four-star upgrade; valid blended finance, title timing, stale records, delegation, independent advice and service error remain alternatives to test.",
+    "reciprocal_route_junction": {
+      "id": "POST7J-ROUTE-JUNCTION-01",
+      "control_id": "PD-SP-POST7J-20260828-01",
+      "status": "PUBLIC_NAVIGATION_AND_MACHINE_CHECKED_EVIDENCE_ROUTING",
+      "rule": "Interlinking preserves separate legal persons, proceedings, funding instruments and proof standards. A link identifies a proposition or evidence bridge to test; it is not a finding of common purpose, causation, offence or liability.",
+      "core_routes": {
+        "takeover": {
+          "en": "en/sun-park-takeover-7-june-2018/index.html",
+          "es": "es/toma-control-sun-park-7-junio-2018/index.html"
+        },
+        "meeting": {
+          "en": "en/community-instrumentalisation/acta-document-room/2022-02-04/index.html",
+          "es": "es/comunidad-instrumentalizacion/sala-documental-actas/2022-02-04/index.html"
+        }
+      },
+      "satellite_routes": [
+        {"id": "community", "en": "en/community-instrumentalisation/index.html", "es": "es/comunidad-instrumentalizacion/index.html"},
+        {"id": "acosta", "en": "en/acosta-matos-perimeter/index.html", "es": "es/acosta-matos-perimetro/index.html"},
+        {"id": "estate", "en": "en/insolvency-36-2012-active-estate-2018-2021/index.html", "es": "es/concurso-36-2012-masa-activa-2018-2021/index.html"},
+        {"id": "ona", "en": "en/ona-hotels-insolvency-exit-36-2012/index.html", "es": "es/ona-hotels-salida-concurso-36-2012/index.html"},
+        {"id": "de-facto", "en": "en/de-facto-administration-community-ac/index.html", "es": "es/administracion-de-hecho-comunidad-ac/index.html"},
+        {"id": "deed", "en": "en/2022-adjudication-documentary-reconstruction/index.html", "es": "es/adjudicacion-2022-reconstruccion-documental/index.html"},
+        {"id": "funding", "en": "en/ricpe-hnt-gc836-traceability/index.html", "es": "es/ricpe-hnt-gc836-trazabilidad/index.html"},
+        {"id": "club-sei", "en": "en/lava-verde-club-sei-meeting-point/index.html", "es": "es/lava-verde-club-sei-meeting-point/index.html"},
+        {"id": "financial-lives", "en": "en/same-hotel-multiple-financial-lives/index.html", "es": "es/mismo-hotel-multiples-vidas-financieras/index.html"}
+      ],
+      "structured_model": "assets/data/sun-park-post-7june-2018-2022-continuing-harm-v1.json",
+      "link_contract": {
+        "core_route_destinations": 12,
+        "satellite_routes": 9,
+        "bilingual_satellite_pages": 18,
+        "every_core_page_links_to_every_satellite": true,
+        "every_satellite_page_links_to_both_core_routes": true
+      }
+    }
   },
   "meeting_2022_02_04": {
     "source_id": "SP-ACTA-2022-02-04",

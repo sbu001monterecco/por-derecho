@@ -85,6 +85,12 @@ The visual and control language are implemented locally in:
 
 The visual cross-links the 7-June control event, LPB estate boundary, Community/de facto-administration audit, ONA funded exit, deed-457 reconstruction, same-hotel/multiple-financial-lives route, RICPE/HNT/GC836 traceability and the historical Commercial Court supervision route. Interlinking does not merge their legal persons, proceedings, proof standards or funding instruments.
 
+### 6.1 Reciprocal public-route junction
+
+Gil Marer subsequently instructed “Publish and interlink” on 28 August 2026. The controlled navigation contract therefore makes the two bilingual core records—the 7-June-2018 reconstruction and the 4-February-2022 meeting/ACTA—each expose the same twelve-destination junction. Nine bilingual satellite tracks—Community, Acosta Matos perimeter, active estate, ONA funded exit, de facto control, deed 457, RICPE/incentive/FEDER, Club Sei/pre-title project and multiple financial lives—each link back to both core records. The structured dataset is the twelfth core destination.
+
+The contract is generated for the eighteen satellite pages by `scripts/build_post7june_route_interlinks.py` and enforced by the dedicated validator. A route link means “follow and test this evidentiary bridge”; it does not establish a common actor, a single legal perimeter, intent, causation, an offence or liability. The publication result for this interlink update is controlled separately in `publication-manifests/post7june-2022-reciprocal-route-interlink-20260828.json` so the earlier PR #1146 byte snapshot remains immutable and intelligible.
+
 ## 7. Validation and render record
 
 Source, structure, content and link validation completed locally and is recorded in the publication manifest:
@@ -92,6 +98,7 @@ Source, structure, content and link validation completed locally and is recorded
 - JSON parsing and duplicate-key control;
 - generator compilation and deterministic rebuilding of the bilingual ACTA pages;
 - the dedicated post-7-June/2022 deliberate-exclusion validator, including the `4 → 6 → 4` visual denominator and terminology locks;
+- the reciprocal-route builder and contract, including four core pages × twelve destinations and eighteen satellite pages × two core backlinks;
 - local-link resolution and repository publication-integrity gates; and
 - the four affected routes contain no duplicate IDs, exactly eight nodes, six process stages and three terminology panels; every local path and fragment resolves; and the responsive CSS braces and 980/620px breakpoints pass structural preflight; and
 - the browser render runner passes JavaScript syntax control and is configured to test all four routes at desktop, tablet and mobile widths, including node/stage/term counts and horizontal-overflow detection.

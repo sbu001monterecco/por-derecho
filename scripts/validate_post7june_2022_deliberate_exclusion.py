@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 
@@ -23,7 +24,9 @@ THOMPSON_AUDIT = ROOT / "docs/deletion-audits/2026-08-28-thompson-post-meeting-a
 OMNI_AUDIT = ROOT / "docs/deletion-audits/2026-08-28-2022-acta-omnidirectional-enablement-visual-continuity.md"
 OMNI_CSS = ROOT / "assets/post7-2022-omnidirectional-map-20260828.css"
 OMNI_MANIFEST = ROOT / "publication-manifests/post7june-2022-omnidirectional-enablement-20260828.json"
+INTERLINK_MANIFEST = ROOT / "publication-manifests/post7june-2022-reciprocal-route-interlink-20260828.json"
 ALBERTO_LIVE_WORKFLOW = ROOT / ".github/workflows/alberto-meeting-point-cross-proceeding.yml"
+INTERLINK_BUILDER = ROOT / "scripts/build_post7june_route_interlinks.py"
 
 
 def load_json(path: Path) -> dict:
@@ -39,6 +42,32 @@ def require_markers(path: Path, markers: list[str]) -> None:
     text = path.read_text(encoding="utf-8")
     for marker in markers:
         require(marker in text, f"{path.relative_to(ROOT)} missing marker: {marker}")
+
+
+def attributed_links(text: str, attribute: str) -> dict[str, str]:
+    links: dict[str, str] = {}
+    for tag in re.findall(r"<a\b[^>]*>", text):
+        key = re.search(rf'{re.escape(attribute)}="([^"]+)"', tag)
+        href = re.search(r'href="([^"]+)"', tag)
+        if key and href:
+            links[key.group(1)] = href.group(1)
+    return links
+
+
+def require_local_destination(source: Path, href: str, expected: Path) -> None:
+    route, _, fragment = href.partition("#")
+    if route.startswith("/"):
+        resolved = ROOT / route.lstrip("/")
+    elif route:
+        resolved = (source.parent / route).resolve()
+    else:
+        resolved = source.resolve()
+    if route.endswith("/"):
+        resolved /= "index.html"
+    require(resolved == expected.resolve(), f"{source.relative_to(ROOT)} misroutes {href} to {resolved.relative_to(ROOT)}")
+    require(expected.is_file(), f"missing reciprocal destination: {expected.relative_to(ROOT)}")
+    if fragment:
+        require(f'id="{fragment}"' in expected.read_text(encoding="utf-8"), f"{source.relative_to(ROOT)} missing destination fragment: {href}")
 
 
 def main() -> int:
@@ -82,6 +111,60 @@ def main() -> int:
     require("not an autonomous criminal offence" in omni["hotel_mobbing_boundary"], "hotel-mobbing boundary missing")
     require("stable autonomous management" in omni["de_facto_administrator_boundary"], "de facto administrator test missing")
     require("Valid common or necessary works" in omni["lawful_alternative"], "lawful works allocation alternative missing")
+
+    junction = omni["reciprocal_route_junction"]
+    require(junction["id"] == "POST7J-ROUTE-JUNCTION-01", "reciprocal junction ID drift")
+    require(junction["control_id"] == case["control_id"], "reciprocal junction control ID drift")
+    require("separate legal persons" in junction["rule"], "reciprocal junction separation rule missing")
+    require(junction["link_contract"] == {
+        "core_route_destinations": 12,
+        "satellite_routes": 9,
+        "bilingual_satellite_pages": 18,
+        "every_core_page_links_to_every_satellite": True,
+        "every_satellite_page_links_to_both_core_routes": True,
+    }, "reciprocal junction contract drift")
+    expected_route_ids = {
+        "takeover", "meeting", "community", "acosta", "ona", "estate",
+        "de-facto", "club-sei", "deed", "funding", "financial-lives", "data",
+    }
+    core_paths = [
+        ROOT / junction["core_routes"][core][locale]
+        for locale in ("en", "es")
+        for core in ("takeover", "meeting")
+    ]
+    for path in core_paths:
+        text = path.read_text(encoding="utf-8")
+        require(text.count(f'data-post7-evidence-junction="{case["control_id"]}"') == 1, f"{path.relative_to(ROOT)} junction denominator drift")
+        links = attributed_links(text, "data-post7-route")
+        require(set(links) == expected_route_ids, f"{path.relative_to(ROOT)} route set drift")
+        locale = path.relative_to(ROOT).parts[0]
+        expected_destinations = {
+            core: ROOT / junction["core_routes"][core][locale]
+            for core in ("takeover", "meeting")
+        }
+        expected_destinations.update({item["id"]: ROOT / item[locale] for item in junction["satellite_routes"]})
+        expected_destinations["data"] = ROOT / junction["structured_model"]
+        for route_id, expected in expected_destinations.items():
+            require_local_destination(path, links[route_id], expected)
+
+    satellites = junction["satellite_routes"]
+    require(len(satellites) == 9, "reciprocal satellite-route denominator drift")
+    require({item["id"] for item in satellites} == expected_route_ids - {"takeover", "meeting", "data"}, "reciprocal satellite-route IDs drift")
+    for item in satellites:
+        for locale in ("en", "es"):
+            path = ROOT / item[locale]
+            markers = [
+                f'data-post7-evidence-backlink="{case["control_id"]}"',
+                f'data-post7-route-id="{item["id"]}"',
+                'data-post7-core="takeover"',
+                'data-post7-core="meeting"',
+            ]
+            require_markers(path, markers)
+            links = attributed_links(path.read_text(encoding="utf-8"), "data-post7-core")
+            require(set(links) == {"takeover", "meeting"}, f"{path.relative_to(ROOT)} core backlink set drift")
+            for core in ("takeover", "meeting"):
+                require_local_destination(path, links[core], ROOT / junction["core_routes"][core][locale])
+    require_markers(INTERLINK_BUILDER, ["POST7J-EVIDENCE-JUNCTION:BEGIN", "BUILT {changed} PAGES"])
 
     receipt = case["meeting_2022_02_04"]["post_meeting_indirect_receipt"]
     require(receipt["after_meeting"]["acta_obtained"] is True, "corrected ACTA receipt state missing")
@@ -249,6 +332,13 @@ def main() -> int:
     require(all(omni_manifest["external_actions"][key] is True for key in ("push", "pull_request", "merge", "deployment", "live_readback")), "publication action closeout incomplete")
     require(omni_manifest["external_actions"]["filing_or_contact"] is False, "filing/contact boundary drift")
 
+    interlink_manifest = load_json(INTERLINK_MANIFEST)
+    require(interlink_manifest["parent_control_id"] == case["control_id"], "interlink parent control drift")
+    require(interlink_manifest["state"] == "AUTHORIZED_FOR_PUBLICATION", "interlink pre-publication state drift")
+    require(interlink_manifest["junction_contract"]["destinations_per_core_page"] == 12, "interlink manifest core denominator drift")
+    require(interlink_manifest["junction_contract"]["bilingual_satellite_pages"] == 18, "interlink manifest satellite denominator drift")
+    require(interlink_manifest["external_actions"]["filing_or_contact"] is False, "interlink filing/contact boundary drift")
+
     bilingual_pages = {
         ROOT / "es/toma-control-sun-park-7-junio-2018/index.html": [
             "post7-2022-omnidirectional-map-20260828.css",
@@ -307,6 +397,7 @@ def main() -> int:
     print(" - bilingual takeover and ACTA surfaces verified")
     print(" - corrected Thompson post-meeting relay and 2016 event-specific pattern control verified")
     print(" - omnidirectional 4-in / 6-stage / 4-out visual and terminology controls verified")
+    print(" - reciprocal route junction: 4 core pages × 12 destinations; 18 satellite pages × 2 core backlinks")
     print(" - preliminary 2016-2022 notice/knowledge matrix: 8 controlled events")
     print(" - native invitation/service/forwarding, complete attendance and actor-specific intent remain open")
     return 0
