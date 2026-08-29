@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.publication-manifest.concurso36-court-record-gapclose2.v1",
   "publication_id": "concurso36-court-record-gapclose2-20260829",
-  "current_state": "PREPARED_PENDING_MERGE",
+  "current_state": "PR_OPEN",
   "owner": "sbu001monterecco",
   "generated": "2026-08-29",
   "purpose": "Advance the autonomous Concurso 36/2012 court-record reconstruction from 20 to 37 controlled/corroborated nodes, close/narrow P0 procedural families and update the bilingual control room without claiming a certified docket.",
@@ -27,7 +27,7 @@
     "Registry/AC implementation records prove what the instruments record, not automatically the legal correctness of the underlying implementation."
   ],
   "publication_closeout": {
-    "pull_request": null,
+    "pull_request": 1204,
     "merge_sha": null
   }
 }
