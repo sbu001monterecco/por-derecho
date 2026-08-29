@@ -3,8 +3,9 @@
   "date":"2026-08-29",
   "baseline_main":"4b437dbee5ee979b9e3a9868ecd7d0e37505b181",
   "branch":"codex/concurso36-court-record-reconstruction-20260829",
-  "status":"CONTROLLED_RECONSTRUCTION",
+  "status":"CONTROLLED_RECONSTRUCTION_WITH_2022_APPELLATE_SUPPLEMENT",
   "primary_registry":"assets/data/concurso36-court-record-reconstruction-v1.json",
+  "supplements":["assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json"],
   "continuity_entry":"CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md",
   "public_routes":[
     "/es/concurso-36-2012-registro-procesal/",
@@ -12,16 +13,27 @@
   ],
   "renderer":"assets/concurso36-court-record-reconstruction.js",
   "first_closed_family":"C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS",
+  "current_rendered_node_count":20,
+  "2022_closure_state":[
+    "LPB appellate docket controlled as AP Seccion Cuarta Queja 375/2022; signed 18-Apr scheduling providencia controlled; later signed AP Auto 109/2022 cross-references a 4-Jul-2022 Auto in the same adverse legal sense; exact signed 4-Jul Auto still missing.",
+    "Aweswell appellate docket controlled as AP Seccion Cuarta Queja 379/2022; deposit cure and deliberation-ready status controlled; Auto 109/2022 of 24-Nov dismisses queja; 30-Nov DIOR records finality/archive.",
+    "LPB and Aweswell direct revision applications against the April Decretos are now documented; LPB admitted 2-Jun, Aweswell admitted 14-Jul after Auto 308/2022 annulled a mistaken 16-Jun deposit-based inadmission."
+  ],
   "required_boundaries":[
     "not a certified court docket",
     "response-not-located is not ignored",
     "adverse decision is not criminal misconduct",
+    "procedural rejection is not merits adjudication",
+    "protective/corrective counterweights remain visible",
     "no silent canonical promotion",
     "LPB, Matkator and third-party rights remain distinct"
   ],
   "next_p0":[
-    "Audiencia Provincial outcomes for both quejas",
-    "11-Feb and 14-Feb 2022 DIOR/testimonios/finality family",
+    "exact signed LPB AP Auto of 4-Jul-2022 plus service/finality",
+    "LPB exact AP LexNET queja filing receipt/principal",
+    "11-Feb and 14-Feb 2022 DIOR/testimonios/finality package",
+    "final judge outcomes of LPB/Aweswell direct revision applications",
+    "deed -> presentation -> registry implementation bridge",
     "7-Jun-2018 physical-control court-notice filing/receipt",
     "Feb-Oct-2021 protection/nullity/bid/RICPE family",
     "funded-exit filing classification",
