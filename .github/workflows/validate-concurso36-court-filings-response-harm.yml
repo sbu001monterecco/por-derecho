@@ -1,0 +1,29 @@
+name: Validate Concurso 36/2012 filing-response harm control
+on:
+  pull_request:
+    paths:
+      - 'archive/CONCURSO36_COURT_FILINGS_JUDICIAL_RESPONSE_HARM_MATRIX_29AUG2026.md'
+      - 'assets/data/concurso36-court-filings-response-harm-20260829-v1.json'
+      - 'es/concurso-36-2012-escritos-respuesta-judicial/**'
+      - 'en/concurso-36-2012-filings-judicial-response/**'
+      - 'CONCURSO36_CONTINUE_HERE.md'
+      - 'scripts/validate_concurso36_court_filings_response_harm.py'
+      - '.github/workflows/validate-concurso36-court-filings-response-harm.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'archive/CONCURSO36_COURT_FILINGS_JUDICIAL_RESPONSE_HARM_MATRIX_29AUG2026.md'
+      - 'assets/data/concurso36-court-filings-response-harm-20260829-v1.json'
+      - 'es/concurso-36-2012-escritos-respuesta-judicial/**'
+      - 'en/concurso-36-2012-filings-judicial-response/**'
+      - 'CONCURSO36_CONTINUE_HERE.md'
+      - 'scripts/validate_concurso36_court_filings_response_harm.py'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_concurso36_court_filings_response_harm.py
