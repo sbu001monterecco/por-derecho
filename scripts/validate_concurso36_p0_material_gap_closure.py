@@ -87,7 +87,7 @@ continue_text = CONTINUE.read_text(encoding="utf-8")
 for marker in (
     "nine P0 families open",
     "15th quarterly liquidation report",
-    "A located subnode does not close a P0 family",
+    "without pretending that a located subnode closes the family",
     "does not authorise email, filing, preservation request or authority contact",
 ):
     check(marker in map_text, f"closure map missing marker: {marker}")
