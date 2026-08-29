@@ -80,9 +80,12 @@ def main() -> None:
     es_page = text(ES_PAGE)
     en_page = text(EN_PAGE)
 
-    for label, body in [("start", start), ("closeout", closeout), ("js", js), ("ES page", es_page), ("EN page", en_page)]:
-        require(body, "9.052", label)
-        require(body, "13.165", label)
+    require(start, "4 June 2018", "start 4-June control")
+    require(start, "9,052,251.69", "start definitive amount")
+    require(closeout, "4 June 2018", "closeout 4-June control")
+    require(closeout, "9,052,251.69", "closeout definitive amount")
+    require(js, "9.052", "JS definitive comparator")
+    require(js, "13.165", "JS 4-June comparator")
 
     require(es_page, "8 de febrero de 2018", "ES corrected order date")
     require(es_page, "notificación", "ES notification distinction")
@@ -90,6 +93,8 @@ def main() -> None:
     require(en_page, "notification", "EN notification distinction")
 
     for label, body in [("ES page", es_page), ("EN page", en_page)]:
+        require(body, "9.052", label)
+        require(body, "13.165", label)
         require(body, "Article 59", label)
         require(body, "97 bis", label)
         require(body, "0000007/2012", label)
