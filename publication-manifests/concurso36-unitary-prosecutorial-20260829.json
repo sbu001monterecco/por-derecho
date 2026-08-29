@@ -1,9 +1,30 @@
 {
-  "manifest_version": "1.0",
+  "manifest_version": "1.1",
   "publication_id": "concurso36-unitary-prosecutorial-20260829",
   "generated": "2026-08-29",
   "baseline_main_sha": "f7978cf932ffb943f1c70190cb69950bf71ef35e",
   "branch": "codex/concurso36-unitary-prosecutorial-20260829",
+  "current_state": "MERGED",
+  "owner": "sbu001monterecco",
+  "merge_sha": "cd5903fccc02e8ac098ca2e17eb6aa7d739986e6",
+  "validation": {
+    "evidence": "PR #1200 dedicated unitary-prosecutorial validation passed before merge; merge preserved the controlled corpus additively."
+  },
+  "expected_routes": {
+    "es": [
+      "es/concurso-36-2012/index.html",
+      "es/concurso-36-2012-analisis-penal-forense-unitario/index.html"
+    ],
+    "en": [
+      "en/insolvency-36-2012/index.html",
+      "en/insolvency-36-2012-unitary-criminal-forensic-analysis/index.html"
+    ]
+  },
+  "expected_source_files": [
+    "assets/data/concurso36-unitary-prosecutorial-theory-20260829.json",
+    "assets/concurso36-unitary-prosecutorial.js",
+    "archive/CONCURSO36_UNITARY_PROSECUTORIAL_FORENSIC_CLOSEOUT_29AUG2026.md"
+  ],
   "purpose": "Create one evidence-graded, criminal-led forensic and prosecutorial spine across the existing Concurso 36/2012 specialist pages without replacing their source corpora.",
   "public_routes": [
     "/es/concurso-36-2012/",
