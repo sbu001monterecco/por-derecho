@@ -6,8 +6,9 @@
 - **Reconciliation started from:** `main` at `a7b56adcf5d2656050fb516aad4b4402ea36ef94`
 - **Immutable continuity release:** PR #1190, merge SHA `0b0423820942cb95f7a98e8d6fc519f6a9482a04`
 - **Continuity-truth repair:** PR #1192, squash merge SHA `9025fd35aed73bb5f41e6959b249e6b7353ec80e`
+- **P0 source-level gap map:** PR #1194, squash merge SHA `77531a51abb2eda352def4297f0aceb3ea166e94`
 - **Original release deployment:** GitHub Pages run `33233442563` / run number `1262` — success
-- **Latest `main` observed for the material-gap closure run:** `5f53e58c28a22f5aab7280c82a31b34fb940f5d1`
+- **Latest `main` observed for the July-report recovery run:** `77531a51abb2eda352def4297f0aceb3ea166e94`
 - **Publication origin:** `https://sbu001monterecco.github.io/por-derecho/`
 - **Release function:** continuity and gap control, not automatic evidence promotion
 
@@ -18,15 +19,16 @@
 1. `CHATGPT_START_HERE.md`
 2. `archive/CONCURSO36_P0_MATERIAL_GAP_CLOSURE_MAP_29AUG2026.md`
 3. `assets/data/concurso36-p0-material-gap-closure-20260829-v1.json`
-4. `archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md`
-5. `archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md`
-6. `archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md`
-7. `archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md`
-8. `archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md`
-9. `archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md`
-10. `publication-manifests/concurso36-court-decision-continuity-20260828.json`
-11. `publication-manifests/concurso36-linked-continuity-20260829.json`
-12. `assets/data/concurso36-linked-continuity-20260829-v1.json`
+4. `archive/CONCURSO36_1SEP2022_ANNEX_IV_CLASSIFICATION_29AUG2026.md`
+5. `archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md`
+6. `archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md`
+7. `archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md`
+8. `archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md`
+9. `archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md`
+10. `archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md`
+11. `publication-manifests/concurso36-court-decision-continuity-20260828.json`
+12. `publication-manifests/concurso36-linked-continuity-20260829.json`
+13. `assets/data/concurso36-linked-continuity-20260829-v1.json`
 
 ## Independent state fields
 
@@ -45,7 +47,18 @@ Do not compress these into one `published` or `closed` statement.
 
 ## Material-gap priority now
 
-The most important recovery target is the **15th quarterly liquidation report**, because later primary Insolvency Administration reports repeatedly identify it as the operative description of completed asset liquidation. Recovering and authenticating it can narrow both `AC-REPORT-SERIES` and `FINAL-STAGE` at once.
+The highest-leverage recovery lane is now:
+
+1. **recover the underlying quarterly report filed as `5367/2022` and any later supply/service copy;**
+2. determine its date and ordinal only from the primary source or certified docket;
+3. independently locate the **15th quarterly liquidation report** unless the authenticated primary source proves they are the same document;
+4. then reconstruct the final-accounts/conclusion chain.
+
+The signed LAJ receipt for `5367/2022` is located, but the recovered notification package does not contain the underlying quarterly report. Later primary Insolvency Administration reports repeatedly identify the 15th report as the operative description of completed asset liquidation. The repository therefore must **not** infer that `5367/2022` is the 15th report from chronology alone.
+
+A connected candidate named `Annex IV - Operaciones de Liquidacion 1SEP2022.pdf` has also been inspected. It is classified as **derivative analytical material, not a primary authenticated AC filing**, and does not close either source gap. Its controlled classification is in:
+
+`archive/CONCURSO36_1SEP2022_ANNEX_IV_CLASSIFICATION_29AUG2026.md`
 
 The canonical source-level map is:
 
@@ -76,6 +89,7 @@ Every future run must:
 - preserve favourable and neutral material alongside adverse material;
 - compare legacy PRs against current `main` and transplant only verified, non-duplicative deltas onto a fresh branch;
 - retain `not located in the controlled corpus` as a corpus limitation, not a finding of nonexistence;
+- keep derivative analytical work separate from authenticated primary evidence;
 - publish no private counsel advice, personal contact data, privileged material or unrelated-matter material;
 - send no email, filing or authority contact under this control.
 
