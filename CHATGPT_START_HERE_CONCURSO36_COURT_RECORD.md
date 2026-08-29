@@ -5,19 +5,33 @@
 
 ## One-sentence mission
 
-Reconstruct the complete **located** procedural record of Concurso 36/2012 as closed document families — **filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation** — and use that record to support the unitary criminal-led forensic/prosecutorial analysis without converting disputed allegations, adverse rulings or missing documents into categorical criminal findings.
+Reconstruct the complete **located** procedural record of Concurso 36/2012 as closed document families — **filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation** — and use that record to support a **unitary, non-fragmented, criminal-prosecutorial, investigative and forensic analysis first, alongside the complete concursal, civil, mercantile, administrative, regulatory, tax, property/registry and other relevant legal audit**, without converting disputed allegations, adverse rulings or missing documents into categorical criminal findings.
+
+## Mandatory analytical-order governance
+
+`CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md` is canonical and mandatory for this reconstruction.
+
+Every continuation must:
+
+1. run the criminal-prosecutorial-investigative-forensic analysis **from the outset** rather than appending it after a civil/concursal digest;
+2. run the concursal, civil, mercantile/corporate, administrative/regulatory, tax, property/registry, professional-duty and other relevant tracks **alongside it**;
+3. reconcile those tracks into one non-fragmented evidentiary reconstruction;
+4. preserve actor-specific attribution, contrary evidence and the distinction between allegation, inference, primary evidence, judicial fact and unresolved gap;
+5. apply **authority before arithmetic** to every purported `Comunidad`, fee, quota, debt, charge, vote, representation or control issue, including the 8-Feb-2018 “not change the amount” evidence; and
+6. never silently downgrade an expressly criminal/prosecutorial allegation into a generic civil, accounting, fee or governance dispute, while never presenting criminality as established unless the evidence and applicable adjudication support that status.
 
 ## Mandatory read order in a new thread
 
 1. `CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md` — this file.
-2. `assets/data/concurso36-court-record-reconstruction-v1.json` — base reconstruction registry.
-3. `assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json` — first AP/revision supplement.
-4. `assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json` — **current second P0 gap-closure supplement; its `open_points_replace` is the current P0 queue.**
-5. `assets/data/concurso36-complete-record-v1.json` — earlier canonical located-corpus catalogue; **not a certified docket**.
-6. `assets/data/concurso36-lexnet-supplement-20260829.json` — controlled earlier 2018 LexNET supplement.
-7. `assets/data/concurso36-multitrack-judicial-failure-parallel-lives-20260829.json` — filing/response/consequence crosswalk.
-8. `archive/CONCURSO36_COURT_RECORD_RECONSTRUCTION_CONTINUITY_29AUG2026.md`, `archive/CONCURSO36_COURT_RECORD_GAPCLOSE2_CONTINUITY_29AUG2026.md` and any later closeout.
-9. Bilingual control room: `/es/concurso-36-2012-registro-procesal/` and `/en/insolvency-36-2012-court-record/`.
+2. `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md` — mandatory analytical-order and continuity governance.
+3. `assets/data/concurso36-court-record-reconstruction-v1.json` — base reconstruction registry.
+4. `assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json` — first AP/revision supplement.
+5. `assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json` — **current second P0 gap-closure supplement; its `open_points_replace` is the current P0 queue.**
+6. `assets/data/concurso36-complete-record-v1.json` — earlier canonical located-corpus catalogue; **not a certified docket**.
+7. `assets/data/concurso36-lexnet-supplement-20260829.json` — controlled earlier 2018 LexNET supplement.
+8. `assets/data/concurso36-multitrack-judicial-failure-parallel-lives-20260829.json` — filing/response/consequence crosswalk.
+9. `archive/CONCURSO36_COURT_RECORD_RECONSTRUCTION_CONTINUITY_29AUG2026.md`, `archive/CONCURSO36_COURT_RECORD_GAPCLOSE2_CONTINUITY_29AUG2026.md` and any later closeout.
+10. Bilingual control room: `/es/concurso-36-2012-registro-procesal/` and `/en/insolvency-36-2012-court-record/`.
 
 ## Current reconstruction milestone
 
@@ -100,6 +114,14 @@ Cuatrecasas correspondence to the Tías Registry dated 28-Dec-2018 states counse
 
 ## Autonomous operating rules
 
+### Unitary criminal-first integration
+
+- Begin every pass with the mandatory criminal-prosecutorial-investigative-forensic lens in `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md`; do not add it only after completing a civil or concursal narrative.
+- Run concursal, civil, mercantile/corporate, administrative/regulatory, tax, property/registry, professional-duty and other relevant analysis alongside it and reconcile the results.
+- Do not fragment one evidentiary event into isolated legal silos when the same fact affects authority, standing, title, duty, criminal hypothesis, causation or implementation.
+- Preserve criminal allegations explicitly as allegations where that is their evidentiary status; do not silently civilise them, and do not convert them into established offences without the required proof/adjudicative basis.
+- Apply authority-before-arithmetic to every purported `Comunidad` event and identify the actual actors, claimed entity/capacity, source of authority, personación/status, procedural effect, patrimonial effect, contrary evidence and gap.
+
 ### Search / ingestion
 
 - Use connected Gmail for original LexNET/lawyer-notification families where repository custody is incomplete; use Drive/repository where they hold the stronger original.
@@ -169,4 +191,6 @@ Some old direct-chat uploads have expired. **Do not block reconstruction** where
 
 > **Continue the autonomous Concurso 36/2012 court-record reconstruction from `CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md`. Close the remaining P0 filing/decision/notification/implementation families end-to-end, update the repository and bilingual site through PR/CI/Pages, preserve the four consequence tracks and all evidence boundaries, and leave the project deletion-safe and ready for the next short handoff.**
 
-A new thread must recover state from this repository file and the current supplements rather than depend on the originating chat.
+The short prompt is governed by `CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md`: every continuation is unitary, non-fragmented, criminal-prosecutorial, investigative and forensic first, alongside the full concursal/civil/mercantile/administrative/regulatory and other relevant legal audit.
+
+A new thread must recover state from this repository file, the canonical governance file and the current supplements rather than depend on the originating chat.
