@@ -1,7 +1,7 @@
 {
   "schema": "por-derecho.concurso36-p0-material-gap-closure.v1",
   "control_date": "2026-08-29",
-  "baseline_main_sha": "5f53e58c28a22f5aab7280c82a31b34fb940f5d1",
+  "baseline_main_sha": "77531a51abb2eda352def4297f0aceb3ea166e94",
   "purpose": "Refine the existing nine P0 evidence families to source-level closure states without reducing the open-family denominator before each pre-existing closure test is satisfied.",
   "p0_open_family_count": 9,
   "p1_open_family_count": 2,
@@ -101,7 +101,8 @@
         "25 April 2022 quarterly report",
         "25 April 2022 liquidation-operations list or annex",
         "28 April 2022 LAJ/court receipt chain for filing 3016/2022",
-        "27 July 2022 LAJ receipt of filing 5367/2022",
+        "27 July 2022 signed LAJ receipt of filing 5367/2022",
+        "recovered 5367/2022 notification package identifies the quarterly-report filing but does not contain the underlying quarterly report",
         "2 November 2022 quarterly report",
         "March 2023 report family",
         "20 June 2023 quarterly report / June 2023 receipt family",
@@ -111,13 +112,25 @@
         "24 November 2025 / 27 November 2025 / registration 7294/2025 family"
       ],
       "remaining_nodes": [
+        "recover and authenticate underlying quarterly report filed as 5367/2022",
+        "locate any later supply or service copy of the 5367/2022 report",
         "15th quarterly liquidation report",
-        "pair underlying report to 5367/2022 receipt",
-        "complete ordinal/date/registration/receipt/annex matrix",
+        "determine any ordinal only from the primary source or certified docket; do not infer that 5367/2022 is the 15th",
+        "complete ordinal/date/registration/receipt/notification-content/annex matrix",
         "every missing report and annex",
         "ledger and bank reconciliation",
         "final accounts"
-      ]
+      ],
+      "july_2022_delivery_control": {
+        "filing_registration": "5367/2022",
+        "laj_receipt_date": "2022-07-27",
+        "receipt_located": true,
+        "notification_identifies_quarterly_report": true,
+        "notification_contains_underlying_report": false,
+        "underlying_primary_report_located_in_targeted_connected_source_sweep": false,
+        "ordinal_proved": false,
+        "identity_with_15th_report_proved": false
+      }
     },
     {
       "id": "REVIEW-2022-2023",
@@ -170,6 +183,7 @@
       ],
       "remaining_nodes": [
         "15th quarterly liquidation report",
+        "resolve whether the 5367/2022 underlying report is or is not the 15th only from primary evidence",
         "any later AC report",
         "final accounts or rendicion",
         "transfer",
@@ -185,8 +199,8 @@
   "highest_leverage_targets": [
     {
       "rank": 1,
-      "target": "15th quarterly liquidation report plus complete AC report denominator",
-      "reason": "Later primary reports repeatedly identify the 15th report as the operative description of completed asset liquidation; January and April 2022 primary anchors materially tighten the sequence without proving any ordinal; recovery narrows both AC-REPORT-SERIES and FINAL-STAGE."
+      "target": "underlying 5367/2022 quarterly report plus 15th quarterly liquidation report plus complete AC report denominator",
+      "reason": "The 27 July 2022 LAJ receipt proves a quarterly-report filing as 5367/2022, but the recovered notification package does not contain the underlying report. Later primary reports identify the 15th report as the operative description of completed asset liquidation. Recovering the 5367/2022 source and the 15th report can narrow both AC-REPORT-SERIES and FINAL-STAGE; no identity or ordinal is inferred without primary proof."
     },
     {
       "rank": 2,
@@ -209,6 +223,6 @@
       "reason": "Turns a broad certified-index gap into an exact source delta while preserving the requirement for an official denominator."
     }
   ],
-  "public_wording": "Nine P0 evidence families remain open. Primary-source recovery has materially narrowed several of them: the October 2021 chain, the AC-report series and the 2022-2023 review family now contain located primary nodes, while current appeals have located procedural nodes but no merits endpoint yet located. No family is treated as closed until its pre-existing closure test is satisfied.",
+  "public_wording": "Nine P0 evidence families remain open. Primary-source recovery has materially narrowed several of them: the October 2021 chain, the AC-report series and the 2022-2023 review family now contain located primary nodes, while current appeals have located procedural nodes but no merits endpoint yet located. Within the AC-report series, the 27 July 2022 LAJ receipt for filing 5367/2022 is located, but the underlying quarterly report has not yet been located in the controlled corpus. No family is treated as closed until its pre-existing closure test is satisfied.",
   "privacy_rule": "Do not publish private mailbox identifiers, contact data, counsel advice or derivative allegations as evidence. Promote primary court, LAJ or AC instruments only after source verification, privacy review and canonical hashing."
 }

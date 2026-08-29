@@ -71,22 +71,41 @@ for family in families:
     check(isinstance(family.get("priority"), int), f"{ident}: integer priority required")
 
 by_id = {item["id"]: item for item in families if isinstance(item, dict) and item.get("id")}
-check(by_id["AC-REPORT-SERIES"]["priority"] == 1, "AC report series must remain top priority")
-check("15th quarterly liquidation report" in by_id["AC-REPORT-SERIES"]["remaining_nodes"], "15th report target missing from AC series")
-check(by_id["FINAL-STAGE"]["priority"] == 1, "final stage must remain top priority")
-check("15th quarterly liquidation report" in by_id["FINAL-STAGE"]["remaining_nodes"], "15th report target missing from final stage")
+ac = by_id["AC-REPORT-SERIES"]
+final_stage = by_id["FINAL-STAGE"]
+check(ac["priority"] == 1, "AC report series must remain top priority")
+check("15th quarterly liquidation report" in ac["remaining_nodes"], "15th report target missing from AC series")
+check("recover and authenticate underlying quarterly report filed as 5367/2022" in ac["remaining_nodes"], "5367/2022 source target missing")
+check(final_stage["priority"] == 1, "final stage must remain top priority")
+check("15th quarterly liquidation report" in final_stage["remaining_nodes"], "15th report target missing from final stage")
 check(by_id["CURRENT-APPEALS"].get("merits_endpoint_located_in_that_sweep") is False, "current appeals must not be upgraded without merits")
+
+july = ac.get("july_2022_delivery_control") or {}
+check(july.get("filing_registration") == "5367/2022", "July filing registration mismatch")
+check(july.get("laj_receipt_date") == "2022-07-27", "July LAJ receipt date mismatch")
+check(july.get("receipt_located") is True, "July LAJ receipt must remain located")
+check(july.get("notification_identifies_quarterly_report") is True, "notification must continue to identify a quarterly report")
+check(july.get("notification_contains_underlying_report") is False, "do not claim the recovered notification contains the underlying report")
+check(july.get("underlying_primary_report_located_in_targeted_connected_source_sweep") is False, "do not upgrade July report recovery without the primary report")
+check(july.get("ordinal_proved") is False, "July report ordinal remains unproved")
+check(july.get("identity_with_15th_report_proved") is False, "identity with 15th report remains unproved")
 
 ranking = payload.get("highest_leverage_targets") or []
 check(len(ranking) >= 5, "material-target ranking incomplete")
 if ranking:
-    check(ranking[0].get("target") == "15th quarterly liquidation report plus complete AC report denominator", "rank 1 target changed")
+    check(
+        ranking[0].get("target") == "underlying 5367/2022 quarterly report plus 15th quarterly liquidation report plus complete AC report denominator",
+        "rank 1 target changed",
+    )
 
 map_text = MAP.read_text(encoding="utf-8")
 continue_text = CONTINUE.read_text(encoding="utf-8")
 for marker in (
     "nine P0 families open",
     "15th quarterly liquidation report",
+    "5367/2022",
+    "does **not** contain the underlying quarterly report itself",
+    "Do **not** equate 5367/2022 with the 15th report from chronology alone",
     "without pretending that a located subnode closes the family",
     "does not authorise email, filing, preservation request or authority contact",
 ):
@@ -111,6 +130,7 @@ if errors:
 
 print("PASS — Concurso 36/2012 P0 material-gap closure control")
 print(" - nine P0 families remain open")
+print(" - 5367/2022 receipt is located but the underlying report remains unlocated")
+print(" - no ordinal or identity with the 15th report is inferred")
 print(" - source-level partial states are preserved without denominator reduction")
-print(" - 15th quarterly liquidation report remains the top recovery target")
 print(" - no new allegation or external action authority is introduced")
