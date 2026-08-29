@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'assets/data/concurso36-court-record-reconstruction-v1.json'
+      - 'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json'
       - 'assets/concurso36-court-record-reconstruction.js'
       - 'es/concurso-36-2012-registro-procesal/**'
       - 'en/insolvency-36-2012-court-record/**'
@@ -13,6 +14,7 @@ on:
     branches: [main]
     paths:
       - 'assets/data/concurso36-court-record-reconstruction-v1.json'
+      - 'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json'
       - 'assets/concurso36-court-record-reconstruction.js'
       - 'es/concurso-36-2012-registro-procesal/**'
       - 'en/insolvency-36-2012-court-record/**'
@@ -23,26 +25,38 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate registry and continuity controls
+      - name: Validate registry, appellate supplement and continuity controls
         run: |
           python - <<'PY'
           import json, pathlib
           root=pathlib.Path('.')
           reg=json.loads((root/'assets/data/concurso36-court-record-reconstruction-v1.json').read_text())
+          sup=json.loads((root/'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json').read_text())
           man=json.loads((root/'publication-manifests/concurso36-court-record-reconstruction-20260829.json').read_text())
           assert reg['status'].startswith('CONTROLLED RECONSTRUCTION')
           assert 'RESPONSE_NOT_LOCATED' in reg['response_taxonomy']
           fam=reg['verified_families'][0]
           assert fam['family_id']=='C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS'
+          assert sup['family_id']==fam['family_id']
           assert len(fam['records']) >= 10
-          blob=json.dumps(reg,ensure_ascii=False)
-          for needle in ['202210473582179','1202210474270428','202210476786626','1202210481753993','1202210482293471','A05003250-35127ecbb3101ef0a562bb848041650980940581']:
+          assert len(sup['records']) >= 10
+          assert len(fam['records']) + len(sup['records']) >= 20
+          blob=json.dumps(reg,ensure_ascii=False)+json.dumps(sup,ensure_ascii=False)
+          for needle in [
+              '202210473582179','1202210474270428','202210476786626','1202210481753993','1202210482293471',
+              '375/2022','379/2022','A05003250-35d4ff0c0b259734c5ea7dc69411669385141492',
+              'A05003250-3587babc6df3d2dbfc90404de381669892710841','A05003250-35188b05fa34b49034efd3977fe1657718796252',
+              'A05003250-3520a62213f4ca3ac1e1ed1cecb1657801330688'
+          ]:
               assert needle in blob, needle
+          assert any(r.get('response_taxonomy')=='PROTECTIVE_RESPONSE' for r in sup['records'])
           for path in ['CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md','assets/concurso36-court-record-reconstruction.js','es/concurso-36-2012-registro-procesal/index.html','en/insolvency-36-2012-court-record/index.html']:
               assert (root/path).exists(), path
           handoff=(root/'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md').read_text()
-          for phrase in ['filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation','Do not block the reconstruction','Recommended short prompt for a new thread']:
+          for phrase in ['filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation','Auto 308/2022','Queja 379/2022','Recommended short prompt for a new thread']:
               assert phrase in handoff, phrase
           assert man['primary_registry']=='assets/data/concurso36-court-record-reconstruction-v1.json'
-          print('court-record reconstruction controls OK')
+          assert 'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json' in man['supplements']
+          assert man['current_rendered_node_count'] >= 20
+          print('court-record reconstruction + AP/revision controls OK')
           PY
