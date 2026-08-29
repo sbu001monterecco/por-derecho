@@ -1,0 +1,88 @@
+{
+  "record_id": "FGE-INSPECCION-EG-745-2026-20260826",
+  "record_type": "official_notification_and_decree",
+  "issuing_institution": "Fiscalía General del Estado — Inspección Fiscal",
+  "proceeding_reference": "E.G. 745/2026",
+  "document_date": "2026-08-26",
+  "notification": {
+    "channel": "email",
+    "received_timestamp_utc": "2026-08-26T12:00:49Z",
+    "subject": "NOTIFICACIÓN OFICIO Y DECRETO EXP. GUB. 745/2026",
+    "sender_name": "Marta Clavero Saavedra",
+    "sender_institution": "Fiscalía General del Estado — Inspección Fiscal"
+  },
+  "attachment": {
+    "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "pages": 3,
+    "size_bytes": 1111997,
+    "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+    "machine_readable_text_layer": false,
+    "public_repository_native_file": false,
+    "reason_native_not_public": "Public repository boundary: native notification contains signatures, personal/contact data and identifiers that are unnecessary for the public evidential proposition."
+  },
+  "notice_letter": {
+    "date": "2026-08-26",
+    "reference": "IF/MCS",
+    "subject": "E.G. 745/2026",
+    "signatory": "Olalla Vázquez Moraga"
+  },
+  "decree": {
+    "date": "2026-08-26",
+    "signatory": "María José Osuna Cerezo",
+    "role": "Fiscal Jefa Inspectora",
+    "outcome": "archive_EG_745_2026",
+    "stated_core_reasons": [
+      "The submission is described as confusing and incoherent and insufficiently clear under Article 66.1(c) Law 39/2015.",
+      "The Decree states that minimum plausibility indicators justifying an Inspection investigation are not met.",
+      "The Decree states that no irregularity attributable to a specific prosecutor in a specific matter is concretised."
+    ],
+    "review_notice": {
+      "administrative": "recurso potestativo de reposición before Inspección Fiscal within one month",
+      "judicial_alternative": "recurso contencioso-administrativo before the Contentious-Administrative Chamber of the Supreme Court within two months, subject to standing"
+    }
+  },
+  "registered_source": {
+    "registration": "REGAGE26e00070235775",
+    "presented": "2026-08-02T23:31:55+01:00",
+    "registered": "2026-08-02T23:31:58+01:00",
+    "destination": "Fiscalía General del Estado — Inspección Fiscal",
+    "subject": "Inspección Fiscal: daño extraconcursal y revisión independiente posconocimiento",
+    "attached_filename": "REQUERIMIENTO_URGENTE_MF_DANO_PATRIMONIAL_EXTRACONCURSAL_02AGO2026.pdf",
+    "attachment_sha512_from_receipt": "352677fed18bd52659b87e68f40ba9793e1844fcc160caca50cab345ddfd06f709afbbbaaa8912458cb067d6df74d309db7c235429302171b51f7ca327bab635",
+    "numbered_requests": 12,
+    "proceedings_expressly_identified": [
+      "DI 248/2018",
+      "DI 113/2022",
+      "DI 22/2026",
+      "DIP 2/2026",
+      "EG 49/2026",
+      "DP 1901/2026"
+    ]
+  },
+  "related_signed_source_master": {
+    "filename": "REQUERIMIENTO_URGENTE_MF_EXTRACONCURSAL_31JUL2026_FINAL_FIRMADO.pdf",
+    "drive_status": "located",
+    "sha256_from_existing_control_record": "4f94669e40a4cd14ca48da32b67edd9b4fa65cea3e3096dcb9f8170dfa901dc4",
+    "identity_with_registered_attachment": "not_yet_byte_verified",
+    "control_instruction": "Do not describe the signed master and the exact registered attachment as byte-identical until verified."
+  },
+  "public_derivatives": {
+    "spanish_transcription": "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_NOTIFICATION_DECREE_TRANSCRIPTION.md",
+    "english_translation": "evidence/fiscalia/2026/2026-08-26_FGE_INSPECCION_EG_745_2026_ENGLISH_TRANSLATION.md",
+    "response_package": "FISCALIA_INSPECCION_EG_745_2026_DIGITISATION_APPEAL_PACKAGE_29AUG2026.md",
+    "reposicion_draft": "drafts/fiscalia/2026-08-29_RECURSO_POTESTATIVO_REPOSICION_EG_745_2026_DRAFT.md",
+    "protective_request_draft": "drafts/fiscalia/2026-08-29_EG_745_2026_PROTECTIVE_ACCESS_PRESERVATION_REQUEST_DRAFT.md"
+  },
+  "deadline_control": {
+    "notification_date_current_evidence": "2026-08-26",
+    "reposicion_nominal_corresponding_date": "2026-09-26",
+    "reposicion_working_deadline_current_assessment": "2026-09-28",
+    "status": "verify_legally_effective_notification_date_before_filing",
+    "direct_contentious_deadline": "counsel_verify_due_to_LJCA_August_computation_and_standing"
+  },
+  "evidential_boundaries": [
+    "The rasterised format proves a technical characteristic of the notified copy, not deliberate obstruction.",
+    "The source-to-Decree discrepancy does not itself establish illegality, bad faith, disciplinary liability or criminal liability.",
+    "Native sources control over public transcriptions and translations."
+  ]
+}
