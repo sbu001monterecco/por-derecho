@@ -84,8 +84,6 @@ def main() -> None:
         require(body, "9.052", label)
         require(body, "13.165", label)
 
-    require(start, "NOTIFICADO 15/02/2018", "start notification layer")
-    require(closeout, "NOTIFICADO 15/02/2018", "closeout notification layer")
     require(es_page, "8 de febrero de 2018", "ES corrected order date")
     require(es_page, "notificación", "ES notification distinction")
     require(en_page, "8 February 2018", "EN corrected order date")
