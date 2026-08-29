@@ -10,13 +10,16 @@ on:
       - "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md"
       - "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md"
       - "assets/data/concurso36-linked-continuity-20260829-v1.json"
-      - "en/insolvency-36-2012-continuity-control/index.html"
-      - "es/concurso-36-2012-control-continuidad/index.html"
+      - "en/insolvency-36-2012-continuity-control/**"
+      - "es/concurso-36-2012-control-continuidad/**"
       - "sitemap-concurso36-court-orders.xml"
       - "publication-manifests/concurso36-linked-continuity-20260829.json"
       - "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md"
       - "scripts/validate_concurso36_linked_continuity.py"
+      - "scripts/verify_concurso36_linked_continuity_live.py"
+      - "scripts/production_smoke_check.py"
       - ".github/workflows/validate-concurso36-linked-continuity.yml"
+      - ".github/workflows/verify-concurso36-linked-continuity-live.yml"
   push:
     branches: [main]
     paths:
@@ -24,24 +27,42 @@ on:
       - "archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md"
       - "archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md"
       - "archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md"
+      - "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md"
+      - "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md"
       - "assets/data/concurso36-linked-continuity-20260829-v1.json"
-      - "en/insolvency-36-2012-continuity-control/index.html"
-      - "es/concurso-36-2012-control-continuidad/index.html"
+      - "en/insolvency-36-2012-continuity-control/**"
+      - "es/concurso-36-2012-control-continuidad/**"
       - "sitemap-concurso36-court-orders.xml"
       - "publication-manifests/concurso36-linked-continuity-20260829.json"
       - "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md"
       - "scripts/validate_concurso36_linked_continuity.py"
+      - "scripts/verify_concurso36_linked_continuity_live.py"
+      - "scripts/production_smoke_check.py"
+      - ".github/workflows/validate-concurso36-linked-continuity.yml"
+      - ".github/workflows/verify-concurso36-linked-continuity-live.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: concurso36-linked-continuity-source-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
+      - name: Compile validators
+        run: |
+          python -B -m py_compile scripts/validate_concurso36_linked_continuity.py
+          python -B -m py_compile scripts/verify_concurso36_linked_continuity_live.py
       - name: Validate controlled continuity release
         run: python -B scripts/validate_concurso36_linked_continuity.py
