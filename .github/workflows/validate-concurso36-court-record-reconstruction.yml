@@ -73,8 +73,9 @@ jobs:
           assert any(r.get('record_class')=='registry_record' for f in gap['additional_families'] for r in f['records'])
           assert len(gap['gap_corrections'])>=6
           assert len(gap['open_points_replace'])>=10
-          for phrase in ['not proof of formal court notice of the 7-Jun physical-control event','unfiled draft','37 controlled/corroborated nodes','Non-production is not nonexistence']:
-              assert phrase.lower() in blob.lower() or phrase.lower() in (root/'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md').read_text().lower(), phrase
+          boundary_text=(blob+' '+(root/'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md').read_text()).lower()
+          for phrase in ['formal court notice','7-jun','unfiled draft','37 controlled/corroborated nodes','non-production is not nonexistence']:
+              assert phrase in boundary_text, phrase
           for path in [
               'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md',
               'assets/concurso36-court-record-reconstruction.js',
