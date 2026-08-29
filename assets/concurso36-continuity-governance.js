@@ -96,4 +96,40 @@
       console.error(err);
       document.querySelectorAll('[data-loading]').forEach(el=>el.textContent=tr('No se pudo cargar el registro de continuidad.','The continuity record could not be loaded.'));
     });
+
+  fetch(root + 'assets/data/concurso36-procedural-taxonomy-judicial-ac-dual-lens-20260829.json', {cache:'no-store'})
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(d => {
+      const anchor = document.getElementById('textos');
+      if (!anchor || document.getElementById('dual-lens-governance')) return;
+      const pos = lang === 'es' ? d.declared_position.es : d.declared_position.en;
+      const june = d.critical_4_june_2018_comparator || {};
+      const incidents = d.verified_incidentes_concursales_located || [];
+      const why = d.why_material_acts_are_not_automatically_incidents || [];
+      const gate = d.definitive_text_change_gate || {};
+      const dualHref = root + 'CHATGPT_START_HERE_CONCURSO36_DUAL_LENS_GOVERNANCE.md';
+      const dataHref = root + 'assets/data/concurso36-procedural-taxonomy-judicial-ac-dual-lens-20260829.json';
+      const html = `<section class="section alt" id="dual-lens-governance"><div class="shell">
+        <p class="eyebrow">${esc(tr('DERECHO ESTRICTO + LENTE ADVERSARIAL AC/JUEZ','BLACK-LETTER LAW + ADVERSARIAL JUDGE/IA LENS'))}</p>
+        <h2>${esc(tr('La alegación es acumulativa: no un solo Auto, no una sola omisión','The allegation is cumulative: not one order, not one omission'))}</h2>
+        <div class="warning"><strong>${esc(tr('Posición declarada / límite probatorio.','Declared position / evidentiary boundary.'))}</strong> ${esc(pos)}</div>
+        <div class="track-grid">
+          ${card(`<div class="track-top"><span>DRY LAW</span><span>${esc(tr('clasificación','classification'))}</span></div><h3>${esc(tr('Primero: qué vía procesal era','First: what procedural route applied'))}</h3>`,`<p>${text(d.mandatory_dual_lens.dry_law)}</p><p class="treatment">${esc(tr('Importancia material ≠ incidente concursal.','Material importance ≠ insolvency incident.'))}</p>`)}
+          ${card(`<div class="track-top"><span>ADVERSARIAL</span><span>${esc(tr('patrón','pattern'))}</span></div><h3>${esc(tr('Después: juez, AC y actores privados','Then: judge, IA and private actors'))}</h3>`,`<p>${text(d.mandatory_dual_lens.adversarial_misconduct)}</p>`)}
+        </div>
+        <h3>${esc(tr('4 junio 2018: comparador primario que no puede borrarse','4 June 2018: primary comparator that must remain visible'))}</h3>
+        <div class="track-grid">
+          ${card(`<div class="track-top"><span>08-02-2018</span><span>${esc(june['8_february_2018']?.status || '')}</span></div><h3>€9.052.251,69</h3>`,`<p>${esc(june['8_february_2018']?.operative_rule || '')}</p><p>${esc(june['8_february_2018']?.recorded_special_privilege || '')}</p>`)}
+          ${card(`<div class="track-top"><span>04-06-2018</span><span>${esc(june['4_june_2018']?.status || '')}</span></div><h3>€13.165.832,36 + ${esc(tr('interés limitado por garantía','interest limited by security'))}</h3>`,`<p>${esc(june['4_june_2018']?.source_mechanics || '')}</p><p class="treatment"><strong>${esc(tr('Posición Gil/Aweswell','Gil/Aweswell position'))}:</strong> ${esc(june['4_june_2018']?.user_position || '')}</p>`)}
+        </div>
+        <h3>${esc(tr('Por qué no metemos todo en “incidente concursal”','Why we do not put every material act into “insolvency incident”'))}</h3>
+        <div class="table-wrap"><table><thead><tr><th>${esc(tr('Acto','Act'))}</th><th>${esc(tr('Clase correcta','Correct class'))}</th><th>${esc(tr('Razón','Reason'))}</th></tr></thead><tbody>${why.map(x=>`<tr><td><strong>${esc(x.act)}</strong></td><td>${esc(x.classification)}</td><td>${esc(x.reason)}</td></tr>`).join('')}</tbody></table></div>
+        <h3>${esc(tr('Incidentes concursales primarios localizados','Primary verified insolvency incidents located'))}</h3>
+        <div class="track-grid">${incidents.map(x=>card(`<div class="track-top"><span>${esc(x.piece)}</span><time>${esc(x.date_decision)}</time></div><h3>${esc(x.claimant)} → ${esc(x.defendant || x.defendants)}</h3>`,`<p><strong>${esc(x.caption)}</strong></p><p>${esc(x.object)}</p><p class="treatment">${esc(x.result)}</p>`,x.status)).join('')}</div>
+        <div class="callout"><strong class="big">${esc(tr('Gate obligatorio del texto definitivo','Mandatory definitive-text gate'))}</strong><p>${esc(lang==='es' ? gate.rule_es : gate.rule_en)}</p><ol class="gaps">${(gate.required_fields||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>
+        <div class="boundary"><h2>${esc(tr('Gobernanza permanente para la investigación','Permanent investigation governance'))}</h2><p>${esc(tr('Las quejas CGPJ y demás denuncias se enlazan como historia de alegaciones, no como prueba de culpabilidad. Cada nuevo documento debe compararse con el patrón alegado y con la explicación jurídica contraria.','CGPJ complaints and other complaints are linked as allegation history, not proof of guilt. Every new document must be tested against the alleged pattern and the competing lawful explanation.'))}</p><div class="links"><a href="${dualHref}">${esc(tr('Protocolo agente / prompt','Agent protocol / prompt'))}</a><a href="${dataHref}">${esc(tr('Datos máquina','Machine data'))}</a></div></div>
+      </div></section>`;
+      anchor.insertAdjacentHTML('afterend', html);
+    })
+    .catch(err => console.error('dual-lens governance', err));
 })();
