@@ -1,0 +1,60 @@
+{
+  "publication_id": "CONCURSO36-DECISION-CONTINUITY-20260829",
+  "owner": "Por Derecho / Project Sun Rock",
+  "control_date": "2026-08-29",
+  "state": "PUBLICATION_BRANCH_READY",
+  "subject": "Concurso 36/2012 — public judicial and LAJ decision-continuity control",
+  "controlled_sources": [
+    "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+    "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md",
+    "docs/deletion-audits/2026-08-29-concurso36-decision-continuity-thread.md",
+    "assets/data/concurso36-judicial-acts-v1.json"
+  ],
+  "expected_routes": {
+    "en": "en/concurso36-decision-continuity/index.html",
+    "es": "es/concurso36-continuidad-decisiones/index.html",
+    "sitemap": "sitemap-concurso36-decision-continuity.xml"
+  },
+  "publication_rules": [
+    "The historical workbook is a discovery spine and does not self-verify any act.",
+    "Where a signed primary act is unavailable, derivative source status remains explicit.",
+    "Filing, receipt, opposition, decision, service, reconsideration, appeal, appellate decision, finality and implementation/accounting remain separate nodes.",
+    "Not located means absent from the controlled corpus only and does not prove nonexistence, loss, suppression or alteration.",
+    "Favourable and neutral acts remain visible beside adverse acts.",
+    "No complete longitudinal actor dossier is claimed while P1 binary/signatory promotion remains incomplete."
+  ],
+  "p0_scope": [
+    "certified chronological court/LAJ denominator from 2014 through conclusion",
+    "2014–2016 signed originals and definitive-text chain",
+    "bare references 204/14, 677/14, 2418/14 and 5599/2015",
+    "complete families C36-E004, E031, E034, E045, E056, E060, E062 and E063",
+    "25/27 October 2021 filing/testimonio/report family",
+    "complete AC report, annex, ledger, bank and final-account series",
+    "2022–2023 review/nullity chain and Constitutional Court 2811/2023",
+    "merits/service/finality for RPL 2523/2025, 3304/2025 + 3319/2025 and 421/2026",
+    "final accounts, objections, approval/refusal, finality and conclusion order"
+  ],
+  "public_balance_examples": [
+    "Garrigues-credit outcomes",
+    "26 June 2018 suspension",
+    "23 July 2019 Provincial Court partial allowance",
+    "24 October 2019 favourable and non-convalidation outcomes",
+    "12 May 2020 Aweswell success",
+    "8 July 2021 AC-reporting order",
+    "29 September 2021 Decree 316/2021",
+    "June/July 2022 correction and nullity chain"
+  ],
+  "express_exclusions": [
+    "no claim that the primary docket is complete",
+    "no claim that a missing item does not exist",
+    "no inference of service, finality, implementation or accounting effect from a located decision alone",
+    "no complete longitudinal dossier on Alberto López Villarrubia",
+    "no adjudication of any allegation",
+    "no external request, email, filing, witness contact or authority contact"
+  ],
+  "live_urls": [
+    "https://sbu001monterecco.github.io/por-derecho/en/concurso36-decision-continuity/",
+    "https://sbu001monterecco.github.io/por-derecho/es/concurso36-continuidad-decisiones/",
+    "https://sbu001monterecco.github.io/por-derecho/sitemap-concurso36-decision-continuity.xml"
+  ]
+}
