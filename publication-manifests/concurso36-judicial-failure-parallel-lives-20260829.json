@@ -1,7 +1,21 @@
 {
-  "schema":"por-derecho.publication-manifest.v1",
+  "schema":"por-derecho.publication-manifest.v1.1",
+  "publication_id":"concurso36-judicial-failure-parallel-lives-20260829",
   "generated":"2026-08-29",
   "baseline_main_sha":"cd5903fccc02e8ac098ca2e17eb6aa7d739986e6",
+  "current_state":"MERGED",
+  "owner":"sbu001monterecco",
+  "merge_sha":"4b437dbee5ee979b9e3a9868ecd7d0e37505b181",
+  "validation":{"evidence":"PR #1201 dedicated multitrack judicial-failure validation passed before merge."},
+  "expected_routes":{
+    "es":["es/concurso-36-2012-fallos-judiciales-vidas-paralelas/index.html"],
+    "en":["en/insolvency-36-2012-judicial-failures-parallel-lives/index.html"]
+  },
+  "expected_source_files":[
+    "assets/data/concurso36-multitrack-judicial-failure-parallel-lives-20260829.json",
+    "assets/data/concurso36-lexnet-supplement-20260829.json",
+    "assets/concurso36-judicial-failure-parallel-lives.js"
+  ],
   "purpose":"Visualise filing/warning -> institutional response -> protection/control -> continuing parallel life -> consequence, while preserving criminal proof boundaries.",
   "public_routes":[
     "es/concurso-36-2012-fallos-judiciales-vidas-paralelas/",
