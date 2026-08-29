@@ -5,25 +5,28 @@
 - **Repository:** `sbu001monterecco/por-derecho`
 - **Reconciliation started from:** `main` at `a7b56adcf5d2656050fb516aad4b4402ea36ef94`
 - **Immutable continuity release:** PR #1190, merge SHA `0b0423820942cb95f7a98e8d6fc519f6a9482a04`
-- **Release deployment:** GitHub Pages run `33233442563` / run number `1262` — success
-- **Last `main` observed before the truth-repair branch:** `0b0423820942cb95f7a98e8d6fc519f6a9482a04`
+- **Continuity-truth repair:** PR #1192, squash merge SHA `9025fd35aed73bb5f41e6959b249e6b7353ec80e`
+- **Original release deployment:** GitHub Pages run `33233442563` / run number `1262` — success
+- **Latest `main` observed for the material-gap closure run:** `5f53e58c28a22f5aab7280c82a31b34fb940f5d1`
 - **Publication origin:** `https://sbu001monterecco.github.io/por-derecho/`
-- **Release function:** continuity control, not new evidence promotion
+- **Release function:** continuity and gap control, not automatic evidence promotion
 
-> Resolve `refs/heads/main` afresh before every continuation. The immutable release SHA proves what PR #1190 published; it is not a permanent alias for mutable `main`.
+> Resolve `refs/heads/main` afresh before every continuation. Immutable release/repair SHAs prove what a controlled release contained; neither is a permanent alias for mutable `main`.
 
 ## Start in this order
 
 1. `CHATGPT_START_HERE.md`
-2. `archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md`
-3. `archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md`
-4. `archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md`
-5. `archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md`
-6. `archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md`
-7. `archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md`
-8. `publication-manifests/concurso36-court-decision-continuity-20260828.json`
-9. `publication-manifests/concurso36-linked-continuity-20260829.json`
-10. `assets/data/concurso36-linked-continuity-20260829-v1.json`
+2. `archive/CONCURSO36_P0_MATERIAL_GAP_CLOSURE_MAP_29AUG2026.md`
+3. `assets/data/concurso36-p0-material-gap-closure-20260829-v1.json`
+4. `archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md`
+5. `archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md`
+6. `archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md`
+7. `archive/CONCURSO36_DECISION_CONTINUITY_AUDIT_2014_2026_28AUG2026.md`
+8. `archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md`
+9. `archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md`
+10. `publication-manifests/concurso36-court-decision-continuity-20260828.json`
+11. `publication-manifests/concurso36-linked-continuity-20260829.json`
+12. `assets/data/concurso36-linked-continuity-20260829-v1.json`
 
 ## Independent state fields
 
@@ -32,47 +35,49 @@ Do not compress these into one `published` or `closed` statement.
 | State | Controlled rule / present position |
 |---|---|
 | `CURRENT_MAIN` | Resolve at runtime. Never infer it from this file or a prior chat. |
-| `RELEASE_SHA` | `0b0423820942cb95f7a98e8d6fc519f6a9482a04` for PR #1190. |
-| `SCOPED_VALIDATION` | PR #1190 release validation passed; rerun against every proposed delta. |
-| `GLOBAL_INTEGRITY` | Must pass independently; repair work must not be described as evidence closure. |
-| `PAGES_DEPLOYMENT` | PR #1190 release deployment passed in run `33233442563`. |
-| `EXACT_ROUTE_READBACK` | Required for both bilingual routes and the machine register after every new deployment. |
-| `EVIDENCE_CLOSURE` | Open: nine P0 and two P1 closure tests remain controlled. |
-| `DELETION_SAFE` | No, until the deletion audit records source recovery, green checks, merge, deployment and exact readback for the final repair. |
+| `RELEASE_SHA` | Preserve immutable release/repair SHAs separately from current `main`. |
+| `SCOPED_VALIDATION` | Rerun against every proposed delta. |
+| `GLOBAL_INTEGRITY` | Must pass independently; integrity work is not evidence closure. |
+| `PAGES_DEPLOYMENT` | Deployment is a software/publication state only. |
+| `EXACT_ROUTE_READBACK` | Required after every deployed public delta. |
+| `EVIDENCE_CLOSURE` | **Open: nine P0 and two P1 families remain controlled.** Several P0 families are now source-level `PARTIAL_FAMILY_LOCATED`; this does not reduce the denominator. |
+| `DELETION_SAFE` | Evaluate only after the final release, validation, deployment/readback and source-recovery controls are recorded. |
+
+## Material-gap priority now
+
+The most important recovery target is the **15th quarterly liquidation report**, because later primary Insolvency Administration reports repeatedly identify it as the operative description of completed asset liquidation. Recovering and authenticating it can narrow both `AC-REPORT-SERIES` and `FINAL-STAGE` at once.
+
+The canonical source-level map is:
+
+`archive/CONCURSO36_P0_MATERIAL_GAP_CLOSURE_MAP_29AUG2026.md`
+
+The machine-readable equivalent is:
+
+`assets/data/concurso36-p0-material-gap-closure-20260829-v1.json`
+
+Status refinement never substitutes for the pre-existing closure test. A located primary node closes only that node.
 
 ## Controlling position
 
 The two supplied continuity files were checked against the repository and are byte-identical to the canonical archive copies. They are not a new source version and do not justify a duplicate evidence row, a new factual finding or a claim that any court-file gap has closed.
 
-The current decision baseline remains **partial**. A controlled copy closes only the node represented by that copy. The certified docket denominator, complete decision families, complete Insolvency Administration report series, service/appeal/finality chains, accounting implementation, final accounts and conclusion family remain governed by the open P0/P1 tests.
+The current decision baseline remains **partial**. The certified docket denominator, complete decision families, complete Insolvency Administration report series, service/appeal/finality chains, accounting implementation, final accounts and conclusion family remain governed by the open P0/P1 tests.
 
-A successful Pages deployment proves deployment of a Git commit. It does not, by itself, prove that every expected route has propagated byte-for-byte, and it does not close any evidential denominator.
+Primary-source recovery has nevertheless narrowed the gap picture: the October 2021 family, AC-report series and 2022–2023 review family contain located primary nodes; current appeals contain located procedural nodes but no merits endpoint located in the targeted 29 August 2026 connected-source sweep. These are source-recovery states, not findings on the merits.
 
 ## Non-fragmentation rule
 
 Every future run must:
 
 - resolve and begin from current `main`, not from a legacy branch;
-- preserve the immutable release SHA separately from mutable current `main`;
-- reconcile the canonical registers before drafting;
+- preserve immutable release SHAs separately from mutable current `main`;
+- reconcile the canonical registers and the P0 material-gap closure map before drafting;
 - keep each proceeding, legal person, actor capacity, instrument and same-date act distinct;
 - preserve favourable and neutral material alongside adverse material;
 - compare legacy PRs against current `main` and transplant only verified, non-duplicative deltas onto a fresh branch;
 - retain `not located in the controlled corpus` as a corpus limitation, not a finding of nonexistence;
 - publish no private counsel advice, personal contact data, privileged material or unrelated-matter material;
 - send no email, filing or authority contact under this control.
-
-## Publication and verification commands
-
-```bash
-python -B scripts/validate_concurso36_linked_continuity.py
-python -B scripts/validate_publication_integrity.py
-python -B scripts/verify_concurso36_linked_continuity_live.py \
-  --base-url https://sbu001monterecco.github.io/por-derecho/ \
-  --output artifacts/concurso36-linked-continuity-live/latest.json
-```
-
-The controlled origin is the GitHub Pages project URL above. Do not substitute another hostname unless repository configuration and DNS ownership have first been independently verified and recorded.
 
 ## Publication gate
 
@@ -94,4 +99,4 @@ No legacy PR is authorised for wholesale merge merely because it appears in that
 
 ## Deletion-safety rule
 
-This thread is not deletion-safe merely because PR #1190 merged. Deletion safety requires the final repair source to be recoverable from Git, all required scoped and global checks to be green, the repair to be merged and deployed, exact route/machine-register readback to pass, and no unique source or instruction to remain only in chat.
+Do not infer deletion safety from merge status alone. Deletion safety requires the final source to be recoverable from Git, required scoped/global checks to be green, the relevant public delta to be merged and deployed, exact readback to pass where public output changed, and no unique source or operative instruction to remain only in chat.
