@@ -2,13 +2,21 @@
   const current = document.currentScript;
   if (!current) return;
 
-  const loadArrecifeCrosslinks = () => {
-    if (document.querySelector('script[data-concurso36-arrecife-crosslinks-loader]')) return;
-    const crosslinks = document.createElement('script');
-    crosslinks.src = new URL('concurso36-arrecife-crosslinks-20260829.js?v=20260829a', current.src).href;
-    crosslinks.async = false;
-    crosslinks.setAttribute('data-concurso36-arrecife-crosslinks-loader', '20260829');
-    document.head.appendChild(crosslinks);
+  const loadConcurso36Controls = () => {
+    if (!document.querySelector('script[data-concurso36-arrecife-crosslinks-loader]')) {
+      const crosslinks = document.createElement('script');
+      crosslinks.src = new URL('concurso36-arrecife-crosslinks-20260829.js?v=20260829a', current.src).href;
+      crosslinks.async = false;
+      crosslinks.setAttribute('data-concurso36-arrecife-crosslinks-loader', '20260829');
+      document.head.appendChild(crosslinks);
+    }
+    if (!document.querySelector('script[data-concurso36-caret-overlay-loader]')) {
+      const caret = document.createElement('script');
+      caret.src = new URL('concurso36-caret-incident-overlay-20260829.js?v=20260829a', current.src).href;
+      caret.async = false;
+      caret.setAttribute('data-concurso36-caret-overlay-loader', '20260829');
+      document.head.appendChild(caret);
+    }
   };
 
   const loadTreasuryVisual = () => {
@@ -17,12 +25,12 @@
       visual.src = new URL('treasury-154-hq-visual-20260828.js?v=20260828c', current.src).href;
       visual.async = false;
       visual.setAttribute('data-treasury-154-hq-loader', '20260828');
-      visual.addEventListener('load', loadArrecifeCrosslinks, { once: true });
-      visual.addEventListener('error', loadArrecifeCrosslinks, { once: true });
+      visual.addEventListener('load', loadConcurso36Controls, { once: true });
+      visual.addEventListener('error', loadConcurso36Controls, { once: true });
       document.head.appendChild(visual);
       return;
     }
-    loadArrecifeCrosslinks();
+    loadConcurso36Controls();
   };
 
   // Preserve the complete site loader that existed before this visual update.
