@@ -1,0 +1,45 @@
+{
+  "dossier": "E.G. 745/2026",
+  "control_date": "2026-08-29",
+  "repository": "sbu001monterecco/por-derecho",
+  "substantive_pr": 1186,
+  "substantive_merge_sha": "c0b8c4e1065fee8ca977edc2473a0273cbeb2e3a",
+  "pages_run": {
+    "id": 33231475286,
+    "run_number": 1257,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "filing_status": {
+    "reposicion": "PREPARED / OUTSTANDING — NOT YET VERIFIED AS FILED",
+    "evidence_rule": "Upgrade only with actual sent communication, REG-AGE receipt, judicial receipt or equivalent filing confirmation."
+  },
+  "working_reposicion_backstop": "2026-09-28",
+  "deadline_qualification": "Subject to final verification of legally effective notification date and any applicable special rule.",
+  "asap_rule": "File as soon as the filing is substantively ready. Do not wait for the final permitted day merely because time remains. Formal deadlines are backstops, not target filing dates.",
+  "native_pdf": {
+    "filename": "OFICIO Y DECRETO EXP. 745-26.pdf",
+    "sha256": "1e09c8eb3bce26e28dc5f22e5d6ebad3f458212cf8d85f5920e869fa42554abe",
+    "authority": "Native official PDF controls over transcription and every derivative.",
+    "public_redacted_derivative_status": "OPEN — NOT YET PUBLISHED; binary repository upload unavailable in current connector run"
+  },
+  "originating_registration": {
+    "reference": "REGAGE26e00070235775",
+    "receipt_sha256": "33f7b47418062a0bc4993f424e459af18fa2d334acc8bafc4c2e40750f171f97"
+  },
+  "public_routes": [
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/paquete-respuesta-29-agosto-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/response-package-29-august-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/es/fiscalia-inspeccion-exp-gub-745-2026/diario-actuaciones-29-agosto-2026.html",
+    "https://sbu001monterecco.github.io/por-derecho/en/public-prosecution-inspection-exp-gub-745-2026/action-diary-29-august-2026.html"
+  ],
+  "controlled_paths": [
+    "archive/EG_745_2026_CONTINUITY_29AUG2026.md",
+    "archive/EG_745_2026_CONTINUITY_CLOSEOUT_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_ACTION_DIARY_29AUG2026.md",
+    "evidence/fiscalia/2026/EG_745_2026_COUNTER_ACTION_MATRIX_29AUG2026.md",
+    "FISCALIA_INSPECCION_EG_745_2026_DIGITISATION_APPEAL_PACKAGE_29AUG2026.md"
+  ]
+}
