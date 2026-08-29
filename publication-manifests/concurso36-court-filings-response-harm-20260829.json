@@ -1,0 +1,25 @@
+{
+  "schema": "por-derecho.publication-manifest.v1",
+  "release_id": "PD-C36-COURT-RESPONSE-HARM-20260829-01",
+  "control_date": "2026-08-29",
+  "baseline_main_sha": "93f72becd86df3ab41712f76916d5f7a8ea9b4dd",
+  "public_routes": [
+    "/es/concurso-36-2012-escritos-respuesta-judicial/",
+    "/en/concurso-36-2012-filings-judicial-response/"
+  ],
+  "controlled_sources": [
+    "archive/CONCURSO36_COURT_FILINGS_JUDICIAL_RESPONSE_HARM_MATRIX_29AUG2026.md",
+    "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+    "assets/data/concurso36-court-filings-response-harm-20260829-v1.json"
+  ],
+  "claims": {
+    "certified_complete_docket": false,
+    "located_discovery_denominator_more_than_600_rows": true,
+    "judge_ignored_used_as_proved_fact": false,
+    "named_person_photographic_causation_promoted": false,
+    "overreach_presented_as_testable_thesis": true,
+    "favourable_counterweights_preserved": true
+  },
+  "open_targets": ["5367/2022 underlying AC report","15th quarterly liquidation report","final accounts/conclusion chain","2018 takeover/preservation Mercantile filing if any","funded conclusion/better-offer filing if any","CEXP recovery filing if any","ES06-01 sealed receipt","official docket denominator"],
+  "external_action_authorized_by_manifest": false
+}
