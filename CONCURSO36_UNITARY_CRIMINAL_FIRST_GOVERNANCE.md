@@ -24,6 +24,64 @@ For every material incident, document family, person, entity, judicial act or im
 6. **Preserve evidentiary status.** Distinguish primary evidence, corroboration, cross-reference, attributed allegation, inference, contrary evidence, unresolved question and source gap.
 7. **Preserve counterweights.** Adverse, protective and corrective judicial or institutional acts must remain visible even where they cut against the working allegation.
 
+## Article 176 funded exit — categorical continuity position and no-regression rule
+
+Never state or imply that the Article 176 funded exit was **not advanced**, **not developed**, merely aspirational, merely hypothetical, or incapable of constituting a developed rescue pathway simply because it was not consummated. Non-consummation is not evidence of non-development.
+
+The continuity case position is **categorical, not tentative**: the Article 176 funded exit had been advanced and developed, and its failure to consummate is attributed **in full / 100%** by Gil Marer and the Aweswell/LPB-side case theory to the **7 June 2018 takeover by force** and the **lack or denial of effective judicial protection (`tutela judicial efectiva`) that followed**. Within the required criminal-prosecutorial-investigative-forensic analysis, **7 June 2018 must therefore be analysed as the alleged sabotage/interruption event**, not as a neutral background date and not as proof that the exit itself was undeveloped.
+
+This categorical causation proposition is an attributed litigation/investigative position that must be tested, supported, challenged or refined against the controlled evidential record; it is not converted by this governance rule into an adjudicated criminal finding. Future analyses must nevertheless engage with the proposition directly and must not silently downgrade it to vague correlation, ordinary commercial failure, lack of funding development, or a concursal-only explanation.
+
+The mandatory sequence is:
+
+`developed Article 176 / funded-exit pathway -> pre-7-Jun state and evidence -> 7-Jun-2018 physical-control/takeover event -> immediate and later judicial-protection requests/responses/gaps -> effect on possession/security/access/operation/income/asset condition/financing execution -> causal consequences for funded exit -> beneficiary/harm analysis -> contrary evidence -> remaining proof`.
+
+Concursal/mercantile mechanics must be analysed **after and alongside** that criminal/prosecutorial/forensic causation reconstruction. They may support, weaken or qualify the theory, but must never be used to fragment the chronology or to turn the fact of non-completion into a finding of non-development.
+
+## 20 January 2017 texto-definitivo comparator — formal machinery existed
+
+Treat **20 January 2017 as a genuine `texto definitivo` modification event**. The Community-credit issue is the mandatory comparator demonstrating that **formal procedural machinery existed and was in fact used to amend the definitive texts**.
+
+Accordingly, any later proposition that a material creditor identity, amount, classification, standing or other definitive-text treatment could not be formally corrected, amended or judicially processed must be tested against the 20-Jan-2017 comparator. The comparator is not a peripheral arithmetic fact; it is evidence relevant to **capacity, opportunity, procedural choice, knowledge, differential treatment and causation**.
+
+Criminal-prosecutorial reverse engineering must expressly test whether the contrasting use, non-use, invocation, manipulation or circumvention of that formal machinery supports or weakens an allegation of **fraude concursal and/or fraude procesal**, including the attributed allegation that private actors had captured, controlled or used the organ of the purported `Comunidad` without lawful authority. The existence of formal mercantile machinery is **not by itself an exculpatory answer** to that hypothesis; it may instead be part of the opportunity/mechanism evidence. Equally, the comparator does not by itself establish capture, deceit, intent, fraud or criminal liability: those remain actor-specific propositions requiring evidence and statutory-elements analysis.
+
+Future work must therefore ask, at minimum:
+
+`what changed on 20-Jan-2017 -> who requested/caused it -> under what authority/capacity -> what procedure was used -> what notice/contradiction/review existed -> what definitive-text effect followed -> how that machinery compares with later disputed Community-credit or creditor-treatment events -> whether the differential treatment supports an innocent explanation, procedural irregularity, fraude concursal/procesal hypothesis, or another classification`.
+
+## Arrecife exhorto / Mercantil response — mandatory correction and missing-content rule
+
+**Mercantil nº1 did respond to the Arrecife exhorto.** Any earlier inference or wording that Mercantil ignored Arrecife, failed to respond, or that no response existed must be corrected.
+
+The controlled chronology to preserve is:
+
+- the **2 May 2018 exhorto preceded the 7 June 2018 takeover**;
+- Arrecife records **receipt of Mercantil nº1's response on 11 June 2018**;
+- the **13 June 2018 Auto incorporated that response into DP 1132/2018**; and
+- what remains missing from the presently controlled corpus is **the actual response and its annexes/content**, not proof that a response existed.
+
+The prominent website/repository formulation is mandatory and must remain exactly:
+
+> **WE KNOW A RESPONSE EXISTED. WE DO NOT YET HAVE ITS CONTENT**
+
+Absence of the response package from the presently located corpus must never be converted into absence of a response. Conversely, the fact that a response existed must never be used to invent its wording, annexes, legal position, knowledge, directions, or effect. The response and annexes remain a priority source-recovery object because their content may materially affect the pre-/post-7-June causation, notice, authority, judicial-protection and criminal/prosecutorial analysis.
+
+## No-regression / continuity inheritance
+
+Every downstream timeline, matrix, public page, evidence note, court-record reconstruction, handoff, prompt and future thread concerning Concurso 36/2012 inherits the three rules above.
+
+Legacy wording must be corrected rather than reconciled by dilution. In particular, reject and repair any formulation that:
+
+- describes the Article 176 funded exit as unadvanced or undeveloped merely because it was not consummated;
+- treats 7 June 2018 as neutral to the funded-exit causation theory rather than engaging with the attributed sabotage proposition;
+- treats the 20-Jan-2017 definitive-text modification as irrelevant to the availability/use of formal amendment machinery;
+- reduces the Community-credit issue to arithmetic without first testing authority and the alleged fraude concursal/procesal mechanism;
+- says or implies that Mercantil nº1 ignored the Arrecife exhorto or that no response existed; or
+- confuses the **missing content/annexes** of the response with the **existence** of the response.
+
+Where a later controlled primary source contradicts one of the factual premises above, do not silently overwrite the governance. Open a dated correction record, preserve the superseded formulation and source chain, and update the rule transparently.
+
 ## Authority before arithmetic
 
 Any issue involving a purported `Comunidad`, community fees, quotas, debts, charges, voting, representation, possession, hotel control, works, exploitation or expenditure MUST begin with **identity, authority, capacity, standing, representation and procedural-status analysis before arithmetic**.
