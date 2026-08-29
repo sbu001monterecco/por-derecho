@@ -4,22 +4,28 @@ on:
     paths:
       - 'assets/data/concurso36-court-record-reconstruction-v1.json'
       - 'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json'
+      - 'assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json'
       - 'assets/concurso36-court-record-reconstruction.js'
       - 'es/concurso-36-2012-registro-procesal/**'
       - 'en/insolvency-36-2012-court-record/**'
       - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
       - 'publication-manifests/concurso36-court-record-reconstruction-20260829.json'
+      - 'publication-manifests/concurso36-court-record-gapclose2-20260829.json'
+      - 'archive/CONCURSO36_COURT_RECORD_GAPCLOSE2_CONTINUITY_29AUG2026.md'
       - '.github/workflows/validate-concurso36-court-record-reconstruction.yml'
   push:
     branches: [main]
     paths:
       - 'assets/data/concurso36-court-record-reconstruction-v1.json'
       - 'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json'
+      - 'assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json'
       - 'assets/concurso36-court-record-reconstruction.js'
       - 'es/concurso-36-2012-registro-procesal/**'
       - 'en/insolvency-36-2012-court-record/**'
       - 'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md'
       - 'publication-manifests/concurso36-court-record-reconstruction-20260829.json'
+      - 'publication-manifests/concurso36-court-record-gapclose2-20260829.json'
+      - 'archive/CONCURSO36_COURT_RECORD_GAPCLOSE2_CONTINUITY_29AUG2026.md'
 
 permissions:
   contents: read
@@ -30,38 +36,66 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4
-      - name: Validate registry, appellate supplement and continuity controls
+      - name: Validate registry, supplements and continuity controls
         run: |
           python - <<'PY'
           import json, pathlib
           root=pathlib.Path('.')
           reg=json.loads((root/'assets/data/concurso36-court-record-reconstruction-v1.json').read_text())
           sup=json.loads((root/'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json').read_text())
-          man=json.loads((root/'publication-manifests/concurso36-court-record-reconstruction-20260829.json').read_text())
+          gap=json.loads((root/'assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json').read_text())
+          oldman=json.loads((root/'publication-manifests/concurso36-court-record-reconstruction-20260829.json').read_text())
+          newman=json.loads((root/'publication-manifests/concurso36-court-record-gapclose2-20260829.json').read_text())
+          fam=reg['verified_families'][0]
           assert reg['status'].startswith('CONTROLLED RECONSTRUCTION')
           assert 'RESPONSE_NOT_LOCATED' in reg['response_taxonomy']
-          fam=reg['verified_families'][0]
           assert fam['family_id']=='C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS'
-          assert sup['family_id']==fam['family_id']
-          assert len(fam['records']) >= 10
-          assert len(sup['records']) >= 10
-          assert len(fam['records']) + len(sup['records']) >= 20
-          blob=json.dumps(reg,ensure_ascii=False)+json.dumps(sup,ensure_ascii=False)
+          assert sup['family_id']==gap['append_to_family_id']==fam['family_id']
+          total=len(fam['records'])+len(sup['records'])+len(gap['append_records'])+sum(len(f['records']) for f in gap['additional_families'])
+          assert total==37, total
+          new_records=gap['append_records']+[r for f in gap['additional_families'] for r in f['records']]
+          ids=[r['id'] for r in new_records]
+          assert len(ids)==len(set(ids))==17
+          by_id={r['id']:r for r in new_records}
+          assert by_id['C36-REC-20180626-AUTO-SUSPENSION']['response_taxonomy']=='PROTECTIVE_RESPONSE'
+          assert 'possession' in by_id['C36-REC-20180626-AUTO-SUSPENSION']['proof_limit'].lower()
+          assert by_id['C36-REC-20210224-AUTO-WORKS-ACCESS-MASA']['response_taxonomy']=='ADVERSE_SUBSTANTIVE_RESPONSE'
+          assert by_id['C36-REC-20220506-REGISTRY-FINCA-8751']['registry_csv']=='235019286750B8FD'
+          assert '21-Feb-2022' in by_id['C36-REC-20220506-REGISTRY-FINCA-8751']['operative_effect']
+          draft=next(x for x in gap['orphan_records'] if x['id']=='C36-CANDIDATE-20210729-AWESWELL-RICPE-DRAFT')
+          assert draft['record_class']=='unfiled_draft'
+          assert draft['status']=='DO_NOT_PROMOTE_AS_2021_COURT_FILING_WITHOUT_LATER_RECEIPT'
+          orphan=next(x for x in gap['orphan_records'] if x['id']=='C36-ORPHAN-20220727-AC-REPORT-5367')
+          assert orphan['status']=='PRINCIPAL_DOCUMENT_NOT_LOCATED'
+          correction=' '.join(gap['gap_corrections']).lower()
+          assert '19-jun-2018' in correction and '7-jun' in correction and 'not evidence of formal court notice' in correction
+          assert '24-feb-2021' in correction and 'adverse judicial response' in correction
+          assert len(gap['gap_corrections'])>=6
+          assert len(gap['open_points_replace'])>=10
+          open_text=' '.join(gap['open_points_replace']).lower()
+          for required in ['4-jul-2022','queja 375/2022','28-jul-2022','7-jun-2018','funded-exit','5367/2022','certified electronic chronological index']:
+              assert required in open_text, required
+          blob=json.dumps(reg,ensure_ascii=False)+json.dumps(sup,ensure_ascii=False)+json.dumps(gap,ensure_ascii=False)
           for needle in [
-              '202210473582179','1202210474270428','202210476786626','1202210481753993','1202210482293471',
-              '375/2022','379/2022','A05003250-35d4ff0c0b259734c5ea7dc69411669385141492',
-              'A05003250-3587babc6df3d2dbfc90404de381669892710841','A05003250-35188b05fa34b49034efd3977fe1657718796252',
-              'A05003250-3520a62213f4ca3ac1e1ed1cecb1657801330688'
-          ]:
-              assert needle in blob, needle
-          assert any(r.get('response_taxonomy')=='PROTECTIVE_RESPONSE' for r in sup['records'])
-          for path in ['CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md','assets/concurso36-court-record-reconstruction.js','es/concurso-36-2012-registro-procesal/index.html','en/insolvency-36-2012-court-record/index.html']:
-              assert (root/path).exists(), path
+              '1202210470528468','202210511075435','81e65b9615269c4da8af95989d831c18ce258531747518baacfdd85424d80fc6',
+              '1201810216187332','A05003250-354b4c6e25db6943f7e4d268be71614172280325','202110427187708',
+              'fa790da25b3059671458564751003635714b9c4e14cf0c50e69921bd3bcacf6d','202210489569008','P12QU27'
+          ]: assert needle in blob, needle
+          for path in [
+              'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md','assets/concurso36-court-record-reconstruction.js',
+              'es/concurso-36-2012-registro-procesal/index.html','en/insolvency-36-2012-court-record/index.html',
+              'archive/CONCURSO36_COURT_RECORD_GAPCLOSE2_CONTINUITY_29AUG2026.md'
+          ]: assert (root/path).exists(), path
           handoff=(root/'CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md').read_text()
-          for phrase in ['filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation','Auto 308/2022','Queja 379/2022','Recommended short prompt for a new thread']:
-              assert phrase in handoff, phrase
-          assert man['primary_registry']=='assets/data/concurso36-court-record-reconstruction-v1.json'
-          assert 'assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json' in man['supplements']
-          assert man['current_rendered_node_count'] >= 20
-          print('court-record reconstruction + AP/revision controls OK')
+          for phrase in [
+              'filing -> verified receipt -> court/LAJ act -> service -> review/appeal -> finality -> implementation',
+              '37 controlled/corroborated nodes','Auto 308/2022','Queja 379/2022',
+              '29-Jul-2021 Aweswell RICPE paper is not a verified 2021 court filing','Recommended short prompt for a new thread'
+          ]: assert phrase in handoff, phrase
+          assert oldman['primary_registry']=='assets/data/concurso36-court-record-reconstruction-v1.json'
+          assert oldman['current_state']=='DEPLOYED'
+          assert newman['publication_id']=='concurso36-court-record-gapclose2-20260829'
+          assert newman['controlled_node_count_after_merge']==37
+          assert newman['current_state'] in {'PREPARED_PENDING_MERGE','PR_OPEN','CI_GREEN','MERGED','DEPLOYED','LIVE_VERIFIED','DELETION_SAFE'}
+          print('court-record reconstruction gapclose2: 37 controlled/corroborated nodes OK')
           PY
