@@ -1,0 +1,53 @@
+{
+  "schema": "por-derecho.concurso36-court-filings-response-harm.v1",
+  "control_date": "2026-08-29",
+  "baseline_main_sha": "93f72becd86df3ab41712f76916d5f7a8ea9b4dd",
+  "located_docket_discovery_rows": ">600",
+  "certified_complete_docket": false,
+  "p0_open_family_count": 9,
+  "p1_open_family_count": 2,
+  "response_states": [
+    "FAVOURABLE_OR_PROTECTIVE_ORDER_LOCATED",
+    "RESPONSIVE_ORDER_LOCATED",
+    "ADVERSE_OR_CONTRARY_ORDER_LOCATED",
+    "PROCEDURAL_RECEIPT_ONLY_LOCATED",
+    "PARTIAL_RESPONSE_LOCATED",
+    "NO_RESPONSIVE_RULING_LOCATED_IN_CONTROLLED_CORPUS",
+    "PREPARED_OR_RAISED__FILING_NOT_LOCATED",
+    "SIGNED_FOR_PRESENTATION__SEALED_COPY_NOT_YET_LOCATED",
+    "PENDING_FAMILY_RECONCILIATION"
+  ],
+  "public_routes": {
+    "es": "/es/concurso-36-2012-escritos-respuesta-judicial/",
+    "en": "/en/concurso-36-2012-filings-judicial-response/"
+  },
+  "docket_discovery_register": "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md",
+  "control_matrix": "archive/CONCURSO36_COURT_FILINGS_JUDICIAL_RESPONSE_HARM_MATRIX_29AUG2026.md",
+  "key_families": [
+    {"date":"2018-06-04","state":"ADVERSE_OR_CONTRARY_ORDER_LOCATED","summary":"LPB requested prior AC calculation of secured-credit amounts; signed Auto instead used CAM 17 May figures and rejected Aweswell pre-offer due-diligence condition."},
+    {"date":"2018-06-07","state":"PREPARED_OR_RAISED__FILING_NOT_LOCATED","summary":"Physical access/control event is contemporaneously documented; equivalent Mercantile takeover/preservation LexNET filing has not been located in the targeted sweep."},
+    {"date":"2018-06-13","state":"PREPARED_OR_RAISED__FILING_NOT_LOCATED","summary":"Counsel account records funded conclusion and parallel better-offer route discussed with Judge; no corresponding formal conclusion filing/receipt yet located."},
+    {"date":"2018-06-26","state":"FAVOURABLE_OR_PROTECTIVE_ORDER_LOCATED","summary":"Docket register records suspension of realisation of identified fincas while other estate liquidation could continue."},
+    {"date":"2021-01-13","state":"ADVERSE_OR_CONTRARY_ORDER_LOCATED","summary":"Providencia attributed active-estate conservation to AC and denied Aweswell request."},
+    {"date":"2021-07-08","state":"FAVOURABLE_OR_PROTECTIVE_ORDER_LOCATED","summary":"Court required detailed AC liquidation reporting and warned of potential responsibility for reporting failure."},
+    {"date":"2025-03-04","state":"SIGNED_FOR_PRESENTATION__SEALED_COPY_NOT_YET_LOCATED","summary":"Signed ES06-01 Impulso Procesal y Denuncia located as sent for presentation in Concurso 36/2012; sealed copy not located in targeted sweep."}
+  ],
+  "harm_controls": {
+    "physical_condition": "9 July 2018 photographs document visible condition only; named-person causation is not established by photographs.",
+    "active_estate": "Investigate estate-value erosion, recovery routes, bid architecture, accounting and final treasury without assigning total causation by inference.",
+    "productive_unit": "Test effects on operational continuity, customers, access/security, refurbishment, investor diligence and funded-exit routes.",
+    "extra_insolvency": "Keep Aweswell, Matkator, CEXP, Pink, other owners and Community rights distinct from LPB estate unless source/title proves otherwise."
+  },
+  "overreach_rule": "Test where a power valid within LPB's insolvency perimeter allegedly produced effects on non-LPB property, possession, operation, contracts or third-party rights; do not assume external rights belonged to the estate or that every external effect was unlawful.",
+  "wording_rule": "NO_RESPONSIVE_RULING_LOCATED_IN_CONTROLLED_CORPUS is a corpus limitation and must not be rewritten as a factual statement that the judge ignored a filing.",
+  "highest_leverage_open_targets": [
+    "underlying AC report filed as 5367/2022",
+    "15th quarterly liquidation report",
+    "final accounts/rendicion through conclusion and implementation",
+    "Mercantile takeover/preservation filing if one existed",
+    "formal funded-conclusion/better-offer filing if one existed",
+    "CEXP receivable/recovery filing if one existed",
+    "sealed receipt for ES06-01 dated 4 March 2025",
+    "official signed/electronic chronological docket denominator"
+  ]
+}
