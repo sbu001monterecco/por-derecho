@@ -1,0 +1,427 @@
+{
+  "schema": "concurso36-multitrack-asset-lives-v1",
+  "generated": "2026-08-29",
+  "scope": "Public evidence-led crosswalk for Insolvency 36/2012. Not a certified docket and not a judicial finding of wrongdoing.",
+  "evidence_rules": [
+    "A filing proves that a position/request was put before the proceeding to the extent filing/receipt can be verified; it does not prove every allegation in it.",
+    "No specific responsive or authorising order located is a documentary gap, not proof that no order existed.",
+    "Adverse judicial treatment is reported separately from any allegation of judicial failure or liability.",
+    "Causation between control change, estate diminution, productive-unit disruption and later commercial use remains to be proved asset-by-asset.",
+    "LPB's insolvency perimeter does not itself supply title or authority over Matkator or other third-party property.",
+    "RICPE and media materials are used to compare stated ownership/project perimeter at different dates; inconsistencies are verification points, not findings of fraud."
+  ],
+  "recovered_primary_supplement": [
+    {
+      "id": "C36-RP-2018-04-24-LPB-CLARIFICATION",
+      "date": "2018-04-24",
+      "class": "party_filing",
+      "actor": "Luchy Playa Blanca, S.L.U. / representation",
+      "document": "SOLICITUD DE ACLARACIÓN — Concurso 36/2012",
+      "verification": "LexNET transmission/filing copy located in contemporaneous email chain",
+      "relevance": "Challenges/clarifies implementation of the 16 April 2018 liquidation-plan approval before the 7 June control event.",
+      "canonical_status": "Recovered primary supplement; reconcile into certified/canonical denominator.",
+      "relevance_es": "Impugna/aclara la ejecución del Auto de 16 abril antes del episodio de control de 7 junio.",
+      "relevance_en": "Challenges/clarifies implementation of the 16 April 2018 liquidation-plan approval before the 7 June control event."
+    },
+    {
+      "id": "C36-RP-2018-04-24-AWESWELL-CLARIFICATION",
+      "date": "2018-04-24",
+      "class": "party_filing",
+      "actor": "Aweswell Limited / representation",
+      "document": "Escrito de aclaración del auto aprobatorio del plan de liquidación",
+      "verification": "Complete filing copy located in contemporaneous Cuatrecasas/procurador chain",
+      "relevance": "Records objections/clarifications concerning the liquidation mechanics and competing/funded alternatives.",
+      "canonical_status": "Recovered primary supplement; receipt metadata to bind where not already canonical.",
+      "relevance_es": "Registra objeciones y aclaraciones sobre la mecánica de liquidación y alternativas financiadas.",
+      "relevance_en": "Records objections/clarifications concerning the liquidation mechanics and competing/funded alternatives."
+    },
+    {
+      "id": "C36-RP-2018-06-04-INTERESTS-OPPOSITION",
+      "date": "2018-06-04",
+      "class": "party_filing",
+      "actor": "LPB / representation",
+      "document": "OPOSICIÓN A LA PROPUESTA DE LIQUIDACIÓN DE INTERESES",
+      "verification": "LexNET filing copy located; contemporaneous transmittal confirms filing",
+      "relevance": "Immediately precedes the 4 June judicial determination and 7 June material-control episode; relevant to secured-credit quantum and enforcement perimeter.",
+      "canonical_status": "Recovered primary supplement; reconcile with 4 June order and finality.",
+      "relevance_es": "Inmediatamente anterior al Auto de 4 junio y a 7 junio; afecta cuantía del crédito privilegiado y perímetro de ejecución.",
+      "relevance_en": "Immediately precedes the 4 June judicial determination and 7 June material-control episode; relevant to secured-credit quantum and enforcement perimeter."
+    },
+    {
+      "id": "C36-RP-2021-07-21-CAM-RICPE",
+      "date": "2021-07-21",
+      "class": "party_filing",
+      "actor": "Construcciones Acosta Matos, S.A.",
+      "document": "Alegaciones en Sección 5ª aportando certificación RIC Private Equity",
+      "verification": "Complete four-page filing located",
+      "relevance": "CAM states it owns only 54 Sun Park units and that its insolvency rights derive from secured-creditor status over LPB units; it files a RICPE certification addressing the contemplated Sun Park project.",
+      "canonical_status": "Recovered primary supplement; add to filing denominator after deduplication.",
+      "relevance_es": "CAM afirma ante el Juzgado que sólo posee 54 unidades y aporta la certificación RICPE sobre el Proyecto Sun Park.",
+      "relevance_en": "CAM states it owns only 54 Sun Park units and that its insolvency rights derive from secured-creditor status over LPB units; it files a RICPE certification addressing the contemplated Sun Park project."
+    }
+  ],
+  "multitrack": [
+    {
+      "track": "T1",
+      "title_es": "Escritos y conocimiento procesal",
+      "title_en": "Filings and procedural notice",
+      "sequence": [
+        "16 Apr 2018 liquidation-plan approval",
+        "24 Apr 2018 LPB/Aweswell clarification filings",
+        "Apr–May 2018 CAM/Matos responses and further submissions",
+        "4 Jun 2018 opposition on interest liquidation",
+        "4 Jun 2018 adverse judicial determination on interest-quantification issue",
+        "7 Jun 2018 contemporaneous material-control/takeover reporting",
+        "2021 repeated filings/reposition activity on access, works, estate protection and new documents",
+        "21 Jul 2021 CAM filing with RICPE certification"
+      ],
+      "judicial_response_test": "For each filing bind receipt → transfer/service → order/DIOR/providencia → appeal → finality → implementation. Do not use 'ignored' where only a missing response chain is shown."
+    },
+    {
+      "track": "T2",
+      "title_es": "7 junio 2018 — autoridad y control material",
+      "title_en": "7 June 2018 — authority and material control",
+      "documented": "Contemporaneous material records report forced/material change of control, access/security/locks and exclusion issues at Sun Park.",
+      "court_gap": "No specific order authorising the 7 June physical-control episode has been identified in the current controlled record.",
+      "failure_test": "If prior court knowledge/objections and later notice are proved, test what preservation, restoration, inspection, inventory, accounting or access-protection measures were ordered and implemented."
+    },
+    {
+      "track": "T3",
+      "title_es": "Masa activa",
+      "title_en": "Active estate",
+      "objects": [
+        "LPB-owned fincas and associated rights",
+        "fruits/income and receivables",
+        "value of continued occupation/use",
+        "claims and recovery rights",
+        "funded-exit value/opportunity",
+        "sale/adjudication proceeds and restitution/accounting"
+      ],
+      "failure_test": "Asset-by-asset: opening value → control/occupation → income/fruits → works/deterioration → proposed exits → realised value → unexplained delta. Attribute actor, authority, causation and quantum."
+    },
+    {
+      "track": "T4",
+      "title_es": "Unidad productiva",
+      "title_en": "Productive unit",
+      "objects": [
+        "hotel operation and continuity",
+        "reservations/data/customer pipeline",
+        "operating contracts and services",
+        "licences/permissions where transferable",
+        "revenue stream and goodwill",
+        "staff/operational organisation",
+        "ability to preserve or sell a going concern"
+      ],
+      "failure_test": "Separate business/operating components from bare real estate; identify who owned/controlled each component before and after 7 June 2018 and what court/AC protection existed."
+    },
+    {
+      "track": "T5",
+      "title_es": "Daño extraconcursal",
+      "title_en": "Extra-insolvency harm",
+      "objects": [
+        "Matkator fincas/rights",
+        "18 third-party fincas identified in the RICPE certification",
+        "other non-LPB ownership or possessory rights",
+        "autonomous income/use/damage claims outside LPB"
+      ],
+      "failure_test": "For each third-party asset identify legal basis, if any, for access/control/works/use; do not treat the LPB concurso as substitute title."
+    },
+    {
+      "track": "T6",
+      "title_es": "RIC / RICPE — vida inversora del mismo activo",
+      "title_en": "RIC / RICPE — investor life of the same asset",
+      "documented_comparison": [
+        "11 Nov 2020 webinar: Sun Park presented as a 220-apartment project to be transformed into a four-star hotel with €12m investment, works forecast Q1 2021, within CAM's three tourism-renovation projects.",
+        "The webinar also contains a broader statement that the three complexes had been purchased with own funds and were free of mortgages; the controlled record requires testing whether that statement was intended to encompass Sun Park in its then-current legal perimeter.",
+        "19 Jun 2021 El Día article: RICPE expected to finance renovation of Sun Park once the judicial adjudication order for various units became final.",
+        "20 Jul 2021 RICPE certification: 262-finca perimeter split as CAM 54; LPB estate 159 apartments + 28 commercial units + reception + 2 pools/solaria; 18 third-party fincas. Project remained initial and conditional because CAM had not acquired the LPB assets and no letter of intent/full due diligence had occurred.",
+        "21 Jul 2021 CAM filing: CAM itself tells the insolvency court it owns only 54 units and its remaining insolvency rights derive from secured-creditor status."
+      ],
+      "failure_test": "Compare market/investor presentation with court-record title, security, finality and possession at each date. Divergence is a verification issue; do not infer fraud without further evidence."
+    }
+  ],
+  "parallel_asset_lives": [
+    {
+      "asset": "159 LPB apartments subject to CAM secured-credit position",
+      "life_1": "LPB registered/estate property within Concurso 36/2012",
+      "life_2": "Collateral supporting CAM privileged-credit position",
+      "life_3": "Object of liquidation/adjudication mechanics and competing-offer litigation",
+      "life_4": "Affected by practical access/control and whole-complex operations after 7 June 2018, subject to authority reconstruction",
+      "life_5": "Core input to the contemplated RICPE four-star-hotel rehabilitation project before title transfer was final",
+      "life_6": "Later adjudication/redevelopment/operation track to be reconciled with final title, accounting and asset-condition records",
+      "asset_es": "159 apartamentos LPB afectados por la posición de crédito privilegiado de CAM",
+      "asset_en": "159 LPB apartments subject to CAM secured-credit position",
+      "lives_es": [
+        "Propiedad registral/activo de LPB dentro del Concurso 36/2012",
+        "Garantía vinculada a la posición de acreedor privilegiado de CAM",
+        "Objeto de la mecánica de liquidación/adjudicación y de litigación sobre ofertas alternativas",
+        "Afectados por el control/acceso práctico del complejo tras 7 junio 2018, pendiente reconstrucción de autoridad",
+        "Núcleo del proyecto RICPE de transformación hotelera antes de que la transmisión fuese firme",
+        "Vida posterior de adjudicación/reforma/explotación que debe reconciliarse con título final, contabilidad y estado del activo"
+      ],
+      "lives_en": [
+        "LPB registered/estate property within Concurso 36/2012",
+        "Collateral supporting CAM privileged-credit position",
+        "Object of liquidation/adjudication mechanics and competing-offer litigation",
+        "Affected by practical access/control and whole-complex operations after 7 June 2018, subject to authority reconstruction",
+        "Core input to the contemplated RICPE four-star-hotel rehabilitation project before title transfer was final",
+        "Later adjudication/redevelopment/operation track to be reconciled with final title, accounting and asset-condition records"
+      ]
+    },
+    {
+      "asset": "28 LPB commercial units + reception + 2 pools/solaria",
+      "life_1": "LPB estate assets per RICPE certification",
+      "life_2": "Not described there as part of CAM's 159-apartment special-privilege collateral",
+      "life_3": "Subject to direct-sale / €400,000 mechanics described in the 2021 certification",
+      "life_4": "Part of the practical whole-hotel perimeter whose control/use must be separately authorised",
+      "life_5": "Included economically in a whole-hotel rehabilitation concept",
+      "life_6": "Requires separate sale, payment, restitution and accounting reconciliation",
+      "asset_es": "28 locales LPB + recepción + 2 piscinas/solárium",
+      "asset_en": "28 LPB commercial units + reception + 2 pools/solaria",
+      "lives_es": [
+        "Activos de la masa de LPB según certificación RICPE",
+        "No descritos allí como parte de la garantía especial sobre los 159 apartamentos",
+        "Sujetos a la mecánica de venta directa / 400.000 € descrita en 2021",
+        "Integrados físicamente en el perímetro hotelero cuyo control/uso requiere base jurídica propia",
+        "Incluidos económicamente en un concepto de rehabilitación del hotel completo",
+        "Exigen reconciliar venta, pago, restitución y contabilidad"
+      ],
+      "lives_en": [
+        "LPB estate assets per RICPE certification",
+        "Not described there as part of CAM's 159-apartment special-privilege collateral",
+        "Subject to direct-sale / €400,000 mechanics described in the 2021 certification",
+        "Part of the practical whole-hotel perimeter whose control/use must be separately authorised",
+        "Included economically in a whole-hotel rehabilitation concept",
+        "Requires separate sale, payment, restitution and accounting reconciliation"
+      ]
+    },
+    {
+      "asset": "54 CAM-owned Sun Park units",
+      "life_1": "Outside LPB estate as CAM-owned units",
+      "life_2": "Physical components of the same mixed-title complex",
+      "life_3": "Used as part of CAM's stated development perimeter",
+      "life_4": "Not a legal bridge by itself to LPB or third-party units",
+      "life_5": "Combined commercially with anticipated acquisition of LPB units in the RICPE project",
+      "life_6": "Later whole-hotel integration requires title/authority chronology",
+      "asset_es": "54 unidades propiedad de CAM",
+      "asset_en": "54 CAM-owned Sun Park units",
+      "lives_es": [
+        "Fuera de la masa de LPB por ser de CAM",
+        "Componentes físicos del mismo complejo de titularidad mixta",
+        "Parte del perímetro de desarrollo declarado por CAM",
+        "No constituyen por sí solas puente jurídico hacia las unidades de LPB o terceros",
+        "Combinadas comercialmente con la adquisición futura esperada de activos LPB en el proyecto RICPE",
+        "La integración hotelera posterior exige cronología de títulos y autoridad"
+      ],
+      "lives_en": [
+        "Outside LPB estate as CAM-owned units",
+        "Physical components of the same mixed-title complex",
+        "Used as part of CAM's stated development perimeter",
+        "Not a legal bridge by itself to LPB or third-party units",
+        "Combined commercially with anticipated acquisition of LPB units in the RICPE project",
+        "Later whole-hotel integration requires title/authority chronology"
+      ]
+    },
+    {
+      "asset": "18 third-party fincas",
+      "life_1": "Expressly identified by RICPE as owned by third parties",
+      "life_2": "Outside LPB estate",
+      "life_3": "Physically embedded in the same complex",
+      "life_4": "Potentially affected by whole-complex access, works, hotel operation and branding",
+      "life_5": "Commercially adjacent to the whole-project investment narrative",
+      "life_6": "Require independent authority/consent and separate damage analysis",
+      "asset_es": "18 fincas de terceros",
+      "asset_en": "18 third-party fincas",
+      "lives_es": [
+        "Identificadas expresamente por RICPE como propiedad de terceros",
+        "Fuera de la masa de LPB",
+        "Insertas físicamente en el mismo complejo",
+        "Potencialmente afectadas por acceso, obras, explotación y marca del hotel completo",
+        "Adyacentes comercialmente a la narrativa del proyecto integral",
+        "Requieren consentimiento/autoridad independiente y análisis separado de daños"
+      ],
+      "lives_en": [
+        "Expressly identified by RICPE as owned by third parties",
+        "Outside LPB estate",
+        "Physically embedded in the same complex",
+        "Potentially affected by whole-complex access, works, hotel operation and branding",
+        "Commercially adjacent to the whole-project investment narrative",
+        "Require independent authority/consent and separate damage analysis"
+      ]
+    },
+    {
+      "asset": "Sun Park productive/business perimeter",
+      "life_1": "Operating hotel/business components distinct from bare LPB real estate",
+      "life_2": "Practical control/access/security life after 7 June 2018",
+      "life_3": "Potential funded-exit/going-concern value in 2018",
+      "life_4": "RICPE redevelopment project life in 2020–2021",
+      "life_5": "Post-adjudication transformed-hotel operating life",
+      "life_6": "Requires reconciliation of revenue, contracts, licences, goodwill and third-party rights across periods",
+      "asset_es": "Perímetro productivo / empresarial Sun Park",
+      "asset_en": "Sun Park productive/business perimeter",
+      "lives_es": [
+        "Componentes de explotación distintos del mero inventario inmobiliario de LPB",
+        "Vida de acceso/control/seguridad práctica después de 7 junio 2018",
+        "Valor potencial como salida financiada / empresa en funcionamiento en 2018",
+        "Vida como proyecto de rehabilitación RICPE en 2020–2021",
+        "Vida posterior como hotel transformado y explotado",
+        "Debe reconciliar ingresos, contratos, licencias, goodwill y derechos de terceros por periodos"
+      ],
+      "lives_en": [
+        "Operating hotel/business components distinct from bare LPB real estate",
+        "Practical control/access/security life after 7 June 2018",
+        "Potential funded-exit/going-concern value in 2018",
+        "RICPE redevelopment project life in 2020–2021",
+        "Post-adjudication transformed-hotel operating life",
+        "Requires reconciliation of revenue, contracts, licences, goodwill and third-party rights across periods"
+      ]
+    }
+  ],
+  "representation_checkpoints": [
+    {
+      "date": "2020-11-11",
+      "source": "RIC PRIVATE EQUITY WEBINAR 11NOV2020.pdf",
+      "checkpoint": "Sun Park described as an old aparthotel / 220 tourist apartments for four-star conversion with €12m investment; works forecast Q1 2021.",
+      "status": "Primary recorded presentation; compare with title/finality at that date.",
+      "summary_es": "Sun Park se presenta como antiguo aparthotel / 220 apartamentos turísticos para convertir en hotel de 4 estrellas, con inversión de 12 M€ y obras previstas para T1 2021.",
+      "summary_en": "Sun Park described as an old aparthotel / 220 tourist apartments for four-star conversion with €12m investment; works forecast Q1 2021."
+    },
+    {
+      "date": "2021-06-19",
+      "source": "El Día — Dota RIC, lidera la reconstrucción de Canarias",
+      "checkpoint": "Expected Sun Park renovation financing was expressly conditional on finality of the judicial adjudication order for various units.",
+      "status": "Contemporaneous published article.",
+      "summary_es": "El artículo condiciona expresamente la financiación de la reforma de Sun Park a la firmeza del auto judicial de adjudicación de diversas unidades.",
+      "summary_en": "Expected Sun Park renovation financing was expressly conditional on finality of the judicial adjudication order for various units."
+    },
+    {
+      "date": "2021-07-20",
+      "source": "RICPE certification by Enrique Guerra Suárez",
+      "checkpoint": "RICPE states CAM had 54 units; LPB estate held 190 specified fincas/components; 18 belonged to third parties; project remained preliminary and conditional on CAM acquiring LPB assets.",
+      "status": "Signed/certified primary document located.",
+      "summary_es": "RICPE certifica: CAM 54 unidades; masa LPB 159 apartamentos + 28 locales + recepción + 2 piscinas/solárium; 18 fincas de terceros. El proyecto seguía preliminar y condicionado a que CAM adquiriese los activos LPB.",
+      "summary_en": "RICPE states CAM had 54 units; LPB estate held 190 specified fincas/components; 18 belonged to third parties; project remained preliminary and conditional on CAM acquiring LPB assets."
+    },
+    {
+      "date": "2021-07-21",
+      "source": "CAM filing in Section 5, Concurso 36/2012",
+      "checkpoint": "CAM states to the court that it was not sole owner, owned only 54 units, and had insolvency rights through its privileged-creditor position over LPB units.",
+      "status": "Complete primary court filing located.",
+      "summary_es": "CAM declara al Juzgado que no es propietaria única, que posee sólo 54 unidades y que sus demás derechos concursales derivan de su condición de acreedor privilegiado sobre unidades LPB.",
+      "summary_en": "CAM states to the court that it was not sole owner, owned only 54 units, and had insolvency rights through its privileged-creditor position over LPB units."
+    }
+  ],
+  "judicial_failure_matrix": [
+    {
+      "issue": "7 June 2018 physical/material control",
+      "safe_public_status": "Authority gap / protective-response chain not closed",
+      "what_is_proved": "Contemporaneous reporting/evidence exists and later proceedings repeatedly refer to access/control/works issues.",
+      "what_is_not_yet_proved": "A complete certified court chain showing exactly what the judge knew by when, every requested measure, and every responsive/non-responsive act.",
+      "next_closure": "Bind immediate notice/filing, proof of receipt, any traslado, AC position, court/LAJ response, inspection/access/accounting measure and implementation.",
+      "issue_es": "7 junio 2018 — control físico/material",
+      "status_es": "Vacío de autoridad / cadena de respuesta protectora no cerrada",
+      "proved_es": "Existe evidencia contemporánea del episodio y referencias posteriores a acceso, control y obras.",
+      "gap_es": "Falta una cadena judicial certificada completa de qué conoció el Juzgado, cuándo, qué medidas se pidieron y cada respuesta/ausencia.",
+      "next_es": "Unir aviso/escrito inmediato, recibo, traslado, posición AC, respuesta judicial/LAJ, inspección, acceso, contabilidad e implementación.",
+      "issue_en": "7 June 2018 physical/material control",
+      "status_en": "Authority gap / protective-response chain not closed",
+      "proved_en": "Contemporaneous reporting/evidence exists and later proceedings repeatedly refer to access/control/works issues.",
+      "gap_en": "A complete certified court chain showing exactly what the judge knew by when, every requested measure, and every responsive/non-responsive act.",
+      "next_en": "Bind immediate notice/filing, proof of receipt, any traslado, AC position, court/LAJ response, inspection/access/accounting measure and implementation."
+    },
+    {
+      "issue": "Masa activa preservation",
+      "safe_public_status": "Cumulative diminution thesis; judicial protection/accounting adequacy to test",
+      "what_is_proved": "The proceeding concerned LPB assets and later filings/orders engaged with disputed asset/control issues.",
+      "what_is_not_yet_proved": "Complete loss ledger and actor-specific judicial causation.",
+      "next_closure": "Estate ledger with opening value, income/fruits, occupation, deterioration/works, sale/adjudication value and recovery claims.",
+      "issue_es": "Preservación de la masa activa",
+      "status_es": "Tesis de disminución acumulativa; hay que medir la suficiencia de protección y contabilidad",
+      "proved_es": "El procedimiento afectaba activos LPB y posteriores escritos/resoluciones trataron cuestiones de activos/control.",
+      "gap_es": "Falta el ledger completo de pérdidas y la causalidad judicial individualizada.",
+      "next_es": "Construir ledger: valor inicial, frutos/ingresos, ocupación, obras/deterioro, salidas propuestas, valor realizado y reclamaciones.",
+      "issue_en": "Masa activa preservation",
+      "status_en": "Cumulative diminution thesis; judicial protection/accounting adequacy to test",
+      "proved_en": "The proceeding concerned LPB assets and later filings/orders engaged with disputed asset/control issues.",
+      "gap_en": "Complete loss ledger and actor-specific judicial causation.",
+      "next_en": "Estate ledger with opening value, income/fruits, occupation, deterioration/works, sale/adjudication value and recovery claims."
+    },
+    {
+      "issue": "Unidad productiva preservation",
+      "safe_public_status": "Continuity/destruction allegation; protection chain incomplete",
+      "what_is_proved": "Hotel/business continuity and funded alternatives were economically material.",
+      "what_is_not_yet_proved": "Ownership and judicial treatment of every operational component.",
+      "next_closure": "Productive-unit component ledger and court/AC decisions on continued operation, access, contracts, revenue and going-concern sale.",
+      "issue_es": "Preservación de la unidad productiva",
+      "status_es": "Alegación de ruptura/destrucción; cadena de protección incompleta",
+      "proved_es": "La continuidad hotelera y las alternativas financiadas tenían relevancia económica.",
+      "gap_es": "Falta titularidad y tratamiento judicial de cada componente operativo.",
+      "next_es": "Ledger de unidad productiva + decisiones AC/Juzgado sobre continuidad, acceso, contratos, ingresos y venta como going concern.",
+      "issue_en": "Unidad productiva preservation",
+      "status_en": "Continuity/destruction allegation; protection chain incomplete",
+      "proved_en": "Hotel/business continuity and funded alternatives were economically material.",
+      "gap_en": "Ownership and judicial treatment of every operational component.",
+      "next_en": "Productive-unit component ledger and court/AC decisions on continued operation, access, contracts, revenue and going-concern sale."
+    },
+    {
+      "issue": "Extraconcursal perimeter",
+      "safe_public_status": "Overreach test required asset-by-asset",
+      "what_is_proved": "RICPE certification itself identifies 18 third-party fincas; Matkator is not the debtor.",
+      "what_is_not_yet_proved": "Authority basis and quantified harm for each non-LPB right.",
+      "next_closure": "Third-party title/possession/consent/order/damage ledger.",
+      "issue_es": "Perímetro extraconcursal",
+      "status_es": "Prueba de sobreextensión activo por activo",
+      "proved_es": "RICPE identifica 18 fincas de terceros; Matkator no es la concursada.",
+      "gap_es": "Falta la base de autoridad y daño cuantificado de cada derecho no-LPB.",
+      "next_es": "Ledger separado de título, posesión, consentimiento/orden y daño para terceros.",
+      "issue_en": "Extraconcursal perimeter",
+      "status_en": "Overreach test required asset-by-asset",
+      "proved_en": "RICPE certification itself identifies 18 third-party fincas; Matkator is not the debtor.",
+      "gap_en": "Authority basis and quantified harm for each non-LPB right.",
+      "next_en": "Third-party title/possession/consent/order/damage ledger."
+    },
+    {
+      "issue": "RICPE / investor-facing parallel life",
+      "safe_public_status": "Documented perimeter divergence requiring reconciliation",
+      "what_is_proved": "2020 investor presentation and 2021 certification/court filing describe materially different stages and ownership conditions.",
+      "what_is_not_yet_proved": "Whether any representation was legally false, misleading, relied upon, funded, or caused damage.",
+      "next_closure": "Recover contemporaneous website brochure, investor pack, commitment/LOI records, due diligence, CNMV/AEAT/Government project files and money flows.",
+      "issue_es": "RICPE / vida paralela frente a inversores",
+      "status_es": "Divergencia documental de perímetro que exige reconciliación",
+      "proved_es": "La presentación de 2020 y la certificación/escrito judicial de 2021 describen fases y condiciones de titularidad materialmente distintas.",
+      "gap_es": "No está probado que ninguna manifestación fuese jurídicamente falsa, engañosa, financiada, causante de confianza o daño.",
+      "next_es": "Recuperar web/folleto, pack inversor, LOI/compromisos, due diligence, expedientes CNMV/AEAT/Gobierno y flujos de dinero.",
+      "issue_en": "RICPE / investor-facing parallel life",
+      "status_en": "Documented perimeter divergence requiring reconciliation",
+      "proved_en": "2020 investor presentation and 2021 certification/court filing describe materially different stages and ownership conditions.",
+      "gap_en": "Whether any representation was legally false, misleading, relied upon, funded, or caused damage.",
+      "next_en": "Recover contemporaneous website brochure, investor pack, commitment/LOI records, due diligence, CNMV/AEAT/Government project files and money flows."
+    }
+  ],
+  "gap_closure": [
+    "Reconcile recovered primary supplement records into concurso36-complete-record-v1.json after deduplication; preserve a source locator for each.",
+    "Obtain/locate certified chronological electronic index and per-piece court export to define the true filing denominator.",
+    "Close the 7 June 2018 court-notice chain from first filing/notification through response, protective measures, implementation and later accounting.",
+    "Build LPB estate ledger and productive-unit ledger with common asset IDs so every alleged loss is traceable across control, income, works, sale/adjudication and later use.",
+    "Build a separate Matkator/third-party ledger; never absorb third-party losses into LPB.",
+    "Reconcile 2020 RICPE webinar statements, 19 June 2021 article, 20 July certification and 21 July CAM court filing against registry title, mortgage/security status and adjudication finality at each date.",
+    "Locate RICPE letter-of-intent/commitment records, due-diligence opening records, project approval/idoneity records and any actual funding; until located, describe the Sun Park RICPE project as proposed/preliminary.",
+    "Reconcile the 2018 funded-exit offers (Stoneweg/Varia, ONA and others) against exact court receipt/treatment/finality and compare with the later RICPE project economics.",
+    "Reconcile final adjudication, €400,000 direct-sale mechanics, title transfer, possession, works, revenues and final insolvency accounting before asserting a complete causal loss.",
+    "Maintain the language rule: adverse act, partial treatment, response not located, authority not located, protective follow-up not located; reserve 'ignored' for a certified demonstrable non-response."
+  ],
+  "display": {
+    "recovered_intro": {
+      "es": "Suplemento de escritos primarios recuperados fuera del denominador canónico de 34 escritos. Deben deduplicarse e incorporarse al catálogo maestro; su existencia demuestra que 34 no es todavía el total defendible.",
+      "en": "Supplement of recovered primary filings outside the former 34-filing canonical denominator. They must be deduplicated and incorporated into the master catalogue; their existence proves that 34 is not yet a defensible total."
+    },
+    "parallel_intro": {
+      "es": "La misma finca, derecho o unidad económica puede tener varias vidas simultáneas: activo de LPB, garantía hipotecaria, objeto de liquidación, componente bajo control material, proyecto de inversión y activo de una operación hotelera posterior. La comparación no presume ilicitud; obliga a reconciliar título, autoridad, posesión, financiación e ingresos en cada fecha.",
+      "en": "The same unit, right or economic component can have several simultaneous lives: LPB estate asset, secured collateral, liquidation object, component under material control, investment project and later hotel-operating asset. The comparison does not presume illegality; it requires title, authority, possession, financing and revenue to be reconciled at each date."
+    },
+    "ric_intro": {
+      "es": "RICPE permite comparar en tiempo real lo que se decía al mercado/inversores con lo que después se certificó y se presentó al propio Juzgado. Las diferencias son puntos de verificación, no conclusiones de fraude.",
+      "en": "RICPE allows a time-specific comparison between what was said to the market/investors and what was later certified and filed in the insolvency court. Differences are verification points, not findings of fraud."
+    }
+  }
+}
