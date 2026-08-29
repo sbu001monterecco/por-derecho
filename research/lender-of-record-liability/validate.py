@@ -19,6 +19,7 @@ ALLOWED_STATUS = {
     "verified_primary",
     "verified_official",
     "documented_party_statement",
+    "documented_corporate_statement",
     "corroborated_inference",
     "contested",
     "missing_primary",
@@ -26,6 +27,7 @@ ALLOWED_STATUS = {
 }
 ALLOWED_PUBLICATION = {
     "public_safe",
+    "public_safe_minimized",
     "internal_only",
     "privilege_review",
     "do_not_publish",
