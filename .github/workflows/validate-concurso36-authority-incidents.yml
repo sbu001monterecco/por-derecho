@@ -1,0 +1,128 @@
+name: Validate Concurso36 authority and incident governance
+
+on:
+  pull_request:
+    paths:
+      - 'CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md'
+      - 'CONCURSO36_CONTROLLING_CONCLUSIONS_29AUG2026.md'
+      - 'assets/data/concurso36-community-authority-matrix-20260829.json'
+      - 'assets/concurso36-arrecife-crosslinks-20260829.js'
+      - 'assets/site.js'
+      - 'en/insolvency-36-2012-community-authority/**'
+      - 'es/concurso-36-2012-autoridad-comunidad/**'
+      - 'en/insolvency-36-2012-piece-7-garrigues/**'
+      - 'es/concurso-36-2012-pieza-7-garrigues/**'
+      - 'en/insolvency-36-2012-piece-8-monterecco-contract/**'
+      - 'es/concurso-36-2012-pieza-8-contrato-monterecco/**'
+      - 'en/insolvency-36-2012-arrecife-mercantile-bridge/**'
+      - 'es/concurso-36-2012-puente-arrecife-mercantil/**'
+      - 'en/insolvency-36-2012-continuity-governance-7-june/**'
+      - 'es/concurso-36-2012-continuidad-gobernanza-7-junio/**'
+      - 'sitemap-concurso36-controlling-conclusions.xml'
+      - '.github/workflows/validate-concurso36-authority-incidents.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/data/concurso36-community-authority-matrix-20260829.json'
+      - 'assets/concurso36-arrecife-crosslinks-20260829.js'
+      - 'assets/site.js'
+      - 'en/insolvency-36-2012-community-authority/**'
+      - 'es/concurso-36-2012-autoridad-comunidad/**'
+      - 'en/insolvency-36-2012-piece-7-garrigues/**'
+      - 'es/concurso-36-2012-pieza-7-garrigues/**'
+      - 'en/insolvency-36-2012-piece-8-monterecco-contract/**'
+      - 'es/concurso-36-2012-pieza-8-contrato-monterecco/**'
+      - 'en/insolvency-36-2012-arrecife-mercantile-bridge/**'
+      - 'es/concurso-36-2012-puente-arrecife-mercantil/**'
+      - 'sitemap-concurso36-controlling-conclusions.xml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate canonical matrix, pages and links
+        run: |
+          node --check assets/site.js
+          node --check assets/concurso36-arrecife-crosslinks-20260829.js
+          python3 -m json.tool assets/data/concurso36-community-authority-matrix-20260829.json >/dev/null
+          python3 - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          matrix = json.loads(Path('assets/data/concurso36-community-authority-matrix-20260829.json').read_text(encoding='utf-8'))
+          required = set(matrix['required_fields'])
+          assert matrix['governance']['rule'] == 'AUTHORITY BEFORE ARITHMETIC'
+          assert 'NOT LOCATED' in matrix['governance']['absence_rule']
+          assert len(matrix['rows']) >= 8
+          for i, row in enumerate(matrix['rows']):
+              missing = required - set(row)
+              assert not missing, (i, sorted(missing))
+              assert row['actor_entity']
+              assert row['evidence_status']
+
+          pages = {
+              'en_authority': Path('en/insolvency-36-2012-community-authority/index.html'),
+              'es_authority': Path('es/concurso-36-2012-autoridad-comunidad/index.html'),
+              'en_p7': Path('en/insolvency-36-2012-piece-7-garrigues/index.html'),
+              'es_p7': Path('es/concurso-36-2012-pieza-7-garrigues/index.html'),
+              'en_p8': Path('en/insolvency-36-2012-piece-8-monterecco-contract/index.html'),
+              'es_p8': Path('es/concurso-36-2012-pieza-8-contrato-monterecco/index.html'),
+              'en_bridge': Path('en/insolvency-36-2012-arrecife-mercantile-bridge/index.html'),
+              'es_bridge': Path('es/concurso-36-2012-puente-arrecife-mercantil/index.html'),
+              'en_continuity': Path('en/insolvency-36-2012-continuity-governance-7-june/index.html'),
+              'es_continuity': Path('es/concurso-36-2012-continuidad-gobernanza-7-junio/index.html'),
+          }
+          text = {k: p.read_text(encoding='utf-8') for k,p in pages.items()}
+
+          assert '8 FEBRUARY 2018' in text['en_authority'] and 'NOT CHANGE THE AMOUNT' in text['en_authority']
+          assert '8 FEBRUARY 2018' in text['en_continuity'] and 'NOT CHANGE THE AMOUNT' in text['en_continuity']
+          assert '8 FEBRERO 2018' in text['es_authority'] and 'NOT CHANGE THE AMOUNT' in text['es_authority']
+          assert 'NOT CHANGE THE AMOUNT' in text['es_continuity']
+
+          for key in ('en_p7','en_p8'):
+              assert '^ INCIDENT' in text[key]
+              assert '^ ALL ACTORS/PARTIES' in text[key]
+              assert 'NOT LOCATED' in text[key]
+          for key in ('es_p7','es_p8'):
+              assert '^ INCIDENTE' in text[key]
+              assert '^ TODAS LAS PARTES' in text[key]
+              assert 'NO LOCALIZ' in text[key]
+
+          bridge_markers_en = [
+              'DP 1132/2018', 'LexNET gap register', 'Piece 7', 'Piece 8',
+              'Comunidad authority / personación', 'Shadow / de-facto administration',
+              'Criminal evidence / prosecution map', 'Historical Article 176 conclusion route',
+              '7 June takeover chronology', 'AC conduct', 'Judge / Mercantile Court chronology'
+          ]
+          bridge_markers_es = [
+              'DP 1132/2018', 'Registro de gaps LexNET', 'Pieza 7', 'Pieza 8',
+              'Autoridad / personación Comunidad', 'Administración de hecho / shadow',
+              'Mapa probatorio / fiscal', 'Ruta histórica artículo 176',
+              'Cronología toma 7 junio', 'Conducta AC', 'Juez / Mercantil nº1'
+          ]
+          for marker in bridge_markers_en: assert marker in text['en_bridge'], marker
+          for marker in bridge_markers_es: assert marker in text['es_bridge'], marker
+
+          crosslinks = Path('assets/concurso36-arrecife-crosslinks-20260829.js').read_text(encoding='utf-8')
+          assert '/en/insolvency-36-2012-arrecife-mercantile-bridge/' in crosslinks
+          assert '/es/concurso-36-2012-puente-arrecife-mercantil/' in crosslinks
+          assert 'concurso36-arrecife-crosslinks-20260829.js' in Path('assets/site.js').read_text(encoding='utf-8')
+
+          ET.parse('sitemap-concurso36-controlling-conclusions.xml')
+          sitemap = Path('sitemap-concurso36-controlling-conclusions.xml').read_text(encoding='utf-8')
+          for route in (
+              'insolvency-36-2012-community-authority', 'concurso-36-2012-autoridad-comunidad',
+              'insolvency-36-2012-piece-7-garrigues', 'concurso-36-2012-pieza-7-garrigues',
+              'insolvency-36-2012-piece-8-monterecco-contract', 'concurso-36-2012-pieza-8-contrato-monterecco'
+          ):
+              assert route in sitemap, route
+          print('Concurso36 authority/incident governance OK')
+          PY
