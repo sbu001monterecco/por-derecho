@@ -1,0 +1,47 @@
+name: Validate Concurso 36/2012 linked continuity
+
+on:
+  pull_request:
+    paths:
+      - "CONCURSO36_CONTINUE_HERE.md"
+      - "archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md"
+      - "archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md"
+      - "archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md"
+      - "archive/MISSING_EVIDENCE_REGISTER_CONCURSO36_DECISION_CONTINUITY_ADDENDUM_28AUG2026.md"
+      - "archive/CONCURSO_36_2012_DOCKET_WIDE_DISCOVERY_PROMOTION_REGISTER_17AUG2026.md"
+      - "assets/data/concurso36-linked-continuity-20260829-v1.json"
+      - "en/insolvency-36-2012-continuity-control/index.html"
+      - "es/concurso-36-2012-control-continuidad/index.html"
+      - "sitemap-concurso36-court-orders.xml"
+      - "publication-manifests/concurso36-linked-continuity-20260829.json"
+      - "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md"
+      - "scripts/validate_concurso36_linked_continuity.py"
+      - ".github/workflows/validate-concurso36-linked-continuity.yml"
+  push:
+    branches: [main]
+    paths:
+      - "CONCURSO36_CONTINUE_HERE.md"
+      - "archive/CONCURSO36_DOCKET_CONTINUITY_RECONCILIATION_29AUG2026.md"
+      - "archive/MASTER_CONTINUATION_PROMPT_CONCURSO36_AND_LINKED_THREADS_29AUG2026.md"
+      - "archive/OTHER_THREAD_RECONCILIATION_QUEUE_29AUG2026.md"
+      - "assets/data/concurso36-linked-continuity-20260829-v1.json"
+      - "en/insolvency-36-2012-continuity-control/index.html"
+      - "es/concurso-36-2012-control-continuidad/index.html"
+      - "sitemap-concurso36-court-orders.xml"
+      - "publication-manifests/concurso36-linked-continuity-20260829.json"
+      - "docs/deletion-audits/2026-08-29-concurso36-linked-continuity.md"
+      - "scripts/validate_concurso36_linked_continuity.py"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate controlled continuity release
+        run: python -B scripts/validate_concurso36_linked_continuity.py
