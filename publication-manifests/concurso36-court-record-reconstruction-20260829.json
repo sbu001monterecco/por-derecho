@@ -1,0 +1,57 @@
+{
+  "schema":"por-derecho.publication-manifest.concurso36-court-record-reconstruction.v1.1",
+  "publication_id":"concurso36-court-record-reconstruction-20260829",
+  "date":"2026-08-29",
+  "baseline_main":"4b437dbee5ee979b9e3a9868ecd7d0e37505b181",
+  "branch":"codex/concurso36-court-record-reconstruction-20260829",
+  "current_state":"PR_OPEN",
+  "owner":"sbu001monterecco",
+  "expected_routes":{
+    "es":["es/concurso-36-2012-registro-procesal/index.html"],
+    "en":["en/insolvency-36-2012-court-record/index.html"]
+  },
+  "expected_source_files":[
+    "assets/data/concurso36-court-record-reconstruction-v1.json",
+    "assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json",
+    "assets/concurso36-court-record-reconstruction.js",
+    "CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md",
+    "archive/CONCURSO36_COURT_RECORD_RECONSTRUCTION_CONTINUITY_29AUG2026.md"
+  ],
+  "status":"CONTROLLED_RECONSTRUCTION_WITH_2022_APPELLATE_SUPPLEMENT",
+  "primary_registry":"assets/data/concurso36-court-record-reconstruction-v1.json",
+  "supplements":["assets/data/concurso36-court-record-reconstruction-2022-appellate-supplement.json"],
+  "continuity_entry":"CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md",
+  "public_routes":[
+    "/es/concurso-36-2012-registro-procesal/",
+    "/en/insolvency-36-2012-court-record/"
+  ],
+  "renderer":"assets/concurso36-court-record-reconstruction.js",
+  "first_closed_family":"C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS",
+  "current_rendered_node_count":20,
+  "2022_closure_state":[
+    "LPB appellate docket controlled as AP Seccion Cuarta Queja 375/2022; signed 18-Apr scheduling providencia controlled; later signed AP Auto 109/2022 cross-references a 4-Jul-2022 Auto in the same adverse legal sense; exact signed 4-Jul Auto still missing.",
+    "Aweswell appellate docket controlled as AP Seccion Cuarta Queja 379/2022; deposit cure and deliberation-ready status controlled; Auto 109/2022 of 24-Nov dismisses queja; 30-Nov DIOR records finality/archive.",
+    "LPB and Aweswell direct revision applications against the April Decretos are now documented; LPB admitted 2-Jun, Aweswell admitted 14-Jul after Auto 308/2022 annulled a mistaken 16-Jun deposit-based inadmission."
+  ],
+  "required_boundaries":[
+    "not a certified court docket",
+    "response-not-located is not ignored",
+    "adverse decision is not criminal misconduct",
+    "procedural rejection is not merits adjudication",
+    "protective/corrective counterweights remain visible",
+    "no silent canonical promotion",
+    "LPB, Matkator and third-party rights remain distinct"
+  ],
+  "next_p0":[
+    "exact signed LPB AP Auto of 4-Jul-2022 plus service/finality",
+    "LPB exact AP LexNET queja filing receipt/principal",
+    "11-Feb and 14-Feb 2022 DIOR/testimonios/finality package",
+    "final judge outcomes of LPB/Aweswell direct revision applications",
+    "deed -> presentation -> registry implementation bridge",
+    "7-Jun-2018 physical-control court-notice filing/receipt",
+    "Feb-Oct-2021 protection/nullity/bid/RICPE family",
+    "funded-exit filing classification",
+    "certified electronic chronological index or equivalent per-piece export"
+  ],
+  "short_handoff_prompt":"Continue the autonomous Concurso 36/2012 court-record reconstruction from CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md. Close the next P0 filing/decision/notification families end-to-end, update the repository and bilingual site through PR/CI/Pages, preserve all evidence boundaries and continuity governance, and leave the project deletion-safe and ready for the next short handoff."
+}
