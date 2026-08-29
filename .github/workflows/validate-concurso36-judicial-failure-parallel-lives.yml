@@ -1,0 +1,32 @@
+name: Validate Concurso 36/2012 multitrack judicial-failure layer
+on:
+  push:
+    paths:
+      - 'assets/data/concurso36-multitrack-judicial-failure-parallel-lives-20260829.json'
+      - 'assets/data/concurso36-lexnet-supplement-20260829.json'
+      - 'assets/concurso36-judicial-failure-parallel-lives.js'
+      - 'es/concurso-36-2012-fallos-judiciales-vidas-paralelas/**'
+      - 'en/insolvency-36-2012-judicial-failures-parallel-lives/**'
+      - 'es/concurso-36-2012/index.html'
+      - 'en/insolvency-36-2012/index.html'
+      - 'scripts/validate_concurso36_judicial_failure_parallel_lives.py'
+      - '.github/workflows/validate-concurso36-judicial-failure-parallel-lives.yml'
+  pull_request:
+    paths:
+      - 'assets/data/concurso36-multitrack-judicial-failure-parallel-lives-20260829.json'
+      - 'assets/data/concurso36-lexnet-supplement-20260829.json'
+      - 'assets/concurso36-judicial-failure-parallel-lives.js'
+      - 'es/concurso-36-2012-fallos-judiciales-vidas-paralelas/**'
+      - 'en/insolvency-36-2012-judicial-failures-parallel-lives/**'
+      - 'es/concurso-36-2012/index.html'
+      - 'en/insolvency-36-2012/index.html'
+      - 'scripts/validate_concurso36_judicial_failure_parallel_lives.py'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/validate_concurso36_judicial_failure_parallel_lives.py
