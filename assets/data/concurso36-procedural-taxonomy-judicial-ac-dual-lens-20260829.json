@@ -1,0 +1,262 @@
+{
+  "schema": "por-derecho.concurso36.procedural-taxonomy-judicial-ac-dual-lens.v1",
+  "cutoff": "2026-08-29",
+  "status": "SOURCE-LED ADVERSARIAL REVIEW / EXISTING ALLEGATIONS — NOT AN ADJUDICATED CRIMINAL FINDING",
+  "scope": "Concurso 36/2012 procedural classification, definitive-text control, and cumulative judge/Insolvency-Administrator conduct analysis",
+  "declared_position": {
+    "es": "Posición declarada de Gil Marer/Aweswell: las preocupaciones y alegaciones sobre la actuación del juez del concurso no se limitan a una resolución ni a un error aislado. Se alega un patrón acumulativo de múltiples actos y omisiones potencialmente ilícitos, falta de neutralidad, trato asimétrico, posible favorecimiento/neutralización institucional y potencial prevaricación judicial, junto con quejas y comunicaciones ya promovidas ante el CGPJ y otras vías competentes. Esta posición es una alegación formal/contextual que debe investigarse actor por actor; no es por sí misma una declaración judicial de culpabilidad.",
+    "en": "Declared Gil Marer/Aweswell position: concerns and allegations about the insolvency judge are not limited to one decision or one isolated error. A cumulative pattern of multiple potentially unlawful acts and omissions, lack of neutrality, asymmetric treatment, possible institutional shielding/neutralisation and potential judicial prevarication is alleged, alongside complaints and communications already pursued before the CGPJ and other competent routes. This is formal allegation/history requiring actor-specific investigation; it is not itself an adjudicated finding of guilt."
+  },
+  "mandatory_dual_lens": {
+    "dry_law": {
+      "es": "Primero clasificar cada acto por la vía procesal histórica que realmente lo regía: incidente concursal, modificación de textos definitivos, plan/liquidación, aclaración/complemento/corrección, recurso, calificación, escrito ordinario de sección, realización/adjudicación, testimonio/firmeza o ejecución registral.",
+      "en": "First classify every act under the historical procedural route that actually governed it: insolvency incident, definitive-text modification, liquidation-plan/liquidation act, clarification/completion/correction, appeal/review, qualification proceedings, ordinary section filing, realisation/adjudication, testimony/finality or registry implementation."
+    },
+    "adversarial_misconduct": {
+      "es": "Después, y de forma independiente, someter al juez y al AC a una revisión adversarial: desviación o sustitución de vía, coherencia con resoluciones propias previas, contradicción, selección de la prueba o cálculo de una parte, igualdad de armas, pérdida/reducción de contradicción o recurso, conocimiento previo, protección de la masa y terceros, beneficiario/perjudicado, repetición, causalidad, explicación jurídica alternativa y elemento subjetivo cuando se examine una hipótesis penal.",
+      "en": "Then, independently, subject the judge and IA to adversarial review: departure from or substitution of procedural route, consistency with their own prior decisions, contradiction, selection of one party's evidence/calculation, equality of arms, loss/reduction of contradiction or review, prior knowledge, protection of the estate and third parties, beneficiary/harm, repetition, causation, alternative lawful explanation and subjective element when testing a criminal hypothesis."
+    },
+    "no_shortcuts": [
+      "Do not presume unexplained conduct benign merely because it is judicial/administrative conduct.",
+      "Do not infer criminality merely from an adverse outcome, legal error, inconsistency or benefit to another party.",
+      "Do not call an act an incidente concursal merely because it is important or contested.",
+      "Do not call a matter ignored when an adverse or partial response is located.",
+      "Preserve protective/corrective counterweights and contrary evidence in the same actor chronology."
+    ]
+  },
+  "legal_baseline": [
+    {
+      "rule": "Ley Concursal 22/2003, art. 192",
+      "point": "Incidente concursal is the channel for questions arising during the insolvency for which the Ley Concursal does not prescribe another procedure; it is not a synonym for every contested insolvency act."
+    },
+    {
+      "rule": "Ley Concursal 22/2003, arts. 97, 97 bis and 97 ter",
+      "point": "Post-final-text changes are controlled by specific grounds/procedure. Under art. 97 bis the IA report and transfer/opposition structure matters; an adverse IA report can lead the applicant to promote an incidente concursal."
+    },
+    {
+      "rule": "Ley Concursal 22/2003, art. 59",
+      "point": "Interest on secured claims may continue to the extent covered by the respective real security. Accrual/enforceability and formal modification of the definitive creditor list are analytically distinct questions and must be reconciled rather than collapsed."
+    },
+    {
+      "rule": "LEC arts. 214-215 / LOPJ art. 267",
+      "point": "Signed judicial decisions are invariant subject to the narrow clarification, correction and completion mechanisms; clarification is not a general substitute for a different substantive procedural route."
+    },
+    {
+      "rule": "Código Penal art. 446",
+      "point": "Judicial prevarication requires an unjust decision issued knowingly ('a sabiendas'). Legal departure/injustice and knowledge are separate elements to prove; an adverse decision alone is insufficient."
+    }
+  ],
+  "procedural_taxonomy": [
+    {
+      "class": "INCIDENTE_CONCURSAL",
+      "definition": "A formally opened/admitted incidental action governed by former LC arts. 192-196 or a specific LC provision routing the dispute to the incident.",
+      "proof_gate": "Caption/docket or admitting order plus claim/parties/object and resulting incidental judgment/order."
+    },
+    {
+      "class": "MODIFICACION_TEXTOS_DEFINITIVOS",
+      "definition": "Specific post-definitive-text modification route under former LC arts. 97/97 bis/97 ter.",
+      "proof_gate": "Application/ground + IA report + transfer/opposition/incident if applicable + signed modifying order + exact before/after entry + review/finality."
+    },
+    {
+      "class": "ACLARACION_CORRECCION_COMPLEMENTO",
+      "definition": "Narrow correction/clarification/completion route under LEC 214-215 and LOPJ 267.",
+      "proof_gate": "Original decision + clarification request/trigger + signed clarification/correction/completion order and its legally permitted scope."
+    },
+    {
+      "class": "PLAN_LIQUIDACION",
+      "definition": "Plan approval, amendment/implementation and liquidation mechanics under their own insolvency route.",
+      "proof_gate": "Plan/proposal + observations/objections + approval/implementation decision + asset/price/publicity/realisation controls."
+    },
+    {
+      "class": "RECURSO_REVISION",
+      "definition": "Reposición, apelación, queja, revisión, nulidad and related challenge routes.",
+      "proof_gate": "Challenged act + filed remedy/receipt + opposition + decision + finality/implementation."
+    },
+    {
+      "class": "CALIFICACION",
+      "definition": "The statutory qualification section/proceeding and its own pleadings, hearing, judgment and appeal route.",
+      "proof_gate": "Section-six procedural chain; do not relabel it as an incident simply because it is adversarial."
+    },
+    {
+      "class": "ESCRITO_O_INFORME_DE_SECCION",
+      "definition": "Ordinary party filing, IA report, DIOR/providencia or other section act that does not by itself open an incident.",
+      "proof_gate": "Filing/receipt/treatment; promote to another class only when the court record proves the corresponding procedural route."
+    },
+    {
+      "class": "REALIZACION_ADJUDICACION_IMPLEMENTACION",
+      "definition": "Offer/improvement, adjudication, deed, set-off, possession, registry and other liquidation implementation acts.",
+      "proof_gate": "Authority + exact assets + amount + conditions + finality + deed/registry/possession implementation."
+    },
+    {
+      "class": "TESTIMONIO_FIRMEZA",
+      "definition": "Court/LAJ certification and finality instruments used to evidence decisions for implementation.",
+      "proof_gate": "Request + issued testimony/certification + challenge if any + operative use."
+    }
+  ],
+  "why_material_acts_are_not_automatically_incidents": [
+    {
+      "act": "4 June 2018 Auto",
+      "classification": "ACLARACION_CORRECCION_COMPLEMENTO / PLAN_LIQUIDACION",
+      "reason": "The order expressly says it clarifies the 16 April liquidation-plan approval and invokes the non-appealability of clarification under LEC 214.4. It is not captioned or processed as an insolvency incident. Its substantive reach is precisely a legal issue to test; misclassifying it as an incident would obscure that issue."
+    },
+    {
+      "act": "Approval or clarification of the liquidation plan",
+      "classification": "PLAN_LIQUIDACION",
+      "reason": "The Ley Concursal provided a specific liquidation-plan route; LC 192 treats the incident as the residual channel where no other procedure is prescribed."
+    },
+    {
+      "act": "Reposición/apelación/queja/revisión/nullity challenges",
+      "classification": "RECURSO_REVISION",
+      "reason": "They are review/remedy mechanisms challenging another act, not new insolvency incidents unless the statute/court actually opens a separate incident."
+    },
+    {
+      "act": "Calificación proceedings",
+      "classification": "CALIFICACION",
+      "reason": "Qualification has its own statutory section/procedure. Adversarial character does not make it an incidente concursal."
+    },
+    {
+      "act": "Ordinary section filings and IA reports",
+      "classification": "ESCRITO_O_INFORME_DE_SECCION",
+      "reason": "They may trigger a response, transfer or even a later incident, but are not the incident themselves."
+    },
+    {
+      "act": "2021-22 offer/improvement/adjudication procedure",
+      "classification": "REALIZACION_ADJUDICACION_IMPLEMENTACION",
+      "reason": "This is liquidation/realisation implementation unless a specific dispute was separately routed into an admitted insolvency incident."
+    },
+    {
+      "act": "Production of testimonios",
+      "classification": "TESTIMONIO_FIRMEZA",
+      "reason": "A testimony/finality instrument certifies or implements decisions; it does not itself constitute an incidental lawsuit."
+    },
+    {
+      "act": "Later correction/clarification applications",
+      "classification": "ACLARACION_CORRECCION_COMPLEMENTO",
+      "reason": "They operate under LEC/LOPJ correction and completion rules, not the general incidental route."
+    }
+  ],
+  "verified_incidentes_concursales_located": [
+    {
+      "piece": "0000007/2012",
+      "date_decision": "2016-04-01",
+      "claimant": "Luchy Playa Blanca, S.L.",
+      "defendant": "Garrigues Abogados y Asesores Tributarios",
+      "caption": "Pz Incidente concursal impugnación inventario/lista de acreedores (Art 96.4)",
+      "object": "LPB sought exclusion of Garrigues' recorded ordinary and subordinated claims, alleging simulation/falsity/absence of real services.",
+      "result": "Claim dismissed; no costs because the judgment recorded legal/factual doubts.",
+      "status": "PRIMARY JUDGMENT LOCATED"
+    },
+    {
+      "piece": "0000008/2012",
+      "date_decision": "2015-11-24",
+      "claimant": "Administración Concursal",
+      "defendants": "Luchy Playa Blanca, S.L. and Monterecco Sun Park, S.L.",
+      "caption": "Pz Incidente concursal Resolución contrato por incumplimiento (Art 62 LC)",
+      "object": "Termination for non-payment of the lease concerning specified Sun Park assets, eviction/vacating and rent claim.",
+      "result": "Claim granted; lease terminated, vacating ordered, €2,733,923.64 plus interest/future rent and costs recorded in the judgment.",
+      "status": "PRIMARY JUDGMENT LOCATED"
+    }
+  ],
+  "community_fees_family": {
+    "status": "FORMAL FINAL-TEXT MODIFICATION VERIFIED; SEPARATE INCIDENTAL CASE NOT YET VERIFIED",
+    "date": "2017-01-20",
+    "route": "LC art. 97 bis definitive-text modification",
+    "initiating_position": "LPB objected/requested correction concerning the Community creditor treatment; the IA issued a favorable report; the report was transferred and no opposition was recorded in the located order.",
+    "operative_effect": "The judge expressly ordered modification of the definitive texts concerning the Comunidad de Propietarios Sun Park contingent ordinary pre-insolvency community-fee credit, without a self-standing quantified amount in the located order; post-insolvency community-fee treatment was not thereby transformed into the same item.",
+    "forensic_relevance": "This is a procedural comparator showing that when a definitive-text entry was formally changed, the record identified the statutory modification route and the judge expressly ordered the modification. If a separate Community-fee incidente concursal exists, it must be added only when the primary incidental docket/claim/decision is bound.",
+    "criminal_led_questions": [
+      "Who generated, certified and relied upon the Community fee/debt figures at each date?",
+      "Which underlying civil judgments or resolutions invalidated, limited or altered the fee basis?",
+      "What did the IA and court know about those judgments when later Community certificates were presented?",
+      "Was LPB estate treatment kept distinct from control exercised through the Community organ and from third-party title/rights?",
+      "Do later access, works, income, security or operational acts support the existing allegation that private Community/CAM actors exercised de facto or shadow control over LPB assets, and what actor-specific evidence establishes authority, knowledge, purpose and consequence?"
+    ]
+  },
+  "definitive_text_change_gate": {
+    "rule_es": "Por Derecho no registrará que el texto definitivo fue legalmente cambiado sólo porque aparece una cifra nueva en un certificado, cálculo, Auto de plan/aclaración, informe AC, escritura, testimonio o asiento contable.",
+    "rule_en": "Por Derecho will not record that the definitive texts were lawfully changed merely because a new number appears in a certificate, calculation, plan/clarification order, IA report, deed, testimony or accounting entry.",
+    "required_fields": [
+      "application/request and applicant",
+      "historical statutory gateway and qualifying ground",
+      "IA report and its position",
+      "transfer/opposition and incidental route where legally required",
+      "signed judicial decision expressly ordering modification",
+      "exact before/after creditor-list or inventory entry",
+      "service, remedy and finality",
+      "resulting corrected definitive list/inventory or equivalent implementation binding"
+    ]
+  },
+  "critical_4_june_2018_comparator": {
+    "8_february_2018": {
+      "status": "FORMAL DEFINITIVE-TEXT MODIFICATION ORDER",
+      "judge": "Alberto López Villarrubia",
+      "operative_rule": "The order states that assignment changes creditor identity but not amount; amount must remain what was recorded in the definitive texts.",
+      "recorded_special_privilege": "€857,373.81 + €8,194,877.88 = €9,052,251.69, plus contingent enforcement costs without a self-standing amount."
+    },
+    "4_june_2018": {
+      "status": "LIQUIDATION-PLAN CLARIFICATION — NOT VERIFIED AS INCIDENT OR DEFINITIVE-TEXT MODIFICATION",
+      "judge": "Alberto López Villarrubia",
+      "source_mechanics": "Rather than require the IA to make the prior interest calculation requested by LPB, the order relied on two CAM 17-May balance-fixing instruments and said those amounts should be followed without the prior requirement to the IA.",
+      "bid_threshold": "€11,887,314.33 + €1,278,518.03 = €13,165,832.36, plus continuing default interest to the extent of the respective mortgage security.",
+      "remedy_feature": "The dispositive portion classifies the act as clarification of the 16-April order and states no appeal under LEC 214.4.",
+      "user_position": "Gil Marer/Aweswell categorically disputes that this clarification was legally capable of amending the definitive texts or creating, by itself, a lawful €13m liquidation-payoff/set-off credit."
+    },
+    "dry_law_questions": [
+      "Did former LC art. 59 permit the particular ordinary/default interest used on 4 June to accrue and be exigible, item by item, within each mortgage-security ceiling?",
+      "Even if interest accrued under art. 59, was use of the resulting amount as an operative rival-bid/payoff threshold legally distinct from modification of the definitive creditor list?",
+      "Did LEC 214/LOPJ 267 permit the 4-June clarification to introduce this quantitative mechanism, or did it alter an essential term requiring another route/ordinary remedy?",
+      "Was Article 97/97 bis modification required for any change to the definitive creditor-list amount, and if so where is the order/chain?",
+      "How does the 4-June approach reconcile with the same judge's 8-February statement that assignment changes holder, not amount, and amount remains the definitive-text amount?"
+    ],
+    "adversarial_prevaricacion_bias_tests": [
+      "Route substitution: did clarification supply substantive relief/effect that the law required to travel through a different contradictory/remedial route?",
+      "Source asymmetry: why were CAM's own 17-May balance instruments treated as the operative amount instead of an IA reconciliation or judicially modified definitive-list entry?",
+      "Review asymmetry: did use of the clarification/non-appeal mechanism materially reduce LPB/Aweswell's ability to challenge a new operative threshold, while preserving CAM's economic position?",
+      "Prior-decision coherence: was the 4-June reasoning consciously inconsistent with the judge's own 8-February definitive-text rule, and if so was that inconsistency explained?",
+      "Knowledge: what did the judge know about the definitive-text amount, pending objections, lender-history, Community/private-control conflict and rescue routes when deciding?",
+      "Benefit/harm and causation: what concrete advantage, exclusionary threshold, loss of rescue optionality or estate effect followed from the €13.165m figure, and what intervening causes exist?",
+      "Pattern: does this act align with or cut against later adverse, protective and contradictory decisions when the full chronology is tested rather than cherry-picked?",
+      "Subjective element: what evidence, if any, supports knowledge that a resolution was unjust as required by CP 446, rather than error, disputed interpretation or another lawful explanation?"
+    ],
+    "counterweights_to_preserve": [
+      "Former LC art. 59 is a serious lawful counterargument for secured-interest accrual within the real-security limit and must be quantified rather than ignored.",
+      "The 26-June-2018 Auto suspended realisation of specified LPB mortgaged fincas while the appeal could affect dation conditions; this is a protective counterweight.",
+      "Other later corrective decisions, including the July-2022 deposit correction already controlled in the court-record reconstruction, must remain in the judge chronology."
+    ]
+  },
+  "cumulative_judge_ac_pattern_tests": [
+    {
+      "checkpoint": "2018-02-08 → 2018-06-04",
+      "test": "Definitive amount rule versus later clarification-based €13.165m operative threshold."
+    },
+    {
+      "checkpoint": "2018-05-02 → 2018-06-13",
+      "test": "Arrecife exhorto/response and actual institutional knowledge before/after the 7-June control event; identify what reached judge and AC and what protective response followed."
+    },
+    {
+      "checkpoint": "2018-06-07 onward",
+      "test": "Alleged private control/access/locks/security/operation affecting LPB and third-party perimeter; determine authority, AC response, judicial response, estate/productive-unit effect and later use."
+    },
+    {
+      "checkpoint": "2021-02-24",
+      "test": "Court expressly recorded works/access/masa allegations and denied requested protection. Review legal basis, evidentiary treatment, alternatives and subsequent consequences; do not call it silence."
+    },
+    {
+      "checkpoint": "2021-10-15",
+      "test": "Two same-date Autos contain verified textual tension: one says auction/adjudication occurred; another says the bidding event did not take place. Test explanation, correction, defence effect and implementation."
+    },
+    {
+      "checkpoint": "2022-01/04",
+      "test": "Correction, testimonios/finality, deed and registration chain: what unresolved challenges existed and how were they treated before implementation?"
+    }
+  ],
+  "complaint_context_governance": {
+    "rule": "CGPJ, prosecutorial and other complaint materials are maintained as an allegation-history/intelligence lane and linked to each matching judicial checkpoint. They do not prove the allegations merely because a complaint was filed.",
+    "known_context": [
+      "CGPJ Diligencia Informativa 169/2026 and associated supervisory/appeal communications are present in the connected evidentiary corpus.",
+      "Separate 2026 criminal/judicial complaint material concerning alleged judicial conduct in Concurso 36/2012 is present in the connected evidentiary corpus.",
+      "Future dry-law review must ask whether each newly controlled act was already identified in, contradicts, corroborates, narrows or materially changes an existing complaint allegation."
+    ]
+  },
+  "improved_continuation_prompt": "Continue the autonomous Concurso 36/2012 fact-and-truth reconstruction under this mandatory dual-lens protocol. For every material act, first classify it under the historical procedural law ('dry law': incidente concursal, definitive-text modification, liquidation-plan act, clarification/correction/completion, appeal/review, calificación, ordinary section filing/report, realisation/adjudication, testimony/finality or implementation). Then independently test the judge, Insolvency Administrator and relevant private actors against the existing cumulative multi-act allegations of non-neutrality, bias/asymmetry, institutional shielding/neutralisation, abuse/overreach of concursal powers, de facto/shadow control of LPB assets and potential judicial prevaricación — without treating an adverse outcome as a crime and without presuming unexplained official conduct benign. Preserve the Gil Marer/Aweswell position that the 4-June-2018 Auto was a liquidation-plan clarification, not an incidente concursal, and has not been shown to lawfully amend the definitive texts or convert CAM's approximately €9.052m definitive-text special-privilege amount into a lawful approximately €13.166m definitive creditor-list amount or liquidation-payoff/set-off basis. Reconcile former LC arts. 59, 97-97ter and 192-196, LEC 214-215, LOPJ 267 and CP 446 against each primary act. Require actor-specific knowledge, legal departure, procedural route, asymmetry, beneficiary/harm, causal implementation, repetition/pattern, subjective element and contrary/corrective evidence. Link CGPJ/prosecutorial complaint history as allegation context, not proof. Never call a material act an incidente concursal unless the primary docket/claim/admission or statute establishes that route. Never record a definitive-text change without the full modification gate. Close each source family end-to-end and keep the repository/site deletion-safe and publication-controlled."
+}
