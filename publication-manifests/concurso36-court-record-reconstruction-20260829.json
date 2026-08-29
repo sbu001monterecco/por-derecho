@@ -1,0 +1,31 @@
+{
+  "schema":"por-derecho.publication-manifest.concurso36-court-record-reconstruction.v1",
+  "date":"2026-08-29",
+  "baseline_main":"4b437dbee5ee979b9e3a9868ecd7d0e37505b181",
+  "branch":"codex/concurso36-court-record-reconstruction-20260829",
+  "status":"CONTROLLED_RECONSTRUCTION",
+  "primary_registry":"assets/data/concurso36-court-record-reconstruction-v1.json",
+  "continuity_entry":"CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md",
+  "public_routes":[
+    "/es/concurso-36-2012-registro-procesal/",
+    "/en/insolvency-36-2012-court-record/"
+  ],
+  "renderer":"assets/concurso36-court-record-reconstruction.js",
+  "first_closed_family":"C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS",
+  "required_boundaries":[
+    "not a certified court docket",
+    "response-not-located is not ignored",
+    "adverse decision is not criminal misconduct",
+    "no silent canonical promotion",
+    "LPB, Matkator and third-party rights remain distinct"
+  ],
+  "next_p0":[
+    "Audiencia Provincial outcomes for both quejas",
+    "11-Feb and 14-Feb 2022 DIOR/testimonios/finality family",
+    "7-Jun-2018 physical-control court-notice filing/receipt",
+    "Feb-Oct-2021 protection/nullity/bid/RICPE family",
+    "funded-exit filing classification",
+    "certified electronic chronological index or equivalent per-piece export"
+  ],
+  "short_handoff_prompt":"Continue the autonomous Concurso 36/2012 court-record reconstruction from CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md. Close the next P0 filing/decision/notification families end-to-end, update the repository and bilingual site through PR/CI/Pages, preserve all evidence boundaries and continuity governance, and leave the project deletion-safe and ready for the next short handoff."
+}
