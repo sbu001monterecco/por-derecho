@@ -5,6 +5,7 @@ on:
     paths:
       - 'archive/concurso36-primary-autos-21aug2026/**'
       - 'assets/data/concurso36-what-court-ordered-v1.json'
+      - 'assets/data/concurso36-what-court-ordered-v2.json'
       - 'assets/data/**'
       - 'assets/**/*.js'
       - 'assets/**/*.mjs'
@@ -19,6 +20,7 @@ on:
     paths:
       - 'archive/concurso36-primary-autos-21aug2026/**'
       - 'assets/data/concurso36-what-court-ordered-v1.json'
+      - 'assets/data/concurso36-what-court-ordered-v2.json'
       - 'assets/data/**'
       - 'assets/**/*.js'
       - 'assets/**/*.mjs'
@@ -43,7 +45,7 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - name: Validate primary-autos redigest, canonical facts and public descendants
-        run: python -B scripts/validate_concurso36_primary_autos_redigest.py
+      - name: Validate corrected creditor-order chronology, 4-June taxonomy and dual-lens governance
+        run: python -B scripts/validate_concurso36_primary_autos_redigest_v2.py
       - name: Re-verify bidder name-only anonymisation
         run: python -B scripts/validate_public_bidder_anonymisation.py
