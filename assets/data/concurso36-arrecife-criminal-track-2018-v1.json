@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "record_id": "concurso36-arrecife-criminal-track-2018-v1",
+  "title_en": "Arrecife criminal track ↔ Insolvency 36/2012",
+  "title_es": "Vía penal de Arrecife ↔ Concurso 36/2012",
+  "cutoff": "2026-08-29",
+  "status": "controlled_reconstruction_with_open_p0_gaps",
+  "governance": {
+    "mandatory": "CONCURSO36_UNITARY_CRIMINAL_FIRST_GOVERNANCE.md",
+    "method": "unitary_non_fragmented_criminal_prosecutorial_investigative_forensic_first_with_parallel_dry_law_tracks",
+    "boundaries": [
+      "allegation_is_not_adjudicated_fact",
+      "actual_notice_is_not_formal_filing",
+      "draft_is_not_filed_pleading",
+      "response_not_located_is_not_no_response",
+      "not_located_is_not_did_not_exist"
+    ]
+  },
+  "routes": {
+    "en": "/en/arrecife-criminal-track-insolvency-36-2012/",
+    "es": "/es/via-penal-arrecife-concurso-36-2012/"
+  },
+  "events": [
+    {
+      "id": "AR-C36-20180502-EXHORTO",
+      "date": "2018-05-02",
+      "lane": "arrecife_criminal",
+      "actor": "Judge Jerónimo Alonso Herrero / Juzgado de Instrucción nº2 de Arrecife",
+      "event": "Formal exhorto directed to Juzgado de lo Mercantil nº1 in relation to Concurso 36/2012; a separate allegation component concerning the Mercantile organ is routed toward the Las Palmas Decanato.",
+      "status": "controlled_procedural_node",
+      "proves": "a formal court-to-court communication lane existed",
+      "does_not_prove": "the truth of the allegations or criminal responsibility"
+    },
+    {
+      "id": "AR-C36-20180607-AMPLIACION",
+      "date": "2018-06-07",
+      "lane": "arrecife_criminal",
+      "event": "Same-day criminal amplification alleges forced access/entry, lock and access-control interference and requests urgent protection after the alleged hotel seizure/takeover.",
+      "status": "contemporaneous_allegation_and_protection_request",
+      "proves": "the allegation and protection request were contemporaneously articulated",
+      "does_not_prove": "that a seizure, offence or unlawful possession was adjudicated"
+    },
+    {
+      "id": "AR-C36-20180607-DOSSIER",
+      "date": "2018-06-07",
+      "lane": "cross_track_notice",
+      "event": "Takeover/criminal dossier circulates toward the insolvency administrator and legal advisers through multiple notice channels.",
+      "status": "notice_architecture_to_be_source_bound_channel_by_channel"
+    },
+    {
+      "id": "AR-C36-20180608-AC-KNOWLEDGE",
+      "date": "2018-06-08",
+      "lane": "concurso36",
+      "actor": "Francisco de Borja Rodríguez-Batllori Laffitte",
+      "event": "Controlled communication evidence records direct contact with the insolvency administrator concerning the new security/CAM presence.",
+      "status": "actual_knowledge_lane",
+      "does_not_prove": "the administrator's complete knowledge, response, motive or liability"
+    },
+    {
+      "id": "AR-C36-20180610-ART176",
+      "date": "2018-06-10",
+      "lane": "arrecife_criminal",
+      "event": "Conclusion route/intention associated with historically applicable former LC Article 176.",
+      "status": "user_declaration_plus_document_history_to_reconcile",
+      "user_declaration": "Gil Marer states that later conduct frustrated further action on the conclusion route.",
+      "boundary": "Later TRLC Article 465.6 numbering must not be retroactively applied to June 2018."
+    },
+    {
+      "id": "AR-C36-20180611-MERCANTIL-RESPONSE",
+      "date": "2018-06-11",
+      "lane": "cross_track_response",
+      "event": "Arrecife receives a response from Mercantile Court nº1 to the earlier exhorto.",
+      "status": "response_existence_controlled_content_not_located",
+      "gap": "MERCANTIL_RESPONSE_CONTENT_AND_ANNEXES_NOT_LOCATED",
+      "boundary": "Do not state that Mercantil never responded."
+    },
+    {
+      "id": "AR-C36-20180613-AUTO-DP1132",
+      "date": "2018-06-13",
+      "lane": "arrecife_criminal",
+      "event": "Arrecife Auto records that the received reply is joined to DP 1132/2018.",
+      "status": "controlled_procedural_node"
+    },
+    {
+      "id": "AR-C36-20180613-IRIGOYEN",
+      "date": "2018-06-13",
+      "lane": "concurso36",
+      "actor": "Daniel Irigoyen",
+      "event": "Contemporaneous material records a meeting with the Mercantile judge and insolvency administrator after Irigoyen had received/read takeover-criminal materials.",
+      "status": "additional_actual_notice_channel",
+      "gap": "EXACT_ORAL_CONTENT_AND_DOCUMENTS_SHOWN_NOT_BOUND"
+    },
+    {
+      "id": "AR-C36-20180613-CUATRECASAS",
+      "date": "2018-06-13",
+      "lane": "concurso36",
+      "actor": "Cuatrecasas / Rosa Gual correspondence lane",
+      "event": "Client asks who will present/communicate the Arrecife Auto to Mercantil; the response says it should be communicated and that an escrito had already been drafted.",
+      "status": "instruction_draft_filing_gap",
+      "gap": "TAKEOVER_SPECIFIC_LEXNET_RECEIPT_NOT_LOCATED",
+      "boundary": "A located draft does not prove filing or non-filing; absence of a located receipt does not prove no filing existed."
+    }
+  ],
+  "p0_recovery_objects": [
+    "complete_Mercantil_reply_received_by_Arrecife_on_2018-06-11_and_annexes",
+    "same_day_2018-06-07_Arrecife_filing_receipt_or_stamp",
+    "first_formal_Concurso36_filing_receipt_notifying_2018-06-07_physical_control_event_if_any",
+    "AC_authored_post_2018-06-07_Mercantile_filing_or_report_and_response",
+    "Cuatrecasas_prepared_takeover_control_escrito_and_filed_deferred_unfiled_status",
+    "Daniel_Irigoyen_2018-06-13_exact_oral_notice_and_documents_shown"
+  ],
+  "four_consequence_tracks": [
+    "LPB_masa_activa",
+    "unidad_productiva_and_operating_capacity",
+    "Matkator_and_third_party_extraconcursal_harm",
+    "alleged_overreach_of_Concurso36_beyond_LPB_estate"
+  ],
+  "crosslinks": [
+    "/en/insolvency-36-2012-court-record/",
+    "/en/sun-park-takeover-7-june-2018/",
+    "/en/daniel-irigoyen-insolvency-knowledge/",
+    "/en/francisco-de-borja-rodriguez-batllori-laffitte/",
+    "/en/cuatrecasas-sun-park/",
+    "/en/unitary-criminal-evidence-map/"
+  ]
+}
