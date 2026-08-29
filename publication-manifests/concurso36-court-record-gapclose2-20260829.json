@@ -1,0 +1,33 @@
+{
+  "schema": "por-derecho.publication-manifest.concurso36-court-record-gapclose2.v1",
+  "publication_id": "concurso36-court-record-gapclose2-20260829",
+  "current_state": "PREPARED_PENDING_MERGE",
+  "owner": "sbu001monterecco",
+  "generated": "2026-08-29",
+  "purpose": "Advance the autonomous Concurso 36/2012 court-record reconstruction from 20 to 37 controlled/corroborated nodes, close/narrow P0 procedural families and update the bilingual control room without claiming a certified docket.",
+  "expected_routes": {
+    "es": ["es/concurso-36-2012-registro-procesal/index.html"],
+    "en": ["en/insolvency-36-2012-court-record/index.html"]
+  },
+  "expected_source_files": [
+    "assets/data/concurso36-court-record-reconstruction-gapclose2-20260829.json",
+    "assets/concurso36-court-record-reconstruction.js",
+    "CHATGPT_START_HERE_CONCURSO36_COURT_RECORD.md",
+    "archive/CONCURSO36_COURT_RECORD_GAPCLOSE2_CONTINUITY_29AUG2026.md"
+  ],
+  "controlled_node_count_after_merge": 37,
+  "mandatory_boundaries": [
+    "Located reconstruction is not the certified court docket.",
+    "Response-not-located is not ignored or nonexistence.",
+    "Adverse procedural or substantive treatment is not automatically criminal judicial misconduct.",
+    "Protective/corrective counterweights remain visible, including the 26-Jun-2018 suspension and Auto 308/2022.",
+    "The 19-Jun-2018 appeal is not proof of formal court notice of the 7-Jun physical-control event.",
+    "The 29-Jul-2021 Aweswell RICPE paper remains an unfiled draft unless a later filing receipt is located.",
+    "LPB masa activa, unidad productiva, Matkator/third-party extraconcursal harm and alleged overreach remain separate consequence tracks.",
+    "Registry/AC implementation records prove what the instruments record, not automatically the legal correctness of the underlying implementation."
+  ],
+  "publication_closeout": {
+    "pull_request": null,
+    "merge_sha": null
+  }
+}
