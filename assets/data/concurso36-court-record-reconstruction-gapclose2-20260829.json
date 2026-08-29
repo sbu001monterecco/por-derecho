@@ -1,0 +1,305 @@
+{
+  "schema": "por-derecho.concurso36-court-record-reconstruction.gapclose2.v1",
+  "generated": "2026-08-29",
+  "status": "CONTROLLED SUPPLEMENT — NOT A CERTIFIED COURT DOCKET",
+  "purpose": "Close and narrow high-priority filing/decision/notification/implementation families with primary mailbox, LexNET, judicial and Registry evidence while preserving explicit unresolved points.",
+  "append_to_family_id": "C36-FAM-2022-APPEAL-QUEJA-TESTIMONIOS",
+  "append_records": [
+    {
+      "id": "C36-REC-20220211-DIOR-PROTESTS",
+      "date": "2022-02-11",
+      "record_class": "laj_order",
+      "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+      "procedure": "Concurso 36/2012, Sección 5ª",
+      "title": "DIOR rejecting LPB/Aweswell protests against the 15-Oct-2021 Autos as non-appealable",
+      "operative_effect": "Records LPB/Aweswell filings 754/2022 and 732/2022 and rejects the requested treatment because the 15-Oct-2021 liquidation-phase reposición Autos were treated as non-appealable under art. 547 TRLC; five-day reposición route stated.",
+      "electronic_document_id": "A05003250-3558b8e3ae715cbf92cda7771ba1644589600797",
+      "notification_lexnet_id": "202210469865861",
+      "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+      "verification": "Signed electronic DIOR controlled from owner mailbox",
+      "proof_limit": "Procedural/finality treatment; not merits adjudication of the underlying title, access, works, bid or estate-protection allegations."
+    },
+    {
+      "id": "C36-REC-20220214-DIOR-TESTIMONIOS",
+      "date": "2022-02-14",
+      "record_class": "laj_order",
+      "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+      "procedure": "Concurso 36/2012, Sección 5ª",
+      "title": "DIOR ordering testimonios to CAM with expression of finality",
+      "operative_effect": "Following CAM registration 820/2022, orders testimonios of the Autos of 18-May-2021, 15-Oct-2021 and 26-Jan-2022 with expression of finality; five-day reposición route stated.",
+      "electronic_document_id": "A05003250-353fa667a7b4171f8f5b31deaf61644846994419",
+      "notification_lexnet_id": "202210470242640",
+      "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+      "verification": "Signed electronic DIOR controlled from owner mailbox"
+    },
+    {
+      "id": "C36-REC-20220216-AWESWELL-REPOSICION-TESTIMONIOS",
+      "date": "2022-02-16",
+      "record_class": "party_filing",
+      "party": "Aweswell Limited",
+      "procedure": "Concurso 36/2012, Sección 5ª",
+      "title": "Reposición against the testimony/finality order",
+      "operative_effect": "Challenges the 14-Feb testimony/finality treatment.",
+      "lexnet_sent_id": "202210470528468",
+      "lexnet_ack_id": "1202210470528468",
+      "document_hash_sha256": "b8db8d9c84e7d4d1abf44c4eb9e2528d8872a7b1dd8fe5cf00c027fa4cab4242",
+      "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+      "verification": "LexNET receipt plus principal hash controlled from owner mailbox",
+      "response_link": "Paired to the later April-2022 LAJ Decretos and subsequent direct-revision family already controlled in the base/appellate supplement."
+    },
+    {
+      "id": "C36-REC-20220725-CAM-OPPOSITION-REVISIONS",
+      "date": "2022-07-25",
+      "record_class": "party_filing",
+      "party": "Construcciones Acosta Matos",
+      "procedure": "Concurso 36/2012, Sección 5ª",
+      "title": "CAM opposition to Aweswell direct revisions",
+      "operative_effect": "Opposes the direct revisions challenging the April-2022 LAJ Decretos/finality treatment.",
+      "lexnet_id": "202210511075435",
+      "document_hash_sha256": "81e65b9615269c4da8af95989d831c18ce258531747518baacfdd85424d80fc6",
+      "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+      "verification": "LexNET filing wrapper plus exact principal hash controlled from owner mailbox"
+    },
+    {
+      "id": "C36-REC-20220726-DIOR-CAM-OPPOSITION",
+      "date": "2022-07-26",
+      "record_class": "laj_order",
+      "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+      "procedure": "Concurso 36/2012, Sección 5ª",
+      "title": "DIOR joins CAM opposition",
+      "operative_effect": "Joins CAM's opposition as registration 5306/2022 to the direct-revision family.",
+      "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+      "verification": "Signed electronic DIOR controlled from owner mailbox"
+    },
+    {
+      "id": "C36-REC-20220728-DIOR-REVISIONS-TO-JUDGE",
+      "date": "2022-07-28",
+      "record_class": "laj_order",
+      "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+      "procedure": "Concurso 36/2012, Sección 5ª",
+      "title": "DIOR closes opposition period and places revisions before the judge",
+      "operative_effect": "Joins the AC opposition as registration 5354/2022, closes the opposition period and places Aweswell's two direct revisions 'sobre la mesa de S.S. para resolver'.",
+      "response_taxonomy": "RESPONSE_NOT_LOCATED",
+      "verification": "Signed electronic DIOR controlled from owner mailbox",
+      "open_point": "The subsequent judge-signed decision resolving those revisions has not yet been located in the controlled corpus."
+    }
+  ],
+  "additional_families": [
+    {
+      "family_id": "C36-FAM-2018-LIQUIDATION-APPEAL-SUSPENSION",
+      "label_es": "Junio 2018 · apelación y suspensión de la realización",
+      "label_en": "June 2018 · appeal and suspension of realisation",
+      "records": [
+        {
+          "id": "C36-REC-20180619-LPB-APPEAL-SUSPENSION",
+          "date": "2018-06-19",
+          "record_class": "party_filing",
+          "party": "Luchy Playa Blanca, S.L.U.",
+          "title": "LPB appeal against liquidation-plan/interest treatment with partial suspension request",
+          "lexnet_sent_id": "201810216187332",
+          "lexnet_ack_id": "1201810216187332",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "LexNET receipt and full 20-page principal controlled from owner mailbox",
+          "proof_limit": "The controlled principal is an interest/privilege/liquidation-plan appeal. It contains no located allegation of the 7-Jun physical takeover, locks, keys, security or access event and therefore cannot be used as proof of formal court notice of that event."
+        },
+        {
+          "id": "C36-REC-20180626-AUTO-SUSPENSION",
+          "date": "2018-06-26",
+          "record_class": "court_decision",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "Auto suspending realisation of the listed Tías fincas pending appeal",
+          "operative_effect": "Suspends realisation of the listed fincas because the appeal could materially alter the authorised dation conditions, while allowing liquidation of the debtor's other masa activa to continue.",
+          "response_taxonomy": "PROTECTIVE_RESPONSE",
+          "verification": "Judge-signed Auto controlled from owner mailbox",
+          "proof_limit": "Protects the realisation process only; it does not confer or establish authority over whole-hotel possession, locks, security, operation, income or third-party property."
+        }
+      ],
+      "open_points": [
+        "Exact formal Concurso 36/2012 court filing/receipt first notifying the 7-Jun-2018 physical-control event remains not located."
+      ]
+    },
+    {
+      "family_id": "C36-FAM-2021-PROTECTION-RICPE",
+      "label_es": "2021 · protección material, acceso, masa activa y nueva documentación/RICPE",
+      "label_en": "2021 · material protection, access, estate and new-document/RICPE chain",
+      "records": [
+        {
+          "id": "C36-REC-20210224-AUTO-WORKS-ACCESS-MASA",
+          "date": "2021-02-24",
+          "record_class": "court_decision",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "Auto addressing works, access, estate-condition, inspection/expert and protective-measure requests",
+          "operative_effect": "Records allegations concerning blocked access by security, works/demolition, perceived condition/value, requests for judicial inspection/pericial evidence and prohibition of further intervention; records AC/CAM responses; denies the requested protective inspection/expert/prohibition measures while noting that later responsibility claims against CAM or the AC could be an appropriate route.",
+          "electronic_document_id": "A05003250-354b4c6e25db6943f7e4d268be71614172280325",
+          "response_taxonomy": "ADVERSE_SUBSTANTIVE_RESPONSE",
+          "verification": "Judge-signed electronic Auto controlled from owner mailbox",
+          "proof_limit": "Proves the matters reached the court and were adversely treated; it does not by itself establish criminal intent, causation or the correctness/incorrectness of each factual allegation."
+        },
+        {
+          "id": "C36-REC-20210708-DIOR-NEW-DOCUMENTS",
+          "date": "2021-07-08",
+          "record_class": "laj_order",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "DIOR formally transfers LPB/Aweswell new documentary material to the parties",
+          "operative_effect": "Records new documents under registration 4725/2021 and gives the parties five days to make submissions under art. 270.2 LEC.",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Signed electronic DIOR controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20210708-PROVIDENCIA-AC-STATUS",
+          "date": "2021-07-08",
+          "record_class": "court_decision",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "Providencia requiring AC report on liquidation/conclusion status",
+          "operative_effect": "Requires the insolvency administrator within five days to report on liquidation operations, the relevant condemnatory execution and progress toward conclusion of the concurso.",
+          "response_taxonomy": "PROTECTIVE_RESPONSE",
+          "verification": "Signed electronic Providencia controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20210721-CAM-RICPE-FILING",
+          "date": "2021-07-21",
+          "record_class": "party_filing",
+          "party": "Construcciones Acosta Matos",
+          "title": "CAM response to the 8-Jul new-document DIOR, including RICPE certification material",
+          "lexnet_id": "202110427187708",
+          "document_hash_sha256": "fa790da25b3059671458564751003635714b9c4e14cf0c50e69921bd3bcacf6d",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "LexNET filing wrapper and principal hash controlled from owner mailbox",
+          "proof_limit": "CAM's propositions are party submissions, not adjudicated findings."
+        }
+      ],
+      "open_points": [
+        "Complete later response/decision consequences must remain paired with the existing Oct-2021/Jan-2022 decision chain.",
+        "The 29-Jul-2021 Aweswell RICPE paper is not promoted as a 2021 court filing: a March-2022 mailbox record describes it as a draft that had not yet been put into court. Locate any later actual filing receipt before promotion."
+      ]
+    },
+    {
+      "family_id": "C36-FAM-2021-LPB-INTEREST-NULLITY",
+      "label_es": "2021 · incidente de nulidad de LPB sobre intereses",
+      "label_en": "2021 · LPB nullity incident concerning interest treatment",
+      "records": [
+        {
+          "id": "C36-REC-20210225-LPB-NULLITY-ADMISSION",
+          "date": "2021-02-25",
+          "record_class": "court_decision",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "Providencia admitting LPB nullity incident and opening a separate piece",
+          "operative_effect": "Admits LPB registration 1353/2021 for processing as a separate nullity incident.",
+          "electronic_document_id": "A05003250-35e51f31cf17cb7fa7e9aa383211614278409930",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Signed electronic Providencia controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20210506-AUTO-356-NULLITY-DISMISSAL",
+          "date": "2021-05-06",
+          "record_class": "court_decision",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "Auto 356/2021 dismissing LPB nullity incident",
+          "operative_effect": "Dismisses the nullity route as an impermissible attempt to reopen the mortgage/default-interest issue through nullity; records no further appeal.",
+          "electronic_document_id": "A05003250-354d12c678b2d525c7993f07b491620305800646",
+          "response_taxonomy": "ADVERSE_SUBSTANTIVE_RESPONSE",
+          "verification": "Judge-signed electronic Auto controlled from owner mailbox",
+          "proof_limit": "This is an interest/nullity family and must not be conflated with the 24-Feb access/works/masa-protection family."
+        }
+      ]
+    },
+    {
+      "family_id": "C36-FAM-2022-TITLE-IMPLEMENTATION",
+      "label_es": "2022 · adjudicación/firmeza → escritura → conocimiento judicial → Registro",
+      "label_en": "2022 · adjudication/finality → deed → court notice → Registry",
+      "records": [
+        {
+          "id": "C36-REC-20220425-AC-TRANSFER-REPORT",
+          "date": "2022-04-25",
+          "record_class": "administrator_report",
+          "issuer": "Administrador concursal",
+          "title": "Quarterly liquidation report stating implementation of the 18-May-2021 adjudication",
+          "operative_effect": "States that the 18-May-2021 Auto was treated as final and that, by public deed dated 21-Feb-2022 before notary José del Cerro Peñalver, protocol 457, the AC transferred the covered LPB apartments plus the locales/pools/solaria to Construcciones Acosta Matos, S.A.; also records the apartment dation and €400,000 direct-sale mechanics.",
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "Signed AC report controlled from owner mailbox",
+          "proof_limit": "The statements are the AC's formal report to the court; independent Registry evidence is separately recorded below."
+        },
+        {
+          "id": "C36-REC-20220502-DIOR-AC-REPORT-NOTIFICATION",
+          "date": "2022-05-02",
+          "record_class": "laj_order",
+          "issuer": "Juzgado de lo Mercantil nº 1 de Las Palmas de Gran Canaria",
+          "title": "DIOR puts the 25-Apr quarterly liquidation report on the court record and notifies parties",
+          "operative_effect": "Court communication describes the act as 'DILIG. ORD. PUESTA DE MANIFIESTO INFORME TRIMESTRAL DE LIQUIDACIÓN'.",
+          "notification_lexnet_id": "202210489569008",
+          "document_hashes": {
+            "principal_cover": "bb4401f917a8949ce2468bb95212521285e72fd4aba58c6a7b1adb71858584fd",
+            "annex1": "6ad26472b0fbdd74b09c1712e03c004ee4c2ff56e2601b4e715869a8878b3fd0",
+            "annex2_ac_report": "fdcbc9b14e91a923d3a3c23ab122d26e2297bc5fbc842ed00066f09ce77e95ed",
+            "annex3": "771894a1c2dfe74e477a64c8d96203f562f717424062ab8cd3bf3910c9cd9c13"
+          },
+          "response_taxonomy": "PROCEDURAL_ONLY_DISPOSITION",
+          "verification": "LexNET court-notification wrapper controlled from owner mailbox"
+        },
+        {
+          "id": "C36-REC-20220506-REGISTRY-FINCA-8751",
+          "date": "2022-05-06",
+          "record_class": "registry_record",
+          "issuer": "Registro de la Propiedad de Tías",
+          "title": "Nota simple for Yaiza finca 8751 evidencing the 21-Feb-2022 title implementation",
+          "operative_effect": "Records Construcciones Acosta Matos, S.A. as 100% full-domain owner by DACIÓN EN PAGO under deed dated 21-Feb-2022 before notary José del Cerro Peñalver, protocol 457, inscription 21ª. It also records the deed presentation as Diario 61/11 on 21-Feb-2022 and shows the mortgage/credit chain still appearing in the cargas section, including the 2017 assignment to CAM.",
+          "registry_csv": "235019286750B8FD",
+          "registry_request_id": "P12QU27",
+          "response_taxonomy": "IMPLEMENTATION_OR_ACCOUNTING_CHAIN_OPEN",
+          "verification": "Electronically sealed Registry note issued 6-May-2022 and controlled from owner mailbox",
+          "proof_limit": "This nota simple is representative primary implementation evidence for finca 8751, not a finca-by-finca certified denominator for all transferred LPB properties. It is informative and expressly states that Registry certification is required to prove freedom/encumbrances against third parties."
+        }
+      ],
+      "open_points": [
+        "Obtain/correlate the complete 21-Feb-2022 deed, testimonios used for execution, presentation entries and Registry results finca-by-finca.",
+        "Reconcile the dation/title implementation with the mortgage/credit still shown in the Registry note and with the concursal credit/accounting ledger.",
+        "Close the temporal/legal interaction between pending review routes and the deed/Registry implementation without assuming suspension unless an order establishes it."
+      ]
+    }
+  ],
+  "implementation_checkpoints": [
+    {
+      "id": "C36-CHK-20181228-REGISTRY-FREE-FINCAS",
+      "date": "2018-12-28",
+      "type": "lawyer_registry_correspondence",
+      "summary": "Cuatrecasas correspondence to the Tías Property Registry states counsel had learned that a deed concerning LPB free fincas 8508–8536, 8653 and 8654 had entered the Registry in Nov-2018; counsel referred to a 12-Dec-2018 DIOR later authorising sale and stated that a reposición/cancellation/refusal route was being pursued.",
+      "proof_limit": "Correspondence/implementation warning only. It does not replace the underlying deed, Registry entry, 12-Dec DIOR or LexNET receipt, all of which remain to be controlled before categorical conclusions."
+    }
+  ],
+  "orphan_records": [
+    {
+      "id": "C36-ORPHAN-20220727-AC-REPORT-5367",
+      "date": "2022-07-27",
+      "record_class": "orphan_reference",
+      "summary": "A DIOR records an AC quarterly report under registration 5367/2022, but the report itself was not included in the controlled forwarding package located in this pass.",
+      "status": "PRINCIPAL_DOCUMENT_NOT_LOCATED"
+    },
+    {
+      "id": "C36-CANDIDATE-20210729-AWESWELL-RICPE-DRAFT",
+      "date": "2021-07-29",
+      "record_class": "unfiled_draft",
+      "summary": "A 13-page Aweswell RICPE response paper dated 29-Jul-2021 is located, but a March-2022 mailbox record expressly describes the paper as a draft prepared the previous year that had not yet been put into court.",
+      "status": "DO_NOT_PROMOTE_AS_2021_COURT_FILING_WITHOUT_LATER_RECEIPT"
+    }
+  ],
+  "gap_corrections": [
+    "The 29-Mar-2022 exact Audiencia Provincial LexNET receipt currently controlled belongs to Aweswell (Queja 379/2022), not LPB. LPB's 31-page Queja 375/2022 principal is controlled, but its exact AP LexNET filing receipt remains open.",
+    "The 19-Jun-2018 LPB appeal is not evidence of formal court notice of the 7-Jun physical-control event: the controlled full principal contains no located takeover/access/locks/keys/security allegation.",
+    "The 24-Feb-2021 works/access/masa dispute received an adverse judicial response; it must not be characterised as judicial silence or simply 'ignored'.",
+    "The 25-Feb/6-May-2021 LPB nullity incident concerns mortgage/default-interest treatment and must not be merged with the 24-Feb works/access/masa-protection lane.",
+    "The 29-Jul-2021 Aweswell RICPE paper is not presently a verified 2021 court filing; later proof of filing is required.",
+    "No identifiable Concurso 36/2012 LexNET receipt for an ONA/Stoneweg/Varia/Elaia funded-exit offer was located in this pass; drafts, transaction emails and filings in other proceedings must not be promoted as a 36/2012 court filing."
+  ],
+  "open_points_replace": [
+    "Exact signed LPB AP Auto of 4-Jul-2022 in Queja 375/2022 plus its service/finality record.",
+    "LPB's exact Audiencia Provincial LexNET filing receipt/principal pairing for Queja 375/2022.",
+    "Judge-signed final outcomes after the 28-Jul-2022 placement of the admitted direct revisions before the judge.",
+    "Complete 21-Feb-2022 deed/testimonio/presentation/Registry implementation bridge finca-by-finca and reconciliation of surviving mortgage/credit entries.",
+    "Exact formal Concurso 36/2012 filing/receipt first notifying the 7-Jun-2018 physical-control/takeover event, if one exists, plus response/service/review chain.",
+    "Underlying 2018 free-finca deed/Registry entry, 12-Dec-2018 DIOR, reposición receipt and final Registry/court result.",
+    "Complete Feb-Oct-2021 protection/new-document/RICPE chain through each later filing, response and operative consequence, with the 29-Jul draft kept unfiled unless a later receipt is located.",
+    "Actual Concurso 36/2012 filing/receipt and judicial treatment for each funded-exit/Ona/Stoneweg/Varia/Elaia or other rescue offer; drafts and counsel transmission are insufficient.",
+    "Principal document for AC quarterly-report registration 5367/2022 and its consequence.",
+    "Certified electronic chronological index / official relation of procedural acts / equivalent per-piece export for all pieces and sections of Concurso 36/2012. Non-production is not nonexistence."
+  ]
+}
