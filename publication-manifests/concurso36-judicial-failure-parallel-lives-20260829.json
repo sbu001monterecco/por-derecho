@@ -1,0 +1,26 @@
+{
+  "schema":"por-derecho.publication-manifest.v1",
+  "generated":"2026-08-29",
+  "baseline_main_sha":"cd5903fccc02e8ac098ca2e17eb6aa7d739986e6",
+  "purpose":"Visualise filing/warning -> institutional response -> protection/control -> continuing parallel life -> consequence, while preserving criminal proof boundaries.",
+  "public_routes":[
+    "es/concurso-36-2012-fallos-judiciales-vidas-paralelas/",
+    "en/insolvency-36-2012-judicial-failures-parallel-lives/"
+  ],
+  "data":[
+    "assets/data/concurso36-multitrack-judicial-failure-parallel-lives-20260829.json",
+    "assets/data/concurso36-lexnet-supplement-20260829.json"
+  ],
+  "renderer":"assets/concurso36-judicial-failure-parallel-lives.js",
+  "hub_updates":["es/concurso-36-2012/index.html","en/insolvency-36-2012/index.html"],
+  "controls":[
+    "No finding of criminal capture, collusion, malicious prosecution, prevaricacion or institutional shielding is made.",
+    "Neutralisation/shielding is first measured as practical effect; criminal upgrade requires actor-specific act, duty, knowledge, intent, causation and benefit/harm.",
+    "No-response-located remains a corpus gap, not proof of absence.",
+    "Adverse judicial acts are shown beside protective/favourable acts.",
+    "LPB estate and third-party property remain distinct.",
+    "Downstream investors, regulators, public authorities and operators are not attributed knowledge from exposure alone.",
+    "France/Brussels/EU actor-specific attribution remains disabled until an exact source/filing/receipt/response bridge is controlled.",
+    "2018 recovered LexNET nodes are supplemental and must be deduplicated before canonical denominator promotion."
+  ]
+}
