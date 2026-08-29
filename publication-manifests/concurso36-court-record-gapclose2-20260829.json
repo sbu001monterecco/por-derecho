@@ -1,10 +1,16 @@
 {
   "schema": "por-derecho.publication-manifest.concurso36-court-record-gapclose2.v1",
   "publication_id": "concurso36-court-record-gapclose2-20260829",
-  "current_state": "PR_OPEN",
+  "current_state": "DEPLOYED",
   "owner": "sbu001monterecco",
   "generated": "2026-08-29",
   "purpose": "Advance the autonomous Concurso 36/2012 court-record reconstruction from 20 to 37 controlled/corroborated nodes, close/narrow P0 procedural families and update the bilingual control room without claiming a certified docket.",
+  "merge_sha": "3d2fbe5ede9761165d22f0dab4ac23b8a716299a",
+  "validation": {
+    "evidence": "PR #1204 passed the structured 37-node Concurso 36/2012 court-record reconstruction validator, publication-integrity/deletion-safety gate, primary-Auto redigest, privacy/OSINT governance, RICPE privacy, audience-experience, visual-identity, public-bidder and production-smoke checks on the controlled head before merge."
+  },
+  "deployment_evidence": "GitHub Pages run 33265668628 for merge 3d2fbe5ede9761165d22f0dab4ac23b8a716299a completed build, report-build-status and deploy jobs successfully on 29 Aug 2026; deploy job 99135216290 conclusion=success.",
+  "deployment_run_id": 33265668628,
   "expected_routes": {
     "es": ["es/concurso-36-2012-registro-procesal/index.html"],
     "en": ["en/insolvency-36-2012-court-record/index.html"]
@@ -28,6 +34,6 @@
   ],
   "publication_closeout": {
     "pull_request": 1204,
-    "merge_sha": null
+    "merge_sha": "3d2fbe5ede9761165d22f0dab4ac23b8a716299a"
   }
 }
